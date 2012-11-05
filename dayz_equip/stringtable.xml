@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DayZ">
+  <Package name="equipment">
+			<Key ID="STR_EQUIP_NAME_1">
+				<Original>Entrenching Tool</Original>
+				<English>Entrenching Tool</English>
+				<German>Schanzzeug</German>
+				<Russian>Саперная лопатка</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_1">
+				<Original>Collapsible spade used together with the engineering backpack to create field defences</Original>
+				<English>Collapsible spade used together with the engineering backpack to create field defences</English>
+				<German>Ein Klappspaten, der mit dem Pioniersrucksack zum Verschanzen verwendet werden kann</German>
+				<Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_2">						
+				<Original>Toolbox</Original>						
+				<English>Toolbox</English>						
+				<German>Werkzeugkoffer</German>
+				<Russian>Набор инструментов</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_2">						
+				<Original>Toolbox that can be used for repairing damaged vehicles and equipment.</Original>						
+				<English>Toolbox that can be used for repairing damaged vehicles and equipment.</English>						
+				<German>Ein Werkzeugkoffer, der zum Reparieren beschädigter Fahrzeuge und Ausrüstung verwendet werden kann</German>
+				<Russian>Набор инструментов используется для ремонта поврежденной техники и снаряжения а так же установки укреплений.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_3">						
+				<Original>Box of Matches</Original>						
+				<English>Box of Matches</English>						
+				<German>Schachtel Streichhölzer</German>
+				<Russian>Коробок спичек</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_3">						
+				<Original>Box of safety matches for starting a fire under controlled conditions.</Original>						
+				<English>Box of safety matches for starting a fire under controlled conditions.</English>						
+				<German>Eine Schachtel Sicherheitsstreichhölzer, mit dem ein kontrolliertes Feuer gemacht werden kann</German>
+				<Russian>Коробок спичек используется для разведения костра.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_4">						
+				<Original>Hunting Knife</Original>						
+				<English>Hunting Knife</English>						
+				<German>Jagdmesser</German>
+				<Russian>Охотничий нож</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_4">						
+				<Original>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</Original>						
+				<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>						
+				<German>Ein Messer, das beim Jagen zum Ausnehmen des Wilds verwendet werden kann</German>
+				<Russian>Нож используется для разделки туш животных в куски мяса.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_5">						
+				<Original>Flashlight</Original>						
+				<English>Flashlight</English>						
+				<German>Taschenlampe</German>
+				<Russian>Фонарик</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_5">						
+				<Original>Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</Original>						
+				<English>Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>						
+				<German>Batteriebetriebene Taschenlampe&lt;br/&gt;Batterien: 2 x Typ D</German>
+				<Russian>Фонарик питается двумя батарейками типа D.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_6">						
+				<Original>Flashlight (Military)</Original>						
+				<English>Flashlight (Military)</English>						
+				<German>Militärtaschenlampe</German>
+				<Russian>Армейский фонарик</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_6">						
+				<Original>Military Red-light Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</Original>						
+				<English>Military Red-light Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>						
+				<German>Militärische, batteriebetriebene Rotlichtlampe&lt;br/&gt;Batterien: 2 x Typ D</German>
+				<Russian>Армейский фонарик светит красным светом и питается двумя батарейками типа D.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_7">						
+				<Original>Bandage</Original>						
+				<English>Bandage</English>						
+				<German>Verbandszeug</German>
+				<Russian>Бинты</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_7">						
+				<Original>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</Original>						
+				<English>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</English>						
+				<German>Verbandszeug nach NATO-Standart. Wird zum Stillen von blutenden Wunden verwendet.</German>
+				<Russian>Упаковка бинтов армейская. Используется для перевязки ран.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_8">						
+				<Original>Fueltank Parts</Original>						
+				<English>Fueltank Parts</English>						
+				<German>Treibstofftankteile</German>
+				<Russian>Бензобак</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_8">						
+				<Original>An old fueltank that could be used to repair a vehicle with a broken one.</Original>						
+				<English>An old fueltank that could be used to repair a vehicle with a broken one.</English>						
+				<German>Ein alter Treibstofftank, mit dem eventuell der kaputte Tank eines Fahrzeugs repariert werden könnte.</German>
+				<Russian>Бензобак, запчасти из которого можно использовать для ремонта техники.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_9">						
+				<Original>Car Wheel</Original>						
+				<English>Car Wheel</English>						
+				<German>Rad</German>
+				<Russian>Колесо</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_9">						
+				<Original>An old Car Wheel that could be used to repair a vehicle with a broken one.</Original>						
+				<English>An old Car Wheel that could be used to repair a vehicle with a broken one.</English>						
+				<German>Ein altes Rad, mit dem eventuell ein kaputtes Rad eines Fahrzeugs repariert werden könnte.</German>
+				<Russian>Колесо, которое можно использовать для починки одного колеса на автомобиле.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_10">						
+				<Original>Scrap Metal</Original>						
+				<English>Scrap Metal</English>						
+				<German>Metallteile</German>
+				<Russian>Запчасти</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_10">						
+				<Original>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</Original>						
+				<English>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</English>						
+				<German>Metallteile und verschiedene mechanische Ersatzteile. Nützlich beim Reparieren von Fahrzeugen und Ausrüstung.</German>
+				<Russian>Запчасти используются для починки снаряжения или корпуса техники.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_11">						
+				<Original>Engine Parts</Original>						
+				<English>Engine Parts</English>						
+				<German>Motorteile</German>
+				<Russian>Двигатель</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_11">						
+				<Original>Engine components with oil and lubricant. Everything you would need to repair an engine.</Original>						
+				<English>Engine components with oil and lubricant. Everything you would need to repair an engine.</English>						
+				<German>Motorteile mit Öl und Schmiere. Alles, was man zum Reparieren eines Motors braucht.</German>
+				<Russian>Двигатель, запчасти из которого используются для ремонта двигателей в технике.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_12">						
+				<Original>Water Bottle</Original>						
+				<English>Water Bottle</English>						
+				<German>Wasserflasche</German>
+				<Russian>Фляжка с водой</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_12">						
+				<Original>A bottle of water that has been filled and can be consumed.</Original>						
+				<English>A bottle of water that has been filled and can be consumed.</English>						
+				<German>Eine Flasche, gefüllt mit Trinkwasser.</German>
+				<Russian>Фляжка с водой для питья.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_13">						
+				<Original>Water Bottle (Empty)</Original>						
+				<English>Water Bottle (Empty)</English>						
+				<German>Leere Wasserflasche</German>
+				<Russian>Фляжка (пустая)</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_13">						
+				<Original>A bottle of water that is Empty. It might be useful to fill it with water again.</Original>						
+				<English>A bottle of water that is Empty. It might be useful to fill it with water again.</English>						
+				<German>Eine leere Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
+				<Russian>Пустая фляжка, в которую можно набрать воду.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_14">						
+				<Original>Epi-Pen</Original>						
+				<English>Epi-Pen</English>						
+				<German>Epinephrin</German>
+				<Russian>Укол адреналина</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_14">						
+				<Original>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</Original>						
+				<English>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</English>						
+				<German>Epinephtin-Autoinjektor für intramuskuläre Injektion, um bewusstlose Verletzte wiederzubeleben.</German>
+				<Russian>Укол адреналина для приведения в чувства людей без сознания.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_15">						
+				<Original>Morphine Auto-Injector</Original>						
+				<English>Morphine Auto-Injector</English>						
+				<German>Morphium</German>
+				<Russian>Морфий</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_15">						
+				<Original>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</Original>						
+				<English>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</English>						
+				<German>Morphium-Autoinjektor für intramuskuläre Injektion, um starke Schmerzen, etwa von Knochenbrüchen, zu stillen.</German>
+				<Russian>Морфий используется для местного обезболивания при переломах.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_16">						
+				<Original>Blood Bag</Original>						
+				<English>Blood Bag</English>						
+				<German>Blutkonserve</German>
+				<Russian>Пакет крови</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_16">						
+				<Original>Bag of blood used for administering a Blood transfusion.</Original>						
+				<English>Bag of blood used for administering a Blood transfusion.</English>						
+				<German>Eine Blutkonserve zum Legen einer Bluttransfusion.</German>
+				<Russian>Пакет крови используется для переливания при кровопотерях.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_17">						
+				<Original>Antibiotics</Original>						
+				<English>Antibiotics</English>						
+				<German>Antibiotikum</German>
+				<Russian>Антибиотики</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_17">						
+				<Original>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</Original>						
+				<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>						
+				<German>Azithromycin ist ein Breitbandantibiotikum, das zum Behandeln oder Vorbeugen von verschiedenen bakteriellen Infektionen verwendet werden kann.</German>
+				<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_18">						
+				<Original>Painkillers</Original>						
+				<English>Painkillers</English>						
+				<German>Schmerzmittel</German>
+				<Russian>Болеутоляющие</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_18">						
+				<Original>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</Original>						
+				<English>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</English>						
+				<German>Ein Schmerzmittel, das zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden verwendet werden kann.</German>
+				<Russian>Слабое болеутоляющие отлично подходит для подавления боли от небольших ранений.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_19">						
+				<Original>Jerry Can</Original>						
+				<English>Jerry Can</English>						
+				<German>Kanister</German>
+				<Russian>Канистра с топливом</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_19">						
+				<Original>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Original>						
+				<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>						
+				<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
+				<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_20">						
+				<Original>Camping Tent</Original>						
+				<English>Camping Tent</English>						
+				<German>Zelt</German>
+				<Russian>Палатка</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_20">						
+				<Original>A camping tent that can be pitched, allowing you extended storage safe from others.</Original>						
+				<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>						
+				<German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
+				<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_21">						
+				<Original>Sandbags</Original>						
+				<English>Sandbags</English>						
+				<German>Sandsäcke</German>
+				<Russian>Мешки с песком</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_21">						
+				<Original>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</Original>						
+				<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>						
+				<German>Jutesäcke, die mit Sand oder Erde gefüllt zum Errichten von Befestigungen verwendet werden können.</German>
+				<Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_22">						
+				<Original>Tank Trap Kit</Original>						
+				<English>Tank Trap Kit</English>						
+				<German>Panzersperrensatz</German>
+				<Russian>Сборочный противотанковый ёж</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_22">						
+				<Original>Metal materials that can be used by an engineer to construct a Tank Trap.</Original>						
+				<English>Metal materials that can be used by an engineer to construct a Tank Trap.</English>						
+				<German>Metallteile, die von einem Pionier zum Errichten einer Panzersperre verwendet werden können.</German>
+				<Russian>Металлические детали, из которых собирается противотанковый ёж.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_23">						
+				<Original>Wire Fencing Kit</Original>						
+				<English>Wire Fencing Kit</English>						
+				<German>Stacheldraht</German>
+				<Russian>Колючая проволока</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_23">						
+				<Original>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</Original>						
+				<English>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</English>						
+				<German>Gewickelter Stacheldraht, der akkordeonartig ausgeklappt und mit Stahlpgosten befestigt zum Errichten von Stacheldrahthindernissen verwendet werden kann.</German>
+				<Russian>Катушка острой колючей проволоки для сооружения заграждений.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_24">						
+				<Original>Raw Meat</Original>						
+				<English>Raw Meat</English>						
+				<German>Rohes Fleisch</German>
+				<Russian>Сырое мясо</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_24">						
+				<Original>Meat Steak cut from an animal to be used for sustainment, must be cooked prior to eating.</Original>						
+				<English>Meat Steak cut from an animal to be used for sustainment, must be cooked prior to eating.</English>						
+				<German>Ein Stück Fleisch von einem Tier, das zubereitet gegessen werden kann.</German>
+				<Russian>Вырезка сырого мяса, снятого с разделанного животного. Приготовление на огне обязательно.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_25">						
+				<Original>Cooked Meat</Original>						
+				<English>Cooked Meat</English>						
+				<German>Zubereitetes Fleisch</German>
+				<Russian>Жаренное мясо</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_25">						
+				<Original>Meat Steak that has been cooked at a fireplace and can be consumed for sustainment.</Original>						
+				<English>Meat Steak that has been cooked at a fireplace and can be consumed for sustainment.</English>						
+				<German>Ein Stück Fleisch, das über einem Feuer essfertig gebraten wurde.</German>
+				<Russian>Кусок жаренного на огне мяса.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_26">						
+				<Original>Can (Baked Beans)</Original>						
+				<English>Can (Baked Beans)</English>						
+				<German>Dose (Bohnen)</German>
+				<Russian>Банка (Бобы)</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_26">						
+				<Original>Canned baked beans used for sustainment. Lasts well over five years if stored correctly.</Original>						
+				<English>Canned baked beans used for sustainment. Lasts well over five years if stored correctly.</English>						
+				<German>Eine essfertige Dose Bohnen. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+				<Russian>Банка вареных бобов в соусе. Срок хранения до 5 лет.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_27">						
+				<Original>Can (Sardines)</Original>						
+				<English>Can (Sardines)</English>						
+				<German>Dose (Sardinen)</German>
+				<Russian>Банка (Сардины)</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_27">						
+				<Original>Canned sardines used for sustainment. Lasts well over five years if stored correctly.</Original>						
+				<English>Canned sardines used for sustainment. Lasts well over five years if stored correctly.</English>						
+				<German>Eine essfertige Dose Sardinen. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+				<Russian>Банка консервированных сардин. Срок хранения до 5 лет.</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_NAME_28">						
+				<Original>Can (Frank &amp; Beans)</Original>						
+				<English>Can (Frank &amp; Beans)</English>						
+				<German>Dose (Bohnen und Würste)</German>
+				<Russian>Банка (Фасоль с мясом)</Russian>
+			</Key>						
+			<Key ID="STR_EQUIP_DESC_28">						
+				<Original>Canned Beans and Sausages used for sustainment. Lasts well over five years if stored correctly.</Original>						
+				<English>Canned Beans and Sausages used for sustainment. Lasts well over five years if stored correctly.</English>						
+				<German>Eine essfertige Dose Bohnen und Würste. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+				<Russian>Банка консервированной фасоли с мясом. Срок хранения до 5 лет.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_29">						
+				<Original>Can (Pasta)</Original>						
+				<English>Can (Pasta)</English>						
+				<German>Dose (Nudeln)</German>
+				<Russian>Банка (Лапша)</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_29">						
+				<Original>Canned Macaroni used for sustainment. Lasts well over five years if stored correctly.</Original>						
+				<English>Canned Macaroni used for sustainment. Lasts well over five years if stored correctly.</English>						
+				<German>Eine essfertige Dose Nudeln. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+				<Russian>Банка лапши в соусе. Срок хранения до 5 лет.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_30">
+				<Original>Windscreen Glass</Original>						
+				<English>Windscreen Glass</English>						
+				<German>Autoglas</German>
+				<Russian>Автомобильное стекло</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_30">
+				<Original>Brand new auto glass. Could be used to repair glass on a vehicle.</Original>						
+				<English>Brand new auto glass. Could be used to repair glass on a vehicle.</English>						
+				<German>Gut erhaltenes Autoglas. Könnte zum Reparieren von Glas an einem Fahrzeug verwendet werden.</German>
+				<Russian>Новое автомобильное стекло в упаковке. Его можно установить на технику.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_31">
+				<Original>Portable Generator</Original>						
+				<English>Portable Generator</English>						
+				<German>Tragbarer Generator</German>
+				<Russian>Портативный генератор</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_31">
+				<Original>Used to supply electrical power in places where utility (central station) power is not available, or where power is needed only temporarily.</Original>						
+				<English>Used to supply electrical power in places where utility (central station) power is not available, or where power is needed only temporarily.</English>						
+				<German>Ein tragbarer Generator, der im Falle eines Stromausfalls zum Erzeugen von elektrischer Energie verwendet werden kann.</German>
+				<Russian>Генератор используется для создания напряжения в местах, где недоступна электросеть.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_32">
+				<Original>Main Rotor Assembly</Original>						
+				<English>Main Rotor Assembly</English>						
+				<German>Hauptrotorteile</German>
+				<Russian>Набор запчастей для вертолета</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_32">
+				<Original>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</Original>						
+				<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</English>						
+				<German>Hydrauliksysteme für einen Helikopter, die zum Reparieren kaputter Rotorwellen in anderen Helikoptern verwendet werden können.</German>
+				<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолета.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_33">
+				<Original>Empty Tin Can</Original>						
+				<English>Empty Tin Can</English>						
+				<German>Leere Dose</German>
+				<Russian>Пустая консервная банка</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_33">
+				<Original>An empty tin can that no longer contains any food, or anything usable.</Original>						
+				<English>An empty tin can that no longer contains any food, or anything usable.</English>						
+				<German>Eine leere Dose, in der einmal Essen oder andere nützliche Sachen waren.</German>
+				<Russian>Пустая консервная банка совершенно пуста и бесполезна.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_34">
+				<Original>Empty Whiskey Bottle</Original>						
+				<English>Empty Whiskey Bottle</English>						
+				<German>Leere Whiskeyflasche</German>
+				<Russian>Пустая бутылка виски</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_34">
+				<Original>A cracked empty whiskey bottle that no longer contains anything.</Original>						
+				<English>A cracked empty whiskey bottle that no longer contains anything.</English>						
+				<German>Eine leere Whiskeyflasche. Sie ist leider undicht.</German>
+				<Russian>Треснутая бутылка виски не содержит в себе абсолютно ничего.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_35">
+				<Original>Empty Soda Can</Original>						
+				<English>Empty Soda Can</English>						
+				<German>Leere Getränkedose</German>
+				<Russian>Пустая банка газировки</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_35">
+				<Original>A aluminium can that once contained a tasty carbonated beverage, and now contains nothing.</Original>						
+				<English>A aluminium can that once contained a tasty carbonated beverage, and now contains nothing.</English>						
+				<German>Eine Aluminiumdose, in der einmal ein köstliches, kohlensäurehaltiges Getränk war.</German>
+				<Russian>Алюминиевая банка, которая однажды содержала вкусный газированный напиток и теперь пуста.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_36a">
+				<Original>Soda Can (Coke)</Original>						
+				<English>Soda Can (Coke)</English>						
+				<German>Dose (Coke)</German>
+				<Russian>Газировка (Кола)</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_36b">
+				<Original>Soda Can (Pepsi)</Original>						
+				<English>Soda Can (Pepsi)</English>						
+				<German>Dose (Pepsi)</German>
+				<Russian>Газировка (Пепси)</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_36">
+				<Original>An aluminium can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives.</Original>						
+				<English>An aluminium can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives.</English>						
+				<German>Eine Alumniumdose, in der ein köstliches, kohlensäurehaltiges Getränk voller Zucker, künstlicher Aromen und Konservierungsmittel</German>
+				<Russian>Алюминиевая банка со вкусным газированным напитком с сахаром, искусственными ароматизаторами и консервантами.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_37">
+				<Original>Soda Can (Mountain Dew)</Original>						
+				<English>Soda Can (Mountain Dew)</English>						
+				<German>Dose (Mountain Dew)</German>
+				<Russian>Газировка (Маунтин Дью)</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_37">
+				<Original>An aluminium can containing fuel for all-night game development. Can be consumed as a regular drink as required.</Original>						
+				<English>An aluminium can containing fuel for all-night game development. Can be consumed as a regular drink as required.</English>						
+				<German>Eine Aluminiumdose, in der Energie für eine Nacht voller Spieleentwicklung steckt. Kann auch auch täglicher Basis getrunken werden.</German>
+				<Russian>Алюминиевая банка содержащая газированый энергетик. Единственная на всю Черноруссию.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_38">
+				<Original>Mobile Phone</Original>						
+				<English>Mobile Phone</English>						
+				<German>Mobiltelefon</German>
+				<Russian>Мобильный телефон</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_38">
+				<Original>A specialist Mobile phone that can use mobile networks, line-of-sight, and satellites for communication.</Original>						
+				<English>A specialist Mobile phone that can use mobile networks, line-of-sight, and satellites for communication.</English>						
+				<German>Ein spezielles Mobiltelefon, das Handynetze, direkte Verbindungen und Satelliten für die Kommunikation verwenden kann.</German>
+				<Russian>Специальный мобильный телефон, который используется для передачи данных, прямой и спутниковой связи.</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_NAME_39">
+				<Original>Jerry Can (Empty)</Original>						
+				<English>Jerry Can (Empty)</English>						
+				<German>Leerer Kanister</German>
+				<Russian>Канистра (пустая)</Russian>
+			</Key>
+			<Key ID="STR_EQUIP_DESC_39">
+				<Original>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Original>						
+				<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>						
+				<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
+				<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
+			</Key>
+    <Key ID="STR_EQUIP_NAME_40">
+      <Original>Wood Pile</Original>
+      <English>Wood Pile</English>
+      <German>Holzstapel</German>
+      <Russian>Дрова</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_40">
+      <Original>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</Original>
+      <English>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</English>
+      <German>Ein kleiner Stapel frisch geschlagenes Holz, dass neben einiger anderer Dingen dazu verwendet werden kann ein Feuer zu machen.</German>
+      <Russian>Кучка дров, идеально подойдет, чтобы развести костер.</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_NAME_41">
+      <Original>Hatchet</Original>
+      <English>Hatchet</English>
+      <German>Hatchet</German>
+      <Russian>Топорик</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_41">
+      <Original>A single-handed striking tool with a sharp blade used to cut and split wood.</Original>
+      <English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
+      <German>A single-handed striking tool with a sharp blade used to cut and split wood.</German>
+      <Russian>Топорик отлично подойдет для рубки дров.</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_NAME_42">
+      <Original>Heatpack</Original>
+      <English>Heatpack</English>
+      <German>Heatpack</German>
+      <Russian>Heatpack</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_42">
+      <Original>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</Original>
+      <English>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</English>
+      <German>Ein Heizkissen, wenn Sie die Kristallisation beginnen erwärmt. Wird verwendet, um schnell Wärme an den Körper liefern.</German>
+      <Russian>Грелка-подушка, которая греет, когда вы замерзаете. Используется для быстрого согревания вашего тела.</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_NAME_43">
+      <Original>Ghillie Suit</Original>
+      <English>Ghillie Suit</English>
+      <German>Ghillie-Anzug</German>
+      <Russian>Маскировочный костюм</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_43">
+      <Original>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</Original>
+      <English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
+      <German>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</German>
+      <Russian>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_NAME_44">
+      <Original>Camo Clothing</Original>
+      <English>Camo Clothing</English>
+      <German>Camo Clothing</German>
+      <Russian>Camo Clothing</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_44">
+      <Original>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</Original>
+      <English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
+      <German>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</German>
+      <Russian>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_NAME_45">
+      <Original>Civilian Clothing</Original>
+      <English>Civilian Clothing</English>
+      <German>Civilian Clothing</German>
+      <Russian>Civilian Clothing</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_45">
+      <Original>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</Original>
+      <English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
+      <German>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</German>
+      <Russian>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_NAME_46">
+      <Original>Soldier Clothing</Original>
+      <English>Soldier Clothing</English>
+      <German>Soldier Clothing</German>
+      <Russian>Soldier Clothing</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_46">
+      <Original>A British Army Soldiers uniform. Can be unpacked and worn.</Original>
+      <English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
+      <German>A British Army Soldiers uniform. Can be unpacked and worn.</German>
+      <Russian>A British Army Soldiers uniform. Can be unpacked and worn.</Russian>
+    </Key>
+	</Package>
+	<Package name="weaponHolders">
+			<Key ID="STR_WPN_HOLDR_1">	
+				<Original>Colt 1911</Original>
+				<English>Colt 1911</English>
+				<German>Colt 1911</German>
+				<Russian>Кольт 1911</Russian>
+			</Key>	
+			<Key ID="STR_WPN_HOLDR_2">	
+				<Original>Hunting Rifle</Original>
+				<English>Hunting Rifle</English>
+				<German>Jagdgewehr</German>
+				<Russian>Охотничье ружьё</Russian>
+			</Key>	
+			<Key ID="STR_WPN_HOLDR_3">	
+				<Original>M4A1</Original>
+				<English>M4A1</English>
+				<German>M4A1</German>
+				<Russian>M4A1</Russian>
+			</Key>
+    </Package>
+	<Package name="objects">
+			<Key ID="STR_DAYZ_OBJ_1">	
+				<Original>Cardboard Box (Food)</Original>
+				<English>Cardboard Box (Food)</English>
+				<German>Pappkarton (Lebensmittel)</German>
+				<Russian>Картонная коробка (Пища)</Russian>
+			</Key>
+			<Key ID="STR_DAYZ_OBJ_2">	
+				<Original>Cardboard Box (Medical)</Original>
+				<English>Cardboard Box (Medical)</English>
+				<German>Pappkarton (Medizin)</German>
+				<Russian>Картонная коробка (Медикаменты)</Russian>
+			</Key>
+			<Key ID="STR_DAYZ_OBJ_3">	
+				<Original>Ammunition Box</Original>
+				<English>Ammunition Box</English>
+				<German>Munitionskiste</German>
+				<Russian>Коробка с патронами</Russian>
+			</Key>
+	</package>
+    <package name="actions">
+      <Key ID="STR_PITCH_TENT">
+        <Original>Pitch Tent</Original>
+        <English>Pitch Tent</English>
+        <German>Zelt aufbauen</German>
+        <Russian>Поставить палатку</Russian>
+      </Key>
+      <Key ID="STR_BANDAGE_SELF">
+        <Original>Bandage Myself</Original>
+        <English>Bandage Myself</English>
+        <German>Selbst verbinden</German>
+        <Russian>Перевязать себя</Russian>
+      </Key>
+      <Key ID="STR_EAT_FOOD">
+        <Original>Eat Food</Original>
+        <English>Eat Food</English>
+        <German>Lebensmittel essen</German>
+        <Russian>Съесть еду</Russian>
+      </Key>
+      <Key ID="STR_TAKE_PAINKILLER">
+        <Original>Take Painkillers</Original>
+        <English>Take Painkillers</English>
+        <German>Schmerzmittel einnehmen</German>
+        <Russian>Принять болеутоляющие</Russian>
+      </Key>
+      <Key ID="STR_TAKE_MORPHINE">
+        <Original>Take Morphine</Original>
+        <English>Take Morphine</English>
+        <German>Morphium einnehmen</German>
+        <Russian>Принять морфий</Russian>
+      </Key>
+      <Key ID="STR_TAKE_ANTIBIOTIC">
+        <Original>Take Antibiotics</Original>
+        <English>Take Antibiotics</English>
+        <German>Antibiotikum einnehmen</German>
+        <Russian>Принять антибиотики</Russian>
+      </Key>
+      <Key ID="STR_ACTIONS_DRINK">
+        <Original>Drink %1</Original>
+        <English>Drink %1</English>
+        <German>%1 trinken</German>
+        <Russian>Выпить %1</Russian>
+      </Key>
+      <Key ID="STR_ACTIONS_FILL_W">
+        <Original>Fill Water</Original>
+        <English>Fill Water</English>
+        <German>Wasser abfüllen</German>
+        <Russian>Наполнить фляжки</Russian>
+      </Key>
+      <Key ID="STR_ACTIONS_LIGHTFIRE">
+        <Original>Make Fireplace</Original>
+        <English>Make Fireplace</English>
+        <German>Feuer machen</German>
+        <Russian>Развести костер</Russian>
+      </Key>
+      <Key ID="STR_ACTIONS_CHOPWOOD">
+        <Original>Harvest Wood</Original>
+        <English>Harvest Wood</English>
+        <German>Holz sammeln</German>
+        <Russian>Нарубить дров</Russian>
+      </Key>
+      <Key ID="STR_ACTIONS_BUILD">
+        <Original>Build %1</Original>
+        <English>Build %1</English>
+        <German>%1 bauen</German>
+        <Russian>Установить %1</Russian>
+      </Key>
+      <Key ID="STR_ACTIONS_HEATPACK">
+        <Original>Use Heatpack</Original>
+        <English>Use Heatpack</English>
+        <German>>Use Heatpack</German>
+        <Russian>Использовать Грелку</Russian>
+      </Key>
+    </package>
+</Project>

@@ -1,0 +1,91 @@
+zmbErcSprint9.rtm  - 0.566038
+
+zmbErcSprint13.rtm  - 0.638298
+
+zombie_frenziedCrawl3.rtm - 0.468750, frames 32
+
+zombie_frenziedCrawl3.rtm - 0.468750, frames 64
+
+zombie_runDeaths6.rtm - 0.153061, frames 196
+
+zombie_stumble3.rtm - 0.348837, frames 86
+
+zombie_walk2sprint2.rtm - 0.206897, frames 145
+
+zombie_frenziedCrawl3.rtm - 0.468750, frames 64
+
+zombieStand2KneelFeeding.rtm - 0.434783, frames 69
+
+KneelFeeding2zombieStand.rtm - 0.434783, frames 69
+
+zombie_kneelFeeding2_112_301.rtm - 0.157895, frames 190
+
+zombie_kneelFeeding2_1054_1275.rtm - 0.148515, frames 202
+
+zombie_kneelFeeding3_109-308.rtm - 0.150000, frames 200
+
+zombie_kneelFeeding3_363-574.rtm - 0.141509, frames 212
+
+zombie_kneelFeeding3_idle_1292-1461.rtm - 0.176471, frames 170
+
+zombie_kneelFeeding3_idle_1488-1587.rtm - 0.300000, frames 100
+
+zombie_kneelFeeding2_idle_893-1054.rtm - 0.185185, frames 162
+
+zombie_kneelFeeding2_idle_893-1054.rtm - 0.185185, frames 162
+
+zombie_kneelFeeding2_idle_1275-1430.rtm - 0.192308, frames 156
+
+zombie_standSpasms1Stand_74-112.rtm - 0.769231, frames 39
+
+zombie_standSpasms1Stand_74-112.rtm - 0.769231, frames 39
+
+zombie_standSpasms1Stand_113-198.rtm - 0.348837, frames 86
+
+zombie_standSpasms1Stand_199-327.rtm - 0.232558, frames 129
+
+zombie_standSpasms1Stand_199-327.rtm - 0.232558, frames 129
+
+zombie_standSpasms2bentPose_82-134.rtm - 0.566038, frames 53
+
+zombie_standSpasms2bentPose_135-178.rtm - 0.681818, frames 44
+
+zombie_standSpasms2bentPose_179-235.rtm - 0.526316, frames 57
+
+zombie_standSpasms2bentPose_236-293.rtm - 0.517241, frames 58
+
+zombie_standSpasms2bentPose_294-336.rtm - 0.697674, frames 43
+
+zombie_standSpasms2bentPose_337-439.rtm - 0.291262, frames 103
+
+zombie_standSpasms3Stand_83-190.rtm - 0.277778, frames 108
+
+zombie_standSpasms3Stand_191-314.rtm - 0.241935, frames 124
+
+zombie_standSpasms3Stand_315-400.rtm - 0.348837, frames 86
+
+zombie_standSpasms3Stand_315-400.rtm - 0.348837, frames 86
+
+zombie_standSpasms3Stand_401-478.rtm - 0.384615, frames 78
+
+zombie_staticAttack3_67-158.rtm - 0.326087, frames 92
+
+zombie_staticAttack3_67-158.rtm - 0.326087, frames 92
+
+zombie_staticAttack3_183-274.rtm - 0.326087, frames 92
+
+zombie_staticAttack3_183-274.rtm - 0.326087, frames 92
+
+zombie_staticAttack3_441-554.rtm - 0.263158, frames 114
+
+zombie_staticAttack3_570-707.rtm - 0.217391, frames 138
+
+zombie_staticAttack3_742-833.rtm - 0.326087, frames 92
+
+zombie_staticAttack3_855-987.rtm - 0.225564, frames 133
+
+zombie_sniffing_264-499.rtm - 0.127119, frames 236
+
+zombie_sniffing_573-809.rtm - 0.126582, frames 237
+
+zombie_sniffing_573-809.rtm - 0.126582, frames 237

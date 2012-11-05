@@ -1,0 +1,162 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Trap">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-450.000000,-200.000000,-350.000000,-150.000000,0.000000,"init"};
+item1[] = {"Open",2,250,-125.000000,25.000000,-25.000000,75.000000,0.000000,"Open"};
+item2[] = {"nearby",4,4314,-200.000000,-50.000000,-100.000000,0.000000,0.000000,"nearby"};
+item3[] = {"wait",2,250,-325.000000,-50.000000,-225.000000,0.000000,0.000000,"wait"};
+item4[] = {"local",4,218,-325.000000,-125.000000,-225.000000,-75.000000,2.000000,"local"};
+item5[] = {"opened",4,218,-325.000000,25.000000,-225.000000,75.000000,0.000000,"opened"};
+item6[] = {"server",4,218,-450.000000,-125.000000,-350.000000,-75.000000,1.000000,"server"};
+item7[] = {"true",8,218,-575.000000,-125.000000,-475.000000,-75.000000,0.000000,"true"};
+item8[] = {"end",1,250,-450.000000,-50.000000,-350.000000,0.000000,0.000000,"end"};
+item9[] = {"closed",4,218,-200.000000,-125.000000,-100.000000,-75.000000,0.000000,"closed"};
+item10[] = {"",7,210,-79.000000,-29.000000,-71.000000,-21.000000,0.000000,""};
+item11[] = {"",7,210,-79.000000,-104.000000,-71.000000,-96.000000,0.000000,""};
+link0[] = {0,4};
+link1[] = {0,6};
+link2[] = {0,7};
+link3[] = {1,10};
+link4[] = {2,3};
+link5[] = {3,5};
+link6[] = {4,3};
+link7[] = {5,1};
+link8[] = {6,8};
+link9[] = {7,8};
+link10[] = {9,3};
+link11[] = {10,2};
+link12[] = {10,11};
+link13[] = {11,9};
+globals[] = {25.000000,1,0,0,0,640,480,1,97,6316128,1,-619.928406,50.669247,261.518799,-371.823456,954,901,1};
+window[] = {2,-1,-1,-32000,-32000,1145,315,1286,203,3,972};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "DayZ Trap";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"_trap = _this select 0;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "local">*/
+        class local
+        {
+          priority = 2.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"local _trap"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_pos = getPosATL _trap;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "server">*/
+        class server
+        {
+          priority = 1.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isServer"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"[_trap] call eh_localCleanup;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Open">*/
+    class Open
+    {
+      name = "Open";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "closed">*/
+        class closed
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((_trap animationPhase ""LeftShutter"") > 0)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"[nil,_trap,rSAY,[""trap_bear_0"",60]] call RE;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "nearby">*/
+        class nearby
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"count (_pos nearEntities 0.5) > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_ent = (_pos nearEntities 0.5) select 0;" \n
+           "" \n
+           "//Sound/Animate" \n
+           "[nil,_trap,rSAY,[""trap_bear_0"",60]] call RE;" \n
+           "_trap animate [""LeftShutter"",1];" \n
+           "_trap animate [""RightShutter"",1];" \n
+           "" \n
+           "if (_ent isKindOf ""Animal"") then {" \n
+           "	_ent setDamage 1;" \n
+           "} else {" \n
+           "	_ent setHit [""legs"",1];" \n
+           "	_ent setVariable [""hit_legs"",2,true];" \n
+           "};"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "wait">*/
+    class wait
+    {
+      name = "wait";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "opened">*/
+        class opened
+        {
+          priority = 0.000000;
+          to="Open";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!((_trap animationPhase ""LeftShutter"") > 0)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "end">*/
+    class end
+    {
+      name = "end";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+    "end",
+  };
+};
+/*%FSM</COMPILE>*/

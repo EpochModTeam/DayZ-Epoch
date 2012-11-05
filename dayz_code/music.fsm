@@ -1,0 +1,182 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Player Ambient music">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-50.000000,-150.000000,50.000000,-100.000000,0.000000,"init"};
+item1[] = {"always",8,4314,-50.000000,-75.000000,50.000000,-25.000000,0.000000,"always"};
+item2[] = {"wait",2,250,-50.000000,0.000000,50.000000,50.000000,0.000000,"wait"};
+item3[] = {"ready",4,218,-50.000000,75.000000,50.000000,125.000000,0.000000,"ready"};
+item4[] = {"select_track",2,250,-50.000000,150.000000,50.000000,200.000000,0.000000,"select track"};
+item5[] = {"long",4,218,100.000000,150.000000,200.000000,200.000000,2.000000,"long"};
+item6[] = {"",7,210,70.999992,171.000015,79.000008,178.999985,0.000000,""};
+item7[] = {"",7,210,70.999992,246.000000,79.000008,254.000000,0.000000,""};
+item8[] = {"",7,210,70.999992,321.000000,79.000008,329.000000,0.000000,""};
+item9[] = {"medium",4,218,100.000000,225.000000,200.000000,275.000000,1.000000,"medium"};
+item10[] = {"short",8,218,100.000000,300.000000,200.000000,350.000000,0.000000,"short"};
+item11[] = {"",7,210,221.000000,321.000000,229.000000,329.000000,0.000000,""};
+item12[] = {"",7,210,221.000000,246.000000,229.000000,254.000000,0.000000,""};
+item13[] = {"",7,210,221.000000,171.000015,229.000000,178.999985,0.000000,""};
+item14[] = {"",7,210,220.999985,21.000004,229.000000,28.999998,0.000000,""};
+item15[] = {"is_dedi",4,218,75.000000,-150.000000,175.000000,-100.000000,3.000000,"is" \n "dedi"};
+item16[] = {"end",1,250,75.000000,-75.000000,175.000000,-25.000000,0.000000,"end"};
+item17[] = {"nothing",8,218,100.000000,375.000000,200.000000,425.000000,90.000000,"nothing"};
+item18[] = {"",7,210,71.000000,396.000000,79.000000,404.000000,0.000000,""};
+item19[] = {"",7,210,221.000000,396.000000,229.000000,404.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,15};
+link2[] = {1,2};
+link3[] = {2,3};
+link4[] = {3,4};
+link5[] = {4,6};
+link6[] = {5,13};
+link7[] = {6,5};
+link8[] = {6,7};
+link9[] = {7,8};
+link10[] = {7,9};
+link11[] = {8,10};
+link12[] = {8,18};
+link13[] = {9,12};
+link14[] = {10,11};
+link15[] = {11,12};
+link16[] = {12,13};
+link17[] = {13,14};
+link18[] = {14,2};
+link19[] = {15,16};
+link20[] = {17,19};
+link21[] = {18,17};
+link22[] = {19,11};
+globals[] = {25.000000,1,0,0,0,640,480,1,34,6316128,1,-451.823578,687.817871,513.030151,-228.021362,1401,901,1};
+window[] = {2,-1,-1,-1,-1,781,45,1485,29,3,1419};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Player Ambient music";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"_delay = 1;" \n
+       "_timer = time;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "is_dedi">*/
+        class is_dedi
+        {
+          priority = 3.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isDedicated"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "always">*/
+        class always
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"player == player"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"hasRun = true;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "wait">*/
+    class wait
+    {
+      name = "wait";
+      init = /*%FSM<STATEINIT""">*/"_rnd = random (10);" \n
+       "_timer = time;" \n
+       "_delay = _delay + _rnd + 5;" \n
+       "player sideChat format [""Playing track for %1 seconds"",_delay];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "ready">*/
+        class ready
+        {
+          priority = 0.000000;
+          to="select_track";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time -  _timer) > _delay;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "select_track">*/
+    class select_track
+    {
+      name = "select_track";
+      init = /*%FSM<STATEINIT""">*/"_rnd = random 5;" \n
+       "player sidechat ""track starting"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "nothing">*/
+        class nothing
+        {
+          priority = 90.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"r_player_unconscious or r_player_dead"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_delay = 20;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "long">*/
+        class long
+        {
+          priority = 2.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rnd > 4;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_delay = [""long""] call dayz_zombieMusic;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "medium">*/
+        class medium
+        {
+          priority = 1.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rnd > 3;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_delay = [""medium""] call dayz_zombieMusic;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "short">*/
+        class short
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_delay = [""short""] call dayz_zombieMusic;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "end">*/
+    class end
+    {
+      name = "end";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+    "end",
+  };
+};
+/*%FSM</COMPILE>*/

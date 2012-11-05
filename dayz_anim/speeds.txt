@@ -1,0 +1,84 @@
+zmbStandIdleA.rtm - 0.088757, frames 169
+zmbStandIdleB.rtm - 0.107143, frames 140
+zmbStandIdleC_lookAround.rtm - 0.089286, frames 168
+zmbStandIdleD_sniffingHyped.rtm - 0.066079, frames 227
+zmbStandIdleE_swinging.rtm - 0.061983, frames 242
+zmbStandCry1.rtm - 0.222222, frames 135
+zmbStandCry2.rtm - 0.209790, frames 143
+zmbStandDeath1.rtm - 0.379747, frames 79
+zmbStandDeath2.rtm - 0.215827, frames 139
+zmbStandDeath3.rtm - 0.291262, frames 103
+zmbStandAttack1.rtm - 0.348837, frames 86		Maybe, not good at end
+zmbStandAttack2bite.rtm - 0.379747, frames 79	
+zmbStandAttack3.rtm - 0.319149, frames 94
+zmbStandAttack4.rtm - 0.236220, frames 127
+zmbStandAttack5.rtm - 0.461538, frames 65
+zmbStandAttack6.rtm - 0.410959, frames 73
+zmbStandWalkF1.rtm - 0.166667, frames 180
+zmbStandWalkF2.rtm - 0.375000, frames 80
+zmbStandRunF1.rtm - 0.422535, frames 71
+zmbStandRunF2.rtm - 0.447761, frames 67
+zmbStandRunF3.rtm - 0.491803, frames 61
+zmbStandHit1_toRunF1.rtm - 0.164835, frames 182
+zmbStandHit2.rtm - 0.201681, frames 119
+zmbStandHit3_fromBehind.rtm - 0.135135, frames 222
+zmbStandHit4.rtm - 0.319149, frames 94
+zmbBentIdleA.rtm - 0.172414, frames 87
+zmbBentIdleB_lookAroundSwing.rtm - 0.093750, frames 160
+zmbBentIdleC_lookAround.rtm - 0.091463, frames 164
+zmbStand_zmbKneel.rtm - 0.291262, frames 103
+zmbKneel_zmbStand.rtm - 0.229008, frames 131
+zmbKneel_idleA.rtm - 0.040650, frames 369
+zmbKneel_idleB.rtm - 0.049505, frames 303
+zmbKneel_idleC.rtm - 0.043732, frames 343
+zmbKneel_idleD.rtm - 0.140187, frames 107
+zmbKneel_feedA.rtm - 0.091255, frames 263
+zmbKneel_feedB.rtm - 0.186047, frames 129
+zmbKneel_feedC.rtm - 0.179104, frames 134
+zmbKneel_feedD.rtm - 0.142012, frames 169
+zmbKneel_feedE.rtm - 0.275862, frames 87
+zmbKneel_deathA.rtm - 0.361446, frames 83
+zmbKneel_deathB.rtm - 0.254237, frames 118
+zmbKneelAttack1_toStand.rtm - 0.193548, frames 155
+zmbKneelAttack2.rtm - 0.344828, frames 87
+zmbKneelWalkF.rtm - 0.058111, frames 413
+zmbKneelWalkB.rtm - 0.076190, frames 315
+zmbKneeljogF.rtm - 0.220588, frames 136
+zmbKneelrunF1.rtm - 0.194805, frames 154
+zmbKneelrunF2.rtm - 0.263158, frames 114
+zmbKneelrunF3.rtm - 0.272727, frames 110
+zmbKneelrunFrenzy1.rtm - 0.508475, frames 59
+zmbKneelrunFrenzy2.rtm - 0.447761, frames 67
+zmbKneelHit1.rtm - 0.136364, frames 220
+zmbKneelHit1.rtm - 0.136364, frames 176
+zmbKneelHit2.rtm - 0.193548, frames 124
+
+==============================================
+
+zombie1_attack.rtm - 0.357143, frames 84
+
+zombie1_deathFromWalk.rtm - 0.384615, frames 78
+
+zombie1_walk.rtm - 0.160428, frames 187
+
+zombie1_jump.rtm - 0.126582, frames 237
+
+zombie1_birth.rtm - 0.076531, frames 392
+
+zombie2_walk.rtm - 0.133333, frames 225
+
+zombie2_birth.rtm - 0.103448, frames 290
+
+zombie2_deathFromWalk.rtm - 0.312500, frames 96
+
+zombie2_attack.rtm - 0.322581, frames 93
+
+zombie2_jump.rtm - 0.250000, frames 120
+
+zombie3_attack.rtm - 0.227273, frames 132
+
+zombie3_birth.rtm - 0.075000, frames 400
+
+zombie3_walk.rtm - 0.159574, frames 188
+
+zombie3_jump.rtm - 0.215827, frames 139

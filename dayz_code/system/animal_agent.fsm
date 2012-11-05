@@ -1,0 +1,169 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Animal Agent">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-150.000000,75.000000,-50.000000,125.000000,0.000000,"init"};
+item1[] = {"",7,210,-104.000000,321.000000,-96.000000,329.000000,0.000000,""};
+item2[] = {"End",1,250,100.000000,75.000000,200.000000,125.000000,0.000000,"End"};
+item3[] = {"",7,210,-104.000000,396.000000,-96.000000,404.000000,0.000000,""};
+item4[] = {"Not_Alive",4,218,-25.000000,300.000000,75.000000,350.000000,5.000000,"Not" \n "Alive"};
+item5[] = {"Nobody_Near",4,218,-25.000000,375.000000,75.000000,425.000000,4.000000,"Nobody" \n "Near"};
+item6[] = {"Loiter",2,4346,-150.000000,225.000000,-50.000000,275.000000,0.000000,"Loiter"};
+item7[] = {"In_Position",4,218,-25.000000,225.000000,75.000000,275.000000,1.000000,"In Position"};
+item8[] = {"preloaded",4,218,-150.000000,150.000000,-50.000000,200.000000,0.000000,"preloaded"};
+item9[] = {"",7,210,146.000000,321.000000,154.000000,329.000000,0.000000,""};
+item10[] = {"",7,210,146.000000,396.000000,154.000000,404.000000,0.000000,""};
+item11[] = {"Cleanup",2,250,100.000000,225.000000,200.000000,275.000000,0.000000,"Cleanup"};
+item12[] = {"time_up",4,218,100.000000,150.000000,200.000000,200.000000,0.000000,"time" \n "up"};
+item13[] = {"player_check",4,218,-250.000000,175.000000,-150.000000,225.000000,0.000000,"player" \n "check"};
+link0[] = {0,8};
+link1[] = {1,3};
+link2[] = {1,4};
+link3[] = {3,5};
+link4[] = {4,9};
+link5[] = {5,10};
+link6[] = {6,1};
+link7[] = {6,7};
+link8[] = {6,13};
+link9[] = {7,6};
+link10[] = {8,6};
+link11[] = {9,11};
+link12[] = {10,9};
+link13[] = {11,12};
+link14[] = {12,2};
+link15[] = {13,6};
+globals[] = {25.000000,1,0,0,0,640,480,1,84,6316128,1,-297.044281,256.119873,569.827881,-79.569984,776,911,1};
+window[] = {2,-1,-1,-32000,-32000,1026,25,1233,25,3,794};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "DayZ Animal Agent";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"_position = _this select 0;" \n
+       "_agent = _this select 1;" \n
+       "" \n
+       "_pos = _position;" \n
+       "_isSomeone = true;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "preloaded">*/
+        class preloaded
+        {
+          priority = 0.000000;
+          to="Loiter";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"dayz_clientPreload"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"if (!_isSomeone) then {" \n
+       "	deleteVehicle _agent;" \n
+       "} else {" \n
+       "	dayz_bodyMonitor set [count dayz_bodyMonitor,_agent];" \n
+       "};" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Loiter">*/
+    class Loiter
+    {
+      name = "Loiter";
+      init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
+       "" \n
+       "//_agent forceSpeed 2;" \n
+       "_entityTime = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Not_Alive">*/
+        class Not_Alive
+        {
+          priority = 5.000000;
+          to="Cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Nobody_Near">*/
+        class Nobody_Near
+        {
+          priority = 4.000000;
+          to="Cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "In_Position">*/
+        class In_Position
+        {
+          priority = 1.000000;
+          to="Loiter";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_agent distance _pos < 3"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_pos = [_position,10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
+           "_agent moveTo _pos;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "player_check">*/
+        class player_check
+        {
+          priority = 0.000000;
+          to="Loiter";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _entityTime) > 30"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_entityTime = time;" \n
+           "" \n
+           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+           "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Cleanup">*/
+    class Cleanup
+    {
+      name = "Cleanup";
+      init = /*%FSM<STATEINIT""">*/"_timeA = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "time_up">*/
+        class time_up
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeA) > 120"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/
