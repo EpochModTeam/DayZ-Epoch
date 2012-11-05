@@ -938,7 +938,7 @@ class CfgBuildingLoot {
 	}; // Qty: 3
 	class Land_Shed_W02: FarmRoaming {}; // Qty: 213
 	
-	// DayZ Epoch More buildings
+	// DAYZ AMP More buildings
 	class Land_Shed_W02_EP1: FarmRoaming{};
 	class Land_MBG_ApartmentsOne_W: HouseRoaming{};
 	class Land_MBG_ApartmentsTwo_P: HouseRoaming{};
