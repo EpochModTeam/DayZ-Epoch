@@ -443,7 +443,7 @@
 	  <Original>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</Original>
 	  <English>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</English>
 	  <German>Bitte wählen Sie das Geschlecht, die Sie als zu spielen. Ihr Geschlecht wird zu dieser einzigartigen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
-	  <Russian>Пожалуйста, выберите пол вы хотите играть. Ваш пол будет связано с этим уникальным характером и не может быть изменено, пока не умрешь.</Russian>
+	  <Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
     </Key>
     <Key ID="STR_UI_GENDER_MALE">
       <Original>MALE</Original>

@@ -9,5 +9,5 @@ if(_whistle) then {
 
 sleep 1;
 
-_handle setFSMVariable ["_command","none"];
+_handle setFSMVariable ["_command","return"];
 

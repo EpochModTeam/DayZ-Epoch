@@ -1062,12 +1062,12 @@ class FSM
        "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
        "" \n
        "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
-       "_nearestCity = (nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000] select 0);" \n
+       "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
        "_town = ""Wilderness"";" \n
        "" \n
        "diag_log (""NearestCity"" + str(_nearestCity));" \n
        "" \n
-       "if (!isNull _nearestCity) then {_town = text _nearestCity};" \n
+       "if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};" \n
        "" \n
        "_strTime = call curTimeStr;" \n
        "_strDate = date;" \n

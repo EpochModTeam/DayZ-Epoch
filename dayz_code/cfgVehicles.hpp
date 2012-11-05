@@ -1,5 +1,7 @@
 class CfgVehicles {
 	class Animal;
+	class Pastor;
+	class Fin;
 	class DZAnimal: Animal
 	{
 		scope = 0;
@@ -39,12 +41,24 @@ class CfgVehicles {
 		class VariablesScalar {};
 		class VariablesString {};
 	};
-	class Dog1 : DZAnimal {
+	class DZ_Pastor : Pastor {
 		scope = 2;
 		model = "\ca\animals2\Dogs\Pastor\Pastor";
 		displayName = "Alsatian";
 		moves = "CfgMovesDogDZ";
 		gestures = "CfgGesturesDogDZ";
+		fsmDanger = "";
+		fsmFormation = "";
+	};
+	
+	class DZ_Fin : Fin {
+		scope = 2;
+		model = "\ca\animals2\Dogs\Fin\Fin";
+		displayName = "Fin";
+		moves = "CfgMovesDogDZ";
+		gestures = "CfgGesturesDogDZ";
+		fsmDanger = "";
+		fsmFormation = "";
 	};
 
 	class Soldier_Crew_PMC;

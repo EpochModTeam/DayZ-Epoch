@@ -46,6 +46,7 @@ if (!isDedicated) then {
 	player_alertZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_alertZombies.sqf";
 	player_fireMonitor = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
 	//player_combatLogged =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_combatLogged.sqf";
+	player_tameDog = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_tameDog.sqf";
 	
 	//Objects
 	object_roadFlare = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_roadFlare.sqf";
@@ -120,7 +121,7 @@ if (!isDedicated) then {
 	};
 	
 	ui_initDisplay = {
-		private["_control","_ctrlBleed","_display","_ctrlFracture"];
+		private["_control","_ctrlBleed","_display","_ctrlFracture","_ctrlDogFood","_ctrlDogWater","_ctrlDogWaterBorder", "_ctrlDogFoodBorder"];
 		disableSerialization;
 		_display = uiNamespace getVariable 'DAYZ_GUI_display';
 		_control = 	_display displayCtrl 1204;
@@ -133,6 +134,15 @@ if (!isDedicated) then {
 			_ctrlFracture = 	_display displayCtrl 1203;
 			_ctrlFracture ctrlShow false;
 		};
+		_ctrlDogFoodBorder = _display displayCtrl 1501;
+		_ctrlDogFoodBorder ctrlShow false;
+		_ctrlDogFood = _display displayCtrl 1701;
+		_ctrlDogFood ctrlShow false;
+		
+		_ctrlDogWaterBorder = _display displayCtrl 1502;
+		_ctrlDogWaterBorder ctrlShow false;
+		_ctrlDogWater = _display displayCtrl 1702;
+		_ctrlDogWater ctrlShow false
 	};
 	
 	dayz_losCheck = {

@@ -54,7 +54,7 @@ if (count _medical > 0) then {
 //	player setVariable ["hit_legs",(_fractures select 0),true];
 //	player setVariable ["hit_hands",(_fractures select 1),true];
 	[player,"legs", (_fractures select 0)] call object_setHit;
-	[player,"hands", (_fractures select 0)] call object_setHit;
+	[player,"hands", (_fractures select 1)] call object_setHit;
 } else {
 	//Reset Fractures
 	player setVariable ["hit_legs",0,true];

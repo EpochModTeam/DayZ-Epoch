@@ -29,7 +29,7 @@ if (_dam < 1 ) then {
                                 	dayzUpdateVehicle call server_updateObject;
 		                };
                 	} else {
-                        	publicVariable "dayzUpdateVehicle";
+                        	publicVariableServer "dayzUpdateVehicle";
 		        };
 		};
 	};

@@ -1113,6 +1113,24 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 			};
+			class RscPicture_1501: RscPictureGUI
+			{
+				idc = 1501;
+				text = "\z\addons\dayz_code\gui\status_food_border_ca.paa";
+				x = 0.945313 * safezoneW + safezoneX;
+				y = 0.95 * safezoneH + safezoneY; //1
+				w = 0.04;
+				h = 0.053333;
+			};
+			class RscPicture_1502: RscPictureGUI
+			{
+				idc = 1502;
+				text = "\z\addons\dayz_code\gui\status_thirst_border_ca.paa";
+				x = 0.945313 * safezoneW + safezoneX;
+				y = 0.816666 * safezoneH + safezoneY; //3
+				w = 0.04;
+				h = 0.053333;
+			};
 		};
 		class Controls{
 			class RscPicture_1301: RscPictureGUI
@@ -1186,6 +1204,25 @@ class RscTitles
 				y = "0.65 * safezoneH + safezoneY";
 				w = 0.06;
 				h = 0.08;
+			};
+			class RscPicture_1701: RscPictureGUI
+
+			{
+				idc = 1701;
+				text = "\z\addons\dayz_code\gui\status_food_inside_ca.paa";
+				x = 0.945313 * safezoneW + safezoneX;
+				y = 0.95 * safezoneH + safezoneY;
+				w = 0.04;
+				h = 0.053333;
+			};
+			class RscPicture_1702: RscPictureGUI
+			{
+				idc = 1702;
+				text = "\z\addons\dayz_code\gui\status_thirst_inside_ca.paa";
+				x = 0.945313 * safezoneW + safezoneX;
+				y = 0.816666 * safezoneH + safezoneY;
+				w = 0.04;
+				h = 0.053333;
 			};
 		};
 	};
