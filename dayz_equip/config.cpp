@@ -610,7 +610,7 @@ class cfgWeapons
 		displayName = "Use";
 		canDrop = 0;
 		muzzles[] = {"this"};
-		magazines[] = {"FoodBioMeat","ItemBandage","ItemHeatPack","PartWoodPile","PartFueltank","PartWheel","PartGeneric","PartEngine","PartVRotor","PartGlass","ItemWaterbottle","ItemWaterbottleUnfilled","ItemEpinephrine","ItemMorphine","ItemBloodbag","ItemAntibiotic","ItemPainkiller","ItemJerrycan","ItemGenerator","ItemTent","ItemSandbag","ItemTankTrap","ItemWire","FoodSteakRaw","TrashTinCan","ItemSodaCoke","ItemSodaPepsi","ItemSodaMdew","FoodEdible","FoodSteakCooked","FoodCanBakedBeans","FoodCanSardines","FoodCanFrankBeans","FoodCanPasta"};
+		magazines[] = {"FoodBioMeat","ItemZombieParts","ItemBandage","ItemHeatPack","PartWoodPile","PartFueltank","PartWheel","PartGeneric","PartEngine","PartVRotor","PartGlass","ItemWaterbottle","ItemWaterbottleUnfilled","ItemEpinephrine","ItemCocaineKilo","ItemGoldBar","ItemSilverBar","ItemCopperBar","ItemMorphine","ItemBloodbag","ItemAntibiotic","ItemPainkiller","ItemJerrycan","ItemOilBarrel","ItemGenerator","ItemTent","ItemSandbag","ItemTankTrap","ItemWire","FoodSteakRaw","TrashTinCan","ItemSodaCoke","ItemSodaPepsi","ItemSodaMdew","ItemSodaMdew","FoodEdible","FoodSteakCooked","FoodCanBakedBeans","FoodCanSardines","FoodCanFrankBeans","FoodCanPasta"};
 		modes[] = {"this"};
 		useAction = 0;
 		useActionTitle = "";
@@ -1227,6 +1227,101 @@ class CfgMagazines
 		picture = "\dayz_equip\textures\equip_soda_mdew_ca.paa";
 		descriptionShort = "$STR_EQUIP_NAME_37";
 	};
+	class ItemSodaRbull: ItemSodaCoke
+	{
+		displayName = "Soda Can (Red Bull)";
+		model = "\dayz_equip\models\soda_rbull.p3d";
+		picture = "\dayz_equip\textures\equip_soda_rbull_ca.paa";
+		descriptionShort = "$STR_EQUIP_NAME_37";
+	};
+	class ItemCocaineKilo: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Kilo of Cocaine";
+		model = "\ibr_drugs\ibr_cocaine-wpn.p3d";
+		picture = "\ibr_drugs\UI\gear_picture_coca_ca.paa";
+		descriptionShort = "Cocaine";
+	};
+	class ItemGoldBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Gold Bar";
+		model = "\dayz_equip\models\gold_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
+		descriptionShort = "Gold Bar";
+		class ItemActions
+		{
+			class SplitBar
+			{
+				text = "1 Gold to 6 Silver";
+				script = "spawn player_SplitBars;";
+				use[] = {"ItemGoldBar"};
+				output[] = {"ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar"};
+			};
+		};
+	};
+	class ItemSilverBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Silver Bar";
+		model = "\dayz_equip\models\silver_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
+		descriptionShort = "Silver Bar";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text = "6 Silver to 1 Gold";
+				script = "spawn player_convertBars;";
+				use[] = {"ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar"};
+				output[] = {"ItemGoldBar"};
+			};
+			class SplitBar
+			{
+				text = "1 Silver to 6 Copper";
+				script = "spawn player_SplitBars;";
+				use[] = {"ItemSilverBar"};
+				output[] = {"ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar"};
+			};
+		};
+	};
+	class ItemCopperBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Copper Bar";
+		model = "\dayz_equip\models\copper_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_copper_CA.paa";
+		descriptionShort = "Copper Bar";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text = "6 Copper to 1 Silver";
+				script = "spawn player_convertBars;";
+				use[] = {"ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar"};
+				output[] = {"ItemSilverBar"};
+			};
+		};
+	};
+	class ItemZombieParts: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = "(256 * 2)";
+		displayName = "Zombie Parts";
+		model = "\dayz_equip\models\zombie_parts_bag_v2.p3d";
+		picture = "\dayz_equip\textures\parts_bag_texture3c_CA.paa";
+		descriptionShort = "Zombie Parts in a Bag";
+
+	};
 	class ItemEpinephrine: CA_Magazine
 	{
 		scope = 2;
@@ -1318,6 +1413,17 @@ class CfgMagazines
 				script = "spawn player_useMeds;";
 			};
 		};
+	};
+	class ItemOilBarrel: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		// fuelQuantity = 20;
+		type = "(256 * 6)";
+		displayName = "Oil Barrel";
+		model = "\dayz_equip\models\oil_drum_model.p3d";
+		picture = "\dayz_equip\textures\equip_oil_drum_model_ca.paa";
+		descriptionShort = "210 litres of Oil in a Barrel";
 	};
 	class ItemJerrycan: CA_Magazine
 	{
@@ -1504,6 +1610,15 @@ class CfgMagazines
 };
 class CfgVehicles
 {
+	class Strategic;
+	class Vault: Strategic
+	{
+		scope = 2;
+		model = "\dayz_equip\models\safe1.p3d";
+		mapSize = 2;
+		displayName = "Vault";
+		vehicleClass = "Survival";
+	};
 	class NonStrategic;
 	class BuiltItems: NonStrategic{};
 	class TrapItems: NonStrategic{};
@@ -1790,6 +1905,16 @@ class CfgVehicles
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgMagazines','PartGlass'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemOilBarrel: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Oil Barrel";
+		model = "\dayz_equip\proxy\oil_drum_model.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemOilBarrel'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	class WeaponHolder_ItemJerrycan: WeaponHolderBase
