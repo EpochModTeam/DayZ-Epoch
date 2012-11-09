@@ -69,6 +69,47 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_deleteBuild = -1;
 	};
 	
+	// Bank Vault Code Misc_cargo_cont_tiny	
+	if (!_isMan and _type == "Misc_cargo_cont_tiny") then {
+
+		if (s_player_bankvault_crtl < 0) then {
+			
+			_Deposit = player addAction ["Make Deposit", "\z\addons\dayz_code\actions\bank_deposit.sqf",cursorTarget, 99, true, false, "",""];
+			_Withdraw = player addAction ["Make Withdraw", "\z\addons\dayz_code\actions\bank_withdraw.sqf",cursorTarget, 98, true, false, "",""];
+			_Balance = player addAction ["Check Balance", "\z\addons\dayz_code\actions\bank_checkbalance.sqf",cursorTarget, 97, true, false, "",""];
+			
+			s_player_bank set [count s_player_bank,_Deposit];
+			s_player_bank set [count s_player_bank,_Withdraw];
+			s_player_bank set [count s_player_bank,_Balance];
+
+			s_player_bankvault_crtl = 1;
+			
+		};
+
+	} else {
+		{player removeAction _x} forEach s_player_bank;s_player_bank = [];
+		s_player_bankvault_crtl = -1;
+	};
+
+	// Allow Owner to lock and unlock vehicle  
+	if(_isVehicle and !_isMan and _canDo and _ownerID == dayz_characterID) then {
+
+			
+		if (s_player_lockUnlock_crtl < 0) then {
+			_Unlock = player addAction [format["Unlock %1",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",cursorTarget, 2, true, true, "", "(locked cursorTarget)"];
+			_lock = player addAction [format["Lock %1",_text], "\z\addons\dayz_code\actions\lock_veh.sqf",cursorTarget, 1, true, true, "", "(!locked cursorTarget)"];
+		
+			s_player_lockunlock set [count s_player_lockunlock,_Unlock];
+			s_player_lockunlock set [count s_player_lockunlock,_lock];
+
+			s_player_lockUnlock_crtl = 1;
+		};
+		 
+	} else {
+		{player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
+		s_player_lockUnlock_crtl = -1;
+	};
+
 	/*
 	//Allow player to force save
 	if((_isVehicle or _isTent) and _canDo and !_isMan) then {
@@ -91,14 +132,20 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_fillfuel = -1;
 	};
 	
-	if (!alive cursorTarget and _isAnimal and _hasKnife and !_isHarvested and _canDo) then {
+	// Gut animal or zombie
+	if (!alive cursorTarget and (_isAnimal or _isZombie) and _hasKnife and !_isHarvested and _canDo) then {
 		if (s_player_butcher < 0) then {
-			s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",cursorTarget, 3, true, true, "", ""];
+			if(_isZombie) then {
+				s_player_butcher = player addAction ["Gut Zombie", "\z\addons\dayz_code\actions\gather_zparts.sqf",cursorTarget, 3, true, true, "", ""];
+			} else {
+				s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",cursorTarget, 3, true, true, "", ""];
+			};
 		};
 	} else {
 		player removeAction s_player_butcher;
 		s_player_butcher = -1;
 	};
+	
 	
 	//Fireplace Actions check
 	if(inflamed cursorTarget and _hasRawMeat and _canDo) then {
@@ -117,14 +164,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_fireout;
 		s_player_fireout = -1;
 	};
-	
-	//place tent
-	//if(_hasTent and _canDo) then {
-	//		s_player_placetent = player addAction [localize "Place Tent", "\z\addons\dayz_code\actions\tent_pitch.sqf",cursorTarget, 0, false, true, "", ""];
-	//} else {
-	//	player removeAction s_player_placetent;
-	//	s_player_placetent = -1;
-	//};
 	
 	//Packing my tent
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
@@ -187,11 +226,46 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 				_string = format["<t %2>Repair%1</t>",_cmpt,_color]; //Repair - Part
 				_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
 				s_player_repairActions set [count s_player_repairActions,_handle];
+			} else {
+				_color = "color='#70bf44'"; //green
+				_string = format["<t %2>Remove%1</t>",_cmpt,_color]; //Remove - Part
+				_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
+				s_player_repairActions set [count s_player_repairActions,_handle];
 			};
 			
 		} forEach _hitpoints;
 		if (_allFixed) then {
 			_vehicle setDamage 0;
+		};
+	};
+	
+	// Parts Trader Worker3
+	if (_isMan and cursorTarget == parts_trader_1) then {
+		
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy = player addAction ["Buy Parts", "\z\addons\dayz_code\actions\buy_db.sqf",[1,"Parts"], 99, true, false, "",""];
+			_sell = player addAction ["Sell Parts", "\z\addons\dayz_code\actions\sell_db.sqf",[1,"Parts"], 98, true, false, "",""];
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_sell];
+			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+	// Dr_Hladik_EP1
+	if (_isMan and cursorTarget == mad_sci) then {
+		
+		if (s_player_madsci_crtl < 0) then {
+			
+			// [part_out, part_in, qty_out, qty_in,];
+			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items.sqf",["FoodBioMeat","ItemZombieParts",2,1], 99, true, true, "",""];
+			
+			s_player_madsci set [count s_player_madsci,_zparts1];
+			s_player_madsci_crtl = 1;
 		};
 	};
 	
@@ -202,11 +276,28 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	} else {
 		player removeAction s_player_studybody;
 		s_player_studybody = -1;
-	};	
+	};
+		
 } else {
 	//Engineering
 	{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
 	dayz_myCursorTarget = objNull;
+
+	{player removeAction _x} forEach s_player_madsci;s_player_madsci = [];
+	{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+
+	{player removeAction _x} forEach s_player_bank;s_player_bank = [];
+	{player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
+
+	s_player_madsci_crtl = -1;
+	s_player_parts_crtl = -1;
+
+	// lock unlock vehicles
+	s_player_lockUnlock_crtl = -1;
+
+	// Bank Vault
+	s_player_bankvault_crtl = -1;
+
 	//Others
 	player removeAction s_player_forceSave;
 	s_player_forceSave = -1;

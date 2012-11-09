@@ -150,6 +150,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] = {
 			{ "ItemSodaMdew","magazine" },
+			{ "ItemSodaRbull","magazine" },
 			{ "ItemWatch","generic" },
 			{ "ItemCompass","generic" },
 			{ "ItemMap","weapon" },
@@ -178,6 +179,7 @@ class CfgBuildingLoot {
 	};
 		itemChance[] =	{
 			0.01,
+			0.005,
 			0.15,
 			0.05,
 			0.03,
@@ -227,6 +229,7 @@ class CfgBuildingLoot {
 			{ "WeaponHolder_PartVRotor","object" },
 			{ "WeaponHolder_ItemJerrycan","object" },
 			{ "WeaponHolder_ItemHatchet","object" },
+			{ "WeaponHolder_ItemOilBarrel","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
@@ -244,6 +247,7 @@ class CfgBuildingLoot {
 			0.01,
 			0.04,
 			0.11,
+			0.02,
 			0.07,
 			0.06,
 			0.01,

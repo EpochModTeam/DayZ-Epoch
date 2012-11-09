@@ -61,6 +61,8 @@ dayz_resetSelfActions = {
 	s_player_removeflare = 	-1;
 	s_player_painkiller =	-1;
 	s_player_studybody = 	-1;
+	s_player_madsci_crtl =	-1;
+	s_player_parts_crtl =	-1;
 	s_build_Sandbag1_DZ = 	-1;
 	s_build_Hedgehog_DZ =	-1;
 	s_build_Wire_cat1 =		-1;
@@ -72,6 +74,10 @@ call dayz_resetSelfActions;
 //Engineering variables
 s_player_lastTarget =	objNull;
 s_player_repairActions = [];
+
+// Custom 
+s_player_madsci 		= 	[];
+s_player_parts 			= 	[];
 
 //Initialize Medical Variables
 r_interrupt = 			false;
