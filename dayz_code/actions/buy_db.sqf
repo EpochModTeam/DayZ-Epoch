@@ -8,6 +8,8 @@ _activatingPlayer = _this select 1;
 _trader_id = (_this select 3) select 0;
 _category = (_this select 3) select 1;
 
+diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
+
 dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
 publicVariable "dayzTraderMenu";
 if (isServer) then {
@@ -16,28 +18,29 @@ if (isServer) then {
 
 waitUntil {!isNil "dayzTraderMenuResult"};
 
-//diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
+diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 {
-	_id = parseNumber (_x select 0);
-	_type = _x select 1;
-	_loc = _x select 2;
-	_name = _x select 3;
-	_qty = parseNumber (_x select 4);
-	_cost = parseNumber (_x select 5);
-	_sell = parseNumber (_x select 6);
-	_cur = _x select 7;
-	_cat = _x select 8;
-	_order = parseNumber (_x select 9);
-	_tid = parseNumber (_x select 10);
-	_currency = _x select 11;
-	_actionFile = _x select 12;
+	_header = _x select 0; // "TRD"
+	_btype = _x select 1;
+	_stype = _x select 2;
+	_loc = _x select 3;
+	_name = _x select 4;
+	_qty = _x select 5;
+	_cost = _x select 6;
+	_bcurrency = _x select 7;
+	_sell = _x select 8;
+	_scurrency = _x select 9;
+	_cat = _x select 10;
+	_order = _x select 11;
+	_tid = _x select 12;
+	_actionFile = _x select 13;
 	
-	_textPart =	getText(configFile >> _type >> _name >> "displayName");
+	_textPart =	getText(configFile >> _btype >> _name >> "displayName");
 	
 	_File = "\z\addons\dayz_code\actions\" + _actionFile + ".sqf";
 	
 	_part_out = _name;
-	_part_in = _currency;
+	_part_in = _bcurrency;
 	_out = 1;
 	_in = _cost;
 	
@@ -47,13 +50,13 @@ waitUntil {!isNil "dayzTraderMenuResult"};
 	
 	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,];
 	_part = player addAction [_Display, _File,[_part_out,_part_in,_out,_in], _order, true, true, "",""];
-	//diag_log format["DEBUG TRADER: %1", _part];
-	s_player_metals set [count s_player_metals,_part];
+	diag_log format["DEBUG TRADER: %1", _part];
+	s_player_parts set [count s_player_parts,_part];
 	
 } forEach dayzTraderMenuResult;
 
-_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["medical"], 92, true, false, "",""];
-s_player_metals set [count s_player_metals,_cancel];
+_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["medical"], 10, true, false, "",""];
+s_player_parts set [count s_player_parts,_cancel];
 
 // Clear Data maybe consider cacheing results
 dayzTraderMenuResult = nil;

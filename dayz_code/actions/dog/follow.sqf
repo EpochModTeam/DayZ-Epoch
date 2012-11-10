@@ -9,5 +9,7 @@ if(_whistle) then {
 
 sleep 1;
 
+if (_dog distance player <= 900) then {
 _handle setFSMVariable ["_command","return"];
+};
 

@@ -61,7 +61,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	if (count _muzzles > 1) then {
 		_currentWpn = currentMuzzle player;
 	};
-	
+
 //Debug Message
 	diag_log "Attempting to switch model";
 	diag_log str(_weapons);
@@ -162,7 +162,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 //Debug Message
 	diag_log "Swichtable Unit Created. Equipment:";
 	diag_log str(weapons _newUnit);
-	diag_log str(magazines _newUnit);	
+	diag_log str(magazines _newUnit);
 	diag_log str(getWeaponCargo unitBackpack _newUnit);
 	diag_log str(getMagazineCargo unitBackpack _newUnit);
 
@@ -175,17 +175,10 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} forEach  magazines _oldUnit;
 		
-	if (!isNull dayz_originalPlayer) then {
-		dayz_originalPlayer = _oldUnit;
-		_oldUnit addEventHandler ["HandleDamage",{false}];
-		_oldUnit disableAI "ANIM";
-		_oldUnit disableAI "MOVE";
-	} else {
-		deleteVehicle _oldUnit;
-	};
+	deleteVehicle _oldUnit;
 
 //Move player inside
-	
+
 //	player switchCamera = _currentCamera;
 	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 	[objNull, player, rSwitchMove,_currentAnim] call RE;

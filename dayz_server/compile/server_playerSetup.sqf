@@ -19,6 +19,13 @@ if (_playerID == "") exitWith {
 	diag_log ("SETUP INIT FAILED: Exiting, no player ID: " + str(_playerObj));
 };
 
+private["_dummy"];
+_dummy = getPlayerUID _playerObj;
+if ( _playerID != _dummy ) then { 
+	diag_log format["DEBUG: _playerID miscompare with UID! _playerID:%1",_playerID]; 
+	_playerID = _dummy;
+};
+
 //Variables
 _worldspace = 	[];
 _survival =		[0,0,0];
@@ -243,22 +250,6 @@ _playerObj setVariable ["lastTime",time];
 //_playerObj setVariable ["model_CHK",typeOf _playerObj];
 
 diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
-
-myObj = objNull;
-call compile format["myObj = player%1",_playerID];
-
-if (!(isNull myObj)) then {
-	if (alive myObj) then {
-		deleteVehicle myObj;
-		diag_log ("LOGIN DUPLICATE PLAYER: " + str(_playerObj) + " DELETED ORIGINAL");
-	};
-};
-
-//Record player for management
-myObj = _playerObj;
-call compile format["player%1 = myObj;",_playerID];
-//diag_log (format["player%1 = myObj",_playerID]);
-//dayz_players set [count dayz_players,_playerObj];
 
 dayzLogin = null;
 dayzLogin2 = null;

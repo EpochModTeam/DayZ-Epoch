@@ -34,9 +34,9 @@ item29[] = {"Load_In",2,250,-75.000000,850.000000,25.000000,900.000000,0.000000,
 item30[] = {"Bad_Version",4,218,50.000000,650.000000,150.000000,700.000000,0.000000,"Bad" \n "Version"};
 item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000,0.000000,"ERROR:" \n "Bad Version"};
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
-item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
+item33[] = {"Preload_Display",2,4346,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -115,7 +115,7 @@ link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
 globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-440.765930,455.171539,1392.221191,828.390381,955,601,1};
-window[] = {2,-1,-1,-1,-1,824,44,1015,44,3,972};
+window[] = {2,-1,-1,-1,-1,934,154,1125,154,3,972};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -929,7 +929,7 @@ class FSM
        "player disableConversation true;" \n
        "" \n
        "eh_player_killed = player addeventhandler [""FiredNear"",{_this call player_weaponFiredNear;} ];" \n
-       "_eh_combat_projectilenear = player addEventHandler [""IncomingFire"",{_this call player_projectileNear;}];" \n
+       "//_eh_combat_projectilenear = player addEventHandler [""IncomingFire"",{_this call player_projectileNear;}];" \n
        "" \n
        "//Select Weapon" \n
        "// Desc: select default weapon & handle multiple muzzles" \n

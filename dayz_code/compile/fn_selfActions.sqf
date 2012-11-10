@@ -228,7 +228,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 				s_player_repairActions set [count s_player_repairActions,_handle];
 			} else {
 				_color = "color='#70bf44'"; //green
-				_string = format["<t %2>Remove%1</t>",_cmpt,_color]; //Remove - Part
+				_string = format["<t %2>Take%1</t>",_cmpt,_color]; //Take - Part
 				_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
 				s_player_repairActions set [count s_player_repairActions,_handle];
 			};

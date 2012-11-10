@@ -64,6 +64,8 @@ if (!isDedicated) then {
 	//actions
 	player_countmagazines =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
 	player_addToolbelt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addToolbelt.sqf";
+	player_convertBars =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_convertBars.sqf";
+	player_SplitBars =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_SplitBars.sqf";
 	player_reloadMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
 	player_tentPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\tent_pitch.sqf";
 	player_drink =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_drink.sqf";

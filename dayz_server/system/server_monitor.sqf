@@ -49,15 +49,33 @@ diag_log "HIVE: Starting";
 			_idKey = 	_x select 1;
 			_type =		_x select 2;
 			_ownerID = 	_x select 3;
-			_dir =		(_x select 4) select 0;
-			_pos =		(_x select 4) select 1;
+
+			_worldspace = _x select 4;
+			_dir = 0;
+			_pos = [0,0,0];
+			_wsDone = false;
+			if (count _worldspace >= 2) then
+			{
+				_dir = _worldspace select 0;
+				if (count (_worldspace select 1) == 3) then {
+					_pos = _worldspace select 1;
+					_wsDone = true;
+				}
+			};			
+			if (!_wsDone) then {
+				if (count _worldspace >= 1) then { _dir = _worldspace select 0; };
+				_pos = [getMarkerPos "center",0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
+				if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
+				diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
+			};
+
 			_intentory=	_x select 5;
 			_hitPoints=	_x select 6;
 			_fuel =		_x select 7;
 			_damage = 	_x select 8;
 			
 			if (_damage < 1) then {
-				diag_log ("OBJ: " + str(_idKey) + _type);
+				diag_log format["OBJ: %1 - %2", _idKey,_type];
 				
 				//Create it
 				_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
@@ -135,7 +153,7 @@ diag_log "HIVE: Starting";
 						_position = ([(getPosATL _object),0,100,10,0,500,0] call BIS_fnc_findSafePos);
 						_object setPosATL _position;
 					};
-					_id = _object spawn fnc_vehicleEventHandler;			
+					_object call fnc_vehicleEventHandler;			
 					_totalvehicles = _totalvehicles + 1;
 				};
 

@@ -35,7 +35,7 @@ _update set [3,true];
 player setVariable["updatePlayer",_update,true];
 */
 dayzPlayerSave = player;
-publicVariable "dayzPlayerSave";
+publicVariableServer "dayzPlayerSave";
 if (isServer) then {
 	dayzPlayerSave call server_updatePlayer;
 };

@@ -171,6 +171,9 @@ dayzHit = [];
 dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 dayzHideBody = objNull;
 
+// dayzPublishBank = [];	
+dayzTraderMenu = [];	
+
 //DayZ settings
 dayz_dawn = 6;
 dayz_dusk = 18;

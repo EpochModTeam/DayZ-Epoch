@@ -1,184 +1,234 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Dog Agent">*/
+/*%FSM<COMPILE "D:\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Dog Agent">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-150.000000,-75.000000,-50.000000,-25.000000,0.000000,"init"};
 item1[] = {"idle_exceeded",4,218,0.000000,225.000000,100.000000,275.000000,0.000000,"idle" \n "exceeded"};
 item2[] = {"master_moved",4,218,-150.000000,300.000000,-50.000000,350.000000,0.000000,"master" \n "moved"};
-item3[] = {"moving",2,250,-150.000000,375.000000,-50.000000,425.000000,0.000000,"moving"};
-item4[] = {"close",4,218,-275.000000,300.000000,-175.000000,350.000000,0.000000,"close"};
+item3[] = {"Moving",2,250,-150.000000,375.000000,-50.000000,425.000000,0.000000,"Moving"};
+item4[] = {"close",4,4314,-275.000000,300.000000,-175.000000,350.000000,0.000000,"close"};
 item5[] = {"",7,210,-229.000000,246.000000,-221.000000,254.000000,0.000000,""};
 item6[] = {"Waiting",2,250,-150.000000,225.000000,-50.000000,275.000000,0.000000,"Waiting"};
 item7[] = {"preloaded",4,218,-150.000000,0.000000,-50.000000,50.000000,0.000000,"preloaded"};
 item8[] = {"reorientate",4,218,-150.000000,450.000000,-50.000000,500.000000,0.000000,"reorientate"};
-item9[] = {"Sitting",2,250,125.000000,225.000000,225.000000,275.000000,0.000000,"Sitting"};
-item10[] = {"master_moved",4,218,125.000000,300.000000,225.000000,350.000000,0.000000,"master" \n "moved"};
-item11[] = {"Getting_Up",2,250,125.000000,375.000000,225.000000,425.000000,0.000000,"Getting Up"};
+item9[] = {"Sitting",2,250,150.000000,225.000000,250.000000,275.000000,0.000000,"Sitting"};
+item10[] = {"master_moved",4,218,150.000000,300.000000,250.000000,350.000000,0.000000,"master" \n "moved"};
+item11[] = {"Getting_Up",2,250,150.000000,375.000000,250.000000,425.000000,0.000000,"Getting Up"};
 item12[] = {"Up",4,218,0.000000,375.000000,100.000000,425.000000,0.000000,"Up"};
-item13[] = {"dead",4,218,0.000000,300.000000,100.000000,350.000000,0.000000,"dead"};
+item13[] = {"dead",4,218,0.000000,300.000000,100.000000,350.000000,3.000000,"dead"};
 item14[] = {"End",1,250,0.000000,450.000000,100.000000,500.000000,0.000000,"End"};
 item15[] = {"stay",4,218,0.000000,125.000000,100.000000,175.000000,1.000000,"stay"};
-item16[] = {"",7,210,-29.000002,245.999985,-20.999998,254.000000,0.000000,""};
+item16[] = {"",7,210,-29.000002,245.999985,-20.999998,254.000015,0.000000,""};
 item17[] = {"",7,210,-29.000000,146.000000,-21.000000,153.999985,0.000000,""};
-item18[] = {"Staying",2,250,125.000000,125.000000,225.000000,175.000000,0.000000,"Staying"};
-item19[] = {"commanded",4,218,350.000000,175.000000,450.000000,225.000000,0.000000,"commanded"};
-item20[] = {"",7,210,396.000031,146.000000,403.999969,154.000000,0.000000,""};
-item21[] = {"",7,210,546.000000,146.000000,554.000000,154.000000,0.000000,""};
-item22[] = {"too_long",4,218,500.000000,175.000000,600.000000,225.000000,0.000000,"too long"};
-item23[] = {"",7,210,521.000000,396.000000,529.000000,404.000000,0.000000,""};
-item24[] = {"Reset",2,250,425.000000,300.000000,525.000000,350.000000,0.000000,"Reset"};
-item25[] = {"true",8,218,425.000000,375.000000,525.000000,425.000000,0.000000,"true"};
-item26[] = {"",7,210,396.000000,321.000000,404.000000,329.000000,0.000000,""};
-item27[] = {"track",4,218,0.000000,25.000000,100.000000,75.000000,0.000000,"track"};
-item28[] = {"",7,210,-29.000000,46.000008,-21.000000,53.999996,0.000000,""};
-item29[] = {"Tracking",2,250,250.000000,-50.000000,350.000000,0.000000,0.000000,"Tracking"};
-item30[] = {"commanded",4,218,400.000000,-50.000000,500.000000,0.000000,0.000000,"commanded"};
-item31[] = {"Checking",2,250,125.000000,25.000000,225.000000,75.000000,0.000000,"Checking"};
-item32[] = {"has_target",4,218,125.000000,-50.000000,225.000000,0.000000,1.000000,"has target"};
-item33[] = {"no_target",4,218,400.000000,25.000000,500.000000,75.000000,4.000000,"no target"};
-item34[] = {"Reset_1",2,250,575.000000,25.000000,675.000000,75.000000,0.000000,"Reset"};
-item35[] = {"",7,210,696.000000,46.000008,704.000000,53.999996,0.000000,""};
-item36[] = {"",7,210,371.000000,46.000008,379.000000,53.999989,0.000000,""};
-item37[] = {"",7,210,371.000000,-28.999994,379.000000,-21.000006,0.000000,""};
-item38[] = {"",7,210,371.000000,-129.000000,379.000000,-121.000008,0.000000,""};
-item39[] = {"at_target",4,218,400.000000,-150.000000,500.000000,-100.000000,0.000000,"at target"};
-item40[] = {"",7,210,546.000000,-28.999992,554.000000,-21.000008,0.000000,""};
-item41[] = {"",7,210,546.000000,46.000008,554.000000,53.999996,0.000000,""};
-item42[] = {"Chasing",2,250,525.000000,-150.000000,625.000000,-100.000000,0.000000,"Chasing"};
-item43[] = {"",7,210,696.000000,-179.000015,704.000000,-171.000000,0.000000,""};
-item44[] = {"",7,210,-229.000000,-179.000000,-221.000000,-171.000000,0.000000,""};
-item45[] = {"",7,210,-229.000000,171.000000,-221.000000,179.000000,0.000000,""};
-item46[] = {"reorientate",4,218,200.000000,-125.000000,300.000000,-75.000000,0.000000,"reorientate"};
-item47[] = {"action_init",2,250,-150.000000,75.000000,-50.000000,125.000000,0.000000,"action init"};
-item48[] = {"true",8,218,-150.000000,150.000000,-50.000000,200.000000,0.000000,"true"};
-item49[] = {"commanded",4,218,250.000000,300.000000,350.000000,350.000000,0.000000,"commanded"};
-item50[] = {"instant",4,218,-350.000000,375.000000,-250.000000,425.000000,0.000000,"instant"};
-item51[] = {"",7,210,-304.000000,246.000000,-296.000000,253.999985,0.000000,""};
-item52[] = {"",7,210,-29.000000,346.000000,-21.000000,354.000000,0.000000,""};
-item53[] = {"",7,210,171.000000,196.000000,179.000000,204.000000,0.000000,""};
-item54[] = {"",7,210,46.000000,196.000000,54.000000,204.000000,0.000000,""};
-item55[] = {"reorientate",4,218,575.000000,-75.000000,675.000000,-25.000000,0.000000,"reorientate"};
-item56[] = {"",7,210,571.000000,-78.999992,579.000000,-71.000008,0.000000,""};
-item57[] = {"",7,210,371.000000,-78.999992,379.000000,-71.000008,0.000000,""};
-item58[] = {"",7,210,370.999969,95.999992,379.000000,104.000000,0.000000,""};
-item59[] = {"",7,210,171.000000,96.000000,179.000000,104.000000,0.000000,""};
-item60[] = {"",7,210,58.500000,96.000000,66.500000,104.000000,0.000000,""};
-item61[] = {"",7,210,546.000000,321.000000,554.000000,329.000000,0.000000,""};
-item62[] = {"move",4,218,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"move"};
-item63[] = {"Get_Position",2,250,50.000000,-350.000000,150.000000,-300.000000,0.000000,"Get Position"};
-item64[] = {"valid_position",4,218,50.000000,-425.000000,150.000000,-375.000000,0.000000,"valid position"};
-item65[] = {"Moving_1",2,250,175.000000,-425.000000,275.000000,-375.000000,0.000000,"Moving"};
-item66[] = {"no_position",4,218,50.000000,-275.000000,150.000000,-225.000000,0.000000,"no position"};
-item67[] = {"Panda",2,250,175.000000,-275.000000,275.000000,-225.000000,0.000000,"Panda"};
-item68[] = {"commanded",4,218,175.000000,-350.000000,275.000000,-300.000000,0.000000,"commanded"};
-item69[] = {"",7,210,221.000000,-179.000000,229.000000,-171.000000,0.000000,""};
-item70[] = {"lost",4,218,300.000000,-425.000000,400.000000,-375.000000,0.000000,"lost"};
-item71[] = {"call_back",4,218,300.000000,-275.000000,400.000000,-225.000000,0.000000,"call back"};
-item72[] = {"Wander",2,250,300.000000,-350.000000,400.000000,-300.000000,0.000000,"Wander"};
-item73[] = {"In_Position",4,218,425.000000,-275.000000,525.000000,-225.000000,1.000000,"In Position"};
-item74[] = {"",7,210,171.000015,-154.000000,178.999985,-146.000000,0.000000,""};
-item75[] = {"",7,210,321.000000,-154.000031,329.000000,-145.999969,0.000000,""};
+item18[] = {"Staying",2,250,150.000000,125.000000,250.000000,175.000000,0.000000,"Staying"};
+item19[] = {"commanded",4,218,375.000000,175.000000,475.000000,225.000000,0.000000,"commanded"};
+item20[] = {"",7,210,421.000031,146.000000,428.999969,154.000000,0.000000,""};
+item21[] = {"",7,210,571.000000,146.000000,579.000000,154.000000,0.000000,""};
+item22[] = {"too_long",4,218,525.000000,175.000000,625.000000,225.000000,0.000000,"too long"};
+item23[] = {"Reset",2,250,450.000000,300.000000,550.000000,350.000000,0.000000,"Reset"};
+item24[] = {"true",8,218,450.000000,375.000000,550.000000,425.000000,0.000000,"true"};
+item25[] = {"",7,210,421.000000,321.000000,429.000000,329.000000,0.000000,""};
+item26[] = {"track",4,218,0.000000,25.000000,100.000000,75.000000,0.000000,"track"};
+item27[] = {"",7,210,-29.000000,46.000008,-21.000000,53.999996,0.000000,""};
+item28[] = {"Tracking",2,250,275.000000,-50.000000,375.000000,0.000000,0.000000,"Tracking"};
+item29[] = {"commanded",4,218,425.000000,-50.000000,525.000000,0.000000,0.000000,"commanded"};
+item30[] = {"Checking",2,250,150.000000,25.000000,250.000000,75.000000,0.000000,"Checking"};
+item31[] = {"has_target",4,218,150.000000,-50.000000,250.000000,0.000000,1.000000,"has target"};
+item32[] = {"no_target",4,218,425.000000,25.000000,525.000000,75.000000,4.000000,"no target"};
+item33[] = {"Reset_1",2,250,600.000000,25.000000,700.000000,75.000000,0.000000,"Reset"};
+item34[] = {"",7,210,721.000000,46.000008,729.000000,53.999996,0.000000,""};
+item35[] = {"",7,210,396.000000,46.000008,404.000000,53.999989,0.000000,""};
+item36[] = {"",7,210,396.000000,-28.999994,404.000000,-21.000006,0.000000,""};
+item37[] = {"",7,210,396.000000,-129.000000,404.000000,-121.000008,0.000000,""};
+item38[] = {"at_target",4,218,425.000000,-150.000000,525.000000,-100.000000,0.000000,"at target"};
+item39[] = {"",7,210,571.000000,-28.999992,579.000000,-21.000008,0.000000,""};
+item40[] = {"",7,210,571.000000,46.000008,579.000000,53.999996,0.000000,""};
+item41[] = {"Chasing",2,250,550.000000,-150.000000,650.000000,-100.000000,0.000000,"Chasing"};
+item42[] = {"",7,210,721.000000,-179.000015,729.000000,-171.000000,0.000000,""};
+item43[] = {"",7,210,-179.000000,-179.000000,-171.000000,-171.000000,0.000000,""};
+item44[] = {"",7,210,-179.000000,171.000000,-171.000000,179.000000,0.000000,""};
+item45[] = {"reorientate",4,218,225.000000,-125.000000,325.000000,-75.000000,0.000000,"reorientate"};
+item46[] = {"action_init",2,250,-150.000000,75.000000,-50.000000,125.000000,0.000000,"action init"};
+item47[] = {"true",8,218,-150.000000,150.000000,-50.000000,200.000000,0.000000,"true"};
+item48[] = {"commanded",4,218,275.000000,300.000000,375.000000,350.000000,0.000000,"commanded"};
+item49[] = {"instant",4,218,-350.000000,375.000000,-250.000000,425.000000,0.000000,"instant"};
+item50[] = {"",7,210,-304.000000,246.000000,-296.000000,253.999985,0.000000,""};
+item51[] = {"",7,210,-29.000000,321.000000,-21.000000,329.000000,0.000000,""};
+item52[] = {"",7,210,196.000000,196.000000,204.000000,204.000000,0.000000,""};
+item53[] = {"",7,210,46.000000,196.000000,54.000000,204.000000,0.000000,""};
+item54[] = {"reorientate",4,218,600.000000,-75.000000,700.000000,-25.000000,0.000000,"reorientate"};
+item55[] = {"",7,210,596.000000,-78.999992,604.000000,-71.000008,0.000000,""};
+item56[] = {"",7,210,396.000000,-78.999992,404.000000,-71.000008,0.000000,""};
+item57[] = {"",7,210,395.999969,95.999992,404.000000,104.000000,0.000000,""};
+item58[] = {"",7,210,196.000000,96.000000,204.000000,104.000000,0.000000,""};
+item59[] = {"",7,210,-29.000000,96.000000,-21.000000,104.000000,0.000000,""};
+item60[] = {"",7,210,571.000000,321.000000,579.000000,329.000000,0.000000,""};
+item61[] = {"move",4,218,0.000000,-350.000000,100.000000,-300.000000,0.000000,"move"};
+item62[] = {"Get_Position",2,250,125.000000,-350.000000,225.000000,-300.000000,0.000000,"Get Position"};
+item63[] = {"valid_position",4,218,125.000000,-425.000000,225.000000,-375.000000,0.000000,"valid position"};
+item64[] = {"Moving_1",2,250,250.000000,-425.000000,350.000000,-375.000000,0.000000,"Moving"};
+item65[] = {"no_position",4,218,125.000000,-275.000000,225.000000,-225.000000,0.000000,"no position"};
+item66[] = {"Nothing",2,250,250.000000,-275.000000,350.000000,-225.000000,0.000000,"Nothing"};
+item67[] = {"commanded",4,218,250.000000,-350.000000,350.000000,-300.000000,0.000000,"commanded"};
+item68[] = {"",7,210,295.999969,-179.000000,304.000031,-171.000000,0.000000,""};
+item69[] = {"lost",4,218,375.000000,-425.000000,475.000000,-375.000000,0.000000,"lost"};
+item70[] = {"call_back",4,218,375.000000,-275.000000,475.000000,-225.000000,0.000000,"call back"};
+item71[] = {"Wander",2,250,375.000000,-350.000000,475.000000,-300.000000,0.000000,"Wander"};
+item72[] = {"In_Position",4,218,475.000000,-300.000000,575.000000,-250.000000,1.000000,"In Position"};
+item73[] = {"",7,210,-28.999996,-329.000000,-21.000002,-321.000000,0.000000,""};
+item74[] = {"",7,210,296.000000,-454.000000,304.000000,-446.000000,0.000000,""};
+item75[] = {"",7,210,746.000000,-454.000000,753.999939,-446.000000,0.000000,""};
+item76[] = {"",7,210,746.000000,-329.000000,754.000000,-321.000000,0.000000,""};
+item77[] = {"",7,210,746.000000,446.000000,754.000000,453.999969,0.000000,""};
+item78[] = {"",7,210,-29.000000,246.000000,-21.000000,254.000000,0.000000,""};
+item79[] = {"",7,210,121.000000,446.000000,129.000000,454.000000,0.000000,""};
+item80[] = {"",7,210,121.000000,371.000000,129.000000,379.000000,0.000000,""};
+item81[] = {"",7,210,-29.000000,-404.000000,-21.000000,-396.000000,0.000000,""};
+item82[] = {"player_enter__ve",8,218,-150.000000,-425.000000,-50.000000,-375.000000,2.000000,"player enter " \n "vehicle"};
+item83[] = {"in_vehicle",2,250,-525.000000,-425.000000,-425.000000,-375.000000,0.000000,"in vehicle"};
+item84[] = {"player_exit__veh",4,218,-525.000000,-350.000000,-425.000000,-300.000000,0.000000,"player exit " \n "vehicle"};
+item85[] = {"",7,210,-228.999985,-454.000000,-221.000015,-446.000000,0.000000,""};
+item86[] = {"move_to_vehicle",2,250,-275.000000,-425.000000,-175.000000,-375.000000,0.000000,"move to vehicle"};
+item87[] = {"at_vehicle",4,218,-400.000000,-425.000000,-300.000000,-375.000000,0.000000,"at vehicle"};
+item88[] = {"",7,210,-478.999969,-454.000000,-471.000031,-446.000000,0.000000,""};
+item89[] = {"",7,210,-229.000000,-454.000000,-221.000000,-446.000000,0.000000,""};
+item90[] = {"vehicle_too_far",4,218,-275.000000,-350.000000,-175.000000,-300.000000,0.000000,"vehicle too far"};
+item91[] = {"Wait",2,250,-400.000000,-350.000000,-300.000000,-300.000000,0.000000,"Wait"};
+item92[] = {"call_back",4,218,-400.000000,-275.000000,-300.000000,-225.000000,0.000000,"call back"};
+item93[] = {"",7,210,-354.000000,246.000000,-346.000000,254.000000,0.000000,""};
+item94[] = {"In_Position",4,218,-300.000000,-300.000000,-200.000000,-250.000000,1.000000,"In Position"};
+item95[] = {"reorientate",4,218,-175.000000,-375.000000,-75.000000,-325.000000,0.000000,"reorientate"};
+item96[] = {"",7,210,-479.000000,96.000008,-471.000000,103.999992,0.000000,""};
+item97[] = {"",7,210,96.000000,96.000000,104.000000,104.000000,0.000000,""};
 link0[] = {0,7};
 link1[] = {1,9};
 link2[] = {2,3};
 link3[] = {3,4};
 link4[] = {3,8};
-link5[] = {3,50};
-link6[] = {3,52};
+link5[] = {3,49};
+link6[] = {3,51};
 link7[] = {4,5};
 link8[] = {5,6};
 link9[] = {6,2};
 link10[] = {6,13};
 link11[] = {6,16};
-link12[] = {7,47};
+link12[] = {7,46};
 link13[] = {8,3};
 link14[] = {9,10};
 link15[] = {9,13};
-link16[] = {9,49};
-link17[] = {9,53};
+link16[] = {9,48};
+link17[] = {9,52};
 link18[] = {10,11};
 link19[] = {11,12};
-link20[] = {11,13};
-link21[] = {12,3};
+link20[] = {11,80};
+link21[] = {12,6};
 link22[] = {13,14};
 link23[] = {15,18};
 link24[] = {16,1};
 link25[] = {16,17};
 link26[] = {17,15};
-link27[] = {17,28};
+link27[] = {17,59};
 link28[] = {18,20};
-link29[] = {18,59};
-link30[] = {19,26};
+link29[] = {18,58};
+link30[] = {19,25};
 link31[] = {20,19};
 link32[] = {20,21};
 link33[] = {21,22};
-link34[] = {22,61};
-link35[] = {24,25};
-link36[] = {25,11};
-link37[] = {26,24};
-link38[] = {27,31};
-link39[] = {28,27};
-link40[] = {28,62};
-link41[] = {29,37};
-link42[] = {29,38};
-link43[] = {29,46};
-link44[] = {30,40};
-link45[] = {31,32};
-link46[] = {31,36};
-link47[] = {32,29};
-link48[] = {33,41};
-link49[] = {34,35};
-link50[] = {35,43};
-link51[] = {36,33};
-link52[] = {36,58};
-link53[] = {37,30};
-link54[] = {37,36};
-link55[] = {38,39};
-link56[] = {39,42};
-link57[] = {40,41};
-link58[] = {41,34};
-link59[] = {42,55};
-link60[] = {42,56};
-link61[] = {43,69};
-link62[] = {44,45};
-link63[] = {45,48};
-link64[] = {46,29};
-link65[] = {47,48};
-link66[] = {48,6};
-link67[] = {49,11};
-link68[] = {50,51};
-link69[] = {51,5};
-link70[] = {52,13};
-link71[] = {52,16};
-link72[] = {53,54};
-link73[] = {54,15};
-link74[] = {55,42};
-link75[] = {56,57};
-link76[] = {57,37};
-link77[] = {58,59};
-link78[] = {59,60};
-link79[] = {60,13};
-link80[] = {61,24};
-link81[] = {62,63};
-link82[] = {63,64};
-link83[] = {63,66};
-link84[] = {64,65};
-link85[] = {65,68};
-link86[] = {65,70};
-link87[] = {65,74};
-link88[] = {66,67};
-link89[] = {67,69};
-link90[] = {68,67};
-link91[] = {69,44};
-link92[] = {70,72};
-link93[] = {71,67};
-link94[] = {72,71};
-link95[] = {72,73};
-link96[] = {72,75};
-link97[] = {73,72};
-link98[] = {74,13};
-link99[] = {75,74};
-globals[] = {25.000000,1,0,0,0,640,480,1,201,6316128,1,-335.377930,726.206177,762.469299,-723.096069,651,911,1};
-window[] = {2,-1,-1,-1,-1,1151,150,1358,150,3,669};
+link34[] = {22,60};
+link35[] = {23,24};
+link36[] = {24,11};
+link37[] = {25,23};
+link38[] = {26,30};
+link39[] = {27,26};
+link40[] = {27,73};
+link41[] = {28,36};
+link42[] = {28,37};
+link43[] = {28,45};
+link44[] = {29,39};
+link45[] = {30,31};
+link46[] = {30,35};
+link47[] = {31,28};
+link48[] = {32,40};
+link49[] = {33,34};
+link50[] = {34,42};
+link51[] = {35,32};
+link52[] = {35,57};
+link53[] = {36,29};
+link54[] = {36,35};
+link55[] = {37,38};
+link56[] = {38,41};
+link57[] = {39,40};
+link58[] = {40,33};
+link59[] = {41,54};
+link60[] = {41,55};
+link61[] = {42,68};
+link62[] = {43,44};
+link63[] = {44,47};
+link64[] = {45,28};
+link65[] = {46,47};
+link66[] = {47,6};
+link67[] = {48,11};
+link68[] = {49,50};
+link69[] = {50,5};
+link70[] = {51,13};
+link71[] = {51,78};
+link72[] = {52,53};
+link73[] = {53,15};
+link74[] = {54,41};
+link75[] = {55,56};
+link76[] = {56,36};
+link77[] = {57,58};
+link78[] = {58,97};
+link79[] = {59,27};
+link80[] = {60,23};
+link81[] = {61,62};
+link82[] = {62,63};
+link83[] = {62,65};
+link84[] = {63,64};
+link85[] = {64,67};
+link86[] = {64,69};
+link87[] = {64,74};
+link88[] = {65,66};
+link89[] = {66,68};
+link90[] = {67,66};
+link91[] = {68,43};
+link92[] = {69,71};
+link93[] = {70,66};
+link94[] = {71,70};
+link95[] = {71,72};
+link96[] = {71,76};
+link97[] = {72,71};
+link98[] = {73,61};
+link99[] = {73,81};
+link100[] = {74,75};
+link101[] = {75,76};
+link102[] = {76,77};
+link103[] = {77,79};
+link104[] = {79,80};
+link105[] = {80,13};
+link106[] = {81,82};
+link107[] = {82,86};
+link108[] = {83,84};
+link109[] = {83,88};
+link110[] = {84,96};
+link111[] = {85,74};
+link112[] = {86,87};
+link113[] = {86,89};
+link114[] = {86,90};
+link115[] = {86,95};
+link116[] = {87,83};
+link117[] = {88,89};
+link118[] = {90,91};
+link119[] = {91,89};
+link120[] = {91,92};
+link121[] = {91,94};
+link122[] = {92,93};
+link123[] = {93,50};
+link124[] = {94,91};
+link125[] = {95,86};
+link126[] = {96,46};
+link127[] = {97,13};
+globals[] = {25.000000,1,0,0,0,640,480,1,260,6316128,1,-727.852478,476.612427,472.387665,-270.819122,974,601,1};
+window[] = {2,-1,-1,-1,-1,824,44,1252,44,3,991};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -190,7 +240,7 @@ class FSM
     {
       name = "init";
       init = /*%FSM<STATEINIT""">*/"_dog = _this select 0;" \n
-       "_num = _this select 1;" \n
+       "_type = _this select 1;" \n
        "_standing = true;" \n
        "_command = ""none"";" \n
        "_forceWalk = false;" \n
@@ -212,6 +262,8 @@ class FSM
        "_thrist = 0;" \n
        "_actionLieDown = -1;" \n
        "" \n
+       "_character = player;" \n
+       "" \n
        "_actionDir = ""\z\addons\dayz_code\actions\dog\"";" \n
        "" \n
        "_speedVal = [1,6,-1];"/*%FSM</STATEINIT""">*/;
@@ -231,11 +283,12 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "moving">*/
-    class moving
+    /*%FSM<STATE "Moving">*/
+    class Moving
     {
-      name = "moving";
-      init = /*%FSM<STATEINIT""">*/"_pos = player modelToWorld [-1,1,0];" \n
+      name = "Moving";
+      init = /*%FSM<STATEINIT""">*/"_pos = (vehicle player) modelToWorld [-1,1,0];" \n
+       "" \n
        "if(_lastPos distance _pos > 1 or _forceChange) then {" \n
        "	_lastPos = _pos;" \n
        "	_dog doMove _pos;" \n
@@ -244,17 +297,20 @@ class FSM
        "};" \n
        "_waitTime = time;" \n
        "" \n
+       "if (vehicle player != player) then {" \n
+       "	diag_log format[""PLAYER IS IN: %1, str(vehicle player)];" \n
+       "};" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "stay">*/
-        class stay
+        /*%FSM<LINK "dead">*/
+        class dead
         {
-          priority = 1.000000;
-          to="Staying";
+          priority = 3.000000;
+          to="End";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_command == ""stay"""/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -268,33 +324,6 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "idle_exceeded">*/
-        class idle_exceeded
-        {
-          priority = 0.000000;
-          to="Sitting";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > _idleTime) and _standing"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_standing = false;" \n
-           "if (!_watchDog) then {" \n
-           "	_move = ""Dog_LieDown"";" \n
-           "} else {" \n
-           "	_move = ""Dog_SitDown"";" \n
-           "	_actionLieDown = _dog addAction [""Lie Down"", _actionDir + ""stay.sqf"",_handle, 0, true, true];" \n
-           "};" \n
-           "[objNull, _dog, rSwitchMove,_move] call RE;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "reorientate">*/
         class reorientate
         {
@@ -305,33 +334,13 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "track">*/
-        class track
-        {
-          priority = 0.000000;
-          to="Checking";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_command == ""track"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "move">*/
-        class move
-        {
-          priority = 0.000000;
-          to="Get_Position";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_command == ""move"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "close">*/
         class close
         {
           priority = 0.000000;
           to="Waiting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"player distance _dog < 2"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(vehicle player) distance _dog < 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -344,10 +353,31 @@ class FSM
       name = "Waiting";
       init = /*%FSM<STATEINIT""">*/"_waitTime = time;" \n
        "_waiting = true;" \n
-       "_lastpos = player modelToWorld [-1,1,0];"/*%FSM</STATEINIT""">*/;
+       "_lastpos = player modelToWorld [-1,1,0];" \n
+       ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "player_enter__ve">*/
+        class player_enter__ve
+        {
+          priority = 2.000000;
+          to="move_to_vehicle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(vehicle _character != _character);"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log ""PLAYER ENTERED VEHICLE"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "stay">*/
         class stay
         {
@@ -355,33 +385,6 @@ class FSM
           to="Staying";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command == ""stay"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "idle_exceeded">*/
-        class idle_exceeded
-        {
-          priority = 0.000000;
-          to="Sitting";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > _idleTime) and _standing"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_standing = false;" \n
-           "if (!_watchDog) then {" \n
-           "	_move = ""Dog_LieDown"";" \n
-           "} else {" \n
-           "	_move = ""Dog_SitDown"";" \n
-           "	_actionLieDown = _dog addAction [""Lie Down"", _actionDir + ""stay.sqf"",_handle, 0, true, true];" \n
-           "};" \n
-           "[objNull, _dog, rSwitchMove,_move] call RE;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -405,13 +408,30 @@ class FSM
           action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
+        /*%FSM<LINK "idle_exceeded">*/
+        class idle_exceeded
+        {
+          priority = 0.000000;
+          to="Sitting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > _idleTime) and _standing"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_standing = false;" \n
+           "if (!_watchDog) then {" \n
+           "	_move = ""Dog_LieDown"";" \n
+           "} else {" \n
+           "	_move = ""Dog_SitDown"";" \n
+           "	_actionLieDown = _dog addAction [""Lie Down"", _actionDir + ""stay.sqf"",_handle, 0, true, true];" \n
+           "};" \n
+           "[objNull, _dog, rSwitchMove,_move] call RE;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "master_moved">*/
         class master_moved
         {
           priority = 0.000000;
-          to="moving";
+          to="Moving";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"player distance _dog > 2"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(vehicle player) distance _dog > 2"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastPos = position _dog;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -427,6 +447,16 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "stay">*/
         class stay
         {
@@ -444,16 +474,6 @@ class FSM
           to="Getting_Up";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command != ""none"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -491,7 +511,7 @@ class FSM
         /*%FSM<LINK "dead">*/
         class dead
         {
-          priority = 0.000000;
+          priority = 3.000000;
           to="End";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
@@ -502,7 +522,7 @@ class FSM
         class Up
         {
           priority = 0.000000;
-          to="moving";
+          to="Waiting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > 0.5)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -526,12 +546,18 @@ class FSM
        "_dog removeAction _actionFood;" \n
        "_dog removeAction _actionWater;" \n
        "" \n
+       "player removeAction _actionMove;" \n
        "player removeAction _actionSpeedStealth;" \n
        "player removeAction _actionSpeedFree;" \n
        "" \n
        "if(!isNil ""_actionCall"") then {" \n
        "	player removeAction _actionCall;" \n
-       "};"/*%FSM</STATEINIT""">*/;
+       "};" \n
+       "" \n
+       "if(!isNil ""_actionFollow"") then {" \n
+       "	_dog removeAction _actionFollow;" \n
+       "};" \n
+       ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -554,6 +580,7 @@ class FSM
        "};" \n
        "" \n
        "_dog removeAction _actionStay;" \n
+       "" \n
        "_actionFollow = _dog addAction [""Follow Me"", _actionDir + ""follow.sqf"",[_handle,false], 0, true, true];" \n
        "_actionCall = player addAction [""Call Dog"", _actionDir + ""follow.sqf"",[_handle,true], 0, false, true];" \n
        "" \n
@@ -562,24 +589,24 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "too_long">*/
-        class too_long
-        {
-          priority = 0.000000;
-          to="reset";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > _staySkill)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "dead">*/
         class dead
         {
-          priority = 0.000000;
+          priority = 3.000000;
           to="End";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "too_long">*/
+        class too_long
+        {
+          priority = 0.000000;
+          to="Reset";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > _staySkill)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "commanded">*/
@@ -589,7 +616,7 @@ class FSM
           to="Reset";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command != ""stay"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"if (_command == ""none"") then {" \n
+          action=/*%FSM<ACTION""">*/"if (_command == ""return"") then {" \n
            "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
            "		_dog playActionNow ""GestureBark"";" \n
            "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
@@ -600,13 +627,15 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "reset">*/
-    class reset
+    /*%FSM<STATE "Reset">*/
+    class Reset
     {
-      name = "reset";
-      init = /*%FSM<STATEINIT""">*/"_dog removeAction _actionFollow;" \n
-       "_dog removeAction _actionLieDown;" \n
+      name = "Reset";
+      init = /*%FSM<STATEINIT""">*/"_dog removeAction _actionLieDown;" \n
+       "" \n
        "player removeAction _actionCall;" \n
+       "_dog removeAction _actionFollow;" \n
+       "" \n
        "_actionStay = _dog addAction [""Stay"",_actionDir + ""stay.sqf"",_handle, 5, true, true];" \n
        "_waiting = false;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -638,10 +667,6 @@ class FSM
        "	_forceChange = false;" \n
        "};" \n
        "" \n
-       "" \n
-       "_actionFollow = _dog addAction [""Follow Me"", _actionDir + ""follow.sqf"",[_handle,false], 0, true, true];" \n
-       "_actionCall = player addAction [""Call Dog"", _actionDir + ""follow.sqf"",[_handle,true], 0, false, true];" \n
-       "" \n
        "_waitTime = time;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -651,25 +676,20 @@ class FSM
         class no_target
         {
           priority = 4.000000;
-          to="reset_1";
+          to="Reset_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"isNull _target and ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "commanded">*/
-        class commanded
+        /*%FSM<LINK "dead">*/
+        class dead
         {
-          priority = 0.000000;
-          to="reset_1";
+          priority = 3.000000;
+          to="End";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_command != ""track"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"if (_command == ""return"") then {" \n
-           "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
-           "		_dog playActionNow ""GestureBark"";" \n
-           "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
-           "	};" \n
-           "};"/*%FSM</ACTION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "at_target">*/
@@ -682,14 +702,19 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
+        /*%FSM<LINK "commanded">*/
+        class commanded
         {
           priority = 0.000000;
-          to="End";
+          to="Reset_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_command != ""track"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"if (_command == ""return"") then {" \n
+           "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
+           "		_dog playActionNow ""GestureBark"";" \n
+           "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
+           "	};" \n
+           "};"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "reorientate">*/
@@ -733,10 +758,20 @@ class FSM
         class no_target
         {
           priority = 4.000000;
-          to="reset_1";
+          to="Reset_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"isNull _target and ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "has_target">*/
@@ -746,35 +781,24 @@ class FSM
           to="Tracking";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!isNull _target and ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_lastPos = position _dog;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastPos = position _dog;" \n
+           "" \n
+           "_actionFollow = _dog addAction [""Follow Me"", _actionDir + ""follow.sqf"",[_handle,false], 0, true, true];" \n
+           "_actionCall = player addAction [""Call Dog"", _actionDir + ""follow.sqf"",[_handle,true], 0, false, true];"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "reset_1">*/
-    class reset_1
+    /*%FSM<STATE "Reset_1">*/
+    class Reset_1
     {
-      name = "reset_1";
+      name = "Reset_1";
       init = /*%FSM<STATEINIT""">*/"_actionTrack = _dog addAction [""Track"",_actionDir + ""track.sqf"",_handle, 4, true, true];" \n
        "" \n
-       "if(!isNil ""_actionFollow"") then {" \n
-       "	_dog removeAction _actionFollow;" \n
-       "};" \n
-       "" \n
-       "if(!isNil ""_actionCall"") then {" \n
-       "	player removeAction _actionCall;" \n
-       "};"/*%FSM</STATEINIT""">*/;
+       "player removeAction _actionCall;" \n
+       "_dog removeAction _actionFollow;" \n
+       ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -816,6 +840,16 @@ class FSM
           action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "commanded">*/
         class commanded
         {
@@ -829,16 +863,6 @@ class FSM
            "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
            "	};" \n
            "};"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "reorientate">*/
@@ -956,9 +980,9 @@ class FSM
         class no_position
         {
           priority = 0.000000;
-          to="Panda";
+          to="Nothing";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(count _movePos == 0)" \n
+          condition=/*%FSM<CONDITION""">*/"(count _movePos <= 0)" \n
            ""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
@@ -971,7 +995,8 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(count _movePos > 0)" \n
            ""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_actionFollow = _dog addAction [""Follow Me"", _actionDir + ""follow.sqf"",[_handle,false], 0, true, true];" \n
+           "_actionCall = player addAction [""Call Dog"", _actionDir + ""follow.sqf"",[_handle,true], 0, false, true];"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -985,13 +1010,20 @@ class FSM
        "_dog forceSpeed (_speedVal select _maxSpeed);" \n
        "_forceChange = false;" \n
        "" \n
-       "_actionFollow = _dog addAction [""Follow Me"", _actionDir + ""follow.sqf"",[_handle,false], 0, true, true];" \n
-       "_actionCall = player addAction [""Call Dog"", _actionDir + ""follow.sqf"",[_handle,true], 0, false, true];" \n
-       "" \n
        "_waitTime = time;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "lost">*/
         class lost
         {
@@ -1002,45 +1034,32 @@ class FSM
           action=/*%FSM<ACTION""">*/"_pos = position _dog;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "commanded">*/
         class commanded
         {
           priority = 0.000000;
-          to="Panda";
+          to="Nothing";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command != ""none"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"if (_command == ""none"") then {" \n
+          action=/*%FSM<ACTION""">*/"if (_command == ""return"") then {" \n
            "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
            "		_dog playActionNow ""GestureBark"";" \n
            "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
            "	};" \n
-           "};"/*%FSM</ACTION""">*/;
+           "};" \n
+           "" \n
+           "player removeAction _actionCall;" \n
+           "_dog removeAction _actionFollow;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "Panda">*/
-    class Panda
+    /*%FSM<STATE "Nothing">*/
+    class Nothing
     {
-      name = "Panda";
-      init = /*%FSM<STATEINIT""">*/"if(!isNil ""_actionFollow"") then {" \n
-       "	_dog removeAction _actionFollow;" \n
-       "};" \n
-       "" \n
-       "if(!isNil ""_actionCall"") then {" \n
-       "	player removeAction _actionCall;" \n
-       "};"/*%FSM</STATEINIT""">*/;
+      name = "Nothing";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1061,10 +1080,21 @@ class FSM
     class Wander
     {
       name = "Wander";
-      init = /*%FSM<STATEINIT""">*/"_isAlive = alive _dog;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_pos = [(getPos _dog),10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
+       "_dog moveTo _pos;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "In_Position">*/
         class In_Position
         {
@@ -1072,17 +1102,6 @@ class FSM
           to="Wander";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_dog distance _pos < 3"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_pos = [(getPos _dog),10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
-           "_dog moveTo _pos;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "dead">*/
-        class dead
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(alive _dog)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1090,10 +1109,144 @@ class FSM
         class call_back
         {
           priority = 0.000000;
-          to="Panda";
+          to="Nothing";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command == ""return"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"if ((player distance _dog > 5) and (_watchDog)) then {" \n
+           "	_dog playActionNow ""GestureBark"";" \n
+           "	[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
+           "};" \n
+           "" \n
+           "player removeAction _actionCall;" \n
+           "_dog removeAction _actionFollow;" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "in_vehicle">*/
+    class in_vehicle
+    {
+      name = "in_vehicle";
+      init = /*%FSM<STATEINIT""">*/"terminate _heartbeat;" \n
+       "" \n
+       "_dog removeAction _actionWarn;" \n
+       "_dog removeAction _actionStay;" \n
+       "_dog removeAction _actionTrack;" \n
+       "_dog removeAction _actionBark;" \n
+       "_dog removeAction _actionFood;" \n
+       "_dog removeAction _actionWater;" \n
+       "" \n
+       "player removeAction _actionMove;" \n
+       "player removeAction _actionSpeedStealth;" \n
+       "player removeAction _actionSpeedFree;" \n
+       "" \n
+       "deleteVehicle _dog;" \n
+       "" \n
+       "diag_log ""DOG REMOVED"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "player_exit__veh">*/
+        class player_exit__veh
+        {
+          priority = 0.000000;
+          to="action_init";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(vehicle _character == _character)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"if (isNull _dog) then {" \n
+           "	_dog = (group player) createUnit [ _type, player modelToWorld [-1,1,0], [], 0, ""FORM""];" \n
+           "	_dog disableAI ""FSM"";" \n
+           "} ;" \n
+           "" \n
+           "diag_log ""DOG RECREATED"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "move_to_vehicle">*/
+    class move_to_vehicle
+    {
+      name = "move_to_vehicle";
+      init = /*%FSM<STATEINIT""">*/"_playerloc = getPos (vehicle player);" \n
+       "_dog doMove _playerloc;" \n
+       "" \n
+       "diag_log ""DOG MOVING TO VEHICLE"";" \n
+       "_waitTime = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "vehicle_too_far">*/
+        class vehicle_too_far
+        {
+          priority = 0.000000;
+          to="Wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_dog distance (vehicle player) > 300"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_actionFollow = _dog addAction [""Follow Me"", _actionDir + ""follow.sqf"",[_handle,false], 0, true, true];" \n
+           "_actionCall = player addAction [""Call Dog"", _actionDir + ""follow.sqf"",[_handle,true], 0, false, true];" \n
+           "" \n
+           "diag_log ""VEHICLE TOO FAR"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "reorientate">*/
+        class reorientate
+        {
+          priority = 0.000000;
+          to="move_to_vehicle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > 0.5)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "at_vehicle">*/
+        class at_vehicle
+        {
+          priority = 0.000000;
+          to="in_vehicle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_dog distance (vehicle player) <= 8"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log ""DOG AT VEHICLE"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Wait">*/
+    class Wait
+    {
+      name = "Wait";
+      init = /*%FSM<STATEINIT""">*/"_pos = [(getPos _dog),10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
+       "_dog moveTo _pos;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "In_Position">*/
+        class In_Position
+        {
+          priority = 1.000000;
+          to="Wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_dog distance _pos < 3"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "call_back">*/
+        class call_back
+        {
+          priority = 0.000000;
+          to="Waiting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_command == ""return"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_dog removeAction _actionFollow;" \n
+           "player removeAction _actionCall;" \n
+           "" \n
+           "if ((player distance _dog > 5) and (_watchDog)) then {" \n
+           "	_dog playActionNow ""GestureBark"";" \n
+           "	[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
+           "};"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };

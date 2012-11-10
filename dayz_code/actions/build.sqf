@@ -34,7 +34,7 @@ player reveal _object;
 cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 
 dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
-publicVariable "dayzPublishObj";
+publicVariableServer "dayzPublishObj";
 if (isServer) then {
 	dayzPublishObj call server_publishObj;
 };
