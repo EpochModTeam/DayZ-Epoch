@@ -1,4 +1,4 @@
-private["_pos","_objects"];
+private["_pos"];
 _pos = _this select 0;
 
 {

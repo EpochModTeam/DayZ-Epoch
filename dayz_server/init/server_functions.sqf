@@ -150,71 +150,19 @@ BuildingList = MarkerPosition nearObjects ["House",DynamicVehicleArea];
 spawn_vehicles = {
 	private["_vehicle","_isAir","_isShip","_position","_roadlist","_buildinglist","_istoomany","_marker","_veh","_objPosition","_weights","_index","_uid"];
 	
-	// TODO: change this part either to DB or mission config.
-	
-	// 1 : Motocycles
-	// 2 : Bicycles, ATV's
-	// 3 : Trucks Unarmed
-	// 4 : Trucks
-	// 5 : Cars 
-	// 6 : Jeeps
-	// 7 : Bus, Tractor, SUV, Vans
-	// 8 : Helicopters
-	// 9 : Helicopters Unarmed
-	// 10: Military Unarmed
-	// 11: Military
-	// 12: Boat Unarmed
-	// 13: Boat
-	// 14: Heavy Armor Unarmed
-	// 15: Fuel Trucks
-	
-	_AllowedVehiclesList = ["M1030_US_DES_EP1","TT650_TK_CIV_EP1","Old_moto_TK_Civ_EP1","TT650_Civ","TT650_Ins",
-							"MMT_Civ","Old_bike_TK_INS_EP1","ATV_US_EP1","BAF_ATV_D","ATV_CZ_EP1",
-							"hilux1_civil_3_open_EP1","hilux1_civil_2_covered","hilux1_civil_1_open","datsun1_civil_3_open","datsun1_civil_2_covered","datsun1_civil_1_open",
-							"Pickup_PK_TK_GUE_EP1","Offroad_DSHKM_TK_GUE_EP1","Offroad_SPG9_TK_GUE_EP1","Pickup_PK_GUE","Pickup_PK_INS",
-							"policecar","Octavia_ACR","Lada1","Lada2","LadaLM","Skoda","SkodaBlue","SkodaGreen","SkodaRed","VWGolf","car_hatchback","car_sedan","Lada1_TK_CIV_EP1","Lada2_TK_CIV_EP1","VolhaLimo_TK_CIV_EP1","Volha_1_TK_CIV_EP1","Volha_2_TK_CIV_EP1",
-							"UAZ_CDF","UAZ_INS","UAZ_RU","UAZ_Unarmed_TK_CIV_EP1","UAZ_Unarmed_TK_EP1","UAZ_Unarmed_UN_EP1",
-							"Ikarus","Ikarus_TK_CIV_EP1","tractor","TowingTractor","SUV_TK_CIV_EP1","S1203_TK_CIV_EP1","S1203_ambulance_EP1",
-							"UH1H_DZ","UH1H_TK_EP1","CH_47F_EP1","Mi17_TK_EP1","Mi17_UN_CDF_EP1","Mi171Sh_CZ_EP1","UH60M_EP1","Mi17_CDF","MH60S","UH1Y",
-							"Mi17_Civilian","MH6J_EP1","UH60M_MEV_EP1","MV22",
-							"LandRover_ACR","LandRover_CZ_EP1","LandRover_TK_CIV_EP1","HMMWV","HMMWV_DES_EP1","HMMWV_M1035_DES_EP1","HMMWV_Ambulance","HMMWV_Ambulance_CZ_DES_EP1","GAZ_Vodnik_MedEvac","Ural_TK_CIV_EP1","Ural_UN_EP1","V3S_Open_TK_CIV_EP1","V3S_Open_TK_EP1","MTVR_DES_EP1","Kamaz",
-							"HMMWV_M998A2_SOV_DES_EP1","HMMWV_M1151_M2_CZ_DES_EP1","LandRover_Special_CZ_EP1","LandRover_MG_TK_EP1","ArmoredSUV_PMC",
-							"Fishing_Boat","PBX","PBX_ACR","Smallboat_1","Smallboat_2","Zodiac",
-							"RHIB","RHIB2Turret",
-							"M113Ambul_UN_EP1","M113Ambul_TK_EP1","BMP2_Ambul_CDF","BMP2_Ambul_INS",
-							"KamazRefuel","MtvrRefuel_DES_EP1","UralRefuel_TK_EP1","V3S_Refuel_TK_GUE_EP1","T810Refuel_Des_ACR","T810Refuel_ACR"];
-	
-	
-	_AllowedVehiclesChance = [0.55,0.65,0.25,0.35,0.45,
-							  0.25,0.75,0.45,0.45,0.45,
-							  0.40,0.35,0.35,0.25,0.20,0.25,
-							  0.25,0.75,0.45,0.45,0.45,
-							  0.2,0.25,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.35,0.40,0.40,0.40,0.25,0.45,0.45,0.45,
-							  0.30,0.30,0.30,0.30,0.30,0.30,
-							  0.15,0.15,0.15,0.05,0.05,0.30,0.15,
-							  0.05,0.05,0.01,0.025,0.025,0.025,0.025,0.02,0.02,0.02,
-							  0.09,0.08,0.07,0.01,
-							  0.11,0.11,0.11,0.10,0.10,0.10,0.05,0.05,0.05,0.05,0.10,0.10,0.10,0.10,0.10,
-							  0.05,0.05,0.01,0.05,0.01,
-							  0.15,0.15,0.15,0.15,0.15,0.15,
-							  0.01,0.01,
-							  0.001,0.001,0.001,0.001,
-							  0.001,0.001,0.001,0.001,0.001,0.001];
-
-	
 	if (isDedicated) then {
 	
 		waituntil {!isnil "fnc_buildWeightedArray"};
 		
 		_weights = [];
-		_weights = [_AllowedVehiclesList,_AllowedVehiclesChance] call fnc_buildWeightedArray;
+		_weights = [AllowedVehiclesList,AllowedVehiclesChance] call fnc_buildWeightedArray;
 		
 		waitUntil{!isNil "BIS_fnc_selectRandom"};
 		// get index from fnc_buildWeightedArray
 		_index = _weights call BIS_fnc_selectRandom;
 		
 		// select vehicle 
-		_vehicle = _AllowedVehiclesList select _index;
+		_vehicle = AllowedVehiclesList select _index;
 		
 		// Find Vehicle Type to better control spawns
 		_isAir = _vehicle isKindOf "Air";
@@ -287,7 +235,7 @@ spawn_vehicles = {
 			clearWeaponCargoGlobal  _veh;
 			clearMagazineCargoGlobal  _veh;
 			
-			[_veh,[_dir,_objPosition],_vehicle,_uid] call server_publishVeh;
+			[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;
 		};
 	};
 };

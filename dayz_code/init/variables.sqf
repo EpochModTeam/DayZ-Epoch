@@ -170,7 +170,7 @@ dayz_zombieTargetList = [
 dayzHit = [];
 dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 dayzHideBody = objNull;
-
+dayzPublishVeh = [];		// for vehicle traders
 // dayzPublishBank = [];	
 dayzTraderMenu = [];	
 

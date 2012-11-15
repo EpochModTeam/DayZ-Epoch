@@ -19,7 +19,7 @@ _itemChance =	 [] + getArray (_config >> "itemChance");
 {
 	private["_iPos2"];
 	_iPos2 = _obj modelToWorld _x;
-	_rnd = random 3;
+	_rnd = random 1;
 	//Place something at each position
 	if (player distance _iPos2 > 5) then {
 		if (_rnd < _lootChance) then {

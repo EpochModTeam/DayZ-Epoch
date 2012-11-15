@@ -1,11 +1,22 @@
 /*
 
 */
-private["_hasDel","_serial","_object","_objects","_updates","_myGroup","_nearVeh"];
+private ["_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout"];
 _playerID = _this select 0;
 _playerName = _this select 1;
 _object = call compile format["player%1",_playerID];
 _characterID =	_object getVariable ["characterID","0"];
+_timeout = _object getVariable["combattimeout",0];
+
+_playerIDtoarray = [];
+_playerIDtoarray = toArray _playerID;
+
+if (59 in _playerIDtoarray) exitWith {};
+
+if ((_timeout - time) > 0) then {
+	diag_log("DEBUG: COMBAT LOG TIMER: " + str(_timeout));
+	_playerName call player_combatLogged;
+};
 
 if (vehicle _object != _object) then {
 	_object action ["eject", vehicle _object];

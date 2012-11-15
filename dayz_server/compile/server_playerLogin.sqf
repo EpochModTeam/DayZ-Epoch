@@ -56,6 +56,10 @@ if (isNull _playerObj or !isPlayer _playerObj) exitWith {
 	diag_log ("LOGIN RESULT: Exiting, player object null: " + str(_playerObj));
 };
 
+if ((_primary select 0) == "ERROR") exitWith {	
+    diag_log format ["LOGIN RESULT: Exiting, failed to load _primary: %1 for player: %2 ",_primary,_playerID];
+};
+
 //Process request
 _newPlayer = 	_primary select 1;
 _isNew = 		count _primary < 6; //_result select 1;

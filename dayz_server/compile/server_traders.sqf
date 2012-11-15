@@ -21,7 +21,7 @@ _myArray = [];
 if (_status == "ObjectStreamStart") then {
 	_val = _result select 1;
 	//Stream Objects
-	diag_log ("HIVE: Commence Object Streaming...");
+	diag_log ("HIVE: Commence Menu Streaming...");
 	for "_i" from 1 to _val do {
 		_data = "HiveEXT" callExtension _key;
 		_result = call compile format ["%1",_data];

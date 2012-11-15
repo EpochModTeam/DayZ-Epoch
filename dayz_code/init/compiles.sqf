@@ -98,7 +98,7 @@ if (!isDedicated) then {
 	[] spawn {
 		private["_timeOut"];
 		_timeOut = 0;
-		while { _timeOut < 90 } do {
+		while { _timeOut < 60 } do {
 			_timeOut = _timeOut + 1;
 			sleep 1;
 		};

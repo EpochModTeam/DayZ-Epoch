@@ -4,13 +4,30 @@ _list = getposATL player nearEntities [["CAAnimalBase"],dayz_animalDistance];
 
 if (count _list < dayz_maxAnimals) then {
 	//Find where animal likes
-	_animalssupported = ["hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit","DZ_Fin","DZ_Pastor"];
-	//_animalssupported = ["DZ_Fin","DZ_Pastor"];
+	_animalssupported = ["Chicken","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit","Dog"];
+	
 	_type =  (_animalssupported select floor(random(count _animalssupported)));
 	if (_type == "Cow") then {
-		_animalssupported = ["Cow01","Cow02","Cow03","Cow04"];
+		_animalssupported = ["Cow01","Cow02","Cow03","Cow04","Cow01_EP1"];
 		_type =  (_animalssupported select floor(random(count _animalssupported)));
 	};
+	if (_type == "Goat") then {
+		_animalssupported = ["Goat01_EP1","Goat02_EP1","Goat"];
+		_type =  (_animalssupported select floor(random(count _animalssupported)));
+	};
+	if (_type == "Sheep") then {
+		_animalssupported = ["Sheep","Sheep02_EP1","Sheep01_EP1"];
+		_type =  (_animalssupported select floor(random(count _animalssupported)));
+	};
+	if (_type == "Chicken") then {
+		_animalssupported = ["Hen","Cock"];
+		_type =  (_animalssupported select floor(random(count _animalssupported)));
+	};
+	if (_type == "Dog") then {
+		_animalssupported = ["DZ_Fin","DZ_Pastor"];
+		_type =  (_animalssupported select floor(random(count _animalssupported)));
+	};
+
 	_root = configFile >> "CfgVehicles" >> _type;
 	_favouritezones = getText ( _root >> "favouritezones");
 	

@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private["_menClose","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_vehicle","_inVehicle","_color","_part"];
+private["_menClose","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_vehicle","_inVehicle","_color","_part","_traderType"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -46,6 +46,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
 	_isMan = cursorTarget isKindOf "Man";
+	_traderType = typeOf cursorTarget;
 	_ownerID = cursorTarget getVariable ["characterID","0"];
 	_isAnimal = cursorTarget isKindOf "Animal";
 	_isZombie = cursorTarget isKindOf "zZombie_base";
@@ -70,7 +71,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	// Bank Vault Code Misc_cargo_cont_tiny	
-	if (!_isMan and _type == "Misc_cargo_cont_tiny") then {
+	if (!_isMan and _traderType == bank_atm) then {
 
 		if (s_player_bankvault_crtl < 0) then {
 			
@@ -226,11 +227,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 				_string = format["<t %2>Repair%1</t>",_cmpt,_color]; //Repair - Part
 				_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
 				s_player_repairActions set [count s_player_repairActions,_handle];
-			} else {
-				_color = "color='#70bf44'"; //green
-				_string = format["<t %2>Take%1</t>",_cmpt,_color]; //Take - Part
-				_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
-				s_player_repairActions set [count s_player_repairActions,_handle];
 			};
 			
 		} forEach _hitpoints;
@@ -240,7 +236,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	// Parts Trader Worker3
-	if (_isMan and cursorTarget == parts_trader_1) then {
+	if (_isMan and _traderType == parts_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -256,16 +252,90 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 	};
 
-	// Dr_Hladik_EP1
-	if (_isMan and cursorTarget == mad_sci) then {
+	// hintSilent format["DEBUG TRADER TARGET: %1 %2", cursorTarget,weapon_trader_1];
+
+	//weapon_trader_1
+	if (_isMan and _traderType == weapon_trader) then {
 		
-		if (s_player_madsci_crtl < 0) then {
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy = player addAction ["Buy Weapons", "\z\addons\dayz_code\actions\buy_db.sqf",[4,"Weapons"], 99, true, false, "",""];
+			_sell = player addAction ["Sell Weapons", "\z\addons\dayz_code\actions\sell_db.sqf",[4,"Weapons"], 98, true, false, "",""];
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_sell];
+			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+	// can_trader_1
+	if (_isMan and _traderType == can_trader) then {
+		
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy = player addAction ["Buy Food", "\z\addons\dayz_code\actions\buy_db.sqf",[5,"Food"], 99, true, false, "",""];
+			_sell = player addAction ["Sell Food", "\z\addons\dayz_code\actions\sell_db.sqf",[5,"Food"], 98, true, false, "",""];
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_sell];
+			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+	//ammo_trader_1
+	if (_isMan and _traderType == ammo_trader) then {
+		
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy = player addAction ["Buy Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[2,"Ammo"], 99, true, false, "",""];
+			_sell = player addAction ["Sell Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[2,"Ammo"], 98, true, false, "",""];
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_sell];
+			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+	//auto_trader_1
+	if (_isMan and _traderType == auto_trader) then {
+		
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy = player addAction ["Buy Vehicle", "\z\addons\dayz_code\actions\buy_db.sqf",[6,"Vehicle"], 99, true, false, "",""];
+			_sell = player addAction ["Sell Vehicle", "\z\addons\dayz_code\actions\sell_db.sqf",[6,"Vehicle"], 98, true, false, "",""];
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_sell];
+			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+	// mad_sci
+	if (_isMan and _traderType == mad_sci) then {
+		
+		if (s_player_parts_crtl < 0) then {
 			
 			// [part_out, part_in, qty_out, qty_in,];
-			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items.sqf",["FoodBioMeat","ItemZombieParts",2,1], 99, true, true, "",""];
+			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items.sqf",["FoodBioMeat","ItemZombieParts",1,1], 99, true, true, "",""];
+			_zparts2 = player addAction ["Buy Medical", "\z\addons\dayz_code\actions\buy_db.sqf",[3,"Medical"], 97, true, false, "",""];
+			_zparts3 = player addAction ["Sell Medical", "\z\addons\dayz_code\actions\sell_db.sqf",[3,"Medical"], 96, true, false, "",""];
 			
-			s_player_madsci set [count s_player_madsci,_zparts1];
-			s_player_madsci_crtl = 1;
+			s_player_parts set [count s_player_parts,_zparts1];
+			s_player_parts set [count s_player_parts,_zparts2];
+			s_player_parts set [count s_player_parts,_zparts3];
+			s_player_parts_crtl = 1;
 		};
 	};
 	

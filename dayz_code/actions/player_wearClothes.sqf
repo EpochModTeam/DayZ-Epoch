@@ -45,20 +45,11 @@ switch (_item) do {
 	};
 	case "Skin_Survivor2_DZ": {
 		_model = "Survivor2_DZ";
-		if (_isFemale) then {
-			_model = "SurvivorW2_DZ";
-		};
 		if (_isBandit) then {
 			_model = "Bandit1_DZ";
-			if (_isFemale) then {
-				_model = "BanditW1_DZ";
-			};
 		};
 		if (_isHero) then {
 			_model = "Survivor3_DZ";
-			if (_isFemale) then {
-				_model = "SurvivorW2_DZ";
-		};
 		};
 	};
 	};

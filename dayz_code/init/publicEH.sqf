@@ -27,8 +27,9 @@ if (isServer) then {
 	"dayzDiscoRem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
 	"dayzPlayerSave"	addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
 	"dayzPublishObj"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
+	"dayzPublishVeh"	addPublicVariableEventHandler {(_this select 1) call server_publishVeh}; // for vehicle traders
 	// "dayzPublishBank"	addPublicVariableEventHandler {(_this select 1) call server_publishBank};
-	"dayzTraderMenu"	addPublicVariableEventHandler {(_this select 1) call server_traders};
+	"dayzTraderMenu"	addPublicVariableEventHandler {(_this select 1) call server_traders}; // for all traders
 	"dayzUpdateVehicle" addPublicVariableEventHandler {_id = (_this select 1) spawn server_updateObject};
 	"dayzDeleteObj"		addPublicVariableEventHandler {_id = (_this select 1) spawn local_deleteObj};
 	"dayzLogin"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerLogin};

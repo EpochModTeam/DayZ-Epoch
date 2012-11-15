@@ -1,4 +1,4 @@
-private["_qty","_item","_meat"];
+private ["_qty","_item","_meat","_loop","_timer"];
 _item = _this select 0;
 _qty = _this select 1;
 _meat = 0;

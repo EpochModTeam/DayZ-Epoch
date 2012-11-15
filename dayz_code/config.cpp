@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.4";
+		version = "1.7.4-D8";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -755,7 +755,7 @@ class CfgBuildingLoot {
 	};	//Qty: 2
 	class Land_A_TVTower_Base: Industrial {
 		lootPos[] = {{-0.982422,-1.92627,-2.21573},{-2.01782,-4.2417,-2.21918},{-0.759277,1.42139,-2.21573}};
-	}
+	};
 	class Land_Mil_House: Military {
 		vehPos[] = {{13.439,3.25244,-5.71244,84}};
 		lootPos[] = {{12.457,1.4248,-5.81439},{11.0391,4.85278,-5.81439},{13.667,4.42139,-5.81439}};

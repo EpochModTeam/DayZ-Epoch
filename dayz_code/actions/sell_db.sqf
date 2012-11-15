@@ -35,7 +35,7 @@ diag_log format["DEBUG Sell: %1", dayzTraderMenuResult];
 	_tid = _x select 12;
 	_actionFile = _x select 13;
 	
-	_textPart =	getText(configFile >> _stype >> _name >> "displayName");
+	_textPart =	getText(configFile >> _stype >> _scurrency >> "displayName");
 	
 	_File = "\z\addons\dayz_code\actions\" + _actionFile + ".sqf";
 
@@ -44,12 +44,12 @@ diag_log format["DEBUG Sell: %1", dayzTraderMenuResult];
 	_out = _sell;
 	_in = 1;
 	
-	_textCurrency =	getText(configFile >> "CfgMagazines" >> _part_out >> "displayName");
+	_textCurrency =	getText(configFile >> _btype >> _part_in >> "displayName");
 	
-	_Display = "Sell " +  _textPart + " for " + str(_sell) + " " + _textCurrency;
+	_Display = format["Sell %1 for %2 %3", _textPart, _sell, _textCurrency];
 	
-	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,];
-	_part = player addAction [_Display, _File,[_part_out,_part_in,_out,_in], _order, true, true, "",""];
+	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,"buy",_textPart,_textCurrency];
+	_part = player addAction [_Display, _File,[_part_out,_part_in,_out,_in,"sell",_textPart,_textCurrency], _order, true, true, "",""];
 	//diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];
 	

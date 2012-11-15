@@ -194,12 +194,9 @@ class CfgVehicles {
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
 	};
-	//HMMWV_Ambulance_CZ_DES_EP1
-	class HMMWV_Ambulance;
-	class HMMWV_Ambulance_DZ: HMMWV_Ambulance 
+	//Mi17_TK_EP1
+	class Mi17_TK_EP1
 	{
-		radartype = 0;
-		displayName = "HMMWV_Ambulance_DZ";
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -210,29 +207,17 @@ class CfgVehicles {
 		weapons[] = {};
 		magazines[] = {};
 		gunnerHasFlares = false;
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
 	};
-	//Mi17_Civilian
-	class Mi17_Civilian;
-	class Mi17_DZ: Mi17_Civilian 
+	class Mi17_DZ: Mi17_TK_EP1
 	{
-		radartype = 0;
 		displayName = "Mi17_DZ";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		gunnerHasFlares = false;
 	};
 	//An2_TK_EP1
-	class An2_TK_EP1;
-	class AN2_DZ: An2_TK_EP1 {
-		radartype = 0;
-		displayName = "AN2_DZ";
+	class An2_TK_EP1 
+	{
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -243,28 +228,17 @@ class CfgVehicles {
 		weapons[] = {};
 		magazines[] = {};
 		gunnerHasFlares = false;
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
 	};
-	//UH60M_MEV_EP1
-	class UH60M_MEV_EP1;
-	class UH60M_DZ: UH60M_MEV_EP1 {
-		radartype = 0;
-		displayName = "UH60M_DZ";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		gunnerHasFlares = false;
+	class AN2_DZ: An2_TK_EP1
+	{
+		displayName = "AN2_DZ";
 	};
 	//AH6X_EP1
-	class AH6X_EP1;
-	class AH6X_DZ: AH6X_EP1 {
-		radartype = 0;
-		displayName = "AH6X_DZ";
+	class AH6X_EP1
+	{
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -275,6 +249,13 @@ class CfgVehicles {
 		weapons[] = {};
 		magazines[] = {};
 		gunnerHasFlares = false;
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+	};
+	class AH6X_DZ: AH6X_EP1
+	{
+		displayName = "AH6X_DZ";
 	};
 	class House {
 		class DestructionEffects;

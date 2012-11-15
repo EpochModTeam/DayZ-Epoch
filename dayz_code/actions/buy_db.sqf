@@ -44,12 +44,12 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	_out = 1;
 	_in = _cost;
 	
-	_textCurrency =	getText(configFile >> "CfgMagazines" >> _part_in >> "displayName");
+	_textCurrency =	getText(configFile >> _stype >> _part_in >> "displayName");
 	
-	_Display = "Buy " +  _textPart + " for " + str(_cost) + " " + _textCurrency;	
-	
-	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,];
-	_part = player addAction [_Display, _File,[_part_out,_part_in,_out,_in], _order, true, true, "",""];
+	_Display = format["Buy %1 for %2 %3", _textPart, _cost, _textCurrency];
+
+	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];
+	_part = player addAction [_Display, _File,[_part_out,_part_in,_out,_in,"buy",_textPart,_textCurrency], _order, true, true, "",""];
 	diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];
 	

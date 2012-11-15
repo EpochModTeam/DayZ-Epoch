@@ -1,4 +1,4 @@
-private["_characterID","_currentModelCheck","_temp","_isSync","_currentWpn","_currentMag","_magazines","_force","_qty","_qtyT","_val","_isNewPos","_isNewBackp","_humanity","_isNewGear","_doUpdate","_currentModel","_modelChk","_playerPos","_playerGear","_playerBackp","_backpack","_updates","_killsB","_killsH","_medical","_isNewMed","_character","_timeSince","_charPos","_isInVehicle","_justAte","_justDrank","_distanceFoot","_lastPos","_legs","_arms","_kills","_headShots","_killsCHK","_headShotsCHK","_timeGross","_timeLeft","_onLadder","_isTerminal"];
+private ["_characterID","_temp","_currentWpn","_magazines","_force","_isNewPos","_humanity","_isNewGear","_currentModel","_modelChk","_playerPos","_playerGear","_playerBackp","_backpack","_killsB","_killsH","_medical","_isNewMed","_character","_timeSince","_charPos","_isInVehicle","_distanceFoot","_lastPos","_kills","_headShots","_timeGross","_timeLeft","_onLadder","_isTerminal","_currentAnim","_muzzles","_array","_key","_lastTime","_config","_currentState","_pos"];
 //[player,array]
 //diag_log ("UPDATE: " + str(_this) );
 
@@ -19,7 +19,7 @@ _magazines =	_this select 1;
 _force = 		_this select 2;
 _force =	true;
 
-_doUpdate = 	false;
+
 _characterID =	_character getVariable ["characterID","0"];
 _charPos = 		getPosATL _character;
 _isInVehicle = 	vehicle _character != _character;
@@ -43,6 +43,13 @@ if (isnil "_characterID") exitWith {
 
 if (_characterID == "0") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " as no characterID");
+};
+
+private["_debug","_distance"];
+_debug = getMarkerpos "respawn_west";
+_distance = _debug distance _charPos;
+if (_distance < 2000) exitWith { 
+	diag_log format["ERROR: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3",name _character,_characterID,_charPos];
 };
 
 //Check for server initiated updates
@@ -92,7 +99,6 @@ if (_characterID != "0") then {
 	};
 	if (_isNewMed or _force) then {
 		//diag_log ("medical..."); sleep 0.05;
-		_wounds = [];
 		if (!(_character getVariable["USEC_isDead",false])) then {
 			//diag_log ("medical check..."); sleep 0.05;
 			_medical = _character call player_sumMedical;
