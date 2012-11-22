@@ -190,7 +190,7 @@ class FSM
        "	if (_isOk>-1) then {" \n
        "		diag_log (""DW_DEBUG _isOK: "" + str(_isOK) );" \n
        "	};" \n
-       "	if ((_isOk>-1) AND (isOK<1)) then {" \n
+       "	if ((_isOk>-1) AND (_isOK<1)) then {" \n
        "		//diag_log (""CLEANUP: DELETING A SOUND OF FLIES"");" \n
        "_dwUSOFC=_dwUSOFC+1;" \n
        "		deleteVehicle _x;" \n

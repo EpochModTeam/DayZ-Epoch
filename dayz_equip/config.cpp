@@ -610,7 +610,7 @@ class cfgWeapons
 		displayName = "Use";
 		canDrop = 0;
 		muzzles[] = {"this"};
-		magazines[] = {"FoodBioMeat","ItemZombieParts","ItemBandage","ItemHeatPack","PartWoodPile","PartFueltank","PartWheel","PartGeneric","PartEngine","PartVRotor","PartGlass","ItemWaterbottle","ItemWaterbottleUnfilled","ItemEpinephrine","ItemCocaineKilo","ItemGoldBar","ItemSilverBar","ItemCopperBar","ItemMorphine","ItemBloodbag","ItemAntibiotic","ItemPainkiller","ItemJerrycan","ItemOilBarrel","ItemGenerator","ItemTent","ItemSandbag","ItemTankTrap","ItemWire","FoodSteakRaw","TrashTinCan","ItemSodaCoke","ItemSodaPepsi","ItemSodaMdew","ItemSodaMdew","FoodEdible","FoodSteakCooked","FoodCanBakedBeans","FoodCanSardines","FoodCanFrankBeans","FoodCanPasta"};
+		magazines[] = {"FoodBioMeat","ItemZombieParts","ItemBandage","ItemHeatPack","PartWoodPile","PartFueltank","PartWheel","PartGeneric","PartEngine","PartVRotor","PartGlass","ItemWaterbottle","ItemWaterbottleUnfilled","ItemEpinephrine","ItemGoldBar","ItemSilverBar","ItemCopperBar","ItemMorphine","ItemBloodbag","ItemAntibiotic","ItemPainkiller","ItemJerrycan","ItemOilBarrel","ItemGenerator","ItemTent","ItemSandbag","ItemTankTrap","ItemWire","FoodSteakRaw","TrashTinCan","ItemSodaCoke","ItemSodaPepsi","ItemSodaMdew","ItemSodaMdew","FoodEdible","FoodSteakCooked","FoodCanBakedBeans","FoodCanSardines","FoodCanFrankBeans","FoodCanPasta"};
 		modes[] = {"this"};
 		useAction = 0;
 		useActionTitle = "";
@@ -1234,82 +1234,35 @@ class CfgMagazines
 		picture = "\dayz_equip\textures\equip_soda_rbull_ca.paa";
 		descriptionShort = "$STR_EQUIP_NAME_37";
 	};
-	class ItemCocaineKilo: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Kilo of Cocaine";
-		model = "\ibr_drugs\ibr_cocaine-wpn.p3d";
-		picture = "\ibr_drugs\UI\gear_picture_coca_ca.paa";
-		descriptionShort = "Cocaine";
-	};
 	class ItemGoldBar: CA_Magazine
 	{
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Gold Bar";
+		displayName = "Gold";
 		model = "\dayz_equip\models\gold_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
 		descriptionShort = "Gold Bar";
-		class ItemActions
-		{
-			class SplitBar
-			{
-				text = "1 Gold to 6 Silver";
-				script = "spawn player_SplitBars;";
-				use[] = {"ItemGoldBar"};
-				output[] = {"ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar"};
-			};
-		};
 	};
 	class ItemSilverBar: CA_Magazine
 	{
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Silver Bar";
+		displayName = "Silver";
 		model = "\dayz_equip\models\silver_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
 		descriptionShort = "Silver Bar";
-		class ItemActions
-		{
-			class ReloadMag
-			{
-				text = "6 Silver to 1 Gold";
-				script = "spawn player_convertBars;";
-				use[] = {"ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar","ItemSilverBar"};
-				output[] = {"ItemGoldBar"};
-			};
-			class SplitBar
-			{
-				text = "1 Silver to 6 Copper";
-				script = "spawn player_SplitBars;";
-				use[] = {"ItemSilverBar"};
-				output[] = {"ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar"};
-			};
-		};
 	};
 	class ItemCopperBar: CA_Magazine
 	{
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Copper Bar";
+		displayName = "Copper";
 		model = "\dayz_equip\models\copper_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_copper_CA.paa";
 		descriptionShort = "Copper Bar";
-		class ItemActions
-		{
-			class ReloadMag
-			{
-				text = "6 Copper to 1 Silver";
-				script = "spawn player_convertBars;";
-				use[] = {"ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar"};
-				output[] = {"ItemSilverBar"};
-			};
-		};
 	};
 	class ItemZombieParts: CA_Magazine
 	{
@@ -1453,6 +1406,25 @@ class CfgMagazines
 		model = "\dayz_equip\models\generator_gear.p3d";
 		picture = "\dayz_equip\textures\equip_generator_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_31";
+	};
+	// Custom player vault
+	class ItemVault: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = "(256 * 12)";
+		displayName = "Vault";
+		model = "\dayz_equip\models\safe1_onside.p3d";
+		picture = "\dayz_equip\textures\equip_safe_ca.paa";
+		descriptionShort = "Personal Vault";
+		class ItemActions
+		{
+			class Pitch
+			{
+				text = "Place Vault";
+				script = "spawn player_vaultPitch;";
+			};
+		};
 	};
 	class ItemTent: CA_Magazine
 	{
@@ -1610,15 +1582,6 @@ class CfgMagazines
 };
 class CfgVehicles
 {
-	class Strategic;
-	class Vault: Strategic
-	{
-		scope = 2;
-		model = "\dayz_equip\models\safe1.p3d";
-		mapSize = 2;
-		displayName = "Vault";
-		vehicleClass = "Survival";
-	};
 	class NonStrategic;
 	class BuiltItems: NonStrategic{};
 	class TrapItems: NonStrategic{};
@@ -1797,6 +1760,16 @@ class CfgVehicles
 			init = "[(_this select 0),'cfgMagazines','ItemTent'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	class WeaponHolder_ItemVault: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Vault";
+		model = "\dayz_equip\models\safe1.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemVault'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 	class WeaponHolder_ItemFlashlight: WeaponHolderBase
 	{
 		scope = 2;
@@ -1940,6 +1913,18 @@ class CfgVehicles
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
 	};
+	class VaultStorage: Land_A_tent
+	{
+		vehicleClass = "Survival";
+		displayName = "Vault";
+		model = "\dayz_equip\models\safe1.p3d";
+		destrType = "DestructNo";
+		armor = 5000;
+		transportMaxMagazines = 200;
+		transportMaxWeapons = 10;
+		transportMaxBackpacks = 5;
+	};
+	
 	class CardboardBox: ReammoBox
 	{
 		accuracy = 1000;

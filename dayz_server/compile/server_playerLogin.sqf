@@ -12,7 +12,7 @@ if (count _this > 2) then {
 	dayz_players = dayz_players - [_this select 2];
 };
 
-waitUntil{allowConnection};
+//waitUntil{allowConnection};
 
 //Variables
 _inventory =	[];

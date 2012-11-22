@@ -243,7 +243,7 @@ class CfgLoot {
 			0.02,
 			0.02,
 			0.04
-		};
+		}
 	};
 	policeman[] = {
 		{

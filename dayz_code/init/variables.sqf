@@ -54,6 +54,7 @@ dayz_resetSelfActions = {
 	s_player_fireout =		-1;
 	s_player_butcher =		-1;
 	s_player_packtent = 	-1;
+	s_player_packvault = 	-1;
 	s_player_fillwater =	-1;
 	s_player_fillwater2 = 	-1;
 	s_player_fillfuel = 	-1;
@@ -221,10 +222,6 @@ if(!isDedicated) then {
 	};
 	_cfgLocation = configFile >> "CfgTownGenerator";
 	_cfgLocation call _funcGetLocation;
-	
-	dayz_buildingMonitor = [];	//Buildings to check
-	dayz_bodyMonitor = [];
-	dayz_flyMonitor = [];		//used for monitor flies
 	
 	dayz_buildingMonitor = [];	//Buildings to check
 	dayz_bodyMonitor = [];

@@ -24,8 +24,6 @@ if (_qty >= _qty_in) then {
 	// [player,"repair",0,false] call dayz_zombieSpeak;
 	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
-	{player removeAction _x} forEach s_player_parts;s_player_parts = [];
-	s_player_parts_crtl = -1;
 } else {
 	_needed =  _qty_in - _qty;
 	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];

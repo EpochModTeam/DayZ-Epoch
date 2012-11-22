@@ -18,44 +18,96 @@ if (isServer) then {
 
 waitUntil {!isNil "dayzTraderMenuResult"};
 
+/*
+	`item` varchar(255) NOT NULL COMMENT '[Class Name,1 = CfgMagazines | 2 = Vehicle | 3 = Weapon]',
+	`qty` int(8) NOT NULL COMMENT 'amount in stock available to buy',
+	`buy`  varchar(255) NOT NULL COMMENT '[[Qty,Class,Type],]',
+	`sell`  varchar(255) NOT NULL COMMENT '[[Qty,Class,Type],]',
+	`order` int(2) NOT NULL DEFAULT '0' COMMENT '# sort order for addAction menu',
+	`tid` int(8) NOT NULL COMMENT 'Trader Menu ID',
+	`afile` varchar(64) NOT NULL DEFAULT 'trade_items',
+*/
+
 diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 {
 	_header = _x select 0; // "TRD"
-	_btype = _x select 1;
-	_stype = _x select 2;
-	_loc = _x select 3;
-	_name = _x select 4;
-	_qty = _x select 5;
-	_cost = _x select 6;
-	_bcurrency = _x select 7;
-	_sell = _x select 8;
-	_scurrency = _x select 9;
-	_cat = _x select 10;
-	_order = _x select 11;
-	_tid = _x select 12;
-	_actionFile = _x select 13;
 	
-	_textPart =	getText(configFile >> _btype >> _name >> "displayName");
+	// Trader Item name|type
+	_item = _x select 1;
+	_name = _item select 0;
+	_type = _item select 1;
+	switch(true)do{ 
+		case (_type == 1): { 
+			_type = "CfgMagazines";
+		}; 
+		case (_type == 2): { 
+			_type = "CfgVehicles";
+		}; 
+		case (_type == 3): { 
+			_type = "CfgWeapons";
+		}; 
+	}; 
+	// Display Name of item
+	_textPart =	getText(configFile >> _type >> _name >> "displayName");
 	
-	_File = "\z\addons\dayz_code\actions\" + _actionFile + ".sqf";
+	// Total in stock
+	_qty = _x select 2;
 	
-	_part_out = _name;
-	_part_in = _bcurrency;
+	// Buy Data from array
+	_buy = _x select 3;	
+	_bqty = _buy select 0;
+	_bname = _buy select 1;
+	_btype = _buy select 2;
+	switch(true)do{ 
+		case (_btype == 1): { 
+			_btype = "CfgMagazines";
+		}; 
+		case (_btype == 2): { 
+			_btype = "CfgVehicles";
+		}; 
+		case (_btype == 3): { 
+			_btype = "CfgWeapons";
+		}; 
+	}; 
+	// Display Name of buy item
+	_textCurrency =	getText(configFile >> _btype >> _bname >> "displayName");
+	
+	// Sell data from array
+	_sell = _x select 4;
+	_sqty = _sell select 0;
+	_sname = _sell select 1;
+	_stype = _sell select 2;
+	
+	// Menu sort order
+	_order = _x select 5;
+	
+	// Trader Menu ID
+	_tid = _x select 6;
+	
+	// Action file to use for trade
+	_afile = _x select 7;
+	_File = "\z\addons\dayz_code\actions\" + _afile + ".sqf";
+	
+	// Allways 1 for now
 	_out = 1;
-	_in = _cost;
+	// qty consumed of bname
+	_in = _bqty;
 	
-	_textCurrency =	getText(configFile >> _stype >> _part_in >> "displayName");
-	
-	_Display = format["Buy %1 for %2 %3", _textPart, _cost, _textCurrency];
-
 	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];
-	_part = player addAction [_Display, _File,[_part_out,_part_in,_out,_in,"buy",_textPart,_textCurrency], _order, true, true, "",""];
+	if(_qty <= 0) then {
+		_Display = format["Buy %1 (Out of Stock: %2)", _textPart, _qty];
+		_part = player addAction [_Display, "\z\addons\dayz_code\actions\trade_cancel.sqf",[], 0, true, false, "",""];
+	} else {
+		_Display = format["Buy %1 for %2 %3 (Available: %4)", _textPart, _in, _textCurrency, _qty];
+		_part = player addAction [_Display, _File,[_name,_bname,_out,_in,"buy",_textCurrency,_textPart], _order, true, true, "",""];
+	};
+	
 	diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];
 	
 } forEach dayzTraderMenuResult;
 
-_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["medical"], 10, true, false, "",""];
+_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["medical"], 0, true, false, "",""];
 s_player_parts set [count s_player_parts,_cancel];
 
 // Clear Data maybe consider cacheing results

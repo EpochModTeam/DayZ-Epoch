@@ -52,6 +52,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
+	_isVault = cursorTarget isKindOf "VaultStorage";
 	_isFuel = false;
 	_isAlive = alive cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
@@ -175,6 +176,18 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_packtent;
 		s_player_packtent = -1;
 	};
+
+		
+	//Packing my vault
+	if(cursorTarget isKindOf "VaultStorage" and _canDo and _ownerID == dayz_characterID) then {
+		if ((s_player_packvault < 0) and (player distance cursorTarget < 3)) then {
+			s_player_packvault = player addAction ["Pack Vault", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
+			// s_player_packvault = player addAction ["Lock Vault", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
+		};
+	} else {
+		player removeAction s_player_packvault;
+		s_player_packvault = -1;
+	};
 	
 	//Repairing Vehicles
 	if ((dayz_myCursorTarget != cursorTarget) and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
@@ -241,11 +254,21 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Buy Parts", "\z\addons\dayz_code\actions\buy_db.sqf",[1,"Parts"], 99, true, false, "",""];
-			_sell = player addAction ["Sell Parts", "\z\addons\dayz_code\actions\sell_db.sqf",[1,"Parts"], 98, true, false, "",""];
+			_buy = player addAction ["Buy Car Parts", "\z\addons\dayz_code\actions\buy_db.sqf",[21], 99, true, false, "",""];
+			_sell = player addAction ["Sell Car Parts", "\z\addons\dayz_code\actions\sell_db.sqf",[21], 98, true, false, "",""];
+			
+			_buy2 = player addAction ["Buy Building Supplies", "\z\addons\dayz_code\actions\buy_db.sqf",[22], 97, true, false, "",""];
+			_sell2 = player addAction ["Sell Building Supplies", "\z\addons\dayz_code\actions\sell_db.sqf",[22], 96, true, false, "",""];
+			
+			_buy3 = player addAction ["Buy Explosives", "\z\addons\dayz_code\actions\buy_db.sqf",[23], 95, true, false, "",""];
+			_sell3 = player addAction ["Sell Explosives", "\z\addons\dayz_code\actions\sell_db.sqf",[23], 94, true, false, "",""];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_sell];
+			s_player_parts set [count s_player_parts,_buy2];
+			s_player_parts set [count s_player_parts,_sell2];
+			s_player_parts set [count s_player_parts,_buy3];
+			s_player_parts set [count s_player_parts,_sell3];
 			
 			s_player_parts_crtl = 1;
 		};
@@ -260,11 +283,43 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Buy Weapons", "\z\addons\dayz_code\actions\buy_db.sqf",[4,"Weapons"], 99, true, false, "",""];
-			_sell = player addAction ["Sell Weapons", "\z\addons\dayz_code\actions\sell_db.sqf",[4,"Weapons"], 98, true, false, "",""];
+			_buy1 = player addAction ["Buy Sidearm", "\z\addons\dayz_code\actions\buy_db.sqf",[11], 99, true, false, "",""];
+			_sell1 = player addAction ["Sell Sidearm", "\z\addons\dayz_code\actions\sell_db.sqf",[11], 98, true, false, "",""];
+			
+			_buy = player addAction ["Buy Rifle", "\z\addons\dayz_code\actions\buy_db.sqf",[12], 97, true, false, "",""];
+			_sell = player addAction ["Sell Rifle", "\z\addons\dayz_code\actions\sell_db.sqf",[12], 96, true, false, "",""];
+			
+			_buy2 = player addAction ["Buy Shotgun", "\z\addons\dayz_code\actions\buy_db.sqf",[13], 95, true, false, "",""];
+			_sell2 = player addAction ["Sell Shotgun", "\z\addons\dayz_code\actions\sell_db.sqf",[13], 94, true, false, "",""];
+			
+			_buy3 = player addAction ["Buy Assault Rifle", "\z\addons\dayz_code\actions\buy_db.sqf",[14], 93, true, false, "",""];
+			_sell3 = player addAction ["Sell Assault Rifle", "\z\addons\dayz_code\actions\sell_db.sqf",[14], 92, true, false, "",""];
+			
+			_buy4 = player addAction ["Buy Machine Gun", "\z\addons\dayz_code\actions\buy_db.sqf",[15], 91, true, false, "",""];
+			_sell4 = player addAction ["Sell Machine Gun", "\z\addons\dayz_code\actions\sell_db.sqf",[15], 90, true, false, "",""];
+			
+			_buy5 = player addAction ["Buy Sniper Rifle", "\z\addons\dayz_code\actions\buy_db.sqf",[16], 89, true, false, "",""];
+			_sell5 = player addAction ["Sell Sniper Rifle", "\z\addons\dayz_code\actions\sell_db.sqf",[16], 88, true, false, "",""];
+			
+			
+			
+			s_player_parts set [count s_player_parts,_buy1];
+			s_player_parts set [count s_player_parts,_sell1];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_sell];
+						
+			s_player_parts set [count s_player_parts,_buy2];
+			s_player_parts set [count s_player_parts,_sell2];
+						
+			s_player_parts set [count s_player_parts,_buy3];
+			s_player_parts set [count s_player_parts,_sell3];
+						
+			s_player_parts set [count s_player_parts,_buy4];
+			s_player_parts set [count s_player_parts,_sell4];
+			
+			s_player_parts set [count s_player_parts,_buy5];
+			s_player_parts set [count s_player_parts,_sell5];
 			
 			s_player_parts_crtl = 1;
 		};
@@ -277,11 +332,26 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Buy Food", "\z\addons\dayz_code\actions\buy_db.sqf",[5,"Food"], 99, true, false, "",""];
-			_sell = player addAction ["Sell Food", "\z\addons\dayz_code\actions\sell_db.sqf",[5,"Food"], 98, true, false, "",""];
+			_buy = player addAction ["Buy Food", "\z\addons\dayz_code\actions\buy_db.sqf",[51], 99, true, false, "",""];
+			_sell = player addAction ["Sell Food", "\z\addons\dayz_code\actions\sell_db.sqf",[51], 98, true, false, "",""];
+			
+			_buy2 = player addAction ["Buy Backpacks", "\z\addons\dayz_code\actions\buy_db.sqf",[52], 97, true, false, "",""];
+			_sell2 = player addAction ["Sell Backpacks", "\z\addons\dayz_code\actions\sell_db.sqf",[52], 96, true, false, "",""];
+			
+			_buy3 = player addAction ["Buy Toolbelt", "\z\addons\dayz_code\actions\buy_db.sqf",[53], 95, true, false, "",""];
+			_sell3 = player addAction ["Sell Toolbelt", "\z\addons\dayz_code\actions\sell_db.sqf",[53], 94, true, false, "",""];
+			
+			_buy4 = player addAction ["Buy Clothes", "\z\addons\dayz_code\actions\buy_db.sqf",[54], 93, true, false, "",""];
+			_sell4 = player addAction ["Sell Clothes", "\z\addons\dayz_code\actions\sell_db.sqf",[54], 92, true, false, "",""];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_sell];
+			s_player_parts set [count s_player_parts,_buy2];
+			s_player_parts set [count s_player_parts,_sell2];
+			s_player_parts set [count s_player_parts,_buy3];
+			s_player_parts set [count s_player_parts,_sell3];
+			s_player_parts set [count s_player_parts,_buy4];
+			s_player_parts set [count s_player_parts,_sell4];
 			
 			s_player_parts_crtl = 1;
 		};
@@ -294,11 +364,43 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Buy Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[2,"Ammo"], 99, true, false, "",""];
-			_sell = player addAction ["Sell Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[2,"Ammo"], 98, true, false, "",""];
+			_buy1 = player addAction ["Buy Sidearm Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[1], 99, true, false, "",""];
+			_sell1 = player addAction ["Sell Sidearm Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[1], 98, true, false, "",""];
+			
+			_buy = player addAction ["Buy Rifle Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[2], 97, true, false, "",""];
+			_sell = player addAction ["Sell Rifle Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[2], 96, true, false, "",""];
+			
+			_buy2 = player addAction ["Buy Shotgun Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[3], 95, true, false, "",""];
+			_sell2 = player addAction ["Sell Shotgun Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[3], 94, true, false, "",""];
+			
+			_buy3 = player addAction ["Buy Assault Rifle Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[4], 93, true, false, "",""];
+			_sell3 = player addAction ["Sell Assault Rifle Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[4], 92, true, false, "",""];
+			
+			_buy4 = player addAction ["Buy Machine Gun Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[5], 91, true, false, "",""];
+			_sell4 = player addAction ["Sell Machine Gun Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[5], 90, true, false, "",""];
+			
+			_buy5 = player addAction ["Buy Sniper Rifle Ammo", "\z\addons\dayz_code\actions\buy_db.sqf",[6], 89, true, false, "",""];
+			_sell5 = player addAction ["Sell Sniper Rifle Ammo", "\z\addons\dayz_code\actions\sell_db.sqf",[6], 88, true, false, "",""];
+			
+			
+			
+			s_player_parts set [count s_player_parts,_buy1];
+			s_player_parts set [count s_player_parts,_sell1];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_sell];
+						
+			s_player_parts set [count s_player_parts,_buy2];
+			s_player_parts set [count s_player_parts,_sell2];
+						
+			s_player_parts set [count s_player_parts,_buy3];
+			s_player_parts set [count s_player_parts,_sell3];
+						
+			s_player_parts set [count s_player_parts,_buy4];
+			s_player_parts set [count s_player_parts,_sell4];
+			
+			s_player_parts set [count s_player_parts,_buy5];
+			s_player_parts set [count s_player_parts,_sell5];
 			
 			s_player_parts_crtl = 1;
 		};
@@ -311,8 +413,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Buy Vehicle", "\z\addons\dayz_code\actions\buy_db.sqf",[6,"Vehicle"], 99, true, false, "",""];
-			_sell = player addAction ["Sell Vehicle", "\z\addons\dayz_code\actions\sell_db.sqf",[6,"Vehicle"], 98, true, false, "",""];
+			_buy = player addAction ["Buy Vehicle", "\z\addons\dayz_code\actions\buy_db.sqf",[41], 99, true, false, "",""];
+			_sell = player addAction ["Sell Vehicle", "\z\addons\dayz_code\actions\sell_db.sqf",[41], 98, true, false, "",""];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_sell];
@@ -328,13 +430,44 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 			
 			// [part_out, part_in, qty_out, qty_in,];
-			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items.sqf",["FoodBioMeat","ItemZombieParts",1,1], 99, true, true, "",""];
-			_zparts2 = player addAction ["Buy Medical", "\z\addons\dayz_code\actions\buy_db.sqf",[3,"Medical"], 97, true, false, "",""];
-			_zparts3 = player addAction ["Sell Medical", "\z\addons\dayz_code\actions\sell_db.sqf",[3,"Medical"], 96, true, false, "",""];
+			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items.sqf",["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat"], 99, true, true, "",""];
+			_zparts2 = player addAction ["Buy Medical", "\z\addons\dayz_code\actions\buy_db.sqf",[31], 97, true, false, "",""];
+			_zparts3 = player addAction ["Sell Medical", "\z\addons\dayz_code\actions\sell_db.sqf",[31], 96, true, false, "",""];
+			
+			_zparts4 = player addAction ["Buy Chem-lites/Flares", "\z\addons\dayz_code\actions\buy_db.sqf",[32], 95, true, false, "",""];
+			_zparts5 = player addAction ["Sell Chem-lites/Flares", "\z\addons\dayz_code\actions\sell_db.sqf",[32], 94, true, false, "",""];
+			
+			_zparts6 = player addAction ["Buy Smoke Grenades", "\z\addons\dayz_code\actions\buy_db.sqf",[33], 93, true, false, "",""];
+			_zparts7 = player addAction ["Sell Smoke Grenades", "\z\addons\dayz_code\actions\sell_db.sqf",[33], 92, true, false, "",""];
 			
 			s_player_parts set [count s_player_parts,_zparts1];
 			s_player_parts set [count s_player_parts,_zparts2];
 			s_player_parts set [count s_player_parts,_zparts3];
+			s_player_parts set [count s_player_parts,_zparts4];
+			s_player_parts set [count s_player_parts,_zparts5];
+			s_player_parts set [count s_player_parts,_zparts6];
+			s_player_parts set [count s_player_parts,_zparts7];
+			s_player_parts_crtl = 1;
+		};
+	};
+	
+	// metals_trader
+	if (_isMan and _traderType == metals_trader) then {
+		
+		if (s_player_parts_crtl < 0) then {
+			
+			// [part_out, part_in, qty_out, qty_in,];
+			_metals1 = player addAction ["Trade 6 Copper for 1 Silver", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemSilverBar","ItemCopperBar",1,6,"buy","Copper","Silver"], 99, true, true, "",""];
+			_metals2 = player addAction ["Trade 1 Silver for 6 Copper", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemCopperBar","ItemSilverBar",6,1,"buy","Silver","Copper"], 98, true, true, "",""];
+			_metals4 = player addAction ["Trade 6 Silver for 1 Gold", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemGoldBar","ItemSilverBar",1,6,"buy","Silver","Gold"], 97, true, true, "",""];
+			_metals3 = player addAction ["Trade 1 Gold for 6 Silver", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemSilverBar","ItemGoldBar",6,1,"buy","Gold","Silver"], 97, true, true, "",""];
+			
+			
+			s_player_parts set [count s_player_parts,_metals1];
+			s_player_parts set [count s_player_parts,_metals2];
+			s_player_parts set [count s_player_parts,_metals3];
+			s_player_parts set [count s_player_parts,_metals4];
+;
 			s_player_parts_crtl = 1;
 		};
 	};

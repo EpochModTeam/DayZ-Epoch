@@ -11,15 +11,19 @@ _timeout = _object getVariable["combattimeout",0];
 _playerIDtoarray = [];
 _playerIDtoarray = toArray _playerID;
 
-if (59 in _playerIDtoarray) exitWith {};
-
-if ((_timeout - time) > 0) then {
-	diag_log("DEBUG: COMBAT LOG TIMER: " + str(_timeout));
-	_playerName call player_combatLogged;
-};
-
 if (vehicle _object != _object) then {
 	_object action ["eject", vehicle _object];
+};
+
+if (59 in _playerIDtoarray) exitWith { 	diag_log ("Exited"); };
+
+if ((_timeout - time) > 0) then {
+	//_playerName call player_combatLogged;
+	private["_playerName","_center","_group"];
+	_playerName = name player;
+	_timeout = _object getVariable["combattimeout",0];
+
+	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 };
 
 diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
@@ -28,7 +32,7 @@ dayz_disco = dayz_disco - [_playerID];
 if (!isNull _object) then {
 //Update Vehicle
 	{ [_x,"gear"] call server_updateObject } foreach 
-		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage"], 10]);
+		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10]);
 	if (alive _object) then {
 		[_object,[],true] call server_playerSync;
 		_id = [_playerID,_characterID,2] spawn dayz_recordLogin;

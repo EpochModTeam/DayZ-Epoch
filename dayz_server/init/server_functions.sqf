@@ -5,11 +5,8 @@ object_spawnDamVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\
 server_playerLogin =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerLogin.sqf";
 server_playerSetup =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSetup.sqf";
 server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_onPlayerDisconnect.sqf";
-server_routinePlayerCheck =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_routinePlayerCheck.sqf";
 server_updateObject =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateObject.sqf";
 server_playerDied =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
-server_updatePlayer	=		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updatePlayer.sqf";
-server_playerStat =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerStat.sqf";
 server_publishObj = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";
 server_publishVeh = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishVehicle.sqf"; // Custom to add vehicles
 server_publishBank = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishBank.sqf";
@@ -18,7 +15,6 @@ local_publishObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\com
 local_deleteObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_deleteObj.sqf";		//Creates the object in DB
 local_createObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_createObj.sqf";		//Creates the object in DB
 server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
-//zombie_initialize =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_initialize.sqf";
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
 
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
@@ -29,8 +25,13 @@ vehicle_handleInteract = {
 	[_object, "all"] call server_updateObject;
 };
 
+player_combatLogged = {
+
+};
+
 //event Handlers
 eh_localCleanup =			{
+	private ["_object"];
 	_object = _this select 0;
 	_object addEventHandler ["local", {
 		if(_this select 1) then {
@@ -44,7 +45,7 @@ eh_localCleanup =			{
 };
 
 server_characterSync = {
-	//dayzCharDisco = [_characterID,_playerPos,[_weapons,_magazines],[typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack],_medical,_currentState,_currentModel];
+	private ["_characterID","_playerPos","_playerGear","_playerBackp","_medical","_currentState","_currentModel","_key"];
 	_characterID = 	_this select 0;	
 	_playerPos =	_this select 1;
 	_playerGear =	_this select 2;
@@ -65,7 +66,7 @@ fnc_buildWeightedArray = 	compile preprocessFileLineNumbers "\z\addons\dayz_code
 onPlayerDisconnected 		"[_uid,_name] call server_onPlayerDisconnect;";
 
 server_hiveWrite = {
-	private["_resultArray","_data"];
+	private["_data"];
 	//diag_log ("ATTEMPT WRITE: " + _this);
 	_data = "HiveEXT" callExtension _this;
 	diag_log ("WRITE: " + _data);
@@ -234,6 +235,10 @@ spawn_vehicles = {
 			
 			clearWeaponCargoGlobal  _veh;
 			clearMagazineCargoGlobal  _veh;
+
+			_veh setVehicleInit "this lock true; this lockCargo true;";
+			processInitCommands;
+
 			
 			[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;
 		};

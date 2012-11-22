@@ -47,7 +47,7 @@ if (!_isOk) then {
 	
 	sleep 5;
 	//place tent (local)
-	_tent = createVehicle ["TentStorage", _location, [], 0, "CAN_COLLIDE"];
+	_tent = createVehicle ["VaultStorage", _location, [], 0, "CAN_COLLIDE"];
 	_tent setdir _dir;
 	_tent setpos _location;
 	player reveal _tent;
@@ -57,14 +57,14 @@ if (!_isOk) then {
 
 	//player setVariable ["tentUpdate",["Land_A_tent",_dir,_location,[dayz_tentWeapons,dayz_tentMagazines,dayz_tentBackpacks]],true];
 
-	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
+	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"VaultStorage"];
 	publicVariable "dayzPublishObj";
 	if (isServer) then {
 		dayzPublishObj call server_publishObj;
 	};
 	
-	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
+	cutText ["You have setup your vault", "PLAIN DOWN"];
 } else {
-	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
+	cutText ["You cannot place a Vault here. The area must be flat, and free of other objects", "PLAIN DOWN"];
 };
 

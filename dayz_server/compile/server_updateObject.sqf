@@ -1,14 +1,37 @@
 /*
 [_object,_type] spawn server_updateObject;
 */
-private["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate"];
+private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk"];
 
 _object = 	_this select 0;
 _type = 	_this select 1;
+_parachuteWest = typeOf _object == "ParachuteWest";
+_isNotOk = false;
 
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
-if (_objectID == "0" && _uid == "0") then { _uid = _object call dayz_objectUID; }; //seems never been call
+
+if ((typeName _objectID != "string") || (typeName _uid != "string")) then
+{ 
+    diag_log(format["Non-string Object: ID %1 UID %2", _objectID, _uid]);
+    //force fail
+    _objectID = "0";
+    _uid = "0";
+};
+if (!_parachuteWest) then {
+	if (_objectID == "0" && _uid == "0") then
+	{
+		_object_position = getPosATL _object;
+    		diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",
+			typeOf _object,
+			_object_position select 0,
+			_object_position select 1, 
+			_object_position select 2]);
+			_isNotOk = true;
+	};
+};
+
+if (_isNotOk) exitWith { deleteVehicle _object; };
 
 _lastUpdate = _object getVariable ["lastUpdate",time];
 _needUpdate = _object in needUpdate_objects;

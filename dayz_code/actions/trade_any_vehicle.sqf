@@ -75,5 +75,6 @@ if (_qty >= _qty_in) then {
 	s_player_parts_crtl = -1;
 
 } else {
+	_needed =  _qty_in - _qty;
 	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 };

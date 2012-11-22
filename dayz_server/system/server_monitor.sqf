@@ -90,6 +90,10 @@ diag_log "HIVE: Starting";
 					_pos set [2,0];
 					_object setpos _pos;
 				};
+				if (_object isKindOf "VaultStorage") then {
+					_pos set [2,0];
+					_object setpos _pos;
+				};
 				_object setdir _dir;
 				_object setDamage _damage;
 				
@@ -141,6 +145,10 @@ diag_log "HIVE: Starting";
 				};	
 				
 				if (_object isKindOf "AllVehicles") then {
+					if(_ownerID != 0) then {
+						_object setVehicleInit "this lock true; this lockCargo true;";
+						processInitCommands;
+					};
 					{
 						_selection = _x select 0;
 						_dam = _x select 1;
@@ -228,4 +236,6 @@ for "_x" from 1 to MaxHeliCrashes do {
 };
 
 // Allow connection after road debris spawns
+
+
 allowConnection = true;
