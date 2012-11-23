@@ -71,27 +71,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_deleteBuild = -1;
 	};
 	
-	// Bank Vault Code Misc_cargo_cont_tiny	
-	if (!_isMan and _traderType == bank_atm) then {
-
-		if (s_player_bankvault_crtl < 0) then {
-			
-			_Deposit = player addAction ["Make Deposit", "\z\addons\dayz_code\actions\bank_deposit.sqf",cursorTarget, 99, true, false, "",""];
-			_Withdraw = player addAction ["Make Withdraw", "\z\addons\dayz_code\actions\bank_withdraw.sqf",cursorTarget, 98, true, false, "",""];
-			_Balance = player addAction ["Check Balance", "\z\addons\dayz_code\actions\bank_checkbalance.sqf",cursorTarget, 97, true, false, "",""];
-			
-			s_player_bank set [count s_player_bank,_Deposit];
-			s_player_bank set [count s_player_bank,_Withdraw];
-			s_player_bank set [count s_player_bank,_Balance];
-
-			s_player_bankvault_crtl = 1;
-			
-		};
-
-	} else {
-		{player removeAction _x} forEach s_player_bank;s_player_bank = [];
-		s_player_bankvault_crtl = -1;
-	};
 
 	// Allow Owner to lock and unlock vehicle  
 	if(_isVehicle and !_isMan and _canDo and _ownerID == dayz_characterID) then {
@@ -148,7 +127,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_butcher = -1;
 	};
 	
-	
 	//Fireplace Actions check
 	if(inflamed cursorTarget and _hasRawMeat and _canDo) then {
 		if (s_player_cook < 0) then {
@@ -166,6 +144,14 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_fireout;
 		s_player_fireout = -1;
 	};
+	
+	//place tent
+	//if(_hasTent and _canDo) then {
+	//		s_player_placetent = player addAction [localize "Place Tent", "\z\addons\dayz_code\actions\tent_pitch.sqf",cursorTarget, 0, false, true, "", ""];
+	//} else {
+	//	player removeAction s_player_placetent;
+	//	s_player_placetent = -1;
+	//};
 	
 	//Packing my tent
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {

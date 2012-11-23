@@ -3,7 +3,7 @@ private["_hasFood","_item","_text","_qty"];
 call gear_ui_init;
 
 _playerPos = 	getPosATL player;
-_canFill = 		count nearestObjects [_playerPos, ["Land_pumpa","Land_water_tank","Land_Misc_Well_L_EP1","Land_Misc_Well_C_EP1"], 4] > 0;
+_canFill = 		count nearestObjects [_playerPos, ["Land_pumpa","Land_water_tank","Land_Misc_Well_L_EP1","Land_Misc_Well_C_EP1","Land_Barrel_water"], 4] > 0;
 _isPond = 		false;
 _isWell = 		false;
 _pondPos = 		[];

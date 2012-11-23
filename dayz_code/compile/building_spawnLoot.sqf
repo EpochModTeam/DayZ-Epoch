@@ -38,6 +38,7 @@ _itemChance =	 [] + getArray (_config >> "itemChance");
 					_iArray set [3,0];
 					_iArray call spawn_loot;
 					_iArray = [];
+				diag_log ("LOOTSPAWN");
 				};
 				_item setVariable ["created",(DateToNumber date),true];
 			};

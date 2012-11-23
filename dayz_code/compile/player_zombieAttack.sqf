@@ -3,7 +3,7 @@ _unit = _this;
 _vehicle = (vehicle player);
 
 _targets = _unit getVariable ["targets",[]];
-if (!(_vehicle in _targets)) exitWith {};
+if (!(_vehicle in _targets) and ((random 1) < 0.9)) exitWith {};
 
 //Do the attack
 _move = "ZombieStandingAttack1";
@@ -30,32 +30,32 @@ if (_vehicle != player) then {
 	_total = 0;
 
 	if(["Glass",_hp,false] call fnc_inString) then {
-		_damage = 0.5;
+		_damage = 0.03;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
 	};
 	if(["Wheel",_hp,false] call fnc_inString) then {
-		_damage = 0.1;
+		_damage = 0.02;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
 	};
 	if(["Body",_hp,false] call fnc_inString) then {
-		_damage = 0.05;
+		_damage = 0.01;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
 	};
 	if(["Engine",_hp,false] call fnc_inString) then {
-		_damage = 0.03;
+		_damage = 0.01;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
 	};
 	if(["Fuel",_hp,false] call fnc_inString) then {
 		[_unit,"hit",0,false] call dayz_zombieSpeak;
-		_damage = 0.03;
+		_damage = 0.01;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);

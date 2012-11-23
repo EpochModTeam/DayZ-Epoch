@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.4.3";
+		version = "1.7.4.4";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -229,7 +229,6 @@ class CfgBuildingLoot {
 			{ "WeaponHolder_PartVRotor","object" },
 			{ "WeaponHolder_ItemJerrycan","object" },
 			{ "WeaponHolder_ItemHatchet","object" },
-			{ "WeaponHolder_ItemOilBarrel","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
@@ -247,7 +246,6 @@ class CfgBuildingLoot {
 			0.01,
 			0.04,
 			0.11,
-			0.02,
 			0.07,
 			0.06,
 			0.01,
@@ -375,8 +373,8 @@ class CfgBuildingLoot {
 			0.05,		//{"bizon_silenced","weapon"},
 			0.05,		//{"M14_EP1","weapon"},
 			0.02,		//{"FN_FAL_ANPVS4","weapon"},
-			0.01,		//{"m107","weapon"},
-			0.02,		//{"BAF_AS50_scoped","weapon"},
+			0.02,		//{"m107","weapon"},
+			0.01,		//{"BAF_AS50_scoped","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
 			//0.01,		//{"BAF_L85A2_RIS_CWS","weapon"},

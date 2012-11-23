@@ -9,7 +9,6 @@ server_updateObject =		compile preprocessFileLineNumbers "\z\addons\dayz_server\
 server_playerDied =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
 server_publishObj = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";
 server_publishVeh = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishVehicle.sqf"; // Custom to add vehicles
-server_publishBank = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishBank.sqf";
 server_traders = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_traders.sqf";
 local_publishObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_publishObj.sqf";		//Creates the object in DB
 local_deleteObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_deleteObj.sqf";		//Creates the object in DB
