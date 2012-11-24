@@ -55,6 +55,8 @@ dayz_resetSelfActions = {
 	s_player_butcher =		-1;
 	s_player_packtent = 	-1;
 	s_player_packvault = 	-1;
+	s_player_lockvault = 	-1;
+	s_player_unlockvault = 	-1;
 	s_player_fillwater =	-1;
 	s_player_fillwater2 = 	-1;
 	s_player_fillfuel = 	-1;
@@ -171,6 +173,7 @@ dayz_zombieTargetList = [
 dayzHit = [];
 dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 dayzHideBody = objNull;
+
 dayzPublishVeh = [];		// for vehicle traders
 dayzTraderMenu = [];  		// For all traders	
 

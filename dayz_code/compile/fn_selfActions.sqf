@@ -52,7 +52,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
-	_isVault = cursorTarget isKindOf "VaultStorage";
 	_isFuel = false;
 	_isAlive = alive cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
@@ -163,16 +162,29 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_packtent = -1;
 	};
 
-		
-	//Packing my vault
+	//Allow owner to unlock vault
+	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo and _ownerID == dayz_characterID) then {
+		if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
+			s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
+		};
+	} else {
+		player removeAction s_player_unlockvault;
+		s_player_unlockvault = -1;
+	};
+
+	//Allow owner to pack vault
 	if(cursorTarget isKindOf "VaultStorage" and _canDo and _ownerID == dayz_characterID) then {
 		if ((s_player_packvault < 0) and (player distance cursorTarget < 3)) then {
 			s_player_packvault = player addAction ["Pack Vault", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
-			// s_player_packvault = player addAction ["Lock Vault", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
+		};
+		if ((s_player_lockvault < 0) and (player distance cursorTarget < 3)) then {
+			s_player_lockvault = player addAction ["Lock Vault", "\z\addons\dayz_code\actions\vault_lock.sqf",cursorTarget, 0, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_packvault;
 		s_player_packvault = -1;
+		player removeAction s_player_lockvault;
+		s_player_lockvault = -1;
 	};
 	
 	//Repairing Vehicles
@@ -504,4 +516,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
+
+	// vault
+	player removeAction s_player_unlockvault;
+	s_player_unlockvault = -1;
+	player removeAction s_player_packvault;
+	s_player_packvault = -1;
+	player removeAction s_player_lockvault;
+	s_player_lockvault = -1;
 };

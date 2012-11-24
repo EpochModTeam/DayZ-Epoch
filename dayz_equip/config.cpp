@@ -1584,6 +1584,7 @@ class CfgVehicles
 {
 	class NonStrategic;
 	class BuiltItems: NonStrategic{};
+	class BuiltItemsVault: NonStrategic{};
 	class TrapItems: NonStrategic{};
 	class Wire_cat1: BuiltItems
 	{
@@ -1603,6 +1604,17 @@ class CfgVehicles
 	{
 		displayName = "Wire (CAT2)";
 		model = "\dayz_equip\models\wire_cat2.p3d";
+	};
+	class VaultStorageLocked: BuiltItemsVault
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		model = "\dayz_equip\models\safe1.p3d";
+		mapSize = 2;
+		armor = 2000;
+		displayName = "Locked Vault";
+		vehicleClass = "Fortifications";
 	};
 	class Hedgehog_DZ: BuiltItems
 	{
@@ -1923,7 +1935,7 @@ class CfgVehicles
 		transportMaxMagazines = 200;
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
-	};
+	};	
 	
 	class CardboardBox: ReammoBox
 	{
