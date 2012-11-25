@@ -26,6 +26,7 @@ if(_ownerID == dayz_characterID) then {
 	//place tent (local)
 	_holder = createVehicle ["VaultStorageLocked",_pos,[], 0, "CAN_COLLIDE"];
 	_holder setdir _dir;
+	_holder setpos _pos;
 	player reveal _holder;
 	
 	_holder setVariable["CharacterID",_ownerID,true];
@@ -42,34 +43,14 @@ if(_ownerID == dayz_characterID) then {
 	//	dayzDeleteObj call local_deleteObj;
 	// };
 	
-	deleteVehicle _obj;
-	
-	//Add weapons
-	_objWpnTypes = 	_weapons select 0;
-	_objWpnQty = 	_weapons select 1;
-	_countr = 0;
-	{
-		_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
-	
-	//Add Magazines
-	_objWpnTypes = _magazines select 0;
-	_objWpnQty = _magazines select 1;
-	_countr = 0;
-	{
-		_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	deleteVehicle _obj; 
 
-	//Add Backpacks
-	_objWpnTypes = _backpacks select 0;
-	_objWpnQty = _backpacks select 1;
-	_countr = 0;
-	{
-		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+
+	
+	// Fill variables with loot
+	_holder setVariable ["WeaponCargo", _weapons, true];
+	_holder setVariable ["MagazineCargo", _magazines, true];
+	_holder setVariable ["BackpackCargo", _backpacks, true];
 	
 	cutText ["Your vault has been locked", "PLAIN DOWN"];
 } else {

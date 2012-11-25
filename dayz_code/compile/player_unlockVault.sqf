@@ -26,15 +26,16 @@ if(_ownerID == dayz_characterID) then {
 	//place tent (local)
 	_holder = createVehicle ["VaultStorage",_pos,[], 0, "CAN_COLLIDE"];
 	_holder setdir _dir;
+	_holder setpos _pos;
 	player reveal _holder;
 	
 	_holder setVariable["CharacterID",_ownerID,true];
 	_holder setVariable["ObjectID",_objectID,true];
 	_holder setVariable["ObjectUID",_objectUID,true];
 
-	_weapons = 		getWeaponCargo _obj;
-	_magazines = 	getMagazineCargo _obj;
-	_backpacks = 	getBackpackCargo _obj;
+	_weapons = 		_obj getVariable["WeaponCargo",[]];
+	_magazines = 	_obj getVariable["MagazineCargo",[]];
+	_backpacks = 	_obj getVariable["BackpackCargo",[]];
 	
 	// dayzDeleteObj = [_objectID,_objectUID];
 	// publicVariableServer "dayzDeleteObj";
@@ -43,6 +44,8 @@ if(_ownerID == dayz_characterID) then {
 	// };
 	
 	deleteVehicle _obj;
+
+
 	
 	//Add weapons
 	_objWpnTypes = 	_weapons select 0;

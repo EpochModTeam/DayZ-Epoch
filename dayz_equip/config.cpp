@@ -1931,14 +1931,9 @@ class CfgVehicles
 		model = "\dayz_equip\models\safe1.p3d";
 		destrType = "DestructNo";
 		armor = 2000;
-		memoryPointSupply = "";
-		supplyRadius = 0;
-		transportMaxWeapons = 0;
 		transportMaxMagazines = 0;
+		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
-		transportAmmo = 0;
-		transportRepair = 0;
-		transportFuel = 0;
 	};
 	
 	class CardboardBox: ReammoBox

@@ -90,7 +90,7 @@ diag_log "HIVE: Starting";
 					_pos set [2,0];
 					_object setpos _pos;
 				};
-				if (_object isKindOf "VaultStorage") then {
+				if (_object isKindOf "VaultStorageLocked") then {
 					_pos set [2,0];
 					_object setpos _pos;
 				};
@@ -98,57 +98,61 @@ diag_log "HIVE: Starting";
 				_object setDamage _damage;
 				
 				if (count _intentory > 0) then {
-					//Add weapons
-					_objWpnTypes = (_intentory select 0) select 0;
-					_objWpnQty = (_intentory select 0) select 1;
-					_countr = 0;					
-					{
-						_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
-						if (_isOK) then {
-							_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;
-							if (!_block) then {
-								_object addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
-							};
-						};
-						_countr = _countr + 1;
-					} forEach _objWpnTypes; 
-					
-					//Add Magazines
-					_objWpnTypes = (_intentory select 1) select 0;
-					_objWpnQty = (_intentory select 1) select 1;
-					_countr = 0;
-					{
-						_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
-						if (_isOK) then {
-							_block = 	getNumber(configFile >> "CfgMagazines" >> _x >> "stopThis") == 1;
-							if (!_block) then {
-								_object addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
-							};
-						};
-						_countr = _countr + 1;
-					} forEach _objWpnTypes;
+					if (_object isKindOf "VaultStorageLocked") then {
+						// Fill variables with loot
+						_object setVariable ["WeaponCargo", (_intentory select 0), true];
+						_object setVariable ["MagazineCargo", (_intentory select 1), true];
+						_object setVariable ["BackpackCargo", (_intentory select 2), true];
+					} else {
 
-					//Add Backpacks
-					_objWpnTypes = (_intentory select 2) select 0;
-					_objWpnQty = (_intentory select 2) select 1;
-					_countr = 0;
-					{
-						_isOK = 	isClass(configFile >> "CfgVehicles" >> _x);
-						if (_isOK) then {
-							_block = 	getNumber(configFile >> "CfgVehicles" >> _x >> "stopThis") == 1;
-							if (!_block) then {
-								_object addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
+						//Add weapons
+						_objWpnTypes = (_intentory select 0) select 0;
+						_objWpnQty = (_intentory select 0) select 1;
+						_countr = 0;					
+						{
+							_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
+							if (_isOK) then {
+								_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;
+								if (!_block) then {
+									_object addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
+								};
 							};
-						};
-						_countr = _countr + 1;
-					} forEach _objWpnTypes;
+							_countr = _countr + 1;
+						} forEach _objWpnTypes; 
+					
+						//Add Magazines
+						_objWpnTypes = (_intentory select 1) select 0;
+						_objWpnQty = (_intentory select 1) select 1;
+						_countr = 0;
+						{
+							_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
+							if (_isOK) then {
+								_block = 	getNumber(configFile >> "CfgMagazines" >> _x >> "stopThis") == 1;
+								if (!_block) then {
+									_object addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
+								};
+							};
+							_countr = _countr + 1;
+						} forEach _objWpnTypes;
+
+						//Add Backpacks
+						_objWpnTypes = (_intentory select 2) select 0;
+						_objWpnQty = (_intentory select 2) select 1;
+						_countr = 0;
+						{
+							_isOK = 	isClass(configFile >> "CfgVehicles" >> _x);
+							if (_isOK) then {
+								_block = 	getNumber(configFile >> "CfgVehicles" >> _x >> "stopThis") == 1;
+								if (!_block) then {
+									_object addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
+								};
+							};
+							_countr = _countr + 1;
+						} forEach _objWpnTypes;
+					};
 				};	
 				
 				if (_object isKindOf "AllVehicles") then {
-					if(_ownerID != 0) then {
-						_object setVehicleInit "this lock true; this lockCargo true;";
-						processInitCommands;
-					};
 					{
 						_selection = _x select 0;
 						_dam = _x select 1;
@@ -160,6 +164,10 @@ diag_log "HIVE: Starting";
 					if (getDammage _object == 1) then {
 						_position = ([(getPosATL _object),0,100,10,0,500,0] call BIS_fnc_findSafePos);
 						_object setPosATL _position;
+					};
+									
+					if(_ownerID != "0") then {
+						_object setvehiclelock "locked";
 					};
 					_object call fnc_vehicleEventHandler;			
 					_totalvehicles = _totalvehicles + 1;
