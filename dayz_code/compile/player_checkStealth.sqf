@@ -1,4 +1,4 @@
-private["_vel","_speed","_scalePose","_scaleMvmt","_scaleLight","_scaleAlert","_anim","_anim4","_initial","_isDay","_nearFlare","_scaler","_pos"];
+private["_vel","_speed","_scalePose","_scaleMvmt","_scaleLight","_scaleAlert","_anim","_anim4","_initial","_isDay","_nearFlare","_nearFire","_nearLight","_scaler","_pos"];
 _vel = velocity (vehicle player);
 _speed = (_vel distance [0,0,0]);
 _pos = getPosATL player;
@@ -56,6 +56,11 @@ if (_scaleLight < 0.9) then {
 			_scaler = 30 - _scaler;
 			_scaleLight = ((_scaler / 30) * 2) + _scaleLight;
 		};
+	};
+	_nearLight = nearestObject [(vehicle player),"StreetLamp"];
+	if (!isNull _nearLight) then {
+		_scaler = 50 - (_nearLight distance (vehicle player));
+		_scaleLight = ((_scaler / 50) * 2) + _scaleLight;
 	};
 	_nearFire = nearestObject [(vehicle player),"Land_Fire"];
 	if (!isNull _nearFire) then {

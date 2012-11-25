@@ -19,7 +19,8 @@ if(_ownerID == dayz_characterID) then {
 	_obj setVariable["packing",1];
 
 	_dir = direction _obj;
-	_pos = getposATL _obj;
+	// _pos = getposATL _obj;
+	_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
 	sleep 3;
 
@@ -32,25 +33,25 @@ if(_ownerID == dayz_characterID) then {
 	_holder setVariable["CharacterID",_ownerID,true];
 	_holder setVariable["ObjectID",_objectID,true];
 	_holder setVariable["ObjectUID",_objectUID,true];
+	_holder setVariable ["OEMPos", _pos, true];
 
 	_weapons = 		getWeaponCargo _obj;
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
 	
-	// dayzDeleteObj = [_objectID,_objectUID];
-	// publicVariableServer "dayzDeleteObj";
-	// if (isServer) then {
-	//	dayzDeleteObj call local_deleteObj;
-	// };
-	
-	deleteVehicle _obj; 
+	// remove vault
+	deleteVehicle _obj;
 
-
-	
 	// Fill variables with loot
-	_holder setVariable ["WeaponCargo", _weapons, true];
-	_holder setVariable ["MagazineCargo", _magazines, true];
-	_holder setVariable ["BackpackCargo", _backpacks, true];
+	if (count _weapons > 0) then {
+		_holder setVariable ["WeaponCargo", _weapons, true];
+	};
+	if (count _magazines > 0) then {
+		_holder setVariable ["MagazineCargo", _magazines, true];
+	};
+	if (count _backpacks > 0) then {
+		_holder setVariable ["BackpackCargo", _backpacks, true];
+	};
 	
 	cutText ["Your vault has been locked", "PLAIN DOWN"];
 } else {

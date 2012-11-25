@@ -19,7 +19,8 @@ if(_ownerID == dayz_characterID) then {
 	_obj setVariable["packing",1];
 
 	_dir = direction _obj;
-	_pos = getposATL _obj;
+	// _pos = getposATL _obj;
+	_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
 	sleep 3;
 
@@ -32,47 +33,47 @@ if(_ownerID == dayz_characterID) then {
 	_holder setVariable["CharacterID",_ownerID,true];
 	_holder setVariable["ObjectID",_objectID,true];
 	_holder setVariable["ObjectUID",_objectUID,true];
+	_holder setVariable ["OEMPos", _pos, true];
 
 	_weapons = 		_obj getVariable["WeaponCargo",[]];
 	_magazines = 	_obj getVariable["MagazineCargo",[]];
 	_backpacks = 	_obj getVariable["BackpackCargo",[]];
 	
-	// dayzDeleteObj = [_objectID,_objectUID];
-	// publicVariableServer "dayzDeleteObj";
-	// if (isServer) then {
-	//	dayzDeleteObj call local_deleteObj;
-	// };
-	
+	// Remove locked vault
 	deleteVehicle _obj;
 
-
+	if (count _weapons > 0) then {
+		//Add weapons
+		_objWpnTypes = 	_weapons select 0;
+		_objWpnQty = 	_weapons select 1;
+		_countr = 0;
+		{
+			_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
+			_countr = _countr + 1;
+		} forEach _objWpnTypes;
+	};
 	
-	//Add weapons
-	_objWpnTypes = 	_weapons select 0;
-	_objWpnQty = 	_weapons select 1;
-	_countr = 0;
-	{
-		_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
-	
-	//Add Magazines
-	_objWpnTypes = _magazines select 0;
-	_objWpnQty = _magazines select 1;
-	_countr = 0;
-	{
-		_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	if (count _magazines > 0) then {
+		//Add Magazines
+		_objWpnTypes = _magazines select 0;
+		_objWpnQty = _magazines select 1;
+		_countr = 0;
+		{
+			_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
+			_countr = _countr + 1;
+		} forEach _objWpnTypes;
+	};
 
-	//Add Backpacks
-	_objWpnTypes = _backpacks select 0;
-	_objWpnQty = _backpacks select 1;
-	_countr = 0;
-	{
-		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	if (count _backpacks > 0) then {
+		//Add Backpacks
+		_objWpnTypes = _backpacks select 0;
+		_objWpnQty = _backpacks select 1;
+		_countr = 0;
+		{
+			_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
+			_countr = _countr + 1;
+		} forEach _objWpnTypes;
+	};
 	
 	cutText ["Your vault has been unlocked", "PLAIN DOWN"];
 } else {

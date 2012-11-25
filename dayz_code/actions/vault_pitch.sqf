@@ -49,11 +49,13 @@ if (!_isOk) then {
 	//place tent (local)
 	_tent = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
 	_tent setdir _dir;
+	_location = getPosATL _tent;
 	_tent setpos _location;
 	player reveal _tent;
-	_location = getPosATL _tent;
+	
 
 	_tent setVariable ["characterID",dayz_characterID,true];
+	_tent setVariable ["OEMPos",_location,true];
 
 	//player setVariable ["tentUpdate",["Land_A_tent",_dir,_location,[dayz_tentWeapons,dayz_tentMagazines,dayz_tentBackpacks]],true];
 

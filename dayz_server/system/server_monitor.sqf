@@ -86,14 +86,7 @@ diag_log "HIVE: Starting";
 				clearWeaponCargoGlobal  _object;
 				clearMagazineCargoGlobal  _object;
 				
-				if (_object isKindOf "TentStorage") then {
-					_pos set [2,0];
-					_object setpos _pos;
-				};
-				if (_object isKindOf "VaultStorageLocked") then {
-					_pos set [2,0];
-					_object setpos _pos;
-				};
+				_object setpos _pos;
 				_object setdir _dir;
 				_object setDamage _damage;
 				
@@ -103,6 +96,7 @@ diag_log "HIVE: Starting";
 						_object setVariable ["WeaponCargo", (_intentory select 0), true];
 						_object setVariable ["MagazineCargo", (_intentory select 1), true];
 						_object setVariable ["BackpackCargo", (_intentory select 2), true];
+						_object setVariable ["OEMPos", _pos, true];
 					} else {
 
 						//Add weapons
