@@ -1921,8 +1921,8 @@ class CfgVehicles
 		destrType = "DestructNo";
 		armor = 2000;
 		transportMaxMagazines = 200;
-		transportMaxWeapons = 10;
-		transportMaxBackpacks = 5;
+		transportMaxWeapons = 20;
+		transportMaxBackpacks = 10;
 	};	
 	class VaultStorageLocked: Land_A_tent
 	{
