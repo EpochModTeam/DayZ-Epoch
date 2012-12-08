@@ -144,6 +144,7 @@ diag_log "HIVE: Starting";
 							_countr = _countr + 1;
 						} forEach _objWpnTypes;
 					};
+				};	
 				
 				if (_object isKindOf "AllVehicles") then {
 					{
