@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private["_menClose","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_vehicle","_inVehicle","_color","_part","_traderType"];
+private["_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_allFixed","_hitpoints","_damage","_part","_cmpt","_color","_string","_handle","_trader_id","_category","_buy","_sell","_buy2","_sell2","_buy3","_sell3","_buy1","_sell1","_buy4","_sell4","_buy5","_sell5","_zparts1","_zparts2","_zparts3","_zparts4","_zparts5","_zparts6","_zparts7","_metals1","_metals2","_metals4","_metals3"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -45,6 +45,7 @@ if (_canPickLight and !dayz_hasLight) then {
 if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4)) then {	//Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
+	_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
 	_isMan = cursorTarget isKindOf "Man";
 	_traderType = typeOf cursorTarget;
 	_ownerID = cursorTarget getVariable ["characterID","0"];
@@ -54,6 +55,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isTent = cursorTarget isKindOf "TentStorage";
 	_isFuel = false;
 	_isAlive = alive cursorTarget;
+	_canmove = canmove cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
 	if (_hasFuelE) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army");
@@ -101,6 +103,15 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_forceSave = -1;
 	};
 	*/
+	//flip vehicle
+	if ((_isVehicletype) and !_canmove and _isAlive and (player distance cursorTarget >= 2)) then {
+		if (s_player_flipveh  < 0) then {
+			s_player_flipveh = player addAction [format[localize "str_actions_flipveh",_text], "\z\addons\dayz_code\actions\player_flipvehicle.sqf",cursorTarget, 1, true, true, "", ""];		
+		};	
+	} else {
+		player removeAction s_player_flipveh;
+		s_player_flipveh = -1;
+	};
 	
 	//Allow player to fill jerrycan
 	if(_hasFuelE and _isFuel and _canDo) then {
@@ -143,14 +154,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_fireout;
 		s_player_fireout = -1;
 	};
-	
-	//place tent
-	//if(_hasTent and _canDo) then {
-	//		s_player_placetent = player addAction [localize "Place Tent", "\z\addons\dayz_code\actions\tent_pitch.sqf",cursorTarget, 0, false, true, "", ""];
-	//} else {
-	//	player removeAction s_player_placetent;
-	//	s_player_placetent = -1;
-	//};
 	
 	//Packing my tent
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
@@ -411,11 +414,60 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Buy Vehicle", "\z\addons\dayz_code\actions\buy_db.sqf",[41], 99, true, false, "",""];
-			_sell = player addAction ["Sell Vehicle", "\z\addons\dayz_code\actions\sell_db.sqf",[41], 98, true, false, "",""];
+			_buy = player addAction ["Buy Car", "\z\addons\dayz_code\actions\buy_db.sqf",[41], 99, true, false, "",""];
+			_sell = player addAction ["Sell Car", "\z\addons\dayz_code\actions\sell_db.sqf",[41], 98, true, false, "",""];
+
+			_buy1 = player addAction ["Buy Truck", "\z\addons\dayz_code\actions\buy_db.sqf",[42], 99, true, false, "",""];
+			_sell1 = player addAction ["Sell Truck", "\z\addons\dayz_code\actions\sell_db.sqf",[42], 98, true, false, "",""];
+			
+			_buy2 = player addAction ["Buy Offroad", "\z\addons\dayz_code\actions\buy_db.sqf",[43], 99, true, false, "",""];
+			_sell2 = player addAction ["Sell Offroad", "\z\addons\dayz_code\actions\sell_db.sqf",[43], 98, true, false, "",""];
+
+			_buy2 = player addAction ["Buy Helicopter", "\z\addons\dayz_code\actions\buy_db.sqf",[44], 99, true, false, "",""];
+			_sell2 = player addAction ["Sell Helicopter", "\z\addons\dayz_code\actions\sell_db.sqf",[44], 98, true, false, "",""];
+
+			_buy2 = player addAction ["Buy Helicopter", "\z\addons\dayz_code\actions\buy_db.sqf",[44], 99, true, false, "",""];
+			_sell2 = player addAction ["Sell Helicopter", "\z\addons\dayz_code\actions\sell_db.sqf",[44], 98, true, false, "",""];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_sell];
+			s_player_parts set [count s_player_parts,_buy1];
+			s_player_parts set [count s_player_parts,_sell1];
+			s_player_parts set [count s_player_parts,_buy2];
+			s_player_parts set [count s_player_parts,_sell2];
+			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+	//auto_trader_2
+	if (_isMan and _traderType == auto_trader_2) then {
+		
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy  = player addAction ["Buy Car", "\z\addons\dayz_code\actions\buy_db.sqf",[41], 99, true, false, "",""];
+			_sell = player addAction ["Sell Car", "\z\addons\dayz_code\actions\sell_db.sqf",[41], 98, true, false, "",""];
+
+			_buy1  = player addAction ["Buy Truck", "\z\addons\dayz_code\actions\buy_db.sqf",[42], 99, true, false, "",""];
+			_sell1 = player addAction ["Sell Truck", "\z\addons\dayz_code\actions\sell_db.sqf",[42], 98, true, false, "",""];
+			
+			_buy2  = player addAction ["Buy Offroad", "\z\addons\dayz_code\actions\buy_db.sqf",[43], 99, true, false, "",""];
+			_sell2 = player addAction ["Sell Offroad", "\z\addons\dayz_code\actions\sell_db.sqf",[43], 98, true, false, "",""];
+
+			_buy2  = player addAction ["Buy Helicopter", "\z\addons\dayz_code\actions\buy_db.sqf",[44], 99, true, false, "",""];
+			_sell2 = player addAction ["Sell Helicopter", "\z\addons\dayz_code\actions\sell_db.sqf",[44], 98, true, false, "",""];
+
+			_buy2 = player addAction ["Buy Helicopter", "\z\addons\dayz_code\actions\buy_db.sqf",[45], 99, true, false, "",""];
+			_sell2 = player addAction ["Sell Helicopter", "\z\addons\dayz_code\actions\sell_db.sqf",[45], 98, true, false, "",""];
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_sell];
+			s_player_parts set [count s_player_parts,_buy1];
+			s_player_parts set [count s_player_parts,_sell1];
+			s_player_parts set [count s_player_parts,_buy2];
+			s_player_parts set [count s_player_parts,_sell2];
 			
 			s_player_parts_crtl = 1;
 		};

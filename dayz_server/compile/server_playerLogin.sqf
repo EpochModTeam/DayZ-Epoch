@@ -1,4 +1,4 @@
-private["_int","_newModel","_doLoop","_wait","_hiveVer","_isHiveOk","_playerID","_playerObj","_randomSpot","_publishTo","_primary","_secondary","_key","_result","_charID","_playerObj","_playerName","_finished","_spawnPos","_spawnDir","_items","_counter","_magazines","_weapons","_group","_backpack","_worldspace","_direction","_newUnit","_score","_position","_isNew","_inventory","_backpack","_medical","_survival","_stats","_state"];
+private["_botActive","_int","_newModel","_doLoop","_wait","_hiveVer","_isHiveOk","_playerID","_playerObj","_randomSpot","_publishTo","_primary","_secondary","_key","_result","_charID","_playerObj","_playerName","_finished","_spawnPos","_spawnDir","_items","_counter","_magazines","_weapons","_group","_backpack","_worldspace","_direction","_newUnit","_score","_position","_isNew","_inventory","_backpack","_medical","_survival","_stats","_state"];
 //Set Variables
 
 diag_log ("STARTING LOGIN: " + str(_this));
@@ -27,6 +27,7 @@ _state = 		[];
 _direction =	0;
 _model =		"";
 _newUnit =		objNull;
+_botActive = false;
 
 if (_playerID == "") then {
 	_playerID = getPlayerUID _playerObj;
@@ -35,8 +36,14 @@ if (_playerID == "") then {
 if ((_playerID == "") or (isNil "_playerID")) exitWith {
 	diag_log ("LOGIN FAILED: Player [" + _playerName + "] has no login ID");
 };
+// spawn a waituntil if bot still on server, then run server_playerLogin later again 
+_botActive = _playerID in botPlayers;
+if (_botActive) then { _this spawn server_waitForBotFinished;};
+if (_botActive) exitWith{};
+penaltyTimeout = false;
+(owner _playerObj) publicVariableClient "penaltyTimeout";
 
-endLoadingScreen;
+//??? endLoadingScreen;
 diag_log ("LOGIN ATTEMPT: " + str(_playerID) + " " + _playerName);
 
 //Do Connection Attempt
@@ -103,7 +110,7 @@ if (!_isNew) then {
 	
 	//Wait for HIVE to be free
 	_key = format["CHILD:203:%1:%2:%3:",_charID,[_wpns,_mags],[_bcpk,[],[]]];
-	_key spawn server_hiveWrite;
+	_key call server_hiveWrite;
 	
 };
 diag_log ("LOGIN LOADED: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
@@ -117,8 +124,5 @@ if (_hiveVer >= dayz_hiveVersionNo) then {
 //Server publishes variable to clients and WAITS
 //_playerObj setVariable ["publish",[_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer],true];
 
-_clientID = owner _playerObj;
 dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer];
-_clientID publicVariableClient "dayzPlayerLogin";
-
-//_playerObj enableSimulation false;
+(owner _playerObj) publicVariableClient "dayzPlayerLogin";

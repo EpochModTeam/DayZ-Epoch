@@ -48,7 +48,6 @@ if (!isDedicated) then {
 	player_throwObject = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_throwObject.sqf";
 	player_alertZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_alertZombies.sqf";
 	player_fireMonitor = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
-	//player_combatLogged =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_combatLogged.sqf";
 	player_tameDog = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_tameDog.sqf";
 	
 	//Objects
@@ -98,18 +97,39 @@ if (!isDedicated) then {
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
 	[] spawn {
-		private["_timeOut"];
+		private["_timeOut","_display","_control1","_control2"];
+		disableSerialization;
 		_timeOut = 0;
-		while { _timeOut < 60 } do {
+		dayz_loadScreenMsg = "";
+		diag_log "DEBUG: loadscreen guard started.";
+		_display = uiNameSpace getVariable "BIS_loadingScreen";
+		_control1 = _display displayctrl 8400;
+		_control2 = _display displayctrl 102;
+	// 40 sec timeout
+		while { _timeOut < 400 && !dayz_clientPreload } do {
+			if ( isNull _display ) then {
+				waitUntil { !dialog; };
+				startLoadingScreen ["","RscDisplayLoadCustom"];
+				_display = uiNameSpace getVariable "BIS_loadingScreen";
+				_control1 = _display displayctrl 8400;
+				_control2 = _display displayctrl 102;
+			};
+			if ( dayz_loadScreenMsg != "" ) then {
+				_control1 ctrlSetText dayz_loadScreenMsg;
+				dayz_loadScreenMsg = "";
+			};
+			_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
 			_timeOut = _timeOut + 1;
-			sleep 1;
+			sleep 0.1;
 		};
-		if ( !dayz_preloadFinished ) then {
 			endLoadingScreen;
+		if ( !dayz_clientPreload ) then {
+
+			diag_log "DEBUG: loadscreen guard ended with timeout.";
 			disableUserInput false;
-			cutText ["Something went wrong! disconnect and try again!", "BLACK OUT",1];
+			1 cutText ["Something went wrong! disconnect and try again!", "PLAIN"];
 			player enableSimulation false;
-		};
+		} else { diag_log "DEBUG: loadscreen guard ended."; };
 	}; 
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];
@@ -203,6 +223,7 @@ if (!isDedicated) then {
 		_btnRespawn ctrlEnable false;
 	};
 	
+	/*
 	dayz_disableAbort = {
 		private["_display","_btnAbort","_combattimeout"];
 		_combattimeout = player getVariable["combattimeout",0];
@@ -215,6 +236,7 @@ if (!isDedicated) then {
 		_btnAbort = _display displayCtrl 104;
 		_btnAbort ctrlEnable false;
 	};
+	*/
 	
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];

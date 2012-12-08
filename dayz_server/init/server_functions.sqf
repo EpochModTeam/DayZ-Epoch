@@ -1,5 +1,11 @@
 waituntil {!isnil "bis_fnc_init"};
 
+BIS_MPF_remoteExecutionServer = {
+	if ((_this select 1) select 2 == "JIPrequest") then {
+		[nil,(_this select 1) select 0,"loc",rJIPEXEC,[any,any,"per","execVM","ca\Modules\Functions\init.sqf"]] call RE;
+	};
+};
+
 BIS_Effects_Burn =			{};
 object_spawnDamVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_spawnDamVehicle.sqf";
 server_playerLogin =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerLogin.sqf";
@@ -15,8 +21,17 @@ local_deleteObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\comp
 local_createObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_createObj.sqf";		//Creates the object in DB
 server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
+//server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
+disco_playerMorph =     compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerMorph.sqf";	
+disco_damageHandler =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_damageHandler.sqf";
+disco_playerDeath  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerDeath.sqf";
 
-server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
+server_waitForBotFinished = {
+	private ["_playerId"];
+	_playerID = _this select 0;
+	waituntil{sleep 1; !(_playerID in botPlayers)};
+	_this call server_playerLogin;	
+};
 
 vehicle_handleInteract = {
 	private["_object"];
@@ -24,8 +39,26 @@ vehicle_handleInteract = {
 	[_object, "all"] call server_updateObject;
 };
 
-player_combatLogged = {
+check_publishobject = {
+        private["_allowed","_allowedObjects","_object"];
 
+        _object = _this select 0;
+        _allowedObjects = ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"];
+		_noncombatitems = ["ThrownObjects", "RoadFlare", "ChemLight"];
+        _allowed = false;
+       
+        diag_log format ["DEBUG: Checking if Object: %1 is allowed", _object];
+       
+        if ((typeOf _object) in _allowedObjects) then {
+                diag_log format ["DEBUG: Object: %1 Safe",_object];
+                _allowed = true;
+        };
+		if ((typeOf _object) in _noncombatitems) then {
+                diag_log format ["DEBUG: NONCombat: %1 Safe",_object];
+                _allowed = true;
+        };
+       
+        _allowed;
 };
 
 //event Handlers
@@ -37,7 +70,21 @@ eh_localCleanup =			{
 			private["_type","_unit"];
 			_unit = _this select 0;
 			_type = typeOf _unit;
+			 _myGroupUnit = group _unit;
+ 			_unit removeAllMPEventHandlers "mpkilled";
+ 			_unit removeAllMPEventHandlers "mphit";
+ 			_unit removeAllMPEventHandlers "mprespawn";
+ 			_unit removeAllEventHandlers "FiredNear";
+			_unit removeAllEventHandlers "HandleDamage";
+			_unit removeAllEventHandlers "Killed";
+			_unit removeAllEventHandlers "Fired";
+			_unit removeAllEventHandlers "GetOut";
+			_unit removeAllEventHandlers "GetIn";
+			_unit removeAllEventHandlers "Local";
+			clearVehicleInit _unit;
 			deleteVehicle _unit;
+			deleteGroup _myGroupUnit;
+			_unit = nil;
 			diag_log ("CLEANUP: DELETED A " + str(_type) );
 		};
 	}];

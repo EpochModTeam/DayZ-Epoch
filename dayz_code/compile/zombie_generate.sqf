@@ -1,4 +1,4 @@
-private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
+private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_isAlive","_myDest","_newDest","_rnd","_lootType","_id"];
 _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
@@ -57,7 +57,8 @@ if (!_doLoiter) then {
 	if (_nearByPlayer) then {
 		_attempt = 0;
 		while {_nearByPlayer} do {
-			_position = [_position,0,20,10,0,20,0] call BIS_fnc_findSafePos;
+			//_position = [_position,0,20,10,0,20,0] call BIS_fnc_findSafePos; Orignal
+			_position = [_position,0,20,20,0,20,0] call BIS_fnc_findSafePos;
 			_agent setPos _position;
 			_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
 			_attempt = _attempt + 1;

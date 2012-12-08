@@ -1,5 +1,5 @@
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
-private["_unit","_magazine","_used","_quantity","_magsNet","_magsWhole","_key","_result","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_dmgDistance","_isBallistic","_handled"];
+private["_unit","_firer","_distance","_weapon","_ammo","_killerID","_handled","_arc","_isBallistic","_dmgDistance","_isRocket","_isPlayer","_inVehicle","_evType","_recordable","_turretDir","_weaponDir","_pos1","_pos2","_facing","_firingArc","_isInFront","_isInRear","_id"];
 //Init
 	//[unit, firer, distance, weapon, muzzle, mode, ammo]
 	_unit = 	_this select 0;
@@ -20,12 +20,13 @@ private["_unit","_magazine","_used","_quantity","_magsNet","_magsWhole","_key","
 	_recordable = false;
 	
 	// Both the firer and those nearby (<=8m) go into "combat" to prevent ALT-F4
-	_firer setVariable["startcombattimer", 1, true];
-	
+	//diag_log ("DEBUG: AMMO TYPE: " +str(_ammo));
+	_firer setVariable["startcombattimer", 1, false];
 	if (_distance <= 8) then {
-		_unit setVariable["startcombattimer", 1, true];
+		_unit setVariable["startcombattimer", 1, false];
 	};
 
+	
 	if (_inVehicle) exitWith{};
 	if (_firer == player) exitWith{};
 	

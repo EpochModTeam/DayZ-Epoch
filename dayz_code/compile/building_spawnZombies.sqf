@@ -1,27 +1,21 @@
-private["_serial","_positions","_min","_lootGroup","_iArray","_iItem","_iClass","_iPos","_item","_mags","_qty","_max","_tQty","_canType","_obj","_type","_nearBy","_clean","_unitTypes","_max","_isNoone","_config","_num","_originalPos","_zombieChance","_rnd","_fastRun"];
+private["_obj","_type","_config","_canLoot","_originalPos","_unitTypes","_min","_max","_num","_clean","_positions","_zombieChance","_rnd","_iPos","_nearBy","_nearByPlayer"];
 _obj = 			_this select 0;
 _type = 		typeOf _obj;
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
 _canLoot = 		isClass (_config);
-_fastRun = 		_this select 1;
 _originalPos = 	getPosATL _obj;
 if (_canLoot) then {
 	//Get zombie class
 	_unitTypes = 	getArray (_config >> "zombieClass");
 	_min = 			getNumber (_config >> "maxRoaming");
 	_max = 			getNumber (_config >> "minRoaming");
-
 	//Walking Zombies
 	_num = round(random _max) max _min; // + round(_max / 3);
 	//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
 	for "_i" from 1 to _num do
 	{
 		[_originalPos,true,_unitTypes] call zombie_generate;
-		if (!_fastRun) then {
-			sleep 0.1;
 		};
-	};
-	
 	//Add Internal Zombies
 	_clean = {alive _x} count ((getPosATL _obj) nearEntities ["zZombie_Base",(sizeOf _type)]) == 0;
 	if (_clean) then {
@@ -38,9 +32,6 @@ if (_canLoot) then {
 				if (!_nearByPlayer and !_nearBy) then {
 					[_iPos,false,_unitTypes] call zombie_generate;
 				};
-			};
-			if (!_fastRun) then {
-				sleep 0.1;
 			};
 		} forEach _positions;
 	};

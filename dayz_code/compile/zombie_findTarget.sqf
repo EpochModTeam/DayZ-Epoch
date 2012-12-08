@@ -1,10 +1,10 @@
-private["_group","_target","_targetMen","_targetDis","_c","_man","_manDis","_targets","_lead","_leadheight","_nearEnts","_rnd","_assigned"];
+private["_group","_target","_lead","_targetMen","_targetDis","_range","_assigned","_targets","_obj","_dis","_fires","_rnd","_man","_manDis","_c"];
 _group = _this;
 _target = objNull;
 _lead = leader _group;
 _targetMen = [];
 _targetDis = [];
-_range = 500;
+_range = 300;
 
 _assigned = _group getVariable ["targets",[]];
 {

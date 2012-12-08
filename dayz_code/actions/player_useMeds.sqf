@@ -1,4 +1,4 @@
-private["_item"];
+private["_item","_onLadder","_hasmeditem","_config","_text","_id"];
 _item = _this;
 call gear_ui_init;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -26,7 +26,7 @@ switch (_item) do {
 	};
 	case "ItemHeatPack": {
 		player removeMagazine "ItemHeatPack";
-		dayz_temperatur = (dayz_temperatur + 5) max dayz_temperaturmax;
+		dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
 		cutText [localize "str_player_27", "PLAIN DOWN"];
 	};
 };

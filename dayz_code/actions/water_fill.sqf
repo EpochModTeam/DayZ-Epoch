@@ -1,4 +1,4 @@
-private["_hasFood","_item","_text","_qty"];
+private["_playerPos","_canFill","_isPond","_isWell","_pondPos","_objectsWell","_onLadder","_hasbottleitem","_config","_item","_text","_objectsPond","_qty","_id"];
 
 call gear_ui_init;
 

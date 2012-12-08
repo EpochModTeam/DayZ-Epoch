@@ -320,7 +320,13 @@ class CfgVehicles {
 		driverCanSee = 2+16+32;
 	};
 	//AH6X_EP1
-	class AH6X_EP1{ scope = 0; };
+	class AH6X_EP1
+	{ 
+		scope = 0;
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;	
+	};
 	class AH6X_DZ: AH6X_EP1
 	{
 		displayName = "AH6X_DZ";

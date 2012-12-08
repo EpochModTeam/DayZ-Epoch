@@ -16,7 +16,7 @@
 		<Key ID="STR_INTRO_3">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>On 12 March 2013, a prion disease\nand spreads among the worlds population\ntriggering a global pandemic</Original>
 			<English>On 12 March 2013, a prion disease\nand spreads among the worlds population\ntriggering a global pandemic</English>
-			<German>Am 12. Mä 2013 breitet sich\neine Prionenkrankheit unter der Weltbevölkerung aus\nund löst eine globale Pandemie aus</German>
+			<German>Am 12. März 2013 breitet sich\neine Prionenkrankheit unter der Weltbevölkerung aus\nund löst eine globale Pandemie aus</German>
 			<Russian>12 марта 2013 г., прионное заболевание\nраспространяется среди населения всего земного шара,\nвызывая общую пандемию</Russian>
 		</Key>
 		<Key ID="STR_INTRO_4">	<!-- use \n for linebreak (have them regularly!) -->
@@ -164,7 +164,7 @@
 		<Key ID="str_build_01">
 			<Original>You have constructed a %1</Original>
 			<English>You have constructed a %1</English>
-			<German>You have constructed a %1</German>
+			<German>Du hast eine(n) %1 gebaut</German>
 			<Russian>Вы построили %1.</Russian>
 		</Key>
 		<Key ID="str_fireplace_02">
@@ -254,7 +254,7 @@
 		<Key ID="str_player_11">
 			<Original>You need to sit in the driver seat before you can repair this vehicle</Original>
 			<English>You need to sit in the driver seat before you can repair this vehicle</English>
-			<German>You need to sit in the driver seat before you can repair this vehicle</German>
+			<German>Sie müssen im Fahrersitz sitzen um dieses Fahrzeug reparieren zu können.</German>
 			<Russian>Для ремонта требуется занять место водителя хотя бы раз.</Russian>
 		</Key>
 		<Key ID="str_player_12">
@@ -266,19 +266,19 @@
 		<Key ID="str_player_13">
 			<Original>Waiting for character to create</Original>
 			<English>Waiting for character to create</English>
-			<German>Warte auf den Spieler um zu erstellen</German>
+			<German>Warte darauf, einen neuen Charakter um zu erstellen</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока чтобы продолжить игру</Russian>
 		</Key>
 		<Key ID="str_player_14">
 			<Original>Retrying to Authenticate</Original>
 			<English>Retrying to Authenticate</English>
-			<German>Versuche erneut zu Authendifizieren</German>
+			<German>Versuche erneut zu Authentifizieren</German>
 			<Russian>Попытка аутентификации</Russian>
 		</Key>
 		<Key ID="str_player_15">
 			<Original>Requesting Authentication</Original>
 			<English>Requesting Authentication</English>
-			<German>Empfange Authendifisierung</German>
+			<German>Empfange Authentifizierung</German>
 			<Russian>Запрос аутентификации</Russian>
 		</Key>
 		<Key ID="str_player_16">
@@ -296,7 +296,7 @@
 		<Key ID="str_player_18">
 			<Original>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</Original>
 			<English>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</English>
-			<German>Du hast eine falsche version von DAYZ_CODE, bitte lade dir die neuste version runter www.dayzmod.com/downloads</German>
+			<German>Du hast eine falsche Version von DAYZ_CODE, bitte lade dir die neuste Version von www.dayzmod.com/downloads runter </German>
 			<Russian>Вы используете неверную версию DAYZ_CODE, пожалуйста, скачайте данный файл с dayzmod.com/downloads (Ваша версия %1, версия на сервере %2)</Russian>
 		</Key>
     <Key ID="str_player_20">
@@ -320,13 +320,13 @@
       <Key ID="str_player_23">
         <Original>You must be in a forest and close to a tree to harvest wood.</Original>
         <English>You must be in a forest and close to a tree to harvest wood.</English>
-        <German>Sie müssen in einem Wald sein und nah an einem Baum zum Holz ernten.</German>
+        <German>Sie müssen in einem Wald und nah an einem Baum sein, um Holz zu hacken.</German>
         <Russian>Вы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
       </Key>
       <Key ID="str_player_24">
         <Original>You do not have enough room in your inventory to do that.</Original>
         <English>You do not have enough room in your inventory to do that.</English>
-        <German>Sie haben noch genug Platz in Ihrem Inventar, das zu tun.</German>
+        <German>Sie haben nicht genug Platz in Ihrem Inventar um das zu tun.</German>
         <Russian>У вас недостаточно места в инвентаре.</Russian>
       </Key>
       <Key ID="str_player_25">
@@ -344,25 +344,25 @@
       <Key ID="str_player_27">
         <Original>You have applied a heatpack to your body successfully.</Original>
         <English>You have applied a heatpack to your body successfully.</English>
-        <German>You have applied a heatpack to your body successfully.</German>
+        <German>Sie haben das Heatpack erfolgreich appliziert</German>
         <Russian>Вы успешно применили на вашем теле согревающий комплект.</Russian>
       </Key>
       <Key ID="str_player_28">
         <Original>You cannot reload that combination, you need %1 %2 magazines.</Original>
         <English>You cannot reload that combination, you need %1 %2 magazines.</English>
-        <German>You cannot reload that combination, you need %1 %2 magazines.</German>
+        <German>Sie können diese Munition nicht kombinieren, sie brauchen %1 %2 Magazine.</German>
         <Russian>Вы не можете перезарядить эту комбинацию. Вам необходимо иметь магазины %1 %2.</Russian>
       </Key>
       <Key ID="str_player_29">
         <Original>You have successfully reloaded %1 %2 magazines.</Original>
         <English>You have successfully reloaded %1 %2 magazines.</English>
-        <German>You have successfully reloaded %1 %2 magazines.</German>
+        <German>Sie haben erfolgreich %1 %2 Magazine hergestellt.</German>
         <Russian>Магазины %1 %2 перезаряжены.</Russian>
       </Key>
      <Key ID="str_player_30">
         <Original>%1 must be on your person to move it to/from your toolbelt.</Original>
         <English>%1 must be on your person to move it to/from your toolbelt.</English>
-        <German>%1 must be on your person to move it to/from your toolbelt.</German>
+        <German>%1 muss in ihrem Inventar sein um es aus/in ihren Werkzeuggürtel zu packen.</German>
         <Russian>Для перемещения с/на пояс, предмет %1 должен быть у вас.</Russian>
       </Key>
       <Key ID="str_player_31">
@@ -374,25 +374,25 @@
       <Key ID="str_player_beinglooted">
         <Original>%1 is already being looted by someone else.</Original>
         <English>%1 is already being looted by someone else.</English>
-        <German>%1 is already being looted by someone else.</German>
+        <German>%1 wurde von einer anderen Person gelooted.</German>
         <Russian>%1 уже кто-то обыскивает.</Russian>
       </Key>
       <Key ID="str_player_beingpacked">
         <Original>That tent is already being packed.</Original>
         <English>That tent is already being packed.</English>
-        <German>That tent is already being packed.</German>
+        <German>Dieses Zelt wurde bereits eingepackt.</German>
         <Russian>Эту палатку уже упаковывают.</Russian>
       </Key>
 		<Key ID="str_player_studybody">
 			<Original>His name was %1, it appears he died from %2</Original>
 			<English>His name was %1, it appears he died from %2</English>
-			<German>%1 wurde von %2 getötet</German>
+			<German>Sein Name war %1, er ist durch %2 gestorben</German>
 			<Russian>Его звали %1, похоже что он умер от %2</Russian>
 		</Key>
 		<Key ID="str_death_shothead">
 			<Original>a gunshot to the head</Original>
 			<English>a gunshot to the head</English>
-			<German>ein schuss auf den Kopf</German>
+			<German>einen Schuss in den Kopf</German>
 			<Russian>попадания пули в голову</Russian>
 		</Key>
 		<Key ID="str_death_shotheavy">
@@ -404,7 +404,7 @@
 		<Key ID="str_death_bled">
 			<Original>blood loss</Original>
 			<English>blood loss</English>
-			<German>blutverlust</German>
+			<German>hohen Blutverlust</German>
 			<Russian>потери крови</Russian>
 		</Key>
 		<Key ID="str_death_dehyd">
@@ -428,7 +428,7 @@
 		<Key ID="str_death_unknown">
 			<Original>an unknown cause</Original>
 			<English>an unknown cause</English>
-			<German>ein unbekannter Grund</German>
+			<German>einen unbekannten Grund</German>
 			<Russian>неизвестной причины</Russian>
 		</Key>
 	</Package>
@@ -442,7 +442,7 @@
     <Key ID="STR_UI_GENDER_DESC">
 	  <Original>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</Original>
 	  <English>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</English>
-	  <German>Bitte wählen Sie das Geschlecht, die Sie als zu spielen. Ihr Geschlecht wird zu dieser einzigartigen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
+	  <German>Bitte wählen Sie das Geschlecht aus, mit dem sie Spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis sie sterben.</German>
 	  <Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
     </Key>
     <Key ID="STR_UI_GENDER_MALE">
@@ -516,7 +516,7 @@
 		<Key ID="str_actions_medical_02">
 			<Original>Check Pulse</Original>
 			<English>Check Pulse</English>
-			<German>Puls fühlen</German>
+			<German>Puls überprüfen</German>
 			<Russian>Проверить пульс</Russian>
 		</Key>
 		<Key ID="str_actions_medical_03">
@@ -630,8 +630,14 @@
 		<Key ID="str_actions_save">
 			<Original>Save %1</Original>
 			<English>Save %1</English>
-			<German>% Save</German>
+			<German>% speichern</German>
 			<Russian>Сохранить %1</Russian>
+		</Key>
+		<Key ID="str_actions_flipveh">
+			<Original>Turn Over %1</Original>
+			<English>Turn Over %1</English>
+			<German>Turn Over %1</German>
+			<Russian>Turn Over %1</Russian>
 		</Key>
 		<Key ID="STR_CHAR_2">
 			<Original>Bandit</Original>

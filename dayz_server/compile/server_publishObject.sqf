@@ -5,10 +5,12 @@ _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _class = 		_this select 3;
 
-
 if (!(_object isKindOf "Building")) exitWith {
 	deleteVehicle _object;
 };
+_allowed = [_object] call check_publishobject;
+if (!_allowed) exitWith { };
+
 
 //diag_log ("PUBLISH: Attempt " + str(_object));
 

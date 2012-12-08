@@ -82,6 +82,7 @@ _object_damage = {
 			_hit = [_object,_x] call object_getHit;
 			_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 			if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
+			_object setHit ["_selection", _hit]
 		} forEach _hitpoints;
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 		diag_log ("HIVE: WRITE: "+ str(_key));

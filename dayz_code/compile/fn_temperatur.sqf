@@ -19,7 +19,7 @@ Missing:
 */
 
 
-	private ["_looptime","_sun_factor","_building_factor","_vehicle_factor","_fire_factor","_water_factor","_rain_factor","_night_factor","_wind_factor","_difference","_hasfireffect","_isinbuilding","_isinvehicle","_raining","_sunrise","_building"];
+	private["_looptime","_vehicle_factor","_moving_factor","_fire_factor","_rain_factor","_night_factor","_wind_factor","_building_factor","_sun_factor","_water_factor","_difference","_hasfireffect","_isinbuilding","_isinvehicle","_raining","_sunrise","_vel","_speed","_fireplaces","_building","_daytime","_height_mod","_temp"];
 
 	_looptime 			= _this;
 	
@@ -56,7 +56,7 @@ Missing:
 		private["_vel","_speed"];
 		_vel = 		velocity player;
 		_speed = 	round((_vel distance [0,0,0]) * 3.5);
-		_difference = (_moving_factor * (_speed / 20)) min 1;
+		_difference = (_moving_factor * (_speed / 20)) min 7;
 	};
 	
 	//fire
@@ -124,19 +124,29 @@ Missing:
 	
 	//rain
 	if(_raining && !_isinvehicle && !_isinbuilding) then {
-		_difference = _difference + _rain_factor;
+		_difference = _difference + (rain * _rain_factor);
 	};
 	
 	//night
 	private ["_daytime"];
-	if((daytime < _sunrise || daytime < (24 - _sunrise)) && !_isinvehicle && !_isinbuilding) then {
+	if((daytime < _sunrise || daytime > (24 - _sunrise)) && !_isinvehicle) then {
 		_daytime 	= if(daytime < 12) then {daytime + 24} else {daytime};
+		if(_isinbuilding) then {
+			_difference = _difference + ((((_night_factor * -1) / (_sunrise^2)) * ((_daytime - 24)^2) + _night_factor)) / 2;
+		} else {
 		_difference = _difference + (((_night_factor * -1) / (_sunrise^2)) * ((_daytime - 24)^2) + _night_factor);
+	};
 	};
 	
 	//wind
 	if(((wind select 0) > 4 || (wind select 1) > 4) && !_isinvehicle && !_isinbuilding ) then {
 		_difference = _difference + _wind_factor;
+	};
+	
+	//height
+	if (!_isinvehicle && overcast >= 0.6) then {
+		_height_mod = ((getPosASL player select 2) / 100) / 2;
+		_difference = _difference - _height_mod;
 	};
 	
 	//Calculate Change Value			Basic Factor			Looptime Correction			Adjust Value to current used temperatur scala

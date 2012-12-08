@@ -71,6 +71,7 @@ dayz_resetSelfActions = {
 	s_build_Wire_cat1 =		-1;
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
+	s_player_flipveh = 		-1;
 };
 call dayz_resetSelfActions;
 
@@ -191,14 +192,13 @@ if(isnil "dayz_maxLocalZombies") then {
 
 dayz_spawnPos = getPosATL player;
 
-if(isDedicated) then {
-	dayz_disco = [];
-};
 
 if(isServer) then {
+	dayz_disco = [];
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
+	botPlayers = [];
 };
 
 if(!isDedicated) then {

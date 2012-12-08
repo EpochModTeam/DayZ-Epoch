@@ -1,6 +1,6 @@
 private["_item","_config","_onLadder","_create","_isOk","_config2","_consume"];
 _item = 	_this;
-_config =	configFile >> "CfgWeapons" >> _item;
+_config =	configFile >> "cfgWeapons" >> _item;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
@@ -13,11 +13,11 @@ call gear_ui_init;
 
 //Add new item
 _create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 0;
-_config2 = 	configFile >> "CfgWeapons" >> _create;
+_config2 = 	configFile >> "cfgWeapons" >> _create;
 
 //Remove magazines if needed
 if (_item in ["MeleeHatchet","MeleeCrowbar"]) then {
-	_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _item >> "magazines")) select 0;
+	_magType = 	([] + getArray (configFile >> "cfgWeapons" >> _item >> "magazines")) select 0;
 	_meleeNum = ({_x == _magType} count magazines player);
 	for "_i" from 1 to _meleeNum do {
 		player removeMagazine _magType;

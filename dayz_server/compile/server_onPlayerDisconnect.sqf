@@ -15,14 +15,9 @@ if (vehicle _object != _object) then {
 	_object action ["eject", vehicle _object];
 };
 
-if (59 in _playerIDtoarray) exitWith { 	diag_log ("Exited"); };
+if (59 in _playerIDtoarray) exitWith { };
 
 if ((_timeout - time) > 0) then {
-	//_playerName call player_combatLogged;
-	private["_playerName","_center","_group"];
-	_playerName = name player;
-	_timeout = _object getVariable["combattimeout",0];
-
 	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 };
 
@@ -35,6 +30,10 @@ if (!isNull _object) then {
 		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10]);
 	if (alive _object) then {
 		[_object,[],true] call server_playerSync;
+		if ((_timeout - time) > 0) then {
+			// spawn bot, if player in combat mode
+			[_object,_playerID,_characterID,30] spawn disco_playerMorph;	
+		};
 		_id = [_playerID,_characterID,2] spawn dayz_recordLogin;
 		_myGroup = group _object;
 		deleteVehicle _object;

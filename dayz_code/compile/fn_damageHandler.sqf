@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_unit","_hit","_damage","_unconscious","_source","_ammo","_type","_isMinor","_isHeadHit","_inVehicle","_evType","_recordable","_isPlayer","_humanityHit","_myKills","_sourceZombie","_display","_control","_canHitFree","_isBandit","_id","_scale","_wound","_isHit","_rndPain","_rndInfection","_hitPain","_hitInfection","_isInjured","_lowBlood","_isCardiac"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -47,9 +47,6 @@ if (_unit == player) then {
 	if (_hit == "") then {
 		if ((_source != player) and _isPlayer) then {
 		//Enable aggressor Actions
-			if (_source isKindOf "CAManBase") then {
-				_source setVariable["startcombattimer",1];	
-			};
 			_canHitFree = 	player getVariable ["freeTarget",false];
 			_isBandit = 	(typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
@@ -108,11 +105,12 @@ if (_hit in USEC_MinorWounds) then {
 	};
 };
 
-/*
+
 if (_unit == player) then {
-	player sideChat str(_damage);
+//incombat
+	_unit setVariable["startcombattimer", 1, false];	
 };
-*/
+
 if (_damage > 0.1) then {
 	if (_unit == player) then {
 		//shake the cam, frighten them!
@@ -131,7 +129,7 @@ if (_damage > 0.4) then {	//0.25
 	_isHit = _unit getVariable[_wound,false];
 	if (_unit == player) then {	
 		_rndPain = 		(random 10);
-		_rndInfection = (random 1000);
+		_rndInfection = (random 500);
 		_hitPain = 		(_rndPain < _damage);
 		if ((_isHeadHit) or (_damage > 1.2 and _hitPain)) then {
 			_hitPain = true;

@@ -1,4 +1,4 @@
-private["_hasFood","_item","_text","_key"];
+private["_onLadder","_item","_hasfoodmag","_config","_text","_regen","_update","_id","_display","_control","_bloodVal","_ctrlBlood"];
 disableserialization;
 call gear_ui_init;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;

@@ -22,22 +22,21 @@
 
 //Server only
 if (isServer) then {
-	"dayzDeath"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
+	"dayzDeath"      addPublicVariableEventHandler {(_this select 1) call server_playerDied};
 	"dayzDiscoAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
 	"dayzDiscoRem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
 	"dayzPlayerSave"  addPublicVariableEventHandler {(_this select 1) call server_playerSync;};
 	"dayzPublishObj"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
+	"dayzUpdateVehicle" addPublicVariableEventHandler {(_this select 1) call server_updateObject};
+	"dayzDeleteObj"    addPublicVariableEventHandler {(_this select 1) call local_deleteObj};
 	"dayzPublishVeh"	addPublicVariableEventHandler {(_this select 1) call server_publishVeh}; // for vehicle traders
-	// "dayzPublishBank"	addPublicVariableEventHandler {(_this select 1) call server_publishBank};
 	"dayzTraderMenu"	addPublicVariableEventHandler {(_this select 1) call server_traders}; // for all traders
-	"dayzUpdateVehicle" addPublicVariableEventHandler {_id = (_this select 1) spawn server_updateObject};
-	"dayzDeleteObj"		addPublicVariableEventHandler {_id = (_this select 1) spawn local_deleteObj};
 	"dayzLogin"      addPublicVariableEventHandler {(_this select 1) call server_playerLogin};
 	"dayzLogin2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
-	"dayzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
-	"dayzUpdate"		addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_processUpdate};
-	"dayzLoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
-	"dayzCharSave"    addPublicVariableEventHandler {(_this select 1) call server_playerSync};
+//	"dayzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
+//	"dayzUpdate"		addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_processUpdate};
+	"dayzLoginRecord"  addPublicVariableEventHandler {(_this select 1) call dayz_recordLogin};
+//	"dayzCharSave"    addPublicVariableEventHandler {(_this select 1) call server_playerSync};
 	"dayzCharDisco"    addPublicVariableEventHandler {(_this select 1) call server_characterSync};
 };
 
@@ -48,8 +47,7 @@ if (!isDedicated) then {
 	"dayzRoadFlare"		addPublicVariableEventHandler {(_this select 1) spawn object_roadFlare};
 	"norrnRaDrag"   	addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
 	"norrnRnoAnim"  	addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\noAnim.sqf"};
-	"changeCharacter"	addPublicVariableEventHandler {(_this select 1) call player_serverModelChange};
-	"dayzSwitch"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
+//	"changeCharacter"	addPublicVariableEventHandler {(_this select 1) call player_serverModelChange};
+//	"dayzSwitch"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
 	"dayzFire"			addPublicVariableEventHandler {nul=(_this select 1) spawn BIS_Effects_Burn};
-	//"dayz_combatLog"	addPublicVariableEventHandler {nul=(_this select 1) spawn player_combatLogged};
 };

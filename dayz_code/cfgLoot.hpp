@@ -141,13 +141,15 @@ class CfgLoot {
 			"ItemPainkiller",
 			"ItemMorphine",
 			"ItemEpinephrine",
+			"ItemAntibiotic",
 			"ItemHeatPack"
 		},
 		{
-			1,
+			0.8,
 			0.5,
 			0.5,
 			0.2,
+			0.3,
 			0.1
 		}
 	};
@@ -161,12 +163,12 @@ class CfgLoot {
 			"ItemAntibiotic"
 		},
 		{
-			0.43,
+			0.33,
 			0.17,
 			0.13,
 			0.09,
 			0.17,
-			0.02
+			0.12
 		}
 	};
 	military[] = {
@@ -176,6 +178,7 @@ class CfgLoot {
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"ItemBandage",
+			"ItemAntibiotic",
 			"ItemPainkiller",
 			"ItemMorphine",
 			"30Rnd_556x45_Stanag",
@@ -212,6 +215,7 @@ class CfgLoot {
 			0.09,
 			0.01,
 			0.01,
+			0.04,
 			0.04,
 			0.04,
 			0.01,

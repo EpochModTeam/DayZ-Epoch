@@ -1,4 +1,4 @@
-private ["_characterID","_doLoop","_playerID","_playerObj","_randomSpot","_primary","_key","_worldspace","_score","_position","_pos","_isIsland","_medical","_stats","_state","_dummy","_debug","_distance","_hit","_fractures","_w","_findSpot","_humanity","_clientID","_lastinstance"];
+private["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_mkr","_counter","_isNear","_isZero","_pos","_isIsland","_w","_clientID"];
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
 

@@ -9,7 +9,7 @@ disableUserInput true;
 _dialog = findDisplay 106;
 _created = false;
 if ( isNull _dialog ) then { 
-	startLoadingScreen [""];
+	//startLoadingScreen [""];
 createGearDialog [player, "RscDisplayGear"];
 _dialog = 			findDisplay 106;
 	_created = true;
@@ -48,7 +48,7 @@ for "_i" from 122 to 129 do
 };
 if ( _created ) then { 
 closeDialog 0;
-	endLoadingScreen;
+	//endLoadingScreen;
 };
 disableUserInput false;
 dayz_Magazines=_magazineArray;
