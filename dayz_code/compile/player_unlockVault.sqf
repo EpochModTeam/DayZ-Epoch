@@ -11,7 +11,7 @@ player playActionNow "Medic";
 player removeAction s_player_unlockvault;
 s_player_unlockvault = -1;
 
-if(_ownerID == dayz_characterID) then {
+if(_ownerID == dayz_playerUID) then {
 	_alreadyPacking = _obj getVariable["packing",0];
 
 	if (_alreadyPacking == 1) exitWith {cutText ["That vault is already being unlocked." , "PLAIN DOWN"]};

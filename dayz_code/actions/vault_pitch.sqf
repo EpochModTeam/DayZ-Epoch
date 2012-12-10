@@ -54,12 +54,12 @@ if (!_isOk) then {
 	player reveal _tent;
 	
 
-	_tent setVariable ["characterID",dayz_characterID,true];
+	_tent setVariable ["characterID",dayz_playerUID,true];
 	_tent setVariable ["OEMPos",_location,true];
 
 	//player setVariable ["tentUpdate",["Land_A_tent",_dir,_location,[dayz_tentWeapons,dayz_tentMagazines,dayz_tentBackpacks]],true];
 
-	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"VaultStorageLocked"];
+	dayzPublishObj = [dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"];
 	publicVariable "dayzPublishObj";
 	if (isServer) then {
 		dayzPublishObj call server_publishObj;

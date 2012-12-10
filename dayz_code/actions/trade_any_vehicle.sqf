@@ -39,10 +39,10 @@ if (_qty >= _qty_in) then {
 		player reveal _veh;
 		_location = getPosATL _veh;
 	
-		_veh setVariable ["characterID",dayz_characterID,true];
+		_veh setVariable ["characterID",dayz_playerUID,true];
 	
 		// server_publishVeh [_veh,[_dir,_objPosition],_vehicle,true,dayz_characterID]
-		dayzPublishVeh = [_veh,[_dir,_location],_part_out,false,dayz_characterID];
+		dayzPublishVeh = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
 	
 		publicVariable "dayzPublishVeh";
 		if (isServer) then {

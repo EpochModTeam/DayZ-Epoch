@@ -43,7 +43,7 @@ check_publishobject = {
         private["_allowed","_allowedObjects","_object"];
 
         _object = _this select 0;
-        _allowedObjects = ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"];
+        _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"];
 		_noncombatitems = ["ThrownObjects", "RoadFlare", "ChemLight"];
         _allowed = false;
        
