@@ -48,7 +48,6 @@ if (!isDedicated) then {
 	player_throwObject = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_throwObject.sqf";
 	player_alertZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_alertZombies.sqf";
 	player_fireMonitor = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
-	player_tameDog = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_tameDog.sqf";
 	
 	//Objects
 	object_roadFlare = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_roadFlare.sqf";
@@ -58,6 +57,9 @@ if (!isDedicated) then {
 	zombie_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_findTargetAgent.sqf";
 	zombie_loiter = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_loiter.sqf";			//Server compile, used for loiter behaviour
 	zombie_generate = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_generate.sqf";			//Server compile, used for loiter behaviour
+	
+	//Dogs
+	dog_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
 	
 	// Vehicle damage fix
 	vehicle_handleDamage    = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleDamage.sqf";
@@ -223,7 +225,7 @@ if (!isDedicated) then {
 		_btnRespawn ctrlEnable false;
 	};
 	
-	/*
+	
 	dayz_disableAbort = {
 		private["_display","_btnAbort","_combattimeout"];
 		_combattimeout = player getVariable["combattimeout",0];
@@ -236,7 +238,7 @@ if (!isDedicated) then {
 		_btnAbort = _display displayCtrl 104;
 		_btnAbort ctrlEnable false;
 	};
-	*/
+	
 	
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];

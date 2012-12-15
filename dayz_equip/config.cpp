@@ -1034,9 +1034,61 @@ class CfgMagazines
 	class Skin_Rocket_DZ: SkinBase
 	{
 		scope = 2;
-		displayName = "Rocket Suit";
-		descriptionShort = "Rocket Suit";
+		displayName = "Officer Suit";
+		descriptionShort = "Officer Suit";
 	};
+	class Skin_RU_Policeman_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Police Officer Uniform";
+		descriptionShort = "Police Officer Uniform;
+	};
+	class Skin_Pilot_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Pilot Uniform";
+		descriptionShort = "Pilot Uniform;
+	};
+	class Skin_Haris_Press_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Press Uniform";
+		descriptionShort = "Press Uniform;
+	};
+	class Skin_Ins_Soldier_GL_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Terrorist Uniform";
+		descriptionShort = "Terrorist Uniform;
+	};
+	class Skin_GUE_Commander_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Rebel Uniform";
+		descriptionShort = "Rebel Uniform;
+	};
+	class Skin_Functionary1_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Business Suit";
+		descriptionShort = "Rebel Uniform;
+	};
+	class Skin_Priest_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Priest Outfit";
+		descriptionShort = "Rebel Uniform;
+	};
+	class Skin_Rocker2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Rocker Outfit";
+		descriptionShort = "Rebel Uniform;
+	};
+	
+	
+	
+	
 	class Skin_Camo1_DZ: SkinBase
 	{
 		scope = 2;

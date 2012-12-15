@@ -645,5 +645,77 @@
 			<German>Bandit</German>
 			<Russian>Бандит</Russian>
 		</Key>
+		<Key ID="str_actions_tamedog">
+			<Original>Tame Dog</Original>
+			<English>Tame Dog</English>
+			<German>zahmen Hund</German>
+			<Russian>Приручить собаку</Russian>
+		</Key>
+		<Key ID="str_actions_movedog">
+			<Original>Move To</Original>
+			<English>Move To</English>
+			<German></German>
+			<Russian>Иди туда</Russian>
+		</Key>
+		<Key ID="str_actions_speeddog">
+			<Original>Dog: %1</Original>
+			<English>Dog: %1</English>
+			<German></German>
+			<Russian></Russian>
+		</Key>
+		<Key ID="str_actions_calldog">
+			<Original>Call Dog</Original>
+			<English>Call Dog</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_feeddog">
+			<Original>Feed Dog</Original>
+			<English>Feed Dog</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_waterdog">
+			<Original>Water Dog</Original>
+			<English>Water Dog</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_sitdog">
+			<Original>Dog: Sit</Original>
+			<English>Dog: Sit</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_liedog">
+			<Original>Dog: Lie Down</Original>
+			<English>Dog: Lie Down</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_trackdog">
+			<Original>Dog: Track</Original>
+			<English>Dog: Track</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_barkdog">
+			<Original>Dog: Bark</Original>
+			<English>Dog: Bark</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_warndog">
+			<Original>Dog: %1</Original>
+			<English>Dog: %1</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
+		<Key ID="str_actions_followdog">
+			<Original>Dog: Follow</Original>
+			<English>Dog: Follow</English>
+			<German></German>
+			<Russian>Позвать собаку</Russian>
+		</Key>
 	</Package>
 </Project>

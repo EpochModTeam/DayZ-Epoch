@@ -14,9 +14,97 @@ class CfgVehicles {
             class MainTurret: NewTurret
             {
                 class Turrets;
+				class ViewOptics;
             };
         };
 	};
+	
+	class Mi17_base: Helicopter 
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics {};
+				class Turrets: Turrets {};
+			};
+			class BackTurret: MainTurret
+			{
+				class Turrets: Turrets {};
+			};
+		};
+	};
+	
+	class Mi17_DZ: Mi17_base	
+	{
+		displayName = "Mi17_DZ";
+		scope = 2;
+		side = 2;
+		crew = "";
+		maxSpeed = 180;	// max speed on level road, km/h
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {"100Rnd_762x54_PK"};
+			};
+			class BackTurret : BackTurret
+			{
+				magazines[] = {"100Rnd_762x54_PK"};
+			};
+		};
+	};
+	
+	class UH1H_base: Helicopter 
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics {};
+				class Turrets: Turrets {};
+			};
+			class LeftDoorGun: MainTurret
+			{
+				class Turrets: Turrets {};
+			};
+		};
+	};
+	
+	class UH1H_DZ: UH1H_base
+	{
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+			class LeftDoorGun : LeftDoorGun
+			{
+				magazines[] = {"100Rnd_762x51_M240"};
+			};
+		};
+	};
+	
 	class Animal;
 	class Pastor;
 	class Fin;
@@ -61,12 +149,23 @@ class CfgVehicles {
 	};
 	class DZ_Pastor : Pastor {
 		scope = 2;
+		side = 1;
 		model = "\ca\animals2\Dogs\Pastor\Pastor";
 		displayName = "Alsatian";
 		moves = "CfgMovesDogDZ";
 		gestures = "CfgGesturesDogDZ";
 		fsmDanger = "";
 		fsmFormation = "";
+		agentTasks[] = {};
+		woman = 0;
+		class EventHandlers{};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {};
+		};
+		class VariablesScalar {};
+		class VariablesString {};
 	};
 	
 	class DZ_Fin : Fin {
@@ -96,7 +195,7 @@ class CfgVehicles {
 
 	class BAF_Soldier_Officer_W;
 	class Rocket_DZ: BAF_Soldier_Officer_W {
-		displayName = "Rocket";
+		displayName = "Officer";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -106,6 +205,105 @@ class CfgVehicles {
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
+	class RU_Policeman;
+	class RU_Policeman_DZ: RU_Policeman {
+		displayName = "Policeman";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Pilot_EP1;
+	class Pilot_EP1_DZ: Pilot_EP1 {
+		displayName = "Pilot";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Haris_Press_EP1;
+	class Haris_Press_EP1_DZ: Haris_Press_EP1 {
+		displayName = "Press";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Ins_Soldier_GL;
+	class Ins_Soldier_GL_DZ: Ins_Soldier_GL {
+		displayName = "Terrorist";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class GUE_Commander;
+	class GUE_Commander_DZ: GUE_Commander {
+		displayName = "Rebel";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Functionary1_EP1;
+	class Functionary1_EP1_DZ: Functionary1_EP1 {
+		displayName = "Business Suit";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Priest;
+	class Priest_DZ: Priest {
+		displayName = "Priest Outfit";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Rocker2;
+	class Rocker2_DZ: Rocker2 {
+		displayName = "Rocker Outfit";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	
+	
+	
 	class BAF_Soldier_W;
 	class Soldier1_DZ: BAF_Soldier_W {
 		displayName = "Soldier";
@@ -198,108 +396,6 @@ class CfgVehicles {
 		transportMaxWeapons = 6;
 		transportMaxMagazines = 24;
 	};
-	class UH1H_base;
-	class UH1H_DZ: UH1H_base
-	{
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-	};
-
-	class Mi17_base : Helicopter 
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				minElev = -80;
-				maxElev = 25;
-				initElev = -80;
-				minTurn = 30;
-				maxTurn = 150;
-				initTurn = 90;
-				class ViewOptics {
-					initAngleX = 0;
-					minAngleX = -30;
-					maxAngleX = 30;
-					initAngleY = 0;
-					minAngleY = -100;
-					maxAngleY = 100;
-					initFov = 0.7;
-					minFov = 0.25;
-					maxFov = 1.1;
-				};
-				class Turrets: Turrets {};
-			};
-			class BackTurret : MainTurret
-			{
-				minElev = -80;
-				maxElev = 25;
-				initElev = -80;
-				minTurn = -185;
-				maxTurn = -45;
-				initTurn = -155;
-				class Turrets: Turrets {};
-			};
-		};
-	};
-	class Mi17_DZ: Mi17_base	
-	{
-		displayName = "Mi17_DZ";
-		scope = 2;
-		side = 2;
-		crew = "";
-		maxSpeed = 180;	// max speed on level road, km/h
-		typicalCargo[] = {};
-		hiddenSelectionsTextures[] = {"\ca\air_E\Data\mi17_body_IND_CO.paa", "\ca\air_E\Data\mi17_det_IND_CO.paa", "\ca\air\data\clear_empty.paa", "\ca\air\data\mi8_decals_ca.paa"};
-		class Turrets : Turrets {
-			class FrontTurret : MainTurret {
-				weapons[] = {PKT_2};
-				magazines[] = {"100Rnd_762x54_PK"};
-			};
-			class BackTurret : BackTurret {
-				weapons[] = {PKT_2};
-				magazines[] = {"100Rnd_762x54_PK"};
-			};
-		};
-		class AnimationSources : AnimationSources {
-			class ReloadAnim {
-				source = "reload";
-				weapon = PKT;
-			};
-			class ReloadMagazine {
-				source = "reloadmagazine";
-				weapon = PKT;
-			};
-			class Revolving {
-				source = "revolving";
-				weapon = PKT;
-			};
-			class ReloadAnim_2 {
-				source = "reload";
-				weapon = PKT_2;
-			};
-			class ReloadMagazine_2 {
-				source = "reloadmagazine";
-				weapon = PKT_2;
-			};
-			class Revolving_2 {
-				source = "revolving";
-				weapon = PKT_2;
-			};
-		};
-		gunnerHasFlares = false;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-	};
 	//An2_TK_EP1
 	class An2_Base_EP1;
 	class AN2_DZ: An2_Base_EP1
@@ -347,7 +443,11 @@ class CfgVehicles {
 	class House {
 		class DestructionEffects;
 	};
-	class UH1Wreck_DZ: House
+	
+	// This parent class is made to make referring to these objects easier later with allMissionObjects
+	class SpawnableWreck : House {};
+
+	class UH1Wreck_DZ: SpawnableWreck
 	{
 		model = "\ca\air2\UH1Y\UH1Y_Crashed.p3d";
 		icon = "\ca\air2\data\UI\icon_UH1Y_CA.paa";

@@ -1,41 +1,22 @@
-private["_obj","_type","_config","_positions","_lootChance","_itemType","_itemChance","_iPos2","_rnd","_nearBy","_weights","_index","_iArray","_item"];
+private ["_obj","_type","_config","_positions","_iPos","_nearBy","_itemType","_itemTypes","_lootChance","_weights","_cntWeights","_index"];
 _obj = 			_this select 0;
 _type = 		typeOf _obj;
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
 _positions =	 [] + getArray (_config >> "lootPos");
-//diag_log ("LOOTSPAWN: READ:" + str(_type));
+_itemTypes =	[] + getArray (_config >> "itemType");
 _lootChance =	getNumber (_config >> "lootChance");
-_itemType =		 [] + getArray (_config >> "itemType");
-//diag_log ("LOOTSPAWN: READ:" + str(_itemType));
-_itemChance =	 [] + getArray (_config >> "itemChance");	
-//diag_log ("LOOTSPAWN: Type " + str(count _itemType) + " / Chance " + str(count _itemChance));
-//diag_log ("I want to spawn loot...");
 {
-	private["_iPos2"];
-	_iPos2 = _obj modelToWorld _x;
-	_rnd = random 1;
-	//Place something at each position
-	if (player distance _iPos2 > 5) then {
-		if (_rnd < _lootChance) then {
-		//if (true) then {	
-			_nearBy = nearestObjects [_iPos2, ["WeaponHolder","WeaponHolderBase"],1];
+	if ((random 1) < _lootChance) then {
+		_iPos = _obj modelToWorld _x;
+		_nearBy = nearestObjects [_iPos, ["WeaponHolder","WeaponHolderBase"], 1];
 			if (count _nearBy == 0) then {
-				private["_index","_iArray"];
-				_weights = [_itemType,_itemChance] call fnc_buildWeightedArray;
-				_index = _weights call BIS_fnc_selectRandom;
-				//diag_log ("LOOTSPAWN: _itemType:" + str(_itemType));
-				//diag_log ("LOOTSPAWN: _index:" + str(_index));
-				if (_index >= 0) then {
-					_iArray = +(_itemType select _index);
-					// diag_log ("LOOTSPAWN: _iArray" + str(_iArray));
-					_iArray set [2,_iPos2];
-					_iArray set [3,0];
-					_iArray call spawn_loot;
-					_iArray = [];
-				//diag_log ("LOOTSPAWN");
-				};
-				_item setVariable ["created",(DateToNumber date),true];
-			};
+			_index = dayz_CBLCounts find (count _itemTypes);
+			_weights = dayz_CBLChances select _index;
+			_cntWeights = count _weights;
+			_index = floor(random _cntWeights);
+			_index = _weights select _index;
+			_itemType = _itemTypes select _index;
+			[_itemType select 0, _itemType select 1 , _iPos, 0.0]  call spawn_loot;
 		};
 	};
 } forEach _positions;

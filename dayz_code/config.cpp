@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.D1207";
+		version = "1.7.5.D1210";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -218,6 +218,7 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] = {
+			{ "WeaponHolder_ItemGenerator","object" },
 			{ "","generic" },
 			{ "","trash" },
 			{ "","military" },
@@ -235,6 +236,7 @@ class CfgBuildingLoot {
 			{"ItemTankTrap","magazine"}
 	};
 		itemChance[] =	{
+			0.01,
 			0.18,
 			0.29,
 			0.04,

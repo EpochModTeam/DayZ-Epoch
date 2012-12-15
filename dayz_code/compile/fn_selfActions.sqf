@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private["_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_allFixed","_hitpoints","_damage","_part","_cmpt","_color","_string","_handle","_trader_id","_category","_buy","_sell","_buy2","_sell2","_buy3","_sell3","_buy1","_sell1","_buy4","_sell4","_buy5","_sell5","_zparts1","_zparts2","_zparts3","_zparts4","_zparts5","_zparts6","_zparts7","_metals1","_metals2","_metals4","_metals3"];
+private["_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_allFixed","_hitpoints","_damage","_part","_cmpt","_color","_string","_handle","_trader_id","_category","_buy","_buy2","_buy3","_buy1","_buy4","_buy5","_cantrader","_cantrader1","_buy6","_zparts1","_zparts2","_zparts3","_zparts4","_metals1","_metals2","_metals4","_metals3","_metals5","_dogHandle","_lieDown","_warn"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -50,6 +50,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_traderType = typeOf cursorTarget;
 	_ownerID = cursorTarget getVariable ["characterID","0"];
 	_isAnimal = cursorTarget isKindOf "Animal";
+	_isDog =  (cursorTarget isKindOf "DZ_Pastor" || cursorTarget isKindOf "DZ_Fin");
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
@@ -300,8 +301,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_cantrader = player addAction ["Trade 3 Empty Soda Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda","Bio Meat"], 99, true, true, "",""];
-			_cantrader1 = player addAction ["Trade 3 Empty Tin Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Can","Bio Meat"], 99, true, true, "",""];
+			_cantrader = player addAction ["Trade 3 Empty Soda Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar"], 99, true, true, "",""];
+			_cantrader1 = player addAction ["Trade 3 Empty Tin Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar"], 99, true, true, "",""];
 			
 			_buy = player addAction ["Food and Drinks", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[51,"Food and Drinks"], 99, true, false, "",""];
 			_buy2 = player addAction ["Backpacks", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[52,"Backpacks"], 97, true, false, "",""];
@@ -346,18 +347,38 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 	};
 
+	
+	//boat_trader_1
+	if (_isMan and _traderType == boat_trader) then {
+		
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy = player addAction ["Boats Unarmed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[49,"Boats Unarmed"], 97, true, false, "",""];
+			_buy1 = player addAction ["Boats Armed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[499,"Boats Armed"], 96, true, false, "",""];
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_buy1];
+			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+	
 	//auto_trader_1
 	if (_isMan and _traderType == auto_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Car", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[41,"Car"], 99, true, false, "",""];
-			_buy1 = player addAction ["Truck", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[42,"Truck"], 97, true, false, "",""];
-			_buy5 = player addAction ["Utility", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[46,"Utility"], 95, true, false, "",""];
-			_buy2 = player addAction ["Offroad", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[43,"Offroad"], 93, true, false, "",""];
-			_buy3 = player addAction ["Helicopter", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[44,"Helicopter"], 91, true, false, "",""];
-			_buy4 = player addAction ["Military", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[45,"Military"], 89, true, false, "",""];
+			_buy = player addAction ["Cars", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[41,"Cars"], 99, true, false, "",""];
+			_buy1 = player addAction ["Trucks Unarmed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[42,"Truck Unarmed"], 97, true, false, "",""];
+			_buy2 = player addAction ["SUV", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[466,"SUV"], 95, true, false, "",""];
+			_buy3 = player addAction ["Buses and Vans", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[467,"Buses and Vans"], 95, true, false, "",""];
+			_buy4 = player addAction ["Offroad", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[43,"Offroad"], 93, true, false, "",""];
+			_buy5 = player addAction ["Helicopter Unarmed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[44,"Helicopter"], 91, true, false, "",""];
+			_buy6 = player addAction ["Military Unarmed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[45,"Military Unarmed"], 89, true, false, "",""];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_buy1];
@@ -365,7 +386,37 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			s_player_parts set [count s_player_parts,_buy3];
 			s_player_parts set [count s_player_parts,_buy4];
 			s_player_parts set [count s_player_parts,_buy5];
+			s_player_parts set [count s_player_parts,_buy6];
 			
+			s_player_parts_crtl = 1;
+		};
+
+	};
+
+
+	//auto_trader_2
+	if (_isMan and _traderType == auto_trader_2) then {
+		
+		if (s_player_parts_crtl < 0) then {
+
+			// [_trader_id, _category, ];
+			_buy = player addAction ["Muscle Cars", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[411,"Muscle Cars"], 99, true, false, "",""];
+			_buy1 = player addAction ["Trucks Armed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[422,"Truck Armed"], 97, true, false, "",""];
+			_buy2 = player addAction ["Utility", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[46,"Utility"], 95, true, false, "",""];
+			_buy3 = player addAction ["Helicopter Armed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[444,"Helicopter"], 91, true, false, "",""];
+			_buy4 = player addAction ["Military Armed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[455,"Military Armed"], 89, true, false, "",""];
+			_buy5 = player addAction ["Fuel Trucks", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[47,"Fuel Trucks"], 88, true, false, "",""];
+			_buy6 = player addAction ["Heavy Armor Unarmed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[48,"Heavy Armor Unarmed"], 88, true, false, "",""];
+			
+			
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts set [count s_player_parts,_buy1];
+			s_player_parts set [count s_player_parts,_buy2];
+			s_player_parts set [count s_player_parts,_buy3];
+			s_player_parts set [count s_player_parts,_buy4];
+			s_player_parts set [count s_player_parts,_buy5];
+			s_player_parts set [count s_player_parts,_buy6];
+
 			s_player_parts_crtl = 1;
 		};
 
@@ -377,7 +428,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 			
 			// [part_out, part_in, qty_out, qty_in,];
-			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items.sqf",["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat"], 99, true, true, "",""];
+			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat"], 99, true, true, "",""];
 			_zparts2 = player addAction ["Medical Supplies", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[31,"Medical Supplies"], 97, true, false, "",""];
 			_zparts3 = player addAction ["Chem-lites/Flares", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[32,"Chem-lites/Flares"], 95, true, false, "",""];
 			_zparts4 = player addAction ["Smoke Grenades", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[33,"Smoke Grenades"], 93, true, false, "",""];
@@ -397,11 +448,11 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 			
 			// [part_out, part_in, qty_out, qty_in,];
-			_metals1 = player addAction ["Trade 6 Copper for 1 Silver", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemSilverBar","ItemCopperBar",1,6,"buy","Copper","Silver"], 99, true, true, "",""];
-			_metals2 = player addAction ["Trade 1 Silver for 6 Copper", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemCopperBar","ItemSilverBar",6,1,"buy","Silver","Copper"], 98, true, true, "",""];
-			_metals4 = player addAction ["Trade 6 Silver for 1 Gold", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemGoldBar","ItemSilverBar",1,6,"buy","Silver","Gold"], 97, true, true, "",""];
-			_metals3 = player addAction ["Trade 1 Gold for 6 Silver", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemSilverBar","ItemGoldBar",6,1,"buy","Gold","Silver"], 97, true, true, "",""];
-			_metals5 = player addAction ["Buy Vault for 12 Gold", "\z\addons\dayz_code\actions\trade_items.sqf",["ItemVault","ItemGoldBar",1,12,"buy","Gold","Vault"], 96, true, true, "",""];
+			_metals1 = player addAction ["Trade 6 Copper for 1 Silver", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemSilverBar","ItemCopperBar",1,6,"buy","Copper","Silver"], 99, true, true, "",""];
+			_metals2 = player addAction ["Trade 1 Silver for 6 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","ItemSilverBar",6,1,"buy","Silver","Copper"], 98, true, true, "",""];
+			_metals4 = player addAction ["Trade 6 Silver for 1 Gold", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemGoldBar","ItemSilverBar",1,6,"buy","Silver","Gold"], 97, true, true, "",""];
+			_metals3 = player addAction ["Trade 1 Gold for 6 Silver", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemSilverBar","ItemGoldBar",6,1,"buy","Gold","Silver"], 97, true, true, "",""];
+			_metals5 = player addAction ["Buy Vault for 12 Gold", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemVault","ItemGoldBar",1,12,"buy","Gold","Vault"], 96, true, true, "",""];
 			
 			s_player_parts set [count s_player_parts,_metals1];
 			s_player_parts set [count s_player_parts,_metals2];
@@ -422,6 +473,59 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_studybody = -1;
 	};
 		
+	//Dog
+	if (_isDog and _isAlive and _hasRawMeat and _canDo and _ownerID == "0" and player getVariable ["dogID", 0] == 0) then {
+		if (s_player_tamedog < 0) then {
+			s_player_tamedog = player addAction [localize "str_actions_tamedog", "\z\addons\dayz_code\actions\tame_dog.sqf", cursorTarget, 1, false, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_tamedog;
+		s_player_tamedog = -1;
+	};
+	
+	if (_isDog and _ownerID == dayz_characterID and _isAlive and _canDo) then {
+		_dogHandle = player getVariable ["dogID", 0];
+		if (s_player_feeddog < 0 and _hasRawMeat) then {
+			s_player_feeddog = player addAction [localize "str_actions_feeddog","\z\addons\dayz_code\actions\dog\feed.sqf",[_dogHandle,0], 0, false, true,"",""];
+		};
+		if (s_player_waterdog < 0 and "ItemWaterbottle" in magazines player) then {
+			s_player_waterdog = player addAction [localize "str_actions_waterdog","\z\addons\dayz_code\actions\dog\feed.sqf",[_dogHandle,1], 0, false, true,"",""];
+		};
+		if (s_player_staydog < 0) then {
+			_lieDown = _dogHandle getFSMVariable "_actionLieDown";
+			if (_lieDown) then { _text = "str_actions_liedog"; } else { _text = "str_actions_sitdog"; };
+			s_player_staydog = player addAction [localize _text,"\z\addons\dayz_code\actions\dog\stay.sqf", _dogHandle, 5, false, true,"",""];
+		};
+		if (s_player_trackdog < 0) then {
+			s_player_trackdog = player addAction [localize "str_actions_trackdog","\z\addons\dayz_code\actions\dog\track.sqf", _dogHandle, 4, false, true,"",""];
+		};
+		if (s_player_barkdog < 0) then {
+			s_player_barkdog = player addAction [localize "str_actions_barkdog","\z\addons\dayz_code\actions\dog\speak.sqf", cursorTarget, 3, false, true,"",""];
+		};
+		if (s_player_warndog < 0) then {
+			_warn = _dogHandle getFSMVariable "_watchDog";
+			if (_warn) then { _text = "Quiet"; _warn = false; } else { _text = "Alert"; _warn = true; };
+			s_player_warndog = player addAction [format[localize "str_actions_warndog",_text],"\z\addons\dayz_code\actions\dog\warn.sqf",[_dogHandle, _warn], 2, false, true,"",""];		
+		};
+		if (s_player_followdog < 0) then {
+			s_player_followdog = player addAction [localize "str_actions_followdog","\z\addons\dayz_code\actions\dog\follow.sqf",[_dogHandle,true], 6, false, true,"",""];
+		};
+	} else {
+		player removeAction s_player_feeddog;
+		s_player_feeddog = -1;
+		player removeAction s_player_waterdog;
+		s_player_waterdog = -1;
+		player removeAction s_player_staydog;
+		s_player_staydog = -1;
+		player removeAction s_player_trackdog;
+		s_player_trackdog = -1;
+		player removeAction s_player_barkdog;
+		s_player_barkdog = -1;
+		player removeAction s_player_warndog;
+		s_player_warndog = -1;
+		player removeAction s_player_followdog;
+		s_player_followdog = -1;
+	};
 } else {
 	//Engineering
 	{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];

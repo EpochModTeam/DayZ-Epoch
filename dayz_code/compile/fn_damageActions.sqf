@@ -14,6 +14,31 @@ _isClose = ((player distance _menClose) < ((sizeOf typeOf _menClose) / 2));
 _bag = unitBackpack player;
 _classbag = typeOf _bag;
 
+if (_inVehicle) then {
+	r_player_lastVehicle = _vehicle;
+	_assignedRole = assignedVehicleRole player;
+	if (str (_assignedRole) != str (r_player_lastSeat)) then {
+		call r_player_removeActions2;
+	};
+	if (!r_player_unconscious && !r_action2) then {
+		r_player_lastSeat = _assignedRole;
+		if (count _assignedRole > 1) then {
+			_turret = _assignedRole select 1;
+			_weapons = _vehicle weaponsTurret _turret;
+			{
+				_weaponName = getText (configFile >> "cfgWeapons" >> _x >> "displayName");
+				_action = _vehicle addAction [format["Add AMMO to %1",_weaponName], "\z\addons\dayz_code\actions\ammo.sqf",[_vehicle,_x,_turret], 0, false, true];
+				r_player_actions2 set [count r_player_actions2,_action];
+				r_action2 = true;
+			} forEach _weapons;
+		};
+	};
+} else {
+	call r_player_removeActions2;
+	r_player_lastVehicle = objNull;
+	r_player_lastSeat = [];
+};
+
 if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
 	_unit = 		cursorTarget;
 	player reveal _unit;

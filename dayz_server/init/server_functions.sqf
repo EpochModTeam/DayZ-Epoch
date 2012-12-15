@@ -15,23 +15,16 @@ server_updateObject =		compile preprocessFileLineNumbers "\z\addons\dayz_server\
 server_playerDied =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
 server_publishObj = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";
 server_publishVeh = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishVehicle.sqf"; // Custom to add vehicles
-server_traders = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_traders.sqf";
+
+server_tradeObj = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_tradeObject.sqf";
+
+server_traders = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_traders.sqf";
 local_publishObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_publishObj.sqf";		//Creates the object in DB
 local_deleteObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_deleteObj.sqf";		//Creates the object in DB
 local_createObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_createObj.sqf";		//Creates the object in DB
 server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
-//server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
-disco_playerMorph =     compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerMorph.sqf";	
-disco_damageHandler =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_damageHandler.sqf";
-disco_playerDeath  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerDeath.sqf";
-
-server_waitForBotFinished = {
-	private ["_playerId"];
-	_playerID = _this select 0;
-	waituntil{sleep 1; !(_playerID in botPlayers)};
-	_this call server_playerLogin;	
-};
+server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 
 vehicle_handleInteract = {
 	private["_object"];
@@ -141,51 +134,33 @@ if(isnil "HeliCrashArea") then {
 
 
 spawn_heliCrash = {
-	private["_position","_veh","_num","_config","_itemType","_itemChance","_weights","_index","_iArray"];
+	private["_position","_veh","_config","_itemType","_itemTypes","_weights","_cntWeights","_index","_num","_i"];
 	
-	waitUntil{!isNil "BIS_fnc_selectRandom"};
-	if (isDedicated) then {
 	_position = [getMarkerPos "center",0,HeliCrashArea,10,0,2000,0] call BIS_fnc_findSafePos;
 	_veh = createVehicle ["UH1Wreck_DZ",_position, [], 0, "CAN_COLLIDE"];
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_veh];
 	_veh setVariable ["ObjectID",1,true];
 	dayzFire = [_veh,2,time,false,false];
 	publicVariable "dayzFire";
-	if (isServer) then {
-		nul=dayzFire spawn BIS_Effects_Burn;
-	};
-	_num = round(random 4) + 3;
+	
 	_config = 		configFile >> "CfgBuildingLoot" >> "HeliCrash";
-	_itemType =		[] + getArray (_config >> "itemType");
-	//diag_log ("DW_DEBUG: _itemType: " + str(_itemType));	
-	_itemChance =	[] + getArray (_config >> "itemChance");
-	//diag_log ("DW_DEBUG: _itemChance: " + str(_itemChance));	
-	//diag_log ("DW_DEBUG: (isnil fnc_buildWeightedArray): " + str(isnil "fnc_buildWeightedArray"));	
-	
-	waituntil {!isnil "fnc_buildWeightedArray"};
-	
-	_weights = [];
-	_weights = 		[_itemType,_itemChance] call fnc_buildWeightedArray;
-	//diag_log ("DW_DEBUG: _weights: " + str(_weights));	
-	for "_x" from 1 to _num do {
+	_itemTypes =	[] + getArray (_config >> "itemType");
+	_index =		dayz_CBLCounts find (count _itemTypes);
+	_weights =		dayz_CBLChances select _index;
+	_cntWeights = count _weights;
+	_num = round(random 4) + 3;
+	for "_i" from 1 to _num do {
 		//create loot
-		_index = _weights call BIS_fnc_selectRandom;
-		sleep 1;
-		if (count _itemType > _index) then {
-			//diag_log ("DW_DEBUG: " + str(count (_itemType)) + " select " + str(_index));
-			_iArray = _itemType select _index;
-			_iArray set [2,_position];
-			_iArray set [3,5];
-			_iArray call spawn_loot;
-			_nearby = _position nearObjects ["WeaponHolder",20];
-			{
-				_x setVariable ["permaLoot",true];
-			} forEach _nearBy;
-		};
-	};
+		_index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_itemType = _itemTypes select _index;
+		[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
+		_nearby = _position nearObjects ["WeaponHolder", 5];
+		{
+			_x setVariable ["permaLoot",true];
+		} forEach _nearBy;
 	};
 };
-
 
 
 
@@ -282,10 +257,6 @@ spawn_vehicles = {
 			clearWeaponCargoGlobal  _veh;
 			clearMagazineCargoGlobal  _veh;
 
-			_veh setVehicleInit "this lock true; this lockCargo true;";
-			processInitCommands;
-
-			
 			[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;
 		};
 	};

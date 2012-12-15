@@ -36,12 +36,6 @@ if (_playerID == "") then {
 if ((_playerID == "") or (isNil "_playerID")) exitWith {
 	diag_log ("LOGIN FAILED: Player [" + _playerName + "] has no login ID");
 };
-// spawn a waituntil if bot still on server, then run server_playerLogin later again 
-_botActive = _playerID in botPlayers;
-if (_botActive) then { _this spawn server_waitForBotFinished;};
-if (_botActive) exitWith{};
-penaltyTimeout = false;
-(owner _playerObj) publicVariableClient "penaltyTimeout";
 
 //??? endLoadingScreen;
 diag_log ("LOGIN ATTEMPT: " + str(_playerID) + " " + _playerName);
@@ -86,7 +80,7 @@ if (!_isNew) then {
 	_model =		_primary select 7;
 	_hiveVer =		_primary select 8;
 	
-	if (!(_model in ["SurvivorW2_DZ","Survivor2_DZ","Sniper1_DZ","Soldier1_DZ","Rocket_DZ","Camo1_DZ","BanditW1_DZ","Bandit1_DZ","SurvivorW2_DZ"])) then {
+	if (!(_model in ["SurvivorW2_DZ","Survivor2_DZ","Sniper1_DZ","Soldier1_DZ","Rocket_DZ","Camo1_DZ","BanditW1_DZ","Bandit1_DZ","SurvivorW2_DZ","Rocker2_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ"])) then {
 		_model = "Survivor2_DZ";
 	};
 	

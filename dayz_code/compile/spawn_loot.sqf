@@ -1,28 +1,25 @@
-private["_itemType","_weights","_iItem","_iClass","_iPos","_radius","_item","_arrayLootSpawn","_qty","_max","_tQty","_indexLootSpawn","_canType","_mags","_ipos"];
-// [_itemType,_weights]
+private["_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights","_dateNow"];
 _iItem = 	_this select 0;
 _iClass = 	_this select 1;
 _iPos =		_this select 2;
 _radius =	_this select 3;
+
 switch (_iClass) do {
 	default {
 		//Item is food, add random quantity of cans along with an item (if exists)
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-		_arrayLootSpawn = [] + getArray (configFile >> "cfgLoot" >> _iClass);
-		_itemType = _arrayLootSpawn select 0;
-		_weights = _arrayLootSpawn call fnc_buildWeightedArray;
+
+		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+		_index = dayz_CLBase find _iClass;
+		_weights = dayz_CLChances select _index;
+		_cntWeights = count _weights;
 		_qty = 0;
 		_max = ceil(random 2) + 1;
-		//diag_log ("LOOTSPAWN: QTY: " + str(_max) + " ARRAY: " + str(_arrayLootSpawn));
 		while {_qty < _max} do {
-			private["_tQty","_indexLootSpawn","_canType"];
-			_tQty = floor(random 1) + 1;
-			//diag_log ("LOOTSPAWN: ITEM QTY: " + str(_tQty));
-			
-			_indexLootSpawn = _weights call BIS_fnc_selectRandom;
-			_canType = _itemType select _indexLootSpawn;
-			
-			//diag_log ("LOOTSPAWN: ITEM: " + str(_canType));
+			_tQty = round(random 1) + 1;
+			_index = floor(random _cntWeights);
+			_index = _weights select _index;
+			_canType = _itemTypes select _index;
 			_item addMagazineCargoGlobal [_canType,_tQty];
 			_qty = _qty + _tQty;
 		};
@@ -35,8 +32,8 @@ switch (_iClass) do {
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
-		if (count _mags > 0) then {
-			_item addMagazineCargoGlobal [(_mags select 0),(round(random 1))];
+		if ((count _mags) > 0) then {
+			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
 		};
 	};
 	case "magazine": {
@@ -49,6 +46,11 @@ switch (_iClass) do {
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
 	};
 };
-if (count _iPos > 2) then {
-	_item setPosATL _ipos;
+
+// timestamp for later clearing
+_dateNow = (DateToNumber date);
+_item setVariable ["looted",_dateNow,true];
+
+if ((count _iPos) > 2) then {
+	_item setPosATL _iPos;
 };

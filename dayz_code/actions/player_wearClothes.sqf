@@ -40,6 +40,31 @@ switch (_item) do {
 	case "Skin_Rocket_DZ": {
 		_model = "Rocket_DZ";
 	};
+	case "Skin_RU_Policeman_DZ": {
+		_model = "RU_Policeman_DZ";
+	};
+	case "Skin_Pilot_EP1_DZ": {
+		_model = "Pilot_EP1_DZ";
+	};
+	case "Skin_Haris_Press_EP1_DZ": {
+		_model = "Haris_Press_EP1_DZ";
+	};
+	case "Skin_Ins_Soldier_GL_DZ": {
+		_model = "Ins_Soldier_GL_DZ";
+	};
+	case "Skin_GUE_Commander_DZ": {
+		_model = "GUE_Commander_DZ";
+	};
+	case "Skin_Functionary1_EP1_DZ": {
+		_model = "Functionary1_EP1_DZ";
+	};
+	case "Skin_Priest_DZ": {
+		_model = "Priest_DZ";
+	};
+	case "Skin_Rocker2_DZ": {
+		_model = "Rocker2_DZ";
+	};
+	
 	case "Skin_Soldier1_DZ": {
 		_model = "Soldier1_DZ";
 	};

@@ -30,10 +30,6 @@ if (!isNull _object) then {
 		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10]);
 	if (alive _object) then {
 		[_object,[],true] call server_playerSync;
-		if ((_timeout - time) > 0) then {
-			// spawn bot, if player in combat mode
-			[_object,_playerID,_characterID,30] spawn disco_playerMorph;	
-		};
 		_id = [_playerID,_characterID,2] spawn dayz_recordLogin;
 		_myGroup = group _object;
 		deleteVehicle _object;

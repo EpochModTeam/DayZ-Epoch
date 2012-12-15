@@ -11,7 +11,7 @@ _category = (_this select 3) select 1;
 diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
 
 dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
-publicVariable "dayzTraderMenu";
+publicVariableServer "dayzTraderMenu";
 if (isServer) then {
 	dayzTraderMenu call server_traders;
 };
@@ -95,7 +95,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	
 	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];	
 	_Display = format["Sell %1 for %2 %3", _textPart, _sqty, _textCurrency];
-	_part = player addAction [_Display, _File,[_sname,_name,_out,_in,"sell",_textPart,_textCurrency], _order, true, true, "",""];
+	_part = player addAction [_Display, _File,[_sname,_name,_out,_in,"sell",_textPart,_textCurrency,_header], _order, true, true, "",""];
 
 	diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];

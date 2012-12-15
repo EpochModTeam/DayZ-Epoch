@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_hit","_damage","_unconscious","_source","_ammo","_type","_isMinor","_isHeadHit","_inVehicle","_evType","_recordable","_isPlayer","_humanityHit","_myKills","_sourceZombie","_display","_control","_canHitFree","_isBandit","_id","_scale","_wound","_isHit","_rndPain","_rndInfection","_hitPain","_hitInfection","_isInjured","_lowBlood","_isCardiac"];
+private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -46,7 +46,20 @@ if (_isPlayer) then {
 if (_unit == player) then {
 	if (_hit == "") then {
 		if ((_source != player) and _isPlayer) then {
+			//Dog defends player if within 50meters
+			_listTalk = _pos nearEntities [["DZ_Fin, DZ_Pastor"], 100];
+			{
+				if (_x getVariable ["characterID", "0"] == dayz_characterID) then {
+					_targets = _x getVariable ["targets",[]];
+					_targets set [count _targets, _source]; 
+					_x setVariable ["targets", _targets, true];
+				};
+			}foreach _listTalk;
+			
 		//Enable aggressor Actions
+			if (_source isKindOf "CAManBase") then {
+				_source setVariable["startcombattimer",1];	
+			};
 			_canHitFree = 	player getVariable ["freeTarget",false];
 			_isBandit = 	(typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {

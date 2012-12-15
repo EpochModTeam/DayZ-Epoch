@@ -1,4 +1,4 @@
-private["_unit","_vehicle","_targets","_move","_rnd","_wound","_dir","_hpList","_hp","_damage","_chance","_strH","_dam","_total","_result","_tPos","_zPos","_inAngle","_cantSee","_isZombieInside","_building","_isPlayerInside"];
+private["_unit","_vehicle","_targets","_move","_rnd","_wound","_type","_dir","_hpList","_hp","_damage","_chance","_strH","_dam","_total","_result","_tPos","_zPos","_inAngle","_cantSee","_isZombieInside","_building","_isPlayerInside"];
 _unit = _this;
 _vehicle = (vehicle player);
 
@@ -15,8 +15,12 @@ if (r_player_unconscious && _vehicle == player) then {
 	_move = "ZombieFeed" + str(_rnd);
 } else {
 	_unit doMove (getPos player);
+	if (_type == "zombie") then {
 	_rnd = round(random 9) + 1;
 	_move = "ZombieStandingAttack" + str(_rnd);
+	} else {
+		_move = "Dog_Attack";
+	};
 };
 _dir = [_unit,player] call BIS_Fnc_dirTo;
 _unit setDir _dir;
@@ -76,17 +80,23 @@ if (_vehicle != player) then {
 			//LOS check
 			_cantSee = [_unit,_vehicle] call dayz_losCheck;
 			if (!_cantSee) then {
+				if (_type == "dog") then {
+					_wound = DAYZ_woundHit_dog call BIS_fnc_selectRandomWeighted;
+					_damage = 0.3 + random (1.0);
+				} else {
 				if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
 					_wound = DAYZ_woundHit call BIS_fnc_selectRandomWeighted;
 				} else {
 					_wound = DAYZ_woundHit_ok call BIS_fnc_selectRandomWeighted;
 				};
 				_damage = 0.1 + random (1.2);
+				};
+
 				//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 				//publicVariable "dayzHit";
-				[_unit,"hit",0,false] call dayz_zombieSpeak;
+				if (_type == "dog") then { [_unit,"dog_growl",0,false] call dayz_zombieSpeak; } else { [_unit,"hit",0,false] call dayz_zombieSpeak; };
 			} else {
 				/*
 				_isZombieInside = [_unit,_building] call fnc_isInsideBuilding;

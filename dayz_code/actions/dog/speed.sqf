@@ -1,33 +1,16 @@
-//_dog = _this select 0;
+private ["_array", "_handle", "_speed", "_dog"];
 _array = 	_this select 3;
 _handle = 	_array select 0;
-_whistle = 	_array select 1;
-_forceWalk = _array select 2;
+_speed = _array select 1;
 
-_dog = 		_handle getFSMVariable "_dog";
-_maxSpeed = _handle getFSMVariable "_maxSpeed";
+player removeAction s_player_speeddog;
+s_player_speeddog =	-1;
 
-if(player distance _dog < 5) then {
-	_whistle = false;
-};
+_dog = 	_handle getFSMVariable "_dog";
 
-if(_forceWalk) then {
-	_maxSpeed = _maxSpeed - 1;
-	if (_maxSpeed < 0) then {
-		_maxSpeed = 0;
-	};
-	if(_whistle) then {
+if(player distance _dog > 5) then {
 		[nil,player,rSAY,["dog_slowDown", 120]] call RE;
 	};
-} else {
-	_maxSpeed = _maxSpeed + 1;
-	if (_maxSpeed > 2) then {
-		_maxSpeed = 2;
-	};
-	if(_whistle) then {
-		[nil,player,rSAY,["dog_speedUp", 120]] call RE;
-	};
-};
 
-_handle setFSMVariable ["_maxSpeed",_maxSpeed];
-_handle setFSMVariable ["_forceChange",true];
+_handle setFSMVariable ["_maxSpeed", _speed];
+_dog setVariable ["currentSpeed", _speed];

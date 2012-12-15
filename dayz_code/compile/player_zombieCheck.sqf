@@ -1,13 +1,25 @@
-private["_refObj","_listTalk","_pHeight","_attacked","_list","_dist","_group","_chance","_last","_entHeight","_delta","_isZInside","_building","_isPlayerInside","_targets","_cantSee","_tPos","_zPos","_eyeDir","_inAngle","_lowBlood"];
+private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
 _refObj = vehicle player;
 //_listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
 _listTalk = (position _refObj) nearEntities ["zZombie_Base",100];
 _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
+_multiplier = 1;
 
 //_list = list dayz_playerTrigger;
 {
-	if (alive _x) then {
+	_continue = true;
+	
+	if (typeOf _x == "DZ_Fin" || typeOf _x == "DZ_Pastor") then { _type = "dog"; } else { _type = "zombie"; };
+	//check if untamed dog;
+	if (_type == "dog") then { 
+		_multiplier = 2;
+		if ((_x getVariable ["characterID", "0"] == "0") || (_x getVariable ["state", "passive"] == "passive") || (_x getVariable ["characterID", "0"] == dayz_characterID)) then { 
+			_continue = false; 
+		};
+	};
+	
+	if (alive _x && _continue) then {
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
@@ -22,7 +34,7 @@ _attacked = false;
 		_chance = 1;
 		//if ((_x in _list) and !(animationState _x == "ZombieFeed")) then {
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
-			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
+			if (_type == "zombie") then { [_x,"attack",(_chance),true] call dayz_zombieSpeak; };
 			//perform an attack
 			_last = _x getVariable["lastAttack",0];
 			_entHeight = (getPosATL _x) select 2;
@@ -36,10 +48,12 @@ _attacked = false;
 			};
 			_attacked = true;
 		} else {
+			if (_type == "zombie") then {
 			if (speed _x < 4) then {
 				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
 			} else {
 				[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
+				};
 			};
 		};
 		//Noise Activation

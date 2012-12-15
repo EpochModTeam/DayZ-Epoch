@@ -56,7 +56,7 @@ diag_log format["DEBUG: foodlvl: %1 dayz_hunger: %2 foodval: %3",_foodLvl, dayz_
 diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, dayz_temperatur, _tempVal];
 */
 
-if (_bloodLvl == 0) then { 
+if (_bloodLvl <= 0) then { 
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_1_ca.paa";
 	} else {
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_" + str(_bloodLvl) + "_ca.paa";

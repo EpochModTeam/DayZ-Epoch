@@ -1,5 +1,5 @@
 
-private["_list","_animalssupported","_type","_root","_favouritezones","_randrefpoint","_PosList","_PosSelect","_Pos","_GroupMarker","_agent","_id","_pos","_tame"];
+private["_list","_animalssupported","_type","_root","_favouritezones","_randrefpoint","_PosList","_PosSelect","_Pos","_agent","_id","_pos","_near"];
 _list = getposATL player nearEntities [["CAAnimalBase"],dayz_animalDistance];
 
 if (count _list < dayz_maxAnimals) then {
@@ -38,22 +38,28 @@ if (count _list < dayz_maxAnimals) then {
 	_Pos =  		_PosSelect select 0;
 	_list = 		_Pos nearEntities [["CAAnimalBase","Man"],50];
 	
-	if (player distance _Pos < dayz_animalDistance and NOT surfaceIsWater _Pos and (count _list == 0)) then {		
-		//Create Marker
-		/*
-		DAYZ_agentnumber = DAYZ_agentnumber + 1;
-		_GroupMarker = "animal_" + (str DAYZ_agentnumber) + "_" + str(dayz_characterID);
-		createMarker [_GroupMarker, _Pos ];
-		_GroupMarker setMarkerType "Dot";
-		_GroupMarker setMarkerColor "ColorRed";
-		_GroupMarker setMarkerText _type; 
-		*/		
-		_agent = createAgent [_type, _Pos, [], 0, "FORM"];
+	
+	if (player distance _Pos < dayz_animalDistance and NOT surfaceIsWater _Pos and (count _list <= 1)) then {
+		if (_type == "DZ_Pastor") then { _agent = createAgent [_type, _Pos, [], 0, "NONE"]; } else { _agent = createAgent [_type, _Pos, [], 0, "FORM"]; };
 		_agent setpos _Pos;
 		_id = [_pos,_agent] execFSM "\z\addons\dayz_code\system\animal_agent.fsm";
-		if ((_type == "DZ_Fin") || (_type == "DZ_Pastor")) then {
-			_tame = _agent addAction ["Tame Dog", "\z\addons\dayz_code\compile\player_tameDog.sqf"];
-		};
 	};
 	sleep 1;
 };
+
+//Comment out above code and use code below for testing
+/*
+private["_type","_pos","_agent","_id"];
+_near = (position player) nearEntities ["DZ_Pastor",500];
+
+if (count _near == 0) then {
+	_type = "DZ_Pastor";
+	_pos = player modelToWorld [0,(count _near) + 1,0];
+	_agent = createAgent [_type, _pos, [], 0, "NONE"];
+	player reveal _agent;
+	_agent setpos _pos;
+	//_id = [_pos,_agent] execFSM "\z\addons\dayz_code\system\animal_agent.fsm";
+	_id = 1;
+	_agent setVariable ["fsm_handle", _id];
+};
+*/

@@ -11,7 +11,7 @@ _category = (_this select 3) select 1;
 diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
 
 dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
-publicVariable "dayzTraderMenu";
+publicVariableServer "dayzTraderMenu";
 if (isServer) then {
 	dayzTraderMenu call server_traders;
 };
@@ -19,6 +19,7 @@ if (isServer) then {
 waitUntil {!isNil "dayzTraderMenuResult"};
 
 /*
+	`id`,
 	`item` varchar(255) NOT NULL COMMENT '[Class Name,1 = CfgMagazines | 2 = Vehicle | 3 = Weapon]',
 	`qty` int(8) NOT NULL COMMENT 'amount in stock available to buy',
 	`buy`  varchar(255) NOT NULL COMMENT '[[Qty,Class,Type],]',
@@ -96,10 +97,11 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];
 	if(_qty <= 0) then {
 		_Display = format["Buy %1 (Out of Stock: %2)", _textPart, _qty];
-		_part = player addAction [_Display, "\z\addons\dayz_code\actions\trade_cancel.sqf",[], 0, true, false, "",""];
+		//_part = player addAction [_Display, "\z\addons\dayz_code\actions\trade_cancel.sqf",[], 0, true, false, "",""];
+		_part = player addAction [_Display, _File,[_name,_bname,_out,_in,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
 	} else {
 		_Display = format["Buy %1 for %2 %3 (Available: %4)", _textPart, _in, _textCurrency, _qty];
-		_part = player addAction [_Display, _File,[_name,_bname,_out,_in,"buy",_textCurrency,_textPart], _order, true, true, "",""];
+		_part = player addAction [_Display, _File,[_name,_bname,_out,_in,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
 	};
 	
 	diag_log format["DEBUG TRADER: %1", _part];

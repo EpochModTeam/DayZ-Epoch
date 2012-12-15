@@ -72,6 +72,16 @@ dayz_resetSelfActions = {
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
 	s_player_flipveh = 		-1;
+	s_player_movedog =		-1;
+	s_player_speeddog =		-1;
+	s_player_calldog = 		-1;
+	s_player_feeddog = 		-1;
+	s_player_waterdog = 	-1;
+	s_player_staydog = 		-1;
+	s_player_trackdog = 	-1;
+	s_player_barkdog = 		-1;
+	s_player_warndog = 		-1;
+	s_player_followdog = 	-1;
 };
 call dayz_resetSelfActions;
 
@@ -115,6 +125,22 @@ r_action_repair = 		false;
 r_action_targets = 		[];
 r_pitchWhine = 			false;
 r_isBandit =			false;
+
+//ammo routine
+r_player_actions2 = [];
+r_action2 = false;
+r_player_lastVehicle = objNull;
+r_player_lastSeat = [];
+r_player_removeActions2 = {
+	if (!isNull r_player_lastVehicle) then {
+		{
+			r_player_lastVehicle removeAction _x;
+		} forEach r_player_actions2;
+		r_player_actions2 = [];
+		r_action2 = false;
+	};
+};
+
 USEC_woundHit 	= [
 	"",
 	"body",
@@ -144,6 +170,17 @@ DAYZ_woundHit_ok = [
 		0.5,
 		0.3,
 		0.2
+	]
+];
+DAYZ_woundHit_dog = [
+	[
+		"body",
+		"hands",
+		"legs"
+	],[
+		0.1,
+		0.45,
+		0.35
 	]
 ];
 USEC_MinorWounds 	= [
@@ -176,6 +213,7 @@ dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 dayzHideBody = objNull;
 
 dayzPublishVeh = [];		// for vehicle traders
+dayzTradeObject = [];		// For all traders increment qty
 dayzTraderMenu = [];  		// For all traders	
 
 //DayZ settings
@@ -192,13 +230,13 @@ if(isnil "dayz_maxLocalZombies") then {
 
 dayz_spawnPos = getPosATL player;
 
+//init global arrays for Loot Chances
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
 
 if(isServer) then {
-	dayz_disco = [];
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
-	botPlayers = [];
 };
 
 if(!isDedicated) then {
