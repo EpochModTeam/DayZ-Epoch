@@ -967,6 +967,21 @@ class CfgBuildingLoot {
 		maxRoaming = 8;
 	}; // Qty: 3
 	class Land_Shed_W02: FarmRoaming {}; // Qty: 213
+	//allow 
+	class Grave: HouseRoaming {
+		maxRoaming = 3;
+	};
+	class GraveCross1: HouseRoaming {	
+		maxRoaming = 2;
+	};
+	class GraveCross2: HouseRoaming {	
+		maxRoaming = 2;
+	};
+	class GraveCrossHelmet: Military {	
+		maxRoaming = 4;
+	};
+
+
 	
 	// DAYZ AMP More buildings
 	class Land_Shed_W02_EP1: FarmRoaming{};

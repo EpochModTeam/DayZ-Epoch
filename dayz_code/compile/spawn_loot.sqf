@@ -1,9 +1,8 @@
-private["_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights","_dateNow"];
++private["_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights","_dateNow"];
 _iItem = 	_this select 0;
 _iClass = 	_this select 1;
 _iPos =		_this select 2;
 _radius =	_this select 3;
-
 switch (_iClass) do {
 	default {
 		//Item is food, add random quantity of cans along with an item (if exists)

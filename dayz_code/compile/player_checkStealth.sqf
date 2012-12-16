@@ -58,7 +58,8 @@ if (_scaleLight < 0.9) then {
 		};
 	};
 	_nearLight = nearestObject [(vehicle player),"StreetLamp"];
-	if (!isNull _nearLight && (lightIsOn _nearLight == "ON")) then {
+	//if (!isNull _nearLight && (lightIsOn _nearLight == "ON")) then {
+	if (!isNull _nearLight) then {
 		_scaler = 50 - (_nearLight distance (vehicle player));
 		_scaleLight = ((_scaler / 50) * 2) + _scaleLight;
 	};

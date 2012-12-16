@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private["_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_allFixed","_hitpoints","_damage","_part","_cmpt","_color","_string","_handle","_trader_id","_category","_buy","_buy2","_buy3","_buy1","_buy4","_buy5","_cantrader","_cantrader1","_buy6","_zparts1","_zparts2","_zparts3","_zparts4","_metals1","_metals2","_metals4","_metals3","_metals5","_dogHandle","_lieDown","_warn"];
+private["_isPZombie","_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_allFixed","_hitpoints","_damage","_part","_cmpt","_color","_string","_handle","_trader_id","_category","_buy","_buy2","_buy3","_buy1","_buy4","_buy5","_cantrader","_cantrader1","_buy6","_zparts1","_zparts2","_zparts3","_zparts4","_metals1","_metals2","_metals4","_metals3","_metals5","_dogHandle","_lieDown","_warn"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -41,6 +41,17 @@ if (_canPickLight and !dayz_hasLight) then {
 	s_player_grabflare = -1;
 	s_player_removeflare = -1;
 };
+
+_isPZombie = player isKindOf "PZombie_VB";
+if(_isPZombie) then {
+	//_state = animationState player;
+	//hint str(_state);
+	if (s_player_callzombies < 0) then {
+		s_player_callzombies = player addAction ["Call Zombies", "\z\addons\dayz_code\actions\call_zombies.sqf",player, 5, true, false, "",""];
+		// s_player_callzombies1 = player addAction ["Zombie Vison", "\z\addons\dayz_code\actions\vison_zombie.sqf",player, 4, true, false, "",""];
+	};
+};
+
 
 if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4)) then {	//Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
@@ -124,20 +135,33 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_fillfuel = -1;
 	};
 	
-	// Gut animal or zombie
-	if (!alive cursorTarget and (_isAnimal or _isZombie) and _hasKnife and !_isHarvested and _canDo) then {
-		if (s_player_butcher < 0) then {
-			if(_isZombie) then {
-				s_player_butcher = player addAction ["Gut Zombie", "\z\addons\dayz_code\actions\gather_zparts.sqf",cursorTarget, 3, true, true, "", ""];
-			} else {
-				s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",cursorTarget, 3, true, true, "", ""];
+
+	
+	if(_isPZombie) then {
+		// Pzombie Gut human corpse or animal
+		if (!alive cursorTarget and (_isAnimal or _isMan) and !_isHarvested and _canDo) then {
+			if (s_player_butcher < 0) then {
+				s_player_butcher = player addAction ["Feed", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false, "",""];
 			};
+		} else {
+			player removeAction s_player_butcher;
+			s_player_butcher = -1;
 		};
 	} else {
-		player removeAction s_player_butcher;
-		s_player_butcher = -1;
+		// Human Gut animal or zombie
+		if (!alive cursorTarget and (_isAnimal or _isZombie) and _hasKnife and !_isHarvested and _canDo) then {
+			if (s_player_butcher < 0) then {
+				if(_isZombie) then {
+					s_player_butcher = player addAction ["Gut Zombie", "\z\addons\dayz_code\actions\gather_zparts.sqf",cursorTarget, 3, true, true, "", ""];
+				} else {
+					s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",cursorTarget, 3, true, true, "", ""];
+				};
+			};
+		} else {
+			player removeAction s_player_butcher;
+			s_player_butcher = -1;
+		};
 	};
-	
 	//Fireplace Actions check
 	if(inflamed cursorTarget and _hasRawMeat and _canDo) then {
 		if (s_player_cook < 0) then {
@@ -251,7 +275,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	// Parts Trader Worker3
-	if (_isMan and _traderType == parts_trader) then {
+	if (_isMan and !_isPZombie and _traderType == parts_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -271,7 +295,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 
 	//weapon_trader_1
-	if (_isMan and _traderType == weapon_trader) then {
+	if (_isMan and !_isPZombie and _traderType == weapon_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -296,7 +320,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 
 	// can_trader_1
-	if (_isMan and _traderType == can_trader) then {
+	if (_isMan and !_isPZombie and _traderType == can_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -323,7 +347,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 
 	//ammo_trader_1
-	if (_isMan and _traderType == ammo_trader) then {
+	if (_isMan and !_isPZombie and _traderType == ammo_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -349,7 +373,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 	
 	//boat_trader_1
-	if (_isMan and _traderType == boat_trader) then {
+	if (_isMan and !_isPZombie and _traderType == boat_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -367,7 +391,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 	
 	//auto_trader_1
-	if (_isMan and _traderType == auto_trader) then {
+	if (_isMan and !_isPZombie and _traderType == auto_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -395,7 +419,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 
 	//auto_trader_2
-	if (_isMan and _traderType == auto_trader_2) then {
+	if (_isMan and !_isPZombie and _traderType == auto_trader_2) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -423,7 +447,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 
 	// mad_sci
-	if (_isMan and _traderType == mad_sci) then {
+	if (_isMan and !_isPZombie and _traderType == mad_sci) then {
 		
 		if (s_player_parts_crtl < 0) then {
 			
@@ -443,7 +467,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	// metals_trader
-	if (_isMan and _traderType == metals_trader) then {
+	if (_isMan and !_isPZombie and _traderType == metals_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 			
@@ -459,7 +483,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			s_player_parts set [count s_player_parts,_metals3];
 			s_player_parts set [count s_player_parts,_metals4];
 			s_player_parts set [count s_player_parts,_metals5];
-;
+
 			s_player_parts_crtl = 1;
 		};
 	};
@@ -549,6 +573,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	//Others
 	player removeAction s_player_forceSave;
 	s_player_forceSave = -1;
+	player removeAction s_player_flipveh;
+	s_player_flipveh = -1;
 	player removeAction s_player_deleteBuild;
 	s_player_deleteBuild = -1;
 	player removeAction s_player_butcher;
@@ -563,12 +589,60 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
-
-	// vault
+	//Dog
+	player removeAction s_player_tamedog;
+	s_player_tamedog = -1;
+	player removeAction s_player_feeddog;
+	s_player_feeddog = -1;
+	player removeAction s_player_waterdog;
+	s_player_waterdog = -1;
+	player removeAction s_player_staydog;
+	s_player_staydog = -1;
+	player removeAction s_player_trackdog;
+	s_player_trackdog = -1;
+	player removeAction s_player_barkdog;
+	s_player_barkdog = -1;
+	player removeAction s_player_warndog;
+	s_player_warndog = -1;
+	player removeAction s_player_followdog;
+	s_player_followdog = -1;
+    
+    	// vault
 	player removeAction s_player_unlockvault;
 	s_player_unlockvault = -1;
 	player removeAction s_player_packvault;
 	s_player_packvault = -1;
 	player removeAction s_player_lockvault;
 	s_player_lockvault = -1;
+};
+
+
+
+//Dog actions on player self
+_dogHandle = player getVariable ["dogID", 0];
+if (_dogHandle > 0) then {
+	_dog = _dogHandle getFSMVariable "_dog";
+	_ownerID = "0";
+	if (!isNull cursorTarget) then { _ownerID = cursorTarget getVariable ["characterID","0"]; };
+	if (_canDo and !_inVehicle and alive _dog and _ownerID != dayz_characterID) then {
+		if (s_player_movedog < 0) then {
+			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID", 0], 1, false, true, "", ""];
+		};
+		if (s_player_speeddog < 0) then {
+			_text = "Walk";
+			_speed = 0;
+			if (_dog getVariable ["currentSpeed",1] == 0) then { _speed = 1; _text = "Run"; };
+			s_player_speeddog = player addAction [format[localize "str_actions_speeddog", _text], "\z\addons\dayz_code\actions\dog\speed.sqf",[player getVariable ["dogID", 0],_speed], 0, false, true, "", ""];
+		};
+		if (s_player_calldog < 0) then {
+			s_player_calldog = player addAction [localize "str_actions_calldog", "\z\addons\dayz_code\actions\dog\follow.sqf", [player getVariable ["dogID", 0], true], 2, false, true, "", ""];
+		};
+	};
+} else {
+	player removeAction s_player_movedog;		
+	s_player_movedog =		-1;
+	player removeAction s_player_speeddog;
+	s_player_speeddog =		-1;
+	player removeAction s_player_calldog;
+	s_player_calldog = 		-1;
 };

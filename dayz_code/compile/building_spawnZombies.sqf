@@ -1,4 +1,4 @@
-private ["_positions","_min","_iPos","_max","_obj","_type","_nearBy","_clean","_unitTypes","_config","_num","_originalPos","_zombieChance","_rnd","_nearByPlayer","_canLoot"];
+private["_serial","_positions","_min","_lootGroup","_iArray","_iItem","_iClass","_iPos","_item","_mags","_qty","_max","_tQty","_canType","_obj","_type","_nearBy","_clean","_unitTypes","_max","_isNoone","_config","_num","_originalPos","_zombieChance","_rnd","_fastRun"];
 _obj = 			_this select 0;
 _type = 		typeOf _obj;
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
@@ -29,7 +29,7 @@ if (_canLoot) then {
 				//_iPos = position (_obj);
 				_nearBy = count nearestObjects [_iPos, ["zZombie_Base"],1] > 0;
 				_nearByPlayer = ({isPlayer _x} count (_iPos nearEntities ["CAManBase",30])) > 0;
-				diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
+				//diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
 				if (!_nearByPlayer and !_nearBy) then {
 					[_iPos,false,_unitTypes] call zombie_generate;
 				};

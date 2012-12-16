@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DayZ">
+	<Package name="weapons">
+		<Key ID="STR_WPN_NAME_1">
+			<Original>Winchester 1866</Original>
+			<English>Winchester 1866</English>
+			<German>Winchester 1866</German>
+			<Russian>Винчестер 1866</Russian>
+		</Key>
+		<Key ID="STR_WPN_DESC_1">
+			<Original>Shotgun 12 gauge</Original>
+			<English>Shotgun 12 gauge</English>
+			<German>Flinte, Kaliber 12</German>	
+			<Russian>Дробовик 12 калибра</Russian>
+		</Key>
+		<Key ID="STR_WPN_NAME_2">
+			<Original>Remington 870</Original>
+			<English>Remington 870</English>
+			<German>Remington 870</German>	
+			<Russian>Ремингтон 870</Russian>
+		</Key>
+		<Key ID="STR_WPN_DESC_2">
+			<Original>The Remington Model 870 is a pump-action shotgun with a military torch attachment.</Original>
+			<English>The Remington Model 870 is a pump-action shotgun with a military torch attachment.</English>
+			<German>Die Remington Model 870 ist eine Pumpgun mit Halterung für eine Taschenlampe.</German>	
+			<Russian>Ремингтон Модель 870 это помповый дробовик с креплением для фонарика</Russian>
+		</Key>
+		<Key ID="STR_WPN_NAME_3">
+			<Original>Remington 870 (Flashlight)</Original>
+			<English>Remington 870 (Flashlight)</English>
+			<German>Remington 870 mit Taschenlampe</German>	
+			<Russian>Ремингтон 870 (с фонариком)</Russian>
+		</Key>
+		<Key ID="STR_WPN_DESC_3">
+			<Original>The Remington Model 870 is a pump-action shotgun. This rifle has a torch attached.</Original>
+			<English>The Remington Model 870 is a pump-action shotgun. This rifle has a torch attached.</English>
+			<German>Die Remington Model 870 ist eine Pumpgun. An diese ist eine Taschenlampe angebracht.</German>	
+			<Russian>Ремингтон Модель 870 это помповый дробовик с армейским фонариком</Russian>
+		</Key>
+		<Key ID="STR_WPN_NAME_4">
+			<Original>Compound Crossbow</Original>
+			<English>Compound Crossbow</English>
+			<German>Kompositarmbrust</German>	
+			<Russian>Спортивный арбалет</Russian>
+		</Key>
+		<Key ID="STR_WPN_DESC_4">
+			<Original>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</Original>
+			<English>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</English>
+			<German>Die Kompositarbmbrust ist, wenn man das Zielen beherrscht, eine starke, einzelschüssige Waffe mit kurzer Reichweite und langer Nachladezeit.</German>	
+			<Russian>Спортивный арбалет требует сноровки для точной стрельбы, превращаясь в мощное однозарядное оружие на коротких дистанциях.</Russian>
+		</Key>
+    <Key ID="STR_WPN_NAME_5">
+      <Original>Double-barreled Shotgun</Original>
+      <English>Double-barreled Shotgun</English>
+      <German>Double-barreled Shotgun</German>
+      <Russian>Double-barreled Shotgun</Russian>
+    </Key>
+    <Key ID="STR_WPN_DESC_5">
+      <Original>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</Original>
+      <English>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</English>
+      <German>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</German>
+      <Russian>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</Russian>
+    </Key>    
+	</package>
+	<Package name="magazines">
+		<Key ID="STR_MAG_NAME_1">
+			<Original>15Rnd. 1866 Pellets</Original>
+			<English>15Rnd. 1866 Pellets</English>
+			<German>15 Schuss 1866 Schrot</German>	
+			<Russian>15 Патрон 1866 дробь</Russian>
+		</Key>
+		<Key ID="STR_MAG_DESC_1">
+			<Original>Caliber: 12 gauge</Original>
+			<English>Caliber: 12 gauge</English>
+			<German>Kaliber 12</German>	
+			<Russian>12-й калибр</Russian>
+		</Key>
+		<Key ID="STR_MAG_NAME_2">
+			<Original>15Rnd. 1866 Slugs</Original>
+			<English>15Rnd. 1866 Slugs</English>
+			<German>15 Schuss 1866 Kugel</German>
+			<Russian>15 Патрон 1866 пуля</Russian>
+		</Key>
+		<Key ID="STR_MAG_DESC_2">
+			<Original>Caliber: 12 gauge</Original>
+			<English>Caliber: 12 gauge</English>
+			<German>Kaliber 12</German>	
+			<Russian>12-й калибр</Russian>
+		</Key>
+		<Key ID="STR_MAG_NAME_3">
+			<Original>Steel Bolt</Original>
+			<English>Steel Bolt</English>
+			<German>Stahlbolzen</German>	
+			<Russian>Стальной болт</Russian>
+		</Key>
+		<Key ID="STR_MAG_DESC_3">
+			<Original>A Crossbow Bolt made from hardened steel with feathered tips. Rugged and able to withstand many uses.</Original>
+			<English>A Crossbow Bolt made from hardened steel with feathered tips. Rugged and able to withstand many uses.</English>
+			<German>Ein Armbrustbolzen aus gehärtetem Stahl mit gefiederten Spitzen. Durch die robuste Machart kann er wiederverwendet werden.</German>	
+			<Russian>Стальной оперенный арбалетный болт. Многоразовый.</Russian>
+		</Key>
+		<Key ID="STR_MAG_ACTION_3">
+			<Original>Bolt</Original>	<!-- As in Crossbow Bolt -->
+			<English>Bolt</English>
+			<German>Bolzen</German>	
+			<Russian>Болт</Russian>
+		</Key>
+		<Key ID="STR_MAG_NAME_4">
+			<Original>Road Flare</Original>
+			<English>Road Flare</English>
+			<German>Bengalfeuer</German>
+			<Russian>Сигнальный фаер</Russian>	
+		</Key>
+		<Key ID="STR_MAG_ACTION_4">
+			<Original>Flare</Original>
+			<English>Flare</English>
+			<German>Bengalfeuer</German>	
+			<Russian>Фаер</Russian>
+		</Key>
+		<Key ID="STR_MAG_ACTION2_4">
+			<Original>Throw</Original>
+			<English>Throw</English>
+			<German>Werfen</German>	
+			<Russian>Бросить</Russian>
+		</Key>
+		<Key ID="STR_MAG_DESC_4">
+			<Original>Hand operated flare commonly found in roadside emergency kits. Will burn for approximately five minutes.</Original>
+			<English>Hand operated flare commonly found in roadside emergency kits. Will burn for approximately five minutes.</English>
+			<German>Handgeführtes Bengalfeuer, häufig in Notfallkästen in Fahrzeugen gefunden. Eine Ladung brennt etwa 5 Minuten.</German>	
+			<Russian>Гражданский сигнальный фаер, который обычно используют спасатели. Горит около пяти минут.</Russian>
+		</Key>
+		<Key ID="STR_MAG_NAME_5">
+			<Original>Chemlight (Green)</Original>
+			<English>Chemlight (Green)</English>
+			<German>Knicklicht (Grün)</German>	
+			<Russian>Химсвет (Зеленый)</Russian>
+		</Key>
+		<Key ID="STR_MAG_ACTION_5">
+			<Original>Chemlight</Original>
+			<English>Chemlight</English>
+			<German>Knicklicht</German>	
+			<Russian>Химсвет</Russian>
+		</Key>
+		<Key ID="STR_MAG_DESC_5">
+			<Original>Chemical Lightstick providing 60 minutes illumination within a small area when activated and thrown. Available in assorted colors.</Original>
+			<English>Chemical Lightstick providing 60 minutes illumination within a small area when activated and thrown. Available in assorted colors.</English>
+			<German>Ein chemisches Knicklicht, das für etwa 60 Minuten Licht gibt, nachdem es geknickt und geworfen wurde. In verschiedenen Farben verfügbar.</German>	
+			<Russian>Химический источник света, освещающий небольшую область на период до 60 минут после броска. Бывает разных цветов.</Russian>
+		</Key>
+		<Key ID="STR_MAG_NAME_6">
+			<Original>Chemlight (Red)</Original>
+			<English>Chemlight (Red)</English>
+			<German>Knicklicht (Rot)</German>	
+			<Russian>Химсвет (Красный)</Russian>
+		</Key>
+		<Key ID="STR_MAG_NAME_7">
+			<Original>Chemlight (Blue)</Original>
+			<English>Chemlight (Blue)</English>
+			<German>Knicklicht (Blau)</German>	
+			<Russian>Химсвет (Синий)</Russian>
+		</Key>
+    <Key ID="STR_EQUIP_NAME_41">
+      <Original>Hatchet</Original>
+      <English>Hatchet</English>
+      <German>Hatchet</German>
+      <Russian>Топорик</Russian>
+    </Key>
+    <Key ID="STR_EQUIP_DESC_41">
+      <Original>A single-handed striking tool with a sharp blade used to cut and split wood.</Original>
+      <English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
+      <German>A single-handed striking tool with a sharp blade used to cut and split wood.</German>
+      <Russian>Топорик отлично подойдет для рубки дров.</Russian>
+    </Key>
+	</package>
+	<package name="characters">
+		<Key ID="STR_CHAR_1">
+			<Original>Survivor</Original>
+			<English>Survivor</English>
+			<German>Überlebender</German>
+			<Russian>Выживший</Russian>	
+		</Key>
+	</package>
+</Project>

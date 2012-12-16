@@ -1089,10 +1089,7 @@ class FSM
        "	_runOnce = false;" \n
        "	while {true} do {" \n
        "" \n
-       "//loot" \n
-       "		call player_spawnLootCheck;" \n
-       "//zeds" \n
-       "		call player_spawnZedCheck;			" \n
+       "		call player_spawnCheck;		" \n
        "" \n
        "		call stream_locationCheck;" \n
        "		sleep 2;" \n

@@ -15,22 +15,22 @@ dayz_inVehicle = _inVehicle;
 //if (((time - dayz_spawnWait) < dayz_spawnDelay) or ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {diag_log("Skipping Check since neither loot or zombies are ready");};
 //if (((time - dayz_spawnWait) < dayz_spawnDelay) and ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {};
 
-//diag_log("SPAWN CHECKING: Starting");
-	_radius = 300; 
-	_locationstypes = ["NameCityCapital","NameCity","NameVillage","NameLocal"];
-	_nearestCity = nearestLocations [getPos player, _locationstypes, _radius];
-	
-	//_nearestCity = [_locationstypes,[position player,600],false] call bis_fnc_locations;
-	//diag_log ("0: " +str(_nearestCity));
-	
-	_position = getPosATL player;
-	if ((count _nearestCity) > 0) then {
-		_position = position (_nearestCity select 0);  	
-	};
-	
-	_nearbytype = type (_nearestCity select 0);
-	_nearby = _position nearObjects ["Building",_radius];
-	
+diag_log("SPAWN CHECKING: Starting");
+_radius = 300; 
+_locationstypes = ["NameCityCapital","NameCity","NameVillage","NameLocal"];
+_nearestCity = nearestLocations [getPos player, _locationstypes, _radius];
+
+//_nearestCity = [_locationstypes,[position player,600],false] call bis_fnc_locations;
+//diag_log ("0: " +str(_nearestCity));
+
+_position = getPosATL player;
+if ((count _nearestCity) > 0) then {
+	_position = position (_nearestCity select 0);  	
+};
+
+_nearbytype = type (_nearestCity select 0);
+_nearby = _position nearObjects ["Building",_radius];
+
 switch (_nearbytype) do {
 	default {
 		_maxZombies = 20;
@@ -61,7 +61,7 @@ if (_inVehicle) then {
     //diag_log(format["SPAWN CHECK: Building count is %1", count _nearby]);
 	_count = ({alive _x} count allMissionObjects "zZombie_Base");
 	//hint "Total Zeds: " +str(_count));
-	hint format["Total Zeds %1",_count];
+	//hint format["Total Zeds %1",_count];
 	diag_log ("Total Zeds: " +str(_count));
     {
 		//diag_log("SPAWN CHECK: Start of Loop");
@@ -95,11 +95,11 @@ if (_inVehicle) then {
 					_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 					_dateNow = (DateToNumber date);
 					_age = (_dateNow - _zombied) * 525948;
-					diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
+					//diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
 					if (_age > 1) then {
 						_bPos = getPosATL _x;
 						_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);	
-						diag_log ("ZombiesNum: " +str(_zombiesNum));
+						//diag_log ("ZombiesNum: " +str(_zombiesNum));
 						if (_zombiesNum == 0) then {
 							//Randomize Zombies
 							_x setVariable ["zombieSpawn",_dateNow,true];

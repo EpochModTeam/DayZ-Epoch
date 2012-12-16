@@ -11,6 +11,22 @@ Camo1_DZ = 		"Camo1_DZ";
 Soldier1_DZ = 	"Soldier1_DZ";
 Rocket_DZ = 	"Rocket_DZ";
 
+PZombie_VB =	"PZombie_VB";
+
+pz_policeman = "pz_policeman";
+pz_suit1 = "pz_suit1";
+pz_suit2 = "pz_suit2";
+pz_worker1 = "pz_worker1";
+pz_worker2 = "pz_worker2";
+pz_worker3 = "pz_worker3";
+pz_teacher = "pz_teacher";
+pz_hunter = "pz_hunter";
+pz_villager1 = "pz_villager1";
+pz_villager2 = "pz_villager2";
+pz_villager3 = "pz_villager3";
+pz_priest = "pz_priest";
+
+
 dayz_combatLog = "";
 
 
@@ -61,6 +77,7 @@ dayz_resetSelfActions = {
 	s_player_fillwater2 = 	-1;
 	s_player_fillfuel = 	-1;
 	s_player_grabflare = 	-1;
+	s_player_callzombies = 	-1;
 	s_player_removeflare = 	-1;
 	s_player_painkiller =	-1;
 	s_player_studybody = 	-1;
