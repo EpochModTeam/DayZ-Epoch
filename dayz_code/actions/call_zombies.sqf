@@ -4,7 +4,7 @@ _item = _this select 3;
 //player removeAction s_player_callzombies;
 //s_player_callzombies = -1;
 
-player playActionNow "Surrender";
+// player playActionNow "Surrender";
 
 [player,"spotted",0,false] call dayz_zombieSpeak;
 

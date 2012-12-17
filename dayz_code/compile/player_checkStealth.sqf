@@ -7,6 +7,9 @@ _scaleMvmt = 0.2;	//0.4;
 _scaleLight = 0.5;
 _scaleAlert = 1;
 
+_isPZombie = player isKindOf "PZombie_VB";
+if(_isPZombie) exitWith {};
+
 //Assess Players Position
 _anim = animationState player;
 _anim4 = toArray _anim;
@@ -123,4 +126,6 @@ _audial = 			round(_speed * dayz_surfaceNoise * _scaleMvmt * _scaleSound);
 if ((_audial > DAYZ_disAudial) or ((time - dayz_firedCooldown) > 0.3)) then {
 	DAYZ_disAudial = _audial;
 };
+
+
 DAYZ_disVisual = 	(round((_initial + (_speed * 3)) * _scalePose * _scaleLight)) * 1.5;

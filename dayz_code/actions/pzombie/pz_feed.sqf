@@ -1,7 +1,16 @@
 private["_item","_id","_regen","_isAnimal","_animalType","_isMan","_config","_isListed","_qty"];
 _item = _this select 3;
 
-player playActionNow "PutDown";
+player removeAction s_player_butcher;
+
+_item setDammage 1;
+
+// wait until dead
+waitUntil {not alive _item};
+
+s_player_butcher = -1;
+
+// player playActionNow "PutDown";
 _id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
 [player,"gut",0,false] call dayz_zombieSpeak;
