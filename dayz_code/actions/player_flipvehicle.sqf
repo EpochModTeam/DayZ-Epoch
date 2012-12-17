@@ -12,7 +12,8 @@ _position = [position _object,0,0,0,0,0,0,position player] call BIS_fnc_findSafe
 player playMove "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon";
 waitUntil { animationState player != "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon"};
 sleep 2;
-_object setpos _position;
+//_object setpos _position;
+_object setvectorup [0,0,1];
 _id = [player,20,true,(getPosATL player)] spawn player_alertZombies;
 sleep 3;
 

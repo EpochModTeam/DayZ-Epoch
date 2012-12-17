@@ -1,7 +1,7 @@
-private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_isAlive","_myDest","_newDest","_rnd","_lootType","_id"];
+private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
 _position = 	_this select 0;
-_doLoiter = 	_this select 1;
-_unitTypes = 	_this select 2;
+_unitTypes = 	_this select 1;
+_doLoiter = 	true;
 
 _isNoone = 	{isPlayer _x} count (_position nearEntities ["AllVehicles",30]) == 0;
 _loot = 	"";
@@ -9,7 +9,7 @@ _array = 	[];
 _agent = 	objNull;
 
 //Exit if a player is nearby
-if (!_isNoone) exitWith {};
+if (!isNoone) exitWith {};
 
 if (count _unitTypes == 0) then {
 	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
@@ -24,21 +24,26 @@ if (_doLoiter) then {
 	_radius = 40;
 	_method = "NONE";
 };
+
+_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
+
+if (_nearByPlayer) then { 
+	_position = [_position,25,80,10,0,0,0] call BIS_fnc_findSafePos;
+};
 _agent = createAgent [_type, _position, [], _radius, _method];
 
 if (_doLoiter) then {
-	_agent setPosATL _position;
+	//_agent setPosATL _position;
 	//_agent setVariable ["doLoiter",true,true];
-} else {
-	_agent setVariable ["doLoiter",false,true];
+	_agent setDir round(random 180);
 };
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
 //diag_log ("CREATE INFECTED: " + str(_this));
 
-_position = getPosATL _agent;
-_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
+//_position = getPosATL _agent;
+//_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
 
 if (random 1 > 0.7) then {
 	_agent setUnitPos "Middle";
@@ -46,28 +51,24 @@ if (random 1 > 0.7) then {
 
 //diag_log ("CREATED: "  + str(_agent));
 
+/*
 //_agent setVariable["host",player,true];
 if (!_doLoiter) then {
-	_agent setPosATL _position;
 	_agent setDir round(random 180);
+	_agent setVariable ["doLoiter",false,true];
 	if (_nearByPlayer) then {
-		deleteVehicle _agent;
-	};
-} else {
-	if (_nearByPlayer) then {
-		_attempt = 0;
 		while {_nearByPlayer} do {
-			//_position = [_position,0,20,10,0,20,0] call BIS_fnc_findSafePos; Orignal
-			// _position = [_position,0,50,20,0,20,0] call BIS_fnc_findSafePos; OEM v2
-			_position = [_position,30,60,20,0,20,0] call BIS_fnc_findSafePos;
-			_agent setPos _position;
-			_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
+			_position = [_position,40,80,10,0,20,0] call BIS_fnc_findSafePos;
+			_agent switchmove AidlPpneMstpSnonWnonDnon_SleepA_layDown;
 			_attempt = _attempt + 1;
 			if (_attempt > 10) exitWith {};
+		} else {
+			_position = [_position,0,20,10,0,20,0] call BIS_fnc_findSafePos;
+			_agent setPosATL _position;
 		};
-		_agent setPos _position;
 	};
 };
+*/
 
 if (isNull _agent) exitWith {
 	dayz_spawnZombies = dayz_spawnZombies - 1;

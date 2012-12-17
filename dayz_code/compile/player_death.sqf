@@ -126,6 +126,9 @@ terminate dayz_animalCheck;
 terminate dayz_monitor1;
 terminate dayz_medicalH;
 terminate dayz_gui;
+terminate dayz_zedCheck;
+terminate dayz_locationCheck;
+terminate dayz_combatCheck;
 
 //Reset (just in case)
 //deleteVehicle dayz_playerTrigger;

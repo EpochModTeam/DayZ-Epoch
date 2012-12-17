@@ -1,3 +1,4 @@
+private["_isAir","_inVehicle","_dateNow","_age","_radius","_locationstypes","_nearestCity","_position","_nearby","_type","_config","_canZombie","_canLoot","_dis","_keepAwayDist","_isNoone","_looted","_cleared"];
 _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);

@@ -114,8 +114,8 @@ link56[] = {49,50};
 link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
-globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1245.283447,529.096497,955,601,1};
-window[] = {2,-1,-1,-32000,-32000,802,22,993,22,3,972};
+globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1244.091797,527.904846,613,601,1};
+window[] = {2,-1,-1,-32000,-32000,890,110,1081,110,3,630};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1068,7 +1068,7 @@ class FSM
        "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
        "" \n
        "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
-       "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
+       "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],500];" \n
        "_town = ""Wilderness"";" \n
        "" \n
        "diag_log (""NearestCity"" + str(_nearestCity));" \n
@@ -1082,17 +1082,28 @@ class FSM
        "" \n
        "dayz_animalCheck = 	[] spawn player_spawn_1;" \n
        "" \n
-       "dayz_lootCheck = [_playerUID,_charID] spawn {" \n
-       "	private[""_handle"",""_humanity"",""_playerUID"",""_oldModel"",""_runOnce""];" \n
-       "	_playerUID = _this select 0;" \n
-       "	_charID = _this select 1;" \n
-       "	_runOnce = false;" \n
+       "dayz_lootCheck = [] spawn {" \n
        "	while {true} do {" \n
-       "" \n
-       "		call player_spawnCheck;		" \n
-       "" \n
+       "		call player_spawnLootCheck;" \n
+       "		sleep 10;" \n
+       "	};" \n
+       "};" \n
+       "dayz_zedCheck = [] spawn {" \n
+       "	while {true} do {" \n
+       "		call player_spawnZedCheck;			" \n
+       "		sleep 7;" \n
+       "	};" \n
+       "};" \n
+       "dayz_locationCheck = [] spawn {" \n
+       "	while {true} do {" \n
        "		call stream_locationCheck;" \n
        "		sleep 2;" \n
+       "	};" \n
+       "};" \n
+       "dayz_combatCheck = [] spawn {" \n
+       "	while {true} do {" \n
+       "		call player_combatCheck;" \n
+       "		sleep 5;" \n
        "	};" \n
        "};" \n
        "// TODO: questionably" \n

@@ -1,12 +1,10 @@
-private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
+private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_continue","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
 _refObj = vehicle player;
-//_listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
-_listTalk = (position _refObj) nearEntities ["zZombie_Base",100];
+_listTalk = (position _refObj) nearEntities [["zZombie_Base","DZ_Pastor"],80];
 _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 _multiplier = 1;
 
-//_list = list dayz_playerTrigger;
 {
 	_continue = true;
 	
@@ -23,16 +21,8 @@ _multiplier = 1;
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
-		/*
-		_group = group _x;
-		_chance = (count units _group);	
-		if (isNull group _x) then {
-			_group = _x;
+
 			_chance = 1;
-		};
-		*/
-		_chance = 1;
-		//if ((_x in _list) and !(animationState _x == "ZombieFeed")) then {
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
 			if (_type == "zombie") then { [_x,"attack",(_chance),true] call dayz_zombieSpeak; };
 			//perform an attack
@@ -40,11 +30,8 @@ _multiplier = 1;
 			_entHeight = (getPosATL _x) select 2;
 			_delta = _pHeight - _entHeight;
 			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
-				//_isZInside = [_x,_building] call fnc_isInsideBuilding;
-				//if ((_isPlayerInside and _isZInside) or (!_isPlayerInside and !_isZInside)) then {
-					_x spawn player_zombieAttack;
+				[_x, _type] spawn player_zombieAttack;
 					_x setVariable["lastAttack",time];
-				//};
 			};
 			_attacked = true;
 		} else {
@@ -59,12 +46,12 @@ _multiplier = 1;
 		//Noise Activation
 		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
-			if (_dist < DAYZ_disAudial) then {
-				if (DAYZ_disAudial > 80) then {
+			if (_dist < (DAYZ_disAudial * _multiplier)) then {
+				if ((DAYZ_disAudial * _multiplier) > 80) then {
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
 				} else {
-					_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
+					_chance = [_x,_dist,(DAYZ_disAudial * _multiplier)] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
 					if ((random 1) < _chance) then {
 						_cantSee = [_x,_refObj] call dayz_losCheck;
@@ -72,7 +59,7 @@ _multiplier = 1;
 							_targets set [count _targets, driver _refObj];
 							_group setVariable ["targets",_targets,true];
 						} else {
-							if (_dist < (DAYZ_disAudial / 2)) then {
+							if (_dist < ((DAYZ_disAudial * _multiplier) / 2)) then {
 								_targets set [count _targets, driver _refObj];
 								_group setVariable ["targets",_targets,true];
 							};
@@ -84,8 +71,8 @@ _multiplier = 1;
 		//Sight Activation
 		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
-			if (_dist < DAYZ_disVisual) then {
-				_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
+			if (_dist < (DAYZ_disVisual * _multiplier)) then {
+				_chance = [_x,_dist,(DAYZ_disVisual * _multiplier)] call dayz_losChance;
 				//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
 				if ((random 1) < _chance) then {
 					//diag_log ("Chance Detection");
@@ -93,7 +80,7 @@ _multiplier = 1;
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,(30 * _multiplier),_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
 						//diag_log ("In Angle");
 						//LOS check

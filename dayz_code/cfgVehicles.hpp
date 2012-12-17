@@ -1,4 +1,112 @@
 class CfgVehicles {
+class Citizen1;	// External class reference
+	class zZombie_Base : Citizen1 {
+		scope = public;
+		glassesEnabled = 0;
+		vehicleClass = "Zombie";
+		displayName = "Zombie";
+		fsmDanger = "";
+		fsmFormation = "";
+		zombieLoot = "civilian";
+		moves = "CfgMovesZombie";
+		isMan = false;
+		weapons[] = {};
+		magazines[] = {};
+		sensitivity = 4;	// sensor sensitivity
+		sensitivityEar = 2;
+		identityTypes[] = {"zombie1", "zombie2"};
+		class TalkTopics {};
+		languages[] = {};
+		
+		class Eventhandlers {
+			init = "_this call zombie_initialize;";
+			local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
+		};
+		
+		class HitPoints {
+			class HitHead {
+				armor = 0.3;
+				material = -1;
+				name = "head_hit";
+				passThrough = true;
+				memoryPoint = "pilot";
+			};
+			
+			class HitBody : HitHead {
+				armor = 2;
+				name = "body";
+				memoryPoint = "aimPoint";
+			};
+			
+			class HitSpine : HitHead {
+				armor = 2;
+				name = "Spine2";
+				memoryPoint = "aimPoint";
+			};
+			
+			class HitHands : HitHead {
+				armor = 0.5;
+				material = -1;
+				name = "hands";
+				passThrough = true;
+			};
+			
+			class HitLArm : HitHands {
+				name = "LeftArm";
+				memoryPoint = "lelbow";
+			};
+			
+			class HitRArm : HitHands {
+				name = "RightArm";
+				memoryPoint = "relbow";
+			};
+			
+			class HitLForeArm : HitHands {
+				name = "LeftForeArm";
+				memoryPoint = "lwrist";
+			};
+			
+			class HitRForeArm : HitHands {
+				name = "RightForeArm";
+				memoryPoint = "rwrist";
+			};
+			
+			class HitLHand : HitHands {
+				name = "LeftHand";
+				memoryPoint = "LeftHandMiddle1";
+			};
+			
+			class HitRHand : HitHands {
+				name = "RightHand";
+				memoryPoint = "RightHandMiddle1";
+			};
+			
+			class HitLegs : HitHands {
+				name = "legs";
+				memoryPoint = "pelvis";
+			};
+			
+			class HitLLeg : HitHands {
+				name = "LeftLeg";
+				memoryPoint = "lknee";
+			};
+			
+			class HitLLegUp : HitHands {
+				name = "LeftUpLeg";
+				memoryPoint = "lfemur";
+			};
+			
+			class HitRLeg : HitHands {
+				name = "RightLeg";
+				memoryPoint = "rknee";
+			};
+			
+			class HitRLegUp : HitHands {
+				name = "RightUpLeg";
+				memoryPoint = "rfemur";
+			};
+		};
+	};
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -37,11 +145,11 @@ class CfgVehicles {
 	
 	class Mi17_DZ: Mi17_base	
 	{
-		displayName = "Mi17_DZ";
+		displayname = "Mi-8M";
+		displaynameshort = "Mi17_DZ";
 		scope = 2;
 		side = 2;
 		crew = "";
-		maxSpeed = 180;	// max speed on level road, km/h
 		typicalCargo[] = {};
 		hiddenSelections[] = {};
 		class TransportMagazines{};
@@ -49,6 +157,9 @@ class CfgVehicles {
 		commanderCanSee = 2+16+32;
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 50;
+        transportmaxbackpacks = 10;
 		
 		class Turrets : Turrets 
 		{
@@ -91,6 +202,9 @@ class CfgVehicles {
 		commanderCanSee = 2+16+32;
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+        transportmaxbackpacks = 4;
 		
 		class Turrets : Turrets 
 		{
@@ -104,7 +218,65 @@ class CfgVehicles {
 			};
 		};
 	};
-	
+	class AH6_Base_EP1;
+	//class AH6X_EP1: AH6_Base_EP1 {};
+	class AH6X_DZ: AH6_Base_EP1
+	{
+		displayname = "AH6X Little Bird";
+		displaynameshort = "AH6X_DZ";
+		audible = 6;
+		enablemanualfire = 0;
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenselections[] = {"camo1"};
+		hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa"};
+		icon = "\ca\air_e\data\UI\Icon_ah6x_CA.paa";
+		model = "\ca\air_e\ah6j\ah6x";
+		picture = "\ca\air_e\data\UI\Picture_ah6x_CA.paa";
+		isuav = 0;
+		radartype = 0;
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 3;
+		transportMaxMagazines = 10;
+        transportmaxbackpacks = 2;
+		class Turrets {};
+	};
+	class MH6J_DZ: AH6_Base_EP1
+	{
+		scope = 2;
+		side = 2;
+		crew = "";
+		enablemanualfire = 0;
+		typicalCargo[] = {};
+		displayname = "MH-6J Little Bird";
+		displaynameshort = "MH6J_DZ";
+		hiddenselections[] = {"camo1", "camo2"};
+		transportsoldier = 5;
+		hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
+		icon = "\ca\air_e\data\UI\Icon_mh6j_CA.paa";
+		model = "\ca\air_e\ah6j\mh6j";
+		picture = "\ca\air_e\data\UI\Picture_mh6j_CA.paa";
+		radartype = 0;
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 3;
+		transportMaxMagazines = 20;
+        transportmaxbackpacks = 5;
+		class Turrets {};
+	};	
 	class Animal;
 	class Pastor;
 	class Fin;
@@ -341,6 +513,17 @@ class CfgVehicles {
 		canHideBodies = 1;
 	};	
 	class Bag_Base_EP1;
+	class CZ_VestPouch_EP1: Bag_Base_EP1 
+	{
+		displayname = "Czech Vest Pouch";
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
+		mapsize = 2;
+		model = "\ca\weapons_e\AmmoBoxes\backpack_acr_small.p3d";
+		picture = "\ca\weapons_e\data\icons\backpack_ACR_small_CA.paa";
+		scope = 2;
+		transportmaxmagazines = 12;
+		transportmaxweapons = 0;
+	};
 	class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 	{
 		scope = 2;
@@ -400,7 +583,8 @@ class CfgVehicles {
 	class An2_Base_EP1;
 	class AN2_DZ: An2_Base_EP1
 	{
-		displayName = "AN2_DZ";
+		displayname = "AN2 Cargo Plane";
+		displaynameshort = "AN2_DZ";
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -414,31 +598,9 @@ class CfgVehicles {
 		commanderCanSee = 2+16+32;
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
-	};
-	//AH6X_EP1
-	class AH6X_EP1
-	{ 
-		scope = 0;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;	
-	};
-	class AH6X_DZ: AH6X_EP1
-	{
-		displayName = "AH6X_DZ";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		gunnerHasFlares = false;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 80;
+		transportmaxbackpacks = 15;
 	};
 	class House {
 		class DestructionEffects;
@@ -455,7 +617,14 @@ class CfgVehicles {
 		displayName = "Crashed UH-1Y";
 		vehicleClass = "Wrecks";
 	};
-
+	class UH60Wreck_DZ: SpawnableWreck
+	{
+		model = "\Ca\Misc_E\Wreck_UH60_EP1.p3d";
+		icon = "ca\Misc_E\data\Icons\Icon_uh60_wreck_CA";
+		mapSize = 15;
+		displayName = "UH-60 Wreck";
+		vehicleClass = "Wrecks";
+	};
 	class Strategic;
 	class NonStrategic;
 

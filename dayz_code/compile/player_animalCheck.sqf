@@ -30,7 +30,6 @@ if (count _list < dayz_maxAnimals) then {
 
 	_root = configFile >> "CfgVehicles" >> _type;
 	_favouritezones = getText ( _root >> "favouritezones");
-	
 	//_randrefpoint = [position player, 10, dayz_animalDistance, 1, 0, 50, 0] call BIS_fnc_findSafePos;
 	_randrefpoint = getposATL player;
 	_PosList = 		selectbestplaces [_randrefpoint,dayz_animalDistance,_favouritezones,10,5];
@@ -46,20 +45,3 @@ if (count _list < dayz_maxAnimals) then {
 	};
 	sleep 1;
 };
-
-//Comment out above code and use code below for testing
-/*
-private["_type","_pos","_agent","_id"];
-_near = (position player) nearEntities ["DZ_Pastor",500];
-
-if (count _near == 0) then {
-	_type = "DZ_Pastor";
-	_pos = player modelToWorld [0,(count _near) + 1,0];
-	_agent = createAgent [_type, _pos, [], 0, "NONE"];
-	player reveal _agent;
-	_agent setpos _pos;
-	//_id = [_pos,_agent] execFSM "\z\addons\dayz_code\system\animal_agent.fsm";
-	_id = 1;
-	_agent setVariable ["fsm_handle", _id];
-};
-*/

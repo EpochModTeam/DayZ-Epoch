@@ -1,5 +1,5 @@
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
-private["_unit","_firer","_distance","_weapon","_ammo","_killerID","_handled","_arc","_isBallistic","_dmgDistance","_isRocket","_isPlayer","_inVehicle","_evType","_recordable","_turretDir","_weaponDir","_pos1","_pos2","_facing","_firingArc","_isInFront","_isInRear","_id"];
+private["_unit","_magazine","_used","_quantity","_magsNet","_magsWhole","_key","_result","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_dmgDistance","_isBallistic","_handled"];
 //Init
 	//[unit, firer, distance, weapon, muzzle, mode, ammo]
 	_unit = 	_this select 0;

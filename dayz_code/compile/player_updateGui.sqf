@@ -1,4 +1,4 @@
-private["_foodVal","_thirstVal","_tempVal","_combatVal","_array","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_ctrlTemp","_ctrlEar","_ctrlEye","_ctrlHumanity","_ctrlCombat","_ctrlFracture","_bloodLvl","_thirstLvl","_foodLvl","_blood","_thirst","_food","_temp","_tempImg","_tempLvl","_ca","_visualtext","_visual","_audibletext","_audible","_humanity","_guiHumanity","_humanityText"];
+private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible"];
 disableSerialization;
 
 _foodVal = 		1 - (dayz_hunger / SleepFood);
@@ -62,7 +62,10 @@ if (_bloodLvl <= 0) then {
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_" + str(_bloodLvl) + "_ca.paa";
 	};
 
+if (_thirstLvl < 0) then { _thirstLvl = 0 };
 _thirst = "\z\addons\dayz_code\gui\status_thirst_inside_" + str(_thirstLvl) + "_ca.paa";
+
+if (_foodLvl < 0) then { _foodLvl = 0 };
 _food = "\z\addons\dayz_code\gui\status_food_inside_" + str(_foodLvl) + "_ca.paa";
 
 if ( _tempLvl >= 36 )							then { _tempImg = 4 };

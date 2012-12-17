@@ -1,9 +1,11 @@
-private["_objects","_dialog","_magazineArray","_control","_i","_item","_val","_max"];
-_objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage","VaultStorage"], 10];
+private ["_objects"];
+_objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage"], 10];
 {
-	dayzUpdateVehicle = [_x,"all"];
+	dayzUpdateVehicle = [_x,"gear"];
 	publicVariableServer "dayzUpdateVehicle";
 } foreach _objects;
+
+private["_dialog","_magazineArray","_control","_item","_val","_max"];
 
 disableSerialization;
 _dialog = 			_this select 0;

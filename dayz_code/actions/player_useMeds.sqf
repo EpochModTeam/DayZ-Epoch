@@ -1,4 +1,4 @@
-private["_item","_onLadder","_hasmeditem","_config","_text","_id"];
+private["_item"];
 _item = _this;
 call gear_ui_init;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;

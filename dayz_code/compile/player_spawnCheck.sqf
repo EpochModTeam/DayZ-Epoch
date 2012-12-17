@@ -15,7 +15,7 @@ dayz_inVehicle = _inVehicle;
 //if (((time - dayz_spawnWait) < dayz_spawnDelay) or ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {diag_log("Skipping Check since neither loot or zombies are ready");};
 //if (((time - dayz_spawnWait) < dayz_spawnDelay) and ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {};
 
-diag_log("SPAWN CHECKING: Starting");
+//diag_log("SPAWN CHECKING: Starting");
 _radius = 300; 
 _locationstypes = ["NameCityCapital","NameCity","NameVillage","NameLocal"];
 _nearestCity = nearestLocations [getPos player, _locationstypes, _radius];
@@ -29,40 +29,41 @@ if ((count _nearestCity) > 0) then {
 };
 
 _nearbytype = type (_nearestCity select 0);
-_nearby = _position nearObjects ["Building",_radius];
 
 switch (_nearbytype) do {
-	default {
-		_maxZombies = 20;
+	case "Hill": {
+		_radius = 50; 
+		_maxZombies = 30;
 	};
 	case "NameLocal": {
+		_radius = 100; 
 		_maxZombies = 40;
 	};
 	case "NameVillage": {
+		_radius = 150; 
 		_maxZombies = 60;
 	};
 	case "NameCity": {
+		_radius = 200; 
 		_maxZombies = 80;
 	};
 	case "NameCityCapital": {
+		_radius = 300; 
 		_maxZombies = 100;
 	};
+	default {
+		_radius = 100; 
+		_maxZombies = 40;
+	};	
 };
 
-//diag_log ("nearbytype: " +str(_nearbytype));
+	_nearby = _position nearObjects ["Building",_radius];
 
 if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
 
-	_age = 0;
-	_tooManyZs = count (_position nearEntities ["zZombie_Base",200]) > _maxZombies;
-	//diag_log("Too Many Zeds: " +str(_tooManyZs));
-    //diag_log(format["SPAWN CHECK: Building count is %1", count _nearby]);
-	_count = ({alive _x} count allMissionObjects "zZombie_Base");
-	//hint "Total Zeds: " +str(_count));
-	//hint format["Total Zeds %1",_count];
-	diag_log ("Total Zeds: " +str(_count));
+	_tooManyZs = count (_position nearEntities ["zZombie_Base",_radius * 2]) > _maxZombies;
     {
 		//diag_log("SPAWN CHECK: Start of Loop");
         _type = typeOf _x;
@@ -88,6 +89,7 @@ if (_inVehicle) then {
 			};
 		};
 		
+		
 		if (_canZombie) then {
 			if (dayz_spawnZombies < _maxZombies) then {
 				if (!_tooManyZs) then {
@@ -107,9 +109,6 @@ if (_inVehicle) then {
 						};
 					};
 				};
-			//} else {
-				//dayz_spawnWait = time;
-				//dayz_spawnZombies = 0;
 			};
 		};
 	} forEach _nearby;

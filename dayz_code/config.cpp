@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.D1210";
+		version = "1.7.5.D1216";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -191,9 +191,9 @@ class CfgBuildingLoot {
 			2,
 			0.06,
 			0.04,
-			0.01,
+			0.04, //{"CZ_VestPouch_EP1","object"},
 			0.03,
-			0.03,
+			0.02,
 			0.01,
 			0.01,
 			0.03,
@@ -243,7 +243,7 @@ class CfgBuildingLoot {
 			0.04,
 			0.05,
 			0.02,
-			0.03,
+			0.02,
 			0.04,
 			0.01,
 			0.04,
@@ -329,9 +329,9 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.01,
-			0.01,
-			0.02,
+			0.04, //{"CZ_VestPouch_EP1","object"},
 			0.03,
+			0.02,
 			0.01,
 			0.01,
 			0.3,
@@ -373,6 +373,7 @@ class CfgBuildingLoot {
 			//{"G36_C_SD_camo","weapon"},
 			{"G36A_camo","weapon"},
 			{"G36K_camo","weapon"},
+			{"100Rnd_762x54_PK","magazine"},
 			{ "Skin_Rocket_DZ","magazine" },
 			{ "Skin_Soldier1_DZ","magazine" }
 };
@@ -400,6 +401,7 @@ class CfgBuildingLoot {
 			//0.01,	//G36_C_SD_camo
 			0.02,	//G36A_camo
 			0.02,	//G36K_camo
+			0.01,	//("100Rnd_762x54_PK","magazine"}
 			0.01,
 			0.05
 	};
@@ -565,6 +567,7 @@ class CfgBuildingLoot {
 			{"Sa58V_CCO_EP1","weapon"},
 			{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
+			{"100Rnd_762x54_PK","magazine"},
 			{ "Skin_Soldier1_DZ","magazine" }
 	};
 		itemChance[] =	{
@@ -615,6 +618,7 @@ class CfgBuildingLoot {
 			0.01, //Sa58V_CCO_EP1
 			0.01, //{"G36_C_SD_camo","weapon"},
 			0.02, // M40A3
+			0.01,	//("100Rnd_762x54_PK","magazine"}
 			0.05
 		};
 	};
@@ -909,6 +913,14 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 	};
 
+	class UH60Wreck_DZ: Military {
+		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+		zombieChance = 0;
+		lootChance = 0;
+		minRoaming = 4;
+		maxRoaming = 8;
+		lootPos[] = {};
+	};
 
 	class USMC_WarfareBFieldhHospital: MASH {
 		minRoaming = 1;

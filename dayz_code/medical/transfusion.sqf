@@ -39,11 +39,10 @@ if (_finished) then {
 	player removeMagazine "ItemBloodbag";	
 	usecTransfuse = [_unit,player];
 	publicVariable "usecTransfuse";
+	dayzHumanity = [player,250];
+	_id = dayzHumanity spawn player_humanityChange;
 } else {
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;
 	player playActionNow "stop";
 };
-
-dayzHumanity = [player,250];
-_id = dayzHumanity spawn player_humanityChange;

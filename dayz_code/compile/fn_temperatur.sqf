@@ -19,7 +19,7 @@ Missing:
 */
 
 
-	private["_looptime","_vehicle_factor","_moving_factor","_fire_factor","_rain_factor","_night_factor","_wind_factor","_building_factor","_sun_factor","_water_factor","_difference","_hasfireffect","_isinbuilding","_isinvehicle","_raining","_sunrise","_vel","_speed","_fireplaces","_building","_daytime","_height_mod","_temp"];
+	private ["_looptime","_sun_factor","_building_factor","_vehicle_factor","_fire_factor","_water_factor","_rain_factor","_night_factor","_wind_factor","_height_mod","_difference","_hasfireffect","_isinbuilding","_isinvehicle","_raining","_sunrise","_building"];
 
 	_looptime 			= _this;
 	

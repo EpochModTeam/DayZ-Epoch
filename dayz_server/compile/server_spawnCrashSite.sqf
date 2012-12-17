@@ -75,34 +75,23 @@ while {true} do {
 		};
 
 		_num		= round(random _randomizedLoot) + _guaranteedLoot;
-		_config		= configFile >> "CfgBuildingLoot" >> _lootTable;
-		_itemType	= [] + getArray (_config >> "itemType");
-		_itemChance	= [] + getArray (_config >> "itemChance");
+		
+		_config = 		configFile >> "CfgBuildingLoot" >> "HeliCrash";
+		_itemTypes =	[] + getArray (_config >> "itemType");
+		_index =		dayz_CBLCounts find (count _itemTypes);
+		_weights =		dayz_CBLChances select _index;
+		_cntWeights = count _weights;
 
 		waituntil {!isnil "fnc_buildWeightedArray"};
 
 		for "_x" from 1 to _num do {
-			private["_totalItems","_randomNum"];
+			//create loot
+			_index = floor(random _cntWeights);
+			_index = _weights select _index;
+			_itemType = _itemTypes select _index;
+			[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
 
-			// _weights is rebuilt every itteration of this loop since there's some weird bug that causes _weights
-			// to lose data each itteration of the 'for' loop despite no manipulation of it.  That's why the original wreck
-			// code had the condition "if (count _itemType > _index) then {" since sometimes _index would be larger than
-			// the data left in the array.  So, yes, this is not performant -- but this code is called so infrequently
-			// that this seems to be more tolerable than the prior way which meant some loot simply wouldn't spawn in for the wreck.
-			_weights	= [];
-			_weights	= [_itemType,_itemChance] call fnc_buildWeightedArray;
-			_totalItems	= (count _weights) - 1;
-			_randomNum	= round(random _totalItems);
-			_index		= _weights select _randomNum;
-			//diag_log(format["DIAG: Total Items: %1 | Random Num: %2 | Index: %3 | Selection: %4 | Weights: %5", _totalItems, _randomNum, _index, str(_itemType select _index), count _weights]);
-
-			_iArray = (_itemType select _index);
-			_iArray set [2,_position];
-			_iArray set [3,5]; // Spawn radius: May need to expose this as configurable or use sizeOf(_crashModel) here.  Some wreck models have GIANT sizeOf though and may scatter loot too far
-			//diag_log(format["DIAG: _iArray => %1 <=", str(_iArray)]);
-			_iArray call spawn_loot;
-
-			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2': %3 (%4)", _crashName, _lootTable, _iArray select 0, _iArray select 1]); 
+			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]); 
 
 			// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
 			_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
