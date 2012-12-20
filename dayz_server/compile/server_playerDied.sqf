@@ -5,6 +5,7 @@ _minutes =		_this select 1;
 _newObject = 	_this select 2;
 _playerID = 	_this select 3;
 _playerName = 	_this select 4;
+_infected =		_this select 5;
 
 dayz_disco = dayz_disco - [_playerID];
 _newObject setVariable["processedDeath",time];
@@ -23,7 +24,7 @@ if (typeName _minutes == "STRING") then
 	
 if (_characterID != "0") then 
 {
-	_key = format["CHILD:202:%1:%2:",_characterID,_minutes];
+	_key = format["CHILD:202:%1:%2:%3:",_characterID,_minutes,_infected];
 	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 } 

@@ -7,6 +7,7 @@ _range = 300;
 _manDis = 0;
 
 _targets = _agent getVariable ["targets",[]];
+/*
 //Search for fires
 if (count _targets == 0) then {
 	_fires = nearestObjects [_agent,["Land_Fire"],_range];
@@ -20,6 +21,7 @@ if (count _targets == 0) then {
 		};
 	} forEach _fires;
 };
+*/
 
 if (isNil "_targets") exitWith {};
 //Search for objects

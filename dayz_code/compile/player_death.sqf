@@ -1,72 +1,27 @@
-private["_array","_source","_kills","_killsV","_humanity","_wait","_myKills","_dont_kill","_model"];
+private["_array","_source","_kills","_killsV","_humanity","_wait","_myKills","_infected"];
 if (deathHandled) exitWith {};
+
 deathHandled = true;
 //Death
-_dont_kill = false;
 
 _body =		player;
 _playerID =	getPlayerUID player;
 
-
-
-// If player was infected resurect as a zombie before death
-if (r_player_infected) then {
-	if(player isKindOf "PZombie_VB") then {
-		// do nothing kill anyways
-	} else {
-		_model = ["pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest"] select floor (random 11);
-		[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
-		
-		r_player_inpain = false;
-		r_player_dead = false;
-		r_player_injured = false;
-		r_player_cardiac = false;
-			
-		//Give Blood
-		r_player_blood = r_player_bloodTotal;
-		player setVariable["USEC_lowBlood",false,true];
-		usecMorphine = [player,player];
-		publicVariable "usecMorphine";
-		player setVariable ["USEC_inPain", false, true];
-		usecBandage = [player,player];
-		publicVariable "usecBandage";
-		player setdamage 0;
-		{player setVariable[_x,false,true];} forEach USEC_woundHit;
-		player setVariable ["USEC_injured",false,true];
-			
-		sleep 1;
-		r_player_handler = false;
-		nul = [] spawn fnc_usec_recoverUncons;
-
-		disableUserInput false;
-
-		// player setVariable ["medForceUpdate",true,true];
-
-		if (!(player getVariable ["NORRN_unconscious", true])) then {
-			nul = [] spawn fnc_usec_recoverUncons;
-		};
-		if(animationState player == "AmovPpneMstpSnonWnonDnon_healed") then {
-			nul = [] spawn fnc_usec_recoverUncons;
-		};
-
-		_dont_kill = true;
-	};
-
+_infected = 0;
+if (r_player_infected) then { 
+	_infected = 1; 
 };
 
-if (_dont_kill) exitWith {};
-
 //Send Death Notice
-dayzDeath = [dayz_characterID,0,_body,_playerID,dayz_playerName];
+dayzDeath = [dayz_characterID,0,_body,_playerID,dayz_playerName,_infected];
 publicVariableServer "dayzDeath";
 if (isServer) then {
-	_id = dayzDeath spawn server_playerDied; 
+	_id = dayzDeath spawn server_playerDied;
 };
 
 _id = [player,50,true,getPosATL player] spawn player_alertZombies;
 
 sleep 0.5;
-
 
 player setDamage 1;
 0.1 fadeSound 0;

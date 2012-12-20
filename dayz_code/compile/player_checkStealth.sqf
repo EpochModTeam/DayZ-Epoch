@@ -8,7 +8,7 @@ _scaleLight = 0.5;
 _scaleAlert = 1;
 
 _isPZombie = player isKindOf "PZombie_VB";
-if(_isPZombie) exitWith {};
+if(_isPZombie) exitWith { DAYZ_disAudial = 0; DAYZ_disVisual = 0; };
 
 //Assess Players Position
 _anim = animationState player;

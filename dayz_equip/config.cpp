@@ -1071,13 +1071,13 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "Business Suit";
-		descriptionShort = "Rebel Uniform;
+		descriptionShort = "Business Suit;
 	};
 	class Skin_Priest_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Priest Outfit";
-		descriptionShort = "Rebel Uniform;
+		descriptionShort = "Priest Outfit;
 	};
 	class Skin_Rocker2_DZ: SkinBase
 	{
