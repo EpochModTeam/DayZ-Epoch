@@ -45,7 +45,7 @@ item40[] = {"Too_Long",4,218,300.000000,550.000000,400.000000,600.000000,0.00000
 item41[] = {"Too_Long",4,218,300.000000,650.000000,400.000000,700.000000,0.000000,"Too" \n "Long"};
 item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
 item43[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
-item44[] = {"New_Character",4,4314,-425.000000,275.000000,-325.000000,325.000000,5.000000,"New" \n "Character"};
+item44[] = {"New_Character",4,218,-425.000000,275.000000,-325.000000,325.000000,5.000000,"New" \n "Character"};
 item45[] = {"Gender_Selection",2,250,-500.000000,350.000000,-400.000000,400.000000,0.000000,"Gender Selection" \n "Dialog"};
 item46[] = {"Selected",4,218,-450.000000,450.000000,-350.000000,500.000000,0.000000,"Selected"};
 item47[] = {"Process",2,250,-300.000000,475.000000,-200.000000,525.000000,0.000000,"Process"};
@@ -54,8 +54,8 @@ item49[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000
 item50[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
 item51[] = {"Stream",2,250,-75.000000,750.000000,25.000000,800.000000,0.000000,"Stream"};
 item52[] = {"Preloaded",4,218,-175.000000,800.000000,-75.000000,850.000000,0.000000,"Preloaded"};
-item53[] = {"Pzombie_Characte",4,218,-250.000000,350.000000,-150.000000,400.000000,5.000000,"Pzombie" \n "Character"};
-item54[] = {"PZombie_Selectio",2,250,-375.000000,375.000000,-275.000000,425.000000,0.000000,"PZombie Selection"};
+item53[] = {"New_Infected_Cha",4,218,-250.000000,350.000000,-150.000000,400.000000,5.000000,"New" \n "Infected" \n "Character"};
+item54[] = {"Player_Zombie__S",2,250,-375.000000,375.000000,-275.000000,425.000000,0.000000,"Player Zombie" \n " Selection"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -119,8 +119,8 @@ link59[] = {51,52};
 link60[] = {52,29};
 link61[] = {53,54};
 link62[] = {54,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-783.086182,670.969788,890.729858,-115.220749,1272,880,1};
-window[] = {2,-1,-1,-1,-1,806,1706,2677,26,3,1290};
+globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-783.086182,670.969788,804.274658,-149.949509,960,630,1};
+window[] = {2,-1,-1,-1,-1,760,21,992,0,3,978};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -519,11 +519,11 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "Pzombie_Characte">*/
-        class Pzombie_Characte
+        /*%FSM<LINK "New_Infected_Cha">*/
+        class New_Infected_Cha
         {
           priority = 5.000000;
-          to="PZombie_Selectio";
+          to="Player_Zombie__S";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_isNew && _isInfected == 1"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -1293,11 +1293,12 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "PZombie_Selectio">*/
-    class PZombie_Selectio
+    /*%FSM<STATE "Player_Zombie__S">*/
+    class Player_Zombie__S
     {
-      name = "PZombie_Selectio";
-      init = /*%FSM<STATEINIT""">*/"_model = ""pz_villager1"";"/*%FSM</STATEINIT""">*/;
+      name = "Player_Zombie__S";
+      init = /*%FSM<STATEINIT""">*/"_zssupported = [""pz_policeman"",""pz_suit1"",""pz_suit2"",""pz_worker1"",""pz_worker2"",""pz_worker3"",""pz_doctor"",""pz_teacher"",""pz_hunter"",""pz_villager1"",""pz_villager2"",""pz_villager3"",""pz_priest""];" \n
+       "_model =  (_zssupported select floor(random(count _zssupported)));"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

@@ -1682,11 +1682,7 @@ class CfgVehicles
 	};
 	class pz_villager3: pz_villager1
 	{
-		model = "\ibr_lcivilians\civil_7_tshirt_shorts.p3d";
-		class Wounds
-		{
-			hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v3_co.paa"};
-		};
+		hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v3_co.paa"};
 	};
 	class pz_priest: PZombie_VB
 	{
