@@ -231,18 +231,10 @@ for "_x" from 1 to MaxDynamicDebris do {
 	//waitUntil{scriptDone _id};
 };
 
-//Spawn crashed helos
-//for "_x" from 1 to MaxHeliCrashes do {
-	//_id = [] spawn spawn_heliCrash;
-	//waitUntil{scriptDone _id};
-//};
-
-// Allow connection after road debris spawns
-
 
 allowConnection = true;
 
-_randomcrashmodel = ["UH60Wreck_DZ","UH1Wreck_DZ","UH60Wreck_DZ","UH1Wreck_DZ"] call BIS_fnc_selectRandom;
-_randomcrashloot = ["Military","HeliCrash","MilitarySpecial","Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
-// [_crashModel, _lootTable, _guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
-nul = [_randomcrashmodel, _randomcrashloot, 3, 4, (50 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;
+
+// [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
+nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;
+

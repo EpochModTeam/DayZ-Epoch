@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.D1216";
+		version = "1.7.5.D1222";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -405,6 +405,66 @@ class CfgBuildingLoot {
 			0.01,
 			0.05
 	};
+	};
+class HeliCrash_No50s: Default {
+		zombieChance = 0;
+		maxRoaming = 2;
+		zombieClass[] = {"z_soldier_pilot"};
+		lootChance = 0.5;
+		lootPos[] = {};
+		itemType[] =	{		
+			{"FN_FAL","weapon"},
+			{"bizon_silenced","weapon"},
+			{"M14_EP1","weapon"},
+			{"FN_FAL_ANPVS4","weapon"},
+//			{"M107_DZ","weapon"},
+//			{"BAF_AS50_scoped","weapon"},
+			{"Mk_48_DZ","weapon"},
+			{"M249_DZ","weapon"},
+			//{"BAF_L85A2_RIS_CWS","weapon"},
+			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"DMR","weapon"},
+			{"","military"},
+			{"","medical"},
+			{"MedBox0","object"},
+			{"NVGoggles","weapon"},
+			{"AmmoBoxSmall_556","object"},
+			{"AmmoBoxSmall_762","object"},
+			{"Skin_Camo1_DZ","magazine"},
+			{"Skin_Sniper1_DZ","magazine"},
+			{"G36C","weapon"},
+			{"G36C_camo","weapon"},
+			//{"G36_C_SD_camo","weapon"},
+			{"G36A_camo","weapon"},
+			{"G36K_camo","weapon"},
+			{"100Rnd_762x54_PK","magazine"}
+		};
+		itemChance[] =	{
+			0.02,		//{"FN_FAL","weapon"},
+			0.05,		//{"bizon_silenced","weapon"},
+			0.05,		//{"M14_EP1","weapon"},
+			0.02,		//{"FN_FAL_ANPVS4","weapon"},
+//			0.02,		//{"m107","weapon"},
+//			0.01,		//{"BAF_AS50_scoped","weapon"},
+			0.03,		//{"Mk_48_DZ","weapon"},
+			0.05,		//{"M249_DZ","weapon"},
+			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
+			0.06,		//{"DMR","weapon"},
+			1,			//{"","military"},
+			0.5,		//{"","medical"},
+			0.1,		//{"MedBox0","object"},
+			0.02,		//{"NVGoggles","weapon"}
+			0.1,	//AmmoBoxSmall_556
+			0.1,	//AmmoBoxSmall_762
+			0.08,	//Skin_Camo1_DZ
+			0.05,	//Skin_Sniper1_DZ
+			0.03,	//G36C"
+			0.02,	//G36C_camo
+			//0.01,	//G36_C_SD_camo
+			0.02,	//G36A_camo
+			0.02,	//G36K_camo
+			0.01	//("100Rnd_762x54_PK","magazine"}
+		};
 	};
 	class Hospital: Default {
 		zombieChance = 0.4;

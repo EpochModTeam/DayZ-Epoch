@@ -22,7 +22,7 @@ if ((_timeout - time) > 0) then {
 };
 
 diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
-
+_id = [_playerID,_characterID,2] spawn dayz_recordLogin;
 dayz_disco = dayz_disco - [_playerID];
 if (!isNull _object) then {
 //Update Vehicle
@@ -30,7 +30,6 @@ if (!isNull _object) then {
 		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10]);
 	if (alive _object) then {
 		[_object,[],true] call server_playerSync;
-		_id = [_playerID,_characterID,2] spawn dayz_recordLogin;
 		_myGroup = group _object;
 		deleteVehicle _object;
 		deleteGroup _myGroup;

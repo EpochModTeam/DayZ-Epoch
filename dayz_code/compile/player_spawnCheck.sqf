@@ -1,114 +1,83 @@
+private["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_nearbyBuildings","_radius","_locationstypes","_nearestCity","_position","_nearbytype"];
+_type = _this select 0;
 _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);
 _maxZombies = dayz_maxLocalZombies;
-
+_maxWildZombies = 3;
 _age = -1;
-// If they just got out of a vehicle, boost their per-player zombie limit by 5 in hopes of allowing insta-spawn zombies
+_nearbyBuildings = [];
+	
+diag_log ("Type: " +str(_type));
 
-if (dayz_inVehicle and !_inVehicle) then {
-    dayz_spawnWait = -300;
-    //_maxZombies = _maxZombies + 2;
-};
-dayz_inVehicle = _inVehicle;
-
-//if (((time - dayz_spawnWait) < dayz_spawnDelay) or ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {diag_log("Skipping Check since neither loot or zombies are ready");};
-//if (((time - dayz_spawnWait) < dayz_spawnDelay) and ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {};
 
 //diag_log("SPAWN CHECKING: Starting");
-_radius = 300; 
-_locationstypes = ["NameCityCapital","NameCity","NameVillage","NameLocal"];
-_nearestCity = nearestLocations [getPos player, _locationstypes, _radius];
-
-//_nearestCity = [_locationstypes,[position player,600],false] call bis_fnc_locations;
-//diag_log ("0: " +str(_nearestCity));
-
-_position = getPosATL player;
-if ((count _nearestCity) > 0) then {
-	_position = position (_nearestCity select 0);  	
-};
-
-_nearbytype = type (_nearestCity select 0);
-
+	_radius = 300; 
+	_locationstypes = ["NameCityCapital","NameCity","NameVillage","NameLocal"];
+	_nearestCity = nearestLocations [getPos player, _locationstypes, _radius];
+	_townname = text (_nearestCity select 0);
+	
+	_position = getPosATL player;
+	if ((count _nearestCity) > 0) then {
+		_position = position (_nearestCity select 0);  	
+	};
+	
+	_nearbytype = type (_nearestCity select 0);
+	
 switch (_nearbytype) do {
-	case "Hill": {
-		_radius = 50; 
+	case "NameLocal": {
+		_radius = 200; 
 		_maxZombies = 30;
 	};
-	case "NameLocal": {
-		_radius = 100; 
-		_maxZombies = 40;
-	};
 	case "NameVillage": {
-		_radius = 150; 
-		_maxZombies = 60;
+		_radius = 250; 
+		_maxZombies = 40;
 	};
 	case "NameCity": {
-		_radius = 200; 
-		_maxZombies = 80;
+		_radius = 300; 
+		_maxZombies = 45;
 	};
 	case "NameCityCapital": {
-		_radius = 300; 
-		_maxZombies = 100;
+		_radius = 400; 
+		_maxZombies = 50;
 	};
 	default {
-		_radius = 100; 
-		_maxZombies = 40;
+		_radius = 200; 
+		_maxZombies = 20;
 	};	
 };
 
-	_nearby = _position nearObjects ["Building",_radius];
-
-if (_inVehicle) then {
-	_maxZombies = _maxZombies / 2;
+/*
+if ((count _nearestCity) > 0) then {
+	_markerstr = createMarker["markername_" +str (_townname), _position];
+	_markerstr setMarkerText _townname;
+	_markerstr setMarkerColor "ColorGreen";
+	_markerstr setMarkerShape "ELLIPSE";
+	_markerstr setMarkerBrush "Grid";
+	_markerstr setMarkerSize [_radius, _radius];
 };
 
-	_tooManyZs = count (_position nearEntities ["zZombie_Base",_radius * 2]) > _maxZombies;
-    {
-		//diag_log("SPAWN CHECK: Start of Loop");
-        _type = typeOf _x;
-        _config =       configFile >> "CfgBuildingLoot" >> _type;
-        _canZombie = isClass (_config);
-        _canLoot = ((count (getArray (_config >> "lootPos"))) > 0);
-        _dis = _x distance player;
-		//diag_log ("Type: " +str(sizeOf _type));
+	deleteMarker "Player_Marker_Radius";
+	_markerstr = createMarker["Player_Marker_Radius", getPosATL player];
+	_markerstr setMarkerColor "ColorRed";
+	_markerstr setMarkerShape "ELLIPSE";
+	_markerstr setMarkerBrush "Border";
+	_markerstr setMarkerSize [_radius, _radius];
+*/
 
 
-		if ((!_inVehicle) and (_canLoot)) then {    
-			_keepAwayDist = ((sizeOf _type)+5);
-			_isNoone =  {isPlayer _x} count (_x nearEntities ["CAManBase",_keepAwayDist]) == 0;
-			if (_isNoone) then {
-				_looted = (_x getVariable ["looted",0.0]);
-				_cleared = (_x getVariable ["cleared",true]);
-				_dateNow = (DateToNumber date);
-				_age = (_dateNow - _looted) * 525948;
-				if (_age > 8) then {
-					_x setVariable ["looted",_dateNow,true];
-					[_x] call building_spawnLoot;
-				};
-			};
-		};
-		
-		
-		if (_canZombie) then {
-			if (dayz_spawnZombies < _maxZombies) then {
-				if (!_tooManyZs) then {
-					private["_zombied"];
-					_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-					_dateNow = (DateToNumber date);
-					_age = (_dateNow - _zombied) * 525948;
-					//diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
-					if (_age > 1) then {
-						_bPos = getPosATL _x;
-						_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);	
-						//diag_log ("ZombiesNum: " +str(_zombiesNum));
-						if (_zombiesNum == 0) then {
-							//Randomize Zombies
-							_x setVariable ["zombieSpawn",_dateNow,true];
-							[_x] call building_spawnZombies;
-						};
-					};
-				};
-			};
-		};
-	} forEach _nearby;
+switch (_type) do {
+	case "Zeds": {
+		_spawnZombies = count (getPosATL player nearEntities ["zZombie_Base",_radius]) < _maxZombies;
+		if (_spawnZombies) then {
+			_nearbyBuildings = _position nearObjects ["building",_radius];
+			//_nearbyBuildings = nearestObjects [getPosATL player, dayz_ZombieBuildings, _radius]; //Cant be used Not all zones are covered yet (wrecks, Buildings outside towns)
+			[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies, _nearbyBuildings] call player_spawnzedCheck;
+		};	
+	};
+	case "Loot": {
+		_nearbyBuildings = _position nearObjects ["building",_radius];
+		//_nearbyBuildings = nearestObjects [_position, dayz_LootBuildings, _radius]; //Cant be used Not all zones are covered yet (wrecks, Buildings outside towns)
+		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings] call player_spawnlootCheck;
+	};
+};

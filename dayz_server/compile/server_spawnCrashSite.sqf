@@ -2,27 +2,38 @@ private["_position","_num","_config","_itemType","_itemChance","_weights","_inde
 
 waitUntil{!isNil "BIS_fnc_selectRandom"};
 
-_crashModel	= _this select 0;
-_lootTable	= _this select 1;
-_guaranteedLoot = _this select 2;
-_randomizedLoot = _this select 3;
-_frequency	= _this select 4;
-_variance	= _this select 5;
-_spawnChance	= _this select 6;
-_spawnMarker	= _this select 7;
-_spawnRadius	= _this select 8;
-_spawnFire	= _this select 9;
-_fadeFire	= _this select 10;
+//_crashModel	= _this select 0;
+//_lootTable	= _this select 1;
+_guaranteedLoot = _this select 0;
+_randomizedLoot = _this select 1;
+_frequency	= _this select 2;
+_variance	= _this select 3;
+_spawnChance	= _this select 4;
+_spawnMarker	= _this select 5;
+_spawnRadius	= _this select 6;
+_spawnFire	= _this select 7;
+_fadeFire	= _this select 8;
 
-_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
-diag_log(format["CRASHSPAWNER: Starting spawn logic for '%1' with loot table '%2'", _crashName, _lootTable]);
+diag_log("CRASHSPAWNER: Starting spawn logic for Crash Spawner");
 
 while {true} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
 	// Allows the variance to act as +/- from the spawn frequency timer
 	_timeAdjust = round(random(_variance * 2) - _variance);
 	_timeToSpawn = time + _frequency + _timeAdjust;
+	
+	//Adding some Random systems
+	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ"] call BIS_fnc_selectRandom;
+	
+	//Crash loot just uncomment the one you wish to use by default with 50cals is enabled.
+	//Table including 50 cals
+	_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
+	//Table without 50 cals
+	//_lootTable = ["Military","HeliCrash_No50s","MilitarySpecial"] call BIS_fnc_selectRandom;
+	
+	
+	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
 	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
 
@@ -41,6 +52,16 @@ while {true} do {
 		diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4", _crashName, _lootTable, time, str(_position)]);
 
 		_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
+		
+	deleteMarker "Secure Helicopter Wreck";
+		///Add crash site markers 
+	_crashmarker = createMarker["Secure Helicopter Wreck",_position];
+	_crashmarker setMarkerColor "ColorRed";
+	_crashmarker setMarkerType "Flag";
+	//_crashmarker setMarkerShape "ELLIPSE";
+	//_crashmarker setMarkerBrush "Grid";
+	_crashmarker setMarkerText "Secure Helicopter";
+	_crashmarker setMarkerSize [1, 1];
 
 		// Randomize the direction the wreck is facing
 		_crash setDir round(random 360);
@@ -100,7 +121,5 @@ while {true} do {
 			} forEach _nearBy;
 		};
 
-	} else {
-		diag_log(format["CRASHSPAWNER: Roll chance to spawn '%1' with loot table '%2' failed", _crashName, _lootTable]);
 	};
 };

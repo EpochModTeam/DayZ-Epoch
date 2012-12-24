@@ -14,7 +14,7 @@ item9[] = {"true",8,218,-300.000000,-175.000000,-200.000000,-125.000000,0.000000
 item10[] = {"Begin",2,250,-300.000000,-100.000000,-200.000000,-50.000000,0.000000,"Begin"};
 item11[] = {"",7,210,-254.000046,-29.000004,-245.999954,-20.999996,0.000000,""};
 item12[] = {"",7,210,-204.000046,146.000000,-195.999954,154.000000,0.000000,""};
-item13[] = {"Has_Target",4,218,-150.000000,225.000000,-50.000000,275.000000,1.000000,"Has" \n "Target"};
+item13[] = {"Has_Target",4,4314,-150.000000,225.000000,-50.000000,275.000000,1.000000,"Has" \n "Target"};
 item14[] = {"Chase",2,250,-150.000000,300.000000,-50.000000,350.000000,0.000000,"Chase"};
 item15[] = {"",7,210,-29.000006,146.000000,-20.999996,154.000000,0.000000,""};
 item16[] = {"",7,210,-29.000006,196.000000,-20.999996,204.000000,0.000000,""};
@@ -46,8 +46,8 @@ item41[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
 item42[] = {"too_long",4,218,-425.000000,600.000000,-325.000000,650.000000,0.000000,"too long"};
 item43[] = {"",7,210,-229.000000,621.000000,-221.000000,629.000000,0.000000,""};
 item44[] = {"",7,210,-479.000000,621.000000,-471.000000,629.000000,0.000000,""};
-item45[] = {"Reset_Targeting",2,4346,-525.000000,325.000000,-425.000000,375.000000,0.000000,"Reset" \n "Targeting"};
-item46[] = {"true",8,218,-525.000000,250.000000,-425.000000,300.000000,0.000000,"true"};
+item45[] = {"Reset_Targeting",2,250,-525.000000,325.000000,-425.000000,375.000000,0.000000,"Reset" \n "Targeting"};
+item46[] = {"No_target",4,218,-525.000000,250.000000,-425.000000,300.000000,0.000000,"No target"};
 item47[] = {"deleted",4,218,425.000000,-25.000000,525.000000,25.000000,0.000000,"deleted"};
 item48[] = {"",7,210,471.000000,-79.000000,479.000000,-71.000000,0.000000,""};
 item49[] = {"",7,210,471.000000,95.999977,479.000000,104.000023,0.000000,""};
@@ -122,8 +122,8 @@ link64[] = {49,47};
 link65[] = {50,28};
 link66[] = {51,5};
 link67[] = {52,1};
-globals[] = {25.000000,1,0,0,0,640,480,1,99,6316128,1,-558.318542,127.785744,629.057495,-6.630199,626,580,1};
-window[] = {0,-1,-1,-32000,-32000,712,46,1254,1,1,643};
+globals[] = {25.000000,1,0,0,0,640,480,1,99,6316128,1,-558.318542,127.785744,597.327209,-38.360462,626,580,1};
+window[] = {0,-1,-1,-1,-1,755,44,1252,44,1,643};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -249,6 +249,12 @@ class FSM
            "if (!_hasMoved) then {" \n
            "	_agent setVariable[""doLoiter"",true,true];" \n
            "};" \n
+           "if (!moveToCompleted _agent) then {" \n
+           "    _agent moveTo (position _agent);" \n
+           "};" \n
+           "" \n
+           "//Enable combat timer." \n
+           "_target setVariable[""startcombattimer"", 1, true];" \n
            "" \n
            "_countr = 0;" \n
            "_losCheck = 0;" \n
@@ -560,7 +566,10 @@ class FSM
     class Reset_Targeting
     {
       name = "Reset_Targeting";
-      init = /*%FSM<STATEINIT""">*/"if (!isNull _target) then {" \n
+      init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
+       "_target = _agent call zombie_findTargetAgent;" \n
+       "" \n
+       "if (!isNull _target) then {" \n
        "	_targetPos = getPosATL _target;" \n
        "	_agent setVariable [""myDest"",_targetPos];" \n
        "	_agent moveTo _targetPos;" \n
@@ -586,19 +595,25 @@ class FSM
            "if (!_hasMoved) then {" \n
            "	_agent setVariable[""doLoiter"",true,true];" \n
            "};" \n
+           "if (!moveToCompleted _agent) then {" \n
+           "    _agent moveTo (position _agent);" \n
+           "};" \n
+           "" \n
+           "//Enable combat timer." \n
+           "_target setVariable[""startcombattimer"", 1, true];" \n
            "" \n
            "_countr = 0;" \n
            "_losCheck = 0;" \n
            "_cantSee = false;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "true">*/
-        class true
+        /*%FSM<LINK "No_target">*/
+        class No_target
         {
           priority = 0.000000;
           to="Loiter";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isNull _target)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

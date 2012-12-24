@@ -1,4 +1,4 @@
-private["_cfgCount","_i","_j","_k","_l","_config","_defaultCfg","_itemTypes","_itemChances","_itemCount","_weighted","_weight"];
+private["_cfgCount","_config","_i","_itemChances","_itemCount","_weighted","_j","_weight","_l","_k","_type","_canZombie","_canLoot"];
 dayz_CBLChances = [];
 dayz_CBLCounts = [];
 
@@ -40,4 +40,23 @@ for "_i" from 0 to ((count (_config)) - 1) do {
 	};
 	dayz_CLBase set [count dayz_CLBase, configName (_config select _i)];
 	dayz_CLChances set [count dayz_CLChances, _weighted];		
+};
+
+private["_i","_type","_config","_canZombie","_canLoot"];
+dayz_ZombieBuildings = [];
+dayz_LootBuildings = [];
+for "_i" from 0 to (count (configFile >> "CfgBuildingLoot") - 1) do {
+	_type = (configFile >> "CfgBuildingLoot") select _i;
+	_canZombie = 	getNumber (_type >> "zombieChance") > 0;
+	_canLoot = 		getNumber (_type >> "lootChance") > 0;
+	if(_canZombie) then {
+		if(!((configName _type) in dayz_ZombieBuildings)) then {
+			dayz_ZombieBuildings set [count dayz_ZombieBuildings, configName _type];
+		};
+	};
+	if(_canLoot) then {
+		if(!((configName _type) in dayz_LootBuildings)) then {
+			dayz_LootBuildings set [count dayz_LootBuildings, configName _type];
+		};
+	};
 };

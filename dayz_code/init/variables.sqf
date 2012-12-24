@@ -230,11 +230,7 @@ dayz_maxAnimals = 5;
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
-
-if(isnil "dayz_maxLocalZombies") then {
-	dayz_maxLocalZombies = 40;
-};
-
+dayz_maxLocalZombies = 40;
 dayz_spawnPos = getPosATL player;
 
 //init global arrays for Loot Chances

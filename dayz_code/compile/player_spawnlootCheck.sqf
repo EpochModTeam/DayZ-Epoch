@@ -1,41 +1,28 @@
-private["_isAir","_inVehicle","_dateNow","_age","_radius","_locationstypes","_nearestCity","_position","_nearby","_type","_config","_canZombie","_canLoot","_dis","_keepAwayDist","_isNoone","_looted","_cleared"];
-_isAir = vehicle player iskindof "Air";
-_inVehicle = (vehicle player != player);
-_dateNow = (DateToNumber date);
-_age = -1;
+private["_radius","_position","_inVehicle","_dateNow","_age","_locationstypes","_nearestCity","_nearbyBuildings","_nearby","_type","_config","_canZombie","_canLoot","_dis","_keepAwayDist","_isNoone","_looted","_cleared"];//_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings
 
-	_radius = 300; 
-	_locationstypes = ["NameCityCapital","NameCity","NameVillage","NameLocal"];
-	_nearestCity = nearestLocations [getPos player, _locationstypes, _radius];
-	
-	_position = getPosATL player;
-	if ((count _nearestCity) > 0) then {
-		_position = position (_nearestCity select 0);  	
-	};
+_radius = _this select 0;
+_position = _this select 1;
+_inVehicle = _this select 2;
+_dateNow = _this select 3;
+_age = _this select 4;
+_locationstypes = _this select 5;
+_nearestCity = _this select 6;
+_nearby = _this select 7;
 
-	//_nearby = _position nearObjects ["Building",_radius / 2];
-	_nearby = nearestObjects [_position, ["Building"], _radius];
-	
-    {
-		//diag_log("SPAWN CHECK: Start of Loop");
-        _type = typeOf _x;
-        _config =       configFile >> "CfgBuildingLoot" >> _type;
-        _canZombie = isClass (_config);
-        _canLoot = ((count (getArray (_config >> "lootPos"))) > 0);
-        _dis = _x distance player;	
+diag_log ("Loot Started");
 
-		if ((!_inVehicle) and (_canLoot)) then {    
+{
+	if (!_inVehicle) then {    
+		_looted = (_x getVariable ["looted",-0.1]);
+		_dateNow = (DateToNumber date);
+		_age = (_dateNow - _looted) * 525948;
+		if (_age > 8) then {
 			_keepAwayDist = ((sizeOf _type) + 5);
-			_isNoone =  {isPlayer _x} count (_x nearEntities ["CAManBase",_keepAwayDist]) == 0;
-			if (_isNoone) then {
-				_looted = (_x getVariable ["looted",0.0]);
-				_cleared = (_x getVariable ["cleared",true]);
-				_dateNow = (DateToNumber date);
-				_age = (_dateNow - _looted) * 525948;
-				if (_age > 8) then {
-					_x setVariable ["looted",_dateNow,true];
-					[_x] call building_spawnLoot;
-				};
+			_noPlayerNear = (count ((getPosATL _x) nearEntities ["CAManBase",_keepAwayDist])) == 0;
+			if (_noPlayerNear) then {
+				_x setVariable ["looted",_dateNow,true];
+				[_x] call building_spawnLoot;
 			};
 		};
-	} forEach _nearby;
+	};
+} forEach _nearby;
