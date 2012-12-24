@@ -425,7 +425,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			// [_trader_id, _category, ];
-			_buy = player addAction ["Muscle Cars", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[411,"Muscle Cars"], 99, true, false, "",""];
+			
 			_buy1 = player addAction ["Trucks Armed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[422,"Truck Armed"], 97, true, false, "",""];
 			_buy2 = player addAction ["Utility", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[46,"Utility"], 95, true, false, "",""];
 			_buy3 = player addAction ["Helicopter Armed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[444,"Helicopter"], 91, true, false, "",""];
@@ -434,7 +434,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			_buy6 = player addAction ["Heavy Armor Unarmed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[48,"Heavy Armor Unarmed"], 88, true, false, "",""];
 			
 			
-			s_player_parts set [count s_player_parts,_buy];
+			
 			s_player_parts set [count s_player_parts,_buy1];
 			s_player_parts set [count s_player_parts,_buy2];
 			s_player_parts set [count s_player_parts,_buy3];

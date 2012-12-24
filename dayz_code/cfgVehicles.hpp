@@ -451,7 +451,7 @@ class Citizen1;	// External class reference
 	};
 	class Priest;
 	class Priest_DZ: Priest {
-		displayName = "Priest Outfit";
+		displayName = "Priest";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
