@@ -3,6 +3,8 @@
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 
+_serverVehicleCounter = [];
+
 if ((count playableUnits == 0) and !isDedicated) then {
 	isSinglePlayer = true;
 };
@@ -165,6 +167,10 @@ diag_log "HIVE: Starting";
 					};
 					_object call fnc_vehicleEventHandler;			
 					_totalvehicles = _totalvehicles + 1;
+
+					// total each vehicle
+					_serverVehicleCounter set [count _serverVehicleCounter,_type];
+
 				};
 
 				//Monitor the object
@@ -220,10 +226,11 @@ _vehLimit = MaxVehicleLimit - _totalvehicles;
 diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 if(_vehLimit > 0) then {
 	for "_x" from 1 to _vehLimit do {
-		_id = [] spawn spawn_vehicles; // Needs setup
+		_id = [_serverVehicleCounter] spawn spawn_vehicles; // Needs setup
 		waitUntil{scriptDone _id};
 	};
 };
+
 
 //  spawn_roadblocks
 for "_x" from 1 to MaxDynamicDebris do {

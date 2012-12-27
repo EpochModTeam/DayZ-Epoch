@@ -1041,49 +1041,49 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "Police Officer Uniform";
-		descriptionShort = "Police Officer Uniform;
+		descriptionShort = "Police Officer Uniform";
 	};
 	class Skin_Pilot_EP1_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Pilot Uniform";
-		descriptionShort = "Pilot Uniform;
+		descriptionShort = "Pilot Uniform";
 	};
 	class Skin_Haris_Press_EP1_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Press Uniform";
-		descriptionShort = "Press Uniform;
+		descriptionShort = "Press Uniform";
 	};
 	class Skin_Ins_Soldier_GL_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Terrorist Uniform";
-		descriptionShort = "Terrorist Uniform;
+		descriptionShort = "Terrorist Uniform";
 	};
 	class Skin_GUE_Commander_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Rebel Uniform";
-		descriptionShort = "Rebel Uniform;
+		descriptionShort = "Rebel Uniform";
 	};
 	class Skin_Functionary1_EP1_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Business Suit";
-		descriptionShort = "Business Suit;
+		descriptionShort = "Business Suit";
 	};
 	class Skin_Priest_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Priest Outfit";
-		descriptionShort = "Priest Outfit;
+		descriptionShort = "Priest Outfit";
 	};
 	class Skin_Rocker2_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Rocker Outfit";
-		descriptionShort = "Rebel Uniform;
+		descriptionShort = "Rebel Uniform";
 	};
 	
 	

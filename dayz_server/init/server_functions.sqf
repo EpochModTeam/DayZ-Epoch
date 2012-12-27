@@ -171,21 +171,37 @@ RoadList = MarkerPosition nearRoads DynamicVehicleArea;
 BuildingList = MarkerPosition nearObjects ["House",DynamicVehicleArea];
 
 spawn_vehicles = {
-	private["_vehicle","_isAir","_isShip","_position","_roadlist","_buildinglist","_istoomany","_marker","_veh","_objPosition","_weights","_index","_uid"];
+	private["_vehicle","_isAir","_isShip","_position","_roadlist","_buildinglist","_istoomany","_marker","_veh","_objPosition","_weights","_index","_uid","_velimit","_counter"];
 	
 	if (isDedicated) then {
-	
+
+		_counter = _this select 0;
+
 		waituntil {!isnil "fnc_buildWeightedArray"};
 		
 		_weights = [];
 		_weights = [AllowedVehiclesList,AllowedVehiclesChance] call fnc_buildWeightedArray;
-		
-		waitUntil{!isNil "BIS_fnc_selectRandom"};
-		// get index from fnc_buildWeightedArray
-		_index = _weights call BIS_fnc_selectRandom;
-		
-		// select vehicle 
-		_vehicle = AllowedVehiclesList select _index;
+
+		_isOverLimit = true;
+
+		while {_isOverLimit} do {
+
+			waitUntil{!isNil "BIS_fnc_selectRandom"};
+			_index = _weights call BIS_fnc_selectRandom;
+
+			_vehicle = AllowedVehiclesList select _index;
+			_velimit = AllowedVehiclesLimit select _index;
+
+			_qty = {_x == _vehicle} count _counter;
+
+			// If under limit allow to proceed
+			if(_qty < _velimit) then {
+				_isOverLimit = false;
+			};
+
+			// TODO add counter to stop after X attempts
+			
+		};
 		
 		// Find Vehicle Type to better control spawns
 		_isAir = _vehicle isKindOf "Air";

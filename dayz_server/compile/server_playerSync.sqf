@@ -16,7 +16,7 @@ if ( typeName(_this) == "OBJECT" ) then {
 
 _character = 	_this select 0;
 _magazines =	_this select 1;
-_force = 		_this select 2;
+//_force = 		_this select 2;
 _force =	true;
 
 

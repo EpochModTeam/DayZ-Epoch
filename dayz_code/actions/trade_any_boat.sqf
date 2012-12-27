@@ -71,7 +71,7 @@ if (_qty >= _qty_in) then {
 				dayzPublishVeh call server_publishVeh;
 			};
 
-			cutText [format[("Bought %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+			cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 		} else {
 			// Sell Vehicle
 			for "_x" from 1 to _qty_out do {
@@ -97,7 +97,7 @@ if (_qty >= _qty_in) then {
 		s_player_parts_crtl = -1;
 
 	} else {
-		cutText [format[("Error insufficient quality %1"),_textPartIn] , "PLAIN DOWN"];
+		cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
 	};
 	dayzTradeResult = nil;
 

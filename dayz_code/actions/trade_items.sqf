@@ -47,7 +47,7 @@ if (_qty >= _qty_in) then {
 		// [player,"repair",0,false] call dayz_zombieSpeak;
 		cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 	} else {
-		cutText [format[("Error insufficient quality %1"),_textPartIn] , "PLAIN DOWN"];
+		cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
 	};
 	dayzTradeResult = nil;
 

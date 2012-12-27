@@ -64,20 +64,19 @@ switch (_item) do {
 	case "Skin_Rocker2_DZ": {
 		_model = "Rocker2_DZ";
 	};
-	
 	case "Skin_Soldier1_DZ": {
 		_model = "Soldier1_DZ";
 	};
 	case "Skin_Survivor2_DZ": {
 		_model = "Survivor2_DZ";
-		if (_isBandit) then {
-			_model = "Bandit1_DZ";
-		};
-		if (_isHero) then {
-			_model = "Survivor3_DZ";
-		};
 	};
+	case "Skin_Bandit1_DZ": {
+		_model = "Bandit1_DZ";
 	};
+	case "Skin_Survivor3_DZ": {
+		_model = "Survivor3_DZ";
+	};
+};
 
 if (_model != _myModel) then {
 	player removeMagazine _item;

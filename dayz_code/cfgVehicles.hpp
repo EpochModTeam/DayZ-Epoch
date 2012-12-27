@@ -388,6 +388,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	class Pilot_EP1;
 	class Pilot_EP1_DZ: Pilot_EP1 {
@@ -400,6 +401,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	class Haris_Press_EP1;
 	class Haris_Press_EP1_DZ: Haris_Press_EP1 {
@@ -412,6 +414,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	class Ins_Soldier_GL;
 	class Ins_Soldier_GL_DZ: Ins_Soldier_GL {
@@ -424,6 +427,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	class GUE_Commander;
 	class GUE_Commander_DZ: GUE_Commander {
@@ -436,6 +440,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	class Functionary1_EP1;
 	class Functionary1_EP1_DZ: Functionary1_EP1 {
@@ -448,6 +453,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	class Priest;
 	class Priest_DZ: Priest {
@@ -460,6 +466,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	class Rocker2;
 	class Rocker2_DZ: Rocker2 {
@@ -472,6 +479,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
+		canCarryBackPack = 1;
 	};
 	
 	
