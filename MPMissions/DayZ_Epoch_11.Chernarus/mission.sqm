@@ -10,7 +10,10 @@ class Mission
 		"dayz_equip",
 		"dayz_vehicles",
 		"cacharacters_pmc",
-		"ca_modules_functions"
+		"ca_modules_functions",
+		"glt_m300t",
+		"sigisolda",
+		"suv_col"
 	};
 	addOnsAuto[]=
 	{
