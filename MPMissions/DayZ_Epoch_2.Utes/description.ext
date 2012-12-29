@@ -1,7 +1,7 @@
 respawn = "BASE";
 respawndelay = 5;
-onLoadMission="DayZ_Epoch Takistan";
-OnLoadIntro = "Welcome to Takistan";
+onLoadMission="DayZ_Epoch Utes";
+OnLoadIntro = "Welcome to Utes";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
