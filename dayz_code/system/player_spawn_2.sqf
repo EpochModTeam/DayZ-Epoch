@@ -72,6 +72,7 @@ while {true} do {
 		};
 	};
 	
+	/*
 	if (_humanity < -2000 and !_isBandit) then {
 		_isBandit = true;
 		_model = typeOf player;
@@ -101,7 +102,8 @@ while {true} do {
 			[dayz_playerUID,dayz_characterID,"Survivor3_DZ"] spawn player_humanityMorph;
 		};
 	};
-	
+	*/
+
 	//Has infection?
 	if (r_player_infected) then {
 		[player,"cough",8,false] call dayz_zombieSpeak;
@@ -199,7 +201,7 @@ while {true} do {
 		};
 	};
 	
-	//Record low bloow
+	//Record low blood
 	_lowBlood = player getVariable ["USEC_lowBlood", false];
 	if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
 		player setVariable["USEC_lowBlood",true,true];

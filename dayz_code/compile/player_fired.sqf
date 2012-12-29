@@ -43,6 +43,14 @@ if (_ammo isKindOf "SmokeShell") then {
 	//Check if need to place arrow
 	if (_ammo isKindOf "Bolt") then {
 		_id = _this spawn player_crossbowBolt;
+
+		// Reload animation if more that 1 in mag/pack
+		_count = player ammo _weapon;
+		if(_count >= 1) then {
+			_unit playActionNow "reloadMagazine";
+		};
+
+		
 	};
 	if (_ammo isKindOf "GrenadeHand") then {
 		

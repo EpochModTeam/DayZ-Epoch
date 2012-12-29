@@ -21,9 +21,9 @@ if (_isFemale) exitWith {cutText ["Currently Female Characters cannot change to 
 
 private["_itemNew","_myModel","_humanity","_isBandit","_isHero"];
 _myModel = (typeOf player);
-_humanity = player getVariable ["humanity",0];
-_isBandit = _humanity < -2000;
-_isHero = _humanity > 5000;
+//_humanity = player getVariable ["humanity",0];
+//_isBandit = _humanity < -2000;
+//_isHero = _humanity > 5000;
 _itemNew = "Skin_" + _myModel;
 
 if ( !(isClass(_config >> _itemNew)) ) then {

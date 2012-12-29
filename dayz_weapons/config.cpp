@@ -458,7 +458,7 @@ class cfgWeapons
 		{
 			dispersion = 0.001;
 			soundContinuous = 0;
-			reloadTime = 2.5;
+			reloadTime = 3.0;
 			reloadMagazineSound[] = {"\ca\sounds\weapons\rifles\M1014-reload",0.316228,1,20};
 			begin1[] = {"dayz_weapons\sounds\crossbow_fire_0",0.177828,1,15};
 			begin2[] = {"dayz_weapons\sounds\crossbow_fire_1",0.177828,1,15};
@@ -708,11 +708,21 @@ class cfgMagazines
 		initSpeed = 150;
 		descriptionShort = "$STR_MAG_DESC_3";
 		displayNameShort = "$STR_MAG_ACTION_3";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text = "Combine to 4 pack";
+				script = "spawn player_reloadMag;";
+				use[] = {"BoltSteel","BoltSteel","BoltSteel","BoltSteel"};
+				output[] = {"BoltSteel4pack"};
+			};
+		};
 	};
 	class BoltSteel4pack: CA_Magazine
 	{
 		scope = 2;
-		displayName = "$STR_MAG_NAME_3";
+		displayName = "Steel Bolt 4 Pack";
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
 		ammo = "BoltSteel";
@@ -720,11 +730,21 @@ class cfgMagazines
 		initSpeed = 150;
 		descriptionShort = "$STR_MAG_DESC_3";
 		displayNameShort = "$STR_MAG_ACTION_3";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text = "Combine to 8 pack";
+				script = "spawn player_reloadMag;";
+				use[] = {"BoltSteel4pack","BoltSteel4pack"};
+				output[] = {"BoltSteel8pack"};
+			};
+		};
 	};
 	class BoltSteel8pack: CA_Magazine
 	{
 		scope = 2;
-		displayName = "$STR_MAG_NAME_3";
+		displayName = "Steel Bolt 8 Pack";
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
 		ammo = "BoltSteel";
