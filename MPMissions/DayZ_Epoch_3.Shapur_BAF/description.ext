@@ -1,6 +1,6 @@
 respawn = "BASE";
 respawndelay = 5;
-onLoadMission="DayZ_Epoch Shapur BAF";
+onLoadMission="DayZ Epoch Shapur BAF";
 OnLoadIntro = "Welcome to Shapur BAF";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;

@@ -11,7 +11,33 @@ class Mission
 		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
-		"warfarebuildings"
+		"warfarebuildings",
+		"cacharacters_e",
+		"kpfs_uaz451",
+		"440cuda",
+		"oldtruck",
+		"monaco",
+		"roadrunner",
+		"roadrunner2",
+		"cuda",
+		"barcuda",
+		"hemicuda",
+		"cd71hm",
+		"oltruc3",
+		"fury",
+		"sahco",
+		"civic",
+		"challenger",
+		"cooter",
+		"jailbus",
+		"mackr",
+		"240GD",
+		"schoolbus",
+		"rosco",
+		"oldtruc2",
+		"CSJ_GyroAC",
+		"cacharacters2",
+		"SUV_COL"
 	};
 	addOnsAuto[]=
 	{
@@ -1239,7 +1265,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=15;
 		class Item0
 		{
 			position[]={1096.8087,56.605297,1052.057};
@@ -1254,7 +1280,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={665.96271,39.631199,1246.2494};
+			position[]={884.63147,46.671883,1261.1254};
 			name="spawn0";
 			type="Empty";
 		};
@@ -1278,7 +1304,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={374.2926,33.325016,831.49622};
+			position[]={393.3996,31.292519,810.24463};
 			name="spawn4";
 			type="Empty";
 		};
@@ -1317,6 +1343,26 @@ class Mission
 			position[]={1673.8231,47.049732,699.98364};
 			name="spawn10";
 			type="Empty";
+		};
+		class Item13
+		{
+			position[]={506.71414,32.311069,1105.4866};
+			name="test";
+			text="Safe Zone";
+			markerType="ELLIPSE";
+			type="City";
+			colorName="ColorGreen";
+			fillName="DiagGrid";
+			a=150;
+			b=150;
+		};
+		class Item14
+		{
+			position[]={410.62592,32.156261,1196.1069};
+			name="Safe Zone";
+			text="Safe Zone (NO PVP!)";
+			type="mil_warning";
+			colorName="ColorRed";
 		};
 	};
 };
