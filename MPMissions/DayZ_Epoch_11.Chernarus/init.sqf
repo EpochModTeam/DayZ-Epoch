@@ -29,15 +29,15 @@ dayz_MapArea = 12000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
 // DayZ Epoch TRADERS
-weapon_trader = 'Functionary1';
-parts_trader  = 'Profiteer2';
-can_trader    = 'Woodlander4';
-ammo_trader   = 'RU_Citizen2';
-auto_trader   = 'TK_CIV_Worker01_EP1';
-auto_trader_2 = 'Worker4';
-mad_sci       = 'RU_Doctor';
-metals_trader = 'RU_Citizen4';
-boat_trader	  = 'Villager3'; 
+weapon_trader = 'CIV_EuroMan01_EP1';
+parts_trader  = 'Woodlander3';
+can_trader    = 'RU_WorkWoman5';
+ammo_trader   = 'CIV_EuroMan02_EP1';
+auto_trader   = 'Worker3';
+auto_trader_2 = 'Profiteer4';
+mad_sci       = 'Dr_Hladik_EP1';
+metals_trader = 'RU_Functionary1';
+boat_trader	  = 'RU_Villager3'; 
 
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
