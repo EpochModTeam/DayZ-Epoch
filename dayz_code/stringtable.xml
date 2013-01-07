@@ -639,6 +639,12 @@
 			<German>Turn Over %1</German>
 			<Russian>Turn Over %1</Russian>
 		</Key>
+		<Key ID="str_actions_self_sleep">
+			<Original>Sleep</Original>
+			<English>Sleep</English>
+			<German>Sleep</German>
+			<Russian>Sleep</Russian>
+		</Key>
 		<Key ID="STR_CHAR_2">
 			<Original>Bandit</Original>
 			<English>Bandit</English>

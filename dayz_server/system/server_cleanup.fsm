@@ -1,11 +1,11 @@
-/*%FSM<COMPILE "scriptedFSM.cfg, DayZ Server Cleanup">*/
+/*%FSM<COMPILE "F:\DayZ\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Server Cleanup">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-400.000000,25.000000,-350.000000,0.000000,"init"};
 item1[] = {"true",8,218,-75.000000,-175.000000,25.000000,-125.000000,0.000000,"true"};
 item2[] = {"waiting",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"waiting"};
 item3[] = {"time_dead",4,218,-300.000000,-25.000000,-200.000000,25.000000,4.000000,"time" \n "dead"};
-item4[] = {"cleanup_dead",2,250,-300.000000,50.000000,-200.000000,100.000000,0.000000,"cleanup" \n "dead"};
+item4[] = {"cleanup_dead",2,4346,-300.000000,50.000000,-200.000000,100.000000,0.000000,"cleanup" \n "dead"};
 item5[] = {"time_items",4,218,0.000000,-25.000000,100.000000,25.000000,2.000000,"time" \n "items"};
 item6[] = {"cleanup_items",2,250,0.000000,50.000000,100.000000,100.000000,0.000000,"cleanup" \n "items"};
 item7[] = {"time_sync",4,218,-150.000000,-25.000000,-50.000000,25.000000,3.000000,"time" \n "sync"};
@@ -19,7 +19,7 @@ item14[] = {"prepare",2,250,-75.000000,-250.000000,25.000000,-200.000000,0.00000
 item15[] = {"update_objects",2,250,150.000000,50.000000,250.000000,100.000000,0.000000,"update objects"};
 item16[] = {"time_obj_update",4,218,150.000000,-25.000000,250.000000,25.000000,1.000000,"time" \n "obj update"};
 item17[] = {"anti_hack",4,218,150.000000,-100.000000,250.000000,-50.000000,0.000000,"anti hack"};
-item18[] = {"check_for_hacker",2,4346,150.000000,-175.000000,250.000000,-125.000000,0.000000,"check for" \n "hackers"};
+item18[] = {"check_for_hacker",2,250,150.000000,-175.000000,250.000000,-125.000000,0.000000,"check for" \n "hackers"};
 link0[] = {0,13};
 link1[] = {1,2};
 link2[] = {2,3};
@@ -43,8 +43,8 @@ link19[] = {15,9};
 link20[] = {16,15};
 link21[] = {17,18};
 link22[] = {18,1};
-globals[] = {25.000000,1,0,0,0,640,480,1,33,6316128,1,-380.893097,315.695129,343.738464,-460.417511,803,927,1};
-window[] = {2,-1,-1,-1,-1,1039,132,1246,132,3,820};
+globals[] = {25.000000,1,0,0,0,640,480,1,33,6316128,1,-389.695160,324.496887,564.215637,-260.262604,803,927,1};
+window[] = {2,-1,-1,-1,-1,995,88,1202,88,3,820};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -144,77 +144,48 @@ class FSM
        "	diag_log (""CLEANUP: TOO MANY DEAD BODIES"");" \n
        "	diag_log (""CLEANUP: PERFORMING BODY CLEANUP ON "" + str(_numDead) + "" BODIES"");" \n
        "" \n
+       "	//Cleanup zed's & players" \n
+       "" \n
        "	_delQtyZ = 0;	" \n
-       "	_numZombie = {_x isKindOf ""zZombie_Base""} count allDead;" \n
+       "	_delQtyP = 0;" \n
        "	{" \n
        "		if (local _x) then {" \n
        "			if (_x isKindOf ""zZombie_Base"") then {" \n
        "				deleteVehicle _x;" \n
        "				_delQtyZ = _delQtyZ + 1;" \n
        "			} else {" \n
-       "				_exists = _x in _deadBodies;" \n
-       "				if(!_exists) then {" \n
-       "					_deadBodies set [count _deadBodies,_x];" \n
+       "				_pos = getPosATL _x;" \n
+       "				_sfx = nearestObject [_pos,""Sound_Flies""];" \n
+       "				if (!(isNull _sfx)) then {" \n
+       "					deleteVehicle _sfx;" \n
        "				};" \n
+       "				deleteVehicle _x;" \n
+       "				_delQtyP = _delQtyP + 1;" \n
        "			};" \n
        "		};" \n
        "	} forEach allDead;" \n
        "" \n
-       "	//Cleanup players" \n
-       "	_body = objNull;" \n
-       "	_delQtyP = 0;" \n
-       "	_delDo = _numDead - _numZombie;" \n
-       "	_delDo = ((_delDo min (count _deadBodies)) -1);" \n
-       "	if (_delDo<1) then {_delDo=1};" \n
-       "	for ""_i"" from 0 to _delDo do {" \n
-       "		_body = _deadBodies select _i;" \n
-       "		if(!isNil ""_body"") then {" \n
-       "			_pos = getPosATL _body;" \n
-       "			_sfx = nearestObject [_pos,""Sound_Flies""];" \n
-       "			if (!(isNull _sfx)) then {" \n
-       "				deleteVehicle _sfx;" \n
-       "			};" \n
-       "			deleteVehicle _body;" \n
-       "			_delQtyP = _delQtyP + 1;" \n
+       "	//Check Flies" \n
+       "	_dwUSOFC=0;" \n
+       "	{" \n
+       "		if (local _x) then {" \n
+       "			deleteVehicle _x;" \n
+       "			_dwUSOFC=_dwUSOFC+1;" \n
        "		};" \n
-       "		_deadBodies set [_i,""DEL""];" \n
+       "		diag_log (""CLEANUP: DELETED AN UNCONTROLLED SOUND OF FLIES:"" + str(_dwUSOFC) );" \n
+       "	} forEach allMissionObjects ""Sound_Flies"";" \n
        "" \n
-       "		//Let's move this into the body removal sequence so uncontrolled flies are removed only if corpses are cleaned" \n
-       "		//Check Flies" \n
-       "		_isOK=-1;" \n
-       "		_dwUSOFC=0;" \n
-       "		{" \n
-       "			//_isOk = {!alive _x} count (nearestObjects [_x, [""CAManBase""], 2]);" \n
-       "			_isOk = {!alive _x} count (_x nearEntities [[""CAManBase""], 2]);" \n
-       "			if (_isOk>-1) then {" \n
-       "				diag_log (""DW_DEBUG _isOK: "" + str(_isOK) );" \n
-       "			};" \n
-       "			if ((_isOk>-1) AND (_isOK<1)) then {" \n
-       "				//diag_log (""CLEANUP: DELETING A SOUND OF FLIES"");" \n
-       "				_dwUSOFC=_dwUSOFC+1;" \n
-       "				deleteVehicle _x;" \n
-       "				diag_log (""CLEANUP: DELETED AN UNCONTROLLED SOUND OF FLIES:"" + str(_dwUSOFC) );" \n
-       "			};" \n
-       "		} forEach allMissionObjects ""Sound_Flies"";" \n
-       "" \n
-       "" \n
-       "		//Let's move this into the body removal sequence so uncontrolled fireplaces are removed only if corpses are cleaned" \n
-       "		//clean fireplaces" \n
-       "		_dwUFPC=0;" \n
-       "		{" \n
-       "			if (local _x) then {" \n
-       "				//diag_log (""CLEANUP: DELETING A UNCONTROLLED FIREPLACE"");" \n
-       "				deleteVehicle _x;" \n
-       "				_dwUFPC=_dwUFPC+1;" \n
-       "				diag_log (""CLEANUP: DELETED AN UNCONTROLLED FIREPLACE:"" + str(_dwUFPC) );" \n
-       "			};" \n
-       "		} forEach allMissionObjects ""Land_Fire_DZ"";" \n
-       "" \n
-       "	};" \n
-       "	_deadBodies = _deadBodies - [""DEL""];" \n
+       "	//clean fireplaces" \n
+       "	_dwUFPC=0;" \n
+       "	{" \n
+       "		if (local _x) then {" \n
+       "			deleteVehicle _x;" \n
+       "			_dwUFPC=_dwUFPC+1;" \n
+       "		};" \n
+       "		diag_log (""CLEANUP: DELETED AN UNCONTROLLED FIREPLACE:"" + str(_dwUFPC) );" \n
+       "	} forEach allMissionObjects ""Land_Fire_DZ"";" \n
        "" \n
        "	diag_log (""CLEANUP: DELETED "" + str(_delQtyP) + "" PLAYER BODIES AND "" + str(_delQtyZ) + "" BODIES"");" \n
-       "" \n
        "};" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -246,7 +217,7 @@ class FSM
        "	if (local _x) then {" \n
        "		_qtyLoc = _qtyLoc + 1; // debugging" \n
        "		_keep = _x getVariable [""permaLoot"",false];" \n
-       "            _nearby = {isPlayer _x} count (_x nearEntities [[""CAManBase""], 100]);" \n
+       "            _nearby = count (_x nearEntities [AllPlayers, 100]);" \n
        "		if ( (!_keep) && (_nearby==0) ) then {" \n
        "			deleteVehicle _x;" \n
        "			_delQty = _delQty + 1;" \n

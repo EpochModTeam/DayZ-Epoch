@@ -43,6 +43,6 @@ if (_finished) then {
 	_id = dayzHumanity spawn player_humanityChange;
 } else {
 	r_interrupt = false;
-	[objNull, player, rSwitchMove,""] call RE;
+	player switchMove "";
 	player playActionNow "stop";
 };

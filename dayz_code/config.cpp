@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.D1222";
+		version = "1.7.5.M1D7";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -51,6 +51,15 @@ class CfgAddons
 		};
 	};
 };
+
+class CfgInGameUI
+{
+    class PeripheralVision
+    {
+        cueColor[] = {0,0,0,0};
+    };
+};
+
 class RscPictureGUI
 {
 	access = 0;
@@ -82,10 +91,11 @@ class RscStructuredTextGUI: RscStructuredText
 		valign = "middle";
 };
 };
-
+//#include "CfgWorlds.hpp"
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
 #include "cfgVehicles.hpp"
+//#include "CfgWeapons.hpp"
 #include "cfgLoot.hpp"
 
 class CfgSurvival {
@@ -123,7 +133,7 @@ class CfgSurvival {
 
 class CfgBuildingLoot {
 	class Default {
-		zombieChance = 0;
+		zombieChance = 0.2;
 		minRoaming = 0;
 		maxRoaming = 2;
 		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_suit1","z_suit2","z_worker1","z_worker2","z_worker3","z_villager1","z_villager2","z_villager3"};
@@ -162,9 +172,11 @@ class CfgBuildingLoot {
 			{ "","generic" },
 			{ "LeeEnfield","weapon" },
 			{ "revolver_EP1","weapon" },
-			{ "CZ_VestPouch_EP1","object" },
-			{ "DZ_CivilBackpack_EP1","object" },
-			{ "DZ_ALICE_Pack_EP1","object" },
+
+			{"DZ_Patrol_Pack_EP1","object"}, //8
+			{"DZ_Assault_Pack_EP1","object"}, // 12
+			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+
 			{ "Winchester1866","weapon" },
 			{ "WeaponHolder_ItemTent","object" },
 			{ "","military" },
@@ -191,9 +203,9 @@ class CfgBuildingLoot {
 			2,
 			0.06,
 			0.04,
-			0.04, //{"CZ_VestPouch_EP1","object"},
-			0.03,
-			0.02,
+			0.04, //8
+			0.01, //12
+			0.03, //12-0
 			0.01,
 			0.01,
 			0.03,
@@ -305,9 +317,11 @@ class CfgBuildingLoot {
 			{ "","generic" },
 			{ "LeeEnfield","weapon" },
 			{ "revolver_EP1","weapon" },
-			{ "CZ_VestPouch_EP1","object" },
-			{ "DZ_CivilBackpack_EP1","object" },
-			{ "DZ_ALICE_Pack_EP1","object" },
+					
+			{"DZ_Patrol_Pack_EP1","object"}, //8
+			{"DZ_Assault_Pack_EP1","object"}, // 12
+			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			
 			{ "Winchester1866","weapon" },
 			{ "WeaponHolder_ItemTent","object" },
 			{ "","food" },
@@ -329,9 +343,9 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.01,
-			0.04, //{"CZ_VestPouch_EP1","object"},
-			0.03,
-			0.02,
+			0.04, //8
+			0.01, //12
+			0.03, // 12-0
 			0.01,
 			0.01,
 			0.3,
@@ -343,7 +357,7 @@ class CfgBuildingLoot {
 	};
 	};
 	class HeliCrash: Default {
-		zombieChance = 0;
+		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
 		lootChance = 0.5;
@@ -407,7 +421,7 @@ class CfgBuildingLoot {
 	};
 	};
 class HeliCrash_No50s: Default {
-		zombieChance = 0;
+		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
 		lootChance = 0.5;
@@ -516,9 +530,13 @@ class HeliCrash_No50s: Default {
 			{ "ItemKnife","military" },
 			{ "ItemGPS","weapon" },
 			{ "ItemMap","military" },
-			{ "DZ_Assault_Pack_EP1","object" },
-			{ "DZ_Patrol_Pack_EP1","object" },
-			{ "DZ_Backpack_EP1","object" },
+			
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
+			{"DZ_CivilBackpack_EP1","object"}, // 24
+			{"DZ_Backpack_EP1","object"}, // 24
+			
 			//Normal
 			{ "","medical" },
 			{ "","generic" },
@@ -555,9 +573,12 @@ class HeliCrash_No50s: Default {
 			0.10,
 			0.01,
 			0.05,
-			0.06,
-			0.04,
-			0.02,
+			//Bags
+			0.08, //16
+			0.08, //16
+			0.06, //18
+			0.01, //24
+			0.01, //DZ_Backpack_EP1 24
 			0.10,
 			1.00,
 			2.50,
@@ -614,9 +635,11 @@ class HeliCrash_No50s: Default {
 			{ "ItemMap","military" },
 			{ "Binocular_Vector","military" },
 
-			{ "DZ_Assault_Pack_EP1","object" },
-			{ "DZ_Patrol_Pack_EP1","object" },
-			{ "DZ_Backpack_EP1","object" },
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
+			{"DZ_CivilBackpack_EP1","object"}, // 24
+			{"DZ_Backpack_EP1","object"}, // 24		
 
 			{ "","medical" },
 			{ "","generic" },
@@ -666,9 +689,12 @@ class HeliCrash_No50s: Default {
 			0.01, //ItemGPS
 			0.03,
 			0.01,
-			0.02,
-			0.03,
-			0.02,
+			//Bags
+			0.08, //16
+			0.08, //16
+			0.06, //18
+			0.01, //24
+			0.01, //DZ_Backpack_EP1 24
 			0.30,
 			1.00,
 			5.00, //military
@@ -804,7 +830,7 @@ class HeliCrash_No50s: Default {
 		lootPos[] = {{0.486084,4.95459,-4.96861},{1.08032,-0.406738,-4.96801},{-0.0354004,-10.8208,-4.96686},{-5.07788,-16.4624,-4.96759},{-6.30298,2.92969,-4.96838},{-6.26685,26.7349,-4.9772},{1.64697,23.4038,-4.97097},{7.14575,3.92529,-4.96972},{4.63599,-12.1621,-4.96971}};
 	};
 	class Land_A_MunicipalOffice: Residential {
-		zombieChance = 0;
+		zombieChance = 0.4;
 		minRoaming = 3;
 		maxRoaming = 9;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
@@ -876,7 +902,7 @@ class HeliCrash_No50s: Default {
 		lootPos[] = {{-1.77002,-1.45166,1.95942}};
 	}; // Qty: 183
 	class Land_KBud: Residential {
-		zombieChance = 0;
+		zombieChance = 0.3;
 		maxRoaming = 0;
 		lootPos[] = {{-0.0170898,0.0114746,-0.66367}};
 	}; // Qty: 90
@@ -937,7 +963,7 @@ class HeliCrash_No50s: Default {
 		lootPos[] = {};
 	}; // Qty: 83
 	class Land_Misc_deerstand: Military {
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0.5;
 		maxRoaming = 3;
 		lootPos[] = {{-0.923828,-0.808594,1.08539},{0.419922,-0.237305,1.08539}};
@@ -966,8 +992,8 @@ class HeliCrash_No50s: Default {
 		
 	class UH1Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0;
-		lootChance = 0;
+		zombieChance = 0.3;
+		lootChance = 0.6;
 		minRoaming = 4;
 		maxRoaming = 8;
 		lootPos[] = {};
@@ -975,8 +1001,8 @@ class HeliCrash_No50s: Default {
 
 	class UH60Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0;
-		lootChance = 0;
+		zombieChance = 0.3;
+		lootChance = 0.6;
 		minRoaming = 4;
 		maxRoaming = 8;
 		lootPos[] = {};
@@ -990,18 +1016,18 @@ class HeliCrash_No50s: Default {
 	}; // Qty: 1
 
 	class Land_Ind_Shed_02_main: Default {
-		zombieChance = 0;
+		zombieChance = 0.3;
 		maxRoaming = 3;
 	}; // Qty: 283
 
 	class HouseRoaming: Residential {
-		lootChance = 0;
-		zombieChance = 0;
+		lootChance = 0.5;
+		zombieChance = 0.2;
 		maxRoaming = 2;
 	};
 	class FarmRoaming: Farm {
-		lootChance = 0;
-		zombieChance = 0;
+		lootChance = 0.3;
+		zombieChance = 0.4;
 		maxRoaming = 2;
 	};
 	class Land_Shed_W03: HouseRoaming {}; // Qty: 206
@@ -1201,7 +1227,7 @@ class HeliCrash_No50s: Default {
 	class HMMWVWreck: Military
 	{
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0;
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -1210,7 +1236,7 @@ class HeliCrash_No50s: Default {
 	class UralWreck: Military
 	{
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0;
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -1219,7 +1245,7 @@ class HeliCrash_No50s: Default {
 	class SKODAWreck: Residential
 	{
 		zombieClass[] = {"zZombie_Base","z_hunter"};
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0;
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -1228,7 +1254,7 @@ class HeliCrash_No50s: Default {
 	class UAZWreck: Residential
 	{
 		zombieClass[] = {"zZombie_Base","z_hunter"};
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0;
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -1237,7 +1263,7 @@ class HeliCrash_No50s: Default {
 	class datsun01Wreck: Residential
 	{
 		zombieClass[] = {"zZombie_Base","z_hunter"};
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0;
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -1246,7 +1272,7 @@ class HeliCrash_No50s: Default {
 	class hiluxWreck: Industrial
 	{
 		zombieClass[] = {"zZombie_Base","z_hunter"};
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0;
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -1255,7 +1281,7 @@ class HeliCrash_No50s: Default {
 	class datsun02Wreck: Military
 	{
 		zombieClass[] = {"zZombie_Base","z_hunter"};
-		zombieChance = 0;
+		zombieChance = 0.3;
 		lootChance = 0;
 		minRoaming = 1;
 		maxRoaming = 2;
@@ -1264,7 +1290,7 @@ class HeliCrash_No50s: Default {
 	
 	class Land_Ind_Shed_01_EP1: Default
 	{
-		zombieChance = 0;
+		zombieChance = 0.3;
 		maxRoaming = 3;
 	};
 	class DynamicDebris: Default
@@ -1272,7 +1298,7 @@ class HeliCrash_No50s: Default {
 		lootChance = 0.4;
 		minRoaming = 0;
 		maxRoaming = 2;
-		zombieChance = 0;
+		zombieChance = 0.3;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
 		itemType[] = {
 			{ "ItemWatch","generic" },

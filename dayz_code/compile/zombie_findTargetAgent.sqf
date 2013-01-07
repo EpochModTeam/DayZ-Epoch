@@ -26,7 +26,7 @@ if (count _targets == 0) then {
 if (isNil "_targets") exitWith {};
 //Search for objects
 if (count _targets == 0) then {
-	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],_range/2];
+	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],_range];
 	{
 		private["_dis"];
 		if (!(_x in _targets)) then {

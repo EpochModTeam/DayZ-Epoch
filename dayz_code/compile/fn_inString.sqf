@@ -1,22 +1,28 @@
-private["_findarray","_stringarray","_findcount","_stringcount","_found","_y","_i","_x"];
-	
-_findarray = toArray (_this select 0);
-_stringarray = toArray (_this select 1);
-_findcount = count _findarray;
-_stringcount = count _stringarray;
-_found = false;
+//Kilzone_Kid's megafast inString function
+//caseinsensitive
+//params [needle,haystack]
+private["_needle","_haystack","_found","_haystackArr","_haystackLen","_needleLen","_hayArr"];
 scopeName "main";
-
-if (_findcount <= _stringcount) then {
-	for "_y" from 0 to (_stringcount - _findcount) do {
-		_i = 0;
-		{
-			scopeName "loop1";
-			if (_x == (_stringarray select (_y + _i))) then {
-			_i = _i + 1;
-			} else {breakOut "loop1";};
-		} forEach _findarray;
-		if (_i == _findcount) then {_found = true; breakTo "main";};
+_needle = _this select 0;
+_haystack = _this select 1;
+_haystackArr = toArray _haystack;
+_haystackLen = count _haystackArr;
+_needleLen = count (toArray _needle);
+_found = false;
+if (_needleLen <= _haystackLen) then {
+	_hayArr = [];
+	for "_i" from 0 to (_needleLen - 1) do {
+		_hayArr set [count _hayArr, _haystackArr select _i];
+	};
+	for "_i" from _needleLen to _haystackLen do {
+		if (toString _hayArr != _needle) then {
+			_hayArr set [_needleLen, _haystackArr select _i];
+			_hayArr set [0, "x"];
+			_hayArr = _hayArr - ["x"];
+		} else {
+			_found = true;
+			breakTo "main";
+		};
 	};
 };
-_found
+_found;

@@ -1,7 +1,5 @@
 private["_unit","_selection","_killer"];
 
-Diag_log ("handlekilled");
-
 _unit = _this select 0;
 _killer = _this select 1;
 

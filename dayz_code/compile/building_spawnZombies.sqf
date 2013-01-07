@@ -15,9 +15,11 @@ if (_canLoot) then {
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 //Get zombie class
 	_zombieChance =	getNumber (_config >> "zombieChance");
-	_rnd = random 1;
+	_rnd = random 0.5;
+	_chance =	round(random 20);
 
-if (_rnd < _zombieChance) then {
+	//if (_rnd < _zombieChance) then {
+	if ((_chance % 2) == 0) then {
 	
 	_noPlayerNear = (count ((getPosATL _obj) nearEntities ["CAManBase",30])) == 0;
 	
@@ -31,14 +33,14 @@ if (_rnd < _zombieChance) then {
 	//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
 		for "_i" from 1 to _num do
 		{
-			[_originalPos,_unitTypes] call zombie_generate;
+				[_position,_unitTypes] call zombie_generate;
 		};
 		
 	};
 };
-/*	
+
 	//Add Internal Zombies
-	_clean = count ((getPosATL _obj) nearEntities ["zZombie_Base",(sizeOf _type)]) == 0;
+	_clean = {alive _x} count ((getPosATL _obj) nearEntities ["zZombie_Base",(sizeOf _type)]) == 0;
 	if (_clean) then {
 		_positions =	getArray (_config >> "lootPos");
 		_zombieChance =	getNumber (_config >> "zombieChance");
@@ -47,11 +49,10 @@ if (_rnd < _zombieChance) then {
 			_rnd = random 1;
 			if (_rnd < _zombieChance) then {
 				_iPos = _obj modelToWorld _x;
-				//_iPos = [_iPos,0,20,20,0,0,0] call BIS_fnc_findSafePos;
-				//_iPos = position (_obj);
-				_nearBy = count nearestObjects [_iPos , ["zZombie_Base"],1] > 0;
+				
+				_nearBy = {alive _x} count nearestObjects [_iPos , ["zZombie_Base"],3] > 0;
 				_nearByPlayer = ({isPlayer _x} count (_iPos  nearEntities ["CAManBase",30])) > 0;
-				//diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
+				diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
 				
 				if (!_nearByPlayer and !_nearBy) then {
 					[_iPos,_unitTypes] call zombie_generate;
@@ -60,5 +61,4 @@ if (_rnd < _zombieChance) then {
 		} forEach _positions;
 	};
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
-*/
 };

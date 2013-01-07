@@ -11,6 +11,10 @@ Camo1_DZ = 		"Camo1_DZ";
 Soldier1_DZ = 	"Soldier1_DZ";
 Rocket_DZ = 	"Rocket_DZ";
 
+AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ"];
+AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
+
+
 PZombie_VB =	"PZombie_VB";
 
 pz_policeman = "pz_policeman";
@@ -89,6 +93,7 @@ dayz_resetSelfActions = {
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
 	s_player_flipveh = 		-1;
+	s_player_sleep =		-1;
 	s_player_movedog =		-1;
 	s_player_speeddog =		-1;
 	s_player_calldog = 		-1;

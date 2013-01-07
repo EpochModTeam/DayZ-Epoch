@@ -520,18 +520,8 @@ class Citizen1;	// External class reference
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};	
-	class Bag_Base_EP1;
-	class CZ_VestPouch_EP1: Bag_Base_EP1 
-	{
-		displayname = "Czech Vest Pouch";
-		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-		mapsize = 2;
-		model = "\ca\weapons_e\AmmoBoxes\backpack_acr_small.p3d";
-		picture = "\ca\weapons_e\data\icons\backpack_ACR_small_CA.paa";
-		scope = 2;
-		transportmaxmagazines = 12;
-		transportmaxweapons = 0;
-	};
+	class Bag_Base_EP1;	
+	class Bag_Base_BAF;
 	class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 	{
 		scope = 2;
@@ -543,6 +533,7 @@ class Citizen1;	// External class reference
 		transportMaxWeapons = 1;
 		transportMaxMagazines = 8;
 	};
+
 	class DZ_Assault_Pack_EP1: Bag_Base_EP1
 	{
 		scope = 2;
@@ -554,17 +545,19 @@ class Citizen1;	// External class reference
 		transportMaxWeapons = 2;
 		transportMaxMagazines = 12;
 	};
-	class DZ_CivilBackpack_EP1: Bag_Base_EP1
+
+	class DZ_Czech_Vest_Puch: Bag_Base_EP1
 	{
 		scope = 2;
-		displayName = "Czech Backpack";
-		picture = "\ca\weapons_e\data\icons\backpack_ACR_CA.paa";
+		displayName = "Czech Vest Pouch";
+		picture = "\ca\weapons_e\data\icons\backpack_ACR_small_CA.paa";
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
-		model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
-		transportMaxWeapons = 3;
-		transportMaxMagazines = 16;
+		model = "\ca\weapons_e\AmmoBoxes\backpack_acr_small.p3d";
+		transportMaxWeapons = 2;
+		transportMaxMagazines = 12;
 	};
+
 	class DZ_ALICE_Pack_EP1: Bag_Base_EP1
 	{
 		scope = 2;
@@ -573,9 +566,46 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_tk_alice.p3d";
-		transportMaxWeapons = 4;
-		transportMaxMagazines = 20;
+		transportMaxWeapons = 2;
+		transportMaxMagazines = 16;
 	};
+
+	class DZ_TK_Assault_Pack_EP1 : Bag_Base_BAF
+	{
+		scope = 2;
+		displayName = "Survival ACU";
+		mapSize = 2;
+		picture = "\ca\weapons_e\data\icons\backpack_CIVIL_ASSAULT_CA.paa";
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
+		model = "\ca\weapons_e\AmmoBoxes\backpack_civil_assault.p3d";
+		transportMaxWeapons = 2;
+		transportMaxMagazines = 16;
+	};
+
+	class DZ_British_ACU : Bag_Base_BAF
+	{
+		scope = 2;
+		displayName = "British Assault Pack";
+		mapSize = 2;
+		model = "\ca\weapons_baf\Backpack_Small_BAF";\
+		picture = "\ca\weapons_baf\data\UI\backpack_BAF_CA.paa";
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
+		transportMaxWeapons = 3;
+		transportMaxMagazines = 18;
+	};
+
+	class DZ_CivilBackpack_EP1: Bag_Base_EP1    
+	{
+		scope = 2;
+		displayName = "Czech Backpack";
+		picture = "\ca\weapons_e\data\icons\backpack_ACR_CA.paa";
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
+		mapsize = 2;
+		model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
+		transportMaxWeapons = 6;
+		transportMaxMagazines = 24;
+	};
+
 	class DZ_Backpack_EP1: Bag_Base_EP1
 	{
 		scope = 2;

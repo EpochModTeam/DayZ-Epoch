@@ -6,6 +6,9 @@ _worldspace = 	_this select 2;
 _class = 		_this select 3;
 _id =			0;
 
+_allowed = [_object, (name player)] call check_publishobject;
+if (!_allowed) exitWith { };
+
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
 _location = _worldspace select 1;

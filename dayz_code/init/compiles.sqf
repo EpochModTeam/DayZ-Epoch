@@ -63,6 +63,10 @@ if (!isDedicated) then {
 	//Wild
 	//wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";
 	
+	//Maps
+	//fnc_MapEventHandler = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_MapEventHandler.sqf";
+	
+	
 	//
 	dog_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
 	
@@ -87,6 +91,8 @@ if (!isDedicated) then {
 	player_dropWeapon =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";
 	player_setTrap =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_setTrap.sqf";
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
+	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
+	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
 	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
@@ -185,10 +191,10 @@ if (!isDedicated) then {
 			_tPos = eyePos _target;	//(getPosASL _target);
 			_zPos = eyePos _agent;	//(getPosASL _agent);
 			if ((count _tPos > 0) and (count _zPos > 0)) then {
-				_cantSee = terrainIntersectASL [(eyePos _target), (eyePos _agent)];
+				_cantSee = terrainIntersectASL [_tPos, _zPos];
 				//diag_log ("terrainIntersectASL: " + str(_cantSee));
 				if (!_cantSee) then {
-					_cantSee = lineIntersects [(eyePos _target), (eyePos _agent)];
+					_cantSee = lineIntersects [_tPos, _zPos];
 					//diag_log ("lineIntersects: " + str(_cantSee));
 				};
 			};
@@ -230,10 +236,12 @@ if (!isDedicated) then {
 		_btnRespawn ctrlEnable false;
 	};
 	
+	abort_enable = 0 spawn {};
 	dayz_disableAbort = {
-		private["_display","_btnAbort","_combattimeout"];
+		private["_display","_btnAbort","_combattimeout","_zAround"];
 		_combattimeout = player getVariable["combattimeout",0];
-		if(_combattimeout < time) exitWith {};
+		_zAround = (count (player nearEntities ["zZombie_Base",50]) > 0);
+		if (_zAround || _combattimeout > time) then {
 		disableSerialization;
 		waitUntil {
 			_display = findDisplay 49;
@@ -241,6 +249,35 @@ if (!isDedicated) then {
 		};
 		_btnAbort = _display displayCtrl 104;
 		_btnAbort ctrlEnable false;
+			if (_zAround && _combattimeout <= time) then {
+				if (!scriptDone abort_enable) then {
+					terminate abort_enable;
+					sleep 0.5;
+				};
+				abort_enable = [] spawn {
+					private["_timeOut","_timeMax","_display","_btnAbort"];
+					_timeOut = 0;
+					_timeMax = 30;
+					disableSerialization;
+					while {_timeOut <= _timeMax} do {
+						scopeName "loop";
+						_display = findDisplay 49;
+						if (!isNull _display) then {
+							if (_timeOut == _timeMax) then {
+								_btnAbort = _display displayCtrl 104;
+								_btnAbort ctrlEnable true;
+							};
+							cutText [format ["You can Abort in %1",(_timeMax - _timeOut)], "PLAIN DOWN"];
+						} else {
+							breakOut "loop";
+						};
+						_timeOut = _timeOut + 1;
+						sleep 1;
+					};
+					cutText ["", "PLAIN DOWN"];
+				};
+			};
+		};
 	};
 	
 	dayz_spaceInterrupt = {

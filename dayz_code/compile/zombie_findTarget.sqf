@@ -4,7 +4,7 @@ _target = objNull;
 _lead = leader _group;
 _targetMen = [];
 _targetDis = [];
-_range = 300;
+_range = 500;
 
 _assigned = _group getVariable ["targets",[]];
 {
@@ -17,19 +17,19 @@ _targets = _lead nearTargets _range;
 	private["_obj","_dis"];
 	_obj = _x select 4;
 	_dis = _obj distance _lead;
-	if (_obj isKindOf "Man") then {
-		if (!(_obj isKindOf "zZombie_Base") and !(_obj in _targetMen)) then {
+//	if (_obj isKindOf "Man") then {
+		if (((_obj isKindOf "Man") or (_obj isKindOf "AllVehicles")) and !(_obj isKindOf "zZombie_Base") and !(_obj in _targetMen)) then {
 			//process man targets
 			_targetMen set [count _targetMen,_obj];
 			_targetDis set [count _targetDis,_dis];
 		};
-	} else {
-		if ((_obj isKindOf "AllVehicles") and (count crew _obj > 0) and !(_obj in _targetMen)) then {
-			//process vehicle targets
-			_targetMen set [count _targetMen,_obj];
-			_targetDis set [count _targetDis,_dis];
-		};
-	};
+//	} else {
+//		if ((_obj isKindOf "AllVehicles") and (count crew _obj > 0) and !(_obj in _targetMen)) then {
+//			//process vehicle targets
+//			_targetMen set [count _targetMen,_obj];
+//			_targetDis set [count _targetDis,_dis];
+//		};
+//	};
 } forEach _targets;
 
 //Search for fires

@@ -30,25 +30,36 @@ server_spawnCrashSite  =    compile preprocessFileLineNumbers "\z\addons\dayz_se
 vehicle_handleInteract = {
 	private["_object"];
 	_object = _this select 0;
+	needUpdate_objects = needUpdate_objects - [_object];
 	[_object, "all"] call server_updateObject;
+};
+
+vehicle_handleServerKilled = {
+	private["_unit","_killer"];
+	_unit = _this select 0;
+	_killer = _this select 1;
+		
+	[_unit, "killed"] call server_updateObject;
+	
+	_unit removeAllMPEventHandlers "MPKilled";
+	_unit removeAllEventHandlers "Killed";
+	_unit removeAllEventHandlers "HandleDamage";
+	_unit removeAllEventHandlers "GetIn";
+	_unit removeAllEventHandlers "GetOut";
 };
 
 check_publishobject = {
         private["_allowed","_allowedObjects","_object"];
 
         _object = _this select 0;
+		_playername = _this select 1;
         _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"];
-		_noncombatitems = ["ThrownObjects", "RoadFlare", "ChemLight"];
-        _allowed = false;
+		_allowed = false;
        
-        diag_log format ["DEBUG: Checking if Object: %1 is allowed", _object];
+        diag_log format ["DEBUG: Checking if Object: %1 is allowed published by %2", _object, _playername];
        
         if ((typeOf _object) in _allowedObjects) then {
-                diag_log format ["DEBUG: Object: %1 Safe",_object];
-                _allowed = true;
-        };
-		if ((typeOf _object) in _noncombatitems) then {
-                diag_log format ["DEBUG: NONCombat: %1 Safe",_object];
+                diag_log format ["DEBUG: Object: %1 published by %2 is Safe",_object, _playername];
                 _allowed = true;
         };
        

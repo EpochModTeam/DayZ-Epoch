@@ -215,6 +215,16 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_lockvault;
 		s_player_lockvault = -1;
 	};
+
+    //Sleep
+	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
+		if ((s_player_sleep < 0) and (player distance cursorTarget < 3)) then {
+			s_player_sleep = player addAction [localize "str_actions_self_sleep", "\z\addons\dayz_code\actions\player_sleep.sqf",cursorTarget, 0, false, true, "",""];
+		};
+	} else {
+		player removeAction s_player_sleep;
+		s_player_sleep = -1;
+	};
 	
 	//Repairing Vehicles
 	if ((dayz_myCursorTarget != cursorTarget) and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
@@ -576,6 +586,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_forceSave = -1;
 	player removeAction s_player_flipveh;
 	s_player_flipveh = -1;
+	player removeAction s_player_sleep;
+	s_player_sleep = -1;
 	player removeAction s_player_deleteBuild;
 	s_player_deleteBuild = -1;
 	player removeAction s_player_butcher;

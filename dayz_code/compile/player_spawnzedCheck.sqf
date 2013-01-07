@@ -10,7 +10,6 @@ _maxZombies = _this select 7;
 _nearby = _this select 8;
 
 diag_log ("Zed Started");
-_maxWildZombies = 3;
 
 // If they just got out of a vehicle, boost their per-player zombie limit by 5 in hopes of allowing insta-spawn zombies
 if (dayz_inVehicle and !_inVehicle) then {
@@ -22,13 +21,12 @@ dayz_inVehicle = _inVehicle;
 
 if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
-	_maxWildZombies = 0;
 };
-	_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius]) < _maxZombies;
+//	_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius]) < _maxZombies;
 //	_tooManyZs = count (_position nearEntities ["zZombie_Base",_radius]) > _maxZombies;
-//	_tooManyWildZs = count (_position nearEntities ["zZombie_Base",_radius]) > _maxWildZombies;
+
 	{
-		if (dayz_spawnZombies > _maxZombies) exitwith {};
+//		if (dayz_spawnZombies > _maxZombies) exitwith {};
 		_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 		_dateNow = (DateToNumber date);
 		_age = (_dateNow - _zombied) * 525948;
@@ -41,21 +39,3 @@ if (_inVehicle) then {
 			//};
 		};	
 	} forEach _nearby;
-/*	
-	if ((count _nearby) < 1) then {
-	diag_log ("1");
-		_spawnWildZs = count (_position nearEntities ["zZombie_Base",_radius]);
-		if (_spawnWildZs < _maxWildZombies) then {
-		diag_log ("2");
-			if (!_tooManyWildZs) then {
-			diag_log ("3");
-				_zombiesNum = count (_position nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
-					//diag_log ("ZombiesNum: " +str(_zombiesNum));
-				if (_zombiesNum == 0) then {
-				diag_log ("4");
-					[_position] call wild_spawnZombies;
-				};
-			};
-		};	
-	};
-*/	

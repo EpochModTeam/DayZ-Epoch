@@ -52,17 +52,6 @@ while {true} do {
 		diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4", _crashName, _lootTable, time, str(_position)]);
 
 		_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
-		
-	deleteMarker "Secure Helicopter Wreck";
-		///Add crash site markers 
-	_crashmarker = createMarker["Secure Helicopter Wreck",_position];
-	_crashmarker setMarkerColor "ColorRed";
-	_crashmarker setMarkerType "Flag";
-	//_crashmarker setMarkerShape "ELLIPSE";
-	//_crashmarker setMarkerBrush "Grid";
-	_crashmarker setMarkerText "Secure Helicopter";
-	_crashmarker setMarkerSize [1, 1];
-
 		// Randomize the direction the wreck is facing
 		_crash setDir round(random 360);
 

@@ -20,7 +20,7 @@ if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
 };
 _dir = [_unit,player] call BIS_Fnc_dirTo;
 _unit setDir _dir;
-[objNull, _unit, rPlayMove,_move] call RE;
+_unit playMove _move;
 
 //Wait
 sleep 0.3;
@@ -29,11 +29,11 @@ if (_vehicle != player) then {
 	_hpList = 	_vehicle call vehicle_getHitpoints;
 	_hp = 		_hpList call BIS_fnc_selectRandom;
 	_wound = 	getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-	_damage = 	random 0.03;
+	_damage = 	random 0.08;
 	_chance =	round(random 12);
 
 	if ((_wound == "Glass1") or (_wound == "Glass2") or (_wound == "Glass3") or (_wound == "Glass4") or (_wound == "Glass5") or (_wound == "Glass6")) then {
-		[_unit,"hit",0,false] call dayz_zombieSpeak;
+		[_unit,"hit",2,true] call dayz_zombieSpeak;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
@@ -63,7 +63,7 @@ if (_vehicle != player) then {
 			[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 			//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 			//publicVariable "dayzHit";
-			[_unit,"hit",0,false] call dayz_zombieSpeak;	
+			[_unit,"hit",2,true] call dayz_zombieSpeak;	
 		} else {				
 			_result = [_vehicle, _wound,_total, _unit,"zombie"] call fnc_usec_damageVehicle;
 			dayzHitV =	[_vehicle,_wound,_total, _unit,"zombie"];
@@ -107,7 +107,7 @@ if (_vehicle != player) then {
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 				//publicVariable "dayzHit";
-				[_unit,"hit",0,false] call dayz_zombieSpeak;
+				[_unit,"hit",2,true] call dayz_zombieSpeak;
 			} else {
 				/*
 				_isZombieInside = [_unit,_building] call fnc_isInsideBuilding;
@@ -117,7 +117,7 @@ if (_vehicle != player) then {
 					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 					//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 					//publicVariable "dayzHit";
-					[_unit,"hit",0,false] call dayz_zombieSpeak;	
+					[_unit,"hit",2,true] call dayz_zombieSpeak;	
 				};
 				*/
 			};

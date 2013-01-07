@@ -208,6 +208,7 @@ class CfgLoot {
 			"HandChemGreen",
 			"HandChemBlue",
 			"HandChemRed",
+			"DZ_Czech_Vest_Puch","object", // 12-0
 			"ItemHeatPack"
 		},
 		{
@@ -246,6 +247,7 @@ class CfgLoot {
 			0.02,
 			0.02,
 			0.02,
+			0.02,
 			0.04
 		}
 	};
@@ -275,6 +277,7 @@ class CfgLoot {
 			"10x_303",
 			"ItemWaterbottleUnfilled",
 			"BoltSteel",
+			"DZ_ALICE_Pack_EP1","object",
 			"ItemHeatPack",
 			"TrapBear"
 		},
@@ -285,6 +288,7 @@ class CfgLoot {
 			0.5,
 			0.2,
 			1,
+			0.1,
 			0.2,
 			0.01
 		}
