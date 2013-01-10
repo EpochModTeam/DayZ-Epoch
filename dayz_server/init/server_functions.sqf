@@ -337,7 +337,7 @@ spawn_roadblocks = {
 			dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_veh];
 			_veh setVariable ["ObjectID",1,true];
 
-			_num = round(random 4) + 3;
+			_num = round(random 3) + 1;
 			_config = 		configFile >> "CfgBuildingLoot" >> _spawnloot;
 			_itemType =		[] + getArray (_config >> "itemType");
 			_itemChance =	[] + getArray (_config >> "itemChance");

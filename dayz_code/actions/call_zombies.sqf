@@ -8,6 +8,6 @@ _item = _this select 3;
 
 [player,"spotted",0,false] call dayz_zombieSpeak;
 
-_id = [player,200,true,(getPosATL player)] spawn player_alertZombies;
+_id = [player,100,true,(getPosATL player)] spawn player_alertZombies;
 
 // cutText ["Calling Zombies...", "PLAIN DOWN"];

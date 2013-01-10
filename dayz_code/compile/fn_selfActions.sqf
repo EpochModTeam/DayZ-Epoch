@@ -47,7 +47,7 @@ if(_isPZombie) then {
 	//_state = animationState player;
 	//hint str(_state);
 	if (s_player_callzombies < 0) then {
-		s_player_callzombies = player addAction ["Call Zombies", "\z\addons\dayz_code\actions\call_zombies.sqf",player, 5, true, false, "",""];
+		s_player_callzombies = player addAction ["Raise Horde", "\z\addons\dayz_code\actions\call_zombies.sqf",player, 5, true, false, "",""];
 		//s_player_callzombies1 = player addAction ["Zombie Vison", "\z\addons\dayz_code\actions\vison_zombie.sqf",player, 4, true, false, "",""];
 
 	};

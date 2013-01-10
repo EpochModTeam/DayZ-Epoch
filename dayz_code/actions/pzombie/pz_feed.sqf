@@ -38,7 +38,7 @@ if(_isAnimal) then {
 } else {
 
 	if(_isMan) then { 
-		_regen == 3200; 
+		_regen == 12000; 
 	};
 };
 
@@ -52,15 +52,43 @@ player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 player setVariable["USEC_BloodQty",r_player_blood,true];
 player setVariable["medForceUpdate",true];
 
+dayz_lastDrink = time;
+dayz_thirst = 0;
+
+dayz_lastMeal =	time;
+dayz_hunger = 0;
+
+dayzPlayerSave = player;
+publicVariableServer "dayzPlayerSave";
+if (isServer) then {
+	dayzPlayerSave call server_updatePlayer;
+};
+
 [player,"eat",0,false] call dayz_zombieSpeak;
 
 // todo: dump loot on ground and then remove
+
+//Ensure Control is visible
+_display = uiNamespace getVariable 'DAYZ_GUI_display';
+_control = 	_display displayCtrl 1301;
+_control ctrlShow true;
+
+_bloodVal =		r_player_blood / r_player_bloodTotal;
+if (_bloodVal >= 0.2) then {
+	_ctrlBlood ctrlShow true;
+};
+
+//Ensure Control is visible
+_display = uiNamespace getVariable 'DAYZ_GUI_display';
+_control = 	_display displayCtrl 1302;
+_control ctrlShow true;
 
 // Remove body 
 dayzHideBody = _item;
 publicVariable "dayzHideBody";
 hideBody _item;
+
+cutText [format[(localize  "str_player_consumed"),_item, "PLAIN DOWN"];
+
 sleep 10;
 deleteVehicle _item;
-
-// cutText ["Feeding...", "PLAIN DOWN"];
