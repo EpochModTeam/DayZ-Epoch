@@ -52,7 +52,7 @@ if (_canLoot) then {
 				
 				_nearBy = {alive _x} count nearestObjects [_iPos , ["zZombie_Base"],3] > 0;
 				_nearByPlayer = ({isPlayer _x} count (_iPos  nearEntities ["CAManBase",30])) > 0;
-				diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
+				//diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
 				
 				if (!_nearByPlayer and !_nearBy) then {
 					[_iPos,_unitTypes] call zombie_generate;

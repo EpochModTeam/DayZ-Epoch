@@ -542,7 +542,7 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapSize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_us_assault.p3d";
-		transportMaxWeapons = 2;
+		transportMaxWeapons = 1;
 		transportMaxMagazines = 12;
 	};
 
@@ -554,7 +554,7 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_acr_small.p3d";
-		transportMaxWeapons = 2;
+		transportMaxWeapons = 0;
 		transportMaxMagazines = 12;
 	};
 
@@ -602,7 +602,7 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
-		transportMaxWeapons = 6;
+		transportMaxWeapons = 4;
 		transportMaxMagazines = 24;
 	};
 

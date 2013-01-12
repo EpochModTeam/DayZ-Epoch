@@ -4,7 +4,7 @@ _unit = 	_this select 0;
 _distance = _this select 1;
 _doRun = 	_this select 2;
 _pos = 		_this select 3;
-_listTalk = _pos nearEntities ["zZombie_Base",_distance * 3];
+_listTalk = _pos nearEntities ["zZombie_Base",_distance * 2];
 
 //hint str(_listTalk);
 

@@ -1,4 +1,4 @@
-private["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_mkr","_counter","_isNear","_isZero","_pos","_isIsland","_w","_clientID"];
+private["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_mkr","_counter","_isNear","_isZero","_pos","_isIsland","_w","_clientID","_friendlies"];
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
 
@@ -56,6 +56,7 @@ _state =		_primary select 3;
 _worldspace = 	_primary select 4;
 _humanity =		_primary select 5;
 _lastinstance =	_primary select 6;
+_friendlies =	[];
 
 //Set position
 _randomSpot = false;
@@ -237,6 +238,7 @@ _playerObj setVariable["humanity_CHK",_humanity];
 //_playerObj setVariable["worldspace",_worldspace,true];
 //_playerObj setVariable["state",_state,true];
 _playerObj setVariable["lastPos",getPosATL _playerObj];
+_playerObj setVariable["friendlies",_friendlies];
 
 dayzPlayerLogin2 = [_worldspace,_state];
 _clientID = owner _playerObj;

@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- Function
 	- [] call fnc_usec_damageActions;
 ************************************************************/
-private["_menClose","_unit","_unconscious","_lowBlood","_injured","_inPain","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_action1","_action2","_action","_vehClose","_hasVehicle","_vehicle","_inVehicle","_crew","_unconscious_crew","_patients"];
+private["_menClose","_unit","_unconscious","_lowBlood","_injured","_inPain","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_action1","_action2","_action","_vehClose","_hasVehicle","_vehicle","_inVehicle","_crew","_unconscious_crew","_patients","_charID","_friendlies"];
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -50,6 +50,8 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_inPain = 		_unit getVariable ["USEC_inPain", false];
 	_legsBroke = 	_unit getVariable ["hit_legs", 0] >= 1;
 	_armsBroke = 	_unit getVariable ["hit_hands", 0] >= 1;
+	_charID =		_unit getVariable ["characterID", "0"];
+	_friendlies =	player getVariable ["friendlies", []];
 	_hasBandage = 	"ItemBandage" in magazines player;
 	_hasEpi = 		"ItemEpinephrine" in magazines player;
 	_hasMorphine = 	"ItemMorphine" in magazines player;
@@ -177,6 +179,13 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 			r_player_actions set [count r_player_actions,_action];
 		};
 	};
+	
+	if ((isPlayer _unit) and !(_charID in _friendlies)) then {
+		r_action = true;
+		_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", "_target != player"];
+		r_player_actions set [count r_player_actions,_action];
+	};
+	
 	if (r_action) then {
 		r_action_targets = r_action_targets + [_unit];
 	};

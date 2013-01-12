@@ -9,13 +9,12 @@ _maxWildZombies = 3;
 _age = -1;
 _nearbyBuildings = [];
 _radius = 200; 
-_maxZombies = 20;
+_maxZombies = 10;
 	
 diag_log ("Type: " +str(_type));
 
 
 //diag_log("SPAWN CHECKING: Starting");
-	_radius = 200; 
 	_locationstypes = ["NameCityCapital","NameCity","NameVillage"];
 	_nearestCity = nearestLocations [getPos player, _locationstypes, _radius];
 	_townname = text (_nearestCity select 0);

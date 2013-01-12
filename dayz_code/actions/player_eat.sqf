@@ -6,6 +6,8 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not eat while in a vehicle", "PLAIN DOWN"]};
 
+if (dayz_hunger == 0) exitWith {cutText ["I am not hungry", "PLAIN DOWN"]};
+
 _item = _this;
 _hasfoodmag = _this in magazines player;
 
@@ -18,6 +20,8 @@ if (!_hasfoodmag) exitWith {cutText [format[(localize "str_player_31"),_text,"co
 player playActionNow "PutDown";
 player removeMagazine _item;
 sleep 1;
+
+_regen = round(random _regen);
 
 r_player_blood = r_player_blood + _regen;
 if (r_player_blood > r_player_bloodTotal) then {

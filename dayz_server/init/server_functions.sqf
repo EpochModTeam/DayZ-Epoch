@@ -315,10 +315,10 @@ spawn_roadblocks = {
 		
 			//_isRoad = isOnRoad _position;
 		
-			//_marker = createMarker [str(_position) , _position];
-			//_marker setMarkerShape "ICON";
-			//_marker setMarkerType "DOT";
-			//_marker setMarkerText "ON";
+			_marker = createMarker [str(_position) , _position];
+			_marker setMarkerShape "ICON";
+			_marker setMarkerType "DOT";
+			_marker setMarkerText "ON";
 		
 	
 			waitUntil{!isNil "BIS_fnc_selectRandom"};

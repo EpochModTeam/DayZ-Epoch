@@ -49,13 +49,7 @@ if (random 1 > 0.7) then {
 
 
 //_agent setVariable["host",player,true];
-if (!_doLoiter) then {
-	_agent setPosATL _position;
-	_agent setDir round(random 180);
-	if (_nearByPlayer) then {
-		deleteVehicle _agent;
-	};
-} else {
+if (_doLoiter) then {
 	if (_nearByPlayer) then {
 		_attempt = 0;
 		while {_nearByPlayer} do {

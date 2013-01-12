@@ -1114,6 +1114,12 @@ class FSM
        "		sleep 2;" \n
        "	};" \n
        "};" \n
+       "dayz_friendliesCheck = [] spawn {" \n
+       "	while {true} do {" \n
+       "		call player_friendliesCheck;" \n
+       "		sleep 2;" \n
+       "	};" \n
+       "};" \n
        "// TODO: questionably" \n
        "{ _x call fnc_vehicleEventHandler; } forEach vehicles;" \n
        "" \n

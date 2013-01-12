@@ -30,7 +30,8 @@ _multiplier = 1;
 			_entHeight = (getPosATL _x) select 2;
 			_delta = _pHeight - _entHeight;
 			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
-				[_x, _type] spawn player_zombieAttack;
+				zedattack = [_x, _type] spawn player_zombieAttack;
+				waitUntil {scriptDone zedattack};
 					_x setVariable["lastAttack",time];
 			};
 			_attacked = true;
@@ -46,12 +47,12 @@ _multiplier = 1;
 		//Noise Activation
 		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
-			if (_dist < (DAYZ_disAudial * _multiplier)) then {
-				if ((DAYZ_disAudial * _multiplier) > 80) then {
+			if (_dist < DAYZ_disAudial) then {
+				if (DAYZ_disAudial > 80) then {
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
 				} else {
-					_chance = [_x,_dist,(DAYZ_disAudial * _multiplier)] call dayz_losChance;
+					_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
 					if ((random 1) < _chance) then {
 						_cantSee = [_x,_refObj] call dayz_losCheck;
@@ -59,7 +60,7 @@ _multiplier = 1;
 							_targets set [count _targets, driver _refObj];
 							_group setVariable ["targets",_targets,true];
 						} else {
-							if (_dist < ((DAYZ_disAudial * _multiplier) / 2)) then {
+							if (_dist < (DAYZ_disAudial / 2)) then {
 								_targets set [count _targets, driver _refObj];
 								_group setVariable ["targets",_targets,true];
 							};
@@ -71,8 +72,8 @@ _multiplier = 1;
 		//Sight Activation
 		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
-			if (_dist < (DAYZ_disVisual * _multiplier)) then {
-				_chance = [_x,_dist,(DAYZ_disVisual * _multiplier)] call dayz_losChance;
+			if (_dist < DAYZ_disVisual) then {
+				_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
 				//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
 				if ((random 1) < _chance) then {
 					//diag_log ("Chance Detection");

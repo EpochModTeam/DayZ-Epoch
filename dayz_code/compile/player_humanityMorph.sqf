@@ -1,4 +1,4 @@
-private["_updates","_playerUID","_charID","_humanity","_worldspace","_model"];
+private["_updates","_playerUID","_charID","_humanity","_worldspace","_model","_friendlies"];
 _playerUID 	= _this select 0;
 _charID 	= _this select 1;
 _model 		= _this select 2;
@@ -23,6 +23,8 @@ _zombieKills 	= player getVariable ["zombieKills",0];
 _headShots 		= player getVariable ["headShots",0];
 _humanKills 	= player getVariable ["humanKills",0];
 _banditKills 	= player getVariable ["banditKills",0];
+_friendlies		= player getVariable ["friendlies",[]];
+_tagList		= player getVariable ["tagList",[]];
 
 //Switch
 	_model call player_switchModel;
@@ -72,6 +74,8 @@ player setVariable["humanKills",_humanKills,true];
 player setVariable["banditKills",_banditKills,true];
 player setVariable["characterID",_charID,true];
 player setVariable["worldspace",_worldspace,true];
+player setVariable["friendlies",_friendlies,true];
+player setVariable["tagList",_tagList,true];
 
 dayzPlayerMorph = [_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity];
 publicVariable "dayzPlayerMorph";
