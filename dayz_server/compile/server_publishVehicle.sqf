@@ -73,11 +73,11 @@ _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _da
 diag_log ("HIVE: WRITE: "+ str(_key)); 
 _key call server_hiveWrite;
 
-/*
+
 _done = false;
 _retry = 0;
 // TODO: Needs major overhaul
-while {_retry < 99} do {
+while {_retry < 15} do {
 	
     // GET DB ID
 	_key = format["CHILD:388:%1:",_uid];
@@ -98,17 +98,18 @@ while {_retry < 99} do {
 	};
 };
 if(!_done) exitWith { deleteVehicle _object; diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
-*/
+
 
 // disable marker later
-_marker = createMarker [str(_location) , _location];
-_marker setMarkerShape "ICON";
-_marker setMarkerType "DOT";
-_marker setMarkerText (typeOf _object);
-_marker setMarkerColor "ColorBlue";
+//_marker = createMarker [str(_location) , _location];
+//_marker setMarkerShape "ICON";
+//_marker setMarkerType "DOT";
+//_marker setMarkerText (typeOf _object);
+//_marker setMarkerColor "ColorBlue";
 
 // try this instead of commented out ID code above
-_object setVariable ["ObjectUID", _uid, true];
+// worked except vehicle pos was not saved
+// _object setVariable ["ObjectUID", _uid, true];
 
 _object setVariable ["lastUpdate",time];
 _object setVariable ["CharacterID", _characterID, true];

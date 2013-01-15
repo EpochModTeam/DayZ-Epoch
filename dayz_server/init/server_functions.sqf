@@ -322,14 +322,11 @@ spawn_roadblocks = {
 		
 			if((count _istoomany) > 0) exitWith { diag_log("DEBUG: Too many at " + str(_position)); };
 		
-			//_isRoad = isOnRoad _position;
+			//_marker = createMarker [str(_position) , _position];
+			//_marker setMarkerShape "ICON";
+			//_marker setMarkerType "DOT";
+			//_marker setMarkerText "ON";
 		
-			_marker = createMarker [str(_position) , _position];
-			_marker setMarkerShape "ICON";
-			_marker setMarkerType "DOT";
-			_marker setMarkerText "ON";
-		
-	
 			waitUntil{!isNil "BIS_fnc_selectRandom"};
 			_spawnveh = _WreckList call BIS_fnc_selectRandom;
 			waitUntil{!isNil "BIS_fnc_selectRandom"};
@@ -346,7 +343,7 @@ spawn_roadblocks = {
 			dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_veh];
 			_veh setVariable ["ObjectID",1,true];
 
-			_num = round(random 3) + 1;
+			_num = round(random 3);
 			_config = 		configFile >> "CfgBuildingLoot" >> _spawnloot;
 			_itemType =		[] + getArray (_config >> "itemType");
 			_itemChance =	[] + getArray (_config >> "itemChance");
