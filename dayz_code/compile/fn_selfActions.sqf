@@ -313,7 +313,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			// [_trader_id, _category, ];
 			_buy = player addAction ["Sidearm", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[11,"Sidearm"], 99, true, false, "",""];
 			_buy1 = player addAction ["Rifle", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[12,"Rifle"], 97, true, false, "",""];
-			_buy2 = player addAction ["Shotgun", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[13,"Shotgun"], 95, true, false, "",""];
+			_buy2 = player addAction ["Shotgun and Crossbow", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[13,"Shotgun"], 95, true, false, "",""];
 			_buy3 = player addAction ["Assault Rifle", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[14,"Assault Rifle"], 93, true, false, "",""];
 			_buy4 = player addAction ["Machine Gun", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[15,"Machine Gun"], 91, true, false, "",""];
 			_buy5 = player addAction ["Sniper Rifle", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[16,"Sniper Rifle"], 89, true, false, "",""];
@@ -365,7 +365,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			// [_trader_id, _category, ];
 			_buy1 = player addAction ["Sidearm Ammo", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[1,"Sidearm Ammo"], 99, true, false, "",""];
 			_buy = player addAction ["Rifle Ammo", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[2,"Rifle Ammo"], 98, true, false, "",""];
-			_buy2 = player addAction ["Shotgun Ammo", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[3,"Shotgun Ammo"], 97, true, false, "",""];
+			_buy2 = player addAction ["Shotgun and Crossbow Ammo", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[3,"Shotgun Ammo"], 97, true, false, "",""];
 			_buy3 = player addAction ["Assault Rifle Ammo", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[4,"Assault Rifle Ammo"], 96, true, false, "",""];
 			_buy4 = player addAction ["Machine Gun Ammo", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[5,"Machine Gun Ammo"], 95, true, false, "",""];
 			_buy5 = player addAction ["Sniper Rifle Ammo", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[6,"Sniper Rifle Ammo"], 94, true, false, "",""];
@@ -391,9 +391,11 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			// [_trader_id, _category, ];
 			_buy = player addAction ["Boats Unarmed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[49,"Boats Unarmed"], 97, true, false, "",""];
 			_buy1 = player addAction ["Boats Armed", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[499,"Boats Armed"], 96, true, false, "",""];
+			_buy2 = player addAction ["Wholesale", "\z\addons\dayz_code\actions\buy_or_sell.sqf",[999,"Wholesale"], 95, true, false, "",""];
 			
 			s_player_parts set [count s_player_parts,_buy];
 			s_player_parts set [count s_player_parts,_buy1];
+			s_player_parts set [count s_player_parts,_buy2];
 			
 			s_player_parts_crtl = 1;
 		};

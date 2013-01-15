@@ -15,6 +15,6 @@ _total = _damage;
 //diag_log ("DAMAGE VEH: " + typeof(_unit) + " / " + str(_hit) + " / " + str(_damage) + " / " + str(getDammage _unit));
 
 if (local _unit) then {
-		_total = [_unit,_hit,_damage] call object_setHitServer;
+	_total = [_unit,_hit,_damage] call object_setHitServer;
 };
 _total

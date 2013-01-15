@@ -23,9 +23,9 @@ enableRadio false;
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea= 1500; // Default = 1500
 MaxHeliCrashes= 5; // Default = 5
-MaxVehicleLimit = 75; // Default = 50
-MaxDynamicDebris = 200; // Default = 100
-dayz_MapArea = 12000; // Default = 10000
+MaxVehicleLimit = 200; // Default = 50
+MaxDynamicDebris = 500; // Default = 100
+dayz_MapArea = 15000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
 // DayZ Epoch TRADERS
@@ -68,17 +68,22 @@ if (isServer) then {
 	// TODO: Still Needs major overhaul current method is not ideal	
 	AllowedVehiclesList = [ "Old_moto_TK_Civ_EP1",
 							"MMT_Civ",
+							"Old_bike_TK_INS_EP1",
 							"ATV_US_EP1",
 							"hilux1_civil_3_open_EP1",
 							"datsun1_civil_3_open",
 							"Pickup_PK_TK_GUE_EP1",
+							"Octavia_ACR",
+							"VWGolf",
 							"Lada1",
 							"Skoda",
 							"car_sedan",
 							"Volha_1_TK_CIV_EP1",
+							"VolhaLimo_TK_CIV_EP1",
 							"UAZ_Unarmed_TK_EP1",
 							"Ikarus",
 							"SUV_TK_CIV_EP1",
+							"SUV_Green",
 							"UH1H_DZ",
 							"Mi17_Civilian",
 							"LandRover_CZ_EP1",
@@ -86,23 +91,31 @@ if (isServer) then {
 							"ArmoredSUV_PMC",
 							"PBX",
 							"RHIB",
+							"Fishing_Boat",
 							"M113Ambul_UN_EP1",
 							"KamazRefuel",
+							"UralRefuel_TK_EP1",
+							"tractor",
 							"CSJ_GyroP"];
 	
 	AllowedVehiclesChance = [ 0.25, // "Old_moto_TK_Civ_EP1",
 							  0.55, // "MMT_Civ"
+							  0.55, // Old_bike_TK_INS_EP1
 							  0.45, // "ATV_US_EP1",
-							  0.55, // "hilux1_civil_3_open_EP1",
+							  0.55, // "hilux1_civil_3_open_EP1", 
 							  0.25, // "datsun1_civil_3_open",
-							  0.40, // "Pickup_PK_TK_GUE_EP1",
+							  0.20, // "Pickup_PK_TK_GUE_EP1",
+							  0.20, // Octavia_ACR
+							  0.20, // VWGolf
 							  0.25, // "Lada1",
 							  0.25, // "Skoda",
 							  0.2,  // "car_sedan",
 							  0.2,  // "Volha_1_TK_CIV_EP1",
+							  0.05, // "VolhaLimo_TK_CIV_EP1"
 							  0.15, // "UAZ_Unarmed_TK_EP1"
 							  0.01, // "Ikarus"
 							  0.1,  // "SUV_TK_CIV_EP1"
+							  0.1,  // "SUV_Green",
 							  0.05, // "UH1H_DZ"
 							  0.09, // "Mi17_Civilian"
 							  0.11, // "LandRover_CZ_EP1"
@@ -110,38 +123,50 @@ if (isServer) then {
 							  0.05, // "ArmoredSUV_PMC"
 							  0.15, // "PBX"
 							  0.01, // "RHIB"
+							  0.1,  // "Fishing_Boat",
 							  0.01, // "M113Ambul_UN_EP1"
 							  0.01, // "KamazRefuel"
+							  0.01, // UralRefuel_TK_EP1
+							  0.1,  // "tractor"
 							  0.1]; // "CSJ_GyroP"
 	
-	AllowedVehiclesLimit =  [ 2, // "Old_moto_TK_Civ_EP1",
-							  5, // "MMT_Civ"
-							  2, // "ATV_US_EP1",
-							  2, // "hilux1_civil_3_open_EP1",
-							  2, // "datsun1_civil_3_open",
-							  1, // "Pickup_PK_TK_GUE_EP1",
-							  2, // "Lada1",
-							  2, // "Skoda",
-							  2, // "car_sedan",
-							  2, // "Volha_1_TK_CIV_EP1",
-							  2, // "UAZ_Unarmed_TK_EP1"
-							  1, // "Ikarus"
-							  1, // "SUV_TK_CIV_EP1"
-							  1, // "UH1H_DZ"
-							  1, // "Mi17_Civilian"
+	AllowedVehiclesLimit =  [ 5, // "Old_moto_TK_Civ_EP1",
+							  10, // "MMT_Civ"
+							  10, // Old_bike_TK_INS_EP1
+							  5, // "ATV_US_EP1",
+							  5, // "hilux1_civil_3_open_EP1",
+							  5, // "datsun1_civil_3_open",
+							  3, // "Pickup_PK_TK_GUE_EP1",
+							  2, // "Octavia_ACR"
+							  2, // VWGolf
+							  3, // "Lada1",
+							  3, // "Skoda",
+							  3, // "car_sedan",
+							  3, // "Volha_1_TK_CIV_EP1",
+							  1, // "VolhaLimo_TK_CIV_EP1"
+							  3, // "UAZ_Unarmed_TK_EP1"
+							  2, // "Ikarus"
+							  4, // "SUV_TK_CIV_EP1"
+							  2, // "SUV_Green",
+							  2, // "UH1H_DZ"
+							  2, // "Mi17_Civilian"
 							  2, // "LandRover_CZ_EP1"
-							  2, // "HMMWV_Ambulance"
-							  1, // "ArmoredSUV_PMC"
-							  2, // "PBX"
-							  1, // "RHIB"
-							  1, // "M113Ambul_UN_EP1"
-							  1, // "KamazRefuel"
-							  3]; // "CSJ_GyroP"						
+							  3, // "HMMWV_Ambulance"
+							  2, // "ArmoredSUV_PMC"
+							  5, // "PBX"
+							  2, // "RHIB"
+							  4, // "Fishing_Boat",
+							  3, // "M113Ambul_UN_EP1"
+							  2, // "KamazRefuel"
+							  2, // UralRefuel_TK_EP1
+							  1, // "tractor"
+							  5]; // "CSJ_GyroP"						
 	
 	hiveInUse = true;
-	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
+	
 	// Add trader citys
 	_nil = [] execVM "mission.sqf";
+	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 
 if (!isDedicated) then {

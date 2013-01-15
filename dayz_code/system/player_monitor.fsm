@@ -1087,7 +1087,7 @@ class FSM
        "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
        "_nearestCity = (nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000] select 0);" \n
        "_town = ""Wilderness"";" \n
-       "if (!isNull _nearestCity) then {_town = text _nearestCity};" \n
+       "if (!isNil _nearestCity) then {_town = text _nearestCity};" \n
        "" \n
        "_strTime = call curTimeStr;" \n
        "_strDate = date;" \n

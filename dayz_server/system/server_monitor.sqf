@@ -169,7 +169,7 @@ diag_log "HIVE: Starting";
 					_totalvehicles = _totalvehicles + 1;
 
 					// total each vehicle
-					serverVehicleCounter set [count _serverVehicleCounter,_type];
+					serverVehicleCounter set [count serverVehicleCounter,_type];
 
 				};
 

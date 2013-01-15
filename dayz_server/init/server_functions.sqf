@@ -204,14 +204,14 @@ spawn_vehicles = {
 			_qty = {_x == _vehicle} count serverVehicleCounter;
 
 			// If under limit allow to proceed
-			if(_qty < _velimit) then {
+			if(_qty <= _velimit) then {
 				_isOverLimit = false;
 			};
 
-			// TODO add counter to stop after X attempts
+			// counter to stop after 5 attempts
 			_counter = _counter + 1;
 
-			if(_counter > 5) then {
+			if(_counter >= 5) then {
 				_isOverLimit = false;
 				_isAbort = true;
 			};

@@ -14,9 +14,9 @@ _caller setVariable ["friendlies", _friendlies, true];
 
 _rfriendlies = _target getVariable ["friendlies", []];
 
-if (!(_callerID in _rfriendlies)) then {
+if ((isNull _rfriendlies) or !(_callerID in _rfriendlies)) then {
 	// caller
-	titleText [format["You have tagged %1 as friendly. Waiting for %2 to accept that.",(name _target),(name _target)]];
+	titleText [format["You have tagged %1 as friendly. Waiting for %1 to accept that.",(name _target)]];
 	// target
-	[_caller,_target,"loc",rTITLETEXT,format["%1 wants to tag you as friendly. To accept, tag %2 as friendly.", (name _caller),(name _caller)],"PLAIN DOWN"] call RE;
+	[_caller,_target,"loc",rTITLETEXT,format["%1 wants to tag you as friendly. To accept, tag %1 as friendly.", (name _caller)],"PLAIN DOWN"] call RE;
 };
