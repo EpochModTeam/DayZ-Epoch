@@ -15,12 +15,11 @@ if (_unit == player) then {
 	//Self Healing
 	_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
 } else {
-	dayzHumanity = [player,20];
-	_id = dayzHumanity spawn player_humanityChange;
+	["dayzHumanity",[player,20]] call dayzHumanity_code;
 };
 
 player removeMagazine "ItemPainkiller";
 
 sleep 1;
-usecPainK = [_unit,player];
-publicVariable "usecPainK";
+//clear the healed player's vision
+["usecPainK",[_unit,player]] call broadcastRpcCallAll;

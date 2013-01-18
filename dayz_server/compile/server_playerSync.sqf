@@ -4,10 +4,13 @@ private["_character","_magazines","_force","_characterID","_charPos","_isInVehic
 
 //waituntil {(typeName(_this) == "ARRAY");sleep 0.01;};	//seems to cause often infinite waits (but not for first n players)
 
-if ( typeName(_this) == "OBJECT" ) then {
+//this only happens when we don't follow the correct parameter format...
+//(like supplying just the player object instead of the array in player_eat.sqf)
+//i've fixed this in player_eat so i can comment this part out
+/*if ( typeName(_this) == "OBJECT" ) then {
 	_this = [_this,[],true];
 	//diag_log ("DW_DEBUG: #manual fix _this: " + str(_this));
-};
+};*/
 
 //correct
 //"UPDATE: [B 1-1-B:1 (THE BEAST) REMOTE,[],true]"

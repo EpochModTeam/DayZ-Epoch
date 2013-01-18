@@ -1,8 +1,7 @@
 private ["_objects"];
 _objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage"], 10];
 {
-	dayzUpdateVehicle = [_x,"gear"];
-	publicVariableServer "dayzUpdateVehicle";
+	["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
 } foreach _objects;
 
 private["_dialog","_magazineArray","_control","_item","_val","_max"];

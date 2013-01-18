@@ -23,14 +23,7 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-
-	// server_tradeObject [_activatingPlayer,_traderID,_bos]
-	dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-	publicVariableServer "dayzTradeObject";
-	
-	if (isServer) then {
-		dayzTradeObject call server_tradeObject;
-	};
+    ["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 
 	waitUntil {!isNil "dayzTradeResult"};
 

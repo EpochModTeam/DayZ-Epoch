@@ -13,11 +13,7 @@ if (r_player_infected) then {
 };
 
 //Send Death Notice
-dayzDeath = [dayz_characterID,0,_body,_playerID,dayz_playerName,_infected];
-publicVariableServer "dayzDeath";
-if (isServer) then {
-	_id = dayzDeath spawn server_playerDied;
-};
+["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName,_infected]] call callRpcProcedure;
 
 _id = [player,50,true,getPosATL player] spawn player_alertZombies;
 
@@ -66,8 +62,7 @@ if (count _array > 0) then {
 				_wait = 0;
 			};
 			if (!_canHitFree and !_isBandit) then {
-				dayzHumanity = [_source,_humanity,_wait];
-				publicVariable "dayzHumanity";
+				["dayzHumanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
 			};
 		};
 	};
@@ -124,10 +119,7 @@ if (count _array > 0) then {
 
 _body setVariable["combattimeout", 0, true];
 
-/*
-dayzFlies = player;
-publicVariable "dayzFlies";
-*/
+//["dayzFlies",player] call broadcastRpcCallAll;
 sleep 2;
 
 1 cutRsc ["DeathScreen","BLACK OUT",3];

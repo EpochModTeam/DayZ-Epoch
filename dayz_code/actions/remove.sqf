@@ -13,10 +13,5 @@ sleep 1;
 _id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 sleep 5;
 	
-dayzDeleteObj = [_objectID,_objectUID];
-publicVariableServer "dayzDeleteObj";
-if (isServer) then {
-	dayzDeleteObj call local_deleteObj;
-};
-
+["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
 deleteVehicle _obj;

@@ -21,13 +21,7 @@ if (_qty >= _qty_in) then {
 		_bos = 1;
 	};
 
-	// server_tradeObject [_activatingPlayer,_traderID,_bos]
-	dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-	publicVariableServer "dayzTradeObject";
-	
-	if (isServer) then {
-		dayzTradeObject call server_tradeObject;
-	};
+    ["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 
 	diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
 

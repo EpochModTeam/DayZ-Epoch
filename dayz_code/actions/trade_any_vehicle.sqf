@@ -25,13 +25,7 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	// server_tradeObject [_activatingPlayer,_traderID,_bos]
-	dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-	publicVariableServer "dayzTradeObject";
-	
-	if (isServer) then {
-		dayzTradeObject call server_tradeObject;
-	};
+	["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 
 	diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
 
@@ -63,14 +57,8 @@ if (_qty >= _qty_in) then {
 	
 			_veh setVariable ["characterID",dayz_playerUID,true];
 	
-			// server_publishVeh [_veh,[_dir,_objPosition],_vehicle,true,dayz_characterID]
-			dayzPublishVeh = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
-	
-			publicVariableServer "dayzPublishVeh";
-			if (isServer) then {
-				dayzPublishVeh call server_publishVeh;
-			};
-
+			["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
+			
 			cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 		} else {
 			// Sell Vehicle
@@ -82,11 +70,7 @@ if (_qty >= _qty_in) then {
 			_objectID 	= _obj getVariable ["ObjectID","0"];
 			_objectUID	= _obj getVariable ["ObjectUID","0"];
 
-			dayzDeleteObj = [_objectID,_objectUID];
-			publicVariableServer "dayzDeleteObj";
-			if (isServer) then {
-				dayzDeleteObj call local_deleteObj;
-			};
+			["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
 
 			deleteVehicle _obj;
 

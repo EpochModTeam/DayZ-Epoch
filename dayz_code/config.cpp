@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.M1D9";
+		version = "1.7.5.M1D15";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -94,9 +94,11 @@ class RscStructuredTextGUI: RscStructuredText
 //#include "CfgWorlds.hpp"
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
-#include "cfgVehicles.hpp"
-//#include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
 #include "cfgLoot.hpp"
+#include "CfgMarkers.hpp"
 
 class CfgSurvival {
 	class Inventory {
@@ -110,10 +112,12 @@ class CfgSurvival {
 	};
 	class Meat {
 		class Default {
-			yield = 1;
+			yield = 2;
+			rawfoodtype = "FoodSteakRaw";
 		};
 		class Cow: Default {
-			yield = 6;
+			yield = 8;
+			rawfoodtype = "FoodSteakRaw";
 		};
 		class Cow01: Cow{};
 		class Cow02: Cow{};
@@ -121,12 +125,27 @@ class CfgSurvival {
 		class Cow04: Cow{};
 		class Goat: Default {
 			yield = 4;
+			rawfoodtype = "FoodSteakRaw";
 		};
 		class Sheep: Default {
-			yield = 3;
+			yield = 4;
+			rawfoodtype = "FoodmuttonRaw";
 		};
 		class WildBoar: Default {
-			yield = 2;
+			yield = 4;
+			rawfoodtype = "FoodbaconRaw";
+		};
+		class Hen: Default {
+			yield = 4;
+			rawfoodtype = "FoodchickenRaw";
+		};
+		class Cock: Default {
+			yield = 4;
+			rawfoodtype = "FoodchickenRaw";
+		};
+		class Rabbit: Default {
+			yield = 4;
+			rawfoodtype = "FoodrabbitRaw";
 		};
 	};
 };

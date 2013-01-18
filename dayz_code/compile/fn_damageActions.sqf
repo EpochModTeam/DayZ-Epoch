@@ -182,7 +182,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	
 	if ((isPlayer _unit) and !(_charID in _friendlies)) then {
 		r_action = true;
-		_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", "_target != player"];
+		_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", "vehicle _unit == _unit"];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	

@@ -5,17 +5,30 @@ _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animati
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not eat while in a vehicle", "PLAIN DOWN"]};
-
-if (dayz_hunger == 0) exitWith {cutText ["I am not hungry", "PLAIN DOWN"]};
+//Force players to wait 3 mins to eat again
+if (dayz_lastMeal < 180) exitWith {cutText ["You may not eat, you're already full", "PLAIN DOWN"]};
 
 _item = _this;
-_hasfoodmag = _this in magazines player;
+_hasfooditem = _this in magazines player;
+
+_rndInfection = (random 15);
+_EatInfection = (_rndInfection < 1);
 
 _config =	configFile >> "CfgMagazines" >> _item;
 _text = 	getText (_config >> "displayName");
 _regen = 	getNumber (_config >> "bloodRegen");
 
-if (!_hasfoodmag) exitWith {cutText [format[(localize "str_player_31"),_text,"consume"] , "PLAIN DOWN"]};
+if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,"consume"] , "PLAIN DOWN"]};
+
+if (_EatInfection) then {
+   if (_item == "FoodSteakCooked" ) then {
+		r_player_infected = true;
+		player setVariable["USEC_infected",true];
+	};
+};
+
+//Rawtime = getVarable _item
+//_Cookedtime = _item getVariable ["timemeatCooked", time];
 
 player playActionNow "PutDown";
 player removeMagazine _item;
@@ -38,11 +51,7 @@ _update = player getVariable["updatePlayer",[false,false,false,false,false]];
 _update set [3,true];
 player setVariable["updatePlayer",_update,true];
 */
-dayzPlayerSave = player;
-publicVariableServer "dayzPlayerSave";
-if (isServer) then {
-	dayzPlayerSave call server_updatePlayer;
-};
+["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
 
 dayz_lastMeal =	time;
 dayz_hunger = 0;

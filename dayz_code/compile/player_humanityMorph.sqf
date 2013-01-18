@@ -46,9 +46,7 @@ if (count _medical > 0) then {
 	//Add Wounds
 	{
 		player setVariable[_x,true,true];
-		[player,_x,_hit] spawn fnc_usec_damageBleed;
-		usecBleed = [player,_x,0];
-		publicVariable "usecBleed";
+		["usecBleed",[player,_x,_hit]] call broadcastRpcCallAll;
 	} forEach (_medical select 8);
 	
 	//Add fractures
@@ -77,11 +75,8 @@ player setVariable["worldspace",_worldspace,true];
 player setVariable["friendlies",_friendlies,true];
 player setVariable["tagList",_tagList,true];
 
-dayzPlayerMorph = [_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity];
-publicVariable "dayzPlayerMorph";
-if (isServer) then {
-	dayzPlayerMorph call server_playerMorph;
-};
+//code for this on the server is missing
+//["dayzPlayerMorph",[_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity]] call callRpcProcedure;
 
 call dayz_resetSelfActions;
 

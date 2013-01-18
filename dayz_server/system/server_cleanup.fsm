@@ -251,16 +251,14 @@ class FSM
       name = "sync_the_time";
       init = /*%FSM<STATEINIT""">*/"//Send request" \n
        "_key = ""CHILD:307:"";" \n
-       "_result = [_key] call server_hiveReadWrite;" \n
+       "_result = _key call server_hiveReadWrite;" \n
        "_outcome = _result select 0;" \n
        "if(_outcome == ""PASS"") then {" \n
        "	_date = _result select 1; " \n
        "	_dateNum = dateToNumber(_date); " \n
        "	_diff = ( _dateNum - dateToNumber (date) )*365*24*60;" \n
        "	if ( abs(_diff)>5 ) then {" \n
-       "		setDate _date;" \n
-       "		dayzSetDate = _date;" \n
-       "		publicVariable ""dayzSetDate"";" \n
+       "		[""dayzSetDate"",_date] call broadcastRpcCallAll;" \n
        "		diag_log (""TIME SYNC: Local Time set to "" + str(_date));" \n
        "	};" \n
        "};" \n

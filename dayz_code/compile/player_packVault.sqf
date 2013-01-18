@@ -34,11 +34,7 @@ if(_ownerID == dayz_playerUID) then {
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
 	
-	dayzDeleteObj = [_objectID,_objectUID];
-	publicVariableServer "dayzDeleteObj";
-	if (isServer) then {
-		dayzDeleteObj call local_deleteObj;
-	};
+	["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
 	
 	deleteVehicle _obj;
 	

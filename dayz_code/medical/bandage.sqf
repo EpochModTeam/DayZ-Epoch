@@ -34,18 +34,14 @@ while {r_doLoop} do {
 r_doLoop = false;
 
 if (_finished) then {
-	
-	
-	usecBandage = [_unit,player];
-	publicVariable "usecBandage";
+	["usecBandage",[_unit,player]] call broadcastRpcCallAll;
 		
 	if (_unit == player) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 		dayz_sourceBleeding =	objNull;
 	} else {
-		dayzHumanity = [player,20];
-		_id = dayzHumanity spawn player_humanityChange;
+		["dayzHumanity",[player,20]] call dayzHumanity_code;
 	};
 
 	{_unit setVariable[_x,false,true];} forEach USEC_woundHit;

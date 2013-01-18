@@ -24,9 +24,7 @@ sleep 2;
 
 //unconscious unit assumes dragging posture
 //public EH 
-norrnRaDrag = _dragee;
-publicVariable "norrnRaDrag";
-_dragee switchmove "ainjppnemstpsnonwrfldb_still";
+["norrnRaDrag",_dragee] call broadcastRpcCallAll;
 _dragee attachto [_unit,[0.1, 1.01, 0]];
 sleep 0.02;
 

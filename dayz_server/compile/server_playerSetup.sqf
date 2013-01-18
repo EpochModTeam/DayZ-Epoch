@@ -34,7 +34,7 @@ _state = 		[];
 _doLoop = 0;
 while {_doLoop < 5} do {
 	_key = format["CHILD:102:%1:",_characterID];
-	_primary = [_key,false,dayZ_hivePipeAuth] call server_hiveReadWrite;
+	_primary = _key call server_hiveReadWrite;
 	if (count _primary > 0) then {
 		if ((_primary select 0) != "ERROR") then {
 			_doLoop = 9;
@@ -116,9 +116,7 @@ if (count _medical > 0) then {
 	//Add Wounds
 	{
 		_playerObj setVariable[_x,true,true];
-		[_playerObj,_x,_hit] spawn fnc_usec_damageBleed;
-		usecBleed = [_playerObj,_x,0];
-		publicVariable "usecBleed";
+		["usecBleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
 	} forEach (_medical select 8);
 	
 	//Add fractures

@@ -167,6 +167,12 @@
 			<German>Du hast eine(n) %1 gebaut</German>
 			<Russian>Вы построили %1.</Russian>
 		</Key>
+		<Key ID="str_build_failed_01">
+			<Original>You have failed to build %1.</Original>
+			<English>You have failed to build %1.</English>
+			<German>You have failed to build %1.</German>
+			<Russian>You have failed to build %1.</Russian>
+		</Key>
 		<Key ID="str_fireplace_02">
 			<Original>You cannot make a fireplace here. The area must be flat, and free of other objects</Original>
 			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
@@ -609,6 +615,12 @@
 			<German>%1 löschen</German>
 			<Russian>Погасить %1</Russian>
 		</Key>
+		<Key ID="str_actions_medical_18">
+			<Original>You cannot perform another blood transfusion so fast</Original>
+			<English>You cannot perform another blood transfusion so fast</English>
+			<German>You cannot perform another blood transfusion so fast</German>
+			<Russian>You cannot perform another blood transfusion so fast</Russian>
+		</Key>
 		<Key ID="str_action_studybody">
 			<Original>Study Body</Original>
 			<English>Study Body</English>
@@ -638,6 +650,12 @@
 			<English>Turn Over %1</English>
 			<German>Turn Over %1</German>
 			<Russian>Turn Over %1</Russian>
+		</Key>
+		<Key ID="str_actions_stats">
+			<Original>Enable Stats</Original>
+			<English>Enable Stats</English>
+			<German>Enable Stats</German>
+			<Russian>Enable Stats</Russian>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
@@ -722,6 +740,152 @@
 			<English>Dog: Follow</English>
 			<German></German>
 			<Russian>Позвать собаку</Russian>
+		</Key>
+	</Package>
+	<Package name="equipment_code">
+		<Key ID="STR_EQUIP_CODE_NAME_3">						
+			<Original>Box of Wet Matches</Original>						
+			<English>Box of Wet Matches</English>						
+			<German>Box of Wet Matches</German>
+			<Russian>Box of Wet Matches</Russian>
+		</Key>						
+		<Key ID="STR_EQUIP_CODE_DESC_3">						
+			<Original>Box of wet matches.</Original>						
+			<English>Box of wet matches.</English>						
+			<German>Box of wet matches.</German>
+			<Russian>Box of wet matches.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_CODE_NAME_41">						
+			<Original>Blunt Hatchet</Original>						
+			<English>Blunt Hatchet</English>						
+			<German>Blunt Hatchet</German>
+			<Russian>Blunt Hatchet</Russian>
+		</Key>						
+		<Key ID="STR_EQUIP_CODE_DESC_41">						
+			<Original>Your Hatchet appears to be too bunt to be used.</Original>						
+			<English>Your Hatchet appears to be too bunt to be used.</English>						
+			<German>Your Hatchet appears to be too bunt to be used.</German>
+			<Russian>Your Hatchet appears to be too bunt to be used.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_CODE_NAME_4">						
+			<Original>Blunt Knife</Original>						
+			<English>Blunt Knife</English>						
+			<German>Blunt Knife</German>
+			<Russian>Blunt Knife</Russian>
+		</Key>						
+		<Key ID="STR_EQUIP_CODE_DESC_4">						
+			<Original>Your Knife appears to be too bunt.</Original>						
+			<English>Your Knife appears to be too bunt.</English>						
+			<German>Your Knife appears to be too bunt.</German>
+			<Russian>Your Knife appears to be too bunt.</Russian>
+		</Key>
+		<Key ID="STR_FOOD_EQIP_CODE_NAME_1">						
+			<Original>Mutton Raw</Original>						
+			<English>Mutton Raw</English>						
+			<German>Mutton Raw</German>
+			<Russian>Mutton Raw</Russian>
+		</Key>						
+		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">						
+			<Original>Goat Meat to be used for sustainment, must be cooked prior to eating.</Original>						
+			<English>Goat Meat to be used for sustainment, must be cooked prior to eating.</English>						
+			<German>Goat Meat to be used for sustainment, must be cooked prior to eating.</German>
+			<Russian>Goat Meat to be used for sustainment, must be cooked prior to eating.</Russian>
+		</Key>
+		<Key ID="STR_FOOD_EQIP_CODE_NAME_2">						
+			<Original>Raw Chicken Leg</Original>						
+			<English>Raw Chicken Leg</English>						
+			<German>Raw Chicken Leg</German>
+			<Russian>Raw Chicken Leg</Russian>
+		</Key>						
+		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">						
+			<Original>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Original>						
+			<English>Chicken Leg to be used for sustainment, must be cooked prior to eating.</English>						
+			<German>Chicken Leg to be used for sustainment, must be cooked prior to eating.</German>
+			<Russian>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Russian>
+		</Key>
+		<Key ID="STR_FOOD_EQIP_CODE_NAME_3">						
+			<Original>Rabbit Raw</Original>						
+			<English>Rabbit Raw</English>						
+			<German>Rabbit Raw</German>
+			<Russian>Rabbit Raw</Russian>
+		</Key>						
+		<Key ID="STR_FOOD_EQUIP_CODE_DESC_3">						
+			<Original>Rabbit to be used for sustainment, must be cooked prior to eating.</Original>						
+			<English>Rabbit to be used for sustainment, must be cooked prior to eating.</English>						
+			<German>Rabbit to be used for sustainment, must be cooked prior to eating.</German>
+			<Russian>Rabbit to be used for sustainment, must be cooked prior to eating.</Russian>
+		</Key>	
+		<Key ID="STR_FOOD_EQIP_CODE_NAME_4">						
+			<Original>Raw Bacon</Original>						
+			<English>Raw Bacon</English>						
+			<German>Raw Bacon</German>
+			<Russian>Raw Bacon</Russian>
+		</Key>						
+		<Key ID="STR_FOOD_EQUIP_CODE_DESC_4">						
+			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
+			<English>Bacon to be used for sustainment, must be cooked prior to eating.</English>						
+			<German>Bacon to be used for sustainment, must be cooked prior to eating.</German>
+			<Russian>Bacon to be used for sustainment, must be cooked prior to eating.</Russian>
+		</Key>
+		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_1">						
+			<Original>Cooked Mutton</Original>						
+			<English>Cooked Mutton</English>						
+			<German>Cooked Mutton</German>
+			<Russian>Cooked Mutton</Russian>
+		</Key>						
+		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_1">						
+			<Original>Goat Meat to be used for sustainment.</Original>						
+			<English>Goat Meat to be used for sustainment.</English>						
+			<German>Goat Meat to be used for sustainment.</German>
+			<Russian>Goat Meat to be used for sustainment.</Russian>
+		</Key>
+		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_2">						
+			<Original>Chicken Leg</Original>						
+			<English>Chicken Leg</English>						
+			<German>Chicken Leg</German>
+			<Russian>Chicken Leg</Russian>
+		</Key>						
+		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">						
+			<Original>Chicken Leg to be used for sustainment.</Original>						
+			<English>Chicken Leg to be used for sustainment.</English>						
+			<German>Chicken Leg to be used for sustainment.</German>
+			<Russian>Chicken Leg to be used for sustainment.</Russian>
+		</Key>
+		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_3">						
+			<Original>Rabbit</Original>						
+			<English>Rabbit</English>						
+			<German>Rabbit</German>
+			<Russian>Rabbit</Russian>
+		</Key>						
+		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_3">						
+			<Original>Rabbit to be used for sustainmen.</Original>						
+			<English>Rabbit to be used for sustainment.</English>						
+			<German>Rabbit to be used for sustainment.</German>
+			<Russian>Rabbit to be used for sustainment.</Russian>
+		</Key>	
+		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_4">						
+			<Original>Bacon</Original>						
+			<English>Bacon</English>						
+			<German>Bacon</German>
+			<Russian>Bacon</Russian>
+		</Key>						
+		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_4">						
+			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
+			<English>Bacon to be used for sustainment, must be cooked prior to eating.</English>						
+			<German>Bacon to be used for sustainment, must be cooked prior to eating.</German>
+			<Russian>Bacon to be used for sustainment, must be cooked prior to eating.</Russian>
+		</Key>
+		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_5">						
+			<Original>Angel Cookies</Original>						
+			<English>Angel Cookies</English>						
+			<German>Angel Cookies</German>
+			<Russian>Angel Cookies</Russian>
+		</Key>						
+		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_5">						
+			<Original>Angel Cookies to boost your moral up!</Original>						
+			<English>Angel Cookies to boost your moral up!</English>						
+			<German>Angel Cookies to boost your moral up!</German>
+			<Russian>Angel Cookies to boost your moral up!</Russian>
 		</Key>
 	</Package>
 </Project>

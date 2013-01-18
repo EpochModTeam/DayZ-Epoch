@@ -1,4 +1,4 @@
-private["_unit","_selection","_strH","_dam","_total"];
+private["_unit","_selection","_damage","_strH","_dam","_total"];
 _unit =			_this select 0;
 _selection =	_this select 1;
 _damage =		_this select 2;
@@ -12,14 +12,7 @@ if ((_selection != "") and local _unit) then {
 	_unit setVariable [_strH,_total,true];
 	
 	if (_damage >= 1) then {
-		dayzUpdateVehicle = [_unit,"damage"];
-		if (isServer) then {
-			if (allowConnection) then {
-				dayzUpdateVehicle call server_updateObject;
-			};
-		} else {
-			publicVariable "dayzUpdateVehicle";
-		};
+		["dayzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
 	};
 	
 } else {

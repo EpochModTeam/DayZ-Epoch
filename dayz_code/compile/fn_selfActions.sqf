@@ -16,6 +16,7 @@ _hasFuelE = 	"ItemJerrycanEmpty" in magazines player;
 _hasRawMeat = 	"FoodSteakRaw" in magazines player;
 _hasKnife = 	"ItemKnife" in items player;
 _hasToolbox = 	"ItemToolbox" in items player;
+_hasstatsenabled = player getVariable ["StatsEnabled",false];
 //_hasTent = 		"ItemTent" in items player;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _nearLight = 	nearestObject [player,"LitObject"];
@@ -27,6 +28,14 @@ if (!isNull _nearLight) then {
 	};
 };
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
+
+if (!_hasstatsenabled) then {
+	if (s_player_stats < 0) then {
+//		s_player_stats = player addAction [format[localize "str_actions_stats",_text], "\z\addons\dayz_code\actions\playerstats.sqf"];
+		(findDisplay 46) displayAddEventHandler ["keyDown", "_this call fnc_onKeyDown"];
+		s_player_stats = 1;
+	};
+};
 
 //Grab Flare
 if (_canPickLight and !dayz_hasLight) then {

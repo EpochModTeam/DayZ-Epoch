@@ -9,7 +9,7 @@ if ((count playableUnits == 0) and !isDedicated) then {
 	isSinglePlayer = true;
 };
 
-waitUntil{initialized};
+waitUntil{initialized}; //means all the functions are now defined
 
 diag_log "HIVE: Starting";
 
@@ -17,12 +17,11 @@ diag_log "HIVE: Starting";
 	/* STREAM OBJECTS */
 		//Send the key
 		_key = format["CHILD:302:%1:",dayZ_instance];
-		_data = "HiveEXT" callExtension _key;
+		_result = _key call server_hiveReadWrite;
 
 		diag_log "HIVE: Request sent";
 		
 		//Process result
-		_result = call compile format ["%1",_data];
 		_status = _result select 0;
 		
 		_myArray = [];
@@ -31,8 +30,7 @@ diag_log "HIVE: Starting";
 			//Stream Objects
 			diag_log ("HIVE: Commence Object Streaming...");
 			for "_i" from 1 to _val do {
-				_data = "HiveEXT" callExtension _key;
-				_result = call compile format ["%1",_data];
+				_result = _key call server_hiveReadWrite;
 
 				_status = _result select 0;
 				_myArray set [count _myArray,_result];
@@ -184,14 +182,12 @@ diag_log "HIVE: Starting";
 //Set the Time
 	//Send request
 	_key = "CHILD:307:";
-	_result = [_key] call server_hiveReadWrite;
+	_result = _key call server_hiveReadWrite;
 	_outcome = _result select 0;
 	if(_outcome == "PASS") then {
 		_date = _result select 1; 
 		if(isDedicated) then {
-			setDate _date;
-			dayzSetDate = _date;
-			publicVariable "dayzSetDate";
+			["dayzSetDate",_date] call broadcastRpcCallAll;
 		};
 
 		diag_log ("HIVE: Local Time set to " + str(_date));
@@ -201,7 +197,6 @@ diag_log "HIVE: Starting";
 	if (isDedicated) then {
 		endLoadingScreen;
 	};	
-	hiveInUse = false;
 
 if (isDedicated) then {
 	_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
@@ -241,7 +236,6 @@ for "_x" from 1 to MaxDynamicDebris do {
 
 
 allowConnection = true;
-
 
 // [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
 nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;

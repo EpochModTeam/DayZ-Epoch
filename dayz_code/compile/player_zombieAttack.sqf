@@ -1,4 +1,4 @@
-private["_unit","_targets","_move","_damage","_wound","_index","_cnt","_sound","_local","_dir","_hpList","_hp","_strH","_dam","_total","_result","_vehicle","_tPos","_zPos","_cantSee","_inAngle"];
+private["_unit","_targets","_move","_damage","_wound","_index","_cnt","_sound","_local","_dir","_hpList","_hp","_strH","_dam","_total","_vehicle","_tPos","_zPos","_cantSee","_inAngle"];
 _unit = _this select 0;
 _type = _this select 1;
 _vehicle = (vehicle player);
@@ -40,9 +40,7 @@ if (_vehicle != player) then {
 		
 		//diag_log ("Hitpoints " +str(_wound) +str(_total));
 		
-		//_result = [_vehicle, _wound,_total, _unit,"zombie"] call fnc_usec_damageVehicle;
-		//dayzHitV =	[_vehicle,_wound,_total, _unit,"zombie"];
-		//publicVariable "dayzHitV";
+		//["dayzHitV",[_vehicle, _wound,_total, _unit,"zombie"]] call broadcastRpcCallAll;
 		if (_total >= 1) then {
 			if ((_chance % 4) == 0) then {
 				if ((_vehicle isKindOf "ATV_Base_EP1") or (_vehicle isKindOf "Motorcycle")) then { player action ["eject", _vehicle] };
@@ -65,9 +63,7 @@ if (_vehicle != player) then {
 			//publicVariable "dayzHit";
 			[_unit,"hit",2,true] call dayz_zombieSpeak;	
 		} else {				
-			_result = [_vehicle, _wound,_total, _unit,"zombie"] call fnc_usec_damageVehicle;
-			dayzHitV =	[_vehicle,_wound,_total, _unit,"zombie"];
-			publicVariable "dayzHitV";
+			["dayzHitV",[_vehicle, _wound,_total, _unit,"zombie"]] call broadcastRpcCallAll;
 		};
 	};
 } else {

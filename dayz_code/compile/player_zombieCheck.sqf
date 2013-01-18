@@ -31,7 +31,6 @@ _multiplier = 1;
 			_delta = _pHeight - _entHeight;
 			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
 				zedattack = [_x, _type] spawn player_zombieAttack;
-				waitUntil {scriptDone zedattack};
 					_x setVariable["lastAttack",time];
 			};
 			_attacked = true;

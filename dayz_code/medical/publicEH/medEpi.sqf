@@ -9,14 +9,16 @@ if (local _unit) then {_unit setCaptive false};
 
 if (!_isDead) then {
 	_unit switchMove "AmovPpneMstpSnonWnonDnon_healed";
-	_unit setVariable ["NORRN_unconscious", false, true];
-	_unit setVariable ["USEC_isCardiac",false,true];
+	//no need to public broadcast the variables since this runs on every peer
+	_unit setVariable ["NORRN_unconscious", false, false];
+	_unit setVariable ["USEC_isCardiac",false, false];
 	if (_unit == player) then {
 		r_player_unconscious = false;
 		disableUserInput false;
 		r_player_cardiac = false;
 		r_player_handler1 = false;
 	};
+
 	if (isServer) then {
 		_unit setVariable["medForceUpdate",true];
 	};

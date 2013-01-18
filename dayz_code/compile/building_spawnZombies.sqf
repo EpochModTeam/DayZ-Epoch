@@ -8,10 +8,10 @@ _originalPos = 	getPosATL _obj;
 if (_canLoot) then {
 //Get zombie class
 	_unitTypes = 	getArray (_config >> "zombieClass");
-	_min = 			getNumber (_config >> "maxRoaming");
-	_max = 			getNumber (_config >> "minRoaming");
+	_min = 			getNumber (_config >> "minRoaming");
+	_max = 			getNumber (_config >> "maxRoaming");
 //Walking Zombies
-	_num = round(random _max) max _min;
+	_num = round(random _max) min _min;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 //Get zombie class
 	_zombieChance =	getNumber (_config >> "zombieChance");

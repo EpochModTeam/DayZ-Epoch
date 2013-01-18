@@ -155,7 +155,7 @@ fnc_usec_damageBleed = {
 	/***********************************************************
 	PROCESS DAMAGE TO A UNIT
 	- Function
-	- [_unit, _wound] call fnc_usec_damageBleed;
+	- [_unit, _wound, _injury] call fnc_usec_damageBleed;
 	************************************************************/
 		private["_unit","_wound","_injury","_modelPos","_point","_source"];
 		_unit = _this select 0;
@@ -229,6 +229,7 @@ fnc_usec_damageBleed = {
 };
 
 fnc_usec_recoverUncons = {
+	//same actions as in the EH, just timed differently
 	player setVariable ["NORRN_unconscious", false, true];
 	player setVariable ["unconsciousTime", 0, true];
 	player setVariable ["USEC_isCardiac",false,true];

@@ -6,10 +6,14 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not drink while in a vehicle", "PLAIN DOWN"]};
 
-if (dayz_thirst == 0) exitWith {cutText ["I am not thirsty", "PLAIN DOWN"]};
+//Force players to wait 3 mins to drink again
+if (dayz_lastDrink < 180) exitWith {cutText ["You may not drink, your not thirsty", "PLAIN DOWN"]};
 
 _item = _this;
 _hasdrinkitem = _this in magazines player;
+
+_rndInfection = (random 15);
+_DrinkInfection = (_rndInfection < 1);
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
@@ -25,7 +29,13 @@ sleep 1;
 
 if (_item == "ItemWaterbottle") then {
 	player addMagazine "ItemWaterbottleUnfilled";
+	if (_DrinkInfection) then {
+		r_player_infected = true;
+		player setVariable["USEC_infected",true];
 };
+};
+
+
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 
 /*

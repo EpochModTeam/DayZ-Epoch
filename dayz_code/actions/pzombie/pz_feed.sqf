@@ -58,11 +58,7 @@ dayz_thirst = 0;
 dayz_lastMeal =	time;
 dayz_hunger = 0;
 
-dayzPlayerSave = player;
-publicVariableServer "dayzPlayerSave";
-if (isServer) then {
-	dayzPlayerSave call server_updatePlayer;
-};
+["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
 
 [player,"eat",0,false] call dayz_zombieSpeak;
 
@@ -83,10 +79,9 @@ _display = uiNamespace getVariable 'DAYZ_GUI_display';
 _control = 	_display displayCtrl 1302;
 _control ctrlShow true;
 
-// Remove body 
-dayzHideBody = _item;
-publicVariable "dayzHideBody";
-hideBody _item;
+// Remove body 	
+["dayzHideBody",_item] call broadcastRpcCallAll;
+
 
 cutText [format[(localize  "str_player_consumed"),_item, "PLAIN DOWN"];
 

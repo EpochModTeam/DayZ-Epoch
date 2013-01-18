@@ -1,6 +1,7 @@
 private["_hasKnife","_qty","_item","_text","_string","_type","_loop","_meat","_timer"];
 _item = _this select 3;
 _hasKnife = 	"ItemKnife" in items player;
+_hasKnifeBlunt = 	"ItemKnifeBlunt" in items player;
 _type = typeOf _item;
 _hasHarvested = _item getVariable["meatHarvested",false];
 _config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
@@ -8,7 +9,7 @@ _config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
 player removeAction s_player_butcher;
 s_player_butcher = -1;
 
-if (_hasKnife and !_hasHarvested) then {
+if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type
 	_loop = true;	
 	_isListed =		isClass (_config);
@@ -18,21 +19,13 @@ if (_hasKnife and !_hasHarvested) then {
 	[player,"gut",0,false] call dayz_zombieSpeak;
 	_item setVariable["meatHarvested",true,true];
 	
-	_qty = 1;	
-	if (_isListed) then {
-		_qty =	getNumber (_config >> "yield");
-	};
+	_qty = 1;
 	
 	_id = [player,100,true,(getPosATL player)] spawn player_alertZombies;
 	
 	_array = [_item,_qty];
 	
-	if (local _item) then {
-		_array spawn local_gutObjectZ;
-	} else {
-		dayzGutBodyZ = _array;
-		publicVariable "dayzGutBodyZ";
-	};
+	["dayzGutBodyZ",[_item,_qty]] call callRpcProcedure;
 	
 	sleep 6;
 	_string = format["Successfully Gutted Zombie",_text,_qty];

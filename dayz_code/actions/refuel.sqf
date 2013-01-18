@@ -21,9 +21,9 @@ _id = [player,20,true,(getPosATL player)] spawn player_alertZombies;
 
 sleep 6;
 
-dayzSetFuel = [_vehicle,_newFuel];
-dayzSetFuel spawn local_sefFuel;
-publicVariable "dayzSetFuel";
+//apply newFuel to vehicle on every peer
+["dayzSetFuel",[_vehicle,_newFuel]] call broadcastRpcCallAll;
+
 cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
 sleep 1;
 

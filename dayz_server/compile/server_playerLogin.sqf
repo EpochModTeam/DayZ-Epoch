@@ -12,8 +12,6 @@ if (count _this > 2) then {
 	dayz_players = dayz_players - [_this select 2];
 };
 
-//waitUntil{allowConnection};
-
 //Variables
 _inventory =	[];
 _backpack = 	[];
@@ -45,7 +43,7 @@ diag_log ("LOGIN ATTEMPT: " + str(_playerID) + " " + _playerName);
 _doLoop = 0;
 while {_doLoop < 5} do {
 	_key = format["CHILD:101:%1:%2:%3:",_playerID,dayZ_instance,_playerName];
-	_primary = [_key,false,dayZ_hivePipeAuth] call server_hiveReadWrite;
+	_primary = _key call server_hiveReadWrite;
 	if (count _primary > 0) then {
 		if ((_primary select 0) != "ERROR") then {
 			_doLoop = 9;

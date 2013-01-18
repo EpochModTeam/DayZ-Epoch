@@ -57,11 +57,7 @@ if (!_isOk) then {
 
 	//player setVariable ["tentUpdate",["Land_A_tent",_dir,_location,[dayz_tentWeapons,dayz_tentMagazines,dayz_tentBackpacks]],true];
 
-	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
-	publicVariable "dayzPublishObj";
-	if (isServer) then {
-		dayzPublishObj call server_publishObj;
-	};
+	["dayzPublishObj",[dayz_characterID,_tent,[_dir,_location],"TentStorage"]] call callRpcProcedure;
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
 } else {

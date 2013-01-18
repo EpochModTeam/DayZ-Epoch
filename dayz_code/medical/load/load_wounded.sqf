@@ -14,9 +14,7 @@ _wounded setVariable ["NORRN_unit_dragged", true, true];
 _wounded assignAsCargo _vcl; 
 _wounded moveInCargo _vcl;
 sleep 1;
-norrnRALW = _wounded;
-publicVariable "norrnRALW";
-_wounded switchMove "kia_hmmwv_driver";
+["norrnRALW",_wounded] call broadcastRpcCallAll;
 
 if (local _wounded) then 
 {	

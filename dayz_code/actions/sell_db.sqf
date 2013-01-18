@@ -10,11 +10,7 @@ _category = (_this select 3) select 1;
 
 diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
 
-dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
-publicVariableServer "dayzTraderMenu";
-if (isServer) then {
-	dayzTraderMenu call server_traders;
-};
+["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
 
 waitUntil {!isNil "dayzTraderMenuResult"};
 
