@@ -221,57 +221,13 @@ _center_1 = _this;
 
 _group_1 = createGroup _center_1;
 
-_unit_2 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["CIV_EuroMan01_EP1", [11455.97, 11359.461, 3.0517578e-005], [], 0, "CAN_COLLIDE"];
-  _unit_2 = _this;
-  _this setDir -36.831402;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
-  _this setUnitAbility 0.60000002;
-  if (true) then {_group_1 selectLeader _this;};
-};
-
-_unit_4 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["RU_WorkWoman5", [11454.423, 11355.335, 0.95015752], [], 0, "CAN_COLLIDE"];
-  _unit_4 = _this;
-  _this setDir -45.235744;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_6 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["Woodlander3", [11450.471, 11353.678, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
-  _unit_6 = _this;
-  _this setDir -52.951427;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_9 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["Dr_Hladik_EP1", [11455.754, 11376.51], [], 0, "CAN_COLLIDE"];
-  _unit_9 = _this;
-  _this setDir 123.76955;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
 _unit_12 = objNull;
 if (true) then
 {
   _this = _group_1 createUnit ["RU_Functionary1", [11453.513, 11372.992, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
   _unit_12 = _this;
   _this setDir 135.79054;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -282,18 +238,7 @@ if (true) then
   _this = _group_1 createUnit ["Profiteer4", [11462.399, 11365.393, -9.1552734e-005], [], 0, "CAN_COLLIDE"];
   _unit_13 = _this;
   _this setDir -104.7984;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_14 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["CIV_EuroMan02_EP1", [11450.914, 11370.678, 3.0517578e-005], [], 0, "CAN_COLLIDE"];
-  _unit_14 = _this;
-  _this setDir 125.58413;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -304,7 +249,7 @@ if (true) then
   _this = _group_1 createUnit ["RU_Villager3", [9761.8506, 1751.7081, 8.1777573e-005], [], 0, "CAN_COLLIDE"];
   _unit_17 = _this;
   _this setDir 13.985736;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -405,7 +350,7 @@ if (true) then
   _this = _group_1 createUnit ["Worker3", [4063.0964, 11682.222, 0.22387695], [], 0, "CAN_COLLIDE"];
   _unit_56 = _this;
   _this setDir 189.45943;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -416,7 +361,7 @@ if (true) then
   _this = _group_1 createUnit ["CIV_EuroMan01_EP1", [4075.0955, 11679.541, -0.038146973], [], 0, "CAN_COLLIDE"];
   _unit_57 = _this;
   _this setDir 181.09763;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (true) then {_group_1 selectLeader _this;};
 };
@@ -427,7 +372,7 @@ if (true) then
   _this = _group_1 createUnit ["RU_WorkWoman5", [4083.6765, 11677.628, 0.54440308], [], 0, "CAN_COLLIDE"];
   _unit_58 = _this;
   _this setDir 202.8716;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -438,7 +383,7 @@ if (true) then
   _this = _group_1 createUnit ["Woodlander3", [4055.772, 11665.541, -0.51617432], [], 0, "CAN_COLLIDE"];
   _unit_59 = _this;
   _this setDir 394.84546;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -449,7 +394,7 @@ if (true) then
   _this = _group_1 createUnit ["CIV_EuroMan02_EP1", [4071.2229, 11678.851, 0.33944702], [], 0, "CAN_COLLIDE"];
   _unit_60 = _this;
   _this setDir 172.56062;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -460,7 +405,7 @@ if (true) then
   _this = _group_1 createUnit ["RU_Functionary1", [4051.1519, 11671.435, 0.38604736], [], 0, "CAN_COLLIDE"];
   _unit_61 = _this;
   _this setDir 452.00577;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -471,7 +416,7 @@ if (true) then
   _this = _group_1 createUnit ["Dr_Hladik_EP1", [4047.479, 11676.521, 0.4241333], [], 0, "CAN_COLLIDE"];
   _unit_62 = _this;
   _this setDir 504.14603;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -1326,21 +1271,9 @@ if (true) then
   _this = _group_1 createUnit ["RU_Functionary1", [9761.8955, 1759.4219, 2.0980835e-005], [], 0, "CAN_COLLIDE"];
   _unit_73 = _this;
   _this setDir 92.75209;
-    _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
-};
-
-_vehicle_410 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Fishing_Boat", [9767.4473, 1759.0052, 0.21176842], [], 0, "CAN_COLLIDE"];
-  _vehicle_410 = _this;
-  _this setDir 130.63431;
-  _this setFuel 0;
-  _this setVehicleAmmo 0;
-  _this setVehicleLock "LOCKED";
-  _this setPos [9767.4473, 1759.0052, 0.21176842];
 };
 
 _vehicle_412 = objNull;
@@ -1349,6 +1282,61 @@ if (true) then
   _this = createVehicle ["US_WarfareBUAVterminal_EP1", [9759.3662, 1760.9692, -0.00019788742], [], 0, "CAN_COLLIDE"];
   _vehicle_412 = _this;
   _this setPos [9759.3662, 1760.9692, -0.00019788742];
+};
+
+_unit_74 = objNull;
+if (true) then
+{
+  _this = _group_1 createUnit ["Woodlander1", [11450.503, 11353.635, -9.1552734e-005], [], 0, "CAN_COLLIDE"];
+  _unit_74 = _this;
+  _this setDir -48.52689;
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setUnitAbility 0.60000002;
+  if (false) then {_group_1 selectLeader _this;};
+};
+
+_unit_75 = objNull;
+if (true) then
+{
+  _this = _group_1 createUnit ["RU_WorkWoman1", [11454.922, 11355.044, 0.94462103], [], 0, "CAN_COLLIDE"];
+  _unit_75 = _this;
+  _this setDir -47.533646;
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setUnitAbility 0.60000002;
+  if (false) then {_group_1 selectLeader _this;};
+};
+
+_unit_78 = objNull;
+if (true) then
+{
+  _this = _group_1 createUnit ["Rocker4", [11456.184, 11359.277], [], 0, "CAN_COLLIDE"];
+  _unit_78 = _this;
+  _this setDir -52.978313;
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setUnitAbility 0.60000002;
+  if (false) then {_group_1 selectLeader _this;};
+};
+
+_unit_79 = objNull;
+if (true) then
+{
+  _this = _group_1 createUnit ["RU_Citizen3", [11451.024, 11370.598, 3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _unit_79 = _this;
+  _this setDir 125.74001;
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setUnitAbility 0.60000002;
+  if (false) then {_group_1 selectLeader _this;};
+};
+
+_unit_82 = objNull;
+if (true) then
+{
+  _this = _group_1 createUnit ["Doctor", [11455.903, 11376.358], [], 0, "CAN_COLLIDE"];
+  _unit_82 = _this;
+  _this setDir 107.12319;
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setUnitAbility 0.60000002;
+  if (false) then {_group_1 selectLeader _this;};
 };
 
 processInitCommands;

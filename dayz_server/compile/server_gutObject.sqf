@@ -4,29 +4,11 @@ _qty = _this select 1;
 _type = typeOf _item;
 _meat = 0;
 _loop = true;
+_rawfoodtype = 		configFile >> "CfgSurvival" >> "Meat" >> _type >> "rawfoodtype";
+
 if (local _item) then {
 	for "_x" from 1 to _qty do {
-	diag_log ("Item Type: " +str(_item));
-		switch (_type) do {
-			case "Cow": {
-				_item addMagazine "FoodSteakRaw";
-			};
-			case "Goat": {
-				_item addMagazine "FoodSteakRaw";
-			};
-			case "Sheep": {
-				_item addMagazine "FoodSteakRaw";
-			};
-			case "WildBoar": {
-				_item addMagazine "FoodboarRaw";
-			};
-			case "hen": {
-				_item addMagazine "FoodSteakRaw";
-			};
-			case "Rabbit": {
-				_item addMagazine "FoodSteakRaw";
-			};	
-		};
+		_item addMagazine _rawfoodtype;
 	};
 	sleep 2;
 	_timer = time;

@@ -34,7 +34,6 @@ else
 };
 
 diag_log ("PDEATH: Player Died " + _playerID);
-
 /*
 _eh = [_newObject] spawn {
 	_body = _this select 0;

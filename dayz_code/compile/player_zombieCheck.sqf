@@ -1,6 +1,6 @@
 private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_continue","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
 _refObj = vehicle player;
-_listTalk = (position _refObj) nearEntities [["zZombie_Base"],80];
+_listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
 _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 _multiplier = 1;
@@ -80,7 +80,7 @@ _multiplier = 1;
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,(30 * _multiplier),_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
 						//diag_log ("In Angle");
 						//LOS check

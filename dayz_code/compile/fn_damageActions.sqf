@@ -50,7 +50,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_inPain = 		_unit getVariable ["USEC_inPain", false];
 	_legsBroke = 	_unit getVariable ["hit_legs", 0] >= 1;
 	_armsBroke = 	_unit getVariable ["hit_hands", 0] >= 1;
-	_charID =		_unit getVariable ["characterID", "0"];
+	_charID =		_unit getVariable ["characterID", 0];
 	_friendlies =	player getVariable ["friendlies", []];
 	_hasBandage = 	"ItemBandage" in magazines player;
 	_hasEpi = 		"ItemEpinephrine" in magazines player;
@@ -182,7 +182,8 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	
 	if ((isPlayer _unit) and !(_charID in _friendlies)) then {
 		r_action = true;
-		_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", "vehicle _unit == _unit"];
+		// TODO: prevent menu on vehicle, first attempt did not work "vehicle _unit == _unit"
+		_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	

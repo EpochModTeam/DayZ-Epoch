@@ -99,8 +99,10 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_FOOD_EQIP_CODE_NAME_1;
-		model = "\z\addons\dayz_communityassets\models\boar_raw.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_raw_ca.paa";
+		//model = "\z\addons\dayz_communityassets\models\boar_raw.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_raw_ca.paa";
+		model = "\dayz_equip\models\food_steak_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_ca.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_1;
 	};
 	
@@ -109,8 +111,10 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_FOOD_EQIP_CODE_NAME_2;
-		model = "\z\addons\dayz_communityassets\models\chicken_raw.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\icon_chicken_raw_ca.paa";
+		//model = "\z\addons\dayz_communityassets\models\chicken_raw.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\icon_chicken_raw_ca.paa";
+		model = "\dayz_equip\models\food_steak_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_ca.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_2;
 	};
 	
@@ -119,8 +123,10 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_FOOD_EQIP_CODE_NAME_3;
-		model = "\z\addons\dayz_communityassets\models\rabbit_raw.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\i_rabbit_raw_co.paa";
+		//model = "\z\addons\dayz_communityassets\models\rabbit_raw.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\i_rabbit_raw_co.paa";
+		model = "\dayz_equip\models\food_steak_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_ca.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_3;
 	};
 	
@@ -129,8 +135,10 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_FOOD_EQIP_CODE_NAME_4;
-		model = "\z\addons\dayz_communityassets\models\bacon_raw.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\i_bacon_raw.paa";
+		//model = "\z\addons\dayz_communityassets\models\bacon_raw.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\i_bacon_raw.paa";
+		model = "\dayz_equip\models\food_steak_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_ca.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_4;
 	};
 	
@@ -151,8 +159,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_1;
-		model = "\z\addons\dayz_communityassets\models\boar_geo.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_cooked_ca.paa";
+		//model = "\z\addons\dayz_communityassets\models\boar_cooked.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_cooked_ca.paa";
+		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;
 		bloodRegen = 200;
 	};
@@ -161,8 +171,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_2; //$STR_EQUIP_NAME_25
-		model = "\z\addons\dayz_communityassets\models\chicken_cooked.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\icon_chicken_cooked_ca.paa";
+		//model = "\z\addons\dayz_communityassets\models\chicken_cooked.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\icon_chicken_cooked_ca.paa";
+		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_2;
 		bloodRegen = 400;
 	};
@@ -171,8 +183,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_4;
-		model = "\z\addons\dayz_communityassets\models\bacon_cooked.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\i_bacon_cooked.paa";
+		//model = "\z\addons\dayz_communityassets\models\bacon_cooked.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\i_bacon_cooked.paa";
+		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
 		bloodRegen = 800;
 	};
@@ -180,8 +194,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_3;
-		model = "\z\addons\dayz_communityassets\models\rabbit_cooked.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\i_rabbit_cooked_co.paa";
+		//model = "\z\addons\dayz_communityassets\models\rabbit_cooked.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\i_rabbit_cooked_co.paa";
+		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_3;
 		bloodRegen = 100;
 	};
@@ -190,7 +206,7 @@ class CfgMagazines {
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_5;
 		model = "\z\addons\dayz_communityassets\models\buiscits_box.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\i_buiscit_cai_buiscit_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\i_buiscit_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
 		bloodRegen = 100;
 	};

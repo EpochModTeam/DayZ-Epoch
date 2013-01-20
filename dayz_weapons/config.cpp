@@ -473,7 +473,7 @@ class cfgWeapons
 			recoil = "recoil_single_primary_4outof10";
 			recoilProne = "recoil_single_primary_prone_4outof10";
 		};
-		magazines[] = {"BoltSteel", "BoltSteel4pack", "BoltSteel8pack"};
+		magazines[] = {"BoltSteel", "BoltSteel4pack"};
 		bullet1[] = {"dayz_weapons\sounds\crossbow_bolt",0.177828,1,15};
 		soundBullet[] = {"bullet1",1};
 	};
@@ -727,28 +727,6 @@ class cfgMagazines
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
 		ammo = "BoltSteel";
 		count = 4;
-		initSpeed = 150;
-		descriptionShort = "$STR_MAG_DESC_3";
-		displayNameShort = "$STR_MAG_ACTION_3";
-		class ItemActions
-		{
-			class ReloadMag
-			{
-				text = "Combine to 8 pack";
-				script = "spawn player_reloadMag;";
-				use[] = {"BoltSteel4pack","BoltSteel4pack"};
-				output[] = {"BoltSteel8pack"};
-			};
-		};
-	};
-	class BoltSteel8pack: CA_Magazine
-	{
-		scope = 2;
-		displayName = "Steel Bolt 8 Pack";
-		model = "\dayz_weapons\models\bolt_gear";
-		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
-		ammo = "BoltSteel";
-		count = 8;
 		initSpeed = 150;
 		descriptionShort = "$STR_MAG_DESC_3";
 		displayNameShort = "$STR_MAG_ACTION_3";

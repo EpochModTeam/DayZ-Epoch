@@ -34,15 +34,19 @@ class CfgWeapons {
 	class ItemMatchboxWet : ItemCore {
 		scope = public;
 		displayName = $STR_EQUIP_CODE_NAME_3;
+		//model = "\dayz_equip\models\matchbox_gear.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\equip_matchbox_wet_CA.paa";
 		model = "\dayz_equip\models\matchbox_gear.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_matchbox_wet_CA.paa";
+		picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
 		descriptionShort = $STR_EQUIP_CODE_DESC_3;
 	};
 	class ItemMatchboxEmpty : ItemCore {
 		scope = public;
 		displayName = "Empty Match Box";
+		//model = "\dayz_equip\models\matchbox_gear.p3d";
+		//picture = "\z\addons\dayz_communityassets\pictures\equip_matchbox_Empty_CA.paa";
 		model = "\dayz_equip\models\matchbox_gear.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_matchbox_wet_CA.paa";
+		picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
 		descriptionShort = $STR_EQUIP_CODE_DESC_3;
 	};	
 	

@@ -18,7 +18,6 @@ player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
 enableRadio false;
 
-
 // DayZ Epoch config
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea= 1500; // Default = 1500
@@ -30,14 +29,19 @@ dayz_maxLocalZombies = 40; // Default = 40
 
 // DayZ Epoch TRADERS
 weapon_trader = 'CIV_EuroMan01_EP1';
+weapon_trader_2 = 'Rocker4';
 parts_trader  = 'Woodlander3';
-can_trader    = 'RU_WorkWoman5';
+parts_trader_2  = 'Woodlander1';
+can_trader    = 'RU_WorkWoman1';
+can_trader_2    = 'RU_WorkWoman5';
 ammo_trader   = 'CIV_EuroMan02_EP1';
+ammo_trader_2   = 'RU_Citizen3';
 auto_trader   = 'Worker3';
 auto_trader_2 = 'Profiteer4';
 mad_sci       = 'Dr_Hladik_EP1';
+mad_sci_2       = 'Doctor';
 metals_trader = 'RU_Functionary1';
-boat_trader	  = 'RU_Villager3'; 
+boat_trader	  = 'RU_Villager3';
 
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)

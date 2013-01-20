@@ -34,7 +34,11 @@ player playActionNow "PutDown";
 player removeMagazine _item;
 sleep 1;
 
-_regen = round(random _regen);
+if (dayz_lastMeal < 3600) then { 
+	if (_item == "FoodSteakCooked") then {
+		//_regen = _regen * (10 - (10 max ((time - _Cookedtime) / 3600)));
+	};
+};
 
 r_player_blood = r_player_blood + _regen;
 if (r_player_blood > r_player_bloodTotal) then {

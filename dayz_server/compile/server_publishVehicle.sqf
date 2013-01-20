@@ -82,7 +82,7 @@ while {_retry < 15} do {
     // GET DB ID
 	_key = format["CHILD:388:%1:",_uid];
 	diag_log ("HIVE: WRITE: "+ str(_key));
-	_result = [_key] call server_hiveReadWrite;
+	_result = _key call server_hiveReadWrite;
 	_outcome = _result select 0;
 	if (_outcome == "PASS") then {
 		_oid = _result select 1;

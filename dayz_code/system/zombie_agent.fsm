@@ -99,8 +99,8 @@ link51[] = {39,22};
 link52[] = {40,28};
 link53[] = {41,5};
 link54[] = {42,1};
-globals[] = {25.000000,1,0,0,0,640,480,1,101,6316128,1,-671.713867,363.212036,746.075562,-126.281273,713,601,1};
-window[] = {2,-1,-1,-1,-1,777,66,1274,66,3,730};
+globals[] = {25.000000,1,0,0,0,640,480,1,101,6316128,1,-671.713867,363.212036,788.169373,-84.187515,713,601,1};
+window[] = {2,-1,-1,-32000,-32000,865,154,1362,154,3,730};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -340,24 +340,20 @@ class FSM
        "_targetPos = getPosATL _target;" \n
        "" \n
        "//Move to target" \n
-       "if (vehicle player == player) then {" \n
-       "	_agent moveTo _targetPos;" \n
-       "	_agent forceSpeed 6;" \n
-       "} else {" \n
-       "	_agent moveTo _vehicle;" \n
-       "	_agent forceSpeed 6;" \n
-       "};" \n
+       "" \n
+       "_agent moveTo _targetPos;" \n
+       "_agent forceSpeed 6;" \n
        "" \n
        "" \n
-       "if (_agent distance player > 15) then {" \n
-       "	_cantSee = [_agent,_target] call dayz_losCheck;" \n
-       "};" \n
+       "//if (_agent distance player > 15) then {" \n
+       "//	_cantSee = [_agent,_target] call dayz_losCheck;" \n
+       "//};" \n
        "" \n
        "//Check if LOS" \n
-       "//if (_losCheck == 2) then {" \n
-       "//	_losCheck = 0;" \n
-       "//_cantSee = [_agent,_target] call dayz_losCheck;" \n
-       "//};" \n
+       "if (_losCheck == 2) then {" \n
+       "	_losCheck = 0;" \n
+       "_cantSee = [_agent,_target] call dayz_losCheck;" \n
+       "};" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links

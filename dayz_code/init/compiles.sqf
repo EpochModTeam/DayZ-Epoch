@@ -298,6 +298,17 @@ if (!isDedicated) then {
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
+		if ("ItemMap_Debug" in items player) then {
+			if (_dikCode == 88) then //SCROLL LOCK
+			{
+				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+			};
+		} else {
+			if (_dikCode == 70) then //SCROLL LOCK
+			{
+				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+			};
+		};
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
@@ -392,18 +403,6 @@ if (!isDedicated) then {
 		_vdir = (_vval select 0) atan2 (_vval select 1);
 		if (_vdir < 0) then {_vdir = 360 + _vdir};
 		_vdir
-	};
-	
-	fnc_onKeyDown =
-	{
-	private["_key"];
-		_key = _this select 1;
-		if (_key == 70) then //SCROLL LOCK
-		{
-			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-			_shift = nil;
-		};
-		_return
 	};
 	
 	dayz_lowHumanity = {
