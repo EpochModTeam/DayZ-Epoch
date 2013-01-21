@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.M1D15";
+		version = "0.7.5.M1D21";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -219,6 +219,62 @@ class CfgSurvival {
 			yield = 4;
 			rawfoodtype = "FoodrabbitRaw";
 		};
+	};
+	class Skins {
+		class Default {
+			sex = "male";
+			playerModel = "Survivor2_DZ";
+		};
+		class Skin_Survivor2_DZ: Default {
+			sex = "male";
+			playerModel = "Survivor2_DZ";
+		};
+		class Skin_Sniper1_DZ: Default {
+			sex = "male";
+			playerModel = "Sniper1_DZ";
+		};
+		class Skin_Rocket_DZ: Default {
+			sex = "male";
+			playerModel = "Rocket_DZ";
+		};
+		class Skin_Soldier1_DZ: Default {
+			sex = "male";
+			playerModel = "Soldier1_DZ";
+		};
+		class Skin_RU_Policeman_DZ: Default {
+			sex = "male";
+			playerModel = "RU_Policeman_DZ";
+		};
+		class Skin_Pilot_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "Pilot_EP1_DZ";
+		};
+		class Skin_Haris_Press_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "Haris_Press_EP1_DZ";
+		};
+		class Skin_Ins_Soldier_GL_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Soldier_GL_DZ";
+		};
+		class Skin_GUE_Commander_DZ: Default {
+			sex = "male";
+			playerModel = "GUE_Commander_DZ";
+		};
+		class Skin_Functionary1_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "Functionary1_EP1_DZ";
+		};
+		class Skin_Priest_DZ: Default {
+			sex = "male";
+			playerModel = "Priest_DZ";
+		};
+		class Skin_Rocker2_DZ: Default {
+			sex = "male";
+			playerModel = "Rocker2_DZ";
+		};
+
+
 	};
 };
 

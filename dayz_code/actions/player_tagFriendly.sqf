@@ -5,8 +5,8 @@ _action = _this select 2;
 
 _caller removeAction _action;
 
-_callerID = _caller getVariable ["characterID", "0"];
-_targetID = _target getVariable ["characterID", "0"];
+_callerID = _caller getVariable ["characterID", 0];
+_targetID = _target getVariable ["characterID", 0];
 
 if (_callerID != 0 && _targetID != 0) then {
 

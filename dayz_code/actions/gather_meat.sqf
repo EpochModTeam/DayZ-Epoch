@@ -8,15 +8,7 @@ _config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
 
 player removeAction s_player_butcher;
 s_player_butcher = -1;
-_hasChance = 9 > random 100;
 
-if (_hasKnife) then {
-	if (_hasChance) then {
-		player removeWeapon "ItemKnife";
-		player addWeapon "ItemKnifeBlunt";
-		cutText [localize "STR_EQUIP_CODE_DESC_4", "PLAIN DOWN"];
-	};
-};
 
 if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type

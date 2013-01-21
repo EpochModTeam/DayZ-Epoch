@@ -45516,7 +45516,7 @@ class CfgVehicles
 	};
 	class z_worker1: zZombie_Base
 	{
-		zombieLoot = "";
+		zombieLoot = "worker";
 		model = "\Ca\characters_E\Overall\Overall";
 		hiddenSelections[] = {"Camo"};
 		class Wounds
@@ -45548,7 +45548,7 @@ class CfgVehicles
 	};
 	class z_teacher: z_doctor
 	{
-		zombieLoot = "";
+		zombieLoot = "civilian";
 		hiddenSelectionsTextures[] = {"\dayz\textures\clothes\teacher_co.paa"};
 	};
 	class z_hunter: zZombie_Base

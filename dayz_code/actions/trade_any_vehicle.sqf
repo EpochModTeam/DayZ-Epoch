@@ -56,6 +56,9 @@ if (_qty >= _qty_in) then {
 			_location = getPosATL _veh;
 	
 			_veh setVariable ["characterID",dayz_playerUID,true];
+
+			clearWeaponCargoGlobal  _veh;
+			clearMagazineCargoGlobal  _veh;
 	
 			["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
 			

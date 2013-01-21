@@ -127,7 +127,6 @@ server_characterSync = {
 //onPlayerConnected 		"[_uid,_name] spawn server_onPlayerConnect;";
 onPlayerDisconnected 		"[_uid,_name] call server_onPlayerDisconnect;";
 
-
 // Setup globals allow overwrite from init.sqf
 if(isnil "dayz_MapArea") then {
 	dayz_MapArea = 10000;

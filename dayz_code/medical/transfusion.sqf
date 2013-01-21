@@ -5,7 +5,7 @@ _injured = 		_unit getVariable ["USEC_injured", false];
 _inPain = 		_unit getVariable ["USEC_inPain", false];
 _lastused = 	_unit getVariable ["LastTransfusion", time];
 
-if (_lastused - time < 600) exitwith {cutText [format[(localize "str_actions_medical_18"),_text] , "PLAIN DOWN"]};
+// if (_lastused - time < 600) exitwith {cutText [format[(localize "str_actions_medical_18"),_text] , "PLAIN DOWN"]};
 
 call fnc_usec_medic_removeActions;
 r_action = false;

@@ -305,4 +305,48 @@ class CfgLoot {
 			0.01
 		}
 	};
+	worker[] = {
+		{
+			"ItemMatchboxEmpty",
+			"ItemMatchboxWet",
+			"TrashTinCan",
+			"TrashJackDaniels",
+			"ItemSodaEmpty",
+			"ItemSodaCoke",
+			"ItemSodaPepsi",
+			"FoodCanBakedBeans",
+			"FoodCanSardines",
+			"FoodCanFrankBeans",
+			"FoodCanPasta",
+			"8Rnd_9x18_Makarov",
+			"7Rnd_45ACP_1911",
+			"2Rnd_shotgun_74Slug",
+			"2Rnd_shotgun_74Pellets",
+			"ItemBandage",
+			"ItemPainkiller",
+			"ItemToolbox",
+			"ItemEtool"
+		},
+		{
+			0.05,
+			0.05,
+			0.09,
+			0.09,
+			0.09,
+			0.12,
+			0.09,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.07,
+			0.05,
+			0.05,
+			0.05,
+			0.06,
+			0.06,
+			0.01,
+			0.01
+		}
+	};
 };

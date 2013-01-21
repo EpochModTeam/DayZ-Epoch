@@ -221,7 +221,7 @@ _vehLimit = MaxVehicleLimit - _totalvehicles;
 diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 if(_vehLimit > 0) then {
 	for "_x" from 1 to _vehLimit do {
-		_id = [] spawn spawn_vehicles; // Needs setup
+		_id = [] spawn spawn_vehicles;
 		waitUntil{scriptDone _id};
 	};
 };
