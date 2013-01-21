@@ -273,6 +273,23 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Rocker2_DZ";
 		};
+		class Skin_Bandit1_DZ: Default {
+			sex = "male";
+			playerModel = "Bandit1_DZ";
+		};
+		class Skin_BanditW1_DZ: Default {
+			sex = "female";
+			playerModel = "BanditW1_DZ";
+		};
+		class Skin_SurvivorW2_DZ: Default {
+			sex = "female";
+			playerModel = "SurvivorW2_DZ";
+		};
+		class Skin_SurvivorW3_DZ: Default {
+			sex = "female";
+			playerModel = "SurvivorW3_DZ";
+		};
+		
 
 
 	};

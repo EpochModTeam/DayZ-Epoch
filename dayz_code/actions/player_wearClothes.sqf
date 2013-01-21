@@ -24,13 +24,20 @@ if (vehicle player != player) exitWith {cutText ["You may not change clothes whi
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
 
+diag_log ("Debug Clothes: model In: " + str(_itemNew) + " Out: " + str(_item));
+
+
 if ( (isClass(_config >> _itemNew)) ) then {
 	if ( (isClass(_config >> _item)) ) then {
 		// Current sex of player skin
 		
+		
+
 		_currentSex = getText (configFile >> "CfgSurvival" >> "Skins" >> _itemNew >> "sex");
 		// Sex of new skin
 		_newSex = getText (configFile >> "CfgSurvival" >> "Skins" >> _item >> "sex");
+		diag_log ("Debug Clothes: sex In: " + str(_currentSex) + " Out: " + str(_newSex));
+
 		if(_currentSex == _newSex) then {
 			// Get model name from config
 			_model = getText (configFile >> "CfgSurvival" >> "Skins" >> _item >> "playerModel");

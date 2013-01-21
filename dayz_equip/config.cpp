@@ -1084,8 +1084,31 @@ class CfgMagazines
 		scope = 2;
 		displayName = "Rocker Outfit";
 		descriptionShort = "Rebel Uniform";
+	};	
+	class Skin_Bandit1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Outfit";
+		descriptionShort = "Bandit Outfit";
 	};
-	
+	class Skin_BanditW1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit (female)";
+		descriptionShort = "Bandit (female)";
+	};
+	class Skin_SurvivorW3_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "European (female)";
+		descriptionShort = "European (female)";
+	};
+	class Skin_SurvivorW2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Civilian (female)";
+		descriptionShort = "Civilian (female)";
+	};
 	
 	
 	
