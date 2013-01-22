@@ -20,31 +20,44 @@ if (_qty >= _qty_in) then {
 	if(_buy_o_sell == "sell") then {
 		_bos = 1;
 	};
-
-    ["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-
-	diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
-
-	waitUntil {!isNil "dayzTradeResult"};
-
-	diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
-
-	if(dayzTradeResult == "PASS") then {
-		for "_x" from 1 to _qty_in do {
-			player removeMagazine _part_in;
-		};
 	
-		for "_x" from 1 to _qty_out do {
-			player addMagazine _part_out;
-		};
-	
-		// [player,"repair",0,false] call dayz_zombieSpeak;
-		cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+	if(_buy_o_sell == "buy") then {
+		_config = (configFile >> "cfgMagazines" >> _part_out);
+		_isOk = [player,_config] call BIS_fnc_invAdd;
 	} else {
-		cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+		_isOk = true;
 	};
-	dayzTradeResult = nil;
+	
+	if (_isOk) then {
+	
+		["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 
+		diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
+
+		waitUntil {!isNil "dayzTradeResult"};
+
+		diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+
+		if(dayzTradeResult == "PASS") then {
+			for "_x" from 1 to _qty_in do {
+				player removeMagazine _part_in;
+			};
+	
+			for "_x" from 1 to _qty_out do {
+				player addMagazine _part_out;
+			};
+	
+			// [player,"repair",0,false] call dayz_zombieSpeak;
+			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+		} else {
+			cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+		};
+		dayzTradeResult = nil;
+
+	
+	} else {
+		cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+	};	
 	
 
 } else {

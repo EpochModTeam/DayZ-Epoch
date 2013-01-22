@@ -1341,6 +1341,7 @@ class CfgVehicles
 		};
 	};
 	class Soldier_Crew_PMC;
+	class Soldier_Bodyguard_M4_PMC;
 	class Survivor1_DZ: Soldier_Crew_PMC
 	{
 		displayName = "$STR_CHAR_1";
@@ -1375,7 +1376,7 @@ class CfgVehicles
 			init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\PMC_soldier\Data\bauer_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_3_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_4_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_5_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [1,[""ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_1_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_3_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [2,[""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_CO.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa""] select floor random 2]";
 		};
 	};
-	class SurvivorW2_DZ: Soldier_Crew_PMC
+	class SurvivorW2_DZ: Soldier_Bodyguard_M4_PMC
 	{
 		displayName = "$STR_CHAR_1";
 		side = 1;
@@ -1574,12 +1575,12 @@ class CfgVehicles
 		side = 1;
 		model = "\dayz\characters\woman_bandit";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\baker_co.paa"};
+		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\european_woman_01_co.paa"};
 	};
 	class SurvivorW3_DZ: SurvivorW2_DZ
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\ca\characters_e\Woman\Baker\Data\european_woman_01_co.paa"};
+		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\european_woman_01_co.paa"};
 	};
 	class Citizen1;
 	class PZombie_VB: Citizen1

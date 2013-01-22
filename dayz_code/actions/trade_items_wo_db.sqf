@@ -16,17 +16,29 @@ _qty = {_x == _part_in} count magazines player;
 
 if (_qty >= _qty_in) then {
 
-	for "_x" from 1 to _qty_in do {
-		player removeMagazine _part_in;
+	if(_buy_o_sell == "buy") then {
+		_config = (configFile >> "cfgMagazines" >> _part_out);
+		_isOk = [player,_config] call BIS_fnc_invAdd;
+	} else {
+		_isOk = true;
 	};
 	
-	for "_x" from 1 to _qty_out do {
-		player addMagazine _part_out;
-	};
-	
-	// [player,"repair",0,false] call dayz_zombieSpeak;
-	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+	if (_isOk) then {
 
+		for "_x" from 1 to _qty_in do {
+			player removeMagazine _part_in;
+		};
+	
+		for "_x" from 1 to _qty_out do {
+			player addMagazine _part_out;
+		};
+	
+		// [player,"repair",0,false] call dayz_zombieSpeak;
+		cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+
+	} else {
+		cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+	};
 } else {
 	_needed =  _qty_in - _qty;
 	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];

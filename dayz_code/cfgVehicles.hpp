@@ -482,8 +482,6 @@ class Citizen1;	// External class reference
 		canCarryBackPack = 1;
 	};
 	
-	
-	
 	class BAF_Soldier_W;
 	class Soldier1_DZ: BAF_Soldier_W {
 		displayName = "Soldier";
