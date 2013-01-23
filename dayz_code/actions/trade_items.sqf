@@ -1,4 +1,4 @@
-private["_iarray","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos"];
+private["_iarray","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_isOk"];
 // [part_out,part_in, qty_out, qty_in,];
 
 _activatingPlayer = _this select 1;
@@ -21,6 +21,7 @@ if (_qty >= _qty_in) then {
 		_bos = 1;
 	};
 	
+	_isOk = false;
 	if(_buy_o_sell == "buy") then {
 		_config = (configFile >> "cfgMagazines" >> _part_out);
 		_isOk = [player,_config] call BIS_fnc_invAdd;

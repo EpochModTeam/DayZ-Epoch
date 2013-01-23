@@ -16,6 +16,7 @@ _qty = {_x == _part_in} count magazines player;
 
 if (_qty >= _qty_in) then {
 
+	_isOk = false;
 	if(_buy_o_sell == "buy") then {
 		_config = (configFile >> "cfgMagazines" >> _part_out);
 		_isOk = [player,_config] call BIS_fnc_invAdd;
