@@ -1174,10 +1174,10 @@ class Mission
 	};
 	class Markers
 	{
-		items=7;
+		items=10;
 		class Item0
 		{
-			position[]={7839.6055,381.33774,8414.7324};
+			position[]={7550.6182,361.05222,8371.957};
 			name="center";
 			type="Empty";
 		};
@@ -1216,6 +1216,30 @@ class Mission
 			position[]={13510.764,0.44504455,5249.3027};
 			name="spawn4";
 			type="Empty";
+		};
+		class Item7
+		{
+			position[]={4069.8455,365.19922,11661.84};
+			name="Tradercitybash";
+			text="Trader City Bash";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item8
+		{
+			position[]={11469.787,317.32358,11356.751};
+			name="Tradercityklen";
+			text="Trader City Klen";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item9
+		{
+			position[]={9772.5752,1.8273382,1763.3428};
+			name="boatsnwholesale";
+			text="Wholesale Goods";
+			type="mil_circle";
+			colorName="ColorGreen";
 		};
 	};
 };
