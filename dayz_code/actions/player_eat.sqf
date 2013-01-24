@@ -11,7 +11,12 @@ if (vehicle player != player) exitWith {cutText ["You may not eat while in a veh
 _item = _this;
 _hasfooditem = _this in magazines player;
 
-_rndInfection = (random 15);
+if (_item == "FoodBioMeat") then {
+	_rndInfection = (random 7);
+} else {
+	_rndInfection = (random 15);
+};
+
 _EatInfection = (_rndInfection < 1);
 
 _config =	configFile >> "CfgMagazines" >> _item;

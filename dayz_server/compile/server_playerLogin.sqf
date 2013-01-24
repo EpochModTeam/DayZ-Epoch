@@ -79,15 +79,9 @@ if (!_isNew) then {
 	_model =		_primary select 7;
 	_hiveVer =		_primary select 8;
 	
-	if ( !(isClass(configFile >> "CfgVehicles" >> _model)) )  then {
+	if (!(_model in AllPlayers)) then {
 		_model = "Survivor2_DZ";
 	};
-
-	/*
-	if (!(_model in ["SurvivorW2_DZ","Survivor2_DZ","Sniper1_DZ","Soldier1_DZ","Rocket_DZ","Camo1_DZ","BanditW1_DZ","Bandit1_DZ","SurvivorW2_DZ","Rocker2_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","PZombie_VB"])) then {
-		_model = "Survivor2_DZ";
-	};
-	*/
 	
 } else {
 	_isInfected =	_primary select 3;

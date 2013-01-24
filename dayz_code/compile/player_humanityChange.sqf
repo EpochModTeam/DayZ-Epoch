@@ -10,15 +10,14 @@ if (_object == player) then {
 	if (_change < 0) then {
 		_wait =	  _this select 2;
 		player setVariable["humanity",_humanity,true];
-		if ((typeOf player != "Bandit1_DZ") && (typeOf player != "BanditW1_DZ")) then {
-			if (player getVariable ["freeTarget",false]) then {
-				waitUntil{!(player getVariable ["freeTarget",false])};
-			};
-			player setVariable ["freeTarget",true,true];
-			_timeStart = time;
-			sleep _wait;
-			player setVariable ["freeTarget",false,true];
+		if (player getVariable ["freeTarget",false]) then {
+			waitUntil{!(player getVariable ["freeTarget",false])};
 		};
+		player setVariable ["freeTarget",true,true];
+		_timeStart = time;
+		sleep _wait;
+		player setVariable ["freeTarget",false,true];
+		
 	} else {
 		player setVariable["humanity",_humanity,true];
 	};

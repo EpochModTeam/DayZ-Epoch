@@ -1575,6 +1575,11 @@ class CfgVehicles
 		side = 1;
 		model = "\dayz\characters\woman_bandit";
 		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\baker_co.paa"};
+	};
+	class BanditW2_DZ: BanditW1_DZ
+	{
+		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\european_woman_01_co.paa"};
 	};
 	class SurvivorW3_DZ: SurvivorW2_DZ

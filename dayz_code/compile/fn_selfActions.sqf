@@ -285,20 +285,31 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		};
 	};
 	
+	_humanity = player getVariable ["humanity",0];
+
 	// Parts Trader #1
 	if (_isMan and !_isPZombie and _traderType == parts_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
-			_parts_trader_menu = [["Car Parts",21],["Building Supplies",22],["Explosives",23]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+			if(_humanity < -2000) then {
 
-			} forEach _parts_trader_menu;
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
+
+			} else {
+			
+				_parts_trader_menu = [["Car Parts",21],["Building Supplies",22],["Explosives",23]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _parts_trader_menu;
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 	};
@@ -308,15 +319,24 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		
 		if (s_player_parts_crtl < 0) then {
 
-			_parts_trader_2_menu = [["Car Parts",2121],["Building Supplies",2222],["Explosives",2323]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+			if(_humanity < -2000) then {
 
-			} forEach _parts_trader_2_menu;
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
+
+			} else {
+
+				_parts_trader_2_menu = [["Car Parts",2121],["Building Supplies",2222],["Explosives",2323]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _parts_trader_2_menu;
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 	};
@@ -326,15 +346,24 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		
 		if (s_player_parts_crtl < 0) then {
 
-			_weapon_trader_menu = [["Sidearm",11],["Rifle",12],["Shotgun",13],["Assault Rifle",14],["Machine Gun",15],["Sniper Rifle",16]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+			if(_humanity < -2000) then {
 
-			} forEach _weapon_trader_menu;
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
+
+			} else {
+
+				_weapon_trader_menu = [["Sidearm",11],["Rifle",12],["Shotgun",13],["Assault Rifle",14],["Machine Gun",15],["Sniper Rifle",16]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _weapon_trader_menu;
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 	};
@@ -343,16 +372,24 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	if (_isMan and !_isPZombie and _traderType == weapon_trader_2) then {
 		
 		if (s_player_parts_crtl < 0) then {
+			
+			if(_humanity < -2000) then {
 
-			_weapon_trader_2_menu = [["Sidearm",1111],["Rifle",1212],["Shotgun",1313],["Assault Rifle",1414],["Machine Gun",1515],["Sniper Rifle",1616]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _weapon_trader_2_menu;
+			} else {
+				_weapon_trader_2_menu = [["Sidearm",1111],["Rifle",1212],["Shotgun",1313],["Assault Rifle",1414],["Machine Gun",1515],["Sniper Rifle",1616]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _weapon_trader_2_menu;
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 	};
@@ -362,23 +399,32 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		
 		if (s_player_parts_crtl < 0) then {
 
-			// [_trader_id, _category, ];
-			_cantrader = player addAction ["Trade 3 Empty Soda Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar"], 99, true, true, "",""];
-			_cantrader1 = player addAction ["Trade 3 Empty Tin Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar"], 99, true, true, "",""];
-			_cantrader2 = player addAction ["Trade 1 Empty Wiskey Bottle for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar"], 99, true, true, "",""];
-			s_player_parts set [count s_player_parts,_cantrader];
-			s_player_parts set [count s_player_parts,_cantrader1];
-			s_player_parts set [count s_player_parts,_cantrader2];
+			if(_humanity < -2000) then {
 
-			_can_trader_menu = [["Food and Drinks",51],["Backpacks",52],["Toolbelt",53],["Clothes",54]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 98, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _can_trader_menu;
+			} else {
+
+				// [_trader_id, _category, ];
+				_cantrader = player addAction ["Trade 3 Empty Soda Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar"], 99, true, true, "",""];
+				_cantrader1 = player addAction ["Trade 3 Empty Tin Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar"], 99, true, true, "",""];
+				_cantrader2 = player addAction ["Trade 1 Empty Wiskey Bottle for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar"], 99, true, true, "",""];
+				s_player_parts set [count s_player_parts,_cantrader];
+				s_player_parts set [count s_player_parts,_cantrader1];
+				s_player_parts set [count s_player_parts,_cantrader2];
+
+				_can_trader_menu = [["Food and Drinks",51],["Backpacks",52],["Toolbelt",53],["Clothes",54]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 98, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _can_trader_menu;
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 
@@ -388,24 +434,33 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	if (_isMan and !_isPZombie and _traderType == can_trader_2) then {
 		
 		if (s_player_parts_crtl < 0) then {
+		
+			if(_humanity < -2000) then {
 
-			// [_trader_id, _category, ];
-			_cantrader = player addAction ["Trade 3 Empty Soda Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar"], 99, true, true, "",""];
-			_cantrader1 = player addAction ["Trade 3 Empty Tin Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar"], 99, true, true, "",""];
-			_cantrader2 = player addAction ["Trade 1 Empty Wiskey Bottle for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar"], 99, true, true, "",""];
-			s_player_parts set [count s_player_parts,_cantrader];
-			s_player_parts set [count s_player_parts,_cantrader1];
-			s_player_parts set [count s_player_parts,_cantrader2];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			_can_trader_2_menu = [["Food and Drinks",5151],["Backpacks",5252],["Toolbelt",5353],["Clothes",5454]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 98, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+			} else {
 
-			} forEach _can_trader_2_menu;
+				// [_trader_id, _category, ];
+				_cantrader = player addAction ["Trade 3 Empty Soda Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar"], 99, true, true, "",""];
+				_cantrader1 = player addAction ["Trade 3 Empty Tin Cans for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar"], 99, true, true, "",""];
+				_cantrader2 = player addAction ["Trade 1 Empty Wiskey Bottle for 1 Copper", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar"], 99, true, true, "",""];
+				s_player_parts set [count s_player_parts,_cantrader];
+				s_player_parts set [count s_player_parts,_cantrader1];
+				s_player_parts set [count s_player_parts,_cantrader2];
+
+				_can_trader_2_menu = [["Food and Drinks",5151],["Backpacks",5252],["Toolbelt",5353],["Clothes",5454]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 98, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _can_trader_2_menu;
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 
@@ -415,16 +470,25 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	if (_isMan and !_isPZombie and _traderType == ammo_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
+		
+			if(_humanity < -2000) then {
 
-			_ammo_trader_menu = [["Sidearm Ammo",1],["Rifle Ammo",2],["Shotgun and Crossbow Ammo",3],["Assault Rifle Ammo",4],["Machine Gun Ammo",5],["Sniper Rifle Ammo",6]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _ammo_trader_menu;			
+			} else {
+
+				_ammo_trader_menu = [["Sidearm Ammo",1],["Rifle Ammo",2],["Shotgun and Crossbow Ammo",3],["Assault Rifle Ammo",4],["Machine Gun Ammo",5],["Sniper Rifle Ammo",6]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _ammo_trader_menu;			
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 
@@ -435,15 +499,25 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		
 		if (s_player_parts_crtl < 0) then {
 
-			_ammo_trader_2_menu = [["Sidearm Ammo",1001],["Rifle Ammo",2002],["Shotgun and Crossbow Ammo",3003],["Assault Rifle Ammo",4004],["Machine Gun Ammo",5005],["Sniper Rifle Ammo",6006]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+		
+			if(_humanity < -2000) then {
 
-			} forEach _ammo_trader_2_menu;			
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
+
+			} else {
+
+				_ammo_trader_2_menu = [["Sidearm Ammo",1001],["Rifle Ammo",2002],["Shotgun and Crossbow Ammo",3003],["Assault Rifle Ammo",4004],["Machine Gun Ammo",5005],["Sniper Rifle Ammo",6006]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _ammo_trader_2_menu;			
+				
+			};
 			s_player_parts_crtl = 1;
 		};
 
@@ -454,17 +528,27 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	if (_isMan and !_isPZombie and _traderType == boat_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
+		
+			if(_humanity < -2000) then {
 
-			_boat_trader_menu = [["Boats Unarmed",49],["Boats Armed",499],["Wholesale",999]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _boat_trader_menu;			
+			} else {
+
+				_boat_trader_menu = [["Boats Unarmed",49],["Boats Armed",499],["Wholesale",999]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _boat_trader_menu;			
+			
+			};
 			s_player_parts_crtl = 1;
+			
 		};
 
 	};
@@ -474,16 +558,25 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	if (_isMan and !_isPZombie and _traderType == auto_trader) then {
 		
 		if (s_player_parts_crtl < 0) then {
+		
+			if(_humanity < -2000) then {
 
-			_auto_trader_menu = [["Cars",41],["Trucks Unarmed",42],["SUV",466],["Buses and Vans",467],["Offroad",43],["Helicopter Unarmed",44],["Military Unarmed",45]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _auto_trader_menu;
+			} else {
+
+
+				_auto_trader_menu = [["Cars",41],["Trucks Unarmed",42],["SUV",466],["Buses and Vans",467],["Offroad",43],["Helicopter Unarmed",44],["Military Unarmed",45]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _auto_trader_menu;
+			};
 			s_player_parts_crtl = 1;
 		};
 
@@ -494,16 +587,24 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	if (_isMan and !_isPZombie and _traderType == auto_trader_2) then {
 		
 		if (s_player_parts_crtl < 0) then {
+		
+			if(_humanity < -2000) then {
 
-			_auto_trader_2_menu = [["Trucks Armed",422],["Utility",46],["Helicopter Armed",444],["Military Armed",455],["Fuel Trucks",47],["Heavy Armor Unarmed",48]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _auto_trader_2_menu;
+			} else {
+
+				_auto_trader_2_menu = [["Trucks Armed",422],["Utility",46],["Helicopter Armed",444],["Military Armed",455],["Fuel Trucks",47],["Heavy Armor Unarmed",48]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _auto_trader_2_menu;
+			};
 			s_player_parts_crtl = 1;
 		};
 
@@ -514,19 +615,28 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		
 		if (s_player_parts_crtl < 0) then {
 			
-			// [part_out, part_in, qty_out, qty_in,];
-			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat"], 99, true, true, "",""];
-			s_player_parts set [count s_player_parts,_zparts1];
+			if(_humanity < -2000) then {
 
-			_mad_sci_menu = [["Medical Supplies",31],["Chem-lites/Flares",32],["Smoke Grenades",33]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _mad_sci_menu;
+			} else {
+				
+				// [part_out, part_in, qty_out, qty_in,];
+				_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat"], 99, true, true, "",""];
+				s_player_parts set [count s_player_parts,_zparts1];
+
+
+				_mad_sci_menu = [["Medical Supplies",31],["Chem-lites/Flares",32],["Smoke Grenades",33]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _mad_sci_menu;
+			};
 			s_player_parts_crtl = 1;
 		};
 	};
@@ -536,19 +646,27 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		
 		if (s_player_parts_crtl < 0) then {
 			
-			// [part_out, part_in, qty_out, qty_in,];
-			_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat"], 99, true, true, "",""];
-			s_player_parts set [count s_player_parts,_zparts1];
+			if(_humanity < -2000) then {
 
-			_mad_sci_2_menu = [["Medical Supplies",3131],["Chem-lites/Flares",3232],["Smoke Grenades",3333]];
-			{
-				// _title = _x select 0;
-				// _traderid = _x select 1;
-				// buy_or_sell.sqf [_trader_id, _category, ];
-				_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-				s_player_parts set [count s_player_parts,_buy];
+				_cancel = player addAction ["Your humanity is too low this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_cancel];
 
-			} forEach _mad_sci_2_menu;
+			} else {
+
+				// [part_out, part_in, qty_out, qty_in,];
+				_zparts1 = player addAction ["Trade Zombie Parts for Bio Meat", "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat"], 99, true, true, "",""];
+				s_player_parts set [count s_player_parts,_zparts1];
+
+				_mad_sci_2_menu = [["Medical Supplies",3131],["Chem-lites/Flares",3232],["Smoke Grenades",3333]];
+				{
+					// _title = _x select 0;
+					// _traderid = _x select 1;
+					// buy_or_sell.sqf [_trader_id, _category, ];
+					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
+					s_player_parts set [count s_player_parts,_buy];
+
+				} forEach _mad_sci_2_menu;
+			};
 			s_player_parts_crtl = 1;
 		};
 	};

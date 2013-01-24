@@ -1097,11 +1097,17 @@ class CfgMagazines
 		displayName = "Bandit (female)";
 		descriptionShort = "Bandit (female)";
 	};
+	class Skin_BanditW2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Camo (female)";
+		descriptionShort = "Bandit Camo (female)";
+	};
 	class Skin_SurvivorW3_DZ: SkinBase
 	{
 		scope = 2;
-		displayName = "European (female)";
-		descriptionShort = "European (female)";
+		displayName = "Camo Pants (female)";
+		descriptionShort = "Camo Pants (female)";
 	};
 	class Skin_SurvivorW2_DZ: SkinBase
 	{

@@ -236,7 +236,7 @@ _playerObj setVariable["humanity_CHK",_humanity];
 //_playerObj setVariable["worldspace",_worldspace,true];
 //_playerObj setVariable["state",_state,true];
 _playerObj setVariable["lastPos",getPosATL _playerObj];
-_playerObj setVariable["friendlies",_friendlies];
+_playerObj setVariable["friendlies",_friendlies,true];
 
 dayzPlayerLogin2 = [_worldspace,_state];
 _clientID = owner _playerObj;

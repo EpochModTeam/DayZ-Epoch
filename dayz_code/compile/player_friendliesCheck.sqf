@@ -13,10 +13,10 @@ _tagList = player getVariable ["tagList", []];
 			if (!(_charID in _rfriendlyTo)) then {
 				_position = [0,0,0];
 				_tag = "Sign_sphere10cm_EP1" createVehicleLocal _position;
-				_tag attachTo [_x,[0,0,2]];
+				_tag attachTo [_x,[0,0,0],"lwrist"];
 				_tag setVariable ["belongsTo", _rcharID];
 				_rfriendlyTo set [count _rfriendlyTo, _charID];
-				_x setVariable ["friendlyTo", _rfriendlyTo];
+				_x setVariable ["friendlyTo", _rfriendlyTo, true];
 				_tagList set [count _tagList, [_x, _tag]];
 				player setVariable ["tagList", _tagList];
 				titleText [format["You and %1 are now tagged as friendlies.", (name _x)], "PLAIN DOWN"];
