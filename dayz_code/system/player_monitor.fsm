@@ -456,9 +456,8 @@ class FSM
        "_version	= _msg select 5;" \n
        "_model		= _msg select 6;" \n
        "" \n
-       "_isHiveOk = false; // _msg select 7;" \n
-       "_newPlayer = false; // _msg select 8;" \n
-       "" \n
+       "_isHiveOk = false;" \n
+       "_newPlayer = false;" \n
        "_isInfected = _msg select 9;" \n
        "" \n
        "if (count _msg > 7) then {" \n
@@ -1079,9 +1078,10 @@ class FSM
        "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
        "" \n
        "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
-       "_nearestCity = (nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000] select 0);" \n
+       "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
        "_town = ""Wilderness"";" \n
-       "if (!isNil ""_nearestCity"") then {_town = text _nearestCity};" \n
+       "" \n
+       "if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};" \n
        "" \n
        "_strTime = call curTimeStr;" \n
        "_strDate = date;" \n

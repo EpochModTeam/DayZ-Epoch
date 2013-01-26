@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayepoch.com";
-		version = "0.791";
+		version = "0.792";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -233,6 +233,10 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Sniper1_DZ";
 		};
+		class Skin_Camo1_DZ: Default {
+			sex = "male";
+			playerModel = "Camo1_DZ";
+		};
 		class Skin_Rocket_DZ: Default {
 			sex = "male";
 			playerModel = "Rocket_DZ";
@@ -355,7 +359,13 @@ class CfgBuildingLoot {
 			{ "Skin_Camo1_DZ","magazine" },
 			{ "Skin_Sniper1_DZ","magazine" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
-			{"MR43","weapon"}
+			{"MR43","weapon"},
+			{ "Skin_RU_Policeman_DZ","magazine" },
+			{ "Skin_Pilot_EP1_DZ","magazine" },
+			{ "Skin_Functionary1_EP1_DZ","magazine" },
+			{ "Skin_Priest_DZ","magazine" },
+			{ "Skin_Rocker2_DZ","magazine" },
+			{ "Skin_SurvivorW3_DZ","magazine" },
 	};
 		itemChance[] =	{
 			0.01,
@@ -384,7 +394,13 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.08,
-			0.03
+			0.03,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.05,
 		};		
 	};
 	class Office: Residential {
@@ -819,7 +835,12 @@ class HeliCrash_No50s: Default {
 			{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
-			{ "Skin_Soldier1_DZ","magazine" }
+			{ "Skin_Soldier1_DZ","magazine" },
+			{ "Skin_Ins_Soldier_GL_DZ","magazine" },
+			{ "Skin_GUE_Commander_DZ","magazine" },
+			{ "Skin_Bandit1_DZ","magazine" },
+			{ "Skin_BanditW1_DZ","magazine" },
+			{ "Skin_BanditW2_DZ","magazine" },
 	};
 		itemChance[] =	{
 			0.10,
@@ -873,7 +894,12 @@ class HeliCrash_No50s: Default {
 			0.01, //{"G36_C_SD_camo","weapon"},
 			0.02, // M40A3
 			0.01,	//("100Rnd_762x54_PK","magazine"}
-			0.05
+			0.05,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
 		};
 	};
 	class Church: Residential {
