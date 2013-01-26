@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayepoch.com";
-		version = "0.78";
+		version = "0.791";
 		hiveVersion = 0.96; //0.93
 	};
 };

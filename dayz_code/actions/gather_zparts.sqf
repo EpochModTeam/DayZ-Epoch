@@ -25,7 +25,12 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 	_array = [_item,_qty];
 	
-	["dayzGutBodyZ",[_item,_qty]] call callRpcProcedure;
+	if (local _item) then {
+		_array spawn local_gutObjectZ;
+	} else {
+		dayzGutBody = _array;
+		publicVariable "dayzGutBodyZ";
+	};
 	
 	sleep 6;
 	_string = format["Successfully Gutted Zombie",_text,_qty];

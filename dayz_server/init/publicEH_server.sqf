@@ -18,9 +18,7 @@ registerServerRpc = {
 //["dayzPlayerMorph",		{ (_this select 1) call server_playerMorph; }			] call registerServerRpc;
 ["dayzLoginRecord",		{ (_this select 1) call dayz_recordLogin; }				] call registerServerRpc;
 ["dayzCharDisco",		{ (_this select 1) call server_characterSync; }			] call registerServerRpc;
-["dayzGutBody",			{ (_this select 1) spawn server_gutObject; }			] call registerServerRpc;
 // DayZ Epoch Custom
-["dayzGutBodyZ",			{ (_this select 1) spawn server_gutObjectZ; }		] call registerServerRpc;
 ["dayzPublishVeh",			{ (_this select 1) spawn server_publishVeh; }		] call registerServerRpc;
 ["dayzTradeObject",			{ (_this select 1) spawn server_tradeObj; }			] call registerServerRpc;
 ["dayzTraderMenu",			{ (_this select 1) spawn server_traders; }			] call registerServerRpc;

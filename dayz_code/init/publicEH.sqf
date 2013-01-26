@@ -53,6 +53,8 @@ registerBroadcastRpc = {
 ["dayzSetFuel",		{ (_this select 1) call local_setFuel; }			] call registerBroadcastRpc;
 ["dayzSetFix",		{ (_this select 1) call object_setFixServer; }		] call registerBroadcastRpc;
 ["dayzSetDate",		{ setDate (_this select 1); }						] call registerBroadcastRpc;
+["dayzGutBody",		{ (_this select 1) call local_gutObject; }			] call registerBroadcastRpc;
+["dayzGutBodyZ",		{ (_this select 1) call local_gutObjectZ; }			] call registerBroadcastRpc;
 //EHs that setVariable "medForceUpdate" need to run on the server too
 ["usecMorphine",		{ (_this select 1) call player_medMorphine; }	] call registerBroadcastRpc;
 ["usecBandage",			{ (_this select 1) call player_medBandage; }	] call registerBroadcastRpc;

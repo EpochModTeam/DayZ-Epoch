@@ -3,10 +3,11 @@ private["_hasFoodMeat","_hasFoodTin","_item","_wait"];
 player removeAction s_player_cook;
 s_player_cook = -1;
 
-_qty = {_x == "FoodSteakRaw"} count magazines player;
+//_qty = {_x == "FoodSteakRaw"} count magazines player;
 _wait = 5 - _qty;
 
 if ("FoodSteakRaw" in magazines player) then {
+_qty = {_x == "FoodSteakRaw"} count magazines player;
 	player playActionNow "Medic";
 	[player,"cook",0,false] call dayz_zombieSpeak;
 	_id = [player,70,true,(getPosATL player)] spawn player_alertZombies;
@@ -23,6 +24,7 @@ if ("FoodSteakRaw" in magazines player) then {
 
 //FoodmuttonRaw > FoodmuttonCooked
 if ("FoodmuttonRaw" in magazines player) then {
+_qty = {_x == "FoodmuttonRaw"} count magazines player;
 	player playActionNow "Medic";
 	[player,"cook",0,false] call dayz_zombieSpeak;
 	_id = [player,70,true,(getPosATL player)] spawn player_alertZombies;
@@ -39,6 +41,7 @@ if ("FoodmuttonRaw" in magazines player) then {
 
 //FoodchickenRaw > FoodchickenCooked
 if ("FoodchickenRaw" in magazines player) then {
+_qty = {_x == "FoodchickenRaw"} count magazines player;
 	player playActionNow "Medic";
 	[player,"cook",0,false] call dayz_zombieSpeak;
 	_id = [player,70,true,(getPosATL player)] spawn player_alertZombies;
@@ -55,6 +58,7 @@ if ("FoodchickenRaw" in magazines player) then {
 
 //FoodrabbitRaw > FoodBaconCooked
 if ("FoodrabbitRaw" in magazines player) then {
+_qty = {_x == "FoodrabbitRaw"} count magazines player;
 	player playActionNow "Medic";
 	[player,"cook",0,false] call dayz_zombieSpeak;
 	_id = [player,70,true,(getPosATL player)] spawn player_alertZombies;
@@ -71,6 +75,7 @@ if ("FoodrabbitRaw" in magazines player) then {
 
 //FoodbaconRaw > FoodRabbitCooked
 if ("FoodbaconRaw" in magazines player) then {
+_qty = {_x == "FoodbaconRaw"} count magazines player;
 	player playActionNow "Medic";
 	[player,"cook",0,false] call dayz_zombieSpeak;
 	_id = [player,70,true,(getPosATL player)] spawn player_alertZombies;

@@ -29,7 +29,7 @@ if (!isNull _object) then {
 	{ [_x,"gear"] call server_updateObject } foreach 
 		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10]);
 	if (alive _object) then {
-		[_object,(magazines _object),true] call server_playerSync;
+		[_object,(magazines _object),true,(unitBackpack _object)] call server_playerSync;
 		_myGroup = group _object;
 		deleteVehicle _object;
 		deleteGroup _myGroup;

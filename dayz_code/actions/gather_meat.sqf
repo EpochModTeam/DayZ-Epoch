@@ -18,7 +18,6 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	player playActionNow "Medic";
 	[player,"gut",0,false] call dayz_zombieSpeak;
 	_item setVariable["meatHarvested",true,true];
-	_item setVariable ["timerawmeatHarvested",time,false];
 	
 	_qty = 2;	
 	if (_isListed) then {
@@ -29,7 +28,14 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 	
-	["dayzGutBody",[_item,_qty]] call callRpcProcedure;
+	_array = [_item,_qty];
+
+	if (local _item) then {
+		_array spawn local_gutObject;
+	} else {
+		dayzGutBody = _array;
+		publicVariable "dayzGutBody";
+	};
 	
 	sleep 6;
 	_string = format[localize "str_success_gutted_animal",_text,_qty];

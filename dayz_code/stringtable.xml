@@ -6,96 +6,145 @@
 			<English>DEAN HALL PRESENTS</English>
 			<German>DEAN HALL PRÄSENTIERT</German>
 			<Russian>DEAN HALL ПРЕДСТАВЛЯЕТ</Russian>
+			<Spanish>DEAN HALL PRESENTA</Spanish>
+			<Dutch>DEAN HALL PRESENTEERT</Dutch>
+			<French>DEAN HALL VOUS PRESENTE</French>
 		</Key>
 		<Key ID="STR_INTRO_2">	
 			<Original>A USECFORCE PRODUCTION</Original>
 			<English>A USECFORCE PRODUCTION</English>
 			<German>EINE USECFORCE PRODUKTION</German>
 			<Russian>ПРОИЗВОДСТВО USECFORCE</Russian>
+			<Spanish>UNA PRODUCCION DE USECFORCE</Spanish>
+			<Dutch>EEN USECFORCE PRODUCTIE</Dutch>
+			<French>UNE PRODUCTION USECFORCE</French>
 		</Key>
 		<Key ID="STR_INTRO_3">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>On 12 March 2013, a prion disease\nand spreads among the worlds population\ntriggering a global pandemic</Original>
 			<English>On 12 March 2013, a prion disease\nand spreads among the worlds population\ntriggering a global pandemic</English>
 			<German>Am 12. März 2013 breitet sich\neine Prionenkrankheit unter der Weltbevölkerung aus\nund löst eine globale Pandemie aus</German>
 			<Russian>12 марта 2013 г., прионное заболевание\nраспространяется среди населения всего земного шара,\nвызывая общую пандемию</Russian>
+			<Spanish>El 12 de Marzo de 2012, una enfermedad prionica\nse propaga entre la poblacion mundial\ndesencadenando una pandemia global</Spanish>
+			<Dutch>Op 12 maart 2013 brak er een\nprionziekte uit onder de wereldbevolking\nmet als gevolg een\nwereldwijde pandemie</Dutch>
+			<French>Le 12 Mars 2013, une maladie à prions\n se répand parmi la population mondiale\ndéclenchant une pandémie globale</French>
 		</Key>
 		<Key ID="STR_INTRO_4">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>The disease causes proteins in the brain to be replaced with prions ceasing regular function</Original>
 			<English>The disease causes proteins in the brain to be replaced with prions ceasing regular function</English>
 			<German>Durch die Krankheit werden Proteine im Gehirn durch Prionen ersetzt, wodurch das Gehirn aussetzt</German>
 			<Russian>Болезнь вызывает изменения протеинов головного мозга, заменяя их прионами, влияющими на основные функции</Russian>
+			<Spanish>La enfermedad provoca que las proteinas del cerebro sean reemplazadas con priones dejando de funcionar regularmente</Spanish>
+			<Dutch>De ziekte vervangt proteïnen in het brein met prions, waardoor het brein niet meer naar behoren functioneert</Dutch>
+			<French>La maladie entraîne le remplacement des protéines dans le cerveau \npar des prions, qui cessent alors leurs fonctions normales</French>	
 		</Key>
 		<Key ID="STR_INTRO_5">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>Most people progress to dementia and then death as the brain is replaced with ineffective sludge</Original>
 			<English>Most people they progress to dementia and then death as the brain is replaced with ineffective sludge</English>
 			<German>Die meisten verfallen in Demenz und sterben, während das Gehirn mit nutzlosem Matsch ersetzt wird</German>
 			<Russian>У большинства болезнь развивается в слабоумие и последующую смерть, так как мозг заменяется бесполезной грязью</Russian>
+			<Spanish>La mayoria de la gente se volvia loca y luego moria como resultado de que su cerebro era reemplazado por algo ineficiente</Spanish>
+			<Dutch>Het grootste deel van de bevolking begint hierdoor te leiden aan dementie, en zal spoedig daarna sterven, omdat het brein wordt vervangen met drab</Dutch>
+			<French>La plupart des gens deviennent déments puis meurent \nalors que leurs cellules nerveuses sont remplacées par une matière inefficace</French>
 		</Key>
 		<Key ID="STR_INTRO_6">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>86% of the worlds population die</Original>
 			<English>86% of the worlds population die</English>
 			<German>86% der Welbevölkerung sterben</German>
 			<Russian>86% населения погибает</Russian>
+			<Spanish>El 86% de la poblacion mundial muere</Spanish>
+			<Dutch>86% van de wereldbevolking komt te overlijden</Dutch>
+			<French>86% de la population mondiale meurt</French>
 		</Key>
 		<Key ID="STR_INTRO_7">	
 			<Original>Some survive with the disease in a chronic state.\nLacking regular brain function, they are scarely human. They are unable to communicate,\ndriven by insatiable desire for violence, and attracted to the scent of those uninfected</Original>
 			<English>Some survive with the disease in a chronic state.\nLacking regular brain function, they are scarely human. They are unable to communicate,\ndriven by insatiable desire for violence, and attracted to the scent of those uninfected</English>
 			<German>Einige überleben, mit der Krankheit in einem chronischen Zustand.\nOhne normale Gehirnaktivität sind sie kaum als Menschen zu bezeichnen. Sie können nicht kommunizieren.\nSie werden von einem unstillbaren Durst nach Gewalt getrieben und der Geruch der uninfizierten zieht sie an.</German>
 			<Russian>Некоторые выживают с заболеванием в хронической стадии.\nНо в виду отсутствия основных функций головного мозга, они вряд ли остались людьми. Они не в состоянии общаться,\nдвижимые ненасытной жаждой насилия, и влекомые запахом неинфицированных</Russian>
+			<Spanish>Algunos sobreviven a la enfermedad en un estado cronico.\nCarecen de una funcion cerebral normal, son humanos aterradores. No son capaces de comunicarse,\nimpulsador por un deseo insaciable de violencia y atraidos por el olor de los no infectados</Spanish>
+			<Dutch>Enkelen overleven de ziekte in een chronische staat.\nZonder enige reguliere breinactiviteit zijn ze niet mens te noemen. Ze kunnen niet communiceren,\n en worden gedreven door een onlesbaar verlangen naar geweld, en aangetrokken door de geur van niet-geïnfecteerde overlevenden</Dutch>
+			<French>Quelques uns survivent dans un état chronique de la maladie.\nManquants de fonctions cérébrales normales, ils sont à peine humains.\nIls sont inaptes à communiquer, conduits par un désir insatiable \nde violence et attirés par l'odeur de ceux qui ne sont pas infectés.</French>
 		</Key>
 		<Key ID="STR_INTRO_8">	
 			<Original>Society crumbles as the pandemic spreads rapidly</Original>
 			<English>Society crumbles as the pandemic spreads rapidly</English>
 			<German>Die Gesellschaft bricht durch die Verbreitung der Pandemie zusammen</German>
 			<Russian>Общество распадается с быстрым распространением пандемии.</Russian>
+			<Spanish>La sociedad se desmorona a la vez que la pandemia se propaga rapidamente</Spanish>
+			<Dutch>De samenleving valt uit elkaar, en de pandemie verspreidt zich snel</Dutch>
+			<French>La société s'écroule alors que la pandémie s'étend rapidement</French>
 		</Key>
 		<Key ID="STR_INTRO_9">	
 			<Original>You are one of the 2% who are not infected yet</Original>
 			<English>You are one of the 2% who are not infected yet</English>
 			<German>Du bist einer der 2% noch nicht infizierten Menschen</German>
 			<Russian>Вы один из 2%, которые еще не инфицированы</Russian>
+			<Spanish>Eres uno del 2% que aun no esta infectada</Spanish>
+			<Dutch>Jij bent één van de 2% die nog niet is geïnfecteerd</Dutch>
+			<French>Vous êtes l'un des 2% qui ne sont pas encore infectés</French>
 		</Key>
 		<Key ID="STR_INTRO_10">	
 			<Original>THIS IS YOUR STORY</Original>
 			<English>THIS IS YOUR STORY</English>
 			<German>DIES IST DEINE GESCHICHTE</German>
 			<Russian>ЭТО ВАША ИСТОРИЯ</Russian>
+			<Spanish>ESTA ES TU HISTORIA</Spanish>
+			<Dutch>DIT IS JOUW VERHAAL</Dutch>
+			<French>CECI EST VOTRE HISTOIRE</French>
 		</Key>
 		<Key ID="STR_INTRO_11">	
 			<Original>Directed by</Original>
 			<English>Directed by</English>
 			<German>Regie</German>
 			<Russian>Режиссер</Russian>
+			<Spanish>Dirigida por</Spanish>
+			<Dutch>Geregisseerd door</Dutch>
+			<French>Dirigé par</French>
 		</Key>
 		<Key ID="STR_INTRO_12">	
 			<Original>Scientific Consultant</Original>
 			<English>Scientific Consultant</English>
 			<German>Wissenschaftliche Beratung</German>
 			<Russian>Научный Консультант</Russian>
+			<Spanish>Consultor Cientifico</Spanish>
+			<Dutch>Wetenschappelijk Consultant</Dutch>
+			<French>Consultant scientifique</French>
+			
 		</Key>
 		<Key ID="STR_INTRO_13">	
 			<Original>Producer</Original>
 			<English>Producer</English>
 			<German>Produzent</German>
 			<Russian>Продюсер</Russian>
+			<Spanish>Productor</Spanish>
+			<Dutch>Producent</Dutch>
+			<French>Producteur</French>			
 		</Key>
 		<Key ID="STR_INTRO_14">	
 			<Original>Marketing</Original>
 			<English>Marketing</English>
 			<German>Marketing</German>
 			<Russian>Маркетинг</Russian>
+			<Spanish>Marketing</Spanish>
+			<Dutch>Marketing</Dutch>
+			<French>Marketing</French>
 		</Key>
 		<Key ID="STR_INTRO_15">	
 			<Original>Music</Original>
 			<English>Music</English>
 			<German>Musik</German>
 			<Russian>Музыка</Russian>
+			<Spanish>Musica</Spanish>
+			<Dutch>Muziek</Dutch>
+			<French>Musique</French>
 		</Key>
 		<Key ID="STR_INTRO_16">	
 			<Original>Animation</Original>
 			<English>Animation</English>
 			<German>Animation</German>
 			<Russian>Анимация</Russian>
+			<Spanish>Animacion</Spanish>
+			<Dutch>Animaties</Dutch>
+			<French>Animation</French>
 		</Key>
 	</package>
     <Package name="code">
@@ -103,19 +152,28 @@
 			<Original>Take %1</Original>
 			<English>Take %1</English> 
 			<German>%1 nehmen</German>
-			<Russian>Взять %1</Russian>			<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
+			<Russian>Взять %1</Russian>
+			<Spanish>Tomar %1</Spanish>
+			<Dutch>Neem %1</Dutch>
+			<French>Prendre %1</French>			<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
 		</Key>
 		<Key ID="STR_DAYZ_CODE_2">	
 			<Original>You do not have enough room in your inventory</Original>
 			<English>You do not have enough room in your inventory</English>
 			<German>Du hast nicht genug Platz in deinem Inventar</German>
 			<Russian>У вас не хватает места в инвентаре.</Russian>
+			<Spanish>No tienes espacio suficiente en tu inventario</Spanish>
+			<Dutch>Je hebt niet voldoende ruimte in je inventaris</Dutch>
+			<French>Vous n'avez pas assez de place dans votre inventaire.</French>
 		</Key>
 		<Key ID="STR_AUTHENTICATING">
 			<Original>Loading Character Data. Please wait.</Original>
 			<English>Loading Character Data. Please wait.</English>
 			<German>Lade Charakterdaten. Bitte warten.</German>
 			<Russian>Загружается персонаж. Пожалуйста, подождите.</Russian>
+			<Spanish>Cargando datos del personaje. Por favor espera.</Spanish>
+			<Dutch>Karakterdata aan het laden. Even geduld.</Dutch>
+			<French>Chargement des données du personnage. Veuillez patienter.</French>
 		</Key>
 	</package>
     <Package name="feedback">
@@ -123,319 +181,478 @@
 			<Original>You have cooked %1 %2</Original>
 			<English>You have cooked %1 %2</English>
 			<German>Du hast %1 %2 gekocht</German>
-			<Russian>Вы приготовили: %1 %2</Russian>		<!-- As in "you have successfully cooked 5 raw steak" -->
+			<Russian>Вы приготовили: %1 %2</Russian>
+			<Spanish>Cocinaste %1 %2</Spanish> <Dutch>
+			Je hebt %1 %2 gekookt</Dutch>
+			<French>Vous avez cuit %1 %2</French>			<!-- As in "you have successfully cooked 5 raw steak" -->
 		</Key>
 		<Key ID="str_success_tent_pack">
 			<Original>Your tent has been packed</Original>
 			<English>Your tent has been packed</English>
 			<German>Du hast dein Zelt eingepackt</German>
 			<Russian>Ваша палатка свернута.</Russian>
+			<Spanish>Su carpa se ha embalado</Spanish>
+			<Dutch>Je tent is ingepakt</Dutch>
+			<French>Votre tente a été repliée.</French>
 		</Key>
 		<Key ID="str_fail_tent_pack">
 			<Original>You cannot pack this tent, it is not yours</Original>
 			<English>You cannot pack this tent, it is not yours</English>
 			<German>Du kannst dieses Zelt nicht einpacken, da es nicht deins ist</German>
 			<Russian>Вы не можете свернуть эту палатку, так как она не ваша.</Russian>
+			<Spanish>No puedes embalar esta carpa, no es tuya</Spanish>
+			<Dutch>Je kunt deze tent niet inpakken, hij is niet van jou</Dutch>
+			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
 		</Key>
 		<Key ID="str_success_tent_pitch">
 			<Original>You have pitched your tent</Original>
 			<English>You have pitched your tent</English>
 			<German>Du hast dein Zelt aufgebaut</German>
 			<Russian>Вы установили палатку.</Russian>
+			<Spanish>Asentaste tu carpa</Spanish>
+			<Dutch>Je hebt je tent opgezet</Dutch>
+			<French>Vous avez installé votre tente.</French>
 		</Key>
 		<Key ID="str_fail_tent_pitch">
 			<Original>You cannot place a Tent here. The area must be flat, and free of other objects</Original>
 			<English>You cannot place a Tent here. The area must be flat, and free of other objects</English>
 			<German>Du kannst hier kein Zelt aufbauen. Der Untergrund muss flach und frei sein</German>
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
+			<Spanish>No puedes asentar tu carpa aqui. El area debe ser plana y libre de otros objetos</Spanish>
+			<Dutch>Je kunt hier geen tent plaatsen. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
+			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et libre de tout autre objet.</French>
 		</Key>
 		<Key ID="str_player_consumed">
 			<Original>You have consumed a %1</Original>
 			<English>You have consumed a %1</English>
 			<German>Du hast ein(e) %1 verbraucht</German>
 			<Russian>Вы употребили: %1</Russian>
+			<Spanish>Consumiste: %1</Spanish>
+			<Dutch>Je hebt %1 genuttigd</Dutch>
+			<French>Vous avez consommé un(e) %1</French>
 		</Key>
 		<Key ID="str_fireplace_01">
 			<Original>You have created a fireplace</Original>
 			<English>You have created a fireplace</English>
 			<German>Du hast ein Feuer gemacht</German>
 			<Russian>Вы развели костер.</Russian>
+			<Spanish>Creaste una fogata</Spanish>
+			<Dutch>Je hebt een kampvuur gemaakt</Dutch>
+			<French>Vous avez créé un feu de camp.</French>
 		</Key>
 		<Key ID="str_build_01">
 			<Original>You have constructed a %1</Original>
 			<English>You have constructed a %1</English>
 			<German>Du hast eine(n) %1 gebaut</German>
 			<Russian>Вы построили %1.</Russian>
+			<Spanish>Construiste un %1</Spanish> <Dutch>
+			Je hebt een %1 opgebouwd</Dutch>
+			<French>Vous avez construit un(e) %1</French>
 		</Key>
 		<Key ID="str_build_failed_01">
 			<Original>You have failed to build %1.</Original>
 			<English>You have failed to build %1.</English>
 			<German>You have failed to build %1.</German>
 			<Russian>You have failed to build %1.</Russian>
+			<Spanish>You have failed to build %1.</Spanish>
+			<Dutch>You have failed to build %1.</Dutch>
+			<French>Vous n'avez pas réussi à contruire %1.</French>
 		</Key>
 		<Key ID="str_fireplace_02">
 			<Original>You cannot make a fireplace here. The area must be flat, and free of other objects</Original>
 			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
 			<German>Du kannst hier kein Feuer machen. Der Untergrund muss flach und frei sein</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
+			<Spanish>No puedes hacer una fogata aqui. El area debe ser plana y libre de otros objetos</Spanish>
+			<Dutch>Je kunt hier geen kampvuur maken. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
+			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et libre de tout autre objet.</French>	
 		</Key>
 		<Key ID="str_fireplace_removed">
 			<Original>Fireplace has been removed</Original>
 			<English>Fireplace has been removed</English>
 			<German>Die Feuerstelle wurde zerstört</German>
 			<Russian>Костер убран.</Russian>
+			<Spanish>La fogata fue removida</Spanish>
+			<Dutch>Het kampvuur is verwijderd</Dutch>
+			<French>Le feu de camp a été retiré.</French
 		</Key>
 		<Key ID="str_success_gutted_animal">
 			<Original>%1 has been gutted, %2 meat steaks now on the carcass</Original>
 			<English>%1 has been gutted, %2 meat steaks now on the carcass</English>
 			<German>Du hast %1 ausgenommen, %2 Stücke Fleisch sind im Kadaver</German>
 			<Russian>Вы разделали: %1. Доступно кусков мяса: %2</Russian>
+			<Spanish>%1 fue achurado, dejando %2 trozos de carne en el cuerpo</Spanish>
+			<Dutch>Je hebt %1 opengesneden. Er bevinden zich %2 biefstukken op het karkas</Dutch>
+			<French>%1 a été découpé, %2 morceaux de viande sont maintenant dans la carcasse.</French>
 		</Key>
 		<Key ID="str_medical_healing">
 			<Original>You are being healed</Original>
 			<English>You are being healed</English>
 			<German>Du wirst geheilt</German>
 			<Russian>Вас лечат.</Russian>
+			<Spanish>Fuiste curado</Spanish>
+			<Dutch>Je wordt genezen</Dutch>
+			<French>Vous recevez des soins</French>
 		</Key>
 		<Key ID="str_player_01">
 			<Original>You have filled %1 bottles with water</Original>
 			<English>You have filled %1 bottles with water</English>
 			<German>Du hast %1 Flasche(n) mit Wasser gefüllt</German>
 			<Russian>Наполнено фляжек с водой: %1</Russian>
+			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
+			<Dutch>Je hebt %1 flessen gevuld met water</Dutch>
+			<French>Vous avez rempli %1 bouteille(s) avec de l'eau.</French>
 		</Key>
 		<Key ID="str_player_02">
 			<Original>You have no empty water bottles</Original>
 			<English>You have no empty water bottles</English>
 			<German>Du hast keine leeren Wasserflaschen</German>
 			<Russian>У вас нет пустых фляжек.</Russian>
+			<Spanish>No tienes cantimploras vacias</Spanish>
+			<Dutch>Je hebt geen lege waterflessen</Dutch>
+			<French>Vous n'avez aucune bouteille vide.</French>
 		</Key>
 		<Key ID="str_player_03">
 			<Original>You need a %1 to repair this</Original>
 			<English>You need a %1 to repair this</English>
 			<German>Du brauchst ein(e) %1, um das zu reparieren</German>
 			<Russian>Чтобы это починить, вам нужно: %1</Russian>
+			<Spanish>Necesitas un %1 para reparar esto</Spanish>
+			<Dutch>Je hebt een %1 nodig om dit te repareren</Dutch>
+			<French>Vous avez besoin d'un(e) %1 pour réparer ceci.</French>
 		</Key>
 		<Key ID="str_player_04">
 			<Original>You have successfully attached the %1 on the %2</Original>
 			<English>You have successfully attached the %1 on the %2</English>
 			<German>Du hast erfolgreich ein(e) %1 an %2 angebracht</German>
 			<Russian>Вы успешно установили %1 на %2.</Russian>
+			<Spanish>Fijasste correctamente el %1 al %2</Spanish>
+			<Dutch>Je hebt met succes een %1 geplaatst op de %2</Dutch>
+			<French>Vous avez réussi à placer le %1 sur le %2</French>
 		</Key>
 		<Key ID="str_player_05">
 			<Original>%1 has been filled with %2 litres of Fuel</Original>
 			<English>%1 has been filled with %2 litres of Fuel</English>
 			<German>%1 wurde mit %2 Litern Treibstoff betankt</German>
 			<Russian>В %1 было залито %2 литров топлива.</Russian>
+			<Spanish>El %1 fue cargado con %2 litros de combustible</Spanish>
+			<Dutch>%1 is bijgetankt met %2 liter benzine</Dutch>
+			<French>%1 a été rempli avec %2 litres de carburant.</French>
 		</Key>
 		<Key ID="str_player_06">
 			<Original>Day</Original>
 			<English>Day</English>
 			<German>Tag</German>
-			<Russian>День</Russian>		<!-- As in "Day 1" or "Day 10", how many days since character started -->
+			<Russian>День</Russian>
+			<Spanish>Dia</Spanish>
+			<Dutch>Dag</Dutch>
+			<French>Jour</French>			<!-- As in "Day 1" or "Day 10", how many days since character started -->
 		</Key>
 		<Key ID="str_player_07">
 			<Original>You last ate %2 minutes, and drank %3 minutes ago</Original>
 			<English>You last ate %2 minutes, and drank %3 minutes ago</English>
 			<German>Du hast zuletzt vor %2 Minuten gegessen und vor %3 Minuten getrunken</German>
 			<Russian>Последний раз вы ели %2 мин. назад, пили - %3 мин. назад.</Russian>
+			<Spanish>Tu ultima comida fue hace %2 minutos y bebida hace %3 minutos</Spanish>
+			<Dutch>Je hebt %2 minuten geleden gegeten en %3 minuten geleden gedronken</Dutch>
+			<French>Vous avez mangé il y a %2 minutes et bu il y a %3 minutes.</French>
 		</Key>
 		<Key ID="str_player_08">
 			<Original>%1 Food and %2 water was used since your last login</Original>
 			<English>%1 Food and %2 water was used since your last login</English>
 			<German>Seit deinem letzten Login hast du %1 Einheiten Essen und %2 Flaschen Wasser verbraucht</German>
 			<Russian>С момента вашего последнего входа в игру вы съели еды: %1 и выпили воды: %2</Russian>
+			<Spanish>%1 Comidas y %2 Aguas fueron usadas desde tu ultimo ingreso</Spanish>
+			<Dutch>Sinds de laatste keer dat je hebt ingelogd heb je %1 voedsel en %2 water genuttigd</Dutch>
+			<French>%1 Nourriture(s) et %2 boisson(s) ont été utilisés depuis votre dernière connection.</French>
 		</Key>
 		<Key ID="str_player_09">
 			<Original>You have filled %1 jerrycans with fuel</Original>
 			<English>You have filled %1 jerrycans with fuel</English>
 			<German>Du hast %1 Kanister mit Treibstoff gefüllt</German>
 			<Russian>Наполнено топливом канистр: %1</Russian>
+			<Spanish>Llenaste %2 bidones con combustible</Spanish>
+			<Dutch>Je hebt %1 jerrycans met brandstof gevuld</Dutch>
+			<French>Vous avez rempli %1 jerrican(s) avec du carburant.</French>
 		</Key>
 		<Key ID="str_player_10">
 			<Original>You have no empty jerry cans</Original>
 			<English>You have no empty jerry cans</English>
 			<German>Du hast keine leeren Kanister</German>
 			<Russian>У вас нет пустых канистр.</Russian>
+			<Spanish>No tienes bidones vacios</Spanish>
+			<Dutch>Je hebt geen lege jerrycans</Dutch>
+			<French>Vous n'avez pas de jerrican vide.</French>
 		</Key>
 		<Key ID="str_player_11">
 			<Original>You need to sit in the driver seat before you can repair this vehicle</Original>
 			<English>You need to sit in the driver seat before you can repair this vehicle</English>
 			<German>Sie müssen im Fahrersitz sitzen um dieses Fahrzeug reparieren zu können.</German>
 			<Russian>Для ремонта требуется занять место водителя хотя бы раз.</Russian>
+			<Spanish>Necesitas sentarte en el asiento del conductor antes de arreglar este vehiculo</Spanish>
+			<Dutch>Je moet in de bestuurdersstoel zitten om dit voertuig te repareren</Dutch>
+			<French>Vous devez vous asseoir à la place du conducteur avant de pouvoir réparer ce véhicule.</French>
 		</Key>
 		<Key ID="str_player_12">
 			<Original>Please go to Player Selection Screen to continue in game</Original>
 			<English>Please go to Player Selection Screen to continue in game</English>
 			<German>Bitte gehe in die Rollenverteilung um weiterspielen zu können</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока, чтобы продолжить игру</Russian>
+			<Spanish>Por favor ve a la Pantalla de Seleccion de Jugador para continuar en el juego</Spanish>
+			<Dutch>Ga alsjeblieft naar het rollenverdelingsscherm on verder te spelen</Dutch>
+			<French>Veuillez aller à l'Ecran de Sélection de Joueur pour continuer à jouer</French>
 		</Key>
 		<Key ID="str_player_13">
 			<Original>Waiting for character to create</Original>
 			<English>Waiting for character to create</English>
 			<German>Warte darauf, einen neuen Charakter um zu erstellen</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока чтобы продолжить игру</Russian>
+			<Spanish>Esperando que el personaje sea creado</Spanish>
+			<Dutch>Wachten tot het karakter is aangemaakt</Dutch>
+			<French>En attente de la création du personnage</French>	
 		</Key>
 		<Key ID="str_player_14">
 			<Original>Retrying to Authenticate</Original>
 			<English>Retrying to Authenticate</English>
 			<German>Versuche erneut zu Authentifizieren</German>
 			<Russian>Попытка аутентификации</Russian>
+			<Spanish>Volviendo a Autentificar</Spanish>
+			<Dutch>Authenticatie opnieuw proberen</Dutch>
+			<French>Nouvelle tentative d'Authentification</French>
 		</Key>
 		<Key ID="str_player_15">
 			<Original>Requesting Authentication</Original>
 			<English>Requesting Authentication</English>
 			<German>Empfange Authentifizierung</German>
 			<Russian>Запрос аутентификации</Russian>
+			<Spanish>Solicitando Autentificacion</Spanish>
+			<Dutch>Authenticatie aan het aanvragen</Dutch>
+			<French>Demande d'Authentification</French>
 		</Key>
 		<Key ID="str_player_16">
 			<Original>Waiting for server response</Original>
 			<English>Waiting for server response</English>
 			<German>Warte auf Antwort des Servers</German>
 			<Russian>Ожидание ответа сервера</Russian>
+			<Spanish>Esperando la respuesta del servidor</Spanish>
+			<Dutch>Wachten op serverantwoord</Dutch>
+			<French>Attente de la réponse du serveur</French>
 		</Key>
 		<Key ID="str_player_17">
 			<Original>Server responded, creating character</Original>
 			<English>Server responded, creating character</English>
 			<German>Server antwortete, erstelle Charakter</German>
 			<Russian>Получен ответ от сервера. Идет создание персонажа</Russian>
+			<Spanish>El servidor respondio, creado personaje</Spanish>
+			<Dutch>Server heeft geantwoord, karakter aan het maken</Dutch>
+			<French>Réponse du serveur, création du personnage</French>
 		</Key>
 		<Key ID="str_player_18">
 			<Original>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</Original>
 			<English>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</English>
 			<German>Du hast eine falsche Version von DAYZ_CODE, bitte lade dir die neuste Version von www.dayzmod.com/downloads runter </German>
 			<Russian>Вы используете неверную версию DAYZ_CODE, пожалуйста, скачайте данный файл с dayzmod.com/downloads (Ваша версия %1, версия на сервере %2)</Russian>
+			<Spanish>Estas ejecutando una version incorrecta de DAYZ_CODE, por favor descarga este archivo desde dayzmod.com/downloads (Estas ejecutando la version %1 y el servidor %2)</Spanish>
+			<Dutch>Je gebruikt een incorrecte versie van DAYZ_CODE, download dit bestand alsjeblieft van dayzmod.com/downloads (Je gebruikt versie %1, en de server gebruikt versie %2)</Dutch>
+			<French>Vous utilisez une version incorrecte de DAYZ_CODE, veuillez télécharger ce fichier depuis dayzmod.com/downloads (Vous utilisez la version %1 et le serveur utilise la version %2)</French>
 		</Key>
     <Key ID="str_player_20">
       <Original>You must be near a water-source such as a pond or well to refill your water bottles</Original>
       <English>You must be near a water-source such as a pond or well to refill your water bottles</English>
       <German>Du musst in der nähe einer Wasserquelle wie z.B. einem Teich sein um deine Wasserflasche zu füllen</German>
       <Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
+      <Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tus cantimplora</Spanish>
+      <Dutch>Je moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
+      <French>Vous devez être à côté d'une source d'eau comme un bassin ou un puits pour remplir vos bouteilles d'eau.</French>
     </Key>
       <Key ID="str_player_21">
         <Original>You cannot do this while you are on a ladder</Original>
         <English>You cannot do this while you are on a ladder</English>
         <German>Du kannst das nicht tun, während du an einer Leiter bist</German>
         <Russian>Вы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
+        <Spanish>No puedes hacer esto mientras estas en una escalera</Spanish>
+        <Dutch>Je kunt deze actie op een ladder niet uitvoeren</Dutch>
+        <French>Vous ne pouvez pas faire cela en étant sur une échelle.</French>
       </Key>
       <Key ID="str_player_22">
         <Original>You must have wood in your inventory in order to create a fireplace</Original>
         <English>You must have wood in your inventory in order to create a fireplace</English>
         <German>Du brauchst Holz in deinem Inventar, um ein Feuer zu machen</German>
         <Russian>Для разведения костра у вас должны быть дрова.</Russian>
+        <Spanish>Debes tener madera en tu inventario para poder crear una fogata</Spanish>
+        <Dutch>Je moet hout in je inventaris hebben om een kampvuur te maken</Dutch>
+        <French>Vous devez avoir du bois dans votre inventaire pour pouvoir faire un feu de camp.</French>
       </Key>     
       <Key ID="str_player_23">
         <Original>You must be in a forest and close to a tree to harvest wood.</Original>
         <English>You must be in a forest and close to a tree to harvest wood.</English>
         <German>Sie müssen in einem Wald und nah an einem Baum sein, um Holz zu hacken.</German>
         <Russian>Вы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
+        <Spanish>Debes estar en el bosque y cerca de un arbol para recoger madera.</Spanish>
+        <Dutch>Je moet in een bos en in de buurt van een boom zijn om hout te hakken.</Dutch>
+        <French>Vous devez être en forêt et proche d'un arbre pour couper du bois.</French>
       </Key>
       <Key ID="str_player_24">
         <Original>You do not have enough room in your inventory to do that.</Original>
         <English>You do not have enough room in your inventory to do that.</English>
         <German>Sie haben nicht genug Platz in Ihrem Inventar um das zu tun.</German>
         <Russian>У вас недостаточно места в инвентаре.</Russian>
+        <Spanish>No tienes espacio suficiente en tu inventario para hacer eso</Spanish>
+        <Dutch>Je hebt onvoldoende ruimte in je inventaris om die actie uit te voeren</Dutch>
+        <French>Vous n'avez pas assez de place dans votre inventaire pour faire cela.</French>        
       </Key>
       <Key ID="str_player_25">
         <Original>A pile of wood has been successfully added to your inventory.</Original>
         <English>A pile of wood has been successfully added to your inventory.</English>
         <German>Ein Holzstoß wurde erfolgreich Ihrem Inventar hinzugefügt.</German>
         <Russian>Дрова добавлены в ваш инвентарь.</Russian>
+        <Spanish>Una pila de madera se agrego correctamente a tu inventario.</Spanish>
+        <Dutch>Er is brandhout toegevoegd aan je inventaris.</Dutch>
+        <French>Une pile de bois a été ajoutée à votre inventaire avec succès.</French>
       </Key>
       <Key ID="str_player_26">
         <Original>You cannot do this while you are in the water.</Original>
         <English>You cannot do this while you are in the water.</English>
         <German>Sie können dies nicht tun, während Sie im Wasser sind.</German>
         <Russian>Это действие невозможно пока вы в воде.</Russian>
+        <Spanish>No puedes hacer esto mientras estas en el agua.</Spanish>
+        <Dutch>Je kunt deze actie niet in het water uitvoeren</Dutch>
+        <French>Vous ne pouvez pas faire cela lorsque vous êtes dans l'eau.</French>
       </Key>
       <Key ID="str_player_27">
         <Original>You have applied a heatpack to your body successfully.</Original>
         <English>You have applied a heatpack to your body successfully.</English>
         <German>Sie haben das Heatpack erfolgreich appliziert</German>
         <Russian>Вы успешно применили на вашем теле согревающий комплект.</Russian>
+        <Spanish>Aplicaste correctamente un paquete de calor tu cuerpo.</Spanish>
+        <Dutch>Je hebt met succes een heatpack op je lichaam gebruikt.</Dutch>
+        <French>Vous avez utilisé un heatpack avec succès.</French>
       </Key>
       <Key ID="str_player_28">
         <Original>You cannot reload that combination, you need %1 %2 magazines.</Original>
         <English>You cannot reload that combination, you need %1 %2 magazines.</English>
         <German>Sie können diese Munition nicht kombinieren, sie brauchen %1 %2 Magazine.</German>
         <Russian>Вы не можете перезарядить эту комбинацию. Вам необходимо иметь магазины %1 %2.</Russian>
+        <Spanish>No puedes recargar esa combinacion, necesitas %1 cargadores de %2</Spanish>
+        <Dutch>Je kan die combinatie niet herladen, je hebt %1 %2 magazijnen nodig.</Dutch>
+        <French>Vous ne pouvez pas recharger cette combinaison, vous avez besoin de %1 %2 chargeur(s).</French>
       </Key>
       <Key ID="str_player_29">
         <Original>You have successfully reloaded %1 %2 magazines.</Original>
         <English>You have successfully reloaded %1 %2 magazines.</English>
         <German>Sie haben erfolgreich %1 %2 Magazine hergestellt.</German>
         <Russian>Магазины %1 %2 перезаряжены.</Russian>
+        <Spanish>Recargaste correctamente %1 cargadores de %2.</Spanish>
+        <Dutch>Je hebt met succes %1 %2 magazijnen herladen.</Dutch>
+        <French>Vous avez rechargé %1 %2 chargeur(s) avec succès.</French>
       </Key>
      <Key ID="str_player_30">
         <Original>%1 must be on your person to move it to/from your toolbelt.</Original>
         <English>%1 must be on your person to move it to/from your toolbelt.</English>
         <German>%1 muss in ihrem Inventar sein um es aus/in ihren Werkzeuggürtel zu packen.</German>
         <Russian>Для перемещения с/на пояс, предмет %1 должен быть у вас.</Russian>
+        <Spanish>%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
+        <Dutch>Je moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
+        <French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
       </Key>
       <Key ID="str_player_31">
         <Original>%1 must be in your main inventory to %2 it.</Original>
         <English>%1 must be in your main inventory to %2 it.</English>
         <German>%1 must be in your main inventory to %2 it.</German>
         <Russian>Предмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
+        <Spanish>%1 debe estar en tu inventario principal para: %2</Spanish>
+        <Dutch>%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
+        <French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
       </Key>
       <Key ID="str_player_beinglooted">
         <Original>%1 is already being looted by someone else.</Original>
         <English>%1 is already being looted by someone else.</English>
         <German>%1 wurde von einer anderen Person gelooted.</German>
         <Russian>%1 уже кто-то обыскивает.</Russian>
+        <Spanish>%1 ya fue saqueado por alguien mas.</Spanish>
+        <Dutch>%1 wordt al door iemand anders opgepakt.</Dutch>
+        <French>%1 est déjà en train d'être pillé par quelqu'un d'autre.</French>
       </Key>
       <Key ID="str_player_beingpacked">
         <Original>That tent is already being packed.</Original>
         <English>That tent is already being packed.</English>
         <German>Dieses Zelt wurde bereits eingepackt.</German>
         <Russian>Эту палатку уже упаковывают.</Russian>
+        <Spanish>Esta carpa ya fue embalada.</Spanish>
+        <Dutch>Die tent wordt al ingepakt.</Dutch>
+        <French>Cette tente est déjà en train d'être repliée.</French>
       </Key>
 		<Key ID="str_player_studybody">
 			<Original>His name was %1, it appears he died from %2</Original>
 			<English>His name was %1, it appears he died from %2</English>
 			<German>Sein Name war %1, er ist durch %2 gestorben</German>
 			<Russian>Его звали %1, похоже что он умер от %2</Russian>
+			<Spanish>Su nombre era %1, y aparecentemente murio por %2</Spanish>
+			<Dutch>Zijn naam was %1, het lijkt dat hij is gestorven aan %2</Dutch>
+			<French>Son nom était %1, il semble qu'il soit mort d' %2</French>
 		</Key>
 		<Key ID="str_death_shothead">
 			<Original>a gunshot to the head</Original>
 			<English>a gunshot to the head</English>
 			<German>einen Schuss in den Kopf</German>
 			<Russian>попадания пули в голову</Russian>
+			<Spanish>un disparo en la cabeza</Spanish>
+			<Dutch>een kogel in het hoofd</Dutch>
+			<French>une balle dans la tête</French>
 		</Key>
 		<Key ID="str_death_shotheavy">
 			<Original>a high calibre gunshot</Original>
 			<English>a high calibre gunshot</English>
 			<German>eine Großkalibrige Schrotflinte</German>
 			<Russian>попадания пули большого калибра</Russian>
+			<Spanish>un disparo de alto calibre</Spanish>
+			<Dutch>een schot van hoog kaliber</Dutch>
+			<French>un tir de gros calibre</French>
 		</Key>
 		<Key ID="str_death_bled">
 			<Original>blood loss</Original>
 			<English>blood loss</English>
 			<German>hohen Blutverlust</German>
 			<Russian>потери крови</Russian>
+			<Spanish>perdida de sangre</Spanish>
+			<Dutch>bloedverlies</Dutch>
+			<French>une hémorragie</French>
 		</Key>
 		<Key ID="str_death_dehyd">
 			<Original>dehydration</Original>
 			<English>dehydration</English>
 			<German>dehydration</German>
 			<Russian>обезвоживания</Russian>
+			<Spanish>deshidratacion</Spanish>
+			<Dutch>uitdroging</Dutch>
+			<French>une déshydratation</French
 		</Key>
 		<Key ID="str_death_starve">
 			<Original>starvation</Original>
 			<English>starvation</English>
 			<German>verhungern</German>
 			<Russian>голода</Russian>
+			<Spanish>falta de comida</Spanish>
+			<Dutch>uithongering</Dutch>
+			<French>inanition</French>
 		</Key>
 		<Key ID="str_death_combatlog">
 			<Original>combat logging</Original>
 			<English>combat logging</English>
 			<German>combat logging</German>
 			<Russian>выхода из игры в режиме боя</Russian>
+			<Spanish>huir de combate</Spanish>
+			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
+			<French>une déco en combat</French>
 		</Key>
 		<Key ID="str_death_unknown">
 			<Original>an unknown cause</Original>
 			<English>an unknown cause</English>
 			<German>einen unbekannten Grund</German>
 			<Russian>неизвестной причины</Russian>
+			<Spanish>causas desconocidas</Spanish>
+			<Dutch>een onbekende oorzaak</Dutch>
+			<French>une cause inconnue</French>
 		</Key>
 	</Package>
   <Package name="ui">
@@ -444,24 +661,36 @@
       <English>SELECT YOUR GENDER</English>
       <German>Wählen Sie Ihr Geschlecht</German>
       <Russian>Выберите свой пол</Russian>
+      <Spanish>SELECCIONE SU GENERO</Spanish>
+      <Dutch>KIES JE GESLACHT</Dutch>
+      <French>SELECTIONNEZ VOTRE GENRE</French>
     </Key>
-    <Key ID="STR_UI_GENDER_DESC">
+	<Key ID="STR_UI_GENDER_DESC">
 	  <Original>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</Original>
 	  <English>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</English>
 	  <German>Bitte wählen Sie das Geschlecht aus, mit dem sie Spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis sie sterben.</German>
 	  <Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
-    </Key>
+	  <Spanish>Por favor selecciona el genero con el que deseas jugar. Tu genero se enlazara a tu personaje y solo podra ser cambiado cuando mueras.</Spanish>
+	  <Dutch>Kies alsjeblieft het geslacht waarmee je wilt spelen. Je geslacht zal gebonden zijn aan dit unieke karakter, en kan niet gewijzigd worden tot je komt te overlijden.</Dutch>
+	  <French>Veuillez sélectionner le genre que vous voulez jouer. Votre genre sera lié à ce personnage unique et sera définitif jusqu'à la mort de ce dernier.</French>
+	</Key>
     <Key ID="STR_UI_GENDER_MALE">
       <Original>MALE</Original>
       <English>MALE</English>
       <German>Männlich</German>
       <Russian>Мужчина</Russian>
+      <Spanish>MASCULINO</Spanish>
+      <Dutch>MAN</Dutch>
+      <French>HOMME</French>      
     </Key>
     <Key ID="STR_UI_GENDER_FEMALE">
       <Original>FEMALE</Original>
       <English>FEMALE</English>
       <German>Weiblich</German>
       <Russian>Женщина</Russian>
+      <Spanish>FEMENINO</Spanish>
+      <Dutch>VROUW</Dutch>
+      <French>FEMME</French>      
     </Key>
   </Package>
 	<Package name="actions">
@@ -470,276 +699,414 @@
 			<English>Take Antibiotics</English>
 			<German>Antibiotikum einnehmen</German>
 			<Russian>Принять антибиотики</Russian>
+			<Spanish>Tomar Antibioticos</Spanish>
+			<Dutch>Antibiotica innemen</Dutch>
+			<French>Prendre des Antibiotiques</French>
 		</Key>
 		<Key ID="str_actions_self_04">
 			<Original>Gut Animal</Original>
 			<English>Gut Animal</English>
 			<German>Tier ausweiden</German>
 			<Russian>Разделать животное</Russian>
+			<Spanish>Achurar Animal</Spanish>
+			<Dutch>Dier opensnijden</Dutch>
+			<French>Découper l'Animal</French>
 		</Key>
 		<Key ID="str_actions_self_05">
 			<Original>Cook Meat</Original>
 			<English>Cook Meat</English>
 			<German>Fleisch zubereiten</German>
 			<Russian>Приготовить мясо</Russian>
+			<Spanish>Cocinar Carne</Spanish>
+			<Dutch>Biefstuk koken</Dutch>
+			<French>Cuire la Viande</French>
 		</Key>
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
 			<English>Remove fireplace</English>
 			<German>Feuerplatz zerstören</German>
 			<Russian>Убрать костер</Russian>
+			<Spanish>Remover fogata</Spanish>
+			<Dutch>Kampvuur verwijderen</Dutch>
+			<French>Retirer le Feu de camp</French>
 		</Key>
 		<Key ID="str_actions_self_07">
 			<Original>Pack Tent</Original>
 			<English>Pack Tent</English>
 			<German>Zelt einpacken</German>
 			<Russian>Упаковать палатку</Russian>
+			<Spanish>Embalar Carpa</Spanish>
+			<Dutch>Tent inpakken</Dutch>
+			<French>Replier la Tente</French>
 		</Key>
 		<Key ID="str_actions_self_08">
 			<Original>Drink Water</Original>
 			<English>Drink Water</English>
 			<German>Wasser trinken</German>
 			<Russian>Выпить воду</Russian>
+			<Spanish>Tomar Agua</Spanish>
+			<Dutch>Water drinken</Dutch>
+			<French>Boire de l'Eau</French>
 		</Key>
 		<Key ID="str_actions_self_09">
 			<Original>Fill Water</Original>
 			<English>Fill Water</English>
 			<German>Wasser abfüllen</German>
 			<Russian>Наполнить фляжки</Russian>
+			<Spanish>Llenar con Agua</Spanish>
+			<Dutch>Water bijvullen</Dutch>
+			<French>Remplir d'Eau</French>			
 		</Key>
 		<Key ID="str_actions_self_10">
 			<Original>Fill Jerrycan</Original>
 			<English>Fill Jerrycan</English>
 			<German>Benzinkanister füllen</German>
 			<Russian>Наполнить канистры</Russian>
+			<Spanish>Llenar Bidones</Spanish>
+			<Dutch>Jerrycan bijvullen</Dutch>
+			<French>Remplir le(s) Jerrican(s)</French>
 		</Key>
 		<Key ID="str_actions_medical_01">
 			<Original>Drag Body</Original>
 			<English>Drag Body</English>
 			<German>Körper ziehen</German>
 			<Russian>Тащить тело</Russian>
+			<Spanish>Arrastrar Cuerpo</Spanish>
+			<Dutch>Lichaam slepen</Dutch>
+			<French>Traîner le Corps</French>
 		</Key>
 		<Key ID="str_actions_medical_02">
 			<Original>Check Pulse</Original>
 			<English>Check Pulse</English>
 			<German>Puls überprüfen</German>
 			<Russian>Проверить пульс</Russian>
+			<Spanish>Tomar Pulso</Spanish>
+			<Dutch>Hartslag controleren</Dutch>
+			<French>Contrôler le Pouls</French>
 		</Key>
 		<Key ID="str_actions_medical_03">
 			<Original>Load patient into %1</Original>
 			<English>Load patient into %1</English>
 			<German>Patient in %1 verladen</German>
 			<Russian>Загрузить раненного в %1</Russian>
+			<Spanish>Colocar paciente en %1</Spanish>
+			<Dutch>Patient in %1 laden</Dutch>
+			<French>Charger le patient dans %1</French>
 		</Key>
 		<Key ID="str_actions_medical_04">
 			<Original>Bandage Wounds</Original>
 			<English>Bandage Wounds</English>
 			<German>Wunden verbinden</German>
 			<Russian>Перевязать человеку раны</Russian>
+			<Spanish>Vendar Heridas</Spanish>
+			<Dutch>Wonden verbinden</Dutch>
+			<French>Bander les Blessures</French>
 		</Key>
 		<Key ID="str_actions_medical_05">
 			<Original>Give Epinephrine</Original>
 			<English>Give Epinephrine</English>
 			<German>Epinephrin verabreichen</German>
 			<Russian>Сделать укол адреналина</Russian>
+			<Spanish>Dar Epinefrina</Spanish>
+			<Dutch>Adrenaline injecteren</Dutch>
+			<French>Donner de l'Epinéphrine</French>
 		</Key>
 		<Key ID="str_actions_medical_06">
 			<Original>Give Morphine</Original>
 			<English>Give Morphine</English>
 			<German>Morphium verabreichen</German>
 			<Russian>Сделать укол морфия</Russian>
+			<Spanish>Dar Morfina</Spanish>
+			<Dutch>Morfine injecteren</Dutch>
+			<French>Donner de la Morphine</French>			
 		</Key>
 		<Key ID="str_actions_medical_07">
 			<Original>Give Painkillers</Original>
 			<English>Give Painkillers</English>
 			<German>Schmerzmittel verabreichen</German>
 			<Russian>Дать болеутоляющие</Russian>
+			<Spanish>Dar Analgesicos</Spanish>
+			<Dutch>Pijnstillers geven</Dutch>
+			<French>Donner des Antidouleurs</French>
 		</Key>
 		<Key ID="str_actions_medical_08">
 			<Original>Give Blood Transfusion</Original>
 			<English>Give Blood Transfusion</English>
 			<German>Bluttransfusion legen</German>
 			<Russian>Сделать человеку переливание крови</Russian>
+			<Spanish>Dar Transfusion de Sangre</Spanish>
+			<Dutch>Bloedtransfusie geven</Dutch>
+			<French>Donner une Transfusion de Sang</French>
 		</Key>
 		<Key ID="str_actions_medical_09">
 			<Original>&lt;t %2&gt;Repair %1&lt;/t&gt;</Original>
 			<English>&lt;t %2&gt;Repair %1&lt;/t&gt;</English>
 			<German>&lt;t %2&gt;%1 reparieren&lt;/t&gt;</German>
 			<Russian>&lt;t %2&gt;Отремонтировать %1&lt;/t&gt;</Russian>
+			<Spanish>&lt;t %2&gt;Reparar %1&lt;/t&gt;</Spanish>
+			<Dutch>&lt;t %2&gt;Repareren %1&lt;/t&gt;</Dutch>
+			<French>&lt;t %2&gt;Réparer %1&lt;/t&gt;</French>
 		</Key>
 		<Key ID="str_actions_medical_10">
 			<Original>Refuel %1</Original>
 			<English>Refuel %1</English>
 			<German>%1 betanken</German>
 			<Russian>Заправить %1</Russian>
+			<Spanish>Reabastecer %1</Spanish>
+			<Dutch>Brandstof bijvullen %1</Dutch>
+			<French>Remettre du carburant dans %1</French>
 		</Key>
 		<Key ID="str_actions_medical_11">
 			<Original>Issue %1</Original>
 			<English>Issue %1</English>
 			<German>%1 ausrüsten</German>
 			<Russian>Установить %1</Russian>
+			<Spanish>Problema %1</Spanish>
+			<Dutch>%1 uitrusten</Dutch>
+			<French>Problème %1</French>
 		</Key>
 		<Key ID="str_actions_medical_12">
 			<Original>Packup %1</Original>
 			<English>Packup %1</English>
 			<German>%1 einpacken</German>
 			<Russian>Разобрать %1</Russian>
+			<Spanish>Empaquetar %1</Spanish>
+			<Dutch>%1 inpakken</Dutch>
+			<French>Empaqueter %1</French>
 		</Key>
 		<Key ID="str_actions_medical_13">
 			<Original>Upgrade %1</Original>
 			<English>Upgrade %1</English>
 			<German>%1 verbessern</German>
 			<Russian>Улучшить %1</Russian>
+			<Spanish>Mejorar %1</Spanish>
+			<Dutch>%1 upgraden</Dutch>
+			<French>Améliorer %1</French>
 		</Key>
 		<Key ID="str_actions_medical_14">
 			<Original>Unload patients from %1</Original>
 			<English>Unload patients from %1</English>
 			<German>Patienten aus %1 ausladen</German>
 			<Russian>Вытащить раненных из %1</Russian>
+			<Spanish>Descargar pacientes del %1</Spanish>
+			<Dutch>Patiënten uit %1 laden</Dutch>
+			<French>Décharger le(s) patient(s) de %1</French>
 		</Key>
 		<Key ID="str_actions_medical_15">
 			<Original>Pickup %1</Original>
 			<English>Pickup %1</English>
 			<German>%1 aufnehmen</German>
 			<Russian>Взять %1</Russian>
+			<Spanish>Tomar %1</Spanish>
+			<Dutch>%1 oppakken</Dutch>
+			<French>Ramasser %1</French>
 		</Key>
 		<Key ID="str_actions_medical_16">
 			<Original>Drop %1</Original>
 			<English>Drop %1</English>
 			<German>%1 fallen lassen</German>
 			<Russian>Выбросить %1</Russian>
+			<Spanish>Dejar %1</Spanish>
+			<Dutch>%1 laten vallen</Dutch>
+			<French>Lâcher %1</French>
 		</Key>
 		<Key ID="str_actions_medical_17">
 			<Original>Extinguish %1</Original>
 			<English>Extinguish %1</English>
 			<German>%1 löschen</German>
 			<Russian>Погасить %1</Russian>
+			<Spanish>Extinguir %1</Spanish>
+			<Dutch>%1 blussen</Dutch>
+			<French>Eteindre %1</French>
 		</Key>
 		<Key ID="str_actions_medical_18">
 			<Original>You cannot perform another blood transfusion so fast</Original>
 			<English>You cannot perform another blood transfusion so fast</English>
 			<German>You cannot perform another blood transfusion so fast</German>
 			<Russian>You cannot perform another blood transfusion so fast</Russian>
+			<Spanish>You cannot perform another blood transfusion so fast</Spanish>
+			<Dutch>You cannot perform another blood transfusion so fast</Dutch>
+			<French>Vous ne pouvez pas faire d'autre transfusion de sang aussi rapidement</French>
 		</Key>
 		<Key ID="str_action_studybody">
 			<Original>Study Body</Original>
 			<English>Study Body</English>
 			<German>Leiche untersuchen</German>
 			<Russian>Обследовать тело</Russian>
+			<Spanish>Estudiar Cuerpo</Spanish>
+			<Dutch>Lichaam bestuderen</Dutch>
+			<French>Examiner le corps</French>
 		</Key>
 		<Key ID="str_actions_build">
 			<Original>Build %1</Original>
 			<English>Build %1</English>
 			<German>%1 bauen</German>
 			<Russian>Установить %1</Russian>
+			<Spanish>Construir %1</Spanish>
+			<Dutch>%1 opbouwen</Dutch>
+			<French>Construire %1</French>
 		</Key>
 		<Key ID="str_actions_delete">
 			<Original>Remove %1</Original>
 			<English>Remove %1</English>
 			<German>% entfernen</German>
 			<Russian>Разобрать %1</Russian>
+			<Spanish>Remover %1</Spanish>
+			<Dutch>%1 verwijderen</Dutch>
+			<French>Enlever %1</French>
 		</Key>
 		<Key ID="str_actions_save">
 			<Original>Save %1</Original>
 			<English>Save %1</English>
 			<German>% speichern</German>
 			<Russian>Сохранить %1</Russian>
+			<Spanish>Guardar %1</Spanish>
+			<Dutch>%1 opslaan</Dutch>
+			<French>Sauvegarder %1</French>
 		</Key>
 		<Key ID="str_actions_flipveh">
 			<Original>Turn Over %1</Original>
 			<English>Turn Over %1</English>
 			<German>Turn Over %1</German>
 			<Russian>Turn Over %1</Russian>
+			<Spanish>Turn Over %1</Spanish>
+			<Dutch>Turn Over %1</Dutch>
+			<French>Retourner %1</French>
 		</Key>
 		<Key ID="str_actions_stats">
 			<Original>Enable Stats</Original>
 			<English>Enable Stats</English>
 			<German>Enable Stats</German>
 			<Russian>Enable Stats</Russian>
+			<Spanish>Enable Stats</Spanish>
+			<Dutch>Enable Stats</Dutch>
+			<French>Activer les Stats</French>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
 			<English>Sleep</English>
 			<German>Sleep</German>
 			<Russian>Sleep</Russian>
+			<Spanish>Sleep</Spanish>
+			<Dutch>Sleep</Dutch>
+			<French>Dormir</French>
 		</Key>
 		<Key ID="STR_CHAR_2">
 			<Original>Bandit</Original>
 			<English>Bandit</English>
 			<German>Bandit</German>
 			<Russian>Бандит</Russian>
+			<Spanish>Bandido</Spanish>
+			<Dutch>Bandiet</Dutch>
+			<French>Bandit</French>
 		</Key>
 		<Key ID="str_actions_tamedog">
 			<Original>Tame Dog</Original>
 			<English>Tame Dog</English>
 			<German>zahmen Hund</German>
 			<Russian>Приручить собаку</Russian>
+			<Spanish>Tame Dog</Spanish>
+			<Dutch>Tame Dog</Dutch>
+			<French>Apprivoiser le Chien</French>
 		</Key>
 		<Key ID="str_actions_movedog">
 			<Original>Move To</Original>
 			<English>Move To</English>
-			<German></German>
+			<German>Move To</German>
 			<Russian>Иди туда</Russian>
+			<Spanish>Move To</Spanish>
+			<Dutch>Move To</Dutch>
+			<French>Aller à</French>
 		</Key>
 		<Key ID="str_actions_speeddog">
 			<Original>Dog: %1</Original>
 			<English>Dog: %1</English>
-			<German></German>
-			<Russian></Russian>
+			<German>Dog: %1</German>
+			<Russian>Dog: %1</Russian>
+			<Spanish>Dog: %1</Spanish>
+			<Dutch>Dog: %1</Dutch>
+			<French>Chien: %1</French>
 		</Key>
 		<Key ID="str_actions_calldog">
 			<Original>Call Dog</Original>
 			<English>Call Dog</English>
-			<German></German>
+			<German>Call Dog</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Call Dog</Spanish>
+			<Dutch>Call Dog</Dutch>
+			<French>Appeler le Chien</French>
 		</Key>
 		<Key ID="str_actions_feeddog">
 			<Original>Feed Dog</Original>
 			<English>Feed Dog</English>
-			<German></German>
+			<German>Feed Dog</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Feed Dog</Spanish>
+			<Dutch>Feed Dog</Dutch>
+			<French>Nourrir le Chien</French>
 		</Key>
 		<Key ID="str_actions_waterdog">
 			<Original>Water Dog</Original>
 			<English>Water Dog</English>
-			<German></German>
+			<German>Water Dog</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Water Dog</Spanish>
+			<Dutch>Water Dog</Dutch>
+			<French>Donner à boire au Chien</French>
 		</Key>
 		<Key ID="str_actions_sitdog">
 			<Original>Dog: Sit</Original>
 			<English>Dog: Sit</English>
-			<German></German>
+			<German>Dog: Sit</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Dog: Sit</Spanish>
+			<Dutch>Dog: Sit</Dutch>
+			<French>Chien: S'asseoir</French>
 		</Key>
 		<Key ID="str_actions_liedog">
 			<Original>Dog: Lie Down</Original>
 			<English>Dog: Lie Down</English>
-			<German></German>
+			<German>Dog: Lie Down</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Dog: Lie Down</Spanish>
+			<Dutch>Dog: Lie Down</Dutch>
+			<French>Chien : Couché</French>
 		</Key>
 		<Key ID="str_actions_trackdog">
 			<Original>Dog: Track</Original>
 			<English>Dog: Track</English>
-			<German></German>
+			<German>Dog: Track</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Dog: Track</Spanish>
+			<Dutch>Dog: Track</Dutch>
+			<French>Chien: Pister</French>
 		</Key>
 		<Key ID="str_actions_barkdog">
 			<Original>Dog: Bark</Original>
 			<English>Dog: Bark</English>
-			<German></German>
+			<German>Dog: Bark</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Dog: Bark</Spanish>
+			<Dutch>Dog: Bark</Dutch>
+			<French>Chien: Aboyer</French>
 		</Key>
 		<Key ID="str_actions_warndog">
 			<Original>Dog: %1</Original>
 			<English>Dog: %1</English>
-			<German></German>
+			<German>Dog: %1</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Dog: %1</Spanish>
+			<Dutch>Dog: %1</Dutch>
+			<French>Chien: %1</French>
 		</Key>
 		<Key ID="str_actions_followdog">
 			<Original>Dog: Follow</Original>
 			<English>Dog: Follow</English>
-			<German></German>
+			<German>Dog: Follow</German>
 			<Russian>Позвать собаку</Russian>
+			<Spanish>Dog: Follow</Spanish>
+			<Dutch>Dog: Follow</Dutch>
+			<French>Chien: Suivre</French>
 		</Key>
 	</Package>
 	<Package name="equipment_code">
@@ -748,144 +1115,216 @@
 			<English>Box of Wet Matches</English>						
 			<German>Box of Wet Matches</German>
 			<Russian>Box of Wet Matches</Russian>
+			<Spanish>Box of Wet Matches</Spanish>
+			<Dutch>Box of Wet Matches</Dutch>
+			<French>Boîte d'Allumettes mouillées</French>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_3">						
 			<Original>Box of wet matches.</Original>						
 			<English>Box of wet matches.</English>						
 			<German>Box of wet matches.</German>
 			<Russian>Box of wet matches.</Russian>
+			<Spanish>Box of wet matches.</Spanish>
+			<Dutch>Box of wet matches.</Dutch>
+			<French>Boîte d'Allumettes mouillées.</French>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_41">						
 			<Original>Blunt Hatchet</Original>						
 			<English>Blunt Hatchet</English>						
 			<German>Blunt Hatchet</German>
 			<Russian>Blunt Hatchet</Russian>
+			<Spanish>Blunt Hatchet</Spanish>
+			<Dutch>Blunt Hatchet</Dutch>
+			<French>Hache émoussée</French>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_41">						
 			<Original>Your Hatchet appears to be too bunt to be used.</Original>						
 			<English>Your Hatchet appears to be too bunt to be used.</English>						
 			<German>Your Hatchet appears to be too bunt to be used.</German>
 			<Russian>Your Hatchet appears to be too bunt to be used.</Russian>
+			<Spanish>Your Hatchet appears to be too bunt to be used.</Spanish>
+			<Dutch>Your Hatchet appears to be too bunt to be used.</Dutch>
+			<French>Votre Hache semble être trop émoussée pour l'utiliser</French>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_4">						
 			<Original>Blunt Knife</Original>						
 			<English>Blunt Knife</English>						
 			<German>Blunt Knife</German>
 			<Russian>Blunt Knife</Russian>
+			<Spanish>Blunt Knife</Spanish>
+			<Dutch>Blunt Knife</Dutch>
+			<French>Couteau émoussé</French>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_4">						
 			<Original>Your Knife appears to be too bunt.</Original>						
 			<English>Your Knife appears to be too bunt.</English>						
 			<German>Your Knife appears to be too bunt.</German>
 			<Russian>Your Knife appears to be too bunt.</Russian>
+			<Spanish>Your Knife appears to be too bunt.</Spanish>
+			<Dutch>Your Knife appears to be too bunt.</Dutch>
+			<French>Votre couteau semble trop émoussé</French>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_1">						
 			<Original>Mutton Raw</Original>						
 			<English>Mutton Raw</English>						
 			<German>Mutton Raw</German>
 			<Russian>Mutton Raw</Russian>
+			<Spanish>Mutton Raw</Spanish>
+			<Dutch>BMutton Raw</Dutch>
+			<French>Mouton cru</French>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">						
 			<Original>Goat Meat to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Goat Meat to be used for sustainment, must be cooked prior to eating.</English>						
 			<German>Goat Meat to be used for sustainment, must be cooked prior to eating.</German>
 			<Russian>Goat Meat to be used for sustainment, must be cooked prior to eating.</Russian>
+			<Spanish>Goat Meat to be used for sustainment, must be cooked prior to eating.</Spanish>
+			<Dutch>Goat Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<French>La viande de chèvre peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_2">						
 			<Original>Raw Chicken Leg</Original>						
 			<English>Raw Chicken Leg</English>						
 			<German>Raw Chicken Leg</German>
 			<Russian>Raw Chicken Leg</Russian>
+			<Spanish>Raw Chicken Leg</Spanish>
+			<Dutch>Raw Chicken Leg</Dutch>
+			<French>Cuisse de Poulet crue</French>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">						
 			<Original>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Chicken Leg to be used for sustainment, must be cooked prior to eating.</English>						
 			<German>Chicken Leg to be used for sustainment, must be cooked prior to eating.</German>
 			<Russian>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Russian>
+			<Spanish>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Spanish>
+			<Dutch>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<French>La cuisse de poulet crue peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_3">						
 			<Original>Rabbit Raw</Original>						
 			<English>Rabbit Raw</English>						
 			<German>Rabbit Raw</German>
 			<Russian>Rabbit Raw</Russian>
+			<Spanish>Rabbit Raw</Spanish>
+			<Dutch>Rabbit Raw</Dutch>
+			<French>Lapin cru</French>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_3">						
 			<Original>Rabbit to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Rabbit to be used for sustainment, must be cooked prior to eating.</English>						
 			<German>Rabbit to be used for sustainment, must be cooked prior to eating.</German>
 			<Russian>Rabbit to be used for sustainment, must be cooked prior to eating.</Russian>
+			<Spanish>Rabbit to be used for sustainment, must be cooked prior to eating.</Spanish>
+			<Dutch>Rabbit to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<French>Le lapin cru peut être consommé mais doit être cuit avant de le manger.</French>
 		</Key>	
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_4">						
 			<Original>Raw Bacon</Original>						
 			<English>Raw Bacon</English>						
 			<German>Raw Bacon</German>
 			<Russian>Raw Bacon</Russian>
+			<Spanish>Raw Bacon</Spanish>
+			<Dutch>Raw Bacon</Dutch>
+			<French>Bacon cru</French>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_4">						
 			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Bacon to be used for sustainment, must be cooked prior to eating.</English>						
 			<German>Bacon to be used for sustainment, must be cooked prior to eating.</German>
 			<Russian>Bacon to be used for sustainment, must be cooked prior to eating.</Russian>
+			<Spanish>Bacon to be used for sustainment, must be cooked prior to eating.</Spanish>
+			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<French>Le bacon cru peut être consommé mais doit être cuit avant de le manger.</French>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_1">						
 			<Original>Cooked Mutton</Original>						
 			<English>Cooked Mutton</English>						
 			<German>Cooked Mutton</German>
 			<Russian>Cooked Mutton</Russian>
+			<Spanish>Cooked Mutton</Spanish>
+			<Dutch>Cooked Mutton</Dutch>
+			<French>Mouton Cuit</French>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_1">						
 			<Original>Goat Meat to be used for sustainment.</Original>						
 			<English>Goat Meat to be used for sustainment.</English>						
 			<German>Goat Meat to be used for sustainment.</German>
 			<Russian>Goat Meat to be used for sustainment.</Russian>
+			<Spanish>Goat Meat to be used for sustainment.</Spanish>
+			<Dutch>Goat Meat to be used for sustainment.</Dutch>
+			<French>La viande de chèvre peut être consommée.</French>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_2">						
 			<Original>Chicken Leg</Original>						
 			<English>Chicken Leg</English>						
 			<German>Chicken Leg</German>
 			<Russian>Chicken Leg</Russian>
+			<Spanish>Chicken Leg</Spanish>
+			<Dutch>Chicken Leg</Dutch>
+			<French>Cuisse de poulet</French>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">						
 			<Original>Chicken Leg to be used for sustainment.</Original>						
 			<English>Chicken Leg to be used for sustainment.</English>						
 			<German>Chicken Leg to be used for sustainment.</German>
 			<Russian>Chicken Leg to be used for sustainment.</Russian>
+			<Spanish>Chicken Leg to be used for sustainment.</Spanish>
+			<Dutch>Chicken Leg to be used for sustainment.</Dutch>
+			<French>La cuisse de poulet peut être consommée.</French>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_3">						
 			<Original>Rabbit</Original>						
 			<English>Rabbit</English>						
 			<German>Rabbit</German>
 			<Russian>Rabbit</Russian>
+			<Spanish>Rabbit</Spanish>
+			<Dutch>Rabbit</Dutch>
+			<French>Lapin</French>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_3">						
 			<Original>Rabbit to be used for sustainmen.</Original>						
 			<English>Rabbit to be used for sustainment.</English>						
 			<German>Rabbit to be used for sustainment.</German>
 			<Russian>Rabbit to be used for sustainment.</Russian>
+			<Spanish>Rabbit to be used for sustainment.</Spanish>
+			<Dutch>Rabbit to be used for sustainment.</Dutch>
+			<French>Le lapin peut être consommé.</French>
 		</Key>	
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_4">						
 			<Original>Bacon</Original>						
 			<English>Bacon</English>						
 			<German>Bacon</German>
 			<Russian>Bacon</Russian>
+			<Spanish>Bacon</Spanish>
+			<Dutch>Bacon</Dutch>
+			<French>Bacon</French>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_4">						
 			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Bacon to be used for sustainment, must be cooked prior to eating.</English>						
 			<German>Bacon to be used for sustainment, must be cooked prior to eating.</German>
 			<Russian>Bacon to be used for sustainment, must be cooked prior to eating.</Russian>
+			<Spanish>Bacon to be used for sustainment, must be cooked prior to eating.</Spanish>
+			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<French>Bacon to be used for sustainment, must be cooked prior to eating.</French>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_5">						
 			<Original>Angel Cookies</Original>						
 			<English>Angel Cookies</English>						
 			<German>Angel Cookies</German>
 			<Russian>Angel Cookies</Russian>
+			<Spanish>Angel Cookies</Spanish>
+			<Dutch>Angel Cookies</Dutch>
+			<French>Angel Cookies</French>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_5">						
 			<Original>Angel Cookies to boost your moral up!</Original>						
 			<English>Angel Cookies to boost your moral up!</English>						
 			<German>Angel Cookies to boost your moral up!</German>
 			<Russian>Angel Cookies to boost your moral up!</Russian>
+			<Spanish>Angel Cookies to boost your moral up!</Spanish>
+			<Dutch>Angel Cookies to boost your moral up!</Dutch>
+			<French>Angel Cookies to boost your moral up!</French>
 		</Key>
 	</Package>
 </Project>
