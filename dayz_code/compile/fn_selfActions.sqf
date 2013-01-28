@@ -14,12 +14,12 @@ _isWater = 		(surfaceIsWater (position player)) or dayz_isSwimming;
 _hasAntiB = 	"ItemAntibiotic" in magazines player;
 _hasFuelE = 	"ItemJerrycanEmpty" in magazines player;
 //RawFood
-_hasRawMeat = _hasSteakRaw or _hasmuttonRaw or _hasrabbitRaw or _hasbaconRaw;
-_hasSteakRaw = 	"FoodSteakRaw" in magazines player;	
+_hasSteakRaw = 		"FoodSteakRaw" in magazines player;	
 _hasmuttonRaw = 	"FoodmuttonRaw" in magazines player;
 _haschickenRaw = 	"FoodchickenRaw" in magazines player;
 _hasrabbitRaw = 	"FoodrabbitRaw" in magazines player;
 _hasbaconRaw = 		"FoodbaconRaw" in magazines player;
+_hasRawMeat = _hasSteakRaw or _hasmuttonRaw or _hasrabbitRaw or _hasbaconRaw;
 _hasKnife = 	"ItemKnife" in items player;
 _hasToolbox = 	"ItemToolbox" in items player;
 //_hasTent = 		"ItemTent" in items player;
@@ -94,7 +94,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 	// Allow Owner to lock and unlock vehicle  
 	if(_isVehicle and !_isMan and _canDo and _ownerID == dayz_playerUID) then {
-
 			
 		if (s_player_lockUnlock_crtl < 0) then {
 			_Unlock = player addAction [format["Unlock %1",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",cursorTarget, 2, true, true, "", "(locked cursorTarget)"];
@@ -319,16 +318,13 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 				_low_high = "low";
 				if (_humanity < -2000) then {
 					_humanity_logic = true;
-				};	
-			};
-			if((_traderMenu select 2) == "neutral") then {
-				_humanity_logic = true;
+				};
 			};
 			if((_traderMenu select 2) == "hostile") then {
 				_low_high = "high";
 				if (_humanity > -2000) then {
 					_humanity_logic = true;
-				};	
+				};
 			};
 			if(_humanity_logic) then {
 				_cancel = player addAction ["Your humanity is too " + _low_high + " this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
@@ -338,7 +334,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 				// Static Menu
 				{
 					diag_log format["DEBUG TRADER: %1", _x];
-					_buy = player addAction [format["Trade %1 %2 for %3 %4",(_x select 3),(_x select 6),(_x select 2),(_x select 5)], "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4),(_x select 5),(_x select 6)], (_x select 7), true, true, "",""];
+					_buy = player addAction [format["Trade %1 %2 for %3 %4",(_x select 3),(_x select 5),(_x select 2),(_x select 6)], "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4),(_x select 5),(_x select 6)], (_x select 7), true, true, "",""];
 					s_player_parts set [count s_player_parts,_buy];
 				
 				} forEach (_traderMenu select 1);
