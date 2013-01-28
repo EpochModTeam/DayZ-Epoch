@@ -536,10 +536,10 @@ if (true) then
 _vehicle_121 = objNull;
 if (true) then
 {
-  _this = createVehicle ["UAZWreck", [4015.2021, 11640.825, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["UAZWreck", [3967.6763, 11614.6, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_121 = _this;
-  _this setDir 47.001991;
-  _this setPos [4015.2021, 11640.825, -3.0517578e-005];
+  _this setDir 4.973218;
+  _this setPos [3967.6763, 11614.6, -3.0517578e-005];
 };
 
 _vehicle_123 = objNull;
@@ -657,10 +657,10 @@ if (true) then
 _vehicle_161 = objNull;
 if (true) then
 {
-  _this = createVehicle ["UAZWreck", [4022.2068, 11646.929, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["UAZWreck", [3926.9609, 11653.108, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_161 = _this;
   _this setDir 113.7531;
-  _this setPos [4022.2068, 11646.929, -3.0517578e-005];
+  _this setPos [3926.9609, 11653.108, -3.0517578e-005];
 };
 
 _vehicle_164 = objNull;
@@ -745,10 +745,10 @@ if (true) then
 _vehicle_178 = objNull;
 if (true) then
 {
-  _this = createVehicle ["UralWreck", [4007.2324, 11647.196, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["UralWreck", [3960.4729, 11634.942, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_178 = _this;
   _this setDir 51.630379;
-  _this setPos [4007.2324, 11647.196, -3.0517578e-005];
+  _this setPos [3960.4729, 11634.942, -3.0517578e-005];
 };
 
 _vehicle_184 = objNull;
@@ -1334,6 +1334,17 @@ if (true) then
   _this = _group_1 createUnit ["Doctor", [11455.903, 11376.358], [], 0, "CAN_COLLIDE"];
   _unit_82 = _this;
   _this setDir 107.12319;
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
+  _this setUnitAbility 0.60000002;
+  if (false) then {_group_1 selectLeader _this;};
+};
+
+_unit_84 = objNull;
+if (true) then
+{
+  _this = _group_1 createUnit ["TK_CIV_Takistani04_EP1", [6912.1919, 11428.12, 11.354488], [], 0, "CAN_COLLIDE"];
+  _unit_84 = _this;
+  _this setDir 377.50549;
   _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
