@@ -58,6 +58,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_hasBlood = 	"ItemBloodbag" in magazines player;	
 	_hasToolbox = 	"ItemToolbox" in items player;
 	_hasJerry = 	"ItemJerrycan" in magazines player;
+	_hasJerryE = 	"ItemJerrycanEmpty" in magazines player;
 	_hasEtool = 	"ItemEtool" in weapons player;
 	_hasWire = 		"ItemWire" in magazines player;
 	_hasPainkillers = 	"ItemPainkiller" in magazines player;
@@ -126,6 +127,13 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 			_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",[_unit], 0, true, true, "", "'ItemJerrycan' in magazines player"];
 			r_player_actions set [count r_player_actions,_action];
 		};
+		//CAN WE siphon fuel from THE OBJECT?
+		if ((fuel _unit > 0) and _hasJerryE) then {
+			r_action = true;
+			_action = _unit addAction [format["Siphon fuel from %1",_typeVeh], "\z\addons\dayz_code\actions\siphonFuel.sqf",[_unit], 0, true, true, "", "'ItemJerrycanEmpty' in magazines player"];
+			r_player_actions set [count r_player_actions,_action];
+		};
+
 		//CAN WE ISSUE ANOTHER KIND OF AMMUNITION?
 		if (count weapons _unit > 0) then {
 			//Get mag array

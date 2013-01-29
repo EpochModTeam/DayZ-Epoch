@@ -101,7 +101,7 @@ menu_RU_Citizen3 = [
 	"friendly"
 ];
 // Auto Traders
-menu_CIV_Worker3 = [
+menu_Worker3 = [
 	[["Cars",41],["Trucks Unarmed",42],["SUV",466],["Buses and Vans",467],["Offroad",43],["Helicopter Unarmed",44],["Military Unarmed",45]],
 	[],
 	"friendly"
@@ -149,7 +149,7 @@ menu_RU_Villager3 = [
 menu_TK_CIV_Takistani04_EP1 = [
 	[["Explosives",23]], 
 	[],
-	"hostile"
+	"neutral"
 ];
 
 // ["friendly"] must have more than -2000 humanity,
@@ -177,7 +177,7 @@ waitUntil {time > 3};
 
 if ((!isServer) && (player != player)) then
 {
-  waitUntil {player == player};
+  waitUntil {player == player}; 
   waitUntil {time > 3};
 };
 
@@ -202,6 +202,14 @@ if (isServer) then {
 							"Ikarus",
 							"SUV_TK_CIV_EP1",
 							"SUV_Green",
+							"SUV_Yellow",
+							"SUV_White",
+							"SUV_Silver",
+							"SUV_Red",
+							"SUV_Pink",
+							"SUV_Orange",
+							"SUV_Charcoal",
+							"SUV_Blue",
 							"UH1H_DZ",
 							"Mi17_Civilian",
 							"LandRover_CZ_EP1",
@@ -234,6 +242,14 @@ if (isServer) then {
 							  0.01, // "Ikarus"
 							  0.1,  // "SUV_TK_CIV_EP1"
 							  0.1,  // "SUV_Green",
+  							  0.1,  // "SUV_Yellow",
+							  0.1,  // "SUV_White",
+							  0.1,  // "SUV_Silver",
+							  0.1,  // "SUV_Red",
+							  0.1,  // "SUV_Pink",
+							  0.1,  // "SUV_Orange",
+							  0.1,  // "SUV_Charcoal",
+							  0.1,  // "SUV_Blue",
 							  0.05, // "UH1H_DZ"
 							  0.09, // "Mi17_Civilian"
 							  0.11, // "LandRover_CZ_EP1"
@@ -248,7 +264,7 @@ if (isServer) then {
 							  0.1,  // "tractor"
 							  0.1]; // "CSJ_GyroP"
 	
-	AllowedVehiclesLimit =  [ 5, // "Old_moto_TK_Civ_EP1",
+	AllowedVehiclesLimit =  [ 5,  // "Old_moto_TK_Civ_EP1",
 							  10, // "MMT_Civ"
 							  10, // Old_bike_TK_INS_EP1
 							  5, // "ATV_US_EP1",
@@ -256,7 +272,7 @@ if (isServer) then {
 							  5, // "datsun1_civil_3_open",
 							  3, // "Pickup_PK_TK_GUE_EP1",
 							  2, // "Octavia_ACR"
-							  2, // VWGolf
+							  2, // "VWGolf"
 							  3, // "Lada1",
 							  3, // "Skoda",
 							  3, // "car_sedan",
@@ -266,6 +282,14 @@ if (isServer) then {
 							  2, // "Ikarus"
 							  4, // "SUV_TK_CIV_EP1"
 							  2, // "SUV_Green",
+							  1, // "SUV_Yellow",
+							  1, // "SUV_White",
+							  1, // "SUV_Silver",
+							  1, // "SUV_Red",
+							  1, // "SUV_Pink",
+							  1, // "SUV_Orange",
+							  1, // "SUV_Charcoal",
+							  1, // "SUV_Blue",
 							  2, // "UH1H_DZ"
 							  2, // "Mi17_Civilian"
 							  2, // "LandRover_CZ_EP1"

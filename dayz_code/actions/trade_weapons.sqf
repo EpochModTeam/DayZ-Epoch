@@ -23,55 +23,44 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	_isOk = false;
-	if(_buy_o_sell == "buy") then {
-		_config = (configFile >> "cfgWeapons" >> _part_out);
-		_isOk = [player,_config] call BIS_fnc_invAdd;
-	} else {
-		_isOk = true;
-	};
 
-	
-	if (_isOk) then {
 
-		["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+	["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 
-		waitUntil {!isNil "dayzTradeResult"};
+	waitUntil {!isNil "dayzTradeResult"};
 
-		diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+	diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
 
-		if(dayzTradeResult == "PASS") then {
+	if(dayzTradeResult == "PASS") then {
 
-			for "_x" from 1 to _qty_in do {
-				if(_buy_o_sell == "buy") then {
-					player removeMagazine _part_in;
-				} else {
-					player removeWeapon _part_in;
-				};
+		for "_x" from 1 to _qty_in do {
+			if(_buy_o_sell == "buy") then {
+				player removeMagazine _part_in;
+			} else {
+				player removeWeapon _part_in;
 			};
-	
-			for "_x" from 1 to _qty_out do {
-				if(_buy_o_sell == "buy") then {
-					player addWeapon _part_out;
-				} else {
-					player addMagazine _part_out;
-				};
-			};
-	
-	
-			// [player,"repair",0,false] call dayz_zombieSpeak;
-			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-
-			{player removeAction _x} forEach s_player_parts;s_player_parts = [];
-			s_player_parts_crtl = -1;
-
-		} else {
-			cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
 		};
-		dayzTradeResult = nil;
+	
+		for "_x" from 1 to _qty_out do {
+			if(_buy_o_sell == "buy") then {
+				player addWeapon _part_out;
+			} else {
+				player addMagazine _part_out;
+			};
+		};
+	
+	
+		// [player,"repair",0,false] call dayz_zombieSpeak;
+		cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+
+		{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+		s_player_parts_crtl = -1;
+
 	} else {
-		cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+		cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
 	};
+	dayzTradeResult = nil;
+
 
 } else {
 	_needed =  _qty_in - _qty;

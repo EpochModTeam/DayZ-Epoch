@@ -231,64 +231,37 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_sleep = -1;
 	};
 	
+
+
+
+
+
 	//Repairing Vehicles
-	if ((dayz_myCursorTarget != cursorTarget) and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
-		_vehicle = cursorTarget;
-		{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
-		dayz_myCursorTarget = _vehicle;
-
-		_allFixed = true;
-		_hitpoints = _vehicle call vehicle_getHitpoints;
+	if (_isVehicle and (dayz_myCursorTarget != cursorTarget) and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
 		
-		{			
-			_damage = [_vehicle,_x] call object_getHit;
-			_part = "PartGeneric";
-
-			//change "HitPart" to " - Part" rather than complicated string replace
-			_cmpt = toArray (_x);
-			_cmpt set [0,20];
-			_cmpt set [1,toArray ("-") select 0];
-			_cmpt set [2,20];
-			_cmpt = toString _cmpt;
-				
-			if(["Engine",_x,false] call fnc_inString) then {
-				_part = "PartEngine";
-			};
-					
-			if(["HRotor",_x,false] call fnc_inString) then {
-				_part = "PartVRotor"; //yes you need PartVRotor to fix HRotor LOL
-			};
-
-			if(["Fuel",_x,false] call fnc_inString) then {
-				_part = "PartFueltank";
-			};
+		if (s_player_repair_crtl < 0) then {
 			
-			if(["Wheel",_x,false] call fnc_inString) then {
-				_part = "PartWheel";
-			};	
-					
-			if(["Glass",_x,false] call fnc_inString) then {
-				_part = "PartGlass";
-			};
+			_vehicle = cursorTarget;
 
-			// get every damaged part no matter how tiny damage is!
-			if (_damage > 0) then {
-				
-				_allFixed = false;
-				_color = "color='#ffff00'"; //yellow
-				if (_damage >= 0.5) then {_color = "color='#ff8800'";}; //orange
-				if (_damage >= 0.9) then {_color = "color='#ff0000'";}; //red
+			dayz_myCursorTarget = _vehicle;
 
-				_string = format["<t %2>Repair%1</t>",_cmpt,_color]; //Repair - Part
-				_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
-				s_player_repairActions set [count s_player_repairActions,_handle];
-			};
+			_menu = dayz_myCursorTarget addAction ["Repair Vehicle", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_vehicle, 0, true, false, "",""];
+			_menu1 = dayz_myCursorTarget addAction ["Salvage Vehicle", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_vehicle, 0, true, false, "",""];
 			
-		} forEach _hitpoints;
-		if (_allFixed) then {
-			_vehicle setDamage 0;
+			s_player_repairActions set [count s_player_repairActions,_menu];
+			s_player_repairActions set [count s_player_repairActions,_menu1];
+
+			s_player_repair_crtl = 1;
+
+		} else {
+			{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+			s_player_repair_crtl = -1;
 		};
 	};
+
+
+
+
 	
 	_humanity = player getVariable ["humanity",0];
 	
@@ -422,6 +395,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 } else {
 	//Engineering
 	{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+	s_player_repair_crtl = -1;
+		
 	dayz_myCursorTarget = objNull;
 
 	{player removeAction _x} forEach s_player_madsci;s_player_madsci = [];

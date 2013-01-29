@@ -47,6 +47,7 @@ if (_section and _hasToolbox) then {
 
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
 dayz_myCursorTarget = objNull;
+s_player_repair_crtl = -1;
 
 //check if repaired fully
 _hitpoints = _vehicle call vehicle_getHitpoints;
