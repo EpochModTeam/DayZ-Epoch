@@ -274,7 +274,7 @@
 			<Russian>Костер убран.</Russian>
 			<Spanish>La fogata fue removida</Spanish>
 			<Dutch>Het kampvuur is verwijderd</Dutch>
-			<French>Le feu de camp a été retiré.</French
+			<French>Le feu de camp a été retiré.</French>
 		</Key>
 		<Key ID="str_success_gutted_animal">
 			<Original>%1 has been gutted, %2 meat steaks now on the carcass</Original>
@@ -625,7 +625,7 @@
 			<Russian>обезвоживания</Russian>
 			<Spanish>deshidratacion</Spanish>
 			<Dutch>uitdroging</Dutch>
-			<French>une déshydratation</French
+			<French>une déshydratation</French>
 		</Key>
 		<Key ID="str_death_starve">
 			<Original>starvation</Original>

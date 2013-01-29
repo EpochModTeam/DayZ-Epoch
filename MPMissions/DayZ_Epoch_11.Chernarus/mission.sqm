@@ -31,8 +31,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ_Epoch Chernarus";
-		briefingDescription="DayZ_Epoch Chernarus Private Server";
+		briefingName="DayZ Epoch Chernarus";
+		briefingDescription="DayZ Epoch Chernarus Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;

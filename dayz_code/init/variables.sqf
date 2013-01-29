@@ -34,6 +34,7 @@ pz_priest = "pz_priest";
 
 
 dayz_combatLog = "";
+canRoll = true;
 
 
 //Hunting Variables

@@ -25,4 +25,4 @@ if (_needleLen <= _haystackLen) then {
 		};
 	};
 };
-_found;
+_found

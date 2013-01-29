@@ -224,13 +224,20 @@ if (!isDedicated) then {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
 		_handled = false;
+		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",500]) > 1);
 		if (_dikCode in (actionKeys "GetOver")) then {
-			if (animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
+			if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
+				canRoll = false;
 				null = [] spawn {
-				//Needed for sync with others
+					if (DoRE) then {
 					[nil, player, rSWITCHMOVE,"ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
+					} else {
+						player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
+					};
 					sleep 0.3; 
 					player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
+					sleep 1;
+					canRoll = true;
 				};
 				_handled = true;
 			};
