@@ -1478,6 +1478,24 @@ class CfgMagazines
 		picture = "\dayz_equip\textures\equip_jerrycan_e_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_39";
 	};
+	class bulk_NVGoggles: CA_Magazine
+	{
+		scope = 2;
+		count = 12;
+		type = "(256 * 6)";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		descriptionShort = "12 x NV Goggles";
+	};
+	class bulk_30Rnd_9x19_MP5SD: CA_Magazine
+	{
+		scope = 2;
+		count = 12;
+		type = "(256 * 6)";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		descriptionShort = "12 x 30Rnd_9x19_MP5SD rounds";
+	};
 	class ItemGenerator: CA_Magazine
 	{
 		scope = 2;
@@ -2000,7 +2018,7 @@ class CfgVehicles
 		displayName = "Vault";
 		model = "\dayz_equip\models\safe1.p3d";
 		destrType = "DestructNo";
-		armor = 2000;
+		armor = 800;
 		transportMaxMagazines = 200;
 		transportMaxWeapons = 20;
 		transportMaxBackpacks = 10;
@@ -2011,7 +2029,7 @@ class CfgVehicles
 		displayName = "Locked Vault";
 		model = "\dayz_equip\models\safe1.p3d";
 		destrType = "DestructNo";
-		armor = 2000;
+		armor = 800;
 		transportMaxMagazines = 0;
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;

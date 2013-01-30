@@ -271,7 +271,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	// All Traders
 	if (_isMan and !_isPZombie and _traderType in serverTraders) then {
 
-		if(!isNil "s_last_trader" and s_player_parts_crtl == 1) then {
+		if((!isNil "s_last_trader") and s_player_parts_crtl == 1) then {
 			if(s_last_trader != _traderType) then {
 				s_player_parts_crtl -1;
 			};
@@ -280,7 +280,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_parts_crtl < 0) then {
 
 			//diag_log ("TRADER = " + str(serverTraders));
-			
 			
 			_traderMenu = call compile format["menu_%1;",_traderType];
 

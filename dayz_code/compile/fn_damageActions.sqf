@@ -153,6 +153,15 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 					};
 				};
 			} forEach _magTypes;
+		} else {
+		
+			// should only fire if cursor target is man and not vehicle
+			if ((isPlayer _unit) and !(_charID in _friendlies)) then {
+				r_action = true;
+				_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", ""];
+				r_player_actions set [count r_player_actions,_action];
+			};
+		
 		};
 		//CAN CARRY BACKPACK
 		if ((_type in USEC_PackableObjects) and (_classbag == "")) then {
@@ -188,12 +197,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 		};
 	};
 	
-	if ((isPlayer _unit) and !(_charID in _friendlies)) then {
-		r_action = true;
-		// TODO: prevent menu on vehicle, first attempt did not work "vehicle _unit == _unit"
-		_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", ""];
-		r_player_actions set [count r_player_actions,_action];
-	};
+
 	
 	if (r_action) then {
 		r_action_targets = r_action_targets + [_unit];

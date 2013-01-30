@@ -147,19 +147,16 @@ spawn_vehicles = {
 	if (isDedicated) then {
 		waituntil {!isnil "fnc_buildWeightedArray"};
 		
-		_weights = [];
-		_weights = [AllowedVehiclesList,AllowedVehiclesChance] call fnc_buildWeightedArray;
-
 		_isOverLimit = true;
 		_isAbort = false;
 		_counter = 0;
 		while {_isOverLimit} do {
 
 			waitUntil{!isNil "BIS_fnc_selectRandom"};
-			_index = _weights call BIS_fnc_selectRandom;
+			_index = AllowedVehiclesList call BIS_fnc_selectRandom;
 
-			_vehicle = AllowedVehiclesList select _index;
-			_velimit = AllowedVehiclesLimit select _index;
+			_vehicle = _index select 0;
+			_velimit = _index select 1;
 
 			_qty = {_x == _vehicle} count serverVehicleCounter;
 
@@ -178,7 +175,7 @@ spawn_vehicles = {
 		};
 
 		if (_isAbort) then {
-			diag_log("DEBUG: unable to find sutable vehicle");
+			diag_log("DEBUG: unable to find sutable vehicle to spawn");
 		} else {
 
 			// add vehicle to counter for next pass
