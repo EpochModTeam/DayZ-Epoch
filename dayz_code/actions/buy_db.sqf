@@ -94,7 +94,6 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	if(_qty <= 0) then {
 		_Display = format["Buy %1 (Out of Stock: %2)", _textPart, _qty];
 		_part = player addAction [_Display, "\z\addons\dayz_code\actions\trade_cancel.sqf",[], 0, true, false, "",""];
-		_part = player addAction [_Display, _File,[_name,_bname,_out,_in,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
 	} else {
 		_Display = format["Buy %1 (%2) for %3 %4 (Available: %5)", _textPart, _name, _in, _textCurrency, _qty];
 		_part = player addAction [_Display, _File,[_name,_bname,_out,_in,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];

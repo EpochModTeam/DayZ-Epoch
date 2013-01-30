@@ -1483,6 +1483,7 @@ class CfgMagazines
 		scope = 2;
 		count = 12;
 		type = "(256 * 6)";
+		displayName = "Supply Crate";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		descriptionShort = "12 x NV Goggles";
@@ -1492,9 +1493,10 @@ class CfgMagazines
 		scope = 2;
 		count = 12;
 		type = "(256 * 6)";
+		displayName = "Supply Crate";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
-		descriptionShort = "12 x 30Rnd_9x19_MP5SD rounds";
+		descriptionShort = "12 x 30Rnd_9x19_MP5SD";
 	};
 	class ItemGenerator: CA_Magazine
 	{
