@@ -258,7 +258,7 @@ spawn_vehicles = {
 
 spawn_roadblocks = {
 	private["_position","_veh","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_isRoad","_roadlist","_istoomany"];
-	_WreckList = ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1"];
+	_WreckList = ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
 	_WreckLoot = ["DynamicDebris"];
 	waitUntil{!isNil "BIS_fnc_selectRandom"};
 	if (isDedicated) then {

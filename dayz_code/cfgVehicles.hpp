@@ -678,6 +678,80 @@ class Citizen1;	// External class reference
 		nameSound = "fuelstation";
 	};
 	
+    class Ship: AllVehicles 
+	{
+        displayName = "Ship";
+        transportMaxMagazines = 2000;
+        transportMaxWeapons = 200;
+        transportMaxBackpacks = 40;
+	};
+    class SmallShip: Ship 
+	{
+        displayName = "Small Ship";
+        transportMaxMagazines = 100;
+        transportMaxWeapons = 20;
+	};
+    class BigShip: Ship 
+	{
+        displayName = "Big Ship";
+        transportMaxMagazines = 500;
+        transportMaxWeapons = 200;
+	};
+    class Fishing_Boat: Ship 
+	{
+        displayName = "Fishing boat";
+		maxSpeed = 40;
+        transportMaxMagazines = 400;
+        transportMaxWeapons = 40;
+        transportMaxBackpacks = 8;
+	};
+    class Smallboat_1: Ship 
+	{
+        displayName = "Small boat";
+		maxSpeed = 30;    
+		transportMaxMagazines = 200;
+        transportMaxWeapons = 20;
+        transportMaxBackpacks = 4;
+	};
+    class smallboat_2: Smallboat_1 
+	{
+        displayName = "Small boat II";
+	};
+    class Boat: Ship 
+	{
+        transportMaxMagazines = 100;
+        transportMaxWeapons = 10;
+        transportMaxBackpacks = 2;
+	};
+    class RHIB: Boat 
+	{
+        displayName = "RHIB";
+	};
+    class RHIB2Turret: RHIB 
+	{
+        displayName = "RHIB (Mk19)";
+	};
+    class RubberBoat: Boat 
+	{
+        transportMaxMagazines = 50;
+        transportMaxWeapons = 5;
+        transportMaxBackpacks = 1;
+	};
+    class Zodiac: RubberBoat 
+	{
+        displayName = "CRRC";
+	};
+    class PBX: RubberBoat 
+	{
+        displayName = "PBX";
+	};
+    class PBX_ACR: Ship 
+	{
+        displayName = "PBX";
+        transportMaxMagazines = 50;
+        transportMaxWeapons = 5;
+        transportMaxBackpacks = 1;
+	};
 
 	// Lingor hangars
 	//class land_ibr_hangar: land_ibr_hangar

@@ -17,22 +17,26 @@ _bulkqty = 0;
 
 if(_buy_o_sell == "sell") then {
 
-	// SELL ONLY check if item if bulk 
-	_bulkItem = call compile format["bulk_%1;",_part_in];
+	// SELL ONLY check if item is bulk 
+	_bulkItem = "bulk_" + _part_in;
 	_bulkqty = {_x == _bulkItem} count magazines player;
+
+	diag_log format["DEBUG bulk: %1", _bulkItem];
 
 	_bos = 1;
 };
 
 if (_bulkqty >= 1) then {
 	
+	
 	// TODO: optimize for one db call only
-
-	// Find qty of box and 
-	_bulkqty = getNumber (configFile >> "CfgMagazines" >> _bulkItem >> "count");
+	
+	_part_in = "bulk_" + _part_in;
+	player removeMagazine _part_in;
+	diag_log format["DEBUG remove magazine %1", _part_in];
 
 	// increment trader for each
-	for "_x" from 1 to _bulkqty do {
+	for "_x" from 1 to 12 do {
 		["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 		
 		waitUntil {!isNil "dayzTradeResult"};
@@ -42,10 +46,60 @@ if (_bulkqty >= 1) then {
 		};
 	};
 
-	for "_x" from 1 to _qty_out do {
-		player addMagazine _part_out;
+	
+
+	_qty_out = _qty_out * 12;
+
+	// gold = 36 copper
+	// gold = 6 silver
+	// 
+
+	if (_part_out == "ItemSilverBar") then {
+		
+		if (_qty_out >= 6) then {
+	
+			// find number of gold
+			_gold_out = _qty_out / 6;
+			
+			// whole number of gold bars
+			_gold_qty_out = floor _gold_out;
+			
+			_part_out = "ItemGoldBar";
+			for "_x" from 1 to _gold_qty_out do {
+				player addMagazine _part_out;
+			};
+
+			// Find remainder 
+			_partial_qty_out = (_gold_out - _gold_qty_out) * 6;
+			
+			// whole number of gold bars
+			_silver_qty_out = floor _partial_qty_out;
+
+			_part_out = "ItemSilverBar";
+			for "_x" from 1 to _silver_qty_out do {
+				player addMagazine _part_out;
+			};
+
+
+		} else {
+		
+			for "_x" from 1 to _qty_out do {
+				player addMagazine _part_out;
+			};
+		};
+
+	} else {
+		
+		for "_x" from 1 to _qty_out do {
+			player addMagazine _part_out;
+		};
 	};
 
+
+
+	
+
+	
 	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 	dayzTradeResult = nil;

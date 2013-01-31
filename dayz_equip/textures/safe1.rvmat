@@ -8,7 +8,7 @@ PixelShaderID="Normal";
 VertexShaderID="Basic";
 class Stage1
 {
-	texture="D:\GitHub Personal\DayZ-Epoch\dayz_equip\textures\safe1_NOHQ.paa";
+	texture="dayz_equip\textures\safe1_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="D:\GitHub Personal\DayZ-Epoch\dayz_equip\textures\safe1_SMDI.paa";
+	texture="dayz_equip\textures\safe1_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

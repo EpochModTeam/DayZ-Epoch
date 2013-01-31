@@ -302,8 +302,8 @@ class CfgLoot {
 			"FoodCanPasta",
 			"ItemBandage",
 			"ItemPainkiller",
-			"ItemToolbox",
-			"ItemEtool"
+			"ItemWire",
+			"ItemTankTrap",
 		},
 		{
 			0.09,

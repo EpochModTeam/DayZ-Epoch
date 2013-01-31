@@ -28,12 +28,12 @@ class CfgMods
 	class DayZ
 	{
 		dir = "DayZ";
-		name = "DayZ";
+		name = "DayZ Epoch";
 		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayepoch.com";
-		version = "0.82";
+		version = "0.84";
 		hiveVersion = 0.96; //0.93
 	};
 };
