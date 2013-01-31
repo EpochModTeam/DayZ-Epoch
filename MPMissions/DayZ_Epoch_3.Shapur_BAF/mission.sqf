@@ -187,7 +187,7 @@ if (true) then
   _this setDir -93.945122;
   _this setVehicleVarName "mad_sci";
   mad_sci = _this;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -199,7 +199,7 @@ if (true) then
   _unit_12 = _this;
   _this setVehicleVarName "parts_trader_1";
   parts_trader_1 = _this;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (true) then {_group_1 selectLeader _this;};
 };
@@ -211,7 +211,7 @@ if (true) then
   _unit_15 = _this;
   _this setVehicleVarName "auto_trader_1";
   auto_trader_1 = _this;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -224,7 +224,7 @@ if (true) then
   _this setDir 76.695313;
   _this setVehicleVarName "can_trader_1";
   can_trader_1 = _this;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -237,7 +237,7 @@ if (true) then
   _this setDir 101.12498;
   _this setVehicleVarName "weapon_trader_1";
   weapon_trader_1 = _this;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -250,7 +250,7 @@ if (true) then
   _this setDir 45.5686;
   _this setVehicleVarName "ammo_trader_1";
   ammo_trader_1 = _this;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -315,7 +315,7 @@ if (true) then
   _this setDir 185.64281;
   _this setVehicleVarName "metals_trader";
   metals_trader = _this;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -403,7 +403,7 @@ if (true) then
   _this = _group_1 createUnit ["RU_Pilot", [469.495, 1071.1565, -5.7220459e-006], [], 0, "CAN_COLLIDE"];
   _unit_24 = _this;
   _this setDir -108.01817;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+  _this setVehicleInit "this allowDammage false;"; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET';
   _this setUnitAbility 0.60000002;
   if (false) then {_group_1 selectLeader _this;};
 };
@@ -415,24 +415,6 @@ if (true) then
   _vehicle_189 = _this;
   _this setDir -87.829948;
   _this setPos [485.03888, 1081.0292, -1.9073486e-006];
-};
-
-_vehicle_198 = objNull;
-if (true) then
-{
-  _this = createVehicle ["ACRE_RadioBox", [470.888, 1112.5718, -1.9073486e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_198 = _this;
-  _this setDir 144.19466;
-  _this setPos [470.888, 1112.5718, -1.9073486e-006];
-};
-
-_vehicle_199 = objNull;
-if (true) then
-{
-  _this = createVehicle ["ACRE_OE_303", [469.99954, 1110.0946, 9.5367432e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_199 = _this;
-  _this setDir 35.181255;
-  _this setPos [469.99954, 1110.0946, 9.5367432e-006];
 };
 
 _vehicle_201 = objNull;
