@@ -12,6 +12,7 @@ _textPartIn = (_this select 3) select 5;
 _textPartOut = (_this select 3) select 6;
 _traderID = (_this select 3) select 7;
 _bos = 0;
+_bulkqty = 0;
 
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;

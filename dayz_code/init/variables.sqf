@@ -53,6 +53,7 @@ pz_priest = "pz_priest";
 dayz_combatLog = "";
 canRoll = true;
 
+placevault = true;
 
 //Hunting Variables
 dayZ_partClasses = [

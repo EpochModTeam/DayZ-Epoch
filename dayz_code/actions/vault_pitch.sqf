@@ -4,7 +4,7 @@ call gear_ui_init;
 _playerPos = 	getPosATL player;
 _item = _this;
 _hastentitem = _this in magazines player;
-_location = player modeltoworld [0,2.5,0];
+_location = player modeltoworld [0,1,0];
 _location set [2,0];
 _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
@@ -19,6 +19,9 @@ if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"p
 
 //blocked
 if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
+if (isOnRoad _playerPos) then { _isOk = true; diag_log ("surface is road"); };
+if(!placevault) then { _isOk = true; diag_log ("is trader city"); };
+
 //Block Tents in pounds
 _objectsPond = 		nearestObjects [_playerPos, [], 10];
 	{

@@ -10,6 +10,9 @@ if (isNull _playerObj) exitWith {
 	diag_log ("SETUP INIT FAILED: Exiting, player object null: " + str(_playerObj));
 };
 
+//Add MPHit event handler
+_playerObj addMPEventHandler ["MPHit", {_this spawn fnc_plyrHit;}];
+
 if (_playerID == "") then {
 	_playerID = getPlayerUID _playerObj;
 };

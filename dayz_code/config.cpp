@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayepoch.com";
-		version = "0.85";
+		version = "0.87";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -83,20 +83,20 @@ class CfgInGameUI
 		colorEast[] = {0,0,0,0}; //{0.95,0.7,0.7,1};
 		colorCiv[] = {0,0,0,0}; //{0.8,0.8,0.8,1};
 		colorRes[] = {0,0,0,0}; //{0.7,0.7,0.95,1};
-		font = "EtelkaNarrowMediumPro";
-		size = "( 21 / 408 )"; //"( 21 / 408 )";
+		font = "";
+		size = ""; //"( 21 / 408 )";
 		class Columns
 		{
 			class Order
 			{
-				width = 0.046; //0.046;
-				colorBg[] = {0.1,0.27,0.1,0.8}; //{0.1,0.27,0.1,0.8};
+				width = 0; //0.046;
+				colorBg[] = {0,0,0,0}; //{0.1,0.27,0.1,0.8};
 				doubleLine = 0;
 			};
 			class Player
 			{
-				width = 0.25; //0.25;
-				colorBg[] = {0.1,0.23,0.1,0.8}; //{0.1,0.23,0.1,0.8};
+				width = 0; //0.25;
+				colorBg[] = {0,0,0,0}; //{0.1,0.23,0.1,0.8};
 				doubleLine = 0;
 			};
 			class KillsInfantry
@@ -136,9 +136,9 @@ class CfgInGameUI
 			};
 			class KillsTotal
 			{
-				width = 0.1; //0.1;
+				width = 0; //0.1;
 				doubleLine = 0;
-				colorBg[] = {0.1,0.35,0.1,0.9}; //{0.1,0.35,0.1,0.9};
+				colorBg[] = {0,0,0,0}; //{0.1,0.35,0.1,0.9};
 				picture = "\ca\ui\data\stats_total_ca.paa"; //"\ca\ui\data\stats_total_ca.paa";
 			};
 		};

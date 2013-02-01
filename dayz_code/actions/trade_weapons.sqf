@@ -1,5 +1,5 @@
-private["_iarray","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_isOk"];
-//		   [part_out,part_in, qty_out, qty_in,"buy"];
+private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_bulkItem","_bulkqty","_gold_out","_gold_qty_out","_partial_qty_out","_silver_qty_out","_needed","_activatingPlayer","_textPartIn","_textPartOut"];
+// [part_out,part_in, qty_out, qty_in,"buy"];
 
 _activatingPlayer = _this select 1;
 
@@ -12,6 +12,7 @@ _textPartIn = (_this select 3) select 5;
 _textPartOut = (_this select 3) select 6;
 _traderID = (_this select 3) select 7;
 _bos = 0;
+_bulkqty = 0;
 
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
@@ -47,8 +48,6 @@ if (_bulkqty >= 1) then {
 			diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
 		};
 	};
-
-	
 
 	_qty_out = _qty_out * 12;
 
@@ -96,11 +95,6 @@ if (_bulkqty >= 1) then {
 			player addMagazine _part_out;
 		};
 	};
-
-
-
-	
-
 	
 	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 

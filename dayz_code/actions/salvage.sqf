@@ -43,6 +43,8 @@ if (_hasToolbox) then {
 			cutText [format["You have successfully removed %1 from the %2",_namePart,_nameType], "PLAIN DOWN"];
 
 
+		} else {
+			cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 		};
 
 		
