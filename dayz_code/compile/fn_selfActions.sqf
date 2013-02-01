@@ -19,7 +19,9 @@ _hasmuttonRaw = 	"FoodmuttonRaw" in magazines player;
 _haschickenRaw = 	"FoodchickenRaw" in magazines player;
 _hasrabbitRaw = 	"FoodrabbitRaw" in magazines player;
 _hasbaconRaw = 		"FoodbaconRaw" in magazines player;
-_hasRawMeat = _hasSteakRaw or _hasmuttonRaw or _hasrabbitRaw or _hasbaconRaw;
+//Define all Raw food
+_hasRawMeat = _hasSteakRaw or _hasmuttonRaw or _haschickenRaw or _hasrabbitRaw or _hasbaconRaw;
+
 _hasKnife = 	"ItemKnife" in items player;
 _hasToolbox = 	"ItemToolbox" in items player;
 //_hasTent = 		"ItemTent" in items player;
@@ -169,7 +171,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		};
 	};
 	//Fireplace Actions check
-	if(inflamed cursorTarget and (_hasSteakRaw or _hasmuttonRaw or _hasrabbitRaw or _hasbaconRaw) and _canDo) then {
+	if(inflamed cursorTarget and (_hasSteakRaw or _hasmuttonRaw or _haschickenRaw or _hasrabbitRaw or _hasbaconRaw) and _canDo) then {
 		if (s_player_cook < 0) then {
 			s_player_cook = player addAction [localize "str_actions_self_05", "\z\addons\dayz_code\actions\cook.sqf",cursorTarget, 3, true, true, "", ""];
 		};

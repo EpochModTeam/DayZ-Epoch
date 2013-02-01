@@ -16,6 +16,13 @@ _bos = 0;
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
 } else {
+
+	// SELL ONLY check if item is bulk 
+	_bulkItem = "bulk_" + _part_in;
+	_bulkqty = {_x == _bulkItem} count magazines player;
+
+	diag_log format["DEBUG bulk: %1", _bulkItem];
+
 	_bos = 1;
 	_qty = 0;
 	_bag = unitBackpack player;
@@ -25,44 +32,120 @@ if(_buy_o_sell == "buy") then {
 	};
 };
 
-if (_qty >= _qty_in) then {
+if (_bulkqty >= 1) then {
+	
+	
+	// TODO: optimize for one db call only
+	
+	_part_in = "bulk_" + _part_in;
+	player removeMagazine _part_in;
+	diag_log format["DEBUG remove magazine %1", _part_in];
 
-	["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+	// increment trader for each
+	for "_x" from 1 to 12 do {
+		["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+		
+		waitUntil {!isNil "dayzTradeResult"};
 
-	diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
+		if(dayzTradeResult == "PASS") then {
+			diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+		};
+	};
 
-	waitUntil {!isNil "dayzTradeResult"};
+	_qty_out = _qty_out * 12;
 
-	diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+	// gold = 36 copper
+	// gold = 6 silver
+	// 
 
-	if(dayzTradeResult == "PASS") then {
-
-		if(_buy_o_sell == "buy") then {
-			for "_x" from 1 to _qty_in do {
-				player removeMagazine _part_in;
+	if (_part_out == "ItemSilverBar") then {
+		
+		if (_qty_out >= 6) then {
+	
+			// find number of gold
+			_gold_out = _qty_out / 6;
+			
+			// whole number of gold bars
+			_gold_qty_out = floor _gold_out;
+			
+			_part_out = "ItemGoldBar";
+			for "_x" from 1 to _gold_qty_out do {
+				player addMagazine _part_out;
 			};
-			removeBackpack player;
-			player addBackpack _part_out;
+
+			// Find remainder 
+			_partial_qty_out = (_gold_out - _gold_qty_out) * 6;
+			
+			// whole number of gold bars
+			_silver_qty_out = floor _partial_qty_out;
+
+			_part_out = "ItemSilverBar";
+			for "_x" from 1 to _silver_qty_out do {
+				player addMagazine _part_out;
+			};
+
+
 		} else {
-			// Sell
+		
 			for "_x" from 1 to _qty_out do {
 				player addMagazine _part_out;
-			};	
-			removeBackpack player;
-			// player addBackpack _part_out;
+			};
 		};
 
-		cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+	} else {
+		
+		for "_x" from 1 to _qty_out do {
+			player addMagazine _part_out;
+		};
+	};
 	
-		{player removeAction _x} forEach s_player_parts;s_player_parts = [];
-		s_player_parts_crtl = -1;
+	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+
+	dayzTradeResult = nil;
+
+
+} else {
+
+
+	if (_qty >= _qty_in) then {
+
+		["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+
+		diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
+
+		waitUntil {!isNil "dayzTradeResult"};
+
+		diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+
+		if(dayzTradeResult == "PASS") then {
+
+			if(_buy_o_sell == "buy") then {
+				for "_x" from 1 to _qty_in do {
+					player removeMagazine _part_in;
+				};
+				removeBackpack player;
+				player addBackpack _part_out;
+			} else {
+				// Sell
+				for "_x" from 1 to _qty_out do {
+					player addMagazine _part_out;
+				};	
+				removeBackpack player;
+				// player addBackpack _part_out;
+			};
+
+			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+	
+			{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+			s_player_parts_crtl = -1;
+	
+		} else {
+			cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+		};
+		dayzTradeResult = nil;
 	
 	} else {
-		cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+		_needed =  _qty_in - _qty;
+		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 	};
-	dayzTradeResult = nil;
-	
-} else {
-	_needed =  _qty_in - _qty;
-	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 };

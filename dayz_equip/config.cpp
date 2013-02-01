@@ -1115,6 +1115,49 @@ class CfgMagazines
 		displayName = "Civilian (female)";
 		descriptionShort = "Civilian (female)";
 	};
+
+	class Skin_TK_INS_Warlord_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Takistani Warlord";
+		descriptionShort = "Takistani Warlord";
+	};
+	class Skin_TK_INS_Soldier_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Takistani Soldier";
+		descriptionShort = "Takistani Soldier";
+	};
+	class Skin_CZ_Special_Forces_GL_DES_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Special Forces";
+		descriptionShort = "Special Forces";
+	};
+	class Skin_Drake_Light_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Desert Camo";
+		descriptionShort = "Desert Camo";
+	};
+	class Skin_Soldier_Bodyguard_AA12_PMC_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bodyguard";
+		descriptionShort = "Bodyguard";
+	};
+	class Skin_Soldier_Sniper_PMC_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Marksman";
+		descriptionShort = "Marksman";
+	};
+	class Skin_Soldier_TL_PMC_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Team Leader";
+		descriptionShort = "Team Leader";
+	};
 	
 	
 	
@@ -1478,25 +1521,36 @@ class CfgMagazines
 		picture = "\dayz_equip\textures\equip_jerrycan_e_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_39";
 	};
-	class bulk_NVGoggles: CA_Magazine
+	
+	class bulk: CA_Magazine
 	{
 		scope = 2;
-		count = 12;
+		count = 1;
 		type = "(256 * 6)";
 		displayName = "Supply Crate";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		descriptionShort = "12 x Random Item";
+	};
+	class bulk_NVGoggles: bulk
+	{
 		descriptionShort = "12 x NV Goggles";
 	};
-	class bulk_30Rnd_9x19_MP5SD: CA_Magazine
+	class bulk_DZ_Backpack_EP1: bulk
 	{
-		scope = 2;
-		count = 12;
-		type = "(256 * 6)";
-		displayName = "Supply Crate";
-		model = "\dayz_equip\models\supply_crate.p3d";
-		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		descriptionShort = "12 x DZ_Backpack_EP1";
+	};
+	class bulk_30Rnd_9x19_MP5SD: bulk
+	{
 		descriptionShort = "12 x 30Rnd_9x19_MP5SD";
+	};
+	class bulk_15Rnd_9x19_M9SD: bulk
+	{
+		descriptionShort = "12 x 15Rnd_9x19_M9SD";
+	};
+	class bulk_30Rnd_556x45_StanagSD: bulk
+	{
+		descriptionShort = "12 x 30Rnd_556x45_StanagSD";
 	};
 	class ItemGenerator: CA_Magazine
 	{

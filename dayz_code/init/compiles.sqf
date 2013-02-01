@@ -219,12 +219,16 @@ if (!isDedicated) then {
 		_success
 	};
 	
-	
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];
+		_DisplayOrDialogOrControl = _this select 0;
 		_dikCode = 	_this select 1;
+		_shiftState = _this select 2;
+		_ctrlState =  _this select 3;
+		_altState =   _this select 4;
 		_handled = false;
 		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",500]) > 1);
+		
 		if (_dikCode in (actionKeys "GetOver")) then {
 			if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
 				canRoll = false;
@@ -276,14 +280,13 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			[player,15,false,(getPosATL player)] spawn player_alertZombies;
 		};
-		/*
+		
 		if ((_dikCode == 0x38 or _dikCode == 0xB8) and (time - dayz_lastCheckBit > 10)) then {
 			call dayz_forceSave;
 		};
+		/*
 		if (_dikCode in actionKeys "IngamePause") then {
-			call dayz_forceSave;
-			_id = [] spawn dayz_disableRespawn;
-			_id = [] spawn dayz_disableAbort;
+			_idOnPause = [] spawn dayz_onPause;
 		};
 		*/
 		_handled

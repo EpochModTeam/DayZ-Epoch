@@ -32,7 +32,6 @@ _config = (configFile >> _type >> _classname);
 _isOk = [player,_config] call BIS_fnc_invAdd;
 if (_isOk) then {
 	deleteVehicle _holder;
-/*
 	if (_classname in ["MeleeHatchet","MeleeCrowbar"]) then {
 
 		if (_type == "cfgWeapons") then {
@@ -45,7 +44,6 @@ if (_isOk) then {
 			};
 		};
 	};
-*/
 } else {
 	_holder setVariable["claimed",0,true];
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];

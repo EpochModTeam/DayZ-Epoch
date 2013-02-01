@@ -470,7 +470,7 @@ class Citizen1;	// External class reference
 	};
 	class Rocker2;
 	class Rocker2_DZ: Rocker2 {
-		displayName = "Rocker Outfit";
+		displayName = "Rocker";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -481,10 +481,10 @@ class Citizen1;	// External class reference
 		canHideBodies = 1;
 		canCarryBackPack = 1;
 	};
-	
-	class BAF_Soldier_W;
-	class Soldier1_DZ: BAF_Soldier_W {
-		displayName = "Soldier";
+
+	class TK_INS_Warlord_EP1;
+	class TK_INS_Warlord_EP1_DZ: TK_INS_Warlord_EP1 {
+		displayName = "Takistani Warlord";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -494,6 +494,85 @@ class Citizen1;	// External class reference
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
+	
+	class TK_INS_Soldier_EP1;
+	class TK_INS_Soldier_EP1_DZ: TK_INS_Soldier_EP1 {
+		displayName = "Takistani Soldier";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+		
+	class CZ_Special_Forces_GL_DES_EP1;
+	class CZ_Special_Forces_GL_DES_EP1_DZ: CZ_Special_Forces_GL_DES_EP1 {
+		displayName = "Special Forces";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+		
+	class Drake_Light;
+	class Drake_Light_DZ: Drake_Light {
+		displayName = "Desert Camo";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Soldier_Bodyguard_AA12_PMC;
+	class Soldier_Bodyguard_AA12_PMC_DZ: Soldier_Bodyguard_AA12_PMC {
+		displayName = "Bodyguard";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+	class Soldier_Sniper_PMC;
+	class Soldier_Sniper_PMC_DZ: Soldier_Sniper_PMC {
+		displayName = "Marksman";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};	
+	class Soldier_TL_PMC;
+	class Soldier_TL_PMC_DZ: Soldier_TL_PMC {
+		displayName = "Team Leader";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+	};
+
+
+
+
 	class BAF_Soldier_SniperH_W;
 	class Sniper1_DZ: BAF_Soldier_SniperH_W {
 		displayName = "Sniper";

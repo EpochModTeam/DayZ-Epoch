@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayepoch.com";
-		version = "0.84";
+		version = "0.85";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -50,6 +50,19 @@ class CfgAddons
 			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons"};
 		};
 	};
+};
+
+class CfgAISkill {
+	aimingaccuracy[] = {0, 0, 1, 1};
+	aimingshake[] = {0, 0, 1, 1};
+	aimingspeed[] = {0, 0, 1, 1};
+	commanding[] = {0, 0, 1, 1};
+	courage[] = {0, 0, 1, 1};
+	endurance[] = {0, 0, 1, 1};
+	general[] = {0, 0, 1, 1};
+	reloadspeed[] = {0, 0, 1, 1};
+	spotdistance[] = {0, 0, 1, 1};
+	spottime[] = {0, 0, 1, 1};
 };
 
 class CfgInGameUI
@@ -71,19 +84,19 @@ class CfgInGameUI
 		colorCiv[] = {0,0,0,0}; //{0.8,0.8,0.8,1};
 		colorRes[] = {0,0,0,0}; //{0.7,0.7,0.95,1};
 		font = "EtelkaNarrowMediumPro";
-		size = "0"; //"( 21 / 408 )";
+		size = "( 21 / 408 )"; //"( 21 / 408 )";
 		class Columns
 		{
 			class Order
 			{
-				width = 0; //0.046;
-				colorBg[] = {0,0,0,0}; //{0.1,0.27,0.1,0.8};
+				width = 0.046; //0.046;
+				colorBg[] = {0.1,0.27,0.1,0.8}; //{0.1,0.27,0.1,0.8};
 				doubleLine = 0;
 			};
 			class Player
 			{
-				width = 0; //0.25;
-				colorBg[] = {0,0,0,0}; //{0.1,0.23,0.1,0.8};
+				width = 0.25; //0.25;
+				colorBg[] = {0.1,0.23,0.1,0.8}; //{0.1,0.23,0.1,0.8};
 				doubleLine = 0;
 			};
 			class KillsInfantry
@@ -123,10 +136,10 @@ class CfgInGameUI
 			};
 			class KillsTotal
 			{
-				width = 0; //0.1;
+				width = 0.1; //0.1;
 				doubleLine = 0;
-				colorBg[] = {0,0,0,0}; //{0.1,0.35,0.1,0.9};
-				picture = ""; //"\ca\ui\data\stats_total_ca.paa";
+				colorBg[] = {0.1,0.35,0.1,0.9}; //{0.1,0.35,0.1,0.9};
+				picture = "\ca\ui\data\stats_total_ca.paa"; //"\ca\ui\data\stats_total_ca.paa";
 			};
 		};
 	};
@@ -195,14 +208,19 @@ class CfgSurvival {
 		class Cow02: Cow{};
 		class Cow03: Cow{};
 		class Cow04: Cow{};
+		class Cow01_EP1: Cow{};
 		class Goat: Default {
 			yield = 4;
 			rawfoodtype = "FoodSteakRaw";
 		};
+		class Goat01_EP1: Goat{};
+		class Goat02_EP1: Goat{};
 		class Sheep: Default {
 			yield = 4;
 			rawfoodtype = "FoodmuttonRaw";
 		};
+		class Sheep01_EP1: Sheep{};
+		class Sheep02_EP1: Sheep{};
 		class WildBoar: Default {
 			yield = 4;
 			rawfoodtype = "FoodbaconRaw";
@@ -211,14 +229,17 @@ class CfgSurvival {
 			yield = 4;
 			rawfoodtype = "FoodchickenRaw";
 		};
-		class Cock: Default {
-			yield = 4;
-			rawfoodtype = "FoodchickenRaw";
+		class Cock: Hen{};
+		class DZ_Fin: Default {
+			yield = 0;
+			rawfoodtype = "FoodSteakRaw";
 		};
+		class DZ_Pastor: DZ_Fin{};
 		class Rabbit: Default {
 			yield = 4;
 			rawfoodtype = "FoodrabbitRaw";
 		};
+
 	};
 	class Skins {
 		class Default {
@@ -296,6 +317,40 @@ class CfgSurvival {
 		class Skin_SurvivorW3_DZ: Default {
 			sex = "female";
 			playerModel = "SurvivorW3_DZ";
+		};
+		class Skin_Soldier_TL_PMC_DZ: Default {
+			sex = "male";
+			playerModel = "Soldier_TL_PMC_DZ";
+		};
+		
+		class Skin_Soldier_Sniper_PMC_DZ: Default {
+			sex = "male";
+			playerModel = "Soldier_Sniper_PMC_DZ";
+		};
+		
+		class Skin_Soldier_Bodyguard_AA12_PMC_DZ: Default {
+			sex = "male";
+			playerModel = "Soldier_Bodyguard_AA12_PMC_DZ";
+		};
+		
+		class Skin_Drake_Light_DZ: Default {
+			sex = "male";
+			playerModel = "Drake_Light_DZ";
+		};
+		
+		class Skin_CZ_Special_Forces_GL_DES_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "CZ_Special_Forces_GL_DES_EP1_DZ";
+		};
+		
+		class Skin_TK_INS_Soldier_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_INS_Soldier_EP1_DZ";
+		};
+		
+		class Skin_TK_INS_Warlord_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_INS_Warlord_EP1_DZ";
 		};
 		
 
@@ -573,7 +628,10 @@ class CfgBuildingLoot {
 			{"G36K_camo","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
 			{ "Skin_Rocket_DZ","magazine" },
-			{ "Skin_Soldier1_DZ","magazine" }
+			{ "Skin_Soldier1_DZ","magazine" },
+			{ "Skin_Soldier_TL_PMC_DZ","magazine" },
+			{ "Skin_Soldier_Sniper_PMC_DZ","magazine" },
+			{ "Skin_Soldier_Bodyguard_AA12_PMC_DZ","magazine" },
 };
 		itemChance[] =	{
 			0.02,		//{"FN_FAL","weapon"},
@@ -601,7 +659,10 @@ class CfgBuildingLoot {
 			0.02,	//G36K_camo
 			0.01,	//("100Rnd_762x54_PK","magazine"}
 			0.01,
-			0.05
+			0.05,
+			0.02, // Skin_Soldier_TL_PMC_DZ
+			0.02, // Skin_Soldier_Sniper_PMC_DZ
+			0.02, // Skin_Soldier_Bodyguard_AA12_PMC_DZ
 	};
 	};
 class HeliCrash_No50s: Default {
@@ -841,6 +902,10 @@ class HeliCrash_No50s: Default {
 			{ "Skin_Bandit1_DZ","magazine" },
 			{ "Skin_BanditW1_DZ","magazine" },
 			{ "Skin_BanditW2_DZ","magazine" },
+			{ "Skin_Drake_Light_DZ","magazine" },
+			{ "Skin_CZ_Special_Forces_GL_DES_EP1_DZ","magazine" },
+			{ "Skin_TK_INS_Soldier_EP1_DZ","magazine" },
+			{ "Skin_TK_INS_Warlord_EP1","magazine" },
 	};
 		itemChance[] =	{
 			0.10,
@@ -899,6 +964,10 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.03,
 			0.01,
 		};
 	};

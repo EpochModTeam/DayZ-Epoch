@@ -8,6 +8,8 @@ _playerObj = _this select 1;
 _playerName = name _playerObj;
 _worldspace = [];
 
+if (_playerName == '__SERVER__' || _playerID == '' || local player) exitWith {};
+
 if (count _this > 2) then {
 	dayz_players = dayz_players - [_this select 2];
 };

@@ -2,6 +2,18 @@
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
+_script = getText(missionConfigFile >> "onPauseScript");
+
+if (_script != "") then
+{
+	diag_log "MISSION: File Updated";
+} else {
+	while {true} do
+	{
+		diag_log "MISSION: File Needs Updating";
+		sleep 1;
+	};
+};
 
 serverVehicleCounter = [];
 
