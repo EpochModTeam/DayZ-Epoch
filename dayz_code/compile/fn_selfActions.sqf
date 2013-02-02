@@ -199,10 +199,17 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 
 	//Allow owner to unlock vault
-	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo and _ownerID == dayz_playerUID) then {
-		if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
-			s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
+	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo) then {
+		if (_ownerID == dayz_playerUID) then {
+			if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
+				s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
+			};	
+		} else { 
+			if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
+				s_player_unlockvault = player addAction ["Crack Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
+			};
 		};
+		
 	} else {
 		player removeAction s_player_unlockvault;
 		s_player_unlockvault = -1;

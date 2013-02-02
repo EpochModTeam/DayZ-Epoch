@@ -11,7 +11,20 @@ player playActionNow "Medic";
 player removeAction s_player_unlockvault;
 s_player_unlockvault = -1;
 
-if(_ownerID == dayz_playerUID) then {
+_allowunlock = false;
+if (_ownerID == dayz_playerUID) then {
+	_allowunlock = true;
+} else {
+	
+	// do random roll to try to unlock vault
+	// start low to test figure out what works later
+	if(round (random 100) == 1) then {
+		_allowunlock = true;
+	};
+
+};
+
+if(_allowunlock) then {
 	_alreadyPacking = _obj getVariable["packing",0];
 
 	if (_alreadyPacking == 1) exitWith {cutText ["That vault is already being unlocked." , "PLAIN DOWN"]};
@@ -75,7 +88,7 @@ if(_ownerID == dayz_playerUID) then {
 		} forEach _objWpnTypes;
 	};
 	
-	cutText ["Your vault has been unlocked", "PLAIN DOWN"];
+	cutText ["This vault has been unlocked", "PLAIN DOWN"];
 } else {
-	cutText ["You cannot unlock this vault, it is not yours", "PLAIN DOWN"];
+	cutText ["Combination incorrect, vault is still locked.", "PLAIN DOWN"];
 };
