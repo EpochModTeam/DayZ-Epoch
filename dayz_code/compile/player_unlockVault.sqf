@@ -9,7 +9,6 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 player playActionNow "Medic";
 
 player removeAction s_player_unlockvault;
-s_player_unlockvault = -1;
 
 _allowunlock = false;
 if (_ownerID == dayz_playerUID) then {
@@ -18,7 +17,7 @@ if (_ownerID == dayz_playerUID) then {
 	
 	// do random roll to try to unlock vault
 	// start low to test figure out what works later
-	if(round (random 100) == 1) then {
+	if(round (random 100000) == 1337) then {
 		_allowunlock = true;
 	};
 
@@ -34,8 +33,10 @@ if(_allowunlock) then {
 	_dir = direction _obj;
 	// _pos = getposATL _obj;
 	_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
+	player playActionNow "Medic";
+	sleep 1;
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
-	sleep 3;
+	sleep 5;
 
 	//place tent (local)
 	_holder = createVehicle ["VaultStorage",_pos,[], 0, "CAN_COLLIDE"];
@@ -90,5 +91,12 @@ if(_allowunlock) then {
 	
 	cutText ["This vault has been unlocked", "PLAIN DOWN"];
 } else {
+	player playActionNow "Medic";
+	sleep 1;
+	[player,"repair",0,false] call dayz_zombieSpeak;
+	null = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+	sleep 5;
 	cutText ["Combination incorrect, vault is still locked.", "PLAIN DOWN"];
 };
+
+s_player_unlockvault = -1;
