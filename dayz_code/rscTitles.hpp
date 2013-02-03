@@ -87,7 +87,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Epoch 0.91 (1.7.5)";
+			text = "DayZ Epoch 0.916 (1.7.5)";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		class CA_TitleMainMenu;
