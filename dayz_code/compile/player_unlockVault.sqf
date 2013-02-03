@@ -106,7 +106,7 @@ if(_allowunlock) then {
 	player playActionNow "Medic";
 	sleep 3;
 	[player,"repair",0,false] call dayz_zombieSpeak;
-	null = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+	null = [player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;
 	cutText ["Combination incorrect, vault is still locked.", "PLAIN DOWN"];
 };

@@ -211,7 +211,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	
 	//Packing my tent
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
-		if ((s_player_packtent < 0) and (player distance cursorTarget < 3)) then {
+		if (s_player_packtent < 0) then {
 			s_player_packtent = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",cursorTarget, 0, false, true, "",""];
 		};
 	} else {
@@ -222,12 +222,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	//Allow owner to unlock vault
 	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo and _ownerID != "0") then {
 		if (_ownerID == dayz_playerUID) then {
-			if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
+			if (s_player_unlockvault < 0) then {
 				s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 			};	
 		} else { 
 			if(_hasToolbox) then{
-				if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
+				if (s_player_unlockvault < 0) then {
 					s_player_unlockvault = player addAction ["Crack Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 				};
 			};
@@ -240,11 +240,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 
 	//Allow owner to pack vault
 	if(cursorTarget isKindOf "VaultStorage" and _canDo and _ownerID != "0" and _ownerID == dayz_playerUID) then {
-		if ((s_player_packvault < 0) and (player distance cursorTarget < 3)) then {
-			s_player_packvault = player addAction ["Pack Vault", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
-		};
+
 		if ((s_player_lockvault < 0) and (player distance cursorTarget < 3)) then {
 			s_player_lockvault = player addAction ["Lock Vault", "\z\addons\dayz_code\actions\vault_lock.sqf",cursorTarget, 0, false, true, "",""];
+		};
+		if ((s_player_packvault < 0) and (player distance cursorTarget < 3)) then {
+			s_player_packvault = player addAction ["<t color='#ff0000'>Pack Vault</t>", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_packvault;
@@ -300,9 +301,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 
 
 	// All Traders
-	if (_isMan and !_isPZombie and (s_last_trader != _traderType) and _traderType in serverTraders) then {
-		
-		s_last_trader = _traderType;
+	if (_isMan and !_isPZombie and _traderType in serverTraders) then {
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -350,7 +349,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	} else {
 		{player removeAction _x} forEach s_player_parts;s_player_parts = [];
 		s_player_parts_crtl = -1;
-		s_last_trader = objNUll
 	};
 
 
@@ -434,7 +432,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 
 	//s_player_madsci_crtl = -1;
 	s_player_parts_crtl = -1;
-	s_last_trader = objNull;
+	dayz_myCursorTarget = objNull;
 
 	// lock unlock vehicles
 	s_player_lockUnlock_crtl = -1;

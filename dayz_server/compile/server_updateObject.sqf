@@ -150,8 +150,11 @@ switch (_type) do {
 		if ( (time - _lastUpdate) > 5) then {
 			call _object_damage;
 		} else {
-		diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
+		
+			if(_object not in needUpdate_objects) then {
+				diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
 				needUpdate_objects set [count needUpdate_objects, _object];
+			};
 		};
 	};
 	case "killed": {
