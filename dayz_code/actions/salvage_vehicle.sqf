@@ -61,6 +61,5 @@ if(count _hitpoints > 0 ) then {
 	
 	_cancel = dayz_myCursorTarget addAction ["Cancel", "\z\addons\dayz_code\actions\repair_cancel.sqf","repair", 0, true, false, "",""];
 	s_player_repairActions set [count s_player_repairActions,_cancel];
-
 	s_player_repair_crtl = 1;
 };
