@@ -544,7 +544,7 @@ class FSM
        "selectNoPlayer;" \n
        "" \n
        "_myTime = time;" \n
-       "1 cutText [""This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ staff."", ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
+       "1 cutText [""This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZepoch.com staff."", ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

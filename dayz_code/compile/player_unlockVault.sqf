@@ -1,7 +1,7 @@
 /*
 [_obj] spawn player_unlockVault;
 */
-private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_allowunlock","_alreadyPacking","_item","_hasToolbox"];
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -10,6 +10,10 @@ player playActionNow "Medic";
 
 player removeAction s_player_unlockvault;
 
+_item = "ItemToolbox";
+_hasToolbox = 	_item in items player;
+
+
 _allowunlock = false;
 if (_ownerID == dayz_playerUID) then {
 	_allowunlock = true;
@@ -17,10 +21,18 @@ if (_ownerID == dayz_playerUID) then {
 	
 	// do random roll to try to unlock vault
 	// start low to test figure out what works later
-	if(round (random 100000) == 1337) then {
-		_allowunlock = true;
+	if(_hasToolbox) then {
+		if(floor (random 10000) == 1337) then {
+			_allowunlock = true;
+			
+		};
+		// Chance to break toolbox randomly
+		if(floor (random 15) == 1) then {
+			player removeWeapon _item;
+			cutText ["Your toolbox is now broken, you will need to find another one.", "PLAIN DOWN"];
+		};
 	};
-
+	
 };
 
 if(_allowunlock) then {
@@ -92,7 +104,7 @@ if(_allowunlock) then {
 	cutText ["This vault has been unlocked", "PLAIN DOWN"];
 } else {
 	player playActionNow "Medic";
-	sleep 1;
+	sleep 3;
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	null = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;

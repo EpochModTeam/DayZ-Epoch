@@ -65,14 +65,13 @@ if(_isPZombie) then {
 };
 
 
-if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4)) then {	//Has some kind of target
+if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6)) then {	//Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
 	_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
 	_isMan = cursorTarget isKindOf "Man";
 	_traderType = typeOf cursorTarget;
 	_ownerID = cursorTarget getVariable ["characterID","0"];
-	diag_log ("owner = " + str(_ownerID) + " of " + str(cursorTarget));
 	_isAnimal = cursorTarget isKindOf "Animal";
 	_isDog =  (cursorTarget isKindOf "DZ_Pastor" || cursorTarget isKindOf "DZ_Fin");
 	_isZombie = cursorTarget isKindOf "zZombie_base";
@@ -94,7 +93,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	if (_hasFuelE) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army");
 	};
-	//diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
+	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
 	
 	//Allow player to delete objects
 	if(_isDestructable and _hasToolbox and _canDo) then {
@@ -227,8 +226,10 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 				s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 			};	
 		} else { 
-			if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
-				s_player_unlockvault = player addAction ["Crack Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
+			if(_hasToolbox) then{
+				if ((s_player_unlockvault < 0) and (player distance cursorTarget < 3)) then {
+					s_player_unlockvault = player addAction ["Crack Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
+				};
 			};
 		};
 		
@@ -273,7 +274,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		if (s_player_repair_crtl < 0) then {
 			
 			_vehicle = cursorTarget;
-
 			dayz_myCursorTarget = _vehicle;
 
 			_menu = dayz_myCursorTarget addAction ["Repair Vehicle", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_vehicle, 0, true, false, "",""];
@@ -300,13 +300,9 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 
 	// All Traders
-	if (_isMan and !_isPZombie and _traderType in serverTraders) then {
-
-		if((!isNil "s_last_trader") and s_player_parts_crtl == 1) then {
-			if(s_last_trader != _traderType) then {
-				s_player_parts_crtl -1;
-			};
-		};
+	if (_isMan and !_isPZombie and (s_last_trader != _traderType) and _traderType in serverTraders) then {
+		
+		s_last_trader = _traderType;
 		
 		if (s_player_parts_crtl < 0) then {
 
@@ -349,11 +345,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 				
 			};
 			s_player_parts_crtl = 1;
-			s_last_trader = _traderType;
+			
 		};
 	} else {
 		{player removeAction _x} forEach s_player_parts;s_player_parts = [];
 		s_player_parts_crtl = -1;
+		s_last_trader = objNUll
 	};
 
 
@@ -437,7 +434,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 	//s_player_madsci_crtl = -1;
 	s_player_parts_crtl = -1;
-	s_last_trader = -1;
+	s_last_trader = objNull;
 
 	// lock unlock vehicles
 	s_player_lockUnlock_crtl = -1;
