@@ -49,6 +49,9 @@ pz_villager2 = "pz_villager2";
 pz_villager3 = "pz_villager3";
 pz_priest = "pz_priest";
 
+//Cooking
+meatraw = ["FoodBioMeat", "FoodSteakRaw",	"FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
+meatcooked = ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
 
 dayz_combatLog = "";
 canRoll = true;
@@ -89,6 +92,7 @@ Dayz_GUI_B = 0.26; // -0.26
 dayz_resetSelfActions = {
 	s_player_fire =			-1;
 	s_player_cook =			-1;
+	s_player_boil =			-1;
 	s_player_fireout =		-1;
 	s_player_butcher =		-1;
 	s_player_packtent = 	-1;

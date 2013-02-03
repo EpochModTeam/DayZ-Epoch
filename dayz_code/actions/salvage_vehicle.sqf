@@ -49,7 +49,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 		if( _part == "PartGlass" or _part == "PartWheel" ) then {
 
 			_color = "color='#ff0000'"; //red		
-			_string = format["<t %2>Remove %1</t>",_cmpt,_color]; //Remove - Part
+			_string = format["<t %2>Remove%1</t>",_cmpt,_color]; //Remove - Part
 			_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\salvage.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
 			s_player_repairActions set [count s_player_repairActions,_handle];
 		};

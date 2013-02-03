@@ -32,8 +32,8 @@ class CfgMods
 		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
-		action = "http://www.dayepoch.com";
-		version = "0.891";
+		action = "http://www.dayzepoch.com";
+		version = "0.9";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -72,7 +72,6 @@ class CfgInGameUI
         cueColor[] = {0,0,0,0};
     };
 
-	
 	class MPTable
 	{
 		color[] = {0,0,0,0}; //{0.7,0.7,0.7,1};
@@ -83,8 +82,8 @@ class CfgInGameUI
 		colorEast[] = {0,0,0,0}; //{0.95,0.7,0.7,1};
 		colorCiv[] = {0,0,0,0}; //{0.8,0.8,0.8,1};
 		colorRes[] = {0,0,0,0}; //{0.7,0.7,0.95,1};
-		font = "";
-		size = ""; //"( 21 / 408 )";
+		font = "EtelkaNarrowMediumPro";
+		size = "0"; //"( 21 / 408 )";
 		class Columns
 		{
 			class Order
@@ -139,7 +138,7 @@ class CfgInGameUI
 				width = 0; //0.1;
 				doubleLine = 0;
 				colorBg[] = {0,0,0,0}; //{0.1,0.35,0.1,0.9};
-				picture = "\ca\ui\data\stats_total_ca.paa"; //"\ca\ui\data\stats_total_ca.paa";
+				picture = ""; //"\ca\ui\data\stats_total_ca.paa";
 			};
 		};
 	};
@@ -198,11 +197,11 @@ class CfgSurvival {
 	class Meat {
 		class Default {
 			yield = 2;
-			rawfoodtype = "FoodSteakRaw";
+			rawfoodtype = "FoodmeatRaw";
 		};
 		class Cow: Default {
-			yield = 8;
-			rawfoodtype = "FoodSteakRaw";
+			yield = 6;
+			rawfoodtype = "FoodbeefRaw";
 		};
 		class Cow01: Cow{};
 		class Cow02: Cow{};
@@ -211,7 +210,7 @@ class CfgSurvival {
 		class Cow01_EP1: Cow{};
 		class Goat: Default {
 			yield = 4;
-			rawfoodtype = "FoodSteakRaw";
+			rawfoodtype = "FoodmuttonRaw";
 		};
 		class Goat01_EP1: Goat{};
 		class Goat02_EP1: Goat{};
@@ -226,7 +225,7 @@ class CfgSurvival {
 			rawfoodtype = "FoodbaconRaw";
 		};
 		class Hen: Default {
-			yield = 4;
+			yield = 2;
 			rawfoodtype = "FoodchickenRaw";
 		};
 		class Cock: Hen{};
@@ -236,7 +235,7 @@ class CfgSurvival {
 		};
 		class DZ_Pastor: DZ_Fin{};
 		class Rabbit: Default {
-			yield = 4;
+			yield = 1;
 			rawfoodtype = "FoodrabbitRaw";
 		};
 

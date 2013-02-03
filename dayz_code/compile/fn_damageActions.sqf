@@ -196,9 +196,6 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 			r_player_actions set [count r_player_actions,_action];
 		};
 	};
-	
-
-	
 	if (r_action) then {
 		r_action_targets = r_action_targets + [_unit];
 	};

@@ -13,9 +13,7 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 		_isDead = !alive player;
 		
 		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true;};
-		if(_isDead) exitwith {_btnAbort ctrlEnable true;};
 		
-		sleep 1;
 		while {!isNull _display} do {
 			switch true do {
 				case ({isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1) : {
