@@ -15,7 +15,7 @@ _hasfooditem = _item in magazines player;
 //_rawfood = _item in ["FoodSteakRaw","FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
 //_cookedfood = _item in ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
 _rawfood = _item in meatraw;
-_cookedfood = item in meatcooked;
+_cookedfood = _item in meatcooked;
 
 _config =	configFile >> "CfgMagazines" >> _item;
 _text = 	getText (_config >> "displayName");

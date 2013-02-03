@@ -13,17 +13,10 @@ _classbag = typeOf _bag;
 _isWater = 		(surfaceIsWater (position player)) or dayz_isSwimming;
 _hasAntiB = 	"ItemAntibiotic" in magazines player;
 _hasFuelE = 	"ItemJerrycanEmpty" in magazines player;
-//RawFood
-_hasSteakRaw = 		"FoodSteakRaw" in magazines player;	
-_hasmuttonRaw = 	"FoodmuttonRaw" in magazines player;
-_haschickenRaw = 	"FoodchickenRaw" in magazines player;
-_hasrabbitRaw = 	"FoodrabbitRaw" in magazines player;
-_hasbaconRaw = 		"FoodbaconRaw" in magazines player;
 //boiled Water
 _hasbottleitem = "ItemWaterbottle" in magazines player;
 _hastinitem = ("TrashTinCan" in magazines player) or ("ItemSodaEmpty" in magazines player);
-//Define all Raw food
-_hasRawMeat = _hasSteakRaw or _hasmuttonRaw or _haschickenRaw or _hasrabbitRaw or _hasbaconRaw;
+
 
 _hasKnife = 	"ItemKnife" in items player;
 _hasToolbox = 	"ItemToolbox" in items player;
@@ -183,7 +176,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 		};
 	};
 	//Fireplace Actions check
-	if(inflamed _cursor and _hasRawMeat and _canDo) then {
+	if (inflamed cursorTarget and _hasRawMeat and _canDo) then {
 		if (s_player_cook < 0) then {
 			s_player_cook = player addAction [localize "str_actions_self_05", "\z\addons\dayz_code\actions\cook.sqf",cursorTarget, 3, true, true, "", ""];
 		};
@@ -191,9 +184,9 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 		player removeAction s_player_cook;
 		s_player_cook = -1;
 	};
-	if(inflamed _cursor and (_hasbottleitem and  _hastinitem) and _canDo) then {
+	if (inflamed cursorTarget and (_hasbottleitem and _hastinitem) and _canDo) then {
 		if (s_player_boil < 0) then {
-			s_player_boil = player addAction [localize "str_actions_boilwater", "\z\addons\dayz_code\actions\boil.sqf",_cursor, 3, true, true, "", ""];
+			s_player_boil = player addAction [localize "str_actions_boilwater", "\z\addons\dayz_code\actions\boil.sqf",cursorTarget, 3, true, true, "", ""];
 		};
 	} else {
 		player removeAction s_player_boil;
@@ -211,7 +204,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	
 	//Packing my tent
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
-		if (s_player_packtent < 0) then {
+		if ((s_player_packtent < 0) and (player distance cursorTarget < 3)) then {
 			s_player_packtent = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",cursorTarget, 0, false, true, "",""];
 		};
 	} else {
@@ -432,7 +425,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 
 	//s_player_madsci_crtl = -1;
 	s_player_parts_crtl = -1;
-	dayz_myCursorTarget = objNull;
 
 	// lock unlock vehicles
 	s_player_lockUnlock_crtl = -1;

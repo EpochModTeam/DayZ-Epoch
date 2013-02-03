@@ -10,8 +10,8 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 		_btnAbort ctrlEnable false;
 		_timeOut = 0;
 		_timeMax = 30;
-		_isDead = !alive player;
 		
+		if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
 		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true;};
 		
 		while {!isNull _display} do {
@@ -20,14 +20,12 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 					_btnAbort ctrlEnable false;
 					cutText ["Cannot Abort near another player!", "PLAIN DOWN"];
 				};
-				/*
 				case (_timeOut < _timeMax && count (player nearEntities ["zZombie_Base", 50]) > 0) : {
 					_btnAbort ctrlEnable false;
 					cutText [format ["Can Abort in %1", (_timeMax - _timeOut)], "PLAIN DOWN"];
 					_timeOut = _timeOut + 1;
 
 				};
-				*/
 				case (player getVariable["combattimeout", 0] >= time) : {
 					_btnAbort ctrlEnable false;
 					cutText ["Cannot Abort while in combat!", "PLAIN DOWN"];

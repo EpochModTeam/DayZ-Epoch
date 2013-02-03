@@ -721,6 +721,15 @@
 			<Dutch>Biefstuk koken</Dutch>
 			<French>Cuire la Viande</French>
 		</Key>
+		<Key ID="str_actions_boilwater">
+			<Original>Boil Water</Original>
+			<English>Boil Water</English>
+			<German>Wasser kochen</German>
+			<Russian>Вскипятить воду</Russian>
+			<Spanish>Hervir el Agua</Spanish>
+			<Dutch>koge vand</Dutch>
+			<French>faire bouillir l'eau</French>
+		</Key>
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
 			<English>Remove fireplace</English>
@@ -1389,8 +1398,11 @@
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_DESC">						
 			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
 			<English>A bottle of boiledwater that has been filled and can be consumed.</English>	
-			<German>A bottle of boiledwater that has been filled and can be consumed.</German>
-			<Russian>Ôëÿæêà êèïÿ÷åíîé âîäû. Ïðèãîäíà äëÿ ïèòüÿ.</Russian>
+			<German>Eine Flasche mit abgekochten Wasser.</German>
+			<Russian>Бутылка boiledwater, который был заполнен и можно употреблять.</Russian>
+			<Spanish>Una botella de boiledwater que ha sido llenado y se puede consumir.</Spanish>
+			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
+			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
 		</Key>
 	</Package>
 </Project>
