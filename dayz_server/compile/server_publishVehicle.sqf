@@ -127,7 +127,7 @@ _object setDamage _damage;
 _object setvelocity [0,0,1];
 _object setFuel _fuel;
 
-_id = _object spawn fnc_vehicleEventHandler;
+_object call fnc_vehicleEventHandler;
 
 dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 

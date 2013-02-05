@@ -249,6 +249,109 @@ class Citizen1;	// External class reference
         transportmaxbackpacks = 2;
 		class Turrets {};
 	};
+class HMMWV_Base;
+	class HMMWV_DZ: HMMWV_Base {
+		accuracy = 0.32;
+		displayname = "HMMWV_DZ";
+		hasgunner = 0;
+		hiddenselections[] = {"Camo1"};
+		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
+		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
+		mapsize = 5;
+		model = "ca\wheeled_E\HMMWV\HMMWV";
+		picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		transportMaxWeapons = 4;
+		transportMaxMagazines = 12;
+        transportmaxbackpacks = 4;
+		class Turrets {};
+		class HitPoints {
+			class HitEngine {
+				armor = 2.4;
+				material = -1;
+				name = "motor";
+				passthrough = 0.2;
+				visual = "";
+			};
+			class HitBody {
+				armor = 1;
+				material = -1;
+				name = "karoserie";
+				passthrough = 1;
+				visual = "";
+			};
+			class HitFuel {
+				armor = 1.3;
+				material = -1;
+				name = "palivo";
+				passthrough = 0.5;
+				visual = "";
+			};
+			class HitLFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRFWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_1_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitLBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_1_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitRBWheel {
+				armor = 0.30;
+				material = -1;
+				name = "wheel_2_2_steering";
+				passthrough = 0.3;
+				visual = "";
+			};
+			class HitGlass1 {
+				armor = 0.4;
+				material = -1;
+				name = "glass1";
+				passthrough = 0;
+				visual = "glass1";
+			};
+			class HitGlass2 {
+				armor = 0.4;
+				material = -1;
+				name = "glass2";
+				passthrough = 0;
+				visual = "glass2";
+			};
+			class HitGlass3 {
+				armor = 0.2;
+				material = -1;
+				name = "glass3";
+				passthrough = 0;
+				visual = "glass3";
+			};
+			class HitGlass4 {
+				armor = 0.2;
+				material = -1;
+				name = "glass4";
+				passthrough = 0;
+				visual = "glass4";
+			};
+		};
+		class Damage {
+			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
+			tex[] = {};
+		};
+	};
 	class MH6J_DZ: AH6_Base_EP1
 	{
 		scope = 2;

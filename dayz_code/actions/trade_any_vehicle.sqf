@@ -55,13 +55,16 @@ if (_qty >= _qty_in) then {
 			player reveal _veh;
 			_location = getPosATL _veh;
 	
-			_veh setVariable ["characterID",dayz_playerUID,true];
+			//_veh setVariable ["characterID",dayz_playerUID,true];
 
 			clearWeaponCargoGlobal  _veh;
 			clearMagazineCargoGlobal  _veh;
-	
+
 			["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
 			
+			// check if this will add the needed event handlers to correctly track damage client side
+			_veh call fnc_vehicleEventHandler;
+
 			cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 		} else {
 			// Sell Vehicle
@@ -75,7 +78,7 @@ if (_qty >= _qty_in) then {
 
 			["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
 
-			deleteVehicle _obj;
+			deleteVehicle _obj; 
 
 			cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 		};

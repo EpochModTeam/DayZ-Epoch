@@ -19,16 +19,26 @@ if (_hasToolbox) then {
 	_vehicle removeAction _id;
 	
 	//dont allow removal of damaged parts
-	if (_damage < 0.15) then {
+	if (_damage < 1) then {
 		
 		_isOK = [player,_part] call BIS_fnc_invAdd;
         if (_isOK) then {
-
-
-			//Fix the part
-			_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
-			//vehicle is owned by whoever is in it, so we have to have each client try and fix it
 			
+			// the more damaged the part the higher the chance to loose the part.
+			// 0.25 = 25% chance to loose part 
+			// 0.5  = 50% chance to loose part 
+			// 0.75 = 75% chance to loose part 
+			// 0.99 = 99% chance to loose part 
+
+			_findPercent = (1 - _damage) * 10;
+			// X = 1 - 0.25 = 0.75 x 10 == 7.5
+			// X = 1 - 0.99 = 0.01 x 10 == 0.1
+			
+
+			//break the part
+			_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
+			
+			//vehicle is owned by whoever is in it, so we have to have each client try and fix it
 			["dayzSetFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
 		
 			player playActionNow "Medic";
@@ -39,9 +49,15 @@ if (_hasToolbox) then {
 			sleep 5;
 			_vehicle setvelocity [0,0,1];
 
-			//Success!
-			cutText [format["You have successfully removed %1 from the %2",_namePart,_nameType], "PLAIN DOWN"];
-
+			if(ceil (random _findPercent) == 1) then {
+				// loose part and damage vehicle
+				player removeMagazine _part;
+				//Failed!
+				cutText [format["You have destroyed %1 while attempting to remove from %2",_namePart,_nameType], "PLAIN DOWN"];
+			} else {
+				//Success!
+				cutText [format["You have successfully removed %1 from the %2",_namePart,_nameType], "PLAIN DOWN"];
+			};
 
 		} else {
 			cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];

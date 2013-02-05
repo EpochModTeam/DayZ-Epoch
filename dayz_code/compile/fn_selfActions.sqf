@@ -217,12 +217,15 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 		if (_ownerID == dayz_playerUID) then {
 			if (s_player_unlockvault < 0) then {
 				s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
-			};	
-		} else { 
+			};
+		} else {
 			if(_hasToolbox) then{
 				if (s_player_unlockvault < 0) then {
 					s_player_unlockvault = player addAction ["Crack Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 				};
+			} else {
+				player removeAction s_player_unlockvault;
+				s_player_unlockvault = -1;
 			};
 		};
 		

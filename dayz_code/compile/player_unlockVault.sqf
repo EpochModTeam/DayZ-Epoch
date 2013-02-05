@@ -9,6 +9,7 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 player playActionNow "Medic";
 
 player removeAction s_player_unlockvault;
+s_player_unlockvault = 1;
 
 _item = "ItemToolbox";
 _hasToolbox = 	_item in items player;
@@ -29,8 +30,10 @@ if (_ownerID == dayz_playerUID) then {
 		// Chance to break toolbox randomly
 		if(floor (random 15) == 1) then {
 			player removeWeapon _item;
-			cutText ["Your toolbox is now broken, you will need to find another one.", "PLAIN DOWN"];
+			titleText ["Your toolbox is now broken, you will need to find another one.", "PLAIN"];
 		};
+	} else {
+		if (!_hasToolbox) exitWith {cutText ["Cannot crack vault, you do not have a Tool Box." , "PLAIN"]};
 	};
 	
 };
@@ -101,7 +104,7 @@ if(_allowunlock) then {
 		} forEach _objWpnTypes;
 	};
 	
-	cutText ["This vault has been unlocked", "PLAIN DOWN"];
+	cutText ["Vault has been unlocked.", "PLAIN DOWN"];
 } else {
 	player playActionNow "Medic";
 	sleep 3;

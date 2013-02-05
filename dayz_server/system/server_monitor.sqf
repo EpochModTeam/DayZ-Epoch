@@ -98,7 +98,7 @@ diag_log "HIVE: Starting";
 				clearWeaponCargoGlobal  _object;
 				clearMagazineCargoGlobal  _object;
 				
-				if (_object isKindOf "TentStorage" or _object isKindOf "VaultStorageLocked") then {
+				if (_object isKindOf "TentStorage") then {
 					_pos set [2,0];
 					_object setpos _pos;
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
