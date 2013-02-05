@@ -51,7 +51,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 		if (_damage >= 0.9) then {_color = "color='#ff0000'";}; //red
 
 		_percent = round(_damage*100);
-		_string = format["<t %2>Repair%1 (%3%)</t>",_cmpt,_color,_percent]; //Repair - Part
+		_string = format["<t %2>Repair%1 (%3 %4)</t>",_cmpt,_color,_percent,"%"]; //Repair - Part
 		_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
 		s_player_repairActions set [count s_player_repairActions,_handle];
 	};
