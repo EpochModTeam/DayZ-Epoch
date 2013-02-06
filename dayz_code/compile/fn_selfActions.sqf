@@ -215,12 +215,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	//Allow owner to unlock vault
 	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo and _ownerID != "0") then {
 		if (_ownerID == dayz_playerUID) then {
-			if (s_player_unlockvault < 0) then {
+			if (s_player_unlockvault < 0  and (player distance cursorTarget < 3)) then {
 				s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 			};
 		} else {
 			if(_hasToolbox) then{
-				if (s_player_unlockvault < 0) then {
+				if (s_player_unlockvault < 0 and (player distance cursorTarget < 3)) then {
 					s_player_unlockvault = player addAction ["Crack Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 				};
 			} else {
@@ -235,12 +235,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	};
 
 	//Allow owner to pack vault
-	if(cursorTarget isKindOf "VaultStorage" and _canDo and _ownerID != "0" and _ownerID == dayz_playerUID) then {
+	if(cursorTarget isKindOf "VaultStorage" and _canDo and _ownerID != "0" and _ownerID == dayz_playerUID and (player distance cursorTarget < 3)) then {
 
-		if ((s_player_lockvault < 0) and (player distance cursorTarget < 3)) then {
+		if (s_player_lockvault < 0) then {
 			s_player_lockvault = player addAction ["Lock Vault", "\z\addons\dayz_code\actions\vault_lock.sqf",cursorTarget, 0, false, true, "",""];
 		};
-		if ((s_player_packvault < 0) and (player distance cursorTarget < 3)) then {
+		if (s_player_packvault < 0) then {
 			s_player_packvault = player addAction ["<t color='#ff0000'>Pack Vault</t>", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
 		};
 	} else {

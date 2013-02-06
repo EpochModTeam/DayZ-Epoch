@@ -27,10 +27,10 @@ if (_killerName == "nil" || _victimName == _killerName) then {
 
 diag_log _loc_message;
 //SHOW THE MESSAGE INGAME [GLOBAL CHAT]
-// [nil, nil, rspawn, [_victim, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
+[nil, nil, rspawn, [_victim, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
 
 //SHOW THE MESSAGE INGAME [TITLE TEXT]
-[nil,nil,rTITLETEXT,_message,"PLAIN DOWN"] call RE;
+//[nil,nil,rTITLETEXT,_message,"PLAIN DOWN"] call RE;
 
 _victim setVariable["AttackedBy", "nil", true];
 _victim setVariable["AttackedByName", "nil", true];
