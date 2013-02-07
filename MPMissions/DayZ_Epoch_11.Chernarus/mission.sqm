@@ -1174,7 +1174,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=10;
+		items=13;
 		class Item0
 		{
 			position[]={7550.6182,361.05222,8371.957};
@@ -1237,9 +1237,85 @@ class Mission
 		{
 			position[]={9772.5752,1.8273382,1763.3428};
 			name="boatsnwholesale";
-			text="Wholesale Goods";
+			text="Wholesaler";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item10
+		{
+			position[]={6345.6113,306.13721,7808.5073};
+			name="Tradercitystary";
+			text="Trader City Stary";
 			type="mil_circle";
 			colorName="ColorGreen";
+		};
+		class Item11
+		{
+			position[]={4394.2061,10.050329,2247.9697};
+			name="boatsnwholesale_1";
+			text="Wholesaler";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item12
+		{
+			position[]={13528.172,6.3179522,6331.1582};
+			name="boatsnwholesale_1_1";
+			text="Wholesaler";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={4053.8501,364.76645,11668.645};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebash";
+			expCond="(player distance zonebash) < 50;";
+			expActiv="TitleText[""Now entering trader city Bash"",""PLAIN DOWN""]; placevault = false;";
+			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; placevault = true;";
+			class Effects
+			{
+				soundDet="arabian_market_1";
+			};
+		};
+		class Item1
+		{
+			position[]={11463.747,317.3078,11349.89};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zoneklen";
+			expCond="(player distance zoneklen) < 50;";
+			expActiv="TitleText[""Now entering trader city Klen"",""PLAIN DOWN""]; placevault = false;";
+			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; placevault = true;";
+			class Effects
+			{
+				soundDet="arabian_market_2";
+			};
+		};
+		class Item2
+		{
+			position[]={6344.8081,304.99023,7806.7598};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonestary";
+			expCond="(player distance zonestary) < 50;";
+			expActiv="TitleText[""Now entering trader city Stary"",""PLAIN DOWN""]; placevault = false;";
+			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; placevault = true;";
+			class Effects
+			{
+				soundDet="arabian_market_3";
+			};
 		};
 	};
 };

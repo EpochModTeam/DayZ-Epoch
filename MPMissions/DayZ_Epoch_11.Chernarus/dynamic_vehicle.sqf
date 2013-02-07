@@ -1,122 +1,73 @@
 AllowedVehiclesList = [ 
-	"Old_moto_TK_Civ_EP1",
-	"MMT_Civ",
-	"Old_bike_TK_INS_EP1",
-	"ATV_US_EP1",
-	"hilux1_civil_3_open_EP1",
-	"datsun1_civil_3_open",
-	"Pickup_PK_TK_GUE_EP1",
-	"Octavia_ACR",
-	"VWGolf",
-	"Lada1",
-	"Skoda",
-	"car_sedan",
-	"Volha_1_TK_CIV_EP1",
-	"VolhaLimo_TK_CIV_EP1",
-	"UAZ_Unarmed_TK_EP1",
-	"Ikarus",
-	"SUV_TK_CIV_EP1",
-	"SUV_Green",
-	"SUV_Yellow",
-	"SUV_White",
-	"SUV_Silver",
-	"SUV_Red",
-	"SUV_Pink",
-	"SUV_Orange",
-	"SUV_Charcoal",
-	"SUV_Blue",
-	"UH1H_DZ",
-	"Mi17_Civilian",
-	"LandRover_CZ_EP1",
-	"HMMWV_Ambulance",
-	"ArmoredSUV_PMC",
-	"PBX",
-	"RHIB",
-	"Fishing_Boat",
-	"M113Ambul_UN_EP1",
-	"KamazRefuel",
-	"UralRefuel_TK_EP1",
-	"tractor",
-	"CSJ_GyroP"];
-
-AllowedVehiclesChance = [ 
-	0.25, // "Old_moto_TK_Civ_EP1",
-	0.55, // "MMT_Civ"
-	0.55, // Old_bike_TK_INS_EP1
-	0.45, // "ATV_US_EP1",
-	0.55, // "hilux1_civil_3_open_EP1", 
-	0.25, // "datsun1_civil_3_open",
-	0.20, // "Pickup_PK_TK_GUE_EP1",
-	0.20, // Octavia_ACR
-	0.20, // VWGolf
-	0.25, // "Lada1",
-	0.25, // "Skoda",
-	0.2,  // "car_sedan",
-	0.2,  // "Volha_1_TK_CIV_EP1",
-	0.05, // "VolhaLimo_TK_CIV_EP1"
-	0.15, // "UAZ_Unarmed_TK_EP1"
-	0.01, // "Ikarus"
-	0.1,  // "SUV_TK_CIV_EP1"
-	0.1,  // "SUV_Green",
-	0.1,  // "SUV_Yellow",
-	0.1,  // "SUV_White",
-	0.1,  // "SUV_Silver",
-	0.1,  // "SUV_Red",
-	0.1,  // "SUV_Pink",
-	0.1,  // "SUV_Orange",
-	0.1,  // "SUV_Charcoal",
-	0.1,  // "SUV_Blue",
-	0.05, // "UH1H_DZ"
-	0.09, // "Mi17_Civilian"
-	0.11, // "LandRover_CZ_EP1"
-	0.11, // "HMMWV_Ambulance"
-	0.05, // "ArmoredSUV_PMC"
-	0.15, // "PBX"
-	0.01, // "RHIB"
-	0.1,  // "Fishing_Boat",
-	0.01, // "M113Ambul_UN_EP1"
-	0.01, // "KamazRefuel"
-	0.01, // UralRefuel_TK_EP1
-	0.1,  // "tractor"
-	0.1]; // "CSJ_GyroP"
-
-AllowedVehiclesLimit =  [ 
-	5,  // "Old_moto_TK_Civ_EP1",
-	10, // "MMT_Civ"
-	10, // Old_bike_TK_INS_EP1
-	5, // "ATV_US_EP1",
-	5, // "hilux1_civil_3_open_EP1",
-	5, // "datsun1_civil_3_open",
-	3, // "Pickup_PK_TK_GUE_EP1",
-	2, // "Octavia_ACR"
-	2, // "VWGolf"
-	3, // "Lada1",
-	3, // "Skoda",
-	3, // "car_sedan",
-	3, // "Volha_1_TK_CIV_EP1",
-	1, // "VolhaLimo_TK_CIV_EP1"
-	3, // "UAZ_Unarmed_TK_EP1"
-	2, // "Ikarus"
-	4, // "SUV_TK_CIV_EP1"
-	2, // "SUV_Green",
-	1, // "SUV_Yellow",
-	1, // "SUV_White",
-	1, // "SUV_Silver",
-	1, // "SUV_Red",
-	1, // "SUV_Pink",
-	1, // "SUV_Orange",
-	1, // "SUV_Charcoal",
-	1, // "SUV_Blue",
-	2, // "UH1H_DZ"
-	2, // "Mi17_Civilian"
-	2, // "LandRover_CZ_EP1"
-	3, // "HMMWV_Ambulance"
-	2, // "ArmoredSUV_PMC"
-	5, // "PBX"
-	2, // "RHIB"
-	4, // "Fishing_Boat",
-	3, // "M113Ambul_UN_EP1"
-	2, // "KamazRefuel"
-	2, // UralRefuel_TK_EP1
-	1, // "tractor"
-	5]; // "CSJ_GyroP"
+	["Old_moto_TK_Civ_EP1",10],
+	["MMT_Civ",10],
+	["Old_bike_TK_INS_EP1",10],
+	["TT650_Ins",1],
+	["TT650_Civ",1],
+	["TT650_TK_CIV_EP1",1],
+	["ATV_US_EP1",10],
+	["hilux1_civil_3_open_EP1",5],
+	["hilux1_civil_2_covered",2],
+	["datsun1_civil_3_open",5],
+	["Pickup_PK_TK_GUE_EP1",5],
+	["Octavia_ACR",2],
+	["VWGolf",2],
+	["Lada1",1],
+	["Lada2",1],
+	["LadaLM",1],
+	["Lada2_TK_CIV_EP1",2],
+	["Skoda",1],
+	["SkodaGreen",1],
+	["SkodaRed",1],
+	["SkodaBlue",1],
+	["car_sedan",2],
+	["car_hatchback",2],
+	["policecar",1],
+	["GLT_M300_LT",1],
+	["GLT_M300_ST",1],
+	["Volha_1_TK_CIV_EP1",2],
+	["VolhaLimo_TK_CIV_EP1",2],
+	["UAZ_Unarmed_TK_EP1",1],
+	["UAZ_RU",1],
+	["UAZ_INS",1],
+	["Ikarus",3],
+	["SUV_TK_CIV_EP1",2],
+	["SUV_Green",1],
+	["SUV_Yellow",1],
+	["SUV_White",1],
+	["SUV_Silver",1],
+	["SUV_Red",1],
+	["SUV_Pink",1],
+	["SUV_Orange",1],
+	["SUV_Charcoal",1],
+	["SUV_Blue",1],
+	["UH1H_DZ",2],
+	["Mi17_Civilian",3],
+	["Mi17_DZ",1],
+	["LandRover_CZ_EP1",2],
+	["HMMWV_Ambulance",2],
+	["HMMWV_DES_EP1",1],
+	["PBX",3],
+	["Zodiac",2],
+	["RHIB",2],
+	["Fishing_Boat",2],
+	["Smallboat_1",2],
+	["Smallboat_2",2],
+	["M113Ambul_UN_EP1",1],
+	["KamazRefuel",1],
+	["UralRefuel_TK_EP1",1],
+	["MtvrRefuel_DES_EP1",1],
+	["Ural_UN_EP1",2],
+	["Ural_TK_CIV_EP1",2],
+	["Ural_CDF",2],
+	["Kamaz",2],
+	["tractor",3],
+	["CSJ_GyroP",5],
+	["S1203_ambulance_EP1",1],
+	["S1203_TK_CIV_EP1",2],
+	["MH6J_DZ",1],
+	["AH6X_DZ",1],
+	["MTVR_DES_EP1",1],
+	["LandRover_MG_TK_EP1",1],
+	["M1030_US_DES_EP1",1]
+];

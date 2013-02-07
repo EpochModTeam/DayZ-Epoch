@@ -5,7 +5,7 @@ OnLoadIntro = "Welcome to DayZ Epoch Chernarus";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
-disableChannels[]={0,1,2,6};
+disableChannels[]={1,2,6};
 enableItemsDropping = 0;
 onPauseScript = "\z\addons\dayz_code\compile\player_onPause.sqf";
 
