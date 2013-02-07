@@ -23,12 +23,37 @@ if (_ownerID == dayz_playerUID) then {
 	// do random roll to try to unlock vault
 	// start low to test figure out what works later
 	if(_hasToolbox) then {
-		if(floor (random 10000) == 1337) then {
-			_allowunlock = true;
-			
+		
+		// days alive modifier
+		_maxRoll = 10000 - (dayz_skilllevel * 250);
+
+		// math check
+		// 0 days x 250 = 0
+		// 1 days x 250 = 250  (10000 - 250) = 9750 
+		// 4 days x 250 = 1000 (10000 - 1000) = 9000
+		// 10 days x 250 = 2500 (10000 - 2500) = 7500
+		// 20 days x 250 = 5000 (10000 - 5000) = 5000
+		// 30 days x 250 = 7500 (10000 - 7500) = 2500
+		// 36 days x 250 = 9000 (10000 - 9000) = 1000
+		// 40 days x 250 = 10000 (10000 - 10000) = 0
+
+		if(_maxRoll > 10000) then {
+			_maxRoll = 10000;
 		};
+
+		if(_maxRoll < 1000) then {
+			_maxRoll = 1000;
+		};
+
+		if(floor (random _maxRoll) == 137) then {
+			_allowunlock = true;
+		};
+
+		// lower chance to break tools based on skill = days alive
+		_toolboxRoll = dayz_skilllevel * 10;
+
 		// Chance to break toolbox randomly
-		if(floor (random 15) == 1) then {
+		if(floor (random _toolboxRoll) == 1) then {
 			player removeWeapon _item;
 			titleText ["Your toolbox is now broken, you will need to find another one.", "PLAIN"];
 		};
