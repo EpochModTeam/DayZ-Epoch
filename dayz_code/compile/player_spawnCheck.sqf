@@ -94,11 +94,16 @@ if (_nearbyCount < 1) exitwith {};
 	_canLoot = 		isClass (_config);
 	_dis = _x distance player;
 	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle) then {
-	//diag_log ("Loot System Running");
 		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity] call player_spawnlootCheck;
 	};
+	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
+		if (dayz_spawnZombies < dayz_maxLocalZombies) then {
 	if (_spawnZombies) then {
-	//diag_log ("Zed System Running");
 		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 };
+		} else {
+			dayz_spawnWait = time;
+			dayz_spawnZombies = 0;
+		};
+	};
 } forEach _nearby;

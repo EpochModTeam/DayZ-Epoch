@@ -1,14 +1,14 @@
 private["_cfgCount","_config","_i","_itemChances","_itemCount","_weighted","_j","_weight","_l","_k","_type","_canZombie","_canLoot"];
 dayz_CBLChances = [];
-dayz_CBLCounts = [];
+dayz_CBLBase = [];
 
-_cfgCount = count (configFile >> "CfgBuildingLoot");
-for "_i" from 0 to ((_cfgCount) - 1) do {
-	_config = (configFile >> "CfgBuildingLoot") select _i;
-	if ((count (getArray (_config >> "ItemChance"))) > 0) then {
-		_itemChances = getArray (_config >> "itemChance");	
+_config = configFile >> "CfgBuildingLoot";
+for "_i" from 0 to ((count _config) - 1) do {
+	_classname = configName (_config select _i);
+	_itemChances = [] + getArray (_config >> _classname >> "ItemChance");
 		_itemCount = count _itemChances;
-		if ((dayz_CBLCounts find _itemCount) < 0) then {
+	if (_itemCount > 0) then {
+		if (dayz_CBLBase find _classname < 0) then {
 			_weighted = [];
 			_j = 0;
 			for "_l" from 0 to ((count _itemChances) - 1) do {
@@ -18,9 +18,12 @@ for "_i" from 0 to ((_cfgCount) - 1) do {
 				};
 				_j = _j + _weight;
 			};
-			dayz_CBLCounts set [count dayz_CBLCounts, _itemCount];
 			dayz_CBLChances set [count dayz_CBLChances, _weighted];		
+		dayz_CBLBase set [count dayz_CBLBase, _classname];
 		};
+	} else {
+		dayz_CBLChances set [count dayz_CBLChances, [0]];
+		dayz_CBLBase set [count dayz_CBLBase, _classname];
 	};
 };
 

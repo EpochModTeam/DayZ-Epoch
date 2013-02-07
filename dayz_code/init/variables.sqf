@@ -50,8 +50,9 @@ pz_villager3 = "pz_villager3";
 pz_priest = "pz_priest";
 
 //Cooking
-meatraw = ["FoodBioMeat", "FoodSteakRaw",	"FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
+meatraw = ["FoodSteakRaw","FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
 meatcooked = ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
+badfood = ["FoodBioMeat"];
 
 dayz_combatLog = "";
 canRoll = true;
@@ -341,8 +342,8 @@ if(!isDedicated) then {
 	dayz_areaAffect =		2;
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
-	dayz_spawnDelay =		300;
-	dayz_spawnWait =		-300;
+	dayz_spawnDelay =		120;
+	dayz_spawnWait =		-120;
 	dayz_lootDelay =		3;
 	dayz_lootWait =			-300;
 	dayz_spawnZombies =		0;

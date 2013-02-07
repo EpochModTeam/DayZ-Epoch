@@ -14,6 +14,8 @@ _hasfooditem = _item in magazines player;
 
 //_rawfood = _item in ["FoodSteakRaw","FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
 //_cookedfood = _item in ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
+
+_badfood = _item in badfood;
 _rawfood = _item in meatraw;
 _cookedfood = _item in meatcooked;
 
@@ -34,6 +36,11 @@ if (dayz_lastMeal < 3600) then {
 };
 
 if ( _rawfood and (random 15 < 1)) then {
+	r_player_infected = true;
+	player setVariable["USEC_infected",true];
+};
+
+if ( _badfood and (random 7 < 1)) then {
 	r_player_infected = true;
 	player setVariable["USEC_infected",true];
 };

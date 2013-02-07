@@ -10,7 +10,7 @@ _lootChance =	getNumber (_config >> "lootChance");
 		_iPos = _obj modelToWorld _x;
 		_nearBy = nearestObjects [_iPos, ["WeaponHolder","WeaponHolderBase"], 1];
 			if (count _nearBy == 0) then {
-			_index = dayz_CBLCounts find (count _itemTypes);
+			_index = dayz_CBLBase find _type;
 			_weights = dayz_CBLChances select _index;
 			_cntWeights = count _weights;
 			_index = floor(random _cntWeights);
