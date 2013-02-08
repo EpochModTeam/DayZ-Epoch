@@ -1388,6 +1388,17 @@ class CfgMagazines
 		picture = "\dayz_equip\textures\equip_bar_copper_CA.paa";
 		descriptionShort = "Copper Bar";
 	};
+	
+	class ItemAluminumBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Aluminum";
+		model = "\dayz_equip\models\silver_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
+		descriptionShort = "Aluminum Bar";
+	};
 	class ItemZombieParts: CA_Magazine
 	{
 		scope = 2;
