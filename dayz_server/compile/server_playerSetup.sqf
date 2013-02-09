@@ -1,4 +1,4 @@
-private["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_mkr","_counter","_isNear","_isZero","_pos","_isIsland","_w","_clientID","_friendlies"];
+private["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_mkr","_counter","_isNear","_isZero","_pos","_isIsland","_w","_clientID"];
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
 
@@ -11,6 +11,7 @@ if (isNull _playerObj) exitWith {
 };
 
 //Add MPHit event handler
+diag_log("Adding MPHit EH for " + str(_playerObj));
 _playerObj addMPEventHandler ["MPHit", {_this spawn fnc_plyrHit;}];
 
 if (_playerID == "") then {
