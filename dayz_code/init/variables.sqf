@@ -351,6 +351,7 @@ if(!isDedicated) then {
 	dayz_Magazines = 		[];
 	dayzGearSave = 			false;
 	dayz_unsaved =			false;
+	UnlockInprogress =		false;
 	dayz_scaleLight = 		0;
 	dayzDebug = false;
 	dayzState = -1;

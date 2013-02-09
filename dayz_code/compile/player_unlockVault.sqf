@@ -11,6 +11,8 @@ player playActionNow "Medic";
 player removeAction s_player_unlockvault;
 s_player_unlockvault = 1;
 
+UnlockInprogress = true;
+
 _item = "ItemToolbox";
 _hasToolbox = 	_item in items player;
 
@@ -140,3 +142,4 @@ if(_allowunlock) then {
 };
 
 s_player_unlockvault = -1;
+UnlockInprogress = false;
