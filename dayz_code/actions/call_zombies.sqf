@@ -8,7 +8,7 @@ s_player_callzombies = 1;
 // player playActionNow "Surrender";
 
 // for now try reseting animation when this is called to test preventing animation lockups
-player switchMove "";
+// player switchMove "";
 
 [player,"spotted",0,false] call dayz_zombieSpeak;
 

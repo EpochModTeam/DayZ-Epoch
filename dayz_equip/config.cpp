@@ -1400,6 +1400,16 @@ class CfgMagazines
 		descriptionShort = "Copper Bar";
 	};
 	
+	class ItemBronzeBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Bronze";
+		model = "\dayz_equip\models\bronze_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_bronze_CA.paa";
+		descriptionShort = "Bronze Bar";
+	};
 	class ItemAluminumBar: CA_Magazine
 	{
 		scope = 2;
