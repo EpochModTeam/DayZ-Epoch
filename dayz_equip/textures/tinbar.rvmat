@@ -5,7 +5,7 @@
 
 #define _ARMA_
 
-//Class dayz_equip : textures\silverbar.rvmat{
+//Class dayz_equip : textures\tinbar.rvmat{
 ambient[] = {1.0,1.0,1.0,1.0};
 diffuse[] = {1.0,1.0,1.0,1.0};
 forcedDiffuse[] = {0.0,0.0,0.0,1.0};
@@ -16,7 +16,7 @@ PixelShaderID = "NormalMapSpecularMap";
 VertexShaderID = "NormalMap";
 class Stage1
 {
-	texture = "dayz_equip\textures\silverbar_NOHQ.paa";
+	texture = "dayz_equip\textures\tinbar_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -28,7 +28,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "dayz_equip\textures\silverbar_SMDI.paa";
+	texture = "dayz_equip\textures\tinbar_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
