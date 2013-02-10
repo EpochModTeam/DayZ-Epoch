@@ -7,8 +7,9 @@ OnLoadMissionTime = False;
 disabledAI = true;
 disableChannels[]={1,2,6};
 enableItemsDropping = 0;
-onPauseScript = "\z\addons\dayz_code\compile\player_onPause.sqf";
+#include "R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
 
+onPauseScript = "\z\addons\dayz_code\compile\player_onPause.sqf";
 loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
 
 class Header
