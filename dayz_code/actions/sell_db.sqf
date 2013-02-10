@@ -1,4 +1,4 @@
-private["_activatingPlayer","_trader_id","_category","_action","_id","_type","_loc","_name","_qty","_cost","_qty","_sell","_cur","_order","_tid","_currency","_actionFile","_in","_out","_part","_cat","_cancel","_Display","_File","_textCurrency","_textPart"];
+private["_activatingPlayer","_trader_id","_category","_action","_id","_type","_loc","_name","_qty","_cost","_qty","_sell","_cur","_order","_tid","_currency","_actionFile","_in","_out","_part","_cat","_cancel","_Display","_File","_textCurrency","_textPart","_count"];
 
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];
 
@@ -89,8 +89,25 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	// qty consumed of bname
 	_in = 1;
 	
+	_count = 0;
+	if(_stype == "CfgVehicles") then {
+		_count = position player nearObjects [_name,10];
+	}
+	if(_stype == "CfgMagazines") then {
+		_count = {_x == _name} count magazines player;
+	}
+	if(_stype == "CfgWeapons") then {
+		_count = {_x == _name} count items player;
+	}
+
+	if (_count > 0) then {
+		_Display = format["Sell %1 for %2 %3 each", _textPart, _sqty, _textCurrency];
+	} else {
+		_Display = format["<t color='#ffff00'>Sell %1 for %2 %3 each</t>", _textPart, _sqty, _textCurrency];
+	};
+
 	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];	
-	_Display = format["Sell %1 for %2 %3 each", _textPart, _sqty, _textCurrency];
+	
 	_part = player addAction [_Display, _File,[_sname,_name,_out,_in,"sell",_textPart,_textCurrency,_header], _order, true, true, "",""];
 
 	diag_log format["DEBUG TRADER: %1", _part];
