@@ -1358,6 +1358,17 @@ class CfgMagazines
 		picture = "\dayz_equip\textures\equip_soda_rbull_ca.paa";
 		descriptionShort = "$STR_EQUIP_NAME_37";
 	};
+	class ItemBriefcase: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = "(256 * 3)";
+		displayName = "Briefcase";
+		// model = "\misc3\briefcase.p3d";
+		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
+		// TODO: Needs picture and model
+		descriptionShort = "Briefcase full of Gold Bars";
+	};
 	class ItemGoldBar: CA_Magazine
 	{
 		scope = 2;
@@ -1395,10 +1406,21 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Aluminum";
-		model = "\dayz_equip\models\silver_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
+		model = "\dayz_equip\models\aluminum_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_aluminum_CA.paa";
 		descriptionShort = "Aluminum Bar";
 	};
+	class ItemTinBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Tin";
+		model = "\dayz_equip\models\tin_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_tin_CA.paa";
+		descriptionShort = "Tin Bar";
+	};
+
 	class ItemZombieParts: CA_Magazine
 	{
 		scope = 2;

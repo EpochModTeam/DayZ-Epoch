@@ -644,6 +644,15 @@ class cfgMagazines
 		picture = "\dayz_equip\textures\equip_tincan_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_33";
 		ammo = "TinCan";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Melt into Bars";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemTinBar"};
+			};
+		};
 	};
 	class ItemSodaEmpty: HandGrenade
 	{
@@ -653,6 +662,15 @@ class cfgMagazines
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_35";
 		ammo = "SodaCan";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Melt into Bars";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemAluminumBar"};
+			};
+		};
 	};
 	class HandRoadFlare: HandGrenade
 	{
