@@ -934,6 +934,41 @@ class HMMWV_Base;
         transportMaxWeapons = 5;
         transportMaxBackpacks = 1;
 	};
+	class M113Ambul_UN_EP1;
+	class M113Ambul_UN_EP1_DZ: M113Ambul_UN_EP1
+	{
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+        transportmaxbackpacks = 4;
+	};
+	class M113Ambul_TK_EP1;
+	class M113Ambul_TK_EP1_DZ: M113Ambul_TK_EP1
+	{
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+        transportmaxbackpacks = 4;
+	};
+	
 
 	// Lingor hangars
 	//class land_ibr_hangar: land_ibr_hangar

@@ -34,8 +34,11 @@ if (_killerName != "nil") then
 	};
 
 	diag_log _loc_message;
-	[nil, nil, rspawn, [_killer, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
-	//[nil, nil, rHINT, _message] call RE;
+	// [nil, nil, rspawn, [_killer, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
+	// [nil, nil, rHINT, _message] call RE;
+
+	// build array to store death messages to allow viewing at message board in trader citys.
+	PlayerDeaths set [count PlayerDeaths,_message];
 
 	// Cleanup
 	_victim setVariable["AttackedBy", "nil", true];

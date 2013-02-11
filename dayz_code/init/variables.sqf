@@ -79,6 +79,7 @@ SleepTemperatur	= 		90 / 100;	//Firs Value = Minutes untill Player reaches the c
 allowConnection = 		false;
 isSinglePlayer =		false;
 dayz_serverObjectMonitor = [];
+PlayerDeaths = [];
 
 //Streaming Variables (player only)
 dayz_Locations = [];
@@ -129,6 +130,7 @@ dayz_resetSelfActions = {
 	s_player_warndog = 		-1;
 	s_player_followdog = 	-1;
 	s_player_repair_crtl =  -1;
+	s_player_information =  -1;
 };
 call dayz_resetSelfActions;
 
@@ -252,6 +254,7 @@ dayzHideBody = objNull;
 dayzPublishVeh = [];		// for vehicle traders
 dayzTradeObject = [];		// For all traders increment qty
 dayzTraderMenu = [];  		// For all traders	
+dayzPlayerDeaths = [];
 
 //DayZ settings
 dayz_dawn = 6;

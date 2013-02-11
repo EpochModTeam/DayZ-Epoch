@@ -1378,6 +1378,34 @@ class CfgMagazines
 		model = "\dayz_equip\models\gold_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
 		descriptionShort = "Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 10oz bar";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemGoldBar10oz"};
+			};
+		};
+	};
+	class ItemGoldBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Gold";
+		model = "\dayz_equip\models\gold_bar_10oz.p3d";
+		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
+		descriptionShort = "10oz Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemGoldBar10oz"};
+			};
+		};
 	};
 	class ItemSilverBar: CA_Magazine
 	{
@@ -1398,6 +1426,15 @@ class CfgMagazines
 		model = "\dayz_equip\models\copper_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_copper_CA.paa";
 		descriptionShort = "Copper Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt Bronze";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemBronzeBar"};
+			};
+		};
 	};
 	
 	class ItemBronzeBar: CA_Magazine

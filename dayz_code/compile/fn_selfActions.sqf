@@ -250,6 +250,19 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 		s_player_lockvault = -1;
 	};
 
+	
+
+    //Player Deaths
+	if(cursorTarget isKindOf "Info_Board_EP1" and _canDo) then {
+		if ((s_player_information < 0) and (player distance cursorTarget < 3)) then {
+			s_player_information = player addAction ["Recent Deaths", "\z\addons\dayz_code\actions\list_playerDeaths.sqf",[], 0, false, true, "",""];
+		};
+	} else {
+		player removeAction s_player_information;
+		s_player_information = -1;
+	};
+	
+
     //Sleep
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
 		if ((s_player_sleep < 0) and (player distance cursorTarget < 3)) then {

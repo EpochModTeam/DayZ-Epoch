@@ -22,4 +22,5 @@ registerServerRpc = {
 ["dayzPublishVeh",			{ (_this select 1) spawn server_publishVeh; }		] call registerServerRpc;
 ["dayzTradeObject",			{ (_this select 1) spawn server_tradeObj; }			] call registerServerRpc;
 ["dayzTraderMenu",			{ (_this select 1) spawn server_traders; }			] call registerServerRpc;
+["dayzPlayerDeaths",		{ (_this select 1) spawn server_deaths; }			] call registerServerRpc;
 	

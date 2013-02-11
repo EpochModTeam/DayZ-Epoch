@@ -59,7 +59,9 @@ if (inflamed cursorTarget and _canDo) then {
 	_recipe_ItemTinBar = [["TrashTinCan",6]];
 	_recipe_ItemAluminumBar = [["ItemSodaEmpty",6]];
 	_recipe_ItemBronzeBar = [["ItemCopperBar",3],["ItemTinBar",3]];
-
+	_recipe_ItemGoldBar10oz = [["ItemGoldBar",10]];
+	_recipe_ItemGoldBar = [["ItemGoldBar10oz",1]];
+	
 	_recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
 	_recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
 
