@@ -23,12 +23,26 @@ if(_ownerID == dayz_playerUID) then {
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
 	sleep 3;
 
+	_building = nearestObject [(vehicle player), "HouseBase"];
+		_isBuilding = [(vehicle player),_building] call fnc_isInsideBuilding;
+
+		if(_isBuilding) then {
+			
+			_ppos = _building worldToModel _pos;
+			_ppos set [1,1.5];
+				
+			_location = _building modelToWorld _ppos;
+		};
+
 	//place tent (local)
 	_bag = createVehicle ["WeaponHolder_ItemVault",_pos,[], 0, "CAN_COLLIDE"];
 	_bag setdir _dir;
+	_bag setpos _pos;
 	player reveal _bag;
 	
-	_holder = "WeaponHolder" createVehicle _pos; 
+
+
+	// _holder = "WeaponHolder" createVehicle _pos; 
 	
 	_weapons = 		getWeaponCargo _obj;
 	_magazines = 	getMagazineCargo _obj;

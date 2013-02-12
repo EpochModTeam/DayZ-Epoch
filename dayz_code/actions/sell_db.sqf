@@ -97,7 +97,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 		_count = {_x == _name} count magazines player;
 	};
 	if(_stype == "CfgWeapons") then {
-		_count = {_x == _name} count items player;
+		_count = {_x == _name} count weapons player;
 	};
 
 	if (_count > 0) then {

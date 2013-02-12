@@ -10,10 +10,12 @@ _offset_z = 0;
 _offset_z_attach = 0.5;
 
 _location = player modeltoworld [_offset_x,_offset_y,_offset_z];
+
 // Allow placement anywhere.
-// _building = nearestObject [(vehicle player), "HouseBase"];
-//_isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
+
+
 _isOk = true;
+ 
 
 //diag_log ("Pitch Tent: " + str(_isok) );
 
@@ -25,7 +27,57 @@ if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"p
 // blocked
 // Allow on concrete since we dont force to ground.
 // if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
-if (isOnRoad _playerPos) then { _isOk = true; diag_log ("surface is road"); };
+
+
+
+//diag_log ("Pitch Tent: " + str(_isok) );
+
+// Start Preview loop 
+_tmpvault = createVehicle ["VaultStorageLocked", _location, [], 0, "NONE"];
+_tmpvault setdir _dir;
+_tmpvault attachTo [player,[_offset_x,_offset_y,_offset_z_attach]];
+
+_cancel = false;
+_counter = 0;
+
+
+while {_isOk} do {
+	
+	if(_counter == 0) then {
+		cutText ["Planning consruction stand still 5 seconds to build.", "PLAIN DOWN"];
+		sleep 5; 
+		_location1 = getPosATL player;
+		sleep 5;
+		_location2 = getPosATL player;
+	
+		if(_location1 distance _location2 < 0.1) exitWith {
+			
+			cutText ["Started consruction move within 5 seconds to cancel.", "PLAIN DOWN"];
+			_location3 = getPosATL player;
+			sleep 5;
+			_location4 = getPosATL player;
+
+			if(_location3 distance _location4 > 0.1) exitWith {
+				_isOk = false;
+				_cancel = true;
+			};
+
+			_isOk = false;
+		};
+	};
+	if(_counter >= 1) exitWith {
+		_isOk = false;
+		_cancel = true;
+	};
+	_counter = _counter + 1;
+};
+
+detach _tmpvault;
+deleteVehicle _tmpvault;
+
+// Make sure vault is not placed on road. 
+if (isOnRoad (getPosATL player)) then { _isOk = true; diag_log ("surface is road"); };
+// Make sure vault is not placed in trader citys
 if(!placevault) then { _isOk = true; diag_log ("is trader city"); };
 
 //Block Tents in pounds
@@ -40,53 +92,6 @@ _objectsPond = 		nearestObjects [_playerPos, [], 10];
 		};
 	} forEach _objectsPond;
 
-//diag_log ("Pitch Tent: " + str(_isok) );
-
-
-
-// Start Preview loop 
-_tmpvault = createVehicle ["VaultStorageLocked", _location, [], 0, "NONE"];
-_tmpvault setdir _dir;
-_tmpvault attachTo [player,[_offset_x,_offset_y,_offset_z_attach]];
-
-_cancel = false;
-_counter = 0;
-
-while {_isOk} do {
-	
-	if(_counter == 0) then {
-
-		cutText ["Planning consruction stand still 5 seconds to build.", "PLAIN DOWN"];
-
-		
-		sleep 5;
-		_location1 = player modeltoworld [_offset_x,_offset_y,_offset_z];
-	
-		if(_location distance _location1 < 0.1) exitWith {
-			_isOk = false;
-			_location = _location1;
-		};
-	};
-	if(_counter == 1) then {
-		cutText ["Started consruction stand still 5 seconds to build.", "PLAIN DOWN"];
-		
-		sleep 5;
-		_location2 = player modeltoworld [_offset_x,_offset_y,_offset_z];
-	
-		if(_location1 distance _location2 < 0.1) exitWith {
-			_isOk = false;
-			_location = _location2;
-		};
-	};
-	if(_counter >= 2) exitWith {
-		_isOk = false;
-		_cancel = true;
-	};
-	_counter = _counter + 1;
-};
-
-detach _tmpvault;
-deleteVehicle _tmpvault;
 
 if(!_cancel) then {
 	if (!_isOk) then {
@@ -101,11 +106,23 @@ if(!_cancel) then {
 	
 		_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 	
+		_building = nearestObject [(vehicle player), "HouseBase"];
+		_isBuilding = [(vehicle player),_building] call fnc_isInsideBuilding;
+
+		if(_isBuilding) then {
+			
+			_ppos = _building worldToModel (getPosATL player);
+			_ppos set [2,1.5];
+				
+			_location = _building modelToWorld _ppos;
+		} else {
+			_location = player modelToWorld [_offset_x,_offset_y,_offset_z];
+		};
+
 		sleep 5;
 		//place tent (local)
 		_tent = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
 		_tent setdir _dir;
-		_location = getPosATL _tent;
 		_tent setpos _location;
 		player reveal _tent;
 	
@@ -116,6 +133,7 @@ if(!_cancel) then {
 		["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
 	
 		cutText ["You have setup your vault", "PLAIN DOWN"];
+	
 	} else {
 		cutText ["You cannot place a Vault here. The area must be flat, and free of other objects", "PLAIN DOWN"];
 	};

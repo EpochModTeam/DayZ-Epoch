@@ -133,6 +133,10 @@ if (_bulkqty >= 1) then {
 	
 				// [player,"repair",0,false] call dayz_zombieSpeak;
 				cutText [format[("Traded %1 %2 for %3 %4"),(_qty_in*_qty),_textPartIn,(_qty_out*_qty),_textPartOut], "PLAIN DOWN"];
+
+				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+				s_player_parts_crtl = -1;
+
 			} else {
 				cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
 			};
