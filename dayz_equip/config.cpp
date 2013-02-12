@@ -1393,7 +1393,7 @@ class CfgMagazines
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Gold";
+		displayName = "10oz Gold";
 		model = "\dayz_equip\models\gold_bar_10oz.p3d";
 		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
 		descriptionShort = "10oz Gold Bar";
@@ -1403,7 +1403,7 @@ class CfgMagazines
 			{
 				text = "Smelt 1oz bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemGoldBar10oz"};
+				output[] = {"ItemGoldBar"};
 			};
 		};
 	};
