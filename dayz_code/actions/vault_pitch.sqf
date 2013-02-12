@@ -73,10 +73,13 @@ while {_isOk} do {
 };
 
 detach _tmpvault;
-deleteVehicle _tmpvault;
+
+_vault_location = (getPosATL _tmpvault);
+
+
 
 // Make sure vault is not placed on road. 
-if (isOnRoad (getPosATL player)) then { _isOk = true; diag_log ("surface is road"); };
+if (isOnRoad _vault_location) then { _isOk = true; diag_log ("surface is road"); };
 // Make sure vault is not placed in trader citys
 if(!placevault) then { _isOk = true; diag_log ("is trader city"); };
 
@@ -92,6 +95,7 @@ _objectsPond = 		nearestObjects [_playerPos, [], 10];
 		};
 	} forEach _objectsPond;
 
+deleteVehicle _tmpvault;
 
 if(!_cancel) then {
 	if (!_isOk) then {
@@ -111,10 +115,9 @@ if(!_cancel) then {
 
 		if(_isBuilding) then {
 			
-			_ppos = _building worldToModel (getPosATL player);
-			_ppos set [2,1.5];
-				
+			_ppos = _building worldToModel _vault_location;
 			_location = _building modelToWorld _ppos;
+
 		} else {
 			_location = player modelToWorld [_offset_x,_offset_y,_offset_z];
 		};
