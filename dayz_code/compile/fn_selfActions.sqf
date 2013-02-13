@@ -148,8 +148,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 		s_player_fillfuel = -1;
 	};
 	
-
-	
 	if(_isPZombie) then {
 		// Pzombie Gut human corpse or animal
 		if ((_isAnimal or _isMan) and !_isHarvested and _canDo) then {
@@ -213,22 +211,10 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	};
 
 	//Allow owner to unlock vault
-	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo and _ownerID != "0" and !UnlockInprogress) then {
-		if (_ownerID == dayz_playerUID) then {
-			if (s_player_unlockvault < 0  and (player distance cursorTarget < 3)) then {
-				s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
-			};
-		} else {
-			if(_hasToolbox) then{
-				if (s_player_unlockvault < 0 and (player distance cursorTarget < 3)) then {
-					s_player_unlockvault = player addAction ["Crack Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
-				};
-			} else {
-				player removeAction s_player_unlockvault;
-				s_player_unlockvault = -1;
-			};
+	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo and _ownerID != "0" and _ownerID == dayz_playerUID and !UnlockInprogress) then {
+		if (s_player_unlockvault < 0  and (player distance cursorTarget < 3)) then {
+			s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 		};
-		
 	} else {
 		player removeAction s_player_unlockvault;
 		s_player_unlockvault = -1;
