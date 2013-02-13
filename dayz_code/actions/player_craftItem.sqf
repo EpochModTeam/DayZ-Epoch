@@ -58,11 +58,11 @@ if (inflamed cursorTarget and _canDo) then {
 
 	
 	_recipe_ItemTinBar = [
-		[ ["ItemTinBar",1]],
+		[ ["ItemTinBar",1] ],
 		[ ["TrashTinCan",6] ]
 	];
 	_recipe_ItemAluminumBar = [
-		[ ["ItemAluminumBar",1]],
+		[ ["ItemAluminumBar",1] ],
 		[ ["ItemSodaEmpty",6] ]
 	];	
 	_recipe_ItemBronzeBar = [
