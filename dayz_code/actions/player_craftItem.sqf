@@ -128,9 +128,9 @@ if (inflamed cursorTarget and _canDo) then {
 		{
 			_itemOut = _x select 0;
 			_countOut = _x select 1;
-			diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+			diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
 		
-			for "_x" from 1 to _countIn do {
+			for "_x" from 1 to _countOut do {
 				player addMagazine _itemOut;
 			};
 		
