@@ -45271,7 +45271,7 @@ class CfgMovesZombie: CfgMovesBasic
 	};
 };
 
-class CfgMovesPlayerZombie: CfgMovesBasic
+class CfgMovesZombieBase: CfgMovesMaleSdr
 {
 	skeletonName = "OFP2_ManSkeleton";
 	gestures = "CfgGesturesMale";
@@ -47302,35 +47302,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			ConnectTo[] = {"AmovPknlMstpSrasWlnrDnon",0.02};
 			InterpolateTo[] = {"AmovPknlMstpSrasWlnrDnon",0.02};
 		};
-		class AmovPercMstpSnonWnonDnon: StandBase
-		{
-			actions = "CivilStandActions";
-			duty = -0.4;
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\Erc\stp\non\non\AmovPercMstpSnonWnonDnon";
-			showWeaponAim = "false";
-			disableWeapons = "false";
-			canPullTrigger = "false";
-			speed = 1e+010;
-			relSpeedMin = 0.7;
-			relSpeedMax = 1.1;
-			leaningFactorBeg = 0;
-			leaningFactorEnd = 0;
-			looped = "true";
-			soundEnabled = "false";
-			enableBinocular = "true";
-			leftHandIKBeg = "false";
-			leftHandIKCurve[] = {};
-			leftHandIKEnd = "false";
-			rightHandIKBeg = "false";
-			rightHandIKCurve[] = {};
-			rightHandIKEnd = "false";
-			collisionShape = "ca\Anims\Characters\data\Geom\Sdr\Perc_Wnon.p3d";
-			headBobStrength = 0.21393;
-			limitGunMovement = 0.1;
-			enableOptics = -1;
-			ConnectTo[] = {"ActsPercMstpSnonWpstDnon_suicide1A",0.02,"ActsPercMstpSnonWpstDnon_suicide2A",0.02,"AmovPercMstpSnonWnonDnon_sekaniIn",0.02,"AidlPercMstpSnonWnonDnon",0.01,"AidlPercMstpSnonWnonDnon_player",0.01,"AovrPercMstpSnonWnonDf",0.01,"AmovPercMstpSnonWnonDnon_turnL",0.02,"AmovPercMstpSnonWnonDnon_turnR",0.02,"AmovPercMstpSnonWnonDnon_AmovPknlMstpSnonWnonDnon",0.02,"AmovPercMstpSnonWnonDnon_AmovPpneMstpSnonWnonDnon",0.02,"AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon",0.02,"AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon",0.02,"AmovPercMstpSnonWnonDnon_AmovPknlMstpSrasWlnrDnon",0.03,"AmovPercMstpSnonWnonDnon_AwopPercMstpSoptWbinDnon",0.02,"ActsPercMstpSnonWnonDnon_varStayLeant",2.0,"ActsPercMstpSnonWrflDnon_Interrogate01",2.0,"ActsPercMstpSnonWrflDnon_Interrogate02",2.0,"ActsPsitMstpSnonWnonDnon_InterrogateLeaves",2.0,"AmovPercMstpSnonWnonDnon_Scared",2.0,"AmovPercMstpSnonWnonDnon_Scared2",2.0,"AmovPercMstpSnonWnonDnon_carCheckPush",2.0,"AmovPercMstpSnonWnonDnon_carCheckWash",2.0,"AmovPercMstpSnonWnonDnon_carCheckWheel",2.0,"AmovPercMstpSnonWnonDnon_exerciseKata",2.0,"ActsPercMstpSnonWnonDnon_DancingDuoIvan",2.0,"ActsPercMstpSnonWnonDnon_DancingDuoStefan",2.0,"ActsPercMstpSnonWnonDnon_DancingStefan",2.0,"AmovPercMstpSnonWnonDnon_exercisekneeBendA",2.0,"AmovPercMstpSnonWnonDnon_exercisekneeBendB",2.0,"AmovPercMstpSnonWnonDnon_exercisePushup",2.0,"AmovPercMstpSnonWnonDnon_seeWatch",2.0,"AmovPercMstpSnonWnonDnon_talking",2.0,"ActsPercMstpSnonWpstDnon_sceneBardak01",0.1,"AmovPercMstpSnonWnonDnon_normalizationTest",0.1,"AmovPercMstpSnonWnonDnon_SaluteIn",0.1,"AmovPercMstpSnonWnonDnon_EaseIn",0.1,"AmovPercMstpSnonWnonDnon_AmovPsitMstpSnonWnonDnon_ground",0.1,"AmovPercMstpSnonWnonDnon_AmovPercMstpSsurWnonDnon",0.1,"AwopPercMstpSgthWnonDnon_start",0.1,"LadderCivilOn",1.0,"AswmPercMstpSnonWnonDnon",0.3,"ActsPknlMstpWunaSnonDnon_sceneCrashSite_Villager",0.1,"AmovPercMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon",0.02,"AmovPercMstpSnonWnonDnon_AcrgPknlMstpSnonWnonDnon_getInLow",0.02,"AmovPercMstpSnonWnonDnon_AcrgPknlMstpSnonWnonDnon_getInMedium",0.02,"AmovPercMstpSnonWnonDnon_AcrgPknlMstpSnonWnonDnon_getInHigh",0.02,"amovpercmstpsnonwnondnon_amovpercmstpsraswlnrdnon",0.02,"ActsPercSnonWnonDnon_assembling",0.01,"ActsPercSnonWnonDnon_carFixing",0.01,"ActsPercSnonWnonDnon_carFixing2",0.01,"ActsPercSnonWnonDnon_tableSupport_TalkIn",0.01,"ActsPercMstpSrasWunaDnon_sceneLopotevBandCaptured_Kostey",0.01,"AidlPpneMstpSnonWnonDnon_SleepA_layDown",0.01,"AidlPpneMstpSnonWnonDnon_SleepB_layDown",0.01,"AidlPpneMstpSnonWnonDnon_SleepC_layDown",0.01,"ActsPercMstpSnonWunaDnon_sceneNikitinDisloyalty_Nikitin",0.01,"ActsPercMstpSnonWunaDnon_sceneNikitinDisloyalty_Bardak",0.01,"ActsPercMstpSlowWrflDnon_sceneNikitinDisloyalty_Homeless",0.01,"ActsPercMstpSnonWunaDnon_sceneNikitinDisloyalty_Lopotev1",0.01,"ErcUnarm_sitUnarm_L",0.01,"ErcUnarm_sitUnarm_R",0.01,"sitTableRfl_listening_onTTractor",0.01,"sitUnarm_L_idleLoop_onFoiledPallets",0.01,"sitUnarm_L_idleLoop_onFoiledPallets2",0.01,"ErcUnarm_sitTable",0.01,"sitTableUnarm_talkingListening_TowingTractor",0.01,"UnaErc_UnaErcPoslechVelitele",0.01,"Csdr_LHD_oprenOzabradli118cm_A",0.01,"UnaErcVelitelProslov1",0.01,"FPS_shift",0.01,"ctsLopoHover_cdf2",0.01,"ctsLopoHover_lopotev",0.01,"sitUnarm_L_idleLoop_inUH1Y",0.01,"AmelPercMstpSnonWnonDnon_amaterUder1",0.02,"AmelPercMstpSnonWnonDnon_amaterUder2",0.02,"AmelPercMstpSnonWnonDnon_amaterUder3",0.02,"AmelPercMstpSnonWnonDnon_zasah1",0.02,"AmelPercMstpSnonWnonDnon_zasah2",0.02,"AmelPercMstpSnonWnonDnon_zasah3hard",0.02,"AmelPercMstpSnonWnonDnon_zasah4",0.02,"AmelPercMstpSnonWnonDnon_zasah5hard",0.02,"AmelPercMstpSnonWnonDnon_zasah6hlava",0.02,"AmelPercMstpSnonWnonDnon_zasah7bricho",0.02,"NavigationDriverReverse",0.01,"RepairingKneel",0.01,"RepairingErc",0.01,"NavigationHeli",0.01,"AmovPercMstpSnonWnonDnon_initLoop",0.01,"AmovPercMstpSnonWnonDnon_idle70chozeniPoRukou",0.01,"AmovPercMstpSnonWnonDnon_idle68boxing",0.01,"AmovPercMstpSnonWnonDnon_zevl",0.01};
-			InterpolateTo[] = {"AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic",0.02,"AmovPercMwlkSnonWnonDfr",0.02,"AmovPercMrunSnonWnonDf",0.02,"AmovPercMrunSnonWnonDfl",0.02,"AmovPercMstpSnonWnonDnon_turnL",0.02,"AmovPercMstpSnonWnonDnon_turnR",0.02,"AmovPercMwlkSnonWnonDf",0.02,"AmovPercMwlkSnonWnonDfl",0.02,"AmovPercMwlkSnonWnonDl",0.02,"AmovPercMwlkSnonWnonDbl",0.02,"AmovPercMwlkSnonWnonDb",0.02,"AmovPercMwlkSnonWnonDbr",0.02,"AmovPercMwlkSnonWnonDr",0.02,"AmovPercMrunSnonWnonDl",0.02,"AmovPercMrunSnonWnonDbl",0.02,"AmovPercMrunSnonWnonDb",0.02,"AmovPercMrunSnonWnonDbr",0.02,"AmovPercMrunSnonWnonDr",0.02,"AmovPercMrunSnonWnonDfr",0.02,"AmovPercMevaSnonWnonDf",0.02,"AmovPercMevaSnonWnonDfl",0.02,"AmovPercMevaSnonWnonDfr",0.02,"AdthPercMstpSnonWnonDnon_1",0.01,"AdthPercMstpSnonWnonDnon_2",0.01,"AdthPercMstpSnonWnonDnon_3",0.01,"ActsPsitMstpSnonWnonDnon_varSittingDrinking",0.02,"AmovPercMstpSnonWnonDnon_AcinPknlMwlkSnonWnonDb_1",0.1,"ActsPercMstpSnonWnonDnon_talking01",0.1,"ActsPercMstpSnonWnonDnon_talking02",0.1,"ActsPercMstpSnonWnonDnon_talking03",0.1,"ActsPercMstpSnonWnonDnon_talking04",0.1,"AidlPercSnonWnonDnon_talkBS",0.01,"sitTableRfl_listening_onTTractor",0.01,"sitUnarm_L_idleLoop_onFoiledPallets",0.01,"sitUnarm_L_idleLoop_onFoiledPallets2",0.01,"sitUnarm_L_idleLoop_inUH1Y",0.01};
-		};
 		class ActsPercMstpSnonWpstDnon_suicide1A: AmovPercMstpSnonWnonDnon
 		{
 			looped = "false";
@@ -47405,14 +47376,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			file = "\Ca\Anims\Characters\data\Anim\sdr\cts\axe\ActsPercMstpSnonWaxeDnon_sekaniOut";
 			speed = 0.30303;
 			ConnectTo[] = {"AmovPercMstpSnonWnonDnon",0.02};
-			InterpolateTo[] = {};
-		};
-		class AidlPercMstpSnonWnonDnon: AmovPercMstpSnonWnonDnon
-		{
-			variantsAI[] = {"AidlPercMstpSnonWnonDnon01",0.01,"AidlPercMstpSnonWnonDnon02",0.01,"AidlPercMstpSnonWnonDnon03",0.01,"AidlPercMstpSnonWnonDnon04",0.01,"AidlPercMstpSnonWnonDnon05",0.01,"AidlPercMstpSnonWnonDnon06",0.01,"AidlPercMstpSnonWnonDnon07",0.01,"AidlPercMstpSnonWnonDnon08",0.01,"AidlPercMstpSnonWnonDnon_idleSteady04",0.23,"AidlPercMstpSnonWnonDnon_idleSteady03",0.23,"AidlPercMstpSnonWnonDnon_idleSteady02",0.23,"AidlPercMstpSnonWnonDnon_idleSteady01",0.23};
-			variantAfter[] = {1,1,1};
-			collisionShape = "ca\Anims\Characters\data\Geom\Sdr\Perc_Idle.p3d";
-			ConnectTo[] = {"AmovPercMstpSnonWnonDnon",0.01,"AidlPercMstpSnonWnonDnon0S",0.01};
 			InterpolateTo[] = {};
 		};
 		class AidlPercMstpSnonWnonDnon_player: AidlPercMstpSnonWnonDnon
@@ -47500,19 +47463,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			canPullTrigger = "false";
 			ConnectTo[] = {"AmovPercMstpSnonWnonDnon",0.02};
 			InterpolateTo[] = {"AmovPercMstpSnonWnonDnon",0.02};
-		};
-		class AmovPknlMstpSnonWnonDnon: AmovPercMstpSnonWnonDnon
-		{
-			actions = "CivilKneelActions";
-			duty = -0.7;
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon";
-			collisionShape = "ca\Anims\Characters\data\Geom\Sdr\Pknl_Wnon.p3d";
-			canPullTrigger = "false";
-			enableOptics = -1;
-			disableWeapons = "false";
-			disableWeaponsLong = "false";
-			ConnectTo[] = {"AmovPknlMstpSnonWnonDnon_gear",0.02,"AmovPercMstpSnonWnonDnon_gear",0.02,"AmovPknlMstpSnonWnonDnon_turnL",0.02,"AmovPknlMstpSnonWnonDnon_turnR",0.02,"AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf",0.01,"amovpknlmstpsnonwnondnon_amovpknlmstpsraswpstdnon",0.02,"AmovPknlMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon",0.02,"AmovPknlMstpSnonWnonDnon_AmovPpneMstpSnonWnonDnon",0.02,"amovpknlmstpsnonwnondnon_amovpknlmstpsraswlnrdnon",0.01,"AidlPknlMstpSnonWnonDnon",0.01,"AidlPknlMstpSnonWnonDnon_player",0.01,"AmovPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon",0.02,"c7a_bravoErcTOknl",0.01};
-			InterpolateTo[] = {"AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic",0.02,"AmovPknlMstpSnonWnonDnon_turnL",0.02,"AmovPknlMstpSnonWnonDnon_turnR",0.02,"AmovPknlMrunSnonWnonDf",0.02,"AmovPknlMwlkSnonWnonDf",0.02,"AmovPknlMwlkSnonWnonDbr",0.02,"AmovPknlMwlkSnonWnonDbl",0.02,"AmovPknlMwlkSnonWnonDb",0.02,"AmovPknlMwlkSnonWnonDl",0.02,"AmovPknlMwlkSnonWnonDr",0.02,"AmovPknlMwlkSnonWnonDfr",0.02,"AmovPknlMwlkSnonWnonDfl",0.02,"AmovPknlMrunSnonWnonDfl",0.02,"AmovPknlMrunSnonWnonDl",0.02,"AmovPknlMrunSnonWnonDbl",0.02,"AmovPknlMrunSnonWnonDb",0.02,"AmovPknlMrunSnonWnonDbr",0.02,"AmovPknlMrunSnonWnonDr",0.02,"AmovPknlMrunSnonWnonDfr",0.02,"AdthPknlMstpSnonWnonDnon_1",0.01,"AdthPknlMstpSnonWnonDnon_2",0.01,"AmovPercMstpSnonWnonDnon_AcinPknlMwlkSnonWnonDb_2",0.1};
 		};
 		class AmovPknlMstpSnonWnonDnon_gear: AmovPknlMstpSnonWnonDnon
 		{
@@ -47985,19 +47935,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			ConnectTo[] = {};
 			InterpolateTo[] = {"AmovPercMstpSrasWrflDnon",0.02,"AmovPercMrunSlowWrflDfr",0.025,"AmovPercMwlkSrasWrflDfr",0.025,"AmovPercMrunSrasWrflDf",0.025,"AmovPercMrunSrasWrflDr",0.025,"AmovPknlMrunSrasWrflDfr",0.03,"AmovPercMrunSlowWrflDf_AmovPpneMstpSrasWrflDnon",0.02,"AmovPercMevaSrasWrflDf",0.02,"AmovPercMevaSrasWrflDfr",0.025,"AmovPercMevaSlowWrflDfr",0.025,"AmovPercMrunSlowWrflDf_AmovPercMevaSrasWrflDl",0.02,"AmovPercMrunSlowWrflDf_AmovPercMevaSrasWrflDr",0.02,"AmovPercMrunSlowWrflDf_AmovPercMevaSrasWrflDb",0.02,"AdthPercMstpSlowWrflDf_1",0.01,"AdthPercMstpSlowWrflDf_2",0.01,"AdthPercMstpSlowWrflDf_4",0.01};
 		};
-		class AmovPercMwlkSnonWnonDf: AmovPercMstpSnonWnonDnon
-		{
-			actions = "CivilWlkActionsF";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDf";
-			soundEdge[] = {0.25,0.5,0.75,1};
-			speed = 0.47619;
-			duty = -0.1;
-			soundOverride = "walk";
-			soundEnabled = "true";
-			walkcycles = 2;
-			ConnectTo[] = {};
-			InterpolateTo[] = {"AmovPercMwlkSnonWnonDfr",0.025,"AmovPercMrunSnonWnonDf",0.025,"AmovPercMwlkSnonWnonDnon_transition",0.015,"AmovPercMwlkSnonWnonDfl",0.025,"AmovPknlMwlkSnonWnonDf",0.03,"AmovPercMevaSnonWnonDf",0.025,"AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthStart",0.1};
-		};
 		class AmovPercMwlkSnonWnonDfl: AmovPercMwlkSnonWnonDf
 		{
 			actions = "CivilWlkActionsFL";
@@ -48022,14 +47959,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			ConnectTo[] = {};
 			InterpolateTo[] = {"AmovPercMwlkSnonWnonDnon_transition",0.015,"AmovPercMwlkSnonWnonDl",0.025,"AmovPercMwlkSnonWnonDb",0.025,"AmovPercMrunSnonWnonDbl",0.025,"AmovPknlMwlkSnonWnonDbl",0.03};
 		};
-		class AmovPercMwlkSnonWnonDb: AmovPercMwlkSnonWnonDf
-		{
-			actions = "CivilWlkActionsB";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\Erc\Wlk\non\non\AmovPercMwlkSnonWnonDb";
-			speed = 0.337079;
-			ConnectTo[] = {};
-			InterpolateTo[] = {"AmovPercMwlkSnonWnonDnon_transition",0.015,"AmovPercMwlkSnonWnonDbl",0.025,"AmovPercMwlkSnonWnonDbr",0.025,"AmovPercMrunSnonWnonDb",0.025,"AmovPknlMwlkSnonWnonDb",0.03};
-		};
 		class AmovPercMwlkSnonWnonDbr: AmovPercMwlkSnonWnonDf
 		{
 			actions = "CivilWlkActionsBR";
@@ -48053,23 +47982,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			speed = 0.47619;
 			ConnectTo[] = {};
 			InterpolateTo[] = {"AmovPercMwlkSnonWnonDnon_transition",0.015,"AmovPercMwlkSnonWnonDf",0.025,"AmovPercMwlkSnonWnonDr",0.15,"AmovPercMrunSnonWnonDfr",0.025,"AmovPknlMwlkSnonWnonDfr",0.03,"AmovPercMevaSnonWnonDfr",0.025,"AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthStart",0.1};
-		};
-		class AmovPercMrunSnonWnonDf: AmovPercMstpSnonWnonDnon
-		{
-			actions = "CivilRunActionsF";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\Erc\run\non\non\AmovPercMrunSnonWnonDf";
-			speed = 1.1;
-			soundEdge[] = {0.25,0.5,0.75,1};
-			duty = 0.1;
-			soundOverride = "run";
-			soundEnabled = "true";
-			relSpeedMin = 0.697171;
-			relSpeedMax = 1.09651;
-			limitGunMovement = 0.1;
-			walkcycles = 2;
-			disableWeapons = "true";
-			ConnectTo[] = {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",0.02};
-			InterpolateTo[] = {"AmovPercMrunSnonWnonDfl",0.025,"AmovPercMstpSnonWnonDnon",0.02,"AmovPercMwlkSnonWnonDf",0.025,"AmovPercMrunSnonWnonDfr",0.025,"AmovPknlMrunSnonWnonDf",0.03,"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",0.02,"AmovPercMevaSnonWnonDf",0.02};
 		};
 		class AmovPercMrunSnonWnonDfl: AmovPercMrunSnonWnonDf
 		{
@@ -49470,31 +49382,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			ConnectTo[] = {};
 			InterpolateTo[] = {"AmovPknlMstpSrasWlnrDnon",0.02,"AmovPknlMrunSrasWlnrDfr",0.025,"AmovPknlMwlkSrasWlnrDf",0.025,"AmovPknlMwlkSrasWlnrDr",0.025,"AdthPknlMwlkSrasWlnrDf_1",0.01,"AdthPknlMwlkSrasWlnrDf_2",0.01,"AmovPercMwlkSlowWlnrDfl",0.03,"AmovPercMwlkSrasWlnrDfr",0.03};
 		};
-		class AmovPknlMrunSnonWnonDf: AmovPknlMstpSnonWnonDnon
-		{
-			file = "\ca\anims\characters\data\anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondf";
-			soundEdge[] = {0.25,0.5,0.75,1};
-			speed = 0.666667;
-			duty = 0.2;
-			soundOverride = "run";
-			soundEnabled = "true";
-			actions = "CivilKneelActionsRunF";
-			collisionShape = "ca\Anims\Characters\data\Geom\Sdr\Pknl_Mrun_Slow_Wrfl.p3d";
-			walkcycles = 2;
-			disableWeapons = "true";
-			ConnectTo[] = {};
-			InterpolateTo[] = {"AmovPercMrunSnonWnonDf",0.03,"AmovPknlMstpSnonWnonDnon",0.02,"AmovPknlMwlkSnonWnonDf",0.025,"AmovPknlMrunSnonWnonDfl",0.025,"AmovPknlMrunSnonWnonDfr",0.025};
-		};
-		class AmovPknlMwlkSnonWnonDf: AmovPknlMrunSnonWnonDf
-		{
-			file = "\ca\anims\characters\data\anim\sdr\mov\knl\wlk\non\non\amovpknlmwlksnonwnondf";
-			speed = 0.337079;
-			duty = 0.05;
-			walkcycles = 2;
-			actions = "CivilKneelActionsWlkF";
-			ConnectTo[] = {};
-			InterpolateTo[] = {"AmovPknlMstpSnonWnonDnon",0.02,"AmovPercMwlkSnonWnonDf",0.03,"AmovPknlMrunSnonWnonDf",0.025,"AmovPknlMwlkSnonWnonDfr",0.025,"AmovPknlMwlkSnonWnonDfl",0.025};
-		};
 		class AmovPknlMwlkSnonWnonDbr: AmovPknlMwlkSnonWnonDf
 		{
 			file = "\ca\anims\characters\data\anim\sdr\mov\knl\wlk\non\non\amovpknlmwlksnonwnondbr";
@@ -49510,14 +49397,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			actions = "CivilKneelActionsWlkBL";
 			ConnectTo[] = {};
 			InterpolateTo[] = {"AmovPknlMstpSnonWnonDnon",0.02,"AmovPercMwlkSnonWnonDbl",0.03,"AmovPknlMwlkSnonWnonDb",0.025,"AmovPknlMwlkSnonWnonDl",0.025,"AmovPknlMrunSnonWnonDbl",0.025};
-		};
-		class AmovPknlMwlkSnonWnonDb: AmovPknlMwlkSnonWnonDf
-		{
-			file = "\ca\anims\characters\data\anim\sdr\mov\knl\wlk\non\non\amovpknlmwlksnonwnondb";
-			speed = 0.29703;
-			actions = "CivilKneelActionsWlkB";
-			ConnectTo[] = {};
-			InterpolateTo[] = {"AmovPknlMstpSnonWnonDnon",0.02,"AmovPercMwlkSnonWnonDb",0.03,"AmovPknlMwlkSnonWnonDbr",0.025,"AmovPknlMwlkSnonWnonDbl",0.025,"AmovPknlMrunSnonWnonDb",0.025};
 		};
 		class AmovPknlMwlkSnonWnonDl: AmovPknlMwlkSnonWnonDf
 		{
@@ -49581,14 +49460,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			actions = "CivilKneelActionsRunBL";
 			ConnectTo[] = {};
 			InterpolateTo[] = {"AmovPknlMstpSnonWnonDnon",0.02,"AmovPercMrunSnonWnonDbl",0.03,"AmovPknlMwlkSnonWnonDbl",0.025,"AmovPknlMrunSnonWnonDl",0.025,"AmovPknlMrunSnonWnonDb",0.025};
-		};
-		class AmovPknlMrunSnonWnonDb: AmovPknlMrunSnonWnonDf
-		{
-			file = "\ca\anims\characters\data\anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondb";
-			speed = 0.666667;
-			actions = "CivilKneelActionsRunB";
-			ConnectTo[] = {};
-			InterpolateTo[] = {"AmovPknlMstpSnonWnonDnon",0.02,"AmovPercMrunSnonWnonDb",0.03,"AmovPknlMwlkSnonWnonDb",0.025,"AmovPknlMrunSnonWnonDbl",0.025,"AmovPknlMrunSnonWnonDbr",0.025};
 		};
 		class AmovPknlMrunSnonWnonDbr: AmovPknlMrunSnonWnonDf
 		{
@@ -51308,37 +51179,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			ConnectTo[] = {"AmovPknlMstpSnonWnonDnon",0.02,"AmovPercMstpSnonWnonDnon_gear",0.02};
 			InterpolateTo[] = {"AmovPknlMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon",0.02,"AdthPknlMstpSnonWnonDnon_1",0.01};
 		};
-		class AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon: TransAnimBase
-		{
-			actions = "CivilStandActions";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\erc\spr\non\non\AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon.rtm";
-			speed = 0.95;
-			onLandBeg = "false";
-			onLandEnd = "true";
-			soundOverride = "laydown";
-			canPullTrigger = "false";
-			aiming = "aimingCivil";
-			aimingBody = "aimingUpCivil";
-			enableDirectControl = 0;
-			interpolationRestart = "true";
-			collisionShape = "ca\Anims\Characters\Data\Geom\Sdr\Perc_Wnon.p3d";
-			duty = 2;
-			ConnectTo[] = {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon_2",0.02};
-			InterpolateTo[] = {"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon_2: AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon
-		{
-			actions = "CivilProneActions";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\erc\spr\non\non\AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon_2.rtm";
-			speed = 1.5;
-			soundOverride = "laydown";
-			canPullTrigger = "false";
-			aiming = "aimingCivil";
-			aimingBody = "aimingUpCivil";
-			duty = 2;
-			ConnectTo[] = {"AmovPpneMstpSnonWnonDnon",0.02};
-			InterpolateTo[] = {"AdthPpneMstpSnonWnonDnon",0.01};
-		};
 		class AmovPercMstpSnonWnonDnon_AmovPpneMstpSnonWnonDnon: TransAnimBase
 		{
 			actions = "CivilProneActions";
@@ -51354,32 +51194,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			duty = 0.5;
 			ConnectTo[] = {"AmovPpneMstpSnonWnonDnon",0.02};
 			InterpolateTo[] = {"AmovPpneMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon",0.02,"AdthPpneMstpSnonWnonDnon",0.01};
-		};
-		class AmovPknlMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon: TransAnimBase
-		{
-			actions = "CivilStandActions";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon.rtm";
-			speed = 0.652174;
-			soundOverride = "standup";
-			canPullTrigger = "false";
-			aiming = "aimingCivil";
-			aimingBody = "aimingUpDefault";
-			limitGunMovement = 0.1;
-			duty = 0.5;
-			ConnectTo[] = {"AmovPercMstpSnonWnonDnon",0.02};
-			InterpolateTo[] = {"AmovPercMstpSnonWnonDnon_AmovPknlMstpSnonWnonDnon",0.02,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf: TransAnimBase
-		{
-			actions = "CivilKneelActions";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf";
-			speed = 2.55;
-			canPullTrigger = "false";
-			aiming = "aimingCivil";
-			aimingBody = "aimingUpCivil";
-			enableDirectControl = 0;
-			ConnectTo[] = {"AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf_2",0.01};
-			InterpolateTo[] = {"AdthPknlMstpSnonWnonDnon_1",0.01};
 		};
 		class AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf_2: AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf
 		{
@@ -59634,149 +59448,6 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 			ConnectTo[] = {"AidlPknlMstpSrasWlnrDnon0S",0.02};
 			InterpolateTo[] = {"AmovPknlMstpSrasWlnrDnon",0.02,"AdthPknlMstpSrasWlnrDnon_1",0.01};
 		};
-		class AidlPercMstpSnonWnonDnon0S: AmovPercMstpSnonWnonDnon
-		{
-			equivalentTo = "AidlPercMstpSnonWnonDnon01";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AidlPercMstpSnonWnonDnon01",0.01,"AidlPercMstpSnonWnonDnon02",0.01,"AidlPercMstpSnonWnonDnon03",0.01,"AidlPercMstpSnonWnonDnon04",0.01,"AidlPercMstpSnonWnonDnon05",0.01,"AidlPercMstpSnonWnonDnon06",0.01,"AidlPercMstpSnonWnonDnon07",0.01,"AidlPercMstpSnonWnonDnon08",0.01,"AidlPercMstpSnonWnonDnon_idleSteady01",0.01,"AidlPercMstpSnonWnonDnon_idleSteady02",0.01,"AidlPercMstpSnonWnonDnon_idleSteady03",0.01,"AidlPercMstpSnonWnonDnon_idleSteady04",0.01};
-			InterpolateTo[] = {"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon01: AidlPercMstpSnonWnonDnon0S
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon01";
-			speed = 0.29;
-			looped = "false";
-			variantAfter[] = {1,1,1};
-			interpolationSpeed = 6;
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon02: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon02";
-			speed = 0.31;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon03: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon03";
-			speed = 0.48;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon04: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon04";
-			speed = 0.37;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon05: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon05";
-			speed = 0.21;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon06: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon06";
-			speed = 0.33;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon07: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon07";
-			speed = 0.22;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon08: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon08";
-			speed = 0.25;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01,"AdthPercMstpSnonWnonDnon_1",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon_idleSteady01: AidlPercMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon_idleSteady01";
-			speed = 0.069767;
-			interpolationSpeed = 30;
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon_idleSteady02: AidlPercMstpSnonWnonDnon_idleSteady01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon_idleSteady02";
-			speed = 0.064516;
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon_idleSteady03: AidlPercMstpSnonWnonDnon_idleSteady01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon_idleSteady03";
-			speed = 0.070588;
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01};
-		};
-		class AidlPercMstpSnonWnonDnon_idleSteady04: AidlPercMstpSnonWnonDnon_idleSteady01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\erc\stp\non\non\AidlPercMstpSnonWnonDnon_idleSteady04";
-			speed = 0.070588;
-			ConnectTo[] = {"AidlPercMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AidlPercMstpSnonWnonDnon",0.01};
-		};
-		class AidlPknlMstpSnonWnonDnon: AmovPknlMstpSnonWnonDnon
-		{
-			variantsAI[] = {"AidlPknlMstpSnonWnonDnon01",0.04,"AidlPknlMstpSnonWnonDnon02",0.03,"AidlPknlMstpSnonWnonDnon03",0.03,"AidlPknlMstpSnonWnonDnon_idleSteady03",0.3,"AidlPknlMstpSnonWnonDnon_idleSteady02",0.3,"AidlPknlMstpSnonWnonDnon_idleSteady01",0.3};
-			variantAfter[] = {0,0,0};
-			ConnectTo[] = {"AmovPknlMstpSnonWnonDnon",0.01,"AidlPknlMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {};
-		};
-		class AidlPknlMstpSnonWnonDnon0S: AidlPknlMstpSnonWnonDnon
-		{
-			equivalentTo = "AidlPknlMstpSnonWnonDnon01";
-			collisionShape = "ca\Anims\Characters\Data\Geom\Sdr\Pknl_Wnon.p3d";
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Mov\knl\stp\non\non\AmovPknlMstpSnonWnonDnon";
-			variantAfter[] = {1,1,1};
-			ConnectTo[] = {"AidlPknlMstpSnonWnonDnon01",0.01,"AidlPknlMstpSnonWnonDnon02",0.01,"AidlPknlMstpSnonWnonDnon03",0.01,"AidlPknlMstpSnonWnonDnon_idleSteady01",0.01,"AidlPknlMstpSnonWnonDnon_idleSteady02",0.01,"AidlPknlMstpSnonWnonDnon_idleSteady03",0.01};
-			InterpolateTo[] = {"AdthPknlMstpSnonWnonDnon_1",0.01,"AidlPknlMstpSnonWnonDnon",0.01};
-		};
-		class AidlPknlMstpSnonWnonDnon01: AidlPknlMstpSnonWnonDnon0S
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\knl\stp\non\non\AidlPknlMstpSnonWnonDnon01";
-			speed = 0.23;
-			looped = "false";
-			variantAfter[] = {1,1,1};
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPknlMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AdthPknlMstpSnonWnonDnon_1",0.01,"AidlPknlMstpSnonWnonDnon",0.01};
-		};
-		class AidlPknlMstpSnonWnonDnon02: AidlPknlMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\knl\stp\non\non\AidlPknlMstpSnonWnonDnon02";
-			speed = 0.18;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPknlMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AdthPknlMstpSnonWnonDnon_1",0.01,"AidlPknlMstpSnonWnonDnon",0.01};
-		};
-		class AidlPknlMstpSnonWnonDnon03: AidlPknlMstpSnonWnonDnon01
-		{
-			file = "\ca\Anims\Characters\data\Anim\Sdr\Idl\knl\stp\non\non\AidlPknlMstpSnonWnonDnon03";
-			speed = 0.26;
-			canPullTrigger = "false";
-			ConnectTo[] = {"AidlPknlMstpSnonWnonDnon0S",0.01};
-			InterpolateTo[] = {"AdthPknlMstpSnonWnonDnon_1",0.01,"AidlPknlMstpSnonWnonDnon",0.01};
-		};
 		class AidlPknlMstpSnonWnonDnon_player: AidlPknlMstpSnonWnonDnon
 		{
 			variantsAI[] = {};
@@ -62843,6 +62514,14 @@ class CfgMovesPlayerZombie: CfgMovesBasic
 		empty[] = {};
 	};
 };
+
+class CfgMovesPlayerZombie: CfgMovesZombieBase 
+{
+
+};
+
+
+
 
 
 class CfgFaces

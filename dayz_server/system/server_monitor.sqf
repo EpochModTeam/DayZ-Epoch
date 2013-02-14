@@ -103,6 +103,9 @@ diag_log "HIVE: Starting";
 					_object setpos _pos;
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
+				if (_object isKindOf "VaultStorageLocked") then {
+					_object setpos _pos;
+				};
 				_object setdir _dir;
 				_object setDamage _damage;
 				

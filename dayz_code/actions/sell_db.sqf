@@ -91,7 +91,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	
 	_count = 0;
 	if(_stype == "CfgVehicles") then {
-		_count = position player nearObjects [_name,10];
+		_count = count (position player nearObjects [_name,10]);
 	};
 	if(_stype == "CfgMagazines") then {
 		_count = {_x == _name} count magazines player;

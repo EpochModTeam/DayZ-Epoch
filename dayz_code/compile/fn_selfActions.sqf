@@ -52,8 +52,9 @@ if(_isPZombie) then {
 	//hint str(_state);
 	if (s_player_callzombies < 0) then {
 		s_player_callzombies = player addAction ["Raise Horde", "\z\addons\dayz_code\actions\call_zombies.sqf",player, 5, true, false, "",""];
-		//s_player_callzombies1 = player addAction ["Zombie Vison", "\z\addons\dayz_code\actions\vison_zombie.sqf",player, 4, true, false, "",""];
-
+	};
+	if (s_player_pzombiesattack < 0) then {
+		s_player_pzombiesattack = player addAction ["Attack", "\z\addons\dayz_code\actions\pzombie\pz_attack.sqf",cursorTarget, 6, true, false, "",""];
 	};
 };
 
@@ -150,7 +151,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	
 	if(_isPZombie) then {
 		// Pzombie Gut human corpse or animal
-		if ((_isAnimal or _isMan) and !_isHarvested and _canDo) then {
+		if (!alive cursorTarget and (_isAnimal or _isMan) and !_isZombie and !_isHarvested and _canDo) then {
 			if (s_player_butcher < 0) then {
 				s_player_butcher = player addAction ["Feed", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false, "",""];
 			};

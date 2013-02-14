@@ -1416,6 +1416,35 @@ class CfgMagazines
 		model = "\dayz_equip\models\silver_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
 		descriptionShort = "Silver Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 10oz bar";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemSilverBar10oz"};
+			};
+		};
+	};
+	
+	class ItemSilverBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Silver";
+		model = "\dayz_equip\models\silver_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
+		descriptionShort = "10oz Silver Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemSilverBar"};
+			};
+		};
 	};
 	class ItemCopperBar: CA_Magazine
 	{
@@ -1430,9 +1459,29 @@ class CfgMagazines
 		{
 			class Crafting
 			{
-				text = "Smelt Bronze";
+				text = "Smelt 10oz bar";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemBronzeBar"};
+				output[] = {"ItemCopperBar10oz"};
+			};
+		};
+	};
+
+	class ItemCopperBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Copper";
+		model = "\dayz_equip\models\copper_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_copper_CA.paa";
+		descriptionShort = "10oz Copper Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemCopperBar"};
 			};
 		};
 	};
@@ -1456,6 +1505,34 @@ class CfgMagazines
 		model = "\dayz_equip\models\aluminum_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_aluminum_CA.paa";
 		descriptionShort = "Aluminum Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 10oz bar";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemAluminumBar10oz"};
+			};
+		};
+	};
+	class ItemAluminumBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Aluminum";
+		model = "\dayz_equip\models\aluminum_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_aluminum_CA.paa";
+		descriptionShort = "10oz Aluminum Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemAluminumBar"};
+			};
+		};
 	};
 	class ItemTinBar: CA_Magazine
 	{
@@ -1466,6 +1543,34 @@ class CfgMagazines
 		model = "\dayz_equip\models\tin_bar.p3d";
 		picture = "\dayz_equip\textures\equip_bar_tin_CA.paa";
 		descriptionShort = "Tin Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 10oz bar";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemTinBar10oz"};
+			};
+		};
+	};
+	class ItemTinBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Tin";
+		model = "\dayz_equip\models\tin_bar.p3d";
+		picture = "\dayz_equip\textures\equip_bar_tin_CA.paa";
+		descriptionShort = "10oz Tin Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				output[] = {"ItemTinBar"};
+			};
+		};
 	};
 
 	class ItemZombieParts: CA_Magazine

@@ -1,4 +1,4 @@
-private["_hasKnife","_qty","_item","_text","_string","_type","_loop","_meat","_timer"];
+private ["_item","_id"];
 _item = _this select 3;
 
 // remove menu
@@ -12,10 +12,10 @@ s_player_callzombies = 1;
 
 [player,"spotted",0,false] call dayz_zombieSpeak;
 
-_id = [player,100,true,(getPosATL player)] spawn player_alertZombies;
+_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
 // wait a bit
-sleep 6;
+sleep 15;
 
 // allow menu again
 s_player_callzombies = -1;

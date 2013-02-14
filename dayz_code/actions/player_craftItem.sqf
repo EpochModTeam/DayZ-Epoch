@@ -79,6 +79,49 @@ if (inflamed cursorTarget and _canDo) then {
 		[ ["ItemGoldBar",10] ],
 		[ ["ItemGoldBar10oz",1] ]
 	];
+
+	_recipe_ItemSilverBar10oz = [
+		[ ["ItemSilverBar10oz",1] ],
+		[ ["ItemSilverBar",10] ]
+	];
+	
+	_recipe_ItemSilverBar = [
+		[ ["ItemSilverBar",10] ],
+		[ ["ItemSilverBar10oz",1] ]
+	];
+
+	_recipe_ItemCopperBar10oz = [
+		[ ["ItemCopperBar10oz",1] ],
+		[ ["ItemCopperBar",10] ]
+	];
+	
+	_recipe_ItemCopperBar = [
+		[ ["ItemCopperBar",10] ],
+		[ ["ItemCopperBar10oz",1] ]
+	];
+
+	_recipe_ItemTinBar10oz = [
+		[ ["ItemTinBar10oz",1] ],
+		[ ["ItemTinBar",10] ]
+	];
+	
+	_recipe_ItemTinBar = [
+		[ ["ItemTinBar",10] ],
+		[ ["ItemTinBar10oz",1] ]
+	];
+
+	_recipe_ItemAluminumBar10oz = [
+		[ ["ItemAluminumBar10oz",1] ],
+		[ ["ItemAluminumBar",10] ]
+	];
+	
+	_recipe_ItemAluminumBar = [
+		[ ["ItemAluminumBar",10] ],
+		[ ["ItemAluminumBar10oz",1] ]
+	];
+
+
+	
 	
 	_recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
 	_recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];

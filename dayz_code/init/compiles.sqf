@@ -225,12 +225,21 @@ if (!isDedicated) then {
 		_dikCode = 	_this select 1;
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
+
+			if (player isKindOf  "PZombie_VB") exitWith {
+				//player action ["sitDown", player];
+				player switchAction "sitDown";
+				//player playMoveNow "ZombieStandingAttack1";
+				//player switchMove "AmovPercMstpSnonWnonDnon";
+				diag_log "Saved player zombie from animation lockup?";
+			};
+
 			DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",500]) > 1);
 			if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
 				canRoll = false;
 				null = [] spawn {
 					if (DoRE) then {
-					[nil, player, rSWITCHMOVE,"ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
+						[nil, player, rSWITCHMOVE,"ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
 					} else {
 						player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
 					};

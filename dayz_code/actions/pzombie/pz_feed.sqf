@@ -1,25 +1,19 @@
-private["_item","_id","_regen","_isAnimal","_animalType","_isMan","_config","_isListed","_qty","_ent"];
+private ["_item","_id","_regen","_isAnimal","_animalType","_isMan","_config","_isListed","_qty","_ent","_ctrlBlood","_rnd","_move","_display","_control","_bloodVal"];
 _item = _this select 3;
 _ent = _item;
 
+disableSerialization;
+
 player removeAction s_player_butcher;
+s_player_butcher = 1;
 
-if (_ent isKindOf "Animal") then {
-	_ent setDamage 1;
-} else {
-	_ent setHit ["legs",1];
-	_ent setVariable ["hit_legs",2,true];
-};
+if(!(alive _item)) then {
 
-_rnd = round(random 4) + 1;
-_move = "ZombieFeed" + str(_rnd);
+	_rnd = round(random 4) + 1;
+	_move = "ZombieFeed" + str(_rnd);
+	player playMoveNow _move;
 
-[nil, player, rSWITCHMOVE,_move] call RE;
-					
-sleep 5;
-
-if(not alive _item) then {
-
+	sleep 1;
 
 	// player playActionNow "PutDown";
 	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
@@ -91,8 +85,10 @@ if(not alive _item) then {
 	_control ctrlShow true;
 
 
-	cutText [format[(localize  "str_player_consumed"),_item, "PLAIN DOWN"];
-
+	cutText [format[(localize  "str_player_consumed"),_animalType], "PLAIN DOWN"];
+	player switchmove "";
 };
+
+
 
 s_player_butcher = -1;
