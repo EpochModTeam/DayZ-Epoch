@@ -1610,7 +1610,7 @@ class CfgVehicles
 	{
 		side = 1;
 		glassesEnabled = 0;
-		moves = "CfgMovesZombie";
+		moves = "CfgMovesPlayerZombie";
 		gestures = "CfgGesturesMale";
 
 		weapons[] = {};
