@@ -17,37 +17,45 @@ _failed = false;
 
 _qty = {_x == _part_in} count magazines player;
 
+// find total number of possible trades
+_total_trades = floor (_qty / _qty_in);
+
 if (_qty >= _qty_in) then {
 
-	// Take currency
-	for "_x" from 1 to _qty_in do {
-		player removeMagazine _part_in;
-	};
-	
-	// check for space if buying and do not check if selling
-	for "_x" from 1 to _qty_out do {
-		if(_buy_o_sell == "buy") then {
-			_isOk = [player,_part_out] call BIS_fnc_invAdd;
-			if (!_isOk) exitWith { _failed = true; };
-			_counter = _counter + 1;
-		} else {
-			player addMagazine _part_out;
-		};
-	};
+	// trade all items
+	for "_x" from 1 to _total_trades do {
 
-	// revert trade since it failed
-	if(_failed) then {
-		// add back currency
+		// Take currency
 		for "_x" from 1 to _qty_in do {
-			player addMagazine _part_in;
+			player removeMagazine _part_in;
 		};
-		// remove partial trade
-		for "_x" from 1 to _counter do {
-			player removeMagazine _part_out;
+	
+		// check for space if buying and do not check if selling
+		for "_x" from 1 to _qty_out do {
+			if(_buy_o_sell == "buy") then {
+				_isOk = [player,_part_out] call BIS_fnc_invAdd;
+				if (!_isOk) exitWith { _failed = true; };
+				_counter = _counter + 1;
+			} else {
+				player addMagazine _part_out;
+			};
 		};
-		cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
-	} else {
-		cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+
+		// revert trade since it failed
+		if(_failed) then {
+			// add back currency
+			for "_x" from 1 to _qty_in do {
+				player addMagazine _part_in;
+			};
+			// remove partial trade
+			for "_x" from 1 to _counter do {
+				player removeMagazine _part_out;
+			};
+			cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+		} else {
+			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+			sleep 2;
+		};
 	};
 	
 } else {
