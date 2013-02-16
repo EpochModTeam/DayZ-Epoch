@@ -145,7 +145,7 @@ class Citizen1;	// External class reference
 	
 	class Mi17_DZ: Mi17_base	
 	{
-		displayname = "Mi-8M";
+		displayname = "Mi-17";
 		displaynameshort = "Mi17_DZ";
 		scope = 2;
 		side = 2;
@@ -173,7 +173,26 @@ class Citizen1;	// External class reference
 			};
 		};
 	};
-	
+	class Mi17_Civilian;
+	class Mi17_Civilian_DZ: Mi17_Civilian	
+	{
+		displayname = "Mi-17 Civilian";
+		displaynameshort = "Mi17_Civilian_DZ";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 50;
+        transportmaxbackpacks = 10;
+	};
+
 	class UH1H_base: Helicopter 
 	{
 		class Turrets: Turrets

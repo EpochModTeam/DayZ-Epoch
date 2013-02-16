@@ -100,26 +100,6 @@ if (inflamed cursorTarget and _canDo) then {
 		[ ["ItemCopperBar10oz",1] ]
 	];
 
-	_recipe_ItemTinBar10oz = [
-		[ ["ItemTinBar10oz",1] ],
-		[ ["ItemTinBar",10] ]
-	];
-	
-	_recipe_ItemTinBar = [
-		[ ["ItemTinBar",10] ],
-		[ ["ItemTinBar10oz",1] ]
-	];
-
-	_recipe_ItemAluminumBar10oz = [
-		[ ["ItemAluminumBar10oz",1] ],
-		[ ["ItemAluminumBar",10] ]
-	];
-	
-	_recipe_ItemAluminumBar = [
-		[ ["ItemAluminumBar",10] ],
-		[ ["ItemAluminumBar10oz",1] ]
-	];
-
 
 	
 	

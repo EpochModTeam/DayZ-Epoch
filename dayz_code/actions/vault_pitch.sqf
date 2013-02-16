@@ -33,7 +33,7 @@ if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"p
 //diag_log ("Pitch Tent: " + str(_isok) );
 
 // Start Preview loop 
-_tmpvault = createVehicle ["VaultStorageLocked", _location, [], 0, "NONE"];
+_tmpvault = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
 _tmpvault setdir _dir;
 _tmpvault attachTo [player,[_offset_x,_offset_y,_offset_z_attach]];
 

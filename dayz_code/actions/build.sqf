@@ -1,6 +1,8 @@
 private["_location","_isOk","_dir","_classname","_item"];
+
 _location = player modeltoworld [0,1,0];
 _location set [2,0];
+
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		(surfaceIsWater _location) or dayz_isSwimming;
 
@@ -17,23 +19,86 @@ _hasbuilditem = _this in magazines player;
 
 if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]};
 
+// Get inital direction of player
 _dir = getDir player;
-player removeMagazine _item;
 
-player playActionNow "Medic";
-sleep 1;
-[player,"repair",0,false] call dayz_zombieSpeak;
-_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
-sleep 5;
+_offset_x = 0; 
+_offset_y = 1.5;
+_offset_z = 0;
+_offset_z_attach = 0.5;
+
+// Start Preview loop 
+_tmpbuilt = createVehicle ["_classname", _location, [], 0, "CAN_COLLIDE"];
+_tmpbuilt setdir _dir;
+_tmpbuilt attachTo [player,[_offset_x,_offset_y,_offset_z_attach]];
+
+_cancel = false;
+_counter = 0;
+_isOk = true;
+
+while {_isOk} do {
 	
-player allowDamage false;
-_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-_object setDir _dir;
-player reveal _object;
+	if(_counter == 0) then {
+		cutText ["Planning consruction stand still 5 seconds to build.", "PLAIN DOWN"];
+		sleep 5; 
+		_location1 = getPosATL player;
+		sleep 5;
+		_location2 = getPosATL player;
+	
+		if(_location1 distance _location2 < 0.1) exitWith {
+			
+			cutText ["Started consruction move within 5 seconds to cancel.", "PLAIN DOWN"];
+			_location3 = getPosATL player;
+			sleep 5;
+			_location4 = getPosATL player;
 
-cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
+			if(_location3 distance _location4 > 0.1) exitWith {
+				_isOk = false;
+				_cancel = true;
+			};
 
-["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+			_isOk = false;
+		};
+	};
+	if(_counter >= 1) exitWith {
+		_isOk = false;
+		_cancel = true;
+	};
+	_counter = _counter + 1;
+};
 
-sleep 2;
-player allowDamage true;
+detach _tmpbuilt;
+
+// Get location of detached tmp built
+_built_location = (getPosATL _tmpbuilt);
+
+// force to ground
+_built_location set [2,0];
+
+if(!_cancel) then {
+
+	_dir = getDir player;
+
+	player removeMagazine _item;
+
+	player playActionNow "Medic";
+	sleep 1;
+	[player,"repair",0,false] call dayz_zombieSpeak;
+	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+	sleep 5;
+	
+	player allowDamage false;
+	_object = createVehicle [_classname, _built_location, [], 0, "CAN_COLLIDE"];
+	_object setDir _dir;
+	player reveal _object;
+
+	cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
+
+	["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+
+	sleep 2;
+	player allowDamage true;
+
+} else {
+	cutText [format["Canceled construction of %1.",_text], "PLAIN DOWN"];
+};
