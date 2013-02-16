@@ -1213,6 +1213,24 @@ class CfgWeight
 			weight = 0.1;
 		};
 		
+		class ItemBandage 
+		{
+			weight = 0.005;
+		};
+		
+		class Hatchet_Swing 
+		{
+			weight = 0;
+		};
+		class Crowbar_Swing 
+		{
+			weight = 0;
+		};
+		 
+		class ItemVault 
+		{
+			weight = 100; 
+		};
 		
 		class PartWoodPile 
 		{
@@ -1233,6 +1251,10 @@ class CfgWeight
 		class PartEngine 
 		{
 			weight = 15;
+		};
+		class ItemGenerator
+		{
+			weight = 30;
 		};
 		class PartGeneric 
 		{
@@ -1265,6 +1287,54 @@ class CfgWeight
 		class ItemWire 
 		{
 			weight = 2.5;
+		};
+		class ItemGoldBar  
+		{
+			weight = 0.02;
+		};
+		class ItemGoldBar10oz
+		{
+			weight = 0.2;
+		};
+		class ItemSilverBar 
+		{
+			weight = 0.02;
+		};
+		class ItemSilverBar10oz 
+		{
+			weight = 0.2;
+		};
+		class ItemBronzeBar 
+		{
+			weight = 0.02;
+		};
+		class ItemCopperBar 
+		{
+			weight = 0.02;
+		};
+		class ItemCopperBar10oz 
+		{
+			weight = 0.2;
+		};
+		class ItemAluminumBar 
+		{
+			weight = 0.02;
+		};
+		class ItemTinBar 
+		{
+			weight = 0.02;
+		};
+		class BoltSteel 
+		{
+			weight = 0.02;
+		};
+		class BoltSteel4pack 
+		{
+			weight = 0.08;
+		};
+		class TrashTinCan 
+		{
+			weight = 0.003;
 		};
 		
 	};

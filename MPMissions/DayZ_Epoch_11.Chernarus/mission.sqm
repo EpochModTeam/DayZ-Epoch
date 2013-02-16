@@ -1298,7 +1298,7 @@ class Mission
 			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; placevault = true;";
 			class Effects
 			{
-				soundDet="arabian_market_2";
+				soundDet="arabian_market_1";
 			};
 		};
 		class Item2
@@ -1314,7 +1314,7 @@ class Mission
 			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; placevault = true;";
 			class Effects
 			{
-				soundDet="arabian_market_3";
+				soundDet="arabian_market_1";
 			};
 		};
 	};

@@ -35,12 +35,12 @@ menu_Rocker4 = [
 
 // Parts Traders
 menu_Woodlander3 = [
-	[["Car Parts",21],["Building Supplies",22]],
+	[["Vehicle Parts",21],["Building Supplies",22]],
 	[],
 	"friendly"
 ];
 menu_Woodlander1 = [
-	[["Car Parts",2121],["Building Supplies",2222]],
+	[["Vehicle Parts",2121],["Building Supplies",2222]],
 	[],
 	"friendly"
 ];
@@ -49,26 +49,20 @@ menu_Woodlander1 = [
 menu_RU_WorkWoman1 = [
 	[["Food and Drinks",51],["Backpacks",52],["Toolbelt Items",53],["Clothes",54]],
 	[
-		["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar",103],
-		["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar",102],
 		["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]
 	],
 	"friendly"
 ];
 menu_RU_WorkWoman5 = [
-	[["Food and Drinks",5151],["Backpacks",5252],["Toolbelt",5353],["Clothes",5454]],
+	[["Food and Drinks",5151],["Backpacks",5252],["Toolbelt Items",5353],["Clothes",5454]],
 	[
-		["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar",103],
-		["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar",102],
 		["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]
 	],
 	"friendly"
 ];
 menu_Rita_Ensler_EP1 = [
-	[["Food and Drinks",515151],["Backpacks",525252],["Toolbelt",535353],["Clothes",545454]],
+	[["Food and Drinks",515151],["Backpacks",525252],["Toolbelt Items",535353],["Clothes",545454]],
 	[
-		["ItemCopperBar","ItemSodaEmpty",1,3,"buy","Empty Soda Cans","Copper Bar",103],
-		["ItemCopperBar","TrashTinCan",1,3,"buy","Empty Tin Cans","Copper Bar",102],
 		["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]
 	],
 	"friendly"
@@ -93,12 +87,12 @@ menu_Pilot_EP1 = [
 ];
 // Auto Traders
 menu_Worker3 = [
-	[["Cars",41],["Trucks Unarmed",42],["SUV",466],["Buses and Vans",467],["Offroad",43],["Helicopter Unarmed",44],["Military Unarmed",45]],
+	[["Cars",41],["Trucks Unarmed",42],["SUV",466],["Buses and Vans",467],["Bikes and ATV",43],["Helicopter Unarmed",44],["Military Unarmed",45]],
 	[],
 	"friendly"
 ];
 menu_Profiteer4 = [
-	[["Trucks Armed",422],["Utility",46],["Helicopter Armed",444],["Military Armed",455],["Fuel Trucks",47],["Heavy Armor Unarmed",48]],
+	[["Trucks Armed",422],["UAZ",46],["Helicopter Armed",444],["Military Armed",455],["Fuel Trucks",47],["Heavy Armor Unarmed",48]],
 	[],
 	"friendly"
 ];
@@ -119,10 +113,19 @@ menu_Doctor = [
 menu_RU_Functionary1 = [
 	[["Vaults",411]],
 	[ 
-		["ItemSilverBar","ItemCopperBar",1,6,"buy","Copper","Silver",103],
-		["ItemCopperBar","ItemSilverBar",6,1,"buy","Silver","Copper",102],
-		["ItemGoldBar","ItemSilverBar",1,6,"buy","Silver","Gold",101],
-		["ItemSilverBar","ItemGoldBar",6,1,"buy","Gold","Silver",100]
+
+		["ItemTinBar","ItemAluminumBar",1,2,"buy","Aluminum","Tin",108], 
+		["ItemAluminumBar","ItemTinBar",2,1,"buy","Tin","Aluminum",107],
+		
+		["ItemCopperBar","ItemTinBar",1,2,"buy","Tin","Copper",106],
+		["ItemTinBar","ItemCopperBar",2,1,"buy","Copper","Tin",105],
+		
+		["ItemSilverBar","ItemCopperBar10oz",1,1,"buy","10oz Copper","Silver",104],
+		["ItemCopperBar10oz","ItemSilverBar",1,1,"buy","Silver","10oz Copper",103],
+		
+		["ItemGoldBar","ItemSilverBar10oz",1,3,"buy","10oz Silver","Gold",102],
+		["ItemSilverBar10oz","ItemGoldBar",3,1,"buy","Gold","10oz Silver",101]
+		
 	],
 	"neutral"
 ];
