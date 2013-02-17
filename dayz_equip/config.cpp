@@ -1940,6 +1940,23 @@ class CfgVehicles
 		displayName = "Hedgehog (Steel)";
 		vehicleClass = "Fortifications";
 	};
+
+
+	class Fort_RazorWire : BuiltItems { 
+	  scope = 2; 
+	  animated = 0; 
+	  vehicleClass = "Fortifications"; 
+	  model = "\ca\misc\Fort_Razorwire"; 
+	  icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa"; 
+	  accuracy = 0.3; 
+	  mapSize = 5.5; 
+	  displayName = "Wire"; 
+	  destrType = "DestructTent"; 
+	  armor = 100; 
+	  GhostPreview = "Fort_RazorWirePreview"; 
+	}
+
+
 	class Sandbag1_DZ: BuiltItems
 	{
 		scope = 2;

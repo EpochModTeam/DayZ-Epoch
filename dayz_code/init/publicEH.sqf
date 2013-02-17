@@ -63,6 +63,7 @@ registerBroadcastRpc = {
 ["usecPainK",			{ (_this select 1) call player_medPainkiller; }	] call registerBroadcastRpc;
 //BIS_Effects_Burn is empty on the server anyway, but this EH is called
 ["dayzFire",			{ (_this select 1) spawn BIS_Effects_Burn; }	] call registerBroadcastRpc;
+["usecBreakLegs",		{ (_this select 1) call player_breaklegs; }	] call registerBroadcastRpc;
 
 //server only
 if (isServer) then {
@@ -77,7 +78,6 @@ if (!isDedicated) then {
 	["dayzHideBody",		{ hideBody (_this select 1); }														] call registerBroadcastRpc;
 	["dayzHumanity",		{ (_this select 1) spawn player_humanityChange; }									] call registerBroadcastRpc;
 	["dayzHitV",			{ (_this select 1) call fnc_usec_damageVehicle; }									] call registerBroadcastRpc;
-
 	["dayzFlies",			{ (_this select 1) call spawn_flies; }												] call registerBroadcastRpc;
 	["dayzRoadFlare",		{ (_this select 1) spawn object_roadFlare; }										] call registerBroadcastRpc;
 	["norrnRaDrag",			{ [_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"; }	] call registerBroadcastRpc;

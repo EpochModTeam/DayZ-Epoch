@@ -19,16 +19,7 @@ _isZombie = _ent isKindOf "zZombie_base";
 if (_ent isKindOf "Animal" or _isZombie) then {
 	_ent setDamage 1;
 } else {
-
-	// TODO TEST AND Improve
-	_cnt = count (DAYZ_woundHit select 1);
-	_index = floor (random _cnt);
-	_index = (DAYZ_woundHit select 1) select _index;
-	_wound = (DAYZ_woundHit select 0) select _index; 
-
-	_damage = 0.1 + random (1.2);
-
-	[_item, _wound, _damage, player,"zombie"] call fnc_usec_damageHandler;
+	["usecBreakLegs",[_unit,player]] call broadcastRpcCallAll;
 };
 
 

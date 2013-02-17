@@ -69,66 +69,68 @@ if (_spawnDMG) then {
 };
 
 //Send request
-_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _characterID, _worldspace, [], _array, _fuel,_uid];  // Change this to dynamic parts damage and fuel
+_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _characterID, _worldspace, [], _array, _fuel,_uid];
 diag_log ("HIVE: WRITE: "+ str(_key)); 
 _key call server_hiveWrite;
 
+// Switched to spawn so we can wait a bit for the ID
+[_object,_uid,_fuel,_damage,_array,_characterID,_class] spawn {
+   private["_object","_uid","_fuel","_damage","_array","_characterID","_done","_retry","_key","_result","_outcome","_oid","_selection","_dam","_class"];
 
-_done = false;
-_retry = 0;
-// TODO: Needs major overhaul
-while {_retry < 15} do {
-	
-    // GET DB ID
-	_key = format["CHILD:388:%1:",_uid];
-	diag_log ("HIVE: WRITE: "+ str(_key));
-	_result = _key call server_hiveReadWrite;
-	_outcome = _result select 0;
-	if (_outcome == "PASS") then {
-		_oid = _result select 1;
-		_object setVariable ["ObjectID", _oid, true];
-		diag_log("CUSTOM: Selected " + str(_oid));
-		_done = true;
-		_retry = 100;
+   _object = _this select 0;
+   _uid = _this select 1;
+   _fuel = _this select 2;
+   _damage = _this select 3;
+   _array = _this select 4;
+   _characterID = _this select 5;
+   _class = _this select 6;
 
-	} else {
-		diag_log("CUSTOM: trying again to get id for: " + str(_uid));
-		_done = false;
-		_retry = _retry + 1;
+   _done = false;
+	_retry = 0;
+	// TODO: Needs major overhaul
+	while {_retry < 10} do {
+		
+		sleep 1;
+		// GET DB ID
+		_key = format["CHILD:388:%1:",_uid];
+		diag_log ("HIVE: WRITE: "+ str(_key));
+		_result = _key call server_hiveReadWrite;
+		_outcome = _result select 0;
+		if (_outcome == "PASS") then {
+			_oid = _result select 1;
+			_object setVariable ["ObjectID", _oid, true];
+			diag_log("CUSTOM: Selected " + str(_oid));
+			_done = true;
+			_retry = 100;
+
+		} else {
+			diag_log("CUSTOM: trying again to get id for: " + str(_uid));
+			_done = false;
+			_retry = _retry + 1;
+		};
 	};
+	if(!_done) exitWith { deleteVehicle _object; diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
+
+	_object setVariable ["lastUpdate",time];
+	_object setVariable ["CharacterID", _characterID, true];
+	_object setDamage _damage;
+
+	// Set Hits after ObjectID is set
+	{
+		_selection = _x select 0;
+		_dam = _x select 1;
+		if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
+		[_object,_selection,_dam] call object_setFixServer;
+	} forEach _array;
+
+	
+	_object setFuel _fuel;
+	
+	_object setvelocity [0,0,1];
+
+	_object call fnc_vehicleEventHandler;
+
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+
+	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
 };
-if(!_done) exitWith { deleteVehicle _object; diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
-
-
-// disable marker later
-//_marker = createMarker [str(_location) , _location];
-//_marker setMarkerShape "ICON";
-//_marker setMarkerType "DOT";
-//_marker setMarkerText (typeOf _object);
-//_marker setMarkerColor "ColorBlue";
-
-// try this instead of commented out ID code above
-// worked except vehicle pos was not saved
-// _object setVariable ["ObjectUID", _uid, true];
-
-_object setVariable ["lastUpdate",time];
-_object setVariable ["CharacterID", _characterID, true];
-
-_object setDamage _damage;
-
-// Set Hits after ObjectID is set
-{
-	_selection = _x select 0;
-	_dam = _x select 1;
-	if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
-	[_object,_selection,_dam] call object_setFixServer;
-} forEach _array;
-
-_object setvelocity [0,0,1];
-_object setFuel _fuel;
-
-_object call fnc_vehicleEventHandler;
-
-dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
-
-diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
