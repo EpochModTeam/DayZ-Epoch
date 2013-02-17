@@ -199,7 +199,7 @@ spawn_vehicles = {
 				} else {
 					// Spawn air anywhere that is flat
 					waitUntil{!isNil "BIS_fnc_selectRandom"};
-					_position = [MarkerPosition,0,DynamicVehicleArea,25,0,1,0] call BIS_fnc_findSafePos;
+					_position = [MarkerPosition,0,DynamicVehicleArea,10,0,2000,0] call BIS_fnc_findSafePos;
 					//diag_log("DEBUG: spawning air anywhere flat " + str(_position));
 				};
 			

@@ -89,7 +89,7 @@ class CfgMagazines {
 				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require = "ItemToolbox";
-				create = "Wire_cat1";
+				create = "Fort_RazorWire";
 			};
 		};
 	};
