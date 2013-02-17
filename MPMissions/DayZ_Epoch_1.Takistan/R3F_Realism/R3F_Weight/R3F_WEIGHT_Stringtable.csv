@@ -1,0 +1,12 @@
+﻿/****************************************************************************
+Copyright (C) 2010 Team ~R3F~
+This program is free software under the terms of the GNU General Public License version 3.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+@authors team-r3f.org
+@version 1.00
+@date 20101006
+*****************************************************************************/
+R3F_VERSION_WEIGHTED, "1.04", "1.04"
+STR_R3F_WEIGHT_InGearBox, "%1 | Weight carried : %2 lb", "%1 | Poids transporté : %2 Kg"
+STR_R3F_WEIGHT_English, "lb", "Kg"
