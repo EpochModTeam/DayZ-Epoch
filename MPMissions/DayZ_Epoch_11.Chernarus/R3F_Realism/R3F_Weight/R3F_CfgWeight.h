@@ -1336,6 +1336,24 @@ class CfgWeight
 		{
 			weight = 0.003;
 		};
+		class 7Rnd_45ACP_1911 
+		{
+			weight = 0.02;
+		};
+		class ItemZombieParts 
+		{
+			weight = 5;
+		};
+		class ItemSandbag 
+		{
+			weight = 10;
+		};
+		class ItemSandbagLarge 
+		{
+			weight = 50;
+		};
+		
+		
 		
 	};
 };

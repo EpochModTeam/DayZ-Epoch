@@ -176,13 +176,12 @@ class Citizen1;	// External class reference
 	class Mi17_Civilian;
 	class Mi17_Civilian_DZ: Mi17_Civilian	
 	{
-		displayname = "Mi-17 Civilian";
-		displaynameshort = "Mi17_Civilian_DZ";
+		displayname = "Mi-17 (Civilian)";
+		displaynameshort = "Mi-17 (Civ)";
 		scope = 2;
-		side = 2;
+		side = 3;
 		crew = "";
 		typicalCargo[] = {};
-		hiddenSelections[] = {};
 		class TransportMagazines{};
 		class TransportWeapons{};
 		commanderCanSee = 2+16+32;
@@ -191,7 +190,10 @@ class Citizen1;	// External class reference
 		transportMaxWeapons = 10;
 		transportMaxMagazines = 50;
         transportmaxbackpacks = 10;
+		supplyRadius = 0; 
 	};
+
+
 
 	class UH1H_base: Helicopter 
 	{

@@ -100,6 +100,12 @@ if (inflamed cursorTarget and _canDo) then {
 		[ ["ItemCopperBar10oz",1] ]
 	];
 
+	_recipe_ItemSandbagLarge = [
+		[ ["ItemSandbagLarge",1] ],
+		[ ["ItemSandbag",3],["ItemWire",1] ]
+	];
+	
+
 
 	
 	

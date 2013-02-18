@@ -1246,6 +1246,14 @@ class CfgMagazines
 		model = "\dayz_equip\models\woodPile.p3d";
 		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_40";
+		class ItemActions {
+			class Build {
+				text = "Build Branch Fence";
+				script = "spawn player_build;";
+				require = "ItemToolbox";
+				create = "Wall_FenW2_6_EP1";
+			};
+		};
 	};
 	class PartVRotor: CA_Magazine
 	{
