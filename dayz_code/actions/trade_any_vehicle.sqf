@@ -49,7 +49,7 @@ if (_qty >= _qty_in) then {
 				_location = (getPosATL (_helipad select 0));	
 			} else {
 				_location = [(position player),0,20,1,0,20,0] call BIS_fnc_findSafePos;
-			}
+			};
 	
 			//place tent (local)
 			_veh = createVehicle [_part_out, _location, [], 0, "CAN_COLLIDE"];
