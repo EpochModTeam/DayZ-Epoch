@@ -103,8 +103,8 @@ diag_log "HIVE: Starting";
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
 
-				_object setpos _pos;
 				_object setdir _dir;
+				_object setpos _pos;
 				_object setDamage _damage;
 				
 				if (count _intentory > 0) then {

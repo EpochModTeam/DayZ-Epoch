@@ -190,7 +190,6 @@ class Citizen1;	// External class reference
 		transportMaxWeapons = 10;
 		transportMaxMagazines = 50;
         transportmaxbackpacks = 10;
-		supplyRadius = 0; 
 	};
 
 

@@ -9,9 +9,11 @@ _locationstypes = _this select 5;
 _nearestCity = _this select 6;
 _maxZombies = _this select 7;
 
+/*
 if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
+*/
 
 _zombied = (_x getVariable ["zombieSpawn",-0.1]);
 _dateNow = (DateToNumber date);

@@ -1,5 +1,8 @@
 private["_position","_veh","_location","_isOk","_backpack","_vehType","_trg","_key","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID"];
 
+if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 // [part_out,part_in, qty_out, qty_in, loc];
 
 _activatingPlayer = _this select 1;
@@ -101,3 +104,5 @@ if (_qty >= _qty_in) then {
 	_needed =  _qty_in - _qty;
 	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 };
+
+TradeInprogress = false;

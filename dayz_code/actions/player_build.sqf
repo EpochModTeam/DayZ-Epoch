@@ -93,6 +93,7 @@ if (_hasrequireditem or _bypass) then {
 		player allowDamage false;
 		_object = createVehicle [_classname, _built_location, [], 0, "CAN_COLLIDE"];
 		_object setDir _dir;
+		_object setpos _built_location;
 		player reveal _object;
 
 		cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];

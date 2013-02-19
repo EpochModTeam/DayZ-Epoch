@@ -264,7 +264,11 @@ dayz_maxAnimals = 5;
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
-dayz_maxLocalZombies = 40;
+
+if(isNil "dayzTraderMenuResult") then {
+	dayz_maxLocalZombies = 40;
+};
+
 dayz_spawnPos = getPosATL player;
 
 //init global arrays for Loot Chances
@@ -356,6 +360,7 @@ if(!isDedicated) then {
 	dayzGearSave = 			false;
 	dayz_unsaved =			false;
 	UnlockInprogress =		false;
+	TradeInprogress =		false;
 	dayz_scaleLight = 		0;
 	dayzDebug = false;
 	dayzState = -1;

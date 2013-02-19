@@ -8,6 +8,8 @@ _maxZombies = dayz_maxLocalZombies;
 _maxWildZombies = 3;
 _age = -1;
 
+
+
 _nearbyBuildings = [];
 _radius = 300; 
 _position = getPosATL player;
@@ -39,6 +41,7 @@ switch (_nearbytype) do {
 */
 
 _spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]) < _maxZombies;
+
 
 if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
@@ -97,11 +100,13 @@ if (_nearbyCount < 1) exitwith {};
 		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity] call player_spawnlootCheck;
 	};
 	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
-		if (dayz_spawnZombies < dayz_maxLocalZombies) then {
-	if (_spawnZombies) then {
-		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
-};
+		if (dayz_spawnZombies < _maxZombies) then {
+			if (_spawnZombies) then {
+				hintSilent format["Spawning %1 / %2 <br /> total: %3 ",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
+				[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
+			};
 		} else {
+			hintSilent format["Waiting %1 / %2 <br /> total: %3",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
 			dayz_spawnWait = time;
 			dayz_spawnZombies = 0;
 		};

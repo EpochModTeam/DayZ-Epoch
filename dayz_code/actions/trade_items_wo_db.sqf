@@ -1,6 +1,9 @@
 private["_activatingPlayer","_part_out","_part_in","_qty_out","_qty_in","_buy_o_sell","_textPartIn","_textPartOut","_traderID","_counter","_failed","_qty","_isOk","_needed"];
 // [part_out,part_in, qty_out, qty_in,];
 
+if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 //_activatingPlayer = _this select 1;
 
 _part_out = (_this select 3) select 0;
@@ -13,7 +16,11 @@ _textPartOut = (_this select 3) select 6;
 //_traderID = (_this select 3) select 7;
 
 _counter = 0;
+_success = false;
 _failed = false;
+
+_total_in = 0;
+_total_out = 0;
 
 _qty = {_x == _part_in} count magazines player;
 
@@ -21,6 +28,8 @@ _qty = {_x == _part_in} count magazines player;
 _total_trades = floor (_qty / _qty_in);
 
 if (_qty >= _qty_in) then {
+
+	
 
 	// trade all items
 	for "_x" from 1 to _total_trades do {
@@ -53,12 +62,20 @@ if (_qty >= _qty_in) then {
 			};
 			cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 		} else {
-			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-			sleep 2;
+			
+			_total_in = _total_in + _qty_in;
+			_total_out = _total_out + _qty_out;
+			_success = true;
+			
 		};
+	};
+	if(_success) then {
+		cutText [format[("Traded %1 %2 for %3 %4"),_total_in,_textPartIn,_total_out,_textPartOut], "PLAIN DOWN"];
 	};
 	
 } else {
 	_needed =  _qty_in - _qty;
 	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 };
+
+TradeInprogress = false;

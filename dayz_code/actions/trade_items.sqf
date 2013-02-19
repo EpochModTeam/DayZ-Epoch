@@ -1,6 +1,9 @@
 private["_iarray","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_isOk"];
 // [part_out,part_in, qty_out, qty_in,];
 
+if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _activatingPlayer = _this select 1;
 
 _part_out = (_this select 3) select 0;
@@ -145,3 +148,5 @@ if (_bulkqty >= 1) then {
 		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 	};
 };
+
+TradeInprogress = false;
