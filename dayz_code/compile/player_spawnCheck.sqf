@@ -102,11 +102,11 @@ if (_nearbyCount < 1) exitwith {};
 	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
 		if (dayz_spawnZombies < _maxZombies) then {
 			if (_spawnZombies) then {
-				hintSilent format["Spawning %1 / %2 <br /> total: %3 ",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
+				//hintSilent format["Spawning %1 / %2 <br /> total: %3 ",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
 				[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 			};
 		} else {
-			hintSilent format["Waiting %1 / %2 <br /> total: %3",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
+			//hintSilent format["Waiting %1 / %2 <br /> total: %3",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
 			dayz_spawnWait = time;
 			dayz_spawnZombies = 0;
 		};

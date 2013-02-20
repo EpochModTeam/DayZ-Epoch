@@ -76,8 +76,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	_canmove = canmove cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
 	
-	
-
 	_rawmeat = meatraw;
 	_hasRawMeat = false;
 		{

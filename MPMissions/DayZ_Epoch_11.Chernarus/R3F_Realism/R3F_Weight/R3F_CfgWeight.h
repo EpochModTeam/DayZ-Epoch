@@ -702,6 +702,10 @@ class CfgWeight
 		{
 			weight = 0.5;
 		};
+		class 15Rnd_W1866_Slug
+		{
+			weight = 0.5;
+		};
 		class 30Rnd_9x19_MP5
 		{
 			weight =  0.4;
@@ -801,6 +805,10 @@ class CfgWeight
 		class 20Rnd_762x51_DMR
 		{
 			weight = 0.5;
+		};		
+		class 8Rnd_B_Beneli_Pellets
+		{
+			weight = 0.3;
 		};
 		class 20Rnd_556x45_Stanag
 		{
@@ -1054,6 +1062,10 @@ class CfgWeight
 		{
 			weight = 0.5;
 		};
+		class ItemWaterbottleBoiled
+		{
+			weight = 0.5;
+		};
 		class ItemSodaMdew
 		{
 			weight = 0.2;
@@ -1075,6 +1087,10 @@ class CfgWeight
 			weight = 0.2;
 		};
 		class FoodCanFrankBeans
+		{
+			weight = 0.2;
+		};
+		class FoodBioMeat
 		{
 			weight = 0.2;
 		};
@@ -1352,6 +1368,19 @@ class CfgWeight
 		{
 			weight = 50;
 		};
+		class ItemWaterbottleUnfilled 
+		{
+			weight = 0.05;
+		};
+		class ItemSodaEmpty 
+		{
+			weight = 0.002;
+		};
+		class TrashJackDaniels 
+		{
+			weight = 0.02;
+		};
+		
 		
 		
 		

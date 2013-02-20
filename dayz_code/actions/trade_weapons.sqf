@@ -58,39 +58,34 @@ if (_bulkqty >= 1) then {
 	// gold = 6 silver
 	// 
 
-	if (_part_out == "ItemSilverBar") then {
+	if (_part_out == "ItemSilverBar" and _qty_out >= 30) then {
 		
-		if (_qty_out >= 6) then {
+
 	
-			// find number of gold
-			_gold_out = _qty_out / 6;
+		// find number of gold
+		_gold_out = _qty_out / 30;
 			
-			// whole number of gold bars
-			_gold_qty_out = floor _gold_out;
+		// whole number of gold bars
+		_gold_qty_out = floor _gold_out;
 			
-			_part_out = "ItemGoldBar";
-			for "_x" from 1 to _gold_qty_out do {
-				player addMagazine _part_out;
-			};
-
-			// Find remainder 
-			_partial_qty_out = (_gold_out - _gold_qty_out) * 6;
-			
-			// whole number of gold bars
-			_silver_qty_out = floor _partial_qty_out;
-
-			_part_out = "ItemSilverBar";
-			for "_x" from 1 to _silver_qty_out do {
-				player addMagazine _part_out;
-			};
-
-
-		} else {
-		
-			for "_x" from 1 to _qty_out do {
-				player addMagazine _part_out;
-			};
+		_part_out = "ItemGoldBar";
+		for "_x" from 1 to _gold_qty_out do {
+			player addMagazine _part_out;
 		};
+
+		// Find remainder 
+		_partial_qty_out = (_gold_out - _gold_qty_out) * 30;
+			
+		// whole number of silver bars
+		_silver_qty_out = floor _partial_qty_out;
+
+		_part_out = "ItemSilverBar";
+		for "_x" from 1 to _silver_qty_out do {
+			player addMagazine _part_out;
+		};
+
+
+	
 
 	} else {
 		

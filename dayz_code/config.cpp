@@ -27,7 +27,7 @@ class CfgMods
 {
 	class DayZ
 	{
-		dir = "DayZ";
+		dir = "@DayZ_Epoch";
 		name = "DayZ Epoch";
 		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
 		hidePicture = 0;

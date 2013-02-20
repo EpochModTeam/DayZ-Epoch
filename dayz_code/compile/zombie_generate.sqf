@@ -27,10 +27,12 @@ if (_doLoiter) then {
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
 
+/*
 if(!(_agent == objNull)) then {
 	dayzSpawnZed = [_agent];
 	publicVariableServer "dayzSpawnZed";
 };
+*/
 
 if (_doLoiter) then {
 	_agent setPosATL _position;

@@ -44,10 +44,10 @@ if (_qty >= _qty_in) then {
 				player removeMagazine _part_in;
 			};
 	
-			_dir = 90;	
+			_dir = round(random 180);
 
 			
-			_helipad = nearestObjects [player, ["HeliHCivil"], 200];
+			_helipad = nearestObjects [player, ["HeliHCivil"], 50];
 			if(count _helipad > 0) then {
 				_location = (getPosATL (_helipad select 0));	
 			} else {

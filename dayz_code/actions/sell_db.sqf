@@ -91,7 +91,15 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	
 	_count = 0;
 	if(_type == "CfgVehicles") then {
-		_count = {(typeOf _x) == _name} count (nearestObjects [player, [_name], 10]);
+		if (_afile == "trade_backpacks") then {
+			_bag = unitBackpack player;
+			_bagclass = typeOf _bag;
+			if(_name == _bagclass) then {
+				_count = 1;
+			};
+		} else {
+			_count = {(typeOf _x) == _name} count (nearestObjects [player, [_name], 10]);
+		}
 	};
 	if(_type == "CfgMagazines") then {
 		_count = {_x == _name} count magazines player;

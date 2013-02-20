@@ -1248,10 +1248,10 @@ class CfgMagazines
 		descriptionShort = "$STR_EQUIP_DESC_40";
 		class ItemActions {
 			class Build {
-				text = "Build Branch Fence";
+				text = "Build Wood Gate";
 				script = "spawn player_build;";
 				require = "ItemToolbox";
-				create = "Wall_FenW2_6_EP1";
+				create = "WoodGate_DZ";
 			};
 		};
 	};
@@ -1796,6 +1796,9 @@ class CfgMagazines
 			};
 		};
 	};
+
+
+
 	class ItemTankTrap: CA_Magazine
 	{
 		scope = 2;
@@ -1964,7 +1967,6 @@ class CfgVehicles
 	  GhostPreview = "Fort_RazorWirePreview"; 
 	}
 
-
 	class Sandbag1_DZ: BuiltItems
 	{
 		scope = 2;
@@ -1975,6 +1977,19 @@ class CfgVehicles
 		mapSize = 2;
 		armor = 400;
 		displayName = "Bag Fence";
+		vehicleClass = "Fortifications";
+	};
+
+	class WoodGate_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructTree"; 
+		cost = 100;
+		model = "\ca\structures\Wall\Gate_wood2_5";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 50;
+		displayName = "Locked Wood Gate";
 		vehicleClass = "Fortifications";
 	};
 	class BearTrap_DZ: TrapItems
