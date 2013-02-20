@@ -101,16 +101,28 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	
 
 	// Allow Owner to lock and unlock vehicle  
-	if(_isVehicle and !_isMan and _canDo and _ownerID != "0" and _ownerID == dayz_playerUID) then {
+	if(_isVehicle and !_isMan and _canDo and _ownerID != "0") then {
 			
 		if (s_player_lockUnlock_crtl < 0) then {
-			_Unlock = player addAction [format["Unlock %1",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",cursorTarget, 2, true, true, "", "(locked cursorTarget)"];
-			_lock = player addAction [format["Lock %1",_text], "\z\addons\dayz_code\actions\lock_veh.sqf",cursorTarget, 1, true, true, "", "(!locked cursorTarget)"];
-		
-			s_player_lockunlock set [count s_player_lockunlock,_Unlock];
-			s_player_lockunlock set [count s_player_lockunlock,_lock];
 
-			s_player_lockUnlock_crtl = 1;
+			if(locked cursorTarget) then {
+				if(_ownerID == dayz_playerUID) then {
+					_Unlock = player addAction [format["Unlock %1",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",cursorTarget, 2, true, true, "", ""];
+					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
+					s_player_lockUnlock_crtl = 1;
+				} else {
+					_Unlock = player addAction ["Vehicle Locked", "",cursorTarget, 2, true, true, "", ""];
+					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
+					s_player_lockUnlock_crtl = 1;
+				};
+			} else {
+				if(_ownerID == dayz_playerUID) then {
+					_lock = player addAction [format["Lock %1",_text], "\z\addons\dayz_code\actions\lock_veh.sqf",cursorTarget, 1, true, true, "", ""];
+					s_player_lockunlock set [count s_player_lockunlock,_lock];
+					s_player_lockUnlock_crtl = 1;
+				};
+			};
+			
 		};
 		 
 	} else {
@@ -129,6 +141,16 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 		s_player_forceSave = -1;
 	};
 	*/
+
+	if((_isVehicle or _isTent) and _canDo and !_isMan) then {
+		if (s_player_checkGear < 0) then {
+			s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\checkcargo.sqf",cursorTarget, 1, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_checkGear;
+		s_player_checkGear = -1;
+	};
+
 	//flip vehicle
 	if ((_isVehicletype) and !_canmove and _isAlive and (player distance cursorTarget >= 2) and (count (crew cursorTarget))== 0 and ((vectorUp cursorTarget) select 2) < 0.5) then {
 		if (s_player_flipveh  < 0) then {
