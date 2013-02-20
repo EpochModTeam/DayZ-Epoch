@@ -111,7 +111,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
 					s_player_lockUnlock_crtl = 1;
 				} else {
-					_Unlock = player addAction ["Vehicle Locked", "",cursorTarget, 2, true, true, "", ""];
+					_Unlock = player addAction ["<t color='#ff0000'>Vehicle Locked</t>", "",cursorTarget, 2, true, true, "", ""];
 					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
 					s_player_lockUnlock_crtl = 1;
 				};
@@ -144,7 +144,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 
 	if((_isVehicle or _isTent) and _canDo and !_isMan) then {
 		if (s_player_checkGear < 0) then {
-			s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\checkcargo.sqf",cursorTarget, 1, true, true, "", ""];
+			s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\cargocheck.sqf",cursorTarget, 1, true, true, "", ""];
 		};
 	} else {
 		player removeAction s_player_checkGear;
@@ -447,6 +447,9 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 
 	//{player removeAction _x} forEach s_player_bank;s_player_bank = [];
 	{player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
+
+	player removeAction s_player_checkGear;
+	s_player_checkGear = -1;
 
 	//s_player_madsci_crtl = -1;
 	s_player_parts_crtl = -1;

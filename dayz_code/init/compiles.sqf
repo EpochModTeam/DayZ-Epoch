@@ -219,6 +219,15 @@ if (!isDedicated) then {
 		hint format["Config: %5\nEmpty: %1\nNeeded: %2\nDiff: %3\nSuccess: %4",_empty,_needed,_diff,_success,_config];
 		_success
 	};
+
+	vehicle_gear_count = {
+		private["_counter"];
+		_counter = 0;
+		{
+			_counter = _counter + _x;
+		} forEach _this;
+		_counter
+	};
 	
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];

@@ -1,4 +1,4 @@
-private["_vehicle"];
+private ["_vehicle","_class","_maxMagazines","_maxWeapons","_maxBackpacks","_magazineCount","_weaponsCount","_backpackCount"];
 _vehicle = _this select 3;
 
 _class = typeOf _vehicle;
@@ -13,12 +13,21 @@ _maxWeapons =	getNumber (configFile >> "CfgVehicles" >> _class >> "transportMaxW
 _maxBackpacks =	getNumber (configFile >> "CfgVehicles" >> _class >> "transportmaxbackpacks");
 
 // Count and show magazines available space 
-_magazineCount = count (getMagazineCargo _vehicle);
+_magazineCount_raw = getMagazineCargo _vehicle;
 
 // Count and show weapons available space
-_weaponsCount = count (getWeaponCargo _vehicle);
+_weaponsCount_raw = getWeaponCargo _vehicle;
 
 // Count and show backpacks available space
-_backpackCount = count (getBackpackCargo _vehicle);
+_backpackCount_raw = getBackpackCargo _vehicle;
 
-cutText [format[("Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6"),_magazineCount,_maxMagazines,_weaponsCount,_maxWeapons,_backpackCount,_maxBackpacks], "PLAIN DOWN"];
+// Count and show magazines available space 
+_magazineCount = (_magazineCount_raw select 1) call vehicle_gear_count;
+
+// Count and show weapons available space
+_weaponsCount = (_weaponsCount_raw select 1) call vehicle_gear_count;
+
+// Count and show weapons available space
+_backpackCount = (_backpackCount_raw select 1) call vehicle_gear_count;
+
+TitleText [format[("Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6"),_magazineCount,_maxMagazines,_weaponsCount,_maxWeapons,_backpackCount,_maxBackpacks], "PLAIN DOWN"];
