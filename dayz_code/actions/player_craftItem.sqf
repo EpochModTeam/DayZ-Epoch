@@ -141,6 +141,12 @@ if (inflamed cursorTarget and _canDo) then {
 
 	if (_proceed) then {
 	
+		player playActionNow "Medic";
+		sleep 1;
+		[player,"repair",0,false] call dayz_zombieSpeak;
+		_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+		sleep 5;
+
 		// Take items
 		{
 			_itemIn = _x select 0;

@@ -78,11 +78,11 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	
 	_rawmeat = meatraw;
 	_hasRawMeat = false;
-		{
-			if (_x in magazines player) then {
-				_hasRawMeat = true;
-			};
-		} forEach _rawmeat; 
+	{
+		if (_x in magazines player) then {
+			_hasRawMeat = true;
+		};
+	} forEach _rawmeat; 
 	
 	if (_hasFuelE) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army");

@@ -47,6 +47,7 @@ AllowedVehiclesList = [
 	["LandRover_CZ_EP1",2],
 	["HMMWV_Ambulance",2],
 	["HMMWV_DES_EP1",1],
+	["HMMWV_DZ",1],
 	["PBX",3],
 	["Zodiac",2],
 	["RHIB",2],
