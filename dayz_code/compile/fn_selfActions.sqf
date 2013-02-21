@@ -360,7 +360,13 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 					s_player_parts set [count s_player_parts,_buy];
 				} forEach (_traderMenu select 0);
 				
+				// Add static metals trader options under sub menu
+
+
 			};
+
+
+
 			s_player_parts_crtl = 1;
 			
 		};
