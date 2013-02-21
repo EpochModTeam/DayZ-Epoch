@@ -47,17 +47,17 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Large Sandbags";
+		displayName = "H-barrier cube";
 		model = "\dayz_equip\models\sandbags.p3d";
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = "Sacks made of hessian and wire that can be filled with sand or soil and used for military fortification.";
 		
 		class ItemActions {
 			class Build {
-				text = "Build Sandbag Wall";
+				text = "Build H-barrier cube";
 				script = "spawn player_build;";
 				require = "ItemEtool";
-				create = "Sandbag1_DZ";
+				create = "Land_HBarrier1_DZ";
 			};
 		};
 	};

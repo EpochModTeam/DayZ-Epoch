@@ -142,7 +142,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	};
 	*/
 
-	if((_isVehicle or _isTent) and _canDo and !_isMan) then {
+	if((_isVehicle or _isTent or (cursorTarget isKindOf "VaultStorage")) and _canDo and !_isMan) then {
 		if (s_player_checkGear < 0) then {
 			s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\cargocheck.sqf",cursorTarget, 1, true, true, "", ""];
 		};

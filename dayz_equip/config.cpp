@@ -1980,6 +1980,29 @@ class CfgVehicles
 		vehicleClass = "Fortifications";
 	};
 
+	class Land_HBarrier1_DZ : BuiltItems { 
+		scope = 2; 
+		animated = 0; 
+		vehicleClass = "Fortifications"; 
+		typicalCargo[] = {}; 
+		irTarget = 0; 
+		accuracy = 0.3; 
+		transportAmmo = 0; 
+		transportRepair = 0; 
+		transportFuel = 0; 
+		destrType = "DestructBuilding"; 
+		armor = 500; 
+		coefInside = 0.5; 
+		coefInsideHeur = 0.8; 
+		cost = 0; 
+		picture = "\CA\ui\data\icon_wf_barriers_ca.paa"; 
+		model = "\ca\misc2\HBarrier1.p3d"; 
+		icon = "\Ca\misc2\data\Icons\icon_hescoBarrier1_ca.paa"; 
+		mapSize = 2; 
+		displayName = "H-barrier cube"; 
+		GhostPreview = "Land_HBarrier1Preview"; 
+	};
+
 	class WoodGate_DZ: BuiltItems
 	{
 		scope = 2;
@@ -1991,6 +2014,14 @@ class CfgVehicles
 		armor = 50;
 		displayName = "Locked Wood Gate";
 		vehicleClass = "Fortifications";
+		class AnimationSources
+		{
+			class DoorR { 
+			  source = "User"; 
+			  animPeriod = 1; 
+			  initPhase = 0; 
+			}
+		}
 	};
 	class BearTrap_DZ: TrapItems
 	{
