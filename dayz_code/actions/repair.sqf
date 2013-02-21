@@ -14,6 +14,9 @@ _section = _part in magazines player;
 _nameType = 		getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = 		getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
+{_vehicle removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+s_player_repair_crtl = 1;
+
 if (_section and _hasToolbox) then {
 
 	_damage = [_vehicle,_hitpoint] call object_getHit;
@@ -45,8 +48,6 @@ if (_section and _hasToolbox) then {
 	cutText [format["You need %1 to repair this",_namePart], "PLAIN DOWN"];
 };
 
-{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
-dayz_myCursorTarget = objNull;
 
 //check if repaired fully
 _hitpoints = _vehicle call vehicle_getHitpoints;
@@ -63,4 +64,6 @@ if (_allFixed) then {
 	_vehicle setDamage 0;
 	["dayzUpdateVehicle",[_vehicle,"repair"]] call callRpcProcedure;
 };
+
+dayz_myCursorTarget = objNull;
 s_player_repair_crtl = -1;

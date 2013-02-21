@@ -13,10 +13,15 @@ _hasToolbox = 	"ItemToolbox" in items player;
 _nameType = 		getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = 		getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
+{_vehicle removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+s_player_repair_crtl = 1;
+
 if (_hasToolbox) then {
 
+	
+
 	_damage = [_vehicle,_hitpoint] call object_getHit;
-	_vehicle removeAction _id;
+	// _vehicle removeAction _id;
 	
 	//dont allow removal of damaged parts
 	if (_damage < 1) then {
@@ -70,6 +75,6 @@ if (_hasToolbox) then {
 	cutText [format["You need %1 to remove this part.",_namePart], "PLAIN DOWN"];
 };
 
-{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+
 dayz_myCursorTarget = objNull;
 s_player_repair_crtl = -1;
