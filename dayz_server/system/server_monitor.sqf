@@ -98,8 +98,10 @@ diag_log "HIVE: Starting";
 				clearWeaponCargoGlobal  _object;
 				clearMagazineCargoGlobal  _object;
 				
-				if (_object isKindOf "TentStorage" or _object isKindOf "Land_HBarrier1" or _object isKindOf "Wall_FenW2_6_EP1") then {
+				if ((typeOf _object) in dayz_allowedObjects) then {
+					// Forces object to ground may not be needed
 					_pos set [2,0];
+					// Must be set to damage buildables
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
 
