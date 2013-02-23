@@ -236,7 +236,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	//Allow owner to unlock vault
 	if(cursorTarget isKindOf "VaultStorageLocked" and _canDo and _ownerID != "0" and _ownerID == dayz_playerUID and !UnlockInprogress) then {
 		if (s_player_unlockvault < 0  and (player distance cursorTarget < 3)) then {
-			s_player_unlockvault = player addAction ["Unlock Vault", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
+			s_player_unlockvault = player addAction ["Unlock Safe", "\z\addons\dayz_code\actions\vault_unlock.sqf",cursorTarget, 0, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_unlockvault;
@@ -247,10 +247,10 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	if(cursorTarget isKindOf "VaultStorage" and _canDo and _ownerID != "0" and _ownerID == dayz_playerUID and (player distance cursorTarget < 3)) then {
 
 		if (s_player_lockvault < 0) then {
-			s_player_lockvault = player addAction ["Lock Vault", "\z\addons\dayz_code\actions\vault_lock.sqf",cursorTarget, 0, false, true, "",""];
+			s_player_lockvault = player addAction ["Lock Safe", "\z\addons\dayz_code\actions\vault_lock.sqf",cursorTarget, 0, false, true, "",""];
 		};
 		if (s_player_packvault < 0) then {
-			s_player_packvault = player addAction ["<t color='#ff0000'>Pack Vault</t>", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
+			s_player_packvault = player addAction ["<t color='#ff0000'>Pack Safe</t>", "\z\addons\dayz_code\actions\vault_pack.sqf",cursorTarget, 0, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_packvault;
@@ -342,6 +342,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 					_humanity_logic = true;
 				};
 			};
+			if((_traderMenu select 2) == "hero") then {
+				_low_high = "low";
+				if (_humanity < 5000) then {
+					_humanity_logic = true;
+				};
+			};
 			if(_humanity_logic) then {
 				_cancel = player addAction ["Your humanity is too " + _low_high + " this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
 				s_player_parts set [count s_player_parts,_cancel];
@@ -361,7 +367,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 				} forEach (_traderMenu select 0);
 				
 				// Add static metals trader options under sub menu
-
+				_metals_trader = player addAction ["Trade Metals", "\z\addons\dayz_code\actions\trade_metals.sqf",["na"], 0, true, false, "",""];
+				s_player_parts set [count s_player_parts,_metals_trader];
 
 			};
 

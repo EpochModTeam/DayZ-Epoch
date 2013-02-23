@@ -1251,7 +1251,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=16;
 		class Item0
 		{
 			position[]={6622.5166,301.31479,6751.1309};
@@ -1329,6 +1329,84 @@ class Mission
 			position[]={2858.8721,211.25105,5644.4614};
 			name="spawn10";
 			type="Empty";
+		};
+		class Item13
+		{
+			position[]={431.62454,303.29282,5554.8208};
+			name="tradercitykush";
+			text="Trader City Khush";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item14
+		{
+			position[]={7818.2983,467.56793,5592.2051};
+			name="Trader_City_GurDur";
+			text="Trader City GurDur";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item15
+		{
+			position[]={9397.8838,497.31366,3307.2654};
+			name="Trader_City_Manara";
+			text="Trader City Manara";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={436.03763,303.48236,5550.8608};
+			a=75;
+			b=75;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zone1";
+			expCond="(player distance zone1) < 75;";
+			expActiv="TitleText[""Now entering trader city Khush"",""PLAIN DOWN""]; placevault = false;";
+			expDesactiv="TitleText[""Now leaving trader city Khush"",""PLAIN DOWN""]; placevault = true;";
+			class Effects
+			{
+				soundDet="arabian_market_1";
+			};
+		};
+		class Item1
+		{
+			position[]={7817.9443,467.54111,5591.3789};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zone2";
+			expCond="(player distance zone2) < 50;";
+			expActiv="TitleText[""Now entering trader city GurDur"",""PLAIN DOWN""]; placevault = false;";
+			expDesactiv="TitleText[""Now leaving trader city GurDur"",""PLAIN DOWN""]; placevault = true;";
+			class Effects
+			{
+				soundDet="arabian_market_1";
+			};
+		};
+		class Item2
+		{
+			position[]={9398.1055,497.21521,3303.7666};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zone3";
+			expCond="(player distance zone3) < 50;";
+			expActiv="TitleText[""Now entering trader city Manara"",""PLAIN DOWN""]; placevault = false;";
+			expDesactiv="TitleText[""Now leaving trader city Manara"",""PLAIN DOWN""]; placevault = true;";
+			class Effects
+			{
+				soundDet="arabian_market_1";
+			};
 		};
 	};
 };

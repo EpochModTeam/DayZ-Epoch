@@ -15,7 +15,7 @@ _textPartIn = (_this select 3) select 5;
 _textPartOut = (_this select 3) select 6;
 //_traderID = (_this select 3) select 7;
 
-_counter = 0;
+
 _success = false;
 _failed = false;
 
@@ -38,38 +38,39 @@ if (_qty >= _qty_in) then {
 		for "_x" from 1 to _qty_in do {
 			player removeMagazine _part_in;
 		};
-	
+		
+		_counter = 0;
+
 		// check for space if buying and do not check if selling
 		for "_x" from 1 to _qty_out do {
+			
 			if(_buy_o_sell == "buy") then {
 				_isOk = [player,_part_out] call BIS_fnc_invAdd;
-				if (!_isOk) exitWith { _failed = true; };
-				_counter = _counter + 1;
+				if (_isOk) then {
+					_counter = _counter + 1;
+				};
+				if (!_isOk) exitWith { _failed = true;  };
 			} else {
 				player addMagazine _part_out;
 			};
 		};
 
 		// revert trade since it failed
-		if(_failed) then {
-			// add back currency
+		if(!_failed) then {
+			_total_in = _total_in + _qty_in;
+			_total_out = _total_out + _qty_out;
+		} else {
+			// Return currency
 			for "_x" from 1 to _qty_in do {
 				player addMagazine _part_in;
 			};
-			// remove partial trade
 			for "_x" from 1 to _counter do {
 				player removeMagazine _part_out;
 			};
-			cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
-		} else {
-			
-			_total_in = _total_in + _qty_in;
-			_total_out = _total_out + _qty_out;
-			_success = true;
-			
 		};
+		if (_failed) exitWith {};
 	};
-	if(_success) then {
+	if(_total_out > 0) then {
 		cutText [format[("Traded %1 %2 for %3 %4"),_total_in,_textPartIn,_total_out,_textPartOut], "PLAIN DOWN"];
 	};
 	

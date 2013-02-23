@@ -269,7 +269,18 @@ class Citizen1;	// External class reference
         transportmaxbackpacks = 2;
 		class Turrets {};
 	};
-class HMMWV_Base;
+	class ArmoredSUV_Base_PMC;
+	class ArmoredSUV_PMC_DZ : ArmoredSUV_Base_PMC { 
+		scope = 2; 
+		side = 2; 
+		faction = "PMC_BAF"; 
+		crew = ""; 
+		typicalCargo[] = {}; 
+		transportMaxWeapons = 20; 
+		transportMaxMagazines = 400; 
+		transportmaxbackpacks = 10;
+	};
+	class HMMWV_Base;
 	class HMMWV_DZ: HMMWV_Base {
 		accuracy = 0.32;
 		displayname = "HMMWV_DZ";

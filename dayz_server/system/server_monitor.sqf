@@ -25,6 +25,8 @@ waitUntil{initialized}; //means all the functions are now defined
 
 diag_log "HIVE: Starting";
 
+_allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ"];
+
 //Stream in objects
 	/* STREAM OBJECTS */
 		//Send the key
@@ -98,7 +100,7 @@ diag_log "HIVE: Starting";
 				clearWeaponCargoGlobal  _object;
 				clearMagazineCargoGlobal  _object;
 				
-				if ((typeOf _object) in dayz_allowedObjects) then {
+				if ((typeOf _object) in _allowedObjects) then {
 					// Forces object to ground may not be needed
 					_pos set [2,0];
 					// Must be set to damage buildables

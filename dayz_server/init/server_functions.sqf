@@ -49,7 +49,7 @@ vehicle_handleServerKilled = {
 };
 
 check_publishobject = {
-	private["_allowed","_object","_playername"];
+	private["_allowed","_object","_playername","_allowedObjects"];
 
 	_object = _this select 0;
 	_playername = _this select 1;
@@ -57,8 +57,9 @@ check_publishobject = {
 	_allowed = false;
        
 	diag_log format ["DEBUG: Checking if Object: %1 is allowed published by %2", _object, _playername];
-       
-	if ((typeOf _object) in dayz_allowedObjects) then {
+    _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ"];   
+
+	if ((typeOf _object) in _allowedObjects) then {
 			diag_log format ["DEBUG: Object: %1 published by %2 is Safe",_object, _playername];
 			_allowed = true;
 	};

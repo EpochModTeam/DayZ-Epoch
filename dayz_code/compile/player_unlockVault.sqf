@@ -16,7 +16,7 @@ UnlockInprogress = true;
 if (_ownerID == dayz_playerUID) then {
 	_alreadyPacking = _obj getVariable["packing",0];
 
-	if (_alreadyPacking == 1) exitWith {cutText ["That vault is already being unlocked." , "PLAIN DOWN"]};
+	if (_alreadyPacking == 1) exitWith {cutText ["That Safe is already being unlocked." , "PLAIN DOWN"]};
 
 	_obj setVariable["packing",1];
 
@@ -79,14 +79,14 @@ if (_ownerID == dayz_playerUID) then {
 		} forEach _objWpnTypes;
 	};
 	
-	cutText ["Vault has been unlocked.", "PLAIN DOWN"];
+	cutText ["Safe has been unlocked.", "PLAIN DOWN"];
 } else {
 	player playActionNow "Medic";
 	sleep 3;
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	null = [player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;
-	cutText ["Combination incorrect, vault is still locked.", "PLAIN DOWN"];
+	cutText ["Combination incorrect, Safe is still locked.", "PLAIN DOWN"];
 };
 
 s_player_unlockvault = -1;

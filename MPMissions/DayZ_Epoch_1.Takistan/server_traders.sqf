@@ -7,6 +7,7 @@ serverTraders = [
 	"TK_CIV_Takistani05_EP1",
 	"Dr_Annie_Baker_EP1",
 	"Woodlander2",
+	"TK_CIV_Takistani02_EP1",
 	"TK_CIV_Takistani03_EP1",
 	"TK_CIV_Takistani06_EP1",
 	"TK_CIV_Takistani04_EP1",
@@ -18,23 +19,9 @@ serverTraders = [
 
 // Metals Traders
 menu_Functionary1 = [
-	[["Vaults",100411]],
-	[ 
-
-		["ItemTinBar","ItemAluminumBar",1,2,"buy","Aluminum","Tin",108], 
-		["ItemAluminumBar","ItemTinBar",2,1,"buy","Tin","Aluminum",107],
-		
-		["ItemCopperBar","ItemTinBar",1,2,"buy","Tin","Copper",106],
-		["ItemTinBar","ItemCopperBar",2,1,"buy","Copper","Tin",105],
-		
-		["ItemSilverBar","ItemCopperBar10oz",1,1,"buy","10oz Copper","Silver",104],
-		["ItemCopperBar10oz","ItemSilverBar",1,1,"buy","Silver","10oz Copper",103],
-		
-		["ItemGoldBar","ItemSilverBar10oz",1,3,"buy","10oz Silver","Gold",102],
-		["ItemSilverBar10oz","ItemGoldBar",3,1,"buy","Gold","10oz Silver",101]
-		
-	],
-	"neutral"
+	[["Clothes",100411]],
+	[],
+	"hero"
 ];
 
 // High end Weapons
@@ -79,7 +66,7 @@ menu_Woodlander2 = [
 
 // Car Parts
 menu_TK_CIV_Takistani03_EP1 = [
-	[["Vehicle Parts",2121],["Building Supplies",2222]],
+	[["Vehicle Parts",102121],["Building Supplies",102222]],
 	[],
 	"friendly"
 ];
@@ -96,7 +83,7 @@ menu_TK_CIV_Takistani04_EP1 = [
 	"friendly"
 ];
 menu_TK_CIV_Woman03_EP1 = [
-	[["Food and Drinks",1515151],["Backpacks",1525252],["Toolbelt Items",1535353],["Clothes",1545454]],
+	[["Food and Drinks",100055],["Backpacks",100056],["Toolbelt Items",100057],["Clothes",100058]],
 	[
 		["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]
 	],
@@ -113,6 +100,13 @@ menu_TK_CIV_Woman02_EP1 = [
 // LOW end Auto Traders
 menu_RU_Profiteer2 = [
 	[["Cars",100041],["Trucks Unarmed",100042],["SUV",100466],["Buses and Vans",100467],["Bikes and ATV",100043],["Helicopter Unarmed",100044],["Military Unarmed",100045]],
+	[],
+	"friendly"
+];
+
+// Car Parts
+menu_TK_CIV_Takistani02_EP1 = [
+	[["Vehicle Parts",2122],["Building Supplies",2223]],
 	[],
 	"friendly"
 ];

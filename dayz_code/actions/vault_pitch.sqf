@@ -135,12 +135,12 @@ if(!_cancel) then {
 
 		["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
 	
-		cutText ["You have setup your vault", "PLAIN DOWN"];
+		cutText ["You have setup your Safe", "PLAIN DOWN"];
 	
 	} else {
-		cutText ["You cannot place a Vault here. The area must be flat, and free of other objects", "PLAIN DOWN"];
+		cutText ["You cannot place a Safe here. The area must be flat, and free of other objects", "PLAIN DOWN"];
 	};
 
 } else {
-	cutText ["Canceled construction of vault.", "PLAIN DOWN"];
+	cutText ["Canceled construction of Safe.", "PLAIN DOWN"];
 };

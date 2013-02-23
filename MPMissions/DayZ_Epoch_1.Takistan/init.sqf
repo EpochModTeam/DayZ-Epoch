@@ -16,7 +16,7 @@ player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
 enableRadio false;
 
-// AMP config
+// DayZ Epochconfig
 spawnShoremode = 0; // Default = 1 (on shore)
 spawnArea= 1000; // Default = 1500
 MaxHeliCrashes= 5; // Default = 5

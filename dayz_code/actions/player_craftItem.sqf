@@ -4,6 +4,9 @@
 */
 private["_onLadder","_canDo","_recipe_ItemTinBar","_recipe_ItemAluminumBar","_recipe_ItemBronzeBar","_recipe_ItemGoldBar10oz","_recipe_ItemGoldBar","_recipe_FoodChickenNoodle","_recipe_FoodBeefBakedBeans","_item","_config","_create","_selectedRecipe","_recipe_","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut"];
 
+if(TradeInprogress) exitWith { cutText ["Crafting already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 // Recipes
 
 // 6 Tin cans = Tin Bar
@@ -171,11 +174,17 @@ if (inflamed cursorTarget and _canDo) then {
 		
 		} forEach _selectedRecipeOutput;
 
+		// get display name
+		_textCreate = getText(configFile >> "CfgMagazines" >> _create >> "displayName");
+
 		// Add crafted item
-		cutText [format["Crafted Item: %1",_create], "PLAIN DOWN"];
+		cutText [format["Crafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
 	} else {
-		cutText [format["Missing component: %1 x %2",_missing,_missingQty], "PLAIN DOWN"];
+		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
+		cutText [format["Missing component: %1 x %2",_textMissing,_missingQty], "PLAIN DOWN"];
 	};
 } else {
 	cutText ["Crafting needs a fire", "PLAIN DOWN"];
 };
+
+TradeInprogress = false;

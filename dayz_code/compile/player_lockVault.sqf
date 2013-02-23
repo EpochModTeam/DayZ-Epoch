@@ -14,7 +14,7 @@ s_player_lockvault = -1;
 if(_ownerID == dayz_playerUID) then {
 	_alreadyPacking = _obj getVariable["packing",0];
 
-	if (_alreadyPacking == 1) exitWith {cutText ["That vault is already being locked." , "PLAIN DOWN"]};
+	if (_alreadyPacking == 1) exitWith {cutText ["That Safe is already being locked." , "PLAIN DOWN"]};
 
 	_obj setVariable["packing",1];
 
@@ -53,7 +53,7 @@ if(_ownerID == dayz_playerUID) then {
 		_holder setVariable ["BackpackCargo", _backpacks, true];
 	};
 	
-	cutText ["Your vault has been locked", "PLAIN DOWN"];
+	cutText ["Your Safe has been locked", "PLAIN DOWN"];
 } else {
-	cutText ["You cannot lock this vault, it is not yours", "PLAIN DOWN"];
+	cutText ["You cannot lock this Safe, it is not yours", "PLAIN DOWN"];
 };

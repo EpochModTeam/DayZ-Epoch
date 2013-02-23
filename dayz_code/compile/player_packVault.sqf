@@ -12,17 +12,17 @@ s_player_packvault = 1;
 
 if(_ownerID == dayz_playerUID) then {
 	_alreadyPacking = _obj getVariable["packing",0];
-	if (_alreadyPacking == 1) exitWith {cutText ["That vault is already being packed." , "PLAIN DOWN"]};
+	if (_alreadyPacking == 1) exitWith {cutText ["That Safe is already being packed." , "PLAIN DOWN"]};
 	_obj setVariable["packing",1];
 
-	cutText ["Packing vault move from this position to cancel within 5 seconds.", "PLAIN DOWN"];
+	cutText ["Packing Safe move from this position to cancel within 5 seconds.", "PLAIN DOWN"];
 	sleep 1; 
 	_location1 = getPosATL player;
 	sleep 5;
 	_location2 = getPosATL player;
 	
 	if(_location1 distance _location2 > 0.1) exitWith {
-		cutText ["Packing vault canceled." , "PLAIN DOWN"]
+		cutText ["Packing Safe canceled." , "PLAIN DOWN"]
 	};
 
 	player playActionNow "Medic";
@@ -84,9 +84,9 @@ if(_ownerID == dayz_playerUID) then {
 	*/
 	
 	
-	cutText ["Your vault has been packed", "PLAIN DOWN"];
+	cutText ["Your Safe has been packed", "PLAIN DOWN"];
 } else {
-	cutText ["You cannot pack this vault, it is not yours", "PLAIN DOWN"];
+	cutText ["You cannot pack this Safe, it is not yours", "PLAIN DOWN"];
 };
 
 s_player_packvault = -1;

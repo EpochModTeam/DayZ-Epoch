@@ -24,7 +24,9 @@ _key call server_hiveWrite;
 
 _object setVariable ["ObjectUID", _uid,true];
 
-if ((typeOf _object) in dayz_allowedObjects) then {
+_allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ"];
+
+if ((typeOf _object) in _allowedObjects) then {
 	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 };
 

@@ -1403,7 +1403,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Gold";
 		model = "\dayz_equip\models\gold_bar_10oz.p3d";
-		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
+		picture = "\dayz_equip\textures\equip_bar_gold10oz_CA.paa";
 		descriptionShort = "10oz Gold Bar";
 		class ItemActions
 		{
@@ -1442,7 +1442,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Silver";
 		model = "\dayz_equip\models\silver_bar_10oz.p3d";
-		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
+		picture = "\dayz_equip\textures\equip_bar_silver10oz_CA.paa";
 		descriptionShort = "10oz Silver Bar";
 		class ItemActions
 		{
@@ -1481,7 +1481,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Copper";
 		model = "\dayz_equip\models\copper_bar_10oz.p3d";
-		picture = "\dayz_equip\textures\equip_bar_copper_CA.paa";
+		picture = "\dayz_equip\textures\equip_bar_copper10oz_CA.paa";
 		descriptionShort = "10oz Copper Bar";
 		class ItemActions
 		{
@@ -1729,6 +1729,29 @@ class CfgMagazines
 	{
 		descriptionShort = "12 x 30Rnd_556x45_StanagSD";
 	};
+	class bulk_ItemSandbag: bulk
+	{
+		descriptionShort = "12 x SandBag";
+	};
+	class bulk_ItemGPS: bulk
+	{
+		descriptionShort = "12 x GPS";
+	};
+	class bulk_ItemMap: bulk
+	{
+		descriptionShort = "12 x Map";
+	};
+	class bulk_ItemEtool: bulk
+	{
+		descriptionShort = "12 x E-Tool";
+	};
+	class bulk_17Rnd_9x19_glock17: bulk
+	{
+		descriptionShort = "12 x 17Rnd_9x19_glock17";
+	};
+	
+	
+	
 	class ItemGenerator: CA_Magazine
 	{
 		scope = 2;
@@ -1745,15 +1768,15 @@ class CfgMagazines
 		scope = 2;
 		count = 1;
 		type = "(256 * 12)";
-		displayName = "Vault";
+		displayName = "Safe";
 		model = "\dayz_equip\models\safe1_onside.p3d";
 		picture = "\dayz_equip\textures\equip_safe_ca.paa";
-		descriptionShort = "Personal Vault";
+		descriptionShort = "Personal Safe";
 		class ItemActions
 		{
 			class Pitch
 			{
-				text = "Place Vault";
+				text = "Place Safe";
 				script = "spawn player_vaultPitch;";
 			};
 		};
@@ -2158,7 +2181,7 @@ class CfgVehicles
 	class WeaponHolder_ItemVault: WeaponHolderBase
 	{
 		scope = 2;
-		displayName = "Vault";
+		displayName = "Safe";
 		model = "\dayz_equip\models\safe1.p3d";
 		class eventHandlers
 		{
@@ -2311,7 +2334,7 @@ class CfgVehicles
 	class VaultStorage: Land_A_tent
 	{
 		vehicleClass = "Survival";
-		displayName = "Vault";
+		displayName = "Safe";
 		model = "\dayz_equip\models\safe1.p3d";
 		destrType = "DestructNo";
 		armor = 800;
@@ -2322,7 +2345,7 @@ class CfgVehicles
 	class VaultStorageLocked: Land_A_tent
 	{
 		vehicleClass = "Survival";
-		displayName = "Locked Vault";
+		displayName = "Locked Safe";
 		model = "\dayz_equip\models\safe1.p3d";
 		destrType = "DestructNo";
 		armor = 800;
