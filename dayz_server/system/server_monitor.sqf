@@ -102,7 +102,7 @@ _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1
 				
 				if ((typeOf _object) in _allowedObjects) then {
 					// Forces object to ground may not be needed
-					_pos set [2,0];
+					// _pos set [2,0];
 					// Must be set to damage buildables
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};

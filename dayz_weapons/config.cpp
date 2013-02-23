@@ -1622,7 +1622,7 @@ class CfgVehicles
 
 		faceType = "ZFaces";
 		identityTypes[] = {"Zombie1","Zombie2"};
-		// extCameraPosition[] = {0,1.5,-9};
+		extCameraPosition[] = {0,1.5,-9};
 		
 		canHideBodies = 0;
 	};
