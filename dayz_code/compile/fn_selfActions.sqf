@@ -328,10 +328,12 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 			_traderMenu = call compile format["menu_%1;",_traderType];
 
 			diag_log ("TRADER = " + str(_traderMenu));
+			
+			_low_high = "low";
 
 			_humanity_logic = false;
 			if((_traderMenu select 2) == "friendly") then {
-				_low_high = "low";
+				//_low_high = "low";
 				if (_humanity < -2000) then {
 					_humanity_logic = true;
 				};
@@ -343,13 +345,13 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 				};
 			};
 			if((_traderMenu select 2) == "hero") then {
-				_low_high = "low";
+				//_low_high = "low";
 				if (_humanity < 5000) then {
 					_humanity_logic = true;
 				};
 			};
 			if(_humanity_logic) then {
-				_cancel = player addAction ["Your humanity is too " + _low_high + " this trader refuses to talk to you.", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+				_cancel = player addAction [format["Your humanity is too %1 this trader refuses to talk to you.",_low_high], "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
 				s_player_parts set [count s_player_parts,_cancel];
 			} else {
 				

@@ -836,7 +836,7 @@ class Citizen1;	// External class reference
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_us.p3d";
 		transportMaxWeapons = 6;
-		transportMaxMagazines = 24;
+		transportMaxMagazines = 30;
 	};
 	//An2_TK_EP1
 	class An2_Base_EP1;
