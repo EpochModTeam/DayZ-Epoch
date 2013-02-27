@@ -14,7 +14,10 @@ serverTraders = [
 	"TK_CIV_Woman03_EP1",
 	"TK_CIV_Woman02_EP1",
 	"RU_Profiteer2",
-	"RU_Damsel4"
+	"RU_Damsel4",
+	"RU_Woodlander3",
+	"RU_Citizen4",
+	"RU_Pilot"
 ];
 
 // Metals Traders
@@ -117,3 +120,22 @@ menu_RU_Damsel4 = [
 	],
 	"friendly"
 ];
+// Wholsalers
+menu_RU_Woodlander3 = [
+	[["Wholesale",998]],
+	[],
+	"neutral"
+];
+menu_RU_Citizen4 = [
+	[["Wholesale",9998]], 
+	[],
+	"neutral"
+];
+// Air plane Dealers
+menu_RU_Pilot = [
+	[["Wholesale",1002]], 
+	[],
+	"neutral"
+];
+
+

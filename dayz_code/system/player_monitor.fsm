@@ -591,7 +591,9 @@ class FSM
        "dayzGearSave = false;" \n
        "_inventory call player_gearSet;" \n
        "" \n
-       "//player addMagazine ""7Rnd_45ACP_1911"";" \n
+       "player removeMagazine ""DummyItem"";" \n
+       "" \n
+	   "player addMagazine ""DummyItem"";" \n
        "" \n
        "//Assess in backpack" \n
        "if (count _backpack > 0) then {" \n

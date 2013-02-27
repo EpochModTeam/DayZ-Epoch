@@ -43,13 +43,6 @@ class CfgMods
 		version = "0.981";
 		hiveVersion = 0.96; //0.93
 	};
-	class DZ_InitWorld
-	{
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {"Chernarus"};
-	};
 };
 
 

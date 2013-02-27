@@ -14,13 +14,7 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac",
-		"cawheeled_acr_octavia",
-		"CAWheeled_E_ATV",
-		"CAWheeled_E_LandRover",
-		"cawheeled_acr_t810",
-		"cawheeled_acr_hmmwv",
-		"camisc_acr_pbx"
+		"csj_gyroac", 
 	};
 	addOnsAuto[]=
 	{

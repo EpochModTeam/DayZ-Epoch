@@ -17,13 +17,7 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac",
-		"cawheeled_acr_octavia",
-		"CAWheeled_E_ATV",
-		"CAWheeled_E_LandRover",
-		"cawheeled_acr_t810",
-		"cawheeled_acr_hmmwv",
-		"camisc_acr_pbx"
+		"csj_gyroac"
 	};
 	addOnsAuto[]=
 	{
@@ -1251,7 +1245,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=16;
+		items=19;
 		class Item0
 		{
 			position[]={6622.5166,301.31479,6751.1309};
@@ -1353,6 +1347,30 @@ class Mission
 			text="Trader City Manara";
 			type="mil_circle";
 			colorName="ColorGreen";
+		};
+		class Item16
+		{
+			position[]={7416.8306,271.48111,155.77698};
+			name="Wholesaler";
+			text="Wholesaler";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item17
+		{
+			position[]={11130.963,77.23333,12658.044};
+			name="Wholesaler_1";
+			text="Wholesaler";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item18
+		{
+			position[]={5261.8662,83.96122,11163.853};
+			name="Air Plane Dealer";
+			text="Air Plane Dealer";
+			type="mil_dot";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors

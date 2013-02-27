@@ -662,7 +662,7 @@ class CfgMagazines {
 		ammo = "TinCan";
 	};
 	
-class ItemWaterbottle;
+	class ItemWaterbottle;
 	class ItemWaterbottleBoiled : ItemWaterbottle {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
@@ -673,6 +673,13 @@ class ItemWaterbottle;
 		displayNameMagazine = "Machete";
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
+	};
+	// Inventory Placeholder
+	class DummyItem : Hatchet_Swing {
+		displayName = "Dummy";
+		displayNameMagazine = "Dummy";
+		shortNameMagazine = "Dummy";
+		ammo = "Dummy_Swing_Ammo";
 	};
 	
 	class ItemTrashToiletpaper : CA_Magazine {
