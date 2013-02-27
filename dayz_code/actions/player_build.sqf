@@ -86,8 +86,12 @@ if (_hasrequireditem or _bypass) then {
 
 		player playActionNow "Medic";
 		sleep 1;
-		[player,"repair",0,false] call dayz_zombieSpeak;
-		_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+	
+		_dis=20;
+		_sfx = "repair";
+		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	
 		sleep 5;
 		
 		player allowDamage false;
@@ -97,8 +101,10 @@ if (_hasrequireditem or _bypass) then {
 		player reveal _object;
 
 		cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
-
-		["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+	
+		//["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+		dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
+		publicVariable "dayzPublishObj";
 
 		sleep 2;
 		player allowDamage true;

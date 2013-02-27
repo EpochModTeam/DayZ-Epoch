@@ -19,14 +19,12 @@ _isZombie = _ent isKindOf "zZombie_base";
 if (_ent isKindOf "Animal" or _isZombie) then {
 	_ent setDamage 1;
 } else {
-	["usecBreakLegs",[_unit,player]] call broadcastRpcCallAll;
+	//["usecBreakLegs",[_unit,player]] call broadcastRpcCallAll;
+	usecBreakLegs = [_unit,player];
+	publicVariable "usecBreakLegs";
 };
 
-
-
-
 [player,"hit",0,false] call dayz_zombieSpeak;
-			
 
 player switchmove "";
 

@@ -99,7 +99,7 @@ server_hiveWrite = {
 	private["_data"];
 	//diag_log ("ATTEMPT WRITE: " + _this);
 	_data = "HiveExt" callExtension _this;
-	diag_log ("WRITE: " +str(_data));
+	//diag_log ("WRITE: " +str(_data));
 };
 
 server_hiveReadWrite = {
@@ -107,7 +107,7 @@ server_hiveReadWrite = {
 	_key = _this;
 	//diag_log ("ATTEMPT READ/WRITE: " + _key);
 	_data = "HiveExt" callExtension _key;
-	diag_log ("READ/WRITE: " +str(_data));
+	//diag_log ("READ/WRITE: " +str(_data));
 	_resultArray = call compile format ["%1",_data];
 	_resultArray
 };
@@ -141,7 +141,7 @@ if(isnil "HeliCrashArea") then {
 	HeliCrashArea = dayz_MapArea / 2;
 };
 
-// Get all buildings and roads only once 
+// Get all buildings and roads only once TODO: set variables to nil after done if nessicary 
 MarkerPosition = getMarkerPos "center";
 RoadList = MarkerPosition nearRoads DynamicVehicleArea;
 BuildingList = MarkerPosition nearObjects ["House",DynamicVehicleArea];
@@ -408,20 +408,6 @@ dayz_objectUID = {
 };
 
 dayz_objectUID2 = {
-	private["_position","_dir","_key"];
-	_dir = _this select 0;
-	_key = "";
-	_position = _this select 1;
-	{
-		_x = _x * 10;
-		if ( _x < 0 ) then { _x = _x * -10 };
-		_key = _key + str(round(_x));
-	} forEach _position;
-	_key = _key + str(round(_dir));
-	_key
-};
-
-dayz_objectUID3 = {
 	private["_position","_dir","_key"];
 	_dir = _this select 0;
 	_key = "";

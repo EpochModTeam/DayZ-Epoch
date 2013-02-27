@@ -20,7 +20,12 @@ if(_ownerID == dayz_characterID) then {
 
 	_dir = direction _obj;
 	_pos = getposATL _obj;
-	[player,"tentpack",0,false] call dayz_zombieSpeak;
+	
+	_dis=20;
+	_sfx = "tentpack";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	
 	sleep 3;
 
 	//place tent (local)
@@ -34,7 +39,12 @@ if(_ownerID == dayz_characterID) then {
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
 	
-	["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;	
+	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;	
+	dayzDeleteObj = [_objectID,_objectUID];
+	publicVariable "dayzDeleteObj";
+	if (isServer) then {
+		dayzDeleteObj call server_deleteObj;
+	};
 	deleteVehicle _obj;
 	
 	//Add weapons

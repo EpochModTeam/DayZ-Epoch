@@ -43,14 +43,6 @@ if (_ammo isKindOf "SmokeShell") then {
 	//Check if need to place arrow
 	if (_ammo isKindOf "Bolt") then {
 		_id = _this spawn player_crossbowBolt;
-
-		// Reload animation if more that 1 in mag/pack
-		_count = player ammo _weapon;
-		if(_count >= 1) then {
-			_unit playActionNow "reloadMagazine";
-		};
-
-		
 	};
 	if (_ammo isKindOf "GrenadeHand") then {
 		
@@ -60,14 +52,16 @@ if (_ammo isKindOf "SmokeShell") then {
 		if (_ammo isKindOf "RoadFlare") then {
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
-			["dayzRoadFlare",[_projectile,0]] call broadcastRpcCallAll;
-
+			_id = [_projectile,0] spawn object_roadFlare;
+			dayzRoadFlare = [_projectile,0];
+			publicVariable "dayzRoadFlare";
 			_id = _this spawn player_throwObject;
 		};
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
-			["dayzRoadFlare",[_projectile,1]] call broadcastRpcCallAll;
-
+			_id = [_projectile,1] spawn object_roadFlare;
+			dayzRoadFlare = [_projectile,1];
+			publicVariable "dayzRoadFlare";
 			_id = _this spawn player_throwObject;
 		};
 	};	

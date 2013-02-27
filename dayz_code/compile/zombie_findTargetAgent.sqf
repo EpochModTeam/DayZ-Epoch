@@ -1,35 +1,45 @@
 private["_agent","_target","_targets","_targetDis","_c","_man","_manDis","_targets","_agent","_agentheight","_nearEnts","_rnd","_assigned","_range","_objects"];
 _agent = _this;
 _target = objNull;
+/*
+_local = [];
+_remote = [];
+*/
 _targets = [];
 _targetDis = [];
-_range = 300;
+_range = 120;
 _manDis = 0;
+_refobj = vehicle player;
 
-_targets = _agent getVariable ["targets",[]];
 /*
-//Search for fires
-if (count _targets == 0) then {
-	_fires = nearestObjects [_agent,["Land_Fire"],_range];
-	{
-		private["_dis"];
-		_dis = _x distance _agent;
-		_rnd = random 1;
-		if ((_dis < _range) and (inflamed _x) and !(_x in _targets) and (_rnd < 0.5)) then {
-			_targets set [count _targets,_x];
-			_targetDis set [count _targetDis,_dis];
-		};
-	} forEach _fires;
+_local =	_agent getVariable ["target",[]];
+//diag_log ("Local is: " + str(_local));
+_remote =	_agent getVariable ["targets",[]];
+//diag_log ("Remote is: " + str(_remote));
+
+if (count _remote == 0) then 
+{
+	_targets = _local;
+	//diag_log ("Targets is: " + str(_targets));
+}
+else
+{
+	_targets = _local + _remote;
+	//diag_log ("Local + Remote targets is: " + str(_targets));
 };
 */
 
+_targets = _agent getVariable ["targets",[]];
+
 if (isNil "_targets") exitWith {};
 //Search for objects
-if (count _targets == 0) then {
-	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],_range];
+if (count _targets == 0) then
+{
+	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],50];
 	{
 		private["_dis"];
-		if (!(_x in _targets)) then {
+		if (!(_x in _targets)) then
+		{
 			_targets set [count _targets,_x];
 			_targetDis set [count _targetDis,_dis];
 		};
@@ -37,28 +47,37 @@ if (count _targets == 0) then {
 };
 
 //Find best target
-if (count _targets > 0) then {
+if (count _targets > 0) then
+{
 	_man = _targets select 0;
 	_manDis = _man distance _agent;
-	//diag_log (str(_man) + str(_manDis));
 	{
 		private["_dis"];
 		_dis =  _x distance _agent;
-		if (_dis < _manDis) then {
+		if (_dis < _manDis) then
+		{
 			_man = _x;
 			_manDis = _dis;
 		};
-		if (_x isKindOf "SmokeShell") then {
+		if (_dis > _range) then
+		{
+			_targets = _targets - [_x];
+		};
+		if (_x isKindOf "SmokeShell") then
+		{
 			_man = _x;
 			_manDis = _dis;
 		};
 	} forEach _targets;
+
 	_target = _man;
 };
 
 //Check if too far
-if (_manDis > _range) then {
+if (_manDis > _range) then
+{
 	_targets = _targets - [_target];
 	_target = objNull;
 };
-_target;
+
+_target

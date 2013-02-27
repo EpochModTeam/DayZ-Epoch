@@ -1,7 +1,10 @@
 private ["_objects"];
 _objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage","VaultStorage"], 10];
 {
-	["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
+	//["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
+	dayzUpdateVehicle = [_x,"gear"];
+	publicVariable "dayzUpdateVehicle";
+	
 } foreach _objects;
 
 private["_dialog","_magazineArray","_control","_item","_val","_max"];
@@ -18,6 +21,7 @@ for "_i" from 109 to 120 do
 	_val =		gearSlotAmmoCount _control;
 	_max = 		getNumber (configFile >> "CfgMagazines" >> _item >> "count");
 	if (_item != "") then {
+		if (_item == "BoltSteel") then { _item = "WoodenArrow" };
 		if (_val != _max) then {
 			_magazineArray set [count _magazineArray,[_item,_val]];
 		} else {

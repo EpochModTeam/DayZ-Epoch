@@ -1,4 +1,4 @@
-private["_ammoType","_vehicle","_ammo","_weapon","_turret","_text","_array","type"];
+private["_ammoType","_vehicle","_ammo","_weapon","_turret","_text","_array"];
 _array = _this select 3;
 _vehicle = _array select 0;
 _weapon = _array select 1;

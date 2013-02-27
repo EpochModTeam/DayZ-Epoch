@@ -65,6 +65,7 @@ if (typeName _minutes == "STRING") then
 if (_characterID != "0") then 
 {
 	_key = format["CHILD:202:%1:%2:%3:",_characterID,_minutes,_infected];
+	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 } 
 else 

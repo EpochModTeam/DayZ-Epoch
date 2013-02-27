@@ -1,4 +1,4 @@
-private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text"];
+private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_control","_dialog","_item","_val","_max","_bolts","_quivers","_quiver","_broken"];
 _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;
@@ -9,14 +9,27 @@ _text = getText (configFile >> _type >> _classname >> "displayName");
 
 _holder setVariable["claimed",_playerID,true];
 
+if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
+
 player playActionNow "PutDown";
 if (_classname == "MeleeCrowbar") then {
 	player addMagazine 'crowbar_swing';
-} else {
-	if (_classname == "MeleeHatchet") then {
-		player addMagazine 'hatchet_swing';
+};
+if (_classname == "MeleeHatchet") then {
+	player addMagazine 'hatchet_swing';
+};
+if (_classname == "MeleeMachete") then {
+	player addMagazine 'Machete_swing';
+};
+
+
+_broken = false;
+if(_classname == "WoodenArrow") then {
+	if (20 > random 100) then {
+		_broken = true;
 	};
 };
+if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
 
 sleep 0.25;
 
@@ -32,7 +45,7 @@ _config = (configFile >> _type >> _classname);
 _isOk = [player,_config] call BIS_fnc_invAdd;
 if (_isOk) then {
 	deleteVehicle _holder;
-	if (_classname in ["MeleeHatchet","MeleeCrowbar"]) then {
+	if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
 
 		if (_type == "cfgWeapons") then {
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
@@ -49,10 +62,12 @@ if (_isOk) then {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 	if (_classname == "MeleeCrowbar") then {
 		player removeMagazine 'crowbar_swing';
-	} else {
-		if (_classname == "MeleeHatchet") then {
-			player removeMagazine 'hatchet_swing';
-		};
+	};
+	if (_classname == "MeleeHatchet") then {
+		player removeMagazine 'hatchet_swing';
+	};
+	if (_classname == "MeleeMachete") then {
+		player removeMagazine 'Machete_swing';
 	};
 };
 

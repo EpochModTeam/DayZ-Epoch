@@ -20,7 +20,9 @@ if ((_vcl emptyPositions "cargo") > 0) then
 	_dragger  switchMove "";
 	_wounded setVariable ["NORRN_LoadVcl", _vcl, true];
 	sleep 1;
-	["norrnRLact",_wounded] call broadcastRpcCallAll;
+	//["norrnRLact",_wounded] call broadcastRpcCallAll;
+	norrnRLact = [_wounded];
+	publicVariable "norrnRLact";
 	player removeAction NORRN_dropAction;
 }else{
 	

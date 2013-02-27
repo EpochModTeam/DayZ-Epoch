@@ -84,6 +84,7 @@ _object_damage = {
 			if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 			_object setHit ["_selection", _hit]
 		} forEach _hitpoints;
+	
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 		diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;
@@ -125,6 +126,7 @@ _object_repair = {
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 		_object setHit ["_selection", _hit]
 	} forEach _hitpoints;
+	
 	_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 	diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
@@ -140,18 +142,20 @@ switch (_type) do {
 		call _object_damage;
 		};
 	case "position": {
-		call _object_position;
+		if (!(_object in needUpdate_objects)) then {
+			diag_log format["DEBUG Position: Added to NeedUpdate=%1",_object];
+			needUpdate_objects set [count needUpdate_objects, _object];
+		};
 	};
 	case "gear": {
 		call _object_inventory;
 			};
 	case "damage": {
-	diag_log ("Damaged Called");
 		if ( (time - _lastUpdate) > 5) then {
 			call _object_damage;
 		} else {
-			if(!_needUpdate)then {
-				diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
+			if (!(_object in needUpdate_objects)) then {
+				diag_log format["DEBUG Damage: Added to NeedUpdate=%1",_object];
 				needUpdate_objects set [count needUpdate_objects, _object];
 			};
 		};

@@ -4,6 +4,14 @@ dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _script = getText(missionConfigFile >> "onPauseScript");
 
+if ((count playableUnits == 0) and !isDedicated) then {
+	isSinglePlayer = true;
+};
+
+waitUntil{initialized}; //means all the functions are now defined
+
+diag_log "HIVE: Starting";
+
 if (_script != "") then
 {
 	diag_log "MISSION: File Updated";
@@ -17,16 +25,7 @@ if (_script != "") then
 
 serverVehicleCounter = [];
 
-if ((count playableUnits == 0) and !isDedicated) then {
-	isSinglePlayer = true;
-};
-
-waitUntil{initialized}; //means all the functions are now defined
-
-diag_log "HIVE: Starting";
-
 _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ"];
-
 //Stream in objects
 	/* STREAM OBJECTS */
 		//Send the key
@@ -125,6 +124,7 @@ _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1
 						_objWpnQty = (_intentory select 0) select 1;
 						_countr = 0;					
 						{
+							if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
 							_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
 							if (_isOK) then {
 								_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;
@@ -140,6 +140,7 @@ _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1
 						_objWpnQty = (_intentory select 1) select 1;
 						_countr = 0;
 						{
+							if (_x == "BoltSteel") then { _x = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
 							_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
 							if (_isOK) then {
 								_block = 	getNumber(configFile >> "CfgMagazines" >> _x >> "stopThis") == 1;
@@ -204,7 +205,10 @@ _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1
 	if(_outcome == "PASS") then {
 		_date = _result select 1; 
 		if(isDedicated) then {
-			["dayzSetDate",_date] call broadcastRpcCallAll;
+			//["dayzSetDate",_date] call broadcastRpcCallAll;
+			setDate _date;
+			dayzSetDate = _date;
+			publicVariable "dayzSetDate";
 		};
 
 		diag_log ("HIVE: Local Time set to " + str(_date));
@@ -239,7 +243,7 @@ diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 if(_vehLimit > 0) then {
 	for "_x" from 1 to _vehLimit do {
 		_id = [] spawn spawn_vehicles;
-		waitUntil{scriptDone _id};
+		//waitUntil{scriptDone _id};
 	};
 };
 

@@ -2,8 +2,6 @@ private["_unit","_type","_chance","_rnd","_sound","_local","_dis"];
 _unit = _this select 0;
 _type = _this select 1;
 _chance = _this select 2;
-_local = _this select 3;
-_dis = 40;
 
 _num = switch (_type) do {
 	default 			{0};
@@ -23,8 +21,17 @@ _num = switch (_type) do {
 	case "dog_qq":		{2};
 };
 
-if (_type in ["shout","hit","attack","scream","breath","spotted"]) then {
-	_dis = 100;
+if (count _this > 4) then {
+	_dis = _this select 4;
+	_local = ({isPlayer _x} count (_unit nearEntities ["AllVehicles",_dis]) < 2);
+} else {
+	_local = _this select 3;
+	
+	if (_type in ["shout","hit","attack","scream","breath","spotted"]) then {
+		_dis = 100;
+	} else {
+		_dis = 40;
+	};
 };
 
 _isWoman = getText(configFile >> "cfgVehicles" >> (typeOf _unit) >> "TextPlural") == "Women";

@@ -1,8 +1,6 @@
 private["_location","_isOk","_dir","_classname","_item"];
-
 _location = player modeltoworld [0,1,0];
 _location set [2,0];
-
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		(surfaceIsWater _location) or dayz_isSwimming;
 
@@ -19,7 +17,6 @@ _hasbuilditem = _this in magazines player;
 
 if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]};
 
-// Get inital direction of player
 _dir = getDir player;
 
 _offset_x = 0; 
@@ -83,8 +80,12 @@ if(!_cancel) then {
 
 	player playActionNow "Medic";
 	sleep 1;
-	[player,"repair",0,false] call dayz_zombieSpeak;
-	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+
+	_dis=20;
+	_sfx = "repair";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	
 	sleep 5;
 	
 	player allowDamage false;
@@ -94,7 +95,9 @@ if(!_cancel) then {
 
 	cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 
-	["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+//["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
+publicVariable "dayzPublishObj";
 
 	sleep 2;
 	player allowDamage true;

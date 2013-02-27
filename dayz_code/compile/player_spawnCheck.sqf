@@ -8,13 +8,18 @@ _maxZombies = dayz_maxLocalZombies;
 _maxWildZombies = 3;
 _age = -1;
 
-
-
 _nearbyBuildings = [];
-_radius = 300; 
+_radius = 200; 
 _position = getPosATL player;
-//_maxZombies = 10;
-	
+
+if (_inVehicle) then {
+	_maxZombies = _maxZombies / 2;
+};
+if (_isAir) then {
+	_maxZombies = 5
+};
+
+
 //diag_log ("Type: " +str(_type));
 
 
@@ -23,7 +28,7 @@ _position = getPosATL player;
 	//_nearestCity = nearestLocations [getPos player, _locationstypes, _radius/2];
 	//_townname = text (_nearestCity select 0);	
 	//_nearbytype = type (_nearestCity select 0);
-/*	
+/*
 switch (_nearbytype) do {
 	case "NameVillage": {
 		//_radius = 250; 
@@ -35,19 +40,36 @@ switch (_nearbytype) do {
 	};
 	case "NameCityCapital": {
 		//_radius = 400; 
-		_maxZombies = 50;
+		_maxZombies = 40;
 	};
 };
 */
 
-_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]) < _maxZombies;
+_players = _position nearEntities ["AllPlayers",_radius+200];
+dayz_maxGlobalZombies = 40;
+{
+	dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
+} foreach _players;
 
+_spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
+dayz_spawnZombies = 0;
+{
+	if (local _x) then 
+	{
+		//diag_log ("Local");
+		dayz_spawnZombies = dayz_spawnZombies + 1;
+	};
+} foreach _spawnZombies;
+
+dayz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
 
 if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
 	deleteMarkerLocal "Counter";
 	deleteMarkerLocal "Loot30";
 	deleteMarkerLocal "Loot120";
+	deleteMarkerLocal "Agro80";
+	
 	_markerstr = createMarkerLocal ["MaxZeds", _position];
 	_markerstr setMarkerColorLocal "ColorYellow";
 	_markerstr setMarkerShapeLocal "ELLIPSE";
@@ -58,8 +80,14 @@ if ("ItemMap_Debug" in items player) then {
 	_markerstr1 setMarkerColorLocal "ColorRed";
 	_markerstr1 setMarkerShapeLocal "ELLIPSE";
 	_markerstr1 setMarkerBrushLocal "Border";
-	_markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];			
+	_markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];
 	
+	_markerstr2 = createMarkerLocal ["Agro80", _position];
+	_markerstr2 setMarkerColorLocal "ColorRed";
+	_markerstr2 setMarkerShapeLocal "ELLIPSE";
+	_markerstr2 setMarkerBrushLocal "Border";
+	_markerstr2 setMarkerSizeLocal [80, 80];
+
 	_markerstr2 = createMarkerLocal ["Loot30", _position];
 	_markerstr2 setMarkerColorLocal "ColorRed";
 	_markerstr2 setMarkerShapeLocal "ELLIPSE";
@@ -70,45 +98,68 @@ if ("ItemMap_Debug" in items player) then {
 	_markerstr3 setMarkerColorLocal "ColorBlue";
 	_markerstr3 setMarkerShapeLocal "ELLIPSE";
 	_markerstr3 setMarkerBrushLocal "Border";
-	_markerstr3 setMarkerSizeLocal [120, 120];	
+	_markerstr3 setMarkerSizeLocal [120, 120];
+
+diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
+diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(dayz_maxLocalZombies));
+diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
+diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
+
 };
 	
-/*
-switch (_type) do {
-	case "Zeds": {
-		_nearby = nearestObjects [_position, dayz_ZombieBuildings, _radius];
-	};
-	case "both": {
-		_nearby = nearestObjects [_position, ["building"], _radius];
-	};
-	case "Loot": {
-		_nearby = nearestObjects [_position, dayz_LootBuildings, _radius];
-		};
-	};
-*/
-
-_nearby = nearestObjects [_position, ["building"], _radius];
+_nearby = _position nearObjects ["building",_radius];
 _nearbyCount = count _nearby;
-if (_nearbyCount < 1) exitwith {};
+if (_nearbyCount < 1) exitwith 
+{
+	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
+		[_position] call wild_spawnZombies;
+	};
+};
 
 {
 	_type = typeOf _x;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 	_canLoot = 		isClass (_config);
 	_dis = _x distance player;
+	
+	//Loot
 	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle) then {
-		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity] call player_spawnlootCheck;
+		_looted = (_x getVariable ["looted",-0.1]);
+		_cleared = (_x getVariable ["cleared",true]);
+		_dateNow = (DateToNumber date);
+		_age = (_dateNow - _looted) * 525948;
+		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
+		if ((_age > 10) and (!_cleared)) then {
+			_nearByObj = nearestObjects [(getPosATL _x), ["WeaponHolder","WeaponHolderBase"],((sizeOf _type)+5)];
+			{deleteVehicle _x} forEach _nearByObj;
+			_x setVariable ["cleared",true,true];
+			_x setVariable ["looted",_dateNow,true];
+		};
+		if ((_age > 10) and (_cleared)) then {
+			//Register
+			_x setVariable ["looted",_dateNow,true];
+			//cleanup
+			_handle = [_x] spawn building_spawnLoot;
+			waitUntil{scriptDone _handle};
+		};
 	};
+	//Zeds
 	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
-		if (dayz_spawnZombies < _maxZombies) then {
-			if (_spawnZombies) then {
-				//hintSilent format["Spawning %1 / %2 <br /> total: %3 ",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
-				[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
+		if (dayz_maxCurrentZeds < dayz_maxZeds) then {
+			if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
+				if (dayz_spawnZombies < dayz_maxLocalZombies) then {
+						//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
+						_zombied = (_x getVariable ["zombieSpawn",-0.1]);
+						_dateNow = (DateToNumber date);
+						_age = (_dateNow - _zombied) * 525948;
+						if (_age > 3) then {
+							_x setVariable ["zombieSpawn",_dateNow,true];
+							[_x] call building_spawnZombies;
+						};
+				} else {
+					dayz_spawnWait = time;
+				};
 			};
-		} else {
-			//hintSilent format["Waiting %1 / %2 <br /> total: %3",dayz_spawnZombies,_maxZombies,count (_position nearEntities ["zZombie_Base",_radius+100])];
-			dayz_spawnWait = time;
-			dayz_spawnZombies = 0;
 		};
 	};
 } forEach _nearby;

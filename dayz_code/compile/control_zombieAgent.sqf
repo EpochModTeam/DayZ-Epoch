@@ -42,7 +42,7 @@ while {_isAlive and _isSomeone} do {
 		_targetPos = getPosATL _target;
 		//Move to target
 		_agent moveTo _targetPos;
-		_agent forceSpeed 6;
+		_agent forceSpeed 8;
 		sleep 1;
 	};
 //LOOP

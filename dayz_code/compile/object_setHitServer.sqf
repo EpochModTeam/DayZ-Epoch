@@ -12,7 +12,9 @@ if ((_selection != "") and local _unit) then {
 	_unit setVariable [_strH,_total,true];
 	
 	if (_damage >= 1) then {
-		["dayzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
+		//["dayzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
+		dayzUpdateVehicle = [_unit,"damage"];
+		publicVariable "dayzUpdateVehicle";
 	};
 	
 } else {

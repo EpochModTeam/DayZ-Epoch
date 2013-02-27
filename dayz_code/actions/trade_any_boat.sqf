@@ -28,8 +28,10 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-
+	//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+	dayzTradeObject = [_activatingPlayer,_traderID,_bos];
+	publicVariableServer  "dayzTradeObject";
+	
 	diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
 
 	waitUntil {!isNil "dayzTradeResult"};
@@ -63,7 +65,10 @@ if (_qty >= _qty_in) then {
 			clearWeaponCargoGlobal  _veh;
 			clearMagazineCargoGlobal  _veh;
 	
-			["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
+			//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
+			dayzPublishVeh = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
+			publicVariableServer  "dayzPublishVeh";
+	
 
 			_veh call fnc_vehicleEventHandler;
 
@@ -78,7 +83,10 @@ if (_qty >= _qty_in) then {
 			_objectID 	= _obj getVariable ["ObjectID","0"];
 			_objectUID	= _obj getVariable ["ObjectUID","0"];
 
-			["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+			//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+			dayzDeleteObj = [_objectID,_objectUID];
+			publicVariableServer "dayzDeleteObj";
+
 
 			deleteVehicle _obj;
 

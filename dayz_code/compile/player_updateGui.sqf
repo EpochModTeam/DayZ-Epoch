@@ -128,6 +128,8 @@ if (_foodVal < 0.2) then {
 
 if (_tempVal > 0.8) then {	//TeeChange
 	_ctrlTemp call player_guiControlFlash;
+} else {
+	_ctrlTemp ctrlShow true;
 };
 
 if (r_player_injured) then {

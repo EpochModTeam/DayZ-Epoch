@@ -7,6 +7,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 private["_isPZombie","_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_allFixed","_hitpoints","_damage","_part","_cmpt","_color","_string","_handle","_trader_id","_category","_buy","_buy2","_buy3","_buy1","_buy4","_buy5","_cantrader","_cantrader1","_buy6","_zparts1","_zparts2","_zparts3","_zparts4","_metals1","_metals2","_metals4","_metals3","_metals5","_dogHandle","_lieDown","_warn"];
 
 _vehicle = vehicle player;
+_isPZombie = player isKindOf "PZombie_VB";
 _inVehicle = (_vehicle != player);
 _bag = unitBackpack player;
 _classbag = typeOf _bag;
@@ -15,7 +16,13 @@ _hasAntiB = 	"ItemAntibiotic" in magazines player;
 _hasFuelE = 	"ItemJerrycanEmpty" in magazines player;
 //boiled Water
 _hasbottleitem = "ItemWaterbottle" in magazines player;
-_hastinitem = ("TrashTinCan" in magazines player) or ("ItemSodaEmpty" in magazines player);
+_hastinitem = false;
+{
+    if (_x in magazines player) then {
+        _hastinitem = true;
+    };
+
+} forEach boil_tin_cans;
 
 
 _hasKnife = 	"ItemKnife" in items player;
@@ -33,7 +40,7 @@ if (!isNull _nearLight) then {
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
 //Grab Flare
-if (_canPickLight and !dayz_hasLight) then {
+if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	if (s_player_grabflare < 0) then {
 		_text = getText (configFile >> "CfgAmmo" >> (typeOf _nearLight) >> "displayName");
 		s_player_grabflare = player addAction [format[localize "str_actions_medical_15",_text], "\z\addons\dayz_code\actions\flare_pickup.sqf",_nearLight, 1, false, true, "", ""];
@@ -46,7 +53,7 @@ if (_canPickLight and !dayz_hasLight) then {
 	s_player_removeflare = -1;
 };
 
-_isPZombie = player isKindOf "PZombie_VB";
+
 if(_isPZombie) then {
 	//_state = animationState player;
 	//hint str(_state);
@@ -59,7 +66,7 @@ if(_isPZombie) then {
 };
 
 
-if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6)) then {	//Has some kind of target
+if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cursorTarget < 6)) then {	//Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
 	_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
@@ -76,6 +83,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	_canmove = canmove cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
 	
+	
 	_rawmeat = meatraw;
 	_hasRawMeat = false;
 	{
@@ -83,6 +91,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 			_hasRawMeat = true;
 		};
 	} forEach _rawmeat; 
+	
 	
 	if (_hasFuelE) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army");
@@ -288,7 +297,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 
 
 	//Repairing Vehicles
-	if (_isVehicle and (dayz_myCursorTarget != cursorTarget) and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
+	if ((dayz_myCursorTarget != cursorTarget) and _isVehicle and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
 		
 		if (s_player_repair_crtl < 0) then {
 			

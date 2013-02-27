@@ -30,7 +30,9 @@ _unitIsPlayer = _unit == player;
 if (_isPlayer) then {
 	if (_damage > 0.1) then {
 		dayz_canDisconnect = false;
-		["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
+		//["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
+		dayzDiscoAdd = getPlayerUID player;
+		publicVariable "dayzDiscoAdd";
 				
 		dayz_damageCounter = time;
 		
@@ -55,7 +57,9 @@ if (_unitIsPlayer) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
-				["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
+				//["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
+				dayzHumanity = [_this select 0,_this select 1,30];
+				publicVariable "dayzHumanity";
 			};
 		};
 	};
@@ -96,7 +100,7 @@ if (_hit in USEC_MinorWounds) then {
 		} else {
 			[_unit,_hit,(_damage / 4)] call object_processHit;
 		};
-	} else {;
+	} else {
 		[_unit,_hit,(_damage / 2)] call object_processHit;
 	};
 	if (_ammo == "") then {
@@ -165,7 +169,9 @@ if (_damage > 0.4) then {	//0.25
 		if(!_isPZombie) then {
 			//Create Wound
 			_unit setVariable[_wound,true,true];
-			["usecBleed",[_unit,_wound,_hit]] call broadcastRpcCallAll;
+			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
+			usecBleed = [_unit,_wound,_hit];
+			publicVariable "usecBleed";
 
 			//Set Injured if not already
 			_isInjured = _unit getVariable["USEC_injured",false];
@@ -180,7 +186,7 @@ if (_damage > 0.4) then {	//0.25
 			if (!_lowBlood) then {
 				_unit setVariable["USEC_lowBlood",true,true];
 			};
-		if (_unitIsPlayer) then {
+			if (_unitIsPlayer) then {
 				r_player_injured = true;
 			};
 		};

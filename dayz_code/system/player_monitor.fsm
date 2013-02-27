@@ -285,8 +285,13 @@ class FSM
            "	_temp = round(player getVariable [""temperature"",100]);" \n
            "	_currentState = [_currentWpn,_currentAnim,_temp];" \n
            "	" \n
-           "	//[""dayzCharDisco"",[dayz_characterID,_playerPos,[weapons player,_magazineArray],[typeOf (unitbackpack player),getWeaponCargo (unitbackpack player),getMagazineCargo (unitbackpack player)],_medical,_currentState,_currentModel]] call callRpcProcedure;" \n
-           "	//diag_log str(dayzCharDisco);	" \n
+           "	dayz_Magazines = _magazineArray;" \n
+           "	dayzPlayerSave = [player,dayz_Magazines,false];" \n
+           "	publicVariableServer ""dayzPlayerSave"";" \n
+           "			" \n
+           "	if (isServer) then {" \n
+           "		dayzPlayerSave call server_playerSync;" \n
+           "	};" \n
            "" \n
            "	dayz_lastSave = time;" \n
            "	dayz_Magazines = [];" \n
@@ -423,7 +428,11 @@ class FSM
        "" \n
        "_msg = [];" \n
        "" \n
-       "[""dayzLogin"",[_playerUID,player]] call callRpcProcedure;" \n
+       "//[""dayzLogin"",[_playerUID,player]] call callRpcProcedure;" \n
+       "" \n
+       "dayzLogin = [_playerUID,player];" \n
+       "publicVariable ""dayzLogin"";" \n
+       "" \n
        "dayzPlayerLogin = [];" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -484,7 +493,6 @@ class FSM
        "" \n
        "if (_model == ""Survivor1_DZ"") then {" \n
        "	_model = ""Survivor2_DZ"";" \n
-       "	diag_log (""PLOGIN: Model was default, loading as survivor"");" \n
        "};" \n
        "" \n
        "_isHack = false;" \n
@@ -616,6 +624,7 @@ class FSM
        "			};" \n
        "			_countr = 0;" \n
        "			{" \n
+       "				if (_x == ""Crossbow"") then { _x = ""Crossbow_DZ"" };" \n
        "				dayz_myBackpack addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];" \n
        "				_countr = _countr + 1;" \n
        "			} forEach _backpackWpnTypes;" \n
@@ -623,6 +632,7 @@ class FSM
        "			//Magazines" \n
        "			_countr = 0;" \n
        "			{" \n
+       "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
        "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
        "				_countr = _countr + 1;" \n
        "			} forEach _backpackMagTypes;" \n
@@ -646,7 +656,10 @@ class FSM
        "};" \n
        "" \n
        "dayzPlayerLogin2 = [];" \n
-       "[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
+       "//[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
+       "" \n
+       "dayzLogin2 = [_charID,player,_playerUID];" \n
+       "publicVariable ""dayzLogin2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.8;" \n
@@ -963,11 +976,14 @@ class FSM
        "	};" \n
        "};" \n
        "" \n
-       "if (_currentWpn == ""MeleeCrowbar"") then {" \n
+       "if (player hasWeapon ""MeleeCrowbar"") then {" \n
        "	player addMagazine 'crowbar_swing';" \n
        "};" \n
-       "if (_currentWpn == ""MeleeHatchet"") then {" \n
+       "if (player hasWeapon ""MeleeHatchet"") then {" \n
        "	player addMagazine 'hatchet_swing';" \n
+       "};" \n
+       "if (player hasWeapon ""MeleeMachete"") then {" \n
+       "	player addMagazine 'machete_swing';" \n
        "};" \n
        "" \n
        "reload player;" \n
@@ -1097,6 +1113,7 @@ class FSM
        "		sleep 8;" \n
        "	};" \n
        "};" \n
+       "" \n
        "dayz_locationCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		call stream_locationCheck;" \n
@@ -1109,6 +1126,16 @@ class FSM
        "		sleep 2;" \n
        "	};" \n
        "};" \n
+	   "" \n
+       "dayz_Totalzedscheck = [] spawn {" \n
+       "	while {true} do {" \n
+       "		dayz_maxCurrentZeds = {alive _x} count entities ""zZombie_Base"";" \n
+       "		sleep 60;" \n
+       "	};" \n
+       "};" \n
+       "//Removed for now" \n
+       "[] execVM ""\z\addons\dayz_code\system\antihack.sqf"";" \n
+       "" \n
        "// TODO: questionably" \n
        "{ _x call fnc_vehicleEventHandler; } forEach vehicles;" \n
        "" \n
@@ -1143,7 +1170,10 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"dayzGearSave = true;" \n
        "dayz_myPosition = getPosATL player;" \n
        "" \n
-       "[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
+       "//[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
+       "" \n
+       "dayzLoginRecord = [_playerUID,_charID,0];" \n
+       "publicVariable ""dayzLoginRecord"";" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links

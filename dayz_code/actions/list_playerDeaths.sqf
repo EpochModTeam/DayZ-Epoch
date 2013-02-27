@@ -5,7 +5,9 @@ _activatingPlayer = _this select 1;
 
 diag_log format["DEBUG DEATH OBJ: %1", _this select 0];
 
-["dayzPlayerDeaths",[_activatingPlayer]] call callRpcProcedure;
+//["dayzPlayerDeaths",[_activatingPlayer]] call callRpcProcedure;
+dayzPlayerDeaths = [_activatingPlayer];
+publicVariableServer  "dayzPlayerDeaths";
 
 waitUntil {!isNil "dayzPlayerDeathsResult"};
 

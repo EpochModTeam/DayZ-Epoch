@@ -16,6 +16,9 @@ if (count _inventory > 0) then {
 			_item = _x;
 			_val = -1;
 		};
+
+		if (_item == "BoltSteel") then { _item = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
+
 		//Is item legal?
 		_isOK = 	isClass(configFile >> "CfgMagazines" >> _item);
 		if (_isOK) then {
@@ -30,6 +33,8 @@ if (count _inventory > 0) then {
 	
 	//Add weapons
 	{
+		if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
+
 		//Is item legal?
 		_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
 		if (_isOK) then {

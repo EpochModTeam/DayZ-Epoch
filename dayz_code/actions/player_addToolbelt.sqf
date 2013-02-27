@@ -16,7 +16,7 @@ _create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 
 _config2 = 	configFile >> "cfgWeapons" >> _create;
 
 //Remove magazines if needed
-if (_item in ["MeleeHatchet","MeleeCrowbar"]) then {
+if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
 	_magType = 	([] + getArray (configFile >> "cfgWeapons" >> _item >> "magazines")) select 0;
 	_meleeNum = ({_x == _magType} count magazines player);
 	for "_i" from 1 to _meleeNum do {
@@ -24,17 +24,31 @@ if (_item in ["MeleeHatchet","MeleeCrowbar"]) then {
 	};
 };
 
+if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete"]) then {
+	switch (primaryWeapon player) do
+	{
+		case "MeleeHatchet": { "MeleeHatchet" call player_addToolbelt };
+		case "MeleeCrowbar": { "MeleeCrowbar" call player_addToolbelt };
+		case "MeleeMachete": { "MeleeMachete" call player_addToolbelt };
+	};
+};
+
 _isOk = [player,_config2] call BIS_fnc_invAdd;
+
 if (_isOk) then {
 	//Remove item
 	player removeWeapon _item;
 	
 	//Add magazines if needed
-	if (_create in ["MeleeHatchet","MeleeCrowbar"]) then {
+	if (_create in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
 		if (_create == "MeleeCrowbar") then {
 			player addMagazine 'crowbar_swing';
-		} else {
+		};
+		if (_create == "MeleeHatchet") then {
 			player addMagazine 'hatchet_swing';
+		};
+		if (_create == "MeleeMachete") then {
+				player addMagazine 'Machete_swing';
 		};
 		if (_type == "cfgWeapons") then {
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
@@ -50,11 +64,15 @@ if (_isOk) then {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 	
 	//Add magazines back
-	if (_item in ["MeleeHatchet","MeleeCrowbar"]) then {
+	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
 		if (_item == "MeleeCrowbar") then {
 			player addMagazine 'crowbar_swing';
-		} else {
+		};
+		if (_item == "MeleeHatchet") then {
 			player addMagazine 'hatchet_swing';
+		};
+		if (_item == "MeleeMachete") then {
+			player addMagazine 'Machete_swing';
 		};
 	};	
 };

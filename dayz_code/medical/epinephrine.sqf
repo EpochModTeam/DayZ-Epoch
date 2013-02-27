@@ -12,7 +12,9 @@ if (!_isDead) then {
 	_unit setVariable ["NORRN_unconscious", false, true];
 	_unit setVariable ["USEC_isCardiac",false,true];
 	sleep 5;
-	["usecEpi",[_unit,player,"ItemEpinephrine"]] call broadcastRpcCallAll;
+	//["usecEpi",[_unit,player,"ItemEpinephrine"]] call broadcastRpcCallAll;
+	usecEpi = [_unit,player,"ItemEpinephrine"];
+	publicVariable "usecEpi";
 };
 
 r_action = false;

@@ -24,7 +24,11 @@ if (_newFuel > 0) then {
 	sleep 6;
 
 	//apply newFuel to vehicle on every peer
-	["dayzSetFuel",[_vehicle,_newFuel]] call broadcastRpcCallAll;
+	//["dayzSetFuel",[_vehicle,_newFuel]] call broadcastRpcCallAll;
+
+	dayzSetFuel = [_vehicle,_newFuel];
+	dayzSetFuel spawn local_setFuel;
+	publicVariable "dayzSetFuel";
 
 	cutText [format["%1 has been drained for %2 litres of Fuel",_nameType,_canSize], "PLAIN DOWN"];
 	sleep 1;

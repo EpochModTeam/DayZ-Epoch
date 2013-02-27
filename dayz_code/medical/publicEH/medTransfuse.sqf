@@ -17,7 +17,7 @@ if (_unit == player) then {
 	
 	if (_TransfusionInfection) then {
 		r_player_infected = true;
-		player setVariable["USEC_infected",true];
+		player setVariable["USEC_infected",true,true]; 
 	};
 	
 	//Ensure Control is visible

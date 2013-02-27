@@ -1,44 +1,109 @@
-private["_item"];
+private["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_i","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest","_avaliable_slots"];
+
 disableSerialization;
-_item = 	_this;
-_config =	configFile >> "CfgMagazines" >> _item;
+call gear_ui_init;
 
-_consume = 	getArray (_config >> "ItemActions" >> "ReloadMag" >> "use");
-_create = 	getArray (_config >> "ItemActions" >> "ReloadMag" >> "output");
-
-_textConsume =	getText(configFile >> "CfgMagazines" >> (_consume select 0) >> "displayName");
-_textCreate =	getText(configFile >> "CfgMagazines" >> (_create select 0) >> "displayName");
-//_qtyConsume =	getText(configFile >> "CfgMagazines" >> (_consume select 0) >> "count");
-//_qtyCreate =	getText(configFile >> "CfgMagazines" >> (_create select 0) >> "count");
+//note - one slot ammo can be used!
 
 
-_amountNeed = count _consume;
-_amountHas = {_x == (_consume select 0)} count magazines player;
-_amountMake = count _create;
+_item =     _this;
 
-_qty = 0;
-if (_amountNeed == 1 and _amountMake == 1) then {
-	_control = uiNamespace getVariable 'uiControl';
-	_qty = gearSlotAmmoCount _control;
+_config =   configFile >> "CfgMagazines" >> _item;
+
+_consume =  getArray (_config >> "ItemActions" >> "ReloadMag" >> "use") select 0;
+_create =   getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") select 0;
+
+_item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
+
+//add check if weapon can use create (if not - show message)
+
+player playActionNow "PutDown";
+
+_consume_magsize =  getNumber(configFile >> "CfgMagazines" >> _consume >> "count");
+_create_magsize =   getNumber(configFile >> "CfgMagazines" >> _create >> "count");
+
+_consume_type = getNumber(configFile >> "CfgMagazines" >> _consume >> "type");
+
+//primary/secondary mags?
+_slotstart = 0;
+_slotend = 0;
+if (_consume_type == 256) then {
+    _slotstart = 109;
+    _slotend = 120;
+}; 
+if ( _consume_type == 16) then {    
+    _slotstart = 122;
+    _slotend = 129;
 };
 
-_hasInput = (_amountNeed <= _amountHas);
-player playActionNow "PutDown";
-if (_hasInput) then {
-	//Take Items
-	{
-		player removeMagazine _x;
-	} forEach _consume;
-	sleep 1;
-	//Give Items
-	{
-		if (_qty > 0) then {
-			player addMagazine [_x,_qty];
-		} else {
-			player addMagazine _x;
-		};
-	} forEach _create;
-	cutText [format[(localize  "str_player_29"),_amountMake,_textCreate], "PLAIN DOWN"];
+_dialog = findDisplay 106;
+
+_qty_total_ammo = 0;
+_qty_consume_ammo = 0;
+_qty_create_ammo = 0;
+_qty_consume_mags = 0;
+_qty_create_mags = 0;
+_qty_free_slots = 0;
+for "_i" from _slotstart to _slotend do {
+    _control =_dialog displayCtrl _i;
+    _mag = gearSlotData _control;
+    if (_mag == _consume) then {
+        _qty_total_ammo = _qty_total_ammo + gearSlotAmmoCount _control;
+        _qty_consume_ammo = _qty_consume_ammo + gearSlotAmmoCount _control;
+        _qty_consume_mags = _qty_consume_mags+1;
+    };
+    if  (_mag == _create) then {
+        _qty_total_ammo = _qty_total_ammo + gearSlotAmmoCount _control;
+        _qty_create_ammo = _qty_create_ammo + gearSlotAmmoCount _control;
+        _qty_create_mags = _qty_create_mags+1;
+    };
+    if (_mag == "") then {
+        _qty_free_slots = _qty_free_slots + 1;
+    };
+};
+
+_qtynew_create_ammo = 0;
+_qtynew_consume_ammo = 0;
+_qtynew_create_mags = 0;
+_qtynew_consume_mags = 0;
+
+_qtynew_consume_mags_full = 0;
+_qtynew_create_mags_full = 0;
+_qtynew_consume_ammo_rest = 0;
+_qtynew_create_ammo_rest = 0;
+
+
+if ( _consume_magsize > _create_magsize) then {
+    _qtynew_create_ammo = _qty_create_ammo + _item_ammo;
+    _qtynew_consume_ammo = _qty_consume_ammo - _item_ammo;
+    _qtynew_create_mags = ceil(_qtynew_create_ammo/_create_magsize);
+    _qtynew_consume_mags = ceil(_qtynew_consume_ammo/_consume_magsize);
 } else {
-	cutText [format[(localize  "str_player_28"),_amountNeed,_textConsume], "PLAIN DOWN"];
+    _qtynew_create_ammo = _qty_total_ammo;
+    _qtynew_consume_ammo = 0;
+};
+
+if ((_qtynew_create_mags + _qtynew_consume_mags) > _avaliable_slots) exitWith {
+    cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+};
+_qtynew_consume_mags_full = floor(_qtynew_consume_ammo/_consume_magsize);
+_qtynew_create_mags_full = floor(_qtynew_create_ammo/_create_magsize);
+_qtynew_consume_ammo_rest = _qtynew_consume_ammo - (_qtynew_consume_mags_full*_consume_magsize);
+_qtynew_create_ammo_rest = _qtynew_create_ammo - (_qtynew_create_mags_full*_create_magsize);
+
+//remove all _consume and _create mags (we already have total ammo count) 
+player removeMagazines _consume;
+player removeMagazines _create; 
+
+for "_i" from 1 to _qtynew_consume_mags_full do {
+    player addMagazine _consume;
+};
+if (_qtynew_consume_ammo_rest != 0) then {
+    player addMagazine [_consume,_qtynew_consume_ammo_rest];
+};
+for "_i" from 1 to _qtynew_create_mags_full do {
+    player addMagazine _create;
+};
+if (_qtynew_create_ammo_rest != 0) then {
+    player addMagazine [_create,_qtynew_create_ammo_rest];
 };

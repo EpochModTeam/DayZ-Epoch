@@ -43,7 +43,9 @@ if (_bulkqty >= 1) then {
 
 	// increment trader for each
 	for "_x" from 1 to 12 do {
-		["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+		//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+		dayzTradeObject = [_activatingPlayer,_traderID,_bos];
+		publicVariableServer  "dayzTradeObject";
 		
 		waitUntil {!isNil "dayzTradeResult"};
 
@@ -104,7 +106,10 @@ if (_bulkqty >= 1) then {
 
 	if (_qty >= _qty_in) then {
 
-		["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+		//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+		dayzTradeObject = [_activatingPlayer,_traderID,_bos];
+		publicVariableServer  "dayzTradeObject";
+	
 
 		waitUntil {!isNil "dayzTradeResult"};
 

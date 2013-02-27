@@ -50,7 +50,10 @@ if(_ownerID == dayz_playerUID) then {
 	_backpacks = 	getBackpackCargo _obj;
 	*/
 
-	["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+	dayzDeleteObj = [_objectID,_objectUID];
+	publicVariableServer "dayzDeleteObj";
+
 	
 	deleteVehicle _obj;
 	

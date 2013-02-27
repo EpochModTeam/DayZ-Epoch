@@ -249,7 +249,7 @@ if ((!_isClose or !_hasPatient) and r_action) then {
 };
 
 //Pain Effects
-if (r_player_inpain and !r_player_unconscious) then {
-	playSound "breath_1";
-	addCamShake [2, 1, 25];
-};
+//if (r_player_inpain and !r_player_unconscious) then {
+//	playSound "breath_1";
+//	addCamShake [2, 1, 25];
+//};

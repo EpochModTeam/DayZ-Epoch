@@ -44,7 +44,13 @@ if (_hasToolbox) then {
 			_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 			
 			//vehicle is owned by whoever is in it, so we have to have each client try and fix it
-			["dayzSetFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
+			//["dayzSetFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
+		
+			dayzSetFix = [_vehicle,_selection,1];
+			publicVariable "dayzSetFix";
+			//if (local _vehicle) then {
+			dayzSetFix call object_setFixServer;
+			//}
 		
 			player playActionNow "Medic";
 			sleep 1;

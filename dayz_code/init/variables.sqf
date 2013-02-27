@@ -49,9 +49,127 @@ pz_villager3 = "pz_villager3";
 pz_priest = "pz_priest";
 
 //Cooking
-meatraw = ["FoodSteakRaw","FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
-meatcooked = ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
+meatraw = [
+    "FoodSteakRaw",
+    "FoodmeatRaw",
+    "FoodbeefRaw",
+    "FoodmuttonRaw",
+    "FoodchickenRaw",
+    "FoodrabbitRaw",
+    "FoodbaconRaw"
+];
+meatcooked = [
+    "FoodSteakCooked",
+    "FoodmeatCooked",
+    "FoodbeefCooked",
+    "FoodmuttonCooked",
+    "FoodchickenCooked",
+    "FoodrabbitCooked",
+    "FoodbaconCooked"
+];
+//Eating
+no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix","FoodBioMeat"]+meatcooked+meatraw;
+
+
 badfood = ["FoodBioMeat"];
+
+food_with_output=[
+    "FoodCanBakedBeans",
+    "FoodCanSardines",
+    "FoodCanFrankBeans",
+    "FoodCanPasta",
+	"FoodCanGriff",
+	"FoodCanBadguy",
+	"FoodCanBoneboy",
+	"FoodCanCorn",
+	"FoodCanCurgon",
+	"FoodCanDemon",
+	"FoodCanFraggleos",
+	"FoodCanHerpy",
+	"FoodCanOrlok",
+	"FoodCanPowell",
+	"FoodCanTylers",
+	"FoodCanUnlabeled"
+];
+
+food_output = [
+    "TrashTinCan",
+    "TrashTinCan",
+    "TrashTinCan",
+    "TrashTinCan",
+	"FoodCanGriffEmpty",
+	"FoodCanBadguyEmpty",
+	"FoodCanBoneboyEmpty",
+	"FoodCanCornEmpty",
+	"FoodCanCurgonEmpty",
+	"FoodCanDemonEmpty",
+	"FoodCanFraggleosEmpty",
+	"FoodCanHerpyEmpty",
+	"FoodCanOrlokEmpty",
+	"FoodCanPowellEmpty",
+	"FoodCanTylersEmpty",
+	"FoodCanUnlabeledEmpty"
+];
+//Drinking
+no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
+drink_with_output = [
+    "ItemSoda",  //just to define item for ItemSodaEmpty
+    "ItemSodaCoke",
+    "ItemSodaPepsi",
+    "ItemSodaMdew",
+    "ItemSodaMtngreen",
+    "ItemSodaR4z0r",
+    "ItemSodaClays",
+    "ItemSodaSmasht", 
+    "ItemSodaDrwaste", 
+    "ItemSodaLemonade", 
+    "ItemSodaLvg", 
+    "ItemSodaMzly", 
+    "ItemSodaRabbit"
+];
+drink_output = [
+    "ItemSodaEmpty", 
+    "ItemSodaCokeEmpty",
+    "ItemSodaPepsiEmpty",
+    "ItemSodaMdewEmpty",
+    "ItemSodaMtngreenEmpty",
+    "ItemSodaR4z0rEmpty",
+    "ItemSodaClaysEmpty",
+    "ItemSodaSmashtEmpty", 
+    "ItemSodaDrwasteEmpty", 
+    "ItemSodaLemonadeEmpty", 
+    "ItemSodaLvgEmpty", 
+    "ItemSodaMzlyEmpty", 
+    "ItemSodaRabbitEmpty"
+];
+boil_tin_cans = [
+    "TrashTinCan",
+	"FoodCanGriffEmpty",
+	"FoodCanBadguyEmpty",
+	"FoodCanBoneboyEmpty",
+	"FoodCanCornEmpty",
+	"FoodCanCurgonEmpty",
+	"FoodCanDemonEmpty",
+	"FoodCanFraggleosEmpty",
+	"FoodCanHerpyEmpty",
+	"FoodCanOrlokEmpty",
+	"FoodCanPowellEmpty",
+	"FoodCanTylersEmpty",
+	"FoodCanUnlabeledEmpty",
+    "ItemSodaEmpty", 
+    "ItemSodaCokeEmpty",
+    "ItemSodaPepsiEmpty",
+    "ItemSodaMdewEmpty",
+    "ItemSodaMtngreenEmpty",
+    "ItemSodaR4z0rEmpty",
+    "ItemSodaClaysEmpty",
+    "ItemSodaSmashtEmpty", 
+    "ItemSodaDrwasteEmpty", 
+    "ItemSodaLemonadeEmpty", 
+    "ItemSodaLvgEmpty", 
+    "ItemSodaMzlyEmpty", 
+    "ItemSodaRabbitEmpty"
+];
 
 dayz_combatLog = "";
 canRoll = true;
@@ -260,7 +378,9 @@ dayzPlayerDeaths = [];
 //DayZ settings
 dayz_dawn = 6;
 dayz_dusk = 18;
-dayz_maxAnimals = 5;
+if(isNil "dayz_maxAnimals") then {
+	dayz_maxAnimals = 5;
+};
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
@@ -268,6 +388,15 @@ dayz_zSpawnDistance = 1000;
 if(isNil "dayz_maxLocalZombies") then {
 	dayz_maxLocalZombies = 40;
 };
+
+if(isNil "dayz_maxGlobalZombies") then {
+	dayz_maxGlobalZombies = 30;
+};
+
+if(isNil "dayz_maxZeds") then {
+	dayz_maxZeds = 500;
+};
+
 
 dayz_spawnPos = getPosATL player;
 
@@ -355,6 +484,10 @@ if(!isDedicated) then {
 	dayz_lootDelay =		3;
 	dayz_lootWait =			-300;
 	dayz_spawnZombies =		0;
+	//used to count global zeds around players
+	dayz_CurrentZombies = 0;
+	//Used to limit overall zed counts
+	dayz_maxCurrentZeds = 0;
 	dayz_inVehicle =		false;
 	dayz_Magazines = 		[];
 	dayzGearSave = 			false;

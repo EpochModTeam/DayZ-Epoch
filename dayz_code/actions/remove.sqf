@@ -38,6 +38,8 @@ _counter = 0;
 while {_isOk} do {
 
 	player playActionNow "Medic";
+	_dis=20;
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 	
 	r_interrupt = false;
 	_animState = animationState player;
@@ -54,7 +56,8 @@ while {_isOk} do {
 		if (_started and !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
-			[player,"repair",0,false] call dayz_zombieSpeak;
+			_sfx = "repair";
+			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 		};
 		if (r_interrupt) then {
 			r_doLoop = false;
@@ -84,7 +87,11 @@ while {_isOk} do {
 // Remove only if player waited
 if (_proceed) then {
 	cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
-	["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+	
+	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+	dayzDeleteObj = [_objectID,_objectUID];
+	publicVariableServer "dayzDeleteObj";
+
 	deleteVehicle _obj;
 } else {
 	r_interrupt = false;

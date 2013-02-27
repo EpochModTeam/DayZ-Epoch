@@ -41,9 +41,11 @@ if (!_isOk) then {
 	//wait a bit
 	player playActionNow "Medic";
 	sleep 1;
-	[player,"tentunpack",0,false] call dayz_zombieSpeak;
 	
-	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+	_dis=20;
+	_sfx = "tentunpack";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 	
 	sleep 5;
 	//place tent (local)
@@ -57,7 +59,9 @@ if (!_isOk) then {
 
 	//player setVariable ["tentUpdate",["Land_A_tent",_dir,_location,[dayz_tentWeapons,dayz_tentMagazines,dayz_tentBackpacks]],true];
 
-	["dayzPublishObj",[dayz_characterID,_tent,[_dir,_location],"TentStorage"]] call callRpcProcedure;
+	//["dayzPublishObj",[dayz_characterID,_tent,[_dir,_location],"TentStorage"]] call callRpcProcedure;
+	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
+	publicVariable "dayzPublishObj";
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
 } else {

@@ -63,7 +63,9 @@ if(!(alive _item)) then {
 	dayz_lastMeal =	time;
 	dayz_hunger = 0;
 
-	["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
+	//["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
+	dayzPlayerSave = [player,[],true];
+	publicVariable "dayzPlayerSave";
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 
@@ -88,7 +90,5 @@ if(!(alive _item)) then {
 	cutText [format[(localize  "str_player_consumed"),_animalType], "PLAIN DOWN"];
 	player switchmove "";
 };
-
-
 
 s_player_butcher = -1;

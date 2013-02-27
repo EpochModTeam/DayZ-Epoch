@@ -1,5 +1,5 @@
 //Let Zeds know
-_id = [player,4,true,(getPosATL player)] spawn player_alertZombies;
+[player,4,true,(getPosATL player)] spawn player_alertZombies;
 
 //display gui (temp hint)
 

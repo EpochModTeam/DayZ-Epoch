@@ -5,6 +5,11 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\breath_1",0.1,1,30};
 		titles[] = {};
 	};
+	class z_chopwood_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\chopwood.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
 	class heartbeat_1 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\heartbeat_1",0.8,1,30};

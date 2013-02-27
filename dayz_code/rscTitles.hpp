@@ -43,6 +43,49 @@ class RscDisplayStart
 	};
 };
 
+class RscDisplayDebriefing: RscStandardDisplay
+{
+	class controls
+	{
+		delete Debriefing_MissionTitle;
+		delete CA_MissionTitle;
+		delete CA_TextVotingTimeLeft;
+		delete CA_MissionResult;
+		delete CA_DebriefingInfo;
+		delete CA_DebriefingTextGroup;
+		delete CA_DebriefingObjectivesGroup;
+		delete CA_DebriefingStatsGroup;
+		delete ButtonStatistics;
+		delete ButtonRetry;
+		//delete ButtonContinue;
+	};
+	class ControlsBackground
+	{
+		delete Mainback;
+	};
+};
+class RscDisplayMissionFail: RscStandardDisplay
+{
+	class controls
+	{
+		delete Debriefing_MissionTitle;
+		delete CA_MissionTitle;
+		delete CA_TextVotingTimeLeft;
+		delete CA_MissionResult;
+		delete CA_DebriefingInfo;
+		delete CA_DebriefingTextGroup;
+		delete CA_DebriefingObjectivesGroup;
+		delete CA_DebriefingStatsGroup;
+		delete BRetry;
+		//delete BAbort;
+	};
+	class ControlsBackground
+	{
+		delete Mainback;
+	};
+};
+
+
 class CA_TextLanguage;
 class RscXListBox;
 
@@ -68,35 +111,91 @@ class RscDisplayGameOptions
 		};	
 	};
 };
+class RscShortcutButton;
+class RscShortcutButtonMain;
 class RscDisplayMain : RscStandardDisplay
 {
 	class controlsBackground 
 	{
-		class Mainback;
+		class Mainback : RscPicture {
+			idc = 1104;
+			x = "SafeZoneX + 0.04";
+			y = "SafeZoneY + 0.03";
+			w = 0.627451;
+			h = 1.000000;
+			text = "\ca\ui\data\ui_mainmenu_background_ca.paa";
+		};
 		class CA_ARMA2 : RscPicture
 		{
 			text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
 		};
 	};
 	
-	onLoad = "((_this select 0) displayCtrl 138) ctrlEnable false;";
-
 	class controls 
 	{
 		class CA_Version;
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Epoch 0.98 (1.7.5.1)";
+			text = "DayZ Epoch 0.981 (1.7.6.1)";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
-		class CA_TitleMainMenu;
-		class CA_SinglePlayer;
-		class CA_MP;
-		class CA_Options;
-		class CA_PlayerProfile;
-		class CA_Expansions;
-		class CA_Exit;
+		delete CA_TitleMainMenu;
+		delete CA_SinglePlayer;
+		class CA_PlayerName : RscText {
+			idc = 109;
+			style = 256;
+			colorbackground[] = {0.1, 0.1, 0.1, 0};
+			x = "SafeZoneX + 0.15";
+			y = "SafeZoneY + 0.06";
+			w = 0.5;
+			h = 0.05;
+		};
+		class CA_MP : RscShortcutButtonMain {
+			idc = 105;
+			x = "SafeZoneX + 0.05";
+			y = "SafeZoneY + 0.15";
+			toolTip = $STR_TOOLTIP_MAIN_MULTIPLAYER;
+			text = $STR_CA_MAIN_MULTI;
+			
+			class KeyHints {
+				class A {
+					key = 0x00050000 + 0;
+					hint = "";
+				};
+			};
+		};
+		class CA_Options : RscShortcutButtonMain {
+			x = "SafeZoneX + 0.05";
+			y = "SafeZoneY + 0.30";
+		};
+		class CA_PlayerProfile : RscShortcutButtonMain {
+			x = "SafeZoneX + 0.05";
+			y = "SafeZoneY + 0.45";
+		};
+		class CA_Expansions : RscShortcutButtonMain {
+			x = "SafeZoneX + 0.05";
+			y = "SafeZoneY + 0.60";
+		};
+		class CA_Exit : RscShortcutButtonMain {
+			x = "SafeZoneX + 0.05";
+			y = "SafeZoneY + 0.75";
+		};
+	};
+};
+//Remove Diary
+class RscDisplayDiary {
+	idd = 129;
+	movingEnable = 0;
+
+	class Controls {
+		delete Diary;
+		delete DiaryIndex;
+		delete B_Quit;
+		delete B_Add;
+		delete DiaryPage;
+		delete DiaryTitle;
+		delete DiaryBackground;
 	};
 };
 
@@ -171,7 +270,7 @@ class RscDisplayGear
 {
 	idd = 106;
 	enableDisplay = 1;
-	onUnload = "call player_gearSync;";
+	onUnload = "call player_gearSync; call dayz_forceSave;";
 	class controls
 	{
 		class CA_Filter_Icon: RscPicture

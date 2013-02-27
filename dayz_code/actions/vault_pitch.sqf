@@ -133,7 +133,10 @@ if(!_cancel) then {
 		_tent setVariable ["characterID",dayz_playerUID,true];
 		_tent setVariable ["OEMPos",_location,true];
 
-		["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
+		//["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
+		dayzPublishObj = [dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"];
+		publicVariableServer  "dayzPublishObj";
+	
 	
 		cutText ["You have setup your Safe", "PLAIN DOWN"];
 	
