@@ -105,15 +105,15 @@ if (inflamed cursorTarget and _canDo) then {
 
 	_recipe_ItemSandbagLarge = [
 		[ ["ItemSandbagLarge",1] ],
-		[ ["ItemSandbag",3],["ItemWire",1] ]
+		[ ["ItemSandbag",3],["ItemWire",1],["ItemTankTrap",1] ]
 	];
 	
 
 
 	
 	
-	_recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
-	_recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
+	//_recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
+	//_recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
 
 	//Add new item
 	_item = 	_this;

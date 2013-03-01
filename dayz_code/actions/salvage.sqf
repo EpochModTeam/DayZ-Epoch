@@ -48,9 +48,9 @@ if (_hasToolbox) then {
 		
 			dayzSetFix = [_vehicle,_selection,1];
 			publicVariable "dayzSetFix";
-			//if (local _vehicle) then {
-			dayzSetFix call object_setFixServer;
-			//}
+			if (local _vehicle) then {
+				dayzSetFix call object_setFixServer;
+			}
 		
 			player playActionNow "Medic";
 			sleep 1;

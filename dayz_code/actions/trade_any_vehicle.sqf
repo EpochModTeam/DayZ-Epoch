@@ -20,7 +20,7 @@ _bos = 0;
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
 } else {
-	_obj = nearestObjects [(getPosATL player), [_part_in], 10];
+	_obj = nearestObjects [(getPosATL player), [_part_in], 20];
 	_qty = count _obj;
 	_bos = 1;
 };
@@ -47,14 +47,14 @@ if (_qty >= _qty_in) then {
 				player removeMagazine _part_in;
 			};
 	
-			_dir = round(random 180);
+			_dir = round(random 360);
 
 			
-			_helipad = nearestObjects [player, ["HeliHCivil"], 50];
+			_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
 			if(count _helipad > 0) then {
-				_location = (getPosATL (_helipad select 0));	
+				_location = [(getPosATL (_helipad select 0)),0,10,1,0,2000,0] call BIS_fnc_findSafePos;
 			} else {
-				_location = [(position player),0,20,1,0,20,0] call BIS_fnc_findSafePos;
+				_location = [(position player),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
 			};
 	
 			//place tent (local)
@@ -110,7 +110,7 @@ if (_qty >= _qty_in) then {
 
 } else {
 	_needed =  _qty_in - _qty;
-	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+	cutText [format[("No %1 found within 20 meters. "),_needed,_textPartIn] , "PLAIN DOWN"];
 };
 
 TradeInprogress = false;

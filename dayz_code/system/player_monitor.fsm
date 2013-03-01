@@ -1136,7 +1136,7 @@ class FSM
        "	};" \n
        "};" \n
        "//Removed for now" \n
-       "[] execVM ""\z\addons\dayz_code\system\antihack.sqf"";" \n
+       "//[] execVM ""\z\addons\dayz_code\system\antihack.sqf"";" \n
        "" \n
        "// TODO: questionably" \n
        "{ _x call fnc_vehicleEventHandler; } forEach vehicles;" \n

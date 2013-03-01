@@ -100,7 +100,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 				_count = 1;
 			};
 		} else {
-			_count = {(typeOf _x) == _name} count (nearestObjects [player, [_name], 10]);
+			_count = {(typeOf _x) == _name} count (nearestObjects [player, [_name], 20]);
 		}
 	};
 	if(_type == "CfgMagazines") then {
