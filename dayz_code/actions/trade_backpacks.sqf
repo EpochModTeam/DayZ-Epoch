@@ -43,6 +43,10 @@ if (_bulkqty >= 1) then {
 	
 	_part_in = "bulk_" + _part_in;
 	player removeMagazine _part_in;
+
+	disableSerialization;
+	call dayz_forceSave;
+	
 	diag_log format["DEBUG remove magazine %1", _part_in];
 
 	// increment trader for each
@@ -65,8 +69,6 @@ if (_bulkqty >= 1) then {
 	// 
 
 	if (_part_out == "ItemSilverBar" and _qty_out >= 30) then {
-		
-
 	
 		// find number of gold
 		_gold_out = _qty_out / 30;
@@ -90,9 +92,6 @@ if (_bulkqty >= 1) then {
 			player addMagazine _part_out;
 		};
 
-
-	
-
 	} else {
 		
 		for "_x" from 1 to _qty_out do {
@@ -100,6 +99,9 @@ if (_bulkqty >= 1) then {
 		};
 	};
 	
+	disableSerialization;
+	call dayz_forceSave;
+
 	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 	dayzTradeResult = nil;
@@ -138,8 +140,11 @@ if (_bulkqty >= 1) then {
 				// player addBackpack _part_out;
 			};
 
+			disableSerialization;
+			call dayz_forceSave;
+
 			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-	
+
 			{player removeAction _x} forEach s_player_parts;s_player_parts = [];
 			s_player_parts_crtl = -1;
 	

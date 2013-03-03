@@ -6,6 +6,8 @@ _part =		_array select 1;
 _hitpoint = _array select 2;
 _type = typeOf _vehicle; 
 
+// if ((count (crew _vehicle)) > 0) exitWith {cutText ["You may not repair while someone is in the vehicle", "PLAIN DOWN"]}; 
+
 //
 _hasToolbox = 	"ItemToolbox" in items player;
 _section = _part in magazines player;
@@ -25,6 +27,9 @@ if (_section and _hasToolbox) then {
 	if (_damage > 0) then {
 		
 		player removeMagazine _part;
+
+		disableSerialization;
+		call dayz_forceSave;
 
 		//Fix the part
 		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
@@ -50,6 +55,7 @@ if (_section and _hasToolbox) then {
 
 		//Success!
 		cutText [format["You have successfully attached %1 to the %2",_namePart,_nameType], "PLAIN DOWN"];
+		
 	};
 			
 } else {

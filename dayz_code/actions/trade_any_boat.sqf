@@ -45,6 +45,9 @@ if (_qty >= _qty_in) then {
 			for "_x" from 1 to _qty_in do {
 				player removeMagazine _part_in;
 			};
+
+			disableSerialization;
+			call dayz_forceSave;
 	
 			_dir = round(random 360);
 
@@ -73,11 +76,16 @@ if (_qty >= _qty_in) then {
 			_veh call fnc_vehicleEventHandler;
 
 			cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+
+			
 		} else {
 			// Sell Vehicle
 			for "_x" from 1 to _qty_out do {
 				player addMagazine _part_out;
 			};
+
+			disableSerialization;
+			call dayz_forceSave;
 
 			_obj = _obj select 0;
 			_objectID 	= _obj getVariable ["ObjectID","0"];
@@ -103,7 +111,7 @@ if (_qty >= _qty_in) then {
 
 } else {
 	_needed =  _qty_in - _qty;
-	cutText [format[("No %1 found within 20 meters."),_needed,_textPartIn] , "PLAIN DOWN"];
+	cutText [format[("No %1 found within 20 meters."),_textPartOut] , "PLAIN DOWN"];
 };
 
 TradeInprogress = false;

@@ -84,6 +84,9 @@ if (_hasrequireditem or _bypass) then {
 		_dir = getDir player;
 		player removeMagazine _item;
 
+		disableSerialization;
+		call dayz_forceSave;
+
 		player playActionNow "Medic";
 		sleep 1;
 	
@@ -104,7 +107,7 @@ if (_hasrequireditem or _bypass) then {
 	
 		//["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
 		dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
-		publicVariable "dayzPublishObj";
+		publicVariableServer "dayzPublishObj";
 
 		sleep 2;
 		player allowDamage true;

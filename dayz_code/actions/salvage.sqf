@@ -1,10 +1,19 @@
 private["_vehicle","_part","_hitpoint","_type","_selection","_array"];
+
+disableSerialization;
+
 _id = _this select 2;
 _array = 	_this select 3;
 _vehicle = 	_array select 0;
 _part =		_array select 1;
 _hitpoint = _array select 2;
 _type = typeOf _vehicle; 
+
+
+// if ((count (crew _vehicle)) > 0) exitWith {cutText ["You may not salvage while someone is in the vehicle", "PLAIN DOWN"]};
+
+_isOK = false;
+_brokenPart = false;
 
 //
 _hasToolbox = 	"ItemToolbox" in items player;
@@ -26,20 +35,24 @@ if (_hasToolbox) then {
 	//dont allow removal of damaged parts
 	if (_damage < 1) then {
 		
-		_isOK = [player,_part] call BIS_fnc_invAdd;
-        if (_isOK) then {
-			
-			// the more damaged the part the higher the chance to loose the part.
-			// 0.25 = 25% chance to loose part 
-			// 0.5  = 50% chance to loose part 
-			// 0.75 = 75% chance to loose part 
-			// 0.99 = 99% chance to loose part 
+		_findPercent = (1 - _damage) * 10;
+		if(ceil (random _findPercent) == 1) then {
+			_isOK = true;
+			_brokenPart = true;
+		} else {
+			_isOK = [player,_part] call BIS_fnc_invAdd;
+			_brokenPart = false;
 
-			_findPercent = (1 - _damage) * 10;
-			// X = 1 - 0.25 = 0.75 x 10 == 7.5
-			// X = 1 - 0.99 = 0.01 x 10 == 0.1
 			
+			call dayz_forceSave;
 
+		};
+		
+		
+		if (_isOK) then {	
+
+			player playActionNow "Medic";
+			
 			//break the part
 			_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 			
@@ -50,25 +63,23 @@ if (_hasToolbox) then {
 			publicVariable "dayzSetFix";
 			if (local _vehicle) then {
 				dayzSetFix call object_setFixServer;
-			}
-		
-			player playActionNow "Medic";
+			};
+
 			sleep 1;
-		
+
 			[player,"repair",0,false] call dayz_zombieSpeak;
 			null = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 			sleep 5;
 			_vehicle setvelocity [0,0,1];
 
-			if(ceil (random _findPercent) == 1) then {
-				// loose part and damage vehicle
-				player removeMagazine _part;
+			if(_brokenPart) then {
 				//Failed!
 				cutText [format["You have destroyed %1 while attempting to remove from %2",_namePart,_nameType], "PLAIN DOWN"];
 			} else {
 				//Success!
 				cutText [format["You have successfully removed %1 from the %2",_namePart,_nameType], "PLAIN DOWN"];
 			};
+			
 
 		} else {
 			cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];

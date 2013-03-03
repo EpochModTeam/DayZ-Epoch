@@ -76,6 +76,19 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	_sqty = _sell select 0;
 	_sname = _sell select 1;
 	_stype = _sell select 2;
+	switch(true)do{ 
+		case (_stype == 1): { 
+			_stype = "CfgMagazines";
+		}; 
+		case (_stype == 2): { 
+			_stype = "CfgVehicles";
+		}; 
+		case (_stype == 3): { 
+			_stype = "CfgWeapons";
+		}; 
+	}; 
+	// Display Name of sell item
+	_textCurrencySell =	getText(configFile >> _stype >> _sname >> "displayName");
 	
 	// Menu sort order
 	_order = _x select 5;
@@ -89,16 +102,23 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	
 	// Allways 1 for now
 	_out = 1;
-	// qty consumed of bname
-	_in = _bqty;
+	
 	
 	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];
 	if(_qty <= 0) then {
 		_Display = format["Buy %1 (Out of Stock: %2)", _textPart, _qty];
 		_part = player addAction [_Display, "\z\addons\dayz_code\actions\trade_cancel.sqf",[], 0, true, false, "",""];
 	} else {
-		_Display = format["Buy %1 (%2) for %3 %4 (Available: %5)", _textPart, _name, _in, _textCurrency, _qty];
-		_part = player addAction [_Display, _File,[_name,_bname,_out,_in,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
+		// if over 50 in stock lower price to that of sell price
+		if(_qty >= 50) then {
+			_Display = format["Buy %1 (%2) for %3 %4 (Available: %5)", _textPart, _name, _sqty, _textCurrencySell, _qty];
+			_part = player addAction [_Display, _File,[_name,_sname,_out,_sqty,"buy",_textCurrencySell,_textPart,_header], _order, true, true, "",""];
+		} else {
+			_Display = format["Buy %1 (%2) for %3 %4 (Available: %5)", _textPart, _name, _bqty, _textCurrency, _qty];
+			_part = player addAction [_Display, _File,[_name,_bname,_out,_bqty,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
+		};
+
+		
 	};
 	
 	diag_log format["DEBUG TRADER: %1", _part];

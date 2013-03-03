@@ -76,7 +76,7 @@ player setVariable["medForceUpdate",true];
 
 //["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
 dayzPlayerSave = [player,[],true];
-publicVariable "dayzPlayerSave";
+publicVariableServer "dayzPlayerSave";
 
 dayz_lastMeal =	time;
 dayz_hunger = 0;

@@ -36,7 +36,11 @@ if (_bulkqty >= 1) then {
 	
 	_part_in = "bulk_" + _part_in;
 	player removeMagazine _part_in;
-	diag_log format["DEBUG remove magazine %1", _part_in];
+
+	disableSerialization;
+	call dayz_forceSave;
+
+	// diag_log format["DEBUG remove magazine %1", _part_in];
 
 	// increment trader for each
 	for "_x" from 1 to 12 do {
@@ -96,6 +100,9 @@ if (_bulkqty >= 1) then {
 		};
 	};
 
+	disableSerialization;
+	call dayz_forceSave;
+
 	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 	dayzTradeResult = nil;
@@ -134,9 +141,13 @@ if (_bulkqty >= 1) then {
 				for "_x" from 1 to _qty_out do {
 					player addMagazine _part_out;
 				};
+
+				disableSerialization;
+				call dayz_forceSave;
 	
 				// [player,"repair",0,false] call dayz_zombieSpeak;
 				cutText [format[("Traded %1 %2 for %3 %4"),(_qty_in*_qty),_textPartIn,(_qty_out*_qty),_textPartOut], "PLAIN DOWN"];
+
 
 				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
 				s_player_parts_crtl = -1;

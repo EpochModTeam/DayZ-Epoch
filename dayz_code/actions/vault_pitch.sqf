@@ -1,6 +1,8 @@
 private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","_key"];
 //check if can pitch here
-call gear_ui_init;
+
+disableSerialization;
+
 _playerPos = 	getPosATL player;
 _item = _this;
 _hastentitem = _this in magazines player;
@@ -101,6 +103,9 @@ if(!_cancel) then {
 	if (!_isOk) then {
 		//remove tentbag
 		player removeMagazine _item;
+
+		call dayz_forceSave;
+
 		_dir = round(direction player);	
 	
 		//wait a bit
@@ -136,7 +141,6 @@ if(!_cancel) then {
 		//["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
 		dayzPublishObj = [dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"];
 		publicVariableServer  "dayzPublishObj";
-	
 	
 		cutText ["You have setup your Safe", "PLAIN DOWN"];
 	

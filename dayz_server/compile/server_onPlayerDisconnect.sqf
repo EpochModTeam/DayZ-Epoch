@@ -18,7 +18,15 @@ if (vehicle _object != _object) then {
 if (59 in _playerIDtoarray) exitWith { };
 
 if ((_timeout - time) > 0) then {
+	
 	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
+    _object setVariable["NORRN_unconscious",true, true];
+    _object setVariable["unconsciousTime",300,true];
+    diag_log format["SET UNCONCIOUSNESS: %1", _playerName];
+
+	//_message = format["PLAYER COMBAT LOGGED: %1 (%2)",_playerName, _killerName, _weapon];
+	//[nil, nil, rspawn, [_object, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
+
 };
 
 diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
@@ -29,7 +37,7 @@ if (!isNull _object) then {
 	{ [_x,"gear"] call server_updateObject } foreach 
 		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10]);
 	if (alive _object) then {
-		//[_object,(magazines _object),true,(unitBackpack _object)] call server_playerSync;
+		//[_object,(magazines _object),true,true] call server_playerSync;
 		[_object,[],true] call server_playerSync;
 		_myGroup = group _object;
 		deleteVehicle _object;

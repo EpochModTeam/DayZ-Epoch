@@ -66,7 +66,7 @@ if(_isPZombie) then {
 };
 
 
-if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cursorTarget < 6)) then {	//Has some kind of target
+if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cursorTarget < 5)) then {	//Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
 	_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
@@ -151,7 +151,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 	*/
 
-	if((_isVehicle or _isTent or (cursorTarget isKindOf "VaultStorage")) and _canDo and !_isMan) then {
+	if((_isVehicle or _isTent or (cursorTarget isKindOf "VaultStorage")) and _isAlive and _canDo and !_isMan) then {
 		if (s_player_checkGear < 0) then {
 			s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\cargocheck.sqf",cursorTarget, 1, true, true, "", ""];
 		};
@@ -405,7 +405,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_studybody;
 		s_player_studybody = -1;
 	};
-		
+	
+	/*	
 	//Dog
 	if (_isDog and _isAlive and (_hasRawMeat) and _canDo and _ownerID == "0" and player getVariable ["dogID", 0] == 0) then {
 		if (s_player_tamedog < 0) then {
@@ -415,6 +416,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_tamedog;
 		s_player_tamedog = -1;
 	};
+	*/
 	
 	if (_isDog and _ownerID == dayz_characterID and _isAlive and _canDo) then {
 		_dogHandle = player getVariable ["dogID", 0];

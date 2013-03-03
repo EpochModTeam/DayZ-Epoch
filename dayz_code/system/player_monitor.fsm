@@ -286,7 +286,7 @@ class FSM
            "	_currentState = [_currentWpn,_currentAnim,_temp];" \n
            "	" \n
            "	dayz_Magazines = _magazineArray;" \n
-           "	dayzPlayerSave = [player,dayz_Magazines,false];" \n
+           "	dayzPlayerSave = [player,dayz_Magazines,false,true];" \n
            "	publicVariableServer ""dayzPlayerSave"";" \n
            "			" \n
            "	if (isServer) then {" \n
@@ -590,10 +590,6 @@ class FSM
        "" \n
        "dayzGearSave = false;" \n
        "_inventory call player_gearSet;" \n
-       "" \n
-       "player removeMagazine ""DummyItem"";" \n
-       "" \n
-	   "player addMagazine ""DummyItem"";" \n
        "" \n
        "//Assess in backpack" \n
        "if (count _backpack > 0) then {" \n

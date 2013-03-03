@@ -14,9 +14,10 @@ diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
 _location = _worldspace select 1;
 
-//Generate UID
-_uid = _worldspace call dayz_objectUID2;
-// _uid = format["%1%2",dayZ_instance,_uid];
+//Generate UID test using time
+// _uid = str( round (dateToNumber date)) + str(round time);
+_uid = _worldspace call dayz_objectUID3;
+//_uid = format["%1%2",(round time),_uid];
 
 if (_spawnDMG) then { 
 	_fuel = 0;

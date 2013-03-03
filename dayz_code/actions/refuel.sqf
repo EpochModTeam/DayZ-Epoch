@@ -1,6 +1,8 @@
 private["_vehicle","_curFuel","_newFuel","_timeLeft"];
 _vehicle = 		cursorTarget;
 
+// if ((count (crew _vehicle)) > 0) exitWith {cutText ["You may not refuel while someone is in the vehicle", "PLAIN DOWN"]};
+
 _canSize = 		getNumber(configFile >> "cfgMagazines" >> "ItemJerrycan" >> "fuelQuantity");
 _configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
 _capacity = 	getNumber(_configVeh >> "fuelCapacity");
@@ -14,6 +16,9 @@ _newFuel = (_newFuel / _capacity);
 player removeMagazine "ItemJerrycan";
 player addMagazine "ItemJerrycanEmpty";
 
+disableSerialization;
+call dayz_forceSave;
+
 player playActionNow "Medic";
 _dis=10;
 _sfx = "refuel";
@@ -23,10 +28,14 @@ _sfx = "refuel";
 sleep 6;
 
 dayzSetFuel = [_vehicle,_newFuel];
-dayzSetFuel spawn local_setFuel;
 publicVariable "dayzSetFuel";
+if (local _vehicle) then {
+	dayzSetFuel spawn local_setFuel;
+};
+
 
 cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
+
 sleep 1;
 
 call fnc_usec_medic_removeActions;

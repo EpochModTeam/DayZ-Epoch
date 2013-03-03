@@ -269,11 +269,11 @@ class Citizen1;	// External class reference
         transportmaxbackpacks = 2;
 		class Turrets {};
 	};
-	class ArmoredSUV_Base_PMC;
-	class ArmoredSUV_PMC_DZ : ArmoredSUV_Base_PMC { 
+	class ArmoredSUV_PMC;
+	class ArmoredSUV_PMC_DZ : ArmoredSUV_PMC { 
 		scope = 2; 
 		side = 2; 
-		faction = "PMC_BAF"; 
+		faction = "PMC_BAF";
 		crew = ""; 
 		typicalCargo[] = {}; 
 		transportMaxWeapons = 20; 

@@ -56,6 +56,19 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	_bqty = _buy select 0;
 	_bname = _buy select 1;
 	_btype = _buy select 2;
+	switch(true)do{ 
+		case (_btype == 1): { 
+			_btype = "CfgMagazines";
+		}; 
+		case (_btype == 2): { 
+			_btype = "CfgVehicles";
+		}; 
+		case (_btype == 3): { 
+			_btype = "CfgWeapons";
+		}; 
+	}; 
+	// Display Name of buy item
+	_textCurrencyBuy =	getText(configFile >> _btype >> _bname >> "displayName");
 	
 	// Sell data from array
 	_sell = _x select 4;
@@ -110,15 +123,36 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 		_count = {_x == _name} count weapons player;
 	};
 
-	if (_count > 0) then {
-		_Display = format["Sell %1 for %2 %3 each", _textPart, _sqty, _textCurrency];
-	} else {
-		_Display = format["<t color='#ffff00'>Sell %1 for %2 %3 each</t>", _textPart, _sqty, _textCurrency];
-	};
 
-	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];	
+	// if under 5 in stock raise price to that of buy price
+		if(_qty <= 5) then {
+
+			if (_count > 0) then {
+				_Display = format["Sell %1 for %2 %3 each", _textPart, _bqty, _textCurrencyBuy];
+			} else {
+				_Display = format["<t color='#ffff00'>Sell %1 for %2 %3 each</t>", _textPart, _bqty, _textCurrencyBuy];
+			};
+
+			// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];	
+
+			_part = player addAction [_Display, _File,[_sname,_name,_bqty,_in,"sell",_textPart,_textCurrencyBuy,_header], _order, true, true, "",""];
+
+		} else {
+
+			if (_count > 0) then {
+				_Display = format["Sell %1 for %2 %3 each", _textPart, _sqty, _textCurrency];
+			} else {
+				_Display = format["<t color='#ffff00'>Sell %1 for %2 %3 each</t>", _textPart, _sqty, _textCurrency];
+			};
+
+			// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];	
+
+			_part = player addAction [_Display, _File,[_sname,_name,_sqty,_in,"sell",_textPart,_textCurrency,_header], _order, true, true, "",""];
+
+		};
+
+
 	
-	_part = player addAction [_Display, _File,[_sname,_name,_out,_in,"sell",_textPart,_textCurrency,_header], _order, true, true, "",""];
 
 	diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];

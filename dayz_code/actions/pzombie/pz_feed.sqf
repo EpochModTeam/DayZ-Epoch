@@ -65,7 +65,7 @@ if(!(alive _item)) then {
 
 	//["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
 	dayzPlayerSave = [player,[],true];
-	publicVariable "dayzPlayerSave";
+	publicVariableServer "dayzPlayerSave";
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 

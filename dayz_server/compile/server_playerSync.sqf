@@ -20,6 +20,7 @@ private["_character","_magazines","_force","_characterID","_charPos","_isInVehic
 _character = 	_this select 0;
 _magazines =	_this select 1;
 //_force = 		_this select 2;
+_forceGear =	_this select 3;
 _force =	true;
 
 
@@ -94,10 +95,10 @@ if (_characterID != "0") then {
 		};
 		_character setVariable ["posForceUpdate",false,true];
 	};
-	if (_isNewGear) then {
+	if (_isNewGear or _forceGear) then {
 		//diag_log ("gear..."); sleep 0.05;
 		_playerGear = [weapons _character,_magazines];
-//diag_log ("playerGear: " +str(_playerGear));
+		//diag_log ("playerGear: " +str(_playerGear));
 		_backpack = unitBackpack _character;
 		_playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
 	};

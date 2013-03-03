@@ -31,6 +31,10 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 					cutText [format ["Can Abort in %1", (_timeMax - _timeOut)], "PLAIN DOWN"];
 					//cutText [format[localize "str_abort_zedsclose",_text, "PLAIN DOWN"];
 				};
+				case (!placevault) : {
+					_btnAbort ctrlEnable false;
+					cutText ["Cannot Abort while in a trader city!", "PLAIN DOWN"];
+				};
 				case (player getVariable["combattimeout", 0] >= time) : {
 					_btnAbort ctrlEnable false;
 					//cutText ["Cannot Abort while in combat!", "PLAIN DOWN"];

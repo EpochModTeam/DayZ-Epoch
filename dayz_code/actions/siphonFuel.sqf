@@ -1,6 +1,8 @@
 private["_vehicle","_curFuel","_newFuel","_timeLeft"];
 _vehicle = 		cursorTarget;
 
+// if ((count (crew _vehicle)) > 0) exitWith {cutText ["You may not sihpon fuel while someone is in the vehicle", "PLAIN DOWN"]};
+
 _canSize = 		getNumber(configFile >> "cfgMagazines" >> "ItemJerrycan" >> "fuelQuantity");
 _configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
 _capacity = 	getNumber(_configVeh >> "fuelCapacity");
@@ -16,6 +18,9 @@ if (_newFuel > 0) then {
 	player removeMagazine "ItemJerrycanEmpty";
 	player addMagazine "ItemJerrycan";
 
+	disableSerialization;
+	call dayz_forceSave;
+
 	player playActionNow "Medic";
 	[player,"refuel",0,false] call dayz_zombieSpeak;
 
@@ -27,10 +32,15 @@ if (_newFuel > 0) then {
 	//["dayzSetFuel",[_vehicle,_newFuel]] call broadcastRpcCallAll;
 
 	dayzSetFuel = [_vehicle,_newFuel];
-	dayzSetFuel spawn local_setFuel;
+	if (local _vehicle) then {
+		dayzSetFuel spawn local_setFuel;
+	};
 	publicVariable "dayzSetFuel";
 
 	cutText [format["%1 has been drained for %2 litres of Fuel",_nameType,_canSize], "PLAIN DOWN"];
+	
+	
+	
 	sleep 1;
 
 	call fnc_usec_medic_removeActions;
