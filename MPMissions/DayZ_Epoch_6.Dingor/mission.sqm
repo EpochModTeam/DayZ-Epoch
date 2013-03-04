@@ -24,9 +24,14 @@ class Mission
 		"cacharacters_pmc",
 		"ca_modules_functions",
 		"ibr_lingor",
+		"ibr_lcivilian_patch",
 		"chn_crocodile",
 		"warfarebuildings",
-		"ibr_dingor"
+		"ibr_dingor",
+		"glt_m300t",
+		"sigisolda",
+		"suv_col",
+		"csj_gyroac",
 	};
 	addOnsAuto[]=
 	{
@@ -38,8 +43,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Dingor DayZ_Epoch";
-		briefingDescription="Dingor DayZ_Epoch Private Server";
+		briefingName="Dingor DayZ Epoch";
+		briefingDescription="Dingor DayZ Epoch Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
