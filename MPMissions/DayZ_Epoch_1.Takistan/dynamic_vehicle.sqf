@@ -41,7 +41,7 @@ AllowedVehiclesList = [
 	["SUV_Orange",1],
 	["SUV_Charcoal",1],
 	["SUV_Blue",1],
-	["ArmoredSUV_PMC_DZ",2]
+	["ArmoredSUV_PMC_DZ",2],
 	["UH1H_DZ",2],
 	["Mi17_Civilian_DZ",3],
 	["Mi17_DZ",1],
@@ -49,8 +49,6 @@ AllowedVehiclesList = [
 	["LandRover_CZ_EP1",2],
 	["HMMWV_Ambulance",2],
 	["HMMWV_DES_EP1",1],
-	["Smallboat_1",2],
-	["Smallboat_2",2],
 	["M113Ambul_UN_EP1",1],
 	["KamazRefuel",1],
 	["UralRefuel_TK_EP1",1],

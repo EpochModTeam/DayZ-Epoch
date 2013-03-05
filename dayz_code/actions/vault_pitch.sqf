@@ -1,6 +1,9 @@
 private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","_key"];
 //check if can pitch here
 
+if(TradeInprogress) exitWith { cutText ["Vault pitching already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 disableSerialization;
 
 _playerPos = 	getPosATL player;
@@ -15,10 +18,8 @@ _location = player modeltoworld [_offset_x,_offset_y,_offset_z];
 
 // Allow placement anywhere.
 
-
 _isOk = true;
  
-
 //diag_log ("Pitch Tent: " + str(_isok) );
 
 _config = configFile >> "CfgMagazines" >> _item;
@@ -101,7 +102,12 @@ deleteVehicle _tmpvault;
 
 if(!_cancel) then {
 	if (!_isOk) then {
-		//remove tentbag
+		
+		//remove safe
+
+		_hastentitem = _this in magazines player;
+		if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"pitch"] , "PLAIN DOWN"]};
+
 		player removeMagazine _item;
 
 		call dayz_forceSave;
@@ -151,3 +157,5 @@ if(!_cancel) then {
 } else {
 	cutText ["Canceled construction of Safe.", "PLAIN DOWN"];
 };
+
+TradeInprogress = false;

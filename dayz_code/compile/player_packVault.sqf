@@ -2,6 +2,10 @@
 [_obj] spawn player_packVault;
 */
 private["_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
+
+if(TradeInprogress) exitWith { cutText ["That Safe is already being packed." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -22,7 +26,8 @@ if(_ownerID == dayz_playerUID) then {
 	_location2 = getPosATL player;
 	
 	if(_location1 distance _location2 > 0.1) exitWith {
-		cutText ["Packing Safe canceled." , "PLAIN DOWN"]
+		cutText ["Packing Safe canceled." , "PLAIN DOWN"];
+		_obj setVariable["packing",0];
 	};
 
 	player playActionNow "Medic";
@@ -93,3 +98,5 @@ if(_ownerID == dayz_playerUID) then {
 };
 
 s_player_packvault = -1;
+
+TradeInprogress = false;

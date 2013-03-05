@@ -76,6 +76,8 @@ _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _da
 diag_log ("HIVE: WRITE: "+ str(_key)); 
 _key call server_hiveWrite;
 
+dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+
 // Switched to spawn so we can wait a bit for the ID
 [_object,_uid,_fuel,_damage,_array,_characterID,_class] spawn {
    private["_object","_uid","_fuel","_damage","_array","_characterID","_done","_retry","_key","_result","_outcome","_oid","_selection","_dam","_class"];
@@ -133,7 +135,7 @@ _key call server_hiveWrite;
 
 	_object call fnc_vehicleEventHandler;
 
-	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+	_object setVariable ["JustSpawned",nil,true];
 
 	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
 };

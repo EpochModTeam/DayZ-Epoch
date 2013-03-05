@@ -1,11 +1,15 @@
 private["_location","_isOk","_dir","_classname","_item"];
+
+if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _location = player modeltoworld [0,1,0];
 // _location set [2,0];
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		(surfaceIsWater _location) or dayz_isSwimming;
 _bypass = false;
 
-call gear_ui_init;
+// call gear_ui_init;
 
 if(_isWater) exitWith {cutText [localize "str_player_26", "PLAIN DOWN"];};
 if(_onLadder) exitWith {cutText [localize "str_player_21", "PLAIN DOWN"];};
@@ -80,6 +84,9 @@ if (_hasrequireditem or _bypass) then {
 	deleteVehicle _tmpbuilt;
 
 	if(!_cancel) then {
+	
+		_hasbuilditem = _this in magazines player;
+		if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]};
 
 		_dir = getDir player;
 		player removeMagazine _item;
@@ -120,3 +127,5 @@ if (_hasrequireditem or _bypass) then {
 } else {
 	cutText [format[localize "str_build_failed_01",_text], "PLAIN DOWN"];
 };
+
+TradeInprogress = false;

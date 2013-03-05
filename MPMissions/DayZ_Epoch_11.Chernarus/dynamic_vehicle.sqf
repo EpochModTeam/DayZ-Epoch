@@ -31,7 +31,7 @@ AllowedVehiclesList = [
 	["UAZ_RU",1],
 	["UAZ_INS",1],
 	["Ikarus",3],
-	["SUV_TK_CIV_EP1",2],
+	["SUV_TK_CIV_EP1",2], 
 	["SUV_Green",1],
 	["SUV_Yellow",1],
 	["SUV_White",1],
@@ -41,7 +41,7 @@ AllowedVehiclesList = [
 	["SUV_Orange",1],
 	["SUV_Charcoal",1],
 	["SUV_Blue",1],
-	["ArmoredSUV_PMC_DZ",2]
+	["ArmoredSUV_PMC_DZ",2],
 	["UH1H_DZ",2],
 	["Mi17_Civilian_DZ",3],
 	["Mi17_DZ",1],

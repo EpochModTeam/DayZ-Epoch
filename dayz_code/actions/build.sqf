@@ -1,4 +1,8 @@
 private["_location","_isOk","_dir","_classname","_item"];
+
+if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _location = player modeltoworld [0,1,0];
 _location set [2,0];
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -74,6 +78,9 @@ _built_location set [2,0];
 
 if(!_cancel) then {
 
+	_hasbuilditem = _this in magazines player;
+	if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]};
+
 	_dir = getDir player;
 
 	player removeMagazine _item;
@@ -109,3 +116,4 @@ if(!_cancel) then {
 } else {
 	cutText [format["Canceled construction of %1.",_text], "PLAIN DOWN"];
 };
+TradeInprogress = false;

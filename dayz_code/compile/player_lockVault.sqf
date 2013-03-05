@@ -2,6 +2,10 @@
 [_obj] spawn player_unlockVault;
 */
 private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
+
+if(TradeInprogress) exitWith { cutText ["Lock already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -57,3 +61,4 @@ if(_ownerID == dayz_playerUID) then {
 } else {
 	cutText ["You cannot lock this Safe, it is not yours", "PLAIN DOWN"];
 };
+TradeInprogress = false;

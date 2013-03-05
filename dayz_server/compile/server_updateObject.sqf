@@ -10,6 +10,9 @@ _isNotOk = false;
 
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
+_justSpawned = _object getVariable ["JustSpawned",false];
+
+if (_justSpawned) exitWith { diag_log(format["Vehicle Just Spawned do nothing: %1", typeOf _object]); };
 
 if ((typeName _objectID != "string") || (typeName _uid != "string")) then
 { 
