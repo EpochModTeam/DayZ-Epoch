@@ -335,7 +335,7 @@ class FSM
        "  	if(vehicle _x != _x && !(vehicle _x in _safety) && (typeOf vehicle _x) != ""ParachuteWest"") then {" \n
        "		diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
        "   		(vehicle _x) setDamage 1;" \n
-       "   		_x setDamage 1;				" \n
+       "   		_x setDamage 1;" \n
        "	 };" \n
        " } forEach allUnits;" \n
        "" \n
