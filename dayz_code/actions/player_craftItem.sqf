@@ -28,6 +28,22 @@ TradeInprogress = true;
 "TrashTinCan",
 "TrashJackDaniels",
 "ItemSodaEmpty",
+"ItemSodaCokeEmpty",
+"ItemSodaPepsiEmpty",
+
+== community stuff Trash
+"ItemSodaMdewEmpty",
+"ItemSodaMtngreenEmpty",
+"ItemSodaR4z0rEmpty",
+"ItemSodaClaysEmpty",
+"ItemSodaSmashtEmpty",.
+"ItemSodaDrwasteEmpty",.
+"ItemSodaLemonadeEmpty",.
+"ItemSodaLvgEmpty",.
+"ItemSodaMzlyEmpty",.
+"ItemSodaRabbitEmpty"
+
+
 
 == Raw Meats
 "FoodSteakRaw",
@@ -58,16 +74,21 @@ _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
 // reqire fire target
 if (inflamed cursorTarget and _canDo) then {
-
+	// Bad way to define static loot in library functions
+	// Better initially walkthrough all items which have output = _create 
+	// and also fetch output quantity from config.
+	// best way: defining input and output with ratio in configFile
 	
 	_recipe_ItemTinBar = [
 		[ ["ItemTinBar",1] ],
 		[ ["TrashTinCan",6] ]
 	];
+	
 	_recipe_ItemAluminumBar = [
 		[ ["ItemAluminumBar",1] ],
 		[ ["ItemSodaEmpty",6] ]
 	];	
+	
 	_recipe_ItemBronzeBar = [
 		[ ["ItemBronzeBar",1] ],
 		[ ["ItemCopperBar",3],["ItemTinBar",3] ]
@@ -108,23 +129,18 @@ if (inflamed cursorTarget and _canDo) then {
 		[ ["ItemSandbag",3],["ItemWire",1],["ItemTankTrap",1] ]
 	];
 	
-
-
-	
-	
 	//_recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
 	//_recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
 
 	//Add new item
 	_item = 	_this;
-	_config =	configFile >> "cfgMagazines" >> _item;
-	_create = 	getArray (_config >> "ItemActions" >> "Crafting" >> "output") select 0;
+	_create = 	getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> "Crafting" >> "output") select 0;
 
 	_selectedRecipeArray = call compile format["_recipe_%1;",_create];
 
 	_selectedRecipeOutput = _selectedRecipeArray select 0;
 	_selectedRecipe = _selectedRecipeArray select 1;
-
+	
 	diag_log format["Selected Recipe: %1", _selectedRecipe];
 
 	_proceed = true;
@@ -132,18 +148,20 @@ if (inflamed cursorTarget and _canDo) then {
 	{
 		_itemIn = _x select 0;
 		_countIn = _x select 1;
+		
 		diag_log format["Recipe Check: %1 %2", _itemIn,_countIn];
-	
-		if (!(_itemIn in magazines player)) exitWith { _missing = _itemIn; _missingQty = _countIn; _proceed = false; };
-	
-		_qty = {_x == _itemIn} count magazines player;
-	
+		
+		// not neccessary
+		//if (!(_itemIn in magazines player)) exitWith { _missing = _itemIn; _missingQty = _countIn; _proceed = false; };
+		
+		// match against class and parentClass 
+		_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
+			
 		if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
 	
 	} forEach _selectedRecipe;
 
 	if (_proceed) then {
-	
 		player playActionNow "Medic";
 		sleep 1;
 		[player,"repair",0,false] call dayz_zombieSpeak;
@@ -156,10 +174,19 @@ if (inflamed cursorTarget and _canDo) then {
 			_countIn = _x select 1;
 			diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
 		
-			for "_x" from 1 to _countIn do {
-				player removeMagazine _itemIn;
-			};
-		
+			_removed = 0;			// count of removed items
+			
+			{					
+				if( (_removed < _countIn) 
+					&& ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)
+				) then {
+					diag_log format["removing: %1 kindOf: %2", _x, _itemIn];
+					player removeMagazine _x;
+					_removed = _removed +1;
+				};
+				
+			} forEach magazines player;
+			
 		} forEach _selectedRecipe;
 	
 		// Put items
@@ -179,9 +206,10 @@ if (inflamed cursorTarget and _canDo) then {
 
 		// Add crafted item
 		cutText [format["Crafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+		
 	} else {
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-		cutText [format["Missing component: %1 x %2",_textMissing,_missingQty], "PLAIN DOWN"];
+		cutText [format["Missing %1 more of %2",_missingQty, _textMissing], "PLAIN DOWN"];
 	};
 } else {
 	cutText ["Crafting needs a fire", "PLAIN DOWN"];
