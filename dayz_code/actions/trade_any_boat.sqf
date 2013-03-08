@@ -53,28 +53,13 @@ if (_qty >= _qty_in) then {
 
 			_location = [(position player),0,20,1,2,2000,0] call BIS_fnc_findSafePos;
 	
-			//place tent (local)
-			_veh = createVehicle [_part_out, _location, [], 0, "CAN_COLLIDE"];
-
-			_veh setVariable ["JustSpawned",true,true];
-
-			_veh setdir _dir;
-			_veh setpos _location;
-	
-			//_veh setPosATL _position;
-	
-			_location = getPosATL _veh;
-	
-			_veh setVariable ["characterID",dayz_playerUID,true];
-
-			clearWeaponCargoGlobal  _veh;
-			clearMagazineCargoGlobal  _veh;
+			//place vehicle spawn marker (local)
+			_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
 	
 			//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
-			dayzPublishVeh = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
-			publicVariableServer  "dayzPublishVeh";
+			dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
+			publicVariableServer  "dayzPublishVeh2";
 	
-
 			_veh call fnc_vehicleEventHandler;
 
 			player reveal _veh;
@@ -99,7 +84,6 @@ if (_qty >= _qty_in) then {
 			dayzDeleteObj = [_objectID,_objectUID];
 			publicVariableServer "dayzDeleteObj";
 
-
 			deleteVehicle _obj;
 
 			cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
@@ -118,7 +102,7 @@ if (_qty >= _qty_in) then {
 	if(_buy_o_sell == "buy") then {
 		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 	} else {
-		cutText [format[("No %1 found within 20 meters."),_textPartOut] , "PLAIN DOWN"];
+		cutText [format[("No %1 found within 20 meters."),_textPartIn] , "PLAIN DOWN"];
 	};
 };
 

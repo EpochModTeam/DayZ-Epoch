@@ -16,7 +16,7 @@ _location = _worldspace select 1;
 
 //Generate UID test using time
 // _uid = str( round (dateToNumber date)) + str(round time);
-_uid = _worldspace call dayz_objectUID3;
+_uid = _worldspace call dayz_objectUID2;
 //_uid = format["%1%2",(round time),_uid];
 
 if (_spawnDMG) then { 
@@ -127,15 +127,12 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 		if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
 		[_object,_selection,_dam] call object_setFixServer;
 	} forEach _array;
-
 	
 	_object setFuel _fuel;
 	
 	_object setvelocity [0,0,1];
 
 	_object call fnc_vehicleEventHandler;
-
-	_object setVariable ["JustSpawned",nil,true];
 
 	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
 };

@@ -8,24 +8,15 @@ _activatingPlayer = _this select 1;
 _trader_id = (_this select 3) select 0;
 _category = (_this select 3) select 1;
 
-diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
+dayzTraderMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
 
-//["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
-dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
-publicVariableServer  "dayzTraderMenu";
-
-waitUntil {!isNil "dayzTraderMenuResult"};
-
-/*
-	`id`,
-	`item` varchar(255) NOT NULL COMMENT '[Class Name,1 = CfgMagazines | 2 = Vehicle | 3 = Weapon]',
-	`qty` int(8) NOT NULL COMMENT 'amount in stock available to buy',
-	`buy`  varchar(255) NOT NULL COMMENT '[[Qty,Class,Type],]',
-	`sell`  varchar(255) NOT NULL COMMENT '[[Qty,Class,Type],]',
-	`order` int(2) NOT NULL DEFAULT '0' COMMENT '# sort order for addAction menu',
-	`tid` int(8) NOT NULL COMMENT 'Trader Menu ID',
-	`afile` varchar(64) NOT NULL DEFAULT 'trade_items',
-*/
+if(isNil "dayzTraderMenuResult") then {
+	diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
+	//["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
+	dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
+	publicVariableServer  "dayzTraderMenu";
+	waitUntil {!isNil "dayzTraderMenuResult"};
+};
 
 diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 {
@@ -103,23 +94,15 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	// Allways 1 for now
 	_out = 1;
 	
-	
 	// trade_items.sqf | [part_out, part_in, qty_out, qty_in,_textPart,_textCurrency];
-	if(_qty <= 0) then {
-		_Display = format["Buy %1 (Out of Stock: %2)", _textPart, _qty];
-		_part = player addAction [_Display, "\z\addons\dayz_code\actions\trade_cancel.sqf",[], 0, true, false, "",""];
+	
+	if (_qty > 0) then {
+		_Display = format["Buy %1 (%2) for %3 %4", _textPart, _name, _bqty, _textCurrency];
 	} else {
-		// if over 50 in stock lower price to that of sell price
-		if(_qty >= 50) then {
-			_Display = format["Buy %1 (%2) for %3 %4 (Available: %5)", _textPart, _name, _sqty, _textCurrencySell, _qty];
-			_part = player addAction [_Display, _File,[_name,_sname,_out,_sqty,"buy",_textCurrencySell,_textPart,_header], _order, true, true, "",""];
-		} else {
-			_Display = format["Buy %1 (%2) for %3 %4 (Available: %5)", _textPart, _name, _bqty, _textCurrency, _qty];
-			_part = player addAction [_Display, _File,[_name,_bname,_out,_bqty,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
-		};
-
-		
+		_Display = format["<t color='#ffff00'>Buy %1 (%2) for %3 %4</t>", _textPart, _name, _bqty, _textCurrency];
 	};
+	
+	_part = player addAction [_Display, _File,[_name,_bname,_out,_bqty,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
 	
 	diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];
@@ -128,6 +111,9 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 
 _cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["medical"], 0, true, false, "",""];
 s_player_parts set [count s_player_parts,_cancel];
+
+// Cache data in client side global variable
+call compile format["tcacheBuy_%1 = %2;",_tid,dayzTraderMenuResult];
 
 // Clear Data maybe consider cacheing results
 dayzTraderMenuResult = nil;

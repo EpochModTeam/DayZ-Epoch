@@ -7,12 +7,11 @@ _object = 	_this select 0;
 _type = 	_this select 1;
 _parachuteWest = typeOf _object == "ParachuteWest";
 _isNotOk = false;
+_firstTime = false;
+_removeCounter = 0;
 
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
-_justSpawned = _object getVariable ["JustSpawned",false];
-
-if (_justSpawned) exitWith { diag_log(format["Vehicle Just Spawned do nothing: %1", typeOf _object]); };
 
 if ((typeName _objectID != "string") || (typeName _uid != "string")) then
 { 
@@ -31,10 +30,16 @@ if (!_parachuteWest) then {
 			_object_position select 1, 
 			_object_position select 2]);
 			_isNotOk = true;
+
+			// Loop to wait it out
+			_counter = _object getVariable ["markedForRemoval","0"];
+			_removeCounter = _object setVariable ["markedForRemoval",(_counter + 1)]; 
 	};
 };
 
-if (_isNotOk) exitWith { deleteVehicle _object; };
+if (_isNotOk and _removeCounter < 10) exitWith { diag_log(format["About to remove vehicle: %1 - %2 / 10", typeOf _object, _removeCounter]); };
+if (_isNotOk and _removeCounter >= 10) exitWith { deleteVehicle _object; };
+
 
 _lastUpdate = _object getVariable ["lastUpdate",time];
 _needUpdate = _object in needUpdate_objects;

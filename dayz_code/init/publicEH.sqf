@@ -45,6 +45,7 @@ if (isServer) then {
 
 	// Dayz epoch custom 
 	"dayzPublishVeh"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh};
+	"dayzPublishVeh2"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh2};
 	"dayzTradeObject"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
 	"dayzTraderMenu"		addPublicVariableEventHandler {(_this select 1) spawn server_traders};
 	"dayzPlayerDeaths"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
