@@ -10,7 +10,7 @@ _rnd = round(random 9) + 1;
 _move = "ZombieStandingAttack" + str(_rnd);
 player playMoveNow _move;
 
-sleep 1;
+sleep 0.25;
 
 _isZombie = _ent isKindOf "zZombie_base";
 
@@ -19,8 +19,8 @@ _isZombie = _ent isKindOf "zZombie_base";
 if (_ent isKindOf "Animal" or _isZombie) then {
 	_ent setDamage 1;
 } else {
-	//["usecBreakLegs",[_unit,player]] call broadcastRpcCallAll;
-	usecBreakLegs = [_unit,player];
+	//["usecBreakLegs",[_item,player]] call broadcastRpcCallAll;
+	usecBreakLegs = [_item,player];
 	publicVariable "usecBreakLegs";
 };
 

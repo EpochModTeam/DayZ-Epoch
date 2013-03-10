@@ -12,10 +12,10 @@ s_player_callzombies = 1;
 
 [player,"spotted",0,false] call dayz_zombieSpeak;
 
-_id = [player,65,true,(getPosATL player)] spawn player_alertZombies;
+_id = [player,100,true,(getPosATL player)] spawn player_alertZombies;
 
 // wait a bit
-sleep 7;
+sleep 3;
 
 // allow menu again
 s_player_callzombies = -1;

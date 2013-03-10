@@ -62,6 +62,8 @@ if (_qty >= _qty_in) then {
 			//place vehicle spawn marker (local)
 			_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
 
+			_location = (getPosATL _veh);
+
 			//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
 			dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
 			publicVariableServer  "dayzPublishVeh2";

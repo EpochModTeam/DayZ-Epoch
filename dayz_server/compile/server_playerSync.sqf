@@ -23,7 +23,6 @@ _magazines =	_this select 1;
 _forceGear =	_this select 3;
 _force =	true;
 
-
 _characterID =	_character getVariable ["characterID","0"];
 _charPos = 		getPosATL _character;
 _isInVehicle = 	vehicle _character != _character;

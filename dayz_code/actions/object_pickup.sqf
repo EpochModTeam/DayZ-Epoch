@@ -7,7 +7,15 @@ _holder = _array select 2;
 _playerID = getPlayerUID player;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
-_holder setVariable["claimed",_playerID,true];
+_claimedBy = _holder getVariable["claimed","0"];
+
+// Only allow if not already claimed.
+if (_claimedBy == "0") then {
+	// Since item was not claimed proceed with claiming it.
+	_holder setVariable["claimed",_playerID,true];
+};
+
+
 
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
@@ -31,9 +39,9 @@ if(_classname == "WoodenArrow") then {
 };
 if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
 
-sleep 0.25;
+sleep 1;
 
-_claimedBy = _holder getVariable["claimed",0];
+_claimedBy = _holder getVariable["claimed","0"];
 
 if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]};
 
@@ -58,7 +66,7 @@ if (_isOk) then {
 		};
 	};
 } else {
-	_holder setVariable["claimed",0,true];
+	_holder setVariable["claimed","0",true];
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 	if (_classname == "MeleeCrowbar") then {
 		player removeMagazine 'crowbar_swing';
