@@ -1392,7 +1392,9 @@ class CfgMagazines
 			{
 				text = "Smelt 10oz bar";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemGoldBar10oz"};
+				output[] = {["ItemGoldBar10oz",1]};
+				input[] = {["ItemGoldBar",10]};
+				
 			};
 		};
 	};
@@ -1411,7 +1413,8 @@ class CfgMagazines
 			{
 				text = "Smelt 1oz bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemGoldBar"};
+				output[] = {["ItemGoldBar",10]};
+				input[] = {["ItemGoldBar10oz",1]};
 			};
 		};
 	};
@@ -1430,7 +1433,8 @@ class CfgMagazines
 			{
 				text = "Smelt 10oz bar";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemSilverBar10oz"};
+				output[] = {["ItemSilverBar10oz"1]};
+				input[] = {["ItemSilverBar",10]};
 			};
 		};
 	};
@@ -1450,7 +1454,8 @@ class CfgMagazines
 			{
 				text = "Smelt 1oz bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemSilverBar"};
+				output[] = {["ItemSilverBar",10]};
+				input[] = {["ItemSilverBar10oz",1]};
 			};
 		};
 	};
@@ -1469,7 +1474,8 @@ class CfgMagazines
 			{
 				text = "Smelt 10oz bar";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemCopperBar10oz"};
+				output[] = {["ItemCopperBar10oz",1]};
+				input[] = {["ItemCopperBar",10]};
 			};
 		};
 	};
@@ -1489,7 +1495,8 @@ class CfgMagazines
 			{
 				text = "Smelt 1oz bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemCopperBar"};
+				output[] = {["ItemCopperBar",10]};
+				input[] = {["ItemCopperBar10oz",1]};
 			};
 		};
 	};
@@ -1530,7 +1537,8 @@ class CfgMagazines
 			{
 				text = "Smelt 1oz bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemAluminumBar"};
+				output[] = {["ItemAluminumBar",10]};
+				input[] = {["ItemAluminumBar10oz",1]};
 			};
 		};
 	};
@@ -1560,7 +1568,8 @@ class CfgMagazines
 			{
 				text = "Smelt 1oz bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemTinBar"};
+				output[] = {["ItemTinBar",10]};
+				input[] = {["ItemTinBar10oz",1]};
 			};
 		};
 	};

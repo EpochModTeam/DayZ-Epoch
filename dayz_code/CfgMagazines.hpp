@@ -38,7 +38,8 @@ class CfgMagazines {
 			{
 				text = "Craft Large Sandbag";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemSandbagLarge"};
+				output[] = {["ItemSandbagLarge",1]};
+				input[] = {["ItemSandbag",3],["ItemWire",1],["ItemTankTrap",1]};
 			};
 		};
 	};

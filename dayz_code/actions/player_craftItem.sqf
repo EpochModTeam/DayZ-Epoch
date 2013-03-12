@@ -7,11 +7,6 @@ private["_onLadder","_canDo","_recipe_ItemTinBar","_recipe_ItemAluminumBar","_re
 if(TradeInprogress) exitWith { cutText ["Crafting already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-// Recipes
-
-// 6 Tin cans = Tin Bar
-// 6 Aluminum cans = Aluminum Bar
-
 /* 
 == Canned Foods
 "FoodCanBakedBeans",
@@ -43,8 +38,6 @@ TradeInprogress = true;
 "ItemSodaMzlyEmpty",.
 "ItemSodaRabbitEmpty"
 
-
-
 == Raw Meats
 "FoodSteakRaw",
 "FoodmeatRaw",
@@ -64,9 +57,12 @@ TradeInprogress = true;
 "FoodbaconCooked"
 */
 
-// New items:
-// FoodChickenNoodle
-// FoodBeefBakedBeans
+// Removed metals:
+// _recipe_ItemBronzeBar = [[["ItemBronzeBar",1] ],[["ItemCopperBar",3],["ItemTinBar",3]]];
+
+// New item ideas:
+// _recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
+// _recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
 // ItemSalt
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -74,74 +70,14 @@ _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
 // reqire fire target
 if (inflamed cursorTarget and _canDo) then {
-	// Bad way to define static loot in library functions
-	// Better initially walkthrough all items which have output = _create 
-	// and also fetch output quantity from config.
-	// best way: defining input and output with ratio in configFile
 	
-	_recipe_ItemTinBar = [
-		[ ["ItemTinBar",1] ],
-		[ ["TrashTinCan",6] ]
-	];
-	
-	_recipe_ItemAluminumBar = [
-		[ ["ItemAluminumBar",1] ],
-		[ ["ItemSodaEmpty",6] ]
-	];	
-	
-	_recipe_ItemBronzeBar = [
-		[ ["ItemBronzeBar",1] ],
-		[ ["ItemCopperBar",3],["ItemTinBar",3] ]
-	];
-	
-	_recipe_ItemGoldBar10oz = [
-		[ ["ItemGoldBar10oz",1] ],
-		[ ["ItemGoldBar",10] ]
-	];
-	
-	_recipe_ItemGoldBar = [
-		[ ["ItemGoldBar",10] ],
-		[ ["ItemGoldBar10oz",1] ]
-	];
+	// Moved all recipes input and outputs to configs
 
-	_recipe_ItemSilverBar10oz = [
-		[ ["ItemSilverBar10oz",1] ],
-		[ ["ItemSilverBar",10] ]
-	];
+	_selectedRecipeOutput = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Crafting" >> "output") select 0;
+	_selectedRecipe = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Crafting" >> "input") select 0;
 	
-	_recipe_ItemSilverBar = [
-		[ ["ItemSilverBar",10] ],
-		[ ["ItemSilverBar10oz",1] ]
-	];
-
-	_recipe_ItemCopperBar10oz = [
-		[ ["ItemCopperBar10oz",1] ],
-		[ ["ItemCopperBar",10] ]
-	];
-	
-	_recipe_ItemCopperBar = [
-		[ ["ItemCopperBar",10] ],
-		[ ["ItemCopperBar10oz",1] ]
-	];
-
-	_recipe_ItemSandbagLarge = [
-		[ ["ItemSandbagLarge",1] ],
-		[ ["ItemSandbag",3],["ItemWire",1],["ItemTankTrap",1] ]
-	];
-	
-	//_recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
-	//_recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
-
-	//Add new item
-	_item = 	_this;
-	_create = 	getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> "Crafting" >> "output") select 0;
-
-	_selectedRecipeArray = call compile format["_recipe_%1;",_create];
-
-	_selectedRecipeOutput = _selectedRecipeArray select 0;
-	_selectedRecipe = _selectedRecipeArray select 1;
-	
-	diag_log format["Selected Recipe: %1", _selectedRecipe];
+	diag_log format["Selected Recipe Input: %1", _selectedRecipe];
+	diag_log format["Selected Recipe Output: %1", _selectedRecipeOutput];
 
 	_proceed = true;
 
@@ -177,9 +113,7 @@ if (inflamed cursorTarget and _canDo) then {
 			_removed = 0;			// count of removed items
 			
 			{					
-				if( (_removed < _countIn) 
-					&& ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)
-				) then {
+				if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
 					diag_log format["removing: %1 kindOf: %2", _x, _itemIn];
 					player removeMagazine _x;
 					_removed = _removed +1;
@@ -202,7 +136,7 @@ if (inflamed cursorTarget and _canDo) then {
 		} forEach _selectedRecipeOutput;
 
 		// get display name
-		_textCreate = getText(configFile >> "CfgMagazines" >> _create >> "displayName");
+		_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 
 		// Add crafted item
 		cutText [format["Crafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
@@ -212,7 +146,7 @@ if (inflamed cursorTarget and _canDo) then {
 		cutText [format["Missing %1 more of %2",_missingQty, _textMissing], "PLAIN DOWN"];
 	};
 } else {
-	cutText ["Crafting needs a fire", "PLAIN DOWN"];
+	cutText ["You need to be looking at a fire to craft.", "PLAIN DOWN"];
 };
 
 TradeInprogress = false;

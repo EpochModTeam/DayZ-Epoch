@@ -650,7 +650,8 @@ class cfgMagazines
 			{
 				text = "Melt into Bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemTinBar"};
+				output[] = {["ItemTinBar",1]};
+				input[] = {["TrashTinCan",6]};
 			};
 		};
 	};
@@ -668,7 +669,8 @@ class cfgMagazines
 			{
 				text = "Melt into Bars";
 				script = "spawn player_craftItem;";
-				output[] = {"ItemAluminumBar"};
+				output[] = {["ItemAluminumBar",1]};
+				input[] = {["ItemSodaEmpty",6]};
 			};
 		};
 	};
