@@ -1112,12 +1112,6 @@ class FSM
        "	};" \n
        "};" \n
        "" \n
-       "dayz_locationCheck = [] spawn {" \n
-       "	while {true} do {" \n
-       "		call stream_locationCheck;" \n
-       "		sleep 2;" \n
-       "	};" \n
-       "};" \n
        "dayz_friendliesCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		call player_friendliesCheck;" \n

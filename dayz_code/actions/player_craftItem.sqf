@@ -73,10 +73,10 @@ if (inflamed cursorTarget and _canDo) then {
 	
 	// Moved all recipes input and outputs to configs
 
-	_selectedRecipeOutput = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Crafting" >> "output") select 0;
-	_selectedRecipe = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Crafting" >> "input") select 0;
+	_selectedRecipeOutput = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Crafting" >> "output");
+	_selectedRecipeInput = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Crafting" >> "input");
 	
-	diag_log format["Selected Recipe Input: %1", _selectedRecipe];
+	diag_log format["Selected Recipe Input: %1", _selectedRecipeInput];
 	diag_log format["Selected Recipe Output: %1", _selectedRecipeOutput];
 
 	_proceed = true;
@@ -95,7 +95,7 @@ if (inflamed cursorTarget and _canDo) then {
 			
 		if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
 	
-	} forEach _selectedRecipe;
+	} forEach _selectedRecipeInput;
 
 	if (_proceed) then {
 		player playActionNow "Medic";
@@ -121,7 +121,7 @@ if (inflamed cursorTarget and _canDo) then {
 				
 			} forEach magazines player;
 			
-		} forEach _selectedRecipe;
+		} forEach _selectedRecipeInput;
 	
 		// Put items
 		{
