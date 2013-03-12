@@ -79,8 +79,8 @@ if (inflamed cursorTarget and _canDo) then {
 	diag_log format["Selected Recipe Input: %1", _selectedRecipeInput];
 	diag_log format["Selected Recipe Output: %1", _selectedRecipeOutput];
 
+	// Dry run to see if all parts are available.
 	_proceed = true;
-
 	{
 		_itemIn = _x select 0;
 		_countIn = _x select 1;
@@ -97,49 +97,63 @@ if (inflamed cursorTarget and _canDo) then {
 	
 	} forEach _selectedRecipeInput;
 
+	// If all parts proceed
 	if (_proceed) then {
-		player playActionNow "Medic";
-		sleep 1;
-		[player,"repair",0,false] call dayz_zombieSpeak;
-		_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
-		sleep 5;
-
+		
+		_removed = 0; // count total of removed items
+		_tobe_removed_total = 0; // count total of all to be removed items
 		// Take items
 		{
 			_itemIn = _x select 0;
 			_countIn = _x select 1;
 			diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
-		
-			_removed = 0;			// count of removed items
-			
+			_tobe_removed_total = _tobe_removed_total + _countIn;
+
 			{					
 				if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
-					diag_log format["removing: %1 kindOf: %2", _x, _itemIn];
-					player removeMagazine _x;
-					_removed = _removed +1;
+					
+					// diag_log format["removing: %1 kindOf: %2", _x, _itemIn];
+					
+					// player removeMagazine _x;
+					_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
 				};
 				
 			} forEach magazines player;
 			
 		} forEach _selectedRecipeInput;
-	
-		// Put items
-		{
-			_itemOut = _x select 0;
-			_countOut = _x select 1;
-			diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
 		
-			for "_x" from 1 to _countOut do {
-				player addMagazine _itemOut;
-			};
+		diag_log format["removing: %1 kindOf: %2", _removed, _tobe_removed_total];
+
+		// Only proceed if all parts were removed successfully
+		if(_removed == _tobe_removed_total) then {
+
+			player playActionNow "Medic";
+			sleep 1;
+			[player,"repair",0,false] call dayz_zombieSpeak;
+			_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+			sleep 5;
+
+			// Put items
+			{
+				_itemOut = _x select 0;
+				_countOut = _x select 1;
+				diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
 		
-		} forEach _selectedRecipeOutput;
+				for "_x" from 1 to _countOut do {
+					player addMagazine _itemOut;
+				};
+		
+			} forEach _selectedRecipeOutput;
 
-		// get display name
-		_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
+			// get display name
+			_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 
-		// Add crafted item
-		cutText [format["Crafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+			// Add crafted item
+			cutText [format["Crafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+
+		} else {
+			cutText [format["Missing Parts after first check Item: %1 / %2",_removed,_tobe_removed_total], "PLAIN DOWN"];
+		};
 		
 	} else {
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
