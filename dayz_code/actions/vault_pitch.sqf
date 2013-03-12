@@ -4,7 +4,7 @@ private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","
 if(TradeInprogress) exitWith { cutText ["Vault pitching already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-disableSerialization;
+//disableSerialization;
 
 _playerPos = 	getPosATL player;
 _item = _this;
@@ -110,7 +110,7 @@ if(!_cancel) then {
 
 		player removeMagazine _item;
 
-		call dayz_forceSave;
+		//call dayz_forceSave;
 
 		_dir = round(direction player);	
 	

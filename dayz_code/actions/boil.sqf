@@ -36,8 +36,8 @@ if (_hasbottleitem and _hastinitem) then {
 			player addMagazine "ItemWaterbottleBoiled";
 			
 		};
-		disableSerialization;
-		call dayz_forceSave;
+		//disableSerialization;
+		//call dayz_forceSave;
 
 
 		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];

@@ -85,8 +85,8 @@ if(!_cancel) then {
 
 	player removeMagazine _item;
 
-	disableSerialization;
-	call dayz_forceSave;
+	//disableSerialization;
+	//call dayz_forceSave;
 
 
 	player playActionNow "Medic";

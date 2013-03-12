@@ -18,8 +18,8 @@ if (_newFuel > 0) then {
 	player removeMagazine "ItemJerrycanEmpty";
 	player addMagazine "ItemJerrycan";
 
-	disableSerialization;
-	call dayz_forceSave;
+	//disableSerialization;
+	//call dayz_forceSave;
 
 	player playActionNow "Medic";
 	[player,"refuel",0,false] call dayz_zombieSpeak;

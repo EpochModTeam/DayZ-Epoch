@@ -16,8 +16,8 @@ _newFuel = (_newFuel / _capacity);
 player removeMagazine "ItemJerrycan";
 player addMagazine "ItemJerrycanEmpty";
 
-disableSerialization;
-call dayz_forceSave;
+//disableSerialization;
+//call dayz_forceSave;
 
 player playActionNow "Medic";
 _dis=10;

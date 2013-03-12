@@ -47,8 +47,8 @@ if (_qty >= _qty_in) then {
 				player removeMagazine _part_in;
 			};
 
-			disableSerialization;
-			call dayz_forceSave;
+			//disableSerialization;
+			//call dayz_forceSave;
 	
 			_dir = round(random 360);
 
@@ -81,8 +81,8 @@ if (_qty >= _qty_in) then {
 				player addMagazine _part_out;
 			};
 
-			disableSerialization;
-			call dayz_forceSave;
+			//disableSerialization;
+			//call dayz_forceSave;
 
 			_obj = _obj select 0;
 			_objectID 	= _obj getVariable ["ObjectID","0"];

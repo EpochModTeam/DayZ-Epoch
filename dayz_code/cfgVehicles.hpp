@@ -154,9 +154,9 @@ class Citizen1;	// External class reference
 		hiddenSelections[] = {};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 10;
 		transportMaxMagazines = 50;
         transportmaxbackpacks = 10;
@@ -184,9 +184,9 @@ class Citizen1;	// External class reference
 		typicalCargo[] = {};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 10;
 		transportMaxMagazines = 50;
         transportmaxbackpacks = 10;
@@ -219,9 +219,9 @@ class Citizen1;	// External class reference
 		hiddenSelections[] = {};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 5;
 		transportMaxMagazines = 25;
         transportmaxbackpacks = 4;
@@ -261,14 +261,30 @@ class Citizen1;	// External class reference
 		class TransportWeapons{};
 		weapons[] = {};
 		magazines[] = {};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 3;
 		transportMaxMagazines = 10;
         transportmaxbackpacks = 2;
 		class Turrets {};
 	};
+	class CH_47F_EP1;
+	class CH_47F_EP1_DZ : CH_47F_EP1 { 
+		accuracy = 1000; 
+		model = "\ca\air_E\CH47\CH_47F"; 
+		scope = 2; 
+		displayName = "CH-47F"; 
+		crew = ""; 
+		typicalCargo[] = {}; 
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 200;
+        transportmaxbackpacks = 5;
+	};
+
 	class ArmoredSUV_PMC;
 	class ArmoredSUV_PMC_DZ : ArmoredSUV_PMC { 
 		scope = 2; 
@@ -555,9 +571,9 @@ class Citizen1;	// External class reference
 		class TransportWeapons{};
 		weapons[] = {};
 		magazines[] = {};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 3;
 		transportMaxMagazines = 20;
         transportmaxbackpacks = 5;
@@ -1006,9 +1022,9 @@ class Citizen1;	// External class reference
 		weapons[] = {};
 		magazines[] = {};
 		gunnerHasFlares = false;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 10;
 		transportMaxMagazines = 80;
 		transportmaxbackpacks = 15;
@@ -1046,14 +1062,56 @@ class Citizen1;	// External class reference
 		nameSound = "fuelstation";
 	};
 
-	class Land_Ind_FuelStation_Feed_Ep1: Strategic
+	class Land_Ind_FuelStation_Feed_EP1: Strategic
 	{
-		model = "\ca\structures_pmc\ind\fuelstation\fuelstation_feed_pmc";
-		transportFuel = 0;
+		model = "\ca\Structures_E\Ind\Ind_FuelStation\Ind_FuelStation_Feed_ep1.p3d"; 
+		transportFuel = 0; 
 		nameSound = "fuelstation";
 	};
+
+	class FuelStation : Strategic { 
+	  icon = "\Ca\buildings\Icons\i_fuel_CA.paa"; 
+	  scope = 0; 
+	  animated = 0; 
+	  armor = 20; 
+	  displayName = "Fuel station"; 
+	  accuracy = 0.5; 
+	  transportFuel = 0; 
+	};
+
+	class Land_FuelStation_Feed_PMC : Strategic { 
+	  model = "\ca\Structures_PMC\Ind\FuelStation\FuelStation_Feed_PMC.p3d"; 
+	  transportFuel = 0; 
+	  nameSound = "fuelstation"; 
+	};
+
+	// lingor
+	class Land_ibr_FuelStation_Feed : Strategic { 
+		model = "\ibr\lingor_fuel\ibr_FuelStation_Feed.p3d"; 
+		transportFuel = 0; 
+		nameSound = "fuelstation"; 
+	};
+	// lingor
+	class Land_fuelstation_army : Strategic { 
+		model = "\ibr\ibr_plants\fuelstation_army"; 
+		transportFuel = 0; 
+		nameSound = "fuelstation"; 
+	}
+	// Lingor hangars
+	class land_ibr_hangar : House { 
+		model = "\ibr\ibr_hangars\ibr_hangar"; 
+		scope = 2; 
+		vehicleClass = "ibr_hangars"; 
+		transportFuel = 0; 
+		transportRepair = 0; 
+		icon = "\ibr\ibr_hangars\icons\icon5.paa"; 
+		mapSize = 40; 
+		displayName = "House"; 
+		destrType = "DestructBuilding"; 
+		armor = 1200; 
+	};
 	
-    class Ship: AllVehicles 
+	class Ship: AllVehicles 
 	{
         displayName = "Ship";
         transportMaxMagazines = 2000;
@@ -1116,9 +1174,9 @@ class Citizen1;	// External class reference
 		hiddenSelections[] = {};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 5;
 		transportMaxMagazines = 25;
         transportmaxbackpacks = 4;
@@ -1133,21 +1191,15 @@ class Citizen1;	// External class reference
 		hiddenSelections[] = {};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
+		commanderCanSee = 2;
+		gunnerCanSee = 2;
+		driverCanSee = 2;
 		transportMaxWeapons = 5;
 		transportMaxMagazines = 25;
         transportmaxbackpacks = 4;
 	};
 	
 
-	// Lingor hangars
-	//class land_ibr_hangar: land_ibr_hangar
-	//{
-	//	scope = 2;
-	//	transportFuel = 0;
-	//	transportRepair = 0;
-	//};
+	
 
 };	

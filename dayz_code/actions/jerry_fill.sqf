@@ -10,8 +10,8 @@ if ("ItemJerrycanEmpty" in magazines player) then {
 		player removeMagazine "ItemJerrycanEmpty";
 		player addMagazine "ItemJerrycan";
 	};
-	disableSerialization;
-	call dayz_forceSave;
+	//disableSerialization;
+	//call dayz_forceSave;
 
 	player playActionNow "Medic";
 	

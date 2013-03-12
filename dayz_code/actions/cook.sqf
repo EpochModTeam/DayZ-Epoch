@@ -26,8 +26,8 @@ _cookedmeat = meatcooked;
 			player addMagazine _meatcooked;
 			if !(_meat in magazines player) exitWith {cutText [format[(localize "str_player_31"),_text,"cook"] , "PLAIN DOWN"]};
 		};	
-		disableSerialization;
-		call dayz_forceSave;
+		//disableSerialization;
+		//call dayz_forceSave;
 
 		cutText [format[(localize  "str_success_cooked"),_qty,_text], "PLAIN DOWN"];
 	};

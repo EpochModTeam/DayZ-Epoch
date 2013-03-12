@@ -72,8 +72,8 @@ if (_qty >= _qty_in) then {
 	};
 	if(_total_out > 0) then {
 		cutText [format[("Traded %1 %2 for %3 %4"),_total_in,_textPartIn,_total_out,_textPartOut], "PLAIN DOWN"];
-		disableSerialization;
-		call dayz_forceSave;
+		//disableSerialization;
+		//call dayz_forceSave;
 	};
 	
 } else {

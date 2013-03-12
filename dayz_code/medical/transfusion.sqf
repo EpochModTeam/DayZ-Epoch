@@ -42,8 +42,8 @@ if (_finished) then {
 	_unit setVariable["USEC_lowBlood",false,true];
 	player removeMagazine "ItemBloodbag";	
 	
-	disableSerialization;
-	call dayz_forceSave;
+	//disableSerialization;
+	//call dayz_forceSave;
 
 	//["usecTransfuse",[_unit,player]] call broadcastRpcCallAll;
 	usecTransfuse = [_unit,player];

@@ -91,8 +91,8 @@ if (_hasrequireditem or _bypass) then {
 		_dir = getDir player;
 		player removeMagazine _item;
 
-		disableSerialization;
-		call dayz_forceSave;
+		//disableSerialization;
+		//call dayz_forceSave;
 
 		player playActionNow "Medic";
 		sleep 1;

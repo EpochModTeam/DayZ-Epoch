@@ -1,6 +1,6 @@
 private["_vehicle","_part","_hitpoint","_type","_selection","_array"];
 
-disableSerialization;
+//disableSerialization;
 
 _id = _this select 2;
 _array = 	_this select 3;
@@ -44,7 +44,7 @@ if (_hasToolbox) then {
 			_brokenPart = false;
 
 			
-			call dayz_forceSave;
+			//call dayz_forceSave;
 
 		};
 		

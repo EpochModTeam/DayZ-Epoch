@@ -28,8 +28,8 @@ if (_section and _hasToolbox) then {
 		
 		player removeMagazine _part;
 
-		disableSerialization;
-		call dayz_forceSave;
+		//disableSerialization;
+		//call dayz_forceSave;
 
 		//Fix the part
 		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
