@@ -16,7 +16,7 @@ _rawfood = _itemorignal in meatraw;
 _cookedfood = _itemorignal in meatcooked;
 _hasoutput = _itemorignal in food_with_output;
 
-_badfood = _item in badfood;
+_badfood = _itemorignal in badfood;
 
 _config =   configFile >> "CfgMagazines" >> _itemorignal;
 _text = 	getText (_config >> "displayName");
@@ -32,8 +32,6 @@ _dis=6;
 _sfx = "eat";
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-
-
 
 if (dayz_lastMeal < 3600) then { 
     if (_itemorignal == "FoodSteakCooked") then {
@@ -60,7 +58,7 @@ if ( _rawfood and (random 15 < 1)) then {
 	player setVariable["USEC_infected",true,true];
 };
 
-if ( _badfood and (random 7 < 1)) then {
+if ( _badfood and (random 2 < 1)) then {
 	r_player_infected = true;
 	player setVariable["USEC_infected",true,true];
 };

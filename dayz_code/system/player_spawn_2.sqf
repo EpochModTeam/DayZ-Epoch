@@ -238,7 +238,7 @@ while {true} do {
 				dayz_canDisconnect = true;
 				//["dayzDiscoRem",getPlayerUID player] call callRpcProcedure;
 				dayzDiscoRem = getPlayerUID player;
-				publicVariable "dayzDiscoRem";
+				publicVariableServer "dayzDiscoRem";
 				
 				//Ensure Control is hidden
 				_display = uiNamespace getVariable 'DAYZ_GUI_display';

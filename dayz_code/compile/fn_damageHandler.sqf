@@ -32,7 +32,7 @@ if (_isPlayer) then {
 		dayz_canDisconnect = false;
 		//["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
 		dayzDiscoAdd = getPlayerUID player;
-		publicVariable "dayzDiscoAdd";
+		publicVariableServer "dayzDiscoAdd";
 				
 		dayz_damageCounter = time;
 		

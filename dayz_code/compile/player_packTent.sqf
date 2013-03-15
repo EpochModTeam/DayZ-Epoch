@@ -41,7 +41,7 @@ if(_ownerID == dayz_characterID) then {
 	
 	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;	
 	dayzDeleteObj = [_objectID,_objectUID];
-	publicVariable "dayzDeleteObj";
+	publicVariableServer "dayzDeleteObj";
 	if (isServer) then {
 		dayzDeleteObj call server_deleteObj;
 	};

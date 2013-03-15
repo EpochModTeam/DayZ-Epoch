@@ -13,14 +13,14 @@ if (_selection != "" and local _unit) then {
 			[_unit,"repair"] call server_updateObject 
 		} else { 
 			dayzUpdateVehicle = [_unit,"repair"]; 
-			publicVariable "dayzUpdateVehicle"; 
+			publicVariableServer "dayzUpdateVehicle"; 
 		};
 	} else {
 		if (isServer) then { 
 			[_unit,"damage"] call server_updateObject 
 		} else { 
 			dayzUpdateVehicle = [_unit,"damage"]; 
-			publicVariable "dayzUpdateVehicle"; 
+			publicVariableServer "dayzUpdateVehicle"; 
 		};
 	};
 };

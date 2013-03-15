@@ -224,6 +224,7 @@ dayz_resetSelfActions = {
 	s_player_grabflare = 	-1;
 	s_player_callzombies = 	-1;
 	s_player_pzombiesattack = 	-1;
+	s_player_pzombiesfeed = 	-1;
 	s_player_removeflare = 	-1;
 	s_player_painkiller =	-1;
 	s_player_studybody = 	-1;

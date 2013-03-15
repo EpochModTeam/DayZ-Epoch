@@ -956,7 +956,7 @@ class Citizen1;	// External class reference
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_tk_alice.p3d";
 		transportMaxWeapons = 2;
-		transportMaxMagazines = 0;
+		transportMaxMagazines = 16;
 	};
 
 	class DZ_TK_Assault_Pack_EP1 : Bag_Base_BAF
@@ -968,7 +968,7 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		model = "\ca\weapons_e\AmmoBoxes\backpack_civil_assault.p3d";
 		transportMaxWeapons = 2;
-		transportMaxMagazines = 0;
+		transportMaxMagazines = 16;
 	};
 
 	class DZ_British_ACU : Bag_Base_BAF

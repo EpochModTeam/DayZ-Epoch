@@ -15,154 +15,102 @@ _textPartIn = (_this select 3) select 5;
 _textPartOut = (_this select 3) select 6;
 _traderID = (_this select 3) select 7;
 
+_removed = 0;
+
 _bos = 0;
-_bulkqty = 0;
-
 if(_buy_o_sell == "sell") then {
-
-	// SELL ONLY check if item is bulk 
-	_bulkItem = "bulk_" + _part_in;
-	_bulkqty = {_x == _bulkItem} count magazines player;
-
-	diag_log format["DEBUG bulk: %1", _bulkItem];
-
 	_bos = 1;
 };
 
-if (_bulkqty >= 1) then {
+// Get total parts in
+_qty = {_x == _part_in} count magazines player;
+
+// Find number of possible trades
+_total_trades = floor(_qty / _qty_in);
+
+// perform number of total trades
+for "_x" from 1 to _total_trades do {
+
+	cutText ["Starting trade, stand still to complete.", "PLAIN DOWN"];
+
+	player playActionNow "Medic";
 	
+	_dis=20;
+	_sfx = "repair";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+
+	r_interrupt = false;
+	_animState = animationState player;
+	r_doLoop = true;
+	_started = false;
+	_finished = false;
 	
-	// TODO: optimize for one db call only
-	
-	_part_in = "bulk_" + _part_in;
-	player removeMagazine _part_in;
-
-	//disableSerialization;
-	//call dayz_forceSave;
-
-	// diag_log format["DEBUG remove magazine %1", _part_in];
-
-	// increment trader for each
-	for "_x" from 1 to 12 do {
-		//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-		dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-		publicVariableServer  "dayzTradeObject";
-	
-
-		waitUntil {!isNil "dayzTradeResult"};
-
-		if(dayzTradeResult == "PASS") then {
-			diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+	while {r_doLoop} do {
+		_animState = animationState player;
+		_isMedic = ["medic",_animState] call fnc_inString;
+		if (_isMedic) then {
+			_started = true;
 		};
+		if (_started and !_isMedic) then {
+			r_doLoop = false;
+			_finished = true;
+		};
+		if (r_interrupt) then {
+			r_doLoop = false;
+		};
+		sleep 0.1;
+	};
+	r_doLoop = false;
+
+	if (!_finished) exitWith { 
+		r_interrupt = false;
+		[objNull, player, rSwitchMove,""] call RE;
+		player playActionNow "stop";
 	};
 
+	if (_finished) then {
 	
-
-	_qty_out = _qty_out * 12;
-
-	// gold = 36 copper
-	// gold = 6 silver
-	// 
-
-	if (_part_out == "ItemSilverBar" and _qty_out >= 30) then {
-		
-
+		_qty = {_x == _part_in} count magazines player;
+		if (_qty >= _qty_in) then {
 	
-		// find number of gold
-		_gold_out = _qty_out / 30;
+			_removed = _removed + ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
+			if (_removed == _qty_in) then {
 			
-		// whole number of gold bars
-		_gold_qty_out = floor _gold_out;
+				// Continue with trade.
+				dayzTradeObject = [_activatingPlayer,_traderID,_bos];
+				publicVariableServer  "dayzTradeObject";
+
+				waitUntil {!isNil "dayzTradeResult"};
+
+				if(dayzTradeResult == "PASS") then {
 			
-		_part_out = "ItemGoldBar";
-		for "_x" from 1 to _gold_qty_out do {
-			player addMagazine _part_out;
-		};
+					for "_x" from 1 to _qty_out do {
+						player addMagazine _part_out;
+					};
 
-		// Find remainder 
-		_partial_qty_out = (_gold_out - _gold_qty_out) * 30;
-			
-		// whole number of silver bars
-		_silver_qty_out = floor _partial_qty_out;
+					cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
-		_part_out = "ItemSilverBar";
-		for "_x" from 1 to _silver_qty_out do {
-			player addMagazine _part_out;
-		};
-
-
-	
-
-	} else {
-		
-		for "_x" from 1 to _qty_out do {
-			player addMagazine _part_out;
-		};
-	};
-
-	//disableSerialization;
-	//call dayz_forceSave;
-
-	cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-
-	dayzTradeResult = nil;
-
-
-} else {
-
-	_qty = {_x == _part_in} count magazines player;
-
-
-	if (_qty >= _qty_in) then {
-
-	
-		if(_bos == 0) then {
-			_qty = 1;
-		};
-
-		// trade all items
-		for "_x" from 1 to _qty do {
-
-			//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-			dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-			publicVariableServer  "dayzTradeObject";
-	
-
-			diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
-
-			waitUntil {!isNil "dayzTradeResult"};
-
-			if(dayzTradeResult == "PASS") then {
-				diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
-				for "_x" from 1 to _qty_in do {
-					player removeMagazine _part_in;
-				};
-	
-				for "_x" from 1 to _qty_out do {
-					player addMagazine _part_out;
+				} else {
+					cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
 				};
 
-				//disableSerialization;
-				//call dayz_forceSave;
-	
-				// [player,"repair",0,false] call dayz_zombieSpeak;
-				cutText [format[("Traded %1 %2 for %3 %4"),(_qty_in*_qty),_textPartIn,(_qty_out*_qty),_textPartOut], "PLAIN DOWN"];
-
-
-				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
-				s_player_parts_crtl = -1;
+				dayzTradeResult = nil;
 
 			} else {
-				cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+			
+				// Return items from botched trade. 
+				// TODO: this may never happen if so remove 
+				for "_x" from 1 to _removed do {
+					player addMagazine _part_in;
+				};
 			};
-		
+	
+	
+		} else {
+			_needed =  _qty_in - _qty;
+			cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 		};
-		dayzTradeResult = nil;
-
-
-	} else {
-		_needed =  _qty_in - _qty;
-		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 	};
 };
 

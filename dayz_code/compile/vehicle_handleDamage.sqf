@@ -28,7 +28,7 @@ if (_dam < 1 ) then {
 				[_unit, "damage"] call server_updateObject;
 			} else {
 				dayzUpdateVehicle = [_unit,"damage"];
-				publicVariable "dayzUpdateVehicle";
+				publicVariableServer "dayzUpdateVehicle";
 			};
 		};
 	};

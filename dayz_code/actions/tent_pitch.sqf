@@ -61,7 +61,7 @@ if (!_isOk) then {
 
 	//["dayzPublishObj",[dayz_characterID,_tent,[_dir,_location],"TentStorage"]] call callRpcProcedure;
 	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
-	publicVariable "dayzPublishObj";
+	publicVariableServer "dayzPublishObj";
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
 } else {

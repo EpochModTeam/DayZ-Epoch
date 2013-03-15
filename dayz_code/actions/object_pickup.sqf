@@ -1,4 +1,8 @@
 private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_control","_dialog","_item","_val","_max","_bolts","_quivers","_quiver","_broken"];
+
+if(TradeInprogress) exitWith { cutText ["Take item already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;
@@ -9,15 +13,16 @@ _text = getText (configFile >> _type >> _classname >> "displayName");
 
 _claimedBy = _holder getVariable["claimed","0"];
 
+// Check if any players are nearby if not allow player to claim item.
+_playerNear = {isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1;
+
 // Only allow if not already claimed.
-if (_claimedBy == "0") then {
+if (_claimedBy == "0" or !_playerNear) then {
 	// Since item was not claimed proceed with claiming it.
 	_holder setVariable["claimed",_playerID,true];
 };
 
-
-
-if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
+if(_classname isKindOf "TrapBear") exitwith {TradeInprogress = false; deleteVehicle _holder;};
 
 player playActionNow "PutDown";
 if (_classname == "MeleeCrowbar") then {
@@ -30,20 +35,19 @@ if (_classname == "MeleeMachete") then {
 	player addMagazine 'Machete_swing';
 };
 
-
 _broken = false;
 if(_classname == "WoodenArrow") then {
 	if (20 > random 100) then {
 		_broken = true;
 	};
 };
-if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
+if (_broken) exitWith { deleteVehicle _holder; TradeInprogress = false; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
 
 sleep 1;
 
 _claimedBy = _holder getVariable["claimed","0"];
 
-if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]};
+if (_claimedBy != _playerID) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]};
 
 if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
@@ -78,4 +82,4 @@ if (_isOk) then {
 		player removeMagazine 'Machete_swing';
 	};
 };
-
+TradeInprogress = false;

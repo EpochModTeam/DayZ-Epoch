@@ -2,7 +2,7 @@
 * Crafting by [VB]AWOL
 * 	usage: spawn player_craftitem;
 */
-private["_onLadder","_canDo","_recipe_ItemTinBar","_recipe_ItemAluminumBar","_recipe_ItemBronzeBar","_recipe_ItemGoldBar10oz","_recipe_ItemGoldBar","_recipe_FoodChickenNoodle","_recipe_FoodBeefBakedBeans","_item","_config","_create","_selectedRecipe","_recipe_","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut"];
+private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_text","_id","_textMissing","_selectedRecipeInput"];
 
 if(TradeInprogress) exitWith { cutText ["Crafting already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -99,60 +99,93 @@ if (inflamed cursorTarget and _canDo) then {
 
 	// If all parts proceed
 	if (_proceed) then {
-		
-		_removed = 0; // count total of removed items
-		_tobe_removed_total = 0; // count total of all to be removed items
-		// Take items
-		{
-			_itemIn = _x select 0;
-			_countIn = _x select 1;
-			diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
-			_tobe_removed_total = _tobe_removed_total + _countIn;
 
-			{					
-				if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
-					
-					// diag_log format["removing: %1 kindOf: %2", _x, _itemIn];
-					
-					// player removeMagazine _x;
-					_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
-				};
-				
-			} forEach magazines player;
+		cutText ["Crafting started", "PLAIN DOWN"];
+		
+		player playActionNow "Medic";
+
+		[player,"repair",0,false] call dayz_zombieSpeak;
+		_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 			
-		} forEach _selectedRecipeInput;
-		
-		diag_log format["removing: %1 kindOf: %2", _removed, _tobe_removed_total];
+		r_interrupt = false;
+		_animState = animationState player;
+		r_doLoop = true;
+		_started = false;
+		_finished = false;
+	
+		while {r_doLoop} do {
+			_animState = animationState player;
+			_isMedic = ["medic",_animState] call fnc_inString;
+			if (_isMedic) then {
+				_started = true;
+			};
+			if (_started and !_isMedic) then {
+				r_doLoop = false;
+				_finished = true;
+			};
+			if (r_interrupt) then {
+				r_doLoop = false;
+			};
+			sleep 0.1;
+		};
+		r_doLoop = false;
 
-		// Only proceed if all parts were removed successfully
-		if(_removed == _tobe_removed_total) then {
+		if (_finished) then {
 
-			player playActionNow "Medic";
-			sleep 1;
-			[player,"repair",0,false] call dayz_zombieSpeak;
-			_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
-			sleep 5;
-
-			// Put items
+			_removed = 0; // count total of removed items
+			_tobe_removed_total = 0; // count total of all to be removed items
+			// Take items
 			{
-				_itemOut = _x select 0;
-				_countOut = _x select 1;
-				diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
-		
-				for "_x" from 1 to _countOut do {
-					player addMagazine _itemOut;
-				};
-		
-			} forEach _selectedRecipeOutput;
+				_itemIn = _x select 0;
+				_countIn = _x select 1;
+				diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+				_tobe_removed_total = _tobe_removed_total + _countIn;
 
-			// get display name
-			_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
+				{					
+					if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
+					
+						// diag_log format["removing: %1 kindOf: %2", _x, _itemIn];
+					
+						// player removeMagazine _x;
+						_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
+					};
+				
+				} forEach magazines player;
+			
+			} forEach _selectedRecipeInput;
+		
+			diag_log format["removing: %1 kindOf: %2", _removed, _tobe_removed_total];
 
-			// Add crafted item
-			cutText [format["Crafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+			// Only proceed if all parts were removed successfully
+			if(_removed == _tobe_removed_total) then {
+
+				// Put items
+				{
+					_itemOut = _x select 0;
+					_countOut = _x select 1;
+					diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
+		
+					for "_x" from 1 to _countOut do {
+						player addMagazine _itemOut;
+					};
+					
+					// get display name
+					_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
+
+					// Add crafted item
+					cutText [format["Crafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+				
+				} forEach _selectedRecipeOutput;
+
+			} else {
+				cutText [format["Missing Parts after first check Item: %1 / %2",_removed,_tobe_removed_total], "PLAIN DOWN"];
+			};
 
 		} else {
-			cutText [format["Missing Parts after first check Item: %1 / %2",_removed,_tobe_removed_total], "PLAIN DOWN"];
+			r_interrupt = false;
+			[objNull, player, rSwitchMove,""] call RE;
+			player playActionNow "stop";
+			cutText ["Canceled crafting.", "PLAIN DOWN"];
 		};
 		
 	} else {

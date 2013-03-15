@@ -1,40 +1,71 @@
 // medBreakLegs.sqf
-private["_array","_unit","_medic","_display","_control","_hitLegs","_hitArms"];
+private["_array","_unit","_attacker","_display","_control","_hitLegs","_hitArms"];
 disableserialization;
 _array = _this; //_this select 0;
 _unit = _array select 0;
-_medic = _array select 1;
+_attacker = _array select 1;
 
-if (local _unit && _unit == player) then {
+if (_unit == player && player distance _attacker < 5) then {
 	
-	_unit setVariable["startcombattimer", 1, false];
+	player setVariable["startcombattimer", 1, false];
 
 	// Make bleed
 	if (random 2 < 1) then {
-		r_player_injured = true;
-		player setVariable ["USEC_injured",true,true];
+		
+		// Find hit
+		_cnt = count (DAYZ_woundHit_ok select 1);
+		_index = floor (random _cnt);
+		_index = (DAYZ_woundHit_ok select 1) select _index;
+		_hit = (DAYZ_woundHit_ok select 0) select _index; 
+
+		_damage = 0.1 + random (1.2);
+
+		//Record Damage to Minor parts (legs, arms)
+		if (_hit in USEC_MinorWounds) then {
+			[_unit,_hit,_damage] call object_processHit;
+		};
+
+		player setVariable["medForceUpdate",true,true];
 	
-		//Ensure Control is visible for bleeding
-		_display = uiNamespace getVariable 'DAYZ_GUI_display';
-		_control = 	_display displayCtrl 1300;
-		_control ctrlShow true;
+		1 call fnc_usec_bulletHit;
+
+		_wound = _hit call fnc_usec_damageGetWound;
+
+		//Create Wound
+		_unit setVariable[_wound,true,true];
+		[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
+		usecBleed = [_unit,_wound,_hit];
+		publicVariable "usecBleed";
+
+		//Set Injured if not already
+		_isInjured = _unit getVariable["USEC_injured",false];
+		if (!_isInjured) then {
+			_unit setVariable["USEC_injured",true,true];
+			dayz_sourceBleeding = _attacker;
+		};
+		//Set ability to give blood
+		_lowBlood = _unit getVariable["USEC_lowBlood",false];
+		if (!_lowBlood) then {
+			_unit setVariable["USEC_lowBlood",true,true];
+		};
+		r_player_injured = true;
+
+		// reduce blood
+		r_player_blood = r_player_blood - 50;
+
+		// Make player infected
+		if (random 5 < 1) then {
+			r_player_infected = true;
+			player setVariable["USEC_infected",true,true];
+		};
 	};
 
-	// Make player infected
-	if (random 5 < 1) then {
-		r_player_infected = true;
-		player setVariable["USEC_infected",true,true];
-	};
+	[_unit,"hit",2,false] call dayz_zombieSpeak;
 
-	// Break legs
-	if (random 25 < 1) then {
-		// break legs
-	};
+	
 
-	// Knock out
-	if (random 100 < 1) then {
-		// perform knockout 
-	};
+	
 
-	player setVariable["medForceUpdate",true];
+	
+
 };

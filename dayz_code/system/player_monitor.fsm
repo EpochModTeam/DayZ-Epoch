@@ -18,7 +18,7 @@ item13[] = {"no_PlayerID",4,218,50.000000,150.000000,150.000000,200.000000,2.000
 item14[] = {"ERROR__No_Player",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item15[] = {"Request",2,250,-75.000000,250.000000,25.000000,300.000000,0.000000,"Request"};
 item16[] = {"Response",4,218,-175.000000,300.000000,-75.000000,350.000000,0.000000,"Response"};
-item17[] = {"Parse_Login",2,4346,-75.000000,350.000000,25.000000,400.000000,0.000000,"Parse Login"};
+item17[] = {"Parse_Login",2,250,-75.000000,350.000000,25.000000,400.000000,0.000000,"Parse Login"};
 item18[] = {"Hive_Bad",4,218,50.000000,350.000000,150.000000,400.000000,10.000000,"Hive" \n "Bad"};
 item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,350.000000,275.000000,400.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item20[] = {"Hive_Ok",4,218,-175.000000,400.000000,-75.000000,450.000000,0.000000,"Hive" \n "Ok"};
@@ -45,7 +45,7 @@ item40[] = {"Too_Long",4,218,300.000000,550.000000,400.000000,600.000000,0.00000
 item41[] = {"Too_Long",4,218,300.000000,650.000000,400.000000,700.000000,0.000000,"Too" \n "Long"};
 item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
 item43[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
-item44[] = {"New_Character",4,218,-425.000000,275.000000,-325.000000,325.000000,5.000000,"New" \n "Character"};
+item44[] = {"New_Character",4,218,-425.000000,275.000000,-325.000000,325.000000,6.000000,"New" \n "Character"};
 item45[] = {"Gender_Selection",2,250,-500.000000,350.000000,-400.000000,400.000000,0.000000,"Gender Selection" \n "Dialog"};
 item46[] = {"Selected",4,218,-450.000000,450.000000,-350.000000,500.000000,0.000000,"Selected"};
 item47[] = {"Process",2,250,-300.000000,475.000000,-200.000000,525.000000,0.000000,"Process"};
@@ -119,8 +119,8 @@ link59[] = {51,52};
 link60[] = {52,29};
 link61[] = {53,54};
 link62[] = {54,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-442.430725,330.314087,709.154297,0.804942,960,880,1};
-window[] = {2,-1,-1,-1,-1,872,2033,3004,112,3,978};
+globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-442.430725,330.314087,740.948608,133.929596,1062,880,1};
+window[] = {2,-1,-1,-1,-1,760,137,1108,0,3,1080};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -431,7 +431,7 @@ class FSM
        "//[""dayzLogin"",[_playerUID,player]] call callRpcProcedure;" \n
        "" \n
        "dayzLogin = [_playerUID,player];" \n
-       "publicVariable ""dayzLogin"";" \n
+       "publicVariableServer ""dayzLogin"";" \n
        "" \n
        "dayzPlayerLogin = [];" \n
        ""/*%FSM</STATEINIT""">*/;
@@ -515,7 +515,7 @@ class FSM
         /*%FSM<LINK "New_Character">*/
         class New_Character
         {
-          priority = 5.000000;
+          priority = 6.000000;
           to="Gender_Selection";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_isNew && _isInfected == 0"/*%FSM</CONDITION""">*/;
@@ -657,7 +657,7 @@ class FSM
        "//[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
        "" \n
        "dayzLogin2 = [_charID,player,_playerUID];" \n
-       "publicVariable ""dayzLogin2"";" \n
+       "publicVariableServer ""dayzLogin2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.8;" \n
@@ -1118,7 +1118,7 @@ class FSM
        "		sleep 2;" \n
        "	};" \n
        "};" \n
-	   "" \n
+       "" \n
        "dayz_Totalzedscheck = [] spawn {" \n
        "	while {true} do {" \n
        "		dayz_maxCurrentZeds = {alive _x} count entities ""zZombie_Base"";" \n
@@ -1165,7 +1165,7 @@ class FSM
        "//[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
        "" \n
        "dayzLoginRecord = [_playerUID,_charID,0];" \n
-       "publicVariable ""dayzLoginRecord"";" \n
+       "publicVariableServer ""dayzLoginRecord"";" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links

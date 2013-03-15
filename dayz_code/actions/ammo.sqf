@@ -19,9 +19,6 @@ if (_ammo != "") then {
 	_vehicle addMagazineTurret [_ammo,_turret];
 	player removeMagazine _ammo;
 
-	//disableSerialization;
-	//call dayz_forceSave;
-
 	cutText [format["You have successfully loaded %1 ammunition.",_ammoType], "PLAIN DOWN"];
 } else {
 	cutText [format["You need %1 type of ammo to do this.",_text], "PLAIN DOWN"];

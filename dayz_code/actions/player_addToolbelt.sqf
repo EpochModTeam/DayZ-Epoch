@@ -1,13 +1,17 @@
 private["_item","_config","_onLadder","_create","_isOk","_config2","_consume"];
+
+if(TradeInprogress) exitWith { cutText ["Add to toolbelt already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
+if (_onLadder) exitWith {TradeInprogress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hastoolweapon = _this in weapons player;
 _text = getText (_config >> "displayName");
-if (!_hastoolweapon) exitWith {cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
+if (!_hastoolweapon) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
 
 call gear_ui_init;
 
@@ -76,3 +80,4 @@ if (_isOk) then {
 		};
 	};	
 };
+TradeInprogress = false;

@@ -63,6 +63,21 @@ if(_isPZombie) then {
 	if (s_player_pzombiesattack < 0) then {
 		s_player_pzombiesattack = player addAction ["Attack", "\z\addons\dayz_code\actions\pzombie\pz_attack.sqf",cursorTarget, 6, true, false, "",""];
 	};
+	
+	_isAnimal = cursorTarget isKindOf "Animal";
+	_isZombie = cursorTarget isKindOf "zZombie_base";
+	_isHarvested = cursorTarget getVariable["meatHarvested",false];
+	_isMan = cursorTarget isKindOf "Man";
+
+	// Pzombie Gut human corpse or animal
+	if (!alive cursorTarget and (_isAnimal or _isMan) and !_isZombie and !_isHarvested and _canDo) then {
+		if (s_player_pzombiesfeed < 0) then {
+			s_player_pzombiesfeed = player addAction ["Feed", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false, "",""];
+		};
+	} else {
+		player removeAction s_player_pzombiesfeed;
+		s_player_pzombiesfeed = -1;
+	};
 };
 
 
@@ -180,31 +195,20 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		s_player_fillfuel = -1;
 	};
 	
-	if(_isPZombie) then {
-		// Pzombie Gut human corpse or animal
-		if (!alive cursorTarget and (_isAnimal or _isMan) and !_isZombie and !_isHarvested and _canDo) then {
-			if (s_player_butcher < 0) then {
-				s_player_butcher = player addAction ["Feed", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false, "",""];
+	// Human Gut animal or zombie
+	if (!alive cursorTarget and (_isAnimal or _isZombie) and _hasKnife and !_isHarvested and _canDo) then {
+		if (s_player_butcher < 0) then {
+			if(_isZombie) then {
+				s_player_butcher = player addAction ["Gut Zombie", "\z\addons\dayz_code\actions\gather_zparts.sqf",cursorTarget, 3, true, true, "", ""];
+			} else {
+				s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",cursorTarget, 3, true, true, "", ""];
 			};
-		} else {
-			player removeAction s_player_butcher;
-			s_player_butcher = -1;
 		};
 	} else {
-		// Human Gut animal or zombie
-		if (!alive cursorTarget and (_isAnimal or _isZombie) and _hasKnife and !_isHarvested and _canDo) then {
-			if (s_player_butcher < 0) then {
-				if(_isZombie) then {
-					s_player_butcher = player addAction ["Gut Zombie", "\z\addons\dayz_code\actions\gather_zparts.sqf",cursorTarget, 3, true, true, "", ""];
-				} else {
-					s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",cursorTarget, 3, true, true, "", ""];
-				};
-			};
-		} else {
-			player removeAction s_player_butcher;
-			s_player_butcher = -1;
-		};
+		player removeAction s_player_butcher;
+		s_player_butcher = -1;
 	};
+	
 	//Fireplace Actions check
 	if (inflamed cursorTarget and _hasRawMeat and _canDo) then {
 		if (s_player_cook < 0) then {

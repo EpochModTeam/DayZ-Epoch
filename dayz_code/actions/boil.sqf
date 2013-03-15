@@ -1,5 +1,8 @@
 private["_hasbottleitem","_hastinitem","_bottletext","_tin1text","_tin2text","_tintext","_qty","_dis","_sfx"];
 
+if(TradeInprogress) exitWith { cutText ["Boil already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 player removeAction s_player_boil;
 s_player_boil = -1;
 
@@ -16,12 +19,17 @@ _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "dis
 _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
 _tin2text = getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
 _tintext = format["%1 / %2",_tin1text,_tin2text];
-if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_bottletext,"fill"] , "PLAIN DOWN"]};
-if (!_hastinitem) exitWith {cutText [format[(localize "str_player_31"),_tintext,"fill"] , "PLAIN DOWN"]};
+if (!_hasbottleitem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_bottletext,"fill"] , "PLAIN DOWN"]};
+if (!_hastinitem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_tintext,"fill"] , "PLAIN DOWN"]};
+
+_removed = 0;
 
 if (_hasbottleitem and _hastinitem) then {
 	_qty = {_x == "ItemWaterbottle"} count magazines player;
 	if ("ItemWaterbottle" in magazines player) then {
+		
+		_removed = _removed + ([player,"ItemWaterbottle",_qty] call BIS_fnc_invRemove);
+		
 		player playActionNow "Medic";
         sleep 1;
 
@@ -31,17 +39,16 @@ if (_hasbottleitem and _hastinitem) then {
         [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
         sleep 5;
-		for "_x" from 1 to _qty do {
-			player removeMagazine "ItemWaterbottle";
+
+		// Add back only number of removed
+		for "_x" from 1 to _removed do {
 			player addMagazine "ItemWaterbottleBoiled";
-			
 		};
-		//disableSerialization;
-		//call dayz_forceSave;
-
-
+		
 		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
 	} else {
 		cutText [(localize "str_player_02") , "PLAIN DOWN"];
 	};
 };
+
+TradeInprogress = false;

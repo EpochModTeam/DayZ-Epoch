@@ -14,7 +14,7 @@ if (isServer) then {
 	[_unit, "killed"] call server_updateObject;
 } else {
 	dayzUpdateVehicle = [_unit, "killed"];
-	publicVariable "dayzUpdateVehicle";
+	publicVariableServer "dayzUpdateVehicle";
 };
 
 _unit removeAllEventHandlers "HandleDamage";

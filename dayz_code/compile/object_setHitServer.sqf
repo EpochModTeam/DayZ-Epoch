@@ -14,7 +14,7 @@ if ((_selection != "") and local _unit) then {
 	if (_damage >= 1) then {
 		//["dayzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
 		dayzUpdateVehicle = [_unit,"damage"];
-		publicVariable "dayzUpdateVehicle";
+		publicVariableServer "dayzUpdateVehicle";
 	};
 	
 } else {
