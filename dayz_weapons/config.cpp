@@ -1607,6 +1607,11 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\european_woman_01_co.paa"};
 	};
+	class SurvivorWpink_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\dayz_equip\textures\GirlyGirl.paa"};
+	};
 	class Citizen1;
 	class PZombie_VB: Citizen1
 	{

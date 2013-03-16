@@ -114,6 +114,11 @@ for "_x" from 1 to _total_trades do {
 					cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
 					_abort = true;
 
+					// Return items taken
+					for "_x" from 1 to _removed do {
+						player addMagazine _part_in;
+					};
+
 				};
 
 				dayzTradeResult = nil;

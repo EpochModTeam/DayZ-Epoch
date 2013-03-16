@@ -341,6 +341,10 @@ class CfgSurvival {
 			sex = "female";
 			playerModel = "SurvivorW2_DZ";
 		};
+		class Skin_SurvivorWpink_DZ: Default {
+			sex = "female";
+			playerModel = "SurvivorWpink_DZ";
+		};
 		class Skin_SurvivorW3_DZ: Default {
 			sex = "female";
 			playerModel = "SurvivorW3_DZ";

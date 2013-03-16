@@ -27,13 +27,16 @@ if(_total_trades < 1) exitWith {
 };
 
 _abort = false;
+_tradeCounter = 0;
 
 // trade all items
 for "_x" from 1 to _total_trades do {
 	
 	_removed = 0;
 
-	if(_total_trades == 1) then { 
+	_tradeCounter = _tradeCounter + 1;
+
+	if(_total_trades == 1) then {
 		cutText [format[("Starting trade, stand still to complete trade."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	} else {
 		cutText [format[("Starting trade, stand still to complete trade %1 of %2."),_tradeCounter,_total_trades] , "PLAIN DOWN"];

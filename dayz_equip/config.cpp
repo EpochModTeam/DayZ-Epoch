@@ -1115,7 +1115,13 @@ class CfgMagazines
 		displayName = "Civilian (female)";
 		descriptionShort = "Civilian (female)";
 	};
-
+	class Skin_SurvivorWpink_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Civilian Pink (female)";
+		descriptionShort = "Civilian Pink (female)";
+	};
+	
 	class Skin_TK_INS_Warlord_EP1_DZ: SkinBase
 	{
 		scope = 2;
