@@ -1,7 +1,7 @@
 private["_iarray","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_isOk"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 _activatingPlayer = _this select 1;
@@ -16,6 +16,7 @@ _textPartOut = (_this select 3) select 6;
 _traderID = (_this select 3) select 7;
 
 _removed = 0;
+_tradeCounter = 0;
 
 _bos = 0;
 if(_buy_o_sell == "sell") then {
@@ -28,17 +29,32 @@ _qty = {_x == _part_in} count magazines player;
 // Find number of possible trades
 _total_trades = floor(_qty / _qty_in);
 
+_abort = false;
+
+if(_total_trades < 1) exitWith { 
+	_needed =  _qty_in - _qty;
+	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+	TradeInprogress = false;
+};
+
 // perform number of total trades
 for "_x" from 1 to _total_trades do {
 
-	cutText ["Starting trade, stand still to complete.", "PLAIN DOWN"];
+	_removed = 0;
+	_tradeCounter = _tradeCounter + 1;
 
+	// cutText ["Starting trade, stand still to complete.", "PLAIN DOWN"];
+	if(_total_trades == 1) then { 
+		cutText [format[("Starting trade, stand still to complete trade."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+	} else {
+		cutText [format[("Starting trade, stand still to complete trade %1 of %2."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+	};
 	player playActionNow "Medic";
 	
-	_dis=20;
-	_sfx = "repair";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
-	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	//_dis=20;
+	//_sfx = "repair";
+	//[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
+	//[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
 	r_interrupt = false;
 	_animState = animationState player;
@@ -67,6 +83,7 @@ for "_x" from 1 to _total_trades do {
 		r_interrupt = false;
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
+		cutText ["Canceled Trade." , "PLAIN DOWN"];
 	};
 
 	if (_finished) then {
@@ -90,9 +107,13 @@ for "_x" from 1 to _total_trades do {
 					};
 
 					cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					
+					
 
 				} else {
 					cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+					_abort = true;
+
 				};
 
 				dayzTradeResult = nil;
@@ -104,14 +125,18 @@ for "_x" from 1 to _total_trades do {
 				for "_x" from 1 to _removed do {
 					player addMagazine _part_in;
 				};
+				_abort = true;
 			};
-	
-	
+
 		} else {
 			_needed =  _qty_in - _qty;
 			cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 		};
 	};
+	
+	sleep 1;
+
+	if(_abort) exitWith {};
 };
 
 TradeInprogress = false;
