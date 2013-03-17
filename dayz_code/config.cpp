@@ -2002,7 +2002,7 @@ class HeliCrash_No50s: Default {
 			{ 2.94312,2.297,-1.88723 },
 			{ 5.34082,-1.82922,-1.88723 }};
 	};
-	class Land_army_hut_int: Military
+	class land_army_hut_int: Military
 	{
 		lootPos[] = {
 			{ 2.7959,-5.07373,-1.33056 },
@@ -2020,7 +2020,7 @@ class HeliCrash_No50s: Default {
 			{ -0.0664063,-1.70801,-1.23617 },
 			{ 0.141113,2.31104,-1.23617 }};
 	};
-	class Land_army_hut2_int: Military
+	class land_army_hut2_int: Military
 	{
 		lootPos[] = {
 			{ -0.421387,-0.0517578,-0.948329 },
@@ -2099,19 +2099,19 @@ class HeliCrash_No50s: Default {
 			{-1.01465,-1.44189,-1.46152},
 			{1.61694,0.546875,-1.46152}};
 	};
-	class Land_hut01: Residential
+	class land_hut01: Residential
 	{
 		lootPos[] = {
 			{ 0.304749,-0.543213,-0.448339 },
 			{ 0.885254,2.90747,-0.44834 }};
 	};
-	class Land_hut02: Residential
+	class land_hut02: Residential
 	{
 		lootPos[] = {
 			{ -0.498901,2.974,-0.445764 },
 			{ -1.07245,-0.756958,-0.445764 }};
 	};
-	class Land_hut04: Residential
+	class land_hut04: Residential
 	{
 		lootPos[] = {
 			{ -1.07227,-0.354492,-0.437198 },
@@ -2311,4 +2311,15 @@ class HeliCrash_No50s: Default {
 			{26.1628,-12.502,-0.952108},
 			{23.3086,-6.62305,-0.952108}};
 	};
+
+
+	// Taviana 1.0 building loots
+	class Land_majak_podesta: Residential
+	{
+		lootPos[] = {
+			{-1.22461,-2.17969,2.28329},
+			{1.14844,-2.9707,2.28329}};
+	};
+
+
 };
