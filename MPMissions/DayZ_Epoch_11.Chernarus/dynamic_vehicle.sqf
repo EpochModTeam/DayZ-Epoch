@@ -56,7 +56,7 @@ AllowedVehiclesList = [
 	["Fishing_Boat",2],
 	["Smallboat_1",2],
 	["Smallboat_2",2],
-	["M113Ambul_UN_EP1",1],
+	["M113Ambul_UN_EP1_DZ",1],
 	["KamazRefuel",1],
 	["UralRefuel_TK_EP1",1],
 	["MtvrRefuel_DES_EP1",1],

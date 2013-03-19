@@ -1,141 +1,111 @@
-// DayZ Epoch TRADERS
-serverTraders = [
-	"Functionary1",
-	"RU_Profiteer3",
-	"Profiteer1",
-	"RU_Sportswoman5",
-	"TK_CIV_Takistani05_EP1",
-	"Dr_Annie_Baker_EP1",
-	"Woodlander2",
-	"TK_CIV_Takistani02_EP1",
-	"TK_CIV_Takistani03_EP1",
-	"TK_CIV_Takistani06_EP1",
-	"TK_CIV_Takistani04_EP1",
-	"TK_CIV_Woman03_EP1",
-	"TK_CIV_Woman02_EP1",
-	"RU_Profiteer2",
-	"RU_Damsel4",
-	"RU_Woodlander3",
-	"RU_Citizen4",
-	"RU_Pilot"
-];
-
-// Metals Traders
+// DayZ Epoch TRADERS for 1
+serverTraders = ["Functionary1","RU_Profiteer3","Profiteer1","RU_Sportswoman5","TK_CIV_Takistani05_EP1","Dr_Annie_Baker_EP1","Woodlander2","TK_CIV_Takistani03_EP1","TK_CIV_Takistani06_EP1","TK_CIV_Takistani04_EP1","TK_CIV_Woman03_EP1","TK_CIV_Woman02_EP1","RU_Profiteer2","TK_CIV_Takistani02_EP1","RU_Damsel4","RU_Woodlander3","RU_Citizen4","RU_Pilot"];
+// START PER TRADER CONFIG
+// Hero Traders
 menu_Functionary1 = [
-	[["Clothes",100411]],
+	[["Clothes",130],["Weapons",131],["Vehicles",132]],
 	[],
-	"hero"
+	"friendly"
 ];
-
-// High end Weapons
+// High End Weapons - Khush
 menu_RU_Profiteer3 = [
-	[["Assault Rifle",100014],["Machine Gun",100015],["Sniper Rifle",100016],["Explosives",100023]], 
+	[["Assault Rifle",133],["Machine Gun",134],["Sniper Rifle",135],["Explosives",136]],
 	[],
 	"neutral"
 ];
-// High end ammo
+// High End Ammo - Khush
 menu_Profiteer1 = [
-	[["Assault Rifle Ammo",100004],["Machine Gun Ammo",100005],["Sniper Rifle Ammo",100006]],
+	[["Assault Rifle Ammo",137],["Machine Gun Ammo",138],["Sniper Rifle Ammo",139]],
 	[],
 	"neutral"
 ];
-// Can Traders
+// Can Trader - Khush
 menu_RU_Sportswoman5 = [
-	[["Food and Drinks",100051],["Backpacks",100052],["Toolbelt Items",100053],["Clothes",100054]],
-	[
-		["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]
-	],
+	[["Food and Drinks",140],["Backpacks",141],["Toolbelt Items",142],["Clothes",143]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
-// Parts Traders
+// Parts Trader - Khush
 menu_TK_CIV_Takistani05_EP1 = [
-	[["Vehicle Parts",100021],["Building Supplies",100022]],
+	[["Vehicle Parts",144],["Building Supplies",145]],
 	[],
 	"friendly"
 ];
-// Doctors
+// Doctor - Khush
 menu_Dr_Annie_Baker_EP1 = [
-	[["Medical Supplies",100031],["Chem-lites/Flares",100032],["Smoke Grenades",100033]],
+	[["Medical Supplies",146],["Chem-lites/Flares",147],["Smoke Grenades",148]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"friendly"
 ];
-// Auto Traders
+// Auto Trader - Khush
 menu_Woodlander2 = [
-	[["Trucks Armed",100422],["UAZ",100046],["Helicopter Armed",100444],["Military Armed",100455],["Fuel Trucks",100047],["Heavy Armor Unarmed",100048]],
+	[["Trucks Armed",149],["UAZ",150],["Helicopter Armed",151],["Military Armed",152],["Fuel Trucks",153],["Heavy Armor Unarmed",154]],
 	[],
 	"friendly"
 ];
-// START Camp #2
-
-// Car Parts
+// Car Parts - Nur
 menu_TK_CIV_Takistani03_EP1 = [
-	[["Vehicle Parts",102121],["Building Supplies",102222]],
+	[["Vehicle Parts",155],["Building Supplies",156]],
 	[],
 	"friendly"
 ];
-// Weapons Trader
+// Weapons Trader - Nur
 menu_TK_CIV_Takistani06_EP1 = [
-	[["Sidearm",100011],["Rifles",100012],["Shotguns and Crossbows",100013]],
+	[["Sidearm",157],["Rifles",158],["Shotguns and Crossbows",159]],
 	[],
 	"friendly"
 ];
-// Ammo Trader
+// Ammo Trader - Nur
 menu_TK_CIV_Takistani04_EP1 = [
-	[["Sidearm Ammo",100001],["Rifle Ammo",100002],["Shotgun and Crossbow Ammo",100003]],
+	[["Sidearm Ammo",160],["Rifle Ammo",161],["Shotgun and Crossbow Ammo",162]],
 	[],
 	"friendly"
 ];
+// Can Trader - Nur
 menu_TK_CIV_Woman03_EP1 = [
-	[["Food and Drinks",100055],["Backpacks",100056],["Toolbelt Items",100057],["Clothes",100058]],
-	[
-		["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]
-	],
+	[["Food and Drinks",163],["Backpacks",164],["Toolbelt Items",165],["Clothes",166]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
+// Doctor - Nur
 menu_TK_CIV_Woman02_EP1 = [
-	[["Medical Supplies",103131],["Chem-lites/Flares",103232],["Smoke Grenades",103333]],
+	[["Medical Supplies",167],["Chem-lites/Flares",168],["Smoke Grenades",169]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"friendly"
 ];
-
-// START Camp #3
-
-// LOW end Auto Traders
+// Auto Trader - Garm
 menu_RU_Profiteer2 = [
-	[["Cars",100041],["Trucks Unarmed",100042],["SUV",100466],["Buses and Vans",100467],["Bikes and ATV",100043],["Helicopter Unarmed",100044],["Military Unarmed",100045]],
+	[["Cars",170],["Trucks Unarmed",171],["SUV",172],["Buses and Vans",173],["Bikes and ATV",174],["Helicopter Unarmed",175],["Military Unarmed",176]],
 	[],
 	"friendly"
 ];
-
-// Car Parts
+// Car Parts - Garm
 menu_TK_CIV_Takistani02_EP1 = [
-	[["Vehicle Parts",2122],["Building Supplies",2223]],
+	[["Vehicle Parts",177],["Building Supplies",178]],
 	[],
 	"friendly"
 ];
+// Can Trader - Garm
 menu_RU_Damsel4 = [
-	[["Food and Drinks",105151],["Backpacks",105252],["Toolbelt Items",105353],["Clothes",105454]],
-	[
-		["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]
-	],
+	[["Food and Drinks",179],["Backpacks",180],["Toolbelt Items",181],["Clothes",182]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
-// Wholsalers
+// Wholesaler - South
 menu_RU_Woodlander3 = [
-	[["Wholesale",998]],
+	[["Wholesale",183]],
 	[],
 	"neutral"
 ];
+// Wholesaler - North
 menu_RU_Citizen4 = [
-	[["Wholesale",9998]], 
+	[["Wholesale",184]],
 	[],
 	"neutral"
 ];
-// Air plane Dealers
+// Airplane Dealer
 menu_RU_Pilot = [
-	[["Wholesale",1002]], 
+	[["Airplanes",185]],
 	[],
 	"neutral"
 ];
-
-

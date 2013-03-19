@@ -1,7 +1,7 @@
 respawn = "BASE";
 respawndelay = 5;
-onLoadMission="DayZ Epoch Takistan";
-OnLoadIntro = "Welcome to Takistan";
+onLoadMission="DayZ_Epoch Taviana";
+OnLoadIntro = "Welcome to Taviana";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
@@ -11,6 +11,7 @@ enableItemsDropping=0;
 
 onPauseScript = "\z\addons\dayz_code\compile\player_onPause.sqf";
 loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
+
 class Header
 {
  gameType = COOP;            //DM, Team, Coop, ...
