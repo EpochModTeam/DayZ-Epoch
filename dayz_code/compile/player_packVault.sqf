@@ -45,24 +45,21 @@ if(_ownerID == dayz_playerUID) then {
 	_bag setpos _pos;
 	player reveal _bag;
 
-	/*
 	_holder = "WeaponHolder" createVehicle _pos; 
-	_holder setpos _pos;
-	player reveal _holder;
 	
 	_weapons = 		getWeaponCargo _obj;
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
-	*/
-
+	
 	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
 	dayzDeleteObj = [_objectID,_objectUID];
 	publicVariableServer "dayzDeleteObj";
+	if (isServer) then {
+		dayzDeleteObj call server_deleteObj;
+	};
 
-	
 	deleteVehicle _obj;
 	
-	/*
 	//Add weapons
 	_objWpnTypes = 	_weapons select 0;
 	_objWpnQty = 	_weapons select 1;
@@ -89,7 +86,6 @@ if(_ownerID == dayz_playerUID) then {
 		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
 	} forEach _objWpnTypes;
-	*/
 	
 	
 	cutText ["Your Safe has been packed", "PLAIN DOWN"];
