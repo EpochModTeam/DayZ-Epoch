@@ -52,13 +52,13 @@ if (_unitIsPlayer) then {
 				_source setVariable["startcombattimer",1];	
 			};
 			_canHitFree = 	player getVariable ["freeTarget",false];
-			_isBandit = 	(typeOf player) == "Bandit1_DZ";
-			if (!_canHitFree and !_isBandit) then {
+			
+			if (!_canHitFree) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
 				//["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
-				dayzHumanity = [_this select 0,_this select 1,30];
+				dayzHumanity = [_source,_humanityHit,30];
 				publicVariable "dayzHumanity";
 			};
 		};
