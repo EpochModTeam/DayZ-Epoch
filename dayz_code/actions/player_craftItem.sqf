@@ -69,7 +69,12 @@ _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animati
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
 // reqire fire target
-if (inflamed cursorTarget and _canDo) then {
+// TODO: add requirements to config. example: fire nearby, specific toolbelt items like toolbox.
+_isFireNear = {inflamed _x} count (position player nearObjects 2);
+
+diag_log format["Checking for fire: %1", _isFireNear];
+
+if (_isFireNear >= 1 and _canDo) then {
 	
 	// Moved all recipes input and outputs to configs
 
@@ -193,7 +198,7 @@ if (inflamed cursorTarget and _canDo) then {
 		cutText [format["Missing %1 more of %2",_missingQty, _textMissing], "PLAIN DOWN"];
 	};
 } else {
-	cutText ["You need to be looking at a fire to craft.", "PLAIN DOWN"];
+	cutText ["Crafting needs a fire within 2 meters.", "PLAIN DOWN"];
 };
 
 TradeInprogress = false;
