@@ -17,7 +17,13 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac"
+		"csj_gyroac",
+		"cawheeled_acr_octavia",
+		"CAWheeled_E_ATV",
+		"CAWheeled_E_LandRover",
+		"cawheeled_acr_t810",
+		"cawheeled_acr_hmmwv",
+		"camisc_acr_pbx"
 	};
 	addOnsAuto[]=
 	{
@@ -1342,7 +1348,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={12179.906,682.84894,6019.5557};
+			position[]={10918.798,286.96219,6325.6011};
 			name="Trader_City_Garm";
 			text="Trader City Garm";
 			type="mil_circle";
@@ -1412,7 +1418,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={12180.128,682.91718,6016.0566};
+			position[]={10919.02,286.87616,6322.1021};
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;

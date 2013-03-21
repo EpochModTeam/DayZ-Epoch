@@ -16,12 +16,12 @@ player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
 enableRadio false;
 
-// Epoch config
+// DayZ Epoch config
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea = 1500; // Default = 1500
 MaxHeliCrashes= 5; // Default = 5
-MaxVehicleLimit = 250; // Default = 50
-MaxDynamicDebris = 250; // Default = 100
+MaxVehicleLimit = 300; // Default = 50
+MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 12000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
