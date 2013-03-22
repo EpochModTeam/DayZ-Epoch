@@ -73,6 +73,7 @@ if (!isDedicated) then {
 	player_countmagazines =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
 	player_addToolbelt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addToolbelt.sqf";
 	player_reloadMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
+	player_loadCrate =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_loadCrate.sqf";
 	player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 	player_tentPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\tent_pitch.sqf";
 	player_vaultPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\vault_pitch.sqf";
@@ -236,11 +237,8 @@ if (!isDedicated) then {
 		if (_dikCode in (actionKeys "GetOver")) then {
 			
 			if (player isKindOf  "PZombie_VB") exitWith {
-				//player action ["sitDown", player];
-				player switchAction "sitDown";
-				//player playMoveNow "ZombieStandingAttack1";
-				//player switchMove "AmovPercMstpSnonWnonDnon";
-				diag_log "Saved player zombie from animation lockup?";
+				[objNull, player, rSwitchMove,""] call RE;
+				player playActionNow "stop";
 			};
 			if (!r_fracture_legs and (time - dayz_lastCheckBit > 4)) then {
 				_inBuilding = [player] call fnc_isInsideBuilding;

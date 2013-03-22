@@ -915,19 +915,15 @@ class CfgMagazines
 				text = "Load %1";
 				script = "spawn player_loadMag;";
 				outputOriented = "true";
-				output[] = {"20Rnd_556x45_Stanag","cfgMagazines"};
+				output[] = {"30Rnd_556x45_Stanag",10,"cfgMagazines"};
 			};
 			class CreateMag2: CreateMag1
 			{
-				output[] = {"30Rnd_556x45_Stanag","cfgMagazines"};
+				output[] = {"30Rnd_556x45_G36",10,"cfgMagazines"};
 			};
 			class CreateMag3: CreateMag1
 			{
-				output[] = {"30Rnd_556x45_G36","cfgMagazines"};
-			};
-			class CreateMag4: CreateMag1
-			{
-				output[] = {"200Rnd_556x45_M249","cfgMagazines"};
+				output[] = {"100Rnd_556x45_M249",3,"cfgMagazines"};
 			};
 		};
 	};
@@ -1727,42 +1723,135 @@ class CfgMagazines
 	class bulk_NVGoggles: bulk
 	{
 		descriptionShort = "12 x NV Goggles";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"NVGoggles",12,"weapon"};
+				// types magazine, weapon, backpack
+			};
+		};
+
 	};
 	class bulk_DZ_Backpack_EP1: bulk
 	{
 		descriptionShort = "12 x DZ_Backpack_EP1";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"DZ_Backpack_EP1",12,"backpack"};
+				// types magazine, weapon, backpack
+			};
+		};
 	};
 	class bulk_30Rnd_9x19_MP5SD: bulk
 	{
 		descriptionShort = "12 x 30Rnd_9x19_MP5SD";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"30Rnd_9x19_MP5SD",12,"magazine"};
+			};
+		};
 	};
 	class bulk_15Rnd_9x19_M9SD: bulk
 	{
 		descriptionShort = "12 x 15Rnd_9x19_M9SD";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"15Rnd_9x19_M9SD",12,"magazine"};
+			};
+		};
 	};
 	class bulk_30Rnd_556x45_StanagSD: bulk
 	{
 		descriptionShort = "12 x 30Rnd_556x45_StanagSD";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"30Rnd_556x45_StanagSD",12,"magazine"};
+			};
+		};
 	};
 	class bulk_ItemSandbag: bulk
 	{
 		descriptionShort = "12 x SandBag";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemSandbag",12,"magazine"};
+			};
+		};
 	};
 	class bulk_ItemGPS: bulk
 	{
 		descriptionShort = "12 x GPS";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemGPS",12,"weapon"};
+			};
+		};
 	};
 	class bulk_ItemMap: bulk
 	{
 		descriptionShort = "12 x Map";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemMap",12,"weapon"};
+			};
+		};
 	};
 	class bulk_ItemEtool: bulk
 	{
 		descriptionShort = "12 x E-Tool";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemEtool",12,"weapon"};
+			};
+		};
 	};
 	class bulk_17Rnd_9x19_glock17: bulk
 	{
 		descriptionShort = "12 x 17Rnd_9x19_glock17";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"17Rnd_9x19_glock17",12,"magazine"};
+			};
+		};
 	};
 	
 	

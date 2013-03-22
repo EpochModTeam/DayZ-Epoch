@@ -53,6 +53,7 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
+hint str(typeOf cursorTarget);
 
 if(_isPZombie) then {
 	//_state = animationState player;
@@ -60,19 +61,25 @@ if(_isPZombie) then {
 	if (s_player_callzombies < 0) then {
 		s_player_callzombies = player addAction ["Raise Horde", "\z\addons\dayz_code\actions\call_zombies.sqf",player, 5, true, false, "",""];
 	};
+
 	if (s_player_pzombiesattack < 0) then {
 		s_player_pzombiesattack = player addAction ["Attack", "\z\addons\dayz_code\actions\pzombie\pz_attack.sqf",cursorTarget, 6, true, false, "",""];
 	};
 	
-	_isAnimal = cursorTarget isKindOf "Animal";
-	_isZombie = cursorTarget isKindOf "zZombie_base";
-	_isHarvested = cursorTarget getVariable["meatHarvested",false];
-	_isMan = cursorTarget isKindOf "Man";
+	if (!isNull cursorTarget and (player distance cursorTarget < 3)) then {	//Has some kind of target
+		_isAnimal = cursorTarget isKindOf "Animal";
+		_isZombie = cursorTarget isKindOf "zZombie_base";
+		_isHarvested = cursorTarget getVariable["meatHarvested",false];
+		_isMan = cursorTarget isKindOf "Man";
 
-	// Pzombie Gut human corpse or animal
-	if (!alive cursorTarget and (_isAnimal or _isMan) and !_isZombie and !_isHarvested and _canDo) then {
-		if (s_player_pzombiesfeed < 0) then {
-			s_player_pzombiesfeed = player addAction ["Feed", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false, "",""];
+		// Pzombie Gut human corpse or animal
+		if (!alive cursorTarget and (_isAnimal or _isMan) and !_isZombie and !_isHarvested and _canDo) then {
+			if (s_player_pzombiesfeed < 0) then {
+				s_player_pzombiesfeed = player addAction ["Feed", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false, "",""];
+			};
+		} else {
+			player removeAction s_player_pzombiesfeed;
+			s_player_pzombiesfeed = -1;
 		};
 	} else {
 		player removeAction s_player_pzombiesfeed;
