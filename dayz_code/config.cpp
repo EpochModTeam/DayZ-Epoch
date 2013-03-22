@@ -454,6 +454,8 @@ class CfgBuildingLoot {
 			{ "Skin_Priest_DZ","magazine" },
 			{ "Skin_Rocker2_DZ","magazine" },
 			{ "Skin_SurvivorW3_DZ","magazine" },
+			{ "Skin_SurvivorWpink_DZ","magazine" },
+			
 	};
 		itemChance[] =	{
 			0.01,
@@ -491,6 +493,7 @@ class CfgBuildingLoot {
 			0.02,
 			0.02,
 			0.05,
+			0.01,
 		};		
 	};
 	class Office: Residential {
@@ -1418,6 +1421,12 @@ class HeliCrash_No50s: Default {
 	class Land_MBG_ApartmentsTwo_G: HouseRoaming{};
 	class Land_MBG_ApartmentsTwo_B: HouseRoaming{};
 	class Land_Ind_FuelStation_Build_EP1: Industrial
+	{
+		lootChance = 0.5;
+		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
+		lootPos[] = {{-1.34521,1.40698,-1.33611},{2.27051,-0.949951,-1.33611},{-2.23193,-1.146,-1.33589},{-0.185059,0.775146,-1.33609}};
+	};
+	class Land_ibr_FuelStation_Build: Industrial
 	{
 		lootChance = 0.5;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};

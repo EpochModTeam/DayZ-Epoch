@@ -1097,6 +1097,12 @@ class Citizen1;	// External class reference
 		transportFuel = 0; 
 		nameSound = "fuelstation"; 
 	}
+	// lingor
+	class Land_fuelstation : Strategic { 
+		model = "\ibr\ibr_plants\fuelstation";
+		transportFuel = 0; 
+		nameSound = "fuelstation"; 
+	}
 	// Lingor hangars
 	class land_ibr_hangar : House { 
 		model = "\ibr\ibr_hangars\ibr_hangar"; 
