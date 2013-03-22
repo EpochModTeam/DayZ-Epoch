@@ -6,6 +6,10 @@ fnc_usec_damageHandle = {
 	************************************************************/
 	private["_unit","_eh"];
 	_unit = _this select 0;
+	
+	// Remove handle damage override
+	_unit removeEventHandler ["HandleDamage",temp_handler];
+
 	mydamage_eh1 = _unit addeventhandler ["HandleDamage",{_this call fnc_usec_damageHandler;} ];
 	mydamage_eh2 = _unit addEventHandler ["Fired", {_this call player_fired;}];
 	mydamage_eh3 = _unit addEventHandler ["Killed", {_id = [] spawn player_death;}];
