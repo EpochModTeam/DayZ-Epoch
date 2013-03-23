@@ -25,87 +25,128 @@ if(_buy_o_sell == "buy") then {
 	_bos = 1;
 };
 
-
 if (_qty >= _qty_in) then {
 
-	//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-	dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-	publicVariableServer  "dayzTradeObject";
+	cutText ["Starting trade, stand still to complete trade.", "PLAIN DOWN"];
+	 
+	// force animation 
+	player playActionNow "Medic";
+
+	r_interrupt = false;
+	_animState = animationState player;
+	r_doLoop = true;
+	_started = false;
+	_finished = false;
 	
-
-	diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
-
-	waitUntil {!isNil "dayzTradeResult"};
-
-	diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
-
-	if(dayzTradeResult == "PASS") then {
-
-
-		if(_buy_o_sell == "buy") then {	
-			for "_x" from 1 to _qty_in do {
-				player removeMagazine _part_in;
-			};
-
-			//disableSerialization;
-			//call dayz_forceSave;
-	
-			_dir = round(random 360);
-
-			_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
-			if(count _helipad > 0) then {
-				_location = (getPosATL (_helipad select 0));
-			} else {
-				_location = [(position player),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
-			};
-	
-			//place vehicle spawn marker (local)
-			_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
-
-			_location = (getPosATL _veh);
-
-			//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
-			dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
-			publicVariableServer  "dayzPublishVeh2";
-
-			// event handlers to correctly track damage client side
-			_veh call fnc_vehicleEventHandler;
-
-			player reveal _veh;
-
-			cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-
-		} else {
-			// Sell Vehicle
-			for "_x" from 1 to _qty_out do {
-				player addMagazine _part_out;
-			};
-
-			//disableSerialization;
-			//call dayz_forceSave;
-
-			_obj = _obj select 0;
-			_objectID 	= _obj getVariable ["ObjectID","0"];
-			_objectUID	= _obj getVariable ["ObjectUID","0"];
-
-			//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
-			dayzDeleteObj = [_objectID,_objectUID];
-			publicVariableServer "dayzDeleteObj";
-
-
-			deleteVehicle _obj; 
-
-			cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-
+	while {r_doLoop} do {
+		_animState = animationState player;
+		_isMedic = ["medic",_animState] call fnc_inString;
+		if (_isMedic) then {
+			_started = true;
 		};
-	
-		{player removeAction _x} forEach s_player_parts;s_player_parts = [];
-		s_player_parts_crtl = -1;
-
-	} else {
-		cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+		if (_started and !_isMedic) then {
+			r_doLoop = false;
+			_finished = true;
+		};
+		if (r_interrupt) then {
+			r_doLoop = false;
+		};
+		sleep 0.1;
 	};
-	dayzTradeResult = nil;
+	r_doLoop = false;
+
+	if (!_finished) exitWith { 
+		r_interrupt = false;
+		[objNull, player, rSwitchMove,""] call RE;
+		player playActionNow "stop";
+		cutText ["Canceled Trade." , "PLAIN DOWN"];
+	};
+
+	if (_finished) then {
+
+		// Double check for items
+		if(_buy_o_sell == "buy") then {
+			_qty = {_x == _part_in} count magazines player;
+		} else {
+			_obj = nearestObjects [(getPosATL player), [_part_in], 20];
+			_qty = count _obj;
+			_bos = 1;
+		};
+
+		if (_qty >= _qty_in) then {
+
+			//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+			dayzTradeObject = [_activatingPlayer,_traderID,_bos];
+			publicVariableServer  "dayzTradeObject";
+	
+			diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
+
+			waitUntil {!isNil "dayzTradeResult"};
+
+			diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+
+			if(dayzTradeResult == "PASS") then {
+
+				if(_buy_o_sell == "buy") then {	
+	
+					for "_x" from 1 to _qty_in do {
+						player removeMagazine _part_in;
+					};
+
+					_dir = round(random 360);
+
+					_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
+					if(count _helipad > 0) then {
+						_location = (getPosATL (_helipad select 0));
+					} else {
+						_location = [(position player),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
+					};
+	
+					//place vehicle spawn marker (local)
+					_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
+
+					_location = (getPosATL _veh);
+
+					//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
+					dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
+					publicVariableServer  "dayzPublishVeh2";
+
+					// event handlers to correctly track damage client side
+					_veh call fnc_vehicleEventHandler;
+
+					player reveal _veh;
+
+					cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+
+				} else {
+					// Sell Vehicle
+					for "_x" from 1 to _qty_out do {
+						player addMagazine _part_out;
+					};
+
+					_obj = _obj select 0;
+					_objectID 	= _obj getVariable ["ObjectID","0"];
+					_objectUID	= _obj getVariable ["ObjectUID","0"];
+
+					//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+					dayzDeleteObj = [_objectID,_objectUID];
+					publicVariableServer "dayzDeleteObj";
+
+					deleteVehicle _obj; 
+
+					cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+
+				};
+	
+				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+				s_player_parts_crtl = -1;
+
+			} else {
+				cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+			};
+			dayzTradeResult = nil;
+		};
+	};
 
 } else {
 	_needed =  _qty_in - _qty;

@@ -53,7 +53,7 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
-hint str(typeOf cursorTarget);
+// hint str(typeOf cursorTarget);
 
 if(_isPZombie) then {
 	//_state = animationState player;

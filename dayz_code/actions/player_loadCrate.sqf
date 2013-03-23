@@ -29,7 +29,7 @@ if ((_location select 2) < 0) then {
 
 player removeMagazine _item;
 _dir = getDir player;
-_classname = "CardboardBox";
+_classname = "WeaponHolder";
 
 // Change to optional wait to complete
 player playActionNow "Medic";

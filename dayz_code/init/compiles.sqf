@@ -237,8 +237,7 @@ if (!isDedicated) then {
 		if (_dikCode in (actionKeys "GetOver")) then {
 			
 			if (player isKindOf  "PZombie_VB") exitWith {
-				[objNull, player, rSwitchMove,""] call RE;
-				player playActionNow "stop";
+				player switchAction "walkf";
 			};
 			if (!r_fracture_legs and (time - dayz_lastCheckBit > 4)) then {
 				_inBuilding = [player] call fnc_isInsideBuilding;
