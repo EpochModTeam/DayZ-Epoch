@@ -1114,10 +1114,30 @@ class CfgMagazines
 	class Skin_SurvivorWpink_DZ: SkinBase
 	{
 		scope = 2;
-		displayName = "Civilian Pink (female)";
-		descriptionShort = "Civilian Pink (female)";
+		displayName = "Pink (female)";
+		descriptionShort = "Pink Clothes (female)";
 	};
-	
+
+	class Skin_SurvivorWcombat_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Camo (female)";
+		descriptionShort = "Camo Clothes (female)";
+	};
+	class Skin_SurvivorWdesert_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Desert (female)";
+		descriptionShort = "Desert Clothes (female)";
+	};
+	class Skin_SurvivorWurban_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Urban (female)";
+		descriptionShort = "Urban Clothes (female)";
+	};
+
+
 	class Skin_TK_INS_Warlord_EP1_DZ: SkinBase
 	{
 		scope = 2;

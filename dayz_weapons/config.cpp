@@ -1612,6 +1612,21 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\dayz_equip\textures\GirlyGirl.paa"};
 	};
+	class SurvivorWcombat_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\dayz_equip\textures\CombatGirl.paa"};
+	};
+	class SurvivorWdesert_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\dayz_equip\textures\DesertGirl.paa"};
+	};
+	class SurvivorWurban_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\dayz_equip\textures\UrbanGirl.paa"};
+	};
 	class Citizen1;
 	class PZombie_VB: Citizen1
 	{
