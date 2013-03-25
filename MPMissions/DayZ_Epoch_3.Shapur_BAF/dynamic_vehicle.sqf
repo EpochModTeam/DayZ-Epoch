@@ -42,7 +42,7 @@ AllowedVehiclesList = [
 	["SUV_Charcoal",1],
 	["SUV_Blue",1],
 	["UH1H_DZ",2],
-	["Mi17_Civilian_DZ",3],
+	["Mi17_Civilian",3],
 	["Mi17_DZ",1],
 	["LandRover_CZ_EP1",2],
 	["HMMWV_Ambulance",2],

@@ -250,55 +250,6 @@ if (true) then
   _this setPos [4017.0591, 2885.23, -1.7166138e-005];
 };
 
-_this = createCenter civilian;
-_center_1 = _this;
-
-_group_1 = createGroup _center_1;
-
-_unit_15 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["Worker4", [4014.1775, 2917.584, -3.8146973e-006], [], 0, "CAN_COLLIDE"];
-  _unit_15 = _this;
-  _this setDir 114.73703;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_23 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["Functionary1", [4025.5176, 2889.5044, -7.6293945e-006], [], 0, "CAN_COLLIDE"];
-  _unit_23 = _this;
-  _this setDir 308.4227;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_25 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["RU_Citizen2", [4027.6382, 2894.0718, -1.1444092e-005], [], 0, "CAN_COLLIDE"];
-  _unit_25 = _this;
-  _this setDir 275.81802;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_26 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["TK_CIV_Worker01_EP1", [4021.2134, 2913.4302], [], 0, "CAN_COLLIDE"];
-  _unit_26 = _this;
-  _this setDir 249.54565;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
 _vehicle_207 = objNull;
 if (true) then
 {
@@ -388,65 +339,12 @@ if (true) then
   _this setPos [3933.9258, 2885.6702, 6.9856644e-005];
 };
 
-_unit_32 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["Villager3", [3934.5122, 2881.8413, -1.6212463e-005], [], 0, "CAN_COLLIDE"];
-  _unit_32 = _this;
-  _this setDir -96.868843;
-  _this setVehicleInit "this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_37 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["Profiteer2", [4022.9927, 2906.688, 5.7220459e-006], [], 0, "CAN_COLLIDE"];
-  _unit_37 = _this;
-  _this setDir 617.87714;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
 _vehicle_260 = objNull;
 if (true) then
 {
   _this = createVehicle ["USMC_WarfareBContructionSite", [3985.821, 2811.6047, 2.5510788e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_260 = _this;
   _this setPos [3985.821, 2811.6047, 2.5510788e-005];
-};
-
-_vehicle_261 = objNull;
-if (true) then
-{
-  _this = createVehicle ["VaultStorageLocked", [4012.2109, 2902.4836, -1.1444092e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_261 = _this;
-  _this setDir 242.3795;
-  _this setPos [4012.2109, 2902.4836, -1.1444092e-005];
-};
-
-_unit_40 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["RU_Doctor", [4016.8032, 2886.1382, 1.1444092e-005], [], 0, "CAN_COLLIDE"];
-  _unit_40 = _this;
-  _this setDir 31.899685;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
-};
-
-_unit_41 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["RU_Citizen4", [4013.5317, 2903.1396, 7.6293945e-006], [], 0, "CAN_COLLIDE"];
-  _unit_41 = _this;
-  _this setDir 457.09665;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (false) then {_group_1 selectLeader _this;};
 };
 
 _vehicle_279 = objNull;
@@ -519,17 +417,6 @@ if (true) then
   _vehicle_297 = _this;
   _this setDir 207.8909;
   _this setPos [4016.2471, 2883.8225, 2.2888184e-005];
-};
-
-_unit_54 = objNull;
-if (true) then
-{
-  _this = _group_1 createUnit ["Woodlander4", [4014.8953, 2893.4402, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
-  _unit_54 = _this;
-  _this setDir 426.29398;
-  _this setVehicleInit "this allowDammage false;this disableAI 'FSM';this disableAI 'MOVE';";
-  _this setUnitAbility 0.60000002;
-  if (true) then {_group_1 selectLeader _this;};
 };
 
 _vehicle_299 = objNull;
@@ -630,5 +517,3 @@ if (true) then
   _this setDir -19.630575;
   _this setPos [4022.6077, 2917.0369, 3.8146973e-006];
 };
-
-processInitCommands;

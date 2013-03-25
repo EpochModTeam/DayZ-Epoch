@@ -13,7 +13,11 @@ class Mission
 		"ca_modules_functions",
 		"warfarebuildings",
 		"ind_tank",
-		"camisc_e"
+		"camisc_e",
+		"glt_m300t",
+		"sigisolda",
+		"suv_col",
+		"csj_gyroac",
 	};
 	addOnsAuto[]=
 	{
@@ -1241,7 +1245,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=15;
 		class Item0
 		{
 			position[]={4008.2993,16.185383,3980.938};
@@ -1319,6 +1323,22 @@ class Mission
 			position[]={4700.2817,28.184851,5096.313};
 			name="spawn10";
 			type="Empty";
+		};
+		class Item13
+		{
+			position[]={3568.9497,27.889961,6816.1289};
+			name="HeroCamp";
+			text="FOB Haroo";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item14
+		{
+			position[]={4753.9204,64.943069,831.62354};
+			name="BanditCamp";
+			text="Old Firuz Baharv";
+			type="mil_circle";
+			colorName="ColorRed";
 		};
 	};
 };

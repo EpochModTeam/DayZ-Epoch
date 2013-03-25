@@ -24,8 +24,14 @@ class Mission
 		"cacharacters_pmc",
 		"ca_modules_functions",
 		"ibr_lingor",
+		"ibr_lcivilian_patch",
 		"chn_crocodile",
-		"warfarebuildings"
+		"warfarebuildings",
+		"ibr_lingor",
+		"glt_m300t",
+		"sigisolda",
+		"suv_col",
+		"csj_gyroac"
 	};
 	addOnsAuto[]=
 	{
@@ -37,8 +43,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Lingor DayZ_Epoch";
-		briefingDescription="Lingor DayZ_Epoch Private Server";
+		briefingName="lingor DayZ Epoch";
+		briefingDescription="lingor DayZ Epoch Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
@@ -1253,7 +1259,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=35;
 		class Item0
 		{
 			position[]={4078.8516,30.836605,4757.7241};
@@ -1332,12 +1338,191 @@ class Mission
 			name="spawn10";
 			type="Empty";
 		};
+		class Item13
+		{
+			position[]={6011.7676,13.080506,6626.9902};
+			name="RaceTrack";
+			text="Rommelo's Raceway";
+			type="mil_dot";
+			colorName="ColorBlack";
+			fillName="Border";
+			drawBorder=1;
+		};
+		class Item14
+		{
+			position[]={6539.8096,20.420567,6868.8203};
+			name="RepairGuy";
+			text="Axles Repair Shop";
+			type="mil_dot";
+			colorName="ColorYellow";
+		};
+		class Item15
+		{
+			position[]={7026.7695,11.873646,7105.6934};
+			name="PlaneVendor";
+			text="AWOL's Planes";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item16
+		{
+			position[]={3054.834,14.806208,8032.8389};
+			name="Wholesale";
+			text="Wholesaler Blivion";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item17
+		{
+			position[]={3608.7268,235.08131,3685.8149};
+			name="HighWeapons/ammo";
+			text="Jim and Joe's Weapons/Ammo";
+			type="mil_dot";
+			colorName="ColorOrange";
+		};
+		class Item18
+		{
+			position[]={4245.8931,46.366299,4486.48};
+			name="Parts";
+			text="Whiskey's Parts";
+			type="mil_dot";
+			colorName="ColorYellow";
+		};
+		class Item19
+		{
+			position[]={4033.0662,23.660297,1668.62};
+			name="Choppers";
+			text="Chip's Choppers";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item20
+		{
+			position[]={7553.0757,11.996795,3028.4924};
+			name="lowEndCars";
+			text="Used Cars";
+			type="mil_dot";
+			colorName="ColorBrown";
+		};
+		class Item21
+		{
+			position[]={7514.9941,10.998494,2953.7041};
+			name="LowEndWeapons";
+			text="Chuck and Buck's Weapons/Ammo";
+			type="mil_dot";
+			colorName="ColorOrange";
+		};
+		class Item22
+		{
+			position[]={3024.4265,45.493584,5956.77};
+			name="HighEndCars";
+			text="Green's Quality Cars";
+			type="mil_dot";
+			colorName="ColorBrown";
+		};
+		class Item23
+		{
+			position[]={895.26929,29.506145,5271.8955};
+			name="MedicalandBags";
+			text="Alejandria and Melly's Medica/Survival Shop";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item24
+		{
+			position[]={8357.583,23.403641,8740.0039};
+			name="Wholesaler";
+			text="Wholesaler Clive";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item25
+		{
+			position[]={4178.8506,12.651016,2342.1643};
+			name="BagsNFood";
+			text="Bag lady Gina";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item26
+		{
+			position[]={728.23462,41.254562,1571.2231};
+			name="Wholesalers";
+			text="Wholesaler Santos";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item27
+		{
+			position[]={1724.5925,42.225693,4137.6128};
+			name="DirtTrackVendor";
+			text="Adventure 4x4";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item28
+		{
+			position[]={2376.5916,56.990025,4120.5234};
+			name="OffRoad4x4";
+			text="MotoDrom 4x4 Offroad";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item29
+		{
+			position[]={4015.4907,4.2447982,5216.2656};
+			name="BoatVendor";
+			text="Big Bob's Boats";
+			type="mil_triangle";
+			colorName="ColorBlue";
+		};
+		class Item30
+		{
+			position[]={5523.2813,2.2458067,4412.8027};
+			name="BoatVendor1";
+			text="Juan's Tour Boats";
+			type="mil_triangle";
+			colorName="ColorBlue";
+		};
+		class Item31
+		{
+			position[]={3939.04,2.6928787,2199.4922};
+			name="BoatVendor2";
+			text="Jd's Armed boats";
+			type="mil_triangle";
+			colorName="ColorBlue";
+		};
+		class Item32
+		{
+			position[]={6673.0313,52.073902,6355.9775};
+			name="BagVendor1";
+			text="Stella's Stop";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item33
+		{
+			position[]={4238.8086,48.201847,4842.0874};
+			name="BagVendor2";
+			text="Samish Shop";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item34
+		{
+			position[]={6679.3359,26.402266,4296.9727};
+			name="Doctor2";
+			text="Mad Scientist";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
 	};
 };
 class Intro
 {
 	addOns[]=
 	{
+		"ibr_lingor",
 		"ibr_lingor"
 	};
 	addOnsAuto[]=
@@ -1360,6 +1545,7 @@ class OutroWin
 {
 	addOns[]=
 	{
+		"ibr_lingor",
 		"ibr_lingor"
 	};
 	addOnsAuto[]=
@@ -1382,6 +1568,7 @@ class OutroLoose
 {
 	addOns[]=
 	{
+		"ibr_lingor",
 		"ibr_lingor"
 	};
 	addOnsAuto[]=

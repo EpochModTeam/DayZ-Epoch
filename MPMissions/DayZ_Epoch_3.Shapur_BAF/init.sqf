@@ -25,7 +25,6 @@ MaxDynamicDebris = 50; // Default = 100
 dayz_MapArea = 2000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
-
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.1;
@@ -48,18 +47,16 @@ waitUntil {time > 3};
 
 if ((!isServer) && (player != player)) then
 {
-  waitUntil {player == player};
+  waitUntil {player == player}; 
   waitUntil {time > 3};
 };
 
 if (isServer) then {
-	
 	call compile preprocessFileLineNumbers "dynamic_vehicle.sqf";				//Compile vehicle configs
 	
 	// Add trader citys
 	_nil = [] execVM "mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
-	
 };
 
 if (!isDedicated) then {
@@ -71,4 +68,5 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
+	_void = [] execVM "R3F_Realism\R3F_Realism_Init.sqf";
 };

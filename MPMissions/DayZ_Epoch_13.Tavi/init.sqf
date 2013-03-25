@@ -20,11 +20,12 @@ enableRadio false;
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea = 1500; // Default = 1500
 MaxHeliCrashes= 5; // Default = 5
-MaxVehicleLimit = 250; // Default = 50
-MaxDynamicDebris = 250; // Default = 100
-dayz_MapArea = 12000; // Default = 10000
+MaxVehicleLimit = 300; // Default = 50
+MaxDynamicDebris = 500; // Default = 100
+dayz_MapArea = 20000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
+DZEdebug = true;
 
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
