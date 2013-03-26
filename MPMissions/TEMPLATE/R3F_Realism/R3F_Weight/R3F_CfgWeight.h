@@ -1242,19 +1242,11 @@ class CfgWeight
 		{
 			weight = 1;
 		};
-
-
-
-
 		class Skin_Rocket_DZ   
 		{
 			weight = 1;
 		};
 		class Skin_Soldier1_DZ   
-		{
-			weight = 1;
-		};
-		class Skin_Sniper1_DZ   
 		{
 			weight = 1;
 		};
@@ -1283,10 +1275,6 @@ class CfgWeight
 			weight = 1;
 		};
 		class Skin_Priest_DZ   
-		{
-			weight = 1;
-		};
-		class Skin_Sniper1_DZ   
 		{
 			weight = 1;
 		};
@@ -1359,11 +1347,6 @@ class CfgWeight
 			weight = 1;
 		};
 		
-
-
-
-
-
 		class HandRoadFlare 
 		{
 			weight = 0.1;
