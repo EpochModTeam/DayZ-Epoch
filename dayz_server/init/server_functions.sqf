@@ -248,7 +248,14 @@ spawn_vehicles = {
 				//place vehicle 
 				_veh = createVehicle [_vehicle, _position, [], 0, "CAN_COLLIDE"];
 				_veh setdir _dir;
-				_veh setpos _position;			
+				_veh setpos _position;		
+				
+				if(DZEdebug) then {
+					_marker = createMarker [str(_position) , _position];
+					_marker setMarkerShape "ICON";
+					_marker setMarkerType "DOT";
+					_marker setMarkerText _vehicle;
+				};	
 			
 				// Get position with ground
 				_objPosition = getPosATL _veh;
@@ -284,11 +291,12 @@ spawn_roadblocks = {
 			_istoomany = _position nearObjects ["All",5];
 		
 			if((count _istoomany) > 0) exitWith { diag_log("DEBUG: Too many at " + str(_position)); };
-		
-			//_marker = createMarker [str(_position) , _position];
-			//_marker setMarkerShape "ICON";
-			//_marker setMarkerType "DOT";
-			//_marker setMarkerText "ON";
+			
+			if(DZEdebug) then {
+				_marker = createMarker [str(_position) , _position];
+				_marker setMarkerShape "ICON";
+				_marker setMarkerType "DOT";
+			};
 		
 			waitUntil{!isNil "BIS_fnc_selectRandom"};
 			_spawnveh = _WreckList call BIS_fnc_selectRandom;
