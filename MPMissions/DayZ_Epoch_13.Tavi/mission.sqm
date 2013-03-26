@@ -17,7 +17,7 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac" 
+		"csj_gyroac"
 	};
 	addOnsAuto[]=
 	{
@@ -1245,7 +1245,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=12;
+		items=32;
 		class Item0
 		{
 			position[]={11785.905,300.77228,11060.094};
@@ -1317,6 +1317,166 @@ class Mission
 			position[]={18292.107,70.055626,7537.231};
 			name="spawn10";
 			type="Empty";
+		};
+		class Item12
+		{
+			position[]={11889.417,4,21023.301};
+			name="ArmedChoppers";
+			text="Pete's Armed Choppers";
+			type="mil_dot";
+			colorName="ColorOrange";
+		};
+		class Item13
+		{
+			position[]={8140.8579,182.22856,21315.977};
+			name="HighEndWeaponsAmmo";
+			text="Robby and Jacks Ammo/Weapons";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item14
+		{
+			position[]={10161.47,88.559937,18713.822};
+			name="UnarmedChopperF";
+			text="Hanz Unarmed Choppers";
+			type="mil_dot";
+			colorName="ColorOrange";
+		};
+		class Item15
+		{
+			position[]={10183.939,75.599411,18684.055};
+			name="RepairShopF1";
+			text="Scott's Repair Shop";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item16
+		{
+			position[]={14621.356,-0.29903007,18865.057};
+			name="BoatVendor1";
+			text="Capt. Yak";
+			type="mil_triangle";
+			colorName="ColorBlue";
+		};
+		class Item17
+		{
+			position[]={14976.129,20.700497,18411.604};
+			name="Wholesaler1";
+			text="Wholesaler Reynolds";
+			type="mil_box";
+			colorName="ColorBlack";
+		};
+		class Item18
+		{
+			position[]={10411.687,5.007,16857.264};
+			name="HeroVendor";
+			text="Chuck's Hero Shop";
+			type="Strongpoint";
+			colorName="ColorGreen";
+		};
+		class Item19
+		{
+			position[]={15097.365,38.066315,14809.885};
+			name="ArmedVehicles";
+			text="Tom's Armed Vehicles";
+			type="mil_dot";
+			colorName="ColorOrange";
+		};
+		class Item20
+		{
+			position[]={12482.204,105.82267,13885.04};
+			name="Doctor1";
+			text="Dr. Hammond";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item21
+		{
+			position[]={16149.238,39.333866,13584.271};
+			name="Doctor2";
+			text="Bones";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item22
+		{
+			position[]={16449.648,58.051521,11484.582};
+			name="PlaneVendor";
+			text="Murdock's Planes";
+			type="mil_dot";
+			colorName="ColorOrange";
+		};
+		class Item23
+		{
+			position[]={15309.642,14.993002,9376.416};
+			name="VehiclePartsVendors";
+			text="Sven and Slav's Parts/Vehicles";
+			type="mil_circle";
+			colorName="ColorOrange";
+		};
+		class Item24
+		{
+			position[]={13345.836,172.991,8617.3633};
+			name="GeneralSupplies";
+			text="Trin's Food/Water";
+			type="mil_dot";
+			colorName="ColorBrown";
+		};
+		class Item25
+		{
+			position[]={16445.291,174.31848,8331.085};
+			name="GeneralSupplies1";
+			text="Melissa's General Supplies";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item26
+		{
+			position[]={17577.686,177.15375,6392.5615};
+			name="Doctor3";
+			text="Dr. Vu";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item27
+		{
+			position[]={5573.3174,35.799999,8749.377};
+			name="BanditWeaponAmmo";
+			text="Gabe's and Cohaagen's Weapons/Ammo";
+			type="mil_circle";
+			colorName="ColorRed";
+		};
+		class Item28
+		{
+			position[]={3262.4954,4.9681244,8182.8096};
+			name="Armed Boats";
+			text="Chad's Armed Boats";
+			type="mil_dot";
+			colorName="ColorOrange";
+		};
+		class Item29
+		{
+			position[]={6991.436,70.179367,8303.6289};
+			name="BanditChoppersRepair";
+			text="Dante's and Javon's Choppers/Parts";
+			type="mil_circle";
+			colorName="ColorRed";
+		};
+		class Item30
+		{
+			position[]={3201.4695,34.2192,7553.8667};
+			name="GeneralSupplies3";
+			text="Mrs. Doubtfire";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item31
+		{
+			position[]={8807.9297,23.021162,2342.54};
+			name="Wholesaler2";
+			text="Wholesaler Darren";
+			type="mil_box";
+			colorName="ColorBlack";
 		};
 	};
 };
