@@ -53,6 +53,10 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 
 if(DZEdebug) then {
 	hint str(typeOf cursorTarget);
+
+	if (s_player_debuglootpos < 0) then {
+		s_player_debuglootpos = player addAction ["Save to arma2.rpt", "Make_lootPos.sqf", ["save"], 99, false, true, "",""];
+	};
 };
 
 if(_isPZombie) then {
