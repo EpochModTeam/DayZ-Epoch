@@ -55,7 +55,7 @@ if(DZEdebug) then {
 	hint str(typeOf cursorTarget);
 
 	if (s_player_debuglootpos < 0) then {
-		s_player_debuglootpos = player addAction ["Save to arma2.rpt", "Make_lootPos.sqf", ["save"], 99, false, true, "",""];
+		s_player_debuglootpos = player addAction ["Save to arma2.rpt", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["save"], 99, false, true, "",""];
 	};
 };
 
