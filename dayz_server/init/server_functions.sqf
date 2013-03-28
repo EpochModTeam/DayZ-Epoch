@@ -138,9 +138,6 @@ if(isnil "dayz_MapArea") then {
 if(isnil "DynamicVehicleArea") then {
 	DynamicVehicleArea = dayz_MapArea / 2;
 };
-if(isnil "HeliCrashArea") then {
-	HeliCrashArea = dayz_MapArea / 2;
-};
 
 // Get all buildings and roads only once TODO: set variables to nil after done if nessicary 
 MarkerPosition = getMarkerPos "center";

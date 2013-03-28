@@ -65,6 +65,9 @@ TradeInprogress = true;
 // _recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
 // ItemSalt
 
+// temp array of removed parts 
+_temp_removed_array = [];
+
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
@@ -137,32 +140,31 @@ if (_isFireNear >= 1 and _canDo) then {
 
 		if (_finished) then {
 
-			_removed = 0; // count total of removed items
+			_removed_total = 0; // count total of removed items
 			_tobe_removed_total = 0; // count total of all to be removed items
 			// Take items
 			{
+				_removed = 0;
 				_itemIn = _x select 0;
 				_countIn = _x select 1;
-				diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+				// diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
 				_tobe_removed_total = _tobe_removed_total + _countIn;
 
 				{					
 					if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
-					
-						// diag_log format["removing: %1 kindOf: %2", _x, _itemIn];
-					
-						// player removeMagazine _x;
 						_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
+						_removed_total = _removed_total + _removed;
+						_temp_removed_array set [count _temp_removed_array,_x];
 					};
 				
 				} forEach magazines player;
 			
 			} forEach _selectedRecipeInput;
 		
-			diag_log format["removing: %1 kindOf: %2", _removed, _tobe_removed_total];
+			diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
 
 			// Only proceed if all parts were removed successfully
-			if(_removed == _tobe_removed_total) then {
+			if(_removed_total == _tobe_removed_total) then {
 
 				// Put items
 				{
@@ -183,7 +185,10 @@ if (_isFireNear >= 1 and _canDo) then {
 				} forEach _selectedRecipeOutput;
 
 			} else {
-				cutText [format["Missing Parts after first check Item: %1 / %2",_removed,_tobe_removed_total], "PLAIN DOWN"];
+				// Refund parts since we failed 
+				{player addMagazine _x;} forEach _temp_removed_array;
+				
+				cutText [format["Missing Parts after first check Item: %1 / %2",_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 			};
 
 		} else {

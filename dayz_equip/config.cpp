@@ -1275,6 +1275,14 @@ class CfgMagazines
 				require = "ItemToolbox";
 				create = "WoodGate_DZ";
 			};
+			class Crafting
+			{
+				text = "Craft Arrows";
+				script = "spawn player_craftItem;";
+				output[] = {{"WoodenArrow",3}};
+				input[] = {{"PartWoodPile",1},{"ItemTrashRazor",1}};
+				
+			};
 		};
 	};
 	class PartVRotor: CA_Magazine

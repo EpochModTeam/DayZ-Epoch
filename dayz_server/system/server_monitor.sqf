@@ -258,6 +258,13 @@ for "_x" from 1 to MaxDynamicDebris do {
 
 allowConnection = true;
 
+if(isnil "dayz_MapArea") then {
+	dayz_MapArea = 10000;
+};
+if(isnil "HeliCrashArea") then {
+	HeliCrashArea = dayz_MapArea / 2;
+};
+
 // [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
-nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;
+nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', HeliCrashArea, true, false] spawn server_spawnCrashSite;
 
