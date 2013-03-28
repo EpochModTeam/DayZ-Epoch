@@ -199,6 +199,15 @@ if (true) then
   _this setPos [508.49933, 1096.7793, 3.8146973e-006];
 };
 
+_vehicle_139 = objNull;
+if (true) then
+{
+  _this = createVehicle ["ShootingRange_ACR", [464.41138, 1088.8826], [], 0, "CAN_COLLIDE"];
+  _vehicle_139 = _this;
+  _this setDir 163.60194;
+  _this setPos [464.41138, 1088.8826];
+};
+
 _vehicle_143 = objNull;
 if (true) then
 {
@@ -217,6 +226,15 @@ if (true) then
   _this setPos [465.18674, 1095.3278, 2.2888184e-005];
 };
 
+_vehicle_157 = objNull;
+if (true) then
+{
+  _this = createVehicle ["TargetPopup_ACR", [330.98611, 1041.3842, 1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_157 = _this;
+  _this setDir -107.06186;
+  _this setPos [330.98611, 1041.3842, 1.9073486e-006];
+};
+
 _vehicle_160 = objNull;
 if (true) then
 {
@@ -224,6 +242,15 @@ if (true) then
   _vehicle_160 = _this;
   _this setDir 172.56075;
   _this setPos [468.33167, 1086.3636, 3.8146973e-006];
+};
+
+_vehicle_166 = objNull;
+if (true) then
+{
+  _this = createVehicle ["TargetPopup_ACR", [385.03134, 1062.3904, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_166 = _this;
+  _this setDir -107.06186;
+  _this setPos [385.03134, 1062.3904, 3.8146973e-006];
 };
 
 _vehicle_170 = objNull;
@@ -276,7 +303,6 @@ if (true) then
   _this setPos [506.37302, 1117.0841, 7.6293945e-006];
 };
 
-
 _vehicle_189 = objNull;
 if (true) then
 {
@@ -284,6 +310,24 @@ if (true) then
   _vehicle_189 = _this;
   _this setDir -87.829948;
   _this setPos [485.03888, 1081.0292, -1.9073486e-006];
+};
+
+_vehicle_198 = objNull;
+if (true) then
+{
+  _this = createVehicle ["ACRE_RadioBox", [470.888, 1112.5718, -1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_198 = _this;
+  _this setDir 144.19466;
+  _this setPos [470.888, 1112.5718, -1.9073486e-006];
+};
+
+_vehicle_199 = objNull;
+if (true) then
+{
+  _this = createVehicle ["ACRE_OE_303", [469.99954, 1110.0946, 9.5367432e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_199 = _this;
+  _this setDir 35.181255;
+  _this setPos [469.99954, 1110.0946, 9.5367432e-006];
 };
 
 _vehicle_201 = objNull;
@@ -394,6 +438,15 @@ if (true) then
   _this setPos [464.0036, 1088.788, 1.7166138e-005];
 };
 
+_vehicle_239 = objNull;
+if (true) then
+{
+  _this = createVehicle ["TargetPopup_ACR", [267.32697, 1015.8035, 1.1444092e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_239 = _this;
+  _this setDir -107.06186;
+  _this setPos [267.32697, 1015.8035, 1.1444092e-005];
+};
+
 _vehicle_241 = objNull;
 if (true) then
 {
@@ -473,6 +526,16 @@ if (true) then
   _vehicle_257 = _this;
   _this setDir 62.620384;
   _this setPos [496.07706, 1082.6115, 7.6293945e-006];
+};
+
+_vehicle_258 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Info_Board_EP1", [505.83868, 1119.9965], [], 0, "CAN_COLLIDE"];
+  _vehicle_258 = _this;
+  _this setDir 40.265949;
+  _this setVehicleInit "this allowDamage false;";
+  _this setPos [505.83868, 1119.9965];
 };
 
 processInitCommands;
