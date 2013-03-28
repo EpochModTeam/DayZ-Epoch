@@ -199,28 +199,28 @@ if (true) then
 _vehicle_178 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_GuardShed", [4017.2102, 2885.5955, 4.5776367e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_GuardShed", [4016.9031, 2885.6904, 4.5776367e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_178 = _this;
   _this setDir 208.17784;
-  _this setPos [4017.2102, 2885.5955, 4.5776367e-005];
+  _this setPos [4016.9031, 2885.6904, 4.5776367e-005];
 };
 
 _vehicle_187 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Axe_woodblock", [4012.8875, 2897.125, 1.1444092e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Axe_woodblock", [4012.2336, 2895.1296, 1.1444092e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_187 = _this;
   _this setDir 400.72034;
-  _this setPos [4012.8875, 2897.125, 1.1444092e-005];
+  _this setPos [4012.2336, 2895.1296, 1.1444092e-005];
 };
 
 _vehicle_188 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Pile_of_wood", [4011.3523, 2898.5742, 2.2888184e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Pile_of_wood", [4011.396, 2898.5566, 2.2888184e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_188 = _this;
   _this setDir 356.23578;
-  _this setPos [4011.3523, 2898.5742, 2.2888184e-005];
+  _this setPos [4011.396, 2898.5566, 2.2888184e-005];
 };
 
 _vehicle_195 = objNull;
@@ -345,6 +345,15 @@ if (true) then
   _this = createVehicle ["USMC_WarfareBContructionSite", [3985.821, 2811.6047, 2.5510788e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_260 = _this;
   _this setPos [3985.821, 2811.6047, 2.5510788e-005];
+};
+
+_vehicle_261 = objNull;
+if (true) then
+{
+  _this = createVehicle ["VaultStorageLocked", [4012.2109, 2902.4836, -1.1444092e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_261 = _this;
+  _this setDir 242.3795;
+  _this setPos [4012.2109, 2902.4836, -1.1444092e-005];
 };
 
 _vehicle_279 = objNull;
@@ -517,3 +526,15 @@ if (true) then
   _this setDir -19.630575;
   _this setPos [4022.6077, 2917.0369, 3.8146973e-006];
 };
+
+_vehicle_336 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Info_Board_EP1", [4012.7329, 2897.3052, -5.7220459e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_336 = _this;
+  _this setDir 262.48877;
+  _this setVehicleInit "this allowDamage false;";
+  _this setPos [4012.7329, 2897.3052, -5.7220459e-006];
+};
+
+processInitCommands;

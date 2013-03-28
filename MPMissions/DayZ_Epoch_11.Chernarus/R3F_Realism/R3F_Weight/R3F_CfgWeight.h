@@ -472,7 +472,10 @@ class CfgWeight
 		{
 			weight = 0.3;
 		};
-		
+		class AKS_GOLD
+		{
+			weight = 4.0;
+		};
 		class AKS_74
 		{
 			weight = 2.7;
@@ -1098,6 +1101,30 @@ class CfgWeight
 		{
 			weight = 0.2;
 		};
+		class FoodCanUnlabeled
+		{
+			weight = 0.2;
+		};
+
+
+
+		class FoodMRE
+		{
+			weight = 0.4;
+		};
+		class FoodPistachio
+		{
+			weight = 0.003;
+		};
+		class FoodNutmix
+		{
+			weight = 0.003;
+		};
+
+
+
+
+
 		class FoodSteakCooked
 		{
 			weight = 0.25;
@@ -1185,6 +1212,10 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		class ItemCrowbar  
+		{
+			weight = 1;
+		};
 		class ItemMatchbox  
 		{
 			weight = 0.005;
@@ -1211,6 +1242,110 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		class Skin_Rocket_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Soldier1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_RU_Policeman_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Pilot_EP1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Haris_Press_EP1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Ins_Soldier_GL_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_GUE_Commander_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Functionary1_EP1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Priest_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Rocker2_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Bandit1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_BanditW1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_BanditW2_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_SurvivorW2_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_SurvivorWpink_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_SurvivorWcombat_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_SurvivorWdesert_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_SurvivorWurban_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_SurvivorW3_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Soldier_TL_PMC_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Soldier_Sniper_PMC_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Soldier_Bodyguard_AA12_PMC_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Drake_Light_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_CZ_Special_Forces_GL_DES_EP1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_TK_INS_Soldier_EP1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_TK_INS_Warlord_EP1_DZ   
+		{
+			weight = 1;
+		};
 		
 		class HandRoadFlare 
 		{
@@ -1228,13 +1363,15 @@ class CfgWeight
 		{
 			weight = 0.1;
 		};
-		
 		class ItemBandage 
 		{
 			weight = 0.005;
 		};
-		
 		class Hatchet_Swing 
+		{
+			weight = 0;
+		};
+		class Machete_Swing 
 		{
 			weight = 0;
 		};
@@ -1242,12 +1379,10 @@ class CfgWeight
 		{
 			weight = 0;
 		};
-		 
 		class ItemVault 
 		{
 			weight = 100; 
 		};
-		
 		class PartWoodPile 
 		{
 			weight = 0.5;
@@ -1348,10 +1483,31 @@ class CfgWeight
 		{
 			weight = 0.08;
 		};
+		class WoodenArrow 
+		{
+			weight = 0.02;
+		};
+		class Quiver 
+		{
+			weight = 0.08;
+		};
 		class TrashTinCan 
 		{
 			weight = 0.003;
 		};
+		class FoodCanUnlabeledEmpty 
+		{
+			weight = 0.003;
+		};
+		class ItemTrashRazor 
+		{
+			weight = 0.003;
+		};
+		class ItemTrashToiletpaper 
+		{
+			weight = 0.001;
+		};
+		
 		class 7Rnd_45ACP_1911 
 		{
 			weight = 0.02;
@@ -1373,6 +1529,18 @@ class CfgWeight
 			weight = 0.05;
 		};
 		class ItemSodaEmpty 
+		{
+			weight = 0.002;
+		};
+		class ItemSodaCokeEmpty 
+		{
+			weight = 0.002;
+		};
+		class ItemSodaPepsiEmpty 
+		{
+			weight = 0.002;
+		};
+		class ItemSodaMdewEmpty 
 		{
 			weight = 0.002;
 		};

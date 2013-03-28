@@ -1168,7 +1168,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=15;
 		class Item0
 		{
 			position[]={7550.6182,361.05222,8371.957};
@@ -1258,6 +1258,22 @@ class Mission
 			text="Wholesaler";
 			type="mil_dot";
 			colorName="ColorRed";
+		};
+		class Item13
+		{
+			position[]={12466.402,159,12524.384};
+			name="Airplane Dealer";
+			text="Airplane Dealer";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item14
+		{
+			position[]={13404.516,1.8943386,2836.1069};
+			name="Boat Dealer";
+			text="Boat Dealer";
+			type="mil_dot";
+			colorName="ColorOrange";
 		};
 	};
 	class Sensors

@@ -1,6 +1,6 @@
 // DayZ Epoch TRADERS for 11
-serverTraders = ["CIV_EuroMan01_EP1","Rocker4","Woodlander3","Woodlander1","RU_WorkWoman1","RU_WorkWoman5","Rita_Ensler_EP1","CIV_EuroMan02_EP1","RU_Citizen3","Pilot_EP1","Worker3","Profiteer4","Dr_Hladik_EP1","Doctor","RU_Functionary1","RU_Villager3","TK_CIV_Takistani04_EP1","RU_Citizen4","RU_Citizen1"];
-// START PER TRADER CONFIG
+serverTraders = ["CIV_EuroMan01_EP1","Rocker4","Woodlander3","Woodlander1","RU_WorkWoman1","RU_WorkWoman5","Rita_Ensler_EP1","CIV_EuroMan02_EP1","RU_Citizen3","Pilot_EP1","Worker3","Profiteer4","Dr_Hladik_EP1","Doctor","RU_Functionary1","RU_Villager3","TK_CIV_Takistani04_EP1","RU_Citizen4","RU_Citizen1","Worker2"];
+		// START PER TRADER CONFIG
 // Weapons Trader - Bash
 menu_CIV_EuroMan01_EP1 = [
 	[["Sidearm",1],["Rifles",2],["Shotguns and Crossbows",3]],
@@ -87,7 +87,7 @@ menu_Doctor = [
 ];
 // Hero Traders
 menu_RU_Functionary1 = [
-	[["Clothes",53]],
+	[["Clothes",53],["Weapons",186],["Vehicles",187]],
 	[],
 	"friendly"
 ];
@@ -112,6 +112,12 @@ menu_RU_Citizen4 = [
 // Wholesaler - Balota
 menu_RU_Citizen1 = [
 	[["Wholesale",62]],
+	[],
+	"neutral"
+];
+// Airplane Dealer
+menu_Worker2 = [
+	[["Airplanes",303]],
 	[],
 	"neutral"
 ];

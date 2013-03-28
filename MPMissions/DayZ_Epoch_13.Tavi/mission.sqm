@@ -29,8 +29,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="tavi DayZ_Epoch";
-		briefingDescription="tavi DayZ_Epoch Private Server";
+		briefingName="Taviana DayZ_Epoch";
+		briefingDescription="Taviana DayZ_Epoch Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
@@ -1260,61 +1260,61 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={17587.729,206.90927,4952.0513};
+			position[]={18350.172,41.921146,4901.4009};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={9093.4707,33.920578,2614.3794};
+			position[]={15851.949,0.61670142,13122.187};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={15954.211,19.612961,15847.49};
+			position[]={16045.784,6.8227205,16122.401};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={13560.766,32.488033,19300.455};
+			position[]={11750.324,7.7436366,19052.457};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={17743.729,255.98103,10299.182};
+			position[]={7755.6416,33.006847,22267.805};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={15245.996,56.273598,17424.979};
+			position[]={17099.744,8.0088444,12710.068};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={16674.049,52.588493,13930.056};
+			position[]={15049.569,13.219341,11967.482};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={7365.3076,34.6604,4310.7524};
+			position[]={18494.441,18.122959,6604.2773};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={11071.163,26.273504,1064.1593};
+			position[]={14219.854,3.9481196,19232.398};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={18292.107,70.055626,7537.231};
+			position[]={16015.399,3.9154196,11679.694};
 			name="spawn10";
 			type="Empty";
 		};
@@ -1344,21 +1344,13 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={10183.939,75.599411,18684.055};
-			name="RepairShopF1";
-			text="Scott's Repair Shop";
-			type="Empty";
-			colorName="ColorYellow";
-		};
-		class Item16
-		{
 			position[]={14621.356,-0.29903007,18865.057};
 			name="BoatVendor1";
 			text="Capt. Yak";
 			type="mil_triangle";
 			colorName="ColorBlue";
 		};
-		class Item17
+		class Item16
 		{
 			position[]={14976.129,20.700497,18411.604};
 			name="Wholesaler1";
@@ -1366,7 +1358,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorBlack";
 		};
-		class Item18
+		class Item17
 		{
 			position[]={10411.687,5.007,16857.264};
 			name="HeroVendor";
@@ -1374,7 +1366,7 @@ class Mission
 			type="Strongpoint";
 			colorName="ColorGreen";
 		};
-		class Item19
+		class Item18
 		{
 			position[]={15097.365,38.066315,14809.885};
 			name="ArmedVehicles";
@@ -1382,7 +1374,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorOrange";
 		};
-		class Item20
+		class Item19
 		{
 			position[]={12482.204,105.82267,13885.04};
 			name="Doctor1";
@@ -1390,7 +1382,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item21
+		class Item20
 		{
 			position[]={16149.238,39.333866,13584.271};
 			name="Doctor2";
@@ -1398,7 +1390,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item22
+		class Item21
 		{
 			position[]={16449.648,58.051521,11484.582};
 			name="PlaneVendor";
@@ -1406,7 +1398,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorOrange";
 		};
-		class Item23
+		class Item22
 		{
 			position[]={15309.642,14.993002,9376.416};
 			name="VehiclePartsVendors";
@@ -1414,7 +1406,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorOrange";
 		};
-		class Item24
+		class Item23
 		{
 			position[]={13345.836,172.991,8617.3633};
 			name="GeneralSupplies";
@@ -1422,7 +1414,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBrown";
 		};
-		class Item25
+		class Item24
 		{
 			position[]={16445.291,174.31848,8331.085};
 			name="GeneralSupplies1";
@@ -1430,7 +1422,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item26
+		class Item25
 		{
 			position[]={17577.686,177.15375,6392.5615};
 			name="Doctor3";
@@ -1438,7 +1430,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item27
+		class Item26
 		{
 			position[]={5573.3174,35.799999,8749.377};
 			name="BanditWeaponAmmo";
@@ -1446,7 +1438,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorRed";
 		};
-		class Item28
+		class Item27
 		{
 			position[]={3262.4954,4.9681244,8182.8096};
 			name="Armed Boats";
@@ -1454,7 +1446,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorOrange";
 		};
-		class Item29
+		class Item28
 		{
 			position[]={6991.436,70.179367,8303.6289};
 			name="BanditChoppersRepair";
@@ -1462,7 +1454,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorRed";
 		};
-		class Item30
+		class Item29
 		{
 			position[]={3201.4695,34.2192,7553.8667};
 			name="GeneralSupplies3";
@@ -1470,13 +1462,21 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item31
+		class Item30
 		{
 			position[]={8807.9297,23.021162,2342.54};
 			name="Wholesaler2";
 			text="Wholesaler Darren";
 			type="mil_box";
 			colorName="ColorBlack";
+		};
+		class Item31
+		{
+			position[]={10188.604,75.686981,18675.205};
+			name="RepairShop";
+			text="Scott's Repair Shop";
+			type="mil_dot";
+			colorName="ColorGreen";
 		};
 	};
 };

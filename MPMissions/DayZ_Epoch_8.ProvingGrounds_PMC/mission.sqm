@@ -11,7 +11,11 @@ class Mission
 		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
-		"warfarebuildings"
+		"warfarebuildings",
+		"glt_m300t",
+		"sigisolda",
+		"suv_col",
+		"csj_gyroac"
 	};
 	addOnsAuto[]=
 	{
