@@ -2,7 +2,7 @@
 * Crafting by [VB]AWOL
 * 	usage: spawn player_craftitem;
 */
-private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_text","_id","_textMissing","_selectedRecipeInput"];
+private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_id","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_isFireNear"];
 
 if(TradeInprogress) exitWith { cutText ["Crafting already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -152,9 +152,12 @@ if (_isFireNear >= 1 and _canDo) then {
 
 				{					
 					if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
-						_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
-						_removed_total = _removed_total + _removed;
-						_temp_removed_array set [count _temp_removed_array,_x];
+						_num_removed = ([player,_x] call BIS_fnc_invRemove);
+						_removed = _removed + _num_removed;
+						_removed_total = _removed_total + _num_removed;
+						if(_num_removed >= 1) then {
+							_temp_removed_array set [count _temp_removed_array,_x];
+						};
 					};
 				
 				} forEach magazines player;
