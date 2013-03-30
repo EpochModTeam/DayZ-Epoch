@@ -396,7 +396,20 @@ class CfgSurvival {
 			playerModel = "TK_INS_Warlord_EP1_DZ";
 		};
 		
-
+    // -- addition by Carve
+    class Skin_CamoWinter_DZN: Default {
+			sex = "male";
+			playerModel = "CamoWinter_DZN";
+		};
+    class Skin_CamoWinterW_DZN: Default {
+			sex = "male";
+			playerModel = "CamoWinterW_DZN";
+		};
+    class Skin_Sniper1W_DZN: Default {
+			sex = "male";
+			playerModel = "Sniper1W_DZN";
+		};
+    // -- end additions
 
 	};
 };

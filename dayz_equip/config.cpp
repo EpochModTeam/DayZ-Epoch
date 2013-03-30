@@ -1180,8 +1180,27 @@ class CfgMagazines
 		displayName = "Team Leader";
 		descriptionShort = "Team Leader";
 	};
-	
-	
+  
+	// -- additions by Carve
+  class Skin_CamoWinter_DZN: SkinBase
+	{
+		scope = 2;
+		displayName = "Warm Clothes";
+		descriptionShort = "Warm Clothes";
+	};
+  class Skin_CamoWinterW_DZN: SkinBase
+	{
+		scope = 2;
+		displayName = "Warm Winter Clothes";
+		descriptionShort = "Warm Winter Clothes";
+	};
+  class Skin_Sniper1W_DZN: SkinBase
+	{
+		scope = 2;
+		displayName = "Snow Ghillie";
+		descriptionShort = "Snow Ghillie";
+	};
+  // -- end additions
 	
 	class Skin_Camo1_DZ: SkinBase
 	{
