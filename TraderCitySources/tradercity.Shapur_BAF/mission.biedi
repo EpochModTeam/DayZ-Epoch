@@ -813,6 +813,18 @@ class _vehicle_257
 		PARENT="";
 	};
 };
+class _vehicle_258
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[505.83868, 1119.9965]";
+		TYPE="Info_Board_EP1";
+		AZIMUT="40.265949";
+		INIT="this allowDamage false;";
+		PARENT="";
+	};
+};
 class _postfix_0
 {
 	objectType="postfix";

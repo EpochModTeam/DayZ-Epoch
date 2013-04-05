@@ -269,7 +269,7 @@ class _vehicle_178
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4017.2102, 2885.5955, 4.5776367e-005]";
+		POSITION="[4016.9031, 2885.6904, 4.5776367e-005]";
 		TYPE="Land_GuardShed";
 		AZIMUT="208.17784";
 		PARENT="";
@@ -280,7 +280,7 @@ class _vehicle_187
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4012.8875, 2897.125, 1.1444092e-005]";
+		POSITION="[4012.2336, 2895.1296, 1.1444092e-005]";
 		TYPE="Axe_woodblock";
 		AZIMUT="400.72034";
 		PARENT="";
@@ -291,7 +291,7 @@ class _vehicle_188
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4011.3523, 2898.5742, 2.2888184e-005]";
+		POSITION="[4011.396, 2898.5566, 2.2888184e-005]";
 		TYPE="Pile_of_wood";
 		AZIMUT="356.23578";
 		PARENT="";
@@ -814,6 +814,18 @@ class _vehicle_335
 		POSITION="[4022.6077, 2917.0369, 3.8146973e-006]";
 		TYPE="T72Wreck";
 		AZIMUT="-19.630575";
+		PARENT="";
+	};
+};
+class _vehicle_336
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[4012.7329, 2897.3052, -5.7220459e-006]";
+		TYPE="Info_Board_EP1";
+		AZIMUT="262.48877";
+		INIT="this allowDamage false;";
 		PARENT="";
 	};
 };
