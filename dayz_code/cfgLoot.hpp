@@ -339,4 +339,77 @@ class CfgLoot {
 			0.01
 		}
 	};
+
+	clothes[] = {
+		{
+			"Skin_RU_Policeman_DZ",
+			"Skin_Pilot_EP1_DZ",
+			"Skin_Functionary1_EP1_DZ",
+			"Skin_Priest_DZ",
+			"Skin_Rocker2_DZ",
+			"Skin_SurvivorW3_DZ",
+			"Skin_SurvivorWpink_DZ",
+			"Skin_SurvivorWurban_DZ",
+		},
+		{
+			0.01,
+			0.02,
+			0.03,
+			0.02,
+			0.02,
+			0.05,
+			0.02,
+			0.01,
+		}
+	};
+	militaryclothes[] = {
+		{
+			"Skin_Camo1_DZ",
+			"Skin_Sniper1_DZ",
+			"Skin_Rocket_DZ",
+			"Skin_Soldier1_DZ",
+			"Skin_Drake_Light_DZ",
+			"Skin_Soldier_TL_PMC_DZ",
+			"Skin_Soldier_Sniper_PMC_DZ",
+			"Skin_Soldier_Bodyguard_AA12_PMC_DZ",
+			"Skin_CZ_Special_Forces_GL_DES_EP1_DZ",
+		},
+		{
+			0.03, // "Skin_Camo1_DZ",
+			0.02, // "Skin_Sniper1_DZ",
+			0.03, // "Skin_Rocket_DZ",
+			0.05, // "Skin_Soldier1_DZ",
+			0.01, // "Skin_Drake_Light_DZ"
+			0.02, // Skin_Soldier_TL_PMC_DZ
+			0.02, // Skin_Soldier_Sniper_PMC_DZ
+			0.02, // Skin_Soldier_Bodyguard_AA12_PMC_DZ
+			0.02, // Skin_CZ_Special_Forces_GL_DES_EP1_DZ
+		}
+	};
+	specialclothes[] = {
+		{
+			"Skin_Ins_Soldier_GL_DZ",
+			"Skin_GUE_Commander_DZ",
+			"Skin_Bandit1_DZ",
+			"Skin_Bandit2_DZ",
+			"Skin_BanditW1_DZ",
+			"Skin_BanditW2_DZ",
+			"Skin_TK_INS_Soldier_EP1_DZ",
+			"Skin_TK_INS_Warlord_EP1",
+			"Skin_SurvivorWcombat_DZ",
+			"Skin_SurvivorWdesert_DZ",
+		},
+		{
+			0.01, //"Skin_Ins_Soldier_GL_DZ",
+			0.01, //"Skin_GUE_Commander_DZ",
+			0.05, //"Skin_Bandit1_DZ",
+			0.02, //"Skin_Bandit2_DZ",
+			0.05, //"Skin_BanditW1_DZ",
+			0.03, //"Skin_BanditW2_DZ",
+			0.01, //"Skin_TK_INS_Soldier_EP1_DZ",
+			0.01, //"Skin_TK_INS_Warlord_EP1",
+			0.01, //"Skin_SurvivorWcombat_DZ",
+			0.03, //"Skin_SurvivorWdesert_DZ",
+		}
+	};
 };

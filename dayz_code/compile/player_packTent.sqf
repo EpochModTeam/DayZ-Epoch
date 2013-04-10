@@ -1,7 +1,7 @@
 /*
 [_obj] spawn player_packTent;
 */
-private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
+private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -28,10 +28,15 @@ if(_ownerID == dayz_characterID) then {
 	
 	sleep 3;
 
+	_classname = 	getText (configFile >> "CfgMagazines" >> (typeOf_obj) >> "create");
+
+	_location = _pos;
+
 	//place tent (local)
-	_bag = createVehicle ["WeaponHolder_ItemTent",_pos,[], 0, "CAN_COLLIDE"];
-	_bag setdir _dir;
-	player reveal _bag;
+	//_bag = createVehicle ["WeaponHolder_ItemTent",_pos,[], 0, "CAN_COLLIDE"];
+	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+	_object setdir _dir;
+	player reveal _object;
 	
 	_holder = "WeaponHolder" createVehicle _pos; 
 	

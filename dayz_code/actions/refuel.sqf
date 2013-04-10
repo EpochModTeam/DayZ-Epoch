@@ -28,7 +28,7 @@ for "_x" from 1 to _refuelQty do {
 	_fillCounter = _fillCounter + 1;
 
 	if(_refuelQty == 1) then {
-		cutText ["Preparing to refuel, stand still to fill empty jerry can.", "PLAIN DOWN"];
+		cutText ["Preparing to refuel, stand still to drain full jerry can.", "PLAIN DOWN"];
 	} else {
 		cutText [format[("Preparing to refuel, stand still to drain full jerry can %1 of %2."),_fillCounter,_refuelQty] , "PLAIN DOWN"];
 	};
@@ -39,35 +39,49 @@ for "_x" from 1 to _refuelQty do {
 	[player,"refuel",0,false] call dayz_zombieSpeak;
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
 
-	r_interrupt = false;
-	_animState = animationState player;
-	r_doLoop = true;
-	_started = false;
-	_finished = false;
-	
-	while {r_doLoop} do {
+	if(!dayz_isSwimming) then {
+
+		r_interrupt = false;
 		_animState = animationState player;
-		_isMedic = ["medic",_animState] call fnc_inString;
-		if (_isMedic) then {
-			_started = true;
+		r_doLoop = true;
+		_started = false;
+		_finished = false;
+	
+		while {r_doLoop} do {
+			_animState = animationState player;
+			_isMedic = ["medic",_animState] call fnc_inString;
+			if (_isMedic) then {
+				_started = true;
+			};
+			if (_started and !_isMedic) then {
+				r_doLoop = false;
+				_finished = true;
+			};
+			if (r_interrupt) then {
+				r_doLoop = false;
+			};
+			sleep 0.1;
 		};
-		if (_started and !_isMedic) then {
-			r_doLoop = false;
+		r_doLoop = false;
+
+		if (!_finished) exitWith { 
+			r_interrupt = false;
+			[objNull, player, rSwitchMove,""] call RE;
+			player playActionNow "stop";
+			cutText ["Canceled refuel." , "PLAIN DOWN"];
+			_abort = true;
+		};
+	} else {
+		// Alternate method in water make sure player stays in one spot for 6 seconds
+		_location1 = getPosATL player;
+		sleep 6;
+		_location2 = getPosATL player;
+
+		if(_location1 distance _location2 > 0.1) then {
+			_finished = false;
+		} else {
 			_finished = true;
 		};
-		if (r_interrupt) then {
-			r_doLoop = false;
-		};
-		sleep 0.1;
-	};
-	r_doLoop = false;
-
-	if (!_finished) exitWith { 
-		r_interrupt = false;
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
-		cutText ["Canceled refuel." , "PLAIN DOWN"];
-		_abort = true;
 	};
 
 	if (_finished) then {
@@ -76,6 +90,11 @@ for "_x" from 1 to _refuelQty do {
 
 			player removeMagazine "ItemJerrycan";
 			player addMagazine "ItemJerrycanEmpty";
+
+			// Get fuel levels again to prevent wasted gas from others filling
+			_curFuel = 		((fuel _vehicle) * _capacity);
+			_newFuel = 		(_curFuel + _canSize);
+			_newFuel =		(_newFuel / _capacity);
 
 			dayzSetFuel = [_vehicle,_newFuel];
 			publicVariable "dayzSetFuel";

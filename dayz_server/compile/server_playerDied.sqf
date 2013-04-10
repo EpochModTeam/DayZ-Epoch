@@ -29,13 +29,23 @@ if (_killerName != "nil") then
 	}
 	else 
 	{
-		_message = format["%1 was killed by %2 with weapon %3",_victimName, _killerName, _weapon];
+		_message = format["%1 was killed by %2 with weapon %3 from %4m",_victimName, _killerName, _weapon, _distance];
 		_loc_message = format["PKILL: %1 was killed by %2 with weapon %3 from %4m", _victimName, _killerName, _weapon, _distance];
 	};
 
 	diag_log _loc_message;
-	// [nil, nil, rspawn, [_killer, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
-	// [nil, nil, rHINT, _message] call RE;
+	if(DZE_DeathMsgGlobal) then {
+		[nil, nil, rspawn, [_killer, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
+	};
+	if(DZE_DeathMsgSide) then {
+		[nil, nil, rspawn, [_killer, _message], { (_this select 0) sideChat (_this select 1) }] call RE;
+	};
+	if(DZE_DeathMsgTitleTextLocal) then {
+		[nil,nil,"loc",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
+	};
+	if(DZE_DeathMsgTitleText) then {
+		[nil,nil,"per",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
+	};
 
 	// build array to store death messages to allow viewing at message board in trader citys.
 	PlayerDeaths set [count PlayerDeaths,_message];

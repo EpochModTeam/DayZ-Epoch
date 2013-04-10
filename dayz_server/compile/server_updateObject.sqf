@@ -8,7 +8,6 @@ _type = 	_this select 1;
 _parachuteWest = typeOf _object == "ParachuteWest";
 _isNotOk = false;
 _firstTime = false;
-_removeCounter = 0;
 
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
@@ -33,12 +32,14 @@ if (!_parachuteWest) then {
 
 			// Loop to wait it out
 			_counter = _object getVariable ["markedForRemoval","0"];
-			_removeCounter = _object setVariable ["markedForRemoval",(_counter + 1)]; 
+			
+			_removeCounter = _counter + 1; 
+			_object setVariable ["markedForRemoval",(_counter + 1)]; 
 	};
 };
 
-if (_isNotOk and _removeCounter < 10) exitWith { diag_log(format["About to remove vehicle: %1 - %2 / 10", typeOf _object, _removeCounter]); };
-if (_isNotOk and _removeCounter >= 10) exitWith { deleteVehicle _object; };
+if (_isNotOk and _removeCounter < 5) exitWith { diag_log(format["About to remove vehicle: %1 - %2 / 10", typeOf _object, _removeCounter]); };
+if (_isNotOk and _removeCounter >= 5) exitWith { deleteVehicle _object; };
 
 
 _lastUpdate = _object getVariable ["lastUpdate",time];

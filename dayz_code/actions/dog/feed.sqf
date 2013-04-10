@@ -10,10 +10,20 @@ player playActionNow "PutDown";
 
 switch (_type) do {
 	case 0: {
-		player removeMagazine "FoodSteakRaw";
-		_handle setFSMVariable ["_hunger",0];
-		player removeAction s_player_feeddog;
-		s_player_feeddog = -1;
+		// expanded to allow all meats as input
+		_removed = 0;
+		_itemIn = "FoodmeatRaw";
+		_countIn = 1;
+		{					
+			if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
+				_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
+			};
+		} forEach magazines player;
+		if(_removed == _countIn) then {
+			_handle setFSMVariable ["_hunger",0];
+			player removeAction s_player_feeddog;
+			s_player_feeddog = -1;
+		};
 
 	};
 	case 1: {

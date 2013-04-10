@@ -205,8 +205,6 @@ spawn_vehicles = {
 			} else {
 				// Spawn around buildings and 50% near roads
 				if((random 1) > 0.5) then {
-							
-				
 				
 					waitUntil{!isNil "BIS_fnc_selectRandom"};
 					_position = RoadList call BIS_fnc_selectRandom;
@@ -219,8 +217,6 @@ spawn_vehicles = {
 					//diag_log("DEBUG: spawning near road " + str(_position));
 				
 				} else {
-				
-				
 				
 					waitUntil{!isNil "BIS_fnc_selectRandom"};
 					_position = BuildingList call BIS_fnc_selectRandom;
@@ -260,6 +256,24 @@ spawn_vehicles = {
 				clearWeaponCargoGlobal  _veh;
 				clearMagazineCargoGlobal  _veh;
 
+				// Add 0-3 loots to vehicle using random cfgloots 
+				_allCfgLoots = [] + (getArray (configFile >> "cfgLoot"));
+				_num = floor(random 4);
+
+				for "_x" from 1 to _num do {
+					_iClass = _allCfgLoots call BIS_fnc_selectRandom;
+
+					_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+					_index = dayz_CLBase find _iClass;
+					_weights = dayz_CLChances select _index;
+					_cntWeights = count _weights;
+					
+					_index = floor(random _cntWeights);
+					_index = _weights select _index;
+					_itemType = _itemTypes select _index;
+					_item addMagazineCargoGlobal [_itemType,1];
+				};
+
 				[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;
 			};
 		};
@@ -269,11 +283,10 @@ spawn_vehicles = {
 spawn_roadblocks = {
 	private["_position","_veh","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_isRoad","_roadlist","_istoomany"];
 	_WreckList = ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
-	_WreckLoot = ["DynamicDebris"];
+	
 	waitUntil{!isNil "BIS_fnc_selectRandom"};
 	if (isDedicated) then {
 	
-		waitUntil{!isNil "BIS_fnc_selectRandom"};
 		_position = RoadList call BIS_fnc_selectRandom;
 		
 		_position = _position modelToWorld [0,0,0];
@@ -295,10 +308,14 @@ spawn_roadblocks = {
 				_marker setMarkerType "DOT";
 			};
 		
-			waitUntil{!isNil "BIS_fnc_selectRandom"};
 			_spawnveh = _WreckList call BIS_fnc_selectRandom;
-			waitUntil{!isNil "BIS_fnc_selectRandom"};
-			_spawnloot = _WreckLoot call BIS_fnc_selectRandom;
+			
+			if(_spawnveh == "HMMWVWreck" or _spawnveh == "UralWreck" or _spawnveh == "UAZWreck") then {
+				_spawnloot = "DynamicDebrisMilitary";
+			} else {
+				_spawnloot =  "DynamicDebris";
+			};
+			
 		
 			diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
 			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
@@ -341,36 +358,28 @@ spawn_roadblocks = {
 	
 };
 
-// Damage generator fuction
+if(isnil "DynamicVehicleDamageLow") then {
+	DynamicVehicleDamageLow = 0;
+};
+if(isnil "DynamicVehicleDamageHigh") then {
+	DynamicVehicleDamageHigh = 100;
+};
+
+// Damage generator function
 generate_new_damage = {
-	private ["_damage","_rnd"];
-	_rnd = random 1;
-	if(_rnd > 0.5) then {
-		_damage = 0;
-	} else {
-		_rnd = random 1;
-		if(_rnd > 0.5) then {
-			_damage = 0.50;
-		} else {
-			_damage = 1;
-		};
-	};
+	private ["_damage"];
+	_damage = (random ((DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow))/100;
 	_damage;
 };
 
 // Damage generator fuction
 generate_exp_damage = {
-	private ["_damage","_rnd"];
-	_rnd = random 1;
-	if(_rnd > 0.5) then {
-		_damage = 0;
-	} else {
-		_rnd = random 1;
-		if(_rnd > 0.5) then {
-			_damage = 0.50;
-		} else {
-			_damage = 0.85;
-		};
+	private ["_damage"];
+	_damage = (random ((DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow))/100;
+	
+	// limit this to 85% since vehicle would blow up otherwise.
+	if(_damage >= 0.85) then {
+		_damage = 0.85;
 	};
 	_damage;
 };

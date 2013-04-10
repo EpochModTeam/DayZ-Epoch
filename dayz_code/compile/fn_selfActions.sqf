@@ -428,17 +428,17 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		s_player_studybody = -1;
 	};
 	
-	/*	
-	//Dog
-	if (_isDog and _isAlive and (_hasRawMeat) and _canDo and _ownerID == "0" and player getVariable ["dogID", 0] == 0) then {
-		if (s_player_tamedog < 0) then {
-			s_player_tamedog = player addAction [localize "str_actions_tamedog", "\z\addons\dayz_code\actions\tame_dog.sqf", cursorTarget, 1, false, true, "", ""];
+	if(dayz_tameDogs) then {
+		//Dog
+		if (_isDog and _isAlive and (_hasRawMeat) and _canDo and _ownerID == "0" and player getVariable ["dogID", 0] == 0) then {
+			if (s_player_tamedog < 0) then {
+				s_player_tamedog = player addAction [localize "str_actions_tamedog", "\z\addons\dayz_code\actions\tame_dog.sqf", cursorTarget, 1, false, true, "", ""];
+			};
+		} else {
+			player removeAction s_player_tamedog;
+			s_player_tamedog = -1;
 		};
-	} else {
-		player removeAction s_player_tamedog;
-		s_player_tamedog = -1;
 	};
-	*/
 	
 	if (_isDog and _ownerID == dayz_characterID and _isAlive and _canDo) then {
 		_dogHandle = player getVariable ["dogID", 0];

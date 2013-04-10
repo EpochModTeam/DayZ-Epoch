@@ -1,4 +1,4 @@
-private["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_mkr","_counter","_isNear","_isZero","_pos","_isIsland","_w","_clientID"];
+private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC"];
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
 
@@ -197,7 +197,12 @@ if (_randomSpot) then {
 	if(isnil "spawnShoremode") then {
 		spawnShoremode = 1;
 	};
-
+	if(isnil "spawnMarkerCount") then {
+		spawnMarkerCount = 4;
+	};
+	
+	// The wiki states floor has a uniform distribution but will not reach the last number so we add +1
+	_spawnMC = spawnMarkerCount + 1;
 
 	//spawn into random
 	_findSpot = true;
@@ -205,11 +210,12 @@ if (_randomSpot) then {
 	while {_findSpot} do {
 		_counter = 0;
 		while {_counter < 20 and _findSpot} do {
-			_mkr = "spawn" + str(round(random 4));
+			// switched to floor
+			_mkr = "spawn" + str(floor(random _spawnMC));
 			_position = ([(getMarkerPos _mkr),0,spawnArea,10,0,2000,spawnShoremode] call BIS_fnc_findSafePos);
 			_isNear = count (_position nearEntities ["Man",100]) == 0;
 			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
-		//Island Check		//TeeChange
+			//Island Check		//TeeChange
 			_pos 		= _position;
 			_isIsland	= false;		//Can be set to true during the Check
 			for [{_w=0},{_w<=150},{_w=_w+2}] do {

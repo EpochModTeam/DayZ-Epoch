@@ -29,7 +29,7 @@ _offset_z = 0;
 _offset_z_attach = 0.5;
 
 // Start Preview loop 
-_tmpbuilt = createVehicle ["_classname", _location, [], 0, "CAN_COLLIDE"];
+_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _tmpbuilt setdir _dir;
 _tmpbuilt attachTo [player,[_offset_x,_offset_y,_offset_z_attach]];
 

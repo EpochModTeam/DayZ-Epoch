@@ -5,6 +5,9 @@ _classname = _this select 2;
 
 _name = getText (configFile >> _type >> _classname >> "displayName");
 
+// Exit if player zombie
+if(player isKindOf "PZombie_VB") exitWith {};
+
 actionMonitor = {
 	private["_holder","_type","_classname","_name","_action","_distance","_run","_timeout"];
 	_holder = _this select 0;

@@ -22,13 +22,18 @@ while {true} do {
 	_timeToSpawn = time + _frequency + _timeAdjust;
 	
 	//Adding some Random systems
-	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ"] call BIS_fnc_selectRandom;
+	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ","Mass_grave"] call BIS_fnc_selectRandom;
 	
-	//Crash loot just uncomment the one you wish to use by default with 50cals is enabled.
-	//Table including 50 cals
-	_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
-	//Table without 50 cals
-	//_lootTable = ["Military","HeliCrash_No50s","MilitarySpecial"] call BIS_fnc_selectRandom;
+	
+	if(_crashModel == "Mass_grave") then {
+		_lootTable = "MassGrave";
+	} else {
+		//Crash loot just uncomment the one you wish to use by default with 50cals is enabled.
+		//Table including 50 cals
+		_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
+		//Table without 50 cals
+		//_lootTable = ["Military","HeliCrash_No50s","MilitarySpecial"] call BIS_fnc_selectRandom;
+	};
 	
 	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
@@ -74,6 +79,13 @@ while {true} do {
 
 		_crash setVariable ["ObjectID",1,true];
 
+		_num = round(random _randomizedLoot) + _guaranteedLoot;
+
+		if(_crashModel == "Mass_grave") then {
+			_spawnFire = false;
+			_num = _num * 2;
+		};
+
 		if (_spawnFire) then {
 			//["dayzFire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
 			dayzFire = [_crash,2,time,false,_fadeFire];
@@ -81,11 +93,11 @@ while {true} do {
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
 
-		_num		= round(random _randomizedLoot) + _guaranteedLoot;
+		
 		
 		_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
 		_itemTypes =	[] + getArray (_config >> "itemType");
-		_index =        dayz_CBLBase  find "HeliCrash";
+		_index =        dayz_CBLBase find _lootTable;
 		_weights =		dayz_CBLChances select _index;
 		_cntWeights = count _weights;
 

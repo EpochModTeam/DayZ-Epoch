@@ -1086,6 +1086,12 @@ class CfgMagazines
 		scope = 2;
 		displayName = "Bandit Outfit";
 		descriptionShort = "Bandit Outfit";
+	};	
+	class Skin_Bandit2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Camo";
+		descriptionShort = "Bandit Camo Outfit";
 	};
 	class Skin_BanditW1_DZ: SkinBase
 	{
@@ -1928,6 +1934,7 @@ class CfgMagazines
 			{
 				text = "$STR_PITCH_TENT";
 				script = "spawn player_tentPitch;";
+				create = "TentStorage";
 			};
 		};
 	};
@@ -2081,6 +2088,7 @@ class CfgVehicles
 		animated = 0;
 		vehicleClass = "Fortifications";
 		icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
+		offset[] = {0,1.5,0.5};
 		accuracy = 0.3;
 		mapSize = 5.5;
 		displayName = "Wire (CAT1)";
@@ -2099,6 +2107,7 @@ class CfgVehicles
 		scope = 2;
 		destrType = "DestructNo";
 		cost = 100;
+		offset[] = {0,1.5,0.5};
 		model = "\ca\misc\jezek_kov";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
@@ -2114,6 +2123,7 @@ class CfgVehicles
 	  vehicleClass = "Fortifications"; 
 	  model = "\ca\misc\Fort_Razorwire"; 
 	  icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa"; 
+	  offset[] = {0,1,5,0.5};
 	  accuracy = 0.3; 
 	  mapSize = 5.5; 
 	  displayName = "Wire"; 
@@ -2129,6 +2139,7 @@ class CfgVehicles
 		cost = 100;
 		model = "\ca\misc2\BagFenceLong.p3d";
 		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
+		offset[] = {0,1,5,0.5};
 		mapSize = 2;
 		armor = 400;
 		displayName = "Bag Fence";
@@ -2140,6 +2151,7 @@ class CfgVehicles
 		animated = 0; 
 		vehicleClass = "Fortifications"; 
 		typicalCargo[] = {}; 
+		offset[] = {0,1,5,0.5};
 		irTarget = 0; 
 		accuracy = 0.3; 
 		transportAmmo = 0; 
@@ -2157,18 +2169,20 @@ class CfgVehicles
 		displayName = "H-barrier cube"; 
 		GhostPreview = "Land_HBarrier1Preview"; 
 	};
-
-	class WoodGate_DZ: BuiltItems
+	class Land_kulna;
+	class WoodGate_DZ: Land_kulna
 	{
 		scope = 2;
-		destrType = "DestructTree"; 
+		destrType = "DestructBuilding"; 
 		cost = 100;
-		model = "\ca\structures\Wall\Gate_wood2_5";
-		icon = "\ca\data\data\Unknown_object.paa";
-		mapSize = 2;
-		armor = 50;
-		displayName = "Locked Wood Gate";
+		offset[] = {0,2.5,1};
+		//model = "\ca\structures\Wall\Gate_wood2_5";
+		//icon = "\ca\data\data\Unknown_object.paa";
+		//mapSize = 2;
+		armor = 100;
+		displayName = "Wooden Shack";
 		vehicleClass = "Fortifications";
+		/*
 		class AnimationSources
 		{
 			class DoorR { 
@@ -2177,6 +2191,7 @@ class CfgVehicles
 			  initPhase = 0; 
 			}
 		}
+		*/
 	};
 	class BearTrap_DZ: TrapItems
 	{
@@ -2260,6 +2275,7 @@ class CfgVehicles
 			init = "[(_this select 0),'cfgWeapons','Colt1911'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	
 	class WeaponHolder_ItemHatchet: WeaponHolderBase
 	{
 		scope = 2;
@@ -2268,6 +2284,16 @@ class CfgVehicles
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgWeapons','ItemHatchet'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemMachete: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Machete";
+		model="\z\addons\dayz_communityassets\models\machete.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	class WeaponHolder_MeleeCrowbar: WeaponHolderBase
@@ -2308,6 +2334,16 @@ class CfgVehicles
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgMagazines','ItemTent'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemTentDomed: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Domed Desert Tent";
+		model = "\dayz_equip\proxy\tentbag.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemTentDomed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	class WeaponHolder_ItemVault: WeaponHolderBase
@@ -2440,6 +2476,17 @@ class CfgVehicles
 			init = "[(_this select 0),'cfgMagazines','ItemOilBarrel'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	
+	class WeaponHolder_ItemJerrycanEmpty: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "$STR_EQUIP_NAME_39";
+		model = "\dayz_equip\proxy\jerrycan.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemJerrycanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 	class WeaponHolder_ItemJerrycan: WeaponHolderBase
 	{
 		scope = 2;
@@ -2462,6 +2509,16 @@ class CfgVehicles
 		transportMaxMagazines = 50;
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
+		create = "WeaponHolder_ItemTent";
+	};
+	class TentStorageDomed: TentStorage
+	{
+		vehicleClass = "Survival";
+		model = "\dayz_equip\models\astan.p3d";
+		transportMaxMagazines = 75;
+		transportMaxWeapons = 12;
+		transportMaxBackpacks = 7;
+		create = "WeaponHolder_ItemTentDomed";
 	};
 	class VaultStorage: Land_A_tent
 	{

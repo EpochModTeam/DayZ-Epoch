@@ -9,38 +9,74 @@ _config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
 player removeAction s_player_butcher;
 s_player_butcher = -1;
 
-
 if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type
 	_isListed =		isClass (_config);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 	
+	// force animation 
 	player playActionNow "Medic";
-	
-	_dis=10;
-	_sfx = "gut";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
-	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-	_item setVariable["meatHarvested",true,true];
-	
-	_qty = 2;	
-	if (_isListed) then {
-		_qty =	getNumber (_config >> "yield");
-	};
-	
-	if (_hasKnifeBlunt) then { _qty = round(_qty / 2); };
-	
-	_array = [_item,_qty];
+	// Alert zombies
+	[player,10,true,(getPosATL player)] spawn player_alertZombies;
 
-	if (local _item) then {
-		_array spawn local_gutObject;
-	} else {
-		dayzGutBody = _array;
-		publicVariable "dayzGutBody";
-	};
+	r_interrupt = false;
+	_animState = animationState player;
+	r_doLoop = true;
+	_started = false;
+	_finished = false;
 	
-	sleep 6;
-	_string = format[localize "str_success_gutted_animal",_text,_qty];
-	cutText [_string, "PLAIN DOWN"];
+	while {r_doLoop} do {
+		_animState = animationState player;
+		_isMedic = ["medic",_animState] call fnc_inString;
+		if (_isMedic) then {
+			_started = true;
+		};
+		if (_started and !_isMedic) then {
+			r_doLoop = false;
+			_finished = true;
+		};
+		if (r_interrupt) then {
+			r_doLoop = false;
+		};
+		sleep 0.1;
+	};
+	r_doLoop = false;
+
+	if (!_finished) exitWith { 
+		r_interrupt = false;
+		[objNull, player, rSwitchMove,""] call RE;
+		player playActionNow "stop";
+		cutText ["Canceled gutting." , "PLAIN DOWN"];
+		_abort = true;
+	};
+
+	_hasHarvested = _item getVariable["meatHarvested",false];
+	
+	if(_finished and !_hasHarvested) then {
+
+		_item setVariable["meatHarvested",true,true];
+
+		// Play sound since we finished
+		[player,"gut",0,false,10] call dayz_zombieSpeak;  
+	
+		_qty = 2;	
+		if (_isListed) then {
+			_qty =	getNumber (_config >> "yield");
+		};
+	
+		if (_hasKnifeBlunt) then { _qty = round(_qty / 2); };
+	
+		_array = [_item,_qty];
+
+		if (local _item) then {
+			_array spawn local_gutObject;
+		} else {
+			dayzGutBody = _array;
+			publicVariable "dayzGutBody";
+		};
+			
+		_string = format[localize "str_success_gutted_animal",_text,_qty];
+		cutText [_string, "PLAIN DOWN"];
+	};
 };

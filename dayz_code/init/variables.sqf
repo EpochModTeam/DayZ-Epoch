@@ -2,6 +2,7 @@ disableSerialization;
 
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
+Bandit2_DZ = 	"Bandit2_DZ";
 BanditW1_DZ = 	"BanditW1_DZ";
 BanditW2_DZ = 	"BanditW2_DZ";
 Survivor1_DZ = 	"Survivor2_DZ";
@@ -35,8 +36,8 @@ SurvivorWcombat_DZ = "SurvivorWcombat_DZ";
 SurvivorWdesert_DZ = "SurvivorWdesert_DZ";
 SurvivorWurban_DZ = "SurvivorWurban_DZ";
 
-AllPlayers = ["SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWpink_DZ","SurvivorW3_DZ","SurvivorW2_DZ","Bandit1_DZ","BanditW1_DZ","BanditW2_DZ","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","Rocker2_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ"];
-AllPlayersVehicles = ["SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWpink_DZ","SurvivorW3_DZ","SurvivorW2_DZ","Bandit1_DZ","BanditW1_DZ","BanditW2_DZ","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","Rocker2_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ","AllVehicles"];
+AllPlayers = ["Survivor2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWpink_DZ","SurvivorW3_DZ","SurvivorW2_DZ","Bandit1_DZ","Bandit2_DZ","BanditW1_DZ","BanditW2_DZ","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","Rocker2_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ"];
+AllPlayersVehicles = ["Survivor2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWpink_DZ","SurvivorW3_DZ","SurvivorW2_DZ","Bandit1_DZ","Bandit2_DZ","BanditW1_DZ","BanditW2_DZ","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","Rocker2_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ","AllVehicles"];
 
 PZombie_VB =	"PZombie_VB";
 
@@ -76,7 +77,7 @@ meatcooked = [
 no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix","FoodBioMeat"]+meatcooked+meatraw;
 
 
-badfood = ["FoodBioMeat"];
+badfood = ["FoodBioMeat","FoodCanUnlabeled"];
 
 food_with_output=[
     "FoodCanBakedBeans",
@@ -386,7 +387,7 @@ dayzPlayerDeaths = [];
 dayz_dawn = 6;
 dayz_dusk = 18;
 if(isNil "dayz_maxAnimals") then {
-	dayz_maxAnimals = 5;
+	dayz_maxAnimals = 8;
 };
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
@@ -395,19 +396,21 @@ dayz_zSpawnDistance = 1000;
 if(isNil "dayz_maxLocalZombies") then {
 	dayz_maxLocalZombies = 40;
 };
-
 if(isNil "dayz_maxGlobalZombies") then {
 	dayz_maxGlobalZombies = 30;
 };
-
 if(isNil "dayz_maxZeds") then {
 	dayz_maxZeds = 500;
 };
-
 if(isNil "DZEdebug") then {
 	DZEdebug = false;
 };
-
+if(isNil "dayz_tameDogs") then {
+	dayz_tameDogs = false;
+};
+if(isNil "dayz_paraSpawn") then {
+	dayz_paraSpawn = false;
+};
 
 dayz_spawnPos = getPosATL player;
 

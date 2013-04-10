@@ -1,7 +1,7 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
 
-	class ItemTent : CA_Magazine {
+	class ItemTentDomed : CA_Magazine {
 		scope = public;
 		count = 1;
 		type = (256 * 3);
@@ -14,6 +14,7 @@ class CfgMagazines {
 			class Pitch {
 				text = $STR_PITCH_TENT;
 				script = "spawn player_tentPitch;";
+				create = "TentStorageDomed";
 			};
 		};
 	};

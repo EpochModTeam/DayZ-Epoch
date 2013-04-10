@@ -1286,6 +1286,10 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		class Skin_Bandit2_DZ   
+		{
+			weight = 1;
+		};
 		class Skin_BanditW1_DZ   
 		{
 			weight = 1;
@@ -1424,6 +1428,10 @@ class CfgWeight
 			weight = 1;
 		};
 		class ItemTent 
+		{
+			weight = 5;
+		};
+		class ItemTentDomed
 		{
 			weight = 5;
 		};

@@ -64,5 +64,10 @@ AllowedVehiclesList = [
 	["AH6X_DZ",2],
 	["MTVR_DES_EP1",1],
 	["LandRover_MG_TK_EP1",1],
-	["M1030_US_DES_EP1",1]
+	["M1030_US_DES_EP1",1],
+	["HMMWV_M1151_M2_CZ_DES_EP1",2],
+	["HMMWV_M998A2_SOV_DES_EP1",2],
+	["HMMWV_M1035_DES_EP1",2],
+	["HMMWV_DZ",2],
+	["HMMWV_Ambulance_CZ_DES_EP1",2]
 ];

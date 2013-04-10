@@ -17,7 +17,14 @@ switch (_iClass) do {
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
 		_qty = 0;
-		_max = ceil(random 2) + 1;
+
+		// If clothing just spawn one bag of clothes
+		if(_iClass == "clothes" or _iClass == "militaryclothes" or _iClass == "specialclothes") then {
+			_max = 1;
+		} else {
+			_max = ceil(random 2) + 1;
+		};
+		
 		while {_qty < _max} do {
 			_tQty = round(random 1) + 1;
 			_index = floor(random _cntWeights);

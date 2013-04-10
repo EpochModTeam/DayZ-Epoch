@@ -1,5 +1,8 @@
 private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_control","_dialog","_item","_val","_max","_bolts","_quivers","_quiver","_broken"];
 
+// Exit if player zombie
+if(player isKindOf "PZombie_VB") exitWith {};
+
 if(TradeInprogress) exitWith { cutText ["Take item already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
@@ -14,7 +17,7 @@ _text = getText (configFile >> _type >> _classname >> "displayName");
 _claimedBy = _holder getVariable["claimed","0"];
 
 // Check if any players are nearby if not allow player to claim item.
-_playerNear = {isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1;
+_playerNear = {isPlayer _x} count (player nearEntities ["Man", 6]) > 1;
 
 // Only allow if not already claimed.
 if (_claimedBy == "0" or !_playerNear) then {
@@ -53,33 +56,43 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
 };
 
-_config = (configFile >> _type >> _classname);
-_isOk = [player,_config] call BIS_fnc_invAdd;
-if (_isOk) then {
-	deleteVehicle _holder;
-	if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
+// test to see if item still exists just before adding and removing
+if(_holder == objNull) exitWith {};
 
-		if (_type == "cfgWeapons") then {
-			_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
-			//_wtype = ((weapons player) select 0);
-			if (count _muzzles > 1) then {
-				player selectWeapon (_muzzles select 0);
-			} else {
-				player selectWeapon _classname;
+_obj = nearestObjects [(getPosATL player), [(typeOf _holder)], 5];
+_qty = count _obj;
+
+if(_qty >= 1) then {
+
+	_config = (configFile >> _type >> _classname);
+	_isOk = [player,_config] call BIS_fnc_invAdd;
+	if (_isOk) then {
+
+		deleteVehicle _holder;
+		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
+
+			if (_type == "cfgWeapons") then {
+				_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
+				//_wtype = ((weapons player) select 0);
+				if (count _muzzles > 1) then {
+					player selectWeapon (_muzzles select 0);
+				} else {
+					player selectWeapon _classname;
+				};
 			};
 		};
-	};
-} else {
-	_holder setVariable["claimed","0",true];
-	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
-	if (_classname == "MeleeCrowbar") then {
-		player removeMagazine 'crowbar_swing';
-	};
-	if (_classname == "MeleeHatchet") then {
-		player removeMagazine 'hatchet_swing';
-	};
-	if (_classname == "MeleeMachete") then {
-		player removeMagazine 'Machete_swing';
+	} else {
+		_holder setVariable["claimed","0",true];
+		cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+		if (_classname == "MeleeCrowbar") then {
+			player removeMagazine 'crowbar_swing';
+		};
+		if (_classname == "MeleeHatchet") then {
+			player removeMagazine 'hatchet_swing';
+		};
+		if (_classname == "MeleeMachete") then {
+			player removeMagazine 'Machete_swing';
+		};
 	};
 };
 TradeInprogress = false;

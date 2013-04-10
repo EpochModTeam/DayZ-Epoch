@@ -666,6 +666,22 @@ class Citizen1;	// External class reference
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
+	class Bandit2_DZ: Soldier_Crew_PMC
+	{
+		scope = 2;
+		displayName = "$STR_CHAR_2";
+		weapons[] = {"Throw","Put"};
+		model = "\ca\characters_E\GER\GER_rifleman";
+		portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
+		magazines[] = {};
+		backpack = "";
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\dayz\textures\clothes\bandit_tex1_co.paa"};
+		weaponSlots = "1 + 4 + 12* 256 + 2* 4096 + 2 + 8* 16 + 12*131072";
+		canHideBodies = 1;
+	};
 
 	class BAF_Soldier_Officer_W;
 	class Rocket_DZ: BAF_Soldier_Officer_W {

@@ -329,6 +329,10 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Bandit1_DZ";
 		};
+		class Skin_Bandit2_DZ: Default {
+			sex = "male";
+			playerModel = "Bandit2_DZ";
+		};
 		class Skin_BanditW1_DZ: Default {
 			sex = "female";
 			playerModel = "BanditW1_DZ";
@@ -451,23 +455,16 @@ class CfgBuildingLoot {
 
 			{ "Winchester1866","weapon" },
 			{ "WeaponHolder_ItemTent","object" },
+			{ "WeaponHolder_ItemTentDomed","object" },
 			{ "","military" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
 			{ "PartWoodPile","magazine" },
-			{ "Skin_Camo1_DZ","magazine" },
-			{ "Skin_Sniper1_DZ","magazine" },
+			{ "","clothes" },
+			{ "","specialclothes" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
 			{"MR43","weapon"},
-			{ "Skin_RU_Policeman_DZ","magazine" },
-			{ "Skin_Pilot_EP1_DZ","magazine" },
-			{ "Skin_Functionary1_EP1_DZ","magazine" },
-			{ "Skin_Priest_DZ","magazine" },
-			{ "Skin_Rocker2_DZ","magazine" },
-			{ "Skin_SurvivorW3_DZ","magazine" },
-			{ "Skin_SurvivorWpink_DZ","magazine" },
-			{ "Skin_SurvivorWurban_DZ","magazine" },
 			
 	};
 		itemChance[] =	{
@@ -491,23 +488,16 @@ class CfgBuildingLoot {
 			0.01, //18
 			0.01,
 			0.01,
+			0.01,
 			0.03,
 			0.5,
 			0.01,
 			0.06,
 			0.06,
-			0.01,
+			0.03,
 			0.01,
 			0.08,
 			0.03,
-			0.01,
-			0.02,
-			0.03,
-			0.02,
-			0.02,
-			0.05,
-			0.02,
-			0.01,
 		};		
 	};
 	class Office: Residential {
@@ -619,6 +609,8 @@ class CfgBuildingLoot {
 			
 			{ "Winchester1866","weapon" },
 			{ "WeaponHolder_ItemTent","object" },
+			{ "WeaponHolder_ItemTentDomed","object" },
+			
 			{ "","food" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
@@ -645,13 +637,14 @@ class CfgBuildingLoot {
 			0.01, //18
 			0.01,
 			0.01,
+			0.01,
 			0.3,
 			0.15,
 			0.01,
 			0.05,
 			0.02,
 			0.01
-	};
+		};
 	};
 	class HeliCrash: Default {
 		zombieChance = 0.4;
@@ -676,19 +669,13 @@ class CfgBuildingLoot {
 			{ "NVGoggles","weapon" },
 			{ "AmmoBoxSmall_556","object" },
 			{ "AmmoBoxSmall_762","object" },
-			{ "Skin_Camo1_DZ","magazine" },
-			{ "Skin_Sniper1_DZ","magazine" },
+			{ "","militaryclothes" },
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
 			{"G36A_camo","weapon"},
 			{"G36K_camo","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
-			{ "Skin_Rocket_DZ","magazine" },
-			{ "Skin_Soldier1_DZ","magazine" },
-			{ "Skin_Soldier_TL_PMC_DZ","magazine" },
-			{ "Skin_Soldier_Sniper_PMC_DZ","magazine" },
-			{ "Skin_Soldier_Bodyguard_AA12_PMC_DZ","magazine" },
 };
 		itemChance[] =	{
 			0.02,		//{"FN_FAL","weapon"},
@@ -707,19 +694,13 @@ class CfgBuildingLoot {
 			0.02,		//{"NVGoggles","weapon"}
 			0.1,	//AmmoBoxSmall_556
 			0.1,	//AmmoBoxSmall_762
-			0.08,	//Skin_Camo1_DZ
-			0.05,	//Skin_Sniper1_DZ
+			0.08,	//militaryclothes
 			0.03,	//G36C"
 			0.02,	//G36C_camo
 			//0.01,	//G36_C_SD_camo
 			0.02,	//G36A_camo
 			0.02,	//G36K_camo
 			0.01,	//("100Rnd_762x54_PK","magazine"}
-			0.01,
-			0.05,
-			0.02, // Skin_Soldier_TL_PMC_DZ
-			0.02, // Skin_Soldier_Sniper_PMC_DZ
-			0.02, // Skin_Soldier_Bodyguard_AA12_PMC_DZ
 	};
 	};
 class HeliCrash_No50s: Default {
@@ -743,8 +724,7 @@ class HeliCrash_No50s: Default {
 			{"NVGoggles","weapon"},
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
-			{"Skin_Camo1_DZ","magazine"},
-			{"Skin_Sniper1_DZ","magazine"},
+			{ "","militaryclothes" },
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
@@ -767,8 +747,7 @@ class HeliCrash_No50s: Default {
 			0.02,		//{"NVGoggles","weapon"}
 			0.1,	//AmmoBoxSmall_556
 			0.1,	//AmmoBoxSmall_762
-			0.08,	//Skin_Camo1_DZ
-			0.05,	//Skin_Sniper1_DZ
+			0.08,	//militaryclothes
 			0.03,	//G36C"
 			0.02,	//G36C_camo
 			//0.01,	//G36_C_SD_camo
@@ -950,18 +929,7 @@ class HeliCrash_No50s: Default {
 			{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
-			{ "Skin_Soldier1_DZ","magazine" },
-			{ "Skin_Ins_Soldier_GL_DZ","magazine" },
-			{ "Skin_GUE_Commander_DZ","magazine" },
-			{ "Skin_Bandit1_DZ","magazine" },
-			{ "Skin_BanditW1_DZ","magazine" },
-			{ "Skin_BanditW2_DZ","magazine" },
-			{ "Skin_Drake_Light_DZ","magazine" },
-			{ "Skin_CZ_Special_Forces_GL_DES_EP1_DZ","magazine" },
-			{ "Skin_TK_INS_Soldier_EP1_DZ","magazine" },
-			{ "Skin_TK_INS_Warlord_EP1","magazine" },
-			{ "Skin_SurvivorWcombat_DZ","magazine" },
-			{ "Skin_SurvivorWdesert_DZ","magazine" },
+			{ "","militaryclothes" },
 	};
 		itemChance[] =	{
 			0.10,
@@ -1014,19 +982,8 @@ class HeliCrash_No50s: Default {
 			0.01, //Sa58V_CCO_EP1
 			0.01, //{"G36_C_SD_camo","weapon"},
 			0.02, // M40A3
-			0.01,	//("100Rnd_762x54_PK","magazine"}
-			0.05,
-			0.01,
-			0.01,
-			0.01,
-			0.01,
-			0.01,
-			0.01,
-			0.01,
-			0.03,
-			0.01,
-			0.01,
-			0.03,
+			0.01, //("100Rnd_762x54_PK","magazine"}
+			0.05, // militaryclothes
 		};
 	};
 	class Hunting: Default {
@@ -1433,6 +1390,10 @@ class HeliCrash_No50s: Default {
 
 	
 	// DAYZ AMP More buildings
+	class Mass_grave: HouseRoaming {	
+		minRoaming = 8;
+		maxRoaming = 16;
+	};
 	class Land_Shed_W02_EP1: FarmRoaming{};
 	class Land_MBG_ApartmentsOne_W: HouseRoaming{};
 	class Land_MBG_ApartmentsTwo_P: HouseRoaming{};
@@ -1674,11 +1635,95 @@ class HeliCrash_No50s: Default {
 			{ "WeaponHolder_PartFueltank","object" },
 			{ "WeaponHolder_PartEngine","object" },
 			{ "WeaponHolder_PartGlass","object" },
+			{ "WeaponHolder_ItemJerrycan","object" }};
+			itemChance[] = {0.15,0.01,0.05,0.02,0.02,0.05,0.05,0.05,0.02,0.15,0.05,0.06,0.05,0.03,0.01,0.07,0.03};
+	}; 
+	
+	class DynamicDebrisMilitary: Default
+	{
+		lootChance = 0.4;
+		minRoaming = 0;
+		maxRoaming = 2;
+		zombieChance = 0.3;
+		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+		itemType[] = {
+			{ "ItemEtool","weapon" },
+			{ "ItemSandbag","magazine"},
+			{ "","military" },
+			{ "ItemWatch","generic" },
+			{ "ItemCompass","generic" },
+			{ "ItemMap","weapon" },
+			{ "Makarov","weapon" },
+			{ "Colt1911","weapon" },
+			{ "ItemFlashlight","generic" },
+			{ "ItemKnife","generic" },
+			{ "ItemMatchbox","generic" },
+			{ "ItemToolbox","weapon" },
+			{ "","generic" },
+			{ "","food" },
+			{ "WeaponHolder_PartGeneric","object" },
+			{ "WeaponHolder_PartWheel","object" },
+			{ "WeaponHolder_PartFueltank","object" },
+			{ "WeaponHolder_PartEngine","object" },
+			{ "WeaponHolder_PartGlass","object" },
 			{ "WeaponHolder_PartVRotor","object" },
 			{ "WeaponHolder_ItemJerrycan","object" }};
-			itemChance[] = {0.15,0.01,0.05,0.02,0.02,0.05,0.05,0.05,0.02,0.15,0.05,0.06,0.05,0.03,0.01,0.07,0.01,0.03};
+			itemChance[] = {0.05,0.11,0.08,0.15,0.01,0.05,0.02,0.02,0.05,0.05,0.05,0.02,0.15,0.05,0.06,0.05,0.03,0.02,0.03,0.02,0.03};
 	};
-
+	
+	class MassGrave: Default {
+		zombieChance = 0.3;
+		maxRoaming = 3;
+		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3"};
+		lootChance = 0.5;
+		lootPos[] = {};
+		itemType[] = {
+			{ "ItemWatch","generic" },
+			{ "ItemCompass","generic" },
+			{ "ItemMap","weapon" },
+			{ "Makarov","weapon" },
+			{ "Colt1911","weapon" },
+			
+			{ "ItemKnife","generic" },
+			{ "ItemMatchbox","generic" },
+			{ "ItemToolbox","weapon" },
+			
+			{ "WeaponHolder_ItemJerrycanEmpty","object" },
+			{ "","generic" },
+			{ "huntingrifle","weapon" },
+			{ "LeeEnfield","weapon" },
+			{ "Winchester1866","weapon" },
+			{ "","trash" },
+			{"Crossbow_DZ","weapon"},
+			{ "PartWoodPile","magazine" },
+			{ "WeaponHolder_ItemHatchet","object" },
+			{ "MR43","weapon" },
+			{"WeaponHolder_ItemMachete", "object"}
+	};
+		itemChance[] =	{
+			0.06,
+			0.08,
+			0.05,
+			0.06,
+			0.08,
+			
+			0.05,
+			0.06,
+			0.08,
+			
+			0.06,
+			0.28,
+			0.01,
+			0.04,
+			0.03,
+			0.22,
+			0.03,
+			0.11,
+			0.17,
+			0.06,
+			0.03
+		};
+	};
 	class Land_House_C_1_EP1: Residential
 	{
 		lootPos[] = {
