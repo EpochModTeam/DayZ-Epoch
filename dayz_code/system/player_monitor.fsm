@@ -691,7 +691,7 @@ class FSM
        "_setDir = 			_worldspace select 0;" \n
        "_setPos = 			_worldspace select 1;" \n
        "" \n
-       "if(dayz_paraSpawn) then {" \n
+       "if(dayz_paraSpawn and !(player isKindOf ""PZombie_VB"")) then {" \n
        "	_para = createVehicle [""ParachuteWest"", _setPos, [], 0, ""FLY""];  " \n
        "	player moveInDriver _para;" \n
        "} else {" \n

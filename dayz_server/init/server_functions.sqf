@@ -260,6 +260,8 @@ spawn_vehicles = {
 				_allCfgLoots = [] + (getArray (configFile >> "cfgLoot"));
 				_num = floor(random 4);
 
+				diag_log("DEBUG: spawing loot inside vehicle " + str(_allCfgLoots));
+
 				for "_x" from 1 to _num do {
 					_iClass = _allCfgLoots call BIS_fnc_selectRandom;
 
@@ -271,7 +273,8 @@ spawn_vehicles = {
 					_index = floor(random _cntWeights);
 					_index = _weights select _index;
 					_itemType = _itemTypes select _index;
-					_item addMagazineCargoGlobal [_itemType,1];
+					_veh addMagazineCargoGlobal [_itemType,1];
+					diag_log("DEBUG: spawed loot inside vehicle " + str(_itemType));
 				};
 
 				[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;
@@ -297,7 +300,6 @@ spawn_roadblocks = {
 		if ((count _position) == 2) then {
 			// Get position with ground
 			
-		
 			_istoomany = _position nearObjects ["All",5];
 		
 			if((count _istoomany) > 0) exitWith { diag_log("DEBUG: Too many at " + str(_position)); };
@@ -307,24 +309,21 @@ spawn_roadblocks = {
 				_marker setMarkerShape "ICON";
 				_marker setMarkerType "DOT";
 			};
-		
+			
+			waitUntil{!isNil "BIS_fnc_selectRandom"};
 			_spawnveh = _WreckList call BIS_fnc_selectRandom;
-			
-			if(_spawnveh == "HMMWVWreck" or _spawnveh == "UralWreck" or _spawnveh == "UAZWreck") then {
+			_spawnloot =  "DynamicDebris";
+
+			if((_spawnveh == "HMMWVWreck") or (_spawnveh == "UralWreck") or (_spawnveh == "UAZWreck")) then {
 				_spawnloot = "DynamicDebrisMilitary";
-			} else {
-				_spawnloot =  "DynamicDebris";
 			};
-			
 		
 			diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
 			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
 			// Randomize placement a bit
 			_veh setDir round(random 360);
 			_veh setpos _position;
-		
 
-		
 			dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_veh];
 			_veh setVariable ["ObjectID",1,true];
 
@@ -368,19 +367,19 @@ if(isnil "DynamicVehicleDamageHigh") then {
 // Damage generator function
 generate_new_damage = {
 	private ["_damage"];
-	_damage = (random ((DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow))/100;
+	_damage = (random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow) / 100;
 	_damage;
 };
 
 // Damage generator fuction
 generate_exp_damage = {
 	private ["_damage"];
-	_damage = (random ((DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow))/100;
+	_damage = (random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow) / 100;
 	
 	// limit this to 85% since vehicle would blow up otherwise.
-	if(_damage >= 0.85) then {
-		_damage = 0.85;
-	};
+	//if(_damage >= 0.85) then {
+	//	_damage = 0.85;
+	//};
 	_damage;
 };
 

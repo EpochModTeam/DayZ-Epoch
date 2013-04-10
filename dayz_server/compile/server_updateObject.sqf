@@ -1,13 +1,15 @@
 /*
 [_object,_type] spawn server_updateObject;
 */
-private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk"];
+private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk","_counter","_removeCounter","_parachuteWest","_firstTime","_object_killed","_object_repair"];
 
 _object = 	_this select 0;
 _type = 	_this select 1;
 _parachuteWest = typeOf _object == "ParachuteWest";
 _isNotOk = false;
 _firstTime = false;
+
+_removeCounter = 0;
 
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
@@ -23,18 +25,18 @@ if (!_parachuteWest) then {
 	if (_objectID == "0" && _uid == "0") then
 	{
 		_object_position = getPosATL _object;
-    		diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",
-			typeOf _object,
-			_object_position select 0,
-			_object_position select 1, 
-			_object_position select 2]);
-			_isNotOk = true;
+    	diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",
+		typeOf _object,
+		_object_position select 0,
+		_object_position select 1, 
+		_object_position select 2]);
+		_isNotOk = true;
 
-			// Loop to wait it out
-			_counter = _object getVariable ["markedForRemoval","0"];
+		// Loop to wait it out
+		_counter = _object getVariable ["markedForRemoval","0"];
 			
-			_removeCounter = _counter + 1; 
-			_object setVariable ["markedForRemoval",(_counter + 1)]; 
+		_removeCounter = _counter + 1; 
+		_object setVariable ["markedForRemoval",(_counter + 1)]; 
 	};
 };
 
