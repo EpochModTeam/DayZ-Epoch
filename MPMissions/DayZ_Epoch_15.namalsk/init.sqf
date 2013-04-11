@@ -19,11 +19,22 @@ enableRadio false;
 // DayZ Epoch config
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea= 1500; // Default = 1500
-MaxHeliCrashes= 2; // Default = 5
+// MaxHeliCrashes= 2; // Default = 5
 MaxVehicleLimit = 200; // Default = 50
-MaxDynamicDebris = 250; // Default = 100
+MaxDynamicDebris = 300; // Default = 100
 dayz_MapArea = 8000; // Default = 10000
-dayz_maxLocalZombies = 40; // Default = 40
+dayz_maxLocalZombies = 80; // Default = 40
+
+dayz_maxGlobalZombies = 60; // Default = 30
+dayz_maxZeds = 1000; // Default = 500
+
+// new stuff
+dayz_paraSpawn = true;
+spawnMarkerCount = 10; // Default: 4
+dayz_maxAnimals = 8; // Default: 8
+dayz_tameDogs = true;
+DynamicVehicleDamageLow = 50; // Default: 0
+DynamicVehicleDamageHigh = 100; // Default: 100
 
 DZEdebug = true;
 
