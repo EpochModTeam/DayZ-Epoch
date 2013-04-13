@@ -1,5 +1,5 @@
 AllowedVehiclesList = [ 
-	["Offroad_DSHKM_Gue",2]
+	["Offroad_DSHKM_Gue",2],
 	["Old_moto_TK_Civ_EP1",10],
 	["MMT_Civ",15],
 	["Old_bike_TK_INS_EP1",15],
