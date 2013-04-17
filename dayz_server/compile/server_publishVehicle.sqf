@@ -28,25 +28,8 @@ if (_spawnDMG) then {
 		_totaldam = 0;
 		_hitpoints = _object call vehicle_getHitpoints;
 		{
-			_dam = 0;
-			if(["Body",_x,false] call fnc_inString) then {
-				_dam = call generate_new_damage;
-			};
-			if(["Engine",_x,false] call fnc_inString) then {
-				_dam = call generate_exp_damage;
-			};
-			if(["HRotor",_x,false] call fnc_inString) then {
-				_dam = call generate_new_damage;
-			};
-			if(["Fuel",_x,false] call fnc_inString) then {
-				_dam = call generate_exp_damage;
-			};
-			if(["Wheel",_x,false] call fnc_inString) then {
-				_dam = call generate_new_damage;
-			};
-			if(["Glass",_x,false] call fnc_inString) then {
-				_dam = call generate_new_damage;
-			};
+			// generate damage on all parts
+			_dam = call generate_new_damage;
 
 			_selection = getText(configFile >> "cfgVehicles" >> _class >> "HitPoints" >> _x >> "name");
 			
@@ -60,11 +43,8 @@ if (_spawnDMG) then {
 		// just set low base dmg - may change later
 		_damage = 0;
 
-		// 50% chance that vehicle will have a little gas
-		_randFuel = random(1);
-		if(_randFuel > 0.5) then {
-			_fuel = random(0.5);
-		};
+		// New fuel min max 
+		_fuel = (random(DynamicVehicleFuelHigh-DynamicVehicleFuelLow)+DynamicVehicleFuelLow) / 100;
 
 	};
 };
@@ -133,6 +113,10 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	_object setvelocity [0,0,1];
 
 	_object call fnc_vehicleEventHandler;
+
+	// testing - should make sure everyone has eventhandlers for vehicles was unused...
+	dayzVehicleInit = _object;
+	publicVariable "dayzVehicleInit";
 
 	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
 };

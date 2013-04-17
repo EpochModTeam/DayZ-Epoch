@@ -33,15 +33,15 @@ if (!_parachuteWest) then {
 		_isNotOk = true;
 
 		// Loop to wait it out
-		_counter = _object getVariable ["markedForRemoval","0"];
+		_counter = _object getVariable ["markedForRemoval",0];
 			
 		_removeCounter = _counter + 1; 
 		_object setVariable ["markedForRemoval",(_counter + 1)]; 
 	};
 };
 
-if (_isNotOk and _removeCounter < 5) exitWith { diag_log(format["About to remove vehicle: %1 - %2 / 10", typeOf _object, _removeCounter]); };
-if (_isNotOk and _removeCounter >= 5) exitWith { deleteVehicle _object; };
+if (_isNotOk and _removeCounter < 10) exitWith { diag_log(format["About to remove vehicle: %1 - %2 / 10", typeOf _object, _removeCounter]); };
+if (_isNotOk and _removeCounter >= 10) exitWith { deleteVehicle _object; };
 
 
 _lastUpdate = _object getVariable ["lastUpdate",time];

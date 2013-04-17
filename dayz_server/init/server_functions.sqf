@@ -58,9 +58,8 @@ check_publishobject = {
 	_allowed = false;
        
 	diag_log format ["DEBUG: Checking if Object: %1 is allowed published by %2", _object, _playername];
-    _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ"];   
 
-	if ((typeOf _object) in _allowedObjects) then {
+	if ((typeOf _object) in dayz_allowedObjects) then {
 			diag_log format ["DEBUG: Object: %1 published by %2 is Safe",_object, _playername];
 			_allowed = true;
 	};
@@ -257,8 +256,9 @@ spawn_vehicles = {
 				clearMagazineCargoGlobal  _veh;
 
 				// Add 0-3 loots to vehicle using random cfgloots 
-				_allCfgLoots = [] + (getArray (configFile >> "cfgLoot"));
 				_num = floor(random 4);
+				_allCfgLoots = ["trash","civilian","food","generic","medical","military","policeman","hunter","worker","clothes","militaryclothes","specialclothes","trash"];
+				
 
 				diag_log("DEBUG: spawing loot inside vehicle " + str(_allCfgLoots));
 
@@ -320,6 +320,8 @@ spawn_roadblocks = {
 		
 			diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
 			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+			_veh enableSimulation false;
+
 			// Randomize placement a bit
 			_veh setDir round(random 360);
 			_veh setpos _position;
@@ -362,6 +364,13 @@ if(isnil "DynamicVehicleDamageLow") then {
 };
 if(isnil "DynamicVehicleDamageHigh") then {
 	DynamicVehicleDamageHigh = 100;
+};
+
+if(isnil "DynamicVehicleFuelLow") then {
+	DynamicVehicleFuelLow = 0;
+};
+if(isnil "DynamicVehicleFuelHigh") then {
+	DynamicVehicleFuelHigh = 100;
 };
 
 // Damage generator function

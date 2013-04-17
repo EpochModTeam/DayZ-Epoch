@@ -5,11 +5,8 @@ _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _class = 		_this select 3;
 
-if (!(_object isKindOf "Building")) exitWith {
-	deleteVehicle _object;
-};
 _allowed = [_object, "Server"] call check_publishobject;
-if (!_allowed) exitWith { };
+if (!_allowed) exitWith { deleteVehicle _object; };
 
 
 //diag_log ("PUBLISH: Attempt " + str(_object));
@@ -22,11 +19,11 @@ _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 ,
 //diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 
+_object setVariable ["lastUpdate",time];
 _object setVariable ["ObjectUID", _uid,true];
+_object setVariable ["characterID",dayz_characterID,true];
 
-_allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ"];
-
-if ((typeOf _object) in _allowedObjects) then {
+if ((typeOf _object) in dayz_allowedObjects) then {
 	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 };
 

@@ -79,6 +79,9 @@ while {true} do {
 
 		_crash setVariable ["ObjectID",1,true];
 
+		// Disable simulation server side
+		_crash enableSimulation false;
+
 		_num = round(random _randomizedLoot) + _guaranteedLoot;
 
 		if(_crashModel == "Mass_grave") then {
@@ -97,7 +100,7 @@ while {true} do {
 		
 		_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
 		_itemTypes =	[] + getArray (_config >> "itemType");
-		_index =        dayz_CBLBase find _lootTable;
+		_index =        dayz_CBLBase find toLower(_lootTable);
 		_weights =		dayz_CBLChances select _index;
 		_cntWeights = count _weights;
 

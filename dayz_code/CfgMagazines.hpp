@@ -4,7 +4,7 @@ class CfgMagazines {
 	class ItemTentDomed : CA_Magazine {
 		scope = public;
 		count = 1;
-		type = (256 * 3);
+		type = 256;
 		displayName = $STR_EQUIP_NAME_20;
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
@@ -32,15 +32,27 @@ class CfgMagazines {
 			class Build {
 				text = "Build Sandbag";
 				script = "spawn player_build;";
-				require = "ItemEtool";
+				require[] = {"ItemEtool"};
 				create = "Sandbag1_DZ";
 			};
 			class Crafting
 			{
 				text = "Craft Large Sandbag";
 				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbagLarge",1}};
 				input[] = {{"ItemSandbag",3},{"ItemWire",1},{"ItemTankTrap",1}};
+			};
+			class Crafting1
+			{
+				text = "Craft M240 Nest";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"m240_nest_kit",1}};
+				input[] = {{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
+				// TODO add consume weapon
 			};
 		};
 	};
@@ -58,7 +70,7 @@ class CfgMagazines {
 			class Build {
 				text = "Build H-barrier cube";
 				script = "spawn player_build;";
-				require = "ItemEtool";
+				require[] = {"ItemEtool"};
 				create = "Land_HBarrier1_DZ";
 			};
 		};
@@ -77,7 +89,7 @@ class CfgMagazines {
 			class Build {
 				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
-				require = "ItemToolbox";
+				require[] = {"ItemToolbox"};
 				create = "Hedgehog_DZ";
 			};
 		};
@@ -96,7 +108,7 @@ class CfgMagazines {
 			class Build {
 				text = "Place Trap";
 				script = "spawn player_setTrap;";
-				require = "ItemToolbox";
+				require[] = {"ItemToolbox"};
 				create = "BearTrap_DZ";
 			};
 		};
@@ -115,7 +127,7 @@ class CfgMagazines {
 			class Build {
 				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
-				require = "ItemToolbox";
+				require[] = {"ItemToolbox"};
 				create = "Fort_RazorWire";
 			};
 		};

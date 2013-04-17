@@ -21,7 +21,7 @@
 5 "compile"
 5 "loadFile"
 //1 "say" //+4
-5 "call"
+5 "call" !="dog_callBack" !="remExField" = [,,"say",["dog_callBack",120]]"
 1 "move" !="\"switchmove\"" !="\"playmove\"" !"moveIn" !"remove" !="\"remExField\" = [,<NULL-object>,\"switchmove\",\"ActsPercMrunSlowWrflDf_FlipFlopPara\"]"
 1 "chat"
 1 "fade"

@@ -4,7 +4,7 @@ dayz_CBLBase = [];
 
 _config = configFile >> "CfgBuildingLoot";
 for "_i" from 0 to ((count _config) - 1) do {
-	_classname = configName (_config select _i);
+	_classname = toLower(configName (_config select _i));
 	_itemChances = [] + getArray (_config >> _classname >> "ItemChance");
 		_itemCount = count _itemChances;
 	if (_itemCount > 0) then {

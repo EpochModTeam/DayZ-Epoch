@@ -10,23 +10,12 @@ _objectUID	= _obj getVariable ["ObjectUID","0"];
 _isOk = true;
 _proceed = false;
 _objType = typeOf _obj;
+
 _limit = 5;
 
-switch(true)do{ 
-	case (_objType == "WoodGate_DZ"): { 
-		_limit = 5;
-	}; 
-	case (_objType == "Land_HBarrier1_DZ"): { 
-		_limit = 20;
-	}; 
-	case (_objType == "Sandbag1_DZ"): { 
-		_limit = 10;
-	}; 
-	case (_objType == "Hedgehog_DZ"): { 
-		_limit = 10;
-	}; 
-}; 
-
+if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
+	_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
+};
 
 cutText [format["Starting de-construction of %1.",_objType], "PLAIN DOWN"];
 

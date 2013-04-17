@@ -24,20 +24,20 @@ _dog =		_this select 3;
 _removed = 0;
 _itemIn = "FoodmeatRaw";
 _countIn = 1;
+_selected = "";
 
 {					
 	if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
 		_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
 	};
-	if(_removed == 1) exitWith { _selected = _x; };
-				
+	if(_removed == 1) exitWith { _selected = _x; };	
 } forEach magazines player;
 
-// get name of item removed
-_textRemoved = getText(configFile >> "CfgMagazines" >> _selected >> "displayName");
-		
 // Only proceed if removed count matches
 if(_removed == _countIn) then {
+
+	// get name of item removed
+	_textRemoved = getText(configFile >> "CfgMagazines" >> _selected >> "displayName");
 	
 	// add failure rate based on skill level variable (days alive) 
 	_chanceToFail = ((random 1 + (dayz_skilllevel/100)) > 0.5);

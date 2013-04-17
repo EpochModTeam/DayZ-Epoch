@@ -25,7 +25,6 @@ if (_script != "") then
 
 serverVehicleCounter = [];
 
-_allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ"];
 //Stream in objects
 	/* STREAM OBJECTS */
 		//Send the key
@@ -99,13 +98,10 @@ _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1
 				clearWeaponCargoGlobal  _object;
 				clearMagazineCargoGlobal  _object;
 				
-				if ((typeOf _object) in _allowedObjects) then {
-					// Forces object to ground may not be needed
-					// _pos set [2,0];
-					// Must be set to damage buildables
+				if ((typeOf _object) in dayz_allowedObjects) then {
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
-
+				
 				_object setdir _dir;
 				_object setpos _pos;
 				_object setDamage _damage;
@@ -190,7 +186,6 @@ _allowedObjects = ["TentStorage", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1
 				};
 
 				//Monitor the object
-				//_object enableSimulation false;
 				dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 			};
 		} forEach _myArray;

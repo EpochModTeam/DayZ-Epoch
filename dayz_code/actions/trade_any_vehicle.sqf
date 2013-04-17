@@ -111,9 +111,6 @@ if (_qty >= _qty_in) then {
 					dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
 					publicVariableServer  "dayzPublishVeh2";
 
-					// event handlers to correctly track damage client side
-					_veh call fnc_vehicleEventHandler;
-
 					player reveal _veh;
 
 					cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];

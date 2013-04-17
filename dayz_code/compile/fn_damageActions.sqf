@@ -4,8 +4,8 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- Function
 	- [] call fnc_usec_damageActions;
 ************************************************************/
-private["_menClose","_unit","_unconscious","_lowBlood","_injured","_inPain","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_action1","_action2","_action","_vehClose","_hasVehicle","_vehicle","_inVehicle","_crew","_unconscious_crew","_patients","_charID","_friendlies"];
 
+private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1","_action2","_x","_vehicle","_unit","_vehType","_displayName","_ammoQty","_ammoSerial","_weapon","_magTypes","_type","_typeVeh","_index","_inventory","_unitTo","_isEngineer","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasJerryE","_hasEtool","_hasWire","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_bag","_classbag"];
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
 _vehicle = vehicle player;
@@ -52,16 +52,19 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_armsBroke = 	_unit getVariable ["hit_hands", 0] >= 1;
 	_charID =		_unit getVariable ["characterID", 0];
 	_friendlies =	player getVariable ["friendlies", []];
-	_hasBandage = 	"ItemBandage" in magazines player;
-	_hasEpi = 		"ItemEpinephrine" in magazines player;
-	_hasMorphine = 	"ItemMorphine" in magazines player;
-	_hasBlood = 	"ItemBloodbag" in magazines player;	
+	_playerMagazines = magazines player;
+	_hasBandage = 	"ItemBandage" in _playerMagazines;
+	_hasEpi = 		"ItemEpinephrine" in _playerMagazines;
+	_hasMorphine = 	"ItemMorphine" in _playerMagazines;
+	_hasBlood = 	"ItemBloodbag" in _playerMagazines;	
 	_hasToolbox = 	"ItemToolbox" in items player;
-	_hasJerry = 	"ItemJerrycan" in magazines player;
-	_hasJerryE = 	"ItemJerrycanEmpty" in magazines player;
+	_hasJerry = 	"ItemJerrycan" in _playerMagazines;
+	_hasBarrel = 	"ItemFuelBarrel" in _playerMagazines;
+	_hasJerryE = 	"ItemJerrycanEmpty" in _playerMagazines;
+	_hasBarrelE = 	"ItemFuelBarrelEmpty" in _playerMagazines;
 	_hasEtool = 	"ItemEtool" in weapons player;
-	_hasWire = 		"ItemWire" in magazines player;
-	_hasPainkillers = 	"ItemPainkiller" in magazines player;
+	_hasWire = 		"ItemWire" in _playerMagazines;
+	_hasPainkillers = 	"ItemPainkiller" in _playerMagazines;
 
 	//Allow player to drag
 	if(_unconscious) then {
@@ -88,7 +91,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	if(_injured and _hasBandage) then {
 		r_action = true;
 		//_unit setdamage 0.8;
-		_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit], 0, true, true, "", "'ItemBandage' in magazines player"];
+		_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to give Epinephrine
@@ -100,19 +103,19 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	//Allow player to give Morphine
 	if((_legsBroke or _armsBroke) and _hasMorphine) then {
 		r_action = true;
-		_action = _unit addAction [localize "str_actions_medical_06", "\z\addons\dayz_code\medical\morphine.sqf",[_unit], 0, true, true, "", "'ItemMorphine' in magazines player"];
+		_action = _unit addAction [localize "str_actions_medical_06", "\z\addons\dayz_code\medical\morphine.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to give Painkillers
 	if(_inPain and _hasPainkillers) then {
 		r_action = true;
-		_action = _unit addAction [localize "str_actions_medical_07", "\z\addons\dayz_code\medical\painkiller.sqf",[_unit], 0, true, true, "", "'ItemPainkiller' in magazines player"];
+		_action = _unit addAction [localize "str_actions_medical_07", "\z\addons\dayz_code\medical\painkiller.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to transfuse blood
 	if(_lowBlood and _hasBlood) then {
 		r_action = true;
-		_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit], 0, true, true, "", "'ItemBloodbag' in magazines player"];
+		_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	
@@ -122,15 +125,15 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 
 		//CAN WE REFUEL THE OBJECT?
-		if ((fuel _unit < 1) and _hasJerry) then {
+		if ((fuel _unit < 1) and (_hasJerry or _hasBarrel)) then {
 			r_action = true;
-			_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",[_unit], 0, true, true, "", "'ItemJerrycan' in magazines player"];
+			_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",[_unit], 0, true, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];
 		};
 		//CAN WE siphon fuel from THE OBJECT?
-		if ((fuel _unit > 0) and _hasJerryE) then {
+		if ((fuel _unit > 0) and (_hasJerryE or _hasBarrelE)) then {
 			r_action = true;
-			_action = _unit addAction [format["Siphon fuel from %1",_typeVeh], "\z\addons\dayz_code\actions\siphonFuel.sqf",[_unit], 0, true, true, "", "'ItemJerrycanEmpty' in magazines player"];
+			_action = _unit addAction [format["Siphon fuel from %1",_typeVeh], "\z\addons\dayz_code\actions\siphonFuel.sqf",[_unit], 0, true, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];
 		};
 

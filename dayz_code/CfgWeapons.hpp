@@ -10,7 +10,12 @@ class CfgWeapons {
 			libtextdesc = "Debug Map - Admin use only";
 		};
 	};
-	
+	class ItemSmeltingKit: ItemCore {
+		displayname = "Smelting Kit";
+	};
+	class ItemAnvil: ItemCore {
+		displayname = "Anvil";
+	};
 	class ItemCompass: ItemCore {
 		model="z\addons\dayz_communityassets\models\compass.p3d";
 	};

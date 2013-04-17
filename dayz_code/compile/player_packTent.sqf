@@ -28,7 +28,7 @@ if(_ownerID == dayz_characterID) then {
 	
 	sleep 3;
 
-	_classname = 	getText (configFile >> "CfgMagazines" >> (typeOf_obj) >> "create");
+	_classname = 	getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "create");
 
 	_location = _pos;
 

@@ -35,7 +35,7 @@ dayz_disco = dayz_disco - [_playerID];
 if (!isNull _object) then {
 //Update Vehicle
 	{ [_x,"gear"] call server_updateObject } foreach 
-		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10]);
+		(nearestObjects [getPosATL _object, dayz_updateObjects, 10]);
 	if (alive _object) then {
 		[_object,(magazines _object),true,true] call server_playerSync;
 		//[_object,[],true,false] call server_playerSync;

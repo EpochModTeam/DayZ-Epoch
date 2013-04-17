@@ -110,6 +110,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	_isDog =  (cursorTarget isKindOf "DZ_Pastor" || cursorTarget isKindOf "DZ_Fin");
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
+	_isWreck = typeOf cursorTarget in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
 	_isTent = cursorTarget isKindOf "TentStorage";
 	_isFuel = false;
 	_isAlive = alive cursorTarget;
@@ -125,14 +126,14 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		};
 	} forEach _rawmeat; 
 	
-	
-	if (_hasFuelE) then {
+	if (_hasFuelE and dayz_oldrefuel) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army");
 	};
+
 	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
 	
 	//Allow player to delete objects
-	if(_isDestructable and _hasToolbox and _canDo) then {
+	if((_isDestructable or _isWreck) and _hasToolbox and _canDo) then {
 		if (s_player_deleteBuild < 0) then {
 			s_player_deleteBuild = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",cursorTarget, 1, true, true, "", ""];
 		};
@@ -204,13 +205,15 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 	
 	//Allow player to fill jerrycan
-	if(_hasFuelE and _isFuel and _canDo) then {
-		if (s_player_fillfuel < 0) then {
-			s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
+	if(dayz_oldrefuel) then {
+		if(_hasFuelE and _isFuel and _canDo) then {
+			if (s_player_fillfuel < 0) then {
+				s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
+			};
+		} else {
+			player removeAction s_player_fillfuel;
+			s_player_fillfuel = -1;
 		};
-	} else {
-		player removeAction s_player_fillfuel;
-		s_player_fillfuel = -1;
 	};
 	
 	// Human Gut animal or zombie

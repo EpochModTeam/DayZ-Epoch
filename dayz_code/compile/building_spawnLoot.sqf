@@ -2,8 +2,8 @@ private["_obj","_type","_config","_positions","_iPos","_nearBy","_itemType","_it
 
 _obj = 			_this select 0;
 
-// experiment to get true classname to prevent issues with case
-_type = configName (configFile >> "CfgVehicles" >> (typeOf _obj));
+// lower case to prevent issues with differing case for buildings from map to map.
+_type = toLower(typeOf _obj);
 
 diag_log format["Spawning loot for: %1", _type];
 _config = 		configFile >> "CfgBuildingLoot" >> _type;

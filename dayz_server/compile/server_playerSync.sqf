@@ -210,7 +210,7 @@ if (_characterID != "0") then {
 		_pos = _this select 0;
 		{
 			[_x, "gear"] call server_updateObject;
-		} forEach nearestObjects [_pos, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage"], 10];
+		} forEach nearestObjects [_pos, dayz_updateObjects, 10];
 		//[_charPos] call server_updateNearbyObjects;
 
 		//Reset timer

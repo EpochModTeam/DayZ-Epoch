@@ -650,6 +650,8 @@ class cfgMagazines
 			{
 				text = "Melt into Bars";
 				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemTinBar",1}};
 				input[] = {{"TrashTinCan",6}};
 			};
@@ -669,6 +671,8 @@ class cfgMagazines
 			{
 				text = "Melt into Bars";
 				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemAluminumBar",1}};
 				input[] = {{"ItemSodaEmpty",6}};
 			};
