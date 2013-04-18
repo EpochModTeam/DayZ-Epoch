@@ -1,4 +1,4 @@
-private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","_key"];
+private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_id","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond"];
 //check if can pitch here
 
 if(TradeInprogress) exitWith { cutText ["Vault pitching already in progress." , "PLAIN DOWN"]; };

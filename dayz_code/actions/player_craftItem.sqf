@@ -2,7 +2,7 @@
 * Crafting by [VB]AWOL
 * 	usage: spawn player_craftitem;
 */
-private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_id","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_isFireNear"];
+private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_id","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear"];
 
 if(TradeInprogress) exitWith { cutText ["Crafting already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -74,10 +74,16 @@ _reason = "";
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
-_crafting = "Crafting";
+if (count _this == 2) then {
+	_item = _this select 0;
+	_crafting = _this select 1; // "Crafting1"
+} else {
+	_item = _this;
+	_crafting = "Crafting";
+};
 
 // check if fire is reqired
-_needNear = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> _crafting >> "neednearby");
+_needNear = getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> _crafting >> "neednearby");
 
 if("fire" in _needNear) then {
 	_isNear = {inflamed _x} count (position player nearObjects _distance);
@@ -98,9 +104,10 @@ if (_canDo) then {
 	
 	// Moved all recipes input and outputs to configs
 
-	_selectedRecipeOutput = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> _crafting >> "output");
-	_selectedRecipeInput = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> _crafting >> "input");
-	_selectedRecipeTools = getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> _crafting >> "require");
+	_selectedRecipeOutput = getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> _crafting >> "output");
+	_selectedRecipeInput = getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> _crafting >> "input");
+	_selectedRecipeTools = getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> _crafting >> "requiretools");
+	_consumeweapons = getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> _crafting >> "consumeweapons");
 	
 	_missing = "";
 	_missingTools = false;
@@ -198,6 +205,11 @@ if (_canDo) then {
 
 					// Put items
 					{
+						// consumeweapons
+						{
+							player removeWeapon _x;
+						} forEach _consumeweapons;
+						
 						_itemOut = _x select 0;
 						_countOut = _x select 1;
 						diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
@@ -205,6 +217,8 @@ if (_canDo) then {
 						for "_x" from 1 to _countOut do {
 							player addMagazine _itemOut;
 						};
+
+						
 					
 						// get display name
 						_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");

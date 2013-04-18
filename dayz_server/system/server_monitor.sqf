@@ -100,6 +100,8 @@ serverVehicleCounter = [];
 				
 				if ((typeOf _object) in dayz_allowedObjects) then {
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
+					// Test disabling simulation server side on buildables only.
+					_object enableSimulation false;
 				};
 				
 				_object setdir _dir;
@@ -171,18 +173,21 @@ serverVehicleCounter = [];
 						if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
 						[_object,_selection,_dam] call object_setFixServer;
 					} forEach _hitpoints;
+
 					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
-					
-					if(_ownerID != "0") then {
-						_object setvehiclelock "locked";
-					};
 					_object call fnc_vehicleEventHandler;			
-					_totalvehicles = _totalvehicles + 1;
 
-					// total each vehicle
-					serverVehicleCounter set [count serverVehicleCounter,_type];
+					if (!((typeOf _object) in dayz_allowedObjects)) then {
+						if(_ownerID != "0") then {
+							_object setvehiclelock "locked";
+						};
+						
+						_totalvehicles = _totalvehicles + 1;
 
+						// total each vehicle
+						serverVehicleCounter set [count serverVehicleCounter,_type];
+					};
 				};
 
 				//Monitor the object

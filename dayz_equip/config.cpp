@@ -2181,6 +2181,26 @@ class CfgMagazines
 	};
 	
 	// BUILDING KITS
+		class 30m_plot_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "30 Meter Plot";
+		descriptionShort = "30 Meter Plot";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "Plastic_Pole_EP1_DZ";
+			};
+		};
+	};
 	class wooden_shed_kit: CA_Magazine
 	{
 		scope = 2;
@@ -2604,6 +2624,15 @@ class CfgVehicles
 	};
 	
 	// PLAYER BUILDINGS
+	class Plastic_Pole_EP1;
+	class Plastic_Pole_EP1_DZ: Plastic_Pole_EP1
+	{
+		scope = 2;
+		// destrType = "DestructNo"; 
+		offset[] = {0,2.5,0};
+		displayName = "30m Plot Pole";
+		vehicleClass = "Fortifications";
+	};
 	class USMC_WarfareBMGNest_M240;
 	class M240Nest_DZ: USMC_WarfareBMGNest_M240
 	{
@@ -2615,6 +2644,13 @@ class CfgVehicles
 		transportMaxWeapons = 4;
 		transportMaxBackpacks = 1;
 		constructioncount = 20;
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {};
+			};
+		};
 	};
 	class Land_covering_hut_EP1;
 	class CanvasHut_DZ: Land_covering_hut_EP1
@@ -2677,8 +2713,10 @@ class CfgVehicles
 	{
 		scope = 2;
 		offset[] = {0,2.5,1};
+		removeoutput[] = {{"ItemPole",2},{"PartGeneric",4},{"PartWoodLumber",2}};
 		displayName = "Corrugated Fence";
 		vehicleClass = "Fortifications";
+		
 	};
 	class Land_kulna;
 	class WoodShack_DZ: Land_kulna

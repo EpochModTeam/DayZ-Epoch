@@ -49,10 +49,11 @@ class CfgMagazines {
 				text = "Craft M240 Nest";
 				script = "spawn player_craftItem1;";
 				neednearby[] = {};
-				requiretools[] = {"ItemEtool","ItemToolbox"};
+				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
 				input[] = {{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
 				// TODO add consume weapon
+				consumeweapons[] = {"M240_DZ"};
 			};
 		};
 	};

@@ -1,4 +1,6 @@
 // bleed.sqf
+
+private ["_id","_unit"];
 _unit = (_this select 3) select 0;
 
 _unit setVariable ["USEC_inPain", false, true];

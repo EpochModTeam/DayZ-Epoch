@@ -1259,7 +1259,19 @@ class Citizen1;	// External class reference
 		transportFuel = 0;
 		fuelCapacity = 10000;
 	};
-
+	class V3S_Refuel_TK_GUE_EP1;
+	class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1
+	{
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		transportFuel = 0;
+		fuelCapacity = 10000;
+	};
 	
 
 };	

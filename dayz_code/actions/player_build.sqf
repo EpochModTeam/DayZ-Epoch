@@ -1,4 +1,4 @@
-private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_isBuilding","_started","_finished","_animState","_isMedic","_startcombattimer","_dis","_sfx","_hasbuilditem","_tmpbuilt","_buildings","_onLadder","_isWater","_require","_text","_offset"];
+private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_isBuilding","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_buildings","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object"];
 
 if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -14,12 +14,23 @@ if(_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26
 if(_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
 if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Cannot build while in combat.", "PLAIN DOWN"];};
 
+
+
+
 _item =			_this;
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
 
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
+
+// Allow building of plot
+if(_classname == "Plastic_Pole_EP1_DZ") then {
+	_IsNearPlot = 1;	
+} else {
+	_IsNearPlot =  count (position player nearObjects ["Plastic_Pole_EP1_DZ",30]);
+};
+if(_IsNearPlot == 0) exitWith {  TradeInprogress = false; cutText [format["Building requires plot within 30m %1",_missing] , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -57,6 +68,12 @@ if (_hasrequireditem) then {
 
 	while {_isOk} do {
 		
+		if (player getVariable["combattimeout", 0] >= time) exitWith {
+			_isOk = false;
+			_cancel = true;
+			_reason = "Cannot build while in combat.";
+		};
+
 		cutText ["Planning consruction stand still 5 seconds to build.", "PLAIN DOWN"];
 		
 		_location1 = getPosATL player;
@@ -115,7 +132,7 @@ if (_hasrequireditem) then {
 			_cancel = true;
 			_reason = "Cannot build inside another building.";
 		};
-	} forEach _buildings; 
+	} forEach _buildings;
 
 	// No building in trader zones
 	if(!placevault) then { _cancel = true; _reason = "Cannot build in a city."; };
@@ -126,8 +143,8 @@ if (_hasrequireditem) then {
 		
 		_limit = 5;
 
-		if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
-			_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
+		if(isNumber (configFile >> "CfgVehicles" >> _classname >> "constructioncount")) then {
+			_limit = getNumber(configFile >> "CfgVehicles" >> _classname >> "constructioncount");
 		};
 
 		_isOk = true;

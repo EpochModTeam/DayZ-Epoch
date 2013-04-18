@@ -1,4 +1,4 @@
-private ["_target","_ent","_cnt","_index","_wound","_damage","_rnd","_move"];
+private ["_target","_ent","_rnd","_move","_isZombie"];
 _target = _this select 3;
 _ent = _target;
 
@@ -6,7 +6,7 @@ _ent = _target;
 player removeAction s_player_pzombiesattack;
 s_player_pzombiesattack = 1;
 
-_rnd = round(random 9) + 1;
+_rnd = (round(random 9)) + 1;
 _move = "ZombieStandingAttack" + str(_rnd);
 player playMoveNow _move;
 

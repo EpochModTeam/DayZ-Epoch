@@ -5,7 +5,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- [] call fnc_usec_damageActions;
 ************************************************************/
 
-private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1","_action2","_x","_vehicle","_unit","_vehType","_displayName","_ammoQty","_ammoSerial","_weapon","_magTypes","_type","_typeVeh","_index","_inventory","_unitTo","_isEngineer","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasJerryE","_hasEtool","_hasWire","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_bag","_classbag"];
+private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1","_action2","_x","_vehicle","_unit","_vehType","_displayName","_ammoQty","_ammoSerial","_weapon","_magTypes","_type","_typeVeh","_index","_inventory","_unitTo","_isEngineer","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasJerryE","_hasEtool","_hasWire","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_bag","_classbag","_isDisallowRefuel","_hasBarrel","_hasBarrelE"];
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
 _vehicle = vehicle player;
@@ -41,6 +41,7 @@ if (_inVehicle) then {
 
 if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
 	_unit = 		cursorTarget;
+	_isDisallowRefuel = typeOf _unit in ["M240Nest_DZ"];
 	player reveal _unit;
 	_vehClose = 	(getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5]; //nearestObjects [player, ["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"], 5];
 	_hasVehicle = 	({alive _x} count _vehClose > 0);
@@ -120,7 +121,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	};
 	
 	//Repairs
-	if ((_unit isKindOf "AllVehicles") and !(_unit isKindOf "Man")) then {
+	if ((_unit isKindOf "AllVehicles") and !(_unit isKindOf "Man") and !_isDisallowRefuel) then {
 		_type = TypeOf(_unit);
 		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 

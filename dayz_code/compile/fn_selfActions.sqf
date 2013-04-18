@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private["_isPZombie","_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_allFixed","_hitpoints","_damage","_part","_cmpt","_color","_string","_handle","_trader_id","_category","_buy","_buy2","_buy3","_buy1","_buy4","_buy5","_cantrader","_cantrader1","_buy6","_zparts1","_zparts2","_zparts3","_zparts4","_metals1","_metals2","_metals4","_metals3","_metals5","_dogHandle","_lieDown","_warn"];
+private ["_isPZombie","_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip"];
 
 _vehicle = vehicle player;
 _isPZombie = player isKindOf "PZombie_VB";
@@ -69,6 +69,12 @@ if(_isPZombie) then {
 	if (s_player_pzombiesattack < 0) then {
 		s_player_pzombiesattack = player addAction ["Attack", "\z\addons\dayz_code\actions\pzombie\pz_attack.sqf",cursorTarget, 6, true, false, "",""];
 	};
+
+	if (s_player_pzombiesvision < 0) then {
+	
+		player setVariable ["NV", ["OFF", 0.02]];
+		s_player_pzombiesvision = player addAction ["Vision", "\z\addons\dayz_code\actions\pzombie\pz_vision.sqf", [], 0, false, true, "nightVision", "_this == _target"];
+	};
 	
 	if (!isNull cursorTarget and (player distance cursorTarget < 3)) then {	//Has some kind of target
 		_isAnimal = cursorTarget isKindOf "Animal";
@@ -103,6 +109,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
 	_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
+	_isnewstorage = typeOf cursorTarget in ["OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ"];
+	
 	_isMan = cursorTarget isKindOf "Man";
 	_traderType = typeOf cursorTarget;
 	_ownerID = cursorTarget getVariable ["characterID","0"];
@@ -111,6 +119,9 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isWreck = typeOf cursorTarget in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
+	_isRemovable = typeOf cursorTarget in ["Fence_corrugated_DZ"];
+	_isDisallowRepair = typeOf cursorTarget in ["M240Nest_DZ"];
+
 	_isTent = cursorTarget isKindOf "TentStorage";
 	_isFuel = false;
 	_isAlive = alive cursorTarget;
@@ -133,7 +144,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
 	
 	//Allow player to delete objects
-	if((_isDestructable or _isWreck) and _hasToolbox and _canDo) then {
+	if((_isDestructable or _isWreck or (_isRemovable and ("ItemCrowbar" in items player))) and _hasToolbox and _canDo) then {
 		if (s_player_deleteBuild < 0) then {
 			s_player_deleteBuild = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",cursorTarget, 1, true, true, "", ""];
 		};
@@ -185,7 +196,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 	*/
 
-	if((_isVehicle or _isTent or (cursorTarget isKindOf "VaultStorage")) and _isAlive and _canDo and !_isMan) then {
+	if((_isVehicle or _isTent or (cursorTarget isKindOf "VaultStorage") or _isnewstorage) and _isAlive and _canDo and !_isMan) then {
 		if (s_player_checkGear < 0) then {
 			s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\cargocheck.sqf",cursorTarget, 1, true, true, "", ""];
 		};
@@ -322,7 +333,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 
 
 	//Repairing Vehicles
-	if ((dayz_myCursorTarget != cursorTarget) and _isVehicle and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
+	if ((dayz_myCursorTarget != cursorTarget) and _isVehicle and !_isMan and _hasToolbox and (damage cursorTarget < 1) and !_isDisallowRepair) then {
 		
 		if (s_player_repair_crtl < 0) then {
 			
