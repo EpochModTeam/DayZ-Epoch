@@ -2633,6 +2633,9 @@ class CfgVehicles
 		displayName = "30m Plot Pole";
 		vehicleClass = "Fortifications";
 	};
+
+
+
 	class USMC_WarfareBMGNest_M240;
 	class M240Nest_DZ: USMC_WarfareBMGNest_M240
 	{
@@ -2644,13 +2647,7 @@ class CfgVehicles
 		transportMaxWeapons = 4;
 		transportMaxBackpacks = 1;
 		constructioncount = 20;
-		class Turrets : Turrets 
-		{
-			class MainTurret : MainTurret 
-			{
-				magazines[] = {};
-			};
-		};
+
 	};
 	class Land_covering_hut_EP1;
 	class CanvasHut_DZ: Land_covering_hut_EP1
