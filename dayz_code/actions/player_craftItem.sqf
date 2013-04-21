@@ -74,13 +74,8 @@ _reason = "";
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
-if (count _this == 2) then {
-	_item = _this select 0;
-	_crafting = _this select 1; // "Crafting1"
-} else {
-	_item = _this;
-	_crafting = "Crafting";
-};
+_item = _this;
+_crafting = "Crafting";
 
 // check if fire is reqired
 _needNear = getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> _crafting >> "neednearby");

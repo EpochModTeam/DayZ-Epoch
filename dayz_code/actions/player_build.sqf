@@ -30,7 +30,7 @@ if(_classname == "Plastic_Pole_EP1_DZ") then {
 } else {
 	_IsNearPlot =  count (position player nearObjects ["Plastic_Pole_EP1_DZ",30]);
 };
-if(_IsNearPlot == 0) exitWith {  TradeInprogress = false; cutText [format["Building requires plot within 30m %1",_missing] , "PLAIN DOWN"]; };
+if(_IsNearPlot == 0) exitWith {  TradeInprogress = false; cutText ["Building requires plot within 30m" , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -90,7 +90,7 @@ if (_hasrequireditem) then {
 			_reason = "Moving to fast."; 
 		};
 		
-		if(_counter >= 10) exitWith {
+		if(_counter >= 3) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Ran out of time to find position."; 
