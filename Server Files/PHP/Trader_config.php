@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Trader Config for DayZ Epoch 
 Use at your own risk this code may have bugs. 
@@ -7,19 +7,14 @@ Use at your own risk this code may have bugs.
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$host = "localhost";
+$host = "108.168.163.162";
 $port = "3306";
-$user = "USER";
+$user = "user";
 $db = "dayz_epoch";
 $pass = "PASS";
 
-$mysqli = new MySQLI($host, $user, $pass, $db, $port);
+$mysqli = new mysqli($host, $user, $pass, $db, $port);
 
-/* check connection */
-if (mysqli_connect_errno()) {
-    printf("Connect failed: %s\n", mysqli_connect_error());
-    exit();
-}
 
 print("<br/>");
 print("<a href='?instance=11'>Chernarus #11 Traders</a><br/>");
@@ -56,7 +51,7 @@ function buildHTMLselected ($array,$name,$buy_item) {
 	return $buy_html;
 }
 
-function traderConfigStart ($name) {
+function traderConfigStart ($desc,$name) {
 	return "
 // $desc
 menu_".$name." = [
@@ -70,7 +65,14 @@ function traderConfigEnd ($static,$status) {
 ];";
 }
 
-function get_tids ($trader_id,$mysqli) {
+function get_tids ($trader_id) {
+	global $host;
+	global $port;
+	global $user;
+	global $db;
+	global $pass;
+
+	$mysqli = new mysqli($host, $user, $pass, $db, $port);
 	
 	// Get Traders array from database
 	if ($stmt = $mysqli->prepare("SELECT `id`, `name`, `trader` FROM `trader_tids` WHERE trader=?")) {
@@ -88,12 +90,18 @@ function get_tids ($trader_id,$mysqli) {
 		return $format_output;
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 91';
 	}
 }
 
-function add_item($item_class,$item_type,$item_group,$item_afile,$mysqli) {
+function add_item($item_class,$item_type,$item_group,$item_afile) {
+	global $host;
+	global $port;
+	global $user;
+	global $db;
+	global $pass;
 
+	$mysqli = new mysqli($host, $user, $pass, $db, $port);
 	if ($stmt = $mysqli->prepare("INSERT INTO `trader_items` (`classname`,`type`,`group`,`afile`) VALUES (?,?,?,?)")) {
 
 		$stmt->bind_param("siss", $item_class, $item_type, $item_group, $item_afile);
@@ -104,14 +112,20 @@ function add_item($item_class,$item_type,$item_group,$item_afile,$mysqli) {
 		printf("%d Row Updated.\n", $stmt->affected_rows);
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 107';
 	}
 }
 
 
 // add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile);
-function add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile,$mysqli) {
-	 
+function add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile) {
+	global $host;
+	global $port;
+	global $user;
+	global $db;
+	global $pass;
+
+	$mysqli = new mysqli($host, $user, $pass, $db, $port);
 	if ($stmt = $mysqli->prepare("INSERT INTO `traders_data` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES (?,?,?,?,?,?,?)")) {
 
 		$stmt->bind_param("sissiis", $item, $qty, $buy, $sell, $order, $new_id,$afile);
@@ -122,12 +136,18 @@ function add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile,$mysqli) {
 		printf("%d Row Updated.\n", $stmt->affected_rows);
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 125';
 	}
 }
 
-function fill_with_template($tid,$new_id,$mysqli){
-	
+function fill_with_template($tid,$new_id){
+	global $host;
+	global $port;
+	global $user;
+	global $db;
+	global $pass;
+
+	$mysqli = new mysqli($host, $user, $pass, $db, $port);
 	// Find all items from template and add to new tid
 	if ($stmt = $mysqli->prepare("SELECT `item`, `qty`, `buy`, `sell`, `order`, `afile` FROM `traders_data` WHERE tid=?")) {
 		$stmt->bind_param("i", $tid);
@@ -136,12 +156,12 @@ function fill_with_template($tid,$new_id,$mysqli){
 		
 		while ($stmt->fetch()) {
 		
-			add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile,$mysqli);
+			add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile);
 			
 		}
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 144';
 	}
 }
 
@@ -149,7 +169,7 @@ function fill_with_template($tid,$new_id,$mysqli){
 
 // perform trader additions here
 if(isset($_POST['trader_classname']) && isset($_POST['trader_instance'])) {
-	
+
 	$stmt = $mysqli->prepare("INSERT INTO `server_traders` (`classname`, `instance`, `status`, `static`, `desc`) VALUES (?,?,?,?,?)");
 		
 	if ( false===$stmt ) {
@@ -195,13 +215,13 @@ if(isset($_POST['cat_name']) && !empty($_POST['cat_name']) && isset($_POST['trad
 		printf("%d Row Updated.\n", $stmt->affected_rows);
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 198';
 	}
 }
 
 // perform fill with template for existing tid
 if(isset($_POST['trader_template']) && !empty($_POST['trader_template']) && isset($_POST['t_id'])) {
-	fill_with_template($_POST['trader_template'],$_POST['t_id'],$mysqli);
+	fill_with_template($_POST['trader_template'],$_POST['t_id']);
 };
 
 // perform tid + template additions here
@@ -218,7 +238,7 @@ if(isset($_POST['trader_template']) && !empty($_POST['trader_template']) && isse
 
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 221';
 	}
 
 	if ($stmt = $mysqli->prepare("INSERT INTO `trader_tids` (`name`, `trader`) VALUES (?,?)")) {
@@ -234,7 +254,7 @@ if(isset($_POST['trader_template']) && !empty($_POST['trader_template']) && isse
 		
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 237';
 	}
 	
 	// Find all items from template and add to new tid
@@ -244,11 +264,11 @@ if(isset($_POST['trader_template']) && !empty($_POST['trader_template']) && isse
 		$stmt->bind_result($item, $qty ,$buy, $sell, $order, $afile );
 		
 		while ($stmt->fetch()) {		
-			add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile,$mysqli);
+			add_traders_data($item,$qty,$buy,$sell,$order,$new_id,$afile);
 		}
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 251';
 	}
 }
 
@@ -287,7 +307,7 @@ if(isset($_POST['add_item']) && !empty($_POST['add_item']) && isset($_GET['tid']
 		printf("%d Row Updated.\n", $stmt->affected_rows);
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 290';
 	}
 }
 
@@ -323,7 +343,7 @@ if(isset($_GET['show_dvs'])){
 		
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 326';
 	}
 	
 	echo $final_DVS;
@@ -344,7 +364,7 @@ if(isset($_GET['instance'])){
 		$build_tid_html .= '</select>';
 		$stmt->close();
 	} else {
-		echo 'error';
+		echo 'error 347';
 	}
 	
 	// add trader html
@@ -383,9 +403,9 @@ if(isset($_GET['instance'])){
 			
 			$make_traders_list .= '"'.$name.'",';
 
-			$per_trader_config .= traderConfigStart($name);
+			$per_trader_config .= traderConfigStart($desc,$name);
 			// find all tids for trader
-			$per_trader_config .= rtrim(get_tids ($id,$mysqli),",");	
+			$per_trader_config .= rtrim(get_tids ($id),",");	
 			$per_trader_config .= traderConfigEnd($static,$status);
 		}
 		$stmt->close();
