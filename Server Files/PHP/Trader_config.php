@@ -7,7 +7,7 @@ Use at your own risk this code may have bugs.
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$host = "108.168.163.162";
+$host = "localhost";
 $port = "3306";
 $user = "user";
 $db = "dayz_epoch";
