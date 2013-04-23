@@ -899,6 +899,7 @@ class Citizen1;	// External class reference
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 		canCarryBackPack = 1;
+		attendant = 0; 
 	};
 	class FR_Rodriguez;
 	class FR_Rodriguez_DZ: FR_Rodriguez {
