@@ -1721,10 +1721,11 @@ class HeliCrash_No50s: Default {
 			{ "Winchester1866","weapon" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
-			{ "PartWoodPile","magazine" },
+			{ "PartWoodPile","magazine" },			
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "MR43","weapon" },
 			{"WeaponHolder_ItemMachete", "object"}
+			{ "20Rnd_762x51_SB_SCAR","magazine" },
 			{ "SCAR_H_LNG_Sniper_SD","weapon" },
 			
 	};
@@ -1751,6 +1752,7 @@ class HeliCrash_No50s: Default {
 			0.17,
 			0.06,
 			0.03,
+			0.03
 			0.01
 		};
 	};
