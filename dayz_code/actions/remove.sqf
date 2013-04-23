@@ -12,19 +12,47 @@ _proceed = false;
 _objType = typeOf _obj;
 
 _limit = 5;
-
 if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
 	_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
 };
 
+_findNearestPole = [player, ["Plastic_Pole_EP1_DZ"], 30];
+_IsNearPlot =  count (_findNearestPole);
+
+if(_IsNearPlot >= 1) then {
+
+	_nearestPole = _findNearestPole select 0;
+
+	// Find owner 
+	_ownerID = _nearestPole getVariable["CharacterID","0"];
+
+	// check if friendly to owner
+	if(dayz_characterID != _ownerID) then {
+		
+		_friendlies		= player getVariable ["friendlies",[]];
+		// check if friendly to owner
+		if(!(_ownerID in _friendlies)) then {
+			_limit = round(_limit*2);
+		};
+	};
+};
+
+
+
 cutText [format["Starting de-construction of %1.",_objType], "PLAIN DOWN"];
 
 // Alert zombies once.
-_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+[player,50,true,(getPosATL player)] spawn player_alertZombies;
 
 // Start de-construction loop
 _counter = 0;
 while {_isOk} do {
+
+	// if object no longer exits this should return true.
+	if(isNull(_obj)) exitWith {
+		_isOk = false;
+		_proceed = false;
+	};
 
 	player playActionNow "Medic";
 	_dis=20;
@@ -51,6 +79,7 @@ while {_isOk} do {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
+		
 		sleep 0.1;
 		
 	};
@@ -75,29 +104,35 @@ while {_isOk} do {
 
 // Remove only if player waited
 if (_proceed) then {
-	cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
 	
-	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
-	dayzDeleteObj = [_objectID,_objectUID];
-	publicVariableServer "dayzDeleteObj";
+	// Double check that object is not null
+	if(!isNull(_obj)) then {
+		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
+	
+		//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+		dayzDeleteObj = [_objectID,_objectUID];
+		publicVariableServer "dayzDeleteObj";
 
-	deleteVehicle _obj;
+		deleteVehicle _obj;
 
-	// give refund items
-	_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
-	if((count _selectedRemoveOutput) > 0) then {
-		// Put items
-		{
-			_itemOut = _x select 0;
-			_countOut = _x select 1;
-			diag_log format["Removal Output: %1 %2", _itemOut,_countOut];
+		// give refund items
+		_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+		if((count _selectedRemoveOutput) > 0) then {
+			// Put items
+			{
+				_itemOut = _x select 0;
+				_countOut = _x select 1;
+				diag_log format["Removal Output: %1 %2", _itemOut,_countOut];
 		
-			for "_x" from 1 to _countOut do {
-				player addMagazine _itemOut;
-			};
+				for "_x" from 1 to _countOut do {
+					player addMagazine _itemOut;
+				};
 				
-		} forEach _selectedRemoveOutput;
-		cutText ["De-constructed parts are now in your inventory.", "PLAIN DOWN"];
+			} forEach _selectedRemoveOutput;
+			cutText ["De-constructed parts are now in your inventory.", "PLAIN DOWN"];
+		};
+	} else {
+		cutText ["Failed object not longer exists.", "PLAIN DOWN"];
 	};
 
 } else {

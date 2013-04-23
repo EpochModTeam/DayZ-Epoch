@@ -116,22 +116,28 @@ if (_qty >= _qty_in) then {
 					cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 				} else {
-					// Sell Vehicle
-					for "_x" from 1 to _qty_out do {
-						player addMagazine _part_out;
+
+					if((damage _obj) >= 0.75) then {
+						// Sell Vehicle
+						for "_x" from 1 to _qty_out do {
+							player addMagazine _part_out;
+						};
+
+						_obj = _obj select 0;
+						_objectID 	= _obj getVariable ["ObjectID","0"];
+						_objectUID	= _obj getVariable ["ObjectUID","0"];
+
+						//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+						dayzDeleteObj = [_objectID,_objectUID];
+						publicVariableServer "dayzDeleteObj";
+
+						deleteVehicle _obj; 
+
+						cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					} else {
+						_dampercent = (damage _obj) * 100;
+						cutText [format[("Cannot sell %1 it is %2% damaged and cannot be sold under 75%."),_textPartIn,_dampercent], "PLAIN DOWN"];
 					};
-
-					_obj = _obj select 0;
-					_objectID 	= _obj getVariable ["ObjectID","0"];
-					_objectUID	= _obj getVariable ["ObjectUID","0"];
-
-					//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
-					dayzDeleteObj = [_objectID,_objectUID];
-					publicVariableServer "dayzDeleteObj";
-
-					deleteVehicle _obj; 
-
-					cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 				};
 	

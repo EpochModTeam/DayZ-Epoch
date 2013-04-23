@@ -128,13 +128,13 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 		//CAN WE REFUEL THE OBJECT?
 		if ((fuel _unit < 1) and (_hasJerry or _hasBarrel)) then {
 			r_action = true;
-			_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",[_unit], 0, true, true, "", ""];
+			_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",[], 0, true, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];
 		};
 		//CAN WE siphon fuel from THE OBJECT?
 		if ((fuel _unit > 0) and (_hasJerryE or _hasBarrelE)) then {
 			r_action = true;
-			_action = _unit addAction [format["Siphon fuel from %1",_typeVeh], "\z\addons\dayz_code\actions\siphonFuel.sqf",[_unit], 0, true, true, "", ""];
+			_action = _unit addAction [format["Siphon fuel from %1",_typeVeh], "\z\addons\dayz_code\actions\siphonFuel.sqf",[], 0, true, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];
 		};
 

@@ -887,7 +887,59 @@ class Citizen1;	// External class reference
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 	};
-
+	class FR_OHara;
+	class FR_OHara_DZ: FR_OHara {
+		displayName = "Jungle Camo";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class FR_Rodriguez;
+	class FR_Rodriguez_DZ: FR_Rodriguez {
+		displayName = "Gunner Outfit";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class CZ_Soldier_Sniper_EP1;
+	class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
+		displayName = "Desert Guille";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class Graves_Light;
+	class Graves_Light_DZ: Graves_Light {
+		displayName = "Urban Camo";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	
 
 	class BAF_Soldier_W;
 	class Soldier1_DZ: BAF_Soldier_W {

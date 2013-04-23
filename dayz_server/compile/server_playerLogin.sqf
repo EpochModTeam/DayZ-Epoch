@@ -99,7 +99,13 @@ if (!_isNew) then {
 	};
 
 	//Record initial inventory
-	_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
+	
+	if(isclass(missionConfigFile >> "CfgSurvival_override")) then {
+		_config = (missionConfigFile >> "CfgSurvival_override" >> "Inventory" >> "Default");
+	} else {
+		_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
+	};
+
 	_mags = getArray (_config >> "magazines");
 	_wpns = getArray (_config >> "weapons");
 	_bcpk = getText (_config >> "backpack");

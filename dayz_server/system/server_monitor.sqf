@@ -174,11 +174,13 @@ serverVehicleCounter = [];
 						[_object,_selection,_dam] call object_setFixServer;
 					} forEach _hitpoints;
 
-					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
-					_object call fnc_vehicleEventHandler;			
 
 					if (!((typeOf _object) in dayz_allowedObjects)) then {
+						
+						_object setvelocity [0,0,1];
+						_object call fnc_vehicleEventHandler;			
+						
 						if(_ownerID != "0") then {
 							_object setvehiclelock "locked";
 						};

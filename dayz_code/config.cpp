@@ -40,7 +40,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.0.4";
+		version = "1.0.0.5";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -379,6 +379,27 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Soldier_Bodyguard_AA12_PMC_DZ";
 		};
+
+		class Skin_FR_OHara_DZ: Default
+		{
+			sex = "male";
+			playerModel = "FR_OHara_DZ";
+		};
+		class Skin_FR_Rodriguez_DZ: Default
+		{
+			sex = "male";
+			playerModel = "FR_Rodriguez_DZ";
+		};
+		class Skin_CZ_Soldier_Sniper_EP1_DZ: Default
+		{
+			sex = "male";
+			playerModel = "CZ_Soldier_Sniper_EP1_DZ";
+		};
+		class Skin_Graves_Light_DZ: Default
+		{
+			sex = "male";
+			playerModel = "Graves_Light_DZ";
+		};
 		
 		class Skin_Drake_Light_DZ: Default {
 			sex = "male";
@@ -439,6 +460,7 @@ class CfgBuildingLoot {
 			{ "ItemCompass","generic" },
 			{ "ItemMap","weapon" },
 			{ "Makarov","weapon" },
+			{ "MakarovSD","weapon" },
 			{ "Colt1911","weapon" },
 			{ "ItemFlashlight","generic" },
 			{ "ItemKnife","generic" },
@@ -474,6 +496,7 @@ class CfgBuildingLoot {
 			0.05,
 			0.03,
 			0.13,
+			0.03,
 			0.05,
 			0.03,
 			0.08,
@@ -817,7 +840,8 @@ class HeliCrash_No50s: Default {
 			{ "","medical" },
 			{ "","generic" },
 			{ "","military" },
-			//{"Body","object"},
+			{ "Sa61_EP1","weapon"},
+			{ "UZI_SD_EP1","weapon"},
 			{ "ItemEtool","weapon" },
 			{"ItemSandbag","magazine"},
 			{"Sa58P_EP1","weapon"},
@@ -859,7 +883,8 @@ class HeliCrash_No50s: Default {
 			0.10,
 			1.00,
 			2.50,
-			//0.20,
+			0.05, // Sa61_EP1
+			0.02, //UZI_SD_EP1
 			0.05,
 			0.02,
 			0.03,
@@ -879,7 +904,7 @@ class HeliCrash_No50s: Default {
 			{ "M16A2GL","weapon" },
 			{ "M249_DZ","weapon" },
 			{ "M9SD","weapon" },
-			//{"M136","weapon"},
+			{ "Pecheneg_DZ","weapon"},
 			{ "AK_74","weapon" },
 			{ "M4A1_Aim","weapon" },
 			{ "AKS_74_kobra","weapon" },
@@ -936,7 +961,7 @@ class HeliCrash_No50s: Default {
 			0.05,
 			0.01,
 			0.02,
-			//0.01, //m136
+			0.01, //PKP
 			0.10,
 			0.02,
 			0.10,
@@ -1653,7 +1678,7 @@ class HeliCrash_No50s: Default {
 			{ "ItemWatch","generic" },
 			{ "ItemCompass","generic" },
 			{ "ItemMap","weapon" },
-			{ "Makarov","weapon" },
+			{ "MakarovSD","weapon" },
 			{ "Colt1911","weapon" },
 			{ "ItemFlashlight","generic" },
 			{ "ItemKnife","generic" },
@@ -1682,6 +1707,7 @@ class HeliCrash_No50s: Default {
 			{ "ItemCompass","generic" },
 			{ "ItemMap","weapon" },
 			{ "Makarov","weapon" },
+			{ "MakarovSD","weapon" },
 			{ "Colt1911","weapon" },
 			
 			{ "ItemKnife","generic" },
@@ -1699,12 +1725,15 @@ class HeliCrash_No50s: Default {
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "MR43","weapon" },
 			{"WeaponHolder_ItemMachete", "object"}
+			{ "SCAR_H_LNG_Sniper_SD","weapon" },
+			
 	};
 		itemChance[] =	{
 			0.06,
 			0.08,
 			0.05,
 			0.06,
+			0.03,
 			0.08,
 			
 			0.05,
@@ -1721,7 +1750,8 @@ class HeliCrash_No50s: Default {
 			0.11,
 			0.17,
 			0.06,
-			0.03
+			0.03,
+			0.01
 		};
 	};
 	class Land_House_C_1_EP1: Residential

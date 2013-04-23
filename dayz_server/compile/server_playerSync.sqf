@@ -164,14 +164,14 @@ if (_characterID != "0") then {
 			_currentWpn = "";
 		} else {
 			if ( typeName(_currentWpn) == "STRING" ) then {
-			_muzzles = getArray(configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
-			if (count _muzzles > 1) then {
-				_currentWpn = currentMuzzle _character;
-			};	
+				_muzzles = getArray(configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
+				if (count _muzzles > 1) then {
+					_currentWpn = currentMuzzle _character;
+				};	
 			} else {
 				//diag_log ("DW_DEBUG: _currentWpn: " + str(_currentWpn));
-			_currentWpn = "";
-				};
+				_currentWpn = "";
+			};
 		};
 		_temp = round(_character getVariable ["temperature",100]);
 		_currentState = [_currentWpn,_currentAnim,_temp];

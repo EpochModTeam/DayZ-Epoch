@@ -1030,7 +1030,7 @@ class CfgMagazines
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentDomed",1}};
-				input[] = {{"ItemCanvas",2},{"ItemPole",2}};
+				input[] = {{"ItemCanvas",3},{"ItemPole",2}};
 			};
 			class Crafting2
 			{
@@ -1254,6 +1254,30 @@ class CfgMagazines
 		displayName = "Bodyguard";
 		descriptionShort = "Bodyguard";
 	};
+	class Skin_FR_OHara_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Jungle Camo";
+		descriptionShort = "Jungle Camo";
+	};
+	class Skin_FR_Rodriguez_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Gunner Outfit";
+		descriptionShort = "Gunner Outfit";
+	};
+	class Skin_CZ_Soldier_Sniper_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Desert Guille";
+		descriptionShort = "Desert Guille";
+	};
+	class Skin_Graves_Light_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Urban Camo";
+		descriptionShort = "Urban Camo";
+	};
 	class Skin_Soldier_Sniper_PMC_DZ: SkinBase
 	{
 		scope = 2;
@@ -1469,11 +1493,11 @@ class CfgMagazines
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Wood Lumber";
+		displayName = "Lumber";
 		// TODO make custom model and icon
 		model = "\dayz_equip\models\woodPile.p3d";
 		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
-		descriptionShort = "Wood Lumber";
+		descriptionShort = "Lumber";
 		class ItemActions {
 			class Build {
 				text = "Build Wood Gate";
@@ -2371,6 +2395,16 @@ class CfgMagazines
 		model = "\dayz_equip\models\generator_gear.p3d";
 		picture = "\dayz_equip\textures\equip_generator_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_31";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Generator_DZ";
+			};
+		};
 	};
 	// Custom player vault
 	class ItemVault: CA_Magazine
@@ -2564,8 +2598,25 @@ class CfgVehicles
 		armor = 400;
 		displayName = "Hedgehog (Steel)";
 		vehicleClass = "Fortifications";
-		constructioncount = 10;
+		constructioncount = 5;
+		removeoutput[] = {{"ItemTankTrap",1}};
 	};
+	class Generator_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model = "\dayz_equip\models\generator.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 400;
+		displayName = "Generator";
+		vehicleClass = "Fortifications";
+		constructioncount = 5;
+		removeoutput[] = {{"ItemGenerator",1}};
+	};
+	
 
 
 	class Fort_RazorWire : BuiltItems { 
@@ -2595,7 +2646,8 @@ class CfgVehicles
 		armor = 400;
 		displayName = "Bag Fence";
 		vehicleClass = "Fortifications";
-		constructioncount = 10;
+		constructioncount = 5;
+		removeoutput[] = {{"ItemSandbag",1}};
 	};
 
 	class Land_HBarrier1_DZ : BuiltItems { 
@@ -2603,7 +2655,7 @@ class CfgVehicles
 		animated = 0; 
 		vehicleClass = "Fortifications"; 
 		typicalCargo[] = {}; 
-		offset[] = {0,1.5,0.5};
+		offset[] = {0,2,0};
 		irTarget = 0; 
 		accuracy = 0.3; 
 		transportAmmo = 0; 
@@ -2620,7 +2672,8 @@ class CfgVehicles
 		mapSize = 2; 
 		displayName = "H-barrier cube"; 
 		GhostPreview = "Land_HBarrier1Preview"; 
-		constructioncount = 20;
+		constructioncount = 10;
+		removeoutput[] = {{"ItemSandbagLarge",1}};
 	};
 	
 	// PLAYER BUILDINGS
@@ -2646,8 +2699,9 @@ class CfgVehicles
 		transportMaxMagazines = 25;
 		transportMaxWeapons = 4;
 		transportMaxBackpacks = 1;
-		constructioncount = 20;
-
+		constructioncount = 10;
+		removeoutput[] = {{"m240_nest_kit",1}};
+		
 	};
 	class Land_covering_hut_EP1;
 	class CanvasHut_DZ: Land_covering_hut_EP1
@@ -2672,6 +2726,7 @@ class CfgVehicles
 		offset[] = {0,2.5,1};
 		displayName = "Rusty Gate";
 		vehicleClass = "Fortifications";
+		removeoutput[] = {{"rusty_gate_kit",1}};
 	};
 	class Land_KBud;
 	class OutHouse_DZ: Land_KBud
@@ -2683,7 +2738,7 @@ class CfgVehicles
 		transportMaxMagazines = 4;
 		transportMaxWeapons = 1;
 		transportMaxBackpacks = 1;
-		constructioncount = 10;
+		constructioncount = 5;
 		class transportmagazines
 		{
 			class _xx_ItemTrashToiletpaper
@@ -2703,14 +2758,14 @@ class CfgVehicles
 		transportMaxMagazines = 400;
 		transportMaxWeapons = 40;
 		transportMaxBackpacks = 20;
-		constructioncount = 20;
+		constructioncount = 10;
 	};
 	class Fence_corrugated_plate;
 	class Fence_corrugated_DZ: Fence_corrugated_plate
 	{
 		scope = 2;
 		offset[] = {0,2.5,1};
-		removeoutput[] = {{"ItemPole",2},{"PartGeneric",4},{"PartWoodLumber",2}};
+		removeoutput[] = {{"ItemCorrugated",1}};
 		displayName = "Corrugated Fence";
 		vehicleClass = "Fortifications";
 		
@@ -2728,7 +2783,7 @@ class CfgVehicles
 		transportMaxMagazines = 100;
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
-		constructioncount = 20;
+		constructioncount = 10;
 	};
 	class Land_Shed_wooden;
 	class Wooden_shed_DZ: Land_Shed_wooden
@@ -2864,7 +2919,8 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Machete";
-		model="\z\addons\dayz_communityassets\models\machete.p3d";
+		// test model="\z\addons\dayz_communityassets\models\machete.p3d";
+		model = "\dayz_equip\models\hatchet.p3d";
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";

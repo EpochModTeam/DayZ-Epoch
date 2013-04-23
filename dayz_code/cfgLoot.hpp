@@ -32,7 +32,8 @@ class CfgLoot {
 			"2Rnd_shotgun_74Pellets",
 			"ItemBandage",
 			"ItemPainkiller",
-			"FoodBioMeat"
+			"FoodBioMeat",
+			"8Rnd_9x18_Makarov"
 		},
 		{
 			0.09,
@@ -50,6 +51,7 @@ class CfgLoot {
 			0.05,
 			0.06,
 			0.06,
+			0.01,
 			0.01
 		}
 	};
@@ -221,7 +223,10 @@ class CfgLoot {
 			"HandChemBlue",
 			"HandChemRed",
 			"ItemHeatPack",
-			"FoodMRE"
+			"FoodMRE",
+			"8Rnd_9x18_MakarovSD",
+			"20Rnd_B_765x17_Ball",
+			"30Rnd_9x19_UZI_SD"
 		},
 		{
 			0.18,
@@ -260,7 +265,10 @@ class CfgLoot {
 			0.02,
 			0.02,
 			0.04,
-			0.03
+			0.03,
+			0.01,
+			0.04,
+			0.01,
 		}
 	};
 	policeman[] = {
@@ -373,6 +381,10 @@ class CfgLoot {
 			"Skin_Soldier_Sniper_PMC_DZ",
 			"Skin_Soldier_Bodyguard_AA12_PMC_DZ",
 			"Skin_CZ_Special_Forces_GL_DES_EP1_DZ",
+			"Skin_FR_OHara_DZ",
+			"Skin_FR_Rodriguez_DZ",
+			"Skin_CZ_Soldier_Sniper_EP1_DZ",
+			"Skin_Graves_Light_DZ"
 		},
 		{
 			0.03, // "Skin_Camo1_DZ",
@@ -384,6 +396,10 @@ class CfgLoot {
 			0.02, // Skin_Soldier_Sniper_PMC_DZ
 			0.02, // Skin_Soldier_Bodyguard_AA12_PMC_DZ
 			0.02, // Skin_CZ_Special_Forces_GL_DES_EP1_DZ
+			0.01, // "Skin_FR_OHara_DZ",
+			0.01, // "Skin_FR_Rodriguez_DZ",
+			0.01, // "Skin_CZ_Soldier_Sniper_EP1_DZ",
+			0.01, // "Skin_Graves_Light_DZ"
 		}
 	};
 	specialclothes[] = {

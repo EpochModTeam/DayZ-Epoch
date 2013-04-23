@@ -502,6 +502,11 @@ class cfgWeapons
 	{
 		type = "1";
 	};
+	class Pecheneg;
+	class Pecheneg_DZ: Pecheneg
+	{
+		type = "1";
+	};
 };
 class cfgMagazines
 {

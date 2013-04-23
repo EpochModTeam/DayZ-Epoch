@@ -7,15 +7,13 @@ _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animati
 _isWater = 		(surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 _cancel = false;
 _reason = "";
+_canBuildOnPlot = false;
 
 call gear_ui_init;
 
 if(_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
 if(_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
 if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Cannot build while in combat.", "PLAIN DOWN"];};
-
-
-
 
 _item =			_this;
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
@@ -24,13 +22,56 @@ _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> 
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
-// Allow building of plot
-if(_classname == "Plastic_Pole_EP1_DZ") then {
-	_IsNearPlot = 1;	
+// check for near plot
+_findNearestPole = [player, ["Plastic_Pole_EP1_DZ"], 30];
+
+_IsNearPlot =  count (_findNearestPole);
+
+if(_IsNearPlot == 0) then {
+
+	// Allow building of plot
+	if(_classname == "Plastic_Pole_EP1_DZ") then {
+		if(count ([player, ["Plastic_Pole_EP1_DZ"], 60]) == 0) then {
+			_canBuildOnPlot = true;	
+		};
+	};
+	
 } else {
-	_IsNearPlot =  count (position player nearObjects ["Plastic_Pole_EP1_DZ",30]);
+	// Since there are plots nearby we check for ownership and then for friend status
+	
+	// select closest pole
+	_nearestPole = _findNearestPole select 0;
+
+	// Find owner 
+	_ownerID = _nearestPole getVariable["CharacterID","0"];
+
+	// check if friendly to owner
+	if(dayz_characterID == _ownerID) then {
+		// owner can build anything within his plot
+		
+		if(_classname == "Plastic_Pole_EP1_DZ") then {
+			if(count ([player, ["Plastic_Pole_EP1_DZ"], 30]) == 0) then {
+				_canBuildOnPlot = true;	
+			};
+		} else {
+			_canBuildOnPlot = true;	
+		};
+		
+	} else {
+		// not the owner so check if user is friendly to owner.
+
+		_friendlies		= player getVariable ["friendlies",[]];
+		// check if friendly to owner
+		if(_ownerID in _friendlies) then {
+			if(_classname != "Plastic_Pole_EP1_DZ") then {
+				_canBuildOnPlot = true;
+			};
+		};
+	};
 };
-if(_IsNearPlot == 0) exitWith {  TradeInprogress = false; cutText ["Building requires plot within 30m" , "PLAIN DOWN"]; };
+
+
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText ["Building requires plot within 30m" , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;

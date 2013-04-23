@@ -88,7 +88,7 @@ if (count _worldspace > 0) then {
 	// Came from another server force random spawn
 	if (_lastinstance != dayZ_instance) then {
 		_randomSpot = true;
-	}
+	};
 
 	//_playerObj setPosATL _position;
 } else {
