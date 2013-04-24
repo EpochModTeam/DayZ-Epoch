@@ -52,11 +52,13 @@ if (_finished) then {
 
 		// Sound_Generator1
 		// Looks like this was the entended way of making the sound, lets test
-		_classname = "Sound_Generator1";
+		//_classname = "Sound_Generator1";
 
-		_location = (getPosATL _vehicle);
+		//_location = (getPosATL _vehicle);
 
-		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+		//_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+
+		_soundSource = createSoundSource ["Generator1", position player, [], 0]
 
 		// TODO: Add running sounds to generator
 		cutText ["Generator has been started.", "PLAIN DOWN"];

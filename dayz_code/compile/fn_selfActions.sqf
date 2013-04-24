@@ -347,7 +347,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 
 	//Start Generator
-	if(cursorTarget isKindOf "Generator_DZ" and _canDo and ("ItemJerrycan" in magazines player) and cursorTarget getVariable ["GeneratorRunning", 0] == 0) then {
+	if(cursorTarget isKindOf "Generator_DZ" and _canDo and ("ItemJerrycan" in magazines player) and (cursorTarget getVariable ["GeneratorRunning", false])) then {
 		if ((s_player_fillgen < 0) and (player distance cursorTarget < 3)) then {
 			s_player_fillgen = player addAction ["Fill and Start Generator", "\z\addons\dayz_code\actions\fill_startGenerator.sqf",cursorTarget, 0, false, true, "",""];
 		};
