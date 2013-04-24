@@ -16,7 +16,7 @@ if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) th
 	_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
 };
 
-_findNearestPole = [player, ["Plastic_Pole_EP1_DZ"], 30];
+_findNearestPole = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 30];
 _IsNearPlot =  count (_findNearestPole);
 
 if(_IsNearPlot >= 1) then {

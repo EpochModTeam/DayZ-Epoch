@@ -58,7 +58,7 @@ if (_finished) then {
 
 		//_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 
-		_soundSource = createSoundSource ["Generator1", position player, [], 0]
+		_soundSource = createSoundSource ["Generator1", position player, [], 0];
 
 		// TODO: Add running sounds to generator
 		cutText ["Generator has been started.", "PLAIN DOWN"];

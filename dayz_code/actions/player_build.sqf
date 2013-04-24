@@ -23,7 +23,7 @@ _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
 // check for near plot
-_findNearestPole = [player, ["Plastic_Pole_EP1_DZ"], 30];
+_findNearestPole = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 30];
 
 _IsNearPlot =  count (_findNearestPole);
 
@@ -31,7 +31,7 @@ if(_IsNearPlot == 0) then {
 
 	// Allow building of plot
 	if(_classname == "Plastic_Pole_EP1_DZ") then {
-		if(count ([player, ["Plastic_Pole_EP1_DZ"], 60]) == 0) then {
+		if(count (nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 60]) == 0) then {
 			_canBuildOnPlot = true;	
 		};
 	};
