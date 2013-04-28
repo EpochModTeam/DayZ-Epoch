@@ -3,6 +3,9 @@ private ["_vehicle","_started","_finished","_animState","_isMedic"];
 if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
+player removeAction s_player_fillgen;
+
+
 // Use target from addaction
 _vehicle = 	_this select 3;
 
@@ -40,29 +43,49 @@ if(!_finished) then {
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;
 	player playActionNow "stop";
-	cutText ["Canceled refuel." , "PLAIN DOWN"]
+	cutText ["Canceled." , "PLAIN DOWN"]
 };
 
 if (_finished) then {
-	// take jerry can and replace with empty 
-	if(([player,"ItemJerrycan"] call BIS_fnc_invRemove) == 1) then {
-		player addMagazine "ItemJerrycanEmpty";
+	// take jerry can and replace with empty
+	
+	if(!(_vehicle getVariable ["GeneratorFilled", false]) and ("ItemJerrycan" in magazines player)) then {
+	 
+		if(([player,"ItemJerrycan"] call BIS_fnc_invRemove) == 1) then {
+		
+			player addMagazine "ItemJerrycanEmpty";
+
+			// mark as once filled
+			_vehicle setVariable ["GeneratorFilled", true,true];
+		
+			// Start generator
+			_vehicle setVariable ["GeneratorRunning", true,true];
+
+			// Sound_Generator1
+			// Looks like this was the entended way of making the sound, lets test
+			_soundSource = createSoundSource ["Sound_Generator1", position player, [], 0];
+
+			_vehicle setVariable ["GeneratorSound", _soundSource,true];
+
+			// TODO: Add running sounds to generator
+			cutText ["Generator has been started.", "PLAIN DOWN"];
+		};
+	} else {
+	
 		// Start generator
 		_vehicle setVariable ["GeneratorRunning", true,true];
 
 		// Sound_Generator1
 		// Looks like this was the entended way of making the sound, lets test
-		//_classname = "Sound_Generator1";
+		_soundSource = createSoundSource ["Sound_Generator1", position player, [], 0];
 
-		//_location = (getPosATL _vehicle);
-
-		//_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-
-		_soundSource = createSoundSource ["Generator1", position player, [], 0];
+		_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
 		// TODO: Add running sounds to generator
 		cutText ["Generator has been started.", "PLAIN DOWN"];
+
 	};
 };
 
 TradeInprogress = false;
+s_player_fillgen = -1;

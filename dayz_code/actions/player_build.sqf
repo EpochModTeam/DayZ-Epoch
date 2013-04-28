@@ -23,55 +23,53 @@ _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
 // check for near plot
-_findNearestPole = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 30];
+_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], 30];
+_findNearestPole = [];
+{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
 
-_IsNearPlot =  count (_findNearestPole);
+_IsNearPlot = count (_findNearestPole);
 
 if(_IsNearPlot == 0) then {
 
 	// Allow building of plot
 	if(_classname == "Plastic_Pole_EP1_DZ") then {
-		if(count (nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 60]) == 0) then {
+		if({alive _x} count (nearestObjects[(vehicle player), ["Plastic_Pole_EP1_DZ"], 45]) == 0) then {
 			_canBuildOnPlot = true;	
 		};
 	};
 	
 } else {
 	// Since there are plots nearby we check for ownership and then for friend status
-	
-	// select closest pole
+
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner 
 	_ownerID = _nearestPole getVariable["CharacterID","0"];
 
+	diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
+
 	// check if friendly to owner
 	if(dayz_characterID == _ownerID) then {
-		// owner can build anything within his plot
-		
-		if(_classname == "Plastic_Pole_EP1_DZ") then {
-			if(count ([player, ["Plastic_Pole_EP1_DZ"], 30]) == 0) then {
-				_canBuildOnPlot = true;	
-			};
-		} else {
-			_canBuildOnPlot = true;	
+		// owner can build anything within his plot except other plots witin
+		if(_classname != "Plastic_Pole_EP1_DZ") then {
+			_canBuildOnPlot = true;
 		};
 		
 	} else {
-		// not the owner so check if user is friendly to owner.
-
-		_friendlies		= player getVariable ["friendlies",[]];
-		// check if friendly to owner
-		if(_ownerID in _friendlies) then {
-			if(_classname != "Plastic_Pole_EP1_DZ") then {
+		// disallow building plot
+		if(_classname != "Plastic_Pole_EP1_DZ") then {
+			_friendlies		= player getVariable ["friendlyTo",[]];
+			// check if friendly to owner
+			if(_ownerID in _friendlies) then {
 				_canBuildOnPlot = true;
 			};
 		};
 	};
+	
 };
 
-
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText ["Building requires plot within 30m" , "PLAIN DOWN"]; };
+// _message
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText ["Building requires plot pole within 30m" , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -249,6 +247,8 @@ if (_hasrequireditem) then {
 			if(_num_removed == 1) then {
 
 				cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
+
+				_tmpbuilt setVariable ["characterID",dayz_characterID,true];
 	
 				//["dayzPublishObj",[dayz_characterID,_tmpbuilt,[_dir,_location],_classname]] call callRpcProcedure;
 				dayzPublishObj = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];

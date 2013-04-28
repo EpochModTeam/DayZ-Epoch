@@ -8,7 +8,6 @@ _class = 		_this select 3;
 _allowed = [_object, "Server"] call check_publishobject;
 if (!_allowed) exitWith { deleteVehicle _object; };
 
-
 //diag_log ("PUBLISH: Attempt " + str(_object));
 
 //get UID
@@ -21,11 +20,11 @@ _key call server_hiveWrite;
 
 _object setVariable ["lastUpdate",time];
 _object setVariable ["ObjectUID", _uid,true];
-_object setVariable ["characterID",dayz_characterID,true];
+// _object setVariable ["characterID",_charID,true];
 
-if ((typeOf _object) in dayz_allowedObjects) then {
-	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
-};
+_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
+// Test disabling simulation server side on buildables only.
+_object enableSimulation false;
 
 dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 

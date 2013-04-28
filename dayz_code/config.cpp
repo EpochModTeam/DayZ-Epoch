@@ -40,7 +40,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.0.5";
+		version = "1.0.0.6";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -474,10 +474,11 @@ class CfgBuildingLoot {
 			{"DZ_ALICE_Pack_EP1","object"}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
-
+			
 			{ "Winchester1866","weapon" },
 			{ "WeaponHolder_ItemTent","object" },
 			{ "WeaponHolder_ItemTentDomed","object" },
+			{ "WeaponHolder_ItemTentDomed2","object" },
 			{ "","military" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
@@ -512,6 +513,7 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.01,
+			0.01,
 			0.03,
 			0.5,
 			0.01,
@@ -535,6 +537,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] = {
 			{ "WeaponHolder_ItemGenerator","object" },
+			{ "WeaponHolder_ItemFuelBarrel","object" },
 			{ "","generic" },
 			{ "","trash" },
 			{ "","military" },
@@ -552,7 +555,8 @@ class CfgBuildingLoot {
 			{"ItemTankTrap","magazine"}
 	};
 		itemChance[] =	{
-			0.01,
+			0.005,
+			0.005,
 			0.18,
 			0.29,
 			0.04,
@@ -587,7 +591,7 @@ class CfgBuildingLoot {
 			{ "PartWoodPile","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "MR43","weapon" },
-			//{"TrapBear","magazine"},
+			{ "WeaponHolder_ItemFuelBarrel","object" },
 			{"WeaponHolder_ItemMachete", "object"}
 	};
 		itemChance[] =	{
@@ -601,7 +605,7 @@ class CfgBuildingLoot {
 			0.11,
 			0.17,
 			0.06,
-			//0.01,
+			0.005,
 			0.03
 		};
 	};
@@ -629,10 +633,13 @@ class CfgBuildingLoot {
 			{"DZ_ALICE_Pack_EP1","object"}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
-			
+			{"DZ_CompactPack_EP1","object"}, // 18-1
+			{"DZ_TerminalPack_EP1","object"}, // 12-1
+
 			{ "Winchester1866","weapon" },
 			{ "WeaponHolder_ItemTent","object" },
 			{ "WeaponHolder_ItemTentDomed","object" },
+			{ "WeaponHolder_ItemTentDomed2","object" },
 			
 			{ "","food" },
 			{ "","trash" },
@@ -658,9 +665,12 @@ class CfgBuildingLoot {
 			0.02, //16
 			0.02, //16
 			0.01, //18
+			0.01, // 18-1
+			0.01, // 12-1
 			0.01,
-			0.01,
-			0.01,
+			0.005,
+			0.005,
+			0.005,
 			0.3,
 			0.15,
 			0.01,
@@ -835,6 +845,7 @@ class HeliCrash_No50s: Default {
 			{"DZ_British_ACU","object"}, // 18
 			{"DZ_CivilBackpack_EP1","object"}, // 24
 			{"DZ_Backpack_EP1","object"}, // 24
+			{"DZ_GunBag_EP1","object"}, // 8-6
 			
 			//Normal
 			{ "","medical" },
@@ -880,6 +891,7 @@ class HeliCrash_No50s: Default {
 			0.06, //18
 			0.01, //24
 			0.01, //DZ_Backpack_EP1 24
+			0.01, // DZ_GunBag_EP1
 			0.10,
 			1.00,
 			2.50,
@@ -942,7 +954,8 @@ class HeliCrash_No50s: Default {
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
 			{"DZ_CivilBackpack_EP1","object"}, // 24
-			{"DZ_Backpack_EP1","object"}, // 24		
+			{"DZ_Backpack_EP1","object"}, // 30		
+			{"DZ_LargeGunBag_EP1","object"}, // 45
 
 			{ "","medical" },
 			{ "","generic" },
@@ -2854,7 +2867,7 @@ class HeliCrash_No50s: Default {
 	class land_AII_last_floor: MilitarySpecial {
 		lootPos[] = {{-1.73975,-7.99756,11.6976},{-1.73975,-7.99756,11.6976},{-1.20801,5.45605,4.6129},{-3.82813,2.81494,5.46183}};
 	};
-	class land_AII_middle_floor: Military {
+	class land_AII_middle_floor: MilitarySpecial {
 		lootPos[] = {{-7.64941,4.97412,0.510368},{-7.7207,5.10498,0.510216},{-7.27979,-0.931152,0.518509},{8.47461,-2.3252,-4.63377},{9.20508,0.508301,-4.63377},{4.36768,3.7998,-4.63377},{-0.669434,2.74805,-4.63377},{-10.3594,5.03516,-4.63377},{-13.9766,9.10059,-4.63377},{-8.021,1.22314,-4.63377},{6.07227,-2.64551,-4.63377},{-8.75293,8.79297,-2.10379}};
 	};
 	class land_x_skladiste_low_tex: Industrial {

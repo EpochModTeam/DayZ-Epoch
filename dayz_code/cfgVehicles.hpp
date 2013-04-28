@@ -1075,6 +1075,52 @@ class Citizen1;	// External class reference
 		transportMaxWeapons = 6;
 		transportMaxMagazines = 30;
 	};
+	
+	class DZ_LargeGunBag_EP1: Bag_Base_EP1
+	{
+		scope = 2;
+		displayName = "Large Gunbag";
+		model = "\ca\weapons_e\AmmoBoxes\StaticX.p3d"; 
+		picture = "\ca\weapons_e\data\icons\staticX_CA.paa"; 
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
+		mapsize = 2;
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 45;
+	};
+	class DZ_GunBag_EP1: Bag_Base_EP1
+	{
+		scope = 2;
+		displayName = "Gunbag";
+		model = "\ca\weapons_e\AmmoBoxes\StaticY.p3d"; 
+		picture = "\ca\weapons_e\data\icons\staticY_CA.paa"; 
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
+		mapsize = 2;
+		transportMaxWeapons = 6;
+		transportMaxMagazines = 8;
+	};
+	class DZ_CompactPack_EP1: Bag_Base_EP1
+	{
+		scope = 2;
+		displayName = "Compact Pack"; 
+		picture = "\ca\weapons_e\data\icons\backpack_RPG_CA.paa"; 
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
+		mapsize = 2; 
+		model = "\ca\weapons_e\AmmoBoxes\backpack_rpg.p3d"; 
+		transportMaxWeapons = 1;
+		transportMaxMagazines = 18;
+	};
+	class DZ_TerminalPack_EP1: Bag_Base_EP1
+	{
+		scope = 2;
+	    displayName = "Terminal Pack"; 
+		picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_CA.paa"; 
+		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
+		mapSize = 2; 
+		model = "\ca\weapons_e\AmmoBoxes\backpack_us_AUV"; 
+		transportMaxWeapons = 1;
+		transportMaxMagazines = 12;
+	};
+
 	//An2_TK_EP1
 	class An2_Base_EP1;
 	class AN2_DZ: An2_Base_EP1

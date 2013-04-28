@@ -116,14 +116,43 @@ if (_qty >= _qty_in) then {
 					cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 				} else {
+					
+					_obj = _obj select 0;
 
-					if((damage _obj) >= 0.75) then {
+
+					//check make sure there are no fully damaged tires fully
+					_hitpoints = _obj call vehicle_getHitpoints;
+					_okToSell = true;
+
+					// count parts
+					_tires = 0; 
+
+					// total damage 
+					_tireDmg = 0;
+
+					_damage = 0;
+					{					
+						if(["Wheel",_x,false] call fnc_inString) then {		
+							_damage = [_obj,_x] call object_getHit;
+							_tireDmg = _tireDmg + _damage;
+							_tires = _tires + 1;
+						};
+					} forEach _hitpoints;
+
+					// find average tire damage
+					if(_tireDmg > 0 and _tires > 0) then {
+						if((_tireDmg / _tires) > 0.75) then {
+							_okToSell = false;
+						};
+					};
+
+					if(_okToSell) then {
+
 						// Sell Vehicle
 						for "_x" from 1 to _qty_out do {
 							player addMagazine _part_out;
 						};
 
-						_obj = _obj select 0;
 						_objectID 	= _obj getVariable ["ObjectID","0"];
 						_objectUID	= _obj getVariable ["ObjectUID","0"];
 
@@ -134,11 +163,7 @@ if (_qty >= _qty_in) then {
 						deleteVehicle _obj; 
 
 						cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-					} else {
-						_dampercent = (damage _obj) * 100;
-						cutText [format[("Cannot sell %1 it is %2% damaged and cannot be sold under 75%."),_textPartIn,_dampercent], "PLAIN DOWN"];
 					};
-
 				};
 	
 				{player removeAction _x} forEach s_player_parts;s_player_parts = [];

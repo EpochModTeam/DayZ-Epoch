@@ -3,7 +3,14 @@ delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
 private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_id","_objType","_sfx","_dis","_itemOut","_countOut","_textCreate","_selectedRemoveOutput"];
+
+if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _obj = _this select 3;
+
+if(_obj getVariable ["GeneratorRunning", false]) exitWith {TradeInprogress = false; cutText ["Cannot remove running generator.", "PLAIN DOWN"];};
+
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
@@ -16,8 +23,11 @@ if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) th
 	_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
 };
 
-_findNearestPole = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 30];
-_IsNearPlot =  count (_findNearestPole);
+_findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 30];
+_findNearestPole = [];
+{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
+
+_IsNearPlot = count (_findNearestPole);
 
 if(_IsNearPlot >= 1) then {
 
@@ -29,15 +39,13 @@ if(_IsNearPlot >= 1) then {
 	// check if friendly to owner
 	if(dayz_characterID != _ownerID) then {
 		
-		_friendlies		= player getVariable ["friendlies",[]];
+		_friendlies		= player getVariable ["friendlyTo",[]];
 		// check if friendly to owner
 		if(!(_ownerID in _friendlies)) then {
 			_limit = round(_limit*2);
 		};
 	};
 };
-
-
 
 cutText [format["Starting de-construction of %1.",_objType], "PLAIN DOWN"];
 
@@ -113,17 +121,24 @@ if (_proceed) then {
 		dayzDeleteObj = [_objectID,_objectUID];
 		publicVariableServer "dayzDeleteObj";
 
+		_isWreck = typeOf _obj in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
+
 		deleteVehicle _obj;
 
+		if(_isWreck) then {
+			// Find one random part to give back
+			_refundpart = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"] call BIS_fnc_selectRandom;
+			_selectedRemoveOutput = [_refundpart];
+		} else {
+			_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+		};
+		
 		// give refund items
-		_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
 		if((count _selectedRemoveOutput) > 0) then {
 			// Put items
 			{
 				_itemOut = _x select 0;
 				_countOut = _x select 1;
-				diag_log format["Removal Output: %1 %2", _itemOut,_countOut];
-		
 				for "_x" from 1 to _countOut do {
 					player addMagazine _itemOut;
 				};
@@ -140,3 +155,4 @@ if (_proceed) then {
 	[objNull, player, rSwitchMove,""] call RE;
 	player playActionNow "stop";
 };
+TradeInprogress = false;

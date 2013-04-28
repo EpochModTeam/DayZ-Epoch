@@ -18,6 +18,23 @@ class CfgMagazines {
 			};
 		};
 	};
+	class ItemTentDomed2 : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = $STR_EQUIP_NAME_20;
+		model = "\dayz_equip\models\tentbag_gear.p3d";
+		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
+		descriptionShort = $STR_EQUIP_DESC_20;
+		
+		class ItemActions {
+			class Pitch {
+				text = $STR_PITCH_TENT;
+				script = "spawn player_tentPitch;";
+				create = "TentStorageDomed2";
+			};
+		};
+	};
 	
 	class ItemSandbag : CA_Magazine {
 		scope = public;

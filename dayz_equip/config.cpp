@@ -1366,7 +1366,7 @@ class CfgMagazines
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemPole",1}};
-				input[] = {{"PartGeneric",2},{"ItemTankTrap",1}};
+				input[] = {{"PartGeneric",1},{"ItemTankTrap",1}};
 			};
 		};
 	};
@@ -1434,7 +1434,7 @@ class CfgMagazines
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemCorrugated",1}};
-				input[] = {{"ItemPole",2},{"PartGeneric",4},{"PartWoodLumber",2}};
+				input[] = {{"ItemPole",1},{"PartGeneric",2},{"ItemTankTrap",1},{"PartWoodLumber",2}};
 			};
 			class Crafting1
 			{
@@ -1486,6 +1486,17 @@ class CfgMagazines
 				input[] = {{"PartWoodPile",1},{"ItemTrashRazor",1}};
 				
 			};
+			class Crafting2
+			{
+				text = "Craft Stick Fence";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"stick_fence_kit",1}};
+				input[] = {{"PartWoodPile",6}};
+				
+			};
+			
 		};
 	};
 	class PartWoodLumber: CA_Magazine
@@ -2205,7 +2216,7 @@ class CfgMagazines
 	};
 	
 	// BUILDING KITS
-		class 30m_plot_kit: CA_Magazine
+	class 30m_plot_kit: CA_Magazine
 	{
 		scope = 2;
 		count = 1;
@@ -2222,6 +2233,26 @@ class CfgMagazines
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Plastic_Pole_EP1_DZ";
+			};
+		};
+	};
+	class stick_fence_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Stick Fence";
+		descriptionShort = "Stick Fence";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "StickFence_DZ";
 			};
 		};
 	};
@@ -2616,8 +2647,21 @@ class CfgVehicles
 		constructioncount = 5;
 		removeoutput[] = {{"ItemGenerator",1}};
 	};
-	
-
+	class FuelPump_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,2,0};
+		model = "\ca\Structures_E\Ind\Ind_FuelStation\Ind_FuelStation_Feed_ep1.p3d"; 
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 400;
+		displayName = "Fuel Pump";
+		vehicleClass = "Fortifications";
+		constructioncount = 5;
+		// removeoutput[] = {{"ItemFuelPump",1}};
+	};
 
 	class Fort_RazorWire : BuiltItems { 
 	  scope = 2; 
@@ -2799,6 +2843,16 @@ class CfgVehicles
 		transportMaxWeapons = 20;
 		transportMaxBackpacks = 10;
 	};
+	
+	class Wall_FenW2_6_EP1;
+	class StickFence_DZ: Wall_FenW2_6_EP1
+	{
+		scope = 2;
+		offset[] = {0,2.5,0};
+		displayName = "Stick Fence";
+		vehicleClass = "Fortifications";
+	};
+	
 	class WoodGate_DZ: BuiltItems
 	{
 		scope = 2;
@@ -2974,6 +3028,16 @@ class CfgVehicles
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgMagazines','ItemTentDomed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemTentDomed2: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Domed Green Tent";
+		model = "\dayz_equip\proxy\tentbag.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemTentDomed2'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	class WeaponHolder_ItemVault: WeaponHolderBase
@@ -3159,6 +3223,16 @@ class CfgVehicles
 		transportMaxWeapons = 12;
 		transportMaxBackpacks = 7;
 		create = "WeaponHolder_ItemTentDomed";
+	};
+	class TentStorageDomed2: TentStorage
+	{
+		displayName = "Green Domed Tent";
+		vehicleClass = "Survival";
+		model = "\ca\Misc_E\Astan_ep1.p3d"; 
+		transportMaxMagazines = 75;
+		transportMaxWeapons = 12;
+		transportMaxBackpacks = 7;
+		create = "WeaponHolder_ItemTentDomed2";
 	};
 	class VaultStorage: Land_A_tent
 	{
