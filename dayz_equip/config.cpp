@@ -1543,11 +1543,11 @@ class CfgMagazines
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Wood Plywood";
+		displayName = "Plywood";
 		// TODO make custom model and icon
 		model = "\dayz_equip\models\woodPile.p3d";
 		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
-		descriptionShort = "Wood Plywood";
+		descriptionShort = "Plywood";
 		class ItemActions {
 			class Crafting
 			{

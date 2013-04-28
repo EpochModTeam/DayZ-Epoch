@@ -1011,6 +1011,7 @@ class HeliCrash_No50s: Default {
 			0.06, //18
 			0.01, //24
 			0.01, //DZ_Backpack_EP1 24
+			0.01, //45
 			0.30,
 			1.00,
 			5.00, //military

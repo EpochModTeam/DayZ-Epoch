@@ -52,7 +52,7 @@ if (_finished) then {
 				_i = 0;
 				// determine where the object name starts
 				{
-					if (ASCII_COLON == _objInfo select _i) exitWith {};
+					if (58 == _objInfo select _i) exitWith {};
 					_i = _i + 1;
 				} forEach _objInfo;
 				_i = _i + 2; // skip the ": " part
@@ -60,7 +60,7 @@ if (_finished) then {
 					_objName = _objName + [_objInfo select _k];
 				};
 				_objName = toLower(toString(_objName));
-				
+
 				// Exit since we found a tree
 				if (_objName in _trees) exitWith { 
 					_findNearestTree set [(count _findNearestTree),_x];

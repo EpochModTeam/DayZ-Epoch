@@ -121,21 +121,21 @@ if (_proceed) then {
 		dayzDeleteObj = [_objectID,_objectUID];
 		publicVariableServer "dayzDeleteObj";
 
-		_isWreck = typeOf _obj in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
+		_isWreck = (typeOf _obj) in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
 
 		deleteVehicle _obj;
-
+		_selectedRemoveOutput = [];
 		if(_isWreck) then {
 			// Find one random part to give back
 			_refundpart = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"] call BIS_fnc_selectRandom;
-			_selectedRemoveOutput = [_refundpart];
+			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
 		} else {
 			_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
 		};
 		
 		// give refund items
 		if((count _selectedRemoveOutput) > 0) then {
-			// Put items
+			// Put itemsg
 			{
 				_itemOut = _x select 0;
 				_countOut = _x select 1;
