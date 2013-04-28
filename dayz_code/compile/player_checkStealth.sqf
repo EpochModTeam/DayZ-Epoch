@@ -30,7 +30,7 @@ if (_anim4 == "aswm") then {
 	_scaleMvmt = 0.3;
 	dayz_isSwimming = true;
 
-	// if surface is not water 
+	// if surface is not water abort 
 	_isWater = surfaceIsWater _pos;
 	if(!_isWater) then {
 
