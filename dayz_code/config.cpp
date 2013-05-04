@@ -20,7 +20,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"dayz_equip","dayz_weapons","dayz_sfx","CAMisc3","CABuildingParts","CABuildingParts_Signs","CAStructuresHouse","CAStructuresLand_Ind_Stack_Big","CAStructures_Misc_Powerlines","CAStructures","CABuildings","CABuildings2","Ind_MalyKomin","CAStructures_A_CraneCon","CAStructures_Mil","CAStructures_Nav","CAStructures_Rail","A_Crane_02","A_TVTower","CAStructures_Railway","CAStructuresHouse","CAStructuresHouse_HouseBT"};
+		requiredAddons[] = {"dayz_equip","dayz_weapons","dayz_sfx","CAMisc3","CABuildingParts","CABuildingParts_Signs","CAStructuresHouse","CAStructuresLand_Ind_Stack_Big","CAStructures_Misc_Powerlines","CAStructures","CABuildings","CABuildings2","Ind_MalyKomin","CAStructures_A_CraneCon","CAStructures_Mil","CAStructures_Nav","CAStructures_Rail","A_Crane_02","A_TVTower","CAStructures_Railway","CAStructuresHouse","CAStructuresHouse_HouseBT","asc_eu_lights"};
 	};
 	class DZ_DebriefingRemoved
 	{
@@ -40,7 +40,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.0.6";
+		version = "1.0.0.7";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -633,8 +633,8 @@ class CfgBuildingLoot {
 			{"DZ_ALICE_Pack_EP1","object"}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
-			{"DZ_CompactPack_EP1","object"}, // 18-1
-			{"DZ_TerminalPack_EP1","object"}, // 12-1
+			{"DZ_CompactPack_EP1","object"}, //
+			{"DZ_TerminalPack_EP1","object"}, //
 
 			{ "Winchester1866","weapon" },
 			{ "WeaponHolder_ItemTent","object" },

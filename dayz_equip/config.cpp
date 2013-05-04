@@ -1329,6 +1329,17 @@ class CfgMagazines
 			};
 		};
 	};
+	class ItemLightBulb: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Light Bulb";
+		// TODO model + texture
+		model = "\dayz_equip\models\fad.p3d";
+		picture = "\dayz_equip\textures\equip_fad_ca.paa";
+		descriptionShort = "Light Bulb";
+	};
 	class PartFueltank: CA_Magazine
 	{
 		scope = 2;
@@ -2236,6 +2247,46 @@ class CfgMagazines
 			};
 		};
 	};
+	class fuel_pump_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Fuel Pump";
+		descriptionShort = "Fuel Pump";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "FuelPump_DZ";
+			};
+		};
+	};
+	class light_pole_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Light Pole";
+		descriptionShort = "Light Pole";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "LightPole_DZ";
+			};
+		};
+	};
 	class stick_fence_kit: CA_Magazine
 	{
 		scope = 2;
@@ -2660,7 +2711,7 @@ class CfgVehicles
 		displayName = "Fuel Pump";
 		vehicleClass = "Fortifications";
 		constructioncount = 5;
-		// removeoutput[] = {{"ItemFuelPump",1}};
+		removeoutput[] = {{"ItemFuelPump",1}};
 	};
 
 	class Fort_RazorWire : BuiltItems { 
@@ -2736,6 +2787,8 @@ class CfgVehicles
 	class USMC_WarfareBMGNest_M240;
 	class M240Nest_DZ: USMC_WarfareBMGNest_M240
 	{
+		destrType = "DestructBuilding"; 
+		armor = 450;
 		scope = 2;
 		offset[] = {0,3.5,0};
 		displayName = "M240 Nest";
@@ -2750,6 +2803,7 @@ class CfgVehicles
 	class Land_covering_hut_EP1;
 	class CanvasHut_DZ: Land_covering_hut_EP1
 	{
+		armor = 200;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		displayName = "Canvas Hut";
@@ -2762,10 +2816,12 @@ class CfgVehicles
 		offset[] = {0,1.5,0.5};
 		displayName = "Wood Bench";
 		vehicleClass = "Fortifications";
+		removeoutput[] = {{"park_bench_kit",1}};
 	};
 	class Land_Wall_Gate_Ind1_L;
 	class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 	{
+		armor = 400;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		displayName = "Rusty Gate";
@@ -2775,6 +2831,7 @@ class CfgVehicles
 	class Land_KBud;
 	class OutHouse_DZ: Land_KBud
 	{
+		armor = 200;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		displayName = "Outhouse";
@@ -2795,6 +2852,7 @@ class CfgVehicles
 	class Land_Shed_M01;
 	class StorageShed_DZ: Land_Shed_M01
 	{
+		armor = 400;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		displayName = "Storage Shed";
@@ -2807,6 +2865,7 @@ class CfgVehicles
 	class Fence_corrugated_plate;
 	class Fence_corrugated_DZ: Fence_corrugated_plate
 	{
+		armor = 300;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		removeoutput[] = {{"ItemCorrugated",1}};
@@ -2818,10 +2877,9 @@ class CfgVehicles
 	class WoodShack_DZ: Land_kulna
 	{
 		scope = 2;
-		//destrType = "DestructBuilding"; 
-		//cost = 100;
+		destrType = "DestructBuilding"; 
 		offset[] = {0,2.5,1.3};
-		//armor = 200;
+		armor = 200;
 		displayName = "Wooden Shack";
 		vehicleClass = "Fortifications";
 		transportMaxMagazines = 100;
@@ -2833,10 +2891,10 @@ class CfgVehicles
 	class Wooden_shed_DZ: Land_Shed_wooden
 	{
 		scope = 2;
-		//destrType = "DestructBuilding"; 
+		destrType = "DestructBuilding"; 
 		//cost = 100;
 		offset[] = {0,2.5,1};
-		//armor = 100;
+		armor = 400;
 		displayName = "Wooden Shed";
 		vehicleClass = "Fortifications";
 		transportMaxMagazines = 200;
@@ -2847,12 +2905,22 @@ class CfgVehicles
 	class Wall_FenW2_6_EP1;
 	class StickFence_DZ: Wall_FenW2_6_EP1
 	{
+		destrType = "DestructTree"; 
+		armor = 200;
 		scope = 2;
 		offset[] = {0,2.5,0};
 		displayName = "Stick Fence";
 		vehicleClass = "Fortifications";
 	};
-	
+	class ASC_EU_LHVOld;
+	class LightPole_DZ: ASC_EU_LHVOld
+	{
+		armor = 200;
+		scope = 2;
+		offset[] = {0,2.5,0};
+		displayName = "Light Pole";
+		vehicleClass = "Fortifications";
+	};
 	class WoodGate_DZ: BuiltItems
 	{
 		scope = 2;
@@ -2987,7 +3055,7 @@ class CfgVehicles
 		model = "\dayz_equip\models\crowbar.p3d";
 		class eventHandlers
 		{
-			init = "[(_this select 0),'cfgWeapons','MeleeCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+			init = "[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	class WeaponHolder_huntingrifle: WeaponHolderBase

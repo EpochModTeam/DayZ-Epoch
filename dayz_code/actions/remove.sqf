@@ -117,13 +117,21 @@ if (_proceed) then {
 	if(!isNull(_obj)) then {
 		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
 	
+		// TODO add hideobject to have it sink into ground then delete
+		dayzHideObject = _obj;
+		hideObject _obj; // local player
+		publicVariable "dayzHideObject"; // remote player
+		sleep 5;
+
+
 		//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
 		dayzDeleteObj = [_objectID,_objectUID];
 		publicVariableServer "dayzDeleteObj";
-
+		
 		_isWreck = (typeOf _obj) in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
 
 		deleteVehicle _obj;
+
 		_selectedRemoveOutput = [];
 		if(_isWreck) then {
 			// Find one random part to give back

@@ -45,10 +45,12 @@ switch (_nearbytype) do {
 };
 */
 
-_players = _position nearEntities ["AllPlayers",_radius+200];
-dayz_maxGlobalZombies = 40;
+_players = _position nearEntities ["CAManBase",_radius+200];
+dayz_maxGlobalZombies = dayz_maxGlobalZombiesInit;
 {
-	dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
+	if(isPlayer _x) then {
+		dayz_maxGlobalZombies = dayz_maxGlobalZombies + dayz_maxGlobalZombiesIncrease;
+	};
 } foreach _players;
 
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];

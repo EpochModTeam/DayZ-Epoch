@@ -252,7 +252,8 @@ if (_hasrequireditem) then {
 	
 				//["dayzPublishObj",[dayz_characterID,_tmpbuilt,[_dir,_location],_classname]] call callRpcProcedure;
 				dayzPublishObj = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
-				publicVariableServer "dayzPublishObj";
+				publicVariableServer "dayzPublishObj";				
+
 			} else {
 				deleteVehicle _tmpbuilt;
 				cutText ["Canceled building." , "PLAIN DOWN"];

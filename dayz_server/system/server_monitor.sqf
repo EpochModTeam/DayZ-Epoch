@@ -99,7 +99,7 @@ serverVehicleCounter = [];
 				clearMagazineCargoGlobal  _object;
 				
 				if ((typeOf _object) in dayz_allowedObjects) then {
-					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
+					_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
 					// Test disabling simulation server side on buildables only.
 					_object enableSimulation false;
 				};

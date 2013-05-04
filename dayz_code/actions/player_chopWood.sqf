@@ -1,4 +1,4 @@
-private["_item","_location","_isOk","_dir","_classname"];
+private ["_item","_isOk","_i","_objName","_objInfo","_lenInfo","_started","_finished","_sfx","_dis","_animState","_isMedic","_proceed","_counter","_objType","_limit","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree"];
 
 if(TradeInprogress) exitWith { cutText ["Harvest wood already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -9,95 +9,131 @@ _trees = ["t_picea3f.p3d","t_picea2s.p3d","t_picea1s.p3d","t_fagus2w.p3d","t_fag
 _item = _this;
 call gear_ui_init;
 
-player playActionNow "Medic";
-[player,20,false,(getPosATL player)] spawn player_alertZombies;
-	
-r_interrupt = false;
-_animState = animationState player;
-r_doLoop = true;
-_started = false;
-_finished = false;
-	
-while {r_doLoop} do {
-	_animState = animationState player;
-	_isMedic = ["medic",_animState] call fnc_inString;
-	if (_isMedic) then {
-		_started = true;
-	};
-	if (_started and !_isMedic) then {
-		r_doLoop = false;
-		_finished = true;
-	};
-	if (r_interrupt) then {
-		r_doLoop = false;
-	};
-	sleep 0.1;
-};
-r_doLoop = false;
-
-
-if (_finished) then {
-
-	_nearByTrees = 0;
-
-	_findNearestTree = [];
-	{
-		if("" == typeOf _x) then {
+_findNearestTree = [];
+{
+	if("" == typeOf _x) then {
 			
-			if (alive _x) then {
+		if (alive _x) then {
 				
-				_objInfo = toArray(str(_x));
-				_lenInfo = count _objInfo - 1;
-				_objName = [];
-				_i = 0;
-				// determine where the object name starts
-				{
-					if (58 == _objInfo select _i) exitWith {};
-					_i = _i + 1;
-				} forEach _objInfo;
-				_i = _i + 2; // skip the ": " part
-				for "_k" from _i to _lenInfo do {
-					_objName = _objName + [_objInfo select _k];
-				};
-				_objName = toLower(toString(_objName));
+			_objInfo = toArray(str(_x));
+			_lenInfo = count _objInfo - 1;
+			_objName = [];
+			_i = 0;
+			// determine where the object name starts
+			{
+				if (58 == _objInfo select _i) exitWith {};
+				_i = _i + 1;
+			} forEach _objInfo;
+			_i = _i + 2; // skip the ": " part
+			for "_k" from _i to _lenInfo do {
+				_objName = _objName + [_objInfo select _k];
+			};
+			_objName = toLower(toString(_objName));
 
-				// Exit since we found a tree
-				if (_objName in _trees) exitWith { 
-					_findNearestTree set [(count _findNearestTree),_x];
+			// Exit since we found a tree
+			if (_objName in _trees) exitWith { 
+				_findNearestTree set [(count _findNearestTree),_x];
+			};
+		};
+	};
+
+} foreach nearestObjects [getPos player, [], 20];
+
+diag_log format["DEBUG TREES: %1", _findNearestTree];
+
+if (count(_findNearestTree) >= 1) then {
+		
+	_tree = _findNearestTree select 0;
+
+	// get 2d distance
+	_distance2d = [player, _tree] call BIS_fnc_distance2D;
+	_distance3d = player distance _tree;
+
+	if(_distance2d <= 5) then {
+
+		_countOut = ceil(_distance3d-_distance2d);
+
+		diag_log format["DEBUG TREE DISTANCE: %1 - %2 = %3", _distance3d,_distance2d,(_distance3d-_distance2d)];
+	
+		// Start chop tree loop
+		_counter = 0;
+		_isOk = true;
+		_proceed = false;
+		while {_isOk} do {
+
+			player playActionNow "Medic";
+			[player,20,true,(getPosATL player)] spawn player_alertZombies;
+	
+			r_interrupt = false;
+			_animState = animationState player;
+			r_doLoop = true;
+			_started = false;
+			_finished = false;
+
+			while {r_doLoop} do {
+				_animState = animationState player;
+				_isMedic = ["medic",_animState] call fnc_inString;
+				if (_isMedic) then {
+					_started = true;
 				};
+				if (_started and !_isMedic) then {
+					r_doLoop = false;
+					_finished = true;
+					[player,"chopwood",0,false] call dayz_zombieSpeak;
+				};
+				if (r_interrupt) then {
+					r_doLoop = false;
+				};
+		
+				sleep 0.1;
+		
+			};
+
+			if(!_finished) exitWith {
+				_isOk = false;
+				_proceed = false;
+			};
+
+			if(_finished) then {
+				_counter = _counter + 1;
+			};
+
+			cutText ["Chopping down tree, walk away at anytime to cancel.", "PLAIN DOWN"];
+
+			if(_counter == _countOut) exitWith {
+				_isOk = false;
+				_proceed = true;
 			};
 		};
 
-	} foreach nearestObjects [getPos player, [], 5];
+		if (_proceed) then {
 
-	diag_log format["DEBUG TREES: %1", _findNearestTree];
-
-	if (count(_findNearestTree) >= 1) then {
-
-		_result = [player,"PartWoodPile"] call BIS_fnc_invAdd;
-		[player,"chopwood",0,false] call dayz_zombieSpeak;
-		if (_result) then {
-			cutText [localize "str_player_25", "PLAIN DOWN"];
-			_tree = _findNearestTree select 0;
+			_itemOut = "PartWoodPile";
 			
+			for "_x" from 1 to _countOut do {
+				player addMagazine _itemOut;
+			};
+			
+			// chop down tree
 			if("" == typeOf _tree) then {
 				_tree setDamage 1;
 			};
-			
 			diag_log format["DEBUG TREE DAMAGE: %1", _tree];
+
+			cutText [format["%1 piles of wood has been successfully added to your inventory.", _countOut], "PLAIN DOWN"];
+
 		} else {
-			cutText [localize "str_player_24", "PLAIN DOWN"];
+			r_interrupt = false;
+			[objNull, player, rSwitchMove,""] call RE;
+			player playActionNow "stop";
+			cutText ["Canceled Harvesting Wood.", "PLAIN DOWN"];
 		};
 
 	} else {
 		cutText [localize "str_player_23", "PLAIN DOWN"];
 	};
 
-
 } else {
-	r_interrupt = false;
-	[objNull, player, rSwitchMove,""] call RE;
-	player playActionNow "stop";
-	cutText ["Canceled Harvest Wood.", "PLAIN DOWN"];
+	cutText [localize "str_player_23", "PLAIN DOWN"];
 };
 TradeInprogress = false;

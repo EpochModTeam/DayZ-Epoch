@@ -989,7 +989,7 @@ class Citizen1;	// External class reference
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_us_assault_Coyote.p3d";
 		transportMaxWeapons = 1;
-		transportMaxMagazines = 8;
+		transportMaxMagazines = 10;
 	};
 
 	class DZ_Assault_Pack_EP1: Bag_Base_EP1
@@ -1025,7 +1025,7 @@ class Citizen1;	// External class reference
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_tk_alice.p3d";
 		transportMaxWeapons = 2;
-		transportMaxMagazines = 16;
+		transportMaxMagazines = 20;
 	};
 
 	class DZ_TK_Assault_Pack_EP1 : Bag_Base_BAF
@@ -1037,7 +1037,7 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		model = "\ca\weapons_e\AmmoBoxes\backpack_civil_assault.p3d";
 		transportMaxWeapons = 2;
-		transportMaxMagazines = 16;
+		transportMaxMagazines = 22;
 	};
 
 	class DZ_British_ACU : Bag_Base_BAF
@@ -1049,7 +1049,7 @@ class Citizen1;	// External class reference
 		picture = "\ca\weapons_baf\data\UI\backpack_BAF_CA.paa";
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		transportMaxWeapons = 3;
-		transportMaxMagazines = 18;
+		transportMaxMagazines = 30;
 	};
 
 	class DZ_CivilBackpack_EP1: Bag_Base_EP1    
@@ -1061,7 +1061,7 @@ class Citizen1;	// External class reference
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
 		transportMaxWeapons = 4;
-		transportMaxMagazines = 24;
+		transportMaxMagazines = 40;
 	};
 
 	class DZ_Backpack_EP1: Bag_Base_EP1
@@ -1072,8 +1072,8 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		mapsize = 2;
 		model = "\ca\weapons_e\AmmoBoxes\backpack_us.p3d";
-		transportMaxWeapons = 6;
-		transportMaxMagazines = 30;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 50;
 	};
 	
 	class DZ_LargeGunBag_EP1: Bag_Base_EP1
@@ -1084,8 +1084,8 @@ class Citizen1;	// External class reference
 		picture = "\ca\weapons_e\data\icons\staticX_CA.paa"; 
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
 		mapsize = 2;
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 45;
+		transportMaxWeapons = 6;
+		transportMaxMagazines = 60;
 	};
 	class DZ_GunBag_EP1: Bag_Base_EP1
 	{
@@ -1095,8 +1095,8 @@ class Citizen1;	// External class reference
 		picture = "\ca\weapons_e\data\icons\staticY_CA.paa"; 
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
 		mapsize = 2;
-		transportMaxWeapons = 6;
-		transportMaxMagazines = 8;
+		transportMaxWeapons = 3;
+		transportMaxMagazines = 35;
 	};
 	class DZ_CompactPack_EP1: Bag_Base_EP1
 	{
@@ -1106,8 +1106,8 @@ class Citizen1;	// External class reference
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
 		mapsize = 2; 
 		model = "\ca\weapons_e\AmmoBoxes\backpack_rpg.p3d"; 
-		transportMaxWeapons = 1;
-		transportMaxMagazines = 18;
+		transportMaxWeapons = 2;
+		transportMaxMagazines = 25;
 	};
 	class DZ_TerminalPack_EP1: Bag_Base_EP1
 	{
@@ -1118,7 +1118,7 @@ class Citizen1;	// External class reference
 		mapSize = 2; 
 		model = "\ca\weapons_e\AmmoBoxes\backpack_us_AUV"; 
 		transportMaxWeapons = 1;
-		transportMaxMagazines = 12;
+		transportMaxMagazines = 15;
 	};
 
 	//An2_TK_EP1

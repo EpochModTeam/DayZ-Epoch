@@ -50,7 +50,7 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_grabflare = -1;
 	s_player_removeflare = -1;
 };
-
+hint str(typeOf cursorTarget);
 if(DZEdebug) then {
 	hint str(typeOf cursorTarget);
 
@@ -71,39 +71,7 @@ if(_isPZombie) then {
 	};
 
 	if (s_player_pzombiesvision < 0) then {
-	
 		s_player_pzombiesvision = player addAction ["Vision", "\z\addons\dayz_code\actions\pzombie\pz_vision.sqf", [], 4, false, true, "nightVision", "_this == _target"];
-
-		player addAction ["Aperture + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_ap.sqf", [0.1], 0, false, true, "", "_this == _target"];
-		player addAction ["Aperture - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_ap.sqf", [-0.1], 0, false, true, "", "_this == _target"];
-
-		player addAction ["First R + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[0.1,0,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["First R - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[-0.1,0,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["First B + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[0,0.1,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["First B - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[0,-0.1,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["First G + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[0,0,0.1,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["First G - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[0,0,-0.1,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["First M + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[0,0,0,0.1]], 0, false, true, "", "", "_this == _target"];
-		player addAction ["First M - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV1",[0,0,0,-0.1]], 0, false, true, "", "", "_this == _target"];
-
-		player addAction ["Second R + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[0.1,0,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Second R - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[-0.1,0,0,0]], 0, false, true, "", "_this == _target"];		
-		player addAction ["Second B + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[0,0.1,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Second B - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[0,-0.1,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Second G + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[0,0,0.1,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Second G - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[0,0,-0.1,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Second M + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[0,0,0,0.1]], 0, false, true, "", "_this == _target"];
-		player addAction ["Second M - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV2",[0,0,0,-0.1]], 0, false, true, "", "_this == _target"];
-
-		player addAction ["Third R + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[0.1,0,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Third R - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[-0.1,0,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Third B + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[0,0.1,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Third B - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[0,-0.1,0,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Third G + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[0,0,0.1,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Third G - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[0,0,-0.1,0]], 0, false, true, "", "_this == _target"];
-		player addAction ["Third M + 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[0,0,0,0.1]], 0, false, true, "", "_this == _target"];
-		player addAction ["Third M - 0.1", "\z\addons\dayz_code\actions\pzombie\pz_vision_rbg1.sqf", ["NV3",[0,0,0,-0.1]], 0, false, true, "", "_this == _target"];
-
 	};
 	
 	if (!isNull cursorTarget and (player distance cursorTarget < 3)) then {	//Has some kind of target
@@ -149,7 +117,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isWreck = typeOf cursorTarget in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
-	_isRemovable = typeOf cursorTarget in ["Fence_corrugated_DZ","M240Nest_DZ"];
+	_isRemovable = typeOf cursorTarget in ["Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ"];
 	_isDisallowRepair = typeOf cursorTarget in ["M240Nest_DZ"];
 
 	_isTent = cursorTarget isKindOf "TentStorage";
@@ -168,7 +136,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	} forEach _rawmeat; 
 	
 	if (_hasFuelE and dayz_oldrefuel) then {
-		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army");
+		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army") or (cursorTarget isKindOf "land_fuelstation_w");
 	};
 
 	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
@@ -344,6 +312,32 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	} else {
 		player removeAction s_player_information;
 		s_player_information = -1;
+	};
+	
+	//Fuel Pump
+	if((typeOf cursorTarget) in dayz_fuelpumparray and _canDo) then {	
+		if ((s_player_fuelauto < 0) and (player distance cursorTarget < 3)) then {
+			
+			// check if Generator_DZ is running within 30 meters
+			_findNearestGens = nearestObjects [player, ["Generator_DZ"], 30];
+			_findNearestGen = [];
+			{
+				if (alive _x and (_x getVariable ["GeneratorRunning", false])) then {
+					_findNearestGen set [(count _findNearestGen),_x];
+				};
+			} foreach _findNearestGens;
+			_IsNearRunningGen = count (_findNearestGen);
+			
+			// show that pump needs power if no generator nearby.
+			if(_IsNearRunningGen > 0) then {
+				s_player_fuelauto = player addAction ["Fill Vehicle", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",[], 0, false, true, "",""];
+			} else {
+				s_player_fuelauto = player addAction ["<t color='#ff0000'>Needs Power</t>", "",[], 0, false, true, "",""];
+			};
+		};
+	} else {
+		player removeAction s_player_fuelauto;
+		s_player_fuelauto = -1;
 	};
 
 	//Start Generator

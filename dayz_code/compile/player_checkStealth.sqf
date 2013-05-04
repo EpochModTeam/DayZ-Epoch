@@ -37,7 +37,9 @@ if (_anim4 == "aswm") then {
 		// Stops swimming in ground
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
-		
+		// This sleep was much needed
+		sleep 5;
+
 		dayz_isSwimming = false;
 	};
 	

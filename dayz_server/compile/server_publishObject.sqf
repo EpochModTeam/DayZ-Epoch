@@ -22,7 +22,7 @@ _object setVariable ["lastUpdate",time];
 _object setVariable ["ObjectUID", _uid,true];
 // _object setVariable ["characterID",_charID,true];
 
-_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
+_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
 // Test disabling simulation server side on buildables only.
 _object enableSimulation false;
 

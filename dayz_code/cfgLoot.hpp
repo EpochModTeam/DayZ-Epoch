@@ -5,19 +5,21 @@ class CfgLoot {
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
 			"ItemTrashToiletpaper",
-			"ItemTrashRazor"
+			"ItemTrashRazor",
+			"ItemLightBulb"
 		},
 		{
 			1,
 			0.1,
 			0.5,
 			0.4,
-			0.2
+			0.2,
+			0.05
 		}
 	};
 	civilian[] = {
 		{
-			"TrashTinCan",
+			"FoodCanUnlabeled",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
 			"ItemSodaCoke",
@@ -91,7 +93,7 @@ class CfgLoot {
 	};
 	generic[] = {
 		{
-			"TrashTinCan",
+			"FoodCanUnlabeled",
 			"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
@@ -187,7 +189,7 @@ class CfgLoot {
 	};
 	military[] = {
 		{
-			"TrashTinCan",
+			"FoodCanUnlabeled",
 			"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
@@ -317,7 +319,7 @@ class CfgLoot {
 
 	worker[] = {
 		{
-			"TrashTinCan",
+			"FoodCanUnlabeled",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
 			"ItemSodaCoke",

@@ -149,6 +149,23 @@ class CfgWeapons {
 			};
 		};
 	};
+	class ItemFishingPole: ItemCore
+	{
+		scope=2;
+		displayName="Fishing Pole";
+		// TODO MODEL AND ICON
+		model="\dayz_equip\models\crowbar.p3d";
+		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
+		descriptionShort="Fishing Pole and with lure.";
+		class ItemActions
+		{
+			class Use
+			{
+				text="Cast Fishing Pole";
+				script="spawn player_goFishing;";
+			};
+		};
+	};
 	class MeleeMachete: MeleeHatchet
 	{
 		scope=2;

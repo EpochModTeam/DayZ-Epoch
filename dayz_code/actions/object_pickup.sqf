@@ -17,7 +17,7 @@ _text = getText (configFile >> _type >> _classname >> "displayName");
 _claimedBy = _holder getVariable["claimed","0"];
 
 // Check if any players are nearby if not allow player to claim item.
-_playerNear = {isPlayer _x} count (player nearEntities ["Man", 6]) > 1;
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
 
 // Only allow if not already claimed.
 if (_claimedBy == "0" or !_playerNear) then {
@@ -57,7 +57,7 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 };
 
 // test to see if item still exists just before adding and removing
-if(_holder == objNull) exitWith {};
+if(_holder == objNull) exitWith { TradeInprogress = false; };
 
 _obj = nearestObjects [(getPosATL player), [(typeOf _holder)], 5];
 _qty = count _obj;

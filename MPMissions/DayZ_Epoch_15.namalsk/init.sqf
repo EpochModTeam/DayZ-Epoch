@@ -25,7 +25,7 @@ MaxDynamicDebris = 300; // Default = 100
 dayz_MapArea = 8000; // Default = 10000
 dayz_maxLocalZombies = 80; // Default = 40
 
-dayz_maxGlobalZombies = 60; // Default = 30
+dayz_maxGlobalZombiesInit  = 60; // Default = 40
 dayz_maxZeds = 1000; // Default = 500
 
 // new stuff

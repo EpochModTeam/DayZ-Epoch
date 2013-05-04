@@ -537,9 +537,9 @@
 			<Czech>Pro vytvoření ohniště je nutné mít v inventáři dřevo.</Czech>
 		</Key>     
 		<Key ID="str_player_23">
-			<Original>You must be in a forest and close to a tree to harvest wood.</Original>
-			<English>You must be in a forest and close to a tree to harvest wood.</English>
-			<German>Sie müssen in einem Wald in der Nähe eines Baums sein, um Holz zu sammeln.</German>
+			<Original>You must be close to a tree to harvest wood.</Original>
+			<English>You must be close to a tree to harvest wood.</English>
+			<German>Sie müssen Nähe eines Baums sein, um Holz zu sammeln.</German>
 			<Russian>Вы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
 			<Spanish>Debes estar en el bosque y cerca de un árbol para recoger leña.</Spanish>
 			<Dutch>Je moet in een bos en in de buurt van een boom zijn om hout te hakken.</Dutch>

@@ -49,6 +49,22 @@ vehicle_handleServerKilled = {
 	_unit removeAllEventHandlers "GetOut";
 };
 
+object_handleServerKilled = {
+	private["_unit","_objectID","_objectUID"];
+	_unit = _this select 0;
+	
+	_objectID =	 _unit getVariable ["ObjectID","0"];
+	_objectUID = _unit getVariable ["ObjectUID","0"];
+		
+	[_objectID,_objectUID] call server_deleteObj;
+	
+	_unit removeAllMPEventHandlers "MPKilled";
+	_unit removeAllEventHandlers "Killed";
+	_unit removeAllEventHandlers "HandleDamage";
+	_unit removeAllEventHandlers "GetIn";
+	_unit removeAllEventHandlers "GetOut";
+};
+
 check_publishobject = {
 	private["_allowed","_object","_playername","_allowedObjects"];
 

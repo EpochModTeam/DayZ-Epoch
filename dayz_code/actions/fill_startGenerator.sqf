@@ -4,7 +4,7 @@ if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN D
 TradeInprogress = true;
 
 player removeAction s_player_fillgen;
-
+s_player_fillgen = 1;
 
 // Use target from addaction
 _vehicle = 	_this select 3;

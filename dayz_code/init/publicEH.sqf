@@ -12,6 +12,8 @@
 "dayzHit" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageHandler};
 "dayzHitV" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageVehicle};
 "dayzHideBody"		addPublicVariableEventHandler {hideBody (_this select 1)};
+"dayzHideObject"	addPublicVariableEventHandler {hideObject  (_this select 1)};
+"dayzLockVehicle"	addPublicVariableEventHandler {(_this select 1) spawn local_lockUnlock};
 "dayzGutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 "dayzGutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
 "dayzDelLocal"		addPublicVariableEventHandler {(_this select 1) call object_delLocal};
