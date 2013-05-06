@@ -3041,8 +3041,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Machete";
-		// test model="\z\addons\dayz_communityassets\models\machete.p3d";
-		model = "\dayz_equip\models\hatchet.p3d";
+		model="\z\addons\dayz_communityassets\models\machete.p3d";
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
