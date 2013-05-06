@@ -1,6 +1,5 @@
 // DayZ Epoch TRADERS for 15
-serverTraders = ["GUE_Villager4","RU_Farmwife4","RU_Farmwife3","Dr_Hladik_EP1","CIV_Contractor2_BAF","Soldier_Sniper_PMC","GUE_Soldier_Pilot","GUE_Soldier_2","GUE_Soldier_1","GUE_Soldier_CO","GUE_Woodlander2","GUE_Soldier_Crew","Woodlander2","UN_CDF_Soldier_MG_EP1","UN_CDF_Soldier_EP1","Tanny_PMC"];
-		// START PER TRADER CONFIG
+serverTraders = ["GUE_Villager4","RU_Farmwife4","RU_Farmwife3","Dr_Hladik_EP1","CIV_Contractor2_BAF","Soldier_Sniper_PMC","GUE_Soldier_Pilot","GUE_Soldier_2","GUE_Soldier_1","GUE_Soldier_CO","GUE_Woodlander2","GUE_Soldier_Crew","Woodlander2","UN_CDF_Soldier_MG_EP1","UN_CDF_Soldier_EP1","Tanny_PMC","UN_CDF_Soldier_Pilot_EP1"];
 // Bastions Parts Supplies
 menu_GUE_Villager4 = [
 	[["Vehicle Parts",309],["Building Supplies",310],["Toolbelt Items",311]],
@@ -10,19 +9,19 @@ menu_GUE_Villager4 = [
 // Alda's General Supplies
 menu_RU_Farmwife4 = [
 	[["Food/Drinks",312],["Clothes",313],["Backpacks",314]],
-	[],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
 // Carole's General Supplies
 menu_RU_Farmwife3 = [
 	[["Food/Drinks",315],["Clothes",316],["Backpacks",317]],
-	[],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Dr. Zoidberg
 menu_Dr_Hladik_EP1 = [
 	[["Medical Supplies",318],["Chem lights/Flares",319]],
-	[],
+	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"friendly"
 ];
 // High End Ammo
@@ -33,7 +32,7 @@ menu_CIV_Contractor2_BAF = [
 ];
 // High End Weapons
 menu_Soldier_Sniper_PMC = [
-	[["Pistols",325],["Assault Rifles",326],["Light Machine Guns",327],["Sniper Rifles",328]],
+	[["Pistols",325],["Assault Rifles",326],["Light Machine Guns",327],["Sniper Rifles",328],["Sub Machine Guns",368]],
 	[],
 	"friendly"
 ];
@@ -45,7 +44,7 @@ menu_GUE_Soldier_Pilot = [
 ];
 // Rhven's Weapons
 menu_GUE_Soldier_2 = [
-	[["Helicopter Unarmed",329],["Pistols",336],["Assalut Rifles",337],["Sniper Rifles",338],["Shotguns/Crossbow",366]],
+	[["Pistols",336],["Assault Rifles",337],["Sniper Rifles",338],["Shotguns/Crossbow",366]],
 	[],
 	"neutral"
 ];
@@ -94,6 +93,12 @@ menu_UN_CDF_Soldier_EP1 = [
 // Tanner's Hero Supplies
 menu_Tanny_PMC = [
 	[["Weapons",361],["Vehicles",362],["Clothes",363],["Ammunition",364],["Safes",365]],
+	[],
+	"hero"
+];
+// Piloted Vehicles
+menu_UN_CDF_Soldier_Pilot_EP1 = [
+	[["Airplanes",386],["Jets",387],["Attack Choppers",388]],
 	[],
 	"friendly"
 ];

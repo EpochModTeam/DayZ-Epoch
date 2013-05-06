@@ -9,7 +9,7 @@ if (true) then
 
 _vehicle_2 = objNull;
 if (true) then
-{
+{ 
   _this = createVehicle ["sad_target", [5761.0767, 10775.953], [], 0, "CAN_COLLIDE"];
   _vehicle_2 = _this;
   _this setDir 3.0928693;
@@ -217,6 +217,7 @@ if (true) then
   _vehicle_42 = _this;
   _this setDir 3.486232;
   _this setPos [5776.3779, 10776.735, 1.5258789e-005];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_43 = objNull;
@@ -226,6 +227,7 @@ if (true) then
   _vehicle_43 = _this;
   _this setDir 168.04138;
   _this setPos [5777.0171, 10775.549, 4.196167e-005];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_44 = objNull;
@@ -244,6 +246,7 @@ if (true) then
   _vehicle_46 = _this;
   _this setDir 185.13194;
   _this setPos [5772.2446, 10777.618, -7.2479248e-005];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_48 = objNull;
@@ -271,6 +274,7 @@ if (true) then
   _vehicle_51 = _this;
   _this setDir 94.418816;
   _this setPos [5771.9692, 10775.985, 5.531311e-005];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_53 = objNull;
@@ -280,6 +284,7 @@ if (true) then
   _vehicle_53 = _this;
   _this setDir 113.3124;
   _this setPos [5772.7681, 10775.761, 6.1035156e-005];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_55 = objNull;
@@ -289,6 +294,7 @@ if (true) then
   _vehicle_55 = _this;
   _this setDir 210.47275;
   _this setPos [5771.1138, 10775.968, -3.8146973e-006];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_57 = objNull;
@@ -313,7 +319,7 @@ if (true) then
   _this setDir -2.7836955;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_59 = objNull;
@@ -376,7 +382,7 @@ if (true) then
   _unit_7 = _this;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_73 = objNull;
@@ -406,7 +412,7 @@ if (true) then
   _this setDir 78.773201;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_75 = objNull;
@@ -479,6 +485,7 @@ if (true) then
   _vehicle_85 = _this;
   _this setDir -5.6631036;
   _this setPos [4705.1978, 8925.2207, 0.10253087];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_93 = objNull;
@@ -497,6 +504,7 @@ if (true) then
   _vehicle_94 = _this;
   _this setDir 166.24194;
   _this setPos [4704.752, 8923.8262, 0.078517102];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_96 = objNull;
@@ -506,6 +514,7 @@ if (true) then
   _vehicle_96 = _this;
   _this setDir 225.09821;
   _this setPos [4699.5386, 8918.2539, 3.8950038];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_98 = objNull;
@@ -533,7 +542,7 @@ if (true) then
   _this setDir 190.65311;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_100 = objNull;
@@ -567,6 +576,7 @@ if (true) then
   _vehicle_105 = _this;
   _this setDir 25.439491;
   _this setPos [5554.2085, 10357.669, 0.60609627];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_106 = objNull;
@@ -576,6 +586,7 @@ if (true) then
   _vehicle_106 = _this;
   _this setDir -5.783649;
   _this setPos [5552.8374, 10356.26, 0.34405845];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_107 = objNull;
@@ -672,7 +683,7 @@ if (true) then
   _this setDir 14.189513;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _unit_122 = objNull;
@@ -683,7 +694,7 @@ if (true) then
   _this setDir -20.240097;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_196 = objNull;
@@ -729,7 +740,7 @@ if (true) then
   _this setDir -106.67235;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_238 = objNull;
@@ -793,7 +804,7 @@ if (true) then
   _this setDir 137.64249;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _unit_161 = objNull;
@@ -804,7 +815,7 @@ if (true) then
   _this setDir 80.769196;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_251 = objNull;
@@ -857,7 +868,7 @@ if (true) then
   _this setDir -35.82135;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_256 = objNull;
@@ -921,7 +932,7 @@ if (true) then
   _this setDir 157.8391;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _unit_173 = objNull;
@@ -932,7 +943,7 @@ if (true) then
   _this setDir 185.29475;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_263 = objNull;
@@ -941,6 +952,7 @@ if (true) then
   _this = createVehicle ["FoldTable", [5032.0024, 8231.7559, 4.8737202], [], 0, "CAN_COLLIDE"];
   _vehicle_263 = _this;
   _this setPos [5032.0024, 8231.7559, 4.8737202];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_264 = objNull;
@@ -986,6 +998,7 @@ if (true) then
   _vehicle_269 = _this;
   _this setDir -0.13874577;
   _this setPos [4312.5278, 4777.5376, -5.9604645e-006];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_271 = objNull;
@@ -995,6 +1008,7 @@ if (true) then
   _vehicle_271 = _this;
   _this setDir 88.823166;
   _this setPos [4310.6528, 4779.7397, 4.0531158e-006];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _unit_176 = objNull;
@@ -1005,7 +1019,7 @@ if (true) then
   _this setDir 41.202724;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_274 = objNull;
@@ -1075,7 +1089,7 @@ if (true) then
   _this setDir -172.49802;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _unit_203 = objNull;
@@ -1086,7 +1100,7 @@ if (true) then
   _this setDir -161.52242;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _unit_206 = objNull;
@@ -1097,7 +1111,7 @@ if (true) then
   _this setDir 84.480438;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_284 = objNull;
@@ -1140,6 +1154,7 @@ if (true) then
   _vehicle_289 = _this;
   _this setDir 286.36047;
   _this setPos [4295.752, 4782.6045, 0.077848651];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _vehicle_291 = objNull;
@@ -1149,6 +1164,7 @@ if (true) then
   _vehicle_291 = _this;
   _this setDir -178.96597;
   _this setPos [4299.7778, 4782.8535, 0.083143242];
+  _this setVehicleInit "this enableSimulation false;";
 };
 
 _unit_209 = objNull;
@@ -1159,7 +1175,7 @@ if (true) then
   _this setDir -57.135807;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
-  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
 _vehicle_292 = objNull;
@@ -1171,36 +1187,47 @@ if (true) then
   _this setPos [4291.4438, 4782.0732, 0.076717921];
 };
 
-_vehicle_308 = objNull;
+_vehicle_293 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_ConcreteBlock", [1360.1985, 1157.5498, -1.052331], [], 0, "CAN_COLLIDE"];
-  _vehicle_308 = _this;
-  _this setPos [1360.1985, 1157.5498, -1.052331];
+  _this = createVehicle ["HeliHEmpty", [6238.4155, 9389.2471, 7.6293945e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_293 = _this;
+  _this setPos [6238.4155, 9389.2471, 7.6293945e-006];
 };
 
-_vehicle_310 = objNull;
+_unit_220 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_ConcreteBlock", [1360.4006, 1152.3916, -0.95587093], [], 0, "CAN_COLLIDE"];
-  _vehicle_310 = _this;
-  _this setPos [1360.4006, 1152.3916, -0.95587093];
+  _this = _group_1 createUnit ["UN_CDF_Soldier_Pilot_EP1", [6281.9492, 9399.0371, 5.1704836], [], 0, "CAN_COLLIDE"];
+  _unit_220 = _this;
+  _this setDir -161.84711;
+  _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
+  _this setUnitAbility 0.60000002;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
 
-_vehicle_312 = objNull;
+_vehicle_294 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_ConcreteBlock", [1351.6055, 1152.1189, -0.87151676], [], 0, "CAN_COLLIDE"];
-  _vehicle_312 = _this;
-  _this setPos [1351.6055, 1152.1189, -0.87151676];
+  _this = createVehicle ["Land_Fire_barrel_burning", [6294.2134, 9927.041, 0.57340926], [], 0, "CAN_COLLIDE"];
+  _vehicle_294 = _this;
+  _this setPos [6294.2134, 9927.041, 0.57340926];
 };
 
-_vehicle_314 = objNull;
+_vehicle_300 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_ConcreteBlock", [1351.5781, 1157.3811, -0.8524617], [], 0, "CAN_COLLIDE"];
-  _vehicle_314 = _this;
-  _this setPos [1351.5781, 1157.3811, -0.8524617];
+  _this = createVehicle ["FlagCarrierTFKnight_EP1", [6284.2314, 9397.1699, 5.0819116], [], 0, "CAN_COLLIDE"];
+  _vehicle_300 = _this;
+  _this setPos [6284.2314, 9397.1699, 5.0819116];
+};
+
+_vehicle_301 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Fire_barrel_burning", [6280.9292, 9401.3848, 5.1017332], [], 0, "CAN_COLLIDE"];
+  _vehicle_301 = _this;
+  _this setPos [6280.9292, 9401.3848, 5.1017332];
 };
 
 processInitCommands;
