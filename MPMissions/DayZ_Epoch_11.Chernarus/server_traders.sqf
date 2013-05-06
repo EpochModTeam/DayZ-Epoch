@@ -1,15 +1,14 @@
 // DayZ Epoch TRADERS for 11
 serverTraders = ["CIV_EuroMan01_EP1","Rocker4","Woodlander3","Woodlander1","RU_WorkWoman1","RU_WorkWoman5","Rita_Ensler_EP1","CIV_EuroMan02_EP1","RU_Citizen3","Pilot_EP1","Worker3","Profiteer4","Dr_Hladik_EP1","Doctor","RU_Functionary1","RU_Villager3","TK_CIV_Takistani04_EP1","RU_Citizen4","RU_Citizen1","Worker2"];
-		// START PER TRADER CONFIG
 // Weapons Trader - Bash
 menu_CIV_EuroMan01_EP1 = [
-	[["Sidearm",1],["Rifles",2],["Shotguns and Crossbows",3]],
+	[["Sidearm",1],["Rifles",2],["Shotguns and Crossbows",3],["Sniper Rifles",370]],
 	[],
 	"friendly"
 ];
 // Weapons Trader - Klen
 menu_Rocker4 = [
-	[["Sidearm",4],["Rifles",5],["Shotguns and Crossbows",6]],
+	[["Sidearm",4],["Rifles",5],["Shotguns and Crossbows",6],["Sniper Rifles",375],["Sub Machine Guns",376]],
 	[],
 	"friendly"
 ];
@@ -45,19 +44,19 @@ menu_Rita_Ensler_EP1 = [
 ];
 // Ammo Trader - Bash
 menu_CIV_EuroMan02_EP1 = [
-	[["Sidearm Ammo",25],["Rifle Ammo",26],["Shotgun and Crossbow Ammo",27]],
+	[["Sidearm Ammo",25],["Rifle Ammo",26],["Shotgun and Crossbow Ammo",27],["Sniper Ammo",369]],
 	[],
 	"friendly"
 ];
 // Ammo Trader - Klen
 menu_RU_Citizen3 = [
-	[["Sidearm Ammo",28],["Rifle Ammo",29],["Shotgun and Crossbow Ammo",30]],
+	[["Sidearm Ammo",28],["Rifle Ammo",29],["Shotgun and Crossbow Ammo",30],["Sniper Ammo",372],["SMG Ammo",377]],
 	[],
 	"friendly"
 ];
 // Ammo Trader - Stary
 menu_Pilot_EP1 = [
-	[["Assault Rifle Ammo",31],["Machine Gun Ammo",32],["Sniper Rifle Ammo",33]],
+	[["Assault Rifle Ammo",31],["Machine Gun Ammo",32],["Sniper Rifle Ammo",33],["Pistol Ammo",374],["SMG Ammo",378]],
 	[],
 	"neutral"
 ];
@@ -99,7 +98,7 @@ menu_RU_Villager3 = [
 ];
 // High End Weapons
 menu_TK_CIV_Takistani04_EP1 = [
-	[["Assault Rifle",57],["Machine Gun",58],["Sniper Rifle",59],["Explosives",60]],
+	[["Assault Rifle",57],["Machine Gun",58],["Sniper Rifle",59],["Explosives",60],["Sub Machine Guns",379]],
 	[],
 	"neutral"
 ];
