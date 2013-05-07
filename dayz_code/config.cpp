@@ -321,9 +321,21 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Priest_DZ";
 		};
+		class Skin_Rocker1_DZ: Default {
+			sex = "male";
+			playerModel = "Rocker1_DZ";
+		};
 		class Skin_Rocker2_DZ: Default {
 			sex = "male";
 			playerModel = "Rocker2_DZ";
+		};
+		class Skin_Rocker3_DZ: Default {
+			sex = "male";
+			playerModel = "Rocker3_DZ";
+		};
+		class Skin_Rocker4_DZ: Default {
+			sex = "male";
+			playerModel = "Rocker4_DZ";
 		};
 		class Skin_Bandit1_DZ: Default {
 			sex = "male";
@@ -332,6 +344,26 @@ class CfgSurvival {
 		class Skin_Bandit2_DZ: Default {
 			sex = "male";
 			playerModel = "Bandit2_DZ";
+		};
+		class Skin_GUE_Soldier_MG_DZ: Default {
+			sex = "male";
+			playerModel = "GUE_Soldier_MG_DZ";
+		};
+		class Skin_GUE_Soldier_Sniper_DZ: Default {
+			sex = "male";
+			playerModel = "GUE_Soldier_Sniper_DZ";
+		};
+		class Skin_GUE_Soldier_Crew_DZ: Default {
+			sex = "male";
+			playerModel = "GUE_Soldier_Crew_DZ";
+		};
+		class Skin_GUE_Soldier_CO_DZ: Default {
+			sex = "male";
+			playerModel = "GUE_Soldier_CO_DZ";
+		};
+		class Skin_GUE_Soldier_2_DZ: Default {
+			sex = "male";
+			playerModel = "GUE_Soldier_2_DZ";
 		};
 		class Skin_BanditW1_DZ: Default {
 			sex = "female";
@@ -2947,6 +2979,9 @@ class HeliCrash_No50s: Default {
 	// Panthera
 	class Land_sara_stodola: Farm {
 		lootPos[] = {{5.01367,3.33118,-2.19523},{2.51758,1.05737,-2.19523},{-1.30957,-1.02954,-2.19523},{-4.24414,4.0238,-2.19523},{5.16211,-0.661621,-2.19523}};
+	};
+	class land_cihlovej_dum_mini: Residential {
+		lootPos[] = {{-2.4646,-0.78418,-2.86942},{-1.75586,2.88525,-2.86942},{2.76587,2.08154,-2.86942},{1.96265,-1.98877,-2.86942},{0.0109863,0.876465,-2.86942},{0.116455,3.05762,-2.86942}};
 	};
 
 };

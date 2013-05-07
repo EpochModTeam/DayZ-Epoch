@@ -192,8 +192,58 @@ class Citizen1;	// External class reference
         transportmaxbackpacks = 10;
 	};
 
-
-
+	// UH1Y
+	class UH1_Base: Helicopter 
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics: ViewOptics {};
+				class Turrets: Turrets {};
+			};
+			class RightDoorGun: MainTurret
+			{
+				class Turrets: Turrets {};
+			};
+			class CoPilotObs: MainTurret
+			{
+				class Turrets: Turrets {};
+			};
+			
+		};
+	};
+	class UH1Y_DZ: UH1_Base
+	{
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+        transportmaxbackpacks = 4;
+		weapons[] = {}; 
+		magazines[] = {}; 
+		
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {"2000Rnd_762x51_M134"};
+			};
+			class RightDoorGun : RightDoorGun
+			{
+				magazines[] = {"2000Rnd_762x51_M134"};
+			};
+		};
+	};
+	
 	class UH1H_base: Helicopter 
 	{
 		class Turrets: Turrets
@@ -283,6 +333,20 @@ class Citizen1;	// External class reference
 		transportMaxWeapons = 10;
 		transportMaxMagazines = 200;
         transportmaxbackpacks = 5;
+	};
+	class MV22;
+	class MV22_DZ : MV22 { 
+		accuracy = 1000; 
+		scope = 2; 
+		displayName = "MV-22"; 
+		crew = ""; 
+		typicalCargo[] = {}; 
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 20;
+		transportMaxMagazines = 400;
+        transportmaxbackpacks = 10;
 	};
 
 	class ArmoredSUV_PMC;
@@ -683,6 +747,74 @@ class Citizen1;	// External class reference
 		canHideBodies = 1;
 	};
 
+	// new bandits
+	class GUE_Soldier_MG;
+	class GUE_Soldier_MG_DZ: GUE_Soldier_MG {
+		displayName = "Bandit Gunner";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class GUE_Soldier_Sniper;
+	class GUE_Soldier_Sniper_DZ: GUE_Soldier_Sniper {
+		displayName = "Bandit Sniper";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class GUE_Soldier_Crew;
+	class GUE_Soldier_Crew_DZ: GUE_Soldier_Crew {
+		displayName = "Bandit ";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class GUE_Soldier_CO;
+	class GUE_Soldier_CO_DZ: GUE_Soldier_CO {
+		displayName = "Bandit Gunner";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class GUE_Soldier_2;
+	class GUE_Soldier_2_DZ: GUE_Soldier_2 {
+		displayName = "Bandit Gunner";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+
+
 	class BAF_Soldier_Officer_W;
 	class Rocket_DZ: BAF_Soldier_Officer_W {
 		displayName = "Officer";
@@ -786,9 +918,48 @@ class Citizen1;	// External class reference
 		canHideBodies = 1;
 		canCarryBackPack = 1;
 	};
+	class Rocker1;
+	class Rocker1_DZ: Rocker1 {
+		displayName = "Rocker (black)";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
 	class Rocker2;
 	class Rocker2_DZ: Rocker2 {
-		displayName = "Rocker";
+		displayName = "Rocker (brown)";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class Rocker3;
+	class Rocker3_DZ: Rocker3 {
+		displayName = "Rocker (blue)";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+	};
+	class Rocker4;
+	class Rocker4_DZ: Rocker4 {
+		displayName = "Rocker (green)";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -977,7 +1148,7 @@ class Citizen1;	// External class reference
 		respawnMagazines[] = {};
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
-	};	
+	};
 	class Bag_Base_EP1;	
 	class Bag_Base_BAF;
 	class DZ_Patrol_Pack_EP1: Bag_Base_EP1
@@ -1183,7 +1354,6 @@ class Citizen1;	// External class reference
 		transportFuel = 0; 
 		nameSound = "fuelstation";
 	};
-
 	class FuelStation : Strategic { 
 	  icon = "\Ca\buildings\Icons\i_fuel_CA.paa"; 
 	  scope = 0; 
@@ -1230,6 +1400,13 @@ class Citizen1;	// External class reference
 		displayName = "House"; 
 		destrType = "DestructBuilding"; 
 		armor = 1200; 
+	};
+	// Panthera
+	class Land_benzina_schnell: Strategic
+	{
+		model = "\ibr\ibr_plants\benzina_schnell"; 
+		transportFuel = 0; 
+		nameSound = "fuelstation";
 	};
 	
 	class Ship: AllVehicles 

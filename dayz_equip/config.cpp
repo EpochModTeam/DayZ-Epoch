@@ -1018,7 +1018,7 @@ class CfgMagazines
 			{
 				text = "Craft Tent";
 				script = "spawn player_craftItem;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTent",1}};
 				input[] = {{"ItemCanvas",2},{"ItemPole",2}};
@@ -1027,25 +1027,34 @@ class CfgMagazines
 			{
 				text = "Craft Desert Tent";
 				script = "spawn player_craftItem1;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentDomed",1}};
-				input[] = {{"ItemCanvas",3},{"ItemPole",2}};
+				input[] = {{"ItemCanvas",3},{"ItemPole",3}};
 			};
 			class Crafting2
 			{
+				text = "Craft Green Tent";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemTentDomed2",1}};
+				input[] = {{"ItemCanvas",3},{"ItemPole",3}};
+			};
+			class Crafting3
+			{
 				text = "Craft Sun Shade";
 				script = "spawn player_craftItem2;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"sun_shade_kit",1}};
 				input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
 			};
-			class Crafting3
+			class Crafting4
 			{
 				text = "Craft Burlap";
 				script = "spawn player_craftItem3;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemBurlap",1}};
 				input[] = {{"ItemCanvas",2}};
@@ -1068,7 +1077,7 @@ class CfgMagazines
 				text = "Craft Sandbag";
 				script = "spawn player_craftItem;";
 				neednearby[] = {"sand"}; // todo add sand requirement
-				requiretools[] = {"ItemEtool"};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbag",1}};
 				input[] = {{"ItemBurlap",3}};
 			};
@@ -1155,12 +1164,30 @@ class CfgMagazines
 		displayName = "Priest Outfit";
 		descriptionShort = "Priest Outfit";
 	};
+	class Skin_Rocker1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Rocker Outfit";
+		descriptionShort = "Rocker (black)";
+	};	
 	class Skin_Rocker2_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Rocker Outfit";
-		descriptionShort = "Rebel Uniform";
-	};	
+		descriptionShort = "Rocker (brown)";
+	};
+	class Skin_Rocker3_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Rocker Outfit";
+		descriptionShort = "Rocker (blue)";
+	};
+	class Skin_Rocker4_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Rocker Outfit";
+		descriptionShort = "Rocker (green)";
+	};
 	class Skin_Bandit1_DZ: SkinBase
 	{
 		scope = 2;
@@ -1172,6 +1199,36 @@ class CfgMagazines
 		scope = 2;
 		displayName = "Bandit Camo";
 		descriptionShort = "Bandit Camo Outfit";
+	};
+	class Skin_GUE_Soldier_MG_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Gunner";
+		descriptionShort = "Bandit Gunner Outfit";
+	};
+	class Skin_GUE_Soldier_Sniper_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Sniper";
+		descriptionShort = "Bandit Sniper Outfit";
+	};
+	class Skin_GUE_Soldier_Crew_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Baklava";
+		descriptionShort = "Bandit Baklava Outfit";
+	};
+	class Skin_GUE_Soldier_CO_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Mask";
+		descriptionShort = "Bandit Mask Outfit";
+	};
+	class Skin_GUE_Soldier_2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Hat";
+		descriptionShort = "Bandit Hat with Baklava";
 	};
 	class Skin_BanditW1_DZ: SkinBase
 	{
@@ -1339,6 +1396,17 @@ class CfgMagazines
 		model = "\dayz_equip\models\fad.p3d";
 		picture = "\dayz_equip\textures\equip_fad_ca.paa";
 		descriptionShort = "Light Bulb";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Light Pole";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"light_pole_kit",1}};
+				input[] = {{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
+			};
+		};
 	};
 	class PartFueltank: CA_Magazine
 	{
@@ -1482,7 +1550,7 @@ class CfgMagazines
 			{
 				text = "Craft Lumber";
 				script = "spawn player_craftItem;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodLumber",1}};
 				input[] = {{"PartWoodPile",2}};
@@ -1531,7 +1599,7 @@ class CfgMagazines
 			{
 				text = "Craft Plywood";
 				script = "spawn player_craftItem;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"PartWoodPlywood",1}};
 				input[] = {{"PartWoodLumber",2}};
@@ -1562,7 +1630,7 @@ class CfgMagazines
 		class ItemActions {
 			class Crafting
 			{
-				text = "Craft Shed";
+				text = "Craft Shack";
 				script = "spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};

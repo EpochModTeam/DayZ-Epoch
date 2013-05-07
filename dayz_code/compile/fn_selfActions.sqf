@@ -50,7 +50,7 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_grabflare = -1;
 	s_player_removeflare = -1;
 };
-hint str(typeOf cursorTarget);
+
 if(DZEdebug) then {
 	hint str(typeOf cursorTarget);
 
@@ -136,7 +136,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	} forEach _rawmeat; 
 	
 	if (_hasFuelE and dayz_oldrefuel) then {
-		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_fuel_tank_stairs_ep1") or (cursorTarget isKindOf "Land_wagon_tanker") or (cursorTarget isKindOf "Land_fuelstation") or (cursorTarget isKindOf "Land_fuelstation_army") or (cursorTarget isKindOf "land_fuelstation_w");
+		_isFuel = ((typeOf cursorTarget) in dayz_fuelsources);
 	};
 
 	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));

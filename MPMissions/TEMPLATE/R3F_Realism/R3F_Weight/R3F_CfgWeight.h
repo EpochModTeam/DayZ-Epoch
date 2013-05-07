@@ -1208,6 +1208,10 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		class MeleeMachete  
+		{
+			weight = 1;
+		};
 		class ItemHatchet  
 		{
 			weight = 1;
@@ -1228,8 +1232,43 @@ class CfgWeight
 		{
 			weight = 1;
 		};
-		
-		
+
+		class Skin_FR_OHara_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_FR_Rodriguez_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_CZ_Soldier_Sniper_EP1_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Graves_Light_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_GUE_Soldier_MG_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_GUE_Soldier_Sniper_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_GUE_Soldier_Crew_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_GUE_Soldier_CO_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_GUE_Soldier_2_DZ   
+		{
+			weight = 1;
+		};
 		class Skin_Survivor2_DZ   
 		{
 			weight = 1;
@@ -1278,7 +1317,19 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		class Skin_Rocker1_DZ   
+		{
+			weight = 1;
+		};
 		class Skin_Rocker2_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Rocker3_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_Rocker4_DZ   
 		{
 			weight = 1;
 		};
@@ -1389,7 +1440,7 @@ class CfgWeight
 		};
 		class PartWoodPile 
 		{
-			weight = 0.5;
+			weight = 1;
 		};
 		class PartWheel 
 		{
@@ -1432,6 +1483,10 @@ class CfgWeight
 			weight = 5;
 		};
 		class ItemTentDomed
+		{
+			weight = 5;
+		};
+		class ItemTentDomed2
 		{
 			weight = 5;
 		};
@@ -1558,7 +1613,131 @@ class CfgWeight
 		};
 		
 		
-		
-		
+		class ItemCanvas 
+		{
+			weight = 4;
+		};
+		class ItemBurlap 
+		{
+			weight = 8;
+		};
+		class ItemLightBulb
+		{
+			weight = 0.02;
+		};
+		class ItemPole
+		{
+			weight = 10;
+		};
+		class ItemCorrugated
+		{
+			weight = 29;
+		};
+		class PartWoodPlywood
+		{
+			weight = 4;
+		};
+		class PartWoodLumber
+		{
+			weight = 2;
+		};
+
+		class 30m_plot_kit 
+		{
+			weight = 0.02;
+		};
+		class fuel_pump_kit 
+		{
+			weight = 50;
+		};
+		class light_pole_kit 
+		{
+			weight = 10;
+		};
+		class stick_fence_kit 
+		{
+			weight = 6;
+		};
+		class park_bench_kit 
+		{
+			weight = 50;
+		};
+		class wood_shack_kit 
+		{
+			weight = 50;
+		};
+		class storage_shed_kit 
+		{
+			weight = 100;
+		};
+		class outhouse_kit 
+		{
+			weight = 50;
+		};
+		class wooden_shed_kit 
+		{
+			weight = 75;
+		};
+		class rusty_gate_kit 
+		{
+			weight = 80;
+		};
+		class sun_shade_kit 
+		{
+			weight = 50;
+		}; 
+		class m240_nest_kit 
+		{
+			weight = 100;
+		}; 
+		class ItemFuelBarrel 
+		{
+			weight = 167;
+		}; 
+		class ItemFuelBarrelEmpty 
+		{
+			weight = 20;
+		};
+		class ItemOilBarrel 
+		{
+			weight = 140;
+		}; 
+
+		class bulk_NVGoggles 
+		{
+			weight = 25;
+		};
+		class bulk_DZ_Backpack_EP1 
+		{
+			weight = 25;
+		};
+		class bulk_15Rnd_9x19_M9SD 
+		{
+			weight = 25;
+		};
+		class bulk_30Rnd_556x45_StanagSD 
+		{
+			weight = 25;
+		};
+		class bulk_ItemSandbag 
+		{
+			weight = 25;
+		};
+		class bulk_ItemGPS 
+		{
+			weight = 25;
+		};
+		class bulk_ItemMap 
+		{
+			weight = 25;
+		};
+		class bulk_ItemEtool 
+		{
+			weight = 25;
+		};
+		class bulk_17Rnd_9x19_glock17 
+		{
+			weight = 25;
+		};
 	};
 };

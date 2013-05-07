@@ -56,7 +56,7 @@ class CfgMagazines {
 			{
 				text = "Craft Large Sandbag";
 				script = "spawn player_craftItem;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbagLarge",1}};
 				input[] = {{"ItemSandbag",3},{"ItemWire",1},{"ItemTankTrap",1}};
@@ -65,7 +65,7 @@ class CfgMagazines {
 			{
 				text = "Craft M240 Nest";
 				script = "spawn player_craftItem1;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
 				input[] = {{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};

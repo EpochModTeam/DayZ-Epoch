@@ -416,6 +416,11 @@ class CfgLoot {
 			"Skin_TK_INS_Warlord_EP1",
 			"Skin_SurvivorWcombat_DZ",
 			"Skin_SurvivorWdesert_DZ",
+			"Skin_GUE_Soldier_MG_DZ",
+			"Skin_GUE_Soldier_Sniper_DZ",
+			"Skin_GUE_Soldier_Crew_DZ",
+			"Skin_GUE_Soldier_CO_DZ",
+			"Skin_GUE_Soldier_2_DZ",
 		},
 		{
 			0.01, //"Skin_Ins_Soldier_GL_DZ",
@@ -428,6 +433,11 @@ class CfgLoot {
 			0.01, //"Skin_TK_INS_Warlord_EP1",
 			0.01, //"Skin_SurvivorWcombat_DZ",
 			0.03, //"Skin_SurvivorWdesert_DZ",
+			0.01, //"Skin_GUE_Soldier_MG_DZ",
+			0.01, //"Skin_GUE_Soldier_Sniper_DZ",
+			0.01, //"Skin_GUE_Soldier_Crew_DZ",
+			0.01, //"Skin_GUE_Soldier_CO_DZ",
+			0.01, //"Skin_GUE_Soldier_2_DZ",
 		}
 	};
 };
