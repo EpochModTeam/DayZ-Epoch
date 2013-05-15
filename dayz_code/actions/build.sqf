@@ -106,8 +106,8 @@ if(!_cancel) then {
 
 	cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 
-	//["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
-	dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
+	//["dayzPublishObj",[dayz_playerUID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+	dayzPublishObj = [dayz_playerUID,_object,[_dir,_location],_classname];
 	publicVariableServer "dayzPublishObj";
 
 	sleep 2;

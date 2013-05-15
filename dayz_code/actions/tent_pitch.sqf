@@ -59,8 +59,8 @@ if (!_isOk) then {
 
 	_object setVariable ["characterID",dayz_characterID,true];
 
-	//["dayzPublishObj",[dayz_characterID,_tent,[_dir,_location],_classname]] call callRpcProcedure;
-	dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
+	//["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],_classname]] call callRpcProcedure;
+	dayzPublishObj = [dayz_playerUID,_object,[_dir,_location],_classname];
 	publicVariableServer "dayzPublishObj";
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
