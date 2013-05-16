@@ -111,7 +111,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	
 	_isMan = cursorTarget isKindOf "Man";
 	_traderType = typeOf cursorTarget;
-	_ownerID = cursorTarget getVariable ["characterID","0"];
+	_ownerID = cursorTarget getVariable ["playerUID","0"];
 	_isAnimal = cursorTarget isKindOf "Animal";
 	_isDog =  (cursorTarget isKindOf "DZ_Pastor" || cursorTarget isKindOf "DZ_Fin");
 	_isZombie = cursorTarget isKindOf "zZombie_base";
@@ -139,7 +139,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		_isFuel = ((typeOf cursorTarget) in dayz_fuelsources);
 	};
 
-	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
+	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_playerUID + " " + str(_ownerID == dayz_playerUID));
 	
 	//Allow player to delete objects
 	if((_isDestructable or _isWreck or (_isRemovable and ("ItemCrowbar" in items player))) and _hasToolbox and _canDo) then {
@@ -267,7 +267,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 	
 	//Packing my tent
-	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
+	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_playerUID) then {
 		if ((s_player_packtent < 0) and (player distance cursorTarget < 3)) then {
 			s_player_packtent = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",cursorTarget, 0, false, true, "",""];
 		};
@@ -371,7 +371,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	// Allow auto fill 
 
     //Sleep
-	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
+	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_playerUID) then {
 		if ((s_player_sleep < 0) and (player distance cursorTarget < 3)) then {
 			s_player_sleep = player addAction [localize "str_actions_self_sleep", "\z\addons\dayz_code\actions\player_sleep.sqf",cursorTarget, 0, false, true, "",""];
 		};
@@ -507,7 +507,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		};
 	};
 	
-	if (_isDog and _ownerID == dayz_characterID and _isAlive and _canDo) then {
+	if (_isDog and _ownerID == dayz_playerUID and _isAlive and _canDo) then {
 		_dogHandle = player getVariable ["dogID", 0];
 		if (s_player_feeddog < 0 and _hasRawMeat) then {
 			s_player_feeddog = player addAction [localize "str_actions_feeddog","\z\addons\dayz_code\actions\dog\feed.sqf",[_dogHandle,0], 0, false, true,"",""];
@@ -631,8 +631,8 @@ _dogHandle = player getVariable ["dogID", 0];
 if (_dogHandle > 0) then {
 	_dog = _dogHandle getFSMVariable "_dog";
 	_ownerID = "0";
-	if (!isNull cursorTarget) then { _ownerID = cursorTarget getVariable ["characterID","0"]; };
-	if (_canDo and !_inVehicle and alive _dog and _ownerID != dayz_characterID) then {
+	if (!isNull cursorTarget) then { _ownerID = cursorTarget getVariable ["playerUID","0"]; };
+	if (_canDo and !_inVehicle and alive _dog and _ownerID != dayz_playerUID) then {
 		if (s_player_movedog < 0) then {
 			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID", 0], 1, false, true, "", ""];
 		};

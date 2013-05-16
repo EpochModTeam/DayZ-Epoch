@@ -57,7 +57,7 @@ if (!_isOk) then {
 	player reveal _object;
 	_location = getPosATL _object;
 
-	_object setVariable ["characterID",dayz_characterID,true];
+	_object setVariable ["playerUID",dayz_playerUID,true];
 
 	//["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],_classname]] call callRpcProcedure;
 	dayzPublishObj = [dayz_playerUID,_object,[_dir,_location],_classname];

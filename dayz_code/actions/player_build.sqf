@@ -44,12 +44,12 @@ if(_IsNearPlot == 0) then {
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner 
-	_ownerID = _nearestPole getVariable["CharacterID","0"];
+	_ownerID = _nearestPole getVariable["playerUID","0"];
 
-	diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
+	diag_log format["DEBUG BUILDING: %1 = %2", dayz_playerUID, _ownerID];
 
 	// check if friendly to owner
-	if(dayz_characterID == _ownerID) then {
+	if(dayz_playerUID == _ownerID) then {
 		// owner can build anything within his plot except other plots witin
 		if(_classname != "Plastic_Pole_EP1_DZ") then {
 			_canBuildOnPlot = true;
@@ -248,7 +248,7 @@ if (_hasrequireditem) then {
 
 				cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 
-				_tmpbuilt setVariable ["characterID",dayz_characterID,true];
+				_tmpbuilt setVariable ["playerUID",dayz_playerUID,true];
 	
 				//["dayzPublishObj",[dayz_playerUID,_tmpbuilt,[_dir,_location],_classname]] call callRpcProcedure;
 				dayzPublishObj = [dayz_playerUID,_tmpbuilt,[_dir,_location],_classname];

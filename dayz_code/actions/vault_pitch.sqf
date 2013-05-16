@@ -141,7 +141,7 @@ if(!_cancel) then {
 		player reveal _tent;
 	
 
-		_tent setVariable ["characterID",dayz_playerUID,true];
+		_tent setVariable ["playerUID",dayz_playerUID,true];
 		_tent setVariable ["OEMPos",_location,true];
 
 		//["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;

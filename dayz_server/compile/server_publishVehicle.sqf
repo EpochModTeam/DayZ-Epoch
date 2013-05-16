@@ -1,10 +1,10 @@
-private["_object","_worldspace","_location","_dir","_character","_tent","_class","_id","_uid","_dam","_hitpoints","_selection","_array","_damage","_randFuel","_fuel","_key","_result","_outcome","_totaldam","_parts","_retry","_done","_spawnDMG"];
+private["_object","_worldspace","_location","_dir","_playerUID","_tent","_class","_id","_uid","_dam","_hitpoints","_selection","_array","_damage","_randFuel","_fuel","_key","_result","_outcome","_totaldam","_parts","_retry","_done","_spawnDMG"];
 //[_veh,[_dir,_location],"V3S_Civ",true]
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;
 _spawnDMG =		_this select 3;
-_characterID =  _this select 4;
+_playerUID =  _this select 4;
 
 _fuel = 1;
 _damage = 0;
@@ -52,22 +52,22 @@ if (_spawnDMG) then {
 // TODO: check if uid already exists and if so increment by 1 and check again as soon as we find nothing continue.
 
 //Send request
-_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _characterID, _worldspace, [], _array, _fuel,_uid];
+_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _playerUID, _worldspace, [], _array, _fuel,_uid];
 diag_log ("HIVE: WRITE: "+ str(_key)); 
 _key call server_hiveWrite;
 
 dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 // Switched to spawn so we can wait a bit for the ID
-[_object,_uid,_fuel,_damage,_array,_characterID,_class] spawn {
-   private["_object","_uid","_fuel","_damage","_array","_characterID","_done","_retry","_key","_result","_outcome","_oid","_selection","_dam","_class"];
+[_object,_uid,_fuel,_damage,_array,_playerUID,_class] spawn {
+   private["_object","_uid","_fuel","_damage","_array","_playerUID","_done","_retry","_key","_result","_outcome","_oid","_selection","_dam","_class"];
 
    _object = _this select 0;
    _uid = _this select 1;
    _fuel = _this select 2;
    _damage = _this select 3;
    _array = _this select 4;
-   _characterID = _this select 5;
+   _playerUID = _this select 5;
    _class = _this select 6;
 
    _done = false;
@@ -97,7 +97,7 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	if(!_done) exitWith { deleteVehicle _object; diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
 
 	_object setVariable ["lastUpdate",time];
-	_object setVariable ["CharacterID", _characterID, true];
+	_object setVariable ["playerUID", _playerUID, true];
 	_object setDamage _damage;
 
 	// Set Hits after ObjectID is set

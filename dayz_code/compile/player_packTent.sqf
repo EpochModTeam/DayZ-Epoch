@@ -3,7 +3,7 @@
 */
 private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
 _obj = _this;
-_ownerID = _obj getVariable["CharacterID","0"];
+_ownerID = _obj getVariable["playerUID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
 player playActionNow "Medic";
@@ -11,7 +11,7 @@ player playActionNow "Medic";
 player removeAction s_player_packtent;
 s_player_packtent = -1;
 
-if(_ownerID == dayz_characterID) then {
+if(_ownerID == dayz_playerUID) then {
 	_alreadyPacking = _obj getVariable["packing",0];
 
 	if (_alreadyPacking == 1) exitWith {cutText [format[(localize "str_player_beingpacked")] , "PLAIN DOWN"]};
