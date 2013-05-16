@@ -7,7 +7,7 @@ if(TradeInprogress) exitWith { cutText ["Lock already in progress." , "PLAIN DOW
 TradeInprogress = true;
 
 _obj = _this;
-_ownerID = _obj getVariable["CharacterID","0"];
+_ownerID = _obj getVariable["playerUID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
 player playActionNow "Medic";
@@ -34,7 +34,7 @@ if(_ownerID == dayz_playerUID) then {
 	_holder setpos _pos;
 	player reveal _holder;
 	
-	_holder setVariable["CharacterID",_ownerID,true];
+	_holder setVariable["playerUID",_ownerID,true];
 	_holder setVariable["ObjectID",_objectID,true];
 	_holder setVariable["ObjectUID",_objectUID,true];
 	_holder setVariable ["OEMPos", _pos, true];

@@ -7,7 +7,7 @@ if(TradeInprogress) exitWith { cutText ["That Safe is already being packed." , "
 TradeInprogress = true;
 
 _obj = _this;
-_ownerID = _obj getVariable["CharacterID","0"];
+_ownerID = _obj getVariable["playerUID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
 
