@@ -236,8 +236,8 @@
 				<Russian>Палатка</Russian>
 			</Key>						
 			<Key ID="STR_EQUIP_DESC_20">						
-				<Original>A camping tent that can be pitched, allowing you extended storage safe from others.</Original>						
-				<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>						
+				<Original>A camping tent that can be pitched, allowing you extended storage.</Original>						
+				<English>A camping tent that can be pitched, allowing you extended storage.</English>						
 				<German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
 				<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
 			</Key>						

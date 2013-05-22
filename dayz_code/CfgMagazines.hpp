@@ -165,7 +165,7 @@ class CfgMagazines {
 		displayName = "H-barrier cube";
 		model = "\dayz_equip\models\sandbags.p3d";
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-		descriptionShort = "Sacks made of hessian and wire that can be filled with sand or soil and used for military fortification.";
+		descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
 		
 		class ItemActions {
 			class Build {
@@ -809,24 +809,6 @@ class CfgMagazines {
 		descriptionShort = $STR_JUNK_DESC_TOILETPAPER;
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
-		type = 256;
-	};
-	class ItemTrout : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = "Rainbow Trout";
-		descriptionShort = "Rainbow Trout";
-		model = "\dayz_equip\models\trout.p3d";
-		picture = "\dayz_equip\textures\equip_rainbowtrout_CA.paa";
-		type = 256;
-	};
-	class ItemTuna : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = "Blue Fin Tuna";
-		descriptionShort = "Blue Fin Tuna";
-		model = "\dayz_equip\models\tuna.p3d";
-		picture = "\dayz_equip\textures\equip_tuna_CA.paa";
 		type = 256;
 	};
 	class ItemTrashRazor : CA_Magazine {

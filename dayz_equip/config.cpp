@@ -1069,7 +1069,7 @@ class CfgMagazines
 		displayName = "Burlap";
 		model = "\dayz_equip\models\sandbags.p3d";
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-		descriptionShort = "Burlap Bag";
+		descriptionShort = "Burlap: A strong cloth like material used for building sandbags";
 		class ItemActions
 		{
 			class Crafting
@@ -1394,7 +1394,7 @@ class CfgMagazines
 		displayName = "Light Bulb";
 		model = "\dayz_equip\models\bulb.p3d";
 		picture = "\dayz_equip\textures\equip_bulb_CA.paa";
-		descriptionShort = "Light Bulb";
+		descriptionShort = "Lightbulb: Used in part to creat a buildable lamp post. Don't tell me you didn't find this in a barn.";
 		class ItemActions {
 			class Crafting
 			{
@@ -1455,9 +1455,9 @@ class CfgMagazines
 		type = 256;
 		displayName = "Corrugated Fence";
 		// TODO model and picture
-		model = "\dayz_equip\models\genericparts.p3d";
-		picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
-		descriptionShort = "Corrugated Fence";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Corrugated Fence: A buildable object used for fortification purposes.";
 		class ItemActions {
 			class Build {
 				text = "Build Corrugated Fence";
@@ -1502,7 +1502,7 @@ class CfgMagazines
 		displayName = "Metal Pole";
 		model = "\dayz_equip\models\pipe.p3d";
 		picture = "\dayz_equip\textures\equip_pipe_CA.paa";
-		descriptionShort = "Metal Pole";
+		descriptionShort = "Pole: A few sturdy metal poles used to craft tents and other buildables";
 		class ItemActions {
 			class Crafting
 			{
@@ -1584,7 +1584,7 @@ class CfgMagazines
 		displayName = "Lumber";
 		model = "\dayz_equip\models\planks.p3d";
 		picture = "\dayz_equip\textures\equip_wood_planks_CA.paa";
-		descriptionShort = "Lumber";
+		descriptionShort = "Lumber: Used for building many structures and can also be used to make plywood.";
 		class ItemActions {
 			class Build {
 				text = "Build Wood Gate";
@@ -1602,6 +1602,7 @@ class CfgMagazines
 				input[] = {{"PartWoodLumber",2}};
 				
 			};
+			/*
 			class Crafting1
 			{
 				text = "Craft Wood Bench";
@@ -1612,6 +1613,7 @@ class CfgMagazines
 				input[] = {{"PartWoodLumber",4}};
 				
 			};
+			*/
 		};
 	};
 	class PartWoodPlywood: CA_Magazine
@@ -1622,7 +1624,7 @@ class CfgMagazines
 		displayName = "Plywood";
 		model = "\dayz_equip\models\plywood.p3d";
 		picture = "\dayz_equip\textures\equip_plywood_CA.paa";
-		descriptionShort = "Plywood";
+		descriptionShort = "Plywood: Used for building many structures.";
 		class ItemActions {
 			class Crafting
 			{
@@ -1645,7 +1647,7 @@ class CfgMagazines
 		// TODO make custom model and icon
 		model = "\dayz_equip\models\woodPile.p3d";
 		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
-		descriptionShort = "Wooden Shack";
+		descriptionShort = "Wooden Shack: A crafted object that holds some items/weapons/backpacks.";
 		class ItemActions {
 			class Build {
 				text = "Build Wood Shack";
@@ -1991,7 +1993,7 @@ class CfgMagazines
 		displayName = "Zombie Parts";
 		model = "\dayz_equip\models\zombie_parts_bag_v2.p3d";
 		picture = "\dayz_equip\textures\parts_bag_texture3c_CA.paa";
-		descriptionShort = "Zombie Parts in a Bag";
+		descriptionShort = "Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.";
 
 	};
 	class ItemEpinephrine: CA_Magazine
@@ -2106,7 +2108,7 @@ class CfgMagazines
 		displayName = "Fuel Barrel";
 		model = "\dayz_equip\models\oil_drum_model.p3d";
 		picture = "\dayz_equip\textures\equip_oil_drum_model_ca.paa";
-		descriptionShort = "210 litres of fuel in a Barrel";
+		descriptionShort = "210 litres of fuel per barrel";
 	};
 	class ItemFuelBarrelEmpty: ItemFuelBarrel
 	{
@@ -2117,7 +2119,7 @@ class CfgMagazines
 		displayName = "Fuel Barrel (Empty)";
 		// TODO add X to icon to represent empty barrel
 		picture = "\dayz_equip\textures\equip_oil_drum_model_ca.paa";
-		descriptionShort = "210 litres of fuel in a Barrel (Empty)";
+		descriptionShort = "210 litres of fuel per barrel (Empty)";
 	};
 	class ItemJerrycan: CA_Magazine
 	{
@@ -2290,7 +2292,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "30 Meter Plot";
-		descriptionShort = "30 Meter Plot";
+		descriptionShort = "Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2310,7 +2312,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Large Desert Camo Net";
-		descriptionShort = "Large Desert Camo Net";
+		descriptionShort = "Large Camo Netting: A very large buildable object that can be used to cover objects.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2330,7 +2332,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Large Forest Camo Net";
-		descriptionShort = "Large Forest Camo Net";
+		descriptionShort = "Large Camo Netting: A very large buildable object that can be used to cover objects.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2350,7 +2352,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Desert Camo Net";
-		descriptionShort = "Desert Camo Net";
+		descriptionShort = "Camo Netting: A buildable object that can be used to cover objects.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2379,7 +2381,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Forest Camo Net";
-		descriptionShort = "Forest Camo Net";
+		descriptionShort = "Camo Netting: A buildable object that can be used to cover objects.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2428,7 +2430,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Light Pole";
-		descriptionShort = "Light Pole";
+		descriptionShort = "Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2448,7 +2450,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Stick Fence";
-		descriptionShort = "Stick Fence";
+		descriptionShort = "Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2468,7 +2470,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Nice Wooden Shed";
-		descriptionShort = "Nice Wooden Shed";
+		descriptionShort = "Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2528,7 +2530,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Canvas Sun Shade";
-		descriptionShort = "Canvas Sun Shade";
+		descriptionShort = "Sun Shade: A buildable object used to keep the sun off your back.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2568,7 +2570,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Rusty Gate";
-		descriptionShort = "Rusty Gate";
+		descriptionShort = "Rusty Gate: A buildable object that can be opened and closed.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2588,7 +2590,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Sandbag Nest";
-		descriptionShort = "Sandbag Nest";
+		descriptionShort = "Sandbag Nest: A buildable fortification object, can be removed.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2608,7 +2610,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Outhouse";
-		descriptionShort = "Outhouse";
+		descriptionShort = "Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2628,7 +2630,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Storage Shed";
-		descriptionShort = "Storage Shed";
+		descriptionShort = "Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks";
 		model = "\dayz_equip\models\supply_crate.p3d";
 		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		class ItemActions
@@ -2672,7 +2674,7 @@ class CfgMagazines
 		displayName = "Safe";
 		model = "\dayz_equip\models\safe1_onside.p3d";
 		picture = "\dayz_equip\textures\equip_safe_ca.paa";
-		descriptionShort = "Personal Safe";
+		descriptionShort = "Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!";
 		class ItemActions
 		{
 			class Pitch
@@ -2748,13 +2750,65 @@ class CfgMagazines
 			};
 		};
 	};
+	
+	class ItemTrout : FoodEdible {
+		scope = 2;
+		displayName = "Rainbow Trout";
+		descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
+		model = "\dayz_equip\models\trout.p3d";
+		picture = "\dayz_equip\textures\equip_rainbowtrout_CA.paa";
+		bloodRegen = 400;
+	};
+	class ItemSeaBass : FoodEdible {
+		scope = 2;
+		displayName = "Sea Bass";
+		descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
+		model = "\dayz_equip\models\seabass.p3d";
+		picture = "\dayz_equip\textures\equip_seabass_CA.paa";
+		bloodRegen = 800;
+	};
+	class ItemTuna : FoodEdible {
+		scope = 2;
+		displayName = "Blue Fin Tuna";
+		descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
+		model = "\dayz_equip\models\tuna.p3d";
+		picture = "\dayz_equip\textures\equip_tuna_CA.paa";
+		bloodRegen = 2500;
+	};
+	class ItemTroutCooked : FoodEdible {
+		scope = 2;
+		displayName = "Rainbow Trout (Cooked)";
+		descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
+		// TODO: add cooked texture and icon.
+		model = "\dayz_equip\models\trout_cooked.p3d";
+		picture = "\dayz_equip\textures\equip_rainbowtrout_cooked_CA.paa";
+		bloodRegen = 800;
+	};
+	class ItemSeaBassCooked : FoodEdible {
+		scope = 2;
+		displayName = "Sea Bass (Cooked)";
+		descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
+		// TODO: add cooked texture and icon.
+		model = "\dayz_equip\models\seabass_cooked.p3d";
+		picture = "\dayz_equip\textures\equip_seabass_cooked_CA.paa";
+		bloodRegen = 1600;
+	};
+	class ItemTunaCooked : FoodEdible {
+		scope = 2;
+		displayName = "Blue Fin Tuna (Cooked)";
+		descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
+		// TODO: add cooked texture and icon.
+		model = "\dayz_equip\models\tuna_cooked.p3d";
+		picture = "\dayz_equip\textures\equip_tuna_cooked_CA.paa";
+		bloodRegen = 5000;
+	};
 	class FoodBioMeat: FoodEdible
 	{
 		scope = 2;
 		displayName = "Bio Meat";
 		model = "\dayz_equip\models\biomeat_can.p3d";
 		picture = "\dayz_equip\textures\armourpottedmeat_CAN_test1_CA.paa";
-		descriptionShort = "Re purposed Meat";
+		descriptionShort = "Bio Meat: A very good source of blood, and a very high chance of infection. Eat at own risk.";
 		bloodRegen = 1600;
 	};
 	class FoodSteakCooked: FoodEdible

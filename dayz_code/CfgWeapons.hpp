@@ -168,7 +168,7 @@ class CfgWeapons {
 		{
 			libTextDesc="";
 		};
-		descriptionShort="Fishing Pole and with lure.";
+		descriptionShort="Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.";
 	};	
 	class ItemFishingPole: ItemCore
 	{
@@ -176,7 +176,7 @@ class CfgWeapons {
 		displayName="Fishing Pole";
 		model="\dayz_equip\models\fishing_rod_loot_item.p3d";
 		picture="\dayz_equip\textures\equip_fishingpole_CA.paa";
-		descriptionShort="Fishing Pole and with lure.";
+		descriptionShort="Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.";
 		class ItemActions
 		{
 			class Toolbelt

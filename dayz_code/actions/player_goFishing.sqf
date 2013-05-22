@@ -42,7 +42,7 @@ while {_isOk} do {
 		// 1% chance to catch anything
 		if((random 100) <= 1) then {
 			// Just the one fish for now
-			_itemOut = ["ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTuna"] call BIS_fnc_selectRandom;
+			_itemOut = ["ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemSeaBass","ItemSeaBass","ItemTuna"] call BIS_fnc_selectRandom;
 			player addMagazine _itemOut;
 			cutText ["You caught a fish.", "PLAIN DOWN"];
 			_isOk = false;
@@ -51,6 +51,8 @@ while {_isOk} do {
 			_counter = _counter + 1;
 			if(_counter == 5) then {
 				_isOk = false;
+				sleep 2;
+				cutText ["You didn't catch anything.", "PLAIN DOWN"];
 			};
 		};
 	};
