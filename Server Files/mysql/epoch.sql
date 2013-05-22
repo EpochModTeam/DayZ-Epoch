@@ -316,7 +316,7 @@ INSERT INTO `traders_data` VALUES ('1412', '[\"FoodCanBakedBeans\",1]', '0', '[2
 INSERT INTO `traders_data` VALUES ('1413', '[\"FoodCanBakedBeans\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1414', '[\"FoodbaconCooked\",1]', '0', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1415', '[\"UralRefuel_TK_EP1\",2]', '11', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1416', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '0', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('1416', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '0', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1417', '[\"KamazRefuel\",2]', '22', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1418', '[\"MtvrRefuel_DES_EP1\",2]', '9', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1419', '[\"DZ_ALICE_Pack_EP1\",2]', '1', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '141', 'trade_backpacks');
@@ -755,7 +755,7 @@ INSERT INTO `traders_data` VALUES ('1865', '[\"FoodbeefCooked\",1]', '11', '[2,\
 INSERT INTO `traders_data` VALUES ('1866', '[\"ItemSodaCoke\",1]', '1', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '70', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1867', '[\"ItemSodaMdew\",1]', '2', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '70', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1868', '[\"ItemSodaPepsi\",1]', '1', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '70', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1869', '[\"ItemSodaRbull\",1]', '3', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '70', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1869', '[\"ItemSodaR4z0r\",1]', '3', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '70', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1870', '[\"Skin_Ins_Soldier_GL_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '73', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1871', '[\"Skin_Haris_Press_EP1_DZ\",1]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '73', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1872', '[\"Skin_Rocker2_DZ\",1]', '6', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '73', 'trade_items');
@@ -799,7 +799,7 @@ INSERT INTO `traders_data` VALUES ('1909', '[\"PipeBomb\",1]', '0', '[12,\"ItemG
 INSERT INTO `traders_data` VALUES ('1910', '[\"ItemSodaCoke\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '79', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1911', '[\"ItemSodaMdew\",1]', '2', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '79', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1912', '[\"ItemSodaPepsi\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '79', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1913', '[\"ItemSodaRbull\",1]', '3', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '79', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1913', '[\"ItemSodaR4z0r\",1]', '3', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '79', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1914', '[\"FoodmuttonCooked\",1]', '1', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '79', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1915', '[\"FoodCanSardines\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '79', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1916', '[\"FoodCanPasta\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '79', 'trade_items');
@@ -929,7 +929,7 @@ INSERT INTO `traders_data` VALUES ('2044', '[\"UAZ_RU\",2]', '2', '[4,\"ItemGold
 INSERT INTO `traders_data` VALUES ('2045', '[\"FoodbaconCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '111', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2046', '[\"FoodbeefCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '111', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2047', '[\"UralRefuel_TK_EP1\",2]', '10', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2048', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '1', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2048', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '1', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2049', '[\"KamazRefuel\",2]', '13', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2050', '[\"MtvrRefuel_DES_EP1\",2]', '18', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2051', '[\"SUV_Blue\",2]', '0', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '120', 'trade_any_vehicle');
@@ -1088,7 +1088,7 @@ INSERT INTO `traders_data` VALUES ('2206', '[\"UH1H_DZ\",2]', '8', '[6,\"ItemGol
 INSERT INTO `traders_data` VALUES ('2207', '[\"Mi17_DZ\",2]', '15', '[6,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '43', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2208', '[\"HMMWV_M998A2_SOV_DES_EP1\",2]', '0', '[4,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '44', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2209', '[\"UralRefuel_TK_EP1\",2]', '8', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2210', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2210', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2211', '[\"KamazRefuel\",2]', '8', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2212', '[\"MtvrRefuel_DES_EP1\",2]', '5', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2213', '[\"HandChemBlue\",1]', '1', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '51', 'trade_items');
@@ -1171,7 +1171,7 @@ INSERT INTO `traders_data` VALUES ('2290', '[\"Ural_CDF\",2]', '1', '[8,\"ItemGo
 INSERT INTO `traders_data` VALUES ('2291', '[\"ItemSodaCoke\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2292', '[\"ItemSodaMdew\",1]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2293', '[\"ItemSodaPepsi\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '179', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2294', '[\"ItemSodaRbull\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '179', 'trade_items');
+INSERT INTO `traders_data` VALUES ('2294', '[\"ItemSodaR4z0r\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2295', '[\"FoodbaconCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2296', '[\"FoodbeefCooked\",1]', '0', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2297', '[\"FoodCanBakedBeans\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '179', 'trade_items');
@@ -1182,7 +1182,7 @@ INSERT INTO `traders_data` VALUES ('2301', '[\"FoodchickenCooked\",1]', '0', '[2
 INSERT INTO `traders_data` VALUES ('2302', '[\"FoodrabbitCooked\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2303', '[\"ItemSodaMdew\",1]', '3', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '163', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2304', '[\"ItemSodaPepsi\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '163', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2305', '[\"ItemSodaRbull\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '163', 'trade_items');
+INSERT INTO `traders_data` VALUES ('2305', '[\"ItemSodaR4z0r\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '163', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2306', '[\"FoodbeefCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '163', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2307', '[\"FoodCanFrankBeans\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '163', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2308', '[\"FoodCanPasta\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '163', 'trade_items');
@@ -1440,7 +1440,7 @@ INSERT INTO `traders_data` VALUES ('2573', '[\"SmokeShellRed\",1]', '2', '[1,\"I
 INSERT INTO `traders_data` VALUES ('2574', '[\"ItemSodaCoke\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '224', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2575', '[\"ItemSodaMdew\",1]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '224', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2576', '[\"ItemSodaPepsi\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '224', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2577', '[\"ItemSodaRbull\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '224', 'trade_items');
+INSERT INTO `traders_data` VALUES ('2577', '[\"ItemSodaR4z0r\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '224', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2578', '[\"FoodbaconCooked\",1]', '0', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '224', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2579', '[\"FoodbeefCooked\",1]', '0', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '224', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2580', '[\"FoodCanBakedBeans\",1]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '224', 'trade_items');
@@ -1851,7 +1851,7 @@ INSERT INTO `traders_data` VALUES ('3033', '[\"ItemToolbox\",3]', '6', '[2,\"Ite
 INSERT INTO `traders_data` VALUES ('3034', '[\"ItemWatch\",3]', '17', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '299', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3035', '[\"NVGoggles\",3]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '299', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3036', '[\"UralRefuel_TK_EP1\",2]', '6', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3037', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3037', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3038', '[\"KamazRefuel\",2]', '7', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3039', '[\"MtvrRefuel_DES_EP1\",2]', '5', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3040', '[\"Skin_Rocker2_DZ\",1]', '5', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '301', 'trade_items');
@@ -2060,7 +2060,7 @@ INSERT INTO `trader_items` VALUES ('436', 'ItemSandbag', '1', 'Building Supplies
 INSERT INTO `trader_items` VALUES ('437', 'ItemSodaCoke', '1', 'Drink', 'trade_items');
 INSERT INTO `trader_items` VALUES ('438', 'ItemSodaMdew', '1', 'Drink', 'trade_items');
 INSERT INTO `trader_items` VALUES ('439', 'ItemSodaPepsi', '1', 'Drink', 'trade_items');
-INSERT INTO `trader_items` VALUES ('440', 'ItemSodaRbull', '1', 'Drink', 'trade_items');
+INSERT INTO `trader_items` VALUES ('440', 'ItemSodaR4z0r', '1', 'Drink', 'trade_items');
 INSERT INTO `trader_items` VALUES ('441', 'ItemTankTrap', '1', 'Building Supplies', 'trade_items');
 INSERT INTO `trader_items` VALUES ('442', 'ItemTent', '1', 'Building Supplies', 'trade_items');
 INSERT INTO `trader_items` VALUES ('443', 'ItemToolbox', '3', 'ToolBelt', 'trade_weapons');
@@ -2195,7 +2195,7 @@ INSERT INTO `trader_items` VALUES ('574', 'Ural_UN_EP1', '2', 'Trucks Large', 't
 INSERT INTO `trader_items` VALUES ('575', 'UZI_EP1', '3', 'Sub Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES ('576', 'V3S_Open_TK_CIV_EP1', '2', 'Trucks Large', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('577', 'V3S_Open_TK_EP1', '2', 'Trucks Large', 'trade_any_vehicle');
-INSERT INTO `trader_items` VALUES ('578', 'V3S_Refuel_TK_GUE_EP1', '2', 'Trucks Refuel', 'trade_any_vehicle');
+INSERT INTO `trader_items` VALUES ('578', 'V3S_Refuel_TK_GUE_EP1_DZ', '2', 'Trucks Refuel', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('579', 'VolhaLimo_TK_CIV_EP1', '2', 'Cars', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('580', 'Volha_1_TK_CIV_EP1', '2', 'Cars', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('581', 'Volha_2_TK_CIV_EP1', '2', 'Cars', 'trade_any_vehicle');

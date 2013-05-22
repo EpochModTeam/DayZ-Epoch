@@ -2,68 +2,10 @@
 * Crafting by [VB]AWOL
 * 	usage: spawn player_craftitem;
 */
-private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_id","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear"];
+private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_consumeweapons","_item"];
 
 if(TradeInprogress) exitWith { cutText ["Crafting already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
-
-/* 
-== Canned Foods
-"FoodCanBakedBeans",
-"FoodCanSardines",
-"FoodCanFrankBeans",
-"FoodCanPasta",
-"FoodBioMeat"
-
-== Drinks
-"ItemSodaCoke",
-"ItemSodaPepsi",
-
-== Trash
-"TrashTinCan",
-"TrashJackDaniels",
-"ItemSodaEmpty",
-"ItemSodaCokeEmpty",
-"ItemSodaPepsiEmpty",
-
-== community stuff Trash
-"ItemSodaMdewEmpty",
-"ItemSodaMtngreenEmpty",
-"ItemSodaR4z0rEmpty",
-"ItemSodaClaysEmpty",
-"ItemSodaSmashtEmpty",.
-"ItemSodaDrwasteEmpty",.
-"ItemSodaLemonadeEmpty",.
-"ItemSodaLvgEmpty",.
-"ItemSodaMzlyEmpty",.
-"ItemSodaRabbitEmpty"
-
-== Raw Meats
-"FoodSteakRaw",
-"FoodmeatRaw",
-"FoodbeefRaw",
-"FoodmuttonRaw",
-"FoodchickenRaw",
-"FoodrabbitRaw",
-"FoodbaconRaw"
-
-== Cooked Meats
-"FoodSteakCooked",
-"FoodmeatCooked",
-"FoodbeefCooked",
-"FoodmuttonCooked",
-"FoodchickenCooked",
-"FoodrabbitCooked",
-"FoodbaconCooked"
-*/
-
-// Removed metals:
-// _recipe_ItemBronzeBar = [[["ItemBronzeBar",1] ],[["ItemCopperBar",3],["ItemTinBar",3]]];
-
-// New item ideas:
-// _recipe_FoodChickenNoodle = [["FoodchickenRaw",1],["FoodCanPasta",1],["ItemWaterbottle",1]];
-// _recipe_FoodBeefBakedBeans = [["FoodbeefRaw",1],["FoodCanBakedBeans",1]];
-// ItemSalt
 
 // temp array of removed parts 
 _temp_removed_array = [];
@@ -85,6 +27,14 @@ if("fire" in _needNear) then {
 	if(_isNear == 0) then {  
 		_abort = true;
 		_reason = "fire";
+	};
+};
+
+if("workshop" in _needNear) then {
+	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ"], 5]);
+	if(_isNear == 0) then {  
+		_abort = true;
+		_reason = "workshop";
 	};
 };
 
@@ -142,7 +92,7 @@ if (_canDo) then {
 			player playActionNow "Medic";
 
 			[player,"repair",0,false] call dayz_zombieSpeak;
-			_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+			[player,50,true,(getPosATL player)] spawn player_alertZombies;
 			
 			r_interrupt = false;
 			_animState = animationState player;

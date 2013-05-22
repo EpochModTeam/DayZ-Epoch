@@ -1,5 +1,7 @@
 private["_trader_id","_category","_buy","_sell","_cancel"];
 
+if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
+
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];
 
 _trader_id = (_this select 3) select 0;

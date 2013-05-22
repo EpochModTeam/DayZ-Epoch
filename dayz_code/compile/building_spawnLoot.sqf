@@ -5,7 +5,7 @@ _obj = 			_this select 0;
 // lower case to prevent issues with differing case for buildings from map to map.
 _type = toLower(typeOf _obj);
 
-diag_log format["Spawning loot for: %1", _type];
+//diag_log format["Spawning loot for: %1", _type];
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
 _positions =	 [] + getArray (_config >> "lootPos");
 _itemTypes =	[] + getArray (_config >> "itemType");
@@ -16,7 +16,7 @@ _lootChance =	getNumber (_config >> "lootChance");
 		_nearBy = nearestObjects [_iPos, ["WeaponHolder","WeaponHolderBase"], 1];
 			if (count _nearBy == 0) then {
 			_index = dayz_CBLBase find _type;
-			diag_log format["Found %2 at index: %1", _index,_type];
+			//diag_log format["Found %2 at index: %1", _index,_type];
 			_weights = dayz_CBLChances select _index;
 			_cntWeights = count _weights;
 			_index = floor(random _cntWeights);

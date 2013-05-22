@@ -7,6 +7,10 @@ if(TradeInprogress) exitWith { cutText ["That Safe is already being packed." , "
 TradeInprogress = true;
 
 _obj = _this;
+
+// Silently exit if object no longer exists
+if(isNull _obj) exitWith { TradeInprogress = false; };
+
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
@@ -14,30 +18,34 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
-if(_ownerID == dayz_playerUID) then {
-	_alreadyPacking = _obj getVariable["packing",0];
-	if (_alreadyPacking == 1) exitWith {cutText ["That Safe is already being packed." , "PLAIN DOWN"]};
-	_obj setVariable["packing",1];
+if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith { TradeInprogress = false; s_player_packvault = -1; cutText ["You cannot pack this Safe, you do not know the combination.", "PLAIN DOWN"];};
 
-	cutText ["Packing Safe move from this position to cancel within 5 seconds.", "PLAIN DOWN"];
-	sleep 1; 
-	_location1 = getPosATL player;
-	sleep 5;
-	_location2 = getPosATL player;
-	
-	if(_location1 distance _location2 > 0.1) exitWith {
-		cutText ["Packing Safe canceled." , "PLAIN DOWN"];
-		_obj setVariable["packing",0];
-	};
+_alreadyPacking = _obj getVariable["packing",0];
 
-	player playActionNow "Medic";
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_packvault = -1; cutText ["That Safe is already being packed." , "PLAIN DOWN"]};
+_obj setVariable["packing",1];
 
-	_dir = direction _obj;
+cutText ["Packing Safe move from this position to cancel within 5 seconds.", "PLAIN DOWN"];
+sleep 1; 
+_location1 = getPosATL player;
+sleep 5;
+_location2 = getPosATL player;
 	
-	_pos = _obj getVariable["OEMPos",(getposATL _obj)];
+if(_location1 distance _location2 > 0.1) exitWith {
+	cutText ["Packing Safe canceled." , "PLAIN DOWN"];
+	_obj setVariable["packing",0];
+};
+
+player playActionNow "Medic";
+
+_dir = direction _obj;
 	
-	[player,"tentpack",0,false] call dayz_zombieSpeak;
-	sleep 3;
+_pos = _obj getVariable["OEMPos",(getposATL _obj)];
+	
+[player,"tentpack",0,false] call dayz_zombieSpeak;
+sleep 3;
+
+if(!isNull _obj) then {
 
 	//place tent (local)
 	_bag = createVehicle ["WeaponHolder_ItemVault",_pos,[], 0, "CAN_COLLIDE"];
@@ -89,10 +97,7 @@ if(_ownerID == dayz_playerUID) then {
 	
 	
 	cutText ["Your Safe has been packed", "PLAIN DOWN"];
-} else {
-	cutText ["You cannot pack this Safe, it is not yours", "PLAIN DOWN"];
+
+	s_player_packvault = -1;
 };
-
-s_player_packvault = -1;
-
 TradeInprogress = false;

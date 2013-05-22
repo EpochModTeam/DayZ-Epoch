@@ -1,4 +1,6 @@
-private["_activatingPlayer","_trader_id","_category","_action","_id","_type","_loc","_name","_qty","_cost","_qty","_sell","_cur","_order","_tid","_currency","_actionFile","_in","_out","_part","_cat","_cancel","_Display","_File","_textCurrency","_textPart"];
+private ["_activatingPlayer","_trader_id","_category","_action","_type","_name","_qty","_sell","_order","_tid","_out","_part","_cancel","_Display","_File","_textCurrency","_textPart","_btype","_stype","_header","_item","_buy","_bqty","_bname","_sqty","_sname","_textCurrencySell","_afile"];
+
+if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];
 
@@ -115,6 +117,6 @@ s_player_parts set [count s_player_parts,_cancel];
 // Cache data in client side global variable
 call compile format["tcacheBuy_%1 = %2;",_tid,dayzTraderMenuResult];
 
-// Clear Data maybe consider cacheing results
+// Clear Data
 dayzTraderMenuResult = nil;
 s_player_parts_crtl = 1;

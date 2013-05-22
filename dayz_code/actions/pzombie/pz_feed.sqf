@@ -16,7 +16,7 @@ if(!(alive _item)) then {
 	sleep 1;
 
 	// player playActionNow "PutDown";
-	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+	[player,50,true,(getPosATL player)] spawn player_alertZombies;
 
 	[player,"gut",0,false] call dayz_zombieSpeak;
 

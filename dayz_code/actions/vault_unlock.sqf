@@ -1,3 +1,3 @@
-private["_obj","_bag","_pos"];
+private ["_obj"];
 _obj = _this select 3;
 _obj spawn player_unlockVault;

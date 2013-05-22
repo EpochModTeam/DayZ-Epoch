@@ -40,7 +40,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.0.8";
+		version = "1.0.0.9";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -487,7 +487,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] = {
 			{ "ItemSodaMdew","magazine" },
-			{ "ItemSodaRbull","magazine" },
+			{ "ItemSodaR4z0r","magazine" },
 			{ "ItemWatch","generic" },
 			{ "ItemCompass","generic" },
 			{ "ItemMap","weapon" },
@@ -554,7 +554,7 @@ class CfgBuildingLoot {
 			0.03,
 			0.01,
 			0.08,
-			0.03,
+			0.03
 		};		
 	};
 	class Office: Residential {
@@ -624,7 +624,8 @@ class CfgBuildingLoot {
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "MR43","weapon" },
 			{ "WeaponHolder_ItemFuelBarrel","object" },
-			{"WeaponHolder_ItemMachete", "object"}
+			{ "WeaponHolder_ItemMachete", "object"},
+			{ "ItemFishingPole","weapon" }
 	};
 		itemChance[] =	{
 			0.06,
@@ -638,7 +639,8 @@ class CfgBuildingLoot {
 			0.17,
 			0.06,
 			0.005,
-			0.03
+			0.03,
+			0.01
 		};
 	};
 	class Supermarket: Default {
@@ -2982,6 +2984,12 @@ class HeliCrash_No50s: Default {
 	};
 	class land_cihlovej_dum_mini: Residential {
 		lootPos[] = {{-2.4646,-0.78418,-2.86942},{-1.75586,2.88525,-2.86942},{2.76587,2.08154,-2.86942},{1.96265,-1.98877,-2.86942},{0.0109863,0.876465,-2.86942},{0.116455,3.05762,-2.86942}};
+	};
+	class Land_hruzdum: Residential {
+		lootPos[] = {{-0.108887,3.56494,1.59321},{-1.80371,0.838867,1.5932},{2.34106,3.8335,-1.16265},{0.032959,-1.2998,-1.16266},{-0.655273,2.18311,-1.16266},{-2.53687,-1.29932,-4.73357},{-1.63599,3.06152,-4.73357},{1.83984,2.125,-4.73357}};
+	};
+	class Land_cihlovej_dum_in: Residential {
+		lootPos[] = {{-0.0117188,0.0441895,-1.81473},{-1.76758,2.24805,-1.8147},{-2.88965,-1.64795,-1.8147},{1.84277,-2.07983,-1.81471},{1.58691,-1.3374,-5.27588},{1.22852,2.57324,-5.27588}};
 	};
 
 };

@@ -1,7 +1,44 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
 
-	class ItemTentDomed : CA_Magazine {
+	class ItemTent: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = $STR_EQUIP_NAME_20;
+		model = "\dayz_equip\models\tentbag_gear.p3d";
+		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
+		descriptionShort = $STR_EQUIP_DESC_20;
+		class ItemActions
+		{
+			class Pitch
+			{
+				text = $STR_PITCH_TENT;
+				script = "spawn player_tentPitch;";
+				create = "TentStorage";
+			};
+			class Crafting
+			{
+				text = "Craft Desert Net";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"desert_net_kit",1}};
+				input[] = {{"ItemTent",4},{"ItemPole",4}};
+			};
+			class Crafting1
+			{
+				text = "Craft Forest Net";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"forest_net_kit",1}};
+				input[] = {{"ItemTent",4},{"ItemPole",4}};
+			};
+		};
+	};
+	class ItemTentDomed : ItemTent {
 		scope = public;
 		count = 1;
 		type = 256;
@@ -16,9 +53,27 @@ class CfgMagazines {
 				script = "spawn player_tentPitch;";
 				create = "TentStorageDomed";
 			};
+			class Crafting
+			{
+				text = "Craft Desert Net";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"desert_net_kit",1}};
+				input[] = {{"ItemTent",4},{"ItemPole",4}};
+			};
+			class Crafting1
+			{
+				text = "Craft Forest Net";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"forest_net_kit",1}};
+				input[] = {{"ItemTent",4},{"ItemPole",4}};
+			};
 		};
 	};
-	class ItemTentDomed2 : CA_Magazine {
+	class ItemTentDomed2 : ItemTent {
 		scope = public;
 		count = 1;
 		type = 256;
@@ -26,12 +81,29 @@ class CfgMagazines {
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_20;
-		
 		class ItemActions {
 			class Pitch {
 				text = $STR_PITCH_TENT;
 				script = "spawn player_tentPitch;";
 				create = "TentStorageDomed2";
+			};
+			class Crafting
+			{
+				text = "Craft Desert Net";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"desert_net_kit",1}};
+				input[] = {{"ItemTent",4},{"ItemPole",4}};
+			};
+			class Crafting1
+			{
+				text = "Craft Desert Net";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"forest_net_kit",1}};
+				input[] = {{"ItemTent",4},{"ItemPole",4}};
 			};
 		};
 	};
@@ -56,22 +128,33 @@ class CfgMagazines {
 			{
 				text = "Craft Large Sandbag";
 				script = "spawn player_craftItem;";
-				neednearby[] = {"workshop"};
+				neednearby[] = {};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbagLarge",1}};
 				input[] = {{"ItemSandbag",3},{"ItemWire",1},{"ItemTankTrap",1}};
 			};
 			class Crafting1
 			{
-				text = "Craft M240 Nest";
+				text = "Craft Sandbag Nest";
 				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"sandbag_nest_kit",1}};
+				input[] = {{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
+			};
+			/*
+			class Crafting2
+			{
+				text = "Craft M240 Nest";
+				script = "spawn player_craftItem2;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
 				input[] = {{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
-				// TODO add consume weapon
 				consumeweapons[] = {"M240_DZ"};
 			};
+			*/
+			
 		};
 	};
 
@@ -706,6 +789,12 @@ class CfgMagazines {
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
 	};
+	class Fishing_Swing : Hatchet_Swing {
+		displayName = "Fishing";
+		displayNameMagazine = "Fishing";
+		shortNameMagazine = "Fishing";
+		ammo = "Fishing_Swing_Ammo";
+	};
 	// Inventory Placeholder
 	class DummyItem : Hatchet_Swing {
 		displayName = "Dummy";
@@ -713,7 +802,6 @@ class CfgMagazines {
 		shortNameMagazine = "Dummy";
 		ammo = "Dummy_Swing_Ammo";
 	};
-	
 	class ItemTrashToiletpaper : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -721,6 +809,24 @@ class CfgMagazines {
 		descriptionShort = $STR_JUNK_DESC_TOILETPAPER;
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
+		type = 256;
+	};
+	class ItemTrout : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = "Rainbow Trout";
+		descriptionShort = "Rainbow Trout";
+		model = "\dayz_equip\models\trout.p3d";
+		picture = "\dayz_equip\textures\equip_rainbowtrout_CA.paa";
+		type = 256;
+	};
+	class ItemTuna : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = "Blue Fin Tuna";
+		descriptionShort = "Blue Fin Tuna";
+		model = "\dayz_equip\models\tuna.p3d";
+		picture = "\dayz_equip\textures\equip_tuna_CA.paa";
 		type = 256;
 	};
 	class ItemTrashRazor : CA_Magazine {

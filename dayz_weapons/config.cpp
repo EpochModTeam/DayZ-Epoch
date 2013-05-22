@@ -250,40 +250,12 @@ class cfgWeapons
 				use[] = {"MeleeHatchet"};
 				output[] = {"ItemHatchet"};
 			};
-			class Drop
-			{
-				text = "Drop Hatchet";
-				script = "spawn player_dropWeapon;";
-				use[] = {"Hatchet_Swing"};
-			};
 		};
 		class Library
 		{
 			libTextDesc = "$STR_EQUIP_DESC_41";
 		};
 		descriptionShort = "$STR_EQUIP_DESC_41";
-	};
-	class MeleeCrowbar: MeleeHatchet
-	{
-		scope = 2;
-		model = "\dayz_weapons\models\crowbar_weaponized";
-		picture = "\dayz_weapons\textures\equip_crowbar_CA.paa";
-		displayName = "Crowbar";
-		magazines[] = {"Crowbar_Swing"};
-		class ItemActions
-		{
-			class Drop
-			{
-				text = "Drop Crowbar";
-				script = "spawn player_dropWeapon;";
-				use[] = {"Crowbar_Swing"};
-			};
-		};
-		class Library
-		{
-			libTextDesc = "A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
-		};
-		descriptionShort = "A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
 	};
 	class Winchester1866: Rifle
 	{
@@ -1606,6 +1578,15 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\baker_co.paa"};
 	};
+	/*
+	class FemaleSoldier1_DZ: SurvivorW2_DZ
+	{
+		side = 1;
+		model = "\dayz_equip\models\female_soldier";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\dayz_equip\textures\female_soldier_body.paa"};
+	};
+	*/
 	class BanditW2_DZ: BanditW1_DZ
 	{
 		hiddenSelections[] = {"Camo"};

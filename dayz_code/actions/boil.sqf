@@ -4,7 +4,7 @@ if(TradeInprogress) exitWith { cutText ["Boil already in progress." , "PLAIN DOW
 TradeInprogress = true;
 
 player removeAction s_player_boil;
-s_player_boil = -1;
+s_player_boil = 1;
 
 _hasbottleitem = "ItemWaterbottle" in magazines player;
 _hastinitem = false;
@@ -50,5 +50,7 @@ if (_hasbottleitem and _hastinitem) then {
 		cutText [(localize "str_player_02") , "PLAIN DOWN"];
 	};
 };
+
+s_player_boil = -1;
 
 TradeInprogress = false;

@@ -1,32 +1,44 @@
 /*
 [_obj] spawn player_unlockVault;
+Lock Safe - DayZ Epoch - [VB]AWOL
 */
-private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking"];
 
 if(TradeInprogress) exitWith { cutText ["Lock already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _obj = _this;
+
+// Silently exit if object no longer exists
+if(isNull _obj) exitWith { TradeInprogress = false; };
+
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
 player playActionNow "Medic";
 
 player removeAction s_player_lockvault;
-s_player_lockvault = -1;
+s_player_lockvault = 1;
 
-if(_ownerID == dayz_playerUID) then {
-	_alreadyPacking = _obj getVariable["packing",0];
+if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText ["You cannot lock this Safe, you do not know the combination", "PLAIN DOWN"]; };
 
-	if (_alreadyPacking == 1) exitWith {cutText ["That Safe is already being locked." , "PLAIN DOWN"]};
+_alreadyPacking = _obj getVariable["packing",0];
 
-	_obj setVariable["packing",1];
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText ["That Safe is already being locked." , "PLAIN DOWN"]};
 
-	_dir = direction _obj;
-	// _pos = getposATL _obj;
-	_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
-	[player,"tentpack",0,false] call dayz_zombieSpeak;
-	sleep 3;
+_obj setVariable["packing",1];
+
+_dir = direction _obj;
+// _pos = getposATL _obj;
+_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
+[player,"tentpack",0,false] call dayz_zombieSpeak;
+sleep 3;
+
+if(!isNull _obj) then {
+
+	// force vault save just before locking
+	dayzUpdateVehicle = [_obj,"gear"];
+	publicVariableServer "dayzUpdateVehicle";
 
 	//place tent (local)
 	_holder = createVehicle ["VaultStorageLocked",_pos,[], 0, "CAN_COLLIDE"];
@@ -58,7 +70,7 @@ if(_ownerID == dayz_playerUID) then {
 	};
 	
 	cutText ["Your Safe has been locked", "PLAIN DOWN"];
-} else {
-	cutText ["You cannot lock this Safe, it is not yours", "PLAIN DOWN"];
+
+	s_player_lockvault = -1;
 };
 TradeInprogress = false;

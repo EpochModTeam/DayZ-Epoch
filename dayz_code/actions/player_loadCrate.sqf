@@ -1,6 +1,6 @@
 private ["_dir","_classname","_box","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
 
-if(TradeInprogress) exitWith { cutText ["Repair already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText ["Open Crate already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _hasTool = 	"ItemCrowbar" in items player;

@@ -4,8 +4,10 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- Function
 	- [] call fnc_usec_damageActions;
 ************************************************************/
-
 private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1","_action2","_x","_vehicle","_unit","_vehType","_displayName","_ammoQty","_ammoSerial","_weapon","_magTypes","_type","_typeVeh","_index","_inventory","_unitTo","_isEngineer","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasJerryE","_hasEtool","_hasWire","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_bag","_classbag","_isDisallowRefuel","_hasBarrel","_hasBarrelE"];
+
+if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
+
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
 _vehicle = vehicle player;

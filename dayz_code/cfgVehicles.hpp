@@ -360,6 +360,16 @@ class Citizen1;	// External class reference
 		transportMaxMagazines = 400; 
 		transportmaxbackpacks = 10;
 	};
+	class SUV_TK_CIV_EP1;
+	class SUV_Camo: SUV_TK_CIV_EP1
+	{
+		displayName = "SUV Camo";
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_communityassets\textures\camo10.paa"};
+		transportMaxWeapons = 10; 
+		transportMaxMagazines = 100; 
+		transportmaxbackpacks = 5;
+		armor = 50;
+	};
 	class HMMWV_Base;
 	class HMMWV_DZ: HMMWV_Base {
 		accuracy = 0.32;
@@ -376,7 +386,7 @@ class Citizen1;	// External class reference
 		crew = "";
 		typicalCargo[] = {};
 		transportMaxWeapons = 4;
-		transportMaxMagazines = 12;
+		transportMaxMagazines = 120;
         transportmaxbackpacks = 4;
 		class Turrets {};
 		class Damage {

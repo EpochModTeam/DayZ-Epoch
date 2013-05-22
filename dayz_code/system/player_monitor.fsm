@@ -24,7 +24,7 @@ item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,350.000000,275.000000,400.00000
 item20[] = {"Hive_Ok",4,218,-175.000000,400.000000,-75.000000,450.000000,0.000000,"Hive" \n "Ok"};
 item21[] = {"Phase_One",2,250,-75.000000,450.000000,25.000000,500.000000,0.000000,"Phase One"};
 item22[] = {"Response",4,218,-175.000000,500.000000,-75.000000,550.000000,0.000000,"Response"};
-item23[] = {"Phase_Two",2,250,-75.000000,550.000000,25.000000,600.000000,0.000000,"Phase Two"};
+item23[] = {"Phase_Two",2,4346,-75.000000,550.000000,25.000000,600.000000,0.000000,"Phase Two"};
 item24[] = {"Dead_Player",4,218,50.000000,550.000000,150.000000,600.000000,0.000000,"Dead" \n "Player"};
 item25[] = {"ERROR__Player_Already",2,250,175.000000,550.000000,275.000000,600.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item26[] = {"Alive",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Alive"};
@@ -36,7 +36,7 @@ item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
 item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -119,8 +119,8 @@ link59[] = {51,52};
 link60[] = {52,29};
 link61[] = {53,54};
 link62[] = {54,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-390.091248,277.974548,1208.543457,428.837982,567,630,1};
-window[] = {2,-1,-1,-1,-1,760,22,993,0,3,585};
+globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-452.194977,340.078094,1506.747437,277.117401,566,880,1};
+window[] = {2,-1,-1,-1,-1,760,28,999,0,3,584};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -723,10 +723,21 @@ class FSM
        "	//player is new, add initial loadout" \n
        "	_config = (configFile >> ""CfgSurvival"" >> ""Inventory"" >> ""Default"");" \n
        "	_mags = getArray (_config >> ""magazines"");" \n
-       "	_wpns = getArray (_config >> ""weapons"");" \n
+       "	_wpns = getArray (_config >> ""weapons"");		" \n
        "	_bcpk = getText (_config >> ""backpack"");" \n
        "	_bcpkWpn = getText (_config >> ""backpackWeapon"");" \n
-       "	" \n
+       "	if(!isNil ""DefaultMagazines"") then {" \n
+       "		_mags = DefaultMagazines;" \n
+       "	};" \n
+       "	if(!isNil ""DefaultWeapons"") then {" \n
+       "		_wpns = DefaultWeapons;" \n
+       "	};" \n
+       "	if(!isNil ""DefaultBackpack"") then {" \n
+       "		_bcpk = DefaultBackpack;" \n
+       "	};" \n
+       "	if(!isNil ""DefaultBackpackWeapon"") then {" \n
+       "		_bcpkWpn = DefaultBackpackWeapon;" \n
+       "	};" \n
        "	//Add inventory" \n
        "	{" \n
        "		_isOK = 	isClass(configFile >> ""CfgMagazines"" >> _x);" \n
@@ -987,6 +998,9 @@ class FSM
        "};" \n
        "if (player hasWeapon ""MeleeMachete"") then {" \n
        "	player addMagazine 'machete_swing';" \n
+       "};" \n
+       "if (player hasWeapon ""MeleeFishingPole"") then {" \n
+       "	player addMagazine 'Fishing_Swing';" \n
        "};" \n
        "" \n
        "reload player;" \n

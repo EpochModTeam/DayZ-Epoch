@@ -226,6 +226,10 @@ c38e99892d6c528f8e6f08ddf998f484 -1 Admin Ban
 a950a2cfd2e926c5b0cc803ef4e14f5c -1 Scripting #101
 d323ce9ef5113ef1dcdf40669c125be6 -1 Scripting #102
 d323ce9ef5113ef1dcdf40669c125be6 -1 Scripting #102
+a82f377a501d5903e750eabb13e982cb -1 Script Restriction #201
+7165f49e10c85cccfeba0dd3d33e6940 -1 Admin Ban
+ae26e9a71e2aad0e71e460903756ab39 -1 Admin Ban
+804665142fee0d6966538403f8f051f2 -1 Admin Ban
 176.51.186.48 -1 Perma ban son...
 82.6.50.36 -1 You got banned
 76.188.209.92 -1 Long ban for you
@@ -260,3 +264,6 @@ d323ce9ef5113ef1dcdf40669c125be6 -1 Scripting #102
 99.97.20.27 -1 Not smart.
 68.100.166.118 -1 Don't like it, bring your case before us.
 86.4.33.129 -1 Nice try
+72.130.137.170 -1 Global Ban
+72.130.137.170 -1 Admin Ban
+50.129.42.125 -1 Admin Ban

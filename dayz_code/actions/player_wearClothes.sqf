@@ -1,22 +1,25 @@
 /*
 _item spawn player_wearClothes;
-Added Female skin changes - vbawol
+Added Female skin changes - DayZ Epoch - vbawol
 */
 private["_item","_onLadder","_hasclothesitem","_config","_text","_isFemale","_myModel","_itemNew","_currentSex","_newSex","_model"];
+
+if(TradeInprogress) exitWith { cutText ["Changing clothes already in progress." , "PLAIN DOWN"] };
+TradeInprogress = true;
 
 _item = _this;
 call gear_ui_init;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
+if (_onLadder) exitWith {TradeInprogress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hasclothesitem = _this in magazines player;
 _config = configFile >> "CfgMagazines";
 _text = getText (_config >> _item >> "displayName");
 
-if (!_hasclothesitem) exitWith {cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
+if (!_hasclothesitem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
 
-if (vehicle player != player) exitWith {cutText ["You may not change clothes while in a vehicle", "PLAIN DOWN"]};
+if (vehicle player != player) exitWith {TradeInprogress = false; cutText ["You may not change clothes while in a vehicle", "PLAIN DOWN"]};
 
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
@@ -46,3 +49,4 @@ if ( (isClass(_config >> _itemNew)) ) then {
 		};
 	};
 };
+TradeInprogress = false;

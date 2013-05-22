@@ -39,7 +39,7 @@ if (_ammo isKindOf "SmokeShell") then {
 		_i = _i + 1;
 	} forEach _listTalk;
 } else {
-	_id = [_unit,_distance,true,(getPosATL player)] spawn player_alertZombies;
+	[_unit,_distance,true,(getPosATL player)] spawn player_alertZombies;
 	//Check if need to place arrow
 	if (_ammo isKindOf "Bolt") then {
 		_id = _this spawn player_crossbowBolt;

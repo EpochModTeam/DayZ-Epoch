@@ -38,7 +38,7 @@ if (["ItemSoda",_itemorignal] call fnc_inString) then {
     //higher alert and sound radius
     _dis=10;
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-    _id = [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+    [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 };  
 
 if (_hasoutput) then{

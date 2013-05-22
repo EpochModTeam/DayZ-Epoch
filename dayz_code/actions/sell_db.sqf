@@ -1,5 +1,8 @@
 private["_activatingPlayer","_trader_id","_category","_action","_id","_type","_loc","_name","_qty","_cost","_qty","_sell","_cur","_order","_tid","_currency","_actionFile","_in","_out","_part","_cat","_cancel","_Display","_File","_textCurrency","_textPart","_count"];
 
+if(TradeInprogress) exitWith { cutText ["already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];
 
 // [ _trader_id, _category, _action ];
@@ -143,3 +146,4 @@ dayzTraderMenuResult = nil;
 
 
 s_player_parts_crtl = 1;
+TradeInprogress = false;

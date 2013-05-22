@@ -12,7 +12,7 @@ s_player_callzombies = 1;
 
 [player,"spotted",0,false] call dayz_zombieSpeak;
 
-_id = [player,100,true,(getPosATL player)] spawn player_alertZombies;
+[player,100,true,(getPosATL player)] spawn player_alertZombies;
 
 // wait a bit
 sleep 3;

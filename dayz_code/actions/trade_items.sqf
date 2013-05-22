@@ -4,6 +4,8 @@ private["_iarray","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sel
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
+_total_parts_out = 0;
+
 _activatingPlayer = _this select 1;
 
 _part_out = (_this select 3) select 0;
@@ -102,13 +104,10 @@ for "_x" from 1 to _total_trades do {
 
 				if(dayzTradeResult == "PASS") then {
 			
-					for "_x" from 1 to _qty_out do {
-						player addMagazine _part_out;
-					};
+					// total of all parts
+					_total_parts_out = _total_parts_out + _qty_out;
 
 					cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-					
-					
 
 				} else {
 					cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
@@ -142,6 +141,127 @@ for "_x" from 1 to _total_trades do {
 	sleep 1;
 
 	if(_abort) exitWith {};
+};
+
+// pay out
+if(_total_parts_out >= 1) then {
+
+	diag_log format["DEBUG TRADE #: %1", _total_parts_out];
+
+	if(_bos == 1) then { 
+		//convert currency trades into next bar
+		// 10 ItemCopperBar > ItemCopperBar10oz
+		// 3 ItemCopperBar10oz > ItemSilverBar
+		// 10 ItemSilverBar > ItemSilverBar10oz
+		// 3 ItemSilverBar10oz > ItemGoldBar
+		// 10 ItemGoldBar > ItemGoldBar10oz
+
+		_next_highest_bar = "NA";
+		_third_highest_bar = "NA";
+		_next_highest_conv = 10000;
+		_third_highest_conv = 10000;
+
+		switch(true)do{ 
+			case (_part_out == "ItemCopperBar"): { 			
+				_next_highest_bar = "ItemCopperBar10oz";
+				_third_highest_bar = "ItemSilverBar";
+				_next_highest_conv = 10;
+				_third_highest_conv = 3;
+			}; 
+			case (_part_out == "ItemCopperBar10oz"): { 
+				_next_highest_bar = "ItemSilverBar";
+				_third_highest_bar = "ItemSilverBar10oz";
+				_next_highest_conv = 3;
+				_third_highest_conv = 10;
+			};
+			case (_part_out == "ItemSilverBar"): { 
+				_next_highest_bar = "ItemSilverBar10oz";
+				_third_highest_bar = "ItemGoldBar";
+				_next_highest_conv = 10;
+				_third_highest_conv = 3;
+			}; 
+			case (_part_out == "ItemSilverBar10oz"): { 
+				_next_highest_bar = "ItemGoldBar";
+				_third_highest_bar = "ItemGoldBar10oz";
+				_next_highest_conv = 3;
+				_third_highest_conv = 10;
+			};  
+			case (_part_out == "ItemGoldBar"): { 
+				_next_highest_bar = "ItemGoldBar10oz";
+				_third_highest_bar = "NA";
+				_next_highest_conv = 10;
+				_third_highest_conv = 10000;
+			};  
+		}; 
+	
+		diag_log format["DEBUG TRADE part: %1 next: %2", _part_out,_next_highest_bar];
+
+		if(_total_parts_out >= _next_highest_conv) then {
+			_next_parts_out_raw = _total_parts_out / _next_highest_conv;
+			
+			// whole parts 
+			_next_parts_out = floor(_next_parts_out_raw);
+
+			diag_log format["DEBUG TRADE next whole parts: %1 part: %2", _next_parts_out,_next_highest_bar];
+			
+			// find any whole remains
+			_remainder = floor((_next_parts_out_raw - _next_parts_out) * _next_highest_conv);
+
+			diag_log format["DEBUG TRADE remainder parts: %1 part: %2", _remainder,_part_out];
+
+			for "_x" from 1 to _remainder do {
+				player addMagazine _part_out;
+			};
+
+			// Find if needs further conversion
+			if (_next_parts_out >= _third_highest_conv) then {
+				
+				_third_parts_out_raw = _next_parts_out / _third_highest_conv;
+			
+				// whole parts 
+				_third_parts_out = floor(_third_parts_out_raw);
+
+				diag_log format["DEBUG TRADE third whole parts: %1 part: %2", _third_parts_out,_third_highest_bar];
+			
+				for "_x" from 1 to _third_parts_out do {
+					player addMagazine _third_highest_bar;
+				};
+
+				// find any whole remains
+				_remainder = floor((_third_parts_out_raw - _third_parts_out) * _third_highest_conv);
+
+				diag_log format["DEBUG TRADE remainder parts: %1 part: %2", _remainder,_next_highest_bar];
+
+				for "_x" from 1 to _remainder do {
+					player addMagazine _next_highest_bar;
+				};
+
+			} else {
+
+				diag_log format["DEBUG TRADE next parts: %1 part: %2", _next_parts_out,_next_highest_bar];
+			
+				for "_x" from 1 to _next_parts_out do {
+					player addMagazine _next_highest_bar;
+				};
+			};
+
+		} else {
+
+			diag_log "DEBUG TRADE SELLING NORMALLY";
+		
+			for "_x" from 1 to _total_parts_out do {
+				player addMagazine _part_out;
+			};
+		};
+	
+	} else {
+
+		diag_log "DEBUG TRADE BUYING";
+		
+		for "_x" from 1 to _total_parts_out do {
+			player addMagazine _part_out;
+		};
+	};
 };
 
 TradeInprogress = false;

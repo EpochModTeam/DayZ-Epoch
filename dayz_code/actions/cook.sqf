@@ -5,7 +5,7 @@ TradeInprogress = true;
 
 // diag_log ("Cook Enabled");
 player removeAction s_player_cook;
-s_player_cook = -1;
+s_player_cook = 1;
 
 _rawmeat = meatraw;
 _cookedmeat = meatcooked;
@@ -77,4 +77,5 @@ _cookedmeat = meatcooked;
 	};
 } forEach _rawmeat;
 
+s_player_cook = -1;
 TradeInprogress = false;

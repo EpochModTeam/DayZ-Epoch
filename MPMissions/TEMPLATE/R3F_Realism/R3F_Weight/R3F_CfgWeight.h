@@ -1212,6 +1212,10 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		class MeleeMachete  
+		{
+			weight = 1;
+		};
 		class ItemHatchet  
 		{
 			weight = 1;
@@ -1430,7 +1434,11 @@ class CfgWeight
 		{
 			weight = 0;
 		};
-		class Crowbar_Swing 
+		class Fishing_Swing 
+		{
+			weight = 0;
+		};
+		class Crowbar_Swing
 		{
 			weight = 0;
 		};

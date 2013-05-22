@@ -1,10 +1,15 @@
-private["_object","_worldspace","_location","_dir","_character","_tent","_class","_id","_uid","_dam","_hitpoints","_selection","_array","_damage","_randFuel","_fuel","_key","_result","_outcome","_totaldam","_parts","_retry","_done","_spawnDMG"];
+private["_isOK","_object","_worldspace","_location","_dir","_character","_tent","_class","_id","_uid","_dam","_hitpoints","_selection","_array","_damage","_randFuel","_fuel","_key","_result","_outcome","_totaldam","_parts","_retry","_done","_spawnDMG"];
 
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;
 _spawnDMG =		_this select 3;
-_characterID =  _this select 4;
+_keySelected =  _this select 4;
+
+_isOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+if(!_isOK) exitWith { diag_log ("HIVE: CARKEY DOES NOT EXIST: "+ str(_keySelected));  };
+
+_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "keyid"));
 
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
@@ -14,15 +19,6 @@ _location = _worldspace select 1;
 _uid = _worldspace call dayz_objectUID3;
 
 // TODO: check if uid already exists and if so increment by 1 and check again as soon as we find nothing continue.
-
-// parseNumber to get just numbers no letters
-/*
-_isA2free = parseNumber _characterID;
-if(_isA2free != _characterID) then {
-	_characterID = _isA2free;
-};
-*/
-
 
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
@@ -76,6 +72,11 @@ _key call server_hiveWrite;
 
 	_object = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
 
+	clearWeaponCargoGlobal  _object;
+	clearMagazineCargoGlobal  _object;
+
+	_object allowDamage false;
+
 	_object setVariable ["ObjectID", _oid, true];
 	
 	_object setVariable ["lastUpdate",time];
@@ -89,19 +90,7 @@ _key call server_hiveWrite;
 	WaitUntil{(getpos _object select 2) < 0.1};
      
 	detach _object;
-
 	deleteVehicle _object_para;
-
-	// _object setDamage _damage;
-	// _object setFuel _fuel;
-
-	clearWeaponCargoGlobal  _object;
-	clearMagazineCargoGlobal  _object;
-
-	_veh setdir _dir;
-	_veh setpos _location;
-	
-	//_object setvelocity [0,0,1];
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
@@ -111,7 +100,9 @@ _key call server_hiveWrite;
 	dayzVehicleInit = _object;
 	publicVariable "dayzVehicleInit";
 	
-
-
 	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
+
+	sleep 1.0;
+
+	_object allowDamage true;
 };

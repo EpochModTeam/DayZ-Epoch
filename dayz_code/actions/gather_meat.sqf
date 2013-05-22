@@ -1,4 +1,8 @@
 private["_item","_hasKnife","_hasKnifeBlunt","_hasHarvested","_qty","_text","_string","_type"];
+
+if(TradeInprogress) exitWith { cutText ["Gutting animal already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 _item = _this select 3;
 _hasKnife = 	"ItemKnife" in items player;
 _hasKnifeBlunt = 	"ItemKnifeBlunt" in items player;
@@ -7,7 +11,7 @@ _hasHarvested = _item getVariable["meatHarvested",false];
 _config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
 
 player removeAction s_player_butcher;
-s_player_butcher = -1;
+s_player_butcher = 1;
 
 if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type
@@ -80,3 +84,5 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 		cutText [_string, "PLAIN DOWN"];
 	};
 };
+s_player_butcher = -1;
+TradeInprogress = false;

@@ -30,12 +30,12 @@
 5 "_SMAW"
 5 "_GRAD"
 5 "_SABOT"
-5 "_SH"
+5 "_SH" !="Wooden_shed_DZ"
 5 "KORD"
 5 "DSHKM"
 5 "MK19"
 5 "AGS"
-5 "Nest_" //Nest_M240 //Nest_PK
+5 "Nest_" !="M240Nest_DZ" !="SandNest_DZ" //Nest_M240 //Nest_PK
 5 "R_PG"
 5 "R_OG"
 5 "B_"

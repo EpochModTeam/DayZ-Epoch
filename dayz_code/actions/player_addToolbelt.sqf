@@ -20,7 +20,7 @@ _create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 
 _config2 = 	configFile >> "cfgWeapons" >> _create;
 
 //Remove magazines if needed
-if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
+if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
 	_magType = 	([] + getArray (configFile >> "cfgWeapons" >> _item >> "magazines")) select 0;
 	_meleeNum = ({_x == _magType} count magazines player);
 	for "_i" from 1 to _meleeNum do {
@@ -44,7 +44,7 @@ if (_isOk) then {
 	player removeWeapon _item;
 	
 	//Add magazines if needed
-	if (_create in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
+	if (_create in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
 		if (_create == "MeleeCrowbar") then {
 			player addMagazine 'crowbar_swing';
 		};
@@ -53,6 +53,9 @@ if (_isOk) then {
 		};
 		if (_create == "MeleeMachete") then {
 				player addMagazine 'Machete_swing';
+		};
+		if (_create == "MeleeFishingPole") then {
+				player addMagazine 'Fishing_Swing';
 		};
 		if (_type == "cfgWeapons") then {
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
@@ -68,7 +71,7 @@ if (_isOk) then {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 	
 	//Add magazines back
-	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
+	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
 		if (_item == "MeleeCrowbar") then {
 			player addMagazine 'crowbar_swing';
 		};
@@ -77,6 +80,9 @@ if (_isOk) then {
 		};
 		if (_item == "MeleeMachete") then {
 			player addMagazine 'Machete_swing';
+		};
+		if (_item == "MeleeFishingPole") then {
+			player addMagazine 'Fishing_Swing';
 		};
 	};	
 };

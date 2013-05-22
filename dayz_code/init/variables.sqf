@@ -140,6 +140,7 @@ boil_tin_cans = [
     "ItemSodaRabbitEmpty"
 ];
 
+dayz_combination = "";
 dayz_combatLog = "";
 canRoll = true;
 
@@ -234,6 +235,7 @@ s_player_repairActions = [];
 // Custom 
 s_player_madsci 		= 	[];
 s_player_parts 			= 	[];
+s_player_combi 			= 	[];
 
 //Initialize Medical Variables
 r_interrupt = 			false;
@@ -343,6 +345,7 @@ dayz_zombieTargetList = [
 dayzHit = [];
 dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 dayzHideBody = objNull;
+dayz_selectedVault = objNull;
 
 dayzPublishVeh = [];		// for vehicle traders
 dayzTradeObject = [];		// For all traders increment qty
@@ -377,18 +380,24 @@ if(isNil "DZEdebug") then {
 if(isNil "dayz_tameDogs") then {
 	dayz_tameDogs = false;
 };
+if(isNil "dayz_sellDistance") then {
+	dayz_sellDistance = 20;
+};
 if(isNil "dayz_paraSpawn") then {
 	dayz_paraSpawn = false;
 };
-if(isNil "dayz_oldrefuel") then {
-	dayz_oldrefuel = false;
+if(isNil "dayz_minpos") then {
+	dayz_minpos = -20000;
+};
+if(isNil "dayz_maxpos") then {
+	dayz_maxpos = 20000;
 };
 
 // update objects
 dayz_updateObjects = ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage","M240Nest_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ"];
 dayz_disallowedVault = ["TentStorage", "BuiltItems"];
 dayz_reveal = ["AllVehicles","WeaponHolder","TentStorage","VaultStorage","VaultStorageLocked","BuiltItems"];
-dayz_allowedObjects = ["TentStorage","TentStorageDomed","TentStorageDomed2", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ","Fence_corrugated_DZ","M240Nest_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","Plastic_Pole_EP1_DZ","Generator_DZ","StickFence_DZ","LightPole_DZ","FuelPump_DZ"];
+dayz_allowedObjects = ["TentStorage","TentStorageDomed","TentStorageDomed2", "VaultStorageLocked", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ","Fence_corrugated_DZ","M240Nest_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","Plastic_Pole_EP1_DZ","Generator_DZ","StickFence_DZ","LightPole_DZ","FuelPump_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","SandNest_DZ"];
 
 // These work with just a running generator
 dayz_fuelpumparray = ["FuelPump_DZ","Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","FuelStation","Land_ibr_FuelStation_Feed","Land_fuelstation_army","Land_fuelstation","land_fuelstation_w","Land_benzina_schnell"];
@@ -490,7 +499,6 @@ if(!isDedicated) then {
 	dayz_Magazines = 		[];
 	dayzGearSave = 			false;
 	dayz_unsaved =			false;
-	UnlockInprogress =		false;
 	TradeInprogress =		false;
 	dayz_scaleLight = 		0;
 	dayzDebug = false;

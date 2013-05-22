@@ -58,7 +58,7 @@ if (isNull _playerObj or !isPlayer _playerObj) exitWith {
 	diag_log ("LOGIN RESULT: Exiting, player object null: " + str(_playerObj));
 };
 
-if ((_primary select 0) == "ERROR") exitWith {	
+if ((_primary select 0) == "ERROR") exitWith {
     diag_log format ["LOGIN RESULT: Exiting, failed to load _primary: %1 for player: %2 ",_primary,_playerID];
 };
 
@@ -99,16 +99,20 @@ if (!_isNew) then {
 	};
 
 	//Record initial inventory
-	
-	if(isclass(missionConfigFile >> "CfgSurvival_override")) then {
-		_config = (missionConfigFile >> "CfgSurvival_override" >> "Inventory" >> "Default");
-	} else {
-		_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
-	};
-
+	_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
 	_mags = getArray (_config >> "magazines");
 	_wpns = getArray (_config >> "weapons");
 	_bcpk = getText (_config >> "backpack");
+
+	if(!isNil "DefaultMagazines") then {
+		_mags = DefaultMagazines;
+	};
+	if(!isNil "DefaultWeapons") then {
+		_wpns = DefaultWeapons;
+	};
+	if(!isNil "DefaultBackpack") then {
+		_bcpk = DefaultBackpack;
+	};
 	_randomSpot = true;
 	
 	//Wait for HIVE to be free

@@ -37,6 +37,9 @@ if (_classname == "MeleeHatchet") then {
 if (_classname == "MeleeMachete") then {
 	player addMagazine 'Machete_swing';
 };
+if (_classname == "MeleeFishingPole") then {
+	player addMagazine 'Fishing_Swing';
+};
 
 _broken = false;
 if(_classname == "WoodenArrow") then {
@@ -69,7 +72,7 @@ if(_qty >= 1) then {
 	if (_isOk) then {
 
 		deleteVehicle _holder;
-		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
+		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
 
 			if (_type == "cfgWeapons") then {
 				_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
@@ -92,6 +95,9 @@ if(_qty >= 1) then {
 		};
 		if (_classname == "MeleeMachete") then {
 			player removeMagazine 'Machete_swing';
+		};
+		if (_classname == "MeleeFishingPole") then {
+			player removeMagazine 'Fishing_Swing';
 		};
 	};
 };

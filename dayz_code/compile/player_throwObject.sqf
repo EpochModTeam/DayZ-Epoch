@@ -30,4 +30,4 @@ if (_ammo isKindOf "RoadFlare") then {
 	};
 };
 
-_id = [_unit,_distance,false,_endPos] spawn player_alertZombies;
+[_unit,_distance,false,_endPos] spawn player_alertZombies;

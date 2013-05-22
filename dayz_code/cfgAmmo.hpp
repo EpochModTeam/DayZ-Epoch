@@ -10,6 +10,10 @@ class CfgAmmo {
 		hit = 9;
 		simulation = "shotBullet";
 	};
+	class Fishing_Swing_Ammo : Melee {
+		hit = 7;
+		simulation = "shotBullet";
+	};
 	class Dummy_Swing_Ammo : Melee {
 		hit = 0;
 		simulation = "shotBullet";

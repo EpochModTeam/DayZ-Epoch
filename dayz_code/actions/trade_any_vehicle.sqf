@@ -1,4 +1,4 @@
-private["_position","_veh","_location","_isOk","_backpack","_vehType","_trg","_key","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID"];
+private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID"];
 
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -68,9 +68,8 @@ if (_qty >= _qty_in) then {
 		if(_buy_o_sell == "buy") then {
 			_qty = {_x == _part_in} count magazines player;
 		} else {
-			_obj = nearestObjects [(getPosATL player), [_part_in], 20];
+			_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance];
 			_qty = count _obj;
-			_bos = 1;
 		};
 
 		if (_qty >= _qty_in) then {
@@ -88,39 +87,57 @@ if (_qty >= _qty_in) then {
 			if(dayzTradeResult == "PASS") then {
 
 				if(_buy_o_sell == "buy") then {	
+
+					// First select key color
+					_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
+
+					// then select number from 1 - 2500
+					_keyNumber = (floor(random 2500)) + 1;
+
+					// Combine to key (eg.ItemKeyYellow2494) classname
+					_keySelected = format[("ItemKey%1%2"),_keyColor,_keyNumber];	
+
+					_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+					
+					_config = _keySelected;
+					_isOk = [player,_config] call BIS_fnc_invAdd;
+					if (_isOk and _isKeyOK) then {
+					
+						_removed = ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
+						if(_removed == _qty_in) then {
+							_dir = round(random 360);
+
+							_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
+							if(count _helipad > 0) then {
+								_location = (getPosATL (_helipad select 0));
+							} else {
+								_location = [(position player),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
+							};
 	
-					for "_x" from 1 to _qty_in do {
-						player removeMagazine _part_in;
-					};
+							//place vehicle spawn marker (local)
+							_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
 
-					_dir = round(random 360);
+							_location = (getPosATL _veh);
 
-					_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
-					if(count _helipad > 0) then {
-						_location = (getPosATL (_helipad select 0));
+							//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
+							dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,_keySelected];
+							publicVariableServer  "dayzPublishVeh2";
+
+							player reveal _veh;
+						
+							cutText [format[("Bought %3 for %1 %2, key added to toolbelt."),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
+						} else {
+							player removeMagazine _keySelected;
+						};
 					} else {
-						_location = [(position player),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
+						cutText ["You do not have enough room on your toolbelt.", "PLAIN DOWN"];
 					};
-	
-					//place vehicle spawn marker (local)
-					_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
-
-					_location = (getPosATL _veh);
-
-					//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,dayz_playerUID]] call callRpcProcedure;
-					dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,dayz_playerUID];
-					publicVariableServer  "dayzPublishVeh2";
-
-					player reveal _veh;
-
-					cutText [format[("Bought %3 %4 for %1 %2"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-
 				} else {
 					
 					_obj = _obj select 0;
 
 
-					//check make sure there are no fully damaged tires fully
+					//check to make sure vehicle has no more than 75% average tire damage
 					_hitpoints = _obj call vehicle_getHitpoints;
 					_okToSell = true;
 
@@ -146,7 +163,7 @@ if (_qty >= _qty_in) then {
 						};
 					};
 
-					if(_okToSell) then {
+					if(_okToSell and !isNull _obj and alive _obj) then {
 
 						// Sell Vehicle
 						for "_x" from 1 to _qty_out do {
@@ -182,8 +199,7 @@ if (_qty >= _qty_in) then {
 		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
 	} else {
 		cutText [format[("No %1 found within 20 meters."),_textPartIn] , "PLAIN DOWN"];
-	};
-	
+	};	
 };
 
 TradeInprogress = false;

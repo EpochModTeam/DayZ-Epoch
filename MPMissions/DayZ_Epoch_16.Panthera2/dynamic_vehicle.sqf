@@ -91,7 +91,7 @@ AllowedVehiclesList = [
 ["Ural_UN_EP1",2],
 ["V3S_Open_TK_CIV_EP1",2],
 ["V3S_Open_TK_EP1",5],
-["V3S_Refuel_TK_GUE_EP1",1],
+["V3S_Refuel_TK_GUE_EP1_DZ",1],
 ["VolhaLimo_TK_CIV_EP1",2],
 ["Volha_1_TK_CIV_EP1",3],
 ["Volha_2_TK_CIV_EP1",3],

@@ -1035,7 +1035,7 @@ class CfgMagazines
 			class Crafting2
 			{
 				text = "Craft Green Tent";
-				script = "spawn player_craftItem1;";
+				script = "spawn player_craftItem2;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentDomed2",1}};
@@ -1044,7 +1044,7 @@ class CfgMagazines
 			class Crafting3
 			{
 				text = "Craft Sun Shade";
-				script = "spawn player_craftItem2;";
+				script = "spawn player_craftItem3;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"sun_shade_kit",1}};
@@ -1053,7 +1053,7 @@ class CfgMagazines
 			class Crafting4
 			{
 				text = "Craft Burlap";
-				script = "spawn player_craftItem3;";
+				script = "spawn player_craftItem4;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemBurlap",1}};
@@ -1392,9 +1392,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Light Bulb";
-		// TODO model + texture
-		model = "\dayz_equip\models\fad.p3d";
-		picture = "\dayz_equip\textures\equip_fad_ca.paa";
+		model = "\dayz_equip\models\bulb.p3d";
+		picture = "\dayz_equip\textures\equip_bulb_CA.paa";
 		descriptionShort = "Light Bulb";
 		class ItemActions {
 			class Crafting
@@ -1445,7 +1444,7 @@ class CfgMagazines
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemPole",1}};
-				input[] = {{"PartGeneric",1},{"ItemTankTrap",1}};
+				input[] = {{"PartGeneric",2}};
 			};
 		};
 	};
@@ -1501,9 +1500,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Metal Pole";
-		// TODO model and picture
-		model = "\dayz_equip\models\genericparts.p3d";
-		picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
+		model = "\dayz_equip\models\pipe.p3d";
+		picture = "\dayz_equip\textures\equip_pipe_CA.paa";
 		descriptionShort = "Metal Pole";
 		class ItemActions {
 			class Crafting
@@ -1513,7 +1511,7 @@ class CfgMagazines
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemCorrugated",1}};
-				input[] = {{"ItemPole",1},{"PartGeneric",2},{"ItemTankTrap",1},{"PartWoodLumber",2}};
+				input[] = {{"ItemPole",2},{"ItemTankTrap",2},{"PartWoodLumber",2}};
 			};
 			class Crafting1
 			{
@@ -1550,7 +1548,7 @@ class CfgMagazines
 			{
 				text = "Craft Lumber";
 				script = "spawn player_craftItem;";
-				neednearby[] = {"workshop"};
+				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodLumber",1}};
 				input[] = {{"PartWoodPile",2}};
@@ -1584,9 +1582,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Lumber";
-		// TODO make custom model and icon
-		model = "\dayz_equip\models\woodPile.p3d";
-		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
+		model = "\dayz_equip\models\planks.p3d";
+		picture = "\dayz_equip\textures\equip_wood_planks_CA.paa";
 		descriptionShort = "Lumber";
 		class ItemActions {
 			class Build {
@@ -1599,7 +1596,7 @@ class CfgMagazines
 			{
 				text = "Craft Plywood";
 				script = "spawn player_craftItem;";
-				neednearby[] = {"workshop"};
+				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"PartWoodPlywood",1}};
 				input[] = {{"PartWoodLumber",2}};
@@ -1623,9 +1620,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Plywood";
-		// TODO make custom model and icon
-		model = "\dayz_equip\models\woodPile.p3d";
-		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
+		model = "\dayz_equip\models\plywood.p3d";
+		picture = "\dayz_equip\textures\equip_plywood_CA.paa";
 		descriptionShort = "Plywood";
 		class ItemActions {
 			class Crafting
@@ -1763,13 +1759,6 @@ class CfgMagazines
 		picture = "\dayz_equip\textures\equip_soda_mdew_ca.paa";
 		descriptionShort = "$STR_EQUIP_NAME_37";
 	};
-	class ItemSodaRbull: ItemSodaCoke
-	{
-		displayName = "Soda Can (Red Bull)";
-		model = "\dayz_equip\models\soda_rbull.p3d";
-		picture = "\dayz_equip\textures\equip_soda_rbull_ca.paa";
-		descriptionShort = "$STR_EQUIP_NAME_37";
-	};
 	class ItemBriefcase: CA_Magazine
 	{
 		scope = 2;
@@ -1788,7 +1777,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "Gold";
 		model = "\dayz_equip\models\gold_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_gold_CA.paa";
+		picture = "\dayz_equip\textures\equip_gold_bar_CA.paa";
 		descriptionShort = "Gold Bar";
 		class ItemActions
 		{
@@ -1811,7 +1800,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Gold";
 		model = "\dayz_equip\models\gold_bar_10oz.p3d";
-		picture = "\dayz_equip\textures\equip_bar_gold10oz_CA.paa";
+		picture = "\dayz_equip\textures\equip_gold_bar_10oz_CA.paa";
 		descriptionShort = "10oz Gold Bar";
 		class ItemActions
 		{
@@ -1833,7 +1822,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "Silver";
 		model = "\dayz_equip\models\silver_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_silver_CA.paa";
+		picture = "\dayz_equip\textures\equip_silver_bar_CA.paa";
 		descriptionShort = "Silver Bar";
 		class ItemActions
 		{
@@ -1856,7 +1845,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Silver";
 		model = "\dayz_equip\models\silver_bar_10oz.p3d";
-		picture = "\dayz_equip\textures\equip_bar_silver10oz_CA.paa";
+		picture = "\dayz_equip\textures\equip_silver_bar_10oz_CA.paa";
 		descriptionShort = "10oz Silver Bar";
 		class ItemActions
 		{
@@ -1878,7 +1867,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "Copper";
 		model = "\dayz_equip\models\copper_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_copper_CA.paa";
+		picture = "\dayz_equip\textures\equip_copper_bar_CA.paa";
 		descriptionShort = "Copper Bar";
 		class ItemActions
 		{
@@ -1901,7 +1890,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Copper";
 		model = "\dayz_equip\models\copper_bar_10oz.p3d";
-		picture = "\dayz_equip\textures\equip_bar_copper10oz_CA.paa";
+		picture = "\dayz_equip\textures\equip_copper_bar_10oz_CA.paa";
 		descriptionShort = "10oz Copper Bar";
 		class ItemActions
 		{
@@ -1934,7 +1923,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "Aluminum";
 		model = "\dayz_equip\models\aluminum_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_aluminum_CA.paa";
+		picture = "\dayz_equip\textures\equip_alum_bar_CA.paa";
 		descriptionShort = "Aluminum Bar";
 		
 	};
@@ -1945,7 +1934,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Aluminum";
 		model = "\dayz_equip\models\aluminum_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_aluminum_CA.paa";
+		picture = "\dayz_equip\textures\equip_alum_bar_10oz_CA.paa";
 		descriptionShort = "10oz Aluminum Bar";
 		class ItemActions
 		{
@@ -1967,7 +1956,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "Tin";
 		model = "\dayz_equip\models\tin_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_tin_CA.paa";
+		picture = "\dayz_equip\textures\equip_tin_bar_CA.paa";
 		descriptionShort = "Tin Bar";
 		
 	};
@@ -1978,7 +1967,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "10oz Tin";
 		model = "\dayz_equip\models\tin_bar.p3d";
-		picture = "\dayz_equip\textures\equip_bar_tin_CA.paa";
+		picture = "\dayz_equip\textures\equip_tin_bar_10oz_CA.paa";
 		descriptionShort = "10oz Tin Bar";
 		class ItemActions
 		{
@@ -2315,6 +2304,104 @@ class CfgMagazines
 			};
 		};
 	};
+	class desert_large_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Desert Camo Net";
+		descriptionShort = "Large Desert Camo Net";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "DesertLargeCamoNet_DZ";
+			};
+		};
+	};
+	class forest_large_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Forest Camo Net";
+		descriptionShort = "Large Forest Camo Net";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "ForestLargeCamoNet_DZ";
+			};
+		};
+	};
+	class desert_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Desert Camo Net";
+		descriptionShort = "Desert Camo Net";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "DesertCamoNet_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Lg Camo Net";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"desert_large_net_kit",1}};
+				input[] = {{"desert_net_kit",3}};
+			};
+		};
+	};
+	class forest_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Forest Camo Net";
+		descriptionShort = "Forest Camo Net";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "ForestCamoNet_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Lg Camo Net";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"forest_large_net_kit",1}};
+				input[] = {{"forest_net_kit",3}};
+			};
+		};
+	};
 	class fuel_pump_kit: CA_Magazine
 	{
 		scope = 2;
@@ -2495,6 +2582,26 @@ class CfgMagazines
 			};
 		};
 	};
+	class sandbag_nest_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Sandbag Nest";
+		descriptionShort = "Sandbag Nest";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "SandNest_DZ";
+			};
+		};
+	};
 	class outhouse_kit: CA_Magazine
 	{
 		scope = 2;
@@ -2572,25 +2679,6 @@ class CfgMagazines
 			{
 				text = "Place Safe";
 				script = "spawn player_vaultPitch;";
-			};
-		};
-	};
-	class ItemTent: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "$STR_EQUIP_NAME_20";
-		model = "\dayz_equip\models\tentbag_gear.p3d";
-		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_20";
-		class ItemActions
-		{
-			class Pitch
-			{
-				text = "$STR_PITCH_TENT";
-				script = "spawn player_tentPitch;";
-				create = "TentStorage";
 			};
 		};
 	};
@@ -2886,6 +2974,57 @@ class CfgVehicles
 		vehicleClass = "Fortifications";
 		removeoutput[] = {{"park_bench_kit",1}};
 	};
+	class Land_CamoNet_EAST_EP1;
+	class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
+	{
+		armor = 300;
+		scope = 2;
+		offset[] = {0,5,0};
+		displayName = "Desert Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"desert_net_kit",1}};
+	};
+	class Land_CamoNet_EAST;
+	class ForestCamoNet_DZ: Land_CamoNet_EAST
+	{
+		armor = 300;
+		scope = 2;
+		offset[] = {0,5,0};
+		displayName = "Forest Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"forest_net_kit",1}};
+	};
+	class Land_CamoNetB_EAST_EP1;
+	class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
+	{
+		armor = 300;
+		scope = 2;
+		offset[] = {0,9,0};
+		displayName = "Large Desert Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"desert_large_net_kit",1}};
+	};
+	class Land_CamoNetB_EAST;
+	class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
+	{
+		armor = 300;
+		scope = 2;
+		offset[] = {0,9,0};
+		displayName = "Large Forest Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"forest_large_net_kit",1}};
+	};
+	
+	class Land_fortified_nest_small_EP1;
+	class SandNest_DZ: Land_fortified_nest_small_EP1
+	{
+		armor = 400;
+		scope = 2;
+		offset[] = {0,3,1};
+		displayName = "Sandbag Nest";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"sandbag_nest_kit",1}};
+	};
 	class Land_Wall_Gate_Ind1_L;
 	class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 	{
@@ -2928,7 +3067,7 @@ class CfgVehicles
 		transportMaxMagazines = 400;
 		transportMaxWeapons = 40;
 		transportMaxBackpacks = 20;
-		constructioncount = 10;
+		constructioncount = 5;
 	};
 	class Fence_corrugated_plate;
 	class Fence_corrugated_DZ: Fence_corrugated_plate
@@ -2953,7 +3092,7 @@ class CfgVehicles
 		transportMaxMagazines = 100;
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
-		constructioncount = 10;
+		constructioncount = 5;
 	};
 	class Land_Shed_wooden;
 	class Wooden_shed_DZ: Land_Shed_wooden
@@ -3008,9 +3147,29 @@ class CfgVehicles
 			  source = "User"; 
 			  animPeriod = 1; 
 			  initPhase = 0; 
-			}
-		}
-		
+			};
+		};
+		class UserActions
+		{
+			class CloseDoor
+			{
+				position = "";
+				displayName = "Close Door";
+				radius = 1.5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'DoorR' == 1";
+				statement = "this animate ['DoorR', 0];";
+			};
+			class OpenDoor
+			{
+				position = "";
+				displayName = "Open Door";
+				radius = 1.5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'DoorR' == 0";
+				statement = "this animate ['DoorR', 1];";
+			};
+		};
 	};
 	class BearTrap_DZ: TrapItems
 	{

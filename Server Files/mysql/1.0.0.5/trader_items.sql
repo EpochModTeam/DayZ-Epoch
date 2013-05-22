@@ -174,7 +174,7 @@ INSERT INTO `trader_items` VALUES ('436', 'ItemSandbag', '1', 'Building Supplies
 INSERT INTO `trader_items` VALUES ('437', 'ItemSodaCoke', '1', 'Drink', 'trade_items');
 INSERT INTO `trader_items` VALUES ('438', 'ItemSodaMdew', '1', 'Drink', 'trade_items');
 INSERT INTO `trader_items` VALUES ('439', 'ItemSodaPepsi', '1', 'Drink', 'trade_items');
-INSERT INTO `trader_items` VALUES ('440', 'ItemSodaRbull', '1', 'Drink', 'trade_items');
+INSERT INTO `trader_items` VALUES ('440', 'ItemSodaR4z0r', '1', 'Drink', 'trade_items');
 INSERT INTO `trader_items` VALUES ('441', 'ItemTankTrap', '1', 'Building Supplies', 'trade_items');
 INSERT INTO `trader_items` VALUES ('442', 'ItemTent', '1', 'Building Supplies', 'trade_items');
 INSERT INTO `trader_items` VALUES ('443', 'ItemToolbox', '3', 'ToolBelt', 'trade_weapons');
@@ -309,7 +309,7 @@ INSERT INTO `trader_items` VALUES ('574', 'Ural_UN_EP1', '2', 'Trucks Large', 't
 INSERT INTO `trader_items` VALUES ('575', 'UZI_EP1', '3', 'Sub Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES ('576', 'V3S_Open_TK_CIV_EP1', '2', 'Trucks Large', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('577', 'V3S_Open_TK_EP1', '2', 'Trucks Large', 'trade_any_vehicle');
-INSERT INTO `trader_items` VALUES ('578', 'V3S_Refuel_TK_GUE_EP1', '2', 'Trucks Refuel', 'trade_any_vehicle');
+INSERT INTO `trader_items` VALUES ('578', 'V3S_Refuel_TK_GUE_EP1_DZ', '2', 'Trucks Refuel', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('579', 'VolhaLimo_TK_CIV_EP1', '2', 'Cars', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('580', 'Volha_1_TK_CIV_EP1', '2', 'Cars', 'trade_any_vehicle');
 INSERT INTO `trader_items` VALUES ('581', 'Volha_2_TK_CIV_EP1', '2', 'Cars', 'trade_any_vehicle');

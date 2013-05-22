@@ -3,7 +3,7 @@ private["_position","_unitTypes","_group","_unit","_target","_bodies","_targetPo
 _agent = _this select 0;
 
 //Add handlers
- //_id = _agent addeventhandler ["HandleDamage",{_this call local_zombieDamage}];
+//_id = _agent addeventhandler ["HandleDamage",{_this call local_zombieDamage}];
 
 //Loop behaviour
 _list = (getposATL _agent) nearEntities ["Man",200];
@@ -30,7 +30,7 @@ while {_isAlive and _isSomeone} do {
 		sleep 1;
 	};
 	
-//CHASE TARGET
+	//CHASE TARGET
 	
 	//Leader cries out
 	[_agent,"attack",0,false] call dayz_zombieSpeak;
@@ -45,7 +45,7 @@ while {_isAlive and _isSomeone} do {
 		_agent forceSpeed 8;
 		sleep 1;
 	};
-//LOOP
+	//LOOP
 	_agent setVariable ["targets",[],true];
 	_isAlive = alive _agent;
 	sleep 1;

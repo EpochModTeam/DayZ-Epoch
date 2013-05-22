@@ -25,6 +25,16 @@ MaxDynamicDebris = 700; // Default = 100
 dayz_MapArea = 20000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
+// new stuff
+spawnMarkerCount = 10; // Default: 4
+dayz_tameDogs = true;
+
+dayz_minpos = -26000; 
+dayz_maxpos = 26000;
+
+DynamicVehicleDamageLow = 0; // Default: 0
+DynamicVehicleDamageHigh = 100; // Default: 100
+
 // DZEdebug = true;
 
 //Load in compiled functions

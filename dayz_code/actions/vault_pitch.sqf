@@ -1,4 +1,4 @@
-private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_id","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond"];
+private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_removed"];
 //check if can pitch here
 
 if(TradeInprogress) exitWith { cutText ["Vault pitching already in progress." , "PLAIN DOWN"]; };
@@ -108,47 +108,60 @@ if(!_cancel) then {
 		_hastentitem = _this in magazines player;
 		if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"pitch"] , "PLAIN DOWN"]};
 
-		player removeMagazine _item;
+		_removed = ([player,_item] call BIS_fnc_invRemove);
 
-		//call dayz_forceSave;
+		if(_removed == 1) then {
 
-		_dir = round(direction player);	
-	
-		//wait a bit
-		player playActionNow "Medic";
-		sleep 1;
-		[player,"tentunpack",0,false] call dayz_zombieSpeak;
-	
-		_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
-	
-		_building = nearestObject [(vehicle player), "HouseBase"];
-		_isBuilding = [(vehicle player),_building] call fnc_isInsideBuilding;
+			player removeMagazine _item;
 
-		if(_isBuilding) then {
+			//call dayz_forceSave;
+
+			_dir = round(direction player);	
+	
+			//wait a bit
+			player playActionNow "Medic";
+			sleep 1;
+			[player,"tentunpack",0,false] call dayz_zombieSpeak;
+	
+			[player,50,true,(getPosATL player)] spawn player_alertZombies;
+	
+			_building = nearestObject [(vehicle player), "HouseBase"];
+			_isBuilding = [(vehicle player),_building] call fnc_isInsideBuilding;
+
+			if(_isBuilding) then {
 			
-			_ppos = _building worldToModel _vault_location;
-			_location = _building modelToWorld _ppos;
+				_ppos = _building worldToModel _vault_location;
+				_location = _building modelToWorld _ppos;
 
-		} else {
-			_location = player modelToWorld [_offset_x,_offset_y,_offset_z];
+			} else {
+				_location = player modelToWorld [_offset_x,_offset_y,_offset_z];
+			};
+
+			sleep 5;
+			//place tent (local)
+			_tent = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
+			_tent setdir _dir;
+			_tent setpos _location;
+			player reveal _tent;
+	
+			// Generate Combination
+			_combination_1 = floor(random 10);
+			_combination_2 = floor(random 10);
+			_combination_3 = floor(random 10);
+			_combination_4 = floor(random 10);
+
+			// Format Combination
+			_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
+
+			_tent setVariable ["characterID",_combination,true];
+			_tent setVariable ["OEMPos",_location,true];
+
+			//["dayzPublishObj",[_combination,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
+			dayzPublishObj = [_combination,_tent,[_dir,_location],"VaultStorageLocked"];
+			publicVariableServer  "dayzPublishObj";
+	
+			cutText [format["You have setup your Safe. Combination is %1",_combination], "PLAIN DOWN", 5];
 		};
-
-		sleep 5;
-		//place tent (local)
-		_tent = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
-		_tent setdir _dir;
-		_tent setpos _location;
-		player reveal _tent;
-	
-
-		_tent setVariable ["characterID",dayz_playerUID,true];
-		_tent setVariable ["OEMPos",_location,true];
-
-		//["dayzPublishObj",[dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
-		dayzPublishObj = [dayz_playerUID,_tent,[_dir,_location],"VaultStorageLocked"];
-		publicVariableServer  "dayzPublishObj";
-	
-		cutText ["You have setup your Safe", "PLAIN DOWN"];
 	
 	} else {
 		cutText ["You cannot place a Safe here. The area must be flat, and free of other objects", "PLAIN DOWN"];

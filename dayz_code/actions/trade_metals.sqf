@@ -1,5 +1,8 @@
 private["_none"];
 
+if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];
 s_player_parts_crtl = 1;
 
@@ -30,3 +33,4 @@ _metals_conversion = [
 _cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
 s_player_parts set [count s_player_parts,_cancel];
 
+TradeInprogress = false;

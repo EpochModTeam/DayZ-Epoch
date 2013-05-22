@@ -1,7 +1,10 @@
 private["_hasFood","_item","_text","_qty"];
 
+if(TradeInprogress) exitWith { cutText ["Fill Jerry already in progress." , "PLAIN DOWN"]; };
+TradeInprogress = true;
+
 player removeAction s_player_fillfuel;
-s_player_fillfuel = -1;
+s_player_fillfuel = 1;
 
 _fillCounter = 0;
 _abort = false;
@@ -75,3 +78,6 @@ for "_x" from 1 to _qty do {
 	sleep 1;
 	if(_abort) exitWith {};
 };
+
+s_player_fillfuel = -1;
+TradeInprogress = false;
