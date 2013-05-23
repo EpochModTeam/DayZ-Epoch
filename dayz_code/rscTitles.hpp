@@ -8,9 +8,9 @@ class RscIGUIShortcutButton;
 class RscGearShortcutButton;
 class RscIGUIListNBox;
 class RscActiveText;
-class RscStructuredText;
-class RscPictureGUI;
-class RscStructuredTextGUI;
+// class RscStructuredText;
+// class RscPictureGUI;
+// class RscStructuredTextGUI;
 
 class RscPictureKeepAspect;
 class RscStandardDisplay;
