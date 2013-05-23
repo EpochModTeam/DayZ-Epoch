@@ -313,26 +313,31 @@ class CfgWeapons {
 	};
 	class ItemKeyBlack: ItemKey {
 		keyid = 0;
+		scope = 2;
 	};
 	class ItemKeyGreen: ItemKey {
 		displayname = "Green Key";
 		model = "\dayz_equip\models\key_green.p3d";
 		picture = "\dayz_equip\textures\equip_key_CA_green.paa";
+		scope = 2;
 	};
 	class ItemKeyBlue: ItemKey {
 		displayname = "Blue Key";
 		model = "\dayz_equip\models\key_blue.p3d";
 		picture = "\dayz_equip\textures\equip_key_CA_blue.paa";
+		scope = 2;
 	};
 	class ItemKeyYellow: ItemKey {
 		displayname = "Yellow Key";
 		model = "\dayz_equip\models\key_yellow.p3d";
 		picture = "\dayz_equip\textures\equip_key_CA_yellow.paa";
+		scope = 2;
 	};
 	class ItemKeyRed: ItemKey {
 		displayname = "Red Key";
 		model = "\dayz_equip\models\key_red.p3d";
 		picture = "\dayz_equip\textures\equip_key_CA_red.paa";
+		scope = 2;
 	};
 
 	class ItemKeyGreen1: ItemKeyGreen {
