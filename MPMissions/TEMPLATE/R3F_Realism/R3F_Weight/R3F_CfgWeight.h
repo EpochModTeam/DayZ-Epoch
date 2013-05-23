@@ -1649,7 +1649,32 @@ class CfgWeight
 		{
 			weight = 2;
 		};
-
+		
+		class ItemTrout
+		{
+			weight = 1;
+		};
+		class ItemTroutCooked
+		{
+			weight = 1;
+		};
+		class ItemSeaBass
+		{
+			weight = 6;
+		};
+		class ItemSeaBassCooked
+		{
+			weight = 5;
+		};
+		class ItemTuna
+		{
+			weight = 27;
+		};
+		class ItemTunaCooked
+		{
+			weight = 25;
+		};
+		
 		class 30m_plot_kit 
 		{
 			weight = 0.02;
