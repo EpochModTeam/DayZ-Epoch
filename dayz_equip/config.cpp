@@ -2780,7 +2780,7 @@ class CfgMagazines
 		displayName = "Rainbow Trout (Cooked)";
 		descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
 		model = "\dayz_equip\models\trout_cooked.p3d";
-		picture = "\dayz_equip\textures\equip_rainbowtrout_cooked_CA.paa";
+		picture = "\dayz_equip\textures\equip_trout_cooked_CA.paa";
 		bloodRegen = 800;
 	};
 	class ItemSeaBassCooked : FoodEdible {
@@ -2934,7 +2934,7 @@ class CfgVehicles
 	  destrType = "DestructTent"; 
 	  armor = 100; 
 	  GhostPreview = "Fort_RazorWirePreview"; 
-	}
+	};
 
 	class Sandbag1_DZ: BuiltItems
 	{

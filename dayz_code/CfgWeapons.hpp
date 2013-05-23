@@ -10,8 +10,12 @@ class CfgWeapons {
 			libtextdesc = "Debug Map - Admin use only";
 		};
 	};
-	class ItemSmeltingKit: ItemCore {
-		displayname = "Smelting Kit";
+	class ItemKeyKit: ItemCore {
+		scope = 2;
+		displayname = "Keymakers kit";
+		model="\dayz_equip\models\keykit.p3d";
+		descriptionShort="Kit including the tools required to smelt, mold and shape keys.";
+		picture="\dayz_equip\textures\equip_keykit_ca.paa";
 	};
 	class ItemAnvil: ItemCore {
 		displayname = "Anvil";
@@ -298,6 +302,14 @@ class CfgWeapons {
 		displayname = "Black Key";
 		keyid = 0;
 		scope = 2;
+		class ItemActions
+		{
+			class Toolbelt
+			{
+				text="Make Copy";
+				script="spawn player_copyKey;";
+			};
+		};
 	};
 	class ItemKeyBlack: ItemKey {
 		keyid = 0;

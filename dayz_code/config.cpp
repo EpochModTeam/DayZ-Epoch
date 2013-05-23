@@ -584,7 +584,8 @@ class CfgBuildingLoot {
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
-			{"ItemTankTrap","magazine"}
+			{"ItemTankTrap","magazine"},
+			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
 			0.005,
@@ -603,7 +604,8 @@ class CfgBuildingLoot {
 			0.07,
 			0.06,
 			0.01,
-			0.04
+			0.04,
+			0.005
 		};
 	};
 	class Farm: Default {
@@ -680,7 +682,8 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
 			{ "PartWoodPile","magazine" },
-			{"MR43","weapon"}
+			{"MR43","weapon"},
+			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
 			0.15,
@@ -710,7 +713,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.05,
 			0.02,
-			0.01
+			0.01,
+			0.005
 		};
 	};
 	class HeliCrash: Default {
@@ -1591,7 +1595,7 @@ class HeliCrash_No50s: Default {
 	{
 		maxRoaming = 1;
 		lootPos[] = {{-0.582031,1.65479,1.35687},{0.116211,0.839355,1.39404},{-0.0498047,1.93262,1.3551}};
-	}	
+	};
 	class Land_Shed_W03_EP1: Residential
 	{
 		maxRoaming = 3;
