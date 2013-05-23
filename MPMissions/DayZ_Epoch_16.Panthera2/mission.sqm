@@ -1344,7 +1344,7 @@ class Mission
 		{
 			position[]={3990.0601,58.092819,6156.1484};
 			name="NeutralWeapons/Ammo/Medic";
-			text="Kopa Neutral Camp";
+			text="Kopa Weapons/Ammo/Medical";
 			type="mil_circle";
 			colorName="ColorOrange";
 		};
@@ -1358,7 +1358,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={9057.3877,9.2987309,4091.7383};
+			position[]={9059.6152,9.2987309,4059.9512};
 			name="HeroVehicles";
 			text="Darren's Hero Vehicles";
 			type="mil_dot";
@@ -1366,7 +1366,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={2974.0906,4.3596339,3368.0342};
+			position[]={2920.1094,4.3596339,3339.9177};
 			name="Medic/Vehicles";
 			text="Kypex and Perry's Vehicles/Medical";
 			type="mil_dot";
@@ -1390,20 +1390,13 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={7224.0186,8.2730865,726.9519};
-			name="WholesalerSouth";
-			text="East's Wholesale";
-			type="Empty";
-		};
-		class Item22
-		{
 			position[]={7944.0186,7.1507893,4807.3774};
 			name="NeutralCars";
 			text="Brians Vehicles";
 			type="mil_dot";
 			colorName="ColorOrange";
 		};
-		class Item23
+		class Item22
 		{
 			position[]={8938.6816,1.3595574,4795.3315};
 			name="Boats";
@@ -1411,7 +1404,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorBlue";
 		};
-		class Item24
+		class Item23
 		{
 			position[]={8687.3086,7.7843323,3137.5818};
 			name="FriendlyRepair/FoodDrink";
@@ -1419,13 +1412,21 @@ class Mission
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item25
+		class Item24
 		{
 			position[]={4426.6914,20.192377,1630.2759};
 			name="NeutralGeneral/Building";
 			text="Bertha and Rocky's General/Building Supplies";
 			type="mil_circle";
 			colorName="ColorOrange";
+		};
+		class Item25
+		{
+			position[]={7224.3823,8.2689209,727.15576};
+			name="WholesaleSouth";
+			text="South's Wholesaler";
+			type="mil_dot";
+			colorName="ColorBlack";
 		};
 	};
 };

@@ -27,7 +27,6 @@ class Mission
 		"ibr_lcivilian_patch",
 		"chn_crocodile",
 		"warfarebuildings",
-		"ibr_lingor",
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
@@ -43,8 +42,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="lingor DayZ Epoch";
-		briefingDescription="lingor DayZ Epoch Private Server";
+		briefingName="Lingor DayZ Epoch";
+		briefingDescription="Lingor DayZ Epoch Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
@@ -1259,7 +1258,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=35;
+		items=36;
 		class Item0
 		{
 			position[]={4078.8516,30.836605,4757.7241};
@@ -1514,6 +1513,14 @@ class Mission
 			name="Doctor2";
 			text="Mad Scientist";
 			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item35
+		{
+			position[]={8938.207,36.614342,7179.0684};
+			name="BlackMarket";
+			text="Jeeves Black Market";
+			type="hd_flag";
 			colorName="ColorRed";
 		};
 	};

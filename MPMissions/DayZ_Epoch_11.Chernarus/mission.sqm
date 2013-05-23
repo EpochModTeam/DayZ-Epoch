@@ -14,7 +14,7 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac", 
+		"csj_gyroac"
 	};
 	addOnsAuto[]=
 	{
@@ -1168,7 +1168,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=15;
+		items=14;
 		class Item0
 		{
 			position[]={7550.6182,361.05222,8371.957};
@@ -1229,21 +1229,13 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={9772.5752,1.8273382,1763.3428};
-			name="boatsnwholesale";
-			text="Wholesaler";
-			type="mil_dot";
-			colorName="ColorRed";
-		};
-		class Item10
-		{
 			position[]={6345.6113,306.13721,7808.5073};
 			name="Tradercitystary";
 			text="Trader City Stary";
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item11
+		class Item10
 		{
 			position[]={4394.2061,10.050329,2247.9697};
 			name="boatsnwholesale_1";
@@ -1251,7 +1243,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item12
+		class Item11
 		{
 			position[]={13528.172,6.3179522,6331.1582};
 			name="boatsnwholesale_1_1";
@@ -1259,7 +1251,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item13
+		class Item12
 		{
 			position[]={12466.402,159,12524.384};
 			name="Airplane Dealer";
@@ -1267,7 +1259,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
-		class Item14
+		class Item13
 		{
 			position[]={13404.516,1.8943386,2836.1069};
 			name="Boat Dealer";

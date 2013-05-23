@@ -34,7 +34,7 @@ menu_GUE_Commander = [
 menu_Tanny_PMC = [
 	[["Ammunition",402],["Weapons",403],["Clothes",404],["Vehicles",405],["Safes",406]],
 	[],
-	"friendly"
+	"hero"
 ];
 // Roberts Ammo
 menu_BAF_Soldier_AMG_W = [
@@ -64,7 +64,7 @@ menu_GUE_Soldier_1 = [
 menu_BAF_Pilot_MTP = [
 	[["Vehicles",424],["Attack Choppers",425]],
 	[],
-	"friendly"
+	"hero"
 ];
 // Green's Air Vehicles
 menu_GUE_Soldier_Sab = [
