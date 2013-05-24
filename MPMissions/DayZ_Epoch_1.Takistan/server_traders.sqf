@@ -1,21 +1,20 @@
 // DayZ Epoch TRADERS for 1
-serverTraders = ["Functionary1","RU_Profiteer3","Profiteer1","RU_Sportswoman5","TK_CIV_Takistani05_EP1","Dr_Annie_Baker_EP1","Woodlander2","TK_CIV_Takistani03_EP1","TK_CIV_Takistani06_EP1","TK_CIV_Takistani04_EP1","TK_CIV_Woman03_EP1","TK_CIV_Woman02_EP1","RU_Profiteer2","TK_CIV_Takistani02_EP1","RU_Damsel4","RU_Woodlander3","RU_Citizen4","RU_Pilot"];
-// START PER TRADER CONFIG
+serverTraders = ["Functionary1","RU_Profiteer3","Profiteer1","RU_Sportswoman5","TK_CIV_Takistani05_EP1","Dr_Annie_Baker_EP1","Woodlander2","TK_CIV_Takistani03_EP1","TK_CIV_Takistani06_EP1","TK_CIV_Takistani04_EP1","TK_CIV_Woman03_EP1","TK_CIV_Woman02_EP1","RU_Profiteer2","TK_CIV_Takistani02_EP1","RU_Damsel4","RU_Woodlander3","RU_Citizen4","RU_Pilot","TK_GUE_Soldier_Sniper_EP1"];
 // Hero Traders
 menu_Functionary1 = [
-	[["Clothes",130],["Weapons",131],["Vehicles",132]],
+	[["Clothes",130],["Weapons",131],["Vehicles",132],["Ammunition",458]],
 	[],
 	"friendly"
 ];
 // High End Weapons - Khush
 menu_RU_Profiteer3 = [
-	[["Assault Rifle",133],["Machine Gun",134],["Sniper Rifle",135],["Explosives",136]],
+	[["Assault Rifle",133],["Machine Gun",134],["Sniper Rifle",135],["Explosives",136],["Sub Machine Guns",380],["Pistols",384]],
 	[],
 	"neutral"
 ];
 // High End Ammo - Khush
 menu_Profiteer1 = [
-	[["Assault Rifle Ammo",137],["Machine Gun Ammo",138],["Sniper Rifle Ammo",139]],
+	[["Assault Rifle Ammo",137],["Machine Gun Ammo",138],["Sniper Rifle Ammo",139],["SMG Ammo",381],["Pistol Ammo",385]],
 	[],
 	"neutral"
 ];
@@ -51,13 +50,13 @@ menu_TK_CIV_Takistani03_EP1 = [
 ];
 // Weapons Trader - Nur
 menu_TK_CIV_Takistani06_EP1 = [
-	[["Sidearm",157],["Rifles",158],["Shotguns and Crossbows",159]],
+	[["Sidearm",157],["Rifles",158],["Shotguns and Crossbows",159],["Sniper Rifles",382]],
 	[],
 	"friendly"
 ];
 // Ammo Trader - Nur
 menu_TK_CIV_Takistani04_EP1 = [
-	[["Sidearm Ammo",160],["Rifle Ammo",161],["Shotgun and Crossbow Ammo",162]],
+	[["Sidearm Ammo",160],["Rifle Ammo",161],["Shotgun and Crossbow Ammo",162],["Sniper Ammo",383]],
 	[],
 	"friendly"
 ];
@@ -106,6 +105,12 @@ menu_RU_Citizen4 = [
 // Airplane Dealer
 menu_RU_Pilot = [
 	[["Airplanes",185]],
+	[],
+	"neutral"
+];
+// Apu Nahasapeemapetilon Black Market
+menu_TK_GUE_Soldier_Sniper_EP1 = [
+	[["Black Market Weapons",459],["Black Market Ammo",460]],
 	[],
 	"neutral"
 ];
