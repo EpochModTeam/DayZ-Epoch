@@ -41,16 +41,16 @@ if (_finished) then {
 	_unit setVariable["LastTransfusion",time,true];
 	_unit setVariable["USEC_lowBlood",false,true];
 	player removeMagazine "ItemBloodbag";	
-	
-	//disableSerialization;
-	//call dayz_forceSave;
 
-	//["usecTransfuse",[_unit,player]] call broadcastRpcCallAll;
-	usecTransfuse = [_unit,player];
-	publicVariable "usecTransfuse";
+	_num_removed = ([player,"ItemBloodbag"] call BIS_fnc_invRemove);
+	if(_num_removed == 1) then {
+		//["usecTransfuse",[_unit,player]] call broadcastRpcCallAll;
+		usecTransfuse = [_unit,player];
+		publicVariable "usecTransfuse";
 
-	//dayzHumanity = [player,100];
-	[player,100] call player_humanityChange;
+		//dayzHumanity = [player,100];
+		[player,100] call player_humanityChange;
+	};
 } else {
 	r_interrupt = false;
 	player switchMove "";

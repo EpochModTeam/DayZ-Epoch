@@ -34,19 +34,20 @@ while {r_doLoop} do {
 r_doLoop = false;
 
 if (_finished) then {
-	if (_unit == player) then {
-		//Self Healing
-		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
-	} else {
-		//dayzHumanity = [player,50];
-		[player,50] call player_humanityChange;
+	_num_removed = ([player,"ItemMorphine"] call BIS_fnc_invRemove);
+	if(_num_removed == 1) then {
+		if (_unit == player) then {
+			//Self Healing
+			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
+		} else {
+			//dayzHumanity = [player,50];
+			[player,50] call player_humanityChange;
+		};
+	
+		//["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
+		usecMorphine = [_unit,player];
+		publicVariable "usecMorphine";
 	};
-
-	player removeMagazine "ItemMorphine";
-
-	//["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
-	usecMorphine = [_unit,player];
-	publicVariable "usecMorphine";
 } else {
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;

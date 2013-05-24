@@ -112,8 +112,6 @@ if(!_cancel) then {
 
 		if(_removed == 1) then {
 
-			player removeMagazine _item;
-
 			//call dayz_forceSave;
 
 			_dir = round(direction player);	

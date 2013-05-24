@@ -136,7 +136,6 @@ if (_qty >= _qty_in) then {
 					
 					_obj = _obj select 0;
 
-
 					//check to make sure vehicle has no more than 75% average tire damage
 					_hitpoints = _obj call vehicle_getHitpoints;
 					_okToSell = true;

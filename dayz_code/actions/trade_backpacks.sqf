@@ -94,18 +94,18 @@ if (_qty >= _qty_in) then {
 			if(dayzTradeResult == "PASS") then {
 
 				if(_buy_o_sell == "buy") then {
-					for "_x" from 1 to _qty_in do {
-						player removeMagazine _part_in;
+
+					_num_removed = ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
+					if(_num_removed == _qty_in) then {
+						removeBackpack player;
+						player addBackpack _part_out;
 					};
-					removeBackpack player;
-					player addBackpack _part_out;
 				} else {
 					// Sell
+					removeBackpack player;
 					for "_x" from 1 to _qty_out do {
 						player addMagazine _part_out;
-					};	
-					removeBackpack player;
-					// player addBackpack _part_out;
+					};
 				};
 
 				cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
