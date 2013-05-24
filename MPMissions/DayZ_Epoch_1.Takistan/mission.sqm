@@ -17,7 +17,7 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac",
+		"csj_gyroac"
 	};
 	addOnsAuto[]=
 	{
@@ -1245,7 +1245,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			position[]={6622.5166,301.31479,6751.1309};
@@ -1370,6 +1370,14 @@ class Mission
 			name="Airplane Dealer";
 			text="Airplane Dealer";
 			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item19
+		{
+			position[]={537.67609,585.38116,10641.404};
+			name="BlackMarket";
+			text="Nagara Black Market";
+			type="hd_flag";
 			colorName="ColorRed";
 		};
 	};
