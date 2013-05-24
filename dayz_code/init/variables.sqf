@@ -30,6 +30,7 @@ meatraw = [
 	"ItemSeaBass",
 	"ItemTuna"
 ];
+exceptionsraw = ["ItemTuna"];
 meatcooked = [
     "FoodSteakCooked",
     "FoodmeatCooked",

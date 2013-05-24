@@ -22,7 +22,7 @@ if(_isNear == 0) exitWith {TradeInprogress = false; cutText ["Key crafting needs
 call gear_ui_init;
 
 // require one tin bar per key
-_hasTinBar = 	"ItemTinBar" in _magazinesPlayer;
+_hasTinBar = 	"ItemTinBar" in magazines player;
 if(!_hasTinBar) exitWith {TradeInprogress = false; cutText ["Key crafting requires a 1oz Tin Bar." , "PLAIN DOWN"]};
 
 player playActionNow "Medic";
@@ -53,16 +53,24 @@ while {r_doLoop} do {
 };
 r_doLoop = false;
 
-_num_removed = ([player,"ItemTinBar"] call BIS_fnc_invRemove);
+if(_finished) then {
 
-if(_finished and _num_removed == 1) then {
-	// output key to backpack if space
-	_create = _item;
-	_qty = 1;
-	_box = unitBackpack player;
-	_box addWeaponCargoGlobal [_create,_qty];
-	cutText ["Copied key has been added to your backpack." , "PLAIN DOWN"];
+	_num_removed = ([player,"ItemTinBar"] call BIS_fnc_invRemove);
+
+	if(_num_removed == 1) then {
+		// output key to backpack if space
+		_create = _item;
+		_qty = 1;
+		_box = unitBackpack player;
+		_box addWeaponCargoGlobal [_create,_qty];
+		cutText ["Copied key has been added to your backpack." , "PLAIN DOWN"];
+	} else {
+		cutText ["Canceled Key Crafting." , "PLAIN DOWN"];
+	};
 } else {
+	r_interrupt = false;
+	[objNull, player, rSwitchMove,""] call RE;
+	player playActionNow "stop";
 	cutText ["Canceled Key Crafting." , "PLAIN DOWN"];
 };
 TradeInprogress = false;

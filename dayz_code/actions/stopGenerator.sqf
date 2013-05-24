@@ -56,7 +56,6 @@ if (_finished) then {
 		// Stop generator
 		_vehicle setVariable ["GeneratorRunning", false,true];
 
-		// TODO: Add running sounds to generator
 		cutText ["Generator has been stopped.", "PLAIN DOWN"];
 	
 };

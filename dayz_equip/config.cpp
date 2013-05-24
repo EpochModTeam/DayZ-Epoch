@@ -1644,9 +1644,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Wooden Shack";
-		// TODO make custom model and icon
-		model = "\dayz_equip\models\woodPile.p3d";
-		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
+		model = "\dayz_equip\models\supply_crate.p3d";
+		picture = "\dayz_equip\textures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wooden Shack: A crafted object that holds some items/weapons/backpacks.";
 		class ItemActions {
 			class Build {
@@ -2117,8 +2116,7 @@ class CfgMagazines
 		fuelQuantity = 0;
 		type = 256;
 		displayName = "Fuel Barrel (Empty)";
-		// TODO add X to icon to represent empty barrel
-		picture = "\dayz_equip\textures\equip_oil_drum_model_ca.paa";
+		picture = "\dayz_equip\textures\equip_oildrum_e_CA.paa";
 		descriptionShort = "210 litres of fuel per barrel (Empty)";
 	};
 	class ItemJerrycan: CA_Magazine

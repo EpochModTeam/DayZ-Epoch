@@ -13,6 +13,7 @@ _itemorignal = _this;
 _hasfooditem = _itemorignal in magazines player;
 
 _rawfood = _itemorignal in meatraw;
+_rawexceptions = _itemorignal in exceptionsraw;
 _cookedfood = _itemorignal in meatcooked;
 _hasoutput = _itemorignal in food_with_output;
 
@@ -53,12 +54,12 @@ if (_hasoutput) then{
     _item addMagazineCargoGlobal [_itemtodrop,1];
 };
 
-if ( _rawfood and (random 15 < 1)) then {
+if (_rawfood and !_rawexceptions and (random 15 < 1)) then {
 	r_player_infected = true;
 	player setVariable["USEC_infected",true,true];
 };
 
-if ( _badfood and (random 2 < 1)) then {
+if (_badfood and (random 2 < 1)) then {
 	r_player_infected = true;
 	player setVariable["USEC_infected",true,true];
 };
