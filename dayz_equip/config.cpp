@@ -3027,6 +3027,7 @@ class CfgVehicles
 	class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
 	{
 		armor = 300;
+		destrType = "DestructNo";
 		scope = 2;
 		offset[] = {0,5,0};
 		displayName = "Desert Camo Net";
@@ -3037,6 +3038,7 @@ class CfgVehicles
 	class ForestCamoNet_DZ: Land_CamoNet_EAST
 	{
 		armor = 300;
+		destrType = "DestructNo";
 		scope = 2;
 		offset[] = {0,5,0};
 		displayName = "Forest Camo Net";
@@ -3047,6 +3049,7 @@ class CfgVehicles
 	class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
 	{
 		armor = 300;
+		destrType = "DestructNo";
 		scope = 2;
 		offset[] = {0,9,0};
 		displayName = "Large Desert Camo Net";
@@ -3057,6 +3060,7 @@ class CfgVehicles
 	class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
 	{
 		armor = 300;
+		destrType = "DestructNo";
 		scope = 2;
 		offset[] = {0,9,0};
 		displayName = "Large Forest Camo Net";
