@@ -61,22 +61,27 @@ if (_section and _hasToolbox) then {
 		//dont waste loot on undamaged parts
 		if (_damage > 0) then {
 		
-			player removeMagazine _part;
+			// ensure part was removed
+			_num_removed = ([player,_part] call BIS_fnc_invRemove);
 
-			//Fix the part
-			_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
+			if(_num_removed == 1) then {
+
+				//Fix the part
+				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 		
-			//vehicle is owned by whoever is in it, so we have to have each client try and fix it
-			dayzSetFix = [_vehicle,_selection,0];
-			publicVariable "dayzSetFix";
-			if (local _vehicle) then {
-				dayzSetFix call object_setFixServer;
+				//vehicle is owned by whoever is in it, so we have to have each client try and fix it
+				dayzSetFix = [_vehicle,_selection,0];
+				publicVariable "dayzSetFix";
+				if (local _vehicle) then {
+					dayzSetFix call object_setFixServer;
+				};
+
+				_vehicle setvelocity [0,0,1];
+
+				//Success!
+				cutText [format["You have successfully attached %1 to the %2",_namePart,_nameType], "PLAIN DOWN"];
+
 			};
-
-			_vehicle setvelocity [0,0,1];
-
-			//Success!
-			cutText [format["You have successfully attached %1 to the %2",_namePart,_nameType], "PLAIN DOWN"];
 		
 		};
 
