@@ -1168,7 +1168,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			position[]={7550.6182,361.05222,8371.957};
@@ -1266,6 +1266,14 @@ class Mission
 			text="Boat Dealer";
 			type="mil_dot";
 			colorName="ColorOrange";
+		};
+		class Item14
+		{
+			position[]={12945.273,209.10101,12751.496};
+			name="BlackMarket";
+			text="Olsha Black Market";
+			type="hd_flag";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
