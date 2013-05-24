@@ -1009,8 +1009,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Canvas";
-		model = "\dayz_equip\models\cloth_parcel.p3d";
-		picture = "\dayz_equip\textures\equip_cloth_parcel_ca.paa";
+		model = "\dayz_equip\models\canvas.p3d";
+		picture = "\dayz_equip\textures\equip_canvas_ca.paa";
 		descriptionShort = "Canvas Parcel";
 		class ItemActions
 		{
@@ -1067,8 +1067,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Burlap";
-		model = "\dayz_equip\models\sandbags.p3d";
-		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
+		model = "\dayz_equip\models\burlap.p3d";
+		picture = "\dayz_equip\textures\equip_burlap_ca.paa";
 		descriptionShort = "Burlap: A strong cloth like material used for building sandbags";
 		class ItemActions
 		{
