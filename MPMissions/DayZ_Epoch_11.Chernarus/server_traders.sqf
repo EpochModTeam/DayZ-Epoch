@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 11
-serverTraders = ["CIV_EuroMan01_EP1","Rocker4","Woodlander3","Woodlander1","RU_WorkWoman1","RU_WorkWoman5","Rita_Ensler_EP1","CIV_EuroMan02_EP1","RU_Citizen3","Pilot_EP1","Worker3","Profiteer4","Dr_Hladik_EP1","Doctor","RU_Functionary1","RU_Villager3","TK_CIV_Takistani04_EP1","RU_Citizen4","RU_Citizen1","Worker2"];
+serverTraders = ["CIV_EuroMan01_EP1","Rocker4","Woodlander3","Woodlander1","RU_WorkWoman1","RU_WorkWoman5","Rita_Ensler_EP1","CIV_EuroMan02_EP1","RU_Citizen3","Pilot_EP1","Worker3","Profiteer4","Dr_Hladik_EP1","Doctor","RU_Functionary1","RU_Villager3","TK_CIV_Takistani04_EP1","RU_Citizen4","RU_Citizen1","Worker2","GUE_Soldier_MG"];
 // Weapons Trader - Bash
 menu_CIV_EuroMan01_EP1 = [
 	[["Sidearm",1],["Rifles",2],["Shotguns and Crossbows",3],["Sniper Rifles",370]],
@@ -86,7 +86,7 @@ menu_Doctor = [
 ];
 // Hero Traders
 menu_RU_Functionary1 = [
-	[["Clothes",53],["Weapons",186],["Vehicles",187]],
+	[["Clothes",53],["Weapons",186],["Vehicles",187],["Ammunition",457]],
 	[],
 	"friendly"
 ];
@@ -98,7 +98,7 @@ menu_RU_Villager3 = [
 ];
 // High End Weapons
 menu_TK_CIV_Takistani04_EP1 = [
-	[["Assault Rifle",57],["Machine Gun",58],["Sniper Rifle",59],["Explosives",60],["Sub Machine Guns",379]],
+	[["Assault Rifle",57],["Machine Gun",58],["Sniper Rifle",59],["Explosives",60],["Sub Machine Guns",379],["Pistols",454]],
 	[],
 	"neutral"
 ];
@@ -117,6 +117,12 @@ menu_RU_Citizen1 = [
 // Airplane Dealer
 menu_Worker2 = [
 	[["Airplanes",303]],
+	[],
+	"neutral"
+];
+// Black Market - Olsha
+menu_GUE_Soldier_MG = [
+	[["Black Market Weapons",455],["Black Market Ammo",456]],
 	[],
 	"neutral"
 ];
