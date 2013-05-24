@@ -1331,7 +1331,11 @@ class Citizen1;	// External class reference
 	
 	// This parent class is made to make referring to these objects easier later with allMissionObjects
 	class SpawnableWreck : House {};
-
+	class Mass_grave;
+	class Mass_grave_DZ: Mass_grave
+	{
+		displayName = "Mass Grave W/ Zombies";
+	};
 	class UH1Wreck_DZ: SpawnableWreck
 	{
 		model = "\ca\air2\UH1Y\UH1Y_Crashed.p3d";

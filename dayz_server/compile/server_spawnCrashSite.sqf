@@ -22,10 +22,10 @@ while {true} do {
 	_timeToSpawn = time + _frequency + _timeAdjust;
 	
 	//Adding some Random systems
-	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ","Mass_grave"] call BIS_fnc_selectRandom;
+	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ","Mass_grave_DZ"] call BIS_fnc_selectRandom;
 	
 	
-	if(_crashModel == "Mass_grave") then {
+	if(_crashModel == "Mass_grave_DZ") then {
 		_lootTable = "MassGrave";
 	} else {
 		//Crash loot just uncomment the one you wish to use by default with 50cals is enabled.
@@ -84,7 +84,7 @@ while {true} do {
 
 		_num = round(random _randomizedLoot) + _guaranteedLoot;
 
-		if(_crashModel == "Mass_grave") then {
+		if(_crashModel == "Mass_grave_DZ") then {
 			_spawnFire = false;
 			_num = _num * 2;
 		};

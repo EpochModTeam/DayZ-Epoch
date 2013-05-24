@@ -1467,9 +1467,12 @@ class HeliCrash_No50s: Default {
 
 	
 	// DAYZ AMP More buildings
-	class Mass_grave: HouseRoaming {	
+	class Mass_grave_DZ: HouseRoaming {	
+		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3","z_doctor","z_soldier_pilot","z_soldier_heavy"};
 		minRoaming = 8;
 		maxRoaming = 16;
+		lootChance = 1;
+		zombieChance = 1;
 	};
 	class Land_Shed_W02_EP1: FarmRoaming{};
 	class Land_MBG_ApartmentsOne_W: HouseRoaming{};
@@ -1749,61 +1752,125 @@ class HeliCrash_No50s: Default {
 	};
 	
 	class MassGrave: Default {
-		zombieChance = 0.3;
+		zombieChance = 1;
 		maxRoaming = 3;
-		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3"};
-		lootChance = 0.5;
+		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3","z_doctor","z_soldier_pilot","z_soldier_heavy"};
+		lootChance = 1;
 		lootPos[] = {};
 		itemType[] = {
-			{ "ItemWatch","generic" },
-			{ "ItemCompass","generic" },
-			{ "ItemMap","weapon" },
-			{ "Makarov","weapon" },
-			{ "MakarovSD","weapon" },
-			{ "Colt1911","weapon" },
-			
-			{ "ItemKnife","generic" },
-			{ "ItemMatchbox","generic" },
-			{ "ItemToolbox","weapon" },
-			
-			{ "WeaponHolder_ItemJerrycanEmpty","object" },
+			{ "M16A2","weapon" },
+			{ "M16A2GL","weapon" },
+			{ "M249_DZ","weapon" },
+			{ "M9SD","weapon" },
+			{ "Pecheneg_DZ","weapon"},
+			{ "AK_74","weapon" },
+			{ "M4A1_Aim","weapon" },
+			{ "AKS_74_kobra","weapon" },
+			{ "AKS_74_U","weapon" },
+			{ "AK_47_M","weapon" },
+			{ "M24","weapon" },
+			{ "SVD_CAMO","weapon" },
+			{ "M1014","weapon" },
+			{ "M107_DZ","weapon" },
+			{ "DMR","weapon" },
+			{ "M4A1","weapon" },
+			{ "M14_EP1","weapon" },
+			{ "UZI_EP1","weapon" },
+			{ "Remington870_lamp","weapon" },
+			{ "glock17_EP1","weapon" },
+			{ "M240_DZ","weapon" },
+			{ "M4A1_AIM_SD_camo","weapon" },
+			{ "M16A4_ACG","weapon" },
+			{ "M4A1_HWS_GL_camo","weapon" },
+			{ "Mk_48_DZ","weapon" },
+			{ "M4A3_CCO_EP1","weapon" },
+			//Ammo
+			{ "AmmoBoxSmall_556","object" },
+			{ "AmmoBoxSmall_762","object" },
+
+			//{"NVGoggles","weapon"},
+			{ "Binocular","weapon" },
+			{ "ItemFlashlightRed","military" },
+			{ "ItemKnife","military" },
+			{ "ItemGPS","weapon" },
+			{ "ItemMap","military" },
+			{ "Binocular_Vector","military" },
+
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
+			{"DZ_CivilBackpack_EP1","object"}, // 24
+			{"DZ_Backpack_EP1","object"}, // 30		
+			{"DZ_LargeGunBag_EP1","object"}, // 45
+
+			{ "","medical" },
 			{ "","generic" },
-			{ "huntingrifle","weapon" },
-			{ "LeeEnfield","weapon" },
-			{ "Winchester1866","weapon" },
-			{ "","trash" },
-			{"Crossbow_DZ","weapon"},
-			{ "PartWoodPile","magazine" },			
-			{ "WeaponHolder_ItemHatchet","object" },
-			{ "MR43","weapon" },
+			{ "","military" },
+			//{"Body","object"},
+			{"PipeBomb","magazine"},
+			{"Sa58V_RCO_EP1","weapon"},
+			{"Sa58V_CCO_EP1","weapon"},
+			{"G36_C_SD_camo","weapon"},
+			{"M40A3","weapon"},
+			{"100Rnd_762x54_PK","magazine"},
+			{ "","militaryclothes" },
 			{"WeaponHolder_ItemMachete", "object"},
-			{ "20Rnd_762x51_SB_SCAR","magazine" },
 			{ "SCAR_H_LNG_Sniper_SD","weapon" },
-			
 	};
 		itemChance[] =	{
-			0.06,
-			0.08,
+			0.10,
 			0.05,
-			0.06,
+			0.01,
+			0.02,
+			0.01, //PKP
+			0.10,
+			0.02,
+			0.10,
+			0.10,
+			0.10,
+			0.01,
+			0.01,
+			0.20,
+			0.01,
+			0.02,
+			0.10,
 			0.03,
-			0.08,
-			
-			0.05,
-			0.06,
-			0.08,
-			
-			0.06,
-			0.28,
+			0.20,
+			0.10,
+			0.20,
 			0.01,
 			0.04,
+			0.05,
+			0.02,
+			0.01,
+			0.08,
+			0.04,
+			0.02,
+			//0.01, //NVGoggles
+			0.10,
+			0.05,
+			0.15,
+			0.01, //ItemGPS
 			0.03,
-			0.22,
-			0.03,
-			0.11,
-			0.17,
-			0.06,
-			0.03,
+			0.01,
+			//Bags
+			0.08, //16
+			0.08, //16
+			0.06, //18
+			0.01, //24
+			0.01, //DZ_Backpack_EP1 24
+			0.01, //45
+			0.30,
+			1.00,
+			5.00, //military
+			//0.20,
+			0.01, //PipeBomb
+			0.01, //Sa58V_RCO_EP1
+			0.01, //Sa58V_CCO_EP1
+			0.01, //{"G36_C_SD_camo","weapon"},
+			0.02, // M40A3
+			0.01, //("100Rnd_762x54_PK","magazine"}
+			0.05, // militaryclothes
 			0.03,
 			0.01
 		};
