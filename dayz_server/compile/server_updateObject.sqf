@@ -25,12 +25,7 @@ if (!_parachuteWest) then {
 	if (_objectID == "0" && _uid == "0") then
 	{
 		_object_position = getPosATL _object;
-    	diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",
-		typeOf _object,
-		_object_position select 0,
-		_object_position select 1, 
-		_object_position select 2]);
-		_isNotOk = true;
+    	_isNotOk = true;
 
 		// Loop to wait it out
 		_counter = _object getVariable ["markedForRemoval",0];
@@ -41,7 +36,7 @@ if (!_parachuteWest) then {
 };
 
 if (_isNotOk and _removeCounter < 10) exitWith { diag_log(format["About to remove vehicle: %1 - %2 / 10", typeOf _object, _removeCounter]); };
-if (_isNotOk and _removeCounter >= 10) exitWith { deleteVehicle _object; };
+if (_isNotOk and _removeCounter >= 10) exitWith { deleteVehicle _object; diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",typeOf _object,_object_position select 0,_object_position select 1, _object_position select 2]); };
 
 
 _lastUpdate = _object getVariable ["lastUpdate",time];

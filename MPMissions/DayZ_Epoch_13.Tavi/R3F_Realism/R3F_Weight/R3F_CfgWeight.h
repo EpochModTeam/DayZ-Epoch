@@ -1208,15 +1208,15 @@ class CfgWeight
 		{
 			weight = 1;
 		};
-		class MeleeFishingPole  
+		class MeleeMachete  
+		{
+			weight = 1;
+		};
+		class MeleeMachete  
 		{
 			weight = 1;
 		};
 		class ItemHatchet  
-		{
-			weight = 1;
-		};
-		class ItemFishingPole  
 		{
 			weight = 1;
 		};
@@ -1434,7 +1434,11 @@ class CfgWeight
 		{
 			weight = 0;
 		};
-		class Crowbar_Swing 
+		class Fishing_Swing 
+		{
+			weight = 0;
+		};
+		class Crowbar_Swing
 		{
 			weight = 0;
 		};
@@ -1645,7 +1649,32 @@ class CfgWeight
 		{
 			weight = 2;
 		};
-
+		
+		class ItemTrout
+		{
+			weight = 1;
+		};
+		class ItemTroutCooked
+		{
+			weight = 1;
+		};
+		class ItemSeaBass
+		{
+			weight = 6;
+		};
+		class ItemSeaBassCooked
+		{
+			weight = 5;
+		};
+		class ItemTuna
+		{
+			weight = 27;
+		};
+		class ItemTunaCooked
+		{
+			weight = 25;
+		};
+		
 		class 30m_plot_kit 
 		{
 			weight = 0.02;

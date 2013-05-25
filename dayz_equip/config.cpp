@@ -2670,8 +2670,8 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "Safe";
-		model = "\dayz_equip\models\safe1_onside.p3d";
-		picture = "\dayz_equip\textures\equip_safe_ca.paa";
+		model = "\dayz_equip\models\safe2_onside.p3d";
+		picture = "\dayz_equip\textures\equip_safe2_ca.paa";
 		descriptionShort = "Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!";
 		class ItemActions
 		{
@@ -3391,7 +3391,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Safe";
-		model = "\dayz_equip\models\safe1.p3d";
+		model = "\dayz_equip\models\safe2.p3d";
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgMagazines','ItemVault'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
@@ -3585,7 +3585,7 @@ class CfgVehicles
 	{
 		vehicleClass = "Survival";
 		displayName = "Safe";
-		model = "\dayz_equip\models\safe1.p3d";
+		model = "\dayz_equip\models\safe2.p3d";
 		destrType = "DestructNo";
 		armor = 800;
 		transportMaxMagazines = 200;
@@ -3596,7 +3596,7 @@ class CfgVehicles
 	{
 		vehicleClass = "Survival";
 		displayName = "Locked Safe";
-		model = "\dayz_equip\models\safe1.p3d";
+		model = "\dayz_equip\models\safe2.p3d";
 		destrType = "DestructNo";
 		armor = 800;
 		transportMaxMagazines = 0;

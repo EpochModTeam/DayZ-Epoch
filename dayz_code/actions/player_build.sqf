@@ -46,7 +46,7 @@ if(_IsNearPlot == 0) then {
 	// Find owner 
 	_ownerID = _nearestPole getVariable["CharacterID","0"];
 
-	diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
+	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
 	// check if friendly to owner
 	if(dayz_characterID == _ownerID) then {
@@ -143,6 +143,8 @@ if (_hasrequireditem) then {
 
 	// Start Build 
 	_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+
+	_tmpbuilt setVariable ["ObjectID",1,true];
 	
 	_dir = getDir player;
 	_tmpbuilt setdir _dir;
@@ -252,7 +254,7 @@ if (_hasrequireditem) then {
 	
 				//["dayzPublishObj",[dayz_characterID,_tmpbuilt,[_dir,_location],_classname]] call callRpcProcedure;
 				dayzPublishObj = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
-				publicVariableServer "dayzPublishObj";				
+				publicVariableServer "dayzPublishObj";
 
 			} else {
 				deleteVehicle _tmpbuilt;

@@ -1,5 +1,5 @@
 /*
-DayZ Epoch 1.0.1 RC1
+DayZ Epoch 1.0.1 RC2
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -8,7 +8,7 @@ SET FOREIGN_KEY_CHECKS=0;
 -- Table structure for `character_data`
 -- ----------------------------
 
-CREATE TABLE `character_data` (
+CREATE TABLE IF NOT EXISTS `character_data` (
   `CharacterID` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `PlayerUID` varchar(20) NOT NULL DEFAULT '0',
   `InstanceID` int(11) NOT NULL DEFAULT '0',
@@ -44,8 +44,7 @@ CREATE TABLE `character_data` (
 -- ----------------------------
 -- Table structure for `object_data`
 -- ----------------------------
-
-CREATE TABLE `object_data` (
+CREATE TABLE IF NOT EXISTS `object_data` (
   `ObjectID` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `ObjectUID` bigint(24) NOT NULL DEFAULT '0',
   `Instance` int(11) unsigned NOT NULL,
@@ -70,7 +69,7 @@ CREATE TABLE `object_data` (
 -- Table structure for `player_data`
 -- ----------------------------
 
-CREATE TABLE `player_data` (
+CREATE TABLE IF NOT EXISTS `player_data` (
   `PlayerUID` varchar(20) NOT NULL DEFAULT '0',
   `PlayerName` varchar(128) CHARACTER SET utf8 NOT NULL DEFAULT 'Null',
   `PlayerMorality` int(11) NOT NULL DEFAULT '0',
@@ -86,7 +85,7 @@ CREATE TABLE `player_data` (
 -- Table structure for `player_login`
 -- ----------------------------
 
-CREATE TABLE `player_login` (
+CREATE TABLE IF NOT EXISTS `player_login` (
   `LoginID` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `PlayerUID` varchar(20) NOT NULL,
   `CharacterID` int(11) unsigned NOT NULL DEFAULT '0',
@@ -111,7 +110,7 @@ CREATE TABLE `server_traders` (
   `static` text,
   `desc` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of server_traders
@@ -256,6 +255,7 @@ INSERT INTO `server_traders` VALUES ('138', 'RU_Farmwife1', '16', 'neutral', '',
 INSERT INTO `server_traders` VALUES ('139', 'Citizen2_EP1', '16', 'neutral', '', 'Rocky\'s Parts/Building Supplies');
 INSERT INTO `server_traders` VALUES ('140', 'CIV_Contractor1_BAF', '6', 'neutral', '', 'Jeeves');
 INSERT INTO `server_traders` VALUES ('141', 'GUE_Soldier_MG', '11', 'neutral', '', 'Black Market - Olsha');
+INSERT INTO `server_traders` VALUES ('142', 'TK_GUE_Soldier_Sniper_EP1', '1', 'neutral', '', 'Apu Nahasapeemapetilon Black Market');
 
 -- ----------------------------
 -- Table structure for `traders_data`
@@ -271,7 +271,7 @@ CREATE TABLE `traders_data` (
   `tid` int(8) NOT NULL COMMENT 'Trader Menu ID',
   `afile` varchar(64) NOT NULL DEFAULT 'trade_items',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4652 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4817 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of traders_data
@@ -279,35 +279,31 @@ CREATE TABLE `traders_data` (
 INSERT INTO `traders_data` VALUES ('1351', '[\"ItemJerrycan\",1]', '11', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '11', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1352', '[\"ItemJerrycanEmpty\",1]', '13', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '11', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1353', '[\"Skoda\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1354', '[\"hilux1_civil_3_open_EP1\",2]', '9', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '35', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('1354', '[\"hilux1_civil_3_open_EP1\",2]', '8', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '35', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1355', '[\"SUV_TK_CIV_EP1\",2]', '0', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '36', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1356', '[\"S1203_TK_CIV_EP1\",2]', '0', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '37', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1357', '[\"MMT_Civ\",2]', '0', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '38', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1358', '[\"Mi17_Civilian_DZ\",2]', '74', '[4,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '39', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('1358', '[\"Mi17_Civilian_DZ\",2]', '75', '[4,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '39', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1359', '[\"HMMWV_Ambulance\",2]', '24', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '40', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1370', '[\"ItemJerrycan\",1]', '25', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1370', '[\"ItemJerrycan\",1]', '24', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1376', '[\"ItemCompass\",3]', '23', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '15', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1392', '[\"HandGrenade_west\",1]', '84', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '60', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1392', '[\"HandGrenade_west\",1]', '87', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '60', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1401', '[\"PipeBomb\",1]', '10', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '136', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1415', '[\"UralRefuel_TK_EP1\",2]', '39', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1416', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '0', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1417', '[\"KamazRefuel\",2]', '44', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1418', '[\"MtvrRefuel_DES_EP1\",2]', '9', '[7,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1421', '[\"DZ_Backpack_EP1\",2]', '6', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '22', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('1421', '[\"DZ_Backpack_EP1\",2]', '5', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '22', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('1423', '[\"Binocular\",3]', '22', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1424', '[\"Binocular_Vector\",3]', '4', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1425', '[\"ItemCompass\",3]', '16', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1426', '[\"ItemEtool\",3]', '94', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '142', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1427', '[\"ItemFlashlight\",3]', '44', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '142', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1427', '[\"ItemFlashlight\",3]', '48', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1428', '[\"ItemFlashlightRed\",3]', '3', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1429', '[\"ItemGPS\",3]', '3', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1430', '[\"ItemHatchet\",3]', '8', '[8,\"ItemCopperBar\",1]', '[4,\"ItemCopperBar\",1]', '0', '142', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1431', '[\"ItemKnife\",3]', '10', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '142', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1431', '[\"ItemKnife\",3]', '11', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1433', '[\"ItemMatchbox\",3]', '2', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1434', '[\"M249_DZ\",3]', '11', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '58', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1435', '[\"M240_DZ\",3]', '11', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '58', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1436', '[\"ItemToolbox\",3]', '14', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '142', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1437', '[\"ItemWatch\",3]', '85', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '142', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1437', '[\"ItemWatch\",3]', '90', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1443', '[\"Smallboat_1\",2]', '3', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '54', 'trade_any_boat');
 INSERT INTO `traders_data` VALUES ('1444', '[\"Smallboat_2\",2]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '54', 'trade_any_boat');
 INSERT INTO `traders_data` VALUES ('1445', '[\"Zodiac\",2]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '54', 'trade_any_boat');
@@ -320,11 +316,11 @@ INSERT INTO `traders_data` VALUES ('1451', '[\"FoodCanFrankBeans\",1]', '42', '[
 INSERT INTO `traders_data` VALUES ('1453', '[\"Skin_CZ_Special_Forces_GL_DES_EP1_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1455', '[\"Skin_RU_Policeman_DZ\",1]', '26', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1456', '[\"Skin_Pilot_EP1_DZ\",1]', '61', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1457', '[\"ItemJerrycan\",1]', '13', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1457', '[\"ItemJerrycan\",1]', '19', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1458', '[\"ItemJerrycanEmpty\",1]', '5', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '144', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1459', '[\"PartEngine\",1]', '2', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1460', '[\"Skin_Drake_Light_DZ\",1]', '5', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1461', '[\"PartFueltank\",1]', '17', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1459', '[\"PartEngine\",1]', '5', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1460', '[\"Skin_Drake_Light_DZ\",1]', '3', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1461', '[\"PartFueltank\",1]', '19', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1468', '[\"Mk_48_DZ\",3]', '10', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '58', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1469', '[\"Skin_Rocker2_DZ\",1]', '15', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '20', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1470', '[\"Skin_SurvivorW2_DZ\",1]', '6', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '20', 'trade_items');
@@ -343,16 +339,16 @@ INSERT INTO `traders_data` VALUES ('1482', '[\"Ikarus\",2]', '8', '[1,\"ItemGold
 INSERT INTO `traders_data` VALUES ('1483', '[\"S1203_ambulance_EP1\",2]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '37', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1484', '[\"Ikarus_TK_CIV_EP1\",2]', '0', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '37', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1485', '[\"AH6X_DZ\",2]', '48', '[6,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '39', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1486', '[\"PartGeneric\",1]', '4', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1487', '[\"PartGlass\",1]', '11', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '144', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1486', '[\"PartGeneric\",1]', '8', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1487', '[\"PartGlass\",1]', '15', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '144', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1488', '[\"PartVRotor\",1]', '14', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1489', '[\"PartWheel\",1]', '31', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '144', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1490', '[\"PartWoodPile\",1]', '10', '[5,\"ItemCopperBar\",1]', '[2,\"ItemCopperBar\",1]', '0', '144', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1496', '[\"ItemAntibiotic\",1]', '168', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '146', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1496', '[\"ItemAntibiotic\",1]', '167', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '146', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1497', '[\"ItemBandage\",1]', '121', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '146', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1498', '[\"ItemBloodbag\",1]', '218', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '146', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1499', '[\"ItemEpinephrine\",1]', '122', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '146', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1500', '[\"ItemHeatPack\",1]', '4', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '146', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1500', '[\"ItemHeatPack\",1]', '6', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '146', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1501', '[\"ItemMorphine\",1]', '221', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '146', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1502', '[\"ItemPainkiller\",1]', '153', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '146', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1503', '[\"HandChemBlue\",1]', '6', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '147', 'trade_items');
@@ -360,8 +356,6 @@ INSERT INTO `traders_data` VALUES ('1504', '[\"HandChemGreen\",1]', '3', '[2,\"I
 INSERT INTO `traders_data` VALUES ('1505', '[\"HandRoadFlare\",1]', '12', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '147', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1506', '[\"SmokeShellGreen\",1]', '8', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '148', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1507', '[\"SmokeShellRed\",1]', '3', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '148', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1508', '[\"Pickup_PK_GUE\",2]', '0', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '149', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1509', '[\"Pickup_PK_INS\",2]', '0', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '149', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1512', '[\"UH1H_DZ\",2]', '0', '[6,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '151', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1513', '[\"CH_47F_EP1_DZ\",2]', '26', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '151', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1514', '[\"Mi17_DZ\",2]', '15', '[4,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '151', 'trade_any_vehicle');
@@ -372,29 +366,25 @@ INSERT INTO `traders_data` VALUES ('1518', '[\"ItemJerrycan\",1]', '10', '[4,\"I
 INSERT INTO `traders_data` VALUES ('1519', '[\"ItemJerrycanEmpty\",1]', '7', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '155', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1520', '[\"PartEngine\",1]', '6', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '155', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1521', '[\"PartFueltank\",1]', '4', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '155', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1522', '[\"PartGeneric\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '155', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1522', '[\"PartGeneric\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '155', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1523', '[\"PartGlass\",1]', '10', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '155', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1524', '[\"PartVRotor\",1]', '7', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '155', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1525', '[\"PartWheel\",1]', '31', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '155', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1526', '[\"PartWoodPile\",1]', '8', '[5,\"ItemCopperBar\",1]', '[2,\"ItemCopperBar\",1]', '0', '155', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1527', '[\"ItemSandbag\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '156', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1528', '[\"ItemTankTrap\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '156', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1529', '[\"AN2_DZ\",2]', '1', '[4,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '185', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1531', '[\"PartEngine\",1]', '9', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '11', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1531', '[\"PartEngine\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '11', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1532', '[\"PartEngine\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '129', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1533', '[\"PartFueltank\",1]', '1', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '129', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1537', '[\"PartEngine\",1]', '11', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1537', '[\"PartEngine\",1]', '9', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1538', '[\"PartFueltank\",1]', '12', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1539', '[\"ItemTent\",1]', '6', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '156', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1541', '[\"ItemWire\",1]', '8', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '156', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1557', '[\"PartVRotor\",1]', '8', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1559', '[\"ItemJerrycanEmpty\",1]', '7', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '7', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1562', '[\"PartWheel\",1]', '184', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1562', '[\"PartWheel\",1]', '182', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1563', '[\"Binocular\",3]', '7', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '165', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1564', '[\"Binocular_Vector\",3]', '8', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '165', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1565', '[\"PartGlass\",1]', '96', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '7', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1566', '[\"ItemCompass\",3]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '165', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1567', '[\"PartGeneric\",1]', '16', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1567', '[\"PartGeneric\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '7', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1568', '[\"ItemEtool\",3]', '3', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '165', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1569', '[\"ItemFlashlight\",3]', '30', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '165', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1570', '[\"ItemFlashlightRed\",3]', '3', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '165', 'trade_weapons');
@@ -408,8 +398,8 @@ INSERT INTO `traders_data` VALUES ('1577', '[\"ItemWatch\",3]', '40', '[2,\"Item
 INSERT INTO `traders_data` VALUES ('1578', '[\"NVGoggles\",3]', '15', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '165', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1579', '[\"NVGoggles\",3]', '147', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '142', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1581', '[\"PartWheel\",1]', '156', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '11', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1583', '[\"PartGlass\",1]', '39', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '11', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1584', '[\"PartGeneric\",1]', '20', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '11', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1583', '[\"PartGlass\",1]', '43', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '11', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1584', '[\"PartGeneric\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '11', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1585', '[\"ItemAntibiotic\",1]', '71', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '167', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1586', '[\"ItemBandage\",1]', '38', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '167', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1587', '[\"ItemBloodbag\",1]', '76', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '167', 'trade_items');
@@ -472,15 +462,10 @@ INSERT INTO `traders_data` VALUES ('1672', '[\"ItemJerrycan\",1]', '3', '[4,\"It
 INSERT INTO `traders_data` VALUES ('1673', '[\"ItemJerrycanEmpty\",1]', '10', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '177', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1674', '[\"PartEngine\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '177', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1675', '[\"PartFueltank\",1]', '11', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '177', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1676', '[\"PartGeneric\",1]', '4', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '177', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1676', '[\"PartGeneric\",1]', '4', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '177', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1677', '[\"PartGlass\",1]', '29', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '177', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1678', '[\"PartVRotor\",1]', '5', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '177', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1679', '[\"PartWheel\",1]', '24', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '177', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1680', '[\"ItemSandbag\",1]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '178', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1681', '[\"ItemTankTrap\",1]', '14', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '178', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1682', '[\"ItemTent\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '178', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1684', '[\"ItemWire\",1]', '11', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '178', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1685', '[\"PartWoodPile\",1]', '8', '[5,\"ItemCopperBar\",1]', '[2,\"ItemCopperBar\",1]', '0', '178', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1686', '[\"Binocular\",3]', '35', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '15', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1687', '[\"Binocular_Vector\",3]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '15', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1688', '[\"ItemEtool\",3]', '21', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '15', 'trade_weapons');
@@ -500,9 +485,9 @@ INSERT INTO `traders_data` VALUES ('1701', '[\"DZ_Czech_Vest_Puch\",2]', '2', '[
 INSERT INTO `traders_data` VALUES ('1702', '[\"ItemMatchbox\",3]', '10', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '15', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1703', '[\"DZ_Patrol_Pack_EP1\",2]', '2', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '180', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('1704', '[\"DZ_TK_Assault_Pack_EP1\",2]', '6', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '180', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('1705', '[\"ItemToolbox\",3]', '36', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '15', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1705', '[\"ItemToolbox\",3]', '35', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '15', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1706', '[\"ItemWatch\",3]', '131', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '15', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1707', '[\"NVGoggles\",3]', '11', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '15', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1707', '[\"NVGoggles\",3]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '15', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1708', '[\"Binocular\",3]', '18', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1709', '[\"Binocular_Vector\",3]', '5', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1710', '[\"ItemCompass\",3]', '8', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '19', 'trade_weapons');
@@ -511,18 +496,18 @@ INSERT INTO `traders_data` VALUES ('1712', '[\"ItemFlashlight\",3]', '34', '[1,\
 INSERT INTO `traders_data` VALUES ('1713', '[\"ItemFlashlightRed\",3]', '21', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1714', '[\"ItemGPS\",3]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1715', '[\"Binocular\",3]', '21', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '181', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1716', '[\"ItemHatchet\",3]', '18', '[8,\"ItemCopperBar\",1]', '[4,\"ItemCopperBar\",1]', '0', '19', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1716', '[\"ItemHatchet\",3]', '15', '[8,\"ItemCopperBar\",1]', '[4,\"ItemCopperBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1717', '[\"Binocular_Vector\",3]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '181', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1718', '[\"ItemKnife\",3]', '11', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1719', '[\"ItemCompass\",3]', '14', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '181', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1720', '[\"ItemEtool\",3]', '3', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '181', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1721', '[\"ItemMatchbox\",3]', '15', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1722', '[\"ItemFlashlight\",3]', '14', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '181', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1723', '[\"ItemToolbox\",3]', '27', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '19', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1723', '[\"ItemToolbox\",3]', '24', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1724', '[\"ItemFlashlightRed\",3]', '3', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '181', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1725', '[\"ItemWatch\",3]', '61', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1726', '[\"ItemGPS\",3]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '181', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1727', '[\"NVGoggles\",3]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '19', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1727', '[\"NVGoggles\",3]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '19', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1728', '[\"ItemHatchet\",3]', '4', '[8,\"ItemCopperBar\",1]', '[4,\"ItemCopperBar\",1]', '0', '181', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1729', '[\"ItemKnife\",3]', '12', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '181', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1730', '[\"Binocular\",3]', '49', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '23', 'trade_weapons');
@@ -542,16 +527,16 @@ INSERT INTO `traders_data` VALUES ('1744', '[\"ItemMap\",3]', '51', '[2,\"ItemSi
 INSERT INTO `traders_data` VALUES ('1745', '[\"ItemMatchbox\",3]', '16', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '23', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1746', '[\"ItemToolbox\",3]', '19', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '23', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1747', '[\"ItemWatch\",3]', '190', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '23', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('1748', '[\"NVGoggles\",3]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '23', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1748', '[\"NVGoggles\",3]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '23', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1749', '[\"ItemJerrycan\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '63', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1750', '[\"ItemJerrycanEmpty\",1]', '1', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '63', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1751', '[\"PartEngine\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '63', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1752', '[\"PartFueltank\",1]', '1', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '63', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1753', '[\"PartGeneric\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '63', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1753', '[\"PartGeneric\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '63', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1754', '[\"PartGlass\",1]', '1', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '63', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1755', '[\"PartVRotor\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '63', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1756', '[\"PartWheel\",1]', '2', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '63', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1763', '[\"ItemCompass\",3]', '15', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '23', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('1763', '[\"ItemCompass\",3]', '14', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '23', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('1764', '[\"ItemSandbag\",1]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '64', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1765', '[\"ItemTankTrap\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '64', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1766', '[\"ItemTent\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '64', 'trade_items');
@@ -569,7 +554,7 @@ INSERT INTO `traders_data` VALUES ('1777', '[\"Skin_Rocket_DZ\",1]', '10', '[3,\
 INSERT INTO `traders_data` VALUES ('1786', '[\"CZ_VestPouch_EP1\",2]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '22', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('1787', '[\"DZ_ALICE_Pack_EP1\",2]', '58', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '22', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('1788', '[\"DZ_Assault_Pack_EP1\",2]', '13', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '22', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('1789', '[\"DZ_British_ACU\",2]', '17', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '22', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('1789', '[\"DZ_British_ACU\",2]', '18', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '22', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('1790', '[\"DZ_CivilBackpack_EP1\",2]', '10', '[3,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '22', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('1791', '[\"DZ_Czech_Vest_Puch\",2]', '6', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '22', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('1792', '[\"DZ_Patrol_Pack_EP1\",2]', '3', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '22', 'trade_backpacks');
@@ -604,21 +589,21 @@ INSERT INTO `traders_data` VALUES ('1838', '[\"Skin_Soldier1_DZ\",1]', '12', '[2
 INSERT INTO `traders_data` VALUES ('1839', '[\"SkodaBlue\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1840', '[\"SkodaGreen\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1841', '[\"SkodaRed\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1842', '[\"Pickup_PK_TK_GUE_EP1\",2]', '28', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '41', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('1842', '[\"Pickup_PK_TK_GUE_EP1\",2]', '29', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '41', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('1843', '[\"UAZ_CDF\",2]', '0', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '42', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('1844', '[\"ItemAntibiotic\",1]', '403', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '47', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1844', '[\"ItemAntibiotic\",1]', '405', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '47', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1845', '[\"ItemBandage\",1]', '165', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '47', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1846', '[\"ItemBloodbag\",1]', '157', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '47', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1846', '[\"ItemBloodbag\",1]', '156', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '47', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1847', '[\"ItemEpinephrine\",1]', '83', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '47', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1848', '[\"ItemHeatPack\",1]', '39', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '47', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1849', '[\"ItemMorphine\",1]', '111', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '47', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1850', '[\"ItemPainkiller\",1]', '167', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '47', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1851', '[\"ItemAntibiotic\",1]', '575', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '50', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1852', '[\"ItemBandage\",1]', '55', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '50', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1853', '[\"ItemBloodbag\",1]', '280', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '50', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1853', '[\"ItemBloodbag\",1]', '279', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '50', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1854', '[\"ItemEpinephrine\",1]', '144', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '50', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1855', '[\"ItemHeatPack\",1]', '20', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '50', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1856', '[\"ItemMorphine\",1]', '231', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '50', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1856', '[\"ItemMorphine\",1]', '230', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '50', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1857', '[\"ItemPainkiller\",1]', '169', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '50', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1858', '[\"HandChemBlue\",1]', '1', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '67', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1859', '[\"HandChemGreen\",1]', '1', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '67', 'trade_items');
@@ -661,7 +646,7 @@ INSERT INTO `traders_data` VALUES ('1895', '[\"ItemJerrycan\",1]', '10', '[4,\"I
 INSERT INTO `traders_data` VALUES ('1896', '[\"ItemJerrycanEmpty\",1]', '10', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '76', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1897', '[\"PartEngine\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '76', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1898', '[\"PartFueltank\",1]', '3', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '76', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1899', '[\"PartGeneric\",1]', '2', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '76', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1899', '[\"PartGeneric\",1]', '2', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '76', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1900', '[\"PartGlass\",1]', '13', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '76', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1901', '[\"PartVRotor\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '76', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1902', '[\"PartWheel\",1]', '37', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '76', 'trade_items');
@@ -730,7 +715,7 @@ INSERT INTO `traders_data` VALUES ('1964', '[\"ItemJerrycan\",1]', '2', '[4,\"It
 INSERT INTO `traders_data` VALUES ('1965', '[\"ItemJerrycanEmpty\",1]', '10', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '94', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1966', '[\"PartEngine\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '94', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1967', '[\"PartFueltank\",1]', '1', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '94', 'trade_items');
-INSERT INTO `traders_data` VALUES ('1968', '[\"PartGeneric\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '94', 'trade_items');
+INSERT INTO `traders_data` VALUES ('1968', '[\"PartGeneric\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '94', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1969', '[\"PartGlass\",1]', '10', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '94', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1970', '[\"PartVRotor\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '94', 'trade_items');
 INSERT INTO `traders_data` VALUES ('1971', '[\"PartWheel\",1]', '19', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '94', 'trade_items');
@@ -804,10 +789,10 @@ INSERT INTO `traders_data` VALUES ('2043', '[\"UAZ_INS\",2]', '2', '[4,\"ItemGol
 INSERT INTO `traders_data` VALUES ('2044', '[\"UAZ_RU\",2]', '2', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '110', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2045', '[\"FoodbaconCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '111', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2046', '[\"FoodbeefCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '111', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2047', '[\"UralRefuel_TK_EP1\",2]', '10', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2048', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '1', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2049', '[\"KamazRefuel\",2]', '14', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2050', '[\"MtvrRefuel_DES_EP1\",2]', '20', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2047', '[\"UralRefuel_TK_EP1_DZ\",2]', '10', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2048', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '1', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2049', '[\"KamazRefuel_DZ\",2]', '14', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2050', '[\"MtvrRefuel_DES_EP1_DZ\",2]', '20', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '92', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2051', '[\"SUV_Blue\",2]', '0', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '120', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2052', '[\"SUV_Charcoal\",2]', '0', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '120', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2053', '[\"SUV_Green\",2]', '0', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '120', 'trade_any_vehicle');
@@ -873,7 +858,7 @@ INSERT INTO `traders_data` VALUES ('2112', '[\"20Rnd_762x51_DMR\",1]', '10', '[8
 INSERT INTO `traders_data` VALUES ('2113', '[\"PartWheel\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '128', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2114', '[\"ItemJerrycan\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '129', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2115', '[\"ItemJerrycanEmpty\",1]', '1', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '129', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2116', '[\"PartGeneric\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '129', 'trade_items');
+INSERT INTO `traders_data` VALUES ('2116', '[\"PartGeneric\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '129', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2117', '[\"PartGlass\",1]', '10', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '129', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2118', '[\"PartVRotor\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '129', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2119', '[\"PartWheel\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '129', 'trade_items');
@@ -923,7 +908,7 @@ INSERT INTO `traders_data` VALUES ('2171', '[\"ATV_CZ_EP1\",2]', '0', '[2,\"Item
 INSERT INTO `traders_data` VALUES ('2172', '[\"ATV_US_EP1\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '38', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2173', '[\"M1030_US_DES_EP1\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '38', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2174', '[\"Old_moto_TK_Civ_EP1\",2]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '38', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2175', '[\"MH6J_DZ\",2]', '42', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '39', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2175', '[\"MH6J_DZ\",2]', '43', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar10oz\",1]', '0', '39', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2176', '[\"HMMWV_DZ\",2]', '11', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '40', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2177', '[\"Pickup_PK_GUE\",2]', '0', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '41', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2178', '[\"Pickup_PK_INS\",2]', '0', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '41', 'trade_any_vehicle');
@@ -932,15 +917,15 @@ INSERT INTO `traders_data` VALUES ('2180', '[\"UAZ_RU\",2]', '3', '[8,\"ItemGold
 INSERT INTO `traders_data` VALUES ('2181', '[\"UAZ_Unarmed_TK_CIV_EP1\",2]', '0', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '42', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2182', '[\"UAZ_Unarmed_TK_EP1\",2]', '2', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '42', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2183', '[\"UAZ_Unarmed_UN_EP1\",2]', '0', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '42', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2184', '[\"CH_47F_EP1_DZ\",2]', '2', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '43', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2185', '[\"ArmoredSUV_PMC_DZ\",2]', '2', '[6,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '44', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2184', '[\"CH_47F_EP1_DZ\",2]', '1', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '43', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2185', '[\"ArmoredSUV_PMC_DZ\",2]', '1', '[6,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '44', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2191', '[\"Mi17_Civilian_DZ\",2]', '62', '[6,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '175', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2192', '[\"VolhaLimo_TK_CIV_EP1\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2193', '[\"Volha_1_TK_CIV_EP1\",2]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2194', '[\"Volha_2_TK_CIV_EP1\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2195', '[\"VWGolf\",2]', '2', '[3,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2196', '[\"car_hatchback\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2197', '[\"car_sedan\",2]', '3', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('2197', '[\"car_sedan\",2]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2198', '[\"GLT_M300_LT\",2]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2199', '[\"GLT_M300_ST\",2]', '6', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2200', '[\"Lada1\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '34', 'trade_any_vehicle');
@@ -977,7 +962,6 @@ INSERT INTO `traders_data` VALUES ('2249', '[\"SmokeShell\",1]', '36', '[1,\"Ite
 INSERT INTO `traders_data` VALUES ('2250', '[\"SmokeShellGreen\",1]', '15', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '52', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2251', '[\"SmokeShellRed\",1]', '23', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '52', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2260', '[\"MTVR_DES_EP1\",2]', '3', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '176', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2261', '[\"Pickup_PK_TK_GUE_EP1\",2]', '0', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '149', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2285', '[\"Kamaz\",2]', '5', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '176', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2286', '[\"V3S_Open_TK_EP1\",2]', '0', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '176', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2287', '[\"V3S_Open_TK_CIV_EP1\",2]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '176', 'trade_any_vehicle');
@@ -997,17 +981,6 @@ INSERT INTO `traders_data` VALUES ('2300', '[\"FoodCanSardines\",1]', '5', '[2,\
 INSERT INTO `traders_data` VALUES ('2301', '[\"FoodchickenCooked\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2302', '[\"FoodrabbitCooked\",1]', '9', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '179', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2311', '[\"C130J_US_EP1\",2]', '2', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '185', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('2312', '[\"Skin_Functionary1_EP1_DZ\",1]', '25', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2313', '[\"Skin_GUE_Commander_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2314', '[\"Skin_Haris_Press_EP1_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2315', '[\"Skin_Ins_Soldier_GL_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2316', '[\"Skin_Priest_DZ\",1]', '20', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2317', '[\"Skin_Rocker2_DZ\",1]', '21', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2318', '[\"Skin_Sniper1_DZ\",1]', '6', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2319', '[\"Skin_Soldier_Bodyguard_AA12_PMC_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2320', '[\"Skin_Survivor2_DZ\",1]', '6', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2321', '[\"Skin_TK_INS_Soldier_EP1_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2322', '[\"Skin_TK_INS_Warlord_EP1_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2323', '[\"ATV_CZ_EP1\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '174', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2324', '[\"ATV_US_EP1\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '174', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2325', '[\"SmokeShell\",1]', '13', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '169', 'trade_items');
@@ -1178,7 +1151,7 @@ INSERT INTO `traders_data` VALUES ('2511', '[\"PartVRotor\",1]', '3', '[1,\"Item
 INSERT INTO `traders_data` VALUES ('2512', '[\"ItemJerrycanEmpty\",1]', '2', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '213', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2513', '[\"PartWheel\",1]', '130', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '213', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2514', '[\"PartGlass\",1]', '96', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '213', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2515', '[\"PartGeneric\",1]', '3', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '213', 'trade_items');
+INSERT INTO `traders_data` VALUES ('2515', '[\"PartGeneric\",1]', '3', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '213', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2516', '[\"ItemWire\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '214', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2517', '[\"ItemVault\",1]', '19', '[12,\"ItemGoldBar10oz\",1]', '[12,\"ItemGoldBar10oz\",1]', '0', '214', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2518', '[\"ItemSandbag\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '214', 'trade_items');
@@ -1399,7 +1372,7 @@ INSERT INTO `traders_data` VALUES ('2751', '[\"PartVRotor\",1]', '8', '[1,\"Item
 INSERT INTO `traders_data` VALUES ('2752', '[\"ItemJerrycanEmpty\",1]', '2', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '261', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2753', '[\"PartWheel\",1]', '67', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '261', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2754', '[\"PartGlass\",1]', '10', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '261', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2755', '[\"PartGeneric\",1]', '11', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '261', 'trade_items');
+INSERT INTO `traders_data` VALUES ('2755', '[\"PartGeneric\",1]', '11', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '261', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2756', '[\"ItemAntibiotic\",1]', '103', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '262', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2757', '[\"ItemBandage\",1]', '35', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '262', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2758', '[\"ItemBloodbag\",1]', '12', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '262', 'trade_items');
@@ -1449,7 +1422,7 @@ INSERT INTO `traders_data` VALUES ('2802', '[\"PartVRotor\",1]', '3', '[1,\"Item
 INSERT INTO `traders_data` VALUES ('2803', '[\"ItemJerrycanEmpty\",1]', '3', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '271', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2804', '[\"PartWheel\",1]', '59', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '271', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2805', '[\"PartGlass\",1]', '6', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '271', 'trade_items');
-INSERT INTO `traders_data` VALUES ('2806', '[\"PartGeneric\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '271', 'trade_items');
+INSERT INTO `traders_data` VALUES ('2806', '[\"PartGeneric\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '271', 'trade_items');
 INSERT INTO `traders_data` VALUES ('2807', '[\"Skoda\",2]', '0', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '272', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2808', '[\"SkodaBlue\",2]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '272', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('2809', '[\"SkodaGreen\",2]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '272', 'trade_any_vehicle');
@@ -1605,7 +1578,7 @@ INSERT INTO `traders_data` VALUES ('3002', '[\"PartVRotor\",1]', '9', '[1,\"Item
 INSERT INTO `traders_data` VALUES ('3003', '[\"ItemJerrycanEmpty\",1]', '4', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '295', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3004', '[\"PartWheel\",1]', '47', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '295', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3005', '[\"PartGlass\",1]', '15', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '295', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3006', '[\"PartGeneric\",1]', '8', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '295', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3006', '[\"PartGeneric\",1]', '8', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '295', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3007', '[\"bulk_30Rnd_556x45_StanagSD\",1]', '25', '[3,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '296', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3008', '[\"bulk_17Rnd_9x19_glock17\",1]', '30', '[1,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '296', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3009', '[\"ItemVault\",1]', '10', '[12,\"ItemGoldBar10oz\",1]', '[12,\"ItemGoldBar10oz\",1]', '0', '297', 'trade_items');
@@ -1634,10 +1607,10 @@ INSERT INTO `traders_data` VALUES ('3032', '[\"ItemMatchbox\",3]', '7', '[5,\"It
 INSERT INTO `traders_data` VALUES ('3033', '[\"ItemToolbox\",3]', '9', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '299', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3034', '[\"ItemWatch\",3]', '18', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '299', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3035', '[\"NVGoggles\",3]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '299', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3036', '[\"UralRefuel_TK_EP1\",2]', '10', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3037', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3038', '[\"KamazRefuel\",2]', '8', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3039', '[\"MtvrRefuel_DES_EP1\",2]', '12', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3036', '[\"UralRefuel_TK_EP1_DZ\",2]', '10', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3037', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3038', '[\"KamazRefuel_DZ\",2]', '8', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3039', '[\"MtvrRefuel_DES_EP1_DZ\",2]', '12', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '300', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3040', '[\"Skin_Rocker2_DZ\",1]', '7', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '301', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3041', '[\"Skin_SurvivorW2_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '301', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3042', '[\"Skin_Functionary1_EP1_DZ\",1]', '7', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '301', 'trade_items');
@@ -1731,7 +1704,7 @@ INSERT INTO `traders_data` VALUES ('3162', '[\"ItemJerrycan\",1]', '20', '[4,\"I
 INSERT INTO `traders_data` VALUES ('3163', '[\"ItemJerrycanEmpty\",1]', '3', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '309', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3164', '[\"PartEngine\",1]', '20', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '309', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3165', '[\"PartFueltank\",1]', '64', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '309', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3166', '[\"PartGeneric\",1]', '4', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '309', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3166', '[\"PartGeneric\",1]', '4', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '309', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3167', '[\"PartGlass\",1]', '47', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '309', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3168', '[\"PartVRotor\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '309', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3169', '[\"PartWheel\",1]', '47', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '309', 'trade_items');
@@ -1865,10 +1838,10 @@ INSERT INTO `traders_data` VALUES ('3313', '[\"HMMWV_Ambulance\",2]', '2', '[2,\
 INSERT INTO `traders_data` VALUES ('3314', '[\"HMMWV_Ambulance_CZ_DES_EP1\",2]', '7', '[3,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '332', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3315', '[\"HMMWV_DES_EP1\",2]', '5', '[3,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '332', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3316', '[\"HMMWV_DZ\",2]', '6', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '332', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3317', '[\"UralRefuel_TK_EP1\",2]', '21', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3318', '[\"V3S_Refuel_TK_GUE_EP1\",2]', '6', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3319', '[\"KamazRefuel\",2]', '14', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('3320', '[\"MtvrRefuel_DES_EP1\",2]', '11', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3317', '[\"UralRefuel_TK_EP1_DZ\",2]', '21', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3318', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '6', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3319', '[\"KamazRefuel_DZ\",2]', '14', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('3320', '[\"MtvrRefuel_DES_EP1_DZ\",2]', '11', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '333', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3321', '[\"Ural_CDF\",2]', '3', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '334', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3322', '[\"Ural_TK_CIV_EP1\",2]', '2', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '334', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3323', '[\"Ural_UN_EP1\",2]', '4', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '334', 'trade_any_vehicle');
@@ -1996,7 +1969,7 @@ INSERT INTO `traders_data` VALUES ('3452', '[\"ItemJerrycan\",1]', '2', '[4,\"It
 INSERT INTO `traders_data` VALUES ('3453', '[\"ItemJerrycanEmpty\",1]', '10', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '356', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3454', '[\"PartEngine\",1]', '9', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '356', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3455', '[\"PartFueltank\",1]', '1', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '356', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3456', '[\"PartGeneric\",1]', '3', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '356', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3456', '[\"PartGeneric\",1]', '3', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '356', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3457', '[\"PartGlass\",1]', '10', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '356', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3458', '[\"PartVRotor\",1]', '9', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '356', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3459', '[\"PartWheel\",1]', '19', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '356', 'trade_items');
@@ -2107,10 +2080,10 @@ INSERT INTO `traders_data` VALUES ('3595', '[\"Sa58P_EP1\",3]', '5', '[2,\"ItemG
 INSERT INTO `traders_data` VALUES ('3596', '[\"Sa58V_CCO_EP1\",3]', '2', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '2', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3597', '[\"Sa58V_EP1\",3]', '4', '[2,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '2', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3598', '[\"Sa58V_RCO_EP1\",3]', '9', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '2', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3599', '[\"AKS_74_kobra\",3]', '7', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '2', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('3599', '[\"AKS_74_kobra\",3]', '8', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '2', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3600', '[\"AKS_74_U\",3]', '8', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '2', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3601', '[\"AK_47_M\",3]', '9', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '2', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3602', '[\"AK_74\",3]', '16', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '2', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('3602', '[\"AK_74\",3]', '17', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '2', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3603', '[\"LeeEnfield\",3]', '5', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '2', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3604', '[\"Winchester1866\",3]', '6', '[6,\"ItemCopperBar\",1]', '[4,\"ItemCopperBar\",1]', '0', '3', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3605', '[\"MR43\",3]', '7', '[6,\"ItemCopperBar\",1]', '[4,\"ItemCopperBar\",1]', '0', '3', 'trade_weapons');
@@ -2146,7 +2119,7 @@ INSERT INTO `traders_data` VALUES ('3640', '[\"M1014\",3]', '9', '[2,\"ItemSilve
 INSERT INTO `traders_data` VALUES ('3641', '[\"Remington870_lamp\",3]', '9', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '6', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3642', '[\"100Rnd_762x54_PK\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '322', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3643', '[\"ItemSodaCoke\",1]', '9', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '13', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3644', '[\"ItemSodaPepsi\",1]', '10', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '13', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3644', '[\"ItemSodaPepsi\",1]', '9', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '13', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3645', '[\"FoodCanBakedBeans\",1]', '8', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '13', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3646', '[\"FoodCanFrankBeans\",1]', '4', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '13', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3647', '[\"FoodchickenCooked\",1]', '11', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '13', 'trade_items');
@@ -2157,11 +2130,11 @@ INSERT INTO `traders_data` VALUES ('3651', '[\"FoodbaconCooked\",1]', '23', '[2,
 INSERT INTO `traders_data` VALUES ('3652', '[\"FoodrabbitCooked\",1]', '2', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '13', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3653', '[\"ItemSodaR4z0r\",1]', '2', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '13', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3654', '[\"ItemWaterbottleUnfilled\",1]', '15', '[3,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '13', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3655', '[\"DZ_Patrol_Pack_EP1\",2]', '5', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '14', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('3655', '[\"DZ_Patrol_Pack_EP1\",2]', '6', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '14', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3656', '[\"CZ_VestPouch_EP1\",2]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '14', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3657', '[\"DZ_ALICE_Pack_EP1\",2]', '17', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '14', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3658', '[\"DZ_Assault_Pack_EP1\",2]', '9', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '14', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3659', '[\"DZ_Backpack_EP1\",2]', '9', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '14', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('3659', '[\"DZ_Backpack_EP1\",2]', '7', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '14', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3660', '[\"DZ_British_ACU\",2]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '14', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3661', '[\"DZ_CivilBackpack_EP1\",2]', '8', '[3,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '14', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3662', '[\"DZ_Czech_Vest_Puch\",2]', '1', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '14', 'trade_backpacks');
@@ -2188,12 +2161,12 @@ INSERT INTO `traders_data` VALUES ('3682', '[\"FoodCanSardines\",1]', '8', '[2,\
 INSERT INTO `traders_data` VALUES ('3683', '[\"FoodchickenCooked\",1]', '8', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '17', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3684', '[\"FoodmuttonCooked\",1]', '49', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '17', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3685', '[\"FoodbeefCooked\",1]', '31', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '17', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3686', '[\"ItemWaterbottleUnfilled\",1]', '24', '[3,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '17', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3686', '[\"ItemWaterbottleUnfilled\",1]', '23', '[3,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '17', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3687', '[\"DZ_Patrol_Pack_EP1\",2]', '2', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '18', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3688', '[\"CZ_VestPouch_EP1\",2]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '18', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3689', '[\"DZ_ALICE_Pack_EP1\",2]', '14', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '18', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3690', '[\"DZ_Assault_Pack_EP1\",2]', '9', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '18', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3691', '[\"DZ_Backpack_EP1\",2]', '7', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '18', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('3691', '[\"DZ_Backpack_EP1\",2]', '6', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '18', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3692', '[\"DZ_British_ACU\",2]', '16', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '18', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3693', '[\"DZ_CivilBackpack_EP1\",2]', '10', '[3,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '18', 'trade_backpacks');
 INSERT INTO `traders_data` VALUES ('3694', '[\"Skin_TK_INS_Soldier_EP1_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '20', 'trade_items');
@@ -2203,7 +2176,7 @@ INSERT INTO `traders_data` VALUES ('3697', '[\"Skin_Bandit2_DZ\",1]', '8', '[2,\
 INSERT INTO `traders_data` VALUES ('3698', '[\"Skin_BanditW1_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '20', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3699', '[\"Skin_BanditW2_DZ\",1]', '3', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '20', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3704', '[\"FoodchickenCooked\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '21', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3706', '[\"FoodmuttonCooked\",1]', '57', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '21', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3706', '[\"FoodmuttonCooked\",1]', '56', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '21', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3708', '[\"FoodbaconCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '21', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3709', '[\"FoodrabbitCooked\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '21', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3711', '[\"ItemWaterbottleUnfilled\",1]', '12', '[3,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '21', 'trade_items');
@@ -2225,10 +2198,10 @@ INSERT INTO `traders_data` VALUES ('3726', '[\"20Rnd_762x51_DMR\",1]', '1', '[8,
 INSERT INTO `traders_data` VALUES ('3727', '[\"10x_303\",1]', '28', '[6,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '372', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3728', '[\"5x_22_LR_17_HMR\",1]', '19', '[6,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '372', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3729', '[\"5Rnd_762x51_M24\",1]', '4', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '372', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3730', '[\"20Rnd_762x51_DMR\",1]', '119', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '372', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3731', '[\"30Rnd_762x39_AK47\",1]', '52', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '26', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3730', '[\"20Rnd_762x51_DMR\",1]', '165', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '372', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3731', '[\"30Rnd_762x39_AK47\",1]', '54', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '26', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3732', '[\"30Rnd_762x39_SA58\",1]', '2', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '26', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3733', '[\"30Rnd_762x39_AK47\",1]', '6', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '26', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3733', '[\"30Rnd_762x39_AK47\",1]', '8', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '26', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3734', '[\"15Rnd_9x19_M9\",1]', '8', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '28', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3735', '[\"8Rnd_9x18_Makarov\",1]', '21', '[6,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '28', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3736', '[\"6Rnd_45ACP\",1]', '15', '[1,\"ItemCopperBar10oz\",1]', '[4,\"ItemCopperBar\",1]', '0', '28', 'trade_items');
@@ -2251,14 +2224,14 @@ INSERT INTO `traders_data` VALUES ('3752', '[\"20Rnd_762x51_DMR\",1]', '56', '[8
 INSERT INTO `traders_data` VALUES ('3753', '[\"10Rnd_762x54_SVD\",1]', '21', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '33', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3754', '[\"10Rnd_127x99_m107\",1]', '21', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '33', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3755', '[\"20Rnd_762x51_FNFAL\",1]', '10', '[6,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '33', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3756', '[\"20Rnd_762x51_SB_SCAR\",1]', '34', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '33', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3756', '[\"20Rnd_762x51_SB_SCAR\",1]', '31', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '33', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3770', '[\"SVD_CAMO\",3]', '35', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '59', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3771', '[\"M107_DZ\",3]', '15', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '59', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3772', '[\"M40A3\",3]', '10', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '59', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3773', '[\"M14_EP1\",3]', '4', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '59', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3775', '[\"15Rnd_9x19_M9\",1]', '5', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '374', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3776', '[\"15Rnd_9x19_M9SD\",1]', '10', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '374', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3777', '[\"17Rnd_9x19_glock17\",1]', '22', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '374', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3775', '[\"15Rnd_9x19_M9\",1]', '8', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '374', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3776', '[\"15Rnd_9x19_M9SD\",1]', '6', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '374', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3777', '[\"17Rnd_9x19_glock17\",1]', '27', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '374', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3778', '[\"6Rnd_45ACP\",1]', '17', '[1,\"ItemCopperBar10oz\",1]', '[4,\"ItemCopperBar\",1]', '0', '374', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3779', '[\"7Rnd_45ACP_1911\",1]', '61', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '374', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3780', '[\"8Rnd_9x18_Makarov\",1]', '31', '[6,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '374', 'trade_items');
@@ -2313,7 +2286,7 @@ INSERT INTO `traders_data` VALUES ('3829', '[\"M40A3\",3]', '10', '[1,\"ItemGold
 INSERT INTO `traders_data` VALUES ('3830', '[\"M14_EP1\",3]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '135', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3831', '[\"SCAR_H_LNG_Sniper_SD\",3]', '6', '[2,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '135', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3832', '[\"bizon_silenced\",3]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '380', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3833', '[\"UZI_EP1\",3]', '2', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '380', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('3833', '[\"UZI_EP1\",3]', '3', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '380', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3834', '[\"Sa61_EP1\",3]', '1', '[1,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar\",1]', '0', '380', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3835', '[\"MP5A5\",3]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '380', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3836', '[\"UZI_SD_EP1\",3]', '10', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '380', 'trade_weapons');
@@ -2326,50 +2299,15 @@ INSERT INTO `traders_data` VALUES ('3842', '[\"200Rnd_556x45_M249\",1]', '6', '[
 INSERT INTO `traders_data` VALUES ('3843', '[\"100Rnd_762x54_PK\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '138', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3844', '[\"30rnd_9x19_MP5\",1]', '3', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '381', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3845', '[\"30Rnd_9x19_MP5SD\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '381', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3846', '[\"30Rnd_9x19_UZI\",1]', '10', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '381', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3846', '[\"30Rnd_9x19_UZI\",1]', '11', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '381', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3847', '[\"64Rnd_9x19_SD_Bizon\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '381', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3848', '[\"30Rnd_9x19_UZI_SD\",1]', '1', '[6,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '381', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3849', '[\"20Rnd_B_765x17_Ball\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '381', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3850', '[\"20Rnd_762x51_DMR\",1]', '28', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '139', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3850', '[\"20Rnd_762x51_DMR\",1]', '29', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '139', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3851', '[\"10Rnd_762x54_SVD\",1]', '34', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '139', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3852', '[\"10Rnd_127x99_m107\",1]', '8', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '139', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3853', '[\"20Rnd_762x51_FNFAL\",1]', '1', '[6,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '139', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3854', '[\"20Rnd_762x51_SB_SCAR\",1]', '10', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '139', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3855', '[\"ItemSodaCoke\",1]', '4', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3856', '[\"ItemSodaPepsi\",1]', '1', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3857', '[\"FoodCanBakedBeans\",1]', '5', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3858', '[\"FoodCanFrankBeans\",1]', '8', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3859', '[\"FoodchickenCooked\",1]', '8', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3860', '[\"ItemSodaMdew\",1]', '5', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3861', '[\"FoodmuttonCooked\",1]', '62', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3862', '[\"FoodbeefCooked\",1]', '118', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3863', '[\"FoodbaconCooked\",1]', '98', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3864', '[\"FoodrabbitCooked\",1]', '4', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3865', '[\"ItemSodaR4z0r\",1]', '4', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3866', '[\"ItemWaterbottleUnfilled\",1]', '8', '[3,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3867', '[\"DZ_Patrol_Pack_EP1\",2]', '4', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3868', '[\"CZ_VestPouch_EP1\",2]', '2', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3869', '[\"DZ_ALICE_Pack_EP1\",2]', '7', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3870', '[\"DZ_Assault_Pack_EP1\",2]', '16', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3871', '[\"DZ_Backpack_EP1\",2]', '10', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3872', '[\"DZ_British_ACU\",2]', '11', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3873', '[\"DZ_CivilBackpack_EP1\",2]', '8', '[3,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3874', '[\"DZ_Czech_Vest_Puch\",2]', '1', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3875', '[\"DZ_TK_Assault_Pack_EP1\",2]', '8', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '141', 'trade_backpacks');
-INSERT INTO `traders_data` VALUES ('3876', '[\"Skin_Rocker2_DZ\",1]', '14', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3877', '[\"Skin_SurvivorW2_DZ\",1]', '18', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3878', '[\"Skin_Functionary1_EP1_DZ\",1]', '18', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3879', '[\"Skin_GUE_Commander_DZ\",1]', '7', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3880', '[\"Skin_Haris_Press_EP1_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3881', '[\"Skin_Priest_DZ\",1]', '14', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3882', '[\"Skin_Sniper1_DZ\",1]', '12', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3883', '[\"Skin_Soldier_Bodyguard_AA12_PMC_DZ\",1]', '8', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3884', '[\"Skin_SurvivorWpink_DZ\",1]', '11', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3885', '[\"Skin_SurvivorWurban_DZ\",1]', '5', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3886', '[\"Skin_SurvivorWcombat_DZ\",1]', '4', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3887', '[\"Skin_SurvivorWdesert_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3888', '[\"Skin_Survivor2_DZ\",1]', '30', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3889', '[\"Offroad_DSHKM_Gue\",2]', '0', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '149', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3890', '[\"UAZ_CDF\",2]', '0', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '150', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3891', '[\"UAZ_INS\",2]', '0', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '150', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('3892', '[\"UAZ_RU\",2]', '0', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '150', 'trade_any_vehicle');
@@ -2386,19 +2324,16 @@ INSERT INTO `traders_data` VALUES ('3905', '[\"5Rnd_762x51_M24\",1]', '12', '[2,
 INSERT INTO `traders_data` VALUES ('3906', '[\"20Rnd_762x51_DMR\",1]', '21', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '383', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3907', '[\"M9SD\",3]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '384', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3908', '[\"glock17_EP1\",3]', '11', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '384', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3909', '[\"Colt1911\",3]', '4', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '384', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('3909', '[\"Colt1911\",3]', '5', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '384', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3910', '[\"M9\",3]', '2', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '384', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3911', '[\"MakarovSD\",3]', '8', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '384', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('3911', '[\"MakarovSD\",3]', '10', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '384', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3912', '[\"15Rnd_9x19_M9\",1]', '3', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '385', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3913', '[\"15Rnd_9x19_M9SD\",1]', '9', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '385', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3914', '[\"17Rnd_9x19_glock17\",1]', '11', '[2,\"ItemCopperBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '385', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3915', '[\"6Rnd_45ACP\",1]', '15', '[1,\"ItemCopperBar10oz\",1]', '[4,\"ItemCopperBar\",1]', '0', '385', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3916', '[\"7Rnd_45ACP_1911\",1]', '23', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '385', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3917', '[\"8Rnd_9x18_Makarov\",1]', '17', '[6,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '385', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3916', '[\"7Rnd_45ACP_1911\",1]', '26', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '385', 'trade_items');
+INSERT INTO `traders_data` VALUES ('3917', '[\"8Rnd_9x18_Makarov\",1]', '21', '[6,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '385', 'trade_items');
 INSERT INTO `traders_data` VALUES ('3918', '[\"8Rnd_9x18_MakarovSD\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '385', 'trade_items');
-INSERT INTO `traders_data` VALUES ('3919', '[\"Makarov\",3]', '8', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '157', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3920', '[\"revolver_EP1\",3]', '3', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '157', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('3921', '[\"M9\",3]', '10', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '157', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3922', '[\"Sa58P_EP1\",3]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '158', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3923', '[\"Sa58V_CCO_EP1\",3]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '158', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('3924', '[\"Sa58V_EP1\",3]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '158', 'trade_weapons');
@@ -2473,9 +2408,7 @@ INSERT INTO `traders_data` VALUES ('4003', '[\"AN2_DZ\",2]', '1', '[4,\"ItemGold
 INSERT INTO `traders_data` VALUES ('4004', '[\"C130J_US_EP1\",2]', '3', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '386', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4008', '[\"UH60M_EP1\",2]', '0', '[1,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '388', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4010', '[\"UH1Y_DZ\",2]', '1', '[1,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '331', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4011', '[\"F35B\",2]', '0', '[1,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '330', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4012', '[\"UH1Y_DZ\",2]', '0', '[1,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '388', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4013', '[\"UH60M_EP1\",2]', '1', '[1,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '388', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4014', '[\"MV22_DZ\",2]', '6', '[1,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '388', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4017', '[\"AN2_DZ\",2]', '1', '[4,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '389', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4018', '[\"C130J_US_EP1\",2]', '2', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '389', 'trade_any_vehicle');
@@ -2769,7 +2702,7 @@ INSERT INTO `traders_data` VALUES ('4314', '[\"ItemJerrycan\",1]', '20', '[4,\"I
 INSERT INTO `traders_data` VALUES ('4315', '[\"ItemJerrycanEmpty\",1]', '3', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '438', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4316', '[\"PartEngine\",1]', '19', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '438', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4317', '[\"PartFueltank\",1]', '63', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '438', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4318', '[\"PartGeneric\",1]', '7', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '438', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4318', '[\"PartGeneric\",1]', '7', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '438', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4319', '[\"PartGlass\",1]', '17', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '438', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4320', '[\"PartVRotor\",1]', '8', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '438', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4321', '[\"PartWheel\",1]', '49', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '438', 'trade_items');
@@ -2832,7 +2765,7 @@ INSERT INTO `traders_data` VALUES ('4377', '[\"ItemJerrycan\",1]', '3', '[4,\"It
 INSERT INTO `traders_data` VALUES ('4378', '[\"ItemJerrycanEmpty\",1]', '18', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '446', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4379', '[\"PartEngine\",1]', '8', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '446', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4380', '[\"PartFueltank\",1]', '12', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '446', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4381', '[\"PartGeneric\",1]', '2', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '446', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4381', '[\"PartGeneric\",1]', '2', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '446', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4382', '[\"PartGlass\",1]', '16', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '446', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4383', '[\"PartVRotor\",1]', '12', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '446', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4384', '[\"PartWheel\",1]', '33', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '446', 'trade_items');
@@ -2874,7 +2807,7 @@ INSERT INTO `traders_data` VALUES ('4426', '[\"Skin_Graves_Light_DZ\",1]', '3', 
 INSERT INTO `traders_data` VALUES ('4429', '[\"SUV_Camo\",2]', '5', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '424', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4430', '[\"GAZ_Vodnik\",2]', '1', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar\",1]', '0', '424', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4431', '[\"GAZ_Vodnik_MedEvac\",2]', '2', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '424', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4432', '[\"UAZ_MG_TK_EP1\",2]', '1', '[1,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '420', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4432', '[\"UAZ_MG_TK_EP1\",2]', '1', '[3,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '420', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4436', '[\"bulk_NVGoggles\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '56', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4437', '[\"bulk_ItemSandbag\",1]', '10', '[1,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '56', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4441', '[\"bulk_ItemMap\",1]', '1', '[1,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '56', 'trade_items');
@@ -2892,7 +2825,7 @@ INSERT INTO `traders_data` VALUES ('4455', '[\"ArmoredSUV_PMC_DZ\",2]', '1', '[6
 INSERT INTO `traders_data` VALUES ('4456', '[\"Saiga12K\",3]', '1', '[5,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4457', '[\"MakarovSD\",3]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4458', '[\"m8_compact\",3]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4459', '[\"m8_sharpshooter\r\n\",3]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4459', '[\"m8_sharpshooter\",3]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4460', '[\"m8_holo_sd\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4462', '[\"m8_carbine\",3]', '1', '[5,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4463', '[\"M24_des_EP1\",3]', '1', '[7,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '452', 'trade_weapons');
@@ -2915,7 +2848,7 @@ INSERT INTO `traders_data` VALUES ('4495', '[\"M4A3_CCO_EP1\",3]', '9', '[5,\"It
 INSERT INTO `traders_data` VALUES ('4496', '[\"M4A1_Aim\",3]', '2', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '57', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4499', '[\"G36_C_SD_camo\",3]', '1', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '186', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4500', '[\"M4A1_AIM_SD_camo\",3]', '1', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '186', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4501', '[\"DMR\",3]', '10', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '186', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4501', '[\"DMR\",3]', '11', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '186', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4502', '[\"M107_DZ\",3]', '10', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '186', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4503', '[\"SCAR_H_LNG_Sniper_SD\",3]', '2', '[2,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '186', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4504', '[\"FN_FAL_ANPVS4\",3]', '1', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '186', 'trade_weapons');
@@ -2923,23 +2856,23 @@ INSERT INTO `traders_data` VALUES ('4505', '[\"SVD_des_EP1\",3]', '1', '[8,\"Ite
 INSERT INTO `traders_data` VALUES ('4506', '[\"Pecheneg_DZ\",3]', '1', '[7,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '58', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4507', '[\"Skin_FR_OHara_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4508', '[\"Skin_FR_Rodriguez_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4509', '[\"Skin_CZ_Soldier_Sniper_EP1_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4510', '[\"Skin_Graves_Light_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4509', '[\"Skin_CZ_Soldier_Sniper_EP1_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4510', '[\"Skin_Graves_Light_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '53', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4511', '[\"MakarovSD\",3]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '4', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4512', '[\"ItemSandbag\",1]', '8', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '8', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4513', '[\"ItemTankTrap\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '8', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4514', '[\"ItemTent\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '8', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4512', '[\"ItemSandbag\",1]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '8', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4513', '[\"ItemTankTrap\",1]', '11', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '8', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4514', '[\"ItemTent\",1]', '5', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '8', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4515', '[\"ItemVault\",1]', '20', '[12,\"ItemGoldBar10oz\",1]', '[12,\"ItemGoldBar10oz\",1]', '0', '8', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4516', '[\"ItemWire\",1]', '11', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '8', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4517', '[\"30m_plot_kit\",1]', '39', '[6,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '8', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4518', '[\"ItemCorrugated\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '8', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4519', '[\"ItemPole\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '8', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4520', '[\"ItemSandbag\",1]', '8', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '12', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4521', '[\"ItemTankTrap\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '12', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4519', '[\"ItemPole\",1]', '14', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '8', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4520', '[\"ItemSandbag\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '12', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4521', '[\"ItemTankTrap\",1]', '2', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '12', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4522', '[\"ItemTent\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '12', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4523', '[\"ItemVault\",1]', '19', '[12,\"ItemGoldBar10oz\",1]', '[12,\"ItemGoldBar10oz\",1]', '0', '12', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4524', '[\"ItemWire\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '12', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4525', '[\"30m_plot_kit\",1]', '39', '[6,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '12', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4525', '[\"30m_plot_kit\",1]', '36', '[6,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '12', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4526', '[\"ItemCorrugated\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '12', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4527', '[\"ItemPole\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '12', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4528', '[\"DZ_TerminalPack_EP1\",2]', '1', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '14', 'trade_backpacks');
@@ -2947,24 +2880,23 @@ INSERT INTO `traders_data` VALUES ('4529', '[\"DZ_GunBag_EP1\",2]', '1', '[1,\"I
 INSERT INTO `traders_data` VALUES ('4531', '[\"ItemTroutCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '21', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4532', '[\"ItemSeaBassCooked\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '21', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4533', '[\"ItemTunaCooked\",1]', '1', '[1,\"ItemGoldBar\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '21', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4534', '[\"Saiga12K\",3]', '1', '[5,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4534', '[\"Saiga12K\",3]', '10', '[5,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4536', '[\"m8_compact\",3]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4537', '[\"m8_sharpshooter\r\n\",3]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4538', '[\"m8_holo_sd\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4537', '[\"m8_sharpshooter\",3]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4538', '[\"m8_holo_sd\",3]', '10', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4539', '[\"m8_carbine\",3]', '1', '[5,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4540', '[\"M24_des_EP1\",3]', '1', '[7,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4541', '[\"SCAR_H_LNG_Sniper_SD\",3]', '1', '[2,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4541', '[\"SCAR_H_LNG_Sniper_SD\",3]', '10', '[2,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4542', '[\"VSS_vintorez\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4543', '[\"SVD_des_EP1\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '455', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4544', '[\"20Rnd_762x51_SB_SCAR\",1]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '456', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4547', '[\"20Rnd_9x39_SP5_VSS\",1]', '1', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '456', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4548', '[\"8Rnd_B_Beneli_74Slug\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4549', '[\"20Rnd_762x51_SB_SCAR\",1]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '456', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4549', '[\"20Rnd_762x51_SB_SCAR\",1]', '16', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '456', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4550', '[\"8Rnd_B_Beneli_Pellets\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4551', '[\"8Rnd_B_Saiga12_74Slug\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4551', '[\"8Rnd_B_Saiga12_74Slug\",1]', '5', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4552', '[\"8Rnd_B_Saiga12_Pellets\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4553', '[\"20Rnd_B_765x17_Ball\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4554', '[\"10Rnd_762x54_SVD\",1]', '1', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4554', '[\"10Rnd_762x54_SVD\",1]', '6', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4555', '[\"5Rnd_762x51_M24\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '456', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4556', '[\"20Rnd_762x51_SB_SCAR\",1]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '453', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4557', '[\"20Rnd_9x39_SP5_VSS\",1]', '1', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '453', 'trade_items');
@@ -2987,18 +2919,18 @@ INSERT INTO `traders_data` VALUES ('4574', '[\"CSJ_GyroC\",2]', '1', '[4,\"ItemG
 INSERT INTO `traders_data` VALUES ('4575', '[\"CSJ_GyroCover\",2]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '39', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4576', '[\"CSJ_GyroP\",2]', '1', '[5,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '39', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4577', '[\"KamazRefuel_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4578', '[\"MtvrRefuel_DES_EP1_DZ\",2]', '0', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4579', '[\"UralRefuel_TK_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4580', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '0', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4581', '[\"M9SD\",3]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '454', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4582', '[\"glock17_EP1\",3]', '2', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '454', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4578', '[\"MtvrRefuel_DES_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4579', '[\"UralRefuel_TK_EP1_DZ\",2]', '2', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4580', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '45', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4581', '[\"M9SD\",3]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '454', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4582', '[\"glock17_EP1\",3]', '3', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '454', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4583', '[\"Colt1911\",3]', '2', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '454', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4584', '[\"M9\",3]', '10', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '454', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4585', '[\"MakarovSD\",3]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '454', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4586', '[\"revolver_gold_EP1\",3]', '1', '[3,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '454', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4587', '[\"AKS_GOLD\",3]', '1', '[5,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '57', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4588', '[\"Skin_GUE_Commander_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '16', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4589', '[\"Skin_GUE_Soldier_2_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '16', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4589', '[\"Skin_GUE_Soldier_2_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '16', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4590', '[\"Skin_GUE_Soldier_CO_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '16', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4591', '[\"Skin_GUE_Soldier_Sniper_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '16', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4592', '[\"Skin_GUE_Soldier_Crew_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '16', 'trade_items');
@@ -3017,29 +2949,17 @@ INSERT INTO `traders_data` VALUES ('4604', '[\"Skin_GUE_Soldier_2_DZ\",1]', '1',
 INSERT INTO `traders_data` VALUES ('4605', '[\"Skin_GUE_Soldier_CO_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '445', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4606', '[\"Skin_GUE_Soldier_Crew_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '445', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4607', '[\"Skin_GUE_Soldier_Sniper_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '445', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4608', '[\"30Rnd_545x39_AK\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4609', '[\"6Rnd_45ACP\",1]', '1', '[1,\"ItemCopperBar10oz\",1]', '[4,\"ItemCopperBar\",1]', '0', '458', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4610', '[\"30Rnd_556x45_StanagSD\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4611', '[\"20Rnd_762x51_DMR\",1]', '1', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4612', '[\"10Rnd_127x99_m107\",1]', '10', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4613', '[\"Skin_CZ_Special_Forces_GL_DES_EP1_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4614', '[\"Skin_RU_Policeman_DZ\",1]', '26', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4615', '[\"Skin_Pilot_EP1_DZ\",1]', '61', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4616', '[\"Skin_Drake_Light_DZ\",1]', '5', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4617', '[\"Skin_SurvivorWcombat_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4618', '[\"Skin_SurvivorWdesert_DZ\",1]', '6', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4619', '[\"Skin_Soldier_Sniper_PMC_DZ\",1]', '7', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4619', '[\"Skin_Soldier_Sniper_PMC_DZ\",1]', '8', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4620', '[\"Skin_FR_OHara_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4621', '[\"Skin_FR_Rodriguez_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4622', '[\"Skin_CZ_Soldier_Sniper_EP1_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4623', '[\"Skin_Graves_Light_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '130', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4624', '[\"G36_C_SD_camo\",3]', '1', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4625', '[\"M4A1_AIM_SD_camo\",3]', '1', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4626', '[\"DMR\",3]', '5', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4627', '[\"M107_DZ\",3]', '10', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4628', '[\"SCAR_H_LNG_Sniper_SD\",3]', '3', '[2,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4629', '[\"FN_FAL_ANPVS4\",3]', '1', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '131', 'trade_weapons');
-INSERT INTO `traders_data` VALUES ('4630', '[\"SVD_des_EP1\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
 INSERT INTO `traders_data` VALUES ('4635', '[\"ArmoredSUV_PMC_DZ\",2]', '1', '[5,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '132', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4636', '[\"HMMWV_M1035_DES_EP1\",2]', '2', '[5,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '132', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4637', '[\"HMMWV_M1151_M2_CZ_DES_EP1\",2]', '3', '[5,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '132', 'trade_any_vehicle');
@@ -3048,15 +2968,148 @@ INSERT INTO `traders_data` VALUES ('4639', '[\"CH_47F_EP1_DZ\",2]', '23', '[12,\
 INSERT INTO `traders_data` VALUES ('4640', '[\"SUV_Camo\",2]', '5', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '132', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4641', '[\"GAZ_Vodnik\",2]', '2', '[8,\"ItemGoldBar10oz\",1]', '[4,\"ItemGoldBar\",1]', '0', '132', 'trade_any_vehicle');
 INSERT INTO `traders_data` VALUES ('4642', '[\"GAZ_Vodnik_MedEvac\",2]', '2', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '132', 'trade_any_vehicle');
-INSERT INTO `traders_data` VALUES ('4643', '[\"ItemSandbag\",1]', '8', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '145', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4643', '[\"ItemSandbag\",1]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '145', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4644', '[\"ItemTankTrap\",1]', '10', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '145', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4645', '[\"ItemTent\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '145', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4645', '[\"ItemTent\",1]', '11', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '145', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4646', '[\"ItemVault\",1]', '20', '[12,\"ItemGoldBar10oz\",1]', '[12,\"ItemGoldBar10oz\",1]', '0', '145', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4647', '[\"ItemWire\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '145', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4648', '[\"30m_plot_kit\",1]', '39', '[6,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '145', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4649', '[\"ItemCorrugated\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '145', 'trade_items');
 INSERT INTO `traders_data` VALUES ('4650', '[\"ItemPole\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '145', 'trade_items');
-INSERT INTO `traders_data` VALUES ('4651', '[\"UAZ_MG_TK_EP1\",2]', '1', '[1,\"ItemAluminumBar\",1]', '[5,\"ItemGoldBar\",1]', '0', '421', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4651', '[\"UAZ_MG_TK_EP1\",2]', '1', '[3,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '421', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4652', '[\"Saiga12K\",3]', '1', '[5,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4653', '[\"m8_compact\",3]', '1', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4654', '[\"m8_sharpshooter\",3]', '1', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4655', '[\"m8_holo_sd\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4656', '[\"m8_carbine\",3]', '1', '[5,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4657', '[\"M24_des_EP1\",3]', '1', '[7,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4658', '[\"SCAR_H_LNG_Sniper_SD\",3]', '1', '[2,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4659', '[\"VSS_vintorez\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4660', '[\"SVD_des_EP1\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '459', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4661', '[\"20Rnd_762x51_SB_SCAR\",1]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4662', '[\"20Rnd_9x39_SP5_VSS\",1]', '1', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4663', '[\"8Rnd_B_Beneli_74Slug\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4664', '[\"20Rnd_762x51_SB_SCAR\",1]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4665', '[\"8Rnd_B_Beneli_Pellets\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4666', '[\"8Rnd_B_Saiga12_74Slug\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4667', '[\"8Rnd_B_Saiga12_Pellets\",1]', '1', '[5,\"ItemSilverBar\",1]', '[3,\"ItemSilverBar\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4668', '[\"20Rnd_B_765x17_Ball\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4669', '[\"10Rnd_762x54_SVD\",1]', '1', '[3,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4670', '[\"5Rnd_762x51_M24\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '460', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4671', '[\"G36_C_SD_camo\",3]', '1', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4672', '[\"M4A1_AIM_SD_camo\",3]', '1', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4673', '[\"DMR\",3]', '11', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4674', '[\"M107_DZ\",3]', '10', '[7,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4675', '[\"SCAR_H_LNG_Sniper_SD\",3]', '2', '[1,\"ItemGoldBar10oz\",1]', '[5,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4676', '[\"FN_FAL_ANPVS4\",3]', '1', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '131', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4677', '[\"SVD_des_EP1\",3]', '1', '[8,\"ItemGoldBar\",1]', '[4,\"ItemGoldBar\",1]', '0', '131', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4683', '[\"30Rnd_545x39_AK\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4684', '[\"6Rnd_45ACP\",1]', '1', '[1,\"ItemCopperBar10oz\",1]', '[4,\"ItemCopperBar\",1]', '0', '458', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4685', '[\"30Rnd_556x45_StanagSD\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4686', '[\"20Rnd_762x51_DMR\",1]', '1', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4687', '[\"10Rnd_127x99_m107\",1]', '10', '[8,\"ItemSilverBar\",1]', '[4,\"ItemSilverBar\",1]', '0', '458', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4688', '[\"20Rnd_762x51_SB_SCAR\",1]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '458', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4689', '[\"ItemSodaCoke\",1]', '37', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4690', '[\"ItemSodaPepsi\",1]', '73', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4691', '[\"FoodCanFrankBeans\",1]', '42', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4692', '[\"FoodCanBakedBeans\",1]', '31', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4693', '[\"FoodCanPasta\",1]', '53', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4694', '[\"FoodCanSardines\",1]', '43', '[2,\"ItemCopperBar\",1]', '[1,\"ItemCopperBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4695', '[\"FoodbaconCooked\",1]', '9', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4696', '[\"ItemSodaMdew\",1]', '72', '[6,\"ItemGoldBar\",1]', '[3,\"ItemGoldBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4697', '[\"FoodbeefCooked\",1]', '43', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4698', '[\"FoodchickenCooked\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4699', '[\"FoodmuttonCooked\",1]', '57', '[1,\"ItemSilverBar\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4700', '[\"FoodbaconCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4701', '[\"FoodrabbitCooked\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4702', '[\"ItemWaterbottleUnfilled\",1]', '12', '[3,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4703', '[\"ItemTroutCooked\",1]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4704', '[\"ItemSeaBassCooked\",1]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4705', '[\"ItemTunaCooked\",1]', '1', '[1,\"ItemGoldBar\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '140', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4715', '[\"DZ_Patrol_Pack_EP1\",2]', '5', '[5,\"ItemCopperBar\",1]', '[3,\"ItemCopperBar\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4716', '[\"CZ_VestPouch_EP1\",2]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4717', '[\"DZ_ALICE_Pack_EP1\",2]', '17', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4718', '[\"DZ_Assault_Pack_EP1\",2]', '9', '[1,\"ItemSilverBar\",1]', '[5,\"ItemCopperBar\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4719', '[\"DZ_Backpack_EP1\",2]', '8', '[4,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4720', '[\"DZ_British_ACU\",2]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4721', '[\"DZ_CivilBackpack_EP1\",2]', '8', '[3,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4722', '[\"DZ_Czech_Vest_Puch\",2]', '1', '[1,\"ItemCopperBar10oz\",1]', '[5,\"ItemCopperBar\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4723', '[\"DZ_TK_Assault_Pack_EP1\",2]', '11', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4724', '[\"DZ_TerminalPack_EP1\",2]', '1', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemCopperBar10oz\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4725', '[\"DZ_GunBag_EP1\",2]', '1', '[1,\"ItemGoldBar\",1]', '[2,\"ItemSilverBar10oz\",1]', '0', '141', 'trade_backpacks');
+INSERT INTO `traders_data` VALUES ('4744', '[\"Skin_Rocker2_DZ\",1]', '15', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4745', '[\"Skin_SurvivorW2_DZ\",1]', '6', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4746', '[\"Skin_Functionary1_EP1_DZ\",1]', '30', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4747', '[\"Skin_GUE_Commander_DZ\",1]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4748', '[\"Skin_Haris_Press_EP1_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4749', '[\"Skin_Ins_Soldier_GL_DZ\",1]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4750', '[\"Skin_Priest_DZ\",1]', '25', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4751', '[\"Skin_Sniper1_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4752', '[\"Skin_Soldier_Bodyguard_AA12_PMC_DZ\",1]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4753', '[\"Skin_SurvivorWpink_DZ\",1]', '21', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4754', '[\"Skin_SurvivorWurban_DZ\",1]', '11', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4755', '[\"Skin_TK_INS_Soldier_EP1_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4756', '[\"Skin_TK_INS_Warlord_EP1_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4757', '[\"Skin_BanditW1_DZ\",1]', '4', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4758', '[\"Skin_Bandit2_DZ\",1]', '8', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4759', '[\"Skin_BanditW1_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4760', '[\"Skin_BanditW2_DZ\",1]', '3', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4761', '[\"Skin_GUE_Commander_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4762', '[\"Skin_GUE_Soldier_2_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4763', '[\"Skin_GUE_Soldier_CO_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4764', '[\"Skin_GUE_Soldier_Crew_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4765', '[\"Skin_GUE_Soldier_Sniper_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '143', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4766', '[\"Pickup_PK_TK_GUE_EP1\",2]', '12', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '149', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4767', '[\"Pickup_PK_GUE\",2]', '2', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '149', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4768', '[\"Pickup_PK_INS\",2]', '1', '[2,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '149', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4769', '[\"Offroad_DSHKM_Gue\",2]', '5', '[4,\"ItemGoldBar10oz\",1]', '[2,\"ItemGoldBar10oz\",1]', '0', '149', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4770', '[\"UAZ_MG_TK_EP1\",2]', '1', '[3,\"ItemGoldBar10oz\",1]', '[1,\"ItemGoldBar10oz\",1]', '0', '150', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4771', '[\"UH60M_EP1\",2]', '3', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '151', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4772', '[\"UH60M_EP1\",2]', '3', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '43', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4773', '[\"KamazRefuel_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4774', '[\"MtvrRefuel_DES_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4775', '[\"UralRefuel_TK_EP1_DZ\",2]', '2', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4776', '[\"V3S_Refuel_TK_GUE_EP1_DZ\",2]', '1', '[7,\"ItemGoldBar10oz\",1]', '[3,\"ItemGoldBar10oz\",1]', '0', '153', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4777', '[\"ItemSandbag\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4778', '[\"ItemTankTrap\",1]', '2', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4779', '[\"ItemTent\",1]', '10', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4780', '[\"ItemVault\",1]', '19', '[12,\"ItemGoldBar10oz\",1]', '[12,\"ItemGoldBar10oz\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4781', '[\"ItemWire\",1]', '10', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4782', '[\"30m_plot_kit\",1]', '36', '[6,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4783', '[\"ItemCorrugated\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4784', '[\"ItemPole\",1]', '1', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '156', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4785', '[\"Makarov\",3]', '1', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '157', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4786', '[\"revolver_EP1\",3]', '1', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '157', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4787', '[\"M9\",3]', '2', '[2,\"ItemSilverBar10oz\",1]', '[1,\"ItemSilverBar10oz\",1]', '0', '157', 'trade_weapons');
+INSERT INTO `traders_data` VALUES ('4788', '[\"ItemSandbag\",1]', '9', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4789', '[\"ItemTankTrap\",1]', '11', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4790', '[\"ItemTent\",1]', '5', '[4,\"ItemSilverBar\",1]', '[2,\"ItemSilverBar\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4791', '[\"ItemVault\",1]', '20', '[12,\"ItemGoldBar10oz\",1]', '[12,\"ItemGoldBar10oz\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4792', '[\"ItemWire\",1]', '11', '[2,\"ItemSilverBar\",1]', '[1,\"ItemSilverBar\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4793', '[\"30m_plot_kit\",1]', '39', '[6,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4794', '[\"ItemCorrugated\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4795', '[\"ItemPole\",1]', '14', '[1,\"ItemSilverBar10oz\",1]', '[5,\"ItemSilverBar\",1]', '0', '178', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4796', '[\"Skin_Rocker2_DZ\",1]', '14', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4797', '[\"Skin_SurvivorW2_DZ\",1]', '19', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4798', '[\"Skin_Functionary1_EP1_DZ\",1]', '27', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4799', '[\"Skin_GUE_Commander_DZ\",1]', '6', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4800', '[\"Skin_Haris_Press_EP1_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4801', '[\"Skin_Priest_DZ\",1]', '18', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4802', '[\"Skin_Sniper1_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4803', '[\"Skin_Soldier_Bodyguard_AA12_PMC_DZ\",1]', '11', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4804', '[\"Skin_SurvivorWpink_DZ\",1]', '12', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4805', '[\"Skin_SurvivorWurban_DZ\",1]', '5', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4806', '[\"Skin_SurvivorWcombat_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4807', '[\"Skin_SurvivorWdesert_DZ\",1]', '2', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4808', '[\"Skin_Survivor2_DZ\",1]', '20', '[2,\"ItemGoldBar\",1]', '[1,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4809', '[\"Skin_GUE_Commander_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4810', '[\"Skin_GUE_Soldier_2_DZ\",1]', '10', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4811', '[\"Skin_GUE_Soldier_CO_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4812', '[\"Skin_GUE_Soldier_Sniper_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4813', '[\"Skin_GUE_Soldier_Crew_DZ\",1]', '1', '[2,\"ItemGoldBar\",1]', '[2,\"ItemGoldBar\",1]', '0', '182', 'trade_items');
+INSERT INTO `traders_data` VALUES ('4814', '[\"UH60M_EP1\",2]', '1', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '449', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4815', '[\"MV22\",2]', '2', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '303', 'trade_any_vehicle');
+INSERT INTO `traders_data` VALUES ('4816', '[\"MV22\",2]', '2', '[12,\"ItemGoldBar10oz\",1]', '[6,\"ItemGoldBar10oz\",1]', '0', '185', 'trade_any_vehicle');
 
 -- ----------------------------
 -- Table structure for `trader_items`
@@ -3410,7 +3463,7 @@ INSERT INTO `trader_items` VALUES ('641', 'VSS_vintorez', '3', 'Rifle Sniper', '
 INSERT INTO `trader_items` VALUES ('642', '10Rnd_9x39_SP5_VSS', '1', 'Ammo Rifle Sniper', 'trade_items');
 INSERT INTO `trader_items` VALUES ('643', '20Rnd_9x39_SP5_VSS', '1', 'Ammo Rifle Sniper', 'trade_items');
 INSERT INTO `trader_items` VALUES ('644', 'm8_compact', '3', 'Rifle', 'trade_weapons');
-INSERT INTO `trader_items` VALUES ('645', 'm8_sharpshooter\r\n', '3', 'Rifle', 'trade_weapons');
+INSERT INTO `trader_items` VALUES ('645', 'm8_sharpshooter', '3', 'Rifle', 'trade_weapons');
 INSERT INTO `trader_items` VALUES ('646', 'm8_holo_sd', '3', 'Rifle', 'trade_weapons');
 INSERT INTO `trader_items` VALUES ('647', 'm8_carbine', '3', 'Rifle', 'trade_weapons');
 INSERT INTO `trader_items` VALUES ('648', 'M24_des_EP1', '3', 'Rifle', 'trade_weapons');
@@ -3446,7 +3499,7 @@ CREATE TABLE `trader_tids` (
   `name` varchar(128) NOT NULL,
   `trader` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=459 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=461 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of trader_tids
@@ -3824,7 +3877,6 @@ INSERT INTO `trader_tids` VALUES ('383', 'Sniper Ammo', '29');
 INSERT INTO `trader_tids` VALUES ('384', 'Pistols', '21');
 INSERT INTO `trader_tids` VALUES ('385', 'Pistol Ammo', '22');
 INSERT INTO `trader_tids` VALUES ('386', 'Airplanes', '120');
-INSERT INTO `trader_tids` VALUES ('387', 'Jets', '120');
 INSERT INTO `trader_tids` VALUES ('388', 'Attack Choppers', '120');
 INSERT INTO `trader_tids` VALUES ('389', 'Airplanes', '121');
 INSERT INTO `trader_tids` VALUES ('390', 'Wholesale Crates', '122');
@@ -3896,3 +3948,5 @@ INSERT INTO `trader_tids` VALUES ('455', 'Black Market Weapons', '141');
 INSERT INTO `trader_tids` VALUES ('456', 'Black Market Ammo', '141');
 INSERT INTO `trader_tids` VALUES ('457', 'Ammunition', '15');
 INSERT INTO `trader_tids` VALUES ('458', 'Ammunition', '20');
+INSERT INTO `trader_tids` VALUES ('459', 'Black Market Weapons', '142');
+INSERT INTO `trader_tids` VALUES ('460', 'Black Market Ammo', '142');

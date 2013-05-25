@@ -9,13 +9,13 @@ menu_GUE_Villager4 = [
 // Alda's General Supplies
 menu_RU_Farmwife4 = [
 	[["Food/Drinks",312],["Clothes",313],["Backpacks",314]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[],
 	"friendly"
 ];
 // Carole's General Supplies
 menu_RU_Farmwife3 = [
 	[["Food/Drinks",315],["Clothes",316],["Backpacks",317]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[],
 	"neutral"
 ];
 // Dr. Zoidberg
@@ -98,7 +98,7 @@ menu_Tanny_PMC = [
 ];
 // Piloted Vehicles
 menu_UN_CDF_Soldier_Pilot_EP1 = [
-	[["Airplanes",386],["Jets",387],["Attack Choppers",388]],
+	[["Airplanes",386],["Attack Choppers",388]],
 	[],
 	"friendly"
 ];

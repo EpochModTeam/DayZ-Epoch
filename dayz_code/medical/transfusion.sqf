@@ -40,8 +40,6 @@ r_doLoop = false;
 if (_finished) then {
 	_unit setVariable["LastTransfusion",time,true];
 	_unit setVariable["USEC_lowBlood",false,true];
-	player removeMagazine "ItemBloodbag";	
-
 	_num_removed = ([player,"ItemBloodbag"] call BIS_fnc_invRemove);
 	if(_num_removed == 1) then {
 		//["usecTransfuse",[_unit,player]] call broadcastRpcCallAll;
