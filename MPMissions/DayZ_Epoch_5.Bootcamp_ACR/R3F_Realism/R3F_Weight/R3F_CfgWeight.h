@@ -1212,7 +1212,7 @@ class CfgWeight
 		{
 			weight = 1;
 		};
-		class MeleeMachete  
+		class MeleeFishingPole  
 		{
 			weight = 1;
 		};
