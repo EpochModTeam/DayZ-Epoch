@@ -1,4 +1,4 @@
-private["_unit","_selection","_strH","_dam","_total"];
+private ["_unit","_selection","_strH","_dam","_total"];
 _unit =			_this select 0;
 _selection =	_this select 1;
 _damage =		_this select 2;
@@ -13,4 +13,4 @@ if ((_selection != "")) then {
 } else {
 	_damage = 0;
 };
-_damage
+_damage;

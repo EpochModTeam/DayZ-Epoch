@@ -1,4 +1,4 @@
-private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible"];
+private ["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl"];
 disableSerialization;
 
 _foodVal = 		1 - (dayz_hunger / SleepFood);
@@ -85,7 +85,7 @@ _ctrlTemp ctrlSetText _temp;
 	Visual:
 */
 _visualtext = "";
-_visual = round((dayz_disVisual / 100) * 4) min 5;
+    _visual = (round((dayz_disVisual / 100) * 4)) min 5;
 if (_visual > 0) then {_visualtext = "\z\addons\dayz_code\gui\val_" + str(_visual) + "_ca.paa"};
 _ctrlEye ctrlSetText _visualtext;
 
@@ -93,7 +93,7 @@ _ctrlEye ctrlSetText _visualtext;
 	Audible:
 */
 _audibletext = "";
-_audible = round((dayz_disAudial / 50) * 4) min 5;
+    _audible = (round((dayz_disAudial / 50) * 4)) min 5;
 if (_audible > 0) then {_audibletext = "\z\addons\dayz_code\gui\val_" + str(_audible) + "_ca.paa"};
 _ctrlEar ctrlSetText _audibletext;
 

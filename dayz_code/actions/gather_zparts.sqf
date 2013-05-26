@@ -1,4 +1,4 @@
-private["_hasKnife","_qty","_item","_text","_string","_type","_loop","_meat","_timer"];
+private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finished","_animState","_isMedic","_array","_hasHarvested","_hasKnifeBlunt"];
 
 if(TradeInprogress) exitWith { cutText ["Gutting zombie already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -8,15 +8,15 @@ _hasKnife = 	"ItemKnife" in items player;
 _hasKnifeBlunt = 	"ItemKnifeBlunt" in items player;
 _type = typeOf _item;
 _hasHarvested = _item getVariable["meatHarvested",false];
-_config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
+//_config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
 
 player removeAction s_player_butcher;
 s_player_butcher = 1;
 
 if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type
-	_loop = true;	
-	_isListed =		isClass (_config);
+	//_loop = true;	
+	//_isListed =		isClass (_config);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 	
 	// force animation 
@@ -53,7 +53,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 		cutText ["Canceled gutting." , "PLAIN DOWN"];
-		_abort = true;
+		//_abort = true;
 	};
 
 	_hasHarvested = _item getVariable["meatHarvested",false];

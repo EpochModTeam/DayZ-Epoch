@@ -1,4 +1,4 @@
-private["_onLadder","_itemorignal","_hasfooditem","_rawfood","_cookedfood","_hasoutput","_config","_text","_regen","_dis","_sfx","_Cookedtime","_itemtodrop","_nearByPile","_item","_display"];
+private ["_onLadder","_itemorignal","_hasfooditem","_rawfood","_hasoutput","_config","_text","_regen","_dis","_sfx","_itemtodrop","_nearByPile","_item","_display","_rawexceptions","_badfood"];
 disableserialization;
 call gear_ui_init;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -14,7 +14,7 @@ _hasfooditem = _itemorignal in magazines player;
 
 _rawfood = _itemorignal in meatraw;
 _rawexceptions = _itemorignal in exceptionsraw;
-_cookedfood = _itemorignal in meatcooked;
+//_cookedfood = _itemorignal in meatcooked;
 _hasoutput = _itemorignal in food_with_output;
 
 _badfood = _itemorignal in badfood;

@@ -1,4 +1,4 @@
-private ["_vehicle","_started","_finished","_animState","_isMedic"];
+private ["_vehicle","_started","_finished","_animState","_isMedic","_soundSource"];
 
 if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;

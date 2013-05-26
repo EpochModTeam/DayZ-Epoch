@@ -1,4 +1,4 @@
-private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
+private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 		disableSerialization;
 		waitUntil {
 			_display = findDisplay 49;
@@ -24,7 +24,7 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 			switch true do {
 				case ({isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1) : {
 					_btnAbort ctrlEnable false;
-					cutText [format[localize "str_abort_playerclose",_text], "PLAIN DOWN"];
+					cutText [localize "str_abort_playerclose", "PLAIN DOWN"];
 				};
 				case (_timeOut < _timeMax && count (player nearEntities ["zZombie_Base", 35]) > 0) : {
 					_btnAbort ctrlEnable false;
@@ -38,7 +38,7 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 				case (player getVariable["combattimeout", 0] >= time) : {
 					_btnAbort ctrlEnable false;
 					//cutText ["Cannot Abort while in combat!", "PLAIN DOWN"];
-					cutText [format[localize "str_abort_playerincombat",_text], "PLAIN DOWN"];					
+					cutText [localize "str_abort_playerincombat", "PLAIN DOWN"];					
 				};
 				default {
 					_btnAbort ctrlEnable true;

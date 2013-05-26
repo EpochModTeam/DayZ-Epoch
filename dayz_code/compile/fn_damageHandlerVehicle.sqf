@@ -4,12 +4,12 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_hit","_damage","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_total"];
+private ["_unit","_hit","_damage","_total"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
-_source = _this select 3;
-_ammo = _this select 4;
+//_source = _this select 3;
+//_ammo = _this select 4;
 _total = _damage;
 
 //diag_log ("DAMAGE VEH: " + typeof(_unit) + " / " + str(_hit) + " / " + str(_damage) + " / " + str(getDammage _unit));

@@ -67,7 +67,7 @@ _v
 _sign = [1,-1] select (_pitch < 0);
 
 //cut off numbers above 180
-while {abs _pitch > 180} do {_pitch = _sign*(abs _pitch - 180)};
+while {abs _pitch > 180} do {_pitch = _sign*((abs _pitch) - 180)};
 
 //we can't use pitch that is exactly equal to 90, because then the engine doesn't know what 2d compass direction the object is facing
 if(abs _pitch == 90) then {_pitch = _sign*(89.9)};
@@ -102,7 +102,7 @@ _vdir = [_vdir, _yaw] call _rotate;
 _sign = [1,-1] select (_bank < 0);
 
 //cut off numbers above 360
-while {abs _bank > 360} do {_bank = _sign*(abs _bank - 360)};
+while {abs _bank > 360} do {_bank = _sign*((abs _bank) - 360)};
 
 //reflect numbers above 180
 if(abs _bank > 180) then {_sign = -1*_sign; _bank = (360-_bank)*_sign};

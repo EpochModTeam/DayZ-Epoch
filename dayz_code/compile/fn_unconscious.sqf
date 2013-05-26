@@ -1,3 +1,4 @@
+private ["_timeout","_isOnDeck","_isInLocation","_inVehicle","_bloodLow","_isHospital","_totalTimeout","_display","_ctrl1","_ctrl1Pos"];
 disableSerialization;
 if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 	//Unconscious Meter
@@ -25,7 +26,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		sleep 1;
 		_isOnDeck = false; //getPos player in LHA_Deck;
 		_isInLocation = false; //getPos player in LHA_Location;
-		_inVehicle = (vehicle _unit != _unit);
+		_inVehicle = (vehicle player != player);
 		_bloodLow = ((r_player_blood/r_player_bloodTotal) < 0.5);
 		if ((surfaceIsWater (getPosASL player)) and !_isOnDeck and !_inVehicle) then {
 			player setpos [(getPosASL player select 0),(getPosASL player select 1),0.3];

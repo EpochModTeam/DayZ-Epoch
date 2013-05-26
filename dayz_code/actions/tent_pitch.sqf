@@ -1,4 +1,4 @@
-private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","_key"];
+private ["_location","_isOk","_pondPos","_isPond","_dir","_dis","_sfx","_classname","_object","_playerPos","_item","_hastentitem","_building","_config","_text","_objectsPond"];
 //check if can pitch here
 call gear_ui_init;
 _playerPos = 	getPosATL player;

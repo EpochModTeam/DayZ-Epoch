@@ -1,4 +1,4 @@
-private["_location","_isOk","_dir","_classname","_item"];
+private ["_location","_isOk","_dir","_classname","_item","_cancel","_location3","_location4","_location1","_location2","_counter","_hasbuilditem","_dis","_sfx","_object","_onLadder","_isWater","_text","_offset_x","_offset_y","_offset_z","_offset_z_attach","_tmpbuilt","_built_location"];
 
 if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

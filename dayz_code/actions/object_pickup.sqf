@@ -1,4 +1,4 @@
-private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_control","_dialog","_item","_val","_max","_bolts","_quivers","_quiver","_broken"];
+private ["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_broken","_playerNear","_obj","_qty"];
 
 // Exit if player zombie
 if(player isKindOf "PZombie_VB") exitWith {};
@@ -60,7 +60,7 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 };
 
 // test to see if item still exists just before adding and removing
-if(_holder == objNull) exitWith { TradeInprogress = false; };
+if(isNull _holder) exitWith { TradeInprogress = false; };
 
 _obj = nearestObjects [(getPosATL player), [(typeOf _holder)], 5];
 _qty = count _obj;

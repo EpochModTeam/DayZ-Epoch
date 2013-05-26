@@ -1,4 +1,4 @@
-private ["_gen","_caller","_id","_NV","_NVOn","_OldAperture"];
+private ["_gen","_caller","_id","_NV","_NVOn","_new","_inc","_newap"];
 
 _gen = _this select 0;
 _caller = _this select 1;

@@ -13,7 +13,7 @@
 	_dog = Intended target of the script.
 */
 
-private["_target", "_caller", "_id", "_dog", "_pos", "_fsmid"];
+private ["_target","_caller","_id","_dog","_fsmid","_animalID"];
 _target = 	_this select 0;
 _caller = 	_this select 1;
 _id =		_this select 2;

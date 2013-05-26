@@ -1,4 +1,4 @@
-private["_none"];
+private ["_buy","_metals_conversion","_cancel"];
 
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

@@ -1,4 +1,4 @@
-private["_object","_change","_humanity","_timeStart"];
+private ["_object","_change","_humanity","_wait"];
 //Set Variables
 _object = _this select 0;
 _change = _this select 1;
@@ -14,7 +14,7 @@ if (_object == player) then {
 			waitUntil{!(player getVariable ["freeTarget",false])};
 		};
 		player setVariable ["freeTarget",true,true];
-		_timeStart = time;
+		//_timeStart = time;
 		sleep _wait;
 		player setVariable ["freeTarget",false,true];
 		

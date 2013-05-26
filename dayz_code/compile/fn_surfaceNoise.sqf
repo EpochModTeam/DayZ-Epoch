@@ -1,5 +1,5 @@
 //Assess Terrain
-private["_unit","_pos","_type","_typeA","_soundType","_soundVal","_array","_test"];
+private ["_unit","_pos","_type","_typeA","_soundType","_soundVal","_array"];
 _unit = 	_this;
 _pos = 		getPosATL _unit;
 _type = 	surfaceType _pos;
@@ -7,7 +7,7 @@ _typeA = 	toArray _type;
 _typeA 		set [0,"DEL"];
 _typeA = 	_typeA - ["DEL"];
 _type = 	toString _typeA;
-_test = 	0;
+// _test = 	0;
 
 //diag_log ("FINDME: " + _type);
 

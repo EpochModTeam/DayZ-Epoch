@@ -1,4 +1,4 @@
-private["_flare"];
+private ["_flare","_text"];
 _flare = _this select 3;
 player playActionNow "PutDown";
 sleep 2;

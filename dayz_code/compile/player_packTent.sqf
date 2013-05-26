@@ -1,7 +1,7 @@
 /*
 [_obj] spawn player_packTent;
 */
-private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_dis","_sfx","_classname","_location"];
 
 if(TradeInprogress) exitWith { cutText ["Pack tent already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

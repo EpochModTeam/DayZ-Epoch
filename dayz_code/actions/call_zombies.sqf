@@ -1,5 +1,5 @@
-private ["_item","_id"];
-_item = _this select 3;
+private [];
+//_item = _this select 3;
 
 // remove menu
 player removeAction s_player_callzombies;

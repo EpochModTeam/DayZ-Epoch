@@ -1,4 +1,4 @@
-private["_zombie","_type","_chance","_rnd","_sound"];
+private ["_sound","_num","_length","_pause"];
 while {!r_player_dead} do {
 	_num = round(random 35);
 	_sound = "z_suspense_" + str(_num);

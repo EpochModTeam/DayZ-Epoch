@@ -1,4 +1,4 @@
-private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_continue","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
+private ["_listTalk","_group","_eyeDir","_attacked","_continue","_type","_chance","_last","_refObj","_inAngle","_tPos","_zPos","_cantSee","_entHeight","_delta","_targets","_lowBlood","_pHeight"];
 _refObj = vehicle player;
 _listTalk = (getPos _refObj) nearEntities ["zZombie_Base",80];
 _pHeight = (getPosATL _refObj) select 2;
@@ -10,13 +10,14 @@ _attacked = false;
 {
 	_continue = true;
 	_type = "zombie";
-	_targets = _group getVariable ["targets",[]];
 
 	if (alive _x && _continue) then {
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
 
+        	_targets = _group getVariable ["targets",[]];
+        
 		_chance = 1;
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
 			if (_type == "zombie") then { [_x,"attack",(_chance),true] call dayz_zombieSpeak; };

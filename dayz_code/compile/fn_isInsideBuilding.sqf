@@ -1,9 +1,9 @@
-private["_unit1","_building","_type","_relPos","_boundingBox","_min","_max","_myX","_myY","_myZ","_inside"];
+private ["_unit1","_building","_relPos","_boundingBox","_min","_max","_myX","_myY","_myZ","_inside"];
 _unit1 = _this select 0;
 //_building = _this select 1;
 _building = nearestObject [player, "HouseBase"];
  
-_type = typeOf _building;
+//_type = typeOf _building;
 _relPos = _building worldToModel (getPosATL _unit1);
 _boundingBox = boundingBox _building;
 //diag_log ("DEBUG: Building: " + str(_building) );

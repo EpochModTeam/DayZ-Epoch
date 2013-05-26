@@ -1,7 +1,7 @@
-private["_object","_position"];
+private ["_object"];
 _object = _this select 3;
 
-_position = [position _object,0,0,0,0,0,0,position player] call BIS_fnc_findSafePos;
+// _position = [position _object,0,0,0,0,0,0,position player] call BIS_fnc_findSafePos;
 
 //Standup
 //player playMove "amovpercmstpsraswrfldnon_amovpknlmstpslowwrfldnon";

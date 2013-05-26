@@ -1,4 +1,4 @@
-private["_item","_config","_onLadder","_create","_isOk","_config2","_consume"];
+private ["_item","_config","_onLadder","_create","_started","_finished","_animState","_isMedic","_qty","_box","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
 
 if(TradeInprogress) exitWith { cutText ["Copy key already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

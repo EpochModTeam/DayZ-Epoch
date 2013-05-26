@@ -1,11 +1,12 @@
+private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","_lastused","_text"];
 // bleed.sqf
 _unit = (_this select 3) select 0;
-_lowBlood = 	_unit getVariable ["USEC_lowBlood", false];
-_injured = 		_unit getVariable ["USEC_injured", false];
-_inPain = 		_unit getVariable ["USEC_inPain", false];
+//_lowBlood = 	_unit getVariable ["USEC_lowBlood", false];
+//_injured = 		_unit getVariable ["USEC_injured", false];
+//_inPain = 		_unit getVariable ["USEC_inPain", false];
 _lastused = 	_unit getVariable ["LastTransfusion", time];
 
-// if (_lastused - time < 600) exitwith {cutText [format[(localize "str_actions_medical_18"),_text] , "PLAIN DOWN"]};
+if (_lastused - time < 60) exitwith {cutText [format[(localize "str_actions_medical_18"),_text] , "PLAIN DOWN"]};
 
 call fnc_usec_medic_removeActions;
 r_action = false;

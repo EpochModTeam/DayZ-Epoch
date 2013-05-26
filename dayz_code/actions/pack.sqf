@@ -1,3 +1,4 @@
+private ["_array","_object","_type"];
 _array = _this select 3;
 _object = _array select 0;
 _type = TypeOf(_object);

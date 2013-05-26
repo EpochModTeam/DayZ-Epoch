@@ -1,4 +1,4 @@
-private["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_currentCamera"];
+private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_newBackpackType","_backpackWpn","_backpackMag","_backpackWpnTypes","_backpackWpnQtys","_countr","_backpackmagTypes","_backpackmagQtys","_playerObjName"];
 _class 			= _this;
 
 _position 		= getPosATL player;
@@ -128,7 +128,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	if (!isNil "_newBackpackType") then {
 		if (_newBackpackType != "") then {
 			_newUnit addBackpack _newBackpackType;
-			_oldBackpack = dayz_myBackpack;
+			//_oldBackpack = dayz_myBackpack;
 			dayz_myBackpack = unitBackpack _newUnit;
 
 

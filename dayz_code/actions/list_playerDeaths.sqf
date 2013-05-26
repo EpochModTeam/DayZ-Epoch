@@ -1,4 +1,4 @@
-private["_activatingPlayer","_trader_id","_category","_action","_id","_type","_loc","_name","_qty","_cost","_qty","_sell","_cur","_order","_tid","_currency","_actionFile","_in","_out","_part","_cat","_cancel","_Display","_File","_textCurrency","_textPart"];
+private ["_activatingPlayer"];
 
 // [ _trader_id, _category, _action ];
 _activatingPlayer = _this select 1;

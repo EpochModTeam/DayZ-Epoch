@@ -19,7 +19,7 @@ Missing:
 */
 
 
-	private ["_looptime","_sun_factor","_building_factor","_vehicle_factor","_fire_factor","_water_factor","_rain_factor","_night_factor","_wind_factor","_height_mod","_difference","_hasfireffect","_isinbuilding","_isinvehicle","_raining","_sunrise","_building"];
+	private ["_looptime","_sun_factor","_building_factor","_vehicle_factor","_fire_factor","_water_factor","_rain_factor","_night_factor","_wind_factor","_height_mod","_difference","_isinbuilding","_isinvehicle","_raining","_sunrise","_building","_fireplaces","_daytime","_temp","_moving_factor"];
 
 	_looptime 			= _this;
 	
@@ -38,7 +38,7 @@ Missing:
 	_wind_factor		=	-1;
 	
 	_difference 	= 0;
-	_hasfireffect	= false;
+	// _hasfireffect	= false;
 	_isinbuilding	= false;
 	_isinvehicle	= false;
 	
@@ -65,7 +65,7 @@ Missing:
 	if(({inflamed _x} count _fireplaces) > 0 && !_isinvehicle ) then {
 		//Math: factor * 1 / (0.5*(distance max 1)^2) 		0.5 = 12.5% of the factor effect in a distance o 4 meters
 		_difference 	= _difference + (_fire_factor /(0.5*((player distance (_fireplaces select 0)) max 1)^2));
-		_hasfireffect 	= true;
+		//_hasfireffect 	= true;
 	};
 	
 	//building
@@ -98,12 +98,12 @@ Missing:
 		s = sunrise
 		d = daytime
 		
-		I:	a = f / (12 - s)²
-		II:	t = -a * (d - 12)² + f
+		I:	a = f / (12 - s)ï¿½
+		II:	t = -a * (d - 12)ï¿½ + f
 		
 		I + II =>
 		
-		t = -(f / (12 - s)²) * (d - 12)² + f
+		t = -(f / (12 - s)ï¿½) * (d - 12)ï¿½ + f
 		
 		Parabel with highest Point( greatest Effect == _sun_factor) always at 12.00
 		Zero Points are always at sunrise and sunset -> Only Positiv Values Possible

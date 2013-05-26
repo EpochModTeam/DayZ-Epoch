@@ -1,6 +1,6 @@
-private["_zombiebody","_qty","_type","_meat","_loop"];
+private ["_zombiebody","_ehLoc"];
 _zombiebody = _this select 0;
-_qty = _this select 1;
+// _qty = _this select 1;
 
 if (local _zombiebody) then {
 	_zombiebody addMagazine "ItemZombieParts";

@@ -1,10 +1,10 @@
-private["_unit","_projectile","_isInCombat"];
+private ["_unit","_projectile","_isInCombat","_currentNear","_projectilespeed","_projectflight","_listNear","_callCount","_nearVehicle"];
 _unit =         _this select 0;
 _projectile = 	_this select 6;
 
 diag_log ("0");
 
-_isInComat = _unit getVariable["startcombattimer",0];
+//_isInComat = _unit getVariable["startcombattimer",0];
 
 diag_log ("Bullit Speed: " +str(Speed _projectile));
 diag_log ("Bullit Velocity: " +str(velocity _projectile));

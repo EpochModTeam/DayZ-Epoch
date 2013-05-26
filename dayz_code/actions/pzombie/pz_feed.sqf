@@ -1,6 +1,6 @@
-private ["_item","_id","_regen","_isAnimal","_animalType","_isMan","_config","_isListed","_qty","_ent","_ctrlBlood","_rnd","_move","_display","_control","_bloodVal"];
+private ["_item","_regen","_isAnimal","_animalType","_isMan","_config","_isListed","_qty","_ctrlBlood","_rnd","_move","_display","_control","_bloodVal"];
 _item = _this select 3;
-_ent = _item;
+// _ent = _item;
 
 disableSerialization;
 
@@ -9,7 +9,7 @@ s_player_butcher = 1;
 
 if(!(alive _item)) then {
 
-	_rnd = round(random 4) + 1;
+    _rnd = (round(random 4)) + 1;
 	_move = "ZombieFeed" + str(_rnd);
 	player playMoveNow _move;
 
@@ -76,6 +76,7 @@ if(!(alive _item)) then {
 	_control = 	_display displayCtrl 1301;
 	_control ctrlShow true;
 
+    _ctrlBlood = 	_display displayCtrl 1300;
 	_bloodVal =		r_player_blood / r_player_bloodTotal;
 	if (_bloodVal >= 0.2) then {
 		_ctrlBlood ctrlShow true;

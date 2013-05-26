@@ -1,4 +1,4 @@
-private["_radius","_position","_inVehicle","_dateNow","_age","_locationstypes","_nearestCity","_nearbyBuildings","_nearby","_type","_config","_canZombie","_canLoot","_dis","_keepAwayDist","_isNoone","_looted","_cleared"];//_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings
+private ["_radius","_position","_inVehicle","_dateNow","_age","_locationstypes","_nearestCity","_type","_looted","_cleared","_nearByObj","_handle","_x"];//_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings
 
 _radius = _this select 0;
 _position = _this select 1;

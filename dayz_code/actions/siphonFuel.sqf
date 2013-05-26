@@ -1,4 +1,4 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText","_availableCansEmpty","_availableCans"];
+private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText","_availableCansEmpty"];
 
 if(TradeInprogress) exitWith { cutText ["Siphon already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
@@ -14,7 +14,7 @@ _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameText = 	getText(_configVeh >> "displayName");
 
 _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
-_availableCans = ["ItemJerrycan","ItemFuelBarrel"];
+// _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 // Loop to find containers that can could hold fuel and fill them
 {

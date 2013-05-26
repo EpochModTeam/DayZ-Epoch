@@ -1,4 +1,4 @@
-private["_vehicle","_part","_hitpoint","_type","_selection","_array"];
+private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_num_removed","_damage","_dis","_sfx","_allFixed","_id","_hasToolbox","_section","_nameType","_namePart","_hitpoints"];
 
 if(TradeInprogress) exitWith { cutText ["Repair already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

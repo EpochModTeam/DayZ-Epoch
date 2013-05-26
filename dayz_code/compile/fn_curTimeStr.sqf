@@ -1,3 +1,4 @@
+private ["_hrStr","_minStr","_curDate","_hr","_min"];
 _curDate = date;
 _hr = _curDate select 3;
 _min = _curDate select 4;

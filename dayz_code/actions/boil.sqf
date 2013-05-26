@@ -1,4 +1,4 @@
-private["_hasbottleitem","_hastinitem","_bottletext","_tin1text","_tin2text","_tintext","_qty","_dis","_sfx"];
+private ["_hasbottleitem","_hastinitem","_bottletext","_tin1text","_tin2text","_tintext","_qty","_dis","_sfx","_removed"];
 
 if(TradeInprogress) exitWith { cutText ["Boil already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

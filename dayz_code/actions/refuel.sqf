@@ -1,4 +1,4 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canName","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCan","_configVeh","_capacity","_nameText","_availableCansEmpty","_availableCans"];
+private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canName","_canSize","_configCan","_configVeh","_capacity","_nameText","_availableCans","_canText"];
 
 if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;

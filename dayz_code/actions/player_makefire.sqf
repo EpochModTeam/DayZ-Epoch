@@ -1,4 +1,4 @@
-private["_location","_isOk","_dir","_classname"];
+private ["_location","_isOk","_dir","_classname","_fire","_hasWood"];
 _location = player modeltoworld [0,0.3,0];
 if ((_location select 2) < 0) then {
 	_location set [2,0];
@@ -18,7 +18,7 @@ if (_hasWood) then {
 		_fire setDir _dir;
 		player reveal _fire;
 		
-		_id = _fire spawn player_fireMonitor;
+		_fire spawn player_fireMonitor;
 		
 		cutText [localize "str_fireplace_01", "PLAIN DOWN"];
 	} else {

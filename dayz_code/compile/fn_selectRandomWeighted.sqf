@@ -18,7 +18,7 @@ scriptName "Functions\arrays\fn_selectRandomWeighted.sqf";
 	[*] Algorithm is inefficient?
 */
 
-private ["_array", "_weights","_index","_weighted","_i"];
+private ["_array","_weights","_index","_weighted"];
 _array = _this select 0;
 _weights = _this select 1;
 

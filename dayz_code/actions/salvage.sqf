@@ -1,9 +1,9 @@
-private["_vehicle","_part","_hitpoint","_type","_selection","_array"];
+private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_isOK","_brokenPart","_findPercent","_damage","_hasToolbox","_nameType","_namePart"];
 
 if(TradeInprogress) exitWith { cutText ["Salvage already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-_id = _this select 2;
+//_id = _this select 2;
 _array = 	_this select 3;
 _vehicle = 	_array select 0;
 _part =		_array select 1;
@@ -28,7 +28,7 @@ if (_hasToolbox) then {
 	player playActionNow "Medic";
 
 	[player,"repair",0,false] call dayz_zombieSpeak;
-	null = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+	[player,50,true,(getPosATL player)] spawn player_alertZombies;
 
 	r_interrupt = false;
 	_animState = animationState player;
@@ -97,16 +97,11 @@ if (_hasToolbox) then {
 					cutText [format["You have successfully removed %1 from the %2",_namePart,_nameType], "PLAIN DOWN"];
 				};
 
-
-			
-
 			} else {
 				cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 			};
-
 		
 		};
-
 	
 	} else {
 		r_interrupt = false;

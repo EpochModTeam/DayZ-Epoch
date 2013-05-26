@@ -2,7 +2,7 @@
 _item spawn player_wearClothes;
 Added Female skin changes - DayZ Epoch - vbawol
 */
-private["_item","_onLadder","_hasclothesitem","_config","_text","_isFemale","_myModel","_itemNew","_currentSex","_newSex","_model"];
+private ["_item","_onLadder","_hasclothesitem","_config","_text","_myModel","_itemNew","_currentSex","_newSex","_model"];
 
 if(TradeInprogress) exitWith { cutText ["Changing clothes already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;

@@ -1,10 +1,12 @@
+
+private ["_unit","_humanityHit","_myKills","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_isCardiac","_isHeadHit","_isMinor","_scale","_canHitFree","_rndPain","_rndInfection","_hitInfection","_lowBlood","_isPZombie","_source","_ammo","_unitIsPlayer"];
 scriptName "Functions\misc\fn_damageHandler.sqf";
 /***********************************************************
 	PROCESS DAMAGE TO A UNIT
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private ["_unit","_humanityHit","_myKills","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_isCardiac","_isHeadHit","_isMinor","_scale","_canHitFree","_rndPain","_rndInfection","_hitInfection","_lowBlood","_isPZombie","_source","_ammo","_unitIsPlayer"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -14,8 +16,8 @@ _ammo = _this select 4;
 _type = [_damage,_ammo] call fnc_usec_damageType;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
-_evType = "";
-_recordable = false;
+//_evType = "";
+//_recordable = false;
 _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
@@ -161,7 +163,7 @@ if (_damage > 0.4) then {	//0.25
 			};
 		};
 		if ((_damage > 1.5) and _isHeadHit) then {
-			_id = [_source,"shothead"] spawn player_death;
+			[_source,"shothead"] spawn player_death;
 		};
 	};
 	if(!_isHit) then {
@@ -203,7 +205,7 @@ if (_type == 1) then {
 	if (_damage > 4) then {
 		//serious ballistic damage
 		if (_unitIsPlayer) then {
-			_id = [_source,"explosion"] spawn player_death;
+			[_source,"explosion"] spawn player_death;
 		};
 	} else {
 		if (_damage > 2) then {
@@ -222,7 +224,7 @@ if (_type == 2) then {
 	if (_damage > 4) then {
 		//serious ballistic damage
 		if (_unitIsPlayer) then {
-			_id = [_source,"shotheavy"] spawn player_death;
+			[_source,"shotheavy"] spawn player_death;
 		};
 	} else {
 		if (_damage > 2) then {

@@ -400,6 +400,10 @@ if(isNil "dayz_maxpos") then {
 	dayz_maxpos = 20000;
 };
 
+if(isNil "dayz_zedsAttackVehicles") then {
+	dayz_zedsAttackVehicles = false;
+};
+
 // update objects
 dayz_updateObjects = ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage","M240Nest_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ"];
 dayz_disallowedVault = ["TentStorage", "BuiltItems"];

@@ -1,4 +1,4 @@
-private["_position","_unitTypes","_group","_unit","_target","_bodies","_targetPos","_codeSpawns","_unitSpawn","_lead","_isAlive","_units"];
+private ["_position","_target","_targetPos","_isAlive","_list","_isSomeone","_myDest","_agent"];
 //Definitions
 _agent = _this select 0;
 
@@ -8,6 +8,7 @@ _agent = _this select 0;
 //Loop behaviour
 _list = (getposATL _agent) nearEntities ["Man",200];
 _isSomeone = ({isPlayer _x} count _list) > 0;
+_isAlive = alive _agent;
 while {_isAlive and _isSomeone} do {
 //NO TARGET
 	_agent disableAI "FSM";

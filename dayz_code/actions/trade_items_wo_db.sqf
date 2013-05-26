@@ -1,4 +1,4 @@
-private["_activatingPlayer","_part_out","_part_in","_qty_out","_qty_in","_buy_o_sell","_textPartIn","_textPartOut","_traderID","_counter","_failed","_qty","_isOk","_needed"];
+private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades"];
 // [part_out,part_in, qty_out, qty_in,];
 
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
@@ -10,7 +10,7 @@ _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;
 _qty_out = (_this select 3) select 2;
 _qty_in = (_this select 3) select 3;
-_buy_o_sell = (_this select 3) select 4;
+// _buy_o_sell = (_this select 3) select 4;
 _textPartIn = (_this select 3) select 5;
 _textPartOut = (_this select 3) select 6;
 //_traderID = (_this select 3) select 7;

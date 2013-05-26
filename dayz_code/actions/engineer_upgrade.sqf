@@ -1,3 +1,4 @@
+private ["_array","_object","_magazine","_classname","_dir","_location","_weapon"];
 _array = _this select 3;
 _object = _array select 0;
 _magazine = _array select 1;

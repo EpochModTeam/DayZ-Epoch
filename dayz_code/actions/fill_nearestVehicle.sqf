@@ -1,4 +1,4 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canName","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCan","_configVeh","_capacity","_nameText","_availableCansEmpty","_availableCans"];
+private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
 
 if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
@@ -75,7 +75,7 @@ if(_IsNearVehicle >= 1) then {
 
 			// Get vehicle fuel levels again
 			_curFuel = 		((fuel _vehicle) * _capacity);
-			_newFuel = 		(_curFuel + 20);
+			_newFuel = 		(_curFuel + _canSize);
 
 			if (_newFuel > _capacity) then {_newFuel = _capacity; _abort = true; };
 

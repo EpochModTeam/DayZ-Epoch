@@ -1,4 +1,4 @@
-private["_activatingPlayer","_trader_id","_category","_action","_id","_type","_loc","_name","_qty","_cost","_qty","_sell","_cur","_order","_tid","_currency","_actionFile","_in","_out","_part","_cat","_cancel","_Display","_File","_textCurrency","_textPart","_count"];
+private ["_activatingPlayer","_trader_id","_type","_name","_sell","_order","_tid","_in","_part","_cancel","_Display","_File","_textCurrency","_textPart","_count","_btype","_stype","_bag","_bagclass","_header","_item","_buy","_sqty","_sname","_afile"];
 
 if(TradeInprogress) exitWith { cutText ["already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -9,14 +9,14 @@ TradeInprogress = true;
 _activatingPlayer = _this select 1;
 
 _trader_id = (_this select 3) select 0;
-_category = (_this select 3) select 1;
+//_category = (_this select 3) select 1;
 
 dayzTraderMenuResult = call compile format["tcacheSell_%1;",_trader_id];
 
 if(isNil "dayzTraderMenuResult") then {
 	diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
 	//["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
-	dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
+	dayzTraderMenu = [_activatingPlayer,_trader_id];
 	publicVariableServer  "dayzTraderMenu";
 	waitUntil {!isNil "dayzTraderMenuResult"};
 };
@@ -44,12 +44,12 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	_textPart =	getText(configFile >> _type >> _name >> "displayName");
 	
 	// Total in stock
-	_qty = _x select 2;
+	//_qty = _x select 2;
 	
 	// Buy Data from array
 	_buy = _x select 3;	
-	_bqty = _buy select 0;
-	_bname = _buy select 1;
+	//_bqty = _buy select 0;
+	//_bname = _buy select 1;
 	_btype = _buy select 2;
 	switch(true)do{ 
 		case (_btype == 1): { 
@@ -63,7 +63,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 		}; 
 	}; 
 	// Display Name of buy item
-	_textCurrencyBuy =	getText(configFile >> _btype >> _bname >> "displayName");
+	//_textCurrencyBuy =	getText(configFile >> _btype >> _bname >> "displayName");
 	
 	// Sell data from array
 	_sell = _x select 4;
@@ -95,7 +95,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	_File = "\z\addons\dayz_code\actions\" + _afile + ".sqf";
 	
 	// Allways 1 for now
-	_out = _sqty;
+	//_out = _sqty;
 	// qty consumed of bname
 	_in = 1;
 	

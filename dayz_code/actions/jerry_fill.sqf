@@ -1,4 +1,4 @@
-private["_hasFood","_item","_text","_qty"];
+private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx"];
 
 if(TradeInprogress) exitWith { cutText ["Fill Jerry already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -15,10 +15,10 @@ for "_x" from 1 to _qty do {
 	
 	_fillCounter = _fillCounter + 1;
 
-	if(_siphonQty == 1) then {
+	if(_qty == 1) then {
 		cutText ["Preparing to siphon, stand still to fill empty jerry can.", "PLAIN DOWN"];
 	} else {
-		cutText [format[("Preparing to siphon, stand still to fill empty jerry can %1 of %2."),_fillCounter,_siphonQty] , "PLAIN DOWN"];
+		cutText [format[("Preparing to siphon, stand still to fill empty jerry can %1 of %2."),_fillCounter,_qty] , "PLAIN DOWN"];
 	};
 
 	// force animation 

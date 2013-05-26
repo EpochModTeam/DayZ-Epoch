@@ -1,4 +1,4 @@
-private["_hasFood","_item","_text","_qty"];
+private ["_text","_qty","_canFill","_isWell","_objectsWell","_pondPos","_isPond","_objectsPond","_dis","_sfx","_playerPos","_onLadder","_hasbottleitem","_config"];
 
 call gear_ui_init;
 
@@ -14,7 +14,7 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hasbottleitem = _this in magazines player;
 
-_config = configFile >> "CfgMagazines" >> _item;
+_config = configFile >> "CfgMagazines" >> _this;
 _text = getText (_config >> "displayName");
 
 if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_text,"fill"] , "PLAIN DOWN"]};

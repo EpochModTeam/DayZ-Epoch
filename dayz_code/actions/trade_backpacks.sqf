@@ -1,4 +1,4 @@
-private["_iarray","_part_out","_part_in","_qty_out","_qty_in","_qty"];
+private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_bos","_bag","_class","_started","_finished","_animState","_isMedic","_num_removed","_needed","_activatingPlayer","_buy_o_sell","_textPartIn","_textPartOut","_traderID"];
 //		   [part_out,part_in, qty_out, qty_in,];
 
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };

@@ -1,4 +1,4 @@
-private["_unit","_distance","_i","_listTalk","_zombie","_targets","_pos"];
+private ["_unit","_distance","_listTalk","_zombie","_targets","_pos","_doRun"];
 //Alert Zed's to noise of shot
 _unit = 	_this select 0;
 _distance = _this select 1;

@@ -1,4 +1,4 @@
-private["_charID", "_friendlies", "_rcharID", "_rfriendlyTo", "_tag", "_player", "_newTagList"];
+private ["_charID","_friendlies","_rcharID","_rfriendlyTo","_tag","_player","_newTagList","_position","_rfriendlies","_tagList"];
 _charID = player getVariable ["characterID", "0"];
 _friendlies = player getVariable ["friendlies", []];
 _tagList = player getVariable ["tagList", []];

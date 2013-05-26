@@ -1,4 +1,4 @@
-private["_unit","_hp","_selection","_strH","_dam","_display"];
+private ["_unit","_selection","_strH","_dam","_display","_id","_break","_ctrlFracture","_total","_damage"];
 disableSerialization;
 _unit =			_this select 0;
 _selection =	_this select 1;

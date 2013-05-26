@@ -15,7 +15,7 @@ if (_canLoot) then {
 	_max = 			getNumber (_config >> "maxRoaming");
 //Walking Zombies
 	//_num = round(random _max) min _min;
-	_num = round(random _max) max _min;
+    _num = (round(random _max)) max _min;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 //Get zombie class
 	_zombieChance =	getNumber (_config >> "zombieChance");

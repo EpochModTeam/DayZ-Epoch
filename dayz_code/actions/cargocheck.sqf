@@ -1,4 +1,4 @@
-private ["_vehicle","_class","_maxMagazines","_maxWeapons","_maxBackpacks","_magazineCount","_weaponsCount","_backpackCount"];
+private ["_vehicle","_class","_maxMagazines","_maxWeapons","_maxBackpacks","_magazineCount","_weaponsCount","_backpackCount","_magazineCount_raw","_weaponsCount_raw","_backpackCount_raw"];
 _vehicle = _this select 3;
 
 _class = typeOf _vehicle;

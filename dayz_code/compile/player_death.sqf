@@ -1,4 +1,4 @@
-private["_array","_source","_kills","_killsV","_humanity","_wait","_myKills","_infected"];
+private ["_array","_source","_kills","_killsV","_humanity","_wait","_myKills","_infected","_canHitFree","_myHumanity","_method","_body","_playerID","_id","_myGroup"];
 if (deathHandled) exitWith {};
 
 deathHandled = true;

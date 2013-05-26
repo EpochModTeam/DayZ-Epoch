@@ -1,3 +1,4 @@
+private ["_target","_position","_camera"];
 titleCut ["","BLACK FADED",10e10];
 
 setViewDistance 3000;

@@ -14,7 +14,7 @@
 	_dog = Intended target of the script.
 */
 
-private["_target", "_caller", "_id", "_dog", "_pos", "_fsmid"];
+private ["_target","_caller","_id","_dog","_fsmid","_removed","_selected","_animalID","_textRemoved","_chanceToFail","_itemIn","_countIn"];
 _target = 	_this select 0;
 _caller = 	_this select 1;
 _id =		_this select 2;
@@ -40,7 +40,7 @@ if(_removed == _countIn) then {
 	_textRemoved = getText(configFile >> "CfgMagazines" >> _selected >> "displayName");
 	
 	// add failure rate based on skill level variable (days alive) 
-	_chanceToFail = ((random 1 + (dayz_skilllevel/100)) > 0.5);
+    _chanceToFail = (((random 1) + (dayz_skilllevel/100)) > 0.5);
 	
 	if(!_chanceToFail) then { 
 		

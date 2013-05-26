@@ -1,4 +1,4 @@
-private ["_array", "_handle", "_type", "_onLadder"];
+private ["_array","_handle","_type","_onLadder","_removed","_itemIn","_countIn"];
 _array = 	_this select 3;
 _handle = 	_array select 0;
 _type = 	_array select 1;

@@ -1,4 +1,4 @@
-private["_item","_hasKnife","_hasKnifeBlunt","_hasHarvested","_qty","_text","_string","_type"];
+private ["_item","_hasKnife","_hasKnifeBlunt","_hasHarvested","_qty","_text","_string","_type","_started","_finished","_animState","_isMedic","_array","_isListed","_config"];
 
 if(TradeInprogress) exitWith { cutText ["Gutting animal already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -52,7 +52,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 		cutText ["Canceled gutting." , "PLAIN DOWN"];
-		_abort = true;
+		//_abort = true;
 	};
 
 	_hasHarvested = _item getVariable["meatHarvested",false];

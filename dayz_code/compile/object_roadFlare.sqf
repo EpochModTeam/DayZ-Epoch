@@ -1,11 +1,11 @@
-private["_flare","_sfx","_isLocal","_lightArea","_lightSpark","_type","_color"];
+private ["_flare","_lightArea","_lightSpark","_type","_color"];
 _flare = _this select 0;
 _type = _this select 1;
-_sfx = objNull;
+//_sfx = objNull;
 if (!isNull _flare) then {
 	switch (_type) do {
 		case 0: {
-			_isLocal = local _flare;
+			//_isLocal = local _flare;
 			//Area Light
 			_lightArea = "#lightpoint" createVehicleLocal (getPosATL _flare);
 			_lightArea setLightColor [0.5,0,0]; //[0.1,0.005,0.005];

@@ -1,9 +1,9 @@
-private["_isOK","_object","_worldspace","_location","_dir","_character","_tent","_class","_id","_uid","_dam","_hitpoints","_selection","_array","_damage","_randFuel","_fuel","_key","_result","_outcome","_totaldam","_parts","_retry","_done","_spawnDMG"];
+private ["_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID"];
 
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;
-_spawnDMG =		_this select 3;
+// _spawnDMG =		_this select 3;
 _keySelected =  _this select 4;
 
 _isOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
@@ -27,13 +27,13 @@ _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
 [_object,_uid,_characterID,_class,_dir,_location] spawn {
-   private["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_selection","_dam","_class"];
+   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para"];
 
    _object = _this select 0;
    _uid = _this select 1;
    _characterID = _this select 2;
    _class = _this select 3;
-   _dir = _this select 4;
+   //_dir = _this select 4;
    _location = _this select 5;
 
    _done = false;
