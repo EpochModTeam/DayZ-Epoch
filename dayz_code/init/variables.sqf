@@ -400,6 +400,12 @@ if(isNil "dayz_maxpos") then {
 	dayz_maxpos = 20000;
 };
 
+if(isNil "dayz_zedSpawnVehCount") then {
+	dayz_zedSpawnVehCount = dayz_maxLocalZombies / 2;
+};
+if(isNil "dayz_spawnAirCount") then {
+	dayz_spawnAirCount = 5;
+};
 if(isNil "dayz_zedsAttackVehicles") then {
 	dayz_zedsAttackVehicles = true;
 };

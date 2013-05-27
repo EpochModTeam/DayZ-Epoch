@@ -13,10 +13,10 @@ _radius = 200;
 _position = getPosATL player;
 
 if (_inVehicle) then {
-	_maxZombies = _maxZombies / 2;
+	_maxZombies = dayz_zedSpawnVehCount;
 };
 if (_isAir) then {
-	_maxZombies = 5
+	_maxZombies = dayz_spawnAirCount;
 };
 
 

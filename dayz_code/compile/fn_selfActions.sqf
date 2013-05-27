@@ -149,7 +149,9 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	
 	_isFuel = false;
 	if (_hasFuelE) then {
-		_isFuel = (_typeOfCursorTarget in dayz_fuelsources);
+		{
+			if(_cursorTarget isKindOf _x) exitWith {_isFuel = true;};
+		} forEach dayz_fuelsources;
 	};
 
 	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
