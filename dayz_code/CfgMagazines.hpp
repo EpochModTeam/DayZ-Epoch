@@ -42,10 +42,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_20;
+		displayName = "Camping Tent Desert";
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_20;
+		descriptionShort = "A domed camping tent desert that can be pitched, allowing you extended storage.";
 		
 		class ItemActions {
 			class Pitch {
@@ -77,10 +77,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_20;
+		displayName = "Camping Tent Green";
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_20;
+		descriptionShort = "A domed camping tent desert that can be pitched, allowing you extended storage.";
 		class ItemActions {
 			class Pitch {
 				text = $STR_PITCH_TENT;
