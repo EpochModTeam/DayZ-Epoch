@@ -66,7 +66,7 @@ object_handleServerKilled = {
 };
 
 check_publishobject = {
-	private["_allowed","_object","_playername","_allowedObjects"];
+	private["_allowed","_object","_playername"];
 
 	_object = _this select 0;
 	_playername = _this select 1;
@@ -160,7 +160,7 @@ RoadList = MarkerPosition nearRoads DynamicVehicleArea;
 BuildingList = MarkerPosition nearObjects ["House",DynamicVehicleArea];
 
 spawn_vehicles = {
-	private["_weights","_isOverLimit","_isAbort","_counter","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition"];
+	private ["_weights","_isOverLimit","_isAbort","_counter","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_marker","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
 	
 	if (isDedicated) then {
 		waituntil {!isnil "fnc_buildWeightedArray"};
@@ -300,7 +300,7 @@ spawn_vehicles = {
 };
 
 spawn_roadblocks = {
-	private["_position","_veh","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_isRoad","_roadlist","_istoomany"];
+	private ["_position","_veh","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_istoomany","_marker","_spawnloot","_nearby","_spawnveh","_WreckList"];
 	_WreckList = ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
 	
 	waitUntil{!isNil "BIS_fnc_selectRandom"};
@@ -392,14 +392,14 @@ if(isnil "DynamicVehicleFuelHigh") then {
 // Damage generator function
 generate_new_damage = {
 	private ["_damage"];
-	_damage = (random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow) / 100;
+    _damage = ((random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow))+DynamicVehicleDamageLow) / 100;
 	_damage;
 };
 
 // Damage generator fuction
 generate_exp_damage = {
 	private ["_damage"];
-	_damage = (random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow)+DynamicVehicleDamageLow) / 100;
+    _damage = ((random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow))+DynamicVehicleDamageLow) / 100;
 	
 	// limit this to 85% since vehicle would blow up otherwise.
 	//if(_damage >= 0.85) then {

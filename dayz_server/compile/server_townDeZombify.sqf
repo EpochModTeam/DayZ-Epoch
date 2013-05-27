@@ -1,4 +1,4 @@
-private["_position","_size","_loot","_zeds","_groups","_group"];
+private ["_position","_size","_loot","_zeds","_groups","_group","_type","_town"];
 _position = _this select 0;
 _size =		_this select 1;
 _type = 	_this select 2;

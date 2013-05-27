@@ -1,4 +1,4 @@
-private["_type","_location","_clientID","_character","_tent","_traderid","_id","_outcome","_retrader"];
+private ["_clientID","_character","_traderid","_retrader","_data","_result","_status","_val","_key"];
 //[dayz_characterID,_tent,[_dir,_location],"TentStorage"]
 _character = _this select 0;
 _traderid = _this select 1;
@@ -17,7 +17,6 @@ diag_log "HIVE: Request sent";
 _result = call compile format ["%1",_data];
 _status = _result select 0;
 		
-_myArray = [];
 if (_status == "ObjectStreamStart") then {
 	_val = _result select 1;
 	//Stream Objects
@@ -37,4 +36,4 @@ if (_status == "ObjectStreamStart") then {
 diag_log(_retrader);
 dayzTraderMenuResult = _retrader;
 _clientID publicVariableClient "dayzTraderMenuResult";
-_retrader
+_retrader;

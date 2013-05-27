@@ -1,4 +1,4 @@
-private["_town","_spot","_buildings","_list","_size","_numZeds","_impt","_position","_buildings","_totalBuildings","_numGroups","_building","_type"];
+private ["_town","_spot","_buildings","_list","_size","_numZeds","_impt","_position","_totalBuildings","_numGroups","_building","_type","_nearMen","_i","_trigger","_code","_val"];
 //has town
 _town = _this;
 _type = type _town;

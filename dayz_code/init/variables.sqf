@@ -401,7 +401,7 @@ if(isNil "dayz_maxpos") then {
 };
 
 if(isNil "dayz_zedsAttackVehicles") then {
-	dayz_zedsAttackVehicles = false;
+	dayz_zedsAttackVehicles = true;
 };
 
 // update objects

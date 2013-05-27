@@ -1,4 +1,4 @@
-private["_isInfected","_botActive","_int","_newModel","_doLoop","_wait","_hiveVer","_isHiveOk","_playerID","_playerObj","_randomSpot","_publishTo","_primary","_secondary","_key","_result","_charID","_playerObj","_playerName","_finished","_spawnPos","_spawnDir","_items","_counter","_magazines","_weapons","_group","_backpack","_worldspace","_direction","_newUnit","_score","_position","_isNew","_inventory","_backpack","_medical","_survival","_stats","_state"];
+private ["_isInfected","_doLoop","_hiveVer","_isHiveOk","_playerID","_playerObj","_primary","_key","_charID","_playerName","_backpack","_isNew","_inventory","_survival","_model","_mags","_wpns","_bcpk","_config","_newPlayer"];
 //Set Variables
 
 diag_log ("STARTING LOGIN: " + str(_this));
@@ -6,7 +6,7 @@ diag_log ("STARTING LOGIN: " + str(_this));
 _playerID = _this select 0;
 _playerObj = _this select 1;
 _playerName = name _playerObj;
-_worldspace = [];
+//_worldspace = [];
 
 if (_playerName == '__SERVER__' || _playerID == '' || local player) exitWith {};
 
@@ -17,18 +17,18 @@ if (count _this > 2) then {
 //Variables
 _inventory =	[];
 _backpack = 	[];
-_items = 		[];
-_magazines = 	[];
-_weapons = 		[];
-_medicalStats =	[];
+//_items = 		[];
+//_magazines = 	[];
+//_weapons = 		[];
+//_medicalStats =	[];
 _survival =		[0,0,0];
-_tent =			[];
-_state = 		[];
-_direction =	0;
+//_tent =			[];
+//_state = 		[];
+//_direction =	0;
 _isInfected =   0;
 _model =		"";
-_newUnit =		objNull;
-_botActive = false;
+//_newUnit =		objNull;
+//_botActive = false;
 
 if (_playerID == "") then {
 	_playerID = getPlayerUID _playerObj;
@@ -66,7 +66,7 @@ if ((_primary select 0) == "ERROR") exitWith {
 _newPlayer = 	_primary select 1;
 _isNew = 		count _primary < 7; //_result select 1;
 _charID = 		_primary select 2;
-_randomSpot = false;
+//_randomSpot = false;
 
 //diag_log ("LOGIN RESULT: " + str(_primary));
 
@@ -113,7 +113,7 @@ if (!_isNew) then {
 	if(!isNil "DefaultBackpack") then {
 		_bcpk = DefaultBackpack;
 	};
-	_randomSpot = true;
+	//_randomSpot = true;
 	
 	//Wait for HIVE to be free
 	_key = format["CHILD:203:%1:%2:%3:",_charID,[_wpns,_mags],[_bcpk,[],[]]];

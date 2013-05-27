@@ -1,4 +1,4 @@
-private["_object","_worldspace","_location","_dir","_character","_tent","_class","_id","_uid","_dam","_hitpoints","_selection","_array","_damage","_randFuel","_fuel","_key","_result","_outcome","_totaldam","_parts","_retry","_done","_spawnDMG"];
+private ["_object","_worldspace","_location","_dir","_class","_uid","_dam","_hitpoints","_selection","_array","_damage","_fuel","_key","_totaldam","_spawnDMG","_characterID"];
 //[_veh,[_dir,_location],"V3S_Civ",true]
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
