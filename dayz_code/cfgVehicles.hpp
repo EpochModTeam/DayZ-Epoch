@@ -334,6 +334,15 @@ class Citizen1;	// External class reference
 		transportMaxMagazines = 200;
         transportmaxbackpacks = 5;
 	};
+	class UH60M_EP1;
+	class UH60M_EP1_DZ : UH60M_EP1
+	{
+		scope = 2; 
+		crew = ""; 
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+	};
 	class MV22;
 	class MV22_DZ : MV22 { 
 		accuracy = 1000; 

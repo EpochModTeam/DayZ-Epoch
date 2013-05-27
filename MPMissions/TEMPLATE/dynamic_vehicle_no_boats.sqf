@@ -86,7 +86,7 @@ AllowedVehiclesList = [
 ["UAZ_Unarmed_UN_EP1",5],
 ["UH1H_DZ",3],
 ["UH1Y_DZ",1],
-["UH60M_EP1",2],
+["UH60M_EP1_DZ",2],
 ["UralRefuel_TK_EP1_DZ",1],
 ["Ural_CDF",2],
 ["Ural_TK_CIV_EP1",2],
