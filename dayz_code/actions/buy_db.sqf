@@ -1,4 +1,4 @@
-private ["_activatingPlayer","_trader_id","_category","_action","_type","_name","_qty","_sell","_order","_tid","_out","_part","_cancel","_Display","_File","_textCurrency","_textPart","_btype","_stype","_header","_item","_buy","_bqty","_bname","_sqty","_sname","_textCurrencySell","_afile"];
+private ["_activatingPlayer","_trader_id","_type","_name","_qty","_sell","_order","_tid","_out","_part","_cancel","_Display","_File","_textCurrency","_textPart","_btype","_stype","_header","_item","_buy","_bqty","_bname","_afile"];
 
 if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 
@@ -8,14 +8,14 @@ if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 _activatingPlayer = _this select 1;
 
 _trader_id = (_this select 3) select 0;
-_category = (_this select 3) select 1;
+// _category = (_this select 3) select 1;
 
 dayzTraderMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
 
 if(isNil "dayzTraderMenuResult") then {
 	diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
 	//["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
-	dayzTraderMenu = [_activatingPlayer,_trader_id,_category,_action];
+	dayzTraderMenu = [_activatingPlayer,_trader_id];
 	publicVariableServer  "dayzTraderMenu";
 	waitUntil {!isNil "dayzTraderMenuResult"};
 };
@@ -66,8 +66,8 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	
 	// Sell data from array
 	_sell = _x select 4;
-	_sqty = _sell select 0;
-	_sname = _sell select 1;
+	//_sqty = _sell select 0;
+	//_sname = _sell select 1;
 	_stype = _sell select 2;
 	switch(true)do{ 
 		case (_stype == 1): { 
@@ -81,7 +81,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 		}; 
 	}; 
 	// Display Name of sell item
-	_textCurrencySell =	getText(configFile >> _stype >> _sname >> "displayName");
+	//_textCurrencySell =	getText(configFile >> _stype >> _sname >> "displayName");
 	
 	// Menu sort order
 	_order = _x select 5;
