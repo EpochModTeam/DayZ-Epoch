@@ -120,6 +120,19 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 		_newUnit addWeapon _primweapon;		
 	};
 
+	if (_primweapon == "MeleeCrowbar") then {
+		_newUnit addMagazine 'crowbar_swing';
+	};
+	if (_primweapon == "MeleeHatchet") then {
+		_newUnit addMagazine 'hatchet_swing';
+	};
+	if (_primweapon == "MeleeMachete") then {
+		_newUnit addMagazine 'Machete_swing';
+	};
+	if (_primweapon == "MeleeFishingPole") then {
+		_newUnit addMagazine 'Fishing_Swing';
+	};
+
 	if(_secweapon != (secondaryWeapon _newUnit) && _secweapon != "") then {
 		_newUnit addWeapon _secweapon;		
 	};

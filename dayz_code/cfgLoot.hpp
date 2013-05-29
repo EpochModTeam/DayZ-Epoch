@@ -9,12 +9,12 @@ class CfgLoot {
 			"ItemLightBulb"
 		},
 		{
-			1,
-			0.1,
 			0.5,
-			0.4,
-			0.2,
-			0.05
+			0.05,
+			0.25,
+			0.09,
+			0.1,
+			0.01
 		}
 	};
 	civilian[] = {
@@ -35,13 +35,13 @@ class CfgLoot {
 			"ItemBandage",
 			"ItemPainkiller",
 			"FoodBioMeat",
-			"8Rnd_9x18_Makarov"
+			"8Rnd_9x18_MakarovSD"
 		},
 		{
+			0.07,
 			0.09,
 			0.09,
-			0.09,
-			0.12,
+			0.1,
 			0.09,
 			0.05,
 			0.05,
@@ -70,23 +70,23 @@ class CfgLoot {
 			"FoodCanFrankBeans",
 			"FoodCanPasta",
 			"FoodCanUnlabeled",
-			//Bags
+			// food Bags
 			"FoodPistachio",
 			"FoodNutmix"
 		},
 		{
 			//trash
-			0.13,
-			0.13,
-			0.13,
 			0.09,
-			0.13,
+			0.12,
+			0.12,
 			0.09,
-			0.09,
-			0.09,
-			0.09,
-			0.06,
-			//Bags
+			0.11,
+			0.07,
+			0.07,
+			0.07,
+			0.07,
+			0.1,
+			// food Bags
 			0.05,
 			0.04
 		}
@@ -161,12 +161,12 @@ class CfgLoot {
 			"ItemHeatPack"
 		},
 		{
-			0.8,
-			0.5,
-			0.5,
+			0.4,
+			0.15,
 			0.2,
-			0.3,
-			0.1
+			0.1,
+			0.1,
+			0.05
 		}
 	};
 	hospital[] = {
@@ -180,7 +180,7 @@ class CfgLoot {
 		},
 		{
 			0.33,
-			0.17,
+			0.16,
 			0.13,
 			0.09,
 			0.17,
@@ -231,8 +231,8 @@ class CfgLoot {
 			"30Rnd_9x19_UZI_SD"
 		},
 		{
-			0.18,
 			0.09,
+			0.04,
 			0.01,
 			0.01,
 			0.04,
@@ -280,15 +280,17 @@ class CfgLoot {
 			"6Rnd_45ACP",
 			"15Rnd_W1866_Slug",
 			"8Rnd_B_Beneli_74Slug",
-			"HandRoadFlare"
+			"HandRoadFlare",
+			"8Rnd_9x18_MakarovSD"
 		},
 		{
-			1,
-			0.8,
 			0.3,
-			0.3,
-			0.5,
-			0.3
+			0.2,
+			0.1,
+			0.14,
+			0.15,
+			0.1,
+			0.01
 		}
 	};
 	hunter[] = {
@@ -304,16 +306,15 @@ class CfgLoot {
 			"FoodNutmix"
 		},
 		{
-			1,
-			0.5,
+			0.4,
+			0.17,
+			0.03,
+			0.1,
+			0.05,
 			0.2,
-			0.5,
-			0.2,
-			1,
-			0.2,
-			0.04,
-			0.1
-			
+			0.02,
+			0.01,
+			0.02	
 		}
 	};
 
@@ -334,16 +335,16 @@ class CfgLoot {
 			"ItemTankTrap",
 		},
 		{
-			0.09,
-			0.09,
+			0.14,
+			0.12,
 			0.09,
 			0.12,
 			0.09,
-			0.05,
-			0.05,
-			0.05,
-			0.05,
 			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.12,
 			0.06,
 			0.01,
 			0.01
@@ -356,20 +357,26 @@ class CfgLoot {
 			"Skin_Pilot_EP1_DZ",
 			"Skin_Functionary1_EP1_DZ",
 			"Skin_Priest_DZ",
+			"Skin_Rocker1_DZ",
 			"Skin_Rocker2_DZ",
+			"Skin_Rocker3_DZ",
+			"Skin_Rocker4_DZ",
 			"Skin_SurvivorW3_DZ",
 			"Skin_SurvivorWpink_DZ",
 			"Skin_SurvivorWurban_DZ",
 		},
 		{
-			0.01,
-			0.02,
-			0.03,
-			0.02,
-			0.02,
-			0.05,
-			0.02,
-			0.01,
+			0.13,
+			0.12,
+			0.1,
+			0.1,
+			0.07,
+			0.07,
+			0.07,
+			0.07,
+			0.09,
+			0.09,
+			0.09
 		}
 	};
 	militaryclothes[] = {
@@ -389,19 +396,19 @@ class CfgLoot {
 			"Skin_Graves_Light_DZ"
 		},
 		{
-			0.03, // "Skin_Camo1_DZ",
-			0.02, // "Skin_Sniper1_DZ",
-			0.03, // "Skin_Rocket_DZ",
-			0.05, // "Skin_Soldier1_DZ",
-			0.01, // "Skin_Drake_Light_DZ"
-			0.02, // Skin_Soldier_TL_PMC_DZ
-			0.02, // Skin_Soldier_Sniper_PMC_DZ
-			0.02, // Skin_Soldier_Bodyguard_AA12_PMC_DZ
-			0.02, // Skin_CZ_Special_Forces_GL_DES_EP1_DZ
-			0.01, // "Skin_FR_OHara_DZ",
-			0.01, // "Skin_FR_Rodriguez_DZ",
-			0.01, // "Skin_CZ_Soldier_Sniper_EP1_DZ",
-			0.01, // "Skin_Graves_Light_DZ"
+			0.1,
+			0.08,
+			0.05,
+			0.13,
+			0.07,
+			0.07,
+			0.05,
+			0.07,
+			0.08,
+			0.08,
+			0.09,
+			0.04,
+			0.09
 		}
 	};
 	specialclothes[] = {
@@ -423,21 +430,21 @@ class CfgLoot {
 			"Skin_GUE_Soldier_2_DZ",
 		},
 		{
-			0.01, //"Skin_Ins_Soldier_GL_DZ",
-			0.01, //"Skin_GUE_Commander_DZ",
-			0.05, //"Skin_Bandit1_DZ",
-			0.02, //"Skin_Bandit2_DZ",
-			0.05, //"Skin_BanditW1_DZ",
-			0.03, //"Skin_BanditW2_DZ",
-			0.01, //"Skin_TK_INS_Soldier_EP1_DZ",
-			0.01, //"Skin_TK_INS_Warlord_EP1",
-			0.01, //"Skin_SurvivorWcombat_DZ",
-			0.03, //"Skin_SurvivorWdesert_DZ",
-			0.01, //"Skin_GUE_Soldier_MG_DZ",
-			0.01, //"Skin_GUE_Soldier_Sniper_DZ",
-			0.01, //"Skin_GUE_Soldier_Crew_DZ",
-			0.01, //"Skin_GUE_Soldier_CO_DZ",
-			0.01, //"Skin_GUE_Soldier_2_DZ",
+			0.1,
+			0.08,
+			0.13,
+			0.06,
+			0.07,
+			0.07,
+			0.05,
+			0.07,
+			0.08,
+			0.08,
+			0.05,
+			0.04,
+			0.04,
+			0.04,
+			0.04
 		}
 	};
 };
