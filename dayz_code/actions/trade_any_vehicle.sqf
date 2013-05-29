@@ -162,23 +162,27 @@ if (_qty >= _qty_in) then {
 						};
 					};
 
-					if(_okToSell and !isNull _obj and alive _obj) then {
+					if(_okToSell) then {
 
-						// Sell Vehicle
-						for "_x" from 1 to _qty_out do {
-							player addMagazine _part_out;
+						if(!isNull _obj and alive _obj) then {
+							// Sell Vehicle
+							for "_x" from 1 to _qty_out do {
+								player addMagazine _part_out;
+							};
+
+							_objectID 	= _obj getVariable ["ObjectID","0"];
+							_objectUID	= _obj getVariable ["ObjectUID","0"];
+
+							//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+							dayzDeleteObj = [_objectID,_objectUID];
+							publicVariableServer "dayzDeleteObj";
+
+							deleteVehicle _obj; 
+
+							cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 						};
-
-						_objectID 	= _obj getVariable ["ObjectID","0"];
-						_objectUID	= _obj getVariable ["ObjectUID","0"];
-
-						//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
-						dayzDeleteObj = [_objectID,_objectUID];
-						publicVariableServer "dayzDeleteObj";
-
-						deleteVehicle _obj; 
-
-						cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					} else {
+						cutText [format[("Cannot sell %1, tires are too damaged."),_textPartOut] , "PLAIN DOWN"];
 					};
 				};
 	

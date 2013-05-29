@@ -87,19 +87,15 @@ if (_qty >= _qty_in) then {
 
 			if(dayzTradeResult == "PASS") then {
 
-				for "_x" from 1 to _qty_in do {
-					if(_buy_o_sell == "buy") then {
-						player removeMagazine _part_in;
-					} else {
-						player removeWeapon _part_in;
-					};
-				};
-	
-				for "_x" from 1 to _qty_out do {
-					if(_buy_o_sell == "buy") then {
-						player addWeapon _part_out;
-					} else {
-						player addMagazine _part_out;
+				_removed = ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
+				
+				if(_removed == _qty_in) then {
+					for "_x" from 1 to _qty_out do {
+						if(_buy_o_sell == "buy") then {
+							player addWeapon _part_out;
+						} else {
+							player addMagazine _part_out;
+						};
 					};
 				};
 	
