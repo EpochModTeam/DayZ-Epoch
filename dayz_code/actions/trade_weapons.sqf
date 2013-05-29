@@ -97,9 +97,10 @@ if (_qty >= _qty_in) then {
 							player addMagazine _part_out;
 						};
 					};
+					cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 				};
 	
-				cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+				
 		
 				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
 				s_player_parts_crtl = -1;

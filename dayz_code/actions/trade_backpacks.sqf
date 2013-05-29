@@ -102,9 +102,11 @@ if (_qty >= _qty_in) then {
 					};
 				} else {
 					// Sell
-					removeBackpack player;
-					for "_x" from 1 to _qty_out do {
-						player addMagazine _part_out;
+					if((typeOf (unitBackpack player)) == _part_in) then {
+						removeBackpack player;
+						for "_x" from 1 to _qty_out do {
+							player addMagazine _part_out;
+						};
 					};
 				};
 
