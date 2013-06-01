@@ -4,8 +4,8 @@ _iClass = 	_this select 1;
 _iPos =		_this select 2;
 _radius =	_this select 3;
 
-//_iPosZ = _iPos select 2;
-//if( _iPosZ < 0 ) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
+_iPosZ = _iPos select 2;
+if( _iPosZ < 0 ) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
 
 switch (_iClass) do {
 	default {

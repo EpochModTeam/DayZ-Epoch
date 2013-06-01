@@ -34,7 +34,9 @@ dayzSpawnZed = [_agent];
 publicVariableServer "dayzSpawnZed";
 
 if (_doLoiter) then {
+	_agent setDir round(random 180);
 	_agent setPosATL _position;
+	_agent setvelocity [0, 0, 1];
 	//_agent setVariable ["doLoiter",true,true];
 } else {
 	_agent setVariable ["doLoiter",false,true];

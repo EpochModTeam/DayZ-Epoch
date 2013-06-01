@@ -22,20 +22,28 @@ _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> 
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
+_isPole = (_classname == "Plastic_Pole_EP1_DZ");
+
+_distance = 30;
+if(_isPole) then {
+	_distance = 45;
+};
+
 // check for near plot
-_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], 30];
+_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], _distance];
 _findNearestPole = [];
 {if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
 
 _IsNearPlot = count (_findNearestPole);
 
+// If item is plot pole and another one exists within 45m
+if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["Cannot build plot pole within 45m of an existing plot." , "PLAIN DOWN"]; };
+
 if(_IsNearPlot == 0) then {
 
 	// Allow building of plot
-	if(_classname == "Plastic_Pole_EP1_DZ") then {
-		if({alive _x} count (nearestObjects[(vehicle player), ["Plastic_Pole_EP1_DZ"], 45]) == 0) then {
-			_canBuildOnPlot = true;	
-		};
+	if(_isPole) then {
+		_canBuildOnPlot = true;	
 	};
 	
 } else {
@@ -50,14 +58,14 @@ if(_IsNearPlot == 0) then {
 
 	// check if friendly to owner
 	if(dayz_characterID == _ownerID) then {
-		// owner can build anything within his plot except other plots witin
-		if(_classname != "Plastic_Pole_EP1_DZ") then {
+		// owner can build anything within his plot except other plots
+		if(!_isPole) then {
 			_canBuildOnPlot = true;
 		};
 		
 	} else {
 		// disallow building plot
-		if(_classname != "Plastic_Pole_EP1_DZ") then {
+		if(!_isPole) then {
 			_friendlies		= player getVariable ["friendlyTo",[]];
 			// check if friendly to owner
 			if(_ownerID in _friendlies) then {
@@ -69,7 +77,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // _message
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText ["Building requires plot pole within 30m" , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText ["Building requires plot pole within 30m." , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -162,7 +170,6 @@ if (_hasrequireditem) then {
 
 	player allowDamage true;
 
-	
 	// testing new way of finding building
 	_buildings = nearestObjects [(vehicle player), ["Building"], 100];
 	{

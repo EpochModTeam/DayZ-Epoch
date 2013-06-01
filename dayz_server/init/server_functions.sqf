@@ -275,9 +275,6 @@ spawn_vehicles = {
 				_num = floor(random 4);
 				_allCfgLoots = ["trash","civilian","food","generic","medical","military","policeman","hunter","worker","clothes","militaryclothes","specialclothes","trash"];
 				
-
-				diag_log("DEBUG: spawing loot inside vehicle " + str(_allCfgLoots));
-
 				for "_x" from 1 to _num do {
 					_iClass = _allCfgLoots call BIS_fnc_selectRandom;
 
