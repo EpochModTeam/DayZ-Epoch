@@ -3,6 +3,10 @@ private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in",
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
+// Test cannot lock while another player is nearby
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot trade while another player is nearby." , "PLAIN DOWN"];  };
+
 // [part_out,part_in, qty_out, qty_in, loc];
 
 _activatingPlayer = _this select 1;

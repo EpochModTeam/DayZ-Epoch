@@ -6,6 +6,10 @@ if(player isKindOf "PZombie_VB") exitWith {};
 if(TradeInprogress) exitWith { cutText ["Take item already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
+// Test cannot lock while another player is nearby
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot take item while another player is nearby." , "PLAIN DOWN"];  };
+
 _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;

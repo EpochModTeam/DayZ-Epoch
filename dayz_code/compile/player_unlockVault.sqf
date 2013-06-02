@@ -6,96 +6,115 @@ private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_we
 if(TradeInprogress) exitWith { cutText ["Unlock already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
+// Test cannot lock while another player is nearby
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot unlock vault while another player is nearby." , "PLAIN DOWN"];  };
+
+_obj = _this;
+_alreadyPacking = _obj getVariable["packing",0];
+_claimedBy = _holder getVariable["claimed","0"];
+
 {player removeAction _x} forEach s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;
 
-_obj = _this;
-
-// Silently exit if object no longer exists
-if(isNull _obj) exitWith { TradeInprogress = false; };
+// Silently exit if object no longer exists or alive
+if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
 
 _ownerID = _obj getVariable["CharacterID","0"];
-_objectID 	= _obj getVariable["ObjectID","0"];
-_objectUID	= _obj getVariable["ObjectUID","0"];
-player playActionNow "Medic";
 
-_alreadyPacking = _obj getVariable["packing",0];
-
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_unlockvault = -1; cutText ["That Safe is already being unlocked." , "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText ["That Safe is already being unlocked." , "PLAIN DOWN"]};
 
 // Promt user for password if _ownerID != dayz_playerUID
-
 if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
-	
-	_obj setVariable["packing",1];
 
+	// Check if any players are nearby if not allow player to claim item.
+	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
+
+	_playerID = getPlayerUID player;
+	
+	// Only allow if not already claimed.
+	if (_claimedBy == "0" or !_playerNear) then {
+		// Since item was not claimed proceed with claiming it.
+		_holder setVariable["claimed",_playerID,true];
+	};
+	
 	_dir = direction _obj;
-	// _pos = getposATL _obj;
 	_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
-	//player playActionNow "Medic";
-	sleep 1;
-	[player,"tentpack",0,false] call dayz_zombieSpeak;
-	sleep 5;
+	_objectID 	= _obj getVariable["ObjectID","0"];
+	_objectUID	= _obj getVariable["ObjectUID","0"];
 
-	if(!isNull _obj) then {
-
-		//place tent (local)
-		_holder = createVehicle ["VaultStorage",_pos,[], 0, "CAN_COLLIDE"];
-		_holder setdir _dir;
-		_holder setpos _pos;
-		player reveal _holder;
+	_claimedBy = _holder getVariable["claimed","0"];
 	
-		_holder setVariable["CharacterID",_ownerID,true];
-		_holder setVariable["ObjectID",_objectID,true];
-		_holder setVariable["ObjectUID",_objectUID,true];
-		_holder setVariable ["OEMPos", _pos, true];
+	if (_claimedBy != _playerID) then {
 
-		_weapons = 		_obj getVariable["WeaponCargo",[]];
-		_magazines = 	_obj getVariable["MagazineCargo",[]];
-		_backpacks = 	_obj getVariable["BackpackCargo",[]];
-	
-		// Remove locked vault
-	
-		deleteVehicle _obj;
+		if(!isNull _obj and alive _obj) then {
 
-		if (count _weapons > 0) then {
-			//Add weapons
-			_objWpnTypes = 	_weapons select 0;
-			_objWpnQty = 	_weapons select 1;
-			_countr = 0;
-			{
-				_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
-				_countr = _countr + 1;
-			} forEach _objWpnTypes;
+			_obj setVariable["packing",1];
+
+			_weapons = 		_obj getVariable["WeaponCargo",[]];
+			_magazines = 	_obj getVariable["MagazineCargo",[]];
+			_backpacks = 	_obj getVariable["BackpackCargo",[]];
+	
+			//player playActionNow "Medic";
+			sleep 1;
+			[player,"tentpack",0,false] call dayz_zombieSpeak;
+			sleep 5;
+
+			//place tent (local)
+			_holder = createVehicle ["VaultStorage",_pos,[], 0, "CAN_COLLIDE"];
+			// Remove locked vault
+			deleteVehicle _obj;
+			_holder setdir _dir;
+			_holder setpos _pos;
+			player reveal _holder;
+	
+			_holder setVariable["CharacterID",_ownerID,true];
+			_holder setVariable["ObjectID",_objectID,true];
+			_holder setVariable["ObjectUID",_objectUID,true];
+			_holder setVariable ["OEMPos", _pos, true];
+
+			if (count _weapons > 0) then {
+				//Add weapons
+				_objWpnTypes = 	_weapons select 0;
+				_objWpnQty = 	_weapons select 1;
+				_countr = 0;
+				{
+					_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
+					_countr = _countr + 1;
+				} forEach _objWpnTypes;
+			};
+	
+			if (count _magazines > 0) then {
+				//Add Magazines
+				_objWpnTypes = _magazines select 0;
+				_objWpnQty = _magazines select 1;
+				_countr = 0;
+				{
+					_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
+					_countr = _countr + 1;
+				} forEach _objWpnTypes;
+			};
+
+			if (count _backpacks > 0) then {
+				//Add Backpacks
+				_objWpnTypes = _backpacks select 0;
+				_objWpnQty = _backpacks select 1;
+				_countr = 0;
+				{
+					_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
+					_countr = _countr + 1;
+				} forEach _objWpnTypes;
+			};
+	
+			cutText ["Safe has been unlocked.", "PLAIN DOWN"];
 		};
-	
-		if (count _magazines > 0) then {
-			//Add Magazines
-			_objWpnTypes = _magazines select 0;
-			_objWpnQty = _magazines select 1;
-			_countr = 0;
-			{
-				_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-				_countr = _countr + 1;
-			} forEach _objWpnTypes;
-		};
-
-		if (count _backpacks > 0) then {
-			//Add Backpacks
-			_objWpnTypes = _backpacks select 0;
-			_objWpnQty = _backpacks select 1;
-			_countr = 0;
-			{
-				_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
-				_countr = _countr + 1;
-			} forEach _objWpnTypes;
-		};
-	
-		cutText ["Safe has been unlocked.", "PLAIN DOWN"];
+	} else {
+		TradeInprogress = false; 
+		cutText [format[(localize "str_player_beinglooted"),"Safe"] , "PLAIN DOWN"];
 	};
 } else {
 	player playActionNow "Medic";
-	sleep 3;
+	sleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	null = [player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;

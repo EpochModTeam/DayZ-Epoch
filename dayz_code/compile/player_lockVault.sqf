@@ -12,6 +12,10 @@ _obj = _this;
 // Silently exit if object no longer exists
 if(isNull _obj) exitWith { TradeInprogress = false; };
 
+// Test cannot lock while another player is nearby
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot lock vault while another player is nearby." , "PLAIN DOWN"];  };
+
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];

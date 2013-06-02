@@ -9,7 +9,11 @@ TradeInprogress = true;
 _obj = _this;
 
 // Silently exit if object no longer exists
-if(isNull _obj) exitWith { TradeInprogress = false; };
+if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
+
+// Test cannot lock while another player is nearby
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot pack vault while another player is nearby." , "PLAIN DOWN"];  };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -36,37 +40,36 @@ if(_location1 distance _location2 > 0.1) exitWith {
 	_obj setVariable["packing",0];
 };
 
-player playActionNow "Medic";
 
 _dir = direction _obj;
-	
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];
-	
-[player,"tentpack",0,false] call dayz_zombieSpeak;
-sleep 3;
 
-if(!isNull _obj) then {
+if(!isNull _obj and alive _obj) then {
 
-	//place tent (local)
-	_bag = createVehicle ["WeaponHolder_ItemVault",_pos,[], 0, "CAN_COLLIDE"];
-	_bag setdir _dir;
-	_bag setpos _pos;
-	player reveal _bag;
+	player playActionNow "Medic";
+	[player,"tentpack",0,false] call dayz_zombieSpeak;
+	sleep 3;
 
-	_holder = "WeaponHolder" createVehicle _pos; 
-	
 	_weapons = 		getWeaponCargo _obj;
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
 	
-	//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+	// Remove from database
 	dayzDeleteObj = [_objectID,_objectUID];
 	publicVariableServer "dayzDeleteObj";
-	if (isServer) then {
-		dayzDeleteObj call server_deleteObj;
-	};
-
+	
+	// Set down vault "take" item
+	_bag = createVehicle ["WeaponHolder_ItemVault",_pos,[], 0, "CAN_COLLIDE"];
+	
+	// Delete original
 	deleteVehicle _obj;
+
+	_bag setdir _dir;
+	_bag setpos _pos;
+	player reveal _bag;
+
+	// Empty weapon holder 
+	_holder = "WeaponHolder" createVehicle _pos; 
 	
 	//Add weapons
 	_objWpnTypes = 	_weapons select 0;
@@ -94,7 +97,6 @@ if(!isNull _obj) then {
 		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
 	} forEach _objWpnTypes;
-	
 	
 	cutText ["Your Safe has been packed", "PLAIN DOWN"];
 
