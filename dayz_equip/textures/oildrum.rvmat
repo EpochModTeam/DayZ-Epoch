@@ -1,4 +1,4 @@
-ambient[]={0.74650967,0.74192148,0.74213719,0.96900016};
+ambient[]={0.74650967,0.74192148,0.74213719,0.97000003};
 diffuse[]={1,1,1,0.92000002};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
@@ -8,7 +8,7 @@ PixelShaderID="NormalMapSpecularDIMap";
 VertexShaderID="NormalMap";
 class Stage1
 {
-	texture="dayz_equip\textures\oildrum_norm.paa";
+	texture="dayz_equip\textures\oildrum_norm_fix.paa";
 	uvSource="tex";
 	class uvTransform
 	{
