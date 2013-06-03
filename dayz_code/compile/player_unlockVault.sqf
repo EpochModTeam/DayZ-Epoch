@@ -55,7 +55,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 			_magazines = 	_obj getVariable["MagazineCargo",[]];
 			_backpacks = 	_obj getVariable["BackpackCargo",[]];
 	
-			//player playActionNow "Medic";
+			player playActionNow "Medic";
 			sleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			sleep 5;
