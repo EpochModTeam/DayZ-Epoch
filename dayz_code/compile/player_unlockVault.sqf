@@ -7,12 +7,12 @@ if(TradeInprogress) exitWith { cutText ["Unlock already in progress." , "PLAIN D
 TradeInprogress = true;
 
 // Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
 if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot unlock vault while another player is nearby." , "PLAIN DOWN"];  };
 
 _obj = _this;
 _alreadyPacking = _obj getVariable["packing",0];
-_claimedBy = _holder getVariable["claimed","0"];
+_claimedBy = _obj getVariable["claimed","0"];
 
 {player removeAction _x} forEach s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;
@@ -35,7 +35,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	// Only allow if not already claimed.
 	if (_claimedBy == "0" or !_playerNear) then {
 		// Since item was not claimed proceed with claiming it.
-		_holder setVariable["claimed",_playerID,true];
+		_obj setVariable["claimed",_playerID,true];
 	};
 	
 	_dir = direction _obj;
@@ -43,9 +43,9 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	_objectID 	= _obj getVariable["ObjectID","0"];
 	_objectUID	= _obj getVariable["ObjectUID","0"];
 
-	_claimedBy = _holder getVariable["claimed","0"];
+	_claimedBy = _obj getVariable["claimed","0"];
 	
-	if (_claimedBy != _playerID) then {
+	if (_claimedBy == _playerID) then {
 
 		if(!isNull _obj and alive _obj) then {
 
