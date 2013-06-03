@@ -97,20 +97,15 @@ serverVehicleCounter = [];
 
 				// fix for leading zero issues on safe codes after restart
 				if (_object isKindOf "VaultStorageLocked") then {
-					
-					if(_ownerID == 0) then {
-						_ownerID = "0000";
-					} else {
-						_codeCount = (count (toArray _ownerID));
-						if(_codeCount == 3) then {
-							_ownerID = format["0%1", _ownerID];
-						};
-						if(_codeCount == 2) then {
-							_ownerID = format["00%1", _ownerID];
-						};
-						if(_codeCount == 1) then {
-							_ownerID = format["000%1", _ownerID];
-						};
+					_codeCount = (count (toArray _ownerID));
+					if(_codeCount == 3) then {
+						_ownerID = format["0%1", _ownerID];
+					};
+					if(_codeCount == 2) then {
+						_ownerID = format["00%1", _ownerID];
+					};
+					if(_codeCount == 1) then {
+						_ownerID = format["000%1", _ownerID];
 					};
 				};
 
