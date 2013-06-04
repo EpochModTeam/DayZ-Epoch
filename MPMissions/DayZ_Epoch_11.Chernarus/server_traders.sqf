@@ -62,7 +62,7 @@ menu_Pilot_EP1 = [
 ];
 // Auto Trader - Bash
 menu_Worker3 = [
-	[["Cars",34],["Trucks Unarmed",35],["SUV",36],["Buses and Vans",37],["Bikes and ATV",38],["Helicopter Unarmed",39],["Military Unarmed",40]],
+	[["Cars",34],["Trucks Unarmed",35],["SUV",36],["Buses and Vans",37],["Bikes and ATV",38],["Helicopter Unarmed",39],["Military Unarmed",40],["URAL's",461]],
 	[],
 	"friendly"
 ];
@@ -122,7 +122,7 @@ menu_Worker2 = [
 ];
 // Black Market - Olsha
 menu_GUE_Soldier_MG = [
-	[["Black Market Weapons",455],["Black Market Ammo",456]],
+	[["Black Market Weapons",455],["Black Market Ammo",456],["Explosives",462],["Backpacks",463],["Clothing",464]],
 	[],
 	"neutral"
 ];
