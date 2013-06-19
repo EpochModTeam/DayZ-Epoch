@@ -40,7 +40,7 @@ _isOk = true;
 while {_isOk} do {
 	
 	if(_counter == 0) then {
-		cutText ["Planning consruction stand still 5 seconds to build.", "PLAIN DOWN"];
+		cutText ["Planning construction stand still 5 seconds to build.", "PLAIN DOWN"];
 		sleep 5; 
 		_location1 = getPosATL player;
 		sleep 5;
@@ -48,7 +48,7 @@ while {_isOk} do {
 	
 		if(_location1 distance _location2 < 0.1) exitWith {
 			
-			cutText ["Started consruction move within 5 seconds to cancel.", "PLAIN DOWN"];
+			cutText ["Started construction move within 5 seconds to cancel.", "PLAIN DOWN"];
 			_location3 = getPosATL player;
 			sleep 5;
 			_location4 = getPosATL player;

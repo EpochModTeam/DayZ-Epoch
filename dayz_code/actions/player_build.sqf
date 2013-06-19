@@ -121,7 +121,7 @@ if (_hasrequireditem) then {
 			_reason = "Cannot build while in combat.";
 		};
 
-		cutText ["Planning consruction stand still 5 seconds to build.", "PLAIN DOWN"];
+		cutText ["Planning construction stand still 5 seconds to build.", "PLAIN DOWN"];
 		
 		_location1 = getPosATL player;
 		sleep 5;
@@ -181,7 +181,7 @@ if (_hasrequireditem) then {
 	} forEach _buildings;
 
 	// No building in trader zones
-	if(!placevault) then { _cancel = true; _reason = "Cannot build in a city."; };
+	if(!canbuild) then { _cancel = true; _reason = "Cannot build in a city."; };
 
 	if(!_cancel) then {
 
