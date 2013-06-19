@@ -1,9 +1,8 @@
 /*
-Fishing 1.0
-spawn player_goFishing;
-DayZ Epoch - By: [VB]AWOL
+	DayZ Crafting
+	Usage: spawn player_goFishing;
+	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-
 private ["_itemOut","_position","_isOk","_counter"];
 
 if(TradeInprogress) exitWith { cutText ["Fishing already in progress." , "PLAIN DOWN"]; };
@@ -13,8 +12,8 @@ call gear_ui_init;
 
 // find position 5m in front of player
 _position = player modeltoworld [0,5,0];
-
 if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText ["Must be near a shore or on a boat to fish." , "PLAIN DOWN"]; };
+
 if(dayz_isSwimming) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
 if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Canceled Fishing.", "PLAIN DOWN"];};
 
