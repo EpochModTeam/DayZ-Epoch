@@ -17,11 +17,12 @@ _cookedmeat = meatcooked;
 	_meatcooked = _cookedmeat select (_rawmeat find _meat);
 	_removed = 0;
 	if (_meat in magazines player) then {
+		_textraw = 	getText (configFile >> "CfgMagazines" >> _meat >> "displayName");
 		_text = 	getText (configFile >> "CfgMagazines" >> _meatcooked >> "displayName");
 		
 		_qty = {_x == _meat} count magazines player;
 
-		cutText [format["Started cooking %1",_text], "PLAIN DOWN"];
+		cutText [format["Started cooking %1",_textraw], "PLAIN DOWN"];
 
 		player playActionNow "Medic";
 		
@@ -70,7 +71,7 @@ _cookedmeat = meatcooked;
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 
-			cutText [format["Canceled cooking %1",_text], "PLAIN DOWN"];
+			cutText [format["Canceled cooking %1",_textraw], "PLAIN DOWN"];
 
 			// player addMagazine "ItemBandage";
 		};
