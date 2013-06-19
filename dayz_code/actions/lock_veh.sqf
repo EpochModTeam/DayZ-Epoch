@@ -5,13 +5,16 @@ if(TradeInprogress) exitWith { cutText ["Lock vehicle already in progress." , "P
 TradeInprogress = true;
 
 {player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
+s_player_lockUnlock_crtl = 1;
+
+dayzLockVehicle = [_vehicle,true];
+if(player distance _vehicle < 10) then {
+	if (local _vehicle) then {
+		dayzLockVehicle spawn local_lockUnlock
+	} else {
+		publicVariable "dayzLockVehicle";
+	};
+};
+
 s_player_lockUnlock_crtl = -1;
-
-_vehicle setVehicleInit "this lock true; this lockCargo true;";
-processInitCommands;
-
-//_vehicle lock true;	
-//dayzLockVehicle = [_vehicle,true];
-//publicVariable "dayzLockVehicle";
-
 TradeInprogress = false;
