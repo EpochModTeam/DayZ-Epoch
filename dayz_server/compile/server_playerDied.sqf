@@ -40,9 +40,6 @@ if (_killerName != "nil") then
 	if(DZE_DeathMsgSide) then {
 		[nil, nil, rspawn, [_killer, _message], { (_this select 0) sideChat (_this select 1) }] call RE;
 	};
-	if(DZE_DeathMsgTitleTextLocal) then {
-		[nil,nil,"loc",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
-	};
 	if(DZE_DeathMsgTitleText) then {
 		[nil,nil,"per",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
 	};
