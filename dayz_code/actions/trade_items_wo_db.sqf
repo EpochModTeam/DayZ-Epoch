@@ -69,8 +69,10 @@ for "_x" from 1 to _total_trades do {
 
 	if (!_finished) exitWith { 
 		r_interrupt = false;
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
+		if (vehicle player == player) then {
+			[objNull, player, rSwitchMove,""] call RE;
+			player playActionNow "stop";
+		};
 		cutText ["Canceled Trade." , "PLAIN DOWN"];
 	};
 

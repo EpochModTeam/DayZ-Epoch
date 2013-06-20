@@ -67,14 +67,19 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					if (r_interrupt) then {
 						r_doLoop = false;
 					};
+					if (vehicle player == player) then {
+						r_doLoop = false;
+					};
 					sleep 0.1;
 				};
 				r_doLoop = false;
 
 				if(!_finished) then {
 					r_interrupt = false;
-					[objNull, player, rSwitchMove,""] call RE;
-					player playActionNow "stop";
+					if (vehicle player == player) then {
+						[objNull, player, rSwitchMove,""] call RE;
+						player playActionNow "stop";
+					};
 				};
 
 			} else {

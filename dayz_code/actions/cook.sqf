@@ -68,12 +68,12 @@ _cookedmeat = meatcooked;
 		
 		} else {
 			r_interrupt = false;
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
+			if (vehicle player == player) then {
+				[objNull, player, rSwitchMove,""] call RE;
+				player playActionNow "stop";
+			};
 
 			cutText [format["Canceled cooking %1",_textraw], "PLAIN DOWN"];
-
-			// player addMagazine "ItemBandage";
 		};
 	};
 } forEach _rawmeat;

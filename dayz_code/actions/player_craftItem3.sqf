@@ -183,8 +183,10 @@ if (_canDo) then {
 
 			} else {
 				r_interrupt = false;
-				[objNull, player, rSwitchMove,""] call RE;
-				player playActionNow "stop";
+				if (vehicle player == player) then {
+					[objNull, player, rSwitchMove,""] call RE;
+					player playActionNow "stop";
+				};
 				cutText ["Canceled crafting.", "PLAIN DOWN"];
 			};
 		

@@ -82,8 +82,10 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 					if(!_finished) then {
 						r_interrupt = false;
-						[objNull, player, rSwitchMove,""] call RE;
-						player playActionNow "stop";
+						if (vehicle player == player) then {
+							[objNull, player, rSwitchMove,""] call RE;
+							player playActionNow "stop";
+						};
 					};
 
 				} else {

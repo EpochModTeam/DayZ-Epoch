@@ -41,8 +41,10 @@ r_doLoop = false;
 
 if(!_finished) then {
 	r_interrupt = false;
-	[objNull, player, rSwitchMove,""] call RE;
-	player playActionNow "stop";
+	if (vehicle player == player) then {
+		[objNull, player, rSwitchMove,""] call RE;
+		player playActionNow "stop";
+	};
 	cutText ["Canceled." , "PLAIN DOWN"]
 };
 
