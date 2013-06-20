@@ -66,11 +66,13 @@ _key call server_hiveWrite;
 
 	if(!_done) exitWith { diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
 
-	_object_para = "ParachuteMediumWest" createVehicle [0,0,0];
-
-	_object_para setpos [_location select 0, _location select 1,(_location select 2) + 65];
-
-	_object = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
+	if(DZE_TRADER_SPAWNMODE) then {
+		_object_para = "ParachuteMediumWest" createVehicle [0,0,0];
+		_object_para setpos [_location select 0, _location select 1,(_location select 2) + 65];
+		_object = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
+	} else {
+		_object = createVehicle [_class, _location, [], 0, "CAN_COLLIDE"];
+	};
 
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
