@@ -1106,7 +1106,7 @@ class Citizen1;	// External class reference
 	};
 	class CZ_Soldier_Sniper_EP1;
 	class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
-		displayName = "Desert Guille";
+		displayName = "Desert Ghillie";
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -1345,6 +1345,7 @@ class Citizen1;	// External class reference
 	{
 		displayName = "Mass Grave W/ Zombies";
 	};
+
 	class UH1Wreck_DZ: SpawnableWreck
 	{
 		model = "\ca\air2\UH1Y\UH1Y_Crashed.p3d";
@@ -1363,6 +1364,45 @@ class Citizen1;	// External class reference
 	};
 	class Strategic;
 	class NonStrategic;
+
+	class Garage_DZ: NonStrategic
+	{
+		scope = 2;
+		model = "\z\addons\dayz_epoch\models\garage.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		displayName = "Garage";
+		vehicleClass = "Wrecks";
+		class AnimationSources
+		{
+			class garageDoor { 
+			  source = "User"; 
+			  animPeriod = 1; 
+			  initPhase = 0; 
+			};
+		};
+		class UserActions
+		{
+			class CloseDoor
+			{
+				position = "";
+				displayName = "Close Door";
+				radius = 1.5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'garageDoor' == 1";
+				statement = "this animate ['garageDoor', 0];";
+			};
+			class OpenDoor
+			{
+				position = "";
+				displayName = "Open Door";
+				radius = 1.5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'garageDoor' == 0";
+				statement = "this animate ['garageDoor', 1];";
+			};
+		};
+	};
 
 	class Land_A_FuelStation_Feed: Strategic
 	{
@@ -1572,5 +1612,31 @@ class Citizen1;	// External class reference
 		fuelCapacity = 10000;
 	};
 	
+	// Vehicle Upgrades
 
+	// Performance 1
+	class Offroad_DSHKM_Gue;
+	class Offroad_DSHKM_Gue_DZE1: Offroad_DSHKM_Gue
+	{
+		maxspeed = 110;
+	};
+	// Armmor 2
+	class Offroad_DSHKM_Gue_DZE2: Offroad_DSHKM_Gue_DZE1
+	{
+		armor = 100;
+	};
+	// Cargo 3
+	class Offroad_DSHKM_Gue_DZE3: Offroad_DSHKM_Gue_DZE2
+	{
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 200;
+        transportmaxbackpacks = 5;
+	};
+	// Fuel 4
+	class Offroad_DSHKM_Gue_DZE4: Offroad_DSHKM_Gue_DZE3
+	{
+		fuelCapacity = 210;
+	};
+	
+	
 };	
