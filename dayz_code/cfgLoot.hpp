@@ -5,16 +5,14 @@ class CfgLoot {
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
 			"ItemTrashToiletpaper",
-			"ItemTrashRazor",
-			"ItemLightBulb"
+			"ItemTrashRazor"
 		},
 		{
 			0.5,
 			0.05,
 			0.25,
-			0.09,
-			0.1,
-			0.01
+			0.10,
+			0.1
 		}
 	};
 	civilian[] = {
@@ -205,7 +203,7 @@ class CfgLoot {
 			"30Rnd_762x39_AK47",
 			"30Rnd_545x39_AK",
 			"5Rnd_762x51_M24",
-			"10Rnd_127x99_m107",
+			"5Rnd_86x70_L115A1",
 			"8Rnd_B_Beneli_74Slug",
 			"1Rnd_HE_M203",
 			"FlareWhite_M203",
@@ -364,6 +362,8 @@ class CfgLoot {
 			"Skin_SurvivorW3_DZ",
 			"Skin_SurvivorWpink_DZ",
 			"Skin_SurvivorWurban_DZ",
+			//"Skin_SurvivorWsequisha_DZ",
+			//"Skin_SurvivorWsequishaD_DZ",
 		},
 		{
 			0.13,
@@ -372,11 +372,13 @@ class CfgLoot {
 			0.1,
 			0.07,
 			0.07,
-			0.07,
-			0.07,
+			0.08,
+			0.08,
 			0.09,
 			0.09,
-			0.09
+			0.07,
+			//0.04,
+			//0.02
 		}
 	};
 	militaryclothes[] = {
