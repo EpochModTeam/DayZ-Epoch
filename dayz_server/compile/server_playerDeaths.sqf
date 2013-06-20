@@ -9,6 +9,8 @@ diag_log(PlayerDeaths);
 
 dayzPlayerDeathsResult = PlayerDeaths;
 
-_clientID publicVariableClient "dayzPlayerDeathsResult";
+if(!isNull _character) then {
+	_clientID publicVariableClient "dayzPlayerDeathsResult";
+};
 
 PlayerDeaths

@@ -10,6 +10,12 @@ _playerName = name _playerObj;
 
 if (_playerName == '__SERVER__' || _playerID == '' || local player) exitWith {};
 
+// Cancel any login until server_monitor terminates. 
+// This is mandatory since all vehicles must be spawned before the first players spawn on the map.
+// Otherwise, all vehicle event handlers won't be created on players' client side.
+if (isNil "sm_done") exitWith { diag_log ("Login cancelled, server is not ready. " + str(_playerObj)); };
+
+
 if (count _this > 2) then {
 	dayz_players = dayz_players - [_this select 2];
 };
@@ -98,27 +104,28 @@ if (!_isNew) then {
 		};
 	};
 
-	//Record initial inventory
-	_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
-	_mags = getArray (_config >> "magazines");
-	_wpns = getArray (_config >> "weapons");
-	_bcpk = getText (_config >> "backpack");
+	//Record initial inventory only if not player zombie 
+	if(_isInfected != 1) then {
+		_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
+		_mags = getArray (_config >> "magazines");
+		_wpns = getArray (_config >> "weapons");
+		_bcpk = getText (_config >> "backpack");
 
-	if(!isNil "DefaultMagazines") then {
-		_mags = DefaultMagazines;
-	};
-	if(!isNil "DefaultWeapons") then {
-		_wpns = DefaultWeapons;
-	};
-	if(!isNil "DefaultBackpack") then {
-		_bcpk = DefaultBackpack;
-	};
-	//_randomSpot = true;
+		if(!isNil "DefaultMagazines") then {
+			_mags = DefaultMagazines;
+		};
+		if(!isNil "DefaultWeapons") then {
+			_wpns = DefaultWeapons;
+		};
+		if(!isNil "DefaultBackpack") then {
+			_bcpk = DefaultBackpack;
+		};
+		//_randomSpot = true;
 	
-	//Wait for HIVE to be free
-	_key = format["CHILD:203:%1:%2:%3:",_charID,[_wpns,_mags],[_bcpk,[],[]]];
-	_key call server_hiveWrite;
-	
+		//Wait for HIVE to be free
+		_key = format["CHILD:203:%1:%2:%3:",_charID,[_wpns,_mags],[_bcpk,[],[]]];
+		_key call server_hiveWrite;
+	};
 };
 diag_log ("LOGIN LOADED: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 
@@ -132,4 +139,6 @@ if (_hiveVer >= dayz_hiveVersionNo) then {
 //_playerObj setVariable ["publish",[_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer],true];
 
 dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];
-(owner _playerObj) publicVariableClient "dayzPlayerLogin";
+if(!isNull _playerObj) then {
+	(owner _playerObj) publicVariableClient "dayzPlayerLogin";
+};
