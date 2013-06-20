@@ -136,9 +136,18 @@ fnc_usec_playerBleed = {
 	_bleedPerSec = (r_player_bloodTotal / _bleedTime);
 	_total = r_player_bloodTotal;
 	r_player_injured = true;
-	_myBleedTime = (random 500) + 100;
+	_myBleedTime = (random 300) + 30;
 	_bTime = 0;
 	while {r_player_injured} do {
+		
+		// If kneeling or crawling reduce bleeding
+		if(dayz_isKneeling) then {
+			_bleedPerSec = _bleedPerSec / 2;
+		};
+		if(dayz_isCrawling) then {
+			_bleedPerSec = _bleedPerSec / 4;
+		};
+		
 		//bleed out
 		if (r_player_blood > 0) then {
 			r_player_blood = r_player_blood - _bleedPerSec;
