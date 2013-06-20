@@ -13,9 +13,9 @@ class CfgWeapons {
 	class ItemKeyKit: ItemCore {
 		scope = 2;
 		displayname = "Keymakers kit";
-		model="\dayz_equip\models\keykit.p3d";
+		model="\z\addons\dayz_epoch\models\keykit.p3d";
 		descriptionShort="Kit including the tools required to smelt, mold and shape keys.";
-		picture="\dayz_equip\textures\equip_keykit_ca.paa";
+		picture="\z\addons\dayz_epoch\pictures\equip_keykit_ca.paa";
 	};
 	class ItemAnvil: ItemCore {
 		displayname = "Anvil";
@@ -140,8 +140,8 @@ class CfgWeapons {
 		scope=2;
 		autoreload=1;
 		magazineReloadTime=0;
-		model="\dayz_equip\models\fishing_rod_weaponized.p3d";
-		picture="\dayz_equip\textures\equip_fishingpole_CA.paa";
+		model="\z\addons\dayz_epoch\models\fishing_rod_weaponized.p3d";
+		picture="\z\addons\dayz_epoch\pictures\equip_fishingpole_CA.paa";
 		displayName="Fishing Pole";
 		magazines[]=
 		{
@@ -178,8 +178,8 @@ class CfgWeapons {
 	{
 		scope=2;
 		displayName="Fishing Pole";
-		model="\dayz_equip\models\fishing_rod_loot_item.p3d";
-		picture="\dayz_equip\textures\equip_fishingpole_CA.paa";
+		model="\z\addons\dayz_epoch\models\fishing_rod_loot_item.p3d";
+		picture="\z\addons\dayz_epoch\pictures\equip_fishingpole_CA.paa";
 		descriptionShort="Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.";
 		class ItemActions
 		{
@@ -297,8 +297,8 @@ class CfgWeapons {
 	
 	// Experimental keys
 	class ItemKey: ItemCore {
-		model = "\dayz_equip\models\key.p3d";
-		picture = "\dayz_equip\textures\equip_key_CA.paa";
+		model = "\z\addons\dayz_epoch\models\key.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_key_CA.paa";
 		displayname = "Black Key";
 		keyid = 0;
 		scope = 2;
@@ -317,26 +317,26 @@ class CfgWeapons {
 	};
 	class ItemKeyGreen: ItemKey {
 		displayname = "Green Key";
-		model = "\dayz_equip\models\key_green.p3d";
-		picture = "\dayz_equip\textures\equip_key_CA_green.paa";
+		model = "\z\addons\dayz_epoch\models\key_green.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_green.paa";
 		scope = 2;
 	};
 	class ItemKeyBlue: ItemKey {
 		displayname = "Blue Key";
-		model = "\dayz_equip\models\key_blue.p3d";
-		picture = "\dayz_equip\textures\equip_key_CA_blue.paa";
+		model = "\z\addons\dayz_epoch\models\key_blue.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_blue.paa";
 		scope = 2;
 	};
 	class ItemKeyYellow: ItemKey {
 		displayname = "Yellow Key";
-		model = "\dayz_equip\models\key_yellow.p3d";
-		picture = "\dayz_equip\textures\equip_key_CA_yellow.paa";
+		model = "\z\addons\dayz_epoch\models\key_yellow.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_yellow.paa";
 		scope = 2;
 	};
 	class ItemKeyRed: ItemKey {
 		displayname = "Red Key";
-		model = "\dayz_equip\models\key_red.p3d";
-		picture = "\dayz_equip\textures\equip_key_CA_red.paa";
+		model = "\z\addons\dayz_epoch\models\key_red.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_red.paa";
 		scope = 2;
 	};
 

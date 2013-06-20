@@ -1,7 +1,7 @@
 /*
 	File: tame_dog.sqf 1.1
 	Author: Kane "Alby" Stone
-	Edited by: [VB]AWOL
+	Expanded to allow all meats as input by: [VB]AWOL - DayZ Epoch
 
 	Description:
 	Allows a player to tame/domesticate a dog.
@@ -20,7 +20,6 @@ _caller = 	_this select 1;
 _id =		_this select 2;
 _dog =		_this select 3;
 
-// expanded to allow all meats as input
 _removed = 0;
 _itemIn = "FoodmeatRaw";
 _countIn = 1;

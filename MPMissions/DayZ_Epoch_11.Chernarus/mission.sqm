@@ -14,8 +14,7 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac",
-		"map_eu"
+		"csj_gyroac"
 	};
 	addOnsAuto[]=
 	{
@@ -1289,8 +1288,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebash";
 			expCond="(player distance zonebash) < 50;";
-			expActiv="TitleText[""Now entering trader city Bash"",""PLAIN DOWN""]; placevault = false;";
-			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; placevault = true;";
+			expActiv="TitleText[""Now entering trader city Bash"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1305,8 +1304,8 @@ class Mission
 			age="UNKNOWN";
 			name="zoneklen";
 			expCond="(player distance zoneklen) < 50;";
-			expActiv="TitleText[""Now entering trader city Klen"",""PLAIN DOWN""]; placevault = false;";
-			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; placevault = true;";
+			expActiv="TitleText[""Now entering trader city Klen"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1321,8 +1320,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonestary";
 			expCond="(player distance zonestary) < 50;";
-			expActiv="TitleText[""Now entering trader city Stary"",""PLAIN DOWN""]; placevault = false;";
-			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; placevault = true;";
+			expActiv="TitleText[""Now entering trader city Stary"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 				soundDet="arabian_market_1";

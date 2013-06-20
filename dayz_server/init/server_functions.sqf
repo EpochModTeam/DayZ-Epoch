@@ -23,6 +23,7 @@ zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\co
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 server_spawnCrashSite  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
 server_handleZedSpawn =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleZedSpawn.sqf";
+server_spawnEvents =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
 
 fnc_plyrHit   = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
 server_deaths = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
@@ -340,7 +341,7 @@ spawn_roadblocks = {
 			_veh setpos _position;
 
 			dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_veh];
-			_veh setVariable ["ObjectID",1,true];
+			_veh setVariable ["ObjectID","1",true];
 
 			_num = round(random 3);
 			_config = 		configFile >> "CfgBuildingLoot" >> _spawnloot;

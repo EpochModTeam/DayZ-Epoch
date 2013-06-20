@@ -73,8 +73,6 @@ if (_hasToolbox) then {
 		
 			if (_isOK) then {	
 
-				
-			
 				//break the part
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 			
@@ -105,8 +103,10 @@ if (_hasToolbox) then {
 	
 	} else {
 		r_interrupt = false;
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
+		if (vehicle player == player) then {
+			[objNull, player, rSwitchMove,""] call RE;
+			player playActionNow "stop";
+		};
 		cutText ["Canceled Salvage.", "PLAIN DOWN"];
 	};
 			

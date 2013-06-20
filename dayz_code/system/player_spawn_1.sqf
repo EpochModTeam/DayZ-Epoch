@@ -56,6 +56,20 @@ while {true} do {
 		dayz_currentDay = _day;
 	};
 
+	_world = toUpper(worldName); //toUpper(getText (configFile >> "CfgWorlds" >> (worldName) >> "description"));
+	_nearestCity = nearestLocations [getPos player, ["NameCityCapital","NameCity","NameVillage","NameLocal"],300];
+	
+	if (count _nearestCity > 0) then {
+		_town = text (_nearestCity select 0); 
+		if(dayz_PreviousTown == "Wilderness") then {
+			dayz_PreviousTown = _town;
+		};
+		if(_town != dayz_PreviousTown) then {
+			_first = [_world,_town,""] spawn BIS_fnc_infoText;
+		};
+		dayz_PreviousTown = _town;
+	};
+
 	//wait
 	sleep 5;
 };

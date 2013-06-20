@@ -12,8 +12,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 private ["_level", "_n", "_s"];
 
-_voil = [] call R3F_TIRED_FNCT_MkVoile;
-[_voil,1] call R3F_TIRED_FNCT_Voile_Noir;
+//_voil = [] call R3F_TIRED_FNCT_MkVoile;
+//[_voil,1] call R3F_TIRED_FNCT_Voile_Noir;
 
 _n = 0;
 _posATL = 0;
@@ -85,7 +85,7 @@ while {true} do {
 				R3F_Weight];
 		#endif
 		
-		[_voil, _level] call R3F_TIRED_FNCT_Voile_Noir;
+		[_level] call R3F_TIRED_FNCT_Voile_Noir;
 		
 		if (R3F_TIRED_Accumulator  > R3F_TIRED_BLACKOUT_LEVEL and scriptDone R3F_TIRED_Handle_Blackout_Effect and scriptDone R3F_TIRED_Handle_Blur_Effect) then {
 			R3F_TIRED_Handle_Blackout_Effect = [] spawn R3F_TIRED_FNCT_DoBlackVanish;
@@ -126,5 +126,5 @@ while {true} do {
 	_n = _n + 1;
 };
 
-[_voil] call R3F_TIRED_FNCT_Effect_Off;
+//[_voil] call R3F_TIRED_FNCT_Effect_Off;
 

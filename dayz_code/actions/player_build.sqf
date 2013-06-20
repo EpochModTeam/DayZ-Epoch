@@ -19,21 +19,38 @@ _item =			_this;
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
 
+_needNearby =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "needNearby");
+
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 
 _distance = 30;
+_needText = "Plot Pole";
+
 if(_isPole) then {
 	_distance = 45;
 };
 
-// check for near plot
-_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], _distance];
-_findNearestPole = [];
-{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
+if((count _needNearby) == 0) then {
+	_needNearby = ["Plastic_Pole_EP1_DZ"];
+} else {
+	if("dayz_fuelpumparray" in _needNearby) then {
+		_needNearby = dayz_fuelpumparray;
+		_needText = "Fuel Pump";
+	};
+	if("dayz_fuelsources" in _needNearby) then {
+		_needNearby = dayz_fuelsources;
+		_needText = "Fuel Tanks";
+	};
+};
 
+// check for near plot
+_findNearestPoles = nearestObjects [(vehicle player), _needNearby, _distance];
+_findNearestPole = [];
+
+{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
 _IsNearPlot = count (_findNearestPole);
 
 // If item is plot pole and another one exists within 45m
@@ -43,41 +60,44 @@ if(_IsNearPlot == 0) then {
 
 	// Allow building of plot
 	if(_isPole) then {
-		_canBuildOnPlot = true;	
+		_canBuildOnPlot = true;
 	};
 	
 } else {
 	// Since there are plots nearby we check for ownership and then for friend status
 
-	_nearestPole = _findNearestPole select 0;
+	if("Plastic_Pole_EP1_DZ" in _needNearby) then {
+		_nearestPole = _findNearestPole select 0;
 
-	// Find owner 
-	_ownerID = _nearestPole getVariable["CharacterID","0"];
+		// Find owner 
+		_ownerID = _nearestPole getVariable["CharacterID","0"];
 
-	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
+		// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
-	// check if friendly to owner
-	if(dayz_characterID == _ownerID) then {
-		// owner can build anything within his plot except other plots
-		if(!_isPole) then {
-			_canBuildOnPlot = true;
-		};
-		
-	} else {
-		// disallow building plot
-		if(!_isPole) then {
-			_friendlies		= player getVariable ["friendlyTo",[]];
-			// check if friendly to owner
-			if(_ownerID in _friendlies) then {
+		// check if friendly to owner
+		if(dayz_characterID == _ownerID) then {
+			// owner can build anything within his plot except other plots
+			if(!_isPole) then {
 				_canBuildOnPlot = true;
 			};
+		
+		} else {
+			// disallow building plot
+			if(!_isPole) then {
+				_friendlies		= player getVariable ["friendlyTo",[]];
+				// check if friendly to owner
+				if(_ownerID in _friendlies) then {
+					_canBuildOnPlot = true;
+				};
+			};
 		};
+	} else {
+		_canBuildOnPlot = true;
 	};
-	
 };
 
 // _message
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText ["Building requires plot pole within 30m." , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Building requires %1 within %2m.",_needText,_distance] , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -268,8 +288,10 @@ if (_hasrequireditem) then {
 
 		} else {
 			r_interrupt = false;
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
+			if (vehicle player == player) then {
+				[objNull, player, rSwitchMove,""] call RE;
+				player playActionNow "stop";
+			};
 
 			deleteVehicle _tmpbuilt;
 

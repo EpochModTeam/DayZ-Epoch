@@ -1,3 +1,8 @@
+/*
+	DayZ Enhanced ChopWood
+	Usage: spawn player_chopWood;
+	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+*/
 private ["_isOk","_i","_objName","_objInfo","_lenInfo","_started","_finished","_animState","_isMedic","_proceed","_counter","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree"];
 
 if(TradeInprogress) exitWith { cutText ["Harvest wood already in progress." , "PLAIN DOWN"]; };
@@ -124,8 +129,10 @@ if (count(_findNearestTree) >= 1) then {
 
 		} else {
 			r_interrupt = false;
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
+			if (vehicle player == player) then {
+				[objNull, player, rSwitchMove,""] call RE;
+				player playActionNow "stop";
+			};
 			cutText ["Canceled Harvesting Wood.", "PLAIN DOWN"];
 		};
 

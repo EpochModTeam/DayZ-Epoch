@@ -5,7 +5,7 @@ _vehicle = (vehicle player);
 
 _targets = _unit getVariable ["targets",[]];
 
-if (dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith {};
+// if (!dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith {};
 
 //Do the attack
 if (r_player_unconscious && _vehicle == player && _type == "zombie") then {

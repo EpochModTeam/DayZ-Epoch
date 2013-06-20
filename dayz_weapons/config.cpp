@@ -1582,9 +1582,9 @@ class CfgVehicles
 	class FemaleSoldier1_DZ: SurvivorW2_DZ
 	{
 		side = 1;
-		model = "\dayz_equip\models\female_soldier";
+		model = "\z\addons\dayz_epoch\models\female_soldier";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\dayz_equip\textures\female_soldier_body.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\female_soldier_body.paa"};
 	};
 	*/
 	class BanditW2_DZ: BanditW1_DZ
@@ -1600,22 +1600,32 @@ class CfgVehicles
 	class SurvivorWpink_DZ: SurvivorW2_DZ
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\dayz_equip\textures\GirlyGirl.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\GirlyGirl.paa"};
+	};
+	class SurvivorWsequisha_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\sequisha_co.paa"};
+	};
+	class SurvivorWsequishaD_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\sequishaD_co.paa"};
 	};
 	class SurvivorWcombat_DZ: SurvivorW2_DZ
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\dayz_equip\textures\CombatGirl.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\CombatGirl.paa"};
 	};
 	class SurvivorWdesert_DZ: SurvivorW2_DZ
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\dayz_equip\textures\DesertGirl.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\DesertGirl.paa"};
 	};
 	class SurvivorWurban_DZ: SurvivorW2_DZ
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\dayz_equip\textures\UrbanGirl.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\textures\UrbanGirl.paa"};
 	};
 	class Citizen1;
 	class PZombie_VB: Citizen1

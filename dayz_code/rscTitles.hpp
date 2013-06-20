@@ -1,6 +1,7 @@
-class RscPicture;
-class RscButton;
+//class RscPicture;
+//class RscButton;
 class CA_IGUI_Title;
+class CA_Title;
 class RscText;
 class RscControlsGroup;
 class RscLineBreak;
@@ -148,7 +149,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Epoch 1.0.1.1 (1.7.6.1)";
+			text = "DayZ Epoch 1.0.1.2 (1.7.6.1)";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
@@ -759,6 +760,113 @@ class RscDisplayGenderSelect
 			w = 0.2 * safezoneW;
 			h = 0.3 * safezoneH;
 			colorBackground[] = {-1,-1,-1,0};
+		};
+	};
+};
+
+class RscDisplayMPInterrupt : RscStandardDisplay {
+	movingEnable = 0;
+	enableSimulation = 1;
+	//onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [(_this select 0)] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';"; _respawn = (_this select 0) displayCtrl 1010); _respawn ctrlEnable false; _abort = (_this select 0) displayCtrl 104); _abort ctrlEnable false;						
+	onLoad = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';";
+	onUnload = "private ['_dummy']; _dummy = ['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
+	
+	class controlsBackground {
+		class Mainback : RscPicture {
+			idc = 1104;
+			x = 0.045;
+			y = 0.17;
+			w = 0.627451;
+			h = 0.836601;
+			text = "\ca\ui\data\ui_background_mp_pause_ca.paa";
+		};
+	};
+	
+	class controls {
+	/*
+		class Title {};
+		class B_Players {};
+		class B_Options {};
+		class B_Abort {};
+		class B_Retry {};
+		class B_Load {};
+		class B_Save {};
+		class B_Continue {};
+		class B_Diary {};
+	*/	
+		
+		class MissionTitle : RscText {
+			idc = 120;
+			x = 0.05;
+			y = 0.818;
+			text = "";
+		};
+		
+		class DifficultyTitle : RscText {
+			idc = 121;
+			x = 0.05;
+			y = 0.772;
+			text = "";
+		};
+		
+		class Paused_Title : CA_Title {
+			idc = 523;
+			x = 0.087;
+			y = 0.192;
+			text = $STR_DISP_MAIN_MULTI;
+		};
+		
+		class CA_B_SAVE : RscShortcutButtonMain {
+			idc = 103;
+			y = 0.2537 + 0.101903 * 0;
+			x = 0.051;
+			text = $STR_DISP_INT_SAVE;
+			default = 0;
+		};
+		
+		class CA_B_Skip : CA_B_SAVE {
+			idc = 1002;
+			text = $STR_DISP_INT_SKIP;
+		};
+		
+		class CA_B_REVERT : CA_B_SAVE {
+			idc = 119;
+			y = 0.2537 + 0.101903 * 1;
+			text = "$str_disp_revert";
+			default = 0;
+		};
+		
+		class CA_B_Respawn : CA_B_SAVE {
+			idc = 1010;
+			//onButtonClick = "hint str (_this select 0);";
+			onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
+			y = 0.2537 + 0.101903 * 2;
+			text = $STR_DISP_INT_RESPAWN;
+			default = 0;
+		};
+		
+		class CA_B_Options : CA_B_SAVE {
+			idc = 101;
+			y = 0.2537 + 0.101903 * 3;
+			text = $STR_DISP_INT_OPTIONS;
+			default = 0;
+		};
+		
+		class CA_B_Abort : CA_B_SAVE {
+			idc = 104;
+			y = 0.2537 + 0.101903 * 4;
+			onButtonClick = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; call dayz_forceSave;";
+			text = $STR_DISP_INT_ABORT;
+			default = 0;
+		};
+		
+		class ButtonCancel : RscShortcutButton {
+			idc = 2;
+			shortcuts[] = {0x00050000 + 1, 0x00050000 + 8};
+			default = 1;
+			x = 0.1605;
+			y = 0.8617;
+			text = $STR_DISP_INT_CONTINUE;
 		};
 	};
 };
@@ -1491,7 +1599,7 @@ class RscDisplayGear
 	emptyMag2 = "\ca\ui\data\ui_gear_mag2_gs.paa";
 	emptyHGun = "\ca\ui\data\ui_gear_hgun_gs.paa";
 	emptyHGunMag = "\ca\ui\data\ui_gear_hgunmag_gs.paa";
-	onLoad = "call gear_ui_init;if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\ca\ui\scripts\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\ca\ui\scripts\handleGear.sqf'; _dummy;";
+	onLoad = "[] spawn object_monitorGear; call gear_ui_init;if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\ca\ui\scripts\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\ca\ui\scripts\handleGear.sqf'; _dummy;";
 	class ControlsBackground
 	{
 		class Mainback: RscPicture

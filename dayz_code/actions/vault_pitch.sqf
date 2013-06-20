@@ -48,7 +48,7 @@ _counter = 0;
 while {_isOk} do {
 	
 	if(_counter == 0) then {
-		cutText ["Planning consruction stand still 5 seconds to build.", "PLAIN DOWN"];
+		cutText ["Planning construction stand still 5 seconds to build.", "PLAIN DOWN"];
 		sleep 5; 
 		_location1 = getPosATL player;
 		sleep 5;
@@ -56,7 +56,7 @@ while {_isOk} do {
 	
 		if(_location1 distance _location2 < 0.1) exitWith {
 			
-			cutText ["Started consruction move within 5 seconds to cancel.", "PLAIN DOWN"];
+			cutText ["Started construction move within 5 seconds to cancel.", "PLAIN DOWN"];
 			_location3 = getPosATL player;
 			sleep 5;
 			_location4 = getPosATL player;
@@ -85,7 +85,7 @@ _vault_location = (getPosATL _tmpvault);
 // Make sure vault is not placed on road. 
 if (isOnRoad _vault_location) then { _isOk = true; diag_log ("surface is road"); };
 // Make sure vault is not placed in trader citys
-if(!placevault) then { _isOk = true; diag_log ("is trader city"); };
+if(!canbuild) then { _isOk = true; diag_log ("is trader city"); };
 
 //Block Tents in pounds
 _objectsPond = 		nearestObjects [_playerPos, [], 10];

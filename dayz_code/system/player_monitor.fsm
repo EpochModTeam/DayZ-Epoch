@@ -119,8 +119,8 @@ link59[] = {51,52};
 link60[] = {52,29};
 link61[] = {53,54};
 link62[] = {54,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-452.194977,340.078094,1506.747437,277.117401,566,880,1};
-window[] = {2,-1,-1,-1,-1,760,28,999,0,3,584};
+globals[] = {25.000000,1,0,0,0,640,480,1,85,6316128,1,-452.194977,340.078094,1506.747437,277.117401,565,880,1};
+window[] = {2,-1,-1,-1,-1,806,2041,3012,46,3,583};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -444,7 +444,7 @@ class FSM
           priority = 0.000000;
           to="Parse_Login";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"count (dayzPlayerLogin) > 0"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"count (dayzPlayerLogin) > 1"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_msg = 		dayzPlayerLogin;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -455,7 +455,9 @@ class FSM
     class Parse_Login
     {
       name = "Parse_Login";
-      init = /*%FSM<STATEINIT""">*/"progressLoadingScreen 0.6;" \n
+      init = /*%FSM<STATEINIT""">*/"dayz_authed = true;" \n
+       "" \n
+       "progressLoadingScreen 0.6;" \n
        "_charID		= _msg select 0;" \n
        "_inventory	= _msg select 1;" \n
        "_backpack	= _msg select 2;" \n
@@ -720,43 +722,46 @@ class FSM
        "dayz_playerUID = _playerUID;" \n
        "" \n
        "if ((_isNew) OR (count _inventory == 0)) then {" \n
-       "	//player is new, add initial loadout" \n
-       "	_config = (configFile >> ""CfgSurvival"" >> ""Inventory"" >> ""Default"");" \n
-       "	_mags = getArray (_config >> ""magazines"");" \n
-       "	_wpns = getArray (_config >> ""weapons"");		" \n
-       "	_bcpk = getText (_config >> ""backpack"");" \n
-       "	_bcpkWpn = getText (_config >> ""backpackWeapon"");" \n
-       "	if(!isNil ""DefaultMagazines"") then {" \n
-       "		_mags = DefaultMagazines;" \n
-       "	};" \n
-       "	if(!isNil ""DefaultWeapons"") then {" \n
-       "		_wpns = DefaultWeapons;" \n
-       "	};" \n
-       "	if(!isNil ""DefaultBackpack"") then {" \n
-       "		_bcpk = DefaultBackpack;" \n
-       "	};" \n
-       "	if(!isNil ""DefaultBackpackWeapon"") then {" \n
-       "		_bcpkWpn = DefaultBackpackWeapon;" \n
-       "	};" \n
-       "	//Add inventory" \n
-       "	{" \n
-       "		_isOK = 	isClass(configFile >> ""CfgMagazines"" >> _x);" \n
-       "		if (_isOK) then {" \n
-       "			player addMagazine _x;" \n
+       "	//player is new, add initial loadout only if player is not pzombie" \n
+       "	if(!(player isKindOf ""PZombie_VB"")) then {" \n
+       "		_config = (configFile >> ""CfgSurvival"" >> ""Inventory"" >> ""Default"");" \n
+       "		_mags = getArray (_config >> ""magazines"");" \n
+       "		_wpns = getArray (_config >> ""weapons"");		" \n
+       "		_bcpk = getText (_config >> ""backpack"");" \n
+       "		_bcpkWpn = getText (_config >> ""backpackWeapon"");" \n
+       "		if(!isNil ""DefaultMagazines"") then {" \n
+       "			_mags = DefaultMagazines;" \n
        "		};" \n
-       "	} forEach _mags;" \n
-       "	{" \n
-       "		_isOK = 	isClass(configFile >> ""CfgWeapons"" >> _x);" \n
-       "		if (_isOK) then {" \n
-       "			player addWeapon _x;" \n
+       "		if(!isNil ""DefaultWeapons"") then {" \n
+       "			_wpns = DefaultWeapons;" \n
        "		};" \n
-       "	} forEach _wpns;" \n
-       "	" \n
-       "	player addBackpack _bcpk; " \n
-       "	dayz_myBackpack =	unitBackpack player;" \n
-       "" \n
-       "	if (_bcpkWpn != """") then {" \n
-       "		dayz_myBackpack addWeaponCargoGlobal [_bcpkWpn,1];" \n
+       "		if(!isNil ""DefaultBackpack"") then {" \n
+       "			_bcpk = DefaultBackpack;" \n
+       "		};" \n
+       "		if(!isNil ""DefaultBackpackWeapon"") then {" \n
+       "			_bcpkWpn = DefaultBackpackWeapon;" \n
+       "		};" \n
+       "		//Add inventory" \n
+       "		{" \n
+       "			_isOK = 	isClass(configFile >> ""CfgMagazines"" >> _x);" \n
+       "			if (_isOK) then {" \n
+       "				player addMagazine _x;" \n
+       "			};" \n
+       "		} forEach _mags;" \n
+       "		{" \n
+       "			_isOK = 	isClass(configFile >> ""CfgWeapons"" >> _x);" \n
+       "			if (_isOK) then {" \n
+       "				player addWeapon _x;" \n
+       "			};" \n
+       "		} forEach _wpns;" \n
+       "		" \n
+       "		if (_bcpk != """") then {" \n
+       "			player addBackpack _bcpk; " \n
+       "			dayz_myBackpack =	unitBackpack player;" \n
+       "		};" \n
+       "		if (_bcpkWpn != """") then {" \n
+       "			dayz_myBackpack addWeaponCargoGlobal [_bcpkWpn,1];" \n
+       "		};" \n
        "	};" \n
        "};" \n
        "" \n

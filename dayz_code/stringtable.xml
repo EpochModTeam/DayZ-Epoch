@@ -2472,5 +2472,45 @@
 			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
 			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
 		</Key>
+    <Key ID="STR_FOOD_NAME_RBULL">
+      <Original>Red Bull</Original>
+      <English>Red Bull</English>
+      <German>Red Bull</German>
+      <Russian>Red Bull</Russian>
+      <Spanish>Red Bull</Spanish>
+      <Dutch>Red Bull</Dutch>
+      <French>Red Bull</French>
+      <Czech>Red Bull</Czech>
+    </Key>
+    <Key ID="STR_FOOD_DESC_RBULL">
+      <Original>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Original>
+      <English>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</English>
+      <German>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</German>
+      <Russian>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Russian>
+      <Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Spanish>
+      <Dutch>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Dutch>
+      <French>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</French>
+      <Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Czech>
+    </Key>
+    <Key ID="STR_FOOD_NAME_OSHERBET">
+      <Original>Orange Sherbet/Original>
+      <English>Orange Sherbet</English>
+      <German>Orange Sherbet</German>
+      <Russian>Orange Sherbet</Russian>
+      <Spanish>Orange Sherbet</Spanish>
+      <Dutch>Orange Sherbet</Dutch>
+      <French>Orange Sherbet</French>
+      <Czech>Orange Sherbet</Czech>
+    </Key>
+    <Key ID="STR_FOOD_DESC_OSHERBET">
+      <Original>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Original>
+      <English>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</English>
+      <German>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</German>
+      <Russian>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Russian>
+      <Spanish>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Spanish>
+      <Dutch>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Dutch>
+      <French>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</French>
+      <Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
+    </Key>
 	</Package>
 </Project>

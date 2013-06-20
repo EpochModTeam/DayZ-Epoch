@@ -40,7 +40,12 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 if(DZEdebug) then {
 	hint str(typeOf cursorTarget);
 	if (s_player_debuglootpos < 0) then {
-		s_player_debuglootpos = player addAction ["Save to arma2.rpt", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["save"], 99, false, true, "",""];
+		s_player_debuglootpos = player addAction ["Save to arma2.rpt", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["start"], 99, false, true, "",""];
+		s_player_debuglootpos1 = player addAction ["Raise Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["up"], 99, false, true, "",""];
+		s_player_debuglootpos2 = player addAction ["Lower Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["down"], 99, false, true, "",""];
+		s_player_debuglootpos3 = player addAction ["Raise Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["up_small"], 99, false, true, "",""];
+		s_player_debuglootpos4 = player addAction ["Lower Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["down_small"], 99, false, true, "",""];
+		Base_Z_height = 0.5;
 	};
 };
 
@@ -130,7 +135,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	_isZombie = _cursorTarget isKindOf "zZombie_base";
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
 	_isWreck = _typeOfCursorTarget in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
-	_isRemovable = _typeOfCursorTarget in ["Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","SandNest_DZ"];
+	_isRemovable = _typeOfCursorTarget in ["Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","SandNest_DZ","Plastic_Pole_EP1_DZ"];
 	_isDisallowRepair = _typeOfCursorTarget in ["M240Nest_DZ"];
 
 	_isTent = _cursorTarget isKindOf "TentStorage";
@@ -157,7 +162,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
 	
 	//Allow player to delete objects
-	if((_isDestructable or _isWreck or (_isRemovable and ("ItemCrowbar" in _itemsPlayer))) and _hasToolbox) then {
+	if((_isDestructable or _isWreck or (_isRemovable and ("ItemCrowbar" in _itemsPlayer))) and _hasToolbox and _isAlive) then {
 		if (s_player_deleteBuild < 0) then {
 			s_player_deleteBuild = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, true, true, "", ""];
 		};
@@ -167,7 +172,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 	
 	// Allow Owner to lock and unlock vehicle  
-	if(_isVehicle and !_isMan and _ownerID != "0") then {
+	if(_isVehicle and _isAlive and !_isMan and _ownerID != "0") then {
 		if (s_player_lockUnlock_crtl < 0) then {
 			_hasKey = _ownerID in _temp_keys;
 			_oldOwner = (_ownerID == dayz_playerUID);
@@ -205,7 +210,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_forceSave;
 		s_player_forceSave = -1;
 	};
-	*/
+	
 
 	if((_isVehicle or _isTent or _isnewstorage) and _isAlive and !_isMan) then {
 		if (s_player_checkGear < 0) then {
@@ -215,6 +220,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_checkGear;
 		s_player_checkGear = -1;
 	};
+	*/
 
 	//flip vehicle small vehicles by your self and all other vehicles with help nearby
 	if (_isVehicle and !_canmove and _isAlive and (player distance _cursorTarget >= 2) and (count (crew _cursorTarget))== 0 and ((vectorUp _cursorTarget) select 2) < 0.5) then {

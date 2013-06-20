@@ -10,7 +10,7 @@ _vehicle = _this select 3;
 
 // _allFixed = true;
 _hitpoints = _vehicle call vehicle_getHitpoints;
-
+// diag_log format["DEBUG SALVAGE: %1", _hitpoints];
 {			
 	_damage = [_vehicle,_x] call object_getHit;
 	_part = "PartGeneric";
@@ -43,7 +43,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 	};
 
 	// allow removal of any lightly damaged parts
-	if (_damage < 1) then {
+	if (_damage < 1 and _damage > 0) then {
 		
 		// Do not allow removal of engine or fueltanks
 		if( _part == "PartGlass" or _part == "PartWheel" ) then {
@@ -56,6 +56,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 			_string = format["<t %2>Remove%1 (%3 %4)</t>",_cmpt,_color,_percent,"%"]; //Remove - Part
 			_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\salvage.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
 			s_player_repairActions set [count s_player_repairActions,_handle];
+			
 		};
 	};
 

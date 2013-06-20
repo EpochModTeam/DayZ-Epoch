@@ -77,7 +77,7 @@ while {true} do {
 		// I don't think this is needed (you can't get "in" a crash), but it was in the original DayZ Crash logic
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_crash];
 
-		_crash setVariable ["ObjectID",1,true];
+		_crash setVariable ["ObjectID","1",true];
 
 		// Disable simulation server side
 		_crash enableSimulation false;

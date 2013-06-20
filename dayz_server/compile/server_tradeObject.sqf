@@ -16,4 +16,6 @@ _result = call compile format ["%1",_data];
 _outcome = _result select 0;
 
 dayzTradeResult = _outcome;
-_clientID publicVariableClient "dayzTradeResult";
+if(!isNull _character) then {
+	_clientID publicVariableClient "dayzTradeResult";
+};

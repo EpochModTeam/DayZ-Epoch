@@ -35,5 +35,7 @@ if (_status == "ObjectStreamStart") then {
 
 diag_log(_retrader);
 dayzTraderMenuResult = _retrader;
-_clientID publicVariableClient "dayzTraderMenuResult";
+if(!isNull _character) then {
+	_clientID publicVariableClient "dayzTraderMenuResult";
+};
 _retrader;

@@ -24,7 +24,7 @@ _bos = 0;
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
 } else {
-	_obj = nearestObjects [(getPosATL player), [_part_in], 20];
+	_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance];
 	_qty = count _obj;
 	_bos = 1;
 };
@@ -61,8 +61,10 @@ if (_qty >= _qty_in) then {
 
 	if (!_finished) exitWith { 
 		r_interrupt = false;
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
+		if (vehicle player == player) then {
+			[objNull, player, rSwitchMove,""] call RE;
+			player playActionNow "stop";
+		};
 		cutText ["Canceled Trade." , "PLAIN DOWN"];
 	};
 
@@ -105,6 +107,7 @@ if (_qty >= _qty_in) then {
 					
 					_config = _keySelected;
 					_isOk = [player,_config] call BIS_fnc_invAdd;
+					waitUntil {!isNil "_isOk"};
 					if (_isOk and _isKeyOK) then {
 					
 						_removed = ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
@@ -186,7 +189,7 @@ if (_qty >= _qty_in) then {
 							cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 						};
 					} else {
-						cutText [format[("Cannot sell %1, tires are too damaged."),_textPartOut] , "PLAIN DOWN"];
+						cutText [format[("Cannot sell %1, tires are too damaged."),_textPartIn] , "PLAIN DOWN"];
 					};
 				};
 	

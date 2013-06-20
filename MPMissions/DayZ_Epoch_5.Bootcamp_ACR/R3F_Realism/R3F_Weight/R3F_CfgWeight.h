@@ -303,6 +303,10 @@ class CfgWeight
 		{
 			weight = 5.6;
 		};
+		class BAF_LRR_scoped
+		{
+			weight = 5.6;
+		};
 		class m107_DZ
 		{
 			weight = 14;
@@ -1358,6 +1362,10 @@ class CfgWeight
 			weight = 1;
 		};
 		class Skin_SurvivorWpink_DZ   
+		{
+			weight = 1;
+		};
+		class Skin_SurvivorWsequisha_DZ   
 		{
 			weight = 1;
 		};
