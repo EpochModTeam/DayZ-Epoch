@@ -3,13 +3,15 @@
 private ["_id","_unit"];
 _unit = (_this select 3) select 0;
 
-_unit setVariable ["USEC_inPain", false, true];
+
 
 call fnc_usec_medic_removeActions;
 r_action = false;
 
 _num_removed = ([player,"ItemPainkiller"] call BIS_fnc_invRemove);
 if(_num_removed == 1) then {
+
+	_unit setVariable ["USEC_inPain", false, true];
 
 	if (vehicle player == player) then {
 		//not in a vehicle

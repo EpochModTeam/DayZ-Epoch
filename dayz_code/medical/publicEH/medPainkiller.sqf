@@ -5,6 +5,7 @@ _medic = _array select 1;
 
 if (_unit == player) then {
 	r_player_inpain = false;
+	R3F_TIRED_Accumulator = 0;
 	"dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 };
 if (isServer) then {

@@ -46,3 +46,5 @@ player playMove "AidlPpneMstpSnonWnonDnon_SleepC_standUp";
 
 waitUntil { animationState player != "AidlPpneMstpSnonWnonDnon_SleepC_standUp"};
 
+R3F_TIRED_Accumulator = 0;
+
