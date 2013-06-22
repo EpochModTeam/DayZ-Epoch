@@ -124,7 +124,7 @@ if (!isDedicated) then {
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
 		// 120 sec timeout
-		while { _timeOut < 3000 && !dayz_clientPreload && !dayz_authed } do {
+		while { _timeOut < 1500 && !dayz_clientPreload && !dayz_authed } do {
 
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };

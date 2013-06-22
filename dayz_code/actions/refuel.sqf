@@ -67,7 +67,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					if (r_interrupt) then {
 						r_doLoop = false;
 					};
-					if (vehicle player == player) then {
+					if (vehicle player != player) then {
 						r_doLoop = false;
 					};
 					sleep 0.1;

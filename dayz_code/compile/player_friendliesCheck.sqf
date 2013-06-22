@@ -21,12 +21,12 @@ _tagList = player getVariable ["tagList", []];
 			_tag setVariable ["belongsTo", _rcharID];	
 
 			// Force white
-			_tag setobjecttexture [0,"#(argb,8,8,3)color(1,1,1,0.5,ca)"];
+			// _tag setobjecttexture [0,"#(argb,8,8,3)color(1,1,1,0.5,ca)"];
 			
 			diag_log format["SETUP ORB FOR: %1", _x];
 			
 			// Maintenance array
-			_tagList set [count _tagList, [_x, _tag,"white"]];
+			_tagList set [count _tagList, [_x, _tag,"init"]];
 			player setVariable ["tagList", _tagList];
 		};
 	};
@@ -39,8 +39,8 @@ _newTagList = [];
 	_tag = _x select 1;
 	_status = _x select 2;
 	_statusNew = "white";
-	//_tagColor = "";
-	_tagColor = "#(argb,8,8,3)color(1,1,1,0.5,ca)";
+	_tagColor = "";
+	// _tagColor = "#(argb,8,8,3)color(1,1,1,0.5,ca)";
 	
 	
 	// friendly player disconnected
@@ -49,7 +49,7 @@ _newTagList = [];
 	} else {
 		
 		if (_status != "green") then {	
-			diag_log format["CHECK IF FRIENDLY: %1", _player];
+			//diag_log format["CHECK IF FRIENDLY: %1", _player];
 			_rcharID = _player getVariable ["characterID", "0"];
 			_rfriendlies = _player getVariable ["friendlies", []];
 			_rfriendlyTo = _player getVariable ["friendlyTo", []];
@@ -57,7 +57,7 @@ _newTagList = [];
 			if ((_rcharID in _friendlies) and (_charID in _rfriendlies)) then {
 				if (!(_charID in _rfriendlyTo)) then {
 
-					diag_log format["IS FRIENDLY: %1", _player];
+					// diag_log format["IS FRIENDLY: %1", _player];
 				
 					_rfriendlyTo set [count _rfriendlyTo, _charID];
 					_player setVariable ["friendlyTo", _rfriendlyTo, true];
@@ -83,7 +83,7 @@ _newTagList = [];
 					};
 				};
 
-				diag_log format["CHECK HUMANITY: %1 %2", _player, _humanity];
+				// diag_log format["CHECK HUMANITY: %1 %2", _player, _humanity];
 			};
 
 			
@@ -95,7 +95,7 @@ _newTagList = [];
 			}; 
 
 		};
-		diag_log format["CHECK STATUS: %1 != %2", _statusNew, _status];
+		// diag_log format["CHECK STATUS: %1 != %2", _statusNew, _status];
 		_newTagList set [count _newTagList, [_player, _tag, _status]];
 	};
 } forEach _tagList;

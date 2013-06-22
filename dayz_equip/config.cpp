@@ -2430,7 +2430,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "Zombie Parts";
 		model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\arts_bag_texture3c_CA.paa";
+		picture = "\z\addons\dayz_epoch\pictures\parts_bag_texture3c_CA.paa";
 		descriptionShort = "Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.";
 
 	};
@@ -3117,7 +3117,17 @@ class CfgMagazines
 			};
 		};
 	};
-	
+	class ItemLockbox: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Lockbox";
+		model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
+		descriptionShort = "Semi secure lockbox";
+		
+	};
 	class ItemTankTrap: CA_Magazine
 	{
 		scope = 2;
