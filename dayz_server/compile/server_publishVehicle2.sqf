@@ -74,6 +74,9 @@ _key call server_hiveWrite;
 		_object = createVehicle [_class, _location, [], 0, "CAN_COLLIDE"];
 	};
 
+	// Lock vehicle
+	_object setvehiclelock "locked";
+
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
 
