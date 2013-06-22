@@ -22,12 +22,8 @@ R3F_TIRED_FNCT_Voile_Noir = {
 	};
 	
 };
-R3F_TIRED_FNCT_WarnBeforeBlackout = {
-	[player,0.1] call fnc_usec_damageUnconscious;
-	cutText ["You are over burdened.", "PLAIN DOWN"];
-};
 R3F_TIRED_FNCT_DoBlackVanish = {
 	[player,0.1] call fnc_usec_damageUnconscious;
-	cutText ["You are over burdened.", "PLAIN DOWN"];
+	cutText ["You are overburdened.", "PLAIN DOWN"];
 };
 

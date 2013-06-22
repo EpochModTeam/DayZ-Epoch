@@ -85,14 +85,13 @@ _key call server_hiveWrite;
 	
 	_object setVariable ["CharacterID", _characterID, true];
 
-	_object attachTo [_object_para, [0,0,-1.6]];
-	
-	sleep 1.0;
-	     
-	WaitUntil{(getpos _object select 2) < 0.1};
-     
-	detach _object;
-	deleteVehicle _object_para;
+	if(DZE_TRADER_SPAWNMODE) then {
+		_object attachTo [_object_para, [0,0,-1.6]];
+		sleep 1.0;
+		WaitUntil{(getpos _object select 2) < 0.1};
+		detach _object;
+		deleteVehicle _object_para;
+	};
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
