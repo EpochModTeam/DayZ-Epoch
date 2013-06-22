@@ -36,13 +36,32 @@ while {_isOk} do {
 		
 		sleep 2;
 
-		// TODO: increase chance the deaper the water.
+		_rnd = 100;
+
+		// check if player is in boat
+		_vehicle = vehicle player;
+		_inVehicle = (_vehicle != player);
+		if(_inVehicle) then {
+			if(_vehicle isKindOf "Ship") then {
+				_rnd = 50;
+			};
+		};
+		
 
 		// 1% chance to catch anything
-		if((random 100) <= 1) then {
+		if((random _rnd) <= 1) then {
 			// Just the one fish for now
 			_itemOut = ["ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemSeaBass","ItemSeaBass","ItemTuna"] call BIS_fnc_selectRandom;
-			player addMagazine _itemOut;
+			
+			if(_inVehicle) then { 
+				_item = _vehicle;
+				_itemtodrop = _itemOut;
+				_item addMagazineCargoGlobal [_itemtodrop,1];
+			} else {
+				player addMagazine _itemOut;
+			};
+			
+			
 			cutText ["You caught a fish.", "PLAIN DOWN"];
 			_isOk = false;
 		} else {
