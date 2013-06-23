@@ -2430,7 +2430,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "Zombie Parts";
 		model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\parts_bag_texture3c_CA.paa";
+		picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
 		descriptionShort = "Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.";
 
 	};
@@ -3239,7 +3239,7 @@ class CfgMagazines
 		displayName = "Blue Fin Tuna (Cooked)";
 		descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
 		model = "\z\addons\dayz_epoch\models\tuna_cooked.p3d";
-		picture = "\z\addons\dayz_epoch\models\equip_tuna_cooked_CA.paa";
+		picture = "\z\addons\dayz_epoch\pictures\equip_tuna_cooked_CA.paa";
 		bloodRegen = 5000;
 	};
 	class FoodBioMeat: FoodEdible

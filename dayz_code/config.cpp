@@ -580,9 +580,82 @@ class CfgBuildingLoot {
 			0.01
 		};		
 	};
-	class Office: Residential {
+	class Office: Default {
 		maxRoaming = 3;
 		zombieClass[] = {"z_suit1","z_suit2"};
+		zombieChance = 0.3;
+		lootChance = 0.4;
+		lootPos[] = {};
+		itemType[] = {
+			{ "ItemSodaMdew","magazine" },
+			{ "ItemSodaRbull","magazine" },
+			{ "ItemWatch","generic" },
+			{ "ItemCompass","generic" },
+			{ "ItemMap","weapon" },
+			{ "Makarov","weapon" },
+			{ "MakarovSD","weapon" },
+			{ "Colt1911","weapon" },
+			{ "ItemFlashlight","generic" },
+			{ "ItemKnife","generic" },
+			{ "ItemMatchbox","generic" },
+			{ "","generic" },
+			{ "LeeEnfield","weapon" },
+			{ "revolver_EP1","weapon" },
+
+			{"DZ_Assault_Pack_EP1","object"}, // 12
+			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
+			
+			{ "Winchester1866","weapon" },
+			{ "WeaponHolder_ItemTent","object" },
+			{ "WeaponHolder_ItemTentDomed","object" },
+			{ "WeaponHolder_ItemTentDomed2","object" },
+			{ "","military" },
+			{ "","trash" },
+			{"Crossbow_DZ","weapon"},
+			{ "Binocular","weapon" },
+			{ "PartWoodPile","magazine" },
+			{ "","clothes" },
+			{ "","specialclothes" },
+			{ "WeaponHolder_MeleeCrowbar","object" },
+			{ "ItemBriefcaseEmpty","magazine" },
+	};
+		itemChance[] =	{
+			0.001,
+			0.004,
+			0.04,
+			0.03,
+			0.02,
+			0.06,
+			0.01,
+			0.02,
+			0.001,
+			0.04,
+			0.01,
+			0.35,
+			0.03,
+			0.02,
+			0.02,
+			0.02,
+			0.015,
+			0.01,
+			0.005,
+			0.01,
+			0.003,
+			0.003,
+			0.003,
+			0.02,
+			0.15,
+			0.01,
+			0.02,
+			0.02,
+			0.01,
+			0.005,
+			0.03,
+			0.01
+		};	
 	};
 	class Industrial: Default {
 		zombieChance = 0.4;
