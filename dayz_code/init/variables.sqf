@@ -347,6 +347,21 @@ USEC_typeOfWounds = [
 	"neck","pilot"
 ];
 
+DZE_vehicleZwounds = [
+	"sklo predni L",
+	"sklo predni P",
+	"sklo zadni",
+	"sklo zadni L",
+	"sklo zadni P",
+	"sklo P",
+	"Glass1",
+	"Glass2",
+	"Glass3",
+	"Glass4",
+	"Glass5",
+	"Glass6"
+];
+
 //Initialize Zombie Variables
 dayz_zombieTargetList = [
 	["SoldierWB",50],
@@ -406,9 +421,11 @@ if(isNil "dayz_minpos") then {
 if(isNil "dayz_maxpos") then {
 	dayz_maxpos = 20000;
 };
+/*
 if(isNil "dayz_canBuildInCity") then {
 	dayz_canBuildInCity = false;
 };
+*/
 
 if(isNil "dayz_zedSpawnVehCount") then {
 	dayz_zedSpawnVehCount = dayz_maxLocalZombies / 2;

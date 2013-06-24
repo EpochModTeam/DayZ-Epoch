@@ -30,9 +30,10 @@ while {true} do {
 	if(_outcome == "PASS") then {
 		_date = _result select 1; 
 		if (EventSchedulerLastTime != str(_date)) then {
+			EventSchedulerLastTime = str(_date);
 			// diag_log ("EVENTS: Local Time is: " + str(_date));
 			{
-				EventSchedulerLastTime = str(_date);
+				
 				_proceed = false;
 				for "_i" from 0 to 4 do {
 					_proceed = [(_x select _i),(date select _i)] call epoch_eventIsAny;

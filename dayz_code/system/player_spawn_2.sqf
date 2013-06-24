@@ -18,7 +18,13 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 while {true} do {
 	//Initialize
 	_refObj = 	vehicle player;
-	_size = 	(sizeOf typeOf _refObj) * 0.6;
+	_factor = 0.6;
+	_inVehicle = (_refObj != player);
+	if(_inVehicle) then {
+		_factor = 1;
+	};
+	
+	_size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
 	_saveTime = (playersNumber west * 2) + 10;
