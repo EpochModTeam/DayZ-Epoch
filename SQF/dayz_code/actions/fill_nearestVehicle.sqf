@@ -30,7 +30,7 @@ if(_IsNearVehicle >= 1) then {
 	while {_isOk} do {
 
 		// qty to add per loop
-		_canSize = 20;
+		_canSize = (_capacity / 10);
 	
 		cutText [format["Filling up %1, move to cancel.",_nameText], "PLAIN DOWN"];
 			
@@ -92,7 +92,7 @@ if(_IsNearVehicle >= 1) then {
 			publicVariable "dayzSetFuel";
 
 			// Play sound
-			[player,"refuel",0,false] call dayz_zombieSpeak;											
+			[player,"refuel",0,false] call dayz_zombieSpeak;
 
 			cutText [format["%1 filled to %2 percent capacity.",_nameText,round(_newFuel*100)], "PLAIN DOWN"];
 		};
