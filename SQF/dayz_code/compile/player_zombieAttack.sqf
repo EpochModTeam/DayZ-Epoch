@@ -1,11 +1,11 @@
-private ["_unit","_targets","_move","_damage","_wound","_index","_cnt","_dir","_hpList","_hp","_strH","_dam","_total","_vehicle","_tPos","_zPos","_cantSee","_inAngle","_rnd","_openVehicles","_chance","_attackanimations","_type"];
+private ["_unit","_move","_damage","_wound","_index","_cnt","_dir","_hpList","_hp","_strH","_dam","_total","_vehicle","_tPos","_zPos","_cantSee","_inAngle","_rnd","_openVehicles","_chance","_attackanimations","_type","_targets"];
 _unit = _this select 0;
 _type = _this select 1;
 _vehicle = (vehicle player);
 
 _targets = _unit getVariable ["targets",[]];
 
-// if (!dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith {};
+if (!dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith {};
 
 //Do the attack
 if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
@@ -48,16 +48,11 @@ if (_vehicle != player) then {
 		
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
-		_total = (_dam + _damage);
-		
-		if(_total < 1) then {
-			[_unit,"hit",4,false] call dayz_zombieSpeak;
-		};
 		
 		diag_log ("Hitpoints " +str(_wound) +str(_total));
 		
 		//["dayzHitV",[_vehicle, _wound,_total, _unit,"zombie"]] call broadcastRpcCallAll;
-		if (_total >= 1) then {
+		if (_dam >= 1) then {
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
 				_cnt = count (DAYZ_woundHit select 1);
 				_index = floor (random _cnt);
@@ -75,15 +70,6 @@ if (_vehicle != player) then {
 			//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 			//publicVariable "dayzHit";
 			[_unit,"hit",2,false] call dayz_zombieSpeak;	
-		} else {				
-			//["dayzHitV",[_vehicle, _wound, _total, _unit,"zombie"]] call broadcastRpcCallAll;
-			
-			dayzSetFix = [_vehicle,_strH,_total];
-			if (local _vehicle) then {
-				dayzSetFix call object_setFixServer;
-			} else {
-				publicVariable "dayzSetFix";
-			};
 		};
 	};
 } else {
