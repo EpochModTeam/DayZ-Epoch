@@ -1,11 +1,13 @@
 **DayZ Epoch**
 ================
 
-Experimental DayZ mod
-
+Experimental DayZ mod 
 http://dayzepoch.com
-
 http://dayzepoch.com/wiki
+
+Based on DayZ Mod Commumity edition (1.7.6.1)
+https://github.com/R4Z0R49/DayZMod 
+https://github.com/DayZMod
 
 --------------------------
 Included Custom Addons
