@@ -704,6 +704,53 @@ class CfgBuildingLoot {
 			0.005
 		};
 	};
+	class IndustrialFuel: Default {
+		zombieChance = 0.4;
+		zombieClass[] = {"z_worker1","z_worker2","z_worker3"};
+		maxRoaming = 2;
+		lootChance = 0.3;
+		lootPos[] = {};
+		itemType[] = {
+			{ "WeaponHolder_ItemGenerator","object" },
+			{"ItemFuelPump","magazine"},
+			{ "","generic" },
+			{ "","trash" },
+			{ "","military" },
+			{ "WeaponHolder_PartGeneric","object" },
+			{ "WeaponHolder_PartWheel","object" },
+			{ "WeaponHolder_PartFueltank","object" },
+			{ "WeaponHolder_PartEngine","object" },
+			{ "WeaponHolder_PartGlass","object" },
+			{ "WeaponHolder_PartVRotor","object" },
+			{ "WeaponHolder_ItemJerrycan","object" },
+			{ "WeaponHolder_ItemHatchet","object" },
+			{ "ItemKnife","military" },
+			{ "ItemToolbox","weapon" },
+			{ "ItemWire","magazine" },
+			{"ItemTankTrap","magazine"},
+			{"ItemKeyKit","weapon"}
+	};
+		itemChance[] =	{
+			0.001,
+			0.001,
+			0.188,
+			0.29,
+			0.04,
+			0.04,
+			0.05,
+			0.02,
+			0.02,
+			0.04,
+			0.01,
+			0.04,
+			0.075,
+			0.07,
+			0.06,
+			0.01,
+			0.04,
+			0.005
+		};
+	};
 	class Farm: Default {
 		zombieChance = 0.3;
 		maxRoaming = 3;
@@ -1137,8 +1184,8 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			0.015,
-			0.01
-			0.003
+			0.01,
+			0.003,
 			0.002
 		};
 	};
@@ -1327,7 +1374,7 @@ class HeliCrash_No50s: Default {
 		lootPos[] = {{-3.06836,8.63184,-5.08054},{2.52588,10.5261,-5.08051},{4.76758,5.00854,-0.9935},{-2.78467,10.2368,-0.9935},{4.62598,10.4983,-0.993469},{2.09082,10.8425,2.96448},{-0.440918,10.3091,2.96445},{-2.58838,-5.91821,-5.08054},{4.11084,-10.9302,-5.08054},{-2.62842,-6.55518,-1.01584},{2.50537,-10.741,2.96445},{0.0410156,-11.0596,2.96445}};
 		hangPos[] = {{-1.50537,5.34473,-5.08813},{0.494141,9.42725,-5.09016},{2.59473,-6.21191,-5.08055},{-1.74854,-2.39844,-1.14301}};
 	};
-	class Land_A_FuelStation_Build: Industrial {
+	class Land_A_FuelStation_Build: IndustrialFuel {
 		lootChance = 0.5;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
 		lootPos[] = {{-1.31958,-0.655151,-1.57448},{1.82349,0.769653,-1.57458},{1.67871,-0.918701,-1.57458},{-1.23242,1.26794,-1.57458}};
@@ -1677,13 +1724,13 @@ class HeliCrash_No50s: Default {
 	class Land_MBG_ApartmentsTwo_P: HouseRoaming{};
 	class Land_MBG_ApartmentsTwo_G: HouseRoaming{};
 	class Land_MBG_ApartmentsTwo_B: HouseRoaming{};
-	class Land_Ind_FuelStation_Build_EP1: Industrial
+	class Land_Ind_FuelStation_Build_EP1: IndustrialFuel
 	{
 		lootChance = 0.5;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
 		lootPos[] = {{-1.34521,1.40698,-1.33611},{2.27051,-0.949951,-1.33611},{-2.23193,-1.146,-1.33589},{-0.185059,0.775146,-1.33609}};
 	};
-	class Land_ibr_FuelStation_Build: Industrial
+	class Land_ibr_FuelStation_Build: IndustrialFuel
 	{
 		lootChance = 0.5;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
@@ -3124,7 +3171,7 @@ class HeliCrash_No50s: Default {
 	{
 		lootPos[] = {{5.05737,2.52881,-3.09486}};
 	};
-	class Land_FuelStation_Build_PMC : Residential
+	class Land_FuelStation_Build_PMC : IndustrialFuel
 	{
 		lootPos[] = {{-1.29761,-0.527832,-1.336},
 			{-1.51141,1.30359,-1.33611},
