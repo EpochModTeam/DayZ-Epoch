@@ -684,9 +684,9 @@ class CfgBuildingLoot {
 			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
-			0.005,
-			0.005,
-			0.18,
+			0.001,
+			0.001,
+			0.188,
 			0.29,
 			0.04,
 			0.04,
@@ -1041,6 +1041,107 @@ class HeliCrash_No50s: Default {
 			0.01
 		};
 	};
+	class MilitaryIndustrial: Default {
+		zombieChance = 0.3;
+		maxRoaming = 6;
+		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman","z_soldier","z_soldier_heavy","z_policeman","z_worker1","z_worker2","z_worker3"};
+		lootChance = 0.4;
+		lootPos[] = {};
+		itemType[] = {
+			{ "M9","weapon" },
+			{ "M16A2","weapon" },
+			{ "M16A2GL","weapon" },
+			{ "M9SD","weapon" },
+			{ "AK_74","weapon" },
+			{ "M4A1_Aim","weapon" },
+			{ "AKS_74_kobra","weapon" },
+			{ "AKS_74_U","weapon" },
+			{ "AK_47_M","weapon" },
+			{ "M24","weapon" },
+			{ "M1014","weapon" },
+			{ "DMR","weapon" },
+			{ "M4A1","weapon" },
+			{ "M14_EP1","weapon" },
+			{ "UZI_EP1","weapon" },
+			{ "Remington870_lamp","weapon" },
+			{ "glock17_EP1","weapon" },
+			{ "MP5A5","weapon" },
+			{ "MP5SD","weapon" },
+			{ "M4A3_CCO_EP1","weapon" },
+			{ "Binocular","weapon" },
+			{ "ItemFlashlightRed","military" },
+			{ "ItemKnife","military" },
+			{ "ItemGPS","weapon" },
+			{ "WeaponHolder_PartVRotor","object" },
+			
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
+			{"DZ_CivilBackpack_EP1","object"}, // 24
+			{"DZ_Backpack_EP1","object"}, // 24
+			{"DZ_GunBag_EP1","object"}, // 8-6
+			
+			//Normal
+			{ "","medical" },
+			{ "","generic" },
+			{ "","military" },
+			{ "Sa61_EP1","weapon"},
+			{ "UZI_SD_EP1","weapon"},
+			{ "ItemEtool","weapon" },
+			{"ItemSandbag","magazine"},
+			{"Sa58P_EP1","weapon"},
+			{"Sa58V_EP1","weapon"},
+			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"ItemFuelBarrel","magazine"},
+			{"ItemFuelPump","magazine"}
+			
+	};
+		itemChance[] =	{
+			0.01,
+			0.01,
+			0.005,
+			0.005,
+			0.015,
+			0.005,
+			0.01,
+			0.01,
+			0.01,
+			0.005,
+			0.02,
+			0.005,
+			0.01,
+			0.005,
+			0.02,
+			0.02,
+			0.02,
+			0.02,
+			0.01,
+			0.005,
+			0.03,
+			0.04,
+			0.01,
+			0.005,
+			0.02,
+			0.04,
+			0.04,
+			0.03,
+			0.01,
+			0.01,
+			0.005,
+			0.02,
+			0.085,
+			0.35,
+			0.01,
+			0.005,
+			0.02,
+			0.01,
+			0.01,
+			0.015,
+			0.01
+			0.003
+			0.002
+		};
+	};
 	class MilitarySpecial: Default {
 		zombieChance = 0.4;
 		minRoaming = 2;
@@ -1216,7 +1317,7 @@ class HeliCrash_No50s: Default {
 	class Land_Ind_Workshop01_L: Industrial {
 		lootPos[] = {{-3.26172,4.75439,-1.30246},{0.175781,3.91748,-1.30766},{-2.37891,2.35303,-1.30405},{4.10547,-4.10791,-1.31345},{0.727539,-2.61621,-1.31418},{2.54688,-2.17725,-1.31482},{1.52344,-3.79443,-1.31332}};
 	};
-	class Land_Hangar_2: Industrial {
+	class Land_Hangar_2: MilitaryIndustrial {
 		lootPos[] = {{10.1245,-6.4873,-2.56317},{11.9387,7.91113,-2.56317},{1.79517,7.12695,-2.56317},{-11.8948,10.5449,-2.56317},{-8.97021,-4.34766,-2.56317},{-0.562744,-7.59375,-2.56317},{5.98804,-2.6123,-2.56317}};
 	};
 	class Land_hut06: Residential {
@@ -1262,7 +1363,7 @@ class HeliCrash_No50s: Default {
 		lootPos[] = {{5.51807,-1.72363,-0.378696},{7.55103,1.85889,-0.378696},{10.0703,3.76367,-9.62869},{3.89844,3.43457,-5.46368},{1.75195,5.68164,-5.46368},{6.66113,-0.625488,-1.0687},{2.63965,-0.191406,-1.0687},{6.72266,3.23389,-1.0687}};
 	};
 
-	class Land_SS_hangar: Military {
+	class Land_SS_hangar: MilitaryIndustrial {
 		maxRoaming = 3;
 		lootPos[] = {{-0.18457,5.26465,-5.87254},{11.7344,-17.165,-5.87253},{-11.7158,-18.9541,-5.87253},{-14.2461,23.0439,-5.87253}};
 	};
@@ -1601,7 +1702,7 @@ class HeliCrash_No50s: Default {
 			{ 7.54956,1.74512,-0.378696},
 			{5.40234,-1.71289,-0.378696}};
 	};
-	class Land_Mil_hangar_EP1: Military
+	class Land_Mil_hangar_EP1: MilitaryIndustrial
 	{
 		maxRoaming = 3;
 		lootPos[] = {{-9.83203,-12.4097,-5.38129},{10.5488,-12.1318,-5.38129},{13.002,0.0214844,-5.38129},{-13.3887,0.25,-5.38129},{13.3203,20.5176,-5.38129},{-13.1865,19.9839,-5.38129},{0.0195313,21.5078,-5.38129},{0.49707,11.5469,-5.38129},{-0.836914,-0.634277,-5.38129},{0.177734,-11.6821,-5.38129}};
@@ -2389,7 +2490,7 @@ class HeliCrash_No50s: Default {
 			{ 2.24585,-2.6875,-0.948329 },
 			{ -1.24561,-1.53955,-0.948329 }};
 	};
-	class land_ibr_hangar: Military
+	class land_ibr_hangar: MilitaryIndustrial
 	{
 		lootPos[] = {
 			{ -5.75635,9.95386,-3.57318 },
