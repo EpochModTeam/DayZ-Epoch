@@ -52,18 +52,6 @@ while {true} do {
 	dayz_mylastPos = _mylastPos;
 	dayz_areaAffect = _size;
 	
-	//CheckVehicle
-	/*
-	if (_refObj != player) then {
-		_isSync =_refObj getVariable ["ObjectID",0] > 0;
-		if (!_isSync) then {
-			_veh allowDamage true;
-			_veh setDamage 1;
-			player setDamage 1;			
-		};
-	};
-	*/
-	
 	if (_speed > 0.1) then {
 		_timeOut = _timeOut + 1;
 	};
@@ -77,11 +65,6 @@ while {true} do {
 			player setVariable ["humanity",_humanity,true];
 		};
 	};
-
-	//Has infection?
-	//if (r_player_infected) then {
-	//	[player,"cough",8,false] call dayz_zombieSpeak;
-	//};
 
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
