@@ -210,7 +210,7 @@ while {true} do {
 		if ((time - dayz_lastSave) > _saveTime) then {
 			//["dayzPlayerSave",[player,dayz_Magazines,false]] call callRpcProcedure;
 			
-			dayzPlayerSave = [player,dayz_Magazines,false];
+			dayzPlayerSave = [player,dayz_Magazines,false,false];
 			publicVariableServer "dayzPlayerSave";
 			
 			if (isServer) then {

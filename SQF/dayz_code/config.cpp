@@ -512,6 +512,7 @@ class CfgBuildingLoot {
 		itemType[] = {
 			{ "ItemSodaMdew","magazine" },
 			{ "ItemSodaRbull","magazine" },
+			{ "ItemSodaOrangeSherbet","magazine" },
 			{ "ItemWatch","generic" },
 			{ "ItemCompass","generic" },
 			{ "ItemMap","weapon" },
@@ -547,7 +548,8 @@ class CfgBuildingLoot {
 	};
 		itemChance[] =	{
 			0.001,
-			0.004,
+			0.001,
+			0.003,
 			0.04,
 			0.03,
 			0.02,
@@ -589,6 +591,7 @@ class CfgBuildingLoot {
 		itemType[] = {
 			{ "ItemSodaMdew","magazine" },
 			{ "ItemSodaRbull","magazine" },
+			{ "ItemSodaOrangeSherbet","magazine" },
 			{ "ItemWatch","generic" },
 			{ "ItemCompass","generic" },
 			{ "ItemMap","weapon" },
@@ -624,7 +627,8 @@ class CfgBuildingLoot {
 	};
 		itemChance[] =	{
 			0.001,
-			0.004,
+			0.001,
+			0.003,
 			0.04,
 			0.03,
 			0.02,
@@ -797,6 +801,8 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2"};
 		itemType[] = {
+			{ "ItemSodaMdew","magazine" },
+			{ "ItemSodaRbull","magazine" },
 			{ "ItemSodaOrangeSherbet","magazine" },
 			{ "ItemWatch","generic" },
 			{ "ItemCompass","generic" },
@@ -832,7 +838,9 @@ class CfgBuildingLoot {
 			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
-			0.01,
+			0.003,
+			0.003,
+			0.004,
 			0.10,
 			0.02,
 			0.04,
