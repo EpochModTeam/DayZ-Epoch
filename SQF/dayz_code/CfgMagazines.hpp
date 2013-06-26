@@ -312,7 +312,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_epoch\models\soda_redbull.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_soda_rbull_CA.paa";
 	};
-	class ItemSodaOrageSherbet : ItemSodaCoke {
+	class ItemSodaOrangeSherbet : ItemSodaCoke {
 		displayName = $STR_FOOD_NAME_OSHERBET;
 		descriptionShort = $STR_FOOD_DESC_OSHERBET;
 		model = "z\addons\dayz_epoch\models\soda_sherbet.p3d";
