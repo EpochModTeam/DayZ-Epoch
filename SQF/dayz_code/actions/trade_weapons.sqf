@@ -85,7 +85,7 @@ if (_qty >= _qty_in) then {
 	
 			waitUntil {!isNil "dayzTradeResult"};
 
-			diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+			//diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
 
 			if(dayzTradeResult == "PASS") then {
 

@@ -87,11 +87,11 @@ if (_qty >= _qty_in) then {
 			dayzTradeObject = [_activatingPlayer,_traderID,_bos];
 			publicVariableServer  "dayzTradeObject";
 	
-			diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
+			//diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
 
 			waitUntil {!isNil "dayzTradeResult"};
 
-			diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
+			//diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
 
 			if(dayzTradeResult == "PASS") then {
 

@@ -24,7 +24,7 @@ if (vehicle player != player) exitWith {TradeInprogress = false; cutText ["You m
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
 
-diag_log ("Debug Clothes: model In: " + str(_itemNew) + " Out: " + str(_item));
+//diag_log ("Debug Clothes: model In: " + str(_itemNew) + " Out: " + str(_item));
 
 if ( (isClass(_config >> _itemNew)) ) then {
 	if ( (isClass(_config >> _item)) ) then {
@@ -33,7 +33,7 @@ if ( (isClass(_config >> _itemNew)) ) then {
 		_currentSex = getText (configFile >> "CfgSurvival" >> "Skins" >> _itemNew >> "sex");
 		// Sex of new skin
 		_newSex = getText (configFile >> "CfgSurvival" >> "Skins" >> _item >> "sex");
-		diag_log ("Debug Clothes: sex In: " + str(_currentSex) + " Out: " + str(_newSex));
+		//diag_log ("Debug Clothes: sex In: " + str(_currentSex) + " Out: " + str(_newSex));
 
 		if(_currentSex == _newSex) then {
 			// Get model name from config

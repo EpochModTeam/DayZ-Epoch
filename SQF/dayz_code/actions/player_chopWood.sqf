@@ -44,7 +44,7 @@ _findNearestTree = [];
 
 } foreach nearestObjects [getPos player, [], 20];
 
-diag_log format["DEBUG TREES: %1", _findNearestTree];
+//diag_log format["DEBUG TREES: %1", _findNearestTree];
 
 if (count(_findNearestTree) >= 1) then {
 		
@@ -58,7 +58,7 @@ if (count(_findNearestTree) >= 1) then {
 
 		_countOut = ceil(_distance3d-_distance2d);
 
-		diag_log format["DEBUG TREE DISTANCE: %1 - %2 = %3", _distance3d,_distance2d,(_distance3d-_distance2d)];
+		//diag_log format["DEBUG TREE DISTANCE: %1 - %2 = %3", _distance3d,_distance2d,(_distance3d-_distance2d)];
 	
 		// Start chop tree loop
 		_counter = 0;
@@ -123,7 +123,7 @@ if (count(_findNearestTree) >= 1) then {
 			if("" == typeOf _tree) then {
 				_tree setDamage 1;
 			};
-			diag_log format["DEBUG TREE DAMAGE: %1", _tree];
+			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 
 			cutText [format["%1 piles of wood has been successfully added to your inventory.", _countOut], "PLAIN DOWN"];
 

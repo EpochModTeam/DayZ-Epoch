@@ -35,7 +35,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 			// calculate new fuel
 			_newFuel = (_newFuel / _capacity);
 
-			diag_log ("refuel check: " + str(_newFuel) + " / " + str(_capacity));
+			//diag_log ("refuel check: " + str(_newFuel) + " / " + str(_capacity));
 
 			cutText [format["Preparing to refuel, stand still to drain %1.",_canText], "PLAIN DOWN"];
 			

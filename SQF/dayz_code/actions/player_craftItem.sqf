@@ -64,8 +64,8 @@ if (_canDo) then {
 
 	if(!_missingTools) then {
 
-		diag_log format["Selected Recipe Input: %1", _selectedRecipeInput];
-		diag_log format["Selected Recipe Output: %1", _selectedRecipeOutput];
+		//diag_log format["Selected Recipe Input: %1", _selectedRecipeInput];
+		//diag_log format["Selected Recipe Output: %1", _selectedRecipeOutput];
 
 		// Dry run to see if all parts are available.
 		_proceed = true;
@@ -73,7 +73,7 @@ if (_canDo) then {
 			_itemIn = _x select 0;
 			_countIn = _x select 1;
 		
-			diag_log format["Recipe Check: %1 %2", _itemIn,_countIn];
+			//diag_log format["Recipe Check: %1 %2", _itemIn,_countIn];
 		
 			// not neccessary
 			//if (!(_itemIn in magazines player)) exitWith { _missing = _itemIn; _missingQty = _countIn; _proceed = false; };
@@ -144,7 +144,7 @@ if (_canDo) then {
 			
 				} forEach _selectedRecipeInput;
 		
-				diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
+				//diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
 
 				// Only proceed if all parts were removed successfully
 				if(_removed_total == _tobe_removed_total) then {
@@ -158,7 +158,7 @@ if (_canDo) then {
 						
 						_itemOut = _x select 0;
 						_countOut = _x select 1;
-						diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
+						//diag_log format["Recipe Output: %1 %2", _itemOut,_countOut];
 		
 						for "_x" from 1 to _countOut do {
 							player addMagazine _itemOut;

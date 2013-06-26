@@ -77,38 +77,6 @@ while {true} do {
 			player setVariable ["humanity",_humanity,true];
 		};
 	};
-	
-	/*
-	if (_humanity < -2000 and !_isBandit) then {
-		_isBandit = true;
-		_model = typeOf player;
-		if (_model == "Survivor2_DZ") then {
-			[dayz_playerUID,dayz_characterID,"Bandit1_DZ"] spawn player_humanityMorph;
-		};
-		if (_model == "SurvivorW2_DZ") then {
-			[dayz_playerUID,dayz_characterID,"BanditW1_DZ"] spawn player_humanityMorph;
-		};
-	};
-	
-	if (_humanity > 0 and _isBandit) then {
-		_isBandit = false;
-		_model = typeOf player;
-		if (_model == "Bandit1_DZ") then {
-			[dayz_playerUID,dayz_characterID,"Survivor2_DZ"] spawn player_humanityMorph;
-		};
-		if (_model == "BanditW1_DZ") then {
-			[dayz_playerUID,dayz_characterID,"SurvivorW2_DZ"] spawn player_humanityMorph;
-		};
-	};
-	
-	if (_humanity > 5000 and !_isHero) then {
-		_isBandit = false;
-		_model = typeOf player;
-		if (_model == "Survivor2_DZ") then {
-			[dayz_playerUID,dayz_characterID,"Survivor3_DZ"] spawn player_humanityMorph;
-		};
-	};
-	*/
 
 	//Has infection?
 	//if (r_player_infected) then {

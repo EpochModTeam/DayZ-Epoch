@@ -13,14 +13,14 @@ _trader_id = (_this select 3) select 0;
 dayzTraderMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
 
 if(isNil "dayzTraderMenuResult") then {
-	diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
+	//diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
 	//["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
 	dayzTraderMenu = [_activatingPlayer,_trader_id];
 	publicVariableServer  "dayzTraderMenu";
 	waitUntil {!isNil "dayzTraderMenuResult"};
 };
 
-diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
+//diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 {
 	_header = _x select 0; // "TRD"
 	
@@ -106,7 +106,7 @@ diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 	
 	_part = player addAction [_Display, _File,[_name,_bname,_out,_bqty,"buy",_textCurrency,_textPart,_header], _order, true, true, "",""];
 	
-	diag_log format["DEBUG TRADER: %1", _part];
+	//diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];
 	
 } forEach dayzTraderMenuResult;

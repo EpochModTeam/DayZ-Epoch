@@ -19,10 +19,10 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 // Loop to find containers that can could hold fuel and fill them
 {
 	_configCanEmpty = 	configFile >> "CfgMagazines" >> _x;
-	diag_log format["Looking for: %1", _x];
+	//diag_log format["Looking for: %1", _x];
 	if(_x in _availableCansEmpty) then {
 
-		diag_log format["gas fuelQuantity config : %1", _x];
+		//diag_log format["gas fuelQuantity config : %1", _x];
 		
 		// Get Empty can size
 		_canNameEmpty = _x;
@@ -36,7 +36,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 		// is empty
 		if(_canSizeEmpty == 0) then {
 
-			diag_log format["is empty fuelQuantity : %1", _x];
+			//diag_log format["is empty fuelQuantity : %1", _x];
 			
 			_curFuel = 		((fuel _vehicle) * _capacity);
 			_newFuel = 		(_curFuel - _canSize);

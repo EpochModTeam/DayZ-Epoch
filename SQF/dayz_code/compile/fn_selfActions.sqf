@@ -447,11 +447,11 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			_low_high = "low";
 			_humanity_logic = false;
 			if((_traderMenu select 2) == "friendly") then {
-				_humanity_logic = (_humanity < -2000);
+				_humanity_logic = (_humanity < -5000);
 			};
 			if((_traderMenu select 2) == "hostile") then {
 				_low_high = "high";
-				_humanity_logic = (_humanity > -2000);
+				_humanity_logic = (_humanity > -5000);
 			};
 			if((_traderMenu select 2) == "hero") then {
 				_humanity_logic = (_humanity < 5000);

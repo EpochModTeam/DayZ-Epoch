@@ -17,13 +17,13 @@ _tagList = player getVariable ["tagList", []];
 			// Add sphere to everyone
 			_position = [0,0,0];
 			_tag = "Sign_sphere10cm_EP1" createVehicleLocal _position;
-			_tag attachTo [_x,[0,0,0],"lwrist"];
+			_tag attachTo [_x,[0,0,0],"lwrist"]; // Pelvis
 			_tag setVariable ["belongsTo", _rcharID];	
 
 			// Force white
 			// _tag setobjecttexture [0,"#(argb,8,8,3)color(1,1,1,0.5,ca)"];
 			
-			diag_log format["SETUP ORB FOR: %1", _x];
+			//diag_log format["SETUP ORB FOR: %1", _x];
 			
 			// Maintenance array
 			_tagList set [count _tagList, [_x, _tag,"init"]];
@@ -73,7 +73,7 @@ _newTagList = [];
 				// Get humanity 
 				_humanity = _player getVariable ["humanity",0];  
 				
-				if(_humanity < -2000) then {
+				if(_humanity < -5000) then {
 					_statusNew = "red";
 					_tagColor = "#(argb,8,8,3)color(1,0,0,0.5,ca)";
 				} else {
@@ -88,7 +88,7 @@ _newTagList = [];
 
 			
 			if(_statusNew != _status) then {
-				diag_log format["STATUS CHANGED: %1 != %2", _statusNew, _status];
+				//diag_log format["STATUS CHANGED: %1 != %2", _statusNew, _status];
 				// Set texture based on humanity or friendship status
 				_tag setobjecttexture [0,_tagColor];
 				_status = _statusNew;

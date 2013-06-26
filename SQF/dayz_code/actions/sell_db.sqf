@@ -14,14 +14,14 @@ _trader_id = (_this select 3) select 0;
 dayzTraderMenuResult = call compile format["tcacheSell_%1;",_trader_id];
 
 if(isNil "dayzTraderMenuResult") then {
-	diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
+	//diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
 	//["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
 	dayzTraderMenu = [_activatingPlayer,_trader_id];
 	publicVariableServer  "dayzTraderMenu";
 	waitUntil {!isNil "dayzTraderMenuResult"};
 };
 
-diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
+//diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
 {
 	_header = _x select 0; // "TRD"
 	
