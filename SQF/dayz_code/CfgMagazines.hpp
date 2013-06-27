@@ -1,6 +1,1960 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
 
+	class ItemCanvas: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Canvas";
+		model = "\z\addons\dayz_epoch\models\canvas.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_canvas_ca.paa";
+		descriptionShort = "Canvas Parcel";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Craft Tent";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemTent",1}};
+				input[] = {{"ItemCanvas",2},{"ItemPole",2}};
+			};
+			class Crafting1
+			{
+				text = "Craft Desert Tent";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemTentDomed",1}};
+				input[] = {{"ItemCanvas",3},{"ItemPole",3}};
+			};
+			class Crafting2
+			{
+				text = "Craft Green Tent";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemTentDomed2",1}};
+				input[] = {{"ItemCanvas",3},{"ItemPole",3}};
+			};
+			class Crafting3
+			{
+				text = "Craft Sun Shade";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"sun_shade_kit",1}};
+				input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
+			};
+			class Crafting4
+			{
+				text = "Craft Burlap";
+				script = "spawn player_craftItem4;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemBurlap",1}};
+				input[] = {{"ItemCanvas",2}};
+			};
+		};
+	};
+	class ItemBurlap: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Burlap";
+		model = "\z\addons\dayz_epoch\models\burlap.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_burlap_ca.paa";
+		descriptionShort = "Burlap: A strong cloth like material used for building sandbags";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Craft Sandbag";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"sand"}; // todo add sand requirement
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"ItemSandbag",1}};
+				input[] = {{"ItemBurlap",3}};
+			};
+		};
+	};
+	class ItemLightBulb: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Light Bulb";
+		model = "\z\addons\dayz_epoch\models\bulb.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_bulb_CA.paa";
+		descriptionShort = "Lightbulb: Used in part to create a buildable lamp post. Don't tell me you didn't find this in a barn.";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Light Pole";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"light_pole_kit",1}};
+				input[] = {{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
+			};
+		};
+	};
+	class ItemBriefcase_Base: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Briefcase";
+		model = "\z\addons\dayz_epoch\models\briefcase.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_CA.paa";
+	};
+	class ItemBriefcaseEmpty: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_E_CA.paa";
+		descriptionShort = "Empty Briefcase";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase10oz",1}};
+				input[] = {{"ItemBriefcaseEmpty",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase10oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase10oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_10oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 1 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase20oz",1}};
+				input[] = {{"ItemBriefcase10oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 9 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase10oz",1},{"ItemGoldBar10oz",9}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase10oz",1}};
+			};
+		};
+
+	};	
+	class ItemBriefcase20oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_20oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 2 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase30oz",1}};
+				input[] = {{"ItemBriefcase20oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 8 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase20oz",1},{"ItemGoldBar10oz",8}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase10oz",1}};
+				input[] = {{"ItemBriefcase20oz",1}};
+			};
+			class Crafting3
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",2},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase20oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase30oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_30oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 3 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase40oz",1}};
+				input[] = {{"ItemBriefcase30oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 7 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase30oz",1},{"ItemGoldBar10oz",7}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase20oz",1}};
+				input[] = {{"ItemBriefcase30oz",1}};
+			};
+			class Crafting3
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",3},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase30oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase40oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_40oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 4 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase50oz",1}};
+				input[] = {{"ItemBriefcase40oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 6 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase40oz",1},{"ItemGoldBar10oz",6}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase30oz",1}};
+				input[] = {{"ItemBriefcase40oz",1}};
+			};
+			class Crafting3
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",4},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase40oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase50oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_50oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 5 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase60oz",1}};
+				input[] = {{"ItemBriefcase50oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 5 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase50oz",1},{"ItemGoldBar10oz",5}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase40oz",1}};
+				input[] = {{"ItemBriefcase50oz",1}};
+			};
+			class Crafting3
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",5},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase50oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase60oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_60oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 6 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase70oz",1}};
+				input[] = {{"ItemBriefcase60oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 4 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase60oz",1},{"ItemGoldBar10oz",4}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase50oz",1}};
+				input[] = {{"ItemBriefcase60oz",1}};
+			};
+			class Crafting3
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",6},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase60oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase70oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_70oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 7 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase80oz",1}};
+				input[] = {{"ItemBriefcase70oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 3 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase70oz",1},{"ItemGoldBar10oz",3}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase60oz",1}};
+				input[] = {{"ItemBriefcase70oz",1}};
+			};
+			class Crafting3
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",7},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase70oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase80oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_80oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 8 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase90oz",1}};
+				input[] = {{"ItemBriefcase80oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Add 2 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase80oz",1},{"ItemGoldBar10oz",2}};
+			};
+			class Crafting2
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase70oz",1}};
+				input[] = {{"ItemBriefcase80oz",1}};
+			};
+			class Crafting3
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",8},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase80oz",1}};
+			};
+		};
+	};	
+	class ItemBriefcase90oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_90oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 9 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcase90oz",1},{"ItemGoldBar10oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase80oz",1}};
+				input[] = {{"ItemBriefcase90oz",1}};
+			};
+			class Crafting2
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",9},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase90oz",1}};
+			};
+		};
+	};
+	class ItemBriefcase100oz: ItemBriefcase_Base
+	{
+		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_100oz_CA.paa";
+		descriptionShort = "Briefcase (Contains: 10 x 10oz Gold Bar)";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Remove 1 10oz Gold";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase90oz",1}};
+				input[] = {{"ItemBriefcase100oz",1}};
+			};
+			class Crafting1
+			{
+				text = "Empty Case";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",10},{"ItemBriefcaseEmpty",1}};
+				input[] = {{"ItemBriefcase100oz",1}};
+			};
+		};
+	};
+	class ItemGoldBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Gold";
+		model = "\z\addons\dayz_epoch\models\gold_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
+		descriptionShort = "Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 10oz bar";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemGoldBar10oz",1}};
+				input[] = {{"ItemGoldBar",10}};
+				
+			};
+		};
+	};
+	class ItemGoldBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Gold";
+		model = "\z\addons\dayz_epoch\models\gold_bar_10oz.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_10oz_CA.paa";
+		descriptionShort = "10oz Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemGoldBar",10}};
+				input[] = {{"ItemGoldBar10oz",1}};
+			};
+		};
+	};
+	class ItemSilverBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Silver";
+		model = "\z\addons\dayz_epoch\models\silver_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
+		descriptionShort = "Silver Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 10oz bar";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemSilverBar10oz",1}};
+				input[] = {{"ItemSilverBar",10}};
+			};
+		};
+	};
+	
+	class ItemSilverBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Silver";
+		model = "\z\addons\dayz_epoch\models\silver_bar_10oz.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_10oz_CA.paa";
+		descriptionShort = "10oz Silver Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemSilverBar",10}};
+				input[] = {{"ItemSilverBar10oz",1}};
+			};
+		};
+	};
+	class ItemCopperBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Copper";
+		model = "\z\addons\dayz_epoch\models\copper_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_copper_bar_CA.paa";
+		descriptionShort = "Copper Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 10oz bar";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemCopperBar10oz",1}};
+				input[] = {{"ItemCopperBar",10}};
+			};
+		};
+	};
+
+	class ItemCopperBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Copper";
+		model = "\z\addons\dayz_epoch\models\copper_bar_10oz.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_copper_bar_10oz_CA.paa";
+		descriptionShort = "10oz Copper Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemCopperBar",10}};
+				input[] = {{"ItemCopperBar10oz",1}};
+			};
+		};
+	};
+	
+	class ItemBronzeBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Bronze";
+		model = "\z\addons\dayz_epoch\models\bronze_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_bar_bronze_CA.paa";
+		descriptionShort = "Bronze Bar";
+	};
+	class ItemAluminumBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Aluminum";
+		model = "\z\addons\dayz_epoch\models\aluminum_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_alum_bar_CA.paa";
+		descriptionShort = "Aluminum Bar";
+		
+	};
+	class ItemAluminumBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Aluminum";
+		model = "\z\addons\dayz_epoch\models\aluminum_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_alum_bar_10oz_CA.paa";
+		descriptionShort = "10oz Aluminum Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemAluminumBar",10}};
+				input[] = {{"ItemAluminumBar10oz",1}};
+			};
+		};
+	};
+	class ItemTinBar: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Tin";
+		model = "\z\addons\dayz_epoch\models\tin_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_tin_bar_CA.paa";
+		descriptionShort = "Tin Bar";
+		
+	};
+	class ItemTinBar10oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "10oz Tin";
+		model = "\z\addons\dayz_epoch\models\tin_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_tin_bar_10oz_CA.paa";
+		descriptionShort = "10oz Tin Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Smelt 1oz bars";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemTinBar",10}};
+				input[] = {{"ItemTinBar10oz",1}};
+			};
+		};
+	};
+
+	class ItemZombieParts: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Zombie Parts";
+		model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
+		descriptionShort = "Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.";
+
+	};
+	
+	class PartFueltank: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_8";
+		model = "\dayz_equip\models\fueltank.p3d";
+		picture = "\dayz_equip\textures\equip_fueltank_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_8";
+	};
+	class PartWheel: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_9";
+		model = "\dayz_equip\models\wheel.p3d";
+		picture = "\dayz_equip\textures\equip_wheel_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_9";
+	};
+	class PartGeneric: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_10";
+		model = "\dayz_equip\models\genericparts.p3d";
+		picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_10";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Pole";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"ItemPole",1}};
+				input[] = {{"PartGeneric",2}};
+			};
+		};
+	};
+	class ItemCorrugated : CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Corrugated Fence";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Corrugated Fence: A buildable object used for fortification purposes.";
+		class ItemActions {
+			class Build {
+				text = "Build Corrugated Fence";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "Fence_corrugated_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Wooden Shed";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"wooden_shed_kit",1}};
+				input[] = {{"ItemCorrugated",2},{"PartWoodPlywood",5},{"PartWoodLumber",5}};
+			};
+			class Crafting1
+			{
+				text = "Craft Outhouse";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"outhouse_kit",1}};
+				input[] = {{"ItemCorrugated",1},{"PartWoodPlywood",5},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
+			};
+			class Crafting2
+			{
+				text = "Craft Storage Shed";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"storage_shed_kit",1}};
+				input[] = {{"ItemCorrugated",5},{"PartWoodPlywood",2},{"PartWoodLumber",5}};
+			};
+		};
+	};
+	class ItemPole: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Metal Pole";
+		model = "\z\addons\dayz_epoch\models\pipe.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_pipe_CA.paa";
+		descriptionShort = "Pole: A few sturdy metal poles used to craft tents and other buildables";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Corrugated Fence";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"ItemCorrugated",1}};
+				input[] = {{"ItemPole",2},{"ItemTankTrap",2},{"PartWoodLumber",2}};
+			};
+			class Crafting1
+			{
+				text = "Craft Rusty Gate";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"rusty_gate_kit",1}};
+				input[] = {{"ItemPole",6},{"PartGeneric",3},{"ItemTankTrap",1}};
+			};
+		};
+	};
+
+	class ItemOilBarrel: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		// fuelQuantity = 210;
+		type = 256;
+		displayName = "Oil Barrel";
+		model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+		descriptionShort = "210 litres of Oil in a Barrel";
+	};
+	class ItemFuelBarrel: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		fuelQuantity = 210;
+		type = 256;
+		displayName = "Fuel Barrel";
+		model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+		descriptionShort = "210 litres of fuel per barrel";
+	};
+	class ItemFuelBarrelEmpty: ItemFuelBarrel
+	{
+		scope = 2;
+		count = 1;
+		fuelQuantity = 0;
+		type = 256;
+		displayName = "Fuel Barrel (Empty)";
+		picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
+		descriptionShort = "210 litres of fuel per barrel (Empty)";
+	};
+	class ItemJerrycan: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		fuelQuantity = 20;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_19";
+		model = "\dayz_equip\models\jerrycan.p3d";
+		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_19";
+	};
+	class ItemJerrycanEmpty: ItemJerrycan
+	{
+		fuelQuantity = 0;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_39";
+		picture = "\dayz_equip\textures\equip_jerrycan_e_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_39";
+	};
+	
+	class bulk: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Supply Crate";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "12 x Random Item";
+	};
+	class bulk_empty: bulk
+	{
+		descriptionShort = "Empty Supply Crate";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Make 6 pack of Coke";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"bulk_ItemSodaCoke",1}};
+				input[] = {{"bulk_empty",1},{"ItemSodaCoke",6}};
+			};
+		};
+	};
+	class bulk_ItemSodaCoke: bulk
+	{
+		descriptionShort = "6 x ItemSodaCoke";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemSodaCoke",6,"magazine"};
+			};
+		};
+	};
+	class bulk_ItemSodaPepsi: bulk
+	{
+		descriptionShort = "6 x ItemSodaPepsi";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemSodaPepsi",6,"magazine"};
+			};
+		};
+	};
+	class bulk_30Rnd_9x19_MP5SD: bulk
+	{
+		descriptionShort = "12 x 30Rnd_9x19_MP5SD";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"30Rnd_9x19_MP5SD",12,"magazine"};
+			};
+		};
+	};
+	class bulk_15Rnd_9x19_M9SD: bulk
+	{
+		descriptionShort = "12 x 15Rnd_9x19_M9SD";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"15Rnd_9x19_M9SD",12,"magazine"};
+			};
+		};
+	};
+	class bulk_30Rnd_556x45_StanagSD: bulk
+	{
+		descriptionShort = "12 x 30Rnd_556x45_StanagSD";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"30Rnd_556x45_StanagSD",12,"magazine"};
+			};
+		};
+	};
+	class bulk_ItemSandbag: bulk
+	{
+		descriptionShort = "12 x SandBag";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemSandbag",12,"magazine"};
+			};
+		};
+	};
+	class bulk_17Rnd_9x19_glock17: bulk
+	{
+		descriptionShort = "12 x 17Rnd_9x19_glock17";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"17Rnd_9x19_glock17",12,"magazine"};
+			};
+		};
+	};
+	
+	// BUILDING KITS
+	class 30m_plot_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "30 Meter Plot";
+		descriptionShort = "Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "Plastic_Pole_EP1_DZ";
+			};
+		};
+	};
+	class deer_stand_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Deer Stand";
+		descriptionShort = "Deer Stand: can be used as a lookout.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "DeerStand_DZ";
+			};
+		};
+	};
+	class desert_large_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Desert Camo Net";
+		descriptionShort = "Large Camo Netting: A very large buildable object that can be used to cover objects.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "DesertLargeCamoNet_DZ";
+			};
+		};
+	};
+	class forest_large_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Forest Camo Net";
+		descriptionShort = "Large Camo Netting: A very large buildable object that can be used to cover objects.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "ForestLargeCamoNet_DZ";
+			};
+		};
+	};
+	class desert_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Desert Camo Net";
+		descriptionShort = "Camo Netting: A buildable object that can be used to cover objects.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "DesertCamoNet_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Lg Camo Net";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"desert_large_net_kit",1}};
+				input[] = {{"desert_net_kit",3}};
+			};
+		};
+	};
+	class forest_net_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Forest Camo Net";
+		descriptionShort = "Camo Netting: A buildable object that can be used to cover objects.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "ForestCamoNet_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Lg Camo Net";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"forest_large_net_kit",1}};
+				input[] = {{"forest_net_kit",3}};
+			};
+		};
+	};
+	class fuel_pump_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Fuel Pump";
+		descriptionShort = "Fuel Pump";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "FuelPump_DZ";
+			};
+		};
+	};
+	class light_pole_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Light Pole";
+		descriptionShort = "Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "LightPole_DZ";
+			};
+		};
+	};
+	class stick_fence_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Stick Fence";
+		descriptionShort = "Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "StickFence_DZ";
+			};
+		};
+	};
+	class wooden_shed_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Nice Wooden Shed";
+		descriptionShort = "Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "Wooden_shed_DZ";
+			};
+		};
+	};
+	class wood_shack_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Shack";
+		descriptionShort = "Wood Shack";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "WoodShack_DZ";
+			};
+		};
+	};
+	class m240_nest_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "M240 Nest";
+		descriptionShort = "M240 Nest";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "M240Nest_DZ";
+			};
+		};
+	};
+	class sun_shade_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Canvas Sun Shade";
+		descriptionShort = "Sun Shade: A buildable object used to keep the sun off your back.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "CanvasHut_DZ";
+			};
+		};
+	};
+	class park_bench_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Bench";
+		descriptionShort = "Wood Bench";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "ParkBench_DZ";
+			};
+		};
+	};
+	class rusty_gate_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Rusty Gate";
+		descriptionShort = "Rusty Gate: A buildable object that can be opened and closed.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "MetalGate_DZ";
+			};
+		};
+	};
+	class sandbag_nest_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Sandbag Nest";
+		descriptionShort = "Sandbag Nest: A buildable fortification object, can be removed.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "SandNest_DZ";
+			};
+		};
+	};
+	class outhouse_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Outhouse";
+		descriptionShort = "Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "OutHouse_DZ";
+			};
+		};
+	};
+	class storage_shed_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Storage Shed";
+		descriptionShort = "Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "StorageShed_DZ";
+			};
+		};
+	};
+	
+	class ItemGenerator: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_31";
+		model = "\dayz_equip\models\generator_gear.p3d";
+		picture = "\dayz_equip\textures\equip_generator_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_31";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Generator_DZ";
+				needNearby[] = {"dayz_fuelpumparray"};
+			};
+		};
+	};
+	class ItemFuelPump: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Fuel Pump";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Fuel Pumps can be used to create a refuel station";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "FuelPump_DZ";
+				needNearby[] = {"dayz_fuelsources"};
+			};
+		};
+	};
+	// Custom player vault
+	class ItemVault: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Safe";
+		model = "\z\addons\dayz_epoch\models\safe_onside.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
+		descriptionShort = "Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!";
+		class ItemActions
+		{
+			class Pitch
+			{
+				text = "Place Safe";
+				script = "spawn player_vaultPitch;";
+			};
+		};
+	};
+	class ItemLockbox: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Lockbox";
+		model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
+		descriptionShort = "Semi secure lockbox";
+		
+	};
+
+
+
+
+	class PartEngine: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_11";
+		model = "\dayz_equip\models\engine.p3d";
+		picture = "\dayz_equip\textures\equip_engine_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_11";
+	};
+	class PartWoodPile: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_40";
+		model = "\dayz_equip\models\woodPile.p3d";
+		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_40";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Lumber";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"sawmill"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"PartWoodLumber",1}};
+				input[] = {{"PartWoodPile",2}};
+			};
+			class Crafting1
+			{
+				text = "Craft Arrows";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {"ItemKnife"};
+				output[] = {{"WoodenArrow",3}};
+				input[] = {{"PartWoodPile",1},{"ItemTrashRazor",1}};
+				
+			};
+			class Crafting2
+			{
+				text = "Craft Stick Fence";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"stick_fence_kit",1}};
+				input[] = {{"PartWoodPile",6}};
+				
+			};
+			
+		};
+	};
+	class PartWoodLumber: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Lumber";
+		model = "\z\addons\dayz_epoch\models\planks.p3d";
+		picture="\z\addons\dayz_epoch\pictures\equip_wood_planks_CA.paa";
+		descriptionShort = "Lumber: Used for building many structures and can also be used to make plywood.";
+		class ItemActions {
+			class Build {
+				text = "Build Wood Gate";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodGate_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Plywood";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"sawmill"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"PartWoodPlywood",1}};
+				input[] = {{"PartWoodLumber",2}};
+				
+			};
+			class Crafting1
+			{
+				text = "Craft Deer Stand";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"deer_stand_kit",1}};
+				input[] = {{"PartWoodLumber",8},{"PartWoodPile",2}};
+				
+			};
+		};
+	};
+	class PartWoodPlywood: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Plywood";
+		model = "\z\addons\dayz_epoch\models\plywood.p3d";
+		picture="\z\addons\dayz_epoch\pictures\equip_plywood_CA.paa";
+		descriptionShort = "Plywood: Used for building many structures.";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Shack";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"wood_shack_kit",1}};
+				input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+				
+			};
+		};
+	};
+	class PartWoodShed: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wooden Shack";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wooden Shack: A crafted object that holds some items/weapons/backpacks.";
+		class ItemActions {
+			class Build {
+				text = "Build Wood Shack";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodShack_DZ";
+			};
+		};
+	};
+	class PartVRotor: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_32";
+		model = "\dayz_equip\models\vrotor.p3d";
+		picture = "\dayz_equip\textures\equip_vrotor_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_32";
+	};
+	class PartGlass: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EQUIP_NAME_30";
+		model = "\dayz_equip\models\carglass.p3d";
+		picture = "\dayz_equip\textures\equip_carglass_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_30";
+	};
+
+
+
+
+	// Skins
+	class SkinBase: CA_Magazine
+	{
+		scope = 0;
+		count = 1;
+		type = 256;
+		displayName = "Clothes";
+		model = "\dayz_equip\models\cloth_parcel.p3d";
+		picture = "\dayz_equip\textures\equip_cloth_parcel_ca.paa";
+		descriptionShort = "Clothes Parcel";
+		class ItemActions
+		{
+			class Use
+			{
+				text = "Wear %1";
+				script = "spawn player_wearClothes;";
+			};
+			class Crafting
+			{
+				text = "Craft Canvas";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemCanvas",1}};
+				input[] = {{"SkinBase",4}};
+			};
+			class Crafting1
+			{
+				text = "Craft Bandages";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemBandage",2}};
+				input[] = {{"SkinBase",1}};
+			};
+		};
+	};
+	class Skin_Sniper1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "$STR_EQUIP_NAME_43";
+		descriptionShort = "$STR_EQUIP_DESC_43";
+	};
+	class Skin_Rocket_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Officer Suit";
+		descriptionShort = "Officer Suit";
+	};
+	class Skin_RU_Policeman_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Sergei";
+		descriptionShort = "Police Officer Uniform";
+	};
+	class Skin_Pilot_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Ethan";
+		descriptionShort = "Pilot Uniform";
+	};
+	class Skin_Haris_Press_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Harry";
+		descriptionShort = "Press Uniform";
+	};
+	class Skin_Ins_Soldier_GL_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Terrorist Uniform";
+		descriptionShort = "Terrorist Uniform";
+	};
+	class Skin_GUE_Commander_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Rebel Uniform";
+		descriptionShort = "Rebel Uniform";
+	};
+	class Skin_Functionary1_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Donald";
+		descriptionShort = "Business Suit";
+	};
+	class Skin_Priest_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "James";
+		descriptionShort = "Priest Outfit";
+	};
+	class Skin_Rocker1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Duane";
+		descriptionShort = "Rocker (black)";
+	};	
+	class Skin_Rocker2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Rod";
+		descriptionShort = "Rocker (brown)";
+	};
+	class Skin_Rocker3_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Van";
+		descriptionShort = "Rocker (blue)";
+	};
+	class Skin_Rocker4_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bruce";
+		descriptionShort = "Rocker (green)";
+	};
+	class Skin_Bandit1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Outfit";
+		descriptionShort = "Bandit Outfit";
+	};	
+	class Skin_Bandit2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Camo";
+		descriptionShort = "Bandit Camo Outfit";
+	};
+	class Skin_GUE_Soldier_MG_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Gunner";
+		descriptionShort = "Bandit Gunner Outfit";
+	};
+	class Skin_GUE_Soldier_Sniper_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Sniper";
+		descriptionShort = "Bandit Sniper Outfit";
+	};
+	class Skin_GUE_Soldier_Crew_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Baklava";
+		descriptionShort = "Bandit Baklava Outfit";
+	};
+	class Skin_GUE_Soldier_CO_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Mask";
+		descriptionShort = "Bandit Mask Outfit";
+	};
+	class Skin_GUE_Soldier_2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Hat";
+		descriptionShort = "Bandit Hat with Baklava";
+	};
+	class Skin_BanditW1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Annie";
+		descriptionShort = "Bandit wrap blue top with brown pants.";
+	};
+	class Skin_BanditW2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bandit Jane";
+		descriptionShort = "Bandit wrap grey top with brown camo pants.";
+	};
+	class Skin_SurvivorW3_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Jane";
+		descriptionShort = "Grey top with brown camo pants.";
+	};
+	class Skin_SurvivorW2_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Annie";
+		descriptionShort = "Civilian (female)";
+	};
+	class Skin_SurvivorWpink_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Melly (female)";
+		descriptionShort = "Purple top with blue pants.";
+	};
+	class Skin_SurvivorWsequisha_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Maria (female)";
+		descriptionShort = "Maria Clothes (female)";
+	};
+	class Skin_SurvivorWsequishaD_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Sequisha (female)";
+		descriptionShort = "Sequisha Clothes (female)";
+	};
+	class Skin_SurvivorWcombat_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Alejandria";
+		descriptionShort = "Blue camo top with brown camo pants.";
+	};
+	class Skin_SurvivorWdesert_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Savannah";
+		descriptionShort = "White top with brown pants.";
+	};
+	class Skin_SurvivorWurban_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Sophia";
+		descriptionShort = "Maroon top with grey pants.";
+	};
+
+
+	class Skin_TK_INS_Warlord_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Takistani Warlord";
+		descriptionShort = "Takistani Warlord";
+	};
+	class Skin_TK_INS_Soldier_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Takistani Soldier";
+		descriptionShort = "Takistani Soldier";
+	};
+	class Skin_CZ_Special_Forces_GL_DES_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Special Forces";
+		descriptionShort = "Special Forces";
+	};
+	class Skin_Drake_Light_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Desert Camo";
+		descriptionShort = "Desert Camo";
+	};
+	class Skin_Soldier_Bodyguard_AA12_PMC_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Bodyguard";
+		descriptionShort = "Bodyguard";
+	};
+	class Skin_FR_OHara_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Jungle Camo";
+		descriptionShort = "Jungle Camo";
+	};
+	class Skin_FR_Rodriguez_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Gunner Outfit";
+		descriptionShort = "Gunner Outfit";
+	};
+	class Skin_CZ_Soldier_Sniper_EP1_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Desert Ghillie";
+		descriptionShort = "Desert Ghillie";
+	};
+	class Skin_Graves_Light_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Urban Camo";
+		descriptionShort = "Urban Camo";
+	};
+	class Skin_Soldier_Sniper_PMC_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Marksman";
+		descriptionShort = "Marksman";
+	};
+	class Skin_Soldier_TL_PMC_DZ: SkinBase
+	{
+		scope = 2;
+		displayName = "Team Leader";
+		descriptionShort = "Team Leader";
+	};
+	//
+
+
+
+
+
 	class ItemTent: CA_Magazine
 	{
 		scope = 2;
@@ -266,7 +2220,31 @@ class CfgMagazines {
 		};
 	};
 	
-	class ItemSodaEmpty;//External class reference
+	class HandGrenade;//External class reference
+	
+	class ItemSodaEmpty: HandGrenade
+	{
+		scope = 2;
+		displayName = "$STR_EQUIP_NAME_35";
+		model = "\dayz_equip\models\soda_coke_e.p3d";
+		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_35";
+		ammo = "SodaCan";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Melt into Bars";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemAluminumBar",1}};
+				input[] = {{"ItemSodaEmpty",6}};
+			};
+		};
+	};
+	
+	
 	class ItemSodaCoke; //External class reference
 	
 	class ItemSodaCokeEmpty : ItemSodaEmpty{
@@ -453,6 +2431,76 @@ class CfgMagazines {
 	};
 */
 	class FoodEdible;
+	
+	
+	class FoodCanFrankBeans: FoodEdible
+	{
+		scope = 2;
+		// displayName = "$STR_EQUIP_NAME_28";
+		displayName = "Can (Frank n Beans)"; // addactions cannot have &amp;
+		model = "\dayz_equip\models\food_fbtin.p3d";
+		picture = "\dayz_equip\textures\equip_fbtin_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_28";
+	};
+
+	class ItemTrout : FoodEdible {
+		scope = 2;
+		displayName = "Rainbow Trout";
+		descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
+		model = "\z\addons\dayz_epoch\models\trout.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_rainbowtrout_CA.paa";
+		bloodRegen = 400;
+	};
+	class ItemSeaBass : FoodEdible {
+		scope = 2;
+		displayName = "Sea Bass";
+		descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
+		model = "\z\addons\dayz_epoch\models\seabass.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_seabass_CA.paa";
+		bloodRegen = 800;
+	};
+	class ItemTuna : FoodEdible {
+		scope = 2;
+		displayName = "Blue Fin Tuna";
+		descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
+		model = "\z\addons\dayz_epoch\models\tuna.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_tuna_CA.paa";
+		bloodRegen = 2500;
+	};
+	class ItemTroutCooked : FoodEdible {
+		scope = 2;
+		displayName = "Rainbow Trout (Cooked)";
+		descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
+		model = "\z\addons\dayz_epoch\models\trout_cooked.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_trout_cooked_CA.paa";
+		bloodRegen = 800;
+	};
+	class ItemSeaBassCooked : FoodEdible {
+		scope = 2;
+		displayName = "Sea Bass (Cooked)";
+		descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
+		model = "\z\addons\dayz_epoch\models\seabass_cooked.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_seabass_cooked_CA.paa";
+		bloodRegen = 1600;
+	};
+	class ItemTunaCooked : FoodEdible {
+		scope = 2;
+		displayName = "Blue Fin Tuna (Cooked)";
+		descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
+		model = "\z\addons\dayz_epoch\models\tuna_cooked.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_tuna_cooked_CA.paa";
+		bloodRegen = 5000;
+	};
+	class FoodBioMeat: FoodEdible
+	{
+		scope = 2;
+		displayName = "Bio Meat";
+		model = "\z\addons\dayz_epoch\models\biomeat_can.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_biomeat_CA.paa";
+		descriptionShort = "Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.";
+		bloodRegen = 1600;
+	};
+
 	class FoodmeatRaw : FoodEdible {
 		scope = public;
 		count = 1;
@@ -680,7 +2728,31 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
 	};
 	
-	class TrashTinCan;
+	
+
+	
+	class TrashTinCan: HandGrenade
+	{
+		scope = 2;
+		displayName = "$STR_EQUIP_NAME_33";
+		model = "\dayz_equip\models\trash_tincan.p3d";
+		picture = "\dayz_equip\textures\equip_tincan_ca.paa";
+		descriptionShort = "$STR_EQUIP_DESC_33";
+		ammo = "TinCan";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Melt into Bars";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemTinBar",1}};
+				input[] = {{"TrashTinCan",6}};
+			};
+		};
+	};
+
 	class FoodCanGriffEmpty : TrashTinCan {
 		scope = public;
 		count = 1;

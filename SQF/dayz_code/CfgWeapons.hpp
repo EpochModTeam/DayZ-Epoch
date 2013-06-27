@@ -1,5 +1,109 @@
 class CfgWeapons {
+
+	class ReammoBox;
+	class WeaponHolderBase: ReammoBox
+	{
+		scope = 0;
+		accuracy = 1000;
+		vehicleClass = "Survival";
+		displayName = "Weapon";
+		memoryPointSupply = "collect";
+		supplyRadius = 3;
+		transportMaxWeapons = 0;
+		transportMaxMagazines = 0;
+		transportMaxBackpacks = 0;
+		transportAmmo = 0;
+		transportRepair = 0;
+		transportFuel = 0;
+	};
+	class WeaponHolder_ItemMachete: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Machete";
+		model="\z\addons\dayz_communityassets\models\machete.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_MeleeCrowbar: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Crowbar";
+		model = "\dayz_equip\models\crowbar.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemTentDomed: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Domed Desert Tent";
+		model = "\dayz_equip\proxy\tentbag.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemTentDomed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemTentDomed2: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Domed Green Tent";
+		model = "\dayz_equip\proxy\tentbag.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemTentDomed2'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemVault: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "Safe";
+		model = "\z\addons\dayz_epoch\models\safe.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemVault'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemJerrycanEmpty: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "$STR_EQUIP_NAME_39";
+		model = "\dayz_equip\proxy\jerrycan.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemJerrycanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+
+	
+	class Pecheneg;
+	class Pecheneg_DZ: Pecheneg
+	{
+		type = "1";
+	};
+
+	class Default;
 	class ItemCore;
+
+	class Loot: Default
+	{
+		scope = 2;
+		value = 0;
+		type = 0;
+		displayName = "Use";
+		canDrop = 0;
+		muzzles[] = {"this"};
+		magazines[] = {"FoodBioMeat","ItemZombieParts","ItemBandage","ItemHeatPack","PartWoodPile","PartFueltank","PartWheel","PartGeneric","PartEngine","PartVRotor","PartGlass","ItemWaterbottle","ItemWaterbottleUnfilled","ItemEpinephrine","ItemGoldBar","ItemSilverBar","ItemCopperBar","ItemMorphine","ItemBloodbag","ItemAntibiotic","ItemPainkiller","ItemJerrycan","ItemOilBarrel","ItemGenerator","ItemTent","ItemSandbag","ItemTankTrap","ItemWire","FoodSteakRaw","TrashTinCan","ItemSodaCoke","ItemSodaPepsi","ItemSodaMdew","ItemSodaMdew","FoodEdible","FoodSteakCooked","FoodCanBakedBeans","FoodCanSardines","FoodCanFrankBeans","FoodCanPasta"};
+		modes[] = {"this"};
+		useAction = 0;
+		useActionTitle = "";
+		enableAttack = 0;
+		showToPlayer = 0;
+	};
+
+
 	class ItemMap_Debug: ItemCore {
 		descriptionshort = "Debug Map - Admin use only";
 		displayname = "Map";

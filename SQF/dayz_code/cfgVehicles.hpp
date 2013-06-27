@@ -107,6 +107,396 @@ class Citizen1;	// External class reference
 			};
 		};
 	};
+
+
+
+
+
+
+
+
+
+
+	// female changes
+	class Soldier_Bodyguard_M4_PMC;
+	class SurvivorW2_DZ: Soldier_Bodyguard_M4_PMC
+	{
+		displayName = "$STR_CHAR_1";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		model = "\dayz\characters\annie_original";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		identityTypes[] = {"Language_W_EN_EP1","Woman"};
+		languages[] = {"EN"};
+		class TalkTopics
+		{
+			core = "Core_E";
+			core_en = "Core_Full_E";
+		};
+		genericNames = "EnglishWomen";
+		class SpeechVariants
+		{
+			class Default
+			{
+				speechSingular[] = {"veh_woman"};
+				speechPlural[] = {"veh_women"};
+			};
+			class EN: Default{};
+			class CZ
+			{
+				speechSingular[] = {"veh_woman_CZ"};
+				speechPlural[] = {"veh_women_CZ"};
+			};
+			class CZ_Akuzativ
+			{
+				speechSingular[] = {"veh_woman_CZ4P"};
+				speechPlural[] = {"veh_women_CZ4P"};
+			};
+			class RU
+			{
+				speechSingular[] = {"veh_woman_RU"};
+				speechPlural[] = {"veh_women_RU"};
+			};
+		};
+		TextPlural = "Women";
+		TextSingular = "Woman";
+		nameSound = "veh_woman";
+		class HitDamage
+		{
+			class Group0
+			{
+				hitSounds[] = {
+					{ 
+						{ "ca\sounds\Characters\Noises\Damage\banz-hit-01",0.177828,1,120 },0.2 },
+					{ 
+						{ "ca\sounds\Characters\Noises\Damage\banz-hit-02",0.177828,1,120 },0.2 },
+					{ 
+						{ "ca\sounds\Characters\Noises\Damage\banz-hit-03",0.177828,1,120 },0.2 },
+					{ 
+						{ "ca\sounds\Characters\Noises\Damage\banz-hit-04",0.177828,1,120 },0.1 },
+					{ 
+						{ "ca\sounds\Characters\Noises\Damage\banz-hit-05",0.177828,1,120 },0.1 },
+					{ 
+						{ "ca\sounds\Characters\Noises\Damage\banz-hit-06",0.177828,1,120 },0.1 },
+					{ 
+						{ "ca\sounds\Characters\Noises\Damage\banz-hit-07",0.177828,1,120 },0.1 }};
+				damageSounds[] = {
+					{ "body",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-01",0.0562341,1,120,0.25,5,6,10 } },
+					{ "body",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-02",0.0562341,1,120,0.25,5,7.5,10 } },
+					{ "body",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-03",0.0562341,1,120,0.25,5,6,10 } },
+					{ "body",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-04",0.0562341,1,120,0.25,5,7.5,10 } },
+					{ "hands",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-07-arm",0.0562341,1,120,0.5,0,2.5,5 } },
+					{ "hands",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-08-arm",0.0562341,1,120,0.5,0,2.5,5 } },
+					{ "legs",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-05-leg",0.0562341,1,120,0.5,0,1,2 } },
+					{ "legs",
+						{ "ca\sounds\Characters\Noises\Damage\banz-damage-g1-06-leg",0.0562341,1,120,0.5,0,1,2 } }};
+			};
+		};
+		class SoundBreath
+		{
+			breath0[] = {
+				{ 
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run-breath-01",0.0562341,1,8 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run-breath-02",0.0562341,1,8 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run-breath-03",0.0562341,1,8 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run-breath-04",0.125893,1,8 },0.25 } },
+				{ 
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-01",0.0562341,1,15 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-02",0.0562341,1,15 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-03",0.0562341,1,15 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-04",0.125893,1,15 },0.25 } },
+				{ 
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-01",0.1,1,20 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-02",0.1,1,20 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-03",0.1,1,20 },0.25 },
+					{ 
+						{ "\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-04",0.1,1,20 },0.25 } }};
+		};
+		class SoundGear
+		{
+			primary[] = {
+				{ "walk",
+					{ "",0.00177828,1,10 } },
+				{ "run",
+					{ "",0.00316228,1,15 } },
+				{ "sprint",
+					{ "",0.00562341,1,20 } }};
+			secondary[] = {
+				{ "walk",
+					{ "",0.00177828,1,10 } },
+				{ "run",
+					{ "",0.00316228,1,10 } },
+				{ "sprint",
+					{ "",0.00562341,1,10 } }};
+		};
+		class SoundEquipment
+		{
+			soldier[] = {
+				{ "walk",
+					{ "",0.00177828,1,13 } },
+				{ "run",
+					{ "",0.00316228,1,20 } },
+				{ "sprint",
+					{ "",0.00398107,1,25 } }};
+			civilian[] = {
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-01",0.177828,1,8 } },
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-02",0.177828,1,8 } },
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-03",0.177828,1,8 } },
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-04",0.177828,1,8 } },
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-05",0.177828,1,8 } },
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-06",0.177828,1,8 } },
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-07",0.177828,1,8 } },
+				{ "walk",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-08",0.177828,1,8 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-01",0.1,1,15 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-02",0.1,1,15 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-03",0.1,1,15 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-04",0.1,1,15 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-05",0.1,1,15 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-06",0.1,1,15 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-07",0.1,1,15 } },
+				{ "run",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-08",0.1,1,15 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-01",0.0562341,1,20 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-02",0.0562341,1,20 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-03",0.0562341,1,20 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-04",0.0562341,1,20 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-05",0.0562341,1,20 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-06",0.0562341,1,20 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-07",0.0562341,1,20 } },
+				{ "sprint",
+					{ "\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-08",0.0562341,1,20 } }};
+		};
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\baker_co.paa"};
+	};
+	class BanditW1_DZ: SurvivorW2_DZ
+	{
+		side = 1;
+		model = "\dayz\characters\woman_bandit";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\baker_co.paa"};
+	};
+	/*
+	class FemaleSoldier1_DZ: SurvivorW2_DZ
+	{
+		side = 1;
+		model = "\z\addons\dayz_epoch\models\female_soldier";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\female_soldier_body.paa"};
+	};
+	*/
+	class BanditW2_DZ: BanditW1_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\european_woman_01_co.paa"};
+	};
+	class SurvivorW3_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\european_woman_01_co.paa"};
+	};
+	class SurvivorWpink_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\GirlyGirl.paa"};
+	};
+	class SurvivorWsequisha_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\sequisha_co.paa"};
+	};
+	class SurvivorWsequishaD_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\sequishaD_co.paa"};
+	};
+	class SurvivorWcombat_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\CombatGirl.paa"};
+	};
+	class SurvivorWdesert_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\DesertGirl.paa"};
+	};
+	class SurvivorWurban_DZ: SurvivorW2_DZ
+	{
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\textures\UrbanGirl.paa"};
+	};
+	
+	class PZombie_VB: Citizen1
+	{
+		side = 1;
+		glassesEnabled = 0;
+		moves = "CfgMovesZombie";
+		gestures = "CfgGesturesMale";
+
+		weapons[] = {};
+		weaponSlots = "";
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {};
+		respawnMagazines[] = {};
+
+		faceType = "ZFaces";
+		identityTypes[] = {"Zombie1","Zombie2"};
+		extCameraPosition[] = {0,1.5,-9};
+		
+		canHideBodies = 0;
+	};
+	class pz_policeman: PZombie_VB
+	{
+		model = "\ca\characters2\civil\Policeman\Policeman";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ca\characters2\civil\policeman\data\policeman.rvmat","ca\characters2\civil\policeman\data\w1_policeman.rvmat","ca\characters2\civil\policeman\data\w2_policeman.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
+		};
+	};
+	class pz_suit1: PZombie_VB
+	{
+		model = "\ca\characters2\civil\Functionary\Functionary";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ca\characters2\civil\functionary\data\functionary_co.paa"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ca\characters2\civil\Functionary\data\Functionary.rvmat","ca\characters2\civil\Functionary\data\W1_Functionary.rvmat","ca\characters2\civil\Functionary\data\W2_Functionary.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat"};
+		};
+	};
+	class pz_suit2: pz_suit1
+	{
+		hiddenSelectionsTextures[] = {"\ca\characters2\civil\functionary\data\functionary2_co.paa"};
+	};
+	class pz_worker1: PZombie_VB
+	{
+		model = "\Ca\characters_E\Overall\Overall";
+		hiddenSelections[] = {"Camo"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"Ca\characters_E\Overall\Data\Overall.rvmat","Ca\characters_E\Overall\Data\W1_Overall.rvmat","Ca\characters_E\Overall\Data\W2_Overall.rvmat"};
+		};
+		hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_4_co.paa"};
+	};
+	class pz_worker2: pz_worker1
+	{
+		hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_3_co.paa"};
+	};
+	class pz_worker3: pz_worker1
+	{
+		hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_2_co.paa"};
+	};
+
+	class pz_doctor: PZombie_VB
+	{
+		model = "\ca\characters2\civil\Doctor\Doctor";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\dayz\textures\clothes\doctor_co.paa"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ca\characters2\civil\doctor\data\doctor.rvmat","ca\characters2\civil\doctor\data\W1_doctor.rvmat","ca\characters2\civil\doctor\data\W2_doctor.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat"};
+		};
+	};
+	class pz_teacher: pz_doctor
+	{
+		hiddenSelectionsTextures[] = {"\dayz\textures\clothes\teacher_co.paa"};
+	};
+	class pz_hunter: PZombie_VB
+	{
+		model = "\ca\characters2\civil\Woodlander\Woodlander";
+		hiddenSelections[] = {"Camo"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ca\characters2\civil\Woodlander\data\Woodlander.rvmat","ca\characters2\civil\Woodlander\data\W1_Woodlander.rvmat","ca\characters2\civil\Woodlander\data\W2_Woodlander.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat"};
+		};
+	};
+	class pz_villager1: PZombie_VB
+	{
+		model = "\ca\characters2\civil\Villager\Villager";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_co.paa"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters2\Civil\Villager\Data\villager.RVmat","ca\characters2\Civil\Villager\Data\villager_w1.RVmat","ca\characters2\Civil\Villager\Data\villager_w2.RVmat"};
+		};
+	};
+	class pz_villager2: pz_villager1
+	{
+		hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v2_co.paa"};
+	};
+	class pz_villager3: pz_villager1
+	{
+		hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v3_co.paa"};
+	};
+	class pz_priest: PZombie_VB
+	{
+		model = "\ca\characters2\civil\Priest\Priest";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"ca\characters2\civil\priest\data\priest.rvmat","ca\characters2\civil\priest\data\W1_priest.rvmat","ca\characters2\civil\priest\data\W2_priest.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat"};
+		};
+	};
+
+
+
+
+
+
+
+
+
+
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -1638,5 +2028,426 @@ class Citizen1;	// External class reference
 		fuelCapacity = 210;
 	};
 	
+	//class NonStrategic;
+	class BuiltItems: NonStrategic{};
+	class TrapItems: NonStrategic{};
+	// buildables
+	class Hedgehog_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0.5};
+		model = "\ca\misc\jezek_kov";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 400;
+		displayName = "Hedgehog (Steel)";
+		vehicleClass = "Fortifications";
+		constructioncount = 5;
+		removeoutput[] = {{"ItemTankTrap",1}};
+	};
+	class Generator_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model = "\dayz_equip\models\generator.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 400;
+		displayName = "Generator";
+		vehicleClass = "Fortifications";
+		constructioncount = 5;
+		removeoutput[] = {{"ItemGenerator",1}};
+	};
+	class FuelPump_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,2,0};
+		model = "\ca\Structures_E\Ind\Ind_FuelStation\Ind_FuelStation_Feed_ep1.p3d"; 
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 400;
+		displayName = "Fuel Pump";
+		vehicleClass = "Fortifications";
+		constructioncount = 5;
+		removeoutput[] = {{"ItemFuelPump",1}};
+	};
+
+	class Fort_RazorWire : BuiltItems { 
+	  scope = 2; 
+	  animated = 0; 
+	  vehicleClass = "Fortifications"; 
+	  model = "\ca\misc\Fort_Razorwire"; 
+	  icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa"; 
+	  offset[] = {0,1.5,0.5};
+	  accuracy = 0.3; 
+	  mapSize = 5.5; 
+	  displayName = "Wire"; 
+	  destrType = "DestructTent"; 
+	  armor = 100; 
+	  GhostPreview = "Fort_RazorWirePreview"; 
+	};
+
+	class Sandbag1_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		model = "\ca\misc2\BagFenceLong.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
+		offset[] = {0,1.5,0.5};
+		mapSize = 2;
+		armor = 400;
+		displayName = "Bag Fence";
+		vehicleClass = "Fortifications";
+		constructioncount = 5;
+		removeoutput[] = {{"ItemSandbag",1}};
+	};
+
+	class Land_HBarrier1_DZ : BuiltItems { 
+		scope = 2; 
+		animated = 0; 
+		vehicleClass = "Fortifications"; 
+		typicalCargo[] = {}; 
+		offset[] = {0,2,0};
+		irTarget = 0; 
+		accuracy = 0.3; 
+		transportAmmo = 0; 
+		transportRepair = 0; 
+		transportFuel = 0; 
+		destrType = "DestructBuilding"; 
+		armor = 500; 
+		coefInside = 0.5; 
+		coefInsideHeur = 0.8; 
+		cost = 0; 
+		picture = "\CA\ui\data\icon_wf_barriers_ca.paa"; 
+		model = "\ca\misc2\HBarrier1.p3d"; 
+		icon = "\Ca\misc2\data\Icons\icon_hescoBarrier1_ca.paa"; 
+		mapSize = 2; 
+		displayName = "H-barrier cube"; 
+		GhostPreview = "Land_HBarrier1Preview"; 
+		constructioncount = 10;
+		removeoutput[] = {{"ItemSandbagLarge",1}};
+	};
 	
+	// PLAYER BUILDINGS
+	// class Plastic_Pole_EP1;
+	class Sign_1L_Noentry_EP1;
+	class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
+	{
+		scope = 2;
+		// destrType = "DestructNo"; 
+		offset[] = {0,2.5,0};
+		displayName = "30m Plot Pole";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"30m_plot_kit",1}};
+	};
+
+	class USMC_WarfareBMGNest_M240;
+	class M240Nest_DZ: USMC_WarfareBMGNest_M240
+	{
+		destrType = "DestructBuilding"; 
+		armor = 450;
+		scope = 2;
+		offset[] = {0,3.5,0};
+		displayName = "M240 Nest";
+		vehicleClass = "Fortifications";
+		transportMaxMagazines = 25;
+		transportMaxWeapons = 4;
+		transportMaxBackpacks = 1;
+		constructioncount = 10;
+		removeoutput[] = {{"m240_nest_kit",1}};
+		
+	};
+	class Land_covering_hut_EP1;
+	class CanvasHut_DZ: Land_covering_hut_EP1
+	{
+		armor = 200;
+		scope = 2;
+		offset[] = {0,2.5,1};
+		displayName = "Canvas Hut";
+		vehicleClass = "Fortifications";
+	};
+	class Park_bench1;
+	class ParkBench_DZ: Park_bench1
+	{
+		scope = 2;
+		offset[] = {0,1.5,0.5};
+		displayName = "Wood Bench";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"park_bench_kit",1}};
+	};
+	class Land_CamoNet_EAST_EP1;
+	class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
+	{
+		armor = 300;
+		destrType = "DestructNo";
+		scope = 2;
+		offset[] = {0,5,0};
+		displayName = "Desert Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"desert_net_kit",1}};
+	};
+	class Land_CamoNet_EAST;
+	class ForestCamoNet_DZ: Land_CamoNet_EAST
+	{
+		armor = 300;
+		destrType = "DestructNo";
+		scope = 2;
+		offset[] = {0,5,0};
+		displayName = "Forest Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"forest_net_kit",1}};
+	};
+	class Land_CamoNetB_EAST_EP1;
+	class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
+	{
+		armor = 300;
+		destrType = "DestructNo";
+		scope = 2;
+		offset[] = {0,9,0};
+		displayName = "Large Desert Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"desert_large_net_kit",1}};
+	};
+	class Land_Misc_deerstand;
+	class DeerStand_DZ: Land_Misc_deerstand
+	{
+		// armor = 300;
+		// destrType = "DestructNo";
+		scope = 2;
+		offset[] = {0,5,0};
+		displayName = "Deer Stand";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"deer_stand_kit",1}};
+	};
+	class Land_CamoNetB_EAST;
+	class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
+	{
+		armor = 300;
+		destrType = "DestructNo";
+		scope = 2;
+		offset[] = {0,9,0};
+		displayName = "Large Forest Camo Net";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"forest_large_net_kit",1}};
+	};
+	
+	class Land_fortified_nest_small_EP1;
+	class SandNest_DZ: Land_fortified_nest_small_EP1
+	{
+		armor = 400;
+		scope = 2;
+		offset[] = {0,3,1};
+		displayName = "Sandbag Nest";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"sandbag_nest_kit",1}};
+	};
+	class Land_Wall_Gate_Ind1_L;
+	class MetalGate_DZ: Land_Wall_Gate_Ind1_L
+	{
+		armor = 400;
+		scope = 2;
+		offset[] = {0,2.5,1};
+		displayName = "Rusty Gate";
+		vehicleClass = "Fortifications";
+		removeoutput[] = {{"rusty_gate_kit",1}};
+	};
+	class Land_KBud;
+	class OutHouse_DZ: Land_KBud
+	{
+		armor = 200;
+		scope = 2;
+		offset[] = {0,2.5,1};
+		displayName = "Outhouse";
+		vehicleClass = "Fortifications";
+		transportMaxMagazines = 4;
+		transportMaxWeapons = 1;
+		transportMaxBackpacks = 1;
+		constructioncount = 5;
+		class transportmagazines
+		{
+			class _xx_ItemTrashToiletpaper
+			{
+				magazine = "ItemTrashToiletpaper";
+				count = 1;
+			};
+		};
+	};
+	class Land_Shed_M01;
+	class StorageShed_DZ: Land_Shed_M01
+	{
+		armor = 400;
+		scope = 2;
+		offset[] = {0,2.5,1};
+		displayName = "Storage Shed";
+		vehicleClass = "Fortifications";
+		transportMaxMagazines = 400;
+		transportMaxWeapons = 40;
+		transportMaxBackpacks = 20;
+		constructioncount = 5;
+	};
+	class Fence_corrugated_plate;
+	class Fence_corrugated_DZ: Fence_corrugated_plate
+	{
+		armor = 300;
+		scope = 2;
+		offset[] = {0,2.5,1};
+		removeoutput[] = {{"ItemCorrugated",1}};
+		displayName = "Corrugated Fence";
+		vehicleClass = "Fortifications";
+		
+	};
+	class Land_kulna;
+	class WoodShack_DZ: Land_kulna
+	{
+		scope = 2;
+		destrType = "DestructBuilding"; 
+		offset[] = {0,2.5,1.3};
+		armor = 200;
+		displayName = "Wooden Shack";
+		vehicleClass = "Fortifications";
+		transportMaxMagazines = 100;
+		transportMaxWeapons = 10;
+		transportMaxBackpacks = 5;
+		constructioncount = 5;
+	};
+	class Land_Shed_wooden;
+	class Wooden_shed_DZ: Land_Shed_wooden
+	{
+		scope = 2;
+		destrType = "DestructBuilding"; 
+		//cost = 100;
+		offset[] = {0,2.5,1};
+		armor = 400;
+		displayName = "Wooden Shed";
+		vehicleClass = "Fortifications";
+		transportMaxMagazines = 200;
+		transportMaxWeapons = 20;
+		transportMaxBackpacks = 10;
+	};
+	
+	class Wall_FenW2_6_EP1;
+	class StickFence_DZ: Wall_FenW2_6_EP1
+	{
+		destrType = "DestructTree"; 
+		armor = 200;
+		scope = 2;
+		offset[] = {0,2.5,0};
+		displayName = "Stick Fence";
+		vehicleClass = "Fortifications";
+	};
+	class ASC_EU_LHVOld;
+	class LightPole_DZ: ASC_EU_LHVOld
+	{
+		armor = 200;
+		scope = 2;
+		offset[] = {0,2.5,0};
+		displayName = "Light Pole";
+		vehicleClass = "Fortifications";
+	};
+	class WoodGate_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructTree"; 
+		//cost = 100;
+		offset[] = {0,1.5,0.5};
+		model = "\ca\structures\Wall\Gate_wood2_5";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		// armor = 100;
+		displayName = "Wood Panel";
+		vehicleClass = "Fortifications";
+		
+		class AnimationSources
+		{
+			class DoorR { 
+			  source = "User"; 
+			  animPeriod = 1; 
+			  initPhase = 0; 
+			};
+		};
+		class UserActions
+		{
+			class CloseDoor
+			{
+				position = "";
+				displayName = "Close Door";
+				radius = 1.5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'DoorR' == 1";
+				statement = "this animate ['DoorR', 0];";
+			};
+			class OpenDoor
+			{
+				position = "";
+				displayName = "Open Door";
+				radius = 1.5;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'DoorR' == 0";
+				statement = "this animate ['DoorR', 1];";
+			};
+		};
+	};
+
+
+	
+	class Land_A_tent;
+	class ACamp;
+	class TentStorage: Land_A_tent
+	{
+		vehicleClass = "Survival";
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
+		transportMaxBackpacks = 5;
+		create = "WeaponHolder_ItemTent";
+	};
+	class TentStorageDomed: TentStorage
+	{
+		displayName = "Digital Camo Tent";
+		vehicleClass = "Survival";
+		model = "\dayz_equip\models\astan.p3d";
+		transportMaxMagazines = 75;
+		transportMaxWeapons = 12;
+		transportMaxBackpacks = 7;
+		create = "WeaponHolder_ItemTentDomed";
+	};
+	class TentStorageDomed2: TentStorage
+	{
+		displayName = "Green Domed Tent";
+		vehicleClass = "Survival";
+		model = "\ca\Misc_E\Astan_ep1.p3d"; 
+		transportMaxMagazines = 75;
+		transportMaxWeapons = 12;
+		transportMaxBackpacks = 7;
+		create = "WeaponHolder_ItemTentDomed2";
+	};
+	class VaultStorage: Land_A_tent
+	{
+		vehicleClass = "Survival";
+		displayName = "Safe";
+		model = "\z\addons\dayz_epoch\models\safe.p3d";
+		destrType = "DestructNo";
+		armor = 800;
+		transportMaxMagazines = 200;
+		transportMaxWeapons = 20;
+		transportMaxBackpacks = 10;
+	};	
+	class VaultStorageLocked: Land_A_tent
+	{
+		vehicleClass = "Survival";
+		displayName = "Locked Safe";
+		model = "\z\addons\dayz_epoch\models\safe.p3d";
+		destrType = "DestructNo";
+		armor = 800;
+		transportMaxMagazines = 0;
+		transportMaxWeapons = 0;
+		transportMaxBackpacks = 0;
+	};
+
 };	

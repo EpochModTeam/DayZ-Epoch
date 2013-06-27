@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.1.2";
+		version = "1.0.1.3";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -223,6 +223,9 @@ class RscStructuredTextGUI: RscStructuredText
 #include "rscTitles.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgVoice.hpp"
+#include "CfgIdentities.hpp"
+#include "CfgFaces.hpp"
 #include "CfgMagazines.hpp"
 #include "cfgLoot.hpp"
 #include "CfgMarkers.hpp"
