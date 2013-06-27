@@ -81,7 +81,7 @@
 5 setUnconscious !"\"setUnconscious\","
 5 setVehicleAmmo !"\"setVehicleAmmo\","
 5 setVehicleArmor !"\"setVehicleArmor\","
-5 setVehicleLock !"\"setVehicleLock\","
+5 setVehicleLock !"\"setVehicleLock\"," !"if (local _vehicle) then {\nif(_status) then {\n_vehicle setVehicleLock "LOCKED";\n} else {\n_vehicle setVehicleLock "UNLOCKED";\n};"
 5 setVehiclePosition !"\"setVehiclePosition\","
 5 setViewDistance !"\"setViewDistance\"," 
 5 setWeaponReloadingTime !"\"setWeaponReloadingTime\"," !"_vehicle setWeaponReloadingTime [_gunner,_muzzle,1];"
