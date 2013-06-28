@@ -1573,11 +1573,7 @@ class CfgWeight
 		class TrashTinCan 
 		{
 			weight = 0.003;
-		};
-		class TrashTinCan
-		{
-			weight = 0.003;
-		};		
+		};	
 		class FoodCanUnlabeledEmpty 
 		{
 			weight = 0.003;
@@ -1612,10 +1608,6 @@ class CfgWeight
 			weight = 0.05;
 		};
 		class ItemSodaEmpty 
-		{
-			weight = 0.002;
-		};
-		class ItemSodaEmpty
 		{
 			weight = 0.002;
 		};

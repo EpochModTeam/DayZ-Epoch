@@ -1573,7 +1573,7 @@ class CfgWeight
 		class TrashTinCan 
 		{
 			weight = 0.003;
-		};
+		};	
 		class FoodCanUnlabeledEmpty 
 		{
 			weight = 0.003;
