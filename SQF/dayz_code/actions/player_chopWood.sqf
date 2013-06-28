@@ -103,7 +103,7 @@ if (count(_findNearestTree) >= 1) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format["Chopping down tree, walk away at anytime to cancel. (1%/2%)", _counter,  _countOut], "PLAIN DOWN"];
+			cutText [format["Chopping down tree, walk away at anytime to cancel. (%1/%2)", _counter,  _countOut], "PLAIN DOWN"];
 
 			if(_counter == _countOut) exitWith {
 				_isOk = false;
