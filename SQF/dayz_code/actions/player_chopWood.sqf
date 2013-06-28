@@ -103,11 +103,12 @@ if (count(_findNearestTree) >= 1) then {
 				_counter = _counter + 1;
 			};
 
-			cutText ["Chopping down tree, walk away at anytime to cancel.", "PLAIN DOWN"];
+			cutText [format["Chopping down tree, walk away at anytime to cancel. (1%/2%)", _counter,  _countOut], "PLAIN DOWN"];
 
 			if(_counter == _countOut) exitWith {
 				_isOk = false;
 				_proceed = true;
+				sleep 1;
 			};
 		};
 
@@ -115,9 +116,11 @@ if (count(_findNearestTree) >= 1) then {
 
 			_itemOut = "PartWoodPile";
 			
-			for "_x" from 1 to _countOut do {
-				player addMagazine _itemOut;
-			};
+			_item = createVehicle ["WeaponHolder", getPosATL player, [], 1, "CAN_COLLIDE"];
+			_item addMagazineCargoGlobal [_itemOut,_countOut];
+			_item modelToWorld getPosATL player;
+			_item setdir (getDir player);
+			player reveal _item;
 			
 			// chop down tree
 			if("" == typeOf _tree) then {
@@ -125,7 +128,7 @@ if (count(_findNearestTree) >= 1) then {
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 
-			cutText [format["%1 piles of wood has been successfully added to your inventory.", _countOut], "PLAIN DOWN"];
+			cutText [format["%1 piles of wood has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
 
 		} else {
 			r_interrupt = false;
