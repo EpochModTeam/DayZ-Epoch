@@ -1361,15 +1361,15 @@ class Mission
 			position[]={3604.1626,185.12129,8026.2251};
 			name="HeroVendor";
 			text="Tanner's Hero Supplies";
-			type="Strongpoint";
-			colorName="ColorGreen";
+			type="hd_dot";
+			colorName="ColorBlue";
 		};
 		class Item18
 		{
 			position[]={7317.5527,87.173363,8023.3457};
 			name="VehicleFriendly";
 			text="Rutahn's Vehicles";
-			type="mil_dot";
+			type="mil_triangle";
 			colorName="ColorGreen";
 		};
 		class Item19
@@ -1378,7 +1378,7 @@ class Mission
 			name="NeutralVendors";
 			text="Brensk Neutral Camp";
 			type="mil_circle";
-			colorName="ColorOrange";
+			colorName="ColorBlack";
 		};
 		class Item20
 		{
@@ -1394,7 +1394,7 @@ class Mission
 			name="LowEndWeaponsAmmo";
 			text="Rhevn and Merkaba's Weapons/Ammo";
 			type="mil_circle";
-			colorName="ColorOrange";
+			colorName="ColorBlack";
 		};
 		class Item22
 		{
@@ -1402,22 +1402,22 @@ class Mission
 			name="BoatVendor";
 			text="Popeye's Boats";
 			type="mil_triangle";
-			colorName="ColorBlue";
+			colorName="ColorBlack";
 		};
 		class Item23
 		{
 			position[]={7239.8848,240.7793,7046.2319};
-			name="NeutralHelos";
-			text="Robnyah's Choppers";
+			name="Bandit Trader";
+			text="Bandit Trader";
 			type="mil_dot";
-			colorName="ColorOrange";
+			colorName="ColorRed";
 		};
 		class Item24
 		{
 			position[]={6283.353,41.989407,9380.7344};
 			name="PlaneVendor";
 			text="AWOL's Air Vehicles";
-			type="mil_dot";
+			type="mil_triangle";
 			colorName="ColorGreen";
 		};
 	};
