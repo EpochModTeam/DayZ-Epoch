@@ -6,7 +6,7 @@ cutText ["","BLACK OUT"];
 enableSaving [false, false];
 
 //REALLY IMPORTANT VALUES
-dayZ_instance =	11;					//The instance
+dayZ_instance =	18;					//The instance
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
@@ -21,10 +21,9 @@ spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea= 1500; // Default = 1500
 MaxHeliCrashes= 5; // Default = 5
 MaxVehicleLimit = 300; // Default = 50
-MaxDynamicDebris = 500; // Default = 100
-dayz_MapArea = 14000; // Default = 10000
+MaxDynamicDebris = 350; // Default = 100
+dayz_MapArea = 12000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40 
-
 
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
