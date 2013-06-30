@@ -1346,7 +1346,7 @@ class Mission
 			name="NeutralWeapons/Ammo/Medic";
 			text="Kopa Weapons/Ammo/Medical";
 			type="mil_circle";
-			colorName="ColorOrange";
+			colorName="ColorBlack";
 		};
 		class Item16
 		{
@@ -1358,27 +1358,27 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={9059.6152,9.2987309,4059.9512};
+			position[]={9056.7129,9.2987309,4073.5034};
 			name="HeroVehicles";
 			text="Darren's Hero Vehicles";
-			type="mil_dot";
-			colorName="ColorGreen";
+			type="mil_triangle";
+			colorName="ColorBlue";
 		};
 		class Item18
 		{
-			position[]={2920.1094,4.3596339,3339.9177};
+			position[]={2931.1838,4.3596339,3348.3813};
 			name="Medic/Vehicles";
 			text="Kypex and Perry's Vehicles/Medical";
-			type="mil_dot";
+			type="mil_circle";
 			colorName="ColorGreen";
 		};
 		class Item19
 		{
 			position[]={1891.7347,5.0501137,3611.1328};
 			name="NeutralAirVehicles";
-			text="Green's Airfield";
+			text="Bandit Trader";
 			type="mil_dot";
-			colorName="ColorOrange";
+			colorName="ColorRed";
 		};
 		class Item20
 		{
@@ -1386,7 +1386,7 @@ class Mission
 			name="HeroVendorNoVehicles";
 			text="Trevors Hero Supplies";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlue";
 		};
 		class Item21
 		{
@@ -1402,7 +1402,7 @@ class Mission
 			name="Boats";
 			text="Sams Boats";
 			type="mil_triangle";
-			colorName="ColorBlue";
+			colorName="ColorBlack";
 		};
 		class Item23
 		{
@@ -1418,7 +1418,7 @@ class Mission
 			name="NeutralGeneral/Building";
 			text="Bertha and Rocky's General/Building Supplies";
 			type="mil_circle";
-			colorName="ColorOrange";
+			colorName="ColorBlack";
 		};
 		class Item25
 		{
