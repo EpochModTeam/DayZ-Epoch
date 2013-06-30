@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 11
-serverTraders = ["RU_Functionary1","RU_Citizen3","Rocker4","Profiteer4","Rita_Ensler_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","TK_GUE_Soldier_5_EP1","GUE_Soldier_MG","Worker2","Worker3","Soldier_GL_M16A2_PMC","Woodlander1","UN_CDF_Soldier_Pilot_EP1","RU_WorkWoman1","Dr_Annie_Baker_EP1","Soldier_MG_PKM_PMC","Soldier_MG_PMC","GUE_Soldier_CO","RU_WorkWoman5","RU_Citizen1","RU_Villager3","TK_CIV_Takistani04_EP1","Pilot_EP1","RU_Profiteer4","Woodlander3","Dr_Hladik_EP1","Doctor","HouseWife1"];
+serverTraders = ["RU_Functionary1","RU_Citizen3","Rocker4","Profiteer4","Rita_Ensler_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","TK_GUE_Soldier_5_EP1","GUE_Soldier_MG","Worker2","Worker3","Soldier_GL_M16A2_PMC","Woodlander1","UN_CDF_Soldier_Pilot_EP1","RU_WorkWoman1","Dr_Annie_Baker_EP1","RU_Citizen4","RU_WorkWoman5","RU_Citizen1","RU_Villager3","TK_CIV_Takistani04_EP1","Pilot_EP1","RU_Profiteer4","Woodlander3","Dr_Hladik_EP1","Doctor","HouseWife1"];
 // Hero Vendor
 menu_RU_Functionary1 = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
@@ -96,20 +96,8 @@ menu_Dr_Annie_Baker_EP1 = [
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"friendly"
 ];
-// Weapons friendly 2
-menu_Soldier_MG_PKM_PMC = [
-	[["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
-	[],
-	"friendly"
-];
-// Ammunition friendly 2
-menu_Soldier_MG_PMC = [
-	[["Assault Rifle Ammo",621],["Light Machine Gun Ammo",622],["Pistol Ammo",625],["Shotguns and Single-shot Ammo",623],["Sniper Rifle Ammo",624],["Submachine Gun Ammo",626]],
-	[],
-	"friendly"
-];
 // East Wholesaler
-menu_GUE_Soldier_CO = [
+menu_RU_Citizen4 = [
 	[["Wholesale",555]],
 	[],
 	"neutral"
