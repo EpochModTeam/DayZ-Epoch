@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 6
-serverTraders = ["RU_Worker1","Dr_Annie_Baker_EP1","CIV_EuroWoman01_EP1","ibr_lingorman2s","Worker2","TK_CIV_Woman03_EP1","ibr_lingorman3s","ibr_lingorman5s","ibr_lingorman4s","ibr_lingorman2","Citizen2_EP1","Worker1","RU_Madam3","Pilot","CIV_EuroMan02_EP1","CIV_EuroMan01_EP1","ibr_lingorman7s","Damsel3","Rocker4","Worker4","ibr_lingorman7","ibr_lingorman5","Citizen3_EP1","ibr_lingorman6","ibr_lingorman6s","TK_CIV_Woman02_EP1","Pilot_EP1","TK_CIV_Worker01_EP1","RU_Doctor"];
+serverTraders = ["RU_Worker1","Dr_Annie_Baker_EP1","CIV_EuroWoman01_EP1","ibr_lingorman2s","Worker2","TK_CIV_Woman03_EP1","ibr_lingorman3s","ibr_lingorman5s","ibr_lingorman4s","ibr_lingorman2","Citizen2_EP1","Worker1","RU_Madam3","Pilot","CIV_EuroMan02_EP1","CIV_EuroMan01_EP1","ibr_lingorman7s","Damsel3","Rocker4","Worker4","ibr_lingorman7","ibr_lingorman5","Citizen3_EP1","ibr_lingorman6","ibr_lingorman6s","TK_CIV_Woman02_EP1","Pilot_EP1","TK_CIV_Worker01_EP1","RU_Doctor","Functionary1","TK_CIV_Takistani04_EP1"];
 		// START PER TRADER CONFIG
 // Whiskey's Parts Shop
 menu_RU_Worker1 = [
@@ -174,5 +174,16 @@ menu_RU_Doctor = [
 	[["Chem-lites/Flares",666],["Medical Supplies",665],["Smoke Grenades",668]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
+];
+// Bandit Trader
+menu_TK_CIV_Takistani04_EP1 = [
+	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[],
+	"hostile"
+];
+menu_Functionary1 = [
+	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[],
+	"hero"
 ];
 ];
