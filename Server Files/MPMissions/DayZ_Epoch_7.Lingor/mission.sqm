@@ -1258,7 +1258,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=36;
+		items=37;
 		class Item0
 		{
 			position[]={4078.8516,30.836605,4757.7241};
@@ -1352,8 +1352,8 @@ class Mission
 			position[]={6539.8096,20.420567,6868.8203};
 			name="RepairGuy";
 			text="Axles Repair Shop";
-			type="mil_dot";
-			colorName="ColorYellow";
+			type="mil_box";
+			colorName="ColorGreen";
 		};
 		class Item15
 		{
@@ -1361,7 +1361,7 @@ class Mission
 			name="PlaneVendor";
 			text="AWOL's Planes";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorGreen";
 		};
 		class Item16
 		{
@@ -1369,7 +1369,7 @@ class Mission
 			name="Wholesale";
 			text="Wholesaler Blivion";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorBlack";
 		};
 		class Item17
 		{
@@ -1377,15 +1377,15 @@ class Mission
 			name="HighWeapons/ammo";
 			text="Jim and Joe's Weapons/Ammo";
 			type="mil_dot";
-			colorName="ColorOrange";
+			colorName="ColorGreen";
 		};
 		class Item18
 		{
 			position[]={4245.8931,46.366299,4486.48};
 			name="Parts";
 			text="Whiskey's Parts";
-			type="mil_dot";
-			colorName="ColorYellow";
+			type="mil_box";
+			colorName="ColorBlack";
 		};
 		class Item19
 		{
@@ -1393,7 +1393,7 @@ class Mission
 			name="Choppers";
 			text="Chip's Choppers";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorGreen";
 		};
 		class Item20
 		{
@@ -1401,7 +1401,7 @@ class Mission
 			name="lowEndCars";
 			text="Used Cars";
 			type="mil_dot";
-			colorName="ColorBrown";
+			colorName="ColorBlack";
 		};
 		class Item21
 		{
@@ -1409,7 +1409,7 @@ class Mission
 			name="LowEndWeapons";
 			text="Chuck and Buck's Weapons/Ammo";
 			type="mil_dot";
-			colorName="ColorOrange";
+			colorName="ColorBlack";
 		};
 		class Item22
 		{
@@ -1417,14 +1417,14 @@ class Mission
 			name="HighEndCars";
 			text="Green's Quality Cars";
 			type="mil_dot";
-			colorName="ColorBrown";
+			colorName="ColorGreen";
 		};
 		class Item23
 		{
 			position[]={895.26929,29.506145,5271.8955};
 			name="MedicalandBags";
 			text="Alejandria and Melly's Medica/Survival Shop";
-			type="mil_circle";
+			type="mil_dot";
 			colorName="ColorGreen";
 		};
 		class Item24
@@ -1433,7 +1433,7 @@ class Mission
 			name="Wholesaler";
 			text="Wholesaler Clive";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorBlack";
 		};
 		class Item25
 		{
@@ -1441,7 +1441,7 @@ class Mission
 			name="BagsNFood";
 			text="Bag lady Gina";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
 		class Item26
 		{
@@ -1449,7 +1449,7 @@ class Mission
 			name="Wholesalers";
 			text="Wholesaler Santos";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorBlack";
 		};
 		class Item27
 		{
@@ -1457,15 +1457,15 @@ class Mission
 			name="DirtTrackVendor";
 			text="Adventure 4x4";
 			type="mil_dot";
-			colorName="ColorBlack";
+			colorName="ColorGreen";
 		};
 		class Item28
 		{
-			position[]={2376.5916,56.990025,4120.5234};
+			position[]={2376.5916,56.980717,4120.5234};
 			name="OffRoad4x4";
 			text="MotoDrom 4x4 Offroad";
 			type="mil_dot";
-			colorName="ColorBlack";
+			colorName="ColorGreen";
 		};
 		class Item29
 		{
@@ -1473,7 +1473,7 @@ class Mission
 			name="BoatVendor";
 			text="Big Bob's Boats";
 			type="mil_triangle";
-			colorName="ColorBlue";
+			colorName="ColorBlack";
 		};
 		class Item30
 		{
@@ -1481,7 +1481,7 @@ class Mission
 			name="BoatVendor1";
 			text="Juan's Tour Boats";
 			type="mil_triangle";
-			colorName="ColorBlue";
+			colorName="ColorBlack";
 		};
 		class Item31
 		{
@@ -1489,15 +1489,15 @@ class Mission
 			name="BoatVendor2";
 			text="Jd's Armed boats";
 			type="mil_triangle";
-			colorName="ColorBlue";
+			colorName="ColorGreen";
 		};
 		class Item32
 		{
-			position[]={6673.0313,52.073902,6355.9775};
+			position[]={6673.0313,52.049561,6355.9775};
 			name="BagVendor1";
 			text="Stella's Stop";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
 		class Item33
 		{
@@ -1505,7 +1505,7 @@ class Mission
 			name="BagVendor2";
 			text="Samish Shop";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
 		class Item34
 		{
@@ -1513,15 +1513,23 @@ class Mission
 			name="Doctor2";
 			text="Mad Scientist";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorBlack";
 		};
 		class Item35
 		{
-			position[]={8938.207,36.614342,7179.0684};
-			name="BlackMarket";
-			text="Jeeves Black Market";
-			type="hd_flag";
+			position[]={4099.8286,16.890327,9242.6455};
+			name="BanditTrader";
+			text="Bandit Trader";
+			type="mil_dot";
 			colorName="ColorRed";
+		};
+		class Item36
+		{
+			position[]={9297.459,15.001276,3875.1855};
+			name="HeroTrader";
+			text="Hero Trader";
+			type="mil_dot";
+			colorName="ColorBlue";
 		};
 	};
 };
@@ -1529,7 +1537,6 @@ class Intro
 {
 	addOns[]=
 	{
-		"ibr_lingor",
 		"ibr_lingor"
 	};
 	addOnsAuto[]=
@@ -1552,7 +1559,6 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"ibr_lingor",
 		"ibr_lingor"
 	};
 	addOnsAuto[]=
@@ -1575,7 +1581,6 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"ibr_lingor",
 		"ibr_lingor"
 	};
 	addOnsAuto[]=
