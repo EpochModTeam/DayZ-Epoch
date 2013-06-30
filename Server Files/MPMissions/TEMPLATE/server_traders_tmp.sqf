@@ -195,12 +195,12 @@ menu_ibr_lingorman6s = [
 // General Store 4
 menu_TK_CIV_Woman02_EP1 = [
 	[["Backpacks",685],["Clothes",683],["Cooked Meats",686],["Drinks",684],["Packaged Food",687]],
-	[],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // General Store 5
 menu_Damsel3 = [
 	[["Backpacks",688],["Clothes",689],["Cooked Meats",690],["Drinks",691],["Packaged Food",692]],
-	[],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
