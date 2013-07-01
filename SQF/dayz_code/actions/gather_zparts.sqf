@@ -78,6 +78,12 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 			publicVariable "dayzGutBodyZ";
 		};
 		
+		// Reduce humanity for gutting zeds
+		_humanity = player getVariable["humanity",0];
+		_humanity = _humanity - 10;
+		player setVariable["humanity",_humanity,true];
+		
+
 		_string = format["Successfully Gutted Zombie",_text,_qty];
 		cutText [_string, "PLAIN DOWN"];
 	};

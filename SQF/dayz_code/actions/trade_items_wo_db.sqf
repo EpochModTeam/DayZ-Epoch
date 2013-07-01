@@ -81,10 +81,22 @@ for "_x" from 1 to _total_trades do {
 	
 		_removed = _removed + ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
 		if (_removed == _qty_in) then {
-		
+			
+			_humanityGain = 0;
 			for "_x" from 1 to _qty_out do {
 				player addMagazine _part_out;
+				if(_part_out == "FoodBioMeat") then {
+					_humanityGain = _humanityGain + 20;
+				};
 			};
+
+			if(_humanityGain > 0) then {
+				// Increase humanity for turning in bio meat
+				_humanity = player getVariable["humanity",0];
+				_humanity = _humanity + 20;
+				player setVariable["humanity",_humanity,true];
+			};
+
 			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 			
 		} else {

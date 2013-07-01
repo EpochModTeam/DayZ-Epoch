@@ -18,8 +18,6 @@ if (local _zombiebody) then {
 		publicVariable "dayzHideBody"; // remote player
 		sleep 5;
 		deleteVehicle _body;
-		// Give small humanity increase after body is removed
-		[player,1] call player_humanityChange;
 		true;
 	};
 	
