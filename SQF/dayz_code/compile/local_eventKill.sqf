@@ -1,7 +1,7 @@
 //[unit, selectionName, damage, source, projectile]
 //will only run when local to the created object
 //record any key hits to the required selection
-private["_zed","_killer","_kills","_array","_type"];
+private ["_zed","_killer","_kills","_array","_type","_humanity"];
 
 _array = 		_this select 0;
 _zed = 			_array select 0;

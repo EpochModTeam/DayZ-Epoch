@@ -1,4 +1,4 @@
-private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades"];
+private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades","_humanityGain","_humanity"];
 // [part_out,part_in, qty_out, qty_in,];
 
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
@@ -93,7 +93,7 @@ for "_x" from 1 to _total_trades do {
 			if(_humanityGain > 0) then {
 				// Increase humanity for turning in bio meat
 				_humanity = player getVariable["humanity",0];
-				_humanity = _humanity + 20;
+				_humanity = _humanity + _humanityGain;
 				player setVariable["humanity",_humanity,true];
 			};
 
