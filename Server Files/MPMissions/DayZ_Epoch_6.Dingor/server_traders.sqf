@@ -186,4 +186,3 @@ menu_Functionary1 = [
 	[],
 	"hero"
 ];
-];
