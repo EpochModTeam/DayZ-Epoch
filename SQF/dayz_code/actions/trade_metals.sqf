@@ -18,7 +18,9 @@ _metals_conversion = [
 	["ItemCopperBar10oz","ItemSilverBar",3,1,"buy","Silver","10oz Copper",103],
 		
 	["ItemGoldBar","ItemSilverBar10oz",1,3,"buy","10oz Silver","Gold",102],
-	["ItemSilverBar10oz","ItemGoldBar",3,1,"buy","Gold","10oz Silver",101]
+	["ItemSilverBar10oz","ItemGoldBar",3,1,"buy","Gold","10oz Silver",101],
+
+	["ItemBriefcase100oz","ItemGoldBar10oz",1,12,"buy","10oz Gold","Full Briefcase",99]
 		
 ];
 

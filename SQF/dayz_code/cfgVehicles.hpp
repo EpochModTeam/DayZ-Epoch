@@ -367,7 +367,7 @@ class Citizen1;	// External class reference
 	class SurvivorWurban_DZ: SurvivorW2_DZ
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\textures\UrbanGirl.paa"};
+		hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\UrbanGirl.paa"};
 	};
 	
 	class PZombie_VB: Citizen1

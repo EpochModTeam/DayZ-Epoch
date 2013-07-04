@@ -200,27 +200,29 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		s_player_lockUnlock_crtl = -1;
 	};
 
-	/*
-	//Allow player to force save
-	if((_isVehicle or _isTent) and !_isMan) then {
-		if (s_player_forceSave < 0) then {
-			s_player_forceSave = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",_cursorTarget, 1, true, true, "", ""];
+	if(DZE_AllowForceSave) then {
+		//Allow player to force save
+		if((_isVehicle or _isTent) and !_isMan) then {
+			if (s_player_forceSave < 0) then {
+				s_player_forceSave = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",_cursorTarget, 1, true, true, "", ""];
+			};
+		} else {
+			player removeAction s_player_forceSave;
+			s_player_forceSave = -1;
 		};
-	} else {
-		player removeAction s_player_forceSave;
-		s_player_forceSave = -1;
 	};
 	
-
-	if((_isVehicle or _isTent or _isnewstorage) and _isAlive and !_isMan) then {
-		if (s_player_checkGear < 0) then {
-			s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\cargocheck.sqf",_cursorTarget, 1, true, true, "", ""];
+	If(DZE_AllowCargoCheck) then {
+		if((_isVehicle or _isTent or _isnewstorage) and _isAlive and !_isMan) then {
+			if (s_player_checkGear < 0) then {
+				s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\cargocheck.sqf",_cursorTarget, 1, true, true, "", ""];
+			};
+		} else {
+			player removeAction s_player_checkGear;
+			s_player_checkGear = -1;
 		};
-	} else {
-		player removeAction s_player_checkGear;
-		s_player_checkGear = -1;
 	};
-	*/
+	
 
 	//flip vehicle small vehicles by your self and all other vehicles with help nearby
 	if (_isVehicle and !_canmove and _isAlive and (player distance _cursorTarget >= 2) and (count (crew _cursorTarget))== 0 and ((vectorUp _cursorTarget) select 2) < 0.5) then {
@@ -400,13 +402,6 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_fillgen;
 		s_player_fillgen = -1;
 	};
-	
-
-	// not the right place for this...
-	// Find if fuel pump is within 5 meters.
-	// If so then look for a generator within 30m of pump
-	// and if generator is running 
-	// Allow auto fill 
 
     //Sleep
 	if(_cursorTarget isKindOf "TentStorage" and _ownerID == dayz_characterID) then {

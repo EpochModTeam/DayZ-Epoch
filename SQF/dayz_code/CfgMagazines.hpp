@@ -46,7 +46,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"sun_shade_kit",1}};
-				input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
+				input[] = {{"bulk_empty",1},{"ItemCanvas",1},{"PartWoodLumber",4}};
 			};
 			class Crafting4
 			{
@@ -98,7 +98,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"light_pole_kit",1}};
-				input[] = {{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
+				input[] = {{"bulk_empty",1},{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
 			};
 		};
 	};
@@ -831,7 +831,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"wooden_shed_kit",1}};
-				input[] = {{"ItemCorrugated",2},{"PartWoodPlywood",5},{"PartWoodLumber",5}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",2},{"PartWoodPlywood",5},{"PartWoodLumber",5}};
 			};
 			class Crafting1
 			{
@@ -840,7 +840,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"outhouse_kit",1}};
-				input[] = {{"ItemCorrugated",1},{"PartWoodPlywood",5},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",1},{"PartWoodPlywood",5},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
 			};
 			class Crafting2
 			{
@@ -849,7 +849,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"storage_shed_kit",1}};
-				input[] = {{"ItemCorrugated",5},{"PartWoodPlywood",2},{"PartWoodLumber",5}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",5},{"PartWoodPlywood",2},{"PartWoodLumber",5}};
 			};
 		};
 	};
@@ -879,7 +879,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"rusty_gate_kit",1}};
-				input[] = {{"ItemPole",6},{"PartGeneric",3},{"ItemTankTrap",1}};
+				input[] = {{"bulk_empty",1},{"ItemPole",6},{"PartGeneric",3},{"ItemTankTrap",1}};
 			};
 		};
 	};
@@ -953,12 +953,21 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "Make 6 pack of Coke";
+				text = "Pack 6 Coke";
 				script = "spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_ItemSodaCoke",1}};
 				input[] = {{"bulk_empty",1},{"ItemSodaCoke",6}};
+			};
+			class Crafting1
+			{
+				text = "Pack 6 Pepsi";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"bulk_ItemSodaPepsi",1}};
+				input[] = {{"bulk_empty",1},{"ItemSodaPepsi",6}};
 			};
 		};
 	};
@@ -1556,7 +1565,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"stick_fence_kit",1}};
-				input[] = {{"PartWoodPile",6}};
+				input[] = {{"bulk_empty",1},{"PartWoodPile",6}};
 				
 			};
 			
@@ -1590,12 +1599,22 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "Craft Deer Stand";
+				text = "Craft Supply Crate";
 				script = "spawn player_craftItem1;";
+				neednearby[] = {"sawmil"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"PartWoodPlywood",1}};
+				input[] = {{"PartWoodLumber",4},{"PartGeneric",1}};
+				
+			};
+			class Crafting2
+			{
+				text = "Craft Deer Stand";
+				script = "spawn player_craftItem2;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"deer_stand_kit",1}};
-				input[] = {{"PartWoodLumber",8},{"PartWoodPile",2}};
+				input[] = {{"bulk_empty",1},{"PartWoodLumber",8},{"PartWoodPile",2}};
 				
 			};
 		};
@@ -1617,7 +1636,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"wood_shack_kit",1}};
-				input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+				input[] = {{"bulk_empty",1},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
 				
 			};
 		};
@@ -1979,7 +1998,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
 			};
 			class Crafting1
 			{
@@ -2014,7 +2033,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
 			};
 			class Crafting1
 			{
@@ -2023,7 +2042,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
 			};
 		};
 	};
@@ -2048,7 +2067,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
 			};
 			class Crafting1
 			{
@@ -2057,7 +2076,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
 			};
 		};
 	};
@@ -2094,7 +2113,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"sandbag_nest_kit",1}};
-				input[] = {{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
+				input[] = {{"bulk_empty",1},{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
 			};
 			/*
 			class Crafting2
@@ -2104,7 +2123,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
-				input[] = {{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
+				input[] = {{"bulk_empty",1},{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
 				consumeweapons[] = {"M240_DZ"};
 			};
 			*/

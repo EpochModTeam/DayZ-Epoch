@@ -564,4 +564,13 @@ if(!isDedicated) then {
 	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {
 	//	dayzDebug = true;
 	//};
+
+	// DayZ Epoch Client only variables
+	if(isNil "DZE_AllowForceSave") then {
+		DZE_AllowForceSave = false;
+	};
+	if(isNil "DZE_AllowCargoCheck") then {
+		DZE_AllowCargoCheck = true;
+	};
+
 };
