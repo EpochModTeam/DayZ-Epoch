@@ -1,5 +1,5 @@
 /*
-	DayZ Crafting
+	DayZ Fishing
 	Usage: spawn player_goFishing;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
