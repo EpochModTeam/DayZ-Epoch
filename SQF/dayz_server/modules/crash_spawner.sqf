@@ -2,7 +2,7 @@ private ["_guaranteedLoot","_randomizedLoot","_spawnChance","_spawnMarker","_spa
 
 _guaranteedLoot = 3;
 _randomizedLoot = 4;
-_spawnChance =  0.90;
+_spawnChance =  0.50;
 _spawnMarker = 'center';
 // _spawnRadius = 5000;
 _spawnRadius = HeliCrashArea;
@@ -17,7 +17,7 @@ if (_spawnRoll <= _spawnChance) then {
 	if(_crashModel == "Mass_grave_DZ") then {
 		_lootTable = "MassGrave";
 	} else {
-		_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
+		_lootTable = "HeliCrash";
 	};
 
 	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");

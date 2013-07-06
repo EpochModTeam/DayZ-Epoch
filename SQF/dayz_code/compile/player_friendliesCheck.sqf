@@ -44,7 +44,7 @@ _newTagList = [];
 	
 	
 	// friendly player disconnected
-	if (!(isPlayer _player) or ((vehicle _player != _player))) then {
+	if (!(isPlayer _player) or (vehicle _player != _player)) then {
 		deleteVehicle _tag;
 	} else {
 		

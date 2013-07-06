@@ -147,13 +147,13 @@ menu_Woodlander3 = [
 // Medical Supplies 2
 menu_Dr_Hladik_EP1 = [
 	[["Chem-lites/Flares",666],["Medical Supplies",665],["Smoke Grenades",668]],
-	[],
+	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
 ];
 // Medical Supplies 3
 menu_Doctor = [
 	[["Chem-lites/Flares",669],["Medical Supplies",670],["Smoke Grenades",671]],
-	[],
+	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
 ];
 // Boat Trader 2
