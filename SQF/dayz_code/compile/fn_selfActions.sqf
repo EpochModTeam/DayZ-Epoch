@@ -134,8 +134,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	_isDog =  (_cursorTarget isKindOf "DZ_Pastor" || _cursorTarget isKindOf "DZ_Fin");
 	_isZombie = _cursorTarget isKindOf "zZombie_base";
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
-	_isWreck = _typeOfCursorTarget in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
-	_isRemovable = _typeOfCursorTarget in ["Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","SandNest_DZ","Plastic_Pole_EP1_DZ"];
+	_isWreck = _typeOfCursorTarget in DZE_isWreck;
+	_isRemovable = _typeOfCursorTarget in DZE_isRemovable;
 	_isDisallowRepair = _typeOfCursorTarget in ["M240Nest_DZ"];
 
 	_isTent = _cursorTarget isKindOf "TentStorage";

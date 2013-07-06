@@ -18,6 +18,11 @@ _isOk = true;
 _proceed = false;
 _objType = typeOf _obj;
 
+// Chance to break tools 
+_isDestructable = _obj isKindOf "BuiltItems";
+_isWreck = _objType in DZE_isWreck;
+_isRemovable = _objType in DZE_isRemovable;
+
 _limit = 5;
 if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
 	_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
@@ -51,6 +56,8 @@ cutText [format["Starting de-construction of %1.",_objType], "PLAIN DOWN"];
 
 // Alert zombies once.
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
+
+_brokenTool = false;
 
 // Start de-construction loop
 _counter = 0;
@@ -99,6 +106,16 @@ while {_isOk} do {
 
 	if(_finished) then {
 		_counter = _counter + 1;
+		// 10% chance to break a required tool each pass
+		if(_isDestructable or _isRemovable) then {
+			if((random 10) <= 1) then {
+				_brokenTool = true;
+			};
+		};
+	};
+	if(_brokenTool) exitWith {
+		_isOk = false;
+		_proceed = false;
 	};
 
 	cutText [format["De-constructing %1 stage %2 of %3 walk away at anytime to cancel.",_objType, _counter,_limit], "PLAIN DOWN"];
@@ -110,28 +127,29 @@ while {_isOk} do {
 	
 };
 
+if(_brokenTool){
+	if(_isRemovable) then {
+		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
+	} else {
+		_removeTool = "ItemToolbox";
+	};
+	if([player,_removeTool,1] call BIS_fnc_invRemove) then {
+		cutText [format["Tool (%1) broke cannot remove %2.",_removeTool,_objType], "PLAIN DOWN"];
+	};
+};
+
 // Remove only if player waited
 if (_proceed) then {
 	
 	// Double check that object is not null
 	if(!isNull(_obj)) then {
-		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
-	
-		// TODO add hideobject to have it sink into ground then delete
-		dayzHideObject = _obj;
-		hideObject _obj; // local player
-		publicVariable "dayzHideObject"; // remote player
-		sleep 5;
-
-
-		//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+		
+		deleteVehicle _obj;
 		dayzDeleteObj = [_objectID,_objectUID];
 		publicVariableServer "dayzDeleteObj";
+
+		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
 		
-		_isWreck = (typeOf _obj) in ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
-
-		deleteVehicle _obj;
-
 		_selectedRemoveOutput = [];
 		if(_isWreck) then {
 			// Find one random part to give back
