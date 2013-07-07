@@ -1,5 +1,6 @@
 /*	
-	INITILIZATION
+	For DayZ Epoch
+	Addons Credits: Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr, Sahbazz
 */
 startLoadingScreen ["","RscDisplayLoadCustom"];
 cutText ["","BLACK OUT"];
@@ -27,6 +28,9 @@ dayz_maxLocalZombies = 80; // Default = 40
 
 dayz_maxGlobalZombies = 60; // Default = 30
 dayz_maxZeds = 1000; // Default = 500
+
+EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"]];
+dayz_fullMoonNights = true;
 
 // new stuff
 dayz_paraSpawn = false;

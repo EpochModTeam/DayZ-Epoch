@@ -1,6 +1,7 @@
 startLoadingScreen ["","DayZ_loadingScreen"];
 /*	
-	INITILIZATION
+	For DayZ Epoch
+	Addons Credits: Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr, Sahbazz
 */
 enableSaving [false, false];
 
@@ -18,6 +19,9 @@ MaxVehicleLimit = 50; // Default = 50
 MaxDynamicDebris = 100; // Default = 100
 dayz_MapArea = 8000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
+
+EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"]];
+dayz_fullMoonNights = true;
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.1;

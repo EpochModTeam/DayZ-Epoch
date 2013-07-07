@@ -1,5 +1,6 @@
 /*	
-	INITILIZATION
+	For DayZ Epoch
+	Addons Credits: Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr, Sahbazz
 */
 startLoadingScreen ["","RscDisplayLoadCustom"];
 cutText ["","BLACK OUT"];
@@ -24,6 +25,9 @@ MaxVehicleLimit = 50; // Default = 50
 MaxDynamicDebris = 50; // Default = 100
 dayz_MapArea = 2000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
+
+EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"]];
+dayz_fullMoonNights = true;
 
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
