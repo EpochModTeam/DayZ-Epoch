@@ -172,5 +172,9 @@ AllowedVehiclesList = [
 ["VolhaLimo_TK_CIV_EP1",1],
 ["Volha_1_TK_CIV_EP1",1],
 ["Volha_2_TK_CIV_EP1",1],
-["VWGolf",2]
+["VWGolf",2],
+["JetSkiYanahui_Case_Red",1],
+["JetSkiYanahui_Case_Yellow",1],
+["JetSkiYanahui_Case_Green",1],
+["JetSkiYanahui_Case_blue",1]
 ];

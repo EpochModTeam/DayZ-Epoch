@@ -149,7 +149,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ Epoch 1.0.1.4 (1.7.6.1+)";
+			text = "DayZ Epoch 1.0.1.5 (1.7.6.1+)";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
