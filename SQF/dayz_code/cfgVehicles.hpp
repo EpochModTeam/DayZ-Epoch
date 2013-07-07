@@ -2047,6 +2047,22 @@ class Citizen1;	// External class reference
 		constructioncount = 5;
 		removeoutput[] = {{"ItemTankTrap",1}};
 	};
+	// Metal Panel
+	class MetalPanel_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0.5};
+		model = "\ca\structures\wall\wall_indcnc2_3.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Metal Panel";
+		vehicleClass = "Fortifications";
+		constructioncount = 10;
+		removeoutput[] = {{"metal_panel_kit",1}};
+	};
 	class Generator_DZ: BuiltItems
 	{
 		scope = 2;

@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private ["_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors"];
+private ["_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild"];
 
 if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 
@@ -162,7 +162,16 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	// diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
 	
 	//Allow player to delete objects
-	if((_isDestructable or _isWreck or (_isRemovable and ("ItemCrowbar" in _itemsPlayer))) and _hasToolbox and _isAlive) then {
+	_player_deleteBuild = false;
+	if(_isAlive) then {
+		if(_isDestructable or _isWreck or _isRemovable) then {
+			if(_hasToolbox and "ItemCrowbar" in _itemsPlayer) then {
+				_player_deleteBuild = true;
+			};
+		};
+	};
+
+	if(_player_deleteBuild) then {
 		if (s_player_deleteBuild < 0) then {
 			s_player_deleteBuild = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, true, true, "", ""];
 		};
@@ -170,6 +179,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_deleteBuild;
 		s_player_deleteBuild = -1;
 	};
+
 	
 	// Allow Owner to lock and unlock vehicle  
 	if(_isVehicle and _isAlive and !_isMan and _ownerID != "0") then {

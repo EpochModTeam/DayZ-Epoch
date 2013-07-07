@@ -128,10 +128,10 @@ while {_isOk} do {
 };
 
 if(_brokenTool){
-	if(_isRemovable) then {
-		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
-	} else {
+	if(_isWreck) then {
 		_removeTool = "ItemToolbox";
+	} else {
+		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
 	};
 	if([player,_removeTool,1] call BIS_fnc_invRemove) then {
 		cutText [format["Tool (%1) broke cannot remove %2.",_removeTool,_objType], "PLAIN DOWN"];

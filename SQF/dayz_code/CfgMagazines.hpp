@@ -849,7 +849,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"storage_shed_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",5},{"PartWoodPlywood",2},{"PartWoodLumber",5}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",5},{"PartWoodPlywood",2},{"PartWoodLumber",3}};
 			};
 		};
 	};
@@ -876,11 +876,21 @@ class CfgMagazines {
 			{
 				text = "Craft Rusty Gate";
 				script = "spawn player_craftItem1;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"rusty_gate_kit",1}};
 				input[] = {{"bulk_empty",1},{"ItemPole",6},{"PartGeneric",3},{"ItemTankTrap",1}};
 			};
+			class Crafting2
+			{
+				text = "Craft Metal Panel";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"metal_panel_kit",1}};
+				input[] = {{"bulk_empty",1},{"ItemPole",4},{"ItemTankTrap",4}};
+			};
+			
 		};
 	};
 
@@ -1081,6 +1091,27 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Plastic_Pole_EP1_DZ";
+			};
+		};
+	};
+	
+	class metal_panel_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Metal Panel";
+		descriptionShort = "Metal Panel: Strong metal wall used for base defence.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "MetalPanel_DZ";
 			};
 		};
 	};
@@ -1603,7 +1634,7 @@ class CfgMagazines {
 				script = "spawn player_craftItem1;";
 				neednearby[] = {"sawmil"};
 				requiretools[] = {"ItemToolbox"};
-				output[] = {{"PartWoodPlywood",1}};
+				output[] = {{"bulk_empty",1}};
 				input[] = {{"PartWoodLumber",4},{"PartGeneric",1}};
 				
 			};
