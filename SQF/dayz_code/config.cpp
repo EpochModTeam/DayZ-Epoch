@@ -1110,20 +1110,20 @@ class HeliCrash_No50s: Default {
 			{ "M16A2","weapon" },
 			{ "M16A2GL","weapon" },
 			{ "M9SD","weapon" },
-			{ "AK_74","weapon" },
+			{ "WeaponHolder_PartGeneric","object" },
 			{ "M4A1_Aim","weapon" },
 			{ "AKS_74_kobra","weapon" },
 			{ "AKS_74_U","weapon" },
 			{ "AK_47_M","weapon" },
 			{ "M24","weapon" },
 			{ "M1014","weapon" },
-			{ "DMR","weapon" },
+			{ "WeaponHolder_ItemGenerator","object" },
 			{ "M4A1","weapon" },
 			{ "M14_EP1","weapon" },
 			{ "UZI_EP1","weapon" },
 			{ "Remington870_lamp","weapon" },
 			{ "glock17_EP1","weapon" },
-			{ "MP5A5","weapon" },
+			{ "WeaponHolder_PartWheel","object" },
 			{ "MP5SD","weapon" },
 			{ "M4A3_CCO_EP1","weapon" },
 			{ "Binocular","weapon" },
@@ -1375,7 +1375,7 @@ class HeliCrash_No50s: Default {
 	class Land_Ind_Workshop01_L: Industrial {
 		lootPos[] = {{-3.26172,4.75439,-1.30246},{0.175781,3.91748,-1.30766},{-2.37891,2.35303,-1.30405},{4.10547,-4.10791,-1.31345},{0.727539,-2.61621,-1.31418},{2.54688,-2.17725,-1.31482},{1.52344,-3.79443,-1.31332}};
 	};
-	class Land_Hangar_2: MilitaryIndustrial {
+	class Land_Hangar_2: Industrial {
 		lootPos[] = {{10.1245,-6.4873,-2.56317},{11.9387,7.91113,-2.56317},{1.79517,7.12695,-2.56317},{-11.8948,10.5449,-2.56317},{-8.97021,-4.34766,-2.56317},{-0.562744,-7.59375,-2.56317},{5.98804,-2.6123,-2.56317}};
 	};
 	class Land_hut06: Residential {
