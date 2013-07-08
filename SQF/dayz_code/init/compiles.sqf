@@ -191,18 +191,16 @@ if (!isDedicated) then {
 	
 	dayz_losCheck = {
 		private["_target","_agent","_cantSee"];
-		_target = _this select 0;
+		_target = _this select 0; // PUT THE PLAYER IN FIRST ARGUMENT!!!!
 		_agent = _this select 1;
 		_cantSee = true;
 		if (!isNull _target) then {
-			_tPos = eyePos _target;	//(getPosASL _target);
-			_zPos = eyePos _agent;	//(getPosASL _agent);
+			_tPos = eyePos _target;
+			_zPos = eyePos _agent;
 			if ((count _tPos > 0) and (count _zPos > 0)) then {
 				_cantSee = terrainIntersectASL [_tPos, _zPos];
-				//diag_log ("terrainIntersectASL: " + str(_cantSee));
 				if (!_cantSee) then {
-					_cantSee = lineIntersects [_tPos, _zPos];
-					//diag_log ("lineIntersects: " + str(_cantSee));
+					_cantSee = lineIntersects [_tPos, _zPos, _agent, vehicle _target];
 				};
 			};
 		};
@@ -264,6 +262,9 @@ if (!isDedicated) then {
 			{
 				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 			};
+		//Prevent exploit of drag body
+		if ((_dikCode in actionKeys "Prone") and r_drag_sqf) then { force_dropBody = true; };
+		if ((_dikCode in actionKeys "Crouch") and r_drag_sqf) then { force_dropBody = true; };
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
