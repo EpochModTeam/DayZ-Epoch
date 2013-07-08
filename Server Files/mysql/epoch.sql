@@ -307,7 +307,7 @@ CREATE TABLE IF NOT EXISTS `Traders_DATA` (
   `afile` varchar(64) NOT NULL DEFAULT 'trade_items',
   PRIMARY KEY (`id`),
   UNIQUE KEY `item` (`item`,`tid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7068 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7081 ;
 
 --
 -- Dumping data for table `Traders_DATA`
@@ -5081,6 +5081,14 @@ INSERT INTO `Traders_DATA` VALUES(7050, '["ItemFishingPole",3]', 1, '[1,"ItemSil
 INSERT INTO `Traders_DATA` VALUES(7065, '["ItemCrowbar",3]', 1, '[1,"ItemSilverBar",1]', '[2,"ItemCopperBar10oz",1]', 0, 681, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7066, '["ItemMachete",3]', 1, '[1,"ItemSilverBar",1]', '[2,"ItemCopperBar10oz",1]', 0, 681, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7067, '["ItemFishingPole",3]', 1, '[1,"ItemSilverBar10oz",1]', '[5,"ItemSilverBar",1]', 0, 681, 'trade_weapons');
+INSERT INTO `Traders_DATA` VALUES(7068, '["JetSkiYanahui_Case_Red",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 557, 'trade_any_boat');
+INSERT INTO `Traders_DATA` VALUES(7069, '["JetSkiYanahui_Case_Yellow",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 557, 'trade_any_boat');
+INSERT INTO `Traders_DATA` VALUES(7070, '["JetSkiYanahui_Case_Green",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 557, 'trade_any_boat');
+INSERT INTO `Traders_DATA` VALUES(7071, '["JetSkiYanahui_Case_Blue",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 557, 'trade_any_boat');
+INSERT INTO `Traders_DATA` VALUES(7077, '["JetSkiYanahui_Case_Red",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 672, 'trade_any_boat');
+INSERT INTO `Traders_DATA` VALUES(7078, '["JetSkiYanahui_Case_Yellow",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 672, 'trade_any_boat');
+INSERT INTO `Traders_DATA` VALUES(7079, '["JetSkiYanahui_Case_Green",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 672, 'trade_any_boat');
+INSERT INTO `Traders_DATA` VALUES(7080, '["JetSkiYanahui_Case_Blue",2]', 1, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 672, 'trade_any_boat');
 
 -- --------------------------------------------------------
 
