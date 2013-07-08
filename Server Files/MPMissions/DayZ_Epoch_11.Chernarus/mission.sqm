@@ -5,7 +5,9 @@ class Mission
 	{
 		"chernarus",
 		"ca_modules_animals",
+		"dayz_anim",
 		"dayz_code",
+		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
 		"dayz_vehicles",
@@ -1172,7 +1174,7 @@ class Mission
 		items=17;
 		class Item0
 		{
-			position[]={7550.6182,361.05222,8371.957};
+			position[]={7839.6055,381.33774,8414.7324};
 			name="center";
 			type="Empty";
 		};

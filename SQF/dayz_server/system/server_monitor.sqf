@@ -13,17 +13,6 @@ waitUntil{initialized}; //means all the functions are now defined
 
 diag_log "HIVE: Starting";
 
-if (_script != "") then
-{
-	diag_log "MISSION: File Updated";
-} else {
-	while {true} do
-	{
-		diag_log "MISSION: File Needs Updating";
-		sleep 1;
-	};
-};
-
 waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug during login of the first player)
 
 //Set the Time
