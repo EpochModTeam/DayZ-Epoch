@@ -1611,6 +1611,10 @@ class CfgWeight
 		{
 			weight = 0.002;
 		};
+		class ItemSodaCokeEmpty 
+		{
+			weight = 0.002;
+		};
 		class ItemSodaPepsiEmpty 
 		{
 			weight = 0.002;

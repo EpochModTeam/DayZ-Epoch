@@ -5,9 +5,12 @@ class Mission
 	{
 		"shapur_baf",
 		"ca_modules_animals",
+		"dayz_anim",
 		"dayz_code",
+		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
+		"dayz_epoch",
 		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
@@ -18,6 +21,7 @@ class Mission
 		"sigisolda",
 		"suv_col",
 		"csj_gyroac", 
+		"map_eu"
 	};
 	addOnsAuto[]=
 	{

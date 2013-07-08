@@ -10,6 +10,7 @@ class Mission
 		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
+		"dayz_epoch",
 		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",

@@ -16,10 +16,12 @@ class Mission
 		"ibr_hangars",
 		"ibr_airports",
 		"ca_modules_animals",
+		"dayz_anim",
 		"dayz_code",
-		"dayz",
+		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
+		"dayz_epoch",
 		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
@@ -31,7 +33,8 @@ class Mission
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac"
+		"csj_gyroac",
+		"map_eu"
 	};
 	addOnsAuto[]=
 	{
