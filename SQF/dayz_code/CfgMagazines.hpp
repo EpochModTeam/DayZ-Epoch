@@ -831,7 +831,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"wooden_shed_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",2},{"PartWoodPlywood",5},{"PartWoodLumber",5}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
 			};
 			class Crafting1
 			{
@@ -1073,6 +1073,28 @@ class CfgMagazines {
 		};
 	};
 	
+	class workbench_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Workbench";
+		descriptionShort = "Workbench: Used to craft.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "WorkBench_DZ";
+				needNearby[] = {"none"};
+			};
+		};
+	};
+
 	// BUILDING KITS
 	class 30m_plot_kit: CA_Magazine
 	{
@@ -1662,14 +1684,25 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-				text = "Craft Shack";
+				text = "Craft Workbench";
 				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"workbench_kit",1}};
+				input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
+				
+			};
+			class Crafting1
+			{
+				text = "Craft Shack";
+				script = "spawn player_craftItem1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"wood_shack_kit",1}};
 				input[] = {{"bulk_empty",1},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
 				
 			};
+			
 		};
 	};
 	class PartWoodShed: CA_Magazine

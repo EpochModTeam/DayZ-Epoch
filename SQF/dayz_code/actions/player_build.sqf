@@ -25,6 +25,7 @@ _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
+_isWorkBench = (_classname == "WorkBench_DZ");
 
 _distance = 30;
 _needText = "Plot Pole";
@@ -59,7 +60,7 @@ if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["C
 if(_IsNearPlot == 0) then {
 
 	// Allow building of plot
-	if(_isPole) then {
+	if(_isPole or _isWorkBench) then {
 		_canBuildOnPlot = true;
 	};
 	

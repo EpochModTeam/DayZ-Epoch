@@ -2047,6 +2047,34 @@ class Citizen1;	// External class reference
 		constructioncount = 5;
 		removeoutput[] = {{"ItemTankTrap",1}};
 	};
+	// WorkBench_DZ
+	class WorkBench_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0.5};
+		model = "\z\addons\dayz_epoch\models\workbench.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 400;
+		displayName = "Workbench";
+		vehicleClass = "Fortifications";
+		constructioncount = 1;
+		removeoutput[] = {{"PartWoodLumber",5},{"PartWoodPlywood",3}};
+	};
+
+	// belt buckle
+	class Helper_Base_EP1;
+	class BeltBuckle_DZE : Helper_Base_EP1 { 
+		scope = 2; 
+		model = "\z\addons\dayz_epoch\models\skull.p3d"; 
+		displayName = "Belt Buckle"; 
+		accuracy = 1000; 
+		hiddenSelections[] = {"camo"}; 
+		hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(1,0.5,0.5,0.5,ca)"}; 
+	};
+
 	// Metal Panel
 	class MetalPanel_DZ: BuiltItems
 	{
@@ -2163,7 +2191,6 @@ class Citizen1;	// External class reference
 		vehicleClass = "Fortifications";
 		removeoutput[] = {{"30m_plot_kit",1}};
 	};
-
 	class USMC_WarfareBMGNest_M240;
 	class M240Nest_DZ: USMC_WarfareBMGNest_M240
 	{

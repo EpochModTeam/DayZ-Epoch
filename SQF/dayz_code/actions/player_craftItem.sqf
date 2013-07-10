@@ -32,7 +32,7 @@ if("fire" in _needNear) then {
 };
 
 if("workshop" in _needNear) then {
-	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ"], 5]);
+	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], 5]);
 	if(_isNear == 0) then {  
 		_abort = true;
 		_reason = "workshop";

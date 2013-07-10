@@ -1139,7 +1139,7 @@ class FSM
        "dayz_friendliesCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		call player_friendliesCheck;" \n
-       "		sleep 2;" \n
+       "		sleep 5;" \n
        "	};" \n
        "};" \n
        "" \n

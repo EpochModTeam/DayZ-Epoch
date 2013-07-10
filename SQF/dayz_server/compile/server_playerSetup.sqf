@@ -60,7 +60,10 @@ _state =		_primary select 3;
 _worldspace = 	_primary select 4;
 _humanity =		_primary select 5;
 _lastinstance =	_primary select 6;
-_friendlies =	[];
+
+_namespace = profileNamespace;
+
+_friendlies = _namespace getVariable ["friendlies", []];;
 
 //Set position
 _randomSpot = false;
