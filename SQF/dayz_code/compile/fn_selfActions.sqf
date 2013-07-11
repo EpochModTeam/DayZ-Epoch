@@ -97,7 +97,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 
 	_isVehicle = _cursorTarget isKindOf "AllVehicles";
 	_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
-	_isnewstorage = _typeOfCursorTarget in ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ"];
+	_isnewstorage = _typeOfCursorTarget in DZE_isNewStorage;
 	
 	// get items and magazines only once
 	_magazinesPlayer = magazines player;

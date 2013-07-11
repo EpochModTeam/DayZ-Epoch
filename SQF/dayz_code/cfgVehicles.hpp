@@ -2044,7 +2044,7 @@ class Citizen1;	// External class reference
 		armor = 400;
 		displayName = "Hedgehog (Steel)";
 		vehicleClass = "Fortifications";
-		constructioncount = 5;
+		constructioncount = 3;
 		removeoutput[] = {{"ItemTankTrap",1}};
 	};
 	// WorkBench_DZ
@@ -2061,7 +2061,7 @@ class Citizen1;	// External class reference
 		displayName = "Workbench";
 		vehicleClass = "Fortifications";
 		constructioncount = 1;
-		removeoutput[] = {{"PartWoodLumber",5},{"PartWoodPlywood",3}};
+		removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
 	};
 
 	// belt buckle
@@ -2071,8 +2071,8 @@ class Citizen1;	// External class reference
 		model = "\z\addons\dayz_epoch\models\skull.p3d"; 
 		displayName = "Belt Buckle"; 
 		accuracy = 1000; 
-		hiddenSelections[] = {"camo"}; 
-		hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(1,0.5,0.5,0.5,ca)"}; 
+		hiddenSelections[] = {"camo1"}; 
+		hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(1,0.5,0.5,0.5,ca)"};
 	};
 
 	// Metal Panel
@@ -2081,14 +2081,14 @@ class Citizen1;	// External class reference
 		scope = 2;
 		destrType = "DestructTree";
 		cost = 100;
-		offset[] = {0,1.5,0.5};
+		offset[] = {0,2.5,0.5};
 		model = "\ca\structures\wall\wall_indcnc2_3.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 1000;
 		displayName = "Metal Panel";
 		vehicleClass = "Fortifications";
-		constructioncount = 10;
+		constructioncount = 6;
 		removeoutput[] = {{"metal_panel_kit",1}};
 	};
 	class Generator_DZ: BuiltItems
@@ -2103,7 +2103,7 @@ class Citizen1;	// External class reference
 		armor = 400;
 		displayName = "Generator";
 		vehicleClass = "Fortifications";
-		constructioncount = 5;
+		constructioncount = 1;
 		removeoutput[] = {{"ItemGenerator",1}};
 	};
 	class FuelPump_DZ: BuiltItems
@@ -2118,7 +2118,7 @@ class Citizen1;	// External class reference
 		armor = 400;
 		displayName = "Fuel Pump";
 		vehicleClass = "Fortifications";
-		constructioncount = 5;
+		constructioncount = 2;
 		removeoutput[] = {{"ItemFuelPump",1}};
 	};
 
@@ -2149,7 +2149,7 @@ class Citizen1;	// External class reference
 		armor = 400;
 		displayName = "Bag Fence";
 		vehicleClass = "Fortifications";
-		constructioncount = 5;
+		constructioncount = 3;
 		removeoutput[] = {{"ItemSandbag",1}};
 	};
 
@@ -2175,7 +2175,7 @@ class Citizen1;	// External class reference
 		mapSize = 2; 
 		displayName = "H-barrier cube"; 
 		GhostPreview = "Land_HBarrier1Preview"; 
-		constructioncount = 10;
+		constructioncount = 4;
 		removeoutput[] = {{"ItemSandbagLarge",1}};
 	};
 	
@@ -2261,7 +2261,7 @@ class Citizen1;	// External class reference
 	class Land_Misc_deerstand;
 	class DeerStand_DZ: Land_Misc_deerstand
 	{
-		// armor = 300;
+		armor = 300;
 		// destrType = "DestructNo";
 		scope = 2;
 		offset[] = {0,5,0};
@@ -2310,9 +2310,9 @@ class Citizen1;	// External class reference
 		displayName = "Outhouse";
 		vehicleClass = "Fortifications";
 		transportMaxMagazines = 4;
-		transportMaxWeapons = 1;
-		transportMaxBackpacks = 1;
-		constructioncount = 5;
+		transportMaxWeapons = 4;
+		transportMaxBackpacks = 4;
+		constructioncount = 2;
 		class transportmagazines
 		{
 			class _xx_ItemTrashToiletpaper
@@ -2325,7 +2325,7 @@ class Citizen1;	// External class reference
 	class Land_Shed_M01;
 	class StorageShed_DZ: Land_Shed_M01
 	{
-		armor = 400;
+		armor = 800;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		displayName = "Storage Shed";
@@ -2333,7 +2333,7 @@ class Citizen1;	// External class reference
 		transportMaxMagazines = 400;
 		transportMaxWeapons = 40;
 		transportMaxBackpacks = 20;
-		constructioncount = 5;
+		constructioncount = 6;
 	};
 	class Fence_corrugated_plate;
 	class Fence_corrugated_DZ: Fence_corrugated_plate
@@ -2352,7 +2352,7 @@ class Citizen1;	// External class reference
 		scope = 2;
 		destrType = "DestructBuilding"; 
 		offset[] = {0,2.5,1.3};
-		armor = 200;
+		armor = 400;
 		displayName = "Wooden Shack";
 		vehicleClass = "Fortifications";
 		transportMaxMagazines = 100;
@@ -2403,7 +2403,7 @@ class Citizen1;	// External class reference
 		model = "\ca\structures\Wall\Gate_wood2_5";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		// armor = 100;
+		armor = 100;
 		displayName = "Wood Panel";
 		vehicleClass = "Fortifications";
 		

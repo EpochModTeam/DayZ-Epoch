@@ -208,7 +208,7 @@ if (_hasrequireditem) then {
 
 		cutText [format["Placing %1, move to cancel.",_text], "PLAIN DOWN"];
 		
-		_limit = 5;
+		_limit = 3;
 
 		if(isNumber (configFile >> "CfgVehicles" >> _classname >> "constructioncount")) then {
 			_limit = getNumber(configFile >> "CfgVehicles" >> _classname >> "constructioncount");

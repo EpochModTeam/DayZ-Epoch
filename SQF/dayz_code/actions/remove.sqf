@@ -23,7 +23,7 @@ _isDestructable = _obj isKindOf "BuiltItems";
 _isWreck = _objType in DZE_isWreck;
 _isRemovable = _objType in DZE_isRemovable;
 
-_limit = 5;
+_limit = 3;
 if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
 	_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
 };
@@ -133,7 +133,7 @@ if(_brokenTool) then {
 	} else {
 		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
 	};
-	if([player,_removeTool,1] call BIS_fnc_invRemove) then {
+	if(([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {
 		cutText [format["Tool (%1) broke cannot remove %2.",_removeTool,_objType], "PLAIN DOWN"];
 	};
 };

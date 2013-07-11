@@ -16,7 +16,8 @@ _tagList = player getVariable ["tagList", []];
 			
 			// Add sphere to everyone
 			_position = [0,0,0];
-			_tag = "Sign_sphere10cm_EP1" createVehicleLocal _position;
+			//_tag = "Sign_sphere10cm_EP1" createVehicleLocal _position;
+			_tag = "BeltBuckle_DZE" createVehicleLocal _position;
 			_tag attachTo [_x,[0,0,0],"lwrist"]; // Pelvis
 			_tag setVariable ["belongsTo", _rcharID];	
 
@@ -32,6 +33,8 @@ _tagList = player getVariable ["tagList", []];
 	};
 } forEach playableUnits;
 
+
+
 // keep track of tags created
 _newTagList = [];
 {
@@ -44,56 +47,61 @@ _newTagList = [];
 	
 	
 	// friendly player disconnected
-	if (!(isPlayer _player) or (vehicle _player != _player)) then {
+	if (!(isPlayer _player)) then {
 		deleteVehicle _tag;
 	} else {
 		
-		if (_status != "green") then {	
-			//diag_log format["CHECK IF FRIENDLY: %1", _player];
-			_rcharID = _player getVariable ["characterID", "0"];
-			_rfriendlies = _player getVariable ["friendlies", []];
-			_rfriendlyTo = _player getVariable ["friendlyTo", []];
-		
-			if ((_rcharID in _friendlies) and (_charID in _rfriendlies)) then {
-				if (!(_charID in _rfriendlyTo)) then {
-
-					// diag_log format["IS FRIENDLY: %1", _player];
-				
-					_rfriendlyTo set [count _rfriendlyTo, _charID];
-					_player setVariable ["friendlyTo", _rfriendlyTo, true];
-					titleText [format["You and %1 are now tagged as friendlies.", (name _player)], "PLAIN DOWN"];
-				
-					_statusNew = "green";
-					_tagColor = "#(argb,8,8,3)color(0,1,0,0.5,ca)";
-					// light green #(argb,8,8,3)color(0.04,0.86,0.1,0.5,ca)
-				};
-
-			} else {
-		
-				// Get humanity 
-				_humanity = _player getVariable ["humanity",0];  
-				
-				if(_humanity < -5000) then {
-					_statusNew = "red";
-					_tagColor = "#(argb,8,8,3)color(1,0,0,0.5,ca)";
-				} else {
-					if(_humanity > 5000) then {
-						_statusNew = "blue";
-						_tagColor = "#(argb,8,8,3)color(0,0,1,0.5,ca)";
-					};
-				};
-
-				// diag_log format["CHECK HUMANITY: %1 %2", _player, _humanity];
+		if(!(vehicle _player == _player)) then {
+			
+			if (_status != "vehicle") then {
+				_tag setobjecttexture [0,_tagColor];
+				_status = "vehicle";
 			};
 
-			
-			if(_statusNew != _status) then {
-				//diag_log format["STATUS CHANGED: %1 != %2", _statusNew, _status];
-				// Set texture based on humanity or friendship status
-				_tag setobjecttexture [0,_tagColor];
-				_status = _statusNew;
-			}; 
+		} else {
 
+			if (_status != "green") then {	
+				//diag_log format["CHECK IF FRIENDLY: %1", _player];
+				_rcharID = _player getVariable ["characterID", "0"];
+				_rfriendlies = _player getVariable ["friendlies", []];
+				_rfriendlyTo = _player getVariable ["friendlyTo", []];
+			
+				if ((_rcharID in _friendlies) and (_charID in _rfriendlies)) then {
+					if (!(_charID in _rfriendlyTo)) then {
+						// diag_log format["IS FRIENDLY: %1", _player];
+						_rfriendlyTo set [count _rfriendlyTo, _charID];
+						_player setVariable ["friendlyTo", _rfriendlyTo, true];
+						titleText [format["You and %1 are now tagged as friendlies.", (name _player)], "PLAIN DOWN"];
+					};
+	
+					_statusNew = "green";
+					_tagColor = "#(argb,8,8,3)color(0,1,0,0.5,ca)";
+						
+				} else {
+			
+					// Get humanity 
+					_humanity = _player getVariable ["humanity",0];  
+					
+					if(_humanity < -5000) then {
+						_statusNew = "red";
+						_tagColor = "#(argb,8,8,3)color(1,0,0,0.5,ca)";
+					} else {
+						if(_humanity > 5000) then {
+							_statusNew = "blue";
+							_tagColor = "#(argb,8,8,3)color(0,0,1,0.5,ca)";
+						};
+					};
+	
+					// diag_log format["CHECK HUMANITY: %1 %2", _player, _humanity];
+				};
+	
+				if(_statusNew != _status) then {
+					//diag_log format["STATUS CHANGED: %1 != %2", _statusNew, _status];
+					// Set texture based on humanity or friendship status
+					_tag setobjecttexture [0,_tagColor];
+					_status = _statusNew;
+				}; 
+			};
 		};
 		// diag_log format["CHECK STATUS: %1 != %2", _statusNew, _status];
 		_newTagList set [count _newTagList, [_player, _tag, _status]];

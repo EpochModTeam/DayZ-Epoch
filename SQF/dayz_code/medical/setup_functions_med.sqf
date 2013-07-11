@@ -254,5 +254,6 @@ fnc_usec_recoverUncons = {
 	sleep 1;
 	r_player_cardiac = false;
 	r_player_handler1 = false;
-	// player switchMove "AmovPpneMstpSnonWnonDnon_healed";
+	
+	player switchMove "AmovPpneMstpSnonWnonDnon_healed";
 };

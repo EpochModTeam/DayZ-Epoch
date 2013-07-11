@@ -828,7 +828,7 @@ class CfgMagazines {
 			{
 				text = "Craft Wooden Shed";
 				script = "spawn player_craftItem;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"wooden_shed_kit",1}};
 				input[] = {{"bulk_empty",1},{"ItemCorrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
@@ -837,19 +837,19 @@ class CfgMagazines {
 			{
 				text = "Craft Outhouse";
 				script = "spawn player_craftItem1;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"outhouse_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",1},{"PartWoodPlywood",5},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
 			};
 			class Crafting2
 			{
 				text = "Craft Storage Shed";
 				script = "spawn player_craftItem2;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"storage_shed_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",5},{"PartWoodPlywood",2},{"PartWoodLumber",3}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
 			};
 		};
 	};
@@ -879,7 +879,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"rusty_gate_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemPole",6},{"PartGeneric",3},{"ItemTankTrap",1}};
+				input[] = {{"bulk_empty",1},{"ItemPole",3},{"ItemTankTrap",1}};
 			};
 			class Crafting2
 			{
@@ -1088,7 +1088,7 @@ class CfgMagazines {
 			{
 				text = "$STR_ACTIONS_BUILD";
 				script = "spawn player_build;";
-				require[] = {"ItemEtool","ItemToolbox"};
+				require[] = {"ItemToolbox"};
 				create = "WorkBench_DZ";
 				needNearby[] = {"none"};
 			};
