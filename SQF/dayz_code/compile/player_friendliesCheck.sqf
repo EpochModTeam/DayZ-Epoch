@@ -16,8 +16,8 @@ _tagList = player getVariable ["tagList", []];
 			
 			// Add sphere to everyone
 			_position = [0,0,0];
-			//_tag = "Sign_sphere10cm_EP1" createVehicleLocal _position;
-			_tag = "BeltBuckle_DZE" createVehicleLocal _position;
+			_tag = "Sign_sphere10cm_EP1" createVehicleLocal _position;
+			//_tag = "BeltBuckle_DZE" createVehicleLocal _position;
 			_tag attachTo [_x,[0,0,0],"lwrist"]; // Pelvis
 			_tag setVariable ["belongsTo", _rcharID];	
 

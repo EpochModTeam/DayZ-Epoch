@@ -2,7 +2,8 @@ private ["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies
 _type = _this select 0;
 //_Keepspawning = _this select 1;
 _isAir = vehicle player iskindof "Air";
-_inVehicle = (vehicle player != player);
+//_inVehicle = (vehicle player != player);
+_inVehicle = ((vehicle player != player) AND ((speed player > 10) OR _isAir));
 _dateNow = (DateToNumber date);
 _maxZombies = dayz_maxLocalZombies;
 _maxWildZombies = 3;
