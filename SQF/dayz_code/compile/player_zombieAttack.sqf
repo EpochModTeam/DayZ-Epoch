@@ -7,6 +7,8 @@ _targets = _unit getVariable ["targets",[]];
 
 if (!dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith {};
 
+if ((speed _vehicle > 10)) exitWith {};
+
 //Do the attack
 if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
     _rnd = (round(random 4)) + 1;
@@ -83,8 +85,9 @@ if (_vehicle != player) then {
 		private[];
 		_tPos = (getPosASL _vehicle);
 		_zPos = (getPosASL _unit);
+		_onSameFloor = ((abs((_tPos select 2) - (_tPos select 2)) < 1.3));
 		_inAngle = [_zPos,(getdir _unit),50,_tPos] call fnc_inAngleSector;
-		if (_inAngle) then {
+		if (_onSameFloor and _inAngle) then {
 			//LOS check
 			_cantSee = [_unit,_vehicle] call dayz_losCheck;
 			if (!_cantSee) then {
