@@ -17,15 +17,9 @@ _targets = _lead nearTargets _range;
 	private["_obj","_dis"];
 	_obj = _x select 4;
 	_dis = _obj distance _lead;
-	if (_obj isKindOf "Man") then {
+	if (_obj isKindOf "Man" and ((speed _obj) < 15)) then {
 		if (!(_obj isKindOf "zZombie_Base") and !(_obj in _targetMen)) then {
 			//process man targets
-			_targetMen set [count _targetMen,_obj];
-			_targetDis set [count _targetDis,_dis];
-		};
-	} else {
-		if ((speed _obj < 25) and (_obj isKindOf "AllVehicles") and ((count crew _obj) > 0) and !(_obj in _targetMen)) then {
-			//process vehicle targets
 			_targetMen set [count _targetMen,_obj];
 			_targetDis set [count _targetDis,_dis];
 		};
@@ -34,7 +28,7 @@ _targets = _lead nearTargets _range;
 
 //Search for fires
 if (count _targetMen == 0) then {
-	_fires = nearestObjects [_lead,["Land_Fire","SmokeShell"],_range];
+	_fires = nearestObjects [_lead,["Land_Fire","SmokeShell","Generator_DZ"],_range];
 	{
 		private["_dis"];
 		_dis = _x distance _lead;
@@ -44,6 +38,14 @@ if (count _targetMen == 0) then {
 				if ((inflamed _x) or (_x isKindOf "SmokeShell")) then {
 					_targetMen set [count _targetMen,_x];
 					_targetDis set [count _targetDis,_dis];
+				} else {
+					if (_x isKindOf "Generator_DZ") then {
+						// check if Generator_DZ is running within 30 meters
+						if (alive _x and (_x getVariable ["GeneratorRunning", false])) then {
+							_targetMen set [count _targetMen,_x];
+							_targetDis set [count _targetDis,_dis];
+						};
+					};
 				};
 			};
 		};
