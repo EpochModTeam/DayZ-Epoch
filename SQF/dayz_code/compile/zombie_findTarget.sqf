@@ -40,7 +40,6 @@ if (count _targetMen == 0) then {
 					_targetDis set [count _targetDis,_dis];
 				} else {
 					if (_x isKindOf "Generator_DZ") then {
-						// check if Generator_DZ is running within 30 meters
 						if (alive _x and (_x getVariable ["GeneratorRunning", false])) then {
 							_targetMen set [count _targetMen,_x];
 							_targetDis set [count _targetDis,_dis];
