@@ -15,7 +15,8 @@ class Mission
 		"sigisolda",
 		"suv_col",
 		"csj_gyroac",
-		"map_eu"
+		"map_eu",
+		"jetskiyanahuiaddon"
 	};
 	addOnsAuto[]=
 	{
