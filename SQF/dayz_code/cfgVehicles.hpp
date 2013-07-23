@@ -753,6 +753,7 @@ class Citizen1;	// External class reference
 		scope = 2; 
 		side = 2; 
 		faction = "PMC_BAF";
+		enableGPS = 1;
 		crew = ""; 
 		typicalCargo[] = {}; 
 		transportMaxWeapons = 20; 
