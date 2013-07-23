@@ -128,12 +128,12 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "Remove 1 10oz Gold";
+				text = "Add 10 10oz Gold";
 				script = "spawn player_craftItem1;";
 				neednearby[] = {};
 				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcaseEmpty",1}};
-				input[] = {{"ItemBriefcase10oz",1}};
+				output[] = {{"ItemBriefcase100oz",1}};
+				input[] = {{"ItemBriefcaseEmpty",1},{"ItemGoldBar10oz",10}};
 			};
 		};
 	};	
