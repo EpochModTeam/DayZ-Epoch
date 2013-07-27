@@ -56,16 +56,6 @@ while {true} do {
 		_timeOut = _timeOut + 1;
 	};
 	
-	_humanity = player getVariable ["humanity",0];
-	if (_timeOut > 150) then {
-		_timeOut = 0;
-		if (_humanity < 2500) then {
-			_humanity = _humanity + 150;
-			_humanity = _humanity min 2500;
-			player setVariable ["humanity",_humanity,true];
-		};
-	};
-
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
 	if (_lastUpdate > 8) then {
