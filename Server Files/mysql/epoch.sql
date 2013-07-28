@@ -294,6 +294,7 @@ INSERT INTO `server_traders` VALUES(176, 'Damsel3', 17, 'friendly', '', 'General
 --
 -- Table structure for table `Traders_DATA`
 --
+
 DROP TABLE IF EXISTS `Traders_DATA`;
 CREATE TABLE IF NOT EXISTS `Traders_DATA` (
   `id` int(8) NOT NULL AUTO_INCREMENT,
@@ -306,7 +307,11 @@ CREATE TABLE IF NOT EXISTS `Traders_DATA` (
   `afile` varchar(64) NOT NULL DEFAULT 'trade_items',
   PRIMARY KEY (`id`),
   UNIQUE KEY `item` (`item`,`tid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7191 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7233 ;
+
+--
+-- Dumping data for table `Traders_DATA`
+--
 
 INSERT INTO `Traders_DATA` VALUES(1351, '["ItemJerrycan",1]', 11, '[4,"ItemSilverBar",1]', '[2,"ItemSilverBar",1]', 0, 11, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(1352, '["ItemJerrycanEmpty",1]', 10, '[5,"ItemCopperBar",1]', '[3,"ItemCopperBar",1]', 0, 11, 'trade_items');
@@ -5103,7 +5108,16 @@ INSERT INTO `Traders_DATA` VALUES(7181, '["LandRover_TK_CIV_EP1",2]', 1, '[2,"It
 INSERT INTO `Traders_DATA` VALUES(7188, '["LandRover_CZ_EP1",2]', 1, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 658, 'trade_any_vehicle');
 INSERT INTO `Traders_DATA` VALUES(7189, '["LandRover_TK_CIV_EP1",2]', 1, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 658, 'trade_any_vehicle');
 INSERT INTO `Traders_DATA` VALUES(7190, '["1Rnd_HE_M203",1]', 1, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 529, 'trade_items');
-
+INSERT INTO `Traders_DATA` VALUES(7191, '["ItemFuelBarrel",1]', 1, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 509, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7192, '["ItemFuelBarrelEmpty",1]', 1, '[1,"ItemSilverBar10oz",1]', '[5,"ItemSilverBar",1]', 0, 509, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7201, '["ItemFuelBarrel",1]', 1, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 531, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7202, '["ItemFuelBarrelEmpty",1]', 1, '[1,"ItemSilverBar10oz",1]', '[5,"ItemSilverBar",1]', 0, 531, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7211, '["ItemFuelBarrel",1]', 1, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 664, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7212, '["ItemFuelBarrelEmpty",1]', 1, '[1,"ItemSilverBar10oz",1]', '[5,"ItemSilverBar",1]', 0, 664, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7221, '["ItemFuelBarrel",1]', 1, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 677, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7222, '["ItemFuelBarrelEmpty",1]', 1, '[1,"ItemSilverBar10oz",1]', '[5,"ItemSilverBar",1]', 0, 677, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7231, '["ItemFuelBarrel",1]', 1, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 682, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7232, '["ItemFuelBarrelEmpty",1]', 1, '[1,"ItemSilverBar10oz",1]', '[5,"ItemSilverBar",1]', 0, 682, 'trade_items');
 
 -- --------------------------------------------------------
 
@@ -5120,7 +5134,7 @@ CREATE TABLE IF NOT EXISTS `trader_items` (
   `afile` varchar(128) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `itemsntypes` (`classname`,`type`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=765 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=767 ;
 
 --
 -- Dumping data for table `trader_items`
@@ -5565,6 +5579,8 @@ INSERT INTO `trader_items` VALUES(761, 'ItemSodaR4z0r', 1, 'Drink', 'trade_items
 INSERT INTO `trader_items` VALUES(762, 'FoodMRE', 1, 'Food', 'trade_items');
 INSERT INTO `trader_items` VALUES(763, 'FoodPistachio', 1, 'Food', 'trade_items');
 INSERT INTO `trader_items` VALUES(764, 'FoodNutmix', 1, 'Food', 'trade_items');
+INSERT INTO `trader_items` VALUES(765, 'ItemFuelBarrel', 1, 'Car Parts', 'trade_items');
+INSERT INTO `trader_items` VALUES(766, 'ItemFuelBarrelEmpty', 1, 'Car Parts', 'trade_items');
 
 -- --------------------------------------------------------
 
