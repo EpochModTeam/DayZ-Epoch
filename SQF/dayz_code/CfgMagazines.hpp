@@ -1090,7 +1090,6 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WorkBench_DZ";
-				needNearby[] = {"none"};
 			};
 		};
 	};
@@ -1513,7 +1512,6 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Generator_DZ";
-				needNearby[] = {"dayz_fuelpumparray"};
 			};
 		};
 	};
@@ -1534,7 +1532,6 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "FuelPump_DZ";
-				needNearby[] = {"dayz_fuelsources"};
 			};
 		};
 	};
@@ -1618,7 +1615,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"stick_fence_kit",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodPile",6}};
+				input[] = {{"PartWoodPile",6}};
 				
 			};
 			
@@ -1705,24 +1702,6 @@ class CfgMagazines {
 			
 		};
 	};
-	class PartWoodShed: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Wooden Shack";
-		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-		descriptionShort = "Wooden Shack: A crafted object that holds some items/weapons/backpacks.";
-		class ItemActions {
-			class Build {
-				text = "Build Wood Shack";
-				script = "spawn player_build;";
-				require[] = {"ItemToolbox"};
-				create = "WoodShack_DZ";
-			};
-		};
-	};
 	class PartVRotor: CA_Magazine
 	{
 		scope = 2;
@@ -1771,7 +1750,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemCanvas",1}};
-				input[] = {{"SkinBase",4}};
+				input[] = {{"SkinBase",2}};
 			};
 			class Crafting1
 			{
@@ -1780,7 +1759,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemBandage",2}};
-				input[] = {{"SkinBase",1}};
+				input[] = {{"SkinBase",1},{"ItemTrashToiletpaper",1}};
 			};
 		};
 	};
@@ -2062,7 +2041,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
 			};
 			class Crafting1
 			{
@@ -2071,7 +2050,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
 			};
 		};
 	};
@@ -2097,7 +2076,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
 			};
 			class Crafting1
 			{
@@ -2106,7 +2085,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
 			};
 		};
 	};
@@ -2131,7 +2110,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
 			};
 			class Crafting1
 			{
@@ -2140,7 +2119,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",4},{"ItemPole",4}};
+				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
 			};
 		};
 	};
@@ -2174,7 +2153,7 @@ class CfgMagazines {
 			{
 				text = "Craft Sandbag Nest";
 				script = "spawn player_craftItem1;";
-				neednearby[] = {};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"sandbag_nest_kit",1}};
 				input[] = {{"bulk_empty",1},{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
@@ -2200,7 +2179,7 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = "H-barrier cube";
-		model = "\dayz_equip\models\sandbags.p3d";
+		model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
 		
@@ -2210,6 +2189,35 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemEtool"};
 				create = "Land_HBarrier1_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Triple H-barrier";
+				script = "spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"ItemSandbagExLarge",1}};
+				input[] = {{"ItemSandbagLarge",3}};
+			};
+		};
+	};
+
+	
+	class ItemSandbagExLarge : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "3 x H-barrier cube";
+		model = "\dayz_equip\models\sandbags.p3d"; // TODO model
+		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
+		descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
+		
+		class ItemActions {
+			class Build {
+				text = "Build Triple H-barrier";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool"};
+				create = "Land_HBarrier3_DZ";
 			};
 		};
 	};

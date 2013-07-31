@@ -1,4 +1,4 @@
-1 "" !="VaultStorageLocked" !="Hedgehog_DZ" !="Sandbag1_DZ" !="Fort_RazorWire" !="WoodGate_DZ" !="Land_HBarrier1_DZ"
+1 "" !="VaultStorageLocked" !="Hedgehog_DZ" !="Sandbag1_DZ" !="Fort_RazorWire" !="WoodGate_DZ" !="Land_HBarrier1_DZ" !="Land_HBarrier3_DZ"
 5 "Offroad_DSHKM_Gue"
 5 "Old_moto_TK_Civ_EP1"
 5 "MMT_Civ"

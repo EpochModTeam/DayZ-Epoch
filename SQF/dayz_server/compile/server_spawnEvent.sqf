@@ -22,31 +22,54 @@ epoch_eventIsAny = {
 	_boolReturn
 };
 
+zero_cleanDead = diag_tickTime;
+zero_cleanLoot = diag_tickTime;
+
 while {true} do {
+	
 	// Find current time from server
 	_key = "CHILD:307:";
 	_result = _key call server_hiveReadWrite;
 	_outcome = _result select 0;
 	if(_outcome == "PASS") then {
-		_date = _result select 1; 
-		if (EventSchedulerLastTime != str(_date)) then {
-			EventSchedulerLastTime = str(_date);
+		_date = _result select 1;
+		_datestr  = str(_date);
+		if (EventSchedulerLastTime != _datestr) then {
+			
+			// This is only ran every minute.
+			EventSchedulerLastTime = _datestr;
+
 			// diag_log ("EVENTS: Local Time is: " + str(_date));
 			{
-				
-				_proceed = false;
-				for "_i" from 0 to 4 do {
-					_proceed = [(_x select _i),(date select _i)] call epoch_eventIsAny;
+				if([(_x select 0),(date select 0)] call epoch_eventIsAny) then {
+					if([(_x select 1),(date select 1)] call epoch_eventIsAny) then {
+						if([(_x select 2),(date select 2)] call epoch_eventIsAny) then {
+							if([(_x select 3),(date select 3)] call epoch_eventIsAny) then {
+								if([(_x select 4),(date select 4)] call epoch_eventIsAny) then {
+									// EXECUTE SCRIPT
+									diag_log ("RUNNING EVENT: " + (_x select 5) + " on " + EventSchedulerLastTime);
+									_handle = [] execVM "\z\addons\dayz_server\modules\" + (_x select 5) + ".sqf";
+								};
+							};
+						};
+					};
 				};
-				if(_proceed) then {
-					_xaction = _x select 5;
-					// EXECUTE SCRIPT
-					diag_log ("RUNNING EVENT: " + _xaction + " on " + EventSchedulerLastTime);
-					_handle = [] execVM "\z\addons\dayz_server\modules\" + _xaction + ".sqf";
-				};
-				sleep 0.03;
-
 			} forEach EpochEvents;
+
+			_time = diag_tickTime;
+
+			// perform cleanup here
+			if ((_time - zero_cleanDead) > 600) then
+			{
+				call server_cleanDead;
+				zero_cleanDead = _time;
+			};
+
+			if ((_time - zero_cleanLoot) > 1800) then
+			{
+				call server_cleanLoot;
+				zero_cleanLoot = _time;
+			};
 		};
 	};
 	sleep 5;

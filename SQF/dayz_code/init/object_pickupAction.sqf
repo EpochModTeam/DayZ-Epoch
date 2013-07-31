@@ -57,6 +57,6 @@ actionMonitor = {
 if (_classname == "WoodenArrow") then {
 	[_holder,_type,_classname,_name] spawn actionMonitor;
 } else {
-	null = _holder addAction [format[(localize "STR_DAYZ_CODE_1"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
+	_holder addAction [format[(localize "STR_DAYZ_CODE_1"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true, "", "DZE_CanPickup"];
 	player reveal _holder;
 };

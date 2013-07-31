@@ -2179,6 +2179,56 @@ class Citizen1;	// External class reference
 		constructioncount = 4;
 		removeoutput[] = {{"ItemSandbagLarge",1}};
 	};
+	class Land_HBarrier3_DZ : BuiltItems { 
+		model = "\ca\misc2\HBarrier3.p3d"; 
+		icon = "\Ca\misc2\data\Icons\icon_hescoBarrier3_ca.paa"; 
+		mapSize = 3.5; 
+		displayName = "H-barrier (short)"; 
+		GhostPreview = "Land_HBarrier3ePreview"; 
+		scope = 2; 
+		animated = 0; 
+		vehicleClass = "Fortifications"; 
+		typicalCargo[] = {}; 
+		irTarget = 0; 
+		accuracy = 0.3; 
+		transportAmmo = 0; 
+		transportRepair = 0; 
+		transportFuel = 0; 
+		destrType = "DestructBuilding"; 
+		armor = 500; 
+		coefInside = 0.5; 
+		coefInsideHeur = 0.8; 
+		cost = 0; 
+		picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
+		offset[] = {0,2.5,0};
+		constructioncount = 8;
+		removeoutput[] = {{"ItemSandbagExLarge",1}};
+	};
+		
+	class SandNest_DZ : BuiltItems { 
+		scope = 2; 
+		model = "\ca\Misc_E\fortified_nest_small_ep1"; 
+		displayName = "Sandbag Nest";
+		expansion = 1; 
+		icon = "\Ca\misc3\data\Icons\icon_fortNestSmall_ca.paa"; 
+		mapSize = 5; 
+		armor = 500; 
+		irTarget = 0; 
+		vehicleClass = "Fortifications"; 
+		GhostPreview = "Land_fortified_nest_smallPreview"; 
+		animated = 0; 
+		simulation = "house"; 
+		accuracy = 0.2; 
+		cost = 0; 
+		ladders[] = {}; 
+		TextPlural = "Houses"; 
+		TextSingular = "House"; 
+		nameSound = "obj_house"; 
+		offset[] = {0,3,1};
+		removeoutput[] = {{"sandbag_nest_kit",1}};
+	};
+
+
 	
 	// PLAYER BUILDINGS
 	// class Plastic_Pole_EP1;
@@ -2281,17 +2331,7 @@ class Citizen1;	// External class reference
 		vehicleClass = "Fortifications";
 		removeoutput[] = {{"forest_large_net_kit",1}};
 	};
-	
-	class Land_fortified_nest_small_EP1;
-	class SandNest_DZ: Land_fortified_nest_small_EP1
-	{
-		armor = 400;
-		scope = 2;
-		offset[] = {0,3,1};
-		displayName = "Sandbag Nest";
-		vehicleClass = "Fortifications";
-		removeoutput[] = {{"sandbag_nest_kit",1}};
-	};
+
 	class Land_Wall_Gate_Ind1_L;
 	class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 	{

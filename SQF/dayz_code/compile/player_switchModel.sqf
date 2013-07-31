@@ -87,11 +87,11 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	_newUnit 	setPosATL _position;
 	_newUnit 	setDir _dir;
 
-//Clear New Character
+	//Clear New Character
 	{_newUnit removeMagazine _x;} forEach  magazines _newUnit;
 	removeAllWeapons _newUnit;	
 
-//Equip New Charactar
+	//Equip New Charactar
 	{
 		if (typeName _x == "ARRAY") then {_newUnit addMagazine [_x select 0,_x select 1] } else { _newUnit addMagazine _x };
 		//sleep 0.05;

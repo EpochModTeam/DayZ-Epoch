@@ -1,3 +1,7 @@
+/*
+	DayZ Base Building
+	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+*/
 private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_isBuilding","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_buildings","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole"];
 
 if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
@@ -18,14 +22,11 @@ if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = f
 _item =			_this;
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
-
-_needNearby =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "needNearby");
-
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
-_isWorkBench = (_classname == "WorkBench_DZ");
 
 _distance = 30;
 _needText = "Plot Pole";
@@ -34,36 +35,24 @@ if(_isPole) then {
 	_distance = 45;
 };
 
-if((count _needNearby) == 0) then {
-	_needNearby = ["Plastic_Pole_EP1_DZ"];
-} else {
-	if("dayz_fuelpumparray" in _needNearby) then {
-		_needNearby = dayz_fuelpumparray;
-		_needText = "Fuel Pump";
-	};
-	if("dayz_fuelsources" in _needNearby) then {
-		_needNearby = dayz_fuelsources;
-		_needText = "Fuel Tanks";
-	};
-};
 
 // check for near plot
-_findNearestPoles = nearestObjects [(vehicle player), _needNearby, _distance];
+_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], _distance];
 _findNearestPole = [];
 
-{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
+{
+	if (alive _x) then {
+		_findNearestPole set [(count _findNearestPole),_x];
+	};
+} foreach _findNearestPoles;
+
 _IsNearPlot = count (_findNearestPole);
 
 // If item is plot pole and another one exists within 45m
 if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["Cannot build plot pole within 45m of an existing plot." , "PLAIN DOWN"]; };
 
 if(_IsNearPlot == 0) then {
-
-	// Allow building of plot
-	if(_isPole or _isWorkBench) then {
-		_canBuildOnPlot = true;
-	};
-	
+	_canBuildOnPlot = true;
 } else {
 	// Since there are plots nearby we check for ownership and then for friend status
 
@@ -121,7 +110,22 @@ if (_hasrequireditem) then {
 	_position = player modeltoworld _offset;
 	_position = [(_position select 0),(_position select 1), 0];
 
-	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+	
+	if(isText (configFile >> "CfgVehicles" >> _classname >> "GhostPreview")) then {
+		_ghost = getText(configFile >> "CfgVehicles" >> _classname >> "GhostPreview");
+	};
+
+	// if ghost preview available use that instead
+	if(_ghost != "") then {
+		
+		_classnametmp = _classname;
+		_classname = _ghost;
+		_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+		_classname = _classnametmp;
+
+	} else {
+		_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+	};
 
 	_object setDir _dir;
 

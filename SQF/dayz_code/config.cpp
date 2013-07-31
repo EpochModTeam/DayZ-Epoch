@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.1.5";
+		version = "1.0.1.6";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -493,6 +493,7 @@ class CfgBuildingLoot {
 		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_suit1","z_suit2","z_worker1","z_worker2","z_worker3","z_villager1","z_villager2","z_villager3"};
 		lootChance = 0;
 		lootPos[] = {};
+		lootPosSmall[] = {};
 		itemType[] = {};
 		itemChance[] = {};
 		hangPos[] = {};
@@ -544,8 +545,8 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
 			{ "PartWoodPile","magazine" },
-			{ "","clothes" },
-			{ "","specialclothes" },
+			{ "clothes","single" },
+			{ "specialclothes","single" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
 			{"MR43","weapon"},			
 	};
@@ -623,8 +624,8 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
 			{ "PartWoodPile","magazine" },
-			{ "","clothes" },
-			{ "","specialclothes" },
+			{ "clothes","single" },
+			{ "specialclothes","single" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
 			{ "ItemBriefcaseEmpty","magazine" },
 	};
@@ -898,7 +899,7 @@ class CfgBuildingLoot {
 			{ "NVGoggles","weapon" },
 			{ "AmmoBoxSmall_556","object" },
 			{ "AmmoBoxSmall_762","object" },
-			{ "","militaryclothes" },
+			{ "militaryclothes","single" },
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
@@ -953,7 +954,7 @@ class HeliCrash_No50s: Default {
 			{"NVGoggles","weapon"},
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
-			{ "","militaryclothes" },
+			{ "militaryclothes","single" },
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
@@ -1263,7 +1264,7 @@ class HeliCrash_No50s: Default {
 			{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
-			{ "","militaryclothes" },
+			{ "militaryclothes","single" },
 		};
 		itemChance[] =	{
 			0.011,
@@ -1435,7 +1436,7 @@ class HeliCrash_No50s: Default {
 	};
 	class Land_A_Hospital: hospital {
 		lootChance = 0.9;
-		lootPos[] = {{8.30273,-0.921875,-6.89966},{2.32813,-3.57422,-6.36466},{-1.40234,-4.0293,-6.36466},{0.807129,-1.16333,-7.33966},{-7.23389,-2.63647,-7.33966},{-16.3687,-2.40381,-7.33966},{-12.2847,-3.19604,-7.33966},{4.40674,-3.50513,-7.33966},{-3.2666,-0.925293,-7.33966},{6.85693,-2.75146,-7.33966},{11.0151,-3.95435,-7.33966},{16.8198,-4.71118,-7.33966},{-1.12793,3.78418,-7.44939},{12.7476,0.142822,3.29184},{10.2661,-1.21558,3.29184}};
+		lootPos[] = {{8.30273,-0.921875,-6.89966},{2.32813,-3.57422,-6.36466},{-1.40234,-4.0293,-6.36466},{0.807129,-1.16333,-7.33966},{-7.23389,-2.63647,-7.33966},{-16.3687,-2.40381,-7.33966},{-12.2847,-3.19604,-7.33966},{4.40674,-3.50513,-7.33966},{-3.2666,-0.925293,-7.33966},{6.85693,-2.75146,-7.33966},{11.0151,-3.95435,-7.33966},{16.8198,-4.71118,-7.33966},{-1.12793,3.78418,-7.44939},{12.7476,0.142822,3.29184},{10.2661,-1.21558,3.29184}};		
 	};
 	class Land_Panelak: Office {
 		lootPos[] = {{-2.76904,-6.26563,0.0714226},{-2.93896,-1.3916,0.0714226},{-5.42065,-3.13184,0.0714226},{-6.81128,-6.15527,0.0714221},{-4.00879,2.53027,0.0714226},{-0.730957,-3.20117,2.77144},{3.979,-7.08936,2.77144},{2.49609,2.93701,2.77144},{6.7373,1.63281,2.77144},{6.38525,-2.3916,2.77144},{6.80615,-5.77295,2.77144},{3.75122,-0.803711,2.77144},{-0.824219,1.86914,1.32865}};
@@ -1448,9 +1449,6 @@ class HeliCrash_No50s: Default {
 	};
 	class Land_Shed_wooden: Residential {
 		lootPos[] = {{1.26807,-0.361328,-1.29153},{-0.342773,1.0293,-1.29153}};
-	};
-	class Land_Misc_PowerStation: Industrial {
-		lootPos[] = {{4.09888,4.89746,-1.26743},{4.22827,-1.19873,-1.2681}};
 	};
 	class Land_HouseBlock_A1_1: Residential {
 		lootPos[] = {{-3.52881,0.158936,-4.74365},{-3.56152,-2.33484,-4.73106}};
@@ -1584,10 +1582,7 @@ class HeliCrash_No50s: Default {
 		maxRoaming = 3;
 		lootPos[] = {};
 	}; // Qty: 103
-	class Land_HouseV_1L2: Residential {
-		maxRoaming = 3;
-		lootPos[] = {};
-	}; // Qty: 101
+	
 	class Land_HouseV_1T: Residential {
 		maxRoaming = 3;
 		lootPos[] = {};
@@ -1679,7 +1674,7 @@ class HeliCrash_No50s: Default {
 	class Land_HouseV_2T1: HouseRoaming{};
 	class Land_houseV_2T2: HouseRoaming{};
 	class Land_HouseV_3I2: HouseRoaming{};
-	class Land_HouseV_3I3: HouseRoaming{};
+	
 	class Land_HouseBlock_A1: HouseRoaming{};
 	class Land_HouseBlock_A1_2: HouseRoaming{};
 	class Land_HouseBlock_A2: HouseRoaming{};
@@ -1720,8 +1715,21 @@ class HeliCrash_No50s: Default {
 		maxRoaming = 4;
 	};
 
+	class Land_HouseV_1L2: Residential {
+		maxRoaming = 3;
+		lootPos[] = {};
+	}; // Qty: 101
 
-	
+	class Land_Misc_PowerStation: Industrial {
+		lootPos[] = {{4.09888,4.89746,-1.26743},{4.22827,-1.19873,-1.2681}};
+	};
+
+	class Land_HouseV_3I3: HouseRoaming{};
+
+	class Land_Mil_Guardhouse: Military {
+		lootPos[] = {{-2.53271,3.17871,-1.66939},{-2.39014,0.878906,-1.66939}};
+	};
+
 	// DAYZ AMP More buildings
 	class Mass_grave_DZ: HouseRoaming {	
 		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3","z_doctor","z_soldier_pilot","z_soldier_heavy"};
@@ -3207,9 +3215,7 @@ class HeliCrash_No50s: Default {
 	class land_st_vez: MilitarySpecial {
 		lootPos[] = {{-5.56445,4.23975,-3.31476},{-5.05566,-3.17627,-3.31476},{4.12109,3.92822,2.42732},{-1.73389,2.68896,6.40834},{-4.23584,1.29736,6.40834},{-3.80322,-1.09277,6.40834},{0.430664,1.31787,6.40834},{-2.45166,-2.16748,6.40834},{-0.608398,-0.57666,-11.095},{-2.08691,1.10303,-11.0649},{0.259277,-3.89697,-3.31476},{3.9375,3.30957,-8.50825}};
 	};
-	class Land_Mil_Guardhouse: Military {
-		lootPos[] = {{-2.53271,3.17871,-1.66939},{-2.39014,0.878906,-1.66939}};
-	};
+	
 	class Land_dulni_bs: Residential {
 		lootPos[] = {{2.76758,2.70068,-1.75205},{2.34668,-1.28564,-1.75205},{-0.478516,-2.64844,-1.75205},{-0.53418,3.11133,-1.75205}};
 	};

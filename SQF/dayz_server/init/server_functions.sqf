@@ -158,7 +158,14 @@ if(isnil "DynamicVehicleArea") then {
 // Get all buildings and roads only once TODO: set variables to nil after done if nessicary 
 MarkerPosition = getMarkerPos "center";
 RoadList = MarkerPosition nearRoads DynamicVehicleArea;
-BuildingList = MarkerPosition nearObjects ["House",DynamicVehicleArea];
+
+BuildingList = [];
+{
+	if (isClass (configFile >> "CfgBuildingLoot" >> (typeOf _x))) then
+	{
+		BuildingList set [count BuildingList,_x];
+	};
+} forEach (MarkerPosition nearObjects ["building",DynamicVehicleArea]);
 
 spawn_vehicles = {
 	private ["_weights","_isOverLimit","_isAbort","_counter","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_marker","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
@@ -476,4 +483,129 @@ dayz_recordLogin = {
 	private["_key"];
 	_key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
 	_key call server_hiveWrite;
+};
+
+///////////////
+// from dayzero
+///////////////
+server_Delete =
+{
+private["_body","_bodyGroup","_pos","_sfx"];
+
+	_body = _this select 0;
+	_bodyGroup = group _body;
+	_pos = getPosATL _body;
+	_sfx = nearestObject [_pos,"Sound_Flies"];
+
+	_body removeAllEventHandlers "HandleDamage";
+	_body removeAllEventHandlers "Killed";
+	_body removeAllEventHandlers "Fired";
+	_body removeAllEventHandlers "FiredNear";
+
+	deleteVehicle _body;
+	deleteGroup _bodyGroup;
+
+	if ((!isNull _sfx) and ((_sfx distance _pos) < 10)) then
+	{
+		deleteVehicle _sfx;
+	};
+};
+
+server_cleanDead =
+{
+private ["_deletedZombies","_deletedBodies","_timeStamp","_backpack","_magazines","_backpackMagazines"];
+
+	_deletedZombies = 0;
+	_deletedBodies = 0;
+
+	{
+		if (_x isKindOf "zZombie_Base") then
+		{
+			deleteVehicle _x;
+			_deletedZombies = _deletedZombies + 1;
+		}
+		else
+		{
+			_timeStamp = _x getVariable ["timeStamp",0];
+			//diag_log (format["CLEANUP: TIMESTAMP ON BODY: %1, VALUE: %2",(typeOf _x),_timeStamp]);
+			if (_timeStamp == 0) then
+			{
+				_x enableSimulation false;
+				_backpack = unitBackpack _x;
+
+				if (!isNull _backpack) then
+				{
+					_magazines = magazines _x;
+					_backpackMagazines = getMagazineCargo _backpack;
+					//diag_log (format["CLEANUP: UNIT HAS BACKPACK, MAG COUNT: %1 PACK COUNT: %2",(count _magazines),(count _backpackMagazines)]);
+					if ((count _magazines < 4) and (count _backpackMagazines < 3)) then
+					{
+						[_x] call server_Delete;
+						_deletedBodies = _deletedBodies + 1;
+					}
+					else
+					{
+						_x setVariable ["timeStamp",diag_tickTime];
+						//diag_log (format["CLEANUP: TIMESTAMPED BODY WITH BACKPACK: %1",_x]);
+					};
+				}
+				else
+				{
+					_magazines = magazines _x;
+					//diag_log (format["CLEANUP: UNIT HAS NO BACKPACK, MAG COUNT: %1",(count _magazines)]);
+					if (count _magazines < 4) then
+					{
+						[_x] call server_Delete;
+						_deletedBodies = _deletedBodies + 1;
+					}
+					else
+					{
+						_x setVariable ["timeStamp",diag_tickTime];
+						//diag_log (format["CLEANUP: TIMESTAMPED BODY WITHOUT BACKPACK: %1",_x]);
+					};
+				};
+			}
+			else
+			{
+				if ((diag_tickTime - _timeStamp) > 2400) then
+				{
+					[_x] call server_Delete;
+					_deletedBodies = _deletedBodies + 1;
+				};
+			};
+		};
+	} forEach allDead;
+
+	diag_log (format["CLEANUP: DELETED %1 PLAYERS AND %2 ZOMBIES",_deletedBodies,_deletedZombies]);
+};
+
+server_cleanLoot =
+{
+private ["_deletedLoot","_startTime","_looted","_objectPos","_noPlayerNear","_nearObj"];
+
+	_deletedLoot = 0;
+	_startTime = diag_tickTime;
+
+	{
+		_looted = (_x getVariable ["looted",-0.1]);
+		if (_looted != -0.1) then
+		{
+			_objectPos = getPosATL _x;
+			_noPlayerNear = {isPlayer _x} count (_objectPos nearEntities ["CAManBase",35]) == 0;
+
+			if (_noPlayerNear) then
+			{
+				_nearObj = nearestObjects [_objectPos,["ReammoBox","WeaponHolder","WeaponHolderBase"],((sizeOf (typeOf _x)) + 5)];
+				{
+					deleteVehicle _x;
+					_deletedLoot = _deletedLoot + 1;
+				} forEach _nearObj;
+				_x setVariable ["looted",-0.1,true];
+			};
+		};
+	} forEach BuildingList;
+
+	_endTime = diag_tickTime;
+
+	diag_log (format["CLEANUP: DELETED %1 ITEMS, RUNTIME: %2",_deletedLoot,(_endTime - _startTime)]);
 };

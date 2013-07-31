@@ -119,10 +119,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 							// Play sound
 							[player,"refuel",0,false] call dayz_zombieSpeak;
-							
-							// Add filled can
 							player addMagazine _canName;
-					
 							cutText [format["%1 has been drained for %2 litres of Fuel",_nameText,_canSize], "PLAIN DOWN"];
 	
 							call fnc_usec_medic_removeActions;

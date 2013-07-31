@@ -12,9 +12,6 @@ player setVariable ["temperature",dayz_temperatur,true];
 
 dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) +  (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
 
-	//player addMagazine "Hatchet_Swing";
-	//player addWeapon "MeleeHatchet";
-
 while {true} do {
 	//Initialize
 	_refObj = 	vehicle player;

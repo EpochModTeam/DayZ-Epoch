@@ -27,8 +27,9 @@ switch (_type) do {
 
 	};
 	case 1: {
-		player removeMagazine "ItemWaterbottle";
-		player addMagazine "ItemWaterbottleUnfilled";
+		if(([player,"ItemWaterbottle"] call BIS_fnc_invRemove) == 1) then {
+			player addMagazine "ItemWaterbottleUnfilled";
+		};
 		_handle setFSMVariable ["_thirst",0];	
 		player removeAction s_player_waterdog;
 		s_player_waterdog = -1;

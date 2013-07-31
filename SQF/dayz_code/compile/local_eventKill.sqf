@@ -13,7 +13,7 @@ if (local _zed) then {
 	_killer setVariable[_type,(_kills + 1),true];
 
 	//increase players humanity when zed killed
-	_humanity = player getVariable["humanity",0];
+	_humanity = _killer getVariable["humanity",0];
 	_humanity = _humanity + 5;
-	player setVariable["humanity",_humanity,true];
+	_killer setVariable["humanity",_humanity,true];
 };

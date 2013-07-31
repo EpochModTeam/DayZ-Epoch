@@ -124,7 +124,7 @@ if (!isDedicated) then {
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
 		// 120 sec timeout
-		while { _timeOut < 500 && !dayz_clientPreload && !dayz_authed } do {
+		while { _timeOut < 3000 && !dayz_clientPreload && !dayz_authed } do {
 
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
@@ -133,15 +133,16 @@ if (!isDedicated) then {
 				_control1 = _display displayctrl 8400;
 				_control2 = _display displayctrl 102;
 			};
+
 			if ( dayz_loadScreenMsg != "" ) then {
 				_control1 ctrlSetText dayz_loadScreenMsg;
 				dayz_loadScreenMsg = "";
 			};
-			_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
+			_control2 ctrlSetText format["%1",round(_timeOut*0.01)];
 			_timeOut = _timeOut + 1;
-			sleep 0.1;
+			sleep 0.01;
 		};
-			endLoadingScreen;
+		endLoadingScreen;
 		/*
 		if ( !dayz_clientPreload && !dayz_authed ) then {
 			diag_log "DEBUG: loadscreen guard ended with timeout.";
@@ -151,6 +152,22 @@ if (!isDedicated) then {
 		} else { diag_log "DEBUG: loadscreen guard ended."; };
 		*/
 	}; 
+
+	//
+	RunTime = 0;
+	TotalRuns = 0;
+	
+	fnc_dump = {
+		private["_code","_benchmark","_averageRunTime"];
+		_code = _this select 0;
+		_benchmark = _this select 1;
+		
+		RunTime = RunTime + _benchmark;
+		TotalRuns = TotalRuns + 1;
+		_averageRunTime = RunTime/TotalRuns;
+
+		diag_log format["%1 - %2 (%3 / %4)",_code,_benchmark,_averageRunTime,TotalRuns];
+	};
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];
 		_agent = 	_this select 0;
@@ -195,8 +212,8 @@ if (!isDedicated) then {
 		_agent = _this select 1;
 		_cantSee = true;
 		if (!isNull _target) then {
-			_tPos = eyePos _target;
-			_zPos = eyePos _agent;
+			_tPos = aimPos _target;
+			_zPos = aimPos _agent;
 			if ((count _tPos > 0) and (count _zPos > 0)) then {
 				_cantSee = terrainIntersectASL [_tPos, _zPos];
 				if (!_cantSee) then {
@@ -383,36 +400,6 @@ if (!isDedicated) then {
 		_vdir
 	};
 	
-	dayz_lowHumanity = {
-		private["_unit","_humanity","_delay"];
-		_unit = _this;
-		if ((_unit distance player) < 15) then {
-			_humanity = _unit getVariable["humanity",0];
-			dayz_heartBeat = true;
-			if (_humanity < -3000) then {
-				_delay = ((10000 + _humanity) / 5500) + 0.3;
-				playSound "heartbeat_1";
-				sleep _delay;
-			};
-			dayz_heartBeat = false;
-		};
-	};
-	/*
-	dayz_meleeMagazineCheck = {
-		private["_meleeNum","_magType","_wpnType"];
-		_wpnType = _this;
-		_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
-		_meleeNum = ({_x == _magType} count magazines player);
-		if (_meleeNum > 1) then {
-			if (player hasWeapon _wpnType) then {
-				_meleeNum = _meleeNum - 1;
-			};
-			for "_i" from 1 to _meleeNum do {
-				player removeMagazine _magType;
-			};
-		};
-	};
-	*/
 	dayz_originalPlayer =		player;
 };
 
@@ -459,6 +446,7 @@ if (!isDedicated) then {
 	world_isDay = 				{if ((daytime < (24 - dayz_sunRise)) and (daytime > dayz_sunRise)) then {true} else {false}};
 	player_humanityChange =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_humanityChange.sqf";
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot.sqf";
+	spawn_loot_small =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot_small.sqf";
 	// player_projectileNear = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
 	
 	player_sumMedical = {

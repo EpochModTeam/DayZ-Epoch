@@ -254,6 +254,7 @@ fnc_usec_recoverUncons = {
 	sleep 1;
 	r_player_cardiac = false;
 	r_player_handler1 = false;
-	
-	player switchMove "AmovPpneMstpSnonWnonDnon_healed";
+	if(animationState player != "AmovPpneMstpSnonWnonDnon_healed") then {
+		player switchMove "AmovPpneMstpSnonWnonDnon_healed";
+	};
 };

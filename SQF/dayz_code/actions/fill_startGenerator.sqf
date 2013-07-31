@@ -54,7 +54,6 @@ if (_finished) then {
 	if(!(_vehicle getVariable ["GeneratorFilled", false]) and ("ItemJerrycan" in magazines player)) then {
 	 
 		if(([player,"ItemJerrycan"] call BIS_fnc_invRemove) == 1) then {
-		
 			player addMagazine "ItemJerrycanEmpty";
 
 			// mark as once filled
