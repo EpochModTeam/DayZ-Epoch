@@ -13,8 +13,8 @@
 
 #define EAST 0 // (Russian)
 
-#include "basicdefines.hpp"
-#include "safegui.hpp"
+#include "Configs\basicdefines.hpp"
+#include "Configs\safegui.hpp"
 
 class CfgPatches {
 	class dayz_code {
@@ -219,17 +219,17 @@ class RscStructuredTextGUI: RscStructuredText
 };
 };
 //#include "CfgWorlds.hpp"
-#include "cfgMoves.hpp"
-#include "rscTitles.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgVoice.hpp"
-#include "CfgIdentities.hpp"
-#include "CfgFaces.hpp"
-#include "CfgMagazines.hpp"
-#include "cfgLoot.hpp"
-#include "CfgMarkers.hpp"
-#include "CfgAmmo.hpp"
+#include "Configs\cfgMoves.hpp"
+#include "Configs\rscTitles.hpp"
+#include "Configs\CfgVehicles.hpp"
+#include "Configs\CfgWeapons.hpp"
+#include "Configs\CfgVoice.hpp"
+#include "Configs\CfgIdentities.hpp"
+#include "Configs\CfgFaces.hpp"
+#include "Configs\CfgMagazines.hpp"
+#include "Configs\cfgLoot.hpp"
+#include "Configs\CfgMarkers.hpp"
+#include "Configs\CfgAmmo.hpp"
 
 class CfgSurvival {
 	class Inventory {
@@ -672,18 +672,19 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] = {
-			{ "WeaponHolder_ItemGenerator","object" },
+			{ "ItemGenerator","magazine" },
+			{"ItemFuelPump","magazine"},
 			{"ItemFuelBarrel","magazine"},
 			{ "","generic" },
 			{ "","trash" },
 			{ "","military" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
-			{ "WeaponHolder_PartVRotor","object" },
-			{ "WeaponHolder_ItemJerrycan","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
+			{ "PartVRotor","magazine" },
+			{ "ItemJerrycan","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
@@ -692,9 +693,10 @@ class CfgBuildingLoot {
 			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
-			0.001,
-			0.001,
-			0.188,
+			0.003,
+			0.003,
+			0.003,
+			0.18,
 			0.29,
 			0.04,
 			0.04,
@@ -719,18 +721,18 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] = {
-			{ "WeaponHolder_ItemGenerator","object" },
+			{ "ItemGenerator","magazine" },
 			{"ItemFuelPump","magazine"},
 			{ "","generic" },
 			{ "","trash" },
 			{ "","military" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
-			{ "WeaponHolder_PartVRotor","object" },
-			{ "WeaponHolder_ItemJerrycan","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
+			{ "PartVRotor","magazine" },
+			{ "ItemJerrycan","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
@@ -739,9 +741,9 @@ class CfgBuildingLoot {
 			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
-			0.001,
-			0.001,
-			0.188,
+			0.005,
+			0.005,
+			0.18,
 			0.29,
 			0.04,
 			0.04,
@@ -766,7 +768,7 @@ class CfgBuildingLoot {
 		lootChance = 0.5;
 		lootPos[] = {};
 		itemType[] = {
-			{ "WeaponHolder_ItemJerrycan","object" },
+			{ "ItemJerrycan","magazine" },
 			{ "","generic" },
 			{ "huntingrifle","weapon" },
 			{ "LeeEnfield","weapon" },
@@ -775,6 +777,7 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{ "PartWoodPile","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
+			{ "ItemShovel","weapon" },
 			{ "MR43","weapon" },
 			{"ItemFuelBarrel","magazine"},
 			{ "WeaponHolder_ItemMachete", "object"},
@@ -790,11 +793,12 @@ class CfgBuildingLoot {
 			0.21,
 			0.03,
 			0.085,
-			0.15,
+			0.10,
+			0.05,
 			0.06,
-			0.005,
+			0.001,
 			0.03,
-			0.01,
+			0.014,
 			0.02
 		};
 	};
@@ -1111,27 +1115,27 @@ class HeliCrash_No50s: Default {
 			{ "M16A2","weapon" },
 			{ "M16A2GL","weapon" },
 			{ "M9SD","weapon" },
-			{ "WeaponHolder_PartGeneric","object" },
+			{ "PartGeneric","magazine" },
 			{ "M4A1_Aim","weapon" },
 			{ "AKS_74_kobra","weapon" },
 			{ "AKS_74_U","weapon" },
 			{ "AK_47_M","weapon" },
 			{ "M24","weapon" },
 			{ "M1014","weapon" },
-			{ "WeaponHolder_ItemGenerator","object" },
+			{ "ItemGenerator","magazine" },
 			{ "M4A1","weapon" },
 			{ "M14_EP1","weapon" },
 			{ "UZI_EP1","weapon" },
 			{ "Remington870_lamp","weapon" },
 			{ "glock17_EP1","weapon" },
-			{ "WeaponHolder_PartWheel","object" },
+			{ "PartWheel","magazine" },
 			{ "MP5SD","weapon" },
 			{ "M4A3_CCO_EP1","weapon" },
 			{ "Binocular","weapon" },
 			{ "ItemFlashlightRed","military" },
 			{ "ItemKnife","military" },
 			{ "ItemGPS","weapon" },
-			{ "WeaponHolder_PartVRotor","object" },
+			{ "PartVRotor","magazine" },
 			
 			{"DZ_ALICE_Pack_EP1","object"}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
@@ -1976,11 +1980,11 @@ class HeliCrash_No50s: Default {
 			{ "ItemToolbox","weapon" },
 			{ "","generic" },
 			{ "","food" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
 			{ "WeaponHolder_ItemJerrycan","object" }
 		};
 		itemChance[] = {
@@ -2026,12 +2030,12 @@ class HeliCrash_No50s: Default {
 			{ "ItemToolbox","weapon" },
 			{ "","generic" },
 			{ "","food" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
-			{ "WeaponHolder_PartVRotor","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
+			{ "PartVRotor","magazine" },
 			{ "WeaponHolder_ItemJerrycan","object" }
 		};
 		itemChance[] = {
@@ -2848,11 +2852,10 @@ class HeliCrash_No50s: Default {
 			{-1.22461,-2.17969,2.28329},
 			{1.14844,-2.9707,2.28329}};
 	};
-	// Greenhouse - Also affects chernarus
+	// blue trailer - Also affects chernarus
 	class Land_Shed_M02: Industrial
 	{
-		lootPos[] = {
-			{-8.28613,-5.3457,-0.277144}};
+		//lootPos[] = {{-8.28613,-5.3457,-0.277144}};
 	};
 	class Land_sara_Domek_sedy: Residential
 	{
