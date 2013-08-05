@@ -1,10 +1,10 @@
 class ItemCrowbar: ItemCore
 	{
 		scope=2;
-		displayName=$STR_EQUIP_NAME_CROWBAR;
+		displayName="Crowbar";
 		model="\dayz_equip\models\crowbar.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
-		descriptionShort=$STR_EQUIP_DESC_CROWBAR;
+		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
 		class ItemActions
 		{
 			class Toolbelt

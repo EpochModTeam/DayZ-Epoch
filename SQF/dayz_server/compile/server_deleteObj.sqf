@@ -11,11 +11,15 @@ if (isServer) then {
 		//Send request
 		_key = format["CHILD:304:%1:",_id];
 		_key call server_hiveWrite;
+		#ifdef DZE_SERVER_DEBUG_HIVE
 		diag_log format["DELETE: Deleted by ID: %1",_id];
+		#endif
 	} else  {
 		//Send request
 		_key = format["CHILD:310:%1:",_uid];
 		_key call server_hiveWrite;
+		#ifdef DZE_SERVER_DEBUG_HIVE
 		diag_log format["DELETE: Deleted by UID: %1",_uid];
+		#endif
 	};
 };

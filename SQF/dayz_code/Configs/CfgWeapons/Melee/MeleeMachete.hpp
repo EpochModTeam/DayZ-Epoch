@@ -6,7 +6,7 @@ class MeleeMachete: MeleeWeapon
 		magazineReloadTime=0;
 		model="\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
-		displayName="$STR_EQUIP_NAME_MACHETE";
+		displayName="Machete";
 		droppeditem= "MeleeMachete";
 		magazines[]=
 		{
@@ -19,21 +19,23 @@ class MeleeMachete: MeleeWeapon
 		};
 		class ItemActions
 		{
-		/*
-			class Drop
+			class Toolbelt
 			{
-				text=$STR_ACTIONS_DROP;
-				script="spawn player_dropWeapon;";
+				text="Add to Toolbelt";
+				script="spawn player_addToolbelt;";
 				use[]=
 				{
-					"Machete_Swing"
+					"MeleeMachete"
+				};
+				output[]=
+				{
+					"ItemMachete"
 				};
 			};
-		*/
 		};
 		class Library
 		{
-			libTextDesc="$STR_EQUIP_DESC_MACHETE";
+			libTextDesc="";
 		};
-		descriptionShort="$STR_EQUIP_DESC_MACHETE";
+		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
 	};	

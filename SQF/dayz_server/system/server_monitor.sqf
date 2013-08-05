@@ -36,7 +36,6 @@ if(_outcome == "PASS") then {
 	};
 		
 	if(isDedicated) then {
-		//["dayzSetDate",_date] call broadcastRpcCallAll;
 		setDate _date;
 		dayzSetDate = _date;
 		publicVariable "dayzSetDate";
@@ -280,8 +279,12 @@ if (isServer and isNil "sm_done") then {
 		nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', HeliCrashArea, true, false] spawn server_spawnCrashSite;
 	};
 
-	// Epoch Events
-	nul = [] spawn server_spawnEvents;
+	if (isDedicated) then {
+		// Epoch Events
+		_id = [] spawn server_spawnEvents;
+		// server cleanup
+		_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
+	};
 
 	allowConnection = true;
 	sm_done = true;

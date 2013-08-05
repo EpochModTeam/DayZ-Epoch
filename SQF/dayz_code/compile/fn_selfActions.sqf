@@ -112,6 +112,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		};
 	} forEach boil_tin_cans;
 	_hasFuelE = 	"ItemJerrycanEmpty" in _magazinesPlayer;
+	_hasFuelBarrelE = 	"ItemFuelBarrelEmpty" in _magazinesPlayer;
 
 	_itemsPlayer = items player;
 	
@@ -154,7 +155,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	} forEach _rawmeat; 
 	
 	_isFuel = false;
-	if (_hasFuelE) then {
+	if (_hasFuelE or _hasFuelBarrelE) then {
 		{
 			if(_cursorTarget isKindOf _x) exitWith {_isFuel = true;};
 		} forEach dayz_fuelsources;
@@ -271,7 +272,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	}; 
 	
 	//Allow player to fill jerrycan
-	if(_hasFuelE and _isFuel) then {
+	if((_hasFuelE or _hasFuelBarrelE) and _isFuel) then {
 		if (s_player_fillfuel < 0) then {
 			s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
 		};
@@ -453,7 +454,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			
 			// show that pump needs power if no generator nearby.
 			if(_IsNearRunningGen > 0) then {
-				s_player_fuelauto = player addAction ["Fill Vehicle", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",[], 0, false, true, "",""];
+				s_player_fuelauto = player addAction ["Fill Vehicle", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",objNull, 0, false, true, "",""];
 			} else {
 				s_player_fuelauto = player addAction ["<t color='#ff0000'>Needs Power</t>", "",[], 0, false, true, "",""];
 			};
@@ -461,6 +462,21 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	} else {
 		player removeAction s_player_fuelauto;
 		s_player_fuelauto = -1;
+	};
+
+	//Fuel Pump on truck
+	if(_typeOfCursorTarget in DZE_fueltruckarray and alive _cursorTarget) then {	
+		if (s_player_fuelauto2 < 0) then {
+			// show that fuel truck pump needs power.
+			if(isEngineOn _cursorTarget) then {
+				s_player_fuelauto2 = player addAction ["Fill Vehicle", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",_cursorTarget, 0, false, true, "",""];
+			} else {
+				s_player_fuelauto2 = player addAction ["<t color='#ff0000'>Needs Power</t>", "",[], 0, false, true, "",""];
+			};
+		};
+	} else {
+		player removeAction s_player_fuelauto2;
+		s_player_fuelauto2 = -1;
 	};
 
 	//Start Generator
@@ -485,6 +501,21 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_fillgen;
 		s_player_fillgen = -1;
 	};
+
+	//Towing with tow truck
+	if(_typeOfCursorTarget == "VIL_asistvan_DZE") then {
+		if (s_player_towing < 0) then {
+			if(!(_cursorTarget getVariable ["DZEinTow", false])) then {
+				s_player_towing = player addAction ["Attach Straps", "\z\addons\dayz_code\actions\tow_AttachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
+			} else {
+				s_player_towing = player addAction ["Dettach Straps", "\z\addons\dayz_code\actions\tow_DetachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
+			};
+		};
+	} else {
+		player removeAction s_player_towing;
+		s_player_towing = -1;
+	};
+
 
     //Sleep
 	if(_isTent and _ownerID == dayz_characterID) then {
@@ -693,8 +724,12 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	s_player_information = -1;
 	player removeAction s_player_fillgen;
 	s_player_fillgen = -1;
+	player removeAction s_player_towing;
+	s_player_towing = -1;
 	player removeAction s_player_fuelauto;
 	s_player_fuelauto = -1;
+	player removeAction s_player_fuelauto2;
+	s_player_fuelauto2 = -1;
 };
 
 

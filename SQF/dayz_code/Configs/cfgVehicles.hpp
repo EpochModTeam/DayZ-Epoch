@@ -24,6 +24,13 @@ class CfgVehicles {
             };
         };
 	};
+
+
+	class VIL_asistvan;
+	class VIL_asistvan_DZE: VIL_asistvan 
+	{
+		transportrepair = 0;
+	};
 	
 	class Mi17_base: Helicopter 
 	{

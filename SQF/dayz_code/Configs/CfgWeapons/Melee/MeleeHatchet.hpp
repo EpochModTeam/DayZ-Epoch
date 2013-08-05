@@ -6,7 +6,7 @@ class MeleeHatchet: MeleeWeapon
 		magazineReloadTime=0;
 		model="\dayz_weapons\models\Hatchet_weaponized";
 		picture="\dayz_equip\textures\equip_hatchet_CA.paa";
-		displayName=$STR_EQUIP_NAME_HATCHET;
+		displayName="$STR_EQUIP_NAME_41";
 		droppeditem= "ItemHatchet";
 		magazines[]=
 		{
@@ -26,7 +26,7 @@ class MeleeHatchet: MeleeWeapon
 			};
 			class Toolbelt
 			{
-				text=$STR_ACTIONS_2TB;
+				text="Add to Toolbelt";
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -37,21 +37,10 @@ class MeleeHatchet: MeleeWeapon
 					"ItemHatchet"
 				};
 			};
-			
-			class Drop
-			{
-				text=$STR_ACTIONS_DROP;
-				script="spawn player_dropWeapon;";
-				use[]=
-				{
-					"Hatchet_Swing"
-				};	
-			};
-			
 		};
 		class Library
 		{
-			libTextDesc=$STR_EQUIP_DESC_HATCHET;
+			libTextDesc="$STR_EQUIP_DESC_41";
 		};
-		descriptionShort=$STR_EQUIP_DESC_HATCHET;
+		descriptionShort="$STR_EQUIP_DESC_41";
 	};

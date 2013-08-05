@@ -347,33 +347,7 @@ spawn_roadblocks = {
 			_veh setDir round(random 360);
 			_veh setpos _position;
 
-			dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_veh];
 			_veh setVariable ["ObjectID","1",true];
-
-			_num = round(random 3);
-			_config = 		configFile >> "CfgBuildingLoot" >> _spawnloot;
-			_itemType =		[] + getArray (_config >> "itemType");
-			_itemChance =	[] + getArray (_config >> "itemChance");
-
-			waituntil {!isnil "fnc_buildWeightedArray"};
-		
-			_weights = [];
-			_weights = 		[_itemType,_itemChance] call fnc_buildWeightedArray;
-			for "_x" from 1 to _num do {
-				//create loot
-				_index = _weights call BIS_fnc_selectRandom;
-				sleep 1;
-				if (count _itemType > _index) then {
-					_iArray = _itemType select _index;
-					_iArray set [2,_position];
-					_iArray set [3,5];
-					_iArray call spawn_loot;
-					_nearby = _position nearObjects ["WeaponHolder",20];
-					{
-						_x setVariable ["permaLoot",true];
-					} forEach _nearBy;
-				};
-			};
 		};
 	
 	};
