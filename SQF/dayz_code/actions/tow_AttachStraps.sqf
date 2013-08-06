@@ -1,16 +1,17 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
+private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck"];
 
 if(TradeInprogress) exitWith { cutText ["Already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 // Tow Truck
-_towTruck = _this;
+_towTruck = _this select 3;
 
 // Get all nearby vehicles within 10m
 _findNearestVehicles = nearestObjects [_towTruck, ["Car"], 10];
 _findNearestVehicle = [];
 {
-	if (alive _x and _towTruck != _x) then {
+	//diag_log ("SizeOF: " + str(sizeOf _x));
+	if (alive _x and _towTruck != _x and (sizeOf _x) < 10) then {
 		// within brounding box
 		if([_x,_towTruck] call fnc_isInsideBuilding2) then {
 			_findNearestVehicle set [(count _findNearestVehicle),_x];
@@ -71,12 +72,17 @@ if(_IsNearVehicle >= 1) then {
 
 	if (_finished) then {
 		
-		if(typeOf _towTruck == "VIL_asistvan_DZE" ) then {
-			_vehicle attachTo [_towTruck];
-			_towTruck setVariable ["DZEinTow", true, true];
-			_towTruck setVariable ["DZEvehicleInTow", _vehicle, true];
-			cutText [format["%1 has been attached to Tow Truck.",_nameText], "PLAIN DOWN"];
+		if([_vehicle,_towTruck] call fnc_isInsideBuilding2) then {	
+			if(typeOf _towTruck == "VIL_asistvan_DZE" ) then {
+				_vehicle attachTo [_towTruck];
+				_towTruck setVariable ["DZEinTow", true, true];
+				_towTruck setVariable ["DZEvehicleInTow", _vehicle, true];
+				cutText [format["%1 has been attached to Tow Truck.",_nameText], "PLAIN DOWN"];
+			};	
+		} else {
+			cutText [format["Failed to attach %1 to Tow Truck.",_nameText], "PLAIN DOWN"];
 		};
+
 	};
 
 

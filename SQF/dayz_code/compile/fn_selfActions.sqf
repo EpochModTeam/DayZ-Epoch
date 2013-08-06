@@ -508,7 +508,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			if(!(_cursorTarget getVariable ["DZEinTow", false])) then {
 				s_player_towing = player addAction ["Attach Straps", "\z\addons\dayz_code\actions\tow_AttachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
 			} else {
-				s_player_towing = player addAction ["Dettach Straps", "\z\addons\dayz_code\actions\tow_DetachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
+				s_player_towing = player addAction ["Detach Straps", "\z\addons\dayz_code\actions\tow_DetachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
 			};
 		};
 	} else {

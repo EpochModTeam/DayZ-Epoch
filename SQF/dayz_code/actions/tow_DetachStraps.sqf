@@ -1,15 +1,15 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
+private ["_vehicle","_started","_finished","_animState","_isMedic","_configVeh","_nameText","_towTruck","_inTow"];
 
 if(TradeInprogress) exitWith { cutText ["Already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 // Tow Truck
-_towTruck = _this;
+_towTruck = _this select 3;
 
 // exit if no vehicle is in tow.
-_inTow = _towTruck getVariable ["DZEinTow", false]
+_inTow = _towTruck getVariable ["DZEinTow", false];
 
-if(!_inTow) then {
+if(_inTow) then {
 
 	// select the nearest one
 	_vehicle = _towTruck getVariable ["DZEvehicleInTow", false];
@@ -55,7 +55,6 @@ if(!_inTow) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		_abort = true;
 	};
 
 	if (_finished) then {
@@ -63,7 +62,7 @@ if(!_inTow) then {
 		detach _vehicle;
 		_towTruck setVariable ["DZEinTow", false, true];
 		_towTruck setVariable ["DZEvehicleInTow", objNull, true];
-		cutText [format["%1 has been dettached from Tow Truck.",_nameText], "PLAIN DOWN"];
+		cutText [format["%1 has been detached from Tow Truck.",_nameText], "PLAIN DOWN"];
 	};
 
 } else {

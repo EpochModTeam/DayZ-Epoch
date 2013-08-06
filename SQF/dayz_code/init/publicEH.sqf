@@ -17,7 +17,7 @@
 "dayzGutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 "dayzGutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
 "dayzDelLocal"		addPublicVariableEventHandler {(_this select 1) call object_delLocal};
-"dayzVehicleInit"	addPublicVariableEventHandler {(_this select 1) call fnc_vehicleEventHandler};
+"dayzVehicleInit"	addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
 "dayzHumanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 "dayz_serverObjectMonitor"		addPublicVariableEventHandler {dayz_serverObjectMonitor = dayz_safety};
 "usecBreakLegs"			addPublicVariableEventHandler {(_this select 1) call player_breaklegs};

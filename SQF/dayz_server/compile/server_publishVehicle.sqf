@@ -112,7 +112,7 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	
 	_object setvelocity [0,0,1];
 
-	_object call fnc_vehicleEventHandler;
+	_object call fnc_veh_ResetEH;
 
 	// testing - should make sure everyone has eventhandlers for vehicles was unused...
 	dayzVehicleInit = _object;

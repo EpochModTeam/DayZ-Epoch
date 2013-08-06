@@ -35,8 +35,8 @@ link14[] = {11,12};
 link15[] = {12,1};
 link16[] = {13,5};
 link17[] = {14,13};
-globals[] = {25.000000,1,0,0,0,640,480,1,24,6316128,1,-419.782135,377.473389,490.440002,-241.733459,910,880,1};
-window[] = {2,-1,-1,-1,-1,784,1706,2984,26,3,928};
+globals[] = {25.000000,1,0,0,0,640,480,1,25,6316128,1,-419.782135,377.473389,303.547668,-419.297363,675,612,1};
+window[] = {0,-1,-1,-1,-1,900,1933,3211,142,1,693};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -69,7 +69,6 @@ class FSM
     {
       name = "waiting";
       init = /*%FSM<STATEINIT""">*/"//diag_log ""CLEANUP: Waiting for next task"";" \n
-       "//_numDead = {local _x} count allDead;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -112,6 +111,7 @@ class FSM
     {
       name = "sync_the_time";
       init = /*%FSM<STATEINIT""">*/"//Send request" \n
+       "_lastUpdate = diag_tickTime;" \n
        "_key = ""CHILD:307:"";" \n
        "_result = _key call server_hiveReadWrite;" \n
        "_outcome = _result select 0;" \n
@@ -156,25 +156,32 @@ class FSM
     class general_cleanup
     {
       name = "general_cleanup";
-      init = /*%FSM<STATEINIT""">*/"//Clean groups" \n
-       "{" \n
-       "	//diag_log (""CLEANUP: CHECKING GROUP WITH "" + str(count units _x) + "" UNITS"");" \n
-       "	if (count units _x==0) then {" \n
-       "		deleteGroup _x;" \n
-       "		//diag_log (""CLEANUP: DELETING A GROUP"");" \n
-       "	};" \n
-       "} forEach allGroups;" \n
+      init = /*%FSM<STATEINIT""">*/"if ((diag_tickTime - _lastCleanup) > 2) then {" \n
+       "	 " \n
+       "	_safety = dayz_serverObjectMonitor;" \n
        "" \n
-       "//Check for hackers" \n
-       " {" \n
-       "  	if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && (typeOf vehicle _x) != ""ParachuteWest"") then {" \n
-       "		diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
-       "   		(vehicle _x) setDamage 1;" \n
-       "   		_x setDamage 1;" \n
-       "	 };" \n
-       " } forEach allUnits;" \n
+       "	//Clean groups" \n
+       "	{" \n
+       "		diag_log (""CLEANUP: CHECKING GROUP WITH "" + str(count units _x) + "" UNITS"");" \n
+       "		if (count units _x==0) then {" \n
+       "			deleteGroup _x;" \n
+       "			diag_log (""CLEANUP: DELETING A GROUP"");" \n
+       "		};" \n
+       "	} forEach allGroups;" \n
        "" \n
-       "dayz_serverObjectMonitor = _safety;"/*%FSM</STATEINIT""">*/;
+       "	//Check for hackers" \n
+       "	 {" \n
+       "		if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && (typeOf vehicle _x) != ""ParachuteWest"") then {" \n
+       "			diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
+       "			(vehicle _x) setDamage 1;" \n
+       "			_x setDamage 1;" \n
+       "		 };" \n
+       "	 } forEach allUnits;" \n
+       "" \n
+       "	dayz_serverObjectMonitor = _safety;" \n
+       "" \n
+       "	_lastCleanup = diag_tickTime;" \n
+       "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -198,13 +205,11 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"diag_log (""CLEANUP: INITIALIZING CLEANUP SCRIPT"");" \n
        "" \n
        "_safety = dayz_serverObjectMonitor;" \n
-       "_dateNow = (DateToNumber date);" \n
+       "//_dateNow = (DateToNumber date);" \n
        "" \n
        "_lastUpdate = diag_tickTime;" \n
-       "_timeNem =diag_tickTime;" \n
-       "" \n
        "_lastNeedUpdate = diag_tickTime;" \n
-       "_maxBodies = 15;" \n
+       "_lastCleanup = diag_tickTime;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -226,14 +231,14 @@ class FSM
     class update_objects
     {
       name = "update_objects";
-      init = /*%FSM<STATEINIT""">*/"diag_log format[""DEBUG: needUpdate_objects=%1"",needUpdate_objects];" \n
+      init = /*%FSM<STATEINIT""">*/"//diag_log format[""DEBUG: needUpdate_objects=%1"",needUpdate_objects];" \n
        "{" \n
        "//	_x setVariable [""needUpdate"",false,true];" \n
        "	needUpdate_objects = needUpdate_objects - [_x];" \n
        "	[_x,""all""] call server_updateObject;" \n
        "" \n
        "} forEach needUpdate_objects;" \n
-       ""/*%FSM</STATEINIT""">*/;
+       "_lastNeedUpdate = diag_tickTime;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
