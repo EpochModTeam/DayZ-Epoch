@@ -5,17 +5,19 @@ TradeInprogress = true;
 
 // Tow Truck
 _towTruck = _this select 3;
+_towTruckSize = (sizeOf typeOf _towTruck);
+
+_allowedSize = _towTruckSize-(_towTruckSize/3);
 
 // Get all nearby vehicles within 10m
 _findNearestVehicles = nearestObjects [_towTruck, ["Car"], 10];
 _findNearestVehicle = [];
 {
-	//diag_log ("SizeOF: " + str(sizeOf _x));
-	if (alive _x and _towTruck != _x and (sizeOf _x) < 10) then {
+	if (alive _x and _towTruck != _x and (sizeOf typeOf _x) <= _allowedSize) then {
 		// within brounding box
 		if([_x,_towTruck] call fnc_isInsideBuilding2) then {
 			_findNearestVehicle set [(count _findNearestVehicle),_x];
-		};	
+		};
 	};
 } foreach _findNearestVehicles;
 		
