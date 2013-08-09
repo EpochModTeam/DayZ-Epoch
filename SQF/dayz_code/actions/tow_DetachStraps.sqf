@@ -3,6 +3,9 @@ private ["_vehicle","_started","_finished","_animState","_isMedic","_configVeh",
 if(TradeInprogress) exitWith { cutText ["Already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
+player removeAction s_player_towing;
+s_player_towing = 1;
+
 // Tow Truck
 _towTruck = _this select 3;
 
@@ -11,61 +14,67 @@ _inTow = _towTruck getVariable ["DZEinTow", false];
 
 if(_inTow) then {
 
-	// select the nearest one
-	_vehicle = _towTruck getVariable ["DZEvehicleInTow", false];
+	// select vehicl in tow
+	_vehicle = _towTruck getVariable ["DZEvehicleInTow", objNull];
 
-	// Static vehicle fuel information
-	_configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
-	_nameText = 	getText(_configVeh >> "displayName");
+	if(!(isNull _towTruck)) then {
 
-	// alert zombies
-	[player,20,true,(getPosATL player)] spawn player_alertZombies;
+		// Static vehicle fuel information
+		_configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
+		_nameText = 	getText(_configVeh >> "displayName");
 
-	_finished = false;
+		// alert zombies
+		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 
-	// force animation 
-	player playActionNow "Medic";
+		_finished = false;
 
-	r_interrupt = false;
-	_animState = animationState player;
-	r_doLoop = true;
-	_started = false;
+		// force animation 
+		player playActionNow "Medic";
 
-	while {r_doLoop} do {
-		_animState = animationState player;
-		_isMedic = ["medic",_animState] call fnc_inString;
-		if (_isMedic) then {
-			_started = true;
-		};
-		if (_started and !_isMedic) then {
-			r_doLoop = false;
-			_finished = true;
-		};
-		if (r_interrupt) then {
-			r_doLoop = false;
-		};
-		sleep 0.1;
-	};
-	r_doLoop = false;
-
-	if(!_finished) then {
 		r_interrupt = false;
-			
-		if (vehicle player == player) then {
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
+		_animState = animationState player;
+		r_doLoop = true;
+		_started = false;
+
+		while {r_doLoop} do {
+			_animState = animationState player;
+			_isMedic = ["medic",_animState] call fnc_inString;
+			if (_isMedic) then {
+				_started = true;
+			};
+			if (_started and !_isMedic) then {
+				r_doLoop = false;
+				_finished = true;
+			};
+			if (r_interrupt) then {
+				r_doLoop = false;
+			};
+			sleep 0.1;
 		};
-	};
+		r_doLoop = false;
 
-	if (_finished) then {
+		if(!_finished) then {
+			r_interrupt = false;
+			
+			if (vehicle player == player) then {
+				[objNull, player, rSwitchMove,""] call RE;
+				player playActionNow "stop";
+			};
+		};
+
+		if (_finished) then {
 		
-		detach _vehicle;
+			detach _vehicle;
+			_towTruck setVariable ["DZEinTow", false, true];
+			_towTruck setVariable ["DZEvehicleInTow", objNull, true];
+			cutText [format["%1 has been detached from Tow Truck.",_nameText], "PLAIN DOWN"];
+		};
+	} else {
 		_towTruck setVariable ["DZEinTow", false, true];
-		_towTruck setVariable ["DZEvehicleInTow", objNull, true];
-		cutText [format["%1 has been detached from Tow Truck.",_nameText], "PLAIN DOWN"];
+		_towTruck setVariable ["DZEvehicleInTow", objNull, true];	
 	};
-
 } else {
 	cutText ["No Vehicles In Tow.", "PLAIN DOWN"];
 };
 TradeInprogress = false;
+s_player_towing = -1;

@@ -3,6 +3,9 @@ private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_co
 if(TradeInprogress) exitWith { cutText ["Already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
+player removeAction s_player_towing;
+s_player_towing = 1;
+
 // Tow Truck
 _towTruck = _this select 3;
 _towTruckSize = (sizeOf typeOf _towTruck);
@@ -10,7 +13,7 @@ _towTruckSize = (sizeOf typeOf _towTruck);
 _allowedSize = _towTruckSize-(_towTruckSize/3);
 
 // Get all nearby vehicles within 10m
-_findNearestVehicles = nearestObjects [_towTruck, ["Car"], 10];
+_findNearestVehicles = nearestObjects [_towTruck, ["Car","Motorcycle"], 10];
 _findNearestVehicle = [];
 {
 	if (alive _x and _towTruck != _x and (sizeOf typeOf _x) <= _allowedSize) then {
@@ -93,3 +96,4 @@ if(_IsNearVehicle >= 1) then {
 	cutText ["No Vehicles Nearby.", "PLAIN DOWN"];
 };
 TradeInprogress = false;
+s_player_towing = -1;

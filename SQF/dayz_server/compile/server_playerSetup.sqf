@@ -258,9 +258,7 @@ _playerObj setVariable["friendlies",_friendlies,true];
 
 dayzPlayerLogin2 = [_worldspace,_state];
 _clientID = owner _playerObj;
-if(!isNull _playerObj) then {
-	_clientID publicVariableClient "dayzPlayerLogin2";
-};
+_clientID publicVariableClient "dayzPlayerLogin2";
 
 //record time started
 _playerObj setVariable ["lastTime",time];

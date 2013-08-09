@@ -90,6 +90,7 @@ if (!isDedicated) then {
 	player_fillWater = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\water_fill.sqf";
 	player_makeFire =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_makefire.sqf";
 	player_chopWood =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_chopWood.sqf";
+	player_harvestPlant =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_harvestPlant.sqf";
 	player_goFishing =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_goFishing.sqf";
 	player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
 	player_wearClothes =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
@@ -410,6 +411,24 @@ if (!isDedicated) then {
 		_vdir = (_vval select 0) atan2 (_vval select 1);
 		if (_vdir < 0) then {_vdir = 360 + _vdir};
 		_vdir
+	};
+
+	DZE_getModelName = {
+		_objInfo = toArray(str(_this));
+		_lenInfo = count _objInfo - 1;
+		_objName = [];
+		_i = 0;
+		// determine where the object name starts
+		{
+			if (58 == _objInfo select _i) exitWith {};
+			_i = _i + 1;
+		} forEach _objInfo;
+		_i = _i + 2; // skip the ": " part
+		for "_k" from _i to _lenInfo do {
+			_objName = _objName + [_objInfo select _k];
+		};
+		_objName = toLower(toString(_objName));
+		_objName
 	};
 	
 	dayz_originalPlayer =		player;

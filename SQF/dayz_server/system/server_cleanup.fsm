@@ -7,36 +7,46 @@ item2[] = {"waiting",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,
 item3[] = {"time_sync",4,218,-275.000000,-25.000000,-175.000000,25.000000,1.000000,"time" \n "sync"};
 item4[] = {"sync_the_time",2,250,-275.000000,50.000000,-175.000000,100.000000,0.000000,"sync" \n "the time"};
 item5[] = {"true",8,218,-75.000000,125.000000,25.000000,175.000000,0.000000,"true"};
-item6[] = {"general_cleanup",2,4346,-75.000000,200.000000,25.000000,250.000000,0.000000,"general" \n "cleanup"};
+item6[] = {"general_cleanup",2,250,-75.000000,200.000000,25.000000,250.000000,0.000000,"general" \n "cleanup" \n "loop"};
 item7[] = {"",7,210,-304.000000,220.999985,-296.000000,229.000015,0.000000,""};
 item8[] = {"",7,210,-304.000000,-154.000000,-296.000000,-146.000000,0.000000,""};
 item9[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
 item10[] = {"",7,210,221.000000,146.000000,229.000000,154.000000,0.000000,""};
 item11[] = {"initialized",4,218,-75.000000,-325.000000,25.000000,-275.000000,0.000000,"initialized"};
 item12[] = {"prepare",2,250,-75.000000,-250.000000,25.000000,-200.000000,0.000000,"prepare"};
-item13[] = {"update_objects",2,250,100.000000,50.000000,200.000000,100.000000,0.000000,"update objects"};
+item13[] = {"update_objects",2,4346,100.000000,50.000000,200.000000,100.000000,0.000000,"update objects"};
 item14[] = {"need_update",4,218,100.000000,-25.000000,200.000000,25.000000,1.000000,"need update"};
 item15[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
+item16[] = {"cleanup_groups",4,218,-150.000000,-25.000000,-50.000000,25.000000,1.000000,"cleanup" \n "groups"};
+item17[] = {"group_cleanup",2,250,-150.000000,50.000000,-50.000000,100.000000,0.000000,"group" \n "cleanup"};
+item18[] = {"cleanup_vehicles",4,218,-25.000000,-25.000000,75.000000,25.000000,1.000000,"cleanup" \n "vehicles"};
+item19[] = {"vehicle_cleanup",2,250,-25.000000,50.000000,75.000000,100.000000,0.000000,"vehicle" \n "cleanup"};
 link0[] = {0,11};
 link1[] = {1,2};
 link2[] = {2,3};
 link3[] = {2,9};
 link4[] = {2,14};
-link5[] = {3,4};
-link6[] = {4,5};
-link7[] = {5,6};
-link8[] = {6,7};
-link9[] = {7,8};
-link10[] = {8,1};
-link11[] = {9,10};
-link12[] = {9,15};
-link13[] = {10,5};
-link14[] = {11,12};
-link15[] = {12,1};
-link16[] = {13,5};
-link17[] = {14,13};
-globals[] = {25.000000,1,0,0,0,640,480,1,25,6316128,1,-419.782135,377.473389,303.547668,-419.297363,675,612,1};
-window[] = {0,-1,-1,-1,-1,900,1933,3211,142,1,693};
+link5[] = {2,16};
+link6[] = {2,18};
+link7[] = {3,4};
+link8[] = {4,5};
+link9[] = {5,6};
+link10[] = {6,7};
+link11[] = {7,8};
+link12[] = {8,1};
+link13[] = {9,10};
+link14[] = {9,15};
+link15[] = {10,5};
+link16[] = {11,12};
+link17[] = {12,1};
+link18[] = {13,5};
+link19[] = {14,13};
+link20[] = {16,17};
+link21[] = {17,5};
+link22[] = {18,19};
+link23[] = {19,5};
+globals[] = {25.000000,1,0,0,0,640,480,1,30,6316128,1,-419.782135,377.473389,510.243530,-212.601486,675,612,1};
+window[] = {0,-1,-1,-1,-1,888,130,1408,130,1,693};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -80,7 +90,27 @@ class FSM
           to="update_objects";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"( (count needUpdate_objects) > 0 && (diag_tickTime -_lastNeedUpdate>40) )"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_lastNeedUpdate = time;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastNeedUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "cleanup_groups">*/
+        class cleanup_groups
+        {
+          priority = 1.000000;
+          to="group_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupGroups) > 10)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastCleanupGroups = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "cleanup_vehicles">*/
+        class cleanup_vehicles
+        {
+          priority = 1.000000;
+          to="vehicle_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupVehicles) > 5)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastCleanupVehicles = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "time_sync">*/
@@ -90,7 +120,7 @@ class FSM
           to="sync_the_time";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastUpdate) > 300)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_lastUpdate = time;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "true">*/
@@ -111,7 +141,6 @@ class FSM
     {
       name = "sync_the_time";
       init = /*%FSM<STATEINIT""">*/"//Send request" \n
-       "_lastUpdate = diag_tickTime;" \n
        "_key = ""CHILD:307:"";" \n
        "_result = _key call server_hiveReadWrite;" \n
        "_outcome = _result select 0;" \n
@@ -156,32 +185,7 @@ class FSM
     class general_cleanup
     {
       name = "general_cleanup";
-      init = /*%FSM<STATEINIT""">*/"if ((diag_tickTime - _lastCleanup) > 2) then {" \n
-       "	 " \n
-       "	_safety = dayz_serverObjectMonitor;" \n
-       "" \n
-       "	//Clean groups" \n
-       "	{" \n
-       "		diag_log (""CLEANUP: CHECKING GROUP WITH "" + str(count units _x) + "" UNITS"");" \n
-       "		if (count units _x==0) then {" \n
-       "			deleteGroup _x;" \n
-       "			diag_log (""CLEANUP: DELETING A GROUP"");" \n
-       "		};" \n
-       "	} forEach allGroups;" \n
-       "" \n
-       "	//Check for hackers" \n
-       "	 {" \n
-       "		if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && (typeOf vehicle _x) != ""ParachuteWest"") then {" \n
-       "			diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
-       "			(vehicle _x) setDamage 1;" \n
-       "			_x setDamage 1;" \n
-       "		 };" \n
-       "	 } forEach allUnits;" \n
-       "" \n
-       "	dayz_serverObjectMonitor = _safety;" \n
-       "" \n
-       "	_lastCleanup = diag_tickTime;" \n
-       "};"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"//diag_log ""CLEANUP: Starting loop for next task"";"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -209,7 +213,8 @@ class FSM
        "" \n
        "_lastUpdate = diag_tickTime;" \n
        "_lastNeedUpdate = diag_tickTime;" \n
-       "_lastCleanup = diag_tickTime;" \n
+       "_lastCleanupVehicles = diag_tickTime;" \n
+       "_lastCleanupGroups = diag_tickTime;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -233,12 +238,71 @@ class FSM
       name = "update_objects";
       init = /*%FSM<STATEINIT""">*/"//diag_log format[""DEBUG: needUpdate_objects=%1"",needUpdate_objects];" \n
        "{" \n
-       "//	_x setVariable [""needUpdate"",false,true];" \n
        "	needUpdate_objects = needUpdate_objects - [_x];" \n
        "	[_x,""all""] call server_updateObject;" \n
        "" \n
-       "} forEach needUpdate_objects;" \n
-       "_lastNeedUpdate = diag_tickTime;"/*%FSM</STATEINIT""">*/;
+       "} forEach needUpdate_objects;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "group_cleanup">*/
+    class group_cleanup
+    {
+      name = "group_cleanup";
+      init = /*%FSM<STATEINIT""">*/"//Clean groups" \n
+       "{" \n
+       "	// diag_log (""CLEANUP: CHECKING GROUP WITH "" + str(count units _x) + "" UNITS"");" \n
+       "	if (count units _x==0) then {" \n
+       "		deleteGroup _x;" \n
+       "		diag_log (""CLEANUP: DELETING A GROUP"");" \n
+       "	};" \n
+       "} forEach allGroups;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "vehicle_cleanup">*/
+    class vehicle_cleanup
+    {
+      name = "vehicle_cleanup";
+      init = /*%FSM<STATEINIT""">*/"_safety = dayz_serverObjectMonitor;" \n
+       "" \n
+       "//Check for hackers" \n
+       " {" \n
+       "	if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && (typeOf vehicle _x) != ""ParachuteWest"") then {" \n
+       "		diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
+       "		(vehicle _x) setDamage 1;" \n
+       "		_x setDamage 1;" \n
+       "	 };" \n
+       " } forEach allUnits;" \n
+       "" \n
+       "dayz_serverObjectMonitor = _safety;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

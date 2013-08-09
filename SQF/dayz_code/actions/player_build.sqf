@@ -27,6 +27,7 @@ _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 _classnametmp = _classname;
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
 
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
@@ -150,7 +151,7 @@ if (_hasrequireditem) then {
 			hintSilent str (_position);
 
 			// if ghost preview available use that instead
-			_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
+			
 			if (_ghost == "") then {
 				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 			} else {

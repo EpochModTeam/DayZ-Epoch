@@ -66,7 +66,7 @@ if (isServer and isNil "sm_done") then {
 		diag_log "HIVE: trying to get objects";
 		_key = format["CHILD:302:%1:", dayZ_instance];
 		_hiveResponse = _key call server_hiveReadWrite;  
-		if ((((isnil "_hiveResponse") || {(typeName _hiveResponse != "ARRAY")}) || {((typeName (_hiveResponse select 1)) != "SCALAR")}) || {(_hiveResponse select 1 > 2000)}) then {
+		if ((((isnil "_hiveResponse") || {(typeName _hiveResponse != "ARRAY")}) || {((typeName (_hiveResponse select 1)) != "SCALAR")})) then {
 			diag_log ("HIVE: connection problem... HiveExt response:"+str(_hiveResponse));
 			_hiveResponse = ["",0];
 		} 

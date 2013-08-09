@@ -161,6 +161,17 @@ while {true} do {
 			r_player_blood = _result;
 		};
 	};
+
+	if (_foodVal >= 0.9 and _thirstVal >= 0.9) then {
+		if (!r_player_infected and !r_player_inpain and !r_player_injured) then {
+			_result = r_player_blood + 10;
+			if (_result >= r_player_bloodTotal) then {
+				r_player_blood = r_player_bloodTotal;
+			} else {
+				r_player_blood = _result;
+			};
+		};
+	};
 	
 	//Record low blood
 	_lowBlood = player getVariable ["USEC_lowBlood", false];

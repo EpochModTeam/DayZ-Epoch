@@ -39,7 +39,7 @@ if(_removed == _countIn) then {
 	_textRemoved = getText(configFile >> "CfgMagazines" >> _selected >> "displayName");
 	
 	// add failure rate based on skill level variable (days alive) 
-    _chanceToFail = (((random 1) + (dayz_skilllevel/100)) > 0.5);
+    _chanceToFail = (((random 1) + (dayz_Survived/100)) > 0.5);
 	
 	if(!_chanceToFail) then { 
 		

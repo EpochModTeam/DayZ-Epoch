@@ -5,12 +5,11 @@ TradeInprogress = true;
 
 _isVehicle = false;
 
-_vehicleSrc = 	_this select 0;
+_vehicleSrc = 	_this select 3;
 
-if(_vehicleSrc != objNull) then {
+if(!(isNull _vehicleSrc)) then {
 
 	_isVehicle = ((_vehicleSrc isKindOf "AllVehicles") and !(_vehicleSrc isKindOf "Man"));
-
 	// If fuel source is vehicle get actual capacity
 	_configSrcVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicleSrc);
 	_capacitySrc = 	getNumber(_configVeh >> "fuelCapacity");
@@ -21,7 +20,8 @@ if(_vehicleSrc != objNull) then {
 _findNearestVehicles = nearestObjects [player, ["AllVehicles"], 30];
 _findNearestVehicle = [];
 {
-	if (alive _x and _vehicleSrc != _x and !(_x isKindOf "Man")) then {
+	//diag_log ("FILL = " + str(_x) + " = " + str(_vehicleSrc));
+	if (alive _x and !(_x == _vehicleSrc) and !(_x isKindOf "Man")) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
 } foreach _findNearestVehicles;

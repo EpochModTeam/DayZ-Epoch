@@ -1654,7 +1654,7 @@ class CfgMagazines {
 				neednearby[] = {"sawmil"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",1}};
-				input[] = {{"PartWoodLumber",4},{"PartGeneric",1}};
+				input[] = {{"PartWoodLumber",2},{"PartGeneric",1}};
 				
 			};
 			class Crafting2
@@ -2819,8 +2819,25 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
 	};
 	
-	
-
+	// new DZE harvested food
+	class FoodPumpkin : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 100;
+		displayName = "Pumkin";
+		descriptionShort = "Pumkin";
+		model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
+		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	};
+	class FoodSunFlowerSeed : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 100;
+		displayName = "Bag of Sunflower Seeds";
+		descriptionShort = "Bag of Sunflower Seeds";
+		model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
+		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	};
 	
 	class TrashTinCan: HandGrenade
 	{
@@ -2996,6 +3013,18 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
 	};
+
+	class ItemKiloHemp : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = "Kilo of Hemp";
+		descriptionShort = "Kilo of Hemp";
+		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d"; // TODO: model + icon
+		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
+		type = 256;
+	};
+
+	
 
 	class 8Rnd_B_Beneli_74Slug;
 	class 8Rnd_B_Beneli_Pellets;
