@@ -2,12 +2,15 @@
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable"];
+private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj"];
 
 if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _obj = _this select 3;
+
+_objOwnerID = _obj getVariable["CharacterID","0"];
+_isOwnerOfObj = (_objOwnerID == dayz_characterID);
 
 if(_obj getVariable ["GeneratorRunning", false]) exitWith {TradeInprogress = false; cutText ["Cannot remove running generator.", "PLAIN DOWN"];};
 
@@ -107,7 +110,7 @@ while {_isOk} do {
 	if(_finished) then {
 		_counter = _counter + 1;
 		// 10% chance to break a required tool each pass
-		if(_isDestructable or _isRemovable) then {
+		if((_isDestructable or _isRemovable) and !_isOwnerOfObj) then {
 			if((random 10) <= 1) then {
 				_brokenTool = true;
 			};
@@ -145,8 +148,11 @@ if (_proceed) then {
 	if(!isNull(_obj)) then {
 		
 		deleteVehicle _obj;
-		dayzDeleteObj = [_objectID,_objectUID];
-		publicVariableServer "dayzDeleteObj";
+		
+		if(!_isWreck) then {
+			dayzDeleteObj = [_objectID,_objectUID];
+			publicVariableServer "dayzDeleteObj";
+		};
 
 		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
 		
