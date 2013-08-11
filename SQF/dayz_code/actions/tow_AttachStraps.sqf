@@ -1,4 +1,4 @@
-private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck"];
+private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck","_vehicleFits","_worldPos","_veh","_box","_p1","_p2","_maxX","_maxY","_location1","_location2","_location3","_location4","_towTruckSize","_allowedSize"];
 
 if(TradeInprogress) exitWith { cutText ["Already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
@@ -16,8 +16,7 @@ _allowedSize = _towTruckSize-(_towTruckSize/3);
 _findNearestVehicles = nearestObjects [_towTruck, ["Car","Motorcycle"], 10];
 _findNearestVehicle = [];
 {
-	if (alive _x and _towTruck != _x and (sizeOf typeOf _x) <= _allowedSize) then {
-		// within brounding box
+	if (alive _x and _towTruck != _x) then {
 		if([_x,_towTruck] call fnc_isInsideBuilding2) then {
 			_findNearestVehicle set [(count _findNearestVehicle),_x];
 		};
@@ -77,15 +76,20 @@ if(_IsNearVehicle >= 1) then {
 
 	if (_finished) then {
 		
-		if([_vehicle,_towTruck] call fnc_isInsideBuilding2) then {	
-			if(typeOf _towTruck == "VIL_asistvan_DZE" ) then {
-				_vehicle attachTo [_towTruck];
-				_towTruck setVariable ["DZEinTow", true, true];
-				_towTruck setVariable ["DZEvehicleInTow", _vehicle, true];
-				cutText [format["%1 has been attached to Tow Truck.",_nameText], "PLAIN DOWN"];
-			};	
+		if((sizeOf typeOf _vehicle) <= _allowedSize) then {
+			if([_vehicle,_towTruck] call fnc_isInsideBuilding2 and ((vectorUp _vehicle) select 2) > 0.5) then {
+				if(typeOf _towTruck == "VIL_asistvan_DZE" ) then {
+					_vehicle attachTo [_towTruck,[1.3,-2,2.3]];
+					_towTruck setVariable ["DZEinTow", true, true];
+					_towTruck setVariable ["DZEvehicleInTow", _vehicle, true];
+					cutText [format["%1 has been attached to Tow Truck.",_nameText], "PLAIN DOWN"];
+				};	
+			} else {
+				cutText [format["Failed to attach %1 to Tow Truck.",_nameText], "PLAIN DOWN"];
+			};
+
 		} else {
-			cutText [format["Failed to attach %1 to Tow Truck.",_nameText], "PLAIN DOWN"];
+			cutText [format["%1 too large and cannot be towed.",_nameText], "PLAIN DOWN"];
 		};
 
 	};
