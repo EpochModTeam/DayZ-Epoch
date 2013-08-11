@@ -14,7 +14,6 @@
 #define EAST 0 // (Russian)
 
 #include "Configs\basicdefines.hpp"
-#include "Configs\safegui.hpp"
 
 class CfgPatches {
 	class dayz_code {
@@ -221,6 +220,10 @@ class RscStructuredTextGUI: RscStructuredText
 //#include "CfgWorlds.hpp"
 #include "Configs\cfgMoves.hpp"
 #include "Configs\rscTitles.hpp"
+
+#include "Configs\safegui.hpp"
+#include "Configs\dialog.hpp"
+
 #include "Configs\CfgVehicles.hpp"
 #include "Configs\CfgWeapons.hpp"
 #include "Configs\CfgVoice.hpp"
