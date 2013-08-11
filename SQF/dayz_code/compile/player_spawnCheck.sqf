@@ -1,5 +1,5 @@
 private ["_t1","_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_radius","_position","_markerstr","_markerstr1","_markerstr2","_markerstr3","_nearByObj","_handle","_looted","_cleared","_zombied","_config","_canLoot","_dis","_players","_spawnZombies","_nearby","_nearbyCount"];
-_t1 = diag_tickTime;
+//_t1 = diag_tickTime;
 
 _type = _this select 0;
 _inVehicle = (vehicle player != player);
@@ -137,4 +137,4 @@ if (_nearbyCount < 1) exitwith
 		};
 	};
 } forEach _nearby;
-["player_spawnCheck.sqf",(diag_tickTime - _t1)] call fnc_dump;
+// ["player_spawnCheck.sqf",(diag_tickTime - _t1)] call fnc_dump;
