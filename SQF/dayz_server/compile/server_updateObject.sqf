@@ -78,7 +78,7 @@ _object_inventory = {
 _object_damage = {
 	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
 		_hitpoints = _object call vehicle_getHitpoints;
-	_damage = damage _object;
+		_damage = damage _object;
 		_array = [];
 		{
 			_hit = [_object,_x] call object_getHit;
