@@ -1,5 +1,5 @@
-//class RscPicture;
-//class RscButton;
+class RscPicture;
+class RscButton;
 class CA_IGUI_Title;
 class CA_Title;
 class RscText;

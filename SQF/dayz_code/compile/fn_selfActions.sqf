@@ -578,10 +578,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 				
 				} forEach (_traderMenu select 1);
 				// Database menu 
-				{
-					_buy = player addAction [(_x select 0), "\z\addons\dayz_code\actions\buy_or_sell.sqf",[(_x select 1),(_x select 0)], 99, true, false, "",""];
-					s_player_parts set [count s_player_parts,_buy];
-				} forEach (_traderMenu select 0);
+				_buy = player addAction ["Trader Menu", "\z\addons\dayz_code\actions\show_dialog.sqf",(_traderMenu select 0), 99, true, false, "",""];
+				s_player_parts set [count s_player_parts,_buy];
 				
 				// Add static metals trader options under sub menu
 				_metals_trader = player addAction ["Trade Metals", "\z\addons\dayz_code\actions\trade_metals.sqf",["na"], 0, true, false, "",""];
