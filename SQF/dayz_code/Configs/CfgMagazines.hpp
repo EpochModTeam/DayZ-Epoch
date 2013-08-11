@@ -1059,6 +1059,49 @@ class CfgMagazines {
 			};
 		};
 	};
+	
+	class bulk_ItemTankTrap: bulk
+	{
+		descriptionShort = "12 x Tank Trap";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemTankTrap",12,"magazine"};
+			};
+		};
+	};
+	
+	class bulk_ItemWire: bulk
+	{
+		descriptionShort = "12 x Wire Kit";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemWire",12,"magazine"};
+			};
+		};
+	};
+	
+	class bulk_PartGeneric: bulk
+	{
+		descriptionShort = "12 x Scrap Metal";
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = "Open %1";
+				script = "spawn player_loadCrate;";
+				output[] = {"PartGeneric",12,"magazine"};
+			};
+		};
+	};
+
 	class bulk_17Rnd_9x19_glock17: bulk
 	{
 		descriptionShort = "12 x 17Rnd_9x19_glock17";
