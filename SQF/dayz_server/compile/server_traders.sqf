@@ -29,7 +29,6 @@ if(isNil "_retrader") then {
 		for "_i" from 1 to _val do {
 			_data = "HiveEXT" callExtension _key;
 			_result = call compile format ["%1",_data];
-			_status = _result select 0;
 			_retrader set [count _retrader,_result];
 		};
 		//diag_log ("HIVE: Streamed " + str(_val) + " objects");
