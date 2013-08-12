@@ -252,7 +252,7 @@ class TraderDialog
 			h = 0.055016 * safezoneH;
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 9000);";
 		};
-		class RscText_1007: RscText
+		class RscText_1007: RscTextTraderDialog
 		{
 			idc = -1;
 			text = "Items";
