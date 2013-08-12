@@ -6,7 +6,8 @@ _config = configFile >> "CfgBuildingLoot";
 for "_i" from 0 to ((count _config) - 1) do {
 	_classname = toLower(configName (_config select _i));
 	_itemChances = [] + getArray (_config >> _classname >> "ItemChance");
-		_itemCount = count _itemChances;
+	_itemChancesSmall = [] + getArray (_config >> _classname >> "ItemChanceSmall");
+	_itemCount = count _itemChances;
 	if (_itemCount > 0) then {
 		if (dayz_CBLBase find _classname < 0) then {
 			_weighted = [];
@@ -19,7 +20,7 @@ for "_i" from 0 to ((count _config) - 1) do {
 				_j = _j + _weight;
 			};
 			dayz_CBLChances set [count dayz_CBLChances, _weighted];		
-		dayz_CBLBase set [count dayz_CBLBase, _classname];
+			dayz_CBLBase set [count dayz_CBLBase, _classname];
 		};
 	} else {
 		dayz_CBLChances set [count dayz_CBLChances, [0]];

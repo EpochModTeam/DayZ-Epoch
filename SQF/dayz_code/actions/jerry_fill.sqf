@@ -9,18 +9,23 @@ s_player_fillfuel = 1;
 _fillCounter = 0;
 _abort = false;
 
-_qty = {_x == "ItemJerrycanEmpty"} count magazines player;
+_fuelCans = [];
 
-for "_x" from 1 to _qty do {
+{
+	if(_x == "ItemJerrycanEmpty" or _x == "ItemFuelBarrelEmpty") then {
+		_fuelCans set [(count _fuelCans),_x];
+	};
+} forEach magazines player;
+
+_qty = count _fuelCans;
+
+{
+	_displayName = getText (configFile >> "cfgMagazines" >> _x >> "displayName");
 	
 	_fillCounter = _fillCounter + 1;
 
-	if(_qty == 1) then {
-		cutText ["Preparing to siphon, stand still to fill empty jerry can.", "PLAIN DOWN"];
-	} else {
-		cutText [format[("Preparing to siphon, stand still to fill empty jerry can %1 of %2."),_fillCounter,_qty] , "PLAIN DOWN"];
-	};
-
+	cutText [format["Preparing to siphon, stand still to fill %1.",_displayName], "PLAIN DOWN"];	
+	
 	// force animation 
 	player playActionNow "Medic";
 	// Play sound and alert zombies
@@ -64,22 +69,22 @@ for "_x" from 1 to _qty do {
 	};
 
 	if (_finished) then {
-
-		if ("ItemJerrycanEmpty" in magazines player) then {
-	
-			player removeMagazine "ItemJerrycanEmpty";
-			player addMagazine "ItemJerrycan";
-
-			cutText [format[(localize  "str_player_09"),1], "PLAIN DOWN"];
+		if(([player,_x] call BIS_fnc_invRemove) == 1) then {
+			if (_x == "ItemFuelBarrelEmpty") then {
+				player addMagazine "ItemFuelBarrel";
+			} else {
+				player addMagazine "ItemJerrycan";
+			};
+			cutText [format["You have filled %1 with fuel.",_displayName], "PLAIN DOWN"];	
 		} else {
-			cutText [(localize "str_player_10") , "PLAIN DOWN"];
 			_abort = true;
 		};
 	}; 
 
 	sleep 1;
 	if(_abort) exitWith {};
-};
+
+} forEach _fuelCans;
 
 s_player_fillfuel = -1;
 TradeInprogress = false;

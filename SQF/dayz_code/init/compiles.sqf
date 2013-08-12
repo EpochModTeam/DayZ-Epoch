@@ -90,6 +90,7 @@ if (!isDedicated) then {
 	player_fillWater = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\water_fill.sqf";
 	player_makeFire =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_makefire.sqf";
 	player_chopWood =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_chopWood.sqf";
+	player_harvestPlant =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_harvestPlant.sqf";
 	player_goFishing =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_goFishing.sqf";
 	player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
 	player_wearClothes =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
@@ -124,7 +125,7 @@ if (!isDedicated) then {
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
 		// 120 sec timeout
-		while { _timeOut < 500 && !dayz_clientPreload && !dayz_authed } do {
+		while { _timeOut < 3000 && !dayz_clientPreload && !dayz_authed } do {
 
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
@@ -133,15 +134,16 @@ if (!isDedicated) then {
 				_control1 = _display displayctrl 8400;
 				_control2 = _display displayctrl 102;
 			};
+
 			if ( dayz_loadScreenMsg != "" ) then {
 				_control1 ctrlSetText dayz_loadScreenMsg;
 				dayz_loadScreenMsg = "";
 			};
-			_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
+			_control2 ctrlSetText format["%1",round(_timeOut*0.01)];
 			_timeOut = _timeOut + 1;
-			sleep 0.1;
+			sleep 0.01;
 		};
-			endLoadingScreen;
+		endLoadingScreen;
 		/*
 		if ( !dayz_clientPreload && !dayz_authed ) then {
 			diag_log "DEBUG: loadscreen guard ended with timeout.";
@@ -151,6 +153,22 @@ if (!isDedicated) then {
 		} else { diag_log "DEBUG: loadscreen guard ended."; };
 		*/
 	}; 
+
+	//
+	RunTime = 0;
+	TotalRuns = 0;
+	
+	fnc_dump = {
+		private["_code","_benchmark","_averageRunTime"];
+		_code = _this select 0;
+		_benchmark = _this select 1;
+		
+		RunTime = RunTime + _benchmark;
+		TotalRuns = TotalRuns + 1;
+		_averageRunTime = RunTime/TotalRuns;
+
+		diag_log format["%1 - %2 (%3 / %4)",_code,_benchmark,_averageRunTime,TotalRuns];
+	};
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];
 		_agent = 	_this select 0;
@@ -195,8 +213,8 @@ if (!isDedicated) then {
 		_agent = _this select 1;
 		_cantSee = true;
 		if (!isNull _target) then {
-			_tPos = eyePos _target;
-			_zPos = eyePos _agent;
+			_tPos = aimPos _target;
+			_zPos = aimPos _agent;
 			if ((count _tPos > 0) and (count _zPos > 0)) then {
 				_cantSee = terrainIntersectASL [_tPos, _zPos];
 				if (!_cantSee) then {
@@ -290,6 +308,18 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
+		//
+		if (_dikCode == 0x48) then {
+			DZE_Q = true;
+		};
+		if (_dikCode == 0x50) then {
+			DZE_Z = true;
+		};
+		if (_dikCode == 0x4C) then {
+			DZE_5 = true;
+		};
+		
+
 		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
@@ -382,38 +412,214 @@ if (!isDedicated) then {
 		if (_vdir < 0) then {_vdir = 360 + _vdir};
 		_vdir
 	};
+
+	DZE_getModelName = {
+		_objInfo = toArray(str(_this));
+		_lenInfo = count _objInfo - 1;
+		_objName = [];
+		_i = 0;
+		// determine where the object name starts
+		{
+			if (58 == _objInfo select _i) exitWith {};
+			_i = _i + 1;
+		} forEach _objInfo;
+		_i = _i + 2; // skip the ": " part
+		for "_k" from _i to _lenInfo do {
+			_objName = _objName + [_objInfo select _k];
+		};
+		_objName = toLower(toString(_objName));
+		_objName
+	};
 	
-	dayz_lowHumanity = {
-		private["_unit","_humanity","_delay"];
-		_unit = _this;
-		if ((_unit distance player) < 15) then {
-			_humanity = _unit getVariable["humanity",0];
-			dayz_heartBeat = true;
-			if (_humanity < -3000) then {
-				_delay = ((10000 + _humanity) / 5500) + 0.3;
-				playSound "heartbeat_1";
-				sleep _delay;
-			};
-			dayz_heartBeat = false;
-		};
-	};
-	/*
-	dayz_meleeMagazineCheck = {
-		private["_meleeNum","_magType","_wpnType"];
-		_wpnType = _this;
-		_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
-		_meleeNum = ({_x == _magType} count magazines player);
-		if (_meleeNum > 1) then {
-			if (player hasWeapon _wpnType) then {
-				_meleeNum = _meleeNum - 1;
-			};
-			for "_i" from 1 to _meleeNum do {
-				player removeMagazine _magType;
-			};
-		};
-	};
-	*/
 	dayz_originalPlayer =		player;
+	
+	
+	// trader menu gui by maca134
+	TraderDialogCatList = 12000;
+	TraderDialogItemList = 12001;
+	TraderDialogBuyPrice = 12002;
+	TraderDialogSellPrice = 12003;
+
+	TraderCurrentCatIndex = -1;
+	TraderCatList = -1;
+	TraderItemList = -1;
+
+	TraderDialogLoadItemList = {
+		private ["_index", "_trader_id", "_activatingPlayer"];
+		TraderItemList = -1;
+		_index = _this select 0;
+
+		if (_index < 0 or TraderCurrentCatIndex == _index) exitWith {};
+		TraderCurrentCatIndex = _index;
+
+		_trader_id = TraderCatList select _index;
+		_activatingPlayer = player;
+
+		lbClear TraderDialogItemList;
+		ctrlSetText [TraderDialogBuyPrice, ""];
+		ctrlSetText [TraderDialogSellPrice, ""];
+
+		lbAdd [TraderDialogItemList, "Loading items..."];
+
+		dayzTraderMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
+
+		if(isNil "dayzTraderMenuResult") then {
+			dayzTraderMenu = [_activatingPlayer,_trader_id];
+			publicVariableServer  "dayzTraderMenu";
+			waitUntil {!isNil "dayzTraderMenuResult"};
+		};
+
+		lbClear TraderDialogItemList;
+		_item_list = [];
+		{
+			private ["_header", "_item", "_name", "_type", "_textPart", "_qty", "_buy", "_bqty", "_bname", "_btype", "_btextCurrency", "_sell", "_sqty", "_sname", "_stype", "_stextCurrency", "_order", "_order", "_afile", "_File", "_count", "_bag", "_bagclass", "_index", "_image"];
+			_header = _x select 0; // "TRD"
+			_item = _x select 1;
+			_name = _item select 0;
+			_type = _item select 1;
+			switch (true) do { 
+				case (_type == 1): { 
+					_type = "CfgMagazines";
+				}; 
+				case (_type == 2): { 
+					_type = "CfgVehicles";
+				}; 
+				case (_type == 3): { 
+					_type = "CfgWeapons";
+				}; 
+			}; 
+			// Display Name of item
+			_textPart =	getText(configFile >> _type >> _name >> "displayName");
+
+			// Total in stock
+			_qty = _x select 2;
+
+			// Buy Data from array
+			_buy = _x select 3;	
+			_bqty = _buy select 0;
+			_bname = _buy select 1;
+			_btype = _buy select 2;
+			switch(true)do{ 
+				case (_btype == 1): { 
+					_btype = "CfgMagazines";
+				}; 
+				case (_btype == 2): { 
+					_btype = "CfgVehicles";
+				}; 
+				case (_btype == 3): { 
+					_btype = "CfgWeapons";
+				}; 
+			}; 
+
+			// Display Name of buy item
+			_btextCurrency = getText(configFile >> _btype >> _bname >> "displayName");
+
+			_sell = _x select 4;
+			_sqty = _sell select 0;
+			_sname = _sell select 1;
+			_stype = _sell select 2;
+			switch(true)do{ 
+				case (_stype == 1): { 
+					_stype = "CfgMagazines";
+				}; 
+				case (_stype == 2): { 
+					_stype = "CfgVehicles";
+				}; 
+				case (_stype == 3): { 
+					_stype = "CfgWeapons";
+				}; 
+			}; 
+			// Display Name of sell item
+			_stextCurrency =	getText(configFile >> _stype >> _sname >> "displayName");
+
+			// Menu sort order
+			_order = _x select 5;
+
+			// Action file to use for trade
+			_afile = _x select 7;
+			_File = "\z\addons\dayz_code\actions\" + _afile + ".sqf";
+			
+			_count = 0;
+			if(_type == "CfgVehicles") then {
+				if (_afile == "trade_backpacks") then {
+					_bag = unitBackpack player;
+					_bagclass = typeOf _bag;
+					if(_name == _bagclass) then {
+						_count = 1;
+					};
+				} else {
+					_count = {(typeOf _x) == _name} count (nearestObjects [player, [_name], 20]);
+				}
+			};
+
+			if(_type == "CfgMagazines") then {
+				_count = {_x == _name} count magazines player;
+			};
+
+			if(_type == "CfgWeapons") then {
+				_count = {_x == _name} count weapons player;
+			};
+
+			_index = lbAdd [TraderDialogItemList, format["%1 (%2)", _textPart, _name]];
+
+			if (_count > 0) then {
+				lbSetColor [TraderDialogItemList, _index, [0, 1, 0, 1]];
+			};
+
+			_image = getText(configFile >> _type >> _name >> "picture");
+			lbSetPicture [TraderDialogItemList, _index, _image];
+
+			_item_list set [count _item_list, [
+				_name,
+				_textPart,
+				_bqty,
+				_bname,
+				_btextCurrency,
+				_sqty,
+				_sname,
+				_stextCurrency,
+				_header,
+				_File
+			]];
+		} forEach dayzTraderMenuResult;
+		TraderItemList = _item_list;
+	};
+
+	TraderDialogShowPrices = {
+		private ["_index", "_item"];
+		_index = _this select 0;
+		if (_index < 0) exitWith {};
+		while {count TraderItemList < 1} do { sleep 1; };
+		_item = TraderItemList select _index;
+		ctrlSetText [TraderDialogBuyPrice, format["%1 %2", _item select 2, _item select 4]];
+		ctrlSetText [TraderDialogSellPrice, format["%1 %2", _item select 5, _item select 7]];
+	};
+
+	TraderDialogBuy = {
+		private ["_index", "_item", "_data"];
+		_index = _this select 0;
+		if (_index < 0) exitWith {
+			cutText ["Trading canceled." , "PLAIN DOWN"];
+		};
+		_item = TraderItemList select _index;
+		_data = [_item select 0, _item select 3, 1, _item select 2, "buy", _item select 4, _item select 1, _item select 8];
+		[0, player, '', _data] execVM (_item select 9);
+		TraderItemList = -1;
+	};
+
+	TraderDialogSell = {
+		private ["_index", "_item", "_data"];
+		_index = _this select 0;
+		if (_index < 0) exitWith {
+			cutText ["Trading canceled." , "PLAIN DOWN"];
+		};
+		_item = TraderItemList select _index;
+		_data = [_item select 6, _item select 0, _item select 5, 1, "sell", _item select 1, _item select 7, _item select 8];
+		[0, player, '', _data] execVM (_item select 9);
+		TraderItemList = -1;
+	};
+	
+	
 };
 
 	progressLoadingScreen 0.8;
@@ -432,13 +638,15 @@ if (!isDedicated) then {
 	object_delLocal =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_delLocal.sqf";
 	// object_cargoCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_cargoCheck.sqf";		//Run by the player or server to monitor changes in cargo contents
 	fnc_usec_damageHandler =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
+	fnc_veh_ResetEH = compile preprocessFileLineNumbers "\z\addons\dayz_code\init\veh_ResetEH.sqf";			//Initialize vehicle
 	// Vehicle damage fix
 	vehicle_handleDamage    = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleDamage.sqf";
 	vehicle_handleKilled    = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
-	fnc_vehicleEventHandler = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\init\vehicle_init.sqf";			//Initialize vehicle
+	//fnc_vehicleEventHandler = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\init\vehicle_init.sqf";			//Initialize vehicle
 	fnc_inString = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_inString.sqf";	
 	fnc_isInsideBuilding = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_isInsideBuilding.sqf";	//_isInside = [_unit,_building] call fnc_isInsideBuilding;
 	fnc_isInsideBuilding2 = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_isInsideBuilding2.sqf";	//_isInside = [_unit,_building] call fnc_isInsideBuilding;
+	fnc_isInsideBuilding3 = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_isInsideBuilding3.sqf";	//_isInside = [_unit,_building] call fnc_isInsideBuilding;
 	dayz_zombieSpeak = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_speak.sqf";			//Used to generate random speech for a unit
 	vehicle_getHitpoints =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_getHitpoints.sqf";
 	local_gutObject =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_gutObject.sqf";		//Generated on the server (or local to unit) when gutting an object
@@ -459,6 +667,7 @@ if (!isDedicated) then {
 	world_isDay = 				{if ((daytime < (24 - dayz_sunRise)) and (daytime > dayz_sunRise)) then {true} else {false}};
 	player_humanityChange =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_humanityChange.sqf";
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot.sqf";
+	spawn_loot_small =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot_small.sqf";
 	// player_projectileNear = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
 	
 	player_sumMedical = {

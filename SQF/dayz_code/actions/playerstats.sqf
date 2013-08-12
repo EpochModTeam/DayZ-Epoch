@@ -17,7 +17,7 @@ hintSilent parseText format ["
 	(player getVariable['humanKills', 0]),
 	(player getVariable['banditKills', 0]),
 	(player getVariable['humanity', 0]),
-	(dayz_skilllevel)
+	(dayz_Survived)
 ];
 
 /*

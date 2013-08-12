@@ -1149,9 +1149,9 @@ _group_2 = createGroup _center_2;
 _unit_108 = objNull;
 if (true) then
 {
-  _this = _group_2 createUnit ["GUE_Soldier_MG", [1606.5773, 7806.395, 0.25734121], [], 0, "CAN_COLLIDE"];
+  _this = _group_2 createUnit ["GUE_Soldier_MG", [1623.1722, 7797.7886, 0.25734121], [], 0, "CAN_COLLIDE"];
   _unit_108 = _this;
-  _this setDir 187.47844;
+  _this setDir 274.59872;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
   _this setUnitAbility 0.60000002;
   _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
@@ -1267,9 +1267,9 @@ if (true) then
 _vehicle_662 = objNull;
 if (true) then
 {
-  _this = createVehicle ["HeliHCivil", [12986.608, 12767.673, -210.79434], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["HeliHCivil", [12915.168, 12770.989, -210.79434], [], 0, "CAN_COLLIDE"];
   _vehicle_662 = _this;
-  _this setPos [12986.608, 12767.673, -210.79434];
+  _this setPos [12915.168, 12770.989, -210.79434];
 };
 
 _vehicle_663 = objNull;
@@ -1591,6 +1591,30 @@ if (true) then
   _this = createVehicle ["RoadCone", [11455.539, 11341.255], [], 0, "CAN_COLLIDE"];
   _vehicle_784 = _this;
   _this setPos [11455.539, 11341.255];
+};
+
+_vehicle_786 = objNull;
+if (true) then
+{
+  _this = createVehicle ["RoadCone", [12919.824, 12771.057, -6.1035156e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_786 = _this;
+  _this setPos [12919.824, 12771.057, -6.1035156e-005];
+};
+
+_vehicle_788 = objNull;
+if (true) then
+{
+  _this = createVehicle ["RoadCone", [12910.383, 12770.92, -9.1552734e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_788 = _this;
+  _this setPos [12910.383, 12770.92, -9.1552734e-005];
+};
+
+_vehicle_790 = objNull;
+if (true) then
+{
+  _this = createVehicle ["RoadCone", [1617.5127, 7773.2793], [], 0, "CAN_COLLIDE"];
+  _vehicle_790 = _this;
+  _this setPos [1617.5127, 7773.2793];
 };
 
 processInitCommands;

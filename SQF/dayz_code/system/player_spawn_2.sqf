@@ -12,9 +12,6 @@ player setVariable ["temperature",dayz_temperatur,true];
 
 dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) +  (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
 
-	//player addMagazine "Hatchet_Swing";
-	//player addWeapon "MeleeHatchet";
-
 while {true} do {
 	//Initialize
 	_refObj = 	vehicle player;
@@ -56,16 +53,6 @@ while {true} do {
 		_timeOut = _timeOut + 1;
 	};
 	
-	_humanity = player getVariable ["humanity",0];
-	if (_timeOut > 150) then {
-		_timeOut = 0;
-		if (_humanity < 2500) then {
-			_humanity = _humanity + 150;
-			_humanity = _humanity min 2500;
-			player setVariable ["humanity",_humanity,true];
-		};
-	};
-
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
 	if (_lastUpdate > 8) then {
@@ -172,6 +159,17 @@ while {true} do {
 			_id = [player,"starve"] spawn player_death;
 		} else {
 			r_player_blood = _result;
+		};
+	};
+
+	if (_foodVal >= 0.9 and _thirstVal >= 0.9) then {
+		if (!r_player_infected and !r_player_inpain and !r_player_injured) then {
+			_result = r_player_blood + 10;
+			if (_result >= r_player_bloodTotal) then {
+				r_player_blood = r_player_bloodTotal;
+			} else {
+				r_player_blood = _result;
+			};
 		};
 	};
 	

@@ -147,7 +147,6 @@ if (_qty >= _qty_in) then {
 					_okToSell = true;
 					if(_okToSell and !isNull _obj and alive _obj) then {
 			
-						// Sell Vehicle
 						for "_x" from 1 to _qty_out do {
 							player addMagazine _part_out;
 						};

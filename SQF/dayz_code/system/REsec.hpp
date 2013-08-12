@@ -21,7 +21,7 @@
 #ifndef TRACED_LIB
 #define TRACED_LIB [ "execVM", "JIPexec", "JIPrequest", "say", "playmove", "switchmove", "titleText" ]
 // uncomment following line to log all incoming allowed RE
-#define RESEC_VERBOSE
+// #define RESEC_VERBOSE
 #endif
 
 // Special logic for execVM, only these whitelisted scripts will be spawned

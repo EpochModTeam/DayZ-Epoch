@@ -58,8 +58,6 @@ _cookedmeat = meatcooked;
 		if (_finished) then {
 
 			_removed = _removed + ([player,_meat,_qty] call BIS_fnc_invRemove);
-
-			// Add only number of items removed
 			for "_x" from 1 to _removed do {
 				player addMagazine _meatcooked;
 			};

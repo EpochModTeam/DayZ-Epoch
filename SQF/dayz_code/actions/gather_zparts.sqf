@@ -3,15 +3,15 @@ private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finis
 if(TradeInprogress) exitWith { cutText ["Gutting zombie already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
+player removeAction s_player_butcher;
+s_player_butcher = 1;
+
 _item = _this select 3;
 _hasKnife = 	"ItemKnife" in items player;
 _hasKnifeBlunt = 	"ItemKnifeBlunt" in items player;
 _type = typeOf _item;
 _hasHarvested = _item getVariable["meatHarvested",false];
 //_config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
-
-player removeAction s_player_butcher;
-s_player_butcher = 1;
 
 if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type
@@ -69,14 +69,9 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 		_qty = 1;
 	
-		_array = [_item,_qty];
-	
-		if (local _item) then {
-			_array spawn local_gutObjectZ;
-		} else {
-			dayzGutBody = _array;
-			publicVariable "dayzGutBodyZ";
-		};
+		dayzGutBody = [_item,_qty];
+		dayzGutBody spawn local_gutObjectZ;		
+		publicVariable "dayzGutBodyZ";
 		
 		// Reduce humanity for gutting zeds
 		_humanity = player getVariable["humanity",0];

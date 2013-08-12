@@ -11,7 +11,7 @@ TradeInprogress = true;
 // temp array of removed parts 
 _temp_removed_array = [];
 _abort = false;
-_distance = 2;
+_distance = 3;
 _reason = "";
 
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;

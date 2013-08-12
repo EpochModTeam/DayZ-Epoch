@@ -47,7 +47,7 @@
 1 "M_" !="G_40mm_HE" //!="40mm_" //keep monitoring to catch obvious abuse
 5 "Parachute" !="ParachuteWest" //under monitoring
 1 "dog" //until released not welcome
-5 "Land_" !="Land_Fire_DZ" !="Land_HBarrier1_DZ"
+5 "Land_" !="Land_Fire_DZ" !="Land_HBarrier1_DZ" !="Land_HBarrier3_DZ"
 5 "BBarracks"
 1 "_ep1" !="DZ_Patrol_Pack_EP1" !="DZ_CivilBackpack_EP1" !="CZ_VestPouch_EP1" !="DZ_ALICE_Pack_EP1" !="DZ_Backpack_EP1" !="DZ_Assault_Pack_EP1" !="DZ_TK_Assault_Pack_EP1"
 1 "_baf"

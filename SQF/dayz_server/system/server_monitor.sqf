@@ -36,7 +36,6 @@ if(_outcome == "PASS") then {
 	};
 		
 	if(isDedicated) then {
-		//["dayzSetDate",_date] call broadcastRpcCallAll;
 		setDate _date;
 		dayzSetDate = _date;
 		publicVariable "dayzSetDate";
@@ -67,7 +66,7 @@ if (isServer and isNil "sm_done") then {
 		diag_log "HIVE: trying to get objects";
 		_key = format["CHILD:302:%1:", dayZ_instance];
 		_hiveResponse = _key call server_hiveReadWrite;  
-		if ((((isnil "_hiveResponse") || {(typeName _hiveResponse != "ARRAY")}) || {((typeName (_hiveResponse select 1)) != "SCALAR")}) || {(_hiveResponse select 1 > 2000)}) then {
+		if ((((isnil "_hiveResponse") || {(typeName _hiveResponse != "ARRAY")}) || {((typeName (_hiveResponse select 1)) != "SCALAR")})) then {
 			diag_log ("HIVE: connection problem... HiveExt response:"+str(_hiveResponse));
 			_hiveResponse = ["",0];
 		} 
@@ -232,7 +231,7 @@ if (isServer and isNil "sm_done") then {
 				if (!((typeOf _object) in dayz_allowedObjects)) then {
 					
 					_object setvelocity [0,0,1];
-					_object call fnc_vehicleEventHandler;			
+					_object call fnc_veh_ResetEH;		
 					
 					if(_ownerID != "0") then {
 						_object setvehiclelock "locked";
@@ -275,14 +274,21 @@ if (isServer and isNil "sm_done") then {
 		OldHeliCrash = false;
 	};
 
+	allowConnection = true;
+
 	// [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
 	if(OldHeliCrash) then {
 		nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', HeliCrashArea, true, false] spawn server_spawnCrashSite;
 	};
 
-	// Epoch Events
-	nul = [] spawn server_spawnEvents;
+	if (isDedicated) then {
+		// Epoch Events
+		_id = [] spawn server_spawnEvents;
+		// server cleanup
+		_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
+	};
 
-	allowConnection = true;
+	
 	sm_done = true;
+	publicVariable "sm_done";
 };

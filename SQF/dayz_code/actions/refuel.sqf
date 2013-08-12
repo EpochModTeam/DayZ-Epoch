@@ -106,17 +106,12 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					if(([player,_canName] call BIS_fnc_invRemove) == 1) then {
 	
 						dayzSetFuel = [_vehicle,_newFuel];
-						if (local _vehicle) then {
-							dayzSetFuel spawn local_setFuel;
-						};
+						dayzSetFuel spawn local_setFuel;
 						publicVariable "dayzSetFuel";
 
 						// Play sound
 						[player,"refuel",0,false] call dayz_zombieSpeak;
-						
-						// Add filled can
 						player addMagazine _canName+"Empty";
-				
 						cutText [format[localize "str_player_05",_nameText,_canSize], "PLAIN DOWN"];
 
 						call fnc_usec_medic_removeActions;

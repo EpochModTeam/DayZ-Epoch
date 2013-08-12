@@ -98,7 +98,7 @@ _key call server_hiveWrite;
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
-	_object call fnc_vehicleEventHandler;
+	_object call fnc_veh_ResetEH;
 	
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
 	dayzVehicleInit = _object;

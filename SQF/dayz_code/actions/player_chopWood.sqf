@@ -20,20 +20,7 @@ _findNearestTree = [];
 			
 		if (alive _x) then {
 				
-			_objInfo = toArray(str(_x));
-			_lenInfo = count _objInfo - 1;
-			_objName = [];
-			_i = 0;
-			// determine where the object name starts
-			{
-				if (58 == _objInfo select _i) exitWith {};
-				_i = _i + 1;
-			} forEach _objInfo;
-			_i = _i + 2; // skip the ": " part
-			for "_k" from _i to _lenInfo do {
-				_objName = _objName + [_objInfo select _k];
-			};
-			_objName = toLower(toString(_objName));
+			_objName = _x call DZE_getModelName;
 
 			// Exit since we found a tree
 			if (_objName in _trees) exitWith { 

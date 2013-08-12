@@ -3,11 +3,25 @@ private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_
 if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
 
-// Get all nearby vehicles within 10m
-_findNearestVehicles = nearestObjects [player, ["AllVehicles"], 10];
+_isVehicle = false;
+
+_vehicleSrc = 	_this select 3;
+
+if(!(isNull _vehicleSrc)) then {
+
+	_isVehicle = ((_vehicleSrc isKindOf "AllVehicles") and !(_vehicleSrc isKindOf "Man"));
+	// If fuel source is vehicle get actual capacity
+	_configSrcVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicleSrc);
+	_capacitySrc = 	getNumber(_configVeh >> "fuelCapacity");
+	_nameTextSrc = 	getText(_configVeh >> "displayName");
+};
+
+// Get all nearby vehicles within 30m
+_findNearestVehicles = nearestObjects [player, ["AllVehicles"], 30];
 _findNearestVehicle = [];
 {
-	if (alive _x and !(_x isKindOf "Man")) then {
+	//diag_log ("FILL = " + str(_x) + " = " + str(_vehicleSrc));
+	if (alive _x and !(_x == _vehicleSrc) and !(_x isKindOf "Man")) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
 } foreach _findNearestVehicles;
@@ -24,7 +38,6 @@ if(_IsNearVehicle >= 1) then {
 	_capacity = 	getNumber(_configVeh >> "fuelCapacity");
 	_nameText = 	getText(_configVeh >> "displayName");
 
-	
 	_isOk = true;
 	// perform fuel up
 	while {_isOk} do {
@@ -76,25 +89,44 @@ if(_IsNearVehicle >= 1) then {
 
 		if (_finished) then {
 
-			// Get vehicle fuel levels again
-			_curFuel = 		((fuel _vehicle) * _capacity);
-			_newFuel = 		(_curFuel + _canSize);
+			_isFillok = true;
 
-			if (_newFuel > _capacity) then {_newFuel = _capacity; _abort = true; };
+			// add checks for fuel level
+			if(_isVehicle) then {
+				_curFuelSrc = 		((fuel _vehicleSrc) * _capacitySrc);
+				_newFuelSrc = 		(_curFuelSrc - _canSize);
 
-			// calculate minimum needed fuel
-			_newFuel = (_newFuel / _capacity);
-
-			dayzSetFuel = [_vehicle,_newFuel];
-			if (local _vehicle) then {
-				dayzSetFuel spawn local_setFuel;
+				// calculate new fuel
+				_newFuelSrc = (_newFuelSrc / _capacitySrc);
+				if (_newFuelSrc > 0) then {
+					dayzSetFuel = [_vehicleSrc,_newFuelSrc];
+					dayzSetFuel spawn local_setFuel;
+					publicVariable "dayzSetFuel";
+				} else {
+					_isFillok = false;
+					_abort = true;
+				};
 			};
-			publicVariable "dayzSetFuel";
+			
+			if (_isFillok) then {
+				// Get vehicle fuel levels again
+				_curFuel = 		((fuel _vehicle) * _capacity);
+				_newFuel = 		(_curFuel + _canSize);
 
-			// Play sound
-			[player,"refuel",0,false] call dayz_zombieSpeak;
+				if (_newFuel > _capacity) then {_newFuel = _capacity; _abort = true; };
 
-			cutText [format["%1 filled to %2 percent capacity.",_nameText,round(_newFuel*100)], "PLAIN DOWN"];
+				// calculate minimum needed fuel
+				_newFuel = (_newFuel / _capacity);
+
+				dayzSetFuel = [_vehicle,_newFuel];
+				dayzSetFuel spawn local_setFuel;
+				publicVariable "dayzSetFuel";
+
+				// Play sound
+				[player,"refuel",0,false] call dayz_zombieSpeak;
+
+				cutText [format["%1 filled to %2 percent capacity.",_nameText,round(_newFuel*100)], "PLAIN DOWN"];
+			};
 		};
 
 		if(_abort) exitWith {};

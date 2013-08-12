@@ -85,9 +85,8 @@ if (_vehicle != player) then {
 		private[];
 		_tPos = (getPosASL _vehicle);
 		_zPos = (getPosASL _unit);
-		_onSameFloor = ((abs((_tPos select 2) - (_tPos select 2)) < 1.3));
 		_inAngle = [_zPos,(getdir _unit),50,_tPos] call fnc_inAngleSector;
-		if (_onSameFloor and _inAngle) then {
+		if (_inAngle) then {
 			//LOS check
 			_cantSee = [_unit,_vehicle] call dayz_losCheck;
 			if (!_cantSee) then {

@@ -1,4 +1,8 @@
-private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_isBuilding","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_buildings","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole"];
+/*
+	DayZ Base Building
+	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+*/
+private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText"];
 
 if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -8,6 +12,9 @@ _isWater = 		(surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 _cancel = false;
 _reason = "";
 _canBuildOnPlot = false;
+DZE_BuildingZ = 0;
+
+DZE_5 = false;
 
 call gear_ui_init;
 
@@ -17,15 +24,14 @@ if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = f
 
 _item =			_this;
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
+_classnametmp = _classname;
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
-
-_needNearby =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "needNearby");
-
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
+
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
-_isWorkBench = (_classname == "WorkBench_DZ");
 
 _distance = 30;
 _needText = "Plot Pole";
@@ -34,66 +40,42 @@ if(_isPole) then {
 	_distance = 45;
 };
 
-if((count _needNearby) == 0) then {
-	_needNearby = ["Plastic_Pole_EP1_DZ"];
-} else {
-	if("dayz_fuelpumparray" in _needNearby) then {
-		_needNearby = dayz_fuelpumparray;
-		_needText = "Fuel Pump";
-	};
-	if("dayz_fuelsources" in _needNearby) then {
-		_needNearby = dayz_fuelsources;
-		_needText = "Fuel Tanks";
-	};
-};
-
 // check for near plot
-_findNearestPoles = nearestObjects [(vehicle player), _needNearby, _distance];
+_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], _distance];
 _findNearestPole = [];
 
-{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
+{
+	if (alive _x) then {
+		_findNearestPole set [(count _findNearestPole),_x];
+	};
+} foreach _findNearestPoles;
+
 _IsNearPlot = count (_findNearestPole);
 
 // If item is plot pole and another one exists within 45m
 if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["Cannot build plot pole within 45m of an existing plot." , "PLAIN DOWN"]; };
 
 if(_IsNearPlot == 0) then {
-
-	// Allow building of plot
-	if(_isPole or _isWorkBench) then {
-		_canBuildOnPlot = true;
-	};
-	
+	_canBuildOnPlot = true;
 } else {
-	// Since there are plots nearby we check for ownership and then for friend status
+	
+	// check nearby plots ownership and then for friend status
+	_nearestPole = _findNearestPole select 0;
 
-	if("Plastic_Pole_EP1_DZ" in _needNearby) then {
-		_nearestPole = _findNearestPole select 0;
+	// Find owner 
+	_ownerID = _nearestPole getVariable["CharacterID","0"];
 
-		// Find owner 
-		_ownerID = _nearestPole getVariable["CharacterID","0"];
+	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
-		// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
-
-		// check if friendly to owner
-		if(dayz_characterID == _ownerID) then {
-			// owner can build anything within his plot except other plots
-			if(!_isPole) then {
-				_canBuildOnPlot = true;
-			};
-		
-		} else {
-			// disallow building plot
-			if(!_isPole) then {
-				_friendlies		= player getVariable ["friendlyTo",[]];
-				// check if friendly to owner
-				if(_ownerID in _friendlies) then {
-					_canBuildOnPlot = true;
-				};
-			};
-		};
+	// check if friendly to owner
+	if(dayz_characterID == _ownerID) then {
+		_canBuildOnPlot = true;		
 	} else {
-		_canBuildOnPlot = true;
+		_friendlies		= player getVariable ["friendlyTo",[]];
+		// check if friendly to owner
+		if(_ownerID in _friendlies) then {
+			_canBuildOnPlot = true;
+		};
 	};
 };
 
@@ -114,60 +96,118 @@ if (!_hasrequireditem) exitWith {TradeInprogress = false; cutText [format["Missi
 if (_hasrequireditem) then {
 
 	_location = [0,0,0];
-	_dir = getDir player;
-
-	player allowDamage false;
 	
-	_position = player modeltoworld _offset;
-	_position = [(_position select 0),(_position select 1), 0];
-
-	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-
-	_object setDir _dir;
-
-	_object setPos _position;
-	
-	_object allowDamage false;
-
-	_object attachTo [player];
-
 	_counter = 0;
 	_isOk = true;
 
 	while {_isOk} do {
 		
-		if (player getVariable["combattimeout", 0] >= time) exitWith {
-			_isOk = false;
-			_cancel = true;
-			_reason = "Cannot build while in combat.";
+		
+
+		if(_counter == 0) then {
+			// get inital players position
+			_location1 = getPosATL player;
+			_dir = getDir player;
+			_position = player modeltoworld _offset;
+			_position = [(_position select 0),(_position select 1), (_position select 2)];
+			hintSilent str (_position);
+
+			// if ghost preview available use that instead
+			_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
+			if (_ghost == "") then {
+				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+			} else {
+				_classname = _ghost;
+				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+			};
+	
+			_object setDir _dir;
+			_object setPos _position;
+			_object attachTo [player];
 		};
 
-		cutText ["Planning construction stand still 5 seconds to build.", "PLAIN DOWN"];
+		_zheightchanged = false;
+
+		if (DZE_Q) then {
+			DZE_Q = false;
+			DZE_BuildingZ = DZE_BuildingZ + 0.1;
+			_zheightchanged = true;
+		};
+		if (DZE_Z) then {
+			DZE_Z = false;
+			DZE_BuildingZ = DZE_BuildingZ - 0.1;
+			
+			_zheightchanged = true;
+		};
 		
-		_location1 = getPosATL player;
-		sleep 5;
+		if(_zheightchanged) then {
+			detach _object;
+			deleteVehicle _object;
+
+			_dir = getDir player;
+			_position = player modeltoworld _offset;
+			_position = [(_position select 0),(_position select 1), (_position select 2)+DZE_BuildingZ];
+
+			hintSilent str (_position);
+
+			// if ghost preview available use that instead
+			
+			if (_ghost == "") then {
+				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+			} else {
+				_classname = _ghost;
+				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+			};
+	
+			_object setDir _dir;
+			_object setPos _position;
+			_object attachTo [player];
+		};
+
+		cutText ["Planning construction numpad 8 = up, numpad 2 = down, and numpad 5 to start building.", "PLAIN DOWN"];
+		
+		_location0 = getPosATL player;
+
+		sleep 1;
+
 		_location2 = getPosATL player;
 
-		if(_location1 distance _location2 < 0.1) exitWith {
+		if(DZE_5) exitWith {
 			_isOk = false;
+			detach _object;
+			deleteVehicle _object;
 		};
 
 		if(_location1 distance _location2 > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Moving to fast."; 
+			detach _object;
+			deleteVehicle _object;
 		};
 		
-		if(_counter >= 3) exitWith {
+		if(_counter >= 45) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Ran out of time to find position."; 
+			detach _object;
+			deleteVehicle _object;
 		};
 		_counter = _counter + 1;
+
+		if (player getVariable["combattimeout", 0] >= time) exitWith {
+			_isOk = false;
+			_cancel = true;
+			_reason = "Cannot build while in combat.";
+			detach _object;
+			deleteVehicle _object;
+		};
 	};
 
-	detach _object;
-	deleteVehicle _object;
+
+	_classname = _classnametmp;
+
+	
 
 
 	// Start Build 
@@ -178,31 +218,19 @@ if (_hasrequireditem) then {
 	
 	// Get position based on player
 	_location = player modeltoworld _offset;
+	
+	_location = [(_location select 0),(_location select 1),(_position select 2)];
+
+	hintSilent str (_location);
+	
+	_tmpbuilt setpos _location;
 
 	// No building on roads
 	if (isOnRoad _location) then { _cancel = true; _reason = "Cannot build on a road."; };
 
-	// set building with ground
-	_location = [(_location select 0),(_location select 1), 0];
-	_tmpbuilt setpos _location;
-	
-	// set building with offset
-	// _tmpbuilt setpos _location;
-
-	player allowDamage true;
-
-	// testing new way of finding building
-	_buildings = nearestObjects [(vehicle player), ["Building"], 100];
-	{
-		_isBuilding = [(vehicle player),_x] call fnc_isInsideBuilding;
-		if(_isBuilding) exitWith {
-			_cancel = true;
-			_reason = "Cannot build inside another building.";
-		};
-	} forEach _buildings;
-
 	// No building in trader zones
 	if(!canbuild) then { _cancel = true; _reason = "Cannot build in a city."; };
+	if(!placevault) then { _cancel = true; _reason = "Cannot build in a city."; };
 
 	if(!_cancel) then {
 

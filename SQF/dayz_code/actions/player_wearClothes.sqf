@@ -39,9 +39,10 @@ if ( (isClass(_config >> _itemNew)) ) then {
 			// Get model name from config
 			_model = getText (configFile >> "CfgSurvival" >> "Skins" >> _item >> "playerModel");
 			if (_model != _myModel) then {
-				player removeMagazine _item;
-				player addMagazine _itemNew;
-				[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
+				if(([player,_item] call BIS_fnc_invRemove) == 1) then {
+					player addMagazine _itemNew;
+					[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
+				};
 			};
 
 		} else {

@@ -1,21 +1,4 @@
 private ["_character","_magazines","_force","_characterID","_charPos","_isInVehicle","_timeSince","_humanity","_debug","_distance","_isNewMed","_isNewPos","_isNewGear","_playerPos","_playerGear","_playerBackp","_medical","_distanceFoot","_lastPos","_backpack","_kills","_killsB","_killsH","_headShots","_lastTime","_timeGross","_timeLeft","_currentWpn","_currentAnim","_config","_onLadder","_isTerminal","_currentModel","_modelChk","_muzzles","_temp","_currentState","_array","_key","_pos","_forceGear"];
-//[player,array]
-//diag_log ("UPDATE: " + str(_this) );
-
-//waituntil {(typeName(_this) == "ARRAY");sleep 0.01;};	//seems to cause often infinite waits (but not for first n players)
-
-//this only happens when we don't follow the correct parameter format...
-//(like supplying just the player object instead of the array in player_eat.sqf)
-//i've fixed this in player_eat so i can comment this part out
-/*if ( typeName(_this) == "OBJECT" ) then {
-	_this = [_this,[],true];
-	//diag_log ("DW_DEBUG: #manual fix _this: " + str(_this));
-};*/
-
-//correct
-//"UPDATE: [B 1-1-B:1 (THE BEAST) REMOTE,[],true]"
-//error
-//"UPDATE: B 1-1-B:1 (THE BEAST) REMOTE"
 
 _character = 	_this select 0;
 _magazines =	_this select 1;
@@ -29,38 +12,41 @@ _isInVehicle = 	vehicle _character != _character;
 _timeSince = 	0;
 _humanity =		0;
 
-//diag_log ("DW_DEBUG: (isnil _characterID): " + str(isnil "_characterID"));
-/*
-if !(isnil "_characterID") then {
-diag_log ("DW_DEBUG: _characterID: " + str(_characterID));
-};
-*/
+#ifdef DZE_SERVER_DEBUG_SYNC
+diag_log ("DW_DEBUG: (isnil _characterID): " + str(isnil "_characterID"));
+#endif
 
 if (_character isKindOf "Animal") exitWith {
+#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " is an Animal class");
+#endif
 };
 
 if (isnil "_characterID") exitWith {
+#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " has nil characterID");	
+#endif
 };
 
 if (_characterID == "0") exitWith {
+#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " as no characterID");
+#endif
 };
 
 private["_debug","_distance"];
 _debug = getMarkerpos "respawn_west";
 _distance = _debug distance _charPos;
 if (_distance < 2000) exitWith { 
+	#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log format["ERROR: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3",name _character,_characterID,_charPos];
+	#endif
 };
 
 //Check for server initiated updates
 _isNewMed =		_character getVariable["medForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
 _isNewPos =		_character getVariable["posForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
 _isNewGear =	(count _magazines) > 0;
-
-//diag_log ("Starting Save... MED: " + str(_isNewMed) + " / POS: " + str(_isNewPos)); sleep 0.05;
 
 //Check for player initiated updates
 if (_characterID != "0") then {

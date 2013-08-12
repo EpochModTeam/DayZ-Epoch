@@ -13,8 +13,7 @@
 
 #define EAST 0 // (Russian)
 
-#include "basicdefines.hpp"
-#include "safegui.hpp"
+#include "Configs\basicdefines.hpp"
 
 class CfgPatches {
 	class dayz_code {
@@ -41,7 +40,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.1.5";
+		version = "1.0.1.8";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -219,17 +218,21 @@ class RscStructuredTextGUI: RscStructuredText
 };
 };
 //#include "CfgWorlds.hpp"
-#include "cfgMoves.hpp"
-#include "rscTitles.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgVoice.hpp"
-#include "CfgIdentities.hpp"
-#include "CfgFaces.hpp"
-#include "CfgMagazines.hpp"
-#include "cfgLoot.hpp"
-#include "CfgMarkers.hpp"
-#include "CfgAmmo.hpp"
+#include "Configs\cfgMoves.hpp"
+#include "Configs\rscTitles.hpp"
+
+#include "Configs\safegui.hpp"
+#include "Configs\dialog.hpp"
+
+#include "Configs\CfgVehicles.hpp"
+#include "Configs\CfgWeapons.hpp"
+#include "Configs\CfgVoice.hpp"
+#include "Configs\CfgIdentities.hpp"
+#include "Configs\CfgFaces.hpp"
+#include "Configs\CfgMagazines.hpp"
+#include "Configs\cfgLoot.hpp"
+#include "Configs\CfgMarkers.hpp"
+#include "Configs\CfgAmmo.hpp"
 
 class CfgSurvival {
 	class Inventory {
@@ -493,6 +496,7 @@ class CfgBuildingLoot {
 		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_suit1","z_suit2","z_worker1","z_worker2","z_worker3","z_villager1","z_villager2","z_villager3"};
 		lootChance = 0;
 		lootPos[] = {};
+		lootPosSmall[] = {};
 		itemType[] = {};
 		itemChance[] = {};
 		hangPos[] = {};
@@ -544,8 +548,8 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
 			{ "PartWoodPile","magazine" },
-			{ "","clothes" },
-			{ "","specialclothes" },
+			{ "clothes","single" },
+			{ "specialclothes","single" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
 			{"MR43","weapon"},			
 	};
@@ -623,8 +627,8 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
 			{ "PartWoodPile","magazine" },
-			{ "","clothes" },
-			{ "","specialclothes" },
+			{ "clothes","single" },
+			{ "specialclothes","single" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
 			{ "ItemBriefcaseEmpty","magazine" },
 	};
@@ -671,18 +675,19 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] = {
-			{ "WeaponHolder_ItemGenerator","object" },
+			{ "ItemGenerator","magazine" },
+			{"ItemFuelPump","magazine"},
 			{"ItemFuelBarrel","magazine"},
 			{ "","generic" },
 			{ "","trash" },
 			{ "","military" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
-			{ "WeaponHolder_PartVRotor","object" },
-			{ "WeaponHolder_ItemJerrycan","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
+			{ "PartVRotor","magazine" },
+			{ "ItemJerrycan","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
@@ -691,9 +696,10 @@ class CfgBuildingLoot {
 			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
-			0.001,
-			0.001,
-			0.188,
+			0.003,
+			0.003,
+			0.003,
+			0.18,
 			0.29,
 			0.04,
 			0.04,
@@ -718,18 +724,18 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] = {
-			{ "WeaponHolder_ItemGenerator","object" },
+			{ "ItemGenerator","magazine" },
 			{"ItemFuelPump","magazine"},
 			{ "","generic" },
 			{ "","trash" },
 			{ "","military" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
-			{ "WeaponHolder_PartVRotor","object" },
-			{ "WeaponHolder_ItemJerrycan","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
+			{ "PartVRotor","magazine" },
+			{ "ItemJerrycan","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
@@ -738,9 +744,9 @@ class CfgBuildingLoot {
 			{"ItemKeyKit","weapon"}
 	};
 		itemChance[] =	{
-			0.001,
-			0.001,
-			0.188,
+			0.005,
+			0.005,
+			0.18,
 			0.29,
 			0.04,
 			0.04,
@@ -765,7 +771,7 @@ class CfgBuildingLoot {
 		lootChance = 0.5;
 		lootPos[] = {};
 		itemType[] = {
-			{ "WeaponHolder_ItemJerrycan","object" },
+			{ "ItemJerrycan","magazine" },
 			{ "","generic" },
 			{ "huntingrifle","weapon" },
 			{ "LeeEnfield","weapon" },
@@ -774,6 +780,7 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{ "PartWoodPile","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
+			{ "ItemShovel","weapon" },
 			{ "MR43","weapon" },
 			{"ItemFuelBarrel","magazine"},
 			{ "WeaponHolder_ItemMachete", "object"},
@@ -789,11 +796,12 @@ class CfgBuildingLoot {
 			0.21,
 			0.03,
 			0.085,
-			0.15,
+			0.10,
+			0.05,
 			0.06,
-			0.005,
+			0.001,
 			0.03,
-			0.01,
+			0.014,
 			0.02
 		};
 	};
@@ -898,7 +906,7 @@ class CfgBuildingLoot {
 			{ "NVGoggles","weapon" },
 			{ "AmmoBoxSmall_556","object" },
 			{ "AmmoBoxSmall_762","object" },
-			{ "","militaryclothes" },
+			{ "militaryclothes","single" },
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
@@ -953,7 +961,7 @@ class HeliCrash_No50s: Default {
 			{"NVGoggles","weapon"},
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
-			{ "","militaryclothes" },
+			{ "militaryclothes","single" },
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
@@ -1110,27 +1118,27 @@ class HeliCrash_No50s: Default {
 			{ "M16A2","weapon" },
 			{ "M16A2GL","weapon" },
 			{ "M9SD","weapon" },
-			{ "WeaponHolder_PartGeneric","object" },
+			{ "PartGeneric","magazine" },
 			{ "M4A1_Aim","weapon" },
 			{ "AKS_74_kobra","weapon" },
 			{ "AKS_74_U","weapon" },
 			{ "AK_47_M","weapon" },
 			{ "M24","weapon" },
 			{ "M1014","weapon" },
-			{ "WeaponHolder_ItemGenerator","object" },
+			{ "ItemGenerator","magazine" },
 			{ "M4A1","weapon" },
 			{ "M14_EP1","weapon" },
 			{ "UZI_EP1","weapon" },
 			{ "Remington870_lamp","weapon" },
 			{ "glock17_EP1","weapon" },
-			{ "WeaponHolder_PartWheel","object" },
+			{ "PartWheel","magazine" },
 			{ "MP5SD","weapon" },
 			{ "M4A3_CCO_EP1","weapon" },
 			{ "Binocular","weapon" },
 			{ "ItemFlashlightRed","military" },
 			{ "ItemKnife","military" },
 			{ "ItemGPS","weapon" },
-			{ "WeaponHolder_PartVRotor","object" },
+			{ "PartVRotor","magazine" },
 			
 			{"DZ_ALICE_Pack_EP1","object"}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
@@ -1263,7 +1271,7 @@ class HeliCrash_No50s: Default {
 			{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
-			{ "","militaryclothes" },
+			{ "militaryclothes","single" },
 		};
 		itemChance[] =	{
 			0.011,
@@ -1435,7 +1443,7 @@ class HeliCrash_No50s: Default {
 	};
 	class Land_A_Hospital: hospital {
 		lootChance = 0.9;
-		lootPos[] = {{8.30273,-0.921875,-6.89966},{2.32813,-3.57422,-6.36466},{-1.40234,-4.0293,-6.36466},{0.807129,-1.16333,-7.33966},{-7.23389,-2.63647,-7.33966},{-16.3687,-2.40381,-7.33966},{-12.2847,-3.19604,-7.33966},{4.40674,-3.50513,-7.33966},{-3.2666,-0.925293,-7.33966},{6.85693,-2.75146,-7.33966},{11.0151,-3.95435,-7.33966},{16.8198,-4.71118,-7.33966},{-1.12793,3.78418,-7.44939},{12.7476,0.142822,3.29184},{10.2661,-1.21558,3.29184}};
+		lootPos[] = {{8.30273,-0.921875,-6.89966},{2.32813,-3.57422,-6.36466},{-1.40234,-4.0293,-6.36466},{0.807129,-1.16333,-7.33966},{-7.23389,-2.63647,-7.33966},{-16.3687,-2.40381,-7.33966},{-12.2847,-3.19604,-7.33966},{4.40674,-3.50513,-7.33966},{-3.2666,-0.925293,-7.33966},{6.85693,-2.75146,-7.33966},{11.0151,-3.95435,-7.33966},{16.8198,-4.71118,-7.33966},{-1.12793,3.78418,-7.44939},{12.7476,0.142822,3.29184},{10.2661,-1.21558,3.29184}};		
 	};
 	class Land_Panelak: Office {
 		lootPos[] = {{-2.76904,-6.26563,0.0714226},{-2.93896,-1.3916,0.0714226},{-5.42065,-3.13184,0.0714226},{-6.81128,-6.15527,0.0714221},{-4.00879,2.53027,0.0714226},{-0.730957,-3.20117,2.77144},{3.979,-7.08936,2.77144},{2.49609,2.93701,2.77144},{6.7373,1.63281,2.77144},{6.38525,-2.3916,2.77144},{6.80615,-5.77295,2.77144},{3.75122,-0.803711,2.77144},{-0.824219,1.86914,1.32865}};
@@ -1448,9 +1456,6 @@ class HeliCrash_No50s: Default {
 	};
 	class Land_Shed_wooden: Residential {
 		lootPos[] = {{1.26807,-0.361328,-1.29153},{-0.342773,1.0293,-1.29153}};
-	};
-	class Land_Misc_PowerStation: Industrial {
-		lootPos[] = {{4.09888,4.89746,-1.26743},{4.22827,-1.19873,-1.2681}};
 	};
 	class Land_HouseBlock_A1_1: Residential {
 		lootPos[] = {{-3.52881,0.158936,-4.74365},{-3.56152,-2.33484,-4.73106}};
@@ -1584,10 +1589,7 @@ class HeliCrash_No50s: Default {
 		maxRoaming = 3;
 		lootPos[] = {};
 	}; // Qty: 103
-	class Land_HouseV_1L2: Residential {
-		maxRoaming = 3;
-		lootPos[] = {};
-	}; // Qty: 101
+	
 	class Land_HouseV_1T: Residential {
 		maxRoaming = 3;
 		lootPos[] = {};
@@ -1679,7 +1681,7 @@ class HeliCrash_No50s: Default {
 	class Land_HouseV_2T1: HouseRoaming{};
 	class Land_houseV_2T2: HouseRoaming{};
 	class Land_HouseV_3I2: HouseRoaming{};
-	class Land_HouseV_3I3: HouseRoaming{};
+	
 	class Land_HouseBlock_A1: HouseRoaming{};
 	class Land_HouseBlock_A1_2: HouseRoaming{};
 	class Land_HouseBlock_A2: HouseRoaming{};
@@ -1720,8 +1722,21 @@ class HeliCrash_No50s: Default {
 		maxRoaming = 4;
 	};
 
+	class Land_HouseV_1L2: Residential {
+		maxRoaming = 3;
+		lootPos[] = {};
+	}; // Qty: 101
 
-	
+	class Land_Misc_PowerStation: Industrial {
+		lootPos[] = {{4.09888,4.89746,-1.26743},{4.22827,-1.19873,-1.2681}};
+	};
+
+	class Land_HouseV_3I3: HouseRoaming{};
+
+	class Land_Mil_Guardhouse: Military {
+		lootPos[] = {{-2.53271,3.17871,-1.66939},{-2.39014,0.878906,-1.66939}};
+	};
+
 	// DAYZ AMP More buildings
 	class Mass_grave_DZ: HouseRoaming {	
 		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3","z_doctor","z_soldier_pilot","z_soldier_heavy"};
@@ -1968,11 +1983,11 @@ class HeliCrash_No50s: Default {
 			{ "ItemToolbox","weapon" },
 			{ "","generic" },
 			{ "","food" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
 			{ "WeaponHolder_ItemJerrycan","object" }
 		};
 		itemChance[] = {
@@ -2018,12 +2033,12 @@ class HeliCrash_No50s: Default {
 			{ "ItemToolbox","weapon" },
 			{ "","generic" },
 			{ "","food" },
-			{ "WeaponHolder_PartGeneric","object" },
-			{ "WeaponHolder_PartWheel","object" },
-			{ "WeaponHolder_PartFueltank","object" },
-			{ "WeaponHolder_PartEngine","object" },
-			{ "WeaponHolder_PartGlass","object" },
-			{ "WeaponHolder_PartVRotor","object" },
+			{ "PartGeneric","magazine" },
+			{ "PartWheel","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
+			{ "PartVRotor","magazine" },
 			{ "WeaponHolder_ItemJerrycan","object" }
 		};
 		itemChance[] = {
@@ -2840,11 +2855,10 @@ class HeliCrash_No50s: Default {
 			{-1.22461,-2.17969,2.28329},
 			{1.14844,-2.9707,2.28329}};
 	};
-	// Greenhouse - Also affects chernarus
+	// blue trailer - Also affects chernarus
 	class Land_Shed_M02: Industrial
 	{
-		lootPos[] = {
-			{-8.28613,-5.3457,-0.277144}};
+		//lootPos[] = {{-8.28613,-5.3457,-0.277144}};
 	};
 	class Land_sara_Domek_sedy: Residential
 	{
@@ -3207,9 +3221,7 @@ class HeliCrash_No50s: Default {
 	class land_st_vez: MilitarySpecial {
 		lootPos[] = {{-5.56445,4.23975,-3.31476},{-5.05566,-3.17627,-3.31476},{4.12109,3.92822,2.42732},{-1.73389,2.68896,6.40834},{-4.23584,1.29736,6.40834},{-3.80322,-1.09277,6.40834},{0.430664,1.31787,6.40834},{-2.45166,-2.16748,6.40834},{-0.608398,-0.57666,-11.095},{-2.08691,1.10303,-11.0649},{0.259277,-3.89697,-3.31476},{3.9375,3.30957,-8.50825}};
 	};
-	class Land_Mil_Guardhouse: Military {
-		lootPos[] = {{-2.53271,3.17871,-1.66939},{-2.39014,0.878906,-1.66939}};
-	};
+	
 	class Land_dulni_bs: Residential {
 		lootPos[] = {{2.76758,2.70068,-1.75205},{2.34668,-1.28564,-1.75205},{-0.478516,-2.64844,-1.75205},{-0.53418,3.11133,-1.75205}};
 	};
