@@ -3,8 +3,6 @@ private ["_clientID","_character","_traderid","_retrader","_data","_result","_st
 _character = _this select 0;
 _traderid = _this select 1;
 
-_retrader = [];
-
 _clientID = owner _character;
 diag_log ("HIVE: Menu Request by ClientID: "+ str(_clientID));
 
@@ -12,6 +10,9 @@ diag_log ("HIVE: Menu Request by ClientID: "+ str(_clientID));
 _retrader = call compile format["ServerTcache_%1;",_traderid];
 
 if(isNil "_retrader") then {
+	
+	_retrader = [];
+
 	_key = format["CHILD:399:%1:",_traderid];
 	_data = "HiveEXT" callExtension _key;
 
@@ -32,7 +33,7 @@ if(isNil "_retrader") then {
 			_retrader set [count _retrader,_result];
 		};
 		//diag_log ("HIVE: Streamed " + str(_val) + " objects");
-		call compile format["ServerTcache_%1 = %2;",_tid,_retrader];
+		call compile format["ServerTcache_%1 = %2;",_traderid,_retrader];
 	};
 };
 

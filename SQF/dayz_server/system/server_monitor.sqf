@@ -1,4 +1,4 @@
-private ["_result","_pos","_wsDone","_dir","_block","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_date","_script","_key","_outcome","_vehLimit","_hiveResponse","_objectCount","_codeCount","_objectArray"];
+private ["_result","_pos","_wsDone","_dir","_block","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_date","_script","_key","_outcome","_vehLimit","_hiveResponse","_objectCount","_codeCount","_objectArray","_year","_month","_day","_hour","_minute","_data","_status","_val","_traderid","_retrader","_traderData","_id"];
 []execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
@@ -249,6 +249,44 @@ if (isServer and isNil "sm_done") then {
 		};
 	} forEach _objectArray;
 	// # END OF STREAMING #
+
+
+	// preload server traders menu data into cache
+	{
+		// get tids
+		_traderData = call compile format["menu_%1;",_x];
+		if(!isNil "_traderData") then {
+			{
+				_traderid = _x select 1;
+
+				_retrader = [];
+
+				_key = format["CHILD:399:%1:",_traderid];
+				_data = "HiveEXT" callExtension _key;
+
+				diag_log "HIVE: Request sent";
+		
+				//Process result
+				_result = call compile format ["%1",_data];
+				_status = _result select 0;
+		
+				if (_status == "ObjectStreamStart") then {
+					_val = _result select 1;
+					//Stream Objects
+					diag_log ("HIVE: Commence Menu Streaming...");
+					for "_i" from 1 to _val do {
+						_data = "HiveEXT" callExtension _key;
+						_result = call compile format ["%1",_data];
+						_status = _result select 0;
+						_retrader set [count _retrader,_result];
+					};
+					//diag_log ("HIVE: Streamed " + str(_val) + " objects");
+					call compile format["ServerTcache_%1 = %2;",_traderid,_retrader];
+				};
+
+			} forEach (_traderData select 0);
+		};
+	} forEach serverTraders;
 
 	//  spawn_vehicles
 	_vehLimit = MaxVehicleLimit - _totalvehicles;
