@@ -43,7 +43,7 @@ if(!(alive _item)) then {
 	} else {
 
 		if(_isMan) then { 
-			_regen == 12000; 
+			_regen = 12000; 
 		};
 	};
 
