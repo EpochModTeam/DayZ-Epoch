@@ -7,9 +7,8 @@ _playerID = 	_this select 3;
 _playerName = 	_this select 4;
 _infected =		_this select 5;
 
+_victim = _newObject;
 _victim removeAllEventHandlers "MPHit";
-
-_victim = _this select 2;
 _victimName = _victim getVariable["bodyName", "nil"];
 
 _killer = _victim getVariable["AttackedBy", "nil"];
@@ -57,6 +56,10 @@ if (_killerName != "nil") then
 	_victim setVariable["AttackedFromDistance", "nil", true];
 };
 
+// Might not be the best way...
+if (isnil "dayz_disco") then {
+	dayz_disco = [];
+};
 dayz_disco = dayz_disco - [_playerID];
 _newObject setVariable["processedDeath",time];
 
