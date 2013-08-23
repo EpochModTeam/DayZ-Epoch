@@ -7,6 +7,9 @@ private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_i
 if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
+player removeAction s_player_deleteBuild;
+s_player_deleteBuild = 1;
+
 _obj = _this select 3;
 
 _objOwnerID = _obj getVariable["CharacterID","0"];
@@ -190,3 +193,4 @@ if (_proceed) then {
 	};
 };
 TradeInprogress = false;
+s_player_deleteBuild = -1;
