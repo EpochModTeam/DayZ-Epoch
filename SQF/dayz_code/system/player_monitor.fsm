@@ -986,7 +986,7 @@ class FSM
       name = "Load_In";
       init = /*%FSM<STATEINIT""">*/"//Reveal action types" \n
        "" \n
-       "{player reveal _x} forEach (nearestObjects [getPosATL player, [""AllVehicles"",""WeaponHolder"",""StashSmall"",""StashMedium"",""TentStorage"",""BuiltItems""], 50]);" \n
+       "{player reveal _x} forEach (nearestObjects [getPosATL player, [""AllVehicles"",""WeaponHolder"",""StashSmall"",""StashMedium"",""TentStorage"",""BuiltItems"",""ModularItems"",""DZE_Base_Object""], 50]);" \n
        "" \n
        "dayz_clientPreload = true;" \n
        "3 fadeSound 1;" \n
