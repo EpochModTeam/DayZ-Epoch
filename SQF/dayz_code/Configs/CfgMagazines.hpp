@@ -764,6 +764,17 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
 		descriptionShort = "Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.";
+	};
+
+	class ItemComboLock: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Combination Lock";
+		model = "\z\addons\dayz_epoch\models\combo_lock_mag.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_combolock_ca.paa";
+		descriptionShort = "Used to secure structures from unauthorized entry.";
 
 	};
 	
@@ -1590,10 +1601,11 @@ class CfgMagazines {
 		descriptionShort = "Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!";
 		class ItemActions
 		{
-			class Pitch
-			{
+			class Build {
 				text = "Place Safe";
-				script = "spawn player_vaultPitch;";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "VaultStorageLocked";
 			};
 		};
 	};
@@ -1603,13 +1615,535 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = "Lockbox";
-		model = "\z\addons\dayz_epoch\models\lockbox.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
+		model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
 		descriptionShort = "Semi secure lockbox";
-		
+		class ItemActions
+		{
+			class Build {
+				text = "Place Lockbox";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "LockboxStorageLocked";
+			};
+		};
 	};
 
 
+
+	class ItemWoodFloor: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Floor/Ceiling";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodFloor_DZ";
+			};
+		};
+	};
+	class ItemWoodFloorHalf: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Floor/Ceiling 1/2";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodFloorHalf_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Wood Floor";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"bulk_empty",1},{"ItemWoodFloor",1}};
+				input[] = {{"ItemWoodFloorHalf",2}};
+				
+			};
+		};
+	};
+	class ItemWoodFloorQuarter: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Floor/Ceiling 1/4";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodFloorQuarter_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Wood Floor 1/2";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"bulk_empty",1},{"ItemWoodFloorHalf",1}};
+				input[] = {{"ItemWoodFloorQuarter",2}};
+				
+			};
+		};
+	};
+
+	class ItemWoodStairs: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Stairs";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood stairs";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodStairs_DZ";
+			};
+		};
+	};
+
+	class ItemWoodLadder: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Ladder";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood Ladder";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodLadder_DZ";
+			};
+		};
+	};
+
+	class ItemWoodWall: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Wall";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodSmallWall_DZ";
+			};
+			
+			class Crafting
+			{
+				text = "Craft Doorway";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallDoor",1}};
+				input[] = {{"ItemWoodWall",1}};
+				
+			};
+			class Crafting1
+			{
+				text = "Craft Window";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallWindow",1}};
+				input[] = {{"ItemWoodWall",1},{"PartGlass",1}};
+				
+			};
+			class Crafting2
+			{
+				text = "Craft Large Wall";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallLg",1}};
+				input[] = {{"ItemWoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+				
+			};
+		};
+	};
+	class ItemWoodWallThird: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Wall 1/3";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodSmallWallThird_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Wood Wall";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"bulk_empty",2},{"ItemWoodWall",1}};
+				input[] = {{"ItemWoodWallThird",3}};
+				
+			};
+		};
+	};
+	class ItemWoodWallDoor: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wall w/ Doorway";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wall with doorway constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodSmallWallDoor_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Door";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallWithDoor",1}};
+				input[] = {{"ItemWoodWallDoor",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+				
+			};
+		};
+	};
+	class ItemWoodWallWithDoor: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wall w/ Door";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wall with door constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Land_DZE_WoodDoor";
+			};
+			class Crafting
+			{
+				text = "Craft Locked Door";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallWithDoorLocked",1}};
+				input[] = {{"ItemWoodWallWithDoor",1},{"ItemComboLock",1}};
+				
+			};
+		};
+	};
+	class ItemWoodWallWithDoorLocked: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wall w/ Door Locked";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wall with door constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Land_DZE_WoodDoorLocked";
+			};
+		};
+	};
+
+	
+
+	class ItemWoodWallWindow: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wall w/ Window";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wall with Window constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodSmallWallWin_DZ";
+			};
+		};
+	};
+
+	class ItemWoodWallLg: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Wood Wall";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Large wall constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodLargeWall_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Doorway";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallDoorLg",1}};
+				input[] = {{"ItemWoodWallLg",1}};
+				
+			};
+			class Crafting1
+			{
+				text = "Craft Window";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallWindowLg",1}};
+				input[] = {{"ItemWoodWallLg",1},{"PartGlass",1}};
+				
+			};
+			class Crafting2
+			{
+				text = "Craft Garage Door";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallGarageDoor",1}};
+				input[] = {{"ItemWoodWallLg",1},{"PartWoodLumber",2}};
+				
+			};
+		};
+	};
+
+	class ItemWoodWallGarageDoor: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Garage Door";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Garage door constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Land_DZE_GarageWoodDoor";
+			};
+			class Crafting
+			{
+				text = "Craft Locked Garage Door";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallGarageDoorLocked",1}};
+				input[] = {{"ItemWoodWallGarageDoor",1},{"ItemComboLock",1}};
+				
+			};
+		};
+	};
+	class ItemWoodWallGarageDoorLocked: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Garage Door Locked";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Garage door with combination lock.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Land_DZE_GarageWoodDoorLocked";
+			};
+		};
+	};
+
+	class ItemWoodWallDoorLg: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Wall w/ Doorway";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Large wall with doorway constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodLargeWallDoor_DZ";
+			};			
+			class Crafting
+			{
+				text = "Craft Door";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallWithDoorLg",1}};
+				input[] = {{"ItemWoodWallDoorLg",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+				
+			};
+		};
+	};
+
+	class ItemWoodWallWithDoorLg: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Wall w/ Door";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wall with door constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Land_DZE_LargeWoodDoor";
+			};			
+			class Crafting
+			{
+				text = "Craft Locked Door";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodWallWithDoorLgLocked",1}};
+				input[] = {{"ItemWoodWallWithDoorLg",1},{"ItemComboLock",1}};
+				
+			};
+		};
+	};
+
+	class ItemWoodWallWithDoorLgLocked: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Wall w/ Door Locked";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wall with combination lock door constucted out of plywood and lumber.";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "Land_DZE_LargeWoodDoorLocked";
+			};
+		};
+	};
+
+	class ItemWoodWallWindowLg: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Large Wall w/ Window";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Large wall with doorway constucted out of plywood and lumber..";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodLargeWallWin_DZ";
+			};
+		};
+	};
 
 
 	class PartEngine: CA_Magazine
@@ -1694,7 +2228,7 @@ class CfgMagazines {
 			{
 				text = "Craft Supply Crate";
 				script = "spawn player_craftItem1;";
-				neednearby[] = {"sawmil"};
+				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",1}};
 				input[] = {{"PartWoodLumber",2},{"PartGeneric",1}};
@@ -1708,6 +2242,17 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"deer_stand_kit",1}};
 				input[] = {{"bulk_empty",1},{"PartWoodLumber",8},{"PartWoodPile",2}};
+				
+			};
+			
+			class Crafting3
+			{
+				text = "Craft Wood Stairs";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodStairs",1}};
+				input[] = {{"bulk_empty",1},{"PartWoodLumber",8}};
 				
 			};
 		};
@@ -1740,6 +2285,26 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"wood_shack_kit",1}};
 				input[] = {{"bulk_empty",1},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+				
+			};
+			class Crafting2
+			{
+				text = "Craft Floor 1/4";
+				script = "spawn player_craftItem2;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"ItemWoodFloorQuarter",1}};
+				input[] = {{"bulk_empty",1},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+				
+			};
+			class Crafting3
+			{
+				text = "Craft Wall 1/3";
+				script = "spawn player_craftItem3;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"ItemWoodWallThird",1}};
+				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 				
 			};
 			
@@ -2071,10 +2636,10 @@ class CfgMagazines {
 		descriptionShort = $STR_EQUIP_DESC_20;
 		class ItemActions
 		{
-			class Pitch
-			{
+			class Build {
 				text = $STR_PITCH_TENT;
-				script = "spawn player_tentPitch;";
+				script = "spawn player_build;";
+				require[] = {};
 				create = "TentStorage";
 			};
 			class Crafting
@@ -2107,9 +2672,10 @@ class CfgMagazines {
 		descriptionShort = "A domed camping tent desert that can be pitched, allowing you extended storage.";
 		
 		class ItemActions {
-			class Pitch {
+			class Build {
 				text = $STR_PITCH_TENT;
-				script = "spawn player_tentPitch;";
+				script = "spawn player_build;";
+				require[] = {};
 				create = "TentStorageDomed";
 			};
 			class Crafting
@@ -2141,9 +2707,10 @@ class CfgMagazines {
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 		descriptionShort = "A domed camping tent desert that can be pitched, allowing you extended storage.";
 		class ItemActions {
-			class Pitch {
+			class Build {
 				text = $STR_PITCH_TENT;
-				script = "spawn player_tentPitch;";
+				script = "spawn player_build;";
+				require[] = {};
 				create = "TentStorageDomed2";
 			};
 			class Crafting
@@ -2157,7 +2724,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "Craft Desert Net";
+				text = "Craft Forest Net";
 				script = "spawn player_craftItem1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};

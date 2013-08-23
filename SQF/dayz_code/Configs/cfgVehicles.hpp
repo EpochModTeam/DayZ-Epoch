@@ -4,7 +4,13 @@ class CfgVehicles {
 	#include "CfgVehicles\Zeds\NewZeds.hpp"
 	#include "CfgVehicles\Zeds\PlayerZeds.hpp"
 	#include "CfgVehicles\Females\females.hpp"
-	
+
+	class All;
+	class HouseBase;
+	class Ruins: HouseBase {};
+
+	#include "CfgVehicles\DZE\Doors.hpp"
+
 	class AllVehicles;
 	class Air : AllVehicles 
 	{
@@ -1131,45 +1137,6 @@ class CfgVehicles {
 	class Strategic;
 	class NonStrategic;
 
-	class Garage_DZ: NonStrategic
-	{
-		scope = 2;
-		model = "\z\addons\dayz_epoch\models\garage.p3d";
-		icon = "\ca\data\data\Unknown_object.paa";
-		mapSize = 2;
-		displayName = "Garage";
-		vehicleClass = "Wrecks";
-		class AnimationSources
-		{
-			class garageDoor { 
-			  source = "User"; 
-			  animPeriod = 1; 
-			  initPhase = 0; 
-			};
-		};
-		class UserActions
-		{
-			class CloseDoor
-			{
-				position = "";
-				displayName = "Close Door";
-				radius = 1.5;
-				onlyForPlayer = 0;
-				condition = "this animationPhase 'garageDoor' == 1";
-				statement = "this animate ['garageDoor', 0];";
-			};
-			class OpenDoor
-			{
-				position = "";
-				displayName = "Open Door";
-				radius = 1.5;
-				onlyForPlayer = 0;
-				condition = "this animationPhase 'garageDoor' == 0";
-				statement = "this animate ['garageDoor', 1];";
-			};
-		};
-	};
-
 	class Land_A_FuelStation_Feed: Strategic
 	{
 		model = "\ca\structures\House\A_FuelStation\A_FuelStation_Feed";
@@ -1406,6 +1373,7 @@ class CfgVehicles {
 	
 	//class NonStrategic;
 	class BuiltItems: NonStrategic{};
+	class ModularItems: NonStrategic{};
 	class TrapItems: NonStrategic{};
 	// buildables
 	class Hedgehog_DZ: BuiltItems
@@ -1436,6 +1404,7 @@ class CfgVehicles {
 		armor = 400;
 		displayName = "Workbench";
 		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",1}};
 		constructioncount = 1;
 		removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
 	};
@@ -1603,7 +1572,435 @@ class CfgVehicles {
 		removeoutput[] = {{"sandbag_nest_kit",1}};
 	};
 
+	// modular
+	class WoodFloor_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,4,0};
+		model="\z\addons\dayz_epoch\models\Wood_Floor.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Wood Floor";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",4}};
+		constructioncount = 1;
+		GhostPreview = "WoodFloor_Preview_DZ";
+	};
+	class WoodFloorHalf_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,4,0};
+		model="\z\addons\dayz_epoch\models\half_floor.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Wood Floor 1/2";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",2}};
+		constructioncount = 1;
+		GhostPreview = "WoodFloorHalf_Preview_DZ";
+	};
+	class WoodFloorQuarter_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,4,0};
+		model="\z\addons\dayz_epoch\models\quarter_floor.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Wood Floor 1/4";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodFloorQuarter_Preview_DZ";
+	};
 
+	class WoodLargeWall_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\large_wall.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Large Wall";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodLargeWall_Preview_DZ"; 
+	};
+	
+	class WoodLargeWallDoor_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\largel_wall_doorA.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Large Wall Doorway";
+		vehicleClass = "Fortifications";
+		constructioncount = 1;
+		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+		upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+		GhostPreview = "WoodLargeWallDoor_Preview_DZ"; 
+	};
+	class WoodLargeWallWin_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\large_wall_win.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Large Wall Window";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodLargeWallWin_Preview_DZ"; 
+	};
+	
+	class WoodSmallWall_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\small_wall.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Small Wall";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodSmallWall_Preview_DZ"; 
+	};
+	class WoodSmallWallThird_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\third_wall.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Wood Wall 1/3";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodSmallWallThird_Preview_DZ"; 
+	};
+
+	class WoodSmallWallWin_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\small_wall_win.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Small Wall Window";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodSmallWallWin_Preview_DZ"; 
+	};
+	class WoodSmallWallDoor_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructTree";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\small_wall_doorA.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Small Wall Door";
+		vehicleClass = "Fortifications";
+		constructioncount = 1;
+		upgradeBuilding[] = {"Land_DZE_WoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+		GhostPreview = "WoodSmallWallDoor_Preview_DZ"; 
+	};
+	class WoodStairs_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\wood_stairs.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Wood Stairs";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodStairs_Preview_DZ"; 
+	};	
+	class WoodLadder_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\wood_ladder.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 50;
+		displayName = "Wood Ladder";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodLadder_Preview_DZ"; 
+		ladders[] = {{"start1","end1"}};
+	};
+	
+	class WoodStairsSans_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\wood_stairs_sans.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 200;
+		displayName = "Wood Stairs Sans";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"PartWoodLumber",1}};
+		constructioncount = 1;
+		GhostPreview = "WoodStairsSans_Preview_DZ"; 
+	};
+
+	// ghost models
+	class WoodFloorQuarter_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\quarter_floor_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Floor 1/4 Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodFloorHalf_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\half_floor_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Floor 1/2 Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodSmallWall_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\small_wall_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Small Wall Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodSmallWallThird_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\third_wall_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Small Wall Preview 1/3";
+		vehicleClass = "Fortifications";
+	};
+	class WoodSmallWallWin_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\small_wall_win_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Small Wall Window Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodFloor_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\Wood_Floor_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Wood Floor Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodSmallWallDoor_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\small_wall_doorA_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Small Wall Door Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodLargeWall_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\large_wall_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Large Wall Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodLargeWallDoor_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\large_wall_doorA_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Large Wall Door Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodLargeWallWin_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\large_wall_win_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Large Wall Window Preview";
+		vehicleClass = "Fortifications";
+	};
+	
+	class WoodStairs_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\wood_stairs_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Wood Stairs Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodStairsSans_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\wood_stairs_sans_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Wood Stairs Sans Preview";
+		vehicleClass = "Fortifications";
+	};
+
+	class WoodLadder_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\wood_ladder_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Wood Stairs Sans Preview";
+		vehicleClass = "Fortifications";
+	};
+	class WoodDoor_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\small_wall_door_anim_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Door Preview";
+		vehicleClass = "Fortifications";
+	};
+	class LargeWoodDoor_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\large_wall_door_anim_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Large Door Preview";
+		vehicleClass = "Fortifications";
+	};
+	class GarageWoodDoor_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\Garage_door_anim_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Garage Door Preview";
+		vehicleClass = "Fortifications";
+	};
 	
 	// PLAYER BUILDINGS
 	// class Plastic_Pole_EP1;
@@ -1924,6 +2321,19 @@ class CfgVehicles {
 			};
 		};
 	};
+	class WeaponHolder_ItemLockbox: WeaponHolder
+	{
+		scope = 2;
+		displayName = "Lockbox";
+		class transportmagazines
+		{
+			class _xx_ItemLockbox
+			{
+				magazine = "ItemLockbox";
+				count = 1;
+			};
+		};
+	};
 	class WeaponHolder_ItemJerrycanEmpty: WeaponHolderBase
 	{
 		scope = 2;
@@ -1944,6 +2354,7 @@ class CfgVehicles {
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
 		create = "WeaponHolder_ItemTent";
+		offset[] = {0,2.5,0};
 	};
 	class TentStorageDomed: TentStorage
 	{
@@ -1954,6 +2365,7 @@ class CfgVehicles {
 		transportMaxWeapons = 12;
 		transportMaxBackpacks = 7;
 		create = "WeaponHolder_ItemTentDomed";
+		offset[] = {0,2.5,0};
 	};
 	class TentStorageDomed2: TentStorage
 	{
@@ -1964,6 +2376,7 @@ class CfgVehicles {
 		transportMaxWeapons = 12;
 		transportMaxBackpacks = 7;
 		create = "WeaponHolder_ItemTentDomed2";
+		offset[] = {0,2.5,0};
 	};
 	class VaultStorage: Land_A_tent
 	{
@@ -1975,6 +2388,8 @@ class CfgVehicles {
 		transportMaxMagazines = 200;
 		transportMaxWeapons = 20;
 		transportMaxBackpacks = 10;
+		lockedClass = "VaultStorageLocked";
+		packedClass = "WeaponHolder_ItemVault";
 	};	
 	class VaultStorageLocked: Land_A_tent
 	{
@@ -1986,6 +2401,39 @@ class CfgVehicles {
 		transportMaxMagazines = 0;
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
+		offset[] = {0,1.5,0.5};
+		lockable = 1;
+		unlockedClass = "VaultStorage";
 	};
 
+	class LockboxStorageLocked: Land_A_tent
+	{
+		vehicleClass = "Survival";
+		displayName = "Locked Lockbox";
+		model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+		destrType = "DestructNo";
+		armor = 800;
+		transportMaxMagazines = 0;
+		transportMaxWeapons = 0;
+		transportMaxBackpacks = 0;
+		offset[] = {0,1.5,0.5};
+		lockable = 1;
+		unlockedClass = "LockboxStorage";
+		
+	};
+	class LockboxStorage: Land_A_tent
+	{
+		vehicleClass = "Survival";
+		displayName = "Lockbox";
+		model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+		destrType = "DestructNo";
+		armor = 800;
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 20;
+		transportMaxBackpacks = 10;
+		lockedClass = "LockboxStorageLocked";
+		packedClass = "WeaponHolder_ItemLockbox";
+	};	
+
+	
 };	
