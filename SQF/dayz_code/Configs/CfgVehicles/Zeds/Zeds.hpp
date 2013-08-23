@@ -13,6 +13,7 @@ class zZombie_Base : Citizen1 {
 		magazines[] = {};
 		sensitivity = 4;	// sensor sensitivity
 		sensitivityEar = 2;
+		faceType = "ZFaces";
 		identityTypes[] = {"zombie1", "zombie2"};
 		class TalkTopics {};
 		languages[] = {};

@@ -25,5 +25,12 @@ class CfgFaces
 			identityTypes[] = {"PZombie2"};
 			disabled = 0;
 		};
+		class Zombie3 : Default {
+			name = "Zombie 3";
+			texture = "z\addons\dayz_communityassets\faces\zombie_03_co.paa";
+			material = "z\addons\dayz_communityassets\faces\zombie_03.rvmat";
+			identityTypes[] = {"Zombie3"};
+			disabled = 0;
+		};
 	};
 };

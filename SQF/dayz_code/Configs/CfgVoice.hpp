@@ -5,6 +5,6 @@ class CfgVoice
 		protocol = "RadioProtocolBase";
 		variants[] = {1};
 		directories[] = {"",""};
-		identityTypes[] = {"Default","Zombie1","Zombie2"};
+		identityTypes[] = {"Default","Zombie1","Zombie2","Zombie3"};
 	};
 };
