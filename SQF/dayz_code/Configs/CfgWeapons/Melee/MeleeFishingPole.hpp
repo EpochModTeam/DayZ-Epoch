@@ -10,6 +10,11 @@ class MeleeFishingPole: MeleeWeapon
 	{
 		"Fishing_Swing"
 	};
+	handAnim[]=
+	{
+		"OFP2_ManSkeleton",
+		"\dayz_weapons\anim\melee_hatchet_holding.rtm"
+	};
 	class ItemActions
 	{
 		class Use
