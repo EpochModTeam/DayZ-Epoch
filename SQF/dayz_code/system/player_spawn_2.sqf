@@ -21,6 +21,8 @@ while {true} do {
 		_factor = 1;
 	};
 	
+	_bloodChanged = false;
+
 	_size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
@@ -132,7 +134,7 @@ while {true} do {
 		};
 		if (r_player_blood > 3000) then {
 			r_player_blood = r_player_blood - 3;
-			player setVariable["USEC_BloodQty",r_player_blood];
+			_bloodChanged = true;
 		};
 	};
 	
@@ -151,6 +153,7 @@ while {true} do {
 			_id = [player,"dehyd"] spawn player_death;
 		} else {
 			r_player_blood = _result;
+			_bloodChanged = true;
 		};
 	};
 	if (_foodVal <= 0) then {
@@ -159,6 +162,7 @@ while {true} do {
 			_id = [player,"starve"] spawn player_death;
 		} else {
 			r_player_blood = _result;
+			_bloodChanged = true;
 		};
 	};
 
@@ -170,6 +174,7 @@ while {true} do {
 			} else {
 				r_player_blood = _result;
 			};
+			_bloodChanged = true;
 		};
 	};
 	
@@ -203,10 +208,13 @@ while {true} do {
 		};
 	};
 
+	if(_bloodChanged) then {
+		player setVariable["USEC_BloodQty",r_player_blood];
+	};
+
 	//Save Checker
 	if (dayz_unsaved) then {
-		if ((time - dayz_lastSave) > _saveTime) then {
-			//["dayzPlayerSave",[player,dayz_Magazines,false]] call callRpcProcedure;
+		if ((diag_tickTime - dayz_lastSave) > _saveTime) then {
 			
 			dayzPlayerSave = [player,dayz_Magazines,false,false];
 			publicVariableServer "dayzPlayerSave";
@@ -215,17 +223,17 @@ while {true} do {
 				dayzPlayerSave call server_playerSync;
 			};
 						
-			dayz_lastSave = time;
+			dayz_lastSave = diag_tickTime;
 			dayz_Magazines = [];
 		};
 		_lastSave = _lastSave + 2;
 	} else {
-		dayz_lastSave = time;
+		dayz_lastSave = diag_tickTime;
 		_lastSave = 0;
 	};
 
 	if (!dayz_unsaved) then {
-		dayz_lastSave = time;
+		dayz_lastSave = diag_tickTime;
 	};
 
 	//Attach Trigger Current Object
