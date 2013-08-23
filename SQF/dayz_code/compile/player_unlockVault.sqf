@@ -10,9 +10,13 @@ TradeInprogress = true;
 
 // Test cannot lock while another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot unlock vault while another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot unlock while another player is nearby." , "PLAIN DOWN"];  };
 
 _obj = _this;
+
+_unlockedClass = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "unlockedClass");
+_text = 		getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
+
 _alreadyPacking = _obj getVariable["packing",0];
 _claimedBy = _obj getVariable["claimed","0"];
 
@@ -24,7 +28,7 @@ if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText ["That Safe is already being unlocked." , "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText [format["That %1 is already being unlocked.",_text], "PLAIN DOWN"]};
 
 // Promt user for password if _ownerID != dayz_playerUID
 if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
@@ -62,8 +66,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			sleep 5;
 
-			//place tent (local)
-			_holder = createVehicle ["VaultStorage",_pos,[], 0, "CAN_COLLIDE"];
+			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
 			// Remove locked vault
 			deleteVehicle _obj;
 			_holder setdir _dir;
@@ -108,11 +111,11 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 				} forEach _objWpnTypes;
 			};
 	
-			cutText ["Safe has been unlocked.", "PLAIN DOWN"];
+			cutText [format["%1 has been unlocked.",_text], "PLAIN DOWN"];
 		};
 	} else {
 		TradeInprogress = false; 
-		cutText [format[(localize "str_player_beinglooted"),"Safe"] , "PLAIN DOWN"];
+		cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"];
 	};
 } else {
 	player playActionNow "Medic";
@@ -120,7 +123,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	null = [player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;
-	cutText ["Combination incorrect, Safe is still locked.", "PLAIN DOWN"];
+	cutText [format["Combination incorrect, %1 is still locked.",_text], "PLAIN DOWN"];
 };
 s_player_unlockvault = -1;
 TradeInprogress = false;
