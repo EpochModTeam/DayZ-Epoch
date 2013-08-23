@@ -43,7 +43,7 @@ _object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _object setdir _dir;
 player reveal _object;
 	
-_holder = "WeaponHolder" createVehicle _pos; 
+_holder = _object;
 	
 _weapons = 		getWeaponCargo _obj;
 _magazines = 	getMagazineCargo _obj;
