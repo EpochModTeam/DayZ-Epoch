@@ -182,5 +182,6 @@ AllowedVehiclesList = [
 ["Volha_1_TK_CIV_EP1",1],
 ["Volha_2_TK_CIV_EP1",1],
 ["VWGolf",1],
-["Zodiac",1]
+["Zodiac",1],
+["VIL_asistvan_DZE",2]
 ];
