@@ -33,7 +33,7 @@ player setVariable ["startcombattimer", 0, true];
 r_player_unconscious = false;
 r_player_cardiac = false;
 
-_id = player spawn spawn_flies;
+// _id = player spawn spawn_flies;
 
 _humanity =		0;
 _wait = 		0;
