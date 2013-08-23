@@ -7,8 +7,9 @@ _playerID = 	_this select 3;
 _playerName = 	_this select 4;
 _infected =		_this select 5;
 
-_victim = _newObject;
 _victim removeAllEventHandlers "MPHit";
+
+_victim = _newObject;
 _victimName = _victim getVariable["bodyName", "nil"];
 
 _killer = _victim getVariable["AttackedBy", "nil"];
@@ -39,6 +40,12 @@ if (_killerName != "nil") then
 	if(DZE_DeathMsgGlobal) then {
 		[nil, nil, rspawn, [_killer, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
 	};
+	/* needs customRemoteMessage 
+	if(DZE_DeathMsgGlobal) then {
+		customRemoteMessage = ['globalChat', _message, _killer];
+		publicVariable "customRemoteMessage";
+	};
+	/*
 	if(DZE_DeathMsgSide) then {
 		[nil, nil, rspawn, [_killer, _message], { (_this select 0) sideChat (_this select 1) }] call RE;
 	};
@@ -47,7 +54,14 @@ if (_killerName != "nil") then
 	};
 
 	// build array to store death messages to allow viewing at message board in trader citys.
-	PlayerDeaths set [count PlayerDeaths,_message];
+	_death_record = [
+		_victimName,
+		_killerName,
+		_weapon,
+		_distance,
+		ServerCurrentTime
+	];
+	PlayerDeaths set [count PlayerDeaths,_death_record];
 
 	// Cleanup
 	_victim setVariable["AttackedBy", "nil", true];
@@ -60,6 +74,7 @@ if (_killerName != "nil") then
 if (isnil "dayz_disco") then {
 	dayz_disco = [];
 };
+
 dayz_disco = dayz_disco - [_playerID];
 _newObject setVariable["processedDeath",time];
 
@@ -68,6 +83,10 @@ if (typeName _minutes == "STRING") then
 	_minutes = parseNumber _minutes;
 };
 	
+#ifdef DZE_SERVER_DEBUG_PKILL
+diag_log ("PDEATH: Player Died " + _playerID);
+#endif
+
 if (_characterID != "0") then 
 {
 	_key = format["CHILD:202:%1:%2:%3:",_characterID,_minutes,_infected];
@@ -75,12 +94,14 @@ if (_characterID != "0") then
 	diag_log ("HIVE: WRITE: "+ str(_key));
 	#endif
 	_key call server_hiveWrite;
+
+	// spawn flies
+	_sound = createSoundSource["Sound_Flies",getPosATL _newObject,[],0];
+	
+	// Add flies to cleanup array
+	dayz_flyMonitor set[count dayz_flyMonitor, [_sound,_newObject]];
 } 
 else 
 {
 	deleteVehicle _newObject;
 };
-
-#ifdef DZE_SERVER_DEBUG_PKILL
-diag_log ("PDEATH: Player Died " + _playerID);
-#endif
