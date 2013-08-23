@@ -13,13 +13,16 @@ waitUntil {!isNil "dayzPlayerDeathsResult"};
 
 //diag_log format["DEBUG Death: %1", dayzPlayerDeathsResult];
 
+/*
 if((count dayzPlayerDeathsResult) > 0) then {
 	"Recent Player Deaths:" hintC dayzPlayerDeathsResult;
 } else {
 	"Recent Player Deaths:" hintC "No recent Deaths.";
 };
+*/
 
-
+// load death message board ui
+call EpochDeathBoardLoad;
 
 // Clear Data maybe consider cacheing results
-dayzPlayerDeathsResult = nil;
+// dayzPlayerDeathsResult = nil;
