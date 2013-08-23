@@ -132,7 +132,7 @@ if (isServer and isNil "sm_done") then {
 			_object setVariable ["ObjectID", _idKey, true];
 
 			// fix for leading zero issues on safe codes after restart
-			if (_object isKindOf "VaultStorageLocked") then {
+			if (_type in DZE_LockedStorage) then {
 				_codeCount = (count (toArray _ownerID));
 				if(_codeCount == 3) then {
 					_ownerID = format["0%1", _ownerID];
@@ -159,14 +159,15 @@ if (isServer and isNil "sm_done") then {
 			_object setdir _dir;
 			_object setpos _pos;
 			_object setDamage _damage;
+
+			_object setVariable ["OEMPos", _pos, true];
 			
 			if (count _intentory > 0) then {
-				if (_object isKindOf "VaultStorageLocked") then {
+				if (_type in DZE_LockedStorage) then {
 					// Fill variables with loot
 					_object setVariable ["WeaponCargo", (_intentory select 0), true];
 					_object setVariable ["MagazineCargo", (_intentory select 1), true];
 					_object setVariable ["BackpackCargo", (_intentory select 2), true];
-					_object setVariable ["OEMPos", _pos, true];
 				} else {
 
 					//Add weapons
