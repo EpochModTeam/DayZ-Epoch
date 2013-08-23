@@ -45,6 +45,9 @@ while {true} do {
 		_datestr  = str(_date);
 		if (EventSchedulerLastTime != _datestr) then {
 			
+			// internal timestamp
+			ServerCurrentTime = [(_date select 3), (_date select 4)];
+
 			// Once a minute.
 			EventSchedulerLastTime = _datestr;
 
@@ -60,6 +63,7 @@ while {true} do {
 			// perform cleanup here
 			if ((_time - zero_cleanDead) > 600) then {
 				call server_cleanDead;
+				call server_cleanFlies;
 				zero_cleanDead = _time;
 			};
 			if ((_time - zero_cleanLoot) > 1800) then {
