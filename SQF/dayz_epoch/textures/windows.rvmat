@@ -1,10 +1,10 @@
-surfaceInfo="data\glass.bisurf";
-ambient[]={0.62352943,0.62352943,0.62352943,0.91000003};
-diffuse[]={0.62352943,0.62352943,0.62352943,0.91000003};
+surfaceInfo="ca\data\glass.bisurf";
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,0};
-specular[]={0.23529412,0.23529412,0.23529412,0.75999999};
-specularPower=87.599998;
+specular[]={1,1,1,1};
+specularPower=100;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
