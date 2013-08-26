@@ -51,7 +51,7 @@ while {true} do {
 			// Once a minute.
 			EventSchedulerLastTime = _datestr;
 
-			diag_log ("EVENTS: Local Time is: " + _datestr);
+			//diag_log ("EVENTS: Local Time is: " + _datestr);
 			{
 				if([[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4)],_date] call epoch_eventIsAny) then {
 					diag_log ("RUNNING EVENT: " + (_x select 5) + " on " + _datestr);

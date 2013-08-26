@@ -51,7 +51,7 @@ _object_position = {
 			_fuel = fuel _object;
 		};
 		_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
-		diag_log ("HIVE: WRITE: "+ str(_key));
+		//diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;
 };
 
@@ -70,7 +70,7 @@ _object_inventory = {
 			} else {
 				_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
 			};
-			diag_log ("HIVE: WRITE: "+ str(_key));
+			//diag_log ("HIVE: WRITE: "+ str(_key));
 			_key call server_hiveWrite;
 		};
 };
@@ -88,7 +88,7 @@ _object_damage = {
 		} forEach _hitpoints;
 	
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-		diag_log ("HIVE: WRITE: "+ str(_key));
+		//diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 	};
@@ -112,7 +112,7 @@ _object_killed = {
 	} else {
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 	};
-	diag_log ("HIVE: WRITE: "+ str(_key));
+	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 };
@@ -130,7 +130,7 @@ _object_repair = {
 	} forEach _hitpoints;
 	
 	_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-	diag_log ("HIVE: WRITE: "+ str(_key));
+	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 };
@@ -145,7 +145,7 @@ switch (_type) do {
 		};
 	case "position": {
 		if (!(_object in needUpdate_objects)) then {
-			diag_log format["DEBUG Position: Added to NeedUpdate=%1",_object];
+			//diag_log format["DEBUG Position: Added to NeedUpdate=%1",_object];
 			needUpdate_objects set [count needUpdate_objects, _object];
 		};
 	};
@@ -157,7 +157,7 @@ switch (_type) do {
 			call _object_damage;
 		} else {
 			if (!(_object in needUpdate_objects)) then {
-				diag_log format["DEBUG Damage: Added to NeedUpdate=%1",_object];
+				//diag_log format["DEBUG Damage: Added to NeedUpdate=%1",_object];
 				needUpdate_objects set [count needUpdate_objects, _object];
 			};
 		};

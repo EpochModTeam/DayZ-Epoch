@@ -124,7 +124,7 @@ if (isServer and isNil "sm_done") then {
 		};
 
 		if (_damage < 1) then {
-			diag_log format["OBJ: %1 - %2", _idKey,_type];
+			//diag_log format["OBJ: %1 - %2", _idKey,_type];
 			
 			//Create it
 			_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
@@ -280,7 +280,7 @@ if (isServer and isNil "sm_done") then {
 				_key = format["CHILD:399:%1:",_traderid];
 				_data = "HiveEXT" callExtension _key;
 
-				diag_log "HIVE: Request sent";
+				//diag_log "HIVE: Request sent";
 		
 				//Process result
 				_result = call compile format ["%1",_data];
@@ -289,7 +289,7 @@ if (isServer and isNil "sm_done") then {
 				if (_status == "ObjectStreamStart") then {
 					_val = _result select 1;
 					//Stream Objects
-					diag_log ("HIVE: Commence Menu Streaming...");
+					//diag_log ("HIVE: Commence Menu Streaming...");
 					call compile format["ServerTcache_%1 = [];",_traderid];
 					for "_i" from 1 to _val do {
 						_data = "HiveEXT" callExtension _key;

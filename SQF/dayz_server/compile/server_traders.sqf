@@ -4,7 +4,7 @@ _character = _this select 0;
 _traderid = _this select 1;
 
 _clientID = owner _character;
-diag_log ("HIVE: Menu Request by ClientID: "+ str(_clientID));
+//diag_log ("HIVE: Menu Request by ClientID: "+ str(_clientID));
 
 // add cacheing
 _retrader = call compile format["ServerTcache_%1;",_traderid];
@@ -16,7 +16,7 @@ if(isNil "_retrader") then {
 	_key = format["CHILD:399:%1:",_traderid];
 	_data = "HiveEXT" callExtension _key;
 
-	diag_log "HIVE: Request sent";
+	//diag_log "HIVE: Request sent";
 		
 	//Process result
 	_result = call compile format ["%1",_data];
@@ -25,7 +25,7 @@ if(isNil "_retrader") then {
 	if (_status == "ObjectStreamStart") then {
 		_val = _result select 1;
 		//Stream Objects
-		diag_log ("HIVE: Commence Menu Streaming...");
+		//diag_log ("HIVE: Commence Menu Streaming...");
 		call compile format["ServerTcache_%1 = [];",_traderid];
 		for "_i" from 1 to _val do {
 			_data = "HiveEXT" callExtension _key;

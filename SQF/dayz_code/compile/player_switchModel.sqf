@@ -63,12 +63,13 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	};
 
 //Debug Message
-	diag_log "Attempting to switch model";
-	diag_log str(_weapons);
-	diag_log str(_magazines);
-	diag_log (str(_backpackWpn));
-	diag_log (str(_backpackMag));
-
+/*
+diag_log "Attempting to switch model";
+diag_log str(_weapons);
+diag_log str(_magazines);
+diag_log (str(_backpackWpn));
+diag_log (str(_backpackMag));
+*/
 //Secure Player for Transformation
 	player setPosATL dayz_spawnPos;
 
@@ -173,12 +174,13 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 		};
 	};
 //Debug Message
-	diag_log "Swichtable Unit Created. Equipment:";
-	diag_log str(weapons _newUnit);
-	diag_log str(magazines _newUnit);
-	diag_log str(getWeaponCargo unitBackpack _newUnit);
-	diag_log str(getMagazineCargo unitBackpack _newUnit);
-
+/*
+diag_log "Swichtable Unit Created. Equipment:";
+diag_log str(weapons _newUnit);
+diag_log str(magazines _newUnit);
+diag_log str(getWeaponCargo unitBackpack _newUnit);
+diag_log str(getMagazineCargo unitBackpack _newUnit);
+*/
 //Make New Unit Playable
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;

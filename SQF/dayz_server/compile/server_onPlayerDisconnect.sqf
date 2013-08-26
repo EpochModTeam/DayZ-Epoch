@@ -20,7 +20,7 @@ if ((_timeout - time) > 0) then {
     _object setVariable["unconsciousTime",300,true];
 	#ifdef DZE_SERVER_DEBUG
     diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
-	diag_log format["SET UNCONCIOUSNESS: %1", _playerName];
+	//diag_log format["SET UNCONCIOUSNESS: %1", _playerName];
 	#endif
 
 	// Message whole server when player combat logs

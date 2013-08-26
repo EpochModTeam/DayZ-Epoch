@@ -167,7 +167,7 @@ if ((count _updates > 0 or _isNewMed) and _characterID != "0") then {
 				//Wait for HIVE to be free
 				//Send request
 				_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,_justAte,_justDrank,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
-				diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
+				// diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
 				_key spawn server_hiveWrite;
 				_character setVariable ["updatePlayer",[false,false,false,false,false],true];
 				_character setVariable ["medForceUpdate",false];

@@ -18,7 +18,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 	disableUserInput true;
 	//waitUntil{USEC_MotherInbox == ""};
 	//["MED001",0,"Unconscious"] call fnc_usec_recordEventClient;
-	diag_log "CLIENT: Unconscious...";
+	//diag_log "CLIENT: Unconscious...";
 	while {(r_player_unconscious)} do {
 		_ctrl1 ctrlSetPosition [(_ctrl1Pos select 0),(_ctrl1Pos select 1),(_ctrl1Pos select 2),((0.136829 * safezoneH) * (1 -(r_player_timeout / _totalTimeout)))];
 		_ctrl1 ctrlCommit 1;
@@ -87,7 +87,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		};
 	};
 	4 cutRsc ["default", "PLAIN",1];
-	diag_log "CLIENT: Conscious...";
+	//diag_log "CLIENT: Conscious...";
 	disableUserInput false;
 	//waitUntil{USEC_MotherInbox == ""};
 	//["MED001",0,"Conscious"] call fnc_usec_recordEventClient;

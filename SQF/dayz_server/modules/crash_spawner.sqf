@@ -24,7 +24,7 @@ if (_spawnRoll <= _spawnChance) then {
 
 	_position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,2000,0] call BIS_fnc_findSafePos;
 
-	diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4", _crashName, _lootTable, time, str(_position)]);
+	//diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4", _crashName, _lootTable, time, str(_position)]);
 
 	_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
 	// Randomize the direction the wreck is facing
@@ -80,7 +80,7 @@ if (_spawnRoll <= _spawnChance) then {
 		_index = _weights select _index;
 		_itemType = _itemTypes select _index;
 		[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
-		diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]); 
+		//diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]); 
 	};
 	
 	// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.

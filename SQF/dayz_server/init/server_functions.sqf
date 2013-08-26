@@ -74,10 +74,10 @@ check_publishobject = {
 	
 	_allowed = false;
        
-	diag_log format ["DEBUG: Checking if Object: %1 is allowed published by %2", _object, _playername];
+	//diag_log format ["DEBUG: Checking if Object: %1 is allowed published by %2", _object, _playername];
 
 	if ((typeOf _object) in dayz_allowedObjects) then {
-			diag_log format ["DEBUG: Object: %1 published by %2 is Safe",_object, _playername];
+			//diag_log format ["DEBUG: Object: %1 published by %2 is Safe",_object, _playername];
 			_allowed = true;
 	};
     _allowed
@@ -295,7 +295,7 @@ spawn_vehicles = {
 					_index = _weights select _index;
 					_itemType = _itemTypes select _index;
 					_veh addMagazineCargoGlobal [_itemType,1];
-					diag_log("DEBUG: spawed loot inside vehicle " + str(_itemType));
+					//diag_log("DEBUG: spawed loot inside vehicle " + str(_itemType));
 				};
 
 				[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;
@@ -339,7 +339,7 @@ spawn_roadblocks = {
 				_spawnloot = "DynamicDebrisMilitary";
 			};
 		
-			diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
+			//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
 			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
 			_veh enableSimulation false;
 
