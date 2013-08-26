@@ -9,7 +9,7 @@ _attacked = false;
 
 	if (alive _x && _continue) then {
 		
-        if (local _x) then {
+        //if (local _x) then {
 			
 			_dist = (_x distance _refObj);
 			
@@ -85,7 +85,7 @@ _attacked = false;
 					};
 				};
 			};
-		};
+		//};
 	};
 } forEach _listTalk;
 

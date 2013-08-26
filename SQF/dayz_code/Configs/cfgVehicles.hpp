@@ -2418,7 +2418,7 @@ class CfgVehicles {
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
 		offset[] = {0,1.5,0.5};
-		lockable = 3;
+		lockable = 2;
 		unlockedClass = "LockboxStorage";
 		
 	};

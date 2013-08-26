@@ -34,7 +34,7 @@ class EpochDeathBoardDialog
 		class RscText_1002: RscText
 		{
 			idc = -1;
-			text = "Player Deaths";
+			text = "Murders";
 			x = 0.29042 * safezoneW + safezoneX;
 			y = 0.293733 * safezoneH + safezoneY;
 			w = 0.0540852 * safezoneW;

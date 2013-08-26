@@ -393,7 +393,7 @@ class ComboLockUI
 			y = 0.243893;
 			w = 0.1625;
 			h = 0.135461;
-			onButtonClick = "[17734,0,""top""] call player_changeCombo";
+			onButtonClick = "[17734,1,""top""] call player_changeCombo";
 		};
 		class top_right: main_combo
 		{
@@ -402,7 +402,7 @@ class ComboLockUI
 			y = 0.241923;
 			w = 0.147872;
 			h = 0.135461;
-			onButtonClick = "[17734,1,""top""] call player_changeCombo";
+			onButtonClick = "[17734,0,""top""] call player_changeCombo";
 		};
 		class mid_left: main_combo
 		{
@@ -411,7 +411,7 @@ class ComboLockUI
 			y = 0.433018;
 			w = 0.1625;
 			h = 0.135461;
-			onButtonClick = "[17735,0,""mid""] call player_changeCombo";
+			onButtonClick = "[17735,1,""mid""] call player_changeCombo";
 		};
 		class mid_right: main_combo
 		{
@@ -420,7 +420,7 @@ class ComboLockUI
 			y = 0.427108;
 			w = 0.153191;
 			h = 0.135461;
-			onButtonClick = "[17735,1,""mid""] call player_changeCombo";
+			onButtonClick = "[17735,0,""mid""] call player_changeCombo";
 		};
 		class bottom_left: main_combo
 		{
@@ -429,7 +429,7 @@ class ComboLockUI
 			y = 0.637904;
 			w = 0.1625;
 			h = 0.135461;
-			onButtonClick = "[17736,0,""bot""] call player_changeCombo";
+			onButtonClick = "[17736,1,""bot""] call player_changeCombo";
 		};
 		class bottom_right: main_combo
 		{
@@ -438,7 +438,7 @@ class ComboLockUI
 			y = 0.633964;
 			w = 0.155851;
 			h = 0.133491;
-			onButtonClick = "[17736,1,""bot""] call player_changeCombo";
+			onButtonClick = "[17736,0,""bot""] call player_changeCombo";
 		};
 		class exit_combo_btn: main_combo
 		{

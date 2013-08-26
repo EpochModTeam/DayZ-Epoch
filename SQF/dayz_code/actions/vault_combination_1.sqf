@@ -6,11 +6,11 @@ dayz_combination = "";
 		
 if(!isNull dayz_selectedVault) then {
 
-
-	
-	_ok = createdialog "KeypadUI";
-
-	// _ok = createdialog "SafeKeyPad";
+	if ((typeOf dayz_selectedVault) == "VaultStorageLocked" or (typeOf dayz_selectedVault) == "VaultStorage") then {
+		_ok = createdialog "SafeKeyPad";
+	} else {
+		_ok = createdialog "KeypadUI";
+	};
 };
 
 s_player_unlockvault = -1;

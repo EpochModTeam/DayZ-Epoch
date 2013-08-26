@@ -2,7 +2,7 @@
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination"];
+private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay"];
 
 if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -85,7 +85,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // _message
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Building requires %1 within %2m.",_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Unable to build %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -217,6 +217,8 @@ if (_hasrequireditem) then {
 	// Start Build 
 	_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 
+	
+
 	_tmpbuilt setdir _dir;
 	
 	// Get position based on player
@@ -224,7 +226,7 @@ if (_hasrequireditem) then {
 	
 	_location = [(_location select 0),(_location select 1),(_position select 2)];
 
-	hintSilent str (_location);
+	//hintSilent str (_location);
 	
 	_tmpbuilt setpos _location;
 
@@ -311,6 +313,8 @@ if (_hasrequireditem) then {
 
 				if(_lockable > 1) then {
 					
+					_combinationDisplay = "";
+
 					switch (_lockable) do {
 						
 						case 2: { // 2 lockbox
@@ -344,8 +348,8 @@ if (_hasrequireditem) then {
 							_combination_2 = floor(random 10);
 							_combination_3 = floor(random 10);
 							_combination_4 = floor(random 10);
-							_combinationDisplay = _combination;
 							_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
+							_combinationDisplay = _combination;
 						};
 					};
 
