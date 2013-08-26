@@ -1,4 +1,4 @@
-private["_characterID","_minutes","_newObject","_playerID","_playerName","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_eh","_body","_method","_name"];
+private ["_characterID","_minutes","_newObject","_playerID","_playerName","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record","_sound"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _characterID = 	_this select 0;
 _minutes =		_this select 1;
@@ -45,7 +45,7 @@ if (_killerName != "nil") then
 		customRemoteMessage = ['globalChat', _message, _killer];
 		publicVariable "customRemoteMessage";
 	};
-	/*
+	*/
 	if(DZE_DeathMsgSide) then {
 		[nil, nil, rspawn, [_killer, _message], { (_this select 0) sideChat (_this select 1) }] call RE;
 	};
