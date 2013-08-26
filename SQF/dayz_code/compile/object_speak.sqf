@@ -19,6 +19,7 @@ _num = switch (_type) do {
 	case "dog_bark":	{4};
 	case "dog_growl":	{3};
 	case "dog_qq":		{2};
+	case "keypad_tick":		{2};
 };
 
 if (count _this > 4) then {

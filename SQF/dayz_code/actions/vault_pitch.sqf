@@ -156,7 +156,7 @@ if(!_cancel) then {
 			// Format Combination
 			_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
 
-			_tent setVariable ["characterID",_combination,true];
+			_tent setVariable ["CharacterID",_combination,true];
 			_tent setVariable ["OEMPos",_location,true];
 
 			//["dayzPublishObj",[_combination,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;

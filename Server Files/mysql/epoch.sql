@@ -1,5 +1,5 @@
 /*
-DayZ Epoch 1.0.1.8
+DayZ Epoch 1.0.1.9
 */
 
 SET FOREIGN_KEY_CHECKS=0;

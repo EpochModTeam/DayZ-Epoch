@@ -56,7 +56,7 @@ if(_removed == _countIn) then {
 		_fsmid setFSMVariable ["_handle", _fsmid];
 		player setVariable ["dogID", _fsmid];
 		_dog setVariable ["fsm_handle", _fsmid];
-		_dog setVariable ["characterID", dayz_characterID, true];
+		_dog setVariable ["CharacterID", dayz_characterID, true];
 
 		cutText [format["Dog consumed %1, and is now tamed.",_textRemoved], "PLAIN DOWN"];
 	} else {

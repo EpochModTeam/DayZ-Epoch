@@ -2,7 +2,7 @@ private ["_object","_myGroup","_id","_playerID","_playerName","_characterID","_p
 _playerID = _this select 0;
 _playerName = _this select 1;
 _object = call compile format["player%1",_playerID];
-_characterID =	_object getVariable ["characterID","0"];
+_characterID =	_object getVariable ["CharacterID","0"];
 _timeout = _object getVariable["combattimeout",0];
 
 _playerIDtoarray = [];

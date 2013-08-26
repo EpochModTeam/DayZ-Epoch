@@ -74,7 +74,7 @@ player setVariable["USEC_BloodQty",r_player_blood,true];
 player setVariable["medForceUpdate",true];
 
 //["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
-dayzPlayerSave = [player,[],true];
+dayzPlayerSave = [player,[],true,true];
 publicVariableServer "dayzPlayerSave";
 
 dayz_lastMeal =	time;

@@ -1,5 +1,5 @@
 private ["_charID","_friendlies","_rcharID","_rfriendlyTo","_tag","_player","_newTagList","_position","_rfriendlies","_tagList","_statusNew","_tagColor","_humanity","_status","_everyone"];
-_charID = player getVariable ["characterID", "0"];
+_charID = player getVariable ["CharacterID", "0"];
 _friendlies = player getVariable ["friendlies", []];
 _everyone = player getVariable ["everyone", []];
 _tagList = player getVariable ["tagList", []];
@@ -7,7 +7,7 @@ _tagList = player getVariable ["tagList", []];
 // create tags
 { 
 	if (isPlayer _x and player != _x) then { 
-		_rcharID = _x getVariable ["characterID", "0"];
+		_rcharID = _x getVariable ["CharacterID", "0"];
 		if(!(_rcharID in _everyone)) then {
 			
 			// Track who has tags
@@ -62,7 +62,7 @@ _newTagList = [];
 
 			if (_status != "green") then {	
 				//diag_log format["CHECK IF FRIENDLY: %1", _player];
-				_rcharID = _player getVariable ["characterID", "0"];
+				_rcharID = _player getVariable ["CharacterID", "0"];
 				_rfriendlies = _player getVariable ["friendlies", []];
 				_rfriendlyTo = _player getVariable ["friendlyTo", []];
 			

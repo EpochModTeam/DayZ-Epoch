@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private ["_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil"];
+private ["_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil","_hasFuelBarrelE"];
 
 if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 
@@ -37,18 +37,13 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
-if(dayz_playerUID == "4560582") then {
-	hint str(typeOf cursorTarget);
+if(dayz_playerUID == "4854208") then {
+	// hint str(typeOf cursorTarget);
 	if (s_player_debuglootpos < 0) then {
-		s_player_debuglootpos = player addAction ["Save to arma2.rpt", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["start"], 99, false, true, "",""];
-		s_player_debuglootpos1 = player addAction ["Raise Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["up"], 99, false, true, "",""];
-		s_player_debuglootpos2 = player addAction ["Lower Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["down"], 99, false, true, "",""];
-		s_player_debuglootpos3 = player addAction ["Raise Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["up_small"], 99, false, true, "",""];
-		s_player_debuglootpos4 = player addAction ["Lower Z", "\z\addons\dayz_code\actions\debug\Make_lootPos.sqf", ["down_small"], 99, false, true, "",""];
-		Base_Z_height = 0.5;
+		s_player_debuglootpos = player addAction [ "GCam", "gcam\gcam.sqf" ]; 
+		// handle = [] execVM "gcam\gcam.sqf";
 	};
 };
-
 
 if(_isPZombie) then {
 	if (s_player_callzombies < 0) then {
@@ -89,10 +84,10 @@ if(_isAir or _isShip) then {
 };
 
 if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cursorTarget < _allowedDistance) and _canDo) then {	//Has some kind of target
-	
+
 	// set cursortarget to variable
 	_cursorTarget = cursorTarget;
-	
+
 	// get typeof cursortarget once
 	_typeOfCursorTarget = typeOf _cursorTarget;
 
@@ -131,7 +126,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 
 	_isMan = _cursorTarget isKindOf "Man";
 	_traderType = _typeOfCursorTarget;
-	_ownerID = _cursorTarget getVariable ["characterID","0"];
+	_ownerID = _cursorTarget getVariable ["CharacterID","0"];
 	_isAnimal = _cursorTarget isKindOf "Animal";
 	_isDog =  (_cursorTarget isKindOf "DZ_Pastor" || _cursorTarget isKindOf "DZ_Fin");
 	_isZombie = _cursorTarget isKindOf "zZombie_base";
@@ -385,19 +380,19 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 
 	//Allow owner to unlock vault
-	if((_typeOfCursorTarget == "VaultStorageLocked" or _typeOfCursorTarget == "VaultStorage") and _ownerID != "0" and (player distance _cursorTarget < 3)) then {
+	if((_typeOfCursorTarget in DZE_LockableStorage) and _ownerID != "0" and (player distance _cursorTarget < 3)) then {
 		if (s_player_unlockvault < 0) then {
-			if(_typeOfCursorTarget == "VaultStorageLocked") then {
+			if(_typeOfCursorTarget in DZE_LockedStorage) then {
 				if(_ownerID == dayz_combination or _ownerID == dayz_playerUID) then {
-					_combi = player addAction ["Open Safe", "\z\addons\dayz_code\actions\vault_unlock.sqf",_cursorTarget, 0, false, true, "",""];
+					_combi = player addAction [format["Open %1",_text], "\z\addons\dayz_code\actions\vault_unlock.sqf",_cursorTarget, 0, false, true, "",""];
 				} else {
-					_combi = player addAction ["Unlock Safe", "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true, "",""];
+					_combi = player addAction [format["Unlock %1",_text], "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true, "",""];
 				};
 				s_player_combi set [count s_player_combi,_combi];
 				s_player_unlockvault = 1;
 			} else {
 				if(_ownerID != dayz_combination and _ownerID != dayz_playerUID) then {
-					_combi = player addAction ["Enter Combo", "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true, "",""];
+					_combi = player addAction ["Re-Enter Combination", "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true, "",""];
 					s_player_combi set [count s_player_combi,_combi];
 					s_player_unlockvault = 1;
 				};
@@ -409,15 +404,15 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 
 	//Allow owner to pack vault
-	if(_typeOfCursorTarget == "VaultStorage" and _ownerID != "0" and (player distance _cursorTarget < 3)) then {
+	if(_typeOfCursorTarget in DZE_UnLockedStorage and _ownerID != "0" and (player distance _cursorTarget < 3)) then {
 
 		if (s_player_lockvault < 0) then {
 			if(_ownerID == dayz_combination or _ownerID == dayz_playerUID) then {
-				s_player_lockvault = player addAction ["Lock Safe", "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true, "",""];
+				s_player_lockvault = player addAction [format["Lock %1",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true, "",""];
 			};
 		};
 		if (s_player_packvault < 0 and (_ownerID == dayz_combination or _ownerID == dayz_playerUID)) then {
-			s_player_packvault = player addAction ["<t color='#ff0000'>Pack Safe</t>", "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true, "",""];
+			s_player_packvault = player addAction [format["<t color='#ff0000'>Pack %1</t>",_text], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_packvault;
@@ -478,6 +473,44 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_fuelauto2;
 		s_player_fuelauto2 = -1;
 	};
+
+
+	if ((_cursorTarget isKindOf "ModularItems") or (_cursorTarget isKindOf "Land_DZE_WoodDoor_Base")) then {
+		if ((s_player_lastTarget select 0) != _cursorTarget) then {
+			if (s_player_upgrade_build > 0) then {
+				player removeAction s_player_upgrade_build;
+				s_player_upgrade_build = -1;
+			};
+		};
+		if (s_player_upgrade_build < 0) then {
+			// s_player_lastTarget = _cursorTarget;
+			s_player_lastTarget set [0,_cursorTarget];
+			s_player_upgrade_build = player addAction [format["Upgrade %1",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true, "",""];
+		};
+	} else {
+		player removeAction s_player_upgrade_build;
+		s_player_upgrade_build = -1;
+	};
+	
+
+	// inplace maintenance tool
+	if((_isDestructable or _cursorTarget isKindOf "ModularItems" or _cursorTarget isKindOf "DZE_Housebase")) then {
+		if ((s_player_lastTarget select 1) != _cursorTarget) then {
+			if (s_player_maint_build > 0) then {	
+				player removeAction s_player_maint_build;
+				s_player_maint_build = -1;
+			};
+		}; 
+
+		if (s_player_maint_build < 0) then {
+			s_player_lastTarget set [1,_cursorTarget];
+			s_player_maint_build = player addAction [format["Maintain %1",_text], "\z\addons\dayz_code\actions\player_buildingMaint.sqf",_cursorTarget, -2, false, true, "",""];
+		};
+	} else {
+		player removeAction s_player_maint_build;
+		s_player_maint_build = -1;
+	};
+
 
 	//Start Generator
 	if(_cursorTarget isKindOf "Generator_DZ") then {
@@ -659,6 +692,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	{player removeAction _x} forEach s_player_combi;s_player_combi = [];
 		
 	dayz_myCursorTarget = objNull;
+	s_player_lastTarget = [objNull,objNull,objNull,objNull,objNull];
 
 	{player removeAction _x} forEach s_player_parts;s_player_parts = [];
 	s_player_parts_crtl = -1;
@@ -722,6 +756,10 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	s_player_information = -1;
 	player removeAction s_player_fillgen;
 	s_player_fillgen = -1;
+	player removeAction s_player_upgrade_build;
+	s_player_upgrade_build = -1;
+	player removeAction s_player_maint_build;
+	s_player_maint_build = -1;
 	player removeAction s_player_towing;
 	s_player_towing = -1;
 	player removeAction s_player_fuelauto;
@@ -737,7 +775,7 @@ _dogHandle = player getVariable ["dogID", 0];
 if (_dogHandle > 0) then {
 	_dog = _dogHandle getFSMVariable "_dog";
 	_ownerID = "0";
-	if (!isNull cursorTarget) then { _ownerID = cursorTarget getVariable ["characterID","0"]; };
+	if (!isNull cursorTarget) then { _ownerID = cursorTarget getVariable ["CharacterID","0"]; };
 	if (_canDo and !_inVehicle and alive _dog and _ownerID != dayz_characterID) then {
 		if (s_player_movedog < 0) then {
 			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID", 0], 1, false, true, "", ""];

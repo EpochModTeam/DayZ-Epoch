@@ -1,12 +1,9 @@
-private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave"];
+private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_timeOut","_result","_factor","_randomSpot","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_bloodChanged","_id","_messTimer","_display","_control","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_tempPos","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_myPos","_lastPos","_debug"];
 disableSerialization;
 _timeOut = 	0;
 _messTimer = 0;
-_lastSave = 0;
 _lastTemp = dayz_temperatur;
 _debug = getMarkerpos "respawn_west";
-_isBandit = false;
-_isHero = false;
 
 player setVariable ["temperature",dayz_temperatur,true];
 
@@ -26,7 +23,6 @@ while {true} do {
 	_size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
-	_saveTime = (playersNumber west * 2) + 10;
 		
 	//reset position
 	_randomSpot = true;
@@ -39,16 +35,19 @@ while {true} do {
 	if (_distance < 500) then {
 		_randomSpot = false;
 	};
-	_distance = _mylastPos distance _tempPos;
-	if (_distance > 400) then {
-		_randomSpot = false;
+	if (!isNil "_mylastPos") then {
+		_distance = _mylastPos distance _tempPos;
+		if (_distance > 400) then {
+			_randomSpot = false;
+		};
 	};
-	
 	if (_randomSpot) then {
 		_mylastPos = _tempPos;
 	};
 	
-	dayz_mylastPos = _mylastPos;
+	if (!isNil "_mylastPos") then {
+		dayz_mylastPos = _mylastPos;
+	};
 	dayz_areaAffect = _size;
 	
 	if (_speed > 0.1) then {
@@ -213,27 +212,17 @@ while {true} do {
 	};
 
 	//Save Checker
-	if (dayz_unsaved) then {
-		if ((diag_tickTime - dayz_lastSave) > _saveTime) then {
-			
-			dayzPlayerSave = [player,dayz_Magazines,false,false];
-			publicVariableServer "dayzPlayerSave";
-			
-			if (isServer) then {
-				dayzPlayerSave call server_playerSync;
-			};
-						
-			dayz_lastSave = diag_tickTime;
-			dayz_Magazines = [];
+	if (dayz_unsaved or ((time - dayz_lastSave) > 300)) then {
+		dayzPlayerSave = [player,dayz_Magazines,false,false];
+		publicVariableServer "dayzPlayerSave";
+		
+		// diag_log format["Save Checker: %1", dayzPlayerSave];
+		
+		if (isServer) then {
+			dayzPlayerSave call server_playerSync;
 		};
-		_lastSave = _lastSave + 2;
-	} else {
-		dayz_lastSave = diag_tickTime;
-		_lastSave = 0;
-	};
-
-	if (!dayz_unsaved) then {
-		dayz_lastSave = diag_tickTime;
+		dayz_lastSave = time;
+		dayz_Magazines = [];
 	};
 
 	//Attach Trigger Current Object
@@ -284,16 +273,18 @@ while {true} do {
 	};
 	
 	_lastPos = getPosATL player;	
-	if (player == vehicle player) then {
-		if (_mylastPos distance _lastPos > 200) then {
-			if (alive player) then {
-				player setPosATL _mylastPos;
+	if (!isNil "_mylastPos") then {
+		if (player == vehicle player) then {
+			if (_mylastPos distance _lastPos > 200) then {
+				if (alive player) then {
+					player setPosATL _mylastPos;
+				};
 			};
-		};
-	} else {
-		if (_mylastPos distance _lastPos > 800) then {
-			if (alive player) then {
-				player setPosATL _mylastPos;
+		} else {
+			if (_mylastPos distance _lastPos > 800) then {
+				if (alive player) then {
+					player setPosATL _mylastPos;
+				};
 			};
 		};
 	};

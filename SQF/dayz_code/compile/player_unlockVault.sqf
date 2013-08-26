@@ -28,6 +28,9 @@ if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 
+diag_log format["Combination: %1", dayz_combination];
+
+
 if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText [format["That %1 is already being unlocked.",_text], "PLAIN DOWN"]};
 
 // Promt user for password if _ownerID != dayz_playerUID

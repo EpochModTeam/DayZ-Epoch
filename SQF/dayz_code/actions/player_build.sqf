@@ -2,7 +2,7 @@
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText"];
+private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination"];
 
 if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -28,6 +28,11 @@ _classnametmp = _classname;
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
 _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
+
+_lockable = 0;
+if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
+	_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable");
+};
 
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
@@ -100,32 +105,29 @@ if (_hasrequireditem) then {
 	_counter = 0;
 	_isOk = true;
 
+	
+	// get inital players position
+	_location1 = getPosATL player;
+	_dir = getDir player;
+	_position = player modeltoworld _offset;
+	_position = [(_position select 0),(_position select 1), (_position select 2)];
+	// hintSilent str (_position);
+
+	// if ghost preview available use that instead
+	if (_ghost == "") then {
+		_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+	} else {
+		_classname = _ghost;
+		_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+	};
+	
+	_object setDir _dir;
+	_object setPos _position;
+	_object attachTo [player];
+	
+
 	while {_isOk} do {
 		
-		
-
-		if(_counter == 0) then {
-			// get inital players position
-			_location1 = getPosATL player;
-			_dir = getDir player;
-			_position = player modeltoworld _offset;
-			_position = [(_position select 0),(_position select 1), (_position select 2)];
-			hintSilent str (_position);
-
-			// if ghost preview available use that instead
-			_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
-			if (_ghost == "") then {
-				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-			} else {
-				_classname = _ghost;
-				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-			};
-	
-			_object setDir _dir;
-			_object setPos _position;
-			_object attachTo [player];
-		};
-
 		_zheightchanged = false;
 
 		if (DZE_Q) then {
@@ -136,38 +138,42 @@ if (_hasrequireditem) then {
 		if (DZE_Z) then {
 			DZE_Z = false;
 			DZE_BuildingZ = DZE_BuildingZ - 0.1;
-			
 			_zheightchanged = true;
 		};
-		
-		if(_zheightchanged) then {
-			detach _object;
-			deleteVehicle _object;
 
-			_dir = getDir player;
+		_rotate = false;
+
+		if (DZE_4) then {
+			_rotate = true;
+			DZE_4 = false;
+			_dir = 180;
+		};
+		if (DZE_6) then {
+			_rotate = true;
+			DZE_6 = false;
+			_dir = 0;
+		};
+		
+		if(_rotate) then {
 			_position = player modeltoworld _offset;
 			_position = [(_position select 0),(_position select 1), (_position select 2)+DZE_BuildingZ];
 
-			hintSilent str (_position);
-
-			// if ghost preview available use that instead
-			
-			if (_ghost == "") then {
-				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-			} else {
-				_classname = _ghost;
-				_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-			};
-	
 			_object setDir _dir;
+			_object setPos _position;
+		};
+
+		if(_zheightchanged) then {
+			detach _object;
+			_position = player modeltoworld _offset;
+			_position = [(_position select 0),(_position select 1), (_position select 2)+DZE_BuildingZ];
+
+			_object setDir (getDir _object);
 			_object setPos _position;
 			_object attachTo [player];
 		};
 
 		cutText ["Planning construction numpad 8 = up, numpad 2 = down, and numpad 5 to start building.", "PLAIN DOWN"];
 		
-		_location0 = getPosATL player;
-
 		sleep 1;
 
 		_location2 = getPosATL player;
@@ -175,13 +181,14 @@ if (_hasrequireditem) then {
 		if(DZE_5) exitWith {
 			_isOk = false;
 			detach _object;
+			_dir = getDir _object;
 			deleteVehicle _object;
 		};
 
 		if(_location1 distance _location2 > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Moving to fast."; 
+			_reason = "Moving too fast."; 
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -207,13 +214,9 @@ if (_hasrequireditem) then {
 
 	_classname = _classnametmp;
 
-	
-
-
 	// Start Build 
 	_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 
-	_dir = getDir player;
 	_tmpbuilt setdir _dir;
 	
 	// Get position based on player
@@ -304,11 +307,64 @@ if (_hasrequireditem) then {
 
 				cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 
-				_tmpbuilt setVariable ["characterID",dayz_characterID,true];
-	
-				//["dayzPublishObj",[dayz_characterID,_tmpbuilt,[_dir,_location],_classname]] call callRpcProcedure;
-				dayzPublishObj = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
-				publicVariableServer "dayzPublishObj";
+				_tmpbuilt setVariable ["OEMPos",_location,true];
+
+				if(_lockable > 1) then {
+					
+					switch (_lockable) do {
+						
+						case 2: { // 2 lockbox
+							_combination_1 = (floor(random 3)) + 100; // 100=red,101=green,102=blue
+							_combination_2 = floor(random 10);
+							_combination_3 = floor(random 10);
+							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
+
+							if (_combination_1 == 100) then {
+								_combination_1_Display = "Red";
+							};
+							if (_combination_1 == 101) then {
+								_combination_1_Display = "Green";
+							};
+							if (_combination_1 == 102) then {
+								_combination_1_Display = "Blue";
+							};
+							_combinationDisplay = format["%1%2%3",_combination_1_Display,_combination_2,_combination_3];
+						};
+						
+						case 3: { // 3 combolock
+							_combination_1 = floor(random 10);
+							_combination_2 = floor(random 10);
+							_combination_3 = floor(random 10);
+							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
+							_combinationDisplay = _combination;
+						};
+						
+						case 4: { // 4 safe
+							_combination_1 = floor(random 10);
+							_combination_2 = floor(random 10);
+							_combination_3 = floor(random 10);
+							_combination_4 = floor(random 10);
+							_combinationDisplay = _combination;
+							_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
+						};
+					};
+
+					_tmpbuilt setVariable ["CharacterID",_combination,true];
+					
+
+					dayzPublishObj = [_combination,_tmpbuilt,[_dir,_location],_classname];
+					publicVariableServer "dayzPublishObj";
+
+					cutText [format["You have setup your %2. Combination is %1",_combinationDisplay,_text], "PLAIN DOWN", 5];
+					
+
+				} else {
+					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
+					
+					dayzPublishObj = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
+					publicVariableServer "dayzPublishObj";
+				};
+
 
 			} else {
 				deleteVehicle _tmpbuilt;

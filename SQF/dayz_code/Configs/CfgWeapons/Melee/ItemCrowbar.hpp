@@ -9,7 +9,7 @@ class ItemCrowbar: ItemCore
 		{
 			class Toolbelt
 			{
-				text=$STR_ACTIONS_RFROMTB;
+				text = "Remove from toolbelt";
 				script="spawn player_addToolbelt;";
 				use[]=
 				{

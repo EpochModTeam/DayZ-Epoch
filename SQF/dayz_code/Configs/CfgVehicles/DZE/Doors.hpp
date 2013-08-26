@@ -122,6 +122,8 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 		lifeTime = 1;
 		};
 	};
+	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+	lockable = 3;
 };
 
 /*  Same name as stated in the Class DestructionEffects, but an "Land_" added infront*/
@@ -204,15 +206,22 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName="Lock Door";
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			condition="(DZE_Lock_Door == (this getvariable['characterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
 			displayName="Unlock Door";
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
-			condition="(DZE_Lock_Door == (this getvariable['characterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			statement="this animate [""Open_hinge"", 1]";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName="Unlock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
 		};
 		class Close_Door : Open_Door
 		{
@@ -296,15 +305,22 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName="Lock Door";
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			condition="(DZE_Lock_Door == (this getvariable['characterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
 			displayName="Unlock Door";
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
-			condition="(DZE_Lock_Door == (this getvariable['characterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			statement="this animate [""Open_hinge"", 1]";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName="Unlock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
 		};
 		class Close_Door : Open_Door
 		{
@@ -388,15 +404,22 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName="Lock Door";
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			condition="(DZE_Lock_Door == (this getvariable['characterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
 			displayName="Unlock Door";
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
-			condition="(DZE_Lock_Door == (this getvariable['characterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			statement="this animate [""Open_hinge"", 1]";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName="Unlock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
 		};
 		class Close_Door : Open_Door
 		{

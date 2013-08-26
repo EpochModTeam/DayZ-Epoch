@@ -24,7 +24,6 @@ if (_doLoiter) then {
 	_agent setDir round(random 180);
 };
 
-
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
 if (random 1 > 0.7) then {

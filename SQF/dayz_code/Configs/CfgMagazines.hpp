@@ -787,6 +787,17 @@ class CfgMagazines {
 		model = "\dayz_equip\models\fueltank.p3d";
 		picture = "\dayz_equip\textures\equip_fueltank_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_8";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Salvage Scrap";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"PartGeneric",1}};
+				input[] = {{"PartFueltank",1}};
+			};
+		};
 	};
 	class PartWheel: CA_Magazine
 	{
@@ -1728,6 +1739,37 @@ class CfgMagazines {
 				text = "$STR_ACTIONS_BUILD";
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
+				create = "WoodStairsSans_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Stair Supports";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodStairsSupports",1}};
+				input[] = {{"ItemWoodStairs",1},{"PartWoodLumber",2}};
+				
+			};
+		};
+	};
+
+	class ItemWoodStairsSupport: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Stairs w/ supports";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort = "Wood stairs with supports";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
 				create = "WoodStairs_DZ";
 			};
 		};
@@ -2155,6 +2197,17 @@ class CfgMagazines {
 		model = "\dayz_equip\models\engine.p3d";
 		picture = "\dayz_equip\textures\equip_engine_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_11";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Salvage Scrap";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"PartGeneric",2}};
+				input[] = {{"PartEngine",1}};
+			};
+		};
 	};
 	class PartWoodPile: CA_Magazine
 	{
@@ -2255,6 +2308,17 @@ class CfgMagazines {
 				input[] = {{"bulk_empty",1},{"PartWoodLumber",8}};
 				
 			};
+			class Crafting4
+			{
+				text = "Craft Wood Ladder";
+				script = "spawn player_craftItem4;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodLadder",1}};
+				input[] = {{"bulk_empty",1},{"PartWoodLumber",8}};
+				
+			};
+			
 		};
 	};
 	class PartWoodPlywood: CA_Magazine
@@ -3434,8 +3498,8 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		bloodRegen = 100;
-		displayName = "Pumkin";
-		descriptionShort = "Pumkin";
+		displayName = "Pumpkin";
+		descriptionShort = "Pumpkin";
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
 	};

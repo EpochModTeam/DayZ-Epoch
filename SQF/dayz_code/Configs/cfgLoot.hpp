@@ -55,6 +55,48 @@ class CfgLoot {
 			0.01
 		}
 	};
+	office2[] = {
+		{
+			"FoodCanUnlabeled",
+			"TrashJackDaniels",
+			"ItemSodaEmpty",
+			"ItemSodaCoke",
+			"ItemSodaPepsi",
+			"FoodCanBakedBeans",
+			"FoodCanSardines",
+			"FoodCanFrankBeans",
+			"FoodCanPasta",
+			"8Rnd_9x18_Makarov",
+			"7Rnd_45ACP_1911",
+			"2Rnd_shotgun_74Slug",
+			"2Rnd_shotgun_74Pellets",
+			"ItemBandage",
+			"ItemPainkiller",
+			"FoodBioMeat",
+			"8Rnd_9x18_MakarovSD",
+			"ItemBriefcaseEmpty"
+		},
+		{
+			0.07,
+			0.09,
+			0.09,
+			0.09,
+			0.09,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.07,
+			0.05,
+			0.05,
+			0.05,
+			0.06,
+			0.06,
+			0.01,
+			0.01,
+			0.01
+		}
+	};
 	food[] = {
 		{
 			//trash
@@ -87,6 +129,68 @@ class CfgLoot {
 			// food Bags
 			0.05,
 			0.04
+		}
+	};
+	office[] = {
+		{
+			"FoodCanUnlabeled",
+			"ItemSodaEmpty",
+			"ItemSodaCoke",
+			"ItemSodaPepsi",
+			"TrashJackDaniels",
+			"FoodCanBakedBeans",
+			"FoodCanSardines",
+			"FoodCanFrankBeans",
+			"FoodCanPasta",
+			"ItemWaterbottleUnfilled",
+			"ItemWaterbottle",
+			"ItemBandage",
+			"7Rnd_45ACP_1911",
+			"5x_22_LR_17_HMR",
+			"10x_303",
+			"6Rnd_45ACP",
+			"2Rnd_shotgun_74Slug",
+			"2Rnd_shotgun_74Pellets",
+			"8Rnd_9x18_Makarov",
+			"15Rnd_W1866_Slug",
+			"WoodenArrow",
+			"HandRoadFlare",
+			"ItemPainkiller",
+			"HandChemGreen",
+			"HandChemBlue",
+			"HandChemRed",
+			"ItemHeatPack",
+			"ItemLockbox"
+		},
+		{
+			0.06,
+			0.06,
+			0.06,
+			0.04,
+			0.04,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.11,
+			0.03,
+			0.01,
+			0.04,
+			0.04,
+			0.05,
+			0.05,
+			0.09,
+			0.02,
+			0.04,
+			0.07,
+			0.02,
+			0.01,
+			0.03,
+			0.03,
+			0.03,
+			0.01
 		}
 	};
 	generic[] = {
@@ -331,12 +435,13 @@ class CfgLoot {
 			"ItemPainkiller",
 			"ItemWire",
 			"ItemTankTrap",
+			"ItemComboLock",
 		},
 		{
 			0.14,
 			0.12,
 			0.09,
-			0.12,
+			0.11,
 			0.09,
 			0.06,
 			0.06,
@@ -344,6 +449,7 @@ class CfgLoot {
 			0.06,
 			0.12,
 			0.06,
+			0.01,
 			0.01,
 			0.01
 		}

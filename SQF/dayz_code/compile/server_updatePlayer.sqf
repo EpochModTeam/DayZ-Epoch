@@ -1,7 +1,7 @@
 private ["_characterID","_temp","_isSync","_currentWpn","_currentMag","_magazines","_qty","_qtyT","_val","_isNewPos","_isNewBackp","_humanity","_isNewGear","_doUpdate","_currentModel","_modelChk","_playerPos","_playerGear","_playerBackp","_backpack","_updates","_killsB","_killsH","_medical","_isNewMed","_character","_timeSince","_charPos","_isInVehicle","_justAte","_justDrank","_distanceFoot","_lastPos","_kills","_headShots","_timeGross","_timeLeft","_onLadder","_isTerminal","_vehicle","_wounds","_currentAnim","_muzzles","_array","_key","_lastTime","_config","_currentState"];
 _character = _this;
 _doUpdate = 	false;
-_characterID =	_character getVariable ["characterID","0"];
+_characterID =	_character getVariable ["CharacterID","0"];
 _updates =		_character getVariable ["updatePlayer",[false,false,false,false,false]];
 _charPos = 		getPosATL _character;
 _isInVehicle = 	vehicle _character != _character;

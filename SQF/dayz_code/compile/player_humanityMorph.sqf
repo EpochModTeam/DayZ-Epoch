@@ -72,7 +72,7 @@ player setVariable["zombieKills",_zombieKills,true];
 player setVariable["headShots",_headShots,true];
 player setVariable["humanKills",_humanKills,true];
 player setVariable["banditKills",_banditKills,true];
-player setVariable["characterID",_charID,true];
+player setVariable["CharacterID",_charID,true];
 player setVariable["worldspace",_worldspace,true];
 player setVariable["friendlies",_friendlies,true];
 player setVariable["tagList",_tagList,true];

@@ -6,7 +6,7 @@ _magazines =	_this select 1;
 _forceGear =	_this select 3;
 _force =	true;
 
-_characterID =	_character getVariable ["characterID","0"];
+_characterID =	_character getVariable ["CharacterID","0"];
 _charPos = 		getPosATL _character;
 _isInVehicle = 	vehicle _character != _character;
 _timeSince = 	0;
@@ -185,7 +185,7 @@ if (_characterID != "0") then {
 
 		// If player is in a vehicle, keep its position updated
 		if (vehicle _character != _character) then {
-//			[vehicle _character, "position"] call server_updateObject;
+			//[vehicle _character, "position"] call server_updateObject;
 			if (!(vehicle _character in needUpdate_objects)) then {
 				//diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
 				needUpdate_objects set [count needUpdate_objects, vehicle _character];

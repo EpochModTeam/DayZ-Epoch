@@ -5,8 +5,8 @@ _action = _this select 2;
 
 _caller removeAction _action;
 
-_callerID = _caller getVariable "characterID";
-_targetID = _target getVariable "characterID";
+_callerID = _caller getVariable "CharacterID";
+_targetID = _target getVariable "CharacterID";
 
 _friendlies = _caller getVariable ["friendlies", []];
 _friendlies set [count _friendlies, _targetID];

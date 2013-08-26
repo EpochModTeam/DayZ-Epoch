@@ -1,9 +1,9 @@
 /*
 	DayZ Fishing
 	Usage: spawn player_goFishing;
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+	Made for DayZ Mod please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_itemOut","_position","_isOk","_counter"];
+private ["_itemOut","_position","_isOk","_counter","_rnd","_item","_itemtodrop","_vehicle","_inVehicle"];
 
 if(TradeInprogress) exitWith { cutText ["Fishing already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -46,7 +46,6 @@ while {_isOk} do {
 				_rnd = 50;
 			};
 		};
-		
 
 		// 1% chance to catch anything
 		if((random _rnd) <= 1) then {
@@ -60,7 +59,6 @@ while {_isOk} do {
 			} else {
 				player addMagazine _itemOut;
 			};
-			
 			
 			cutText ["You caught a fish.", "PLAIN DOWN"];
 			_isOk = false;

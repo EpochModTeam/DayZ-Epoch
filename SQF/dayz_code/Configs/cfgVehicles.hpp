@@ -1645,7 +1645,7 @@ class CfgVehicles {
 		destrType = "DestructTree";
 		cost = 100;
 		offset[] = {0,1.5,0};
-		model="\z\addons\dayz_epoch\models\largel_wall_doorA.p3d";
+		model="\z\addons\dayz_epoch\models\large_wall_door.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 200;
@@ -1728,7 +1728,7 @@ class CfgVehicles {
 		destrType = "DestructTree";
 		cost = 100;
 		offset[] = {0,1.5,0};
-		model="\z\addons\dayz_epoch\models\small_wall_doorA.p3d";
+		model="\z\addons\dayz_epoch\models\small_wall_door.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 200;
@@ -1786,6 +1786,7 @@ class CfgVehicles {
 		displayName = "Wood Stairs Sans";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
+		upgradeBuilding[] = {"WoodStairs_DZ",{{"PartWoodLumber",2}}};
 		constructioncount = 1;
 		GhostPreview = "WoodStairsSans_Preview_DZ"; 
 	};
@@ -1875,7 +1876,7 @@ class CfgVehicles {
 		destrType = "DestructNo";
 		cost = 100;
 		offset[] = {0,1.5,0};
-		model="\z\addons\dayz_epoch\models\small_wall_doorA_ghost.p3d";
+		model="\z\addons\dayz_epoch\models\small_wall_door_ghost.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 1000;
@@ -1901,7 +1902,7 @@ class CfgVehicles {
 		destrType = "DestructNo";
 		cost = 100;
 		offset[] = {0,1.5,0};
-		model="\z\addons\dayz_epoch\models\large_wall_doorA_ghost.p3d";
+		model="\z\addons\dayz_epoch\models\large_wall_door_ghost.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 1000;
@@ -2402,7 +2403,7 @@ class CfgVehicles {
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
 		offset[] = {0,1.5,0.5};
-		lockable = 1;
+		lockable = 4;
 		unlockedClass = "VaultStorage";
 	};
 
@@ -2417,7 +2418,7 @@ class CfgVehicles {
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
 		offset[] = {0,1.5,0.5};
-		lockable = 1;
+		lockable = 3;
 		unlockedClass = "LockboxStorage";
 		
 	};

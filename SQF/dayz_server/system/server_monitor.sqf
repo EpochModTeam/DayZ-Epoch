@@ -131,8 +131,13 @@ if (isServer and isNil "sm_done") then {
 			_object setVariable ["lastUpdate",time];
 			_object setVariable ["ObjectID", _idKey, true];
 
+			_lockable = 0;
+			if(isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {
+				_lockable = getNumber(configFile >> "CfgVehicles" >> _type >> "lockable");
+			};
+
 			// fix for leading zero issues on safe codes after restart
-			if (_type in DZE_LockedStorage) then {
+			if (_lockable == 4) then {
 				_codeCount = (count (toArray _ownerID));
 				if(_codeCount == 3) then {
 					_ownerID = format["0%1", _ownerID];
@@ -145,6 +150,16 @@ if (isServer and isNil "sm_done") then {
 				};
 			};
 
+			if (_lockable == 3) then {
+				_codeCount = (count (toArray _ownerID));
+				if(_codeCount == 2) then {
+					_ownerID = format["0%1", _ownerID];
+				};
+				if(_codeCount == 1) then {
+					_ownerID = format["00%1", _ownerID];
+				};
+			};
+
 			_object setVariable ["CharacterID", _ownerID, true];
 			
 			clearWeaponCargoGlobal  _object;
@@ -154,14 +169,14 @@ if (isServer and isNil "sm_done") then {
 				_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
 				// Test disabling simulation server side on buildables only.
 				_object enableSimulation false;
+				// used for inplace upgrades and lock/unlock of safe
+				_object setVariable ["OEMPos", _pos, true];
 			};
 			
 			_object setdir _dir;
 			_object setpos _pos;
 			_object setDamage _damage;
 
-			_object setVariable ["OEMPos", _pos, true];
-			
 			if (count _intentory > 0) then {
 				if (_type in DZE_LockedStorage) then {
 					// Fill variables with loot

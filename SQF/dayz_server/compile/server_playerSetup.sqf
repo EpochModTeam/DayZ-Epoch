@@ -248,7 +248,7 @@ if (_randomSpot) then {
 dayz_players set [count dayz_players,_playerObj];
 
 //record player pos locally for server checking
-_playerObj setVariable["characterID",_characterID,true];
+_playerObj setVariable["CharacterID",_characterID,true];
 _playerObj setVariable["humanity",_humanity,true];
 _playerObj setVariable["humanity_CHK",_humanity];
 //_playerObj setVariable["worldspace",_worldspace,true];
