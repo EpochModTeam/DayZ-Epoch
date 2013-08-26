@@ -97,32 +97,29 @@
 		};
 	};
 	
-	class z_newBase : zZombie_new_Base {
+	class z_villager1 : zZombie_new_Base {
 		zombieLoot = "civilian";
 		model = "\ca\characters2\civil\Villager\Villager";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_co.paa"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v4_co.paa"};
 		
 		class Wounds {
 			tex[] = {};
 			mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat", "ca\characters2\Civil\Villager\Data\villager.RVmat", "ca\characters2\Civil\Villager\Data\villager_w1.RVmat", "ca\characters2\Civil\Villager\Data\villager_w2.RVmat"};
 		};
 	};
-	class z_new_villager2 : z_newBase {
+	class z_villager2 : z_villager1 {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v2_co.paa"};
 	};
-	class z_new_villager3 : z_newBase {
+	class z_villager3 : z_villager1 {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v3_co.paa"};
 	};
-	class z_new_villager4 : z_newBase {
-		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v4_co.paa"};
-	};
 	
-	class z_new_worker_base : zZombie_new_Base {
+	class z_worker1 : zZombie_new_Base {
 		zombieLoot = "civilian";
 		model = "\Ca\characters_E\Overall\Overall";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_4_co.paa"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_4_co.paa"};
 		
 		class Wounds {
 			tex[] = {};
@@ -130,25 +127,9 @@
 		};
 	};
 	
-	class z_new_worker2 : z_new_worker_base {
+	class z_worker2 : z_worker1 {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\overall_2_co.paa"};
 	};
-	class z_new_worker3 : z_new_worker_base {
+	class z_worker3 : z_worker1 {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_3_co.paa"};
 	};
-	class z_new_worker4 : z_new_worker_base {
-		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_4_co.paa"};
-	};
-	/*
-	class z_policeman;
-	class z_new_policeman : z_policeman {
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_communityassets\zeds\villager\villager_co.paa"};
-	};
-	class z_new_policeman : z_policeman {
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_communityassets\zeds\policeman\policeman_co.paa"};
-		
-		class Eventhandlers {
-			init = "(_this select 0) setObjectTexture [0, '\z\addons\dayz_communityassets\zeds\policeman\policeman_co.paa'];";
-        };
-	};
-	*/
