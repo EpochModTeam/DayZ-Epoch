@@ -533,4 +533,32 @@ class CfgSounds {
 	class z_gore_short_loop : gore_1 {
 		sound[] = {"\dayz_sfx\gore\gore_short_loop.ogg",0.1,1,30};
 	};
+
+	// epoch sounds
+	class z_keypad_tick_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\keyPress_a.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_keypad_tick_1 : z_keypad_tick_0 {
+		sound[] = {"\dayz_sfx\effects\keyPress_b.ogg",1,1,10};
+	};
+	class z_keypad_tick_2 : z_keypad_tick_0 {
+		sound[] = {"\dayz_sfx\effects\keyPress_c.ogg",1,1,10};
+	};
+	class z_combo_tick_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\combo_tick.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_combo_unlock_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\combo_unlock.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_combo_locked_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\combo_locked.ogg",1,1,10};
+		titles[] = {};
+	};
 };
