@@ -2288,6 +2288,16 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	class WeaponHolder_ItemTentOld: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "$STR_EQUIP_NAME_20";
+		model = "\dayz_equip\proxy\tentbag.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','ItemTentOld'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 	class WeaponHolder_ItemTentDomed: WeaponHolderBase
 	{
 		scope = 2;
@@ -2354,7 +2364,7 @@ class CfgVehicles {
 		transportMaxMagazines = 50;
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
-		create = "WeaponHolder_ItemTent";
+		create = "WeaponHolder_ItemTentOld";
 		offset[] = {0,2.5,0};
 	};
 	class TentStorageDomed: TentStorage

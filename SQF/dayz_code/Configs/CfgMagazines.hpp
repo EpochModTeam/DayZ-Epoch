@@ -18,7 +18,7 @@ class CfgMagazines {
 				script = "spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
-				output[] = {{"ItemTent",1}};
+				output[] = {{"ItemTentOld",1}};
 				input[] = {{"ItemCanvas",2},{"ItemPole",2}};
 			};
 			class Crafting1
@@ -772,6 +772,7 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = "Combination Lock";
+		weight = 0.5;
 		model = "\z\addons\dayz_epoch\models\combo_lock_mag.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_combolock_ca.paa";
 		descriptionShort = "Used to secure structures from unauthorized entry.";
@@ -977,10 +978,12 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "12 x Random Item";
+		weight = 5;
 	};
 	class bulk_empty: bulk
 	{
 		descriptionShort = "Empty Supply Crate";
+		weight = 5;
 		class ItemActions
 		{
 			class Crafting
@@ -1032,6 +1035,7 @@ class CfgMagazines {
 	class bulk_30Rnd_9x19_MP5SD: bulk
 	{
 		descriptionShort = "12 x 30Rnd_9x19_MP5SD";
+		
 		class ItemActions
 		{
 			class CreateMags
@@ -1085,6 +1089,7 @@ class CfgMagazines {
 	class bulk_ItemTankTrap: bulk
 	{
 		descriptionShort = "12 x Tank Trap";
+		weight = 25;
 		class ItemActions
 		{
 			class CreateMags
@@ -1099,6 +1104,7 @@ class CfgMagazines {
 	class bulk_ItemWire: bulk
 	{
 		descriptionShort = "12 x Wire Kit";
+		weight = 25;
 		class ItemActions
 		{
 			class CreateMags
@@ -1113,6 +1119,7 @@ class CfgMagazines {
 	class bulk_PartGeneric: bulk
 	{
 		descriptionShort = "12 x Scrap Metal";
+		weight = 60;
 		class ItemActions
 		{
 			class CreateMags
@@ -1147,6 +1154,7 @@ class CfgMagazines {
 		descriptionShort = "Workbench: Used to craft.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 10;
 		class ItemActions
 		{
 			class Build
@@ -1190,6 +1198,7 @@ class CfgMagazines {
 		descriptionShort = "Metal Panel: Strong metal wall used for base defence.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 50;
 		class ItemActions
 		{
 			class Build
@@ -1210,6 +1219,7 @@ class CfgMagazines {
 		descriptionShort = "Deer Stand: can be used as a lookout.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1230,6 +1240,7 @@ class CfgMagazines {
 		descriptionShort = "Large Camo Netting: A very large buildable object that can be used to cover objects.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1250,6 +1261,7 @@ class CfgMagazines {
 		descriptionShort = "Large Camo Netting: A very large buildable object that can be used to cover objects.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1270,6 +1282,7 @@ class CfgMagazines {
 		descriptionShort = "Camo Netting: A buildable object that can be used to cover objects.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1299,6 +1312,7 @@ class CfgMagazines {
 		descriptionShort = "Camo Netting: A buildable object that can be used to cover objects.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1328,6 +1342,7 @@ class CfgMagazines {
 		descriptionShort = "Fuel Pump";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 50;
 		class ItemActions
 		{
 			class Build
@@ -1348,6 +1363,7 @@ class CfgMagazines {
 		descriptionShort = "Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1368,6 +1384,7 @@ class CfgMagazines {
 		descriptionShort = "Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 15;
 		class ItemActions
 		{
 			class Build
@@ -1388,6 +1405,7 @@ class CfgMagazines {
 		descriptionShort = "Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1408,6 +1426,7 @@ class CfgMagazines {
 		descriptionShort = "Wood Shack";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1428,6 +1447,7 @@ class CfgMagazines {
 		descriptionShort = "M240 Nest";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 125;
 		class ItemActions
 		{
 			class Build
@@ -1448,6 +1468,7 @@ class CfgMagazines {
 		descriptionShort = "Sun Shade: A buildable object used to keep the sun off your back.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1468,6 +1489,7 @@ class CfgMagazines {
 		descriptionShort = "Wood Bench";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1488,6 +1510,7 @@ class CfgMagazines {
 		descriptionShort = "Rusty Gate: A buildable object that can be opened and closed.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1508,6 +1531,7 @@ class CfgMagazines {
 		descriptionShort = "Sandbag Nest: A buildable fortification object, can be removed.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 50;
 		class ItemActions
 		{
 			class Build
@@ -1528,6 +1552,7 @@ class CfgMagazines {
 		descriptionShort = "Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1548,6 +1573,7 @@ class CfgMagazines {
 		descriptionShort = "Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 75;
 		class ItemActions
 		{
 			class Build
@@ -1569,6 +1595,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\generator_gear.p3d";
 		picture = "\dayz_equip\textures\equip_generator_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_31";
+		weight = 30;
 		class ItemActions
 		{
 			class Build
@@ -1589,6 +1616,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Fuel Pumps can be used to create a refuel station";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1629,6 +1657,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
 		descriptionShort = "Semi secure lockbox";
+		weight = 15;
 		class ItemActions
 		{
 			class Build {
@@ -1651,6 +1680,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1671,6 +1701,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		weight = 15;
 		class ItemActions
 		{
 			class Build
@@ -1701,6 +1732,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		weight = 10;
 		class ItemActions
 		{
 			class Build
@@ -1732,6 +1764,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood stairs";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1763,6 +1796,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood stairs with supports";
+		weight = 30;
 		class ItemActions
 		{
 			class Build
@@ -1784,6 +1818,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood Ladder";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1805,6 +1840,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1856,6 +1892,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		weight = 7;
 		class ItemActions
 		{
 			class Build
@@ -1886,6 +1923,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wall with doorway constucted out of plywood and lumber.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1916,6 +1954,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wall with door constucted out of plywood and lumber.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1946,6 +1985,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wall with door constucted out of plywood and lumber.";
+		weight = 30;
 		class ItemActions
 		{
 			class Build
@@ -1969,6 +2009,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wall with Window constucted out of plywood and lumber.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -1990,6 +2031,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Large wall constucted out of plywood and lumber.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -2041,6 +2083,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Garage door constucted out of plywood and lumber.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -2071,6 +2114,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Garage door with combination lock.";
+		weight = 25;
 		class ItemActions
 		{
 			class Build
@@ -2092,6 +2136,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Large wall with doorway constucted out of plywood and lumber.";
+		weight = 30;
 		class ItemActions
 		{
 			class Build
@@ -2123,6 +2168,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wall with door constucted out of plywood and lumber.";
+		weight = 30;
 		class ItemActions
 		{
 			class Build
@@ -2154,6 +2200,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Wall with combination lock door constucted out of plywood and lumber.";
+		weight = 35;
 		class ItemActions
 		{
 			class Build
@@ -2175,6 +2222,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort = "Large wall with doorway constucted out of plywood and lumber..";
+		weight = 30;
 		class ItemActions
 		{
 			class Build
@@ -2408,6 +2456,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\cloth_parcel.p3d";
 		picture = "\dayz_equip\textures\equip_cloth_parcel_ca.paa";
 		descriptionShort = "Clothes Parcel";
+		weight = 1;
 		class ItemActions
 		{
 			class Use
@@ -2685,11 +2734,8 @@ class CfgMagazines {
 	};
 	//
 
-
-
-
-
-	class ItemTent: CA_Magazine
+	class ItemTent; 
+	class ItemTentOld: ItemTent
 	{
 		scope = 2;
 		count = 1;
@@ -2698,6 +2744,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_20;
+		weight = 5;
 		class ItemActions
 		{
 			class Build {
@@ -2856,7 +2903,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
-		
+		weight = 50;
 		class ItemActions {
 			class Build {
 				text = "Build H-barrier cube";
@@ -2885,7 +2932,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
-		
+		weight = 150;
 		class ItemActions {
 			class Build {
 				text = "Build Triple H-barrier";
@@ -3500,6 +3547,7 @@ class CfgMagazines {
 		bloodRegen = 100;
 		displayName = "Pumpkin";
 		descriptionShort = "Pumpkin";
+		weight = 1;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
 	};
@@ -3509,6 +3557,7 @@ class CfgMagazines {
 		bloodRegen = 100;
 		displayName = "Bag of Sunflower Seeds";
 		descriptionShort = "Bag of Sunflower Seeds";
+		weight = 0.1;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
 	};
@@ -3693,9 +3742,22 @@ class CfgMagazines {
 		count = 1;
 		displayName = "Kilo of Hemp";
 		descriptionShort = "Kilo of Hemp";
+		weight = 1;
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d"; // TODO: model + icon
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
 		type = 256;
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Craft Canvas";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"ItemCanvas",1}};
+				input[] = {{"ItemKiloHemp",1}};
+			};
+		};
 	};
 
 	

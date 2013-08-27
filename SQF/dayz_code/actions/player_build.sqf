@@ -209,6 +209,15 @@ if (_hasrequireditem) then {
 			detach _object;
 			deleteVehicle _object;
 		};
+
+		if (DZE_cancelBuilding) exitWith {
+			_isOk = false;
+			_cancel = true;
+			_reason = "Cancelled building.";
+			detach _object;
+			deleteVehicle _object;
+			DZE_cancelBuilding = false;
+		};
 	};
 
 

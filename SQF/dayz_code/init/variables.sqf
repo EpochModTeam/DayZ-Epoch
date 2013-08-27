@@ -599,4 +599,6 @@ if(!isDedicated) then {
 	DZE_4 = false;
 	DZE_6 = false;
 
+	DZE_cancelBuilding = false;
+
 };

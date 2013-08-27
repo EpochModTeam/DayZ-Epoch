@@ -39,7 +39,7 @@ _findNearestTree = [];
 		};
 	};
 
-} foreach nearestObjects [getPos player, [], 20];
+} foreach nearestObjects [getPos player, [], 10];
 
 //diag_log format["DEBUG TREES: %1", _findNearestTree];
 

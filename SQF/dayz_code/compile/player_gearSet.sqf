@@ -18,6 +18,7 @@ if (count _inventory > 0) then {
 		};
 
 		if (_item == "BoltSteel") then { _item = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
+		if (_item == "ItemTent") then { _item = "ItemTentOld" };
 
 		//Is item legal?
 		_isOK = 	isClass(configFile >> "CfgMagazines" >> _item);
