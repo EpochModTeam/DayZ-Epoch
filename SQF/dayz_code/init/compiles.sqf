@@ -329,13 +329,14 @@ if (!isDedicated) then {
 		if (_dikCode == 0x4C) then {
 			DZE_5 = true;
 		};
+
+		if (_dikCode == 0x01) then {
+			DZE_cancelBuilding = true;
+		};
 		
 		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
-			DZE_cancelBuilding = true;
-		} else {
-			DZE_cancelBuilding = false;
 		};
 		/*
 		if (_dikCode in actionKeys "IngamePause") then {

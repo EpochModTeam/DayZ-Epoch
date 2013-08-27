@@ -14,6 +14,8 @@ _reason = "";
 _canBuildOnPlot = false;
 DZE_BuildingZ = 0;
 
+DZE_cancelBuilding = false;
+
 DZE_5 = false;
 
 call gear_ui_init;
@@ -216,7 +218,6 @@ if (_hasrequireditem) then {
 			_reason = "Cancelled building.";
 			detach _object;
 			deleteVehicle _object;
-			DZE_cancelBuilding = false;
 		};
 	};
 
