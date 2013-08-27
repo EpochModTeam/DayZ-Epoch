@@ -43,9 +43,21 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 				_weight = getNumber(CfgWeight >> "Magazines" >> _x >> "weight");
 				_total_weight = _total_weight + _weight;
 			}else{
-				#ifdef R3F_WEIGHT_SHOW_CLASSES_NOT_FOUND
-				diag_log format["Class not found %1", _x];
-				#endif
+				
+				_weight = 0;
+				if(isNumber (configFile >> "cfgMagazines" >> _x >> "weight")) then {
+					_weight = getNumber(configFile >> "cfgMagazines" >> _x >> "weight");
+				};
+				
+				if(_weight > 0) then {
+					_total_weight = _total_weight + _weight;
+				} else {
+					// log only if not found 
+					// #ifdef R3F_WEIGHT_SHOW_CLASSES_NOT_FOUND
+					diag_log format["Class not found %1", _x];
+					// #endif
+				
+				};				
 			};
 		};
 	}foreach _arr_class;
