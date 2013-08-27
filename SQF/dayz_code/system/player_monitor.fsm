@@ -703,6 +703,7 @@ class FSM
        "			_countr = 0;" \n
        "			{" \n
        "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
+	   "				if (_x == ""ItemTent"") then { _x = ""ItemTentOld"" };" \n
        "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
        "				_countr = _countr + 1;" \n
        "			} forEach _backpackMagTypes;" \n

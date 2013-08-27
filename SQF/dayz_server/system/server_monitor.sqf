@@ -207,6 +207,7 @@ if (isServer and isNil "sm_done") then {
 					_countr = 0;
 					{
 						if (_x == "BoltSteel") then { _x = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
+						if (_x == "ItemTent") then { _x = "ItemTentOld" };
 						_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
 						if (_isOK) then {
 							_block = 	getNumber(configFile >> "CfgMagazines" >> _x >> "stopThis") == 1;
