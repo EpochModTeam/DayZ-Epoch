@@ -40,7 +40,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.1.94";
+		version = "1.0.1.95";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -539,9 +539,9 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
 			{ "Winchester1866","weapon" },
-			{ "WeaponHolder_ItemTent","object" },
-			{ "WeaponHolder_ItemTentDomed","object" },
-			{ "WeaponHolder_ItemTentDomed2","object" },
+			{ "ItemTentOld","magazine" },
+			{ "ItemTentDomed2","magazine" },
+			{ "ItemTentDomed","magazine" },
 			{ "","military" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
@@ -616,9 +616,9 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
 			{ "Winchester1866","weapon" },
-			{ "WeaponHolder_ItemTent","object" },
-			{ "WeaponHolder_ItemTentDomed","object" },
-			{ "WeaponHolder_ItemTentDomed2","object" },
+			{ "ItemTentOld","magazine" },
+			{ "ItemTentDomed2","magazine" },
+			{ "ItemTentDomed","magazine" },
 			{ "","military" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
@@ -829,9 +829,9 @@ class CfgBuildingLoot {
 			{"DZ_CompactPack_EP1","object"}, //
 			{"DZ_TerminalPack_EP1","object"}, //
 			{ "Winchester1866","weapon" },
-			{ "WeaponHolder_ItemTent","object" },
-			{ "WeaponHolder_ItemTentDomed","object" },
-			{ "WeaponHolder_ItemTentDomed2","object" },
+			{ "ItemTentOld","magazine" },
+			{ "ItemTentDomed2","magazine" },
+			{ "ItemTentDomed","magazine" },
 			{ "","food" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
