@@ -1256,20 +1256,6 @@ if (true) then
   _this setPos [11449.293, 11348.902, 9.1552734e-005];
 };
 
-setDate [1985, 5, 10, 3, 30];
-
-_unit_112 = objNull;
-if (true) then
-{
-  _this = _group_0 createUnit ["USMC_Soldier_AA", [12945.388, 12763.703, 0], [], 0, "CAN_COLLIDE"];
-  _unit_112 = _this;
-  _this setUnitAbility 0.60000002;
-  if (true) then {_group_0 selectLeader _this;};
-  if (true) then {selectPlayer _this;};
-};
-
-setDate [1985, 5, 10, 12, 30];
-
 _vehicle_659 = objNull;
 if (true) then
 {
