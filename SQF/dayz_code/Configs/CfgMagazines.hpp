@@ -3799,6 +3799,7 @@ class CfgMagazines {
 		descriptionShort="Caliber: 12 gauge <br/>Rounds: 2 Pellets<br/>Used in: M1014";
 		model = "\z\addons\dayz_communityassets\models\2shells_pellet.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_CA.paa";
+		weight = 0.1; 
 		class ItemActions
 		{
 			class ReloadMag
