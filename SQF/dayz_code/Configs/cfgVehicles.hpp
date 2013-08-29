@@ -2288,37 +2288,49 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-	class WeaponHolder_ItemTentOld: WeaponHolderBase
+
+	class WeaponHolder;
+
+	class WeaponHolder_ItemTentOld: WeaponHolder
 	{
 		scope = 2;
 		displayName = "$STR_EQUIP_NAME_20";
-		model = "\dayz_equip\proxy\tentbag.p3d";
-		class eventHandlers
+		class transportmagazines
 		{
-			init = "[(_this select 0),'cfgMagazines','ItemTentOld'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+			class _xx_ItemTentDomed2
+			{
+				magazine = "ItemTentOld";
+				count = 1;
+			};
 		};
 	};
-	class WeaponHolder_ItemTentDomed: WeaponHolderBase
+	class WeaponHolder_ItemTentDomed: WeaponHolder
 	{
 		scope = 2;
 		displayName = "Domed Desert Tent";
-		model = "\dayz_equip\proxy\tentbag.p3d";
-		class eventHandlers
+		class transportmagazines
 		{
-			init = "[(_this select 0),'cfgMagazines','ItemTentDomed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+			class _xx_ItemTentDomed2
+			{
+				magazine = "ItemTentDomed";
+				count = 1;
+			};
 		};
 	};
-	class WeaponHolder_ItemTentDomed2: WeaponHolderBase
+	class WeaponHolder_ItemTentDomed2: WeaponHolder
 	{
 		scope = 2;
 		displayName = "Domed Green Tent";
-		model = "\dayz_equip\proxy\tentbag.p3d";
-		class eventHandlers
+		class transportmagazines
 		{
-			init = "[(_this select 0),'cfgMagazines','ItemTentDomed2'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+			class _xx_ItemTentDomed2
+			{
+				magazine = "ItemTentDomed2";
+				count = 1;
+			};
 		};
 	};	
-	class WeaponHolder;
+	
 	class WeaponHolder_ItemVault: WeaponHolder
 	{
 		scope = 2;
