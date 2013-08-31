@@ -35,19 +35,24 @@ while {true} do {
 	if (_distance < 500) then {
 		_randomSpot = false;
 	};
+	/* comment out to test if this is source of the issue
 	if (!isNil "_mylastPos") then {
 		_distance = _mylastPos distance _tempPos;
 		if (_distance > 400) then {
 			_randomSpot = false;
 		};
 	};
+	*/
 	if (_randomSpot) then {
 		_mylastPos = _tempPos;
 	};
 	
+	/* not used
 	if (!isNil "_mylastPos") then {
 		dayz_mylastPos = _mylastPos;
 	};
+	*/
+
 	dayz_areaAffect = _size;
 	
 	if (_speed > 0.1) then {
@@ -278,12 +283,14 @@ while {true} do {
 			if (_mylastPos distance _lastPos > 200) then {
 				if (alive player) then {
 					player setPosATL _mylastPos;
+					diag_log ("Player Teleport Revert : "+ str(_mylastPos distance _lastPos));
 				};
 			};
 		} else {
 			if (_mylastPos distance _lastPos > 800) then {
 				if (alive player) then {
 					player setPosATL _mylastPos;
+					diag_log ("Player Teleport Revert : "+ str(_mylastPos distance _lastPos));
 				};
 			};
 		};
