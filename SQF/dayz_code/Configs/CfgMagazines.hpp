@@ -1165,7 +1165,7 @@ class CfgMagazines {
 		descriptionShort = "Half height cinder block wall";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-		weight = 300;
+		weight = 325;
 		class ItemActions
 		{
 			class Build
