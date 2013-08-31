@@ -546,7 +546,7 @@ class CfgBuildingLoot {
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
-			{ "PartWoodPile","magazine" },
+			{ "PartPlywoodPack","magazine" },
 			{ "clothes","single" },
 			{ "specialclothes","single" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
@@ -623,7 +623,7 @@ class CfgBuildingLoot {
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
-			{ "PartWoodPile","magazine" },
+			{ "PartPlywoodPack","magazine" },
 			{ "clothes","single" },
 			{ "specialclothes","single" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
@@ -690,14 +690,15 @@ class CfgBuildingLoot {
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
 			{"ItemTankTrap","magazine"},
-			{"ItemKeyKit","weapon"}
+			{"ItemKeyKit","weapon"},
+			{"CinderBlocks","magazine"}
 	};
 		itemChance[] =	{
 			0.01,
 			0.01,
 			0.01,
 			0.17,
-			0.28,
+			0.26,
 			0.04,
 			0.04,
 			0.05,
@@ -711,7 +712,8 @@ class CfgBuildingLoot {
 			0.06,
 			0.01,
 			0.04,
-			0.01
+			0.01,
+			0.02,
 		};
 	};
 	class IndustrialFuel: Default {
@@ -775,7 +777,7 @@ class CfgBuildingLoot {
 			{ "Winchester1866","weapon" },
 			{ "","trash" },
 			{ "Crossbow_DZ","weapon"},
-			{ "PartWoodPile","magazine" },
+			{ "PartPlankPack","magazine" },
 			{ "WeaponHolder_ItemHatchet","object" },
 			{ "MR43","weapon" },
 			{ "ItemFuelBarrel","magazine"},
