@@ -426,6 +426,10 @@ if(isNil "dayz_minpos") then {
 if(isNil "dayz_maxpos") then {
 	dayz_maxpos = 20000;
 };
+if(isNil "DZE_teleport") then {
+	DZE_teleport = [1000,2000,500,200,800];
+};
+
 /*
 if(isNil "dayz_canBuildInCity") then {
 	dayz_canBuildInCity = false;

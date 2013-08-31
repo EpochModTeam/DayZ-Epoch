@@ -1,19 +1,28 @@
-private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_timeOut","_result","_factor","_randomSpot","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_bloodChanged","_id","_messTimer","_display","_control","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_tempPos","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_myPos","_lastPos","_debug"];
+private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_timeOut","_result","_factor","_randomSpot","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_bloodChanged","_id","_messTimer","_display","_control","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_tempPos","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_myPos","_lastPos","_debug","_t1"];
 disableSerialization;
 _timeOut = 	0;
 _messTimer = 0;
 _lastTemp = dayz_temperatur;
 _debug = getMarkerpos "respawn_west";
 
+// override vars
+_maxDistanceTravel = DZE_teleport select 0;
+_maxDistanceDebug = DZE_teleport select 1;
+_maxDistanceZeroPos = DZE_teleport select 2;
+_maxDistancePlayer = DZE_teleport select 3;
+_maxDistanceVehicle = DZE_teleport select 4;
+
 player setVariable ["temperature",dayz_temperatur,true];
 
 dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) +  (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
 
 while {true} do {
+
 	//Initialize
 	_refObj = 	vehicle player;
 	_factor = 0.6;
 	_inVehicle = (_refObj != player);
+
 	if(_inVehicle) then {
 		_factor = 1;
 	};
@@ -21,28 +30,30 @@ while {true} do {
 	_bloodChanged = false;
 
 	_size = 	(sizeOf typeOf _refObj) * _factor;
-	_vel = 		velocity player;
+	_vel = 		velocity _refObj;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
 		
 	//reset position
 	_randomSpot = true;
-	_tempPos = getPosATL player;
+	_tempPos = getPosATL _refObj;
 	_distance = _debug distance _tempPos;
-	if (_distance < 2000) then {
-		_randomSpot = false;
-	};	
-	_distance = [0,0,0] distance _tempPos;
-	if (_distance < 500) then {
+	
+	if (_distance < _maxDistanceDebug) then {
 		_randomSpot = false;
 	};
-	/* comment out to test if this is source of the issue
+	
+	_distance = [0,0,0] distance _tempPos;
+	if (_distance < _maxDistanceZeroPos) then {
+		_randomSpot = false;
+	};
+
 	if (!isNil "_mylastPos") then {
 		_distance = _mylastPos distance _tempPos;
-		if (_distance > 400) then {
+		if (_distance > _maxDistanceTravel) then {
 			_randomSpot = false;
 		};
 	};
-	*/
+
 	if (_randomSpot) then {
 		_mylastPos = _tempPos;
 	};
@@ -55,18 +66,20 @@ while {true} do {
 
 	dayz_areaAffect = _size;
 	
+	/* not used
 	if (_speed > 0.1) then {
 		_timeOut = _timeOut + 1;
 	};
+	*/
 	
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
 	if (_lastUpdate > 8) then {
 		//POSITION?
-		_distance = dayz_myPosition distance player;
+		_distance = dayz_myPosition distance _refObj;
 		if (_distance > 10) then {
 			//Player has moved
-			dayz_myPosition = getPosATL player;
+			dayz_myPosition = getPosATL _refObj;
 			player setVariable["posForceUpdate",true,true];
 			dayz_unsaved = true;
 			dayZ_lastPlayerUpdate = time;
@@ -82,7 +95,7 @@ while {true} do {
 
 	//Thirst
 	_thirst = 2;
-	if (_refObj == player) then {
+	if (!_inVehicle) then {
 		_thirst = (_speed + 4) * 3;
 	};
 	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% and + 16.6% waterloss
@@ -96,7 +109,7 @@ while {true} do {
 	
 	//can get nearby infection
 	if (!r_player_infected) then {
-		//					Infectionriskstart
+		//Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
 			_listTalk = _mylastPos nearEntities ["CAManBase",8];
 			{
@@ -277,28 +290,23 @@ while {true} do {
 		player setVariable["lastPos",[]];
 	};
 	
-	_lastPos = getPosATL player;	
 	if (!isNil "_mylastPos") then {
-		if (player == vehicle player) then {
-			if (_mylastPos distance _lastPos > 200) then {
+		_lastPos = getPosATL _refObj;	
+		if (!_inVehicle) then {
+			if (_mylastPos distance _lastPos > _maxDistancePlayer) then {
 				if (alive player) then {
 					player setPosATL _mylastPos;
 					diag_log ("Player Teleport Revert : "+ str(_mylastPos distance _lastPos));
 				};
 			};
 		} else {
-			if (_mylastPos distance _lastPos > 800) then {
+			if (_mylastPos distance _lastPos > _maxDistanceVehicle) then {
 				if (alive player) then {
 					player setPosATL _mylastPos;
-					diag_log ("Player Teleport Revert : "+ str(_mylastPos distance _lastPos));
+					diag_log ("Vehicle Teleport Revert : "+ str(_mylastPos distance _lastPos));
 				};
 			};
 		};
 	};
-	
-	//Hatchet ammo fix	
-	//"MeleeHatchet" call dayz_meleeMagazineCheck;
-	
-	//Crowbar ammo fix	
-	//"MeleeCrowbar" call dayz_meleeMagazineCheck;
+
 };
