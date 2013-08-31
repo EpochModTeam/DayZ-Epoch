@@ -544,7 +544,7 @@ class CfgBuildingLoot {
 			{ "ItemTentDomed","magazine" },
 			{ "","military" },
 			{ "","trash" },
-			{"Crossbow_DZ","weapon"},
+			{ "Crossbow_DZ","weapon" },
 			{ "Binocular","weapon" },
 			{ "PartPlywoodPack","magazine" },
 			{ "clothes","single" },
@@ -691,14 +691,15 @@ class CfgBuildingLoot {
 			{ "ItemWire","magazine" },
 			{"ItemTankTrap","magazine"},
 			{"ItemKeyKit","weapon"},
-			{"CinderBlocks","magazine"}
+			{"CinderBlocks","magazine"},
+			{"MortarBucket","magazine"}
 	};
 		itemChance[] =	{
 			0.01,
 			0.01,
 			0.01,
-			0.17,
-			0.26,
+			0.16,
+			0.25,
 			0.04,
 			0.04,
 			0.05,
@@ -713,7 +714,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.04,
 			0.01,
-			0.02,
+			0.03,
+			0.01
 		};
 	};
 	class IndustrialFuel: Default {

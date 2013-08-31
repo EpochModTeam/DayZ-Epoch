@@ -115,6 +115,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_E_CA.paa";
 		descriptionShort = "Empty Briefcase";
+		weight = 1;
 		class ItemActions
 		{
 			class Crafting
@@ -141,6 +142,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_10oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 1 x 10oz Gold Bar)";
+		weight = 1.2;
 		class ItemActions
 		{
 			class Crafting
@@ -177,6 +179,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_20oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 2 x 10oz Gold Bar)";
+		weight = 1.5;
 		class ItemActions
 		{
 			class Crafting
@@ -221,6 +224,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_30oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 3 x 10oz Gold Bar)";
+		weight = 1.8;
 		class ItemActions
 		{
 			class Crafting
@@ -265,6 +269,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_40oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 4 x 10oz Gold Bar)";
+		weight = 2.1;
 		class ItemActions
 		{
 			class Crafting
@@ -309,6 +314,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_50oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 5 x 10oz Gold Bar)";
+		weight = 2.4;
 		class ItemActions
 		{
 			class Crafting
@@ -353,6 +359,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_60oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 6 x 10oz Gold Bar)";
+		weight = 2.7;
 		class ItemActions
 		{
 			class Crafting
@@ -397,6 +404,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_70oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 7 x 10oz Gold Bar)";
+		weight = 2.9;
 		class ItemActions
 		{
 			class Crafting
@@ -441,6 +449,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_80oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 8 x 10oz Gold Bar)";
+		weight = 3.2;
 		class ItemActions
 		{
 			class Crafting
@@ -485,6 +494,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_90oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 9 x 10oz Gold Bar)";
+		weight = 3.5;
 		class ItemActions
 		{
 			class Crafting
@@ -520,6 +530,7 @@ class CfgMagazines {
 	{
 		picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_100oz_CA.paa";
 		descriptionShort = "Briefcase (Contains: 10 x 10oz Gold Bar)";
+		weight = 3.8;
 		class ItemActions
 		{
 			class Crafting
@@ -1145,6 +1156,28 @@ class CfgMagazines {
 		};
 	};
 	
+	class cinder_wall_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Cinder Block Wall";
+		descriptionShort = "Half height cinder block wall";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 300;
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "CinderWallHalf_DZ";
+			};
+		};
+	};
+
 	class workbench_kit: CA_Magazine
 	{
 		scope = 2;
@@ -1780,7 +1813,7 @@ class CfgMagazines {
 				script = "spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
-				output[] = {{"ItemWoodStairsSupports",1}};
+				output[] = {{"ItemWoodStairsSupport",1}};
 				input[] = {{"ItemWoodStairs",1},{"PartWoodLumber",2}};
 				
 			};
@@ -2299,6 +2332,86 @@ class CfgMagazines {
 			
 		};
 	};
+	class PartPlankPack: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Lumber Pack";
+		model = "\z\addons\dayz_epoch\models\plank_pack.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_lumber_pack_CA.paa";
+		descriptionShort = "Lumber in a stack";
+		weight = 6;
+		class ItemActions {
+			class Crafting
+			{
+				text = "Un pack";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"sawmill"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"PartWoodLumber",3}};
+				input[] = {{"PartPlankPack",1}};
+			};
+			
+		};
+	};
+	class CinderBlocks: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Cinder Blocks";
+		model = "\z\addons\dayz_epoch\models\cinder_stack.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\epuip_cinder_blocks_CA.paa";
+		descriptionShort = "Stack of nine cinder blocks";
+		weight = 100;
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Cinder Block Wall";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"cinder_wall_kit",1}};
+				input[] = {{"CinderBlocks",3}};
+			};
+			
+		};
+	};
+	class MortarBucket: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Bucket of Mortar";
+		model = "\z\addons\dayz_epoch\models\mortar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_mortar_CA.paa";
+		descriptionShort = "Premixed mastic adhesive that will bond to concrete block.";
+		weight = 21;
+	};
+	class PartPlywoodPack: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Plywood Pack";
+		model = "\dayz_equip\models\plywood_pack.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_plywood_pack_CA.paa";
+		descriptionShort = "Plywood in a stack";
+		weight = 12;
+		class ItemActions {
+			class Crafting
+			{
+				text = "Un pack";
+				script = "spawn player_craftItem;";
+				neednearby[] = {"sawmill"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"PartWoodPlywood",3}};
+				input[] = {{"PartPlywoodPack",1}};
+			};
+			
+		};
+	};
 	class PartWoodLumber: CA_Magazine
 	{
 		scope = 2;
@@ -2309,12 +2422,6 @@ class CfgMagazines {
 		picture="\z\addons\dayz_epoch\pictures\equip_wood_planks_CA.paa";
 		descriptionShort = "Lumber: Used for building many structures and can also be used to make plywood.";
 		class ItemActions {
-			class Build {
-				text = "Build Wood Gate";
-				script = "spawn player_build;";
-				require[] = {"ItemToolbox"};
-				create = "WoodGate_DZ";
-			};
 			class Crafting
 			{
 				text = "Craft Plywood";
@@ -2397,7 +2504,6 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"wood_shack_kit",1}};
 				input[] = {{"bulk_empty",1},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
-				
 			};
 			class Crafting2
 			{
@@ -2407,7 +2513,6 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodFloorQuarter",1}};
 				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
-				
 			};
 			class Crafting3
 			{
@@ -2417,7 +2522,6 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodWallThird",1}};
 				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
-				
 			};
 			
 		};

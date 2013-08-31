@@ -1373,7 +1373,37 @@ class CfgVehicles {
 	
 	//class NonStrategic;
 	class BuiltItems: NonStrategic{};
-	class ModularItems: NonStrategic{};
+	class ModularItems: NonStrategic{
+	
+		class DestructionEffects {
+			class Sound {
+				simulation = "sound";
+				type = "DestrHouse";
+				position = "destructionEffect1";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 0.05;
+			};
+
+			class DestroyPhase1 {
+				simulation = "destroy";
+				type = "DelayedDestruction";
+				lifeTime = 2.5;
+				position = "";
+				intensity = 1;
+				interval = 1;
+			};
+
+			class DamageAround1 {
+				simulation = "damageAround";
+				type = "DamageAroundHouse";
+				position = "";
+				intensity = 0.1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+	};
 	class TrapItems: NonStrategic{};
 	// buildables
 	class Hedgehog_DZ: BuiltItems
@@ -1573,6 +1603,38 @@ class CfgVehicles {
 	};
 
 	// modular
+	class CinderWallHalf_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,4,0};
+		model="\z\addons\dayz_epoch\models\Cinder_Wall_Half.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 800;
+		displayName = "Cinder Block Wall 1/2";
+		vehicleClass = "Fortifications";
+		upgradeBuilding[] = {"CinderWall_DZ",{{"CinderBlocks",4},{"MortarBucket",1}}};
+		maintainBuilding[] = {{"MortarBucket",1}};
+		GhostPreview = "CinderWallHalf_Preview_DZ";
+	};
+	class CinderWall_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,4,0};
+		model="\z\addons\dayz_epoch\models\Cinder_Wall.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 800;
+		displayName = "Cinder Block Wall";
+		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"MortarBucket",1}};
+		GhostPreview = "CinderWall_Preview_DZ";
+	};
+
 	class WoodFloor_DZ: ModularItems
 	{
 		scope = 2;
@@ -1782,6 +1844,34 @@ class CfgVehicles {
 	};
 
 	// ghost models
+	class CinderWallHalf_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\Cinder_Wall_Half_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Cinder Block Wall 1/2";
+		vehicleClass = "Fortifications";
+	};
+	class CinderWall_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\Cinder_Wall_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Cinder Block Wall";
+		vehicleClass = "Fortifications";
+	};
+
+
 	class WoodFloorQuarter_Preview_DZ: NonStrategic
 	{
 		scope = 2;
