@@ -24,7 +24,8 @@ if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_packtent =
 _obj setVariable["packing",1];
 
 _dir = direction _obj;
-_pos = getposATL _obj;
+
+_pos = _obj getVariable["OEMPos",(getposATL _obj)];
 	
 _dis=20;
 _sfx = "tentpack";
