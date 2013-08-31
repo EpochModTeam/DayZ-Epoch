@@ -37,14 +37,6 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
-if(dayz_playerUID == "4854208") then {
-	// hint str(typeOf cursorTarget);
-	if (s_player_debuglootpos < 0) then {
-		s_player_debuglootpos = player addAction [ "GCam", "gcam\gcam.sqf" ]; 
-		// handle = [] execVM "gcam\gcam.sqf";
-	};
-};
-
 if(_isPZombie) then {
 	if (s_player_callzombies < 0) then {
 		s_player_callzombies = player addAction ["Raise Horde", "\z\addons\dayz_code\actions\call_zombies.sqf",player, 5, true, false, "",""];
