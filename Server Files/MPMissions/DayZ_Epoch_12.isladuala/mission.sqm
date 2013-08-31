@@ -1250,7 +1250,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=24;
 		class Item0
 		{
 			position[]={5123.2769,19.525311,5223.6709};
@@ -1328,6 +1328,152 @@ class Mission
 			position[]={8843.6318,88.607994,5988.752};
 			name="spawn10";
 			type="Empty";
+		};
+		class Item13
+		{
+			position[]={1992.0319,8.9432526,1169.2572};
+			name="st_2";
+			text="Trader City Camara";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item14
+		{
+			position[]={1283.6398,48.98877,9073.46};
+			name="st_3";
+			text="Trader City Pinley";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item15
+		{
+			position[]={4968.3447,13.259677,5130.9521};
+			name="st_4";
+			text="Trader City Nubak";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item16
+		{
+			position[]={5976.2603,19.447077,6162.7344};
+			name="st_3_1";
+			text="Airplane Dealer";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item17
+		{
+			position[]={8784.0742,0.97019702,5185.1777};
+			name="st_3_1_1";
+			text="Boat Dealer";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item18
+		{
+			position[]={2641.8079,4.0012341,7123.3096};
+			name="st_3_1_1_1";
+			text="Boat Dealer";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item19
+		{
+			position[]={6285.6479,12.242177,1296.9764};
+			name="st_3_2";
+			text="Wholesaler";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item20
+		{
+			position[]={8409.0791,14.964004,3379.8135};
+			name="st_3_2_1";
+			text="Wholesaler";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item21
+		{
+			position[]={6271.1201,19.804779,1273.6825};
+			name="st_3_2_2";
+			text="Hero Vendor";
+			type="hd_dot";
+			colorName="ColorGreen";
+		};
+		class Item22
+		{
+			position[]={8419.0303,18.176853,3369.5137};
+			name="st_3_2_3";
+			text="Bandit Trader";
+			type="hd_dot";
+			colorName="ColorBlack";
+		};
+		class Item23
+		{
+			position[]={7230.1489,18.478315,2134.9941};
+			name="st_3_2_3_1";
+			text="Black Market Vendor";
+			type="hd_dot";
+			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={4969.3057,0, 5132.2793};
+			a=35;
+			b=35;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonenubak";
+			expCond="(player distance zonenubak) < 100;";
+			expActiv="TitleText[""Now entering trader city Nubak"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving trader city Nubak"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			    soundDet="arabian_market_1";
+			};
+		};
+		class Item1
+		{
+			position[]={1281.3691,0, 9060.8262};
+			a=50;
+			b=50;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonepinley";
+			expCond="(player distance zonepinley) < 100;";
+			expActiv="TitleText[""Now entering trader city Pinley"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving trader city Pinley"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			    soundDet="arabian_market_1";
+			};
+		};
+		class Item2
+		{
+			position[]={1989.4258,0, 1162.2565};
+			a=50;
+			b=50;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonecamara";
+			expCond="(player distance zonecamara) < 100;";
+			expActiv="TitleText[""Now entering trader city Camara"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving trader city Camara"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			    soundDet="arabian_market_1";
+			};
 		};
 	};
 };
