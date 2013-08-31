@@ -33,9 +33,7 @@ if (_killerName != "nil") then
 		_loc_message = format["PKILL: %1 was killed by %2 with weapon %3 from %4m", _victimName, _killerName, _weapon, _distance];
 	};
 
-	#ifdef DZE_SERVER_DEBUG_PKILL
 	diag_log _loc_message;
-	#endif
 	
 	if(DZE_DeathMsgGlobal) then {
 		[nil, nil, rspawn, [_killer, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
