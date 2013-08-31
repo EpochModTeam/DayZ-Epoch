@@ -435,7 +435,7 @@ class CfgLoot {
 			"ItemPainkiller",
 			"ItemWire",
 			"ItemTankTrap",
-			"ItemComboLock",
+			"ItemComboLock"
 		},
 		{
 			0.14,

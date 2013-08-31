@@ -116,7 +116,7 @@
 	};
 	
 	class z_worker1 : zZombie_new_Base {
-		zombieLoot = "civilian";
+		zombieLoot = "worker";
 		model = "\Ca\characters_E\Overall\Overall";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_4_co.paa"};
