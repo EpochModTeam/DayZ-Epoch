@@ -2406,7 +2406,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodFloorQuarter",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 				
 			};
 			class Crafting3
