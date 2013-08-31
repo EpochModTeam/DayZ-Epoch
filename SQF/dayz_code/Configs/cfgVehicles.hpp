@@ -1586,7 +1586,6 @@ class CfgVehicles {
 		displayName = "Wood Floor";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",4}};
-		constructioncount = 1;
 		GhostPreview = "WoodFloor_Preview_DZ";
 	};
 	class WoodFloorHalf_DZ: ModularItems
@@ -1602,7 +1601,7 @@ class CfgVehicles {
 		displayName = "Wood Floor 1/2";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",2}};
-		constructioncount = 1;
+		constructioncount = 2;
 		GhostPreview = "WoodFloorHalf_Preview_DZ";
 	};
 	class WoodFloorQuarter_DZ: ModularItems
@@ -1635,7 +1634,6 @@ class CfgVehicles {
 		displayName = "Large Wall";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-		constructioncount = 1;
 		GhostPreview = "WoodLargeWall_Preview_DZ"; 
 	};
 	
@@ -1651,7 +1649,6 @@ class CfgVehicles {
 		armor = 200;
 		displayName = "Large Wall Doorway";
 		vehicleClass = "Fortifications";
-		constructioncount = 1;
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 		upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 		GhostPreview = "WoodLargeWallDoor_Preview_DZ"; 
@@ -1669,7 +1666,6 @@ class CfgVehicles {
 		displayName = "Large Wall Window";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-		constructioncount = 1;
 		GhostPreview = "WoodLargeWallWin_Preview_DZ"; 
 	};
 	
@@ -1686,7 +1682,6 @@ class CfgVehicles {
 		displayName = "Small Wall";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-		constructioncount = 1;
 		GhostPreview = "WoodSmallWall_Preview_DZ"; 
 	};
 	class WoodSmallWallThird_DZ: ModularItems
@@ -1719,7 +1714,6 @@ class CfgVehicles {
 		displayName = "Small Wall Window";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-		constructioncount = 1;
 		GhostPreview = "WoodSmallWallWin_Preview_DZ"; 
 	};
 	class WoodSmallWallDoor_DZ: ModularItems
@@ -1734,7 +1728,6 @@ class CfgVehicles {
 		armor = 200;
 		displayName = "Small Wall Door";
 		vehicleClass = "Fortifications";
-		constructioncount = 1;
 		upgradeBuilding[] = {"Land_DZE_WoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 		GhostPreview = "WoodSmallWallDoor_Preview_DZ"; 
@@ -1752,7 +1745,6 @@ class CfgVehicles {
 		displayName = "Wood Stairs";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
-		constructioncount = 1;
 		GhostPreview = "WoodStairs_Preview_DZ"; 
 	};	
 	class WoodLadder_DZ: ModularItems
@@ -1768,7 +1760,6 @@ class CfgVehicles {
 		displayName = "Wood Ladder";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
-		constructioncount = 1;
 		GhostPreview = "WoodLadder_Preview_DZ"; 
 		ladders[] = {{"start1","end1"}};
 	};
@@ -1787,7 +1778,6 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
 		upgradeBuilding[] = {"WoodStairs_DZ",{{"PartWoodLumber",2}}};
-		constructioncount = 1;
 		GhostPreview = "WoodStairsSans_Preview_DZ"; 
 	};
 
@@ -2377,6 +2367,7 @@ class CfgVehicles {
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
 		create = "WeaponHolder_ItemTentOld";
+		constructioncount = 1;
 		offset[] = {0,2.5,0};
 	};
 	class TentStorageDomed: TentStorage
