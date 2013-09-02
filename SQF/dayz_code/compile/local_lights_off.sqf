@@ -4,7 +4,7 @@
 */
 private ["_objLightPoint","_rng","_nrstGen","_objHouse"];
 _rng = _this select 0;
-_rng=_rng+5;
+_rng=_rng+20;
 _nrstGen = _this select 1;
 _objLightPoint = nearestObject [_nrstGen, "#lightpoint"];
 
