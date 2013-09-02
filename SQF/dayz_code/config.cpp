@@ -14,6 +14,7 @@
 #define EAST 0 // (Russian)
 
 #include "Configs\basicdefines.hpp"
+#include "Configs\CfgNonAIVehicles.hpp"
 
 class CfgPatches {
 	class dayz_code {
