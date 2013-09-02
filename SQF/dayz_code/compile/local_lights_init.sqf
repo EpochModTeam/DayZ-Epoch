@@ -2,7 +2,7 @@
 	DayZ Epoch Lighting System
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
 */
-private ["_nrGen","_i","_doHouse","_doStreet","_doTower","_doAll","_fnHr","_stHr","_plyr","_hndlSLights","_hndlHLights","_hndlTLights","_tmpPlyrPos","_ndGen","_rngGen","_rngPlyr","_arrStreetLights","_rtnLights","_wait","_waitcmd","_trigDist"];
+private ["_nrGen","_i","_doHouse","_doStreet","_doTower","_doAll","_fnHr","_stHr","_plyr","_hndlSLights","_hndlHLights","_hndlTLights","_hndlDelLights","_tmpPlyrPos","_ndGen","_rngGen","_rngPlyr","_arrStreetLights","_rtnLights","_wait","_waitcmd","_trigDist"];
 
 _stHr = 17;//Hour (in 24 hours) to start lights
 _fnHr = 6;//Hour (in 24 hours) to stop lights
@@ -24,6 +24,7 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_lightFunc
 axeTowerLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_tower.sqf";
 axeHouseLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_house.sqf";
 axeStreetLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_street.sqf";
+axeDeleteLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_off.sqf";
 waitUntil {getPos Player select 0 > 0};
 
 while {alive player}
@@ -35,12 +36,11 @@ do
 	
 	_nrGen = nearestObjects [player, ["Generator_DZ"], _rngPlyr];
 	
-	if(count _nrGen >0)then{
-	};
 		{
-			if(_ndGen && (count _nrGen)<1)then{_doAll = false;}else{_doAll=true;};
 			
-			if(_doAll)then{
+			//if(_ndGen && (count _nrGen)<1)then{_doAll = false;}else{_doAll=true;};
+
+			if(_x getVariable["GeneratorRunning",false])then{
 				
 				_rtnLights = [_rngGen,_x] call axe_returnStreetLights;
 				_arrStreetLights = _rtnLights select 0;
@@ -62,7 +62,10 @@ do
 
 				for [{_i=0}, {_i<3}, {_i=_i+1}]do{_waitcmd=_waitcmd+format["%1",_wait select _i];if(_i<2)then{_waitcmd=_waitcmd+"&&";};};
 				call compile format ["waitUntil {%1}",_waitcmd];
-				
+			}else{
+			hint "Lights Off";
+			_hndlDelLights = [_rngGen,_x] spawn axeDeleteLights;
+			waitUntil {scriptDone _hndlDelLights};
 			};
 
 		}forEach _nrGen;
