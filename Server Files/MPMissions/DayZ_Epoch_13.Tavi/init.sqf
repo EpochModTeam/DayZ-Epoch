@@ -114,5 +114,8 @@ if (!isDedicated) then {
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
 	_void = [] execVM "R3F_Realism\R3F_Realism_Init.sqf";
+	
+	//Lights
+	[] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 };
 #include "\z\addons\dayz_code\system\REsec.sqf"
