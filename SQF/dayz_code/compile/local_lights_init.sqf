@@ -63,7 +63,7 @@ do
 				for [{_i=0}, {_i<3}, {_i=_i+1}]do{_waitcmd=_waitcmd+format["%1",_wait select _i];if(_i<2)then{_waitcmd=_waitcmd+"&&";};};
 				call compile format ["waitUntil {%1}",_waitcmd];
 			}else{
-			hint "Lights Off";
+			//hint "Lights Off";
 			_hndlDelLights = [_rngGen,_x] spawn axeDeleteLights;
 			waitUntil {scriptDone _hndlDelLights};
 			};
