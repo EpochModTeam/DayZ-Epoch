@@ -1,8 +1,8 @@
-ambient[]={1,1,1,0.5};
-diffuse[]={1,1,1,0.5};
+ambient[]={0.48627451,0.48627451,0.48627451,0.63999999};
+diffuse[]={0.48627451,0.48627451,0.48627451,0.63999999};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.24313726,0.24313726,0.24313726,1};
+specular[]={0.34117648,0.34117648,0.34117648,1};
 specularPower=100;
 PixelShaderID="Super";
 VertexShaderID="Super";

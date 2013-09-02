@@ -5,7 +5,7 @@
 */
 private ["_isOk","_i","_objName","_objInfo","_lenInfo","_started","_finished","_animState","_isMedic","_proceed","_counter","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree"];
 
-if(TradeInprogress) exitWith { cutText ["Harvest wood already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText ["\n\nHarvest wood already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 // allowed trees list move this later
@@ -90,7 +90,7 @@ if (count(_findNearestTree) >= 1) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format["Chopping down tree, walk away at anytime to cancel. (%1/%2)", _counter,  _countOut], "PLAIN DOWN"];
+			cutText [format["\n\nChopping down tree, walk away at anytime to cancel. (%1/%2)", _counter,  _countOut], "PLAIN DOWN"];
 
 			if(_counter == _countOut) exitWith {
 				_isOk = false;
@@ -115,7 +115,7 @@ if (count(_findNearestTree) >= 1) then {
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 
-			cutText [format["%1 piles of wood has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
+			cutText [format["\n\n%1 piles of wood has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
 
 		} else {
 			r_interrupt = false;
@@ -123,7 +123,7 @@ if (count(_findNearestTree) >= 1) then {
 				[objNull, player, rSwitchMove,""] call RE;
 				player playActionNow "stop";
 			};
-			cutText ["Canceled Harvesting Wood.", "PLAIN DOWN"];
+			cutText ["\n\nCanceled Harvesting Wood.", "PLAIN DOWN"];
 		};
 
 	} else {

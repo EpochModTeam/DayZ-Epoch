@@ -2368,12 +2368,12 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-				text = "Craft Cinder Block Wall";
+				text = "Craft Half Wall";
 				script = "spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"cinder_wall_kit",1}};
-				input[] = {{"CinderBlocks",3}};
+				input[] = {{"CinderBlocks",3},{"MortarBucket",1}};
 			};
 			
 		};
@@ -2395,7 +2395,7 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = "Plywood Pack";
-		model = "\dayz_equip\models\plywood_pack.p3d";
+		model = "\z\addons\dayz_epoch\models\plywood_pack.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_plywood_pack_CA.paa";
 		descriptionShort = "Plywood in a stack";
 		weight = 12;
@@ -2546,9 +2546,6 @@ class CfgMagazines {
 		picture = "\dayz_equip\textures\equip_carglass_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_30";
 	};
-
-
-
 
 	// Skins
 	class SkinBase: CA_Magazine

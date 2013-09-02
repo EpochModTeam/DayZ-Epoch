@@ -1,18 +1,18 @@
 private ["_dir","_classname","_box","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
 
-if(TradeInprogress) exitWith { cutText ["Open Crate already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText ["\n\nOpen Crate already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _hasTool = 	"ItemCrowbar" in items player;
 if(!_hasTool) exitWith { 
-	cutText ["You need a crowbar to open this.", "PLAIN DOWN"];
+	cutText ["\n\nYou need a crowbar to open this.", "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
 _item =     _this;
 _hasCrate = 	_item in magazines player;
 if (!_hasCrate) then {
-	cutText ["Missing supply crate.", "PLAIN DOWN"];
+	cutText ["\n\nMissing supply crate.", "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
@@ -51,6 +51,6 @@ if(_type == "backpack") then {
 
 player reveal _box;
 		
-cutText ["Opened supply crate.", "PLAIN DOWN"];
+cutText ["\n\nOpened supply crate.", "PLAIN DOWN"];
 	
 TradeInprogress = false;

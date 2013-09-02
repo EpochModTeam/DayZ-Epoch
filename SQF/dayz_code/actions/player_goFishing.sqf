@@ -5,17 +5,17 @@
 */
 private ["_itemOut","_position","_isOk","_counter","_rnd","_item","_itemtodrop","_vehicle","_inVehicle"];
 
-if(TradeInprogress) exitWith { cutText ["Fishing already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText ["\n\nFishing already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 call gear_ui_init;
 
 // find position 5m in front of player
 _position = player modeltoworld [0,5,0];
-if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText ["Must be near a shore or on a boat to fish." , "PLAIN DOWN"]; };
+if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText ["\n\nMust be near a shore or on a boat to fish." , "PLAIN DOWN"]; };
 
 if(dayz_isSwimming) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
-if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Canceled Fishing.", "PLAIN DOWN"];};
+if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["\n\nCanceled Fishing.", "PLAIN DOWN"];};
 
 _isOk = true;
 _counter = 0;
@@ -31,7 +31,7 @@ while {_isOk} do {
 
 	if (r_interrupt or (player getVariable["combattimeout", 0] >= time)) then {
 		_isOk = false;
-		cutText ["Canceled Fishing.", "PLAIN DOWN"];
+		cutText ["\n\nCanceled Fishing.", "PLAIN DOWN"];
 	} else {
 		
 		sleep 2;
@@ -60,15 +60,15 @@ while {_isOk} do {
 				player addMagazine _itemOut;
 			};
 			
-			cutText ["You caught a fish.", "PLAIN DOWN"];
+			cutText ["\n\nYou caught a fish.", "PLAIN DOWN"];
 			_isOk = false;
 		} else {
-			cutText ["Nibble... Nibble...", "PLAIN DOWN"];
+			cutText ["\n\nNibble... Nibble...", "PLAIN DOWN"];
 			_counter = _counter + 1;
 			if(_counter == 5) then {
 				_isOk = false;
 				sleep 2;
-				cutText ["You didn't catch anything.", "PLAIN DOWN"];
+				cutText ["\n\nYou didn't catch anything.", "PLAIN DOWN"];
 			};
 		};
 	};

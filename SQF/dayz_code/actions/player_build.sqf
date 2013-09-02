@@ -174,7 +174,7 @@ if (_hasrequireditem) then {
 			_object attachTo [player];
 		};
 
-		cutText ["Planning construction numpad 8 = up, numpad 2 = down, and numpad 5 to start building.", "PLAIN DOWN"];
+		cutText ["Planning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to start building.", "PLAIN DOWN"];
 		
 		sleep 1;
 
@@ -287,6 +287,9 @@ if (_hasrequireditem) then {
 					_finished = true;
 				};
 				if (r_interrupt or (player getVariable["combattimeout", 0] >= time)) then {
+					r_doLoop = false;
+				};
+				if (DZE_cancelBuilding) exitWith {
 					r_doLoop = false;
 				};
 				sleep 0.1;

@@ -30,7 +30,7 @@ while {true} do {
 	_bloodChanged = false;
 
 	_size = 	(sizeOf typeOf _refObj) * _factor;
-	_vel = 		velocity _refObj;
+	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
 		
 	//reset position
