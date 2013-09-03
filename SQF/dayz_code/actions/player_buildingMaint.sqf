@@ -100,10 +100,13 @@ if (_proceed) then {
 		dayzDeleteObj = [_objectID,_objectUID];
 		publicVariableServer "dayzDeleteObj";
 
+		// sleep a bit to make sure delete happens before create
+		sleep 1;
+
 		// Publish variables
 		_object setVariable ["CharacterID",_objectCharacterID,true];
-		_object setVariable ["ObjectID",_objectID,true];
-		_object setVariable ["ObjectUID",_objectUID,true];
+		
+		//_object setVariable ["ObjectUID",_objectUID,true];
 		_object setVariable ["OEMPos",_location,true];
 
 		dayzPublishObj = [_objectCharacterID,_object,[_dir,_location],_classname];
