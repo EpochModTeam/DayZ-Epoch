@@ -1178,6 +1178,28 @@ class CfgMagazines {
 		};
 	};
 
+	class cinder_garage_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Block Garage Doorway";
+		descriptionShort = "Cinder block garage doorway";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 325;
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "CinderWallDoorway_DZ";
+			};
+		};
+	};
+
 	class workbench_kit: CA_Magazine
 	{
 		scope = 2;
@@ -2373,6 +2395,15 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"cinder_wall_kit",1}};
+				input[] = {{"CinderBlocks",3},{"MortarBucket",1}};
+			};
+			class Crafting1
+			{
+				text = "Craft Garage Doorway";
+				script = "spawn player_craftItem1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"cinder_garage_kit",1}};
 				input[] = {{"CinderBlocks",3},{"MortarBucket",1}};
 			};
 			

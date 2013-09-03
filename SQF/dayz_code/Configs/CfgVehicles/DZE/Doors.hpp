@@ -126,6 +126,22 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	lockable = 3;
 };
 
+
+class CinderWallDoor_DZ_Base: DZE_Housebase {
+	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";	/* path to the object */
+	displayName =  "Block Garage Door Base"; 		/* entry in Stringtable.csv */
+	nameSound = "";						
+	mapSize = 8;						/* Size of the icon */
+	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
+	accuracy = 1000;   
+	armor = 1600;					/* "Lifepoints", if you like to call it that way.*/
+	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
+	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
+	offset[] = {0,1.5,0};
+	maintainBuilding[] = {{"MortarBucket",1}};
+	lockable = 3;
+};
+
 /*  Same name as stated in the Class DestructionEffects, but an "Land_" added infront*/
 class Land_rubble_wood_02 : ruins	{
 	scope = 1;
@@ -430,3 +446,105 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 	};
 };
+
+
+class CinderWallDoorLocked_DZ: CinderWallDoor_DZ_Base {
+	model = "\z\addons\dayz_epoch\models\steel_garage_locked.p3d";
+	displayName =  "Block Garage Door Locked";
+	GhostPreview = "CinderWallDoorway_Preview_DZ";
+	/* Arma needs to know, how the animation trigger is triggered*/
+	class AnimationSources {
+			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
+		class Open_door {
+			source = "user";
+			animPeriod = 4; /* duration in seconds */
+			initPhase = 0; 
+		};
+		class Open_latch {
+			source = "user";
+			animPeriod = 1; /* duration in seconds */
+			initPhase = 0; 
+		};
+	};
+	
+	/* The entry to the actionmenu */
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName="Open Door";
+			onlyforplayer = true;
+			position="Door_knopf";
+			radius=3; /* visibility distance of the entry */
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement="this animate [""Open_door"", 1]";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName="Close Door";
+			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
+			statement="this animate [""Open_door"", 0]";
+		};
+		class Lock_Door : Open_Door
+		{
+			displayName="Lock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement="this animate [""Open_latch"", 0]";
+		};
+		class Unlock_Door : Open_Door
+		{
+			displayName="Unlock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
+			statement="this animate [""Open_latch"", 1]";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName="Unlock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
+		};
+	};
+};
+
+
+class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
+	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
+	displayName =  "Block Garage Door";
+	GhostPreview = "CinderWallDoorway_Preview_DZ";
+	upgradeBuilding[] = {"CinderWallDoorLocked_DZ",{{"ItemComboLock",1}}};
+	/* Arma needs to know, how the animation trigger is triggered*/
+	class AnimationSources {
+			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
+		class Open_door {
+			source = "user";
+			animPeriod = 4; /* duration in seconds */
+			initPhase = 0; 
+		};
+	};
+	
+	/* The entry to the actionmenu */
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName="Open Door";
+			onlyforplayer = true;
+			position="Door_knopf";
+			radius=3; /* visibility distance of the entry */
+			condition="this animationPhase ""Open_door"" < 0.5";
+			statement="this animate [""Open_door"", 1]";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName="Close Door";
+			condition="this animationPhase ""Open_door"" >= 0.5";
+			statement="this animate [""Open_door"", 0]";
+		};
+	};
+};
+
