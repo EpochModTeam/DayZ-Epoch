@@ -381,18 +381,24 @@ class CfgLoot {
 			"7Rnd_45ACP_1911",
 			"6Rnd_45ACP",
 			"15Rnd_W1866_Slug",
-			"8Rnd_B_Beneli_74Slug",
+			"8Rnd_B_Beneli_Pellets",
 			"HandRoadFlare",
-			"8Rnd_9x18_MakarovSD"
+			"8Rnd_9x18_MakarovSD",
+			"ItemComboLock",
+			"SmokeShell",
+			"FoodMRE"
 		},
 		{
 			0.3,
-			0.2,
-			0.1,
+			0.08,
+			0.08,
 			0.14,
 			0.15,
-			0.1,
-			0.01
+			0.08,
+			0.01,
+			0.07,
+			0.05,
+			0.04
 		}
 	};
 	hunter[] = {

@@ -126,8 +126,21 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	lockable = 3;
 };
 
-
 class CinderWallDoor_DZ_Base: DZE_Housebase {
+	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";	/* path to the object */
+	displayName =  "Block Garage Door Base"; 		/* entry in Stringtable.csv */
+	nameSound = "";						
+	mapSize = 8;						/* Size of the icon */
+	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
+	accuracy = 1000;   
+	armor = 1600;					/* "Lifepoints", if you like to call it that way.*/
+	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
+	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
+	offset[] = {0,1.5,0};
+	maintainBuilding[] = {{"MortarBucket",1}};
+};
+
+class CinderWallDoorLocked_DZ_Base: DZE_Housebase {
 	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";	/* path to the object */
 	displayName =  "Block Garage Door Base"; 		/* entry in Stringtable.csv */
 	nameSound = "";						
@@ -448,7 +461,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 };
 
 
-class CinderWallDoorLocked_DZ: CinderWallDoor_DZ_Base {
+class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	model = "\z\addons\dayz_epoch\models\steel_garage_locked.p3d";
 	displayName =  "Block Garage Door Locked";
 	GhostPreview = "CinderWallDoorway_Preview_DZ";

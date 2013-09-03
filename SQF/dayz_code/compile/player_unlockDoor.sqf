@@ -27,6 +27,10 @@ if(!isNull dayz_selectedDoor) then {
 			_obj animate ["Open_hinge", 1];
 		};
 
+		if(_obj animationPhase "Open_latch" == 0) then {
+			_obj animate ["Open_latch", 1];
+		};
+
 	} else {
 		DZE_Lock_Door = "";
 		[player,"combo_locked",0,false] call dayz_zombieSpeak;
