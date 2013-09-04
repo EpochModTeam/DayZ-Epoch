@@ -231,7 +231,7 @@ if (_randomSpot) then {
 					_isIsland = true;
 				};
 			};
-			if (worldName in ["lingor", "panthera2"]) then {
+			if (worldName in ["lingor", "panthera2", "Sara", Utes", "Dingor", "namalsk", "isladuala"]) then {
 				if (_isNear and !_isZero) then {_findSpot = false};
 				_counter = _counter + 1;
 			} else {
