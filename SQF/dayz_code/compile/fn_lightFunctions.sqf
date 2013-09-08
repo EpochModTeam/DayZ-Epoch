@@ -1,10 +1,12 @@
+/*
+	DayZ Epoch Lighting System - Light Functions
+	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
+*/
 axe_returnStreetLights={
 private["_lights","_objName","_rng","_nrstGen"];
 _rng = _this select 0;
 _nrstGen = _this select 1;
 _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_sidl_3.p3d","lampa_sidl_2.p3d","lampa_sidl.p3d","powlines_concl.p3d","powlines_woodl.p3d"];
-
-
 axe_streetLamps=[];
 axe_generators=[];
 	{
@@ -22,7 +24,6 @@ axe_generators=[];
 	} foreach nearestObjects [getPos _nrstGen, [], _rng];
 [axe_streetLamps,axe_generators]
 };
-
 axe_newLightPoint={
 private ["_lp","_pos","_col","_brt","_amb","_pos","_dir","_vect"];
 _col = _this select 0;
@@ -31,14 +32,14 @@ _amb = _this select 2;
 _pos = _this select 3;
 _dir = _this select 4;
 _vect = _this select 5;
-_lp = "#lightpoint" createVehicle _pos;
+_lp = "#lightpoint" createVehicleLocal _pos;
 _lp setLightColor _col;
 _lp setLightBrightness _brt;
 _lp setLightAmbient _amb;
 _lp setDir _dir;
 _lp setVectorUp _vect;
+_lp
 };
-
 axe_lightPoint={
 private ["_lp","_col","_brt","_amb"];
 _col = _this select 0;
@@ -49,7 +50,6 @@ _lp setLightColor _col;
 _lp setLightBrightness _brt;
 _lp setLightAmbient _amb;
 };
-
 axe_towerLight={
 private["_twr","_lCol","_lbrt","_lamb","_oset","_twrPos","_rad","_a","_b","_ang","_nrTLs","_doLit"];
 _twr = _this select 3 select 0;
@@ -82,3 +82,11 @@ _nrTLs= position _twr nearObjects ["#lightpoint",30];
 		};
 	};
 };
+
+axe_TestMoveHC={
+private ["_startPos","_currPos"];
+_currPos = _this select 0;
+_startPos = [_currPos,50,180,20,0,800,0] call BIS_fnc_findSafePos;
+player setPosATL _startPos;
+};
+
