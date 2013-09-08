@@ -9,7 +9,7 @@ if(TradeInprogress) exitWith { cutText ["\n\nCrafting already in progress." , "P
 TradeInprogress = true;
 
 // temp array of removed parts 
-_temp_removed_array = [];
+
 _abort = false;
 _distance = 3;
 _reason = "";
@@ -58,6 +58,8 @@ if (_canDo) then {
 	_craft_doLoop = true;
 
 	while {_craft_doLoop} do {
+
+		_temp_removed_array = [];
 
 		_missing = "";
 		_missingTools = false;

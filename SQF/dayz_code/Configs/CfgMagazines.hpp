@@ -2404,7 +2404,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"cinder_garage_kit",1}};
-				input[] = {{"CinderBlocks",3},{"MortarBucket",1}};
+				input[] = {{"CinderBlocks",3},{"MortarBucket",1},{"ItemTankTrap",1}};
 			};
 			
 		};

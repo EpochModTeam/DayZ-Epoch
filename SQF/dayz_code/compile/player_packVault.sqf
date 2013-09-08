@@ -57,52 +57,56 @@ if(!isNull _obj and alive _obj) then {
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
 	
-	// Remove from database
-	dayzDeleteObj = [_objectID,_objectUID];
-	publicVariableServer "dayzDeleteObj";
-	
-	// Set down vault "take" item
-	_bag = createVehicle [_packedClass,_pos,[], 0, "CAN_COLLIDE"];
-	
-	// Delete original
-	deleteVehicle _obj;
+	if (_objectID != "0" && _objectUID != "0") then {
 
-	_bag setdir _dir;
-	_bag setpos _pos;
-	player reveal _bag;
-
-	// Empty weapon holder 
-	_holder = _bag;
+		// Remove from database
+		dayzDeleteObj = [_objectID,_objectUID];
+		publicVariableServer "dayzDeleteObj";
 	
-	//Add weapons
-	_objWpnTypes = 	_weapons select 0;
-	_objWpnQty = 	_weapons select 1;
-	_countr = 0;
-	{
-		_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+		// Set down vault "take" item
+		_bag = createVehicle [_packedClass,_pos,[], 0, "CAN_COLLIDE"];
 	
-	//Add Magazines
-	_objWpnTypes = _magazines select 0;
-	_objWpnQty = _magazines select 1;
-	_countr = 0;
-	{
-		_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+		// Delete original
+		deleteVehicle _obj;
 
-	//Add Backpacks
-	_objWpnTypes = _backpacks select 0;
-	_objWpnQty = _backpacks select 1;
-	_countr = 0;
-	{
-		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+		_bag setdir _dir;
+		_bag setpos _pos;
+		player reveal _bag;
+
+		// Empty weapon holder 
+		_holder = _bag;
 	
-	cutText [format["Your %1 has been packed",_text], "PLAIN DOWN"];
+		//Add weapons
+		_objWpnTypes = 	_weapons select 0;
+		_objWpnQty = 	_weapons select 1;
+		_countr = 0;
+		{
+			_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
+			_countr = _countr + 1;
+		} forEach _objWpnTypes;
+	
+		//Add Magazines
+		_objWpnTypes = _magazines select 0;
+		_objWpnQty = _magazines select 1;
+		_countr = 0;
+		{
+			_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
+			_countr = _countr + 1;
+		} forEach _objWpnTypes;
 
-	s_player_packvault = -1;
+		//Add Backpacks
+		_objWpnTypes = _backpacks select 0;
+		_objWpnQty = _backpacks select 1;
+		_countr = 0;
+		{
+			_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
+			_countr = _countr + 1;
+		} forEach _objWpnTypes;
+	
+		cutText [format["Your %1 has been packed",_text], "PLAIN DOWN"];
+	} else {
+		deleteVehicle _obj;	
+	};
 };
+s_player_packvault = -1;
 TradeInprogress = false;

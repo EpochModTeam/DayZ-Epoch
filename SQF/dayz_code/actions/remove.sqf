@@ -164,12 +164,15 @@ if (_proceed) then {
 			// Find one random part to give back
 			_refundpart = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"] call BIS_fnc_selectRandom;
 			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
+			_giveRefund = true;
 		} else {
 			_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+			_giveRefund = (_objectID != "0" && _objectUID != "0");
+			
 		};
 		
 		// give refund items
-		if((count _selectedRemoveOutput) > 0) then {
+		if((count _selectedRemoveOutput) > 0 and _giveRefund) then {
 			// Put itemsg
 			{
 				_itemOut = _x select 0;

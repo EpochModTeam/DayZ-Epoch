@@ -485,26 +485,30 @@ server_cleanFlies =
 	DZE_FlyWorkingSet = _newdayz_flyMonitor;
 };
 
-server_cleanDead =
-{
+server_cleanDead = {
+	private ["_objectPos","_noPlayerNear","_body","_handled"];
 	{
 		if (_x isKindOf "zZombie_Base") then
 		{
-			deleteVehicle _x;
-		}
-		else
-		{
-			_handled = _x getVariable ["handled",true];
-			if (_handled) then {
+			_objectPos = getPosATL _x;
+			_noPlayerNear = {isPlayer _x} count (_objectPos nearEntities ["CAManBase",35]) == 0;
+			if (_noPlayerNear) then
+			{
+				deleteVehicle _x;
+			};
+		} else {
+			_handle = _x getVariable ["handle",true];
+			if (_handle) then {
 				_x enableSimulation false;
 				_body removeAllEventHandlers "HandleDamage";
 				_body removeAllEventHandlers "Killed";
 				_body removeAllEventHandlers "Fired";
-				_body removeAllEventHandlers "FiredNear";
+				_body removeAllEventHandlers "FiredNear";				_x setVariable ["handle",false];
 			};
 		};
 	} forEach allDead;
 };
+
 
 server_cleanLoot =
 {

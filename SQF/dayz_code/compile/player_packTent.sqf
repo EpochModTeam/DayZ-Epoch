@@ -49,43 +49,46 @@ _holder = _object;
 _weapons = 		getWeaponCargo _obj;
 _magazines = 	getMagazineCargo _obj;
 _backpacks = 	getBackpackCargo _obj;
+
+if(_objectID != "0" && _objectUID != "0") then {
+
+	dayzDeleteObj = [_objectID,_objectUID];
+	publicVariableServer "dayzDeleteObj";
+	if (isServer) then {
+		dayzDeleteObj call server_deleteObj;
+	};
+	deleteVehicle _obj;
 	
-//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;	
-dayzDeleteObj = [_objectID,_objectUID];
-publicVariableServer "dayzDeleteObj";
-if (isServer) then {
-	dayzDeleteObj call server_deleteObj;
+	//Add weapons
+	_objWpnTypes = 	_weapons select 0;
+	_objWpnQty = 	_weapons select 1;
+	_countr = 0;
+	{
+		_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
+		_countr = _countr + 1;
+	} forEach _objWpnTypes;
+	
+	//Add Magazines
+	_objWpnTypes = _magazines select 0;
+	_objWpnQty = _magazines select 1;
+	_countr = 0;
+	{
+		_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
+		_countr = _countr + 1;
+	} forEach _objWpnTypes;
+
+	//Add Backpacks
+	_objWpnTypes = _backpacks select 0;
+	_objWpnQty = _backpacks select 1;
+	_countr = 0;
+	{
+		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
+		_countr = _countr + 1;
+	} forEach _objWpnTypes;
+	
+	cutText [localize "str_success_tent_pack", "PLAIN DOWN"];
+} else {
+	deleteVehicle _obj;
 };
-deleteVehicle _obj;
-	
-//Add weapons
-_objWpnTypes = 	_weapons select 0;
-_objWpnQty = 	_weapons select 1;
-_countr = 0;
-{
-	_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
-	_countr = _countr + 1;
-} forEach _objWpnTypes;
-	
-//Add Magazines
-_objWpnTypes = _magazines select 0;
-_objWpnQty = _magazines select 1;
-_countr = 0;
-{
-	_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-	_countr = _countr + 1;
-} forEach _objWpnTypes;
-
-//Add Backpacks
-_objWpnTypes = _backpacks select 0;
-_objWpnQty = _backpacks select 1;
-_countr = 0;
-{
-	_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
-	_countr = _countr + 1;
-} forEach _objWpnTypes;
-	
-cutText [localize "str_success_tent_pack", "PLAIN DOWN"];
-
 s_player_packtent = -1;
 TradeInprogress = false;
