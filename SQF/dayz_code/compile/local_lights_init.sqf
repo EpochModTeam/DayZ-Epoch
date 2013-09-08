@@ -4,7 +4,7 @@
 	
 	To Do - Tidy up decision logic | light poles ? | player movement detection currently removed, need to deal with newly started generators | Tidy up tower light code
 */
-private ["_nrGen","_rndLights","_genClass","_i","_doHouse","_doStreet","_doTower","_doLight","_fnHr","_stHr","_plyr","_hndlSLights","_hndlHLights","_hndlTLights","_hndlDelLights","_hndlFailLights","_tmpPlyrPos","_ndGen","_trgRng","_rngPlyr","_arrStreetLights","_rtnLights","_wait","_waitcmd","_trigDist","_lightTrig","_lmpCol","_failPcnt"];
+private ["_nrGen","_rndLights","_genClass","_i","_doHouse","_doStreet","_doTower","_doLight","_fnHr","_stHr","_plyr","_hndlSLights","_hndlHLights","_hndlTLights","_hndlDelLights","_hndlFailLights","_tmpPlyrPos","_ndGen","_trgRng","_rngPlyr","_arrStreetLights","_rtnLights","_wait","_waitcmd","_waitCount","_trigDist","_lightTrig","_lmpCol","_failPcnt"];
 
 _stHr = _this select 0;//Hour (in 24 hours) to start lights
 _fnHr = _this select 1;//Hour (in 24 hours) to stop lights
@@ -40,7 +40,7 @@ do
 	
 
 	_plyr = vehicle player;
-
+	_waitCount = 0;
 	if(_ndGen)then{
 	_nrGen = nearestObjects [_plyr, [_genClass], _rngPlyr];
 	_lightTrig = _nrGen;
@@ -65,18 +65,21 @@ do
 				
 				if(_doTower)then{
 				_hndlTLights = [_trgRng,_x,_rndLights] spawn axeTowerLights;
+				_waitCount=_waitCount+1;
 				[_wait , "scriptDone _hndlTLights"] call BIS_fnc_arrayPush;
 				};
 				if(_doHouse)then{
 				_hndlHLights = [_trgRng,_x,_rndLights,_lmpCol] spawn axeHouseLights;
+				_waitCount=_waitCount+1;
 				[_wait , "scriptDone _hndlHLights"] call BIS_fnc_arrayPush;
 				};
 				if(_doStreet)then{
 				_hndlSLights = [_arrStreetLights,_x,_lmpCol,_rndLights] spawn axeStreetLights;
+				_waitCount=_waitCount+1;
 				[_wait , "scriptDone _hndlSLights"] call BIS_fnc_arrayPush;
 				};
 
-				for [{_i=0}, {_i<3}, {_i=_i+1}]do{_waitcmd=_waitcmd+format["%1",_wait select _i];if(_i<2)then{_waitcmd=_waitcmd+"&&";};};
+				for [{_i=0}, {_i<_waitCount}, {_i=_i+1}]do{_waitcmd=_waitcmd+format["%1",_wait select _i];if(_i<_waitCount-1)then{_waitcmd=_waitcmd+"&&";};};
 				call compile format ["waitUntil {%1}",_waitcmd];
 			};
 			
