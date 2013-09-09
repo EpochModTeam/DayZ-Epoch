@@ -124,6 +124,9 @@ diag_log (str(_backpackMag));
 	if (_primweapon == "MeleeCrowbar") then {
 		_newUnit addMagazine 'crowbar_swing';
 	};
+	if (_primweapon == "MeleeSledge") then {
+		_newUnit addMagazine 'sledge_swing';
+	};
 	if (_primweapon == "MeleeHatchet") then {
 		_newUnit addMagazine 'hatchet_swing';
 	};

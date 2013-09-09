@@ -82,10 +82,6 @@ if (!isDedicated) then {
 	player_reloadMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
 	player_loadCrate =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_loadCrate.sqf";
 	player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
-	player_craftItem1 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem1.sqf";
-	player_craftItem2 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem2.sqf";
-	player_craftItem3 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem3.sqf";
-	player_craftItem4 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem4.sqf";
 	player_tentPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\tent_pitch.sqf";
 	player_vaultPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\vault_pitch.sqf";
 	player_drink =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_drink.sqf";
@@ -268,14 +264,6 @@ if (!isDedicated) then {
 			
 			if (player isKindOf  "PZombie_VB") exitWith {
 				player switchAction "walkf";
-			};
-			if (!r_fracture_legs and (time - dayz_lastCheckBit > 4)) then {
-				_inBuilding = [player] call fnc_isInsideBuilding;
-				_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
-				if (!_inBuilding and (count _nearbyObjects == 0)) then {
-					dayz_lastCheckBit = time;
-					call player_CombatRoll;
-				};
 			};
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space

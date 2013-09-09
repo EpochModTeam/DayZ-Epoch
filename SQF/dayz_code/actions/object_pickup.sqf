@@ -50,14 +50,14 @@ _qty = count _obj;
 if(_qty >= 1) then {
 
 	//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
-	{player removeMagazines _x} forEach ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing"];
+	{player removeMagazines _x} forEach ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing","sledge_swing"];
 
 	_config = (configFile >> _type >> _classname);
 	_isOk = [player,_config] call BIS_fnc_invAdd;
 	if (_isOk) then {
 
 		deleteVehicle _holder;
-		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
+		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 
 			if (_type == "cfgWeapons") then {
 				_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
@@ -77,6 +77,7 @@ if(_qty >= 1) then {
 			case "MeleeCrowbar": {player addMagazine 'Crowbar_Swing';};
 			case "MeleeMachete": {player addMagazine 'Machete_Swing';};
 			case "MeleeFishingPole": {player addMagazine 'Fishing_Swing';};
+			case "MeleeSledge": {player addMagazine 'sledge_swing';};
 				
 		};
 	};

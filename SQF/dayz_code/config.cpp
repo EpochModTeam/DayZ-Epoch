@@ -786,7 +786,9 @@ class CfgBuildingLoot {
 			{ "ItemFuelBarrel","magazine"},
 			{ "WeaponHolder_ItemMachete", "object"},
 			{ "ItemFishingPole","weapon" },
-			{ "ItemLightBulb","magazine"}
+			{ "ItemLightBulb","magazine"},
+			{ "ItemSledgeHandle","magazine"}
+			
 	};
 		itemChance[] =	{
 			0.05,
@@ -794,7 +796,7 @@ class CfgBuildingLoot {
 			0.02,
 			0.04,
 			0.03,
-			0.27,
+			0.26,
 			0.03,
 			0.08,
 			0.05,
@@ -802,7 +804,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.03,
 			0.01,
-			0.02
+			0.02,
+			0.01
 		};
 	};
 	class Supermarket: Default {

@@ -20,7 +20,7 @@ _create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 
 _config2 = 	configFile >> "cfgWeapons" >> _create;
 
 //Remove magazines if needed
-if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
+if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 	_magType = 	([] + getArray (configFile >> "cfgWeapons" >> _item >> "magazines")) select 0;
 	_meleeNum = ({_x == _magType} count magazines player);
 	for "_i" from 1 to _meleeNum do {
@@ -28,12 +28,14 @@ if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) 
 	};
 };
 
-if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete"]) then {
+if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","ItemSledge"]) then {
 	switch (primaryWeapon player) do
 	{
 		case "MeleeHatchet": { "MeleeHatchet" call player_addToolbelt };
 		case "MeleeCrowbar": { "MeleeCrowbar" call player_addToolbelt };
 		case "MeleeMachete": { "MeleeMachete" call player_addToolbelt };
+		case "MeleeFishingPole": { "MeleeFishingPole" call player_addToolbelt };
+		case "MeleeSledge": { "MeleeSledge" call player_addToolbelt };
 	};
 };
 
@@ -44,9 +46,12 @@ if (_isOk) then {
 	player removeWeapon _item;
 	
 	//Add magazines if needed
-	if (_create in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
+	if (_create in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 		if (_create == "MeleeCrowbar") then {
 			player addMagazine 'crowbar_swing';
+		};
+		if (_create == "MeleeSledge") then {
+			player addMagazine 'sledge_swing';
 		};
 		if (_create == "MeleeHatchet") then {
 			player addMagazine 'hatchet_swing';
@@ -71,9 +76,12 @@ if (_isOk) then {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 	
 	//Add magazines back
-	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
+	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 		if (_item == "MeleeCrowbar") then {
 			player addMagazine 'crowbar_swing';
+		};
+		if (_item == "MeleeSledge") then {
+			player addMagazine 'sledge_swing';
 		};
 		if (_item == "MeleeHatchet") then {
 			player addMagazine 'hatchet_swing';

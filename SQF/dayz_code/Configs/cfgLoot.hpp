@@ -174,7 +174,7 @@ class CfgLoot {
 			0.01,
 			0.01,
 			0.01,
-			0.11,
+			0.08,
 			0.03,
 			0.01,
 			0.04,
@@ -190,7 +190,7 @@ class CfgLoot {
 			0.03,
 			0.03,
 			0.03,
-			0.01
+			0.04
 		}
 	};
 	generic[] = {
@@ -441,11 +441,12 @@ class CfgLoot {
 			"ItemPainkiller",
 			"ItemWire",
 			"ItemTankTrap",
-			"ItemComboLock"
+			"ItemComboLock",
+			"ItemSledgeHead"
 		},
 		{
-			0.1,
-			0.1,
+			0.09,
+			0.09,
 			0.09,
 			0.11,
 			0.09,
@@ -457,7 +458,8 @@ class CfgLoot {
 			0.06,
 			0.01,
 			0.03,
-			0.07
+			0.05,
+			0.04
 		}
 	};
 

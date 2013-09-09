@@ -78,7 +78,7 @@ class Land_DZE_WoodDoor_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 150;						/* "Lifepoints", if you like to call it that way.*/
+	armor = 200;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
@@ -98,6 +98,9 @@ class Land_DZE_WoodDoor_Base: DZE_Housebase {
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 };
 
+
+
+
 class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	model = "\z\addons\dayz_epoch\models\small_wall_door_anim.p3d";	/* path to the object */
 	displayName =  "Wood Door Base"; 		/* entry in Stringtable.csv */
@@ -105,7 +108,7 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 150;						/* "Lifepoints", if you like to call it that way.*/
+	armor = 200;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
@@ -561,3 +564,104 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 	};
 };
 
+
+
+class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
+	model = "\z\addons\dayz_epoch\models\Steel_door_locked.p3d";
+	displayName =  "Block Door Locked";
+	GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
+	/* Arma needs to know, how the animation trigger is triggered*/
+	class AnimationSources {
+			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
+		class Open_door {
+			source = "user";
+			animPeriod = 4; /* duration in seconds */
+			initPhase = 0; 
+		};
+		class Open_latch {
+			source = "user";
+			animPeriod = 1; /* duration in seconds */
+			initPhase = 0; 
+		};
+	};
+	
+	/* The entry to the actionmenu */
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName="Open Door";
+			onlyforplayer = true;
+			position="Door_knopf";
+			radius=3; /* visibility distance of the entry */
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement="this animate [""Open_door"", 1]";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName="Close Door";
+			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
+			statement="this animate [""Open_door"", 0]";
+		};
+		class Lock_Door : Open_Door
+		{
+			displayName="Lock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement="this animate [""Open_latch"", 0]";
+		};
+		class Unlock_Door : Open_Door
+		{
+			displayName="Unlock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="(DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
+			statement="this animate [""Open_latch"", 1]";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName="Unlock Door";
+			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
+			condition="DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
+		};
+	};
+};
+
+
+class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
+	model = "\z\addons\dayz_epoch\models\Steel_door.p3d";
+	displayName =  "Block Door";
+	GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
+	upgradeBuilding[] = {"CinderWallDoorSmallLocked_DZ",{{"ItemComboLock",1}}};
+	/* Arma needs to know, how the animation trigger is triggered*/
+	class AnimationSources {
+			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
+		class Open_door {
+			source = "user";
+			animPeriod = 4; /* duration in seconds */
+			initPhase = 0; 
+		};
+	};
+	
+	/* The entry to the actionmenu */
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName="Open Door";
+			onlyforplayer = true;
+			position="Door_knopf";
+			radius=3; /* visibility distance of the entry */
+			condition="this animationPhase ""Open_door"" < 0.5";
+			statement="this animate [""Open_door"", 1]";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName="Close Door";
+			condition="this animationPhase ""Open_door"" >= 0.5";
+			statement="this animate [""Open_door"", 0]";
+		};
+	};
+};

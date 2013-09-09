@@ -1212,6 +1212,10 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		class MeleeSledge  
+		{
+			weight = 9.1;
+		};
 		class MeleeMachete  
 		{
 			weight = 1;
@@ -1227,6 +1231,10 @@ class CfgWeight
 		class ItemCrowbar  
 		{
 			weight = 1;
+		};
+		class ItemSledge  
+		{
+			weight = 9.1;
 		};
 		class ItemMatchbox  
 		{
@@ -1447,6 +1455,10 @@ class CfgWeight
 			weight = 0;
 		};
 		class Crowbar_Swing
+		{
+			weight = 0;
+		};
+		class sledge_swing
 		{
 			weight = 0;
 		};

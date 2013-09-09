@@ -14,6 +14,10 @@ class CfgAmmo {
 		hit = 7;
 		simulation = "shotBullet";
 	};
+	class Sledge_Swing_Ammo : Melee {
+		hit = 11;
+		simulation = "shotBullet";
+	};
 	class Dummy_Swing_Ammo : Melee {
 		hit = 0;
 		simulation = "shotBullet";

@@ -81,7 +81,6 @@ if (_finished) then {
 
 		_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-		// TODO: Add running sounds to generator
 		cutText ["Generator has been started.", "PLAIN DOWN"];
 
 	};
