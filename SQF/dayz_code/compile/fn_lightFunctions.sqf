@@ -3,12 +3,13 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
 */
 axe_returnStreetLights={
-private["_lights","_objName","_rng","_nrstGen"];
+private["_lights","_objName","_rng","_nrstGen","_rndLights"];
 _rng = _this select 0;
 _nrstGen = _this select 1;
+_rndLights = _this select 2;
 _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_sidl_3.p3d","lampa_sidl_2.p3d","lampa_sidl.p3d","powlines_concl.p3d","powlines_woodl.p3d"];
 axe_streetLamps=[];
-axe_generators=[];
+
 	{
 		if("" != typeOf _x) then {
 				
@@ -16,13 +17,18 @@ axe_generators=[];
 					
 				_objName = _x call DZE_getModelName;
 
-				if (_objName in _lights) then { 
-					[axe_streetLamps , [_x]] call BIS_fnc_arrayPush;
+				if (_objName in _lights) then {
+					if(_rndLights<random 100)then{
+					_x switchlight "off";
+					}else{
+					_x switchlight "on";
+					};
+				[axe_streetLamps , [_x]] call BIS_fnc_arrayPush;
 				};
 			};
 		};
 	} foreach nearestObjects [getPos _nrstGen, [], _rng];
-[axe_streetLamps,axe_generators]
+axe_streetLamps
 };
 axe_newLightPoint={
 private ["_lp","_pos","_col","_brt","_amb","_pos","_dir","_vect"];
@@ -81,10 +87,4 @@ _nrTLs= position _twr nearObjects ["#lightpoint",30];
 			};
 		};
 	};
-};
-axe_TestMoveHC={
-private ["_startPos","_currPos"];
-_currPos = _this select 0;
-_startPos = [_currPos,50,180,20,0,800,0] call BIS_fnc_findSafePos;
-player setPosATL _startPos;
 };
