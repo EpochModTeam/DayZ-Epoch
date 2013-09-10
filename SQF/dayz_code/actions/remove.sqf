@@ -2,7 +2,7 @@
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_giveRefund"];
+private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund"];
 
 if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -159,7 +159,7 @@ if (_proceed) then {
 
 		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
 		
-		_giveRefund = true;
+		_preventRefund = false;
 
 		_selectedRemoveOutput = [];
 		if(_isWreck) then {
@@ -168,12 +168,12 @@ if (_proceed) then {
 			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
 		} else {
 			_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
-			_giveRefund = !(_objectID == "0" && _objectUID == "0");
+			_preventRefund = (_objectID == "0" && _objectUID == "0");
 			
 		};
 		
 		// give refund items
-		if((count _selectedRemoveOutput) > 0 and _giveRefund) then {
+		if((count _selectedRemoveOutput) > 0 and !_preventRefund) then {
 			// Put itemsg
 			{
 				_itemOut = _x select 0;
