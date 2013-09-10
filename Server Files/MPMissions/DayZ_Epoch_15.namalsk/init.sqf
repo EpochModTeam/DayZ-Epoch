@@ -116,7 +116,10 @@ if (!isDedicated) then {
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
 	_void = [] execVM "R3F_Realism\R3F_Realism_Init.sqf";
 	
-	//Lights
-	[17,6,true,true,true,true,42,250,600,10,[0.698, 0.556, 0.419],"Generator_DZ"] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	//Lights - Without Generator Requirement
+	//[17,6,true,false,true,false,42,450,600,10,[0.27, 0.25, 0.15],"Generator_DZ",280,"",6] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	
+	//With Generator Requirement
+	[17,6,true,false,true,true,64,250,250,10,[0.698, 0.556, 0.419],"Generator_DZ",280,"",6] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 };
 #include "\z\addons\dayz_code\system\REsec.sqf"
