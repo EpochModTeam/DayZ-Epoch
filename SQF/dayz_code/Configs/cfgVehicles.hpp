@@ -1411,14 +1411,14 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructNo";
 		cost = 100;
-		offset[] = {0,1.5,0.5};
+		offset[] = {0,1.5,0};
 		model = "\ca\misc\jezek_kov";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 400;
 		displayName = "Hedgehog (Steel)";
 		vehicleClass = "Fortifications";
-		constructioncount = 3;
+		constructioncount = 1;
 		removeoutput[] = {{"ItemTankTrap",1}};
 	};
 	// WorkBench_DZ
@@ -2466,7 +2466,7 @@ class CfgVehicles {
 		displayName = "$STR_EQUIP_NAME_20";
 		class transportmagazines
 		{
-			class _xx_ItemTentDomed2
+			class _xx_ItemTentOld
 			{
 				magazine = "ItemTentOld";
 				count = 1;
@@ -2479,7 +2479,7 @@ class CfgVehicles {
 		displayName = "Domed Desert Tent";
 		class transportmagazines
 		{
-			class _xx_ItemTentDomed2
+			class _xx_ItemTentDomed
 			{
 				magazine = "ItemTentDomed";
 				count = 1;

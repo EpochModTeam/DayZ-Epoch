@@ -503,7 +503,8 @@ server_cleanDead = {
 				_body removeAllEventHandlers "HandleDamage";
 				_body removeAllEventHandlers "Killed";
 				_body removeAllEventHandlers "Fired";
-				_body removeAllEventHandlers "FiredNear";				_x setVariable ["handle",false];
+				_body removeAllEventHandlers "FiredNear";
+				_x setVariable ["handle",false];
 			};
 		};
 	} forEach allDead;

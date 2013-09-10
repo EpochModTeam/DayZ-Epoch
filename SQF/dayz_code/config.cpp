@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.2.1";
+		version = "1.0.2.13";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -540,9 +540,7 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
 			{ "Winchester1866","weapon" },
-			{ "ItemTentOld","magazine" },
-			{ "ItemTentDomed2","magazine" },
-			{ "ItemTentDomed","magazine" },
+			{ "tents","single" },
 			{ "","military" },
 			{ "","trash" },
 			{ "Crossbow_DZ","weapon" },
@@ -576,10 +574,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.01,
-			0.01,
-			0.01,
 			0.02,
-			0.12,
+			0.14,
 			0.01,
 			0.02,
 			0.02,
@@ -617,9 +613,7 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
 			{ "Winchester1866","weapon" },
-			{ "ItemTentOld","magazine" },
-			{ "ItemTentDomed2","magazine" },
-			{ "ItemTentDomed","magazine" },
+			{ "tents","single" },
 			{ "","military" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
@@ -653,10 +647,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.01,
-			0.01,
-			0.01,
 			0.02,
-			0.12,
+			0.14,
 			0.01,
 			0.02,
 			0.02,
@@ -837,9 +829,7 @@ class CfgBuildingLoot {
 			{"DZ_CompactPack_EP1","object"}, //
 			{"DZ_TerminalPack_EP1","object"}, //
 			{ "Winchester1866","weapon" },
-			{ "ItemTentOld","magazine" },
-			{ "ItemTentDomed2","magazine" },
-			{ "ItemTentDomed","magazine" },
+			{ "tents","single" },
 			{ "","food" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
@@ -871,10 +861,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.01,
-			0.01,
-			0.01,
-			0.29,
-			0.12,
+			0.30,
+			0.13,
 			0.01,
 			0.05,
 			0.02,

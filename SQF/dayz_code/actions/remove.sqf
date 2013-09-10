@@ -2,7 +2,7 @@
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj"];
+private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_giveRefund"];
 
 if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -159,15 +159,16 @@ if (_proceed) then {
 
 		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
 		
+		_giveRefund = true;
+
 		_selectedRemoveOutput = [];
 		if(_isWreck) then {
 			// Find one random part to give back
 			_refundpart = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"] call BIS_fnc_selectRandom;
 			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
-			_giveRefund = true;
 		} else {
 			_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
-			_giveRefund = (_objectID != "0" && _objectUID != "0");
+			_giveRefund = !(_objectID == "0" && _objectUID == "0");
 			
 		};
 		

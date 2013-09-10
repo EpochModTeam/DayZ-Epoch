@@ -2,7 +2,7 @@
 	DayZ Base Building Upgrades
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_objectCharacterID"];
+private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot"];
 
 if(TradeInprogress) exitWith { cutText ["Upgrade already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -10,8 +10,59 @@ TradeInprogress = true;
 player removeAction s_player_upgrade_build;
 s_player_upgrade_build = 1;
 
+
+_distance = 30;
+_needText = "Plot Pole";
+
+// check for near plot
+_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], _distance];
+_findNearestPole = [];
+
+{
+	if (alive _x) then {
+		_findNearestPole set [(count _findNearestPole),_x];
+	};
+} foreach _findNearestPoles;
+
+_IsNearPlot = count (_findNearestPole);
+
+if(_IsNearPlot == 0) then {
+	_canBuildOnPlot = true;
+} else {
+	
+	// check nearby plots ownership and then for friend status
+	_nearestPole = _findNearestPole select 0;
+
+	// Find owner 
+	_ownerID = _nearestPole getVariable["CharacterID","0"];
+
+	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
+
+	// check if friendly to owner
+	if(dayz_characterID == _ownerID) then {
+		_canBuildOnPlot = true;		
+	} else {
+		_friendlies		= player getVariable ["friendlyTo",[]];
+		// check if friendly to owner
+		if(_ownerID in _friendlies) then {
+			_canBuildOnPlot = true;
+		};
+	};
+};
+
+// exit if not allowed due to plot pole
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Unable to upgrade %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
+
 // get cursortarget from addaction
 _obj = _this select 3;
+
+// Find objectID
+_objectID 	= _obj getVariable ["ObjectID","0"];
+
+// Find objectUID
+_objectUID	= _obj getVariable ["ObjectUID","0"];
+
+if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_upgrade_build = -1; cutText ["Not setup yet.", "PLAIN DOWN"];};
 
 // Get classname
 _classname = typeOf _obj;
@@ -80,12 +131,6 @@ if ((count _upgrade) > 0) then {
 			// Get direction
 			_dir = getDir _obj;
 
-			// Find objectID
-			_objectID 	= _obj getVariable ["ObjectID","0"];
-
-			// Find objectUID
-			_objectUID	= _obj getVariable ["ObjectUID","0"];
-			
 			// Current charID
 			_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 

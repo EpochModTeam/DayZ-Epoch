@@ -429,6 +429,10 @@ if(isNil "dayz_maxpos") then {
 if(isNil "DZE_teleport") then {
 	DZE_teleport = [1000,2000,500,200,800];
 };
+if(isNil "DZE_BuildingLimit") then {
+	DZE_BuildingLimit = 150;
+};
+
 
 /*
 if(isNil "dayz_canBuildInCity") then {

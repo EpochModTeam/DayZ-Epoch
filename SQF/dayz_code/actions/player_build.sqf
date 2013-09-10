@@ -7,6 +7,9 @@ private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","
 if(TradeInprogress) exitWith { cutText ["Building already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
+// disallow building if too many objects are found within 30m
+if((count ((position player) nearObjects ["All",30])) >= DZE_BuildingLimit) exitWith {TradeInprogress = false; cutText ["Cannot build, too many objects witin 30m.", "PLAIN DOWN"];};
+
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		(surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 _cancel = false;

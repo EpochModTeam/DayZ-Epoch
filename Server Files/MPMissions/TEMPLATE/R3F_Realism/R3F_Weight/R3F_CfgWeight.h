@@ -1227,6 +1227,10 @@ class CfgWeight
 		class ItemHatchet  
 		{
 			weight = 1;
+		};		
+		class ItemSledge  
+		{
+			weight = 9.1;
 		};
 		class ItemCrowbar  
 		{
@@ -1241,6 +1245,10 @@ class CfgWeight
 			weight = 0.005;
 		};
 		class ItemToolbox   
+		{
+			weight = 1;
+		};
+		class ItemKeyKit   
 		{
 			weight = 1;
 		};

@@ -3129,7 +3129,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {};
-				outputWeapon[] = {{"ItemSledge",1}};
+				outputweapons[] = {"ItemSledge"};
 				input[] = {{"ItemSledgeHead",1},{"ItemSledgeHandle",1}};
 			};
 		};
