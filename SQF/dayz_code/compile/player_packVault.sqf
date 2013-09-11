@@ -25,6 +25,8 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
+if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packvault = -1; cutText [format["%1 not setup yet.",_text], "PLAIN DOWN"];};
+
 if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith { TradeInprogress = false; s_player_packvault = -1; cutText [format["You cannot pack this %1, you do not know the combination.",_text], "PLAIN DOWN"];};
 
 _alreadyPacking = _obj getVariable["packing",0];
@@ -102,7 +104,6 @@ if(!isNull _obj and alive _obj) then {
 	} forEach _objWpnTypes;
 	
 	cutText [format["Your %1 has been packed",_text], "PLAIN DOWN"];
-
-	s_player_packvault = -1;
 };
+s_player_packvault = -1;
 TradeInprogress = false;

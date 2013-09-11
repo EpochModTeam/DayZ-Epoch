@@ -174,7 +174,7 @@ class CfgLoot {
 			0.01,
 			0.01,
 			0.01,
-			0.11,
+			0.08,
 			0.03,
 			0.01,
 			0.04,
@@ -190,7 +190,7 @@ class CfgLoot {
 			0.03,
 			0.03,
 			0.03,
-			0.01
+			0.04
 		}
 	};
 	generic[] = {
@@ -381,18 +381,24 @@ class CfgLoot {
 			"7Rnd_45ACP_1911",
 			"6Rnd_45ACP",
 			"15Rnd_W1866_Slug",
-			"8Rnd_B_Beneli_74Slug",
+			"8Rnd_B_Beneli_Pellets",
 			"HandRoadFlare",
-			"8Rnd_9x18_MakarovSD"
+			"8Rnd_9x18_MakarovSD",
+			"ItemComboLock",
+			"SmokeShell",
+			"FoodMRE"
 		},
 		{
 			0.3,
-			0.2,
-			0.1,
+			0.08,
+			0.08,
 			0.14,
 			0.15,
-			0.1,
-			0.01
+			0.08,
+			0.01,
+			0.07,
+			0.05,
+			0.04
 		}
 	};
 	hunter[] = {
@@ -435,23 +441,25 @@ class CfgLoot {
 			"ItemPainkiller",
 			"ItemWire",
 			"ItemTankTrap",
-			"ItemComboLock"
+			"ItemComboLock",
+			"ItemSledgeHead"
 		},
 		{
-			0.14,
-			0.12,
 			0.09,
+			0.10,
+			0.10,
 			0.11,
 			0.09,
 			0.06,
 			0.06,
 			0.06,
 			0.06,
-			0.12,
+			0.1,
 			0.06,
 			0.01,
-			0.01,
-			0.01
+			0.03,
+			0.05,
+			0.02
 		}
 	};
 
@@ -553,6 +561,18 @@ class CfgLoot {
 			0.04,
 			0.04,
 			0.04
+		}
+	};
+	tents[] = {
+		{
+			"ItemTentOld",
+			"ItemTentDomed",
+			"ItemTentDomed2",
+		},
+		{
+			0.34,
+			0.33,
+			0.33,
 		}
 	};
 };

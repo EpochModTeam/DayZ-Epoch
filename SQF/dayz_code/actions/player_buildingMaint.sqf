@@ -13,6 +13,14 @@ s_player_maint_build = 1;
 // get cursortarget from addaction
 _obj = _this select 3;
 
+// Find objectID
+_objectID 	= _obj getVariable ["ObjectID","0"];
+
+// Find objectUID
+_objectUID	= _obj getVariable ["ObjectUID","0"];
+
+if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_maint_build = -1; cutText ["Not setup yet.", "PLAIN DOWN"];};
+
 // Get classname
 _classname = typeOf _obj;
 
@@ -75,12 +83,6 @@ if (_proceed) then {
 		// Get direction
 		_dir = getDir _obj;
 
-		// Find objectID
-		_objectID 	= _obj getVariable ["ObjectID","0"];
-
-		// Find objectUID
-		_objectUID	= _obj getVariable ["ObjectUID","0"];
-
 		// Find CharacterID
 		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 		
@@ -100,10 +102,13 @@ if (_proceed) then {
 		dayzDeleteObj = [_objectID,_objectUID];
 		publicVariableServer "dayzDeleteObj";
 
+		// sleep a bit to make sure delete happens before create
+		sleep 1;
+
 		// Publish variables
 		_object setVariable ["CharacterID",_objectCharacterID,true];
-		_object setVariable ["ObjectID",_objectID,true];
-		_object setVariable ["ObjectUID",_objectUID,true];
+		
+		//_object setVariable ["ObjectUID",_objectUID,true];
 		_object setVariable ["OEMPos",_location,true];
 
 		dayzPublishObj = [_objectCharacterID,_object,[_dir,_location],_classname];

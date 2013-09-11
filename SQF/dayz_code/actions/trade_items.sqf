@@ -127,7 +127,6 @@ for "_x" from 1 to _total_trades do {
 			} else {
 			
 				// Return items from botched trade. 
-				// TODO: this may never happen if so remove 
 				for "_x" from 1 to _removed do {
 					player addMagazine _part_in;
 				};

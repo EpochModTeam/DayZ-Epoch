@@ -1,4 +1,4 @@
-surfaceInfo="z\addons\dayz_epoch\textures\wood.bisurf";
+surfaceInfo="data\wood.bisurf";
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};

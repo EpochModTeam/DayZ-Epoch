@@ -33,21 +33,6 @@ if(_classname isKindOf "TrapBear") exitwith {DZE_CanPickup = true; deleteVehicle
 
 player playActionNow "PutDown";
 
-if (_classname == "MeleeCrowbar") then {
-	player addMagazine 'crowbar_swing';
-};
-if (_classname == "MeleeHatchet") then {
-	player addMagazine 'hatchet_swing';
-};
-if (_classname == "MeleeMachete") then {
-	player addMagazine 'Machete_swing';
-};
-if (_classname == "MeleeFishingPole") then {
-	player addMagazine 'Fishing_Swing';
-};
-
-sleep 1;
-
 _claimedBy = _holder getVariable["claimed","0"];
 
 if (_claimedBy != _playerID) exitWith {sleep 1; DZE_CanPickup = true; cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]};
@@ -64,12 +49,15 @@ _qty = count _obj;
 
 if(_qty >= 1) then {
 
+	//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
+	{player removeMagazines _x} forEach ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing","sledge_swing"];
+
 	_config = (configFile >> _type >> _classname);
 	_isOk = [player,_config] call BIS_fnc_invAdd;
 	if (_isOk) then {
 
 		deleteVehicle _holder;
-		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole"]) then {
+		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 
 			if (_type == "cfgWeapons") then {
 				_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
@@ -81,20 +69,16 @@ if(_qty >= 1) then {
 				};
 			};
 		};
-	} else {
-		_holder setVariable["claimed","0",true];
-		cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
-		if (_classname == "MeleeCrowbar") then {
-			player removeMagazine 'crowbar_swing';
-		};
-		if (_classname == "MeleeHatchet") then {
-			player removeMagazine 'hatchet_swing';
-		};
-		if (_classname == "MeleeMachete") then {
-			player removeMagazine 'Machete_swing';
-		};
-		if (_classname == "MeleeFishingPole") then {
-			player removeMagazine 'Fishing_Swing';
+
+		//adding melee mags back if needed
+		switch (primaryWeapon player) do
+		{
+			case "MeleeHatchet": {player addMagazine 'Hatchet_Swing';};
+			case "MeleeCrowbar": {player addMagazine 'Crowbar_Swing';};
+			case "MeleeMachete": {player addMagazine 'Machete_Swing';};
+			case "MeleeFishingPole": {player addMagazine 'Fishing_Swing';};
+			case "MeleeSledge": {player addMagazine 'sledge_swing';};
+				
 		};
 	};
 };

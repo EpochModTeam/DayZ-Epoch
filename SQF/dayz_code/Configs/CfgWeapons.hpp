@@ -49,6 +49,7 @@ class CfgWeapons {
 	#include "CfgWeapons\Melee\Crossbow.hpp"
 	#include "CfgWeapons\Melee\MeleeBaseBallBat.hpp"
 	#include "CfgWeapons\Melee\MeleeFishingPole.hpp"
+	#include "CfgWeapons\Melee\MeleeSledgehammer.hpp"
 	//	#include "CfgWeapons\Melee\MeleeBaseBallBatBarbed.hpp"
 	//	#include "CfgWeapons\Melee\MeleeBaseBallBatNails.hpp"
 	 
@@ -61,6 +62,7 @@ class CfgWeapons {
 	#include "CfgWeapons\Item\ItemEtool.hpp"
 	#include "CfgWeapons\Item\ItemShovel.hpp"
 	#include "CfgWeapons\Item\ItemFishingPole.hpp"
+	#include "CfgWeapons\Item\ItemSledge.hpp"
 	#include "CfgWeapons\Item\ItemKeyKit.hpp"
 	#include "CfgWeapons\Item\ItemKeys.hpp"
 	

@@ -247,14 +247,14 @@
 			<Czech>Stan zde nelze postavit. Plocha musí být rovná a být dostatečně velká.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
-			<Original>You have consumed a %1</Original>
-			<English>You have consumed a %1</English>
-			<German>Sie haben ein(e) %1 verbraucht</German>
-			<Russian>Вы употребили: %1</Russian>
-			<Spanish>Consumiste: %1</Spanish>
-			<Dutch>Je hebt %1 genuttigd</Dutch>
-			<French>Vous avez consommé un(e) %1</French>
-			<Czech>Snědl jsi %1</Czech>
+			<Original>\n\nYou have consumed a %1</Original>
+			<English>\n\nYou have consumed a %1</English>
+			<German>\n\nSie haben ein(e) %1 verbraucht</German>
+			<Russian>\n\nВы употребили: %1</Russian>
+			<Spanish>\n\nConsumiste: %1</Spanish>
+			<Dutch>\n\nJe hebt %1 genuttigd</Dutch>
+			<French>\n\nVous avez consommé un(e) %1</French>
+			<Czech>\n\nSnědl jsi %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
 			<Original>You have created a fireplace</Original>
@@ -327,24 +327,24 @@
 			<Czech>Jste uzdravováni.</Czech>
 		</Key>
 		<Key ID="str_player_01">
-			<Original>You have filled %1 bottles with water</Original>
-			<English>You have filled %1 bottles with water</English>
-			<German>Sie haben %1 Flasche(n) mit Wasser gefüllt</German>
-			<Russian>Наполнено фляжек с водой: %1</Russian>
-			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
-			<Dutch>Je hebt %1 flessen gevuld met water</Dutch>
-			<French>Vous avez rempli %1 bouteille(s) avec de l'eau.</French>
-			<Czech>Naplnil jsi %1 lahví vodou.</Czech>
+			<Original>\n\nYou have filled %1 bottles with water</Original>
+			<English>\n\nYou have filled %1 bottles with water</English>
+			<German>\n\nSie haben %1 Flasche(n) mit Wasser gefüllt</German>
+			<Russian>\n\nНаполнено фляжек с водой: %1</Russian>
+			<Spanish>\n\nLlenaste %1 cantimplora(s) con agua</Spanish>
+			<Dutch>\n\nJe hebt %1 flessen gevuld met water</Dutch>
+			<French>\n\nVous avez rempli %1 bouteille(s) avec de l'eau.</French>
+			<Czech>\n\nNaplnil jsi %1 lahví vodou.</Czech>
 		</Key>
 		<Key ID="str_player_02">
-			<Original>You have no empty water bottles</Original>
-			<English>You have no empty water bottles</English>
-			<German>Sie haben keine leeren Wasserflaschen</German>
-			<Russian>У вас нет пустых фляжек.</Russian>
-			<Spanish>No tienes cantimploras vacías</Spanish>
-			<Dutch>Je hebt geen lege waterflessen</Dutch>
-			<French>Vous n'avez aucune bouteille vide.</French>
-			<Czech>Nemáš žádné prázdné láhve na vodu.</Czech>
+			<Original>\n\nYou have no empty water bottles</Original>
+			<English>\n\nYou have no empty water bottles</English>
+			<German>\n\nSie haben keine leeren Wasserflaschen</German>
+			<Russian>\n\nУ вас нет пустых фляжек.</Russian>
+			<Spanish>\n\nNo tienes cantimploras vacías</Spanish>
+			<Dutch>\n\nJe hebt geen lege waterflessen</Dutch>
+			<French>\n\nVous n'avez aucune bouteille vide.</French>
+			<Czech>\n\nNemáš žádné prázdné láhve na vodu.</Czech>
 		</Key>
 		<Key ID="str_player_03">
 			<Original>You need a %1 to repair this</Original>
@@ -507,24 +507,24 @@
 			<Czech>Máte nesprávnou verzi DAYZ_CODE, stáhněte si prosím aktuální soubor z dayzepoch.com (Vaše verze je %1 a na serveru běží verze %2)</Czech>
 		</Key>
 		<Key ID="str_player_20">
-			<Original>You must be near a water-source such as a pond or well to refill your water bottles</Original>
-			<English>You must be near a water-source such as a pond or well to refill your water bottles</English>
-			<German>Sie müssen in der nähe einer Wasserquelle wie einem Teich oder Brunnen sein um Wasserflaschen zu füllen</German>
-			<Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
-			<Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
-			<Dutch>Je moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
-			<French>Vous devez être à côté d'une source d'eau comme un bassin ou un puits pour remplir vos bouteilles d'eau.</French>
-			<Czech>Pro plnění láhve na vodu je nutné být poblíž studny nebo rybníka.</Czech>
+			<Original>\n\nYou must be near a water-source such as a pond or well to refill your water bottles</Original>
+			<English>\n\nYou must be near a water-source such as a pond or well to refill your water bottles</English>
+			<German>\n\nSie müssen in der nähe einer Wasserquelle wie einem Teich oder Brunnen sein um Wasserflaschen zu füllen</German>
+			<Russian>\n\nВы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
+			<Spanish>\n\nNecesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
+			<Dutch>\n\nJe moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
+			<French>\n\nVous devez être à côté d'une source d'eau comme un bassin ou un puits pour remplir vos bouteilles d'eau.</French>
+			<Czech>\n\nPro plnění láhve na vodu je nutné být poblíž studny nebo rybníka.</Czech>
 		</Key>
 		<Key ID="str_player_21">
-			<Original>You cannot do this while you are on a ladder</Original>
-			<English>You cannot do this while you are on a ladder</English>
-			<German>Sie können dies nicht tun, während Sie an einer Leiter sind</German>
-			<Russian>Вы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
-			<Spanish>No puedes hacer esto mientras estás en una escalera</Spanish>
-			<Dutch>Je kunt deze actie op een ladder niet uitvoeren</Dutch>
-			<French>Vous ne pouvez pas faire cela en étant sur une échelle.</French>
-			<Czech>Akci nelze provést, jelikož jste na žebříku.</Czech>
+			<Original>\n\nYou cannot do this while you are on a ladder</Original>
+			<English>\n\nYou cannot do this while you are on a ladder</English>
+			<German>\n\nSie können dies nicht tun, während Sie an einer Leiter sind</German>
+			<Russian>\n\nВы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
+			<Spanish>\n\nNo puedes hacer esto mientras estás en una escalera</Spanish>
+			<Dutch>\n\nJe kunt deze actie op een ladder niet uitvoeren</Dutch>
+			<French>\n\nVous ne pouvez pas faire cela en étant sur une échelle.</French>
+			<Czech>\n\nAkci nelze provést, jelikož jste na žebříku.</Czech>
 		</Key>
 		<Key ID="str_player_22">
 			<Original>You must have wood in your inventory in order to create a fireplace</Original>
@@ -537,14 +537,14 @@
 			<Czech>Pro vytvoření ohniště je nutné mít v inventáři dřevo.</Czech>
 		</Key>     
 		<Key ID="str_player_23">
-			<Original>You must be close to a tree to harvest wood.</Original>
-			<English>You must be close to a tree to harvest wood.</English>
-			<German>Sie müssen Nähe eines Baums sein, um Holz zu sammeln.</German>
-			<Russian>Вы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
-			<Spanish>Debes estar en el bosque y cerca de un árbol para recoger leña.</Spanish>
-			<Dutch>Je moet in een bos en in de buurt van een boom zijn om hout te hakken.</Dutch>
-			<French>Vous devez être en forêt et proche d'un arbre pour couper du bois.</French>
-			<Czech>Pro získání dřeva musíš být v lese blízko stromu.</Czech>
+			<Original>\n\nYou must be close to a tree to harvest wood.</Original>
+			<English>\n\nYou must be close to a tree to harvest wood.</English>
+			<German>\n\nSie müssen Nähe eines Baums sein, um Holz zu sammeln.</German>
+			<Russian>\n\nВы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
+			<Spanish>\n\nDebes estar en el bosque y cerca de un árbol para recoger leña.</Spanish>
+			<Dutch>\n\nJe moet in een bos en in de buurt van een boom zijn om hout te hakken.</Dutch>
+			<French>\n\nVous devez être en forêt et proche d'un arbre pour couper du bois.</French>
+			<Czech>\n\nPro získání dřeva musíš být v lese blízko stromu.</Czech>
 		</Key>
 		<Key ID="str_player_24">
 			<Original>You do not have enough room in your inventory to do that.</Original>
@@ -567,14 +567,14 @@
 			<Czech>Hromádka dřeva byla úspěšně přidána do tvého inventáře.</Czech>
 		</Key>
 		<Key ID="str_player_26">
-			<Original>You cannot do this while you are in the water.</Original>
-			<English>You cannot do this while you are in the water.</English>
-			<German>Sie können dies nicht tun, während Sie sich im Wasser befinden..</German>
-			<Russian>Это действие невозможно пока вы в воде.</Russian>
-			<Spanish>No puedes hacer esto mientras estás en el agua.</Spanish>
-			<Dutch>Je kunt deze actie niet in het water uitvoeren</Dutch>
-			<French>Vous ne pouvez pas faire cela lorsque vous êtes dans l'eau.</French>
-			<Czech>Tuto akci nelze provést pokud jste ve vodě.</Czech>
+			<Original>\n\nYou cannot do this while you are in the water.</Original>
+			<English>\n\nYou cannot do this while you are in the water.</English>
+			<German>\n\nSie können dies nicht tun, während Sie sich im Wasser befinden..</German>
+			<Russian>\n\nЭто действие невозможно пока вы в воде.</Russian>
+			<Spanish>\n\nNo puedes hacer esto mientras estás en el agua.</Spanish>
+			<Dutch>\n\nJe kunt deze actie niet in het water uitvoeren</Dutch>
+			<French>\n\nVous ne pouvez pas faire cela lorsque vous êtes dans l'eau.</French>
+			<Czech>\n\nTuto akci nelze provést pokud jste ve vodě.</Czech>
 		</Key>
 		<Key ID="str_player_27">
 			<Original>You have applied a heatpack to your body successfully.</Original>
@@ -607,24 +607,24 @@
 			<Czech>Úspěšně jsi nabil zásobníky %1 %2. </Czech>
 		</Key>
 		<Key ID="str_player_30">
-			<Original>%1 must be on your person to move it to/from your toolbelt.</Original>
-			<English>%1 must be on your person to move it to/from your toolbelt.</English>
-			<German>%1 muss in ihrem Inventar sein um es aus/in ihren Werkzeuggürtel zu packen.</German>
-			<Russian>Для перемещения с/на пояс, предмет %1 должен быть у вас.</Russian>
-			<Spanish>%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
-			<Dutch>Je moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
-			<French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
-			<Czech>TO DECIDE</Czech>
+			<Original>\n\n%1 must be on your person to move it to/from your toolbelt.</Original>
+			<English>\n\n%1 must be on your person to move it to/from your toolbelt.</English>
+			<German>\n\n%1 muss in ihrem Inventar sein um es aus/in ihren Werkzeuggürtel zu packen.</German>
+			<Russian>\n\nДля перемещения с/на пояс, предмет %1 должен быть у вас.</Russian>
+      <Spanish>\n\n%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
+			<Dutch>\n\nJe moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
+			<French>\n\n%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
+			<Czech>\n\n%1 must be on your person to move it to/from your toolbelt.</Czech>
 		</Key>
 		<Key ID="str_player_31">
-			<Original>%1 must be in your main inventory to %2 it.</Original>
-			<English>%1 must be in your main inventory to %2 it.</English>
-			<German>%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
-			<Russian>Предмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
-			<Spanish>%1 debe estar en tu inventario principal para: %2</Spanish>
-			<Dutch>%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
-			<French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
-			<Czech>%1 musí být ve tvém hlavním inventáři pro %2.</Czech>
+			<Original>\n\n%1 must be in your main inventory to %2 it.</Original>
+			<English>\n\n%1 must be in your main inventory to %2 it.</English>
+			<German>\n\n%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
+			<Russian>\n\nПредмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
+			<Spanish>\n\n%1 debe estar en tu inventario principal para: %2</Spanish>
+			<Dutch>\n\n%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
+			<French>\n\n%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
+			<Czech>\n\n%1 musí být ve tvém hlavním inventáři pro %2.</Czech>
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<Original>%1 is already being looted by someone else.</Original>

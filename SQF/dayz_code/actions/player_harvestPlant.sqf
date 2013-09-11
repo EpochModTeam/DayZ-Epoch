@@ -5,7 +5,7 @@
 */
 private ["_isOk","_i","_objName","_objInfo","_lenInfo","_started","_finished","_animState","_isMedic","_proceed","_counter","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree"];
 
-if(TradeInprogress) exitWith { cutText ["Harvest already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText ["\n\nHarvest already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 // allowed trees list move this later
@@ -103,7 +103,7 @@ if (count(_findNearestTree) >= 1) then {
 		};
 		//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 
-		cutText [format["%1 of %2 has been successfully added to your inventory.", _countOut,_itemOut], "PLAIN DOWN"];
+		cutText [format["\n\n%1 of %2 has been successfully added to your inventory.", _countOut,_itemOut], "PLAIN DOWN"];
 
 	} else {
 		r_interrupt = false;
@@ -111,12 +111,12 @@ if (count(_findNearestTree) >= 1) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Harvesting.", "PLAIN DOWN"];
+		cutText ["\n\nCanceled Harvesting.", "PLAIN DOWN"];
 	};
 
 	
 
 } else {
-	cutText [localize "str_player_23", "PLAIN DOWN"];
+	cutText ["\n\nYou must be close to a plant to harvest.", "PLAIN DOWN"];
 };
 TradeInprogress = false;

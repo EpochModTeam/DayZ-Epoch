@@ -1,6 +1,7 @@
-private ["_victim", "_attacker","_weapon","_distance"];
+private ["_victim", "_attacker","_weapon","_distance","_damage"];
 _victim = _this select 0;
 _attacker = _this select 1;
+_damage = _this select 2;
 
 if (!isPlayer _victim || !isPlayer _attacker) exitWith {};
 if ((name _victim) == (name _attacker)) exitWith {};
@@ -17,7 +18,7 @@ else
 
 _distance = _victim distance _attacker;
 
-diag_log format["PHIT: %1 was hit by %2 with %3 from %4m", _victim, _attacker, _weapon, _distance];
+diag_log format["PHIT: %1 was hit by %2 with %3 from %4m with %5 dmg", _victim, _attacker, _weapon, _distance, _damage];
 
 _victim setVariable["AttackedBy", _attacker, true];
 _victim setVariable["AttackedByName", (name _attacker), true];

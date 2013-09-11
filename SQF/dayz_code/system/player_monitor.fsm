@@ -1085,6 +1085,9 @@ class FSM
        "if (player hasWeapon ""MeleeCrowbar"") then {" \n
        "	player addMagazine 'crowbar_swing';" \n
        "};" \n
+	   "if (player hasWeapon ""MeleeSledge"") then {" \n
+       "	player addMagazine 'sledge_swing';" \n
+       "};" \n
        "if (player hasWeapon ""MeleeHatchet"") then {" \n
        "	player addMagazine 'hatchet_swing';" \n
        "};" \n
