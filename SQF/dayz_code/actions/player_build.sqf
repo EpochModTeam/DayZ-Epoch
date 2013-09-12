@@ -22,6 +22,7 @@ DZE_cancelBuilding = false;
 DZE_5 = false;
 
 call gear_ui_init;
+closeDialog 1;
 
 if(_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
 if(_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};

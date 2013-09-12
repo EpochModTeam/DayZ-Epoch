@@ -88,14 +88,3 @@ _nrTLs= position _twr nearObjects ["#lightpoint",30];
 		};
 	};
 };
-<<<<<<< HEAD
-=======
-
-axe_TestMoveHC={
-private ["_startPos","_currPos"];
-_currPos = _this select 0;
-_startPos = [_currPos,50,180,20,0,800,0] call BIS_fnc_findSafePos;
-player setPosATL _startPos;
-};
-
->>>>>>> origin/master

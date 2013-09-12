@@ -1612,7 +1612,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\metal_floor.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1600;
+		armor = 1000;
 		displayName = "Metal Floor";
 		vehicleClass = "Fortifications";
 		GhostPreview = "MetalFloor_Preview_DZ";
@@ -1626,7 +1626,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\cinder_wall_half.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1600;
+		armor = 1000;
 		displayName = "Half Cinder Block Wall";
 		vehicleClass = "Fortifications";
 		upgradeBuilding[] = {"CinderWall_DZ",{{"CinderBlocks",4},{"MortarBucket",1}}};
@@ -1642,7 +1642,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\cinder_wall_full.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1600;
+		armor = 1000;
 		displayName = "Cinder Block Wall";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
@@ -1658,7 +1658,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\steel_garage_frame.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1600;
+		armor = 1000;
 		displayName = "Block Garage Doorway";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
@@ -1675,7 +1675,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\Steel_door_frame.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1600;
+		armor = 1000;
 		displayName = "Block Doorway";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
@@ -1900,7 +1900,7 @@ class CfgVehicles {
 		destrType = "DestructNo";
 		cost = 100;
 		offset[] = {0,1.5,0};
-		model="\z\addons\dayz_epoch\models\steel_garage_frame_ghost.p3d"; // todo change this 
+		model="\z\addons\dayz_epoch\models\Steel_door_frame_ghost.p3d"; // todo change this 
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 1000;

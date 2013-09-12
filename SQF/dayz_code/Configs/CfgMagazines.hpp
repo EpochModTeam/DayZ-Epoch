@@ -566,16 +566,74 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "Smelt 10oz bar";
+				text = "Add 1oz Bar";
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar2oz",1}};
+				input[] = {{"ItemGoldBar",2}};
+				
+			};
+			class Crafting1
+			{
+				text = "Add 10 1oz bars";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1}};
 				input[] = {{"ItemGoldBar",10}};
 				
 			};
 		};
 	};
+	/*
+	class ItemGoldBar2oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Gold 2oz";
+		model = "\z\addons\dayz_epoch\models\gold_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
+		descriptionShort = "2 x 1oz Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1oz Bar";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemGoldBar3oz",1}};
+				input[] = {{"ItemGoldBar2oz",1},{"ItemGoldBar",1}};
+				
+			};
+		};
+	};
+	class ItemGoldBar2oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Gold 2oz";
+		model = "\z\addons\dayz_epoch\models\gold_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
+		descriptionShort = "2 x 1oz Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1oz Bar";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemGoldBar4oz",1}};
+				input[] = {{"ItemGoldBar3oz",1},{"ItemGoldBar",1}};
+				
+			};
+		};
+	};
+	*/
 	class ItemGoldBar10oz: CA_Magazine
 	{
 		scope = 2;
