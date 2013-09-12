@@ -62,9 +62,9 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 		}forEach _nrTowers;
 	};
 };
-
-{
 /*
+{
+
 if(_cntNrGen>0)then{//reset house if gen nearby to help create reliability regardless of gen requirement ?
 	_x setVariable ["axeHLight", 0, false];
 	};
