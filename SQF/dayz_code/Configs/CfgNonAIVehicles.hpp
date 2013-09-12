@@ -1,7 +1,7 @@
 class CfgNonAIVehicles {
 	class StreetLamp {
 	animated = 0;
-	brightness = 0.1;
+	brightness = 0.5;
 	colorambient[] = {0.02, 0.02, 0.02};
 	colordiffuse[] = {0.27, 0.25, 0.15};
 	destrtype = "DestructTree";
@@ -26,7 +26,7 @@ class CfgNonAIVehicles {
 						 hitpoint = "lampa";
 						 selection = "";
 						 size = 0.5;
-						 brightness = 0.1;
+						 brightness = 0.5;
 				 };
 		 };
 	 armorLights = 0.4;
@@ -34,22 +34,22 @@ class CfgNonAIVehicles {
 	};
 	
 	class StreetLamp_BaseWeakYellow : StreetLamp {
-		brightness = 0.1;
+		brightness = 0.5;
 		scope = 2;
 	};
 	
 	class StreetLamp_BaseMediumOrange : StreetLamp {
-		brightness = 0.1;
+		brightness = 0.5;
 		scope = 2;
 	};
 	
 	class StreetLamp_BaseMediumPale : StreetLamp {
-		brightness = 0.1;
+		brightness = 0.5;
 		scope = 2;
 	};
 	
 	class StreetLamp_BaseStrongPale : StreetLamp {
-		brightness = 0.1;
+		brightness = 0.5;
 		scope = 2;
 	};
 	
@@ -67,7 +67,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -92,7 +92,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -117,7 +117,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -142,7 +142,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -167,7 +167,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -192,7 +192,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -217,7 +217,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -242,7 +242,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -267,7 +267,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
@@ -292,7 +292,7 @@ class CfgNonAIVehicles {
 		class Reflectors {
 			class LampLight {
 				ambient[] = {0.27, 0.25, 0.15, 1};
-				brightness = 0.1;
+				brightness = 0.5;
 				color[] = {0.27, 0.25, 0.15, 1};
 				direction = "";
 				hitpoint = "lampa";
