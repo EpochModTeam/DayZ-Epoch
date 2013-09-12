@@ -5,7 +5,7 @@
 	To Do - Light poles - Automatic lighting for bases (with or without generator) - Menu action to switch off house and tower lights
 	Wishlist - Detect weather to make lights fail in thunder :)
 */
-private ["_sleep","_lpRange","_nrGen","_genCount","_rndLightsIn","_rndLightsOut","_genClass","_i","_doHouse","_doStreet","_doTower","_doLight","_fnHr","_stHr","_plyr","_hndlSLights","_hndlHLights","_hndlTLights","_hndlDelLights","_hndlFailLights","_tmpPlyrPos","_ndGen","_trgRng","_rngPlyr","_arrStreetLights","_wait","_waitcmd","_waitCount","_trigDist","_lightTrig","_lmpCol"];
+private ["_sleep","_lpRange","_hsRange","_nrGen","_genCount","_rndLightsIn","_rndLightsOut","_genClass","_i","_doHouse","_doStreet","_doTower","_doLight","_fnHr","_stHr","_plyr","_hndlSLights","_hndlHLights","_hndlTLights","_hndlDelLights","_hndlFailLights","_tmpPlyrPos","_ndGen","_trgRng","_rngPlyr","_arrStreetLights","_wait","_waitcmd","_waitCount","_trigDist","_lightTrig","_lmpCol"];
 
 _stHr = _this select 0;//Hour (in 24 hours) to start lights
 _fnHr = _this select 1;//Hour (in 24 hours) to stop lights
@@ -29,6 +29,7 @@ _wait = [];
 _doLight = true;
 _nrGen = [];
 _genCount = 0;
+_hsRange = 250;
 _lightTrig = [];//Central point around which to run the lights - _trigDist is calculated from the position of this entity (player or generator)
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_lightFunctions.sqf";
 axeTowerLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_tower.sqf";
@@ -57,6 +58,9 @@ do
 	if(!_ndGen)then{
 		if(_genCount>0&&((_nrGen select 0) getVariable["GeneratorRunning",false]))then{
 		_rndLightsOut = 100;
+		_hsRange = _trgRng;
+		}else{
+		_hsRange = _rngPlyr;
 		};
 	};
 		{
@@ -76,7 +80,7 @@ do
 				[_wait , "scriptDone _hndlTLights"] call BIS_fnc_arrayPush;
 				};
 				if(_doHouse)then{
-				_hndlHLights = [_rngPlyr,_x,_rndLightsOut,_lmpCol,_lpRange] spawn axeHouseLights;
+				_hndlHLights = [_hsRange,_x,_rndLightsOut,_lmpCol,_lpRange] spawn axeHouseLights;
 				_waitCount=_waitCount+1;
 				[_wait , "scriptDone _hndlHLights"] call BIS_fnc_arrayPush;
 				};
