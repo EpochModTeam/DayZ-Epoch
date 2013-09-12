@@ -12,7 +12,7 @@ _this addeventhandler ["Killed",{ _this call vehicle_handleKilled } ];
 if (isServer) then {
 	_this removeAllEventHandlers "GetOut";
 	_this removeAllEventHandlers "GetIn";
-	_this addEventHandler ["GetOut", {_this call server_antiWall;[(_this select 0),"all"] call server_updateObject;}];
+	_this addEventHandler ["GetOut", {[(_this select 0),"all"] call server_updateObject;}];
 	_this addEventHandler ["GetIn", {[(_this select 0),"all"] call server_updateObject;}];
 };
 

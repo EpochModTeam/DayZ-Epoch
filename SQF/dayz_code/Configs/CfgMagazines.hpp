@@ -566,6 +566,17 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
+				text = "Smelt 10oz bar";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1}};
+				input[] = {{"ItemGoldBar",10}};
+				
+			};
+			/*
+			class Crafting
+			{
 				text = "Add 1oz Bar";
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
@@ -584,6 +595,7 @@ class CfgMagazines {
 				input[] = {{"ItemGoldBar",10}};
 				
 			};
+			*/
 		};
 	};
 	/*
