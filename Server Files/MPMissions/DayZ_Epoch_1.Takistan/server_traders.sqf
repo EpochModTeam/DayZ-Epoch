@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 1
-serverTraders = ["Functionary1","RU_Profiteer3","Profiteer1","RU_Sportswoman5","TK_CIV_Takistani05_EP1","Dr_Annie_Baker_EP1","Woodlander2","TK_CIV_Takistani03_EP1","TK_CIV_Takistani06_EP1","TK_CIV_Takistani04_EP1","TK_CIV_Woman03_EP1","TK_CIV_Woman02_EP1","RU_Profiteer2","TK_CIV_Takistani02_EP1","RU_Damsel4","RU_Woodlander3","RU_Citizen4","RU_Pilot","TK_GUE_Soldier_Sniper_EP1"];
+serverTraders = ["Functionary1","RU_Profiteer3","Profiteer1","RU_Sportswoman5","TK_CIV_Takistani05_EP1","Dr_Annie_Baker_EP1","Woodlander2","TK_CIV_Takistani03_EP1","TK_CIV_Takistani06_EP1","TK_CIV_Takistani04_EP1","TK_CIV_Woman03_EP1","TK_CIV_Woman02_EP1","RU_Profiteer2","TK_CIV_Takistani02_EP1","RU_Damsel4","RU_Woodlander3","RU_Citizen4","RU_Pilot","TK_GUE_Soldier_Sniper_EP1","Soldier_MG_PKM_PMC"];
 // Hero Traders
 menu_Functionary1 = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
@@ -76,6 +76,12 @@ menu_TK_CIV_Woman02_EP1 = [
 // Auto Trader - Garm
 menu_RU_Profiteer2 = [
 	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Compact Cars",560],["Economy Cars",523],["Fuel Trucks",589],["Luxury Cars",521],["Microcars",522],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
+	[],
+	"neutral"
+];
+// Black Market Vendor - South Airport
+menu_Soldier_MG_PKM_PMC = [
+	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];

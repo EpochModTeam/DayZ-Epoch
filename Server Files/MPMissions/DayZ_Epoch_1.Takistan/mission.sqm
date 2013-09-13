@@ -14,13 +14,13 @@ class Mission
 		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
-		"warfarebuildings",
-		"ind_tank",
-		"camisc_e",
 		"glt_m300t",
 		"sigisolda",
 		"suv_col",
-		"csj_gyroac"
+		"csj_gyroac",
+		"map_eu",
+		"jetskiyanahuiaddon",
+		"warfarebuildings"
 	};
 	addOnsAuto[]=
 	{
@@ -1248,7 +1248,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=20;
+		items=21;
 		class Item0
 		{
 			position[]={6622.5166,301.31479,6751.1309};
@@ -1382,6 +1382,14 @@ class Mission
 			text="Bandit Trader";
 			type="mil_dot";
 			colorName="ColorRed";
+		};
+		class Item20
+		{
+			position[]={8039.3813,300.80963,2009.7328};
+			name="BlackMarketVendor";
+			text="Black Market Trader";
+			type="mil_dot";
+			colorName="ColorBlack";
 		};
 	};
 	class Sensors
