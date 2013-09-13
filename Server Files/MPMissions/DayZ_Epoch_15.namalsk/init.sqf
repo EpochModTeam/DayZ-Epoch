@@ -24,10 +24,6 @@ spawnArea= 1500; // Default = 1500
 MaxVehicleLimit = 300; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 8000; // Default = 10000
-dayz_maxLocalZombies = 80; // Default = 40
-
-dayz_maxGlobalZombies = 60; // Default = 30
-dayz_maxZeds = 1000; // Default = 500
 
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"]];
 dayz_fullMoonNights = true;
