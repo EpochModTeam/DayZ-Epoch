@@ -394,13 +394,13 @@ dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
 
 if(isNil "dayz_maxLocalZombies") then {
-	dayz_maxLocalZombies = 30;
+	dayz_maxLocalZombies = 15;
 };
 if(isNil "dayz_maxGlobalZombiesInit") then {
-	dayz_maxGlobalZombiesInit = 30;
+	dayz_maxGlobalZombiesInit = 15;
 };
 if(isNil "dayz_maxGlobalZombiesIncrease") then {
-	dayz_maxGlobalZombiesIncrease = 10;
+	dayz_maxGlobalZombiesIncrease = 5;
 };
 if(isNil "dayz_maxZeds") then {
 	dayz_maxZeds = 500;
