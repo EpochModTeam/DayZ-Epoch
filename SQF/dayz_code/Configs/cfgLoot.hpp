@@ -575,4 +575,38 @@ class CfgLoot {
 			0.33,
 		}
 	};
+	backpacks[] = {
+		{
+			"DZ_Assault_Pack_EP1", // 1-12
+			"DZ_Czech_Vest_Puch", // 1-12
+			"DZ_TerminalPack_EP1", // 1-15
+			"DZ_ALICE_Pack_EP1", // 2-20
+			"DZ_TK_Assault_Pack_EP1", // 2-22
+			"DZ_CompactPack_EP1", // 2-25
+		},
+		{
+			0.22,
+			0.20,
+			0.18,
+			0.16,
+			0.13,
+			0.11,
+		}
+	};
+	militarybackpacks[] = {
+		{
+			"DZ_British_ACU", // 3-30
+			"DZ_GunBag_EP1",  // 3-35
+			"DZ_CivilBackpack_EP1", //4-40
+			"DZ_Backpack_EP1",  //5-50
+			"DZ_LargeGunBag_EP1" // 6-60 
+		},
+		{
+			0.30,
+			0.25,
+			0.20,
+			0.15,
+			0.10,
+		}
+	};
 };

@@ -534,11 +534,7 @@ class CfgBuildingLoot {
 			{ "","generic" },
 			{ "LeeEnfield","weapon" },
 			{ "revolver_EP1","weapon" },
-			{"DZ_Assault_Pack_EP1","object"}, // 12
-			{"DZ_Czech_Vest_Puch","object"}, // 12-0
-			{"DZ_ALICE_Pack_EP1","object"}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
-			{"DZ_British_ACU","object"}, // 18
+			{ "backpacks","backpack" },
 			{ "Winchester1866","weapon" },
 			{ "tents","single" },
 			{ "","military" },
@@ -564,14 +560,10 @@ class CfgBuildingLoot {
 			0.01,
 			0.04,
 			0.01,
-			0.32,
+			0.36,
 			0.03,
 			0.02,
-			0.02,
-			0.02,
-			0.02,
-			0.01,
-			0.01,
+			0.04,
 			0.01,
 			0.01,
 			0.02,
@@ -607,11 +599,7 @@ class CfgBuildingLoot {
 			{ "","generic" },
 			{ "LeeEnfield","weapon" },
 			{ "revolver_EP1","weapon" },
-			{"DZ_Assault_Pack_EP1","object"}, // 12
-			{"DZ_Czech_Vest_Puch","object"}, // 12-0
-			{"DZ_ALICE_Pack_EP1","object"}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
-			{"DZ_British_ACU","object"}, // 18
+			{ "backpacks","backpack" },
 			{ "Winchester1866","weapon" },
 			{ "tents","single" },
 			{ "","military" },
@@ -640,15 +628,11 @@ class CfgBuildingLoot {
 			0.31,
 			0.03,
 			0.02,
-			0.02,
-			0.02,
-			0.02,
-			0.01,
-			0.01,
+			0.04,
 			0.01,
 			0.01,
 			0.02,
-			0.14,
+			0.18,
 			0.01,
 			0.02,
 			0.02,
@@ -780,7 +764,6 @@ class CfgBuildingLoot {
 			{ "ItemFishingPole","weapon" },
 			{ "ItemLightBulb","magazine"},
 			{ "ItemSledgeHandle","magazine"}
-			
 	};
 		itemChance[] =	{
 			0.05,
@@ -821,20 +804,14 @@ class CfgBuildingLoot {
 			{ "","generic" },
 			{ "LeeEnfield","weapon" },
 			{ "revolver_EP1","weapon" },
-			{"DZ_Assault_Pack_EP1","object"}, // 12
-			{"DZ_Czech_Vest_Puch","object"}, // 12-0
-			{"DZ_ALICE_Pack_EP1","object"}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
-			{"DZ_British_ACU","object"}, // 18
-			{"DZ_CompactPack_EP1","object"}, //
-			{"DZ_TerminalPack_EP1","object"}, //
+			{ "backpacks","backpack" },
 			{ "Winchester1866","weapon" },
 			{ "tents","single" },
 			{ "","food" },
 			{ "","trash" },
 			{"Crossbow_DZ","weapon"},
 			{ "Binocular","weapon" },
-			{ "PartWoodPile","magazine" },
+			{ "PartPlywoodPack","magazine" },
 			{"MR43","weapon"}
 	};
 		itemChance[] =	{
@@ -852,17 +829,11 @@ class CfgBuildingLoot {
 			0.04,
 			0.01,
 			0.01,
-			0.04,
-			0.03,
-			0.02,
-			0.02,
-			0.01,
-			0.01,
-			0.01,
+			0.07,
 			0.01,
 			0.01,
 			0.30,
-			0.13,
+			0.20,
 			0.01,
 			0.05,
 			0.02,
@@ -1027,15 +998,7 @@ class HeliCrash_No50s: Default {
 			{ "ItemKnife","military" },
 			{ "ItemGPS","weapon" },
 			{ "ItemMap","military" },
-			
-			{"DZ_ALICE_Pack_EP1","object"}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
-			{"DZ_British_ACU","object"}, // 18
-			{"DZ_CivilBackpack_EP1","object"}, // 24
-			{"DZ_Backpack_EP1","object"}, // 24
-			{"DZ_GunBag_EP1","object"}, // 8-6
-			
-			//Normal
+			{ "militarybackpacks","backpack" },
 			{ "","medical" },
 			{ "","generic" },
 			{ "","military" },
@@ -1073,19 +1036,14 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			0.02,
-			0.04,
-			0.04,
+			0.05,
 			0.03,
-			0.02,
+			0.1,
+			0.35,
 			0.01,
 			0.01,
 			0.02,
-			0.07,
-			0.3,
-			0.01,
-			0.01,
 			0.02,
-			0.01,
 			0.01,
 			0.02,
 			0.01
@@ -1123,15 +1081,7 @@ class HeliCrash_No50s: Default {
 			{ "ItemKnife","military" },
 			{ "ItemGPS","weapon" },
 			{ "PartVRotor","magazine" },
-			
-			{"DZ_ALICE_Pack_EP1","object"}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
-			{"DZ_British_ACU","object"}, // 18
-			{"DZ_CivilBackpack_EP1","object"}, // 24
-			{"DZ_Backpack_EP1","object"}, // 24
-			{"DZ_GunBag_EP1","object"}, // 8-6
-			
-			//Normal
+			{ "militarybackpacks","backpack" },
 			{ "","medical" },
 			{ "","generic" },
 			{ "","military" },
@@ -1171,26 +1121,20 @@ class HeliCrash_No50s: Default {
 			0.04,
 			0.01,
 			0.01,
-			0.02,
-			0.04,
-			0.04,
 			0.03,
-			0.01,
-			0.01,
-			0.01,
-			0.02,
-			0.01,
+			0.05,
+			0.03,
+			0.06,
 			0.35,
 			0.01,
 			0.01,
 			0.02,
-			0.01,
+			0.03,
 			0.01,
 			0.01,
 			0.01,
 			0.01,
 			0.01
-
 		};
 	};
 	class MilitarySpecial: Default {
@@ -1227,29 +1171,18 @@ class HeliCrash_No50s: Default {
 			{ "M4A1_HWS_GL_camo","weapon" },
 			{ "Mk_48_DZ","weapon" },
 			{ "M4A3_CCO_EP1","weapon" },
-			//Ammo
 			{ "AmmoBoxSmall_556","object" },
 			{ "AmmoBoxSmall_762","object" },
-
-			//{"NVGoggles","weapon"},
 			{ "Binocular","weapon" },
 			{ "ItemFlashlightRed","military" },
 			{ "ItemKnife","military" },
 			{ "ItemGPS","weapon" },
 			{ "ItemMap","military" },
 			{ "Binocular_Vector","military" },
-
-			{"DZ_ALICE_Pack_EP1","object"}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
-			{"DZ_British_ACU","object"}, // 18
-			{"DZ_CivilBackpack_EP1","object"}, // 24
-			{"DZ_Backpack_EP1","object"}, // 30		
-			{"DZ_LargeGunBag_EP1","object"}, // 45
-
+			{ "militarybackpacks","backpack" },
 			{ "","medical" },
 			{ "","generic" },
 			{ "","military" },
-			//{"Body","object"},
 			{"PipeBomb","magazine"},
 			{"Sa58V_RCO_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
@@ -1257,11 +1190,19 @@ class HeliCrash_No50s: Default {
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
 			{ "militaryclothes","single" },
+			{"NVGoggles","weapon"},
 		};
 		itemChance[] =	{
 			0.01,
 			0.01,
 			0.01,
+			0.02,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
 			0.01,
 			0.01,
 			0.02,
@@ -1286,15 +1227,11 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			0.01,
-			0.02,
-			0.02,
-			0.02,
-			0.01,
-			0.01,
-			0.01,
+			0.05,
 			0.03,
 			0.08,
-			0.31,
+			0.34,
+			0.01,
 			0.01,
 			0.01,
 			0.01,

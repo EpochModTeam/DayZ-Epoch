@@ -26,15 +26,26 @@ switch (_iClass) do
 	};
 	case "weapon":
 	{
-		//Item is a weapon, and spawns no mags
+		//do nothing for now
+		/*
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
+		*/
 	};
 	case "magazine":
 	{
 		//Item is one magazine
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addMagazineCargoGlobal [_iItem,1];
+	};
+	
+	case "weaponnomags":
+	{
+		//do nothing for now
+	};
+	case "backpack":
+	{
+		//do nothing for now
 	};
 	case "object":
 	{
