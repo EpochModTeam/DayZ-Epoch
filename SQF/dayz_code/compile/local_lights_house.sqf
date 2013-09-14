@@ -25,12 +25,12 @@ if(!isNil "_objHouse")then{
 				
 				_objLightPoint = nearestObject [_x, "#lightpoint"];
 					if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))>1)then{
-						if(player distance _x < _lpDist)then{
+						if((player distance _x) < _lpDist)then{
 						[_lmpCol,0.01,_lmpCol,[_pos select 0,_pos select 1,-3],_dir,[0,0,-1]] call axe_newLightPoint;
 						_x setVariable ["axeHLight", 1, false];
 						};
 					}else{
-						if(player distance _x < _lpDist)then{
+						if((player distance _x) < _lpDist)then{
 						[_lmpCol,0.01,_lmpCol,_objLightPoint] call axe_lightPoint;
 						_x setVariable ["axeHLight", 1, false];
 						}else{
