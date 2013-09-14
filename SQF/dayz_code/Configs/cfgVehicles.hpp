@@ -1632,6 +1632,19 @@ class CfgVehicles {
 		upgradeBuilding[] = {"CinderWall_DZ",{{"CinderBlocks",4},{"MortarBucket",1}}};
 		maintainBuilding[] = {{"MortarBucket",1}};
 		GhostPreview = "CinderWallHalf_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	class CinderWall_DZ: ModularItems
 	{
@@ -1647,6 +1660,19 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
 		GhostPreview = "CinderWall_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 
 	class CinderWallDoorway_DZ: ModularItems
@@ -1664,6 +1690,19 @@ class CfgVehicles {
 		maintainBuilding[] = {{"MortarBucket",1}};
 		upgradeBuilding[] = {"CinderWallDoor_DZ",{{"ItemPole",3},{"ItemTankTrap",3}}};
 		GhostPreview = "CinderWallDoorway_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};	
 	
 	class CinderWallSmallDoorway_DZ: ModularItems
@@ -1680,7 +1719,20 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
 		upgradeBuilding[] = {"CinderWallDoorSmall_DZ",{{"ItemPole",1},{"ItemTankTrap",1}}};
-		GhostPreview = "CinderWallSmallDoorway_Preview_DZ"; // todo change this
+		GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};	
 
 	class WoodFloor_DZ: ModularItems
@@ -1697,6 +1749,19 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",4}};
 		GhostPreview = "WoodFloor_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	class WoodFloorHalf_DZ: ModularItems
 	{
@@ -1713,6 +1778,19 @@ class CfgVehicles {
 		maintainBuilding[] = {{"PartWoodLumber",2}};
 		constructioncount = 2;
 		GhostPreview = "WoodFloorHalf_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	class WoodFloorQuarter_DZ: ModularItems
 	{
@@ -1729,6 +1807,19 @@ class CfgVehicles {
 		maintainBuilding[] = {{"PartWoodLumber",1}};
 		constructioncount = 1;
 		GhostPreview = "WoodFloorQuarter_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 
 	class WoodLargeWall_DZ: ModularItems
@@ -1746,6 +1837,18 @@ class CfgVehicles {
 		upgradeBuilding[] = {"WoodLargeWallWin_DZ",{{"PartGlass",1}}};
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 		GhostPreview = "WoodLargeWall_Preview_DZ"; 
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	
 	class WoodLargeWallDoor_DZ: ModularItems
@@ -1762,7 +1865,19 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 		upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
-		GhostPreview = "WoodLargeWallDoor_Preview_DZ"; 
+		GhostPreview = "WoodLargeWallDoor_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	class WoodLargeWallWin_DZ: ModularItems
 	{
@@ -1778,6 +1893,18 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 		GhostPreview = "WoodLargeWallWin_Preview_DZ"; 
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	
 	class WoodSmallWall_DZ: ModularItems
@@ -1795,6 +1922,18 @@ class CfgVehicles {
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 		upgradeBuilding[] = {"WoodSmallWallWin_DZ",{{"PartGlass",1}}};
 		GhostPreview = "WoodSmallWall_Preview_DZ"; 
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	class WoodSmallWallThird_DZ: ModularItems
 	{
@@ -1810,7 +1949,19 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
 		constructioncount = 1;
-		GhostPreview = "WoodSmallWallThird_Preview_DZ"; 
+		GhostPreview = "WoodSmallWallThird_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 
 	class WoodSmallWallWin_DZ: ModularItems
@@ -1826,7 +1977,19 @@ class CfgVehicles {
 		displayName = "Small Wall Window";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-		GhostPreview = "WoodSmallWallWin_Preview_DZ"; 
+		GhostPreview = "WoodSmallWallWin_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	class WoodSmallWallDoor_DZ: ModularItems
 	{
@@ -1843,6 +2006,19 @@ class CfgVehicles {
 		upgradeBuilding[] = {"Land_DZE_WoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 		GhostPreview = "WoodSmallWallDoor_Preview_DZ"; 
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d"; /* path to the object*/
+				/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 	class WoodStairs_DZ: ModularItems
 	{
@@ -1904,7 +2080,7 @@ class CfgVehicles {
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 1000;
-		displayName = "Block Garage Doorway";
+		displayName = "Block Doorway";
 		vehicleClass = "Fortifications";
 	};
 	class CinderWallDoorway_Preview_DZ: NonStrategic

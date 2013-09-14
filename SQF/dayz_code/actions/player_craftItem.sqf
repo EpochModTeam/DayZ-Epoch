@@ -49,7 +49,7 @@ if("fire" in _needNear) then {
 	};
 };
 if("workshop" in _needNear) then {
-	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]); // Needs changed to your workbench class
+	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 	if(_isNear == 0) then {  
 		_abort = true;
 		_reason = "workshop";
@@ -182,6 +182,8 @@ if (_canDo) then {
 	
 							// Add crafted item
 							cutText [format["\n\nCrafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+							// sleep here 
+							sleep 1;
 	
 							} forEach _selectedRecipeOutput;
 						};

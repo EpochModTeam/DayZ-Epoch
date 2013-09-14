@@ -87,7 +87,7 @@ class Land_DZE_WoodDoor_Base: DZE_Housebase {
 		class Ruin1
 		{
 		simulation = "ruin";
-		type = "CA\Structures\Ruins\rubble_wood_02"; /* path to the object*/
+		type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d"; /* path to the object*/
 			/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
 		position = "";
 		intensity = 1;
@@ -117,7 +117,7 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 		class Ruin1
 		{
 		simulation = "ruin";
-		type = "CA\Structures\Ruins\rubble_wood_02"; /* path to the object*/
+		type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d"; /* path to the object*/
 			/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
 		position = "";
 		intensity = 1;
@@ -141,6 +141,19 @@ class CinderWallDoor_DZ_Base: DZE_Housebase {
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	maintainBuilding[] = {{"MortarBucket",1}};
+	class DestructionEffects : DestructionEffects
+	{
+		class Ruin1
+		{
+		simulation = "ruin";
+		type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d"; /* path to the object*/
+			/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+		position = "";
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		};
+	};
 };
 
 class CinderWallDoorLocked_DZ_Base: DZE_Housebase {
@@ -156,14 +169,58 @@ class CinderWallDoorLocked_DZ_Base: DZE_Housebase {
 	offset[] = {0,1.5,0};
 	maintainBuilding[] = {{"MortarBucket",1}};
 	lockable = 3;
+	class DestructionEffects : DestructionEffects
+	{
+		class Ruin1
+		{
+		simulation = "ruin";
+		type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d"; /* path to the object*/
+			/* Warning, if you use a custom rubble model, it has to be defined in the cfgvehicles (see below)*/
+		position = "";
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		};
+	};
 };
 
 /*  Same name as stated in the Class DestructionEffects, but an "Land_" added infront*/
-class Land_rubble_wood_02 : ruins	{
+class Land_wood_wreck_frame : ruins	{
 	scope = 1;
-	model = "CA\Structures\Ruins\rubble_wood_02.p3d";
+	model = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
 	displayName = "Wood Wall ruins";
 };
+class Land_wood_wreck_third : ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+	displayName = "Wood Wall 1/3 ruins";
+};
+
+class Land_wood_wreck_half : ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d";
+	displayName = "Wood Floor 1/2 ruins";
+};
+
+class Land_wood_wreck_floor : ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
+	displayName = "Wood Floor ruins";
+};
+
+class Land_wood_wreck_quarter : ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d";
+	displayName = "Wood Floor 1/4 ruins";
+};
+
+class Land_wreck_cinder: ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
+	displayName = "Cinder wall ruins";
+};
+
+
 
 /* Your doorsegment is derivated from the normal wall.*/
 class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
