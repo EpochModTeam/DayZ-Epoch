@@ -3,7 +3,7 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
 */
 axe_returnStreetLights={
-private["_lights","_objName","_rng","_nrstGen","_rndLights"];
+private["_lights","_objName","_rng","_nrstGen","_rndLights","_sleeptime"];
 _rng = _this select 0;
 _nrstGen = _this select 1;
 _rndLights = _this select 2;
@@ -19,7 +19,17 @@ axe_streetLamps=[];
 
 				if (_objName in _lights) then {
 					if(_rndLights<random 100)then{
-					_x switchlight "off";
+					
+						for "_s" from 1 to 6 do {
+							if(_s%2==0)then{
+							_x switchlight "off";
+							}else{
+							_x switchlight "on";
+							};
+						_sleeptime=(random 100)/100;
+						sleep _sleeptime;
+						};
+						_x switchlight "off";
 					}else{
 					_x switchlight "on";
 					};
