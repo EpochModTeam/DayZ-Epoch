@@ -105,6 +105,6 @@ if (!isDedicated) then {
 	_void = [] execVM "R3F_Realism\R3F_Realism_Init.sqf";
 	
 	//Lights
-	[17,6,true,false,true,true,64,250,600,10,[0.698, 0.556, 0.419],"Generator_DZ",250,"",6] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	[17,6,true,false,true,true,72,180,600,10,[0.698, 0.556, 0.419],"Generator_DZ",280,"",0.5] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 };
 #include "\z\addons\dayz_code\system\REsec.sqf"
