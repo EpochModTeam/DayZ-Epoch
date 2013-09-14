@@ -27,7 +27,7 @@ _objHouses = nearestObjects [_nrstTrig, ["House"], _hsRange];
 				_objHouse animate ["Lights_1",0];
 				_objHouse animate ["Lights_2",0];
 				}else{
-				if(_hasLight)then{_animlightpoint setLightBrightness 0.01;};
+				if(_hasLight)then{_animlightpoint setLightBrightness 0.04;};
 				_objHouse animate ["Lights_1",1];
 				};
 			_sleeptime=(random 100)/100;
@@ -76,11 +76,3 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 		}forEach _nrTowers;
 	};
 };
-/*
-{
-
-if(_cntNrGen>0)then{//reset house if gen nearby to help create reliability regardless of gen requirement ?
-	_x setVariable ["axeHLight", 0, false];
-	};
-}forEach _objHouses;
-*/

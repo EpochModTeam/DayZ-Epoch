@@ -19,17 +19,21 @@ axe_streetLamps=[];
 
 				if (_objName in _lights) then {
 					if(_rndLights<random 100)then{
-					
-						for "_s" from 1 to 6 do {
-							if(_s%2==0)then{
-							_x switchlight "off";
-							}else{
-							_x switchlight "on";
+						if(_rndLights/3>random 100)then{//Reduce chance more due to speed of script
+						
+							for "_s" from 1 to 8 do {
+								if(_s%2==0)then{
+								_x switchlight "off";
+								}else{
+								_x switchlight "on";
+								};
+							_sleeptime=(random 220)/100;
+							sleep _sleeptime;
 							};
-						_sleeptime=(random 100)/100;
-						sleep _sleeptime;
+							_x switchlight "off";
+						}else{
+						_x switchlight "on";
 						};
-						_x switchlight "off";
 					}else{
 					_x switchlight "on";
 					};
@@ -76,16 +80,19 @@ _doLit = _this select 4 select 0;
 _twrPos =  getPos _twr;
 _rad=2.65;
 _oset=14;
-_nrTLs= position _twr nearObjects ["#lightpoint",30];
+_nrTLs= position _twr nearObjects ["#lightpoint",20];
+
 	if(count _nrTLs > 3)then{
-	{	
-		if(_doLit)then{
-		[_lCol,_lbrt,_lamb,_x] call axe_lightPoint;
-		}else{
-		deleteVehicle _x;
-		};
-	sleep .2;
-	}forEach _nrTLs;
+	
+		{
+			if(_doLit)then{
+			[_lCol,_lbrt,_lamb,_x] call axe_lightPoint;
+			}else{
+			deleteVehicle _x;
+			};
+		sleep .2;
+		}forEach _nrTLs;
+		
 	}else{
 		if(_doLit)then{
 			for "_tls" from 1 to 4 do {
