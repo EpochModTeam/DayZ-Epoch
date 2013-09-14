@@ -2,11 +2,10 @@
 	DayZ Epoch Lighting System - Fail / Switch Off Lights
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
 */
-private ["_hsRange","_rng","_pos","_hsCount","_nrstTrig","_objHouses","_objHouse","_nrLights","_nrTowers","_doRand","_rnd","_animlightpoint","_hasLight","_sleeptime","_lightstate","_cntNrGen"];
+private ["_hsRange","_rng","_pos","_hsCount","_nrstTrig","_objHouses","_objHouse","_nrTowers","_doRand","_rnd","_animlightpoint","_hasLight","_sleeptime","_lightstate","_objLightPoint"];
 _rng = _this select 0;//Full distance to turn off all lights if required
 _nrstTrig = _this select 1;
 _doRand = _this select 2;//Random if gen not required otherwise just switch thenm off,,
-_cntNrGen = _this select 3;
 _hsRange = _this select 4;//House range for randomly failing nearby (within lp distance)houses)
 _hasLight = false;
 
@@ -26,6 +25,7 @@ _objHouses = nearestObjects [_nrstTrig, ["House"], _hsRange];
 				if(_s%2==0)then{
 				if(_hasLight)then{_animlightpoint setLightBrightness 0;};
 				_objHouse animate ["Lights_1",0];
+				_objHouse animate ["Lights_2",0];
 				}else{
 				if(_hasLight)then{_animlightpoint setLightBrightness 0.01;};
 				_objHouse animate ["Lights_1",1];
@@ -40,14 +40,20 @@ _objHouses = nearestObjects [_nrstTrig, ["House"], _hsRange];
 		};
 	};
 }else{//Switch them all off
-_nrLights = position _nrstTrig nearObjects ["#lightpoint",_rng];
+
+_objHouses = nearestObjects [_nrstTrig, ["House"], _rng]; 
 _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
-	if(count _nrLights >0)then{
+	
+	if(count _objHouses >0)then{
 		{
-		deleteVehicle _x;
-		}forEach _nrLights;
+		_pos = getPos _x;
+		_objLightPoint = nearestObject [_x, "#lightpoint"];
+			if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<1.5)then{
+			deleteVehicle _objLightPoint;
+			};
+		}forEach _objHouses;
 	};
-	_objHouses = nearestObjects [_nrstTrig, ["House"], _rng]; 
+	
 	if(count _objHouses >0)then{
 		{
 		_x animate ["Lights_1",0];
@@ -58,6 +64,14 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 	
 	if(count _nrTowers >0)then{
 		{
+		_pos = getPos _x;
+			for "_s" from 1 to 4 do {
+			_objLightPoint = nearestObject [_x, "#lightpoint"];
+				if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<25)then{
+				deleteVehicle _objLightPoint;
+				};
+			};
+
 		_x setVariable ["axeTLight", 0, false];
 		}forEach _nrTowers;
 	};
