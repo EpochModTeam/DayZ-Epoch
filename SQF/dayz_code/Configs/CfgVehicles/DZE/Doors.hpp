@@ -189,35 +189,47 @@ class Land_wood_wreck_frame : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
 	displayName = "Wood Wall ruins";
+	removeoutput[] = {{"PartPlywoodPack",1},{"PartPlankPack",1}};
 };
 class Land_wood_wreck_third : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
 	displayName = "Wood Wall 1/3 ruins";
+	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 };
 
 class Land_wood_wreck_half : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d";
 	displayName = "Wood Floor 1/2 ruins";
+	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 };
 
 class Land_wood_wreck_floor : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
 	displayName = "Wood Floor ruins";
+	removeoutput[] = {{"PartPlywoodPack",1},{"PartPlankPack",1}};
 };
 
 class Land_wood_wreck_quarter : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d";
 	displayName = "Wood Floor 1/4 ruins";
+	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 };
 
 class Land_wreck_cinder: ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
 	displayName = "Cinder wall ruins";
+	removeoutput[] = {{"CinderBlocks",1}};
+};
+class Land_wreck_metal_floor: ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\wreck_metal_floor.p3d";
+	displayName = "Metal Floor ruins";
+	removeoutput[] = {{"ItemCorrugated",1},{"ItemPole",2},{"ItemTankTrap",1}};
 };
 
 

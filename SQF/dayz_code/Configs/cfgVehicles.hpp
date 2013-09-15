@@ -1616,6 +1616,32 @@ class CfgVehicles {
 		displayName = "Metal Floor";
 		vehicleClass = "Fortifications";
 		GhostPreview = "MetalFloor_Preview_DZ";
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wreck_metal_floor.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
+	};
+	class WoodRamp_DZ: ModularItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		offset[] = {0,4,0};
+		model="\z\addons\dayz_epoch\models\Wood_Ramp.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 500;
+		displayName = "Wood Ramp";
+		vehicleClass = "Fortifications";
+		// GhostPreview = "MetalFloor_Preview_DZ";
 	};
 	class CinderWallHalf_DZ: ModularItems
 	{

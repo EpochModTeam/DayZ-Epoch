@@ -26,7 +26,7 @@ closeDialog 1;
 
 if(_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
 if(_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
-if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["\n\nCannot build while in combat.", "PLAIN DOWN"];};
+if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Cannot build while in combat.", "PLAIN DOWN"];};
 
 _item =			_this;
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
@@ -64,7 +64,7 @@ _findNearestPole = [];
 _IsNearPlot = count (_findNearestPole);
 
 // If item is plot pole and another one exists within 45m
-if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["\n\nCannot build plot pole within 45m of an existing plot." , "PLAIN DOWN"]; };
+if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["Cannot build plot pole within 45m of an existing plot." , "PLAIN DOWN"]; };
 
 if(_IsNearPlot == 0) then {
 	_canBuildOnPlot = true;
@@ -91,7 +91,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // _message
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["\n\nUnable to build %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Unable to build %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -103,7 +103,7 @@ _hasrequireditem = true;
 _hasbuilditem = _this in magazines player;
 if (!_hasbuilditem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]; };
 
-if (!_hasrequireditem) exitWith {TradeInprogress = false; cutText [format["\n\nMissing tool %1",_missing] , "PLAIN DOWN"]; };
+if (!_hasrequireditem) exitWith {TradeInprogress = false; cutText [format["Missing tool %1",_missing] , "PLAIN DOWN"]; };
 if (_hasrequireditem) then {
 
 	_location = [0,0,0];
@@ -178,7 +178,7 @@ if (_hasrequireditem) then {
 			_object attachTo [player];
 		};
 
-		cutText ["\n\nPlanning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to start building.", "PLAIN DOWN"];
+		cutText ["Planning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to build.", "PLAIN DOWN"];
 		
 		sleep 1;
 
@@ -253,7 +253,7 @@ if (_hasrequireditem) then {
 
 	if(!_cancel) then {
 
-		cutText [format["\n\nPlacing %1, move to cancel.",_text], "PLAIN DOWN"];
+		cutText [format["Placing %1, move to cancel.",_text], "PLAIN DOWN"];
 		
 		_limit = 3;
 
@@ -310,7 +310,7 @@ if (_hasrequireditem) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format["\n\nConstructing %1 stage %2 of %3, move to cancel.",_text, _counter,_limit], "PLAIN DOWN"];
+			cutText [format["Constructing %1 stage %2 of %3, move to cancel.",_text, _counter,_limit], "PLAIN DOWN"];
 
 			if(_counter == _limit) exitWith {
 				_isOk = false;
@@ -376,7 +376,7 @@ if (_hasrequireditem) then {
 					dayzPublishObj = [_combination,_tmpbuilt,[_dir,_location],_classname];
 					publicVariableServer "dayzPublishObj";
 
-					cutText [format["\n\nYou have setup your %2. Combination is %1",_combinationDisplay,_text], "PLAIN DOWN", 5];
+					cutText [format["You have setup your %2. Combination is %1",_combinationDisplay,_text], "PLAIN DOWN", 5];
 					
 
 				} else {
@@ -389,7 +389,7 @@ if (_hasrequireditem) then {
 
 			} else {
 				deleteVehicle _tmpbuilt;
-				cutText ["\n\nCanceled building." , "PLAIN DOWN"];
+				cutText ["Canceled building." , "PLAIN DOWN"];
 			};
 
 		} else {
@@ -401,12 +401,12 @@ if (_hasrequireditem) then {
 
 			deleteVehicle _tmpbuilt;
 
-			cutText ["\n\nCanceled building." , "PLAIN DOWN"];
+			cutText ["Canceled building." , "PLAIN DOWN"];
 		};
 
 	} else {
 		deleteVehicle _tmpbuilt;
-		cutText [format["\n\nCanceled construction of %1 %2.",_text,_reason], "PLAIN DOWN"];
+		cutText [format["Canceled construction of %1 %2.",_text,_reason], "PLAIN DOWN"];
 	};
 };
 

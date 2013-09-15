@@ -1,8 +1,8 @@
-ambient[]={0.67843139,0.67843139,0.67843139,0.76999998};
-diffuse[]={0.67843139,0.67843139,0.67843139,0.76899999};
+ambient[]={0.67843139,0.67843139,0.67843139,0.15000001};
+diffuse[]={0.67843139,0.67843139,0.67843139,0.15000001};
 forcedDiffuse[]={0,0,0,1};
 emmisive[]={0,0,0,1};
-specular[]={0.74509805,0.74509805,0.74509805,0.77999997};
+specular[]={0.29019609,0.29019609,0.29019609,0.77999997};
 specularPower=100;
 PixelShaderID="Super";
 VertexShaderID="Super";
@@ -77,4 +77,9 @@ class Stage6
 		dir[]={0,0,1};
 		pos[]={0,0,0};
 	};
+};
+class Stage7
+{
+	texture="CA\data\env_land_co.paa";
+	uvSource="none";
 };

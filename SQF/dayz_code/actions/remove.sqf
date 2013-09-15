@@ -28,6 +28,7 @@ _objType = typeOf _obj;
 _isDestructable = _obj isKindOf "BuiltItems";
 _isWreck = _objType in DZE_isWreck;
 _isRemovable = _objType in DZE_isRemovable;
+_isWreckBuilding = _objType in DZE_isWreckBuilding;
 
 _limit = 3;
 if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
@@ -167,11 +168,19 @@ if (_proceed) then {
 			_refundpart = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"] call BIS_fnc_selectRandom;
 			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
 		} else {
-			_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
-			_preventRefund = (_objectID == "0" && _objectUID == "0");
+			if(_isWreckBuilding) then {
+				_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+			} else {
+				_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+				_preventRefund = (_objectID == "0" && _objectUID == "0");
 			
+			};
 		};
 		
+		if((count _selectedRemoveOutput) <= 0) then {
+			cutText ["No parts found.", "PLAIN DOWN"];
+		};
+
 		// give refund items
 		if((count _selectedRemoveOutput) > 0 and !_preventRefund) then {
 			// Put itemsg
