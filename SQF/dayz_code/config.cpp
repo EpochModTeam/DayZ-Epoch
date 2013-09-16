@@ -1997,15 +1997,17 @@ class HeliCrash_No50s: Default {
 			{ "bulk_PartGeneric","magazine" },
 			{ "bulk_ItemSandbag","magazine"},
 			{ "bulk_ItemTankTrap","magazine"},
+			{ "ItemSledge","weapon" },
 		};
 		itemChance[] =	{
-			0.20,
 			0.15,
-			0.10,
-			0.10,
-			0.20,
-			0.10,
-			0.15,
+			0.2,
+			0.1,
+			0.1,
+			0.2,
+			0.1,
+			0.1,
+			0.05
 		};
 	};
 	class MassGrave: Default {
