@@ -10,6 +10,8 @@ _isbuildable = (typeOf _object) in dayz_allowedObjects;
 _isNotOk = false;
 _firstTime = false;
 
+if(isNull(_object)) exitWith { };
+
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
 
