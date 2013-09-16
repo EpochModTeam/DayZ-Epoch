@@ -2,13 +2,12 @@
 	DayZ Epoch Lighting System - House Lights
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
 */
-private ["_objLightPoint","_pos","_objHouse","_dir","_rng","_lpDist","_nrstTrig","_rndLights","_lmpCol","_failRnd"];
+private ["_objLightPoint","_pos","_objHouse","_dir","_rng","_lpDist","_nrstTrig","_rndLights","_lmpCol"];
 _rng = _this select 0;//player range to light windows
 _nrstTrig = _this select 1;
 _rndLights = _this select 2;
 _lmpCol = _this select 3;
 _lpDist =  _this select 4;//Range to create lightpoints at
-_failRnd = _this select 5;//use trigger distance value as random for failure. This controls the long term failure of lights
 _objHouse = nearestObjects [_nrstTrig, ["House"], _rng]; 
 if(!isNil "_objHouse")then{
 	{
@@ -40,16 +39,6 @@ if(!isNil "_objHouse")then{
 						};
 					};
 				};
-			};
-		}else{
-			if(2>random _failRnd)then{//Low chance that house is failed permanently. Until next generator restart - Generator is being overworked.
-			_objLightPoint = nearestObject [_x, "#lightpoint"];
-				if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<1.2)then{
-				deleteVehicle _objLightPoint;
-				};
-			_x animate ["Lights_1",0];
-			_x animate ["Lights_2",0];
-			_x setVariable ["axeHLight", 2, true];//2 = off
 			};
 		};
 	} forEach _objHouse;
