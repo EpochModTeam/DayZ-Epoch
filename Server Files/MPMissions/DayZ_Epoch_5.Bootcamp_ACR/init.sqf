@@ -26,7 +26,7 @@ MaxDynamicDebris = 50; // Default = 100
 dayz_MapArea = 4000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
-EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"]];
+EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 
 //Load in compiled functions

@@ -1983,7 +1983,31 @@ class HeliCrash_No50s: Default {
 			0.03
 		};
 	};
-	
+	class SupplyDrop: Default {
+		zombieChance = 1;
+		maxRoaming = 3;
+		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3","z_doctor","z_soldier_pilot","z_soldier_heavy"};
+		lootChance = 1;
+		lootPos[] = {};
+		itemType[] = {
+			{ "PartPlywoodPack","magazine" },
+			{ "PartPlankPack","magazine" },
+			{ "CinderBlocks","magazine" },
+			{ "MortarBucket","magazine" },
+			{ "bulk_PartGeneric","magazine" },
+			{ "bulk_ItemSandbag","magazine"},
+			{ "bulk_ItemTankTrap","magazine"},
+		};
+		itemChance[] =	{
+			0.20,
+			0.15,
+			0.10,
+			0.10,
+			0.20,
+			0.10,
+			0.15,
+		};
+	};
 	class MassGrave: Default {
 		zombieChance = 1;
 		maxRoaming = 3;
