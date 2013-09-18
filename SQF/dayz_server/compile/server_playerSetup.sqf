@@ -1,23 +1,17 @@
 private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC"];
 
-#ifdef DZE_SERVER_DEBUG_PSETUP
 diag_log ("SETUP: attempted with " + str(_this));
-#endif
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _playerID = getPlayerUID _playerObj;
 
 if (isNull _playerObj) exitWith {
-#ifdef DZE_SERVER_DEBUG_PSETUP
 	diag_log ("SETUP INIT FAILED: Exiting, player object null: " + str(_playerObj));
-#endif
 };
 
 //Add MPHit event handler
-#ifdef DZE_SERVER_DEBUG_PSETUP
-diag_log("Adding MPHit EH for " + str(_playerObj));
-#endif
+// diag_log("Adding MPHit EH for " + str(_playerObj));
 _playerObj addMPEventHandler ["MPHit", {_this spawn fnc_plyrHit;}];
 
 if (_playerID == "") then {
@@ -25,17 +19,13 @@ if (_playerID == "") then {
 };
 
 if (_playerID == "") exitWith {
-#ifdef DZE_SERVER_DEBUG_PSETUP	
 	diag_log ("SETUP INIT FAILED: Exiting, no player ID: " + str(_playerObj));
-#endif
 };
 
 private["_dummy"];
 _dummy = getPlayerUID _playerObj;
 if ( _playerID != _dummy ) then { 
-#ifdef DZE_SERVER_DEBUG_PSETUP	
 	diag_log format["DEBUG: _playerID miscompare with UID! _playerID:%1",_playerID]; 
-#endif
 	_playerID = _dummy;
 };
 
@@ -58,15 +48,11 @@ while {_doLoop < 5} do {
 };
 
 if (isNull _playerObj or !isPlayer _playerObj) exitWith {
-#ifdef DZE_SERVER_DEBUG_PSETUP	
 	diag_log ("SETUP RESULT: Exiting, player object null: " + str(_playerObj));
-#endif
 };
 
 //Wait for HIVE to be free
-#ifdef DZE_SERVER_DEBUG_PSETUP
 diag_log ("SETUP: RESULT: Successful with " + str(_primary));
-#endif
 
 _medical =		_primary select 1;
 _stats =		_primary select 2;
@@ -109,9 +95,7 @@ if (count _worldspace > 0) then {
 	_randomSpot = true;
 };
 
-#ifdef DZE_SERVER_DEBUG_PSETUP
 diag_log ("LOGIN: Location: " + str(_worldspace) + " doRnd?: " + str(_randomSpot));
-#endif
 
 //set medical values
 if (count _medical > 0) then {
@@ -264,9 +248,7 @@ _clientID publicVariableClient "dayzPlayerLogin2";
 _playerObj setVariable ["lastTime",time];
 //_playerObj setVariable ["model_CHK",typeOf _playerObj];
 
-#ifdef DZE_SERVER_DEBUG_PSETUP
 diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
-#endif
 
 dayzLogin = null;
 dayzLogin2 = null;

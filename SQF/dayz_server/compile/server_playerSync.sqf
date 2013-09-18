@@ -6,41 +6,35 @@ _magazines =	_this select 1;
 _forceGear =	_this select 3;
 _force =	true;
 
+if (isNull _character) exitWith {
+	diag_log ("Player is Null FAILED: Exiting, player sync: " + str(_character));
+};
+
 _characterID =	_character getVariable ["CharacterID","0"];
 _charPos = 		getPosATL _character;
 _isInVehicle = 	vehicle _character != _character;
 _timeSince = 	0;
 _humanity =		0;
 
-#ifdef DZE_SERVER_DEBUG_SYNC
 diag_log ("DW_DEBUG: (isnil _characterID): " + str(isnil "_characterID"));
-#endif
 
 if (_character isKindOf "Animal") exitWith {
-#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " is an Animal class");
-#endif
 };
 
 if (isnil "_characterID") exitWith {
-#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " has nil characterID");	
-#endif
 };
 
 if (_characterID == "0") exitWith {
-#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " as no characterID");
-#endif
 };
 
 private["_debug","_distance"];
 _debug = getMarkerpos "respawn_west";
 _distance = _debug distance _charPos;
 if (_distance < 2000) exitWith { 
-	#ifdef DZE_SERVER_DEBUG_SYNC
 	diag_log format["ERROR: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3",name _character,_characterID,_charPos];
-	#endif
 };
 
 //Check for server initiated updates
@@ -178,7 +172,7 @@ if (_characterID != "0") then {
 				//Wait for HIVE to be free
 				//Send request
 				_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
-				//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
+				diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
 				_key call server_hiveWrite;
 			};
 		};
@@ -187,7 +181,7 @@ if (_characterID != "0") then {
 		if (vehicle _character != _character) then {
 			//[vehicle _character, "position"] call server_updateObject;
 			if (!(vehicle _character in needUpdate_objects)) then {
-				//diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
+				diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
 				needUpdate_objects set [count needUpdate_objects, vehicle _character];
 			};
 		};

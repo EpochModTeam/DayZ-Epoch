@@ -1,6 +1,6 @@
 private ["_isInfected","_doLoop","_hiveVer","_isHiveOk","_playerID","_playerObj","_primary","_key","_charID","_playerName","_backpack","_isNew","_inventory","_survival","_model","_mags","_wpns","_bcpk","_config","_newPlayer"];
 
-#ifdef DZE_SERVER_DEBUG_LOGIN
+#ifdef DZE_SERVER_DEBUG
 diag_log ("STARTING LOGIN: " + str(_this));
 #endif
 
@@ -11,7 +11,7 @@ _playerName = name _playerObj;
 if (_playerName == '__SERVER__' || _playerID == '' || local player) exitWith {};
 
 if (isNil "sm_done") exitWith { 
-#ifdef DZE_SERVER_DEBUG_LOGIN
+#ifdef DZE_SERVER_DEBUG
 	diag_log ("Login cancelled, server is not ready. " + str(_playerObj)); 
 #endif
 };
@@ -32,12 +32,12 @@ if (_playerID == "") then {
 };
 
 if ((_playerID == "") or (isNil "_playerID")) exitWith {
-#ifdef DZE_SERVER_DEBUG_LOGIN
+#ifdef DZE_SERVER_DEBUG
 	diag_log ("LOGIN FAILED: Player [" + _playerName + "] has no login ID");
 #endif
 };
 
-#ifdef DZE_SERVER_DEBUG_LOGIN
+#ifdef DZE_SERVER_DEBUG
 diag_log ("LOGIN ATTEMPT: " + str(_playerID) + " " + _playerName);
 #endif
 
@@ -61,7 +61,7 @@ if (isNull _playerObj or !isPlayer _playerObj) exitWith {
 };
 
 if ((_primary select 0) == "ERROR") exitWith {
-#ifdef DZE_SERVER_DEBUG_LOGIN
+#ifdef DZE_SERVER_DEBUG
     diag_log format ["LOGIN RESULT: Exiting, failed to load _primary: %1 for player: %2 ",_primary,_playerID];
 #endif
 };
@@ -71,7 +71,7 @@ _newPlayer = 	_primary select 1;
 _isNew = 		count _primary < 7; //_result select 1;
 _charID = 		_primary select 2;
 
-#ifdef DZE_SERVER_DEBUG_LOGIN
+#ifdef DZE_SERVER_DEBUG
 diag_log ("LOGIN RESULT: " + str(_primary));
 #endif
 
@@ -127,7 +127,7 @@ if (!_isNew) then {
 	};
 };
 
-#ifdef DZE_SERVER_DEBUG_LOGIN
+#ifdef DZE_SERVER_DEBUG
 diag_log ("LOGIN LOADED: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 #endif
 
@@ -137,6 +137,4 @@ if (_hiveVer >= dayz_hiveVersionNo) then {
 };
 
 dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];
-if(!isNull _playerObj) then {
-	(owner _playerObj) publicVariableClient "dayzPlayerLogin";
-};
+(owner _playerObj) publicVariableClient "dayzPlayerLogin";

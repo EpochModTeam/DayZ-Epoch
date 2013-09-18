@@ -18,19 +18,16 @@ if ((_timeout - time) > 0) then {
 
     _object setVariable["NORRN_unconscious",true, true];
     _object setVariable["unconsciousTime",300,true];
-	#ifdef DZE_SERVER_DEBUG
+	
     diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 	//diag_log format["SET UNCONCIOUSNESS: %1", _playerName];
-	#endif
-
+	
 	// Message whole server when player combat logs
 	_message = format["PLAYER COMBAT LOGGED: %1",_playerName];
 	[nil,nil,"per",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
 };
 
-#ifdef DZE_SERVER_DEBUG
 diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
-#endif
 
 _id = [_playerID,_characterID,2] spawn dayz_recordLogin;
 dayz_disco = dayz_disco - [_playerID];
