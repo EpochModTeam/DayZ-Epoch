@@ -63,7 +63,6 @@ while {true} do {
 			// perform cleanup here
 			if ((_time - zero_cleanDead) > 600) then {
 				call server_cleanDead;
-				call server_cleanFlies;
 				zero_cleanDead = _time;
 			};
 			if ((_time - zero_cleanLoot) > 1800) then {

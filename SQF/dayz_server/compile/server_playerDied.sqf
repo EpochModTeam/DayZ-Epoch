@@ -8,6 +8,11 @@ _playerName = 	_this select 4;
 _infected =		_this select 5;
 
 _victim removeAllEventHandlers "MPHit";
+_victim enableSimulation false;
+_victim removeAllEventHandlers "HandleDamage";
+_victim removeAllEventHandlers "Killed";
+_victim removeAllEventHandlers "Fired";
+_victim removeAllEventHandlers "FiredNear";
 
 _victim = _newObject;
 _victimName = _victim getVariable["bodyName", "nil"];
@@ -92,12 +97,6 @@ if (_characterID != "0") then
 	diag_log ("HIVE: WRITE: "+ str(_key));
 	#endif
 	_key call server_hiveWrite;
-
-	// spawn flies
-	_sound = createSoundSource["Sound_Flies",getPosATL _newObject,[],0];
-	
-	// Add flies to cleanup array
-	dayz_flyMonitor set[count dayz_flyMonitor, [_sound,_newObject]];
 } 
 else 
 {
