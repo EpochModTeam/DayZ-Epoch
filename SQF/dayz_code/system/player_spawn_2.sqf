@@ -32,6 +32,8 @@ while {true} do {
 	_size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
+	
+	_saveTime = (playersNumber west * 2) + 10;
 		
 	//reset position
 	_randomSpot = true;
@@ -230,17 +232,22 @@ while {true} do {
 	};
 
 	//Save Checker
-	if (dayz_unsaved or ((time - dayz_lastSave) > 300)) then {
-		dayzPlayerSave = [player,dayz_Magazines,false,false];
-		publicVariableServer "dayzPlayerSave";
+	if (dayz_unsaved) then {
+		if ((time - dayz_lastSave) > _saveTime) then {
+			dayzPlayerSave = [player,dayz_Magazines,false,false];
+			publicVariableServer "dayzPlayerSave";
 		
-		// diag_log format["Save Checker: %1", dayzPlayerSave];
+			dayz_unsaved = false;
 		
-		if (isServer) then {
-			dayzPlayerSave call server_playerSync;
+			//diag_log format["Save Checker: %1", dayzPlayerSave];
+		
+			if (isServer) then {
+				dayzPlayerSave call server_playerSync;
+			};
+
+			dayz_lastSave = time;
+			dayz_Magazines = [];
 		};
-		dayz_lastSave = time;
-		dayz_Magazines = [];
 	};
 
 	//Attach Trigger Current Object
