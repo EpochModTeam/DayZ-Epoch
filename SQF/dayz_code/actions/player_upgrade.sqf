@@ -145,16 +145,6 @@ if ((count _upgrade) > 0) then {
 			// Set location
 			_object setPos _location;
 
-			// Remove old object
-			deleteVehicle _obj;
-
-			// Delete object from database
-			dayzDeleteObj = [_objectID,_objectUID];
-			publicVariableServer "dayzDeleteObj";
-
-			// sleep a bit to make sure delete happens before create
-			sleep 1;
-
 			if (_lockable == 3) then {
 
 				_combination_1 = floor(random 10);
@@ -169,14 +159,8 @@ if ((count _upgrade) > 0) then {
 				cutText [format["You have upgraded %1.",_text], "PLAIN DOWN", 5];
 			};
 
-			// Publish variables
-			_object setVariable ["CharacterID",_objectCharacterID,true];
-
-			//_object setVariable ["ObjectUID",_objectUID,true];
-			_object setVariable ["OEMPos",_location,true];
-
-			dayzPublishObj = [_objectCharacterID,_object,[_dir,_location],_classname];
-			publicVariableServer "dayzPublishObj";		
+			dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_objectID,_objectUID,_obj];
+			publicVariableServer "dayzSwapObj";
 
 			player reveal _object;
 			

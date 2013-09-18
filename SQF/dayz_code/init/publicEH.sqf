@@ -43,7 +43,11 @@ if (isServer) then {
 	//Checking
 	
 	"dayzDeleteObj"		addPublicVariableEventHandler {(_this select 1) spawn server_deleteObj};
-	"atp"				addPublicVariableEventHandler { _array = _this select 1; diag_log format["TELEPORT REVERT: %1 (%2) from %3 to %4 now at %5", _array select 0, _array select 1, _array select 2, _array select 3, _array select 4];};
+
+	// upgrade and maintain
+	"dayzSwapObj"		addPublicVariableEventHandler {(_this select 1) spawn server_swapObject};
+
+	// "atp"				addPublicVariableEventHandler { _array = _this select 1; diag_log format["TELEPORT REVERT: %1 (%2) from %3 to %4 now at %5", _array select 0, _array select 1, _array select 2, _array select 3, _array select 4];};
 
 	// disable zombies server side
 	"dayzSpawnZed"		addPublicVariableEventHandler {(_this select 1) spawn server_handleZedSpawn};

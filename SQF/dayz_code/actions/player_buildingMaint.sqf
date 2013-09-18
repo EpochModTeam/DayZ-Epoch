@@ -95,24 +95,8 @@ if (_proceed) then {
 		// Set location
 		_object setPos _location;
 
-		// Remove old object
-		deleteVehicle _obj;
-
-		// Delete object from database
-		dayzDeleteObj = [_objectID,_objectUID];
-		publicVariableServer "dayzDeleteObj";
-
-		// sleep a bit to make sure delete happens before create
-		sleep 1;
-
-		// Publish variables
-		_object setVariable ["CharacterID",_objectCharacterID,true];
-		
-		//_object setVariable ["ObjectUID",_objectUID,true];
-		_object setVariable ["OEMPos",_location,true];
-
-		dayzPublishObj = [_objectCharacterID,_object,[_dir,_location],_classname];
-		publicVariableServer "dayzPublishObj";
+		dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_objectID,_objectUID,_obj];
+		publicVariableServer "dayzSwapObj";
 
 		cutText [format["You have repaired %1.",_text], "PLAIN DOWN", 5];
 
