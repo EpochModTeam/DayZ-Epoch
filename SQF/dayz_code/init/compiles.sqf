@@ -262,8 +262,15 @@ if (!isDedicated) then {
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
 			
-			if (player isKindOf  "PZombie_VB") exitWith {
+			if (player isKindOf  "PZombie_VB") then {
 				player switchAction "walkf";
+			} else {
+				_inBuilding = [player] call fnc_isInsideBuilding;
+				_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
+				if (_inBuilding or (count _nearbyObjects > 0)) then {
+					[objNull, player, rSwitchMove,"GetOver"] call RE;
+					player playActionNow "GetOver";
+				};
 			};
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
