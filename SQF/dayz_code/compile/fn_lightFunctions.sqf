@@ -1,6 +1,6 @@
 /*
 	DayZ Epoch Lighting System - Light Functions
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
+	Made for DayZ Epoch please ask permission to use/edit/distrubute email gregory.andrew@gmail.com.
 */
 axe_returnStreetLights={
 private["_lights","_objName","_rng","_nrstGen","_rndLights","_sleeptime"];
