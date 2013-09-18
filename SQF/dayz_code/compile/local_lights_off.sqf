@@ -1,6 +1,6 @@
 /*
 	DayZ Epoch Lighting System - Fail / Switch Off Lights
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
+	Made for DayZ Epoch please ask permission to use/edit/distrubute email gregory.andrew@gmail.com.
 */
 private ["_hsRange","_rng","_pos","_hsCount","_nrstTrig","_objHouses","_objHouse","_nrTowers","_doRand","_rnd","_animlightpoint","_hasLight","_sleeptime","_lightstate","_objLightPoint"];
 _rng = _this select 0;//Full distance to turn off all lights if required
