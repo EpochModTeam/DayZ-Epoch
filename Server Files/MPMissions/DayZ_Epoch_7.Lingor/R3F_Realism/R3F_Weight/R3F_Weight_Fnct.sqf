@@ -53,10 +53,7 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 					_total_weight = _total_weight + _weight;
 				} else {
 					// log only if not found 
-					#ifdef R3F_WEIGHT_SHOW_CLASSES_NOT_FOUND
-					diag_log format["Class not found %1", _x];
-					#endif
-				
+					//diag_log format["Class not found %1", _x];
 				};				
 			};
 		};
