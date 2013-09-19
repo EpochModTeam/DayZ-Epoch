@@ -13,7 +13,7 @@ private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 		dayz_lastCheckBit = time;
 		
 		// if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
-		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true; _btnAbort ctrlEnable true;};
+		if(r_fracture_legs) then {_btnRespawn ctrlEnable true;};
 		
 		//force gear save
 		if (!r_player_dead and time - dayz_lastCheckBit > 10) then {
