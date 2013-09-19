@@ -1016,45 +1016,12 @@ class _vehicle_265
 		PARENT="";
 	};
 };
-class _vehicle_266
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4024.3315, 1634.5819, 1.9073486e-006]";
-		TYPE="Base_WarfareBBarrier10xTall";
-		AZIMUT="90.429932";
-		PARENT="";
-	};
-};
-class _vehicle_268
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4027.5989, 1634.6813, 3.8146973e-006]";
-		TYPE="Base_WarfareBBarrier10xTall";
-		AZIMUT="90.429932";
-		PARENT="";
-	};
-};
-class _vehicle_270
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4025.906, 1634.5331, 2.5109601]";
-		TYPE="Base_WarfareBBarrier10xTall";
-		AZIMUT="90.429932";
-		PARENT="";
-	};
-};
 class _vehicle_275
 {
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4024.509, 1650.1462, 1.9073486e-006]";
+		POSITION="[4134.1299, 1468.5542, 1.9073486e-006]";
 		TYPE="Base_WarfareBBarrier10xTall";
 		AZIMUT="90.429932";
 		PARENT="";
@@ -1065,7 +1032,7 @@ class _vehicle_276
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4027.7764, 1650.2456, 3.8146973e-006]";
+		POSITION="[4137.3975, 1468.6536, 3.8146973e-006]";
 		TYPE="Base_WarfareBBarrier10xTall";
 		AZIMUT="90.429932";
 		PARENT="";
@@ -1076,7 +1043,7 @@ class _vehicle_277
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4026.0835, 1650.0974, 2.5109596]";
+		POSITION="[4135.7041, 1468.5054, 2.5109596]";
 		TYPE="Base_WarfareBBarrier10xTall";
 		AZIMUT="90.429932";
 		PARENT="";
@@ -1087,7 +1054,7 @@ class _vehicle_287
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4024.5505, 1665.8475, 1.335144e-005]";
+		POSITION="[4134.1709, 1484.2555, 1.335144e-005]";
 		TYPE="Base_WarfareBBarrier10xTall";
 		AZIMUT="90.429932";
 		PARENT="";
@@ -1098,7 +1065,7 @@ class _vehicle_288
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4027.8179, 1665.9469, 1.5258789e-005]";
+		POSITION="[4137.4385, 1484.3549, 1.5258789e-005]";
 		TYPE="Base_WarfareBBarrier10xTall";
 		AZIMUT="90.429932";
 		PARENT="";
@@ -1109,40 +1076,7 @@ class _vehicle_289
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4026.125, 1665.7987, 2.5109711]";
-		TYPE="Base_WarfareBBarrier10xTall";
-		AZIMUT="90.429932";
-		PARENT="";
-	};
-};
-class _vehicle_290
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4024.728, 1681.4119, 1.335144e-005]";
-		TYPE="Base_WarfareBBarrier10xTall";
-		AZIMUT="90.429932";
-		PARENT="";
-	};
-};
-class _vehicle_291
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4027.9954, 1681.5112, 1.5258789e-005]";
-		TYPE="Base_WarfareBBarrier10xTall";
-		AZIMUT="90.429932";
-		PARENT="";
-	};
-};
-class _vehicle_292
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4026.3025, 1681.363, 2.5109711]";
+		POSITION="[4135.7461, 1484.2067, 2.5109711]";
 		TYPE="Base_WarfareBBarrier10xTall";
 		AZIMUT="90.429932";
 		PARENT="";
@@ -1153,7 +1087,7 @@ class _vehicle_308
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4028.6228, 1690.3645, 1.1444092e-005]";
+		POSITION="[4137.5332, 1492.9086, 1.1444092e-005]";
 		TYPE="Land_HBarrier_large";
 		AZIMUT="2.3165083";
 		PARENT="";
@@ -1164,83 +1098,9 @@ class _vehicle_310
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4028.2632, 1625.7249, 7.6293945e-006]";
+		POSITION="[4137.311, 1459.8435, 7.6293945e-006]";
 		TYPE="Land_HBarrier_large";
 		AZIMUT="2.3165083";
-		PARENT="";
-	};
-};
-class _vehicle_312
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4036.8276, 1690.4551, 1.9073486e-006]";
-		TYPE="Land_HBarrier_large";
-		AZIMUT="2.3165083";
-		PARENT="";
-	};
-};
-class _vehicle_314
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4036.7354, 1625.7802, 1.9073486e-006]";
-		TYPE="Land_HBarrier_large";
-		AZIMUT="2.3165083";
-		PARENT="";
-	};
-};
-class _vehicle_316
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4045.1501, 1625.7771, 1.9073486e-006]";
-		TYPE="Land_HBarrier_large";
-		AZIMUT="2.3165083";
-		PARENT="";
-	};
-};
-class _vehicle_318
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4045.1294, 1690.4385, 1.1444092e-005]";
-		TYPE="Land_HBarrier_large";
-		AZIMUT="2.3165083";
-		PARENT="";
-	};
-};
-class _vehicle_321
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4052.9197, 1660.2445, -1.1444092e-005]";
-		TYPE="HeliHEmpty";
-		PARENT="";
-	};
-};
-class _vehicle_322
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4050.1282, 1641.5254, 5.7220459e-006]";
-		TYPE="HeliHRescue";
-		PARENT="";
-	};
-};
-class _vehicle_323
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4045.9771, 1681.688, 5.7220459e-006]";
-		TYPE="HeliHCivil";
 		PARENT="";
 	};
 };
@@ -1249,7 +1109,7 @@ class _vehicle_326
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4031.0403, 1660.6776, 3.8146973e-006]";
+		POSITION="[4140.6611, 1479.0856, 3.8146973e-006]";
 		TYPE="US_WarfareBVehicleServicePoint_Base_EP1";
 		AZIMUT="180.37967";
 		PARENT="";
@@ -1260,10 +1120,10 @@ class _unit_65
 	objectType="unit";
 	class Arguments
 	{
-		POSITION="[4034.3279, 1659.9537, -1.9073486e-006]";
+		POSITION="[4143.9258, 1481.0282, -1.9073486e-006]";
 		GROUP="_group_1";
 		TYPE="Pilot";
-		AZIMUT="72.854317";
+		AZIMUT="71.022041";
 		INIT="this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
 		SKILL="0.60000002";
 	};
@@ -2949,7 +2809,7 @@ class _vehicle_1581
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4033.2229, 1665.0542, 3.8146973e-006]";
+		POSITION="[4142.8438, 1483.4622, 3.8146973e-006]";
 		TYPE="Info_Board_EP1";
 		AZIMUT="273.75558";
 		INIT="this allowDammage false;";
@@ -3038,9 +2898,9 @@ class _vehicle_1597
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4031.4514, 1654.8457, 0]";
+		POSITION="[4146.563, 1479.7007]";
 		TYPE="Land_Fire_barrel";
-		AZIMUT="251.04749";
+		AZIMUT="356.84875";
 		PARENT="";
 	};
 };
@@ -3073,17 +2933,6 @@ class _vehicle_1602
 	{
 		POSITION="[3034.5256, 5933.7026, 3.0517578e-005]";
 		TYPE="HeliHEmpty";
-		PARENT="";
-	};
-};
-class _vehicle_1603
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4036.0217, 1627.2798]";
-		TYPE="Mi8Wreck";
-		AZIMUT="99.993553";
 		PARENT="";
 	};
 };
@@ -3134,7 +2983,7 @@ class _vehicle_1896
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[4031.2651, 1667.1394, -1.9073486e-006]";
+		POSITION="[4140.8857, 1485.5474, -1.9073486e-006]";
 		TYPE="FlagCarrierWhite_EP1";
 		AZIMUT="93.686035";
 		PARENT="";
@@ -3185,19 +3034,6 @@ class _unit_154
 		SKILL="0.60000002";
 	};
 };
-class _unit_155
-{
-	objectType="unit";
-	class Arguments
-	{
-		POSITION="[8945.1973, 7187.6772]";
-		GROUP="_group_2";
-		TYPE="FR_Assault_R";
-		AZIMUT="234.91072";
-		SKILL="0.60000002";
-		PLAYER="true";
-	};
-};
 class _unit_159
 {
 	objectType="unit";
@@ -3207,6 +3043,7 @@ class _unit_159
 		GROUP="_group_1";
 		TYPE="TK_CIV_Takistani04_EP1";
 		AZIMUT="170.86682";
+		INIT="this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
 		SKILL="0.60000002";
 	};
 };
@@ -3218,18 +3055,6 @@ class _vehicle_1948
 		POSITION="[4078.1492, 9223.8379, -3.7553658]";
 		TYPE="HeliHEmpty";
 		PARENT="";
-	};
-};
-class _unit_160
-{
-	objectType="unit";
-	class Arguments
-	{
-		POSITION="[9298.2969, 3877.2126, 2.7656555e-005]";
-		GROUP="_group_1";
-		TYPE="Functionary1";
-		AZIMUT="180.8837";
-		SKILL="0.60000002";
 	};
 };
 class _vehicle_1949
@@ -3249,6 +3074,52 @@ class _vehicle_1950
 	{
 		POSITION="[9297.4453, 3854.3967, 1.4305115e-005]";
 		TYPE="HeliHEmpty";
+		PARENT="";
+	};
+};
+class _vehicle_1952
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[4210.439, 1480.9308, 0]";
+		TYPE="HeliHCivil";
+		PARENT="";
+	};
+};
+class _unit_168
+{
+	objectType="unit";
+	class Arguments
+	{
+		POSITION="[4210.313, 1478.5333, 0]";
+		GROUP="_group_2";
+		TYPE="FR_Assault_R";
+		SKILL="0.60000002";
+		PLAYER="true";
+	};
+};
+class _unit_169
+{
+	objectType="unit";
+	class Arguments
+	{
+		POSITION="[4144.0195, 1478.6262]";
+		GROUP="_group_1";
+		TYPE="Functionary1";
+		AZIMUT="467.24658";
+		INIT="this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
+		SKILL="0.60000002";
+	};
+};
+class _vehicle_1954
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		POSITION="[4148.2959, 1479.7568, 0.017693177]";
+		TYPE="Land_HBarrier_large";
+		AZIMUT="92.813698";
 		PARENT="";
 	};
 };

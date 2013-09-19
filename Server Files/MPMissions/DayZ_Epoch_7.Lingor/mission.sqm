@@ -1393,7 +1393,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={4033.0662,23.660297,1668.62};
+			position[]={4138.7852,23.635477,1492.9089};
 			name="Choppers";
 			text="Chip's Choppers";
 			type="mil_dot";
@@ -1529,7 +1529,7 @@ class Mission
 		};
 		class Item36
 		{
-			position[]={9297.459,15.001276,3875.1855};
+			position[]={4139.7085,23.635477,1465.8002};
 			name="HeroTrader";
 			text="Hero Trader";
 			type="mil_dot";
