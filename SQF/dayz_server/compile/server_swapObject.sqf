@@ -11,12 +11,6 @@ _obj removeAllMPEventHandlers "MPKilled";
 // Remove old object
 deleteVehicle _obj;
 
-// Publish variables
-_object setVariable ["CharacterID",_charID,true];
-		
-//_object setVariable ["ObjectUID",_objectUID,true];
-_object setVariable ["OEMPos",_worldspace,true];
-
 _objectID = 		_this select 5;
 _objectUID = 		_this select 6;
 
@@ -26,6 +20,12 @@ if(_objectID == "0" && _objectUID == "0") exitWith {diag_log ("Object not valid:
 
 _allowed = [_object, "Server"] call check_publishobject;
 if (!_allowed) exitWith { deleteVehicle _object; };
+
+// Publish variables
+_object setVariable ["CharacterID",_charID,true];
+		
+//_object setVariable ["ObjectUID",_objectUID,true];
+_object setVariable ["OEMPos",(_worldspace select 1),true];
 
 //diag_log ("PUBLISH: Attempt " + str(_object));
 

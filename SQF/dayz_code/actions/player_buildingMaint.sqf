@@ -95,7 +95,7 @@ if (_proceed) then {
 		// Set location
 		_object setPos _location;
 
-		dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_objectID,_objectUID,_obj];
+		dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
 		publicVariableServer "dayzSwapObj";
 
 		cutText [format["You have repaired %1.",_text], "PLAIN DOWN", 5];

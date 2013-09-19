@@ -159,7 +159,7 @@ if ((count _upgrade) > 0) then {
 				cutText [format["You have upgraded %1.",_text], "PLAIN DOWN", 5];
 			};
 
-			dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_objectID,_objectUID,_obj];
+			dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
 			publicVariableServer "dayzSwapObj";
 
 			player reveal _object;
