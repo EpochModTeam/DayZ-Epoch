@@ -231,6 +231,7 @@ class RscStructuredTextGUI: RscStructuredText
 #include "Configs\CfgVoice.hpp"
 #include "Configs\CfgIdentities.hpp"
 #include "Configs\CfgFaces.hpp"
+#include "Configs\CfgGlasses.hpp"
 #include "Configs\CfgMagazines.hpp"
 #include "Configs\cfgLoot.hpp"
 #include "Configs\CfgMarkers.hpp"
