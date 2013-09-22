@@ -34,6 +34,10 @@ if(!isNull dayz_selectedDoor) then {
 	} else {
 		DZE_Lock_Door = "";
 		[player,"combo_locked",0,false] call dayz_zombieSpeak;
+		[player,20,true,(getPosATL player)] spawn player_alertZombies;
+
+		_display = findDisplay 41144;
+		_display closeDisplay 3000;
 	};
 } else {
 	
