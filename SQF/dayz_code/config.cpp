@@ -92,6 +92,11 @@ class CfgActions {
 	*/
 	
 };
+
+class CfgLoadingTexts {
+	titlesDefault[] = {""};
+};
+
 class CfgAISkill {
 	aimingaccuracy[] = {0, 0, 1, 1};
 	aimingshake[] = {0, 0, 1, 1};
