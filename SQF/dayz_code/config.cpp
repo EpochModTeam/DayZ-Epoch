@@ -53,7 +53,7 @@ class CfgMissions
 	 {
 	  class ChernarusIntro1
 		  {
-			directory = "z\addons\dayz_code\cfgworlds\intro.Chernarus";
+			directory = "z\addons\dayz_code\Configs\CfgWorlds\intro.Chernarus";
 		  };
 	 };
 };
@@ -92,6 +92,11 @@ class CfgActions {
 	*/
 	
 };
+
+class CfgLoadingTexts {
+	titlesDefault[] = {""};
+};
+
 class CfgAISkill {
 	aimingaccuracy[] = {0, 0, 1, 1};
 	aimingshake[] = {0, 0, 1, 1};
