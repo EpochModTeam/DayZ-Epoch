@@ -1,4 +1,4 @@
-private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
+private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_btnAbortText"];
 		disableSerialization;
 		waitUntil {
 			_display = findDisplay 49;
@@ -8,6 +8,7 @@ private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 		_btnAbort = _display displayCtrl 104;
 		_btnRespawn ctrlEnable false;
 		_btnAbort ctrlEnable false;
+		_btnAbortText = ctrlText _btnAbort;
 		_timeOut = 0;
 		_timeMax = 10;
 		dayz_lastCheckBit = time;
@@ -37,10 +38,11 @@ private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 				};
 				case (_timeOut < _timeMax) : {
 					_btnAbort ctrlEnable false;
-					cutText [format ["Can Abort in %1", (_timeMax - _timeOut)], "PLAIN DOWN"];
+					_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, ceil (_timeMax - diag_tickTime)];
 				};
 				default {
 					_btnAbort ctrlEnable true;
+					_btnAbort ctrlSetText _btnAbortText;
 					cutText ["", "PLAIN DOWN"];				
 				};
 			};
