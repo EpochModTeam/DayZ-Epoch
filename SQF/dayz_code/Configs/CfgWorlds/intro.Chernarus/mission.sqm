@@ -127,7 +127,7 @@ class Intro
 					azimut=24.345699;
 					id=1;
 					side="CIV";
-					vehicle="z_new_villager3";
+					vehicle="z_villager3";
 					leader=1;
 					skill=1;
 				};
@@ -262,7 +262,7 @@ class Intro
 					azimut=284.06299;
 					id=4;
 					side="CIV";
-					vehicle="z_new_worker4";
+					vehicle="zZombie_new_Base";
 					leader=1;
 					skill=1;
 				};
@@ -501,7 +501,7 @@ class Intro
 					azimut=284.06299;
 					id=10;
 					side="CIV";
-					vehicle="z_new_worker2";
+					vehicle="z_worker2";
 					leader=1;
 					skill=1;
 				};
@@ -580,7 +580,7 @@ class Intro
 					position[]={6652.2007,6,2369.1816};
 					id=12;
 					side="CIV";
-					vehicle="z_new_worker3";
+					vehicle="z_worker3";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -619,7 +619,7 @@ class Intro
 					position[]={6797.8003,6,2471.2327};
 					id=13;
 					side="CIV";
-					vehicle="z_new_worker2";
+					vehicle="z_worker2";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -980,7 +980,7 @@ class Intro
 					position[]={4600.0322,338.9549,9611.1768};
 					id=31;
 					side="CIV";
-					vehicle="z_new_worker_base";
+					vehicle="zZombie_new_Base";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1083,7 +1083,7 @@ class Intro
 					position[]={4615.1289,338.93723,9580.209};
 					id=24;
 					side="CIV";
-					vehicle="z_new_worker4";
+					vehicle="zZombie_new_Base";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1122,7 +1122,7 @@ class Intro
 					position[]={4643.1641,338.99911,9601.1494};
 					id=25;
 					side="CIV";
-					vehicle="z_new_villager3";
+					vehicle="z_villager3";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -1350,7 +1350,7 @@ class Intro
 					position[]={4611.2588,338.95685,9591.377};
 					id=30;
 					side="CIV";
-					vehicle="z_newBase";
+					vehicle="zZombie_new_Base";
 					leader=1;
 					skill=0.60000002;
 				};
