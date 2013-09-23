@@ -1,5 +1,4 @@
 
-private ["_unit","_humanityHit","_myKills","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_isCardiac","_isHeadHit","_isMinor","_scale","_canHitFree","_rndPain","_rndInfection","_hitInfection","_lowBlood","_isPZombie","_source","_ammo","_unitIsPlayer"];
 scriptName "Functions\misc\fn_damageHandler.sqf";
 /***********************************************************
 	PROCESS DAMAGE TO A UNIT
