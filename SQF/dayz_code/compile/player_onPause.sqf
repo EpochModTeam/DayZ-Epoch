@@ -10,7 +10,7 @@ private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_btnAbortTe
 		_btnAbort ctrlEnable false;
 		_btnAbortText = ctrlText _btnAbort;
 		_timeOut = 0;
-		_timeMax = 10;
+		_timeMax = diag_tickTime+10;
 		dayz_lastCheckBit = time;
 		
 		// if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
@@ -23,7 +23,7 @@ private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_btnAbortTe
 				
 		while {!isNull _display} do {
 			switch true do {
-				case (!r_player_dead and {isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1) : {
+				case (!r_player_dead and {isPlayer _x} count (player nearEntities ["AllVehicles", 12]) > 1) : {
 					_btnAbort ctrlEnable false;
 					cutText [localize "str_abort_playerclose", "PLAIN DOWN"];
 				};
@@ -47,6 +47,6 @@ private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_btnAbortTe
 				};
 			};
 			sleep 1;
-			_timeOut = _timeOut + 1;
+			_timeOut = diag_tickTime;
 		};
 		cutText ["", "PLAIN DOWN"];
