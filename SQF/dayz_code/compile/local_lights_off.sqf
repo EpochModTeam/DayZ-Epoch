@@ -1,6 +1,6 @@
 /*
-	DayZ Epoch Lighting System - Fail / Switch Off Lights
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email gregory.andrew@gmail.com.
+	DayZ Epoch Lighting System - Lights Out
+	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com or vbawol@veteranbastards.com.
 */
 private ["_hsRange","_rng","_pos","_hsCount","_nrstTrig","_objHouses","_objHouse","_nrTowers","_doRand","_rnd","_animlightpoint","_hasLight","_sleeptime","_lightstate","_objLightPoint"];
 _rng = _this select 0;//Full distance to turn off all lights if required
@@ -46,9 +46,8 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 	
 	if(count _objHouses >0)then{
 		{
-		_pos = getPos _x;
 		_objLightPoint = nearestObject [_x, "#lightpoint"];
-			if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<1.5)then{
+			if((abs ([getPos _x, _objLightPoint] call BIS_fnc_distance2D))<1.5)then{
 			deleteVehicle _objLightPoint;
 			};
 		}forEach _objHouses;
@@ -64,10 +63,9 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 	
 	if(count _nrTowers >0)then{
 		{
-		_pos = getPos _x;
 			for "_s" from 1 to 4 do {
 			_objLightPoint = nearestObject [_x, "#lightpoint"];
-				if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<25)then{
+				if((abs ([getPos _x, _objLightPoint] call BIS_fnc_distance2D))<25)then{
 				deleteVehicle _objLightPoint;
 				};
 			};
