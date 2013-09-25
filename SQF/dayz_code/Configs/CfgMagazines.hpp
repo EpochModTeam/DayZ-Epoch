@@ -1,6 +1,17 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
 
+	class ItemHotwireKit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Hotwire kit";
+		model = "\z\addons\dayz_epoch\models\canvas.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_canvas_ca.paa";
+		descriptionShort = "Used to temporarily unlock vehicle and start them";
+	};
+
 	class ItemCanvas: CA_Magazine
 	{
 		scope = 2;
@@ -15,7 +26,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Tent";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentOld",1}};
@@ -24,7 +35,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Desert Tent";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentDomed",1}};
@@ -33,7 +44,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Green Tent";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentDomed2",1}};
@@ -42,7 +53,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Craft Sun Shade";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"sun_shade_kit",1}};
@@ -51,7 +62,7 @@ class CfgMagazines {
 			class Crafting4
 			{
 				text = "Craft Burlap";
-				script = "spawn player_craftItem4;";
+				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemBurlap",1}};
@@ -73,7 +84,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Sandbag";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sand"}; // todo add sand requirement
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbag",1}};
@@ -94,7 +105,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Light Pole";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"light_pole_kit",1}};
@@ -121,7 +132,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase10oz",1}};
@@ -130,7 +141,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 10 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -148,7 +159,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase20oz",1}};
@@ -157,7 +168,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 9 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -166,7 +177,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcaseEmpty",1}};
@@ -185,7 +196,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase30oz",1}};
@@ -194,7 +205,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 8 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -203,7 +214,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase10oz",1}};
@@ -212,7 +223,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",2},{"ItemBriefcaseEmpty",1}};
@@ -230,7 +241,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase40oz",1}};
@@ -239,7 +250,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 7 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -248,7 +259,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase20oz",1}};
@@ -257,7 +268,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",3},{"ItemBriefcaseEmpty",1}};
@@ -275,7 +286,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase50oz",1}};
@@ -284,7 +295,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 6 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -293,7 +304,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase30oz",1}};
@@ -302,7 +313,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",4},{"ItemBriefcaseEmpty",1}};
@@ -320,7 +331,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase60oz",1}};
@@ -329,7 +340,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 5 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -338,7 +349,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase40oz",1}};
@@ -347,7 +358,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",5},{"ItemBriefcaseEmpty",1}};
@@ -365,7 +376,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase70oz",1}};
@@ -374,7 +385,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 4 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -383,7 +394,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase50oz",1}};
@@ -392,7 +403,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",6},{"ItemBriefcaseEmpty",1}};
@@ -410,7 +421,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase80oz",1}};
@@ -419,7 +430,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 3 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -428,7 +439,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase60oz",1}};
@@ -437,7 +448,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",7},{"ItemBriefcaseEmpty",1}};
@@ -455,7 +466,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase90oz",1}};
@@ -464,7 +475,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Add 2 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -473,7 +484,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase70oz",1}};
@@ -482,7 +493,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",8},{"ItemBriefcaseEmpty",1}};
@@ -500,7 +511,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Add 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemBriefcase100oz",1}};
@@ -509,7 +520,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase80oz",1}};
@@ -518,7 +529,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",9},{"ItemBriefcaseEmpty",1}};
@@ -536,7 +547,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Remove 1 10oz Gold";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1},{"ItemBriefcase90oz",1}};
@@ -545,7 +556,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Empty Case";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",10},{"ItemBriefcaseEmpty",1}};
@@ -567,15 +578,85 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 10oz bar";
-				script = "spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemGoldBar10oz",1}};
 				input[] = {{"ItemGoldBar",10}};
 				
 			};
+			/*
+			class Crafting
+			{
+				text = "Add 1oz Bar";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar2oz",1}};
+				input[] = {{"ItemGoldBar",2}};
+				
+			};
+			class Crafting1
+			{
+				text = "Add 10 1oz bars";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				output[] = {{"ItemGoldBar10oz",1}};
+				input[] = {{"ItemGoldBar",10}};
+				
+			};
+			*/
 		};
 	};
+	/*
+	class ItemGoldBar2oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Gold 2oz";
+		model = "\z\addons\dayz_epoch\models\gold_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
+		descriptionShort = "2 x 1oz Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1oz Bar";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemGoldBar3oz",1}};
+				input[] = {{"ItemGoldBar2oz",1},{"ItemGoldBar",1}};
+				
+			};
+		};
+	};
+	class ItemGoldBar2oz: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Gold 2oz";
+		model = "\z\addons\dayz_epoch\models\gold_bar.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
+		descriptionShort = "2 x 1oz Gold Bar";
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Add 1oz Bar";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemGoldBar4oz",1}};
+				input[] = {{"ItemGoldBar3oz",1},{"ItemGoldBar",1}};
+				
+			};
+		};
+	};
+	*/
 	class ItemGoldBar10oz: CA_Magazine
 	{
 		scope = 2;
@@ -590,7 +671,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 1oz bars";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemGoldBar",10}};
@@ -612,7 +693,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 10oz bar";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemSilverBar10oz",1}};
@@ -635,7 +716,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 1oz bars";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemSilverBar",10}};
@@ -657,7 +738,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 10oz bar";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemCopperBar10oz",1}};
@@ -680,7 +761,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 1oz bars";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemCopperBar",10}};
@@ -724,7 +805,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 1oz bars";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemAluminumBar",10}};
@@ -757,7 +838,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Smelt 1oz bars";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemTinBar",10}};
@@ -803,7 +884,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Salvage Scrap";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"PartGeneric",1}};
@@ -834,7 +915,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Pole";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemPole",1}};
@@ -861,7 +942,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Wooden Shed";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"wooden_shed_kit",1}};
@@ -870,7 +951,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Outhouse";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"outhouse_kit",1}};
@@ -879,11 +960,20 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Storage Shed";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"storage_shed_kit",1}};
 				input[] = {{"bulk_empty",1},{"ItemCorrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
+			};
+			class Crafting3
+			{
+				text = "Craft Metal Floor";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop","fire"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+				output[] = {{"metal_floor_kit",1}};
+				input[] = {{"bulk_empty",1},{"ItemCorrugated",2},{"ItemPole",4},{"ItemTankTrap",2}};
 			};
 		};
 	};
@@ -900,7 +990,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Corrugated Fence";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemCorrugated",1}};
@@ -909,7 +999,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Rusty Gate";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"rusty_gate_kit",1}};
@@ -918,7 +1008,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Metal Panel";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"metal_panel_kit",1}};
@@ -1000,7 +1090,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Pack 6 Coke";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_ItemSodaCoke",1}};
@@ -1009,7 +1099,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Pack 6 Pepsi";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_ItemSodaPepsi",1}};
@@ -1156,6 +1246,28 @@ class CfgMagazines {
 		};
 	};
 	
+	class metal_floor_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Metal Floor";
+		descriptionShort = "Metal Floor";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 325;
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "MetalFloor_DZ";
+			};
+		};
+	};
+
 	class cinder_wall_kit: CA_Magazine
 	{
 		scope = 2;
@@ -1174,6 +1286,50 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "CinderWallHalf_DZ";
+			};
+		};
+	};
+
+	class cinder_garage_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Block Garage Doorway";
+		descriptionShort = "Cinder block garage doorway";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 325;
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "CinderWallDoorway_DZ";
+			};
+		};
+	};
+
+	class cinder_door_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Block Doorway";
+		descriptionShort = "Cinder block doorway";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 325;
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "CinderWallSmallDoorway_DZ";
 			};
 		};
 	};
@@ -1328,7 +1484,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Lg Camo Net";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_large_net_kit",1}};
@@ -1358,7 +1514,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Lg Camo Net";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_large_net_kit",1}};
@@ -1747,7 +1903,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Wood Floor";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",1},{"ItemWoodFloor",1}};
@@ -1778,7 +1934,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Wood Floor 1/2";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",1},{"ItemWoodFloorHalf",1}};
@@ -1810,7 +1966,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Stair Supports";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodStairsSupport",1}};
@@ -1887,7 +2043,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Doorway";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallDoor",1}};
@@ -1897,7 +2053,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Window";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWindow",1}};
@@ -1907,7 +2063,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Large Wall";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallLg",1}};
@@ -1938,7 +2094,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Wood Wall";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",2},{"ItemWoodWall",1}};
@@ -1969,7 +2125,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Door";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoor",1}};
@@ -2000,7 +2156,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Locked Door";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoorLocked",1}};
@@ -2077,7 +2233,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Doorway";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallDoorLg",1}};
@@ -2087,7 +2243,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Window";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWindowLg",1}};
@@ -2097,7 +2253,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Garage Door";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallGarageDoor",1}};
@@ -2129,7 +2285,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Locked Garage Door";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallGarageDoorLocked",1}};
@@ -2182,7 +2338,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Door";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoorLg",1}};
@@ -2214,7 +2370,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Locked Door";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoorLgLocked",1}};
@@ -2282,7 +2438,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Salvage Scrap";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"PartGeneric",2}};
@@ -2303,7 +2459,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Lumber";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodLumber",1}};
@@ -2312,7 +2468,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Arrows";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemKnife"};
 				output[] = {{"WoodenArrow",3}};
@@ -2322,7 +2478,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Stick Fence";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"stick_fence_kit",1}};
@@ -2346,7 +2502,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Un pack";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodLumber",3}};
@@ -2368,13 +2524,32 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-				text = "Craft Cinder Block Wall";
-				script = "spawn player_craftItem;";
+				text = "Craft Half Wall";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"cinder_wall_kit",1}};
-				input[] = {{"CinderBlocks",3}};
+				input[] = {{"CinderBlocks",3},{"MortarBucket",1}};
 			};
+			class Crafting1
+			{
+				text = "Craft Garage Doorway";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"cinder_garage_kit",1}};
+				input[] = {{"CinderBlocks",3},{"MortarBucket",1},{"ItemTankTrap",1}};
+			};
+			class Crafting2
+			{
+				text = "Craft Doorway";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"cinder_door_kit",1}};
+				input[] = {{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",1}};
+			};
+			
 			
 		};
 	};
@@ -2395,7 +2570,7 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = "Plywood Pack";
-		model = "\dayz_equip\models\plywood_pack.p3d";
+		model = "\z\addons\dayz_epoch\models\plywood_pack.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_plywood_pack_CA.paa";
 		descriptionShort = "Plywood in a stack";
 		weight = 12;
@@ -2403,7 +2578,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Un pack";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodPlywood",3}};
@@ -2425,7 +2600,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Plywood";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"PartWoodPlywood",1}};
@@ -2435,7 +2610,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Supply Crate";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",1}};
@@ -2445,7 +2620,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Deer Stand";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"deer_stand_kit",1}};
@@ -2456,7 +2631,7 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Craft Wood Stairs";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodStairs",1}};
@@ -2466,7 +2641,7 @@ class CfgMagazines {
 			class Crafting4
 			{
 				text = "Craft Wood Ladder";
-				script = "spawn player_craftItem4;";
+				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodLadder",1}};
@@ -2489,7 +2664,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Workbench";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"workbench_kit",1}};
@@ -2499,7 +2674,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Shack";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"wood_shack_kit",1}};
@@ -2508,7 +2683,7 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft Floor 1/4";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodFloorQuarter",1}};
@@ -2517,13 +2692,34 @@ class CfgMagazines {
 			class Crafting3
 			{
 				text = "Craft Wall 1/3";
-				script = "spawn player_craftItem3;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodWallThird",1}};
 				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 			};
 			
+		};
+	};
+	class PartOre: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Ore";
+		model = "\dayz_equip\models\trash_tincan.p3d";
+		picture = "\dayz_equip\textures\equip_tincan_ca.paa";
+		descriptionShort = "Ore: Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Scrap Metal";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemSledge"};
+				output[] = {{"PartGeneric",1}};
+				input[] = {{"PartOre",4},{"ItemWaterbottle",1}};
+			};			
 		};
 	};
 	class PartVRotor: CA_Magazine
@@ -2547,9 +2743,6 @@ class CfgMagazines {
 		descriptionShort = "$STR_EQUIP_DESC_30";
 	};
 
-
-
-
 	// Skins
 	class SkinBase: CA_Magazine
 	{
@@ -2571,7 +2764,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Canvas";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemCanvas",1}};
@@ -2580,7 +2773,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Bandages";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemBandage",2}};
@@ -2860,7 +3053,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Desert Net";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
@@ -2869,7 +3062,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Forest Net";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
@@ -2896,7 +3089,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Desert Net";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
@@ -2905,7 +3098,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Forest Net";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
@@ -2931,7 +3124,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Desert Net";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
@@ -2940,7 +3133,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Forest Net";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
@@ -2968,7 +3161,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Large Sandbag";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbagLarge",1}};
@@ -2977,7 +3170,7 @@ class CfgMagazines {
 			class Crafting1
 			{
 				text = "Craft Sandbag Nest";
-				script = "spawn player_craftItem1;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"sandbag_nest_kit",1}};
@@ -2987,15 +3180,60 @@ class CfgMagazines {
 			class Crafting2
 			{
 				text = "Craft M240 Nest";
-				script = "spawn player_craftItem2;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
 				input[] = {{"bulk_empty",1},{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
-				consumeweapons[] = {"M240_DZ"};
+				inputweapons[] = {"M240_DZ"};
 			};
 			*/
 			
+		};
+	};
+
+	class ItemSledgeHead : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Sledgehammer Head";
+		model = "\z\addons\dayz_epoch\models\sledge_head.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_sledge_head_ca.paa";
+		descriptionShort = "Combine with a handle to make a Sledgehammer";
+		weight = 9;
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Sledge";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {};
+				outputweapons[] = {"ItemSledge"};
+				input[] = {{"ItemSledgeHead",1},{"ItemSledgeHandle",1}};
+			};
+		};
+	};
+	class ItemSledgeHandle : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Sledgehammer Handle";
+		model = "\z\addons\dayz_epoch\models\sledge_handle.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_sledge_handle_ca.paa";
+		descriptionShort = "Combine with a head to make a Sledgehammer";
+		weight = 1;
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Sledge";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {};
+				outputweapons[] = {"ItemSledge"};
+				input[] = {{"ItemSledgeHead",1},{"ItemSledgeHandle",1}};
+			};
 		};
 	};
 
@@ -3018,7 +3256,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Craft Triple H-barrier";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbagExLarge",1}};
@@ -3151,7 +3389,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Melt into Bars";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemAluminumBar",1}};
@@ -3679,7 +3917,7 @@ class CfgMagazines {
 			class Crafting
 			{
 				text = "Melt into Bars";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemTinBar",1}};
@@ -3815,6 +4053,12 @@ class CfgMagazines {
 		shortNameMagazine = "Fishing";
 		ammo = "Fishing_Swing_Ammo";
 	};
+	class sledge_swing : Hatchet_Swing {
+		displayName = "Sledge";
+		displayNameMagazine = "Sledge";
+		shortNameMagazine = "Sledge";
+		ammo = "Sledge_Swing_Ammo";
+	};
 	// Inventory Placeholder
 	class DummyItem : Hatchet_Swing {
 		displayName = "Dummy";
@@ -3836,7 +4080,7 @@ class CfgMagazines {
 		count = 1;
 		displayName = $STR_JUNK_NAME_RAZOR;
 		descriptionShort = $STR_JUNK_DESC_RAZOR;
-		model = "z\addons\dayz_communityassets\models\razor.p3d";
+		model = "\z\addons\dayz_communityassets\models\razor.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
 	};
@@ -3847,15 +4091,15 @@ class CfgMagazines {
 		displayName = "Kilo of Hemp";
 		descriptionShort = "Kilo of Hemp";
 		weight = 1;
-		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d"; // TODO: model + icon
-		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
+		model = "z\addons\dayz_epoch\models\kilohemp.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
 		type = 256;
 		class ItemActions
 		{
 			class Crafting
 			{
 				text = "Craft Canvas";
-				script = "spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemCanvas",1}};
