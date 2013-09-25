@@ -36,7 +36,7 @@ _objHouses = nearestObjects [_nrstTrig, ["House"], _hsRange];
 		if(_hasLight)then{deleteVehicle _animlightpoint;};
 		_objHouse animate ["Lights_1",0];
 		_objHouse animate ["Lights_2",0];
-		_objHouse setVariable ["axeHLight", 0, true];//Fail light house leccy supply
+		_objHouse setVariable ["axeHLight", 0, false];//Fail light house leccy supply
 		};
 	};
 }else{//Switch them all off
@@ -57,7 +57,7 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 		{
 		_x animate ["Lights_1",0];
 		_x animate ["Lights_2",0];
-		_x setVariable ["axeHLight", 0, true];
+		_x setVariable ["axeHLight", 0, false];
 		}forEach _objHouses;
 	};
 	
