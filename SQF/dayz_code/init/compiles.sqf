@@ -82,10 +82,6 @@ if (!isDedicated) then {
 	player_reloadMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
 	player_loadCrate =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_loadCrate.sqf";
 	player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
-	player_craftItem1 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem1.sqf";
-	player_craftItem2 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem2.sqf";
-	player_craftItem3 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem3.sqf";
-	player_craftItem4 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem4.sqf";
 	player_tentPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\tent_pitch.sqf";
 	player_vaultPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\vault_pitch.sqf";
 	player_drink =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_drink.sqf";
@@ -103,6 +99,7 @@ if (!isDedicated) then {
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
+	player_mineOre =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_mineOre.sqf";
 	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
@@ -266,15 +263,14 @@ if (!isDedicated) then {
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
 			
-			if (player isKindOf  "PZombie_VB") exitWith {
+			if (player isKindOf  "PZombie_VB") then {
 				player switchAction "walkf";
-			};
-			if (!r_fracture_legs and (time - dayz_lastCheckBit > 4)) then {
+			} else {
 				_inBuilding = [player] call fnc_isInsideBuilding;
 				_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
-				if (!_inBuilding and (count _nearbyObjects == 0)) then {
-					dayz_lastCheckBit = time;
-					call player_CombatRoll;
+				if (_inBuilding or (count _nearbyObjects > 0)) then {
+					[objNull, player, rSwitchMove,"GetOver"] call RE;
+					player playActionNow "GetOver";
 				};
 			};
 		};
@@ -312,24 +308,28 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
-		//
-		if (_dikCode == 0x48) then {
+		// numpad 8 0x48 now pgup 0xC9
+		if (_dikCode == 0xC9 or (_dikCode in actionKeys "User15")) then {
 			DZE_Q = true;
 		};
-		if (_dikCode == 0x50) then {
+		// numpad 2 0x50 now pgdn 0xD1
+		if (_dikCode == 0xD1 or (_dikCode in actionKeys "User16")) then {
 			DZE_Z = true;
 		};
-		if (_dikCode == 0x4B) then {
+		// numpad 4 0x4B now Q 0x10
+		if (_dikCode == 0x10 or (_dikCode in actionKeys "User17")) then {
 			DZE_4 = true;
 		};		
-		if (_dikCode == 0x4D) then {
+		// numpad 6 0x4D now E 0x12
+		if (_dikCode == 0x12 or (_dikCode in actionKeys "User18")) then {
 			DZE_6 = true;
 		};
-
-		if (_dikCode == 0x4C) then {
+		// numpad 5 0x4C now space 0x39
+		if (_dikCode == 0x39 or (_dikCode in actionKeys "User19")) then {
 			DZE_5 = true;
 		};
 
+		// esc
 		if (_dikCode == 0x01) then {
 			DZE_cancelBuilding = true;
 		};
