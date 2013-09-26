@@ -1,6 +1,17 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
 
+	class ItemHotwireKit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Hotwire kit";
+		model = "\z\addons\dayz_epoch\models\canvas.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_canvas_ca.paa";
+		descriptionShort = "Used to temporarily unlock vehicle and start them";
+	};
+
 	class ItemCanvas: CA_Magazine
 	{
 		scope = 2;
@@ -2688,6 +2699,27 @@ class CfgMagazines {
 				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 			};
 			
+		};
+	};
+	class PartOre: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Ore";
+		model = "\dayz_equip\models\trash_tincan.p3d";
+		picture = "\dayz_equip\textures\equip_tincan_ca.paa";
+		descriptionShort = "Ore: Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.";
+		class ItemActions {
+			class Crafting
+			{
+				text = "Craft Scrap Metal";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"fire"};
+				requiretools[] = {"ItemSledge"};
+				output[] = {{"PartGeneric",1}};
+				input[] = {{"PartOre",4},{"ItemWaterbottle",1}};
+			};			
 		};
 	};
 	class PartVRotor: CA_Magazine
