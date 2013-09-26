@@ -31,7 +31,7 @@ if(!isNil "_objHouse")then{
 		_lightPcnt = (player distance _x)/10;
 		_brtns = _brtns * _lightPcnt;//Light brightness by percentage
 		//Min / Max Levels
-		if (_brtns > 0.1)then{_brtns = 0.1;};
+		if (_brtns > 0.06)then{_brtns = 0.06;};
 		if (_brtns < 0.015)then{_brtns = 0.015;};
 		
 		_objLightPoint = nearestObject [_x, "#lightpoint"];
@@ -53,11 +53,8 @@ if(!isNil "_objHouse")then{
 					//publicVariable "axeDiagLog";
 					if((_x animationPhase "Lights_1">0))then{
 					
-					
-					
 						if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))>_hsLPDist)then{
 							if(player distance _x < _lpDist)then{
-							
 							//if(_debug)then{axeDiagLog = format["HL:NEW LP:%1 | _brtns:%2",_x,_brtns];publicVariable "axeDiagLog";};
 							//[_lmpCol,0.01,_lmpCol,[_pos select 0,_pos select 1,1],_dir,[0,0,-1]] call axe_newLightPoint;
 							[_lmpCol,_brtns,_lmpCol,getPos _x,_dir,[0,0,-2.6]] call axe_newLightPoint;
@@ -74,23 +71,25 @@ if(!isNil "_objHouse")then{
 							_chnGCount = _chnGCount + 1;
 							_x setVariable ["brtns", _brtns, false];
 							_x setVariable ["axeHLight", 1, false];
-							}else{
-							deleteVehicle _objLightPoint;
-							_x setVariable ["axeHLight", 0, false];
 							};
 						};
 					};
 				};
 			}else{//change brightness
-				if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<_hsLPDist)then{
-				_litCount = _litCount +1;
-				//if(_debug)then{axeDiagLog = format["HL:EXISTS LP:%1 | _brtns:%2",_x,_brtns];publicVariable "axeDiagLog";};
-				_chnGCount = _chnGCount + 1;
-				_x setVariable ["brtns", _brtns, false];
-				//[_lmpCol,_brtns,_lmpCol,_objLightPoint] call axe_lightPoint;
-				_objLightPoint setLightColor _lmpCol;
-				_objLightPoint setLightBrightness _brtns;
-				_objLightPoint setLightAmbient _lmpCol;
+				if(player distance _x < _lpDist)then{
+					if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<_hsLPDist)then{
+					_litCount = _litCount +1;
+					//if(_debug)then{axeDiagLog = format["HL:EXISTS LP:%1 | _brtns:%2",_x,_brtns];publicVariable "axeDiagLog";};
+					_chnGCount = _chnGCount + 1;
+					_x setVariable ["brtns", _brtns, false];
+					//[_lmpCol,_brtns,_lmpCol,_objLightPoint] call axe_lightPoint;
+					_objLightPoint setLightColor _lmpCol;
+					_objLightPoint setLightBrightness _brtns;
+					_objLightPoint setLightAmbient _lmpCol;
+					};
+				}else{
+				deleteVehicle _objLightPoint;
+				_x setVariable ["axeHLight", 0, false];
 				};
 			};
 		};
