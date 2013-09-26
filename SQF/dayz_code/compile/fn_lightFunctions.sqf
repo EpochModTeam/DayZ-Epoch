@@ -29,7 +29,7 @@ axe_streetLamps=[];
 								_x switchlight "on";
 								;
 								};
-							_sleeptime=(random 220)/100;
+							_sleeptime=(random 100)/100;
 							sleep _sleeptime;
 							};
 							_x switchlight "off";
