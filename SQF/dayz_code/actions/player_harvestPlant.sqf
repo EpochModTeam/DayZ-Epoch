@@ -93,18 +93,26 @@ if (count(_findNearestTree) >= 1) then {
 
 	if (_proceed) then {
 
+		_invResult = false;
+		_i = 0;
 		for "_x" from 1 to _countOut do {
-			player addMagazine _itemOut;
+			_invResult = [player,_itemOut] call BIS_fnc_invAdd;
+			if(_invResult) then {
+				_i = _i + 1;
+			};
 		};
-			
-		// chop down tree
-		if("" == typeOf _tree) then {
-			_tree setDamage 1;
+		
+		if(_i != 0) then {
+			// chop down tree
+			if("" == typeOf _tree) then {
+				_tree setDamage 1;
+			};
+			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
+		
+			cutText [format["\n\n%1 of %2 has been successfully added to your inventory.", _i,_itemOut], "PLAIN DOWN"];
+		} else {
+			cutText [format["\n\n%1 of %2 could not be added to your inventory. (not enough room?)", _i,_itemOut], "PLAIN DOWN"];
 		};
-		//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
-
-		cutText [format["\n\n%1 of %2 has been successfully added to your inventory.", _countOut,_itemOut], "PLAIN DOWN"];
-
 	} else {
 		r_interrupt = false;
 		if (vehicle player == player) then {

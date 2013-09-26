@@ -875,7 +875,9 @@ class RscDisplayGear
 {
 	idd = 106;
 	enableDisplay = 1;
+	onLoad = "_this call fn_gearMenuChecks;[] spawn object_monitorGear; {player removeMagazines _x} forEach MeleeMagazines; call gear_ui_init; if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\ca\ui\scripts\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\ca\ui\scripts\handleGear.sqf'; _dummy;";
 	onUnload = "call player_gearSync; call dayz_forceSave;";
+	
 	class controls
 	{
 		class CA_Filter_Icon: RscPicture
