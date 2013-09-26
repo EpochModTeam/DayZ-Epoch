@@ -11,18 +11,15 @@ private ["_sunrise","_slpTime","_lpRange","_hsRange","_nrGen","_genCount","_rndL
 _stHr = _this select 0;
 _fnHr = _this select 1;
 _doHouse = _this select 2;
-//_doStreet = _this select 3;//Street Lights ? NOT USED - To be used for sparks and sound effects on failed street lights
-_doTower = _this select 4;
-
-_ndGen = _this select 5;
-_rndLightsIn = _this select 6;
-_trgRng = _this select 7;
-_rngPlyr = _this select 8;
-//_trigDist = _this select 9;
-_lmpCol = _this select 10;
-_genClass = _this select 11;
-_lpRange = _this select 12;
-_slpTime = _this select 14;
+_doTower = _this select 3;
+_ndGen = _this select 4;
+_rndLightsIn = _this select 5;
+_trgRng = _this select 6;
+_rngPlyr = _this select 7;
+_lmpCol = _this select 8;
+_genClass = _this select 9;
+_slpTime = _this select 10;
+_lpRange = _rngPlyr -20;
 _doLight = true;
 _nrGen = [];
 _genCount = 0;
