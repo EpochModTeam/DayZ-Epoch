@@ -118,7 +118,7 @@ if (count(_findNearestRock) >= 1) then {
 			
 			// break rock
 			if("" == typeOf _rock) then {
-				_rock setDamage 100;
+				_rock setDamage 1;
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _rock];
 
