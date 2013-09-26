@@ -2717,7 +2717,7 @@ class CfgMagazines {
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemSledge"};
-				output[] = {{"PartGeneric",1}};
+				output[] = {{"PartGeneric",1},{"ItemWaterbottleUnfilled",1}};
 				input[] = {{"PartOre",4},{"ItemWaterbottle",1}};
 			};			
 		};
