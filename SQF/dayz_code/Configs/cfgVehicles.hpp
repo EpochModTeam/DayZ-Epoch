@@ -1374,6 +1374,8 @@ class CfgVehicles {
 	//class NonStrategic;
 	class BuiltItems: NonStrategic{};
 	class ModularItems: NonStrategic{
+
+		placement = "vertical";
 	
 		class DestructionEffects {
 			class Sound {
