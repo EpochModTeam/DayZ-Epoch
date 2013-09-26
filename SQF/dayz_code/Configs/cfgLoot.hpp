@@ -388,7 +388,8 @@ class CfgLoot {
 			"8Rnd_9x18_MakarovSD",
 			"ItemComboLock",
 			"SmokeShell",
-			"FoodMRE"
+			"FoodMRE",
+			"ItemHotwireKit"
 		},
 		{
 			0.3,
@@ -399,8 +400,9 @@ class CfgLoot {
 			0.08,
 			0.01,
 			0.07,
-			0.05,
-			0.04
+			0.04,
+			0.04,
+			0.01
 		}
 	};
 	hunter[] = {
