@@ -30,7 +30,7 @@ if (_canLoot) then {
 	
 	if (_noOneNear) then {
 	
-		_positions =	getArray (_config >> "lootPos");
+		_positions =	getArray (_config >> "lootPosZombie");
 		
 		if (count _positions > 0) then {
 			
