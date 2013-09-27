@@ -22,9 +22,9 @@ if (_removed == 1) then {
 				publicVariable "dayzLockVehicle";
 			};
 
-			// player moveInDriver _vehicle;
-
 			/*
+			player moveInDriver _vehicle;
+
 			if (local vehicle player) then {
 				vehicle player engineOn true; 
 			};

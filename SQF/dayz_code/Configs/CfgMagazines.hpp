@@ -10,6 +10,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\canvas.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_canvas_ca.paa";
 		descriptionShort = "Used to temporarily unlock vehicle and start them";
+		weight = 2;
 	};
 
 	class ItemCanvas: CA_Magazine
