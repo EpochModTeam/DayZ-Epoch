@@ -1,6 +1,6 @@
 /*
 	DayZ Epoch Lighting System - Light Functions
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email axeman@thefreezer.co.uk.
+	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com or vbawol@veteranbastards.com.
 */
 axe_returnStreetLights={
 private["_lights","_objName","_rng","_nrstGen","_rndLights","_sleeptime"];
@@ -24,18 +24,26 @@ axe_streetLamps=[];
 							for "_s" from 1 to 8 do {
 								if(_s%2==0)then{
 								_x switchlight "off";
+								
 								}else{
 								_x switchlight "on";
+								;
 								};
-							_sleeptime=(random 220)/100;
+							_sleeptime=(random 100)/100;
 							sleep _sleeptime;
 							};
 							_x switchlight "off";
+							//axeDiagLog = format["FN:SL NEW OFF:%1",_x];
+							//publicVariable "axeDiagLog";
 						}else{
 						_x switchlight "on";
+						//axeDiagLog = format["FN:SL NEW ON:%1",_x];
+						//publicVariable "axeDiagLog";
 						};
 					}else{
 					_x switchlight "on";
+					//axeDiagLog = format["FN:SL NEW ON:%1",_x];
+					//publicVariable "axeDiagLog";
 					};
 				[axe_streetLamps , [_x]] call BIS_fnc_arrayPush;
 				};
@@ -58,6 +66,8 @@ _lp setLightBrightness _brt;
 _lp setLightAmbient _amb;
 _lp setDir _dir;
 _lp setVectorUp _vect;
+//axeDiagLog = format["FN:LP NEW CREATE:%1",_lp];
+//publicVariable "axeDiagLog";
 _lp
 };
 axe_lightPoint={
@@ -69,6 +79,8 @@ _lp = _this select 3;
 _lp setLightColor _col;
 _lp setLightBrightness _brt;
 _lp setLightAmbient _amb;
+//axeDiagLog = format["FN:LP EXISTS LIGHT:%1",_lp];
+//publicVariable "axeDiagLog";
 };
 axe_towerLight={
 private["_twr","_lCol","_lbrt","_lamb","_oset","_twrPos","_rad","_a","_b","_ang","_nrTLs","_doLit"];
@@ -83,7 +95,8 @@ _oset=14;
 _nrTLs= position _twr nearObjects ["#lightpoint",20];
 
 	if(count _nrTLs > 3)then{
-	
+	//axeDiagLog = format["FN:TL FOUND LP:%1",count _nrTLs];
+	//publicVariable "axeDiagLog";
 		{
 			if(_doLit)then{
 			[_lCol,_lbrt,_lamb,_x] call axe_lightPoint;
@@ -94,6 +107,8 @@ _nrTLs= position _twr nearObjects ["#lightpoint",20];
 		}forEach _nrTLs;
 		
 	}else{
+	//axeDiagLog = format["FN:TL NEW LPS:%1",_twr];
+	//publicVariable "axeDiagLog";
 		if(_doLit)then{
 			for "_tls" from 1 to 4 do {
 			_ang=(360 * _tls / 4)-_oset;

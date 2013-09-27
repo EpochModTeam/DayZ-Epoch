@@ -626,6 +626,16 @@
 			<French>\n\n%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
 			<Czech>\n\n%1 musí být ve tvém hlavním inventáři pro %2.</Czech>
 		</Key>
+		<Key ID="str_player_32">
+			<Original>\n\nYou must be close to a rock to mine ore.</Original>
+			<English>\n\nYou must be close to a rock to mine ore.</English>
+			<German>\n\nSie müssen in der Nähe von einem Felsen Mine Erz sein.</German>
+			<Russian>\n\nВы должны быть близко к скале, чтобы добывать руду.</Russian>
+			<Spanish>\n\nDebe estar cerca de una roca de mineral de la mina.</Spanish>
+			<Dutch>\n\nJe moet dicht bij een rots te mijnen erts te zijn.</Dutch>
+			<French>\n\nVous devez être à proximité d'une roche à la mine.</French>
+			<Czech>\n\nMusíte být blízko k rocku až dolu rudy.</Czech>
+		</Key>
 		<Key ID="str_player_beinglooted">
 			<Original>%1 is already being looted by someone else.</Original>
 			<English>%1 is already being looted by someone else.</English>

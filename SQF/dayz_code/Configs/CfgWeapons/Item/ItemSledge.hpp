@@ -18,7 +18,12 @@ class ItemSledge: ItemCore
 			output[]=
 			{
 				"MeleeSledge"
-			};
+			};	
+		};
+		class MineOre
+		{
+			text="Mine Ore";
+			script="spawn player_mineOre;";
 		};
 	};
 };
