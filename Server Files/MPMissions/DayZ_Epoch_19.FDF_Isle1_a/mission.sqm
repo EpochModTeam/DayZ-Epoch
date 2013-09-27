@@ -1170,10 +1170,10 @@ class Mission
 	};
 	class Markers
 	{
-		items=17;
+		items=15;
 		class Item0
 		{
-			position[]={10126.552,19.767424,10494.726};
+			position[]={10788.115,90.416954,8680.3896};
 			name="center";
 			type="Empty";
 		};
@@ -1185,13 +1185,13 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={9997.6689,76.535988,4629.1968};
+			position[]={10772.252,8.8704214,5547.606};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={7427.2207,54.307949,4312.021};
+			position[]={12156.554,4.1533175,11002.222};
 			name="spawn1";
 			type="Empty";
 		};
@@ -1203,91 +1203,75 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={12012.802,21.99192,5682.3721};
+			position[]={7914.2358,9.5998287,7496.2734};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={14423.152,0.26354748,8392.2637};
+			position[]={7867.2437,7.0066466,8968.2842};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={11972.645,150.44453,8292.459};
-			name="Tradercitystary";
-			text="Trader City Stary";
-			type="mil_circle";
+			position[]={10015.868,5.0297446,5963.0625};
+			name="wholesaleSouth";
+			text="Wholesaler";
+			type="mil_dot";
 			colorName="ColorBlack";
 		};
 		class Item8
 		{
-			position[]={13443.702,0.10039671,4692.0508};
-			name="wholesaleSouth";
+			position[]={14853.64,37.77092,7646.6982};
+			name="boatTraderEast";
 			text="Wholesaler";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
 		class Item9
 		{
-			position[]={13532.614,3.0083523,6355.9497};
-			name="boatTraderEast";
-			text="Wholesaler";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item10
-		{
-			position[]={13497.367,0.2706908,4004.9241};
+			position[]={11897.247,2.0606923,5307.1626};
 			name="BoatDealerSouth";
 			text="Boat Dealer";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item11
+		class Item10
 		{
-			position[]={12060.471,158.85699,12638.533};
+			position[]={8294.4307,5.0005341,4347.4355};
 			name="AirVehicles";
 			text="Aircraft Dealer";
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item12
+		class Item11
 		{
-			position[]={12018.378,24.85491,15531.034};
+			position[]={13572.653,41.133896,7520.5161};
 			name="BanditDen";
 			text="Bandit Camp";
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item13
+		class Item12
 		{
-			position[]={11447.91,317.27109,11364.536};
-			name="Klen";
-			text="Trader City Klen";
+			position[]={9660.5234,25.000839,10888.863};
+			name="Jesco";
+			text="Trader City Jesco";
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item14
+		class Item13
 		{
-			position[]={13441.16,1.1406164,5429.3013};
-			name="BoatDealerEast";
-			text="Boat Dealer";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item15
-		{
-			position[]={7672.9351,23.871973,10941.484};
+			position[]={7979.0151,22.484041,10603.889};
 			name="TradercityBash";
-			text="Trader City Bash";
+			text="Trader City Berezniki";
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item16
+		class Item14
 		{
-			position[]={12944.227,210.19823,12766.889};
+			position[]={9728.8066,5.0182734,4045.4143};
 			name="HeroTrader";
 			text="Hero Camp";
 			type="mil_dot";
@@ -1296,27 +1280,10 @@ class Mission
 	};
 	class Sensors
 	{
-		items=3;
+		items=2;
 		class Item0
 		{
-			position[]={11971.841,150.1813,8290.7109};
-			a=100;
-			b=100;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			name="zonestary";
-			expCond="(player distance zonestary) < 100;";
-			expActiv="TitleText[""Now entering trader city Stary"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; canbuild = true;";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={7672.1323,23.481419,10939.736};
+			position[]={7987.2495,7.9986267,10603.404};
 			a=100;
 			b=100;
 			activationBy="WEST";
@@ -1325,15 +1292,16 @@ class Mission
 			age="UNKNOWN";
 			name="zonebash";
 			expCond="(player distance zonebash) < 100;";
-			expActiv="TitleText[""Now entering trader city Bash"",""PLAIN DOWN""]; canbuild = false;";
+			expActiv="TitleText[""Now entering trader city Berezniki"",""PLAIN DOWN""]; canbuild = false;";
 			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
+				soundDet="arabian_market_3";
 			};
 		};
-		class Item2
+		class Item1
 		{
-			position[]={11447.472,317.26886,11364.504};
+			position[]={9656.8906,25.000839,10889.035};
 			a=100;
 			b=100;
 			activationBy="WEST";
@@ -1342,10 +1310,11 @@ class Mission
 			age="UNKNOWN";
 			name="zoneklen";
 			expCond="(player distance zoneklen) < 100;";
-			expActiv="TitleText[""Now entering trader city Klen"",""PLAIN DOWN""]; canbuild = false;";
+			expActiv="TitleText[""Now entering trader city Jesco"",""PLAIN DOWN""]; canbuild = false;";
 			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
+				soundDet="arabian_market_3";
 			};
 		};
 	};

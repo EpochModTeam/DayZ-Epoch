@@ -2707,10 +2707,10 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Ore";
+		displayName = "Iron Ore";
 		model = "\dayz_equip\models\trash_tincan.p3d";
 		picture = "\dayz_equip\textures\equip_tincan_ca.paa";
-		descriptionShort = "Ore: Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.";
+		descriptionShort = "Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.";
 		class ItemActions {
 			class Crafting
 			{

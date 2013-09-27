@@ -51,8 +51,8 @@ if (count(_findNearestRock) >= 1) then {
 		if(_countOut<1)then{_countOut=4};
 
 		//diag_log format["DEBUG ROCK DISTANCE: %1 - %2 = %3", _rockBox,_distance2d,(_distance3d-_distance2d)];
-		axeDiagLog = format["DEBUG ROCK DISTANCE: _rockBox:%1 | _distance2d:%2  | typeOf:%3 | alive:%4 | _countOut:%5 | damage:%6", _rockBox,_distance2d,typeOf _rock,alive _rock,_countOut,damage _rock ];
-		publicVariable "axeDiagLog";
+		//axeDiagLog = format["DEBUG ROCK DISTANCE: _rockBox:%1 | _distance2d:%2  | typeOf:%3 | alive:%4 | _countOut:%5 | damage:%6", _rockBox,_distance2d,typeOf _rock,alive _rock,_countOut,damage _rock ];
+		//publicVariable "axeDiagLog";
 	
 		// Start ore mining
 		_counter = 0;
@@ -116,12 +116,12 @@ if (count(_findNearestRock) >= 1) then {
 			_item setdir (getDir player);
 			player reveal _item;
 			
-			// break rock
+			/* break rock
 			if("" == typeOf _rock) then {
 				_rock setDamage 1;
 			};
-			//diag_log format["DEBUG TREE DAMAGE: %1", _rock];
-
+			diag_log format["DEBUG TREE DAMAGE: %1", _rock];
+			*/
 			cutText [format["\n\n%1 piles of ore has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
 
 		} else {
