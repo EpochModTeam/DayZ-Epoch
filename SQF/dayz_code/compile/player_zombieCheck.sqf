@@ -8,84 +8,81 @@ _attacked = false;
 	_type = "zombie";
 
 	if (alive _x && _continue) then {
-		
-        //if (local _x) then {
 			
-			_dist = (_x distance _refObj);
+		_dist = (_x distance _refObj);
 			
-			_chance = 1;
-			if ((_dist < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
+		_chance = 1;
+		if ((_dist < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
 	
-				[_x,"attack",(_chance),true] call dayz_zombieSpeak;
-				//perform an attack
-				_last = _x getVariable["lastAttack",0];
-				_entHeight = (getPosATL _x) select 2;
-				_delta = _pHeight - _entHeight;
-					if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then
-					{
-						[_x, _type] spawn player_zombieAttack;
-					_x setVariable["lastAttack",time];
-				};
-				_attacked = true;
+			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
+			//perform an attack
+			_last = _x getVariable["lastAttack",0];
+			_entHeight = (getPosATL _x) select 2;
+			_delta = _pHeight - _entHeight;
+				if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then
+				{
+					[_x, _type] spawn player_zombieAttack;
+				_x setVariable["lastAttack",time];
+			};
+			_attacked = true;
+		} else {
+			if (speed _x < 4) then {
+				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
 			} else {
-				if (speed _x < 4) then {
-					[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
-				} else {
-					[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
-				};
+				[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
 			};
-			//Noise Activation
-			_targets = _x getVariable ["targets",[]];
-			if (!(_refObj in _targets)) then {
-				if (_dist < DAYZ_disAudial) then {
-					if (DAYZ_disAudial > 80) then {
+		};
+		//Noise Activation
+		_targets = _x getVariable ["targets",[]];
+		if (!(_refObj in _targets)) then {
+			if (_dist < DAYZ_disAudial) then {
+				if (DAYZ_disAudial > 80) then {
 					
-						_targets set [count _targets, (driver _refObj)];
-						_x setVariable ["targets",_targets,true];
+					_targets set [count _targets, (driver _refObj)];
+					_x setVariable ["targets",_targets,true];
 										
-					} else {
+				} else {
 
-						_cantSee = [_x,_refObj] call dayz_losCheck;
-						if (!_cantSee) then
+					_cantSee = [_x,_refObj] call dayz_losCheck;
+					if (!_cantSee) then
+					{
+						_targets set [count _targets,(driver _refObj)];
+						_x setVariable ["targets",_targets,true];
+					}
+					else
+					{
+						if (_dist < (DAYZ_disAudial / 2)) then
 						{
 							_targets set [count _targets,(driver _refObj)];
 							_x setVariable ["targets",_targets,true];
-						}
-						else
-						{
-							if (_dist < (DAYZ_disAudial / 2)) then
-							{
-								_targets set [count _targets,(driver _refObj)];
-								_x setVariable ["targets",_targets,true];
-							};
 						};
 					};
 				};
 			};
-			//Sight Activation
-			_targets = _x getVariable ["targets",[]];
-			if (!(_refObj in _targets)) then {
-				if (_dist < DAYZ_disVisual) then {
+		};
+		//Sight Activation
+		_targets = _x getVariable ["targets",[]];
+		if (!(_refObj in _targets)) then {
+			if (_dist < DAYZ_disVisual) then {
 						
-					_tPos = (getPosASL _refObj);
-					_zPos = (getPosASL _x);
-					//_eyeDir = _x call dayz_eyeDir;
-					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
-					if (_inAngle) then {
+				_tPos = (getPosASL _refObj);
+				_zPos = (getPosASL _x);
+				//_eyeDir = _x call dayz_eyeDir;
+				_eyeDir = direction _x;
+				_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
+				if (_inAngle) then {
 
-						//LOS check
-						_cantSee = [_x,_refObj] call dayz_losCheck;
-						//diag_log ("LOS Check: " + str(_cantSee));
-						if (!_cantSee) then {
-							//diag_log ("Within LOS! Target");
-							_targets set [count _targets,(driver _refObj)];
-							_x setVariable ["targets",_targets,true];
-						};
+					//LOS check
+					_cantSee = [_x,_refObj] call dayz_losCheck;
+					//diag_log ("LOS Check: " + str(_cantSee));
+					if (!_cantSee) then {
+						//diag_log ("Within LOS! Target");
+						_targets set [count _targets,(driver _refObj)];
+						_x setVariable ["targets",_targets,true];
 					};
 				};
 			};
-		//};
+		};
 	};
 } forEach _listTalk;
 
