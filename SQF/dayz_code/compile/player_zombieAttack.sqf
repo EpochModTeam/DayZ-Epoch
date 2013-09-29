@@ -5,9 +5,13 @@ _vehicle = (vehicle player);
 
 _targets = _unit getVariable ["targets",[]];
 
-if (!dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith {};
+if (!dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith { 
+	//diag_log ("not attacking vehicle" + str(_vehicle));  
+};
 
-if ((speed _vehicle > 10)) exitWith {};
+if ((speed _vehicle > 10)) exitWith { 
+	//diag_log ("too fast abort attack" + str(_vehicle));
+};
 
 //Do the attack
 if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
@@ -23,7 +27,14 @@ if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
 };
 _dir = [_unit,player] call BIS_Fnc_dirTo;
 _unit setDir _dir;
-_unit playMove _move;
+
+// _unit playMove _move;
+
+if (local _unit) then {
+	_unit switchMove _move;
+} else {
+	[objNull,  _unit,  rSwitchMove,  _move] call RE;
+};
 
 //Wait
 sleep 0.3;

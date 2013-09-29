@@ -79,8 +79,7 @@ _key call server_hiveWrite;
 
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
-
-	_object allowDamage false;
+	_object setVehicleAmmo DZE_vehicleAmmo;
 
 	_object setVariable ["ObjectID", _oid, true];
 	
@@ -105,8 +104,4 @@ _key call server_hiveWrite;
 	publicVariable "dayzVehicleInit";
 	
 	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
-
-	sleep 1.0;
-
-	_object allowDamage true;
 };

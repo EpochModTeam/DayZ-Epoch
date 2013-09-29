@@ -242,19 +242,25 @@ fnc_usec_damageBleed = {
 };
 
 fnc_usec_recoverUncons = {
-	//same actions as in the EH, just timed differently
-	player setVariable ["NORRN_unconscious", false, true];
-	player setVariable ["unconsciousTime", 0, true];
+	player setVariable ["NORRN_unconscious",false,true];
+	player setVariable ["unconsciousTime",0,true];
 	player setVariable ["USEC_isCardiac",false,true];
-	player setVariable["medForceUpdate",true,true];
+	// player setVariable["medForceUpdate",true,true];
+
+	/*
 	sleep 1;
 	usecEpi = [player,player];
 	publicVariable "usecEpi";
+	*/
+
 	r_player_unconscious = false;
-	sleep 1;
 	r_player_cardiac = false;
 	r_player_handler1 = false;
-	if(animationState player != "AmovPpneMstpSnonWnonDnon_healed") then {
-		player switchMove "AmovPpneMstpSnonWnonDnon_healed";
-	};
+
+	sleep 1;
+
+	disableUserInput false;
+	[objNull,player,rSwitchMove,"AinjPpneMstpSnonWnonDnon"] call RE;
+	player switchMove "AinjPpneMstpSnonWnonDnon";
+	player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
 };

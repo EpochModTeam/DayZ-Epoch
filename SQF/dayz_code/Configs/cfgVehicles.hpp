@@ -2777,6 +2777,7 @@ class CfgVehicles {
 	};
 	class VaultStorage: Land_A_tent
 	{
+		placement = "vertical";
 		vehicleClass = "Survival";
 		displayName = "Safe";
 		model = "\z\addons\dayz_epoch\models\safe.p3d";
@@ -2790,6 +2791,7 @@ class CfgVehicles {
 	};	
 	class VaultStorageLocked: Land_A_tent
 	{
+		placement = "vertical";
 		vehicleClass = "Survival";
 		displayName = "Locked Safe";
 		model = "\z\addons\dayz_epoch\models\safe.p3d";

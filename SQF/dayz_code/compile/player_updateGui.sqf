@@ -154,5 +154,73 @@ if(_humanity != dayz_lastHumanity) then {
 };
 */
 
+
+/*
+Opt-in tag system with friend tagging
+*/
+_targetControl = _display displayCtrl 1199;
+_string = "";
+_humanityTarget = cursorTarget;
+if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarget) then {
+
+	_distance = (player distance _humanityTarget);
+
+	if (_distance < DZE_HumanityTargetDistance) then {
+		
+		_size = (1-(floor(_distance/5)*0.1)) max 0.1;
+
+		// Display name if player opt-in or if friend
+		_friendlies = player getVariable ["friendlies", []];
+		_charID = player getVariable ["CharacterID", "0"];
+
+		_rcharID = _humanityTarget getVariable ["CharacterID", "0"];
+		_rfriendlies = _humanityTarget getVariable ["friendlies", []];
+		_rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
+			
+		if ((_rcharID in _friendlies) and (_charID in _rfriendlies)) then {
+
+			if (!(_charID in _rfriendlyTo)) then {
+
+				// diag_log format["IS FRIENDLY: %1", _player];
+				_rfriendlyTo set [count _rfriendlyTo, _charID];
+				_humanityTarget setVariable ["friendlyTo", _rfriendlyTo, true];
+				titleText [format["You and %1 are now tagged as friendlies.", (name _humanityTarget)], "PLAIN DOWN"];
+
+			};
+	
+			// <br /><t %2 align='center' size='0.7'>Humanity: %3</t>
+
+			_color = "color='#339933'";
+			_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+		
+		} else {
+
+			// Humanity checks
+			_humanity = _humanityTarget getVariable ["humanity",0];
+
+			_color = "color='#ffffff'";
+			if(_humanity < -5000) then {
+				_color = "color='#ff0000'";
+			} else {
+				if(_humanity > 5000) then {
+					_color = "color='#3333ff'";
+				};
+			};
+			if(_humanityTarget getVariable ["DZE_display_name", false]) then {
+				_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+			};
+		};
+	};
+};
+
+// update gui if changed
+if (dayz_humanitytarget != _string) then {
+	_targetControl ctrlSetStructuredText (parseText _string);
+	dayz_humanitytarget = _string;
+};
+
+
+
+
 _array = [_foodVal,_thirstVal];
 _array

@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.2.36";
+		version = "1.0.2.37";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -876,6 +876,8 @@ class CfgBuildingLoot {
 			{"G36A_camo","weapon"},
 			{ "Pecheneg_DZ","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
+			{"2000Rnd_762x51_M134","magazine"},
+			
 		};
 		itemChance[] =	{
 			0.02,
@@ -888,7 +890,7 @@ class CfgBuildingLoot {
 			0.02,
 			0.01,
 			0.02,
-			0.4,
+			0.39,
 			0.19,
 			0.05,
 			0.01,
@@ -896,6 +898,7 @@ class CfgBuildingLoot {
 			0.03,
 			0.05,
 			0.02,
+			0.01,
 			0.01,
 			0.01,
 			0.01,
@@ -929,7 +932,8 @@ class HeliCrash_No50s: Default {
 			//{"G36_C_SD_camo","weapon"},
 			{"G36A_camo","weapon"},
 			{"G36K_camo","weapon"},
-			{"100Rnd_762x54_PK","magazine"}
+			{"100Rnd_762x54_PK","magazine"},
+			{"2000Rnd_762x51_M134","magazine"},
 		};
 		itemChance[] =	{
 			0.01,
@@ -940,7 +944,7 @@ class HeliCrash_No50s: Default {
 			0.02,
 			0.01,
 			0.02,
-			0.44,
+			0.43,
 			0.23,
 			0.04,
 			0.01,
@@ -950,6 +954,7 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			//0.01, 
+			0.01,
 			0.01,
 			0.01,
 			0.01
@@ -1197,6 +1202,7 @@ class HeliCrash_No50s: Default {
 			{"100Rnd_762x54_PK","magazine"},
 			{ "militaryclothes","single" },
 			{"NVGoggles","weapon"},
+			{"2000Rnd_762x51_M134","magazine"},
 		};
 		itemChance[] =	{
 			0.01,
@@ -1236,7 +1242,8 @@ class HeliCrash_No50s: Default {
 			0.05,
 			0.03,
 			0.08,
-			0.35,
+			0.34,
+			0.01,
 			0.01,
 			0.01,
 			0.01,
@@ -2195,6 +2202,7 @@ class HeliCrash_No50s: Default {
 			{ "","militaryclothes" },
 			{"WeaponHolder_ItemMachete", "object"},
 			{ "SCAR_H_LNG_Sniper_SD","weapon" },
+			{"2000Rnd_762x51_M134","magazine"},
 		};
 		itemChance[] =	{
 			0.03,
@@ -2239,7 +2247,7 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.05,
 			0.05,
-			0.14,
+			0.13,
 			0.01,
 			0.01,
 			0.01,
@@ -2248,6 +2256,7 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.05,
 			0.02,
+			0.01,
 			0.01
 		};
 	};

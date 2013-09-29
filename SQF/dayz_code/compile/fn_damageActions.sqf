@@ -6,6 +6,8 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 ************************************************************/
 private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1","_action2","_x","_vehicle","_unit","_vehType","_displayName","_ammoQty","_ammoSerial","_weapon","_magTypes","_type","_typeVeh","_index","_inventory","_unitTo","_isEngineer","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasJerryE","_hasWire","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_bag","_classbag","_isDisallowRefuel","_hasBarrel","_hasBarrelE"];
 
+disableSerialization;
+
 if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 
 _menClose = cursorTarget;
@@ -41,10 +43,10 @@ if (_inVehicle) then {
 	r_player_lastSeat = [];
 };
 
-if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
+if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
 	_unit = 		cursorTarget;
 	_isDisallowRefuel = typeOf _unit in ["M240Nest_DZ"];
-	player reveal _unit;
+	// player reveal _unit;
 	_vehClose = 	(getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5]; //nearestObjects [player, ["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"], 5];
 	_hasVehicle = 	({alive _x} count _vehClose > 0);
 	_unconscious = 	_unit getVariable ["NORRN_unconscious", false];

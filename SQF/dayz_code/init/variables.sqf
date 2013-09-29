@@ -152,6 +152,7 @@ boil_tin_cans = [
 ];
 
 dayz_combination = "";
+dayz_humanitytarget = "";
 dayz_combatLog = "";
 canRoll = true;
 
@@ -204,6 +205,7 @@ dayz_resetSelfActions = {
 	s_player_fillfuel = 	-1;
 	s_player_grabflare = 	-1;
 	s_player_callzombies = 	-1;
+	s_player_showname = 	-1;
 	s_player_debuglootpos = 	-1;
 	s_player_pzombiesattack = 	-1;
 	s_player_pzombiesvision =	-1;
@@ -432,6 +434,9 @@ if(isNil "DZE_teleport") then {
 if(isNil "DZE_BuildingLimit") then {
 	DZE_BuildingLimit = 150;
 };
+if(isNil "DZE_HumanityTargetDistance") then {
+	DZE_HumanityTargetDistance = 25;
+};
 
 
 /*
@@ -490,6 +495,9 @@ if(isServer) then {
 	};
 	if(isNil "EpochEvents") then {
 		EpochEvents = [];
+	};
+	if(isNil "DZE_vehicleAmmo") then {
+		DZE_vehicleAmmo = 0;
 	};
 	
 	dayz_flyMonitor = [];		//used for monitor flies

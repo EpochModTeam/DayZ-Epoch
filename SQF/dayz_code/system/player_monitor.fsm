@@ -1237,13 +1237,6 @@ class FSM
        "	};" \n
        "};" \n
        "" \n
-       "dayz_friendliesCheck = [] spawn {" \n
-       "	while {true} do {" \n
-       "		call player_friendliesCheck;" \n
-       "		sleep 5;" \n
-       "	};" \n
-       "};" \n
-       "" \n
        "dayz_Totalzedscheck = [] spawn {" \n
        "	while {true} do {" \n
        "		dayz_maxCurrentZeds = {alive _x} count entities ""zZombie_Base"";" \n
