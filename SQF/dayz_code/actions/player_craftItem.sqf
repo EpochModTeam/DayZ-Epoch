@@ -19,7 +19,7 @@ class ItemActions
 	};
 };	
 */
-private ["_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons"];
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons"];
 
 if(TradeInprogress) exitWith { cutText ["\n\nCrafting already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -71,6 +71,7 @@ if (_canDo) then {
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 	
 	_craft_doLoop = true;
+	_tradeComplete = 0;
 
 	while {_craft_doLoop} do {
 
@@ -178,12 +179,14 @@ if (_canDo) then {
 									player addMagazine _itemOut;
 								};
 
+								_tradeComplete = _tradeComplete+1;
+
 								_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 	
-							// Add crafted item
-							cutText [format["\n\nCrafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
-							// sleep here 
-							sleep 1;
+								// Add crafted item
+								cutText [format["\n\nCrafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+								// sleep here 
+								sleep 1;
 	
 							} forEach _selectedRecipeOutput;
 						};
@@ -207,7 +210,7 @@ if (_canDo) then {
 	
 			} else {
 				_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-				cutText [format["\n\nMissing %1 more of %2",_missingQty, _textMissing], "PLAIN DOWN"];
+				cutText [format["\n\n%3 complete, missing %1 more of %2",_missingQty, _textMissing,_tradeComplete], "PLAIN DOWN"];
 				_craft_doLoop = false;
 			};
 		} else {

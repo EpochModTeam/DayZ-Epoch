@@ -35,7 +35,8 @@ if (count _inventory > 0) then {
 	//Add weapons
 	{
 		if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
-
+		if (_x == "ItemMatchbox") then { _x = "ItemMatchbox_DZE" }; // Convert Crossbow to Crossbow_DZ
+		
 		//Is item legal?
 		_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
 		if (_isOK) then {

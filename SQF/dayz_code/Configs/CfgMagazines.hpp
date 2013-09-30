@@ -1,6 +1,134 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
 
+	// Ammmo
+	class 100Rnd_762x54_PK : CA_Magazine { 
+		scope = 2; 
+		displayName = "PKM Mag."; 
+		picture = "\CA\weapons\data\equip\m_pk_ca.paa"; 
+		ammo = "B_762x54_Ball"; 
+		count = 100; 
+		type = "256";
+		initSpeed = 850; 
+		sound[] = {"\ca\Weapons\Data\Sound\PK_1_SS", 3.16228, 1, 1500}; 
+		tracersEvery = 4; 
+		lastRoundsTracer = 4; 
+		nameSound = "mgun"; 
+		descriptionShort = "Caliber: 7.62x54mm <br/>Rounds: 100 <br/>Used in: PK"; 
+		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x54_PK.p3d"; 
+	};
+
+	class 29Rnd_30mm_AGS30 : CA_Magazine { 
+		scope = 2; 
+		displayName = "HE Rounds"; 
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		ammo = "G_30mm_HE"; 
+		count = 29; 
+		type = "256";
+		initSpeed = 185; 
+		maxLeadSpeed = 100; 
+		nameSound = "grenadelauncher"; 
+		weight = 16;
+	};
+
+	class 50Rnd_127x107_DSHKM : CA_Magazine { 
+		scope = 2; 
+		displayName = "DShKM"; 
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		model = "\z\addons\dayz_epoch\models\dshkm_mag.p3d";
+		ammo = "B_127x107_Ball"; 
+		count = 50; 
+		type = "256";
+		initSpeed = 850; 
+		maxLeadSpeed = 200; 
+		tracersEvery = 3; 
+		lastRoundsTracer = 5; 
+		nameSound = "mgun"; 
+		weight = 4;
+	};
+	class 100Rnd_127x99_M2 : CA_Magazine { 
+		scope = 2; 
+		displayName = "M2 Machine Gun"; 
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		ammo = "B_127x99_Ball"; 
+		count = 100; 
+		type = "256";
+		initSpeed = 930; 
+		maxLeadSpeed = 200; 
+		tracersEvery = 3; 
+		lastRoundsTracer = 5; 
+		nameSound = "mgun"; 
+		weight = 8;
+	};
+	class 2000Rnd_762x51_M134 : CA_Magazine { 
+		count = 2000; 
+		scope = 2; 
+		displayName = "M134 7.62 Nato"; 
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		ammo = "B_762x51_3RndBurst"; 
+		type = "256";
+		maxLeadSpeed = 200; 
+		tracersEvery = 5; 
+		nameSound = "mgun";
+		weight = 50;
+	};
+	class 48Rnd_40mm_MK19 : CA_Magazine { 
+		scope = 2; 
+		displayName = "Mk. 19 40mm"; 
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		ammo = "G_40mm_HE"; 
+		count = 48; 
+		type = "256";
+		initSpeed = 240; 
+		maxLeadSpeed = 100; 
+		nameSound = "grenadelauncher"; 
+		weight = 25;
+	};
+
+	class 100Rnd_762x51_M240 : CA_Magazine { 
+		scope = 2; 
+		displayName = "100Rnd. M240"; 
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		count = 100; 
+		type = "256";
+		ammo = "B_762x51_Ball"; 
+		initSpeed = 900; 
+		tracersEvery = 4; 
+		lastRoundsTracer = 4; 
+		nameSound = "mgun"; 
+		descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 100 <br/>Used in: M240, Mk 48 Mod 0"; 
+		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x51_M240.p3d"; 
+	};
+	class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 { 
+		count = 200; 
+	};
+
+	class 200Rnd_556x45_M249 : CA_Magazine { 
+		scope = 2; 
+		displayName = "200Rnd. M249 Belt"; 
+		picture = "\CA\weapons\data\equip\m_m249_ca.paa"; 
+		ammo = "B_556x45_Ball"; 
+		count = 200; 
+		type = "256"; 
+		initSpeed = 915; 
+		sound[] = {"\ca\Weapons\Data\Sound\M249_1_SS", 17.7828, 1, 1300}; 
+		reloadMagazineSound[] = {"\ca\Weapons\Data\Sound\FAL_reload", 0.01, 1, 20}; 
+		tracersEvery = 4; 
+		lastRoundsTracer = 4; 
+		nameSound = "mgun"; 
+		descriptionShort = "Caliber: 5.56x45 mm NATO <br/>Rounds: 200  <br/>Used in: M249 SAW"; 
+		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\200Rnd_556x45_M249.p3d"; 
+	};
+
+	class 100Rnd_556x45_M249 : 200Rnd_556x45_M249 { 
+		displayName = "M249 Mag."; 
+		descriptionShort = "Caliber: 5.56x45mm NATO<br/>Rounds: 100<br/>Used in: M249"; 
+		count = 100; 
+		picture = "\CA\weapons_E\Data\icons\m_m245_CA.paa";  
+	};
+
+
+  // Items
 	class ItemHotwireKit: CA_Magazine
 	{
 		scope = 2;
@@ -2457,6 +2585,12 @@ class CfgMagazines {
 		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_40";
 		class ItemActions {
+			class Build {
+				text = "Build Fire";
+				script = "spawn player_build;";
+				require[] = {"ItemMatchbox_DZE"};
+				create = "Land_Fire_DZ";
+			};
 			class Crafting
 			{
 				text = "Craft Lumber";

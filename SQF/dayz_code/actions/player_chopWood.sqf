@@ -55,6 +55,8 @@ if (count(_findNearestTree) >= 1) then {
 
 			player playActionNow "Medic";
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
+
+			closeDialog 1;
 	
 			r_interrupt = false;
 			_animState = animationState player;

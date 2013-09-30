@@ -260,6 +260,12 @@ if (!isDedicated) then {
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
+		_shift = 	_this select 2;
+		_ctrl = 	_this select 3;
+		_alt =		_this select 4;
+
+		//diag_log format["Keypress: %1", _this];
+
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
 			
@@ -268,7 +274,7 @@ if (!isDedicated) then {
 			} else {
 				_inBuilding = [player] call fnc_isInsideBuilding;
 				_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
-				if (_inBuilding or (count _nearbyObjects > 0)) then {
+				if (!r_player_unconscious and (_inBuilding or (count _nearbyObjects > 0))) then {
 					[objNull, player, rSwitchMove,"GetOver"] call RE;
 					player playActionNow "GetOver";
 				};
@@ -308,14 +314,39 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
-		// numpad 8 0x48 now pgup 0xC9
-		if (_dikCode == 0xC9 or (_dikCode in actionKeys "User15")) then {
+		
+		// numpad 8 0x48 now pgup 0xC9 1
+		if ((_dikCode == 0xC9 and (!_alt or !_ctrl)) or (_dikCode in actionKeys "User15")) then {
 			DZE_Q = true;
 		};
 		// numpad 2 0x50 now pgdn 0xD1
-		if (_dikCode == 0xD1 or (_dikCode in actionKeys "User16")) then {
+		if ((_dikCode == 0xD1 and (!_alt or !_ctrl)) or (_dikCode in actionKeys "User16")) then {
 			DZE_Z = true;
 		};
+
+
+		// numpad 8 0x48 now pgup 0xC9 0.1
+		if ((_dikCode == 0xC9 and (_alt and !_ctrl)) or (_dikCode in actionKeys "User13")) then {
+			DZE_Q_alt = true;
+		};
+		// numpad 2 0x50 now pgdn 0xD1
+		if ((_dikCode == 0xD1 and (_alt and !_ctrl)) or (_dikCode in actionKeys "User14")) then {
+			DZE_Z_alt = true;
+		};
+
+
+		// numpad 8 0x48 now pgup 0xC9 0.01
+		if ((_dikCode == 0xC9 and (!_alt and _ctrl)) or (_dikCode in actionKeys "User7")) then {
+			DZE_Q_ctrl = true;
+		};
+		// numpad 2 0x50 now pgdn 0xD1
+		if ((_dikCode == 0xD1 and (!_alt and _ctrl)) or (_dikCode in actionKeys "User8")) then {
+			DZE_Z_ctrl = true;
+		};
+
+
+
+
 		// numpad 4 0x4B now Q 0x10
 		if (_dikCode == 0x10 or (_dikCode in actionKeys "User17")) then {
 			DZE_4 = true;

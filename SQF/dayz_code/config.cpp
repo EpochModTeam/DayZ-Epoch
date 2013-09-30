@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.2.37";
+		version = "1.0.2.38";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -877,7 +877,10 @@ class CfgBuildingLoot {
 			{ "Pecheneg_DZ","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
 			{"2000Rnd_762x51_M134","magazine"},
-			
+			{"29Rnd_30mm_AGS30","magazine"},
+			{"50Rnd_127x107_DSHKM","magazine"},
+			{"48Rnd_40mm_MK19","magazine"},
+			{"100Rnd_127x99_M2","magazine"},
 		};
 		itemChance[] =	{
 			0.02,
@@ -890,7 +893,7 @@ class CfgBuildingLoot {
 			0.02,
 			0.01,
 			0.02,
-			0.39,
+			0.35,
 			0.19,
 			0.05,
 			0.01,
@@ -903,6 +906,10 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01
 		};
 	};
 class HeliCrash_No50s: Default {
@@ -934,6 +941,10 @@ class HeliCrash_No50s: Default {
 			{"G36K_camo","weapon"},
 			{"100Rnd_762x54_PK","magazine"},
 			{"2000Rnd_762x51_M134","magazine"},
+			{"29Rnd_30mm_AGS30","magazine"},
+			{"50Rnd_127x107_DSHKM","magazine"},
+			{"48Rnd_40mm_MK19","magazine"},
+			{"100Rnd_127x99_M2","magazine"},
 		};
 		itemChance[] =	{
 			0.01,
@@ -957,7 +968,11 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			0.01,
-			0.01
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
 		};
 	};
 	class Hospital: Default {
@@ -1203,6 +1218,10 @@ class HeliCrash_No50s: Default {
 			{ "militaryclothes","single" },
 			{"NVGoggles","weapon"},
 			{"2000Rnd_762x51_M134","magazine"},
+			{"29Rnd_30mm_AGS30","magazine"},
+			{"50Rnd_127x107_DSHKM","magazine"},
+			{"48Rnd_40mm_MK19","magazine"},
+			{"100Rnd_127x99_M2","magazine"},
 		};
 		itemChance[] =	{
 			0.01,
@@ -1242,7 +1261,7 @@ class HeliCrash_No50s: Default {
 			0.05,
 			0.03,
 			0.08,
-			0.34,
+			0.30,
 			0.01,
 			0.01,
 			0.01,
@@ -1250,7 +1269,11 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			0.01,
-			0.01
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
 		};
 	};
 	class Hunting: Default {

@@ -612,6 +612,13 @@ if(!isDedicated) then {
 	DZE_CanPickup = true;
 	DZE_Q = false;
 	DZE_Z = false;
+
+	DZE_Q_alt = false;
+	DZE_Z_alt = false;
+
+	DZE_Q_ctrl = false;
+	DZE_Z_ctrl = false;
+
 	DZE_5 = false;
 	DZE_4 = false;
 	DZE_6 = false;
