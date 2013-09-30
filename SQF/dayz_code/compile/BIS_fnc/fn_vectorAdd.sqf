@@ -24,7 +24,7 @@ if ((count _p1) != (count _p2)) then {textLogFormat ["BIS_FNC Error: vectors not
 _return = [];
 _i = 0;
 {
-  if(count(_p2) <= _i) then {
+  if(_i <= (count(_p2) - 1)) then {
 	_return = _return + [_x + (_p2 select _i)];
   } else {
 	_return = _return + [_x];
