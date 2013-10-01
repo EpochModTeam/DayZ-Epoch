@@ -143,7 +143,7 @@ if ((count _upgrade) > 0) then {
 			_object setDir _dir;
 
 			// Set location
-			_object setPos _location;
+			_object setPosATL _location;
 
 			if (_lockable == 3) then {
 

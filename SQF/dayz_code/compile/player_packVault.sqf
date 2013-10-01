@@ -70,7 +70,7 @@ if(!isNull _obj and alive _obj) then {
 	deleteVehicle _obj;
 
 	_bag setdir _dir;
-	_bag setpos _pos;
+	_bag setposATL _pos;
 	player reveal _bag;
 
 	// Empty weapon holder 

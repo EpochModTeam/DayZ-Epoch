@@ -51,7 +51,7 @@ if(!isNull _obj) then {
 	//place tent (local)
 	_holder = createVehicle [_lockedClass,_pos,[], 0, "CAN_COLLIDE"];
 	_holder setdir _dir;
-	_holder setpos _pos;
+	_holder setPosATL _pos;
 	player reveal _holder;
 	
 	_holder setVariable["CharacterID",_ownerID,true];

@@ -260,6 +260,16 @@ if (!isDedicated) then {
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
+		
+		if (_dikCode in actionKeys "MoveForward") exitWith {r_interrupt = true};
+		if (_dikCode in actionKeys "MoveLeft") exitWith {r_interrupt = true};
+		if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true};
+		if (_dikCode in actionKeys "MoveBack") exitWith {r_interrupt = true};
+
+		//Prevent exploit of drag body
+		if ((_dikCode in actionKeys "Prone") and r_drag_sqf) exitWith { force_dropBody = true; };
+		if ((_dikCode in actionKeys "Crouch") and r_drag_sqf) exitWith { force_dropBody = true; };
+		
 		_shift = 	_this select 2;
 		_ctrl = 	_this select 3;
 		_alt =		_this select 4;
@@ -286,13 +296,7 @@ if (!isDedicated) then {
 			{
 				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 			};
-		//Prevent exploit of drag body
-		if ((_dikCode in actionKeys "Prone") and r_drag_sqf) then { force_dropBody = true; };
-		if ((_dikCode in actionKeys "Crouch") and r_drag_sqf) then { force_dropBody = true; };
-		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
-		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
-		if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
-		if (_dikCode in actionKeys "MoveBack") then {r_interrupt = true};
+		
 		if (_dikCode in actionKeys "ForceCommandingMode") then {_handled = true};
 		if (_dikCode in actionKeys "PushToTalk" and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;

@@ -499,6 +499,10 @@ if(isServer) then {
 	if(isNil "DZE_vehicleAmmo") then {
 		DZE_vehicleAmmo = 0;
 	};
+
+	if(isNil "DZE_BackpackGuard") then {
+		DZE_BackpackGuard = true;
+	};
 	
 	dayz_flyMonitor = [];		//used for monitor flies
 	DZE_FlyWorkingSet = [];

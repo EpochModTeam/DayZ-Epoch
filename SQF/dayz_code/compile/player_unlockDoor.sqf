@@ -7,6 +7,13 @@ private ["_ok"];
 
 if(!isNull dayz_selectedDoor) then {
 
+	if (!isNil 'KeyCodeTryTimer') then {
+		if(diag_tickTime > KeyCodeTryTimer) then {
+			KeyCodeTry = nil;
+			KeyCodeTryTimer = nil;
+		};
+	};
+
 	// our target
 	_obj = dayz_selectedDoor;
 
@@ -30,14 +37,25 @@ if(!isNull dayz_selectedDoor) then {
 		if(_obj animationPhase "Open_latch" == 0) then {
 			_obj animate ["Open_latch", 1];
 		};
+		KeyCodeTry = nil;
 
 	} else {
 		DZE_Lock_Door = "";
 		[player,"combo_locked",0,false] call dayz_zombieSpeak;
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 
-		_display = findDisplay 41144;
-		_display closeDisplay 3000;
+		if (isNil 'KeyCodeTry') then {KeyCodeTry = 0;};
+
+		KeyCodeTry = KeyCodeTry + 1;
+
+		if(KeyCodeTry >= 5) then {
+			
+			if (isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
+			
+			cutText ["Wrong code entered too many times wait 10 seconds", "PLAIN DOWN"];
+			_display = findDisplay 41144;
+			_display closeDisplay 3000;
+		};
 	};
 } else {
 	

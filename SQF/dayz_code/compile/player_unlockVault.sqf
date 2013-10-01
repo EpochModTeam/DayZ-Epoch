@@ -70,7 +70,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 			// Remove locked vault
 			deleteVehicle _obj;
 			_holder setdir _dir;
-			_holder setpos _pos;
+			_holder setPosATL _pos;
 			player reveal _holder;
 	
 			_holder setVariable["CharacterID",_ownerID,true];

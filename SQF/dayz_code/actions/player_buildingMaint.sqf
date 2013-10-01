@@ -93,7 +93,7 @@ if (_proceed) then {
 		_object setDir _dir;
 
 		// Set location
-		_object setPos _location;
+		_object setPosATL _location;
 
 		dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
 		publicVariableServer "dayzSwapObj";

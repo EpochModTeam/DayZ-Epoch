@@ -47,7 +47,7 @@ if(!isNull _obj and alive _obj) then {
 	//_bag = createVehicle ["WeaponHolder_ItemTent",_pos,[], 0, "CAN_COLLIDE"];
 	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	_object setdir _dir;
-	_object setpos _pos;
+	_object setposATL _pos;
 	player reveal _object;
 	
 	_holder = _object;

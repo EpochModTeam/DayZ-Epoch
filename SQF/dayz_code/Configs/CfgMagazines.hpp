@@ -10,7 +10,7 @@ class CfgMagazines {
 		count = 100; 
 		type = "256";
 		initSpeed = 850; 
-		sound[] = {"\ca\Weapons\Data\Sound\PK_1_SS", 3.16228, 1, 1500}; 
+		sound[] = {"\ca\Weapons\Data\Sound\PK_1_SS", 3.16228, 1, 1500};
 		tracersEvery = 4; 
 		lastRoundsTracer = 4; 
 		nameSound = "mgun"; 
@@ -137,7 +137,7 @@ class CfgMagazines {
 		displayName = "Hotwire kit";
 		model = "\z\addons\dayz_epoch\models\canvas.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_canvas_ca.paa";
-		descriptionShort = "Used to temporarily unlock vehicle and start them";
+		descriptionShort = "Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.";
 		weight = 2;
 	};
 
@@ -186,7 +186,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"sun_shade_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCanvas",1},{"PartWoodLumber",4}};
+				input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
 			};
 			class Crafting4
 			{
@@ -238,7 +238,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"light_pole_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
+				input[] = {{"ItemLightBulb",1},{"PartGeneric",1},{"PartWoodLumber",6}};
 			};
 		};
 	};
@@ -1075,7 +1075,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"wooden_shed_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+				input[] = {{"ItemCorrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
 			};
 			class Crafting1
 			{
@@ -1084,7 +1084,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"outhouse_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
+				input[] = {{"ItemCorrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
 			};
 			class Crafting2
 			{
@@ -1093,16 +1093,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"storage_shed_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
-			};
-			class Crafting3
-			{
-				text = "Craft Metal Floor";
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"workshop","fire"};
-				requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
-				output[] = {{"metal_floor_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemCorrugated",2},{"ItemPole",4},{"ItemTankTrap",2}};
+				input[] = {{"ItemCorrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
 			};
 		};
 	};
@@ -1132,7 +1123,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"rusty_gate_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemPole",3},{"ItemTankTrap",1}};
+				input[] = {{"ItemPole",3},{"ItemTankTrap",1}};
 			};
 			class Crafting2
 			{
@@ -1141,7 +1132,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"metal_panel_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemPole",4},{"ItemTankTrap",4}};
+				input[] = {{"ItemPole",4},{"ItemTankTrap",4}};
 			};
 			
 		};
@@ -1525,6 +1516,15 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "MetalPanel_DZ";
+			};
+			class Crafting
+			{
+				text = "Craft Metal Floor";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop","fire"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+				output[] = {{"metal_floor_kit",1}};
+				input[] = {{"metal_panel_kit",4}};
 			};
 		};
 	};
@@ -2035,7 +2035,7 @@ class CfgMagazines {
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_empty",1},{"ItemWoodFloor",1}};
+				output[] = {{"ItemWoodFloor",1}};
 				input[] = {{"ItemWoodFloorHalf",2}};
 				
 			};
@@ -2066,7 +2066,7 @@ class CfgMagazines {
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_empty",1},{"ItemWoodFloorHalf",1}};
+				output[] = {{"ItemWoodFloorHalf",1}};
 				input[] = {{"ItemWoodFloorQuarter",2}};
 				
 			};
@@ -2226,7 +2226,7 @@ class CfgMagazines {
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_empty",2},{"ItemWoodWall",1}};
+				output[] = {{"ItemWoodWall",1}};
 				input[] = {{"ItemWoodWallThird",3}};
 				
 			};
@@ -2759,7 +2759,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"deer_stand_kit",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodLumber",8},{"PartWoodPile",2}};
+				input[] = {{"PartWoodLumber",8},{"PartWoodPile",2}};
 				
 			};
 			
@@ -2770,7 +2770,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodStairs",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodLumber",8}};
+				input[] = {{"PartWoodLumber",8}};
 				
 			};
 			class Crafting4
@@ -2780,7 +2780,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodLadder",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodLumber",8}};
+				input[] = {{"PartWoodLumber",8}};
 				
 			};
 			
@@ -2813,7 +2813,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"wood_shack_kit",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+				input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4}};
 			};
 			class Crafting2
 			{
@@ -2822,7 +2822,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodFloorQuarter",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
+				input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 			};
 			class Crafting3
 			{
@@ -2831,7 +2831,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodWallThird",1}};
-				input[] = {{"bulk_empty",1},{"PartWoodPlywood",3},{"PartWoodLumber",3}};
+				input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
 			};
 			
 		};
@@ -2866,6 +2866,17 @@ class CfgMagazines {
 		model = "\dayz_equip\models\vrotor.p3d";
 		picture = "\dayz_equip\textures\equip_vrotor_ca.paa";
 		descriptionShort = "$STR_EQUIP_DESC_32";
+		 class ItemActions {
+            class Crafting
+            {
+                text = "Salvage Scrap";
+                script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+                neednearby[] = {"workshop"};
+                requiretools[] = {"ItemToolbox","ItemCrowbar"};
+                output[] = {{"PartGeneric",3}};
+                input[] = {{"PartVRotor",1}};
+            };
+        };
 	};
 	class PartGlass: CA_Magazine
 	{
@@ -3192,7 +3203,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
 			};
 			class Crafting1
 			{
@@ -3201,7 +3212,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
 			};
 		};
 	};
@@ -3228,7 +3239,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
 			};
 			class Crafting1
 			{
@@ -3237,7 +3248,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
 			};
 		};
 	};
@@ -3263,7 +3274,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
 			};
 			class Crafting1
 			{
@@ -3272,7 +3283,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemTent",2},{"ItemPole",2}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
 			};
 		};
 	};
@@ -3309,7 +3320,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"sandbag_nest_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
+				input[] = {{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
 			};
 			/*
 			class Crafting2
@@ -3319,7 +3330,7 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
-				input[] = {{"bulk_empty",1},{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
+				input[] = {{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
 				inputweapons[] = {"M240_DZ"};
 			};
 			*/
