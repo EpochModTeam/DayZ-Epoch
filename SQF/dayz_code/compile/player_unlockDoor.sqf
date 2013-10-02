@@ -48,11 +48,13 @@ if(!isNull dayz_selectedDoor) then {
 
 		KeyCodeTry = KeyCodeTry + 1;
 
-		if(KeyCodeTry >= 5) then {
+		if (!isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
+
+		if(KeyCodeTry >= ((round(random 4)) + 4)) then {
 			
 			if (isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
 			
-			cutText ["Wrong code entered too many times wait 10 seconds", "PLAIN DOWN"];
+			cutText ["Wrong code entered to many times wait 10 seconds", "PLAIN DOWN"];
 			_display = findDisplay 41144;
 			_display closeDisplay 3000;
 		};
