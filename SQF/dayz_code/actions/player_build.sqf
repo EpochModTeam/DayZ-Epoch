@@ -268,7 +268,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 		
-		if(_counter >= 500) exitWith {
+		if(_counter >= 750) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Ran out of time to find position."; 
