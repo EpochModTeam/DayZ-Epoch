@@ -18,11 +18,11 @@ item13[] = {"no_PlayerID",4,218,50.000000,150.000000,150.000000,200.000000,2.000
 item14[] = {"ERROR__No_Player",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item15[] = {"Request",2,250,-75.000000,400.000000,25.000000,450.000000,0.000000,"Request"};
 item16[] = {"Response",4,218,-175.000000,450.000000,-75.000000,500.000000,0.000000,"Response"};
-item17[] = {"Parse_Login",2,4346,-75.000000,500.000000,25.000000,550.000000,0.000000,"Parse Login"};
+item17[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000000,"Parse Login"};
 item18[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item20[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
-item21[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
+item21[] = {"Phase_One",2,4346,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item22[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
 item23[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item24[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
@@ -152,8 +152,8 @@ link77[] = {66,59};
 link78[] = {67,15};
 link79[] = {68,69};
 link80[] = {69,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-251.037598,801.434570,1133.794189,96.643585,893,880,1};
-window[] = {2,-1,-1,-1,-1,936,156,1528,156,3,911};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-251.037598,801.434570,1129.079834,91.929260,893,880,1};
+window[] = {2,-1,-1,-1,-1,884,-1576,-204,104,3,911};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -694,8 +694,9 @@ class FSM
        "			};" \n
        "			_countr = 0;" \n
        "			{" \n
-       "				if (_x == ""Crossbow"") then { _x = ""Crossbow_DZ"" };" \n
-	   "				if (_x == ""ItemMatchbox"") then { _x = ""ItemMatchbox_DZE"" };" \n
+       "				if(_x in (DZE_REPLACE_WEAPONS select 0)) then {" \n
+       "					_x = (DZE_REPLACE_WEAPONS select 1) select ((DZE_REPLACE_WEAPONS select 0) find _x);" \n
+       "				};" \n
        "				dayz_myBackpack addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];" \n
        "				_countr = _countr + 1;" \n
        "			} forEach _backpackWpnTypes;" \n
@@ -704,7 +705,7 @@ class FSM
        "			_countr = 0;" \n
        "			{" \n
        "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
-	   "				if (_x == ""ItemTent"") then { _x = ""ItemTentOld"" };" \n
+       "				if (_x == ""ItemTent"") then { _x = ""ItemTentOld"" };" \n
        "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
        "				_countr = _countr + 1;" \n
        "			} forEach _backpackMagTypes;" \n
@@ -765,7 +766,7 @@ class FSM
        "_setDir = 			_worldspace select 0;" \n
        "_setPos = 			_worldspace select 1;" \n
        "" \n
-	   "if(dayz_paraSpawn and !(player isKindOf ""PZombie_VB"")) then {" \n
+       "if(dayz_paraSpawn and !(player isKindOf ""PZombie_VB"")) then {" \n
        "  _para = createVehicle [""ParachuteWest"", _setPos, [], 0, ""FLY""];  " \n
        "  player moveInDriver _para;" \n
        "} else {" \n
@@ -1086,7 +1087,7 @@ class FSM
        "if (player hasWeapon ""MeleeCrowbar"") then {" \n
        "	player addMagazine 'crowbar_swing';" \n
        "};" \n
-	   "if (player hasWeapon ""MeleeSledge"") then {" \n
+       "if (player hasWeapon ""MeleeSledge"") then {" \n
        "	player addMagazine 'sledge_swing';" \n
        "};" \n
        "if (player hasWeapon ""MeleeHatchet"") then {" \n

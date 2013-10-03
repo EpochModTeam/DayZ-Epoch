@@ -2028,7 +2028,7 @@ INSERT INTO `trader_items` VALUES(422, 'ItemFlashlight', 3, 'ToolBelt', 'trade_w
 INSERT INTO `trader_items` VALUES(423, 'ItemFlashlightRed', 3, 'ToolBelt', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(424, 'ItemGenerator', 1, 'Building Supplies', 'trade_items');
 INSERT INTO `trader_items` VALUES(425, 'ItemGPS', 3, 'ToolBelt', 'trade_weapons');
-INSERT INTO `trader_items` VALUES(426, 'ItemHatchet', 3, 'ToolBelt', 'trade_weapons');
+INSERT INTO `trader_items` VALUES(426, 'ItemHatchet_DZE', 3, 'ToolBelt', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(427, 'ItemHeatPack', 1, 'Medical', 'trade_items');
 INSERT INTO `trader_items` VALUES(428, 'ItemJerrycan', 1, 'Car Parts', 'trade_items');
 INSERT INTO `trader_items` VALUES(429, 'ItemJerrycanEmpty', 1, 'Car Parts', 'trade_items');

@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.2.38";
+		version = "1.0.2.39";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -669,7 +669,7 @@ class CfgBuildingLoot {
 			{ "PartGlass","magazine" },
 			{ "PartVRotor","magazine" },
 			{ "ItemJerrycan","magazine" },
-			{ "WeaponHolder_ItemHatchet","object" },
+			{ "WeaponHolder_ItemHatchet_DZE","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
@@ -721,7 +721,7 @@ class CfgBuildingLoot {
 			{ "PartGlass","magazine" },
 			{ "PartVRotor","magazine" },
 			{ "ItemJerrycan","magazine" },
-			{ "WeaponHolder_ItemHatchet","object" },
+			{ "WeaponHolder_ItemHatchet_DZE","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
@@ -764,7 +764,7 @@ class CfgBuildingLoot {
 			{ "","trash" },
 			{ "Crossbow_DZ","weapon"},
 			{ "PartPlankPack","magazine" },
-			{ "WeaponHolder_ItemHatchet","object" },
+			{ "WeaponHolder_ItemHatchet_DZE","object" },
 			{ "MR43","weapon" },
 			{ "ItemFuelBarrel","magazine"},
 			{ "WeaponHolder_ItemMachete", "object"},

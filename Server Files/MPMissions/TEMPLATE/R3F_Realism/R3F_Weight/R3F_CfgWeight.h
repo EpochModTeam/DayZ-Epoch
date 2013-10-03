@@ -1228,6 +1228,11 @@ class CfgWeight
 		{
 			weight = 1;
 		};
+		
+		class ItemHatchet_DZE  
+		{
+			weight = 1;
+		};
 		class ItemCrowbar  
 		{
 			weight = 1;

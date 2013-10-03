@@ -32,7 +32,7 @@ if(_outcome == "PASS") then {
 		_minute = _date select 4;
 		
 		//Force full moon nights
-		_date = [2012,6,6,_hour,_minute];
+		_date = [2013,8,3,_hour,_minute];
 	};
 		
 	if(isDedicated) then {
@@ -191,8 +191,9 @@ if (isServer and isNil "sm_done") then {
 					_objWpnQty = (_intentory select 0) select 1;
 					_countr = 0;					
 					{
-						if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
-						if (_x == "ItemMatchbox") then { _x = "ItemMatchbox_DZE" }; // Convert Crossbow to Crossbow_DZ
+						if(_x in (DZE_REPLACE_WEAPONS select 0)) then {
+							_x = (DZE_REPLACE_WEAPONS select 1) select ((DZE_REPLACE_WEAPONS select 0) find _x);
+						};
 						_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
 						if (_isOK) then {
 							_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;

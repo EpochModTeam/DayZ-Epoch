@@ -438,6 +438,7 @@ if(isNil "DZE_HumanityTargetDistance") then {
 	DZE_HumanityTargetDistance = 25;
 };
 
+DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
 
 /*
 if(isNil "dayz_canBuildInCity") then {

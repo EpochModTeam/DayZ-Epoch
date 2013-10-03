@@ -2641,6 +2641,27 @@ class CfgVehicles {
 		transportRepair = 0;
 		transportFuel = 0;
 	};
+	class WoodenArrowF : WeaponHolderBase {
+		scope = public;
+		displayName = "Arrow";
+		model = "\dayz_weapons\models\bolt";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	
+	class WeaponHolder_ItemHatchet_DZE: WeaponHolderBase
+	{
+		scope = 2;
+		displayName = "$STR_EQUIP_NAME_41";
+		model = "\dayz_equip\models\hatchet.p3d";
+		class eventHandlers
+		{
+			init = "[(_this select 0),'cfgWeapons','ItemHatchet_DZE'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+
 	class WeaponHolder_ItemMachete: WeaponHolderBase
 	{
 		scope = 2;

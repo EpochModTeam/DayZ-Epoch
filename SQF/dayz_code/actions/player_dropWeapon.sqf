@@ -15,7 +15,7 @@ for "_i" from 1 to _meleeNum do {
 };
 
 player removeWeapon _item;
-if (_item == "MeleeHatchet") then {_item = "ItemHatchet";};
+if (_item == "MeleeHatchet") then {_item = "ItemHatchet_DZE";};
 if (_item == "MeleeCrowbar") then {_item = "MeleeCrowbar";};
 if (_item == "MeleeMachete") then {_item = "ItemMachete";};
 

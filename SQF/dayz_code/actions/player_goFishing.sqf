@@ -14,6 +14,8 @@ call gear_ui_init;
 _position = player modeltoworld [0,5,0];
 if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText ["\n\nMust be near a shore or on a boat to fish." , "PLAIN DOWN"]; };
 
+if((currentWeapon player) != "MeleeFishingPole") exitWith {TradeInprogress = false; cutText ["\n\nFishing pole needs to be in your hand to fish.", "PLAIN DOWN"]; };
+
 if(dayz_isSwimming) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
 if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["\n\nCanceled Fishing.", "PLAIN DOWN"];};
 

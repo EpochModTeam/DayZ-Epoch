@@ -7,7 +7,7 @@ class MeleeHatchet: MeleeWeapon
 		model="\dayz_weapons\models\Hatchet_weaponized";
 		picture="\dayz_equip\textures\equip_hatchet_CA.paa";
 		displayName="$STR_EQUIP_NAME_41";
-		droppeditem= "ItemHatchet";
+		droppeditem= "ItemHatchet_DZE";
 		magazines[]=
 		{
 			"Hatchet_Swing"
@@ -34,7 +34,7 @@ class MeleeHatchet: MeleeWeapon
 				};
 				output[]=
 				{
-					"ItemHatchet"
+					"ItemHatchet_DZE"
 				};
 			};
 		};
