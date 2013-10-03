@@ -261,6 +261,10 @@ if (!isDedicated) then {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
 		
+		if (_dikCode in[0x58,0x57,0x44,0x43,0x42,0x41,0x40,0x3F,0x3E,0x3D,0x3C,0x3B,0x0B,0x0A,0x09,0x08,0x07,0x06,0x05]) then {
+					_handled = true;
+		};
+	
 		if (_dikCode in actionKeys "MoveForward") exitWith {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveLeft") exitWith {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true};
@@ -292,10 +296,9 @@ if (!isDedicated) then {
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
-		if (_dikCode == 210) then //SCROLL LOCK
-			{
+		if (_dikCode == 210) then {
 				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-			};
+		};
 		
 		if (_dikCode in actionKeys "ForceCommandingMode") then {_handled = true};
 		if (_dikCode in actionKeys "PushToTalk" and (time - dayz_lastCheckBit > 10)) then {
