@@ -8,8 +8,7 @@ http://dayzepoch.com
 
 Based on DayZ Mod Community edition
 
-https://github.com/R4Z0R49/DayZMod/blob/Release_1.7.6/Documentation/Credits.md
-
+https://github.com/DayZMod/DayZ/blob/Release_1.8/Documentation/Credits.md
 http://dayzmod.com 
 
 --------------------------
@@ -25,7 +24,7 @@ Included Custom Addons
 * MAP Editorupgrade (EU) http://www.armaholic.com/page.php?id=6194
 * st_movement by ShackTac https://dev-heaven.net/projects/shacktac/files
 * st_bunnyhop by ShackTac https://dev-heaven.net/projects/shacktac/files
-* Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr, Sahbazz
+* Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr and Sahbazz http://www.armaholic.com/page.php?id=13053
 
 --------------------------
 Developers
@@ -42,8 +41,8 @@ Special thanks
 --------------------------
 * BIS for a incredible and versatile game and engine. http://www.bistudio.com/
 * Rocket - DAYZ! http://dayzmod.com | http://dayzgame.com 
-* DayZ Community Developers - https://github.com/R4Z0R49/DayZMod - https://github.com/DayZMod
-* ziellos2k - Tag Friendly code. https://github.com/R4Z0R49/DayZMod/pull/232
+* DayZ Community Developers - https://github.com/DayZMod
+* ziellos2k - Tag Friendly code. https://github.com/ziellos2k
 * Dayz Hive DLL - https://github.com/rajkosto/hive
 * Munchiefest - Beta Tester, Wiki Editor, Ideas - http://www.twitch.tv/munchiefest
 * aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
@@ -51,4 +50,4 @@ Special thanks
 * OrangeSherbet - Beta Tester - http://www.twitch.tv/orangesherbet
 * QMGSaint - Beta Tester - http://www.twitch.tv/qmgsaint
 * Twitch.tv Streamers http://www.twitch.tv/directory/game/DayZ
-* Thanks to all the other beta testers, you know who you are!-- 
+* Thanks to all the other beta testers, you know who you are!-

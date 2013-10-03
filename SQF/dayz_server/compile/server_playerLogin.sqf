@@ -136,5 +136,8 @@ if (_hiveVer >= dayz_hiveVersionNo) then {
 	_isHiveOk = true;
 };
 
+([4654,9595,0] nearestObject 145259) setDamage 1;
+([4654,9595,0] nearestObject 145260) setDamage 1;
+
 dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];
 (owner _playerObj) publicVariableClient "dayzPlayerLogin";
