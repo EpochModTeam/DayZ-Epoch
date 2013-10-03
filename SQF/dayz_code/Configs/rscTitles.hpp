@@ -511,7 +511,7 @@ class RscDisplayMainMap {
 };
 
 class RscDisplayClientGetReady : RscDisplayGetReady {
-	onload = "private ['_dummy']; _dummy = [_this,'onload'] call compile preprocessfile '\ca\ui\scripts\server_interface.sqf';";
+	onload = "private ['_dummy']; _dummy = [_this,'onload'] call compile preprocessfile '\ca\ui\scripts\server_interface.sqf'; _this spawn { while { !isNull (findDisplay 53) } do { ctrlActivate ((_this select 0) displayCtrl 1); sleep 0.1; }; };";
 	color0[] = {0.4, 0.4, 0.4, 1};
 	color1[] = {1, 0.6, 0, 1};
 	color2[] = {0.1961, 0.1451, 0.0941, 1.0};
