@@ -25,6 +25,8 @@ Included Custom Addons
 * st_movement by ShackTac https://dev-heaven.net/projects/shacktac/files
 * st_bunnyhop by ShackTac https://dev-heaven.net/projects/shacktac/files
 * Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr and Sahbazz http://www.armaholic.com/page.php?id=13053
+* gdtmod_plants2 1.00 by HeinBloed http://www.gdt-server.net/
+* gdtmod_grass 1.00 by HeinBloed http://www.gdt-server.net/
 
 --------------------------
 Developers
