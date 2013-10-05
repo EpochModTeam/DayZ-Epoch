@@ -2,7 +2,7 @@
 	DayZ Base Building Upgrades
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_i","_invResult","_itemOut","_countOut"];
+private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
 
 if(TradeInprogress) exitWith { cutText ["Downgrade already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -87,7 +87,9 @@ if ((count _upgrade) > 0) then {
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
 		
 	_invResult = false;
+	_abortInvAdd = false;
 	_i = 0;
+	_addedItems = [];
 
 	{
 		_itemOut = _x select 0;
@@ -95,14 +97,20 @@ if ((count _upgrade) > 0) then {
 		
 		for "_x" from 1 to _countOut do {
 			_invResult = [player,_itemOut] call BIS_fnc_invAdd;
+			if(!_invResult) exitWith {
+				_abortInvAdd = true;
+			};
 			if(_invResult) then {
 				_i = _i + 1;
+				_addedItems set [(count _addedItems),[_itemOut,1]];
 			};
 		};
+		
+		if (_abortInvAdd) exitWith {};
 
 	} forEach _refund;
 
-	// all parts removed proceed
+	// all parts added proceed
 	if(_i != 0) then {
 			
 		// Get position
@@ -131,6 +139,10 @@ if ((count _upgrade) > 0) then {
 			
 	} else {
 		cutText [format["\n\n%1 of %2 could not be added to your inventory. (not enough room?)", _i,_itemOut], "PLAIN DOWN"];
+		{
+			[player,(_x select 0),(_x select 1)] call BIS_fnc_invRemove;
+		} forEach _addedItems;
+		
 	};
 	
 } else {
