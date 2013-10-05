@@ -11,13 +11,13 @@ switch (_iClass) do
 {
 	default
 	{
-		//Item is sigle, add 1 item from cfgloot
+		//Item is sigle, add 1 item from CfgLootSmall
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 
-		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
-		_index = dayz_CLBase find _iClass;
+		_itemTypes = [] + ((getArray (configFile >> "CfgLootSmall" >> _iClass)) select 0);
+		_index = dayzE_CLSBase find _iClass;
 		
-		_weights = dayz_CLChances select _index;
+		_weights = dayzE_CLSChances select _index;
 		_cntWeights = count _weights;
 			
 	    _index = floor(random _cntWeights);
@@ -27,12 +27,12 @@ switch (_iClass) do
 	};
 	case "single":
 	{
-		//Item is sigle, add 1 item from cfgloot
+		//Item is sigle, add 1 item from CfgLootSmall
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 
-		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
-		_index = dayz_CLBase find _iItem;
-		_weights = dayz_CLChances select _index;
+		_itemTypes = [] + ((getArray (configFile >> "CfgLootSmall" >> _iItem)) select 0);
+		_index = dayzE_CLSBase find _iItem;
+		_weights = dayzE_CLSChances select _index;
 		_cntWeights = count _weights;
 			
 	    _index = floor(random _cntWeights);
