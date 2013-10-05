@@ -68,6 +68,9 @@ if (!isDedicated) then {
 	zombie_generate = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_generate.sqf";			//Server compile, used for loiter behaviour
 	wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";			//Server compile, used for loiter behaviour
 	
+	pz_attack = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pzombie\pz_attack.sqf";
+	
+
 	//
 	dog_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
 	
@@ -261,6 +264,8 @@ if (!isDedicated) then {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
 		
+		_handled = false;
+
 		if (_dikCode in[0x58,0x57,0x44,0x43,0x42,0x41,0x40,0x3F,0x3E,0x3D,0x3C,0x3B,0x0B,0x0A,0x09,0x08,0x07,0x06,0x05]) then {
 					_handled = true;
 		};
@@ -280,17 +285,16 @@ if (!isDedicated) then {
 
 		//diag_log format["Keypress: %1", _this];
 
-		_handled = false;
+		
 		if (_dikCode in (actionKeys "GetOver")) then {
 			
 			if (player isKindOf  "PZombie_VB") then {
-				player switchAction "walkf";
+				_handled = true;
+				DZE_PZATTACK = true;
 			} else {
-				_inBuilding = [player] call fnc_isInsideBuilding;
 				_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
-				if (!r_player_unconscious and (_inBuilding or (count _nearbyObjects > 0))) then {
-					[objNull, player, rSwitchMove,"GetOver"] call RE;
-					player playActionNow "GetOver";
+				if (count _nearbyObjects > 0) then {
+					_handled = true;
 				};
 			};
 		};

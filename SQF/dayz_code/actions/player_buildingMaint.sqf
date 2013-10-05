@@ -49,6 +49,9 @@ _proceed = true;
 
 if (_proceed) then {
 
+	player playActionNow "Medic";
+	[player,20,true,(getPosATL player)] spawn player_alertZombies;
+
 	_temp_removed_array = [];
 	_removed_total = 0;
 	_tobe_removed_total = 0;

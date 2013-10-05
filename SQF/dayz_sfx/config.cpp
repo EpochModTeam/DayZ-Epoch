@@ -45,6 +45,14 @@ class CfgSFX {
 		Generator1[] = 	{"\dayz_sfx\effects\generator1",db+10,1,200,1,0,0,0};
 		Empty[] = 	{"",0,0,0,0,0,0,0};
 	};
+
+	class DestrMine { 
+		sounds[] = {"DestrMine1","DestrMine2"}; 
+		name = "Mine destruction"; 
+		DestrMine1[] = {"\ca\BUILDINGS\sound\building2_destroy", 3.16228, 1, 150, 1, 60, 120, 240}; 
+		DestrMine2[] = {"\dayz_sfx\effects\vein_wreck.ogg", 3.16228, 1, 150, 1, 60, 120, 240}; 
+		empty[] = {"", 0, 0, 0, 0, 1, 5, 20}; 
+	}
 };
 
 #include "CfgSounds.hpp"

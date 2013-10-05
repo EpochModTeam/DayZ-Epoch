@@ -105,8 +105,7 @@ if (count(_findNearestTree) >= 1) then {
 			
 			_item = createVehicle ["WeaponHolder", getPosATL player, [], 1, "CAN_COLLIDE"];
 			_item addMagazineCargoGlobal [_itemOut,_countOut];
-			_item modelToWorld getPosATL player;
-			_item setdir (getDir player);
+
 			player reveal _item;
 			
 			// chop down tree

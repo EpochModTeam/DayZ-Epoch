@@ -189,48 +189,68 @@ class Land_wood_wreck_frame : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
 	displayName = "Wood Wall ruins";
-	removeoutput[] = {{"PartPlywoodPack",1},{"PartPlankPack",1}};
+	removeoutput[] = {{"PartWoodPlywood",{0,3}},{"PartWoodLumber",{0,3}}};
 };
 class Land_wood_wreck_third : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
 	displayName = "Wood Wall 1/3 ruins";
-	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wood_wreck_half : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d";
 	displayName = "Wood Floor 1/2 ruins";
-	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wood_wreck_floor : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
 	displayName = "Wood Floor ruins";
-	removeoutput[] = {{"PartPlywoodPack",1},{"PartPlankPack",1}};
+	removeoutput[] = {{"PartWoodPlywood",{0,3}},{"PartWoodLumber",{0,3}}};
 };
 
 class Land_wood_wreck_quarter : ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d";
 	displayName = "Wood Floor 1/4 ruins";
-	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
+	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wreck_cinder: ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
 	displayName = "Cinder wall ruins";
-	removeoutput[] = {{"CinderBlocks",1}};
+	removeoutput[] = {{"CinderBlocks",{0,1}}};
 };
 class Land_wreck_metal_floor: ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\wreck_metal_floor.p3d";
 	displayName = "Metal Floor ruins";
-	removeoutput[] = {{"ItemCorrugated",1},{"ItemPole",2},{"ItemTankTrap",1}};
+	removeoutput[] = {{"ItemPole",{0,2}},{"ItemTankTrap",{0,2}}};
 };
+
+class Land_iron_vein_wreck: ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
+	displayName = "iron vein ruins";
+	removeoutput[] = {{"PartOre",{6,4}},{"PartOreSilver",{0,1}},{"PartOreGold",{0,1}}};
+};
+class Land_silver_vein_wreck: ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
+	displayName = "silver vein ruins";
+	removeoutput[] = {{"PartOreSilver",{6,4}},{"PartOre",{0,1}},{"PartOreGold",{0,1}}};
+};
+class Land_gold_vein_wreck: ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
+	displayName = "gold vein ruins";
+	removeoutput[] = {{"PartOreGold",{6,4}},{"PartOre",{0,1}},{"PartOreSilver",{0,1}}};
+};
+
 
 
 
@@ -275,6 +295,7 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	model = "\z\addons\dayz_epoch\models\small_wall_door_locked_anim.p3d";
 	displayName =  "Wood Door Locked";
 	GhostPreview = "WoodDoor_Preview_DZ"; 
+	downgradeBuilding[] = {"Land_DZE_WoodDoor",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
 	class AnimationSources {
 			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
@@ -374,6 +395,7 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	model = "\z\addons\dayz_epoch\models\large_wall_door_locked_anim.p3d";
 	displayName =  "Large Wood Door Locked";
 	GhostPreview = "LargeWoodDoor_Preview_DZ";
+	downgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
 	class AnimationSources {
 			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
@@ -473,6 +495,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	model = "\z\addons\dayz_epoch\models\Garage_door_locked_anim.p3d";
 	displayName =  "Garage Wood Door Locked";
 	GhostPreview = "GarageWoodDoor_Preview_DZ";
+	downgradeBuilding[] = {"Land_DZE_GarageWoodDoor",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
 	class AnimationSources {
 			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
@@ -537,6 +560,7 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	model = "\z\addons\dayz_epoch\models\steel_garage_locked.p3d";
 	displayName =  "Block Garage Door Locked";
 	GhostPreview = "CinderWallDoorway_Preview_DZ";
+	downgradeBuilding[] = {"CinderWallDoor_DZ",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
 	class AnimationSources {
 			/* name must be identical to the one given by the model.cfg ("Open_Door")" */
@@ -639,6 +663,7 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	model = "\z\addons\dayz_epoch\models\Steel_door_locked.p3d";
 	displayName =  "Block Door Locked";
 	GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
+	downgradeBuilding[] = {"CinderWallDoorSmall_DZ",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
 	class AnimationSources {
 			/* name must be identical to the one given by the model.cfg ("Open_Door")" */

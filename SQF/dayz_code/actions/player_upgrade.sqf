@@ -96,6 +96,9 @@ if ((count _upgrade) > 0) then {
 	} forEach _requirements;
 	
 	if (_proceed) then {
+
+		player playActionNow "Medic";
+		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 	
 		_temp_removed_array = [];
 		_removed_total = 0;

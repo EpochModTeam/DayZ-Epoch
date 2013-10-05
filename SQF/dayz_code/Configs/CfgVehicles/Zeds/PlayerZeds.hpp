@@ -51,15 +51,15 @@ class pz_worker1: PZombie_VB
 		tex[] = {};
 		mat[] = {"Ca\characters_E\Overall\Data\Overall.rvmat","Ca\characters_E\Overall\Data\W1_Overall.rvmat","Ca\characters_E\Overall\Data\W2_Overall.rvmat"};
 	};
-	hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_4_co.paa"};
+	hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_4_co.paa"};
 };
 class pz_worker2: pz_worker1
 {
-	hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_3_co.paa"};
+	hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\overall_2_co.paa"};
 };
 class pz_worker3: pz_worker1
 {
-	hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_2_co.paa"};
+	hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_3_co.paa"};
 };
 
 class pz_doctor: PZombie_VB
@@ -81,6 +81,7 @@ class pz_hunter: PZombie_VB
 {
 	model = "\ca\characters2\civil\Woodlander\Woodlander";
 	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_v3_co.paa"}; 
 	class Wounds
 	{
 		tex[] = {};
@@ -91,7 +92,7 @@ class pz_villager1: PZombie_VB
 {
 	model = "\ca\characters2\civil\Villager\Villager";
 	hiddenSelections[] = {"Camo"};
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_co.paa"};
+	hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v4_co.paa"};
 	class Wounds
 	{
 		tex[] = {};
@@ -100,11 +101,11 @@ class pz_villager1: PZombie_VB
 };
 class pz_villager2: pz_villager1
 {
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v2_co.paa"};
+	hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v2_co.paa"};
 };
 class pz_villager3: pz_villager1
 {
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v3_co.paa"};
+	hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v3_co.paa"};
 };
 class pz_priest: PZombie_VB
 {

@@ -2,7 +2,7 @@
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund"];
+private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding"];
 
 if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -181,18 +181,26 @@ if (_proceed) then {
 			cutText ["No parts found.", "PLAIN DOWN"];
 		};
 
+		_ipos = getPosATL player;
+
+		if (_ipos select 2 < 2) then {
+			_ipos = [_ipos select 0,_ipos select 1,0];
+		};
+
+		_radius = 1;
+
 		// give refund items
 		if((count _selectedRemoveOutput) > 0 and !_preventRefund) then {
-			// Put itemsg
+			_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 			{
 				_itemOut = _x select 0;
 				_countOut = _x select 1;
-				for "_x" from 1 to _countOut do {
-					player addMagazine _itemOut;
+				if (typeName _countOut == "ARRAY") then {
+					_countOut = round((random (_countOut select 1)) + (_countOut select 0));
 				};
-				
+				_item addMagazineCargoGlobal [_itemOut,_countOut];				
 			} forEach _selectedRemoveOutput;
-			cutText ["De-constructed parts are now in your inventory.", "PLAIN DOWN"];
+			player reveal _item;
 		};
 	} else {
 		cutText ["Failed object not longer exists.", "PLAIN DOWN"];

@@ -1406,6 +1406,36 @@ class CfgVehicles {
 			};
 		};
 	};
+	class MiningItems: NonStrategic{
+		class DestructionEffects {
+			class Sound {
+				simulation = "sound";
+				type = "DestrMine";
+				position = "destructionEffect1";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 0.05;
+			};
+
+			class DestroyPhase1 {
+				simulation = "destroy";
+				type = "DelayedDestruction";
+				lifeTime = 2.5;
+				position = "";
+				intensity = 1;
+				interval = 1;
+			};
+
+			class DamageAround1 {
+				simulation = "damageAround";
+				type = "DamageAroundHouse";
+				position = "";
+				intensity = 0.1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+	};
 	class TrapItems: NonStrategic{};
 	// buildables
 	class Hedgehog_DZ: BuiltItems
@@ -1603,6 +1633,93 @@ class CfgVehicles {
 		offset[] = {0,3,1};
 		removeoutput[] = {{"sandbag_nest_kit",1}};
 	};
+
+	// mining
+	class Gold_Vein_DZE: MiningItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		
+		model="\z\addons\dayz_epoch\models\gold_vein.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+
+		mapSize = 2;
+		armor = 70;
+		displayName = "Rock with Gold";
+
+		vehicleClass = "Fortifications";
+		
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
+	};
+	class Silver_Vein_DZE: MiningItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		
+		model="\z\addons\dayz_epoch\models\silver_vein.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+
+		mapSize = 2;
+		armor = 60;
+		displayName = "Rock with Silver";
+
+		vehicleClass = "Fortifications";
+		
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
+	};
+	class Iron_Vein_DZE: MiningItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		
+		model="\z\addons\dayz_epoch\models\iron_vein.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+
+		mapSize = 2;
+		armor = 50;
+		displayName = "Rock with Iron";
+
+		vehicleClass = "Fortifications";
+		
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
+	};
+
 
 	// modular
 	class MetalFloor_DZ: ModularItems

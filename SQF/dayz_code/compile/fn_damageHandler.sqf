@@ -10,6 +10,7 @@ _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
 _unconscious = _unit getVariable ["NORRN_unconscious", false];
+_isPZombie = player isKindOf "PZombie_VB";
 _source = _this select 3;
 _ammo = _this select 4;
 _type = [_damage,_ammo] call fnc_usec_damageType;
@@ -148,7 +149,7 @@ if (_damage > 0.4) then {	//0.25
 		};
 		if (_hitInfection) then {
 			//Set Infection if not already
-			if (_unitIsPlayer) then {
+			if (_unitIsPlayer and !_isPZombie) then {
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
 			};
@@ -166,7 +167,7 @@ if (_damage > 0.4) then {	//0.25
 		};
 	};
 	if(!_isHit) then {
-		_isPZombie = player isKindOf "PZombie_VB";
+		
 		if(!_isPZombie) then {
 			//Create Wound
 			_unit setVariable[_wound,true,true];

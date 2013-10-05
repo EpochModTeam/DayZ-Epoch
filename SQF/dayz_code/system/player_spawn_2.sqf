@@ -5,6 +5,8 @@ _messTimer = 0;
 _lastTemp = dayz_temperatur;
 _debug = getMarkerpos "respawn_west";
 
+_isPZombie = player isKindOf "PZombie_VB";
+
 // override vars
 _maxDistanceTravel = DZE_teleport select 0;
 _maxDistanceDebug = DZE_teleport select 1;
@@ -110,7 +112,7 @@ while {true} do {
 	};
 	
 	//can get nearby infection
-	if (!r_player_infected) then {
+	if (!r_player_infected and !_isPZombie) then {
 		//Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
 			_listTalk = _mylastPos nearEntities ["CAManBase",8];

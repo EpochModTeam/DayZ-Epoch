@@ -351,6 +351,53 @@ spawn_roadblocks = {
 	
 };
 
+spawn_mineveins = {
+	private ["_position","_veh","_istoomany","_marker","_spawnveh","_positions"];
+
+	if (isDedicated) then {
+		
+		_position = [getMarkerPos "center",0,(HeliCrashArea*0.75),10,0,2000,0] call BIS_fnc_findSafePos;
+
+		if ((count _position) == 2) then {
+			
+			_positions = selectBestPlaces [_position, 500, "(1 + hills) * (1 - sea)", 10, 5];
+
+			_position = (_positions call BIS_fnc_selectRandom) select 0;
+
+			// Get position with ground
+			
+			_istoomany = _position nearObjects ["All",5];
+		
+			if((count _istoomany) > 0) exitWith { diag_log("DEBUG VEIN: Too many at " + str(_position)); };
+
+			//if(DZEdebug) then {
+				_marker = createMarker [str(_position) , _position];
+				_marker setMarkerShape "ICON";
+				_marker setMarkerType "DOT";
+
+				_spawnveh = ["Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Silver_Vein_DZE","Silver_Vein_DZE","Gold_Vein_DZE"] call BIS_fnc_selectRandom;
+
+
+				_marker setMarkerText str(_spawnveh);
+
+			// };
+			
+			
+			//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
+			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+			_veh enableSimulation false;
+
+			// Randomize placement a bit
+			_veh setDir round(random 360);
+			_veh setpos _position;
+
+			_veh setVariable ["ObjectID","1",true];
+
+		
+		};
+	};
+};
+
 if(isnil "DynamicVehicleDamageLow") then {
 	DynamicVehicleDamageLow = 0;
 };

@@ -55,6 +55,9 @@ if(isnil "MaxHeliCrashes") then {
 if(isnil "MaxDynamicDebris") then {
 	MaxDynamicDebris = 100;
 };
+if(isnil "MaxMineVeins") then {
+	MaxMineVeins = 100;
+};
 // Custon Configs End
 
 if (isServer and isNil "sm_done") then {
@@ -250,10 +253,10 @@ if (isServer and isNil "sm_done") then {
 
 				if (!((typeOf _object) in dayz_allowedObjects)) then {
 					
-					_object setvelocity [0,0,1];
+					//_object setvelocity [0,0,1];
 					_object call fnc_veh_ResetEH;		
 					
-					if(_ownerID != "0") then {
+					if(_ownerID != "0" and !(_object isKindOf "Bicycle")) then {
 						_object setvehiclelock "locked";
 					};
 					
@@ -320,6 +323,12 @@ if (isServer and isNil "sm_done") then {
 	diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
 	for "_x" from 1 to MaxDynamicDebris do {
 		[] spawn spawn_roadblocks;
+	};
+
+	//(1 - forest) * (1 + hills) * (1 - sea)
+	diag_log ("HIVE: Spawning # of Veins: " + str(MaxMineVeins));
+	for "_x" from 1 to MaxMineVeins do {
+		[] spawn spawn_mineveins;
 	};
 
 	if(isnil "dayz_MapArea") then {
