@@ -388,25 +388,6 @@ if (!isDedicated) then {
 		_handled
 	};
 	
-	player_CombatRoll = {
-		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
-		if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
-			canRoll = false;
-			null = [] spawn {
-				if (DoRE) then {
-					[nil, player, rSWITCHMOVE, "ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
-				} else {
-					player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
-				};
-				sleep 0.3;
-				player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
-				sleep 1;
-				canRoll = true;
-			};
-			_handled = true;
-		};
-	};
-	
 	player_serverModelChange = {
 		private["_object","_model"];
 		_object = _this select 0;
