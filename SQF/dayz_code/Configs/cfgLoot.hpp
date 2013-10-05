@@ -1,3 +1,5 @@
+#include "CfgLootSmall.hpp"
+
 class CfgLoot {
 	trash[] = {
 		{

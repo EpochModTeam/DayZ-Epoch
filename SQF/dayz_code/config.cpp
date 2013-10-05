@@ -1516,7 +1516,7 @@ class HeliCrash_No50s: Default {
 			0.01,
 			0.01,
 			0.01,
-			0.01,
+			0.01
 		};
 		itemTypeSmall[] = {
 			{ "M9SD","weapon" },
