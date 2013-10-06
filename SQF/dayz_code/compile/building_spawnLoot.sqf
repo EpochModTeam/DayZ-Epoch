@@ -11,7 +11,6 @@ _config = 		configFile >> "CfgBuildingLoot" >> _type;
 _positions =	 [] + getArray (_config >> "lootPos");
 _itemTypes =	[] + getArray (_config >> "itemType");
 _lootChance =	getNumber (_config >> "lootChance");
-_positionsSmall =	 [] + getArray (_config >> "lootPosSmall");
 
 {
 	if ((random 1) < _lootChance) then {
@@ -31,6 +30,8 @@ _positionsSmall =	 [] + getArray (_config >> "lootPosSmall");
 	};
 } forEach _positions;
 
+_itemTypesSmall =	[] + getArray (_config >> "itemTypeSmall");
+_positionsSmall =	 [] + getArray (_config >> "lootPosSmall");
 {
 	if ((random 1) < _lootChance) then {
 		_iPos = _obj modelToWorld _x;
@@ -42,7 +43,7 @@ _positionsSmall =	 [] + getArray (_config >> "lootPosSmall");
 			_cntWeights = count _weights;
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
-			_itemType = _itemTypes select _index;
+			_itemType = _itemTypesSmall select _index;
 			[_itemType select 0, _itemType select 1 , _iPos, 0.0] call spawn_loot_small;
 			_obj setVariable ["created",(DateToNumber date),true];
 		};
