@@ -78,7 +78,7 @@ player setVariable["friendlies",_friendlies,true];
 player setVariable["tagList",_tagList,true];
 
 //code for this on the server is missing
-//["dayzPlayerMorph",[_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity]] call callRpcProcedure;
+//["PVDZE_plr_Morph",[_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity]] call callRpcProcedure;
 
 call dayz_resetSelfActions;
 

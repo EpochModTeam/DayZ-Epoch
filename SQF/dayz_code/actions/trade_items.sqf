@@ -99,8 +99,8 @@ for "_x" from 1 to _total_trades do {
 			if (_removed == _qty_in) then {
 			
 				// Continue with trade.
-				dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-				publicVariableServer  "dayzTradeObject";
+				PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos];
+				publicVariableServer  "PVDZE_obj_Trade";
 
 				waitUntil {!isNil "dayzTradeResult"};
 

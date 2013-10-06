@@ -217,9 +217,9 @@ while {true} do {
 		if ((time - dayz_damageCounter) > 180) then {
 			if (!r_player_unconscious) then {
 				dayz_canDisconnect = true;
-				//["dayzDiscoRem",getPlayerUID player] call callRpcProcedure;
-				dayzDiscoRem = getPlayerUID player;
-				publicVariableServer "dayzDiscoRem";
+				//["PVDZE_plr_DiscRem",getPlayerUID player] call callRpcProcedure;
+				PVDZE_plr_DiscRem = getPlayerUID player;
+				publicVariableServer "PVDZE_plr_DiscRem";
 				
 				//Ensure Control is hidden
 				_display = uiNamespace getVariable 'DAYZ_GUI_display';
@@ -236,15 +236,15 @@ while {true} do {
 	//Save Checker
 	if (dayz_unsaved) then {
 		if ((time - dayz_lastSave) > _saveTime) then {
-			dayzPlayerSave = [player,dayz_Magazines,false,false];
-			publicVariableServer "dayzPlayerSave";
+			PVDZE_plr_Save = [player,dayz_Magazines,false,false];
+			publicVariableServer "PVDZE_plr_Save";
 		
 			dayz_unsaved = false;
 		
-			//diag_log format["Save Checker: %1", dayzPlayerSave];
+			//diag_log format["Save Checker: %1", PVDZE_plr_Save];
 		
 			if (isServer) then {
-				dayzPlayerSave call server_playerSync;
+				PVDZE_plr_Save call server_playerSync;
 			};
 
 			dayz_lastSave = time;

@@ -160,8 +160,8 @@ class FSM
        "	};" \n
        "" \n
        "	setDate _date;" \n
-       "	dayzSetDate = _date;" \n
-       "	publicVariable ""dayzSetDate"";" \n
+       "	PVDZE_plr_SetDate = _date;" \n
+       "	publicVariable ""PVDZE_plr_SetDate"";" \n
        "	diag_log (""TIME SYNC: Local Time set to "" + str(_date));	" \n
        "};" \n
        ""/*%FSM</STATEINIT""">*/;
@@ -208,7 +208,7 @@ class FSM
       name = "prepare";
       init = /*%FSM<STATEINIT""">*/"diag_log (""CLEANUP: INITIALIZING CLEANUP SCRIPT"");" \n
        "" \n
-       "_safety = dayz_serverObjectMonitor;" \n
+       "_safety = PVDZE_serverObjectMonitor;" \n
        "//_dateNow = (DateToNumber date);" \n
        "" \n
        "_lastUpdate = diag_tickTime;" \n
@@ -291,7 +291,7 @@ class FSM
     class vehicle_cleanup
     {
       name = "vehicle_cleanup";
-      init = /*%FSM<STATEINIT""">*/"_safety = dayz_serverObjectMonitor;" \n
+      init = /*%FSM<STATEINIT""">*/"_safety = PVDZE_serverObjectMonitor;" \n
        "" \n
        "//Check for hackers" \n
        " {" \n
@@ -302,7 +302,7 @@ class FSM
        "	 };" \n
        " } forEach allUnits;" \n
        "" \n
-       "dayz_serverObjectMonitor = _safety;"/*%FSM</STATEINIT""">*/;
+       "PVDZE_serverObjectMonitor = _safety;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

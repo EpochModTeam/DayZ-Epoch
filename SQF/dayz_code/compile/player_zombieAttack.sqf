@@ -64,7 +64,7 @@ if (_vehicle != player) then {
 		
 		//diag_log ("Hitpoints " +str(_wound) +str(_total));
 		
-		//["dayzHitV",[_vehicle, _wound,_total, _unit,"zombie"]] call broadcastRpcCallAll;
+		//["PVDZE_plr_HitV",[_vehicle, _wound,_total, _unit,"zombie"]] call broadcastRpcCallAll;
 		if (_dam >= 1) then {
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
 				_cnt = count (DAYZ_woundHit select 1);
@@ -80,8 +80,8 @@ if (_vehicle != player) then {
 			_damage = 0.1 + random (1.2);
 			//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 			[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-			//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
-			//publicVariable "dayzHit";
+			//PVDZE_plr_Hit =	[player,_wound, _damage, _unit,"zombie"];
+			//publicVariable "PVDZE_plr_Hit";
 			[_unit,"hit",2,false] call dayz_zombieSpeak;	
 		};
 	};
@@ -116,8 +116,8 @@ if (_vehicle != player) then {
 
 				//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
-				//publicVariable "dayzHit";
+				//PVDZE_plr_Hit =	[player,_wound, _damage, _unit,"zombie"];
+				//publicVariable "PVDZE_plr_Hit";
 				[_unit,"hit",2,false] call dayz_zombieSpeak;
 			} else {
 				//diag_log ("NO LOS: Player Hit on " + str(_unit) + " for " + str(_vehicle));
@@ -127,8 +127,8 @@ if (_vehicle != player) then {
 					_damage = 0.1 + random (1.2);
 					diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-					//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
-					//publicVariable "dayzHit";
+					//PVDZE_plr_Hit =	[player,_wound, _damage, _unit,"zombie"];
+					//publicVariable "PVDZE_plr_Hit";
 					[_unit,"hit",2,false] call dayz_zombieSpeak;	
 				};
 				*/

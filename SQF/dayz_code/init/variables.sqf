@@ -177,7 +177,7 @@ SleepTemperatur	= 		90 / 100;	//Firs Value = Minutes untill Player reaches the c
 //Server Variables
 allowConnection = 		false;
 isSinglePlayer =		false;
-dayz_serverObjectMonitor = [];
+PVDZE_serverObjectMonitor = [];
 PlayerDeaths = [];
 
 //Streaming Variables (player only)
@@ -375,16 +375,16 @@ dayz_zombieTargetList = [
 	["Air",500],
 	["LandVehicle",200]
 ];
-dayzHit = [];
-dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
-dayzHideBody = objNull;
+PVDZE_plr_Hit = [];
+PVDZE_obj_Publish = [];		//used for eventhandler to spawn a mirror of players tent
+PVDZE_plr_HideBody = objNull;
 dayz_selectedVault = objNull;
 dayz_selectedDoor = objNull;
 
-dayzPublishVeh = [];		// for vehicle traders
-dayzTradeObject = [];		// For all traders increment qty
-dayzTraderMenu = [];  		// For all traders	
-dayzPlayerDeaths = [];
+PVDZE_veh_Publish = [];		// for vehicle traders
+PVDZE_obj_Trade = [];		// For all traders increment qty
+PVDZE_plr_TradeMenu = [];  		// For all traders	
+PVDZE_plr_DeathB = [];
 
 //DayZ settings
 dayz_dawn = 6;

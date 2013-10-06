@@ -95,13 +95,13 @@ _key call server_hiveWrite;
 		deleteVehicle _object_para;
 	};
 
-	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+	PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 
 	_object call fnc_veh_ResetEH;
 	
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
-	dayzVehicleInit = _object;
-	publicVariable "dayzVehicleInit";
+	PVDZE_veh_Init = _object;
+	publicVariable "PVDZE_veh_Init";
 	
 	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
 };

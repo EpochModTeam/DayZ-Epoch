@@ -79,9 +79,9 @@ if (_qty >= _qty_in) then {
 
 		if (_qty >= _qty_in) then {
 
-			//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-			dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-			publicVariableServer  "dayzTradeObject";
+			//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos];
+			publicVariableServer  "PVDZE_obj_Trade";
 	
 			waitUntil {!isNil "dayzTradeResult"};
 

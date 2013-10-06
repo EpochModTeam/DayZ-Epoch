@@ -47,7 +47,7 @@ if (_spawnRoll <= _spawnChance) then {
 	_crash setPos _adjustedPos;
 
 	// I don't think this is needed (you can't get "in" a crash), but it was in the original DayZ Crash logic
-	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_crash];
+	PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_crash];
 
 	_crash setVariable ["ObjectID","1",true];
 
@@ -62,9 +62,9 @@ if (_spawnRoll <= _spawnChance) then {
 	};
 
 	if (_spawnFire) then {
-		//["dayzFire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
-		dayzFire = [_crash,2,time,false,_fadeFire];
-		publicVariable "dayzFire";
+		//["PVDZE_obj_Fire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
+		PVDZE_obj_Fire = [_crash,2,time,false,_fadeFire];
+		publicVariable "PVDZE_obj_Fire";
 		_crash setvariable ["fadeFire",_fadeFire,true];
 	};
 	

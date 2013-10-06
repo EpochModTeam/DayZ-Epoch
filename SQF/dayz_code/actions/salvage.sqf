@@ -77,12 +77,12 @@ if (_hasToolbox) then {
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 			
 				//vehicle is owned by whoever is in it, so we have to have each client try and fix it
-				//["dayzSetFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
+				//["PVDZE_veh_SFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
 		
-				dayzSetFix = [_vehicle,_selection,1];
-				publicVariable "dayzSetFix";
+				PVDZE_veh_SFix = [_vehicle,_selection,1];
+				publicVariable "PVDZE_veh_SFix";
 				if (local _vehicle) then {
-					dayzSetFix call object_setFixServer;
+					PVDZE_veh_SFix call object_setFixServer;
 				};
 
 				_vehicle setvelocity [0,0,1];

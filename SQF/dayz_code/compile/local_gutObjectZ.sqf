@@ -12,10 +12,10 @@ if (local _zombiebody) then {
 		while {(count magazines _body >0) and (time - _timer < 300) } do { 
 			sleep 5;
 		}; 
-		//["dayzHideBody",_body] call broadcastRpcCallAll;
-		dayzHideBody = _body;
+		//["PVDZE_plr_HideBody",_body] call broadcastRpcCallAll;
+		PVDZE_plr_HideBody = _body;
 		hideBody _body; // local player
-		publicVariable "dayzHideBody"; // remote player
+		publicVariable "PVDZE_plr_HideBody"; // remote player
 		sleep 5;
 		deleteVehicle _body;
 		true;

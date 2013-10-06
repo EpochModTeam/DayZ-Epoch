@@ -70,10 +70,10 @@ if (_section and _hasToolbox) then {
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 		
 				//vehicle is owned by whoever is in it, so we have to have each client try and fix it
-				dayzSetFix = [_vehicle,_selection,0];
-				publicVariable "dayzSetFix";
+				PVDZE_veh_SFix = [_vehicle,_selection,0];
+				publicVariable "PVDZE_veh_SFix";
 				if (local _vehicle) then {
-					dayzSetFix call object_setFixServer;
+					PVDZE_veh_SFix call object_setFixServer;
 				};
 
 				_vehicle setvelocity [0,0,1];
@@ -114,11 +114,11 @@ _allFixed = true;
 //update if repaired
 if (_allFixed) then {
 	_vehicle setDamage 0;
-	//["dayzUpdateVehicle",[_vehicle,"repair"]] call callRpcProcedure;
-	dayzSetFix = [_vehicle,_selection,0];
-	publicVariable "dayzSetFix";
+	//["PVDZE_veh_Update",[_vehicle,"repair"]] call callRpcProcedure;
+	PVDZE_veh_SFix = [_vehicle,_selection,0];
+	publicVariable "PVDZE_veh_SFix";
 	if (local _vehicle) then {
-		dayzSetFix call object_setFixServer;
+		PVDZE_veh_SFix call object_setFixServer;
 	};
 };
 

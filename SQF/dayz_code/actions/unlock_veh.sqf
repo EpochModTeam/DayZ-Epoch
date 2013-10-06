@@ -7,12 +7,12 @@ TradeInprogress = true;
 {player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
 
-dayzLockVehicle = [_vehicle,false];
+PVDZE_veh_Lock = [_vehicle,false];
 if(player distance _vehicle < 10) then {
 	if (local _vehicle) then {
-		dayzLockVehicle spawn local_lockUnlock
+		PVDZE_veh_Lock spawn local_lockUnlock
 	} else {
-		publicVariable "dayzLockVehicle";
+		publicVariable "PVDZE_veh_Lock";
 	};
 };
 

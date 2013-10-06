@@ -60,8 +60,8 @@ if(!isNull _obj and alive _obj) then {
 	_backpacks = 	getBackpackCargo _obj;
 	
 	// Remove from database
-	dayzDeleteObj = [_objectID,_objectUID];
-	publicVariableServer "dayzDeleteObj";
+	PVDZE_obj_Delete = [_objectID,_objectUID];
+	publicVariableServer "PVDZE_obj_Delete";
 	
 	// Set down vault "take" item
 	_bag = createVehicle [_packedClass,_pos,[], 0, "CAN_COLLIDE"];

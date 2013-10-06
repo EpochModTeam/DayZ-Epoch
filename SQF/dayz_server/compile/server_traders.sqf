@@ -39,7 +39,7 @@ if(isNil "_retrader") then {
 };
 
 // diag_log(_retrader);
-dayzTraderMenuResult = _retrader;
+PVDZE_plr_TradeMenuResult = _retrader;
 if(!isNull _character) then {
-	_clientID publicVariableClient "dayzTraderMenuResult";
+	_clientID publicVariableClient "PVDZE_plr_TradeMenuResult";
 };

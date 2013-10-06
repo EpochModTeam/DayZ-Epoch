@@ -22,7 +22,7 @@ if(_num_removed == 1) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
 	} else {
-		//dayzHumanity = [player,20];
+		//PVDZE_plr_HumanityChange = [player,20];
 		[player,20] call player_humanityChange;
 	};
 

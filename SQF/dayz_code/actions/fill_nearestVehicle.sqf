@@ -99,9 +99,9 @@ if(_IsNearVehicle >= 1) then {
 				// calculate new fuel
 				_newFuelSrc = (_newFuelSrc / _capacitySrc);
 				if (_newFuelSrc > 0) then {
-					dayzSetFuel = [_vehicleSrc,_newFuelSrc];
-					dayzSetFuel spawn local_setFuel;
-					publicVariable "dayzSetFuel";
+					PVDZE_veh_SFuel = [_vehicleSrc,_newFuelSrc];
+					PVDZE_veh_SFuel spawn local_setFuel;
+					publicVariable "PVDZE_veh_SFuel";
 				} else {
 					_isFillok = false;
 					_abort = true;
@@ -118,9 +118,9 @@ if(_IsNearVehicle >= 1) then {
 				// calculate minimum needed fuel
 				_newFuel = (_newFuel / _capacity);
 
-				dayzSetFuel = [_vehicle,_newFuel];
-				dayzSetFuel spawn local_setFuel;
-				publicVariable "dayzSetFuel";
+				PVDZE_veh_SFuel = [_vehicle,_newFuel];
+				PVDZE_veh_SFuel spawn local_setFuel;
+				publicVariable "PVDZE_veh_SFuel";
 
 				// Play sound
 				[player,"refuel",0,false] call dayz_zombieSpeak;

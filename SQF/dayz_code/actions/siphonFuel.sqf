@@ -111,11 +111,11 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 						if(([player,_canNameEmpty] call BIS_fnc_invRemove) == 1) then {
 		
-							dayzSetFuel = [_vehicle,_newFuel];
+							PVDZE_veh_SFuel = [_vehicle,_newFuel];
 							if (local _vehicle) then {
-								dayzSetFuel spawn local_setFuel;
+								PVDZE_veh_SFuel spawn local_setFuel;
 							};
-							publicVariable "dayzSetFuel";
+							publicVariable "PVDZE_veh_SFuel";
 
 							// Play sound
 							[player,"refuel",0,false] call dayz_zombieSpeak;

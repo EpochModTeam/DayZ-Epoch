@@ -498,12 +498,12 @@ if (!isDedicated) then {
 
 		lbAdd [TraderDialogItemList, "Loading items..."];
 
-		dayzTraderMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
+		PVDZE_plr_TradeMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
 
-		if(isNil "dayzTraderMenuResult") then {
-			dayzTraderMenu = [_activatingPlayer,_trader_id];
-			publicVariableServer  "dayzTraderMenu";
-			waitUntil {!isNil "dayzTraderMenuResult"};
+		if(isNil "PVDZE_plr_TradeMenuResult") then {
+			PVDZE_plr_TradeMenu = [_activatingPlayer,_trader_id];
+			publicVariableServer  "PVDZE_plr_TradeMenu";
+			waitUntil {!isNil "PVDZE_plr_TradeMenuResult"};
 		};
 
 		lbClear TraderDialogItemList;
@@ -618,7 +618,7 @@ if (!isDedicated) then {
 				_header,
 				_File
 			]];
-		} forEach dayzTraderMenuResult;
+		} forEach PVDZE_plr_TradeMenuResult;
 		TraderItemList = _item_list;
 	};
 
@@ -673,7 +673,7 @@ if (!isDedicated) then {
 
 	EpochDeathBoardLoad = {
 		createdialog "EpochDeathBoardDialog";
-		/*dayzPlayerDeathsResult = [
+		/*PVDZE_plr_DeathBResult = [
 			["maca134","Bob","AK_107_Kobra",100,[8,30]],
 			["Fred","Jonny","FN_FAL",42,[8,32]],
 			["maca134","Bob","M9SD",100,[5,30]],
@@ -681,7 +681,7 @@ if (!isDedicated) then {
 		];*/
 		{
 			lbAdd [EpochDeathBoardDialogList, (_x select 0)];
-		} forEach dayzPlayerDeathsResult;
+		} forEach PVDZE_plr_DeathBResult;
 	};
 
 
@@ -701,7 +701,7 @@ if (!isDedicated) then {
 		_i = _this select 0;
 		if (_i < 0) exitWith {};
 		_output = _this select 1;
-		_record = dayzPlayerDeathsResult select _i;
+		_record = PVDZE_plr_DeathBResult select _i;
 		_record_stxt = call compile format["epoch_death_board_record_%1;",_i];
 		if(isNil "_record_stxt") then {
 			_record_stxt = format["<t size='1.6' align='left'>%1</t><br /><br />", (_record select 0)];

@@ -81,11 +81,11 @@ if (_qty >= _qty_in) then {
 
 		if (_qty >= _qty_in) then {
 
-			//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-			dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-			publicVariableServer  "dayzTradeObject";
+			//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos];
+			publicVariableServer  "PVDZE_obj_Trade";
 	
-			//diag_log format["DEBUG Starting to wait for answer: %1", dayzTradeObject];
+			//diag_log format["DEBUG Starting to wait for answer: %1", PVDZE_obj_Trade];
 
 			waitUntil {!isNil "dayzTradeResult"};
 
@@ -127,9 +127,9 @@ if (_qty >= _qty_in) then {
 
 							_location = (getPosATL _veh);
 					
-							//["dayzPublishVeh",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
-							dayzPublishVeh2 = [_veh,[_dir,_location],_part_out,false,_keySelected];
-							publicVariableServer  "dayzPublishVeh2";
+							//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
+							PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected];
+							publicVariableServer  "PVDZE_veh_Publish2";
 
 							player reveal _veh;
 
@@ -154,9 +154,9 @@ if (_qty >= _qty_in) then {
 						_objectID 	= _obj getVariable ["ObjectID","0"];
 						_objectUID	= _obj getVariable ["ObjectUID","0"];
 
-						//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
-						dayzDeleteObj = [_objectID,_objectUID];
-						publicVariableServer "dayzDeleteObj";
+						//["PVDZE_obj_Delete",[_objectID,_objectUID]] call callRpcProcedure;
+						PVDZE_obj_Delete = [_objectID,_objectUID];
+						publicVariableServer "PVDZE_obj_Delete";
 
 						deleteVehicle _obj;
 

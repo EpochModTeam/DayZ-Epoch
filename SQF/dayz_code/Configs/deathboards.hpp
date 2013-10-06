@@ -49,7 +49,7 @@ class EpochDeathBoardDialog
 			y = 0.706267 * safezoneH + safezoneY;
 			w = 0.0743671 * safezoneW;
 			h = 0.0550044 * safezoneH;
-			onButtonClick = "dayzPlayerDeathsResult = nil; ((ctrlParent (_this select 0)) closeDisplay 9000);";
+			onButtonClick = "PVDZE_plr_DeathBResult = nil; ((ctrlParent (_this select 0)) closeDisplay 9000);";
 		};
 		class RscStructuredText_1100: RscStructuredText
 		{

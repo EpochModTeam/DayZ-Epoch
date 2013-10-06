@@ -47,7 +47,7 @@ if (_finished) then {
 		usecTransfuse = [_unit,player];
 		publicVariable "usecTransfuse";
 
-		//dayzHumanity = [player,100];
+		//PVDZE_plr_HumanityChange = [player,100];
 		[player,100] call player_humanityChange;
 	};
 } else {

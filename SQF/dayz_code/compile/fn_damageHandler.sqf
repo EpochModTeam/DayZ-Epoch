@@ -32,9 +32,9 @@ _unitIsPlayer = _unit == player;
 if (_isPlayer) then {
 	if (_damage > 0.1) then {
 		dayz_canDisconnect = false;
-		//["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
-		dayzDiscoAdd = getPlayerUID player;
-		publicVariableServer "dayzDiscoAdd";
+		//["PVDZE_plr_DiscAdd",getPlayerUID player] call callRpcProcedure;
+		PVDZE_plr_DiscAdd = getPlayerUID player;
+		publicVariableServer "PVDZE_plr_DiscAdd";
 				
 		dayz_damageCounter = time;
 		
@@ -59,9 +59,9 @@ if (_unitIsPlayer) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
-				//["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
-				dayzHumanity = [_source,_humanityHit,30];
-				publicVariable "dayzHumanity";
+				//["PVDZE_plr_HumanityChange",[_source,_humanityHit,30]] call broadcastRpcCallAll;
+				PVDZE_plr_HumanityChange = [_source,_humanityHit,30];
+				publicVariable "PVDZE_plr_HumanityChange";
 			};
 		};
 	};

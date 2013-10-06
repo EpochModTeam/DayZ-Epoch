@@ -57,10 +57,10 @@ if(!isNull _obj and alive _obj) then {
 	_backpacks = 	getBackpackCargo _obj;
 
 	deleteVehicle _obj;
-	dayzDeleteObj = [_objectID,_objectUID];
-	publicVariableServer "dayzDeleteObj";
+	PVDZE_obj_Delete = [_objectID,_objectUID];
+	publicVariableServer "PVDZE_obj_Delete";
 	if (isServer) then {
-		dayzDeleteObj call server_deleteObj;
+		PVDZE_obj_Delete call server_deleteObj;
 	};
 	
 	//Add weapons

@@ -27,7 +27,7 @@ if (_spawnRoll <= _spawnChance) then {
 	_crash setPos _position;
 
 	// I don't think this is needed (you can't get "in" a crash), but it was in the original DayZ Crash logic
-	//dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_crash];
+	//PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_crash];
 
 	//_crash setVariable ["ObjectID","1",true];
 

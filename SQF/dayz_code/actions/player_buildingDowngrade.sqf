@@ -132,8 +132,8 @@ if ((count _upgrade) > 0) then {
 	
 		cutText [format["You have downgraded %1.",_text], "PLAIN DOWN", 5];
 
-		dayzSwapObj = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
-		publicVariableServer "dayzSwapObj";
+		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
+		publicVariableServer "PVDZE_obj_Swap";
 
 		player reveal _object;
 			

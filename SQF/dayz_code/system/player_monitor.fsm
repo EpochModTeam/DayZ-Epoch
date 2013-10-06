@@ -337,11 +337,11 @@ class FSM
            "	_currentState = [_currentWpn,_currentAnim,_temp];" \n
            "	" \n
            "	dayz_Magazines = _magazineArray;" \n
-           "	dayzPlayerSave = [player,dayz_Magazines,false,true];" \n
-           "	publicVariableServer ""dayzPlayerSave"";" \n
+           "	PVDZE_plr_Save = [player,dayz_Magazines,false,true];" \n
+           "	publicVariableServer ""PVDZE_plr_Save"";" \n
            "			" \n
            "	if (isServer) then {" \n
-           "		dayzPlayerSave call server_playerSync;" \n
+           "		PVDZE_plr_Save call server_playerSync;" \n
            "	};" \n
            "						" \n
            "	dayz_lastSave = diag_tickTime;" \n
@@ -481,11 +481,11 @@ class FSM
        "" \n
        "_msg = [];" \n
        "" \n
-       "dayzLogin = [_playerUID,player];" \n
-       "publicVariableServer ""dayzLogin"";" \n
+       "PVDZE_plr_Login = [_playerUID,player];" \n
+       "publicVariableServer ""PVDZE_plr_Login"";" \n
        "" \n
        "if (isServer) then {" \n
-       "	dayzLogin call server_playerLogin;" \n
+       "	PVDZE_plr_Login call server_playerLogin;" \n
        "};" \n
        "" \n
        "dayzPlayerLogin = [];" \n
@@ -729,10 +729,10 @@ class FSM
        "};" \n
        "" \n
        "dayzPlayerLogin2 = [];" \n
-       "//[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
+       "//[""PVDZE_plr_Login2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
        "" \n
-       "dayzLogin2 = [_charID,player,_playerUID];" \n
-       "publicVariableServer ""dayzLogin2"";" \n
+       "PVDZE_plr_Login2 = [_charID,player,_playerUID];" \n
+       "publicVariableServer ""PVDZE_plr_Login2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.9;" \n
@@ -1156,8 +1156,8 @@ class FSM
       name = "Initialize";
       init = /*%FSM<STATEINIT""">*/"#define ods(arg1) ""armaperflib"" callextension arg1" \n
        "" \n
-       "if (!isNil ""dayzSetDate"") then {" \n
-       "	setDate dayzSetDate;" \n
+       "if (!isNil ""PVDZE_plr_SetDate"") then {" \n
+       "	setDate PVDZE_plr_SetDate;" \n
        "};" \n
        "" \n
        "if (!isNil ""dayzInfectedCamps"") then {" \n
@@ -1165,7 +1165,7 @@ class FSM
        "	dayzInfectedCamps spawn infectedcamps;" \n
        "};" \n
        "" \n
-       "diag_log (""Local Time: "" +str(dayzSetDate));" \n
+       "diag_log (""Local Time: "" +str(PVDZE_plr_SetDate));" \n
        "" \n
        "//Medical" \n
        "dayz_medicalH = 	[] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
@@ -1272,7 +1272,7 @@ class FSM
           priority = 0.000000;
           to="ERROR__No_Date_or";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!isNil ""dayzSetDate"""/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isNil ""PVDZE_plr_SetDate"""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1296,10 +1296,10 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"dayzGearSave = true;" \n
        "dayz_myPosition = getPosATL player;" \n
        "" \n
-       "//[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
+       "//[""PVDZE_plr_LoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
        "" \n
-       "dayzLoginRecord = [_playerUID,_charID,0];" \n
-       "publicVariableServer ""dayzLoginRecord"";" \n
+       "PVDZE_plr_LoginRecord = [_playerUID,_charID,0];" \n
+       "publicVariableServer ""PVDZE_plr_LoginRecord"";" \n
        "" \n
        "endLoadingScreen;" \n
        ""/*%FSM</STATEINIT""">*/;

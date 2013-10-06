@@ -10,17 +10,17 @@ _activatingPlayer = _this select 1;
 _trader_id = (_this select 3) select 0;
 // _category = (_this select 3) select 1;
 
-dayzTraderMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
+PVDZE_plr_TradeMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
 
-if(isNil "dayzTraderMenuResult") then {
+if(isNil "PVDZE_plr_TradeMenuResult") then {
 	//diag_log format["DEBUG TRADER OBJ: %1", _trader_id];
-	//["dayzTraderMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
-	dayzTraderMenu = [_activatingPlayer,_trader_id];
-	publicVariableServer  "dayzTraderMenu";
-	waitUntil {!isNil "dayzTraderMenuResult"};
+	//["PVDZE_plr_TradeMenu",[_activatingPlayer,_trader_id,_category,_action]] call callRpcProcedure;
+	PVDZE_plr_TradeMenu = [_activatingPlayer,_trader_id];
+	publicVariableServer  "PVDZE_plr_TradeMenu";
+	waitUntil {!isNil "PVDZE_plr_TradeMenuResult"};
 };
 
-//diag_log format["DEBUG Buy: %1", dayzTraderMenuResult];
+//diag_log format["DEBUG Buy: %1", PVDZE_plr_TradeMenuResult];
 {
 	_header = _x select 0; // "TRD"
 	
@@ -109,14 +109,14 @@ if(isNil "dayzTraderMenuResult") then {
 	//diag_log format["DEBUG TRADER: %1", _part];
 	s_player_parts set [count s_player_parts,_part];
 	
-} forEach dayzTraderMenuResult;
+} forEach PVDZE_plr_TradeMenuResult;
 
 _cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["medical"], 0, true, false, "",""];
 s_player_parts set [count s_player_parts,_cancel];
 
 // Cache data in client side global variable
-call compile format["tcacheBuy_%1 = %2;",_tid,dayzTraderMenuResult];
+call compile format["tcacheBuy_%1 = %2;",_tid,PVDZE_plr_TradeMenuResult];
 
 // Clear Data
-dayzTraderMenuResult = nil;
+PVDZE_plr_TradeMenuResult = nil;
 s_player_parts_crtl = 1;

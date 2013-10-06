@@ -121,8 +121,6 @@ if (!_hasrequireditem) exitWith {TradeInprogress = false; cutText [format["Missi
 if (_hasrequireditem) then {
 
 	_location = [0,0,0];
-	
-	_counter = 0;
 	_isOk = true;
 
 	// get inital players position
@@ -142,25 +140,23 @@ if (_hasrequireditem) then {
 	_position = getPosATL _object;
 
 	cutText ["Planning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to build.", "PLAIN DOWN"];
-
+	_counter = time;
+	
 	while {_isOk} do {
 		
 		_zheightchanged = false;
 		_zheightdirection = "";
 		_rotate = false;
-		_tick = 1;
 	
 		if (DZE_Q) then {
 			DZE_Q = false;
 			_zheightdirection = "up";
 			_zheightchanged = true;
-			_tick = 10;
 		};
 		if (DZE_Z) then {
 			DZE_Z = false;
 			_zheightdirection = "down";
 			_zheightchanged = true;	
-			_tick = 10;
 		};
 
 
@@ -168,13 +164,11 @@ if (_hasrequireditem) then {
 			DZE_Q_alt = false;
 			_zheightdirection = "up_alt";
 			_zheightchanged = true;
-			_tick = 100;
 		};
 		if (DZE_Z_alt) then {
 			DZE_Z_alt = false;
 			_zheightdirection = "down_alt";
 			_zheightchanged = true;
-			_tick = 100;
 		};
 
 
@@ -211,28 +205,25 @@ if (_hasrequireditem) then {
 
 			_position = getPosATL _object;
 
-			// make z height stick to ticks
-			// _ztick = (round((_position select 2)*100)/100);
-
 			if(_zheightdirection == "up") then {
-				_position = [(_position select 0),(_position select 1), ((_position select 2)+0.1)];
+				_position set [2,((_position select 2)+0.1)];
 			};
 			if(_zheightdirection == "down") then {
-				_position = [(_position select 0),(_position select 1), ((_position select 2)-0.1)];
+				_position set [2,((_position select 2)-0.1)];
 			};
 
 			if(_zheightdirection == "up_alt") then {
-				_position = [(_position select 0),(_position select 1), ((_position select 2)+1)];
+				_position set [2,((_position select 2)+1)];
 			};
 			if(_zheightdirection == "down_alt") then {
-				_position = [(_position select 0),(_position select 1), ((_position select 2)-1)];
+				_position set [2,((_position select 2)-1)];
 			};
 
 			if(_zheightdirection == "up_ctrl") then {
-				_position = [(_position select 0),(_position select 1), ((_position select 2)+0.01)];
+				_position set [2,((_position select 2)+0.01)];
 			};
 			if(_zheightdirection == "down_ctrl") then {
-				_position = [(_position select 0),(_position select 1), ((_position select 2)-0.01)];
+				_position set [2,((_position select 2)-0.01)];
 			};
 			
 			_object setDir (getDir _object);
@@ -244,8 +235,6 @@ if (_hasrequireditem) then {
 			_object attachTo [player];
 			
 		};
-
-		
 		
 		sleep 1;
 
@@ -268,7 +257,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 		
-		if(_counter >= 500) exitWith {
+		if((time-_counter) >= 60) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Ran out of time to find position."; 
@@ -276,9 +265,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 
-		cutText [format["%1",(500-_counter)], "PLAIN DOWN"];
-
-		_counter = _counter + _tick;
+		cutText [format["%1",(time-_counter)], "PLAIN DOWN"];
 
 		if (player getVariable["combattimeout", 0] >= time) exitWith {
 			_isOk = false;
@@ -295,8 +282,6 @@ if (_hasrequireditem) then {
 			detach _object;
 			deleteVehicle _object;
 		};
-
-		
 	};
 
 	// No building on roads
@@ -441,8 +426,8 @@ if (_hasrequireditem) then {
 					_tmpbuilt setVariable ["CharacterID",_combination,true];
 					
 
-					dayzPublishObj = [_combination,_tmpbuilt,[_dir,_location],_classname];
-					publicVariableServer "dayzPublishObj";
+					PVDZE_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],_classname];
+					publicVariableServer "PVDZE_obj_Publish";
 
 					cutText [format["You have setup your %2. Combination is %1",_combinationDisplay,_text], "PLAIN DOWN", 5];
 					
@@ -454,8 +439,8 @@ if (_hasrequireditem) then {
 					if(_tmpbuilt isKindOf "Land_Fire") then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						dayzPublishObj = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
-						publicVariableServer "dayzPublishObj";
+						PVDZE_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
+						publicVariableServer "PVDZE_obj_Publish";
 					};
 				};
 

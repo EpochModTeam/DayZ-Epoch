@@ -73,9 +73,9 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 		if (_hasKnifeBlunt) then { _qty = round(_qty / 2); };
 	
-		dayzGutBody = [_item,_qty];
-		dayzGutBody spawn local_gutObject;
-		publicVariable "dayzGutBody";
+		PVDZE_plr_GutBody = [_item,_qty];
+		PVDZE_plr_GutBody spawn local_gutObject;
+		publicVariable "PVDZE_plr_GutBody";
 		
 		_string = format[localize "str_success_gutted_animal",_text,_qty];
 		cutText [_string, "PLAIN DOWN"];

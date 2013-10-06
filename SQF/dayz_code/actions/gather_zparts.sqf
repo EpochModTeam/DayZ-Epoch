@@ -69,9 +69,9 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 		_qty = 1;
 	
-		dayzGutBody = [_item,_qty];
-		dayzGutBody spawn local_gutObjectZ;		
-		publicVariable "dayzGutBodyZ";
+		PVDZE_plr_GutBody = [_item,_qty];
+		PVDZE_plr_GutBody spawn local_gutObjectZ;		
+		publicVariable "PVDZE_plr_GutBodyZ";
 		
 		// Reduce humanity for gutting zeds
 		_humanity = player getVariable["humanity",0];

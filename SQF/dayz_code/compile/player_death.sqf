@@ -13,9 +13,9 @@ if (r_player_infected) then {
 };
 
 //Send Death Notice
-//["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName,_infected]] call callRpcProcedure;
-dayzDeath = [dayz_characterID,0,_body,_playerID,dayz_playerName,_infected];
-publicVariableServer "dayzDeath";
+//["PVDZE_plr_Died",[dayz_characterID,0,_body,_playerID,dayz_playerName,_infected]] call callRpcProcedure;
+PVDZE_plr_Died = [dayz_characterID,0,_body,_playerID,dayz_playerName,_infected];
+publicVariableServer "PVDZE_plr_Died";
 
 _id = [player,20,true,getPosATL player] spawn player_alertZombies;
 
@@ -65,9 +65,9 @@ if (count _array > 0) then {
 				_wait = 0;
 			};
 			if (!_canHitFree) then {
-				//["dayzHumanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
-				dayzHumanity = [_source,_humanity,_wait];
-				publicVariable "dayzHumanity";
+				//["PVDZE_plr_HumanityChange",[_source,_humanity,_wait]] call broadcastRpcCallAll;
+				PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
+				publicVariable "PVDZE_plr_HumanityChange";
 			};
 		};
 	};

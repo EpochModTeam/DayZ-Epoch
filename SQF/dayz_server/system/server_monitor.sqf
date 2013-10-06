@@ -37,8 +37,8 @@ if(_outcome == "PASS") then {
 		
 	if(isDedicated) then {
 		setDate _date;
-		dayzSetDate = _date;
-		publicVariable "dayzSetDate";
+		PVDZE_plr_SetDate = _date;
+		publicVariable "PVDZE_plr_SetDate";
 	};
 
 	diag_log ("HIVE: Local Time set to " + str(_date));
@@ -268,7 +268,7 @@ if (isServer and isNil "sm_done") then {
 			};
 
 			//Monitor the object
-			dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+			PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 		};
 	} forEach _objectArray;
 	// # END OF STREAMING #

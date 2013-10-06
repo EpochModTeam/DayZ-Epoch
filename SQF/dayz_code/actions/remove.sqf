@@ -154,8 +154,8 @@ if (_proceed) then {
 		deleteVehicle _obj;
 		
 		if(!_isWreck) then {
-			dayzDeleteObj = [_objectID,_objectUID];
-			publicVariableServer "dayzDeleteObj";
+			PVDZE_obj_Delete = [_objectID,_objectUID];
+			publicVariableServer "PVDZE_obj_Delete";
 		};
 
 		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];

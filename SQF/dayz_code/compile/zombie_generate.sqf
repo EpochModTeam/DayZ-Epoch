@@ -31,8 +31,8 @@ if (_doLoiter) then {
 };
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
-dayzSpawnZed = [_agent];
-publicVariableServer "dayzSpawnZed";
+PVDZE_zed_Spawn = [_agent];
+publicVariableServer "PVDZE_zed_Spawn";
 
 if (_doLoiter) then {
 	_agent setDir round(random 180);

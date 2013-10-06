@@ -56,7 +56,7 @@ _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _da
 diag_log ("HIVE: WRITE: "+ str(_key)); 
 _key call server_hiveWrite;
 
-dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 
 // Switched to spawn so we can wait a bit for the ID
 [_object,_uid,_fuel,_damage,_array,_characterID,_class] spawn {
@@ -115,8 +115,8 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	_object call fnc_veh_ResetEH;
 
 	// testing - should make sure everyone has eventhandlers for vehicles was unused...
-	dayzVehicleInit = _object;
-	publicVariable "dayzVehicleInit";
+	PVDZE_veh_Init = _object;
+	publicVariable "PVDZE_veh_Init";
 
 	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
 };

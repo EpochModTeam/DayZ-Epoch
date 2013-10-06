@@ -250,5 +250,5 @@ _playerObj setVariable ["lastTime",time];
 
 diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 
-dayzLogin = null;
-dayzLogin2 = null;
+PVDZE_plr_Login = null;
+PVDZE_plr_Login2 = null;
