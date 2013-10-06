@@ -21,7 +21,8 @@ class CfgMagazines {
 	class 29Rnd_30mm_AGS30 : CA_Magazine { 
 		scope = 2; 
 		displayName = "HE Rounds"; 
-		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		model = "\z\addons\dayz_epoch\models\30mm_mag.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_30mm_mag_ca.paa";
 		ammo = "G_30mm_HE"; 
 		count = 29; 
 		type = "256";
@@ -34,7 +35,7 @@ class CfgMagazines {
 	class 50Rnd_127x107_DSHKM : CA_Magazine { 
 		scope = 2; 
 		displayName = "DShKM"; 
-		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		picture = "\z\addons\dayz_epoch\pictures\equip_Dshkm_mag_ca.paa";
 		model = "\z\addons\dayz_epoch\models\dshkm_mag.p3d";
 		ammo = "B_127x107_Ball"; 
 		count = 50; 
@@ -49,7 +50,8 @@ class CfgMagazines {
 	class 100Rnd_127x99_M2 : CA_Magazine { 
 		scope = 2; 
 		displayName = "M2 Machine Gun"; 
-		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		model = "\z\addons\dayz_epoch\models\50cal_mag.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_50cal_mag_ca.paa";
 		ammo = "B_127x99_Ball"; 
 		count = 100; 
 		type = "256";
@@ -64,7 +66,7 @@ class CfgMagazines {
 		count = 2000; 
 		scope = 2; 
 		displayName = "M134 7.62 Nato"; 
-		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		picture = "\z\addons\dayz_epoch\pictures\equip_m136_mag_ca.paa";
 		model = "\z\addons\dayz_epoch\models\m136_mag.p3d";
 		ammo = "B_762x51_3RndBurst"; 
 		type = "256";
@@ -76,7 +78,8 @@ class CfgMagazines {
 	class 48Rnd_40mm_MK19 : CA_Magazine { 
 		scope = 2; 
 		displayName = "Mk. 19 40mm"; 
-		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
+		model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
 		ammo = "G_40mm_HE"; 
 		count = 48; 
 		type = "256";
