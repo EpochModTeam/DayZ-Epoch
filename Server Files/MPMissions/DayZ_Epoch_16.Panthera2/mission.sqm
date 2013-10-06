@@ -1250,7 +1250,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=26;
+		items=21;
 		class Item0
 		{
 			position[]={5192.2104,62.495663,4994.3667};
@@ -1301,7 +1301,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={4338.479,10.016178,1528.2371};
+			position[]={4114.5718,107.40243,3820.0657};
 			name="spawn6";
 			type="Empty";
 		};
@@ -1325,13 +1325,13 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={9024.6602,7.4730291,3998.9167};
+			position[]={6116.582,31.410233,3811.6714};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={544.57697,17.250328,8937.3184};
+			position[]={4763.8818,3.7238832,7484.0034};
 			name="AirVehiclesF";
 			text="AWOL's Airfield";
 			type="mil_dot";
@@ -1339,7 +1339,7 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={2832.5659,18.754944,8019.6426};
+			position[]={5232.6299,1.9700195,8228.4785};
 			name="WholesalerWest";
 			text="West's Wholesaler";
 			type="mil_dot";
@@ -1347,37 +1347,13 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={3990.0601,58.092819,6156.1484};
-			name="NeutralWeapons/Ammo/Medic";
-			text="Kopa Weapons/Ammo/Medical";
-			type="mil_circle";
-			colorName="ColorBlack";
-		};
-		class Item16
-		{
-			position[]={5632.1489,185.22168,5050.3315};
-			name="HighEndWeapon/Ammo";
-			text="Drake and Roberts Weapons/Ammo";
-			type="mil_circle";
-			colorName="ColorGreen";
-		};
-		class Item17
-		{
 			position[]={9056.7129,9.2987309,4073.5034};
 			name="HeroVehicles";
 			text="Darren's Hero Vehicles";
 			type="mil_triangle";
 			colorName="ColorBlue";
 		};
-		class Item18
-		{
-			position[]={2931.1838,4.3596339,3348.3813};
-			name="Medic/Vehicles";
-			text="Kypex and Perry's Vehicles/Medical";
-			type="mil_circle";
-			colorName="ColorGreen";
-		};
-		class Item19
+		class Item16
 		{
 			position[]={1891.7347,5.0501137,3611.1328};
 			name="NeutralAirVehicles";
@@ -1385,53 +1361,177 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item20
+		class Item17
 		{
-			position[]={2340.2014,86.142517,5233.7705};
-			name="HeroVendorNoVehicles";
-			text="Trevors Hero Supplies";
-			type="mil_dot";
-			colorName="ColorBlue";
-		};
-		class Item21
-		{
-			position[]={7944.0186,7.1507893,4807.3774};
-			name="NeutralCars";
-			text="Brians Vehicles";
-			type="mil_dot";
-			colorName="ColorOrange";
-		};
-		class Item22
-		{
-			position[]={8938.6816,1.3595574,4795.3315};
+			position[]={3380.9607,0.71122277,1986.1715};
 			name="Boats";
 			text="Sams Boats";
 			type="mil_triangle";
 			colorName="ColorBlack";
 		};
-		class Item23
+		class Item18
 		{
 			position[]={8687.3086,7.7843323,3137.5818};
-			name="FriendlyRepair/FoodDrink";
-			text="Melly and Axles General/Building Supplies";
+			name="NeutralTraders";
+			text="Trader City Selca";
 			type="mil_circle";
-			colorName="ColorGreen";
+			colorName="ColorBrown";
 		};
-		class Item24
+		class Item19
 		{
-			position[]={4426.6914,20.192377,1630.2759};
-			name="NeutralGeneral/Building";
-			text="Bertha and Rocky's General/Building Supplies";
+			position[]={4422.4429,21.508146,1629.3304};
+			name="NeutralTraderCity2";
+			text="Trader City Pikia";
 			type="mil_circle";
-			colorName="ColorBlack";
+			colorName="ColorBrown";
 		};
-		class Item25
+		class Item20
 		{
 			position[]={7224.3823,8.2689209,727.15576};
 			name="WholesaleSouth";
 			text="South's Wholesaler";
 			type="mil_dot";
 			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=8;
+		class Item0
+		{
+			position[]={4419.9492,22.076105,1629.0402};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="TraderCity1";
+			expCond="(player distance TraderCity1) < 100; ";
+			expActiv="TitleText[""Now Entering Trader City Pikla"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Pikla"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={8688.6563,7.2285666,3129.0193};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="TraderCity2";
+			expCond="(player distance TraderCity2) < 100; ";
+			expActiv="TitleText[""Now Entering Trader City Selca"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Selca"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={9051.5801,9.2987309,4073.2256};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="HeroVendors";
+			expCond="(player distance HeroVendors) < 100; ";
+			expActiv="TitleText[""Now Entering Hero Trader Camp"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Hero Trader Camp"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={7207.6226,6.7110448,735.10217};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="WholeSaler1";
+			expCond="(player distance WholeSaler1) < 100; ";
+			expActiv="TitleText[""Now Entering South's Wholesale"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving South's Wholesale"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={1891.4895,4.9686322,3603.2834};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="BanditTrader";
+			expCond="(player distance BanditTrader) < 100; ";
+			expActiv="TitleText[""Now Entering Bandit Camp"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={4765.1875,3.7672851,7485.4868};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="AWOLsAirField";
+			expCond="(player distance AWOLsAirField) < 100; ";
+			expActiv="TitleText[""Now Entering AWOLs Airfield"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving AWOLs Airfield"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={5228.0054,2.0105178,8230.0947};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Wholesaler2";
+			expCond="(player distance Wholesaler2) < 100; ";
+			expActiv="TitleText[""Now Entering West's Wholesale"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving West's Wholesale"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={3382.9978,2.508637,1996.4783};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="BoatVendor";
+			expCond="(player distance BoatVendor) < 100; ";
+			expActiv="TitleText[""Now Entering Sams Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Sams Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
 		};
 	};
 };
