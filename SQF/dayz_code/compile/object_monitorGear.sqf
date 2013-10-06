@@ -60,13 +60,14 @@ if (vehicle player != player) then {
 _isVehicle = _object isKindOf "AllVehicles";
 _isMan = _object isKindOf "Man";
 _isStorage = _object isKindOf "Land_A_tent";
+_isnewstorage = (typeOf _object) in DZE_isNewStorage;
 
 _timeout = time + 2;
 waitUntil { !(isNull (findDisplay 106)) or (_timeout < time) };
 
 //diag_log format["object_monitorGear.sqf: _object: %1 _isStorage: %4 _isVehicle: %2 _isMan: %3 _display: %5", _object, _isVehicle, _isMan, _isStorage, findDisplay 106];
 
-if ((_isVehicle or _isStorage) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
+if ((_isVehicle or _isStorage or _isnewstorage) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
 	_objectName = getText (configFile >> "CfgVehicles" >> (typeof _object) >> "displayName");
 	_controlText = [] call _getControlText;
 	
