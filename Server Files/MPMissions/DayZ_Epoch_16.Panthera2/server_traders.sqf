@@ -4,7 +4,7 @@ serverTraders = ["GUE_Soldier_Pilot","UN_CDF_Soldier_MG_EP1","GUE_Soldier_Medic"
 menu_GUE_Soldier_Pilot = [
 	[["Airplanes",517],["Helicopter Unarmed",519]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // West's Wholesaler
 menu_UN_CDF_Soldier_MG_EP1 = [
@@ -40,13 +40,13 @@ menu_Tanny_PMC = [
 menu_BAF_Soldier_AMG_W = [
 	[["Assault Rifle Ammo",480],["Light Machine Gun Ammo",481],["Pistol Ammo",484],["Shotguns and Single-shot Ammo",573],["Sniper Rifle Ammo",482],["Submachine Gun Ammo",483]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Drakes Weapons
 menu_BAF_Soldier_AAA_DDPM = [
 	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Brians Vehicles
 menu_GUE_Soldier_3 = [
@@ -76,25 +76,25 @@ menu_GUE_Soldier_Sab = [
 menu_US_Soldier_Medic_EP1 = [
 	[["Chem-lites/Flares",542],["Medical Supplies",541],["Smoke Grenades",543]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
-	"friendly"
+	"neutral"
 ];
 // Kypex's Vehicles
 menu_CZ_Special_Forces_MG_DES_EP1 = [
 	[["Bikes and ATV",536],["Buses and Vans",592],["Cargo Trucks",570],["Compact Cars",593],["Economy Cars",594],["Fuel Trucks",595],["Luxury Cars",596],["Microcars",597],["Military Unarmed",599],["Trucks Unarmed",535],["Used Cars",600],["Utility Vehicles",568]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Melly's General Supplies
 menu_Damsel5 = [
 	[["Backpacks",688],["Clothes",689],["Cooked Meats",690],["Drinks",691],["Packaged Food",692]],
 	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
-	"friendly"
+	"neutral"
 ];
 // Jim's Repair/Building Supplies
 menu_GUE_Woodlander3 = [
 	[["Building Supplies",680],["Toolbelt Items",681],["Vehicle Parts",682]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // South West Wholesaler
 menu_UN_CDF_Soldier_AAT_EP1 = [
