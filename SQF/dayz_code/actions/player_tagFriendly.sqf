@@ -18,5 +18,6 @@ if (!(_callerID in _rfriendlies)) then {
 	// caller
 	titleText [format["You have tagged a player as friendly. Waiting for other player to accept.",(name _target)], "PLAIN DOWN"];
 	// target
-	[_caller,_target,"loc",rTITLETEXT,format["A player wants to tag you as friendly. To accept, tag player as friendly.", (name _caller)],"PLAIN DOWN"] call RE;
+	PVDZE_plr_FriendRQ = format["%1 wants to tag you as friendly. To accept, tag %1 as friendly.", (name _caller)];
+	(owner _target) publicVariableClient "PVDZE_plr_FriendRQ";
 };
