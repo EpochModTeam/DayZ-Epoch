@@ -61,11 +61,11 @@ if (true) then
 _vehicle_15 = objNull;
 if (true) then
 {
-  _this = createVehicle ["FoldTable", [4493.5439, 497.43845, 1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["FoldTable", [4493.6362, 497.29367, 1.9073486e-006], [], 0, "CAN_COLLIDE"];
   _vehicle_15 = _this;
-  _this setDir 89.551338;
+  _this setDir 91.254639;
   _this setVehicleInit "this allowDammage false; this enableSimulation false;  ";
-  _this setPos [4493.5439, 497.43845, 1.9073486e-006];
+  _this setPos [4493.6362, 497.29367, 1.9073486e-006];
 };
 
 _vehicle_16 = objNull;
@@ -1646,10 +1646,65 @@ _unit_113 = objNull;
 if (true) then
 {
   _this = _group_0 createUnit ["FR_Assault_R", [4677.6855, 1880.1096, 4.7683716e-007], [], 0, "CAN_COLLIDE"];
-  _unit_112 = _this;
+  _unit_113 = _this;
   _this setDir -124.71986;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
   _this setUnitAbility 0.60000002;
 _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;};
 
+_vehicle_558 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Fire_barrel", [4491.125, 499.75305, -3.9100647e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_558 = _this;
+  _this setDir 267.28979;
+  _this setPos [4491.125, 499.75305, -3.9100647e-005];
+};
+
+_vehicle_560 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Fire_barrel", [4675.1641, 1876.5009, 2.2411346e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_560 = _this;
+  _this setDir 428.29886;
+  _this setPos [4675.1641, 1876.5009, 2.2411346e-005];
+};
+
+_vehicle_562 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Fire_barrel", [1602.7466, 1070.7717, 9.5367432e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_562 = _this;
+  _this setDir 203.53108;
+  _this setPos [1602.7466, 1070.7717, 9.5367432e-006];
+};
+
+_vehicle_564 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Fire_barrel", [3522.0642, 3132.9773, 1.3190868], [], 0, "CAN_COLLIDE"];
+  _vehicle_564 = _this;
+  _this setDir 316.73956;
+  _this setPos [3522.0642, 3132.9773, 1.3190868];
+};
+
+_vehicle_566 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Fire_barrel", [4353.0176, 3655.6545], [], 0, "CAN_COLLIDE"];
+  _vehicle_566 = _this;
+  _this setDir 48.818363;
+  _this setPos [4353.0176, 3655.6545];
+};
+
+_vehicle_568 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Fire_barrel", [3390.9268, 4098.6367, -1.5258789e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_568 = _this;
+  _this setDir 513.85626;
+  _this setPos [3390.9268, 4098.6367, -1.5258789e-005];
+};
+
 processInitCommands;
+
