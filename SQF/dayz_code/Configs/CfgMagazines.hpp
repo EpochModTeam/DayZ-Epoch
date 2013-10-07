@@ -154,7 +154,29 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
 		descriptionShort = "Unknown document";
-		weight = 0.5;
+		weight = 0.1;
+	};
+	class ItemLetter: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Letter";
+		model = "\z\addons\dayz_epoch\models\doc_letter.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_letter_ca.paa";
+		descriptionShort = "Unknown document";
+		weight = 0.1;
+	};
+	class ItemDocumentRamp: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "HowTo: Ramp";
+		model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+		descriptionShort = "Document used in building a wooden ramp.";
+		weight = 0.1;
 	};
 
 	class ItemCanvas: CA_Magazine

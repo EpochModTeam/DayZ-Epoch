@@ -1,4 +1,4 @@
-5 "" !"PVDZE_" !="drn_AskServerDynamicWeatherEventArgs" !="usecTransfuse" !="usecBandage" !="usecBleed" !="usecPainK" !="usecEpi" !="usecMorphine" !="norrnRaDrag" !="norrnR180" !="norrnRalie" !="norrnRALW" !="norrnRACarUp" !="norrnRAPicUp" !="norrnRnoAnim" !="remExField" !="BIS_MPF_logic" !="remExFP" !="player" !="rsay" !="rland" !="rsetdir" !="_this spawn fnc_plyrHit;"
+1 "" !"PVDZE_" !="drn_AskServerDynamicWeatherEventArgs" !="usecTransfuse" !="usecBandage" !="usecBleed" !="usecPainK" !="usecEpi" !="usecMorphine" !="norrnRaDrag" !="norrnR180" !="norrnRalie" !="norrnRALW" !="norrnRACarUp" !="norrnRAPicUp" !="norrnRnoAnim" !="remExField" !="BIS_MPF_logic" !="remExFP" !="player" !="rsay" !="rland" !="rsetdir" !="_this spawn fnc_plyrHit;"
 5 "dayzSpawnZed" 
 5 "dayzLogin"
 5 "dayzLogin2"

@@ -188,7 +188,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			};
 
 
-			if(!_isMan and _ownerID != "0" and !(_object isKindOf "Bicycle")) then {
+			if(!_isMan and _ownerID != "0" and !(_cursorTarget isKindOf "Bicycle")) then {
 				_player_lockUnlock_crtl = true;
 			};
 
