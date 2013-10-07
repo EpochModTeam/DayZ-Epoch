@@ -58,7 +58,7 @@ menu_GUE_Soldier_MG = [
 menu_Worker2 = [
 	[["Airplanes",517],["Helicopter Unarmed",519]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Vehicles Neutral
 menu_Worker3 = [
