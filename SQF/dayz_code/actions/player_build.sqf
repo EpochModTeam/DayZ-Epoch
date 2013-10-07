@@ -141,6 +141,8 @@ if (_hasrequireditem) then {
 
 	cutText ["Planning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to build.", "PLAIN DOWN"];
 	_counter = time;
+	_objHupDiff = 0;
+	_objHdwnDiff = 0;
 	
 	while {_isOk} do {
 		
@@ -207,23 +209,29 @@ if (_hasrequireditem) then {
 
 			if(_zheightdirection == "up") then {
 				_position set [2,((_position select 2)+0.1)];
+				_objHupDiff = _objHupDiff + 0.1;
 			};
 			if(_zheightdirection == "down") then {
 				_position set [2,((_position select 2)-0.1)];
+				_objHdwnDiff = _objHdwnDiff + 0.1;
 			};
 
 			if(_zheightdirection == "up_alt") then {
 				_position set [2,((_position select 2)+1)];
+				_objHupDiff = _objHupDiff + 1;
 			};
 			if(_zheightdirection == "down_alt") then {
 				_position set [2,((_position select 2)-1)];
+				_objHdwnDiff = _objHdwnDiff + 1;
 			};
 
 			if(_zheightdirection == "up_ctrl") then {
 				_position set [2,((_position select 2)+0.01)];
+				_objHupDiff = _objHupDiff + 0.01;
 			};
 			if(_zheightdirection == "down_ctrl") then {
 				_position set [2,((_position select 2)-0.01)];
+				_objHdwnDiff = _objHdwnDiff + 0.01;
 			};
 			
 			_object setDir (getDir _object);
@@ -261,6 +269,14 @@ if (_hasrequireditem) then {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Ran out of time to find position."; 
+			detach _object;
+			deleteVehicle _object;
+		};
+		
+		if((_objHdwnDiff > 5) or (_objHupDiff > 5)) exitWith {
+			_isOk = false;
+			_cancel = true;
+			_reason = "Cannot move up or down more than 5 meters"; 
 			detach _object;
 			deleteVehicle _object;
 		};
