@@ -1706,5 +1706,13 @@ if (true) then
   _this setPos [3390.9268, 4098.6367, -1.5258789e-005];
 };
 
-processInitCommands;
+_vehicle_569 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_A_Hospital", [3307.9253, 1509.431, -6.6757202e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_569 = _this;
+  _this setDir 0.91619194;
+  _this setPos [3307.9253, 1509.431, -6.6757202e-006];
+};
 
+processInitCommands;
