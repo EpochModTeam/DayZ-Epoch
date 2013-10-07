@@ -1,4 +1,4 @@
-private ["_result","_pos","_wsDone","_dir","_block","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_date","_script","_key","_outcome","_vehLimit","_hiveResponse","_objectCount","_codeCount","_objectArray","_year","_month","_day","_hour","_minute","_data","_status","_val","_traderid","_retrader","_traderData","_id"];
+private ["_result","_pos","_wsDone","_dir","_block","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_date","_script","_key","_outcome","_vehLimit","_hiveResponse","_objectCount","_codeCount","_objectArray","_hour","_minute","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0"];
 []execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
@@ -25,9 +25,9 @@ if(_outcome == "PASS") then {
 		
 	if(dayz_fullMoonNights) then {
 		//date setup
-		_year = _date select 0;
-		_month = _date select 1;
-		_day = _date select 2;
+		//_year = _date select 0;
+		//_month = _date select 1;
+		//_day = _date select 2;
 		_hour = _date select 3;
 		_minute = _date select 4;
 		
@@ -353,9 +353,13 @@ if (isServer and isNil "sm_done") then {
 		_id = [] spawn server_spawnEvents;
 		// server cleanup
 		_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
+
+		// spawn debug box
+		_debugMarkerPosition = getMarkerPos "respawn_west";
+		_vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
+		_vehicle_0 setPos _debugMarkerPosition;
 	};
 
-	
 	sm_done = true;
 	publicVariable "sm_done";
 };
