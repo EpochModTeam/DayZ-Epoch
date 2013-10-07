@@ -1293,7 +1293,7 @@ class Mission
 			name="zonebash";
 			expCond="(player distance zonebash) < 100;";
 			expActiv="TitleText[""Now entering trader city Berezniki"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; canbuild = true;";
+			expDesactiv="TitleText[""Now leaving trader city Berezniki"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 				soundDet="arabian_market_3";
@@ -1311,7 +1311,7 @@ class Mission
 			name="zoneklen";
 			expCond="(player distance zoneklen) < 100;";
 			expActiv="TitleText[""Now entering trader city Jesco"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; canbuild = true;";
+			expDesactiv="TitleText[""Now leaving trader city Jesco"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 				soundDet="arabian_market_3";
