@@ -20,6 +20,8 @@ _num = switch (_type) do {
 	case "dog_growl":	{3};
 	case "dog_qq":		{2};
 	case "keypad_tick":		{2};
+    case "open_backpack":  {4};
+    case "open_inventory": {4};
 };
 
 if (count _this > 4) then {

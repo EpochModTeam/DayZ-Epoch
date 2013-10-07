@@ -533,6 +533,41 @@ class CfgSounds {
 	class z_gore_short_loop : gore_1 {
 		sound[] = {"\dayz_sfx\gore\gore_short_loop.ogg",0.1,1,30};
 	};
+	class z_open_backpack_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_0.ogg",1,1,50};
+		titles[] = {};
+	};
+	class z_open_backpack_1 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_1.ogg",1,1,50};
+	};
+	class z_open_backpack_2 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_2.ogg",1,1,50};
+	};
+	class z_open_backpack_3 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_3.ogg",1,1,50};
+	};
+	class z_open_backpack_4 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_4.ogg",1,1,50};
+	};
+
+    class z_open_inventory_0 {
+        name = "";
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_0.ogg",0.1,1,30};
+        titles[] = {};
+    };
+    class z_open_inventory_1 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_1.ogg",0.1,1,30};
+    };
+    class z_open_inventory_2 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_2.ogg",0.1,1,30};
+    };
+    class z_open_inventory_3 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_3.ogg",0.1,1,30};
+    };
+    class z_open_inventory_4 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_4.ogg",0.1,1,30};
+    };
 
 	// epoch sounds
 	class z_keypad_tick_0 {
