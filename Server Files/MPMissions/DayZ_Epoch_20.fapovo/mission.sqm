@@ -39,7 +39,6 @@ class Mission
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
-		"warfarebuildings",
 		"ibr_fapovo"
 	};
 	randomSeed=11171215;
@@ -822,7 +821,6 @@ class Mission
 					vehicle="Survivor1_DZ";
 					player="PLAY CDG";
 					skill=0.60000002;
-
 					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
 				};
 				class Item69
@@ -1189,7 +1187,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=9;
+		items=16;
 		class Item0
 		{
 			position[]={2594.0728,0.6465264,2435.2771};
@@ -1246,6 +1244,168 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
+		class Item9
+		{
+			position[]={4491.8037,11.992476,495.3186};
+			name="AirVehicleUnarmed";
+			text="AWOL's Airfield";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item10
+		{
+			position[]={3695.9006,30.997803,2409.437};
+			name="TraderCity1";
+			text="Trader City Lixovo";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};
+		class Item11
+		{
+			position[]={3390.436,67.553764,4102.3057};
+			name="TraderCity2";
+			text="Trader City Didina";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};
+		class Item12
+		{
+			position[]={4688.2495,4.7524023,1887.5637};
+			name="Wholesaler";
+			text="Pauls Wholesale Crates";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item13
+		{
+			position[]={1609.009,24.847778,1071.5125};
+			name="BanditVendor";
+			text="Bandit Vendor";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item14
+		{
+			position[]={4342.1919,14.623056,3663.1824};
+			name="HeroVendor";
+			text="Hero Vendor";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item15
+		{
+			position[]={3540.96,-2.9805782,3142.8955};
+			name="BoatVendor";
+			text="Boat Vendor";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=6;
+		class Item0
+		{
+			position[]={1607.4017,24.848572,1062.5992};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="BanditVendor";
+			expCond="(player distance BanditVendor) < 100; ";
+			expActiv="TitleText[""Now Entering Bandit Camp"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={4489.2705,18.003222,488.39325};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="AirVehicleVendor";
+			expCond="(player distance AirVehicleVendor) < 100; ";
+			expActiv="TitleText[""Now Entering AWOLs Air Vehicles"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving AWOLs Air Vehicles"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={3698.187,30.951563,2407.4331};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="TraderCity1";
+			expCond="(player distance TraderCity1) < 100; ";
+			expActiv="TitleText[""Now Entering Trader CIty Lixovo"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Lixovo"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={4689.3506,4.6768036,1886.0624};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Wholesaler";
+			expCond="(player distance Wholesaler) < 100; ";
+			expActiv="TitleText[""Now Entering Pauls Wholesale Camp"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={4336.1519,14.623057,3660.7361};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="HeroVendor";
+			expCond="(player distance HeroVendor) < 100; ";
+			expActiv="TitleText[""Now Entering Hero Camp"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Hero Camp"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={3396.0093,67.553764,4099.6104};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="TraderCity2";
+			expCond="(player distance TraderCity2) < 100; ";
+			expActiv="TitleText[""Now Entering Trader CIty Didina"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader CIty Didina"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
 	};
 };
 class Intro
@@ -1292,7 +1452,7 @@ class OutroWin
 		minute=20;
 	};
 };
-class OutroLoose 
+class OutroLoose
 {
 	addOns[]=
 	{
