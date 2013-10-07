@@ -225,6 +225,7 @@ class SurvivorWpink_DZ: SurvivorW2_DZ
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\GirlyGirl.paa"};
 };
+/*
 class SurvivorWsequisha_DZ: SurvivorW2_DZ
 {
 	model = "\z\addons\dayz_epoch\skins\sequisha\sequisha.p3d";
@@ -236,6 +237,7 @@ class SurvivorWsequishaD_DZ: SurvivorW2_DZ
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\sequishaD_co.paa"};
 };
+*/
 class SurvivorWcombat_DZ: SurvivorW2_DZ
 {
 	hiddenSelections[] = {"Camo"};

@@ -56,7 +56,7 @@ if(isnil "MaxDynamicDebris") then {
 	MaxDynamicDebris = 100;
 };
 if(isnil "MaxMineVeins") then {
-	MaxMineVeins = 100;
+	MaxMineVeins = 50;
 };
 // Custon Configs End
 

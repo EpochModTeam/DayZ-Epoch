@@ -132,7 +132,7 @@ class CfgMagazines {
 	};
 
 
-  // Items
+	 // Items
 	class ItemHotwireKit: CA_Magazine
 	{
 		scope = 2;
@@ -143,6 +143,18 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_epoch\pictures\equip_hotwire_ca.paa";
 		descriptionShort = "Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.";
 		weight = 2;
+	};
+
+	class ItemDocument: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Document";
+		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		descriptionShort = "Unknown document";
+		weight = 0.5;
 	};
 
 	class ItemCanvas: CA_Magazine

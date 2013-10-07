@@ -1436,6 +1436,20 @@ class CfgVehicles {
 			};
 		};
 	};
+	class DebugBox_DZ: NonStrategic
+	{
+		placement = "vertical";
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		model = "\z\addons\dayz_epoch\models\debug_box.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 2000;
+		displayName = "Debug Box";
+		vehicleClass = "Fortifications";		
+	};
+
 	class TrapItems: NonStrategic{};
 	// buildables
 	class Hedgehog_DZ: BuiltItems
@@ -1632,6 +1646,35 @@ class CfgVehicles {
 		nameSound = "obj_house"; 
 		offset[] = {0,3,1};
 		removeoutput[] = {{"sandbag_nest_kit",1}};
+	};
+
+	class Supply_Crate_DZE: MiningItems
+	{
+		scope = 2;
+		destrType = "DestructBuilding";
+		cost = 100;
+		
+		model="\z\addons\dayz_epoch\models\ammo_supply.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+
+		mapSize = 2;
+		armor = 40;
+		displayName = "Supply Crate";
+
+		vehicleClass = "Fortifications";
+		
+		class DestructionEffects : DestructionEffects
+		{
+			class Ruin1
+			{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+			};
+		};
 	};
 
 	// mining

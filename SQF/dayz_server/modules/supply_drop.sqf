@@ -9,7 +9,7 @@ _spawnRadius = (HeliCrashArea/2);
 _spawnRoll = random 1;
 if (_spawnRoll <= _spawnChance) then {
 	
-	_crashModel = ["Misc_cargo_cont_tiny"] call BIS_fnc_selectRandom;
+	_crashModel = "Supply_Crate_DZE";
 
 	_lootTable = "SupplyDrop";
 	

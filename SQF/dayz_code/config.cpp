@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.2.391";
+		version = "1.0.2.392";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -2469,14 +2469,14 @@ class HeliCrash_No50s: Default {
 			{ "ItemSledge","weapon" },
 		};
 		itemChance[] =	{
-			0.15,
-			0.2,
-			0.1,
 			0.1,
 			0.2,
 			0.1,
 			0.1,
-			0.05
+			0.2,
+			0.1,
+			0.1,
+			0.1
 		};
 	};
 	class MassGrave: Default {

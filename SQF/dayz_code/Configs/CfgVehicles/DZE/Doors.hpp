@@ -251,6 +251,14 @@ class Land_gold_vein_wreck: ruins	{
 	removeoutput[] = {{"PartOreGold",{6,4}},{"PartOre",{0,1}},{"PartOreSilver",{0,1}}};
 };
 
+class Land_ammo_supply_wreck: ruins	{
+	scope = 1;
+	model = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
+	displayName = "Supply Crate";
+	removeoutput[] = {{"100Rnd_762x54_PK",{0,1}},{"29Rnd_30mm_AGS30",{0,1}},{"50Rnd_127x107_DSHKM",{0,1}},{"100Rnd_127x99_M2",{0,1}},{"2000Rnd_762x51_M134",{0,1}},{"48Rnd_40mm_MK19",{0,1}},{"100Rnd_762x51_M240",{0,1}}};
+};
+
+
 
 
 
