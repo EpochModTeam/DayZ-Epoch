@@ -210,28 +210,34 @@ if (_hasrequireditem) then {
 			if(_zheightdirection == "up") then {
 				_position set [2,((_position select 2)+0.1)];
 				_objHupDiff = _objHupDiff + 0.1;
+				_objHdwnDiff = _objHdwnDiff - 0.1;
 			};
 			if(_zheightdirection == "down") then {
 				_position set [2,((_position select 2)-0.1)];
 				_objHdwnDiff = _objHdwnDiff + 0.1;
+				_objHupDiff = _objHupDiff - 0.1;
 			};
 
 			if(_zheightdirection == "up_alt") then {
 				_position set [2,((_position select 2)+1)];
 				_objHupDiff = _objHupDiff + 1;
+				_objHdwnDiff = _objHdwnDiff - 1;
 			};
 			if(_zheightdirection == "down_alt") then {
 				_position set [2,((_position select 2)-1)];
 				_objHdwnDiff = _objHdwnDiff + 1;
+				_objHupDiff = _objHupDiff - 1;
 			};
 
 			if(_zheightdirection == "up_ctrl") then {
 				_position set [2,((_position select 2)+0.01)];
 				_objHupDiff = _objHupDiff + 0.01;
+				_objHdwnDiff = _objHdwnDiff - 0.01;
 			};
 			if(_zheightdirection == "down_ctrl") then {
 				_position set [2,((_position select 2)-0.01)];
 				_objHdwnDiff = _objHdwnDiff + 0.01;
+				_objHupDiff = _objHupDiff - 0.01;
 			};
 			
 			_object setDir (getDir _object);
