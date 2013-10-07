@@ -20,10 +20,12 @@ class ItemSledge: ItemCore
 				"MeleeSledge"
 			};	
 		};
+		/* Lets take this out for now and see how it goes.
 		class MineOre
 		{
 			text="Mine Ore";
 			script="spawn player_mineOre;";
 		};
+		*/
 	};
 };
