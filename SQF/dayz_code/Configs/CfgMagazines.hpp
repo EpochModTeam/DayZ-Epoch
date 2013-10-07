@@ -155,6 +155,20 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
 		descriptionShort = "Unknown document";
 		weight = 0.1;
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Open Document";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				randomOutput = 1;
+				output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1}};
+				input[] = {{"ItemDocument",1}};
+			};
+		};
+
 	};
 	class ItemLetter: CA_Magazine
 	{
