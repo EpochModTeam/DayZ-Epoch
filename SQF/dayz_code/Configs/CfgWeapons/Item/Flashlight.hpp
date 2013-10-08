@@ -11,6 +11,19 @@ class MeleeFlashlight : Pistol {
 			class Toolbelt {
 				text = "Remove from toolbelt";
 			};
+			class ToBack
+			{
+				text=$STR_ACTIONS_2BACK;
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemFlashlight"
+				};
+				output[]=
+				{
+					"MeleeFlashlight"
+				};
+			};
 		};
 	}; 
 
@@ -26,6 +39,19 @@ class MeleeFlashlight : Pistol {
 		class ItemActions {
 			class Toolbelt {
 				text = "Remove from toolbelt";
+			};
+			class ToBack
+			{
+				text=$STR_ACTIONS_2BACK;
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemFlashlightRed"
+				};
+				output[]=
+				{
+					"MeleeFlashlightRed"
+				};
 			};
 		};
 	};

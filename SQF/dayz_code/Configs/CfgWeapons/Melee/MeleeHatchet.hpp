@@ -37,6 +37,15 @@ class MeleeHatchet: MeleeWeapon
 					"ItemHatchet_DZE"
 				};
 			};
+			class Drop
+			{
+				text="Drop";
+				script="spawn player_dropWeapon; r_action_count = r_action_count + 1;";
+				use[]=
+				{
+					"Hatchet_Swing"
+				};
+			};
 		};
 		class Library
 		{

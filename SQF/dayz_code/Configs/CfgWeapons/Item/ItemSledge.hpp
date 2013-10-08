@@ -20,6 +20,19 @@ class ItemSledge: ItemCore
 				"MeleeSledge"
 			};	
 		};
+			class ToBack
+			{
+				text=$STR_ACTIONS_2BACK;
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemSledge"
+				};
+				output[]=
+				{
+					"MeleeSledge"
+				};
+			};
 		class MineOre
 		{
 			text="Mine Ore";

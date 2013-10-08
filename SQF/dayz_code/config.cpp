@@ -15,6 +15,7 @@
 
 #include "Configs\basicdefines.hpp"
 #include "Configs\CfgNonAIVehicles.hpp"
+#include "Configs\RscDisplay\includes.hpp"
 
 class CfgPatches {
 	class dayz_code {

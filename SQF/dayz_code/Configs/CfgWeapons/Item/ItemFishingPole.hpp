@@ -20,5 +20,18 @@ class ItemFishingPole: ItemCore
 				"MeleeFishingPole"
 			};
 		};
+			class ToBack
+			{
+				text=$STR_ACTIONS_2BACK;
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemFishingPole"
+				};
+				output[]=
+				{
+					"MeleeFishingPole"
+				};
+			};
 	};
 };

@@ -1,97 +1,62 @@
-private ["_item","_config","_onLadder","_create","_isOk","_config2","_magType","_meleeNum","_muzzles","_wtype","_type","_hastoolweapon","_text"];
+private ["_item","_config","_onLadder","_hastoolweapon","_onBack","_text","_create","_config2","_melee2tb","_isOk","_UpdateBack"];
 
-if(TradeInprogress) exitWith { cutText ["Add to toolbelt already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+_item = _this;
+_config = configFile >> "cfgWeapons" >> _item;
+_onBack = dayz_onBack in MeleeWeapons;
 
-_item = 	_this;
-_config =	configFile >> "cfgWeapons" >> _item;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
-_onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {TradeInprogress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
-
-_hastoolweapon = _this in weapons player;
+_hastoolweapon = _item in weapons player;
 _text = getText (_config >> "displayName");
-if (!_hastoolweapon) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
+if (!_hastoolweapon and !_onBack) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
 
 call gear_ui_init;
 
 //Add new item
-_create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 0;
-_config2 = 	configFile >> "cfgWeapons" >> _create;
+_create = getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 0;
+_config2 = configFile >> "cfgWeapons" >> _create;
 
-//Remove magazines if needed
-if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
-	_magType = 	([] + getArray (configFile >> "cfgWeapons" >> _item >> "magazines")) select 0;
-	_meleeNum = ({_x == _magType} count magazines player);
-	for "_i" from 1 to _meleeNum do {
-		player removeMagazine _magType;
+//removing current melee weapon if new melee selected
+_melee2tb = "";
+if ((_item in ["ItemHatchet_DZE","ItemCrowbar","ItemMachete","ItemFishingPole","ItemSledge"]) || _item == DayZ_onBack) then {
+	//free primary slot for new melee (remember item to add after)
+	switch (primaryWeapon player) do {
+		case "MeleeHatchet": {player removeWeapon "MeleeHatchet"; _melee2tb = "ItemHatchet_DZE";};
+		case "MeleeCrowbar": {player removeWeapon "MeleeCrowbar"; _melee2tb = "ItemCrowbar";};
+		case "MeleeMachete": {player removeWeapon "MeleeMachete"; _melee2tb = "ItemMachete";};
+		case "MeleeFishingPole": {player removeWeapon "MeleeFishingPole"; _melee2tb = "ItemFishingPole";};
+		case "MeleeSledge": {player removeWeapon "MeleeSledge"; _melee2tb = "ItemSledge";};
+		default {
+			if (DayZ_onBack == "" || _item == DayZ_onBack) then {
+				switch DayZ_onBack do {
+					case "MeleeHatchet": {dayz_onBack = ""; _melee2tb = "ItemHatchet_DZE";};
+					case "MeleeCrowbar": {dayz_onBack = ""; _melee2tb = "ItemCrowbar";};
+					case "MeleeMachete": {dayz_onBack = ""; _melee2tb = "ItemMachete";};
+					case "MeleeFishingPole": {dayz_onBack = ""; _melee2tb = "ItemFishingPole";};
+					case "MeleeSledge": {dayz_onBack = ""; _melee2tb = "ItemSledge";};
+				};
+				disableSerialization;
+				_UpdateBack = ((findDisplay 106) displayCtrl 1209) ctrlSetText "";
+			};
+		};
 	};
 };
 
-if (_item in ["ItemHatchet_DZE","ItemCrowbar","ItemMachete","ItemFishingPole","ItemSledge"]) then {
-	switch (primaryWeapon player) do
-	{
-		case "MeleeHatchet": { "MeleeHatchet" call player_addToolbelt };
-		case "MeleeCrowbar": { "MeleeCrowbar" call player_addToolbelt };
-		case "MeleeMachete": { "MeleeMachete" call player_addToolbelt };
-		case "MeleeFishingPole": { "MeleeFishingPole" call player_addToolbelt };
-		case "MeleeSledge": { "MeleeSledge" call player_addToolbelt };
-	};
-};
+//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
+{player removeMagazines _x} forEach ["hatchet_swing","crowbar_swing","Machete_swing","Fishing_Swing","Sledge_Swing"];
 
 _isOk = [player,_config2] call BIS_fnc_invAdd;
 
 if (_isOk) then {
-	//Remove item
+
 	player removeWeapon _item;
-	
-	//Add magazines if needed
-	if (_create in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
-		if (_create == "MeleeCrowbar") then {
-			player addMagazine 'crowbar_swing';
+	//adding old melee converted to Item on place of removed _item
+	if (_melee2tb != "") then {
+		//we know there is place to add item but to prevent BE spam using _config2
+		_config2 = _melee2tb;
+		_isOk = [player,_config2] call BIS_fnc_invAdd;
 		};
-		if (_create == "MeleeSledge") then {
-			player addMagazine 'sledge_swing';
-		};
-		if (_create == "MeleeHatchet") then {
-			player addMagazine 'hatchet_swing';
-		};
-		if (_create == "MeleeMachete") then {
-				player addMagazine 'Machete_swing';
-		};
-		if (_create == "MeleeFishingPole") then {
-				player addMagazine 'Fishing_Swing';
-		};
-		if (_type == "cfgWeapons") then {
-			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
-			_wtype = ((weapons player) select 0);
-			if (count _muzzles > 1) then {
-				player selectWeapon (_muzzles select 0);
-			} else {
-				player selectWeapon _wtype;
-			};
-		};
-	};		
 } else {
-	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
-	
-	//Add magazines back
-	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
-		if (_item == "MeleeCrowbar") then {
-			player addMagazine 'crowbar_swing';
-		};
-		if (_item == "MeleeSledge") then {
-			player addMagazine 'sledge_swing';
-		};
-		if (_item == "MeleeHatchet") then {
-			player addMagazine 'hatchet_swing';
-		};
-		if (_item == "MeleeMachete") then {
-			player addMagazine 'Machete_swing';
-		};
-		if (_item == "MeleeFishingPole") then {
-			player addMagazine 'Fishing_Swing';
-		};
-	};	
+	cutText [localize "str_player_24", "PLAIN DOWN"];
 };
-TradeInprogress = false;

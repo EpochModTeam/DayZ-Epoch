@@ -79,8 +79,10 @@ if (!isDedicated) then {
 	vehicle_handleKilled    = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
 
 	//actions
-	player_countmagazines =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
+	player_countmagazines =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
+	player_forceSave =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_forceSave.sqf";
 	player_addToolbelt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addToolbelt.sqf";
+	player_addtoBack =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addtoBack.sqf";
 	player_copyKey =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_copyKey.sqf";
 	player_reloadMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
 	player_loadCrate =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_loadCrate.sqf";
@@ -395,6 +397,65 @@ if (!isDedicated) then {
 		_model = _this select 1;
 		if (_object == player) then {
 			_model call player_switchModel;
+		};
+	};
+	
+	dayz_meleeMagazineCheck = {
+		//private["_meleeNum","_magType","_wpnType","_ismelee"];
+		_wpnType = primaryWeapon player;
+		_ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+		if (_ismelee == "true") then {
+			private ["_meleeNum","_magType"];
+			_magType = ([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
+			_meleeNum = ({_x == _magType} count magazines player);
+			if (_meleeNum < 1) then {
+				player addMagazine _magType;
+			};
+		};
+	};
+	
+	gear_ui_hide = {
+		//private["_display","_BP"];
+		disableSerialization;
+		_display = findDisplay 106;
+		_BP = unitBackpack player;
+		if (ctrlShown (_display displayCtrl 159)) then {//prevent background images in backpack view
+			for "_i" from 1006 to 1011 do {
+				(_display displayCtrl _i) ctrlShow false;
+			};
+		} else {
+			for "_i" from 1006 to 1011 do {
+				if (!(ctrlShown (_display displayCtrl _i))) then {
+					(_display displayCtrl _i) ctrlShow true;
+				};
+			};
+		};
+		//hide buttons if unnecessary
+		if (isNull _BP || ((typeOf _BP) == "")) then {
+			(_display displayCtrl 132) ctrlShow false;
+			(_display displayCtrl 157) ctrlShow false;
+			(_display displayCtrl 158) ctrlShow false;
+		};
+
+		// Prevent carrying 2 rifles 'exploit'
+		if (primaryWeapon player == "" && dayz_onBack != "" && !(dayz_onBack in MeleeWeapons)) then {
+			["gear"] call player_switchWeapon;
+		};
+
+		if (primaryWeapon player != "" && (primaryWeapon player in MeleeWeapons || dayz_onBack in MeleeWeapons)) then {
+			(_display displayCtrl 1204) ctrlShow true;
+		} else {
+			(_display displayCtrl 1204) ctrlShow false;
+		};
+
+		if (DayZ_onBack != "") then {
+			(_display displayCtrl 1208) ctrlShow true;
+		} else {
+			(_display displayCtrl 1208) ctrlShow false;
+		};
+
+		for "_i" from 0 to (lbSize (_display displayCtrl 105)) - 1 do {
+			(_display displayCtrl 105) lbSetColor [_i, [0.06, 0.05, 0.03, 1]];
 		};
 	};
 	
