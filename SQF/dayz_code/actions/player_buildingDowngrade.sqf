@@ -58,7 +58,7 @@ _obj = _this select 3;
 // Current charID
 _objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
-if(!DZE_Lock_Door == _objectCharacterID) exitWith {  TradeInprogress = false; cutText ["Unable to downgrade you do not know the combination." , "PLAIN DOWN"]; };
+if(DZE_Lock_Door != _objectCharacterID) exitWith {  TradeInprogress = false; cutText ["Unable to downgrade you do not know the combination." , "PLAIN DOWN"]; };
 
 // Find objectID
 _objectID 	= _obj getVariable ["ObjectID","0"];
