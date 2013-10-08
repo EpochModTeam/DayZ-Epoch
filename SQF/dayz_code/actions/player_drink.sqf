@@ -6,7 +6,7 @@ call gear_ui_init;
 _onLadder =     (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
-if (vehicle player != player) exitWith {cutText ["\n\nYou may not drink while in a vehicle", "PLAIN DOWN"]};
+//if (vehicle player != player) exitWith {cutText ["\n\nYou may not drink while in a vehicle", "PLAIN DOWN"]};
 
 //Force players to wait 3 mins to drink again
 //if (dayz_lastDrink < 180) exitWith {cutText ["You may not drink, your not thirsty", "PLAIN DOWN"]};
@@ -14,6 +14,7 @@ if (vehicle player != player) exitWith {cutText ["\n\nYou may not drink while in
 _itemorignal = _this;
 _hasdrinkitem = _itemorignal in magazines player;
 _hasoutput = _itemorignal in drink_with_output;
+_invehicle = false;
 
 _config = configFile >> "CfgMagazines" >> _itemorignal;
 _text = getText (_config >> "displayName");
@@ -25,6 +26,12 @@ if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,"
 
 player playActionNow "PutDown";
 player removeMagazine _itemorignal;
+if (vehicle player != player) then {
+	_display = findDisplay 106;
+	_display closeDisplay 0;
+	_invehicle = true;
+};
+
 sleep 1;
 
 if (["ItemWaterbottle",_itemorignal] call fnc_inString) then {
@@ -41,7 +48,7 @@ if (["ItemSoda",_itemorignal] call fnc_inString) then {
     [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 };  
 
-if (_hasoutput) then{
+if (_hasoutput and !_invehicle) then {
     // Selecting output
     _itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
