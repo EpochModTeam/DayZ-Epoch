@@ -167,7 +167,7 @@ if (isServer and isNil "sm_done") then {
 			
 			clearWeaponCargoGlobal  _object;
 			clearMagazineCargoGlobal  _object;
-			_object setVehicleAmmo DZE_vehicleAmmo;
+			// _object setVehicleAmmo DZE_vehicleAmmo;
 			
 			if ((typeOf _object) in dayz_allowedObjects) then {
 				_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];

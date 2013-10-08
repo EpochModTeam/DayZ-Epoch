@@ -1,4 +1,4 @@
-private ["_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID"];
+private ["_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
 
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
@@ -35,8 +35,8 @@ diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
-[_object,_uid,_characterID,_class,_dir,_location] spawn {
-   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para"];
+[_object,_uid,_characterID,_class,_dir,_location,_donotusekey] spawn {
+   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para","_donotusekey"];
 
    _object = _this select 0;
    _uid = _this select 1;
@@ -44,6 +44,7 @@ _key call server_hiveWrite;
    _class = _this select 3;
    //_dir = _this select 4;
    _location = _this select 5;
+   _donotusekey = _this select 6;
 
    _done = false;
 	_retry = 0;
@@ -90,7 +91,7 @@ _key call server_hiveWrite;
 
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
-	_object setVehicleAmmo DZE_vehicleAmmo;
+	// _object setVehicleAmmo DZE_vehicleAmmo;
 
 	_object setVariable ["ObjectID", _oid, true];
 	

@@ -57,7 +57,7 @@ class CfgVehicles {
 	class Mi17_DZ: Mi17_base	
 	{
 		displayname = "Mi-17";
-		displaynameshort = "Mi17_DZ";
+		displaynameshort = "Mi17_DZE";
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -84,6 +84,21 @@ class CfgVehicles {
 			};
 		};
 	};
+	class Mi17_DZE: Mi17_DZ	
+	{
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {};
+			};
+			class BackTurret : BackTurret
+			{
+				magazines[] = {};
+			};
+		};
+	};
+
 	class Mi17_Civilian;
 	class Mi17_Civilian_DZ: Mi17_Civilian	
 	{
@@ -154,7 +169,20 @@ class CfgVehicles {
 			};
 		};
 	};
-	
+	class UH1Y_DZE: UH1Y_DZ
+	{
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {};
+			};
+			class RightDoorGun : RightDoorGun
+			{
+				magazines[] = {};
+			};
+		};
+	};
 	class UH1H_base: Helicopter 
 	{
 		class Turrets: Turrets
@@ -196,6 +224,20 @@ class CfgVehicles {
 			class LeftDoorGun : LeftDoorGun
 			{
 				magazines[] = {"100Rnd_762x51_M240"};
+			};
+		};
+	};
+	class UH1H_DZE: UH1H_DZ
+	{
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				magazines[] = {};
+			};
+			class LeftDoorGun : LeftDoorGun
+			{
+				magazines[] = {};
 			};
 		};
 	};
