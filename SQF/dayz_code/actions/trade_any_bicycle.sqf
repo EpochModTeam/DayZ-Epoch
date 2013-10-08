@@ -1,4 +1,4 @@
-private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID"];
+private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_keyColor","_keyNumber","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID"];
 
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -111,14 +111,12 @@ if (_qty >= _qty_in) then {
 						_location = (getPosATL _veh);
 
 						//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
-						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected];
+						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,dayz_characterID];
 						publicVariableServer  "PVDZE_veh_Publish2";
 
 						player reveal _veh;
 						
 						cutText [format[("Bought %3 for %1 %2."),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
-					} else {
-						player removeMagazine _keySelected;
 					};
 					
 				} else {

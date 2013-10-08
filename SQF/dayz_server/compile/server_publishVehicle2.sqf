@@ -3,13 +3,22 @@ private ["_isOK","_object","_worldspace","_location","_dir","_class","_uid","_ke
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;
-// _spawnDMG =		_this select 3;
+_donotusekey =	_this select 3;
 _keySelected =  _this select 4;
 
-_isOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+if(_donotusekey) then {
+	_isOK = true;
+} else {
+	_isOK = isClass(configFile >> "CfgWeapons" >> _keySelected);
+};
+
 if(!_isOK) exitWith { diag_log ("HIVE: CARKEY DOES NOT EXIST: "+ str(_keySelected));  };
 
-_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "keyid"));
+if(_donotusekey) then {
+	_characterID = _keySelected;
+} else {
+	_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "keyid"));
+};
 
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
