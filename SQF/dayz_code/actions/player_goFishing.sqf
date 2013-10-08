@@ -38,14 +38,14 @@ while {_isOk} do {
 		
 		sleep 2;
 
-		_rnd = 100;
+		_rnd = 50;
 
 		// check if player is in boat
 		_vehicle = vehicle player;
 		_inVehicle = (_vehicle != player);
 		if(_inVehicle) then {
 			if(_vehicle isKindOf "Ship") then {
-				_rnd = 50;
+				_rnd = 25;
 			};
 		};
 
