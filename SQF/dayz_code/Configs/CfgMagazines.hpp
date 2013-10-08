@@ -3011,7 +3011,7 @@ class CfgMagazines {
 			class Crafting5
             {
                 text = "Craft Lumber Pack";
-                Script = ";['Crafting5','CfgMafazines', _id] spawn player_craftItem;";
+                Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
                 neednearby[] = {"workshop"};
                 requiretools[] = {"ItemToolbox"};
                 output[] = {{"PartPlankPack",1}};
@@ -3069,7 +3069,7 @@ class CfgMagazines {
 			class Crafting4
             {
                 text = "Craft Plywood Pack";
-                Script = ";['Crafting4','CfgMafazines', _id] spawn player_craftItem;";
+                Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
                 neednearby[] = {"workshop"};
                 requiretools[] = {"ItemToolbox"};
                 output[] = {{"PartPlywoodPack",1}};
