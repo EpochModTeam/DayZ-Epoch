@@ -20,5 +20,18 @@ class ItemCrowbar: ItemCore
 					"MeleeCrowbar"
 				};
 			};
+			class ToBack
+			{
+				text="Add to back";
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemCrowbar"
+				};
+				output[]=
+				{
+					"MeleeCrowbar"
+				};
+			};
 		};
 	};

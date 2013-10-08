@@ -4,6 +4,8 @@ if (count _inventory > 0) then {
 	_wpns = _inventory select 0;
 	_mags = _inventory select 1;
 
+	dayz_onBack = if (count _inventory > 2) then { _inventory select 2 } else { "" };
+
 	//Add inventory
 	{
 		private["_item","_val"];

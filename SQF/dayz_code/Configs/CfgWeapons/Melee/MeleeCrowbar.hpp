@@ -32,6 +32,15 @@ class MeleeCrowbar: MeleeWeapon
 					"ItemCrowbar"
 				};
 			};
+			class Drop
+			{
+				text="Drop";
+				script="spawn player_dropWeapon; r_action_count = r_action_count + 1;";
+				use[]=
+				{
+					"Crowbar_Swing"
+				};
+			};
 		};
 		class Library
 		{

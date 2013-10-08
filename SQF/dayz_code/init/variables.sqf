@@ -17,6 +17,9 @@ Rocket_DZ = 	"Rocket_DZ";
 AllPlayers = ["Survivor2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWsequishaD_DZ","SurvivorWsequisha_DZ","SurvivorWpink_DZ","SurvivorW3_DZ","SurvivorW2_DZ","Bandit1_DZ","Bandit2_DZ","BanditW1_DZ","BanditW2_DZ","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ","FR_OHara_DZ","FR_Rodriguez_DZ","CZ_Soldier_Sniper_EP1_DZ","Graves_Light_DZ","GUE_Soldier_MG_DZ","GUE_Soldier_Sniper_DZ","GUE_Soldier_Crew_DZ","GUE_Soldier_CO_DZ","GUE_Soldier_2_DZ"];
 // AllPlayersVehicles = ["AllVehicles"]+AllPlayers;
 
+MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball","MeleeSledge","MeleeFishingPole"];
+MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","sledge_swing","Fishing_Swing"];
+
 //Cooking
 meatraw = [
     "FoodSteakRaw",
@@ -243,12 +246,15 @@ dayz_resetSelfActions = {
 	s_player_maint_build	 =  -1;
 	s_player_downgrade_build	 =  -1;
 	s_player_towing		 =  -1;
+	s_player_equip_carry = -1;
 };
 call dayz_resetSelfActions;
 
 //Engineering variables
 s_player_lastTarget =	[objNull,objNull,objNull,objNull,objNull];
 s_player_repairActions = [];
+
+mouseOverCarry = false;
 
 // Custom 
 s_player_madsci 		= 	[];
@@ -601,6 +607,8 @@ if(!isDedicated) then {
 	TradeInprogress =		false;
 	dayz_scaleLight = 		0;
 	dayzDebug = false;
+	dayz_onBack = "";
+	dayz_onBackActive = false;
 	dayzState = -1;
 	//uiNamespace setVariable ['DAYZ_GUI_display',displayNull];
 	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {

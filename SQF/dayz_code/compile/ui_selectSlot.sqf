@@ -15,6 +15,9 @@ if (_button == 1) then {
 	_pos set [1,((_this select 3) + 0.07)];
 	
 	_item = gearSlotData _control;
+	if (mouseOverCarry) then {
+		_item = DayZ_onBack;
+	};
 	
 	_conf = configFile >> "cfgMagazines" >> _item;
 	if (!isClass _conf) then {

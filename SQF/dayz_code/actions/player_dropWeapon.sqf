@@ -18,6 +18,8 @@ player removeWeapon _item;
 if (_item == "MeleeHatchet") then {_item = "ItemHatchet_DZE";};
 if (_item == "MeleeCrowbar") then {_item = "MeleeCrowbar";};
 if (_item == "MeleeMachete") then {_item = "ItemMachete";};
+if (_item == "MeleeSledge") then {_item = "ItemSledge";};
+if (_item == "MeleeFishingPole") then {_item = "ItemFishingPole";};
 
 //if (_item == "MeleeFishingPole") then {_item = "MeleeFishingPole";};
 //if (_item == "MeleeSledge") then {_item = "MeleeSledge";};

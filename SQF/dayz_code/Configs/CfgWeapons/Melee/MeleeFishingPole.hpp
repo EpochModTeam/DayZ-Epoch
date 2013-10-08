@@ -35,6 +35,15 @@ class MeleeFishingPole: MeleeWeapon
 				"ItemFishingPole"
 			};
 		};
+			class Drop
+			{
+				text="Drop";
+				script="spawn player_dropWeapon; r_action_count = r_action_count + 1;";
+				use[]=
+				{
+					"Fishing_Swing"
+				};
+			};
 	};
 	class Library
 	{

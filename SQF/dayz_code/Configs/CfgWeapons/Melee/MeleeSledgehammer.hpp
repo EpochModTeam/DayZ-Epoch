@@ -32,6 +32,15 @@ class MeleeSledge: MeleeWeapon
 					"ItemSledge"
 				};
 			};
+			class Drop
+			{
+				text="Drop";
+				script="spawn player_dropWeapon; r_action_count = r_action_count + 1;";
+				use[]=
+				{
+					"sledge_swing"
+				};
+			};
 		};
 		class Library
 		{

@@ -870,7 +870,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		};
 	};
 };
-
+/*
 class RscDisplayGear
 {
 	idd = 106;
@@ -1617,6 +1617,7 @@ class RscDisplayGear
 		};
 	};
 };
+*/
 class DZ_ItemInteraction {
 	idd = 6901;
 	movingEnable = 0;

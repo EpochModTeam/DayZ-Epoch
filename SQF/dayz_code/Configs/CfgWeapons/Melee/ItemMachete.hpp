@@ -20,6 +20,19 @@ class ItemMachete: ItemCore
 					"MeleeMachete"
 				};
 			};
+			class ToBack
+			{
+				text="Add to back";
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemMachete"
+				};
+				output[]=
+				{
+					"MeleeMachete"
+				};
+			};
 		};
 	};
 	

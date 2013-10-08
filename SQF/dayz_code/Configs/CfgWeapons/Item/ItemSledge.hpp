@@ -20,12 +20,23 @@ class ItemSledge: ItemCore
 				"MeleeSledge"
 			};	
 		};
-		/* Lets take this out for now and see how it goes.
+			class ToBack
+			{
+				text="Add to Back";
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemSledge"
+				};
+				output[]=
+				{
+					"MeleeSledge"
+				};
+			};
 		class MineOre
 		{
 			text="Mine Ore";
 			script="spawn player_mineOre;";
 		};
-		*/
 	};
 };

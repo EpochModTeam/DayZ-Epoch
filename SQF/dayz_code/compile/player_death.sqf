@@ -12,6 +12,10 @@ if (r_player_infected) then {
 	_infected = 1; 
 };
 
+if (dayz_onBack != "") then {
+		_body addWeapon dayz_onBack;
+};
+
 //Send Death Notice
 //["PVDZE_plr_Died",[dayz_characterID,0,_body,_playerID,dayz_playerName,_infected]] call callRpcProcedure;
 PVDZE_plr_Died = [dayz_characterID,0,_body,_playerID,dayz_playerName,_infected];

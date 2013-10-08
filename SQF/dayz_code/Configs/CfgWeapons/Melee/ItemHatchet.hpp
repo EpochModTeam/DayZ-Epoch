@@ -19,5 +19,18 @@ class ItemHatchet_DZE : ItemCore {
 					"MeleeHatchet"
 				};
 			};
+			class ToBack
+			{
+				text="Add to back";
+				script="spawn player_addtoBack;";
+				use[]=
+				{
+					"ItemHatchet_DZE"
+				};
+				output[]=
+				{
+					"MeleeHatchet"
+				};
+			};
 		};
 	};
