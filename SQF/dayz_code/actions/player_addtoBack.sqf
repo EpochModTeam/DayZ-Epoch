@@ -9,7 +9,7 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 _hastoolweapon = _item in weapons player;
 _text = getText (_config >> "displayName");
 if (!_hastoolweapon) exitWith {cutText [format[localize "str_player_30",_text] , "PLAIN DOWN"]};
-if (dayZ_OnBack != "") exitWith {cutText [format[localize "str_player_toback_fail",_text] , "PLAIN DOWN"]};
+if (dayZ_OnBack != "") exitWith {cutText [format["Cannot add %1 to back.",_text] , "PLAIN DOWN"]};
 
 call gear_ui_init;
 
