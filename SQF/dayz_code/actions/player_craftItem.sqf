@@ -19,7 +19,7 @@ class ItemActions
 	};
 };	
 */
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons"];
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag"];
 
 if(TradeInprogress) exitWith { cutText ["\n\nCrafting already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -69,6 +69,11 @@ if (_canDo) then {
 	_selectedRecipeInput = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "input");	
 	_outputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "outputweapons");
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
+
+	_randomOutput = 0;
+	if(isNumber (configFile >> _baseClass >> _item >> "randomOutput")) then {
+		_randomOutput = getNumber(configFile >> _baseClass >> _item >> "randomOutput");
+	};
 	
 	_craft_doLoop = true;
 	_tradeComplete = 0;
@@ -167,6 +172,12 @@ if (_canDo) then {
 							_num_removed_weapons = _num_removed_weapons + ([player,_x] call BIS_fnc_invRemove);
 						} forEach _inputWeapons;
 						if (_num_removed_weapons == (count _inputWeapons)) then {	
+							if(_randomOutput == 1) then {
+								_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
+								_outputWeapons = [_selectedWeapon];
+								_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
+								_selectedRecipeOutput = [_selectedMag];
+							};
 							{
 								player addWeapon _x; 
 							} forEach _outputWeapons;

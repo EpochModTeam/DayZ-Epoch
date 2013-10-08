@@ -154,7 +154,55 @@ class CfgMagazines {
 		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
 		descriptionShort = "Unknown document";
-		weight = 0.5;
+		weight = 0.1;
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Open Document";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {};
+				randomOutput = 1;
+				output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1}};
+				input[] = {{"ItemDocument",1}};
+			};
+		};
+
+	};
+	class ItemLetter: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Letter";
+		model = "\z\addons\dayz_epoch\models\doc_letter.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_letter_ca.paa";
+		descriptionShort = "Random letter";
+		weight = 0.1;
+	};
+	class ItemDocumentRamp: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "HowTo: Ramp";
+		model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+		descriptionShort = "Document used in building a wooden ramp.";
+		weight = 0.1;
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Craft Ramp";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"wood_ramp_kit",1}};
+				input[] = {{"ItemDocumentRamp",1},{"PartWoodLumber",8}};
+			};
+		};
 	};
 
 	class ItemCanvas: CA_Magazine
@@ -1634,6 +1682,26 @@ class CfgMagazines {
 	};
 
 	// BUILDING KITS
+	class wood_ramp_kit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Ramp";
+		descriptionShort = "Wood ramp can be used to get air.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		class ItemActions
+		{
+			class Build
+			{
+				text = "$STR_ACTIONS_BUILD";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "WoodRamp_DZ";
+			};
+		};
+	};
 	class 30m_plot_kit: CA_Magazine
 	{
 		scope = 2;

@@ -1255,7 +1255,7 @@ class Mission
 			name="AirVehicles";
 			text="Aircraft Dealer";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
 		class Item12
 		{

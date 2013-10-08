@@ -35,13 +35,14 @@ class CfgLoot {
 			"ItemBandage",
 			"ItemPainkiller",
 			"FoodBioMeat",
-			"8Rnd_9x18_MakarovSD"
+			"8Rnd_9x18_MakarovSD",
+			"ItemDocument"
 		},
 		{
 			0.07,
 			0.09,
 			0.09,
-			0.1,
+			0.09,
 			0.09,
 			0.05,
 			0.05,
@@ -53,6 +54,7 @@ class CfgLoot {
 			0.05,
 			0.06,
 			0.06,
+			0.01,
 			0.01,
 			0.01
 		}
@@ -76,11 +78,12 @@ class CfgLoot {
 			"ItemPainkiller",
 			"FoodBioMeat",
 			"8Rnd_9x18_MakarovSD",
-			"ItemBriefcaseEmpty"
+			"ItemBriefcaseEmpty",
+			"ItemDocument"
 		},
 		{
 			0.07,
-			0.09,
+			0.08,
 			0.09,
 			0.09,
 			0.09,
@@ -94,6 +97,7 @@ class CfgLoot {
 			0.05,
 			0.06,
 			0.06,
+			0.01,
 			0.01,
 			0.01,
 			0.01
@@ -162,7 +166,8 @@ class CfgLoot {
 			"HandChemBlue",
 			"HandChemRed",
 			"ItemHeatPack",
-			"ItemLockbox"
+			"ItemLockbox",
+			"ItemDocument"
 		},
 		{
 			0.06,
@@ -183,7 +188,7 @@ class CfgLoot {
 			0.04,
 			0.05,
 			0.05,
-			0.09,
+			0.08,
 			0.02,
 			0.04,
 			0.07,
@@ -192,7 +197,8 @@ class CfgLoot {
 			0.03,
 			0.03,
 			0.03,
-			0.04
+			0.04,
+			0.01
 		}
 	};
 	generic[] = {
@@ -391,19 +397,21 @@ class CfgLoot {
 			"ItemComboLock",
 			"SmokeShell",
 			"FoodMRE",
-			"ItemHotwireKit"
+			"ItemHotwireKit",
+			"ItemDocument"
 		},
 		{
 			0.3,
 			0.08,
 			0.08,
 			0.14,
-			0.17,
+			0.16,
 			0.08,
 			0.01,
 			0.05,
 			0.04,
 			0.04,
+			0.01,
 			0.01
 		}
 	};
@@ -417,18 +425,20 @@ class CfgLoot {
 			"WoodenArrow",
 			"ItemHeatPack",
 			"FoodMRE",
-			"FoodNutmix"
+			"FoodNutmix",
+			"ItemDocument"
 		},
 		{
 			0.4,
-			0.17,
+			0.16,
 			0.03,
 			0.1,
 			0.05,
 			0.2,
 			0.02,
 			0.01,
-			0.02	
+			0.02,
+			0.01
 		}
 	};
 
@@ -448,13 +458,14 @@ class CfgLoot {
 			"ItemWire",
 			"ItemTankTrap",
 			"ItemComboLock",
-			"ItemSledgeHead"
+			"ItemSledgeHead",
+			"ItemDocument"
 		},
 		{
 			0.09,
 			0.10,
 			0.10,
-			0.11,
+			0.10,
 			0.10,
 			0.06,
 			0.06,
@@ -465,7 +476,8 @@ class CfgLoot {
 			0.01,
 			0.03,
 			0.04,
-			0.02
+			0.02,
+			0.01
 		}
 	};
 
