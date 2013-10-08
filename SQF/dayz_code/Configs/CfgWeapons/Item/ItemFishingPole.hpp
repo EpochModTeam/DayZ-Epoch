@@ -22,7 +22,7 @@ class ItemFishingPole: ItemCore
 		};
 			class ToBack
 			{
-				text=$STR_ACTIONS_2BACK;
+				text="Add to Back";
 				script="spawn player_addtoBack;";
 				use[]=
 				{
