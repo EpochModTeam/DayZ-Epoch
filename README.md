@@ -34,9 +34,9 @@ Developers
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
 * Axle - Beta Tester, Lead Trader City Designer, Ideas. - http://www.twitch.tv/axles
 * Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
-* Maca134 - Developer - Improved Trader Menus - maca134@gmail.com
 * [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 * Axeman - Developer - Light system - axeman@thefreezer.co.uk
+* Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.
 
 --------------------------
 Special thanks
@@ -46,6 +46,7 @@ Special thanks
 * DayZ Community Developers - https://github.com/DayZMod
 * ziellos2k - Tag Friendly code. https://github.com/ziellos2k
 * Dayz Hive DLL - https://github.com/rajkosto/hive
+* Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
 * Munchiefest - Beta Tester, Wiki Editor, Ideas - http://www.twitch.tv/munchiefest
 * aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
 * Alejandria - Beta Tester, New female textures. - http://www.twitch.tv/miss_alejandria
