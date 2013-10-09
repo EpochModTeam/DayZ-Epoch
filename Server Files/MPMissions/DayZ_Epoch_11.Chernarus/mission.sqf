@@ -1487,10 +1487,10 @@ if (true) then
 _vehicle_755 = objNull;
 if (true) then
 {
-  _this = createVehicle ["MAP_A_Castle_Stairs_A", [11435.725, 11352.75, 0.011208216], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["MAP_A_Castle_Stairs_A", [11435.725, 11352.75, -0.82129258], [], 0, "CAN_COLLIDE"];
   _vehicle_755 = _this;
   _this setDir 31.414593;
-  _this setPos [11435.725, 11352.75, 0.011208216];
+  _this setPos [11435.725, 11352.75, -0.82129258];
 };
 
 _vehicle_761 = objNull;
