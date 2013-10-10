@@ -7,7 +7,12 @@ OnLoadMissionTime = False;
 disabledAI = true;
 disableChannels[]={0,1,2};
 enableItemsDropping = 0;
+#include "R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
+briefing = 0;
+debriefing = 0;
 
+onPauseScript = "";
+loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
 class Header
 {
  gameType = COOP;            //DM, Team, Coop, ...
