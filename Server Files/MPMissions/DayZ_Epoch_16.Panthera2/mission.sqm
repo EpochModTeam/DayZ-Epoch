@@ -1363,7 +1363,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={3380.9607,0.71122277,1986.1715};
+			position[]={3349.3503,1.0060816,2311.5425};
 			name="Boats";
 			text="Sams Boats";
 			type="mil_triangle";
@@ -1518,7 +1518,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={3382.9978,2.508637,1996.4783};
+			position[]={3352.03,0.83347434,2302.2358};
 			a=100;
 			b=100;
 			activationBy="WEST";
