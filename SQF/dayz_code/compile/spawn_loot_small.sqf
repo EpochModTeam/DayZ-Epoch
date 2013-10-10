@@ -42,11 +42,8 @@ switch (_iClass) do
 	};
 	case "weapon":
 	{
-		//do nothing for now
-		/*
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
-		*/
 	};
 	case "magazine":
 	{
