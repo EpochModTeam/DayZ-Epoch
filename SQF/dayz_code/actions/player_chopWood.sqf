@@ -36,6 +36,8 @@ _findNearestTree = [];
 //diag_log format["DEBUG TREES: %1", _findNearestTree];
 
 if (count(_findNearestTree) >= 1) then {
+
+	closeDialog 1;
 		
 	_tree = _findNearestTree select 0;
 
@@ -55,14 +57,14 @@ if (count(_findNearestTree) >= 1) then {
 		_proceed = false;
 		while {_isOk} do {
 
-			// player playActionNow "Medic";
+			closeDialog 1;
 
+			// player playActionNow "Medic";
+			player setUnitPos "up";
 			player playActionNow "GestureSwing";
 			[player,"chopwood",0,false] call dayz_zombieSpeak;
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
 
-			closeDialog 1;
-	
 			r_interrupt = false;
 			r_doLoop = true;
 			
