@@ -71,8 +71,8 @@ if (_canDo) then {
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 
 	_randomOutput = 0;
-	if(isNumber (configFile >> _baseClass >> _item >> "randomOutput")) then {
-		_randomOutput = getNumber(configFile >> _baseClass >> _item >> "randomOutput");
+	if(isNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "randomOutput")) then {
+		_randomOutput = getNumber(configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "randomOutput");
 	};
 	
 	_craft_doLoop = true;
