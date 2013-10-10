@@ -55,6 +55,9 @@ if(isnil "MaxHeliCrashes") then {
 if(isnil "MaxDynamicDebris") then {
 	MaxDynamicDebris = 100;
 };
+if(isnil "MaxAmmoBoxes") then {
+	MaxAmmoBoxes = 3;
+};
 if(isnil "MaxMineVeins") then {
 	MaxMineVeins = 50;
 };
@@ -324,8 +327,12 @@ if (isServer and isNil "sm_done") then {
 	for "_x" from 1 to MaxDynamicDebris do {
 		[] spawn spawn_roadblocks;
 	};
-
-	//(1 - forest) * (1 + hills) * (1 - sea)
+	//  spawn_ammosupply at server start 1% of roadblocks
+	diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));
+	for "_x" from 1 to MaxAmmoBoxes do {
+		[] spawn spawn_ammosupply;
+	};
+	// call spawning mining veins
 	diag_log ("HIVE: Spawning # of Veins: " + str(MaxMineVeins));
 	for "_x" from 1 to MaxMineVeins do {
 		[] spawn spawn_mineveins;
@@ -356,6 +363,7 @@ if (isServer and isNil "sm_done") then {
 
 		// spawn debug box
 		_debugMarkerPosition = getMarkerPos "respawn_west";
+		_debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition select 1),1];
 		_vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
 		_vehicle_0 setPos _debugMarkerPosition;
 	};
