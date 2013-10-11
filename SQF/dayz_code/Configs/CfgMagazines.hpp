@@ -155,6 +155,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
 		descriptionShort = "Unknown document";
 		weight = 0.1;
+		sfx = "document"
 		class ItemActions
 		{
 			class Crafting
@@ -2223,6 +2224,7 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "FuelPump_DZ";
+				neednearby[] = {{"fueltank",30}};
 			};
 		};
 	};
