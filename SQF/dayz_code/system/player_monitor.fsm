@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "F:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "D:\Programme\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -22,7 +22,7 @@ item17[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000
 item18[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item20[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
-item21[] = {"Phase_One",2,4346,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
+item21[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item22[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
 item23[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item24[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
@@ -49,7 +49,7 @@ item44[] = {"New_Character",4,218,-500.000000,375.000000,-400.000000,425.000000,
 item45[] = {"Gender_Selection",2,250,-500.000000,500.000000,-400.000000,550.000000,0.000000,"Gender Selection" \n "Dialog"};
 item46[] = {"Selected",4,218,-400.000000,600.000000,-300.000000,650.000000,0.000000,"Selected"};
 item47[] = {"Process",2,250,-275.000000,600.000000,-175.000000,650.000000,0.000000,"Process"};
-item48[] = {"no_PlayerID",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
+item48[] = {"no_PlayerID",4,4314,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
 item49[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item50[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
 item51[] = {"Stream",2,250,-75.000000,900.000000,25.000000,950.000000,0.000000,"Stream"};
@@ -152,8 +152,8 @@ link77[] = {66,59};
 link78[] = {67,15};
 link79[] = {68,69};
 link80[] = {69,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-251.037598,801.434570,1129.079834,91.929260,893,880,1};
-window[] = {2,-1,-1,-1,-1,884,-1576,-204,104,3,911};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-222.006485,507.642456,414.571289,-329.785095,892,951,1};
+window[] = {2,-1,-1,-1,-1,809,1945,3317,29,3,910};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1315,7 +1315,9 @@ class FSM
       name = "Enable_Sim";
       init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Enable Sim"");" \n
        "" \n
-       "_myAnim = getNumber(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""isUpdated"");" \n
+       "_myEpoch = getNumber(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
+       "_myEpochB = getNumber(configFile >> ""CfgPatches"" >> ""dayz_epoch_b"" >> ""dayzVersion"");" \n
+       "" \n
        "" \n
        "player enableSimulation true;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1327,7 +1329,7 @@ class FSM
           priority = 2.000000;
           to="ERROR__No_Player_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_myAnim == 0"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_myEpochB != ""1.0.2.4"") || (_myEpochB != ""1.0.2.4"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
