@@ -121,6 +121,11 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\action_drink_0.ogg",0.1,1,20};
 		titles[] = {};
 	};
+	class z_document_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_open_doc_0.ogg",0.1,1,20};
+		titles[] = {};
+	};
 	class z_soda_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\action_soda_0.ogg",0.3,1,30};
