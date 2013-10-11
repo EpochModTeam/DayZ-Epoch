@@ -184,7 +184,7 @@ if (_hasrequireditem) then {
 	_position = getPosATL _object;
 
 	cutText ["Planning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to build.", "PLAIN DOWN"];
-	_counter = time;
+	_previewCounter = 60;
 	_objHupDiff = 0;
 	_objHdwnDiff = 0;
 	
@@ -315,7 +315,10 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 		
-		if((time-_counter) >= 60) exitWith {
+		cutText [format["%1",_previewCounter], "PLAIN DOWN"];
+		_previewCounter = _previewCounter - 1;
+
+		if(_previewCounter <= 0) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Ran out of time to find position."; 
@@ -330,8 +333,6 @@ if (_hasrequireditem) then {
 			detach _object;
 			deleteVehicle _object;
 		};
-
-		cutText [format["%1",(time-_counter)], "PLAIN DOWN"];
 
 		if (player getVariable["combattimeout", 0] >= time) exitWith {
 			_isOk = false;
