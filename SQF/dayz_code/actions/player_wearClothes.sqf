@@ -9,7 +9,7 @@ TradeInprogress = true;
 
 // cannot change clothes when another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot change clothes when another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["\n\nCannot change clothes when another player is nearby." , "PLAIN DOWN"];  };
 
 _item = _this;
 call gear_ui_init;
