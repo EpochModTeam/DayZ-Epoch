@@ -36,7 +36,8 @@ Developers
 * Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
 * [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 * Axeman - Developer - Light system - axeman@thefreezer.co.uk
-* Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.
+* Skaronator - Help with many things https://github.com/Skaronator
+* Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.  https://github.com/Zabn
 
 --------------------------
 Special thanks
