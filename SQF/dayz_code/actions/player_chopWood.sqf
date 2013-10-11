@@ -71,10 +71,9 @@ if (count(_findNearestTree) >= 1) then {
 			_finishedTime = diag_tickTime+3;
 
 			while {r_doLoop} do {
-				if (diag_tickTime > _finishedTime) then {
+				if (diag_tickTime >= _finishedTime) then {
 					r_doLoop = false;
 					_finished = true;
-					
 				};
 				if (r_interrupt) then {
 					r_doLoop = false;
