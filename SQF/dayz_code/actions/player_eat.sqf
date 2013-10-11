@@ -4,7 +4,7 @@ call gear_ui_init;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
-if (vehicle player != player) exitWith {cutText ["\n\nYou may not eat while in a vehicle", "PLAIN DOWN"]};
+//if (vehicle player != player) exitWith {cutText ["\n\nYou may not eat while in a vehicle", "PLAIN DOWN"]};
 
 //Force players to wait 3 mins to eat again
 //if (dayz_lastMeal < 180) exitWith {cutText ["You may not eat, you're already full", "PLAIN DOWN"]};
@@ -27,6 +27,14 @@ if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,"c
 
 player playActionNow "PutDown";
 player removeMagazine _itemorignal;
+
+_invehicle = false;
+if (vehicle player != player) then {
+	_display = findDisplay 106;
+	_display closeDisplay 0;
+	_invehicle = true;
+};
+
 sleep 1;
 
 _dis=6;
@@ -40,7 +48,7 @@ if (dayz_lastMeal < 3600) then {
 	};
 };
 
-if (_hasoutput) then{
+if (_hasoutput and !_invehicle) then {
     // Selecting output
     _itemtodrop = food_output select (food_with_output find _itemorignal);
 
