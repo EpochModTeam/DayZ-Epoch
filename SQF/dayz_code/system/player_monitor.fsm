@@ -153,7 +153,7 @@ link78[] = {67,15};
 link79[] = {68,69};
 link80[] = {69,20};
 globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-557.366516,843.001587,849.326355,-532.202698,892,880,1};
-window[] = {2,-1,-1,-32000,-32000,806,26,1398,26,3,910};
+window[] = {2,-1,-1,-1,-1,858,78,1450,78,3,910};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1320,10 +1320,10 @@ class FSM
       name = "Enable_Sim";
       init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Enable Sim"");" \n
        "" \n
-       "_myEpochAnim = getNumber(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""dayzVersion"");" \n
-       "_myEpoch = getNumber(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
-       "_myEpochB = getNumber(configFile >> ""CfgPatches"" >> ""dayz_epoch_b"" >> ""dayzVersion"");" \n
-       "_myEpochSfx = getNumber(configFile >> ""CfgPatches"" >> ""dayz_sfx"" >> ""dayzVersion"");" \n
+       "_myEpochAnim = getText(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""dayzVersion"");" \n
+       "_myEpoch = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
+       "_myEpochB = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch_b"" >> ""dayzVersion"");" \n
+       "_myEpochSfx = getText(configFile >> ""CfgPatches"" >> ""dayz_sfx"" >> ""dayzVersion"");" \n
        "" \n
        "" \n
        "player enableSimulation true;"/*%FSM</STATEINIT""">*/;
