@@ -733,7 +733,6 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] = {
 			{ "ItemGenerator","magazine" },
-			{"ItemFuelPump","magazine"},
 			{"ItemFuelBarrel","magazine"},
 			{ "","generic" },
 			{ "","trash" },
@@ -757,8 +756,7 @@ class CfgBuildingLoot {
 		itemChance[] =	{
 			0.01,
 			0.01,
-			0.01,
-			0.16,
+			0.17,
 			0.25,
 			0.04,
 			0.04,
