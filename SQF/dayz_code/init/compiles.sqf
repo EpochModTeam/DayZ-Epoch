@@ -295,7 +295,12 @@ if (!isDedicated) then {
 			} else {
 				_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
 				if (count _nearbyObjects > 0) then {
-					_handled = true;
+					if((diag_tickTime - dayz_lastCheckBit > 4)) then {
+						player playActionNow "GetOver";
+						dayz_lastCheckBit = diag_tickTime;
+					} else {
+						_handled = true;
+					};
 				};
 			};
 		};
@@ -306,24 +311,24 @@ if (!isDedicated) then {
 		};
 		
 		if (_dikCode in actionKeys "ForceCommandingMode") then {_handled = true};
-		if (_dikCode in actionKeys "PushToTalk" and (time - dayz_lastCheckBit > 10)) then {
-			dayz_lastCheckBit = time;
+		if (_dikCode in actionKeys "PushToTalk" and (diag_tickdiag_tickTime - dayz_lastCheckBit > 10)) then {
+			dayz_lastCheckBit = diag_tickTime;
 			[player,50,true,(getPosATL player)] spawn player_alertZombies;
 		};
-		if (_dikCode in actionKeys "VoiceOverNet" and (time - dayz_lastCheckBit > 10)) then {
-			dayz_lastCheckBit = time;
+		if (_dikCode in actionKeys "VoiceOverNet" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+			dayz_lastCheckBit = diag_tickTime;
 			[player,50,true,(getPosATL player)] spawn player_alertZombies;
 		};
-		if (_dikCode in actionKeys "PushToTalkDirect" and (time - dayz_lastCheckBit > 10)) then {
-			dayz_lastCheckBit = time;
+		if (_dikCode in actionKeys "PushToTalkDirect" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+			dayz_lastCheckBit = diag_tickTime;
 			[player,15,false,(getPosATL player)] spawn player_alertZombies;
 		};
-		if (_dikCode in actionKeys "Chat" and (time - dayz_lastCheckBit > 10)) then {
-			dayz_lastCheckBit = time;
+		if (_dikCode in actionKeys "Chat" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+			dayz_lastCheckBit = diag_tickTime;
 			[player,15,false,(getPosATL player)] spawn player_alertZombies;
 		};
-		if (_dikCode in actionKeys "User20" and (time - dayz_lastCheckBit > 5)) then {
-			dayz_lastCheckBit = time;
+		if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
+			dayz_lastCheckBit = diag_tickTime;
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
 		
@@ -377,8 +382,8 @@ if (!isDedicated) then {
 			DZE_cancelBuilding = true;
 		};
 		
-		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (time - dayz_lastCheckBit > 10)) then {
-			dayz_lastCheckBit = time;
+		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+			dayz_lastCheckBit = diag_tickTime;
 			call dayz_forceSave;
 		};
 		/*
