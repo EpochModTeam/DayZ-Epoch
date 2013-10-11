@@ -2,7 +2,7 @@
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_tick"];
+private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_objHupDiff","_objHdwnDiff","_needNear"];
 
 if(TradeInprogress) exitWith { cutText ["\n\nBuilding already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -38,7 +38,51 @@ if(_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26
 if(_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
 if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Cannot build while in combat.", "PLAIN DOWN"];};
 
-_item =			_this;
+_item =	_this;
+
+// Need Near Requirements
+_abort = false;
+_distance = 3;
+_reason = "";
+
+_needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "neednearby");
+
+{
+	_need = _x select 0;
+	_distance = _x select 1;
+
+	if("fire" in _need) then {
+		_isNear = {inflamed _x} count (position player nearObjects _distance);
+		if(_isNear == 0) then {  
+			_abort = true;
+			_reason = "fire";
+		};
+	};
+	if("workshop" in _need) then {
+		_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
+		if(_isNear == 0) then {  
+			_abort = true;
+			_reason = "workshop";
+		};
+	};
+	if("fueltank" in _need) then {
+		_isNear = count (nearestObjects [player, dayz_fuelsources, _distance]);
+		if(_isNear == 0) then {  
+			_abort = true;
+			_reason = "fuel tank";
+		};
+	};
+} forEach _needNear;
+
+
+if(_abort) exitWith {
+	cutText [format["\n\nThis building needs a %1 within %2 meters",_reason,_distance], "PLAIN DOWN"];
+	TradeInprogress = false;
+};
+
+
+
+
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _classnametmp = _classname;
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
