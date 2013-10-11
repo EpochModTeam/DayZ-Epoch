@@ -23,7 +23,7 @@ call gear_ui_init;
 
 // require one tin bar per key
 _hasTinBar = 	"ItemTinBar" in magazines player;
-if(!_hasTinBar) exitWith {TradeInprogress = false; cutText ["\n\nKey crafting requires a 1oz Tin Bar." , "PLAIN DOWN"]};
+if(!_hasTinBar) exitWith {TradeInprogress = false; cutText ["\n\nKey crafting requires a 1 Tin Bar." , "PLAIN DOWN"]};
 
 player playActionNow "Medic";
 
