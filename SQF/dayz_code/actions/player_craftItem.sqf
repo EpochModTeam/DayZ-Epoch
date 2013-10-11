@@ -70,6 +70,11 @@ if (_canDo) then {
 	_outputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "outputweapons");
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 
+	_sfx = getText(configFile >> _baseClass >> _item >> "sfx");
+	if(_sfx == "") then {
+		_sfx = "repair";
+	};
+
 	_randomOutput = 0;
 	if(isNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "randomOutput")) then {
 		_randomOutput = getNumber(configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "randomOutput");
@@ -111,7 +116,7 @@ if (_canDo) then {
 	
 				player playActionNow "Medic";
 	
-				[player,"repair",0,false] call dayz_zombieSpeak;
+				[player,_sfx,0,false] call dayz_zombieSpeak;
 				[player,50,true,(getPosATL player)] spawn player_alertZombies;
 				
 				r_interrupt = false;
