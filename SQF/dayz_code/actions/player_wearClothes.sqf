@@ -2,10 +2,14 @@
 _item spawn player_wearClothes;
 Added Female skin changes - DayZ Epoch - vbawol
 */
-private ["_item","_onLadder","_hasclothesitem","_config","_text","_myModel","_itemNew","_currentSex","_newSex","_model"];
+private ["_item","_onLadder","_hasclothesitem","_config","_text","_myModel","_itemNew","_currentSex","_newSex","_model","_playerNear"];
 
 if(TradeInprogress) exitWith { cutText ["\n\nChanging clothes already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
+
+// cannot change clothes when another player is nearby
+_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot change clothes when another player is nearby." , "PLAIN DOWN"];  };
 
 _item = _this;
 call gear_ui_init;
