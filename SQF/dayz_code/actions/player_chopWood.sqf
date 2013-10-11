@@ -60,7 +60,6 @@ if (count(_findNearestTree) >= 1) then {
 			closeDialog 1;
 
 			// player playActionNow "Medic";
-			player setUnitPos "up";
 			player playActionNow "GestureSwing";
 			[player,"chopwood",0,false] call dayz_zombieSpeak;
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
