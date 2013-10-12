@@ -272,21 +272,9 @@ class CfgVehicles {
         transportmaxbackpacks = 2;
 		class Turrets {};
 	};
-	class CH_47F_EP1;
-	class CH_47F_EP1_DZ : CH_47F_EP1 { 
-		accuracy = 1000; 
-		model = "\ca\air_E\CH47\CH_47F"; 
-		scope = 2; 
-		displayName = "CH-47F"; 
-		crew = ""; 
-		typicalCargo[] = {}; 
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 200;
-        transportmaxbackpacks = 5;
-	};
+	
+	#include "CfgVehicles\AIR\CH47.hpp"
+
 	class UH60M_EP1;
 	class UH60M_EP1_DZ : UH60M_EP1
 	{
@@ -1491,6 +1479,23 @@ class CfgVehicles {
 		displayName = "Debug Box";
 		vehicleClass = "Fortifications";		
 	};
+	class DebugBoxPlayer_DZ: NonStrategic
+	{
+		placement = "vertical";
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		model = "\z\addons\dayz_epoch\models\player_box.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 2000;
+		displayName = "Player Debug Box";
+		vehicleClass = "Fortifications";		
+		class Eventhandlers
+		{
+			init = "_this call eh_localCleanup;";
+		};
+	};
 
 	class TrapItems: NonStrategic{};
 	// buildables
@@ -1845,7 +1850,7 @@ class CfgVehicles {
 		armor = 500;
 		displayName = "Wood Ramp";
 		vehicleClass = "Fortifications";
-		// GhostPreview = "MetalFloor_Preview_DZ";
+		GhostPreview = "WoodRamp_Preview_DZ";
 	};
 	class CinderWallHalf_DZ: ModularItems
 	{
@@ -2338,6 +2343,20 @@ class CfgVehicles {
 		armor = 1000;
 		displayName = "Metal Floor Preview";
 		vehicleClass = "Fortifications";
+	};
+	class WoodRamp_Preview_DZ: NonStrategic
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		offset[] = {0,1.5,0};
+		model="\z\addons\dayz_epoch\models\Wood_Ramp_ghost.p3d";
+		icon = "\ca\data\data\Unknown_object.paa";
+		mapSize = 2;
+		armor = 1000;
+		displayName = "Wood Ramp Preview";
+		vehicleClass = "Fortifications";
+		
 	};
 	class CinderWallHalf_Preview_DZ: NonStrategic
 	{

@@ -1,6 +1,6 @@
 1 "" !="WeaponHolder" !="TinCan" !="Rabbit" !="Goat01_EP1" !="Goat02_EP1" !="Goat" !="WildBoar" !="Sheep" !="Sheep02_EP1" !="Sheep01_EP1" !="Hen" !="Cock" !="Cow01" !="Cow02" !="Cow03" !="Cow04" !="Cow01_EP1" !="zZombie_Base" !="z_hunter" !="z_teacher" !="z_doctor" !="z_suit1" !="z_suit2" !="z_worker1" !="z_worker2" !="z_worker3" !="z_villager1" !="z_villager2" !="z_villager3" !="z_soldier" !="z_soldier_heavy" !="z_soldier_pilot" !="z_policeman" !="z_priest" !="BoltSteelF" !="Land_Fire_DZ" !="SodaCan" !="JackDaniels" !="RoadFlare" !="ChemRed" !="ChemBlue" !="ChemGreen" !="Survivor1_DZ" !="Survivor2_DZ" !="Survivor3_DZ" !="SurvivorW2_DZ" !="Bandit1_DZ" !="CZ_VestPouch_EP1" !="DZ_Patrol_Pack_EP1" !="DZ_CivilBackpack_EP1" !="DZ_ALICE_Pack_EP1" !="SmokeShell" !="SmokeShellRed" !="SmokeShellGreen" !="MedBox0" !="Camo1_DZ" !="Soldier1_DZ" !="DZ_Backpack_EP1" !="Sniper1_DZ" !="DZ_Assault_Pack_EP1" !="BanditW1_DZ" !="G_40mm_HE" !="dog" !="WeaponHolder_MeleeCrowbar" !="WeaponHolder_ItemHatchet" !="WeaponHolder_PartGeneric" !="WeaponHolder_ItemJerrycan" !="WeaponHolder_PartFueltank" !="WeaponHolder_PartGlass" !="WeaponHolder_PartEngine" !="WeaponHolder_PartWheel" !="WeaponHolder_PartVRotor"  !="DZ_Czech_Vest_Puch" !="DZ_British_ACU" !="DZ_TK_Assault_Pack_EP1"
 1 "SeaGull"
-5 "box" !="MedBox0" !="AmmoBoxSmall_556" !="AmmoBoxSmall_762" !="ItemMatchbox" !="ItemToolbox" !="CardBoardBox" !="FoodBox1" !="FoodBox2" !="FoodBox3" !="LockboxStorageLocked" !="LockboxStorage" !="WeaponHolder_ItemLockbox"
+5 "box" !="DebugBoxPlayer_DZ" !="MedBox0" !="AmmoBoxSmall_556" !="AmmoBoxSmall_762" !="ItemMatchbox" !="ItemToolbox" !="CardBoardBox" !="FoodBox1" !="FoodBox2" !="FoodBox3" !="LockboxStorageLocked" !="LockboxStorage" !="WeaponHolder_ItemLockbox"
 5 "Mine"
 5 "ARTY_"
 5 "SADARM_"
@@ -45,7 +45,7 @@
 1 "_HE" !="z_soldier_heavy" //!="G_40mm_HE" //keep monitoring to catch obvious abuse
 1 "HE_" //keep monitoring to catch obvious abuse
 1 "M_" !="G_40mm_HE" //!="40mm_" //keep monitoring to catch obvious abuse
-5 "Parachute" !="ParachuteWest" //under monitoring
+5 "Parachute" !="ParachuteWest" !="ParachuteC" //under monitoring
 1 "dog" //until released not welcome
 5 "Land_" !="Land_Fire_DZ" !="Land_HBarrier1_DZ" !="Land_HBarrier1Preview" !="Land_HBarrier3_DZ" !="Land_HBarrier3ePreview" !="Land_fortified_nest_smallPreview" !="Land_DZE_WoodDoor" !="Land_DZE_LargeWoodDoor" !="Land_DZE_GarageWoodDoor" !="Land_DZE_WoodDoorLocked" !="Land_DZE_LargeWoodDoorLocked" !="Land_DZE_GarageWoodDoorLocked"
 5 "BBarracks"

@@ -316,8 +316,7 @@ if (_hasrequireditem) then {
 		};
 		
 		cutText [format["%1",_previewCounter], "PLAIN DOWN"];
-		_previewCounter = _previewCounter - 1;
-
+		
 		if(_previewCounter <= 0) exitWith {
 			_isOk = false;
 			_cancel = true;
@@ -325,6 +324,8 @@ if (_hasrequireditem) then {
 			detach _object;
 			deleteVehicle _object;
 		};
+
+		_previewCounter = _previewCounter - 1;
 		
 		if((_objHdwnDiff > 5) or (_objHupDiff > 5)) exitWith {
 			_isOk = false;

@@ -24,7 +24,7 @@ item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.00000
 item20[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
 item21[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item22[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
-item23[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
+item23[] = {"Phase_Two",2,4346,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item24[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
 item25[] = {"ERROR__Player_Already",2,250,175.000000,700.000000,275.000000,750.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item26[] = {"Alive",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Alive"};
@@ -43,7 +43,7 @@ item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.00000
 item39[] = {"Too_Long",4,218,300.000000,500.000000,400.000000,550.000000,0.000000,"Too" \n "Long"};
 item40[] = {"Too_Long",4,218,300.000000,700.000000,400.000000,750.000000,0.000000,"Too" \n "Long"};
 item41[] = {"Too_Long",4,218,300.000000,800.000000,400.000000,850.000000,0.000000,"Too" \n "Long"};
-item42[] = {"Enable_Sim",2,4346,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
+item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
 item43[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
 item44[] = {"New_Character",4,218,-500.000000,375.000000,-400.000000,425.000000,5.000000,"New" \n "Character"};
 item45[] = {"Gender_Selection",2,250,-500.000000,500.000000,-400.000000,550.000000,0.000000,"Gender Selection" \n "Dialog"};
@@ -152,8 +152,8 @@ link77[] = {66,59};
 link78[] = {67,15};
 link79[] = {68,69};
 link80[] = {69,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-557.366516,843.001587,849.326355,-532.202698,892,880,1};
-window[] = {2,-1,-1,-1,-1,858,78,1450,78,3,910};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-984.835999,1270.470825,2558.711182,333.744934,892,880,1};
+window[] = {2,-1,-1,-1,-1,858,1758,3130,78,3,910};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -767,11 +767,18 @@ class FSM
        "_setPos = 			_worldspace select 1;" \n
        "" \n
        "if(dayz_paraSpawn and !(player isKindOf ""PZombie_VB"")) then {" \n
-       "  _para = createVehicle [""ParachuteWest"", _setPos, [], 0, ""FLY""];  " \n
-       "  player moveInDriver _para;" \n
+       "	player setPosATL [(_setPos select 0),(_setPos select 1),1000];" \n
+       "	player setDir _setDir;" \n
+       "	[player, 1000] exec ""ca\air2\halo\data\Scripts\HALO_init.sqs"";" \n
        "} else {" \n
-       "  player setPosATL _setPos;" \n
-       "  player setDir _setDir;" \n
+       "" \n
+       "	// make protective box" \n
+       "	DZE_PROTOBOX = createVehicle [""DebugBoxPlayer_DZ"", _setPos, [], 0, ""CAN_COLLIDE""];" \n
+       "	DZE_PROTOBOX setDir _setDir;" \n
+       "	DZE_PROTOBOX setPosATL _setPos;" \n
+       "" \n
+       "	player setDir _setDir;" \n
+       "	player setPosATL _setPos;" \n
        "};" \n
        "" \n
        "{" \n
@@ -1110,6 +1117,7 @@ class FSM
        "if (_currentAnim != """" and !dayz_paraSpawn) then {" \n
        "	[objNull, player, rSwitchMove,_currentAnim] call RE;" \n
        "};" \n
+       "" \n
        "if (_currentWpn != """") then {" \n
        "	player selectWeapon _currentWpn;" \n
        "} else {" \n
@@ -1267,7 +1275,20 @@ class FSM
        "	if (!_fadeFire) then {" \n
        "		nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
        "	};" \n
-       "} forEach allMissionObjects ""SpawnableWreck"";"/*%FSM</STATEINIT""">*/;
+       "} forEach allMissionObjects ""SpawnableWreck"";" \n
+       "" \n
+       "// remove box " \n
+       "[] spawn {" \n
+       "	private [""_counter""];" \n
+       "	_counter = 0;" \n
+       "	while {true} do {" \n
+       "		if ((player getVariable[""combattimeout"", 0] >= time) or (_counter >= 60) or (player distance DZE_PROTOBOX > 2)) exitWith {" \n
+       "			deleteVehicle DZE_PROTOBOX;" \n
+       "		};" \n
+       "		sleep 1;" \n
+       "		_counter = _counter + 1;" \n
+       "	};" \n
+       "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

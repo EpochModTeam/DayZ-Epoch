@@ -51,7 +51,7 @@ class CfgSFX {
 		sounds[] = {"DestrMine1","DestrMine2"}; 
 		name = "Mine destruction"; 
 		DestrMine1[] = {"\ca\BUILDINGS\sound\building2_destroy", 3.16228, 1, 150, 1, 60, 120, 240}; 
-		DestrMine2[] = {"\dayz_sfx\effects\vein_wreck.ogg", 3.16228, 1, 150, 1, 60, 120, 240}; 
+		DestrMine2[] = {"\dayz_sfx\effects\vein_wreck.ogg", 5, 1, 150, 1, 60, 120, 240}; 
 		empty[] = {"", 0, 0, 0, 0, 1, 5, 20}; 
 	}
 };

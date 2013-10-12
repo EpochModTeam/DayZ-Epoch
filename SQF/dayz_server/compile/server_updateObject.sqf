@@ -10,7 +10,7 @@ if(isNull(_object)) exitWith {
 };
 
 _type = 	_this select 1;
-_parachuteWest = typeOf _object == "ParachuteWest";
+_parachuteWest = ((typeOf _object == "ParachuteWest") or (typeOf _object == "ParachuteC"));
 _isbuildable = (typeOf _object) in dayz_allowedObjects;
 _isNotOk = false;
 _firstTime = false;
