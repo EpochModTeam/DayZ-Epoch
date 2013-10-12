@@ -1,3 +1,8 @@
+class WeaponFireGun;    // External class reference
+class WeaponCloudsGun;  // External class reference
+class WeaponFireMGun;   // External class reference
+class WeaponCloudsMGun;
+
 class CfgVehicles {
 
 	#include "CfgVehicles\Zeds\Zeds.hpp"
@@ -6,12 +11,49 @@ class CfgVehicles {
 	#include "CfgVehicles\Females\females.hpp"
 
 	class All;
+	
 	class HouseBase;
 	class Ruins: HouseBase {};
 
 	#include "CfgVehicles\DZE\Doors.hpp"
 
 	class AllVehicles;
+	
+	class Land;	// External class reference
+	class LandVehicle : Land { class NewTurret; class Sounds; class ViewOptics; class ViewPilot; class AnimationSources; };
+	class car: landvehicle {
+		
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class Turrets;
+				class ViewOptics;
+			};
+		};
+	class HitPoints
+    {
+      class HitEngine;
+      class HitRGlass;
+      class HitLGlass;
+      class HitBody;
+      class HitFuel;
+      class HitLFWheel;
+      class HitRFWheel;
+      class HitLF2Wheel;
+      class HitRF2Wheel;
+      class HitLMWheel;
+      class HitRMWheel;
+      class HitLBWheel;
+      class HitRBWheel;
+      class HitGlass1;
+      class HitGlass2;
+      class HitGlass3;
+      class HitGlass4;
+    };
+		class Sounds : Sounds {	class Engine; class Movement;};
+	};
+
 	class Air : AllVehicles 
 	{
 	class NewTurret;
@@ -393,16 +435,12 @@ class CfgVehicles {
 	};
 	
 	#include "CfgVehicles\AIR\CH47.hpp"
+	#include "CfgVehicles\AIR\UH60.hpp"
 
-	class UH60M_EP1;
-	class UH60M_EP1_DZ : UH60M_EP1
-	{
-		scope = 2; 
-		crew = ""; 
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-	};
+	// LAND
+	#include "CfgVehicles\LAND\HMMWV.hpp"
+
+	
 	class MV22;
 	class MV22_DZ : MV22 { 
 		accuracy = 1000; 
@@ -440,30 +478,7 @@ class CfgVehicles {
 		transportmaxbackpacks = 5;
 		armor = 50;
 	};
-	class HMMWV_Base;
-	class HMMWV_DZ: HMMWV_Base {
-		accuracy = 0.32;
-		displayname = "HMMWV_DZ";
-		hasgunner = 0;
-		hiddenselections[] = {"Camo1"};
-		hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
-		icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
-		mapsize = 5;
-		model = "ca\wheeled_E\HMMWV\HMMWV";
-		picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		transportMaxWeapons = 4;
-		transportMaxMagazines = 120;
-        transportmaxbackpacks = 4;
-		class Turrets {};
-		class Damage {
-			mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
-			tex[] = {};
-		};
-	};
+	
 	class RubberBoat;
 	class PBX: RubberBoat {
 		cargoaction[] = {"PBX_Cargo01", "PBX_Cargo02", "PBX_Cargo03"};
