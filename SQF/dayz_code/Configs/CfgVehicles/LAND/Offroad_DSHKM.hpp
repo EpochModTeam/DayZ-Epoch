@@ -298,7 +298,7 @@ class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_base
 	side = 2;
 	faction = "GUE";
 	crew = "";
-	typicalCargo[] = {""};
+	typicalCargo[] = {};
 	displayName = "Off-road (DShKM) AL";
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hilux_armed\data\coyota_trup4_CO.paa"};
 	class Damage

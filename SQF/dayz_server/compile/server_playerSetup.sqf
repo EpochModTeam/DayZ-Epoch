@@ -1,6 +1,6 @@
 private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC"];
 
-diag_log ("SETUP: attempted with " + str(_this));
+//diag_log ("SETUP: attempted with " + str(_this));
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
@@ -52,7 +52,7 @@ if (isNull _playerObj or !isPlayer _playerObj) exitWith {
 };
 
 //Wait for HIVE to be free
-diag_log ("SETUP: RESULT: Successful with " + str(_primary));
+//diag_log ("SETUP: RESULT: Successful with " + str(_primary));
 
 _medical =		_primary select 1;
 _stats =		_primary select 2;
@@ -95,7 +95,7 @@ if (count _worldspace > 0) then {
 	_randomSpot = true;
 };
 
-diag_log ("LOGIN: Location: " + str(_worldspace) + " doRnd?: " + str(_randomSpot));
+//diag_log ("LOGIN: Location: " + str(_worldspace) + " doRnd?: " + str(_randomSpot));
 
 //set medical values
 if (count _medical > 0) then {
@@ -248,7 +248,7 @@ _clientID publicVariableClient "dayzPlayerLogin2";
 _playerObj setVariable ["lastTime",time];
 //_playerObj setVariable ["model_CHK",typeOf _playerObj];
 
-diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
+//diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 
 PVDZE_plr_Login = null;
 PVDZE_plr_Login2 = null;

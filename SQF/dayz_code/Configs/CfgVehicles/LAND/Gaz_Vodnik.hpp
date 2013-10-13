@@ -855,7 +855,7 @@ class AnimationSources : AnimationSources
 class GAZ_Vodnik_DZE : GAZ_Vodnik_HMG
 {
 model = "\ca\wheeled2\GAZ39371\GAZ39371_Vodnik.p3d";
-displayname = "Vodnik (2xPK) DZ";
+displayname = "Vodnik (2xPK) AL";
 picture = "\Ca\wheeled2\data\UI\Picture_GAZ39371_CA.paa";
 Icon = "\Ca\wheeled2\data\UI\Icon_GAZ39371_CA.paa";
 mapSize = 6.5;

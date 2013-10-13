@@ -374,7 +374,7 @@ class LandRover_Special_CZ_EP1_DZE: LandRover_Base
 	crew = "";
 	typicalCargo[] = {};
 	model = "\ca\wheeled_E\LR\LR_Special";
-	displayname = "Military Offroad Special DZ";
+	displayname = "Military Offroad Special AL";
 	Picture = "\CA\wheeled_e\Data\UI\Picture_lr_special_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_lr_special_CA.paa";
 	transportSoldier = 2;

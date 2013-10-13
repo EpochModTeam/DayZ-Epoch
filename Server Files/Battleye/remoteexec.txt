@@ -1,4 +1,4 @@
-5 "" !="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';" !="[this] spawn BIS_Effects_AirDestruction" !="spawn BIS_Effects_AirDestructionStage2" !="_this spawn fnc_plyrHit;"
+5 "" !="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';" !="[this] spawn BIS_Effects_AirDestruction" !="spawn BIS_Effects_AirDestructionStage2" !="]spawn BIS_Effects_AirDestructionStage2" !="_this spawn fnc_plyrHit;"
 1="[this] spawn BIS_Effects_AirDestruction"
 
 // ban for empty patterns, such:

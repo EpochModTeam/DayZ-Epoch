@@ -444,6 +444,7 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\Gaz_Vodnik.hpp"
 	#include "CfgVehicles\LAND\ArmoredSUV.hpp"
 	#include "CfgVehicles\LAND\Pickup_PK.hpp"
+	#include "CfgVehicles\LAND\Offroad_DSHKM.hpp"
 
 	// SEA
 	// #include "CfgVehicles\SEA\RHIB.hpp"

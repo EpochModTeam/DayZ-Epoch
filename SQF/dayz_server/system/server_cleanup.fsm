@@ -295,7 +295,7 @@ class FSM
        "" \n
        "//Check for hackers" \n
        " {" \n
-       "	if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && ((typeOf vehicle _x) != ""ParachuteWest"") or (typeOf vehicle _x) != ""ParachuteC"")) then {" \n
+       "	if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
        "		diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
        "		(vehicle _x) setDamage 1;" \n
        "		_x setDamage 1;" \n
