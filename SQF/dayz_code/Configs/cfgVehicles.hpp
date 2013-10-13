@@ -441,6 +441,8 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\HMMWV.hpp"
 	#include "CfgVehicles\LAND\LandRover.hpp"
 	#include "CfgVehicles\LAND\UAZ_MG.hpp"
+	#include "CfgVehicles\LAND\Gaz_Vodnik.hpp"
+	#include "CfgVehicles\LAND\ArmoredSUV.hpp"
 
 	
 	class MV22;
@@ -456,19 +458,6 @@ class CfgVehicles {
 		transportMaxWeapons = 20;
 		transportMaxMagazines = 400;
         transportmaxbackpacks = 10;
-	};
-
-	class ArmoredSUV_PMC;
-	class ArmoredSUV_PMC_DZ : ArmoredSUV_PMC { 
-		scope = 2; 
-		side = 2; 
-		faction = "PMC_BAF";
-		enableGPS = 1;
-		crew = ""; 
-		typicalCargo[] = {}; 
-		transportMaxWeapons = 20; 
-		transportMaxMagazines = 400; 
-		transportmaxbackpacks = 10;
 	};
 	class SUV_TK_CIV_EP1;
 	class SUV_Camo: SUV_TK_CIV_EP1
