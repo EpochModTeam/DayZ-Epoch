@@ -3005,3 +3005,23 @@ INSERT INTO `trader_tids` VALUES(689, 'Clothes', 176);
 INSERT INTO `trader_tids` VALUES(690, 'Cooked Meats', 176);
 INSERT INTO `trader_tids` VALUES(691, 'Drinks', 176);
 INSERT INTO `trader_tids` VALUES(692, 'Packaged Food', 176);
+
+--
+-- Change classes over to new ammo less versions`
+--
+UPDATE `object_data` SET `Classname`='CH_47F_EP1_DZE' WHERE `Classname`='CH_47F_EP1_DZ';
+UPDATE `object_data` SET `Classname`='UH1Y_DZE' WHERE `Classname`='UH1Y_DZ';
+UPDATE `object_data` SET `Classname`='UH1Y_DZE' WHERE `Classname`='UH1H_DZ';
+UPDATE `object_data` SET `Classname`='Mi17_DZE' WHERE `Classname`='Mi17_DZ';
+UPDATE `object_data` SET `Classname`='UH60M_EP1_DZE' WHERE `Classname`='UH60M_EP1_DZ';
+UPDATE `object_data` SET `Classname`='HMMWV_M998A2_SOV_DES_EP1_DZE' WHERE `Classname`='HMMWV_M998A2_SOV_DES_EP1';
+UPDATE `object_data` SET `Classname`='HMMWV_M1151_M2_CZ_DES_EP1_DZE' WHERE `Classname`='HMMWV_M1151_M2_CZ_DES_EP1';
+UPDATE `object_data` SET `Classname`='LandRover_Special_CZ_EP1_DZE' WHERE `Classname`='LandRover_Special_CZ_EP1';
+UPDATE `object_data` SET `Classname`='LandRover_MG_TK_EP1_DZE' WHERE `Classname`='LandRover_MG_TK_EP1';
+UPDATE `object_data` SET `Classname`='UAZ_MG_TK_EP1_DZE' WHERE `Classname`='UAZ_MG_TK_EP1';
+UPDATE `object_data` SET `Classname`='GAZ_Vodnik_DZE' WHERE `Classname`='GAZ_Vodnik';
+UPDATE `object_data` SET `Classname`='ArmoredSUV_PMC_DZE' WHERE `Classname`='ArmoredSUV_PMC_DZ';
+UPDATE `object_data` SET `Classname`='Pickup_PK_TK_GUE_EP1_DZE' WHERE `Classname`='Pickup_PK_TK_GUE_EP1';
+UPDATE `object_data` SET `Classname`='Offroad_DSHKM_Gue_DZE' WHERE `Classname`='Offroad_DSHKM_Gue';
+UPDATE `object_data` SET `Classname`='Pickup_PK_GUE_DZE' WHERE `Classname`='Pickup_PK_GUE';
+UPDATE `object_data` SET `Classname`='Pickup_PK_INS_DZE' WHERE `Classname`='Pickup_PK_INS';
