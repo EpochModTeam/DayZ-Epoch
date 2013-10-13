@@ -322,12 +322,12 @@ spawn_ammosupply = {
 			
 			_spawnveh = _WreckList call BIS_fnc_selectRandom;
 
-			//if(DZEdebug) then {
+			if(DZEdebug) then {
 				_marker = createMarker [str(_position) , _position];
 				_marker setMarkerShape "ICON";
 				_marker setMarkerType "DOT";
 				_marker setMarkerText str(_spawnveh);
-			//};
+			};
 			
 			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
 			_veh enableSimulation false;
@@ -363,12 +363,12 @@ spawn_roadblocks = {
 			waitUntil{!isNil "BIS_fnc_selectRandom"};
 			_spawnveh = _WreckList call BIS_fnc_selectRandom;
 
-			//if(DZEdebug) then {
+			if(DZEdebug) then {
 				_marker = createMarker [str(_position) , _position];
 				_marker setMarkerShape "ICON";
 				_marker setMarkerType "DOT";
 				_marker setMarkerText str(_spawnveh);
-			//};
+			};
 			
 			//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
 			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
@@ -408,12 +408,12 @@ spawn_mineveins = {
 			
 			_spawnveh = ["Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Silver_Vein_DZE","Silver_Vein_DZE","Gold_Vein_DZE"] call BIS_fnc_selectRandom;
 
-			//if(DZEdebug) then {
+			if(DZEdebug) then {
 				_marker = createMarker [str(_position) , _position];
 				_marker setMarkerShape "ICON";
 				_marker setMarkerType "DOT";
 				_marker setMarkerText str(_spawnveh);
-			// };
+			};
 			
 			//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
 			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
