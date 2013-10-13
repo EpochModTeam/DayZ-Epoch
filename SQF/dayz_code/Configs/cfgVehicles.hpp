@@ -434,16 +434,19 @@ class CfgVehicles {
 		class Turrets {};
 	};
 	
-	#include "CfgVehicles\AIR\CH47.hpp"
-	#include "CfgVehicles\AIR\UH60.hpp"
-
-	// LAND
-	#include "CfgVehicles\LAND\HMMWV.hpp"
-	#include "CfgVehicles\LAND\LandRover.hpp"
-	#include "CfgVehicles\LAND\UAZ_MG.hpp"
-	#include "CfgVehicles\LAND\Gaz_Vodnik.hpp"
-	#include "CfgVehicles\LAND\ArmoredSUV.hpp"
-
+	#include "CfgVehicles\DZE\Helicopter\CH47.hpp"
+	#include "CfgVehicles\DZE\Helicopter\UH60.hpp"
+	
+	#include "CfgVehicles\DZE\Land\HMMWV.hpp"
+	#include "CfgVehicles\DZE\Land\ArmouredSUV.hpp"
+	#include "CfgVehicles\DZE\Land\GAZ_Vodnik.hpp"
+	#include "CfgVehicles\DZE\Land\LandRover.hpp"
+	#include "CfgVehicles\DZE\Land\Offroad.hpp"
+	#include "CfgVehicles\DZE\Land\Pickup.hpp"
+	#include "CfgVehicles\DZE\Land\UAZ_MG.hpp"
+	
+	#include "CfgVehicles\DZE\Boat\RHIB.hpp"
+	
 	
 	class MV22;
 	class MV22_DZ : MV22 { 
