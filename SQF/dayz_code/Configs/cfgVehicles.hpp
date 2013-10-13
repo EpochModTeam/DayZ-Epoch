@@ -20,7 +20,7 @@ class CfgVehicles {
 	class AllVehicles;
 	
 	class Land;	// External class reference
-	class LandVehicle : Land { class NewTurret; class Sounds; class ViewOptics; class ViewPilot; class AnimationSources; };
+	class LandVehicle : Land { class NewTurret; class Sounds; class ViewOptics; class ViewPilot; class AnimationSources; class EventHandlers; };
 	class car: landvehicle {
 		
 		class Turrets
@@ -31,26 +31,26 @@ class CfgVehicles {
 				class ViewOptics;
 			};
 		};
-	class HitPoints
-    {
-      class HitEngine;
-      class HitRGlass;
-      class HitLGlass;
-      class HitBody;
-      class HitFuel;
-      class HitLFWheel;
-      class HitRFWheel;
-      class HitLF2Wheel;
-      class HitRF2Wheel;
-      class HitLMWheel;
-      class HitRMWheel;
-      class HitLBWheel;
-      class HitRBWheel;
-      class HitGlass1;
-      class HitGlass2;
-      class HitGlass3;
-      class HitGlass4;
-    };
+		class HitPoints
+		{
+		  class HitEngine;
+		  class HitRGlass;
+		  class HitLGlass;
+		  class HitBody;
+		  class HitFuel;
+		  class HitLFWheel;
+		  class HitRFWheel;
+		  class HitLF2Wheel;
+		  class HitRF2Wheel;
+		  class HitLMWheel;
+		  class HitRMWheel;
+		  class HitLBWheel;
+		  class HitRBWheel;
+		  class HitGlass1;
+		  class HitGlass2;
+		  class HitGlass3;
+		  class HitGlass4;
+		};
 		class Sounds : Sounds {	class Engine; class Movement;};
 	};
 
@@ -443,7 +443,10 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\UAZ_MG.hpp"
 	#include "CfgVehicles\LAND\Gaz_Vodnik.hpp"
 	#include "CfgVehicles\LAND\ArmoredSUV.hpp"
+	#include "CfgVehicles\LAND\Pickup_PK.hpp"
 
+	// SEA
+	// #include "CfgVehicles\SEA\RHIB.hpp"
 	
 	class MV22;
 	class MV22_DZ : MV22 { 
