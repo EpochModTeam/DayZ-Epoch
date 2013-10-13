@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 16
-serverTraders = ["GUE_Soldier_Pilot","UN_CDF_Soldier_MG_EP1","GUE_Soldier_Medic","GUE_Woodlander1","GUE_Commander","Tanny_PMC","BAF_Soldier_AMG_W","BAF_Soldier_AAA_DDPM","GUE_Soldier_3","GUE_Soldier_1","BAF_Pilot_MTP","GUE_Soldier_Sab","US_Soldier_Medic_EP1","CZ_Special_Forces_MG_DES_EP1","Damsel5","GUE_Woodlander3","UN_CDF_Soldier_AAT_EP1","RU_Farmwife1","Citizen2_EP1"];
+serverTraders = ["GUE_Soldier_Pilot","UN_CDF_Soldier_MG_EP1","GUE_Soldier_Medic","GUE_Woodlander1","GUE_Commander","Tanny_PMC","BAF_Soldier_AMG_W","BAF_Soldier_AAA_DDPM","GUE_Soldier_3","GUE_Soldier_1","BAF_Pilot_MTP","GUE_Soldier_Sab","US_Soldier_Medic_EP1","CZ_Special_Forces_MG_DES_EP1","Damsel5","GUE_Woodlander3","UN_CDF_Soldier_AAT_EP1","RU_Farmwife1","Citizen2_EP1"."Rita_Ensler_EP1","USMC_SoldierS_Engineer","USMC_Soldier_TL","ValentinaVictim"];
 // AWOL's Airfield
 menu_GUE_Soldier_Pilot = [
 	[["Airplanes",517],["Helicopter Unarmed",519]],
@@ -112,5 +112,29 @@ menu_RU_Farmwife1 = [
 menu_Citizen2_EP1 = [
 	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
 	[],
+	"neutral"
+];
+// Planica Vehicle Vendor
+menu_Rita_Ensler_EP1 = [
+	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Compact Cars",652],["Economy Cars",654],["Fuel Trucks",655],["Luxury Cars",656],["Microcars",657],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
+	[],
+	"neutral"
+];
+// Planica Ammo Vendor
+menu_USMC_SoldierS_Engineer = [
+	[["Assault Rifle Ammo",643],["Light Machine Gun Ammo",644],["Pistol Ammo",646],["Shotguns and Single-shot Ammo",649],["Sniper Rifle Ammo",647],["Submachine Gun Ammo",648]],
+	[],
+	"neutral"
+];
+// Plancia Weapon Vendor
+menu_USMC_Soldier_TL = [
+	[["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
+	[],
+	"neutral"
+];
+// Plancia General Store
+menu_ValentinaVictim = [
+	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
