@@ -3011,7 +3011,7 @@ INSERT INTO `trader_tids` VALUES(692, 'Packaged Food', 176);
 --
 UPDATE `object_data` SET `Classname`='CH_47F_EP1_DZE' WHERE `Classname`='CH_47F_EP1_DZ';
 UPDATE `object_data` SET `Classname`='UH1Y_DZE' WHERE `Classname`='UH1Y_DZ';
-UPDATE `object_data` SET `Classname`='UH1Y_DZE' WHERE `Classname`='UH1H_DZ';
+UPDATE `object_data` SET `Classname`='UH1H_DZE' WHERE `Classname`='UH1H_DZ';
 UPDATE `object_data` SET `Classname`='Mi17_DZE' WHERE `Classname`='Mi17_DZ';
 UPDATE `object_data` SET `Classname`='UH60M_EP1_DZE' WHERE `Classname`='UH60M_EP1_DZ';
 UPDATE `object_data` SET `Classname`='HMMWV_M998A2_SOV_DES_EP1_DZE' WHERE `Classname`='HMMWV_M998A2_SOV_DES_EP1';
