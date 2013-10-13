@@ -439,6 +439,8 @@ class CfgVehicles {
 
 	// LAND
 	#include "CfgVehicles\LAND\HMMWV.hpp"
+	#include "CfgVehicles\LAND\LandRover.hpp"
+	#include "CfgVehicles\LAND\UAZ_MG.hpp"
 
 	
 	class MV22;
