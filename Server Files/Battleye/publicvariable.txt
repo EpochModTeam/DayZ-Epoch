@@ -42,7 +42,7 @@
 5 "rland"
 5 "rsetdir"
 5 "local_sefFuel"
-1 "spawn"  !="_this spawn fnc_plyrHit;"
+1 "spawn" !="PVDZE_zed_Spawn" !="_this spawn fnc_plyrHit;"
 1 "BIS_Effects"
 5 "hiveupdateresu"
 5 "eh_localCleanup"
