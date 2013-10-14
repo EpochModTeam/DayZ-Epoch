@@ -155,7 +155,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
 		descriptionShort = "Unknown document";
 		weight = 0.1;
-		sfx = "document"
+		sfx = "document";
 		class ItemActions
 		{
 			class Crafting
