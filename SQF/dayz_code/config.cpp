@@ -729,7 +729,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		zombieClass[] = {"z_worker1","z_worker2","z_worker3"};
 		maxRoaming = 2;
-		lootChance = 0.3;
+		lootChance = 0.4;
 		lootPos[] = {};
 		itemType[] = {
 			{ "ItemGenerator","magazine" },
@@ -794,7 +794,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		zombieClass[] = {"z_worker1","z_worker2","z_worker3"};
 		maxRoaming = 2;
-		lootChance = 0.3;
+		lootChance = 0.4;
 		lootPos[] = {};
 		itemType[] = {
 			{ "ItemGenerator","magazine" },

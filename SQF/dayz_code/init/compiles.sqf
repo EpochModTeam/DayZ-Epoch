@@ -296,6 +296,7 @@ if (!isDedicated) then {
 				_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
 				if (count _nearbyObjects > 0) then {
 					if((diag_tickTime - dayz_lastCheckBit > 4)) then {
+						[objNull, player, rSwitchMove,"GetOver"] call RE;
 						player playActionNow "GetOver";
 						dayz_lastCheckBit = diag_tickTime;
 					} else {
