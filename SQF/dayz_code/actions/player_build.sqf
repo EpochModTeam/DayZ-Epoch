@@ -45,31 +45,45 @@ _abort = false;
 _distance = 3;
 _reason = "";
 
-_needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "neednearby");
 
+_needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "neednearby");
 {
 	_need = _x select 0;
 	_distance = _x select 1;
-
-	if("fire" in _need) then {
-		_isNear = {inflamed _x} count (position player nearObjects _distance);
-		if(_isNear == 0) then {  
-			_abort = true;
-			_reason = "fire";
+	switch(_need) do{
+		case "fire":
+		{
+			_isNear = {inflamed _x} count (position player nearObjects _distance);
+			if(_isNear == 0) then {  
+				_abort = true;
+				_reason = "fire";
+			};
 		};
-	};
-	if("workshop" in _need) then {
-		_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
-		if(_isNear == 0) then {  
-			_abort = true;
-			_reason = "workshop";
+		case "workshop":
+		{
+			_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
+			if(_isNear == 0) then {  
+				_abort = true;
+				_reason = "workshop";
+			};
 		};
-	};
-	if("fueltank" in _need) then {
-		_isNear = count (nearestObjects [player, dayz_fuelsources, _distance]);
-		if(_isNear == 0) then {  
-			_abort = true;
-			_reason = "fuel tank";
+		case "fueltank":
+		{
+			_isNear = count (nearestObjects [player, dayz_fuelsources, _distance]);
+			if(_isNear == 0) then {  
+				_abort = true;
+				_reason = "fuel tank";
+			};
+		};
+		default
+		{
+			if(isClass(_config >> _need)) then {
+				_isNear = count (nearestObjects [player, _need, 30]);
+				if(_isNear == 0) then {  
+					_abort = true;
+					_reason = _need;
+				};
+			};
 		};
 	};
 } forEach _needNear;
