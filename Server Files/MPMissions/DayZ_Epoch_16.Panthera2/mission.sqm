@@ -1250,7 +1250,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=22;
+		items=23;
 		class Item0
 		{
 			position[]={5192.2104,62.495663,4994.3667};
@@ -1399,12 +1399,20 @@ class Mission
 			name="PlanicaTraders";
 			text="Trader City Planica";
 			type="mil_circle";
-			colorName="ColorBlack";
+			colorName="ColorBrown";
+		};
+		class Item22
+		{
+			position[]={2247.085,35.5191,9473.3262};
+			name="IslandVehiclePartsVendors";
+			text="Mello Vehicle/Parts Vendors";
+			type="mil_circle";
+			colorName="ColorBrown";
 		};
 	};
 	class Sensors
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			position[]={4419.9492,22.076105,1629.0402};
@@ -1543,7 +1551,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={4338.0952,101.19459,6318.4214};
+			position[]={4338.6138,101.18414,6317.9023};
 			a=100;
 			b=100;
 			activationBy="WEST";
@@ -1551,6 +1559,23 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="PlanicaTraders";
+			expCond="(player distance PlanicaTraders) < 100; ";
+			expActiv="TitleText[""Now Entering Trader City Planica"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Planica"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={2243.9109,35.5191,9479.2207};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="PlanicaTraders_1";
 			expCond="(player distance PlanicaTraders) < 100; ";
 			expActiv="TitleText[""Now Entering Trader City Planica"",""PLAIN DOWN""]; canbuild = false;";
 			expDesactiv="TitleText[""Now Leaving Trader City Planica"",""PLAIN DOWN""]; canbuild = true;";
