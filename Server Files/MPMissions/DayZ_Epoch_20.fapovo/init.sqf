@@ -25,6 +25,13 @@ MaxVehicleLimit = 200; // Default = 50
 MaxDynamicDebris = 250; // Default = 100
 dayz_MapArea = 6000; // Default = 10000
 
+dayz_paraSpawn = false;
+spawnMarkerCount = 10; // Default: 4
+dayz_maxAnimals = 8; // Default: 8
+dayz_tameDogs = true;
+DynamicVehicleDamageLow = 0; // Default: 0
+DynamicVehicleDamageHigh = 100; // Default: 100
+
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 
