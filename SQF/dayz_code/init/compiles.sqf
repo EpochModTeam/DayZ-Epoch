@@ -268,7 +268,7 @@ if (!isDedicated) then {
 		_handled = false;
 
 		if (_dikCode in[0x58,0x57,0x44,0x43,0x42,0x41,0x40,0x3F,0x3E,0x3D,0x3C,0x3B,0x0B,0x0A,0x09,0x08,0x07,0x06,0x05]) then {
-					_handled = true;
+			_handled = true;
 		};
 	
 		if (_dikCode in actionKeys "MoveForward") exitWith {r_interrupt = true};
@@ -312,7 +312,7 @@ if (!isDedicated) then {
 		};
 		
 		if (_dikCode in actionKeys "ForceCommandingMode") then {_handled = true};
-		if (_dikCode in actionKeys "PushToTalk" and (diag_tickdiag_tickTime - dayz_lastCheckBit > 10)) then {
+		if (_dikCode in actionKeys "PushToTalk" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = diag_tickTime;
 			[player,50,true,(getPosATL player)] spawn player_alertZombies;
 		};
@@ -395,6 +395,20 @@ if (!isDedicated) then {
 		_handled
 	};
 	
+	player_setDate = {
+		private ["_setdatebool","_forEachIndex","_newdate","_n"];
+		_setdatebool = false;
+		_n = _this;
+		{
+			if (_x != (_n select _forEachIndex)) exitWith { 
+				_setdatebool = true;
+			}; 
+		} forEach date;
+		if (_setdatebool) then {
+			setDate _newdate;
+		};
+	};
+
 	player_serverModelChange = {
 		private["_object","_model"];
 		_object = _this select 0;

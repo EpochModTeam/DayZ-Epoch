@@ -91,4 +91,8 @@ player addWeapon "Loot";
 player addWeapon "Flare";
 
 sleep 0.1;
-deleteVehicle _old;
+
+if (!isNull _old) then {
+	// this should not be needed as player is deleted in player_switchModel?
+	deleteVehicle _old;
+};
