@@ -73,13 +73,14 @@ class Intro
 		"cadata",
 		"ca_animals2_sheep",
 		"dayz_code",
-		"dayz"
+		"dayz",
+		"caair2_uh1y"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters2",
 		"dayz_code",
-		"dayz",
+		"caair2_uh1y",
 		"chernarus"
 	};
 	randomSeed=4682243;
@@ -94,7 +95,7 @@ class Intro
 	};
 	class Groups
 	{
-		items=32;
+		items=31;
 		class Item0
 		{
 			side="CIV";
@@ -718,23 +719,6 @@ class Intro
 		};
 		class Item16
 		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5210.0571,0,7646.0366};
-					id=16;
-					side="WEST";
-					vehicle="UH1Wreck_DZ";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item17
-		{
 			side="CIV";
 			class Vehicles
 			{
@@ -742,7 +726,7 @@ class Intro
 				class Item0
 				{
 					position[]={5207.4028,333.79437,7622.3882};
-					id=20;
+					id=19;
 					side="CIV";
 					vehicle="z_soldier_pilot";
 					leader=1;
@@ -763,7 +747,7 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={5227.9648,329.65228,7659.29};
+					position[]={5227.3052,329.73154,7657.751};
 					type="CYCLE";
 					class Effects
 					{
@@ -772,7 +756,7 @@ class Intro
 				};
 			};
 		};
-		class Item18
+		class Item17
 		{
 			side="CIV";
 			class Vehicles
@@ -781,7 +765,7 @@ class Intro
 				class Item0
 				{
 					position[]={5206.0322,333.48984,7629.2871};
-					id=19;
+					id=18;
 					side="CIV";
 					vehicle="z_soldier_pilot";
 					leader=1;
@@ -802,7 +786,7 @@ class Intro
 				};
 				class Item1
 				{
-					position[]={5221.5,330.53357,7648.3267};
+					position[]={5220.8403,330.66727,7646.7876};
 					type="CYCLE";
 					class Effects
 					{
@@ -811,7 +795,7 @@ class Intro
 				};
 			};
 		};
-		class Item19
+		class Item18
 		{
 			side="CIV";
 			class Vehicles
@@ -821,7 +805,7 @@ class Intro
 				{
 					position[]={5204.2393,331.73276,7662.8403};
 					azimut=-173.96866;
-					id=17;
+					id=16;
 					side="CIV";
 					vehicle="z_soldier_pilot";
 					leader=1;
@@ -850,7 +834,7 @@ class Intro
 				};
 			};
 		};
-		class Item20
+		class Item19
 		{
 			side="CIV";
 			class Vehicles
@@ -859,7 +843,7 @@ class Intro
 				class Item0
 				{
 					position[]={5211.0615,333.18628,7624.001};
-					id=18;
+					id=17;
 					side="CIV";
 					vehicle="z_soldier_pilot";
 					leader=1;
@@ -871,7 +855,7 @@ class Intro
 				items=2;
 				class Item0
 				{
-					position[]={5222.2231,330.13312,7659.2412};
+					position[]={5221.5635,330.22226,7657.7021};
 					speed="LIMITED";
 					class Effects
 					{
@@ -889,7 +873,7 @@ class Intro
 				};
 			};
 		};
-		class Item21
+		class Item20
 		{
 			side="CIV";
 			class Vehicles
@@ -898,7 +882,7 @@ class Intro
 				class Item0
 				{
 					position[]={5218.3164,331.83609,7630.3311};
-					id=21;
+					id=20;
 					side="CIV";
 					vehicle="z_soldier_pilot";
 					leader=1;
@@ -928,7 +912,7 @@ class Intro
 				};
 			};
 		};
-		class Item22
+		class Item21
 		{
 			side="CIV";
 			class Vehicles
@@ -938,12 +922,12 @@ class Intro
 				{
 					position[]={5189.2949,333.11401,7671.0923};
 					azimut=140.44858;
-					id=22;
+					id=21;
 					side="CIV";
 					vehicle="z_soldier_pilot";
 					leader=1;
 					skill=0.60000002;
-					synchronizations[]={22};
+					synchronizations[]={21};
 				};
 			};
 			class Waypoints
@@ -969,7 +953,7 @@ class Intro
 				};
 			};
 		};
-		class Item23
+		class Item22
 		{
 			side="CIV";
 			class Vehicles
@@ -978,7 +962,7 @@ class Intro
 				class Item0
 				{
 					position[]={4600.0322,338.9549,9611.1768};
-					id=31;
+					id=30;
 					side="CIV";
 					vehicle="zZombie_new_Base";
 					leader=1;
@@ -1016,7 +1000,7 @@ class Intro
 				};
 			};
 		};
-		class Item24
+		class Item23
 		{
 			side="CIV";
 			class Vehicles
@@ -1026,7 +1010,7 @@ class Intro
 				{
 					position[]={4604.3633,338.95001,9605.8457};
 					azimut=-113.584;
-					id=23;
+					id=22;
 					side="CIV";
 					vehicle="z_villager2";
 					leader=1;
@@ -1072,7 +1056,7 @@ class Intro
 				};
 			};
 		};
-		class Item25
+		class Item24
 		{
 			side="CIV";
 			class Vehicles
@@ -1081,7 +1065,7 @@ class Intro
 				class Item0
 				{
 					position[]={4615.1289,338.93723,9580.209};
-					id=24;
+					id=23;
 					side="CIV";
 					vehicle="zZombie_new_Base";
 					leader=1;
@@ -1111,7 +1095,7 @@ class Intro
 				};
 			};
 		};
-		class Item26
+		class Item25
 		{
 			side="CIV";
 			class Vehicles
@@ -1120,7 +1104,7 @@ class Intro
 				class Item0
 				{
 					position[]={4643.1641,338.99911,9601.1494};
-					id=25;
+					id=24;
 					side="CIV";
 					vehicle="z_villager3";
 					leader=1;
@@ -1166,7 +1150,7 @@ class Intro
 				};
 			};
 		};
-		class Item27
+		class Item26
 		{
 			side="CIV";
 			class Vehicles
@@ -1176,7 +1160,7 @@ class Intro
 				{
 					position[]={4654.2002,339.01559,9579.2568};
 					azimut=55;
-					id=26;
+					id=25;
 					side="CIV";
 					vehicle="z_soldier_heavy";
 					leader=1;
@@ -1214,7 +1198,7 @@ class Intro
 				};
 			};
 		};
-		class Item28
+		class Item27
 		{
 			side="CIV";
 			class Vehicles
@@ -1223,7 +1207,7 @@ class Intro
 				class Item0
 				{
 					position[]={4616.7139,338.95935,9592.0107};
-					id=27;
+					id=26;
 					side="CIV";
 					vehicle="z_villager1";
 					leader=1;
@@ -1261,7 +1245,7 @@ class Intro
 				};
 			};
 		};
-		class Item29
+		class Item28
 		{
 			side="CIV";
 			class Vehicles
@@ -1270,7 +1254,7 @@ class Intro
 				class Item0
 				{
 					position[]={4623.8179,338.99677,9605.085};
-					id=28;
+					id=27;
 					side="CIV";
 					vehicle="z_villager2";
 					leader=1;
@@ -1300,7 +1284,7 @@ class Intro
 				};
 			};
 		};
-		class Item30
+		class Item29
 		{
 			side="CIV";
 			class Vehicles
@@ -1309,7 +1293,7 @@ class Intro
 				class Item0
 				{
 					position[]={4652.6494,339.01355,9575.4443};
-					id=29;
+					id=28;
 					side="CIV";
 					vehicle="z_villager3";
 					leader=1;
@@ -1339,7 +1323,7 @@ class Intro
 				};
 			};
 		};
-		class Item31
+		class Item30
 		{
 			side="CIV";
 			class Vehicles
@@ -1348,7 +1332,7 @@ class Intro
 				class Item0
 				{
 					position[]={4611.2588,338.95685,9591.377};
-					id=30;
+					id=29;
 					side="CIV";
 					vehicle="zZombie_new_Base";
 					leader=1;
@@ -1377,6 +1361,18 @@ class Intro
 					showWP="NEVER";
 				};
 			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5205.9297,332.242,7647.9438};
+			id=31;
+			side="EMPTY";
+			vehicle="UH1Wreck";
+			skill=0.60000002;
 		};
 	};
 };
