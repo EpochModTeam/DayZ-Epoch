@@ -11,7 +11,7 @@ _isOk = false;
 	if(!_isOk) then {
 		_isOk = _cTarget isKindOf _x;
 	};
-} forEach ["LandVehicle","Air"];
+} forEach ["LandVehicle","Air", "Ship"];
 
 if((locked _cTarget) and _isOk and (((vehicle player) distance _cTarget) < 12)) then {
 	cutText ["Cannot access gear in a locked vehicle." , "PLAIN DOWN"];
