@@ -7,8 +7,7 @@ class _prefix_0
 		{
 			"oz_is_objects",
 			"usec_rig_a",
-			"osshdy",
-			"sigisolda"
+			"osshdy"
 		};
 	};
 };
@@ -575,18 +574,6 @@ class _vehicle_101
 		POSITION="[14623.005, 18862.242, -1.0889961]";
 		TYPE="Land_Nav_Boathouse_PierL";
 		AZIMUT="128.90364";
-		PARENT="";
-	};
-};
-class _vehicle_103
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[14951.536, 18601.258, -0.20687616]";
-		TYPE="sigisolda2";
-		AZIMUT="-45.983616";
-		LOCK="LOCKED";
 		PARENT="";
 	};
 };

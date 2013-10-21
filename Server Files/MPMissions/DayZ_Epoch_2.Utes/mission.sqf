@@ -304,16 +304,6 @@ if (true) then
   _this setPos [4026.8149, 2897.3687, 5.9127808e-005];
 };
 
-_vehicle_253 = objNull;
-if (true) then
-{
-  _this = createVehicle ["sigisolda6", [3994.8784, 2758.1152, 0.21266335], [], 0, "CAN_COLLIDE"];
-  _vehicle_253 = _this;
-  _this setDir -50.014053;
-  _this setVehicleLock "LOCKED";
-  _this setPos [3994.8784, 2758.1152, 0.21266335];
-};
-
 _vehicle_255 = objNull;
 if (true) then
 {

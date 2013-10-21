@@ -3,7 +3,7 @@ class _prefix_0
 	objectType="prefix";
 	class Arguments
 	{
-		ADDON="sigisolda";
+		ADDON="";
 	};
 };
 class _center_0
@@ -461,18 +461,6 @@ class _vehicle_243
 		POSITION="[4026.8149, 2897.3687, 5.9127808e-005]";
 		TYPE="Hedgehog_EP1";
 		AZIMUT="264.90128";
-		PARENT="";
-	};
-};
-class _vehicle_253
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[3994.8784, 2758.1152, 0.21266335]";
-		TYPE="sigisolda6";
-		AZIMUT="-50.014053";
-		LOCK="LOCKED";
 		PARENT="";
 	};
 };

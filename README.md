@@ -16,7 +16,6 @@ Included Custom Addons
 --------------------------
 * AutoGyro - by CSJ http://www.armaholic.com/page.php?id=2359
 * Taxi by [GLT]Myke http://www.armaholic.com/page.php?id=12289
-* Sigisolda by Gnat http://www.armaholic.com/page.php?id=13417
 * SUV Colors by Python.au http://www.armaholic.com/page.php?id=17176
 * R3F Realism by http://www.team-r3f.org/
 * Modern Civilian vehicles by vilas http://www.armaholic.com/page.php?id=17447
