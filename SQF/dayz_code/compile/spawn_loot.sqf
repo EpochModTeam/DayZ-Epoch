@@ -19,7 +19,7 @@ switch (_iClass) do
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
 		_qty = 0;
-		_max = 1 + ceil(random 2);
+		_max = 1 + round(random 2);
 		while {_qty < _max} do
 		{
 			_tQty = 1 + round(random 1);
