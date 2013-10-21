@@ -26,6 +26,8 @@ _findNearestPole = [];
 
 _IsNearPlot = count (_findNearestPole);
 
+_canBuildOnPlot = false;
+
 if(_IsNearPlot == 0) then {
 	_canBuildOnPlot = true;
 } else {
