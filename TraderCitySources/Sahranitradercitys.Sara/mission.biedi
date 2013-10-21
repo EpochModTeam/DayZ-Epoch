@@ -5,7 +5,6 @@ class _prefix_0
 	{
 		ADDON[]=
 		{
-			"sigisolda",
 			"map_eu"
 		};
 	};
@@ -465,19 +464,6 @@ class _vehicle_302
 		POSITION="[12577.562, 8347.9189, 0.093233757]";
 		TYPE="Land_Cabinet_EP1";
 		AZIMUT="88.354218";
-		PARENT="";
-	};
-};
-class _vehicle_379
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[14628.017, 7680.0073, 0.0062988698]";
-		TYPE="sigisolda6";
-		AZIMUT="-80.566795";
-		HEALTH="0.44294706";
-		LOCK="LOCKED";
 		PARENT="";
 	};
 };

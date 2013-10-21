@@ -18,7 +18,6 @@ class Mission
 		"ind_tank",
 		"camisc_e",
 		"glt_m300t",
-		"sigisolda",
 		"suv_col",
 		"csj_gyroac"
 	};
