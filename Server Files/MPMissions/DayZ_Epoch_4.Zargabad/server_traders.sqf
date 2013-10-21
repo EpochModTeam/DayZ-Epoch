@@ -4,7 +4,7 @@ serverTraders = ["TK_CIV_Woman02_EP1","TK_CIV_Takistani05_EP1","TK_CIV_Takistani
 // Farhah's General Supplies
 menu_TK_CIV_Woman02_EP1 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Akwhell's Vehicles
@@ -46,7 +46,7 @@ menu_Dr_Hladik_EP1 = [
 // Heather's General Supplies
 menu_CIV_EuroWoman01_EP1 = [
 	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
 // Greg's Ammunition

@@ -87,7 +87,7 @@ menu_CZ_Special_Forces_MG_DES_EP1 = [
 // Melly's General Supplies
 menu_Damsel5 = [
 	[["Backpacks",688],["Clothes",689],["Cooked Meats",690],["Drinks",691],["Packaged Food",692]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Jim's Repair/Building Supplies
@@ -105,7 +105,7 @@ menu_UN_CDF_Soldier_AAT_EP1 = [
 // Bertha's General Supplies
 menu_RU_Farmwife1 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Rocky's Parts/Building Supplies
@@ -135,7 +135,7 @@ menu_USMC_Soldier_TL = [
 // Plancia General Store
 menu_ValentinaVictim = [
 	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Planica Parts Vendor
