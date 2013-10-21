@@ -12,14 +12,24 @@ class DZE_Base_Object : All {
 	ladders[] = {};
 	vehicleClass =  "";
 	displayName = "";
-	coefInside = 1;
-	coefInsideHeur = 0.25;
 	mapSize = 7.5;
 	animated = true;
 	armor = 200;
 	destrType = "DestructBuilding";
 	damageResistance = 0.004;
-
+	// static 
+	reversed = 0;
+	hasDriver = 0;
+	accuracy = 0.1;
+	cost = 1000;
+	weapons[] = {};
+	magazines[] = {};
+	irTarget = 0;
+	type = 1;
+	threat[] = {0,0,0};
+	maxSpeed = 0;
+	coefInside = 4;
+	coefInsideHeur = 4;
 	class DestructionEffects {
 		class Sound {
 			simulation = "sound";
