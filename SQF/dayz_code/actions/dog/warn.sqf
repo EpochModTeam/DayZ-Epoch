@@ -10,7 +10,8 @@ s_player_warndog = -1;
 _handle setFSMVariable ["_watchDog",_watchDog];
 
 _warn = {
-	_handle = _this select 0;
+	private ["_watchDog","_dog","_nearby","_senseSkill","_handle"];
+    _handle = _this select 0;
 	while {_watchDog and alive _dog} do {
 		_watchDog = _handle getFSMVariable "_watchDog";
 		_senseSkill = _handle getFSMVariable "_senseSkill";

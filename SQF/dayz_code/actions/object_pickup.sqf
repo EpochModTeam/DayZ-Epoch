@@ -1,4 +1,4 @@
-private ["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_broken","_playerNear","_obj","_qty"];
+private ["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_playerNear","_obj","_qty"];
 
 // Exit if player zombie
 if(player isKindOf "PZombie_VB") exitWith {};

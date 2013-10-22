@@ -1,11 +1,10 @@
-private ["_t1","_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_radius","_position","_markerstr","_markerstr1","_markerstr2","_markerstr3","_nearByObj","_handle","_looted","_cleared","_zombied","_config","_canLoot","_dis","_players","_spawnZombies","_nearby","_nearbyCount"];
+private ["_type","_inVehicle","_dateNow","_maxWildZombies","_age","_radius","_position","_markerstr","_markerstr1","_markerstr2","_markerstr3","_nearByObj","_handle","_looted","_cleared","_zombied","_config","_canLoot","_dis","_players","_nearby","_nearbyCount","_onTheMove"];
 //_t1 = diag_tickTime;
 
 _type = _this select 0;
 _inVehicle = (vehicle player != player);
 _onTheMove = (speed (vehicle player) > 10);
 _dateNow = (DateToNumber date);
-_maxZombies = dayz_maxLocalZombies;
 _maxWildZombies = 3;
 _age = -1;
 _radius = 200; 

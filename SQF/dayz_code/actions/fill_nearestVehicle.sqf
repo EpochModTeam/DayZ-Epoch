@@ -1,4 +1,4 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
+private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_isVehicle","_configSrcVeh","_capacitySrc","_nameTextSrc","_isFillok","_curFuelSrc","_newFuelSrc","_vehicleSrc"];
 
 if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
 TradeInprogress = true;
@@ -12,8 +12,8 @@ if(!(isNull _vehicleSrc)) then {
 	_isVehicle = ((_vehicleSrc isKindOf "AllVehicles") and !(_vehicleSrc isKindOf "Man"));
 	// If fuel source is vehicle get actual capacity
 	_configSrcVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicleSrc);
-	_capacitySrc = 	getNumber(_configVeh >> "fuelCapacity");
-	_nameTextSrc = 	getText(_configVeh >> "displayName");
+	_capacitySrc = 	getNumber(_configSrcVeh >> "fuelCapacity");
+	_nameTextSrc = 	getText(_configSrcVeh >> "displayName");
 };
 
 // Get all nearby vehicles within 30m

@@ -1,4 +1,4 @@
-private["_t1","_obj","_type","_config","_canLoot","_unitTypes","_min","_max","_num","_zombieChance","_rnd","_noPlayerNear","_position","_clean","_positions","_iPos","_nearBy","_nearByPlayer"];
+private ["_obj","_type","_config","_canLoot","_unitTypes","_min","_max","_num","_zombieChance","_rnd","_position","_positions","_iPos","_nearBy","_noOneNear"];
 //_t1 = diag_tickTime;
 
 if (dayz_maxCurrentZeds > dayz_maxZeds) exitwith {};

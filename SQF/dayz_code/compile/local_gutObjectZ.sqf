@@ -1,4 +1,4 @@
-private ["_zombiebody","_ehLoc"];
+private ["_zombiebody"];
 _zombiebody = _this select 0;
 // _qty = _this select 1;
 

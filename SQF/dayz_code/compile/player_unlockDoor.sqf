@@ -3,7 +3,7 @@
 	Usage: [_obj] call player_unlockDoor;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_ok"];
+private ["_display","_obj","_objectCharacterID"];
 
 if(!isNull dayz_selectedDoor) then {
 

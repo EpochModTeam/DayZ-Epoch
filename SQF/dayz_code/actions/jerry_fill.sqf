@@ -1,4 +1,4 @@
-private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx"];
+private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx","_displayName","_fuelCans"];
 
 if(TradeInprogress) exitWith { cutText ["Fill Jerry already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

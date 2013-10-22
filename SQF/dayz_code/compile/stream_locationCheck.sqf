@@ -1,5 +1,6 @@
 //diag_log "running location check...";
-{private ["_location","_distCfg","_configClass","_distAct","_config","_position"];
+private ["_config","_locHdr","_position","_location","_distCfg","_configClass","_distAct"];
+{
 	_location = 	_x select 0;
 	_distCfg = 		(_x select 2) + 200;
 	_configClass =  _x select 1;

@@ -1,4 +1,4 @@
-private["_animalbody","_qty","_rawfoodtype","_ehLoc"];
+private ["_animalbody","_qty","_rawfoodtype"];
 _animalbody = _this select 0;
 
 if (local _animalbody) then {

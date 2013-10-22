@@ -1,4 +1,4 @@
-private ["_text","_rawmeat","_cookedmeat","_meat","_meatcooked","_qty","_started","_finished","_animState","_isMedic","_removed","_dis","_sfx"];
+private ["_text","_rawmeat","_cookedmeat","_meat","_meatcooked","_qty","_started","_finished","_animState","_isMedic","_removed","_dis","_sfx","_textraw"];
 
 if(TradeInprogress) exitWith { cutText ["Cooking already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

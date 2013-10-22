@@ -1,4 +1,4 @@
-private["_vehicle"];
+private ["_vehicle","_removed"];
 _vehicle = _this select 3;
 
 if(TradeInprogress) exitWith { cutText ["Hotwire vehicle already in progress." , "PLAIN DOWN"]; };

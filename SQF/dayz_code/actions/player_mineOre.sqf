@@ -3,7 +3,7 @@
 	Usage: spawn player_mineOre;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_objInfo","_lenInfo","_started","_finished","_animState","_isMedic","_proceed","_counter","_itemOut","_countOut","_rock","_distance2d","_rockBox","_rocks","_findNearestRock"];
+private ["_isOk","_objName","_started","_finished","_animState","_isMedic","_proceed","_counter","_itemOut","_countOut","_rock","_distance2d","_rockBox","_rocks","_findNearestRock","_item","_rnd"];
 
 if(TradeInprogress) exitWith { cutText ["\n\nOre Mining already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

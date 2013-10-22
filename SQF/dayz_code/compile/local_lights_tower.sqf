@@ -1,4 +1,4 @@
-/*
+./*
 	DayZ Epoch Lighting System - Illuminant Tower Lights
 	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com or vbawol@veteranbastards.com.
 */

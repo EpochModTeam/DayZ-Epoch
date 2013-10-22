@@ -1,4 +1,4 @@
-private ["_buy","_number"];
+private ["_ok"];
 dayz_selectedVault = _this select 3;
 dayz_combination = "";
 

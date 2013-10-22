@@ -1,3 +1,4 @@
+private ["_cTarget","_isOk","_display","_inVehicle"];
 disableSerialization;
 _display = (_this select 0);
 _inVehicle = (vehicle player) != player;

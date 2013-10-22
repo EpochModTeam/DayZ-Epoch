@@ -3,7 +3,7 @@
 	Usage: spawn player_chopWood;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_objInfo","_lenInfo","_started","_finished","_animState","_isMedic","_proceed","_counter","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree"];
+private ["_isOk","_objName","_finished","_proceed","_counter","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree","_finishedTime","_item"];
 
 if(TradeInprogress) exitWith { cutText ["\n\nHarvest wood already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

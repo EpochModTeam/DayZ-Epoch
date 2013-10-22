@@ -5,7 +5,7 @@
 	To Do - Light poles - Automatic lighting for bases (with or without generator) - Menu action to switch off house and tower lights - Add sparks and electrical sound - Add slight randomness to 'reliable' light source - Try and use ASC_EU lights for map based streetlights so they have bulbs and look better - Towers within 20m of 3 house light sources may not always light up - Add Custom (enterable) buildings and items (water pump). Maybe create brighter house lightpoints at further distances to compensate for engine limits.
 	Wishlist - Detect weather to make lights fail in thunder :)
 */
-private ["_sunrise","_slpTime","_lpRange","_hsRange","_nrGen","_genCount","_rndLightsIn","_rndLightsOut","_genClass","_doHouse","_doTower","_doLight","_fnHr","_stHr","_plyr","_hndlDelLights","_hndlFailLights","_ndGen","_trgRng","_rngPlyr","_lightTrig","_lmpCol"];
+private ["_sunrise","_slpTime","_lpRange","_hsRange","_nrGen","_genCount","_rndLightsIn","_rndLightsOut","_genClass","_doHouse","_doTower","_doLight","_fnHr","_stHr","_plyr","_ndGen","_trgRng","_rngPlyr","_lightTrig","_lmpCol"];
 
 //Start / Stop Time
 _stHr = _this select 0;

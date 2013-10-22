@@ -1,4 +1,4 @@
-private ["_onLadder","_itemorignal","_hasdrinkitem","_hasoutput","_config","_text","_sfx","_dis","_itemtodrop","_nearByPile","_item","_display"];
+private ["_onLadder","_itemorignal","_hasdrinkitem","_hasoutput","_config","_text","_sfx","_dis","_itemtodrop","_nearByPile","_item","_display","_invehicle"];
 
 disableserialization;
 call gear_ui_init;

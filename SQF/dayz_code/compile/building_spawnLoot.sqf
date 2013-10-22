@@ -1,4 +1,4 @@
-private ["_obj","_type","_config","_positions","_iPos","_nearBy","_itemType","_itemTypes","_lootChance","_weights","_cntWeights","_index"];
+private ["_obj","_type","_config","_positions","_iPos","_nearBy","_itemType","_itemTypes","_lootChance","_weights","_cntWeights","_index","_itemTypesSmall","_positionsSmall"];
 //_t1 = diag_tickTime;
 
 _obj = 			_this select 0;

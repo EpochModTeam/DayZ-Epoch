@@ -1,4 +1,4 @@
-private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finished","_animState","_isMedic","_array","_hasHarvested","_hasKnifeBlunt","_humanity"];
+private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finished","_animState","_isMedic","_hasHarvested","_hasKnifeBlunt","_humanity"];
 
 if(TradeInprogress) exitWith { cutText ["Gutting zombie already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;

@@ -2,8 +2,7 @@
 	DayZ Epoch Lighting System - House Lights
 	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com or vbawol@veteranbastards.com.
 */
-private ["_objLightPoint","_pos","_objHouse","_dir","_rng","_lpDist","_nrstTrig","_rndLights","_lmpCol","_hsAnimPer","_brtns","_lightPcnt","_hsLPDist"];
-private ["_base","_mLights","_mLightsBlink","_hsTime","_hsCount","_litCount","_hsAnimPer2","_chnGCount","_plLogin","_hcName"];
+private ["_objLightPoint","_pos","_objHouse","_dir","_rng","_lpDist","_nrstTrig","_rndLights","_lmpCol","_hsAnimPer","_brtns","_lightPcnt","_hsLPDist","_hsTime","_hsCount","_litCount","_hsAnimPer2","_chnGCount","_debug"];
 _hsCount = 0;
 _litCount = 0;
 _chnGCount = 0;
