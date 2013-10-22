@@ -8,6 +8,7 @@
 Start drop_body.sqf
 */
 
+private ["_dragee","_unit"];
 _dragee	= _this select 3; 
 
 player removeAction NORRN_dropAction;

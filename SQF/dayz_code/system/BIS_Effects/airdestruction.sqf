@@ -1,4 +1,5 @@
 
+private ["_fl","_sm","_expl","_dr","_tv","_i","_wave","_splash","_velz","_v","_int","_t","_pos"];
 _v=_this select 0;
 _int = (fuel _v)*(8+random 2);
 _t=time;

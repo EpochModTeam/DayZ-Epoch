@@ -748,7 +748,7 @@ class Turrets : Turrets
 	  "PKT"
 	};
 	magazines[] = {
-	  "100Rnd_762x54_PK",
+	  "100Rnd_762x54_PK"
 	};
 	soundServo[] = {
 	};

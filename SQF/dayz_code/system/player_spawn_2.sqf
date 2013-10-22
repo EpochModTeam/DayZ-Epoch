@@ -1,4 +1,4 @@
-private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_timeOut","_result","_factor","_randomSpot","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_bloodChanged","_id","_messTimer","_display","_control","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_tempPos","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_myPos","_lastPos","_debug","_saveTime","_maxDistanceTravel","_maxDistanceDebug","_maxDistanceZeroPos","_maxDistancePlayer","_maxDistanceVehicle"];
+private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_timeOut","_result","_factor","_randomSpot","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_bloodChanged","_id","_messTimer","_display","_control","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_tempPos","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_myPos","_lastPos","_debug","_saveTime","_maxDistanceTravel","_maxDistanceDebug","_maxDistanceZeroPos","_maxDistancePlayer","_maxDistanceVehicle","_isPZombie"];
 disableSerialization;
 _timeOut = 	0;
 _messTimer = 0;

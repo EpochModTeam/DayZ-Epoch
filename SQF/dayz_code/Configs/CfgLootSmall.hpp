@@ -368,7 +368,7 @@ class CfgLootSmall {
 			0.04,
 			0.01,
 			0.04,
-			0.01,
+			0.01
 		}
 	};
 	policeman[] = {
@@ -450,7 +450,7 @@ class CfgLootSmall {
 			"Skin_Rocker4_DZ",
 			"Skin_SurvivorW3_DZ",
 			"Skin_SurvivorWpink_DZ",
-			"Skin_SurvivorWurban_DZ",
+			"Skin_SurvivorWurban_DZ"
 			//"Skin_SurvivorWsequisha_DZ",
 			//"Skin_SurvivorWsequishaD_DZ",
 		},
@@ -465,7 +465,7 @@ class CfgLootSmall {
 			0.08,
 			0.09,
 			0.09,
-			0.07,
+			0.07
 			//0.04,
 			//0.02
 		}
@@ -518,7 +518,7 @@ class CfgLootSmall {
 			"Skin_GUE_Soldier_Sniper_DZ",
 			"Skin_GUE_Soldier_Crew_DZ",
 			"Skin_GUE_Soldier_CO_DZ",
-			"Skin_GUE_Soldier_2_DZ",
+			"Skin_GUE_Soldier_2_DZ"
 		},
 		{
 			0.1,

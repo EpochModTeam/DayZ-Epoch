@@ -1,3 +1,5 @@
+
+private ["_dr","_pos","_xv","_yv","_dir","_Crater","_speed","_velz","_tv","_zv","_shards","_i","_smoke","_fire","_dirt","_int","_t","_v"];
 _int = _this select 1;
 _t=_this select 2;
 _pos=getpos _v;

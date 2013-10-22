@@ -3,7 +3,7 @@ ASSIGN DAMAGE TO A UNIT
 - Function Vehicle_HandleDamage
 - [unit, selectionName, damage, source, projectile] call Vehicle_HandleDamage;
 ************************************************************/
-private["_unit","_selection","_strH","_dam","_total","_damage","_needUpdate"];
+private ["_unit","_selection","_strH","_dam","_total","_needUpdate"];
 _unit = _this select 0;
 _selection = _this select 1;
 _total = _this select 2;

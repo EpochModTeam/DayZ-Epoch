@@ -1,4 +1,4 @@
-private["_agent","_target","_targets","_targetDis","_c","_man","_manDis","_targets","_agent","_agentheight","_nearEnts","_rnd","_assigned","_range","_objects"];
+private ["_agent","_target","_targets","_targetDis","_man","_manDis","_range","_objects","_refobj"];
 _agent = _this;
 _target = objNull;
 /*

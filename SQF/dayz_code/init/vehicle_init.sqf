@@ -3,7 +3,7 @@ ASSIGN DAMAGE HANDLER TO A UNIT
 - Function set_EH
 - unit call set_EH;
 ************************************************************/
-private["_unit","_eh1","_eh2","_dir","_location"];
+private ["_unit","_eh1","_eh2","_dir","_location","_eh3","_eh4","_eh5","_eh6"];
 _unit = _this;
 _dir = getdir _this;
 _location = getPosATL _this;

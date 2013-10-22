@@ -9,7 +9,7 @@
 Start carry.sqf
 */
 
-private ["_unit","_dragee","_pos","_dir"];
+private ["_unit","_dragee","_anim_name","_can_be_revived","_can_be_revived_2"];
 _dragee				= _this select 3;
 _can_be_revived 	= NORRN_revive_array select 20;
 _can_be_revived_2 	= NORRN_revive_array select 21;

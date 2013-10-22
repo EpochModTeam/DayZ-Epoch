@@ -1,4 +1,4 @@
-private["_group","_target","_targetMen","_targetDis","_c","_man","_manDis","_targets","_lead","_leadheight","_nearEnts","_rnd","_assigned"];
+private ["_group","_target","_targetMen","_targetDis","_c","_man","_manDis","_targets","_lead","_rnd","_assigned","_fires","_range"];
 _group = _this;
 _target = objNull;
 _lead = leader _group;

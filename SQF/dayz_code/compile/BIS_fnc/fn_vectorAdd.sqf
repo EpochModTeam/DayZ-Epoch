@@ -14,7 +14,7 @@ Returns a vector that is the sum of <vector1> and <vector2>.
 
 ************************************************************/
 
-private["_p1","_p2","_return"];
+private ["_p1","_p2","_return","_c"];
 
 _p1 = _this select 0;
 _p2 = _this select 1;

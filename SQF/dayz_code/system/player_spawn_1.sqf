@@ -1,4 +1,4 @@
-private["_handle","_body","_cursor","_delMe"];
+private ["_handle","_cursor","_delMe","_first","_town","_day","_world","_nearestCity"];
 while {true} do {
 	_handle = [] spawn player_animalCheck;
 	waitUntil{scriptDone _handle};

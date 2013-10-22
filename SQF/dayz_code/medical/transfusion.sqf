@@ -1,4 +1,4 @@
-private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","_lastused","_text"];
+private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","_lastused"];
 // bleed.sqf
 _unit = (_this select 3) select 0;
 //_lowBlood = 	_unit getVariable ["USEC_lowBlood", false];

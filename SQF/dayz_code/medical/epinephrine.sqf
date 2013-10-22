@@ -1,4 +1,6 @@
 // bleed.sqf
+
+private ["_unit","_isDead"];
 _unit = (_this select 3) select 0;
 _isDead = _unit getVariable["USEC_isDead",false];
 call fnc_usec_medic_removeActions;

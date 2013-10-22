@@ -1,4 +1,4 @@
-private ["_v","_int","_t"];
+private ["_v","_int","_t","_b"];
 _v=_this select 0;
 if (_v iskindof "helicopter" || _v iskindof "plane")
 	then

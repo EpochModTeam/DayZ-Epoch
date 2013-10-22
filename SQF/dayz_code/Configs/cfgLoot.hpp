@@ -495,7 +495,7 @@ class CfgLoot {
 			"Skin_Rocker4_DZ",
 			"Skin_SurvivorW3_DZ",
 			"Skin_SurvivorWpink_DZ",
-			"Skin_SurvivorWurban_DZ",
+			"Skin_SurvivorWurban_DZ"
 			//"Skin_SurvivorWsequisha_DZ",
 			//"Skin_SurvivorWsequishaD_DZ",
 		},
@@ -510,7 +510,7 @@ class CfgLoot {
 			0.08,
 			0.09,
 			0.09,
-			0.07,
+			0.07
 			//0.04,
 			//0.02
 		}
@@ -563,7 +563,7 @@ class CfgLoot {
 			"Skin_GUE_Soldier_Sniper_DZ",
 			"Skin_GUE_Soldier_Crew_DZ",
 			"Skin_GUE_Soldier_CO_DZ",
-			"Skin_GUE_Soldier_2_DZ",
+			"Skin_GUE_Soldier_2_DZ"
 		},
 		{
 			0.1,
@@ -587,12 +587,12 @@ class CfgLoot {
 		{
 			"ItemTentOld",
 			"ItemTentDomed",
-			"ItemTentDomed2",
+			"ItemTentDomed2"
 		},
 		{
 			0.34,
 			0.33,
-			0.33,
+			0.33
 		}
 	};
 	backpacks[] = {
@@ -602,7 +602,7 @@ class CfgLoot {
 			"DZ_TerminalPack_EP1", // 1-15
 			"DZ_ALICE_Pack_EP1", // 2-20
 			"DZ_TK_Assault_Pack_EP1", // 2-22
-			"DZ_CompactPack_EP1", // 2-25
+			"DZ_CompactPack_EP1" // 2-25
 		},
 		{
 			0.22,
@@ -610,7 +610,7 @@ class CfgLoot {
 			0.18,
 			0.16,
 			0.13,
-			0.11,
+			0.11
 		}
 	};
 	militarybackpacks[] = {
@@ -626,7 +626,7 @@ class CfgLoot {
 			0.25,
 			0.20,
 			0.15,
-			0.10,
+			0.10
 		}
 	};
 };

@@ -9,7 +9,7 @@
 Start drag.sqf
 */
 
-private ["_unit","_dragee","_pos","_dir"];
+private ["_unit","_dragee","_unconscious"];
 _dragee				= _this select 3;
 _unit  				= player;
 _unconscious = 		_dragee getVariable ["NORRN_unconscious", false];

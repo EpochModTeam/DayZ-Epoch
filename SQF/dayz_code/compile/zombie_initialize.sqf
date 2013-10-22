@@ -1,4 +1,4 @@
-private["_unit"];
+private ["_unit","_position"];
 _unit = _this select 0;
 if (isServer) then {
 	_unit addEventHandler ["local", {_this call zombie_findOwner}];

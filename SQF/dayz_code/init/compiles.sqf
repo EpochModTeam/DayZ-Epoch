@@ -3,9 +3,6 @@
 */
 //Player only
 if (!isDedicated) then {
-	_config = 	configFile >> "CfgLoot";
-	_config1 = 	configFile >> "CfgMagazines" >> "FoodEdible";
-	_config2 = 	configFile >> "CfgWeapons" >> "Loot";
 
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 

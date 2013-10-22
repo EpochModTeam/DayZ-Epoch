@@ -1,4 +1,4 @@
-private["_hasMeds","_med","_effect"];
+private ["_hasMeds","_med"];
 _med = "ItemAntibiotic";
 _hasMeds = _med in magazines player;
 if (_hasMeds) then {

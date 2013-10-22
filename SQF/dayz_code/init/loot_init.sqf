@@ -1,4 +1,4 @@
-private["_cfgCount","_config","_i","_itemChances","_itemCount","_weighted","_j","_weight","_l","_k","_type","_canZombie","_canLoot"];
+private ["_config","_itemChances","_itemCount","_weighted","_j","_weight","_type","_canZombie","_canLoot","_classname","_itemChancesSmall","_itemCountSmall"];
 dayz_CBLChances = [];
 dayz_CBLBase = [];
 

@@ -1,4 +1,4 @@
-private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
+private ["_position","_doLoiter","_unitTypes","_loot","_array","_agent","_type","_radius","_method","_myDest","_newDest","_lootType","_player","_isAlive","_rnd","_id"];
 _player = _this select 0;
 _unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 _doLoiter = 	true;

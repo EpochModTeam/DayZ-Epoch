@@ -1,7 +1,7 @@
 // Load_wounded.sqf
 // OCTOBER 2010 - norrin
 
-private ["_wounded","_vcl","_group"];
+private ["_wounded","_vcl"];
 
 _wounded 	= _this select 0;
 

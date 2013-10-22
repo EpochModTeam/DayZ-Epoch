@@ -1,4 +1,4 @@
-private["_building","_GroupMarker","_list","_nearby","_run"];
+private ["_building","_GroupMarker","_nearby","_run","_items"];
 _building = 		_this select 0;
 _GroupMarker = 		_this select 1;
 _items = 			_this select 2;
@@ -14,6 +14,5 @@ while {_run} do {
 	sleep 5;
 };
 {deleteVehicle _x;} forEach _items;
-
 
 _building setVariable ["looted",(DateToNumber date),true];

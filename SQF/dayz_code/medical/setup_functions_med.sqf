@@ -4,7 +4,7 @@ fnc_usec_damageHandle = {
 	- Function
 	- [unit] call fnc_usec_damageHandle;
 	************************************************************/
-	private["_unit","_eh"];
+	private ["_unit"];
 	_unit = _this select 0;
 	
 	// Remove handle damage override
@@ -16,6 +16,8 @@ fnc_usec_damageHandle = {
 };
 
 fnc_usec_pitchWhine = {
+	
+	private ["_visual","_sound"];
 	_visual = _this select 0;
 	_sound = _this select 1;
 	//affect the player
@@ -33,14 +35,12 @@ fnc_usec_pitchWhine = {
 };
 
 fnc_usec_damageUnconscious = {
-	private["_unit","_damage"];
+	private ["_unit","_damage","_inVehicle"];
 	_unit = _this select 0;
 	_damage = _this select 1;
 	_inVehicle = (vehicle _unit != _unit);
 	if (_unit == player) then {
-		r_player_timeout = round(((random 2) * _damage) * 40);
-		if (_type == 1) then {r_player_timeout = r_player_timeout + 90};
-		if (_type == 2) then {r_player_timeout = r_player_timeout + 60};
+		r_player_timeout = round((((random 2) max 0.1) * _damage) * 20);
 		r_player_unconscious = true;
 		player setVariable["medForceUpdate",true,true];
 		player setVariable ["unconsciousTime", r_player_timeout, true];
@@ -104,6 +104,8 @@ fnc_usec_damageGetWound = {
 };
 
 fnc_usec_medic_removeActions = {
+	
+	private ["_obj"];
 	_obj = player;
 	{
 		_obj = _x;
@@ -131,7 +133,7 @@ fnc_med_publicBlood = {
 };
 
 fnc_usec_playerBleed = {
-	private["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime"];
+	private ["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime","_id"];
 	_bleedTime = 400;		//seconds
 	_bleedPerSec = (r_player_bloodTotal / _bleedTime);
 	_total = r_player_bloodTotal;
@@ -170,7 +172,7 @@ fnc_usec_damageBleed = {
 	- Function
 	- [_unit, _wound, _injury] call fnc_usec_damageBleed;
 	************************************************************/
-		private["_unit","_wound","_injury","_modelPos","_point","_source"];
+		private ["_unit","_wound","_injury","_modelPos","_point","_source","_rndX"];
 		_unit = _this select 0;
 		_wound = _this select 1;
 		_injury = _this select 2;

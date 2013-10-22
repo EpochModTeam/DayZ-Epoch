@@ -1,6 +1,6 @@
 // bleed.sqf
 
-private ["_id","_unit"];
+private ["_id","_unit","_num_removed"];
 _unit = (_this select 3) select 0;
 
 
