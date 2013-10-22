@@ -140,7 +140,7 @@ if ((count _upgrade) > 0) then {
 		player reveal _object;
 			
 	} else {
-		cutText [format["\n\n%1 of %2 could not be added to your inventory. (not enough room?)", _i,_itemOut], "PLAIN DOWN"];
+		cutText [format["\n\n%1 of %2 could not be added to your inventory. (not enough room?)", _i,(getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName"))], "PLAIN DOWN"];
 		{
 			[player,(_x select 0),(_x select 1)] call BIS_fnc_invRemove;
 		} forEach _addedItems;

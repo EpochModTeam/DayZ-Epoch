@@ -45,11 +45,17 @@ while {_isOk} do {
 		_inVehicle = (_vehicle != player);
 		if(_inVehicle) then {
 			if(_vehicle isKindOf "Ship") then {
-				_rnd = 25;
+				// higher chance to catch if water is deeper than 25m
+				if(((getPosATL _vehicle) select 2) > 25) then {
+					_rnd = 12;
+				} else {
+					_rnd = 25;
+				};
 			};
 		};
 
-		// 1% chance to catch anything
+
+		// chance to catch anything
 		if((random _rnd) <= 1) then {
 			// Just the one fish for now
 			_itemOut = ["ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemSeaBass","ItemSeaBass","ItemTuna"] call BIS_fnc_selectRandom;
@@ -67,7 +73,7 @@ while {_isOk} do {
 		} else {
 			cutText ["\n\nNibble... Nibble...", "PLAIN DOWN"];
 			_counter = _counter + 1;
-			if(_counter == 5) then {
+			if(_counter == 10) then {
 				_isOk = false;
 				sleep 2;
 				cutText ["\n\nYou didn't catch anything.", "PLAIN DOWN"];

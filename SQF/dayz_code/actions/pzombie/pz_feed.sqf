@@ -88,7 +88,7 @@ if(!(alive _item)) then {
 	_control ctrlShow true;
 
 
-	cutText [format[(localize  "str_player_consumed"),_animalType], "PLAIN DOWN"];
+	cutText [format[(localize  "str_player_consumed"),(getText (configFile >> "CfgVehicles" >> _animalType >> "displayName"))], "PLAIN DOWN"];
 	player switchmove "";
 };
 

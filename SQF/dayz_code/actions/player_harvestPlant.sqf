@@ -3,7 +3,7 @@
 	Usage: spawn player_harvestPlant;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput"];
+private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text"];
 
 if(TradeInprogress) exitWith { cutText ["\n\nHarvest already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -101,6 +101,8 @@ if (count(_findNearestTree) >= 1) then {
 				_i = _i + 1;
 			};
 		};
+
+		_text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 		
 		if(_i != 0) then {
 			// chop down tree
@@ -109,9 +111,9 @@ if (count(_findNearestTree) >= 1) then {
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 		
-			cutText [format["\n\n%1 of %2 has been successfully added to your inventory.", _i,_itemOut], "PLAIN DOWN"];
+			cutText [format["\n\n%1 of %2 has been successfully added to your inventory.", _i,_text], "PLAIN DOWN"];
 		} else {
-			cutText [format["\n\n%1 of %2 could not be added to your inventory. (not enough room?)", _i,_itemOut], "PLAIN DOWN"];
+			cutText [format["\n\n%1 of %2 could not be added to your inventory. (not enough room?)", _i,_text], "PLAIN DOWN"];
 		};
 	} else {
 		r_interrupt = false;

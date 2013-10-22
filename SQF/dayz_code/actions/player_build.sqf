@@ -163,7 +163,7 @@ _missing = "";
 _hasrequireditem = true;
 {
 	_hastoolweapon = _x in weapons player;
-	if(!_hastoolweapon) exitWith { _hasrequireditem = false; _missing = _x; }
+	if(!_hastoolweapon) exitWith { _hasrequireditem = false; _missing = getText (configFile >> "cfgWeapons" >> _x >> "displayName"); }
 } forEach _require;
 
 _hasbuilditem = _this in magazines player;

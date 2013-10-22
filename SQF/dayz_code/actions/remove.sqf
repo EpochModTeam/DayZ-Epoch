@@ -2,7 +2,7 @@
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding"];
+private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle"];
 
 if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -59,7 +59,9 @@ if(_IsNearPlot >= 1) then {
 	};
 };
 
-cutText [format["Starting de-construction of %1.",_objType], "PLAIN DOWN"];
+_nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName");
+
+cutText [format["Starting de-construction of %1.",_nameVehicle], "PLAIN DOWN"];
 
 // Alert zombies once.
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
@@ -125,7 +127,7 @@ while {_isOk} do {
 		_proceed = false;
 	};
 
-	cutText [format["De-constructing %1 stage %2 of %3 walk away at anytime to cancel.",_objType, _counter,_limit], "PLAIN DOWN"];
+	cutText [format["De-constructing %1 stage %2 of %3 walk away at anytime to cancel.", _nameVehicle, _counter,_limit], "PLAIN DOWN"];
 
 	if(_counter == _limit) exitWith {
 		_isOk = false;
@@ -134,6 +136,8 @@ while {_isOk} do {
 	
 };
 
+
+
 if(_brokenTool) then {
 	if(_isWreck) then {
 		_removeTool = "ItemToolbox";
@@ -141,7 +145,7 @@ if(_brokenTool) then {
 		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
 	};
 	if(([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {
-		cutText [format["Tool (%1) broke cannot remove %2.",_removeTool,_objType], "PLAIN DOWN"];
+		cutText [format["%1 broke cannot remove %2.",getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle], "PLAIN DOWN"];
 	};
 };
 
@@ -158,7 +162,7 @@ if (_proceed) then {
 			publicVariableServer "PVDZE_obj_Delete";
 		};
 
-		cutText [format["De-constructing %1.",_objType], "PLAIN DOWN"];
+		cutText [format["De-constructing %1.",_nameVehicle], "PLAIN DOWN"];
 		
 		_preventRefund = false;
 
