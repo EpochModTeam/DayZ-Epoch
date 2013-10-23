@@ -134,7 +134,7 @@ class CfgMagazines {
 	class 1350Rnd_30mmAP_A10: FakeMagazine {};
 	class 180Rnd_30mm_GSh301: FakeMagazine {};
 	class 750Rnd_30mm_GSh301: FakeMagazine {};
-	class 48Rnd_40mm_MK19: FakeMagazine {};
+//	class 48Rnd_40mm_MK19: FakeMagazine {};
 	class 6Rnd_Grenade_Camel: FakeMagazine {};
 	class 30Rnd_105mmHE_M119: FakeMagazine {};
 	class 20Rnd_120mmHE_M1A2: FakeMagazine {};
