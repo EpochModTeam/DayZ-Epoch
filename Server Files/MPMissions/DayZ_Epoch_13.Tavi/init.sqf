@@ -34,7 +34,7 @@ dayz_minpos = -26000;
 dayz_maxpos = 26000;
 
 dayz_paraSpawn = false;
-spawnMarkerCount = 10; // Default: 4
+
 dayz_maxAnimals = 8; // Default: 8
 dayz_tameDogs = true;
 DynamicVehicleDamageLow = 0; // Default: 0

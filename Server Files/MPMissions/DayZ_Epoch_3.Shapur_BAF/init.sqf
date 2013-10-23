@@ -27,7 +27,7 @@ dayz_MapArea = 2000; // Default = 10000
 dayz_maxLocalZombies = 40; // Default = 40
 
 dayz_paraSpawn = false;
-spawnMarkerCount = 10; // Default: 4
+
 dayz_maxAnimals = 8; // Default: 8
 dayz_tameDogs = true;
 DynamicVehicleDamageLow = 0; // Default: 0
