@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["Tanny_PMC","BAF_Soldier_AAR_MTP","BAF_Soldier_AAT_W","Soldier_Bodyguard_M4_PMC","RU_Damsel1","GUE_Soldier_MG","GUE_Soldier_1","GUE_Villager3","Soldier_MG_PKM_PMC","GUE_Soldier_Pilot","GUE_Woodlander2","GUE_Soldier_Scout","GUE_Commander","UN_CDF_Soldier_Pilot_EP1","RU_Damsel2","Dr_Hladik_EP1","Soldier_MG_PKM_PMC","Soldier_MG_PMC","FR_Assault_R","UN_CDF_Soldier_Crew_EP1","Woodlander3","Dr_Annie_Baker_EP1"];
+serverTraders = ["Tanny_PMC","BAF_Soldier_AAR_MTP","BAF_Soldier_AAT_W","Soldier_Bodyguard_M4_PMC","RU_Damsel1","GUE_Soldier_MG","GUE_Soldier_1","GUE_Villager3","Soldier_MG_PKM_PMC","GUE_Soldier_Pilot","GUE_Woodlander2","GUE_Soldier_Scout","GUE_Commander","RU_Damsel2","Dr_Hladik_EP1","Soldier_MG_PKM_PMC","Soldier_MG_PMC","FR_Assault_R","UN_CDF_Soldier_Crew_EP1","Woodlander3","Dr_Annie_Baker_EP1"];
 // Hero Vendor
 menu_Tanny_PMC = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
