@@ -30,6 +30,9 @@ if (!isDedicated) then {
 	player_packVault =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packVault.sqf";
 	player_unlockVault =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
 	
+	player_removeObject =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf";
+	player_removeNet =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_removeNet.sqf";
+
 	player_unlockDoor =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_changeCombo =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
 	
