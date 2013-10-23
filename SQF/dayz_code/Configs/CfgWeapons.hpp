@@ -74,6 +74,7 @@ class CfgWeapons {
 	#include "CfgWeapons\Item\ItemSledge.hpp"
 	#include "CfgWeapons\Item\ItemKeyKit.hpp"
 	#include "CfgWeapons\Item\ItemKeys.hpp"
+	#include "CfgWeapons\Item\ItemToolbox.hpp"
 	
 	//Sniper Rifel
 	//#include "CfgWeapons\Weapon\Sniper\AS50.hpp"

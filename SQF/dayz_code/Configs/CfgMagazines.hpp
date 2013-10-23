@@ -1484,7 +1484,7 @@ class CfgMagazines {
 			class CreateMags
 			{
 				text = "Open %1";
-				script = "spawn player_loadCrate";";
+				script = "spawn player_loadCrate;";
 				output[] = {"FoodbaconCooked",12,"magazine"};
 			};
 		};
