@@ -366,6 +366,25 @@ if (isServer and isNil "sm_done") then {
 		_debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition select 1),1];
 		_vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
 		_vehicle_0 setPos _debugMarkerPosition;
+
+		// max number of spawn markers
+		if(isnil "spawnMarkerCount") then {
+			spawnMarkerCount = 10;
+		};
+		
+		actualSpawnMarkerCount = 0;
+
+		// count valid spawn marker positions
+		for "_i" from 0 to spawnMarkerCount do {
+			if (!([(getMarkerPos format["spawn%1", _i]), [0,0,0]] call BIS_fnc_areEqual)) then {
+				actualSpawnMarkerCount = actualSpawnMarkerCount + 1;
+			} else {
+				// exit since we did not find any further markers
+				_i = spawnMarkerCount + 99;
+			};
+			
+		};
+		diag_log format["Total Number of spawn locations %1", actualSpawnMarkerCount];
 	};
 
 	sm_done = true;

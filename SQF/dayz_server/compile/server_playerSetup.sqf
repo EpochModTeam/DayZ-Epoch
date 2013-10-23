@@ -1,4 +1,4 @@
-private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC"];
+private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC","_namespace"];
 
 //diag_log ("SETUP: attempted with " + str(_this));
 
@@ -188,12 +188,9 @@ if (_randomSpot) then {
 	if(isnil "spawnShoremode") then {
 		spawnShoremode = 1;
 	};
-	if(isnil "spawnMarkerCount") then {
-		spawnMarkerCount = 4;
-	};
 	
-	// The wiki states floor has a uniform distribution but will not reach the last number so we add +1
-	_spawnMC = spawnMarkerCount + 1;
+	// 
+	_spawnMC = actualSpawnMarkerCount;
 
 	//spawn into random
 	_findSpot = true;
