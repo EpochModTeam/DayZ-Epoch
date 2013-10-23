@@ -18,7 +18,7 @@ diag_log("CRASHSPAWNER: Starting spawn logic for Crash Spawner");
 while {true} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
 	// Allows the variance to act as +/- from the spawn frequency timer
-	_timeAdjust = round(random(_variance * 2) - _variance);
+    _timeAdjust = round((random(_variance * 2)) - _variance);
 	_timeToSpawn = time + _frequency + _timeAdjust;
 	
 	//Adding some Random systems
@@ -82,7 +82,7 @@ while {true} do {
 		// Disable simulation server side
 		_crash enableSimulation false;
 
-		_num = round(random _randomizedLoot) + _guaranteedLoot;
+        _num = (round(random _randomizedLoot)) + _guaranteedLoot;
 
 		if(_crashModel == "Mass_grave_DZ") then {
 			_spawnFire = false;

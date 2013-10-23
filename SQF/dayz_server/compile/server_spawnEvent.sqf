@@ -4,13 +4,13 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
 
-private ["_xaction","_date","_key","_result","_outcome","_proceed","_handle"];
+private ["_date","_key","_result","_outcome","_handle","_time","_datestr"];
 
 diag_log("EPOCH EVENTS INIT");
 EventSchedulerLastTime = "";
 
 epoch_eventIsAny = {
-	private ["_boolReturn","_event","_date"];
+	private ["_boolReturn","_event","_date","_bool","_index"];
     _event = _this select 0;
 	_date = _this select 1;
 	

@@ -1,4 +1,4 @@
-private ["_characterID","_minutes","_newObject","_playerID","_playerName","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record","_sound"];
+private ["_characterID","_minutes","_newObject","_playerID","_playerName","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _characterID = 	_this select 0;
 _minutes =		_this select 1;

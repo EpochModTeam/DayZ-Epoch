@@ -1,4 +1,4 @@
-private ["_invehicle","_isplayernearby","_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout"];
+private ["_invehicle","_isplayernearby","_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout","_message"];
 _playerID = _this select 0;
 _playerName = _this select 1;
 _object = call compile format["player%1",_playerID];
