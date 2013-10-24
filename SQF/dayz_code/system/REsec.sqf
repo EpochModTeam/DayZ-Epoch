@@ -3,25 +3,27 @@
         Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
 */
 
-#include "REsec.hpp"
+_REMOVED_LIB = ["addAction", "addEventhandler", "addMagazine", "addMagazineCargo", "addWeapon","addWeaponCargo", "addWPCur", "animate", "callVar", "clearMagazineCargo", "clearWeaponCargo", "createDiaryRecord","createMarkerLocal", "createSimpleTask", "createTaskSet", "debugLog", "deleteWP", "enablesimulation", "endMission","execfsm", "fadeMusic", "fadeSound", "failMission", "globalChat", "globalRadio", "groupChat", "groupRadio","hideObject", "hint", "hintC", "kbAddTopic", "kbreact", "kbRemoveTopic", "kbtell", "land", "move", "moveIn","playAction", "playActionnow", "playmovenow", "playMusic", "playsound", "removeAction","removeAllWeapons", "setCaptive", "setCurrentTask", "setCurrentTaskArrays", "setDate", "setDir", "setGroupID","setMarkerPosLocal", "setObjectTexture", "setSimpleTaskDescription", "setTaskState", "setWPdesc", "setWPtype","showCommandingMenu", "sideChat", "sideRadio", "skiptime", "spawn", "switchAction", "switchCamera", "taskHint","titleCut", "Hangender"];
+_TRACED_LIB = ["execVM", "JIPexec", "JIPrequest", "say", "playmove", "switchmove", "titleText"];
+
 waitUntil{!isNil "BIS_MPF_InitDone"};
 
-private["_ofn","_nfn"];
+private["_ofn","_nfn","_REMOVED_LIB","_TRACED_LIB"];
 {
 	_ofn=format["r%1code",_x];
 	_nfn=format["r%1code%2",_x,round(random(100000))];
 	if(_x=="execVM")then{
-		call compile format["%1=%2;%2={if((count _this>=3)AND{(!((_this select 2)IN%3))})then{diag_log(""WARNING RE %2 with illegal args:""+str(_this));}else{_this call %1}};",_nfn,_ofn,Stringify(WHITELISTED_EXECVM)];
+		call compile format["%1=%2;%2={if((count _this>=3)AND{(!((_this select 2)IN%3))})then{diag_log(""WARNING RE %2 with illegal args:""+str(_this));}else{_this call %1}};",_nfn,_ofn,["ca\Modules\Functions\init.sqf"]];
 	}else{
 		#ifdef RESEC_VERBOSE
 		call compile format ["%1=%2;%2={diag_log(""RE %2 args:""+str(_this));_this call %1};",_nfn,_ofn];
 		#endif
 	};
-}foreach TRACED_LIB;
+}foreach _TRACED_LIB;
 {
 	_ofn=format["r%1code",_x];
 	call compile format["%1={diag_log(""WARNING illegal RE %1 with args:""+str(_this));};",_ofn];
-}foreach REMOVED_LIB;
+}foreach _REMOVED_LIB;
 
 #ifndef SKIP_REMOTEEXECUTIONSERVER
 []spawn{
