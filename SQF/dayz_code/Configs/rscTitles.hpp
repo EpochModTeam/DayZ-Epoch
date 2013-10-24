@@ -1784,16 +1784,6 @@ class RscTitles
 				h = 0.1;
 			};
 			
-			
-			class RscPicture_1208: RscPictureGUI
-			{
-				idc = 1208;
-				text = "\z\addons\dayz_code\gui\status_temp_outside_ca.paa";
-				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.72 * safezoneH + safezoneY; //3
-				w = 0.06;
-				h = 0.08;
-			};
 			class RscPicture_1203: RscPictureGUI
 			{
 				idc = 1203;
