@@ -133,6 +133,7 @@ if (_qty >= _qty_in) then {
 							player reveal _veh;
 						
 							cutText [format[("Bought %3 for %1 %2, key added to toolbelt."),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
+							diag_log format["%1 Bought a %2", _activatingPlayer,_textPartOut];
 						} else {
 							player removeMagazine _keySelected;
 						};
@@ -187,6 +188,8 @@ if (_qty >= _qty_in) then {
 							deleteVehicle _obj; 
 
 							cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+							diag_log format["%1 Sold a %2", _activatingPlayer,_textPartIn];
+							
 						};
 					} else {
 						cutText [format[("Cannot sell %1, tires are too damaged."),_textPartIn] , "PLAIN DOWN"];
