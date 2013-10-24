@@ -551,7 +551,7 @@ class CfgBuildingLoot {
 				{ "clothes","single" },
 				{ "specialclothes","single" },
 				{ "WeaponHolder_MeleeCrowbar","object" },
-				{"MR43","weapon"},
+				{"MR43","weapon"}
 		};
 		itemChance[] =	{
 			0.04,
@@ -598,7 +598,7 @@ class CfgBuildingLoot {
 			{ "","trash" },
 			{ "Binocular","weapon" },
 			{ "clothes","single" },
-			{ "specialclothes","single" },
+			{ "specialclothes","single" }
 		};
 		itemChanceSmall[] =	{
 			0.01,
@@ -972,7 +972,7 @@ class CfgBuildingLoot {
 			{ "revolver_EP1","weapon" },
 			{ "","food" },
 			{ "","trash" },
-			{ "Binocular","weapon" },
+			{ "Binocular","weapon" }
 		};
 		itemChanceSmall[] =	{
 			0.01,
@@ -1026,7 +1026,7 @@ class CfgBuildingLoot {
 			{"29Rnd_30mm_AGS30","magazine"},
 			{"50Rnd_127x107_DSHKM","magazine"},
 			{"48Rnd_40mm_MK19","magazine"},
-			{"100Rnd_127x99_M2","magazine"},
+			{"100Rnd_127x99_M2","magazine"}
 		};
 		itemChance[] =	{
 			0.02,
@@ -1090,7 +1090,7 @@ class CfgBuildingLoot {
 			{"29Rnd_30mm_AGS30","magazine"},
 			{"50Rnd_127x107_DSHKM","magazine"},
 			{"48Rnd_40mm_MK19","magazine"},
-			{"100Rnd_127x99_M2","magazine"},
+			{"100Rnd_127x99_M2","magazine"}
 		};
 		itemChance[] =	{
 			0.01,
@@ -1434,7 +1434,7 @@ class CfgBuildingLoot {
 			{"29Rnd_30mm_AGS30","magazine"},
 			{"50Rnd_127x107_DSHKM","magazine"},
 			{"48Rnd_40mm_MK19","magazine"},
-			{"100Rnd_127x99_M2","magazine"},
+			{"100Rnd_127x99_M2","magazine"}
 		};
 		itemChance[] =	{
 			0.01,
@@ -1508,7 +1508,7 @@ class CfgBuildingLoot {
 			{"29Rnd_30mm_AGS30","magazine"},
 			{"50Rnd_127x107_DSHKM","magazine"},
 			{"48Rnd_40mm_MK19","magazine"},
-			{"100Rnd_127x99_M2","magazine"},
+			{"100Rnd_127x99_M2","magazine"}
 		};
 		itemChanceSmall[] =	{
 			0.04,
