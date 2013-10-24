@@ -1783,47 +1783,14 @@ class RscTitles
 				w = 0.5;
 				h = 0.1;
 			};
-			class RscPicture_1201: RscPictureGUI
-			{
-				idc = 1201;
-				text = "\z\addons\dayz_code\gui\status_food_border_ca.paa";
-				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.93 * safezoneH + safezoneY; //1
-				w = 0.06;
-				h = 0.08;
-			};
-			class RscPicture_1200: RscPictureGUI
-			{
-				idc = 1200;
-				text = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
-				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.86 * safezoneH + safezoneY;//2
-				w = 0.06;
-				h = 0.08;
-			};
-			class RscPicture_1202: RscPictureGUI
-			{
-				idc = 1202;
-				text = "\z\addons\dayz_code\gui\status_thirst_border_ca.paa";
-				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.79 * safezoneH + safezoneY; //3
-				w = 0.06;
-				h = 0.08;
-			};
+			
+			
 			class RscPicture_1208: RscPictureGUI
 			{
 				idc = 1208;
 				text = "\z\addons\dayz_code\gui\status_temp_outside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.72 * safezoneH + safezoneY; //3
-				w = 0.06;
-				h = 0.08;
-			};
-			class RscPicture_1207 : RscPictureGUI {
-				idc = 1207;
-				text = "\z\addons\dayz_code\gui\status_combat_border_ca.paa";
-				x = "0.955313 * safezoneW + safezoneX";
-				y = "0.65 * safezoneH + safezoneY";
 				w = 0.06;
 				h = 0.08;
 			};
@@ -1865,24 +1832,7 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 			};
-			class RscPicture_1501: RscPictureGUI
-			{
-				idc = 1501;
-				text = "\z\addons\dayz_code\gui\status_food_border_ca.paa";
-				x = 0.945313 * safezoneW + safezoneX;
-				y = 0.95 * safezoneH + safezoneY; //1
-				w = 0.04;
-				h = 0.053333;
-			};
-			class RscPicture_1502: RscPictureGUI
-			{
-				idc = 1502;
-				text = "\z\addons\dayz_code\gui\status_thirst_border_ca.paa";
-				x = 0.945313 * safezoneW + safezoneX;
-				y = 0.816666 * safezoneH + safezoneY; //3
-				w = 0.04;
-				h = 0.053333;
-			};
+			
 		};
 		class Controls{
 			class RscPicture_1301: RscPictureGUI
