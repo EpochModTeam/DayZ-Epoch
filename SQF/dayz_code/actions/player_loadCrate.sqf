@@ -11,7 +11,7 @@ if(!_hasTool) exitWith {
 
 _item =     _this;
 _hasCrate = 	_item in magazines player;
-if (!_hasCrate) then {
+if (!_hasCrate) exitWith {
 	cutText ["\n\nMissing supply crate.", "PLAIN DOWN"];
 	TradeInprogress = false;
 };
