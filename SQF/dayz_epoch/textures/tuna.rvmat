@@ -8,7 +8,7 @@ PixelShaderID="NormalMapSpecularDIMap";
 VertexShaderID="NormalMap";
 class Stage1
 {
-	texture="dayz_equip\textures\tuna_norm.paa";
+	texture="z\addons\dayz_epoch\textures\tuna_norm.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="dayz_equip\textures\tuna_spec.paa";
+	texture="z\addons\dayz_epoch\textures\tuna_spec.paa";
 	uvSource="tex";
 	class uvTransform
 	{
