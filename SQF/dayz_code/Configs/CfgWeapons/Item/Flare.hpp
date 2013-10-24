@@ -29,7 +29,8 @@ class Flare : GrenadeLauncher {
 				"ItemSodaLemonadeEmpty", 
 				"ItemSodaLvgEmpty", 
 				"ItemSodaMzlyEmpty", 
-				"ItemSodaRabbitEmpty"
+				"ItemSodaRabbitEmpty",
+				"ItemTrashToiletpaper"
 			};          
 		};
 	}; 
