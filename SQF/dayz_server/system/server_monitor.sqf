@@ -366,6 +366,7 @@ if (isServer and isNil "sm_done") then {
 		_debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition select 1),1];
 		_vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
 		_vehicle_0 setPos _debugMarkerPosition;
+		_vehicle_0 setVariable ["ObjectID","1",true];
 
 		// max number of spawn markers
 		if(isnil "spawnMarkerCount") then {
