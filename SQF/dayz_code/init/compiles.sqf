@@ -396,16 +396,13 @@ if (!isDedicated) then {
 	};
 	
 	player_setDate = {
-		private ["_setdatebool","_forEachIndex","_newdate","_n"];
+		private ["_setdatebool"];
 		_setdatebool = false;
-		_n = _this;
-		{
-			if (_x != (_n select _forEachIndex)) exitWith { 
-				_setdatebool = true;
-			}; 
-		} forEach date;
+		if (!([_this, date] call BIS_fnc_areEqual)) exitWith {
+			_setdatebool = true;
+		};
 		if (_setdatebool) then {
-			setDate _newdate;
+			setDate _this;
 		};
 	};
 
