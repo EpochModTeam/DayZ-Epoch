@@ -4600,7 +4600,8 @@ class CfgMagazines {
 		shortNameMagazine = "Dummy";
 		ammo = "Dummy_Swing_Ammo";
 	};
-	class ItemTrashToiletpaper : CA_Magazine {
+	// 	class HandGrenade;
+	class ItemTrashToiletpaper : HandGrenade {
 		scope = public;
 		count = 1;
 		displayName = $STR_JUNK_NAME_TOILETPAPER;
@@ -4608,6 +4609,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
 		type = 256;
+		ammo = "JackDaniels";
 	};
 	class ItemTrashRazor : CA_Magazine {
 		scope = public;
