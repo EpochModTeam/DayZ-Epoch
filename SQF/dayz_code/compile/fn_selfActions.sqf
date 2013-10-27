@@ -560,7 +560,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 
 	//Towing with tow truck
-	if(_typeOfCursorTarget == "VIL_asistvan_DZE") then {
+	/*
+	if(_typeOfCursorTarget == "TOW_DZE") then {
 		if (s_player_towing < 0) then {
 			if(!(_cursorTarget getVariable ["DZEinTow", false])) then {
 				s_player_towing = player addAction ["Attach Straps", "\z\addons\dayz_code\actions\tow_AttachStraps.sqf",_cursorTarget, 0, false, true, "",""];				
@@ -572,6 +573,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_towing;
 		s_player_towing = -1;
 	};
+	*/
 
 
     //Sleep

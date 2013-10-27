@@ -78,7 +78,7 @@ if(_IsNearVehicle >= 1) then {
 		
 		if((sizeOf typeOf _vehicle) <= _allowedSize) then {
 			if([_vehicle,_towTruck] call fnc_isInsideBuilding2 and ((vectorUp _vehicle) select 2) > 0.5) then {
-				if(typeOf _towTruck == "VIL_asistvan_DZE" ) then {
+				if(typeOf _towTruck == "TOW_DZE" ) then {
 					_vehicle attachTo [_towTruck,[1.3,-2,2.3]];
 					_towTruck setVariable ["DZEinTow", true, true];
 					_towTruck setVariable ["DZEvehicleInTow", _vehicle, true];
