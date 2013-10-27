@@ -74,11 +74,13 @@ if (_killerName != "nil") then
 };
 
 // Might not be the best way...
+/*
 if (isnil "dayz_disco") then {
 	dayz_disco = [];
 };
+*/
 
-dayz_disco = dayz_disco - [_playerID];
+// dayz_disco = dayz_disco - [_playerID];
 _newObject setVariable["processedDeath",time];
 
 if (typeName _minutes == "STRING") then 

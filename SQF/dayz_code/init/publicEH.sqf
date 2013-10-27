@@ -29,8 +29,8 @@
 //Server only
 if (isServer) then {
 	"PVDZE_plr_Died"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
-	"PVDZE_plr_DiscAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
-	"PVDZE_plr_DiscRem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
+	//"PVDZE_plr_DiscAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
+	//"PVDZE_plr_DiscRem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
 	"PVDZE_plr_Save"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
 	"PVDZE_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj};
 	"PVDZE_veh_Update"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_updateObject};

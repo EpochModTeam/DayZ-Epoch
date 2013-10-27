@@ -30,15 +30,15 @@ if ((_timeout - time) > 0) then {
 	[nil,nil,"per",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
 };
 
-diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
-
-_id = [_playerID,_characterID,2] spawn dayz_recordLogin;
-dayz_disco = dayz_disco - [_playerID];
+//dayz_disco = dayz_disco - [_playerID];
 if (!isNull _object) then {
-	//Update Vehicle
-	{ [_x,"gear"] call server_updateObject } foreach 
-		(nearestObjects [getPosATL _object, dayz_updateObjects, 10]);
+
+	diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
+
+	_id = [_playerID,_characterID,2] spawn dayz_recordLogin;
+
 	if (alive _object) then {
+
 		_isplayernearby = (DZE_BackpackGuard and!_invehicle and ({isPlayer _x} count (_object nearEntities ["AllVehicles", 5]) > 1));
 		[_object,(magazines _object),true,true,_isplayernearby] call server_playerSync;
 		
@@ -53,5 +53,10 @@ if (!isNull _object) then {
 		_myGroup = group _object;
 		deleteVehicle _object;
 		deleteGroup _myGroup;
+	} else {
+		//Update Vehicle
+		{ 
+			[_x,"gear"] call server_updateObject;
+		} foreach (nearestObjects [getPosATL _object, dayz_updateObjects, 10]);
 	};
 };
