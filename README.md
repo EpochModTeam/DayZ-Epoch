@@ -18,7 +18,6 @@ Included Custom Addons
 * Taxi by [GLT]Myke http://www.armaholic.com/page.php?id=12289
 * SUV Colors by Python.au http://www.armaholic.com/page.php?id=17176
 * R3F Realism by http://www.team-r3f.org/
-* Modern Civilian vehicles by vilas http://www.armaholic.com/page.php?id=17447
 * ASC EU Lights Mod http://www.armaholic.com/page.php?id=12076
 * MAP Editorupgrade (EU) http://www.armaholic.com/page.php?id=6194
 * st_movement by ShackTac https://dev-heaven.net/projects/shacktac/files
