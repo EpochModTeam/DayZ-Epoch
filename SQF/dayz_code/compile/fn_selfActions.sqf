@@ -37,9 +37,16 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
-if (s_player_showname < 0 and !_isPZombie) then {
-	s_player_showname = player addAction ["Display Name (Yes)", "\z\addons\dayz_code\actions\display_name.sqf",true, 0, true, false, "",""];
-	s_player_showname1 = player addAction ["Display Name (No)", "\z\addons\dayz_code\actions\display_name.sqf",false, 0, true, false, "",""];
+if (!DZE_ForceNameTagsOff) 
+	if (s_player_showname < 0 and !_isPZombie) then {
+		if (DZE_ForceNameTags) then {
+			s_player_showname = 1;
+			player setVariable["DZE_display_name",true,true];
+		} else {
+			s_player_showname = player addAction ["Display Name (Yes)", "\z\addons\dayz_code\actions\display_name.sqf",true, 0, true, false, "",""];
+			s_player_showname1 = player addAction ["Display Name (No)", "\z\addons\dayz_code\actions\display_name.sqf",false, 0, true, false, "",""];
+		};
+	};
 };
 
 if(_isPZombie) then {

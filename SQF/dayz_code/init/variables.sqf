@@ -618,6 +618,12 @@ if(!isDedicated) then {
 	if(isNil "DZE_AllowCargoCheck") then {
 		DZE_AllowCargoCheck = true;
 	};
+	if(isNil "DZE_ForceNameTags") then {
+		DZE_ForceNameTags = false;
+	};
+	if(isNil "DZE_ForceNameTagsOff") then {
+		DZE_ForceNameTagsOff = false;
+	};
 
 	DZE_CanPickup = true;
 	DZE_Q = false;
