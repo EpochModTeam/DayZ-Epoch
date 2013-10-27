@@ -1,4 +1,4 @@
-private ["_type","_inVehicle","_dateNow","_maxWildZombies","_age","_radius","_position","_markerstr","_markerstr1","_markerstr2","_markerstr3","_nearByObj","_handle","_looted","_cleared","_zombied","_config","_canLoot","_dis","_players","_nearby","_nearbyCount","_onTheMove"];
+private ["_type","_inVehicle","_dateNow","_maxWildZombies","_age","_radius","_position","_markerstr","_markerstr1","_markerstr2","_markerstr3","_nearByObj","_handle","_looted","_cleared","_zombied","_config","_canLoot","_dis","_players","_nearby","_nearbyCount","_onTheMove","_soundLimit"];
 //_t1 = diag_tickTime;
 
 _type = _this select 0;
@@ -12,6 +12,16 @@ _position = getPosATL player;
 
 dayz_spawnZombies = 0;
 dayz_CurrentZombies = 0;
+
+// experiment with adding fly sounds locally for both zombies and players.
+_soundLimit = 3;
+{
+	if (!alive _x) then {
+		[player,"flysound",0,true] call dayz_zombieSpeak;
+		_soundLimit = _soundLimit - 1;
+	};
+	if (_soundLimit == 0) exitWith {};
+} foreach (nearestObjects [player, ["CAManBase"], 8]);
 
 _players = _position nearEntities ["CAManBase",_radius+200];
 dayz_maxGlobalZombies = dayz_maxGlobalZombiesInit;

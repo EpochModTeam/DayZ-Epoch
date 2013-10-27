@@ -586,6 +586,16 @@ class CfgSounds {
 	class z_keypad_tick_2 : z_keypad_tick_0 {
 		sound[] = {"\dayz_sfx\effects\keyPress_c.ogg",1,1,10};
 	};
+
+	class z_flysound_0 {
+		name = "";
+		sound[] = {"\ca\Sounds\animals\flies",1,1,10};
+		titles[] = {};
+	};
+	class z_flysound_1 : z_flysound_0 {
+		sound[] = {"\ca\Sounds\animals\flies2",1,1,10};
+	};
+
 	class z_combo_tick_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\combo_tick.ogg",1,1,10};
