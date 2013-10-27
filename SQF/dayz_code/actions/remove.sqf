@@ -157,6 +157,8 @@ if (_proceed) then {
 	// Double check that object is not null
 	if(!isNull(_obj)) then {
 		
+		_ipos = getPosATL _obj;
+
 		deleteVehicle _obj;
 		
 		if(!_isWreck) then {
@@ -187,10 +189,8 @@ if (_proceed) then {
 			cutText ["No parts found.", "PLAIN DOWN"];
 		};
 
-		_ipos = getPosATL player;
-
-		if (_ipos select 2 < 2) then {
-			_ipos = [_ipos select 0,_ipos select 1,0];
+		if (_ipos select 2 < 0) then {
+			_ipos set [2,0];
 		};
 
 		_radius = 1;

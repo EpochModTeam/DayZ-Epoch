@@ -45,6 +45,10 @@ if(!isNull _obj and alive _obj) then {
 
 	_location = _pos;
 
+	if (_location select 2 < 0) then {
+		_location set [2,0];
+	};
+
 	//place tent (local)
 	//_bag = createVehicle ["WeaponHolder_ItemTent",_pos,[], 0, "CAN_COLLIDE"];
 	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
