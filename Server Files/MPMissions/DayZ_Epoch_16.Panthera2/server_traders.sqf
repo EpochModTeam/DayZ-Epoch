@@ -50,7 +50,7 @@ menu_BAF_Soldier_AAA_DDPM = [
 ];
 // Brians Vehicles
 menu_GUE_Soldier_2 = [
-	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Compact Cars",560],["Economy Cars",523],["Fuel Trucks",589],["Luxury Cars",521],["Microcars",522],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
+	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
 	[],
 	"neutral"
 ];
@@ -80,7 +80,7 @@ menu_US_Soldier_Medic_EP1 = [
 ];
 // Kypex's Vehicles
 menu_CZ_Special_Forces_MG_DES_EP1 = [
-	[["Bikes and ATV",536],["Buses and Vans",592],["Cargo Trucks",570],["Compact Cars",593],["Economy Cars",594],["Fuel Trucks",595],["Luxury Cars",596],["Microcars",597],["Military Unarmed",599],["Trucks Unarmed",535],["Used Cars",600],["Utility Vehicles",568]],
+	[["Bikes and ATV",536],["Buses and Vans",592],["Cargo Trucks",570],["Fuel Trucks",595],["Military Unarmed",599],["Trucks Unarmed",535],["Used Cars",600],["Utility Vehicles",568]],
 	[],
 	"neutral"
 ];
@@ -116,7 +116,7 @@ menu_Citizen2_EP1 = [
 ];
 // Planica Vehicle Vendor
 menu_Rita_Ensler_EP1 = [
-	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Compact Cars",652],["Economy Cars",654],["Fuel Trucks",655],["Luxury Cars",656],["Microcars",657],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
+	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Fuel Trucks",655],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
 	[],
 	"neutral"
 ];
@@ -152,7 +152,7 @@ menu_GUE_Soldier_AR = [
 ];
 // Island Vehicle Vendor
 menu_FR_Corpsman = [
-	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Compact Cars",652],["Economy Cars",654],["Fuel Trucks",655],["Luxury Cars",656],["Microcars",657],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
+	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Fuel Trucks",655],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
 	[],
 	"neutral"
 ];

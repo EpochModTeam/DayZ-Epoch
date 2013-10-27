@@ -63,7 +63,7 @@ menu_ibr_lingorman2 = [
 ];
 // Green's Quality Cars
 menu_Citizen2_EP1 = [
-	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Compact Cars",578],["Economy Cars",583],["Fuel Trucks",492],["Luxury Cars",581],["Microcars",584],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
+	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
 	[],
 	"friendly"
 ];
@@ -117,7 +117,7 @@ menu_Rocker4 = [
 ];
 // Jim's Used Cars
 menu_Worker4 = [
-	[["Buses and Vans",588],["Cargo Trucks",586],["Compact Cars",560],["Economy Cars",523],["Luxury Cars",521],["Microcars",522],["Used Cars",520]],
+	[["Buses and Vans",588],["Cargo Trucks",586],["Used Cars",520]],
 	[],
 	"neutral"
 ];
@@ -165,7 +165,7 @@ menu_Pilot_EP1 = [
 ];
 // Rommelo's Raceway
 menu_TK_CIV_Worker01_EP1 = [
-	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Compact Cars",652],["Economy Cars",654],["Fuel Trucks",655],["Luxury Cars",656],["Microcars",657],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
+	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Fuel Trucks",655],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
 	[],
 	"neutral"
 ];

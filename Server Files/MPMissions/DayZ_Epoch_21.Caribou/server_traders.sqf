@@ -20,7 +20,7 @@ menu_RUS_Soldier_TL = [
 ];
 // Friendly Vehicles C
 menu_CIV_Contractor1_BAF = [
-	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Compact Cars",578],["Economy Cars",583],["Fuel Trucks",492],["Luxury Cars",581],["Microcars",584],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
+	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
 	[],
 	"neutral"
 ];
@@ -62,7 +62,7 @@ menu_MVD_Soldier_TL = [
 ];
 // Vehicles Neutral C
 menu_Ins_Worker2 = [
-	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Compact Cars",560],["Economy Cars",523],["Fuel Trucks",589],["Luxury Cars",521],["Microcars",522],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
+	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
 	[],
 	"neutral"
 ];
