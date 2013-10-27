@@ -9,7 +9,7 @@ if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot trade while
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
-_activatingPlayer = _this select 1;
+_activatingPlayer = player;
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;
@@ -127,7 +127,7 @@ if (_qty >= _qty_in) then {
 							_location = (getPosATL _veh);
 
 							//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
-							PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected];
+							PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 							publicVariableServer  "PVDZE_veh_Publish2";
 
 							player reveal _veh;
@@ -180,8 +180,7 @@ if (_qty >= _qty_in) then {
 							_objectID 	= _obj getVariable ["ObjectID","0"];
 							_objectUID	= _obj getVariable ["ObjectUID","0"];
 
-							//["PVDZE_obj_Delete",[_objectID,_objectUID]] call callRpcProcedure;
-							PVDZE_obj_Delete = [_objectID,_objectUID];
+							PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
 							publicVariableServer "PVDZE_obj_Delete";
 
 							deleteVehicle _obj; 

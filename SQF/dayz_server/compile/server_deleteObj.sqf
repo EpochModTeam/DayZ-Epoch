@@ -4,6 +4,7 @@
 private["_id","_uid","_key"];
 _id 	= _this select 0;
 _uid 	= _this select 1;
+_activatingPlayer 	= _this select 2;
 
 if (isServer) then {
 	//remove from database
@@ -12,14 +13,14 @@ if (isServer) then {
 		_key = format["CHILD:304:%1:",_id];
 		_key call server_hiveWrite;
 		#ifdef DZE_SERVER_DEBUG_HIVE
-		diag_log format["DELETE: Deleted by ID: %1",_id];
+		diag_log format["DELETE: %1 Deleted by ID: %2",_activatingPlayer,_id];
 		#endif
 	} else  {
 		//Send request
 		_key = format["CHILD:310:%1:",_uid];
 		_key call server_hiveWrite;
 		#ifdef DZE_SERVER_DEBUG_HIVE
-		diag_log format["DELETE: Deleted by UID: %1",_uid];
+		diag_log format["DELETE: %1 Deleted by UID: %2",_activatingPlayer,_uid];
 		#endif
 	};
 };

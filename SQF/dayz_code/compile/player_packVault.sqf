@@ -1,10 +1,12 @@
 /*
 [_obj] spawn player_packVault;
 */
-private ["_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
+private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
 
 if(TradeInprogress) exitWith { cutText ["That is already being packed." , "PLAIN DOWN"]; };
 TradeInprogress = true;
+
+_activatingPlayer = player;
 
 _obj = _this;
 
@@ -60,7 +62,7 @@ if(!isNull _obj and alive _obj) then {
 	_backpacks = 	getBackpackCargo _obj;
 	
 	// Remove from database
-	PVDZE_obj_Delete = [_objectID,_objectUID];
+	PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
 	publicVariableServer "PVDZE_obj_Delete";
 	
 	// Set down vault "take" item

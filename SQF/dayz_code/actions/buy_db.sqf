@@ -5,7 +5,7 @@ if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];
 
 // [ _trader_id, _category, _action ];
-_activatingPlayer = _this select 1;
+_activatingPlayer = player;
 
 _trader_id = (_this select 3) select 0;
 // _category = (_this select 3) select 1;

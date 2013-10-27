@@ -1,10 +1,11 @@
-private ["_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
+private ["_activatingPlayer","_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
 
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;
 _donotusekey =	_this select 3;
 _keySelected =  _this select 4;
+_activatingPlayer =  _this select 5;
 
 if(_donotusekey) then {
 	_isOK = true;
@@ -115,5 +116,5 @@ _key call server_hiveWrite;
 	PVDZE_veh_Init = _object;
 	publicVariable "PVDZE_veh_Init";
 	
-	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
+	diag_log ("PUBLISH: " + str(_activatingPlayer) + " Bought " + (_class) + " with ID " + str(_uid));
 };

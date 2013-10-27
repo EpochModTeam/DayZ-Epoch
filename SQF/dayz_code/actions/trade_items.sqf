@@ -6,7 +6,7 @@ TradeInprogress = true;
 
 _total_parts_out = 0;
 
-_activatingPlayer = _this select 1;
+_activatingPlayer = player;
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;

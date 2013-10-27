@@ -4,7 +4,7 @@ private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_bos","_bag","_clas
 if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-_activatingPlayer = _this select 1;
+_activatingPlayer = player;
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;

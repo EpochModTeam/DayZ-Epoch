@@ -1,13 +1,15 @@
 /*
 [_obj] spawn player_packTent;
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_dis","_sfx","_classname","_location"];
+private ["_activatingPlayer","_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_dis","_sfx","_classname","_location"];
 
 if(TradeInprogress) exitWith { cutText ["Pack tent already in progress." , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_packtent;
 s_player_packtent = 1;
+
+_activatingPlayer = player;
 
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
@@ -57,7 +59,7 @@ if(!isNull _obj and alive _obj) then {
 	_backpacks = 	getBackpackCargo _obj;
 
 	deleteVehicle _obj;
-	PVDZE_obj_Delete = [_objectID,_objectUID];
+	PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
 	publicVariableServer "PVDZE_obj_Delete";
 	if (isServer) then {
 		PVDZE_obj_Delete call server_deleteObj;

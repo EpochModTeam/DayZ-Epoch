@@ -1,7 +1,7 @@
 private ["_activatingPlayer"];
 
 // [ _trader_id, _category, _action ];
-_activatingPlayer = _this select 1;
+_activatingPlayer = player;
 
 //diag_log format["DEBUG DEATH OBJ: %1", _this select 0];
 

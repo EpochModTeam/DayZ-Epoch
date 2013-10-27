@@ -1,7 +1,7 @@
 private ["_part","_cancel","_color","_allFixed","_percent","_string","_handle","_damage","_cmpt","_vehicle","_hitpoints"];
 
 // [ _trader_id, _category, _action ];
-// _activatingPlayer = _this select 1;
+// _activatingPlayer = player;
 
 _vehicle = _this select 3;
 
