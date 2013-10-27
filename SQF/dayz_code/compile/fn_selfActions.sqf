@@ -37,7 +37,7 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
-if (!DZE_ForceNameTagsOff) 
+if (!DZE_ForceNameTagsOff) then {
 	if (s_player_showname < 0 and !_isPZombie) then {
 		if (DZE_ForceNameTags) then {
 			s_player_showname = 1;
