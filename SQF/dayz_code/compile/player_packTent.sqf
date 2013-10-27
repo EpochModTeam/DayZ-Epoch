@@ -97,6 +97,8 @@ if(!isNull _obj and alive _obj) then {
 	} forEach _objWpnTypes;
 	
 	cutText [localize "str_success_tent_pack", "PLAIN DOWN"];
+
+	player action ["Gear", _holder];
 };
 
 s_player_packtent = -1;

@@ -50,6 +50,8 @@ if(_type == "backpack") then {
 };
 
 player reveal _box;
+
+player action ["Gear", _box];
 		
 cutText ["\n\nOpened supply crate.", "PLAIN DOWN"];
 	

@@ -116,6 +116,8 @@ if (count(_findNearestTree) >= 1) then {
 
 			cutText [format["\n\n%1 piles of wood has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
 
+			player action ["Gear", _item];
+
 		} else {
 			r_interrupt = false;
 			if (vehicle player == player) then {

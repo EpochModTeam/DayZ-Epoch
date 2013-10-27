@@ -207,6 +207,8 @@ if (_proceed) then {
 				_item addMagazineCargoGlobal [_itemOut,_countOut];				
 			} forEach _selectedRemoveOutput;
 			player reveal _item;
+
+			player action ["Gear", _item];
 		};
 	} else {
 		cutText ["Failed object not longer exists.", "PLAIN DOWN"];

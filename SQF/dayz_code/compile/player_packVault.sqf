@@ -106,6 +106,8 @@ if(!isNull _obj and alive _obj) then {
 	} forEach _objWpnTypes;
 	
 	cutText [format["Your %1 has been packed",_text], "PLAIN DOWN"];
+
+	player action ["Gear", _holder];
 };
 s_player_packvault = -1;
 TradeInprogress = false;
