@@ -387,6 +387,96 @@ class CfgLoot {
 			0.02
 		}
 	};
+	militarypilot[] = {
+		{
+			"FoodCanUnlabeled",
+			"ItemSodaEmpty",
+			"ItemSodaCoke",
+			"ItemSodaPepsi",
+			"ItemBandage",
+			"ItemAntibiotic",
+			"ItemPainkiller",
+			"ItemMorphine",
+			"30Rnd_556x45_Stanag",
+			"20Rnd_762x51_DMR",
+			"17Rnd_9x19_glock17",
+			"15Rnd_9x19_M9SD",
+			"15Rnd_9x19_M9",
+			"30Rnd_762x39_AK47",
+			"30Rnd_545x39_AK",
+			"5Rnd_762x51_M24",
+			"5Rnd_86x70_L115A1",
+			"8Rnd_B_Beneli_74Slug",
+			"1Rnd_HE_M203",
+			"FlareWhite_M203",
+			"FlareGreen_M203",
+			"1Rnd_Smoke_M203",		
+			"200Rnd_556x45_M249",
+			"HandGrenade_west",
+			"HandGrenade_east",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellGreen",
+			"8Rnd_B_Beneli_Pellets",
+			"30Rnd_556x45_StanagSD",
+			"30Rnd_9x19_MP5",
+			"30Rnd_9x19_MP5SD",
+			"100Rnd_762x51_M240",
+			"HandChemGreen",
+			"HandChemBlue",
+			"HandChemRed",
+			"ItemHeatPack",
+			"FoodMRE",
+			"8Rnd_9x18_MakarovSD",
+			"20Rnd_B_765x17_Ball",
+			"30Rnd_9x19_UZI_SD",
+			"ItemHotwireKit"
+		},
+		{
+			0.07,
+			0.04,
+			0.01,
+			0.01,
+			0.04,
+			0.04,
+			0.04,
+			0.01,
+			0.04,
+			0.04,
+			0.05,
+			0.01,
+			0.02,
+			0.04,
+			0.04,
+			0.01,
+			0.01,
+			0.04,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.01,
+			0.04,
+			0.02,
+			0.02,
+			0.04,
+			0.01,
+			0.02,
+			0.01,
+			0.01,
+			0.02,
+			0.02,
+			0.02,
+			0.04,
+			0.03,
+			0.01,
+			0.04,
+			0.01,
+			0.02
+		}
+	};
 	policeman[] = {
 		{
 			"ItemBandage",
@@ -627,6 +717,22 @@ class CfgLoot {
 			0.20,
 			0.15,
 			0.10
+		}
+	};
+	militaryammo[] = {
+		{
+			"2000Rnd_762x51_M134",
+			"29Rnd_30mm_AGS30",
+			"50Rnd_127x107_DSHKM",
+			"48Rnd_40mm_MK19",
+			"100Rnd_127x99_M2"
+		},
+		{
+			0.10,
+			0.20,
+			0.20,
+			0.20,
+			0.30
 		}
 	};
 };

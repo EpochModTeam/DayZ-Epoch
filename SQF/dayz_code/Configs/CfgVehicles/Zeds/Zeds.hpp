@@ -223,6 +223,7 @@ class z_soldier_pilot: z_soldier
 {
 	displayName = "Zombie Soldier (Pilot)";
 	model = "\ca\characters_d_BAF\BAF_Pilot_BAF";
+	zombieLoot = "militarypilot";
 	hiddenSelections[] = {"Camo","Camo2","Camo3"};
 	hiddenSelectionsTextures[] = {"\ca\characters_W_baf\data\camo_dpm_co.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 	class HitPoints: HitPoints
