@@ -295,7 +295,7 @@ if (_hasrequireditem) then {
 			
 		};
 		
-		sleep 0.1;
+		sleep 0.5;
 
 		_location2 = getPosATL player;
 
@@ -311,12 +311,12 @@ if (_hasrequireditem) then {
 		if(_location1 distance _location2 > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Moving too fast."; 
+			_reason = "You've moved to far away from where you started building (within 5 meters)."; 
 			detach _object;
 			deleteVehicle _object;
 		};
 		
-		[format["<t size='0.6'>Time left to build: %1</t>",(ceil(_previewCounter))],0,0.8,0.1,0,0,8] spawn BIS_fnc_dynamicText;
+		[format["<t size='0.6'>Time left to build: %1</t>",(ceil(_previewCounter))],0,0.8,0.5,0,0,8] spawn BIS_fnc_dynamicText;
 		
 		if(_previewCounter <= 0) exitWith {
 			_isOk = false;
@@ -326,7 +326,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 
-		_previewCounter = _previewCounter - 0.1;
+		_previewCounter = _previewCounter - 0.5;
 		
 		if(abs(_objHDiff) > 5) exitWith {
 			_isOk = false;
