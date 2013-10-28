@@ -193,8 +193,7 @@ if (_hasrequireditem) then {
 
 	cutText ["Planning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to build.", "PLAIN DOWN"];
 	_previewCounter = 60;
-	_objHupDiff = 0;
-	_objHdwnDiff = 0;
+	_objHDiff = 0;
 	
 	while {_isOk} do {
 		
@@ -261,35 +260,29 @@ if (_hasrequireditem) then {
 
 			if(_zheightdirection == "up") then {
 				_position set [2,((_position select 2)+0.1)];
-				_objHupDiff = _objHupDiff + 0.1;
-				_objHdwnDiff = _objHdwnDiff - 0.1;
+				_objHDiff = _objHDiff + 0.1;
 			};
 			if(_zheightdirection == "down") then {
 				_position set [2,((_position select 2)-0.1)];
-				_objHdwnDiff = _objHdwnDiff + 0.1;
-				_objHupDiff = _objHupDiff - 0.1;
+				_objHDiff = _objHDiff - 0.1;
 			};
 
 			if(_zheightdirection == "up_alt") then {
 				_position set [2,((_position select 2)+1)];
 				_objHupDiff = _objHupDiff + 1;
-				_objHdwnDiff = _objHdwnDiff - 1;
 			};
 			if(_zheightdirection == "down_alt") then {
 				_position set [2,((_position select 2)-1)];
-				_objHdwnDiff = _objHdwnDiff + 1;
-				_objHupDiff = _objHupDiff - 1;
+				_objHDiff = _objHDiff - 1;
 			};
 
 			if(_zheightdirection == "up_ctrl") then {
 				_position set [2,((_position select 2)+0.01)];
 				_objHupDiff = _objHupDiff + 0.01;
-				_objHdwnDiff = _objHdwnDiff - 0.01;
 			};
 			if(_zheightdirection == "down_ctrl") then {
 				_position set [2,((_position select 2)-0.01)];
-				_objHdwnDiff = _objHdwnDiff + 0.01;
-				_objHupDiff = _objHupDiff - 0.01;
+				_objHDiff = _objHDiff - 0.01;
 			};
 			
 			_object setDir (getDir _object);
@@ -302,7 +295,7 @@ if (_hasrequireditem) then {
 			
 		};
 		
-		sleep 1;
+		sleep 0.1;
 
 		_location2 = getPosATL player;
 
@@ -323,7 +316,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 		
-		cutText [format["%1",_previewCounter], "PLAIN DOWN"];
+		[format["<t size='0.6'>Time left to build: %1</t>",(ceil(_previewCounter))],0,0.8,0.1,0,0,8] spawn BIS_fnc_dynamicText;
 		
 		if(_previewCounter <= 0) exitWith {
 			_isOk = false;
@@ -333,9 +326,9 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 
-		_previewCounter = _previewCounter - 1;
+		_previewCounter = _previewCounter - 0.1;
 		
-		if((_objHdwnDiff > 5) or (_objHupDiff > 5)) exitWith {
+		if(abs(_objHDiff) > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = "Cannot move up or down more than 5 meters"; 
