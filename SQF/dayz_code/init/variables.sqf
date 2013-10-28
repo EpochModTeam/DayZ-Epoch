@@ -485,6 +485,10 @@ dayz_fuelsources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_st
 dayz_spawnPos = getPosATL player;
 
 DZE_Lock_Door = "";
+	
+if(isNil "DZE_FriendlySaving") then {
+	DZE_FriendlySaving = true;
+};
 
 //init global arrays for Loot Chances
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
@@ -623,9 +627,6 @@ if(!isDedicated) then {
 	};
 	if(isNil "DZE_ForceNameTagsOff") then {
 		DZE_ForceNameTagsOff = false;
-	};
-	if(isNil "DZE_FriendlySaving") then {
-		DZE_FriendlySaving = true;
 	};
 	
 	DZE_Friends = [];
