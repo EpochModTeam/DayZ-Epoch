@@ -165,6 +165,9 @@ if (_characterID != "0") then {
 		};
 		_temp = round(_character getVariable ["temperature",100]);
 		_currentState = [_currentWpn,_currentAnim,_temp];
+		if(DZE_FriendlySaving) then {
+			_currentState set [(count _currentState),(_character getVariable ["friendlyTo",[]])];
+		};
 		/*
 			Everything is ready, now publish to HIVE
 		*/
