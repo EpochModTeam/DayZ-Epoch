@@ -1085,7 +1085,10 @@ class FSM
        "	//Reload players state" \n
        "	if (count _state > 2) then {" \n
        "		dayz_temperatur = _state select 2;" \n
-       "	};" \n
+       "	}; " \n
+	   "	if ((count _state > 3) and DZE_FriendlySaving) then {" \n
+       "		DZE_Friends = _state select 3;" \n
+       "	}; " \n
        "} else {" \n
        "	_currentWpn	=	""Makarov"";" \n
        "	_currentAnim	=	""aidlpercmstpsraswpstdnon_player_idlesteady02"";" \n

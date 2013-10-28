@@ -624,6 +624,11 @@ if(!isDedicated) then {
 	if(isNil "DZE_ForceNameTagsOff") then {
 		DZE_ForceNameTagsOff = false;
 	};
+	if(isNil "DZE_FriendlySaving") then {
+		DZE_FriendlySaving = true;
+	};
+	
+	DZE_Friends = [];
 
 	DZE_CanPickup = true;
 	DZE_Q = false;
