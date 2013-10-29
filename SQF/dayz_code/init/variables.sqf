@@ -249,6 +249,7 @@ call dayz_resetSelfActions;
 //Engineering variables
 s_player_lastTarget =	[objNull,objNull,objNull,objNull,objNull];
 s_player_repairActions = [];
+s_player_lockunlock = [];
 
 // Custom 
 s_player_madsci 		= 	[];
