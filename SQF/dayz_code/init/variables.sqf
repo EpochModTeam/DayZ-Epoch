@@ -459,10 +459,6 @@ if(isNil "dayz_zedsAttackVehicles") then {
 	dayz_zedsAttackVehicles = true;
 };
 
-if(isNil "DZE_FriendlySaving") then {
-	DZE_FriendlySaving = true;
-};
-
 // update objects
 dayz_updateObjects = ["Plane","Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage","LockboxStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ"];
 dayz_disallowedVault = ["TentStorage", "BuiltItems","ModularItems","DZE_Base_Object"];
@@ -486,7 +482,7 @@ DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP
 // Standard Fuel sources
 dayz_fuelsources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","land_fuelstation_w","Land_benzina_schnell"];
 
-dayz_spawnPos = getPosATL player;
+
 
 DZE_Lock_Door = "";
 	
@@ -524,6 +520,9 @@ if(isServer) then {
 };
 
 if(!isDedicated) then {
+
+	dayz_spawnPos = getPosATL player;
+
 	//Establish Location Streaming
 	_funcGetLocation = 
 	{
