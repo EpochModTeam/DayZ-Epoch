@@ -384,14 +384,16 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 	
 	//Packing my tent
-	if(_isTent) then {
+	if(_isTent and (player distance _cursorTarget < 3)) then {
 		if (_ownerID == dayz_characterID) then {
-			if ((s_player_packtent < 0) and (player distance _cursorTarget < 3)) then {
+			if (s_player_packtent < 0) then {
 				s_player_packtent = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",_cursorTarget, 0, false, true, "",""];
 			};
 		} else {
-			if ((s_player_packtent < 0) and (player distance _cursorTarget < 3)) then {
-				s_player_deleteBuild = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, true, true, "", ""];
+			if(("ItemJerrycan" in _magazinesPlayer) and ("ItemMatchbox_DZE" in weapons player)) then {
+				if (s_player_packtent < 0) then {
+					s_player_packtent = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, true, true, "", ""];
+				};
 			};
 		};
 	} else {
