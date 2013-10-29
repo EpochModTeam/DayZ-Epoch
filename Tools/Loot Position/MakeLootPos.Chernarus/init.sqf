@@ -1,0 +1,1 @@
+waituntil {!isnil "bis_fnc_init"};
