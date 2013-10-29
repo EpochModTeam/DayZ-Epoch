@@ -1222,11 +1222,6 @@ class FSM
        "" \n
        "		call player_checkStealth;" \n
        "		dayz_statusArray = [] call player_updateGui;" \n
-       "		if (!isNull cursorTarget and !dayz_heartBeat) then {" \n
-       "			if (alive cursorTarget) then {" \n
-       "				_id = cursorTarget spawn dayz_lowHumanity;" \n
-       "			};" \n
-       "		};" \n
        "		sleep 0.2;" \n
        "	};" \n
        "};" \n
