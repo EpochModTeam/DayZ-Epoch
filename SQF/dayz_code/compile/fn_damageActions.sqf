@@ -178,6 +178,7 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 		};
 		
 	};
+	/*
 	if ((_unit isKindOf "Building")) then {
 		_type = TypeOf(_unit);
 		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
@@ -204,6 +205,7 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 			r_player_actions set [count r_player_actions,_action];
 		};
 	};
+	*/
 	if (r_action) then {
 		r_action_targets = r_action_targets + [_unit];
 	};
