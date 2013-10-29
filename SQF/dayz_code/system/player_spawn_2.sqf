@@ -15,7 +15,8 @@ _maxDistancePlayer = DZE_teleport select 3;
 _maxDistanceVehicle = DZE_teleport select 4;
 
 player setVariable ["temperature",dayz_temperatur,true];
-player setVariable ["friendlyTo",DZE_Friends,true];
+
+player setVariable["friendlies",DZE_Friends,true];
 
 dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) +  (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
 

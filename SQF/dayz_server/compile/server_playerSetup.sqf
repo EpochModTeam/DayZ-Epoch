@@ -61,9 +61,6 @@ _worldspace = 	_primary select 4;
 _humanity =		_primary select 5;
 _lastinstance =	_primary select 6;
 
-_namespace = profileNamespace;
-_friendlies = _namespace getVariable ["friendlies", []];;
-
 //Set position
 _randomSpot = false;
 
@@ -235,7 +232,6 @@ _playerObj setVariable["humanity_CHK",_humanity];
 //_playerObj setVariable["worldspace",_worldspace,true];
 //_playerObj setVariable["state",_state,true];
 _playerObj setVariable["lastPos",getPosATL _playerObj];
-_playerObj setVariable["friendlies",_friendlies,true];
 
 dayzPlayerLogin2 = [_worldspace,_state];
 _clientID = owner _playerObj;
