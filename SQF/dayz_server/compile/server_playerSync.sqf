@@ -2,6 +2,12 @@ private ["_empty","_playerwasNearby","_character","_magazines","_force","_charac
 
 _character = 	_this select 0;
 _magazines =	_this select 1;
+
+// prevent sending more than 12 magazine items
+if ((count _magazines) > 12) then {
+	_magazines = [_magazines,12] call array_reduceSize;
+};
+
 //_force = 		_this select 2;
 _forceGear =	_this select 3;
 _force =	true;
@@ -167,7 +173,7 @@ if (_characterID != "0") then {
 		_currentState = [_currentWpn,_currentAnim,_temp];
 		if(DZE_FriendlySaving) then {
 			// save only last/most recent 5 entrys as we only have 200 chars in db field and weapon + animation names are sometimes really long 60-70 chars.
-			_friendlies = [(_character getVariable ["friendlies",[]]),5] call array_reduceReverse;
+			_friendlies = [(_character getVariable ["friendlies",[]]),5] call array_reduceSizeReverse;
 			_currentState set [(count _currentState),_friendlies];
 		};
 		/*
