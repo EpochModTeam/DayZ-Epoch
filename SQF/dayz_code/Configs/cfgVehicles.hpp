@@ -2722,6 +2722,7 @@ class CfgVehicles {
 		displayName = "30m Plot Pole";
 		vehicleClass = "Fortifications";
 		removeoutput[] = {{"30m_plot_kit",1}};
+		requireplot = 0;
 	};
 	class USMC_WarfareBMGNest_M240;
 	class M240Nest_DZ: USMC_WarfareBMGNest_M240
