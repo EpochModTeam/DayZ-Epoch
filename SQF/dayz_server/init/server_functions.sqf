@@ -37,7 +37,7 @@ vehicle_handleInteract = {
 	[_object, "all"] call server_updateObject;
 };
 
-array_reduceReverse = {
+array_reduceSizeReverse = {
 	private["_array","_count","_num","_newarray","_startnum","_index"];
 	_array = _this select 0;
 	_newarray = [];
@@ -48,6 +48,23 @@ array_reduceReverse = {
 		_index = _count - 1;
 		for "_i" from 0 to _index do {
 			_newarray set [(_index-_i),_array select (_startnum - _i)];
+		};
+		_array = _newarray;
+	}; 
+	_array
+};
+
+array_reduceSize = {
+	private["_array","_count","_num","_newarray","_startnum","_index"];
+	_array = _this select 0;
+	_newarray = [];
+	_count = _this select 1;
+	_num = count _array;
+	if (_num > _count) then {
+		_startnum = _num - 1;
+		_index = _count - 1;
+		for "_i" from 0 to _index do {
+			_newarray set [_i,_array select _i];
 		};
 		_array = _newarray;
 	}; 
