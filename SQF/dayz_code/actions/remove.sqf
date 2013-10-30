@@ -206,6 +206,9 @@ if (_proceed) then {
 				};
 				_item addMagazineCargoGlobal [_itemOut,_countOut];				
 			} forEach _selectedRemoveOutput;
+
+			_item setposATL _iPos;
+
 			player reveal _item;
 
 			player action ["Gear", _item];
