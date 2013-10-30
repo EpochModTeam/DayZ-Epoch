@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.2.5";
+		version = "1.0.2.6";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -490,7 +490,49 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "TK_INS_Warlord_EP1_DZ";
 		};
+
+
 		
+		class Skin_TK_Special_Forces_MG_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_Special_Forces_MG_EP1_DZ";
+		};
+		class Skin_TK_Soldier_Sniper_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_Soldier_Sniper_EP1_DZ";
+		};
+		class Skin_TK_Commander_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_Commander_EP1_DZ";
+		};
+		class Skin_RU_Soldier_Crew_DZ: Default {
+			sex = "male";
+			playerModel = "RU_Soldier_Crew_DZ";
+		};
+		class Skin_Ins_Lopotev_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Lopotev_DZ";
+		};
+		class Skin_Ins_Soldier_AR_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Soldier_AR_DZ";
+		};		
+		class Skin_Ins_Soldier_CO_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Soldier_CO_DZ";
+		};
+		class Skin_Ins_Bardak_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Bardak_DZ";
+		};
+		class Skin_Ins_Worker2_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Worker2_DZ";
+		};
+
+
+
+
 
 
 	};

@@ -166,7 +166,9 @@ if (_characterID != "0") then {
 		_temp = round(_character getVariable ["temperature",100]);
 		_currentState = [_currentWpn,_currentAnim,_temp];
 		if(DZE_FriendlySaving) then {
-			_currentState set [(count _currentState),(_character getVariable ["friendlies",[]])];
+			// save only last/most recent 5 entrys as we only have 200 chars in db field and weapon + animation names are sometimes really long 60-70 chars.
+			_friendlies = [(_character getVariable ["friendlies",[]]),5] call array_reduceReverse;
+			_currentState set [(count _currentState),_friendlies];
 		};
 		/*
 			Everything is ready, now publish to HIVE

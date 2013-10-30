@@ -17,7 +17,7 @@ dayz_CurrentZombies = 0;
 _soundLimit = 3;
 {
 	if (!alive _x) then {
-		[player,"flysound",0,true] call dayz_zombieSpeak;
+		[player,"flysound",1,true] call dayz_zombieSpeak;
 		_soundLimit = _soundLimit - 1;
 	};
 	if (_soundLimit == 0) exitWith {};

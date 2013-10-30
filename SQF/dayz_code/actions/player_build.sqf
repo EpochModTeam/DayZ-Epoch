@@ -37,10 +37,10 @@ DZE_cancelBuilding = false;
 call gear_ui_init;
 closeDialog 1;
 
-if(_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
+if (_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
 if (_inVehicle) exitWith {TradeInprogress = false; cutText ["Cannot build while in a vehicle.", "PLAIN DOWN"];};
-if(_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
-if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Cannot build while in combat.", "PLAIN DOWN"];};
+if (_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
+if (player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Cannot build while in combat.", "PLAIN DOWN"];};
 
 _item =	_this;
 
@@ -88,9 +88,6 @@ if(_abort) exitWith {
 	TradeInprogress = false;
 };
 
-
-
-
 _classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _classnametmp = _classname;
 _require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
@@ -102,6 +99,11 @@ if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
 	_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable");
 };
 
+_requireplot = 1;
+if(isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
+	_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");
+};
+
 _offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 
 if((count _offset) <= 0) then {
@@ -109,12 +111,13 @@ if((count _offset) <= 0) then {
 };
 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
+_isLandFireDZ = (_classname == "Land_Fire_DZ");
 
 _distance = 30;
 _needText = "Plot Pole";
 
 if(_isPole) then {
-	_distance = 45;
+	_distance = 60;
 };
 
 // check for near plot
@@ -133,8 +136,14 @@ _IsNearPlot = count (_findNearestPole);
 if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["Cannot build plot pole within 45m of an existing plot." , "PLAIN DOWN"]; };
 
 if(_IsNearPlot == 0) then {
-	_canBuildOnPlot = true;
+
+	// Allow building of plot
+	if(_requireplot == 0 or _isLandFireDZ) then {
+		_canBuildOnPlot = true;
+	};
+
 } else {
+	// Since there are plots nearby we check for ownership and then for friend status
 	
 	// check nearby plots ownership and then for friend status
 	_nearestPole = _findNearestPole select 0;
@@ -145,13 +154,20 @@ if(_IsNearPlot == 0) then {
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
 	// check if friendly to owner
-	if(dayz_characterID == _ownerID) then {
-		_canBuildOnPlot = true;		
+	if(dayz_characterID == _ownerID) then {  //Keep ownership
+		// owner can build anything within his plot except other plots
+		if(!_isPole) then {
+			_canBuildOnPlot = true;		
+		};
+
 	} else {
-		_friendlies		= player getVariable ["friendlyTo",[]];
-		// check if friendly to owner
-		if(_ownerID in _friendlies) then {
-			_canBuildOnPlot = true;
+		// disallow building plot
+		if(!_isPole) then {
+			_friendlies		= player getVariable ["friendlyTo",[]];
+			// check if friendly to owner
+			if(_ownerID in _friendlies) then {
+				_canBuildOnPlot = true;
+			};
 		};
 	};
 };
@@ -180,18 +196,18 @@ if (_hasrequireditem) then {
 	_dir = getDir player;
 
 	// if ghost preview available use that instead
-	if (_ghost == "") then {
-		_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-	} else {
+	if (_ghost != "") then {
 		_classname = _ghost;
-		_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	};
+
+	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	
 	_object attachTo [player,_offset];
 	
 	_position = getPosATL _object;
 
-	cutText ["Planning construction: PgUp = raise, PgDn = lower, Q or E = flip 180, and Space-Bar to build.", "PLAIN DOWN"];
+	cutText ["PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.", "PLAIN DOWN"];
+
 	_previewCounter = 60;
 	_objHDiff = 0;
 	
@@ -211,8 +227,6 @@ if (_hasrequireditem) then {
 			_zheightdirection = "down";
 			_zheightchanged = true;	
 		};
-
-
 		if (DZE_Q_alt) then {
 			DZE_Q_alt = false;
 			_zheightdirection = "up_alt";
@@ -223,8 +237,6 @@ if (_hasrequireditem) then {
 			_zheightdirection = "down_alt";
 			_zheightchanged = true;
 		};
-
-
 		if (DZE_Q_ctrl) then {
 			DZE_Q_ctrl = false;
 			_zheightdirection = "up_ctrl";
@@ -235,7 +247,6 @@ if (_hasrequireditem) then {
 			_zheightdirection = "down_ctrl";
 			_zheightchanged = true;
 		};
-
 		if (DZE_4) then {
 			_rotate = true;
 			DZE_4 = false;

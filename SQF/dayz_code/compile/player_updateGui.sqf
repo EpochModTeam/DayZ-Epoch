@@ -184,7 +184,8 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 				// diag_log format["IS FRIENDLY: %1", _player];
 				_rfriendlyTo set [count _rfriendlyTo, _charID];
 				_humanityTarget setVariable ["friendlyTo", _rfriendlyTo, true];
-				titleText [format["You and %1 are now tagged as friendlies.", (name _humanityTarget)], "PLAIN DOWN"];
+				
+				// titleText [format["You and %1 are now tagged as friendlies.", (name _humanityTarget)], "PLAIN DOWN"];
 
 			};
 	

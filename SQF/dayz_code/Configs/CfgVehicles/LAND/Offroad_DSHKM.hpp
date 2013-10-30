@@ -334,3 +334,27 @@ class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_base
 		};
 	};
 };
+
+// Performance 1
+class Offroad_DSHKM_Gue_DZE1: Offroad_DSHKM_Gue_DZE
+{
+	maxspeed = 170; // Offroad_DSHKM_base 150 | car 100
+};
+// Armmor 2
+class Offroad_DSHKM_Gue_DZE2: Offroad_DSHKM_Gue_DZE1
+{
+	armor = 50; // car 20
+};
+// Cargo 3
+class Offroad_DSHKM_Gue_DZE3: Offroad_DSHKM_Gue_DZE2
+{
+	transportMaxWeapons = 20;  // car 10
+	transportMaxMagazines = 100; // car 50 
+    transportmaxbackpacks = 4; // car 2
+};
+// Fuel 4
+class Offroad_DSHKM_Gue_DZE4: Offroad_DSHKM_Gue_DZE3
+{
+	fuelCapacity = 210; // car 100
+};
+	

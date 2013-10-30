@@ -1242,6 +1242,8 @@ class CfgVehicles {
 		canHideBodies = 1;
 	};
 
+	#include "CfgVehicles\Players.hpp"
+
 	#include "CfgVehicles\Bags.hpp"
 	
 	//An2_TK_EP1
@@ -1505,32 +1507,10 @@ class CfgVehicles {
 		transportFuel = 0;
 		fuelCapacity = 10000;
 	};
-	
-	// Vehicle Upgrades
 
-	// Performance 1
-	class Offroad_DSHKM_Gue;
-	class Offroad_DSHKM_Gue_DZE1: Offroad_DSHKM_Gue
-	{
-		maxspeed = 110;
-	};
-	// Armmor 2
-	class Offroad_DSHKM_Gue_DZE2: Offroad_DSHKM_Gue_DZE1
-	{
-		armor = 100;
-	};
-	// Cargo 3
-	class Offroad_DSHKM_Gue_DZE3: Offroad_DSHKM_Gue_DZE2
-	{
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 200;
-        transportmaxbackpacks = 5;
-	};
-	// Fuel 4
-	class Offroad_DSHKM_Gue_DZE4: Offroad_DSHKM_Gue_DZE3
-	{
-		fuelCapacity = 210;
-	};
+	// Vehicle Upgrades
+	#include "CfgVehicles\LAND\Volha.hpp"
+
 	
 	//class NonStrategic;
 	class BuiltItems: NonStrategic{};
@@ -1661,6 +1641,7 @@ class CfgVehicles {
 		maintainBuilding[] = {{"PartWoodLumber",1}};
 		constructioncount = 1;
 		removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
+		requireplot = 0;
 	};
 
 	// belt buckle
@@ -1704,6 +1685,7 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		constructioncount = 1;
 		removeoutput[] = {{"ItemGenerator",1}};
+		requireplot = 0;
 	};
 	class FuelPump_DZ: BuiltItems
 	{
@@ -1719,6 +1701,7 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		constructioncount = 2;
 		removeoutput[] = {{"ItemFuelPump",1}};
+		requireplot = 0;
 	};
 
 	class Fort_RazorWire : BuiltItems { 
@@ -3125,6 +3108,7 @@ class CfgVehicles {
 		create = "WeaponHolder_ItemTentOld";
 		constructioncount = 1;
 		offset[] = {0,2.5,0};
+		requireplot = 0;
 	};
 	class TentStorageDomed: TentStorage
 	{
@@ -3161,6 +3145,7 @@ class CfgVehicles {
 		transportMaxBackpacks = 10;
 		lockedClass = "VaultStorageLocked";
 		packedClass = "WeaponHolder_ItemVault";
+		requireplot = 0;
 	};	
 	class VaultStorageLocked: Land_A_tent
 	{
@@ -3176,6 +3161,7 @@ class CfgVehicles {
 		offset[] = {0,1.5,0.5};
 		lockable = 4;
 		unlockedClass = "VaultStorage";
+		requireplot = 0;
 	};
 
 	class LockboxStorageLocked: Land_A_tent
