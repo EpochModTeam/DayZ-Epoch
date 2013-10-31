@@ -2,8 +2,8 @@ private ["_empty","_playerwasNearby","_character","_magazines","_force","_charac
 
 _character = 	_this select 0;
 
-// prevent sending more than 12 magazine items
-_magazines = [(_this select 1),12] call array_reduceSize;
+// prevent saving more than 20 magazine items
+_magazines = [(_this select 1),20] call array_reduceSize;
 
 //_force = 		_this select 2;
 _forceGear =	_this select 3;

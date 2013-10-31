@@ -57,6 +57,7 @@ array_reduceSizeReverse = {
 array_reduceSize = {
 	private["_array","_count","_num","_newarray","_startnum","_index"];
 	_array = _this select 0;
+	diag_log format ["array_reduceSize IN:  %1", _array];
 	_newarray = [];
 	_count = _this select 1;
 	_num = count _array;
@@ -68,7 +69,9 @@ array_reduceSize = {
 		};
 		_array = _newarray;
 	}; 
+	diag_log format ["array_reduceSize OUT:  %1", _array];	
 	_array
+	
 };
 
 vehicle_handleServerKilled = {
