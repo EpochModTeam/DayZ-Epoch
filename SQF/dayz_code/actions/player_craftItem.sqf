@@ -182,6 +182,8 @@ if (_canDo) then {
 								_outputWeapons = [_selectedWeapon];
 								_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
 								_selectedRecipeOutput = [_selectedMag];
+								// exit loop
+								_craft_doLoop = false;
 							};
 							{
 								player addWeapon _x; 
