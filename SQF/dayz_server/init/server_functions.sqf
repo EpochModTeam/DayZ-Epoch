@@ -26,6 +26,8 @@ server_spawnCrashSite  =    compile preprocessFileLineNumbers "\z\addons\dayz_se
 server_handleZedSpawn =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleZedSpawn.sqf";
 server_spawnEvents =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
 
+server_antiWall =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_antiWall.sqf";
+
 fnc_plyrHit   = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
 server_deaths = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
 
@@ -55,24 +57,15 @@ array_reduceSizeReverse = {
 };
 
 array_reduceSize = {
-	private["_array1","_array","_count","_num","_newarray","_startnum","_index"];
+	private ["_array1","_array","_count","_num"];
 	_array1 = _this select 0;
 	_array = _array1 - ["Hatchet_Swing","Machete_Swing","Fishing_Swing","sledge_swing","crowbar_swing"];
-	//diag_log format ["array_reduceSize IN:  %1", _array];
-	_newarray = [];
 	_count = _this select 1;
 	_num = count _array;
 	if (_num > _count) then {
-		_startnum = _num - 1;
-		_index = _count - 1;
-		for "_i" from 0 to _index do {
-			_newarray set [_i,_array select _i];
-		};
-		_array = _newarray;
-	}; 
-	//diag_log format ["array_reduceSize OUT:  %1", _array];	
+		_array resize _count;
+	};
 	_array
-	
 };
 
 vehicle_handleServerKilled = {
