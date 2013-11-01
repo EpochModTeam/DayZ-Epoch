@@ -54,7 +54,7 @@ if (_isOk) then {
 			player addMagazine 'sledge_swing';
 		};
 		if (_create == "MeleeHatchet") then {
-			player addMagazine 'hatchet_swing';
+			player addMagazine 'Hatchet_swing';
 		};
 		if (_create == "MeleeMachete") then {
 				player addMagazine 'Machete_swing';

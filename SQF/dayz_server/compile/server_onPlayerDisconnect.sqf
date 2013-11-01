@@ -1,4 +1,4 @@
-private ["_invehicle","_isplayernearby","_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout","_message"];
+private ["_invehicle","_isplayernearby","_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout","_message","_magazines"];
 _playerID = _this select 0;
 _playerName = _this select 1;
 _object = call compile format["player%1",_playerID];
@@ -40,7 +40,11 @@ if (!isNull _object) then {
 	if (alive _object) then {
 
 		_isplayernearby = (DZE_BackpackGuard and!_invehicle and ({isPlayer _x} count (_object nearEntities ["AllVehicles", 5]) > 1));
-		[_object,(magazines _object),true,true,_isplayernearby] call server_playerSync;
+
+		// prevent saving more than 20 magazine items
+		_magazines = [(magazines _object),20] call array_reduceSize;
+
+		[_object,_magazines,true,true,_isplayernearby] call server_playerSync;
 		
 		// maybe not needed just testing
 		_object removeAllEventHandlers "MPHit";
