@@ -21,14 +21,6 @@ if (_removed == 1) then {
 			} else {
 				publicVariable "PVDZE_veh_Lock";
 			};
-
-			/*
-			player moveInDriver _vehicle;
-
-			if (local vehicle player) then {
-				vehicle player engineOn true; 
-			};
-			*/
 		};
 	} else {
 		cutText ["Failed to unlock car hotwire kit broken." , "PLAIN DOWN"];
