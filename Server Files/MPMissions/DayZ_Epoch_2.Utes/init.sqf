@@ -79,18 +79,6 @@ BIS_Effects_startEvent = {
 	(_this select 1) call BIS_Effects_startEvent;
 };
 
-if ((!isServer) && (isNull player) ) then
-{
-waitUntil {!isNull player};
-waitUntil {time > 3};
-};
-
-if ((!isServer) && (player != player)) then
-{
-  waitUntil {player == player}; 
-  waitUntil {time > 3};
-};
-
 if (isServer) then {
 	call compile preprocessFileLineNumbers "dynamic_vehicle.sqf";				//Compile vehicle configs
 	

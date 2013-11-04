@@ -52,18 +52,6 @@ progressLoadingScreen 1.0;
 
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
-if ((!isServer) && (isNull player) ) then
-{
-waitUntil {!isNull player};
-waitUntil {time > 3};
-};
-
-if ((!isServer) && (player != player)) then
-{
-  waitUntil {player == player}; 
-  waitUntil {time > 3};
-};
-
 if (isServer) then {
 	call compile preprocessFileLineNumbers "dynamic_vehicle.sqf";				//Compile vehicle configs
 	

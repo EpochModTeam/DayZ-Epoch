@@ -20,7 +20,7 @@ enableRadio false;
 // DayZ Epoch config
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea = 1500; // Default = 1500
-MaxHeliCrashes= 5; // Default = 5
+MaxHeliCrashes = 5; // Default = 5
 MaxVehicleLimit = 200; // Default = 50
 MaxDynamicDebris = 250; // Default = 100
 dayz_MapArea = 6000; // Default = 10000
@@ -77,18 +77,6 @@ BIS_Effects_startEvent = {
 
 "BIS_effects_gepv" addPublicVariableEventHandler {
 	(_this select 1) call BIS_Effects_startEvent;
-};
-
-if ((!isServer) && (isNull player) ) then
-{
-waitUntil {!isNull player};
-waitUntil {time > 3};
-};
-
-if ((!isServer) && (player != player)) then
-{
-  waitUntil {player == player}; 
-  waitUntil {time > 3};
 };
 
 if (isServer) then {
