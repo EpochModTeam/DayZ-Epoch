@@ -152,8 +152,8 @@ link77[] = {66,59};
 link78[] = {67,15};
 link79[] = {68,69};
 link80[] = {69,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-679.241943,964.876770,1508.830688,-113.169838,892,880,1};
-window[] = {2,-1,-1,-1,-1,910,130,1502,130,3,910};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-456.463867,742.098633,1289.049438,106.611221,892,880,1};
+window[] = {2,-1,-1,-1,-1,1014,234,1606,234,3,910};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1086,7 +1086,7 @@ class FSM
        "	if (count _state > 2) then {" \n
        "		dayz_temperatur = _state select 2;" \n
        "	}; " \n
-	   "	if ((count _state > 3) and DZE_FriendlySaving) then {" \n
+       "	if ((count _state > 3) and DZE_FriendlySaving) then {" \n
        "		DZE_Friends = _state select 3;" \n
        "	}; " \n
        "} else {" \n
@@ -1103,12 +1103,12 @@ class FSM
        "	player addMagazine 'sledge_swing';" \n
        "};" \n
        "if (player hasWeapon ""MeleeHatchet"") then {" \n
-       "	player removeMagazine 'hatchet_swing';		" \n
-       "	player addMagazine 'hatchet_swing';" \n
+       "	player removeMagazine 'Hatchet_Swing';		" \n
+       "	player addMagazine 'Hatchet_Swing';" \n
        "};" \n
        "if (player hasWeapon ""MeleeMachete"") then {" \n
-       "	player removeMagazine 'machete_swing';		" \n
-       "	player addMagazine 'machete_swing';" \n
+       "	player removeMagazine 'Machete_Swing';		" \n
+       "	player addMagazine 'Machete_Swing';" \n
        "};" \n
        "if (player hasWeapon ""MeleeFishingPole"") then {" \n
        "	player removeMagazine 'Fishing_Swing';		" \n
@@ -1215,6 +1215,8 @@ class FSM
        "dayz_gui = [] spawn {" \n
        "	private[""_distance""];" \n
        "	dayz_musicH = [] spawn player_music;" \n
+       "	_wasInVehicle = false;" \n
+       "	_thisVehicle = objNull;" \n
        "	while {true} do {" \n
        "		_array = player call world_surfaceNoise;" \n
        "		dayz_surfaceNoise = _array select 1;" \n
@@ -1222,6 +1224,17 @@ class FSM
        "" \n
        "		call player_checkStealth;" \n
        "		dayz_statusArray = [] call player_updateGui;" \n
+       "" \n
+       "		_vehicle = vehicle player;" \n
+       "		if (_vehicle != player) then {" \n
+       "			_wasInVehicle = true;" \n
+       "			_thisVehicle = _vehicle;" \n
+       "        	} else {" \n
+       "			if (_wasInVehicle) then {" \n
+       "				_wasInVehicle = false;" \n
+       "				_thisVehicle call player_antiWall;" \n
+       "			};" \n
+       "		};" \n
        "		sleep 0.2;" \n
        "	};" \n
        "};" \n
