@@ -847,8 +847,5 @@ if (!isDedicated) then {
 	} else {
 		eh_localCleanup = {};
 	};
-	
-	
-	//Start Dynamic Weather
-	execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
-	initialized = true;
+
+initialized = true;

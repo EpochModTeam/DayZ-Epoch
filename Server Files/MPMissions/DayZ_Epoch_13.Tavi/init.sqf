@@ -85,18 +85,6 @@ BIS_Effects_startEvent = {
 	(_this select 1) call BIS_Effects_startEvent;
 };
 
-if ((!isServer) && (isNull player) ) then
-{
-waitUntil {!isNull player};
-waitUntil {time > 3};
-};
-
-if ((!isServer) && (player != player)) then
-{
-  waitUntil {player == player}; 
-  waitUntil {time > 3};
-};
-
 if (isServer) then {
 	call compile preprocessFileLineNumbers "dynamic_vehicle.sqf";				//Compile vehicle configs
 	
@@ -120,3 +108,5 @@ if (!isDedicated) then {
 	//[0,0,true,true,true,58,280,600,[0.698, 0.556, 0.419],"Generator_DZ",0.1] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 };
 #include "\z\addons\dayz_code\system\REsec.sqf"
+//Start Dynamic Weather
+execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";

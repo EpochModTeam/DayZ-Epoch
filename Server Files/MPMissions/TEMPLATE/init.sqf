@@ -20,7 +20,7 @@ enableRadio false;
 // DayZ Epochconfig
 spawnShoremode = 0; // Default = 1 (on shore)
 spawnArea= 500; // Default = 1500
-MaxHeliCrashes= 3; // Default = 5
+MaxHeliCrashes = 3; // Default = 5
 MaxVehicleLimit = 50; // Default = 50
 MaxDynamicDebris = 100; // Default = 100
 dayz_MapArea = 4000; // Default = 10000
@@ -51,18 +51,6 @@ progressLoadingScreen 1.0;
 
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
-if ((!isServer) && (isNull player) ) then
-{
-waitUntil {!isNull player};
-waitUntil {time > 3};
-};
-
-if ((!isServer) && (player != player)) then
-{
-  waitUntil {player == player}; 
-  waitUntil {time > 3};
-};
-
 if (isServer) then {
 	call compile preprocessFileLineNumbers "dynamic_vehicle.sqf";				//Compile vehicle configs
 	
@@ -86,3 +74,6 @@ if (!isDedicated) then {
 	//[0,0,true,true,true,58,280,600,[0.698, 0.556, 0.419],"Generator_DZ",0.1] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 	
 };
+#include "\z\addons\dayz_code\system\REsec.sqf"
+//Start Dynamic Weather
+execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
