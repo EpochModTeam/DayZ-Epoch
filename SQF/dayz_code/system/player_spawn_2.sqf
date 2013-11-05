@@ -27,10 +27,6 @@ while {true} do {
 	_factor = 0.6;
 	_inVehicle = (_refObj != player);
 
-	if(_inVehicle) then {
-		_factor = 1;
-	};
-	
 	_bloodChanged = false;
 
 	_size = 	(sizeOf typeOf _refObj) * _factor;
