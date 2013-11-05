@@ -66,8 +66,8 @@ class CfgMagazines {
 		count = 2000; 
 		scope = 2; 
 		displayName = "M134 7.62 Nato"; 
-		picture = "\z\addons\dayz_epoch\pictures\equip_m136_mag_ca.paa";
-		model = "\z\addons\dayz_epoch\models\m136_mag.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_m134_mag_ca.paa";
+		model = "\z\addons\dayz_epoch\models\m134_mag.p3d";
 		ammo = "B_762x51_3RndBurst"; 
 		type = "256";
 		maxLeadSpeed = 200; 
