@@ -438,6 +438,11 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\ArmoredSUV.hpp"
 	#include "CfgVehicles\LAND\Pickup_PK.hpp"
 	#include "CfgVehicles\LAND\Offroad_DSHKM.hpp"
+	
+	#include "CfgVehicles\LAND\V3S.hpp"
+	#include "CfgVehicles\LAND\Ural.hpp"
+	#include "CfgVehicles\LAND\Kamaz.hpp"
+	#include "CfgVehicles\LAND\Volha.hpp"
 
 	// SEA
 	// #include "CfgVehicles\SEA\RHIB.hpp"
@@ -505,18 +510,7 @@ class CfgVehicles {
 		side = 0;
 		typicalcargo[] = {};
 	};
-	class V3S_Base;
-	class V3S_Civ: V3S_Base {
-		crew = "";
-		faction = "CIV";
-		rarityurban = 0.3;
-		scope = 2;
-		side = 3;
-		typicalcargo[] = {};
-		class Library {
-			libtextdesc = "The V3S is a Czech-made military 6x6 cargo truck capable of carrying cargo up to 5 tons, or up to 3 tons in rough terrain.<br/>This one is a harmless civilian vehicle.";
-		};
-	};
+	
 	class SkodaBase;
 	 class car_hatchback: SkodaBase {
 		armorcrash0[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_01", 0.707946, 1, 200};
@@ -1507,10 +1501,6 @@ class CfgVehicles {
 		transportFuel = 0;
 		fuelCapacity = 10000;
 	};
-
-	// Vehicle Upgrades
-	#include "CfgVehicles\LAND\Volha.hpp"
-
 	
 	//class NonStrategic;
 	class BuiltItems: NonStrategic{};
