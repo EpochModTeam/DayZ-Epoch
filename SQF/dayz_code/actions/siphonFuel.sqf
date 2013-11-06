@@ -1,6 +1,6 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText","_availableCansEmpty"];
 
-if(TradeInprogress) exitWith { cutText ["Siphon already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_98") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 // Use target from addaction
@@ -46,7 +46,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 			if (_newFuel > 0) then {
 
-				cutText [format["Preparing to siphon, stand still to fill %1.",_canTypeEmpty], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_133"),_canTypeEmpty], "PLAIN DOWN"];
 				
 				// alert zombies
 				[player,20,true,(getPosATL player)] spawn player_alertZombies;

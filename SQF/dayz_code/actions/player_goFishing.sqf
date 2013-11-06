@@ -5,19 +5,19 @@
 */
 private ["_itemOut","_position","_isOk","_counter","_rnd","_item","_itemtodrop","_vehicle","_inVehicle"];
 
-if(TradeInprogress) exitWith { cutText ["\n\nFishing already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_65") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 call gear_ui_init;
 
 // find position 5m in front of player
 _position = player modeltoworld [0,5,0];
-if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText ["\n\nMust be near a shore or on a boat to fish." , "PLAIN DOWN"]; };
+if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_66") , "PLAIN DOWN"]; };
 
-if((currentWeapon player) != "MeleeFishingPole") exitWith {TradeInprogress = false; cutText ["\n\nFishing pole needs to be in your hand to fish.", "PLAIN DOWN"]; };
+if((currentWeapon player) != "MeleeFishingPole") exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_67"), "PLAIN DOWN"]; };
 
 if(dayz_isSwimming) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
-if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["\n\nCanceled Fishing.", "PLAIN DOWN"];};
+if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];};
 
 _isOk = true;
 _counter = 0;
@@ -33,7 +33,7 @@ while {_isOk} do {
 
 	if (r_interrupt or (player getVariable["combattimeout", 0] >= time)) then {
 		_isOk = false;
-		cutText ["\n\nCanceled Fishing.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];
 	} else {
 		
 		sleep 2;
@@ -68,15 +68,15 @@ while {_isOk} do {
 				player addMagazine _itemOut;
 			};
 			
-			cutText ["\n\nYou caught a fish.", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_69"), "PLAIN DOWN"];
 			_isOk = false;
 		} else {
-			cutText ["\n\nNibble... Nibble...", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_70"), "PLAIN DOWN"];
 			_counter = _counter + 1;
 			if(_counter == 10) then {
 				_isOk = false;
 				sleep 2;
-				cutText ["\n\nYou didn't catch anything.", "PLAIN DOWN"];
+				cutText [(localize "str_epoch_player_71"), "PLAIN DOWN"];
 			};
 		};
 	};

@@ -24,7 +24,7 @@ _qty = count _fuelCans;
 	
 	_fillCounter = _fillCounter + 1;
 
-	cutText [format["Preparing to siphon, stand still to fill %1.",_displayName], "PLAIN DOWN"];	
+	cutText [format[(localize "str_epoch_player_133"),_displayName], "PLAIN DOWN"];	
 	
 	// force animation 
 	player playActionNow "Medic";
@@ -75,7 +75,7 @@ _qty = count _fuelCans;
 			} else {
 				player addMagazine "ItemJerrycan";
 			};
-			cutText [format["You have filled %1 with fuel.",_displayName], "PLAIN DOWN"];	
+			cutText [format[(localize "str_epoch_player_134"),_displayName], "PLAIN DOWN"];	
 		} else {
 			_abort = true;
 		};

@@ -1,11 +1,11 @@
 private ["_veh","_location","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 // Test cannot lock while another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot trade while another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -31,7 +31,7 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	cutText ["Starting trade, stand still to complete trade.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
 	 
 	// force animation 
 	player playActionNow "Medic";
@@ -65,7 +65,7 @@ if (_qty >= _qty_in) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Trade." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 	};
 
 	if (_finished) then {

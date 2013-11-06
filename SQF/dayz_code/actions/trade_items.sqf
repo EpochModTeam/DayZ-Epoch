@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_tradeCounter","_next_highest_bar","_third_highest_bar","_next_highest_conv","_third_highest_conv","_third_parts_out_raw","_third_parts_out","_remainder","_next_parts_out_raw","_next_parts_out","_activatingPlayer","_traderID","_total_trades"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 _total_parts_out = 0;
@@ -47,7 +47,7 @@ for "_x" from 1 to _total_trades do {
 
 	// cutText ["Starting trade, stand still to complete.", "PLAIN DOWN"];
 	if(_total_trades == 1) then { 
-		cutText [format[("Starting trade, stand still to complete trade."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[((localize "str_epoch_player_105")),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	} else {
 		cutText [format[("Starting trade, stand still to complete trade %1 of %2."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	};
@@ -87,7 +87,7 @@ for "_x" from 1 to _total_trades do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Trade." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 	};
 
 	if (_finished) then {

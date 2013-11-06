@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_configVeh","_nameText","_towTruck","_inTow"];
 
-if(TradeInprogress) exitWith { cutText ["Already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 player removeAction s_player_towing;
@@ -76,7 +76,7 @@ if(_inTow) then {
 		_towTruck setVariable ["DZEvehicleInTow", objNull, true];	
 	};
 } else {
-	cutText ["No Vehicles In Tow.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_102"), "PLAIN DOWN"];
 };
 TradeInprogress = false;
 s_player_towing = -1;

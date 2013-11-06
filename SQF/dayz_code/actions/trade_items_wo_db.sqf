@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades","_humanityGain","_humanity"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 //_activatingPlayer = player;
@@ -37,7 +37,7 @@ for "_x" from 1 to _total_trades do {
 	_tradeCounter = _tradeCounter + 1;
 
 	if(_total_trades == 1) then {
-		cutText [format[("Starting trade, stand still to complete trade."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[((localize "str_epoch_player_105")),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	} else {
 		cutText [format[("Starting trade, stand still to complete trade %1 of %2."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	};
@@ -73,7 +73,7 @@ for "_x" from 1 to _total_trades do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Trade." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 	};
 
 	_qty = {_x == _part_in} count magazines player;

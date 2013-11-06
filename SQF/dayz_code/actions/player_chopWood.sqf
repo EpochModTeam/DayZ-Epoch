@@ -90,7 +90,7 @@ if (count(_findNearestTree) >= 1) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format["\n\nChopping down tree, walk away at anytime to cancel. (%1/%2)", _counter,  _countOut], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_147"), _counter,  _countOut], "PLAIN DOWN"];
 
 			if(_counter == _countOut) exitWith {
 				_isOk = false;
@@ -114,7 +114,7 @@ if (count(_findNearestTree) >= 1) then {
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 
-			cutText [format["\n\n%1 piles of wood has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_148"), _countOut], "PLAIN DOWN"];
 
 			player action ["Gear", _item];
 

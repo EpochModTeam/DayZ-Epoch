@@ -1,6 +1,6 @@
 private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_isOK","_brokenPart","_findPercent","_damage","_hasToolbox","_nameType","_namePart"];
 
-if(TradeInprogress) exitWith { cutText ["Salvage already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_94") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 //_id = _this select 2;
@@ -107,7 +107,7 @@ if (_hasToolbox) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Salvage.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_95"), "PLAIN DOWN"];
 	};
 			
 } else {

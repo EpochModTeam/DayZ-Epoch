@@ -28,7 +28,7 @@ if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText [format["That %1 is already being unlocked.",_text], "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
 
 // Promt user for password if _ownerID != dayz_playerUID
 if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
@@ -111,7 +111,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 				} forEach _objWpnTypes;
 			};
 	
-			cutText [format["%1 has been unlocked.",_text], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_125"),_text], "PLAIN DOWN"];
 		};
 	} else {
 		TradeInprogress = false; 
@@ -123,7 +123,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	null = [player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;
-	cutText [format["Combination incorrect, %1 is still locked.",_text], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_126"),_text], "PLAIN DOWN"];
 };
 s_player_unlockvault = -1;
 TradeInprogress = false;

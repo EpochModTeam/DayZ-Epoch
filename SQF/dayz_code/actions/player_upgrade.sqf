@@ -172,16 +172,16 @@ if ((count _upgrade) > 0) then {
 		} else {
 		
 			{player addMagazine _x;} forEach _temp_removed_array;
-			cutText [format["Missing Parts after first check Item: %1 / %2",_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 		
 		};
 	} else {
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-		cutText [format["Missing %1 more of %2",_missingQty, _textMissing], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_146"),_missingQty, _textMissing], "PLAIN DOWN"];
 	};
 
 } else {
-	cutText ["No upgrades available", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_82"), "PLAIN DOWN"];
 };
 
 TradeInprogress = false;

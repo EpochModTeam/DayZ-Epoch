@@ -23,7 +23,7 @@ call gear_ui_init;
 
 // require one tin bar per key
 _hasTinBar = 	"ItemTinBar" in magazines player;
-if(!_hasTinBar) exitWith {TradeInprogress = false; cutText ["\n\nKey crafting requires a 1 Tin Bar." , "PLAIN DOWN"]};
+if(!_hasTinBar) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_59") , "PLAIN DOWN"]};
 
 player playActionNow "Medic";
 
@@ -63,9 +63,9 @@ if(_finished) then {
 		_qty = 1;
 		_box = unitBackpack player;
 		_box addWeaponCargoGlobal [_create,_qty];
-		cutText ["\n\nCopied key has been added to your backpack." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_60") , "PLAIN DOWN"];
 	} else {
-		cutText ["\n\nCanceled Key Crafting." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_61") , "PLAIN DOWN"];
 	};
 } else {
 	r_interrupt = false;
@@ -73,6 +73,6 @@ if(_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText ["\n\nCanceled Key Crafting." , "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_61") , "PLAIN DOWN"];
 };
 TradeInprogress = false;

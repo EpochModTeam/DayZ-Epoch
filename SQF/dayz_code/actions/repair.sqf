@@ -1,6 +1,6 @@
 private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_num_removed","_damage","_dis","_sfx","_allFixed","_id","_hasToolbox","_section","_nameType","_namePart","_hitpoints"];
 
-if(TradeInprogress) exitWith { cutText ["Repair already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_92") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _id = _this select 2;
@@ -91,7 +91,7 @@ if (_section and _hasToolbox) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Repair.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_93"), "PLAIN DOWN"];
 	};
 			
 } else {

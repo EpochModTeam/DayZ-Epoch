@@ -22,7 +22,7 @@ _cookedmeat = meatcooked;
 		
 		_qty = {_x == _meat} count magazines player;
 
-		cutText [format["Started cooking %1",_textraw], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_129"),_textraw], "PLAIN DOWN"];
 
 		player playActionNow "Medic";
 		
@@ -71,7 +71,7 @@ _cookedmeat = meatcooked;
 				player playActionNow "stop";
 			};
 
-			cutText [format["Canceled cooking %1",_textraw], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_130"),_textraw], "PLAIN DOWN"];
 		};
 	};
 } forEach _rawmeat;

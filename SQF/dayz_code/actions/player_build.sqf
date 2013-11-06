@@ -84,7 +84,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 
 
 if(_abort) exitWith {
-	cutText [format["\n\nThis building needs a %1 within %2 meters",_reason,_distance], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_135"),_reason,_distance], "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
@@ -173,7 +173,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // _message
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Unable to build %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format[(localize "str_epoch_player_136"),_needText,_distance] , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -185,7 +185,7 @@ _hasrequireditem = true;
 _hasbuilditem = _this in magazines player;
 if (!_hasbuilditem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]; };
 
-if (!_hasrequireditem) exitWith {TradeInprogress = false; cutText [format["Missing tool %1",_missing] , "PLAIN DOWN"]; };
+if (!_hasrequireditem) exitWith {TradeInprogress = false; cutText [format[(localize "str_epoch_player_137"),_missing] , "PLAIN DOWN"]; };
 if (_hasrequireditem) then {
 
 	_location = [0,0,0];
@@ -386,7 +386,7 @@ if (_hasrequireditem) then {
 		_tmpbuilt setPosATL _location;
 
 		
-		cutText [format["Placing %1, move to cancel.",_text], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_138"),_text], "PLAIN DOWN"];
 		
 		_limit = 3;
 
@@ -443,7 +443,7 @@ if (_hasrequireditem) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format["Constructing %1 stage %2 of %3, move to cancel.",_text, _counter,_limit], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_139"),_text, _counter,_limit], "PLAIN DOWN"];
 
 			if(_counter == _limit) exitWith {
 				_isOk = false;
@@ -509,7 +509,7 @@ if (_hasrequireditem) then {
 					PVDZE_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],_classname];
 					publicVariableServer "PVDZE_obj_Publish";
 
-					cutText [format["You have setup your %2. Combination is %1",_combinationDisplay,_text], "PLAIN DOWN", 5];
+					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5];
 					
 
 				} else {

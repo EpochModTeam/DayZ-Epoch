@@ -28,11 +28,11 @@ player playActionNow "Medic";
 player removeAction s_player_lockvault;
 s_player_lockvault = 1;
 
-if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format["You cannot lock this %1, you do not know the combination.",_text], "PLAIN DOWN"]; };
+if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_115"),_text], "PLAIN DOWN"]; };
 
 _alreadyPacking = _obj getVariable["packing",0];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format["That %1 is already being locked.",_text], "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_116"),_text], "PLAIN DOWN"]};
 
 _obj setVariable["packing",1];
 
@@ -77,7 +77,7 @@ if(!isNull _obj) then {
 		_holder setVariable ["BackpackCargo", _backpacks, true];
 	};
 	
-	cutText [format["Your %1 has been locked",_text], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_117"),_text], "PLAIN DOWN"];
 
 	s_player_lockvault = -1;
 };

@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck","_towTruckSize","_allowedSize"];
 
-if(TradeInprogress) exitWith { cutText ["Already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 player removeAction s_player_towing;

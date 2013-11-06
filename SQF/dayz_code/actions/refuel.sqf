@@ -128,7 +128,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 				};
 					
 			} else {
-				cutText ["Canceled refuel." , "PLAIN DOWN"];
+				cutText [(localize "str_epoch_player_87") , "PLAIN DOWN"];
 				_abort = true;
 			};
 		

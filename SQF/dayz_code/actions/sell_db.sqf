@@ -1,6 +1,6 @@
 private ["_activatingPlayer","_trader_id","_type","_name","_sell","_order","_tid","_in","_part","_cancel","_Display","_File","_textCurrency","_textPart","_count","_btype","_stype","_bag","_bagclass","_header","_item","_buy","_sqty","_sname","_afile"];
 
-if(TradeInprogress) exitWith { cutText ["already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];
