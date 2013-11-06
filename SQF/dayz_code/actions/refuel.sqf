@@ -37,7 +37,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 			//diag_log ("refuel check: " + str(_newFuel) + " / " + str(_capacity));
 
-			cutText [format["Preparing to refuel, stand still to drain %1.",_canText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_160"),_canText], "PLAIN DOWN"];
 			
 			// alert zombies
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
@@ -123,7 +123,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					};	
 			
 				} else {
-					cutText [format["%1 cannot hold that much fuel.",_nameText], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_161"),_nameText], "PLAIN DOWN"];
 					_abort = true;
 				};
 					
@@ -133,7 +133,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 			};
 		
 		} else {
-			cutText [format["%1 cannot hold that much fuel.",_nameText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_161"),_nameText], "PLAIN DOWN"];
 			_abort = true;
 		};			
 	};

@@ -82,14 +82,14 @@ if(_IsNearVehicle >= 1) then {
 					_vehicle attachTo [_towTruck,[1.3,-2,2.3]];
 					_towTruck setVariable ["DZEinTow", true, true];
 					_towTruck setVariable ["DZEvehicleInTow", _vehicle, true];
-					cutText [format["%1 has been attached to Tow Truck.",_nameText], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_175"),_nameText], "PLAIN DOWN"];
 				};	
 			} else {
-				cutText [format["Failed to attach %1 to Tow Truck.",_nameText], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_176"),_nameText], "PLAIN DOWN"];
 			};
 
 		} else {
-			cutText [format["%1 too large and cannot be towed.",_nameText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_177"),_nameText], "PLAIN DOWN"];
 		};
 
 	};

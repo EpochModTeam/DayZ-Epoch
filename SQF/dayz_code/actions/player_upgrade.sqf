@@ -53,7 +53,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // exit if not allowed due to plot pole
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Unable to upgrade %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format[(localize "str_epoch_player_157"),_needText,_distance] , "PLAIN DOWN"]; };
 
 // get cursortarget from addaction
 _obj = _this select 3;
@@ -159,9 +159,9 @@ if ((count _upgrade) > 0) then {
 				
 				_objectCharacterID = _combination;
 				
-				cutText [format["You have upgraded %2. Combination is %1",_combination,_text], "PLAIN DOWN", 5];
+				cutText [format[(localize "str_epoch_player_158"),_combination,_text], "PLAIN DOWN", 5];
 			} else {	
-				cutText [format["You have upgraded %1.",_text], "PLAIN DOWN", 5];
+				cutText [format[(localize "str_epoch_player_159"),_text], "PLAIN DOWN", 5];
 			};
 
 			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];

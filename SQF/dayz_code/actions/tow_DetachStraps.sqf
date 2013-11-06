@@ -67,7 +67,7 @@ if(_inTow) then {
 			detach _vehicle;
 			_towTruck setVariable ["DZEinTow", false, true];
 			_towTruck setVariable ["DZEvehicleInTow", objNull, true];
-			cutText [format["%1 has been detached from Tow Truck.",_nameText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_178"),_nameText], "PLAIN DOWN"];
 
 			_vehicle setvelocity [0,0,1];
 		};

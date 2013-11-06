@@ -63,7 +63,7 @@ if(_IsNearPlot >= 1) then {
 
 _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName");
 
-cutText [format["Starting de-construction of %1.",_nameVehicle], "PLAIN DOWN"];
+cutText [format[(localize "str_epoch_player_162"),_nameVehicle], "PLAIN DOWN"];
 
 // Alert zombies once.
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
@@ -129,7 +129,7 @@ while {_isOk} do {
 		_proceed = false;
 	};
 
-	cutText [format["De-constructing %1 stage %2 of %3 walk away at anytime to cancel.", _nameVehicle, _counter,_limit], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_163"), _nameVehicle, _counter,_limit], "PLAIN DOWN"];
 
 	if(_counter == _limit) exitWith {
 		_isOk = false;
@@ -147,7 +147,7 @@ if(_brokenTool) then {
 		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
 	};
 	if(([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {
-		cutText [format["%1 broke cannot remove %2.",getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_164"),getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle], "PLAIN DOWN"];
 	};
 };
 
@@ -166,7 +166,7 @@ if (_proceed) then {
 			publicVariableServer "PVDZE_obj_Delete";
 		};
 
-		cutText [format["De-constructing %1.",_nameVehicle], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_165"),_nameVehicle], "PLAIN DOWN"];
 		
 		_preventRefund = false;
 

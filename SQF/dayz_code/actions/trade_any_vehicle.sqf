@@ -185,10 +185,10 @@ if (_qty >= _qty_in) then {
 
 							deleteVehicle _obj; 
 
-							cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+							cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 						};
 					} else {
-						cutText [format[("Cannot sell %1, tires are too damaged."),_textPartIn] , "PLAIN DOWN"];
+						cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
 					};
 				};
 	
@@ -196,7 +196,7 @@ if (_qty >= _qty_in) then {
 				s_player_parts_crtl = -1;
 
 			} else {
-				cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
 			dayzTradeResult = nil;
 		};
@@ -205,9 +205,9 @@ if (_qty >= _qty_in) then {
 } else {
 	_needed =  _qty_in - _qty;
 	if(_buy_o_sell == "buy") then {
-		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
 	} else {
-		cutText [format[("No %1 found within 20 meters."),_textPartIn] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_185"),_textPartIn] , "PLAIN DOWN"];
 	};	
 };
 

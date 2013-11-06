@@ -89,10 +89,10 @@ if (_hasToolbox) then {
 
 				if(_brokenPart) then {
 					//Failed!
-					cutText [format["You have destroyed %1 while attempting to remove from %2",_namePart,_nameType], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_168"),_namePart,_nameType], "PLAIN DOWN"];
 				} else {
 					//Success!
-					cutText [format["You have successfully removed %1 from the %2",_namePart,_nameType], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_169"),_namePart,_nameType], "PLAIN DOWN"];
 				};
 
 			} else {
@@ -111,7 +111,7 @@ if (_hasToolbox) then {
 	};
 			
 } else {
-	cutText [format["You need %1 to remove this part.",_namePart], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_170"),_namePart], "PLAIN DOWN"];
 };
 
 dayz_myCursorTarget = objNull;

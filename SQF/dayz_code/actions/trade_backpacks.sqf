@@ -112,13 +112,13 @@ if (_qty >= _qty_in) then {
 					};
 				};
 
-				cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
 				s_player_parts_crtl = -1;
 	
 			} else {
-				cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
 			dayzTradeResult = nil;
 		};
@@ -126,7 +126,7 @@ if (_qty >= _qty_in) then {
 	
 } else {
 	_needed =  _qty_in - _qty;
-	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
 };
 
 TradeInprogress = false;

@@ -97,7 +97,7 @@ if (count(_findNearestRock) >= 1) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format["\n\nMining Ore, walk away at any time to cancel. (%1/%2)", _counter,  _countOut], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_155"), _counter,  _countOut], "PLAIN DOWN"];
 
 			if(_counter == _countOut) exitWith {
 				_isOk = false;
@@ -121,7 +121,7 @@ if (count(_findNearestRock) >= 1) then {
 			};
 			diag_log format["DEBUG TREE DAMAGE: %1", _rock];
 			*/
-			cutText [format["\n\n%1 piles of ore has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_156"), _countOut], "PLAIN DOWN"];
 
 		} else {
 			r_interrupt = false;

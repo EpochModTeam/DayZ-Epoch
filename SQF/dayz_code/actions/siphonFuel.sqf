@@ -120,7 +120,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 							// Play sound
 							[player,"refuel",0,false] call dayz_zombieSpeak;
 							player addMagazine _canName;
-							cutText [format["%1 has been drained for %2 litres of Fuel",_nameText,_canSize], "PLAIN DOWN"];
+							cutText [format[(localize "str_epoch_player_171"),_nameText,_canSize], "PLAIN DOWN"];
 	
 							call fnc_usec_medic_removeActions;
 							r_action = false;
@@ -131,7 +131,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 						};	
 				
 					} else {
-						cutText [format["%1 does not have enough fuel to siphon.",_nameText], "PLAIN DOWN"];
+						cutText [format[(localize "str_epoch_player_172"),_nameText], "PLAIN DOWN"];
 						_abort = true;
 					};
 						
@@ -141,7 +141,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 				};
 			
 			} else {
-				cutText [format["%1 does not have enough fuel to siphon.",_nameText], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_172"),_nameText], "PLAIN DOWN"];
 				_abort = true;
 			};	
 		};		

@@ -35,7 +35,7 @@ _abort = false;
 
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
-	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
@@ -47,9 +47,9 @@ for "_x" from 1 to _total_trades do {
 
 	// cutText ["Starting trade, stand still to complete.", "PLAIN DOWN"];
 	if(_total_trades == 1) then { 
-		cutText [format[((localize "str_epoch_player_105")),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_105"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	} else {
-		cutText [format[("Starting trade, stand still to complete trade %1 of %2."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_187"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	};
 	player playActionNow "Medic";
 	
@@ -109,10 +109,10 @@ for "_x" from 1 to _total_trades do {
 					// total of all parts
 					_total_parts_out = _total_parts_out + _qty_out;
 
-					cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 				} else {
-					cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 					_abort = true;
 
 					// Return items taken
@@ -135,7 +135,7 @@ for "_x" from 1 to _total_trades do {
 
 		} else {
 			_needed =  _qty_in - _qty;
-			cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
 		};
 	};
 	

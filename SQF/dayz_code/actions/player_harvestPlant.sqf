@@ -111,7 +111,7 @@ if (count(_findNearestTree) >= 1) then {
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 		
-			cutText [format["\n\n%1 of %2 has been successfully added to your inventory.", _i,_text], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_154"), _i,_text], "PLAIN DOWN"];
 		} else {
 			cutText [format[(localize "str_epoch_player_143"), _i,_text], "PLAIN DOWN"];
 		};

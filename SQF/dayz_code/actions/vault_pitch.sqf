@@ -163,7 +163,7 @@ if(!_cancel) then {
 			PVDZE_obj_Publish = [_combination,_tent,[_dir,_location],"VaultStorageLocked"];
 			publicVariableServer  "PVDZE_obj_Publish";
 	
-			cutText [format["You have setup your Safe. Combination is %1",_combination], "PLAIN DOWN", 5];
+			cutText [format[(localize "str_epoch_player_179"),_combination], "PLAIN DOWN", 5];
 		};
 	
 	} else {

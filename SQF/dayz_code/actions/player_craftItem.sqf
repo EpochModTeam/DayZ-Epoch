@@ -56,7 +56,7 @@ if("workshop" in _needNear) then {
 	};
 };
 if(_abort) exitWith {
-	cutText [format["\n\nCrafting needs a %1 within %2 meters",_reason,_distance], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_149"),_reason,_distance], "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
@@ -202,7 +202,7 @@ if (_canDo) then {
 								_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 	
 								// Add crafted item
-								cutText [format["\n\nCrafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+								cutText [format[(localize "str_epoch_player_150"),_textCreate,_countOut], "PLAIN DOWN"];
 								// sleep here 
 								sleep 1;
 	
@@ -213,7 +213,7 @@ if (_canDo) then {
 						// Refund parts since we failed 
 						{player addMagazine _x;} forEach _temp_removed_array;
 	
-						cutText [format["\n\nMissing Parts after first check Item: %1 / %2",_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+						cutText [format[(localize "str_epoch_player_151"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 					};
 	
 				} else {
@@ -228,12 +228,12 @@ if (_canDo) then {
 	
 			} else {
 				_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-				cutText [format["\n\n%3 complete, missing %1 more of %2",_missingQty, _textMissing,_tradeComplete], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_152"),_missingQty, _textMissing,_tradeComplete], "PLAIN DOWN"];
 				_craft_doLoop = false;
 			};
 		} else {
 			_textMissing = getText(configFile >> "CfgWeapons" >> _missing >> "displayName");
-			cutText [format["\n\nMissing Tool: %1",_textMissing], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_153"),_textMissing], "PLAIN DOWN"];
 			_craft_doLoop = false;
 		};
 	};

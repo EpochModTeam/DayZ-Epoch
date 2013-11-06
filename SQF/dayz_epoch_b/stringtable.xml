@@ -4004,5 +4004,395 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_149">
+		  <Original>\n\nCrafting needs a %1 within %2 meters</Original>
+		  <English>\n\nCrafting needs a %1 within %2 meters</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_150">
+		  <Original>\n\nCrafted Item: %1 x %2</Original>
+		  <English>\n\nCrafted Item: %1 x %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_151">
+		  <Original>\n\nMissing Parts after first check Item: %1 / %2</Original>
+		  <English>\n\nMissing Parts after first check Item: %1 / %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_152">
+		  <Original>\n\n%3 complete, missing %1 more of %2</Original>
+		  <English>\n\n%3 complete, missing %1 more of %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_153">
+		  <Original>\n\n%3 complete, missing %1 more of %2</Original>
+		  <English>\n\n%3 complete, missing %1 more of %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_154">
+		  <Original>\n\n%1 of %2 has been successfully added to your inventory.</Original>
+		  <English>\n\n%1 of %2 has been successfully added to your inventory.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_155">
+		  <Original>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</Original>
+		  <English>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_156">
+		  <Original>\n\n%1 piles of ore has been successfully added in front of you.</Original>
+		  <English>\n\n%1 piles of ore has been successfully added in front of you.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_157">
+		  <Original>Unable to upgrade %1 nearby.</Original>
+		  <English>Unable to upgrade %1 nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_158">
+		  <Original>You have upgraded %2. Combination is %1</Original>
+		  <English>You have upgraded %2. Combination is %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_159">
+		  <Original>You have upgraded %1.</Original>
+		  <English>You have upgraded %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_160">
+		  <Original>Preparing to refuel, stand still to drain %1.</Original>
+		  <English>Preparing to refuel, stand still to drain %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_161">
+		  <Original>%1 cannot hold that much fuel.</Original>
+		  <English>%1 cannot hold that much fuel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_162">
+		  <Original>Starting de-construction of %1.</Original>
+		  <English>Starting de-construction of %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_163">
+		  <Original>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</Original>
+		  <English>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_164">
+		  <Original>%1 broke cannot remove %2.</Original>
+		  <English>%1 broke cannot remove %2.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_165">
+		  <Original>De-constructing %1.</Original>
+		  <English>De-constructing %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_166">
+		  <Original>You have successfully attached %1 to the %2</Original>
+		  <English>You have successfully attached %1 to the %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_167">
+		  <Original>You need %1 to repair this</Original>
+		  <English>You need %1 to repair this</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_168">
+		  <Original>You have destroyed %1 while attempting to remove from %2</Original>
+		  <English>You have destroyed %1 while attempting to remove from %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_169">
+		  <Original>You have successfully removed %1 from the %2</Original>
+		  <English>You have successfully removed %1 from the %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_170">
+		  <Original>You need %1 to remove this part.</Original>
+		  <English>You need %1 to remove this part.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_171">
+		  <Original>%1 has been drained for %2 litres of Fuel</Original>
+		  <English>%1 has been drained for %2 litres of Fuel</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_172">
+		  <Original>%1 does not have enough fuel to siphon.</Original>
+		  <English>%1 does not have enough fuel to siphon.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_173">
+		  <Original>Dog consumed %1, and is now tamed.</Original>
+		  <English>Dog consumed %1, and is now tamed.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_174">
+		  <Original>Dog consumed %1, yet remains untamed.</Original>
+		  <English>Dog consumed %1, yet remains untamed.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_175">
+		  <Original>%1 has been attached to Tow Truck.</Original>
+		  <English>%1 has been attached to Tow Truck.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_176">
+		  <Original>Failed to attach %1 to Tow Truck.</Original>
+		  <English>Failed to attach %1 to Tow Truck.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_177">
+		  <Original>%1 too large and cannot be towed.</Original>
+		  <English>%1 too large and cannot be towed.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_178">
+		  <Original>%1 has been detached from Tow Truck.</Original>
+		  <English>%1 has been detached from Tow Truck.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_179">
+		  <Original>You have setup your Safe. Combination is %1</Original>
+		  <English>You have setup your Safe. Combination is %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_180">
+		  <Original>Bought %3 for %1 %2.</Original>
+		  <English>Bought %3 for %1 %2.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_181">
+		  <Original>Sold %1 %2 for %3 %4</Original>
+		  <English>Sold %1 %2 for %3 %4</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_182">
+		  <Original>Cannot sell %1, tires are too damaged.</Original>
+		  <English>Cannot sell %1, tires are too damaged.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_183">
+		  <Original>Insufficient Stock %1</Original>
+		  <English>Insufficient Stock %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_184">
+		  <Original>Need %1 More %2</Original>
+		  <English>Need %1 More %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_185">
+		  <Original>No %1 found within 20 meters.</Original>
+		  <English>No %1 found within 20 meters.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_186">
+		  <Original>Traded %1 %2 for %3 %4</Original>
+		  <English>Traded %1 %2 for %3 %4</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_187">
+		  <Original>Starting trade, stand still to complete trade %1 of %2.</Original>
+		  <English>Starting trade, stand still to complete trade %1 of %2.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
 	</Package>
 </Project>
