@@ -5,7 +5,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private ["_unit","_humanityHit","_myKills","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_isCardiac","_isHeadHit","_isMinor","_scale","_canHitFree","_rndPain","_rndInfection","_hitInfection","_lowBlood","_isPZombie","_source","_ammo","_unitIsPlayer"];
+private ["_unit","_humanityHit","_myKills","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_isCardiac","_isHeadHit","_isMinor","_scale","_canHitFree","_rndPain","_rndInfection","_hitInfection","_lowBlood","_isPZombie","_source","_ammo","_unitIsPlayer","_isBandit"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -54,14 +54,17 @@ if (_unitIsPlayer) then {
 				_source setVariable["startcombattimer",1];	
 			};
 			_canHitFree = 	player getVariable ["freeTarget",false];
+			_isBandit = (player getVariable["humanity",0]) <= -5000;
+			_isPZombie = player isKindOf "PZombie_VB";
 			
-			if (!_canHitFree) then {
-				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
-				//Process Morality Hit
-				_humanityHit = -(_myKills * _damage);
+			if (!_canHitFree and !_isBandit and !_isPZombie) then {
+				_myKills = 0 max (1 - (player getVariable ["humanKills",0]) / 5);
+				_humanityHit = -50 * _myKills * _damage; //200
 				//["PVDZE_plr_HumanityChange",[_source,_humanityHit,30]] call broadcastRpcCallAll;
-				PVDZE_plr_HumanityChange = [_source,_humanityHit,30];
-				publicVariable "PVDZE_plr_HumanityChange";
+				if (_humanityHit != 0) then {
+					PVDZE_plr_HumanityChange = [_source,_humanityHit,30];
+					publicVariable "PVDZE_plr_HumanityChange";
+				};
 			};
 		};
 	};
