@@ -26,14 +26,15 @@ if (!isDedicated) then {
 	//animal_monitor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\animal_monitor.sqf";
 	// building_monitor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\building_monitor.sqf";
 	player_fired =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
+	player_harvest =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_harvest.sqf";
 	player_packTent =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packTent.sqf";
 	player_packVault =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packVault.sqf";
 	player_unlockVault =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
 	
 	player_removeObject =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf";
-	player_removeNet =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_removeNet.sqf";
+	player_removeNet =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_removeNet.sqf";
 
-	player_unlockDoor =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
+	player_unlockDoor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_changeCombo =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
 	
 	player_lockVault =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_lockVault.sqf";
@@ -218,8 +219,13 @@ if (!isDedicated) then {
 		_agent = _this select 1;
 		_cantSee = true;
 		if (!isNull _target) then {
-			_tPos = aimPos _target;
-			_zPos = aimPos _agent;
+			
+			_tPos = visiblePositionASL _target;
+			_zPos = visiblePositionASL _agent;
+			
+			_tPos set [2,(_tPos select 2)+1];
+			_zPos set [2,(_zPos select 2)+1];
+
 			if ((count _tPos > 0) and (count _zPos > 0)) then {
 				_cantSee = terrainIntersectASL [_tPos, _zPos];
 				if (!_cantSee) then {
