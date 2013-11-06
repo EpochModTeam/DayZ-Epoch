@@ -112,6 +112,7 @@ if((count _offset) <= 0) then {
 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 _isLandFireDZ = (_classname == "Land_Fire_DZ");
+_isTankTrap = (_classname == "Hedgehog_DZ");
 
 _distance = 30;
 _needText = "Plot Pole";
@@ -318,6 +319,14 @@ if (_hasrequireditem) then {
 			diag_log format["DEBUG BUILDING POS: %1", _position];
 			deleteVehicle _object;
 		};
+		
+		if((_isTankTrap) and ((_position select 2)< 0)) exitWith {
+			_isOk = false;
+			_cancel = true;
+			_reason = "You cannot place TankTraps underground)."; 
+			detach _object;
+			deleteVehicle _object;
+		};
 
 		if(_location1 distance _location2 > 5) exitWith {
 			_isOk = false;
@@ -365,7 +374,7 @@ if (_hasrequireditem) then {
 	};
 
 	// No building on roads
-	if (isOnRoad _location) then { _cancel = true; _reason = "Cannot build on a road."; };
+	if (isOnRoad _position) then { _cancel = true; _reason = "Cannot build on a road."; };
 
 	// No building in trader zones
 	if(!canbuild) then { _cancel = true; _reason = "Cannot build in a city."; };
