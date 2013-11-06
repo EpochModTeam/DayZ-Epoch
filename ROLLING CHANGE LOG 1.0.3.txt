@@ -14,7 +14,7 @@ increase. @Armifer
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
 * [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
-* [ADDED] Destory tent option when you have a full jerry can and matches. @vbawol
+* [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
 * [ADDED] Tag friendly system now stores your 5 most recent friends. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
 * [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
 * [CHANGED] Base building enhancements and changed count down timer. @zabn
