@@ -1,4 +1,4 @@
-private ["_array","_source","_kills","_killsV","_humanity","_wait","_myKills","_infected","_canHitFree","_myHumanity","_method","_body","_playerID","_id","_myGroup"];
+private ["_array","_source","_kills","_killsB","_humanity","_wait","_myKills","_infected","_canHitFree","_myHumanity","_method","_body","_playerID","_id","_myGroup","_isBandit","_bonus","_humanitylevel","_isPZombie","_killsZ"];
 if (deathHandled) exitWith {};
 
 deathHandled = true;
@@ -37,6 +37,7 @@ r_player_cardiac = false;
 
 _humanity =		0;
 _wait = 		0;
+_bonus = 0;
 
 _array = _this;
 if (count _array > 0) then {
@@ -45,29 +46,63 @@ if (count _array > 0) then {
 	if (!isNull _source) then {
 		if (_source != player) then {
 			_canHitFree = 	player getVariable ["freeTarget",false];
+			_isBandit = (player getVariable["humanity",0]) <= -5000;
+			_isPZombie = player isKindOf "PZombie_VB";
+			if (!_canHitFree and !_isBandit and !_isPZombie) then {
 			_myHumanity =	((player getVariable ["humanity",0]) / 10);
 			_myKills = 		((player getVariable ["humanKills",0]) / 5) * (1000 - _myHumanity);
-			
-			if (!_canHitFree) then {
 				//Process Morality Hit
-				_humanity = -(2000 - _myKills);
+				_humanity = -(1000 - _myKills); //2000
 				_kills = 	_source getVariable ["humanKills",0];
 				_source setVariable ["humanKills",(_kills + 1),true];
 				_wait = 300;
 			} else {
-				//Process Morality Hit
-				//_humanity = _myKills * 100;
-				_killsV = 	_source getVariable ["banditKills",0];
-				_source setVariable ["banditKills",(_killsV + 1),true];
-				_wait = 0;
+				if (_isBandit and !_isPZombie) then {
+					//Process Morality Gain
+					_myHumanity =	((player getVariable ["humanity",0]) / 35);
+					_myKills = 1 min (0 + (player getVariable ["humanKills",0]) / 15);
+					_humanitylevel = (player getVariable ["humanity",0]);
+					
+					if (_humanitylevel >= -100000) then { 
+						_bonus = 100; 
+					} else {
+						_humanitylevel = (_humanitylevel / -1000);
+						_bonus = 500 min _humanitylevel; 
+					};
+		
+					_humanity = (-(_myHumanity * _myKills)); //  500 min   (+ 25) ()
+					_humanity = 1000 min (_humanity + _bonus); // 25 _bonus
+					_killsB = 	_source getVariable ["banditKills",0];
+					_source setVariable ["banditKills",(_killsB + 1),true];
+					_wait = 0;
+				};
+				if (_isBandit and !_isPZombie and (_humanity != 0)) then {
+					PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
+					publicVariable "PVDZE_plr_HumanityChange";
+				};
 			};
+			
 			if (_humanity < 0) then {
 				_wait = 0;
 			};
-			if (!_canHitFree) then {
-				//["PVDZE_plr_HumanityChange",[_source,_humanity,_wait]] call broadcastRpcCallAll;
+			if (!_canHitFree and !_isBandit and !_isPZombie and (_humanity != 0)) then {
 				PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
 				publicVariable "PVDZE_plr_HumanityChange";
+			};
+			
+			if (_isPZombie) then {
+				_humanity = 100; //25
+				_killsZ = 	_source getVariable ["zombieKills",0];
+				_source setVariable ["zombieKills",(_killsZ + 1),true];
+				_wait = 0;
+				PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
+				publicVariable "PVDZE_plr_HumanityChange";
+			};
+			if (_canHitFree) then {
+				//_humanity = 100; //50
+				_killsB = 	_source getVariable ["banditKills",0];
+				_source setVariable ["banditKills",(_killsB + 1),true];
+				_wait = 0;
 			};
 		};
 	};
