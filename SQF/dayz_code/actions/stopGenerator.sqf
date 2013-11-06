@@ -45,7 +45,7 @@ if(!_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText ["Canceled." , "PLAIN DOWN"]
+	cutText [(localize "str_epoch_player_26") , "PLAIN DOWN"]
 };
 
 if (_finished) then {

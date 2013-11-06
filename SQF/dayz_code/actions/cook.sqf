@@ -1,6 +1,6 @@
 private ["_text","_rawmeat","_cookedmeat","_meat","_meatcooked","_qty","_started","_finished","_animState","_isMedic","_removed","_dis","_sfx","_textraw"];
 
-if(TradeInprogress) exitWith { cutText ["Cooking already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_23") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 // diag_log ("Cook Enabled");

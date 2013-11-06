@@ -1,6 +1,6 @@
 private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx","_displayName","_fuelCans"];
 
-if(TradeInprogress) exitWith { cutText ["Fill Jerry already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_34"), "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_fillfuel;
@@ -64,7 +64,7 @@ _qty = count _fuelCans;
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled siphon." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_35") , "PLAIN DOWN"];
 		_abort = true;
 	};
 

@@ -97,7 +97,7 @@ if(_IsNearVehicle >= 1) then {
 
 
 } else {
-	cutText ["No Vehicles Nearby.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_27"), "PLAIN DOWN"];
 };
 TradeInprogress = false;
 s_player_towing = -1;

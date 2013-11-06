@@ -1,7 +1,7 @@
 private["_vehicle"];
 _vehicle = _this select 3;
 
-if(TradeInprogress) exitWith { cutText ["Lock vehicle already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_37") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 {player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];

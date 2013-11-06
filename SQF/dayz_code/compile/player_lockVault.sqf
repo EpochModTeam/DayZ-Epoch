@@ -5,7 +5,7 @@
 */
 private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["Lock already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_10") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _obj = _this;
@@ -18,7 +18,7 @@ if(isNull _obj) exitWith { TradeInprogress = false; };
 
 // Test cannot lock while another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot lock while another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_11") , "PLAIN DOWN"];  };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];

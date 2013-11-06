@@ -7,7 +7,7 @@ if(player isKindOf "PZombie_VB") exitWith {};
 // _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
 // if(_playerNear) exitWith {cutText ["Cannot take item while another player is nearby." , "PLAIN DOWN"];  };
 
-if (!DZE_CanPickup) exitWith { cutText ["Take item already in progress." , "PLAIN DOWN"]; };
+if (!DZE_CanPickup) exitWith { cutText [(localize "str_epoch_player_38") , "PLAIN DOWN"]; };
 DZE_CanPickup = false;
 
 _array = _this select 3;

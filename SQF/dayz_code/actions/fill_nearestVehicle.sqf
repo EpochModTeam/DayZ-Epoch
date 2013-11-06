@@ -1,6 +1,6 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_isVehicle","_configSrcVeh","_capacitySrc","_nameTextSrc","_isFillok","_curFuelSrc","_newFuelSrc","_vehicleSrc"];
 
-if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 _isVehicle = false;
@@ -134,6 +134,6 @@ if(_IsNearVehicle >= 1) then {
 	};
 
 } else {
-	cutText ["No Vehicles Nearby.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_27"), "PLAIN DOWN"];
 };
 TradeInprogress = false;

@@ -136,7 +136,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 					};
 						
 				} else {
-					cutText ["Canceled siphon." , "PLAIN DOWN"];
+					cutText [(localize "str_epoch_player_35") , "PLAIN DOWN"];
 					_abort = true;
 				};
 			

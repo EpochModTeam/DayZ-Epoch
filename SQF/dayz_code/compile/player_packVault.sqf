@@ -3,7 +3,7 @@
 */
 private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["That is already being packed." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _activatingPlayer = player;
@@ -18,7 +18,7 @@ if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
 
 // Test cannot lock while another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot pack while another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_16") , "PLAIN DOWN"];  };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];

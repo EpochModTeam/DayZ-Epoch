@@ -9,5 +9,5 @@ _nearNet = _nearNets select 0;
  if (!isNull _nearNet and _canDo) then {
 	 [0,1,2,_nearNet] spawn player_removeObject;
  } else {
-	cutText ["No camo nets found nearby.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_8"), "PLAIN DOWN"];
  };

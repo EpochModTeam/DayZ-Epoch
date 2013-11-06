@@ -4,11 +4,11 @@
 */
 private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_objHupDiff","_objHdwnDiff","_needNear","_vehicle","_inVehicle","_previewCounter"];
 
-if(TradeInprogress) exitWith { cutText ["\n\nBuilding already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_40") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 // disallow building if too many objects are found within 30m
-if((count ((position player) nearObjects ["All",30])) >= DZE_BuildingLimit) exitWith {TradeInprogress = false; cutText ["\n\nCannot build, too many objects witin 30m.", "PLAIN DOWN"];};
+if((count ((position player) nearObjects ["All",30])) >= DZE_BuildingLimit) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_41"), "PLAIN DOWN"];};
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		dayz_isSwimming;
@@ -38,9 +38,9 @@ call gear_ui_init;
 closeDialog 1;
 
 if (_isWater) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
-if (_inVehicle) exitWith {TradeInprogress = false; cutText ["Cannot build while in a vehicle.", "PLAIN DOWN"];};
+if (_inVehicle) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_42"), "PLAIN DOWN"];};
 if (_onLadder) exitWith {TradeInprogress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
-if (player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Cannot build while in combat.", "PLAIN DOWN"];};
+if (player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_43"), "PLAIN DOWN"];};
 
 _item =	_this;
 
@@ -133,7 +133,7 @@ _findNearestPole = [];
 _IsNearPlot = count (_findNearestPole);
 
 // If item is plot pole and another one exists within 45m
-if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText ["Cannot build plot pole within 45m of an existing plot." , "PLAIN DOWN"]; };
+if(_isPole and _IsNearPlot > 0) exitWith {  TradeInprogress = false; cutText [(localize "str_epoch_player_44") , "PLAIN DOWN"]; };
 
 if(_IsNearPlot == 0) then {
 
@@ -206,7 +206,7 @@ if (_hasrequireditem) then {
 	
 	_position = getPosATL _object;
 
-	cutText ["PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_45"), "PLAIN DOWN"];
 
 	_previewCounter = 60;
 	_objHDiff = 0;
@@ -350,7 +350,7 @@ if (_hasrequireditem) then {
 		if (player getVariable["combattimeout", 0] >= time) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cannot build while in combat.";
+			_reason = (localize "str_epoch_player_43");
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -527,7 +527,7 @@ if (_hasrequireditem) then {
 
 			} else {
 				deleteVehicle _tmpbuilt;
-				cutText ["Canceled building." , "PLAIN DOWN"];
+				cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
 			};
 
 		} else {
@@ -539,12 +539,12 @@ if (_hasrequireditem) then {
 
 			deleteVehicle _tmpbuilt;
 
-			cutText ["Canceled building." , "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
 		};
 
 	} else {
 		deleteVehicle _tmpbuilt;
-		cutText [format["Canceled construction of %1 %2.",_text,_reason], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_47"),_text,_reason], "PLAIN DOWN"];
 	};
 };
 

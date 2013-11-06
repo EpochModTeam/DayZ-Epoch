@@ -1,6 +1,6 @@
 private ["_item","_config","_onLadder","_create","_started","_finished","_animState","_isMedic","_qty","_box","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
 
-if(TradeInprogress) exitWith { cutText ["\n\nCopy key already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_56") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _item = 	_this;
@@ -14,10 +14,10 @@ _haskey = _this in weapons player;
 if (!_haskey) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
 
 _hastoolweapon = "ItemKeyKit" in weapons player;
-if (!_hastoolweapon) exitWith {TradeInprogress = false; cutText ["\n\nNeed Keymakers kit to make a copy of a key." , "PLAIN DOWN"]};
+if (!_hastoolweapon) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_57") , "PLAIN DOWN"]};
 
 _isNear = {inflamed _x} count (position player nearObjects 3);
-if(_isNear == 0) exitWith {TradeInprogress = false; cutText ["\n\nKey crafting needs a fire within 3 meters." , "PLAIN DOWN"]};
+if(_isNear == 0) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_58") , "PLAIN DOWN"]};
 
 call gear_ui_init;
 

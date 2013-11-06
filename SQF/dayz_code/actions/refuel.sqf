@@ -1,6 +1,6 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canName","_canSize","_configCan","_configVeh","_capacity","_nameText","_availableCans","_canText"];
 
-if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 // Use target from addaction

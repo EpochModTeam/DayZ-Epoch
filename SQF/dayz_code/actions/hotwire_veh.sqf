@@ -1,7 +1,7 @@
 private ["_vehicle","_removed"];
 _vehicle = _this select 3;
 
-if(TradeInprogress) exitWith { cutText ["Hotwire vehicle already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_32") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 {player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
@@ -23,7 +23,7 @@ if (_removed == 1) then {
 			};
 		};
 	} else {
-		cutText ["Failed to unlock car hotwire kit broken." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_33") , "PLAIN DOWN"];
 	};
 };
 
