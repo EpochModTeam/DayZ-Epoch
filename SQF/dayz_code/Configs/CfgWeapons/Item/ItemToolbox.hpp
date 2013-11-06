@@ -12,5 +12,10 @@ class ItemToolbox: ItemCore
 			text="Remove Camo Net";
 			script="spawn player_removeNet;";
 		};
+		class RemoveTankTrap
+		{
+			text="Remove Tank Trap";
+			script="spawn player_removeTankTrap;";
+		};
 	};
 };
