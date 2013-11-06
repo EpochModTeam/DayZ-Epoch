@@ -2527,7 +2527,7 @@
 		<Key ID="STR_EPOCH_PLAYER_1">
 		  <Original>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</Original>
 		  <English>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</English>
-		  <German></German>
+		  <German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2537,7 +2537,7 @@
 		<Key ID="STR_EPOCH_PLAYER_2">
 		  <Original>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</Original>
 		  <English>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</English>
-		  <German></German>
+		  <German>%1 will markieren Sie so freundlich. Zu akzeptieren, Tag %1 als freundlich.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2547,7 +2547,7 @@
 		<Key ID="STR_EPOCH_PLAYER_3">
 		  <Original>Pulse is extremely weak</Original>
 		  <English>Pulse is extremely weak</English>
-		  <German></German>
+		  <German>Pulse ist extrem schwach</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2557,7 +2557,7 @@
 		<Key ID="STR_EPOCH_PLAYER_4">
 		  <Original>Pulse is weak</Original>
 		  <English>Pulse is weak</English>
-		  <German></German>
+		  <German>Puls ist schwach</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2567,7 +2567,7 @@
 		<Key ID="STR_EPOCH_PLAYER_5">
 		  <Original>Pulse is strong</Original>
 		  <English>Pulse is strong</English>
-		  <German></German>
+		  <German>Pulse ist stark</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2577,7 +2577,7 @@
 		<Key ID="STR_EPOCH_PLAYER_6">
 		  <Original>Trading canceled.</Original>
 		  <English>Trading canceled.</English>
-		  <German></German>
+		  <German>Handel abgebrochen.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2587,7 +2587,7 @@
 		<Key ID="STR_EPOCH_PLAYER_7">
 		  <Original>Cannot access gear in a locked vehicle.</Original>
 		  <English>Cannot access gear in a locked vehicle.</English>
-		  <German></German>
+		  <German>Kann nicht auf Gang in einem verschlossenen Fahrzeug.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2597,7 +2597,7 @@
 		<Key ID="STR_EPOCH_PLAYER_8">
 		  <Original>No camo nets found nearby.</Original>
 		  <English>No camo nets found nearby.</English>
-		  <German></German>
+		  <German>Keine camo Netze in der Nähe gefunden.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2607,7 +2607,7 @@
 		<Key ID="STR_EPOCH_PLAYER_9">
 		  <Original>You have been crushed between two objects.</Original>
 		  <English>You have been crushed between two objects.</English>
-		  <German></German>
+		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2617,7 +2617,7 @@
 		<Key ID="STR_EPOCH_PLAYER_10">
 		  <Original>Lock already in progress.</Original>
 		  <English>Lock already in progress.</English>
-		  <German></German>
+		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2627,7 +2627,7 @@
 		<Key ID="STR_EPOCH_PLAYER_11">
 		  <Original>Cannot lock while another player is nearby.</Original>
 		  <English>Cannot lock while another player is nearby.</English>
-		  <German></German>
+		  <German>Kann nicht gesperrt werden, während ein anderer Spieler in der Nähe ist.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2637,7 +2637,7 @@
 		<Key ID="STR_EPOCH_PLAYER_12">
 		  <Original>Cannot Abort while in a trader city!</Original>
 		  <English>Cannot Abort while in a trader city!</English>
-		  <German></German>
+		  <German>Kann nicht abbrechen, während in einem Gewerbetreibenden Stadt!</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2647,7 +2647,7 @@
 		<Key ID="STR_EPOCH_PLAYER_13">
 		  <Original>Pack tent already in progress.</Original>
 		  <English>Pack tent already in progress.</English>
-		  <German></German>
+		  <German>Packen Zelt bereits im Gange.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2657,7 +2657,7 @@
 		<Key ID="STR_EPOCH_PLAYER_14">
 		  <Original>Tent not setup yet.</Original>
 		  <English>Tent not setup yet.</English>
-		  <German></German>
+		  <German>Zelt noch nicht einrichten.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
@@ -2667,7 +2667,7 @@
 		<Key ID="STR_EPOCH_PLAYER_15">
 		  <Original>That is already being packed.</Original>
 		  <English>That is already being packed.</English>
-		  <German></German>
+		  <German>Das ist schon gepackt.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>

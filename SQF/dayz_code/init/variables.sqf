@@ -243,6 +243,7 @@ dayz_resetSelfActions = {
 	s_player_maint_build	 =  -1;
 	s_player_downgrade_build	 =  -1;
 	s_player_towing		 =  -1;
+	s_halo_action =         -1;
 };
 call dayz_resetSelfActions;
 
@@ -632,6 +633,11 @@ if(!isDedicated) then {
 	if(isNil "DZE_ForceNameTagsOff") then {
 		DZE_ForceNameTagsOff = false;
 	};
+	if(isNil "DZE_HaloJump") then {
+		DZE_HaloJump = true;
+	};
+	
+	DZE_myHaloVehicle = objNull;
 	
 	DZE_Friends = [];
 

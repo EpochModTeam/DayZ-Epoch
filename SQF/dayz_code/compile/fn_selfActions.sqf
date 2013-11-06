@@ -37,6 +37,18 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
+if(DZE_HaloJump) then {
+	if(_inVehicle and (_vehicle isKindOf "Air") and ((getPos _vehicle select 2) > 400)) then {
+		if (s_halo_action < 0) then {
+			DZE_myHaloVehicle = _vehicle;
+			s_halo_action = DZE_myHaloVehicle addAction ["HALO Jump","\z\addons\dayz_code\actions\halo_jump.sqf",[],2,false,true,"",""];
+		};
+	} else {
+		DZE_myHaloVehicle removeAction s_halo_action;
+		s_halo_action = -1;
+	};
+};
+
 if (!DZE_ForceNameTagsOff) then {
 	if (s_player_showname < 0 and !_isPZombie) then {
 		if (DZE_ForceNameTags) then {
