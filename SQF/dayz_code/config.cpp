@@ -509,25 +509,25 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "RU_Soldier_Crew_DZ";
 		};
-		class Skin_Ins_Lopotev_DZ: Default {
+		class Skin_INS_Lopotev_DZ: Default {
 			sex = "male";
-			playerModel = "Ins_Lopotev_DZ";
+			playerModel = "INS_Lopotev_DZ";
 		};
-		class Skin_Ins_Soldier_AR_DZ: Default {
+		class Skin_INS_Soldier_AR_DZ: Default {
 			sex = "male";
-			playerModel = "Ins_Soldier_AR_DZ";
+			playerModel = "INS_Soldier_AR_DZ";
 		};		
-		class Skin_Ins_Soldier_CO_DZ: Default {
+		class Skin_INS_Soldier_CO_DZ: Default {
 			sex = "male";
-			playerModel = "Ins_Soldier_CO_DZ";
+			playerModel = "INS_Soldier_CO_DZ";
 		};
-		class Skin_Ins_Bardak_DZ: Default {
+		class Skin_INS_Bardak_DZ: Default {
 			sex = "male";
-			playerModel = "Ins_Bardak_DZ";
+			playerModel = "INS_Bardak_DZ";
 		};
-		class Skin_Ins_Worker2_DZ: Default {
+		class Skin_INS_Worker1_DZ: Default {
 			sex = "male";
-			playerModel = "Ins_Worker2_DZ";
+			playerModel = "INS_Worker1_DZ";
 		};
 
 
