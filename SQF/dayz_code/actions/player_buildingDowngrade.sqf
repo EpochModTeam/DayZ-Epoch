@@ -4,7 +4,7 @@
 */
 private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
 
-if(TradeInprogress) exitWith { cutText ["Downgrade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_48") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_downgrade_build;
@@ -52,7 +52,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // exit if not allowed due to plot pole
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Unable to downgrade %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format[(localize "str_epoch_player_141"),_needText,_distance] , "PLAIN DOWN"]; };
 
 // get cursortarget from addaction
 _obj = _this select 3;
@@ -60,7 +60,7 @@ _obj = _this select 3;
 // Current charID
 _objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
-if(DZE_Lock_Door != _objectCharacterID) exitWith {  TradeInprogress = false; cutText ["Unable to downgrade you do not know the combination." , "PLAIN DOWN"]; };
+if(DZE_Lock_Door != _objectCharacterID) exitWith {  TradeInprogress = false; cutText [(localize "str_epoch_player_49") , "PLAIN DOWN"]; };
 
 // Find objectID
 _objectID 	= _obj getVariable ["ObjectID","0"];
@@ -68,7 +68,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_upgrade_build = -1; cutText ["Not setup yet.", "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_upgrade_build = -1; cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];};
 
 // Get classname
 _classname = typeOf _obj;
@@ -132,7 +132,7 @@ if ((count _upgrade) > 0) then {
 		// Set location
 		_object setPosATL _location;
 	
-		cutText [format["You have downgraded %1.",_text], "PLAIN DOWN", 5];
+		cutText [format[(localize "str_epoch_player_142"),_text], "PLAIN DOWN", 5];
 
 		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
 		publicVariableServer "PVDZE_obj_Swap";
@@ -140,7 +140,7 @@ if ((count _upgrade) > 0) then {
 		player reveal _object;
 			
 	} else {
-		cutText [format["\n\n%1 of %2 could not be added to your inventory. (not enough room?)", _i,(getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName"))], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_143"), _i,(getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName"))], "PLAIN DOWN"];
 		{
 			[player,(_x select 0),(_x select 1)] call BIS_fnc_invRemove;
 		} forEach _addedItems;
@@ -148,7 +148,7 @@ if ((count _upgrade) > 0) then {
 	};
 	
 } else {
-	cutText ["No downgrades available", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_51"), "PLAIN DOWN"];
 };
 
 TradeInprogress = false;

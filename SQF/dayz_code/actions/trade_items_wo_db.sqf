@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades","_humanityGain","_humanity"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 //_activatingPlayer = player;
@@ -22,7 +22,7 @@ _total_trades = floor (_qty / _qty_in);
 
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
-	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
@@ -37,9 +37,9 @@ for "_x" from 1 to _total_trades do {
 	_tradeCounter = _tradeCounter + 1;
 
 	if(_total_trades == 1) then {
-		cutText [format[("Starting trade, stand still to complete trade."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_105"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	} else {
-		cutText [format[("Starting trade, stand still to complete trade %1 of %2."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_187"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	};
 
 	player playActionNow "Medic";
@@ -73,7 +73,7 @@ for "_x" from 1 to _total_trades do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Trade." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 	};
 
 	_qty = {_x == _part_in} count magazines player;
@@ -97,7 +97,7 @@ for "_x" from 1 to _total_trades do {
 				player setVariable["humanity",_humanity,true];
 			};
 
-			cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 			
 		} else {
 			
@@ -110,7 +110,7 @@ for "_x" from 1 to _total_trades do {
 
 	} else {
 		_needed =  _qty_in - _qty;
-		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
 	};
 
 	sleep 1;

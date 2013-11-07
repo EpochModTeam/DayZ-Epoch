@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_soundSource"];
 
-if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 player removeAction s_player_fillgen;
@@ -18,7 +18,7 @@ r_doLoop = true;
 _started = false;
 _finished = false;
 
-cutText ["Preparing to fuel and start generator, move to cancel.", "PLAIN DOWN"];
+cutText [(localize "str_epoch_player_25") "PLAIN DOWN"];
 
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -45,7 +45,7 @@ if(!_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText ["Canceled." , "PLAIN DOWN"]
+	cutText [(localize "str_epoch_player_26") , "PLAIN DOWN"]
 };
 
 if (_finished) then {
@@ -68,7 +68,7 @@ if (_finished) then {
 
 			_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-			cutText ["Generator has been started.", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_28"), "PLAIN DOWN"];
 		};
 	} else {
 	
@@ -81,7 +81,7 @@ if (_finished) then {
 
 		_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-		cutText ["Generator has been started.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_28"), "PLAIN DOWN"];
 
 	};
 };

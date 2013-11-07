@@ -3,7 +3,7 @@
 */
 private ["_activatingPlayer","_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_dis","_sfx","_classname","_location"];
 
-if(TradeInprogress) exitWith { cutText ["Pack tent already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_13") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_packtent;
@@ -18,7 +18,7 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 
 player playActionNow "Medic";
 
-if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packtent = -1; cutText ["Tent not setup yet.", "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packtent = -1; cutText [(localize "str_epoch_player_14"), "PLAIN DOWN"];};
 
 if(_ownerID != dayz_characterID) exitWith {TradeInprogress = false; s_player_packtent = -1; cutText [localize "str_fail_tent_pack", "PLAIN DOWN"];};
 

@@ -3,7 +3,7 @@
 */
 private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["That is already being packed." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _activatingPlayer = player;
@@ -18,7 +18,7 @@ if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
 
 // Test cannot lock while another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot pack while another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_16") , "PLAIN DOWN"];  };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -27,23 +27,23 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
-if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packvault = -1; cutText [format["%1 not setup yet.",_text], "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_118"),_text], "PLAIN DOWN"];};
 
-if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith { TradeInprogress = false; s_player_packvault = -1; cutText [format["You cannot pack this %1, you do not know the combination.",_text], "PLAIN DOWN"];};
+if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith { TradeInprogress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
 
 _alreadyPacking = _obj getVariable["packing",0];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_packvault = -1; cutText [format["That %1 is already being packed.",_text] , "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_120"),_text] , "PLAIN DOWN"]};
 _obj setVariable["packing",1];
 
-cutText [format["Packing %1 move from this position to cancel within 5 seconds.",_text], "PLAIN DOWN"];
+cutText [format[(localize "str_epoch_player_121"),_text], "PLAIN DOWN"];
 sleep 1; 
 _location1 = getPosATL player;
 sleep 5;
 _location2 = getPosATL player;
 	
 if(_location1 distance _location2 > 0.1) exitWith {
-	cutText [format["Packing %1 canceled.",_text] , "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_122"),_text] , "PLAIN DOWN"];
 	_obj setVariable["packing",0];
 };
 
@@ -105,7 +105,7 @@ if(!isNull _obj and alive _obj) then {
 		_countr = _countr + 1;
 	} forEach _objWpnTypes;
 	
-	cutText [format["Your %1 has been packed",_text], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_123"),_text], "PLAIN DOWN"];
 
 	player action ["Gear", _holder];
 };

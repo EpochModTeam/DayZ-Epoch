@@ -2523,4 +2523,1876 @@
       <Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
     </Key>
 	</Package>
+	<Package name="dayz_epoch">
+		<Key ID="STR_EPOCH_PLAYER_1">
+		  <Original>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</Original>
+		  <English>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</English>
+		  <German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_2">
+		  <Original>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</Original>
+		  <English>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</English>
+		  <German>%1 will markieren Sie so freundlich. Zu akzeptieren, Tag %1 als freundlich.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_3">
+		  <Original>Pulse is extremely weak</Original>
+		  <English>Pulse is extremely weak</English>
+		  <German>Pulse ist extrem schwach</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_4">
+		  <Original>Pulse is weak</Original>
+		  <English>Pulse is weak</English>
+		  <German>Puls ist schwach</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_5">
+		  <Original>Pulse is strong</Original>
+		  <English>Pulse is strong</English>
+		  <German>Pulse ist stark</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_6">
+		  <Original>Trading canceled.</Original>
+		  <English>Trading canceled.</English>
+		  <German>Handel abgebrochen.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_7">
+		  <Original>Cannot access gear in a locked vehicle.</Original>
+		  <English>Cannot access gear in a locked vehicle.</English>
+		  <German>Kann nicht auf Gang in einem verschlossenen Fahrzeug.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_8">
+		  <Original>No camo nets found nearby.</Original>
+		  <English>No camo nets found nearby.</English>
+		  <German>Keine camo Netze in der Nähe gefunden.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_9">
+		  <Original>You have been crushed between two objects.</Original>
+		  <English>You have been crushed between two objects.</English>
+		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_10">
+		  <Original>Lock already in progress.</Original>
+		  <English>Lock already in progress.</English>
+		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_11">
+		  <Original>Cannot lock while another player is nearby.</Original>
+		  <English>Cannot lock while another player is nearby.</English>
+		  <German>Kann nicht gesperrt werden, während ein anderer Spieler in der Nähe ist.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_12">
+		  <Original>Cannot Abort while in a trader city!</Original>
+		  <English>Cannot Abort while in a trader city!</English>
+		  <German>Kann nicht abbrechen, während in einem Gewerbetreibenden Stadt!</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_13">
+		  <Original>Pack tent already in progress.</Original>
+		  <English>Pack tent already in progress.</English>
+		  <German>Packen Zelt bereits im Gange.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_14">
+		  <Original>Tent not setup yet.</Original>
+		  <English>Tent not setup yet.</English>
+		  <German>Zelt noch nicht einrichten.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_15">
+		  <Original>That is already being packed.</Original>
+		  <English>That is already being packed.</English>
+		  <German>Das ist schon gepackt.</German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_16">
+		  <Original>Cannot pack while another player is nearby.</Original>
+		  <English>Cannot pack while another player is nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_17">
+		  <Original>can't count magazines!</Original>
+		  <English>can't count magazines!</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_18">
+		  <Original>You must have RawMeat</Original>
+		  <English>You must have RawMeat</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_19">
+		  <Original>Wrong code entered to many times wait 10 seconds</Original>
+		  <English>Wrong code entered to many times wait 10 seconds</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_20">
+		  <Original>Cannot unlock while another player is nearby.</Original>
+		  <English>Cannot unlock while another player is nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_21">
+		  <Original>Unlock already in progress.</Original>
+		  <English>Unlock already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_22">
+		  <Original>Boil already in progress.</Original>
+		  <English>Boil already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_23">
+		  <Original>Cooking already in progress.</Original>
+		  <English>Cooking already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_24">
+		  <Original>Refuel already in progress.</Original>
+		  <English>Refuel already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_25">
+		  <Original>Preparing to fuel and start generator, move to cancel.</Original>
+		  <English>Preparing to fuel and start generator, move to cancel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_26">
+		  <Original>Canceled.</Original>
+		  <English>Canceled.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_27">
+		  <Original>No Vehicles Nearby.</Original>
+		  <English>No Vehicles Nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_28">
+		  <Original>Generator has been started.</Original>
+		  <English>Generator has been started.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_29">
+		  <Original>Gutting animal already in progress.</Original>
+		  <English>Gutting animal already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_30">
+		  <Original>Canceled gutting.</Original>
+		  <English>Canceled gutting.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_31">
+		  <Original>Gutting zombie already in progress.</Original>
+		  <English>Gutting zombie already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_32">
+		  <Original>Hotwire vehicle already in progress.</Original>
+		  <English>Hotwire vehicle already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_33">
+		  <Original>Failed to unlock car hotwire kit broken.</Original>
+		  <English>Failed to unlock car hotwire kit broken.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_34">
+		  <Original>Fill Jerry already in progress.</Original>
+		  <English>Fill Jerry already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_35">
+		  <Original>Canceled siphon.</Original>
+		  <English>Canceled siphon.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_36">
+		  <Original>No recent Deaths.</Original>
+		  <English>No recent Deaths.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_37">
+		  <Original>Lock vehicle already in progress.</Original>
+		  <English>Lock vehicle already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_38">
+		  <Original>Take item already in progress.</Original>
+		  <English>Take item already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_39">
+		  <Original>Add to toolbelt already in progress.</Original>
+		  <English>Add to toolbelt already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_40">
+		  <Original>\n\nBuilding already in progress.</Original>
+		  <English>\n\nBuilding already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_41">
+		  <Original>\n\nCannot build, too many objects witin 30m.</Original>
+		  <English>\n\nCannot build, too many objects witin 30m.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_42">
+		  <Original>Cannot build while in a vehicle.</Original>
+		  <English>Cannot build while in a vehicle.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_43">
+		  <Original>Cannot build while in a vehicle.</Original>
+		  <English>Cannot build while in a vehicle.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_44">
+		  <Original>Cannot build plot pole within 45m of an existing plot.</Original>
+		  <English>Cannot build plot pole within 45m of an existing plot.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_45">
+		  <Original>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</Original>
+		  <English>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_46">
+		  <Original>Canceled building.</Original>
+		  <English>Canceled building.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_47">
+		  <Original>Canceled construction of %1 %2.</Original>
+		  <English>Canceled construction of %1 %2.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_48">
+		  <Original>Downgrade already in progress.</Original>
+		  <English>Downgrade already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_49">
+		  <Original>Unable to downgrade you do not know the combination.</Original>
+		  <English>Unable to downgrade you do not know the combination.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_50">
+		  <Original>Not setup yet.</Original>
+		  <English>Not setup yet.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_51">
+		  <Original>No downgrades available</Original>
+		  <English>No downgrades available</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_52">
+		  <Original>Upgrade already in progress.</Original>
+		  <English>Upgrade already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_53">
+		  <Original>\n\nHarvest wood already in progress.</Original>
+		  <English>\n\nHarvest wood already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_54">
+		  <Original>\n\nHatchet needs to be in your hand to harvest wood.</Original>
+		  <English>\n\nHatchet needs to be in your hand to harvest wood.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_55">
+		  <Original>\n\nCanceled Harvesting Wood.</Original>
+		  <English>\n\nCanceled Harvesting Wood.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_56">
+		  <Original>\n\nCopy key already in progress.</Original>
+		  <English>\n\nCopy key already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_57">
+		  <Original>\n\nNeed Keymakers kit to make a copy of a key.</Original>
+		  <English>\n\nNeed Keymakers kit to make a copy of a key.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_58">
+		  <Original>\n\nKey crafting needs a fire within 3 meters.</Original>
+		  <English>\n\nKey crafting needs a fire within 3 meters.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_59">
+		  <Original>\n\nKey crafting requires a 1 Tin Bar.</Original>
+		  <English>\n\nKey crafting requires a 1 Tin Bar.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_60">
+		  <Original>\n\nCopied key has been added to your backpack.</Original>
+		  <English>\n\nCopied key has been added to your backpack.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_61">
+		  <Original>\n\nCanceled Key Crafting.</Original>
+		  <English>\n\nCanceled Key Crafting.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_62">
+		  <Original>\n\nCrafting started</Original>
+		  <English>\n\nCrafting started</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_63">
+		  <Original>\n\nCrafting already in progress.</Original>
+		  <English>\n\nCrafting already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_64">
+		  <Original>\n\nCanceled crafting.</Original>
+		  <English>\n\nCanceled crafting.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_65">
+		  <Original>\n\nFishing already in progress.</Original>
+		  <English>\n\nFishing already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_66">
+		  <Original>\n\nMust be near a shore or on a boat to fish.</Original>
+		  <English>\n\nMust be near a shore or on a boat to fish.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_67">
+		  <Original>\n\nFishing pole needs to be in your hand to fish.</Original>
+		  <English>\n\nFishing pole needs to be in your hand to fish.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_68">
+		  <Original>\n\nCanceled Fishing.</Original>
+		  <English>\n\nCanceled Fishing.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_69">
+		  <Original>\n\nYou caught a fish.</Original>
+		  <English>\n\nYou caught a fish.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_70">
+		  <Original>\n\nNibble... Nibble...</Original>
+		  <English>\n\nNibble... Nibble...</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_71">
+		  <Original>\n\nYou didn't catch anything.</Original>
+		  <English>\n\nYou didn't catch anything.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_72">
+		  <Original>\n\nHarvest already in progress.</Original>
+		  <English>\n\nHarvest already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_73">
+		  <Original>\n\nCanceled Harvesting.</Original>
+		  <English>\n\nCanceled Harvesting.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_74">
+		  <Original>\n\nYou must be close to a plant to harvest.</Original>
+		  <English>\n\nYou must be close to a plant to harvest.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_75">
+		  <Original>\n\nOpen Crate already in progress.</Original>
+		  <English>\n\nOpen Crate already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_76">
+		  <Original>\n\nYou need a crowbar to open this.</Original>
+		  <English>\n\nYou need a crowbar to open this.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_77">
+		  <Original>\n\nMissing supply crate.</Original>
+		  <English>\n\nMissing supply crate.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_78">
+		  <Original>\n\nOpened supply crate.</Original>
+		  <English>\n\nOpened supply crate.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_79">
+		  <Original>\n\nOre Mining already in progress.</Original>
+		  <English>\n\nOre Mining already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_80">
+		  <Original>\n\nCancelled Mining Ore.</Original>
+		  <English>\n\nCancelled Mining Ore.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_81">
+		  <Original>\n\nCombine ammo failed you need at least 85% capacity to fill a mag</Original>
+		  <English>\n\nCombine ammo failed you need at least 85% capacity to fill a mag</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_82">
+		  <Original>No upgrades available</Original>
+		  <English>No upgrades available</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_83">
+		  <Original>\n\nChanging clothes already in progress.</Original>
+		  <English>\n\nChanging clothes already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_84">
+		  <Original>\n\nCannot change clothes when another player is nearby.</Original>
+		  <English>\n\nCannot change clothes when another player is nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_85">
+		  <Original>\n\nYou may not change clothes while in a vehicle</Original>
+		  <English>\n\nYou may not change clothes while in a vehicle</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_86">
+		  <Original>\n\nYou cannot wear a skin of the opposite sex.</Original>
+		  <English>\n\nYou cannot wear a skin of the opposite sex.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_87">
+		  <Original>Canceled refuel.</Original>
+		  <English>Canceled refuel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_88">
+		  <Original>Remove already in progress.</Original>
+		  <English>Remove already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_89">
+		  <Original>Cannot remove running generator.</Original>
+		  <English>Cannot remove running generator.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_90">
+		  <Original>No parts found.</Original>
+		  <English>No parts found.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_91">
+		  <Original>Failed object not longer exists.</Original>
+		  <English>Failed object not longer exists.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_92">
+		  <Original>Repair already in progress.</Original>
+		  <English>Repair already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_93">
+		  <Original>Canceled Repair.</Original>
+		  <English>Canceled Repair.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_94">
+		  <Original>Salvage already in progress.</Original>
+		  <English>Salvage already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_95">
+		  <Original>Canceled Salvage.</Original>
+		  <English>Canceled Salvage.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_96">
+		  <Original>already in progress.</Original>
+		  <English>already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_97">
+		  <Original>Trading already in progress.</Original>
+		  <English>Trading already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_98">
+		  <Original>Siphon already in progress.</Original>
+		  <English>Siphon already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_99">
+		  <Original>Stop already in progress.</Original>
+		  <English>Stop already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_100">
+		  <Original>Preparing stop generator, move to cancel.</Original>
+		  <English>Preparing stop generator, move to cancel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_101">
+		  <Original>Generator has been stopped.</Original>
+		  <English>Generator has been stopped.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_102">
+		  <Original>No Vehicles In Tow.</Original>
+		  <English>No Vehicles In Tow.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_103">
+		  <Original>Trade already in progress.</Original>
+		  <English>Trade already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_104">
+		  <Original>Cannot trade while another player is nearby.</Original>
+		  <English>Cannot trade while another player is nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_105">
+		  <Original>Starting trade, stand still to complete trade.</Original>
+		  <English>Starting trade, stand still to complete trade.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_106">
+		  <Original>Canceled Trade.</Original>
+		  <English>Canceled Trade.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_107">
+		  <Original>You do not have enough room on your toolbelt.</Original>
+		  <English>You do not have enough room on your toolbelt.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_108">
+		  <Original>Vault pitching already in progress.</Original>
+		  <English>Vault pitching already in progress.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_109">
+		  <Original>Planning construction stand still 5 seconds to build.</Original>
+		  <English>Planning construction stand still 5 seconds to build.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_110">
+		  <Original>You cannot place a Safe here. The area must be flat, and free of other objects</Original>
+		  <English>You cannot place a Safe here. The area must be flat, and free of other objects</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_111">
+		  <Original>Canceled construction of Safe.</Original>
+		  <English>Canceled construction of Safe.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_112">
+		  <Original>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</Original>
+		  <English>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_113">
+		  <Original>You have an outdated version of epoch please download the correct version</Original>
+		  <English>You have an outdated version of epoch please download the correct version</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_114">
+		  <Original>Could not retive date and time from server disconect and retry.</Original>
+		  <English>Could not retive date and time from server disconect and retry.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_115">
+		  <Original>You cannot lock this %1, you do not know the combination.</Original>
+		  <English>You cannot lock this %1, you do not know the combination.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_116">
+		  <Original>That %1 is already being locked.</Original>
+		  <English>That %1 is already being locked.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_117">
+		  <Original>Your %1 has been locked</Original>
+		  <English>Your %1 has been locked</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_118">
+		  <Original>%1 not setup yet.</Original>
+		  <English>%1 not setup yet.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_119">
+		  <Original>You cannot pack this %1, you do not know the combination.</Original>
+		  <English>You cannot pack this %1, you do not know the combination.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_120">
+		  <Original>That %1 is already being packed.</Original>
+		  <English>That %1 is already being packed.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_121">
+		  <Original>Packing %1 move from this position to cancel within 5 seconds.</Original>
+		  <English>Packing %1 move from this position to cancel within 5 seconds.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_122">
+		  <Original>Packing %1 canceled.</Original>
+		  <English>Packing %1 canceled.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_123">
+		  <Original>Your %1 has been packed</Original>
+		  <English>Your %1 has been packed</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_124">
+		  <Original>That %1 is already being unlocked.</Original>
+		  <English>That %1 is already being unlocked.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_125">
+		  <Original>%1 has been unlocked.</Original>
+		  <English>%1 has been unlocked.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_126">
+		  <Original>Combination incorrect, %1 is still locked.</Original>
+		  <English>Combination incorrect, %1 is still locked.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_127">
+		  <Original>You have successfully loaded %1 ammunition.</Original>
+		  <English>You have successfully loaded %1 ammunition.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_128">
+		  <Original>You need %1 type of ammo to do this.</Original>
+		  <English>You need %1 type of ammo to do this.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_129">
+		  <Original>Started cooking %1</Original>
+		  <English>Started cooking %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_130">
+		  <Original>Canceled cooking %1</Original>
+		  <English>Canceled cooking %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_131">
+		  <Original>Filling up %1, move to cancel.</Original>
+		  <English>Filling up %1, move to cancel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_132">
+		  <Original>%1 filled to %2 percent capacity.</Original>
+		  <English>%1 filled to %2 percent capacity.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_133">
+		  <Original>Preparing to siphon, stand still to fill %1.</Original>
+		  <English>Preparing to siphon, stand still to fill %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_134">
+		  <Original>You have filled %1 with fuel.</Original>
+		  <English>You have filled %1 with fuel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_135">
+		  <Original>\n\nThis building needs a %1 within %2 meters</Original>
+		  <English>\n\nThis building needs a %1 within %2 meters</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_136">
+		  <Original>Unable to build %1 nearby.</Original>
+		  <English>Unable to build %1 nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_137">
+		  <Original>Missing tool %1</Original>
+		  <English>Missing tool %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_138">
+		  <Original>Placing %1, move to cancel.</Original>
+		  <English>Placing %1, move to cancel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_139">
+		  <Original>Constructing %1 stage %2 of %3, move to cancel.</Original>
+		  <English>Constructing %1 stage %2 of %3, move to cancel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_140">
+		  <Original>You have setup your %2. Combination is %1</Original>
+		  <English>You have setup your %2. Combination is %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_141">
+		  <Original>Unable to downgrade %1 nearby.</Original>
+		  <English>Unable to downgrade %1 nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_142">
+		  <Original>You have downgraded %1.</Original>
+		  <English>You have downgraded %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_143">
+		  <Original>\n\n%1 of %2 could not be added to your inventory. (not enough room?)</Original>
+		  <English>\n\n%1 of %2 could not be added to your inventory. (not enough room?)</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_144">
+		  <Original>You have repaired %1.</Original>
+		  <English>You have repaired %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_145">
+		  <Original>Missing Parts after first check Item: %1 / %2</Original>
+		  <English>Missing Parts after first check Item: %1 / %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_146">
+		  <Original>Missing %1 more of %2</Original>
+		  <English>Missing %1 more of %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_147">
+		  <Original>\n\nChopping down tree, walk away at anytime to cancel. (%1/%2)</Original>
+		  <English>\n\nChopping down tree, walk away at anytime to cancel. (%1/%2)</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_148">
+		  <Original>\n\n%1 piles of wood has been successfully added in front of you.</Original>
+		  <English>\n\n%1 piles of wood has been successfully added in front of you.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_149">
+		  <Original>\n\nCrafting needs a %1 within %2 meters</Original>
+		  <English>\n\nCrafting needs a %1 within %2 meters</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_150">
+		  <Original>\n\nCrafted Item: %1 x %2</Original>
+		  <English>\n\nCrafted Item: %1 x %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_151">
+		  <Original>\n\nMissing Parts after first check Item: %1 / %2</Original>
+		  <English>\n\nMissing Parts after first check Item: %1 / %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_152">
+		  <Original>\n\n%3 complete, missing %1 more of %2</Original>
+		  <English>\n\n%3 complete, missing %1 more of %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_153">
+		  <Original>\n\n%3 complete, missing %1 more of %2</Original>
+		  <English>\n\n%3 complete, missing %1 more of %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_154">
+		  <Original>\n\n%1 of %2 has been successfully added to your inventory.</Original>
+		  <English>\n\n%1 of %2 has been successfully added to your inventory.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_155">
+		  <Original>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</Original>
+		  <English>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_156">
+		  <Original>\n\n%1 piles of ore has been successfully added in front of you.</Original>
+		  <English>\n\n%1 piles of ore has been successfully added in front of you.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_157">
+		  <Original>Unable to upgrade %1 nearby.</Original>
+		  <English>Unable to upgrade %1 nearby.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_158">
+		  <Original>You have upgraded %2. Combination is %1</Original>
+		  <English>You have upgraded %2. Combination is %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_159">
+		  <Original>You have upgraded %1.</Original>
+		  <English>You have upgraded %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_160">
+		  <Original>Preparing to refuel, stand still to drain %1.</Original>
+		  <English>Preparing to refuel, stand still to drain %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_161">
+		  <Original>%1 cannot hold that much fuel.</Original>
+		  <English>%1 cannot hold that much fuel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_162">
+		  <Original>Starting de-construction of %1.</Original>
+		  <English>Starting de-construction of %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_163">
+		  <Original>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</Original>
+		  <English>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_164">
+		  <Original>%1 broke cannot remove %2.</Original>
+		  <English>%1 broke cannot remove %2.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_165">
+		  <Original>De-constructing %1.</Original>
+		  <English>De-constructing %1.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_166">
+		  <Original>You have successfully attached %1 to the %2</Original>
+		  <English>You have successfully attached %1 to the %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_167">
+		  <Original>You need %1 to repair this</Original>
+		  <English>You need %1 to repair this</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_168">
+		  <Original>You have destroyed %1 while attempting to remove from %2</Original>
+		  <English>You have destroyed %1 while attempting to remove from %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_169">
+		  <Original>You have successfully removed %1 from the %2</Original>
+		  <English>You have successfully removed %1 from the %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_170">
+		  <Original>You need %1 to remove this part.</Original>
+		  <English>You need %1 to remove this part.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_171">
+		  <Original>%1 has been drained for %2 litres of Fuel</Original>
+		  <English>%1 has been drained for %2 litres of Fuel</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_172">
+		  <Original>%1 does not have enough fuel to siphon.</Original>
+		  <English>%1 does not have enough fuel to siphon.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_173">
+		  <Original>Dog consumed %1, and is now tamed.</Original>
+		  <English>Dog consumed %1, and is now tamed.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_174">
+		  <Original>Dog consumed %1, yet remains untamed.</Original>
+		  <English>Dog consumed %1, yet remains untamed.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_175">
+		  <Original>%1 has been attached to Tow Truck.</Original>
+		  <English>%1 has been attached to Tow Truck.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_176">
+		  <Original>Failed to attach %1 to Tow Truck.</Original>
+		  <English>Failed to attach %1 to Tow Truck.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_177">
+		  <Original>%1 too large and cannot be towed.</Original>
+		  <English>%1 too large and cannot be towed.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_178">
+		  <Original>%1 has been detached from Tow Truck.</Original>
+		  <English>%1 has been detached from Tow Truck.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_179">
+		  <Original>You have setup your Safe. Combination is %1</Original>
+		  <English>You have setup your Safe. Combination is %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_180">
+		  <Original>Bought %3 for %1 %2.</Original>
+		  <English>Bought %3 for %1 %2.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_181">
+		  <Original>Sold %1 %2 for %3 %4</Original>
+		  <English>Sold %1 %2 for %3 %4</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_182">
+		  <Original>Cannot sell %1, tires are too damaged.</Original>
+		  <English>Cannot sell %1, tires are too damaged.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_183">
+		  <Original>Insufficient Stock %1</Original>
+		  <English>Insufficient Stock %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_184">
+		  <Original>Need %1 More %2</Original>
+		  <English>Need %1 More %2</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_185">
+		  <Original>No %1 found within 20 meters.</Original>
+		  <English>No %1 found within 20 meters.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_186">
+		  <Original>Traded %1 %2 for %3 %4</Original>
+		  <English>Traded %1 %2 for %3 %4</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_187">
+		  <Original>Starting trade, stand still to complete trade %1 of %2.</Original>
+		  <English>Starting trade, stand still to complete trade %1 of %2.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+	</Package>
 </Project>

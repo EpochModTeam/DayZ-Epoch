@@ -5,7 +5,7 @@
 */
 private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["Lock already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_10") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 _obj = _this;
@@ -18,7 +18,7 @@ if(isNull _obj) exitWith { TradeInprogress = false; };
 
 // Test cannot lock while another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot lock while another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_11") , "PLAIN DOWN"];  };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -28,11 +28,11 @@ player playActionNow "Medic";
 player removeAction s_player_lockvault;
 s_player_lockvault = 1;
 
-if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format["You cannot lock this %1, you do not know the combination.",_text], "PLAIN DOWN"]; };
+if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_115"),_text], "PLAIN DOWN"]; };
 
 _alreadyPacking = _obj getVariable["packing",0];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format["That %1 is already being locked.",_text], "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_116"),_text], "PLAIN DOWN"]};
 
 _obj setVariable["packing",1];
 
@@ -77,7 +77,7 @@ if(!isNull _obj) then {
 		_holder setVariable ["BackpackCargo", _backpacks, true];
 	};
 	
-	cutText [format["Your %1 has been locked",_text], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_117"),_text], "PLAIN DOWN"];
 
 	s_player_lockvault = -1;
 };

@@ -1,11 +1,11 @@
 private ["_veh","_location","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 // Test cannot lock while another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot trade while another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -31,7 +31,7 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	cutText ["Starting trade, stand still to complete trade.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
 	 
 	// force animation 
 	player playActionNow "Medic";
@@ -65,7 +65,7 @@ if (_qty >= _qty_in) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Trade." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 	};
 
 	if (_finished) then {
@@ -116,7 +116,7 @@ if (_qty >= _qty_in) then {
 
 						player reveal _veh;
 						
-						cutText [format[("Bought %3 for %1 %2."),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
+						cutText [format[(localize "str_epoch_player_180"),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
 					};
 					
 				} else {
@@ -165,10 +165,10 @@ if (_qty >= _qty_in) then {
 
 							deleteVehicle _obj; 
 
-							cutText [format[("Sold %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+							cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 						};
 					} else {
-						cutText [format[("Cannot sell %1, tires are too damaged."),_textPartIn] , "PLAIN DOWN"];
+						cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
 					};
 				};
 	
@@ -176,7 +176,7 @@ if (_qty >= _qty_in) then {
 				s_player_parts_crtl = -1;
 
 			} else {
-				cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
 			dayzTradeResult = nil;
 		};
@@ -185,9 +185,9 @@ if (_qty >= _qty_in) then {
 } else {
 	_needed =  _qty_in - _qty;
 	if(_buy_o_sell == "buy") then {
-		cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
 	} else {
-		cutText [format[("No %1 found within 20 meters."),_textPartIn] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_185"),_textPartIn] , "PLAIN DOWN"];
 	};	
 };
 

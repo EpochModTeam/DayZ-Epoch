@@ -623,7 +623,7 @@ class FSM
        "selectNoPlayer;" \n
        "" \n
        "_myTime = diag_tickTime;" \n
-       "1 cutText [""This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff."", ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
+       "1 cutText [(localize ""str_epoch_player_112""), ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1440,7 +1440,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
        "_myTime = diag_tickTime;" \n
-       "1 cutText [""You have an outdated version of epoch please download the correct version"", ""PLAIN"",15];"/*%FSM</STATEINIT""">*/;
+       "1 cutText [(localize ""str_epoch_player_113""), ""PLAIN"",15];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1575,7 +1575,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
        "_myTime = diag_tickTime;" \n
-       "1 cutText [""Could not retive date and time from server disconect and retry."", ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
+       "1 cutText [(localize ""str_epoch_player_114""), ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

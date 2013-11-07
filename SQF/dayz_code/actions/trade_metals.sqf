@@ -1,6 +1,6 @@
 private ["_buy","_metals_conversion","_cancel"];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 {player removeAction _x} forEach s_player_parts;s_player_parts = [];

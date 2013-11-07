@@ -5,10 +5,10 @@
 */
 private ["_isOk","_objName","_finished","_proceed","_counter","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree","_finishedTime","_item"];
 
-if(TradeInprogress) exitWith { cutText ["\n\nHarvest wood already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_53") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-if((currentWeapon player) != "MeleeHatchet") exitWith {TradeInprogress = false; cutText ["\n\nHatchet needs to be in your hand to harvest wood.", "PLAIN DOWN"]; };
+if((currentWeapon player) != "MeleeHatchet") exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_54"), "PLAIN DOWN"]; };
 
 // allowed trees list move this later
 _trees = ["t_larix3s.p3d","t_pyrus2s.p3d","str_briza_kriva.p3d","dd_borovice.p3d","les_singlestrom_b.p3d","les_singlestrom.p3d","smrk_velky.p3d","smrk_siroky.p3d","smrk_maly.p3d","les_buk.p3d","str krovisko vysoke.p3d","str_fikovnik_ker.p3d","str_fikovnik.p3d","str vrba.p3d","hrusen2.p3d","str dub jiny.p3d","str lipa.p3d","str briza.p3d","p_akat02s.p3d","jablon.p3d","p_buk.p3d","str_topol.p3d","str_topol2.p3d","p_osika.p3d","t_picea3f.p3d","t_picea2s.p3d","t_picea1s.p3d","t_fagus2w.p3d","t_fagus2s.p3d","t_fagus2f.p3d","t_betula1f.p3d","t_betula2f.p3d","t_betula2s.p3d","t_betula2w.p3d","t_alnus2s.p3d","t_acer2s.p3d","t_populus3s.p3d","t_quercus2f.p3d","t_sorbus2s.p3d","t_malus1s.p3d","t_salix2s.p3d","t_picea1s_w.p3d","t_picea2s_w.p3d","t_ficusb2s_ep1.p3d","t_populusb2s_ep1.p3d","t_populusf2s_ep1.p3d","t_amygdalusc2s_ep1.p3d","t_ficusb2s_ep1.p3d","t_pistacial2s_ep1.p3d","t_pinuse2s_ep1.p3d","t_pinuss3s_ep1.p3d","t_prunuss2s_ep1.p3d","t_pinusn2s.p3d","t_pinusn1s.p3d","t_pinuss2f.p3d","t_poplar2f_dead_pmc.p3d","misc_torzotree_pmc.p3d","misc_burnspruce_pmc.p3d","brg_cocunutpalm8.p3d","brg_umbrella_acacia01b.p3d","brg_jungle_tree_canopy_1.p3d","brg_jungle_tree_canopy_2.p3d","brg_cocunutpalm4.p3d","brg_cocunutpalm3.p3d","palm_01.p3d","palm_02.p3d","palm_03.p3d","palm_04.p3d","palm_09.p3d","palm_10.p3d","brg_cocunutpalm2.p3d","brg_jungle_tree_antiaris.p3d","brg_cocunutpalm1.p3d"];
@@ -90,7 +90,7 @@ if (count(_findNearestTree) >= 1) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format["\n\nChopping down tree, walk away at anytime to cancel. (%1/%2)", _counter,  _countOut], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_147"), _counter,  _countOut], "PLAIN DOWN"];
 
 			if(_counter == _countOut) exitWith {
 				_isOk = false;
@@ -114,7 +114,7 @@ if (count(_findNearestTree) >= 1) then {
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 
-			cutText [format["\n\n%1 piles of wood has been successfully added in front of you.", _countOut], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_148"), _countOut], "PLAIN DOWN"];
 
 			player action ["Gear", _item];
 
@@ -124,7 +124,7 @@ if (count(_findNearestTree) >= 1) then {
 				[objNull, player, rSwitchMove,""] call RE;
 				player playActionNow "stop";
 			};
-			cutText ["\n\nCanceled Harvesting Wood.", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_55"), "PLAIN DOWN"];
 		};
 
 	} else {

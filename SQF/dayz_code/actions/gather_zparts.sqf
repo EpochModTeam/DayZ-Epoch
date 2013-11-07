@@ -1,6 +1,6 @@
 private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finished","_animState","_isMedic","_hasHarvested","_hasKnifeBlunt","_humanity"];
 
-if(TradeInprogress) exitWith { cutText ["Gutting zombie already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_31") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_butcher;
@@ -54,7 +54,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled gutting." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_30") , "PLAIN DOWN"];
 		//_abort = true;
 	};
 

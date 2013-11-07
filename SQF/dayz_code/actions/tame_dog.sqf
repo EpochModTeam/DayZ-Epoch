@@ -58,8 +58,8 @@ if(_removed == _countIn) then {
 		_dog setVariable ["fsm_handle", _fsmid];
 		_dog setVariable ["CharacterID", dayz_characterID, true];
 
-		cutText [format["Dog consumed %1, and is now tamed.",_textRemoved], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_173"),_textRemoved], "PLAIN DOWN"];
 	} else {
-		cutText [format["Dog consumed %1, yet remains untamed.",_textRemoved], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_174"),_textRemoved], "PLAIN DOWN"];
 	};
 };

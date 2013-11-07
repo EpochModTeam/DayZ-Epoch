@@ -1,6 +1,6 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canName","_canSize","_configCan","_configVeh","_capacity","_nameText","_availableCans","_canText"];
 
-if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 // Use target from addaction
@@ -37,7 +37,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 			//diag_log ("refuel check: " + str(_newFuel) + " / " + str(_capacity));
 
-			cutText [format["Preparing to refuel, stand still to drain %1.",_canText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_160"),_canText], "PLAIN DOWN"];
 			
 			// alert zombies
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
@@ -123,17 +123,17 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					};	
 			
 				} else {
-					cutText [format["%1 cannot hold that much fuel.",_nameText], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_161"),_nameText], "PLAIN DOWN"];
 					_abort = true;
 				};
 					
 			} else {
-				cutText ["Canceled refuel." , "PLAIN DOWN"];
+				cutText [(localize "str_epoch_player_87") , "PLAIN DOWN"];
 				_abort = true;
 			};
 		
 		} else {
-			cutText [format["%1 cannot hold that much fuel.",_nameText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_161"),_nameText], "PLAIN DOWN"];
 			_abort = true;
 		};			
 	};

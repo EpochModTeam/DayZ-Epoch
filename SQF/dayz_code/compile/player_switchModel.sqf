@@ -25,10 +25,10 @@ private ["_weapons","_magazines","_primweapon","_secweapon"];
 	_weapons 	= weapons player;
 	_magazines	= call player_countmagazines; //magazines player;
 
-	if ( (_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0 )) exitWith {cutText ["can't count magazines!", "PLAIN DOWN"]};
+	if ( (_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0 )) exitWith {cutText [(localize "str_epoch_player_17"), "PLAIN DOWN"]};
 
 
-//	if ( count _magazines == 0 ) exitWith {cutText ["can't count magazines!", "PLAIN DOWN"]};
+//	if ( count _magazines == 0 ) exitWith {cutText [(localize "str_epoch_player_17"), "PLAIN DOWN"]};
 
 	_primweapon	= primaryWeapon player;
 	_secweapon	= secondaryWeapon player;

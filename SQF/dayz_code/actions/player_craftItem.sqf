@@ -21,7 +21,7 @@ class ItemActions
 */
 private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
 
-if(TradeInprogress) exitWith { cutText ["\n\nCrafting already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_63") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 // This is used to find correct recipe based what itemaction was click allows multiple recipes per item.
@@ -56,7 +56,7 @@ if("workshop" in _needNear) then {
 	};
 };
 if(_abort) exitWith {
-	cutText [format["\n\nCrafting needs a %1 within %2 meters",_reason,_distance], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_149"),_reason,_distance], "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
@@ -112,7 +112,7 @@ if (_canDo) then {
 			// If all parts proceed
 			if (_proceed) then {
 	
-				cutText ["\n\nCrafting started", "PLAIN DOWN"];
+				cutText [(localize "str_epoch_player_62"), "PLAIN DOWN"];
 	
 				player playActionNow "Medic";
 	
@@ -202,7 +202,7 @@ if (_canDo) then {
 								_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 	
 								// Add crafted item
-								cutText [format["\n\nCrafted Item: %1 x %2",_textCreate,_countOut], "PLAIN DOWN"];
+								cutText [format[(localize "str_epoch_player_150"),_textCreate,_countOut], "PLAIN DOWN"];
 								// sleep here 
 								sleep 1;
 	
@@ -213,7 +213,7 @@ if (_canDo) then {
 						// Refund parts since we failed 
 						{player addMagazine _x;} forEach _temp_removed_array;
 	
-						cutText [format["\n\nMissing Parts after first check Item: %1 / %2",_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+						cutText [format[(localize "str_epoch_player_151"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 					};
 	
 				} else {
@@ -222,22 +222,22 @@ if (_canDo) then {
 						[objNull, player, rSwitchMove,""] call RE;
 						player playActionNow "stop";
 					};
-					cutText ["\n\nCanceled crafting.", "PLAIN DOWN"];
+					cutText [(localize "str_epoch_player_64"), "PLAIN DOWN"];
 					_craft_doLoop = false;
 				};
 	
 			} else {
 				_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-				cutText [format["\n\n%3 complete, missing %1 more of %2",_missingQty, _textMissing,_tradeComplete], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_152"),_missingQty, _textMissing,_tradeComplete], "PLAIN DOWN"];
 				_craft_doLoop = false;
 			};
 		} else {
 			_textMissing = getText(configFile >> "CfgWeapons" >> _missing >> "displayName");
-			cutText [format["\n\nMissing Tool: %1",_textMissing], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_153"),_textMissing], "PLAIN DOWN"];
 			_craft_doLoop = false;
 		};
 	};
 } else {
-	cutText ["\n\nCanceled crafting.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_64"), "PLAIN DOWN"];
 };
 TradeInprogress = false;

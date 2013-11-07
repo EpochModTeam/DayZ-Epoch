@@ -29,7 +29,7 @@ private ["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_btnAbortTe
 				};
 				case (!r_player_dead and !canbuild) : {
 					_btnAbort ctrlEnable false;
-					cutText ["Cannot Abort while in a trader city!", "PLAIN DOWN"];
+					cutText [(localize "str_epoch_player_12"), "PLAIN DOWN"];
 				};
 				case (!r_player_dead and player getVariable["combattimeout", 0] >= time) : {
 					_btnAbort ctrlEnable false;

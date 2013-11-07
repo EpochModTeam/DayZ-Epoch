@@ -1,6 +1,6 @@
 private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx","_displayName","_fuelCans"];
 
-if(TradeInprogress) exitWith { cutText ["Fill Jerry already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_34"), "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_fillfuel;
@@ -24,7 +24,7 @@ _qty = count _fuelCans;
 	
 	_fillCounter = _fillCounter + 1;
 
-	cutText [format["Preparing to siphon, stand still to fill %1.",_displayName], "PLAIN DOWN"];	
+	cutText [format[(localize "str_epoch_player_133"),_displayName], "PLAIN DOWN"];	
 	
 	// force animation 
 	player playActionNow "Medic";
@@ -64,7 +64,7 @@ _qty = count _fuelCans;
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled siphon." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_35") , "PLAIN DOWN"];
 		_abort = true;
 	};
 
@@ -75,7 +75,7 @@ _qty = count _fuelCans;
 			} else {
 				player addMagazine "ItemJerrycan";
 			};
-			cutText [format["You have filled %1 with fuel.",_displayName], "PLAIN DOWN"];	
+			cutText [format[(localize "str_epoch_player_134"),_displayName], "PLAIN DOWN"];	
 		} else {
 			_abort = true;
 		};

@@ -4,12 +4,12 @@ Added Female skin changes - DayZ Epoch - vbawol
 */
 private ["_item","_onLadder","_hasclothesitem","_config","_text","_myModel","_itemNew","_currentSex","_newSex","_model","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["\n\nChanging clothes already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_83") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 // cannot change clothes when another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["\n\nCannot change clothes when another player is nearby." , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_84") , "PLAIN DOWN"];  };
 
 _item = _this;
 call gear_ui_init;
@@ -23,7 +23,7 @@ _text = getText (_config >> _item >> "displayName");
 
 if (!_hasclothesitem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
 
-if (vehicle player != player) exitWith {TradeInprogress = false; cutText ["\n\nYou may not change clothes while in a vehicle", "PLAIN DOWN"]};
+if (vehicle player != player) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_85"), "PLAIN DOWN"]};
 
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
@@ -50,7 +50,7 @@ if ( (isClass(_config >> _itemNew)) ) then {
 			};
 
 		} else {
-			cutText ["\n\nYou cannot wear a skin of the opposite sex.", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_86"), "PLAIN DOWN"];
 		};
 	};
 };

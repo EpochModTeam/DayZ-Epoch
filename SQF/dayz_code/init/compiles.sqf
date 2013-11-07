@@ -661,7 +661,7 @@ if (!isDedicated) then {
 		private ["_index", "_item", "_data"];
 		_index = _this select 0;
 		if (_index < 0) exitWith {
-			cutText ["Trading canceled." , "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_6") , "PLAIN DOWN"];
 		};
 		_item = TraderItemList select _index;
 		_data = [_item select 0, _item select 3, 1, _item select 2, "buy", _item select 4, _item select 1, _item select 8];
@@ -673,7 +673,7 @@ if (!isDedicated) then {
 		private ["_index", "_item", "_data"];
 		_index = _this select 0;
 		if (_index < 0) exitWith {
-			cutText ["Trading canceled." , "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_6") , "PLAIN DOWN"];
 		};
 		_item = TraderItemList select _index;
 		_data = [_item select 6, _item select 0, _item select 5, 1, "sell", _item select 1, _item select 7, _item select 8];
@@ -772,7 +772,8 @@ if (!isDedicated) then {
 	
 //Both
 	BIS_fnc_selectRandom =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_selectRandom.sqf";		//Checks which actions for nearby casualty
-	BIS_fnc_vectorAdd =     		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_vectorAdd.sqf";		//Checks which actions for nearby casualty
+	BIS_fnc_vectorAdd =         compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_vectorAdd.sqf";	
+	BIS_fnc_halo =              compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_halo.sqf";
 	fnc_buildWeightedArray = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildWeightedArray.sqf";		//Checks which actions for nearby casualty
 	fnc_usec_damageVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandlerVehicle.sqf";		//Event handler run on damage
 	zombie_initialize = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\init\zombie_init.sqf";

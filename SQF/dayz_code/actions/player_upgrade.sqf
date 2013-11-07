@@ -4,7 +4,7 @@
 */
 private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot"];
 
-if(TradeInprogress) exitWith { cutText ["Upgrade already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_52") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_upgrade_build;
@@ -53,7 +53,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // exit if not allowed due to plot pole
-if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format["Unable to upgrade %1 nearby.",_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  TradeInprogress = false; cutText [format[(localize "str_epoch_player_157"),_needText,_distance] , "PLAIN DOWN"]; };
 
 // get cursortarget from addaction
 _obj = _this select 3;
@@ -64,7 +64,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_upgrade_build = -1; cutText ["Not setup yet.", "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_upgrade_build = -1; cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];};
 
 // Get classname
 _classname = typeOf _obj;
@@ -159,9 +159,9 @@ if ((count _upgrade) > 0) then {
 				
 				_objectCharacterID = _combination;
 				
-				cutText [format["You have upgraded %2. Combination is %1",_combination,_text], "PLAIN DOWN", 5];
+				cutText [format[(localize "str_epoch_player_158"),_combination,_text], "PLAIN DOWN", 5];
 			} else {	
-				cutText [format["You have upgraded %1.",_text], "PLAIN DOWN", 5];
+				cutText [format[(localize "str_epoch_player_159"),_text], "PLAIN DOWN", 5];
 			};
 
 			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
@@ -172,16 +172,16 @@ if ((count _upgrade) > 0) then {
 		} else {
 		
 			{player addMagazine _x;} forEach _temp_removed_array;
-			cutText [format["Missing Parts after first check Item: %1 / %2",_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 		
 		};
 	} else {
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-		cutText [format["Missing %1 more of %2",_missingQty, _textMissing], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_146"),_missingQty, _textMissing], "PLAIN DOWN"];
 	};
 
 } else {
-	cutText ["No upgrades available", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_82"), "PLAIN DOWN"];
 };
 
 TradeInprogress = false;

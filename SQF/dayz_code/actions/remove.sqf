@@ -4,7 +4,7 @@ parameters: _obj
 */
 private ["_activatingPlayer","_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle"];
 
-if(TradeInprogress) exitWith { cutText ["Remove already in progress." , "PLAIN DOWN"]; };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_88") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
 player removeAction s_player_deleteBuild;
@@ -17,7 +17,7 @@ _activatingPlayer = player;
 _objOwnerID = _obj getVariable["CharacterID","0"];
 _isOwnerOfObj = (_objOwnerID == dayz_characterID);
 
-if(_obj getVariable ["GeneratorRunning", false]) exitWith {TradeInprogress = false; cutText ["Cannot remove running generator.", "PLAIN DOWN"];};
+if(_obj getVariable ["GeneratorRunning", false]) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_89"), "PLAIN DOWN"];};
 
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
@@ -63,7 +63,7 @@ if(_IsNearPlot >= 1) then {
 
 _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName");
 
-cutText [format["Starting de-construction of %1.",_nameVehicle], "PLAIN DOWN"];
+cutText [format[(localize "str_epoch_player_162"),_nameVehicle], "PLAIN DOWN"];
 
 // Alert zombies once.
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
@@ -129,7 +129,7 @@ while {_isOk} do {
 		_proceed = false;
 	};
 
-	cutText [format["De-constructing %1 stage %2 of %3 walk away at anytime to cancel.", _nameVehicle, _counter,_limit], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_163"), _nameVehicle, _counter,_limit], "PLAIN DOWN"];
 
 	if(_counter == _limit) exitWith {
 		_isOk = false;
@@ -147,7 +147,7 @@ if(_brokenTool) then {
 		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
 	};
 	if(([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {
-		cutText [format["%1 broke cannot remove %2.",getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_164"),getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle], "PLAIN DOWN"];
 	};
 };
 
@@ -166,7 +166,7 @@ if (_proceed) then {
 			publicVariableServer "PVDZE_obj_Delete";
 		};
 
-		cutText [format["De-constructing %1.",_nameVehicle], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_165"),_nameVehicle], "PLAIN DOWN"];
 		
 		_preventRefund = false;
 
@@ -186,7 +186,7 @@ if (_proceed) then {
 		};
 		
 		if((count _selectedRemoveOutput) <= 0) then {
-			cutText ["No parts found.", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_90"), "PLAIN DOWN"];
 		};
 
 		if (_ipos select 2 < 0) then {
@@ -214,7 +214,7 @@ if (_proceed) then {
 			player action ["Gear", _item];
 		};
 	} else {
-		cutText ["Failed object not longer exists.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_91"), "PLAIN DOWN"];
 	};
 
 } else {

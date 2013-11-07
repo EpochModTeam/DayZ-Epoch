@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_soundObject"];
 
-if(TradeInprogress) exitWith { cutText ["Stop already in progress." , "PLAIN DOWN"] };
+if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_99") , "PLAIN DOWN"] };
 TradeInprogress = true;
 
 player removeAction s_player_fillgen;
@@ -18,7 +18,7 @@ r_doLoop = true;
 _started = false;
 _finished = false;
 
-cutText ["Preparing stop generator, move to cancel.", "PLAIN DOWN"];
+cutText [(localize "str_epoch_player_100"), "PLAIN DOWN"];
 
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -45,7 +45,7 @@ if(!_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText ["Canceled." , "PLAIN DOWN"]
+	cutText [(localize "str_epoch_player_26") , "PLAIN DOWN"]
 };
 
 if (_finished) then {
@@ -58,7 +58,7 @@ if (_finished) then {
 		// Stop generator
 		_vehicle setVariable ["GeneratorRunning", false,true];
 
-		cutText ["Generator has been stopped.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_101"), "PLAIN DOWN"];
 	
 };
 
