@@ -87,7 +87,7 @@ if (isServer and isNil "sm_done") then {
 		_objectCount = _hiveResponse select 1;
 		diag_log ("HIVE: Commence Object Streaming...");
 		for "_i" from 1 to _objectCount do { 
-			_hiveResponse = _key call server_hiveReadWrite;
+			_hiveResponse = _key call server_hiveReadWriteLarge;
 			_objectArray set [_i - 1, _hiveResponse];
 			//diag_log (format["HIVE dbg %1 %2", typeName _hiveResponse, _hiveResponse]);
 		};

@@ -31,6 +31,7 @@ epoch_eventIsAny = {
 	_boolReturn
 };
 
+zero_weather = diag_tickTime;
 zero_cleanDead = diag_tickTime;
 zero_cleanLoot = diag_tickTime;
 
@@ -60,6 +61,10 @@ while {true} do {
 			} forEach EpochEvents;
 
 			_time = diag_tickTime;
+			if ((_time - zero_weather) > 300) then {
+				call server_weather;
+				zero_weather = _time;
+			};
 			// perform cleanup here
 			if ((_time - zero_cleanDead) > 600) then {
 				call server_cleanDead;

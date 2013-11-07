@@ -14,6 +14,11 @@ _isPZombie = player isKindOf "PZombie_VB";
 _source = _this select 3;
 _ammo = _this select 4;
 _type = [_damage,_ammo] call fnc_usec_damageType;
+
+if (_type == 3) then {
+	_damage = _damage * 0.024;
+};
+
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
 //_evType = "";
@@ -89,7 +94,7 @@ if (_damage > 0.4) then {
 	if (_unitIsPlayer) then {
 		//Cause blood loss
 		//Log Damage
-		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };

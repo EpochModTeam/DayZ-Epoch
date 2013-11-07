@@ -42,6 +42,12 @@ while {true} do {
 		dayz_PreviousTown = _town;
 	};
 
+	// Set weather 
+	0 setOvercast (zeroCurrentWeather select 0);
+    0 setFog (zeroCurrentWeather select 1);
+    setWind [((zeroCurrentWeather select 2) select 0),((zeroCurrentWeather select 2) select 1),true];
+    0 setRain (zeroCurrentWeather select 3);
+
 	//wait
 	sleep 5;
 };

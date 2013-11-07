@@ -10,6 +10,11 @@ _hitter = 		_this select 3;
 _projectile = 	_this select 4;
 
 if (local _zed) then {
+
+	if (_projectile isKindOf "Melee") then {
+		_damage = _damage * 0.024;
+	};
+
 	if (_damage > 1 and _projectile != "") then {
 		//Record deliberate critical damages
 		switch (_selection) do {

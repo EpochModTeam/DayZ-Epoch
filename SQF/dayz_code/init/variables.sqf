@@ -551,6 +551,8 @@ if(!isDedicated) then {
 	dayz_buildingMonitor = [];	//Buildings to check
 	dayz_bodyMonitor = [];
 	
+	// weather control var
+	zeroCurrentWeather = [0,0,[0,0],0];
 	
 	dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 	

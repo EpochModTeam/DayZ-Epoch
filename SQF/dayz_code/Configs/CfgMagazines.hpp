@@ -4635,32 +4635,9 @@ class CfgMagazines {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	 };
-	 class Hatchet_Swing;
-	 class Machete_Swing : Hatchet_Swing {
-		displayName = "Machete";
-		displayNameMagazine = "Machete";
-		shortNameMagazine = "Machete";
-		ammo = "Machete_Swing_Ammo";
-	};
-	class Fishing_Swing : Hatchet_Swing {
-		displayName = "Fishing";
-		displayNameMagazine = "Fishing";
-		shortNameMagazine = "Fishing";
-		ammo = "Fishing_Swing_Ammo";
-	};
-	class sledge_swing : Hatchet_Swing {
-		displayName = "Sledge";
-		displayNameMagazine = "Sledge";
-		shortNameMagazine = "Sledge";
-		ammo = "Sledge_Swing_Ammo";
-	};
-	// Inventory Placeholder
-	class DummyItem : Hatchet_Swing {
-		displayName = "Dummy";
-		displayNameMagazine = "Dummy";
-		shortNameMagazine = "Dummy";
-		ammo = "Dummy_Swing_Ammo";
-	};
+
+	#include "CfgMagazines\MeleeSwing.hpp"
+
 	// 	class HandGrenade;
 	class ItemTrashToiletpaper : HandGrenade {
 		scope = public;

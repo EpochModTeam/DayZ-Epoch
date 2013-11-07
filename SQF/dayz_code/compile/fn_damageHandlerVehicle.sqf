@@ -9,7 +9,14 @@ _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
 //_source = _this select 3;
-//_ammo = _this select 4;
+_ammo = _this select 4;
+
+_type = [_damage,_ammo] call fnc_usec_damageType;
+
+if (_type == 3) then {
+	_damage = _damage * 0.024;
+};
+
 _total = _damage;
 
 //diag_log ("DAMAGE VEH: " + typeof(_unit) + " / " + str(_hit) + " / " + str(_damage) + " / " + str(getDammage _unit));
