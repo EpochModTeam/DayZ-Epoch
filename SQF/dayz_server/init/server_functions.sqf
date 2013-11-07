@@ -24,7 +24,8 @@ zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\co
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 server_spawnCrashSite  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
 server_handleZedSpawn =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleZedSpawn.sqf";
-server_spawnEvents =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
+server_spawnEvents =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
+server_weather =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_weather.sqf";
 
 fnc_plyrHit   = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
 server_deaths = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
@@ -154,8 +155,18 @@ server_hiveReadWrite = {
 	_key = _this;
 	//diag_log ("ATTEMPT READ/WRITE: " + _key);
 	_data = "HiveExt" callExtension _key;
-	//diag_log ("READ/WRITE: " +str(_data));
+	// diag_log ("READ/WRITE: " +str(_data));
 	_resultArray = call compile format ["%1",_data];
+	_resultArray
+};
+
+server_hiveReadWriteLarge = {
+	private["_key","_resultArray","_data"];
+	_key = _this;
+	//diag_log ("ATTEMPT READ/WRITE: " + _key);
+	_data = "HiveExt" callExtension _key;
+	// diag_log ("READ/WRITE: " +str(_data));
+	_resultArray = call compile _data;
 	_resultArray
 };
 
