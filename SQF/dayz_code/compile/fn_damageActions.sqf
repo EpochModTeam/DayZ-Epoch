@@ -178,34 +178,6 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 		};
 		
 	};
-	/*
-	if ((_unit isKindOf "Building")) then {
-		_type = TypeOf(_unit);
-		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
-		_isEngineer = _hasToolbox;//(_classbag isKindOf "BAF_AssaultPack_Engineer");
-		//CAN DISASSEMBLE
-		if (_isEngineer and (_type in USEC_CanDisassemble)) then {
-			r_action = true;
-			_index = USEC_CanDisassemble find _type;
-			_inventory = USEC_DisassembleKits select _index;
-			_action = _unit addAction [format[localize "str_actions_medical_12",_typeVeh], "\z\addons\dayz_code\actions\disassemble.sqf",[_unit,_inventory], 0, true, true];
-			r_player_actions set [count r_player_actions,_action];
-		};
-		//Upgrade Wire
-		if (_isEngineer and (_type == "usec_wire_cat1") and _hasWire) then {
-			r_action = true;
-			_unitTo = "usec_wire_cat2";
-			_action = _unit addAction [format[localize "str_actions_medical_13",_typeVeh], "\z\addons\dayz_code\actions\engineer_upgrade.sqf",[_unit,"ItemWire",_unitTo], 0, false, true];
-			r_player_actions set [count r_player_actions,_action];
-		};
-		if (_isEngineer and (_type == "usec_wire_cat2") and _hasWire) then {
-			r_action = true;
-			_unitTo = "Fort_RazorWire";
-			_action = _unit addAction [format[localize "str_actions_medical_13",_typeVeh], "\z\addons\dayz_code\actions\engineer_upgrade.sqf",[_unit,"ItemWire",_unitTo], 0, false, true];
-			r_player_actions set [count r_player_actions,_action];
-		};
-	};
-	*/
 	if (r_action) then {
 		r_action_targets = r_action_targets + [_unit];
 	};
