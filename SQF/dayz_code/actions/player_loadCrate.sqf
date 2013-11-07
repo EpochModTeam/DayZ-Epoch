@@ -27,9 +27,13 @@ if ((_location select 2) < 0) then {
 	_location set [2,0];
 };
 
+//remove (partially) full crate
 player removeMagazine _item;
 _dir = getDir player;
 _classname = "WeaponHolder";
+
+//return empty crate to inventory
+player addMagazine "bulk_emtpy";
 
 // Change to optional wait to complete
 player playActionNow "Medic";
