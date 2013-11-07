@@ -90,6 +90,10 @@ fnc_usec_damageType = {
 	if ((_ammo isKindof "B_127x107_Ball") or (_ammo isKindof "B_127x99_Ball")) then {
 		_type = 2;
 	};
+	if (_ammo isKindof "Melee") then {
+		_type = 3;
+	};
+
 	_type;
 };
 

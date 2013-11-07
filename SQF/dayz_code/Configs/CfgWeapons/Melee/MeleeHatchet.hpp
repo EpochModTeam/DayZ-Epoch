@@ -19,11 +19,6 @@ class MeleeHatchet: MeleeWeapon
 		};
 		class ItemActions
 		{
-			class Use
-			{
-				text="$STR_ACTIONS_CHOPWOOD";
-				script="spawn player_chopWood;";
-			};
 			class Toolbelt
 			{
 				text="Add to Toolbelt";
