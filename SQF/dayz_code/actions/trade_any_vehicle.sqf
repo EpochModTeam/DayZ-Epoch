@@ -4,8 +4,8 @@ if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLA
 TradeInprogress = true;
 
 // Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
+//_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+//if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -169,10 +169,10 @@ if (_qty >= _qty_in) then {
 						};
 					};
 
-					if(_okToSell) then {
+					if(local _obj and !isNull _obj and alive _obj) then {
 
-						if(!isNull _obj and alive _obj) then {
-							
+						if(_okToSell) then {
+
 							for "_x" from 1 to _qty_out do {
 								player addMagazine _part_out;
 							};
@@ -186,10 +186,14 @@ if (_qty >= _qty_in) then {
 							deleteVehicle _obj; 
 
 							cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+							
+						} else {
+							cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
 						};
 					} else {
-						cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
+						cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
 					};
+					
 				};
 	
 				{player removeAction _x} forEach s_player_parts;s_player_parts = [];

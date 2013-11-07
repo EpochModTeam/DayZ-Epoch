@@ -4,8 +4,8 @@ if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLA
 TradeInprogress = true;
 
 // Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
+//_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+//if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -148,27 +148,31 @@ if (_qty >= _qty_in) then {
 							_okToSell = false;
 						};
 					};
+					if(local _obj) then {
 
-					if(_okToSell) then {
+						if(_okToSell) then {
 
-						if(!isNull _obj and alive _obj) then {
+							if(!isNull _obj and alive _obj) then {
 							
-							for "_x" from 1 to _qty_out do {
-								player addMagazine _part_out;
+								for "_x" from 1 to _qty_out do {
+									player addMagazine _part_out;
+								};
+
+								_objectID 	= _obj getVariable ["ObjectID","0"];
+								_objectUID	= _obj getVariable ["ObjectUID","0"];
+
+								PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
+								publicVariableServer "PVDZE_obj_Delete";
+
+								deleteVehicle _obj; 
+
+								cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 							};
-
-							_objectID 	= _obj getVariable ["ObjectID","0"];
-							_objectUID	= _obj getVariable ["ObjectUID","0"];
-
-							PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
-							publicVariableServer "PVDZE_obj_Delete";
-
-							deleteVehicle _obj; 
-
-							cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+						} else {
+							cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
 						};
 					} else {
-						cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
+						cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
 					};
 				};
 	

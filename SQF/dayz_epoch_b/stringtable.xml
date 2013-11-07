@@ -4974,5 +4974,15 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
+    <Key ID="STR_EPOCH_PLAYER_245">
+      <Original>Failed to sell vehicle, you must get into drivers seat first.</Original>
+      <English>Failed to sell vehicle, you must get into drivers seat first.</English>
+      <German>Failed to sell vehicle, you must get into drivers seat first.</German>
+      <Russian>Failed to sell vehicle, you must get into drivers seat first.</Russian>
+      <Spanish>Failed to sell vehicle, you must get into drivers seat first.</Spanish>
+      <Dutch>Failed to sell vehicle, you must get into drivers seat first.</Dutch>
+      <French>Failed to sell vehicle, you must get into drivers seat first.</French>
+      <Czech>Failed to sell vehicle, you must get into drivers seat first.</Czech>
+    </Key>
 	</Package>
 </Project>

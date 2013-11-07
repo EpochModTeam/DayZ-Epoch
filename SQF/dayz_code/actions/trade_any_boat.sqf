@@ -4,8 +4,8 @@ if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLA
 TradeInprogress = true;
 
 // Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
+//_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
+//if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -145,6 +145,10 @@ if (_qty >= _qty_in) then {
 					_obj = _obj select 0;
 
 					_okToSell = true;
+					if(!local _obj) then {
+						_okToSell = false;
+					};
+
 					if(_okToSell and !isNull _obj and alive _obj) then {
 			
 						for "_x" from 1 to _qty_out do {
@@ -160,6 +164,8 @@ if (_qty >= _qty_in) then {
 						deleteVehicle _obj;
 
 						cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					} else {
+						cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
 					};
 				};
 	
