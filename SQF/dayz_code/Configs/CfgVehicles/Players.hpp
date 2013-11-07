@@ -1,5 +1,5 @@
-class Ins_Lopotev;
-class Ins_Lopotev_DZ: Ins_Lopotev {
+class INS_Lopotev;
+class INS_Lopotev_DZ: INS_Lopotev {
 		displayName = "Boss";
 		side = 1;
 		weapons[] = {"Throw","Put"};
@@ -66,8 +66,8 @@ class TK_Special_Forces_MG_EP1_DZ: TK_Special_Forces_MG_EP1 {
 
 // good
 
-class Ins_Soldier_AR;
-class Ins_Soldier_AR_DZ: Ins_Soldier_AR {
+class INS_Soldier_AR;
+class INS_Soldier_AR_DZ: INS_Soldier_AR {
 		displayName = "Cooper";
 		side = 1;
 		weapons[] = {"Throw","Put"};
@@ -79,8 +79,8 @@ class Ins_Soldier_AR_DZ: Ins_Soldier_AR {
 		canHideBodies = 1;
 		canCarryBackPack = 1;
 };
-class Ins_Soldier_CO;
-class Ins_Soldier_CO_DZ: Ins_Soldier_CO {
+class INS_Soldier_CO;
+class INS_Soldier_CO_DZ: INS_Soldier_CO {
 		displayName = "Travis";
 		side = 1;
 		weapons[] = {"Throw","Put"};
@@ -92,8 +92,8 @@ class Ins_Soldier_CO_DZ: Ins_Soldier_CO {
 		canHideBodies = 1;
 		canCarryBackPack = 1;
 };
-class Ins_Bardak;
-class Ins_Bardak_DZ: Ins_Bardak {
+class INS_Bardak;
+class INS_Bardak_DZ: INS_Bardak {
 		displayName = "Paulo";
 		side = 1;
 		weapons[] = {"Throw","Put"};
@@ -105,8 +105,8 @@ class Ins_Bardak_DZ: Ins_Bardak {
 		canHideBodies = 1;
 		canCarryBackPack = 1;
 };
-class Ins_Worker2;
-class Ins_Worker2_DZ: Ins_Worker2 {
+class INS_Worker1;
+class INS_Worker1_DZ: INS_Worker1 {
 		displayName = "Steve";
 		side = 1;
 		weapons[] = {"Throw","Put"};
