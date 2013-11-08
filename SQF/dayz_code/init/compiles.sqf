@@ -360,7 +360,7 @@ if (!isDedicated) then {
 		_objName
 	};
 	
-	dayz_originalPlayer =		player;
+	dayz_originalPlayer = player;
 	
 	
 	// trader menu gui by maca134

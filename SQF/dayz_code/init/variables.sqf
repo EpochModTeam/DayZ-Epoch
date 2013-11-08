@@ -400,6 +400,9 @@ dayz_zSpawnDistance = 1000;
 if(isNil "dayz_maxAnimals") then {
 	dayz_maxAnimals = 8;
 };
+if(isNil "timezoneswitch") then {
+	timezoneswitch = 0;
+};
 if(isNil "dayz_maxLocalZombies") then {
 	dayz_maxLocalZombies = 15;
 };
@@ -448,6 +451,9 @@ if(isNil "DZE_BuildingLimit") then {
 if(isNil "DZE_HumanityTargetDistance") then {
 	DZE_HumanityTargetDistance = 25;
 };
+if(isNil "DZE_FriendlySaving") then {
+	DZE_FriendlySaving = true;
+};
 
 DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
 
@@ -490,13 +496,7 @@ DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP
 // Standard Fuel sources
 dayz_fuelsources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","land_fuelstation_w","Land_benzina_schnell"];
 
-
-
 DZE_Lock_Door = "";
-	
-if(isNil "DZE_FriendlySaving") then {
-	DZE_FriendlySaving = true;
-};
 
 //init global arrays for Loot Chances
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
