@@ -587,7 +587,7 @@ class CfgLoot {
 			"Skin_SurvivorWpink_DZ",
 			"Skin_SurvivorWurban_DZ",
 			"Skin_INS_Bardak_DZ",
-			"Skin_INS_Worker1_DZ",
+			"Skin_INS_Worker2_DZ",
 		},
 		{
 			0.11,
