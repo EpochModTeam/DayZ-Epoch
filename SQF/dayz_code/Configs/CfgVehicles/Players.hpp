@@ -105,8 +105,8 @@ class INS_Bardak_DZ: INS_Bardak {
 		canHideBodies = 1;
 		canCarryBackPack = 1;
 };
-class INS_Worker1;
-class INS_Worker1_DZ: INS_Worker1 {
+class INS_Worker2;
+class INS_Worker2_DZ: INS_Worker2 {
 		displayName = "Steve";
 		side = 1;
 		weapons[] = {"Throw","Put"};
