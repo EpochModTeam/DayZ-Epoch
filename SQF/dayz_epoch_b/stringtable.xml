@@ -1123,7 +1123,7 @@
 		<Key ID="str_actions_delete">
 			<Original>Remove %1</Original>
 			<English>Remove %1</English>
-			<German>% entfernen</German>
+			<German>entfernen</German>
 			<Russian>Разобрать %1</Russian>
 			<Spanish>Remover %1</Spanish>
 			<Dutch>%1 verwijderen</Dutch>
