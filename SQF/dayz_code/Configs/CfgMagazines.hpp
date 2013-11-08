@@ -3547,7 +3547,7 @@ class CfgMagazines {
 		displayName = "Paulo";
 		descriptionShort = "Paulo";
 	};
-	class Skin_INS_Worker1_DZ: SkinBase
+	class Skin_INS_Worker2_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Steve";

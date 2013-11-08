@@ -150,7 +150,7 @@ if (_qty >= _qty_in) then {
 					};
 
 					if(_okToSell and !isNull _obj and alive _obj) then {
-			
+
 						for "_x" from 1 to _qty_out do {
 							player addMagazine _part_out;
 						};
