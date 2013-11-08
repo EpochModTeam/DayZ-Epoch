@@ -33,6 +33,10 @@ dayz_fullMoonNights = true;
 dayz_minpos = -26000; 
 dayz_maxpos = 26000;
 
+dayz_sellDistance_vehicle = 10;
+dayz_sellDistance_boat = 30;
+dayz_sellDistance_air = 40;
+
 dayz_paraSpawn = false;
 
 dayz_maxAnimals = 8; // Default: 8
