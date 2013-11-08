@@ -585,7 +585,7 @@ class CfgLoot {
 			"Skin_Rocker4_DZ",
 			"Skin_SurvivorW3_DZ",
 			"Skin_SurvivorWpink_DZ",
-			"Skin_SurvivorWurban_DZ"
+			"Skin_SurvivorWurban_DZ",
 			"Skin_INS_Bardak_DZ",
 			"Skin_INS_Worker1_DZ",
 		},
@@ -619,8 +619,7 @@ class CfgLoot {
 			"Skin_FR_OHara_DZ",
 			"Skin_FR_Rodriguez_DZ",
 			"Skin_CZ_Soldier_Sniper_EP1_DZ",
-			"Skin_Graves_Light_DZ"
-			
+			"Skin_Graves_Light_DZ",
 			"Skin_INS_Soldier_AR_DZ",
 			"Skin_INS_Soldier_CO_DZ"
 		},
