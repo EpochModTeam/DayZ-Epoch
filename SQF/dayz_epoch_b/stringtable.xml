@@ -190,7 +190,7 @@
 			<German>Lade Charakterdaten. Bitte warten.</German>
 			<Russian>Загружается персонаж. Пожалуйста, подождите.</Russian>
 			<Spanish>Cargando datos del personaje. Por favor espere.</Spanish>
-			<Dutch>Karakterdata aan het laden. Even geduld.</Dutch>
+			<Dutch>Personagedata aan het laden. Even geduld.</Dutch>
 			<French>Chargement des données du personnage. Veuillez patienter.</French>
 			<Czech>Načítám data postavy. Prosím čekejte.</Czech>
 		</Key>
@@ -282,7 +282,7 @@
 			<German>Aufbau von %1 gescheitert.</German>
 			<Russian>You have failed to build %1.</Russian>
 			<Spanish>Fallaste al contruir un %1.</Spanish>
-			<Dutch>You have failed to build %1.</Dutch>
+			<Dutch>Het is niet gelukt om %1 te bouwen.</Dutch>
 			<French>Vous n'avez pas réussi à contruire %1.</French>
 			<Czech>Při stavbě %1 došlo k chybě.</Czech>
 		</Key>
@@ -312,7 +312,7 @@
 			<German>%1 wurde ausgeweidet, %2 Stücke Fleisch befinden sich nun im Kadaver</German>
 			<Russian>Вы разделали: %1. Доступно кусков мяса: %2</Russian>
 			<Spanish>Un %1 fue achurado, dejando %2 trozos de carne en el cuerpo.</Spanish>
-			<Dutch>Je hebt %1 opengesneden. Er bevinden zich %2 biefstukken op het karkas</Dutch>
+			<Dutch>Je hebt een %1 opengesneden. Er bevinden zich %2 biefstukken op het karkas</Dutch>
 			<French>%1 a été découpé, %2 morceaux de viande sont maintenant dans la carcasse.</French>
 			<Czech>%1 bylo vykucháno, %2 syrových steaků lze najít v mrtvole.</Czech>
 		</Key>
@@ -432,7 +432,7 @@
 			<German>Sie müssen sich auf den Fahrersitz setzen bevor Sie dieses Fahrzeug reparieren können</German>
 			<Russian>Для ремонта требуется занять место водителя хотя бы раз.</Russian>
 			<Spanish>Necesitas sentarte en el asiento del conductor antes de arreglar este vehículo.</Spanish>
-			<Dutch>Je moet in de bestuurdersstoel zitten om dit voertuig te repareren</Dutch>
+			<Dutch>Je dient in de bestuurdersstoel zitten, voordat je dit voertuig kunt repareren</Dutch>
 			<French>Vous devez vous asseoir à la place du conducteur avant de pouvoir réparer ce véhicule.</French>
 			<Czech>Je nutné si nejdříve sednout na místo řidiče abys mohl opravit toto vozidlo.</Czech>
 		</Key>
@@ -442,7 +442,7 @@
 			<German>Bitte gehen Sie in die Spielerauswahl um weiterspielen zu können</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока, чтобы продолжить игру</Russian>
 			<Spanish>Por favor ve a la Pantalla de Selección de Jugador para continuar en el juego.</Spanish>
-			<Dutch>Ga alsjeblieft naar het rollenverdelingsscherm on verder te spelen</Dutch>
+			<Dutch>Ga alsjeblieft naar het rolverdelingsscherm on verder te spelen</Dutch>
 			<French>Veuillez aller à l'Ecran de Sélection de Joueur pour continuer à jouer</French>
 			<Czech>Pokud chcete pokračovat ve hře, prosím vraťe se na obrazovku s výběrem rolí.</Czech>
 		</Key>
@@ -452,7 +452,7 @@
 			<German>Warten auf Charaktererstellung</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока чтобы продолжить игру</Russian>
 			<Spanish>Esperando a que el personaje sea creado</Spanish>
-			<Dutch>Wachten tot het karakter is aangemaakt</Dutch>
+			<Dutch>Wachten tot het personage is aangemaakt</Dutch>
 			<French>En attente de la création du personnage</French>	
 			<Czech>Čekám na vytvoření postavy.</Czech>	
 		</Key>
@@ -462,7 +462,7 @@
 			<German>Erneuter Authentifizierungsversuch</German>
 			<Russian>Попытка аутентификации</Russian>
 			<Spanish>Volviendo a Autentificar</Spanish>
-			<Dutch>Authenticatie opnieuw proberen</Dutch>
+			<Dutch>Authenticatie wordt opnieuw geprobeerd</Dutch>
 			<French>Nouvelle tentative d'Authentification</French>
 			<Czech>Opakuji ověřování</Czech>
 		</Key>
@@ -482,7 +482,7 @@
 			<German>Warte auf Antwort des Servers</German>
 			<Russian>Ожидание ответа сервера</Russian>
 			<Spanish>Esperando la respuesta del servidor</Spanish>
-			<Dutch>Wachten op serverantwoord</Dutch>
+			<Dutch>Wachten tot de server reageerd</Dutch>
 			<French>Attente de la réponse du serveur</French>
 			<Czech>Čekám na odpověď serveru</Czech>
 		</Key>
@@ -492,7 +492,7 @@
 			<German>Server antwortet, erstelle Charakter</German>
 			<Russian>Получен ответ от сервера. Идет создание персонажа</Russian>
 			<Spanish>El servidor respondió, creando personaje</Spanish>
-			<Dutch>Server heeft geantwoord, karakter aan het maken</Dutch>
+			<Dutch>Server heeft geantwoord, personage aan het maken</Dutch>
 			<French>Réponse du serveur, création du personnage</French>
 			<Czech>Spojení navázáno, vytvářím postavu</Czech>
 		</Key>
@@ -522,7 +522,7 @@
 			<German>\n\nSie können dies nicht tun, während Sie an einer Leiter sind</German>
 			<Russian>\n\nВы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
 			<Spanish>\n\nNo puedes hacer esto mientras estás en una escalera</Spanish>
-			<Dutch>\n\nJe kunt deze actie op een ladder niet uitvoeren</Dutch>
+			<Dutch>\n\nJe kunt deze actie niet uitvoeren vanaf een ladder</Dutch>
 			<French>\n\nVous ne pouvez pas faire cela en étant sur une échelle.</French>
 			<Czech>\n\nAkci nelze provést, jelikož jste na žebříku.</Czech>
 		</Key>
@@ -572,7 +572,7 @@
 			<German>\n\nSie können dies nicht tun, während Sie sich im Wasser befinden..</German>
 			<Russian>\n\nЭто действие невозможно пока вы в воде.</Russian>
 			<Spanish>\n\nNo puedes hacer esto mientras estás en el agua.</Spanish>
-			<Dutch>\n\nJe kunt deze actie niet in het water uitvoeren</Dutch>
+			<Dutch>\n\nJe kunt deze actie niet vanuit het water uitvoeren</Dutch>
 			<French>\n\nVous ne pouvez pas faire cela lorsque vous êtes dans l'eau.</French>
 			<Czech>\n\nTuto akci nelze provést pokud jste ve vodě.</Czech>
 		</Key>
@@ -582,7 +582,7 @@
 			<German>Sie haben ein Wärmpflaster an Ihrem Körper angebracht.</German>
 			<Russian>Вы успешно применили на вашем теле согревающий комплект.</Russian>
 			<Spanish>Aplicaste correctamente un paquete de calor a tu cuerpo.</Spanish>
-			<Dutch>Je hebt met succes een heatpack op je lichaam gebruikt.</Dutch>
+			<Dutch>Je hebt met succes een warmtepleister op je lichaam geplakt.</Dutch>
 			<French>Vous avez utilisé un heatpack avec succès.</French>
 			<Czech>Aplikace heatpacku proběhla úspěšně.</Czech>
 		</Key>
@@ -592,7 +592,7 @@
 			<German>Sie können diese Kombination nicht nachladen, Sie benötigen %1 %2 Magazine.</German>
 			<Russian>Вы не можете перезарядить эту комбинацию. Вам необходимо иметь магазины %1 %2.</Russian>
 			<Spanish>No puedes recargar esa combinación, necesitas %1 cargadores de %2</Spanish>
-			<Dutch>Je kan die combinatie niet herladen, je hebt %1 %2 magazijnen nodig.</Dutch>
+			<Dutch>Je kunt deze combinatie niet herladen, je hebt %1 %2 magazijnen nodig.</Dutch>
 			<French>Vous ne pouvez pas recharger cette combinaison, vous avez besoin de %1 %2 chargeur(s).</French>
 			<Czech>Tuto kombinaci nelze provést, potřebujete zásobníky %1 %2.</Czech>
 		</Key>
@@ -622,7 +622,7 @@
 			<German>\n\n%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
 			<Russian>\n\nПредмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
 			<Spanish>\n\n%1 debe estar en tu inventario principal para: %2</Spanish>
-			<Dutch>\n\n%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
+			<Dutch>\n\n%1 moet zich in je inventaris bevinden om het te %2.</Dutch>
 			<French>\n\n%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
 			<Czech>\n\n%1 musí být ve tvém hlavním inventáři pro %2.</Czech>
 		</Key>
@@ -632,7 +632,7 @@
 			<German>\n\nSie müssen in der Nähe von einem Felsen Mine Erz sein.</German>
 			<Russian>\n\nВы должны быть близко к скале, чтобы добывать руду.</Russian>
 			<Spanish>\n\nDebe estar cerca de una roca de mineral de la mina.</Spanish>
-			<Dutch>\n\nJe moet dicht bij een rots te mijnen erts te zijn.</Dutch>
+			<Dutch>\n\nJe moet dicht bij een rots zijn om erts te mijnen.</Dutch>
 			<French>\n\nVous devez être à proximité d'une roche à la mine.</French>
 			<Czech>\n\nMusíte být blízko k rocku až dolu rudy.</Czech>
 		</Key>
@@ -652,7 +652,7 @@
 			<German>Dieses Zelt wurde bereits vergepackt.</German>
 			<Russian>Эту палатку уже упаковывают.</Russian>
 			<Spanish>Esta carpa ya fue embalada.</Spanish>
-			<Dutch>Die tent wordt al ingepakt.</Dutch>
+			<Dutch>Deze tent wordt momenteel al ingepakt.</Dutch>
 			<French>Cette tente est déjà en train d'être repliée.</French>
 			<Czech>Stan už byl zabalen.</Czech>
 		</Key>
@@ -672,7 +672,7 @@
 			<German>durch einen Schuss in den Kopf</German>
 			<Russian>попадания пули в голову</Russian>
 			<Spanish>un disparo en la cabeza</Spanish>
-			<Dutch>een kogel in het hoofd</Dutch>
+			<Dutch>een kogel door zijn hoofd</Dutch>
 			<French>une balle dans la tête</French>
 			<Czech>střela do hlavy</Czech>
 		</Key>
@@ -742,7 +742,7 @@
 			<German>Sie können nicht nahe eines anderen Spielers ausloggen!</German>
 			<Russian>Нельзя выходить находясь рядом с другим игроком!</Russian>
 			<Spanish>¡No puedes abortar cerca de otros jugadores!</Spanish>
-			<Dutch>Cannot Abort near another player!</Dutch>
+			<Dutch>Je kunt niet uitloggen in de buurt van een speler!</Dutch>
 			<French>Vous ne pouvez pas vous déconnecter a proximité d'autres joueurs</French>
 			<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
 		</Key>
@@ -752,7 +752,7 @@
 			<German>Logout in %1</German>
 			<Russian>Выход будет доступен через %1</Russian>
 			<Spanish>Puedes abortar en %1</Spanish>
-			<Dutch>Can Abort in %1</Dutch>
+			<Dutch>Je kunt uitloggen over %1</Dutch>
 			<French>Vous pourrez vous déconnecter dans #1</French>
 			<Czech>Hru lze opustit za %1</Czech>
 		</Key>
@@ -762,7 +762,7 @@
 			<German>Sie können nicht im Kampf ausloggen!</German>
 			<Russian>Нельзя выходить в бою!</Russian>
 			<Spanish>¡No puedes abortar en combate!</Spanish>
-			<Dutch>Cannot Abort while in combat!</Dutch>
+			<Dutch>Je kunt niet uitloggen tijdens een gevechtssituatie!</Dutch>
 			<French>Vous ne pouvez pas vous déconnecter en combat!</French>
 			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
 		</Key>
@@ -772,7 +772,7 @@
 			<German>Arrow was broken and cannot be used again</German>
 			<Russian>Arrow was broken and cannot be used again</Russian>
 			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
-			<Dutch>Arrow was broken and cannot be used again</Dutch>
+			<Dutch>De pijl is gebroken en kan niet meer opnieuw gebruikt worden</Dutch>
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
 			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
 		</Key>
@@ -794,7 +794,7 @@
 			<German>Bitte wählen Sie das Geschlecht aus, mit dem Sie Spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
 			<Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
 			<Spanish>Por favor selecciona el género con el que deseas jugar. Tu género se enlazará a tu personaje y solo podrá ser cambiado cuando mueras.</Spanish>
-			<Dutch>Kies alsjeblieft het geslacht waarmee je wilt spelen. Je geslacht zal gebonden zijn aan dit unieke karakter, en kan niet gewijzigd worden tot je komt te overlijden.</Dutch>
+			<Dutch>Kies alsjeblieft het geslacht waarmee je wilt spelen. Je geslacht zal gebonden zijn aan dit unieke personage, en kan niet gewijzigd worden tot je komt te overlijden.</Dutch>
 			<French>Veuillez sélectionner le genre que vous voulez jouer. Votre genre sera lié à ce personnage unique et sera définitif jusqu'à la mort de ce dernier.</French>
 			<Czech>Vyberte si prosím pohlaví, za které si přejete hrát. Vaše pohlaví bude přiřazeno k unikátní postavě a dokud neumřete, nelze pohlaví změnit.</Czech>
 		</Key>
@@ -856,7 +856,7 @@
 			<German>Wasser kochen</German>
 			<Russian>Прокипятить воду</Russian>
 			<Spanish>Hervir Agua</Spanish>
-			<Dutch>koge vand</Dutch>
+			<Dutch>Water koken</Dutch>
 			<French>faire bouillir l'eau</French>
 			<Czech>Převařit vodu</Czech>
 		</Key>
@@ -866,7 +866,7 @@
 			<German>Throw</German>			
 			<Russian>Бросить</Russian>
 			<Spanish>Arrojar</Spanish>
-			<Dutch>Throw</Dutch>
+			<Dutch>Werp</Dutch>
 			<French>Jeter</French>
 			<Czech>Throw</Czech>
 		</Key>  
@@ -1096,7 +1096,7 @@
 			<German>Sie können so schnell keine weitere Bluttransfusion durchführen</German>
 			<Russian>Нельзя так часто переливать кровь!</Russian>
 			<Spanish>No puedes realizar otra transfución de sangre tan rápido.</Spanish>
-			<Dutch>You cannot perform another blood transfusion so fast</Dutch>
+			<Dutch>Je kunt niet zosnel aaneenvolgend een bloedtransfusie uitvoeren</Dutch>
 			<French>Vous ne pouvez pas faire d'autre transfusion de sang aussi rapidement</French>
 			<Czech>Nelze znovu provést krevní transfúzi tak rychle po sobě.</Czech>
 		</Key>
@@ -1146,7 +1146,7 @@
 			<German>%1 wenden</German>
 			<Russian>Перевернуть %1</Russian>
 			<Spanish>Voltear %1</Spanish>
-			<Dutch>Turn Over %1</Dutch>
+			<Dutch>Zet %1 weer rechtop</Dutch>
 			<French>Retourner %1</French>
 			<Czech>Otočit %1</Czech>
 		</Key>
@@ -1156,7 +1156,7 @@
 			<German>Statistik aktiveren</German>
 			<Russian>Показать статистику</Russian>
 			<Spanish>Activar Estadísticas</Spanish>
-			<Dutch>Enable Stats</Dutch>
+			<Dutch>Statistieken inschakelen</Dutch>
 			<French>Activer les Stats</French>
 			<Czech>Zapnout statistiky</Czech>
 		</Key>
@@ -1166,7 +1166,7 @@
 			<German>Schlafen</German>
 			<Russian>Поспать</Russian>
 			<Spanish>Dormir</Spanish>
-			<Dutch>Sleep</Dutch>
+			<Dutch>Slapen</Dutch>
 			<French>Dormir</French>
 			<Czech>Spát</Czech>
 		</Key>
@@ -1186,7 +1186,7 @@
 			<German>Hund zähmen</German>
 			<Russian>Приручить собаку</Russian>
 			<Spanish>Domesticar Perro</Spanish>
-			<Dutch>Tame Dog</Dutch>
+			<Dutch>Hond temmen</Dutch>
 			<French>Apprivoiser le Chien</French>
 			<Czech>Ochočit psa</Czech>
 		</Key>
@@ -1196,7 +1196,7 @@
 			<German>Dorthin bewegen</German>
 			<Russian>Иди туда</Russian>
 			<Spanish>Mover a</Spanish>
-			<Dutch>Move To</Dutch>
+			<Dutch>Verplaats naar</Dutch>
 			<French>Aller à</French>
 			<Czech>Přesunout do</Czech>
 		</Key>
@@ -1206,7 +1206,7 @@
 			<German>Hund: %1</German>
 			<Russian>Собака: %1</Russian>
 			<Spanish>Perro: %1</Spanish>
-			<Dutch>Dog: %1</Dutch>
+			<Dutch>Hond: %1</Dutch>
 			<French>Chien: %1</French>
 			<Czech>Pes: %1</Czech>
 		</Key>
@@ -1216,7 +1216,7 @@
 			<German>Hund herbeirufen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Llamar Perro</Spanish>
-			<Dutch>Call Dog</Dutch>
+			<Dutch>Hond roepen</Dutch>
 			<French>Appeler le Chien</French>
 			<Czech>Zavolat psa</Czech>
 		</Key>
@@ -1226,7 +1226,7 @@
 			<German>Hund füttern</German>
 			<Russian>Накормить собаку</Russian>
 			<Spanish>Alimentar Perro</Spanish>
-			<Dutch>Feed Dog</Dutch>
+			<Dutch>Hond voeren</Dutch>
 			<French>Nourrir le Chien</French>
 			<Czech>Nakrmit psa</Czech>
 		</Key>
@@ -1236,7 +1236,7 @@
 			<German>Wasser anbieten</German>
 			<Russian>Напоить собаку</Russian>
 			<Spanish>Hidratar Perro</Spanish>
-			<Dutch>Water Dog</Dutch>
+			<Dutch>Hond water geven</Dutch>
 			<French>Donner à boire au Chien</French>
 			<Czech>Dát psovi napít</Czech>
 		</Key>
@@ -1246,7 +1246,7 @@
 			<German>Hund: Sitz</German>
 			<Russian>Собака: Сидеть!</Russian>
 			<Spanish>Perro: Sentado</Spanish>
-			<Dutch>Dog: Sit</Dutch>
+			<Dutch>Hond: Zit</Dutch>
 			<French>Chien: S'asseoir</French>
 			<Czech>Psí příkaz: Sednout</Czech>
 		</Key>
@@ -1256,7 +1256,7 @@
 			<German>Hund: Hinlegen</German>
 			<Russian>Собака: Лежать!</Russian>
 			<Spanish>Perro: Acostado</Spanish>
-			<Dutch>Dog: Lie Down</Dutch>
+			<Dutch>Hond: Lig</Dutch>
 			<French>Chien : Couché</French>
 			<Czech>Psí příkaz: Lehnout</Czech>
 		</Key>
@@ -1266,7 +1266,7 @@
 			<German>Hund: Verfolgen</German>
 			<Russian>Собака: Искать!</Russian>
 			<Spanish>Perro: Rastrear</Spanish>
-			<Dutch>Dog: Track</Dutch>
+			<Dutch>Hond: Zoek</Dutch>
 			<French>Chien: Pister</French>
 			<Czech>Psí příkaz: stopuj</Czech>
 		</Key>
@@ -1276,7 +1276,7 @@
 			<German>Hund: Bellen</German>
 			<Russian>Собака: Голос!</Russian>
 			<Spanish>Perro: Ladrar</Spanish>
-			<Dutch>Dog: Bark</Dutch>
+			<Dutch>Hond: Blaf</Dutch>
 			<French>Chien: Aboyer</French>
 			<Czech>Psí příkaz: Stěkej</Czech>
 		</Key>
@@ -1286,7 +1286,7 @@
 			<German>Hund: %1</German>
 			<Russian>Собака: %1</Russian>
 			<Spanish>Perro: %1</Spanish>
-			<Dutch>Dog: %1</Dutch>
+			<Dutch>Hond: %1</Dutch>
 			<French>Chien: %1</French>
 			<Czech>Psí příkaz: %1</Czech>
 		</Key>
@@ -1296,7 +1296,7 @@
 			<German>Hund: Folgen</German>
 			<Russian>Собака: Ко мне!</Russian>
 			<Spanish>Perro: Seguir</Spanish>
-			<Dutch>Dog: Follow</Dutch>
+			<Dutch>Hond: Volg</Dutch>
 			<French>Chien: Suivre</French>
 			<Czech>Psí příkaz: Sleduj</Czech>
 		</Key>
@@ -1308,7 +1308,7 @@
 			<German>Feuchte Streichholzschachtel</German>
 			<Russian>Коробка промокших спичек</Russian>
 			<Spanish>Caja de Fósforos Mojada</Spanish>
-			<Dutch>Box of Wet Matches</Dutch>
+			<Dutch>Doosje lucifers</Dutch>
 			<French>Boîte d'Allumettes mouillées</French>
 			<Czech>Krabička mokrých zápalek</Czech>
 		</Key>						
@@ -1318,7 +1318,7 @@
 			<German>Feuchte Streichholzschachtel.</German>
 			<Russian>Коробка промокших спичек.</Russian>
 			<Spanish>Caja de fósforos mojada.</Spanish>
-			<Dutch>Box of wet matches.</Dutch>
+			<Dutch>Nat doosje lucifers.</Dutch>
 			<French>Boîte d'Allumettes mouillées.</French>
 			<Czech>Krabička plná mokrých zápalek.</Czech>
 		</Key>
@@ -1328,7 +1328,7 @@
 			<German>Stumpfe Axt</German>
 			<Russian>Затупившийся топор</Russian>
 			<Spanish>Hacha Desafilada</Spanish>
-			<Dutch>Blunt Hatchet</Dutch>
+			<Dutch>Botte bijl</Dutch>
 			<French>Hache émoussée</French>
 			<Czech>Tupá sekera</Czech>
 		</Key>						
@@ -1338,7 +1338,7 @@
 			<German>Ihre Axt scheint zu stumpf zu sein, um sie zu verwenden.</German>
 			<Russian>Ваш топор слишком туп, чтобы его использовать.</Russian>
 			<Spanish>Tu hacha parece estar muy desafilada para ser usada.</Spanish>
-			<Dutch>Your Hatchet appears to be too blunt to be used.</Dutch>
+			<Dutch>Je bijl is te bot om nog te kunnen gebruiken.</Dutch>
 			<French>Votre Hache semble être trop émoussée pour l'utiliser</French>
 			<Czech>Vypadá to, že tvá sekera je příliž tupá na to, aby se dala použít.</Czech>
 		</Key>
@@ -1348,7 +1348,7 @@
 			<German>Stumpfes Messer</German>
 			<Russian>Затупившийся нож</Russian>
 			<Spanish>Cuchillo Desafilado</Spanish>
-			<Dutch>Blunt Knife</Dutch>
+			<Dutch>Bot mes</Dutch>
 			<French>Couteau émoussé</French>
 			<Czech>Tupý nůž</Czech>
 		</Key>						
@@ -1358,7 +1358,7 @@
 			<German>Ihr Messer scheint zu stumpf zu sein.</German>
 			<Russian>Ваш нож слишком туп, чтобы его использовать.</Russian>
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
-			<Dutch>Your Knife appears to be too blunt.</Dutch>
+			<Dutch>Je mes is niet meer scherp genoeg.</Dutch>
 			<French>Votre couteau semble trop émoussé</French>
 			<Czech>Vypadá to, že tvůj nůž je příliš tupý.</Czech>
 		</Key>
@@ -1368,7 +1368,7 @@
 			<German>Rohes Fleisch</German>
 			<Russian>Сырое мясо</Russian>
 			<Spanish>Carne Cruda</Spanish>
-			<Dutch>Raw Meat</Dutch>
+			<Dutch>Rauw vlees</Dutch>
 			<French>Viande Crue</French>
 			<Czech>Syrové maso</Czech>
 		</Key>						
@@ -1378,7 +1378,7 @@
 			<German>Rohes Fleisch für den Verzehr, sollte sicherheitshalber vorher gekocht werden.</German>
 			<Russian>Сырое мясо. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
+			<Dutch>Rauw vlees om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>La viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové maso nejdříve upečeno.</Czech>
 		</Key>
@@ -1388,7 +1388,7 @@
 			<German>Rohes Hammelfleisch</German>
 			<Russian>Ягнятина</Russian>
 			<Spanish>Cordero Crudo</Spanish>
-			<Dutch>BMutton Raw</Dutch>
+			<Dutch>Rauw lamsvlees</Dutch>
 			<French>Mouton Cru</French>
       			<Czech>Jehněčí maso</Czech>
 		</Key>						
@@ -1398,7 +1398,7 @@
 			<German>Ziegenfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Goat Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<Dutch>Rauw lamsvlees om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>La Viande de Chèvre peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být maso z kozy nejdříve upečeno.</Czech>
 		</Key>
@@ -1408,7 +1408,7 @@
 			<German>Rohe Hühnchenkeule</German>
 			<Russian>Куриный окорочек</Russian>
 			<Spanish>Pata de Pollo Cruda</Spanish>
-			<Dutch>Raw Chicken Leg</Dutch>
+			<Dutch>Rauwe kippenpoot</Dutch>
 			<French>Cuisse de Poulet crue</French>
 			<Czech>Syrová kuřecí noha</Czech>
 		</Key>						
@@ -1418,7 +1418,7 @@
 			<German>Hühnchenkeule für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Сырой куриный окорочек. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Dutch>
+			<Dutch>Kippenpoot om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>La Cuisse de Poulet crue peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
 			<Czech>Kvůli bezpečnosti by měla být kuřecí nožka nejdříve upečena.</Czech>
 		</Key>
@@ -1428,7 +1428,7 @@
 			<German>Rohes Kaninchen</German>
 			<Russian>Кролик</Russian>
 			<Spanish>Conejo Crudo</Spanish>
-			<Dutch>Rabbit Raw</Dutch>
+			<Dutch>Rauw konijn</Dutch>
 			<French>Lapin cru</French>
 			<Czech>Králičí maso</Czech>
 		</Key>						
@@ -1438,7 +1438,7 @@
 			<German>Kaninchenfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Dutch>
+			<Dutch>Rauw konijn om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>Le Lapin cru peut être consommé mais doit être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být králičí maso nejdříve upečeno.</Czech>
 		</Key>	
@@ -1448,7 +1448,7 @@
 			<German>Roher Speck</German>
 			<Russian>Бекон</Russian>
 			<Spanish>Costillar de Cerdo Crudo</Spanish>
-			<Dutch>Raw Bacon</Dutch>
+			<Dutch>Rauwe spek</Dutch>
 			<French>Bacon cru</French>
 			<Czech>Syrová slanina</Czech>
 		</Key>						
@@ -1458,7 +1458,7 @@
 			<German>Speck für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<Dutch>Rauwe spek om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>Le Bacon cru peut être consommé mais doit être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by měla být slanina nejdříve upečena.</Czech>
 		</Key>		
@@ -1468,7 +1468,7 @@
 			<German>Rohes Rindfleisch</German>
 			<Russian>Говядина</Russian>
 			<Spanish>Churrasco Crudo</Spanish>
-			<Dutch>Raw Beef</Dutch>
+			<Dutch>Rauwe steak</Dutch>
 			<French>Boeuf Cru</French>
 			<Czech>Syrové hovězí maso</Czech>
 		</Key>						
@@ -1478,7 +1478,7 @@
 			<German>Rindfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Говядина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Beef to be used for sustainment, should be cooked prior to safe eating.</Dutch>
+			<Dutch>Rauwe steak om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>Le Boeuf Cru peut être consommé mais doit être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové hovězí maso nejdříve upečeno.</Czech>
 		</Key>
@@ -1488,7 +1488,7 @@
 			<German>Gekochtes Fleisch</German>
 			<Russian>Жареное мясо</Russian>
 			<Spanish>Carce Cocinada</Spanish>
-			<Dutch>Cooked Meat</Dutch>
+			<Dutch>Gekookt vlees</Dutch>
 			<French>Viande Cuite</French>
 			<Czech>Upečené maso</Czech>
 		</Key>						
@@ -1498,7 +1498,7 @@
 			<German>Gekochtes Fleisch, für den Verzehr geeignet.</German>
 			<Russian>Жареное мясо, готовая к употреблению.</Russian>
 			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Cooked Meat to be used for sustainment.</Dutch>
+			<Dutch>Gekookt vlees om jezelf in leven te houden.</Dutch>
 			<French>La Viande Cuite peut être consommée.</French>
 			<Czech>Upečené maso může být snězeno abyste přežili.</Czech>
 		</Key>
@@ -1508,7 +1508,7 @@
 			<German>Gekochtes Hammelfleisch</German>
 			<Russian>Жареная ягнятина</Russian>
 			<Spanish>Cordero Cocinado</Spanish>
-			<Dutch>Cooked Mutton</Dutch>
+			<Dutch>Gekookt lamsvlees</Dutch>
 			<French>Mouton Cuit</French>
 			<Czech>Upečené jehněčí</Czech>
 		</Key>						
@@ -1518,7 +1518,7 @@
 			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
 			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Goat Meat to be used for sustainment.</Dutch>
+			<Dutch>Gekookt lamsvlees om jezelf in leven te houden.</Dutch>
 			<French>La Viande de Chèvre peut être consommée.</French>
 			<Czech>Upečené jehněčí může být snězeno abyste přežili.</Czech>
 		</Key>
@@ -1528,7 +1528,7 @@
 			<German>Hühnchenkeule</German>
 			<Russian>Жареный куриный окрочек</Russian>
 			<Spanish>Pata de Pollo</Spanish>
-			<Dutch>Chicken Leg</Dutch>
+			<Dutch>Kippenpoot</Dutch>
 			<French>Cuisse de Poulet</French>
 			<Czech>Kuřecí nožka</Czech>
 		</Key>						
@@ -1538,7 +1538,7 @@
 			<German>Hühnchenkeule, für den Verzehr geeignet.</German>
 			<Russian>Жареный куриный окрочек, готовый к употреблению.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Chicken Leg to be used for sustainment.</Dutch>
+			<Dutch>Gekookte kippenpoot om jezelf in leven te houden.</Dutch>
 			<French>La cuisse de poulet peut être consommée.</French>
 			<Czech>Kuřecí noha může být snězena abyste přežili.</Czech>
 		</Key>
@@ -1548,7 +1548,7 @@
 			<German>Kaninchen</German>
 			<Russian>Жареный кролик</Russian>
 			<Spanish>Conejo</Spanish>
-			<Dutch>Rabbit</Dutch>
+			<Dutch>Konijn</Dutch>
 			<French>Lapin</French>
 			<Czech>Králík</Czech>
 		</Key>						
@@ -1558,7 +1558,7 @@
 			<German>Kaninchen, für den Verzehr geeignet.</German>
 			<Russian>Жареный кролик, готовый к употреблению.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Rabbit to be used for sustainment.</Dutch>
+			<Dutch>Gekookt konijn om jezelf in leven te houden.</Dutch>
 			<French>Le Lapin peut être consommé.</French>
 			<Czech>Králík může být snězen abyste přežili.</Czech>
 		</Key>	
@@ -1568,7 +1568,7 @@
 			<German>Speck</German>
 			<Russian>Готовый бекон</Russian>
 			<Spanish>Costillar de Cerdo</Spanish>
-			<Dutch>Bacon</Dutch>
+			<Dutch>Spek</Dutch>
 			<French>Bacon</French>
 			<Czech>Slanina</Czech>
 		</Key>						
@@ -1578,7 +1578,7 @@
 			<German>Speck, für den Verzehr geeignet.</German>
 			<Russian>Бекон, готовый к употреблению.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Bacon to be used for sustainment.</Dutch>
+			<Dutch>Gekookt spek om jezelf in leven te houden.</Dutch>
 			<French>Le Bacon peut être consommé.</French>
 			<Czech>Slanina může býst snězena abyste přežili.</Czech>
 		</Key>
@@ -1588,7 +1588,7 @@
 			<German>Engelskekse</German>
 			<Russian>Печеньки!</Russian>
 			<Spanish>Galletitas de Ángel</Spanish>
-			<Dutch>Angel Cookies</Dutch>
+			<Dutch>Angel Koekjes</Dutch>
 			<French>Cookies d'Ange</French>
 			<Czech>Sušenky Angel</Czech>
 		</Key>
@@ -1598,7 +1598,7 @@
 			<German>Engelskekse, um Ihre Moral zu heben!</German>
 			<Russian>Печенюшки для поднятия настроения!</Russian>
 			<Spanish>Galletitas de Ángel que levantan tu moral</Spanish>
-			<Dutch>Angel Cookies to boost your moral up!</Dutch>
+			<Dutch>Angel Koekjes zijn goed voor je moraal!</Dutch>
 			<French>Cookies d'Ange pour remonter votre moral!</French>
 			<Czech>Sušenky Angle vylepší vaší morálku!</Czech>
 		</Key>
@@ -1608,7 +1608,7 @@
 			<German>Rindersteak</German>
 			<Russian>Бифштекс</Russian>
 			<Spanish>Churrasco</Spanish>
-			<Dutch>Beefsteak</Dutch>
+			<Dutch>Rundersteak</Dutch>
 			<French>Bifteck</French>
 			<Czech>Hovězí maso</Czech>
 		</Key>
@@ -1618,7 +1618,7 @@
 			<German>Rindersteak, für den Verzehr geeignet.</German>
 			<Russian>Бифштекс, готовый к употреблению.</Russian>
 			<Spanish>Churrasco que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Beefsteak to be used for sustainment.</Dutch>
+			<Dutch>Rundersteak om jezelf in leven te houden.</Dutch>
 			<French>Le Bifteck peut être consommé.</French>
 			<Czech>Biftek může být snězen abyste přežili.</Czech>
 		</Key>
@@ -1628,7 +1628,7 @@
 			<German>Wasserflasche (Abgekocht)</German>
 			<Russian>Фляжка кипяченой воды</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
-			<Dutch>Water Bottle (Boiled)</Dutch>
+			<Dutch>Water Fles (Gekookt)</Dutch>
 			<French>Bouteille d'eau (Bouillie)</French>
 			<Czech>Láhev vody (převařená)</Czech>
 		</Key>						
@@ -1638,7 +1638,7 @@
 			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
 			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
-			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
+			<Dutch>Een fles met gekookt water erin dat kan worden gedronken.</Dutch>
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
 			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
 		</Key>
@@ -1648,7 +1648,7 @@
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<Dutch>Soda</Dutch>
+			<Dutch>Frisdrank</Dutch>
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1658,7 +1658,7 @@
 			<German>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</German>
 			<Russian>Чистая, закрытая банка "Mountain Green". Выбор марафонцев.</Russian>
 			<Spanish>Una limpia y cerrada lata de Mountain Green. Gaseosa elejida por el simulador entusiasta de correr grandes distancias.</Spanish>
-			<Dutch>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Dutch>
+			<Dutch>Een fris, ongeopend blikje Mountain Green. De favoriete keuze van elke survivor.</Dutch>
 			<French>Une canette intacte de "Mountain Green". Le soda préféré des amateurs de simulateur de course longue distance.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mountain Green. Dobrá volba na dlouhou cestu.</Czech>
 		</Key>
@@ -1668,7 +1668,7 @@
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<Dutch>Soda</Dutch>
+			<Dutch>Frisdrank</Dutch>
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1678,7 +1678,7 @@
 			<German>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</German>
 			<Russian>Чистая, закрытая банка "R4Z0R". Уже давно исчезли перестали продаваться!</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa R4Z0R. Dejaron de venderlas hace años.</Spanish>
-			<Dutch>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Dutch>
+			<Dutch>Een fris, ongeopend blikje R4Z0R frisdrank. Wordt al jaren niet meer verkocht!</Dutch>
 			<French>Une canette intacte de soda "R4Z0R". Ils ont arrêté de les vendre il y a des années !.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky R4Z0R. Před mnoho lety ji přestali prodávat!</Czech>
 		</Key>
@@ -1688,7 +1688,7 @@
 			<German>Soda (Iced Tea)</German>
 			<Russian>Напиток (Iced Tea)</Russian>
 			<Spanish>Gaseosa (Té Helado)</Spanish>
-			<Dutch>Soda (Iced Tea)</Dutch>
+			<Dutch>Frisdrank (ijsthee)</Dutch>
 			<French>Soda (Iced Tea)</French>
 			<Czech>Soda (Iced Tea)</Czech>
 		</Key>
@@ -1698,7 +1698,7 @@
 			<German>A clean, unopened can of Long's island iced tea.</German>
 			<Russian>Чистая, закрытая банка холодного чая.</Russian>
 			<Spanish>Una limpia y cerrada lata de té helado Long's island.</Spanish>
-			<Dutch>A clean, unopened can of Long's island iced tea.</Dutch>
+			<Dutch>Een fris, ongeopend blikje ijsthee.</Dutch>
 			<French>Une canette intacte d'iced tea de Long's Island.</French>
 			<Czech>Čistá a ještě neotevřená plechovka ledového čaje Long's island.</Czech>
 		</Key>
@@ -1708,7 +1708,7 @@
 			<German>Soda (Grape)</German>
 			<Russian>Газировка (Grape)</Russian>
 			<Spanish>Gaseosa (Grape)</Spanish>
-			<Dutch>Soda (Grape)</Dutch>
+			<Dutch>Frisdrank (Druivensap)</Dutch>
 			<French>Soda (Grape)</French>
 			<Czech>Soda (Grape)</Czech>
 		</Key>
@@ -1718,7 +1718,7 @@
 			<German>A clean, unopened can of Smasht grape soda.</German>
 			<Russian>Чистая, закрытая банка гейпфруктового "Smasht".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa de uva Smasht.</Spanish>
-			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
+			<Dutch>Een fris, ongeopend blikje Druivensap.</Dutch>
 			<French>Une canette intacte de soda au raisin "Smasht".</French>
 			<Czech>Čistá a ještě neotevřená plechovka grepové sody Smasht.</Czech>
 		</Key>
@@ -1728,7 +1728,7 @@
 			<German>Soda (Cola)</German>
 			<Russian>Газировка (Cola)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
-			<Dutch>Soda (Cola)</Dutch>
+			<Dutch>Frisdrank (Cola)</Dutch>
 			<French>Soda (Cola)</French>
 			<Czech>Soda (Cola)</Czech>
 		</Key>
@@ -1738,7 +1738,7 @@
 			<German>A clean, unopened can of Dr. Wasteland soda.</German>
 			<Russian>Чистая, закрытая банка "Dr. Wasteland".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Dr. Wasteland.</Spanish>
-			<Dutch>A clean, unopened can of Dr. Wasteland soda.</Dutch>
+			<Dutch>Een fris, ongeopend blikje Dr. Wasteland Cola.</Dutch>
 			<French>Une canette intacte de soda "Dr. Wasteland".</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Dr. Wateland.</Czech>
 		</Key>
@@ -1748,7 +1748,7 @@
 			<German>Soda (Orange)</German>
 			<Russian>Газировка (Orange)</Russian>
 			<Spanish>Gaseosa (Orange)</Spanish>
-			<Dutch>Soda (Orange)</Dutch>
+			<Dutch>Frisdrank (Sinas)</Dutch>
 			<French>Soda (Orange)</French>
 			<Czech>Soda (Orange)</Czech>
 		</Key>
@@ -1758,7 +1758,7 @@
 			<German>A clean, unopened can of Franka orange soda.</German>
 			<Russian>Чистая, закрытая банка апельсиновой "Franka".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa de naranja Franka.</Spanish>
-			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
+			<Dutch>Een fris, ongeopend blikje sinas.</Dutch>
 			<French>Une canette intacte de soda à l'orange "Franka".</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Franka orange.</Czech>
 		</Key>
@@ -1768,7 +1768,7 @@
 			<German>Soda (Lemonade)</German>
 			<Russian>Газировка (Lemonade)</Russian>
 			<Spanish>Gaseosa (Limonada)</Spanish>
-			<Dutch>Soda (Lemonade)</Dutch>
+			<Dutch>Frisdrank (Limonade)</Dutch>
 			<French>Soda (Limonade)</French>
 			<Czech>Soda (Limonáda)</Czech>
 		</Key>
@@ -1778,7 +1778,7 @@
 			<German>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</German>
 			<Russian>Чистая, закрытая банка лимонада. Производства "Mikhail".</Russian>
 			<Spanish>Una limpia y cerrada lata de limonada Mikhail.</Spanish>
-			<Dutch>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Dutch>
+			<Dutch>Een fris, ongeopend blikje limonade. Gemaakt door Mikhail.</Dutch>
 			<French>Une canette intacte de limonade à la Mikhail. Fabriqué par Mikhail.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mikhail Made limonády. Vytvořeno Mikhailem.</Czech>
 		</Key>
@@ -1788,7 +1788,7 @@
 			<German>Soda (Cola)</German>
 			<Russian>Газировка (Cola)</Russian>
 			<Spanish>Fernet con Coca</Spanish>
-			<Dutch>Soda (Cola)</Dutch>
+			<Dutch>Frisdrank (Cola)</Dutch>
 			<French>Soda (Cola)</French>
 			<Czech>Soda (Cola)</Czech>
 		</Key>
@@ -1798,7 +1798,7 @@
 			<German>A clean, unopened can of Lirikola. An o7 brand.</German>
 			<Russian>Чистая, закрытая банка "Lirikola". Бренд "o7".</Russian>
 			<Spanish>Una limpia y cerrada botella de Fernet "Lirikola" y CocaCola.</Spanish>
-			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
+			<Dutch>Een fris, ongeopend blikje Lirikola (o7 uitgave).</Dutch>
 			<French>Une canette intacte de "Lirikola". 7 ans d'âge.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Lirikoly. o7 série.</Czech>
 		</Key>
@@ -1808,7 +1808,7 @@
 			<German>Soda (Root Beer)</German>
 			<Russian>Пиво (Root Beer)</Russian>
 			<Spanish>Cerveza de Raíz</Spanish>
-			<Dutch>Soda (Root Beer)</Dutch>
+			<Dutch>Bier (Root bier)</Dutch>
 			<French>Bière (Root Beer)</French>
 			<Czech>Pivo (Root Beer)</Czech>
 		</Key>
@@ -1818,7 +1818,7 @@
 			<German>A clean, unopened can of LVG root beer.</German>
 			<Russian>Чистая, закрытая банка пива "LVG root".</Russian>
 			<Spanish>Una limpia y cerrada lata de cerveza de raíz LVG.</Spanish>
-			<Dutch>A clean, unopened can of LVG root beer.</Dutch>
+			<Dutch>Een fris, ongeopend blikje root bier.</Dutch>
 			<French>Une canette intacte de bière "LVG root".</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva LVG root.</Czech>
 		</Key>
@@ -1828,7 +1828,7 @@
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<Dutch>Soda</Dutch>
+			<Dutch>Frisdrank</Dutch>
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1838,7 +1838,7 @@
 			<German>A clean, unopened can of mZLY yZLY soda.</German>
 			<Russian>Чистая, закрытая банка "mZLY yZLY".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa mZLY yZLY.</Spanish>
-			<Dutch>A clean, unopened can of mZLY yZLY soda.</Dutch>
+			<Dutch>Een fris, ongeopend blikje mZLY yZLY frisdrank.</Dutch>
 			<French>Une canette intacte de soda "mZLY yZLY".</French>
 			<Czech>Čistá a ještě neotevřená plechovka mZLY yZLY sody.</Czech>
 		</Key>
@@ -1848,7 +1848,7 @@
 			<German>Soda (Cola)</German>
 			<Russian>Газировка (Cola)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
-			<Dutch>Soda (Cola)</Dutch>
+			<Dutch>Frisdrank (Cola)</Dutch>
 			<French>Soda (Cola)</French>
 			<Czech>Soda (Cola)</Czech>
 		</Key>
@@ -1858,7 +1858,7 @@
 			<German>A clean, unopened can of Peppsy soda.</German>
 			<Russian>Чистая, закрытая банка "Peppsy".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Peppsy.</Spanish>
-			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
+			<Dutch>Een fris, ongeopend blikje Pepsi.</Dutch>
 			<French>Une canette intacte de soda "Peppsy".</French>
 			<Czech>Čistá a ještě neotevřená plechovka Peppsy sody.</Czech>
 		</Key>
@@ -1868,7 +1868,7 @@
 			<German>Beer</German>
 			<Russian>Пиво</Russian>
 			<Spanish>Cerveza</Spanish>
-			<Dutch>Beer</Dutch>
+			<Dutch>Bier</Dutch>
 			<French>Bière</French>
 			<Czech>Pivo</Czech>
 		</Key>
@@ -1878,7 +1878,7 @@
 			<German>A clean, unopened can of Rabbitman beer.</German>
 			<Russian>Чистая, закрытая банка пива "Rabbitman".</Russian>
 			<Spanish>Una limpia y cerrada lata de cerveza Rabbitman.</Spanish>
-			<Dutch>A clean, unopened can of Rabbitman beer.</Dutch>
+			<Dutch>Een fris, ongeopend blikje Rabbitman bier.</Dutch>
 			<French>Une canette intacte de bière "Rabbitman".</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva Rabbitman.</Czech>
 		</Key>
@@ -1888,7 +1888,7 @@
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<Dutch>Soda</Dutch>
+			<Dutch>Frisdrank</Dutch>
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1898,7 +1898,7 @@
 			<German>A clean, unopened can of Sacrite soda.</German>
 			<Russian>Чистая, закрытая банка "Sacrite".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Sacrite.</Spanish>
-			<Dutch>A clean, unopened can of Sacrite soda.</Dutch>
+			<Dutch>Een fris, ongeopend blikje Sacrite frisdrank.</Dutch>
 			<French>Une canette intacte de soda "Sacrite".</French>
 			<Czech>Čistá a ještě neotevřená plechovka Sacrite sody.</Czech>
 		</Key>
@@ -1908,7 +1908,7 @@
 			<German>Feldration</German>
 			<Russian>Cухпай</Russian>
 			<Spanish>MRE</Spanish>
-			<Dutch>MRE</Dutch>
+			<Dutch>MRE (Rantsoen)</Dutch>
 			<French>MRE</French>
 			<Czech>MRE</Czech>
 		</Key>
@@ -1918,7 +1918,7 @@
 			<German>MRE Feldration</German>
 			<Russian>упаковка сухого пайка.</Russian>
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
-			<Dutch>Meal Ready-to-Eat</Dutch>
+			<Dutch>Militair Rantsoen klaar-om-op-te-eten</Dutch>
 			<French>Repas prêt à manger</French>
 			<Czech>Meal Ready-to-Eat</Czech>
 		</Key>
@@ -1928,7 +1928,7 @@
 			<German>Pistazien</German>
 			<Russian>Фисташки</Russian>
 			<Spanish>Pistachos</Spanish>
-			<Dutch>Pistachios</Dutch>
+			<Dutch>Pistache nootjes</Dutch>
 			<French>Pistaches</French>
 			<Czech>Pistachios</Czech>
 		</Key>
@@ -1938,7 +1938,7 @@
 			<German>Eine Packung Pistazien, geröstet und gesalzen.</German>
 			<Russian>Пакет соленых, обжареных фисташек.</Russian>
 			<Spanish>Una caja de pistachos, tostados y salados.</Spanish>
-			<Dutch>A pack of pistachios, roasted and salted.</Dutch>
+			<Dutch>A pakje pistasche nootjes, geroosterd en zout.</Dutch>
 			<French>Un paquet de pistaches, grillées et salées.</French>
 			<Czech>A pack of pistachios, roasted and salted.</Czech>
 		</Key>
@@ -1948,7 +1948,7 @@
 			<German>Studentenfutter</German>
 			<Russian>Фруктово-ореховый микс</Russian>
 			<Spanish>CerealMix</Spanish>
-			<Dutch>Trail Mix</Dutch>
+			<Dutch>Ontbijtgranen</Dutch>
 			<French>Assortiment de fruits secs</French>
 			<Czech>Trail Mix</Czech>
 		</Key>
@@ -1958,7 +1958,7 @@
 			<German>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</German>
 			<Russian>Упаковка сушеных фруктов и орешков "Papa", 12 разных видов.</Russian>
 			<Spanish>Una cada de CerealMix Original con 12 frutas y anillos diferentes.</Spanish>
-			<Dutch>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Dutch>
+			<Dutch>Een pak ontbijtgranen, met 12 verschillende fruit en nootsoorten.</Dutch>
 			<French>Un paquet d'assortiment de fruits secs "Papa", avec 12 fruits et noix différents.</French>
 			<Czech>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Czech>
 		</Key>
@@ -1968,7 +1968,7 @@
 			<German>Can (Beans)</German>
 			<Russian>Банка черных бобов</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
-			<Dutch>Can (Beans)</Dutch>
+			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
 			<Czech>Can (Beans)</Czech>
 		</Key>
@@ -1978,7 +1978,7 @@
 			<German>A clean, unopened can of Griff's black beans.</German>
 			<Russian>Чистая, закрытая банка черных бобов "Griff".</Russian>
 			<Spanish>Una limpia y cerrada lata de frijoles negros "Griff".</Spanish>
-			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Griff's zwarte bonen.</Dutch>
 			<French>Une boîte intacte d'haricots noirs "Griff".</French>
 			<Czech>A clean, unopened can of Griff's black beans.</Czech>
 		</Key>
@@ -1988,7 +1988,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -1998,7 +1998,7 @@
 			<German>An empty can of Griff's black beans.</German>
 			<Russian>Пустая банка от черных бобов "Griff".</Russian>
 			<Spanish>Una lata vacia de frijoles negros "Griff".</Spanish>
-			<Dutch>An empty can of Griff's black beans.</Dutch>
+			<Dutch>Een leeg blikje Griff's zwarte bonen.</Dutch>
 			<French>Une boîte vide d'haricots noirs "Griff".</French>
 			<Czech>An empty can of Griff's black beans.</Czech>
 		</Key>
@@ -2008,7 +2008,7 @@
 			<German>Can (Peaches)</German>
 			<Russian>Банка персиков</Russian>
 			<Spanish>Lata de Duraznos</Spanish>
-			<Dutch>Can (Peaches)</Dutch>
+			<Dutch>Blikje (Perzikken)</Dutch>
 			<French>Boîte (Pêches)</French>
 			<Czech>Can (Peaches)</Czech>
 		</Key>
@@ -2018,7 +2018,7 @@
 			<German>A clean, unopened can of Bad Guy's ubiquitous peach slices.</German>
 			<Russian>Чистая, закрытая банка нарезанных персиков "Bad Guy".</Russian>
 			<Spanish>Una limpia y cerrada lata de duraznos en rodajas "Bad Guy".</Spanish>
-			<Dutch>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Bad Guy's perzik plakjes.</Dutch>
 			<French>Une boîte intacte de pêches en morceaux de "Bad Guy".</French>
 			<Czech>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Czech>
 		</Key>
@@ -2028,7 +2028,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2038,7 +2038,7 @@
 			<German>An empty can of Bad Guy's ubiquitous peach slices.</German>
 			<Russian>Пустая банка от персиков "Bad Guy".</Russian>
 			<Spanish>Una lata vacía de duraznos en rodajas "Bad Guy".</Spanish>
-			<Dutch>An empty can of Bad Guy's ubiquitous peach slices.</Dutch>
+			<Dutch>Een leeg blikje Bad Guy's perzik plakjes.</Dutch>
 			<French>Une boîte vide de pêches en morceaux "Bad Guy".</French>
 			<Czech>An empty can of Bad Guy's ubiquitous peach slices.</Czech>
 		</Key>
@@ -2048,7 +2048,7 @@
 			<German>Can (Ravioli)</German>
 			<Russian>Банка равиоли</Russian>
 			<Spanish>Lata de Ravioles</Spanish>
-			<Dutch>Can (Ravioli)</Dutch>
+			<Dutch>Blikje (Ravioli)</Dutch>
 			<French>Boîte (Raviolis)</French>
 			<Czech>Can (Ravioli)</Czech>
 		</Key>
@@ -2058,7 +2058,7 @@
 			<German>A clean, unopened can of Chef Boneboy ravioli.</German>
 			<Russian>Чистая, закрытая банка равиоли "Chef Boneboy".</Russian>
 			<Spanish>Una limpia y cerrada lata de ravioles "Chef Boneboy".</Spanish>
-			<Dutch>A clean, unopened can of Chef Boneboy ravioli.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Chef Boneboy ravioli.</Dutch>
 			<French>Une boîte intacte de raviolis "Chef Boneboy".</French>
 			<Czech>A clean, unopened can of Chef Boneboy ravioli.</Czech>
 		</Key>
@@ -2068,7 +2068,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2078,7 +2078,7 @@
 			<German>An empty can of Chef Boneboy ravioli.</German>
 			<Russian>Пустая банка от равиоли "Chef Boneboy".</Russian>
 			<Spanish>Una lata vacía de ravioles "Chef Boneboy".</Spanish>
-			<Dutch>An empty can of Chef Boneboy ravioli.</Dutch>
+			<Dutch>Een leeg blikje Chef Boneboy ravioli.</Dutch>
 			<French>Une boîte vide de raviolis "Chef Boneboy".</French>
 			<Czech>An empty can of Chef Boneboy ravioli.</Czech>
 		</Key>
@@ -2088,7 +2088,7 @@
 			<German>Can (Corn)</German>
 			<Russian>Банка кукурузы</Russian>
 			<Spanish>Lata de Maíz</Spanish>
-			<Dutch>Can (Corn)</Dutch>
+			<Dutch>Blikje (Mais)</Dutch>
 			<French>Boîte (Maïs)</French>
 			<Czech>Can (Corn)</Czech>
 		</Key>
@@ -2098,7 +2098,7 @@
 			<German>A clean, unopened can of Conrad's whole kernel corn.</German>
 			<Russian>Чистая, закрытая банка кукурузы "Conrad".</Russian>
 			<Spanish>Una limpia y cerrada lata de granos de maíz enteros "Conrad".</Spanish>
-			<Dutch>A clean, unopened can of Conrad's whole kernel corn.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Conrad's mais op kolf.</Dutch>
 			<French>Une boîte intacte de maïs en grains "Conrad".</French>
 			<Czech>A clean, unopened can of Conrad's whole kernel corn.</Czech>
 		</Key>
@@ -2108,7 +2108,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2118,7 +2118,7 @@
 			<German>An empty can of Conrad's whole kernel corn.</German>
 			<Russian>Пустая банка от кукурузы "Conrad".</Russian>
 			<Spanish>Una lata vacía de granos de maíz enteros "Conrad".</Spanish>
-			<Dutch>An empty can of Conrad's whole kernel corn.</Dutch>
+			<Dutch>Een leeg blikje Conrad's mais op kolf.</Dutch>
 			<French>Une boîte vide de maïs en grains "Conrad".</French>
 			<Czech>An empty can of Conrad's whole kernel corn.</Czech>
 		</Key>
@@ -2128,7 +2128,7 @@
 			<German>Can (Soup)</German>
 			<Russian>Банка супа</Russian>
 			<Spanish>Lata de Sopa</Spanish>
-			<Dutch>Can (Soup)</Dutch>
+			<Dutch>Blikje (Soep)</Dutch>
 			<French>Boîte (Soupe)</French>
 			<Czech>Can (Soup)</Czech>
 		</Key>
@@ -2138,7 +2138,7 @@
 			<German>A clean, unopened can of Curgon's chicken noodle soup.</German>
 			<Russian>Чистая, закрытая банка куринного супа "Curgon".</Russian>
 			<Spanish>Una limpia y cerrada lata de sopa de pollo con fideos "Curgon".</Spanish>
-			<Dutch>A clean, unopened can of Curgon's chicken noodle soup.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Curgon's kip met noedels soep.</Dutch>
 			<French>Une boîte intacte de soupe de nouilles au poulet "Curgon".</French>
 			<Czech>A clean, unopened can of Curgon's chicken noodle soup.</Czech>
 		</Key>
@@ -2148,7 +2148,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2158,7 +2158,7 @@
 			<German>An empty can of Curgon's chicken noodle soup.</German>
 			<Russian>Пустая банка от супа "Curgon".</Russian>
 			<Spanish>Una lata vacía de sopa de pollo con fideos "Curgon".</Spanish>
-			<Dutch>An empty can of Curgon's chicken noodle soup.</Dutch>
+			<Dutch>Een leeg blikje Curgon's kip met noedels soep.</Dutch>
 			<French>Une boîte vide de soupe de nouilles au poulet "Curgon".</French>
 			<Czech>An empty can of Curgon's chicken noodle soup.</Czech>
 		</Key>
@@ -2168,7 +2168,7 @@
 			<German>Can (Beans)</German>
 			<Russian>Банка зеленого горошка</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
-			<Dutch>Can (Beans)</Dutch>
+			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
 			<Czech>Can (Beans)</Czech>
 		</Key>
@@ -2178,7 +2178,7 @@
 			<German>A clean, unopened can of Demon Groves green beans.</German>
 			<Russian>Чистая, закрытая банка зеленого горошка "Demon Groves".</Russian>
 			<Spanish>Una limpia y cerrada lata de frijoles verdes "Demon Groves".</Spanish>
-			<Dutch>A clean, unopened can of Demon Groves green beans.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Demon Groves groene bonen.</Dutch>
 			<French>Une boîte intacte d'haricots verts "Demon Groves".</French>
 			<Czech>A clean, unopened can of Demon Groves green beans.</Czech>
 		</Key>
@@ -2188,7 +2188,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2198,7 +2198,7 @@
 			<German>An empty can of Demon Groves green beans.</German>
 			<Russian>Пустая банка от зеленого горошка "Demon Groves".</Russian>
 			<Spanish>Una lata vacía de frijoles verdes "Demon Groves".</Spanish>
-			<Dutch>An empty can of Demon Groves green beans.</Dutch>
+			<Dutch>Een leeg blikje Demon Groves groene bonen.</Dutch>
 			<French>Une boîte vide d'haricots verts "Demon Groves".</French>
 			<Czech>An empty can of Demon Groves green beans.</Czech>
 		</Key>
@@ -2208,7 +2208,7 @@
 			<German>Can (Spaghetti)</German>
 			<Russian>Банка спагетти</Russian>
 			<Spanish>Lata de Spaghetti</Spanish>
-			<Dutch>Can (Spaghetti)</Dutch>
+			<Dutch>Blikje (Spaghetti)</Dutch>
 			<French>Boîte (Spaghettis)</French>
 			<Czech>Can (Spaghetti)</Czech>
 		</Key>
@@ -2218,7 +2218,7 @@
 			<German>A clean, unopened can of FraggleOs spaghetti.</German>
 			<Russian>Чистая, закрытая банка спагетти "FraggleOs".</Russian>
 			<Spanish>Una limpia y cerrada lata de spaghetti "FraggleOs".</Spanish>
-			<Dutch>A clean, unopened can of FraggleOs spaghetti.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje FraggleOs spaghetti.</Dutch>
 			<French>Une boîte intacte de spaghettis "FraggleOs".</French>
 			<Czech>A clean, unopened can of FraggleOs spaghetti.</Czech>
 		</Key>
@@ -2228,7 +2228,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2238,7 +2238,7 @@
 			<German>An empty can of FraggleOs spaghetti.</German>
 			<Russian>Пустая банка от спагетти "FraggleOs".</Russian>
 			<Spanish>Una lata vacía de spaghetti "FraggleOs".</Spanish>
-			<Dutch>An empty can of FraggleOs spaghetti.</Dutch>
+			<Dutch>Een leeg blikje FraggleOs spaghetti.</Dutch>
 			<French>Une boîte vide de spaghettis "FraggleOs".</French>
 			<Czech>An empty can of FraggleOs spaghetti.</Czech>
 		</Key>
@@ -2248,7 +2248,7 @@
 			<German>Can (Muffins)</German>
 			<Russian>Банка кексиков</Russian>
 			<Spanish>Lata de Magdalenas</Spanish>
-			<Dutch>Can (Muffins)</Dutch>
+			<Dutch>Blikje (Muffins)</Dutch>
 			<French>Boîte (Muffins)</French>
 			<Czech>Can (Muffins)</Czech>
 		</Key>
@@ -2258,7 +2258,7 @@
 			<German>A clean, unopened can of Herpy Dooves canned muffins.</German>
 			<Russian>Чистая, закрытая банка кексиков "Herpy Dooves".</Russian>
 			<Spanish>Una limpia y cerrada lata de magdalenas "Herpy Dooves".</Spanish>
-			<Dutch>A clean, unopened can of Herpy Dooves canned muffins.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Herpy Dooves ingeblikte muffins.</Dutch>
 			<French>Une boîte intacte de muffins en conserve "Herpy Dooves".</French>
 			<Czech>A clean, unopened can of Herpy Dooves canned muffins.</Czech>
 		</Key>
@@ -2268,7 +2268,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2278,7 +2278,7 @@
 			<German>An empty can of Herpy Dooves canned muffins.</German>
 			<Russian>Пустая банка от кексиков "Herpy Dooves".</Russian>
 			<Spanish>Una lata vacía de magdalenas "Herpy Dooves".</Spanish>
-			<Dutch>An empty can of Herpy Dooves canned muffins.</Dutch>
+			<Dutch>Een leeg blikje Herpy Dooves ingeblikte muffins.</Dutch>
 			<French>Une boîte vide de muffins en conserve "Herpy Dooves".</French>
 			<Czech>An empty can of Herpy Dooves canned muffins.</Czech>
 		</Key>		
@@ -2288,7 +2288,7 @@
 			<German>Can (Fruit)</German>
 			<Russian>Банка компота</Russian>
 			<Spanish>Ensalada de Frutas</Spanish>
-			<Dutch>Can (Fruit)</Dutch>
+			<Dutch>Blikje (Fruit)</Dutch>
 			<French>Boîte (Fruits)</French>
 			<Czech>Can (Fruit)</Czech>
 		</Key>
@@ -2298,7 +2298,7 @@
 			<German>A clean, unopened can of Orlok mixed fruit.</German>
 			<Russian>Чистая, закрытая банка фруктового компота "Orlok".</Russian>
 			<Spanish>Una limpia y cerrada lata de ensaladas de frutas "Orlok".</Spanish>
-			<Dutch>A clean, unopened can of Orlok mixed fruit.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Orlok gemixt fruit.</Dutch>
 			<French>Une boîte intacte de fruits mixés "Orlok".</French>
 			<Czech>A clean, unopened can of Orlok mixed fruit.</Czech>
 		</Key>
@@ -2308,7 +2308,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2318,7 +2318,7 @@
 			<German>An empty can of Orlok mixed fruit.</German>
 			<Russian>Пустая банка от фруктового компота "Orlok".</Russian>
 			<Spanish>Una lata vacía de ensalada de frutas "Orlok".</Spanish>
-			<Dutch>An empty can of Orlok mixed fruit.</Dutch>
+			<Dutch>Een leeg blikje Orlok gemixt fruit.</Dutch>
 			<French>Une boîte vide de fruits mixés "Orlok".</French>
 			<Czech>An empty can of Orlok mixed fruit.</Czech>
 		</Key>
@@ -2328,7 +2328,7 @@
 			<German>Can (Chowder)</German>
 			<Russian>Банка похлебки</Russian>
 			<Spanish>Sopa de Pescado</Spanish>
-			<Dutch>Can (Chowder)</Dutch>
+			<Dutch>Blikje (Chowder)</Dutch>
 			<French>Boîte (Soupe de palourdes)</French>
 			<Czech>Can (Chowder)</Czech>
 		</Key>
@@ -2338,7 +2338,7 @@
 			<German>A clean, unopened can of Powell's New England clam chowder.</German>
 			<Russian>Чистая, закрытая банка похлебки из моллюсков "Powell's New England".</Russian>
 			<Spanish>Una limpia y cerrada lata de sopa de pescados "Powell's New England".</Spanish>
-			<Dutch>A clean, unopened can of Powell's New England clam chowder.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Powell's New England clam chowder.</Dutch>
 			<French>Une boîte intacte de soupe de palourdes de "Powell's New England".</French>
 			<Czech>A clean, unopened can of Powell's New England clam chowder.</Czech>
 		</Key>
@@ -2348,7 +2348,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2358,7 +2358,7 @@
 			<German>An empty can of Powell's New England clam chowder.</German>
 			<Russian>Пустая банка от похлебки "Powell's New England".</Russian>
 			<Spanish>Una lata vacía de sopa de pescado "Powell's New England".</Spanish>
-			<Dutch>An empty can of Powell's New England clam chowder.</Dutch>
+			<Dutch>Een leeg blikje Powell's New England clam chowder.</Dutch>
 			<French>Une boîte vide de soupe de palourde de "Powell's New England".</French>
 			<Czech>An empty can of Powell's New England clam chowder.</Czech>
 		</Key>
@@ -2368,7 +2368,7 @@
 			<German>Can (Beans)</German>
 			<Russian>Банка фасоли</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
-			<Dutch>Can (Beans)</Dutch>
+			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
 			<Czech>Can (Beans)</Czech>
 		</Key>
@@ -2378,7 +2378,7 @@
 			<German>A clean, unopened can of Tyler's delicious kidney beans.</German>
 			<Russian>Чистая, закрытая банка деликатесной фасоли "Tyler".</Russian>
 			<Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
-			<Dutch>A clean, unopened can of Tyler's delicious kidney beans.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje Tyler's kidney bonen.</Dutch>
 			<French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
 			<Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
 		</Key>
@@ -2388,7 +2388,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2398,7 +2398,7 @@
 			<German>An empty can of Tyler's delicious kidney beans.</German>
 			<Russian>Пустая банка от фасоли "Tyler".</Russian>
 			<Spanish>Una lata vacía de frijoles rojos "Tyler".</Spanish>
-			<Dutch>An empty can of Tyler's delicious kidney beans.</Dutch>
+			<Dutch>Een leeg blikje Tyler's kidney bonen.</Dutch>
 			<French>Une boîte vide de délicieux haricots nains "Tyler".</French>
 			<Czech>An empty can of Tyler's delicious kidney beans.</Czech>
 		</Key>
@@ -2408,7 +2408,7 @@
 			<German>Can (Unknown)</German>
 			<Russian>Банка с чем-то</Russian>
 			<Spanish>Lata Desconocida</Spanish>
-			<Dutch>Can (Unknown)</Dutch>
+			<Dutch>Blikje (Onbekend)</Dutch>
 			<French>Boîte (Inconnu)</French>
 			<Czech>Can (Unknown)</Czech>
 		</Key>
@@ -2418,7 +2418,7 @@
 			<German>A clean, unopened tin can. The label is missing.</German>
 			<Russian>Чистая, закрытая банка непонятно с чем. Наклейка утеряна.</Russian>
 			<Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
-			<Dutch>A clean, unopened tin can. The label is missing.</Dutch>
+			<Dutch>Een schoon, ongeopend blikje. Het etiket ontbreekt.</Dutch>
 			<French>Une boîte intacte. L'étiquette est manquante.</French>
 			<Czech>A clean, unopened tin can. The label is missing.</Czech>
 		</Key>
@@ -2428,7 +2428,7 @@
 			<German>Tin Can</German>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
+			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
@@ -2438,7 +2438,7 @@
 			<German>An empty tin can.</German>
 			<Russian>Пустая банка от чего-то.</Russian>
 			<Spanish>Una lata vacía.</Spanish>
-			<Dutch>An empty tin can.</Dutch>
+			<Dutch>Een leeg blikje.</Dutch>
 			<French>Boîte en fer-blanc vide.</French>
 			<Czech>An empty tin can.</Czech>
 		</Key>
@@ -2448,7 +2448,7 @@
 			<German>Toilettenpapier</German>
 			<Russian>Туалетная бумага</Russian>
 			<Spanish>Papel Higiénico</Spanish>
-			<Dutch>Toilet paper</Dutch>
+			<Dutch>WC papier</Dutch>
 			<French>Papier toilette</French>
 			<Czech>Toilet paper</Czech>
 		</Key>
@@ -2458,7 +2458,7 @@
 			<German>Eine Rolle Toilettenpapier.</German>
 			<Russian>Рулон туалетной бумаги. Может быть весьма полезным в определенных ситуациях.</Russian>
 			<Spanish>Un rollo de papel higiénico.</Spanish>
-			<Dutch>A roll of toilet paper.</Dutch>
+			<Dutch>Een rol WC Papier.</Dutch>
 			<French>Un rouleau de papier toilette.</French>
 			<Czech>A roll of toilet paper.</Czech>
 		</Key>
@@ -2468,7 +2468,7 @@
 			<German>Rasiermesser</German>
 			<Russian>Опасная бритва</Russian>
 			<Spanish>Navaja</Spanish>
-			<Dutch>Razor</Dutch>
+			<Dutch>Scheermes</Dutch>
 			<French>Razor</French>
 			<Czech>Razor</Czech>
 		</Key>
@@ -2478,7 +2478,7 @@
 			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
 			<Russian>Старомодная опасная бритва.</Russian>
 			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
-			<Dutch>An old-fashioned cut-throat razor with a rounded French point.</Dutch>
+			<Dutch>Een ouderwets nek-snijdend frans scheermes.</Dutch>
 			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
 			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
 		</Key>
@@ -2498,7 +2498,7 @@
       <German>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</German>
       <Russian>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Russian>
       <Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Spanish>
-      <Dutch>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Dutch>
+      <Dutch>Red Bull geeft je vleugels,</Dutch>
       <French>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</French>
       <Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Czech>
     </Key>
@@ -2530,7 +2530,7 @@
 		  <German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Magazijnen %1 / %2 - Wapens %3 / %4 - Rugzakken %5 / %6</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2540,7 +2540,7 @@
 		  <German>%1 will markieren Sie so freundlich. Zu akzeptieren, Tag %1 als freundlich.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 wil jou als bevriend markeren. Om te accepteren, markeer %1 als bevriend.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2550,7 +2550,7 @@
 		  <German>Pulse ist extrem schwach</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Polsslag is erg zwak</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2560,7 +2560,7 @@
 		  <German>Puls ist schwach</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Polsslag is zwak</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2570,7 +2570,7 @@
 		  <German>Pulse ist stark</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Polsslag is sterk</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2580,7 +2580,7 @@
 		  <German>Handel abgebrochen.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Handel is afgebroken</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2590,7 +2590,7 @@
 		  <German>Kann nicht auf Gang in einem verschlossenen Fahrzeug.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2600,7 +2600,7 @@
 		  <German>Keine camo Netze in der Nähe gefunden.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen camouflagenet in de buurt gevonden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2610,7 +2610,7 @@
 		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent geplet tussen twee objecten.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2620,7 +2620,7 @@
 		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Wordt al op slot gezet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2630,7 +2630,7 @@
 		  <German>Kann nicht gesperrt werden, während ein anderer Spieler in der Nähe ist.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet op slot zetten met een andere speler in de buurt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2640,7 +2640,7 @@
 		  <German>Kann nicht abbrechen, während in einem Gewerbetreibenden Stadt!</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet uitloggen in een handel stad.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2650,7 +2650,7 @@
 		  <German>Packen Zelt bereits im Gange.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Tent wordt al reeds ingepakt</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2660,7 +2660,7 @@
 		  <German>Zelt noch nicht einrichten.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Tent is nog niet opgezet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2670,7 +2670,7 @@
 		  <German>Das ist schon gepackt.</German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Dit wordt al reeds ingepakt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2680,7 +2680,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2690,7 +2690,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>kan de magazijnen niet tellen</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2700,7 +2700,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je moet in het bezit zijn van rauw vlees</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2710,7 +2710,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt te vaak een foute code ingevoerd. 10 seconden geduld svp.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2720,7 +2720,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet van slot afhalen met een andere speler in de buurt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2730,7 +2730,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Wordt al reeds van slot gehaald.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2740,7 +2740,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent al aan ket koken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2750,7 +2750,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent al aan het koken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2760,7 +2760,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent al aan het tanken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2770,7 +2770,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>De generator wordt zo volgetankt en gestart, beweeg om te annuleren.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2780,7 +2780,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Ge-annuleerd.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2790,7 +2790,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen voertuigen in de buurt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2800,7 +2800,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>De generator is gestart.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2810,7 +2810,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent dit dier al aan het opensnijden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2820,7 +2820,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Gestopt met opensnijden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2830,7 +2830,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent deze zombie al aan het opensnijden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2840,7 +2840,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Auto wordt al opengebroken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2850,7 +2850,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Openbreken voertuig mislukt, je hotwire kit is kapot gegaan.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2860,7 +2860,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2870,7 +2870,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Brandstofverplaatsing stopgezet</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2880,7 +2880,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Niet recent doodgegaan.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2890,7 +2890,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2900,7 +2900,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met het oppakken</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2910,7 +2910,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Reeds bezig met toevoegen aan gereedschapsriem</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2920,7 +2920,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent al aan het bouwen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2930,7 +2930,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nKan niet bouwen, teveel objecten binnen 30m.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2940,7 +2940,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2950,7 +2950,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2960,7 +2960,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan bouw-paal niet bouwen op minder als 45m afstand van een bestaand bouwterrein.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2970,7 +2970,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>PgUp voor omhoog or PgDn voor omlaag (Houd ALT ingedrukt voor snel en CTRL voor langzaam), \nQ of E draait het object 180graden. Spatiebalk start het bouwen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2980,7 +2980,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Het bouwen is gestopt</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -2990,7 +2990,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Gestopt met het bouwen van %1 %2.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3000,7 +3000,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent al bezig met downgraden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3010,7 +3010,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet downgraden, je weet de combinatie niet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3020,7 +3020,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Nog niet ingesteld.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3030,7 +3030,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen downgrades beschikbaar</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3040,7 +3040,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent al aan het upgraden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3050,7 +3050,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent al hout aan het hakken</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3060,7 +3060,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe moet een bijl in je handen hebben om hout te hakken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3070,7 +3070,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nGestopt met houthakken</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3080,7 +3080,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent al een sleutel aan het kopieren</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3090,7 +3090,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3100,7 +3100,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe moet binnen 3 meter van het vuur staan om de sleutel te maken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3110,7 +3110,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe hebt 1 Tin bar nodig om een sleutel te maken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3120,7 +3120,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nDe gekopieerde sleutel is in je rugzak gestopt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3130,7 +3130,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nGestopt met het maken van de sleutel.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3140,7 +3140,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nBezig met creëren</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3150,7 +3150,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent al bezig met creëren</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3160,7 +3160,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nCreatie gestopt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3170,7 +3170,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nAfmaken van creatie is al bezig.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3180,7 +3180,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe moet aan de kust of op een boot zijn om te vissen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3190,7 +3190,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe moet een vishengel in je hand hebben om te vissen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3200,7 +3200,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nGestopt met vissen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3210,7 +3210,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe hebt een vis gevangen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3220,7 +3220,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nDobber.. Dobber..</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3230,7 +3230,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe hebt niets gevangen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3240,7 +3240,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent al aan het oogsten.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3250,7 +3250,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nGestopt met oogsten.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3260,7 +3260,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe moet in de buurt van een plant zijn om te oogsten.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3270,7 +3270,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent de kist al aan het openmaken./Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3280,7 +3280,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe hebt een breekijzer nodig om dit open te maken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3290,7 +3290,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nSupply kist ontbreekt</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3300,7 +3300,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nSupply kist geopend.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3310,7 +3310,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent al erts aan het ontginnen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3320,7 +3320,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nGestopt met erts ontginnen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3330,7 +3330,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nHet omzetten van kogels is mislukt je dient minstens 85% capaciteit in het magazijn te hebben</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3340,7 +3340,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen upgrades beschikbaar</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3350,7 +3350,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe bent je al aan het omkleden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3360,7 +3360,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3370,7 +3370,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe kunt je niet omkleden in een voertuig</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3380,7 +3380,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nJe kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3390,7 +3390,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bijtanken gestopt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3400,7 +3400,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Al bezig met verwijderen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3410,7 +3410,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3420,7 +3420,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen onderdelen gevonden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3430,7 +3430,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3440,7 +3440,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Wordt al reeds gerepareerd.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3450,7 +3450,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Reparatie afgebroken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3460,7 +3460,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Reeds bezig met bergen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3470,7 +3470,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Berging afgebroken.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3480,7 +3480,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>reeds bezig.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3490,7 +3490,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Reeds bezig met handellen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3500,7 +3500,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Reeds bezig met brandstofverplaatsing.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3510,7 +3510,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met stoppen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3520,7 +3520,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Het uitschakellen van de generator word voorbereid, beweeg om te annuleren.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3530,7 +3530,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>De generator is uitgeschakeld.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3540,7 +3540,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen voertuigen op sleep.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3550,7 +3550,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je bent al aan het handellen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3560,7 +3560,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je kunt niet handellen met een andere speler in de buurt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3570,7 +3570,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met handellen, blijf stilstaan om af te ronden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3580,7 +3580,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Handel geannuleerd.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3590,7 +3590,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je gereedschapsriem zit vol.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3600,7 +3600,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kluis installatie is al bezig.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3610,7 +3610,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Het bouwen wordt voorbereid, sta 5 seconden stil om te bouwen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3630,7 +3630,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Het bouwen van de kluis is stopgezet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3640,7 +3640,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Deze server draait een verkeerde versie van de serversided software. Je kunt niet op deze server spelen. Als het jouw server is, neem dan contact op met de DayZ Epoch Staff.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3650,17 +3650,17 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt een verouderde versie van epoch.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_114">
-		  <Original>Could not retive date and time from server disconect and retry.</Original>
-		  <English>Could not retive date and time from server disconect and retry.</English>
+		  <Original>Could not retrieve date and time from server disconect and retry.</Original>
+		  <English>Could not retrieve date and time from server disconect and retry.</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Het is niet gelukt om de datum en tijd van de server op te halen \nVerbreek de verbinding en probeer het opnieuw.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3670,7 +3670,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je kunt deze %1 niet op slot zetten, je weet de combinatie niet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3680,7 +3680,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Deze %1 wordt al op slot gezet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3690,7 +3690,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je %1 staat nu op slot</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3700,7 +3700,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 is nog niet ingesteld.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3710,7 +3710,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3720,7 +3720,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Deze %1 wordt al reeds ingepakt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3730,7 +3730,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3740,7 +3740,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Het inpakken van %1 is gestopt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3750,7 +3750,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je %1 is ingepakt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3760,7 +3760,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Deze %1 wordt alreeds van slot gehaald.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3770,7 +3770,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 staat niet meer op slot</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3780,7 +3780,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3790,7 +3790,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt met succes %1 munitie bijgeladen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3800,7 +3800,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt minstens %1 munitie nodig om dit te doen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3810,7 +3810,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Begonnen met het koken van %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3820,7 +3820,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Gestopt met het koken van %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3830,7 +3830,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met het vullen van %1, beweeg om te annuleren.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3840,7 +3840,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 is voor %2 procent gevuld.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3850,7 +3850,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3860,7 +3860,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 met brandsfof gevuld.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3870,7 +3870,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nDit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3880,7 +3880,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3890,7 +3890,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Ontbrekend gereedschap: %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3900,7 +3900,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met het plaatsen van %1, beweeg om te annuleren</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3910,7 +3910,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3920,7 +3920,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3930,7 +3930,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet downgraden %1 in de buurt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3940,7 +3940,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 gedowngrade.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3950,7 +3950,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\n%1 van %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3960,7 +3960,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 gerepareerd.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3970,7 +3970,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Missende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3980,7 +3980,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt nog %1 extra %2 nodig.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -3990,7 +3990,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nBoom wordt neergehakt, loop weg om te annuleren. (%1/%2)</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4000,7 +4000,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\n%1 stapels hout liggen nu recht voor je.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4010,7 +4010,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nHiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4020,7 +4020,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nItem gecreëerd: %1 x %2</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4030,7 +4030,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nMissende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4040,7 +4040,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\n%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4050,7 +4050,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\n%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4060,7 +4060,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\n%1 %2 is aan je inventaris toegevoegd.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4070,7 +4070,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\nBezig met het delven van Erts, loop weg om te annuleren. (%1/%2)</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4080,7 +4080,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>\n\n%1 hoopjes erts liggen nu voor je neus.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4090,7 +4090,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan niet upgraden %1 in de buurt.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4100,7 +4100,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt een %2 geupgrade. De combinatie is %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4110,7 +4110,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 geupgrade.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4120,7 +4120,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bijtanken aan het voorbereiden. Sta stil om de %1 leeg te gieten.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4130,7 +4130,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen ruimte meer voor brandstof in deze %1.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4140,7 +4140,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bezig met het slopen van %1.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4150,7 +4150,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4160,7 +4160,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4170,7 +4170,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 aan het slopen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4180,7 +4180,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt succesvol %1 aan de %2 gemonteerd.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4190,7 +4190,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Om dit te repareren heb je %1 nodig.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4200,7 +4200,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4210,7 +4210,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt met succes de %1 van de %2 verwijderd.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4220,7 +4220,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 nodig om dit deel te verwijderen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4230,7 +4230,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %2 liter brandstof uit de %1 gehaald.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4240,7 +4240,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4250,7 +4250,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Hond heeft %1 gegeten, en is nu tam.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4260,7 +4260,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Hond heeft %1 gegeten, maar is nog niet tam.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4270,7 +4270,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 is bevestigd aan de sleepwagen</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4280,7 +4280,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Het is niet gelukt om %1 aan de sleepwagen te bevestigen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4290,7 +4290,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 is te groot om te slepen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4300,7 +4300,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>%1 is losgemaakt van de sleepwagen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4310,7 +4310,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt je kluis geinstalleerd. De code is %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4320,7 +4320,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %3 gekocht voor %1 %2.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4330,7 +4330,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 %2 verkocht voor %3 %4.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4340,7 +4340,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Kan %1 niet verkopen, banden hebben teveel schade.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4350,7 +4350,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Onvoldoende %1 voorraad.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4360,7 +4360,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Nog %1 %2 nodig</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4370,7 +4370,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Geen %1 binnen 20 meter gevonden.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4380,7 +4380,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Je hebt %1 %2 verhandeld voor %3 %4</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4390,7 +4390,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Handel gestart, sta stil om te voltooien. (%1 van %2)</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4400,7 +4400,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Onderzoek</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4410,7 +4410,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak schans</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4420,7 +4420,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak tent</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4430,7 +4430,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak Woestijntent</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4440,7 +4440,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak Groene tent</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4450,7 +4450,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak zonwering</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4460,7 +4460,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak Jutte</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4470,7 +4470,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak Zandzak</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4480,7 +4480,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak Lichtmast</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4490,7 +4490,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 1 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4500,7 +4500,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 10 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4510,7 +4510,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 9 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4520,7 +4520,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verwijder 1 10oz Goud</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4530,7 +4530,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Maak kist leeg</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4540,7 +4540,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 8 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4550,7 +4550,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 7 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4560,7 +4560,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 6 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4570,7 +4570,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 5 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4580,7 +4580,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 4 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4590,7 +4590,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 3 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4600,7 +4600,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Voeg 2 10oz Goud toe</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4610,7 +4610,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Open %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4620,7 +4620,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Smelt 10oz balk</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4630,7 +4630,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Smelt 1oz balk</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4640,7 +4640,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verzamel materiaal</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4650,7 +4650,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer paal</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4660,7 +4660,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouw Ribbelplaten hek</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4670,7 +4670,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouw houten schuur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4680,7 +4680,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouw opslag schuur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4690,7 +4690,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouw buitenhuisje</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4700,7 +4700,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouw ribbelplaten hek</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4710,7 +4710,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouw roestige poort</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4720,7 +4720,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Ceëer metalen paneel</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4730,7 +4730,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verpak 6 cola</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4740,7 +4740,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verpak 6 pepsi</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4750,7 +4750,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verpak scrap metal</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4760,7 +4760,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verpak tank traps</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4770,7 +4770,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verpak prikkeldraad rollen</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4780,7 +4780,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verpak speklappen</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4790,7 +4790,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Verpack 6 speklappen</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4800,7 +4800,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer metalen vloer</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4810,7 +4810,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer groot camouflagenet</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4820,7 +4820,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer groot camouflagenet</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4830,7 +4830,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Plaats afsluitbare kist</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4840,7 +4840,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer houten vloer</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4850,7 +4850,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer houten vloer</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4860,7 +4860,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer trapsteunen</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4870,7 +4870,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer Deuropening</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4880,7 +4880,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer raam</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4890,7 +4890,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer grote muur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4900,7 +4900,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer houten muur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4910,7 +4910,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer deur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4920,7 +4920,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer afsluitbare deur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4930,7 +4930,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer garagedeur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4940,7 +4940,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Bouw kampvuur</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4950,7 +4950,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer planken</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4960,7 +4960,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer pijlen</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4970,7 +4970,7 @@
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch></Dutch>
+		  <Dutch>Creëer takken hek</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -4980,7 +4980,7 @@
       <German>Failed to sell vehicle, you must get into drivers seat first.</German>
       <Russian>Failed to sell vehicle, you must get into drivers seat first.</Russian>
       <Spanish>Failed to sell vehicle, you must get into drivers seat first.</Spanish>
-      <Dutch>Failed to sell vehicle, you must get into drivers seat first.</Dutch>
+      <Dutch>Verkoop voertuig mislukt, stap eerst in de bestuurders stoel.</Dutch>
       <French>Failed to sell vehicle, you must get into drivers seat first.</French>
       <Czech>Failed to sell vehicle, you must get into drivers seat first.</Czech>
     </Key>
