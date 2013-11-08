@@ -33,6 +33,10 @@ dayz_tameDogs = true;
 DynamicVehicleDamageLow = 0; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
 
+dayz_sellDistance_vehicle = 10;
+dayz_sellDistance_boat = 30;
+dayz_sellDistance_air = 40;
+
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 

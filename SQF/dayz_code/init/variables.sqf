@@ -393,13 +393,13 @@ PVDZE_plr_DeathB = [];
 //DayZ settings
 dayz_dawn = 6;
 dayz_dusk = 18;
-if(isNil "dayz_maxAnimals") then {
-	dayz_maxAnimals = 8;
-};
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
 
+if(isNil "dayz_maxAnimals") then {
+	dayz_maxAnimals = 8;
+};
 if(isNil "dayz_maxLocalZombies") then {
 	dayz_maxLocalZombies = 15;
 };
@@ -421,8 +421,14 @@ if(isNil "DZE_TRADER_SPAWNMODE") then {
 if(isNil "dayz_tameDogs") then {
 	dayz_tameDogs = false;
 };
-if(isNil "dayz_sellDistance") then {
-	dayz_sellDistance = 20;
+if(isNil "dayz_sellDistance_vehicle") then {
+	dayz_sellDistance_vehicle = 10;
+};
+if(isNil "dayz_sellDistance_boat") then {
+	dayz_sellDistance_boat = 30;
+};
+if(isNil "dayz_sellDistance_air") then {
+	dayz_sellDistance_air = 40;
 };
 if(isNil "dayz_paraSpawn") then {
 	dayz_paraSpawn = false;
