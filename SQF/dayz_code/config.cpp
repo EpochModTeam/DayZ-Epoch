@@ -525,9 +525,9 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "INS_Bardak_DZ";
 		};
-		class Skin_INS_Worker1_DZ: Default {
+		class Skin_INS_Worker2_DZ: Default {
 			sex = "male";
-			playerModel = "INS_Worker1_DZ";
+			playerModel = "INS_Worker2_DZ";
 		};
 
 
