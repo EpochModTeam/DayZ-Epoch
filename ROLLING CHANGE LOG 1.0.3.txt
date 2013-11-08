@@ -3,6 +3,7 @@
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent
 humanity loss from killing player zombies and give a small humanity
 increase. @Armifer
+* [FIXED] Fix for diag_log statement when player buying vehicles @Torndeco
 * [FIXED] Building on roads no longer allowed as it was intended. @dayz10k
 * [FIXED] Fixed expression error with vehicles/safes when loading a large inventory. @vbawol
 * [FIXED] No more bleeding trees, rocks, etc with melee weapons from DayZ CE 1.8. @vbawol
