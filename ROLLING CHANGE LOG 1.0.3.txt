@@ -3,20 +3,26 @@
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent
 humanity loss from killing player zombies and give a small humanity
 increase. @Armifer
+* [FIXED] Fixed expression error with vehicles/safes when loading a large inventory. @vbawol
+* [FIXED] No more bleeding trees, rocks, etc with melee weapons from DayZ CE 1.8. @vbawol
 * [FIXED] Variable added to player zombie vision to better support anit-hacks @Skaronator
 * [FIXED] Lower chance to play fly sounds when near dead bodies. @vbawol
 * [FIXED] Documents now examine one at a time also fixes getting the same item for each document.
-* [FIXED] Server now only saves the first 20 magazines items on disconnect to prevent saving items in overflow that can cause player inventory corruption. @vbawol
+* [FIXED] Server now only saves the first 20 magazines on disconnect to prevent saving items in overflow that can cause player inventory corruption. @vbawol
 * [FIXED] Zombies no longer attack players unless they have true line of sight. @vbawol
 * [FIXED] RPT error on all clients when dragging a player. @zabn
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
-* [FIXED] Typo in Axemans tower light code was preventing it from working. @Torndeco
+* [FIXED] Typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
+* [ADDED] better in sring function by KK
+* [ADDED] Halo jump option from a helicopter when above 500m. @zabn
+* [ADDED] Localization support added. @zabn
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
 * [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
 * [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
 * [ADDED] Tag friendly system now stores your 5 most recent friends. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
 * [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
+* [CHANGED] Updated Makarov, MakarovSD, and M1911 damage settings to the same as DayZ CE 1.8. @vbawol
 * [CHANGED] Base building enhancements and changed count down timer. @zabn
 * [CHANGED] Base Building now requires a plot pole again. @vbawol
 * [REMOVED] Unused code and images removed @Skaronator
