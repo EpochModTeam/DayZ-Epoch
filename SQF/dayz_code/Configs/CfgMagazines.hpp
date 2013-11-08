@@ -3523,25 +3523,25 @@ class CfgMagazines {
 		displayName = "Crewman";
 		descriptionShort = "Crewman";
 	};
-	class Skin_Ins_Lopotev_DZ: SkinBase
+	class Skin_INS_Lopotev_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Boss";
 		descriptionShort = "Team Leader";
 	};
-	class Skin_Ins_Soldier_AR_DZ: SkinBase
+	class Skin_INS_Soldier_AR_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Cooper";
 		descriptionShort = "Cooper";
 	};
-	class Skin_Ins_Soldier_CO_DZ: SkinBase
+	class Skin_INS_Soldier_CO_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Travis";
 		descriptionShort = "Travis";
 	};
-	class Skin_Ins_Bardak_DZ: SkinBase
+	class Skin_INS_Bardak_DZ: SkinBase
 	{
 		scope = 2;
 		displayName = "Paulo";
