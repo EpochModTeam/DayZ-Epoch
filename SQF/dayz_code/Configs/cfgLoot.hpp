@@ -586,12 +586,12 @@ class CfgLoot {
 			"Skin_SurvivorW3_DZ",
 			"Skin_SurvivorWpink_DZ",
 			"Skin_SurvivorWurban_DZ"
-			//"Skin_SurvivorWsequisha_DZ",
-			//"Skin_SurvivorWsequishaD_DZ",
+			"Skin_INS_Bardak_DZ",
+			"Skin_INS_Worker1_DZ",
 		},
 		{
-			0.13,
-			0.12,
+			0.11,
+			0.1,
 			0.1,
 			0.1,
 			0.07,
@@ -600,9 +600,9 @@ class CfgLoot {
 			0.08,
 			0.09,
 			0.09,
-			0.07
-			//0.04,
-			//0.02
+			0.07,
+			0.02,
+			0.02
 		}
 	};
 	militaryclothes[] = {
@@ -620,12 +620,15 @@ class CfgLoot {
 			"Skin_FR_Rodriguez_DZ",
 			"Skin_CZ_Soldier_Sniper_EP1_DZ",
 			"Skin_Graves_Light_DZ"
+			
+			"Skin_INS_Soldier_AR_DZ",
+			"Skin_INS_Soldier_CO_DZ"
 		},
 		{
-			0.1,
+			0.09,
 			0.08,
 			0.05,
-			0.13,
+			0.1,
 			0.07,
 			0.07,
 			0.05,
@@ -634,7 +637,9 @@ class CfgLoot {
 			0.08,
 			0.09,
 			0.04,
-			0.09
+			0.09,
+			0.02,
+			0.02
 		}
 	};
 	specialclothes[] = {
@@ -653,12 +658,17 @@ class CfgLoot {
 			"Skin_GUE_Soldier_Sniper_DZ",
 			"Skin_GUE_Soldier_Crew_DZ",
 			"Skin_GUE_Soldier_CO_DZ",
-			"Skin_GUE_Soldier_2_DZ"
+			"Skin_GUE_Soldier_2_DZ",
+			"Skin_TK_Special_Forces_MG_EP1_DZ",
+			"Skin_TK_Soldier_Sniper_EP1_DZ",
+			"Skin_TK_Commander_EP1_DZ",
+			"Skin_RU_Soldier_Crew_DZ",
+			"Skin_INS_Lopotev_DZ"
 		},
 		{
-			0.1,
+			0.05,
 			0.08,
-			0.13,
+			0.08,
 			0.06,
 			0.07,
 			0.07,
@@ -670,7 +680,12 @@ class CfgLoot {
 			0.04,
 			0.04,
 			0.04,
-			0.04
+			0.04,
+			0.02,
+			0.02,
+			0.02,
+			0.02,
+			0.02
 		}
 	};
 	tents[] = {
