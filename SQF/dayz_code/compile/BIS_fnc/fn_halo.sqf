@@ -69,7 +69,7 @@ if (typename _this == typename objnull) then {
 		bis_fnc_halo_soundLoop = time;
 		playsound "BIS_HALO_Flapping";
 
-		bis_fnc_halo_action = _unit addaction [localize "STR_HALO_OPEN_CHUTE","ZabnMods\compile\fn_halo.sqf",[],1,true,true,"Eject"];
+		bis_fnc_halo_action = _unit addaction [localize "STR_HALO_OPEN_CHUTE","\z\addons\dayz_code\compile\BIS_fnc\fn_halo.sqf",[],1,true,true,"Eject"];
 
 		bis_fnc_halo_keydown = {
 			_key = _this select 1;
