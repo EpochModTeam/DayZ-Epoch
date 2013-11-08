@@ -19,6 +19,7 @@ increase. @Armifer
 * [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
 * [ADDED] Halo jump option from a helicopter when above 500m. @zabn
 * [ADDED] Localization support added. @zabn
+* [ADDED] Added/corrected dutch language and some typo's @JoSchaap
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
 * [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
 * [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
