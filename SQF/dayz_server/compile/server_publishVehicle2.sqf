@@ -36,8 +36,8 @@ diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
-[_object,_uid,_characterID,_class,_dir,_location,_donotusekey] spawn {
-   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para","_donotusekey"];
+[_object,_uid,_characterID,_class,_dir,_location,_donotusekey,_activatingPlayer] spawn {
+   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para","_donotusekey","_activatingPlayer"];
 
    _object = _this select 0;
    _uid = _this select 1;
@@ -46,6 +46,7 @@ _key call server_hiveWrite;
    //_dir = _this select 4;
    _location = _this select 5;
    _donotusekey = _this select 6;
+   _activatingPlayer = _this select 7;
 
    _done = false;
 	_retry = 0;
