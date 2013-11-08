@@ -4,7 +4,7 @@ class Mission
 	addOns[]=
 	{
 		"tavi",
-	    "ca_modules_animals",
+		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
@@ -24,7 +24,6 @@ class Mission
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
-		"warfarebuildings",
 		"tavi"
 	};
 	randomSeed=11171215;
@@ -807,7 +806,6 @@ class Mission
 					vehicle="Survivor1_DZ";
 					player="PLAY CDG";
 					skill=0.60000002;
-
 					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
 				};
 				class Item69
@@ -1174,7 +1172,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			position[]={10732.087,193.02972,12687.841};
@@ -1398,6 +1396,14 @@ class Mission
 			text="Scott's Repair Shop";
 			type="mil_dot";
 			colorName="ColorGreen";
+		};
+		class Item31
+		{
+			position[]={9643.8574,96.417999,4520.9438};
+			name="BlackMarketVendor";
+			text="Zaps Black Market";
+			type="mil_dot";
+			colorName="ColorBlack";
 		};
 	};
 };

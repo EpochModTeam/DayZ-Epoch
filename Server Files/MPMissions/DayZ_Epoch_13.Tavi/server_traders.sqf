@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 13
-serverTraders = ["GUE_Worker2","Soldier_Sniper_KSVK_PMC","Soldier_GL_PMC","GUE_Soldier_Pilot","GUE_Woodlander3","Worker4","Reynolds_PMC","Soldier_Sniper_PMC","GUE_Soldier_3","RU_Doctor","Doctor","UN_CDF_Soldier_Pilot_EP1","RU_Worker4","RU_Woodlander4","Citizen3","RU_Damsel5","Dr_Hladik_EP1","GUE_Commander","GUE_Soldier_CO","Profiteer2_EP1","RU_Farmwife5","GUE_Woodlander1","RU_Worker1","GUE_Soldier_2"];
+serverTraders = ["GUE_Soldier_GL","GUE_Worker2","Soldier_Sniper_KSVK_PMC","Soldier_GL_PMC","GUE_Soldier_Pilot","GUE_Woodlander3","Worker4","Reynolds_PMC","Soldier_Sniper_PMC","GUE_Soldier_3","RU_Doctor","Doctor","UN_CDF_Soldier_Pilot_EP1","RU_Worker4","RU_Woodlander4","Citizen3","RU_Damsel5","Dr_Hladik_EP1","GUE_Commander","GUE_Soldier_CO","Profiteer2_EP1","RU_Farmwife5","GUE_Woodlander1","RU_Worker1","GUE_Soldier_2"];
 		// START PER TRADER CONFIG
 // Pete's Armed Choppers
 menu_GUE_Worker2 = [
@@ -143,6 +143,12 @@ menu_RU_Worker1 = [
 // Wholesaler Darren
 menu_GUE_Soldier_2 = [
 	[["Wholesale",675]],
+	[],
+	"neutral"
+];
+// Black Market Vendor C
+menu_GUE_Soldier_GL = [
+	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];
