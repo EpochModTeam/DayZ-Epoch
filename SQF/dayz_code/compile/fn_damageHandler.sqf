@@ -59,7 +59,7 @@ if (_unitIsPlayer) then {
 			
 			if (!_canHitFree and !_isBandit and !_isPZombie) then {
 				_myKills = 0 max (1 - (player getVariable ["humanKills",0]) / 5);
-				_humanityHit = -50 * _myKills * _damage; //200
+				_humanityHit = -100 * _myKills * _damage;
 				//["PVDZE_plr_HumanityChange",[_source,_humanityHit,30]] call broadcastRpcCallAll;
 				if (_humanityHit != 0) then {
 					PVDZE_plr_HumanityChange = [_source,_humanityHit,30];
