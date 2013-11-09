@@ -47,5 +47,3 @@ if (local _wounded) then
 	};
 };
 sleep 0.01;
-if (true) exitWith {};
-

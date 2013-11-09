@@ -16,7 +16,7 @@ _lootChance =	getNumber (_config >> "lootChance");
 	if ((random 1) < _lootChance) then {
 		_iPos = _obj modelToWorld _x;
 		_nearBy = nearestObjects [_iPos, ["ReammoBox","WeaponHolder","WeaponHolderBase"], 1];
-			if (count _nearBy == 0) then {
+		if (count _nearBy == 0) then {
 			_index = dayz_CBLBase find _type;
 			//diag_log format["Found %2 at index: %1", _index,_type];
 			_weights = dayz_CBLChances select _index;

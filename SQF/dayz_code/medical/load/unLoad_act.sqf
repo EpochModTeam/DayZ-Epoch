@@ -33,5 +33,3 @@ for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 	};
 	sleep 0.1;
 };
-
-if (true) exitWith {};

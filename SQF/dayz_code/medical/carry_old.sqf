@@ -56,5 +56,4 @@ while {r_carry_sqf} do
 	sleep 0.1;
 };
 _dragee playActionNow "Die";
-if (true) exitWith {};
 

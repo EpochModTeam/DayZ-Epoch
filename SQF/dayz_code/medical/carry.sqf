@@ -55,5 +55,4 @@ while {r_carry_sqf} do
 	};	 	
 	sleep 0.1;
 };
-if (true) exitWith {};
 
