@@ -115,7 +115,7 @@ _isLandFireDZ = (_classname == "Land_Fire_DZ");
 _isTankTrap = (_classname == "Hedgehog_DZ");
 
 _distance = 30;
-_needText = "Plot Pole";
+_needText = localize "str_epoch_player_246";
 
 if(_isPole) then {
 	_distance = 60;

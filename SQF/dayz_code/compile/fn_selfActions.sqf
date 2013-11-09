@@ -713,7 +713,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			};
 			if (s_player_warndog < 0) then {
 				_warn = _dogHandle getFSMVariable "_watchDog";
-				if (_warn) then { _text = "Quiet"; _warn = false; } else { _text = "Alert"; _warn = true; };
+				if (_warn) then { _text = (localize "str_epoch_player_247"); _warn = false; } else { _text = (localize "str_epoch_player_248"); _warn = true; };
 				s_player_warndog = player addAction [format[localize "str_actions_warndog",_text],"\z\addons\dayz_code\actions\dog\warn.sqf",[_dogHandle, _warn], 2, false, true,"",""];		
 			};
 			if (s_player_followdog < 0) then {
@@ -836,9 +836,9 @@ if (_dogHandle > 0) then {
 			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID", 0], 1, false, true, "", ""];
 		};
 		if (s_player_speeddog < 0) then {
-			_text = "Walk";
+			_text = (localize "str_epoch_player_249");
 			_speed = 0;
-			if (_dog getVariable ["currentSpeed",1] == 0) then { _speed = 1; _text = "Run"; };
+			if (_dog getVariable ["currentSpeed",1] == 0) then { _speed = 1; _text = (localize "str_epoch_player_250"); };
 			s_player_speeddog = player addAction [format[localize "str_actions_speeddog", _text], "\z\addons\dayz_code\actions\dog\speed.sqf",[player getVariable ["dogID", 0],_speed], 0, false, true, "", ""];
 		};
 		if (s_player_calldog < 0) then {

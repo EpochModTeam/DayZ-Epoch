@@ -4974,15 +4974,315 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
-    <Key ID="STR_EPOCH_PLAYER_245">
-      <Original>Failed to sell vehicle, you must get into drivers seat first.</Original>
-      <English>Failed to sell vehicle, you must get into drivers seat first.</English>
-      <German>Failed to sell vehicle, you must get into drivers seat first.</German>
-      <Russian>Failed to sell vehicle, you must get into drivers seat first.</Russian>
-      <Spanish>Failed to sell vehicle, you must get into drivers seat first.</Spanish>
-      <Dutch>Verkoop voertuig mislukt, stap eerst in de bestuurders stoel.</Dutch>
-      <French>Failed to sell vehicle, you must get into drivers seat first.</French>
-      <Czech>Failed to sell vehicle, you must get into drivers seat first.</Czech>
-    </Key>
+		<Key ID="STR_EPOCH_PLAYER_245">
+		  <Original>Failed to sell vehicle, you must get into drivers seat first.</Original>
+		  <English>Failed to sell vehicle, you must get into drivers seat first.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Verkoop voertuig mislukt, stap eerst in de bestuurders stoel.</Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_246">
+		  <Original>Plot Pole</Original>
+		  <English>Plot Pole</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_247">
+		  <Original>Quiet</Original>
+		  <English>Quiet</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_248">
+		  <Original>Alert</Original>
+		  <English>Alert</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_249">
+		  <Original>Walk</Original>
+		  <English>Walk</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_250">
+		  <Original>Run</Original>
+		  <English>Run</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_251">
+		  <Original>Un pack</Original>
+		  <English>Un pack</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_252">
+		  <Original>Craft Half Wall</Original>
+		  <English>Craft Half Wall</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_253">
+		  <Original>Craft Garage Doorway</Original>
+		  <English>Craft Garage Doorway</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_254">
+		  <Original>Craft Plywood</Original>
+		  <English>Craft Plywood</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_255">
+		  <Original>Craft Supply Crate</Original>
+		  <English>Craft Supply Crate</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_256">
+		  <Original>Craft Deer Stand</Original>
+		  <English>Craft Deer Stand</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_257">
+		  <Original>Craft Wood Stairs</Original>
+		  <English>Craft Wood Stairs</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_258">
+		  <Original>Craft Wood Ladder</Original>
+		  <English>Craft Wood Ladder</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_259">
+		  <Original>Craft Lumber Pack</Original>
+		  <English>Craft Lumber Pack</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_260">
+		  <Original>Craft Workbench</Original>
+		  <English>Craft Workbench</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_261">
+		  <Original>Craft Shack</Original>
+		  <English>Craft Shack</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_262">
+		  <Original>Craft Floor 1/4</Original>
+		  <English>Craft Floor 1/4</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_263">
+		  <Original>Craft Wall 1/3</Original>
+		  <English>Craft Wall 1/3</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_264">
+		  <Original>Craft Plywood Pack</Original>
+		  <English>Craft Plywood Pack</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_265">
+		  <Original>Craft Scrap Metal</Original>
+		  <English>Craft Scrap Metal</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_266">
+		  <Original>Smelt Silver Bar</Original>
+		  <English>Smelt Silver Bar</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_267">
+		  <Original>Smelt Gold Bar</Original>
+		  <English>Smelt Gold Bar</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_268">
+		  <Original>Wear %1</Original>
+		  <English>Wear %1</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_269">
+		  <Original>Craft Bandages</Original>
+		  <English>Craft Bandages</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_270">
+		  <Original>Craft Desert Net</Original>
+		  <English>Craft Desert Net</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_271">
+		  <Original>Craft Forest Net</Original>
+		  <English>Craft Forest Net</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_272">
+		  <Original>Build Sandbag</Original>
+		  <English>Build Sandbag</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_273">
+		  <Original>Craft Large Sandbag</Original>
+		  <English>Craft Large Sandbag</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_274">
+		  <Original>Craft Sandbag Nest</Original>
+		  <English>Craft Sandbag Nest</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_275">
+		  <Original>Craft Sledge</Original>
+		  <English>Craft Sledge</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
 	</Package>
 </Project>
