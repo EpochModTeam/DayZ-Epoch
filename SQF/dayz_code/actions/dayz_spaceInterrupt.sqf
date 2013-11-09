@@ -7,6 +7,42 @@ if (_dikCode in[0x58,0x57,0x44,0x43,0x42,0x41,0x40,0x3F,0x3E,0x3D,0x3C,0x3B,0x0B
 	_handled = true;
 };
 
+if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+	dayz_lastCheckBit = diag_tickTime;
+	call dayz_forceSave;
+};
+
+// surrender 
+if (_dikCode in actionKeys "Surrender") then {
+	
+	// Toggle on/off
+	if (DZE_Surrender) then {
+		DZE_Surrender = false;	
+
+		[objNull, player, rSwitchMove,""] call RE;
+		player playActionNow "";
+
+	} else {
+		DZE_Surrender = true;
+
+		// remove weaponns and ammo
+		if (primaryWeapon player != "") then {
+			player action ["dropWeapon",player, (primaryWeapon player)];
+		};
+		if (secondaryWeapon player != "") then {	
+			player action ["dropWeapon",player, (secondaryWeapon player)];
+		};
+		{player action ["dropMagazine", player, _x]} forEach magazines player;
+			
+		// surrender animation
+		player playMove "AmovPercMstpSsurWnonDnon";
+	};
+	
+	r_interrupt = true
+};
+
+
+
 if (_dikCode in actionKeys "MoveForward") exitWith {r_interrupt = true};
 if (_dikCode in actionKeys "MoveLeft") exitWith {r_interrupt = true};
 if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true};
@@ -119,13 +155,4 @@ if (_dikCode == 0x01) then {
 	DZE_cancelBuilding = true;
 };
 
-if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (diag_tickTime - dayz_lastCheckBit > 10)) then {
-	dayz_lastCheckBit = diag_tickTime;
-	call dayz_forceSave;
-};
-/*
-if (_dikCode in actionKeys "IngamePause") then {
-	_idOnPause = [] spawn dayz_onPause;
-};
-*/
 _handled
