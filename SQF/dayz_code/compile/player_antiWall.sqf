@@ -24,7 +24,7 @@ if ((count _intersectsWith) > 0) then {
 		};
 	} forEach _intersectsWith;
 	if(_activated) then {
-		diag_log format["Player Wall glitched %1 - player: %2 vehicle:%4", player,_playerPos,_vehiclePos];
+		diag_log format["Player Wall glitched %1 - player: %2 vehicle:%3", player,_playerPos,_vehiclePos];
 		cutText [(localize "str_epoch_player_9"), "PLAIN DOWN"];	
 		_id = [player,"bled"] spawn player_death;
 		
