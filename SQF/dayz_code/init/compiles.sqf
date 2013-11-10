@@ -607,10 +607,10 @@ if (!isDedicated) then {
 				};
 				_str;
 			};
-			_h = (_record select 4) select 0;
+			_h = ((_record select 4) select 0)+timezoneswitch;
 			_m = (_record select 4) select 1;
 		
-			_record_stxt = format["%1<t size='1' align='left'>Died at %2:%3</t><br /><br />", _record_stxt, ((_h call _format)+timezoneswitch), (_m call _format)];
+			_record_stxt = format["%1<t size='1' align='left'>Died at %2:%3</t><br /><br />", _record_stxt, (_h call _format), (_m call _format)];
 		
 			if ((_record select 1) != 'unknown') then {
 				_record_stxt = format["%1<t size='1' align='left'>Was killed by %2</t><br /><br />", _record_stxt, (_record select 1)];
