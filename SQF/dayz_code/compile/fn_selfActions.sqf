@@ -269,6 +269,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			s_player_forceSave = -1;
 		};
 	};
+
+	
 	
 	If(DZE_AllowCargoCheck) then {
 		if((_isVehicle or _isTent or _isnewstorage) and _isAlive and !_isMan and !locked _cursorTarget) then {
@@ -321,6 +323,21 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		if (_isMan and !_isZombie and !_isAnimal) then {
 			_player_studybody = true;
 		}
+	} else {
+		// unit alive
+
+		// gear access on surrendered player
+		if(_isMan and !_isZombie and !_isAnimal) then {
+			if (_cursorTarget getVariable ["DZE_Surrendered",false]) then {
+				if (s_player_SurrenderedGear < 0) then {
+					//s_player_SurrenderedGear = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",_cursorTarget, 1, true, true, "", ""];
+					s_player_SurrenderedGear = player addAction ["Gear",_text], (player action ["Gear", _cursorTarget]),_cursorTarget, 1, true, true, "", ""];
+				};
+			};
+		} else {
+			player removeAction s_player_SurrenderedGear;
+			s_player_SurrenderedGear = -1;
+		};
 	};
 
 

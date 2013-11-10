@@ -22,6 +22,8 @@ if (_dikCode in actionKeys "Surrender") then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "";
 
+		player setVariable ["DZE_Surrendered", false, true];
+
 	} else {
 		DZE_Surrender = true;
 
@@ -32,8 +34,10 @@ if (_dikCode in actionKeys "Surrender") then {
 		if (secondaryWeapon player != "") then {	
 			player action ["dropWeapon",player, (secondaryWeapon player)];
 		};
-		{player action ["dropMagazine", player, _x]} forEach magazines player;
-			
+		
+		// set publicvariable that allows other player to access gear
+		player setVariable ["DZE_Surrendered", true, true];
+
 		// surrender animation
 		player playMove "AmovPercMstpSsurWnonDnon";
 	};
