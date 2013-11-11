@@ -44,7 +44,7 @@ class CfgAmmo {
 	};
 	class Melee;
 	class Machete_Swing_Ammo : Melee {
-		hit = 53;
+		hit = 15;
 		simulation = "shotBullet";
 		minRange = 1;
 		minRangeProbab = 0.8;
@@ -59,7 +59,7 @@ class CfgAmmo {
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Hatchet_Swing_Ammo : Melee {
-		hit = 50;
+		hit = 12;
 		simulation = "shotBullet";
 		minRange = 1;
 		minRangeProbab = 0.8;
@@ -74,7 +74,7 @@ class CfgAmmo {
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Crowbar_Swing_Ammo : Melee {
-		hit = 48;
+		hit = 10;
 		simulation = "shotBullet";
 		minRange = 1;
 		minRangeProbab = 0.8;
@@ -89,7 +89,7 @@ class CfgAmmo {
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Fishing_Swing_Ammo : Melee {
-		hit = 45;
+		hit = 7;
 		simulation = "shotBullet";
 		minRange = 1;
 		minRangeProbab = 1;
@@ -104,7 +104,7 @@ class CfgAmmo {
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Sledge_Swing_Ammo : Melee {
-		hit = 49;
+		hit = 15;
 		simulation = "shotBullet";
 		minRange = 1;
 		minRangeProbab = 0.8;

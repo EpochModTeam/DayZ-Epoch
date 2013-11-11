@@ -15,10 +15,6 @@ _source = _this select 3;
 _ammo = _this select 4;
 _type = [_damage,_ammo] call fnc_usec_damageType;
 
-if (_type == 3) then {
-	_damage = _damage * 0.024;
-};
-
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
 //_evType = "";
