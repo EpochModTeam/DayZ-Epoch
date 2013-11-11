@@ -7,13 +7,6 @@ _playerID = 	_this select 3;
 _playerName = 	_this select 4;
 _infected =		_this select 5;
 
-_victim removeAllEventHandlers "MPHit";
-_victim enableSimulation false;
-_victim removeAllEventHandlers "HandleDamage";
-_victim removeAllEventHandlers "Killed";
-_victim removeAllEventHandlers "Fired";
-_victim removeAllEventHandlers "FiredNear";
-
 _victim = _newObject;
 _victimName = _victim getVariable["bodyName", "nil"];
 
@@ -81,7 +74,7 @@ if (isnil "dayz_disco") then {
 */
 
 // dayz_disco = dayz_disco - [_playerID];
-_newObject setVariable["processedDeath",time];
+_newObject setVariable["processedDeath",diag_tickTime];
 
 if (typeName _minutes == "STRING") then 
 {

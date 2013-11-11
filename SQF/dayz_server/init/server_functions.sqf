@@ -575,20 +575,41 @@ dayz_recordLogin = {
 	_key call server_hiveWrite;
 };
 
+dayz_perform_purge = {
+	_this removeAllMPEventHandlers "mpkilled";
+	_this removeAllMPEventHandlers "mphit";
+	_this removeAllMPEventHandlers "mprespawn";
+	_this removeAllEventHandlers "FiredNear";
+	_this removeAllEventHandlers "HandleDamage";
+	_this removeAllEventHandlers "Killed";
+	_this removeAllEventHandlers "Fired";
+	_this removeAllEventHandlers "GetOut";
+	_this removeAllEventHandlers "Local";
+	clearVehicleInit _this;
+	deleteVehicle _this;
+	deleteGroup (group _this);
+	_this = nil;
+};
+
 server_cleanDead = {
-	private ["_objectPos","_noPlayerNear"];
+	private ["_deathTime"];
 	{
-		_objectPos = getPosATL _x;
-		_noPlayerNear = {isPlayer _x} count (_objectPos nearEntities ["CAManBase",35]) == 0;
-		if (_noPlayerNear) then
-		{
+		if (local _x) then {
+
 			if (_x isKindOf "zZombie_Base") then
 			{
-				deleteVehicle _x;
+				_x call dayz_perform_purge;
+			};
+			if (_x isKindOf "CAManBase") then {
+				_deathTime = _x getVariable ["processedDeath", diag_tickTime];
+				if (diag_tickTime - _deathTime > 3600) then {
+					_x call dayz_perform_purge;
+				};
 			};
 		};
 	} forEach allDead;
 };
+
 server_cleanLoot =
 {
 private ["_deletedLoot","_startTime","_looted","_objectPos","_noPlayerNear","_nearObj","_endTime"];
@@ -605,7 +626,7 @@ private ["_deletedLoot","_startTime","_looted","_objectPos","_noPlayerNear","_ne
 
 			if (_noPlayerNear) then
 			{
-				_nearObj = nearestObjects [_objectPos,["ReammoBox","WeaponHolder","WeaponHolderBase"],((sizeOf (typeOf _x)) + 5)];
+				_nearObj = nearestObjects [_objectPos,["ReammoBox"],((sizeOf (typeOf _x)) + 5)];
 				{
 					deleteVehicle _x;
 					_deletedLoot = _deletedLoot + 1;

@@ -5,7 +5,7 @@ item0[] = {"init",0,250,-75.000000,-400.000000,25.000000,-350.000000,0.000000,"i
 item1[] = {"true",8,218,-75.000000,-175.000000,25.000000,-125.000000,0.000000,"true"};
 item2[] = {"waiting",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"waiting"};
 item3[] = {"time_sync",4,218,-275.000000,-25.000000,-175.000000,25.000000,1.000000,"time" \n "sync"};
-item4[] = {"sync_the_time",2,4346,-275.000000,50.000000,-175.000000,100.000000,0.000000,"sync" \n "the time"};
+item4[] = {"sync_the_time",2,250,-275.000000,50.000000,-175.000000,100.000000,0.000000,"sync" \n "the time"};
 item5[] = {"true",8,218,-75.000000,125.000000,25.000000,175.000000,0.000000,"true"};
 item6[] = {"general_cleanup",2,250,-75.000000,200.000000,25.000000,250.000000,0.000000,"general" \n "cleanup" \n "loop"};
 item7[] = {"",7,210,-304.000000,220.999985,-296.000000,229.000015,0.000000,""};
@@ -18,9 +18,9 @@ item13[] = {"update_objects",2,250,100.000000,50.000000,200.000000,100.000000,0.
 item14[] = {"need_update",4,218,100.000000,-25.000000,200.000000,25.000000,1.000000,"need update"};
 item15[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
 item16[] = {"cleanup_groups",4,218,-150.000000,-25.000000,-50.000000,25.000000,1.000000,"cleanup" \n "groups"};
-item17[] = {"group_cleanup",2,250,-150.000000,50.000000,-50.000000,100.000000,0.000000,"group" \n "cleanup"};
-item18[] = {"cleanup_vehicles",4,218,-25.000000,-25.000000,75.000000,25.000000,1.000000,"cleanup" \n "vehicles"};
-item19[] = {"vehicle_cleanup",2,250,-25.000000,50.000000,75.000000,100.000000,0.000000,"vehicle" \n "cleanup"};
+item17[] = {"group_cleanup",2,4346,-150.000000,50.000000,-50.000000,100.000000,0.000000,"group" \n "cleanup"};
+item18[] = {"cleanup",4,218,-25.000000,-25.000000,75.000000,25.000000,1.000000,"cleanup"};
+item19[] = {"cleanup_objects",2,250,-25.000000,50.000000,75.000000,100.000000,0.000000,"cleanup" \n "objects"};
 link0[] = {0,11};
 link1[] = {1,2};
 link2[] = {2,3};
@@ -45,8 +45,8 @@ link20[] = {16,17};
 link21[] = {17,5};
 link22[] = {18,19};
 link23[] = {19,5};
-globals[] = {25.000000,1,0,0,0,640,480,1,30,6316128,1,-419.782135,377.473389,510.243530,-212.601486,675,612,1};
-window[] = {0,-1,-1,-1,-1,940,182,1460,182,1,693};
+globals[] = {25.000000,1,0,0,0,640,480,1,30,6316128,1,-297.511841,255.202637,337.360535,-163.767258,675,612,1};
+window[] = {0,-1,-1,-1,-1,784,1706,2984,26,1,693};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -89,7 +89,7 @@ class FSM
           priority = 1.000000;
           to="update_objects";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"( (count needUpdate_objects) > 0 && (diag_tickTime -_lastNeedUpdate>40) )"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(( (count needUpdate_objects) > 0) && (diag_tickTime -_lastNeedUpdate> 5))"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastNeedUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -99,17 +99,17 @@ class FSM
           priority = 1.000000;
           to="group_cleanup";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupGroups) > 10)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupGroups) > 1)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastCleanupGroups = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "cleanup_vehicles">*/
-        class cleanup_vehicles
+        /*%FSM<LINK "cleanup">*/
+        class cleanup
         {
           priority = 1.000000;
-          to="vehicle_cleanup";
+          to="cleanup_objects";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupVehicles) > 5)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupVehicles) > 60)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastCleanupVehicles = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -236,10 +236,10 @@ class FSM
     class update_objects
     {
       name = "update_objects";
-      init = /*%FSM<STATEINIT""">*/"//diag_log format[""DEBUG: needUpdate_objects=%1"",needUpdate_objects];" \n
+      init = /*%FSM<STATEINIT""">*/"diag_log format[""DEBUG: needUpdate_objects=%1"",needUpdate_objects];" \n
        "{" \n
        "	needUpdate_objects = needUpdate_objects - [_x];" \n
-       "	[_x,""all""] call server_updateObject;" \n
+       "	[_x,""damage"",true] call server_updateObject;" \n
        "" \n
        "} forEach needUpdate_objects;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -270,7 +270,19 @@ class FSM
        "		// diag_log (""CLEANUP: DELETING A GROUP"");" \n
        "	};" \n
        "} forEach allGroups;" \n
-       ""/*%FSM</STATEINIT""">*/;
+       "" \n
+       "_safety = PVDZE_serverObjectMonitor;" \n
+       "" \n
+       "//Check for hackers" \n
+       " {" \n
+       "	if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
+       "		diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
+       "		(vehicle _x) setDamage 1;" \n
+       "		_x setDamage 1;" \n
+       "	 };" \n
+       " } forEach allUnits;" \n
+       "" \n
+       "PVDZE_serverObjectMonitor = _safety;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -287,22 +299,47 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "vehicle_cleanup">*/
-    class vehicle_cleanup
+    /*%FSM<STATE "cleanup_objects">*/
+    class cleanup_objects
     {
-      name = "vehicle_cleanup";
-      init = /*%FSM<STATEINIT""">*/"_safety = PVDZE_serverObjectMonitor;" \n
+      name = "cleanup_objects";
+      init = /*%FSM<STATEINIT""">*/"_weaponholders =  allMissionObjects ""ReammoBox"";" \n
+       "_fireplaces = allMissionObjects ""Land_Fire_DZ"";" \n
        "" \n
-       "//Check for hackers" \n
-       " {" \n
-       "	if(vehicle _x != _x && !(vehicle _x in _safety) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {" \n
-       "		diag_log (""CLEANUP: KILLING A HACKER "" + (name _x) + "" "" + str(_x) + "" IN "" + (typeOf vehicle _x));" \n
-       "		(vehicle _x) setDamage 1;" \n
-       "		_x setDamage 1;" \n
-       "	 };" \n
-       " } forEach allUnits;" \n
+       "_delQtyFP = 0;" \n
+       "_delQty = 0;" \n
        "" \n
-       "PVDZE_serverObjectMonitor = _safety;"/*%FSM</STATEINIT""">*/;
+       "diag_log (""CLEANUP:TOTAL "" + str(_qty) + "" LOOT BAGS"");" \n
+       "" \n
+       "_dateNow = (DateToNumber date);" \n
+       "_delQty = 0;" \n
+       "{" \n
+       "	if (local _x) then {" \n
+       "		_created = (_x getVariable [""created"",-0.1]);" \n
+       "		if (_created == -0.1) then {" \n
+       "			_x setVariable [""created"",_dateNow,false];" \n
+       "			_created = _dateNow;" \n
+       "		};" \n
+       "		_keep = _x getVariable [""permaLoot"",false];" \n
+       "		_age = (_dateNow - _created) * 525948;" \n
+       "		_nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [[""CAManBase"",""AllVehicles""], 130]);" \n
+       "		if ( (!_keep) && (_nearby==0) && (_age > 20)) then {" \n
+       "			deleteVehicle _x;" \n
+       "			_delQty = _delQty + 1;" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _weaponholders;" \n
+       "" \n
+       "{" \n
+       "	if (local _x) then {" \n
+       "		deleteVehicle _x;" \n
+       "		_delQtyFP = _delQtyFP + 1;" \n
+       "	};" \n
+       "} forEach _fireplaces;" \n
+       "" \n
+       "if (_delQty > 0 or _delQtyFP > 0) then {" \n
+       "	diag_log (format[""CLEANUP: Deleted %1 loot bags, %2 fireplaces"",_delQty,_delQtyFP]);" \n
+       "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

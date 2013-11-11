@@ -1,4 +1,4 @@
-private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finished","_animState","_isMedic","_hasHarvested","_hasKnifeBlunt","_humanity"];
+private [];
 
 player removeAction s_player_SurrenderedGear;
 
