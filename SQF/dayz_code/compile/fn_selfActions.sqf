@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private ["_isWreckBuilding","_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil","_hasFuelBarrelE","_hasHotwireKit"];
+private ["_isWreckBuilding","_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil","_hasFuelBarrelE","_hasHotwireKit","_player_SurrenderedGear","_isSurrendered"];
 
 if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 
@@ -307,6 +307,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	// logic vars for addactions
 	_player_butcher = false;
 	_player_studybody = false;
+	_player_SurrenderedGear = false;
 
 	// CURSOR TARGET NOT ALIVE
 	if (!_isAlive) then {
@@ -328,15 +329,12 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 
 		// gear access on surrendered player
 		if(_isMan and !_isZombie and !_isAnimal) then {
-			if (_cursorTarget getVariable ["DZE_Surrendered",false]) then {
-				if (s_player_SurrenderedGear < 0) then {
-					//s_player_SurrenderedGear = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",_cursorTarget, 1, true, true, "", ""];
-					s_player_SurrenderedGear = player addAction ["Gear",_text], (player action ["Gear", _cursorTarget]),_cursorTarget, 1, true, true, "", ""];
-				};
+			_isSurrendered = _cursorTarget getVariable ["DZE_Surrendered",false];
+
+			diag_log format["DZE_Surrendered: %1", _isSurrendered];
+			if (_isSurrendered) then {
+				_player_SurrenderedGear = true;
 			};
-		} else {
-			player removeAction s_player_SurrenderedGear;
-			s_player_SurrenderedGear = -1;
 		};
 	};
 
@@ -381,6 +379,15 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		if (_hasbottleitem and _hastinitem) then {
 			_player_boil = true;
 		};
+	};
+
+	if (_player_SurrenderedGear) then {
+		if (s_player_SurrenderedGear < 0) then {
+			s_player_SurrenderedGear = player addAction ["Gear", "\z\addons\dayz_code\actions\surrender_gear.sqf",_cursorTarget, 1, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_SurrenderedGear;
+		s_player_SurrenderedGear = -1;
 	};
 
 	//Fireplace Actions check
@@ -772,6 +779,9 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 
 	player removeAction s_player_checkGear;
 	s_player_checkGear = -1;
+
+	player removeAction s_player_SurrenderedGear;
+	s_player_SurrenderedGear = -1;
 
 	//Others
 	player removeAction s_player_forceSave;

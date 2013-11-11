@@ -1,4 +1,4 @@
-private ["_dikCode", "_handled"];
+private ["_dikCode","_handled","_primaryWeapon","_secondaryWeapon","_nearbyObjects","_nill","_shift","_ctrl","_alt"];
 _dikCode = 	_this select 1;
 
 _handled = false;
@@ -14,43 +14,37 @@ if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (diag_tickTim
 
 // surrender 
 if (_dikCode in actionKeys "Surrender") then {
-	
-	// Toggle on/off
-	if (DZE_Surrender) then {
-		DZE_Surrender = false;	
-
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "";
-
-		player setVariable ["DZE_Surrendered", false, true];
-
-	} else {
+	if (!DZE_Surrender) then {
 		DZE_Surrender = true;
-
 		// remove weaponns and ammo
-		if (primaryWeapon player != "") then {
-			player action ["dropWeapon",player, (primaryWeapon player)];
+		_primaryWeapon = primaryWeapon player;
+		_secondaryWeapon = secondaryWeapon player;
+		if (_primaryWeapon != "") then {
+			player action ["dropWeapon",player, _primaryWeapon];
 		};
-		if (secondaryWeapon player != "") then {	
-			player action ["dropWeapon",player, (secondaryWeapon player)];
+		if (_secondaryWeapon != "") then {	
+			player action ["dropWeapon",player, _secondaryWeapon];
 		};
-		
 		// set publicvariable that allows other player to access gear
 		player setVariable ["DZE_Surrendered", true, true];
-
 		// surrender animation
 		player playMove "AmovPercMstpSsurWnonDnon";
+
+		diag_log format["DZE_Surrender: %1", DZE_Surrender];
 	};
-	
-	r_interrupt = true
+	_handled = true;
 };
 
+if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
+if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
+if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
+if (_dikCode in actionKeys "MoveBack") then {r_interrupt = true};
 
-
-if (_dikCode in actionKeys "MoveForward") exitWith {r_interrupt = true};
-if (_dikCode in actionKeys "MoveLeft") exitWith {r_interrupt = true};
-if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true};
-if (_dikCode in actionKeys "MoveBack") exitWith {r_interrupt = true};
+if (DZE_Surrender and r_interrupt) then {
+	player setVariable ["DZE_Surrendered", false, true];
+	DZE_Surrender = false;	
+	diag_log format["DZE_Surrender2: %1", DZE_Surrender];
+};
 
 //Prevent exploit of drag body
 if ((_dikCode in actionKeys "Prone") and r_drag_sqf) exitWith { force_dropBody = true; };

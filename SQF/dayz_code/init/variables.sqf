@@ -244,6 +244,7 @@ dayz_resetSelfActions = {
 	s_player_downgrade_build	 =  -1;
 	s_player_towing		 =  -1;
 	s_halo_action =         -1;
+	s_player_SurrenderedGear = -1;
 };
 call dayz_resetSelfActions;
 
