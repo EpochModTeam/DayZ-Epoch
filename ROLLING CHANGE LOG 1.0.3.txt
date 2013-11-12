@@ -7,7 +7,7 @@ increase. @Armifer
 * [FIXED] Building on roads no longer allowed as it was intended. @dayz10k
 * [FIXED] Fixed expression error with vehicles/safes when loading a large inventory. @vbawol
 * [FIXED] No more bleeding trees, rocks, etc with melee weapons from DayZ CE 1.8. @vbawol
-* [FIXED] Variable added to player zombie vision to better support anit-hacks @Skaronator
+* [FIXED] Variable added to player zombie vision to better support anti-hacks @Skaronator
 * [FIXED] Lower chance to play fly sounds when near dead bodies. @vbawol
 * [FIXED] Documents now examine one at a time also fixes getting the same item for each document.
 * [FIXED] Server now only saves the first 20 magazines on disconnect to prevent saving items in overflow that can cause player inventory corruption. @vbawol
@@ -16,6 +16,7 @@ increase. @Armifer
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
 * [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
+* [ADDED] Surrender action now drops your weapons and ammo then you put your hands on your head. After you surrender other players can access your gear.
 * [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
 * [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
 * [ADDED] Halo jump option from a helicopter when above 500m. @zabn
