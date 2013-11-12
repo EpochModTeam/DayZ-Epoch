@@ -1847,17 +1847,6 @@ class _vehicle_741
 		PARENT="";
 	};
 };
-class _vehicle_746
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4053.5063, 11671.443]";
-		TYPE="RoadCone";
-		AZIMUT="1.0253659";
-		PARENT="";
-	};
-};
 class _vehicle_751
 {
 	objectType="vehicle";
@@ -1958,17 +1947,6 @@ class _vehicle_769
 		PARENT="";
 	};
 };
-class _vehicle_772
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4037.2805, 11673.531]";
-		TYPE="RoadCone";
-		AZIMUT="1.0253659";
-		PARENT="";
-	};
-};
 class _vehicle_775
 {
 	objectType="vehicle";
@@ -1977,26 +1955,6 @@ class _vehicle_775
 		POSITION="[4091.625, 11663.692, 6.1035156e-005]";
 		TYPE="Hhedgehog_concreteBig";
 		AZIMUT="-65.721718";
-		PARENT="";
-	};
-};
-class _vehicle_784
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[11455.539, 11341.255]";
-		TYPE="RoadCone";
-		PARENT="";
-	};
-};
-class _vehicle_790
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[1617.5127, 7773.2793]";
-		TYPE="RoadCone";
 		PARENT="";
 	};
 };
