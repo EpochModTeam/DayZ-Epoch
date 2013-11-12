@@ -22,7 +22,7 @@ _total_trades = floor (_qty / _qty_in);
 
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
-	cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 	TradeInprogress = false;
 };
 
@@ -110,7 +110,7 @@ for "_x" from 1 to _total_trades do {
 
 	} else {
 		_needed =  _qty_in - _qty;
-		cutText [format[(localize "str_epoch_player_185"),_needed,_textPartIn] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 	};
 
 	sleep 1;
