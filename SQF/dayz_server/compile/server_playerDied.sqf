@@ -80,10 +80,8 @@ if (typeName _minutes == "STRING") then
 {
 	_minutes = parseNumber _minutes;
 };
-	
-#ifdef DZE_SERVER_DEBUG_PKILL
+
 diag_log ("PDEATH: Player Died " + _playerID);
-#endif
 
 if (_characterID != "0") then 
 {
