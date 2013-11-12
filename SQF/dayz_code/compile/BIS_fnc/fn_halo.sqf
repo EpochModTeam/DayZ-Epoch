@@ -160,9 +160,11 @@ if (typename _this == typename objnull) then {
 					bis_fnc_halo_soundLoop = time;
 				};
 
+				if(_fpsCoef != 0) then {
 				//--- Effects
-				bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.02,0.02,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef];
-				bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
+					bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.02,0.02,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef];
+					bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
+				};
 				sleep 0.01;
 			};
 			//--- End
