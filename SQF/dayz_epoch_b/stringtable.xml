@@ -5284,55 +5284,5 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_KEY_BLACK">
-		  <Original>Black Key</Original>
-		  <English>Black Key</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_KEY_GREEN">
-		  <Original>Green Key</Original>
-		  <English>Green Key</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_KEY_BLUE">
-		  <Original>Blue Key</Original>
-		  <English>Blue Key</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_KEY_YELLOW">
-		  <Original>Yellow Key</Original>
-		  <English>Yellow Key</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_KEY_RED">
-		  <Original>Red Key</Original>
-		  <English>Red Key</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
 	</Package>
 </Project>
