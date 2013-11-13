@@ -16,17 +16,18 @@ increase. @Armifer
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
 * [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
-* [ADDED] Surrender action now drops your weapons and ammo then you put your hands on your head. While surrendered other players can access your gear.
+* [ADDED] Surrender action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
 * [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
 * [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
-* [ADDED] Halo jump option from a helicopter when above 500m. @zabn
+* [ADDED] Halo jump option from a helicopter when above 400m. @zabn
 * [ADDED] Localization support added. @zabn
-* [ADDED] Added/corrected dutch language and some typo's @JoSchaap
+* [ADDED] Added/corrected dutch language and fixed some typo's. @JoSchaap
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
 * [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
 * [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
 * [ADDED] Tag friendly system now stores your 5 most recent friends with your life. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
 * [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
+* [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
 * [CHANGED] Removed 12m restriction of other players when buying and selling vehicles. Added requirement that you must be the last to get in the drivers seat to sell the vehicle.
 * [CHANGED] Opening supply crate now returns a empty supply crate. @dayz10k
 * [CHANGED] Updated Makarov, MakarovSD, and M1911 damage settings to the same as DayZ CE 1.8. @vbawol

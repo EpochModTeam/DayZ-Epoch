@@ -317,6 +317,10 @@ if (!isDedicated) then {
 		};
 	};
 	
+	dze_surrender_off = {
+		player setVariable ["DZE_Surrendered", false, true];
+		DZE_Surrender = false;	
+	};
 
 	gear_ui_init = {
 		private["_control","_parent","_menu","_dspl","_grpPos"];

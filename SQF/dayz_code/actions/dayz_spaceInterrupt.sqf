@@ -1,4 +1,4 @@
-private ["_dikCode","_handled","_primaryWeapon","_secondaryWeapon","_nearbyObjects","_nill","_shift","_ctrl","_alt"];
+private ["_dikCode","_handled","_primaryWeapon","_secondaryWeapon","_nearbyObjects","_nill","_shift","_ctrl","_alt","_dropPrimary","_dropSecondary","_iItem","_removed","_iPos","_radius","_item"];
 _dikCode = 	_this select 1;
 
 _handled = false;
@@ -14,37 +14,56 @@ if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (diag_tickTim
 
 // surrender 
 if (_dikCode in actionKeys "Surrender") then {
-	if (!DZE_Surrender) then {
+	if (!DZE_Surrender and !(player isKindOf  "PZombie_VB")) then {
 		DZE_Surrender = true;
-		// remove weaponns and ammo
+		_dropPrimary = false;
+		_dropSecondary = false;
+
 		_primaryWeapon = primaryWeapon player;
-		_secondaryWeapon = secondaryWeapon player;
-		if (_primaryWeapon != "") then {
-			player action ["dropWeapon",player, _primaryWeapon];
+		if (_primaryWeapon != "") then {_dropPrimary = true;};
+		_secondaryWeapon = "";
+		{
+			if ((getNumber (configFile >> "CfgWeapons" >> _x >> "Type")) == 2) exitWith {
+					_secondaryWeapon = _x;
+			};
+		} forEach (weapons player);
+		if (_secondaryWeapon != "") then {_dropSecondary = true;};
+
+		if (_dropPrimary or _dropSecondary) then {
+			player playActionNow "PutDown";
+			_iPos = getPosATL player;
+			_radius = 1;
+			_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+			_item setposATL _iPos;
+			if (_dropPrimary) then {
+				_iItem = _primaryWeapon;
+				_removed = ([player,_iItem,1] call BIS_fnc_invRemove);
+				if (_removed == 1) then {
+					_item addWeaponCargoGlobal [_iItem,1];
+				};
+			};
+			if (_dropSecondary) then {
+				_iItem = _secondaryWeapon;
+				_removed = ([player,_iItem,1] call BIS_fnc_invRemove);
+				if (_removed == 1) then {
+					_item addWeaponCargoGlobal [_iItem,1];
+				};
+			};
+			player reveal _item;
 		};
-		if (_secondaryWeapon != "") then {	
-			player action ["dropWeapon",player, _secondaryWeapon];
-		};
+
 		// set publicvariable that allows other player to access gear
 		player setVariable ["DZE_Surrendered", true, true];
 		// surrender animation
 		player playMove "AmovPercMstpSsurWnonDnon";
-
-		diag_log format["DZE_Surrender: %1", DZE_Surrender];
 	};
 	_handled = true;
 };
 
-if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
-if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
-if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
-if (_dikCode in actionKeys "MoveBack") then {r_interrupt = true};
-
-if (DZE_Surrender and r_interrupt) then {
-	player setVariable ["DZE_Surrendered", false, true];
-	DZE_Surrender = false;	
-	diag_log format["DZE_Surrender2: %1", DZE_Surrender];
-};
+if (_dikCode in actionKeys "MoveForward") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
+if (_dikCode in actionKeys "MoveLeft") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
+if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
+if (_dikCode in actionKeys "MoveBack") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
 
 //Prevent exploit of drag body
 if ((_dikCode in actionKeys "Prone") and r_drag_sqf) exitWith { force_dropBody = true; };
