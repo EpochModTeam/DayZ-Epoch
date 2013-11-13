@@ -4,8 +4,8 @@
 item0[] = {"init",0,250,-75.000000,-400.000000,25.000000,-350.000000,0.000000,"init"};
 item1[] = {"true",8,218,-75.000000,-175.000000,25.000000,-125.000000,0.000000,"true"};
 item2[] = {"waiting",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"waiting"};
-item3[] = {"time_sync",4,218,-275.000000,-25.000000,-175.000000,25.000000,1.000000,"time" \n "sync"};
-item4[] = {"sync_the_time",2,250,-275.000000,50.000000,-175.000000,100.000000,0.000000,"sync" \n "the time"};
+item3[] = {"time_sync",4,218,-325.000000,-25.000000,-225.000000,25.000000,1.000000,"time" \n "sync"};
+item4[] = {"sync_the_time",2,250,-325.000000,50.000000,-225.000000,100.000000,0.000000,"sync" \n "the time"};
 item5[] = {"true",8,218,-75.000000,125.000000,25.000000,175.000000,0.000000,"true"};
 item6[] = {"general_cleanup",2,250,-75.000000,200.000000,25.000000,250.000000,0.000000,"general" \n "cleanup" \n "loop"};
 item7[] = {"",7,210,-304.000000,220.999985,-296.000000,229.000015,0.000000,""};
@@ -14,39 +14,42 @@ item9[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
 item10[] = {"",7,210,221.000000,146.000000,229.000000,154.000000,0.000000,""};
 item11[] = {"initialized",4,218,-75.000000,-325.000000,25.000000,-275.000000,0.000000,"initialized"};
 item12[] = {"prepare",2,250,-75.000000,-250.000000,25.000000,-200.000000,0.000000,"prepare"};
-item13[] = {"update_objects",2,250,100.000000,50.000000,200.000000,100.000000,0.000000,"update objects"};
-item14[] = {"need_update",4,218,100.000000,-25.000000,200.000000,25.000000,1.000000,"need update"};
-item15[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
-item16[] = {"cleanup_groups",4,218,-150.000000,-25.000000,-50.000000,25.000000,1.000000,"cleanup" \n "groups"};
-item17[] = {"group_cleanup",2,4346,-150.000000,50.000000,-50.000000,100.000000,0.000000,"group" \n "cleanup"};
-item18[] = {"cleanup",4,218,-25.000000,-25.000000,75.000000,25.000000,1.000000,"cleanup"};
-item19[] = {"cleanup_objects",2,250,-25.000000,50.000000,75.000000,100.000000,0.000000,"cleanup" \n "objects"};
+item13[] = {"update_objects",2,250,175.000000,50.000000,275.000000,100.000000,0.000000,"update objects"};
+item14[] = {"need_update",4,218,175.000000,-25.000000,275.000000,25.000000,1.000000,"need update"};
+item15[] = {"cleanup_groups",4,218,-200.000000,-25.000000,-100.000000,25.000000,1.000000,"cleanup" \n "groups"};
+item16[] = {"group_cleanup",2,250,-200.000000,50.000000,-100.000000,100.000000,0.000000,"group" \n "cleanup"};
+item17[] = {"cleanup_null",4,218,50.000000,-25.000000,150.000000,25.000000,1.000000,"cleanup" \n "null"};
+item18[] = {"cleanup_null",2,250,50.000000,50.000000,150.000000,100.000000,0.000000,"cleanup" \n "null"};
+item19[] = {"cleanup",4,218,-75.000000,-25.000000,25.000000,25.000000,1.000000,"cleanup"};
+item20[] = {"cleanup_objects",2,4346,-75.000000,50.000000,25.000000,100.000000,0.000000,"cleanup" \n "objects"};
 link0[] = {0,11};
 link1[] = {1,2};
 link2[] = {2,3};
 link3[] = {2,9};
 link4[] = {2,14};
-link5[] = {2,16};
-link6[] = {2,18};
-link7[] = {3,4};
-link8[] = {4,5};
-link9[] = {5,6};
-link10[] = {6,7};
-link11[] = {7,8};
-link12[] = {8,1};
-link13[] = {9,10};
-link14[] = {9,15};
+link5[] = {2,15};
+link6[] = {2,17};
+link7[] = {2,19};
+link8[] = {3,4};
+link9[] = {4,5};
+link10[] = {5,6};
+link11[] = {6,7};
+link12[] = {7,8};
+link13[] = {8,1};
+link14[] = {9,10};
 link15[] = {10,5};
 link16[] = {11,12};
 link17[] = {12,1};
 link18[] = {13,5};
 link19[] = {14,13};
-link20[] = {16,17};
-link21[] = {17,5};
-link22[] = {18,19};
-link23[] = {19,5};
-globals[] = {25.000000,1,0,0,0,640,480,1,30,6316128,1,-297.511841,255.202637,337.360535,-163.767258,675,612,1};
-window[] = {0,-1,-1,-1,-1,784,1706,2984,26,1,693};
+link20[] = {15,16};
+link21[] = {16,5};
+link22[] = {17,18};
+link23[] = {18,5};
+link24[] = {19,20};
+link25[] = {20,5};
+globals[] = {25.000000,1,0,0,0,640,480,1,33,6316128,1,-352.091705,309.781433,349.997772,-250.100601,675,612,1};
+window[] = {0,-1,-1,-1,-1,888,1810,3088,130,1,693};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -101,6 +104,16 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupGroups) > 1)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastCleanupGroups = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "cleanup_null">*/
+        class cleanup_null
+        {
+          priority = 1.000000;
+          to="cleanup_null";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupNull) > 300)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastCleanupNull = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "cleanup">*/
@@ -215,6 +228,7 @@ class FSM
        "_lastNeedUpdate = diag_tickTime;" \n
        "_lastCleanupVehicles = diag_tickTime;" \n
        "_lastCleanupGroups = diag_tickTime;" \n
+       "_lastCleanupNull = diag_tickTime;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -299,17 +313,48 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
+    /*%FSM<STATE "cleanup_null">*/
+    class cleanup_null
+    {
+      name = "cleanup_null";
+      init = /*%FSM<STATEINIT""">*/"_delQtyNull = 0;" \n
+       "{" \n
+       "	if (isNull _x) then {" \n
+       "		_x call dayz_perform_purge;" \n
+       "		_delQtyNull = _delQtyNull + 1;" \n
+       "	};" \n
+       "} forEach (allMissionObjects """");" \n
+       "" \n
+       "if (_delQtyNull > 0) then {" \n
+       "	diag_log (format[""CLEANUP: Deleted %1 null objects"",_delQtyNull]);" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
     /*%FSM<STATE "cleanup_objects">*/
     class cleanup_objects
     {
       name = "cleanup_objects";
       init = /*%FSM<STATEINIT""">*/"_weaponholders =  allMissionObjects ""ReammoBox"";" \n
        "_fireplaces = allMissionObjects ""Land_Fire_DZ"";" \n
+       "_animals = allMissionObjects ""CAAnimalBase""; " \n
        "" \n
        "_delQtyFP = 0;" \n
        "_delQty = 0;" \n
-       "" \n
-       "diag_log (""CLEANUP:TOTAL "" + str(_qty) + "" LOOT BAGS"");" \n
+       "_delQtyAnimal = 0;" \n
        "" \n
        "_dateNow = (DateToNumber date);" \n
        "_delQty = 0;" \n
@@ -337,8 +382,15 @@ class FSM
        "	};" \n
        "} forEach _fireplaces;" \n
        "" \n
-       "if (_delQty > 0 or _delQtyFP > 0) then {" \n
-       "	diag_log (format[""CLEANUP: Deleted %1 loot bags, %2 fireplaces"",_delQty,_delQtyFP]);" \n
+       "{" \n
+       "	if (local _x) then {" \n
+       "		_x call dayz_perform_purge;" \n
+       "		_delQtyAnimal = _delQtyAnimal + 1;" \n
+       "	};" \n
+       "} forEach _animals;" \n
+       "" \n
+       "if (_delQty > 0 or _delQtyFP > 0 or _delQtyAnimal > 0) then {" \n
+       "	diag_log (format[""CLEANUP: Deleted %1 loot bags, %2 fireplaces, %3 animals"",_delQty,_delQtyFP,_delQtyAnimal]);" \n
        "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
