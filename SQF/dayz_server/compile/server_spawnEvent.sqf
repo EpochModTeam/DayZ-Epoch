@@ -62,6 +62,9 @@ while {true} do {
 
 			_time = diag_tickTime;
 			if ((_time - zero_weather) > 300) then {
+				
+				diag_log format["DEBUG FPS : %1 OBJS: %2", diag_fps,(count (allMissionObjects ""))];
+
 				call server_weather;
 				zero_weather = _time;
 			};
