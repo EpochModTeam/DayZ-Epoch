@@ -32,8 +32,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Isla Duala DayZ Epoch";
-		briefingDescription="Isla Duala DayZ Epoch Private Server";
+		briefingName="DayZ Epoch Isla Duala";
+		briefingDescription="DayZ Epoch Isla Duala Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
