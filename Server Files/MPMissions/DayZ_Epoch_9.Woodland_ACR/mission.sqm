@@ -29,8 +29,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Woodland ACR DayZ_Epoch";
-		briefingDescription="Woodland ACR DayZ_Epoch Private Server";
+		briefingName="DayZ Epoch Woodland ACR";
+		briefingDescription="DayZ Epoch Woodland ACR Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
