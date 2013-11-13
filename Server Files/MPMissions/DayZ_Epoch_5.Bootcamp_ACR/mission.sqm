@@ -29,8 +29,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Bootcamp ACR DayZ_Epoch";
-		briefingDescription="Bootcamp ACR DayZ_Epoch Private Server";
+		briefingName="DayZ Epoch Bootcamp ACR";
+		briefingDescription="DayZ Epoch Bootcamp ACR Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
