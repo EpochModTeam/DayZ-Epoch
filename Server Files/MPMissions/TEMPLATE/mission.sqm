@@ -26,8 +26,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Proving Grounds PMC DayZ_Epoch";
-		briefingDescription="Proving Grounds PMC DayZ_Epoch Private Server";
+		briefingName="DayZ Epoch Proving Grounds PMC";
+		briefingDescription="DayZ Epoch Proving Grounds PMC Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
