@@ -559,6 +559,7 @@ if(!isDedicated) then {
 	dayz_bodyMonitor = [];
 	
 	// weather control var
+	zeroPreviousWeather = [0,0,[0,0],0];
 	zeroCurrentWeather = [0,0,[0,0],0];
 	
 	dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
