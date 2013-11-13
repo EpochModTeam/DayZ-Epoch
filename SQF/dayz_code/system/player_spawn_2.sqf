@@ -33,7 +33,7 @@ while {true} do {
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
 	
-	_saveTime = (playersNumber west * 2) + 10;
+	_saveTime = (playersNumber west * 4) + 10;
 		
 	//reset position
 	_randomSpot = true;
