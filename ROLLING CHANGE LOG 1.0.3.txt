@@ -16,7 +16,7 @@ increase. @Armifer
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
 * [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
-* [ADDED] Surrender action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
+* [ADDED] Surrender (options > controls > "Surrender") action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
 * [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
 * [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
 * [ADDED] Halo jump option from a helicopter when above 400m. @zabn
