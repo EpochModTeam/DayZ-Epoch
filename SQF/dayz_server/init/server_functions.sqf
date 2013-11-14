@@ -694,7 +694,6 @@ server_spawnCleanFire = {
 server_spawnCleanLoot = {
 	_delQty = 0;
 	_timeNow = diag_tickTime;
-	_delQty = 0;
 	{
 		if (local _x) then {
 			_keep = _x getVariable ["permaLoot",false];
@@ -714,6 +713,9 @@ server_spawnCleanLoot = {
 		};
 		sleep 0.001;
 	} forEach (allMissionObjects "ReammoBox");
+	if (_delQty > 0) then {
+		diag_log (format["CLEANUP: Deleted %1 Loot Piles",_delQty]);
+	};
 };
 
 server_spawnCleanAnimals = {
