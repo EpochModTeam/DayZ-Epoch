@@ -1308,6 +1308,16 @@ class CfgMagazines {
 		displayName = "Fuel Barrel (Empty)";
 		picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
 		descriptionShort = "210 litres of fuel per barrel (Empty)";
+		class ItemActions {
+                        class Crafting
+                        {
+                                text = "$STR_EPOCH_PLAYER_2xx";
+                                script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+                                neednearby[] = {"fire"};
+                                requiretools[] = {"ItemToolbox","ItemHatchet"};
+                                output[] = {{"ItemFireBarrel",1}};
+                                input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodLumber",4}};
+                        };
 	};
 	class ItemJerrycan: CA_Magazine
 	{
