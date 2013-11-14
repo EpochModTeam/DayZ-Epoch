@@ -2950,7 +2950,7 @@ class CfgVehicles {
 		offset[] = {0,2.5,0};
 		displayName = "Light Pole";
 		vehicleClass = "Fortifications";
-		maintainBuilding[] = {{"ItemPole",1}};
+		maintainBuilding[] = {{"ItemLightBulb",1}};
 	};
 	class WoodGate_DZ: BuiltItems
 	{
