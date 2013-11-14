@@ -1319,6 +1319,27 @@ class CfgMagazines {
                                 input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodLumber",4}};
                         };
 	};
+	class ItemFireBarrel_kit: CA_Magazine
+        {
+                scope = 2;
+                count = 1;
+                type = 256;
+                displayName = "Fire Barrel Kit";
+                descriptionShort = "Fire Barrel";
+                model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+                picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+                weight = 25;
+                class ItemActions
+                {
+                        class Build
+                        {
+                                text = "$STR_ACTIONS_BUILD";
+                                script = "spawn player_build;";
+                                require[] = {"ItemToolbox"};
+                                create = "FireBarrel_DZ";
+                        };
+                };
+        };
 	class ItemJerrycan: CA_Magazine
 	{
 		scope = 2;
