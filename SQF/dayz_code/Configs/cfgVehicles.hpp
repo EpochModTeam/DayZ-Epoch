@@ -1926,7 +1926,22 @@ class CfgVehicles {
 			};
 		};
 	};
-
+	class Land_Fire_barrel;
+	class FireBarrel_DZ: Land_Fire_barrel
+        {
+                scope = 2;
+                destrType = "DestructNo";
+                cost = 100;
+                model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+                icon = "\ca\data\data\Unknown_object.paa";
+                offset[] = {0,1.5,0.5};
+                mapSize = 2;
+                armor = 400;
+                displayName = "Fire Barrel";
+                vehicleClass = "Fortifications";
+                constructioncount = 3;
+                removeoutput[] = {{"ItemFuelBarrelEmpty",1}};
+        };
 
 	// modular
 	class MetalFloor_DZ: ModularItems
@@ -2935,6 +2950,7 @@ class CfgVehicles {
 		offset[] = {0,2.5,0};
 		displayName = "Light Pole";
 		vehicleClass = "Fortifications";
+		maintainBuilding[] = {{"ItemPole",1}};
 	};
 	class WoodGate_DZ: BuiltItems
 	{

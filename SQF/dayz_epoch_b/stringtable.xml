@@ -4844,16 +4844,6 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_232">
-		  <Original>Craft Wood Floor</Original>
-		  <English>Craft Wood Floor</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch>Creëer houten vloer</Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_233">
 		  <Original>Craft Stair Supports</Original>
 		  <English>Craft Stair Supports</English>
@@ -5284,5 +5274,15 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_276">
+                 <Original>Craft Fire Barrel</Original>
+                 <English>Craft Fire Barrel</English>
+                 <German></German>
+                 <Russian></Russian>
+                 <Spanish></Spanish>
+                 <Dutch></Dutch>
+                 <French></French>
+                 <Czech></Czech>
+                </Key>
 	</Package>
 </Project>
