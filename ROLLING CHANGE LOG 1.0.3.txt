@@ -16,7 +16,7 @@ increase. @Armifer
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
 * [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
-* [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and right click next to your vehicle.
+* [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle.
 * [ADDED] Added Player Names that killed Objects to diag_log @Torndeco
 * [ADDED] Surrender (options > controls > "Surrender") action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
 * [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
