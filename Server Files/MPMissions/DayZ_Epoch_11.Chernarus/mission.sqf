@@ -1432,15 +1432,6 @@ if (true) then
   _this setPos [11443.267, 11338.436];
 };
 
-_vehicle_746 = objNull;
-if (true) then
-{
-  _this = createVehicle ["RoadCone", [4053.5063, 11671.443], [], 0, "CAN_COLLIDE"];
-  _vehicle_746 = _this;
-  _this setDir 1.0253659;
-  _this setPos [4053.5063, 11671.443];
-};
-
 _vehicle_751 = objNull;
 if (true) then
 {
@@ -1522,15 +1513,6 @@ if (true) then
   _this setPos [4037.304, 11673.5];
 };
 
-_vehicle_772 = objNull;
-if (true) then
-{
-  _this = createVehicle ["RoadCone", [4037.2805, 11673.531], [], 0, "CAN_COLLIDE"];
-  _vehicle_772 = _this;
-  _this setDir 1.0253659;
-  _this setPos [4037.2805, 11673.531];
-};
-
 _vehicle_775 = objNull;
 if (true) then
 {
@@ -1538,22 +1520,6 @@ if (true) then
   _vehicle_775 = _this;
   _this setDir -65.721718;
   _this setPos [4091.625, 11663.692, 6.1035156e-005];
-};
-
-_vehicle_784 = objNull;
-if (true) then
-{
-  _this = createVehicle ["RoadCone", [11455.539, 11341.255], [], 0, "CAN_COLLIDE"];
-  _vehicle_784 = _this;
-  _this setPos [11455.539, 11341.255];
-};
-
-_vehicle_790 = objNull;
-if (true) then
-{
-  _this = createVehicle ["RoadCone", [1617.5127, 7773.2793], [], 0, "CAN_COLLIDE"];
-  _vehicle_790 = _this;
-  _this setPos [1617.5127, 7773.2793];
 };
 
 _vehicle_792 = objNull;
