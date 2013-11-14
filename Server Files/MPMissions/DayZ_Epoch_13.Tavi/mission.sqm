@@ -29,8 +29,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="tavi DayZ_Epoch";
-		briefingDescription="tavi DayZ_Epoch Private Server";
+		briefingName="DayZ Epoch Taviana";
+		briefingDescription="DayZ Epoch Taviana Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;

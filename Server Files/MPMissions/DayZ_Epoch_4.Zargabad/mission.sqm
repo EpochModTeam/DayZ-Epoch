@@ -30,8 +30,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Zargabad DayZ Epoch";
-		briefingDescription="Zargabad DayZ Epoch Private Server";
+		briefingName="DayZ Epoch Zargabad";
+		briefingDescription="DayZ Epoch Zargabad Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;

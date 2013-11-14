@@ -32,8 +32,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="Namalsk DayZ Epoch";
-		briefingDescription="Namalsk DayZ Epoch Private Server";
+		briefingName="DayZ Epoch Namalsk";
+		briefingDescription="DayZ Epoch Namalsk Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
