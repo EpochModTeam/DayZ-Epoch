@@ -82,13 +82,14 @@ vehicle_handleServerKilled = {
 };
 
 object_handleServerKilled = {
-	private["_unit","_objectID","_objectUID"];
+	private["_unit","_objectID","_objectUID","_killer"];
 	_unit = _this select 0;
+	_killer = _this select 1;
 	
 	_objectID =	 _unit getVariable ["ObjectID","0"];
 	_objectUID = _unit getVariable ["ObjectUID","0"];
 		
-	[_objectID,_objectUID] call server_deleteObj;
+	[_objectID,_objectUID,_killer] call server_deleteObj;
 	
 	_unit removeAllMPEventHandlers "MPKilled";
 	_unit removeAllEventHandlers "Killed";
