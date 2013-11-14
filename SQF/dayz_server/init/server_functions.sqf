@@ -201,6 +201,7 @@ if(isnil "DynamicVehicleArea") then {
 MarkerPosition = getMarkerPos "center";
 RoadList = MarkerPosition nearRoads DynamicVehicleArea;
 
+// Very taxing !!! but only on first startup
 BuildingList = [];
 {
 	if (isClass (configFile >> "CfgBuildingLoot" >> (typeOf _x))) then
@@ -485,6 +486,24 @@ if(isnil "DynamicVehicleFuelHigh") then {
 	DynamicVehicleFuelHigh = 100;
 };
 
+if(isnil "DZE_DiagFpsSlow") then {
+	DZE_DiagFpsSlow = false;
+};
+if(isnil "DZE_DiagFpsFast") then {
+	DZE_DiagFpsFast = false;
+};
+if(isnil "DZE_DiagVerbose") then {
+	DZE_DiagVerbose = false;
+};
+
+dze_diag_fps = {
+	if(DZE_DiagVerbose) then {
+		diag_log format["DEBUG FPS : %1 OBJECTS: %2 : PLAYERS: %3", diag_fps,(count (allMissionObjects "")),(playersNumber west)];
+	} else {
+		diag_log format["DEBUG FPS : %1", diag_fps];
+	};
+};
+
 // Damage generator function
 generate_new_damage = {
 	private ["_damage"];
@@ -592,52 +611,130 @@ dayz_perform_purge = {
 	_this = nil;
 };
 
-server_cleanDead = {
+server_timeSync = {
+	//Send request
+	_key = "CHILD:307:";
+	_result = _key call server_hiveReadWrite;
+	_outcome = _result select 0;
+	if(_outcome == "PASS") then {
+		_date = _result select 1; 
+		
+		if(dayz_fullMoonNights) then {
+			//date setup
+			_year = _date select 0;
+			_month = _date select 1;
+			_day = _date select 2;
+			_hour = _date select 3;
+			_minute = _date select 4;
+		
+			//Force full moon nights
+			_date = [2013,8,3,_hour,_minute];
+		};
+
+		setDate _date;
+		PVDZE_plr_SetDate = _date;
+		publicVariable "PVDZE_plr_SetDate";
+		diag_log ("TIME SYNC: Local Time set to " + str(_date));	
+	};
+};
+
+// must spawn these 
+server_spawncleanDead = {
 	private ["_deathTime"];
 	{
 		if (local _x) then {
-
 			if (_x isKindOf "zZombie_Base") then
 			{
 				_x call dayz_perform_purge;
+				sleep 0.1;
 			};
 			if (_x isKindOf "CAManBase") then {
 				_deathTime = _x getVariable ["processedDeath", diag_tickTime];
 				if (diag_tickTime - _deathTime > 3600) then {
 					_x call dayz_perform_purge;
+					sleep 0.1;
 				};
 			};
 		};
+		sleep 0.001;
 	} forEach allDead;
 };
 
-server_cleanLoot =
-{
-private ["_deletedLoot","_startTime","_looted","_objectPos","_noPlayerNear","_nearObj","_endTime"];
-
-	_deletedLoot = 0;
-	_startTime = diag_tickTime;
-
+server_spawnCleanNull = {
+	_delQtyNull = 0;
 	{
-		_looted = (_x getVariable ["looted",-0.1]);
-		if (_looted != -0.1) then
-		{
-			_objectPos = getPosATL _x;
-			_noPlayerNear = {isPlayer _x} count (_objectPos nearEntities ["CAManBase",35]) == 0;
+		if (isNull _x) then {
+			_x call dayz_perform_purge;
+			sleep 0.1;
+			_delQtyNull = _delQtyNull + 1;
+		};
+		sleep 0.001;
+	} forEach (allMissionObjects "");
 
-			if (_noPlayerNear) then
-			{
-				_nearObj = nearestObjects [_objectPos,["ReammoBox"],((sizeOf (typeOf _x)) + 5)];
-				{
+	if (_delQtyNull > 0) then {
+		diag_log (format["CLEANUP: Deleted %1 null objects",_delQtyNull]);
+	};
+};
+
+server_spawnCleanFire = {
+	_delQtyFP = 0;
+	{
+		if (local _x) then {
+			deleteVehicle _x;
+			sleep 0.1;
+			_delQtyFP = _delQtyFP + 1;
+		};
+		sleep 0.001;
+	} forEach (allMissionObjects "Land_Fire_DZ");
+	if (_delQtyFP > 0) then {
+		diag_log (format["CLEANUP: Deleted %1 fireplaces",_delQtyNull]);
+	};
+};
+
+server_spawnCleanLoot = {
+	_delQty = 0;
+	_timeNow = diag_tickTime;
+	_delQty = 0;
+	{
+		if (local _x) then {
+			_keep = _x getVariable ["permaLoot",false];
+			if (!_keep) then {
+				_created = _x getVariable ["created",-0.1];
+				if (_created == -0.1) then {
+					_x setVariable ["created",_timeNow,false];
+					_created = _timeNow;
+				};
+				_nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
+				if ((_nearby==0) && (_timeNow - _created > 1200)) then {
 					deleteVehicle _x;
-					_deletedLoot = _deletedLoot + 1;
-				} forEach _nearObj;
-				_x setVariable ["looted",-0.1,true];
+					sleep 0.1;
+					_delQty = _delQty + 1;
+				};				
 			};
 		};
-	} forEach BuildingList;
+		sleep 0.001;
+	} forEach (allMissionObjects "ReammoBox");
+};
 
-	_endTime = diag_tickTime;
+server_spawnCleanAnimals = {
+	_delQtyAnimal = 0;
+	{
+		if (local _x) then {
+			_x call dayz_perform_purge;
+			sleep 0.1;
+			_delQtyAnimal = _delQtyAnimal + 1;
+		};
+		sleep 0.001;
+	} forEach (allMissionObjects "CAAnimalBase");
+	if (_delQtyAnimal > 0) then {
+		diag_log (format["CLEANUP: Deleted %1 Animals",_delQtyAnimal]);
+	};
+};
 
-	diag_log (format["CLEANUP: DELETED %1 ITEMS, RUNTIME: %2",_deletedLoot,(_endTime - _startTime)]);
+server_spawnUpdateObjects = {
+	//diag_log format["DEBUG: needUpdate_objects=%1",needUpdate_objects];
+{
+	needUpdate_objects = needUpdate_objects - [_x];
+	[_x,"damage",true] call server_updateObject;
+} forEach needUpdate_objects;
 };
