@@ -265,6 +265,7 @@ class Volha_1_TK_CIV_EP1: Volha_TK_CIV_Base_EP1
 	scope = 2;
 	accuracy = 1000;
 	displayname = "GAZ (blue)";
+	upgradeVehicle = {"Volha_1_TK_CIV_EP1_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class Volha_2_TK_CIV_EP1: Volha_TK_CIV_Base_EP1
 {
@@ -273,6 +274,7 @@ class Volha_2_TK_CIV_EP1: Volha_TK_CIV_Base_EP1
 	displayname = "GAZ (grey)";
 	hiddenSelections[] = {"Camo1"};
 	hiddenSelectionsTextures[] = {"ca\wheeled_E\Volha\Data\Volha_Gray_ECIV_CO"};
+	upgradeVehicle = {"Volha_2_TK_CIV_EP1_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class VolhaLimo_TK_CIV_EP1: Volha_TK_CIV_Base_EP1
 {
@@ -281,6 +283,7 @@ class VolhaLimo_TK_CIV_EP1: Volha_TK_CIV_Base_EP1
 	displayname = "GAZ Limo";
 	hiddenSelections[] = {"Camo1"};
 	hiddenSelectionsTextures[] = {"ca\wheeled_E\Volha\Data\Volha_Black_ECIV_CO"};
+	upgradeVehicle = {"VolhaLimo_TK_CIV_EP1_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 
 // Performance 1
@@ -288,22 +291,25 @@ class VolhaLimo_TK_CIV_EP1_DZE1: VolhaLimo_TK_CIV_EP1
 {
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
+	upgradeVehicle = {"VolhaLimo_TK_CIV_EP1_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class Volha_1_TK_CIV_EP1_DZE1: Volha_1_TK_CIV_EP1
 {
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
+	upgradeVehicle = {"Volha_1_TK_CIV_EP1_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class Volha_2_TK_CIV_EP1_DZE1: Volha_2_TK_CIV_EP1
 {
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
+	upgradeVehicle = {"Volha_2_TK_CIV_EP1_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
-// Armmor 2
+// Armor 2
 class VolhaLimo_TK_CIV_EP1_DZE2: VolhaLimo_TK_CIV_EP1_DZE1
 {
 	armor = 50; // car 20
-
+	upgradeVehicle = {"VolhaLimo_TK_CIV_EP1_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
 	class HitPoints: HitPoints
 	{
 		class HitLFWheel: HitLFWheel
@@ -359,7 +365,7 @@ class VolhaLimo_TK_CIV_EP1_DZE2: VolhaLimo_TK_CIV_EP1_DZE1
 class Volha_1_TK_CIV_EP1_DZE2: Volha_1_TK_CIV_EP1_DZE1
 {
 	armor = 50; // car 20
-
+	upgradeVehicle = {"Volha_1_TK_CIV_EP1_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
 	class HitPoints: HitPoints
 	{
 		class HitLFWheel: HitLFWheel
@@ -415,7 +421,7 @@ class Volha_1_TK_CIV_EP1_DZE2: Volha_1_TK_CIV_EP1_DZE1
 class Volha_2_TK_CIV_EP1_DZE2: Volha_2_TK_CIV_EP1_DZE1
 {
 	armor = 50; // car 20
-
+	upgradeVehicle = {"Volha_2_TK_CIV_EP1_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
 	class HitPoints: HitPoints
 	{
 		class HitLFWheel: HitLFWheel
@@ -474,18 +480,21 @@ class VolhaLimo_TK_CIV_EP1_DZE3: VolhaLimo_TK_CIV_EP1_DZE2
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50 
     transportmaxbackpacks = 4; // car 2
+	upgradeVehicle = {"VolhaLimo_TK_CIV_EP1_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
 };
 class Volha_1_TK_CIV_EP1_DZE3: Volha_1_TK_CIV_EP1_DZE2
 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50 
     transportmaxbackpacks = 4; // car 2
+	upgradeVehicle = {"Volha_1_TK_CIV_EP1_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
 };
 class Volha_2_TK_CIV_EP1_DZE3: Volha_2_TK_CIV_EP1_DZE2
 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50 
     transportmaxbackpacks = 4; // car 2
+	upgradeVehicle = {"Volha_2_TK_CIV_EP1_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
 };
 // Fuel 4
 class VolhaLimo_TK_CIV_EP1_DZE4: VolhaLimo_TK_CIV_EP1_DZE3

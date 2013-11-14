@@ -171,6 +171,95 @@ class CfgMagazines {
 		};
 
 	};
+	
+	class ItemORP: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "HowTo: Offroad Performance"; // TODO: localize
+		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		descriptionShort = "Offroad performace manual."; // TODO: localize
+		weight = 0.1;
+		sfx = "document";
+		class ItemActions
+		{
+			class Upgrades
+			{
+				text = "Upgrade Vehicle"; // TODO: localize
+				script = "spawn player_upgradeVehicle;";
+			};
+		};
+
+	};
+
+	class ItemAVE: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "HowTo: Vehicle Maintenance"; // TODO: localize
+		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		descriptionShort = "Vehicle maintenance and engineering manual."; // TODO: localize
+		weight = 0.1;
+		sfx = "document";
+		class ItemActions
+		{
+			class Upgrades
+			{
+				text = "Upgrade Vehicle"; // TODO: localize
+				script = "spawn player_upgradeVehicle;";
+			};
+		};
+
+	};
+
+	class ItemLRK: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "HowTo: Luggage Rack"; // TODO: localize
+		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		descriptionShort = "Luggage Rack install guide."; // TODO: localize
+		weight = 0.1;
+		sfx = "document";
+		class ItemActions
+		{
+			class Upgrades
+			{
+				text = "Upgrade Vehicle"; // TODO: localize
+				script = "spawn player_upgradeVehicle;";
+			};
+		};
+
+	};
+
+	class ItemTNK: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "HowTo: Fuel Tank"; // TODO: localize
+		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		descriptionShort = "Fuel Tank install guide."; // TODO: localize
+		weight = 0.1;
+		sfx = "document";
+		class ItemActions
+		{
+			class Upgrades
+			{
+				text = "Upgrade Vehicle"; // TODO: localize
+				script = "spawn player_upgradeVehicle;";
+			};
+		};
+
+	};
+
 	class ItemLetter: CA_Magazine
 	{
 		scope = 2;
