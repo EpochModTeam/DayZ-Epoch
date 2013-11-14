@@ -16,6 +16,7 @@ increase. @Armifer
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
 * [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
+* [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and right click next to your vehicle.
 * [ADDED] Added Player Names that killed Objects to diag_log @Torndeco
 * [ADDED] Surrender (options > controls > "Surrender") action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
 * [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
@@ -28,6 +29,8 @@ increase. @Armifer
 * [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
 * [ADDED] Tag friendly system now stores your 5 most recent friends with your life. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
 * [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
+* [CHANGED] Lowered periodic client save interval to help reduce server load.
+* [CHANGED] Mission name and descriptions now conform to template. @dayz10k
 * [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
 * [CHANGED] Removed 12m restriction of other players when buying and selling vehicles. Added requirement that you must be the last to get in the drivers seat to sell the vehicle.
 * [CHANGED] Opening supply crate now returns a empty supply crate. @dayz10k
