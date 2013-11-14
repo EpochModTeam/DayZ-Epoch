@@ -31,10 +31,6 @@ epoch_eventIsAny = {
 	_boolReturn
 };
 
-zero_weather = diag_tickTime;
-zero_cleanDead = diag_tickTime;
-zero_cleanLoot = diag_tickTime;
-
 while {true} do {
 	
 	// Find current time from server
@@ -59,24 +55,6 @@ while {true} do {
 					_handle = [] execVM "\z\addons\dayz_server\modules\" + (_x select 5) + ".sqf";
 				};
 			} forEach EpochEvents;
-
-			_time = diag_tickTime;
-			if ((_time - zero_weather) > 300) then {
-				
-				diag_log format["DEBUG FPS : %1 OBJECTS: %2 : PLAYERS: %3", diag_fps,(count (allMissionObjects "")),(playersNumber west)];
-
-				call server_weather;
-				zero_weather = _time;
-			};
-			// perform cleanup here
-			if ((_time - zero_cleanDead) > 600) then {
-				call server_cleanDead;
-				zero_cleanDead = _time;
-			};
-			if ((_time - zero_cleanLoot) > 1800) then {
-				call server_cleanLoot;
-				zero_cleanLoot = _time;
-			};
 		};
 	};
 	sleep 10;
