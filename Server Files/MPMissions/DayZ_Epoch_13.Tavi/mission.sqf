@@ -3,8 +3,6 @@
                         BEGIN TRADER PLACEMENT
                         AUTHOR: AVendettaForYou
                             Date: 12/11/2013
-              IF MODIFIED AND RELEASED GIVE CREDITS WHERE DUE
-                              THANK YOU
 
 ---------------------------------------------------------------------------*/
 
