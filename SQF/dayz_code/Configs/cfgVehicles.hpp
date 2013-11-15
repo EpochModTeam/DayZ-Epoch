@@ -1942,7 +1942,17 @@ class CfgVehicles {
                 constructioncount = 3;
                 removeoutput[] = {{"ItemFuelBarrelEmpty",1}};
         };
-
+	class Gunrack1;
+	class GunRack_DZ: Gunrack1
+        {
+		armor = 200;
+		scope = 2;
+		displayName = "Gun Rack";
+                vehicleClass = "Fortifications";
+                transportMaxWeapons = 20;
+                offset[] = {0,2.5,0};
+                removeoutput[] = {{"ItemGunRackKit",1}};
+        };
 	// modular
 	class MetalFloor_DZ: ModularItems
 	{
