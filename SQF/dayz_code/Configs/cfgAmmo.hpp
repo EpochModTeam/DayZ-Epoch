@@ -35,7 +35,21 @@ class CfgAmmo {
 		typicalspeed = 260;
 		visiblefire = 16;
 	};
-
+//VSS_Vintorez
+	class B_9x39_SP5 : BulletBase {
+		hit = 13;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		typicalSpeed = 300;
+		visibleFire = 0.07;
+		audibleFire = 0.07;
+		visibleFireTime = 2;
+		airFriction = -0.001;
+		caliber = 0.33;
+	};
+	
 	class Bolt;
 	class WoodenArrow : Bolt {
 		model = "\dayz_weapons\models\bolt";
