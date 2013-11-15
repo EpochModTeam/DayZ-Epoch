@@ -1276,7 +1276,27 @@ class CfgMagazines {
 			
 		};
 	};
-
+	class ItemGunRackKit: CA_Magazine
+        {
+                scope = 2;
+                count = 1;
+                type = 256;
+                displayName = "Gun Rack Kit";
+                descriptionShort = "A Gun Rack for 20 weapons";
+                model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+                picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+                weight = 20;
+                class ItemActions
+                {
+                        class Build
+                        {
+                                text = "$STR_ACTIONS_BUILD";
+                                script = "spawn player_build;";
+                                require[] = {"ItemToolbox"};
+                                create = "GunRack_DZ";
+                        };
+                };
+        };
 	class ItemOilBarrel: CA_Magazine
 	{
 		scope = 2;
@@ -1328,7 +1348,7 @@ class CfgMagazines {
                 descriptionShort = "Fire Barrel";
                 model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
                 picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-                weight = 25;
+                weight = 45;
                 class ItemActions
                 {
                         class Build
@@ -3160,14 +3180,23 @@ class CfgMagazines {
 				
 			};
 			class Crafting5
-            {
-                text = $STR_EPOCH_PLAYER_259;
-                Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
-                neednearby[] = {"workshop"};
-                requiretools[] = {"ItemToolbox"};
-                output[] = {{"PartPlankPack",1}};
-                input[] = {{"PartWoodLumber",3}};
-            };
+        		{
+		                text = $STR_EPOCH_PLAYER_259;
+		                Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+		                neednearby[] = {"workshop"};
+		                requiretools[] = {"ItemToolbox"};
+		                output[] = {{"PartPlankPack",1}};
+		                input[] = {{"PartWoodLumber",3}};
+        		};
+        		class Crafting6
+        		{
+        			text = $STR_EPOCH_PLAYER_277;
+		                Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+		                neednearby[] = {"workshop"};
+		                requiretools[] = {"ItemToolbox"};
+		                output[] = {{"ItemGunRackKit",1}};
+		                input[] = {{"PartWoodLumber",6}};
+			};
 		};
 	};
 	class PartWoodPlywood: CA_Magazine
