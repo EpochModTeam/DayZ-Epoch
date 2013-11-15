@@ -1316,7 +1316,7 @@ class CfgMagazines {
                                 neednearby[] = {"fire"};
                                 requiretools[] = {"ItemToolbox","ItemHatchet"};
                                 output[] = {{"ItemFireBarrel_kit",1}};
-                                input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodLumber",4}};
+                                input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
                         };
 	};
 	class ItemFireBarrel_kit: CA_Magazine
