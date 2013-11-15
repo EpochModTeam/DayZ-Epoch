@@ -4,7 +4,8 @@ class Mission
 	addOns[]=
 	{
 		"tavi",
-		"ca_modules_animals",
+		"kh_dayztaviana",
+	    "ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
@@ -24,13 +25,14 @@ class Mission
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
+		"warfarebuildings",
 		"tavi"
 	};
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ Epoch Taviana";
-		briefingDescription="DayZ Epoch Taviana Private Server";
+		briefingName="tavi DayZ_Epoch";
+		briefingDescription="tavi DayZ_Epoch Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
@@ -806,6 +808,7 @@ class Mission
 					vehicle="Survivor1_DZ";
 					player="PLAY CDG";
 					skill=0.60000002;
+
 					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
 				};
 				class Item69
@@ -1172,7 +1175,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=32;
+		items=28;
 		class Item0
 		{
 			position[]={10732.087,193.02972,12687.841};
@@ -1247,163 +1250,203 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={16596.275,44.942032,10199.313};
-			name="ArmedChoppers";
-			text="Pete's Armed Choppers";
-			type="mil_dot";
-			colorName="ColorGreen";
+			position[]={11698.81,-114,15210.121};
+			name="TraderCityLyepestok";
+			text="Trader City Lyepestok";
+			type="mil_circle";
+			colorName="ColorOrange";
 		};
 		class Item13
 		{
-			position[]={8140.8579,182.22856,21315.977};
-			name="HighEndWeaponsAmmo";
-			text="Robby and Jacks Ammo/Weapons";
-			type="mil_dot";
-			colorName="ColorGreen";
+			position[]={15309.663,-14.993002,9278.4912};
+			name="TraderCitySabina";
+			text="Trader City Sabina";
+			type="mil_circle";
+			colorName="ColorOrange";
 		};
 		class Item14
 		{
-			position[]={10159.278,84.586113,18706.787};
-			name="UnarmedChopperF";
-			text="Hanz Unarmed Choppers";
-			type="mil_dot";
+			position[]={5538.7354,-35.799999,8762.2695};
+			name="TraderCityBilgrad";
+			text="Trader City Bilgrad";
+			type="mil_circle";
 			colorName="ColorOrange";
 		};
 		class Item15
 		{
-			position[]={14621.356,-0.29903007,18865.057};
-			name="BoatVendor1";
-			text="Capt. Yak";
-			type="mil_triangle";
-			colorName="ColorBlue";
+			position[]={7376.6084,-34.6604,4296.5879};
+			name="TraderCityBranibor";
+			text="Trader City Branibor";
+			type="mil_circle";
+			colorName="ColorOrange";
 		};
 		class Item16
 		{
-			position[]={14976.129,20.700497,18411.604};
-			name="Wholesaler1";
-			text="Wholesaler Reynolds";
-			type="mil_box";
-			colorName="ColorBlack";
+			position[]={10948.426,-10.727827,654.90265};
+			name="BanditVendor";
+			text="Bandit Vendor";
+			type="mil_dot";
+			colorName="ColorRed";
 		};
 		class Item17
 		{
-			position[]={10169.444,75.022919,18726.105};
+			position[]={15587.822,-35.599998,16394.049};
 			name="HeroVendor";
-			text="Chuck's Hero Shop";
-			type="Strongpoint";
+			text="Hero Vendor";
+			type="mil_dot";
 			colorName="ColorGreen";
 		};
 		class Item18
 		{
-			position[]={15097.365,38.066315,14809.885};
-			name="ArmedVehicles";
-			text="Tom's Armed Vehicles";
+			position[]={16555.732,-44.942032,10159.68};
+			name="AircraftDealer";
+			text="Aircraft Dealer";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
 		class Item19
 		{
-			position[]={16149.238,39.333866,13584.271};
-			name="Doctor2";
-			text="Bones";
+			position[]={6815.0776,7.6293945e-006,8534.1504};
+			name="AircraftDealer";
+			text="Aircraft Dealer";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
 		class Item20
 		{
-			position[]={16449.648,58.051521,11484.582};
-			name="PlaneVendor";
-			text="Murdock's Planes";
-			type="mil_dot";
-			colorName="ColorBlack";
+			position[]={4066.3528,-36.305538,7265.0024};
+			name="Misc.Vendor";
+			text="Misc. Vendor";
+			type="mil_box";
+			colorName="ColorGreen";
 		};
 		class Item21
 		{
-			position[]={15309.642,14.993002,9376.416};
-			name="VehiclePartsVendors";
-			text="Sven and Slav's Parts/Vehicles";
-			type="mil_circle";
-			colorName="ColorBlack";
+			position[]={17497.631,-235.07928,7159.0879};
+			name="Misc.Vendor";
+			text="Misc. Vendor";
+			type="mil_box";
+			colorName="ColorGreen";
 		};
 		class Item22
 		{
-			position[]={13345.836,172.991,8617.3633};
-			name="GeneralSupplies";
-			text="Trin's Food/Water";
+			position[]={17332.115,5.3882599e-005,12930.239};
+			name="BoatDealer";
+			text="Boat Dealer";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
 		class Item23
 		{
-			position[]={16445.291,174.31848,8331.085};
-			name="GeneralSupplies1";
-			text="Melissa's General Supplies";
+			position[]={10570.494,-0.28882828,16772.477};
+			name="BoatDealer";
+			text="Boat Dealer";
 			type="mil_dot";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
 		class Item24
 		{
-			position[]={17577.686,177.15375,6392.5615};
-			name="Doctor3";
-			text="Dr. Vu";
+			position[]={10698.463,-0.00011062622,5983.665};
+			name="BoatDealer";
+			text="Boat Dealer";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorBlack";
 		};
 		class Item25
 		{
-			position[]={5573.3174,35.799999,8749.377};
-			name="BanditWeaponAmmo";
-			text="Gabe's and Cohaagen's Weapons/Ammo";
-			type="mil_circle";
+			position[]={5419.2437,-1.6689301e-006,9503.5479};
+			name="BoatDealer";
+			text="Boat Dealer";
+			type="mil_dot";
 			colorName="ColorBlack";
 		};
 		class Item26
 		{
-			position[]={3262.4954,4.9681244,8182.8096};
-			name="Armed Boats";
-			text="Chad's Armed Boats";
-			type="mil_dot";
+			position[]={13342.758,-172.991,8611.9932};
+			name="Wholesaler";
+			text="Wholesaler";
+			type="mil_box";
 			colorName="ColorBlack";
 		};
 		class Item27
 		{
-			position[]={6991.436,70.179367,8303.6289};
-			name="BanditChoppersRepair";
-			text="Parts and Bandit Vendor";
-			type="mil_circle";
-			colorName="ColorRed";
-		};
-		class Item28
-		{
-			position[]={3201.4695,34.2192,7553.8667};
-			name="GeneralSupplies3";
-			text="Mrs. Doubtfire";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item29
-		{
-			position[]={8807.9297,23.021162,2342.54};
-			name="Wholesaler2";
-			text="Wholesaler Darren";
+			position[]={9859.4209,-173.54755,7471.5684};
+			name="Wholesaler";
+			text="Wholesaler";
 			type="mil_box";
 			colorName="ColorBlack";
 		};
-		class Item30
+	};
+	class Sensors
+	{
+		items=4;
+		class Item0
 		{
-			position[]={10220.17,76.156166,18653.834};
-			name="RepairShop";
-			text="Scott's Repair Shop";
-			type="mil_dot";
-			colorName="ColorGreen";
+			position[]={15309.663,-14.993002,9278.4912};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonesabina";
+			expCond="(player distance zonesabina) < 40;";
+			expActiv="TitleText[""Now entering Trader City Sabina"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving Trader City Sabina"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
 		};
-		class Item31
+		class Item1
 		{
-			position[]={9643.8574,96.417999,4520.9438};
-			name="BlackMarketVendor";
-			text="Zaps Black Market";
-			type="mil_dot";
-			colorName="ColorBlack";
+			position[]={11698.81,-114,15210.121};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonelyep";
+			expCond="(player distance zonelyep) < 50;";
+			expActiv="TitleText[""Now entering Trader City Lyepestok"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving Trader City Lyepestok"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={5538.7354,-35.799999,8762.2695};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebilgrad";
+			expCond="(player distance zonebilgrad) < 50;";
+			expActiv="TitleText[""Now entering Trader City Bilgrad"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving Trader City Bilgrad"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={7376.6084,-34.6604,4296.5879};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebranibor";
+			expCond="(player distance zonebranibor) < 60;";
+			expActiv="TitleText[""Now entering Trader City Branibor"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving Trader City Branibor"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
 		};
 	};
 };
