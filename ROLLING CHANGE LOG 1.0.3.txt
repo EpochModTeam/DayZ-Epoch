@@ -1,8 +1,7 @@
 == ROLLING CHANGE LOG 1.0.3 == 
 
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent
-humanity loss from killing player zombies and give a small humanity
-increase. @Armifer
+humanity loss from killing player zombies and give a small humanity increase. @Armifer
 * [FIXED] Fix for diag_log statement when player buying vehicles @Torndeco
 * [FIXED] Building on roads no longer allowed as it was intended. @dayz10k
 * [FIXED] Fixed expression error with vehicles/safes when loading a large inventory. @vbawol
@@ -29,9 +28,12 @@ increase. @Armifer
 * [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
 * [ADDED] Tag friendly system now stores your 5 most recent friends with your life. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
 * [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
+* [ADDED] Can now build Fire Barrels (Land_Fire_barrel) with an emtpy Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
+* [ADDED] Can now maintain lightpoles with a lightbub. @vbawol @dayz10k
 * [CHANGED] Lowered periodic client save interval to help reduce server load.
 * [CHANGED] Mission name and descriptions now conform to template. @dayz10k
 * [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
+* [CHANGED] Increased armor levels on cinder and metal modular base building objects by 20%.
 * [CHANGED] Removed 12m restriction of other players when buying and selling vehicles. Added requirement that you must be the last to get in the drivers seat to sell the vehicle.
 * [CHANGED] Opening supply crate now returns a empty supply crate. @dayz10k
 * [CHANGED] Updated Makarov, MakarovSD, and M1911 damage settings to the same as DayZ CE 1.8. @vbawol
@@ -39,3 +41,4 @@ increase. @Armifer
 * [CHANGED] Base Building now requires a plot pole again. @vbawol
 * [REMOVED] Unused code and images removed @Skaronator
 * [REMOVED] Removed humanity heartbeat code @vbawol
+* [REMOVED] Road Cones at Bash and Klen traders that would cause Vodniks to spawn in and launch vertically. @dayz10k
