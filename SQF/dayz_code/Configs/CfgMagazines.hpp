@@ -4717,8 +4717,8 @@ class CfgMagazines {
 
 	#include "CfgMagazines\MeleeSwing.hpp"
 
-	// 	class HandGrenade;
-	class ItemTrashToiletpaper : HandGrenade {
+	class HandGrenade_Stone;
+	class ItemTrashToiletpaper : HandGrenade_Stone {
 		scope = public;
 		count = 1;
 		displayName = $STR_JUNK_NAME_TOILETPAPER;
@@ -4726,7 +4726,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
 		type = 256;
-		ammo = "JackDaniels";
+		ammo = "GrenadeHand_Stone";
 	};
 	class ItemTrashRazor : CA_Magazine {
 		scope = public;
