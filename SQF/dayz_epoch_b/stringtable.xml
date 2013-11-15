@@ -5284,5 +5284,15 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_277">
+		  <Original>Craft Gun Rack</Original>
+		  <English>Craft Gun Rack</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
 	</Package>
 </Project>
