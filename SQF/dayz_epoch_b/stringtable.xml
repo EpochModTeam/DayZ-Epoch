@@ -85,7 +85,7 @@
 			<Original>You are one of the 2% who are not infected yet</Original>
 			<English>You are one of the 2% who are not infected yet</English>
 			<German>Sie sind einer der 2% noch nicht infizierten Menschen</German>
-			<Russian>Вы один из 2%, которые еще не инфицированы</Russian>
+			<Russian>Вы один из 2%, которые ещё не инфицированы</Russian>
 			<Spanish>Eres parte del 2% que aún no esta infectado.</Spanish>
 			<Dutch>Jij bent één van de 2% die nog niet is geïnfecteerd</Dutch>
 			<French>Vous êtes l'un des 2% qui ne sont pas encore infectés</French>
@@ -105,7 +105,7 @@
 			<Original>Directed by</Original>
 			<English>Directed by</English>
 			<German>Regie</German>
-			<Russian>Режиссер</Russian>
+			<Russian>Режиссёр</Russian>
 			<Spanish>Dirigida por</Spanish>
 			<Dutch>Geregisseerd door</Dutch>
 			<French>Dirigé par</French>
@@ -210,7 +210,7 @@
 			<Original>Your tent has been packed</Original>
 			<English>Your tent has been packed</English>
 			<German>Ihr Zelt wurde verpackt</German>
-			<Russian>Ваша палатка свернута.</Russian>
+			<Russian>Ваша палатка свёрнута.</Russian>
 			<Spanish>Su carpa se ha embalado</Spanish>
 			<Dutch>Je tent is ingepakt</Dutch>
 			<French>Votre tente a été repliée.</French>
@@ -240,7 +240,7 @@
 			<Original>You cannot place a Tent here. The area must be flat, and free of other objects</Original>
 			<English>You cannot place a Tent here. The area must be flat, and free of other objects</English>
 			<German>Sie können hier kein Zelt aufbauen. Der Untergrund muss flach und frei von Hindernissen sein</German>
-			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
+			<Russian>Вы не можете поставить палатку здесь. Поверхность должна быть плоской, и свободной от других объектов.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen tent plaatsen. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
 			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et libre de tout autre objet.</French>
@@ -260,7 +260,7 @@
 			<Original>You have created a fireplace</Original>
 			<English>You have created a fireplace</English>
 			<German>Sie haben eine Feuerstelle angelegt</German>
-			<Russian>Вы подготовили костер.</Russian>
+			<Russian>Вы подготовили костёр.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
 			<Dutch>Je hebt een kampvuur gemaakt</Dutch>
 			<French>Vous avez créé un feu de camp.</French>
@@ -280,7 +280,7 @@
 			<Original>You have failed to build %1.</Original>
 			<English>You have failed to build %1.</English>
 			<German>Aufbau von %1 gescheitert.</German>
-			<Russian>You have failed to build %1.</Russian>
+			<Russian>Вам не удалось построить %1.</Russian>
 			<Spanish>Fallaste al contruir un %1.</Spanish>
 			<Dutch>Het is niet gelukt om %1 te bouwen.</Dutch>
 			<French>Vous n'avez pas réussi à contruire %1.</French>
@@ -290,7 +290,7 @@
 			<Original>You cannot make a fireplace here. The area must be flat, and free of other objects</Original>
 			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
 			<German>Sie können hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein</German>
-			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
+			<Russian>Вы не можете развести костёр здесь. Поверхность должна быть плоской, и свободной от других объектов.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen kampvuur maken. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
 			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et libre de tout autre objet.</French>	
@@ -300,7 +300,7 @@
 			<Original>Fireplace has been removed</Original>
 			<English>Fireplace has been removed</English>
 			<German>Die Feuerstelle wurde entfernt</German>
-			<Russian>Костер убран.</Russian>
+			<Russian>Костёр убран.</Russian>
 			<Spanish>La fogata fue removida.</Spanish>
 			<Dutch>Het kampvuur is verwijderd</Dutch>
 			<French>Le feu de camp a été retiré.</French>
@@ -450,7 +450,7 @@
 			<Original>Waiting for character to create</Original>
 			<English>Waiting for character to create</English>
 			<German>Warten auf Charaktererstellung</German>
-			<Russian>Пожалуйста, выйдите в окно выбора игрока чтобы продолжить игру</Russian>
+			<Russian>Ожидание создания персонажа</Russian>
 			<Spanish>Esperando a que el personaje sea creado</Spanish>
 			<Dutch>Wachten tot het personage is aangemaakt</Dutch>
 			<French>En attente de la création du personnage</French>	
@@ -490,7 +490,7 @@
 			<Original>Server responded, creating character</Original>
 			<English>Server responded, creating character</English>
 			<German>Server antwortet, erstelle Charakter</German>
-			<Russian>Получен ответ от сервера. Идет создание персонажа</Russian>
+			<Russian>Получен ответ от сервера. Идёт создание персонажа</Russian>
 			<Spanish>El servidor respondió, creando personaje</Spanish>
 			<Dutch>Server heeft geantwoord, personage aan het maken</Dutch>
 			<French>Réponse du serveur, création du personnage</French>
@@ -510,7 +510,7 @@
 			<Original>\n\nYou must be near a water-source such as a pond or well to refill your water bottles</Original>
 			<English>\n\nYou must be near a water-source such as a pond or well to refill your water bottles</English>
 			<German>\n\nSie müssen in der nähe einer Wasserquelle wie einem Teich oder Brunnen sein um Wasserflaschen zu füllen</German>
-			<Russian>\n\nВы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
+			<Russian>\n\nВы должны находиться возле водоёма или источника воды, чтобы наполнить свои фляги.</Russian>
 			<Spanish>\n\nNecesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
 			<Dutch>\n\nJe moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
 			<French>\n\nVous devez être à côté d'une source d'eau comme un bassin ou un puits pour remplir vos bouteilles d'eau.</French>
@@ -611,7 +611,7 @@
 			<English>\n\n%1 must be on your person to move it to/from your toolbelt.</English>
 			<German>\n\n%1 muss in ihrem Inventar sein um es aus/in ihren Werkzeuggürtel zu packen.</German>
 			<Russian>\n\nДля перемещения с/на пояс, предмет %1 должен быть у вас.</Russian>
-      <Spanish>\n\n%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
+			<Spanish>\n\n%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
 			<Dutch>\n\nJe moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
 			<French>\n\n%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
 			<Czech>\n\n%1 must be on your person to move it to/from your toolbelt.</Czech>
@@ -620,7 +620,7 @@
 			<Original>\n\n%1 must be in your main inventory to %2 it.</Original>
 			<English>\n\n%1 must be in your main inventory to %2 it.</English>
 			<German>\n\n%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
-			<Russian>\n\nПредмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
+			<Russian>\n\nПредмет %1 должен находиться в основном инвентаре, чтобы %2 его.</Russian>
 			<Spanish>\n\n%1 debe estar en tu inventario principal para: %2</Spanish>
 			<Dutch>\n\n%1 moet zich in je inventaris bevinden om het te %2.</Dutch>
 			<French>\n\n%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
@@ -770,7 +770,7 @@
 			<Original>Arrow was broken and cannot be used again</Original>
 			<English>Arrow was broken and cannot be used again</English>
 			<German>Arrow was broken and cannot be used again</German>
-			<Russian>Arrow was broken and cannot be used again</Russian>
+			<Russian>Стрела была сломана и не может быть использована повторно</Russian>
 			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
 			<Dutch>De pijl is gebroken en kan niet meer opnieuw gebruikt worden</Dutch>
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
@@ -874,7 +874,7 @@
 			<Original>Remove fireplace</Original>
 			<English>Remove fireplace</English>
 			<German>Feuerstelle entfernen</German>
-			<Russian>Убрать костер</Russian>
+			<Russian>Убрать костёр</Russian>
 			<Spanish>Remover fogata</Spanish>
 			<Dutch>Kampvuur verwijderen</Dutch>
 			<French>Retirer le Feu de camp</French>
@@ -914,7 +914,7 @@
 			<Original>Fill Jerrycan</Original>
 			<English>Fill Jerrycan</English>
 			<German>Benzinkanister auffüllen</German>
-			<Russian>Наполнить канистры</Russian>
+			<Russian>Наполнить канистру(ы)</Russian>
 			<Spanish>Llenar Bidones</Spanish>
 			<Dutch>Jerrycan bijvullen</Dutch>
 			<French>Remplir le(s) Jerrican(s)</French>
@@ -1386,7 +1386,7 @@
 			<Original>Mutton Raw</Original>						
 			<English>Mutton Raw</English>						
 			<German>Rohes Hammelfleisch</German>
-			<Russian>Ягнятина</Russian>
+			<Russian>Сырая ягнятина</Russian>
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>Rauw lamsvlees</Dutch>
 			<French>Mouton Cru</French>
@@ -1406,7 +1406,7 @@
 			<Original>Raw Chicken Leg</Original>						
 			<English>Raw Chicken Leg</English>						
 			<German>Rohe Hühnchenkeule</German>
-			<Russian>Куриный окорочек</Russian>
+			<Russian>Сырой куриный окорочок</Russian>
 			<Spanish>Pata de Pollo Cruda</Spanish>
 			<Dutch>Rauwe kippenpoot</Dutch>
 			<French>Cuisse de Poulet crue</French>
@@ -1416,7 +1416,7 @@
 			<Original>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Hühnchenkeule für den Verzehr, muss vorher gekocht werden.</German>
-			<Russian>Сырой куриный окорочек. Будет вкуснее и безопаснее, если его приготовить.</Russian>
+			<Russian>Куриный окорочок. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Kippenpoot om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>La Cuisse de Poulet crue peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
@@ -1426,7 +1426,7 @@
 			<Original>Rabbit Raw</Original>						
 			<English>Rabbit Raw</English>						
 			<German>Rohes Kaninchen</German>
-			<Russian>Кролик</Russian>
+			<Russian>Крольчатина</Russian>
 			<Spanish>Conejo Crudo</Spanish>
 			<Dutch>Rauw konijn</Dutch>
 			<French>Lapin cru</French>
@@ -1436,7 +1436,7 @@
 			<Original>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Rabbit to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Kaninchenfleisch für den Verzehr, muss vorher gekocht werden.</German>
-			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
+			<Russian>Крольчатина. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Rauw konijn om jezelf in leven te houden, kook dit eerst om infectie te voorkomen.</Dutch>
 			<French>Le Lapin cru peut être consommé mais doit être cuit avant de le manger.</French>
@@ -1446,7 +1446,7 @@
 			<Original>Raw Bacon</Original>						
 			<English>Raw Bacon</English>						
 			<German>Roher Speck</German>
-			<Russian>Бекон</Russian>
+			<Russian>Сырой бекон</Russian>
 			<Spanish>Costillar de Cerdo Crudo</Spanish>
 			<Dutch>Rauwe spek</Dutch>
 			<French>Bacon cru</French>
@@ -1466,7 +1466,7 @@
 			<Original>Raw Beef</Original>						
 			<English>Raw Beef</English>						
 			<German>Rohes Rindfleisch</German>
-			<Russian>Говядина</Russian>
+			<Russian>Сырая говядина</Russian>
 			<Spanish>Churrasco Crudo</Spanish>
 			<Dutch>Rauwe steak</Dutch>
 			<French>Boeuf Cru</French>
@@ -1496,7 +1496,7 @@
 			<Original>Cooked Meat to be used for sustainment.</Original>						
 			<English>Cooked Meat to be used for sustainment.</English>						
 			<German>Gekochtes Fleisch, für den Verzehr geeignet.</German>
-			<Russian>Жареное мясо, готовая к употреблению.</Russian>
+			<Russian>Жареное мясо, готово к употреблению.</Russian>
 			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookt vlees om jezelf in leven te houden.</Dutch>
 			<French>La Viande Cuite peut être consommée.</French>
@@ -1526,7 +1526,7 @@
 			<Original>Chicken Leg</Original>						
 			<English>Chicken Leg</English>						
 			<German>Hühnchenkeule</German>
-			<Russian>Жареный куриный окрочек</Russian>
+			<Russian>Жареный куриный окрочок</Russian>
 			<Spanish>Pata de Pollo</Spanish>
 			<Dutch>Kippenpoot</Dutch>
 			<French>Cuisse de Poulet</French>
@@ -1536,7 +1536,7 @@
 			<Original>Chicken Leg to be used for sustainment.</Original>						
 			<English>Chicken Leg to be used for sustainment.</English>						
 			<German>Hühnchenkeule, für den Verzehr geeignet.</German>
-			<Russian>Жареный куриный окрочек, готовый к употреблению.</Russian>
+			<Russian>Жареный куриный окрочок, готовый к употреблению.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookte kippenpoot om jezelf in leven te houden.</Dutch>
 			<French>La cuisse de poulet peut être consommée.</French>
@@ -1546,7 +1546,7 @@
 			<Original>Rabbit</Original>						
 			<English>Rabbit</English>						
 			<German>Kaninchen</German>
-			<Russian>Жареный кролик</Russian>
+			<Russian>Жареная крольчатина</Russian>
 			<Spanish>Conejo</Spanish>
 			<Dutch>Konijn</Dutch>
 			<French>Lapin</French>
@@ -1556,7 +1556,7 @@
 			<Original>Rabbit to be used for sustainmen.</Original>						
 			<English>Rabbit to be used for sustainment.</English>						
 			<German>Kaninchen, für den Verzehr geeignet.</German>
-			<Russian>Жареный кролик, готовый к употреблению.</Russian>
+			<Russian>Жареная крольчатина, готовая к употреблению.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookt konijn om jezelf in leven te houden.</Dutch>
 			<French>Le Lapin peut être consommé.</French>
@@ -1566,7 +1566,7 @@
 			<Original>Bacon</Original>						
 			<English>Bacon</English>						
 			<German>Speck</German>
-			<Russian>Готовый бекон</Russian>
+			<Russian>Бекон</Russian>
 			<Spanish>Costillar de Cerdo</Spanish>
 			<Dutch>Spek</Dutch>
 			<French>Bacon</French>
@@ -1626,7 +1626,7 @@
 			<Original>Water Bottle (Boiled)</Original>						
 			<English>Water Bottle (Boiled)</English>						
 			<German>Wasserflasche (Abgekocht)</German>
-			<Russian>Фляжка кипяченой воды</Russian>
+			<Russian>Фляжка кипячёной воды</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
 			<Dutch>Water Fles (Gekookt)</Dutch>
 			<French>Bouteille d'eau (Bouillie)</French>
@@ -1636,7 +1636,7 @@
 			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
 			<English>A bottle of boiled water that has been filled and can be consumed.</English>	
 			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
-			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
+			<Russian>Фляжка кипячёной воды. Пригодна для питья.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<Dutch>Een fles met gekookt water erin dat kan worden gedronken.</Dutch>
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
@@ -1676,7 +1676,7 @@
 			<Original>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Original>
 			<English>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</English>	
 			<German>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</German>
-			<Russian>Чистая, закрытая банка "R4Z0R". Уже давно исчезли перестали продаваться!</Russian>
+			<Russian>Чистая, закрытая банка "R4Z0R". Уже давно перестали продаваться!</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa R4Z0R. Dejaron de venderlas hace años.</Spanish>
 			<Dutch>Een fris, ongeopend blikje R4Z0R frisdrank. Wordt al jaren niet meer verkocht!</Dutch>
 			<French>Une canette intacte de soda "R4Z0R". Ils ont arrêté de les vendre il y a des années !.</French>
@@ -1686,7 +1686,7 @@
 			<Original>Soda (Iced Tea)</Original>
 			<English>Soda (Iced Tea)</English>	
 			<German>Soda (Iced Tea)</German>
-			<Russian>Напиток (Iced Tea)</Russian>
+			<Russian>Газировка (Холодный чай)</Russian>
 			<Spanish>Gaseosa (Té Helado)</Spanish>
 			<Dutch>Frisdrank (ijsthee)</Dutch>
 			<French>Soda (Iced Tea)</French>
@@ -1706,7 +1706,7 @@
 			<Original>Soda (Grape)</Original>
 			<English>Soda (Grape)</English>	
 			<German>Soda (Grape)</German>
-			<Russian>Газировка (Grape)</Russian>
+			<Russian>Газировка (Грейпфрут)</Russian>
 			<Spanish>Gaseosa (Grape)</Spanish>
 			<Dutch>Frisdrank (Druivensap)</Dutch>
 			<French>Soda (Grape)</French>
@@ -1716,7 +1716,7 @@
 			<Original>A clean, unopened can of Smasht grape soda.</Original>
 			<English>A clean, unopened can of Smasht grape soda.</English>	
 			<German>A clean, unopened can of Smasht grape soda.</German>
-			<Russian>Чистая, закрытая банка гейпфруктового "Smasht".</Russian>
+			<Russian>Чистая, закрытая банка грейпфрутового "Smasht".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa de uva Smasht.</Spanish>
 			<Dutch>Een fris, ongeopend blikje Druivensap.</Dutch>
 			<French>Une canette intacte de soda au raisin "Smasht".</French>
@@ -1726,7 +1726,7 @@
 			<Original>Soda (Cola)</Original>
 			<English>Soda (Cola)</English>	
 			<German>Soda (Cola)</German>
-			<Russian>Газировка (Cola)</Russian>
+			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Dutch>Frisdrank (Cola)</Dutch>
 			<French>Soda (Cola)</French>
@@ -1746,7 +1746,7 @@
 			<Original>Soda (Orange)</Original>
 			<English>Soda (Orange)</English>	
 			<German>Soda (Orange)</German>
-			<Russian>Газировка (Orange)</Russian>
+			<Russian>Газировка (Апельсин)</Russian>
 			<Spanish>Gaseosa (Orange)</Spanish>
 			<Dutch>Frisdrank (Sinas)</Dutch>
 			<French>Soda (Orange)</French>
@@ -1766,7 +1766,7 @@
 			<Original>Soda (Lemonade)</Original>
 			<English>Soda (Lemonade)</English>	
 			<German>Soda (Lemonade)</German>
-			<Russian>Газировка (Lemonade)</Russian>
+			<Russian>Газировка (Лимонад)</Russian>
 			<Spanish>Gaseosa (Limonada)</Spanish>
 			<Dutch>Frisdrank (Limonade)</Dutch>
 			<French>Soda (Limonade)</French>
@@ -1786,7 +1786,7 @@
 			<Original>Soda (Cola)</Original>
 			<English>Soda (Cola)</English>	
 			<German>Soda (Cola)</German>
-			<Russian>Газировка (Cola)</Russian>
+			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Fernet con Coca</Spanish>
 			<Dutch>Frisdrank (Cola)</Dutch>
 			<French>Soda (Cola)</French>
@@ -1846,7 +1846,7 @@
 			<Original>Soda (Cola)</Original>
 			<English>Soda (Cola)</English>	
 			<German>Soda (Cola)</German>
-			<Russian>Газировка (Cola)</Russian>
+			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Dutch>Frisdrank (Cola)</Dutch>
 			<French>Soda (Cola)</French>
@@ -1936,7 +1936,7 @@
 			<Original>A pack of pistachios, roasted and salted.</Original>
 			<English>A pack of pistachios, roasted and salted.</English>	
 			<German>Eine Packung Pistazien, geröstet und gesalzen.</German>
-			<Russian>Пакет соленых, обжареных фисташек.</Russian>
+			<Russian>Пакет солёных, обжареных фисташек.</Russian>
 			<Spanish>Una caja de pistachos, tostados y salados.</Spanish>
 			<Dutch>A pakje pistasche nootjes, geroosterd en zout.</Dutch>
 			<French>Un paquet de pistaches, grillées et salées.</French>
@@ -1966,7 +1966,7 @@
 			<Original>Can (Beans)</Original>
 			<English>Can (Beans)</English>	
 			<German>Can (Beans)</German>
-			<Russian>Банка черных бобов</Russian>
+			<Russian>Банка чёрных бобов</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
@@ -1976,7 +1976,7 @@
 			<Original>A clean, unopened can of Griff's black beans.</Original>
 			<English>A clean, unopened can of Griff's black beans.</English>	
 			<German>A clean, unopened can of Griff's black beans.</German>
-			<Russian>Чистая, закрытая банка черных бобов "Griff".</Russian>
+			<Russian>Чистая, закрытая банка чёрных бобов "Griff".</Russian>
 			<Spanish>Una limpia y cerrada lata de frijoles negros "Griff".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Griff's zwarte bonen.</Dutch>
 			<French>Une boîte intacte d'haricots noirs "Griff".</French>
@@ -1996,7 +1996,7 @@
 			<Original>An empty can of Griff's black beans.</Original>
 			<English>An empty can of Griff's black beans.</English>	
 			<German>An empty can of Griff's black beans.</German>
-			<Russian>Пустая банка от черных бобов "Griff".</Russian>
+			<Russian>Пустая банка от чёрных бобов "Griff".</Russian>
 			<Spanish>Una lata vacia de frijoles negros "Griff".</Spanish>
 			<Dutch>Een leeg blikje Griff's zwarte bonen.</Dutch>
 			<French>Une boîte vide d'haricots noirs "Griff".</French>
@@ -2166,7 +2166,7 @@
 			<Original>Can (Beans)</Original>
 			<English>Can (Beans)</English>	
 			<German>Can (Beans)</German>
-			<Russian>Банка зеленого горошка</Russian>
+			<Russian>Банка зелёного горошка</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
@@ -2176,7 +2176,7 @@
 			<Original>A clean, unopened can of Demon Groves green beans.</Original>
 			<English>A clean, unopened can of Demon Groves green beans.</English>	
 			<German>A clean, unopened can of Demon Groves green beans.</German>
-			<Russian>Чистая, закрытая банка зеленого горошка "Demon Groves".</Russian>
+			<Russian>Чистая, закрытая банка зелёного горошка "Demon Groves".</Russian>
 			<Spanish>Una limpia y cerrada lata de frijoles verdes "Demon Groves".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Demon Groves groene bonen.</Dutch>
 			<French>Une boîte intacte d'haricots verts "Demon Groves".</French>
@@ -2196,7 +2196,7 @@
 			<Original>An empty can of Demon Groves green beans.</Original>
 			<English>An empty can of Demon Groves green beans.</English>	
 			<German>An empty can of Demon Groves green beans.</German>
-			<Russian>Пустая банка от зеленого горошка "Demon Groves".</Russian>
+			<Russian>Пустая банка от зелёного горошка "Demon Groves".</Russian>
 			<Spanish>Una lata vacía de frijoles verdes "Demon Groves".</Spanish>
 			<Dutch>Een leeg blikje Demon Groves groene bonen.</Dutch>
 			<French>Une boîte vide d'haricots verts "Demon Groves".</French>
@@ -2326,7 +2326,7 @@
 			<Original>Can (Chowder)</Original>
 			<English>Can (Chowder)</English>	
 			<German>Can (Chowder)</German>
-			<Russian>Банка похлебки</Russian>
+			<Russian>Банка похлёбки</Russian>
 			<Spanish>Sopa de Pescado</Spanish>
 			<Dutch>Blikje (Chowder)</Dutch>
 			<French>Boîte (Soupe de palourdes)</French>
@@ -2336,7 +2336,7 @@
 			<Original>A clean, unopened can of Powell's New England clam chowder.</Original>
 			<English>A clean, unopened can of Powell's New England clam chowder.</English>	
 			<German>A clean, unopened can of Powell's New England clam chowder.</German>
-			<Russian>Чистая, закрытая банка похлебки из моллюсков "Powell's New England".</Russian>
+			<Russian>Чистая, закрытая банка похлёбки из моллюсков "Powell's New England".</Russian>
 			<Spanish>Una limpia y cerrada lata de sopa de pescados "Powell's New England".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Powell's New England clam chowder.</Dutch>
 			<French>Une boîte intacte de soupe de palourdes de "Powell's New England".</French>
@@ -2356,7 +2356,7 @@
 			<Original>An empty can of Powell's New England clam chowder.</Original>
 			<English>An empty can of Powell's New England clam chowder.</English>	
 			<German>An empty can of Powell's New England clam chowder.</German>
-			<Russian>Пустая банка от похлебки "Powell's New England".</Russian>
+			<Russian>Пустая банка от похлёбки "Powell's New England".</Russian>
 			<Spanish>Una lata vacía de sopa de pescado "Powell's New England".</Spanish>
 			<Dutch>Een leeg blikje Powell's New England clam chowder.</Dutch>
 			<French>Une boîte vide de soupe de palourde de "Powell's New England".</French>
@@ -2456,7 +2456,7 @@
 			<Original>A roll of toilet paper.</Original>
 			<English>A roll of toilet paper.</English>	
 			<German>Eine Rolle Toilettenpapier.</German>
-			<Russian>Рулон туалетной бумаги. Может быть весьма полезным в определенных ситуациях.</Russian>
+			<Russian>Рулон туалетной бумаги.</Russian>
 			<Spanish>Un rollo de papel higiénico.</Spanish>
 			<Dutch>Een rol WC Papier.</Dutch>
 			<French>Un rouleau de papier toilette.</French>
@@ -2482,46 +2482,46 @@
 			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
 			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
 		</Key>
-    <Key ID="STR_FOOD_NAME_RBULL">
-      <Original>Red Bull</Original>
-      <English>Red Bull</English>
-      <German>Red Bull</German>
-      <Russian>Red Bull</Russian>
-      <Spanish>Red Bull</Spanish>
-      <Dutch>Red Bull</Dutch>
-      <French>Red Bull</French>
-      <Czech>Red Bull</Czech>
-    </Key>
-    <Key ID="STR_FOOD_DESC_RBULL">
-      <Original>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Original>
-      <English>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</English>
-      <German>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</German>
-      <Russian>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Russian>
-      <Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Spanish>
-      <Dutch>Red Bull geeft je vleugels,</Dutch>
-      <French>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</French>
-      <Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Czech>
-    </Key>
-    <Key ID="STR_FOOD_NAME_OSHERBET">
-      <Original>Orange Sherbet</Original>
-      <English>Orange Sherbet</English>
-      <German>Orange Sherbet</German>
-      <Russian>Orange Sherbet</Russian>
-      <Spanish>Orange Sherbet</Spanish>
-      <Dutch>Orange Sherbet</Dutch>
-      <French>Orange Sherbet</French>
-      <Czech>Orange Sherbet</Czech>
-    </Key>
-    <Key ID="STR_FOOD_DESC_OSHERBET">
-      <Original>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Original>
-      <English>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</English>
-      <German>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</German>
-      <Russian>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Russian>
-      <Spanish>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Spanish>
-      <Dutch>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Dutch>
-      <French>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</French>
-      <Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
-    </Key>
+		<Key ID="STR_FOOD_NAME_RBULL">
+			<Original>Red Bull</Original>
+			<English>Red Bull</English>
+			<German>Red Bull</German>
+			<Russian>Ред Булл</Russian>
+			<Spanish>Red Bull</Spanish>
+			<Dutch>Red Bull</Dutch>
+			<French>Red Bull</French>
+			<Czech>Red Bull</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_RBULL">
+			<Original>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Original>
+			<English>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</English>
+			<German>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</German>
+			<Russian>Ред Булл. Энергетический напиток, продаваемый австрийской компанией Red Bull GmbH</Russian>
+			<Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Spanish>
+			<Dutch>Red Bull geeft je vleugels,</Dutch>
+			<French>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</French>
+			<Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_OSHERBET">
+			<Original>Orange Sherbet</Original>
+			<English>Orange Sherbet</English>
+			<German>Orange Sherbet</German>
+			<Russian>Апельсиновый шербет</Russian>
+			<Spanish>Orange Sherbet</Spanish>
+			<Dutch>Orange Sherbet</Dutch>
+			<French>Orange Sherbet</French>
+			<Czech>Orange Sherbet</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_OSHERBET">
+			<Original>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Original>
+			<English>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</English>
+			<German>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</German>
+			<Russian>Апельсиновый шербет. Острый оранжевый газированный безалкогольный напиток с большим количеством шипения.</Russian>
+			<Spanish>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Spanish>
+			<Dutch>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Dutch>
+			<French>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</French>
+			<Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
+		</Key>
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_PLAYER_1">
@@ -2538,7 +2538,7 @@
 		  <Original>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</Original>
 		  <English>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</English>
 		  <German>%1 will markieren Sie so freundlich. Zu akzeptieren, Tag %1 als freundlich.</German>
-		  <Russian></Russian>
+		  <Russian>%1 хочет отметить вас как друга. Чтобы принять, отметьте %1 как друга.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 wil jou als bevriend markeren. Om te accepteren, markeer %1 als bevriend.</Dutch>
 		  <French></French>
@@ -2548,7 +2548,7 @@
 		  <Original>Pulse is extremely weak</Original>
 		  <English>Pulse is extremely weak</English>
 		  <German>Pulse ist extrem schwach</German>
-		  <Russian></Russian>
+		  <Russian>Пульс крайне слаб</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Polsslag is erg zwak</Dutch>
 		  <French></French>
@@ -2558,7 +2558,7 @@
 		  <Original>Pulse is weak</Original>
 		  <English>Pulse is weak</English>
 		  <German>Puls ist schwach</German>
-		  <Russian></Russian>
+		  <Russian>Пульс слаб</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Polsslag is zwak</Dutch>
 		  <French></French>
@@ -2568,7 +2568,7 @@
 		  <Original>Pulse is strong</Original>
 		  <English>Pulse is strong</English>
 		  <German>Pulse ist stark</German>
-		  <Russian></Russian>
+		  <Russian>Пульс сильный</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Polsslag is sterk</Dutch>
 		  <French></French>
@@ -2588,7 +2588,7 @@
 		  <Original>Cannot access gear in a locked vehicle.</Original>
 		  <English>Cannot access gear in a locked vehicle.</English>
 		  <German>Kann nicht auf Gang in einem verschlossenen Fahrzeug.</German>
-		  <Russian></Russian>
+		  <Russian>Невозможно открыть инвентарь запертого автомобиля.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
 		  <French></French>
@@ -2598,7 +2598,7 @@
 		  <Original>No camo nets found nearby.</Original>
 		  <English>No camo nets found nearby.</English>
 		  <German>Keine camo Netze in der Nähe gefunden.</German>
-		  <Russian></Russian>
+		  <Russian>Камуфляжные сети не найдены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen camouflagenet in de buurt gevonden.</Dutch>
 		  <French></French>
@@ -2618,7 +2618,7 @@
 		  <Original>Lock already in progress.</Original>
 		  <English>Lock already in progress.</English>
 		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
-		  <Russian></Russian>
+		  <Russian>Закрытие уже идёт</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al op slot gezet.</Dutch>
 		  <French></French>
@@ -2628,7 +2628,7 @@
 		  <Original>Cannot lock while another player is nearby.</Original>
 		  <English>Cannot lock while another player is nearby.</English>
 		  <German>Kann nicht gesperrt werden, während ein anderer Spieler in der Nähe ist.</German>
-		  <Russian></Russian>
+		  <Russian>Невозможно закрыть, когда другой игрок находится поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet op slot zetten met een andere speler in de buurt.</Dutch>
 		  <French></French>
@@ -2638,7 +2638,7 @@
 		  <Original>Cannot Abort while in a trader city!</Original>
 		  <English>Cannot Abort while in a trader city!</English>
 		  <German>Kann nicht abbrechen, während in einem Gewerbetreibenden Stadt!</German>
-		  <Russian></Russian>
+		  <Russian>Невозможно выйти, находясь в торговом городе!</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet uitloggen in een handel stad.</Dutch>
 		  <French></French>
@@ -2648,7 +2648,7 @@
 		  <Original>Pack tent already in progress.</Original>
 		  <English>Pack tent already in progress.</English>
 		  <German>Packen Zelt bereits im Gange.</German>
-		  <Russian></Russian>
+		  <Russian>Упаковывание палатки уже идёт</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Tent wordt al reeds ingepakt</Dutch>
 		  <French></French>
@@ -2658,7 +2658,7 @@
 		  <Original>Tent not setup yet.</Original>
 		  <English>Tent not setup yet.</English>
 		  <German>Zelt noch nicht einrichten.</German>
-		  <Russian></Russian>
+		  <Russian>Палатка ещё не установлена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Tent is nog niet opgezet.</Dutch>
 		  <French></French>
@@ -2668,7 +2668,7 @@
 		  <Original>That is already being packed.</Original>
 		  <English>That is already being packed.</English>
 		  <German>Das ist schon gepackt.</German>
-		  <Russian></Russian>
+		  <Russian>Это уже упаковано.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Dit wordt al reeds ingepakt.</Dutch>
 		  <French></French>
@@ -2678,7 +2678,7 @@
 		  <Original>Cannot pack while another player is nearby.</Original>
 		  <English>Cannot pack while another player is nearby.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Невозможно упаковывать, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
 		  <French></French>
@@ -2698,7 +2698,7 @@
 		  <Original>You must have RawMeat</Original>
 		  <English>You must have RawMeat</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>У вас должно быть сырое мясо</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je moet in het bezit zijn van rauw vlees</Dutch>
 		  <French></French>
@@ -2708,7 +2708,7 @@
 		  <Original>Wrong code entered to many times wait 10 seconds</Original>
 		  <English>Wrong code entered to many times wait 10 seconds</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Неправильный код введён слишком много раз, подождите 10 секунд</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt te vaak een foute code ingevoerd. 10 seconden geduld svp.</Dutch>
 		  <French></French>
@@ -2718,7 +2718,7 @@
 		  <Original>Cannot unlock while another player is nearby.</Original>
 		  <English>Cannot unlock while another player is nearby.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Невозможно открыть, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet van slot afhalen met een andere speler in de buurt.</Dutch>
 		  <French></French>
@@ -2728,7 +2728,7 @@
 		  <Original>Unlock already in progress.</Original>
 		  <English>Unlock already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Открытие уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al reeds van slot gehaald.</Dutch>
 		  <French></French>
@@ -2738,7 +2738,7 @@
 		  <Original>Boil already in progress.</Original>
 		  <English>Boil already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Кипячение уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan ket koken.</Dutch>
 		  <French></French>
@@ -2748,7 +2748,7 @@
 		  <Original>Cooking already in progress.</Original>
 		  <English>Cooking already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Приготовление уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het koken.</Dutch>
 		  <French></French>
@@ -2758,7 +2758,7 @@
 		  <Original>Refuel already in progress.</Original>
 		  <English>Refuel already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Заправка уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het tanken.</Dutch>
 		  <French></French>
@@ -2788,7 +2788,7 @@
 		  <Original>No Vehicles Nearby.</Original>
 		  <English>No Vehicles Nearby.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Нет техники поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen voertuigen in de buurt.</Dutch>
 		  <French></French>
@@ -2798,7 +2798,7 @@
 		  <Original>Generator has been started.</Original>
 		  <English>Generator has been started.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Генератор был запущен.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>De generator is gestart.</Dutch>
 		  <French></French>
@@ -2808,7 +2808,7 @@
 		  <Original>Gutting animal already in progress.</Original>
 		  <English>Gutting animal already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Разделывание животного уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent dit dier al aan het opensnijden.</Dutch>
 		  <French></French>
@@ -2818,7 +2818,7 @@
 		  <Original>Canceled gutting.</Original>
 		  <English>Canceled gutting.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Отмена разделывания.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Gestopt met opensnijden.</Dutch>
 		  <French></French>
@@ -2828,7 +2828,7 @@
 		  <Original>Gutting zombie already in progress.</Original>
 		  <English>Gutting zombie already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Разделывание зомби уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent deze zombie al aan het opensnijden.</Dutch>
 		  <French></French>
@@ -2836,7 +2836,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_32">
 		  <Original>Hotwire vehicle already in progress.</Original>
-		  <English>Hotwire vehicle already in progress.</English>
+		  <English>Угон машины уже идёт.</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
@@ -2846,7 +2846,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33">
 		  <Original>Failed to unlock car hotwire kit broken.</Original>
-		  <English>Failed to unlock car hotwire kit broken.</English>
+		  <English>Не удалось открыть машину, угонный комплект сломан.</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
@@ -2858,7 +2858,7 @@
 		  <Original>Fill Jerry already in progress.</Original>
 		  <English>Fill Jerry already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Наполнение канистры уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
 		  <French></French>
@@ -2878,7 +2878,7 @@
 		  <Original>No recent Deaths.</Original>
 		  <English>No recent Deaths.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Нет последних смертей.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Niet recent doodgegaan.</Dutch>
 		  <French></French>
@@ -2888,7 +2888,7 @@
 		  <Original>Lock vehicle already in progress.</Original>
 		  <English>Lock vehicle already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Закрытие автомобиля уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
 		  <French></French>
@@ -2898,7 +2898,7 @@
 		  <Original>Take item already in progress.</Original>
 		  <English>Take item already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Поднятие предмета уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met het oppakken</Dutch>
 		  <French></French>
@@ -2908,7 +2908,7 @@
 		  <Original>Add to toolbelt already in progress.</Original>
 		  <English>Add to toolbelt already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Добавление на пояс уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met toevoegen aan gereedschapsriem</Dutch>
 		  <French></French>
@@ -2918,17 +2918,17 @@
 		  <Original>\n\nBuilding already in progress.</Original>
 		  <English>\n\nBuilding already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСтроительство уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al aan het bouwen.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
-		  <Original>\n\nCannot build, too many objects witin 30m.</Original>
-		  <English>\n\nCannot build, too many objects witin 30m.</English>
+		  <Original>\n\nCannot build, too many objects within 30m.</Original>
+		  <English>\n\nCannot build, too many objects within 30m.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nНевозможно построить, слишком много объектов в пределах 30 м.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nKan niet bouwen, teveel objecten binnen 30m.</Dutch>
 		  <French></French>
@@ -2938,7 +2938,7 @@
 		  <Original>Cannot build while in a vehicle.</Original>
 		  <English>Cannot build while in a vehicle.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Невозможно построить, находясь в транспорте.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
 		  <French></French>
@@ -2948,7 +2948,7 @@
 		  <Original>Cannot build while in a vehicle.</Original>
 		  <English>Cannot build while in a vehicle.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Невозможно построить, находясь в транспорте.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
 		  <French></French>
@@ -2978,7 +2978,7 @@
 		  <Original>Canceled building.</Original>
 		  <English>Canceled building.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Строительство отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het bouwen is gestopt</Dutch>
 		  <French></French>
@@ -2998,7 +2998,7 @@
 		  <Original>Downgrade already in progress.</Original>
 		  <English>Downgrade already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Понижение уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al bezig met downgraden.</Dutch>
 		  <French></French>
@@ -3008,7 +3008,7 @@
 		  <Original>Unable to downgrade you do not know the combination.</Original>
 		  <English>Unable to downgrade you do not know the combination.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Не удаётся понизить, вы не знаете комбинации.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet downgraden, je weet de combinatie niet.</Dutch>
 		  <French></French>
@@ -3028,7 +3028,7 @@
 		  <Original>No downgrades available</Original>
 		  <English>No downgrades available</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Нет доступных понижений.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen downgrades beschikbaar</Dutch>
 		  <French></French>
@@ -3038,7 +3038,7 @@
 		  <Original>Upgrade already in progress.</Original>
 		  <English>Upgrade already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Улучшение уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het upgraden.</Dutch>
 		  <French></French>
@@ -3048,7 +3048,7 @@
 		  <Original>\n\nHarvest wood already in progress.</Original>
 		  <English>\n\nHarvest wood already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nРубка дерева уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al hout aan het hakken</Dutch>
 		  <French></French>
@@ -3058,7 +3058,7 @@
 		  <Original>\n\nHatchet needs to be in your hand to harvest wood.</Original>
 		  <English>\n\nHatchet needs to be in your hand to harvest wood.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nТопор должен быть в ваших руках, чтобы рубить дерево.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet een bijl in je handen hebben om hout te hakken.</Dutch>
 		  <French></French>
@@ -3078,7 +3078,7 @@
 		  <Original>\n\nCopy key already in progress.</Original>
 		  <English>\n\nCopy key already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nКопирование ключа уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al een sleutel aan het kopieren</Dutch>
 		  <French></French>
@@ -3088,7 +3088,7 @@
 		  <Original>\n\nNeed Keymakers kit to make a copy of a key.</Original>
 		  <English>\n\nNeed Keymakers kit to make a copy of a key.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nНужен комплект создания ключей, чтобы сделать копию ключа.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
 		  <French></French>
@@ -3098,7 +3098,7 @@
 		  <Original>\n\nKey crafting needs a fire within 3 meters.</Original>
 		  <English>\n\nKey crafting needs a fire within 3 meters.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nДля создания ключа нужен огонь в пределах 3-х метров.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet binnen 3 meter van het vuur staan om de sleutel te maken.</Dutch>
 		  <French></French>
@@ -3108,7 +3108,7 @@
 		  <Original>\n\nKey crafting requires a 1 Tin Bar.</Original>
 		  <English>\n\nKey crafting requires a 1 Tin Bar.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nДля создания ключа требуется 1 оловянный слиток.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt 1 Tin bar nodig om een sleutel te maken.</Dutch>
 		  <French></French>
@@ -3118,7 +3118,7 @@
 		  <Original>\n\nCopied key has been added to your backpack.</Original>
 		  <English>\n\nCopied key has been added to your backpack.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСкопированный ключ был добавлен в ваш рюкзак.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nDe gekopieerde sleutel is in je rugzak gestopt.</Dutch>
 		  <French></French>
@@ -3148,7 +3148,7 @@
 		  <Original>\n\nCrafting already in progress.</Original>
 		  <English>\n\nCrafting already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСоздание уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al bezig met creëren</Dutch>
 		  <French></French>
@@ -3168,7 +3168,7 @@
 		  <Original>\n\nFishing already in progress.</Original>
 		  <English>\n\nFishing already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nЛовля рыбы уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nAfmaken van creatie is al bezig.</Dutch>
 		  <French></French>
@@ -3178,7 +3178,7 @@
 		  <Original>\n\nMust be near a shore or on a boat to fish.</Original>
 		  <English>\n\nMust be near a shore or on a boat to fish.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nНужно находиться вблизи берега или на лодке, чтобы ловить рыбу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet aan de kust of op een boot zijn om te vissen.</Dutch>
 		  <French></French>
@@ -3188,7 +3188,7 @@
 		  <Original>\n\nFishing pole needs to be in your hand to fish.</Original>
 		  <English>\n\nFishing pole needs to be in your hand to fish.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nУдочка должна быть в ваших руках, чтобы ловить рыбу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet een vishengel in je hand hebben om te vissen.</Dutch>
 		  <French></French>
@@ -3208,7 +3208,7 @@
 		  <Original>\n\nYou caught a fish.</Original>
 		  <English>\n\nYou caught a fish.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nВы поймали рыбу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt een vis gevangen.</Dutch>
 		  <French></French>
@@ -3228,7 +3228,7 @@
 		  <Original>\n\nYou didn't catch anything.</Original>
 		  <English>\n\nYou didn't catch anything.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nВы ничего не поймали.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt niets gevangen.</Dutch>
 		  <French></French>
@@ -3238,7 +3238,7 @@
 		  <Original>\n\nHarvest already in progress.</Original>
 		  <English>\n\nHarvest already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСбор уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al aan het oogsten.</Dutch>
 		  <French></French>
@@ -3258,7 +3258,7 @@
 		  <Original>\n\nYou must be close to a plant to harvest.</Original>
 		  <English>\n\nYou must be close to a plant to harvest.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nВы должны быть близко к растению, чтобы взять его.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet in de buurt van een plant zijn om te oogsten.</Dutch>
 		  <French></French>
@@ -3268,7 +3268,7 @@
 		  <Original>\n\nOpen Crate already in progress.</Original>
 		  <English>\n\nOpen Crate already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nОткрытие ящика уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent de kist al aan het openmaken.</Dutch>
 		  <French></French>
@@ -3278,7 +3278,7 @@
 		  <Original>\n\nYou need a crowbar to open this.</Original>
 		  <English>\n\nYou need a crowbar to open this.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nВам нужен лом, чтобы открыть это.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt een breekijzer nodig om dit open te maken.</Dutch>
 		  <French></French>
@@ -3308,7 +3308,7 @@
 		  <Original>\n\nOre Mining already in progress.</Original>
 		  <English>\n\nOre Mining already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nДобытие руды уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al erts aan het ontginnen.</Dutch>
 		  <French></French>
@@ -3338,7 +3338,7 @@
 		  <Original>No upgrades available</Original>
 		  <English>No upgrades available</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Нет доступных улучшений.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen upgrades beschikbaar</Dutch>
 		  <French></French>
@@ -3348,7 +3348,7 @@
 		  <Original>\n\nChanging clothes already in progress.</Original>
 		  <English>\n\nChanging clothes already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nПереодевание уже идёт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent je al aan het omkleden.</Dutch>
 		  <French></French>
@@ -3358,7 +3358,7 @@
 		  <Original>\n\nCannot change clothes when another player is nearby.</Original>
 		  <English>\n\nCannot change clothes when another player is nearby.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nНевозможно переодеваться, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
 		  <French></French>
@@ -3638,7 +3638,7 @@
 		  <Original>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</Original>
 		  <English>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Этот сервер работает на неправильной версии серверного приложения. Вы не можете играть на этом сервере. Если вы являетесь администратором сервера, пожалуйста, свяжитесь с персоналом DayZ Epoch.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze server draait een verkeerde versie van de serversided software. Je kunt niet op deze server spelen. Als het jouw server is, neem dan contact op met de DayZ Epoch Staff.</Dutch>
 		  <French></French>
@@ -3648,7 +3648,7 @@
 		  <Original>You have an outdated version of epoch please download the correct version</Original>
 		  <English>You have an outdated version of epoch please download the correct version</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>У вас устаревшая версия "epoch", загрузите правильную версию</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt een verouderde versie van epoch.</Dutch>
 		  <French></French>
@@ -5275,14 +5275,14 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_276">
-                 <Original>Craft Fire Barrel</Original>
-                 <English>Craft Fire Barrel</English>
-                 <German></German>
-                 <Russian></Russian>
-                 <Spanish></Spanish>
-                 <Dutch></Dutch>
-                 <French></French>
-                 <Czech></Czech>
-                </Key>
+		  <Original>Craft Fire Barrel</Original>
+		  <English>Craft Fire Barrel</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
+		</Key>
 	</Package>
 </Project>
