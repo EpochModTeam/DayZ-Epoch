@@ -57,6 +57,7 @@ class RscDisplayStart
 
 class RscDisplayDebriefing: RscStandardDisplay
 {
+	onLoad = "ctrlActivate ((_this select 0) displayCtrl 2)";
 	class controls
 	{
 		delete Debriefing_MissionTitle;
@@ -78,6 +79,7 @@ class RscDisplayDebriefing: RscStandardDisplay
 };
 class RscDisplayMissionFail: RscStandardDisplay
 {
+	onLoad = "ctrlActivate ((_this select 0) displayCtrl 2)";
 	class controls
 	{
 		delete Debriefing_MissionTitle;
