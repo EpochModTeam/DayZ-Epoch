@@ -10,7 +10,7 @@
 * [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
 * [ADDED] Halo jump option from a helicopter when above 400m. @zabn
 * [ADDED] Localization support added. @zabn
-* [ADDED] Spawnselection and 1.8 GUI to the dayz_code.pbo - experienced server admins can use it. @Skaronator
+* [ADDED] Chernarus-Spawnselection and 1.8 GUI-Icons to the dayz_code.pbo - experienced server admins can use it. @Skaronator
 * [ADDED] Added/corrected dutch language and fixed some typo's. @JoSchaap
 * [ADDED] Global variable if player is fresh spawned. Can used for custom script like in spawn-camera script ("freshSpawn = 0" - Normal Spawn / 1 - fresh spawn as zombie / 2 - fresh spawn as player) @Skaronator
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
