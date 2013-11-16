@@ -99,8 +99,9 @@ for "_x" from 1 to _total_trades do {
 			if (_removed == _qty_in) then {
 			
 				// Continue with trade.
-				PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos];
-				publicVariableServer  "PVDZE_obj_Trade";
+				if (isNil _part_in) then { _part_in = "Unknown Item" };
+				if (isNil inTraderCity) then { inTraderCity = "Unknown Trader City" };
+				PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_in,inTraderCity];
 
 				waitUntil {!isNil "dayzTradeResult"};
 

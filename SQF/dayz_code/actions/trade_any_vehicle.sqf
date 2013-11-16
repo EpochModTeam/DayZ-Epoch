@@ -24,7 +24,12 @@ _bos = 0;
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
 } else {
-	_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance];
+
+	if (_part_in isKindOf "AIR") then {
+		_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_air];
+	} else {
+		_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_vehicle];
+	};
 	_qty = count _obj;
 	_bos = 1;
 };
@@ -85,7 +90,9 @@ if (_qty >= _qty_in) then {
 		if (_qty >= _qty_in) then {
 
 			//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos];
+			if (isNil _obj) then { _obj = "Unknown Vehicle" };
+			if (isNil inTraderCity) then { inTraderCity = "Unknown Trader City" };
+			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_obj,inTraderCity];
 			publicVariableServer  "PVDZE_obj_Trade";
 	
 			//diag_log format["DEBUG Starting to wait for answer: %1", PVDZE_obj_Trade];
