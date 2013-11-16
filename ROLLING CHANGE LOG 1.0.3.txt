@@ -1,9 +1,30 @@
 == ROLLING CHANGE LOG 1.0.3 == 
 
-* [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent
-humanity loss from killing player zombies and give a small humanity increase. @Armifer
+* [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
+
+* [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle.
+* [ADDED] Added Player Names that killed Objects to diag_log @Torndeco
+* [ADDED] dayz_sellDistance is now splitted in "dayz_sellDistance_boat", "dayz_sellDistance_vehicle" and "dayz_sellDistance_air" - @Skaronator
+* [ADDED] Surrender (options > controls > "Surrender") action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
+* [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
+* [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
+* [ADDED] Halo jump option from a helicopter when above 400m. @zabn
+* [ADDED] Localization support added. @zabn
+* [ADDED] Spawnselection and 1.8 GUI to the dayz_code.pbo - experienced server admins can use it. @Skaronator
+* [ADDED] Added/corrected dutch language and fixed some typo's. @JoSchaap
+* [ADDED] Global variable if player is fresh spawned. Can used for custom script like in spawn-camera script ("freshSpawn = 0" - Normal Spawn / 1 - fresh spawn as zombie / 2 - fresh spawn as player) @Skaronator
+* [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
+* [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
+* [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
+* [ADDED] Tag friendly system now stores your 5 most recent friends with your life. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
+* [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
+* [ADDED] Can now build Fire Barrels (Land_Fire_barrel) with an emtpy Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
+* [ADDED] Can now maintain lightpoles with a lightbub. @vbawol @dayz10k
+* [ADDED] Directly Disconnect (back to lobby) if you press abort > yes - @Skaronator
+
 * [FIXED] Fix for diag_log statement when player buying vehicles @Torndeco
 * [FIXED] Building on roads no longer allowed as it was intended. @dayz10k
+* [FIXED] M4SPR spawns now with 30 Rnds Stanag mags and not anymore with 20 Rnds. @Skaronator
 * [FIXED] Fixed expression error with vehicles/safes when loading a large inventory. @vbawol
 * [FIXED] No more bleeding trees, rocks, etc with melee weapons from DayZ CE 1.8. @vbawol
 * [FIXED] Variable added to player zombie vision to better support anti-hacks @Skaronator
@@ -15,21 +36,7 @@ humanity loss from killing player zombies and give a small humanity increase. @A
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
 * [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
-* [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle.
-* [ADDED] Added Player Names that killed Objects to diag_log @Torndeco
-* [ADDED] Surrender (options > controls > "Surrender") action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
-* [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
-* [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
-* [ADDED] Halo jump option from a helicopter when above 400m. @zabn
-* [ADDED] Localization support added. @zabn
-* [ADDED] Added/corrected dutch language and fixed some typo's. @JoSchaap
-* [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
-* [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
-* [ADDED] Destroy tent option when you have a full jerry can and matches. @vbawol
-* [ADDED] Tag friendly system now stores your 5 most recent friends with your life. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
-* [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
-* [ADDED] Can now build Fire Barrels (Land_Fire_barrel) with an emtpy Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
-* [ADDED] Can now maintain lightpoles with a lightbub. @vbawol @dayz10k
+
 * [CHANGED] Lowered periodic client save interval to help reduce server load.
 * [CHANGED] Mission name and descriptions now conform to template. @dayz10k
 * [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
