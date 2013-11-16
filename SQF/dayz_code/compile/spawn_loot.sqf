@@ -72,6 +72,7 @@ switch (_iClass) do
 		if ((count _mags) > 0) then
 		{
 			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
+			if (_mags select 0 == "20Rnd_556x45_Stanag") then { _mags set [0, "30Rnd_556x45_Stanag"] };
 			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
 		};
 	};
