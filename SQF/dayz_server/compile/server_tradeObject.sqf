@@ -17,9 +17,9 @@ _clientID = 	owner _player;
 
 //New Logway WIP by Skaronator
 if (_buyorsell == 0) then { //Buy
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in %4", (name _player), (getPlayerUID _player), _classname, _traderCity];
+diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in/at %4", (name _player), (getPlayerUID _player), _classname, _traderCity];
 } else { //SELL
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) sold a %3 in %4",];
+diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) sold a %3 in/at %4",];
 };
 
 //Send request
