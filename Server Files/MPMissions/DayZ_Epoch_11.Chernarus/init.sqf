@@ -84,10 +84,11 @@ BIS_Effects_startEvent = {
 };
 
 if (isServer) then {
-	call compile preprocessFileLineNumbers "dynamic_vehicle.sqf";				//Compile vehicle configs
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
+	//Compile vehicle configs
 	
 	// Add trader citys
-	_nil = [] execVM "mission.sqf";
+	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 
