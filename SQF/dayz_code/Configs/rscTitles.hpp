@@ -1642,3 +1642,5 @@ class DZ_ItemInteraction {
 #ifdef SpawnSelecter
 #include "RscDisplay\RscDisplaySpawnSelecter.hpp"
 #endif
+
+#include "RscDisplay\RscMap.hpp"
