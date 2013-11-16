@@ -33,7 +33,7 @@ Developers
 * Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
 * [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 * Axeman - Developer - Light system - axeman@thefreezer.co.uk
-* Skaronator - Help with many things https://github.com/Skaronator
+* Skaronator - Developer - Help with many things https://github.com/Skaronator
 * Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.  https://github.com/Zabn
 
 --------------------------
@@ -50,5 +50,5 @@ Special thanks
 * Alejandria - Beta Tester, New female textures. - http://www.twitch.tv/miss_alejandria
 * OrangeSherbet - Beta Tester - http://www.twitch.tv/orangesherbet
 * QMGSaint - Beta Tester - http://www.twitch.tv/qmgsaint
-* Twitch.tv Streamers http://www.twitch.tv/directory/game/DayZ
-* Thanks to all the other beta testers, you know who you are!-
+* Twitch.tv Streamers - http://www.twitch.tv/directory/game/DayZ
+* Thanks to all the other beta testers, you know who you are!
