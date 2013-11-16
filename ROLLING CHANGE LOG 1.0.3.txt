@@ -1,6 +1,7 @@
 == ROLLING CHANGE LOG 1.0.3 == 
 
-* [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
+* [NEW] Ingame Map - Unused Arma UI has been removed. @Skaronator
+* [NEW] Gear is only accessible in vehicles with "G" key due to removal of Arma Map Menus.@Skaronator
 
 * [ADDED] Craftable Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons. @dayz10k
 * [ADDED] Craftable Base Fire Barrel FireBarrel_DZ @dayz10k
@@ -24,6 +25,9 @@
 * [ADDED] Can now build Fire Barrels (Land_Fire_barrel) with an emtpy Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
 * [ADDED] Can now maintain lightpoles with a lightbub. @vbawol @dayz10k
 * [ADDED] Directly Disconnect (back to lobby) if you press abort > yes - @Skaronator
+
+* [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
+* [UPDATED] Trading log-system (server-side) was improved. @Skaronator
 
 * [FIXED] Fix for diag_log statement when player buying vehicles @Torndeco
 * [FIXED] Building on roads no longer allowed as it was intended. @dayz10k
@@ -50,5 +54,6 @@
 * [CHANGED] Base building enhancements and changed count down timer. @zabn
 * [CHANGED] Base Building now requires a plot pole again. @vbawol
 * [REMOVED] Unused code and images removed @Skaronator
+* [REMOVED] Map markers for other players and empty vehicles (blue/orange/green dots & vehicles) @Skaronator
 * [REMOVED] Removed humanity heartbeat code @vbawol
 * [REMOVED] Road Cones at Bash and Klen traders that would cause Vodniks to spawn in and launch vertically. @dayz10k
