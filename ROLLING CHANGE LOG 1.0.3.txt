@@ -2,6 +2,8 @@
 
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
 
+* [ADDED] Craftable Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons. @dayz10k
+* [ADDED] Craftable Base Fire Barrel FireBarrel_DZ @dayz10k
 * [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle.
 * [ADDED] Added Player Names that killed Objects to diag_log @Torndeco
 * [ADDED] dayz_sellDistance is now splitted in "dayz_sellDistance_boat", "dayz_sellDistance_vehicle" and "dayz_sellDistance_air" - @Skaronator
@@ -10,8 +12,9 @@
 * [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
 * [ADDED] Halo jump option from a helicopter when above 400m. @zabn
 * [ADDED] Localization support added. @zabn
-* [ADDED] Chernarus-Spawnselection and 1.8 GUI-Icons to the dayz_code.pbo - experienced server admins can use it. @Skaronator
 * [ADDED] Added/corrected dutch language and fixed some typo's. @JoSchaap
+* [ADDED] Added Russian localization. @VeryBigBro
+* [ADDED] Chernarus-Spawnselection and 1.8 GUI-Icons to the dayz_code.pbo - experienced server admins can use it. @Skaronator
 * [ADDED] Global variable if player is fresh spawned. Can used for custom script like in spawn-camera script ("freshSpawn = 0" - Normal Spawn / 1 - fresh spawn as zombie / 2 - fresh spawn as player) @Skaronator
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
 * [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
@@ -29,7 +32,7 @@
 * [FIXED] No more bleeding trees, rocks, etc with melee weapons from DayZ CE 1.8. @vbawol
 * [FIXED] Variable added to player zombie vision to better support anti-hacks @Skaronator
 * [FIXED] Lower chance to play fly sounds when near dead bodies. @vbawol
-* [FIXED] Documents now examine one at a time also fixes getting the same item for each document.
+* [FIXED] Documents now examine one at a time, also fixes getting the same item for each document. @vbawol
 * [FIXED] Server now only saves the first 20 magazines on disconnect to prevent saving items in overflow that can cause player inventory corruption. @vbawol
 * [FIXED] Zombies no longer attack players unless they have true line of sight. @vbawol
 * [FIXED] RPT error on all clients when dragging a player. @zabn
