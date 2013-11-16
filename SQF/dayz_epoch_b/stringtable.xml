@@ -2528,7 +2528,7 @@
 		  <Original>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</Original>
 		  <English>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</English>
 		  <German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
-		  <Russian></Russian>
+		  <Russian>Магазины %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Magazijnen %1 / %2 - Wapens %3 / %4 - Rugzakken %5 / %6</Dutch>
 		  <French></French>
@@ -2578,7 +2578,7 @@
 		  <Original>Trading canceled.</Original>
 		  <English>Trading canceled.</English>
 		  <German>Handel abgebrochen.</German>
-		  <Russian></Russian>
+		  <Russian>Торговля отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handel is afgebroken</Dutch>
 		  <French></French>
@@ -2618,7 +2618,7 @@
 		  <Original>Lock already in progress.</Original>
 		  <English>Lock already in progress.</English>
 		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
-		  <Russian>Закрытие уже идёт</Russian>
+		  <Russian>Уже закрывается</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al op slot gezet.</Dutch>
 		  <French></French>
@@ -2648,7 +2648,7 @@
 		  <Original>Pack tent already in progress.</Original>
 		  <English>Pack tent already in progress.</English>
 		  <German>Packen Zelt bereits im Gange.</German>
-		  <Russian>Упаковывание палатки уже идёт</Russian>
+		  <Russian>Палатка уже упаковывается</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Tent wordt al reeds ingepakt</Dutch>
 		  <French></French>
@@ -2728,7 +2728,7 @@
 		  <Original>Unlock already in progress.</Original>
 		  <English>Unlock already in progress.</English>
 		  <German></German>
-		  <Russian>Открытие уже идёт.</Russian>
+		  <Russian>Уже открывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al reeds van slot gehaald.</Dutch>
 		  <French></French>
@@ -2738,7 +2738,7 @@
 		  <Original>Boil already in progress.</Original>
 		  <English>Boil already in progress.</English>
 		  <German></German>
-		  <Russian>Кипячение уже идёт.</Russian>
+		  <Russian>Уже кипятится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan ket koken.</Dutch>
 		  <French></French>
@@ -2748,7 +2748,7 @@
 		  <Original>Cooking already in progress.</Original>
 		  <English>Cooking already in progress.</English>
 		  <German></German>
-		  <Russian>Приготовление уже идёт.</Russian>
+		  <Russian>Уже готовится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het koken.</Dutch>
 		  <French></French>
@@ -2758,7 +2758,7 @@
 		  <Original>Refuel already in progress.</Original>
 		  <English>Refuel already in progress.</English>
 		  <German></German>
-		  <Russian>Заправка уже идёт.</Russian>
+		  <Russian>Уже заправляется.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het tanken.</Dutch>
 		  <French></French>
@@ -2768,7 +2768,7 @@
 		  <Original>Preparing to fuel and start generator, move to cancel.</Original>
 		  <English>Preparing to fuel and start generator, move to cancel.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Подготовка к заправке и запуску генератора, двигайтесь для отмены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>De generator wordt zo volgetankt en gestart, beweeg om te annuleren.</Dutch>
 		  <French></French>
@@ -2778,7 +2778,7 @@
 		  <Original>Canceled.</Original>
 		  <English>Canceled.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Отмена</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Ge-annuleerd.</Dutch>
 		  <French></French>
@@ -2808,7 +2808,7 @@
 		  <Original>Gutting animal already in progress.</Original>
 		  <English>Gutting animal already in progress.</English>
 		  <German></German>
-		  <Russian>Разделывание животного уже идёт.</Russian>
+		  <Russian>Животное уже разделывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent dit dier al aan het opensnijden.</Dutch>
 		  <French></French>
@@ -2818,7 +2818,7 @@
 		  <Original>Canceled gutting.</Original>
 		  <English>Canceled gutting.</English>
 		  <German></German>
-		  <Russian>Отмена разделывания.</Russian>
+		  <Russian>Разделывание отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Gestopt met opensnijden.</Dutch>
 		  <French></French>
@@ -2828,7 +2828,7 @@
 		  <Original>Gutting zombie already in progress.</Original>
 		  <English>Gutting zombie already in progress.</English>
 		  <German></German>
-		  <Russian>Разделывание зомби уже идёт.</Russian>
+		  <Russian>Зомби уже разделывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent deze zombie al aan het opensnijden.</Dutch>
 		  <French></French>
@@ -2836,7 +2836,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_32">
 		  <Original>Hotwire vehicle already in progress.</Original>
-		  <English>Угон машины уже идёт.</English>
+		  <English>Вы уже угоняете машину.</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
@@ -2858,7 +2858,7 @@
 		  <Original>Fill Jerry already in progress.</Original>
 		  <English>Fill Jerry already in progress.</English>
 		  <German></German>
-		  <Russian>Наполнение канистры уже идёт.</Russian>
+		  <Russian>Канистра уже наполняется.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
 		  <French></French>
@@ -2888,7 +2888,7 @@
 		  <Original>Lock vehicle already in progress.</Original>
 		  <English>Lock vehicle already in progress.</English>
 		  <German></German>
-		  <Russian>Закрытие автомобиля уже идёт.</Russian>
+		  <Russian>Автомобиль уже закрывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
 		  <French></French>
@@ -2898,7 +2898,7 @@
 		  <Original>Take item already in progress.</Original>
 		  <English>Take item already in progress.</English>
 		  <German></German>
-		  <Russian>Поднятие предмета уже идёт.</Russian>
+		  <Russian>Предмет уже поднимается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met het oppakken</Dutch>
 		  <French></French>
@@ -2908,7 +2908,7 @@
 		  <Original>Add to toolbelt already in progress.</Original>
 		  <English>Add to toolbelt already in progress.</English>
 		  <German></German>
-		  <Russian>Добавление на пояс уже идёт.</Russian>
+		  <Russian>Уже добавляется на пояс.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met toevoegen aan gereedschapsriem</Dutch>
 		  <French></French>
@@ -2918,7 +2918,7 @@
 		  <Original>\n\nBuilding already in progress.</Original>
 		  <English>\n\nBuilding already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nСтроительство уже идёт.</Russian>
+		  <Russian>\n\nУже строится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al aan het bouwen.</Dutch>
 		  <French></French>
@@ -2958,7 +2958,7 @@
 		  <Original>Cannot build plot pole within 45m of an existing plot.</Original>
 		  <English>Cannot build plot pole within 45m of an existing plot.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Невозможно построить столб в пределах 45м. от существующего столба.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan bouw-paal niet bouwen op minder als 45m afstand van een bestaand bouwterrein.</Dutch>
 		  <French></French>
@@ -2998,7 +2998,7 @@
 		  <Original>Downgrade already in progress.</Original>
 		  <English>Downgrade already in progress.</English>
 		  <German></German>
-		  <Russian>Понижение уже идёт.</Russian>
+		  <Russian>Уже понижается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al bezig met downgraden.</Dutch>
 		  <French></French>
@@ -3038,7 +3038,7 @@
 		  <Original>Upgrade already in progress.</Original>
 		  <English>Upgrade already in progress.</English>
 		  <German></German>
-		  <Russian>Улучшение уже идёт.</Russian>
+		  <Russian>Уже улучшается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het upgraden.</Dutch>
 		  <French></French>
@@ -3048,7 +3048,7 @@
 		  <Original>\n\nHarvest wood already in progress.</Original>
 		  <English>\n\nHarvest wood already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nРубка дерева уже идёт.</Russian>
+		  <Russian>\n\nДерево уже рубится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al hout aan het hakken</Dutch>
 		  <French></French>
@@ -3068,7 +3068,7 @@
 		  <Original>\n\nCanceled Harvesting Wood.</Original>
 		  <English>\n\nCanceled Harvesting Wood.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nРубка дерева отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met houthakken</Dutch>
 		  <French></French>
@@ -3078,7 +3078,7 @@
 		  <Original>\n\nCopy key already in progress.</Original>
 		  <English>\n\nCopy key already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nКопирование ключа уже идёт.</Russian>
+		  <Russian>\n\nКлюч уже копируется.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al een sleutel aan het kopieren</Dutch>
 		  <French></French>
@@ -3128,7 +3128,7 @@
 		  <Original>\n\nCanceled Key Crafting.</Original>
 		  <English>\n\nCanceled Key Crafting.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСоздание ключа отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met het maken van de sleutel.</Dutch>
 		  <French></French>
@@ -3138,7 +3138,7 @@
 		  <Original>\n\nCrafting started</Original>
 		  <English>\n\nCrafting started</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСоздание начато</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nBezig met creëren</Dutch>
 		  <French></French>
@@ -3148,7 +3148,7 @@
 		  <Original>\n\nCrafting already in progress.</Original>
 		  <English>\n\nCrafting already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nСоздание уже идёт.</Russian>
+		  <Russian>\n\nУже создаётся.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al bezig met creëren</Dutch>
 		  <French></French>
@@ -3158,7 +3158,7 @@
 		  <Original>\n\nCanceled crafting.</Original>
 		  <English>\n\nCanceled crafting.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСоздание отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nCreatie gestopt.</Dutch>
 		  <French></French>
@@ -3168,7 +3168,7 @@
 		  <Original>\n\nFishing already in progress.</Original>
 		  <English>\n\nFishing already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nЛовля рыбы уже идёт.</Russian>
+		  <Russian>\n\nВы уже рыбачите.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nAfmaken van creatie is al bezig.</Dutch>
 		  <French></French>
@@ -3198,7 +3198,7 @@
 		  <Original>\n\nCanceled Fishing.</Original>
 		  <English>\n\nCanceled Fishing.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nРыбалка отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met vissen.</Dutch>
 		  <French></French>
@@ -3218,7 +3218,7 @@
 		  <Original>\n\nNibble... Nibble...</Original>
 		  <English>\n\nNibble... Nibble...</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nЛовись... Ловись... рыбка...</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nDobber.. Dobber..</Dutch>
 		  <French></French>
@@ -3238,7 +3238,7 @@
 		  <Original>\n\nHarvest already in progress.</Original>
 		  <English>\n\nHarvest already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nСбор уже идёт.</Russian>
+		  <Russian>\n\nУже собирается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al aan het oogsten.</Dutch>
 		  <French></French>
@@ -3248,7 +3248,7 @@
 		  <Original>\n\nCanceled Harvesting.</Original>
 		  <English>\n\nCanceled Harvesting.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nСбор отменён.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met oogsten.</Dutch>
 		  <French></French>
@@ -3268,7 +3268,7 @@
 		  <Original>\n\nOpen Crate already in progress.</Original>
 		  <English>\n\nOpen Crate already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nОткрытие ящика уже идёт.</Russian>
+		  <Russian>\n\nЯщик уже открывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent de kist al aan het openmaken.</Dutch>
 		  <French></French>
@@ -3308,7 +3308,7 @@
 		  <Original>\n\nOre Mining already in progress.</Original>
 		  <English>\n\nOre Mining already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nДобытие руды уже идёт.</Russian>
+		  <Russian>\n\nРуда уже добывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al erts aan het ontginnen.</Dutch>
 		  <French></French>
@@ -3318,7 +3318,7 @@
 		  <Original>\n\nCancelled Mining Ore.</Original>
 		  <English>\n\nCancelled Mining Ore.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nДобыча руды отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met erts ontginnen.</Dutch>
 		  <French></French>
@@ -3348,7 +3348,7 @@
 		  <Original>\n\nChanging clothes already in progress.</Original>
 		  <English>\n\nChanging clothes already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nПереодевание уже идёт.</Russian>
+		  <Russian>\n\nВы уже переодеваетесь.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent je al aan het omkleden.</Dutch>
 		  <French></French>
@@ -3368,7 +3368,7 @@
 		  <Original>\n\nYou may not change clothes while in a vehicle</Original>
 		  <English>\n\nYou may not change clothes while in a vehicle</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nВы не можете переодеваться, когда вы в автомобиле</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden in een voertuig</Dutch>
 		  <French></French>
@@ -3378,7 +3378,7 @@
 		  <Original>\n\nYou cannot wear a skin of the opposite sex.</Original>
 		  <English>\n\nYou cannot wear a skin of the opposite sex.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nВы не можете одеть одежду противоположного пола.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
 		  <French></French>
@@ -3388,7 +3388,7 @@
 		  <Original>Canceled refuel.</Original>
 		  <English>Canceled refuel.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Заправка отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bijtanken gestopt.</Dutch>
 		  <French></French>
@@ -3408,7 +3408,7 @@
 		  <Original>Cannot remove running generator.</Original>
 		  <English>Cannot remove running generator.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Невозможно убрать работающий генератор.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
 		  <French></French>
@@ -3438,7 +3438,7 @@
 		  <Original>Repair already in progress.</Original>
 		  <English>Repair already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Уже чинится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al reeds gerepareerd.</Dutch>
 		  <French></French>
@@ -3448,7 +3448,7 @@
 		  <Original>Canceled Repair.</Original>
 		  <English>Canceled Repair.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Починка отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reparatie afgebroken.</Dutch>
 		  <French></French>
@@ -3488,7 +3488,7 @@
 		  <Original>Trading already in progress.</Original>
 		  <English>Trading already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы уже торгуете.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met handellen.</Dutch>
 		  <French></French>
@@ -3518,7 +3518,7 @@
 		  <Original>Preparing stop generator, move to cancel.</Original>
 		  <English>Preparing stop generator, move to cancel.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Подготовка к остановке генератора, двигайтесь для отмены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het uitschakellen van de generator word voorbereid, beweeg om te annuleren.</Dutch>
 		  <French></French>
@@ -3528,7 +3528,7 @@
 		  <Original>Generator has been stopped.</Original>
 		  <English>Generator has been stopped.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Генератор был остановлен.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>De generator is uitgeschakeld.</Dutch>
 		  <French></French>
@@ -3558,7 +3558,7 @@
 		  <Original>Cannot trade while another player is nearby.</Original>
 		  <English>Cannot trade while another player is nearby.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Невозможно торговать, когда другой игрок находится поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet handellen met een andere speler in de buurt.</Dutch>
 		  <French></French>
@@ -3568,7 +3568,7 @@
 		  <Original>Starting trade, stand still to complete trade.</Original>
 		  <English>Starting trade, stand still to complete trade.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Торговля началась, стойте на месте, чтобы завершить торговлю.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met handellen, blijf stilstaan om af te ronden.</Dutch>
 		  <French></French>
@@ -3578,7 +3578,7 @@
 		  <Original>Canceled Trade.</Original>
 		  <English>Canceled Trade.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Торговля отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handel geannuleerd.</Dutch>
 		  <French></French>
@@ -3588,7 +3588,7 @@
 		  <Original>You do not have enough room on your toolbelt.</Original>
 		  <English>You do not have enough room on your toolbelt.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>У вас не достаточно места на вашем поясе.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je gereedschapsriem zit vol.</Dutch>
 		  <French></French>
@@ -3608,7 +3608,7 @@
 		  <Original>Planning construction stand still 5 seconds to build.</Original>
 		  <English>Planning construction stand still 5 seconds to build.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Планирование строительства стойте на месте 5 секунд, чтобы построить.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het bouwen wordt voorbereid, sta 5 seconden stil om te bouwen.</Dutch>
 		  <French></French>
@@ -3618,7 +3618,7 @@
 		  <Original>You cannot place a Safe here. The area must be flat, and free of other objects</Original>
 		  <English>You cannot place a Safe here. The area must be flat, and free of other objects</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы не можете разместить сейф здесь. Область должна быть плоской, и свободной от других объектов</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -3628,7 +3628,7 @@
 		  <Original>Canceled construction of Safe.</Original>
 		  <English>Canceled construction of Safe.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Строительство сейфа отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het bouwen van de kluis is stopgezet.</Dutch>
 		  <French></French>
@@ -3648,17 +3648,17 @@
 		  <Original>You have an outdated version of epoch please download the correct version</Original>
 		  <English>You have an outdated version of epoch please download the correct version</English>
 		  <German></German>
-		  <Russian>У вас устаревшая версия "epoch", загрузите правильную версию</Russian>
+		  <Russian>У вас устаревшая версия DayZ Epoch, загрузите правильную версию</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt een verouderde versie van epoch.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_114">
-		  <Original>Could not retrieve date and time from server disconect and retry.</Original>
-		  <English>Could not retrieve date and time from server disconect and retry.</English>
+		  <Original>Could not retrieve date and time from server disconnect and retry.</Original>
+		  <English>Could not retrieve date and time from server disconnect and retry.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Не удалось получить дату и время с сервера отключитесь и повторите попытку.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het is niet gelukt om de datum en tijd van de server op te halen \nVerbreek de verbinding en probeer het opnieuw.</Dutch>
 		  <French></French>
@@ -3668,7 +3668,7 @@
 		  <Original>You cannot lock this %1, you do not know the combination.</Original>
 		  <English>You cannot lock this %1, you do not know the combination.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы не можете закрыть 1%, вы не знаете комбинации.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt deze %1 niet op slot zetten, je weet de combinatie niet.</Dutch>
 		  <French></French>
@@ -3688,7 +3688,7 @@
 		  <Original>Your %1 has been locked</Original>
 		  <English>Your %1 has been locked</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Ваш %1 закрыт</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je %1 staat nu op slot</Dutch>
 		  <French></French>
@@ -3708,7 +3708,7 @@
 		  <Original>You cannot pack this %1, you do not know the combination.</Original>
 		  <English>You cannot pack this %1, you do not know the combination.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы не можете упаковать 1%, вы не знаете комбинации.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
 		  <French></French>
@@ -3728,7 +3728,7 @@
 		  <Original>Packing %1 move from this position to cancel within 5 seconds.</Original>
 		  <English>Packing %1 move from this position to cancel within 5 seconds.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Упаковывание 1% сдвиньтесь с этой позиции, чтобы отменить (В течение 5 секунд).</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
 		  <French></French>
@@ -3778,7 +3778,7 @@
 		  <Original>Combination incorrect, %1 is still locked.</Original>
 		  <English>Combination incorrect, %1 is still locked.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Комбинация неправильна, %1 по-прежнему закрыт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
 		  <French></French>
