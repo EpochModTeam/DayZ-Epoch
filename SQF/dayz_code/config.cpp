@@ -85,12 +85,20 @@ class CfgActions {
 	class Rearm : None {
 		show = 0;
 	};
+	class Heal : None {
+		show = 0;
+	};
+	class HealSoldier : None {
+		show = 0;
+	};
+	class FirstAid : None {
+		show = 0;
+	};
 	/*
 	class TakeBag : None {
 		show = 0;
 	};
 	*/
-	
 };
 
 class CfgLoadingTexts {
