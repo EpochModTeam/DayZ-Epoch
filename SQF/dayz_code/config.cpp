@@ -124,7 +124,6 @@ class RscStructuredTextGUI: RscStructuredText
 #include "Configs\CfgFaces.hpp"
 #include "Configs\CfgGlasses.hpp"
 #include "Configs\CfgMagazines.hpp"
-#include "Configs\cfgLoot.hpp"
 #include "Configs\CfgMarkers.hpp"
 #include "Configs\CfgAmmo.hpp"
 #include "Configs\CfgBuildingLoot\CfgBuildingLoot.hpp"
