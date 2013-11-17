@@ -160,17 +160,17 @@ if (typename _this == typename objnull) then {
 					bis_fnc_halo_soundLoop = time;
 				};
 
-				if(_fpsCoef != 0) then {
 				//--- Effects
-					bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.02,0.02,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef];
-					bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
-				};
+				/*
+				bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.02,0.02,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef];
+				bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
+				*/
 				sleep 0.01;
 			};
 			//--- End
 			player removeaction bis_fnc_halo_action;
 			(finddisplay 46) displayremoveeventhandler ["keydown",bis_fnc_halo_keydown_eh];
-			ppeffectdestroy bis_fnc_halo_ppRadialBlur;
+			// ppeffectdestroy bis_fnc_halo_ppRadialBlur;
 			deletevehicle bis_fnc_halo_clouds;
 
 			bis_fnc_halo_clouds = nil;
@@ -246,12 +246,14 @@ if (typename _this == typename []) then {
 	if (_unit == player) then {
 		_para setvelocity [(_vel select 0),(_vel select 1),(_vel select 2)*1];
 
+		/*
 		bis_fnc_halo_DynamicBlur = ppeffectcreate ["DynamicBlur",464];
 		bis_fnc_halo_DynamicBlur ppEffectEnable true;
 		bis_fnc_halo_DynamicBlur ppEffectAdjust [8.0];
 		bis_fnc_halo_DynamicBlur ppEffectCommit 0;
 		bis_fnc_halo_DynamicBlur ppEffectAdjust [0.0];
 		bis_fnc_halo_DynamicBlur ppEffectCommit 1;
+		*/
 
 		bis_fnc_halo_para_vel = 0;
 		bis_fnc_halo_para_velLimit = 0.5;
@@ -331,7 +333,7 @@ if (typename _this == typename []) then {
 
 		sleep 4;
 
-		ppeffectdestroy bis_fnc_halo_DynamicBlur;
+		// ppeffectdestroy bis_fnc_halo_DynamicBlur;
 		bis_fnc_halo_para_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_para_keydown;"];
 
 		//--- End
