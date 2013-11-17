@@ -33,7 +33,7 @@ _dir = getDir player;
 _classname = "WeaponHolder";
 
 //return empty crate to inventory
-player addMagazine "bulk_emtpy";
+player addMagazine "bulk_empty";
 
 // Change to optional wait to complete
 player playActionNow "Medic";
