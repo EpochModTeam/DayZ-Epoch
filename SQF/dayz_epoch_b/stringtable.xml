@@ -3885,12 +3885,12 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_137">
-		  <Original>Missing tool %1</Original>
-		  <English>Missing tool %1</English>
+		  <Original>\n\nMissing tool %1</Original>
+		  <English>\n\nMissing tool %1</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch>Ontbrekend gereedschap: %1</Dutch>
+		  <Dutch>\n\nOntbrekend gereedschap: %1</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
@@ -5294,5 +5294,45 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
-	</Package>
+    <Key ID="STR_EPOCH_PLAYER_277">
+      <Original>Craft Gun Rack</Original>
+      <English>Craft Gun Rack</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="R3F_VERSION_WEIGHTED">
+      <Original>1.04</Original>
+      <English>1.04</English>
+      <German>1.04</German>
+      <Russian>1.04</Russian>
+      <Spanish>v</Spanish>
+      <Dutch>1.04</Dutch>
+      <French>1.04</French>
+      <Czech>1.04</Czech>
+    </Key>
+    <Key ID="STR_R3F_WEIGHT_InGearBox">
+      <Original>%1 | Weight carried : %2 lb</Original>
+      <English>%1 | Weight carried : %2 lb</English>
+      <German>%1 | Poids transporté : %2 Kg</German>
+      <Russian>%1 | Poids transporté : %2 Kg</Russian>
+      <Spanish>%1 | Poids transporté : %2 Kg</Spanish>
+      <Dutch>%1 | Poids transporté : %2 Kg</Dutch>
+      <French>%1 | Poids transporté : %2 Kg</French>
+      <Czech>%1 | Poids transporté : %2 Kg</Czech>
+    </Key>
+    <Key ID="STR_R3F_WEIGHT_English">
+      <Original>lb</Original>
+      <English>lb</English>
+      <German>Kg</German>
+      <Russian>Kg</Russian>
+      <Spanish>Kg</Spanish>
+      <Dutch>Kg</Dutch>
+      <French>Kg</French>
+      <Czech>Kg</Czech>
+    </Key>
+  </Package>
 </Project>
