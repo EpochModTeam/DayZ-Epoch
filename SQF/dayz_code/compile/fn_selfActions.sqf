@@ -330,8 +330,6 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		// gear access on surrendered player
 		if(_isMan and !_isZombie and !_isAnimal) then {
 			_isSurrendered = _cursorTarget getVariable ["DZE_Surrendered",false];
-
-			diag_log format["DZE_Surrendered: %1", _isSurrendered];
 			if (_isSurrendered) then {
 				_player_SurrenderedGear = true;
 			};
