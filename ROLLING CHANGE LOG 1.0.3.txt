@@ -29,6 +29,7 @@
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
 * [UPDATED] Trading log-system (server-side) was improved. @Skaronator
 
+* [FIXED] Fixed unable being able to sell satchel charges. @vbawol
 * [FIXED] Fix for diag_log statement when player buying vehicles @Torndeco
 * [FIXED] Building on roads no longer allowed as it was intended. @dayz10k
 * [FIXED] M4SPR spawns now with 30 Rnds Stanag mags and not anymore with 20 Rnds. @Skaronator
