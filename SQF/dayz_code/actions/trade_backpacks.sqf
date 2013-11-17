@@ -84,8 +84,8 @@ if (_qty >= _qty_in) then {
 		if (_qty >= _qty_in) then {
 
 			//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-			if (isNil _bag) then { _bag = "Unknown Backpack" };
-			if (isNil inTraderCity) then { inTraderCity = "Unknown Trader City" };
+			if (isNil "_bag") then { _bag = "Unknown Backpack" };
+			if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
 			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_bag,inTraderCity];
 			publicVariableServer  "PVDZE_obj_Trade";
 	
