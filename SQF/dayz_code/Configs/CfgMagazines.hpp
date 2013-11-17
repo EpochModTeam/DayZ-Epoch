@@ -1334,7 +1334,7 @@ class CfgMagazines {
 					text = "$STR_EPOCH_PLAYER_276";
 					script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 					neednearby[] = {"fire"};
-					requiretools[] = {"ItemToolbox","ItemHatchet"};
+					requiretools[] = {"ItemToolbox"};
 					output[] = {{"ItemFireBarrel_kit",1}};
 					input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
 			};
