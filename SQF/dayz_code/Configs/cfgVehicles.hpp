@@ -1933,7 +1933,7 @@ class CfgVehicles {
 		// destrType = "DestructNo";
 		cost = 100;
 		offset[] = {0,2,0};
-		model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d"; 
+		//model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d"; 
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
 		armor = 400;
