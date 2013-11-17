@@ -233,7 +233,7 @@ if (_canDo) then {
 			};
 		} else {
 			_textMissing = getText(configFile >> "CfgWeapons" >> _missing >> "displayName");
-			cutText [format[(localize "str_epoch_player_153"),_textMissing], "PLAIN DOWN"];
+			cutText [format[(localize "STR_EPOCH_PLAYER_137"),_textMissing], "PLAIN DOWN"];
 			_craft_doLoop = false;
 		};
 	};
