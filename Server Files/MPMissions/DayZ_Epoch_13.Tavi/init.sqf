@@ -25,8 +25,6 @@ MaxVehicleLimit = 400; // Default = 50
 MaxDynamicDebris = 700; // Default = 100
 dayz_MapArea = 20000; // Default = 10000
 
-dayz_sellDistance = 40;
-
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 
