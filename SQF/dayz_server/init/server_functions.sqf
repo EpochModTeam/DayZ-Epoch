@@ -380,6 +380,7 @@ spawn_ammosupply = {
 	};
 };
 
+DZE_LocalRoadBlocks = [];
 
 spawn_roadblocks = {
 	private ["_position","_veh","_istoomany","_marker","_spawnveh","_WreckList"];
@@ -412,15 +413,19 @@ spawn_roadblocks = {
 				_marker setMarkerText str(_spawnveh);
 			};
 			
+			// fill array with classes and positions [class,pos,dir]
+			DZE_LocalRoadBlocks set [count DZE_LocalRoadBlocks,[_spawnveh,_position,round(random 360)]];
+			
 			//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
-			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
-			_veh enableSimulation false;
+			
+			//_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+			//_veh enableSimulation false;
 
 			// Randomize placement a bit
-			_veh setDir round(random 360);
-			_veh setpos _position;
+			//_veh setDir round(random 360);
+			//_veh setpos _position;
 
-			_veh setVariable ["ObjectID","1",true];
+			//_veh setVariable ["ObjectID","1",true];
 		};
 	
 	};

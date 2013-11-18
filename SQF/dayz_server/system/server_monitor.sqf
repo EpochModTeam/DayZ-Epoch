@@ -13,35 +13,11 @@ diag_log "HIVE: Starting";
 
 waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug during login of the first player)
 
-//Set the Time
-//Send request
-_key = "CHILD:307:";
-_result = _key call server_hiveReadWrite;
-_outcome = _result select 0;
-if(_outcome == "PASS") then {
-	_date = _result select 1; 
-		
-	if(dayz_fullMoonNights) then {
-		//date setup
-		//_year = _date select 0;
-		//_month = _date select 1;
-		//_day = _date select 2;
-		_hour = _date select 3;
-		_minute = _date select 4;
-		
-		//Force full moon nights
-		_date = [2013,8,3,_hour,_minute];
-	};
-		
-	if(isDedicated) then {
-		setDate _date;
-		PVDZE_plr_SetDate = _date;
-		publicVariable "PVDZE_plr_SetDate";
-	};
+//Set Time
+call server_timeSync;
 
-	diag_log ("HIVE: Local Time set to " + str(_date));
-};
-
+// set Weather
+call server_weather;
 	
 // Custom Configs
 if(isnil "MaxVehicleLimit") then {
@@ -323,7 +299,7 @@ if (isServer and isNil "sm_done") then {
 	//  spawn_roadblocks
 	diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
 	for "_x" from 1 to MaxDynamicDebris do {
-		[] spawn spawn_roadblocks;
+		[] call spawn_roadblocks;
 	};
 	//  spawn_ammosupply at server start 1% of roadblocks
 	diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));

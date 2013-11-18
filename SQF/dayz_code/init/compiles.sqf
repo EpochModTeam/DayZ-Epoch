@@ -64,6 +64,8 @@ if (!isDedicated) then {
 	object_roadFlare = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_roadFlare.sqf";
 	object_setpitchbank	=		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_setpitchbank.sqf";
 	object_monitorGear =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_monitorGear.sqf";
+
+	local_roadDebris =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_roadDebris.sqf";
 	
 	//Zombies
 	zombie_findTargetAgent = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_findTargetAgent.sqf";
@@ -123,6 +125,55 @@ if (!isDedicated) then {
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"dayz_preloadFinished = true;";
 	
+
+	//This is still needed but the fsm should terminate if any errors pop up.
+	[] spawn {
+        private["_timeOut","_display","_control1","_control2"];
+        disableSerialization;
+        _timeOut = 0;
+        dayz_loadScreenMsg = "";
+        diag_log "DEBUG: loadscreen guard started.";
+        _display = uiNameSpace getVariable "BIS_loadingScreen";
+        if (!isNil "_display") then {
+                _control1 = _display displayctrl 8400;
+                _control2 = _display displayctrl 102;
+        };
+                
+        waitUntil {!dayz_DisplayGenderSelect};
+                
+        // 120 sec timeout (12000 * 0.01)
+        while { _timeOut < 12000 } do {
+            if (dayz_clientPreload && dayz_authed) exitWith { diag_log "PLOGIN: Login loop completed!"; };
+            if (!isNil "_display") then {
+                if ( isNull _display ) then {                        
+                        waitUntil { !dialog; };                                
+                        startLoadingScreen ["","RscDisplayLoadCustom"];
+                        _display = uiNameSpace getVariable "BIS_loadingScreen";
+                        _control1 = _display displayctrl 8400;
+                        _control2 = _display displayctrl 102;
+                };
+
+                if ( dayz_loadScreenMsg != "" ) then {
+                        _control1 ctrlSetText dayz_loadScreenMsg;
+                        dayz_loadScreenMsg = "";
+                };
+
+                _control2 ctrlSetText format["%1",round(_timeOut*0.01)];
+            };
+
+            _timeOut = _timeOut + 1;
+
+            if (_timeOut >= 12000) then {
+                1 cutText [localize "str_player_login_timeout", "PLAIN DOWN"];
+                sleep 10;
+                endLoadingScreen;
+                endMission "END1";
+            };
+
+            sleep 0.01;
+        };
+	};
+
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
 	[] spawn {

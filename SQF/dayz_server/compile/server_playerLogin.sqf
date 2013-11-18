@@ -128,7 +128,7 @@ if (!_isNew) then {
 };
 
 #ifdef DZE_SERVER_DEBUG
-diag_log ("LOGIN LOADED: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
+diag_log ("LOGIN LOADED: " + str(_playerObj) + " Type: " + (typeOf _playerObj) + " at location: " + (getPosATL _playerObj));
 #endif
 
 _isHiveOk = false;

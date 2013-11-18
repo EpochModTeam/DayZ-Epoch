@@ -30,7 +30,7 @@ if (!isNull _playerObj) then {
 		_playerObj setVariable["NORRN_unconscious",true, true];
 		_playerObj setVariable["unconsciousTime",300,true];
 	
-		diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
+		diag_log format["COMBAT LOGGED: %1 (%2) at location %3", _playerName,_timeout,(getPosATL _playerObj)];
 		//diag_log format["SET UNCONCIOUSNESS: %1", _playerName];
 	
 		// Message whole server when player combat logs
@@ -38,7 +38,7 @@ if (!isNull _playerObj) then {
 		[nil,nil,"per",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
 	};
 
-	diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerUID,_playerObj,_characterID];
+	diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4 at loc %5", _playerName,_playerUID,_playerObj,_characterID, (getPosATL _playerObj)];
 
 	_id = [_playerUID,_characterID,2] spawn dayz_recordLogin;
 
