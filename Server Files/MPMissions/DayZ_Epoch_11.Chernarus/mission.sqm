@@ -1359,8 +1359,8 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="zoneklen";
-			expCond="(player distance zoneklen) < 100;";
+			name="zonebandit";
+			expCond="(player distance zonebandit) < 100;";
 			expActiv="canbuild = false; inTraderCity = ""Bandit Trader"";";
 			expDesactiv="canbuild = true; inTraderCity = ""Any"";";
 			class Effects
@@ -1376,8 +1376,8 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="zoneklen";
-			expCond="(player distance zoneklen) < 100;";
+			name="zonehero";
+			expCond="(player distance zonehero) < 100;";
 			expActiv="canbuild = false; inTraderCity = ""Hero Trader"";";
 			expDesactiv="canbuild = true; inTraderCity = ""Any"";";
 			class Effects
