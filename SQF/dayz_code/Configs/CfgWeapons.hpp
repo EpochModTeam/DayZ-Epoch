@@ -84,4 +84,7 @@ class CfgWeapons {
 //	#include "CfgWeapons\Weapon\Sniper\DMR_DZ2.hpp"
 //	#include "CfgWeapons\Weapon\Sniper\DMR_DZ3.hpp"
 	#include "CfgWeapons\Weapon\Pistol\MakerovSD.hpp"
+	#include "CfgWeapons\Weapon\LMG\m240_scoped.hpp"
+	#include "CfgWeapons\Weapon\LMG\m249_scoped.hpp"
+	#include "CfgWeapons\Weapon\LMG\M60A4.hpp"
 };
