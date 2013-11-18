@@ -1,7 +1,7 @@
 class ItemKeyKit: ItemCore {
 	scope = 2;
-	displayname = $STR_EPOCH_PLAYER_295;
+	displayname = $STR_EQUIP_KEYKIT;
 	model="\z\addons\dayz_epoch\models\keykit.p3d";
-	descriptionShort=$STR_EPOCH_PLAYER_296;
+	descriptionShort=$STR_EQUIP_KEYKIT_DESC;
 	picture="\z\addons\dayz_epoch\pictures\equip_keykit_ca.paa";
 };
