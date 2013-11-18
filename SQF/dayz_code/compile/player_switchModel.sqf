@@ -205,7 +205,9 @@ diag_log str(getMagazineCargo unitBackpack _newUnit);
 	
 	player setVariable ["bodyName",dayz_playerName,true];
 
+	/*
 	_playerUID=getPlayerUID player;
 	_playerObjName = format["player%1",_playerUID];
 	call compile format["%1 = player;",_playerObjName];
 	publicVariable _playerObjName;
+	*/
