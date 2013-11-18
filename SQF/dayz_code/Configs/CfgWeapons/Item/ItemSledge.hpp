@@ -1,15 +1,15 @@
 class ItemSledge: ItemCore
 {
 	scope=2;
-	displayName=$STR_EPOCH_PLAYER_297;
+	displayName=$STR_EQUIP_SLEDGE;
 	model="\z\addons\dayz_epoch\models\sledge_mag.p3d";
 	picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa";
-	descriptionShort=$STR_EPOCH_PLAYER_298;
+	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
 	class ItemActions
 	{
 		class Toolbelt
 		{
-			text="STR_EPOCH_PLAYER_299";
+			text="STR_EPOCH_PLAYER_295";
 			script="spawn player_addToolbelt;";
 			use[]=
 			{
