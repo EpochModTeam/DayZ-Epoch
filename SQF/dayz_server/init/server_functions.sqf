@@ -604,6 +604,7 @@ dayz_perform_purge = {
 	_this removeAllEventHandlers "Killed";
 	_this removeAllEventHandlers "Fired";
 	_this removeAllEventHandlers "GetOut";
+	_this removeAllEventHandlers "GetIn";
 	_this removeAllEventHandlers "Local";
 	clearVehicleInit _this;
 	deleteVehicle _this;
