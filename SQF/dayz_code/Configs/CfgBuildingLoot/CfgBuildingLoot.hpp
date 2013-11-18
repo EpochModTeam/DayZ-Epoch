@@ -693,7 +693,12 @@ class CfgBuildingLoot {
 			{"ItemSandbag","magazine"},
 			{"Sa58P_EP1","weapon"},
 			{"Sa58V_EP1","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"}
+			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"Saiga12K","weapon" },
+			{"Bizon","weapon" },
+			{"M8_SAW","weapon" },
+			{"MG36","weapon" },
+			{"RPK_74","weapon" },
 		};
 		itemChance[] =	{
 			0.01,
@@ -731,7 +736,12 @@ class CfgBuildingLoot {
 			0.02,
 			0.01,
 			0.02,
-			0.01
+			0.01,
+			0.02, //saiga
+			0.02, //bizon
+			0.01, //m8_saw
+			0.01, //mg36
+			0.01  //rpk_74
 		};
 		itemTypeSmall[] = {
 			{ "M9","weapon" },
@@ -808,7 +818,9 @@ class CfgBuildingLoot {
 			{"Sa58V_EP1","weapon"},
 			{"BAF_L85A2_RIS_Holo","weapon"},
 			{"ItemFuelBarrel","magazine"},
-			{"ItemFuelPump","magazine"}
+			{"ItemFuelPump","magazine"},
+			{"RPK_74","weapon"},
+			{"Saiga12K","weapon"}
 		};
 		itemChance[] =	{
 			0.01,
@@ -844,6 +856,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.02,
 			0.03,
+			0.01,
+			0.01,
 			0.01,
 			0.01,
 			0.01,
@@ -934,7 +948,11 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine"},
 			{ "militaryclothes","single" },
 			{"NVGoggles","weapon"},
-			{ "militaryammo","single" }
+			{ "militaryammo","single" },
+			{"M60A4_EP1_DZE","weapon" },
+			{"m240_scoped_EP1_DZE","weapon" },
+			{"M249_m145_EP1_DZE","weapon" },
+			{"MG36_camo","weapon" },
 		};
 		itemChance[] =	{
 			0.01,
@@ -982,7 +1000,11 @@ class CfgBuildingLoot {
 			0.02,
 			0.01,
 			0.01,
-			0.03
+			0.03,
+			0.01, //m60
+			0.01, //m240_scoped
+			0.01, //m249 scoped
+			0.01  //mg36 camo
 		};
 		itemTypeSmall[] = {
 			{ "M9SD","weapon" },
@@ -1004,7 +1026,8 @@ class CfgBuildingLoot {
 			{"29Rnd_30mm_AGS30","magazine"},
 			{"50Rnd_127x107_DSHKM","magazine"},
 			{"48Rnd_40mm_MK19","magazine"},
-			{"100Rnd_127x99_M2","magazine"}
+			{"100Rnd_127x99_M2","magazine"},
+			{"100Rnd_556x45_BetaCMag","magazine" }
 		};
 		itemChanceSmall[] =	{
 			0.04,
@@ -1026,6 +1049,7 @@ class CfgBuildingLoot {
 			0.02,
 			0.03,
 			0.03,
+			0.02,
 			0.02
 		};
 	};
@@ -2016,6 +2040,8 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemMachete", "object"},
 			{ "SCAR_H_LNG_Sniper_SD","weapon" },
 			{"2000Rnd_762x51_M134","magazine"},
+			{"KSVK","weapon" },
+			{"m240_scoped_EP1_DZE","weapon" }
 		};
 		itemChance[] =	{
 			0.03,
@@ -2070,7 +2096,9 @@ class CfgBuildingLoot {
 			0.05,
 			0.02,
 			0.01,
-			0.01
+			0.01,
+			0.01, //ksvk
+			0.01 //m240 scoped
 		};
 	};
 	class Land_House_C_1_EP1: Residential
