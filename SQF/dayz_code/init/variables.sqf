@@ -648,6 +648,8 @@ if(!isDedicated) then {
 		DZE_HaloJump = true;
 	};
 	
+	DZE_FreshSpawn = false;
+	
 	DZE_myHaloVehicle = objNull;
 	
 	DZE_Friends = [];

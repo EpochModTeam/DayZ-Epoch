@@ -233,7 +233,7 @@ _playerObj setVariable["humanity_CHK",_humanity];
 //_playerObj setVariable["state",_state,true];
 _playerObj setVariable["lastPos",getPosATL _playerObj];
 
-dayzPlayerLogin2 = [_worldspace,_state,PVDZE_plr_SetWeather,PVDZE_plr_SetDate];
+dayzPlayerLogin2 = [_worldspace,_state,PVDZE_plr_SetWeather,PVDZE_plr_SetDate,_randomSpot];
 _clientID = owner _playerObj;
 _clientID publicVariableClient "dayzPlayerLogin2";
 

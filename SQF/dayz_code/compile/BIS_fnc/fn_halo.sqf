@@ -111,7 +111,7 @@ if (typename _this == typename objnull) then {
 		[] spawn {
 			_time = time - 0.1;
 			while {alive player && vehicle player == player && isnil {player getvariable "bis_fnc_halo_terminate"}} do {
-
+			
 				//--- FPS counter
 				_fpsCoef = ((time - _time) * 60) / acctime; //Script is optimized for 60 FPS
 				_time = time;
