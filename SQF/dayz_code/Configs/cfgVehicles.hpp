@@ -9,6 +9,8 @@ class CfgVehicles {
 	#include "CfgVehicles\Zeds\NewZeds.hpp"
 	#include "CfgVehicles\Zeds\PlayerZeds.hpp"
 	#include "CfgVehicles\Females\females.hpp"
+	#include "CfgVehicles\antihack_logic.hpp"
+	#include "CfgVehicles\antihack_plants.hpp"
 
 	class All;
 	
