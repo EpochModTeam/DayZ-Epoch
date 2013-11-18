@@ -2582,6 +2582,27 @@
 			<French>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</French>
 			<Czech>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_CROWBAR">
+		      <Original>Crowbar</Original>
+		      <English>Crowbar</English>
+		      <German>Brechstange</German>
+		      <Russian>aншпуг</Russian>
+		      <Spanish>Palanca</Spanish>
+		      <Dutch>Breekijzer</Dutch>
+		      <French>Pied de Biche</French>
+		      <Czech>Sochor</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_CROWBAR_DESC">
+			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
+			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Dutch></Dutch>
+			<French></French>
+			<Czech></Czech>
+		</Key>
+
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_PLAYER_1">
@@ -5543,6 +5564,16 @@
       <Dutch></Dutch>
       <French></French>
       <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_297">
+      <Original>Cast Fishing Pole</Original>
+      <English>Cast Fishing Pole</English>
+      <German>Cast Fishing Pole</German>
+      <Russian>Cast Fishing Pole</Russian>
+      <Spanish>Cast Fishing Pole</Spanish>
+      <Dutch>Cast Fishing Pole</Dutch>
+      <French>Cast Fishing Pole</French>
+      <Czech>Cast Fishing Pole</Czech>
     </Key>
     <Key ID="R3F_VERSION_WEIGHTED">
       <Original>1.04</Original>
