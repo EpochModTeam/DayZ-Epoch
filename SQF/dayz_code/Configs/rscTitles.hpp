@@ -966,7 +966,7 @@ class RscDisplayGear
 			idc = 1001;
 			x = 0.047634;
 			y = -0.00102941;
-			text = "Gear";
+			text = $STR_EPOCH_PLAYER_278;
 		};
 
 		class Unit_Title : RscText {
@@ -1520,7 +1520,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 3"};
 			x = 0.333336;
 			y = 0.897067;
-			text = "Filter";
+			text = $STR_EPOCH_PLAYER_279;
 		};
 		class ButtonRearm: RscIGUIShortcutButton
 		{
@@ -1528,7 +1528,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 2"};
 			x = 0.554743;
 			y = 0.897067;
-			text = "Rearm";
+			text = $STR_EPOCH_PLAYER_280;
 		};
 		class ButtonOpenBag: RscIGUIShortcutButton
 		{
@@ -1536,7 +1536,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 2"};
 			x = 0.554743;
 			y = 0.897067;
-			text = "Open bag";
+			text = $STR_EPOCH_PLAYER_281;
 		};
 		class ButtonCloseBag: RscIGUIShortcutButton
 		{
@@ -1544,7 +1544,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 2"};
 			x = 0.554743;
 			y = 0.897067;
-			text = "Close bag";
+			text = $STR_EPOCH_PLAYER_282;
 		};
 		class ButtonContinue: RscIGUIShortcutButton
 		{
@@ -1560,38 +1560,38 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 1"};
 			x = 0.0392216;
 			y = 0.897066;
-			text = "Close";
+			text = $STR_EPOCH_PLAYER_283;
 		};
 	};
 	class Filters
 	{
 		class All
 		{
-			name = "All";
+			name = $STR_EPOCH_PLAYER_284;
 			mask = -1;
 			image = "\ca\ui\data\igui_gear_filter_1_ca.paa";
 		};
 		class Primary
 		{
-			name = "Primary";
+			name = $STR_EPOCH_PLAYER_285;
 			mask = 769;
 			image = "\ca\ui\data\igui_gear_filter_2_ca.paa";
 		};
 		class Secondary
 		{
-			name = "Secondary";
+			name = $STR_EPOCH_PLAYER_286;
 			mask = 516;
 			image = "\ca\ui\data\igui_gear_filter_3_ca.paa";
 		};
 		class HandGun
 		{
-			name = "HandGun";
+			name = $STR_EPOCH_PLAYER_287;
 			mask = 18;
 			image = "\ca\ui\data\igui_gear_filter_4_ca.paa";
 		};
 		class Items
 		{
-			name = "Items";
+			name = $STR_EPOCH_PLAYER_288;
 			mask = 135168;
 			image = "\ca\ui\data\igui_gear_filter_5_ca.paa";
 		};
