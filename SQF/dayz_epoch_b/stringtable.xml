@@ -5484,6 +5484,36 @@
       <French></French>
       <Czech></Czech>
     </Key>
+    <Key ID="STR_EPOCH_PLAYER_297">
+      <Original>Sledgehammer</Original>
+      <English>Sledgehammer</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_298">
+      <Original>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Original>
+      <English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_299">
+      <Original>Remove from toolbelt.</Original>
+      <English>Remove from toolbelt.</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
     <Key ID="R3F_VERSION_WEIGHTED">
       <Original>1.04</Original>
       <English>1.04</English>
