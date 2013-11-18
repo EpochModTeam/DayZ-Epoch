@@ -1618,7 +1618,7 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructNo";
 		cost = 100;
-		offset[] = {0,1.5,0};
+		offset[] = {0,1.5,0.55};
 		model = "\ca\misc\jezek_kov";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
@@ -1627,6 +1627,7 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		constructioncount = 1;
 		removeoutput[] = {{"ItemTankTrap",1}};
+		nounderground = 0;
 	};
 	// WorkBench_DZ
 	class WorkBench_DZ: BuiltItems
@@ -1645,6 +1646,7 @@ class CfgVehicles {
 		constructioncount = 1;
 		removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
 		requireplot = 0;
+		nounderground = 0;
 	};
 
 	// belt buckle
@@ -1689,6 +1691,7 @@ class CfgVehicles {
 		constructioncount = 1;
 		removeoutput[] = {{"ItemGenerator",1}};
 		requireplot = 0;
+		nounderground = 0;
 	};
 	class FuelPump_DZ: BuiltItems
 	{
@@ -1705,6 +1708,7 @@ class CfgVehicles {
 		constructioncount = 2;
 		removeoutput[] = {{"ItemFuelPump",1}};
 		requireplot = 0;
+		nounderground = 0;
 	};
 
 	class Fort_RazorWire : BuiltItems { 
@@ -1720,6 +1724,7 @@ class CfgVehicles {
 	  destrType = "DestructTent"; 
 	  armor = 100; 
 	  GhostPreview = "Fort_RazorWirePreview"; 
+	  nounderground = 0;
 	};
 
 	class Sandbag1_DZ: BuiltItems
@@ -1736,6 +1741,7 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		constructioncount = 3;
 		removeoutput[] = {{"ItemSandbag",1}};
+		nounderground = 0;
 	};
 
 	class Land_HBarrier1_DZ : BuiltItems { 
@@ -1762,6 +1768,7 @@ class CfgVehicles {
 		GhostPreview = "Land_HBarrier1Preview"; 
 		constructioncount = 4;
 		removeoutput[] = {{"ItemSandbagLarge",1}};
+		nounderground = 0;
 	};
 	class Land_HBarrier3_DZ : BuiltItems { 
 		model = "\ca\misc2\HBarrier3.p3d"; 
@@ -1787,6 +1794,7 @@ class CfgVehicles {
 		offset[] = {0,2.5,0};
 		constructioncount = 8;
 		removeoutput[] = {{"ItemSandbagExLarge",1}};
+		nounderground = 0;
 	};
 		
 	class SandNest_DZ : BuiltItems { 
@@ -1810,6 +1818,7 @@ class CfgVehicles {
 		nameSound = "obj_house"; 
 		offset[] = {0,3,1};
 		removeoutput[] = {{"sandbag_nest_kit",1}};
+		nounderground = 0;
 	};
 
 	class Supply_Crate_DZE: MiningItems
@@ -1941,19 +1950,20 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		constructioncount = 2;
 		removeoutput[] = {{"ItemFireBarrel_kit",1}};
-		requireplot = 0;
+		nounderground = 0;
 	};
 	class Gunrack1;
 	class GunRack_DZ: Gunrack1
-        {
+    {
 		armor = 200;
 		scope = 2;
 		displayName = "Gun Rack";
-                vehicleClass = "Fortifications";
-                transportMaxWeapons = 20;
-                offset[] = {0,2.5,0};
-                removeoutput[] = {{"ItemGunRackKit",1}};
-        };
+		vehicleClass = "Fortifications";
+		transportMaxWeapons = 20;
+		offset[] = {0,2.5,0};
+		removeoutput[] = {{"ItemGunRackKit",1}};
+		nounderground = 0;
+    };
 	// modular
 	class MetalFloor_DZ: ModularItems
 	{
@@ -2751,6 +2761,7 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		removeoutput[] = {{"30m_plot_kit",1}};
 		requireplot = 0;
+		nounderground = 0;
 	};
 	class USMC_WarfareBMGNest_M240;
 	class M240Nest_DZ: USMC_WarfareBMGNest_M240
@@ -2895,6 +2906,7 @@ class CfgVehicles {
 		removeoutput[] = {{"ItemCorrugated",1}};
 		displayName = "Corrugated Fence";
 		vehicleClass = "Fortifications";
+		nounderground = 0;
 		
 	};
 	class Land_kulna;
@@ -2910,6 +2922,7 @@ class CfgVehicles {
 		transportMaxWeapons = 10;
 		transportMaxBackpacks = 5;
 		constructioncount = 5;
+		nounderground = 0;
 	};
 	class Land_Shed_wooden;
 	class Wooden_shed_DZ: Land_Shed_wooden
@@ -2924,6 +2937,7 @@ class CfgVehicles {
 		transportMaxMagazines = 200;
 		transportMaxWeapons = 20;
 		transportMaxBackpacks = 10;
+		nounderground = 0;
 	};
 	
 	class Wall_FenW2_6_EP1;
@@ -3139,6 +3153,7 @@ class CfgVehicles {
 		constructioncount = 1;
 		offset[] = {0,2.5,0};
 		requireplot = 0;
+		nounderground = 0;
 	};
 	class TentStorageDomed: TentStorage
 	{
@@ -3175,7 +3190,6 @@ class CfgVehicles {
 		transportMaxBackpacks = 10;
 		lockedClass = "VaultStorageLocked";
 		packedClass = "WeaponHolder_ItemVault";
-		requireplot = 0;
 	};	
 	class VaultStorageLocked: Land_A_tent
 	{
@@ -3192,6 +3206,7 @@ class CfgVehicles {
 		lockable = 4;
 		unlockedClass = "VaultStorage";
 		requireplot = 0;
+		nounderground = 0;
 	};
 
 	class LockboxStorageLocked: Land_A_tent
@@ -3207,7 +3222,8 @@ class CfgVehicles {
 		offset[] = {0,1.5,0.5};
 		lockable = 2;
 		unlockedClass = "LockboxStorage";
-		
+		nounderground = 0;
+		requireplot = 0;
 	};
 	class LockboxStorage: Land_A_tent
 	{
