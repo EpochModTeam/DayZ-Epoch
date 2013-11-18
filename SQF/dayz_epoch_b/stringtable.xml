@@ -5614,5 +5614,14 @@
       <French>Kg</French>
       <Czech>Kg</Czech>
     </Key>
+    <Key ID="str_player_login_timeout">
+      <English>Login timed out!\nDisconnect and try again!</English>
+      <German>Login timed out!\nDisconnect and try again!</German>
+      <Russian>Время ожидания входа истекло!\nОтключитесь и попробуйте снова!</Russian>
+      <Spanish>Tiempo de inicio de sesión excedido.\nDesconectate y prueba de nuevo.</Spanish>
+      <Dutch>Login timed out!\nDisconnect and try again!</Dutch>
+      <French>Délai de connexion dépassé\nVeuillez vous déconnecter et essayer à nouveau.</French>
+      <Czech>Dovolený čas pro přihlášení vypršel.\nOdpojte se a zkuste to znovu!</Czech>
+    </Key>
 	</Package>
 </Project>
