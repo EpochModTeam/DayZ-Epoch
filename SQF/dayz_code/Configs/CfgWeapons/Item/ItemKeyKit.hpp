@@ -1,7 +1,7 @@
 class ItemKeyKit: ItemCore {
 	scope = 2;
-	displayname = "Keymakers kit";
+	displayname = "STR_EPOCH_PLAYER_295";
 	model="\z\addons\dayz_epoch\models\keykit.p3d";
-	descriptionShort="Kit including the tools required to smelt, mold and shape keys.";
+	descriptionShort="STR_EPOCH_PLAYER_296";
 	picture="\z\addons\dayz_epoch\pictures\equip_keykit_ca.paa";
 };
