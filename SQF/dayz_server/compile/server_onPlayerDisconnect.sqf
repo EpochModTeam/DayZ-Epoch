@@ -30,7 +30,7 @@ if (!isNull _playerObj) then {
 		_playerObj setVariable["NORRN_unconscious",true, true];
 		_playerObj setVariable["unconsciousTime",300,true];
 	
-		diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
+		diag_log format["COMBAT LOGGED: %1 (%2) at location %3", _playerName,_timeout,(getPosATL _playerObj)];
 		//diag_log format["SET UNCONCIOUSNESS: %1", _playerName];
 	
 		// Message whole server when player combat logs
