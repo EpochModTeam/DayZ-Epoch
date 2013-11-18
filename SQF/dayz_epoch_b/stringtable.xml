@@ -2522,6 +2522,96 @@
 			<French>Orange Sherbet est une boisson gazeuse rafraîchissante sucrée trés pétillante.</French>
 			<Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_KEYKIT">
+			<Original>Keymakers kit</Original>
+			<English>Keymakers kit</English>
+			<German>Keymakers kit</German>
+			<Russian>Keymakers kit</Russian>
+			<Spanish>Keymakers kit</Spanish>
+			<Dutch>Keymakers kit</Dutch>
+			<French>Keymakers kit</French>
+			<Czech>Keymakers kit</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_KEYKIT_DESC">
+			<Original>Kit including the tools required to smelt, mold and shape keys.</Original>
+			<English>Kit including the tools required to smelt, mold and shape keys.</English>
+			<German>Kit including the tools required to smelt, mold and shape keys.</German>
+			<Russian>Kit including the tools required to smelt, mold and shape keys.</Russian>
+			<Spanish>Kit including the tools required to smelt, mold and shape keys.</Spanish>
+			<Dutch>Kit including the tools required to smelt, mold and shape keys.</Dutch>
+			<French>Kit including the tools required to smelt, mold and shape keys.</French>
+			<Czech>Kit including the tools required to smelt, mold and shape keys.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_SLEDGE">
+			<Original>Sledgehammer</Original>
+			<English>Sledgehammer</English>
+			<German>Vorschlaghammer</German>
+			<Russian>кувалда</Russian>
+			<Spanish>Almádena</Spanish>
+			<Dutch>Beukhamer</Dutch>
+			<French>Frappe-Devant</French>
+			<Czech>Perlík</Czech>
+		</Key>   
+		<Key ID="STR_EQUIP_SLEDGE_DESC">
+			<Original>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Original>
+			<English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
+			<German>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</German>
+			<Russian>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Russian>
+			<Spanish>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Spanish>
+			<Dutch>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Dutch>
+			<French>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</French>
+			<Czech>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_FISHPOLE">
+			<Original>Fishing Pole</Original>
+			<English>Fishing Pole</English>
+			<German>Angelrute</German>
+			<Russian>удочка</Russian>
+			<Spanish>Caña de Pesca</Spanish>
+			<Dutch>Hengelroede</Dutch>
+			<French>Canne à Pêche</French>
+			<Czech>Rybářský Prut</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_FISHPOLE_DESC">
+			<Original>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Original>
+			<English>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</English>
+			<German>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</German>
+			<Russian>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Russian>
+			<Spanish>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Spanish>
+			<Dutch>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Dutch>
+			<French>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</French>
+			<Czech>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_CROWBAR">
+		      <Original>Crowbar</Original>
+		      <English>Crowbar</English>
+		      <German>Brechstange</German>
+		      <Russian>aншпуг</Russian>
+		      <Spanish>Palanca</Spanish>
+		      <Dutch>Breekijzer</Dutch>
+		      <French>Pied de Biche</French>
+		      <Czech>Sochor</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_CROWBAR_DESC">
+			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
+			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Dutch></Dutch>
+			<French></French>
+			<Czech></Czech>
+		</Key>
+		<Key ID="$STR_EQUIP_ETOOL">
+			<Original>Etool</Original>
+			<English>Etool</English>
+			<German>Feldspaten</German>
+			<Russian>саперная лопатка</Russian>
+			<Spanish>Pala Afianzar</Spanish>
+			<Dutch></Dutch>
+			<French>Outil de Tranchée</French>
+			<Czech></Czech>
+		</Key>
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_PLAYER_1">
@@ -5463,6 +5553,36 @@
       <Dutch></Dutch>
       <French></French>
       <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_295">
+      <Original>Remove from Toolbelt.</Original>
+      <English>Remove from Toolbelt.</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_296">
+      <Original>Add to Toolbelt.</Original>
+      <English>Add to Toolbelt.</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_297">
+      <Original>Cast Fishing Pole</Original>
+      <English>Cast Fishing Pole</English>
+      <German>Cast Fishing Pole</German>
+      <Russian>Cast Fishing Pole</Russian>
+      <Spanish>Cast Fishing Pole</Spanish>
+      <Dutch>Cast Fishing Pole</Dutch>
+      <French>Cast Fishing Pole</French>
+      <Czech>Cast Fishing Pole</Czech>
     </Key>
     <Key ID="R3F_VERSION_WEIGHTED">
       <Original>1.04</Original>

@@ -1,15 +1,15 @@
 class ItemSledge: ItemCore
 {
 	scope=2;
-	displayName="Sledgehammer";
+	displayName=$STR_EQUIP_SLEDGE;
 	model="\z\addons\dayz_epoch\models\sledge_mag.p3d";
 	picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa";
-	descriptionShort="A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.";
+	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
 	class ItemActions
 	{
 		class Toolbelt
 		{
-			text="Remove from Toolbelt";
+			text="STR_EPOCH_PLAYER_295";
 			script="spawn player_addToolbelt;";
 			use[]=
 			{

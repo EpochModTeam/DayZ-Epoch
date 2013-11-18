@@ -9,7 +9,7 @@ class ItemMachete: ItemCore
 		{
 			class Toolbelt
 			{
-				text="Remove from Toolbelt";
+				text="STR_EPOCH_PLAYER_295";
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
