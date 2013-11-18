@@ -5524,6 +5524,26 @@
       <French></French>
       <Czech></Czech>
     </Key>
+    <Key ID="STR_EPOCH_PLAYER_301">
+      <Original>Fishing Pole</Original>
+      <English>Fishing Pole</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_302">
+      <Original>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Original>
+      <English>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
     <Key ID="R3F_VERSION_WEIGHTED">
       <Original>1.04</Original>
       <English>1.04</English>
