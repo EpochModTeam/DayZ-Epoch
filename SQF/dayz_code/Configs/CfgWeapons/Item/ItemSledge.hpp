@@ -9,7 +9,7 @@ class ItemSledge: ItemCore
 	{
 		class Toolbelt
 		{
-			text="Remove from Toolbelt";
+			text="STR_EPOCH_PLAYER_299";
 			script="spawn player_addToolbelt;";
 			use[]=
 			{
