@@ -24,9 +24,7 @@ if(local _v AND{(_v isKindOf"Air")})then{
 if(!isDedicated)then{
 	while{_i<1200&&((velocity _v select 2)<-20||(getPosATL _v select 2)>8)&&!(alive _v)&&!(isnull _v)&&(getPosATL _v select 2)>1}do{
 		_tv=abs(velocity _v select 0)+abs(velocity _v select 1)+abs(velocity _v select 2);
-		if(_tv>2)then{
-		_dr=1/_tv}else{
-		_dr=1};
+		_dr=if(_tv>2)then{1/_tv}else{1};
 		_fl setDropInterval _dr;
 		_sm setDropInterval _dr;
 		_i=_i+1;
