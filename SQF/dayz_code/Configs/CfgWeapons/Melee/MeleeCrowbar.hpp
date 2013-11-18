@@ -6,7 +6,7 @@ class MeleeCrowbar: MeleeWeapon
 		magazineReloadTime=0;
 		model="\dayz_weapons\models\crowbar_weaponized";
 		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
-		displayName="Crowbar";
+		displayName=$STR_EQUIP_CROWBAR;
 		droppeditem= "ItemCrowbar";
 		magazines[]=
 		{
@@ -21,7 +21,7 @@ class MeleeCrowbar: MeleeWeapon
 		{
 			class Toolbelt
 			{
-				text="Add to Toolbelt";
+				text="STR_EPOCH_PLAYER_296";
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -35,7 +35,7 @@ class MeleeCrowbar: MeleeWeapon
 		};
 		class Library
 		{
-			libTextDesc="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+			libTextDesc="STR_EQUIP_CROWBAR_DESC";
 		};
-		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+		descriptionShort="STR_EQUIP_CROWBAR_DESC";
 	};
