@@ -184,10 +184,10 @@ class FSM
     {
       name = "sync_time__and_w";
       init = /*%FSM<STATEINIT""">*/"if (DZE_DiagFpsSlow) then {" \n
-       "	[] call dze_diag_fps;" \n
+       "	call dze_diag_fps;" \n
        "};" \n
-       "[] call server_timeSync;" \n
-       "[] call server_weather;" \n
+       "call server_timeSync;" \n
+       "call server_weather;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
