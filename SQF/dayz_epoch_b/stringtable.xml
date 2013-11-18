@@ -2469,7 +2469,7 @@
 			<Russian>Опасная бритва</Russian>
 			<Spanish>Navaja</Spanish>
 			<Dutch>Scheermes</Dutch>
-			<French>Razor</French>
+			<French>Rasoir</French>
 			<Czech>Razor</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_RAZOR">						
@@ -2479,7 +2479,7 @@
 			<Russian>Старомодная опасная бритва.</Russian>
 			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
 			<Dutch>Een ouderwets nek-snijdend frans scheermes.</Dutch>
-			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
+			<French>Un traditionnel rasoir coupe-chou avec une pointe arrondie à la française.</French>
 			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_RBULL">
@@ -2499,7 +2499,7 @@
 			<Russian>Ред Булл. Энергетический напиток, продаваемый австрийской компанией Red Bull GmbH</Russian>
 			<Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Spanish>
 			<Dutch>Red Bull geeft je vleugels,</Dutch>
-			<French>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</French>
+			<French>Red Bull est une boisson énergétique vendue par la société Austrichienne Red Bull GmbH,</French>
 			<Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH,</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_OSHERBET">
@@ -2519,7 +2519,7 @@
 			<Russian>Апельсиновый шербет. Острый оранжевый газированный безалкогольный напиток с большим количеством шипения.</Russian>
 			<Spanish>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Spanish>
 			<Dutch>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Dutch>
-			<French>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</French>
+			<French>Orange Sherbet est une boisson gazeuse rafraîchissante sucrée trés pétillante.</French>
 			<Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
 		</Key>
 	</Package>
@@ -2531,7 +2531,7 @@
 		  <Russian>Магазины %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Magazijnen %1 / %2 - Wapens %3 / %4 - Rugzakken %5 / %6</Dutch>
-		  <French></French>
+		  <French>Munitions et objets %1 / %2 - Armes et outils %3 / %4 - Sac à dos %5 / %6</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_2">
@@ -2541,7 +2541,7 @@
 		  <Russian>%1 хочет отметить вас как друга. Чтобы принять, отметьте %1 как друга.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 wil jou als bevriend markeren. Om te accepteren, markeer %1 als bevriend.</Dutch>
-		  <French></French>
+		  <French>%1 veut vous marquer comme amical(e). Pour accepter, marquez %1 comme amical(e).</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_3">
@@ -2551,7 +2551,7 @@
 		  <Russian>Пульс крайне слаб</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Polsslag is erg zwak</Dutch>
-		  <French></French>
+		  <French>Le pouls est extrêmement faible</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_4">
@@ -2561,7 +2561,7 @@
 		  <Russian>Пульс слаб</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Polsslag is zwak</Dutch>
-		  <French></French>
+		  <French>Le pouls est faible</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_5">
@@ -2571,7 +2571,7 @@
 		  <Russian>Пульс сильный</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Polsslag is sterk</Dutch>
-		  <French></French>
+		  <French>Le pouls est fort</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_6">
@@ -2581,7 +2581,7 @@
 		  <Russian>Торговля отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handel is afgebroken</Dutch>
-		  <French></French>
+		  <French>Échange annulé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_7">
@@ -2591,7 +2591,7 @@
 		  <Russian>Невозможно открыть инвентарь запертого автомобиля.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
-		  <French></French>
+		  <French>Impossible d'accéder au contenu d'un véhicule verrouillé</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_8">
@@ -2601,7 +2601,7 @@
 		  <Russian>Камуфляжные сети не найдены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen camouflagenet in de buurt gevonden.</Dutch>
-		  <French></French>
+		  <French>Aucun de filet de camouflage n'a été trouvé aux alentours</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_9">
@@ -2611,7 +2611,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent geplet tussen twee objecten.</Dutch>
-		  <French></French>
+		  <French>Vous avez été écrasé entre deux objets.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_10">
@@ -2621,7 +2621,7 @@
 		  <Russian>Уже закрывается</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al op slot gezet.</Dutch>
-		  <French></French>
+		  <French>Le verrouillage est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_11">
@@ -2631,7 +2631,7 @@
 		  <Russian>Невозможно закрыть, когда другой игрок находится поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet op slot zetten met een andere speler in de buurt.</Dutch>
-		  <French></French>
+		  <French>Impossible de verrouiller lorsque d'autres joueurs sont proches.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_12">
@@ -2641,7 +2641,7 @@
 		  <Russian>Невозможно выйти, находясь в торговом городе!</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet uitloggen in een handel stad.</Dutch>
-		  <French></French>
+		  <French>Impossible d'interrompre dans un marché!</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_13">
@@ -2651,7 +2651,7 @@
 		  <Russian>Палатка уже упаковывается</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Tent wordt al reeds ingepakt</Dutch>
-		  <French></French>
+		  <French>Le pliage de la tente est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_14">
@@ -2661,7 +2661,7 @@
 		  <Russian>Палатка ещё не установлена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Tent is nog niet opgezet.</Dutch>
-		  <French></French>
+		  <French>La tente n'est pas encore installée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_15">
@@ -2671,7 +2671,7 @@
 		  <Russian>Это уже упаковано.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Dit wordt al reeds ingepakt.</Dutch>
-		  <French></French>
+		  <French>C'est déjà en cours d'empaquetage.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_16">
@@ -2681,7 +2681,7 @@
 		  <Russian>Невозможно упаковывать, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
-		  <French></French>
+		  <French>Impossible d'empaqueter lorsque d'autres joueurs sont proches.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_17">
@@ -2691,7 +2691,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>kan de magazijnen niet tellen</Dutch>
-		  <French></French>
+		  <French>Ne peut pas compter les munitions!</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_18">
@@ -2701,7 +2701,7 @@
 		  <Russian>У вас должно быть сырое мясо</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je moet in het bezit zijn van rauw vlees</Dutch>
-		  <French></French>
+		  <French>Vous devez avoir de la viande crue</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_19">
@@ -2711,7 +2711,7 @@
 		  <Russian>Неправильный код введён слишком много раз, подождите 10 секунд</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt te vaak een foute code ingevoerd. 10 seconden geduld svp.</Dutch>
-		  <French></French>
+		  <French>Trop d'erreurs avec le code, patientez 10 secondes</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_20">
@@ -2721,7 +2721,7 @@
 		  <Russian>Невозможно открыть, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet van slot afhalen met een andere speler in de buurt.</Dutch>
-		  <French></French>
+		  <French>Impossible de déverrouiller lorsque d'autres joueurs sont proches.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_21">
@@ -2731,7 +2731,7 @@
 		  <Russian>Уже открывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al reeds van slot gehaald.</Dutch>
-		  <French></French>
+		  <French>Le déverrouillage est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_22">
@@ -2741,7 +2741,7 @@
 		  <Russian>Уже кипятится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan ket koken.</Dutch>
-		  <French></French>
+		  <French>L'ébullition est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_23">
@@ -2751,7 +2751,7 @@
 		  <Russian>Уже готовится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het koken.</Dutch>
-		  <French></French>
+		  <French>La cuisson est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_24">
@@ -2761,7 +2761,7 @@
 		  <Russian>Уже заправляется.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het tanken.</Dutch>
-		  <French></French>
+		  <French>Le ravitaillement en carburant est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_25">
@@ -2771,7 +2771,7 @@
 		  <Russian>Подготовка к заправке и запуску генератора, двигайтесь для отмены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>De generator wordt zo volgetankt en gestart, beweeg om te annuleren.</Dutch>
-		  <French></French>
+		  <French>Remplissage du réservoir et démarrage du générateur, bougez pour annuler.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_26">
@@ -2781,7 +2781,7 @@
 		  <Russian>Отмена</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Ge-annuleerd.</Dutch>
-		  <French></French>
+		  <French>Annulé</French></French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_27">
@@ -2791,7 +2791,7 @@
 		  <Russian>Нет техники поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen voertuigen in de buurt.</Dutch>
-		  <French></French>
+		  <French>Aucun véhicule aux alentours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_28">
@@ -2801,7 +2801,7 @@
 		  <Russian>Генератор был запущен.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>De generator is gestart.</Dutch>
-		  <French></French>
+		  <French>Le générateur a été démarré.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_29">
@@ -2811,7 +2811,7 @@
 		  <Russian>Животное уже разделывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent dit dier al aan het opensnijden.</Dutch>
-		  <French></French>
+		  <French>Le dépeçage de l'animal est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_30">
@@ -2821,7 +2821,7 @@
 		  <Russian>Разделывание отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Gestopt met opensnijden.</Dutch>
-		  <French></French>
+		  <French>Dépeçage interrompu.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_31">
@@ -2831,17 +2831,17 @@
 		  <Russian>Зомби уже разделывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent deze zombie al aan het opensnijden.</Dutch>
-		  <French></French>
+		  <French>Le dépeçage du zombie est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_32">
 		  <Original>Hotwire vehicle already in progress.</Original>
-		  <English>Вы уже угоняете машину.</English>
+		  <English>Hotwire vehicle already in progress.</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Auto wordt al opengebroken.</Dutch>
-		  <French></French>
+		  <French>Le crochetage du véhicule est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33">
@@ -2851,7 +2851,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Openbreken voertuig mislukt, je hotwire kit is kapot gegaan.</Dutch>
-		  <French></French>
+		  <French>Échec du crochetage du véhicule, le kit est détruit.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
@@ -2861,7 +2861,7 @@
 		  <Russian>Канистра уже наполняется.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
-		  <French></French>
+		  <French>Le remplissage du jerrycan est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_35">
@@ -2871,7 +2871,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Brandstofverplaatsing stopgezet</Dutch>
-		  <French></French>
+		  <French>Siphonage annulé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_36">
@@ -2881,7 +2881,7 @@
 		  <Russian>Нет последних смертей.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Niet recent doodgegaan.</Dutch>
-		  <French></French>
+		  <French>Pas de décès récents.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_37">
@@ -2891,7 +2891,7 @@
 		  <Russian>Автомобиль уже закрывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
-		  <French></French>
+		  <French>Le verrouillage du véhicule est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_38">
@@ -2901,7 +2901,7 @@
 		  <Russian>Предмет уже поднимается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met het oppakken</Dutch>
-		  <French></French>
+		  <French>L'objet est déjà pris.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_39">
@@ -2911,7 +2911,7 @@
 		  <Russian>Уже добавляется на пояс.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met toevoegen aan gereedschapsriem</Dutch>
-		  <French></French>
+		  <French>L'ajout à la ceinture est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_40">
@@ -2921,7 +2921,7 @@
 		  <Russian>\n\nУже строится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al aan het bouwen.</Dutch>
-		  <French></French>
+		  <French>\n\nLa construction est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
@@ -2931,7 +2931,7 @@
 		  <Russian>\n\nНевозможно построить, слишком много объектов в пределах 30 м.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nKan niet bouwen, teveel objecten binnen 30m.</Dutch>
-		  <French></French>
+		  <French>\n\nImpossible de construire, il y a trop d'objets à moins de 30m.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_42">
@@ -2941,7 +2941,7 @@
 		  <Russian>Невозможно построить, находясь в транспорте.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
-		  <French></French>
+		  <French>Impossible de construire à bord d'un véhicule.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_43">
@@ -2951,7 +2951,7 @@
 		  <Russian>Невозможно построить, находясь в транспорте.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
-		  <French></French>
+		  <French>Impossible de construire à bord d'un véhicule.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_44">
@@ -2961,7 +2961,7 @@
 		  <Russian>Невозможно построить столб в пределах 45м. от существующего столба.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan bouw-paal niet bouwen op minder als 45m afstand van een bestaand bouwterrein.</Dutch>
-		  <French></French>
+		  <French>Impossible de construire un panneau de propriété privée à moins de 45m d'un autre panneau du genre.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_45">
@@ -2971,7 +2971,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>PgUp voor omhoog or PgDn voor omlaag (Houd ALT ingedrukt voor snel en CTRL voor langzaam), \nQ of E draait het object 180graden. Spatiebalk start het bouwen.</Dutch>
-		  <French></French>
+		  <French>PgUp pour élever ou PgDn pour abaisser (Maintenez ALT pour élever plus rapidement ou CTRL plus lentement), A ou E pour une rotation à 180. Espace pour construire.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_46">
@@ -2981,7 +2981,7 @@
 		  <Russian>Строительство отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het bouwen is gestopt</Dutch>
-		  <French></French>
+		  <French>Construction annulée</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_47">
@@ -2991,7 +2991,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Gestopt met het bouwen van %1 %2.</Dutch>
-		  <French></French>
+		  <French>La construction de %1 %2 est annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_48">
@@ -3001,7 +3001,7 @@
 		  <Russian>Уже понижается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al bezig met downgraden.</Dutch>
-		  <French></French>
+		  <French>La dégradation est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_49">
@@ -3011,7 +3011,7 @@
 		  <Russian>Не удаётся понизить, вы не знаете комбинации.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet downgraden, je weet de combinatie niet.</Dutch>
-		  <French></French>
+		  <French>La dégradation est impossible, vous ne connaissez pas la combinaison!</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_50">
@@ -3021,7 +3021,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Nog niet ingesteld.</Dutch>
-		  <French></French>
+		  <French>Pas encore installé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_51">
@@ -3031,7 +3031,7 @@
 		  <Russian>Нет доступных понижений.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen downgrades beschikbaar</Dutch>
-		  <French></French>
+		  <French>Pas de dégradation possible.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_52">
@@ -3041,7 +3041,7 @@
 		  <Russian>Уже улучшается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het upgraden.</Dutch>
-		  <French></French>
+		  <French>L'amélioration est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_53">
@@ -3051,7 +3051,7 @@
 		  <Russian>\n\nДерево уже рубится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al hout aan het hakken</Dutch>
-		  <French></French>
+		  <French>\n\nLa coupe du bois est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_54">
@@ -3061,7 +3061,7 @@
 		  <Russian>\n\nТопор должен быть в ваших руках, чтобы рубить дерево.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet een bijl in je handen hebben om hout te hakken.</Dutch>
-		  <French></French>
+		  <French>\n\nVous devez avoir la hache en main pour couper du bois.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_55">
@@ -3071,7 +3071,7 @@
 		  <Russian>\n\nРубка дерева отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met houthakken</Dutch>
-		  <French></French>
+		  <French>\n\nCoupe du bois annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_56">
@@ -3081,7 +3081,7 @@
 		  <Russian>\n\nКлюч уже копируется.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al een sleutel aan het kopieren</Dutch>
-		  <French></French>
+		  <French>\n\nLa duplication de la clé est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_57">
@@ -3091,7 +3091,7 @@
 		  <Russian>\n\nНужен комплект создания ключей, чтобы сделать копию ключа.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
-		  <French></French>
+		  <French>\n\nLe kit Keymakers est requis pour faire un double d'une clé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_58">
@@ -3111,7 +3111,7 @@
 		  <Russian>\n\nДля создания ключа требуется 1 оловянный слиток.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt 1 Tin bar nodig om een sleutel te maken.</Dutch>
-		  <French></French>
+		  <French>\n\nConstruire une clé requiert une barre de fer</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_60">
@@ -3121,7 +3121,7 @@
 		  <Russian>\n\nСкопированный ключ был добавлен в ваш рюкзак.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nDe gekopieerde sleutel is in je rugzak gestopt.</Dutch>
-		  <French></French>
+		  <French>\n\nLe double de la clé a été ajouté dans votre sac à dos.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_61">
@@ -3131,7 +3131,7 @@
 		  <Russian>\n\nСоздание ключа отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met het maken van de sleutel.</Dutch>
-		  <French></French>
+		  <French>\n\nConstruction de la clé annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_62">
@@ -3141,7 +3141,7 @@
 		  <Russian>\n\nСоздание начато</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nBezig met creëren</Dutch>
-		  <French></French>
+		  <French>\n\nConstruction démarré</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_63">
@@ -3151,7 +3151,7 @@
 		  <Russian>\n\nУже создаётся.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al bezig met creëren</Dutch>
-		  <French></French>
+		  <French>\n\nLa construction est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_64">
@@ -3161,7 +3161,7 @@
 		  <Russian>\n\nСоздание отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nCreatie gestopt.</Dutch>
-		  <French></French>
+		  <French>\n\nConstruction annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_65">
@@ -3171,7 +3171,7 @@
 		  <Russian>\n\nВы уже рыбачите.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nAfmaken van creatie is al bezig.</Dutch>
-		  <French></French>
+		  <French>\n\nLa pêche est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_66">
@@ -3181,7 +3181,7 @@
 		  <Russian>\n\nНужно находиться вблизи берега или на лодке, чтобы ловить рыбу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet aan de kust of op een boot zijn om te vissen.</Dutch>
-		  <French></French>
+		  <French>\n\nVous devez être sur la côte ou sur un bateau pour pêcher.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_67">
@@ -3191,7 +3191,7 @@
 		  <Russian>\n\nУдочка должна быть в ваших руках, чтобы ловить рыбу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet een vishengel in je hand hebben om te vissen.</Dutch>
-		  <French></French>
+		  <French>\n\nVous devez avoir la canne à pêche en main pour pêcher.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_68">
@@ -3201,7 +3201,7 @@
 		  <Russian>\n\nРыбалка отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met vissen.</Dutch>
-		  <French></French>
+		  <French>\n\nPêche annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_69">
@@ -3211,7 +3211,7 @@
 		  <Russian>\n\nВы поймали рыбу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt een vis gevangen.</Dutch>
-		  <French></French>
+		  <French>\n\nVous avez pêché un poisson!</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_70">
@@ -3221,7 +3221,7 @@
 		  <Russian>\n\nЛовись... Ловись... рыбка...</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nDobber.. Dobber..</Dutch>
-		  <French></French>
+		  <French>\n\nÇa grignote... ça grignote...</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_71">
@@ -3231,7 +3231,7 @@
 		  <Russian>\n\nВы ничего не поймали.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt niets gevangen.</Dutch>
-		  <French></French>
+		  <French>\n\nVous n'avez rien attrapé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_72">
@@ -3241,7 +3241,7 @@
 		  <Russian>\n\nУже собирается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al aan het oogsten.</Dutch>
-		  <French></French>
+		  <French>\n\nLa récolte est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_73">
@@ -3251,7 +3251,7 @@
 		  <Russian>\n\nСбор отменён.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met oogsten.</Dutch>
-		  <French></French>
+		  <French>\n\nRécolte annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_74">
@@ -3261,7 +3261,7 @@
 		  <Russian>\n\nВы должны быть близко к растению, чтобы взять его.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet in de buurt van een plant zijn om te oogsten.</Dutch>
-		  <French></French>
+		  <French>\n\nVous devez être près d'une plante pour la récolter.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_75">
@@ -3271,7 +3271,7 @@
 		  <Russian>\n\nЯщик уже открывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent de kist al aan het openmaken.</Dutch>
-		  <French></French>
+		  <French>\n\nL'ouverture de la caisse est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_76">
@@ -3281,7 +3281,7 @@
 		  <Russian>\n\nВам нужен лом, чтобы открыть это.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe hebt een breekijzer nodig om dit open te maken.</Dutch>
-		  <French></French>
+		  <French>\n\nVous avez besoin d'un pied-de-biche pour l'ouvrir.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_77">
@@ -3291,7 +3291,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nSupply kist ontbreekt</Dutch>
-		  <French></French>
+		  <French>\n\nCaisse de fournitures manquante.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_78">
@@ -3301,7 +3301,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nSupply kist geopend.</Dutch>
-		  <French></French>
+		  <French>\n\nCaisse de fournitures ouverte.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_79">
@@ -3311,7 +3311,7 @@
 		  <Russian>\n\nРуда уже добывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent al erts aan het ontginnen.</Dutch>
-		  <French></French>
+		  <French>\n\nL'extraction du minerai est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_80">
@@ -3321,7 +3321,7 @@
 		  <Russian>\n\nДобыча руды отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met erts ontginnen.</Dutch>
-		  <French></French>
+		  <French>\n\nExtraction du minerai annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_81">
@@ -3331,7 +3331,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nHet omzetten van kogels is mislukt je dient minstens 85% capaciteit in het magazijn te hebben</Dutch>
-		  <French></French>
+		  <French>\n\nLa combinaison des munitions a échoué, vous devez remplir au moins 85% du chargeur</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_82">
@@ -3341,7 +3341,7 @@
 		  <Russian>Нет доступных улучшений.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen upgrades beschikbaar</Dutch>
-		  <French></French>
+		  <French>Aucune amélioration disponible</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_83">
@@ -3351,7 +3351,7 @@
 		  <Russian>\n\nВы уже переодеваетесь.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe bent je al aan het omkleden.</Dutch>
-		  <French></French>
+		  <French>\n\nLe changement de vêtements est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_84">
@@ -3361,7 +3361,7 @@
 		  <Russian>\n\nНевозможно переодеваться, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
-		  <French></French>
+		  <French>\n\nImpossible de changer de vêtements près d'un autre joueur.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_85">
@@ -3371,7 +3371,7 @@
 		  <Russian>\n\nВы не можете переодеваться, когда вы в автомобиле</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden in een voertuig</Dutch>
-		  <French></French>
+		  <French>\n\nVous ne devriez pas changer de vêtements à bord d'un véhicule</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_86">
@@ -3381,7 +3381,7 @@
 		  <Russian>\n\nВы не можете одеть одежду противоположного пола.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
-		  <French></French>
+		  <French>\n\nVous ne pouvez pas porter les vêtements du sexe opposé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_87">
@@ -3391,7 +3391,7 @@
 		  <Russian>Заправка отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bijtanken gestopt.</Dutch>
-		  <French></French>
+		  <French>Remplissage du réservoir annulé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_88">
@@ -3401,7 +3401,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Al bezig met verwijderen.</Dutch>
-		  <French></French>
+		  <French>Le démontage est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_89">
@@ -3411,7 +3411,7 @@
 		  <Russian>Невозможно убрать работающий генератор.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
-		  <French></French>
+		  <French>Impossible de démonter un générateur en route.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_90">
@@ -3421,7 +3421,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen onderdelen gevonden.</Dutch>
-		  <French></French>
+		  <French>Aucune pièce trouvée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_91">
@@ -3431,7 +3431,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
-		  <French></French>
+		  <French>Échec, l'objet n'existe plus.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_92">
@@ -3441,7 +3441,7 @@
 		  <Russian>Уже чинится.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al reeds gerepareerd.</Dutch>
-		  <French></French>
+		  <French>La réparation est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_93">
@@ -3451,7 +3451,7 @@
 		  <Russian>Починка отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reparatie afgebroken.</Dutch>
-		  <French></French>
+		  <French>Réparation annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_94">
@@ -3461,7 +3461,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met bergen.</Dutch>
-		  <French></French>
+		  <French>La récupération est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_95">
@@ -3471,7 +3471,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Berging afgebroken.</Dutch>
-		  <French></French>
+		  <French>Récupération annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_96">
@@ -3481,7 +3481,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>reeds bezig.</Dutch>
-		  <French></French>
+		  <French>déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_97">
@@ -3491,7 +3491,7 @@
 		  <Russian>Вы уже торгуете.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met handellen.</Dutch>
-		  <French></French>
+		  <French>La transaction est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_98">
@@ -3501,7 +3501,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met brandstofverplaatsing.</Dutch>
-		  <French></French>
+		  <French>Le siphonage est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_99">
@@ -3511,7 +3511,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met stoppen.</Dutch>
-		  <French></French>
+		  <French>L'arrêt est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_100">
@@ -3521,7 +3521,7 @@
 		  <Russian>Подготовка к остановке генератора, двигайтесь для отмены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het uitschakellen van de generator word voorbereid, beweeg om te annuleren.</Dutch>
-		  <French></French>
+		  <French>Préparation de l'arrêt du générateur, déplacez vous pour annuler.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_101">
@@ -3531,7 +3531,7 @@
 		  <Russian>Генератор был остановлен.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>De generator is uitgeschakeld.</Dutch>
-		  <French></French>
+		  <French>Le générateur a été arrêté.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_102">
@@ -3541,7 +3541,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen voertuigen op sleep.</Dutch>
-		  <French></French>
+		  <French>Aucun véhicule remorqué.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_103">
@@ -3551,7 +3551,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het handellen.</Dutch>
-		  <French></French>
+		  <French>La transaction est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_104">
@@ -3561,7 +3561,7 @@
 		  <Russian>Невозможно торговать, когда другой игрок находится поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet handellen met een andere speler in de buurt.</Dutch>
-		  <French></French>
+		  <French>Impossible d'effectuer la transaction lorsque d'autres joueurs sont proches.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_105">
@@ -3571,7 +3571,7 @@
 		  <Russian>Торговля началась, стойте на месте, чтобы завершить торговлю.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met handellen, blijf stilstaan om af te ronden.</Dutch>
-		  <French></French>
+		  <French>Transaction démarré, restez immobile pour achever la transaction.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_106">
@@ -3581,7 +3581,7 @@
 		  <Russian>Торговля отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handel geannuleerd.</Dutch>
-		  <French></French>
+		  <French>Transaction annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_107">
@@ -3591,7 +3591,7 @@
 		  <Russian>У вас не достаточно места на вашем поясе.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je gereedschapsriem zit vol.</Dutch>
-		  <French></French>
+		  <French>Vous n'avez pas assez de place dans votre ceinture.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_108">
@@ -3601,7 +3601,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kluis installatie is al bezig.</Dutch>
-		  <French></French>
+		  <French>L'installation du coffre fort est déjà en cours.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_109">
@@ -3611,7 +3611,7 @@
 		  <Russian>Планирование строительства стойте на месте 5 секунд, чтобы построить.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het bouwen wordt voorbereid, sta 5 seconden stil om te bouwen.</Dutch>
-		  <French></French>
+		  <French>Planification de la construction, restez immobile 5 secondes pour construire.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_110">
@@ -3621,7 +3621,7 @@
 		  <Russian>Вы не можете разместить сейф здесь. Область должна быть плоской, и свободной от других объектов</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
-		  <French></French>
+		  <French>Vous ne pouvez pas placer le coffre fort ici. L'endroit doit être plat et dégagé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_111">
@@ -3631,7 +3631,7 @@
 		  <Russian>Строительство сейфа отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het bouwen van de kluis is stopgezet.</Dutch>
-		  <French></French>
+		  <French>Mise en place du coffre fort annulée.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_112">
@@ -3641,7 +3641,7 @@
 		  <Russian>Этот сервер работает на неправильной версии серверного приложения. Вы не можете играть на этом сервере. Если вы являетесь администратором сервера, пожалуйста, свяжитесь с персоналом DayZ Epoch.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze server draait een verkeerde versie van de serversided software. Je kunt niet op deze server spelen. Als het jouw server is, neem dan contact op met de DayZ Epoch Staff.</Dutch>
-		  <French></French>
+		  <French>Ce serveur exécute une version différente du jeu. Vous ne pouvez pas jouer sur ce serveur. Si vous êtes l'administrateur de ce serveur, contactez l'équipe de DayZ Epoch s'il vous plaît</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_113">
@@ -3651,7 +3651,7 @@
 		  <Russian>У вас устаревшая версия DayZ Epoch, загрузите правильную версию</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt een verouderde versie van epoch.</Dutch>
-		  <French></French>
+		  <French>Vous avez une version de DayZ Epoch périmée, une mise à jour est nécessaire.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_114">
@@ -3661,7 +3661,7 @@
 		  <Russian>Не удалось получить дату и время с сервера отключитесь и повторите попытку.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het is niet gelukt om de datum en tijd van de server op te halen \nVerbreek de verbinding en probeer het opnieuw.</Dutch>
-		  <French></French>
+		  <French>Récupération de la date et de l'heure impossible à partir du serveur. Déconnectez et réessayez.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
@@ -3671,7 +3671,7 @@
 		  <Russian>Вы не можете закрыть 1%, вы не знаете комбинации.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt deze %1 niet op slot zetten, je weet de combinatie niet.</Dutch>
-		  <French></French>
+		  <French>Vous ne pouvez pas verrouiller %1, vous n'en connaissez pas la combinaison.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_116">
@@ -3681,7 +3681,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze %1 wordt al op slot gezet.</Dutch>
-		  <French></French>
+		  <French>%1 est déjà verrouillé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_117">
@@ -3691,7 +3691,7 @@
 		  <Russian>Ваш %1 закрыт</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je %1 staat nu op slot</Dutch>
-		  <French></French>
+		  <French>Votre %1 a été verrouillé</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_118">
@@ -3701,7 +3701,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 is nog niet ingesteld.</Dutch>
-		  <French></French>
+		  <French>%1 n'est pas encore installé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_119">
@@ -3711,7 +3711,7 @@
 		  <Russian>Вы не можете упаковать 1%, вы не знаете комбинации.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
-		  <French></French>
+		  <French>Vous ne pouvez pas emballer %1, vous n'en connaissez pas la combinaison.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_120">
@@ -3721,7 +3721,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze %1 wordt al reeds ingepakt.</Dutch>
-		  <French></French>
+		  <French>%1 est déjà en cours d'emballage.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_121">
@@ -3731,7 +3731,7 @@
 		  <Russian>Упаковывание 1% сдвиньтесь с этой позиции, чтобы отменить (В течение 5 секунд).</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
-		  <French></French>
+		  <French>Emballage de %1, déplacez vous pour annuler dans moins de 5 secondes.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_122">
@@ -3741,7 +3741,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het inpakken van %1 is gestopt.</Dutch>
-		  <French></French>
+		  <French>Emballage annulé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_123">
@@ -3751,7 +3751,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je %1 is ingepakt.</Dutch>
-		  <French></French>
+		  <French>Votre %1 a été emballé(e).</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_124">
@@ -3761,7 +3761,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze %1 wordt alreeds van slot gehaald.</Dutch>
-		  <French></French>
+		  <French>%1 est déjà en cours de déverrouillage.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_125">
@@ -3771,7 +3771,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 staat niet meer op slot</Dutch>
-		  <French></French>
+		  <French>%1 a été déverrouillé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_126">
@@ -3781,7 +3781,7 @@
 		  <Russian>Комбинация неправильна, %1 по-прежнему закрыт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
-		  <French></French>
+		  <French>Combinaison incorrecte, %1 reste verrouillé.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_127">
@@ -3791,7 +3791,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt met succes %1 munitie bijgeladen.</Dutch>
-		  <French></French>
+		  <French>Vous avez rechargé les munitions de %1 avec succés.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_128">
@@ -3801,7 +3801,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt minstens %1 munitie nodig om dit te doen.</Dutch>
-		  <French></French>
+		  <French>Vous avez besoin de munitions %1 pour faire ça.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_129">
@@ -3811,7 +3811,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Begonnen met het koken van %1</Dutch>
-		  <French></French>
+		  <French>Début de la cuisson de %1</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_130">
@@ -3821,7 +3821,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Gestopt met het koken van %1</Dutch>
-		  <French></French>
+		  <French>Cuisson de %1 annulée</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_131">
@@ -3831,7 +3831,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met het vullen van %1, beweeg om te annuleren.</Dutch>
-		  <French></French>
+		  <French>Remplissage de %1, déplacez vous pour annuler.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_132">
@@ -3841,7 +3841,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 is voor %2 procent gevuld.</Dutch>
-		  <French></French>
+		  <French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_133">
@@ -3851,7 +3851,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
-		  <French></French>
+		  <French>Préparation du siphonage, restez immobile pour remplir %1.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
@@ -3861,7 +3861,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %1 met brandsfof gevuld.</Dutch>
-		  <French></French>
+		  <French>Vous avez rempli %1 avec du carburant.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
@@ -3871,7 +3871,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nDit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
-		  <French></French>
+		  <French>\n\nCe bâtiment nécessite un %1 à moins de %2 mètres</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
@@ -3881,17 +3881,17 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
-		  <French></French>
+		  <French>Impossible de construire, %1 est trop proche.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_137">
-		  <Original>\n\nMissing tool %1</Original>
-		  <English>\n\nMissing tool %1</English>
+		  <Original>Missing tool %1</Original>
+		  <English>Missing tool %1</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
-		  <Dutch>\n\nOntbrekend gereedschap: %1</Dutch>
-		  <French></French>
+		  <Dutch>Ontbrekend gereedschap: %1</Dutch>
+		  <French>L'outil %1 est nécessaire</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_138">
@@ -3901,7 +3901,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met het plaatsen van %1, beweeg om te annuleren</Dutch>
-		  <French></French>
+		  <French>Placement de %1, déplacez vous pour annuler.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_139">
@@ -3911,7 +3911,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
-		  <French></French>
+		  <French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_140">
@@ -3921,7 +3921,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
-		  <French></French>
+		  <French>Vous avez installé votre %2. La combinaison est %1</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_141">
@@ -3931,7 +3931,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet downgraden %1 in de buurt.</Dutch>
-		  <French></French>
+		  <French>Impossible de dégrader, %1 est trop proche.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_142">
@@ -3941,7 +3941,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %1 gedowngrade.</Dutch>
-		  <French></French>
+		  <French>Vous avez dégradé %1.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_143">
@@ -3951,7 +3951,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\n%1 van %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
-		  <French></French>
+		  <French>\n\n%1 sur %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_144">
@@ -3961,7 +3961,7 @@
 		  <Russian></Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %1 gerepareerd.</Dutch>
-		  <French></French>
+		  <French>Vous avez réparé %1.</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_145">
@@ -5294,222 +5294,5 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_277">
-		  <Original>Craft Gun Rack</Original>
-		  <English>Craft Gun Rack</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_278">
-		  <Original>Gear</Original>
-		  <English>Gear</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_279">
-		  <Original>Filter</Original>
-		  <English>Filter</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_280">
-		  <Original>Rearm</Original>
-		  <English>Rearm</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_281">
-		  <Original>Open bag</Original>
-		  <English>Open bag</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_282">
-		  <Original>Close bag</Original>
-		  <English>Close bag</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_283">
-		  <Original>Close</Original>
-		  <English>Close</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_284">
-		  <Original>All</Original>
-		  <English>All</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_285">
-		  <Original>Primary</Original>
-		  <English>Primary</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_286">
-		  <Original>Secondary</Original>
-		  <English>Secondary</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_287">
-		  <Original>HandGun</Original>
-		  <English>HandGun</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_288">
-		  <Original>Items</Original>
-		  <English>Items</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_289">
-		  <Original>Trader Menu</Original>
-		  <English>Trader Menu</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_290">
-		  <Original>Categories</Original>
-		  <English>Categories</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_291">
-		  <Original>Buy</Original>
-		  <English>Buy</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_292">
-		  <Original>Sell</Original>
-		  <English>Sell</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_293">
-		  <Original>Buy For</Original>
-		  <English>Buy For</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_294">
-		  <Original>Sell For</Original>
-		  <English>Sell For</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
-		</Key>
-		
-		
-		
-		
-		
-		
-		
-		<Key ID="R3F_VERSION_WEIGHTED">
-		  <Original>1.04</Original>
-		  <English>1.04</English>
-		  <German>1.04</German>
-		  <Russian>1.04</Russian>
-		  <Spanish>v</Spanish>
-		  <Dutch>1.04</Dutch>
-		  <French>1.04</French>
-		  <Czech>1.04</Czech>
-		</Key>
-		<Key ID="STR_R3F_WEIGHT_InGearBox">
-		  <Original>%1 | Weight carried : %2 lb</Original>
-		  <English>%1 | Weight carried : %2 lb</English>
-		  <German>%1 | Poids transporté : %2 Kg</German>
-		  <Russian>%1 | Poids transporté : %2 Kg</Russian>
-		  <Spanish>%1 | Poids transporté : %2 Kg</Spanish>
-		  <Dutch>%1 | Poids transporté : %2 Kg</Dutch>
-		  <French>%1 | Poids transporté : %2 Kg</French>
-		  <Czech>%1 | Poids transporté : %2 Kg</Czech>
-		</Key>
-		<Key ID="STR_R3F_WEIGHT_English">
-		  <Original>lb</Original>
-		  <English>lb</English>
-		  <German>Kg</German>
-		  <Russian>Kg</Russian>
-		  <Spanish>Kg</Spanish>
-		  <Dutch>Kg</Dutch>
-		  <French>Kg</French>
-		  <Czech>Kg</Czech>
-		</Key>
-  </Package>
+	</Package>
 </Project>
