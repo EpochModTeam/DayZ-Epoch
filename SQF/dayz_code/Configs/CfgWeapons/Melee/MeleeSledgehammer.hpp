@@ -6,7 +6,7 @@ class MeleeSledge: MeleeWeapon
 		magazineReloadTime=0;
 		model="\z\addons\dayz_epoch\models\sledge_weaponized";
 		picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa"; // todo icon
-		displayName="Sledgehammer";
+		displayName="STR_EQUIP_SLEDGE";
 		droppeditem= "ItemSledge";
 		magazines[]=
 		{
@@ -21,7 +21,7 @@ class MeleeSledge: MeleeWeapon
 		{
 			class Toolbelt
 			{
-				text="Add to Toolbelt";
+				text="STR_EPOCH_PLAYER_296";
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -35,7 +35,7 @@ class MeleeSledge: MeleeWeapon
 		};
 		class Library
 		{
-			libTextDesc="A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.";
+			libTextDesc="STR_EQUIP_CROWBAR_DESC";
 		};
-		descriptionShort="A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.";
+		descriptionShort="STR_EQUIP_CROWBAR_DESC";
 	};
