@@ -5294,5 +5294,205 @@
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
+    <Key ID="STR_EPOCH_PLAYER_278">
+      <Original>Gear</Original>
+      <English>Gear</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_279">
+      <Original>Filter</Original>
+      <English>Filter</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_280">
+      <Original>Rearm</Original>
+      <English>Rearm</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_281">
+      <Original>Open bag</Original>
+      <English>Open bag</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_282">
+      <Original>Close bag</Original>
+      <English>Close bag</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_283">
+      <Original>Close</Original>
+      <English>Close</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_284">
+      <Original>All</Original>
+      <English>All</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_285">
+      <Original>Primary</Original>
+      <English>Primary</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_286">
+      <Original>Secondary</Original>
+      <English>Secondary</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_287">
+      <Original>HandGun</Original>
+      <English>HandGun</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_288">
+      <Original>Items</Original>
+      <English>Items</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_289">
+      <Original>Trader Menu</Original>
+      <English>Trader Menu</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_290">
+      <Original>Categories</Original>
+      <English>Categories</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_291">
+      <Original>Buy</Original>
+      <English>Buy</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_292">
+      <Original>Sell</Original>
+      <English>Sell</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_293">
+      <Original>Buy For</Original>
+      <English>Buy For</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_294">
+      <Original>Sell For</Original>
+      <English>Sell For</English>
+      <German></German>
+      <Russian></Russian>
+      <Spanish></Spanish>
+      <Dutch></Dutch>
+      <French></French>
+      <Czech></Czech>
+    </Key>
+    <Key ID="R3F_VERSION_WEIGHTED">
+      <Original>1.04</Original>
+      <English>1.04</English>
+      <German>1.04</German>
+      <Russian>1.04</Russian>
+      <Spanish>v</Spanish>
+      <Dutch>1.04</Dutch>
+      <French>1.04</French>
+      <Czech>1.04</Czech>
+    </Key>
+    <Key ID="STR_R3F_WEIGHT_InGearBox">
+      <Original>%1 | Weight carried : %2 lb</Original>
+      <English>%1 | Weight carried : %2 lb</English>
+      <German>%1 | Poids transporté : %2 Kg</German>
+      <Russian>%1 | Poids transporté : %2 Kg</Russian>
+      <Spanish>%1 | Poids transporté : %2 Kg</Spanish>
+      <Dutch>%1 | Poids transporté : %2 Kg</Dutch>
+      <French>%1 | Poids transporté : %2 Kg</French>
+      <Czech>%1 | Poids transporté : %2 Kg</Czech>
+    </Key>
+    <Key ID="STR_R3F_WEIGHT_English">
+      <Original>lb</Original>
+      <English>lb</English>
+      <German>Kg</German>
+      <Russian>Kg</Russian>
+      <Spanish>Kg</Spanish>
+      <Dutch>Kg</Dutch>
+      <French>Kg</French>
+      <Czech>Kg</Czech>
+    </Key>
 	</Package>
 </Project>
