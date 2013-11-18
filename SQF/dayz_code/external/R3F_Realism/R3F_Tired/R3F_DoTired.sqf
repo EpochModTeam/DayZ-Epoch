@@ -8,7 +8,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @date 20101011
 *****************************************************************************/
 
-#include "R3F_TIRED_Configuration.cfg"
+#include "R3F_TIRED_Configuration.sqf"
 
 private ["_level", "_n", "_s"];
 

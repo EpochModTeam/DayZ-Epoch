@@ -8,7 +8,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @date 20101006
 *****************************************************************************/
 
-#include "R3F_TIRED_Configuration.cfg"
+#include "R3F_TIRED_Configuration.sqf"
 
 FNC_PrintToRPT = {
 	diag_log text _this;

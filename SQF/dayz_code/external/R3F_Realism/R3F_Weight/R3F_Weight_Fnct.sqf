@@ -7,7 +7,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @version 1.02
 @date 20101018
 *****************************************************************************/
-#include "R3F_WEIGHT_Configuration.cfg"
+#include "R3F_WEIGHT_Configuration.sqf"
 R3F_WEIGHT_FNCT_MakeSingleArray = {
 	private ["_arr_i","_arr_n", "_arr", "_n", "_nb", "_x"];
 	_arr_i = (_this select 0) select 0;

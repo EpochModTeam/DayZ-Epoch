@@ -8,9 +8,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @date 20101006
 *****************************************************************************/
 
-#include "R3F_TIRED_Configuration.cfg"
+#include "R3F_TIRED_Configuration.sqf"
 
-call compile preprocessFile "R3F_realism\R3F_Tired\R3F_Tired_Fnct.sqf";
+call compile preprocessFile "\z\addons\dayz_code\external\R3F_Realism\R3F_Tired\R3F_Tired_Fnct.sqf";
 
 R3F_Weight = 0;
 
@@ -22,4 +22,4 @@ R3F_TIRED_Counter_Time = 0;
 R3F_TIRED_Ratio_Recovery = R3F_TIRED_RATIO_RECOVERING;
 R3F_TIRED_Ratio_Overweight = 1;
 
-_void = [] execVM "R3F_Realism\R3F_Tired\R3F_DoTired.sqf";
+_void = [] execVM "\z\addons\dayz_code\external\R3F_Realism\R3F_Tired\R3F_DoTired.sqf";
