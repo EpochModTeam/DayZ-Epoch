@@ -2602,7 +2602,16 @@
 			<French></French>
 			<Czech></Czech>
 		</Key>
-
+		<Key ID="$STR_EQUIP_ETOOL">
+			<Original>Etool</Original>
+			<English>Etool</English>
+			<German>Feldspaten</German>
+			<Russian>саперная лопатка</Russian>
+			<Spanish>Pala Afianzar</Spanish>
+			<Dutch></Dutch>
+			<French>Outil de Tranchée</French>
+			<Czech></Czech>
+		</Key>
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_PLAYER_1">
