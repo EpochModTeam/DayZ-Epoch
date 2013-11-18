@@ -2528,7 +2528,7 @@
 			<German>Keymakers kit</German>
 			<Russian>Keymakers kit</Russian>
 			<Spanish>Keymakers kit</Spanish>
-			<Dutch>Keymakers kit</Dutch>
+			<Dutch>Sleutelmakers set</Dutch>
 			<French>Keymakers kit</French>
 			<Czech>Keymakers kit</Czech>
 		</Key>
@@ -2538,7 +2538,7 @@
 			<German>Kit including the tools required to smelt, mold and shape keys.</German>
 			<Russian>Kit including the tools required to smelt, mold and shape keys.</Russian>
 			<Spanish>Kit including the tools required to smelt, mold and shape keys.</Spanish>
-			<Dutch>Kit including the tools required to smelt, mold and shape keys.</Dutch>
+			<Dutch>Met deze sleutelmakers set kun je indien je een vuur en tin hebt je sleutels kopieren.</Dutch>
 			<French>Kit including the tools required to smelt, mold and shape keys.</French>
 			<Czech>Kit including the tools required to smelt, mold and shape keys.</Czech>
 		</Key>
@@ -2548,7 +2548,7 @@
 			<German>Vorschlaghammer</German>
 			<Russian>кувалда</Russian>
 			<Spanish>Almádena</Spanish>
-			<Dutch>Beukhamer</Dutch>
+			<Dutch>Voorhamer</Dutch>
 			<French>Frappe-Devant</French>
 			<Czech>Perlík</Czech>
 		</Key>   
@@ -2558,7 +2558,7 @@
 			<German>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</German>
 			<Russian>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Russian>
 			<Spanish>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Spanish>
-			<Dutch>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Dutch>
+			<Dutch>Een grote voorhamer met stalen kop. Handig voor sloop en bouw werkzaamheden.</Dutch>
 			<French>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</French>
 			<Czech>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Czech>
 		</Key>
@@ -2568,7 +2568,7 @@
 			<German>Angelrute</German>
 			<Russian>удочка</Russian>
 			<Spanish>Caña de Pesca</Spanish>
-			<Dutch>Hengelroede</Dutch>
+			<Dutch>Vishengel</Dutch>
 			<French>Canne à Pêche</French>
 			<Czech>Rybářský Prut</Czech>
 		</Key>
@@ -2578,7 +2578,7 @@
 			<German>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</German>
 			<Russian>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Russian>
 			<Spanish>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Spanish>
-			<Dutch>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Dutch>
+			<Dutch>Vishengel: Dit carbonnen hengeltje is al oud, maar werkt nog prima!</Dutch>
 			<French>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</French>
 			<Czech>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Czech>
 		</Key>
@@ -2608,9 +2608,9 @@
 			<German>Feldspaten</German>
 			<Russian>саперная лопатка</Russian>
 			<Spanish>Pala Afianzar</Spanish>
-			<Dutch></Dutch>
+			<Dutch>Opklapbare schep/spade.</Dutch>
 			<French>Outil de Tranchée</French>
-			<Czech></Czech>
+			<Czech>Etool</Czech>
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
@@ -5557,22 +5557,22 @@
     <Key ID="STR_EPOCH_PLAYER_295">
       <Original>Remove from Toolbelt.</Original>
       <English>Remove from Toolbelt.</English>
-      <German></German>
-      <Russian></Russian>
-      <Spanish></Spanish>
-      <Dutch></Dutch>
-      <French></French>
-      <Czech></Czech>
+      <German>Remove from Toolbelt.</German>
+      <Russian>Remove from Toolbelt.</Russian>
+      <Spanish>Remove from Toolbelt.</Spanish>
+      <Dutch>Verwijder van gereedschapsgordel</Dutch>
+      <French>Remove from Toolbelt.</French>
+      <Czech>Remove from Toolbelt.</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_296">
       <Original>Add to Toolbelt.</Original>
       <English>Add to Toolbelt.</English>
-      <German></German>
-      <Russian></Russian>
-      <Spanish></Spanish>
-      <Dutch></Dutch>
-      <French></French>
-      <Czech></Czech>
+      <German>Add to Toolbelt.</German>
+      <Russian>Add to Toolbelt.</Russian>
+      <Spanish>Add to Toolbelt.</Spanish>
+      <Dutch>Voeg toe aan gereedschapsgordel</Dutch>
+      <French>Add to Toolbelt.</French>
+      <Czech>Add to Toolbelt.</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_297">
       <Original>Cast Fishing Pole</Original>
@@ -5580,7 +5580,7 @@
       <German>Cast Fishing Pole</German>
       <Russian>Cast Fishing Pole</Russian>
       <Spanish>Cast Fishing Pole</Spanish>
-      <Dutch>Cast Fishing Pole</Dutch>
+      <Dutch>Werp vislijn uit</Dutch>
       <French>Cast Fishing Pole</French>
       <Czech>Cast Fishing Pole</Czech>
     </Key>
