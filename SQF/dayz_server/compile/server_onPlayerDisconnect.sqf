@@ -38,7 +38,7 @@ if (!isNull _playerObj) then {
 		[nil,nil,"per",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
 	};
 
-	diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerUID,_playerObj,_characterID];
+	diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4 at loc %5", _playerName,_playerUID,_playerObj,_characterID, (getPosATL _playerObj)];
 
 	_id = [_playerUID,_characterID,2] spawn dayz_recordLogin;
 
