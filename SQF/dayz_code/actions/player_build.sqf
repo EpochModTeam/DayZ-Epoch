@@ -104,15 +104,18 @@ if(isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
 	_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");
 };
 
-_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
+_isAllowedUnderGround = 1;
+if(isNumber (configFile >> "CfgVehicles" >> _classname >> "nounderground")) then {
+	_isAllowedUnderGround = getNumber(configFile >> "CfgVehicles" >> _classname >> "nounderground");
+};
 
+_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 if((count _offset) <= 0) then {
 	_offset = [0,1.5,0];
 };
 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 _isLandFireDZ = (_classname == "Land_Fire_DZ");
-_isTankTrap = (_classname == "Hedgehog_DZ");
 
 _distance = 30;
 _needText = localize "str_epoch_player_246";
@@ -299,6 +302,10 @@ if (_hasrequireditem) then {
 			
 			_object setDir (getDir _object);
 
+			if((_isAllowedUnderGround == 0) and ((_position select 2) < 0)) then {
+				_position set [2,0];
+			};
+
 			_object setPosATL _position;
 			
 			diag_log format["DEBUG Change BUILDING POS: %1", _position];
@@ -320,18 +327,10 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 		
-		if((_isTankTrap) and ((_position select 2)< 0)) exitWith {
-			_isOk = false;
-			_cancel = true;
-			_reason = "You cannot place TankTraps underground)."; 
-			detach _object;
-			deleteVehicle _object;
-		};
-
 		if(_location1 distance _location2 > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "You've moved to far away from where you started building (within 5 meters)."; 
+			_reason = "You've moved to far away from where you started building (within 5 meters)"; 
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -341,7 +340,7 @@ if (_hasrequireditem) then {
 		if(_previewCounter <= 0) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Ran out of time to find position."; 
+			_reason = "Ran out of time to find position"; 
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -391,6 +390,10 @@ if (_hasrequireditem) then {
 	
 		// Get position based on object
 		_location = _position;
+
+		if((_isAllowedUnderGround == 0) and ((_location select 2) < 0)) then {
+			_location set [2,0];
+		};
 	
 		_tmpbuilt setPosATL _location;
 
