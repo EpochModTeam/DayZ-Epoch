@@ -1942,7 +1942,7 @@ class CfgVehicles {
 		scope = 2;
 		// destrType = "DestructNo";
 		cost = 100;
-		offset[] = {0,2,0};
+		offset[] = {0,2,0.5};
 		//model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d"; 
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
@@ -1950,8 +1950,12 @@ class CfgVehicles {
 		displayName = "Fire Barrel";
 		vehicleClass = "Fortifications";
 		constructioncount = 2;
-		removeoutput[] = {{"ItemFireBarrel_kit",1}};
+		removeoutput[] = {{"ItemFuelBarrelEmpty",1}};
 		nounderground = 0;
+		class EventHandlers
+			{
+				init = "(_this select 0) inflame 1";
+			};
 	};
 	class Gunrack1;
 	class GunRack_DZ: Gunrack1
@@ -1961,7 +1965,9 @@ class CfgVehicles {
 		displayName = "Gun Rack";
 		vehicleClass = "Fortifications";
 		transportMaxWeapons = 20;
-		offset[] = {0,2.5,0};
+		transportMaxMagazines = 0;
+		transportMaxBackpacks = 0;
+		offset[] = {0,2.5,0.5};
 		removeoutput[] = {{"ItemGunRackKit",1}};
 		nounderground = 0;
     };
