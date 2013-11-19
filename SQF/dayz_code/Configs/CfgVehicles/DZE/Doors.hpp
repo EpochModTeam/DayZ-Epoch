@@ -28,8 +28,14 @@ class DZE_Base_Object : All {
 	type = 1;
 	threat[] = {0,0,0};
 	maxSpeed = 0;
-	coefInside = 4;
-	coefInsideHeur = 4;
+	
+	//coefInside = 4;
+	//coefInsideHeur = 4;
+
+	// test settings from h barrier to see if this prevents glitching though a door
+	coefInside = 0.5;
+	coefInsideHeur = 0.8;
+
 	class DestructionEffects {
 		class Sound {
 			simulation = "sound";
