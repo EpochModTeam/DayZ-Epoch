@@ -2763,7 +2763,18 @@ class CfgVehicles {
 	{
 		destrType = "DestructTree"; 
 		armor = 1000;
+		
+		// static
+		hasDriver = 0;
 		simulation = "house";
+		weapons[] = {};
+		magazines[] = {};
+		irTarget = 0;
+		type = 1;
+		threat[] = {0,0,0};
+		maxSpeed = 0;
+		coefInside = 4;
+		coefInsideHeur = 4;
 
 		scope = 2;
 		offset[] = {0,2.5,0.3};
