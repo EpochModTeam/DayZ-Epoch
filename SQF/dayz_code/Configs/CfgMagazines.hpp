@@ -3129,14 +3129,23 @@ class CfgMagazines {
 				
 			};
 			class Crafting5
-            {
-                text = $STR_EPOCH_PLAYER_259;
-                Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
-                neednearby[] = {"workshop"};
-                requiretools[] = {"ItemToolbox"};
-                output[] = {{"PartPlankPack",1}};
-                input[] = {{"PartWoodLumber",3}};
-            };
+            		{
+		                text = $STR_EPOCH_PLAYER_259;
+		                Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+		                neednearby[] = {"workshop"};
+		                requiretools[] = {"ItemToolbox"};
+		                output[] = {{"PartPlankPack",1}};
+		                input[] = {{"PartWoodLumber",3}};
+        		 };
+        		class Crafting6
+        		{
+	        		text = $STR_EPOCH_PLAYER_277;
+			        Script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
+			        neednearby[] = {"workshop"};
+			        requiretools[] = {"ItemToolbox"};
+			        output[] = {{"ItemGunRackKit",1}};
+			        input[] = {{"PartWoodLumber",6}};
+			};
 		};
 	};
 	class PartWoodPlywood: CA_Magazine
