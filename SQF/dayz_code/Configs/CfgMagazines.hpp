@@ -165,7 +165,7 @@ class CfgMagazines {
 				neednearby[] = {};
 				requiretools[] = {};
 				randomOutput = 1;
-				output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1},{"ItemBook1",1},{"ItemBook2",1},{"ItemBook3",1},{"ItemBook4",1},{"ItemNewspaper",1}};
+				output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1},{"ItemBook1",1},{"ItemBook2",1},{"ItemBook3",1},{"ItemBook4",1},{"ItemNewspaper",1},{"ItemORP",1},{"ItemAVE",1},{"ItemLRK",1},{"ItemTNK",1},{"ItemPlotDeed",1}};
 				input[] = {{"ItemDocument",1}};
 			};
 		};
@@ -259,7 +259,30 @@ class CfgMagazines {
 		};
 
 	};
+	
+	class ItemPlotDeed: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "A Plot Deed"; // TODO: localize
+		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		descriptionShort = "Deed to a plot of land, similar to a plot pole."; // TODO: localize
+		weight = 0.1;
+		sfx = "document";
+		class Crafting
+			{
+				text = "Craft Plot Pole";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"30m_plot_kit",1}};
+				input[] = {{"ItemPlotDeed",1},{"ItemGoldBar10oz",2}};
+			};
 
+	};
+	
 	class ItemLetter: CA_Magazine
 	{
 		scope = 2;
