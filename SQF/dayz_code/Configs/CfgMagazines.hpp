@@ -348,6 +348,14 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_epoch\pictures\equip_deaths_ca.paa";
 		descriptionShort = "Torn Newspaper - ""The recent obituaries are stil legible...""";
 		weight = 0.1;
+		class ItemActions
+		{
+			class Obituaries
+			{
+				text = "Read Obituaries"; // TODO: localize
+				script = ";player removeMagazine _id;spawn player_deathBoard;";
+			};
+		};
 	};
 	class ItemDocumentRamp: CA_Magazine
 	{
