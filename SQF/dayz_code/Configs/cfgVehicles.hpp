@@ -9,12 +9,13 @@ class CfgVehicles {
 	#include "CfgVehicles\Zeds\NewZeds.hpp"
 	#include "CfgVehicles\Zeds\PlayerZeds.hpp"
 	#include "CfgVehicles\Females\females.hpp"
+	#include "CfgVehicles\antihack_logic.hpp"
 
 	class All;
 	
 	class HouseBase;
 	class Ruins: HouseBase {};
-
+        #include "CfgVehicles\antihack_plants.hpp"
 	#include "CfgVehicles\DZE\Doors.hpp"
 
 	class AllVehicles;
