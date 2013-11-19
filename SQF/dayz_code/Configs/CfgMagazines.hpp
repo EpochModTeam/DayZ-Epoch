@@ -3040,15 +3040,6 @@ class CfgMagazines {
 				output[] = {{"PartWoodLumber",3}};
 				input[] = {{"PartPlankPack",1}};
 			};
-			class Crafting1
-        		{
-	        		text = $STR_EPOCH_PLAYER_277;
-			        Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
-			        neednearby[] = {"sawmill"};
-			        requiretools[] = {"ItemToolbox"};
-			        output[] = {{"ItemGunRackKit",1}};
-			        input[] = {{"PartPlankPack",2}};
-			};
 		};
 	};
 	class CinderBlocks: CA_Magazine
@@ -3197,6 +3188,15 @@ class CfgMagazines {
 			        output[] = {{"PartPlankPack",1}};
 			        input[] = {{"PartWoodLumber",3}};
         		};
+        		class Crafting6
+        		{
+	        		text = $STR_EPOCH_PLAYER_277;
+			        Script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
+			        neednearby[] = {"workshop"};
+			        requiretools[] = {"ItemToolbox"};
+			        output[] = {{"ItemGunRackKit",1}};
+			        input[] = {{"PartWoodLumber",6}};
+			};
 		};
 	};
 	class PartWoodPlywood: CA_Magazine
