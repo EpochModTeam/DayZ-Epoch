@@ -528,7 +528,7 @@ if (_hasrequireditem) then {
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
 					
 					// fire?
-					if(_tmpbuilt isKindOf "Land_Fire") then {
+					if(_tmpbuilt isKindOf "Land_Fire_DZ") then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
 						PVDZE_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
