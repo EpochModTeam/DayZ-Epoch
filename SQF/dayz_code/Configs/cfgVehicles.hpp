@@ -2755,9 +2755,12 @@ class CfgVehicles {
 	class Sign_1L_Noentry_EP1;
 	class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
 	{
+		destrType = "DestructTree"; 
+		armor = 1000;
+		simulation = "house";
+
 		scope = 2;
-		// destrType = "DestructNo"; 
-		offset[] = {0,2.5,0};
+		offset[] = {0,2.5,0.3};
 		displayName = "30m Plot Pole";
 		vehicleClass = "Fortifications";
 		removeoutput[] = {{"30m_plot_kit",1}};
