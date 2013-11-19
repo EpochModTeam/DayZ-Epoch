@@ -7,7 +7,7 @@
 * [ADDED] Craftable Base Fire Barrel FireBarrel_DZ with an emtpy Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
 * [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle. @vbawol
 * [ADDED] The above documents to the discoverable documents. @dayz10k
-* [ADDED] Can now examine Murder Boards via Newspaper Obituries.  @vbawol
+* [ADDED] Can now examine Murder Boards via Newspaper Obituaries.  @vbawol
 * [ADDED] ItemPlotDeed to discoverable documents (leads to crafting a plot pole). @dayz10k
 * [ADDED] Added Player Names that killed Objects to diag_log @Torndeco
 * [ADDED] Added Player Worldspace location to Connect/Disconnect/Combat Log RPT messages. @dayz10k
@@ -30,6 +30,7 @@
 * [ADDED] Can now maintain lightpoles with a lightbub. @vbawol @dayz10k
 * [ADDED] Directly Disconnect (back to lobby) if you press abort > yes - @Skaronator
 * [ADDED] New Weapons, most of which are backpack compatible: M60, M240 scoped, M249 scoped, MG36 variants, RPK-74, M8 SAW, Bizon, Saiga12K, KSVK.  @dayz10k
+* [ADDED] Extra security features. @facoptere
 
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
 * [UPDATED] Trading log-system (server-side) was improved. @Skaronator
