@@ -1952,10 +1952,10 @@ class CfgVehicles {
 		constructioncount = 2;
 		removeoutput[] = {{"ItemFuelBarrelEmpty",1}};
 		nounderground = 0;
-		class EventHandlers
+		/*class EventHandlers
 			{
 				init = "(_this select 0) inflame 1";
-			};
+			};*/
 	};
 	class Gunrack1;
 	class GunRack_DZ: Gunrack1
