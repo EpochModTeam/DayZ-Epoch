@@ -2529,7 +2529,7 @@
 			<Russian>Keymakers kit</Russian>
 			<Spanish>Keymakers kit</Spanish>
 			<Dutch>Sleutelmakers set</Dutch>
-			<French>Keymakers kit</French>
+			<French>Kit de Reproduction de Clés</French>
 			<Czech>Keymakers kit</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT_DESC">
@@ -2539,7 +2539,7 @@
 			<Russian>Kit including the tools required to smelt, mold and shape keys.</Russian>
 			<Spanish>Kit including the tools required to smelt, mold and shape keys.</Spanish>
 			<Dutch>Met deze sleutelmakers set kun je indien je een vuur en tin hebt je sleutels kopieren.</Dutch>
-			<French>Kit including the tools required to smelt, mold and shape keys.</French>
+			<French>Ce kit inclut tous les outils nécessaires à fondre, modeler et découper des clés.</French>
 			<Czech>Kit including the tools required to smelt, mold and shape keys.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_SLEDGE">
@@ -2549,7 +2549,7 @@
 			<Russian>кувалда</Russian>
 			<Spanish>Almádena</Spanish>
 			<Dutch>Voorhamer</Dutch>
-			<French>Frappe-Devant</French>
+			<French>Masse</French>
 			<Czech>Perlík</Czech>
 		</Key>   
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
@@ -2559,7 +2559,7 @@
 			<Russian>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Russian>
 			<Spanish>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Spanish>
 			<Dutch>Een grote voorhamer met stalen kop. Handig voor sloop en bouw werkzaamheden.</Dutch>
-			<French>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</French>
+			<French>Un outil composé d'une large tête aux faces latérales plates attachée à un manche. Sa tête est habituellement faite en acier. La masse se manipule à deux mains et permet d'exercer plus de force qu'un marteau.</French>
 			<Czech>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_FISHPOLE">
@@ -2579,7 +2579,7 @@
 			<Russian>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Russian>
 			<Spanish>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Spanish>
 			<Dutch>Vishengel: Dit carbonnen hengeltje is al oud, maar werkt nog prima!</Dutch>
-			<French>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</French>
+			<French>Cette canne à pêche en fibre de carbone a beau être vieille, elle fonctionne encore à merveille!</French>
 			<Czech>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CROWBAR">
@@ -2589,18 +2589,18 @@
 		      <Russian>aншпуг</Russian>
 		      <Spanish>Palanca</Spanish>
 		      <Dutch>Breekijzer</Dutch>
-		      <French>Pied de Biche</French>
+		      <French>Pied-de-biche</French>
 		      <Czech>Sochor</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CROWBAR_DESC">
 			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
 			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
-			<German></German>
-			<Russian></Russian>
-			<Spanish></Spanish>
-			<Dutch></Dutch>
-			<French></French>
-			<Czech></Czech>
+			<German>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</German>
+			<Russian>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Russian>
+			<Spanish>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Spanish>
+			<Dutch>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Dutch>
+			<French>Un outil constitué d'une barre de métal dont l'une des extrémité est recourbée servant de point d'appui, légèrement aplatie et fendue, permettant ainsi d'arracher des clous.</French>
+			<Czech>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Czech>
 		</Key>
 		<Key ID="$STR_EQUIP_ETOOL">
 			<Original>Etool</Original>
@@ -2609,7 +2609,7 @@
 			<Russian>саперная лопатка</Russian>
 			<Spanish>Pala Afianzar</Spanish>
 			<Dutch>Opklapbare schep/spade.</Dutch>
-			<French>Outil de Tranchée</French>
+			<French>Pelle Pliable</French>
 			<Czech>Etool</Czech>
 		</Key>
 	</Package>
@@ -5561,7 +5561,7 @@
       <Russian>Remove from Toolbelt.</Russian>
       <Spanish>Remove from Toolbelt.</Spanish>
       <Dutch>Verwijder van gereedschapsgordel</Dutch>
-      <French>Remove from Toolbelt.</French>
+      <French>Retirer de la Ceinture.</French>
       <Czech>Remove from Toolbelt.</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_296">
@@ -5571,7 +5571,7 @@
       <Russian>Add to Toolbelt.</Russian>
       <Spanish>Add to Toolbelt.</Spanish>
       <Dutch>Voeg toe aan gereedschapsgordel</Dutch>
-      <French>Add to Toolbelt.</French>
+      <French>Ajouter à la Ceinture.</French>
       <Czech>Add to Toolbelt.</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_297">
@@ -5581,7 +5581,7 @@
       <Russian>Cast Fishing Pole</Russian>
       <Spanish>Cast Fishing Pole</Spanish>
       <Dutch>Werp vislijn uit</Dutch>
-      <French>Cast Fishing Pole</French>
+      <French>Lancer la Ligne</French>
       <Czech>Cast Fishing Pole</Czech>
     </Key>
     <Key ID="R3F_VERSION_WEIGHTED">

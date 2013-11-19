@@ -19,12 +19,12 @@ class MeleeFishingPole: MeleeWeapon
 	{
 		class Use
 		{
-			text="STR_EPOCH_PLAYER_297";
+			text="$STR_EPOCH_PLAYER_297";
 			script="spawn player_goFishing;";
 		};
 		class Toolbelt
 		{
-			text="STR_EPOCH_PLAYER_296";
+			text="$STR_EPOCH_PLAYER_296";
 			script="spawn player_addToolbelt;";
 			use[]=
 			{

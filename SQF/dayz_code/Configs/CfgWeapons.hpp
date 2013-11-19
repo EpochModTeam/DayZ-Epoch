@@ -87,4 +87,5 @@ class CfgWeapons {
 	#include "CfgWeapons\Weapon\LMG\m240_scoped.hpp"
 	#include "CfgWeapons\Weapon\LMG\m249_scoped.hpp"
 	#include "CfgWeapons\Weapon\LMG\M60A4.hpp"
+//	#include "CfgWeapons\Weapon\Rifle\FN_FAL_ANPVS4_DZE.hpp"
 };
