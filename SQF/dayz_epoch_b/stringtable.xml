@@ -1553,7 +1553,7 @@
 			<Czech>Králík</Czech>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_3">						
-			<Original>Rabbit to be used for sustainmen.</Original>						
+			<Original>Rabbit to be used for sustainment.</Original>						
 			<English>Rabbit to be used for sustainment.</English>						
 			<German>Kaninchen, für den Verzehr geeignet.</German>
 			<Russian>Жареная крольчатина, готовая к употреблению.</Russian>
@@ -1916,7 +1916,7 @@
 			<Original>Meal Ready-to-Eat</Original>
 			<English>Meal Ready-to-Eat</English>	
 			<German>MRE Feldration</German>
-			<Russian>упаковка сухого пайка.</Russian>
+			<Russian>Упаковка сухого пайка.</Russian>
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Militair Rantsoen klaar-om-op-te-eten</Dutch>
 			<French>Repas prêt à manger</French>
@@ -2598,7 +2598,7 @@
 			<German>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</German>
 			<Russian>Инструмент, состоящий из металлического стержня с одним изогнутым концом, часто с небольшой трещиной на одном или обоих концах для удаления гвоздей.</Russian>
 			<Spanish>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Spanish>
-			<Dutch>Een stevig breekijzer voor breek en sloopwerkzaamheden.</Dutch>
+			<Dutch>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Dutch>
 			<French>Un outil constitué d'une barre de métal dont l'une des extrémité est recourbée servant de point d'appui, légèrement aplatie et fendue, permettant ainsi d'arracher des clous.</French>
 			<Czech>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Czech>
 		</Key>
@@ -2928,7 +2928,7 @@
 		  <Original>Hotwire vehicle already in progress.</Original>
 		  <English>Hotwire vehicle already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы уже угоняете машину.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Auto wordt al opengebroken.</Dutch>
 		  <French>Le crochetage du véhicule est déjà en cours.</French>
@@ -2958,7 +2958,7 @@
 		  <Original>Canceled siphon.</Original>
 		  <English>Canceled siphon.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Слив отменён.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Brandstofverplaatsing stopgezet</Dutch>
 		  <French>Siphonage annulé.</French>
@@ -3508,7 +3508,7 @@
 		  <Original>No parts found.</Original>
 		  <English>No parts found.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Запчасти не найдены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen onderdelen gevonden.</Dutch>
 		  <French>Aucune pièce trouvée.</French>
@@ -3548,7 +3548,7 @@
 		  <Original>Salvage already in progress.</Original>
 		  <English>Salvage already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Уже снимается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met bergen.</Dutch>
 		  <French>La récupération est déjà en cours.</French>
@@ -3558,7 +3558,7 @@
 		  <Original>Canceled Salvage.</Original>
 		  <English>Canceled Salvage.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Снятие отменено.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Berging afgebroken.</Dutch>
 		  <French>Récupération annulée.</French>
@@ -3588,7 +3588,7 @@
 		  <Original>Siphon already in progress.</Original>
 		  <English>Siphon already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Уже сливается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Reeds bezig met brandstofverplaatsing.</Dutch>
 		  <French>Le siphonage est déjà en cours.</French>
@@ -3628,7 +3628,7 @@
 		  <Original>No Vehicles In Tow.</Original>
 		  <English>No Vehicles In Tow.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Нет машин на буксире.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen voertuigen op sleep.</Dutch>
 		  <French>Aucun véhicule remorqué.</French>
@@ -3658,7 +3658,7 @@
 		  <Original>Starting trade, stand still to complete trade.</Original>
 		  <English>Starting trade, stand still to complete trade.</English>
 		  <German></German>
-		  <Russian>Торговля началась, стойте на месте, чтобы завершить торговлю.</Russian>
+		  <Russian>Торговля началась, стойте на месте, чтобы завершить сделку.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met handellen, blijf stilstaan om af te ronden.</Dutch>
 		  <French>Transaction démarré, restez immobile pour achever la transaction.</French>
@@ -3788,7 +3788,7 @@
 		  <Original>%1 not setup yet.</Original>
 		  <English>%1 not setup yet.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 ещё не установлен.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 is nog niet ingesteld.</Dutch>
 		  <French>%1 n'est pas encore installé.</French>
@@ -3808,7 +3808,7 @@
 		  <Original>That %1 is already being packed.</Original>
 		  <English>That %1 is already being packed.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 уже запакован.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze %1 wordt al reeds ingepakt.</Dutch>
 		  <French>%1 est déjà en cours d'emballage.</French>
@@ -3848,7 +3848,7 @@
 		  <Original>That %1 is already being unlocked.</Original>
 		  <English>That %1 is already being unlocked.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 уже открыт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze %1 wordt alreeds van slot gehaald.</Dutch>
 		  <French>%1 est déjà en cours de déverrouillage.</French>
@@ -3878,7 +3878,7 @@
 		  <Original>You have successfully loaded %1 ammunition.</Original>
 		  <English>You have successfully loaded %1 ammunition.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы успешно загрузили %1 боеприпасы.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt met succes %1 munitie bijgeladen.</Dutch>
 		  <French>Vous avez rechargé les munitions de %1 avec succés.</French>
@@ -3938,7 +3938,7 @@
 		  <Original>Preparing to siphon, stand still to fill %1.</Original>
 		  <English>Preparing to siphon, stand still to fill %1.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Подготовка к сливу, стойте на месте, чтобы заполнить %1.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
 		  <French>Préparation du siphonage, restez immobile pour remplir %1.</French>
@@ -3978,7 +3978,7 @@
 		  <Original>Missing tool %1</Original>
 		  <English>Missing tool %1</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Отсутствует инструмент %1</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Ontbrekend gereedschap: %1</Dutch>
 		  <French>L'outil %1 est nécessaire</French>
@@ -4008,7 +4008,7 @@
 		  <Original>You have setup your %2. Combination is %1</Original>
 		  <English>You have setup your %2. Combination is %1</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы установили свой %2. Комбинация %1</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
 		  <French>Vous avez installé votre %2. La combinaison est %1</French>
@@ -4075,10 +4075,10 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_147">
-		  <Original>\n\nChopping down tree, walk away at anytime to cancel. (%1/%2)</Original>
-		  <English>\n\nChopping down tree, walk away at anytime to cancel. (%1/%2)</English>
+		  <Original>\n\nChopping down tree, walk away at any time to cancel. (%1/%2)</Original>
+		  <English>\n\nChopping down tree, walk away at any time to cancel. (%1/%2)</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nРубите дерево, уходите в любое время для отмены. (%1/%2)</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nBoom wordt neergehakt, loop weg om te annuleren. (%1/%2)</Dutch>
 		  <French></French>
@@ -4088,7 +4088,7 @@
 		  <Original>\n\n%1 piles of wood has been successfully added in front of you.</Original>
 		  <English>\n\n%1 piles of wood has been successfully added in front of you.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\n%1 дрова были успешно размещены перед вами.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\n%1 stapels hout liggen nu recht voor je.</Dutch>
 		  <French></French>
@@ -4098,7 +4098,7 @@
 		  <Original>\n\nCrafting needs a %1 within %2 meters</Original>
 		  <English>\n\nCrafting needs a %1 within %2 meters</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nДля создания требуется %1 вблизи %2 метров</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nHiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 		  <French></French>
@@ -4158,7 +4158,7 @@
 		  <Original>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</Original>
 		  <English>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\nРуда добывается, уходите в любое время для отмены. (%1/%2)</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nBezig met het delven van Erts, loop weg om te annuleren. (%1/%2)</Dutch>
 		  <French></French>
@@ -4168,7 +4168,7 @@
 		  <Original>\n\n%1 piles of ore has been successfully added in front of you.</Original>
 		  <English>\n\n%1 piles of ore has been successfully added in front of you.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>\n\n%1 руда была успешно размещена перед вами.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\n%1 hoopjes erts liggen nu voor je neus.</Dutch>
 		  <French></French>
@@ -4188,7 +4188,7 @@
 		  <Original>You have upgraded %2. Combination is %1</Original>
 		  <English>You have upgraded %2. Combination is %1</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы улучшили %2. Комбинация %1</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt een %2 geupgrade. De combinatie is %1</Dutch>
 		  <French></French>
@@ -4208,7 +4208,7 @@
 		  <Original>Preparing to refuel, stand still to drain %1.</Original>
 		  <English>Preparing to refuel, stand still to drain %1.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Подготовка к заправке, стойте на месте, чтобы опустошить 1%.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bijtanken aan het voorbereiden. Sta stil om de %1 leeg te gieten.</Dutch>
 		  <French></French>
@@ -4218,7 +4218,7 @@
 		  <Original>%1 cannot hold that much fuel.</Original>
 		  <English>%1 cannot hold that much fuel.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 не может хранить столько топлива.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen ruimte meer voor brandstof in deze %1.</Dutch>
 		  <French></French>
@@ -4268,7 +4268,7 @@
 		  <Original>You have successfully attached %1 to the %2</Original>
 		  <English>You have successfully attached %1 to the %2</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы успешно установили %1 на %2</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt succesvol %1 aan de %2 gemonteerd.</Dutch>
 		  <French></French>
@@ -4278,7 +4278,7 @@
 		  <Original>You need %1 to repair this</Original>
 		  <English>You need %1 to repair this</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вам нужно %1, чтобы отремонитровать это</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Om dit te repareren heb je %1 nodig.</Dutch>
 		  <French></French>
@@ -4288,7 +4288,7 @@
 		  <Original>You have destroyed %1 while attempting to remove from %2</Original>
 		  <English>You have destroyed %1 while attempting to remove from %2</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы сломали %1, при попытке снятия с %2</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2</Dutch>
 		  <French></French>
@@ -4308,7 +4308,7 @@
 		  <Original>You need %1 to remove this part.</Original>
 		  <English>You need %1 to remove this part.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вам нужно %1, чтобы снять эту запчасть.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %1 nodig om dit deel te verwijderen.</Dutch>
 		  <French></French>
@@ -4328,7 +4328,7 @@
 		  <Original>%1 does not have enough fuel to siphon.</Original>
 		  <English>%1 does not have enough fuel to siphon.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 не имеет достаточно топлива для слития.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		  <French></French>
@@ -4338,7 +4338,7 @@
 		  <Original>Dog consumed %1, and is now tamed.</Original>
 		  <English>Dog consumed %1, and is now tamed.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Собака употребила %1, и теперь приручена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Hond heeft %1 gegeten, en is nu tam.</Dutch>
 		  <French></French>
@@ -4348,7 +4348,7 @@
 		  <Original>Dog consumed %1, yet remains untamed.</Original>
 		  <English>Dog consumed %1, yet remains untamed.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Собака употребила %1, всё ещё остаётся дикой.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Hond heeft %1 gegeten, maar is nog niet tam.</Dutch>
 		  <French></French>
@@ -4358,7 +4358,7 @@
 		  <Original>%1 has been attached to Tow Truck.</Original>
 		  <English>%1 has been attached to Tow Truck.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 был взят на буксир.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 is bevestigd aan de sleepwagen</Dutch>
 		  <French></French>
@@ -4368,7 +4368,7 @@
 		  <Original>Failed to attach %1 to Tow Truck.</Original>
 		  <English>Failed to attach %1 to Tow Truck.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Не удалось взять на буксир %1.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Het is niet gelukt om %1 aan de sleepwagen te bevestigen.</Dutch>
 		  <French></French>
@@ -4378,7 +4378,7 @@
 		  <Original>%1 too large and cannot be towed.</Original>
 		  <English>%1 too large and cannot be towed.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 слишком большой и не может буксироваться.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 is te groot om te slepen.</Dutch>
 		  <French></French>
@@ -4388,7 +4388,7 @@
 		  <Original>%1 has been detached from Tow Truck.</Original>
 		  <English>%1 has been detached from Tow Truck.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>%1 был снят с буксира.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>%1 is losgemaakt van de sleepwagen.</Dutch>
 		  <French></French>
@@ -4398,7 +4398,7 @@
 		  <Original>You have setup your Safe. Combination is %1</Original>
 		  <English>You have setup your Safe. Combination is %1</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы установили свой сейф. Комбинация %1</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt je kluis geinstalleerd. De code is %1</Dutch>
 		  <French></French>
@@ -4478,7 +4478,7 @@
 		  <Original>Starting trade, stand still to complete trade %1 of %2.</Original>
 		  <English>Starting trade, stand still to complete trade %1 of %2.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Торговля началась, стойте на месте, чтобы завершить сделку %1 из %2.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handel gestart, sta stil om te voltooien. (%1 van %2)</Dutch>
 		  <French></French>
@@ -4498,7 +4498,7 @@
 		  <Original>Craft Ramp</Original>
 		  <English>Craft Ramp</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Наклонная плоскость</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak schans</Dutch>
 		  <French></French>
@@ -4506,7 +4506,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_190">
 		  <Original>Craft Tent</Original>
-		  <English>Craft Tent</English>
+		  <English>Создать: Палатка</English>
 		  <German></German>
 		  <Russian></Russian>
 		  <Spanish></Spanish>
@@ -4518,7 +4518,7 @@
 		  <Original>Craft Desert Tent</Original>
 		  <English>Craft Desert Tent</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Пустынная палатка</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak Woestijntent</Dutch>
 		  <French></French>
@@ -4528,7 +4528,7 @@
 		  <Original>Craft Green Tent</Original>
 		  <English>Craft Green Tent</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Зелёная палатка</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak Groene tent</Dutch>
 		  <French></French>
@@ -4538,7 +4538,7 @@
 		  <Original>Craft Sun Shade</Original>
 		  <English>Craft Sun Shade</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Солнцезащитный козырёк</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak zonwering</Dutch>
 		  <French></French>
@@ -4548,7 +4548,7 @@
 		  <Original>Craft Burlap</Original>
 		  <English>Craft Burlap</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Брезент</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak Jutte</Dutch>
 		  <French></French>
@@ -4558,7 +4558,7 @@
 		  <Original>Craft Sandbag</Original>
 		  <English>Craft Sandbag</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Мешок с песком</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak Zandzak</Dutch>
 		  <French></French>
@@ -4568,7 +4568,7 @@
 		  <Original>Craft Light Pole</Original>
 		  <English>Craft Light Pole</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Light Pole</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak Lichtmast</Dutch>
 		  <French></French>
@@ -4618,7 +4618,7 @@
 		  <Original>Empty Case</Original>
 		  <English>Empty Case</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Пустой чемоданчик</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak kist leeg</Dutch>
 		  <French></French>
@@ -4698,7 +4698,7 @@
 		  <Original>Open %1</Original>
 		  <English>Open %1</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Открыть %1</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Open %1</Dutch>
 		  <French></French>
@@ -4708,7 +4708,7 @@
 		  <Original>Smelt 10oz bar</Original>
 		  <English>Smelt 10oz bar</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Выплавить 10oz слиток</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Smelt 10oz balk</Dutch>
 		  <French></French>
@@ -4718,7 +4718,7 @@
 		  <Original>Smelt 1oz bar</Original>
 		  <English>Smelt 1oz bar</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Выплавить 1oz слиток</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Smelt 1oz balk</Dutch>
 		  <French></French>
@@ -4738,7 +4738,7 @@
 		  <Original>Craft Pole</Original>
 		  <English>Craft Pole</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Столб</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer paal</Dutch>
 		  <French></French>
@@ -4748,7 +4748,7 @@
 		  <Original>Build Corrugated Fence</Original>
 		  <English>Build Corrugated Fence</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Построить гофрированный забор</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouw Ribbelplaten hek</Dutch>
 		  <French></French>
@@ -4758,7 +4758,7 @@
 		  <Original>Craft Wooden Shed</Original>
 		  <English>Craft Wooden Shed</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Деревянный сарай</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouw houten schuur</Dutch>
 		  <French></French>
@@ -4768,7 +4768,7 @@
 		  <Original>Craft Storage Shed</Original>
 		  <English>Craft Storage Shed</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Лабаз</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouw opslag schuur</Dutch>
 		  <French></French>
@@ -4778,7 +4778,7 @@
 		  <Original>Craft Outhouse</Original>
 		  <English>Craft Outhouse</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Сортир</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouw buitenhuisje</Dutch>
 		  <French></French>
@@ -4788,7 +4788,7 @@
 		  <Original>Craft Corrugated Fence</Original>
 		  <English>Craft Corrugated Fence</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Гофрированный забор</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouw ribbelplaten hek</Dutch>
 		  <French></French>
@@ -4798,7 +4798,7 @@
 		  <Original>Craft Rusty Gate</Original>
 		  <English>Craft Rusty Gate</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Ржавые ворота</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouw roestige poort</Dutch>
 		  <French></French>
@@ -4808,7 +4808,7 @@
 		  <Original>Craft Metal Panel</Original>
 		  <English>Craft Metal Panel</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Металлическая панель</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Ceëer metalen paneel</Dutch>
 		  <French></French>
@@ -4818,7 +4818,7 @@
 		  <Original>Pack 6 Coke</Original>
 		  <English>Pack 6 Coke</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Запаковать: Кока-кола(6)</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verpak 6 cola</Dutch>
 		  <French></French>
@@ -4828,7 +4828,7 @@
 		  <Original>Pack 6 Pepsi</Original>
 		  <English>Pack 6 Pepsi</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Запаковать: Пепси(6)</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verpak 6 pepsi</Dutch>
 		  <French></French>
@@ -4838,7 +4838,7 @@
 		  <Original>Pack Scrap Metal</Original>
 		  <English>Pack Scrap Metal</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Запаковать: Металлолом</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verpak scrap metal</Dutch>
 		  <French></French>
@@ -4848,7 +4848,7 @@
 		  <Original>Pack Tank Traps</Original>
 		  <English>Pack Tank Traps</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Запаковать: Танковые ловушки</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verpak tank traps</Dutch>
 		  <French></French>
@@ -4868,7 +4868,7 @@
 		  <Original>Pack Bacon</Original>
 		  <English>Pack Bacon</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Запаковать: Бекон</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verpak speklappen</Dutch>
 		  <French></French>
@@ -4878,7 +4878,7 @@
 		  <Original>Pack 6 Bacon</Original>
 		  <English>Pack 6 Bacon</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Запаковать: Бекон(6)</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verpack 6 speklappen</Dutch>
 		  <French></French>
@@ -4888,7 +4888,7 @@
 		  <Original>Craft Metal Floor</Original>
 		  <English>Craft Metal Floor</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Металлический пол</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer metalen vloer</Dutch>
 		  <French></French>
@@ -4898,7 +4898,7 @@
 		  <Original>Craft Lg Camo Net</Original>
 		  <English>Craft Lg Camo Net</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Lg Camo Net</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer groot camouflagenet</Dutch>
 		  <French></French>
@@ -4908,7 +4908,7 @@
 		  <Original>Craft Lg Camo Net</Original>
 		  <English>Craft Lg Camo Net</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Lg Camo Net</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer groot camouflagenet</Dutch>
 		  <French></French>
@@ -4928,7 +4928,7 @@
 		  <Original>Craft Wood Floor</Original>
 		  <English>Craft Wood Floor</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Деревянный пол</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer houten vloer</Dutch>
 		  <French></French>
@@ -4948,7 +4948,7 @@
 		  <Original>Craft Doorway</Original>
 		  <English>Craft Doorway</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Дверной проём</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer Deuropening</Dutch>
 		  <French></French>
@@ -4958,7 +4958,7 @@
 		  <Original>Craft Window</Original>
 		  <English>Craft Window</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Окно</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer raam</Dutch>
 		  <French></French>
@@ -4968,7 +4968,7 @@
 		  <Original>Craft Large Wall</Original>
 		  <English>Craft Large Wall</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Большая стена</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer grote muur</Dutch>
 		  <French></French>
@@ -4978,7 +4978,7 @@
 		  <Original>Craft Wood Wall</Original>
 		  <English>Craft Wood Wall</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Деревянная стена</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer houten muur</Dutch>
 		  <French></French>
@@ -4988,7 +4988,7 @@
 		  <Original>Craft Door</Original>
 		  <English>Craft Door</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Дверь</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer deur</Dutch>
 		  <French></French>
@@ -4998,7 +4998,7 @@
 		  <Original>Craft Locked Door</Original>
 		  <English>Craft Locked Door</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Закрытая дверь</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer afsluitbare deur</Dutch>
 		  <French></French>
@@ -5008,7 +5008,7 @@
 		  <Original>Craft Garage Door</Original>
 		  <English>Craft Garage Door</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Дверь гаража</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer garagedeur</Dutch>
 		  <French></French>
@@ -5028,7 +5028,7 @@
 		  <Original>Craft Lumber</Original>
 		  <English>Craft Lumber</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Lumber</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer planken</Dutch>
 		  <French></French>
@@ -5038,7 +5038,7 @@
 		  <Original>Craft Arrows</Original>
 		  <English>Craft Arrows</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Стрелы</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer pijlen</Dutch>
 		  <French></French>
@@ -5048,7 +5048,7 @@
 		  <Original>Craft Stick Fence</Original>
 		  <English>Craft Stick Fence</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Stick Fence</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer takken hek</Dutch>
 		  <French></French>
@@ -5068,7 +5068,7 @@
 		  <Original>Plot Pole</Original>
 		  <English>Plot Pole</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Столб</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5115,10 +5115,10 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_251">
-		  <Original>Un pack</Original>
-		  <English>Un pack</English>
+		  <Original>Unpack</Original>
+		  <English>Unpack</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Распаковывать</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5128,7 +5128,7 @@
 		  <Original>Craft Half Wall</Original>
 		  <English>Craft Half Wall</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Половина стены</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5138,7 +5138,7 @@
 		  <Original>Craft Garage Doorway</Original>
 		  <English>Craft Garage Doorway</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Гаражный дверной проём</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5148,7 +5148,7 @@
 		  <Original>Craft Plywood</Original>
 		  <English>Craft Plywood</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Фанера</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5158,7 +5158,7 @@
 		  <Original>Craft Supply Crate</Original>
 		  <English>Craft Supply Crate</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Ящик с припасами</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5168,7 +5168,7 @@
 		  <Original>Craft Deer Stand</Original>
 		  <English>Craft Deer Stand</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Палата</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5178,7 +5178,7 @@
 		  <Original>Craft Wood Stairs</Original>
 		  <English>Craft Wood Stairs</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Деревянные ступеньки</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5188,7 +5188,7 @@
 		  <Original>Craft Wood Ladder</Original>
 		  <English>Craft Wood Ladder</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Деревянная лестница</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5198,7 +5198,7 @@
 		  <Original>Craft Lumber Pack</Original>
 		  <English>Craft Lumber Pack</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Lumber Pack</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5208,7 +5208,7 @@
 		  <Original>Craft Workbench</Original>
 		  <English>Craft Workbench</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Верстак</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5218,7 +5218,7 @@
 		  <Original>Craft Shack</Original>
 		  <English>Craft Shack</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Будка</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5228,7 +5228,7 @@
 		  <Original>Craft Floor 1/4</Original>
 		  <English>Craft Floor 1/4</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Пол 1/4</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5238,7 +5238,7 @@
 		  <Original>Craft Wall 1/3</Original>
 		  <English>Craft Wall 1/3</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Стена 1/3</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5248,7 +5248,7 @@
 		  <Original>Craft Plywood Pack</Original>
 		  <English>Craft Plywood Pack</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Plywood Pack</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5258,7 +5258,7 @@
 		  <Original>Craft Scrap Metal</Original>
 		  <English>Craft Scrap Metal</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Металлолом</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5298,7 +5298,7 @@
 		  <Original>Craft Bandages</Original>
 		  <English>Craft Bandages</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Бинты</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5308,7 +5308,7 @@
 		  <Original>Craft Desert Net</Original>
 		  <English>Craft Desert Net</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Пустынная сеть</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5318,7 +5318,7 @@
 		  <Original>Craft Forest Net</Original>
 		  <English>Craft Forest Net</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Лесная сеть</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5328,7 +5328,7 @@
 		  <Original>Build Sandbag</Original>
 		  <English>Build Sandbag</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Мешок с песком</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5338,7 +5338,7 @@
 		  <Original>Craft Large Sandbag</Original>
 		  <English>Craft Large Sandbag</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Большой мешок с песком</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5348,7 +5348,7 @@
 		  <Original>Craft Sandbag Nest</Original>
 		  <English>Craft Sandbag Nest</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Sandbag Nest</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5358,7 +5358,7 @@
 		  <Original>Craft Sledge</Original>
 		  <English>Craft Sledge</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Кувалда</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5368,7 +5368,7 @@
 		  <Original>Craft Fire Barrel</Original>
 		  <English>Craft Fire Barrel</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Огненная бочка</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5378,7 +5378,7 @@
 		  <Original>Craft Gun Rack</Original>
 		  <English>Craft Gun Rack</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Создать: Полка для оружия</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5538,7 +5538,7 @@
 		  <Original>Buy For</Original>
 		  <English>Buy For</English>
 		  <German></German>
-		  <Russian>Купить за</Russian>
+		  <Russian>Куплю за</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5548,7 +5548,7 @@
 		  <Original>Sell For</Original>
 		  <English>Sell For</English>
 		  <German></German>
-		  <Russian>Продать за</Russian>
+		  <Russian>Продам за</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5589,7 +5589,7 @@
 		  <English>1.04</English>
 		  <German>1.04</German>
 		  <Russian>1.04</Russian>
-		  <Spanish>v</Spanish>
+		  <Spanish>1.04</Spanish>
 		  <Dutch>1.04</Dutch>
 		  <French>1.04</French>
 		  <Czech>1.04</Czech>
