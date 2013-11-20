@@ -1,7 +1,7 @@
 == ROLLING CHANGE LOG 1.0.3 ==
 
-* [NEW] In-game Map - Unused Arma UI has been removed from DayZ CE 1.8. @Skaronator
-* [NEW] Gear is only accessible in vehicles with "G" key due to removal of Arma Map Menus from DayZ CE 1.8. @Skaronator
+* [NEW] In-game Map - Unused Arma UI has been removed, from DayZ CE 1.8. @Skaronator
+* [NEW] Gear is only accessible in vehicles with "G" key due to removal of Arma Map Menus, from DayZ CE 1.8. @Skaronator
 
 * [ADDED] Craft-able Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons. @dayz10k
 * [ADDED] Craft-able Base Fire Barrel FireBarrel_DZ with an empty Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
