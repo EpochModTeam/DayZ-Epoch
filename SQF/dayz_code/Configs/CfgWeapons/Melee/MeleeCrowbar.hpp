@@ -35,7 +35,7 @@ class MeleeCrowbar: MeleeWeapon
 		};
 		class Library
 		{
-			libTextDesc="STR_EQUIP_CROWBAR_DESC";
+			libTextDesc="$STR_EQUIP_CROWBAR_DESC";
 		};
-		descriptionShort="STR_EQUIP_CROWBAR_DESC";
+		descriptionShort="$STR_EQUIP_CROWBAR_DESC";
 	};

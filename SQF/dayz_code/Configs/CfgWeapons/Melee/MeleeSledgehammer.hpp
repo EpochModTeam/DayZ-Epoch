@@ -6,7 +6,7 @@ class MeleeSledge: MeleeWeapon
 		magazineReloadTime=0;
 		model="\z\addons\dayz_epoch\models\sledge_weaponized";
 		picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa"; // todo icon
-		displayName="STR_EQUIP_SLEDGE";
+		displayName="$STR_EQUIP_SLEDGE";
 		droppeditem= "ItemSledge";
 		magazines[]=
 		{
@@ -35,7 +35,7 @@ class MeleeSledge: MeleeWeapon
 		};
 		class Library
 		{
-			libTextDesc="STR_EQUIP_CROWBAR_DESC";
+			libTextDesc="$STR_EQUIP_CROWBAR_DESC";
 		};
-		descriptionShort="STR_EQUIP_CROWBAR_DESC";
+		descriptionShort="$STR_EQUIP_CROWBAR_DESC";
 	};
