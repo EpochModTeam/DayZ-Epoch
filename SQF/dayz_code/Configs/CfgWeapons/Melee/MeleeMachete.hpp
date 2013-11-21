@@ -21,7 +21,7 @@ class MeleeMachete: MeleeWeapon
 		{
 			class Toolbelt
 			{
-				text="Add to Toolbelt";
+				text=$STR_EPOCH_PLAYER_296;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
