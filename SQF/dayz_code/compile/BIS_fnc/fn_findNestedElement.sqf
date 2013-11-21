@@ -67,7 +67,7 @@ _searchArrayChildrenFunc =
 			[_sub, _query] call _searchArrayFunc;
 		};
 	};
-	if(count path > 0)then{
+	if(count _path > 0)then{
 		//Nothing was found, so take a step back.
 		if (!_found) then {_path resize ((count _path) - 1)};
 	};
