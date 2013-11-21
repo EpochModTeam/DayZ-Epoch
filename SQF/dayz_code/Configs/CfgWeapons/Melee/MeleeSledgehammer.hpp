@@ -35,7 +35,7 @@ class MeleeSledge: MeleeWeapon
 		};
 		class Library
 		{
-			libTextDesc=STR_EQUIP_SLEDGE_DESC;
+			libTextDesc=$STR_EQUIP_SLEDGE_DESC;
 		};
-		descriptionShort=STR_EQUIP_SLEDGE_DESC;
+		descriptionShort=$STR_EQUIP_SLEDGE_DESC;
 	};
