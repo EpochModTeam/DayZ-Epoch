@@ -991,7 +991,7 @@ class RscDisplayGear
 			idc = 1101;
 			x = 0.0416704;
 			y = 0.627451;
-			text = "";
+			text = "Gear of the unit:";
 		};
 		class CA_Money: RscText
 		{
@@ -1001,7 +1001,7 @@ class RscDisplayGear
 			x = -2.50409;
 			y = -2.85784;
 			w = 0.228;
-			text = "";
+			text = "Money:";
 		};
 		class CA_Money_Value: RscText
 		{

@@ -15,7 +15,7 @@ class EpochDeathBoardDialog
 		class RscText_1001: RscText
 		{
 			idc = -1;
-			text = $STR_EPOCH_PLAYER_300;
+			text = "Kill Board";
 			x = 0.283659 * safezoneW + safezoneX;
 			y = 0.224978 * safezoneH + safezoneY;
 			w = 0.432681 * safezoneW;
@@ -34,7 +34,7 @@ class EpochDeathBoardDialog
 		class RscText_1002: RscText
 		{
 			idc = -1;
-			text = $STR_EPOCH_PLAYER_299;
+			text = "Murders";
 			x = 0.29042 * safezoneW + safezoneX;
 			y = 0.293733 * safezoneH + safezoneY;
 			w = 0.0540852 * safezoneW;
