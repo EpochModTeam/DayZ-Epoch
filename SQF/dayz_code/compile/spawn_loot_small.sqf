@@ -40,6 +40,24 @@ switch (_iClass) do
 		_canType = _itemTypes select _index;
 		_item addMagazineCargoGlobal [_canType,1];
 	};
+	case "cfglootweapon":
+	{
+		//Item is sigle, add 1 item from cfgloot
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+
+		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		_index = dayz_CLBase find _iItem;
+		_weights = dayz_CLChances select _index;
+		_cntWeights = count _weights;
+			
+	    _index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_iItem = _itemTypes select _index;
+
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+		_item addWeaponCargoGlobal [_iItem,1];
+		
+	};
 	case "weapon":
 	{
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
