@@ -62,7 +62,32 @@ switch (_iClass) do
 
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
 	};
-	
+	case "cfglootweapon":
+	{
+		//Item is sigle, add 1 item from cfgloot
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+
+		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		_index = dayz_CLBase find _iItem;
+		_weights = dayz_CLChances select _index;
+		_cntWeights = count _weights;
+			
+	    _index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_iItem = _itemTypes select _index;
+
+		//Item is a weapon, add it and a random quantity of magazines
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+		_item addWeaponCargoGlobal [_iItem,1];
+		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
+		if ((count _mags) > 0) then
+		{
+			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
+			if (_mags select 0 == "20Rnd_556x45_Stanag") then { _mags set [0, "30Rnd_556x45_Stanag"] };
+			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
+		};
+		
+	};
 	case "weapon":
 	{
 		//Item is a weapon, add it and a random quantity of magazines
