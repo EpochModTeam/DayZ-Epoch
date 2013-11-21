@@ -2602,7 +2602,7 @@
 			<French>Un outil constitué d'une barre de métal dont l'une des extrémité est recourbée servant de point d'appui, légèrement aplatie et fendue, permettant ainsi d'arracher des clous.</French>
 			<Czech>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Czech>
 		</Key>
-		<Key ID="$STR_EQUIP_ETOOL">
+		<Key ID="STR_EQUIP_ETOOL">
 			<Original>Etool</Original>
 			<English>Etool</English>
 			<German>Feldspaten</German>
