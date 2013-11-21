@@ -2,7 +2,7 @@
 class Soldier_Bodyguard_M4_PMC;
 class SurvivorW2_DZ: Soldier_Bodyguard_M4_PMC
 {
-	displayName = "$STR_CHAR_1";
+	displayName = $STR_CHAR_1;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	model = "\dayz\characters\annie_original";
