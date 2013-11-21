@@ -160,7 +160,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_188";
+				text = $STR_EPOCH_PLAYER_188;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -371,7 +371,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_189";
+				text = $STR_EPOCH_PLAYER_189;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -394,7 +394,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_190";
+				text = $STR_EPOCH_PLAYER_190;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -403,7 +403,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_191";
+				text = $STR_EPOCH_PLAYER_191;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -412,7 +412,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_192";
+				text = $STR_EPOCH_PLAYER_192;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -421,7 +421,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_193";
+				text = $STR_EPOCH_PLAYER_193;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -430,7 +430,7 @@ class CfgMagazines {
 			};
 			class Crafting4
 			{
-				text = "$STR_EPOCH_PLAYER_194";
+				text = $STR_EPOCH_PLAYER_194;
 				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -452,7 +452,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_195";
+				text = $STR_EPOCH_PLAYER_195;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sand"}; // todo add sand requirement
 				requiretools[] = {"ItemEtool","ItemToolbox"};
@@ -473,7 +473,7 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_196";
+				text = $STR_EPOCH_PLAYER_196;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
@@ -509,7 +509,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_198";
+				text = $STR_EPOCH_PLAYER_198;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -536,7 +536,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_199";
+				text = $STR_EPOCH_PLAYER_199;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -545,7 +545,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -573,7 +573,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_202";
+				text = $STR_EPOCH_PLAYER_202;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -582,7 +582,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -591,7 +591,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -618,7 +618,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_203";
+				text = $STR_EPOCH_PLAYER_203;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -627,7 +627,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -636,7 +636,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -663,7 +663,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_204";
+				text = $STR_EPOCH_PLAYER_204;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -672,7 +672,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -681,7 +681,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -708,7 +708,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_205";
+				text = $STR_EPOCH_PLAYER_205;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -717,7 +717,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -726,7 +726,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -753,7 +753,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_206";
+				text = $STR_EPOCH_PLAYER_206;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -762,7 +762,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -771,7 +771,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -798,7 +798,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_207";
+				text = $STR_EPOCH_PLAYER_207;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -807,7 +807,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -816,7 +816,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -843,7 +843,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_208";
+				text = $STR_EPOCH_PLAYER_208;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -852,7 +852,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -861,7 +861,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -888,7 +888,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -897,7 +897,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -915,7 +915,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_200";
+				text = $STR_EPOCH_PLAYER_200;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -924,7 +924,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_201";
+				text = $STR_EPOCH_PLAYER_201;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -946,7 +946,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_210";
+				text = $STR_EPOCH_PLAYER_210;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {};
@@ -969,7 +969,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_211";
+				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
@@ -991,7 +991,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_210";
+				text = $STR_EPOCH_PLAYER_210;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
@@ -1014,7 +1014,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_211";
+				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
@@ -1036,7 +1036,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_210";
+				text = $STR_EPOCH_PLAYER_210;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
@@ -1059,7 +1059,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_211";
+				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
@@ -1103,7 +1103,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_211";
+				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
@@ -1136,7 +1136,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_211";
+				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox"};
@@ -1175,14 +1175,14 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_8";
+		displayName = $STR_EQUIP_NAME_8;
 		model = "\dayz_equip\models\fueltank.p3d";
 		picture = "\dayz_equip\textures\equip_fueltank_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_8";
+		descriptionShort = $STR_EQUIP_DESC_8;
 		class ItemActions {
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_212";
+				text = $STR_EPOCH_PLAYER_212;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1196,24 +1196,24 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_9";
+		displayName = $STR_EQUIP_NAME_9;
 		model = "\dayz_equip\models\wheel.p3d";
 		picture = "\dayz_equip\textures\equip_wheel_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_9";
+		descriptionShort = $STR_EQUIP_DESC_9;
 	};
 	class PartGeneric: CA_Magazine
 	{
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_10";
+		displayName = $STR_EQUIP_NAME_10;
 		model = "\dayz_equip\models\genericparts.p3d";
 		picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_10";
+		descriptionShort = $STR_EQUIP_DESC_10;
 		class ItemActions {
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_213";
+				text = $STR_EPOCH_PLAYER_213;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1233,14 +1233,14 @@ class CfgMagazines {
 		descriptionShort = "Corrugated Fence: A buildable object used for fortification purposes.";
 		class ItemActions {
 			class Build {
-				text = "$STR_EPOCH_PLAYER_214";
+				text = $STR_EPOCH_PLAYER_214;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Fence_corrugated_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_215";
+				text = $STR_EPOCH_PLAYER_215;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1249,7 +1249,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_217";
+				text = $STR_EPOCH_PLAYER_217;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1258,7 +1258,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_216";
+				text = $STR_EPOCH_PLAYER_216;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1279,7 +1279,7 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_218";
+				text = $STR_EPOCH_PLAYER_218;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1288,7 +1288,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_219";
+				text = $STR_EPOCH_PLAYER_219;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1297,7 +1297,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_220";
+				text = $STR_EPOCH_PLAYER_220;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -1321,7 +1321,7 @@ class CfgMagazines {
         {
             class Build
             {
-                    text = "$STR_ACTIONS_BUILD";
+                    text = $STR_ACTIONS_BUILD;
                     script = "spawn player_build;";
                     require[] = {"ItemToolbox"};
                     create = "GunRack_DZ";
@@ -1362,7 +1362,7 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-					text = "$STR_EPOCH_PLAYER_276";
+					text = $STR_EPOCH_PLAYER_276;
 					script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 					neednearby[] = {"fire"};
 					requiretools[] = {"ItemToolbox"};
@@ -1385,7 +1385,7 @@ class CfgMagazines {
             {
                 class Build
                 {
-                    text = "$STR_ACTIONS_BUILD";
+                    text = $STR_ACTIONS_BUILD;
                     script = "spawn player_build;";
                     require[] = {"ItemToolbox"};
                     create = "FireBarrel_DZ";
@@ -1398,18 +1398,18 @@ class CfgMagazines {
 		count = 1;
 		fuelQuantity = 20;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_19";
+		displayName = $STR_EQUIP_NAME_19;
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_19";
+		descriptionShort = $STR_EQUIP_DESC_19;
 	};
 	class ItemJerrycanEmpty: ItemJerrycan
 	{
 		fuelQuantity = 0;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_39";
+		displayName = $STR_EQUIP_NAME_39;
 		picture = "\dayz_equip\textures\equip_jerrycan_e_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_39";
+		descriptionShort = $STR_EQUIP_DESC_39;
 	};
 	
 	class bulk: CA_Magazine
@@ -1431,7 +1431,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_221";
+				text = $STR_EPOCH_PLAYER_221;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1440,7 +1440,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_222";
+				text = $STR_EPOCH_PLAYER_222;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1450,7 +1450,7 @@ class CfgMagazines {
 
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_223";
+				text = $STR_EPOCH_PLAYER_223;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1459,7 +1459,7 @@ class CfgMagazines {
 			};
 			class Crafting3
 			{
-				text = "$STR_EPOCH_PLAYER_224";
+				text = $STR_EPOCH_PLAYER_224;
 				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1468,7 +1468,7 @@ class CfgMagazines {
 			};
 			class Crafting4
 			{
-				text = "$STR_EPOCH_PLAYER_225";
+				text = $STR_EPOCH_PLAYER_225;
 				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1477,7 +1477,7 @@ class CfgMagazines {
 			};
 			class Crafting5
 			{
-				text = "$STR_EPOCH_PLAYER_226";
+				text = $STR_EPOCH_PLAYER_226;
 				script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1493,13 +1493,13 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemSodaCoke",6,"magazine"};
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_221";
+				text = $STR_EPOCH_PLAYER_221;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1515,7 +1515,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemSodaCoke",12,"magazine"};
 			};
@@ -1528,13 +1528,13 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemSodaPepsi",6,"magazine"};
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_222";
+				text = $STR_EPOCH_PLAYER_222;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1550,7 +1550,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemSodaPepsi",12,"magazine"};
 			};
@@ -1563,13 +1563,13 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"FoodbaconCooked",6,"magazine"};
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_227";
+				text = $STR_EPOCH_PLAYER_227;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1585,7 +1585,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"FoodbaconCooked",12,"magazine"};
 			};
@@ -1599,7 +1599,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"30Rnd_9x19_MP5SD",12,"magazine"};
 			};
@@ -1612,7 +1612,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"15Rnd_9x19_M9SD",12,"magazine"};
 			};
@@ -1625,7 +1625,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"30Rnd_556x45_StanagSD",12,"magazine"};
 			};
@@ -1638,7 +1638,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemSandbag",12,"magazine"};
 			};
@@ -1653,7 +1653,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemTankTrap",12,"magazine"};
 			};
@@ -1667,13 +1667,13 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemTankTrap",6,"magazine"};
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_223";
+				text = $STR_EPOCH_PLAYER_223;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1691,7 +1691,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemWire",12,"magazine"};
 			};
@@ -1705,13 +1705,13 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"ItemWire",6,"magazine"};
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_225";
+				text = $STR_EPOCH_PLAYER_225;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1729,7 +1729,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"PartGeneric",12,"magazine"};
 			};
@@ -1743,13 +1743,13 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"PartGeneric",6,"magazine"};
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_223";
+				text = $STR_EPOCH_PLAYER_223;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
@@ -1766,7 +1766,7 @@ class CfgMagazines {
 		{
 			class CreateMags
 			{
-				text = "$STR_EPOCH_PLAYER_209";
+				text = $STR_EPOCH_PLAYER_209;
 				script = "spawn player_loadCrate;";
 				output[] = {"17Rnd_9x19_glock17",12,"magazine"};
 			};
@@ -1787,7 +1787,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "MetalFloor_DZ";
@@ -1809,7 +1809,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "CinderWallHalf_DZ";
@@ -1831,7 +1831,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "CinderWallDoorway_DZ";
@@ -1853,7 +1853,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "CinderWallSmallDoorway_DZ";
@@ -1875,7 +1875,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WorkBench_DZ";
@@ -1897,7 +1897,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "WoodRamp_DZ";
@@ -1917,7 +1917,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Plastic_Pole_EP1_DZ";
@@ -1939,14 +1939,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "MetalPanel_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_228";
+				text = $STR_EPOCH_PLAYER_228;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop","fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
@@ -1969,7 +1969,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "DeerStand_DZ";
@@ -1990,7 +1990,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "DesertLargeCamoNet_DZ";
@@ -2011,7 +2011,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "ForestLargeCamoNet_DZ";
@@ -2032,14 +2032,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "DesertCamoNet_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_229";
+				text = $STR_EPOCH_PLAYER_229;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -2062,14 +2062,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "ForestCamoNet_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_229";
+				text = $STR_EPOCH_PLAYER_229;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -2092,7 +2092,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "FuelPump_DZ";
@@ -2113,7 +2113,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "LightPole_DZ";
@@ -2134,7 +2134,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "StickFence_DZ";
@@ -2155,7 +2155,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Wooden_shed_DZ";
@@ -2176,7 +2176,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "WoodShack_DZ";
@@ -2197,7 +2197,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "M240Nest_DZ";
@@ -2218,7 +2218,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "CanvasHut_DZ";
@@ -2239,7 +2239,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "ParkBench_DZ";
@@ -2260,7 +2260,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "MetalGate_DZ";
@@ -2281,7 +2281,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "SandNest_DZ";
@@ -2302,7 +2302,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "OutHouse_DZ";
@@ -2323,7 +2323,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "StorageShed_DZ";
@@ -2336,16 +2336,16 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_31";
+		displayName = $STR_EQUIP_NAME_31;
 		model = "\dayz_equip\models\generator_gear.p3d";
 		picture = "\dayz_equip\textures\equip_generator_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_31";
+		descriptionShort = $STR_EQUIP_DESC_31;
 		weight = 30;
 		class ItemActions
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Generator_DZ";
@@ -2366,7 +2366,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "FuelPump_DZ";
@@ -2387,7 +2387,7 @@ class CfgMagazines {
 		class ItemActions
 		{
 			class Build {
-				text = "$STR_EPOCH_PLAYER_230";
+				text = $STR_EPOCH_PLAYER_230;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "VaultStorageLocked";
@@ -2407,7 +2407,7 @@ class CfgMagazines {
 		class ItemActions
 		{
 			class Build {
-				text = "$STR_EPOCH_PLAYER_231";
+				text = $STR_EPOCH_PLAYER_231;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "LockboxStorageLocked";
@@ -2431,7 +2431,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodFloor_DZ";
@@ -2452,14 +2452,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodFloorHalf_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_232";
+				text = $STR_EPOCH_PLAYER_232;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2483,7 +2483,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodFloorQuarter_DZ";
@@ -2515,14 +2515,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodStairsSans_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_233";
+				text = $STR_EPOCH_PLAYER_233;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2547,7 +2547,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodStairs_DZ";
@@ -2569,7 +2569,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodLadder_DZ";
@@ -2591,7 +2591,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodSmallWall_DZ";
@@ -2599,7 +2599,7 @@ class CfgMagazines {
 			
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_234";
+				text = $STR_EPOCH_PLAYER_234;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2609,7 +2609,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_235";
+				text = $STR_EPOCH_PLAYER_235;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2619,7 +2619,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_236";
+				text = $STR_EPOCH_PLAYER_236;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2643,14 +2643,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodSmallWallThird_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_237";
+				text = $STR_EPOCH_PLAYER_237;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2674,14 +2674,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodSmallWallDoor_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_238";
+				text = $STR_EPOCH_PLAYER_238;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2705,14 +2705,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Land_DZE_WoodDoor";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_239";
+				text = $STR_EPOCH_PLAYER_239;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2736,7 +2736,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Land_DZE_WoodDoorLocked";
@@ -2760,7 +2760,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodSmallWallWin_DZ";
@@ -2782,14 +2782,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodLargeWall_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_234";
+				text = $STR_EPOCH_PLAYER_234;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2799,7 +2799,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_235";
+				text = $STR_EPOCH_PLAYER_235;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2809,7 +2809,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_240";
+				text = $STR_EPOCH_PLAYER_240;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2834,14 +2834,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Land_DZE_GarageWoodDoor";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_241";
+				text = $STR_EPOCH_PLAYER_241;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2865,7 +2865,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Land_DZE_GarageWoodDoorLocked";
@@ -2887,14 +2887,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodLargeWallDoor_DZ";
 			};			
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_238";
+				text = $STR_EPOCH_PLAYER_238;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2919,14 +2919,14 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Land_DZE_LargeWoodDoor";
 			};			
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_239";
+				text = $STR_EPOCH_PLAYER_239;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -2951,7 +2951,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Land_DZE_LargeWoodDoorLocked";
@@ -2973,7 +2973,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = "$STR_ACTIONS_BUILD";
+				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodLargeWallWin_DZ";
@@ -2987,14 +2987,14 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_11";
+		displayName = $STR_EQUIP_NAME_11;
 		model = "\dayz_equip\models\engine.p3d";
 		picture = "\dayz_equip\textures\equip_engine_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_11";
+		descriptionShort = $STR_EQUIP_DESC_11;
 		class ItemActions {
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_212";
+				text = $STR_EPOCH_PLAYER_212;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -3008,20 +3008,20 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_40";
+		displayName = $STR_EQUIP_NAME_40;
 		model = "\dayz_equip\models\woodPile.p3d";
 		picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_40";
+		descriptionShort = $STR_EQUIP_DESC_40;
 		class ItemActions {
 			class Build {
-				text = "$STR_EPOCH_PLAYER_241";
+				text = $STR_EPOCH_PLAYER_241;
 				script = "spawn player_build;";
 				require[] = {"ItemMatchbox_DZE"};
 				create = "Land_Fire_DZ";
 			};
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_242";
+				text = $STR_EPOCH_PLAYER_242;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -3030,7 +3030,7 @@ class CfgMagazines {
 			};
 			class Crafting1
 			{
-				text = "$STR_EPOCH_PLAYER_243";
+				text = $STR_EPOCH_PLAYER_243;
 				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemKnife"};
@@ -3040,7 +3040,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_244";
+				text = $STR_EPOCH_PLAYER_244;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -3064,7 +3064,7 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_251";
+				text = $STR_EPOCH_PLAYER_251;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -3104,7 +3104,7 @@ class CfgMagazines {
 			};
 			class Crafting2
 			{
-				text = "$STR_EPOCH_PLAYER_234";
+				text = $STR_EPOCH_PLAYER_234;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
@@ -3139,7 +3139,7 @@ class CfgMagazines {
 		class ItemActions {
 			class Crafting
 			{
-				text = "$STR_EPOCH_PLAYER_251";
+				text = $STR_EPOCH_PLAYER_251;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
@@ -3360,14 +3360,14 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_32";
+		displayName = $STR_EQUIP_NAME_32;
 		model = "\dayz_equip\models\vrotor.p3d";
 		picture = "\dayz_equip\textures\equip_vrotor_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_32";
+		descriptionShort = $STR_EQUIP_DESC_32;
 		 class ItemActions {
             class Crafting
             {
-                text = "$STR_EPOCH_PLAYER_212";
+                text = $STR_EPOCH_PLAYER_212;
                 script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
                 neednearby[] = {"workshop"};
                 requiretools[] = {"ItemToolbox","ItemCrowbar"};
@@ -3381,10 +3381,10 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "$STR_EQUIP_NAME_30";
+		displayName = $STR_EQUIP_NAME_30;
 		model = "\dayz_equip\models\carglass.p3d";
 		picture = "\dayz_equip\textures\equip_carglass_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_30";
+		descriptionShort = $STR_EQUIP_DESC_30;
 	};
 
 	// Skins
@@ -3428,8 +3428,8 @@ class CfgMagazines {
 	class Skin_Sniper1_DZ: SkinBase
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_43";
-		descriptionShort = "$STR_EQUIP_DESC_43";
+		displayName = $STR_EQUIP_NAME_43;
+		descriptionShort = $STR_EQUIP_DESC_43;
 	};
 	class Skin_Rocket_DZ: SkinBase
 	{
@@ -4084,10 +4084,10 @@ class CfgMagazines {
 	class ItemSodaEmpty: HandGrenade
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_35";
+		displayName = $STR_EQUIP_NAME_35;
 		model = "\dayz_equip\models\soda_coke_e.p3d";
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_35";
+		descriptionShort = $STR_EQUIP_DESC_35;
 		ammo = "SodaCan";
 		class ItemActions
 		{
@@ -4295,11 +4295,11 @@ class CfgMagazines {
 	class FoodCanFrankBeans: FoodEdible
 	{
 		scope = 2;
-		// displayName = "$STR_EQUIP_NAME_28";
+		// displayName = $STR_EQUIP_NAME_28;
 		displayName = "Can (Frank n Beans)"; // addactions cannot have &amp;
 		model = "\dayz_equip\models\food_fbtin.p3d";
 		picture = "\dayz_equip\textures\equip_fbtin_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_28";
+		descriptionShort = $STR_EQUIP_DESC_28;
 	};
 
 	class ItemTrout : FoodEdible {
@@ -4612,10 +4612,10 @@ class CfgMagazines {
 	class TrashTinCan: HandGrenade
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_33";
+		displayName = $STR_EQUIP_NAME_33;
 		model = "\dayz_equip\models\trash_tincan.p3d";
 		picture = "\dayz_equip\textures\equip_tincan_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_33";
+		descriptionShort = $STR_EQUIP_DESC_33;
 		ammo = "TinCan";
 		class ItemActions
 		{

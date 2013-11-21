@@ -796,7 +796,7 @@ class CfgVehicles {
 
 	class Soldier_Crew_PMC;
 	class Bandit1_DZ : Soldier_Crew_PMC {
-		displayName = "$STR_CHAR_2";
+		displayName = $STR_CHAR_2;
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		model = "\dayz\characters\man_bandit";
@@ -811,7 +811,7 @@ class CfgVehicles {
 	class Bandit2_DZ: Soldier_Crew_PMC
 	{
 		scope = 2;
-		displayName = "$STR_CHAR_2";
+		displayName = $STR_CHAR_2;
 		weapons[] = {"Throw","Put"};
 		model = "\ca\characters_E\GER\GER_rifleman";
 		portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
@@ -3054,7 +3054,7 @@ class CfgVehicles {
 	class WeaponHolder_ItemHatchet_DZE: WeaponHolderBase
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_41";
+		displayName = $STR_EQUIP_NAME_41;
 		model = "\dayz_equip\models\hatchet.p3d";
 		class eventHandlers
 		{
@@ -3088,7 +3088,7 @@ class CfgVehicles {
 	class WeaponHolder_ItemTentOld: WeaponHolder
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_20";
+		displayName = $STR_EQUIP_NAME_20;
 		class transportmagazines
 		{
 			class _xx_ItemTentOld
@@ -3154,7 +3154,7 @@ class CfgVehicles {
 	class WeaponHolder_ItemJerrycanEmpty: WeaponHolderBase
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_39";
+		displayName = $STR_EQUIP_NAME_39;
 		model = "\dayz_equip\proxy\jerrycan.p3d";
 		class eventHandlers
 		{

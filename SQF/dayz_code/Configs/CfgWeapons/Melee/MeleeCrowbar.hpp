@@ -21,7 +21,7 @@ class MeleeCrowbar: MeleeWeapon
 		{
 			class Toolbelt
 			{
-				text="$STR_EPOCH_PLAYER_296";
+				text=$STR_EPOCH_PLAYER_296;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -35,7 +35,7 @@ class MeleeCrowbar: MeleeWeapon
 		};
 		class Library
 		{
-			libTextDesc="$STR_EQUIP_CROWBAR_DESC";
+			libTextDesc=$STR_EQUIP_CROWBAR_DESC;
 		};
-		descriptionShort="$STR_EQUIP_CROWBAR_DESC";
+		descriptionShort=$STR_EQUIP_CROWBAR_DESC;
 	};

@@ -6,7 +6,7 @@ class MeleeBaseBallBatBarbed: MeleeWeapon
 		magazineReloadTime=0;
 		model="\z\addons\dayz_communityassets\models\baseball_bat_barbed_weaponized.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_barbed_ca.paa";
-		displayName="$STR_EQUIP_NAME_BASEBALLBATBARBED";
+		displayName=$STR_EQUIP_NAME_BASEBALLBATBARBED;
 		droppeditem= "MeleeBaseBallBatBarbed";
 		magazines[]=
 		{
@@ -19,7 +19,7 @@ class MeleeBaseBallBatBarbed: MeleeWeapon
 		};
 		class Library
 		{
-			libTextDesc="$STR_EQUIP_DESC_BASEBALLBATBARBED";
+			libTextDesc=$STR_EQUIP_DESC_BASEBALLBATBARBED;
 		};
-		descriptionShort="$STR_EQUIP_DESC_BASEBALLBATBARBED";
+		descriptionShort=$STR_EQUIP_DESC_BASEBALLBATBARBED;
 	};
