@@ -140,11 +140,23 @@ class CfgWeight
 		{
 			weight = 8;
 		};
+		class M249_m145_EP1_DZE
+		{
+			weight = 8;
+		};
 		class M60A4_EP1
 		{
 			weight = 10;
 		};
+		class M60A4_EP1_DZE
+		{
+			weight = 10;
+		};
 		class m240_scoped_EP1
+		{
+			weight = 14;
+		};
+		class m240_scoped_EP1_DZE
 		{
 			weight = 14;
 		};
@@ -947,6 +959,10 @@ class CfgWeight
 			weight =  0.15;
 		};
 		class 8Rnd_B_Saiga12_74Slug
+		{
+			weight = 0.3;
+		};
+		class 8Rnd_B_Saiga12_Pellets
 		{
 			weight = 0.3;
 		};
