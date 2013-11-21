@@ -51,6 +51,7 @@
 * [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
 * [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
+* [FIXED] Recent Murders on the Murder Board in trader cities now works properly. @vbawol
 
 * [CHANGED] Lowered periodic client save interval to help reduce server load.
 * [CHANGED] Mission name and descriptions now conform to template. @dayz10k
