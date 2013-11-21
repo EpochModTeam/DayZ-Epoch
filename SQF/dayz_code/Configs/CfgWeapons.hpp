@@ -24,19 +24,19 @@ class CfgWeapons {
 	class ItemMatchbox_DZE: ItemCore
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_3";
+		displayName = $STR_EQUIP_NAME_3;
 		model = "\dayz_equip\models\matchbox_gear.p3d";
 		picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_3";
+		descriptionShort = $STR_EQUIP_DESC_3;
 	};
 
 	class ItemKnife: ItemCore
 	{
 		scope = 2;
-		displayName = "$STR_EQUIP_NAME_4";
+		displayName = $STR_EQUIP_NAME_4;
 		model = "\dayz_equip\models\knife_gear.p3d";
 		picture = "\dayz_equip\textures\equip_knife_ca.paa";
-		descriptionShort = "$STR_EQUIP_DESC_4";
+		descriptionShort = $STR_EQUIP_DESC_4;
 		class ItemActions
 		{
 			class Use
