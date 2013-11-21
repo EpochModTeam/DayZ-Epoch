@@ -482,7 +482,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
     //Player Deaths
 	if(_typeOfCursorTarget == "Info_Board_EP1") then {
 		if (s_player_information < 0) then {
-			s_player_information = player addAction ["Recent Murders", "\z\addons\dayz_code\actions\list_playerDeaths.sqf",[], 0, false, true, "",""];
+			s_player_information = player addAction ["Recent Murders", "\z\addons\dayz_code\actions\list_playerDeaths.sqf",[], 7, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_information;
