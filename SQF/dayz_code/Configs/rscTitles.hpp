@@ -746,7 +746,7 @@ class RscDisplayGenderSelect
 		class Gender_Title: RscStructuredText
 		{
 			idc = -1;
-			text = "$STR_UI_GENDER_TITLE";
+			text = $STR_UI_GENDER_TITLE;
 			x = 0.4 * safezoneW + safezoneX;
 			y = 0.221864 * safezoneH + safezoneY;
 			w = 0.2 * safezoneW;
@@ -756,7 +756,7 @@ class RscDisplayGenderSelect
 		class Gender_Description: RscStructuredText
 		{
 			idc = -1;
-			text = "$STR_UI_GENDER_DESC";
+			text = $STR_UI_GENDER_DESC;
 			x = 0.4 * safezoneW + safezoneX;
 			y = 0.366134 * safezoneH + safezoneY;
 			w = 0.2 * safezoneW;
@@ -834,7 +834,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_REVERT : CA_B_SAVE {
 			idc = 119;
 			y = 0.2537 + 0.101903 * 1;
-			text = "$str_disp_revert";
+			text = $str_disp_revert;
 			default = 0;
 		};
 		
