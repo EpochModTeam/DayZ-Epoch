@@ -3037,12 +3037,12 @@
 		<Key ID="STR_EPOCH_PLAYER_43">
 		  <Original>Cannot build while in combat.</Original>
 		  <English>Cannot build while in combat.</English>
-		  <German></German>
-		  <Russian>Невозможно построить, находясь в транспорте.</Russian>
-		  <Spanish></Spanish>
-		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
-		  <French>Impossible de construire à bord d'un véhicule.</French>
-		  <Czech></Czech>
+		  <German>Cannot build while in combat.</German>
+		  <Russian>Невозможно строить во время боя.</Russian>
+		  <Spanish>Cannot build while in combat.</Spanish>
+		  <Dutch>Bouwen is niet mogelijk tijdens een conflictsituatie.</Dutch>
+		  <French>Impossible de construire en combat.</French>
+		  <Czech>Cannot build while in combat.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_44">
 		  <Original>Cannot build plot pole within 45m of an existing plot.</Original>
