@@ -130,7 +130,15 @@ class CfgMagazines {
 		count = 100; 
 		picture = "\CA\weapons_E\Data\icons\m_m245_CA.paa";  
 	};
-
+	class 100Rnd_556x45_BetaCMag: CA_Magazine {
+		type="256";
+	}
+	class 75Rnd_545x39_RPK: CA_Magazine {
+		type="256";
+	}
+	class 100Rnd_556x45: CA_Magazine {
+		type="256";
+	}
 
 	 // Items
 	class ItemHotwireKit: CA_Magazine

@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private ["_isWreckBuilding","_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil","_hasFuelBarrelE","_hasHotwireKit","_player_SurrenderedGear","_isSurrendered"];
+private ["_isWreckBuilding","_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil","_hasFuelBarrelE","_hasHotwireKit","_player_SurrenderedGear","_isSurrendered","_resultKeyname","_ownerIDname"];
 
 if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 
@@ -233,6 +233,18 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			if(locked _cursorTarget) then {
 				if(_hasKey or _oldOwner) then {
 					_Unlock = player addAction [format["Unlock %1",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",_cursorTarget, 2, true, true, "", ""];
+					
+					//return the key name which unlocked the vehicle adapted from Axe Cop
+					_ownerIDname = parsenumber _ownerID;
+					_resultKeyname = "ItemKey";
+					if (_ownerIDname == 0) exitWith {cutText [format["%1 has ID 0 - No Key possible.",typeOF _cursorTarget], "PLAIN"];};
+					if ((_ownerIDname > 0) && (_ownerIDname <= 2500)) then {_resultKeyname = format["ItemKeyGreen%1",_ownerIDname];};
+					if ((_ownerIDname > 2500) && (_ownerIDname <= 5000)) then {_resultKeyname = format["ItemKeyRed%1",_ownerIDname-2500];};
+					if ((_ownerIDname > 5000) && (_ownerIDname <= 7500)) then {_resultKeyname = format["ItemKeyBlue%1",_ownerIDname-5000];};
+					if ((_ownerIDname > 7500) && (_ownerIDname <= 10000)) then {_resultKeyname = format["ItemKeyYellow%1",_ownerIDname-7500];};
+					if ((_ownerIDname > 10000) && (_ownerIDname <= 12500)) then {_resultKeyname = format["ItemKeyRed%1",_ownerIDname-10000];};
+					{cutText [format["Key [%1] used to unlock vehicle.",_resultKeyname], "PLAIN"];};
+					
 					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
 					s_player_lockUnlock_crtl = 1;
 				} else {
