@@ -1,7 +1,7 @@
 -- ----------------------------
 -- This should be done
 -- ----------------------------
-INSERT INTO `trader_items` VALUES(771, 'KSVK', 3, 'Rifle Sniper', 'trade_weapons');
+INSERT INTO `trader_items` VALUES(771, 'KSVK_DZE', 3, 'Rifle Sniper', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(772, '5Rnd_127x108_KSVK', 1, 'Ammo Rifle Sniper', 'trade_items');
 INSERT INTO `trader_items` VALUES(773, 'Saiga12K', 3, 'Shotgun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(774, '8Rnd_B_Saiga12_74Slug', 1, 'Ammo Shotgun', 'trade_items');
@@ -33,7 +33,7 @@ INSERT INTO `Traders_DATA` VALUES(7376, '["MG36_camo",3]', 8, '[1,"ItemGoldBar10
 INSERT INTO `Traders_DATA` VALUES(7377, '["100Rnd_556x45_BetaCMag",1]', 10, '[3,"ItemSilverBar10oz",1]', '[1,"ItemSilverBar10oz",1]', 0, 527, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(7378, '["100Rnd_556x45",1]', 10, '[3,"ItemSilverBar10oz",1]', '[1,"ItemSilverBar10oz",1]', 0, 527, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(7379, '["75Rnd_545x39_RPK",1]', 10, '[3,"ItemSilverBar10oz",1]', '[1,"ItemSilverBar10oz",1]', 0, 527, 'trade_items');
-INSERT INTO `Traders_DATA` VALUES(7380, '["KSVK",3]', 10, '[3,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 526, 'trade_weapons');
+INSERT INTO `Traders_DATA` VALUES(7380, '["KSVK_DZE",3]', 10, '[3,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 526, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7381, '["64Rnd_9x19_Bizon",1]', 10, '[2,"ItemSilverBar",1]', '[1,"ItemSilverBar",1]', 0, 527, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(7382, '["5Rnd_127x108_KSVK",1]', 10, '[1,"ItemSilverBar10oz",1]', '[5,"ItemSilverBar",1]', 0, 527, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(7380, '["bizon",3]', 10, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 526, 'trade_weapons');
