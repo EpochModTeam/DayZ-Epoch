@@ -59,7 +59,7 @@ if (isServer) then {
 //Client only
 if (!isDedicated) then {
 	"PVDZE_plr_SetDate"		addPublicVariableEventHandler {(_this select 1) call player_setDate};
-	"PVDZE_plr_SetWeather"	addPublicVariableEventHandler {zeroPreviousWeather = zeroCurrentWeather; zeroCurrentWeather = (_this select 1)};
+	"PVDZE_plr_SetSaveTime"	addPublicVariableEventHandler {DZE_SaveTime = (_this select 1)};
 	"PVDZE_obj_RoadFlare"	addPublicVariableEventHandler {(_this select 1) spawn object_roadFlare};
 	"PVDZE_plr_Morph2"		addPublicVariableEventHandler {(_this select 1) call player_serverModelChange};
 	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};

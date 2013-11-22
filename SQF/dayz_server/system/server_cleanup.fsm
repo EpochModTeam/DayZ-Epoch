@@ -5,7 +5,7 @@ item0[] = {"init",0,250,-75.000000,-500.000000,25.000000,-450.000000,0.000000,"i
 item1[] = {"true",8,218,-75.000000,-275.000000,25.000000,-225.000000,0.000000,"true"};
 item2[] = {"waiting",2,250,-75.000000,-200.000000,25.000000,-150.000000,0.000000,"waiting"};
 item3[] = {"___min_loop",4,218,-75.000000,-75.000000,25.000000,-25.000000,4.000000,"5 min" \n "loop"};
-item4[] = {"sync_time__and_w",2,250,-75.000000,25.000000,25.000000,75.000000,0.000000,"sync time" \n " and weather"};
+item4[] = {"sync_time",2,250,-75.000000,25.000000,25.000000,75.000000,0.000000,"sync time"};
 item5[] = {"true",8,218,-75.000000,125.000000,25.000000,175.000000,0.000000,"true"};
 item6[] = {"general_cleanup",2,250,-75.000000,200.000000,25.000000,250.000000,0.000000,"general" \n "cleanup" \n "loop"};
 item7[] = {"",7,210,-491.500000,220.999985,-483.500000,229.000015,0.000000,""};
@@ -58,8 +58,8 @@ link28[] = {21,22};
 link29[] = {22,5};
 link30[] = {23,24};
 link31[] = {24,5};
-globals[] = {25.000000,1,0,0,0,640,480,1,42,6316128,1,-508.946564,440.498199,435.888916,-341.331024,859,704,1};
-window[] = {0,-1,-1,-1,-1,902,-1628,-86,52,1,877};
+globals[] = {25.000000,1,0,0,0,640,480,1,42,6316128,1,-508.946564,440.498199,435.888916,-341.331024,861,630,1};
+window[] = {2,-1,-1,-32000,-32000,890,78,1370,78,3,879};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -130,7 +130,7 @@ class FSM
         class ___min_loop
         {
           priority = 4.000000;
-          to="sync_time__and_w";
+          to="sync_time";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastUpdate) > 300)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
@@ -179,16 +179,14 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "sync_time__and_w">*/
-    class sync_time__and_w
+    /*%FSM<STATE "sync_time">*/
+    class sync_time
     {
-      name = "sync_time__and_w";
+      name = "sync_time";
       init = /*%FSM<STATEINIT""">*/"if (DZE_DiagFpsSlow) then {" \n
        "	call dze_diag_fps;" \n
        "};" \n
-       "call server_timeSync;" \n
-       "call server_weather;" \n
-       ""/*%FSM</STATEINIT""">*/;
+       "call server_timeSync;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -343,10 +341,17 @@ class FSM
     class cleanup_loot
     {
       name = "cleanup_loot";
-      init = /*%FSM<STATEINIT""">*/"if (DZE_DiagFpsFast) then {" \n
-       "	[] call dze_diag_fps;" \n
+      init = /*%FSM<STATEINIT""">*/"DZE_diag_fps = diag_fps;" \n
+       "" \n
+       "if (DZE_DiagFpsFast) then {" \n
+       "	call dze_diag_fps;" \n
        "};" \n
-       "[] spawn server_spawnCleanLoot;"/*%FSM</STATEINIT""">*/;
+       "" \n
+       "spawn server_spawnCleanLoot;" \n
+       "" \n
+       "// set player save time based on server performance" \n
+       "PVDZE_plr_SetSaveTime = round(60 - DZE_diag_fps);" \n
+       "publicVariable ""PVDZE_plr_SetSaveTime"";"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

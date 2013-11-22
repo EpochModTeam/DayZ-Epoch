@@ -503,9 +503,9 @@ if(isnil "DZE_DiagVerbose") then {
 
 dze_diag_fps = {
 	if(DZE_DiagVerbose) then {
-		diag_log format["DEBUG FPS : %1 OBJECTS: %2 : PLAYERS: %3", diag_fps,(count (allMissionObjects "")),(playersNumber west)];
+		diag_log format["DEBUG FPS : %1 OBJECTS: %2 : PLAYERS: %3", DZE_diag_fps,(count (allMissionObjects "")),(playersNumber west)];
 	} else {
-		diag_log format["DEBUG FPS : %1", diag_fps];
+		diag_log format["DEBUG FPS : %1", DZE_diag_fps];
 	};
 };
 

@@ -675,4 +675,8 @@ if(!isDedicated) then {
 	DZE_TEMP_treedmg = 1;
 
 	DZE_Surrender = false;
+	DZE_Quarantine = false;
+	DZE_InRadiationZone = false;
+
+	DZE_SaveTime = 30;
 };

@@ -611,4 +611,25 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\combo_locked.ogg",1,1,10};
 		titles[] = {};
 	};
+
+	class z_radzone1_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_0.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_radzone2_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_1.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_radzone3_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_2.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_radzone4_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_3.ogg",1,1,10};
+		titles[] = {};
+	};
 };
