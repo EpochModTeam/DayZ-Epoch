@@ -253,7 +253,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 					if ((_ownerIDname > 7500) && (_ownerIDname <= 10000)) then {_resultKeyname = format["ItemKeyYellow%1",_ownerIDname-7500];};
 					if ((_ownerIDname > 10000) && (_ownerIDname <= 12500)) then {_resultKeyname = format["ItemKeyRed%1",_ownerIDname-10000];};
 					_resultKeyname2 = getText (configFile >> "CfgWeapons" >> _resultKeyname >> "displayName");
-					{cutText [format["Key [%1] used to unlock vehicle.",_resultKeyname2], "PLAIN"];};
+					{cutText [format["[%1] used to unlock vehicle.",_resultKeyname2], "PLAIN"];};
 					
 					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
 					s_player_lockUnlock_crtl = 1;
