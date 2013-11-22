@@ -152,8 +152,8 @@ link77[] = {66,59};
 link78[] = {67,15};
 link79[] = {68,69};
 link80[] = {69,20};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-535.262817,364.931976,1733.816284,841.731445,888,880,1};
-window[] = {2,-1,-1,-1,-1,759,1,1279,1,3,906};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-394.084839,223.753876,1593.910034,981.637451,888,880,1};
+window[] = {2,-1,-1,-1,-1,862,104,1382,104,3,906};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1141,70 +1141,7 @@ class FSM
        "dayz_monitor1 = [] spawn {" \n
        "	while {true} do {" \n
        "		call player_zombieCheck;" \n
-       "" \n
-       "		_overcast = zeroCurrentWeather select 0;" \n
-       "		_fog = zeroCurrentWeather select 1;" \n
-       "		_windx = (zeroCurrentWeather select 2) select 0;" \n
-       "		_windz = (zeroCurrentWeather select 2) select 1;" \n
-       "		_rain = zeroCurrentWeather select 3;" \n
-       "" \n
-       "		if(isNil ""DZE_Overcast"") then {" \n
-       "			DZE_Overcast = _overcast;" \n
-       "		};" \n
-       "		if(isNil ""DZE_Fog"") then {" \n
-       "			DZE_Fog = _fog;" \n
-       "		};" \n
-       "		if(isNil ""DZE_Windx"") then {" \n
-       "			DZE_Windx = _windx;" \n
-       "		};" \n
-       "		if(isNil ""DZE_Windz"") then {" \n
-       "			DZE_Windz = _windz;" \n
-       "		};" \n
-       "		if(isNil ""DZE_Rain"") then {" \n
-       "			DZE_Rain = _rain;" \n
-       "		};" \n
-       "		" \n
-       "		" \n
-       "		if(_overcast < DZE_Overcast) then {" \n
-       "			DZE_Overcast = DZE_Overcast + 0.01;" \n
-       "		} else {" \n
-       "			DZE_Overcast = DZE_Overcast - 0.01;" \n
-       "		};" \n
-       "		if(_fog < DZE_Fog) then {" \n
-       "			DZE_Fog = DZE_Fog + 0.01;" \n
-       "		} else {" \n
-       "			DZE_Fog = DZE_Fog - 0.01;" \n
-       "		};" \n
-       "		if(_windx < DZE_Windx) then {" \n
-       "			DZE_Windx = DZE_Windx + 0.01;" \n
-       "		} else {" \n
-       "			DZE_Windx = DZE_Windx - 0.01;" \n
-       "		};" \n
-       "		" \n
-       "		if(_windz < DZE_Windz) then {" \n
-       "			DZE_Windz = DZE_Windz + 0.01;" \n
-       "		} else {" \n
-       "			DZE_Windz = DZE_Windz - 0.01;" \n
-       "		};" \n
-       "		" \n
-       "		if(_rain < DZE_Rain) then {" \n
-       "			DZE_Rain = DZE_Rain + 0.01;" \n
-       "		} else {" \n
-       "			DZE_Rain = DZE_Rain - 0.01;" \n
-       "		};" \n
-       "		" \n
-       "		// Set weather" \n
-       "		0 setOvercast DZE_Overcast;" \n
-       "" \n
-       "		0 setFog DZE_Fog;" \n
-       "		" \n
-       "		setWind [DZE_Windx,DZE_Windz,true];" \n
-       "		" \n
-       "		0 setRain DZE_Rain;" \n
-       "" \n
        "		sleep 1;" \n
-       "" \n
-       "		" \n
        "	};" \n
        "};" \n
        "" \n
