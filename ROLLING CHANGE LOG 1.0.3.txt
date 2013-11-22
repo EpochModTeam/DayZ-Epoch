@@ -31,9 +31,12 @@
 * [ADDED] Directly Disconnect (back to lobby) if you press abort > yes - @Skaronator
 * [ADDED] New Weapons, most of which are backpack compatible: M60, M240 scoped, M249 scoped, MG36 variants, RPK-74, M8 SAW, Bizon, Saiga12K, KSVK.  @dayz10k
 * [ADDED] Extra security features. @facoptere
+* [ADDED] Owner can now remove modular parts (walls, etc) without having to destroy them.  NOTE: nothing is refunded/no rubble. @dayz10k
+* [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @dayz10k
 
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
 * [UPDATED] Trading log-system (server-side) was improved. @Skaronator
+* [UPDATED] Back-end loot configs and loot spawning rates. @vbawol
 
 * [FIXED] Plot pole no longer falls over and can be destroyed but has armor=1000.
 * [FIXED] Fixed unable being able to sell satchel charges. @vbawol
