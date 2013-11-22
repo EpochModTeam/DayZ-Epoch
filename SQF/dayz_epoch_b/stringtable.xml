@@ -3035,8 +3035,8 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_43">
-		  <Original>Cannot build while in a vehicle.</Original>
-		  <English>Cannot build while in a vehicle.</English>
+		  <Original>Cannot build while in combat.</Original>
+		  <English>Cannot build while in combat.</English>
 		  <German></German>
 		  <Russian>Невозможно построить, находясь в транспорте.</Russian>
 		  <Spanish></Spanish>
