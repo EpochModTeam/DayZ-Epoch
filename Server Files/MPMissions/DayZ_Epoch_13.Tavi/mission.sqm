@@ -5,7 +5,7 @@ class Mission
 	{
 		"tavi",
 		"kh_dayztaviana",
-	    	"ca_modules_animals",
+	    "ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
@@ -31,8 +31,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ Epoch Taviana";
-		briefingDescription="DayZ Epoch Taviana Private Server";
+		briefingName="tavi DayZ_Epoch";
+		briefingDescription="tavi DayZ_Epoch Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
@@ -1197,55 +1197,55 @@ class Mission
 		class Item3
 		{
 			position[]={9093.4707,33.920578,2614.3794};
-			name="spawn1";
+			name="spawn2";
 			type="Empty";
 		};
 		class Item4
 		{
 			position[]={15954.211,19.612961,15847.49};
-			name="spawn2";
+			name="spawn3";
 			type="Empty";
 		};
 		class Item5
 		{
 			position[]={13560.766,32.488033,19300.455};
-			name="spawn3";
+			name="spawn4";
 			type="Empty";
 		};
 		class Item6
 		{
 			position[]={17743.729,255.98103,10299.182};
-			name="spawn4";
+			name="spawn5";
 			type="Empty";
 		};
 		class Item7
 		{
 			position[]={15245.996,56.273598,17424.979};
-			name="spawn5";
+			name="spawn6";
 			type="Empty";
 		};
 		class Item8
 		{
 			position[]={16674.049,52.588493,13930.056};
-			name="spawn6";
+			name="spawn7";
 			type="Empty";
 		};
 		class Item9
 		{
 			position[]={11361.38,24.342115,6684.8628};
-			name="spawn7";
+			name="spawn8";
 			type="Empty";
 		};
 		class Item10
 		{
 			position[]={12268.094,77.620689,9762.8389};
-			name="spawn8";
+			name="spawn9";
 			type="Empty";
 		};
 		class Item11
 		{
 			position[]={18292.107,70.055626,7537.231};
-			name="spawn9";
+			name="spawn10";
 			type="Empty";
 		};
 		class Item12
