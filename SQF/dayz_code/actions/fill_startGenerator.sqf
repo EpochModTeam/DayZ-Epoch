@@ -18,7 +18,7 @@ r_doLoop = true;
 _started = false;
 _finished = false;
 
-cutText [(localize "str_epoch_player_25") "PLAIN DOWN"];
+cutText [(localize "str_epoch_player_25"), "PLAIN DOWN"];
 
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
