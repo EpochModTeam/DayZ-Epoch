@@ -580,11 +580,19 @@ class CfgWeight
 		{
 			weight = 9;
 		};
+		class Pecheneg_DZ
+		{
+			weight = 9;
+		};
 		class Huntingrifle
 		{
 			weight = 4;
 		};
-		class KSVK
+		class ksvk
+		{
+			weight = 12;
+		};
+		class KSVK_DZE
 		{
 			weight = 12;
 		};
@@ -592,7 +600,7 @@ class CfgWeight
 		{
 			weight =  6.2;
 		};
-		class SVD_CAMO
+		class SVD_Camo
 		{
 			weight =  6.3;
 		};
@@ -608,11 +616,11 @@ class CfgWeight
 		{
 			weight = 3.5;
 		};
-		class Bizon
+		class bizon
 		{
 			weight = 2.1;
 		};
-		class bizon_silenced
+		class Bizon_Silenced
 		{
 			weight = 2.3;
 		};
