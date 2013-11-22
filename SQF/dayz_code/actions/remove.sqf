@@ -69,7 +69,7 @@ cutText [format[(localize "str_epoch_player_162"),_nameVehicle], "PLAIN DOWN"];
 if (_isModular) then {
      //allow previous cutText to show, then show this if modular.
      sleep 2;
-     {cutText [format["This will not refund any components."], "PLAIN"];};
+     {cutText [format["Deconstructing modular buildables will not refund any components."], "PLAIN"];};
 };
 
 // Alert zombies once.
