@@ -584,6 +584,10 @@ class CfgWeight
 		{
 			weight = 4;
 		};
+		class KSVK
+		{
+			weight = 12;
+		};
 		class KSVK_DZE
 		{
 			weight = 12;
