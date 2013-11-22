@@ -199,7 +199,6 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		//Allow owners to delete modulars
                 if(_isModular and (_ownerID == dayz_playerUID)) then {
                         if(_hasToolbox and "ItemCrowbar" in _itemsPlayer) then {
-                                {cutText [format["This will not refund any components."], "PLAIN"];};
                                 _player_deleteBuild = true;
                         };
                 };
