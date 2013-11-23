@@ -3,6 +3,7 @@
 * [NEW] In-game Map - Unused Arma UI has been removed, from DayZ CE 1.8. @Skaronator
 * [NEW] Gear is only accessible in vehicles with "G" key due to removal of Arma Map Menus, from DayZ CE 1.8. @Skaronator
 
+* [ADDED] Radiation effect with geiger counter sounds and eventual rapidblood loss when player goes out of the map for too long.
 * [ADDED] Craft-able Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons. @dayz10k
 * [ADDED] Craft-able Base Fire Barrel FireBarrel_DZ with an empty Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
 * [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle. @vbawol
