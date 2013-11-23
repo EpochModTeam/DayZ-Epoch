@@ -1,3 +1,24 @@
+if (isServer) then {
+
+  //Bandit Vendors
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\bandit.sqf";
+  //Bilgrad City
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\bilgrad.sqf";
+  //Branibor City
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\branibor.sqf";
+  //Hero Vendors
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\hero.sqf";
+  //Lyepenstok City
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\lyepestok.sqf";
+  //Misc. Vendors
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\miscvendors.sqf";
+  //Sabina City
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\sabina.sqf";
+  //Wholesalers
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\wholesalers.sqf";
+
+};
+
 /*---------------------------------------------------------------------------
 
                         BEGIN TRADER PLACEMENT
