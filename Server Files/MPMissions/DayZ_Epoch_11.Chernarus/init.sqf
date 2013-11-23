@@ -28,6 +28,9 @@ dayz_maxLocalZombies = 30; // Default = 30
 
 dayz_paraSpawn = false;
 
+dayz_minpos = 0; 
+dayz_maxpos = 16000;
+
 dayz_sellDistance_vehicle = 10;
 dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;
