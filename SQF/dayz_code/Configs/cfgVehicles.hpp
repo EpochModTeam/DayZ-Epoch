@@ -212,7 +212,7 @@ class CfgVehicles {
 	class Mi17_DZ: Mi17_base	
 	{
 		displayname = "Mi-17";
-		displaynameshort = "Mi17_DZE";
+		displaynameshort = "Mi17_DZ";
 		scope = 2;
 		side = 2;
 		crew = "";
@@ -241,6 +241,7 @@ class CfgVehicles {
 	};
 	class Mi17_DZE: Mi17_DZ	
 	{
+		displaynameshort = "Mi17_DZE";
 		class Turrets : Turrets 
 		{
 			class MainTurret : MainTurret 
