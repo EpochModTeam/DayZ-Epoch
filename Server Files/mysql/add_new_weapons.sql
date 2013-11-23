@@ -13,11 +13,10 @@ INSERT INTO `trader_items` VALUES(NULL, 'MG36', 3, 'Machine Gun', 'trade_weapons
 INSERT INTO `trader_items` VALUES(NULL, 'RPK_74', 3, 'Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(NULL, 'M60A4_EP1_DZE', 3, 'Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(NULL, 'm240_scoped_EP1_DZE', 3, 'Machine Gun', 'trade_weapons');
-INSERT INTO `trader_items` VALUES(NULL, 'M249_m145_EP1', 3, 'Machine Gun', 'trade_weapons');
+INSERT INTO `trader_items` VALUES(NULL, 'M249_m145_EP1_DZE', 3, 'Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(NULL, 'MG36_camo', 3, 'Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(NULL, '100Rnd_556x45_BetaCMag', 1, 'Ammo - Light Machine Gun', 'trade_items');
 INSERT INTO `trader_items` VALUES(NULL, '75Rnd_545x39_RPK', 1, 'Ammo - Light Machine Gun', 'trade_items');
-INSERT INTO `trader_items` VALUES(NULL, '100Rnd_556x45', 1, 'Ammo - Light Machine Gun', 'trade_items');
 
 
 -- -------------------------------------------------------------------------------------------------------------
@@ -31,7 +30,6 @@ INSERT INTO `Traders_DATA` VALUES(NULL, '["m240_scoped_EP1_DZE",3]', 5, '[1,"Ite
 INSERT INTO `Traders_DATA` VALUES(NULL, '["M249_m145_EP1_DZE",3]', 5, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 526, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(NULL, '["MG36_camo",3]', 8, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 526, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(NULL, '["100Rnd_556x45_BetaCMag",1]', 10, '[3,"ItemSilverBar10oz",1]', '[1,"ItemSilverBar10oz",1]', 0, 527, 'trade_items');
-INSERT INTO `Traders_DATA` VALUES(NULL, '["100Rnd_556x45",1]', 10, '[3,"ItemSilverBar10oz",1]', '[1,"ItemSilverBar10oz",1]', 0, 527, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(NULL, '["75Rnd_545x39_RPK",1]', 10, '[3,"ItemSilverBar10oz",1]', '[1,"ItemSilverBar10oz",1]', 0, 527, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(NULL, '["KSVK_DZE",3]', 10, '[3,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 526, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(NULL, '["64Rnd_9x19_Bizon",1]', 10, '[2,"ItemSilverBar",1]', '[1,"ItemSilverBar",1]', 0, 527, 'trade_items');
