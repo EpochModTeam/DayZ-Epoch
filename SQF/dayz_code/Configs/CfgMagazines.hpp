@@ -131,14 +131,33 @@ class CfgMagazines {
 		picture = "\CA\weapons_E\Data\icons\m_m245_CA.paa";  
 	};
 	class 100Rnd_556x45_BetaCMag: CA_Magazine {
+		scope = 2;
+		displayName = "MG36 Mag.";
+		ammo = "B_556x45_Ball";
+		count = 100;
+		initSpeed = 920;
+		picture = "\ca\weapons\g36\data\equip\M_MG36_CA.paa";
 		type="256";
-	}
+		tracersEvery = 4;
+		lastRoundsTracer = 4;
+		descriptionShort = "Caliber: 5.56x45 mm NATO
+		Rounds: 100
+		Used in: MG36, X8 SAW";
+	};
 	class 75Rnd_545x39_RPK: CA_Magazine {
+		scope = 2;
+		displayName = "75Rnd. RPK";
+		ammo = "B_545x39_Ball";
+		count = 75;
 		type="256";
-	}
-	class 100Rnd_556x45: CA_Magazine {
-		type="256";
-	}
+		picture = "\CA\weapons\AK\data\equip\M_RPK_74_CA.paa";
+		tracersEvery = 4;
+		lastRoundsTracer = 4;
+		nameSound = "mgun";
+		descriptionShort = "Caliber: 5.45x39mm
+		Rounds: 75
+		Used in: RPK-74";
+	};
 
 	 // Items
 	class ItemHotwireKit: CA_Magazine
