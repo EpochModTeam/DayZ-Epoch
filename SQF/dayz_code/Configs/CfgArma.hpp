@@ -3,7 +3,7 @@ class CfgActions {
 
 	class Rearm : None {
 		show = 0;
-	};
+	};	
 	class Heal : None {
 		show = 0;
 	};
@@ -13,11 +13,9 @@ class CfgActions {
 	class FirstAid : None {
 		show = 0;
 	};
-	/*
 	class TakeBag : None {
 		show = 0;
 	};
-	*/
 };
 
 class CfgLoadingTexts {
