@@ -1966,7 +1966,7 @@ class CfgVehicles {
 		displayName = "Gun Rack";
 		vehicleClass = "Fortifications";
 		transportMaxWeapons = 20;
-		transportMaxMagazines = 0;
+		transportMaxMagazines = 10;
 		transportMaxBackpacks = 0;
 		offset[] = {0,2.5,0.5};
 		removeoutput[] = {{"ItemGunRackKit",1}};
