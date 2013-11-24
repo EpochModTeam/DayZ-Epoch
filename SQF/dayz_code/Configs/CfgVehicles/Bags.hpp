@@ -28,6 +28,10 @@ class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us_assault_Coyote.p3d";
 	transportMaxWeapons = 1;
 	transportMaxMagazines = 10;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_Patrol_Pack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_Assault_Pack_EP1: Bag_Base_EP1
@@ -40,6 +44,10 @@ class DZ_Assault_Pack_EP1: Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us_assault.p3d";
 	transportMaxWeapons = 1;
 	transportMaxMagazines = 12;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_Assault_Pack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_Czech_Vest_Puch: Bag_Base_EP1
@@ -52,6 +60,10 @@ class DZ_Czech_Vest_Puch: Bag_Base_EP1
 	scope = 2;
 	transportmaxmagazines = 12;
 	transportmaxweapons = 0;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_Czech_Vest_Puch'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_ALICE_Pack_EP1: Bag_Base_EP1
@@ -64,6 +76,10 @@ class DZ_ALICE_Pack_EP1: Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_tk_alice.p3d";
 	transportMaxWeapons = 2;
 	transportMaxMagazines = 20;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_ALICE_Pack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
@@ -76,6 +92,10 @@ class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_civil_assault.p3d";
 	transportMaxWeapons = 2;
 	transportMaxMagazines = 22;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_TK_Assault_Pack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_British_ACU : Bag_Base_EP1
@@ -88,6 +108,10 @@ class DZ_British_ACU : Bag_Base_EP1
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	transportMaxWeapons = 3;
 	transportMaxMagazines = 30;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_British_ACU'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_CivilBackpack_EP1: Bag_Base_EP1    
@@ -100,6 +124,10 @@ class DZ_CivilBackpack_EP1: Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 40;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_CivilBackpack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_Backpack_EP1: Bag_Base_EP1
@@ -112,6 +140,10 @@ class DZ_Backpack_EP1: Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us.p3d";
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 50;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_Backpack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 
 class DZ_LargeGunBag_EP1: Bag_Base_EP1
@@ -124,6 +156,10 @@ class DZ_LargeGunBag_EP1: Bag_Base_EP1
 	mapsize = 2;
 	transportMaxWeapons = 6;
 	transportMaxMagazines = 60;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_LargeGunBag_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 class DZ_GunBag_EP1: Bag_Base_EP1
 {
@@ -135,6 +171,10 @@ class DZ_GunBag_EP1: Bag_Base_EP1
 	mapsize = 2;
 	transportMaxWeapons = 3;
 	transportMaxMagazines = 35;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_GunBag_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 class DZ_CompactPack_EP1: Bag_Base_EP1
 {
@@ -146,6 +186,10 @@ class DZ_CompactPack_EP1: Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_rpg.p3d"; 
 	transportMaxWeapons = 2;
 	transportMaxMagazines = 25;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_CompactPack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };
 class DZ_TerminalPack_EP1: Bag_Base_EP1
 {
@@ -157,4 +201,8 @@ class DZ_TerminalPack_EP1: Bag_Base_EP1
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us_AUV"; 
 	transportMaxWeapons = 1;
 	transportMaxMagazines = 15;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','DZ_TerminalPack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
 };

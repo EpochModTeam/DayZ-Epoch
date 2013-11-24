@@ -646,7 +646,52 @@
 			<French>%1 est déjà en train d'être pillé par quelqu'un d'autre.</French>
 			<Czech>%1 už je loupeno někým jiným.</Czech>
 		</Key>
-		<Key ID="str_player_beingpacked">
+    <Key ID="str_pickup_limit_1">
+      <English>You need to be within 3 meters to pickup!</English>
+      <German>You need to be within 3 meters to pickup!</German>
+      <Russian>Чтобы поднять предмет, вы должны быть ближе 3х метров!</Russian>
+      <Spanish>¡Necesitas estar a menos de 3 metros para tomarlo!</Spanish>
+      <Dutch>You need to be within 3 meters to pickup!</Dutch>
+      <French>Vous devez être à moins de 3 mètres pour ramasser !</French>
+      <Czech>Aby jste předmět sebrali, musíte být v okolí 3 metrů.</Czech>
+    </Key>
+    <Key ID="str_pickup_limit_2">
+      <English>You must wait to pickup this item!</English>
+      <German>You must wait to pickup this item!</German>
+      <Russian>Чтобы поднять этот предмет, нужно подождать!</Russian>
+      <Spanish>¡Necesitas esperar para tomar este objeto!</Spanish>
+      <Dutch>You must wait to pickup this item!</Dutch>
+      <French>Vous devez attendre pour ramasser l'objet !</French>
+      <Czech>Abyste sebrali předmět, musíte počkat.</Czech>
+    </Key>
+    <Key ID="str_pickup_limit_3">
+      <English>You may only pickup one item at a time!</English>
+      <German>You may only pickup one item at a time!</German>
+      <Russian>Можно поднимать только один предмет за раз!</Russian>
+      <Spanish>¡Solo puedes tomar un objeto a la vez!</Spanish>
+      <Dutch>You may only pickup one item at a time!</Dutch>
+      <French>Vous ne pouvez prendre qu'un objet à la fois !</French>
+      <Czech>Lze sebrat pouze jeden předmět zároveň.</Czech>
+    </Key>
+    <Key ID="str_pickup_limit_4">
+      <English>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</English>
+      <German>Another Player is  Near by, Only one player can be within 5 meters of a bag to pickup</German>
+      <Russian>Другой игрок рядом! Он должен быть далее 5ти метров от поднимаемого рюкзака</Russian>
+      <Spanish>Otro jugador cerca, solo un jugador debe estar a menos de 5 metros de la mochila para tomarla</Spanish>
+      <Dutch>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</Dutch>
+      <French>Un autre joueur se trouve à proximité. Un seul joueur peut fouiller un sac dans un rayon de 5 mètres.</French>
+      <Czech>Poblíž je další hráč. Pouze jeden hráč musí být v rozsahu 5 metrů aby jste mohli batoh zvednout</Czech>
+    </Key>
+    <Key ID="str_pickup_limit_5">
+      <English>Another player is nearby, only one player can be near to perform this action</English>
+      <German>Ein anderer Spieler in der Nähe ist, kann nur ein Spieler sich in der Nähe, um diese Aktion durchzuführen</German>
+      <Russian>Другой игрок рядом, только один игрок может делать это.</Russian>
+      <Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción</Spanish>
+      <Dutch>Another player is nearby, only one player can be near to perform this action</Dutch>
+      <French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action</French>
+      <Czech>Dalším hráčem je v blízkosti, může být jeden hráč blízko k provedení této akce</Czech>
+    </Key>
+    <Key ID="str_player_beingpacked">
 			<Original>That tent is already being packed.</Original>
 			<English>That tent is already being packed.</English>
 			<German>Dieses Zelt wurde bereits vergepackt.</German>
