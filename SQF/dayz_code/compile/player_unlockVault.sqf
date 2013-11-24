@@ -8,11 +8,11 @@ private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_we
 if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-// Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
-
 _obj = _this;
+
+_playerNear = _obj call dze_isnearest_player;
+
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
 
 _unlockedClass = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "unlockedClass");
 _text = 		getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");

@@ -20,8 +20,10 @@ _IsNearVehicle = count (_findNearestVehicle);
 if (_IsNearVehicle >= 1) then {
 
 	_vehicle = _findNearestVehicle select 0;
+
+	_notNearestPlayer = _vehicle call dze_isnearest_player;
 		
-	if (!isNull _vehicle and local _vehicle) then {
+	if (!isNull _vehicle and local _vehicle and !_notNearestPlayer) then {
 
 		_classname = typeOf _vehicle;
 

@@ -16,8 +16,7 @@ _text = 		getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName"
 // Silently exit if object no longer exists
 if(isNull _obj) exitWith { TradeInprogress = false; };
 
-// Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
+_playerNear = _obj call dze_isnearest_player;
 if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_11") , "PLAIN DOWN"];  };
 
 _ownerID = _obj getVariable["CharacterID","0"];

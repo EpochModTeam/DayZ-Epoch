@@ -17,46 +17,56 @@ if(!isNull dayz_selectedDoor) then {
 	// our target
 	_obj = dayz_selectedDoor;
 
-	// get object combination
-	_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
+	_notNearestPlayer = _obj call dze_isnearest_player;
 
-	// Check combination
-	if (DZE_Lock_Door == _objectCharacterID) then {
-	
-		[player,"combo_unlock",0,false] call dayz_zombieSpeak;
-
-		// close display
+	if (_notNearestPlayer) then {
+		// close display since another player is closer
 		_display = findDisplay 41144;
 		_display closeDisplay 3000;
-
-		// unlock if locked
-		if(_obj animationPhase "Open_hinge" == 0) then {
-			_obj animate ["Open_hinge", 1];
-		};
-
-		if(_obj animationPhase "Open_latch" == 0) then {
-			_obj animate ["Open_latch", 1];
-		};
-		KeyCodeTry = nil;
-
+		cutText ["Failed, another player is closer than you are.", "PLAIN DOWN"];
 	} else {
-		DZE_Lock_Door = "";
-		[player,"combo_locked",0,false] call dayz_zombieSpeak;
-		[player,20,true,(getPosATL player)] spawn player_alertZombies;
+	
+		// get object combination
+		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
-		if (isNil 'KeyCodeTry') then {KeyCodeTry = 0;};
+		// Check combination
+		if (DZE_Lock_Door == _objectCharacterID) then {
+	
+			[player,"combo_unlock",0,false] call dayz_zombieSpeak;
 
-		KeyCodeTry = KeyCodeTry + 1;
-
-		if (!isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
-
-		if(KeyCodeTry >= ((round(random 4)) + 4)) then {
-			
-			if (isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
-			
-			cutText [(localize "str_epoch_player_19"), "PLAIN DOWN"];
+			// close display
 			_display = findDisplay 41144;
 			_display closeDisplay 3000;
+
+			// unlock if locked
+			if(_obj animationPhase "Open_hinge" == 0) then {
+				_obj animate ["Open_hinge", 1];
+			};
+
+			if(_obj animationPhase "Open_latch" == 0) then {
+				_obj animate ["Open_latch", 1];
+			};
+			KeyCodeTry = nil;
+
+		} else {
+			DZE_Lock_Door = "";
+			[player,"combo_locked",0,false] call dayz_zombieSpeak;
+			[player,20,true,(getPosATL player)] spawn player_alertZombies;
+
+			if (isNil 'KeyCodeTry') then {KeyCodeTry = 0;};
+
+			KeyCodeTry = KeyCodeTry + 1;
+
+			if (!isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
+
+			if(KeyCodeTry >= ((round(random 4)) + 4)) then {
+			
+				if (isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
+			
+				cutText [(localize "str_epoch_player_19"), "PLAIN DOWN"];
+				_display = findDisplay 41144;
+				_display closeDisplay 3000;
+			};
 		};
 	};
 } else {
