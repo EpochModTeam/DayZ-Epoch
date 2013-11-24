@@ -138,7 +138,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	{
 		if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _key_colors) then {
 			_ownerKeyId = getNumber(configFile >> "CfgWeapons" >> _x >> "keyid");
-			_ownerKeyName = getNumber(configFile >> "CfgWeapons" >> _x >> "displayName");
+			_ownerKeyName = getText(configFile >> "CfgWeapons" >> _x >> "displayName");
 			_temp_keys_names set [_ownerKeyId,_ownerKeyName];
 			_temp_keys set [count _temp_keys,str(_ownerKeyId)];
 		};
