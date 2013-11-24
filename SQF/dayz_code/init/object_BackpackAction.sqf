@@ -7,7 +7,7 @@ _name = getText (configFile >> _type >> _classname >> "displayName");
 _actionSet = _holder getVariable["actionSet", false];
 
 if (!_actionSet) then {
-	s_player_holderPickup = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
+	s_player_holderPickup = _holder addAction [format[(localize "STR_DAYZ_CODE_1"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
 	player reveal _holder;
 	_holder setVariable["actionSet", true];
 
