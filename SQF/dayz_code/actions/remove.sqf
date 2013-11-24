@@ -2,7 +2,7 @@
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_activatingPlayer","_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle"];
+private ["_activatingPlayer","_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular"];
 
 if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_88") , "PLAIN DOWN"]; };
 TradeInprogress = true;
@@ -31,6 +31,7 @@ _isDestructable = _obj isKindOf "BuiltItems";
 _isWreck = _objType in DZE_isWreck;
 _isRemovable = _objType in DZE_isRemovable;
 _isWreckBuilding = _objType in DZE_isWreckBuilding;
+_isModular = _objType isKindOf "ModularItems";
 
 _limit = 3;
 if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
@@ -64,6 +65,12 @@ if(_IsNearPlot >= 1) then {
 _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName");
 
 cutText [format[(localize "str_epoch_player_162"),_nameVehicle], "PLAIN DOWN"];
+
+if (_isModular) then {
+     //allow previous cutText to show, then show this if modular.
+     sleep 2;
+     {cutText [format["Deconstructing modular buildables will not refund any components."], "PLAIN"];};
+};
 
 // Alert zombies once.
 [player,50,true,(getPosATL player)] spawn player_alertZombies;

@@ -25,7 +25,7 @@ if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
 } else {
 
-	if (_part_in isKindOf "AIR") then {
+	if (_part_in isKindOf "Air") then {
 		_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_air];
 	} else {
 		_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_vehicle];
