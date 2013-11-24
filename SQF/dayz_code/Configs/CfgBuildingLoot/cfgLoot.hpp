@@ -1028,4 +1028,17 @@ class CfgLoot {
 			0.15,
 		}
 	};
+
+	militaryshotguns[] = {
+		{
+			"Saiga12K",
+			"Remington870_lamp",
+			"M1014",
+		},
+		{
+			0.25,
+			0.35,
+			0.40
+		}
+	};
 };

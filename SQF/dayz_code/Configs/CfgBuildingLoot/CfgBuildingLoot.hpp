@@ -454,11 +454,11 @@ class CfgBuildingLoot {
 			{ "militaryammo","single" }
 		};
 		itemChance[] =	{
-			0.1,
-			0.03,
-			0.05,
-			0.05,
-			0.35,
+			0.11,
+			0.04,
+			0.07,
+			0.06,
+			0.3,
 			0.19,
 			0.05,
 			0.01,
@@ -691,7 +691,7 @@ class CfgBuildingLoot {
 			{ "machineguns","cfglootweapon" },
 			{ "pistols","cfglootweapon" },
 			{ "sniperrifles","cfglootweapon" },
-			{ "shotgunsingleshot","cfglootweapon" },
+			{ "militaryshotguns","cfglootweapon" },
 			{ "submachinegun","cfglootweapon" },
 			{ "AmmoBoxSmall_556","object" },
 			{ "AmmoBoxSmall_762","object" },
