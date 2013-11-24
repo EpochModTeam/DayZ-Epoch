@@ -16,6 +16,8 @@ dayz_previousID = 0;
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
 enableRadio false;
+// May prevent "how are you civillian?" messages from NPC
+enableSentences false;
 
 // DayZ Epoch config 
 spawnShoremode = 1; // Default = 1 (on shore)
