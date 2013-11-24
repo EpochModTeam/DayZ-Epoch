@@ -25,9 +25,9 @@ server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_s
 server_spawnCrashSite  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
 server_handleZedSpawn =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleZedSpawn.sqf";
 server_spawnEvents =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
-server_weather =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_weather.sqf";
+//server_weather =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_weather.sqf";
 
-fnc_plyrHit   = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
+fnc_plyrHit   =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
 server_deaths = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
 
 

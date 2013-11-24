@@ -17,7 +17,7 @@ waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug durin
 call server_timeSync;
 
 // set Weather
-call server_weather;
+// call server_weather;
 	
 // Custom Configs
 if(isnil "MaxVehicleLimit") then {
