@@ -140,9 +140,7 @@ class CfgMagazines {
 		type="256";
 		tracersEvery = 4;
 		lastRoundsTracer = 4;
-		descriptionShort = "Caliber: 5.56x45 mm NATO
-		Rounds: 100
-		Used in: MG36, X8 SAW";
+		descriptionShort = "Caliber: 5.56x45 mm NATO Rounds: 100 Used in: MG36, X8 SAW";
 	};
 	class 75Rnd_545x39_RPK: CA_Magazine {
 		scope = 2;
@@ -154,9 +152,7 @@ class CfgMagazines {
 		tracersEvery = 4;
 		lastRoundsTracer = 4;
 		nameSound = "mgun";
-		descriptionShort = "Caliber: 5.45x39mm
-		Rounds: 75
-		Used in: RPK-74";
+		descriptionShort = "Caliber: 5.45x39mm Rounds: 75 Used in: RPK-74";
 	};
 
 	 // Items
