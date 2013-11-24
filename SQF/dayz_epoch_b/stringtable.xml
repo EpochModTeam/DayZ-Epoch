@@ -646,52 +646,52 @@
 			<French>%1 est déjà en train d'être pillé par quelqu'un d'autre.</French>
 			<Czech>%1 už je loupeno někým jiným.</Czech>
 		</Key>
-    <Key ID="str_pickup_limit_1">
-      <English>You need to be within 3 meters to pickup!</English>
-      <German>You need to be within 3 meters to pickup!</German>
-      <Russian>Чтобы поднять предмет, вы должны быть ближе 3х метров!</Russian>
-      <Spanish>¡Necesitas estar a menos de 3 metros para tomarlo!</Spanish>
-      <Dutch>You need to be within 3 meters to pickup!</Dutch>
-      <French>Vous devez être à moins de 3 mètres pour ramasser !</French>
-      <Czech>Aby jste předmět sebrali, musíte být v okolí 3 metrů.</Czech>
-    </Key>
-    <Key ID="str_pickup_limit_2">
-      <English>You must wait to pickup this item!</English>
-      <German>You must wait to pickup this item!</German>
-      <Russian>Чтобы поднять этот предмет, нужно подождать!</Russian>
-      <Spanish>¡Necesitas esperar para tomar este objeto!</Spanish>
-      <Dutch>You must wait to pickup this item!</Dutch>
-      <French>Vous devez attendre pour ramasser l'objet !</French>
-      <Czech>Abyste sebrali předmět, musíte počkat.</Czech>
-    </Key>
-    <Key ID="str_pickup_limit_3">
-      <English>You may only pickup one item at a time!</English>
-      <German>You may only pickup one item at a time!</German>
-      <Russian>Можно поднимать только один предмет за раз!</Russian>
-      <Spanish>¡Solo puedes tomar un objeto a la vez!</Spanish>
-      <Dutch>You may only pickup one item at a time!</Dutch>
-      <French>Vous ne pouvez prendre qu'un objet à la fois !</French>
-      <Czech>Lze sebrat pouze jeden předmět zároveň.</Czech>
-    </Key>
-    <Key ID="str_pickup_limit_4">
-      <English>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</English>
-      <German>Another Player is  Near by, Only one player can be within 5 meters of a bag to pickup</German>
-      <Russian>Другой игрок рядом! Он должен быть далее 5ти метров от поднимаемого рюкзака</Russian>
-      <Spanish>Otro jugador cerca, solo un jugador debe estar a menos de 5 metros de la mochila para tomarla</Spanish>
-      <Dutch>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</Dutch>
-      <French>Un autre joueur se trouve à proximité. Un seul joueur peut fouiller un sac dans un rayon de 5 mètres.</French>
-      <Czech>Poblíž je další hráč. Pouze jeden hráč musí být v rozsahu 5 metrů aby jste mohli batoh zvednout</Czech>
-    </Key>
-    <Key ID="str_pickup_limit_5">
-      <English>Another player is nearby, only one player can be near to perform this action</English>
-      <German>Ein anderer Spieler in der Nähe ist, kann nur ein Spieler sich in der Nähe, um diese Aktion durchzuführen</German>
-      <Russian>Другой игрок рядом, только один игрок может делать это.</Russian>
-      <Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción</Spanish>
-      <Dutch>Another player is nearby, only one player can be near to perform this action</Dutch>
-      <French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action</French>
-      <Czech>Dalším hráčem je v blízkosti, může být jeden hráč blízko k provedení této akce</Czech>
-    </Key>
-    <Key ID="str_player_beingpacked">
+		<Key ID="str_pickup_limit_1">
+			<English>You need to be within 3 meters to pickup!</English>
+			<German>You need to be within 3 meters to pickup!</German>
+			<Russian>Чтобы поднять предмет, вы должны быть ближе 3х метров!</Russian>
+			<Spanish>¡Necesitas estar a menos de 3 metros para tomarlo!</Spanish>
+			<Dutch>You need to be within 3 meters to pickup!</Dutch>
+			<French>Vous devez être à moins de 3 mètres pour ramasser !</French>
+			<Czech>Aby jste předmět sebrali, musíte být v okolí 3 metrů.</Czech>
+		</Key>
+		<Key ID="str_pickup_limit_2">
+			<English>You must wait to pickup this item!</English>
+			<German>You must wait to pickup this item!</German>
+			<Russian>Чтобы поднять этот предмет, нужно подождать!</Russian>
+			<Spanish>¡Necesitas esperar para tomar este objeto!</Spanish>
+			<Dutch>You must wait to pickup this item!</Dutch>
+			<French>Vous devez attendre pour ramasser l'objet !</French>
+			<Czech>Abyste sebrali předmět, musíte počkat.</Czech>
+		</Key>
+		<Key ID="str_pickup_limit_3">
+			<English>You may only pickup one item at a time!</English>
+			<German>You may only pickup one item at a time!</German>
+			<Russian>Можно поднимать только один предмет за раз!</Russian>
+			<Spanish>¡Solo puedes tomar un objeto a la vez!</Spanish>
+			<Dutch>You may only pickup one item at a time!</Dutch>
+			<French>Vous ne pouvez prendre qu'un objet à la fois !</French>
+			<Czech>Lze sebrat pouze jeden předmět zároveň.</Czech>
+		</Key>
+		<Key ID="str_pickup_limit_4">
+			<English>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</English>
+			<German>Another Player is  Near by, Only one player can be within 5 meters of a bag to pickup</German>
+			<Russian>Другой игрок рядом! Он должен быть дальше 5ти метров от поднимаемого рюкзака</Russian>
+			<Spanish>Otro jugador cerca, solo un jugador debe estar a menos de 5 metros de la mochila para tomarla</Spanish>
+			<Dutch>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</Dutch>
+			<French>Un autre joueur se trouve à proximité. Un seul joueur peut fouiller un sac dans un rayon de 5 mètres.</French>
+			<Czech>Poblíž je další hráč. Pouze jeden hráč musí být v rozsahu 5 metrů aby jste mohli batoh zvednout</Czech>
+		</Key>
+		<Key ID="str_pickup_limit_5">
+			<English>Another player is nearby, only one player can be near to perform this action</English>
+			<German>Ein anderer Spieler in der Nähe ist, kann nur ein Spieler sich in der Nähe, um diese Aktion durchzuführen</German>
+			<Russian>Другой игрок рядом, только один игрок может делать это.</Russian>
+			<Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción</Spanish>
+			<Dutch>Another player is nearby, only one player can be near to perform this action</Dutch>
+			<French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action</French>
+			<Czech>Dalším hráčem je v blízkosti, může být jeden hráč blízko k provedení této akce</Czech>
+		</Key>
+		<Key ID="str_player_beingpacked">
 			<Original>That tent is already being packed.</Original>
 			<English>That tent is already being packed.</English>
 			<German>Dieses Zelt wurde bereits vergepackt.</German>
@@ -949,7 +949,7 @@
 			<Original>Fill Water</Original>
 			<English>Fill Water</English>
 			<German>Wasser einfüllen</German>
-			<Russian>Наполнить фляжки</Russian>
+			<Russian>Наполнить водой</Russian>
 			<Spanish>Llenar con Agua</Spanish>
 			<Dutch>Water bijvullen</Dutch>
 			<French>Remplir d'Eau</French>
@@ -1139,7 +1139,7 @@
 			<Original>You cannot perform another blood transfusion so fast</Original>
 			<English>You cannot perform another blood transfusion so fast</English>
 			<German>Sie können so schnell keine weitere Bluttransfusion durchführen</German>
-			<Russian>Нельзя так часто переливать кровь!</Russian>
+			<Russian>Вы не можете переливать кровь так быстро</Russian>
 			<Spanish>No puedes realizar otra transfución de sangre tan rápido.</Spanish>
 			<Dutch>Je kunt niet zosnel aaneenvolgend een bloedtransfusie uitvoeren</Dutch>
 			<French>Vous ne pouvez pas faire d'autre transfusion de sang aussi rapidement</French>
@@ -1671,7 +1671,7 @@
 			<Original>Water Bottle (Boiled)</Original>						
 			<English>Water Bottle (Boiled)</English>						
 			<German>Wasserflasche (Abgekocht)</German>
-			<Russian>Фляжка кипячёной воды</Russian>
+			<Russian>Фляжка воды (Кипячёной)</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
 			<Dutch>Water Fles (Gekookt)</Dutch>
 			<French>Bouteille d'eau (Bouillie)</French>
@@ -2663,7 +2663,7 @@
 		  <Original>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</Original>
 		  <English>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</English>
 		  <German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
-		  <Russian>Магазины %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
+		  <Russian>Вещи %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Magazijnen %1 / %2 - Wapens %3 / %4 - Rugzakken %5 / %6</Dutch>
 		  <French>Munitions et objets %1 / %2 - Armes et outils %3 / %4 - Sac à dos %5 / %6</French>
@@ -2723,7 +2723,7 @@
 		  <Original>Cannot access gear in a locked vehicle.</Original>
 		  <English>Cannot access gear in a locked vehicle.</English>
 		  <German>Kann nicht auf Gang in einem verschlossenen Fahrzeug.</German>
-		  <Russian>Невозможно открыть инвентарь запертого автомобиля.</Russian>
+		  <Russian>Нельзя открывать инвентарь запертой техники.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
 		  <French>Impossible d'accéder au contenu d'un véhicule verrouillé</French>
@@ -2753,7 +2753,7 @@
 		  <Original>Lock already in progress.</Original>
 		  <English>Lock already in progress.</English>
 		  <German>Sie haben zwischen zwei Objekten zerquetscht worden.</German>
-		  <Russian>Уже закрывается</Russian>
+		  <Russian>Уже закрывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Wordt al op slot gezet.</Dutch>
 		  <French>Le verrouillage est déjà en cours.</French>
@@ -2763,7 +2763,7 @@
 		  <Original>Cannot lock while another player is nearby.</Original>
 		  <English>Cannot lock while another player is nearby.</English>
 		  <German>Kann nicht gesperrt werden, während ein anderer Spieler in der Nähe ist.</German>
-		  <Russian>Невозможно закрыть, когда другой игрок находится поблизости.</Russian>
+		  <Russian>Нельзя закрывать, когда другой игрок находится поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet op slot zetten met een andere speler in de buurt.</Dutch>
 		  <French>Impossible de verrouiller lorsque d'autres joueurs sont proches.</French>
@@ -2773,7 +2773,7 @@
 		  <Original>Cannot Abort while in a trader city!</Original>
 		  <English>Cannot Abort while in a trader city!</English>
 		  <German>Kann nicht abbrechen, während in einem Gewerbetreibenden Stadt!</German>
-		  <Russian>Невозможно выйти, находясь в торговом городе!</Russian>
+		  <Russian>Нельзя выходить, находясь в торговом городе!</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet uitloggen in een handel stad.</Dutch>
 		  <French>Impossible d'interrompre dans un marché!</French>
@@ -2783,7 +2783,7 @@
 		  <Original>Pack tent already in progress.</Original>
 		  <English>Pack tent already in progress.</English>
 		  <German>Packen Zelt bereits im Gange.</German>
-		  <Russian>Палатка уже упаковывается</Russian>
+		  <Russian>Палатка уже упаковывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Tent wordt al reeds ingepakt</Dutch>
 		  <French>Le pliage de la tente est déjà en cours.</French>
@@ -2813,7 +2813,7 @@
 		  <Original>Cannot pack while another player is nearby.</Original>
 		  <English>Cannot pack while another player is nearby.</English>
 		  <German></German>
-		  <Russian>Невозможно упаковывать, когда другой игрок рядом.</Russian>
+		  <Russian>Нельзя упаковывать, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
 		  <French>Impossible d'empaqueter lorsque d'autres joueurs sont proches.</French>
@@ -2853,7 +2853,7 @@
 		  <Original>Cannot unlock while another player is nearby.</Original>
 		  <English>Cannot unlock while another player is nearby.</English>
 		  <German></German>
-		  <Russian>Невозможно открыть, когда другой игрок рядом.</Russian>
+		  <Russian>Нельзя открывать, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet van slot afhalen met een andere speler in de buurt.</Dutch>
 		  <French>Impossible de déverrouiller lorsque d'autres joueurs sont proches.</French>
@@ -2913,7 +2913,7 @@
 		  <Original>Canceled.</Original>
 		  <English>Canceled.</English>
 		  <German></German>
-		  <Russian>Отмена</Russian>
+		  <Russian>Отмена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Ge-annuleerd.</Dutch>
 		  <French>Annulé</French></French>
@@ -2981,9 +2981,9 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33">
 		  <Original>Failed to unlock car hotwire kit broken.</Original>
-		  <English>Не удалось открыть машину, угонный комплект сломан.</English>
+		  <English>Failed to unlock car hotwire kit broken.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Не удалось открыть машину, угонный комплект сломан.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Openbreken voertuig mislukt, je hotwire kit is kapot gegaan.</Dutch>
 		  <French>Échec du crochetage du véhicule, le kit est détruit.</French>
@@ -3023,7 +3023,7 @@
 		  <Original>Lock vehicle already in progress.</Original>
 		  <English>Lock vehicle already in progress.</English>
 		  <German></German>
-		  <Russian>Автомобиль уже закрывается.</Russian>
+		  <Russian>Транспорт уже закрывается.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
 		  <French>Le verrouillage du véhicule est déjà en cours.</French>
@@ -3063,7 +3063,7 @@
 		  <Original>\n\nCannot build, too many objects within 30m.</Original>
 		  <English>\n\nCannot build, too many objects within 30m.</English>
 		  <German></German>
-		  <Russian>\n\nНевозможно построить, слишком много объектов в пределах 30 м.</Russian>
+		  <Russian>\n\nНельзя построить, слишком много объектов в пределах 30 м.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nKan niet bouwen, teveel objecten binnen 30m.</Dutch>
 		  <French>\n\nImpossible de construire, il y a trop d'objets à moins de 30m.</French>
@@ -3073,7 +3073,7 @@
 		  <Original>Cannot build while in a vehicle.</Original>
 		  <English>Cannot build while in a vehicle.</English>
 		  <German></German>
-		  <Russian>Невозможно построить, находясь в транспорте.</Russian>
+		  <Russian>Нельзя строить, находясь в транспорте.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
 		  <French>Impossible de construire à bord d'un véhicule.</French>
@@ -3083,7 +3083,7 @@
 		  <Original>Cannot build while in combat.</Original>
 		  <English>Cannot build while in combat.</English>
 		  <German>Cannot build while in combat.</German>
-		  <Russian>Невозможно строить во время боя.</Russian>
+		  <Russian>Нельзя строить во время боя.</Russian>
 		  <Spanish>Cannot build while in combat.</Spanish>
 		  <Dutch>Bouwen is niet mogelijk tijdens een conflictsituatie.</Dutch>
 		  <French>Impossible de construire en combat.</French>
@@ -3093,7 +3093,7 @@
 		  <Original>Cannot build plot pole within 45m of an existing plot.</Original>
 		  <English>Cannot build plot pole within 45m of an existing plot.</English>
 		  <German></German>
-		  <Russian>Невозможно построить столб в пределах 45м. от существующего столба.</Russian>
+		  <Russian>Нельзя построить столб в пределах 45м. от существующего столба.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan bouw-paal niet bouwen op minder als 45m afstand van een bestaand bouwterrein.</Dutch>
 		  <French>Impossible de construire un panneau de propriété privée à moins de 45m d'un autre panneau du genre.</French>
@@ -3193,7 +3193,7 @@
 		  <Original>\n\nHatchet needs to be in your hand to harvest wood.</Original>
 		  <English>\n\nHatchet needs to be in your hand to harvest wood.</English>
 		  <German></German>
-		  <Russian>\n\nТопор должен быть в ваших руках, чтобы рубить дерево.</Russian>
+		  <Russian>\n\nТопор должен быть в ваших руках, чтобы срубить дерево.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe moet een bijl in je handen hebben om hout te hakken.</Dutch>
 		  <French>\n\nVous devez avoir la hache en main pour couper du bois.</French>
@@ -3303,7 +3303,7 @@
 		  <Original>\n\nFishing already in progress.</Original>
 		  <English>\n\nFishing already in progress.</English>
 		  <German></German>
-		  <Russian>\n\nВы уже рыбачите.</Russian>
+		  <Russian>\n\nВы уже ловите рыбу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nAfmaken van creatie is al bezig.</Dutch>
 		  <French>\n\nLa pêche est déjà en cours.</French>
@@ -3333,7 +3333,7 @@
 		  <Original>\n\nCanceled Fishing.</Original>
 		  <English>\n\nCanceled Fishing.</English>
 		  <German></German>
-		  <Russian>\n\nРыбалка отменена.</Russian>
+		  <Russian>\n\nЛовля рыбы отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nGestopt met vissen.</Dutch>
 		  <French>\n\nPêche annulée.</French>
@@ -3353,7 +3353,7 @@
 		  <Original>\n\nNibble... Nibble...</Original>
 		  <English>\n\nNibble... Nibble...</English>
 		  <German></German>
-		  <Russian>\n\nЛовись... Ловись... рыбка...</Russian>
+		  <Russian>\n\nКлюй... Клюй...</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nDobber.. Dobber..</Dutch>
 		  <French>\n\nÇa grignote... ça grignote...</French>
@@ -3493,7 +3493,7 @@
 		  <Original>\n\nCannot change clothes when another player is nearby.</Original>
 		  <English>\n\nCannot change clothes when another player is nearby.</English>
 		  <German></German>
-		  <Russian>\n\nНевозможно переодеваться, когда другой игрок рядом.</Russian>
+		  <Russian>\n\nНельзя переодеваться, когда другой игрок рядом.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
 		  <French>\n\nImpossible de changer de vêtements près d'un autre joueur.</French>
@@ -3503,7 +3503,7 @@
 		  <Original>\n\nYou may not change clothes while in a vehicle</Original>
 		  <English>\n\nYou may not change clothes while in a vehicle</English>
 		  <German></German>
-		  <Russian>\n\nВы не можете переодеваться, когда вы в автомобиле</Russian>
+		  <Russian>\n\nВы не можете переодеваться, находясь в технике</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden in een voertuig</Dutch>
 		  <French>\n\nVous ne devriez pas changer de vêtements à bord d'un véhicule</French>
@@ -3543,7 +3543,7 @@
 		  <Original>Cannot remove running generator.</Original>
 		  <English>Cannot remove running generator.</English>
 		  <German></German>
-		  <Russian>Невозможно убрать работающий генератор.</Russian>
+		  <Russian>Нельзя убрать работающий генератор.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
 		  <French>Impossible de démonter un générateur en route.</French>
@@ -3683,7 +3683,7 @@
 		  <Original>Trade already in progress.</Original>
 		  <English>Trade already in progress.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Вы уже заключаете сделку.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je bent al aan het handellen.</Dutch>
 		  <French>La transaction est déjà en cours.</French>
@@ -3693,7 +3693,7 @@
 		  <Original>Cannot trade while another player is nearby.</Original>
 		  <English>Cannot trade while another player is nearby.</English>
 		  <German></German>
-		  <Russian>Невозможно торговать, когда другой игрок находится поблизости.</Russian>
+		  <Russian>Нельзя заключать сделку, когда другой игрок находится поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet handellen met een andere speler in de buurt.</Dutch>
 		  <French>Impossible d'effectuer la transaction lorsque d'autres joueurs sont proches.</French>
@@ -3713,7 +3713,7 @@
 		  <Original>Canceled Trade.</Original>
 		  <English>Canceled Trade.</English>
 		  <German></German>
-		  <Russian>Торговля отменена.</Russian>
+		  <Russian>Сделка отменена.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handel geannuleerd.</Dutch>
 		  <French>Transaction annulée.</French>
@@ -3943,7 +3943,7 @@
 		  <Original>Started cooking %1</Original>
 		  <English>Started cooking %1</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Начали готовить %1</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Begonnen met het koken van %1</Dutch>
 		  <French>Début de la cuisson de %1</French>
@@ -3953,7 +3953,7 @@
 		  <Original>Canceled cooking %1</Original>
 		  <English>Canceled cooking %1</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Приготовление %1 отменено</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Gestopt met het koken van %1</Dutch>
 		  <French>Cuisson de %1 annulée</French>
@@ -4393,7 +4393,7 @@
 		  <Original>Dog consumed %1, yet remains untamed.</Original>
 		  <English>Dog consumed %1, yet remains untamed.</English>
 		  <German></German>
-		  <Russian>Собака употребила %1, всё ещё остаётся дикой.</Russian>
+		  <Russian>Собака употребила %1, но всё ещё остаётся дикой.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Hond heeft %1 gegeten, maar is nog niet tam.</Dutch>
 		  <French></French>
@@ -4453,7 +4453,7 @@
 		  <Original>Bought %3 for %1 %2.</Original>
 		  <English>Bought %3 for %1 %2.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Куплено %3 за %1 %2.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %3 gekocht voor %1 %2.</Dutch>
 		  <French></French>
@@ -4463,7 +4463,7 @@
 		  <Original>Sold %1 %2 for %3 %4</Original>
 		  <English>Sold %1 %2 for %3 %4</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Продано %1 %2 за %3 %4</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %1 %2 verkocht voor %3 %4.</Dutch>
 		  <French></French>
@@ -4473,7 +4473,7 @@
 		  <Original>Cannot sell %1, tires are too damaged.</Original>
 		  <English>Cannot sell %1, tires are too damaged.</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Нельзя продать %1, шины слишком повреждены.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Kan %1 niet verkopen, banden hebben teveel schade.</Dutch>
 		  <French></French>
@@ -4513,7 +4513,7 @@
 		  <Original>Traded %1 %2 for %3 %4</Original>
 		  <English>Traded %1 %2 for %3 %4</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Продано %1 %2 за %3 %4</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je hebt %1 %2 verhandeld voor %3 %4</Dutch>
 		  <French></French>
@@ -5103,7 +5103,7 @@
 		  <Original>Failed to sell vehicle, you must get into drivers seat first.</Original>
 		  <English>Failed to sell vehicle, you must get into drivers seat first.</English>
 		  <German></German>
-		  <Russian>Не удалось продать автомобиль, вы должны попасть на сиденье водителя для начала.</Russian>
+		  <Russian>Не удалось продать технику, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verkoop voertuig mislukt, stap eerst in de bestuurders stoel.</Dutch>
 		  <French></French>
