@@ -35,6 +35,7 @@
 * [ADDED] Owner can now remove modular parts (walls, etc) without having to destroy them.  NOTE: nothing is refunded/no rubble. @dayz10k
 * [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @dayz10k
 
+* [UPDATED] Server can now control now fast the periodic client save interval is on the fly. Actual server fps is used to determine how fast the clients can update min 10 seconds max 60 seconds.
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
 * [UPDATED] Trading log-system (server-side) was improved. @Skaronator
 * [UPDATED] Back-end loot configs and loot spawning rates. @vbawol
@@ -57,7 +58,6 @@
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
 * [FIXED] Recent Murders on the Murder Board in trader cities now works properly. @vbawol
 
-* [CHANGED] Lowered periodic client save interval to help reduce server load.
 * [CHANGED] Mission name and descriptions now conform to template. @dayz10k
 * [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
 * [CHANGED] Increased armor levels on cinder and metal modular base building objects by 20%.
