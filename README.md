@@ -31,10 +31,24 @@ Developers
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
 * Axle - Beta Tester, Lead Trader City Designer, Ideas. - http://www.twitch.tv/axles
 * Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
-* [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 * Axeman - Developer - Light system - axeman@thefreezer.co.uk
+* dayz10k - Developer - https://github.com/dayz10k
 * Skaronator - Developer - Help with many things https://github.com/Skaronator
+* [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 * Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.  https://github.com/Zabn
+
+--------------------------
+Contributors
+--------------------------
+* facoptere - Extra Security - https://github.com/facoptere
+* Torndeco - Fixes - https://github.com/Torndeco
+* Armifer - Humanity changes.   - https://github.com/Armifer
+* VeryBigBro  Russian Translations - https://github.com/VeryBigBro
+* AVendettaForYou - Trader City Tavi - https://github.com/AVendettaForYou
+* th4z - French translations  - https://github.com/th4z
+* JoSchaap - dutch translations and some typo's  - https://github.com/JoSchaap
+* Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
+* aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
 
 --------------------------
 Special thanks
@@ -44,10 +58,8 @@ Special thanks
 * DayZ Community Developers - https://github.com/DayZMod
 * ziellos2k - Tag Friendly code. https://github.com/ziellos2k
 * Dayz Hive DLL - https://github.com/rajkosto/hive
-* Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
 * Munchiefest - Beta Tester, Wiki Editor, Ideas - http://www.twitch.tv/munchiefest
-* aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
-* Alejandria - Beta Tester, New female textures. - http://www.twitch.tv/miss_alejandria
+* Chelsy - Beta Tester, New female textures.
 * OrangeSherbet - Beta Tester - http://www.twitch.tv/orangesherbet
 * QMGSaint - Beta Tester - http://www.twitch.tv/qmgsaint
 * Twitch.tv Streamers - http://www.twitch.tv/directory/game/DayZ
