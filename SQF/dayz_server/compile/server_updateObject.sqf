@@ -101,7 +101,8 @@ _object_damage = {
 _object_killed = {
 	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
 	_hitpoints = _object call vehicle_getHitpoints;
-	_damage = damage _object;
+	//_damage = damage _object;
+	_damage = 1;
 	_array = [];
 	{
 		_hit = [_object,_x] call object_getHit;
@@ -109,8 +110,7 @@ _object_killed = {
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 		_hit = 1;
 		_object setHit ["_selection", _hit]
-	} forEach _hitpoints;
-	_damage = 1;
+	} forEach _hitpoints
 	
 	if (_objectID == "0") then {
 		_key = format["CHILD:306:%1:%2:%3:",_uid,_array,_damage];
