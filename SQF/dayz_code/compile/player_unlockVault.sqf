@@ -3,29 +3,28 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_nul","_objType"];
 
 if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-_obj = _this;
-
-_playerNear = _obj call dze_isnearest_player;
-
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
-
-_unlockedClass = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "unlockedClass");
-_text = 		getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
-
-_alreadyPacking = _obj getVariable["packing",0];
-_claimedBy = _obj getVariable["claimed","0"];
-
 {player removeAction _x} forEach s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;
+
+_obj = _this;
+_objType = typeOf _obj;
+
+_playerNear = _obj call dze_isnearest_player;
+if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
 
 // Silently exit if object no longer exists or alive
 if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
 
+_unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
+_text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
+
+_alreadyPacking = _obj getVariable["packing",0];
+_claimedBy = _obj getVariable["claimed","0"];
 _ownerID = _obj getVariable["CharacterID","0"];
 
 if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
@@ -35,7 +34,6 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 
 	// Check if any players are nearby if not allow player to claim item.
 	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-
 	_playerID = getPlayerUID player;
 	
 	// Only allow if not already claimed.
@@ -57,15 +55,15 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 
 			_obj setVariable["packing",1];
 
-			_weapons = 		_obj getVariable["WeaponCargo",[]];
-			_magazines = 	_obj getVariable["MagazineCargo",[]];
-			_backpacks = 	_obj getVariable["BackpackCargo",[]];
-	
 			player playActionNow "Medic";
 			sleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			sleep 5;
 
+			_weapons = 		_obj getVariable["WeaponCargo",[]];
+			_magazines = 	_obj getVariable["MagazineCargo",[]];
+			_backpacks = 	_obj getVariable["BackpackCargo",[]];
+	
 			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
 			// Remove locked vault
 			deleteVehicle _obj;
@@ -121,7 +119,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	player playActionNow "Medic";
 	sleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;
-	null = [player,25,true,(getPosATL player)] spawn player_alertZombies;
+	_nul = [player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;
 	cutText [format[(localize "str_epoch_player_126"),_text], "PLAIN DOWN"];
 };
