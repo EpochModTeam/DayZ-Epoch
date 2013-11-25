@@ -5542,12 +5542,12 @@
 		<Key ID="STR_EPOCH_PLAYER_289">
 		  <Original>Trader Menu</Original>
 		  <English>Trader Menu</English>
-		  <German></German>
+		  <German>Trader Menu</German>
 		  <Russian>Меню торговца</Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <Spanish>Trader Menu</Spanish>
+		  <Dutch>Trader Menu</Dutch>
+		  <French>Trader Menu</French>
+		  <Czech>Trader Menu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_290">
 		  <Original>Categories</Original>
@@ -5658,6 +5658,46 @@
                  <Dutch>Craft Sandbag</Dutch>
                  <French>Craft Sandbag</French>
                  <Czech>Craft Sandbag</Czech>
+                </Key>
+               	<Key ID="STR_EPOCH_PLAYER_301">
+		  <Original>Trade Metals</Original>
+		  <English>Trade Metals</English>
+		  <German>Trade Metals</German>
+		  <Russian>Trade Metals</Russian>
+		  <Spanish>Trade Metals</Spanish>
+		  <Dutch>Trade Metals</Dutch>
+		  <French>Trade Metals</French>
+		  <Czech>Trade Metals</Czech>
+		</Key>
+                <Key ID="STR_EPOCH_PLAYER_REPAIR">
+                 <Original>Repair Vehicle</Original>
+                 <English>Repair Vehicle</English>
+                 <German>Repair Vehicle</German>
+                 <Russian>Починить транспорт</Russian>
+                 <Spanish>Repair Vehicle</Spanish>
+                 <Dutch>Repareer voertuig</Dutch>
+                 <French>Réparer le véhicule</French>
+                 <Czech>Repair Vehicle</Czech>
+                </Key>
+                <Key ID="STR_EPOCH_PLAYER_SALVAGE">
+                 <Original>Salvage Vehicle</Original>
+                 <English>Salvage Vehicle</English>
+                 <German>Salvage Vehicle</German>
+                 <Russian>Снять запчасти</Russian>
+                 <Spanish>Salvage Vehicle</Spanish>
+                 <Dutch>Demonteer voertuig</Dutch>
+                 <French>Récupérer des pièces</French>
+                 <Czech>Salvage Vehicle</Czech>
+                </Key>
+                <Key ID="STR_EPOCH_PLAYER_CARGO">
+                 <Original>Cargo Check</Original>
+                 <English>Cargo Check</English>
+                 <German>Cargo Check</German>
+                 <Russian>Проверить груз</Russian>
+                 <Spanish>Cargo Check</Spanish>
+                 <Dutch>Controleer Bagage</Dutch>
+                 <French>Vérifier la cargaison</French>
+                 <Czech>Cargo Check</Czech>
                 </Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
