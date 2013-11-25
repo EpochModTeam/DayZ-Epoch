@@ -925,7 +925,8 @@ class CfgLoot {
 			"m8_holo_sd",
 			"m8_carbine",
 			"BAF_L85A2_RIS_SUSAT",
-			"BAF_L85A2_RIS_Holo"
+			"BAF_L85A2_RIS_Holo",
+			"M4A1_HWS_GL_SD_Camo"
 		},
 		{
 			0.05,
@@ -957,6 +958,7 @@ class CfgLoot {
 			0.02,
 			0.05,
 			0.02,
+			0.01,
 			0.01
 		}
 	};
