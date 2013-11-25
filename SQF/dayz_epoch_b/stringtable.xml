@@ -5672,32 +5672,42 @@
                 <Key ID="STR_EPOCH_PLAYER_REPAIR">
                  <Original>Repair Vehicle</Original>
                  <English>Repair Vehicle</English>
-                 <German>Repair Vehicle</German>
+                 <German></German>
                  <Russian>Починить транспорт</Russian>
-                 <Spanish>Repair Vehicle</Spanish>
+                 <Spanish></Spanish>
                  <Dutch>Repareer voertuig</Dutch>
                  <French>Réparer le véhicule</French>
-                 <Czech>Repair Vehicle</Czech>
+                 <Czech></Czech>
                 </Key>
                 <Key ID="STR_EPOCH_PLAYER_SALVAGE">
                  <Original>Salvage Vehicle</Original>
                  <English>Salvage Vehicle</English>
-                 <German>Salvage Vehicle</German>
+                 <German></German>
                  <Russian>Снять запчасти</Russian>
-                 <Spanish>Salvage Vehicle</Spanish>
+                 <Spanish></Spanish>
                  <Dutch>Demonteer voertuig</Dutch>
                  <French>Récupérer des pièces</French>
-                 <Czech>Salvage Vehicle</Czech>
+                 <Czech></Czech>
                 </Key>
                 <Key ID="STR_EPOCH_PLAYER_CARGO">
                  <Original>Cargo Check</Original>
                  <English>Cargo Check</English>
-                 <German>Cargo Check</German>
+                 <German></German>
                  <Russian>Проверить груз</Russian>
-                 <Spanish>Cargo Check</Spanish>
+                 <Spanish></Spanish>
                  <Dutch>Controleer Bagage</Dutch>
                  <French>Vérifier la cargaison</French>
-                 <Czech>Cargo Check</Czech>
+                 <Czech></Czech>
+                </Key>
+                <Key ID="STR_EPOCH_PLAYER_CANCEL">
+                 <Original>Cancel</Original>
+                 <English>Cancel</English>
+                 <German></German>
+                 <Russian>Отмена</Russian>
+                 <Spanish></Spanish>
+                 <Dutch>Annuleren</Dutch>
+                 <French>Annuler</French>
+                 <Czech></Czech>
                 </Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
