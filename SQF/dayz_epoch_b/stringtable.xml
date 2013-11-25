@@ -5729,6 +5729,96 @@
                  <French>Annuler</French>
                  <Czech></Czech>
                 </Key>
+                <Key ID="STR_EPOCH_PLAYER_UPGRADEV">
+                 <Original>Upgrade Vehicle</Original>
+                 <English>Upgrade Vehicle</English>
+                 <German></German>
+                 <Russian>Улучшить транспорт</Russian>
+                 <Spanish></Spanish>
+                 <Dutch>Voertuig Verbeteren</Dutch>
+                 <French>Améliorer Véhicule</French>
+                 <Czech></Czech>
+                </Key>
+                <Key ID="STR_EPOCH_VEHUP_PERF">
+		  <Original>HowTo: Offroad Performance</Original>
+		  <English>HowTo: Offroad Performance</English>
+		  <German></German>
+		  <Russian>Как: Улучшить внедорожную эффективность</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Handleiding: Offroad Prestaties</Dutch>
+		  <French>Manuel: Performances tout-terrain</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_PERF_DESC">
+		  <Original>Offroad performace manual.</Original>
+		  <English>Offroad performace manual.</English>
+		  <German></German>
+		  <Russian>Руководство по улучшению внедорожной эффективности.</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Handleiding over offroad prestaties.</Dutch>
+		  <French>Manuel sur les performances tout-terrain.</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_MAINT">
+		  <Original>HowTo: Vehicle Maintenance</Original>
+		  <English>HowTo: Vehicle Maintenance</English>
+		  <German></German>
+		  <Russian>Как: Улучшить обслуживание автомобиля</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Handleiding: Voertuigonderhoud</Dutch>
+		  <French>Manuel: Maintenance du véhicule</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_MAINT_DESC">
+		  <Original>Vehicle maintenance and engineering manual.</Original>
+		  <English>Vehicle maintenance and engineering manual.</English>
+		  <German></German>
+		  <Russian>Руководство по тех. обслуживанию транспортных средств и техники.</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Werkplaatshandboek voor voertuigonderhoud en verbetering.</Dutch>
+		  <French>Manuel de mécanique et d'entretien du véhicule.</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_RACK">
+		  <Original>HowTo: Luggage Rack</Original>
+		  <English>HowTo: Luggage Rack</English>
+		  <German></German>
+		  <Russian>Как: Установить багажник на крыше</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Handleiding: Bagagerek</Dutch>
+		  <French>Manuel: Galerie</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_RACK_DESC">
+		  <Original>Luggage Rack install guide.</Original>
+		  <English>Luggage Rack install guide.</English>
+		  <German></German>
+		  <Russian>Руководство по установке багажника на крыше.</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Installatiehandleiding voor het bagagerek.</Dutch>
+		  <French>Guide d'installation d'une galerie pour augmenter le stockage du véhicule.</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_FUEL">
+		  <Original>HowTo: Fuel Tank</Original>
+		  <English>HowTo: Fuel Tank</English>
+		  <German></German>
+		  <Russian>Как: Установить топливный бак</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Handleiding: Benzinetank</Dutch>
+		  <French>Manuel: Réservoir</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_FUEL_DESC">
+		  <Original>Fuel Tank install guide.</Original>
+		  <English>Fuel Tank install guide.</English>
+		  <German></German>
+		  <Russian>Руководство по установке топливного бака.</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Installatiehandleiding voor de benzinetank.</Dutch>
+		  <French>Guide d'installation du réservoir.</French>
+		  <Czech></Czech>
+		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
 		  <English>1.04</English>
