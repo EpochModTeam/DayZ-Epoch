@@ -3,6 +3,11 @@ private ["_activatingPlayer"];
 // [ _trader_id, _category, _action ];
 _activatingPlayer = player;
 
+// attempt to remove newspaper if called without args
+if (count _this == 0) then {
+	player removeMagazine "ItemNewspaper";
+};
+
 //diag_log format["DEBUG DEATH OBJ: %1", _this select 0];
 
 //["PVDZE_plr_DeathB",[_activatingPlayer]] call callRpcProcedure;
