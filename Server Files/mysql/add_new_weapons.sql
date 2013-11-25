@@ -41,8 +41,4 @@ INSERT INTO `Traders_DATA` VALUES(NULL, '["M4A1_HWS_GL_SD_Camo",3]', 10, '[2,"It
 -- -------------------------------------------------------------------------------------------------------------
 -- Fixing SVD ammo sell prices to match 1/2 purchase price
 -- -------------------------------------------------------------------------------------------------------------
-UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar10oz",1]' WHERE id=5032;
-UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar10oz",1]' WHERE id=5355;
-UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar10oz",1]' WHERE id=6240;
-UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar10oz",1]' WHERE id=6314;
-UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar10oz",1]' WHERE id=6528;
+UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar10oz",1]' WHERE `item`='["10Rnd_762x54_SVD",1]';
