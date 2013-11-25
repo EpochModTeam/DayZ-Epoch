@@ -1031,7 +1031,7 @@ class FSM
        "selectNoPlayer;" \n
        "_myTime = diag_tickTime;" \n
        "" \n
-       "dayz_loadScreenMsg = ""You are running an incorrect version of DAYZ_CODE, please download this file from dayzepoch.com."";" \n
+       "dayz_loadScreenMsg = ""You are running an incorrect version, please download update from dayzepoch.com."";" \n
        "" \n
        "1 cutText [format[localize ""str_player_18"",dayz_versionNo,_version], ""PLAIN""];" \n
        "" \n

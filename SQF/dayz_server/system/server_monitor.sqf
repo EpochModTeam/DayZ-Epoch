@@ -299,7 +299,7 @@ if (isServer and isNil "sm_done") then {
 	//  spawn_roadblocks
 	diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
 	for "_x" from 1 to MaxDynamicDebris do {
-		[] call spawn_roadblocks;
+		[] spawn spawn_roadblocks;
 	};
 	//  spawn_ammosupply at server start 1% of roadblocks
 	diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));

@@ -235,20 +235,15 @@ _playerObj setVariable["lastPos",getPosATL _playerObj];
 
 dayzPlayerLogin2 = [_worldspace,_state,_randomSpot];
 
-// PVDZE_plr_SetWeather,PVDZE_plr_SetDate
-
-PVDZE_obj_Debris = DZE_LocalRoadBlocks;
+// PVDZE_obj_Debris = DZE_LocalRoadBlocks;
 _clientID = owner _playerObj;
 if (!isNull _playerObj) then {
 	_clientID publicVariableClient "dayzPlayerLogin2";
 	
 	// send road blocks
-	_clientID publicVariableClient "PVDZE_obj_Debris";
+	// _clientID publicVariableClient "PVDZE_obj_Debris";
 
 	_clientID publicVariableClient "PVDZE_plr_SetDate";
-	
-	_clientID publicVariableClient "PVDZE_plr_SetWeather";
-	
 };
 //record time started
 _playerObj setVariable ["lastTime",time];

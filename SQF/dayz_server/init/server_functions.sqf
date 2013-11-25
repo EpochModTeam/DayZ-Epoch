@@ -414,18 +414,18 @@ spawn_roadblocks = {
 			};
 			
 			// fill array with classes and positions [class,pos,dir]
-			DZE_LocalRoadBlocks set [count DZE_LocalRoadBlocks,[_spawnveh,_position,round(random 360)]];
+			// DZE_LocalRoadBlocks set [count DZE_LocalRoadBlocks,[_spawnveh,_position,round(random 360)]];
 			
 			//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
 			
-			//_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
-			//_veh enableSimulation false;
+			_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+			_veh enableSimulation false;
 
 			// Randomize placement a bit
-			//_veh setDir round(random 360);
-			//_veh setpos _position;
+			_veh setDir round(random 360);
+			_veh setpos _position;
 
-			//_veh setVariable ["ObjectID","1",true];
+			_veh setVariable ["ObjectID","1",true];
 		};
 	
 	};
@@ -503,9 +503,9 @@ if(isnil "DZE_DiagVerbose") then {
 
 dze_diag_fps = {
 	if(DZE_DiagVerbose) then {
-		diag_log format["DEBUG FPS : %1 OBJECTS: %2 : PLAYERS: %3", DZE_diag_fps,(count (allMissionObjects "")),(playersNumber west)];
+		diag_log format["DEBUG FPS : %1 OBJECTS: %2 : PLAYERS: %3", diag_fps,(count (allMissionObjects "")),(playersNumber west)];
 	} else {
-		diag_log format["DEBUG FPS : %1", DZE_diag_fps];
+		diag_log format["DEBUG FPS : %1", diag_fps];
 	};
 };
 
