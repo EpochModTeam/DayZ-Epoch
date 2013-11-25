@@ -110,7 +110,7 @@ _object_killed = {
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 		_hit = 1;
 		_object setHit ["_selection", _hit]
-	} forEach _hitpoints
+	} forEach _hitpoints;
 	
 	if (_objectID == "0") then {
 		_key = format["CHILD:306:%1:%2:%3:",_uid,_array,_damage];
