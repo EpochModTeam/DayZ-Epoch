@@ -308,7 +308,7 @@ if (_hasrequireditem) then {
 
 			_object setPosATL _position;
 			
-			diag_log format["DEBUG Change BUILDING POS: %1", _position];
+			//diag_log format["DEBUG Change BUILDING POS: %1", _position];
 			
 			_object attachTo [player];
 			
@@ -323,7 +323,7 @@ if (_hasrequireditem) then {
 			detach _object;
 			_dir = getDir _object;
 			_position = getPosATL _object;
-			diag_log format["DEBUG BUILDING POS: %1", _position];
+			//diag_log format["DEBUG BUILDING POS: %1", _position];
 			deleteVehicle _object;
 		};
 		
