@@ -5739,7 +5739,7 @@
                  <French>Améliorer Véhicule</French>
                  <Czech></Czech>
                 </Key>
-                <Key ID="STR_EPOCH_VEHUP_PERF">
+                <Key ID="STR_EPOCH_VEHUP_ORP">
 		  <Original>HowTo: Offroad Performance</Original>
 		  <English>HowTo: Offroad Performance</English>
 		  <German></German>
@@ -5749,7 +5749,7 @@
 		  <French>Manuel: Performances tout-terrain</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_VEHUP_PERF_DESC">
+		<Key ID="STR_EPOCH_VEHUP_ORP_DESC">
 		  <Original>Offroad performace manual.</Original>
 		  <English>Offroad performace manual.</English>
 		  <German></German>
@@ -5759,7 +5759,7 @@
 		  <French>Manuel sur les performances tout-terrain.</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_VEHUP_MAINT">
+		<Key ID="STR_EPOCH_VEHUP_AVE">
 		  <Original>HowTo: Vehicle Maintenance</Original>
 		  <English>HowTo: Vehicle Maintenance</English>
 		  <German></German>
@@ -5769,7 +5769,7 @@
 		  <French>Manuel: Maintenance du véhicule</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_VEHUP_MAINT_DESC">
+		<Key ID="STR_EPOCH_VEHUP_AVE_DESC">
 		  <Original>Vehicle maintenance and engineering manual.</Original>
 		  <English>Vehicle maintenance and engineering manual.</English>
 		  <German></German>
@@ -5779,7 +5779,7 @@
 		  <French>Manuel de mécanique et d'entretien du véhicule.</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_VEHUP_RACK">
+		<Key ID="STR_EPOCH_VEHUP_LRK">
 		  <Original>HowTo: Luggage Rack</Original>
 		  <English>HowTo: Luggage Rack</English>
 		  <German></German>
@@ -5789,7 +5789,7 @@
 		  <French>Manuel: Galerie</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_VEHUP_RACK_DESC">
+		<Key ID="STR_EPOCH_VEHUP_LRK_DESC">
 		  <Original>Luggage Rack install guide.</Original>
 		  <English>Luggage Rack install guide.</English>
 		  <German></German>
@@ -5799,7 +5799,7 @@
 		  <French>Guide d'installation d'une galerie pour augmenter le stockage du véhicule.</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_VEHUP_FUEL">
+		<Key ID="STR_EPOCH_VEHUP_TNK">
 		  <Original>HowTo: Fuel Tank</Original>
 		  <English>HowTo: Fuel Tank</English>
 		  <German></German>
@@ -5809,7 +5809,7 @@
 		  <French>Manuel: Réservoir</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_VEHUP_FUEL_DESC">
+		<Key ID="STR_EPOCH_VEHUP_TNK_DESC">
 		  <Original>Fuel Tank install guide.</Original>
 		  <English>Fuel Tank install guide.</English>
 		  <German></German>
