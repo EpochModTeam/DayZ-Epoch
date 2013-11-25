@@ -5,6 +5,12 @@
 */
 private ["_display","_obj","_objectCharacterID"];
 
+if(!isNil "DZE_DYN_UnlockDoorInprogress") exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
+
+DZE_DYN_UnlockDoorInprogress = true;
+
+[1,1] call dayz_HungerThirst;
+
 if(!isNull dayz_selectedDoor) then {
 
 	if (!isNil 'KeyCodeTryTimer') then {
@@ -75,3 +81,4 @@ if(!isNull dayz_selectedDoor) then {
 	_display = findDisplay 41144;
 	_display closeDisplay 3000;
 };
+DZE_DYN_UnlockDoorInprogress = nil;

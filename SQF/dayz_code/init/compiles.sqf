@@ -498,6 +498,11 @@ if (!isDedicated) then {
 	spawn_loot_small =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot_small.sqf";
 	// player_projectileNear = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
 	
+	dayz_HungerThirst = {
+		dayz_hunger = dayz_hunger + (_this select 0);
+		dayz_thirst = dayz_thirst + (_this select 1);
+	};
+
 	player_sumMedical = {
 		private["_character","_wounds","_legs","_arms","_medical"];
 		_character = 	_this;
