@@ -58,8 +58,8 @@ link28[] = {21,22};
 link29[] = {22,5};
 link30[] = {23,24};
 link31[] = {24,5};
-globals[] = {25.000000,1,0,0,0,640,480,1,42,6316128,1,-508.946564,440.498199,435.888916,-341.331024,861,630,1};
-window[] = {2,-1,-1,-32000,-32000,890,78,1370,78,3,879};
+globals[] = {25.000000,1,0,0,0,640,480,1,42,6316128,1,-508.946564,440.498199,435.888916,-341.331024,861,880,1};
+window[] = {2,-1,-1,-1,-1,1046,234,1526,234,3,879};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -341,16 +341,14 @@ class FSM
     class cleanup_loot
     {
       name = "cleanup_loot";
-      init = /*%FSM<STATEINIT""">*/"DZE_diag_fps = diag_fps;" \n
-       "" \n
-       "if (DZE_DiagFpsFast) then {" \n
+      init = /*%FSM<STATEINIT""">*/"if (DZE_DiagFpsFast) then {" \n
        "	call dze_diag_fps;" \n
        "};" \n
        "" \n
        "[] spawn server_spawnCleanLoot;" \n
        "" \n
        "// set player save time based on server performance" \n
-       "PVDZE_plr_SetSaveTime = round(60 - DZE_diag_fps);" \n
+       "PVDZE_plr_SetSaveTime = round(60 - diag_fps);" \n
        "publicVariable ""PVDZE_plr_SetSaveTime"";"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
