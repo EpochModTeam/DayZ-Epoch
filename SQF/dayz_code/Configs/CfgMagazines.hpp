@@ -3908,11 +3908,20 @@ class CfgMagazines {
 				output[] = {{"sandbag_nest_kit",1}};
 				input[] = {{"ItemSandbag",4},{"PartWoodPlywood",2},{"PartWoodLumber",4}};
 			};
-			/*
 			class Crafting2
 			{
-				text = "Craft M240 Nest";
+				text = $STR_EPOCH_PLAYER_298;
 				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"BagFenceRound_DZ_kit",1}};
+				input[] = {{"ItemSandbag",1}};
+			};
+			/*
+			class Crafting3
+			{
+				text = "Craft M240 Nest";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
@@ -3921,6 +3930,34 @@ class CfgMagazines {
 			};
 			*/
 			
+		};
+	};
+
+	class BagFenceRound_DZ_kit : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = $STR_EQUIP_NAME_21;
+		model = "\dayz_equip\models\sandbags.p3d";
+		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
+		descriptionShort = $STR_EQUIP_DESC_21;
+		
+		class ItemActions {
+			class Build {
+				text = $STR_EPOCH_PLAYER_299;
+				script = "spawn player_build;";
+				require[] = {"ItemEtool"};
+				create = "BagFenceRound_DZ";
+			};
+			class Crafting
+			{
+				text = $STR_EPOCH_PLAYER_300;
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemEtool","ItemToolbox"};
+				output[] = {{"ItemSandbag",1}};
+				input[] = {{"BagFenceRound_DZ_kit",1}};
+			};	
 		};
 	};
 
@@ -4013,6 +4050,34 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemEtool"};
 				create = "Land_HBarrier3_DZ";
+			};
+			class Crafting
+                        {
+                                text = "Craft Quintuple H-barrier";
+                                script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+                                neednearby[] = {};
+                                requiretools[] = {"ItemEtool","ItemToolbox"};
+                                output[] = {{"ItemSandbagExLarge5x",1}};
+                                input[] = {{"ItemSandbagExLarge",1},{"ItemSandbagLarge",2}};
+                        };
+		};
+	};
+	
+	class ItemSandbagExLarge5w : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "5 x H-barrier cube";
+		model = "\dayz_equip\models\sandbags.p3d"; // TODO model
+		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
+		descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
+		weight = 200;
+		class ItemActions {
+			class Build {
+				text = "Build Quintuple H-barrier";
+				script = "spawn player_build;";
+				require[] = {"ItemEtool"};
+				create = "Land_HBarrier5_DZ";
 			};
 		};
 	};
