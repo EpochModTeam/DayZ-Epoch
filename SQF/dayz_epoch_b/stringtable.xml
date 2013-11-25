@@ -4950,14 +4950,14 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_230">
-		  <Original>Craft Lg Camo Net</Original>
-		  <English>Craft Lg Camo Net</English>
-		  <German></German>
-		  <Russian>Создать: Lg Camo Net</Russian>
-		  <Spanish></Spanish>
-		  <Dutch>Creëer groot camouflagenet</Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <Original>Place Safe</Original>
+		  <English>Place Safe</English>
+		  <German>Place Safe</German>
+		  <Russian>Place Safe</Russian>
+		  <Spanish>Place Safe</Spanish>
+		  <Dutch>Place Safe</Dutch>
+		  <French>Place Safe</French>
+		  <Czech>Place Safe</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_231">
 		  <Original>Place Lockbox</Original>
