@@ -347,7 +347,7 @@ class FSM
        "	call dze_diag_fps;" \n
        "};" \n
        "" \n
-       "spawn server_spawnCleanLoot;" \n
+       "[] spawn server_spawnCleanLoot;" \n
        "" \n
        "// set player save time based on server performance" \n
        "PVDZE_plr_SetSaveTime = round(60 - DZE_diag_fps);" \n
