@@ -648,6 +648,12 @@ if(!isDedicated) then {
 		DZE_HaloJump = true;
 	};
 	
+	if(isNil "DZE_AntiWallLimit") then {
+		DZE_AntiWallLimit = 1;
+	};
+	
+	DZE_AntiWallCounter = 0;
+
 	DZE_FreshSpawn = false;
 	
 	DZE_myHaloVehicle = objNull;
