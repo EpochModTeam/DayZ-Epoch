@@ -3224,7 +3224,7 @@ class CfgVehicles {
 		transportMaxMagazines = 0;
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
-		offset[] = {0,1.5,0.5};
+		offset[] = {0,1.5,0};
 		lockable = 4;
 		unlockedClass = "VaultStorage";
 		requireplot = 0;
