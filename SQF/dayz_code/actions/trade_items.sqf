@@ -95,9 +95,9 @@ for "_x" from 1 to _total_trades do {
 		_qty = {_x == _part_in} count magazines player;
 		if (_qty >= _qty_in) then {
 	
-			_part_in =  configFile >> "CfgMagazines" >> _part_in;
+			_part_inClass =  configFile >> "CfgMagazines" >> _part_in;
 
-			_removed = _removed + ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
+			_removed = _removed + ([player,_part_inClass,_qty_in] call BIS_fnc_invRemove);
 			if (_removed == _qty_in) then {
 			
 				// Continue with trade.
