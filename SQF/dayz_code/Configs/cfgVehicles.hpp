@@ -1751,12 +1751,12 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructNo";
 		cost = 100;
-		model = "\ca\misc2\BagFenceRound.p3d";
+		model = "\Ca\misc3\fort_bagfence_round";
 		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
 		offset[] = {0,1.5,0.5};
-		mapSize = 2;
+		mapSize = 3.2;
 		armor = 400;
-		displayName = "Round Bag Fence";
+		displayName = "Big bag fence (Round)";
 		vehicleClass = "Fortifications";
 		constructioncount = 3;
 		removeoutput[] = {{"ItemSandbag",1}};
@@ -1819,9 +1819,9 @@ class CfgVehicles {
 	class Land_HBarrier5_DZ:BuiltItems {
 		model = "\ca\misc2\HBarrier5.p3d"; 
 		icon = "\Ca\misc2\data\Icons\icon_hescoBarrier5_ca.paa"; 
-		mapSize = 3.5; 
+		mapSize = 7; 
 		displayName = "H-barrier (long)"; 
-		GhostPreview = "Land_HBarrier5ePreview"; 
+		GhostPreview = "Land_HBarrier5Preview"; 
 		scope = 2; 
 		animated = 0; 
 		vehicleClass = "Fortifications"; 
