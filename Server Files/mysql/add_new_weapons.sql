@@ -17,7 +17,7 @@ INSERT INTO `trader_items` VALUES(NULL, 'M249_m145_EP1_DZE', 3, 'Machine Gun', '
 INSERT INTO `trader_items` VALUES(NULL, 'MG36_camo', 3, 'Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(NULL, '100Rnd_556x45_BetaCMag', 1, 'Ammo - Light Machine Gun', 'trade_items');
 INSERT INTO `trader_items` VALUES(NULL, '75Rnd_545x39_RPK', 1, 'Ammo - Light Machine Gun', 'trade_items');
-INSERT INTO `trader_items` VALUES(NULL, 'M4A1_HWS_GL_SD_Camo', 1, 'Rifle', 'trade_items');
+INSERT INTO `trader_items` VALUES(NULL, 'M4A1_HWS_GL_SD_Camo', 3, 'Rifle', 'trade_items');
 
 -- -------------------------------------------------------------------------------------------------------------
 -- This needs flushed out more, as most is on black market (bizon, saiga should be on other vendors?)
