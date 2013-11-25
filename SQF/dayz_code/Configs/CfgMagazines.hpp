@@ -200,17 +200,17 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "HowTo: Offroad Performance"; // TODO: localize
+		displayName = $STR_EPOCH_VEHUP_ORP;
 		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
-		descriptionShort = "Offroad performace manual."; // TODO: localize
+		descriptionShort = $STR_EPOCH_VEHUP_ORP_DESC;
 		weight = 0.1;
 		sfx = "document";
 		class ItemActions
 		{
 			class Upgrades
 			{
-				text = "Upgrade Vehicle"; // TODO: localize
+				text = $STR_EPOCH_PLAYER_UPGRADEV;
 				script = "spawn player_upgradeVehicle;";
 			};
 		};
@@ -222,17 +222,17 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "HowTo: Vehicle Maintenance"; // TODO: localize
+		displayName = $STR_EPOCH_VEHUP_AVE;
 		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
-		descriptionShort = "Vehicle maintenance and engineering manual."; // TODO: localize
+		descriptionShort = STR_EPOCH_VEHUP_AVE_DESC;
 		weight = 0.1;
 		sfx = "document";
 		class ItemActions
 		{
 			class Upgrades
 			{
-				text = "Upgrade Vehicle"; // TODO: localize
+				text = $STR_EPOCH_PLAYER_UPGRADEV;
 				script = "spawn player_upgradeVehicle;";
 			};
 		};
@@ -244,17 +244,17 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "HowTo: Luggage Rack"; // TODO: localize
+		displayName = $STR_EPOCH_VEHUP_LRK;
 		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
-		descriptionShort = "Luggage Rack install guide."; // TODO: localize
+		descriptionShort = $STR_EPOCH_VEHUP_LRK_DESC;
 		weight = 0.1;
 		sfx = "document";
 		class ItemActions
 		{
 			class Upgrades
 			{
-				text = "Upgrade Vehicle"; // TODO: localize
+				text = $STR_EPOCH_PLAYER_UPGRADEV;
 				script = "spawn player_upgradeVehicle;";
 			};
 		};
@@ -266,17 +266,17 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "HowTo: Fuel Tank"; // TODO: localize
+		displayName = $STR_EPOCH_VEHUP_TNK;
 		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
-		descriptionShort = "Fuel Tank install guide."; // TODO: localize
+		descriptionShort = $STR_EPOCH_VEHUP_TNK_DESC;
 		weight = 0.1;
 		sfx = "document";
 		class ItemActions
 		{
 			class Upgrades
 			{
-				text = "Upgrade Vehicle"; // TODO: localize
+				text = $STR_EPOCH_PLAYER_UPGRADEV;
 				script = "spawn player_upgradeVehicle;";
 			};
 		};
