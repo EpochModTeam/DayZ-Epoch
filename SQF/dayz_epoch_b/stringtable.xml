@@ -5629,6 +5629,36 @@
 		  <French>Lancer la Ligne</French>
 		  <Czech>Cast Fishing Pole</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_298">
+                 <Original>Craft Round Sandbag Fence</Original>
+                 <English>Craft Round Sandbag Fence</English>
+                 <German>Craft Round Sandbag Fence</German>
+                 <Russian>Craft Round Sandbag Fence</Russian>
+                 <Spanish>Craft Round Sandbag Fence</Spanish>
+                 <Dutch>Craft Round Sandbag Fence</Dutch>
+                 <French>Craft Round Sandbag Fence</French>
+                 <Czech>Craft Round Sandbag Fence</Czech>
+                </Key>
+                <Key ID="STR_EPOCH_PLAYER_299">
+                 <Original>Build Round Sandbag Fence</Original>
+                 <English>Build Round Sandbag Fence</English>
+                 <German>Build Round Sandbag Fence</German>
+                 <Russian>Создать: Мешок с песком</Russian>
+                 <Spanish>Build Round Sandbag Fence</Spanish>
+                 <Dutch>Build Round Sandbag Fence</Dutch>
+                 <French>Build Round Sandbag Fence</French>
+                 <Czech>Build Round Sandbag Fence</Czech>
+                </Key>
+                <Key ID="STR_EPOCH_PLAYER_300">
+                 <Original>Craft Sandbag</Original>
+                 <English>Craft Sandbag</English>
+                 <German>Craft Sandbag</German>
+                 <Russian>Craft Sandbag</Russian>
+                 <Spanish>Craft Sandbag</Spanish>
+                 <Dutch>Craft Sandbag</Dutch>
+                 <French>Craft Sandbag</French>
+                 <Czech>Craft Sandbag</Czech>
+                </Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
 		  <English>1.04</English>
