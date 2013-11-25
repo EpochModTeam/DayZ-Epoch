@@ -288,13 +288,15 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "A Plot Deed"; // TODO: localize
+		displayName = "Plot Deed"; // TODO: localize
 		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
 		descriptionShort = "Deed to a plot of land, similar to a plot pole."; // TODO: localize
 		weight = 0.1;
 		sfx = "document";
-		class Crafting
+		class ItemActions
+		{
+			class Crafting
 			{
 				text = "Craft Plot Pole";
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -303,6 +305,7 @@ class CfgMagazines {
 				output[] = {{"30m_plot_kit",1}};
 				input[] = {{"ItemPlotDeed",1},{"ItemGoldBar10oz",2}};
 			};
+		};
 
 	};
 	
