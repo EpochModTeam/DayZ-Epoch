@@ -823,6 +823,24 @@
 		</Key>
 	</Package>
 	<Package name="ui">
+    <Key ID="STR_UI_CONTINUE">
+      <English>Continue</English>
+      <German>Continue</German>
+      <Russian>Далее</Russian>
+      <Spanish>Continuar</Spanish>
+      <Dutch>Continue</Dutch>
+      <French>Continuer</French>
+      <Czech>Pokračovat</Czech>
+    </Key>
+    <Key ID="STR_UI_END">
+      <English>End</English>
+      <German>End</German>
+      <Russian>Конец</Russian>
+      <Spanish>Fin</Spanish>
+      <Dutch>End</Dutch>
+      <French>Fin</French>
+      <Czech>Konec</Czech>
+    </Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<Original>SELECT YOUR GENDER</Original>
 			<English>SELECT YOUR GENDER</English>
