@@ -1745,7 +1745,24 @@ class CfgVehicles {
 		removeoutput[] = {{"ItemSandbag",1}};
 		nounderground = 0;
 	};
-
+	//review some of these settings
+	class BagFenceRound_DZ: BuiltItems
+	{
+		scope = 2;
+		destrType = "DestructNo";
+		cost = 100;
+		model = "\ca\misc2\BagFenceRound.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
+		offset[] = {0,1.5,0.5};
+		mapSize = 2;
+		armor = 400;
+		displayName = "Round Bag Fence";
+		vehicleClass = "Fortifications";
+		constructioncount = 3;
+		removeoutput[] = {{"ItemSandbag",1}};
+		nounderground = 0;
+	};
+	
 	class Land_HBarrier1_DZ : BuiltItems { 
 		scope = 2; 
 		animated = 0; 
@@ -1798,7 +1815,34 @@ class CfgVehicles {
 		removeoutput[] = {{"ItemSandbagExLarge",1}};
 		nounderground = 0;
 	};
-		
+	
+	class Land_HBarrier5_DZ:BuiltItems {
+		model = "\ca\misc2\HBarrier5.p3d"; 
+		icon = "\Ca\misc2\data\Icons\icon_hescoBarrier5_ca.paa"; 
+		mapSize = 3.5; 
+		displayName = "H-barrier (long)"; 
+		GhostPreview = "Land_HBarrier5ePreview"; 
+		scope = 2; 
+		animated = 0; 
+		vehicleClass = "Fortifications"; 
+		typicalCargo[] = {}; 
+		irTarget = 0; 
+		accuracy = 0.3; 
+		transportAmmo = 0; 			
+		transportRepair = 0; 
+		transportFuel = 0; 
+		destrType = "DestructBuilding"; 
+		armor = 500; 
+		coefInside = 0.5; 
+		coefInsideHeur = 0.8; 
+		cost = 0; 
+		picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
+		offset[] = {0,2.5,0};
+		constructioncount = 8;
+		removeoutput[] = {{"ItemSandbagExLarge",3}};
+		nounderground = 0;
+        };
+        
 	class SandNest_DZ : BuiltItems { 
 		scope = 2; 
 		model = "\ca\Misc_E\fortified_nest_small_ep1"; 
