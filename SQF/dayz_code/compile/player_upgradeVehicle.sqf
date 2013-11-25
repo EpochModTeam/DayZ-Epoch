@@ -156,14 +156,14 @@ if (_IsNearVehicle >= 1) then {
 				_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
 				cutText [format[(localize "str_epoch_player_146"),_missingQty, _textMissing], "PLAIN DOWN"];
 			};
-
 		} else {
 			cutText [(localize "str_epoch_player_82"), "PLAIN DOWN"];
 		};
-
 	} else {
 		cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
 	};
+} else {
+	cutText [(localize "STR_EPOCH_PLAYER_27"), "PLAIN DOWN"];
 };
 
 TradeInprogress = false;
