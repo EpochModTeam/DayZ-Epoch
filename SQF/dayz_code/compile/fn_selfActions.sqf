@@ -286,7 +286,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	If(DZE_AllowCargoCheck) then {
 		if((_isVehicle or _isTent or _isnewstorage) and _isAlive and !_isMan and !locked _cursorTarget) then {
 			if (s_player_checkGear < 0) then {
-				s_player_checkGear = player addAction ["Cargo Check", "\z\addons\dayz_code\actions\cargocheck.sqf",_cursorTarget, 1, true, true, "", ""];
+				s_player_checkGear = player addAction [localize "STR_EPOCH_PLAYER_CARGO", "\z\addons\dayz_code\actions\cargocheck.sqf",_cursorTarget, 1, true, true, "", ""];
 			};
 		} else {
 			player removeAction s_player_checkGear;
@@ -650,8 +650,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	if ((dayz_myCursorTarget != _cursorTarget) and _isVehicle and !_isMan and _hasToolbox and (damage _cursorTarget < 1) and !_isDisallowRepair) then {
 		if (s_player_repair_crtl < 0) then {
 			dayz_myCursorTarget = _cursorTarget;
-			_menu = dayz_myCursorTarget addAction ["Repair Vehicle", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_cursorTarget, 0, true, false, "",""];
-			_menu1 = dayz_myCursorTarget addAction ["Salvage Vehicle", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_cursorTarget, 0, true, false, "",""];
+			_menu = dayz_myCursorTarget addAction [localize "STR_EPOCH_PLAYER_REPAIRV", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_cursorTarget, 0, true, false, "",""];
+			_menu1 = dayz_myCursorTarget addAction [localize "STR_EPOCH_PLAYER_SALVAGEV", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_cursorTarget, 0, true, false, "",""];
 			s_player_repairActions set [count s_player_repairActions,_menu];
 			s_player_repairActions set [count s_player_repairActions,_menu1];
 			s_player_repair_crtl = 1;
@@ -697,11 +697,11 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 				
 				} forEach (_traderMenu select 1);
 				// Database menu 
-				_buy = player addAction ["Trader Menu", "\z\addons\dayz_code\actions\show_dialog.sqf",(_traderMenu select 0), 99, true, false, "",""];
+				_buy = player addAction [localize "STR_EPOCH_PLAYER_289", "\z\addons\dayz_code\actions\show_dialog.sqf",(_traderMenu select 0), 99, true, false, "",""];
 				s_player_parts set [count s_player_parts,_buy];
 				
 				// Add static metals trader options under sub menu
-				_metals_trader = player addAction ["Trade Metals", "\z\addons\dayz_code\actions\trade_metals.sqf",["na"], 0, true, false, "",""];
+				_metals_trader = player addAction [localize "STR_EPOCH_PLAYER_301", "\z\addons\dayz_code\actions\trade_metals.sqf",["na"], 0, true, false, "",""];
 				s_player_parts set [count s_player_parts,_metals_trader];
 
 			};
