@@ -376,7 +376,8 @@ class CfgMagazines {
 			class Obituaries
 			{
 				text = "Read Obituaries"; // TODO: localize
-				script = ";player removeMagazine _id;spawn player_deathBoard;";
+				script = "spawn player_deathBoard;";
+
 			};
 		};
 	};
