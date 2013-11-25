@@ -14,7 +14,13 @@ if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (diag_tickTim
 
 // surrender 
 if (_dikCode in actionKeys "Surrender") then {
-	if (!DZE_Surrender and !(player isKindOf  "PZombie_VB")) then {
+	
+	_vehicle = vehicle player;
+	_inVehicle = (_vehicle != player);
+	_onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+	_canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder and !_inVehicle);
+	
+	if (_canDo and !DZE_Surrender and !(player isKindOf  "PZombie_VB")) then {
 		DZE_Surrender = true;
 		_dropPrimary = false;
 		_dropSecondary = false;
