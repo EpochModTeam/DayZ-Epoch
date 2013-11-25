@@ -37,6 +37,9 @@ _claimedBy = _holder getVariable["claimed","0"];
 
 if (_claimedBy != _playerID) exitWith {sleep 1; DZE_CanPickup = true; cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]};
 
+// test to see if item still exists just before adding and removing
+if(isNull _holder) exitWith { sleep 1; DZE_CanPickup = true; };
+
 if(_classname isKindOf "Bag_Base_EP1") then {
 	
 	_PlayerNear = _holder call dze_isnearest_player;
@@ -45,9 +48,6 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
 	player action ["TakeBag", _holder];
 };
-
-// test to see if item still exists just before adding and removing
-if(isNull _holder) exitWith { sleep 1; DZE_CanPickup = true; };
 
 _obj = nearestObjects [(getPosATL player), [(typeOf _holder)], 5];
 _qty = count _obj;
