@@ -5669,7 +5669,7 @@
 		  <French>Trade Metals</French>
 		  <Czech>Trade Metals</Czech>
 		</Key>
-                <Key ID="STR_EPOCH_PLAYER_REPAIR">
+                <Key ID="STR_EPOCH_PLAYER_REPAIRV">
                  <Original>Repair Vehicle</Original>
                  <English>Repair Vehicle</English>
                  <German></German>
@@ -5679,7 +5679,27 @@
                  <French>Réparer le véhicule</French>
                  <Czech></Czech>
                 </Key>
-                <Key ID="STR_EPOCH_PLAYER_SALVAGE">
+                <Key ID="STR_EPOCH_PLAYER_REPAIR">
+                 <Original>Repair</Original>
+                 <English>Repair</English>
+                 <German></German>
+                 <Russian>Починить</Russian>
+                 <Spanish></Spanish>
+                 <Dutch>Repareer</Dutch>
+                 <French>Réparer</French>
+                 <Czech></Czech>
+                </Key>
+                <Key ID="STR_EPOCH_PLAYER_REMOVE">
+                 <Original>Remove</Original>
+                 <English>Remove</English>
+                 <German></German>
+                 <Russian>Снять</Russian>
+                 <Spanish></Spanish>
+                 <Dutch>Demonteer</Dutch>
+                 <French>Retirer</French>
+                 <Czech></Czech>
+                </Key>
+                <Key ID="STR_EPOCH_PLAYER_SALVAGEV">
                  <Original>Salvage Vehicle</Original>
                  <English>Salvage Vehicle</English>
                  <German></German>
