@@ -1,4 +1,3 @@
-
 **DayZ Epoch**
 ================
 
@@ -32,7 +31,7 @@ Developers
 * Axle - Beta Tester, Lead Trader City Designer, Ideas. - http://www.twitch.tv/axles
 * Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
 * Axeman - Developer - Light system - axeman@thefreezer.co.uk
-* dayz10k - Developer - https://github.com/dayz10k
+* Harlan (dayz10k) - Developer - https://github.com/dayz10k
 * Skaronator - Developer - Help with many things https://github.com/Skaronator
 * [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 * Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.  https://github.com/Zabn
