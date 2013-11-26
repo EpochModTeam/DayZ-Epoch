@@ -9,7 +9,7 @@ TraderCatList = -1;
 TraderItemList = -1;
 
 TraderDialogLoadItemList = {
-	private ["_index", "_trader_id", "_activatingPlayer"];
+	private ["_index","_trader_id","_activatingPlayer","_distance","_objclass","_item_list"];
 	TraderItemList = -1;
 	_index = _this select 0;
 
@@ -112,8 +112,18 @@ TraderDialogLoadItemList = {
 					_count = 1;
 				};
 			} else {
-				_count = {(typeOf _x) == _name} count (nearestObjects [player, [_name], 20]);
-			}
+				if (isClass(configFile >> "CfgVehicles" >> _name)) then {
+					_objclass = configFile >> "CfgVehicles" >> _name;
+					_distance = dayz_sellDistance_vehicle;
+					if (_objclass isKindOf "AIR") then {
+						_distance = dayz_sellDistance_air;
+					};
+					if (_objclass isKindOf "SHIP") then {
+						_distance = dayz_sellDistance_boat;
+					};
+					_count = {(typeOf _x) == _name} count (nearestObjects [player, [_objclass], _distance]);
+				};
+			};
 		};
 
 		if(_type == "CfgMagazines") then {
