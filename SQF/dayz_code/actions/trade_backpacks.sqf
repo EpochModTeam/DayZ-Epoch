@@ -4,7 +4,7 @@ private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_bos","_bag","_clas
 if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-_activatingPlayer = player;
+_activatingPlayer = getPlayerUID player;
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;

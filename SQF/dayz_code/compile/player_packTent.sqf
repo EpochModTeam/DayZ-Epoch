@@ -9,7 +9,7 @@ TradeInprogress = true;
 player removeAction s_player_packtent;
 s_player_packtent = 1;
 
-_activatingPlayer = player;
+_activatingPlayer = getPlayerUID player;
 
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];

@@ -1,10 +1,11 @@
-private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_objectID","_objectUID"];
+private ["_activatingplayerUID","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_objectID","_objectUID"];
 //[dayz_characterID,_tent,[_dir,_location],"TentStorage"]
 _charID =		_this select 0;
 _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _class = 		_this select 3;
 _obj = 		_this select 4;
+_activatingplayerUID = 		_this select 5;
 
 _obj removeAllMPEventHandlers "MPKilled";
 
@@ -16,7 +17,7 @@ _objectUID = 		_this select 6;
 
 if(_objectID == "0" && _objectUID == "0") exitWith {diag_log ("Object not valid: "+ str(_object));};
 
-[_objectID,_objectUID] call server_deleteObj;
+[_objectID,_objectUID,_activatingplayerUID] call server_deleteObj;
 
 _allowed = [_object, "Server"] call check_publishobject;
 if (!_allowed) exitWith { deleteVehicle _object; };

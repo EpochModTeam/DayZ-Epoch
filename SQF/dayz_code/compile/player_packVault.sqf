@@ -6,7 +6,7 @@ private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alread
 if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-_activatingPlayer = player;
+_activatingPlayer = getPlayerUID player;
 
 _obj = _this;
 
