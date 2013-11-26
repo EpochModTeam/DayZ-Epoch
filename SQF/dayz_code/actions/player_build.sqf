@@ -412,6 +412,7 @@ if (_hasrequireditem) then {
 		
 		while {_isOk} do {
 
+			[10,10] call dayz_HungerThirst;
 			player playActionNow "Medic";
 			
 			_dis=20;

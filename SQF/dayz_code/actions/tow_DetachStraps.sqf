@@ -28,6 +28,7 @@ if(_inTow) then {
 
 		_finished = false;
 
+		[1,1] call dayz_HungerThirst;
 		// force animation 
 		player playActionNow "Medic";
 

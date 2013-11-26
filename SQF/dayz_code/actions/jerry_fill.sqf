@@ -26,6 +26,7 @@ _qty = count _fuelCans;
 
 	cutText [format[(localize "str_epoch_player_133"),_displayName], "PLAIN DOWN"];	
 	
+	[1,1] call dayz_HungerThirst;
 	// force animation 
 	player playActionNow "Medic";
 	// Play sound and alert zombies

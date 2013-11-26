@@ -25,6 +25,7 @@ s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
 
+	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 
 	[player,"repair",0,false] call dayz_zombieSpeak;

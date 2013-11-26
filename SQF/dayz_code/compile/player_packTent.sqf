@@ -15,7 +15,7 @@ _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
-
+[1,1] call dayz_HungerThirst;
 player playActionNow "Medic";
 
 if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packtent = -1; cutText [(localize "str_epoch_player_14"), "PLAIN DOWN"];};

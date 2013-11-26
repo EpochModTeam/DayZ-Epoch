@@ -8,7 +8,7 @@ _unit setVariable ["hit_hands",0];
 
 call fnc_usec_medic_removeActions;
 r_action = false;
-
+[1,1] call dayz_HungerThirst;
 if (vehicle player == player) then {
 	//not in a vehicle
 	player playActionNow "Medic";

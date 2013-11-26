@@ -23,7 +23,7 @@ _cookedmeat = meatcooked;
 		_qty = {_x == _meat} count magazines player;
 
 		cutText [format[(localize "str_epoch_player_129"),_textraw], "PLAIN DOWN"];
-
+		[1,1] call dayz_HungerThirst;
 		player playActionNow "Medic";
 		
 		_dis=6;

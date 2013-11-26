@@ -8,7 +8,7 @@ private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_we
 if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-[1,1] call dayz_HungerThirst;
+[5,10] call dayz_HungerThirst;
 
 {player removeAction _x} forEach s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;

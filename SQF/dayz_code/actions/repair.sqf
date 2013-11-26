@@ -22,6 +22,7 @@ s_player_repair_crtl = 1;
 
 if (_section and _hasToolbox) then {
 
+	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	
 	_dis=20;

@@ -86,7 +86,7 @@ while {_isOk} do {
 		_isOk = false;
 		_proceed = false;
 	};
-
+	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	_dis=20;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;

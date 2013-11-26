@@ -41,7 +41,7 @@ for "_x" from 1 to _total_trades do {
 	} else {
 		cutText [format[(localize "str_epoch_player_187"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	};
-
+	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 
 	r_interrupt = false;

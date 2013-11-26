@@ -29,7 +29,7 @@ if (_hasbottleitem and _hastinitem) then {
 	if ("ItemWaterbottle" in magazines player) then {
 		
 		_removed = _removed + ([player,"ItemWaterbottle",_qty] call BIS_fnc_invRemove);
-		
+		[1,1] call dayz_HungerThirst;
 		player playActionNow "Medic";
         sleep 1;
 

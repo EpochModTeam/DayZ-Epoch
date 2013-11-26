@@ -38,6 +38,7 @@ if (!_isOk) then {
 	player removeMagazine _item;
 	_dir = round(direction player);	
 	
+	[1,1] call dayz_HungerThirst;
 	//wait a bit
 	player playActionNow "Medic";
 	sleep 1;

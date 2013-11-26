@@ -39,6 +39,7 @@ if(_IsNearVehicle >= 1) then {
 
 	_finished = false;
 
+	[1,1] call dayz_HungerThirst;
 	// force animation 
 	player playActionNow "Medic";
 

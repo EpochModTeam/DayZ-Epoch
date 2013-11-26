@@ -55,6 +55,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 				if(!dayz_isSwimming) then {
 
+					[1,1] call dayz_HungerThirst;
 					// force animation 
 					player playActionNow "Medic";
 

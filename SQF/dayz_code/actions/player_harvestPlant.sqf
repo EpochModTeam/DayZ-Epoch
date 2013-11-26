@@ -52,6 +52,7 @@ if (count(_findNearestTree) >= 1) then {
 	_proceed = false;
 	while {_isOk} do {
 
+		[1,1] call dayz_HungerThirst;
 		player playActionNow "Medic";
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 	

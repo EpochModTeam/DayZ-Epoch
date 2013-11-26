@@ -18,6 +18,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	_isListed =		isClass (_config);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 	
+	[1,1] call dayz_HungerThirst;
 	// force animation 
 	player playActionNow "Medic";
 

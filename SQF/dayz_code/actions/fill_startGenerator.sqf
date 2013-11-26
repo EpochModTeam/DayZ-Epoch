@@ -9,6 +9,7 @@ s_player_fillgen = 1;
 // Use target from addaction
 _vehicle = 	_this select 3;
 
+[1,1] call dayz_HungerThirst;
 // force animation 
 player playActionNow "Medic";
 

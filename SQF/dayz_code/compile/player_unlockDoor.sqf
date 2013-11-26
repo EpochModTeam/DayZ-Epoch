@@ -9,7 +9,7 @@ if(!isNil "DZE_DYN_UnlockDoorInprogress") exitWith { cutText [(localize "str_epo
 
 DZE_DYN_UnlockDoorInprogress = true;
 
-[1,1] call dayz_HungerThirst;
+[10,5] call dayz_HungerThirst;
 
 if(!isNull dayz_selectedDoor) then {
 
