@@ -14,7 +14,7 @@ _vehiclePos = aimpos _vehicle;
 _playerPos = visiblePositionASL player;
 
 // ignore if distance is too far
-if((_playerPos distance _vehiclePos) < 10) exitWith {};
+if((_playerPos distance _vehiclePos) > 10) exitWith {};
 
 // Important! without this we looking at the players feet this gets us torso area
 _playerPos set [2,(_playerPos select 2)+1];

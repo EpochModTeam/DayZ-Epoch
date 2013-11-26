@@ -197,7 +197,7 @@ if (_characterID != "0") then {
 		if (vehicle _character != _character) then {
 			//[vehicle _character, "position"] call server_updateObject;
 			if (!(vehicle _character in needUpdate_objects)) then {
-				diag_log format["DEBUG: Added to NeedUpdate=%1",vehicle _character];
+				//diag_log format["DEBUG: Added to NeedUpdate=%1",vehicle _character];
 				needUpdate_objects set [count needUpdate_objects, vehicle _character];
 			};
 		};
