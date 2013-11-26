@@ -48,6 +48,7 @@ Contributors
 * JoSchaap - dutch translations and some typo's  - https://github.com/JoSchaap
 * Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
 * aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
+* vos / Axe Cop - Area Maintenance and ideas - https://github.com/vos
 
 --------------------------
 Special thanks
@@ -58,7 +59,7 @@ Special thanks
 * ziellos2k - Tag Friendly code. https://github.com/ziellos2k
 * Dayz Hive DLL - https://github.com/rajkosto/hive
 * Munchiefest - Beta Tester, Wiki Editor, Ideas - http://www.twitch.tv/munchiefest
-* Chelsy - Beta Tester, New female textures.
+* Chelsey - Beta Tester, New female textures.
 * OrangeSherbet - Beta Tester - http://www.twitch.tv/orangesherbet
 * QMGSaint - Beta Tester - http://www.twitch.tv/qmgsaint
 * Twitch.tv Streamers - http://www.twitch.tv/directory/game/DayZ
