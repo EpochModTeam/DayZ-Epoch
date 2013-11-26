@@ -1302,4 +1302,13 @@ if (true) then
   _this setPos [7395.1377, 4293.1055, 3.8146973e-006];
 };
 
+_vehicle_559 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Info_Board_EP1", [7378.9063, 4290.5518], [], 0, "CAN_COLLIDE"];
+  _vehicle_559 = _this;
+  _this setDir -49.71423;
+  _this setPos [7378.9063, 4290.5518];
+};
+
 };
