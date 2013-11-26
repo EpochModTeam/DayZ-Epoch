@@ -37,6 +37,8 @@
 * [ADDED] Owner can now remove modular parts (walls, etc) without having to destroy them.  NOTE: nothing is refunded/no rubble. @dayz10k
 * [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @vbawol @dayz10k
 * [ADDED] Swinging melee weapons and cracking locks (multiple attempts) will trigger hunger/thirst.  @vbawol
+* [ADDED] New building supplies (mortar, cinder, wood packs) to Wholesalers @dayz10k
+* [ADDED] Area maintenance of bases (thanks to Axe Cop's code) @dayz10k
 
 * [UPDATED] Server can now control now fast the periodic client save interval is on the fly. Actual server fps is used to determine how fast the clients can update min 10 seconds max 60 seconds.
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
@@ -69,6 +71,7 @@
 * [CHANGED] Updated Makarov, MakarovSD, and M1911 damage settings to the same as DayZ CE 1.8. @vbawol
 * [CHANGED] Base building enhancements and changed count down timer. @zabn
 * [CHANGED] Base Building now requires a plot pole again. @vbawol
+* [CHANGED] Backpack pickup method @vbawol
 
 * [REMOVED] Dust effect from 1.0.2.5 removed.
 * [REMOVED] Unused code and images removed @Skaronator
