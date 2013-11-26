@@ -32,7 +32,7 @@
 * [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
 * [ADDED] Can now maintain lightpoles with a lightbub. @vbawol @dayz10k
 * [ADDED] Directly Disconnect (back to lobby) if you press abort > yes - @Skaronator
-* [ADDED] New Weapons, most of which are backpack compatible: M60, M240 scoped, M249 scoped, MG36 variants, RPK-74, M8 SAW, Bizon, Saiga12K, KSVK.  @dayz10k
+* [ADDED] New Weapons, most of which are backpack compatible: M60, M240 scoped, M249 scoped, MG36 variants, RPK-74, M8 SAW, Bizon, Saiga12K, KSVK, M4+203 HOLO SD  @dayz10k
 * [ADDED] Extra security features. @facoptere
 * [ADDED] Owner can now remove modular parts (walls, etc) without having to destroy them.  NOTE: nothing is refunded/no rubble. @dayz10k
 * [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @vbawol @dayz10k
