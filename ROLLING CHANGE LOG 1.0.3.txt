@@ -4,7 +4,7 @@
 * [NEW] Gear is only accessible in vehicles with "G" key due to removal of Arma Map Menus, from DayZ CE 1.8. @Skaronator
 
 * [ADDED] Radiation effect with geiger counter sounds and eventual rapidblood loss when player goes out of the map for too long.
-* [ADDED] Craft-able Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons. @dayz10k
+* [ADDED] Craft-able Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons/10 magazines. @dayz10k
 * [ADDED] Craft-able Base Fire Barrel FireBarrel_DZ with an empty Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
 * [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle. @vbawol
 * [ADDED] The above documents to the discoverable documents. @dayz10k
@@ -33,7 +33,8 @@
 * [ADDED] New Weapons, most of which are backpack compatible: M60, M240 scoped, M249 scoped, MG36 variants, RPK-74, M8 SAW, Bizon, Saiga12K, KSVK.  @dayz10k
 * [ADDED] Extra security features. @facoptere
 * [ADDED] Owner can now remove modular parts (walls, etc) without having to destroy them.  NOTE: nothing is refunded/no rubble. @dayz10k
-* [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @dayz10k
+* [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @vbawol @dayz10k
+* [ADDED] Swinging melee weapons and cracking locks (multiple attempts) will trigger hunger/thirst.  @vbawol
 
 * [UPDATED] Server can now control now fast the periodic client save interval is on the fly. Actual server fps is used to determine how fast the clients can update min 10 seconds max 60 seconds.
 * [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
