@@ -872,7 +872,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_Abort : CA_B_SAVE {
 			idc = 104;
 			y = 0.2537 + 0.101903 * 4;
-			onButtonClick = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; call dayz_forceSave;";
+			onButtonClick = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; call dayz_forceSave; endMission ""END1""";'";
 			text = $STR_DISP_INT_ABORT;
 			default = 0;
 		};
