@@ -9,8 +9,6 @@ if(!isNil "DZE_DYN_UnlockDoorInprogress") exitWith { cutText [(localize "str_epo
 
 DZE_DYN_UnlockDoorInprogress = true;
 
-[10,5] call dayz_HungerThirst;
-
 if(!isNull dayz_selectedDoor) then {
 
 	if (!isNil 'KeyCodeTryTimer') then {
@@ -37,7 +35,7 @@ if(!isNull dayz_selectedDoor) then {
 
 		// Check combination
 		if (DZE_Lock_Door == _objectCharacterID) then {
-	
+
 			[player,"combo_unlock",0,false] call dayz_zombieSpeak;
 
 			// close display
@@ -55,6 +53,9 @@ if(!isNull dayz_selectedDoor) then {
 			KeyCodeTry = nil;
 
 		} else {
+
+			[10,10] call dayz_HungerThirst;
+
 			DZE_Lock_Door = "";
 			[player,"combo_locked",0,false] call dayz_zombieSpeak;
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;

@@ -8,8 +8,6 @@ private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_we
 if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
 TradeInprogress = true;
 
-[5,10] call dayz_HungerThirst;
-
 {player removeAction _x} forEach s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;
 
@@ -56,7 +54,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 		if(!isNull _obj and alive _obj) then {
 
 			_obj setVariable["packing",1];
-
+			[1,1] call dayz_HungerThirst;
 			player playActionNow "Medic";
 			sleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
@@ -118,6 +116,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 		cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"];
 	};
 } else {
+	[10,10] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	sleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;
