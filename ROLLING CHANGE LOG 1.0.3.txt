@@ -4,8 +4,10 @@
 * [NEW] Gear is only accessible in vehicles with "G" key due to removal of Arma Map Menus, from DayZ CE 1.8. @Skaronator
 
 * [ADDED] Radiation effect with geiger counter sounds and eventual rapidblood loss when player goes out of the map for too long.
-* [ADDED] Craft-able Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons/10 magazines. @dayz10k
-* [ADDED] Craft-able Base Fire Barrel FireBarrel_DZ with an empty Fuel Barrel, Full Jerry Can, and 4x WoodPile. @dayz10k
+* [ADDED] Craft-able Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons/10 magazines. http://i.imgur.com/mfY0uLN.jpg  @dayz10k
+* [ADDED] Craft-able Base Fire Barrel FireBarrel_DZ with an empty Fuel Barrel, Full Jerry Can, and 4x WoodPile. http://i.imgur.com/2KHWdMS.jpg @dayz10k
+* [ADDED] Craft-able 5x Wide HESCO barrier from, a 3 wide HESCO and 2x 1 wide HESCO. http://i.imgur.com/beWNQtH.jpg @dayz10k
+* [ADDED] Craft-able Round Sandbag Fence (BagFenceRound_DZ) from ItemSandbag. http://i.imgur.com/WlblRPf.jpg @dayz10k
 * [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle. @vbawol
 * [ADDED] The above documents to the discoverable documents. @dayz10k
 * [ADDED] Can now examine Murder Boards via Newspaper Obituaries.  @vbawol
@@ -24,7 +26,7 @@
 * [ADDED] Chernarus-Spawnselection and 1.8 GUI-Icons to the dayz_code.pbo - experienced server admins can use it. @Skaronator
 * [ADDED] Global variable if player is fresh spawned. Can used for custom script like in spawn-camera script ("freshSpawn = 0" - Normal Spawn / 1 - fresh spawn as zombie / 2 - fresh spawn as player) @Skaronator
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
-* [ADDED] Added 8 more Trucks from Arma: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
+* [ADDED] Added 8 more Trucks from ARMA: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
 * [ADDED] Destroy tent option when you have a full Jerry Can and Matches. @vbawol
 * [ADDED] Tag friendly system now stores your 5 most recent friends with your life. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
 * [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
