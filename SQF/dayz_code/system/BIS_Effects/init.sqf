@@ -8,7 +8,7 @@
 		BIS_Effects_EH_Killed = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\killed.sqf";
 		BIS_Effects_AirDestruction = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\AirDestruction.sqf";
 		BIS_Effects_AirDestructionStage2 = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\AirDestructionStage2.sqf";
-		BIS_Effects_Secondaries = "\z\addons\dayz_code\system\BIS_Effects\secondaries.sqf";
+		BIS_Effects_Secondaries = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\secondaries.sqf";
 		
 		BIS_Effects_globalEvent = {
 			BIS_effects_gepv = _this;
