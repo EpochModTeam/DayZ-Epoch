@@ -18,8 +18,8 @@ _objects = nearestObjects [_target, _objectClasses, _range];
 _count = count _objects;
 _requirements = [];
 switch true do {
-	case (_count <= 10): {_requirements = [["ItemGoldBar10oz",1]]};
-	case (_count <= 50): {_requirements = [["ItemGoldBar10oz",4],["ItemGoldBar",2]]}; // 42 gold
+	case (_count <= 20): {_requirements = [["ItemGoldBar10oz",2]]};
+	case (_count <= 50): {_requirements = [["ItemGoldBar10oz",4]]};
 	case (_count <= 100): {_requirements = [["ItemBriefcase100oz",1]]};
 	case (_count <= 200): {_requirements = [["ItemBriefcase100oz",2]]};
 	case (_count <= 300): {_requirements = [["ItemBriefcase100oz",3]]};
