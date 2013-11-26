@@ -2,7 +2,7 @@ private["_fl","_sm","_expl","_dr","_tv","_i","_wave","_splash","_velz","_v","_in
 _v=_this select 0;
 _int=(fuel _v)*(8+random 2);
 _t=time;
-if(!isDedicated)then{
+if (!isDedicated) then {
 	_fl="#particlesource"createVehicleLocal getPosATL _v;
 	_fl attachto[_v,[0,0,0],"destructionEffect2"];
 	_fl setParticleRandom[0.3,[1,1,0],[0,0,0],0,0.3,[0,0,0,0],0,0];
@@ -18,11 +18,11 @@ _i=0;
 _dr=0.2;
 _tv=11;
 removeallweapons _v;
-if(local _v AND{(_v isKindOf"Air")})then{
+if (local _v AND {(_v isKindOf "Air")}) then {
 	_expl=createVehicle["HelicopterExploSmall",(getPosATL _v),[],0,"CAN_COLLIDE"];
 };
-if(!isDedicated)then{
-	while{_i<1200&&((velocity _v select 2)<-20||(getPosATL _v select 2)>8)&&!(alive _v)&&!(isnull _v)&&(getPosATL _v select 2)>1}do{
+if (!isDedicated) then {
+	while{_i<1200 && ((velocity _v select 2) < -20||(getPosATL _v select 2) > 8) && !(alive _v) && !(isnull _v) && (getPosATL _v select 2) > 1} do {
 		_tv=abs(velocity _v select 0)+abs(velocity _v select 1)+abs(velocity _v select 2);
 		_dr=if(_tv>2)then{1/_tv}else{1};
 		_fl setDropInterval _dr;
@@ -33,12 +33,12 @@ if(!isDedicated)then{
 };
 _pos=getPosATL _v;
 clearVehicleInit _v;
-if(!isDedicated)then{
+if (!isDedicated) then {
 	deletevehicle _fl;
 	deletevehicle _sm;
 };
-if(surfaceiswater(_pos)&&(_pos select 2)<9)then{
-	if(!isDedicated)then{
+if (surfaceiswater(_pos) && (_pos select 2) < 9) then {
+	if (!isDedicated) then {
 		_wave="#particlesource"createVehicleLocal getPosATL _v;
 		_wave attachto[_v,[0,0,0],"destructionEffect1"];
 		_wave setParticleRandom[0.3,[1,1,0],[0.5,0.5,0],0,0.3,[0,0,0,0],0,0];
@@ -56,14 +56,14 @@ if(surfaceiswater(_pos)&&(_pos select 2)<9)then{
 		deletevehicle _splash;
 	};
 }
-else{
-	if(local _v)then{
+else {
+	if (local _v) then {
 		_velz=velocity _v select 2;
-		if(_velz>1)then{
+		if (_velz>1) then {
 			_v setvelocity[velocity _v select 0,velocity _v select 1,0]
 		};
 		_expl=createVehicle["HelicopterExploBig",[_pos select 0,_pos select 1,(_pos select 2)+1],[],0,"CAN_COLLIDE"];
 		sleep 0.05;
-		["AirDestructionStage2",_v,_int,_t]call BIS_Effects_globalEvent;
+		["AirDestructionStage2",_v,_int,_t] call BIS_Effects_globalEvent;
 	};
 };
