@@ -119,8 +119,7 @@
 			<Spanish>Consultor Científico</Spanish>
 			<Dutch>Wetenschappelijk Consultant</Dutch>
 			<French>Consultant scientifique</French>
-			<Czech>Vědecký konzulant</Czech>
-			
+			<Czech>Vědecký konzulant</Czech>			
 		</Key>
 		<Key ID="STR_INTRO_13">	
 			<Original>Producer</Original>
@@ -823,24 +822,24 @@
 		</Key>
 	</Package>
 	<Package name="ui">
-    <Key ID="STR_UI_CONTINUE">
-      <English>Continue</English>
-      <German>Continue</German>
-      <Russian>Далее</Russian>
-      <Spanish>Continuar</Spanish>
-      <Dutch>Continue</Dutch>
-      <French>Continuer</French>
-      <Czech>Pokračovat</Czech>
-    </Key>
-    <Key ID="STR_UI_END">
-      <English>End</English>
-      <German>End</German>
-      <Russian>Конец</Russian>
-      <Spanish>Fin</Spanish>
-      <Dutch>End</Dutch>
-      <French>Fin</French>
-      <Czech>Konec</Czech>
-    </Key>
+		<Key ID="STR_UI_CONTINUE">
+			<English>Continue</English>
+			<German>Continue</German>
+			<Russian>Далее</Russian>
+			<Spanish>Continuar</Spanish>
+			<Dutch>Continue</Dutch>
+			<French>Continuer</French>
+			<Czech>Pokračovat</Czech>
+		</Key>
+		<Key ID="STR_UI_END">
+			<English>End</English>
+			<German>End</German>
+			<Russian>Конец</Russian>
+			<Spanish>Fin</Spanish>
+			<Dutch>End</Dutch>
+			<French>Fin</French>
+			<Czech>Konec</Czech>
+		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<Original>SELECT YOUR GENDER</Original>
 			<English>SELECT YOUR GENDER</English>
@@ -2741,7 +2740,7 @@
 		  <Original>Cannot access gear in a locked vehicle.</Original>
 		  <English>Cannot access gear in a locked vehicle.</English>
 		  <German>Kann nicht auf Gang in einem verschlossenen Fahrzeug.</German>
-		  <Russian>Нельзя открывать инвентарь запертой техники.</Russian>
+		  <Russian>Нельзя открывать инвентарь запертого транспорта.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
 		  <French>Impossible d'accéder au contenu d'un véhicule verrouillé</French>
@@ -2941,7 +2940,7 @@
 		  <Original>No Vehicles Nearby.</Original>
 		  <English>No Vehicles Nearby.</English>
 		  <German></German>
-		  <Russian>Нет техники поблизости.</Russian>
+		  <Russian>Нет транспорта поблизости.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen voertuigen in de buurt.</Dutch>
 		  <French>Aucun véhicule aux alentours.</French>
@@ -2991,7 +2990,7 @@
 		  <Original>Hotwire vehicle already in progress.</Original>
 		  <English>Hotwire vehicle already in progress.</English>
 		  <German></German>
-		  <Russian>Вы уже угоняете машину.</Russian>
+		  <Russian>Вы уже угоняете транспорт.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Auto wordt al opengebroken.</Dutch>
 		  <French>Le crochetage du véhicule est déjà en cours.</French>
@@ -3001,7 +3000,7 @@
 		  <Original>Failed to unlock car hotwire kit broken.</Original>
 		  <English>Failed to unlock car hotwire kit broken.</English>
 		  <German></German>
-		  <Russian>Не удалось открыть машину, угонный комплект сломан.</Russian>
+		  <Russian>Не удалось открыть транспорт, угонный комплект сломан.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Openbreken voertuig mislukt, je hotwire kit is kapot gegaan.</Dutch>
 		  <French>Échec du crochetage du véhicule, le kit est détruit.</French>
@@ -3521,7 +3520,7 @@
 		  <Original>\n\nYou may not change clothes while in a vehicle</Original>
 		  <English>\n\nYou may not change clothes while in a vehicle</English>
 		  <German></German>
-		  <Russian>\n\nВы не можете переодеваться, находясь в технике</Russian>
+		  <Russian>\n\nВы не можете переодеваться, находясь в транспорте</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>\n\nJe kunt je niet omkleden in een voertuig</Dutch>
 		  <French>\n\nVous ne devriez pas changer de vêtements à bord d'un véhicule</French>
@@ -3691,7 +3690,7 @@
 		  <Original>No Vehicles In Tow.</Original>
 		  <English>No Vehicles In Tow.</English>
 		  <German></German>
-		  <Russian>Нет машин на буксире.</Russian>
+		  <Russian>Нет транспорта на буксире.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Geen voertuigen op sleep.</Dutch>
 		  <French>Aucun véhicule remorqué.</French>
@@ -4621,7 +4620,7 @@
 		  <Original>Craft Sandbag</Original>
 		  <English>Craft Sandbag</English>
 		  <German></German>
-		  <Russian>Создать: Мешок с песком</Russian>
+		  <Russian>Создать: Мешки с песком</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak Zandzak</Dutch>
 		  <French></French>
@@ -4631,7 +4630,7 @@
 		  <Original>Craft Light Pole</Original>
 		  <English>Craft Light Pole</English>
 		  <German></German>
-		  <Russian>Создать: Light Pole</Russian>
+		  <Russian>Создать: Фонарный столб</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Maak Lichtmast</Dutch>
 		  <French></French>
@@ -4811,7 +4810,7 @@
 		  <Original>Build Corrugated Fence</Original>
 		  <English>Build Corrugated Fence</English>
 		  <German></German>
-		  <Russian>Построить гофрированный забор</Russian>
+		  <Russian>Установить: Гофрированный забор</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Bouw Ribbelplaten hek</Dutch>
 		  <French></French>
@@ -4971,7 +4970,7 @@
 		  <Original>Place Safe</Original>
 		  <English>Place Safe</English>
 		  <German>Place Safe</German>
-		  <Russian>Place Safe</Russian>
+		  <Russian>Поставить сейф</Russian>
 		  <Spanish>Place Safe</Spanish>
 		  <Dutch>Place Safe</Dutch>
 		  <French>Place Safe</French>
@@ -4981,7 +4980,7 @@
 		  <Original>Place Lockbox</Original>
 		  <English>Place Lockbox</English>
 		  <German></German>
-		  <Russian></Russian>
+		  <Russian>Поставить закрытый ящик</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Plaats afsluitbare kist</Dutch>
 		  <French></French>
@@ -5091,7 +5090,7 @@
 		  <Original>Craft Lumber</Original>
 		  <English>Craft Lumber</English>
 		  <German></German>
-		  <Russian>Создать: Lumber</Russian>
+		  <Russian>Создать: Пиломатериалы</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer planken</Dutch>
 		  <French></French>
@@ -5111,7 +5110,7 @@
 		  <Original>Craft Stick Fence</Original>
 		  <English>Craft Stick Fence</English>
 		  <German></German>
-		  <Russian>Создать: Stick Fence</Russian>
+		  <Russian>Создать: Колючая ограда</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Creëer takken hek</Dutch>
 		  <French></French>
@@ -5121,7 +5120,7 @@
 		  <Original>Failed to sell vehicle, you must get into drivers seat first.</Original>
 		  <English>Failed to sell vehicle, you must get into drivers seat first.</English>
 		  <German></German>
-		  <Russian>Не удалось продать технику, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
+		  <Russian>Не удалось продать транспорт, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Verkoop voertuig mislukt, stap eerst in de bestuurders stoel.</Dutch>
 		  <French></French>
@@ -5231,7 +5230,7 @@
 		  <Original>Craft Deer Stand</Original>
 		  <English>Craft Deer Stand</English>
 		  <German></German>
-		  <Russian>Создать: Палата</Russian>
+		  <Russian>Создать: Вышка</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5391,7 +5390,7 @@
 		  <Original>Build Sandbag</Original>
 		  <English>Build Sandbag</English>
 		  <German></German>
-		  <Russian>Создать: Мешок с песком</Russian>
+		  <Russian>Установить: Мешки с песком</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5401,7 +5400,7 @@
 		  <Original>Craft Large Sandbag</Original>
 		  <English>Craft Large Sandbag</English>
 		  <German></German>
-		  <Russian>Создать: Большой мешок с песком</Russian>
+		  <Russian>Создать: Большие мешки с песком</Russian>
 		  <Spanish></Spanish>
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5648,116 +5647,116 @@
 		  <Czech>Cast Fishing Pole</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_298">
-                 <Original>Craft Round Sandbag Fence</Original>
-                 <English>Craft Round Sandbag Fence</English>
-                 <German>Craft Round Sandbag Fence</German>
-                 <Russian>Craft Round Sandbag Fence</Russian>
-                 <Spanish>Craft Round Sandbag Fence</Spanish>
-                 <Dutch>Craft Round Sandbag Fence</Dutch>
-                 <French>Craft Round Sandbag Fence</French>
-                 <Czech>Craft Round Sandbag Fence</Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_299">
-                 <Original>Build Round Sandbag Fence</Original>
-                 <English>Build Round Sandbag Fence</English>
-                 <German>Build Round Sandbag Fence</German>
-                 <Russian>Создать: Мешок с песком</Russian>
-                 <Spanish>Build Round Sandbag Fence</Spanish>
-                 <Dutch>Build Round Sandbag Fence</Dutch>
-                 <French>Build Round Sandbag Fence</French>
-                 <Czech>Build Round Sandbag Fence</Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_300">
-                 <Original>Craft Sandbag</Original>
-                 <English>Craft Sandbag</English>
-                 <German>Craft Sandbag</German>
-                 <Russian>Craft Sandbag</Russian>
-                 <Spanish>Craft Sandbag</Spanish>
-                 <Dutch>Craft Sandbag</Dutch>
-                 <French>Craft Sandbag</French>
-                 <Czech>Craft Sandbag</Czech>
-                </Key>
-               	<Key ID="STR_EPOCH_PLAYER_301">
+		  <Original>Craft Round Sandbag Fence</Original>
+		  <English>Craft Round Sandbag Fence</English>
+		  <German>Craft Round Sandbag Fence</German>
+		  <Russian>Создать: Круглая ограда из мешков с песком</Russian>
+		  <Spanish>Craft Round Sandbag Fence</Spanish>
+		  <Dutch>Craft Round Sandbag Fence</Dutch>
+		  <French>Craft Round Sandbag Fence</French>
+		  <Czech>Craft Round Sandbag Fence</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_299">
+		  <Original>Build Round Sandbag Fence</Original>
+		  <English>Build Round Sandbag Fence</English>
+		  <German>Build Round Sandbag Fence</German>
+		  <Russian>Установить: Круглая ограда из мешков с песком</Russian>
+		  <Spanish>Build Round Sandbag Fence</Spanish>
+		  <Dutch>Build Round Sandbag Fence</Dutch>
+		  <French>Build Round Sandbag Fence</French>
+		  <Czech>Build Round Sandbag Fence</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_300">
+		  <Original>Craft Sandbag</Original>
+		  <English>Craft Sandbag</English>
+		  <German>Craft Sandbag</German>
+		  <Russian>Создать: Мешки с песком</Russian>
+		  <Spanish>Craft Sandbag</Spanish>
+		  <Dutch>Craft Sandbag</Dutch>
+		  <French>Craft Sandbag</French>
+		  <Czech>Craft Sandbag</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_301">
 		  <Original>Trade Metals</Original>
 		  <English>Trade Metals</English>
 		  <German>Trade Metals</German>
-		  <Russian>Trade Metals</Russian>
+		  <Russian>Обменять металлы</Russian>
 		  <Spanish>Trade Metals</Spanish>
 		  <Dutch>Trade Metals</Dutch>
 		  <French>Trade Metals</French>
 		  <Czech>Trade Metals</Czech>
 		</Key>
-                <Key ID="STR_EPOCH_PLAYER_REPAIRV">
-                 <Original>Repair Vehicle</Original>
-                 <English>Repair Vehicle</English>
-                 <German></German>
-                 <Russian>Починить транспорт</Russian>
-                 <Spanish></Spanish>
-                 <Dutch>Repareer voertuig</Dutch>
-                 <French>Réparer le véhicule</French>
-                 <Czech></Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_REPAIR">
-                 <Original>Repair</Original>
-                 <English>Repair</English>
-                 <German></German>
-                 <Russian>Починить</Russian>
-                 <Spanish></Spanish>
-                 <Dutch>Repareer</Dutch>
-                 <French>Réparer</French>
-                 <Czech></Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_REMOVE">
-                 <Original>Remove</Original>
-                 <English>Remove</English>
-                 <German></German>
-                 <Russian>Снять</Russian>
-                 <Spanish></Spanish>
-                 <Dutch>Demonteer</Dutch>
-                 <French>Retirer</French>
-                 <Czech></Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_SALVAGEV">
-                 <Original>Salvage Vehicle</Original>
-                 <English>Salvage Vehicle</English>
-                 <German></German>
-                 <Russian>Снять запчасти</Russian>
-                 <Spanish></Spanish>
-                 <Dutch>Demonteer voertuig</Dutch>
-                 <French>Récupérer des pièces</French>
-                 <Czech></Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_CARGO">
-                 <Original>Cargo Check</Original>
-                 <English>Cargo Check</English>
-                 <German></German>
-                 <Russian>Проверить груз</Russian>
-                 <Spanish></Spanish>
-                 <Dutch>Controleer Bagage</Dutch>
-                 <French>Vérifier la cargaison</French>
-                 <Czech></Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_CANCEL">
-                 <Original>Cancel</Original>
-                 <English>Cancel</English>
-                 <German></German>
-                 <Russian>Отмена</Russian>
-                 <Spanish></Spanish>
-                 <Dutch>Annuleren</Dutch>
-                 <French>Annuler</French>
-                 <Czech></Czech>
-                </Key>
-                <Key ID="STR_EPOCH_PLAYER_UPGRADEV">
-                 <Original>Upgrade Vehicle</Original>
-                 <English>Upgrade Vehicle</English>
-                 <German></German>
-                 <Russian>Улучшить транспорт</Russian>
-                 <Spanish></Spanish>
-                 <Dutch>Voertuig Verbeteren</Dutch>
-                 <French>Améliorer Véhicule</French>
-                 <Czech></Czech>
-                </Key>
-                <Key ID="STR_EPOCH_VEHUP_ORP">
+		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
+		  <Original>Repair Vehicle</Original>
+		  <English>Repair Vehicle</English>
+		  <German></German>
+		  <Russian>Починить транспорт</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Repareer voertuig</Dutch>
+		  <French>Réparer le véhicule</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_REPAIR">
+		  <Original>Repair</Original>
+		  <English>Repair</English>
+		  <German></German>
+		  <Russian>Починить</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Repareer</Dutch>
+		  <French>Réparer</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_REMOVE">
+		  <Original>Remove</Original>
+		  <English>Remove</English>
+		  <German></German>
+		  <Russian>Демонтировать</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Demonteer</Dutch>
+		  <French>Retirer</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_SALVAGEV">
+		  <Original>Salvage Vehicle</Original>
+		  <English>Salvage Vehicle</English>
+		  <German></German>
+		  <Russian>Демонтировать запчасти</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Demonteer voertuig</Dutch>
+		  <French>Récupérer des pièces</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_CARGO">
+		  <Original>Cargo Check</Original>
+		  <English>Cargo Check</English>
+		  <German></German>
+		  <Russian>Проверить груз</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Controleer Bagage</Dutch>
+		  <French>Vérifier la cargaison</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_CANCEL">
+		  <Original>Cancel</Original>
+		  <English>Cancel</English>
+		  <German></German>
+		  <Russian>Отмена</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Annuleren</Dutch>
+		  <French>Annuler</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
+		  <Original>Upgrade Vehicle</Original>
+		  <English>Upgrade Vehicle</English>
+		  <German></German>
+		  <Russian>Улучшить транспорт</Russian>
+		  <Spanish></Spanish>
+		  <Dutch>Voertuig Verbeteren</Dutch>
+		  <French>Améliorer Véhicule</French>
+		  <Czech></Czech>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_ORP">
 		  <Original>HowTo: Offroad Performance</Original>
 		  <English>HowTo: Offroad Performance</English>
 		  <German></German>
@@ -5851,7 +5850,7 @@
 		  <Original>%1 | Weight carried : %2 lb</Original>
 		  <English>%1 | Weight carried : %2 lb</English>
 		  <German>%1 | Weight carried : %2 lb</German>
-		  <Russian>%1 | Носимый вес : %2 Кг</Russian>
+		  <Russian>%1 | Переносимый вес : %2 Кг</Russian>
 		  <Spanish>%1 | Weight carried : %2 lb</Spanish>
 		  <Dutch>%1 | Weight carried : %2 lb</Dutch>
 		  <French>%1 | Poids transporté : %2 Kg</French>
