@@ -18,6 +18,8 @@ dayz_combat = 1;
 if (_ammo isKindOf "Melee") exitWith {
 	_unit playActionNow "GestureSwing";
 
+	[1,1] call dayz_HungerThirst;
+
 	// harvest wood check
 	_id = _this spawn player_harvest;
 };
