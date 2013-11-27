@@ -47,7 +47,7 @@
 1 "M_" !="G_40mm_HE" //!="40mm_" //keep monitoring to catch obvious abuse
 5 "Parachute" !="ParachuteWest" !="ParachuteC" //under monitoring
 1 "dog" //until released not welcome
-5 "Land_" !="Land_Fire_DZ" !="Land_HBarrier1_DZ" !="Land_HBarrier1Preview" !="Land_HBarrier3_DZ" !="Land_HBarrier3ePreview" !="Land_fortified_nest_smallPreview" !="Land_DZE_WoodDoor" !="Land_DZE_LargeWoodDoor" !="Land_DZE_GarageWoodDoor" !="Land_DZE_WoodDoorLocked" !="Land_DZE_LargeWoodDoorLocked" !="Land_DZE_GarageWoodDoorLocked"
+5 "Land_" !="Land_Fire_DZ" !="Land_HBarrier1_DZ" !="Land_HBarrier1Preview" !="Land_HBarrier3_DZ" !="Land_HBarrier3ePreview" !="Land_HBarrier5_DZ" !="Land_HBarrier5Preview" !="Land_fortified_nest_smallPreview" !="Land_DZE_WoodDoor" !="Land_DZE_LargeWoodDoor" !="Land_DZE_GarageWoodDoor" !="Land_DZE_WoodDoorLocked" !="Land_DZE_LargeWoodDoorLocked" !="Land_DZE_GarageWoodDoorLocked"
 5 "BBarracks"
 1 "_ep1" !="DZ_Patrol_Pack_EP1" !="DZ_CivilBackpack_EP1" !="CZ_VestPouch_EP1" !="DZ_ALICE_Pack_EP1" !="DZ_Backpack_EP1" !="DZ_Assault_Pack_EP1" !="DZ_TK_Assault_Pack_EP1"
 1 "_baf"
