@@ -131,6 +131,11 @@ if ((count _upgrade) > 0) then {
 
 		// Set location
 		_object setPosATL _location;
+		
+		// Reset the character ID (esp in the case of removing a lock)
+		if (_classname in DZE_DoorsLocked) then {
+		_object setVariable ["CharacterID",dayz_characterID,true];
+		};
 	
 		cutText [format[(localize "str_epoch_player_142"),_text], "PLAIN DOWN", 5];
 
