@@ -5657,14 +5657,14 @@
 		  <Czech>Craft Round Sandbag Fence</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_299">
-		  <Original>Build Round Sandbag Fence</Original>
-		  <English>Build Round Sandbag Fence</English>
-		  <German>Build Round Sandbag Fence</German>
-		  <Russian>Установить: Круглая ограда из мешков с песком</Russian>
-		  <Spanish>Build Round Sandbag Fence</Spanish>
-		  <Dutch>Build Round Sandbag Fence</Dutch>
-		  <French>Build Round Sandbag Fence</French>
-		  <Czech>Build Round Sandbag Fence</Czech>
+		  <Original>Round Bag Fence</Original>
+		  <English>Round Bag Fence</English>
+		  <German></German>
+		  <Russian>Круглая ограда из мешков с песком</Russian>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_300">
 		  <Original>Craft Sandbag</Original>
