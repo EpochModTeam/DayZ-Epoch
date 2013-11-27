@@ -7,9 +7,18 @@ if (_dikCode in[0x02,0x03,0x04,0x58,0x57,0x44,0x43,0x42,0x41,0x40,0x3F,0x3E,0x3D
 	_handled = true;
 };
 
-if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (diag_tickTime - dayz_lastCheckBit > 10)) then {
-	dayz_lastCheckBit = diag_tickTime;
-	call dayz_forceSave;
+if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3)) then {
+	if(diag_tickTime - dayz_lastCheckBit > 10) then {
+		dayz_lastCheckBit = diag_tickTime;
+		call dayz_forceSave;
+	};
+	call dayz_EjectPlayer;
+};
+
+// esc
+if (_dikCode == 0x01) then {
+	DZE_cancelBuilding = true;
+	call dayz_EjectPlayer;
 };
 
 // surrender 
@@ -174,11 +183,6 @@ if (_dikCode == 0x12 or (_dikCode in actionKeys "User18")) then {
 // numpad 5 0x4C now space 0x39
 if (_dikCode == 0x39 or (_dikCode in actionKeys "User19")) then {
 	DZE_5 = true;
-};
-
-// esc
-if (_dikCode == 0x01) then {
-	DZE_cancelBuilding = true;
 };
 
 _handled

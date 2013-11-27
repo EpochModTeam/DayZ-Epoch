@@ -504,6 +504,18 @@ if (!isDedicated) then {
 		dayz_thirst = dayz_thirst + (_this select 1);
 	};
 
+	dayz_EjectPlayer = {
+		// check if player in vehicle
+		_vehicle = vehicle player;
+		_inVehicle = (_vehicle != player);
+		if(_inVehicle) then {
+			_noDriver = ((_vehicle emptyPositions "driver") > 0);
+			if (_noDriver) then {
+				player action [ "eject", (vehicle player)];
+			};
+		};
+	};
+
 	player_sumMedical = {
 		private["_character","_wounds","_legs","_arms","_medical"];
 		_character = 	_this;
