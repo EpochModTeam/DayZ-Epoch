@@ -5647,18 +5647,18 @@
 		  <Czech>Cast Fishing Pole</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_298">
-		  <Original>Craft Round Sandbag Fence</Original>
-		  <English>Craft Round Sandbag Fence</English>
-		  <German>Craft Round Sandbag Fence</German>
+		  <Original>Craft Round Fence</Original>
+		  <English>Craft Round Fence</English>
+		  <German></German>
 		  <Russian>Создать: Круглая ограда из мешков с песком</Russian>
-		  <Spanish>Craft Round Sandbag Fence</Spanish>
-		  <Dutch>Craft Round Sandbag Fence</Dutch>
-		  <French>Craft Round Sandbag Fence</French>
-		  <Czech>Craft Round Sandbag Fence</Czech>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_299">
-		  <Original>Round Bag Fence</Original>
-		  <English>Round Bag Fence</English>
+		  <Original>Build Round Fence</Original>
+		  <English>Build Round Fence</English>
 		  <German></German>
 		  <Russian>Круглая ограда из мешков с песком</Russian>
 		  <Spanish></Spanish>
@@ -5669,12 +5669,12 @@
 		<Key ID="STR_EPOCH_PLAYER_300">
 		  <Original>Craft Sandbag</Original>
 		  <English>Craft Sandbag</English>
-		  <German>Craft Sandbag</German>
+		  <German></German>
 		  <Russian>Создать: Мешки с песком</Russian>
-		  <Spanish>Craft Sandbag</Spanish>
-		  <Dutch>Craft Sandbag</Dutch>
-		  <French>Craft Sandbag</French>
-		  <Czech>Craft Sandbag</Czech>
+		  <Spanish></Spanish>
+		  <Dutch></Dutch>
+		  <French></French>
+		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_301">
 		  <Original>Trade Metals</Original>
