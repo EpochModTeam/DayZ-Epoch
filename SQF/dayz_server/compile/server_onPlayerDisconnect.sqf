@@ -23,6 +23,7 @@ if (!isNull _playerObj) then {
 	if (vehicle _playerObj != _playerObj) then {
 		_playerObj action ["eject", vehicle _playerObj];
 		_invehicle = true;
+		diag_log format["LOGOUT IN VEHICLE: %1 at location %2", _playerName,(getPosATL _playerObj)];
 	};
 
 	if ((_timeout - time) > 0) then {
@@ -44,7 +45,7 @@ if (!isNull _playerObj) then {
 
 	if (alive _playerObj) then {
 
-		_isplayernearby = (DZE_BackpackGuard and!_invehicle and ({(isPlayer _x) and (alive _x)} count (_playerPos nearEntities ["AllVehicles", 5]) > 1));
+		_isplayernearby = (DZE_BackpackGuard and !_invehicle and ({(isPlayer _x) and (alive _x)} count (_playerPos nearEntities ["AllVehicles", 5]) > 1));
 
 		// prevent saving more than 20 magazine items
 		_magazines = [(magazines _playerObj),20] call array_reduceSize;
