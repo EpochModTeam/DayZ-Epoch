@@ -4053,11 +4053,11 @@ class CfgMagazines {
 			};
 			class Crafting
                         {
-                                text = "Craft Quintuple H-barrier";
+                                text = "Craft 5x H-barrier";
                                 script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
                                 neednearby[] = {};
                                 requiretools[] = {"ItemEtool","ItemToolbox"};
-                                output[] = {{"ItemSandbagExLarge5x",1}};
+                                output[] = {{"ItemSandbagExLarge5w",1}};
                                 input[] = {{"ItemSandbagExLarge",1},{"ItemSandbagLarge",2}};
                         };
 		};
