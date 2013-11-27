@@ -1,7 +1,7 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_isVehicle","_configSrcVeh","_capacitySrc","_nameTextSrc","_isFillok","_curFuelSrc","_newFuelSrc","_vehicleSrc"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 _isVehicle = false;
 
@@ -137,4 +137,4 @@ if(_IsNearVehicle >= 1) then {
 } else {
 	cutText [(localize "str_epoch_player_27"), "PLAIN DOWN"];
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

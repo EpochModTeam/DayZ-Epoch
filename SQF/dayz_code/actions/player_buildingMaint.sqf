@@ -4,8 +4,8 @@
 */
 private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_objectCharacterID"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_52") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_52") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_maint_build;
 s_player_maint_build = 1;
@@ -19,7 +19,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_maint_build = -1; cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_maint_build = -1; cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];};
 
 // Get classname
 _classname = typeOf _obj;
@@ -117,5 +117,5 @@ if (_proceed) then {
 };
 
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;
 s_player_maint_build = -1;

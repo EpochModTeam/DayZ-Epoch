@@ -3,8 +3,8 @@
 */
 private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 _activatingPlayer = getPlayerUID player;
 
@@ -14,11 +14,11 @@ _packedClass = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "packedC
 _text = 		getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
 
 // Silently exit if object no longer exists
-if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
+if(isNull _obj or !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
 
 _playerNear = _obj call dze_isnearest_player;
 
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_16") , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_16") , "PLAIN DOWN"];  };
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -27,13 +27,13 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
-if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_118"),_text], "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_118"),_text], "PLAIN DOWN"];};
 
-if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith { TradeInprogress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
+if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
 
 _alreadyPacking = _obj getVariable["packing",0];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_120"),_text] , "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_120"),_text] , "PLAIN DOWN"]};
 _obj setVariable["packing",1];
 
 cutText [format[(localize "str_epoch_player_121"),_text], "PLAIN DOWN"];
@@ -111,4 +111,4 @@ if(!isNull _obj and alive _obj) then {
 	player action ["Gear", _holder];
 };
 s_player_packvault = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

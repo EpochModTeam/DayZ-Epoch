@@ -1,7 +1,7 @@
 private ["_text","_rawmeat","_cookedmeat","_meat","_meatcooked","_qty","_started","_finished","_animState","_isMedic","_removed","_dis","_sfx","_textraw"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_23") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_23") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 // diag_log ("Cook Enabled");
 player removeAction s_player_cook;
@@ -77,4 +77,4 @@ _cookedmeat = meatcooked;
 } forEach _rawmeat;
 
 s_player_cook = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

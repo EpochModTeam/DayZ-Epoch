@@ -5,10 +5,10 @@
 */
 private ["_isOk","_objName","_finished","_proceed","_counter","_itemOut","_countOut","_tree","_distance2d","_distance3d","_trees","_findNearestTree","_finishedTime","_item"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_53") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_53") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
-if((currentWeapon player) != "MeleeHatchet") exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_54"), "PLAIN DOWN"]; };
+if((currentWeapon player) != "MeleeHatchet") exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_54"), "PLAIN DOWN"]; };
 
 // allowed trees list move this later
 _trees = DZE_trees;
@@ -134,4 +134,4 @@ if (count(_findNearestTree) >= 1) then {
 } else {
 	cutText [localize "str_player_23", "PLAIN DOWN"];
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

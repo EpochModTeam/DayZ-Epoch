@@ -1,7 +1,7 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_configVeh","_nameText","_towTruck","_inTow"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_towing;
 s_player_towing = 1;
@@ -79,5 +79,5 @@ if(_inTow) then {
 } else {
 	cutText [(localize "str_epoch_player_102"), "PLAIN DOWN"];
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;
 s_player_towing = -1;

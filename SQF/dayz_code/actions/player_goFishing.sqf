@@ -5,19 +5,19 @@
 */
 private ["_itemOut","_position","_isOk","_counter","_rnd","_item","_itemtodrop","_vehicle","_inVehicle"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_65") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_65") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 call gear_ui_init;
 
 // find position 5m in front of player
 _position = player modeltoworld [0,5,0];
-if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_66") , "PLAIN DOWN"]; };
+if(!(surfaceIsWater _position)) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_66") , "PLAIN DOWN"]; };
 
-if((currentWeapon player) != "MeleeFishingPole") exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_67"), "PLAIN DOWN"]; };
+if((currentWeapon player) != "MeleeFishingPole") exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_67"), "PLAIN DOWN"]; };
 
-if(dayz_isSwimming) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
-if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];};
+if(dayz_isSwimming) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
+if(player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];};
 
 _isOk = true;
 _counter = 0;
@@ -81,4 +81,4 @@ while {_isOk} do {
 		};
 	};
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

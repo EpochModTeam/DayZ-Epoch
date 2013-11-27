@@ -5,8 +5,8 @@
 */
 private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_nul","_objType"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 {player removeAction _x} forEach s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;
@@ -15,10 +15,10 @@ _obj = _this;
 _objType = typeOf _obj;
 
 _playerNear = _obj call dze_isnearest_player;
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
 
 // Silently exit if object no longer exists or alive
-if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
+if(isNull _obj or !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
 
 _unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
 _text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
@@ -27,7 +27,7 @@ _alreadyPacking = _obj getVariable["packing",0];
 _claimedBy = _obj getVariable["claimed","0"];
 _ownerID = _obj getVariable["CharacterID","0"];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
 
 // Promt user for password if _ownerID != dayz_playerUID
 if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
@@ -112,7 +112,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 			cutText [format[(localize "str_epoch_player_125"),_text], "PLAIN DOWN"];
 		};
 	} else {
-		TradeInprogress = false; 
+		DZE_ActionInProgress = false; 
 		cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"];
 	};
 } else {
@@ -125,4 +125,4 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	cutText [format[(localize "str_epoch_player_126"),_text], "PLAIN DOWN"];
 };
 s_player_unlockvault = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

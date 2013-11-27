@@ -21,8 +21,8 @@ class ItemActions
 */
 private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_63") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_63") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 // This is used to find correct recipe based what itemaction was click allows multiple recipes per item.
 _crafting = _this select 0;
@@ -57,7 +57,7 @@ if("workshop" in _needNear) then {
 };
 if(_abort) exitWith {
 	cutText [format[(localize "str_epoch_player_149"),_reason,_distance], "PLAIN DOWN"];
-	TradeInprogress = false;
+	DZE_ActionInProgress = false;
 };
 
 // diag_log format["Checking for fire: %1", _isFireNear];
@@ -241,4 +241,4 @@ if (_canDo) then {
 } else {
 	cutText [(localize "str_epoch_player_64"), "PLAIN DOWN"];
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

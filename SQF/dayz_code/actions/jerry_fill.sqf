@@ -1,7 +1,7 @@
 private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx","_displayName","_fuelCans"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_34"), "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_34"), "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_fillfuel;
 s_player_fillfuel = 1;
@@ -88,4 +88,4 @@ _qty = count _fuelCans;
 } forEach _fuelCans;
 
 s_player_fillfuel = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

@@ -1,7 +1,7 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canName","_canSize","_configCan","_configVeh","_capacity","_nameText","_availableCans","_canText"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 // Use target from addaction
 _vehicle = 	_this select 0;
@@ -144,4 +144,4 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 } forEach magazines player;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

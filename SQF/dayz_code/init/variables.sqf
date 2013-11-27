@@ -622,7 +622,7 @@ if(!isDedicated) then {
 	dayz_Magazines = 		[];
 	dayzGearSave = 			false;
 	dayz_unsaved =			false;
-	TradeInprogress =		false;
+	DZE_ActionInProgress =		false;
 	dayz_scaleLight = 		0;
 	dayzDebug = false;
 	dayzState = -1;

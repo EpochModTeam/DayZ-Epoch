@@ -3,8 +3,8 @@
 */
 private ["_activatingPlayer","_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_object","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_dis","_sfx","_classname","_location"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_13") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_13") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_packtent;
 s_player_packtent = 1;
@@ -18,13 +18,13 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 [1,1] call dayz_HungerThirst;
 player playActionNow "Medic";
 
-if(_objectID == "0" && _objectUID == "0") exitWith {TradeInprogress = false; s_player_packtent = -1; cutText [(localize "str_epoch_player_14"), "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packtent = -1; cutText [(localize "str_epoch_player_14"), "PLAIN DOWN"];};
 
-if(_ownerID != dayz_characterID) exitWith {TradeInprogress = false; s_player_packtent = -1; cutText [localize "str_fail_tent_pack", "PLAIN DOWN"];};
+if(_ownerID != dayz_characterID) exitWith {DZE_ActionInProgress = false; s_player_packtent = -1; cutText [localize "str_fail_tent_pack", "PLAIN DOWN"];};
 
 _alreadyPacking = _obj getVariable["packing",0];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_packtent = -1; cutText [format[(localize "str_player_beingpacked")] , "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_packtent = -1; cutText [format[(localize "str_player_beingpacked")] , "PLAIN DOWN"]};
 
 _obj setVariable["packing",1];
 
@@ -102,4 +102,4 @@ if(!isNull _obj and alive _obj) then {
 };
 
 s_player_packtent = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

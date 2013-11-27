@@ -1,8 +1,8 @@
 private ["_vehicle","_removed"];
 _vehicle = _this select 3;
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_32") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_32") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 {player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
@@ -28,4 +28,4 @@ if (_removed == 1) then {
 };
 
 s_player_lockUnlock_crtl = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

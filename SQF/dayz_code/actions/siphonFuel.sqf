@@ -1,7 +1,7 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText","_availableCansEmpty"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_98") , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_98") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 // Use target from addaction
 _vehicle = 	_this select 0;
@@ -153,4 +153,4 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 } forEach magazines player;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

@@ -1,6 +1,6 @@
 private ["_trader_data", "_dialog"];
 
-if (TradeInprogress) exitWith {
+if (DZE_ActionInProgress) exitWith {
 	cutText [(localize "str_epoch_player_97") , "PLAIN DOWN"];
 };
 

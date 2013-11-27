@@ -1,7 +1,7 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_soundObject"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_99") , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_99") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_fillgen;
 s_player_fillgen = 1;
@@ -63,5 +63,5 @@ if (_finished) then {
 	
 };
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;
 s_player_fillgen = -1;

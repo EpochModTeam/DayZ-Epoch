@@ -4,8 +4,8 @@
 */
 private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_temp_removed_array","_countr","_objectID","_objectUID","_location","_dir","_objectCharacterID","_weapons","_magazines","_backpacks","_classname","_object","_holder","_objWpnTypes","_objWpnQty","_newclassname","_requirements","_upgrade","_vehicle","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
 
-if(TradeInprogress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_52") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_52") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 // look for nearest vehicle
 _findNearestVehicles = nearestObjects [player, ["LandVehicle"], 10];
@@ -166,4 +166,4 @@ if (_IsNearVehicle >= 1) then {
 	cutText [(localize "STR_EPOCH_PLAYER_27"), "PLAIN DOWN"];
 };
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

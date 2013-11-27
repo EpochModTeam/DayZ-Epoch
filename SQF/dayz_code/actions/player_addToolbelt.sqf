@@ -1,17 +1,17 @@
 private ["_item","_config","_onLadder","_create","_isOk","_config2","_magType","_meleeNum","_muzzles","_wtype","_type","_hastoolweapon","_text"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_39") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_39") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {TradeInprogress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
+if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hastoolweapon = _this in weapons player;
 _text = getText (_config >> "displayName");
-if (!_hastoolweapon) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
+if (!_hastoolweapon) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
 
 call gear_ui_init;
 
@@ -94,4 +94,4 @@ if (_isOk) then {
 		};
 	};	
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

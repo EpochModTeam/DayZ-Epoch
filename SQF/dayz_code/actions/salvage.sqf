@@ -1,7 +1,7 @@
 private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_isOK","_brokenPart","_findPercent","_damage","_hasToolbox","_nameType","_namePart"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_94") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_94") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 //_id = _this select 2;
 _array = 	_this select 3;
@@ -118,4 +118,4 @@ if (_hasToolbox) then {
 dayz_myCursorTarget = objNull;
 s_player_repair_crtl = -1;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

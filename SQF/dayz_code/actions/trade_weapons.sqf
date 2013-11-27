@@ -1,8 +1,8 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_needed","_activatingPlayer","_textPartIn","_textPartOut","_started","_finished","_animState","_isMedic","_removed"];
 // [part_out,part_in, qty_out, qty_in,"buy"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
 
@@ -122,4 +122,4 @@ if (_qty >= _qty_in) then {
 	cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 };
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

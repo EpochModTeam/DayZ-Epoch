@@ -5,8 +5,8 @@
 */
 private ["_isOk","_objName","_started","_finished","_animState","_isMedic","_proceed","_counter","_itemOut","_countOut","_rock","_distance2d","_rockBox","_rocks","_findNearestRock","_item","_rnd"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_79") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_79") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 // allowed rocks list move this later
 _rocks = ["r2_boulder2.p3d","r2_rock1.p3d","r2_rocktower.p3d","r2_boulder1.p3d"];
@@ -139,4 +139,4 @@ if (count(_findNearestRock) >= 1) then {
 } else {
 	cutText [localize "str_player_32", "PLAIN DOWN"];
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

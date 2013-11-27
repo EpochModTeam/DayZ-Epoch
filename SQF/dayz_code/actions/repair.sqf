@@ -1,7 +1,7 @@
 private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_num_removed","_damage","_dis","_sfx","_allFixed","_id","_hasToolbox","_section","_nameType","_namePart","_hitpoints"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_92") , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_92") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 _id = _this select 2;
 _array = 	_this select 3;
@@ -125,4 +125,4 @@ if (_allFixed) then {
 
 s_player_repair_crtl = -1;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

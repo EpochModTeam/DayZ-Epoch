@@ -4,26 +4,26 @@ Added Female skin changes - DayZ Epoch - vbawol
 */
 private ["_item","_onLadder","_hasclothesitem","_config","_text","_myModel","_itemNew","_currentSex","_newSex","_model","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText [(localize "str_epoch_player_83") , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_83") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 // cannot change clothes when another player is nearby
 _playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText [(localize "str_epoch_player_84") , "PLAIN DOWN"];  };
+if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_84") , "PLAIN DOWN"];  };
 
 _item = _this;
 call gear_ui_init;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {TradeInprogress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
+if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hasclothesitem = _this in magazines player;
 _config = configFile >> "CfgMagazines";
 _text = getText (_config >> _item >> "displayName");
 
-if (!_hasclothesitem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
+if (!_hasclothesitem) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
 
-if (vehicle player != player) exitWith {TradeInprogress = false; cutText [(localize "str_epoch_player_85"), "PLAIN DOWN"]};
+if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_85"), "PLAIN DOWN"]};
 
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
@@ -54,4 +54,4 @@ if ( (isClass(_config >> _itemNew)) ) then {
 		};
 	};
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

@@ -8,7 +8,7 @@ private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1"
 
 disableSerialization;
 
-if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
+if (DZE_ActionInProgress) exitWith {}; // Do not allow if any script is running.
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
