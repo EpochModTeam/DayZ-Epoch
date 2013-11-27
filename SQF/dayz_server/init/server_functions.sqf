@@ -243,7 +243,7 @@ spawn_vehicles = {
 		};
 
 		if (_isAbort) then {
-			diag_log("DEBUG: unable to find sutable vehicle to spawn");
+			diag_log("DEBUG: unable to find suitable vehicle to spawn");
 		} else {
 
 			// add vehicle to counter for next pass
