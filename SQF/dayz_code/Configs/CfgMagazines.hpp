@@ -4053,7 +4053,7 @@ class CfgMagazines {
 			};
 			class Crafting
                         {
-                                text = "Craft 5x  H-barrier";
+                                text = "Craft 5x H-barrier";
                                 script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
                                 neednearby[] = {};
                                 requiretools[] = {"ItemEtool","ItemToolbox"};
