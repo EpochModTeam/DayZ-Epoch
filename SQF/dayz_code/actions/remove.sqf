@@ -31,7 +31,7 @@ _isDestructable = _obj isKindOf "BuiltItems";
 _isWreck = _objType in DZE_isWreck;
 _isRemovable = _objType in DZE_isRemovable;
 _isWreckBuilding = _objType in DZE_isWreckBuilding;
-_isModular = _objType isKindOf "ModularItems";
+_isModular = _obj isKindOf "ModularItems";
 
 _limit = 3;
 if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
