@@ -113,15 +113,14 @@ TraderDialogLoadItemList = {
 				};
 			} else {
 				if (isClass(configFile >> "CfgVehicles" >> _name)) then {
-					_objclass = configFile >> "CfgVehicles" >> _name;
 					_distance = dayz_sellDistance_vehicle;
-					if (_objclass isKindOf "AIR") then {
+					if (_name isKindOf "Air") then {
 						_distance = dayz_sellDistance_air;
 					};
-					if (_objclass isKindOf "SHIP") then {
+					if (_name isKindOf "Ship") then {
 						_distance = dayz_sellDistance_boat;
 					};
-					_count = {(typeOf _x) == _name} count (nearestObjects [player, [_objclass], _distance]);
+					_count = {(typeOf _x) == _name} count (nearestObjects [player, [_name], _distance]);
 				};
 			};
 		};
