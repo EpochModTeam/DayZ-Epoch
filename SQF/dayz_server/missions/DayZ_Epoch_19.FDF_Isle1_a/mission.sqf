@@ -183,11 +183,6 @@ if (true) then
   _this setPos [8151.2344, 4332.9829, 5.1021576e-005];
 };
 
-_this = createCenter resistance;
-_center_1 = _this;
-
- = createGroup _center_1;
-
 _unit_14 = objNull;
 if (true) then
 {
@@ -611,11 +606,6 @@ if (true) then
   _this setUnitAbility 0.60000002;
   _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
 };
-
-_this = createCenter civilian;
-_center_2 = _this;
-
- = createGroup _center_2;
 
 _unit_56 = objNull;
 if (true) then

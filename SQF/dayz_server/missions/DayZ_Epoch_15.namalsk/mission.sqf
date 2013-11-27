@@ -306,11 +306,6 @@ if (true) then
   _this setPos [5765.249, 10774.792, 1.335144e-005];
 };
 
-_this = createCenter resistance;
-_center_1 = _this;
-
- = createGroup _center_1;
-
 _unit_3 = objNull;
 if (true) then
 {
@@ -369,11 +364,6 @@ if (true) then
   _vehicle_69 = _this;
   _this setPos [5771.5537, 10781.919, 3.8146973e-006];
 };
-
-_this = createCenter civilian;
-_center_2 = _this;
-
- = createGroup _center_2;
 
 _unit_7 = objNull;
 if (true) then

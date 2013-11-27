@@ -1,10 +1,4 @@
 
-_this = createCenter civilian;
-_center_1 = _this;
-
- = createGroup _center_1;
-
-
 _vehicle_22 = objNull;
 if (true) then
 {

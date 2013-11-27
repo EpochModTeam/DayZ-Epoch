@@ -1,7 +1,3 @@
-_this = createCenter civilian;
-_center_1 = _this;
-
- = createGroup _center_1;
 
 _unit_2 = objNull;
 if (true) then

@@ -1,19 +1,4 @@
 
-_this = createCenter west;
-_center_0 = _this;
-
- = createGroup _center_0;
-
-_this = createCenter civilian;
-_center_1 = _this;
-
- = createGroup _center_1;
-
-_this = createCenter resistance;
-_center_2 = _this;
-
- = createGroup _center_2;
-
 _unit_63 = objNull;
 if (true) then
 {

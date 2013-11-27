@@ -2091,21 +2091,6 @@ if (true) then
   _this setPos [2396.1758, 7528.0537, 0.81695074];
 };
 
-_this = createCenter resistance;
-_center_1 = _this;
-
- = createGroup _center_1;
-
-_this = createCenter civilian;
-_center_2 = _this;
-
- = createGroup _center_2;
-
-_this = createCenter east;
-_center_3 = _this;
-
- = createGroup _center_3;
-
 _unit_105 = objNull;
 if (true) then
 {

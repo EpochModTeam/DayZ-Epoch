@@ -178,12 +178,6 @@ if (true) then
   _this setDir 3.04793;
   _this setPos [1962.5618, 12555.738, 3.0517578e-005];
 };
-
-_this = createCenter civilian;
-_center_1 = _this;
-
- = createGroup _center_1;
-
 _unit_5 = objNull;
 if (true) then
 {
@@ -2610,11 +2604,6 @@ if (true) then
   _this setDir 166.63742;
   _this setPos [749.52051, 10484.229, -6.1035156e-005];
 };
-
-_this = createCenter resistance;
-_center_3 = _this;
-
- = createGroup _center_3;
 
 _unit_119 = objNull;
 if (true) then

@@ -60,12 +60,6 @@ if (true) then
   _this setDir 36.088291;
   _this setPos [11465.908, 11356.04, -6.1035156e-005];
 };
-
-_this = createCenter civilian;
-_center_1 = _this;
-
- = createGroup _center_1;
-
 _unit_13 = objNull;
 if (true) then
 {
@@ -1109,11 +1103,6 @@ if (true) then
   _this setVehicleInit "this allowDammage false; this enableSimulation false;";
   _this setPos [12946.147, 12768.145, -4.5776367e-005];
 };
-
-_this = createCenter resistance;
-_center_2 = _this;
-
- = createGroup _center_2;
 
 _unit_108 = objNull;
 if (true) then
