@@ -3937,7 +3937,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_21;
+		displayName = "Round Sandbag Fence";
 		model = "\dayz_equip\models\sandbags.p3d";
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_21;
@@ -4057,13 +4057,13 @@ class CfgMagazines {
                                 script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
                                 neednearby[] = {};
                                 requiretools[] = {"ItemEtool","ItemToolbox"};
-                                output[] = {{"ItemSandbagExLarge5w",1}};
+                                output[] = {{"ItemSandbagExLarge5x",1}};
                                 input[] = {{"ItemSandbagExLarge",1},{"ItemSandbagLarge",2}};
                         };
 		};
 	};
 	
-	class ItemSandbagExLarge5w : CA_Magazine {
+	class ItemSandbagExLarge5x : CA_Magazine {
 		scope = public;
 		count = 1;
 		type = 256;
@@ -4074,7 +4074,7 @@ class CfgMagazines {
 		weight = 200;
 		class ItemActions {
 			class Build {
-				text = "Build Quintuple H-barrier";
+				text = "Build 5x H-barrier";
 				script = "spawn player_build;";
 				require[] = {"ItemEtool"};
 				create = "Land_HBarrier5_DZ";
