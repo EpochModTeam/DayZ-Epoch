@@ -6,7 +6,7 @@ _group_1 = createGroup _center_1;
 _unit_2 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["RU_Worker1", [4250.3955, 4481.9404, 3.8481112], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["RU_Worker1", [4250.3955, 4481.9404, 3.8481112], [], 0, "CAN_COLLIDE"];
   _unit_2 = _this;
   _this setDir 13.246977;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -106,7 +106,7 @@ if (true) then
 _unit_11 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Citizen2_EP1", [3011.9712, 5934.8613, 3.5805645], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Citizen2_EP1", [3011.9712, 5934.8613, 3.5805645], [], 0, "CAN_COLLIDE"];
   _unit_11 = _this;
   _this setDir 7.3076472;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -144,7 +144,7 @@ if (true) then
 _unit_15 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Worker1", [3005.1003, 5931.6553, 0.32037464], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Worker1", [3005.1003, 5931.6553, 0.32037464], [], 0, "CAN_COLLIDE"];
   _unit_15 = _this;
   _this setDir 267.2005;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -226,7 +226,7 @@ if (true) then
 _unit_20 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Worker2", [6013.0737, 6629.2124, 1.5258789e-005], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Worker2", [6013.0737, 6629.2124, 1.5258789e-005], [], 0, "CAN_COLLIDE"];
   _unit_20 = _this;
   _this setDir 138.41472;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -528,7 +528,7 @@ if (true) then
 _unit_49 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Pilot_EP1", [7033.144, 7103.0996, -1.8119812e-005], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Pilot_EP1", [7033.144, 7103.0996, -1.8119812e-005], [], 0, "CAN_COLLIDE"];
   _unit_49 = _this;
   _this setDir -50.393272;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -611,7 +611,7 @@ if (true) then
 _unit_51 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Worker2", [6545.7944, 6867.1309, 0.13616294], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Worker2", [6545.7944, 6867.1309, 0.13616294], [], 0, "CAN_COLLIDE"];
   _unit_51 = _this;
   _this setDir 10.41416;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -773,7 +773,7 @@ if (true) then
 _unit_59 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Worker4", [7551.1641, 3025.2014, 0.98590052], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Worker4", [7551.1641, 3025.2014, 0.98590052], [], 0, "CAN_COLLIDE"];
   _unit_59 = _this;
   _this setDir -101.36158;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -882,7 +882,7 @@ if (true) then
 _unit_65 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Pilot", [4143.9258, 1481.0282, -1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Pilot", [4143.9258, 1481.0282, -1.9073486e-006], [], 0, "CAN_COLLIDE"];
   _unit_65 = _this;
   _this setDir 71.022041;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -893,7 +893,7 @@ if (true) then
 _unit_66 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["RU_Madam3", [4181.9175, 2341.8435, 5.1864305], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["RU_Madam3", [4181.9175, 2341.8435, 5.1864305], [], 0, "CAN_COLLIDE"];
   _unit_66 = _this;
   _this setDir 273.64359;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1230,7 +1230,7 @@ if (true) then
 _unit_71 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["CIV_EuroMan01_EP1", [3610.2993, 3688.4067, 0.2740716], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["CIV_EuroMan01_EP1", [3610.2993, 3688.4067, 0.2740716], [], 0, "CAN_COLLIDE"];
   _unit_71 = _this;
   _this setDir -160.882;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1241,7 +1241,7 @@ if (true) then
 _unit_72 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["CIV_EuroMan02_EP1", [3610.0063, 3685.4143, 0.2596041], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["CIV_EuroMan02_EP1", [3610.0063, 3685.4143, 0.2596041], [], 0, "CAN_COLLIDE"];
   _unit_72 = _this;
   _this setDir -108.81454;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1252,7 +1252,7 @@ if (true) then
 _unit_76 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Dr_Annie_Baker_EP1", [897.12573, 5270.0874, 3.6778364], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Dr_Annie_Baker_EP1", [897.12573, 5270.0874, 3.6778364], [], 0, "CAN_COLLIDE"];
   _unit_76 = _this;
   _this setDir -102.73165;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1263,7 +1263,7 @@ if (true) then
 _unit_77 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["CIV_EuroWoman01_EP1", [891.1792, 5271.9116, 0.56924075], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["CIV_EuroWoman01_EP1", [891.1792, 5271.9116, 0.56924075], [], 0, "CAN_COLLIDE"];
   _unit_77 = _this;
   _this setDir 95.87394;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1301,7 +1301,7 @@ if (true) then
 _unit_80 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Citizen3_EP1", [719.30035, 1576.938, 14.100372], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Citizen3_EP1", [719.30035, 1576.938, 14.100372], [], 0, "CAN_COLLIDE"];
   _unit_80 = _this;
   _this setDir 72.737617;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1411,7 +1411,7 @@ if (true) then
 _unit_85 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman2s", [3059.0198, 8021.9331, 2.8610229e-006], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman2s", [3059.0198, 8021.9331, 2.8610229e-006], [], 0, "CAN_COLLIDE"];
   _unit_85 = _this;
   _this setDir -5.0591068;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1491,7 +1491,7 @@ if (true) then
 _unit_87 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman3s", [8348.2188, 8739.2813, 8.5592041], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman3s", [8348.2188, 8739.2813, 8.5592041], [], 0, "CAN_COLLIDE"];
   _unit_87 = _this;
   _this setDir 367.17648;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1520,7 +1520,7 @@ if (true) then
 _unit_90 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman5", [7509.8115, 2951.6182, -8.5830688e-006], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman5", [7509.8115, 2951.6182, -8.5830688e-006], [], 0, "CAN_COLLIDE"];
   _unit_90 = _this;
   _this setDir 167.27051;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1701,7 +1701,7 @@ if (true) then
 _unit_99 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Rocker4", [1724.6815, 4136.9688, 7.6293945e-006], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Rocker4", [1724.6815, 4136.9688, 7.6293945e-006], [], 0, "CAN_COLLIDE"];
   _unit_99 = _this;
   _this setDir 90.808693;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1863,7 +1863,7 @@ if (true) then
 _unit_102 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman7s", [2381.4463, 4119.7832, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman7s", [2381.4463, 4119.7832, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
   _unit_102 = _this;
   _this setDir 82.011307;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1955,7 +1955,7 @@ if (true) then
 _unit_106 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Damsel3", [2382.6038, 4114.354, -1.1444092e-005], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Damsel3", [2382.6038, 4114.354, -1.1444092e-005], [], 0, "CAN_COLLIDE"];
   _unit_106 = _this;
   _this setDir 88.664886;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1966,7 +1966,7 @@ if (true) then
 _unit_109 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman5s", [3925.5791, 5225.2319, 1.7729917], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman5s", [3925.5791, 5225.2319, 1.7729917], [], 0, "CAN_COLLIDE"];
   _unit_109 = _this;
   _this setDir 89.601418;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1977,7 +1977,7 @@ if (true) then
 _unit_111 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman2", [3879.7634, 2236.843, 1.1846944], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman2", [3879.7634, 2236.843, 1.1846944], [], 0, "CAN_COLLIDE"];
   _unit_111 = _this;
   _this setDir 43.212208;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -1988,7 +1988,7 @@ if (true) then
 _unit_113 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman4", [5511.9951, 4394.8013, 4.1448889], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman4", [5511.9951, 4394.8013, 4.1448889], [], 0, "CAN_COLLIDE"];
   _unit_113 = _this;
   _this setDir 25.054167;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2143,7 +2143,7 @@ if (true) then
 _unit_117 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["TK_CIV_Woman02_EP1", [4236.6968, 4842.8164, 0.36117083], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["TK_CIV_Woman02_EP1", [4236.6968, 4842.8164, 0.36117083], [], 0, "CAN_COLLIDE"];
   _unit_117 = _this;
   _this setDir 194.36969;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2163,7 +2163,7 @@ if (true) then
 _unit_120 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["TK_CIV_Woman03_EP1", [6676.3252, 6361.1772, 0.72185659], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["TK_CIV_Woman03_EP1", [6676.3252, 6361.1772, 0.72185659], [], 0, "CAN_COLLIDE"];
   _unit_120 = _this;
   _this setDir 132.67206;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2174,7 +2174,7 @@ if (true) then
 _unit_121 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman7", [7508.0059, 2951.5234], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman7", [7508.0059, 2951.5234], [], 0, "CAN_COLLIDE"];
   _unit_121 = _this;
   _this setDir 178.10352;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2185,7 +2185,7 @@ if (true) then
 _unit_127 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman6", [2375.4302, 4120.2432, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman6", [2375.4302, 4120.2432, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
   _unit_127 = _this;
   _this setDir 70.515434;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2212,7 +2212,7 @@ if (true) then
 _unit_128 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["ibr_lingorman6s", [1737.4084, 4142.3691, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["ibr_lingorman6s", [1737.4084, 4142.3691, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
   _unit_128 = _this;
   _this setDir 184.57875;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2439,7 +2439,7 @@ if (true) then
 _unit_154 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["RU_Doctor", [6678.1494, 4294.6987, 0.55937135], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["RU_Doctor", [6678.1494, 4294.6987, 0.55937135], [], 0, "CAN_COLLIDE"];
   _unit_154 = _this;
   _this setDir 15.470127;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2450,7 +2450,7 @@ if (true) then
 _unit_159 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["TK_CIV_Takistani04_EP1", [4099.8921, 9243.417, 6.3896179e-005], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["TK_CIV_Takistani04_EP1", [4099.8921, 9243.417, 6.3896179e-005], [], 0, "CAN_COLLIDE"];
   _unit_159 = _this;
   _this setDir 170.86682;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
@@ -2493,7 +2493,7 @@ if (true) then
 _unit_169 = objNull;
 if (true) then
 {
-  _this = _group_1 createUnit ["Functionary1", [4144.0195, 1478.6262], [], 0, "CAN_COLLIDE"];
+  _this = _group_1 createAgent ["Functionary1", [4144.0195, 1478.6262], [], 0, "CAN_COLLIDE"];
   _unit_169 = _this;
   _this setDir 467.24658;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
