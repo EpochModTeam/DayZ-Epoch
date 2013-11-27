@@ -31,7 +31,7 @@ _isDestructable = _obj isKindOf "BuiltItems";
 _isWreck = _objType in DZE_isWreck;
 _isRemovable = _objType in DZE_isRemovable;
 _isWreckBuilding = _objType in DZE_isWreckBuilding;
-_isModular = _objType isKindOf "ModularItems";
+_isModular = _obj isKindOf "ModularItems";
 
 _limit = 3;
 if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
@@ -68,8 +68,7 @@ cutText [format[(localize "str_epoch_player_162"),_nameVehicle], "PLAIN DOWN"];
 
 if (_isModular) then {
      //allow previous cutText to show, then show this if modular.
-     sleep 2;
-     {cutText [format["Deconstructing modular buildables will not refund any components."], "PLAIN"];};
+     cutText ["Deconstructing modular buildables will not refund any components.", "PLAIN"];
 };
 
 // Alert zombies once.
