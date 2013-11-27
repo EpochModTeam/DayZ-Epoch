@@ -8,17 +8,6 @@ private ["_isWreckBuilding","_temp_keys","_magazinesPlayer","_isPZombie","_vehic
 
 if (DZE_ActionInProgress) exitWith {}; // Do not allow if any script is running.
 
-_groups = allGroups;
-//Clean groups
-{
-	if (_x == group player) then {
-		diag_log ("Player In Group" + str(_x) + " WITH " + str(count units _x) + " UNITS");
-	} else {
-		diag_log ("Player NotIn Group" + str(_x) + " WITH " + str(count units _x) + " UNITS");
-	};
-	diag_log ("Units" + str(units _x));
-} forEach _groups;
-
 _vehicle = vehicle player;
 _isPZombie = player isKindOf "PZombie_VB";
 _inVehicle = (_vehicle != player);
