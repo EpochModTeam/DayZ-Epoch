@@ -17,23 +17,21 @@ if ((speed _vehicle > 10)) exitWith {
 if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
     _rnd = (round(random 4)) + 1;
 	_move = "ZombieFeed" + str(_rnd);
+	_zattacktype = 0;
 } else {
-	if (_type == "zombie") then {
-        _rnd = (round(random 9)) + 1;
-		_move = "ZombieStandingAttack" + str(_rnd);
-	} else {
-		_move = "Dog_Attack";
-	};
+	_zattacktype = 1;
+    _rnd = (round(random 9)) + 1;
+	_move = "ZombieStandingAttack" + str(_rnd);
 };
-_dir = [_unit,player] call BIS_Fnc_dirTo;
-_unit setDir _dir;
 
-// _unit playMove _move;
+_dir = [_unit,player] call BIS_Fnc_dirTo;
 
 if (local _unit) then {
+	_unit setDir _dir;
 	_unit switchMove _move;
 } else {
-	[objNull,  _unit,  rSwitchMove,  _move] call RE;
+	PVDZE_zmb_switchMove = [_unit,_zattacktype,_rnd,_dir];
+	(owner _unit) publicVariableClient "PVDZE_zmb_switchMove";
 };
 
 //Wait

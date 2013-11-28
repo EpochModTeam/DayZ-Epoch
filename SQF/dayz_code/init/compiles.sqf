@@ -298,6 +298,25 @@ if (!isDedicated) then {
 		//_pos =		getPosATL _unit;
 		//_id = [_pos,_unit] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
 	};
+
+	// perform attack locally [_zattacktype,_rnd,_dir]
+	local_animateZed = {
+		private ["_move","_rnd","_animtype","_animnum","_dir","_unit"];
+		_unit = 	_this select 0;
+		if (local _unit) then {
+			_animtype = _this select 1;
+			_animnum = 	_this select 2;
+			_dir = 		_this select 3;
+			if (_animtype == 0) then {
+				_move = "ZombieFeed" + str(_rnd);
+			} else {
+				_move = "ZombieStandingAttack" + str(_rnd);
+			};
+			_unit setDir _dir;
+			_unit switchMove _move;
+		};
+	};
+
 	
 	dayz_equipCheck = {
 		private ["_empty", "_needed","_diff","_success"];

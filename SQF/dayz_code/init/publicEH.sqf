@@ -79,7 +79,9 @@ if (!isDedicated) then {
 	"PVDZE_obj_Fire"		addPublicVariableEventHandler {nul=(_this select 1) spawn BIS_Effects_Burn};
 	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {cutText[(_this select 1),"PLAIN DOWN"];};
 	
-	"PVDZE_obj_Debris"		addPublicVariableEventHandler {(_this select 1) call local_roadDebris};
+	"PVDZE_zmb_switchMove"		addPublicVariableEventHandler {(_this select 1) call local_animateZed};
+
+	//"PVDZE_obj_Debris"		addPublicVariableEventHandler {(_this select 1) call local_roadDebris};
 	
 	"norrnRaDrag"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
 	"norrnRnoAnim"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\noAnim.sqf"};
