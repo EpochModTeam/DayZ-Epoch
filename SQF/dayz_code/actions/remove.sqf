@@ -12,7 +12,7 @@ s_player_deleteBuild = 1;
 
 _obj = _this select 3;
 
-_activatingPlayer = getPlayerUID player;
+_activatingPlayer = player;
 
 _objOwnerID = _obj getVariable["CharacterID","0"];
 _isOwnerOfObj = (_objOwnerID == dayz_characterID);

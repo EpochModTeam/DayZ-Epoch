@@ -506,12 +506,13 @@ if (!isDedicated) then {
 
 	dayz_EjectPlayer = {
 		// check if player in vehicle
-		_vehicle = vehicle player;
+        private ["_noDriver","_vehicle","_inVehicle"];
+        _vehicle = vehicle player;
 		_inVehicle = (_vehicle != player);
 		if(_inVehicle) then {
 			_noDriver = ((_vehicle emptyPositions "driver") > 0);
-			if (_noDriver) then {
-				player action [ "eject", (vehicle player)];
+			if (_noDriver and (speed _vehicle) != 0) then {
+				player action [ "eject", _vehicle];
 			};
 		};
 	};

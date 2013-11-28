@@ -1,8 +1,5 @@
 private ["_part","_cancel","_color","_percent","_string","_handle","_damage","_cmpt","_vehicle","_hitpoints"];
 
-// [ _trader_id, _category, _action ];
-// _activatingPlayer = getPlayerUID player;
-
 _vehicle = _this select 3;
 
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
