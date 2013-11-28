@@ -16,7 +16,7 @@ class ItemHatchet_DZE : ItemCore {
 				};
 				output[]=
 				{
-					"MeleeHatchet"
+					"MeleeHatchet_DZE"
 				};
 			};
 		};

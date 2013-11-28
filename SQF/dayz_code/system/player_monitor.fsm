@@ -1098,7 +1098,7 @@ class FSM
        "	player removeMagazine 'sledge_swing';	" \n
        "	player addMagazine 'sledge_swing';" \n
        "};" \n
-       "if (player hasWeapon ""MeleeHatchet"") then {" \n
+       "if (player hasWeapon ""MeleeHatchet_DZE"") then {" \n
        "	player removeMagazine 'Hatchet_Swing';		" \n
        "	player addMagazine 'Hatchet_Swing';" \n
        "};" \n

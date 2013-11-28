@@ -1232,7 +1232,7 @@ class CfgWeight
 		{
 			weight = 1;
 		};
-		class MeleeHatchet  
+		class MeleeHatchet_DZE  
 		{
 			weight = 1;
 		};

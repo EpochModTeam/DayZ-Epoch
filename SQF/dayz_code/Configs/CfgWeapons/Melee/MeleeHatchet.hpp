@@ -1,4 +1,4 @@
-class MeleeHatchet: MeleeWeapon
+class MeleeHatchet_DZE: MeleeWeapon
 {
 	scope=2;
 	melee= "true";
@@ -25,7 +25,7 @@ class MeleeHatchet: MeleeWeapon
 			script="spawn player_addToolbelt;";
 			use[]=
 			{
-				"MeleeHatchet"
+				"MeleeHatchet_DZE"
 			};
 			output[]=
 			{

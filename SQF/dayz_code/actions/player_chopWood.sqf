@@ -8,7 +8,7 @@ private ["_isOk","_objName","_finished","_proceed","_counter","_itemOut","_count
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_53") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
-if((currentWeapon player) != "MeleeHatchet") exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_54"), "PLAIN DOWN"]; };
+if((currentWeapon player) != "MeleeHatchet_DZE") exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_54"), "PLAIN DOWN"]; };
 
 // allowed trees list move this later
 _trees = DZE_trees;

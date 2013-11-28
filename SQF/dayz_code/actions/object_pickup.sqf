@@ -44,7 +44,7 @@ if(_qty >= 1) then {
 	_isOk = [player,_config] call BIS_fnc_invAdd;
 	if (_isOk) then {
 		deleteVehicle _holder;
-		if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
+		if (_classname in ["MeleeHatchet_DZE","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 			if (_type == "cfgWeapons") then {
 				_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
 				//_wtype = ((weapons player) select 0);
