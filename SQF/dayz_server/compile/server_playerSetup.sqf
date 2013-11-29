@@ -240,9 +240,9 @@ _clientID = owner _playerObj;
 if (!isNull _playerObj) then {
 	_clientID publicVariableClient "dayzPlayerLogin2";
 	
-	// send road blocks
-	// _clientID publicVariableClient "PVDZE_obj_Debris";
-
+	if (isNil "PVDZE_plr_SetDate") then {
+		call server_timeSync;
+	};
 	_clientID publicVariableClient "PVDZE_plr_SetDate";
 };
 //record time started
@@ -251,5 +251,5 @@ _playerObj setVariable ["lastTime",time];
 
 //diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 
-PVDZE_plr_Login = null;
-PVDZE_plr_Login2 = null;
+PVDZE_plr_Login = nil;
+PVDZE_plr_Login2 = nil;
