@@ -19,5 +19,5 @@ if (!(_callerID in _rfriendlies)) then {
 	titleText [format["You have tagged a player as friendly. Waiting for other player to accept.",(name _target)], "PLAIN DOWN"];
 	// target
 	PVDZE_plr_FriendRQ = format[(localize "str_epoch_player_2"), (name _caller)];
-	(owner _target) publicVariableClient "PVDZE_plr_FriendRQ";
+	publicVariable "PVDZE_plr_FriendRQ";
 };
