@@ -14,7 +14,7 @@ class DZE_Base_Object : All {
 	displayName = "";
 	mapSize = 7.5;
 	animated = true;
-	armor = 200;
+	armor = 600;
 	destrType = "DestructBuilding";
 	damageResistance = 0.004;
 	// static 
@@ -94,7 +94,7 @@ class Land_DZE_WoodDoor_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 200;						/* "Lifepoints", if you like to call it that way.*/
+	armor = 600;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
@@ -124,7 +124,7 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 200;						/* "Lifepoints", if you like to call it that way.*/
+	armor = 600;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
@@ -252,19 +252,19 @@ class Land_iron_vein_wreck: ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
 	displayName = "iron vein ruins";
-	removeoutput[] = {{"PartOre",{6,4}},{"PartOreSilver",{0,1}},{"PartOreGold",{0,1}}};
+	removeoutput[] = {{"PartOre",{10,10}},{"PartOreSilver",{0,10}},{"PartOreGold",{0,5}}};
 };
 class Land_silver_vein_wreck: ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = "silver vein ruins";
-	removeoutput[] = {{"PartOreSilver",{6,4}},{"PartOre",{0,1}},{"PartOreGold",{0,1}}};
+	removeoutput[] = {{"PartOreSilver",{10,10}},{"PartOre",{0,1}},{"PartOreGold",{6,4}}};
 };
 class Land_gold_vein_wreck: ruins	{
 	scope = 1;
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = "gold vein ruins";
-	removeoutput[] = {{"PartOreGold",{6,4}},{"PartOre",{0,1}},{"PartOreSilver",{0,1}}};
+	removeoutput[] = {{"PartOreGold",{10,10}},{"PartOre",{0,1}},{"PartOreSilver",{6,4}}};
 };
 
 class Land_ammo_supply_wreck: ruins	{
