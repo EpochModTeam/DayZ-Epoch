@@ -445,6 +445,8 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\Ural.hpp"
 	#include "CfgVehicles\LAND\Kamaz.hpp"
 	#include "CfgVehicles\LAND\Volha.hpp"
+	#include "CfgVehicles\LAND\VWGolf.hpp"
+	#include "CfgVehicles\LAND\Skoda.hpp"
 
 	// SEA
 	// #include "CfgVehicles\SEA\RHIB.hpp"
