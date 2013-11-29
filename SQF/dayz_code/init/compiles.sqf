@@ -324,12 +324,7 @@ if (!isDedicated) then {
 	};
 
 	player_setDate = {
-		private ["_setdatebool"];
-		_setdatebool = false;
-		if (!([_this, date] call BIS_fnc_areEqual)) exitWith {
-			_setdatebool = true;
-		};
-		if (_setdatebool) then {
+		if (!([_this, date] call BIS_fnc_areEqual)) then {
 			setDate _this;
 		};
 	};
