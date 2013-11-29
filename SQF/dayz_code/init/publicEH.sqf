@@ -77,9 +77,9 @@ if (!isDedicated) then {
 	"PVDZE_plr_Morph2"		addPublicVariableEventHandler {(_this select 1) call player_serverModelChange};
 	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
 	"PVDZE_obj_Fire"		addPublicVariableEventHandler {nul=(_this select 1) spawn BIS_Effects_Burn};
-	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {cutText[(_this select 1),"PLAIN DOWN"];};
+	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {(_this select 1) call player_tagFriendlyMsg};
 	
-	"PVDZE_obj_Debris"		addPublicVariableEventHandler {(_this select 1) call local_roadDebris};
+	// "PVDZE_obj_Debris"		addPublicVariableEventHandler {(_this select 1) call local_roadDebris};
 	
 	"norrnRaDrag"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
 	"norrnRnoAnim"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\noAnim.sqf"};

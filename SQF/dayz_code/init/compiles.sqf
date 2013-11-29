@@ -329,6 +329,12 @@ if (!isDedicated) then {
 		};
 	};
 
+	player_tagFriendlyMsg = {
+		if(player == _this) then { 
+			cutText[(localize "str_epoch_player_2"),"PLAIN DOWN"];
+		}; 
+	};
+
 	player_serverModelChange = {
 		private["_object","_model"];
 		_object = _this select 0;
