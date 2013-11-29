@@ -12,12 +12,6 @@ waitUntil{initialized}; //means all the functions are now defined
 diag_log "HIVE: Starting";
 
 waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug during login of the first player)
-
-//Set Time
-call server_timeSync;
-
-// set Weather
-// call server_weather;
 	
 // Custom Configs
 if(isnil "MaxVehicleLimit") then {
