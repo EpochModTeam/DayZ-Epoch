@@ -652,13 +652,13 @@ server_spawncleanDead = {
 			if (_x isKindOf "zZombie_Base") then
 			{
 				_x call dayz_perform_purge;
-				sleep 0.1;
+				sleep 0.025;
 			};
 			if (_x isKindOf "CAManBase") then {
 				_deathTime = _x getVariable ["processedDeath", diag_tickTime];
 				if (diag_tickTime - _deathTime > 3600) then {
 					_x call dayz_perform_purge;
-					sleep 0.1;
+					sleep 0.025;
 				};
 			};
 		};
@@ -667,82 +667,94 @@ server_spawncleanDead = {
 };
 
 server_spawnCleanNull = {
+	private ["_delQtyNull"];
 	_delQtyNull = 0;
 	{
 		if (isNull _x) then {
 			_x call dayz_perform_purge;
-			sleep 0.1;
+			sleep 0.025;
 			_delQtyNull = _delQtyNull + 1;
 		};
 		sleep 0.001;
 	} forEach (allMissionObjects "");
-
 	if (_delQtyNull > 0) then {
 		diag_log (format["CLEANUP: Deleted %1 null objects",_delQtyNull]);
 	};
 };
 
 server_spawnCleanFire = {
+	private ["_delQtyFP","_qty","_delQtyNull","_missionFires"];
+	_missionFires = allMissionObjects "Land_Fire_DZ";
 	_delQtyFP = 0;
 	{
 		if (local _x) then {
 			deleteVehicle _x;
-			sleep 0.1;
+			sleep 0.025;
 			_delQtyFP = _delQtyFP + 1;
 		};
 		sleep 0.001;
-	} forEach (allMissionObjects "Land_Fire_DZ");
+	} forEach _missionFires;
 	if (_delQtyFP > 0) then {
-		diag_log (format["CLEANUP: Deleted %1 fireplaces",_delQtyNull]);
+		_qty = count _missionFires;
+		diag_log (format["CLEANUP: Deleted %1 fireplaces out of %2",_delQtyNull,_qty]);
 	};
 };
 
 server_spawnCleanLoot = {
+	private ["_created","_delQty","_nearby","_age","_keep","_qty","_missionObjs","_dateNow"];
+	_missionObjs =  allMissionObjects "ReammoBox";
 	_delQty = 0;
-	_timeNow = diag_tickTime;
+	_dateNow = (DateToNumber date);
 	{
-		if (local _x) then {
-			_keep = _x getVariable ["permaLoot",false];
-			if (!_keep) then {
-				_created = _x getVariable ["created",-0.1];
-				if (_created == -0.1) then {
-					_x setVariable ["created",_timeNow,false];
-					_created = _timeNow;
+		_keep = _x getVariable ["permaLoot",false];
+		if (!_keep) then {
+			_created = _x getVariable ["created",-0.1];
+			if (_created == -0.1) then {
+				_x setVariable ["created",_dateNow,false];
+				_created = _dateNow;
+			} else {
+				_age = (_dateNow - _created) * 525948;
+				if (_age > 20) then {
+					_nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
+					if (_nearby==0) then {
+						deleteVehicle _x;
+						sleep 0.025;
+						_delQty = _delQty + 1;
+					};
 				};
-				_nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
-				if ((_nearby==0) && (_timeNow - _created > 1200)) then {
-					deleteVehicle _x;
-					sleep 0.1;
-					_delQty = _delQty + 1;
-				};				
 			};
 		};
 		sleep 0.001;
-	} forEach (allMissionObjects "ReammoBox");
+	} forEach _missionObjs;
 	if (_delQty > 0) then {
-		diag_log (format["CLEANUP: Deleted %1 Loot Piles",_delQty]);
+		_qty = count _missionObjs;
+		diag_log (format["CLEANUP: Deleted %1 Loot Piles out of %2",_delQty,_qty]);
 	};
 };
 
 server_spawnCleanAnimals = {
+	private ["_delQtyAnimal","_qty","_missonAnimals"];
+	_missonAnimals = allMissionObjects "CAAnimalBase";
 	_delQtyAnimal = 0;
 	{
 		if (local _x) then {
 			_x call dayz_perform_purge;
-			sleep 0.1;
+			sleep 0.025;
 			_delQtyAnimal = _delQtyAnimal + 1;
+		} else {
+			if (!alive _x) then {
+				_nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
+				if (_nearby==0) then {
+					_x call dayz_perform_purge;
+					sleep 0.025;
+					_delQtyAnimal = _delQtyAnimal + 1;
+				};
+			};
 		};
 		sleep 0.001;
-	} forEach (allMissionObjects "CAAnimalBase");
+	} forEach _missonAnimals;
 	if (_delQtyAnimal > 0) then {
-		diag_log (format["CLEANUP: Deleted %1 Animals",_delQtyAnimal]);
+		_qty = count _missonAnimals;
+		diag_log (format["CLEANUP: Deleted %1 Animals out of %2",_delQtyAnimal,_qty]);
 	};
-};
-
-server_spawnUpdateObjects = {
-	//diag_log format["DEBUG: needUpdate_objects=%1",needUpdate_objects];
-{
-	needUpdate_objects = needUpdate_objects - [_x];
-	[_x,"damage",true] call server_updateObject;
-} forEach needUpdate_objects;
 };
