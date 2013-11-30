@@ -1267,7 +1267,7 @@ class FSM
        "{" \n
        "	_fadeFire = _x getVariable['fadeFire', true];" \n
        "	if (!_fadeFire) then {" \n
-       "		nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
+       "		_nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
        "	};" \n
        "} forEach allMissionObjects ""SpawnableWreck"";" \n
        "" \n

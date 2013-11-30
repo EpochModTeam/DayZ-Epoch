@@ -120,7 +120,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	player playActionNow "Medic";
 	sleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;
-	_nul = [player,25,true,(getPosATL player)] spawn player_alertZombies;
+	[player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;
 	cutText [format[(localize "str_epoch_player_126"),_text], "PLAIN DOWN"];
 };
