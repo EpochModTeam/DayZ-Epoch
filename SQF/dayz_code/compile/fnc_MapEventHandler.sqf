@@ -16,7 +16,7 @@ if ("ItemMap_Debug" in items player) then {
 				_markerstr setMarkerShapeLocal "ELLIPSE";
 				_markerstr setMarkerBrushLocal "Grid";
 				_markerstr setMarkerSizeLocal [_radiusA, _radiusB];	
-	//		};
-		};	
-	};
+	//		};
+		};	
+	};
 };
