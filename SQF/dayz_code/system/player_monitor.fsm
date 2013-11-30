@@ -22,9 +22,9 @@ item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.00000
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
 item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
-item21[] = {"Phase_Two",2,4346,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
+item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
-item23[] = {"ERROR__Player_Already",2,250,175.000000,700.000000,275.000000,750.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
+item23[] = {"ERROR__Player_Already",2,4346,175.000000,700.000000,275.000000,750.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item24[] = {"Alive",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Alive"};
 item25[] = {"Position",2,250,-75.000000,800.000000,25.000000,850.000000,0.000000,"Position"};
 item26[] = {"Version_Ok",4,218,-175.000000,850.000000,-75.000000,900.000000,0.000000,"Version" \n "Ok"};
@@ -147,7 +147,7 @@ link74[] = {64,57};
 link75[] = {65,13};
 link76[] = {66,67};
 link77[] = {67,18};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-575.904236,250.442123,1099.357422,251.607941,573,613,1};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-472.070313,354.276123,1027.252686,179.503510,573,613,1};
 window[] = {2,-1,-1,-32000,-32000,979,376,1654,221,1,591};
 *//*%FSM</HEAD>*/
 class FSM
@@ -174,6 +174,8 @@ class FSM
        "_readytoAuth = false;" \n
        "_startCheck = 0;" \n
        "//player enableSimulation false;" \n
+       "" \n
+       "_debug = false;" \n
        "" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -228,7 +230,9 @@ class FSM
     {
       name = "Loading";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
+       "if (_debug) then {" \n
        "diag_log (""PLOGIN: Initating"");" \n
+       "};" \n
        "" \n
        "dayz_loadScreenMsg = (localize ""str_player_13""); " \n
        "" \n
@@ -351,7 +355,9 @@ class FSM
     class Prepare
     {
       name = "Prepare";
-      init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Player Model Exists"");"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "diag_log (""PLOGIN: Player Model Exists"");" \n
+       "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -372,8 +378,9 @@ class FSM
     class Collect
     {
       name = "Collect";
-      init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Player Ready"");" \n
-       "" \n
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "diag_log (""PLOGIN: Player Ready"");" \n
+       "};" \n
        "dayz_loadScreenMsg = (localize ""str_player_13""); " \n
        "" \n
        "progressLoadingScreen 0.3;" \n
@@ -433,7 +440,9 @@ class FSM
     class Request
     {
       name = "Request";
-      init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Requesting Authentication... ("" + _playerUID + "")"");" \n
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "diag_log (""PLOGIN: Requesting Authentication... ("" + _playerUID + "")"");" \n
+       "};" \n
        "dayz_loadScreenMsg = (localize ""str_player_15"");" \n
        "" \n
        "progressLoadingScreen 0.7;" \n
@@ -506,8 +515,9 @@ class FSM
        "" \n
        "dayz_loadScreenMsg = (localize ""str_player_17""); " \n
        "progressLoadingScreen 0.8;" \n
+       "if (_debug) then {" \n
        "diag_log (""PLOGIN: authenticated with : "" + str(_msg));" \n
-       "" \n
+       "};" \n
        "//Not Equal Failure" \n
        "" \n
        "if (isNil ""_model"") then {" \n
@@ -695,7 +705,9 @@ class FSM
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.9;" \n
-       "diag_log ""Attempting Phase two..."";"/*%FSM</STATEINIT""">*/;
+       "if (_debug) then {" \n
+       "diag_log ""Attempting Phase two..."";" \n
+       "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -717,8 +729,9 @@ class FSM
     {
       name = "Phase_Two";
       init = /*%FSM<STATEINIT""">*/"dayz_loadScreenMsg =  ""Character Data received from server""; " \n
+       "if (_debug) then {" \n
        "diag_log ""Finished..."";" \n
-       "" \n
+       "};" \n
        "_worldspace = 	dayzPlayerLogin2 select 0;" \n
        "_state =			dayzPlayerLogin2 select 1;" \n
        "" \n
@@ -1293,7 +1306,9 @@ class FSM
     class Enable_Sim
     {
       name = "Enable_Sim";
-      init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Enable Sim"");" \n
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "diag_log (""PLOGIN: Enable Sim"");" \n
+       "};" \n
        "" \n
        "_myEpochAnim = getText(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""dayzVersion"");" \n
        "_myEpoch = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
@@ -1405,7 +1420,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"//stream in location" \n
        "//[false] call stream_locationCheck;" \n
        "" \n
-       "_zombies = (getPosATL player) nearEntities [""zZombie_Base"",30];" \n
+       "_zombies = (getPosATL player) nearEntities [""zZombie_Base"",25];" \n
        "{deleteVehicle _x} forEach _zombies;" \n
        "" \n
        "endLoadingScreen;"/*%FSM</STATEINIT""">*/;
@@ -1565,8 +1580,9 @@ class FSM
       name = "Server_Loading";
       init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime;" \n
        "dayz_loadScreenMsg = (""Waiting for server to start authentication"");" \n
+       "if (_debug) then {" \n
        "diag_log ""PLOGIN: Waiting for server to start authentication"";" \n
-       "" \n
+       "};" \n
        "progressLoadingScreen 0.5;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
