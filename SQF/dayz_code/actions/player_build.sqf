@@ -265,7 +265,7 @@ if (_hasrequireditem) then {
 		if(_rotate) then {
 			_object setDir _dir;
 			_object setPosATL _position;
-			diag_log format["DEBUG Rotate BUILDING POS: %1", _position];
+			//diag_log format["DEBUG Rotate BUILDING POS: %1", _position];
 		};
 
 		if(_zheightchanged) then {
