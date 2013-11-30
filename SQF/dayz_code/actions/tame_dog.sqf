@@ -3,9 +3,7 @@
 	Author: Kane "Alby" Stone
 	Expanded to allow all meats as input by: [VB]AWOL - DayZ Epoch
 
-	Description:
-	Allows a player to tame/domesticate a dog.
-	Script is applied to object via addAction.
+	Description: Allows a player to tame/domesticate a dog. Script is applied to object via addAction.
 		
 	Variables:
 	_target = Object that action is attached too.
@@ -46,7 +44,7 @@ if(_removed == _countIn) then {
 		_animalID = _dog getVariable "fsm_handle";
 		_animalID setFSMVariable ["_isTamed", true];
 		sleep 1;
-		diag_log format["DEBUG: %1, id: %2 [%3]",_dog,_animalID,completedFSM _animalID];
+		//diag_log format["DEBUG: %1, id: %2 [%3]",_dog,_animalID,completedFSM _animalID];
 		if (!moveToCompleted _dog) then {
 			_dog moveTo (position _dog);
 		};
