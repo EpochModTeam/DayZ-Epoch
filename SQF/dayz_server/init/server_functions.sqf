@@ -230,11 +230,11 @@ spawn_vehicles = {
 
 			// vehicle limit reached, remove vehicle from list
 			// since elements cannot be removed from an array, overwrite it with the last element and cut the last element of (as long as order is not important)
+			_lastIndex = (count AllowedVehiclesList) - 1;
 			if (_lastIndex != _index) then {
-				_lastIndex = (count AllowedVehiclesList) - 1;
 				AllowedVehiclesList set [_index, AllowedVehiclesList select _lastIndex];
-				AllowedVehiclesList resize _lastIndex;
 			};
+			AllowedVehiclesList resize _lastIndex;
 		};
 
 		if (count AllowedVehiclesList == 0) then {
