@@ -6,11 +6,11 @@ if (!isDedicated) then {
 
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
-	BIS_Effects_Burn = 			compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf"; 
+	BIS_Effects_Burn = 				compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf"; 
 	player_zombieCheck = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_zombieCheck.sqf";	//Run on a players computer, checks if the player is near a zombie
 	player_zombieAttack = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_zombieAttack.sqf";	//Run on a players computer, causes a nearby zombie to attack them
 	fnc_usec_damageActions =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageActions.sqf";		//Checks which actions for nearby casualty
-	fnc_inAngleSector =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_inAngleSector.sqf";		//Checks which actions for nearby casualty
+	fnc_inAngleSector =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_inAngleSector.sqf";		//Checks which actions for nearby casualty
 	fnc_usec_selfActions =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_selfActions.sqf";		//Checks which actions for self
 	fnc_usec_unconscious =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_unconscious.sqf";
 	player_temp_calculation	=		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_temperatur.sqf";		//Temperatur System	//TeeChange
@@ -101,8 +101,8 @@ if (!isDedicated) then {
 	player_goFishing =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_goFishing.sqf";
 	player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
 	player_wearClothes =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
-	player_dropWeapon =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";
-	playerpip_setTrap =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_setTrap.sqf";
+	//player_dropWeapon =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";
+	//playerpip_setTrap =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_setTrap.sqf";
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
 	player_flipvehicle = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
@@ -127,94 +127,7 @@ if (!isDedicated) then {
 	onPreloadFinished 			"dayz_preloadFinished = true;";
 	
 
-	//This is still needed but the fsm should terminate if any errors pop up.
-	[] spawn {
-        private["_timeOut","_display","_control1","_control2"];
-        disableSerialization;
-        _timeOut = 0;
-        dayz_loadScreenMsg = "";
-        diag_log "DEBUG: loadscreen guard started.";
-        _display = uiNameSpace getVariable "BIS_loadingScreen";
-        if (!isNil "_display") then {
-                _control1 = _display displayctrl 8400;
-                _control2 = _display displayctrl 102;
-        };
-                
-        waitUntil {!dayz_DisplayGenderSelect};
-                
-        // 120 sec timeout (12000 * 0.01)
-        while { _timeOut < 12000 } do {
-            if (dayz_clientPreload && dayz_authed) exitWith { diag_log "PLOGIN: Login loop completed!"; };
-            if (!isNil "_display") then {
-                if ( isNull _display ) then {                        
-                        waitUntil { !dialog; };                                
-                        startLoadingScreen ["","RscDisplayLoadCustom"];
-                        _display = uiNameSpace getVariable "BIS_loadingScreen";
-                        _control1 = _display displayctrl 8400;
-                        _control2 = _display displayctrl 102;
-                };
-
-                if ( dayz_loadScreenMsg != "" ) then {
-                        _control1 ctrlSetText dayz_loadScreenMsg;
-                        dayz_loadScreenMsg = "";
-                };
-
-                _control2 ctrlSetText format["%1",round(_timeOut*0.01)];
-            };
-
-            _timeOut = _timeOut + 1;
-
-            if (_timeOut >= 12000) then {
-                1 cutText [localize "str_player_login_timeout", "PLAIN DOWN"];
-                sleep 10;
-                endLoadingScreen;
-                endMission "END1";
-            };
-
-            sleep 0.01;
-        };
-	};
-
-	// TODO: need move it in player_monitor.fsm
-	// allow player disconnect from server, if loading hang, kicked by BE etc.
-	[] spawn {
-		private["_timeOut","_display","_control1","_control2"];
-		disableSerialization;
-		_timeOut = 0;
-		dayz_loadScreenMsg = "";
-		diag_log "DEBUG: loadscreen guard started.";
-		_display = uiNameSpace getVariable "BIS_loadingScreen";
-		_control1 = _display displayctrl 8400;
-		_control2 = _display displayctrl 102;
-		// 120 sec timeout
-		while { _timeOut < 3000 && !dayz_clientPreload && !dayz_authed } do {
-
-			if ( isNull _display ) then {
-				waitUntil { !dialog; };
-				startLoadingScreen ["","RscDisplayLoadCustom"];
-				_display = uiNameSpace getVariable "BIS_loadingScreen";
-				_control1 = _display displayctrl 8400;
-				_control2 = _display displayctrl 102;
-			};
-
-			if ( dayz_loadScreenMsg != "" ) then {
-				_control1 ctrlSetText dayz_loadScreenMsg;
-				dayz_loadScreenMsg = "";
-			};
-			_control2 ctrlSetText format["%1",round(_timeOut*0.01)];
-			_timeOut = _timeOut + 1;
-			sleep 0.01;
-		};
-		endLoadingScreen;
-		/*
-		if ( !dayz_clientPreload && !dayz_authed ) then {
-			diag_log "DEBUG: loadscreen guard ended with timeout.";
-			disableUserInput false;
-			1 cutText ["Disconnected!", "PLAIN"];
-			player enableSimulation false;
-		} else { diag_log "DEBUG: loadscreen guard ended."; };
-		*/
-	}; 
+	 
 
 	//
 	RunTime = 0;
@@ -321,12 +234,6 @@ if (!isDedicated) then {
 			_counter = _counter + _x;
 		} forEach _this;
 		_counter
-	};
-
-	player_setDate = {
-		if (!([_this, date] call BIS_fnc_areEqual)) then {
-			setDate _this;
-		};
 	};
 
 	player_tagFriendlyMsg = {
@@ -437,19 +344,100 @@ if (!isDedicated) then {
 		};
 		_notClosest
 	};
-	
-	dayz_originalPlayer = player;
-	
+		
 	// trader menu code
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderMenu.sqf";
 	
 	// recent murders menu code
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_murderMenu.sqf";
+
+	//This is still needed but the fsm should terminate if any errors pop up.
+	[] spawn {
+        private["_timeOut","_display","_control1","_control2"];
+        disableSerialization;
+        _timeOut = 0;
+        dayz_loadScreenMsg = "";
+        diag_log "DEBUG: loadscreen guard started.";
+        _display = uiNameSpace getVariable "BIS_loadingScreen";
+        if (!isNil "_display") then {
+                _control1 = _display displayctrl 8400;
+                _control2 = _display displayctrl 102;
+        };
+                
+        waitUntil {!dayz_DisplayGenderSelect};
+                
+        // 120 sec timeout (12000 * 0.01)
+        while { _timeOut < 12000 } do {
+            if (dayz_clientPreload && dayz_authed) exitWith { diag_log "PLOGIN: Login loop completed!"; };
+            if (!isNil "_display") then {
+                if ( isNull _display ) then {                        
+                        waitUntil { !dialog; };                                
+                        startLoadingScreen ["","RscDisplayLoadCustom"];
+                        _display = uiNameSpace getVariable "BIS_loadingScreen";
+                        _control1 = _display displayctrl 8400;
+                        _control2 = _display displayctrl 102;
+                };
+
+                if ( dayz_loadScreenMsg != "" ) then {
+                        _control1 ctrlSetText dayz_loadScreenMsg;
+                        dayz_loadScreenMsg = "";
+                };
+
+                _control2 ctrlSetText format["%1",round(_timeOut*0.01)];
+            };
+
+            _timeOut = _timeOut + 1;
+
+            if (_timeOut >= 12000) then {
+                1 cutText [localize "str_player_login_timeout", "PLAIN DOWN"];
+                sleep 10;
+                endLoadingScreen;
+                endMission "END1";
+            };
+
+            sleep 0.01;
+        };
+	};
+
+	// TODO: need move it in player_monitor.fsm
+	// allow player disconnect from server, if loading hang, kicked by BE etc.
+	[] spawn {
+		private["_timeOut","_display","_control1","_control2"];
+		disableSerialization;
+		_timeOut = 0;
+		dayz_loadScreenMsg = "";
+		diag_log "DEBUG: loadscreen guard started.";
+		_display = uiNameSpace getVariable "BIS_loadingScreen";
+		_control1 = _display displayctrl 8400;
+		_control2 = _display displayctrl 102;
+		// 120 sec timeout
+		while { _timeOut < 3000 && !dayz_clientPreload && !dayz_authed } do {
+
+			if ( isNull _display ) then {
+				waitUntil { !dialog; };
+				startLoadingScreen ["","RscDisplayLoadCustom"];
+				_display = uiNameSpace getVariable "BIS_loadingScreen";
+				_control1 = _display displayctrl 8400;
+				_control2 = _display displayctrl 102;
+			};
+
+			if ( dayz_loadScreenMsg != "" ) then {
+				_control1 ctrlSetText dayz_loadScreenMsg;
+				dayz_loadScreenMsg = "";
+			};
+			_control2 ctrlSetText format["%1",round(_timeOut*0.01)];
+			_timeOut = _timeOut + 1;
+			sleep 0.01;
+		};
+		endLoadingScreen;
+	};
+
+	dayz_originalPlayer = player;
+	
+	progressLoadingScreen 0.8;
 };
 
-	progressLoadingScreen 0.8;
-	
-//Both
+	//Both
 	BIS_fnc_selectRandom =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_selectRandom.sqf";
 	BIS_fnc_vectorAdd =         compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_vectorAdd.sqf";	
 	BIS_fnc_halo =              compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_halo.sqf";
