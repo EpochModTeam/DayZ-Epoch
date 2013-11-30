@@ -137,25 +137,6 @@ if (r_player_injured) then {
 };
 
 /*
-_humanity = player getVariable["humanity",0];
-_guiHumanity = 0;
-if(_humanity != dayz_lastHumanity) then {
-	if (_humanity > 0) then {
-		_humanity = _humanity min 5000;
-		_guiHumanity = (round((_humanity / 5000) * 5) + 5);
-	} else {
-		_humanity = _humanity max -20000;
-		_guiHumanity = 5 - (round(-(_humanity / 20000) * 4));
-	};
-	dayz_lastHumanity = _humanity;
-	dayz_guiHumanity = _guiHumanity;
-	_humanityText = "\z\addons\dayz_code\gui\humanity_" + str(_guiHumanity) + "_ca.paa";
-	_ctrlHumanity ctrlSetText _humanityText;
-};
-*/
-
-
-/*
 Opt-in tag system with friend tagging
 */
 _targetControl = _display displayCtrl 1199;
@@ -219,9 +200,6 @@ if (dayz_humanitytarget != _string) then {
 	_targetControl ctrlSetStructuredText (parseText _string);
 	dayz_humanitytarget = _string;
 };
-
-
-
 
 _array = [_foodVal,_thirstVal];
 _array
