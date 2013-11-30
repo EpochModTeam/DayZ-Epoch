@@ -71,12 +71,12 @@ if (isServer) then {
 
 //Client only
 if (!isDedicated) then {
-	"PVDZE_plr_SetDate"		addPublicVariableEventHandler {(_this select 1) call player_setDate};
+	"PVDZE_plr_SetDate"		addPublicVariableEventHandler {setDate (_this select 1)};
 	"PVDZE_plr_SetSaveTime"	addPublicVariableEventHandler {DZE_SaveTime = (_this select 1)};
 	"PVDZE_obj_RoadFlare"	addPublicVariableEventHandler {(_this select 1) spawn object_roadFlare};
 	"PVDZE_plr_Morph2"		addPublicVariableEventHandler {(_this select 1) call player_serverModelChange};
 	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
-	"PVDZE_obj_Fire"		addPublicVariableEventHandler {nul=(_this select 1) spawn BIS_Effects_Burn};
+	"PVDZE_obj_Fire"		addPublicVariableEventHandler {nulexp=(_this select 1) spawn BIS_Effects_Burn};
 	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {(_this select 1) call player_tagFriendlyMsg};
 	
 	// "PVDZE_obj_Debris"		addPublicVariableEventHandler {(_this select 1) call local_roadDebris};
