@@ -211,7 +211,7 @@ BuildingList = [];
 } forEach (MarkerPosition nearObjects ["building",DynamicVehicleArea]);
 
 spawn_vehicles = {
-	private ["_weights","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_marker","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
+	private ["_random","_lastIndex","_weights","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_marker","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
 	
 	if (isDedicated) then {
 
@@ -230,9 +230,11 @@ spawn_vehicles = {
 
 			// vehicle limit reached, remove vehicle from list
 			// since elements cannot be removed from an array, overwrite it with the last element and cut the last element of (as long as order is not important)
-			_lastIndex = (count AllowedVehiclesList) - 1;
-			AllowedVehiclesList set [_index, AllowedVehiclesList select _lastIndex];
-			AllowedVehiclesList resize _lastIndex;
+			if (_lastIndex != _index) then {
+				_lastIndex = (count AllowedVehiclesList) - 1;
+				AllowedVehiclesList set [_index, AllowedVehiclesList select _lastIndex];
+				AllowedVehiclesList resize _lastIndex;
+			};
 		};
 
 		if (count AllowedVehiclesList == 0) then {
