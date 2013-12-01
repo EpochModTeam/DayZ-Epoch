@@ -29,5 +29,3 @@ if ((_vcl emptyPositions "cargo") > 0) then
 	hint "No space left in vehicle";
 };
 NORRN_load_wounded_action = true;
-
-if (true) exitWith {};

@@ -18,7 +18,7 @@ diag_log("CRASHSPAWNER: Starting spawn logic for Crash Spawner");
 while {true} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
 	// Allows the variance to act as +/- from the spawn frequency timer
-	_timeAdjust = round(random(_variance * 2) - _variance);
+    _timeAdjust = round((random(_variance * 2)) - _variance);
 	_timeToSpawn = time + _frequency + _timeAdjust;
 	
 	//Adding some Random systems
@@ -75,14 +75,14 @@ while {true} do {
 		_crash setPos _adjustedPos;
 
 		// I don't think this is needed (you can't get "in" a crash), but it was in the original DayZ Crash logic
-		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_crash];
+		PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_crash];
 
 		_crash setVariable ["ObjectID","1",true];
 
 		// Disable simulation server side
 		_crash enableSimulation false;
 
-		_num = round(random _randomizedLoot) + _guaranteedLoot;
+        _num = (round(random _randomizedLoot)) + _guaranteedLoot;
 
 		if(_crashModel == "Mass_grave_DZ") then {
 			_spawnFire = false;
@@ -90,9 +90,9 @@ while {true} do {
 		};
 
 		if (_spawnFire) then {
-			//["dayzFire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
-			dayzFire = [_crash,2,time,false,_fadeFire];
-			publicVariable "dayzFire";
+			//["PVDZE_obj_Fire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
+			PVDZE_obj_Fire = [_crash,2,time,false,_fadeFire];
+			publicVariable "PVDZE_obj_Fire";
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
 

@@ -43,7 +43,7 @@ if(!(alive _item)) then {
 	} else {
 
 		if(_isMan) then { 
-			_regen == 12000; 
+			_regen = 12000; 
 		};
 	};
 
@@ -63,9 +63,9 @@ if(!(alive _item)) then {
 	dayz_lastMeal =	time;
 	dayz_hunger = 0;
 
-	//["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
-	dayzPlayerSave = [player,[],true];
-	publicVariableServer "dayzPlayerSave";
+	//["PVDZE_plr_Save",[player,[],true]] call callRpcProcedure;
+	PVDZE_plr_Save = [player,[],true,false];
+	publicVariableServer "PVDZE_plr_Save";
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 
@@ -88,7 +88,7 @@ if(!(alive _item)) then {
 	_control ctrlShow true;
 
 
-	cutText [format[(localize  "str_player_consumed"),_animalType], "PLAIN DOWN"];
+	cutText [format[(localize  "str_player_consumed"),(getText (configFile >> "CfgVehicles" >> _animalType >> "displayName"))], "PLAIN DOWN"];
 	player switchmove "";
 };
 

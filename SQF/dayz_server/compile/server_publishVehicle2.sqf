@@ -1,15 +1,25 @@
-private ["_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID"];
-
+private ["_activatingPlayer","_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
+//PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;
-// _spawnDMG =		_this select 3;
+_donotusekey =	_this select 3;
 _keySelected =  _this select 4;
+_activatingPlayer =  _this select 5;
 
-_isOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+if(_donotusekey) then {
+	_isOK = true;
+} else {
+	_isOK = isClass(configFile >> "CfgWeapons" >> _keySelected);
+};
+
 if(!_isOK) exitWith { diag_log ("HIVE: CARKEY DOES NOT EXIST: "+ str(_keySelected));  };
 
-_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "keyid"));
+if(_donotusekey) then {
+	_characterID = _keySelected;
+} else {
+	_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "keyid"));
+};
 
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
@@ -26,8 +36,8 @@ diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
-[_object,_uid,_characterID,_class,_dir,_location] spawn {
-   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para"];
+[_object,_uid,_characterID,_class,_dir,_location,_donotusekey,_activatingPlayer] spawn {
+   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para","_donotusekey","_activatingPlayer"];
 
    _object = _this select 0;
    _uid = _this select 1;
@@ -35,6 +45,8 @@ _key call server_hiveWrite;
    _class = _this select 3;
    //_dir = _this select 4;
    _location = _this select 5;
+   _donotusekey = _this select 6;
+   _activatingPlayer = _this select 7;
 
    _done = false;
 	_retry = 0;
@@ -74,13 +86,14 @@ _key call server_hiveWrite;
 		_object = createVehicle [_class, _location, [], 0, "CAN_COLLIDE"];
 	};
 
-	// Lock vehicle
-	_object setvehiclelock "locked";
+	if(!_donotusekey) then {
+		// Lock vehicle
+		_object setvehiclelock "locked";
+	};
 
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
-
-	_object allowDamage false;
+	// _object setVehicleAmmo DZE_vehicleAmmo;
 
 	_object setVariable ["ObjectID", _oid, true];
 	
@@ -96,17 +109,13 @@ _key call server_hiveWrite;
 		deleteVehicle _object_para;
 	};
 
-	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+	PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 
-	_object call fnc_vehicleEventHandler;
+	_object call fnc_veh_ResetEH;
 	
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
-	dayzVehicleInit = _object;
-	publicVariable "dayzVehicleInit";
+	PVDZE_veh_Init = _object;
+	publicVariable "PVDZE_veh_Init";
 	
-	diag_log ("PUBLISH: Created " + (_class) + " with ID " + str(_uid));
-
-	sleep 1.0;
-
-	_object allowDamage true;
+	diag_log ("PUBLISH: " + str(_activatingPlayer) + " Bought " + (_class) + " with ID " + str(_uid));
 };

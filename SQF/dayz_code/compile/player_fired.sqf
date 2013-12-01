@@ -17,6 +17,11 @@ dayz_combat = 1;
 
 if (_ammo isKindOf "Melee") exitWith {
 	_unit playActionNow "GestureSwing";
+
+	[1,1] call dayz_HungerThirst;
+
+	// harvest wood check
+	_id = _this spawn player_harvest;
 };
 
 //Smoke Grenade
@@ -53,15 +58,15 @@ if (_ammo isKindOf "SmokeShell") then {
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
 			_id = [_projectile,0] spawn object_roadFlare;
-			dayzRoadFlare = [_projectile,0];
-			publicVariable "dayzRoadFlare";
+			PVDZE_obj_RoadFlare = [_projectile,0];
+			publicVariable "PVDZE_obj_RoadFlare";
 			_id = _this spawn player_throwObject;
 		};
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
 			_id = [_projectile,1] spawn object_roadFlare;
-			dayzRoadFlare = [_projectile,1];
-			publicVariable "dayzRoadFlare";
+			PVDZE_obj_RoadFlare = [_projectile,1];
+			publicVariable "PVDZE_obj_RoadFlare";
 			_id = _this spawn player_throwObject;
 		};
 	};	

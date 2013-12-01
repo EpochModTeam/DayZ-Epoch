@@ -1,4 +1,4 @@
-private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
+private ["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_myDest","_newDest","_lootType","_isAlive","_rnd","_id"];
 _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
@@ -18,6 +18,7 @@ if (!_isNoone) exitWith {};
 if (count _unitTypes == 0) then {
 	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
+
 _type = _unitTypes call BIS_fnc_selectRandom;
 
 //Create the Group and populate it
@@ -30,8 +31,8 @@ if (_doLoiter) then {
 };
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
-dayzSpawnZed = [_agent];
-publicVariableServer "dayzSpawnZed";
+PVDZE_zed_Spawn = [_agent];
+publicVariableServer "PVDZE_zed_Spawn";
 
 if (_doLoiter) then {
 	_agent setDir round(random 180);

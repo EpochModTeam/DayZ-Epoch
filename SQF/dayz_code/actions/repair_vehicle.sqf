@@ -1,8 +1,5 @@
 private ["_part","_cancel","_color","_allFixed","_percent","_string","_handle","_damage","_cmpt","_vehicle","_hitpoints"];
 
-// [ _trader_id, _category, _action ];
-// _activatingPlayer = _this select 1;
-
 _vehicle = _this select 3;
 
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
@@ -63,7 +60,7 @@ if (_allFixed) then {
 
 if(count _hitpoints > 0 ) then {
 
-	_cancel = dayz_myCursorTarget addAction ["Cancel", "\z\addons\dayz_code\actions\repair_cancel.sqf","repair", 0, true, false, "",""];
+	_cancel = dayz_myCursorTarget addAction [localize "STR_EPOCH_PLAYER_CANCEL", "\z\addons\dayz_code\actions\repair_cancel.sqf","repair", 0, true, false, "",""];
 	s_player_repairActions set [count s_player_repairActions,_cancel];
 
 	s_player_repair_crtl = 1;

@@ -1,0 +1,162 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"chernarus",
+		"camisc_e",
+		"CAMisc",
+		"camisc3",
+		"ca_modules_functions"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"ca_modules_functions",
+		"camisc_e",
+		"camisc3",
+		"chernarus"
+	};
+	randomSeed=5820454;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.40000001;
+		year=2010;
+		month=8;
+		day=5;
+		hour=10;
+		minute=0;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10387.202,5.8848143,2216.1106};
+					azimut=-365.923;
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier_AR";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="this addAction [""Select Target"", ""Make_lootPos.sqf"", [""select""], 99];this addAction [""Tag Pos"", ""Make_lootPos.sqf"", [""tag""], 99];this addAction [""Tag zPos"", ""Make_lootPos.sqf"", [""tagzspawn""], 99];this addAction [""Tag Pile Pos"", ""Make_lootPos.sqf"", [""tagpile""], 99];this addAction [""Raise Z .1"", ""Make_lootPos.sqf"", [""up""], 99, false,false,""User17""];this addAction [""Lower Z .1"", ""Make_lootPos.sqf"", [""down""], 99,false,false,""User18""];this addAction [""Raise Z .01"", ""Make_lootPos.sqf"", [""up_small""], 99, false,false,""User19""];this addAction [""Lower Z .01"", ""Make_lootPos.sqf"", [""down_small""], 99, false,false,""User20""];this addAction [""Generate Loot"", ""Make_lootPos.sqf"", [""generateloot""], 99];";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12856.193,45.676922,6778.9507};
+					id=3;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={10538.346,9.8015976,2129.0706};
+			azimut=43.812595;
+			id=1;
+			side="EMPTY";
+			vehicle="Fort_Barricade_EP1";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={10541.759,11.417732,2132.6858};
+			azimut=40.766392;
+			id=2;
+			side="EMPTY";
+			vehicle="Fort_Barricade";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=4134615;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.40000001;
+		year=2010;
+		month=8;
+		day=5;
+		hour=10;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=5967799;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.40000001;
+		year=2010;
+		month=8;
+		day=5;
+		hour=10;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=390956;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.40000001;
+		year=2010;
+		month=8;
+		day=5;
+		hour=10;
+		minute=0;
+	};
+};

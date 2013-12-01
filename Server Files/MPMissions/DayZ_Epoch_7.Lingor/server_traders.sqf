@@ -1,182 +1,188 @@
-// DayZ Epoch TRADERS for 6 & 7
-serverTraders = ["RU_Worker1","Dr_Annie_Baker_EP1","CIV_EuroWoman01_EP1","ibr_lingorman2s","Worker2","TK_CIV_Woman03_EP1","ibr_lingorman3s","ibr_lingorman5s","ibr_lingorman4s","ibr_lingorman2","Citizen2_EP1","Worker1","RU_Madam3","Pilot","CIV_EuroMan02_EP1","CIV_EuroMan01_EP1","ibr_lingorman7s","Damsel3","Rocker4","Worker4","ibr_lingorman7","ibr_lingorman5","Citizen3_EP1","ibr_lingorman6","ibr_lingorman6s","TK_CIV_Woman02_EP1","Pilot_EP1","TK_CIV_Worker01_EP1","RU_Doctor","CIV_Contractor1_BAF"];
+// DayZ Epoch TRADERS for 6
+serverTraders = ["RU_Worker1","Dr_Annie_Baker_EP1","CIV_EuroWoman01_EP1","ibr_lingorman2s","Worker2","TK_CIV_Woman03_EP1","ibr_lingorman3s","ibr_lingorman5s","ibr_lingorman4s","ibr_lingorman2","Citizen2_EP1","Worker1","RU_Madam3","Pilot","CIV_EuroMan02_EP1","CIV_EuroMan01_EP1","ibr_lingorman7s","Damsel3","Rocker4","Worker4","ibr_lingorman7","ibr_lingorman5","Citizen3_EP1","ibr_lingorman6","ibr_lingorman6s","TK_CIV_Woman02_EP1","Pilot_EP1","TK_CIV_Worker01_EP1","RU_Doctor","Functionary1","TK_CIV_Takistani04_EP1"];
+		// START PER TRADER CONFIG
 // Whiskey's Parts Shop
 menu_RU_Worker1 = [
-	[["Vehicle Parts",63],["Building Supplies",64]],
+	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
 // Melly's Medical
 menu_Dr_Annie_Baker_EP1 = [
-	[["Medical Supplies",65],["Clothes",66],["Chem lights/Flares",67],["Smoke Grenades",68]],
+	[["Chem-lites/Flares",542],["Medical Supplies",541],["Smoke Grenades",543]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"friendly"
 ];
 // Alejandria's General Supplies
 menu_CIV_EuroWoman01_EP1 = [
-	[["Food/Drink",70],["Backpacks",72],["Clothes",73],["Toolbelt Items",74]],
-	[],
+	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
 // Blivion's Wholesale Items
 menu_ibr_lingorman2s = [
-	[["Wholesale Crates",69]],
+	[["Wholesale",555]],
 	[],
 	"neutral"
 ];
 // Axle's Repair Shop
 menu_Worker2 = [
-	[["Vehicle Parts",76],["Building Supplies",77],["Demolition Supplies",78]],
+	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
 // Stella's General Goods
 menu_TK_CIV_Woman03_EP1 = [
-	[["Food/Drink",79],["Backpacks",80],["Clothes",81],["Toolbelt Items",82]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
-	"friendly"
+	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
+	"neutral"
 ];
 // Clive's Wholesale
 menu_ibr_lingorman3s = [
-	[["Wholesale Crates",84]],
+	[["Wholesale",636]],
 	[],
 	"neutral"
 ];
 // Big Bob's Boats
 menu_ibr_lingorman5s = [
-	[["Fishing boats",85],["PBX",86]],
+	[["Boats Armed",558],["Boats Unarmed",557]],
 	[],
 	"neutral"
 ];
 // Juan's Tour Boats
 menu_ibr_lingorman4s = [
-	[["Tour boats",87],["PBX",88]],
+	[["Boats Unarmed",672]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Jd'z Armed Boats
 menu_ibr_lingorman2 = [
-	[["Armed Boats",89]],
+	[["Boats Armed",673]],
 	[],
 	"friendly"
 ];
 // Green's Quality Cars
 menu_Citizen2_EP1 = [
-	[["Tracked Vehicles",90],["Armed Vehicles",91],["Fuel Trucks",92],["Armored Vehicles",93],["SUV's",120],["Military Unarmed",308]],
+	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
 	[],
 	"friendly"
 ];
 // Lyle's Parts
 menu_Worker1 = [
-	[["Vehicle Parts",94],["Building Supplies",95]],
+	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Bag Lady Gina
 menu_RU_Madam3 = [
-	[["Food/Drink",96],["Backpacks",97],["Toolbelt Items",98],["Clothes",99]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Chip's Choppers
 menu_Pilot = [
-	[["Armed Choppers",100],["Unarmed Choppers",101]],
+	[["Helicopter Unarmed",519]],
 	[],
 	"friendly"
 ];
 // Jim's Ammo
 menu_CIV_EuroMan02_EP1 = [
-	[["Pistol Ammo",102],["Assault Ammo",103],["Heavy Ammo",104],["Sniper Ammo",105]],
+	[["Assault Rifle Ammo",480],["Light Machine Gun Ammo",481],["Pistol Ammo",484],["Shotguns and Single-shot Ammo",573],["Sniper Rifle Ammo",482],["Submachine Gun Ammo",483]],
 	[],
 	"friendly"
 ];
 // Joe's Weapons
 menu_CIV_EuroMan01_EP1 = [
-	[["Pistols",106],["Assault Rifles",107],["Heavy Machine Guns",108],["Sniper Rifles",109]],
+	[["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
 	[],
 	"friendly"
 ];
 // Rodger's 4x4
 menu_ibr_lingorman7s = [
-	[["Offroad Trucks",110]],
+	[["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Utility Vehicles",591]],
 	[],
 	"friendly"
 ];
 // Tina's Tarts
 menu_Damsel3 = [
-	[["Food/Drinks",111],["Clothes",112]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["Cooked Meats",690],["Drinks",691],["Packaged Food",692]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
 // Sly's Moto
 menu_Rocker4 = [
-	[["ATV's",113],["Dirt Bikes",114]],
+	[["Bikes and ATV",587]],
 	[],
 	"friendly"
 ];
 // Jim's Used Cars
 menu_Worker4 = [
-	[["Trucks Armed",115],["Trucks Unarmed",116],["Cars",117],["Waggons",118],["Bus",119]],
+	[["Buses and Vans",588],["Cargo Trucks",586],["Used Cars",520]],
 	[],
 	"neutral"
 ];
 // Chucks Weapons
 menu_ibr_lingorman7 = [
-	[["Pistols",121],["Assault Rifles",122],["Sniper Rifles",123]],
+	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
 // Buck's Shot
 menu_ibr_lingorman5 = [
-	[["Pistol Ammo",124],["Assault Ammo",125],["Sniper Ammo",126]],
+	[["Assault Rifle Ammo",609],["Light Machine Gun Ammo",610],["Pistol Ammo",611],["Shotguns and Single-shot Ammo",613],["Sniper Rifle Ammo",614],["Submachine Gun Ammo",612]],
 	[],
 	"neutral"
 ];
 // Santo's Wholesale
 menu_Citizen3_EP1 = [
-	[["Wholesale Crates",127]],
+	[["Wholesale",675]],
 	[],
 	"neutral"
 ];
 // Tire Guy
 menu_ibr_lingorman6 = [
-	[["Vehicle Parts",128]],
+	[["Vehicle Parts",677]],
 	[],
 	"friendly"
 ];
 // Raul's Parts
 menu_ibr_lingorman6s = [
-	[["Vehicle Parts",129]],
+	[["Vehicle Parts",682]],
 	[],
 	"friendly"
 ];
 // Samish Shop
 menu_TK_CIV_Woman02_EP1 = [
-	[["Food/Drinks",188],["Backpacks",189],["Toolbelt Items",190],["Clothes",191]],
-	[],
+	[["Cooked Meats",686],["Drinks",684],["Packaged Food",687]],
+	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // AWOL's Planes
 menu_Pilot_EP1 = [
-	[["Cargo Planes",192]],
+	[["Airplanes",517]],
 	[],
 	"friendly"
 ];
 // Rommelo's Raceway
 menu_TK_CIV_Worker01_EP1 = [
-	[["Cars",194]],
+	[["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Fuel Trucks",655],["Military Unarmed",658],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Mad Scientist 
 menu_RU_Doctor = [
-	[["Medical Supplies",193]],
+	[["Chem-lites/Flares",666],["Medical Supplies",665],["Smoke Grenades",668]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
 ];
-// Jeeves
-menu_CIV_Contractor1_BAF = [
-	[["Black Market Weapons",452],["Black Market Ammo",453]],
+// Bandit Trader
+menu_TK_CIV_Takistani04_EP1 = [
+	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
-	"neutral"
+	"hostile"
+];
+menu_Functionary1 = [
+	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[],
+	"hero"
 ];

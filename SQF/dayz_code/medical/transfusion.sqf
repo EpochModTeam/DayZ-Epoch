@@ -1,4 +1,4 @@
-private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","_lastused","_text"];
+private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","_lastused"];
 // bleed.sqf
 _unit = (_this select 3) select 0;
 //_lowBlood = 	_unit getVariable ["USEC_lowBlood", false];
@@ -10,7 +10,7 @@ _lastused = 	_unit getVariable ["LastTransfusion", time];
 
 call fnc_usec_medic_removeActions;
 r_action = false;
-
+[1,1] call dayz_HungerThirst;
 if (vehicle player == player) then {
 	//not in a vehicle
 	player playActionNow "Medic";
@@ -47,7 +47,7 @@ if (_finished) then {
 		usecTransfuse = [_unit,player];
 		publicVariable "usecTransfuse";
 
-		//dayzHumanity = [player,100];
+		//PVDZE_plr_HumanityChange = [player,100];
 		[player,100] call player_humanityChange;
 	};
 } else {

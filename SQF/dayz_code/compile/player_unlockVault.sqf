@@ -3,35 +3,37 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_nul","_objType"];
 
-if(TradeInprogress) exitWith { cutText ["Unlock already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
-
-// Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot unlock vault while another player is nearby." , "PLAIN DOWN"];  };
-
-_obj = _this;
-_alreadyPacking = _obj getVariable["packing",0];
-_claimedBy = _obj getVariable["claimed","0"];
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 {player removeAction _x} forEach s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;
 
-// Silently exit if object no longer exists or alive
-if(isNull _obj or !(alive _obj)) exitWith { TradeInprogress = false; };
+_obj = _this;
+_objType = typeOf _obj;
 
+_playerNear = _obj call dze_isnearest_player;
+if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
+
+// Silently exit if object no longer exists or alive
+if(isNull _obj or !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
+
+_unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
+_text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
+
+_alreadyPacking = _obj getVariable["packing",0];
+_claimedBy = _obj getVariable["claimed","0"];
 _ownerID = _obj getVariable["CharacterID","0"];
 
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; cutText ["That Safe is already being unlocked." , "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
 
 // Promt user for password if _ownerID != dayz_playerUID
 if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 
 	// Check if any players are nearby if not allow player to claim item.
 	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-
 	_playerID = getPlayerUID player;
 	
 	// Only allow if not already claimed.
@@ -52,22 +54,21 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 		if(!isNull _obj and alive _obj) then {
 
 			_obj setVariable["packing",1];
-
-			_weapons = 		_obj getVariable["WeaponCargo",[]];
-			_magazines = 	_obj getVariable["MagazineCargo",[]];
-			_backpacks = 	_obj getVariable["BackpackCargo",[]];
-	
+			[1,1] call dayz_HungerThirst;
 			player playActionNow "Medic";
 			sleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			sleep 5;
 
-			//place tent (local)
-			_holder = createVehicle ["VaultStorage",_pos,[], 0, "CAN_COLLIDE"];
+			_weapons = 		_obj getVariable["WeaponCargo",[]];
+			_magazines = 	_obj getVariable["MagazineCargo",[]];
+			_backpacks = 	_obj getVariable["BackpackCargo",[]];
+	
+			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
 			// Remove locked vault
 			deleteVehicle _obj;
 			_holder setdir _dir;
-			_holder setpos _pos;
+			_holder setPosATL _pos;
 			player reveal _holder;
 	
 			_holder setVariable["CharacterID",_ownerID,true];
@@ -108,19 +109,20 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 				} forEach _objWpnTypes;
 			};
 	
-			cutText ["Safe has been unlocked.", "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_125"),_text], "PLAIN DOWN"];
 		};
 	} else {
-		TradeInprogress = false; 
-		cutText [format[(localize "str_player_beinglooted"),"Safe"] , "PLAIN DOWN"];
+		DZE_ActionInProgress = false; 
+		cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"];
 	};
 } else {
+	[10,10] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	sleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;
-	null = [player,25,true,(getPosATL player)] spawn player_alertZombies;
+	[player,25,true,(getPosATL player)] spawn player_alertZombies;
 	sleep 5;
-	cutText ["Combination incorrect, Safe is still locked.", "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_126"),_text], "PLAIN DOWN"];
 };
 s_player_unlockvault = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

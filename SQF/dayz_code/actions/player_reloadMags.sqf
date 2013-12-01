@@ -1,4 +1,4 @@
-private ["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest","_avaliable_slots"];
+private ["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest"];
 
 disableSerialization;
 call gear_ui_init;
@@ -83,13 +83,16 @@ if ( _consume_magsize > _create_magsize) then {
     _qtynew_consume_ammo = 0;
 };
 
-if ((_qtynew_create_mags + _qtynew_consume_mags) > _avaliable_slots) exitWith {
-    cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+if ((_qtynew_create_mags + _qtynew_consume_mags) > (_qty_create_mags + _qty_consume_mags + _qty_free_slots)) exitWith {
+    cutText [localize "str_player_24", "PLAIN DOWN"];
 };
 _qtynew_consume_mags_full = floor(_qtynew_consume_ammo/_consume_magsize);
 _qtynew_create_mags_full = floor(_qtynew_create_ammo/_create_magsize);
 _qtynew_consume_ammo_rest = _qtynew_consume_ammo - (_qtynew_consume_mags_full*_consume_magsize);
 _qtynew_create_ammo_rest = _qtynew_create_ammo - (_qtynew_create_mags_full*_create_magsize);
+
+// abort if no complete mags or partial mag is less than 15% full
+if(_qtynew_create_ammo_rest > 0 and _qtynew_create_ammo_rest < (_create_magsize*0.85)) exitWith { cutText [(localize "str_epoch_player_81"), "PLAIN DOWN"]; };
 
 //remove all _consume and _create mags (we already have total ammo count) 
 player removeMagazines _consume;

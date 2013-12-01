@@ -25,10 +25,10 @@ private ["_weapons","_magazines","_primweapon","_secweapon"];
 	_weapons 	= weapons player;
 	_magazines	= call player_countmagazines; //magazines player;
 
-	if ( (_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0 )) exitWith {cutText ["can't count magazines!", "PLAIN DOWN"]};
+	if ( (_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0 )) exitWith {cutText [(localize "str_epoch_player_17"), "PLAIN DOWN"]};
 
 
-//	if ( count _magazines == 0 ) exitWith {cutText ["can't count magazines!", "PLAIN DOWN"]};
+//	if ( count _magazines == 0 ) exitWith {cutText [(localize "str_epoch_player_17"), "PLAIN DOWN"]};
 
 	_primweapon	= primaryWeapon player;
 	_secweapon	= secondaryWeapon player;
@@ -63,12 +63,13 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	};
 
 //Debug Message
-	diag_log "Attempting to switch model";
-	diag_log str(_weapons);
-	diag_log str(_magazines);
-	diag_log (str(_backpackWpn));
-	diag_log (str(_backpackMag));
-
+/*
+diag_log "Attempting to switch model";
+diag_log str(_weapons);
+diag_log str(_magazines);
+diag_log (str(_backpackWpn));
+diag_log (str(_backpackMag));
+*/
 //Secure Player for Transformation
 	player setPosATL dayz_spawnPos;
 
@@ -87,11 +88,11 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	_newUnit 	setPosATL _position;
 	_newUnit 	setDir _dir;
 
-//Clear New Character
+	//Clear New Character
 	{_newUnit removeMagazine _x;} forEach  magazines _newUnit;
 	removeAllWeapons _newUnit;	
 
-//Equip New Charactar
+	//Equip New Charactar
 	{
 		if (typeName _x == "ARRAY") then {_newUnit addMagazine [_x select 0,_x select 1] } else { _newUnit addMagazine _x };
 		//sleep 0.05;
@@ -123,8 +124,11 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	if (_primweapon == "MeleeCrowbar") then {
 		_newUnit addMagazine 'crowbar_swing';
 	};
-	if (_primweapon == "MeleeHatchet") then {
-		_newUnit addMagazine 'hatchet_swing';
+	if (_primweapon == "MeleeSledge") then {
+		_newUnit addMagazine 'sledge_swing';
+	};
+	if (_primweapon == "MeleeHatchet_DZE") then {
+		_newUnit addMagazine 'Hatchet_Swing';
 	};
 	if (_primweapon == "MeleeMachete") then {
 		_newUnit addMagazine 'Machete_swing';
@@ -173,12 +177,13 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 		};
 	};
 //Debug Message
-	diag_log "Swichtable Unit Created. Equipment:";
-	diag_log str(weapons _newUnit);
-	diag_log str(magazines _newUnit);
-	diag_log str(getWeaponCargo unitBackpack _newUnit);
-	diag_log str(getMagazineCargo unitBackpack _newUnit);
-
+/*
+diag_log "Swichtable Unit Created. Equipment:";
+diag_log str(weapons _newUnit);
+diag_log str(magazines _newUnit);
+diag_log str(getWeaponCargo unitBackpack _newUnit);
+diag_log str(getMagazineCargo unitBackpack _newUnit);
+*/
 //Make New Unit Playable
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;

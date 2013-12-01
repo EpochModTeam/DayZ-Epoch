@@ -1,7 +1,7 @@
 private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_isOK","_brokenPart","_findPercent","_damage","_hasToolbox","_nameType","_namePart"];
 
-if(TradeInprogress) exitWith { cutText ["Salvage already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_94") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 //_id = _this select 2;
 _array = 	_this select 3;
@@ -25,6 +25,7 @@ s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
 
+	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 
 	[player,"repair",0,false] call dayz_zombieSpeak;
@@ -77,22 +78,22 @@ if (_hasToolbox) then {
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 			
 				//vehicle is owned by whoever is in it, so we have to have each client try and fix it
-				//["dayzSetFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
+				//["PVDZE_veh_SFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
 		
-				dayzSetFix = [_vehicle,_selection,1];
-				publicVariable "dayzSetFix";
+				PVDZE_veh_SFix = [_vehicle,_selection,1];
+				publicVariable "PVDZE_veh_SFix";
 				if (local _vehicle) then {
-					dayzSetFix call object_setFixServer;
+					PVDZE_veh_SFix call object_setFixServer;
 				};
 
 				_vehicle setvelocity [0,0,1];
 
 				if(_brokenPart) then {
 					//Failed!
-					cutText [format["You have destroyed %1 while attempting to remove from %2",_namePart,_nameType], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_168"),_namePart,_nameType], "PLAIN DOWN"];
 				} else {
 					//Success!
-					cutText [format["You have successfully removed %1 from the %2",_namePart,_nameType], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_169"),_namePart,_nameType], "PLAIN DOWN"];
 				};
 
 			} else {
@@ -107,14 +108,14 @@ if (_hasToolbox) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Salvage.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_95"), "PLAIN DOWN"];
 	};
 			
 } else {
-	cutText [format["You need %1 to remove this part.",_namePart], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_170"),_namePart], "PLAIN DOWN"];
 };
 
 dayz_myCursorTarget = objNull;
 s_player_repair_crtl = -1;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

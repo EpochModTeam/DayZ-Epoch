@@ -1,7 +1,7 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canName","_canSize","_configCan","_configVeh","_capacity","_nameText","_availableCans","_canText"];
 
-if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 // Use target from addaction
 _vehicle = 	_this select 0;
@@ -37,7 +37,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 			//diag_log ("refuel check: " + str(_newFuel) + " / " + str(_capacity));
 
-			cutText [format["Preparing to refuel, stand still to drain %1.",_canText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_160"),_canText], "PLAIN DOWN"];
 			
 			// alert zombies
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
@@ -46,6 +46,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 			if(!dayz_isSwimming) then {
 
+				[1,1] call dayz_HungerThirst;
 				// force animation 
 				player playActionNow "Medic";
 
@@ -105,18 +106,13 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 					if(([player,_canName] call BIS_fnc_invRemove) == 1) then {
 	
-						dayzSetFuel = [_vehicle,_newFuel];
-						if (local _vehicle) then {
-							dayzSetFuel spawn local_setFuel;
-						};
-						publicVariable "dayzSetFuel";
+						PVDZE_veh_SFuel = [_vehicle,_newFuel];
+						PVDZE_veh_SFuel spawn local_setFuel;
+						publicVariable "PVDZE_veh_SFuel";
 
 						// Play sound
 						[player,"refuel",0,false] call dayz_zombieSpeak;
-						
-						// Add filled can
 						player addMagazine _canName+"Empty";
-				
 						cutText [format[localize "str_player_05",_nameText,_canSize], "PLAIN DOWN"];
 
 						call fnc_usec_medic_removeActions;
@@ -128,17 +124,17 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					};	
 			
 				} else {
-					cutText [format["%1 cannot hold that much fuel.",_nameText], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_161"),_nameText], "PLAIN DOWN"];
 					_abort = true;
 				};
 					
 			} else {
-				cutText ["Canceled refuel." , "PLAIN DOWN"];
+				cutText [(localize "str_epoch_player_87") , "PLAIN DOWN"];
 				_abort = true;
 			};
 		
 		} else {
-			cutText [format["%1 cannot hold that much fuel.",_nameText], "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_161"),_nameText], "PLAIN DOWN"];
 			_abort = true;
 		};			
 	};
@@ -148,4 +144,4 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
 } forEach magazines player;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

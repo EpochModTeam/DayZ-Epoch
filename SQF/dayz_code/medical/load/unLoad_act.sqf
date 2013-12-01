@@ -1,7 +1,7 @@
 // unLoad_act.sqf
 // AUGUST 2010 - norrin
 
-private ["_args","_dragger","_vcl","_wounded"];
+private ["_args","_vcl","_loop","_position","_isOnDeck","_unit","_name","_crewVcl"];
 
 _args		= _this select 3;
 _name 		= _args select 0;
@@ -33,5 +33,3 @@ for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 	};
 	sleep 0.1;
 };
-
-if (true) exitWith {};

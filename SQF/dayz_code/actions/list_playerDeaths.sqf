@@ -1,25 +1,19 @@
-private ["_activatingPlayer"];
+private [];
 
-// [ _trader_id, _category, _action ];
-_activatingPlayer = _this select 1;
-
-//diag_log format["DEBUG DEATH OBJ: %1", _this select 0];
-
-//["dayzPlayerDeaths",[_activatingPlayer]] call callRpcProcedure;
-dayzPlayerDeaths = [_activatingPlayer];
-publicVariableServer  "dayzPlayerDeaths";
-
-waitUntil {!isNil "dayzPlayerDeathsResult"};
-
-//diag_log format["DEBUG Death: %1", dayzPlayerDeathsResult];
-
-if((count dayzPlayerDeathsResult) > 0) then {
-	"Recent Player Deaths:" hintC dayzPlayerDeathsResult;
-} else {
-	"Recent Player Deaths:" hintC "No recent Deaths.";
+// attempt to remove newspaper if called without args
+if (count _this == 0) then {
+	player removeMagazine "ItemNewspaper";
 };
 
+PVDZE_plr_DeathB = [player];
+publicVariableServer  "PVDZE_plr_DeathB";
 
+waitUntil {!isNil "PVDZE_plr_DeathBResult"};
 
-// Clear Data maybe consider cacheing results
-dayzPlayerDeathsResult = nil;
+if((count PVDZE_plr_DeathBResult) > 0) then {
+	// load death message board ui
+	call EpochDeathBoardLoad;
+} else {
+	cutText [(localize "str_epoch_player_36"), "PLAIN DOWN"];
+	PVDZE_plr_DeathBResult = nil;
+};

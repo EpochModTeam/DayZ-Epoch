@@ -30,4 +30,4 @@ _weaponsCount = (_weaponsCount_raw select 1) call vehicle_gear_count;
 // Count and show weapons available space
 _backpackCount = (_backpackCount_raw select 1) call vehicle_gear_count;
 
-TitleText [format[("Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6"),_magazineCount,_maxMagazines,_weaponsCount,_maxWeapons,_backpackCount,_maxBackpacks], "PLAIN DOWN"];
+TitleText [format[(localize "str_epoch_player_1"),_magazineCount,_maxMagazines,_weaponsCount,_maxWeapons,_backpackCount,_maxBackpacks], "PLAIN DOWN"];

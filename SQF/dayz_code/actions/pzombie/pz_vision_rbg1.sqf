@@ -5,7 +5,6 @@ _caller = _this select 1;
 _id = _this select 2;
 
 // _gen removeAction _id;
-
 // array from tweaking settings
 _new = _this select 3;
 
@@ -13,9 +12,7 @@ _NVx = _new select 0;
 
 // get first rbg + m
 _NV = player getvariable [_NVx,[0.0, 0.0, 0.0, 0.0]];
-
 _increase = (_new select 1);
-
 _index = 0;
 {
 	_NV set [_index,(_NV select _index) + _x];
@@ -45,11 +42,9 @@ if(_NVOn == "ON") then {
 	ppColor ppEffectAdjust [1, 1, 0, _NV1, _NV2, _NV3];
 	ppColor ppEffectCommit 0;
 
-	diag_log format ["DEBUG: Aperture : %1 First %2 Second %3 Third %4", _newap, _NV1,_NV2,_NV3];
+	//diag_log format ["DEBUG: Aperture : %1 First %2 Second %3 Third %4", _newap, _NV1,_NV2,_NV3];
 
 	player setVariable ["NV", ["OFF", _newap]];
 } else {
 	player setVariable ["NV", ["ON", _newap]];
 }; 
-
-exit;

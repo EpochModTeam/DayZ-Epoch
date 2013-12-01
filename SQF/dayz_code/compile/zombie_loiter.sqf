@@ -1,4 +1,4 @@
-private["_unit","_originalPos","_pos"];
+private ["_unit","_originalPos","_pos","_chance","_playerpos"];
 _unit = 		_this select 0;
 _originalPos = 	_this select 1;
 _pos = 			getPosATL _unit;

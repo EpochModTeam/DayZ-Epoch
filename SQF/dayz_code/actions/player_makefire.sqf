@@ -12,6 +12,7 @@ if (_hasWood) then {
 		player removeMagazine "PartWoodPile";
 		_dir = getDir player;
 		_classname = "Land_Fire_DZ";
+		[1,1] call dayz_HungerThirst;
 		player playActionNow "Medic";
 		sleep 6;
 		_fire = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];

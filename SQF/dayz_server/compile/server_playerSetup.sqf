@@ -1,5 +1,5 @@
-private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC"];
-//Wait for HIVE to be free
+private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC","_namespace"];
+
 //diag_log ("SETUP: attempted with " + str(_this));
 
 _characterID = _this select 0;
@@ -11,7 +11,7 @@ if (isNull _playerObj) exitWith {
 };
 
 //Add MPHit event handler
-diag_log("Adding MPHit EH for " + str(_playerObj));
+// diag_log("Adding MPHit EH for " + str(_playerObj));
 _playerObj addMPEventHandler ["MPHit", {_this spawn fnc_plyrHit;}];
 
 if (_playerID == "") then {
@@ -60,12 +60,9 @@ _state =		_primary select 3;
 _worldspace = 	_primary select 4;
 _humanity =		_primary select 5;
 _lastinstance =	_primary select 6;
-_friendlies =	[];
 
 //Set position
 _randomSpot = false;
-
-//diag_log ("WORLDSPACE: " + str(_worldspace));
 
 if (count _worldspace > 0) then {
 
@@ -107,16 +104,8 @@ if (count _medical > 0) then {
 	_playerObj setVariable["USEC_isCardiac",(_medical select 5),true];
 	_playerObj setVariable["USEC_lowBlood",(_medical select 6),true];
 	_playerObj setVariable["USEC_BloodQty",(_medical select 7),true];
-	
-		_playerObj setVariable["unconsciousTime",(_medical select 10),true];
-	
-//	if (_playerID in dayz_disco) then {
-//		_playerObj setVariable["NORRN_unconscious",true, true];
-//		_playerObj setVariable["unconsciousTime",300,true];
-//	} else {
-//		_playerObj setVariable["unconsciousTime",(_medical select 10),true];
-//	};
-	
+	_playerObj setVariable["unconsciousTime",(_medical select 10),true];
+		
 	//Add Wounds
 	{
 		_playerObj setVariable[_x,true,true];
@@ -189,7 +178,6 @@ if (_randomSpot) then {
 		endLoadingScreen;
 	};
 	
-	
 	//Spawn modify via mission init.sqf
 	if(isnil "spawnArea") then {
 		spawnArea = 1500;
@@ -197,12 +185,9 @@ if (_randomSpot) then {
 	if(isnil "spawnShoremode") then {
 		spawnShoremode = 1;
 	};
-	if(isnil "spawnMarkerCount") then {
-		spawnMarkerCount = 4;
-	};
 	
-	// The wiki states floor has a uniform distribution but will not reach the last number so we add +1
-	_spawnMC = spawnMarkerCount + 1;
+	// 
+	_spawnMC = actualSpawnMarkerCount;
 
 	//spawn into random
 	_findSpot = true;
@@ -237,32 +222,34 @@ if (_randomSpot) then {
 	};
 };
 
-
 //Record player for management
 dayz_players set [count dayz_players,_playerObj];
 
 //record player pos locally for server checking
-_playerObj setVariable["characterID",_characterID,true];
+_playerObj setVariable["CharacterID",_characterID,true];
 _playerObj setVariable["humanity",_humanity,true];
 _playerObj setVariable["humanity_CHK",_humanity];
 //_playerObj setVariable["worldspace",_worldspace,true];
 //_playerObj setVariable["state",_state,true];
 _playerObj setVariable["lastPos",getPosATL _playerObj];
-_playerObj setVariable["friendlies",_friendlies,true];
 
 dayzPlayerLogin2 = [_worldspace,_state];
-_clientID = owner _playerObj;
-if(!isNull _playerObj) then {
-	_clientID publicVariableClient "dayzPlayerLogin2";
-};
 
+// PVDZE_obj_Debris = DZE_LocalRoadBlocks;
+_clientID = owner _playerObj;
+if (!isNull _playerObj) then {
+	_clientID publicVariableClient "dayzPlayerLogin2";
+	
+	if (isNil "PVDZE_plr_SetDate") then {
+		call server_timeSync;
+	};
+	_clientID publicVariableClient "PVDZE_plr_SetDate";
+};
 //record time started
 _playerObj setVariable ["lastTime",time];
 //_playerObj setVariable ["model_CHK",typeOf _playerObj];
 
-diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
+//diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 
-dayzLogin = null;
-dayzLogin2 = null;
-
-//Save Login
+PVDZE_plr_Login = nil;
+PVDZE_plr_Login2 = nil;

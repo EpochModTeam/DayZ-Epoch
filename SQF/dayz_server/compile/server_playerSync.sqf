@@ -1,40 +1,28 @@
-private ["_character","_magazines","_force","_characterID","_charPos","_isInVehicle","_timeSince","_humanity","_debug","_distance","_isNewMed","_isNewPos","_isNewGear","_playerPos","_playerGear","_playerBackp","_medical","_distanceFoot","_lastPos","_backpack","_kills","_killsB","_killsH","_headShots","_lastTime","_timeGross","_timeLeft","_currentWpn","_currentAnim","_config","_onLadder","_isTerminal","_currentModel","_modelChk","_muzzles","_temp","_currentState","_array","_key","_pos","_forceGear"];
-//[player,array]
-//diag_log ("UPDATE: " + str(_this) );
-
-//waituntil {(typeName(_this) == "ARRAY");sleep 0.01;};	//seems to cause often infinite waits (but not for first n players)
-
-//this only happens when we don't follow the correct parameter format...
-//(like supplying just the player object instead of the array in player_eat.sqf)
-//i've fixed this in player_eat so i can comment this part out
-/*if ( typeName(_this) == "OBJECT" ) then {
-	_this = [_this,[],true];
-	//diag_log ("DW_DEBUG: #manual fix _this: " + str(_this));
-};*/
-
-//correct
-//"UPDATE: [B 1-1-B:1 (THE BEAST) REMOTE,[],true]"
-//error
-//"UPDATE: B 1-1-B:1 (THE BEAST) REMOTE"
+private ["_empty","_playerwasNearby","_character","_magazines","_force","_characterID","_charPos","_isInVehicle","_timeSince","_humanity","_debug","_distance","_isNewMed","_isNewPos","_isNewGear","_playerPos","_playerGear","_playerBackp","_medical","_distanceFoot","_lastPos","_backpack","_kills","_killsB","_killsH","_headShots","_lastTime","_timeGross","_timeLeft","_currentWpn","_currentAnim","_config","_onLadder","_isTerminal","_currentModel","_modelChk","_muzzles","_temp","_currentState","_array","_key","_pos","_forceGear","_friendlies"];
 
 _character = 	_this select 0;
-_magazines =	_this select 1;
+_magazines = _this select 1;
+
 //_force = 		_this select 2;
 _forceGear =	_this select 3;
 _force =	true;
+_playerwasNearby = false;
 
-_characterID =	_character getVariable ["characterID","0"];
+if ((count _this) > 4) then {
+	_playerwasNearby =	_this select 4;
+};
+
+if (isNull _character) exitWith {
+	diag_log ("Player is Null FAILED: Exiting, player sync: " + str(_character));
+};
+
+_characterID =	_character getVariable ["CharacterID","0"];
 _charPos = 		getPosATL _character;
 _isInVehicle = 	vehicle _character != _character;
 _timeSince = 	0;
 _humanity =		0;
 
 //diag_log ("DW_DEBUG: (isnil _characterID): " + str(isnil "_characterID"));
-/*
-if !(isnil "_characterID") then {
-diag_log ("DW_DEBUG: _characterID: " + str(_characterID));
-};
-*/
 
 if (_character isKindOf "Animal") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " is an Animal class");
@@ -59,8 +47,6 @@ if (_distance < 2000) exitWith {
 _isNewMed =		_character getVariable["medForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
 _isNewPos =		_character getVariable["posForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
 _isNewGear =	(count _magazines) > 0;
-
-//diag_log ("Starting Save... MED: " + str(_isNewMed) + " / POS: " + str(_isNewPos)); sleep 0.05;
 
 //Check for player initiated updates
 if (_characterID != "0") then {
@@ -99,7 +85,12 @@ if (_characterID != "0") then {
 		_playerGear = [weapons _character,_magazines];
 		//diag_log ("playerGear: " +str(_playerGear));
 		_backpack = unitBackpack _character;
-		_playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
+		if(_playerwasNearby) then {
+			_empty = [[],[]];
+			_playerBackp = [typeOf _backpack,_empty,_empty];
+		} else {
+			_playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
+		};
 	};
 	if (_isNewMed or _force) then {
 		//diag_log ("medical..."); sleep 0.05;
@@ -175,6 +166,11 @@ if (_characterID != "0") then {
 		};
 		_temp = round(_character getVariable ["temperature",100]);
 		_currentState = [_currentWpn,_currentAnim,_temp];
+		if(DZE_FriendlySaving) then {
+			// save only last/most recent 5 entrys as we only have 200 chars in db field and weapon + animation names are sometimes really long 60-70 chars.
+			_friendlies = [(_character getVariable ["friendlies",[]]),5] call array_reduceSizeReverse;
+			_currentState set [(count _currentState),_friendlies];
+		};
 		/*
 			Everything is ready, now publish to HIVE
 		*/
@@ -199,9 +195,9 @@ if (_characterID != "0") then {
 
 		// If player is in a vehicle, keep its position updated
 		if (vehicle _character != _character) then {
-//			[vehicle _character, "position"] call server_updateObject;
+			//[vehicle _character, "position"] call server_updateObject;
 			if (!(vehicle _character in needUpdate_objects)) then {
-				//diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
+				//diag_log format["DEBUG: Added to NeedUpdate=%1",vehicle _character];
 				needUpdate_objects set [count needUpdate_objects, vehicle _character];
 			};
 		};

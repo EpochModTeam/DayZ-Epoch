@@ -1,7 +1,7 @@
 private ["_hasbottleitem","_hastinitem","_bottletext","_tin1text","_tin2text","_tintext","_qty","_dis","_sfx","_removed"];
 
-if(TradeInprogress) exitWith { cutText ["Boil already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_22") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_boil;
 s_player_boil = 1;
@@ -19,8 +19,8 @@ _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "dis
 _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
 _tin2text = getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
 _tintext = format["%1 / %2",_tin1text,_tin2text];
-if (!_hasbottleitem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_bottletext,"fill"] , "PLAIN DOWN"]};
-if (!_hastinitem) exitWith {TradeInprogress = false; cutText [format[(localize "str_player_31"),_tintext,"fill"] , "PLAIN DOWN"]};
+if (!_hasbottleitem) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_31"),_bottletext,"fill"] , "PLAIN DOWN"]};
+if (!_hastinitem) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_31"),_tintext,"fill"] , "PLAIN DOWN"]};
 
 _removed = 0;
 
@@ -29,7 +29,7 @@ if (_hasbottleitem and _hastinitem) then {
 	if ("ItemWaterbottle" in magazines player) then {
 		
 		_removed = _removed + ([player,"ItemWaterbottle",_qty] call BIS_fnc_invRemove);
-		
+		[1,1] call dayz_HungerThirst;
 		player playActionNow "Medic";
         sleep 1;
 
@@ -53,4 +53,4 @@ if (_hasbottleitem and _hastinitem) then {
 
 s_player_boil = -1;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

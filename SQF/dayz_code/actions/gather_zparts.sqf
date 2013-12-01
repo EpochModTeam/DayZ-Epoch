@@ -1,7 +1,10 @@
-private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finished","_animState","_isMedic","_array","_hasHarvested","_hasKnifeBlunt"];
+private ["_hasKnife","_qty","_item","_text","_string","_type","_started","_finished","_animState","_isMedic","_hasHarvested","_hasKnifeBlunt","_humanity"];
 
-if(TradeInprogress) exitWith { cutText ["Gutting zombie already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_31") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
+
+player removeAction s_player_butcher;
+s_player_butcher = 1;
 
 _item = _this select 3;
 _hasKnife = 	"ItemKnife" in items player;
@@ -10,15 +13,13 @@ _type = typeOf _item;
 _hasHarvested = _item getVariable["meatHarvested",false];
 //_config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
 
-player removeAction s_player_butcher;
-s_player_butcher = 1;
-
 if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type
 	//_loop = true;	
 	//_isListed =		isClass (_config);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 	
+	[1,1] call dayz_HungerThirst;
 	// force animation 
 	player playActionNow "Medic";
 
@@ -54,7 +55,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled gutting." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_30") , "PLAIN DOWN"];
 		//_abort = true;
 	};
 
@@ -69,18 +70,19 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 		_qty = 1;
 	
-		_array = [_item,_qty];
-	
-		if (local _item) then {
-			_array spawn local_gutObjectZ;
-		} else {
-			dayzGutBody = _array;
-			publicVariable "dayzGutBodyZ";
-		};
+		PVDZE_plr_GutBody = [_item,_qty];
+		PVDZE_plr_GutBody spawn local_gutObjectZ;		
+		publicVariable "PVDZE_plr_GutBodyZ";
 		
+		// Reduce humanity for gutting zeds
+		_humanity = player getVariable["humanity",0];
+		_humanity = _humanity - 10;
+		player setVariable["humanity",_humanity,true];
+		
+
 		_string = format["Successfully Gutted Zombie",_text,_qty];
 		cutText [_string, "PLAIN DOWN"];
 	};
 };
 s_player_butcher = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

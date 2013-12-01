@@ -1,7 +1,7 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_soundSource"];
 
-if(TradeInprogress) exitWith { cutText ["Refuel already in progress." , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_fillgen;
 s_player_fillgen = 1;
@@ -9,6 +9,7 @@ s_player_fillgen = 1;
 // Use target from addaction
 _vehicle = 	_this select 3;
 
+[1,1] call dayz_HungerThirst;
 // force animation 
 player playActionNow "Medic";
 
@@ -18,7 +19,7 @@ r_doLoop = true;
 _started = false;
 _finished = false;
 
-cutText ["Preparing to fuel and start generator, move to cancel.", "PLAIN DOWN"];
+cutText [(localize "str_epoch_player_25"), "PLAIN DOWN"];
 
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -45,7 +46,7 @@ if(!_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText ["Canceled." , "PLAIN DOWN"]
+	cutText [(localize "str_epoch_player_26") , "PLAIN DOWN"]
 };
 
 if (_finished) then {
@@ -54,7 +55,6 @@ if (_finished) then {
 	if(!(_vehicle getVariable ["GeneratorFilled", false]) and ("ItemJerrycan" in magazines player)) then {
 	 
 		if(([player,"ItemJerrycan"] call BIS_fnc_invRemove) == 1) then {
-		
 			player addMagazine "ItemJerrycanEmpty";
 
 			// mark as once filled
@@ -69,7 +69,7 @@ if (_finished) then {
 
 			_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-			cutText ["Generator has been started.", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_28"), "PLAIN DOWN"];
 		};
 	} else {
 	
@@ -82,11 +82,10 @@ if (_finished) then {
 
 		_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-		// TODO: Add running sounds to generator
-		cutText ["Generator has been started.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_28"), "PLAIN DOWN"];
 
 	};
 };
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;
 s_player_fillgen = -1;

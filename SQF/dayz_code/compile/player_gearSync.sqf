@@ -1,9 +1,9 @@
 private ["_objects"];
 _objects = nearestObjects [getPosATL player, dayz_updateObjects, 10];
 {
-	//["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
-	dayzUpdateVehicle = [_x,"gear"];
-	publicVariableServer "dayzUpdateVehicle";
+	//["PVDZE_veh_Update",[_x,"gear"]] call callRpcProcedure;
+	PVDZE_veh_Update = [_x,"gear"];
+	publicVariableServer "PVDZE_veh_Update";
 	
 } foreach _objects;
 

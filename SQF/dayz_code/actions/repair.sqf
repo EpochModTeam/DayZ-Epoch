@@ -1,7 +1,7 @@
 private ["_vehicle","_part","_hitpoint","_type","_selection","_array","_started","_finished","_animState","_isMedic","_num_removed","_damage","_dis","_sfx","_allFixed","_id","_hasToolbox","_section","_nameType","_namePart","_hitpoints"];
 
-if(TradeInprogress) exitWith { cutText ["Repair already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_92") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 _id = _this select 2;
 _array = 	_this select 3;
@@ -22,6 +22,7 @@ s_player_repair_crtl = 1;
 
 if (_section and _hasToolbox) then {
 
+	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	
 	_dis=20;
@@ -70,16 +71,16 @@ if (_section and _hasToolbox) then {
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 		
 				//vehicle is owned by whoever is in it, so we have to have each client try and fix it
-				dayzSetFix = [_vehicle,_selection,0];
-				publicVariable "dayzSetFix";
+				PVDZE_veh_SFix = [_vehicle,_selection,0];
+				publicVariable "PVDZE_veh_SFix";
 				if (local _vehicle) then {
-					dayzSetFix call object_setFixServer;
+					PVDZE_veh_SFix call object_setFixServer;
 				};
 
 				_vehicle setvelocity [0,0,1];
 
 				//Success!
-				cutText [format["You have successfully attached %1 to the %2",_namePart,_nameType], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_166"),_namePart,_nameType], "PLAIN DOWN"];
 
 			};
 		
@@ -91,11 +92,11 @@ if (_section and _hasToolbox) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Repair.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_93"), "PLAIN DOWN"];
 	};
 			
 } else {
-	cutText [format["You need %1 to repair this",_namePart], "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_167"),_namePart], "PLAIN DOWN"];
 };
 
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
@@ -114,14 +115,14 @@ _allFixed = true;
 //update if repaired
 if (_allFixed) then {
 	_vehicle setDamage 0;
-	//["dayzUpdateVehicle",[_vehicle,"repair"]] call callRpcProcedure;
-	dayzSetFix = [_vehicle,_selection,0];
-	publicVariable "dayzSetFix";
+	//["PVDZE_veh_Update",[_vehicle,"repair"]] call callRpcProcedure;
+	PVDZE_veh_SFix = [_vehicle,_selection,0];
+	publicVariable "PVDZE_veh_SFix";
 	if (local _vehicle) then {
-		dayzSetFix call object_setFixServer;
+		PVDZE_veh_SFix call object_setFixServer;
 	};
 };
 
 s_player_repair_crtl = -1;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

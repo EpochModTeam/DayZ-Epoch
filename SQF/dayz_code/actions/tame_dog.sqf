@@ -3,9 +3,7 @@
 	Author: Kane "Alby" Stone
 	Expanded to allow all meats as input by: [VB]AWOL - DayZ Epoch
 
-	Description:
-	Allows a player to tame/domesticate a dog.
-	Script is applied to object via addAction.
+	Description: Allows a player to tame/domesticate a dog. Script is applied to object via addAction.
 		
 	Variables:
 	_target = Object that action is attached too.
@@ -39,14 +37,14 @@ if(_removed == _countIn) then {
 	_textRemoved = getText(configFile >> "CfgMagazines" >> _selected >> "displayName");
 	
 	// add failure rate based on skill level variable (days alive) 
-    _chanceToFail = (((random 1) + (dayz_skilllevel/100)) > 0.5);
+    _chanceToFail = (((random 1) + (dayz_Survived/100)) > 0.5);
 	
 	if(!_chanceToFail) then { 
 		
 		_animalID = _dog getVariable "fsm_handle";
 		_animalID setFSMVariable ["_isTamed", true];
 		sleep 1;
-		diag_log format["DEBUG: %1, id: %2 [%3]",_dog,_animalID,completedFSM _animalID];
+		//diag_log format["DEBUG: %1, id: %2 [%3]",_dog,_animalID,completedFSM _animalID];
 		if (!moveToCompleted _dog) then {
 			_dog moveTo (position _dog);
 		};
@@ -56,10 +54,10 @@ if(_removed == _countIn) then {
 		_fsmid setFSMVariable ["_handle", _fsmid];
 		player setVariable ["dogID", _fsmid];
 		_dog setVariable ["fsm_handle", _fsmid];
-		_dog setVariable ["characterID", dayz_characterID, true];
+		_dog setVariable ["CharacterID", dayz_characterID, true];
 
-		cutText [format["Dog consumed %1, and is now tamed.",_textRemoved], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_173"),_textRemoved], "PLAIN DOWN"];
 	} else {
-		cutText [format["Dog consumed %1, yet remains untamed.",_textRemoved], "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_174"),_textRemoved], "PLAIN DOWN"];
 	};
 };

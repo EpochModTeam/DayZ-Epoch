@@ -1,7 +1,7 @@
 // Load_wounded.sqf
 // OCTOBER 2010 - norrin
 
-private ["_wounded","_vcl","_group"];
+private ["_wounded","_vcl"];
 
 _wounded 	= _this select 0;
 
@@ -47,5 +47,3 @@ if (local _wounded) then
 	};
 };
 sleep 0.01;
-if (true) exitWith {};
-

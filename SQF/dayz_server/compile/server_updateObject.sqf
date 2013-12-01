@@ -4,8 +4,13 @@
 private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk","_parachuteWest","_firstTime","_object_killed","_object_repair","_isbuildable"];
 
 _object = 	_this select 0;
+
+if(isNull(_object)) exitWith {
+	diag_log format["Skipping Null Object: %1", _object];
+};
+
 _type = 	_this select 1;
-_parachuteWest = typeOf _object == "ParachuteWest";
+_parachuteWest = ((typeOf _object == "ParachuteWest") or (typeOf _object == "ParachuteC"));
 _isbuildable = (typeOf _object) in dayz_allowedObjects;
 _isNotOk = false;
 _firstTime = false;
@@ -51,7 +56,7 @@ _object_position = {
 			_fuel = fuel _object;
 		};
 		_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
-		diag_log ("HIVE: WRITE: "+ str(_key));
+		//diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;
 };
 
@@ -70,7 +75,7 @@ _object_inventory = {
 			} else {
 				_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
 			};
-			diag_log ("HIVE: WRITE: "+ str(_key));
+			//diag_log ("HIVE: WRITE: "+ str(_key));
 			_key call server_hiveWrite;
 		};
 };
@@ -78,7 +83,7 @@ _object_inventory = {
 _object_damage = {
 	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
 		_hitpoints = _object call vehicle_getHitpoints;
-	_damage = damage _object;
+		_damage = damage _object;
 		_array = [];
 		{
 			_hit = [_object,_x] call object_getHit;
@@ -88,7 +93,7 @@ _object_damage = {
 		} forEach _hitpoints;
 	
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-		diag_log ("HIVE: WRITE: "+ str(_key));
+		//diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 	};
@@ -96,7 +101,8 @@ _object_damage = {
 _object_killed = {
 	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
 	_hitpoints = _object call vehicle_getHitpoints;
-	_damage = damage _object;
+	//_damage = damage _object;
+	_damage = 1;
 	_array = [];
 	{
 		_hit = [_object,_x] call object_getHit;
@@ -105,14 +111,13 @@ _object_killed = {
 		_hit = 1;
 		_object setHit ["_selection", _hit]
 	} forEach _hitpoints;
-	_damage = 1;
 	
 	if (_objectID == "0") then {
 		_key = format["CHILD:306:%1:%2:%3:",_uid,_array,_damage];
 	} else {
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 	};
-	diag_log ("HIVE: WRITE: "+ str(_key));
+	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 };
@@ -130,7 +135,7 @@ _object_repair = {
 	} forEach _hitpoints;
 	
 	_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-	diag_log ("HIVE: WRITE: "+ str(_key));
+	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 };
@@ -145,7 +150,7 @@ switch (_type) do {
 		};
 	case "position": {
 		if (!(_object in needUpdate_objects)) then {
-			diag_log format["DEBUG Position: Added to NeedUpdate=%1",_object];
+			//diag_log format["DEBUG Position: Added to NeedUpdate=%1",_object];
 			needUpdate_objects set [count needUpdate_objects, _object];
 		};
 	};
@@ -157,7 +162,7 @@ switch (_type) do {
 			call _object_damage;
 		} else {
 			if (!(_object in needUpdate_objects)) then {
-				diag_log format["DEBUG Damage: Added to NeedUpdate=%1",_object];
+				//diag_log format["DEBUG Damage: Added to NeedUpdate=%1",_object];
 				needUpdate_objects set [count needUpdate_objects, _object];
 			};
 		};

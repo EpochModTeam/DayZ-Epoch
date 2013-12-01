@@ -1,9 +1,13 @@
 // bleed.sqf
+
+private ["_started","_finished","_animState","_isMedic","_id","_unit"];
+
 _unit = (_this select 3) select 0;
 player removeMagazine "ItemBandage";
 
 call fnc_usec_medic_removeActions;
 r_action = false;
+[1,1] call dayz_HungerThirst;
 
 if (vehicle player == player) then {
 	//not in a vehicle
@@ -43,7 +47,7 @@ if (_finished) then {
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 		dayz_sourceBleeding =	objNull;
 	} else {
-		//dayzHumanity = [player,20];
+		//PVDZE_plr_HumanityChange = [player,20];
 		[player,20] call player_humanityChange;
 	};
 

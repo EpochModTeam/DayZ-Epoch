@@ -1,19 +1,19 @@
 private ["_dir","_classname","_box","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
 
-if(TradeInprogress) exitWith { cutText ["Open Crate already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_75") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 _hasTool = 	"ItemCrowbar" in items player;
 if(!_hasTool) exitWith { 
-	cutText ["You need a crowbar to open this.", "PLAIN DOWN"];
-	TradeInprogress = false;
+	cutText [(localize "str_epoch_player_76"), "PLAIN DOWN"];
+	DZE_ActionInProgress = false;
 };
 
 _item =     _this;
 _hasCrate = 	_item in magazines player;
-if (!_hasCrate) then {
-	cutText ["Missing supply crate.", "PLAIN DOWN"];
-	TradeInprogress = false;
+if (!_hasCrate) exitWith {
+	cutText [(localize "str_epoch_player_77"), "PLAIN DOWN"];
+	DZE_ActionInProgress = false;
 };
 
 _config =   configFile >> "CfgMagazines" >> _item;
@@ -27,10 +27,15 @@ if ((_location select 2) < 0) then {
 	_location set [2,0];
 };
 
+//remove (partially) full crate
 player removeMagazine _item;
 _dir = getDir player;
 _classname = "WeaponHolder";
 
+//return empty crate to inventory
+player addMagazine "bulk_empty";
+
+[1,1] call dayz_HungerThirst;
 // Change to optional wait to complete
 player playActionNow "Medic";
 sleep 6;
@@ -50,7 +55,9 @@ if(_type == "backpack") then {
 };
 
 player reveal _box;
+
+player action ["Gear", _box];
 		
-cutText ["Opened supply crate.", "PLAIN DOWN"];
+cutText [(localize "str_epoch_player_78"), "PLAIN DOWN"];
 	
-TradeInprogress = false;
+DZE_ActionInProgress = false;

@@ -51,8 +51,9 @@ if (_canFill) then {
 
 	if ("ItemWaterbottleUnfilled" in magazines player) then {
 		for "_x" from 1 to _qty do {
-			player removeMagazine "ItemWaterbottleUnfilled";
-			player addMagazine "ItemWaterbottle";
+			if(([player,"ItemWaterbottleUnfilled"] call BIS_fnc_invRemove) == 1) then {
+				player addMagazine "ItemWaterbottle";
+			};
 		};
 
 		_dis=5;

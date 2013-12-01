@@ -348,7 +348,7 @@
 5 building_spawnzombies
 5 camp_spawnzombies
 5 dayz
-5 dog_
+//5 dog_
 5 drn_
 5 eh_localcleanup
 5 fnc_

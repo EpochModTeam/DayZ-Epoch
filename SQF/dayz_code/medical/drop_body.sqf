@@ -8,6 +8,7 @@
 Start drop_body.sqf
 */
 
+private ["_dragee","_unit"];
 _dragee	= _this select 3; 
 
 player removeAction NORRN_dropAction;
@@ -29,5 +30,3 @@ _dragee setVariable ["NORRN_unit_dragged", false, true];
 _dragee playMoveNow "ainjppnemstpsnonwrfldnon";
 norrnRalie = _dragee;
 publicVariable "norrnRalie";
-
-if (true) exitWith {};

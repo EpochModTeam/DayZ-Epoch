@@ -2,12 +2,12 @@ private ["_unit","_projectile","_isInCombat","_currentNear","_projectilespeed","
 _unit =         _this select 0;
 _projectile = 	_this select 6;
 
-diag_log ("0");
+//diag_log ("0");
 
 //_isInComat = _unit getVariable["startcombattimer",0];
 
-diag_log ("Bullit Speed: " +str(Speed _projectile));
-diag_log ("Bullit Velocity: " +str(velocity _projectile));
+//diag_log ("Bullit Speed: " +str(Speed _projectile));
+//diag_log ("Bullit Velocity: " +str(velocity _projectile));
 
 _listNear = [];
 _callCount = 0;
@@ -23,12 +23,12 @@ while {(alive _projectile) && !(isNull _projectile) && _callCount < 85;} do {
 	_listNear = _listNear + _currentNear;
 	_callCount = _callCount + 1;
 };
-diag_log ("2");
+//diag_log ("2");
 {
 	_nearVehicle = _x;
 	_listNear = _listNear - [_x];
 	
-	diag_log ("3");
+	//diag_log ("3");
 	
 	if (isPlayer _nearVehicle) then {
 		_isInCombat = _nearVehicle getVariable["startcombattimer",0];

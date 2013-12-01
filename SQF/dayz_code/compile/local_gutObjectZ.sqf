@@ -1,4 +1,4 @@
-private ["_zombiebody","_ehLoc"];
+private ["_zombiebody"];
 _zombiebody = _this select 0;
 // _qty = _this select 1;
 
@@ -12,19 +12,13 @@ if (local _zombiebody) then {
 		while {(count magazines _body >0) and (time - _timer < 300) } do { 
 			sleep 5;
 		}; 
-		//["dayzHideBody",_body] call broadcastRpcCallAll;
-		dayzHideBody = _body;
+		//["PVDZE_plr_HideBody",_body] call broadcastRpcCallAll;
+		PVDZE_plr_HideBody = _body;
 		hideBody _body; // local player
-		publicVariable "dayzHideBody"; // remote player
+		publicVariable "PVDZE_plr_HideBody"; // remote player
 		sleep 5;
 		deleteVehicle _body;
-		// Give small humanity increase after body is removed
-		[player,1] call player_humanityChange;
 		true;
 	};
 	
-} else {
-	_ehLoc = "client";
-	if (isServer) then { _ehLoc = "server"; };
-	diag_log format["gutObject EH on %1 item not local ! Type: %2",_ehLoc,str(_zombiebody)];
 };

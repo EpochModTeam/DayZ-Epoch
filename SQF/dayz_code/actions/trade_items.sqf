@@ -1,12 +1,12 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_tradeCounter","_next_highest_bar","_third_highest_bar","_next_highest_conv","_third_highest_conv","_third_parts_out_raw","_third_parts_out","_remainder","_next_parts_out_raw","_next_parts_out","_activatingPlayer","_traderID","_total_trades"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 _total_parts_out = 0;
 
-_activatingPlayer = _this select 1;
+_activatingPlayer = player;
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;
@@ -35,8 +35,8 @@ _abort = false;
 
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
-	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
-	TradeInprogress = false;
+	cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+	DZE_ActionInProgress = false;
 };
 
 // perform number of total trades
@@ -47,10 +47,11 @@ for "_x" from 1 to _total_trades do {
 
 	// cutText ["Starting trade, stand still to complete.", "PLAIN DOWN"];
 	if(_total_trades == 1) then { 
-		cutText [format[("Starting trade, stand still to complete trade."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_105"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	} else {
-		cutText [format[("Starting trade, stand still to complete trade %1 of %2."),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		cutText [format[(localize "str_epoch_player_187"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
 	};
+	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	
 	//_dis=20;
@@ -87,7 +88,7 @@ for "_x" from 1 to _total_trades do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Trade." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 	};
 
 	if (_finished) then {
@@ -95,12 +96,16 @@ for "_x" from 1 to _total_trades do {
 		_qty = {_x == _part_in} count magazines player;
 		if (_qty >= _qty_in) then {
 	
-			_removed = _removed + ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
+			_part_inClass =  configFile >> "CfgMagazines" >> _part_in;
+
+			_removed = _removed + ([player,_part_inClass,_qty_in] call BIS_fnc_invRemove);
 			if (_removed == _qty_in) then {
 			
 				// Continue with trade.
-				dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-				publicVariableServer  "dayzTradeObject";
+				if (isNil "_part_in") then { _part_in = "Unknown Item" };
+				if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
+				PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_in,inTraderCity];
+				publicVariableServer  "PVDZE_obj_Trade";
 
 				waitUntil {!isNil "dayzTradeResult"};
 
@@ -109,10 +114,10 @@ for "_x" from 1 to _total_trades do {
 					// total of all parts
 					_total_parts_out = _total_parts_out + _qty_out;
 
-					cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
 				} else {
-					cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 					_abort = true;
 
 					// Return items taken
@@ -127,7 +132,6 @@ for "_x" from 1 to _total_trades do {
 			} else {
 			
 				// Return items from botched trade. 
-				// TODO: this may never happen if so remove 
 				for "_x" from 1 to _removed do {
 					player addMagazine _part_in;
 				};
@@ -136,7 +140,7 @@ for "_x" from 1 to _total_trades do {
 
 		} else {
 			_needed =  _qty_in - _qty;
-			cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+			cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 		};
 	};
 	
@@ -266,4 +270,4 @@ if(_total_parts_out >= 1) then {
 	};
 };
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

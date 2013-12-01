@@ -3,52 +3,54 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear"];
 
-if(TradeInprogress) exitWith { cutText ["Lock already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
-
-_obj = _this;
-
-// Silently exit if object no longer exists
-if(isNull _obj) exitWith { TradeInprogress = false; };
-
-// Test cannot lock while another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { TradeInprogress = false; cutText ["Cannot lock vault while another player is nearby." , "PLAIN DOWN"];  };
-
-_ownerID = _obj getVariable["CharacterID","0"];
-_objectID 	= _obj getVariable["ObjectID","0"];
-_objectUID	= _obj getVariable["ObjectUID","0"];
-player playActionNow "Medic";
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_10") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_lockvault;
 s_player_lockvault = 1;
 
-if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText ["You cannot lock this Safe, you do not know the combination", "PLAIN DOWN"]; };
+_obj = _this;
+_objType = typeOf _obj;
+
+_lockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "lockedClass");
+_text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
+
+// Silently exit if object no longer exists
+if(isNull _obj) exitWith { DZE_ActionInProgress = false; };
+[1,1] call dayz_HungerThirst;
+player playActionNow "Medic";
+sleep 1;
+[player,"tentpack",0,false] call dayz_zombieSpeak;
+sleep 5;
+
+_playerNear = _obj call dze_isnearest_player;
+if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_11") , "PLAIN DOWN"];  };
+
+_ownerID = _obj getVariable["CharacterID","0"];
+_objectID 	= _obj getVariable["ObjectID","0"];
+_objectUID	= _obj getVariable["ObjectUID","0"];
+
+if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_115"),_text], "PLAIN DOWN"]; };
 
 _alreadyPacking = _obj getVariable["packing",0];
-
-if (_alreadyPacking == 1) exitWith {TradeInprogress = false; s_player_lockvault = -1; cutText ["That Safe is already being locked." , "PLAIN DOWN"]};
-
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_116"),_text], "PLAIN DOWN"]};
 _obj setVariable["packing",1];
 
 _dir = direction _obj;
-// _pos = getposATL _obj;
-_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
-[player,"tentpack",0,false] call dayz_zombieSpeak;
-sleep 3;
+_pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
 if(!isNull _obj) then {
 
 	// force vault save just before locking
-	dayzUpdateVehicle = [_obj,"gear"];
-	publicVariableServer "dayzUpdateVehicle";
+	PVDZE_veh_Update = [_obj,"gear"];
+	publicVariableServer "PVDZE_veh_Update";
 
 	//place tent (local)
-	_holder = createVehicle ["VaultStorageLocked",_pos,[], 0, "CAN_COLLIDE"];
+	_holder = createVehicle [_lockedClass,_pos,[], 0, "CAN_COLLIDE"];
 	_holder setdir _dir;
-	_holder setpos _pos;
+	_holder setPosATL _pos;
 	player reveal _holder;
 	
 	_holder setVariable["CharacterID",_ownerID,true];
@@ -74,8 +76,7 @@ if(!isNull _obj) then {
 		_holder setVariable ["BackpackCargo", _backpacks, true];
 	};
 	
-	cutText ["Your Safe has been locked", "PLAIN DOWN"];
-
-	s_player_lockvault = -1;
+	cutText [format[(localize "str_epoch_player_117"),_text], "PLAIN DOWN"];
 };
-TradeInprogress = false;
+s_player_lockvault = -1;
+DZE_ActionInProgress = false;

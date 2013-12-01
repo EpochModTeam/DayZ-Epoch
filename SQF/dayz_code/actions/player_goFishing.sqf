@@ -1,21 +1,23 @@
 /*
-	DayZ Crafting
+	DayZ Fishing
 	Usage: spawn player_goFishing;
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+	Made for DayZ Mod please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_itemOut","_position","_isOk","_counter"];
+private ["_itemOut","_position","_isOk","_counter","_rnd","_item","_itemtodrop","_vehicle","_inVehicle"];
 
-if(TradeInprogress) exitWith { cutText ["Fishing already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_65") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 call gear_ui_init;
 
 // find position 5m in front of player
 _position = player modeltoworld [0,5,0];
-if(!(surfaceIsWater _position)) exitWith {TradeInprogress = false; cutText ["Must be near a shore or on a boat to fish." , "PLAIN DOWN"]; };
+if(!(surfaceIsWater _position)) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_66") , "PLAIN DOWN"]; };
 
-if(dayz_isSwimming) exitWith {TradeInprogress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
-if(player getVariable["combattimeout", 0] >= time) exitWith {TradeInprogress = false; cutText ["Canceled Fishing.", "PLAIN DOWN"];};
+if((currentWeapon player) != "MeleeFishingPole") exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_67"), "PLAIN DOWN"]; };
+
+if(dayz_isSwimming) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
+if(player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];};
 
 _isOk = true;
 _counter = 0;
@@ -31,24 +33,29 @@ while {_isOk} do {
 
 	if (r_interrupt or (player getVariable["combattimeout", 0] >= time)) then {
 		_isOk = false;
-		cutText ["Canceled Fishing.", "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];
 	} else {
 		
 		sleep 2;
 
-		_rnd = 100;
+		_rnd = 50;
 
 		// check if player is in boat
 		_vehicle = vehicle player;
 		_inVehicle = (_vehicle != player);
 		if(_inVehicle) then {
 			if(_vehicle isKindOf "Ship") then {
-				_rnd = 50;
+				// higher chance to catch if water is deeper than 25m
+				if(((getPosATL _vehicle) select 2) > 25) then {
+					_rnd = 12;
+				} else {
+					_rnd = 25;
+				};
 			};
 		};
-		
 
-		// 1% chance to catch anything
+
+		// chance to catch anything
 		if((random _rnd) <= 1) then {
 			// Just the one fish for now
 			_itemOut = ["ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemSeaBass","ItemSeaBass","ItemTuna"] call BIS_fnc_selectRandom;
@@ -61,18 +68,17 @@ while {_isOk} do {
 				player addMagazine _itemOut;
 			};
 			
-			
-			cutText ["You caught a fish.", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_69"), "PLAIN DOWN"];
 			_isOk = false;
 		} else {
-			cutText ["Nibble... Nibble...", "PLAIN DOWN"];
+			cutText [(localize "str_epoch_player_70"), "PLAIN DOWN"];
 			_counter = _counter + 1;
-			if(_counter == 5) then {
+			if(_counter == 10) then {
 				_isOk = false;
 				sleep 2;
-				cutText ["You didn't catch anything.", "PLAIN DOWN"];
+				cutText [(localize "str_epoch_player_71"), "PLAIN DOWN"];
 			};
 		};
 	};
 };
-TradeInprogress = false;
+DZE_ActionInProgress = false;

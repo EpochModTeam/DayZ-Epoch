@@ -1,4 +1,6 @@
 // bleed.sqf
+
+private ["_started","_finished","_animState","_isMedic","_id","_num_removed","_unit"];
 _unit = (_this select 3) select 0;
 
 _unit setVariable ["hit_legs",0];
@@ -6,7 +8,7 @@ _unit setVariable ["hit_hands",0];
 
 call fnc_usec_medic_removeActions;
 r_action = false;
-
+[1,1] call dayz_HungerThirst;
 if (vehicle player == player) then {
 	//not in a vehicle
 	player playActionNow "Medic";
@@ -40,7 +42,7 @@ if (_finished) then {
 			//Self Healing
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
 		} else {
-			//dayzHumanity = [player,50];
+			//PVDZE_plr_HumanityChange = [player,50];
 			[player,50] call player_humanityChange;
 		};
 	

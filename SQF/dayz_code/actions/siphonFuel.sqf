@@ -1,7 +1,7 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText","_availableCansEmpty"];
 
-if(TradeInprogress) exitWith { cutText ["Siphon already in progress." , "PLAIN DOWN"] };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_98") , "PLAIN DOWN"] };
+DZE_ActionInProgress = true;
 
 // Use target from addaction
 _vehicle = 	_this select 0;
@@ -46,7 +46,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 			if (_newFuel > 0) then {
 
-				cutText [format["Preparing to siphon, stand still to fill %1.",_canTypeEmpty], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_133"),_canTypeEmpty], "PLAIN DOWN"];
 				
 				// alert zombies
 				[player,20,true,(getPosATL player)] spawn player_alertZombies;
@@ -55,6 +55,7 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 				if(!dayz_isSwimming) then {
 
+					[1,1] call dayz_HungerThirst;
 					// force animation 
 					player playActionNow "Medic";
 
@@ -111,19 +112,16 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 						if(([player,_canNameEmpty] call BIS_fnc_invRemove) == 1) then {
 		
-							dayzSetFuel = [_vehicle,_newFuel];
+							PVDZE_veh_SFuel = [_vehicle,_newFuel];
 							if (local _vehicle) then {
-								dayzSetFuel spawn local_setFuel;
+								PVDZE_veh_SFuel spawn local_setFuel;
 							};
-							publicVariable "dayzSetFuel";
+							publicVariable "PVDZE_veh_SFuel";
 
 							// Play sound
 							[player,"refuel",0,false] call dayz_zombieSpeak;
-							
-							// Add filled can
 							player addMagazine _canName;
-					
-							cutText [format["%1 has been drained for %2 litres of Fuel",_nameText,_canSize], "PLAIN DOWN"];
+							cutText [format[(localize "str_epoch_player_171"),_nameText,_canSize], "PLAIN DOWN"];
 	
 							call fnc_usec_medic_removeActions;
 							r_action = false;
@@ -134,17 +132,17 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 						};	
 				
 					} else {
-						cutText [format["%1 does not have enough fuel to siphon.",_nameText], "PLAIN DOWN"];
+						cutText [format[(localize "str_epoch_player_172"),_nameText], "PLAIN DOWN"];
 						_abort = true;
 					};
 						
 				} else {
-					cutText ["Canceled siphon." , "PLAIN DOWN"];
+					cutText [(localize "str_epoch_player_35") , "PLAIN DOWN"];
 					_abort = true;
 				};
 			
 			} else {
-				cutText [format["%1 does not have enough fuel to siphon.",_nameText], "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_172"),_nameText], "PLAIN DOWN"];
 				_abort = true;
 			};	
 		};		
@@ -155,4 +153,4 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 } forEach magazines player;
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

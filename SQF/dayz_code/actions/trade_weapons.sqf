@@ -1,10 +1,10 @@
-private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_needed","_activatingPlayer","_textPartIn","_textPartOut","_started","_finished","_animState","_isMedic"];
+private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_needed","_activatingPlayer","_textPartIn","_textPartOut","_started","_finished","_animState","_isMedic","_removed"];
 // [part_out,part_in, qty_out, qty_in,"buy"];
 
-if(TradeInprogress) exitWith { cutText ["Trade already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
-_activatingPlayer = _this select 1;
+_activatingPlayer = player;
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;
@@ -26,8 +26,9 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	cutText ["Starting trade, stand still to complete trade.", "PLAIN DOWN"];
+	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
 	 
+	[1,1] call dayz_HungerThirst;
 	// force animation 
 	player playActionNow "Medic";
 	
@@ -65,7 +66,7 @@ if (_qty >= _qty_in) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled Trade." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 	};
 
 	if (_finished) then {
@@ -79,9 +80,11 @@ if (_qty >= _qty_in) then {
 
 		if (_qty >= _qty_in) then {
 
-			//["dayzTradeObject",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
-			dayzTradeObject = [_activatingPlayer,_traderID,_bos];
-			publicVariableServer  "dayzTradeObject";
+			//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
+			if (isNil "_part_out") then { _part_out = "Unknown Weapon/Magazine" };
+			if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
+			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_out,inTraderCity];
+			publicVariableServer  "PVDZE_obj_Trade";
 	
 			waitUntil {!isNil "dayzTradeResult"};
 
@@ -99,7 +102,7 @@ if (_qty >= _qty_in) then {
 							player addMagazine _part_out;
 						};
 					};
-					cutText [format[("Traded %1 %2 for %3 %4"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 				};
 	
 				
@@ -108,7 +111,7 @@ if (_qty >= _qty_in) then {
 				s_player_parts_crtl = -1;
 
 			} else {
-				cutText [format[("Insufficient Stock %1"),_textPartOut] , "PLAIN DOWN"];
+				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
 			dayzTradeResult = nil;
 		};
@@ -116,7 +119,7 @@ if (_qty >= _qty_in) then {
 
 } else {
 	_needed =  _qty_in - _qty;
-	cutText [format[("Need %1 More %2"),_needed,_textPartIn] , "PLAIN DOWN"];
+	cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 };
 
-TradeInprogress = false;
+DZE_ActionInProgress = false;

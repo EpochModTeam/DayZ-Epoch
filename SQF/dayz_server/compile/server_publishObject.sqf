@@ -20,12 +20,12 @@ _key call server_hiveWrite;
 
 _object setVariable ["lastUpdate",time];
 _object setVariable ["ObjectUID", _uid,true];
-// _object setVariable ["characterID",_charID,true];
+// _object setVariable ["CharacterID",_charID,true];
 
 _object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
 // Test disabling simulation server side on buildables only.
 _object enableSimulation false;
 
-dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 
 //diag_log ("PUBLISH: Created " + (_class) + " with ID " + _uid);

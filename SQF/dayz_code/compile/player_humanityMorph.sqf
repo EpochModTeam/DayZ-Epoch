@@ -72,13 +72,13 @@ player setVariable["zombieKills",_zombieKills,true];
 player setVariable["headShots",_headShots,true];
 player setVariable["humanKills",_humanKills,true];
 player setVariable["banditKills",_banditKills,true];
-player setVariable["characterID",_charID,true];
+player setVariable["CharacterID",_charID,true];
 player setVariable["worldspace",_worldspace,true];
 player setVariable["friendlies",_friendlies,true];
 player setVariable["tagList",_tagList,true];
 
 //code for this on the server is missing
-//["dayzPlayerMorph",[_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity]] call callRpcProcedure;
+//["PVDZE_plr_Morph",[_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity]] call callRpcProcedure;
 
 call dayz_resetSelfActions;
 
@@ -91,4 +91,8 @@ player addWeapon "Loot";
 player addWeapon "Flare";
 
 sleep 0.1;
-deleteVehicle _old;
+
+if (!isNull _old) then {
+	// this should not be needed as player is deleted in player_switchModel?
+	deleteVehicle _old;
+};

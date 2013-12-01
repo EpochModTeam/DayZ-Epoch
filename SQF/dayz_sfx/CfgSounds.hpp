@@ -121,6 +121,11 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\action_drink_0.ogg",0.1,1,20};
 		titles[] = {};
 	};
+	class z_document_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_open_doc_0.ogg",0.1,1,20};
+		titles[] = {};
+	};
 	class z_soda_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\action_soda_0.ogg",0.3,1,30};
@@ -532,5 +537,99 @@ class CfgSounds {
 	};
 	class z_gore_short_loop : gore_1 {
 		sound[] = {"\dayz_sfx\gore\gore_short_loop.ogg",0.1,1,30};
+	};
+	class z_open_backpack_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_0.ogg",1,1,50};
+		titles[] = {};
+	};
+	class z_open_backpack_1 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_1.ogg",1,1,50};
+	};
+	class z_open_backpack_2 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_2.ogg",1,1,50};
+	};
+	class z_open_backpack_3 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_3.ogg",1,1,50};
+	};
+	class z_open_backpack_4 : z_open_backpack_0 {
+		sound[] = {"\dayz_sfx\effects\action_open_backpack_4.ogg",1,1,50};
+	};
+
+    class z_open_inventory_0 {
+        name = "";
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_0.ogg",0.1,1,30};
+        titles[] = {};
+    };
+    class z_open_inventory_1 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_1.ogg",0.1,1,30};
+    };
+    class z_open_inventory_2 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_2.ogg",0.1,1,30};
+    };
+    class z_open_inventory_3 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_3.ogg",0.1,1,30};
+    };
+    class z_open_inventory_4 : z_open_inventory_0 {
+        sound[] = {"\dayz_sfx\effects\action_open_inventory_4.ogg",0.1,1,30};
+    };
+
+	// epoch sounds
+	class z_keypad_tick_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\keyPress_a.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_keypad_tick_1 : z_keypad_tick_0 {
+		sound[] = {"\dayz_sfx\effects\keyPress_b.ogg",1,1,10};
+	};
+	class z_keypad_tick_2 : z_keypad_tick_0 {
+		sound[] = {"\dayz_sfx\effects\keyPress_c.ogg",1,1,10};
+	};
+
+	class z_flysound_0 {
+		name = "";
+		sound[] = {"\ca\Sounds\animals\flies",1,1,10};
+		titles[] = {};
+	};
+	class z_flysound_1 : z_flysound_0 {
+		sound[] = {"\ca\Sounds\animals\flies2",1,1,10};
+	};
+
+	class z_combo_tick_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\combo_tick.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_combo_unlock_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\combo_unlock.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_combo_locked_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\combo_locked.ogg",1,1,10};
+		titles[] = {};
+	};
+
+	class z_radzone1_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_0.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_radzone2_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_1.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_radzone3_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_2.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_radzone4_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\geiger_level_3.ogg",1,1,10};
+		titles[] = {};
 	};
 };

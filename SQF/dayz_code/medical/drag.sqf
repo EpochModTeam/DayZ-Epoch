@@ -9,7 +9,7 @@
 Start drag.sqf
 */
 
-private ["_unit","_dragee","_pos","_dir"];
+private ["_unit","_dragee","_unconscious"];
 _dragee				= _this select 3;
 _unit  				= player;
 _unconscious = 		_dragee getVariable ["NORRN_unconscious", false];
@@ -42,5 +42,3 @@ call fnc_usec_medic_removeActions;
 NORRN_dropAction = player addAction ["Drop body", "\z\addons\dayz_code\medical\drop_body.sqf",_dragee, 0, false, true];
 //NORRN_carryAction = player addAction ["Carry body", "\z\addons\dayz_code\medical\carry.sqf",_dragee, 0, false, true];
 sleep 1;
-
-if (true) exitWith {};

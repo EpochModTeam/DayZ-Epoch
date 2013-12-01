@@ -313,6 +313,19 @@ class _vehicle_76
 		PARENT="";
 	};
 };
+class _unit_20
+{
+	objectType="unit";
+	class Arguments
+	{
+		POSITION="[6013.0737, 6629.2124, 1.5258789e-005]";
+		GROUP="_group_1";
+		TYPE="Worker2";
+		AZIMUT="138.41472";
+		INIT="this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
+		SKILL="0.60000002";
+	};
+};
 class _vehicle_78
 {
 	objectType="vehicle";
@@ -8921,18 +8934,6 @@ class _unit_154
 		TYPE="RU_Doctor";
 		AZIMUT="15.470127";
 		INIT="this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
-		SKILL="0.60000002";
-	};
-};
-class _unit_155
-{
-	objectType="unit";
-	class Arguments
-	{
-		POSITION="[6012.9453, 6629.125]";
-		GROUP="_group_1";
-		TYPE="TK_CIV_Worker01_EP1";
-		AZIMUT="156.50609";
 		SKILL="0.60000002";
 	};
 };

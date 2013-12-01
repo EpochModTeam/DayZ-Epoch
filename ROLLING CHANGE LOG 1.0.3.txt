@@ -1,0 +1,80 @@
+== ROLLING CHANGE LOG 1.0.3 ==
+
+* [NEW] In-game Map - Unused Arma UI has been removed, from DayZ CE 1.8. @Skaronator
+* [NEW] Gear is only accessible in vehicles with "G" key due to removal of Arma Map Menus, from DayZ CE 1.8. @Skaronator
+
+* [ADDED] Radiation effect with geiger counter sounds and eventual rapidblood loss when player goes out of the map for too long.
+* [ADDED] Craft-able Gunrack with 6 x PartWoodLumber makes GunRack_DZ that holds 20 weapons/10 magazines. http://i.imgur.com/mfY0uLN.jpg  @dayz10k
+* [ADDED] Craft-able Base Fire Barrel FireBarrel_DZ with an empty Fuel Barrel, Full Jerry Can, and 4x WoodPile. http://i.imgur.com/2KHWdMS.jpg @dayz10k
+* [ADDED] Craft-able 5x Wide HESCO barrier from, a 3 wide HESCO and 2x 1 wide HESCO. http://i.imgur.com/beWNQtH.jpg @dayz10k
+* [ADDED] Craft-able Round Sandbag Fence (BagFenceRound_DZ) from ItemSandbag. http://i.imgur.com/WlblRPf.jpg @dayz10k
+* [ADDED] Vehicle upgrade system with 4 stages: 1=performance, 2=armor, 3=cargo, and 4=fuel. To upgrade a vehicle you must first find the lvl 1 performance manual and two engine parts then right click next to your vehicle. @vbawol
+* [ADDED] The above documents to the discoverable documents. @dayz10k
+* [ADDED] Can now examine Murder Boards via Newspaper Obituaries.  @vbawol
+* [ADDED] ItemPlotDeed to discoverable documents (leads to crafting a plot pole). @dayz10k
+* [ADDED] Added Player Names that killed Objects to diag_log @Torndeco
+* [ADDED] Added Player Worldspace location to Connect/Disconnect/Combat Log RPT messages. @dayz10k
+* [ADDED] dayz_sellDistance variables are now split into "dayz_sellDistance_boat", "dayz_sellDistance_vehicle" and "dayz_sellDistance_air" - @Skaronator
+* [ADDED] Surrender (options > controls > "Surrender") action now drops your weapons and places your hands on your head. While surrendered other players can access your gear.
+* [ADDED] Remove nearest tanktrap with right click option on toolbox @dayz10k
+* [ADDED] Faster in string function by Killzone Kid http://killzonekid.com/arma-scripting-tutorials-how-to-find-a-string-within-a-string/
+* [ADDED] Halo jump option from a helicopter when above 400m. @zabn
+* [ADDED] Localization support added. @zabn @dayz10k
+* [ADDED] Added dutch translations. @JoSchaap
+* [ADDED] Added Russian translations. @VeryBigBro
+* [ADDED] Added French translations. @th4z
+* [ADDED] Chernarus-Spawnselection and 1.8 GUI-Icons to the dayz_code.pbo - experienced server admins can use it. @Skaronator
+* [ADDED] Global variable if player is fresh spawned. Can used for custom script like in spawn-camera script ("freshSpawn = 0" - Normal Spawn / 1 - fresh spawn as zombie / 2 - fresh spawn as player) @Skaronator
+* [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
+* [ADDED] Added 8 more Trucks from ARMA: V3S_Civ, V3S_TK_EP1_DZE, V3S_RA_TK_GUE_EP1_DZE, UralCivil_DZE, UralCivil2_DZE, KamazOpen_DZE, MtvrRefuel_DZ, MTVR @vbawol
+* [ADDED] Destroy tent option when you have a full Jerry Can and Matches. @vbawol
+* [ADDED] Tag friendly system now stores your 5 most recent friends with your life. Building on another friends plot and you are already tagged you still need to look at the owner once to complete the handshake so that you can start building. Server admins can disable this with DZE_FriendlySaving = false; in the init.sqf @zabn @vbawol
+* [ADDED] Player can now get crushed if they get out to close to a wall or building. Successful wall glitches now result in death ONLY if your get out position intersects a building. @vbawol
+* [ADDED] Can now maintain lightpoles with a lightbub. @vbawol @dayz10k
+* [ADDED] Directly Disconnect (back to lobby) if you press abort > yes - @Skaronator
+* [ADDED] New Weapons, most of which are backpack compatible: M60, M240 scoped, M249 scoped, MG36 variants, RPK-74, M8 SAW, Bizon, Saiga12K, KSVK, M4+203 HOLO SD  @dayz10k
+* [ADDED] Extra security features. @facoptere
+* [ADDED] Owner can now remove modular parts (walls, etc) without having to destroy them.  NOTE: nothing is refunded/no rubble. @dayz10k
+* [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @vbawol @dayz10k
+* [ADDED] Swinging melee weapons and cracking locks (multiple attempts) will trigger hunger/thirst.  @vbawol
+* [ADDED] New building supplies (mortar, cinder, wood packs) to Wholesalers @dayz10k
+* [ADDED] Area maintenance of bases @vos (Axe Cop) @dayz10k
+
+* [UPDATED] Server can now control now fast the periodic client save interval is on the fly. Actual server fps is used to determine how fast the clients can update min 10 seconds max 60 seconds.
+* [UPDATED] Humanity changes: Give player humanity for killing bandits with no murders. Prevent humanity loss from killing player zombies and give a small humanity increase. @Armifer
+* [UPDATED] Trading log-system (server-side) was improved. @Skaronator
+* [UPDATED] Back-end loot configs and loot spawning rates. @vbawol
+
+* [FIXED] Plot pole no longer falls over and can be destroyed but has armor=1000.
+* [FIXED] Fixed unable being able to sell satchel charges. @vbawol
+* [FIXED] Fix for diag_log statement when player buying vehicles @Torndeco
+* [FIXED] Building on roads no longer allowed as it was intended. @dayz10k
+* [FIXED] M4SPR spawns now with 30 Rnds Stanag mags and not anymore with 20 Rnds. @Skaronator
+* [FIXED] Fixed expression error with vehicles/safes when loading a large inventory. @vbawol
+* [FIXED] No more bleeding trees, rocks, etc with melee weapons from DayZ CE 1.8. @vbawol
+* [FIXED] Variable added to player zombie vision to better support anti-hacks @Skaronator
+* [FIXED] Lower chance to play fly sounds when near dead bodies. @vbawol
+* [FIXED] Documents now examine one at a time, also fixes getting the same item for each document. @vbawol
+* [FIXED] Server now only saves the first 20 magazines on disconnect to prevent saving items in overflow that can cause player inventory corruption. @vbawol
+* [FIXED] Zombies no longer attack players unless they have true line of sight. @vbawol
+* [FIXED] RPT error on all clients when dragging a player. @zabn
+* [FIXED] Reduced zombie attack ranges back to normal levels since it is no longer needed due to removal of vilas vehicles. @vbawol
+* [FIXED] Small typo in Axeman's tower light code was preventing it from working. @Torndeco
+* [FIXED] Case sensitivity issues with last versions SQL update calls.
+* [FIXED] Recent Murders on the Murder Board in trader cities now works properly. @vbawol
+
+* [CHANGED] Mission name and descriptions now conform to template. @dayz10k
+* [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
+* [CHANGED] Increased armor levels on cinder and metal modular base building objects by 20%.
+* [CHANGED] Removed 12m restriction of other players when buying and selling vehicles. Added requirement that you must be the last to get in the drivers seat to sell the vehicle.
+* [CHANGED] Opening supply crate now returns a empty supply crate. @dayz10k
+* [CHANGED] Updated Makarov, MakarovSD, and M1911 damage settings to the same as DayZ CE 1.8. @vbawol
+* [CHANGED] Base building enhancements and changed count down timer. @zabn
+* [CHANGED] Base Building now requires a plot pole again. @vbawol
+* [CHANGED] Backpack pickup method @vbawol
+
+* [REMOVED] Dust effect from 1.0.2.5 removed.
+* [REMOVED] Unused code and images removed @Skaronator
+* [REMOVED] Map markers for other players and empty vehicles (blue/orange/green dots & vehicles) @Skaronator
+* [REMOVED] Removed humanity heartbeat code @vbawol
+* [REMOVED] Road Cones at Bash and Klen traders that would cause Vodniks to spawn in and launch vertically. @dayz10k

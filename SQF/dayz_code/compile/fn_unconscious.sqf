@@ -1,4 +1,4 @@
-private ["_timeout","_isOnDeck","_isInLocation","_inVehicle","_bloodLow","_isHospital","_totalTimeout","_display","_ctrl1","_ctrl1Pos"];
+private ["_nul","_timeout","_isOnDeck","_isInLocation","_inVehicle","_bloodLow","_isHospital","_totalTimeout","_display","_ctrl1","_ctrl1Pos"];
 disableSerialization;
 if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 	//Unconscious Meter
@@ -18,7 +18,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 	disableUserInput true;
 	//waitUntil{USEC_MotherInbox == ""};
 	//["MED001",0,"Unconscious"] call fnc_usec_recordEventClient;
-	diag_log "CLIENT: Unconscious...";
+	//diag_log "CLIENT: Unconscious...";
 	while {(r_player_unconscious)} do {
 		_ctrl1 ctrlSetPosition [(_ctrl1Pos select 0),(_ctrl1Pos select 1),(_ctrl1Pos select 2),((0.136829 * safezoneH) * (1 -(r_player_timeout / _totalTimeout)))];
 		_ctrl1 ctrlCommit 1;
@@ -46,7 +46,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 			r_player_timeout = r_player_timeout - 1;
 		} else {
 			if ((!r_player_dead) and (!r_player_cardiac)) then {
-				nul = [] spawn fnc_usec_recoverUncons;
+				_nul = [] spawn fnc_usec_recoverUncons;
 			};
 		};
 		//Check if near field hospital
@@ -77,17 +77,17 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 			
 			sleep 1;
 			r_player_handler = false;
-			nul = [] spawn fnc_usec_recoverUncons;
+			_nul = [] spawn fnc_usec_recoverUncons;
 		};
 		if (!(player getVariable ["NORRN_unconscious", true])) then {
-			nul = [] spawn fnc_usec_recoverUncons;
+			_nul = [] spawn fnc_usec_recoverUncons;
 		};
 		if(animationState player == "AmovPpneMstpSnonWnonDnon_healed") then {
-			nul = [] spawn fnc_usec_recoverUncons;
+			_nul = [] spawn fnc_usec_recoverUncons;
 		};
 	};
 	4 cutRsc ["default", "PLAIN",1];
-	diag_log "CLIENT: Conscious...";
+	//diag_log "CLIENT: Conscious...";
 	disableUserInput false;
 	//waitUntil{USEC_MotherInbox == ""};
 	//["MED001",0,"Conscious"] call fnc_usec_recordEventClient;

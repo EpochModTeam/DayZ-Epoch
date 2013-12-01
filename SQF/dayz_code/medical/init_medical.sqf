@@ -1,5 +1,5 @@
 // init_related_scripts.sqf ArmA2 revive
-// © AUGUST 2010 - norrin 
+// ï¿½ AUGUST 2010 - norrin 
 
 // Functions
 
@@ -9,6 +9,8 @@
 #include "\ca\editor\Data\Scripts\dikCodes.h"
 
 //Settings
+
+private ["_id","_rnd","_lowBlood"];
 usec_bandage_recovery = 5;		//time to recover after bandaging
 
 //"colorCorrections" ppEffectEnable true;

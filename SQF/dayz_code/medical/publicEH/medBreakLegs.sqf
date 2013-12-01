@@ -1,5 +1,5 @@
 // medBreakLegs.sqf
-private["_array","_unit","_attacker","_display","_control","_hitLegs","_hitArms"];
+private ["_array","_unit","_attacker","_cnt","_index","_hit","_damage","_wound","_isInjured","_lowBlood"];
 disableserialization;
 _array = _this; //_this select 0;
 _unit = _array select 0;

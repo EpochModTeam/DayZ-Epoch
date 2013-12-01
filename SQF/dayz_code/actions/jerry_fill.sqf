@@ -1,7 +1,7 @@
-private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx"];
+private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx","_displayName","_fuelCans"];
 
-if(TradeInprogress) exitWith { cutText ["Fill Jerry already in progress." , "PLAIN DOWN"]; };
-TradeInprogress = true;
+if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_34"), "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
 
 player removeAction s_player_fillfuel;
 s_player_fillfuel = 1;
@@ -9,18 +9,24 @@ s_player_fillfuel = 1;
 _fillCounter = 0;
 _abort = false;
 
-_qty = {_x == "ItemJerrycanEmpty"} count magazines player;
+_fuelCans = [];
 
-for "_x" from 1 to _qty do {
+{
+	if(_x == "ItemJerrycanEmpty" or _x == "ItemFuelBarrelEmpty") then {
+		_fuelCans set [(count _fuelCans),_x];
+	};
+} forEach magazines player;
+
+_qty = count _fuelCans;
+
+{
+	_displayName = getText (configFile >> "cfgMagazines" >> _x >> "displayName");
 	
 	_fillCounter = _fillCounter + 1;
 
-	if(_qty == 1) then {
-		cutText ["Preparing to siphon, stand still to fill empty jerry can.", "PLAIN DOWN"];
-	} else {
-		cutText [format[("Preparing to siphon, stand still to fill empty jerry can %1 of %2."),_fillCounter,_qty] , "PLAIN DOWN"];
-	};
-
+	cutText [format[(localize "str_epoch_player_133"),_displayName], "PLAIN DOWN"];	
+	
+	[1,1] call dayz_HungerThirst;
 	// force animation 
 	player playActionNow "Medic";
 	// Play sound and alert zombies
@@ -59,27 +65,27 @@ for "_x" from 1 to _qty do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText ["Canceled siphon." , "PLAIN DOWN"];
+		cutText [(localize "str_epoch_player_35") , "PLAIN DOWN"];
 		_abort = true;
 	};
 
 	if (_finished) then {
-
-		if ("ItemJerrycanEmpty" in magazines player) then {
-	
-			player removeMagazine "ItemJerrycanEmpty";
-			player addMagazine "ItemJerrycan";
-
-			cutText [format[(localize  "str_player_09"),1], "PLAIN DOWN"];
+		if(([player,_x] call BIS_fnc_invRemove) == 1) then {
+			if (_x == "ItemFuelBarrelEmpty") then {
+				player addMagazine "ItemFuelBarrel";
+			} else {
+				player addMagazine "ItemJerrycan";
+			};
+			cutText [format[(localize "str_epoch_player_134"),_displayName], "PLAIN DOWN"];	
 		} else {
-			cutText [(localize "str_player_10") , "PLAIN DOWN"];
 			_abort = true;
 		};
 	}; 
 
 	sleep 1;
 	if(_abort) exitWith {};
-};
+
+} forEach _fuelCans;
 
 s_player_fillfuel = -1;
-TradeInprogress = false;
+DZE_ActionInProgress = false;

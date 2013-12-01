@@ -18,6 +18,7 @@ if (count _inventory > 0) then {
 		};
 
 		if (_item == "BoltSteel") then { _item = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
+		if (_item == "ItemTent") then { _item = "ItemTentOld" };
 
 		//Is item legal?
 		_isOK = 	isClass(configFile >> "CfgMagazines" >> _item);
@@ -33,7 +34,9 @@ if (count _inventory > 0) then {
 	
 	//Add weapons
 	{
-		if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
+		if(_x in (DZE_REPLACE_WEAPONS select 0)) then {
+			_x = (DZE_REPLACE_WEAPONS select 1) select ((DZE_REPLACE_WEAPONS select 0) find _x);
+		};
 
 		//Is item legal?
 		_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);

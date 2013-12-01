@@ -1,79 +1,47 @@
-private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave"];
+private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood"];
 disableSerialization;
-_timeOut = 	0;
+
 _messTimer = 0;
-_lastSave = 0;
+_radTimer = 0;
 _lastTemp = dayz_temperatur;
-_debug = getMarkerpos "respawn_west";
-_isBandit = false;
-_isHero = false;
+
+_isPZombie = player isKindOf "PZombie_VB";
 
 player setVariable ["temperature",dayz_temperatur,true];
+player setVariable["friendlies",DZE_Friends,true];
 
 dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) +  (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
 
-	//player addMagazine "Hatchet_Swing";
-	//player addWeapon "MeleeHatchet";
-
 while {true} do {
+
 	//Initialize
 	_refObj = 	vehicle player;
 	_factor = 0.6;
 	_inVehicle = (_refObj != player);
-	if(_inVehicle) then {
-		_factor = 1;
-	};
-	
 	_size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
-	_saveTime = (playersNumber west * 2) + 10;
-		
-	//reset position
-	_randomSpot = true;
-	_tempPos = getPosATL player;
-	_distance = _debug distance _tempPos;
-	if (_distance < 2000) then {
-		_randomSpot = false;
-	};	
-	_distance = [0,0,0] distance _tempPos;
-	if (_distance < 500) then {
-		_randomSpot = false;
-	};
-	_distance = _mylastPos distance _tempPos;
-	if (_distance > 400) then {
-		_randomSpot = false;
-	};
 	
-	if (_randomSpot) then {
-		_mylastPos = _tempPos;
-	};
-	
-	dayz_mylastPos = _mylastPos;
 	dayz_areaAffect = _size;
 	
-	if (_speed > 0.1) then {
-		_timeOut = _timeOut + 1;
-	};
-	
-	_humanity = player getVariable ["humanity",0];
-	if (_timeOut > 150) then {
-		_timeOut = 0;
-		if (_humanity < 2500) then {
-			_humanity = _humanity + 150;
-			_humanity = _humanity min 2500;
-			player setVariable ["humanity",_humanity,true];
-		};
-	};
-
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
 	if (_lastUpdate > 8) then {
 		//POSITION?
-		_distance = dayz_myPosition distance player;
+		_distance = dayz_myPosition distance _refObj;
 		if (_distance > 10) then {
 			//Player has moved
-			dayz_myPosition = getPosATL player;
+			dayz_myPosition = getPosATL _refObj;
+
+			// Check for radiation
+			DZE_InRadiationZone = false;
+			
+			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos OR (dayz_myPosition select 1) < dayz_minpos OR (dayz_myPosition select 0) > dayz_maxpos OR (dayz_myPosition select 1) > dayz_maxpos);
+			
+			if(_outsideMap OR DZE_Quarantine) then {
+				DZE_InRadiationZone = true;
+			};
+
 			player setVariable["posForceUpdate",true,true];
 			dayz_unsaved = true;
 			dayZ_lastPlayerUpdate = time;
@@ -89,7 +57,7 @@ while {true} do {
 
 	//Thirst
 	_thirst = 2;
-	if (_refObj == player) then {
+	if (!_inVehicle) then {
 		_thirst = (_speed + 4) * 3;
 	};
 	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% and + 16.6% waterloss
@@ -102,8 +70,8 @@ while {true} do {
 	};
 	
 	//can get nearby infection
-	if (!r_player_infected) then {
-		//					Infectionriskstart
+	if (!r_player_infected and !_isPZombie) then {
+		//Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
 			_listTalk = _mylastPos nearEntities ["CAManBase",8];
 			{
@@ -145,7 +113,6 @@ while {true} do {
 		};
 		if (r_player_blood > 3000) then {
 			r_player_blood = r_player_blood - 3;
-			player setVariable["USEC_BloodQty",r_player_blood];
 		};
 	};
 	
@@ -174,6 +141,51 @@ while {true} do {
 			r_player_blood = _result;
 		};
 	};
+
+	// Radiation zones rapid blood loss
+	if (DZE_InRadiationZone) then {
+		
+		_radsound = "radzone1";
+		_bloodloss = 10;
+		if(_radTimer > 5 AND _radTimer < 10) then {
+			_radsound = "radzone2";
+			_bloodloss = 20;
+			playSound "breath_1";
+		};
+		if(_radTimer > 10) then {
+			_radsound = "radzone3";
+			_bloodloss = 30;
+			addCamShake [2, 1, 25];
+		};
+		if(_radTimer > 15) then {
+			_radsound = "radzone4";
+			_bloodloss = 50;
+			[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
+		};
+		_result = r_player_blood - _bloodloss;
+		if (_result < 0) then {
+			_id = [player,"rad"] spawn player_death;
+		} else {
+			r_player_blood = _result;
+		};
+		
+		[player,_radsound,0,true] call dayz_zombieSpeak;
+		_radTimer = _radTimer + 1;
+	} else {
+		_radTimer = 0;
+	};
+	
+	// Health uptick when healty not thirsty or hungry
+	if (_foodVal >= 0.9 and _thirstVal >= 0.9) then {
+		if (!r_player_infected and !r_player_inpain and !r_player_injured) then {
+			_result = r_player_blood + 10;
+			if (_result >= r_player_bloodTotal) then {
+				r_player_blood = r_player_bloodTotal;
+			} else {
+				r_player_blood = _result;
+			};
+		};
+	};
 	
 	//Record low blood
 	_lowBlood = player getVariable ["USEC_lowBlood", false];
@@ -188,63 +200,34 @@ while {true} do {
 		player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 	};
 	
-	//check if can disconnect
-	if (!dayz_canDisconnect) then {
-		if ((time - dayz_damageCounter) > 180) then {
-			if (!r_player_unconscious) then {
-				dayz_canDisconnect = true;
-				//["dayzDiscoRem",getPlayerUID player] call callRpcProcedure;
-				dayzDiscoRem = getPlayerUID player;
-				publicVariableServer "dayzDiscoRem";
-				
-				//Ensure Control is hidden
-				_display = uiNamespace getVariable 'DAYZ_GUI_display';
-				_control = 	_display displayCtrl 1204;
-				_control ctrlShow false;
-			};
-		};
+	// Update blood only if PVAR does not match GVAR.
+	_currentBlood = player getVariable ["USEC_BloodQty", 12000];
+	if (_currentBlood != r_player_blood) then {
+		player setVariable["USEC_BloodQty",r_player_blood,true];
 	};
 
 	//Save Checker
 	if (dayz_unsaved) then {
-		if ((time - dayz_lastSave) > _saveTime) then {
-			//["dayzPlayerSave",[player,dayz_Magazines,false]] call callRpcProcedure;
-			
-			dayzPlayerSave = [player,dayz_Magazines,false,false];
-			publicVariableServer "dayzPlayerSave";
-			
-			if (isServer) then {
-				dayzPlayerSave call server_playerSync;
-			};
-						
+		if ((time - dayz_lastSave) > DZE_SaveTime) then {
+			PVDZE_plr_Save = [player,dayz_Magazines,false,false];
+			publicVariableServer "PVDZE_plr_Save";
+			dayz_unsaved = false;
 			dayz_lastSave = time;
 			dayz_Magazines = [];
 		};
-		_lastSave = _lastSave + 2;
-	} else {
-		dayz_lastSave = time;
-		_lastSave = 0;
 	};
-
-	if (!dayz_unsaved) then {
-		dayz_lastSave = time;
-	};
-
-	//Attach Trigger Current Object
-	//dayz_playerTrigger attachTo [_refObj,[0,0,0]];
-	//dayz_playerTrigger setTriggerArea [_size,_size,0,false];
 
 	// If in combat, display counter and restrict logout
 	_startcombattimer      = player getVariable["startcombattimer",0];
 	if (_startcombattimer == 1) then {
-		player setVariable["combattimeout", time + 30, true];
+		player setVariable["combattimeout", diag_tickTime + 30, true];
 		player setVariable["startcombattimer", 0, true];
 		dayz_combat = 1;
 	};
 
 	_combattimeout = player getVariable["combattimeout",0];
 	if (_combattimeout > 0) then {
-		_timeleft = _combattimeout - time;
+		_timeleft = _combattimeout - diag_tickTime;
 		if (_timeleft > 0) then {
 			//hintSilent format["In Combat: %1",round(_timeleft)];
 		} else {
@@ -263,38 +246,9 @@ while {true} do {
 		_combatcontrol ctrlShow true;
 	};
 	
-	/*
-	setGroupIconsVisible [false,false];
-	clearGroupIcons group player;
-	*/
+	// Blood Effects
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, (r_player_blood/r_player_bloodTotal)],  [1, 1, 1, 0.0]];
 	"colorCorrections" ppEffectCommit 0;
+	
 	sleep 2;
-	
-	_myPos = player getVariable["lastPos",[]];
-	if (count _myPos > 0) then {
-		player setVariable["lastPos",_mylastPos, true];
-		player setVariable["lastPos",[]];
-	};
-	
-	_lastPos = getPosATL player;	
-	if (player == vehicle player) then {
-		if (_mylastPos distance _lastPos > 200) then {
-			if (alive player) then {
-				player setPosATL _mylastPos;
-			};
-		};
-	} else {
-		if (_mylastPos distance _lastPos > 800) then {
-			if (alive player) then {
-				player setPosATL _mylastPos;
-			};
-		};
-	};
-	
-	//Hatchet ammo fix	
-	//"MeleeHatchet" call dayz_meleeMagazineCheck;
-	
-	//Crowbar ammo fix	
-	//"MeleeCrowbar" call dayz_meleeMagazineCheck;
 };

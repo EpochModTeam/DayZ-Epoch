@@ -7,7 +7,7 @@ if (!(isNull _backpack) and local _backpack) then {
 	_magazinescnt = count (_magazines select 0);
 	if((_magazinescnt > 0) or (_weaponscnt > 0)) then {
 		// hide backpack from everyone else
-		dayzHideObject = _backpack;
-		publicVariable "dayzHideObject";
+		PVDZE_obj_Hide = _backpack;
+		publicVariable "PVDZE_obj_Hide";
 	};
 };

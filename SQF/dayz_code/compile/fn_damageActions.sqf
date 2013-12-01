@@ -6,7 +6,9 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 ************************************************************/
 private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1","_action2","_x","_vehicle","_unit","_vehType","_displayName","_ammoQty","_ammoSerial","_weapon","_magTypes","_type","_typeVeh","_index","_inventory","_unitTo","_isEngineer","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasJerryE","_hasWire","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_bag","_classbag","_isDisallowRefuel","_hasBarrel","_hasBarrelE"];
 
-if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
+disableSerialization;
+
+if (DZE_ActionInProgress) exitWith {}; // Do not allow if any script is running.
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -41,10 +43,10 @@ if (_inVehicle) then {
 	r_player_lastSeat = [];
 };
 
-if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
+if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
 	_unit = 		cursorTarget;
 	_isDisallowRefuel = typeOf _unit in ["M240Nest_DZ"];
-	player reveal _unit;
+	// player reveal _unit;
 	_vehClose = 	(getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5]; //nearestObjects [player, ["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"], 5];
 	_hasVehicle = 	({alive _x} count _vehClose > 0);
 	_unconscious = 	_unit getVariable ["NORRN_unconscious", false];
@@ -53,7 +55,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_inPain = 		_unit getVariable ["USEC_inPain", false];
 	_legsBroke = 	_unit getVariable ["hit_legs", 0] >= 1;
 	_armsBroke = 	_unit getVariable ["hit_hands", 0] >= 1;
-	_charID =		_unit getVariable ["characterID", 0];
+	_charID =		_unit getVariable ["CharacterID", 0];
 	_friendlies =	player getVariable ["friendlies", []];
 	_playerMagazines = magazines player;
 	_hasBandage = 	"ItemBandage" in _playerMagazines;
@@ -175,32 +177,6 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 			r_player_actions set [count r_player_actions,_action];
 		};
 		
-	};
-	if ((_unit isKindOf "Building")) then {
-		_type = TypeOf(_unit);
-		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
-		_isEngineer = _hasToolbox;//(_classbag isKindOf "BAF_AssaultPack_Engineer");
-		//CAN DISASSEMBLE
-		if (_isEngineer and (_type in USEC_CanDisassemble)) then {
-			r_action = true;
-			_index = USEC_CanDisassemble find _type;
-			_inventory = USEC_DisassembleKits select _index;
-			_action = _unit addAction [format[localize "str_actions_medical_12",_typeVeh], "\z\addons\dayz_code\actions\disassemble.sqf",[_unit,_inventory], 0, true, true];
-			r_player_actions set [count r_player_actions,_action];
-		};
-		//Upgrade Wire
-		if (_isEngineer and (_type == "usec_wire_cat1") and _hasWire) then {
-			r_action = true;
-			_unitTo = "usec_wire_cat2";
-			_action = _unit addAction [format[localize "str_actions_medical_13",_typeVeh], "\z\addons\dayz_code\actions\engineer_upgrade.sqf",[_unit,"ItemWire",_unitTo], 0, false, true];
-			r_player_actions set [count r_player_actions,_action];
-		};
-		if (_isEngineer and (_type == "usec_wire_cat2") and _hasWire) then {
-			r_action = true;
-			_unitTo = "Fort_RazorWire";
-			_action = _unit addAction [format[localize "str_actions_medical_13",_typeVeh], "\z\addons\dayz_code\actions\engineer_upgrade.sqf",[_unit,"ItemWire",_unitTo], 0, false, true];
-			r_player_actions set [count r_player_actions,_action];
-		};
 	};
 	if (r_action) then {
 		r_action_targets = r_action_targets + [_unit];
