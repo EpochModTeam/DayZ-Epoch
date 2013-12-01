@@ -7,6 +7,13 @@ _playerPos = [];
 	if ((getPlayerUID _x) == _playerUID) exitWith { _playerObj = _x; _playerPos = getPosATL _playerObj;};
 } forEach playableUnits;
 
+if (isNil "_playerObj") then {
+	diag_log format["nil player object attempting PV, :%1", _this];
+	
+	// fall back to using PV for now
+	_playerObj = call compile format["player%1",_playerUID];
+};
+
 if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
@@ -52,12 +59,8 @@ if (!isNull _playerObj) then {
 
 		[_playerObj,_magazines,true,true,_isplayernearby] call server_playerSync;
 		
-		// maybe not needed just testing
-		_playerObj removeAllMPEventHandlers "mphit";
-		
-		_myGroup = group _playerObj;
-		deleteVehicle _playerObj;
-		deleteGroup _myGroup;
+		// remove player
+		_playerObj call dayz_removePlayerOnDisconnect;
 	} else {
 		//Update Vehicle
 		{ 

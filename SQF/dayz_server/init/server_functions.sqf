@@ -189,6 +189,7 @@ server_characterSync = {
 //onPlayerConnected 		"[_uid,_name] spawn server_onPlayerConnect;";
 onPlayerDisconnected 		"[_uid,_name] call server_onPlayerDisconnect;";
 
+
 // Setup globals allow overwrite from init.sqf
 if(isnil "dayz_MapArea") then {
 	dayz_MapArea = 10000;
@@ -617,6 +618,12 @@ dayz_perform_purge = {
 	_this = nil;
 };
 
+dayz_removePlayerOnDisconnect = {
+	_this removeAllMPEventHandlers "mphit";
+	deleteVehicle _this;
+	deleteGroup (group _this);
+};
+
 server_timeSync = {
 	//Send request
 	_key = "CHILD:307:";
@@ -733,7 +740,7 @@ server_spawnCleanLoot = {
 };
 
 server_spawnCleanAnimals = {
-	private ["_delQtyAnimal","_qty","_missonAnimals"];
+	private ["_delQtyAnimal","_qty","_missonAnimals","_nearby"];
 	_missonAnimals = allMissionObjects "CAAnimalBase";
 	_delQtyAnimal = 0;
 	{
