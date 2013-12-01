@@ -268,6 +268,7 @@ class SUV_TK_CIV_EP1: SUV_Base_EP1
 	rarityUrban = 0.8;
 	faction = "BIS_TK_CIV";
 	side = 3;
+	upgradeVehicle[] = {"SUV_TK_CIV_EP1_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 
 // SUV RECOLORS
@@ -275,47 +276,55 @@ class SUV_Blue: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Blue";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_blue_co.paa"};
+	upgradeVehicle[] = {"SUV_Blue_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class SUV_Green: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Green";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_green_co.paa"};
+	upgradeVehicle[] = {"SUV_Green_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class SUV_Yellow: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Yellow";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_yellow_co.paa"};
+	upgradeVehicle[] = {"SUV_Yellow_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class SUV_Red: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Red";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_red_co.paa"};
+	upgradeVehicle[] = {"SUV_Red_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class SUV_White: SUV_TK_CIV_EP1
 {
 	displayName = "SUV White";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_white_co.paa"};
+	upgradeVehicle[] = {"SUV_White_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
-
 class SUV_Pink: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Pink";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_pink_co.paa"};
+	upgradeVehicle[] = {"SUV_Pink_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class SUV_Charcoal: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Charcoal";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_charcoal_co.paa"};
+	upgradeVehicle[] = {"SUV_Charcoal_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class SUV_Orange: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Orange";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_orange_co.paa"};
+	upgradeVehicle[] = {"SUV_Orange_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 class SUV_Silver: SUV_TK_CIV_EP1
 {
 	displayName = "SUV Silver";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_silver_co.paa"};
+	upgradeVehicle[] = {"SUV_Silver_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 
 
