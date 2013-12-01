@@ -653,24 +653,33 @@ server_timeSync = {
 
 // must spawn these 
 server_spawncleanDead = {
-	private ["_deathTime"];
+	private ["_deathTime","_delQtyZ","_delQtyP","_qty","_allDead"];
+	_allDead = allDead;
+	_delQtyZ = 0;
+	_delQtyP = 0;
 	{
 		if (local _x) then {
 			if (_x isKindOf "zZombie_Base") then
 			{
 				_x call dayz_perform_purge;
 				sleep 0.025;
+				_delQtyZ = _delQtyZ + 1;
 			};
 			if (_x isKindOf "CAManBase") then {
 				_deathTime = _x getVariable ["processedDeath", diag_tickTime];
 				if (diag_tickTime - _deathTime > 3600) then {
 					_x call dayz_perform_purge;
 					sleep 0.025;
+					_delQtyP = _delQtyP + 1;
 				};
 			};
 		};
 		sleep 0.001;
-	} forEach allDead;
+	} forEach _allDead;
+	if (_delQtyZ > 0 or _delQtyP > 0) then {
+		_qty = count _allDead;
+		diag_log (format["CLEANUP: Deleted %1 players and %2 out of dead %3",_delQtyP,_delQtyZ,_qty]);
+	};
 };
 
 server_spawnCleanNull = {
@@ -748,6 +757,18 @@ server_spawnCleanAnimals = {
 			_x call dayz_perform_purge;
 			sleep 0.025;
 			_delQtyAnimal = _delQtyAnimal + 1;
+		} else {
+			if (!alive _x) then {
+				_pos = getPosATL _x;
+				if (count _pos > 0) then {
+					_nearby = {(isPlayer _x) and (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 130]);
+					if (_nearby==0) then {
+						_x call dayz_perform_purge;
+						sleep 0.025;
+						_delQtyAnimal = _delQtyAnimal + 1;
+					};
+				};
+			};
 		};
 		sleep 0.001;
 	} forEach _missonAnimals;
