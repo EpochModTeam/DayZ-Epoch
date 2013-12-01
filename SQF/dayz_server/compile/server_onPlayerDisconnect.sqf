@@ -4,13 +4,13 @@ _playerName = _this select 1;
 _playerObj = nil;
 _playerPos = [];
 {
-	if ((getPlayerUID _x) == _playerUID) exitWith { _playerObj = _x; _playerPos = getPosATL _playerObj;};
+	if ((getPlayerUID _x) == _playerUID) exitWith {_playerObj = _x;};
 } forEach playableUnits;
 
 if (isNil "_playerObj") then {
 	diag_log format["nil player object attempting PV, :%1", _this];
 	
-	// fall back to using PV for now
+	// fall back to using PV for now so we have a better chance at finding the player
 	_playerObj = call compile format["player%1",_playerUID];
 };
 
@@ -22,6 +22,7 @@ diag_log format["get: %1 (%2), sent: %3 (%4)",typeName (getPlayerUID _playerObj)
 
 if (!isNull _playerObj) then {
 
+	_playerPos = getPosATL _playerObj;
 	_characterID =	_playerObj getVariable ["CharacterID","0"];
 	_timeout = _playerObj getVariable["combattimeout",0];
 

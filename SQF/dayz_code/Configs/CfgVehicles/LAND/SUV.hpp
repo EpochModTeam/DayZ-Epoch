@@ -271,6 +271,15 @@ class SUV_TK_CIV_EP1: SUV_Base_EP1
 	upgradeVehicle[] = {"SUV_TK_CIV_EP1_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
 };
 
+// Camo
+class SUV_Camo: SUV_TK_CIV_EP1
+{
+	displayName = "SUV Camo";
+	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\camo10.paa"};
+	upgradeVehicle[] = {"SUV_Camo_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
+};
+
+
 // SUV RECOLORS
 class SUV_Blue: SUV_TK_CIV_EP1
 {
@@ -331,62 +340,79 @@ class SUV_Silver: SUV_TK_CIV_EP1
 // Performance 1
 class SUV_TK_CIV_EP1_DZE1: SUV_TK_CIV_EP1
 {
-	maxspeed = 150; // max engine limit 125-130
-	terrainCoef = 2.5;
+	maxSpeed = 250; // max engine limit 125-130
+	brakeDistance = 14; // 19
+	terrainCoef = 1.5;
 	upgradeVehicle[] = {"SUV_TK_CIV_EP1_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
+};
+class SUV_Camo_DZE1: SUV_Camo
+{
+	maxSpeed = 250; // max engine limit 125-130
+	brakeDistance = 14; // 19
+	terrainCoef = 1.5;
+	upgradeVehicle[] = {"SUV_Camo_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Blue_DZE1: SUV_Blue
 {
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Blue_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Green_DZE1: SUV_Green
 {
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Green_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Yellow_DZE1: SUV_Yellow
 {
-	maxspeed = 150; // max engine limit 125-130
-	terrainCoef = 2.5;
+	maxSpeed = 250; // max engine limit 125-130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Yellow_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Red_DZE1: SUV_Red
 {
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Red_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_White_DZE1: SUV_White
 {
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_White_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Pink_DZE1: SUV_Pink
 {
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Pink_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Charcoal_DZE1: SUV_Charcoal
 {
-	maxspeed = 150; // max engine limit 125-130
-	terrainCoef = 2.5;
+	maxSpeed = 250; // max engine limit 125-130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Charcoal_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Orange_DZE1: SUV_Orange
 {
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Orange_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 class SUV_Silver_DZE1: SUV_Silver
 {
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
 	upgradeVehicle[] = {"SUV_Silver_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
 };
 
@@ -447,6 +473,62 @@ class SUV_TK_CIV_EP1_DZE2: SUV_TK_CIV_EP1_DZE1
 		};
 	};
 };
+class SUV_Camo_DZE2: SUV_Camo_DZE1
+{
+	armor = 50; // car 20
+	upgradeVehicle[] = {"SUV_Camo_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
+	class HitPoints: HitPoints
+	{
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.3;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.3;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.3;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.15;
+		};
+		class HitFuel
+		{
+			armor = 0.28;
+			material = -1;
+			name = "palivo";
+			visual = "";
+			passThrough = 1;
+		};
+		class HitEngine
+		{
+			armor = 1;
+			material = -1;
+			name = "motor";
+			visual = "";
+			passThrough = 1;
+		};
+		class HitGlass1: HitGlass1
+		{
+			armor = 2;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 2;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 2;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 2;
+		};
+	};
+};
 class SUV_Blue_DZE2: SUV_Blue_DZE1
 {
 	armor = 50; // car 20
@@ -467,7 +549,7 @@ class SUV_Blue_DZE2: SUV_Blue_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -487,19 +569,19 @@ class SUV_Blue_DZE2: SUV_Blue_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -523,7 +605,7 @@ class SUV_Green_DZE2: SUV_Green_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -543,19 +625,19 @@ class SUV_Green_DZE2: SUV_Green_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -579,7 +661,7 @@ class SUV_Yellow_DZE2: SUV_Yellow_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -599,19 +681,19 @@ class SUV_Yellow_DZE2: SUV_Yellow_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -635,7 +717,7 @@ class SUV_Red_DZE2: SUV_Red_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -655,19 +737,19 @@ class SUV_Red_DZE2: SUV_Red_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -691,7 +773,7 @@ class SUV_White_DZE2: SUV_White_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -711,19 +793,19 @@ class SUV_White_DZE2: SUV_White_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -747,7 +829,7 @@ class SUV_Pink_DZE2: SUV_Pink_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -767,19 +849,19 @@ class SUV_Pink_DZE2: SUV_Pink_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -803,7 +885,7 @@ class SUV_Charcoal_DZE2: SUV_Charcoal_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -823,19 +905,19 @@ class SUV_Charcoal_DZE2: SUV_Charcoal_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -859,7 +941,7 @@ class SUV_Orange_DZE2: SUV_Orange_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -879,19 +961,19 @@ class SUV_Orange_DZE2: SUV_Orange_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -915,7 +997,7 @@ class SUV_Silver_DZE2: SUV_Silver_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.15;
 		};
 		class HitFuel
 		{
@@ -935,19 +1017,19 @@ class SUV_Silver_DZE2: SUV_Silver_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
@@ -960,6 +1042,13 @@ class SUV_TK_CIV_EP1_DZE3: SUV_TK_CIV_EP1_DZE2
 	transportMaxMagazines = 100; // car 50 
     transportmaxbackpacks = 4; // car 2
 	upgradeVehicle[] = {"SUV_TK_CIV_EP1_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
+};
+class SUV_Camo_DZE3: SUV_Camo_DZE2
+{
+	transportMaxWeapons = 20;  // car 10
+	transportMaxMagazines = 100; // car 50 
+    transportmaxbackpacks = 4; // car 2
+	upgradeVehicle[] = {"SUV_Camo_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
 };
 class SUV_Blue_DZE3: SUV_Blue_DZE2
 {
@@ -1029,48 +1118,45 @@ class SUV_Silver_DZE3: SUV_Silver_DZE2
 // Fuel 4
 class SUV_TK_CIV_EP1_DZE4: SUV_TK_CIV_EP1_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
+};
+class SUV_Camo_DZE4: SUV_Camo_DZE3
+{
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Blue_DZE4: SUV_Blue_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Green_DZE4: SUV_Green_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Yellow_DZE4: SUV_Yellow_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Red_DZE4: SUV_Red_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_White_DZE4: SUV_White_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Pink_DZE4: SUV_Pink_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Charcoal_DZE4: SUV_Charcoal_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Orange_DZE4: SUV_Orange_DZE3
 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 250; // suv base 130
 };
 class SUV_Silver_DZE4: SUV_Silver_DZE3
 {
-	fuelCapacity = 210; // car 100
-};
-
-// fully upgraded 
-class SUV_Camo: SUV_TK_CIV_EP1_DZE4
-{
-	displayName = "SUV Camo";
-	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\camo10.paa"};
+	fuelCapacity = 250; // suv base 130
 };
