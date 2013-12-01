@@ -2689,7 +2689,7 @@
 		<Key ID="STR_EPOCH_PLAYER_2">
 		  <Original>Another player wants to tag you as friendly. To accept, tag player as friendly.</Original>
 		  <English>Another player wants to tag you as friendly. To accept, tag player as friendly.</English>
-		  <German>Another player will markieren Sie so freundlich. Zu akzeptieren, Tag player als freundlich.</German>
+		  <German>Ein anderer Spieler möchte dich als Freund markieren. Zum akzeptieren markiere ihn als Freund.</German>
 		  <Russian>Игрок хочет отметить вас как друга. Чтобы принять, отметьте игрока как друга.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Another player wil jou als bevriend markeren. Om te accepteren, markeer player als bevriend.</Dutch>
