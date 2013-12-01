@@ -2687,13 +2687,13 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_2">
-		  <Original>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</Original>
-		  <English>%1 wants to tag you as friendly. To accept, tag %1 as friendly.</English>
-		  <German>%1 will markieren Sie so freundlich. Zu akzeptieren, Tag %1 als freundlich.</German>
-		  <Russian>%1 хочет отметить вас как друга. Чтобы принять, отметьте %1 как друга.</Russian>
+		  <Original>Another player wants to tag you as friendly. To accept, tag player as friendly.</Original>
+		  <English>Another player wants to tag you as friendly. To accept, tag player as friendly.</English>
+		  <German>Another player will markieren Sie so freundlich. Zu akzeptieren, Tag player als freundlich.</German>
+		  <Russian>Another player хочет отметить вас как друга. Чтобы принять, отметьте player как друга.</Russian>
 		  <Spanish></Spanish>
-		  <Dutch>%1 wil jou als bevriend markeren. Om te accepteren, markeer %1 als bevriend.</Dutch>
-		  <French>%1 veut vous marquer comme amical(e). Pour accepter, marquez %1 comme amical(e).</French>
+		  <Dutch>Another player wil jou als bevriend markeren. Om te accepteren, markeer player als bevriend.</Dutch>
+		  <French>Another player veut vous marquer comme amical(e). Pour accepter, marquez player comme amical(e).</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_3">
@@ -3487,13 +3487,13 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_82">
-		  <Original>No upgrades available</Original>
-		  <English>No upgrades available</English>
+		  <Original>\n\nNo upgrades available</Original>
+		  <English>\n\nNo upgrades available</English>
 		  <German></German>
-		  <Russian>Нет доступных улучшений.</Russian>
+		  <Russian>\n\nНет доступных улучшений.</Russian>
 		  <Spanish></Spanish>
-		  <Dutch>Geen upgrades beschikbaar</Dutch>
-		  <French>Aucune amélioration disponible</French>
+		  <Dutch>\n\nGeen upgrades beschikbaar</Dutch>
+		  <French>\n\nAucune amélioration disponible</French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_83">
@@ -5118,7 +5118,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_244">
 		  <Original>Craft Stick Fence</Original>
-		  <English>Craft Stick Fence</English>
+		  <English>Craft Stick Fence</English>Mislukt
 		  <German></German>
 		  <Russian>Создать: Колючая ограда</Russian>
 		  <Spanish></Spanish>
@@ -5127,74 +5127,74 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_245">
-		  <Original>Failed to sell vehicle, you must get into drivers seat first.</Original>
-		  <English>Failed to sell vehicle, you must get into drivers seat first.</English>
+		  <Original>Failed, you must get into drivers seat first.</Original>
+		  <English>Failed, you must get into drivers seat first.</English>
 		  <German></German>
-		  <Russian>Не удалось продать транспорт, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
+		  <Russian>Не удалось, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
 		  <Spanish></Spanish>
-		  <Dutch>Verkoop voertuig mislukt, stap eerst in de bestuurders stoel.</Dutch>
+		  <Dutch>Mislukt, stap eerst in de bestuurders stoel.</Dutch>
 		  <French></French>
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_246">
 		  <Original>Plot Pole</Original>
 		  <English>Plot Pole</English>
-		  <German></German>
+		  <German>Plot Pole</German>
 		  <Russian>Столб</Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <Spanish>Plot Pole</Spanish>
+		  <Dutch>Plot Pole</Dutch>
+		  <French>Plot Pole</French>
+		  <Czech>Plot Pole</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_247">
 		  <Original>Quiet</Original>
 		  <English>Quiet</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <German>Quiet</German>
+		  <Russian>Quiet</Russian>
+		  <Spanish>Quiet</Spanish>
+		  <Dutch>Quiet</Dutch>
+		  <French>Quiet</French>
+		  <Czech>Quiet</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_248">
 		  <Original>Alert</Original>
 		  <English>Alert</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <German>Alert</German>
+		  <Russian>Alert</Russian>
+		  <Spanish>Alert</Spanish>
+		  <Dutch>Alert</Dutch>
+		  <French>Alert</French>
+		  <Czech>Alert</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_249">
 		  <Original>Walk</Original>
 		  <English>Walk</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <German>Walk</German>
+		  <Russian>Walk</Russian>
+		  <Spanish>Walk</Spanish>
+		  <Dutch>Walk</Dutch>
+		  <French>Walk</French>
+		  <Czech>Walk</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_250">
 		  <Original>Run</Original>
 		  <English>Run</English>
-		  <German></German>
-		  <Russian></Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <German>Run</German>
+		  <Russian>Run</Russian>
+		  <Spanish>Run</Spanish>
+		  <Dutch>Run</Dutch>
+		  <French>Run</French>
+		  <Czech>Run</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_251">
 		  <Original>Unpack</Original>
 		  <English>Unpack</English>
-		  <German></German>
+		  <German>Unpack</German>
 		  <Russian>Распаковывать</Russian>
-		  <Spanish></Spanish>
-		  <Dutch></Dutch>
-		  <French></French>
-		  <Czech></Czech>
+		  <Spanish>Unpack</Spanish>
+		  <Dutch>Unpack</Dutch>
+		  <French>Unpack</French>
+		  <Czech>Unpack</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_252">
 		  <Original>Craft Half Wall</Original>

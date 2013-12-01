@@ -740,7 +740,7 @@ server_spawnCleanLoot = {
 };
 
 server_spawnCleanAnimals = {
-	private ["_delQtyAnimal","_qty","_missonAnimals","_nearby"];
+	private ["_pos","_delQtyAnimal","_qty","_missonAnimals","_nearby"];
 	_missonAnimals = allMissionObjects "CAAnimalBase";
 	_delQtyAnimal = 0;
 	{
@@ -748,15 +748,6 @@ server_spawnCleanAnimals = {
 			_x call dayz_perform_purge;
 			sleep 0.025;
 			_delQtyAnimal = _delQtyAnimal + 1;
-		} else {
-			if (!alive _x) then {
-				_nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
-				if (_nearby==0) then {
-					_x call dayz_perform_purge;
-					sleep 0.025;
-					_delQtyAnimal = _delQtyAnimal + 1;
-				};
-			};
 		};
 		sleep 0.001;
 	} forEach _missonAnimals;
