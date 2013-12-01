@@ -5767,8 +5767,8 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP">
-		  <Original>HowTo: Offroad Performance</Original>
-		  <English>HowTo: Offroad Performance</English>
+		  <Original>Offroad Performance</Original>
+		  <English>Offroad Performance</English>
 		  <German></German>
 		  <Russian>Как: Улучшить внедорожную эффективность</Russian>
 		  <Spanish></Spanish>
@@ -5787,8 +5787,8 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE">
-		  <Original>HowTo: Vehicle Maintenance</Original>
-		  <English>HowTo: Vehicle Maintenance</English>
+		  <Original>Vehicle Maintenance</Original>
+		  <English>Vehicle Maintenance</English>
 		  <German></German>
 		  <Russian>Как: Улучшить обслуживание автомобиля</Russian>
 		  <Spanish></Spanish>
@@ -5807,8 +5807,8 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK">
-		  <Original>HowTo: Luggage Rack</Original>
-		  <English>HowTo: Luggage Rack</English>
+		  <Original>Luggage Rack</Original>
+		  <English>Luggage Rack</English>
 		  <German></German>
 		  <Russian>Как: Установить багажник на крыше</Russian>
 		  <Spanish></Spanish>
@@ -5827,8 +5827,8 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK">
-		  <Original>HowTo: Fuel Tank</Original>
-		  <English>HowTo: Fuel Tank</English>
+		  <Original>Fuel Tank</Original>
+		  <English>Fuel Tank</English>
 		  <German></German>
 		  <Russian>Как: Установить топливный бак</Russian>
 		  <Spanish></Spanish>
