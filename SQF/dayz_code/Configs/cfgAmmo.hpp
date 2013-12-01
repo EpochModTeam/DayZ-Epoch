@@ -58,14 +58,14 @@ class CfgAmmo {
 	};
 	class Melee;
 	class Machete_Swing_Ammo : Melee {
-		hit = 15;
-		simulation = "shotBullet";
-		minRange = 1;
+		hit = 6;
+		simulation = "shotSpread";
+		minRange = 0.5;
 		minRangeProbab = 0.8;
 		midRange = 2;
-		midRangeProbab = 1.5;
-		maxRange = 3;
-		maxRangeProbab = 2.5;
+		midRangeProbab = 3.5;
+		maxRange = 5;
+		maxRangeProbab = 5;
 		explosive = 0;
 		simulationStep = 0.001;
 		timeToLive = 0.03;
@@ -73,14 +73,14 @@ class CfgAmmo {
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Hatchet_Swing_Ammo : Melee {
-		hit = 12;
-		simulation = "shotBullet";
-		minRange = 1;
+		hit = 6;
+		simulation = "shotSpread";
+		minRange = 0.5;
 		minRangeProbab = 0.8;
 		midRange = 2;
-		midRangeProbab = 1.5;
-		maxRange = 3;
-		maxRangeProbab = 2.5;
+		midRangeProbab = 3.5;
+		maxRange = 5;
+		maxRangeProbab = 5;
 		explosive = 0;
 		simulationStep = 0.001;
 		timeToLive = 0.03;
@@ -88,14 +88,14 @@ class CfgAmmo {
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Crowbar_Swing_Ammo : Melee {
-		hit = 10;
-		simulation = "shotBullet";
-		minRange = 1;
+		hit = 4;
+		simulation = "shotSpread";
+		minRange = 0.5;
 		minRangeProbab = 0.8;
 		midRange = 2;
-		midRangeProbab = 1.5;
-		maxRange = 3;
-		maxRangeProbab = 2.5;
+		midRangeProbab = 3.5;
+		maxRange = 5;
+		maxRangeProbab = 5;
 		explosive = 0;
 		simulationStep = 0.001;
 		timeToLive = 0.03;
@@ -103,14 +103,14 @@ class CfgAmmo {
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Fishing_Swing_Ammo : Melee {
-		hit = 7;
-		simulation = "shotBullet";
-		minRange = 1;
-		minRangeProbab = 1;
+		hit = 1;
+		simulation = "shotSpread";
+		minRange = 0.5;
+		minRangeProbab = 0.8;
 		midRange = 2;
-		midRangeProbab = 2;
-		maxRange = 3;
-		maxRangeProbab = 3;
+		midRangeProbab = 3.5;
+		maxRange = 5;
+		maxRangeProbab = 5;
 		explosive = 0;
 		simulationStep = 0.001;
 		timeToLive = 0.03;
