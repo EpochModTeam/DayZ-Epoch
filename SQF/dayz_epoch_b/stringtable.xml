@@ -4037,14 +4037,14 @@
 		  <Czech></Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_137">
-		  <Original>Missing tool %1</Original>
-		  <English>Missing tool %1</English>
-		  <German></German>
-		  <Russian>Отсутствует инструмент %1</Russian>
-		  <Spanish></Spanish>
-		  <Dutch>Ontbrekend gereedschap: %1</Dutch>
-		  <French>L'outil %1 est nécessaire</French>
-		  <Czech></Czech>
+		  <Original>\n\nMissing tool %1</Original>
+		  <English>\n\nMissing tool %1</English>
+		  <German>\n\nMissing tool %1</German>
+		  <Russian>\n\nОтсутствует инструмент %1</Russian>
+		  <Spanish>\n\nMissing tool %1</Spanish>
+		  <Dutch>\n\nOntbrekend gereedschap: %1</Dutch>
+		  <French>\n\nL'outil %1 est nécessaire</French>
+		  <Czech>\n\nMissing tool %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_138">
 		  <Original>Placing %1, move to cancel.</Original>
