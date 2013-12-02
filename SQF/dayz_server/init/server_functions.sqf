@@ -212,38 +212,33 @@ BuildingList = [];
 } forEach (MarkerPosition nearObjects ["building",DynamicVehicleArea]);
 
 spawn_vehicles = {
-	private ["_weights","_isOverLimit","_isAbort","_counter","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_marker","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
+	private ["_random","_lastIndex","_weights","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_marker","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
 	
 	if (isDedicated) then {
-		
-		_isOverLimit = true;
-		_isAbort = false;
-		_counter = 0;
-		while {_isOverLimit} do {
 
-			waitUntil{!isNil "BIS_fnc_selectRandom"};
-			_index = AllowedVehiclesList call BIS_fnc_selectRandom;
+		while {count AllowedVehiclesList > 0} do {
+			// BIS_fnc_selectRandom replaced because the index may be needed to remove the element
+			_index = floor random count AllowedVehiclesList;
+			_random = AllowedVehiclesList select _index;
 
-			_vehicle = _index select 0;
-			_velimit = _index select 1;
+			_vehicle = _random select 0;
+			_velimit = _random select 1;
 
 			_qty = {_x == _vehicle} count serverVehicleCounter;
 
 			// If under limit allow to proceed
-			if(_qty <= _velimit) then {
-				_isOverLimit = false;
-			};
+			if (_qty <= _velimit) exitWith {};
 
-			// counter to stop after 5 attempts
-			_counter = _counter + 1;
-
-			if(_counter >= 5) then {
-				_isOverLimit = false;
-				_isAbort = true;
+			// vehicle limit reached, remove vehicle from list
+			// since elements cannot be removed from an array, overwrite it with the last element and cut the last element of (as long as order is not important)
+			_lastIndex = (count AllowedVehiclesList) - 1;
+			if (_lastIndex != _index) then {
+				AllowedVehiclesList set [_index, AllowedVehiclesList select _lastIndex];
 			};
+			AllowedVehiclesList resize _lastIndex;
 		};
 
-		if (_isAbort) then {
+		if (count AllowedVehiclesList == 0) then {
 			diag_log("DEBUG: unable to find suitable vehicle to spawn");
 		} else {
 
