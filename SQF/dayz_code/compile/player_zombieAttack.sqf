@@ -25,7 +25,11 @@ if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
 		_move = "Dog_Attack";
 	};
 };
-_dir = [_unit,player] call BIS_Fnc_dirTo;
+
+_tPos = visiblePositionASL _vehicle;
+_zPos = visiblePositionASL _unit;		
+
+_dir = [_zpos,_tPos] call BIS_Fnc_dirTo;
 _unit setDir _dir;
 
 // _unit playMove _move;
@@ -64,7 +68,6 @@ if (_vehicle != player) then {
 		
 		//diag_log ("Hitpoints " +str(_wound) +str(_total));
 		
-		//["PVDZE_plr_HitV",[_vehicle, _wound,_total, _unit,"zombie"]] call broadcastRpcCallAll;
 		if (_dam >= 1) then {
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
 				_cnt = count (DAYZ_woundHit select 1);
@@ -80,22 +83,14 @@ if (_vehicle != player) then {
 			_damage = 0.1 + random (1.2);
 			//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 			[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-			//PVDZE_plr_Hit =	[player,_wound, _damage, _unit,"zombie"];
-			//publicVariable "PVDZE_plr_Hit";
 			[_unit,"hit",2,false] call dayz_zombieSpeak;	
 		};
 	};
 } else {
-	//Did he hit?
-	//_currentAnim = animationState _unit;
 	//diag_log ("Animation state: " +(_currentAnim));
-	//"amovpercmstpsnonwnondnon",
 	_attackanimations = ["zombiestandingattack1","zombiestandingattack2","zombiestandingattack3","zombiestandingattack4","zombiestandingattack5","zombiestandingattack6","zombiestandingattack7","zombiestandingattack8","zombiestandingattack9","zombiestandingattack10","zombiefeed1","zombiefeed2","zombiefeed3","zombiefeed4","zombiefeed5"];
 	if (((_unit distance player) <= dayz_areaAffect) and ((animationState _unit) in _attackanimations)) then {
 		//check LOS
-		private[];
-		_tPos = (getPosASL _vehicle);
-		_zPos = (getPosASL _unit);
 		_inAngle = [_zPos,(getdir _unit),50,_tPos] call fnc_inAngleSector;
 		if (_inAngle) then {
 			//LOS check
@@ -116,22 +111,7 @@ if (_vehicle != player) then {
 
 				//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-				//PVDZE_plr_Hit =	[player,_wound, _damage, _unit,"zombie"];
-				//publicVariable "PVDZE_plr_Hit";
 				[_unit,"hit",2,false] call dayz_zombieSpeak;
-			} else {
-				//diag_log ("NO LOS: Player Hit on " + str(_unit) + " for " + str(_vehicle));
-				/*
-				_isZombieInside = [_unit,_building] call fnc_isInsideBuilding;
-				if (_isPlayerInside) then {
-					_damage = 0.1 + random (1.2);
-					diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
-					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-					//PVDZE_plr_Hit =	[player,_wound, _damage, _unit,"zombie"];
-					//publicVariable "PVDZE_plr_Hit";
-					[_unit,"hit",2,false] call dayz_zombieSpeak;	
-				};
-				*/
 			};
 		};
 	};
