@@ -14,6 +14,11 @@ s_player_unlockvault = 1;
 _obj = _this;
 _objType = typeOf _obj;
 
+if (!(_objType in DZE_LockedStorage)) exitWith {
+	s_player_unlockvault = -1;
+	DZE_ActionInProgress = false;
+};
+
 _playerNear = _obj call dze_isnearest_player;
 if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
 

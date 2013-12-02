@@ -648,7 +648,7 @@ class KeypadUI
 			y = 0.121749;
 			w = 0.126596;
 			h = 0.153191;
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault and (typeOf dayz_selectedVault) in DZE_LockedStorage) then {dayz_selectedVault spawn player_unlockVault;};";
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault) then {dayz_selectedVault spawn player_unlockVault;};";
 		};
 	};
 };
