@@ -7,6 +7,8 @@ private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_remov
 if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_52") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
+if (vehicle player != player) exitWith {cutText ["\n\nYou cannot perform an upgrade while still inside a vehicle.", "PLAIN DOWN"]};
+
 // look for nearest vehicle
 _findNearestVehicles = nearestObjects [player, ["LandVehicle"], 10];
 _findNearestVehicle = [];
