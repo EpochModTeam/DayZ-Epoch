@@ -1597,12 +1597,12 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructNo";
 		cost = 100;
-		model = "\Ca\misc3\fort_bagfence_round";
-		icon = "\Ca\misc3\data\Icons\icon_fortBagFenceRound_ca.paa";
+		model = "\ca\misc2\BagFenceRound.p3d";
+		icon = "\Ca\misc3\data\Icons\icon_bagFenceRound_ca.paa";
 		offset[] = {0,1.5,0.5};
-		mapSize = 3.2;
+		mapSize = 2;
 		armor = 400;
-		displayName = "Big bag fence (Round)";
+		displayName = "Bag fence (Round)";
 		vehicleClass = "Fortifications";
 		constructioncount = 3;
 		removeoutput[] = {{"ItemSandbag",1}};
