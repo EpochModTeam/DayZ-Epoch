@@ -498,7 +498,7 @@
 		<Key ID="str_player_18">
 			<Original>You are running an incorrect version of DAYZ_CODE, please download this file from dayzepoch.com (You are running version %1 and the server is running version %2)</Original>
 			<English>You are running an incorrect version of DAYZ_CODE, please download this file from dayzepoch.com (You are running version %1 and the server is running version %2)</English>
-			<German>Sie haben eine falsche Version von DAYZ_CODE, bitte laden Sie sich die neuste Version von www.dayzepoch.com runter </German>
+			<German>Sie haben eine falsche Version von DAYZ_CODE, bitte laden Sie sich die neuste Version von www.dayzepoch.com runter (Ihre Version: %1 // Server Version: %2)</German>
 			<Russian>Вы используете неверную версию DAYZ_CODE. Пожалуйста, скачайте нужный файл с dayzepoch.com (Ваша версия %1, версия на сервере %2)</Russian>
 			<Spanish>Estás ejecutando una versión incorrecta de DAYZ_CODE, por favor descarga este archivo desde dayzepoch.com (Estas ejecutando la versión %1 y el servidor %2)</Spanish>
 			<Dutch>Je gebruikt een incorrecte versie van DAYZ_CODE, download dit bestand alsjeblieft van dayzepoch.com (Je gebruikt versie %1, en de server gebruikt versie %2)</Dutch>
@@ -628,7 +628,7 @@
 		<Key ID="str_player_32">
 			<Original>\n\nYou must be close to a rock to mine ore.</Original>
 			<English>\n\nYou must be close to a rock to mine ore.</English>
-			<German>\n\nSie müssen in der Nähe von einem Felsen oder Mine sein um Erz zu gewinnen.</German>
+			<German>\n\nSie müssen in der Nähe von einem Felsen oder Mine sein um Erz gewinnen zu können.</German>
 			<Russian>\n\nВы должны быть близко к скале, чтобы добывать руду.</Russian>
 			<Spanish>\n\nDebe estar cerca de una roca de mineral de la mina.</Spanish>
 			<Dutch>\n\nJe moet dicht bij een rots zijn om erts te mijnen.</Dutch>
@@ -647,7 +647,7 @@
 		</Key>
 		<Key ID="str_pickup_limit_1">
 			<English>You need to be within 3 meters to pickup!</English>
-			<German>Sie müssen sich innerhalb von 3 Metern aufhalten um dies aufzuheben!</German>
+			<German>Sie müssen sich innerhalb von 3 Metern aufhalten um dies aufheben zu können!</German>
 			<Russian>Чтобы поднять предмет, вы должны быть ближе 3х метров!</Russian>
 			<Spanish>¡Necesitas estar a menos de 3 metros para tomarlo!</Spanish>
 			<Dutch>You need to be within 3 meters to pickup!</Dutch>
@@ -773,7 +773,7 @@
 		<Key ID="str_death_unknown">
 			<Original>an unknown cause</Original>
 			<English>an unknown cause</English>
-			<German>ohne eine erkennbare Ursache</German>
+			<German>ohne eine erkennbaren Ursache</German>
 			<Russian>неизвестной причины</Russian>
 			<Spanish>causas desconocidas</Spanish>
 			<Dutch>een onbekende oorzaak</Dutch>
@@ -793,7 +793,7 @@
 		<Key ID="str_abort_zedsclose">
 			<Original>Can Abort in %1</Original>
 			<English>Can Abort in %1</English>
-			<German>Logout in %1</German>
+			<German>Sie können die Verbindung in %1 Sekunden trennen</German>
 			<Russian>Выход будет доступен через %1</Russian>
 			<Spanish>Puedes abortar en %1</Spanish>
 			<Dutch>Je kunt uitloggen over %1</Dutch>
@@ -803,7 +803,7 @@
 		<Key ID="str_abort_playerincombat">
 			<Original>Cannot Abort while in combat!</Original>
 			<English>Cannot Abort while in combat!</English>
-			<German>Sie können nicht im Kampf ausloggen!</German>
+			<German>Sie können sich nicht im Kampf ausloggen!</German>
 			<Russian>Нельзя выходить в бою!</Russian>
 			<Spanish>¡No puedes abortar en combate!</Spanish>
 			<Dutch>Je kunt niet uitloggen tijdens een gevechtssituatie!</Dutch>
@@ -853,7 +853,7 @@
 		<Key ID="STR_UI_GENDER_DESC">
 			<Original>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</Original>
 			<English>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</English>
-			<German>Bitte wählen Sie das Geschlecht aus, mit dem Sie Spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
+			<German>Bitte wählen Sie das Geschlecht aus, mit dem Sie spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
 			<Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
 			<Spanish>Por favor selecciona el género con el que deseas jugar. Tu género se enlazará a tu personaje y solo podrá ser cambiado cuando mueras.</Spanish>
 			<Dutch>Kies alsjeblieft het geslacht waarmee je wilt spelen. Je geslacht zal gebonden zijn aan dit unieke personage, en kan niet gewijzigd worden tot je komt te overlijden.</Dutch>
@@ -915,7 +915,7 @@
 		<Key ID="str_actions_boilwater">
 			<Original>Boil Water</Original>
 			<English>Boil Water</English>
-			<German>Wasser kochen</German>
+			<German>Wasser abkochen</German>
 			<Russian>Прокипятить воду</Russian>
 			<Spanish>Hervir Agua</Spanish>
 			<Dutch>Water koken</Dutch>
@@ -1095,7 +1095,7 @@
 		<Key ID="str_actions_medical_12">
 			<Original>Packup %1</Original>
 			<English>Packup %1</English>
-			<German>%1 demontieren</German>
+			<German>%1 packen</German>
 			<Russian>Разобрать %1</Russian>
 			<Spanish>Empaquetar %1</Spanish>
 			<Dutch>%1 inpakken</Dutch>
@@ -1275,7 +1275,7 @@
 		<Key ID="str_actions_calldog">
 			<Original>Call Dog</Original>
 			<English>Call Dog</English>
-			<German>Hund herbeirufen</German>
+			<German>Bei Fuß!</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Llamar Perro</Spanish>
 			<Dutch>Hond roepen</Dutch>
@@ -1315,7 +1315,7 @@
 		<Key ID="str_actions_liedog">
 			<Original>Dog: Lie Down</Original>
 			<English>Dog: Lie Down</English>
-			<German>Hund: Hinlegen</German>
+			<German>Hund: Platz</German>
 			<Russian>Собака: Лежать!</Russian>
 			<Spanish>Perro: Acostado</Spanish>
 			<Dutch>Hond: Lig</Dutch>
@@ -1355,7 +1355,7 @@
 		<Key ID="str_actions_followdog">
 			<Original>Dog: Follow</Original>
 			<English>Dog: Follow</English>
-			<German>Hund: Folgen</German>
+			<German>Hund: Komm</German>
 			<Russian>Собака: Ко мне!</Russian>
 			<Spanish>Perro: Seguir</Spanish>
 			<Dutch>Hond: Volg</Dutch>
