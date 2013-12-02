@@ -10,11 +10,13 @@ _lastused = 	_unit getVariable ["LastTransfusion", time];
 
 call fnc_usec_medic_removeActions;
 r_action = false;
+
+// not possible to transfuse while in a vehicle
+if (vehicle player != player) exitWith { };
+
+player playActionNow "Medic";
+
 [1,1] call dayz_HungerThirst;
-if (vehicle player == player) then {
-	//not in a vehicle
-	player playActionNow "Medic";
-};
 
 r_interrupt = false;
 _animState = animationState player;

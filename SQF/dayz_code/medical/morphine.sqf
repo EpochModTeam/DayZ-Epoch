@@ -38,6 +38,12 @@ r_doLoop = false;
 if (_finished) then {
 	_num_removed = ([player,"ItemMorphine"] call BIS_fnc_invRemove);
 	if(_num_removed == 1) then {
+
+		if (vehicle player != player) then {
+			_display = findDisplay 106;
+			_display closeDisplay 0;
+		};	
+
 		if (_unit == player) then {
 			//Self Healing
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
