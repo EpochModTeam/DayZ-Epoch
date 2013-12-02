@@ -2680,7 +2680,7 @@
 		  <Original>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</Original>
 		  <English>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</English>
 		  <German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
-		  <Russian>Вещи %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
+		  <Russian>Припасы %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Magazijnen %1 / %2 - Wapens %3 / %4 - Rugzakken %5 / %6</Dutch>
 		  <French>Munitions et objets %1 / %2 - Armes et outils %3 / %4 - Sac à dos %5 / %6</French>
@@ -2690,7 +2690,7 @@
 		  <Original>Another player wants to tag you as friendly. To accept, tag player as friendly.</Original>
 		  <English>Another player wants to tag you as friendly. To accept, tag player as friendly.</English>
 		  <German>Ein anderer Spieler möchte Sie als Freund markieren. Um dies zu akzeptieren markiere den Spieler ebenfalls als Freund.</German>
-		  <Russian>Игрок хочет отметить вас как друга. Чтобы принять, отметьте игрока как друга.</Russian>
+		  <Russian>Игрок хочет отметить вас как друга. Чтобы принять, отметьте его как друга.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Another player wil jou als bevriend markeren. Om te accepteren, markeer player als bevriend.</Dutch>
 		  <French>Another player veut vous marquer comme amical(e). Pour accepter, marquez player comme amical(e).</French>
@@ -5770,7 +5770,7 @@
 		  <Original>Offroad Performance</Original>
 		  <English>Offroad Performance</English>
 		  <German>Offroad Performance</German>
-		  <Russian>Как: Улучшить внедорожную эффективность</Russian>
+		  <Russian>Внедорожная эффективность</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handleiding: Offroad Prestaties</Dutch>
 		  <French>Manuel: Performances tout-terrain</French>
@@ -5790,7 +5790,7 @@
 		  <Original>Vehicle Maintenance</Original>
 		  <English>Vehicle Maintenance</English>
 		  <German>Fahrzeug-Wartung</German>
-		  <Russian>Как: Улучшить обслуживание автомобиля</Russian>
+		  <Russian>Обслуживание транспорта</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handleiding: Voertuigonderhoud</Dutch>
 		  <French>Manuel: Maintenance du véhicule</French>
@@ -5810,7 +5810,7 @@
 		  <Original>Luggage Rack</Original>
 		  <English>Luggage Rack</English>
 		  <German>Gepäckablage</German>
-		  <Russian>Как: Установить багажник на крыше</Russian>
+		  <Russian>Багажник на крыше</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handleiding: Bagagerek</Dutch>
 		  <French>Manuel: Galerie</French>
@@ -5820,7 +5820,7 @@
 		  <Original>Luggage Rack install guide.</Original>
 		  <English>Luggage Rack install guide.</English>
 		  <German>Installationsanleitung der Gepäckablage</German>
-		  <Russian>Руководство по установке багажника на крыше.</Russian>
+		  <Russian>Руководство по установке багажника на крышу.</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Installatiehandleiding voor het bagagerek.</Dutch>
 		  <French>Guide d'installation d'une galerie pour augmenter le stockage du véhicule.</French>
@@ -5830,7 +5830,7 @@
 		  <Original>Fuel Tank</Original>
 		  <English>Fuel Tank</English>
 		  <German>Benzintank</German>
-		  <Russian>Как: Установить топливный бак</Russian>
+		  <Russian>Топливный бак</Russian>
 		  <Spanish></Spanish>
 		  <Dutch>Handleiding: Benzinetank</Dutch>
 		  <French>Manuel: Réservoir</French>
