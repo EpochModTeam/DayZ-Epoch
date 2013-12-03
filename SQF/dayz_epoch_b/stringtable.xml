@@ -5849,7 +5849,7 @@
 		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
 		  <Original>Vehicle Upgrade Successful./Original>
 		  <English>Vehicle Upgrade Successful.</English>
-		  <German></German>
+		  <German>Fahrzeug-Upgrade abgeschlossen.</German>
 		  <Russian></Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
