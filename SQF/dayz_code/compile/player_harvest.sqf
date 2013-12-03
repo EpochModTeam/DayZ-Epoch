@@ -37,9 +37,9 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" or _ammo isKindOf "Chainsaw_Swing_Ammo")
 			_damage = damage _tree;
 			if (DZE_TEMP_treedmg < _damage) then {
 
-				if (_damage < 0.95) then {
+				if (_damage < 0.99) then {
 					if("" == typeOf _tree) then {
-						_tree setDamage 0.95;
+						_tree setDamage 0.99;
 					};
 				};
 
