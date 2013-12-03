@@ -91,7 +91,7 @@ if (_IsNearVehicle >= 1) then {
 					_location	= getposATL _vehicle;
 
 					// Get direction
-					_dir = getDir _vehicle;
+					_dir = direction _vehicle;
 
 					// Current charID
 					_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
