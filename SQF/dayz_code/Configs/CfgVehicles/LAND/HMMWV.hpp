@@ -993,7 +993,6 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
 	transportmaxbackpacks = 4;
 	threat[] = {1,0.6,0.6};
 	transportSoldier = 3;
-	armor = 120;
 	damageResistance = 0.03099;
 	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_m2gpk_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_m2gpk_CA.paa";
