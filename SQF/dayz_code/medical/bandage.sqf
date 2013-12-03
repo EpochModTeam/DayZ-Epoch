@@ -3,7 +3,6 @@
 private ["_started","_finished","_animState","_isMedic","_id","_unit"];
 
 _unit = (_this select 3) select 0;
-player removeMagazine "ItemBandage";
 
 call fnc_usec_medic_removeActions;
 r_action = false;
