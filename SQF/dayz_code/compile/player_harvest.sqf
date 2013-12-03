@@ -4,7 +4,7 @@ _weapon = 		_this select 1;
 _ammo = 		_this select 4;
 _projectile = 	_this select 6;
 
-if (_ammo isKindOf "Hatchet_Swing_Ammo") then {
+if (_ammo isKindOf "Hatchet_Swing_Ammo" or _ammo isKindOf "Chainsaw_Swing_Ammo") then {
 	
 	_findNearestTree = [];
 	{
@@ -37,24 +37,36 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo") then {
 			_damage = damage _tree;
 			if (DZE_TEMP_treedmg < _damage) then {
 
-				//diag_log ("DAMAGE: " + str(damage _tree)); 
-
-				_countOut = 1;
-				_itemOut = "PartWoodPile";	
-
-				_nearByPile= nearestObjects [getPosATL player, ["WeaponHolder"],2];
-				if (count _nearByPile == 0) then { 
-					_item = createVehicle ["WeaponHolder", getPosATL player, [], 1, "CAN_COLLIDE"];
-					_item addMagazineCargoGlobal [_itemOut,_countOut];
-					player reveal _item;
-				} else {
-					_item = _nearByPile select 0;
-					_item addMagazineCargoGlobal [_itemOut,_countOut];
+				if (_damage < 0.95) then {
+					if("" == typeOf _tree) then {
+						_tree setDamage 0.95;
+					};
 				};
 
-				_distance = 60;
-				[_unit,_distance,false,getPosATL player] spawn player_alertZombies;
+				//diag_log ("DAMAGE: " + str(damage _tree)); 
 
+				if (round(random 1) > 0.5) then {
+
+					_countOut = 1;
+					_itemOut = "PartWoodPile";
+
+					if(_weapon == "Chainsaw") then {
+						_itemOut = "PartWoodLumber";
+					};
+
+					_nearByPile= nearestObjects [getPosATL player, ["WeaponHolder"],2];
+					if (count _nearByPile == 0) then { 
+						_item = createVehicle ["WeaponHolder", getPosATL player, [], 1, "CAN_COLLIDE"];
+						_item addMagazineCargoGlobal [_itemOut,_countOut];
+						player reveal _item;
+					} else {
+						_item = _nearByPile select 0;
+						_item addMagazineCargoGlobal [_itemOut,_countOut];
+					};
+
+					_distance = 60;
+					[player,_distance,false,getPosATL player] spawn player_alertZombies;
+				};
 			};
 			DZE_TEMP_treedmg = _damage;
 		};

@@ -1,10 +1,5 @@
 private [];
 
-// attempt to remove newspaper if called without args
-if (count _this == 0) then {
-	player removeMagazine "ItemNewspaper";
-};
-
 PVDZE_plr_DeathB = [player];
 publicVariableServer  "PVDZE_plr_DeathB";
 

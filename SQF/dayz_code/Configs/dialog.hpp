@@ -186,7 +186,7 @@ class TraderDialog
 		};
 		class RscShortcutButtonTraderDialog_1700: RscShortcutButtonTraderDialog
 		{
-			idc = -1;
+			idc = 12004;
 			text = $STR_EPOCH_PLAYER_291;
 			x = 0.635221 * safezoneW + safezoneX;
 			y = 0.720064 * safezoneH + safezoneY;
@@ -196,7 +196,7 @@ class TraderDialog
 		};
 		class RscShortcutButtonTraderDialog_1701: RscShortcutButtonTraderDialog
 		{
-			idc = -1;
+			idc = 12005;
 			text = $STR_EPOCH_PLAYER_292;
 			x = 0.540566 * safezoneW + safezoneX;
 			y = 0.720064 * safezoneH + safezoneY;
@@ -260,6 +260,14 @@ class TraderDialog
 			y = 0.29369 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;
 			h = 0.027508 * safezoneH;
+		};
+		class RscStructuredText_1100: RscStructuredText
+		{
+			idc = 12006;
+			x = 0.359214 * safezoneW + safezoneX;
+			y = 0.227167 * safezoneH + safezoneY;
+			w = 0.369767 * safezoneW;
+			h = 0.0543546 * safezoneH;
 		};
 	};
 };

@@ -1,3 +1,70 @@
+class Mode_SemiAuto
+{
+	multiplier = 1;
+	burst = 1;
+	dispersion = 0.0002;
+	sound[] = {"",10,1};
+	soundBegin[] = {"sound",1};
+	soundEnd[] = {};
+	soundLoop[] = {};
+	soundContinuous = 0;
+	soundBurst = 1;
+	reloadTime = 0.1;
+	ffCount = 1;
+	ffMagnitude = 0.5;
+	ffFrequency = 11;
+	flash = "gunfire";
+	flashSize = 0.1;
+	recoil = "Empty";
+	recoilProne = "Empty";
+	autoFire = 0;
+	aiRateOfFire = 0.5;
+	aiRateOfFireDistance = 500;
+	useAction = 0;
+	useActionTitle = "";
+	showToPlayer = 1;
+	minRange = 30;
+	minRangeProbab = 0.25;
+	midRange = 300;
+	midRangeProbab = 0.58;
+	maxRange = 600;
+	maxRangeProbab = 0.04;
+	artilleryDispersion = 1;
+	artilleryCharge = 1;
+	displayName = "Semi";
+};
+class Mode_Burst: Mode_SemiAuto
+{
+	sound[] = {"",10,1};
+	soundLoop[] = {"sound",1};
+	soundEnd[] = {"sound",1};
+	soundBurst = 1;
+	burst = 3;
+	dispersion = 0.0005;
+	minRange = 10;
+	minRangeProbab = 0.3;
+	midRange = 60;
+	midRangeProbab = 0.58;
+	maxRange = 150;
+	maxRangeProbab = 0.04;
+	displayName = "Burst";
+};
+class Mode_FullAuto: Mode_SemiAuto
+{
+	dispersion = 0.0005;
+	sound[] = {"",10,1};
+	soundEnd[] = {"sound",1};
+	soundContinuous = 0;
+	reloadTime = 0.08;
+	autoFire = 1;
+	minRange = 1;
+	minRangeProbab = 0.2;
+	midRange = 30;
+	midRangeProbab = 0.58;
+	maxRange = 80;
+	maxRangeProbab = 0.04;
+	displayName = "Full";
+};
 class CfgWeapons {
 
 	class Pecheneg;
@@ -12,6 +79,108 @@ class CfgWeapons {
 	class ItemCore;
 	class Crossbow;
 	class Rifle;
+
+	class ChainSaw: Rifle
+	{
+		scope = 2;
+		
+		/*
+		bullet1[] = {"ca\sounds\weapons\shells\big_shell_wood_01",0.0707946,1,15};
+		bullet2[] = {"ca\sounds\weapons\shells\big_shell_wood_02",0.0707946,1,15};
+		bullet3[] = {"ca\sounds\weapons\shells\big_shell_wood_03",0.0707946,1,15};
+		bullet4[] = {"ca\sounds\weapons\shells\big_shell_wood_04",0.0707946,1,15};
+		bullet5[] = {"ca\sounds\weapons\shells\big_shell_wood_05",0.0707946,1,15};
+		bullet6[] = {"ca\sounds\weapons\shells\big_shell_wood_06",0.0707946,1,15};
+		bullet7[] = {"ca\sounds\weapons\shells\big_shell_wood_07",0.0707946,1,15};
+		bullet8[] = {"ca\sounds\weapons\shells\big_shell_dirt_04",0.0707946,1,15};
+		bullet9[] = {"ca\sounds\weapons\shells\big_shell_soft_01",0.0707946,1,15};
+		bullet10[] = {"ca\sounds\weapons\shells\big_shell_soft_02",0.0707946,1,15};
+		bullet11[] = {"ca\sounds\weapons\shells\big_shell_soft_03",0.0707946,1,15};
+		bullet12[] = {"ca\sounds\weapons\shells\big_shell_soft_04",0.0707946,1,15};
+		*/
+
+		//soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
+		
+		emptySound[] = {"",10,1};
+		soundBullet[] = {"emptySound",1};
+		
+
+		model = "\z\addons\dayz_epoch\models\chainsaw.p3d";
+
+		picture = "\CA\weapons\data\equip\w_m240_ca.paa";
+		
+		displayName = "Chainsaw";
+		
+		cursor = "";
+		cursoraim = "\ca\Weapons\Data\clear_empty";
+		 
+		modes[] = {"manual"};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\z\addons\dayz_code\anim\saw_idle.rtm"
+		};
+		class manual: Mode_FullAuto
+		{
+			recoil = "recoil_auto_machinegun_10outof10";
+			recoilProne = "recoil_auto_machinegun_prone_10outof10";
+			
+			dispersion = 0.2;
+
+			begin1[] = {"\dayz_sfx\chainsaw\running2.ogg",1.77828,1,1000};
+			soundBegin[] = {"begin1",1};
+
+			//end1[] = {"\dayz_sfx\chainsaw\running2.ogg",1.77828,1,1000};
+			//soundEnd[] = {"end1",1};
+
+			distanceZoomMin = 50;
+			distanceZoomMax = 50;
+			canDrop = 0;
+			UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
+			optics = 1;
+			modelOptics = "-";
+
+			burst = 1;
+			multiplier = 1;
+		
+			soundContinuous = 0;
+			soundBurst = 0;
+			
+			useAction = 0;
+			useActionTitle = "";
+
+			// from hatchet
+			minRange = 0.5;
+			minRangeProbab = 0.8;
+			midRange = 1;
+			midRangeProbab = 1.5;
+			maxRange = 2;
+			maxRangeProbab = 2.5;
+
+			showToPlayer = 1;
+			//reloadTime = 0.0708762;
+			reloadTime = 0.12;
+			displayName = "Gas";
+		};
+		aiDispersionCoefY = 21;
+		aiDispersionCoefX = 21;
+		dexterity = 0.51;
+		reloadMagazineSound[] = {"\dayz_sfx\effects\action_refuel_0.ogg",0.1,1,20};
+		drySound[] = {"\dayz_sfx\chainsaw\start-attempt.ogg",0.01,1,10};
+		magazines[] = {"CSGAS"};
+		class Library
+		{
+			libTextDesc = "Horlite Chainsaw";
+		};
+		descriptionShort = "Horlite Chainsaw";
+	};
+
+
+
+
+
+
+
 	class MeleeWeapon : Rifle {
 		canDrop = true;
 	};

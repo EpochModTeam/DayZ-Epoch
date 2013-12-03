@@ -103,6 +103,72 @@ class CfgMagazines {
 		descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 100 <br/>Used in: M240, Mk 48 Mod 0"; 
 		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x51_M240.p3d"; 
 	};
+
+	
+	class ItemMixOil : CA_Magazine { 
+		scope = 2; 
+		displayName = "2-Stroke Engine Oil"; 
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa";  // TODO: Icon
+		count = 1; 
+		type = "256";
+		descriptionShort = ""; 
+		class ItemActions
+		{
+			class Crafting
+			{
+				text = "Mix Chainsaw Gas"; // TODO: localize
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"CSGAS",1},{"ItemJerrycanEmpty",1}};
+				input[] = {{"ItemMixOil",1},{"ItemJerrycan",1}};
+			};
+		};
+	};
+
+	class CSGAS : CA_Magazine { 
+		scope = 2; 
+		type = VSoft;
+		displayName = "Gas"; 
+		descriptionShort = "Gas for Chainsaw"; 
+		count = 1000;
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa";
+		ammo = "Chainsaw_Swing_Ammo"; 
+
+		initSpeed = 100;
+		maxLeadSpeed = 15;
+		tracersEvery = 0; 
+		lastRoundsTracer = 0; 
+		
+		optics = false;
+		distanceZoomMin = 0;
+		distanceZoomMax = 0;
+
+		showEmpty = 0;
+		autoReload = true;
+		canLock = LockNo;
+		
+		//
+		burst = 1;
+		multiplier = 1;
+		ffMagnitude = 0.1;
+		ffFrequency = 1;
+		ffCount = 1;
+
+		class HitEffects {
+			hit_blood = "ImpactBlood";
+			hit_concrete = "ImpactConcrete";
+			hit_foliage = "ImpactWood";
+			hit_foliage_green = "ImpactWood";
+			hit_glass = "ImpactGlass";
+			hit_glass_thin = "ImpactGlassThin";
+			hit_metal = "ImpactMetal";
+			hit_plaster = "ImpactPlaster";
+			hit_rubber = "ImpactRubber";
+			hit_wood = "ImpactWood";
+		};
+	};
+
 	class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 { 
 		count = 200; 
 	};
@@ -389,7 +455,7 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "HowTo: Wood Ramp";
+		displayName = "Wood Ramp";
 		model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
 		descriptionShort = "Document used in building a wooden ramp.";
@@ -998,8 +1064,8 @@ class CfgMagazines {
 			{
 				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemGoldBar",10}};
 				input[] = {{"ItemGoldBar10oz",1}};
 			};
@@ -1020,8 +1086,8 @@ class CfgMagazines {
 			{
 				text = $STR_EPOCH_PLAYER_210;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemSilverBar10oz",1}};
 				input[] = {{"ItemSilverBar",10}};
 			};
@@ -1043,8 +1109,8 @@ class CfgMagazines {
 			{
 				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemSilverBar",10}};
 				input[] = {{"ItemSilverBar10oz",1}};
 			};
@@ -1065,8 +1131,8 @@ class CfgMagazines {
 			{
 				text = $STR_EPOCH_PLAYER_210;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemCopperBar10oz",1}};
 				input[] = {{"ItemCopperBar",10}};
 			};
@@ -1088,8 +1154,8 @@ class CfgMagazines {
 			{
 				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemCopperBar",10}};
 				input[] = {{"ItemCopperBar10oz",1}};
 			};
@@ -1132,8 +1198,8 @@ class CfgMagazines {
 			{
 				text = $STR_EPOCH_PLAYER_211;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
+				neednearby[] = {};
+				requiretools[] = {};
 				output[] = {{"ItemAluminumBar",10}};
 				input[] = {{"ItemAluminumBar10oz",1}};
 			};
@@ -4839,6 +4905,7 @@ class CfgMagazines {
 	 };
 
 	#include "CfgMagazines\MeleeSwing.hpp"
+	#include "CfgMagazines\Fuelcan.hpp"
 
 	class HandGrenade_Stone;
 	class ItemTrashToiletpaper : HandGrenade_Stone {

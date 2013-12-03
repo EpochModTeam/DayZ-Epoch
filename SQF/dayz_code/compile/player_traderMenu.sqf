@@ -3,6 +3,9 @@ TraderDialogCatList = 12000;
 TraderDialogItemList = 12001;
 TraderDialogBuyPrice = 12002;
 TraderDialogSellPrice = 12003;
+TraderDialogBuyBtn = 12004;
+TraderDialogSellBtn = 12005;
+TraderDialogCurrency = 12006;
 
 TraderCurrentCatIndex = -1;
 TraderCatList = -1;
@@ -41,17 +44,17 @@ TraderDialogLoadItemList = {
 		_item = _x select 1;
 		_name = _item select 0;
 		_type = _item select 1;
-		switch (true) do { 
-			case (_type == 1): { 
+		switch (true) do {
+			case (_type == 1): {
 				_type = "CfgMagazines";
 			}; 
-			case (_type == 2): { 
+			case (_type == 2): {
 				_type = "CfgVehicles";
 			}; 
-			case (_type == 3): { 
+			case (_type == 3): {
 				_type = "CfgWeapons";
-			}; 
-		}; 
+			};
+		};
 		// Display Name of item
 		_textPart =	getText(configFile >> _type >> _name >> "displayName");
 
@@ -59,7 +62,7 @@ TraderDialogLoadItemList = {
 		_qty = _x select 2;
 
 		// Buy Data from array
-		_buy = _x select 3;	
+		_buy = _x select 3;
 		_bqty = _buy select 0;
 		_bname = _buy select 1;
 		_btype = _buy select 2;
@@ -164,7 +167,17 @@ TraderDialogShowPrices = {
 	if (_index < 0) exitWith {};
 	while {count TraderItemList < 1} do { sleep 1; };
 	_item = TraderItemList select _index;
+
+	_qty = {_x == (_item select 3)} count magazines player;
+
 	ctrlSetText [TraderDialogBuyPrice, format["%1 %2", _item select 2, _item select 4]];
+
+	if(_qty == 0) then {
+		ctrlEnable [TraderDialogBuyBtn, false];
+	} else {
+		ctrlEnable [TraderDialogBuyBtn, true];
+	};
+
 	ctrlSetText [TraderDialogSellPrice, format["%1 %2", _item select 5, _item select 7]];
 };
 
