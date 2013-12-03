@@ -2692,8 +2692,8 @@
 		  <German>Ein anderer Spieler möchte Sie als Freund markieren. Um dies zu akzeptieren markiere den Spieler ebenfalls als Freund.</German>
 		  <Russian>Игрок хочет отметить вас как друга. Чтобы принять, отметьте его как друга.</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Another player wil jou als bevriend markeren. Om te accepteren, markeer player als bevriend.</Dutch>
-		  <French>Another player veut vous marquer comme amical(e). Pour accepter, marquez player comme amical(e).</French>
+		  <Dutch>Een speler wil je als bevriend te markeren. Om te accepteren, markeer de speler als bevriend.</Dutch>
+		  <French>Un joueur veut vous marquer comme amical(e). Pour accepter, marquez ce joueur comme amical(e).</French>
 		  <!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_3">
