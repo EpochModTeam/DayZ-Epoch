@@ -3155,13 +3155,9 @@ class CfgVehicles {
 		vehicleClass = "Survival";
 		displayName = "Grave DZE";
 		destrType = "DestructNo";
-		memoryPointSupply = "collect";
-		supplyRadius = 3;
+		model = "\ca\buildings\Misc\hrobecek.p3d";
 		transportMaxMagazines = 80;
 		transportMaxWeapons = 5;
 		transportMaxBackpacks = 1;
-		transportAmmo = 0;
-		transportRepair = 0;
-		transportFuel = 0;
 	};
 };	
