@@ -107,7 +107,7 @@ class CfgWeapons {
 
 		model = "\z\addons\dayz_epoch\models\chainsaw.p3d";
 
-		picture = "\CA\weapons\data\equip\w_m240_ca.paa";
+		picture = "\z\addons\dayz_epoch\pictures\equip_chainsaw_CA.paa";
 		
 		displayName = "Chainsaw";
 		
