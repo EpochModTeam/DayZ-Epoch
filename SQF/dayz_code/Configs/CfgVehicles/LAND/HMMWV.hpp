@@ -34,7 +34,7 @@ class HMMWV_Base: Car
 	transportSoldier = 3;
 	class Library
 	{
-		libTextDesc = "The High Mobility Multi-purpose Wheeled Vehicle (HMMWV) has replaced the M151 ‘Willys’ jeep in US Army service.  The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high performance diesel engine and four-wheel drive, giving it access to very difficult terrain. It can be armed with an M2 machinegun, a Mk 19 grenade launcher or a TOW Anti-Tank Guided Missile.";
+		libTextDesc = "The High Mobility Multi-purpose Wheeled Vehicle (HMMWV) has replaced the M151 ï¿½Willysï¿½ jeep in US Army service.  The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high performance diesel engine and four-wheel drive, giving it access to very difficult terrain. It can be armed with an M2 machinegun, a Mk 19 grenade launcher or a TOW Anti-Tank Guided Missile.";
 	};
 	castDriverShadow = 0;
 	driverAction = "HMMWV_Driver";
@@ -869,13 +869,13 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
 	transportmaxbackpacks = 4;
 	threat[] = {1,0.6,0.6};
 	transportSoldier = 3;
-	armor = 120;
+	armor = 80;
 	damageResistance = 0.03099;
 	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_m2gpk_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_m2gpk_CA.paa";
 	class Library
 	{
-		libTextDesc = "The High Mobility Multipurpose Wheeled Vehicle (HMMWV) replaced the M151 ‘Willys’ jeep in US Army service. The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high-performance diesel engine and four-wheel drive, making it capable of negotiating very difficult terrain. <br/>This one is equipped with an M2 heavy machine gun which is effective against infantry or unarmored vehicles. It is also supplemented with the GPK (Gunner Protection Kit).";
+		libTextDesc = "The High Mobility Multipurpose Wheeled Vehicle (HMMWV) replaced the M151 ï¿½Willysï¿½ jeep in US Army service. The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high-performance diesel engine and four-wheel drive, making it capable of negotiating very difficult terrain. <br/>This one is equipped with an M2 heavy machine gun which is effective against infantry or unarmored vehicles. It is also supplemented with the GPK (Gunner Protection Kit).";
 	};
 	driverAction = "HMMWV_Driver_EP1";
 	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1"};
@@ -985,6 +985,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
 	expansion = 1;
 	side = 1;
 	scope = 0;
+	armor = 80;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
 	displayname = "HMMWV GPK (M2) AL";
 	transportMaxWeapons = 4;
@@ -998,7 +999,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
 	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_m2gpk_CA.paa";
 	class Library
 	{
-		libTextDesc = "The High Mobility Multipurpose Wheeled Vehicle (HMMWV) replaced the M151 ‘Willys’ jeep in US Army service. The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high-performance diesel engine and four-wheel drive, making it capable of negotiating very difficult terrain. <br/>This one is equipped with an M2 heavy machine gun which is effective against infantry or unarmored vehicles. It is also supplemented with the GPK (Gunner Protection Kit).";
+		libTextDesc = "The High Mobility Multipurpose Wheeled Vehicle (HMMWV) replaced the M151 ï¿½Willysï¿½ jeep in US Army service. The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high-performance diesel engine and four-wheel drive, making it capable of negotiating very difficult terrain. <br/>This one is equipped with an M2 heavy machine gun which is effective against infantry or unarmored vehicles. It is also supplemented with the GPK (Gunner Protection Kit).";
 	};
 	driverAction = "HMMWV_Driver_EP1";
 	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1"};

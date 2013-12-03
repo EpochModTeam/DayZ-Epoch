@@ -261,9 +261,10 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 	faction = "PMC_BAF";
 	displayName = "SUV (Armored) DZ";
 	crew = "";
+	armor = 80;
 	typicalCargo[] = {};
 	enableGPS = 1;  
-	transportMaxWeapons = 20; 
+	transportMaxWeapons = 2012; 
 	transportMaxMagazines = 400; 
 	transportmaxbackpacks = 10;
 	class Turrets: Turrets
@@ -326,6 +327,7 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 	scope = 2;
 	side = 2;
 	faction = "PMC_BAF";
+	armor = 80;
 	displayName = "SUV (Armored) AL";
 	crew = "";
 	typicalCargo[] = {};
