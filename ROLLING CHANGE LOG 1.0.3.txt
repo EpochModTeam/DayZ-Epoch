@@ -36,7 +36,7 @@
 * [ADDED] Extra security features. @facoptere
 * [ADDED] Owner can now remove modular parts (walls, etc) without having to destroy them.  NOTE: nothing is refunded/no rubble. @dayz10k
 * [ADDED] Unlocking a vehicle should now show you which key was used (no more guessing game!) @vbawol @dayz10k
-* [ADDED] Swinging melee weapons and cracking locks (multiple attempts) will trigger hunger/thirst.  @vbawol
+* [ADDED] Swinging melee weapons will cause your food/drink to drop faster than normal. Attepting to crack locks over time will cause your food/drink to drop as well.  @vbawol
 * [ADDED] New building supplies (mortar, cinder, wood packs) to Wholesalers @dayz10k
 * [ADDED] Area maintenance of bases @vos (Axe Cop) @dayz10k
 
@@ -63,6 +63,7 @@
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
 * [FIXED] Recent Murders on the Murder Board in trader cities now works properly. @vbawol
 
+* [CHANGED] Metals can now be converted from 10oz to 1oz without tools or the need for a fire. @vbawol
 * [CHANGED] Mission name and descriptions now conform to template. @dayz10k
 * [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
 * [CHANGED] Increased armor levels on cinder and metal modular base building objects by 20%.

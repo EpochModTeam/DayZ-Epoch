@@ -124,7 +124,7 @@ if (_IsNearVehicle >= 1) then {
 					_objWpnQty = 	_weapons select 1;
 					_countr = 0;
 					{
-						_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
+						_holder addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
 						_countr = _countr + 1;
 					} forEach _objWpnTypes;
 	
@@ -133,7 +133,7 @@ if (_IsNearVehicle >= 1) then {
 					_objWpnQty = _magazines select 1;
 					_countr = 0;
 					{
-						_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
+						_holder addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
 						_countr = _countr + 1;
 					} forEach _objWpnTypes;
 
@@ -142,11 +142,12 @@ if (_IsNearVehicle >= 1) then {
 					_objWpnQty = _backpacks select 1;
 					_countr = 0;
 					{
-						_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
+						_holder addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
 						_countr = _countr + 1;
 					} forEach _objWpnTypes;
 
 					player reveal _object;
+					cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
 						
 				} else {
 		
