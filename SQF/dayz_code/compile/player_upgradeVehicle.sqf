@@ -147,6 +147,7 @@ if (_IsNearVehicle >= 1) then {
 					} forEach _objWpnTypes;
 
 					player reveal _object;
+					cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
 						
 				} else {
 		
