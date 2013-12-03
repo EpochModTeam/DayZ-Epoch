@@ -129,7 +129,7 @@ class UAZ_Unarmed_TK_EP1: UAZ_Unarmed_Base
 	accuracy = 0.3;
 	crew = "TK_Soldier_EP1";
 	typicalCargo[] = {};
-	hiddenSelectionsTextures[] = {};
+	hiddenSelectionsTextures[] = {"\CA\wheeled_E\UAZ\Data\Uaz_main_IND_CO.paa"};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	upgradeVehicle[] = {"UAZ_Unarmed_TK_EP1_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
