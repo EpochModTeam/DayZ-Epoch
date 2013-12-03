@@ -5846,6 +5846,16 @@
 		  <French>Guide d'installation du réservoir.</French>
 		  <!-- <Czech></Czech> -->
 		</Key>
+		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
+		  <Original>Vehicle Upgrade Successful./Original>
+		  <English>Vehicle Upgrade Successful.</English>
+		  <German></German>
+		  <Russian></Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch></Dutch>
+		  <French></French>
+		  <!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
 		  <English>1.04</English>
