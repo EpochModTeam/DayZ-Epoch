@@ -12,7 +12,6 @@ class Mission
 		"cacharacters_pmc",
 		"ca_modules_functions",
 		"glt_m300t",
-		
 		"csj_gyroac",
 		"map_eu",
 		"jetskiyanahuiaddon"
@@ -1278,7 +1277,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={14062.486,68.227501,12673.197};
+			position[]={14271.439,39.959999,12410.709};
 			name="TradercityBag";
 			text="Trader City Bag";
 			type="mil_circle";

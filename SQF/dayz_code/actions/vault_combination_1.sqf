@@ -1,9 +1,10 @@
 private ["_ok"];
+
+if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_21") , "PLAIN DOWN"]; };
+DZE_ActionInProgress = true;
+
 dayz_selectedVault = _this select 3;
 dayz_combination = "";
-
-{player removeAction _x} forEach s_player_combi;s_player_combi = [];
-s_player_unlockvault = 1;
 		
 if(!isNull dayz_selectedVault) then {
 
@@ -14,4 +15,4 @@ if(!isNull dayz_selectedVault) then {
 	};
 };
 
-s_player_unlockvault = -1;
+DZE_ActionInProgress = false;

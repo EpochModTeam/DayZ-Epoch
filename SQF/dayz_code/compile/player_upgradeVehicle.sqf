@@ -7,11 +7,13 @@ private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_remov
 if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_52") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
-// look for nearest vehicle
+if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText ["\n\nYou cannot perform an upgrade while still inside a vehicle.", "PLAIN DOWN"]};
+
+// look for nearest empty vehicle
 _findNearestVehicles = nearestObjects [player, ["LandVehicle"], 10];
 _findNearestVehicle = [];
 {
-	if (alive _x) exitWith {
+	if (alive _x and (count (crew _x)) == 0) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
 } foreach _findNearestVehicles;

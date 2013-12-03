@@ -123,7 +123,8 @@ if ((count _upgrade) > 0) then {
 		
 		// Reset the character ID on locked doors before they inherit the newclassname
 		if (_classname in DZE_DoorsLocked) then {
-		_object setVariable ["CharacterID",dayz_characterID,true];
+			_object setVariable ["CharacterID",dayz_characterID,true];
+			_objectCharacterID = dayz_characterID;
 		};
 
 		_classname = _newclassname;
@@ -140,7 +141,7 @@ if ((count _upgrade) > 0) then {
 	
 		cutText [format[(localize "str_epoch_player_142"),_text], "PLAIN DOWN", 5];
 
-		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID,(getPlayerUID player)];
+		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID,player];
 		publicVariableServer "PVDZE_obj_Swap";
 
 		player reveal _object;

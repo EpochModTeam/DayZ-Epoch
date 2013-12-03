@@ -11,6 +11,11 @@ r_action = false;
 _num_removed = ([player,"ItemPainkiller"] call BIS_fnc_invRemove);
 if(_num_removed == 1) then {
 
+	if (vehicle player != player) then {
+		_display = findDisplay 106;
+		_display closeDisplay 0;
+	};	
+
 	_unit setVariable ["USEC_inPain", false, true];
 
 	if (vehicle player == player) then {

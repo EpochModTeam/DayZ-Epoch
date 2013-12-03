@@ -466,10 +466,11 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			if(_typeOfCursorTarget in DZE_LockedStorage) then {
 				if(_ownerID == dayz_combination or _ownerID == dayz_playerUID) then {
 					_combi = player addAction [format["Open %1",_text], "\z\addons\dayz_code\actions\vault_unlock.sqf",_cursorTarget, 0, false, true, "",""];
+					s_player_combi set [count s_player_combi,_combi];
 				} else {
 					_combi = player addAction [format["Unlock %1",_text], "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true, "",""];
+					s_player_combi set [count s_player_combi,_combi];
 				};
-				s_player_combi set [count s_player_combi,_combi];
 				s_player_unlockvault = 1;
 			} else {
 				if(_ownerID != dayz_combination and _ownerID != dayz_playerUID) then {
