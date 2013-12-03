@@ -92,6 +92,7 @@ if (_IsNearVehicle >= 1) then {
 
 					// Get direction
 					_dir = getDir _vehicle;
+					diag_log format ["The original (preDelete) vehicle position was %1", _dir];
 
 					// Current charID
 					_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
@@ -107,9 +108,11 @@ if (_IsNearVehicle >= 1) then {
 			
 					// Create new object 
 					_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
+					diag_log format ["The preSetDir vehicle position was %1", _dir];
 
 					// Set direction
 					_object setDir _dir;
+					diag_log format ["The upgraded vehicle position is %1", _dir];
 
 					// Set location
 					_object setPosATL _location;
