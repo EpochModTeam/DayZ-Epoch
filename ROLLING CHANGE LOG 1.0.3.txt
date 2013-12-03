@@ -63,6 +63,7 @@
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
 * [FIXED] Recent Murders on the Murder Board in trader cities now works properly. @vbawol
 
+* [CHANGED] Metals can now be converted from 10oz to 1oz without tools or the need for a fire. @vbawol
 * [CHANGED] Mission name and descriptions now conform to template. @dayz10k
 * [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
 * [CHANGED] Increased armor levels on cinder and metal modular base building objects by 20%.
