@@ -108,6 +108,7 @@ class CfgMagazines {
 	class ItemMixOil : CA_Magazine { 
 		scope = 2; 
 		displayName = "2-Stroke Engine Oil"; 
+		model = "\z\addons\dayz_epoch\models\oilmix.p3d";
 		picture = "\CA\weapons\data\equip\m_m240_ca.paa";  // TODO: Icon
 		count = 1; 
 		type = "256";
