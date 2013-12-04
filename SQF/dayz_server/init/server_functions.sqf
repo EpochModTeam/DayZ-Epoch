@@ -749,7 +749,7 @@ server_spawncleanDead = {
 	} forEach _allDead;
 	if (_delQtyZ > 0 or _delQtyP > 0) then {
 		_qty = count _allDead;
-		diag_log (format["CLEANUP: Deleted %1 players and %2 out of dead %3",_delQtyP,_delQtyZ,_qty]);
+		diag_log (format["CLEANUP: Deleted %1 players and %2 zombies out of %3 dead",_delQtyP,_delQtyZ,_qty]);
 	};
 };
 
