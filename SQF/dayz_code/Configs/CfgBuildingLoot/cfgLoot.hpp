@@ -805,15 +805,17 @@ class CfgLoot {
 			"Remington870_lamp",
 			"Crossbow_DZ",
 			"huntingrifle",
+			"Chainsaw"
 		},
 		{
 			0.25,
 			0.20,
-			0.20,
+			0.19,
 			0.13,
 			0.10,
 			0.07,
-			0.05
+			0.05,
+			0.01
 		}
 	};
 
