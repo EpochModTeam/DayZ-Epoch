@@ -3928,8 +3928,8 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_126">
 		  <Original>Combination incorrect, %1 is still locked.</Original>
-		  <English>Combination incorrect, %1 ist immer noch verschlossen.</English>
-		  <German>Kombination inkorrekt, %1</German>
+		  <English>ombination incorrect, %1 is still locked.</English>
+		  <German>Kombination inkorrekt, %1 ist immer noch verschlossen.</German>
 		  <Russian>Комбинация неправильна, %1 по-прежнему закрыт.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
