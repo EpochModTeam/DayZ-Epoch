@@ -268,8 +268,8 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_EPOCH_VEHUP_ORP;
-		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		model = "\z\addons\dayz_epoch\models\doc_Up1.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_docup1_ca.paa";
 		descriptionShort = $STR_EPOCH_VEHUP_ORP_DESC;
 		weight = 0.1;
 		sfx = "document";
@@ -290,8 +290,8 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_EPOCH_VEHUP_AVE;
-		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_docup2_ca.paa";
 		descriptionShort = STR_EPOCH_VEHUP_AVE_DESC;
 		weight = 0.1;
 		sfx = "document";
@@ -312,8 +312,8 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_EPOCH_VEHUP_LRK;
-		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		model = "\z\addons\dayz_epoch\models\doc_Up3.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_docup3_ca.paa";
 		descriptionShort = $STR_EPOCH_VEHUP_LRK_DESC;
 		weight = 0.1;
 		sfx = "document";
@@ -334,8 +334,8 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = $STR_EPOCH_VEHUP_TNK;
-		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
+		model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
 		descriptionShort = $STR_EPOCH_VEHUP_TNK_DESC;
 		weight = 0.1;
 		sfx = "document";

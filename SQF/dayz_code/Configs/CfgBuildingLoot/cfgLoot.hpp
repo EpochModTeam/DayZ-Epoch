@@ -518,7 +518,8 @@ class CfgLoot {
 			"ItemHeatPack",
 			"FoodMRE",
 			"FoodNutmix",
-			"ItemDocument"
+			"ItemDocument",
+			"ItemMixOil"
 		},
 		{
 			0.4,
@@ -530,7 +531,8 @@ class CfgLoot {
 			0.02,
 			0.01,
 			0.02,
-			0.02
+			0.01,
+			0.01
 		}
 	};
 

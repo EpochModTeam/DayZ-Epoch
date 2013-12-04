@@ -414,7 +414,8 @@ class CfgBuildingLoot {
 			{ "","generic" },
 			{ "","food" },
 			{ "","trash" },
-			{ "Binocular","weapon" }
+			{ "Binocular","weapon" },
+			{ "ItemMixOil", "magazine"}
 		};
 		itemChanceSmall[] =	{
 			0.01,
@@ -429,7 +430,8 @@ class CfgBuildingLoot {
 			0.04,
 			0.21,
 			0.24,
-			0.18,
+			0.16,
+			0.02,
 			0.02
 		};
 	};
