@@ -1452,7 +1452,7 @@
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>Rauw lamsvlees</Dutch>
 			<French>Mouton Cru</French>
-      			<Czech>Jehněčí maso</Czech>
+			<Czech>Jehněčí maso</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">						
 			<Original>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
@@ -2435,244 +2435,244 @@
 			<Czech>Can (Beans)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS">						
-			<Original>A clean, unopened can of Tyler's delicious kidney beans.</Original>
-			<English>A clean, unopened can of Tyler's delicious kidney beans.</English>	
-			<German>Eine saubere, ungeöffnete Dose Tyler's köstlichen roten Bohnen.</German>
-			<Russian>Чистая, закрытая банка деликатесной фасоли "Tyler".</Russian>
-			<Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
-			<Dutch>Een schoon, ongeopend blikje Tyler's kidney bonen.</Dutch>
-			<French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
-			<Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
+		  <Original>A clean, unopened can of Tyler's delicious kidney beans.</Original>
+		  <English>A clean, unopened can of Tyler's delicious kidney beans.</English>	
+		  <German>Eine saubere, ungeöffnete Dose Tyler's köstlichen roten Bohnen.</German>
+		  <Russian>Чистая, закрытая банка деликатесной фасоли "Tyler".</Russian>
+		  <Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
+		  <Dutch>Een schoon, ongeopend blikje Tyler's kidney bonen.</Dutch>
+		  <French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
+		  <Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS_EMPTY">						
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Konservendose</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Blikje</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+		  <Original>Tin Can</Original>
+		  <English>Tin Can</English>	
+		  <German>Konservendose</German>
+		  <Russian>Жестянка</Russian>
+		  <Spanish>Lata</Spanish>
+		  <Dutch>Blikje</Dutch>
+		  <French>Boîte en fer-blanc</French>
+		  <Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS_EMPTY">						
-			<Original>An empty can of Tyler's delicious kidney beans.</Original>
-			<English>An empty can of Tyler's delicious kidney beans.</English>	
-			<German>Eine leere Dose Tyler's köstlichen roten Bonen.</German>
-			<Russian>Пустая банка от фасоли "Tyler".</Russian>
-			<Spanish>Una lata vacía de frijoles rojos "Tyler".</Spanish>
-			<Dutch>Een leeg blikje Tyler's kidney bonen.</Dutch>
-			<French>Une boîte vide de délicieux haricots nains "Tyler".</French>
-			<Czech>An empty can of Tyler's delicious kidney beans.</Czech>
+		  <Original>An empty can of Tyler's delicious kidney beans.</Original>
+		  <English>An empty can of Tyler's delicious kidney beans.</English>	
+		  <German>Eine leere Dose Tyler's köstlichen roten Bonen.</German>
+		  <Russian>Пустая банка от фасоли "Tyler".</Russian>
+		  <Spanish>Una lata vacía de frijoles rojos "Tyler".</Spanish>
+		  <Dutch>Een leeg blikje Tyler's kidney bonen.</Dutch>
+		  <French>Une boîte vide de délicieux haricots nains "Tyler".</French>
+		  <Czech>An empty can of Tyler's delicious kidney beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED">						
-			<Original>Can (Unknown)</Original>
-			<English>Can (Unknown)</English>	
-			<German>Dose (Unbekannt)</German>
-			<Russian>Банка (Неизвестно)</Russian>
-			<Spanish>Lata Desconocida</Spanish>
-			<Dutch>Blikje (Onbekend)</Dutch>
-			<French>Boîte (Inconnu)</French>
-			<Czech>Can (Unknown)</Czech>
+		  <Original>Can (Unknown)</Original>
+		  <English>Can (Unknown)</English>	
+		  <German>Dose (Unbekannt)</German>
+		  <Russian>Банка (Неизвестно)</Russian>
+		  <Spanish>Lata Desconocida</Spanish>
+		  <Dutch>Blikje (Onbekend)</Dutch>
+		  <French>Boîte (Inconnu)</French>
+		  <Czech>Can (Unknown)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED">						
-			<Original>A clean, unopened tin can. The label is missing.</Original>
-			<English>A clean, unopened tin can. The label is missing.</English>	
-			<German>Eine saubere, ungeöffnete Dose. Das Etikett fehlt.</German>
-			<Russian>Чистая, закрытая банка непонятно с чем. Наклейка утеряна.</Russian>
-			<Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
-			<Dutch>Een schoon, ongeopend blikje. Het etiket ontbreekt.</Dutch>
-			<French>Une boîte intacte. L'étiquette est manquante.</French>
-			<Czech>A clean, unopened tin can. The label is missing.</Czech>
+		  <Original>A clean, unopened tin can. The label is missing.</Original>
+		  <English>A clean, unopened tin can. The label is missing.</English>	
+		  <German>Eine saubere, ungeöffnete Dose. Das Etikett fehlt.</German>
+		  <Russian>Чистая, закрытая банка непонятно с чем. Наклейка утеряна.</Russian>
+		  <Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
+		  <Dutch>Een schoon, ongeopend blikje. Het etiket ontbreekt.</Dutch>
+		  <French>Une boîte intacte. L'étiquette est manquante.</French>
+		  <Czech>A clean, unopened tin can. The label is missing.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED_EMPTY">						
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Konservendose</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Blikje</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+		  <Original>Tin Can</Original>
+		  <English>Tin Can</English>	
+		  <German>Konservendose</German>
+		  <Russian>Жестянка</Russian>
+		  <Spanish>Lata</Spanish>
+		  <Dutch>Blikje</Dutch>
+		  <French>Boîte en fer-blanc</French>
+		  <Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED_EMPTY">						
-			<Original>An empty tin can.</Original>
-			<English>An empty tin can.</English>	
-			<German>Eine leere Dose.</German>
-			<Russian>Пустая банка от чего-то.</Russian>
-			<Spanish>Una lata vacía.</Spanish>
-			<Dutch>Een leeg blikje.</Dutch>
-			<French>Boîte en fer-blanc vide.</French>
-			<Czech>An empty tin can.</Czech>
+		  <Original>An empty tin can.</Original>
+		  <English>An empty tin can.</English>	
+		  <German>Eine leere Dose.</German>
+		  <Russian>Пустая банка от чего-то.</Russian>
+		  <Spanish>Una lata vacía.</Spanish>
+		  <Dutch>Een leeg blikje.</Dutch>
+		  <French>Boîte en fer-blanc vide.</French>
+		  <Czech>An empty tin can.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">						
-			<Original>Toilet paper</Original>
-			<English>Toilet paper</English>	
-			<German>Toilettenpapier</German>
-			<Russian>Туалетная бумага</Russian>
-			<Spanish>Papel Higiénico</Spanish>
-			<Dutch>WC papier</Dutch>
-			<French>Papier toilette</French>
-			<Czech>Toilet paper</Czech>
+		  <Original>Toilet paper</Original>
+		  <English>Toilet paper</English>	
+		  <German>Toilettenpapier</German>
+		  <Russian>Туалетная бумага</Russian>
+		  <Spanish>Papel Higiénico</Spanish>
+		  <Dutch>WC papier</Dutch>
+		  <French>Papier toilette</French>
+		  <Czech>Toilet paper</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_TOILETPAPER">						
-			<Original>A roll of toilet paper.</Original>
-			<English>A roll of toilet paper.</English>	
-			<German>Eine Rolle Toilettenpapier.</German>
-			<Russian>Рулон туалетной бумаги.</Russian>
-			<Spanish>Un rollo de papel higiénico.</Spanish>
-			<Dutch>Een rol WC Papier.</Dutch>
-			<French>Un rouleau de papier toilette.</French>
-			<Czech>A roll of toilet paper.</Czech>
+		  <Original>A roll of toilet paper.</Original>
+		  <English>A roll of toilet paper.</English>	
+		  <German>Eine Rolle Toilettenpapier.</German>
+		  <Russian>Рулон туалетной бумаги.</Russian>
+		  <Spanish>Un rollo de papel higiénico.</Spanish>
+		  <Dutch>Een rol WC Papier.</Dutch>
+		  <French>Un rouleau de papier toilette.</French>
+		  <Czech>A roll of toilet paper.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_RAZOR">
-			<Original>Razor</Original>
-			<English>Razor</English>	
-			<German>Rasiermesser</German>
-			<Russian>Опасная бритва</Russian>
-			<Spanish>Navaja</Spanish>
-			<Dutch>Scheermes</Dutch>
-			<French>Rasoir</French>
-			<Czech>Razor</Czech>
+		  <Original>Razor</Original>
+		  <English>Razor</English>	
+		  <German>Rasiermesser</German>
+		  <Russian>Опасная бритва</Russian>
+		  <Spanish>Navaja</Spanish>
+		  <Dutch>Scheermes</Dutch>
+		  <French>Rasoir</French>
+		  <Czech>Razor</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_RAZOR">						
-			<Original>An old-fashioned cut-throat razor with a rounded French point.</Original>
-			<English>An old-fashioned cut-throat razor with a rounded French point.</English>	
-			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
-			<Russian>Старомодная опасная бритва.</Russian>
-			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
-			<Dutch>Een ouderwets nek-snijdend frans scheermes.</Dutch>
-			<French>Un traditionnel rasoir coupe-chou avec une pointe arrondie à la française.</French>
-			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
+		  <Original>An old-fashioned cut-throat razor with a rounded French point.</Original>
+		  <English>An old-fashioned cut-throat razor with a rounded French point.</English>	
+		  <German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
+		  <Russian>Старомодная опасная бритва.</Russian>
+		  <Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
+		  <Dutch>Een ouderwets nek-snijdend frans scheermes.</Dutch>
+		  <French>Un traditionnel rasoir coupe-chou avec une pointe arrondie à la française.</French>
+		  <Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_RBULL">
-			<Original>Red Bull</Original>
-			<English>Red Bull</English>
-			<German>Red Bull</German>
-			<Russian>Ред Булл</Russian>
-			<Spanish>Red Bull</Spanish>
-			<Dutch>Red Bull</Dutch>
-			<French>Red Bull</French>
-			<Czech>Red Bull</Czech>
+		  <Original>Red Bull</Original>
+		  <English>Red Bull</English>
+		  <German>Red Bull</German>
+		  <Russian>Ред Булл</Russian>
+		  <Spanish>Red Bull</Spanish>
+		  <Dutch>Red Bull</Dutch>
+		  <French>Red Bull</French>
+		  <Czech>Red Bull</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_RBULL">
-			<Original>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Original>
-			<English>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</English>
-			<German>Red Bull ist ein Energy-Drink des österreichischen Getränkeherstellers Red Bull GmbH.</German>
-			<Russian>Ред Булл. Энергетический напиток, продаваемый австрийской компанией Red Bull GmbH.</Russian>
-			<Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Spanish>
-			<Dutch>Red Bull geeft je vleugels.</Dutch>
-			<French>Red Bull est une boisson énergétique vendue par la société Austrichienne Red Bull GmbH.</French>
-			<Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Czech>
+		  <Original>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Original>
+		  <English>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</English>
+		  <German>Red Bull ist ein Energy-Drink des österreichischen Getränkeherstellers Red Bull GmbH.</German>
+		  <Russian>Ред Булл. Энергетический напиток, продаваемый австрийской компанией Red Bull GmbH.</Russian>
+		  <Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Spanish>
+		  <Dutch>Red Bull geeft je vleugels.</Dutch>
+		  <French>Red Bull est une boisson énergétique vendue par la société Austrichienne Red Bull GmbH.</French>
+		  <Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_OSHERBET">
-			<Original>Orange Sherbet</Original>
-			<English>Orange Sherbet</English>
-			<German>Orangensorbet</German>
-			<Russian>Апельсиновый шербет</Russian>
-			<Spanish>Orange Sherbet</Spanish>
-			<Dutch>Orange Sherbet</Dutch>
-			<French>Orange Sherbet</French>
-			<Czech>Orange Sherbet</Czech>
+		  <Original>Orange Sherbet</Original>
+		  <English>Orange Sherbet</English>
+		  <German>Orangensorbet</German>
+		  <Russian>Апельсиновый шербет</Russian>
+		  <Spanish>Orange Sherbet</Spanish>
+		  <Dutch>Orange Sherbet</Dutch>
+		  <French>Orange Sherbet</French>
+		  <Czech>Orange Sherbet</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_OSHERBET">
-			<Original>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Original>
-			<English>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</English>
-			<German>Orangensorbet ist ein kohlensäurehaltiges Erfrischungsgetränk.</German>
-			<Russian>Апельсиновый шербет. Острый оранжевый газированный безалкогольный напиток с большим количеством шипения.</Russian>
-			<Spanish>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Spanish>
-			<Dutch>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Dutch>
-			<French>Orange Sherbet est une boisson gazeuse rafraîchissante sucrée trés pétillante.</French>
-			<Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
+		  <Original>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Original>
+		  <English>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</English>
+		  <German>Orangensorbet ist ein kohlensäurehaltiges Erfrischungsgetränk.</German>
+		  <Russian>Апельсиновый шербет. Острый, апельсиновый, газированный, безалкогольный напиток с большим количеством шипения.</Russian>
+		  <Spanish>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Spanish>
+		  <Dutch>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Dutch>
+		  <French>Orange Sherbet est une boisson gazeuse rafraîchissante sucrée trés pétillante.</French>
+		  <Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT">
-			<Original>Keymakers kit</Original>
-			<English>Keymakers kit</English>
-			<German>Schlüsselmacher kit</German>
-			<Russian>Набор для создания ключей</Russian>
-			<Spanish>Keymakers kit</Spanish>
-			<Dutch>Sleutelmakers set</Dutch>
-			<French>Kit de Reproduction de Clés</French>
-			<Czech>Keymakers kit</Czech>
+		  <Original>Keymakers kit</Original>
+		  <English>Keymakers kit</English>
+		  <German>Schlüsselmacher kit</German>
+		  <Russian>Набор для создания ключей</Russian>
+		  <Spanish>Keymakers kit</Spanish>
+		  <Dutch>Sleutelmakers set</Dutch>
+		  <French>Kit de Reproduction de Clés</French>
+		  <Czech>Keymakers kit</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT_DESC">
-			<Original>Kit including the tools required to smelt, mold and shape keys.</Original>
-			<English>Kit including the tools required to smelt, mold and shape keys.</English>
-			<German>Ein Kit zum Schmelzen und Formen von Schlüsseln.</German>
-			<Russian>Набор, включающий инструменты, необходимые для выплавки и придания формы ключам.</Russian>
-			<Spanish>Kit including the tools required to smelt, mold and shape keys.</Spanish>
-			<Dutch>Met deze sleutelmakers set kun je indien je een vuur en tin hebt je sleutels kopieren.</Dutch>
-			<French>Ce kit inclut tous les outils nécessaires à fondre, modeler et découper des clés.</French>
-			<Czech>Kit including the tools required to smelt, mold and shape keys.</Czech>
+		  <Original>Kit including the tools required to smelt, mold and shape keys.</Original>
+		  <English>Kit including the tools required to smelt, mold and shape keys.</English>
+		  <German>Ein Kit zum Schmelzen und Formen von Schlüsseln.</German>
+		  <Russian>Набор, включающий инструменты, необходимые для выплавки и придания формы ключам.</Russian>
+		  <Spanish>Kit including the tools required to smelt, mold and shape keys.</Spanish>
+		  <Dutch>Met deze sleutelmakers set kun je indien je een vuur en tin hebt je sleutels kopieren.</Dutch>
+		  <French>Ce kit inclut tous les outils nécessaires à fondre, modeler et découper des clés.</French>
+		  <Czech>Kit including the tools required to smelt, mold and shape keys.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_SLEDGE">
-			<Original>Sledgehammer</Original>
-			<English>Sledgehammer</English>
-			<German>Vorschlaghammer</German>
-			<Russian>Кувалда</Russian>
-			<Spanish>Almádena</Spanish>
-			<Dutch>Voorhamer</Dutch>
-			<French>Masse</French>
-			<Czech>Perlík</Czech>
+		  <Original>Sledgehammer</Original>
+		  <English>Sledgehammer</English>
+		  <German>Vorschlaghammer</German>
+		  <Russian>Кувалда</Russian>
+		  <Spanish>Almádena</Spanish>
+		  <Dutch>Voorhamer</Dutch>
+		  <French>Masse</French>
+		  <Czech>Perlík</Czech>
 		</Key>   
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
-			<Original>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Original>
-			<English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
-			<German>Ein Vorschlaghammer ist ein aus einem Hammerkopf (typischerweise aus geschmiedetem Metall) und einem Stiel bestehendes Handwerkzeug. Der Vorschlaghammer kann mit höheren Schlagkräften als andere Hämmer genutzt werden.</German>
-			<Russian>Инструмент, с большой плоской головкой, прикреплённой к ручке. Головка, как правило, сделана из металла. Кувалдой можно приложить больше силы, чем другими молотками.</Russian>
-			<Spanish>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Spanish>
-			<Dutch>Een grote voorhamer met stalen kop. Handig voor sloop en bouw werkzaamheden.</Dutch>
-			<French>Un outil composé d'une large tête aux faces latérales plates attachée à un manche. Sa tête est habituellement faite en acier. La masse se manipule à deux mains et permet d'exercer plus de force qu'un marteau.</French>
-			<Czech>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Czech>
+		  <Original>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Original>
+		  <English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
+		  <German>Ein Vorschlaghammer ist ein aus einem Hammerkopf (typischerweise aus geschmiedetem Metall) und einem Stiel bestehendes Handwerkzeug. Der Vorschlaghammer kann mit höheren Schlagkräften als andere Hämmer genutzt werden.</German>
+		  <Russian>Инструмент, с большой плоской головкой, прикреплённой к ручке. Головка, как правило, сделана из металла. Кувалдой можно приложить больше силы, чем другими молотками.</Russian>
+		  <Spanish>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Spanish>
+		  <Dutch>Een grote voorhamer met stalen kop. Handig voor sloop en bouw werkzaamheden.</Dutch>
+		  <French>Un outil composé d'une large tête aux faces latérales plates attachée à un manche. Sa tête est habituellement faite en acier. La masse se manipule à deux mains et permet d'exercer plus de force qu'un marteau.</French>
+		  <Czech>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_FISHPOLE">
-			<Original>Fishing Pole</Original>
-			<English>Fishing Pole</English>
-			<German>Angelrute</German>
-			<Russian>Удочка</Russian>
-			<Spanish>Caña de Pesca</Spanish>
-			<Dutch>Vishengel</Dutch>
-			<French>Canne à Pêche</French>
-			<Czech>Rybářský Prut</Czech>
+		  <Original>Fishing Pole</Original>
+		  <English>Fishing Pole</English>
+		  <German>Angelrute</German>
+		  <Russian>Удочка</Russian>
+		  <Spanish>Caña de Pesca</Spanish>
+		  <Dutch>Vishengel</Dutch>
+		  <French>Canne à Pêche</French>
+		  <Czech>Rybářský Prut</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_FISHPOLE_DESC">
-			<Original>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Original>
-			<English>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</English>
-			<German>Angelrute: Der Kohlefaser-Stab scheint alt zu sein aber funktioniert immer noch einwandfrei.</German>
-			<Russian>Удочка: Эта палка из углеродного волокна может быть стара, но она до сих пор работает как часы.</Russian>
-			<Spanish>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Spanish>
-			<Dutch>Vishengel: Dit carbonnen hengeltje is al oud, maar werkt nog prima!</Dutch>
-			<French>Cette canne à pêche en fibre de carbone a beau être vieille, elle fonctionne encore à merveille!</French>
-			<Czech>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Czech>
+		  <Original>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Original>
+		  <English>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</English>
+		  <German>Angelrute: Der Kohlefaser-Stab scheint alt zu sein aber funktioniert immer noch einwandfrei.</German>
+		  <Russian>Удочка: Эта палка из углеродного волокна может быть стара, но она до сих пор работает как часы.</Russian>
+		  <Spanish>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Spanish>
+		  <Dutch>Vishengel: Dit carbonnen hengeltje is al oud, maar werkt nog prima!</Dutch>
+		  <French>Cette canne à pêche en fibre de carbone a beau être vieille, elle fonctionne encore à merveille!</French>
+		  <Czech>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CROWBAR">
-		      <Original>Crowbar</Original>
-		      <English>Crowbar</English>
-		      <German>Brechstange</German>
-		      <Russian>Лом</Russian>
-		      <Spanish>Palanca</Spanish>
-		      <Dutch>Breekijzer</Dutch>
-		      <French>Pied-de-biche</French>
-		      <Czech>Sochor</Czech>
+		  <Original>Crowbar</Original>
+		  <English>Crowbar</English>
+		  <German>Brechstange</German>
+		  <Russian>Ломик</Russian>
+		  <Spanish>Palanca</Spanish>
+		  <Dutch>Breekijzer</Dutch>
+		  <French>Pied-de-biche</French>
+		  <Czech>Sochor</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CROWBAR_DESC">
-			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
-			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
-			<German>Ein einfaches Werkzeug zum Aufbrechen, Heben und Bewegen.</German>
-			<Russian>Инструмент, состоящий из металлического стержня с одним изогнутым концом, часто с небольшой трещиной на одном или обоих концах для удаления гвоздей.</Russian>
-			<Spanish>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Spanish>
-			<Dutch>Een stevig breekijzer voor breek en sloopwerkzaamheden.</Dutch>
-			<French>Un outil constitué d'une barre de métal dont l'une des extrémité est recourbée servant de point d'appui, légèrement aplatie et fendue, permettant ainsi d'arracher des clous.</French>
-			<Czech>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Czech>
+		  <Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
+		  <English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
+		  <German>Ein einfaches Werkzeug zum Aufbrechen, Heben und Bewegen.</German>
+		  <Russian>Инструмент, состоящий из металлического стержня с одним изогнутым концом, часто с небольшой трещиной на одном или обоих концах для удаления гвоздей.</Russian>
+		  <Spanish>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Spanish>
+		  <Dutch>Een stevig breekijzer voor breek en sloopwerkzaamheden.</Dutch>
+		  <French>Un outil constitué d'une barre de métal dont l'une des extrémité est recourbée servant de point d'appui, légèrement aplatie et fendue, permettant ainsi d'arracher des clous.</French>
+		  <Czech>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_ETOOL">
-			<Original>Etool</Original>
-			<English>Etool</English>
-			<German>Feldspaten</German>
-			<Russian>Сапёрная лопатка</Russian>
-			<Spanish>Pala Afianzar</Spanish>
-			<Dutch>Opklapbare schep/spade.</Dutch>
-			<French>Pelle Pliable</French>
-			<Czech>Etool</Czech>
+		  <Original>Etool</Original>
+		  <English>Etool</English>
+		  <German>Feldspaten</German>
+		  <Russian>Сапёрная лопатка</Russian>
+		  <Spanish>Pala Afianzar</Spanish>
+		  <Dutch>Opklapbare schep/spade.</Dutch>
+		  <French>Pelle Pliable</French>
+		  <Czech>Etool</Czech>
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
@@ -4490,7 +4490,7 @@
 		  <Original>Cannot sell %1, tires are too damaged.</Original>
 		  <English>Cannot sell %1, tires are too damaged.</English>
 		  <German>Kann nicht %1 verkaufen, da die Reifen zu sehr beschädigt sind.</German>
-		  <Russian>Нельзя продать %1, шины слишком повреждены.</Russian>
+		  <Russian>Нельзя продать %1, колёса слишком повреждены.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan %1 niet verkopen, banden hebben teveel schade.</Dutch>
 		  <!-- <French></French> -->
@@ -4510,7 +4510,7 @@
 		  <Original>Need %1 More %2</Original>
 		  <English>Need %1 More %2</English>
 		  <German>Sie benötigen noch %1 %2</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Нужно ещё %1 %2</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Nog %1 %2 nodig</Dutch>
 		  <!-- <French></French> -->
@@ -4550,7 +4550,7 @@
 		  <Original>Examine</Original>
 		  <English>Examine</English>
 		  <!-- <German></German> -->
-		  <!-- <Russian></Russian> -->
+		  <Russian>Исследовать</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Onderzoek</Dutch>
 		  <!-- <French></French> -->
@@ -4640,7 +4640,7 @@
 		  <Original>Add 1 10oz Gold</Original>
 		  <English>Add 1 10oz Gold</English>
 		  <German>1 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 1 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 1 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4650,7 +4650,7 @@
 		  <Original>Add 10 10oz Gold</Original>
 		  <English>Add 10 10oz Gold</English>
 		  <German>10 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 10 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 10 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4660,7 +4660,7 @@
 		  <Original>Add 9 10oz Gold</Original>
 		  <English>Add 9 10oz Gold</English>
 		  <German>9 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 9 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 9 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4670,7 +4670,7 @@
 		  <Original>Remove 1 10oz Gold</Original>
 		  <English>Remove 1 10oz Gold</English>
 		  <German>1 10oz Gold entfernen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Забрать 1 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verwijder 1 10oz Goud</Dutch>
 		  <!-- <French></French> -->
@@ -4690,7 +4690,7 @@
 		  <Original>Add 8 10oz Gold</Original>
 		  <English>Add 8 10oz Gold</English>
 		  <German>8 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 8 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 8 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4700,7 +4700,7 @@
 		  <Original>Add 7 10oz Gold</Original>
 		  <English>Add 7 10oz Gold</English>
 		  <German>7 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 7 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 7 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4710,7 +4710,7 @@
 		  <Original>Add 6 10oz Gold</Original>
 		  <English>Add 6 10oz Gold</English>
 		  <German>6 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 6 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 6 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4720,7 +4720,7 @@
 		  <Original>Add 5 10oz Gold</Original>
 		  <English>Add 5 10oz Gold</English>
 		  <German>5 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 5 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 5 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4730,7 +4730,7 @@
 		  <Original>Add 4 10oz Gold</Original>
 		  <English>Add 4 10oz Gold</English>
 		  <German>4 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 4 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 4 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4740,7 +4740,7 @@
 		  <Original>Add 3 10oz Gold</Original>
 		  <English>Add 3 10oz Gold</English>
 		  <German>3 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 3 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 3 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4750,7 +4750,7 @@
 		  <Original>Add 2 10oz Gold</Original>
 		  <English>Add 2 10oz Gold</English>
 		  <German>2 10oz Gold hinzufügen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Добавить 2 10oz золота</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 2 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
@@ -4980,7 +4980,7 @@
 		  <Original>Place Lockbox</Original>
 		  <English>Place Lockbox</English>
 		  <German>Schließkassette platzieren</German>
-		  <Russian>Поставить закрытый ящик</Russian>
+		  <Russian>Поставить запираемый ящик</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Plaats afsluitbare kist</Dutch>
 		  <!-- <French></French> -->
@@ -4996,21 +4996,21 @@
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>
-    <Key ID="STR_EPOCH_PLAYER_232a">
-      <Original>Craft Wood Floor 1/2</Original>
-      <English>Craft Wood Floor 1/2</English>
-      <German>1/2 Holzboden herstellen</German>
-      <Russian>Создать: Деревянный пол 1/2</Russian>
-      <!-- <Spanish></Spanish> -->
-      <Dutch>Creëer houten vloer 1/2</Dutch>
-      <!-- <French></French> -->
-      <!-- <Czech></Czech> -->
-    </Key>
+		<Key ID="STR_EPOCH_PLAYER_232a">
+		  <Original>Craft Wood Floor 1/2</Original>
+		  <English>Craft Wood Floor 1/2</English>
+		  <German>1/2 Holzboden herstellen</German>
+		  <Russian>Создать: Деревянный пол 1/2</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Creëer houten vloer 1/2</Dutch>
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_233">
 		  <Original>Craft Stair Supports</Original>
 		  <English>Craft Stair Supports</English>
 		  <German>Treppenstützen herstellen</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Создать: Stair Supports</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer trapsteunen</Dutch>
 		  <!-- <French></French> -->
@@ -5670,7 +5670,7 @@
 		  <Original>Build Round Fence</Original>
 		  <English>Build Round Fence</English>
 		  <German>Abgerundeten Zaun aufstellen</German>
-		  <Russian>Круглая ограда из мешков с песком</Russian>
+		  <Russian>Установить: Круглая ограда из мешков с песком</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
@@ -5847,10 +5847,10 @@
 		  <!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
-		  <Original>Vehicle Upgrade Successful./Original>
+		  <Original>Vehicle Upgrade Successful.</Original>
 		  <English>Vehicle Upgrade Successful.</English>
 		  <German>Fahrzeug-Upgrade abgeschlossen.</German>
-		  <Russian></Russian>
+		  <Russian>Транспорт успешно улучшен.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French></French>
@@ -5879,12 +5879,12 @@
 		<Key ID="STR_R3F_WEIGHT_English">
 		  <Original>lb</Original>
 		  <English>lb</English>
-		  <German>Kg</German>
+		  <German>lb</German>
 		  <Russian>Кг</Russian>
-		  <Spanish>Kg</Spanish>
-		  <Dutch>Kg</Dutch>
+		  <Spanish>lb</Spanish>
+		  <Dutch>lb</Dutch>
 		  <French>Kg</French>
-		  <Czech>Kg</Czech>
+		  <Czech>lb</Czech>
 		</Key>
 		<Key ID="str_player_login_timeout">
 		  <English>Login timed out!\nDisconnect and try again!</English>
