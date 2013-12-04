@@ -63,6 +63,7 @@
 * [FIXED] Case sensitivity issues with last versions SQL update calls.
 * [FIXED] Recent Murders on the Murder Board in trader cities now works properly. @vbawol
 
+* [CHANGED] Trader menu "Buy" button will now disable or grey out if you do not have the correct funds available.
 * [CHANGED] Metals can now be converted from 10oz to 1oz without tools or the need for a fire. @vbawol
 * [CHANGED] Mission name and descriptions now conform to template. @dayz10k
 * [CHANGED] Increased armor levels on wooded modular base building objects by 300%.
