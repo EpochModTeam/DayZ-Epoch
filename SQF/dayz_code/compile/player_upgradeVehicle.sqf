@@ -91,7 +91,8 @@ if (_IsNearVehicle >= 1) then {
 					_location	= getposATL _vehicle;
 
 					// Get direction
-					_dir = direction _vehicle;
+					_dir = getDir _vehicle;
+					diag_log format ["The original (preDelete) vehicle position was %1", _dir];
 
 					// Current charID
 					_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
@@ -107,12 +108,14 @@ if (_IsNearVehicle >= 1) then {
 			
 					// Create new object 
 					_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
-
-					// Set direction
-					_object setDir _dir;
+					diag_log format ["The preSetDir vehicle position was %1", _dir];
 
 					// Set location
 					_object setPosATL _location;
+					
+					// Set direction
+					_object setDir _dir;
+					diag_log format ["The upgraded setDir vehicle position is %1", _dir];
 
 					PVDZE_veh_Publish2 = [_object,[_dir,_location],_classname,true,_objectCharacterID,player];
 					publicVariableServer  "PVDZE_veh_Publish2";
