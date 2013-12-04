@@ -33,7 +33,7 @@ _key call server_hiveWrite;
    _uid = _this select 1;
    _characterID = _this select 2;
    _class = _this select 3;
-   //_dir = _this select 4;
+   _dir = _this select 4;
    _location = _this select 5;
    _donotusekey = _this select 6;
    _activatingPlayer = _this select 7;
@@ -65,7 +65,7 @@ _key call server_hiveWrite;
 
 	if(!_done) exitWith { diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
 
-	_newobject = createVehicle [_class, _location, [], 0, "CAN_COLLIDE"];
+	_newobject = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
 
 	// add items from previous vehicle here
 	_weapons = 		getWeaponCargo _object;
@@ -79,14 +79,16 @@ _key call server_hiveWrite;
 	// Remove marker
 	deleteVehicle _object;
 
-	_holder setDir _dir;
-	_holder setPosATL _location;
-
 	// remove old vehicle from DB
 	[_objectID,_objectUID,_activatingPlayer] call server_deleteObj;
 
-	// switch to new vehicle.
+	
+
+	// switch var to new vehicle at this point.
 	_object = _newobject;
+
+	_object setDir _dir;
+	_object setPosATL _location;
 						
 	//Add weapons
 	_objWpnTypes = 	_weapons select 0;
