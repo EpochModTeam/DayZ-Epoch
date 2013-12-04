@@ -13,10 +13,7 @@ _holder = _array select 2;
 
 // if holder is null disallow pickup for 5 seconds 
 if(isNull _holder) exitWith { 
-	[] spawn { 
-		sleep 5; 
-		DZE_CanPickup = true;
-	}; 
+	DZE_CanPickup = true;
 };
 
 // Check if closest player
@@ -58,8 +55,4 @@ if(_qty >= 1) then {
 	};
 };
 
-// disallow another pickup action for 5 seconds.
-[] spawn { 
-	sleep 5; 
-	DZE_CanPickup = true;
-};
+DZE_CanPickup = true;
