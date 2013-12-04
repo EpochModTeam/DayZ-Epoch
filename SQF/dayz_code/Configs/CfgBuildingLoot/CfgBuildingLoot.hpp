@@ -195,7 +195,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] = {
 			{ "ItemGenerator","magazine" },
-			{ "ItemFuelBarrel","magazine"},
+			{ "ItemFuelBarrelEmpty","magazine"},
 			{ "","generic" },
 			{ "","trash" },
 			{ "","military" },
@@ -326,7 +326,7 @@ class CfgBuildingLoot {
 			{ "","trash" },			
 			{ "PartPlankPack","magazine" },
 			{ "WeaponHolder_ItemHatchet_DZE","object" },
-			{ "ItemFuelBarrel","magazine"},
+			{ "ItemFuelBarrelEmpty","magazine"},
 			{ "WeaponHolder_ItemMachete", "object"},
 			{ "ItemFishingPole","weapon" },
 			{ "ItemLightBulb","magazine"},
@@ -628,7 +628,7 @@ class CfgBuildingLoot {
 			{ "","military" },
 			{ "ItemEtool","weapon" },
 			{ "ItemSandbag","magazine" },
-			{ "ItemFuelBarrel","magazine" },
+			{ "ItemFuelBarrelEmpty","magazine" },
 			{ "ItemFuelPump","magazine" },
 			{ "machineguns","cfglootweapon" }
 		};

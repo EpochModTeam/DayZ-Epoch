@@ -14,7 +14,7 @@ class CfgWeight
 	{
 		class Chainsaw 
 		{
-			weight = 6.8;
+			weight = 4.5;
 		};
 		class SCAR_L_STD_Mk4CQT
 		{
