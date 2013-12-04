@@ -12,6 +12,10 @@ class CfgWeight
 {
 	class Weapons
 	{
+		class Chainsaw 
+		{
+			weight = 6.8;
+		};
 		class SCAR_L_STD_Mk4CQT
 		{
 			weight = 3.6;
@@ -1534,6 +1538,26 @@ class CfgWeight
 		class ItemJerrycan 
 		{
 			weight = 10;
+		};
+		class ItemJerryMixed 
+		{
+			weight = 10;
+		};
+		class ItemJerryMixed4 
+		{
+			weight = 8;
+		};
+		class ItemJerryMixed3 
+		{
+			weight = 6;
+		};
+		class ItemJerryMixed2 
+		{
+			weight = 4;
+		};
+		class ItemJerryMixed1 
+		{
+			weight = 2;
 		};
 		class ItemJerrycanEmpty
 		{
