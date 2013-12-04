@@ -84,74 +84,27 @@ if (_IsNearVehicle >= 1) then {
 					_objectID 	= _vehicle getVariable ["ObjectID","0"];
 					_objectUID	= _vehicle getVariable ["ObjectUID","0"];
 
-					PVDZE_obj_Delete = [_objectID,_objectUID,player];
-					publicVariableServer "PVDZE_obj_Delete";
-
-					// Get position
-					_location	= getposATL _vehicle;
-
-					// Get direction
-					_dir = getDir _vehicle;
-					diag_log format ["The original (preDelete) vehicle position was %1", _dir];
-
-					// Current charID
-					_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
-
-					_weapons = 		getWeaponCargo _vehicle;
-					_magazines = 	getMagazineCargo _vehicle;
-					_backpacks = 	getBackpackCargo _vehicle;
-
-					// remove old vehicle
-					deleteVehicle _vehicle; 						
+					if(_objectID == "0" && _objectUID == "0") then {
 						
-					_classname = _newclassname;
-			
-					// Create new object 
-					_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
-					diag_log format ["The preSetDir vehicle position was %1", _dir];
-
-					// Set location
-					_object setPosATL _location;
+						cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];
 					
-					// Set direction
-					_object setDir _dir;
-					diag_log format ["The upgraded setDir vehicle position is %1", _dir];
+					} else {
+					
+						// Get position
+						_location	= getposATL _vehicle;
 
-					PVDZE_veh_Publish2 = [_object,[_dir,_location],_classname,true,_objectCharacterID,player];
-					publicVariableServer  "PVDZE_veh_Publish2";
+						// Get direction
+						_dir = getDir _vehicle;
 
-					_holder = _object;
-						
-					//Add weapons
-					_objWpnTypes = 	_weapons select 0;
-					_objWpnQty = 	_weapons select 1;
-					_countr = 0;
-					{
-						_holder addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
-						_countr = _countr + 1;
-					} forEach _objWpnTypes;
+						// Current charID
+						_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
+			
+						PVDZE_veh_Publish3 = [_object,[_dir,_location],_newclassname,true,_objectCharacterID,player];
+						publicVariableServer  "PVDZE_veh_Upgrade";					
+
+						cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
+					};
 	
-					//Add Magazines
-					_objWpnTypes = _magazines select 0;
-					_objWpnQty = _magazines select 1;
-					_countr = 0;
-					{
-						_holder addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
-						_countr = _countr + 1;
-					} forEach _objWpnTypes;
-
-					//Add Backpacks
-					_objWpnTypes = _backpacks select 0;
-					_objWpnQty = _backpacks select 1;
-					_countr = 0;
-					{
-						_holder addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
-						_countr = _countr + 1;
-					} forEach _objWpnTypes;
-
-					player reveal _object;
-					cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
-						
 				} else {
 		
 					{player addMagazine _x;} forEach _temp_removed_array;
