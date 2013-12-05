@@ -50,7 +50,7 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" or _ammo isKindOf "Chainsaw_Swing_Ammo")
 					_countOut = 1;
 					_itemOut = "PartWoodPile";
 
-					if(_weapon == "Chainsaw") then {
+					if(_ammo isKindOf "Chainsaw_Swing_Ammo") then {
 						_itemOut = "PartWoodLumber";
 					};
 

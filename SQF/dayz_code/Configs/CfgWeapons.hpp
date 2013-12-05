@@ -165,7 +165,7 @@ class CfgWeapons {
 		aiDispersionCoefY = 21;
 		aiDispersionCoefX = 21;
 		dexterity = 0.51;
-		reloadMagazineSound[] = {"\dayz_sfx\effects\action_refuel_0.ogg",0.1,1,20};
+		reloadMagazineSound[] = {"\dayz_sfx\chainsaw\start-attempt.ogg",0.1,1,20};
 		drySound[] = {"\dayz_sfx\chainsaw\start-attempt.ogg",0.01,1,10};
 		magazines[] = {"CSGAS"};
 		class Library
