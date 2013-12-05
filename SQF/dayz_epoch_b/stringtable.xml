@@ -5127,12 +5127,12 @@
 		  <!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_245">
-		  <Original>Failed, you must get into drivers seat first.</Original>
-		  <English>Failed, you must get into drivers seat first.</English>
-		  <German>Fehlgeschlagen, Sie müssen zuerst auf den Fahrersitz.</German>
-		  <Russian>Не удалось, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
+		  <Original>\n\nFailed, you must get into drivers seat first.</Original>
+		  <English>\n\nFailed, you must get into drivers seat first.</English>
+		  <German>\n\nFehlgeschlagen, Sie müssen zuerst auf den Fahrersitz.</German>
+		  <Russian>\n\nНе удалось, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Mislukt, stap eerst in de bestuurders stoel.</Dutch>
+		  <Dutch>\n\nMislukt, stap eerst in de bestuurders stoel.</Dutch>
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>
