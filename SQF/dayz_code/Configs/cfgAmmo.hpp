@@ -94,8 +94,8 @@ class CfgAmmo {
 		minRangeProbab = 0.8;
 		midRange = 2;
 		midRangeProbab = 1.5;
-		maxRange = 3;
-		maxRangeProbab = 2.5;
+		maxRange = 2.5;
+		maxRangeProbab = 2;
 		explosive = 0;
 		simulationStep = 0.001;
 		timeToLive = 0.03;
