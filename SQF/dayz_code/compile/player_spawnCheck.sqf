@@ -14,11 +14,13 @@ dayz_spawnZombies = 0;
 dayz_CurrentZombies = 0;
 
 // experiment with adding fly sounds locally for both zombies and players.
-_soundLimit = 3;
+_soundLimit = 2;
 {
 	if (!alive _x) then {
-		[player,"flysound",1,true] call dayz_zombieSpeak;
-		_soundLimit = _soundLimit - 1;
+		if (!(_x isKindOf "zZombie_Base")) then {
+			[player,"flysound",1,true] call dayz_zombieSpeak;
+			_soundLimit = _soundLimit - 1;
+		};
 	};
 	if (_soundLimit == 0) exitWith {};
 } foreach (nearestObjects [player, ["CAManBase"], 8]);
