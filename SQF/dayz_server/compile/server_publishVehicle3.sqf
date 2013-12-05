@@ -9,7 +9,7 @@ _activatingPlayer =  _this select 5;
 _characterID = _keySelected;
 
 _isOK = isClass(configFile >> "CfgVehicles" >> _class);
-if(!_isOK) exitWith { diag_log ("HIVE-pv3: Vehicle does not exist: "+ str(_class)); };
+if(!_isOK or isNull _object) exitWith { diag_log ("HIVE-pv3: Vehicle does not exist: "+ str(_class)); };
 
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
@@ -25,7 +25,7 @@ _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
 [_object,_uid,_characterID,_class,_dir,_location,_donotusekey,_activatingPlayer] spawn {
-   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para","_donotusekey","_activatingPlayer"];
+   private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_donotusekey","_activatingPlayer","_countr","_objectID","_objectUID","_dir","_newobject","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty"];
 
    _object = _this select 0;
    _objectID 	= _object getVariable ["ObjectID","0"];
