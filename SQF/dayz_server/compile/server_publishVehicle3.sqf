@@ -34,7 +34,8 @@ _key call server_hiveWrite;
    _characterID = _this select 2;
    _class = _this select 3;
    _dir = _this select 4;
-   _location = _this select 5;
+   // _location = _this select 5;
+   _location = getPosATL _object;
    _donotusekey = _this select 6;
    _activatingPlayer = _this select 7;
 
