@@ -24,6 +24,7 @@
 * [ADDED] Added Dutch localization. @JoSchaap
 * [ADDED] Added Russian localization. @VeryBigBro
 * [ADDED] Added French localization. @th4z
+* [ADDED] Added German localization. @kraZey
 * [ADDED] Chernarus-Spawnselection and 1.8 GUI-Icons to the dayz_code.pbo - experienced server admins can use it. @Skaronator
 * [ADDED] Global variable if player is fresh spawned. Can used for custom script like in spawn-camera script ("freshSpawn = 0" - Normal Spawn / 1 - fresh spawn as zombie / 2 - fresh spawn as player) @Skaronator
 * [ADDED] Added 7 more male skins from Arma http://i.imgur.com/1b0n2Jy.png @axles @vbawol
