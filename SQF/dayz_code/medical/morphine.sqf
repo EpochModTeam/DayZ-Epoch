@@ -1,6 +1,9 @@
 // bleed.sqf
 
 private ["_started","_finished","_animState","_isMedic","_id","_num_removed","_unit"];
+
+disableserialization;
+
 _unit = (_this select 3) select 0;
 
 _unit setVariable ["hit_legs",0];

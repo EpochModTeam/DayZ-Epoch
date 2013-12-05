@@ -2,6 +2,8 @@
 
 private ["_started","_finished","_animState","_isMedic","_id","_unit"];
 
+disableserialization;
+
 _unit = (_this select 3) select 0;
 
 call fnc_usec_medic_removeActions;

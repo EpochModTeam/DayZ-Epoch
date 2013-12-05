@@ -1,9 +1,10 @@
 // bleed.sqf
 
 private ["_id","_unit","_num_removed"];
+
+disableserialization;
+
 _unit = (_this select 3) select 0;
-
-
 
 call fnc_usec_medic_removeActions;
 r_action = false;
