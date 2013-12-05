@@ -17,8 +17,7 @@ dayz_combat = 1;
 
 if (_ammo isKindOf "Melee") exitWith {
 	
-	
-	if(_weapon != "Chainsaw") then {
+	if(!(["Chainsaw",_weapon] call fnc_inString)) then {
 		_unit playActionNow "GestureSwing";
 		[1,1] call dayz_HungerThirst;
 	};
