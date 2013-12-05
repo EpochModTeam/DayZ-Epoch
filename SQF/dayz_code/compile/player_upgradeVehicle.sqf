@@ -99,7 +99,7 @@ if (_IsNearVehicle >= 1) then {
 						// Current charID
 						_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
 			
-						PVDZE_veh_Upgrade = [_object,[_dir,_location],_newclassname,true,_objectCharacterID,player];
+						PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player];
 						publicVariableServer  "PVDZE_veh_Upgrade";					
 
 						cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
