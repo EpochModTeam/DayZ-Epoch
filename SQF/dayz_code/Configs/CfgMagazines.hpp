@@ -245,7 +245,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
 		descriptionShort = "Unknown document";
 		weight = 0.1;
-		sfx = "document";
+		sfx = "document";		
 		class ItemActions
 		{
 			class Crafting
@@ -1506,6 +1506,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "20 liters of Mixed Gas.";
+		sfx = "refuel";
 		class ItemActions
 		{
 			class Crafting
@@ -1528,6 +1529,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "16 liters of Mixed Gas.";
+		sfx = "refuel";
 		class ItemActions
 		{
 			class Crafting
@@ -1536,8 +1538,8 @@ class CfgMagazines {
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
-				output[] = {{"CSGAS",1},{"ItemJerryMixed2",1}};
-				input[] = {{"ItemJerryMixed3",1}};
+				output[] = {{"CSGAS",1},{"ItemJerryMixed3",1}};
+				input[] = {{"ItemJerryMixed4",1}};
 			};
 		};
 	};
@@ -1550,6 +1552,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "12 liters of Mixed Gas.";
+		sfx = "refuel";
 		class ItemActions
 		{
 			class Crafting
@@ -1572,6 +1575,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "8 liters of Mixed Gas.";
+		sfx = "refuel";
 		class ItemActions
 		{
 			class Crafting
@@ -1594,6 +1598,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "4 liters of Mixed Gas.";
+		sfx = "refuel";
 		class ItemActions
 		{
 			class Crafting
