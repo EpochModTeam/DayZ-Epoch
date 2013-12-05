@@ -65,8 +65,6 @@ _key call server_hiveWrite;
 
 	if(!_done) exitWith { diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
 
-	_newobject = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
-
 	// add items from previous vehicle here
 	_weapons = 		getWeaponCargo _object;
 	_magazines = 	getMagazineCargo _object;
@@ -79,10 +77,10 @@ _key call server_hiveWrite;
 	// Remove marker
 	deleteVehicle _object;
 
+	_newobject = createVehicle [_class, _location, [], 0, "CAN_COLLIDE"];
+
 	// remove old vehicle from DB
 	[_objectID,_objectUID,_activatingPlayer] call server_deleteObj;
-
-	
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;
