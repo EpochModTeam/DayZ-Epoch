@@ -42,10 +42,10 @@ Contributors
 * facoptere - Extra Security - https://github.com/facoptere
 * Torndeco - Fixes - https://github.com/Torndeco
 * Armifer - Humanity changes.   - https://github.com/Armifer
-* VeryBigBro  Russian Translations - https://github.com/VeryBigBro
+* VeryBigBro - Russian localization - https://github.com/VeryBigBro
 * AVendettaForYou - Trader City Tavi - https://github.com/AVendettaForYou
-* th4z - French translations  - https://github.com/th4z
-* JoSchaap - dutch translations and some typo's  - https://github.com/JoSchaap
+* th4z - French localization  - https://github.com/th4z
+* JoSchaap - Dutch localization and some typo's  - https://github.com/JoSchaap
 * Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
 * aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
 * vos / Axe Cop - Area Maintenance and ideas - https://github.com/vos
