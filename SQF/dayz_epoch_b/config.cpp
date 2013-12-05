@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		dayzVersion = "1.0.2.92";
+		dayzVersion = "1.0.2.93";
 		requiredAddons[] = {"dayz_code"};
 	};
 };

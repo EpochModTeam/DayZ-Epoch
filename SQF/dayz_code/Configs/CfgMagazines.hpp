@@ -293,7 +293,7 @@ class CfgMagazines {
 		displayName = $STR_EPOCH_VEHUP_AVE;
 		model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_docup2_ca.paa";
-		descriptionShort = STR_EPOCH_VEHUP_AVE_DESC;
+		descriptionShort = $STR_EPOCH_VEHUP_AVE_DESC;
 		weight = 0.1;
 		sfx = "document";
 		class ItemActions

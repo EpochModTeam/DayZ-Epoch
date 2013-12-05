@@ -4117,22 +4117,22 @@
 		  <!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_145">
-		  <Original>Missing Parts after first check Item: %1 / %2</Original>
-		  <English>Missing Parts after first check Item: %1 / %2</English>
-		  <German>Fehlende Teile nach der ersten Überprüfung: %1 / %2</German>
+		  <Original>\n\nMissing Parts after first check Item: %1 / %2</Original>
+		  <English>\n\nMissing Parts after first check Item: %1 / %2</English>
+		  <German>\n\nFehlende Teile nach der ersten Überprüfung: %1 / %2</German>
 		  <!-- <Russian></Russian> -->
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Missende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
+		  <Dutch>\n\nMissende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_146">
-		  <Original>Missing %1 more of %2</Original>
-		  <English>Missing %1 more of %2</English>
-		  <German>Ihnen fehlt/fehlen %1 %2</German>
+		  <Original>\n\nMissing %1 more of %2</Original>
+		  <English>\n\nMissing %1 more of %2</English>
+		  <German>\n\nIhnen fehlt/fehlen %1 %2</German>
 		  <!-- <Russian></Russian> -->
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Je hebt nog %1 extra %2 nodig.</Dutch>
+		  <Dutch>\n\nJe hebt nog %1 extra %2 nodig.</Dutch>
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>

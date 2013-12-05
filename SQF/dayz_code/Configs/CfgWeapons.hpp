@@ -174,7 +174,26 @@ class CfgWeapons {
 		};
 		descriptionShort = "Horlite Chainsaw";
 	};
-
+	class ChainSawB : ChainSaw {
+		model = "\z\addons\dayz_epoch\models\chainsaw_B.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawB_CA.paa";
+		descriptionShort = "Horlite Chainsaw (Blue)";
+	};
+	class ChainSawG : ChainSaw {
+		model = "\z\addons\dayz_epoch\models\chainsaw_G.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawG_CA.paa";
+		descriptionShort = "Horlite Chainsaw (Green)";
+	};
+	class ChainSawP : ChainSaw {
+		model = "\z\addons\dayz_epoch\models\chainsaw_P.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawP_CA.paa";
+		descriptionShort = "Horlite Chainsaw (Pink)";
+	};
+	class ChainSawR : ChainSaw {
+		model = "\z\addons\dayz_epoch\models\chainsaw_R.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawR_CA.paa";
+		descriptionShort = "Horlite Chainsaw (Red)";
+	};
 
 
 

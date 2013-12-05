@@ -3155,9 +3155,9 @@ class CfgVehicles {
 		vehicleClass = "Survival";
 		displayName = "Grave DZE";
 		destrType = "DestructNo";
-		model = "\ca\buildings\Misc\hrobecek.p3d";
+		model = "\z\addons\dayz_epoch\models\skeleton.p3d";
 		transportMaxMagazines = 80;
-		transportMaxWeapons = 5;
+		transportMaxWeapons = 15;
 		transportMaxBackpacks = 1;
 	};
 };	

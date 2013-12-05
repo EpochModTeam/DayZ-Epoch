@@ -76,6 +76,10 @@ switch (_iClass) do
 		_index = _weights select _index;
 		_iItem = _itemTypes select _index;
 
+		if (_iItem == "Chainsaw") then {
+			_iItem = ["ChainSaw","ChainSawB","ChainSawG","ChainSawP","ChainSawR"] call BIS_fnc_selectRandom;
+		};
+
 		//Item is a weapon, add it and a random quantity of magazines
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];

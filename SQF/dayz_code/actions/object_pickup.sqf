@@ -27,10 +27,12 @@ player playActionNow "PutDown";
 if(_classname isKindOf "TrapBear") exitwith {DZE_CanPickup = true; deleteVehicle _holder;};
 
 if(_classname isKindOf "Bag_Base_EP1") exitwith {
+	
 	// diag_log("Picked up a bag: " + _classname);
 	if(_classname == typeOf _holder) then {
 		player action ["TakeBag", _holder];
 	};
+	DZE_CanPickup = true;
 };
 
 _obj = nearestObjects [(getPosATL player), [(typeOf _holder)], 5];
