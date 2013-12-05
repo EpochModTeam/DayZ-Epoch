@@ -112,7 +112,8 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_epoch\pictures\equip_oilmix_CA.paa";
 		count = 1; 
 		type = "256";
-		descriptionShort = ""; 
+		descriptionShort = "2-Stroke Engine Oil"; 
+		sfx = "refuel";
 		class ItemActions
 		{
 			class Crafting
