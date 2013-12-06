@@ -1,3 +1,4 @@
 == ROLLING CHANGE LOG 1.0.3.1 ==
 
 [FIXED] Incorporated DayZ CE skin changing routines to properly save melee magazines (chainsaw) and add back actions after skin changes. @dayz10k
+[FIXED] Proper stringtables (options) on SkinBase craftables (bandages, canvas) @dayz10k
