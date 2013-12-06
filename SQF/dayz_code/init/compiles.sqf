@@ -432,6 +432,15 @@ if (!isDedicated) then {
 		endLoadingScreen;
 	};
 
+	dayz_meleeMagazineCheck = {
+                private["_meleeNum","_magType"];
+                _magType =         ([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
+                _meleeNum = ({_x == _magType} count magazines player);
+                if (_meleeNum < 1) then {
+                        player addMagazine _magType;
+                };
+        };
+
 	dayz_originalPlayer = player;
 	
 	progressLoadingScreen 0.8;
