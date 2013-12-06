@@ -90,6 +90,13 @@ player allowDamage true;
 player addWeapon "Loot";
 player addWeapon "Flare";
 
+//melee check
+	_wpnType = primaryWeapon player;
+	_ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+		if (_ismelee == "true") then {
+        		call dayz_meleeMagazineCheck;
+		};
+
 sleep 0.1;
 
 if (!isNull _old) then {
