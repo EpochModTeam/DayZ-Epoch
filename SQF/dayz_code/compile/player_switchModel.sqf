@@ -209,3 +209,14 @@ diag_log str(getMagazineCargo unitBackpack _newUnit);
 	_playerObjName = format["player%1",_playerUID];
 	call compile format["%1 = player;",_playerObjName];
 	publicVariable _playerObjName;
+	
+//melee check
+        _wpnType = primaryWeapon player;
+        _ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+        if (_ismelee == "true") then {
+                call dayz_meleeMagazineCheck;
+        };
+        
+//reveal all near objects.
+        {player reveal _x} forEach (nearestObjects [getPosATL player, ["All"], 75]);
+        //All is arbitrary and will need to be changed to ["AllVehicles","WeaponHolder","tentStorage"] ++ others (stashes etc.)
