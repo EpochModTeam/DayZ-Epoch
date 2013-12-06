@@ -1,4 +1,4 @@
-private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood"];
+private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood","_wpnType"];
 disableSerialization;
 
 _messTimer = 0;
@@ -245,6 +245,16 @@ while {true} do {
 		_combatcontrol = 	_combatdisplay displayCtrl 1307;
 		_combatcontrol ctrlShow true;
 	};
+	
+	//Melee Weapons ammo fix
+        if(isNil {login_ammochecked}) then {
+                login_ammochecked = true;
+                 _wpnType = primaryWeapon player;
+                _ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+                if (_ismelee == "true") then {
+                        call dayz_meleeMagazineCheck;
+                };
+        };
 	
 	// Blood Effects
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, (r_player_blood/r_player_bloodTotal)],  [1, 1, 1, 0.0]];
