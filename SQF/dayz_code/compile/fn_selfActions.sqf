@@ -17,11 +17,16 @@ _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 
 // ---------------------------------------Maintain Area Start------------------------------------
     if (_canDo && (speed player <= 1) && (cursorTarget isKindOf "Plastic_Pole_EP1_DZ")) then {
+    //Remove the comment from line below after 1.0.3.1 bugfix only hotfix/patch
+    //as well as anything referencing s_player_plotpole_preview
+    //s_player_plotpole_preview = player addAction ["<t color=""#ffffff"">Preview Plot Radius</t>", "\z\addons\dayz_code\compile\object_showPlotRadius.sqf",[], 0, false, true, "", ""];
     if (s_player_maintain_area < 0) then {
     	s_player_maintain_area = player addAction ["<t color=""#ffffff"">Maintain Area</t>", "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
     	s_player_maintain_area_preview = player addAction ["<t color=""#ccffffff"">Maintain Area Preview</t>", "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
     };
     } else {
+    	//player removeAction s_player_plotpole_preview;
+    	//s_player_plotpole_preview = -1;
     	player removeAction s_player_maintain_area;
     	s_player_maintain_area = -1;
     	player removeAction s_player_maintain_area_preview;
