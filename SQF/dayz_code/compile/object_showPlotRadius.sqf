@@ -12,9 +12,7 @@ _BD_center = getPos _nearPlotPole;
 
 
  _objects = [];
-// center
-_object = createVehicleLocal ["Plastic_Pole_EP1_DZ", _BD_center, [], 0, "CAN_COLLIDE"];
-_objects set [0, _object];
+
 // circle
 for "_i" from 0 to 360 step (270 / BD_radius) do {
 	_location = [(_BD_center select 0) + ((cos _i) * BD_radius), (_BD_center select 1) + ((sin _i) * BD_radius), _BD_center select 2];
