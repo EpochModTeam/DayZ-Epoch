@@ -5376,6 +5376,16 @@
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_269b">
+		  <Original>Craft Canvas</Original>
+		  <English>Craft Canvas</English>
+		  <German>Craft Canvas</German>
+		  <Russian>Craft Canvas</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <!-- <Dutch></Dutch> -->
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_270">
 		  <Original>Craft Desert Net</Original>
 		  <English>Craft Desert Net</English>
