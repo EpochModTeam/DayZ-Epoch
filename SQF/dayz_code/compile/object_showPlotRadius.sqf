@@ -10,6 +10,8 @@ _nearPlotPole = nearestObject [player, "Plastic_Pole_EP1_DZ", 3];
 BD_radius = 30;
 _BD_center = getPos _nearPlotPole;
 
+player removeAction s_player_plotpole_preview;
+s_player_plotpole_preview = 1;
 
  _objects = [];
 
@@ -41,3 +43,5 @@ while {_previewCounter > 0} do {
         {
            deleteVehicle _x;
         } forEach _objects;
+
+s_player_plotpole_preview = 1;
