@@ -13,12 +13,12 @@ _BD_center = getPos _nearPlotPole;
 
  _objects = [];
 // center
-_object = createVehicle ["Plastic_Pole_EP1_DZ", _BD_center, [], 0, "CAN_COLLIDE"];
+_object = createVehicleLocal ["Plastic_Pole_EP1_DZ", _BD_center, [], 0, "CAN_COLLIDE"];
 _objects set [0, _object];
 // circle
 for "_i" from 0 to 360 step (270 / BD_radius) do {
 	_location = [(_BD_center select 0) + ((cos _i) * BD_radius), (_BD_center select 1) + ((sin _i) * BD_radius), _BD_center select 2];
-	_object = createVehicle ["WoodLargeWall_Preview_DZ", _location, [], 0, "CAN_COLLIDE"];
+	_object = createVehicleLocal ["WoodLargeWall_Preview_DZ", _location, [], 0, "CAN_COLLIDE"];
 	_dir = ((_BD_center select 0) - (_location select 0)) atan2 ((_BD_center select 1) - (_location select 1));
 	_object setDir _dir;
 	_objects set [count _objects, _object];
@@ -26,7 +26,7 @@ for "_i" from 0 to 360 step (270 / BD_radius) do {
 
 // top
   _location = [_BD_center select 0, _BD_center select 1, (_BD_center select 2) + BD_radius];
-  _object = createVehicle ["WoodFloor_Preview_DZ", _location, [], 0, "CAN_COLLIDE"];
+  _object = createVehicleLocal ["WoodFloor_Preview_DZ", _location, [], 0, "CAN_COLLIDE"];
   _objects set [count _objects, _object];
   
 
