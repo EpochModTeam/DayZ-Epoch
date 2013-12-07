@@ -11,7 +11,7 @@ s_player_maintain_area_preview = 1;
 
 _target = cursorTarget; // Plastic_Pole_EP1_DZ
 _objectClasses = ["ModularItems", "DZE_Housebase"] + DZE_ExtraMaintain;
-_range = 30; // set the max range for the maintain area
+_range = 50; // set the max range for the maintain area
 _objects = nearestObjects [_target, _objectClasses, _range];
 
 //filter to only those that have 10% damage
