@@ -1,4 +1,3 @@
-
 private ["_iItem","_iClass","_iPos","_radius","_item","_itemTypes","_index","_weights","_cntWeights","_qty","_max","_tQty","_canType","_mags","_dateNow"];
 
 _iItem = 	_this select 0;
@@ -64,9 +63,6 @@ switch (_iClass) do
 	};
 	case "cfglootweapon":
 	{
-		//Item is sigle, add 1 item from cfgloot
-		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-
 		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
