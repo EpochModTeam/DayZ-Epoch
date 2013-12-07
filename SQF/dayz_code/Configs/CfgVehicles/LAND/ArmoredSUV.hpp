@@ -264,7 +264,7 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 	armor = 80;
 	typicalCargo[] = {};
 	enableGPS = 1;  
-	transportMaxWeapons = 2012; 
+	transportMaxWeapons = 20; 
 	transportMaxMagazines = 400; 
 	transportmaxbackpacks = 10;
 	class Turrets: Turrets
