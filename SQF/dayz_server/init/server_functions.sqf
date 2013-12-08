@@ -724,6 +724,10 @@ server_timeSync = {
 // must spawn these 
 server_spawncleanDead = {
 	private ["_deathTime","_delQtyZ","_delQtyP","_qty","_allDead"];
+	
+	if(!isNil "DZE_DYN_cleandead") exitWith { };
+	DZE_DYN_cleandead = true;
+
 	_allDead = allDead;
 	_delQtyZ = 0;
 	_delQtyP = 0;
@@ -752,6 +756,7 @@ server_spawncleanDead = {
 		_qty = count _allDead;
 		diag_log (format["CLEANUP: Deleted %1 players and %2 zombies out of %3 dead",_delQtyP,_delQtyZ,_qty]);
 	};
+	DZE_DYN_cleandead = nil;
 };
 
 server_spawnCleanNull = {
@@ -773,7 +778,7 @@ server_spawnCleanNull = {
 
 server_spawnCleanFire = {
 	private ["_delQtyFP","_qty","_delQtyNull","_missionFires"];
-	_missionFires = allMissionObjects "Land_Fire_DZ";
+	_missionFires = entities "Land_Fire_DZ";
 	_delQtyFP = 0;
 	{
 		if (local _x) then {
@@ -791,7 +796,10 @@ server_spawnCleanFire = {
 
 server_spawnCleanLoot = {
 	private ["_created","_delQty","_nearby","_age","_keep","_qty","_missionObjs","_dateNow"];
-	_missionObjs =  allMissionObjects "ReammoBox";
+	if(!isNil "DZE_DYN_cleanLoot") exitWith { };
+	DZE_DYN_cleanLoot = true;
+
+	_missionObjs =  entities "ReammoBox";
 	_delQty = 0;
 	_dateNow = (DateToNumber date);
 	{
@@ -819,11 +827,14 @@ server_spawnCleanLoot = {
 		_qty = count _missionObjs;
 		diag_log (format["CLEANUP: Deleted %1 Loot Piles out of %2",_delQty,_qty]);
 	};
+	DZE_DYN_cleanLoot = nil;
 };
 
 server_spawnCleanAnimals = {
 	private ["_pos","_delQtyAnimal","_qty","_missonAnimals","_nearby"];
-	_missonAnimals = allMissionObjects "CAAnimalBase";
+	if(!isNil "DZE_DYN_cleanAnimals") exitWith { };
+	DZE_DYN_cleanLoot = true;
+	_missonAnimals = entities "CAAnimalBase";
 	_delQtyAnimal = 0;
 	{
 		if (local _x) then {
@@ -849,4 +860,5 @@ server_spawnCleanAnimals = {
 		_qty = count _missonAnimals;
 		diag_log (format["CLEANUP: Deleted %1 Animals out of %2",_delQtyAnimal,_qty]);
 	};
+	DZE_DYN_cleanLoot = nil;
 };

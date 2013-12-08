@@ -978,8 +978,8 @@ class FSM
        "0 fadeMusic 0.5;" \n
        "" \n
        "//Check mission objects" \n
-       "{ _id = [_x,0] spawn object_roadFlare } forEach (allMissionObjects ""RoadFlare"");" \n
-       "{ _id = [_x,1] spawn object_roadFlare } forEach (allMissionObjects ""ChemLight"");"/*%FSM</STATEINIT""">*/;
+       "{ _id = [_x,0] spawn object_roadFlare } forEach (entities ""RoadFlare"");" \n
+       "{ _id = [_x,1] spawn object_roadFlare } forEach (entities ""ChemLight"");"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1242,7 +1242,7 @@ class FSM
        "	if (!_fadeFire) then {" \n
        "		_nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
        "	};" \n
-       "} forEach allMissionObjects ""SpawnableWreck"";" \n
+       "} forEach entities ""SpawnableWreck"";" \n
        "" \n
        "// remove box " \n
        "[] spawn {" \n
