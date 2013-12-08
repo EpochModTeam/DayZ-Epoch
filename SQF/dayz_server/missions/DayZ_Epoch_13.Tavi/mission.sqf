@@ -1,21 +1,21 @@
 if (isServer) then {
 
   //Bandit Vendors
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\bandit.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\bandit.sqf";
   //Bilgrad City
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\bilgrad.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\bilgrad.sqf";
   //Branibor City
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\branibor.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\branibor.sqf";
   //Hero Vendors
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\hero.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\hero.sqf";
   //Lyepenstok City
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\lyepestok.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\lyepestok.sqf";
   //Misc. Vendors
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\miscvendors.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\miscvendors.sqf";
   //Sabina City
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\sabina.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\sabina.sqf";
   //Wholesalers
-  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\wholesalers.sqf";
+  call compile preProcessFileLineNumbers "z\addons\dayz_server\missions\DayZ_Epoch_13.Tavi\wholesalers.sqf";
 
 };
 
