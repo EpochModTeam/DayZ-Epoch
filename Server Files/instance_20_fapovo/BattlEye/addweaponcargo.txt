@@ -1,0 +1,2 @@
+1 "" !="Makarov" !="revolver_EP1" !="Colt1911"!="Winchester1866" !=LeeEnfield" !="AK_74" !="Crossbow" !"item"
+1 "Item" !="ItemKnife" !="ItemGps" !="ItemEtool" !="ItemMap" !="ItemCompass" !="ItemWatch !="ItemFlashlightRed" !="ItemFlashlight"

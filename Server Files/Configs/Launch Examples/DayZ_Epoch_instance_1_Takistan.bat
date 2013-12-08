@@ -1,0 +1,2 @@
+@echo off
+start "arma2" /min "Expansion\beta\arma2oaserver.exe" -port=2310 "-config=instance_1_takistan\config.cfg" "-cfg=instance_1_takistan\basic.cfg" "-profiles=instance_1_takistan" -name=instance_1_takistan "-mod=@DayZ_Epoch;@DayZ_Epoch_Server;" -cpuCount=4 -maxMem=1578 -exThreads=1

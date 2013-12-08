@@ -1,0 +1,13 @@
+MaxPing 369 
+// maximal delay to server before BattlEye autokicks
+MaxCreateVehiclePerInterval 72 1
+MaxSetPosPerInterval 2 1
+MaxSetDamagePerInterval 36 1
+MaxAddBackpackCargoPerInterval 12 1
+MaxAddMagazineCargoPerInterval 96 1
+MaxAddWeaponCargoPerInterval 24 1
+MaxDeleteVehiclePerInterval 48 1
+MaxAttachToPerInterval 4 1
+
+// above is in format of amount of entries (number) per timeinterval (seconds)
+// in dependency on maxplayers and gametype you might need increase/decrease the values

@@ -1,0 +1,4 @@
+5 "" !"FunctionsManager" !"Shot" !"z_doctor" !"z_hunter" !"z_new_villager1" !"z_new_villager2" !"z_new_villager3" !"z_new_villager4" !"z_new_worker1" !"z_new_worker2" !"z_new_worker3" !"z_new_worker4" !"z_policeman" !"z_priest" !"z_soldier_heavy" !"z_soldier_pilot" !"z_soldier" !"z_suit1" !"z_suit2" !"z_teacher" !"z_villager1" !"z_villager2" !"z_villager3" !"z_worker1" !"z_worker2" !"z_worker3" !"zZombie_Base" !"CSJ_GyroCover" !"CSJ_GyroP"
+1 ""
+
+// Don't ban for BattleFieldClearance, it's injected by cheaters to legit players in order to disable clientside security.

@@ -837,8 +837,7 @@ if(isset($_GET['tid'])){
 
 <div id="footer">
     <div class="container">
-        <p class="muted credit">Sponsored by <a href="http://eltexonline.com">ElTexOnline LLC</a> and <a
-                href="http://voicecommandcenter.com">VoiceCommandCenter.com</a>.</p>
+        <p class="muted credit"><a href="http://epochmod.com">DayZ Epoch</a></p>
     </div>
 </div>
 

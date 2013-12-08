@@ -1,0 +1,30 @@
+// For best results the application should be run on the same machine as the server application
+host=127.0.0.1
+port=2302
+password=changeme
+
+// The reason players should be kicked for
+reason=Not whitelisted!
+
+// The interval at which the player list should be checked (in milliseconds, 1 second = 1000)
+interval=60000
+
+// Decides how to store the whitelist
+// Possible values
+// sqlite (Recommended for use with 1 server)
+// mysql (Recommended to sync between more servers, requires a mysql server!)
+// file (Not recommended)
+mode=mysql
+
+// Only needed when using mysql, leave as it is when not using mysql
+sqlHost=127.0.0.1
+sqlPort=3306
+sqlDatabase=whitelist
+sqlTable=whitelist
+sqlUser=whitelist
+sqlPassword=1234576
+
+// Message options
+// Will show an ingame notification everytime a player joins
+showConnect=true
+connectMessage={0} joined the game!
