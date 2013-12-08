@@ -15,7 +15,7 @@ set arma2srvpath=C:\Program Files (x86)\Steam\SteamApps\common\Arma 2 Operation 
 :: This will be used in the case that you don't launch this script without the server param.
 :: Example: cfgdayz, US6, Chicago13, ect
 :: DEFAULTPROFILE
-set srvname=instance_7_Lingor
+set srvname=instance_11_chernarus
 
 :: Delete Original log files after they have been rotated? This keeps your logs more organized and saves space.
 :: This will not work unless the server is stopped first. This option works best set to 1 when using FireDaemon's Pre/Post Service tab
