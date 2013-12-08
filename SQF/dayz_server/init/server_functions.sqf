@@ -759,7 +759,7 @@ server_spawnCleanNull = {
 	_delQtyNull = 0;
 	{
 		if (isNull _x) then {
-			diag_log (format["CLEANUP: Purge performed on null OBJ: %1",_x]);
+			//diag_log (format["CLEANUP: Purge performed on null OBJ: %1",_x]);
 			_x call dayz_perform_purge;
 			sleep 0.025;
 			_delQtyNull = _delQtyNull + 1;
