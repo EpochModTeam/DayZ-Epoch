@@ -523,6 +523,11 @@ if(isServer) then {
 		DZE_BackpackGuard = true;
 	};
 	
+	if(isNil "DZE_CleanNull") then {
+		DZE_CleanNull = false;
+	};
+	
+	
 	//dayz_flyMonitor = [];		//used for monitor flies
 	//DZE_FlyWorkingSet = [];
 
