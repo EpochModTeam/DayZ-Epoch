@@ -214,6 +214,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		//Allow owners to delete modulars
                 if(_isModular and (dayz_characterID == _ownerID)) then {
                         if(_hasToolbox and "ItemCrowbar" in _itemsPlayer) then {
+                        	if(_cursorTarget in DZE_DoorsLocked) exitwith  {cutText ["You must remove the lock to delete this item!", "PLAIN DOWN"]; };
                                 _player_deleteBuild = true;
                         };
                 };
