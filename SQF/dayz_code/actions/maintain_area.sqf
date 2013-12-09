@@ -10,9 +10,18 @@ player removeAction s_player_maintain_area_preview;
 s_player_maintain_area_preview = 1;
 
 _target = cursorTarget; // Plastic_Pole_EP1_DZ
-_objectClasses = ["ModularItems", "DZE_Housebase"];
+_objectClasses = ["ModularItems", "DZE_Housebase"] + DZE_ExtraMaintain;
 _range = 50; // set the max range for the maintain area
 _objects = nearestObjects [_target, _objectClasses, _range];
+
+//filter to only those that have 10% damage
+_objects_filtered = [];
+{
+    if (damage _x >= 0.1) then {
+        _objects_filtered set [count _objects_filtered, _x];
+   };
+} forEach _objects;
+_objects = _objects_filtered;
 
 // TODO dynamic requirements based on used building parts?
 _count = count _objects;
