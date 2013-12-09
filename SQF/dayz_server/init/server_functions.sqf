@@ -598,21 +598,21 @@ dayz_recordLogin = {
 };
 
 dayz_perform_purge = {
-	
-	_this removeAllMPEventHandlers "mpkilled";
-	_this removeAllMPEventHandlers "mphit";
-	_this removeAllMPEventHandlers "mprespawn";
-	_this removeAllEventHandlers "FiredNear";
-	_this removeAllEventHandlers "HandleDamage";
-	_this removeAllEventHandlers "Killed";
-	_this removeAllEventHandlers "Fired";
-	_this removeAllEventHandlers "GetOut";
-	_this removeAllEventHandlers "GetIn";
-	_this removeAllEventHandlers "Local";
-	clearVehicleInit _this;
-	deleteVehicle _this;
-	deleteGroup (group _this);
-	//  _this = nil;
+	if(!isNull(_this)) then {
+		_this removeAllMPEventHandlers "mpkilled";
+		_this removeAllMPEventHandlers "mphit";
+		_this removeAllMPEventHandlers "mprespawn";
+		_this removeAllEventHandlers "FiredNear";
+		_this removeAllEventHandlers "HandleDamage";
+		_this removeAllEventHandlers "Killed";
+		_this removeAllEventHandlers "Fired";
+		_this removeAllEventHandlers "GetOut";
+		_this removeAllEventHandlers "GetIn";
+		_this removeAllEventHandlers "Local";
+		clearVehicleInit _this;
+		deleteVehicle _this;
+		deleteGroup (group _this);
+	};
 };
 
 dayz_perform_purge_player = {
@@ -620,44 +620,47 @@ dayz_perform_purge_player = {
 	private ["_countr","_backpack","_backpackType","_backpackWpn","_backpackMag","_objWpnTypes","_objWpnQty","_location","_dir","_holder","_weapons","_magazines"];
     diag_log ("Purging player: " + str(_this));	
 
-	_location = getPosATL _this;
-	_dir = getDir _this;
+	if(!isNull(_this)) then {
 
-	_holder = createVehicle ["GraveDZE", _location, [], 0, "CAN_COLLIDE"];
-	_holder setDir _dir;
-	_holder setPosATL _location;
+		_location = getPosATL _this;
+		_dir = getDir _this;
 
-	_holder enableSimulation false;
+		_holder = createVehicle ["GraveDZE", _location, [], 0, "CAN_COLLIDE"];
+		_holder setDir _dir;
+		_holder setPosATL _location;
 
-	_weapons = weapons _this;
-    _magazines = magazines _this;
+		_holder enableSimulation false;
 
-	// find backpack
-	if(!(isNull unitBackpack _this)) then {
-		_backpack = unitBackpack _this;
-		_backpackType = typeOf _backpack;
-		_backpackWpn = getWeaponCargo _backpack;
-		_backpackMag = getMagazineCargo _backpack;
+		_weapons = weapons _this;
+		_magazines = magazines _this;
 
-		_holder addBackpackCargoGlobal [_backpackType,1];
+		// find backpack
+		if(!(isNull unitBackpack _this)) then {
+			_backpack = unitBackpack _this;
+			_backpackType = typeOf _backpack;
+			_backpackWpn = getWeaponCargo _backpack;
+			_backpackMag = getMagazineCargo _backpack;
 
-		// add items from backpack 
-		_objWpnTypes = _backpackWpn select 0;
-		_objWpnQty = _backpackWpn select 1;
-		_countr = 0;
-		{
-			_holder addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
-			_countr = _countr + 1;
-		} forEach _objWpnTypes;
+			_holder addBackpackCargoGlobal [_backpackType,1];
 
-		// add backpack magazine items
-		_objWpnTypes = _backpackMag select 0;
-		_objWpnQty = _backpackMag select 1;
-		_countr = 0;
-		{
-			_holder addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
-			_countr = _countr + 1;
-		} forEach _objWpnTypes;
+			// add items from backpack 
+			_objWpnTypes = _backpackWpn select 0;
+			_objWpnQty = _backpackWpn select 1;
+			_countr = 0;
+			{
+				_holder addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
+				_countr = _countr + 1;
+			} forEach _objWpnTypes;
+
+			// add backpack magazine items
+			_objWpnTypes = _backpackMag select 0;
+			_objWpnQty = _backpackMag select 1;
+			_countr = 0;
+			{
+				_holder addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
+				_countr = _countr + 1;
+			} forEach _objWpnTypes;
+		};
 	};
 
 	// add weapons
@@ -688,9 +691,11 @@ dayz_perform_purge_player = {
 
 
 dayz_removePlayerOnDisconnect = {
-	_this removeAllMPEventHandlers "mphit";
-	deleteVehicle _this;
-	deleteGroup (group _this);
+	if(!isNull(_this)) then {
+		_this removeAllMPEventHandlers "mphit";
+		deleteVehicle _this;
+		deleteGroup (group _this);
+	};
 };
 
 server_timeSync = {
@@ -778,7 +783,7 @@ server_spawnCleanNull = {
 
 server_spawnCleanFire = {
 	private ["_delQtyFP","_qty","_delQtyNull","_missionFires"];
-	_missionFires = entities "Land_Fire_DZ";
+	_missionFires = allMissionObjects "Land_Fire_DZ";
 	_delQtyFP = 0;
 	{
 		if (local _x) then {
@@ -793,13 +798,12 @@ server_spawnCleanFire = {
 		diag_log (format["CLEANUP: Deleted %1 fireplaces out of %2",_delQtyNull,_qty]);
 	};
 };
-
 server_spawnCleanLoot = {
 	private ["_created","_delQty","_nearby","_age","_keep","_qty","_missionObjs","_dateNow"];
 	if(!isNil "DZE_DYN_cleanLoot") exitWith { };
 	DZE_DYN_cleanLoot = true;
 
-	_missionObjs =  entities "ReammoBox";
+	_missionObjs =  allMissionObjects "ReammoBox";
 	_delQty = 0;
 	_dateNow = (DateToNumber date);
 	{
@@ -833,7 +837,7 @@ server_spawnCleanLoot = {
 server_spawnCleanAnimals = {
 	private ["_pos","_delQtyAnimal","_qty","_missonAnimals","_nearby"];
 	if(!isNil "DZE_DYN_cleanAnimals") exitWith { };
-	DZE_DYN_cleanLoot = true;
+	DZE_DYN_cleanAnimals = true;
 	_missonAnimals = entities "CAAnimalBase";
 	_delQtyAnimal = 0;
 	{
@@ -860,5 +864,5 @@ server_spawnCleanAnimals = {
 		_qty = count _missonAnimals;
 		diag_log (format["CLEANUP: Deleted %1 Animals out of %2",_delQtyAnimal,_qty]);
 	};
-	DZE_DYN_cleanLoot = nil;
+	DZE_DYN_cleanAnimals = nil;
 };
