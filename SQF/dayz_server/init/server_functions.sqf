@@ -704,9 +704,9 @@ server_timeSync = {
 		
 		if(dayz_fullMoonNights) then {
 			//date setup
-			_year = _date select 0;
-			_month = _date select 1;
-			_day = _date select 2;
+			//_year = _date select 0;
+			//_month = _date select 1;
+			//_day = _date select 2;
 			_hour = _date select 3;
 			_minute = _date select 4;
 		
@@ -766,7 +766,7 @@ server_spawnCleanNull = {
 		if (isNull _x) then {
 			//diag_log (format["CLEANUP: Purge performed on null OBJ: %1",_x]);
 			_x call dayz_perform_purge;
-			sleep 0.025;
+			sleep 1;
 			_delQtyNull = _delQtyNull + 1;
 		};
 		sleep 0.001;
