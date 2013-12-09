@@ -1,26 +1,48 @@
-private ["_activatingplayerUID","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_objectID","_objectUID"];
+private ["_activatingplayerUID","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_objectID","_objectUID","_proceed","_activatingplayer"];
 //[dayz_characterID,_tent,[_dir,_location],"TentStorage"]
 _charID =		_this select 0;
 _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _class = 		_this select 3;
 _obj = 		_this select 4;
-_activatingplayerUID = 		_this select 5;
+_activatingplayer = 		_this select 5;
+_activatingplayerUID = 		(getPlayerUID _activatingplayer);
 
-_obj removeAllMPEventHandlers "MPKilled";
+_proceed = false;
 
-// Remove old object
-deleteVehicle _obj;
+_objectID = "0";
+_objectUID = "0";
 
-_objectID = 		_this select 5;
-_objectUID = 		_this select 6;
+if(!isNull(_obj)) then {
+	// Find objectID
+	_objectID 	= _obj getVariable ["ObjectID","0"];
+	// Find objectUID
+	_objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if(_objectID == "0" && _objectUID == "0") exitWith {diag_log ("Object not valid: "+ str(_object));};
+	_obj removeAllMPEventHandlers "MPKilled";
+	// Remove old object
+	deleteVehicle _obj;
+	
+	_proceed = true;
+};
 
-[_objectID,_objectUID,_activatingplayerUID] call server_deleteObj;
+if(isNull(_object)) then {
+	_proceed = false;
+};
+
+if(_objectID == "0" && _objectUID == "0") then { 
+	_proceed = false;
+} else {
+	[_objectID,_objectUID,_activatingplayer] call server_deleteObj;
+};
 
 _allowed = [_object, "Server"] call check_publishobject;
-if (!_allowed) exitWith { deleteVehicle _object; };
+if (!_allowed or !_proceed) exitWith { 
+	if(!isNull(_object)) then {
+		deleteVehicle _object; 
+	};
+	diag_log ("Invalid object swap by playerUID:"+ str(_activatingplayerUID));
+};
 
 // Publish variables
 _object setVariable ["CharacterID",_charID,true];
@@ -48,4 +70,4 @@ _object enableSimulation false;
 
 PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 
-//diag_log ("PUBLISH: Created " + (_class) + " with ID " + _uid);
+diag_log ("PUBLISH: " + str(_activatingPlayer) + " upgraded " + (_class) + " with ID " + str(_uid));

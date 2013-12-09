@@ -100,7 +100,7 @@ switch _option do {
 					// Set location
 					_object setPosATL _location;
 
-					PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID];
+					PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
 					publicVariableServer "PVDZE_obj_Swap";
 
 					player reveal _object;

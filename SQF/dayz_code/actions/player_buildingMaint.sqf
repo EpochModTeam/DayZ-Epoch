@@ -98,7 +98,7 @@ if (_proceed) then {
 		// Set location
 		_object setPosATL _location;
 
-		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID,(getPlayerUID player)];
+		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
 		publicVariableServer "PVDZE_obj_Swap";
 
 		cutText [format[(localize "str_epoch_player_144"),_text], "PLAIN DOWN", 5];

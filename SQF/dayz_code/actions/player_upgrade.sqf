@@ -164,7 +164,7 @@ if ((count _upgrade) > 0) then {
 				cutText [format[(localize "str_epoch_player_159"),_text], "PLAIN DOWN", 5];
 			};
 
-			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,_objectID,_objectUID,(getPlayerUID player)];
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
 			publicVariableServer "PVDZE_obj_Swap";
 
 			player reveal _object;
