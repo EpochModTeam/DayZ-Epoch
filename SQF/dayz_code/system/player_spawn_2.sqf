@@ -18,11 +18,11 @@ while {true} do {
 	_refObj = 	vehicle player;
 	_factor = 0.6;
 	_inVehicle = (_refObj != player);
-	_size = 	(sizeOf typeOf _refObj) * _factor;
+	// _size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
 	
-	dayz_areaAffect = _size;
+	// dayz_areaAffect = _size;
 	
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
@@ -150,17 +150,14 @@ while {true} do {
 		if(_radTimer > 5 AND _radTimer < 10) then {
 			_radsound = "radzone2";
 			_bloodloss = 20;
-			playSound "breath_1";
 		};
 		if(_radTimer > 10) then {
 			_radsound = "radzone3";
 			_bloodloss = 30;
-			addCamShake [2, 1, 25];
 		};
 		if(_radTimer > 15) then {
 			_radsound = "radzone4";
 			_bloodloss = 50;
-			[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
 		};
 		_result = r_player_blood - _bloodloss;
 		if (_result < 0) then {
@@ -168,7 +165,7 @@ while {true} do {
 		} else {
 			r_player_blood = _result;
 		};
-		
+		addCamShake [2, 1, 25];
 		[player,_radsound,0,true] call dayz_zombieSpeak;
 		_radTimer = _radTimer + 1;
 	} else {
@@ -177,7 +174,7 @@ while {true} do {
 	
 	// Health uptick when healty not thirsty or hungry
 	if (_foodVal >= 0.9 and _thirstVal >= 0.9) then {
-		if (!r_player_infected and !r_player_inpain and !r_player_injured) then {
+		if (!r_player_infected and !r_player_inpain and !r_player_injured and !DZE_InRadiationZone) then {
 			_result = r_player_blood + 10;
 			if (_result >= r_player_bloodTotal) then {
 				r_player_blood = r_player_bloodTotal;

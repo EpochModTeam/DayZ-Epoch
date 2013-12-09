@@ -614,7 +614,7 @@ if(!isDedicated) then {
 	dayz_clientPreload = 	false;
 	dayz_authed = 			false;
 	dayz_panicCooldown = 	0;
-	dayz_areaAffect =		3.5;
+	dayz_areaAffect =		2.5;
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
 	dayz_spawnDelay =		120;
