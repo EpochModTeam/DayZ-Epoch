@@ -1,5 +1,23 @@
 == ROLLING CHANGE LOG 1.0.3.1 ==
-[ADDED] In game clarification on modular removal: you cannot delete locked doors, you must remove the lock first.
+[ADDED] In game clarification on modular removal: you cannot delete locked doors, you must remove the lock first. @dayz10k
+[ADDED] Added updated setDamage exception to battleye scripts.txt. @vbawol
+[ADDED] Built in antihack enabled by default via mission init.sqf. @facoptre
 
 [FIXED] Incorporated DayZ CE skin changing routines to properly save melee magazines (chainsaw) and add back actions after skin changes. @dayz10k
 [FIXED] Proper stringtables (options) on SkinBase craftables (bandages, canvas) @dayz10k
+[FIXED] Optimized RoadFlare/chemlight code to use only one allMissionObjects call instead of two. @vbawol
+[FIXED] dayz_minpos was set to 0 for chernarus and should have been -1 or less. @vbawol
+[FIXED] Fixed some typos in Sahrani mission files. @vbawol
+[FIXED] Removed radar from GAZ Vodnik. @dayz10k
+[FIXED] Incorrect paths for tavi traders.
+[FIXED] Armored SUV DZ had incorrect max weapon count. @vbawol
+[FIXED] Fixed two createvehicle calls for weapon spawn_loot.@Torndeco
+
+[CHANGED] Null cleanup was not working as intended disabled bu default for further testing. @vbawol
+[CHANGED] Lower zombie attack range and made static at 2.5m. @vbawol
+[CHANGED] Restructured server files. @vbawol
+
+[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Special thanks to http://http://bmrf.me/ for hosting our development server. 
+
+[REMOVED] Many uneeded diag_log calls removed.
