@@ -117,8 +117,8 @@ switch _option do {
 				
 				cutText [format["You have maintained %1 building parts.", _count], "PLAIN DOWN", 5];
 				// uncomment the next 2 lines if you want logging of area maintenance to the server report file (Arma2OAserver.RPT)
-				maintainArea_log = [player, _target, _count];
-				publicVariableServer "maintainArea_log";
+				//maintainArea_log = [player, _target, _count];
+				//publicVariableServer "maintainArea_log";
 			} else {
 				{player addMagazine _x;} forEach _temp_removed_array;
 				cutText [format["Missing Parts after first check Item: %1 / %2",_removed_total,_tobe_removed_total], "PLAIN DOWN"];
