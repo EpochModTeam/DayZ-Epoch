@@ -2,6 +2,7 @@
 [ADDED] In game clarification on modular removal: you cannot delete locked doors, you must remove the lock first. @dayz10k
 [ADDED] Added updated setDamage exception to battleye scripts.txt. @vbawol
 [ADDED] Built in antihack enabled by default via mission init.sqf. @facoptre
+[ADDED] Added Czech Translations Credits: GeodarCZ, Brovns, Doomscythe
 
 [FIXED] Incorporated DayZ CE skin changing routines to properly save melee magazines (chainsaw) and add back actions after skin changes. @dayz10k
 [FIXED] Proper stringtables (options) on SkinBase craftables (bandages, canvas) @dayz10k
