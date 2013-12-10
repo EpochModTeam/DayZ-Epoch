@@ -17,7 +17,7 @@
 
 
 
-[CHANGED] Null cleanup was not working as intended disabled bu default for further testing. @vbawol
+[CHANGED] Null cleanup was not working as intended disabled by default needs further testing. @vbawol
 [CHANGED] Lower zombie attack range and made static at 2.5m. @vbawol
 [CHANGED] Restructured server files. @vbawol
 
