@@ -1,7 +1,7 @@
 respawn = "BASE";
 respawndelay = 5;
-onLoadMission= "DayZ Epoch Chernarus";
-OnLoadIntro = "Welcome to DayZ Epoch Chernarus";
+onLoadMission= "DayZ Epoch Sahrani";
+OnLoadIntro = "Welcome to DayZ Epoch Sahrani";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
