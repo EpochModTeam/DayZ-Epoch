@@ -50,6 +50,9 @@ Contributors
 * Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
 * aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
 * vos / Axe Cop - Area Maintenance and ideas - https://github.com/vos
+* GeodarCZ - Czech Translation, correction
+* Brovns - Czech Translation
+* Doomscythe - Czech Translation, correction
 
 --------------------------
 Special thanks
