@@ -15,8 +15,8 @@
 [FIXED] Armored SUV DZ had incorrect max weapon count. @vbawol
 [FIXED] Fixed two createvehicle calls for weapon spawn_loot.@Torndeco
 
-
-
+[CHANGED] Must take backpack off before you can change clothes.  @vbawol
+[CHANGED] Removed 10m check for nearby players when chaning clothes.  @vbawol
 [CHANGED] Null cleanup was not working as intended disabled by default needs further testing. @vbawol
 [CHANGED] Lower zombie attack range and made static at 2.5m. @vbawol
 [CHANGED] Restructured server files. @vbawol
