@@ -217,14 +217,14 @@ while {true} do {
 	// If in combat, display counter and restrict logout
 	_startcombattimer      = player getVariable["startcombattimer",0];
 	if (_startcombattimer == 1) then {
-		player setVariable["combattimeout", diag_tickTime + 30, true];
+		player setVariable["combattimeout", time + 30, true];
 		player setVariable["startcombattimer", 0, true];
 		dayz_combat = 1;
 	};
 
 	_combattimeout = player getVariable["combattimeout",0];
 	if (_combattimeout > 0) then {
-		_timeleft = _combattimeout - diag_tickTime;
+		_timeleft = _combattimeout - time;
 		if (_timeleft > 0) then {
 			//hintSilent format["In Combat: %1",round(_timeleft)];
 		} else {
