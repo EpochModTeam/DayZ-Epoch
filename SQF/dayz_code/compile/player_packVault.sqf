@@ -6,7 +6,7 @@ private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alread
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
-_activatingPlayer = getPlayerUID player;
+_activatingPlayer = player;
 
 _obj = _this;
 

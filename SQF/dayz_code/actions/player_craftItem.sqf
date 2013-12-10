@@ -1,6 +1,6 @@
 /*
 	DayZ Epoch Crafting 0.3
-	Made for DayZ Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+	Made for DayZ Epoch and Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	Thanks to thevisad for help with the spawn call fixes.
 
 USAGE EXAMPLE:
