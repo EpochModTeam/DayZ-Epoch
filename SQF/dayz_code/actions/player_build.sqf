@@ -99,7 +99,7 @@ if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
 	_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable");
 };
 
-_requireplot = 1;
+_requireplot = DZE_requireplot;
 if(isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
 	_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");
 };
