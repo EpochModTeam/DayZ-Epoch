@@ -353,7 +353,7 @@
 			<Spanish>Necesitas %1 para reparar esto.</Spanish>
 			<Dutch>Je hebt een %1 nodig om dit te repareren</Dutch>
 			<French>Vous avez besoin d'un(e) %1 pour réparer ceci.</French>
-			<Czech>Potřebuješ %1 abys tohle opravil.</Czech>
+			<Czech>Potřebuješ %1, abys tohle opravil.</Czech>
 		</Key>
 		<Key ID="str_player_04">
 			<Original>You have successfully attached the %1 on the %2</Original>
@@ -413,7 +413,7 @@
 			<Spanish>Llenaste %2 bidones con combustible</Spanish>
 			<Dutch>Je hebt %1 jerrycans met brandstof gevuld</Dutch>
 			<French>Vous avez rempli %1 jerrican(s) avec du carburant.</French>
-			<Czech> Naplnil jsi palivem %1 kanystrů</Czech>
+			<Czech>Naplnil jsi palivem %1 kanystrů</Czech>
 		</Key>
 		<Key ID="str_player_10">
 			<Original>You have no empty jerry cans</Original>
@@ -433,7 +433,7 @@
 			<Spanish>Necesitas sentarte en el asiento del conductor antes de arreglar este vehículo.</Spanish>
 			<Dutch>Je dient in de bestuurdersstoel zitten, voordat je dit voertuig kunt repareren</Dutch>
 			<French>Vous devez vous asseoir à la place du conducteur avant de pouvoir réparer ce véhicule.</French>
-			<Czech>Je nutné si nejdříve sednout na místo řidiče abys mohl opravit toto vozidlo.</Czech>
+			<Czech>Je nutné si nejdříve sednout na místo řidiče, abys mohl opravit toto vozidlo.</Czech>
 		</Key>
 		<Key ID="str_player_12">
 			<Original>Please go to Player Selection Screen to continue in game</Original>
@@ -453,7 +453,7 @@
 			<Spanish>Esperando a que el personaje sea creado</Spanish>
 			<Dutch>Wachten tot het personage is aangemaakt</Dutch>
 			<French>En attente de la création du personnage</French>	
-			<Czech>Čekám na vytvoření postavy.</Czech>	
+			<Czech>Čekám na vytvoření postavy</Czech>	
 		</Key>
 		<Key ID="str_player_14">
 			<Original>Retrying to Authenticate</Original>
@@ -573,7 +573,7 @@
 			<Spanish>\n\nNo puedes hacer esto mientras estás en el agua.</Spanish>
 			<Dutch>\n\nJe kunt deze actie niet vanuit het water uitvoeren</Dutch>
 			<French>\n\nVous ne pouvez pas faire cela lorsque vous êtes dans l'eau.</French>
-			<Czech>\n\nTuto akci nelze provést pokud jste ve vodě.</Czech>
+			<Czech>\n\nTuto akci nelze provést, pokud jste ve vodě.</Czech>
 		</Key>
 		<Key ID="str_player_27">
 			<Original>You have applied a heatpack to your body successfully.</Original>
@@ -583,7 +583,7 @@
 			<Spanish>Aplicaste correctamente un paquete de calor a tu cuerpo.</Spanish>
 			<Dutch>Je hebt met succes een warmtepleister op je lichaam geplakt.</Dutch>
 			<French>Vous avez utilisé un heatpack avec succès.</French>
-			<Czech>Aplikace heatpacku proběhla úspěšně.</Czech>
+			<Czech>Aplikace zahřívacího sáčku proběhla úspěšně.</Czech>
 		</Key>
 		<Key ID="str_player_28">
 			<Original>You cannot reload that combination, you need %1 %2 magazines.</Original>
@@ -603,7 +603,7 @@
 			<Spanish>Recargaste correctamente %1 cargadores de %2.</Spanish>
 			<Dutch>Je hebt met succes %1 %2 magazijnen herladen.</Dutch>
 			<French>Vous avez rechargé %1 %2 chargeur(s) avec succès.</French>
-			<Czech>Úspěšně jsi nabil zásobníky %1 %2. </Czech>
+			<Czech>Úspěšně jsi nabil zásobníky %1 %2.</Czech>
 		</Key>
 		<Key ID="str_player_30">
 			<Original>\n\n%1 must be on your person to move it to/from your toolbelt.</Original>
@@ -613,7 +613,7 @@
 			<Spanish>\n\n%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
 			<Dutch>\n\nJe moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
 			<French>\n\n%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
-			<Czech>\n\n%1 must be on your person to move it to/from your toolbelt.</Czech>
+			<Czech>\n\n%1 musí být vybaveno, aby jste ho mohli přesunout do/z vašeho opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="str_player_31">
 			<Original>\n\n%1 must be in your main inventory to %2 it.</Original>
@@ -633,7 +633,7 @@
 			<Spanish>\n\nDebe estar cerca de una roca de mineral de la mina.</Spanish>
 			<Dutch>\n\nJe moet dicht bij een rots zijn om erts te mijnen.</Dutch>
 			<French>\n\nVous devez être à proximité d'une roche à la mine.</French>
-			<Czech>\n\nMusíte být blízko k rocku až dolu rudy.</Czech>
+			<Czech>\n\nMusíte být blízko kamenů k těžení rudy.</Czech>
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<Original>%1 is already being looted by someone else.</Original>
@@ -679,7 +679,7 @@
 			<Spanish>Otro jugador cerca, solo un jugador debe estar a menos de 5 metros de la mochila para tomarla</Spanish>
 			<Dutch>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</Dutch>
 			<French>Un autre joueur se trouve à proximité. Un seul joueur peut fouiller un sac dans un rayon de 5 mètres.</French>
-			<Czech>Poblíž je další hráč. Pouze jeden hráč musí být v rozsahu 5 metrů aby jste mohli batoh zvednout</Czech>
+			<Czech>Poblíž je další hráč. Pouze jeden hráč musí být v rozsahu 5 metrů, abyste mohli batoh zvednout</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_5">
 			<English>Another player is nearby, only one player can be near to perform this action</English>
@@ -688,7 +688,7 @@
 			<Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción</Spanish>
 			<Dutch>Another player is nearby, only one player can be near to perform this action</Dutch>
 			<French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action</French>
-			<Czech>Dalším hráčem je v blízkosti, může být jeden hráč blízko k provedení této akce</Czech>
+			<Czech>Další hráč je poblíž, pouze jeden hráč může být blízko k provedení této akce</Czech>
 		</Key>
 		<Key ID="str_player_beingpacked">
 			<Original>That tent is already being packed.</Original>
@@ -698,7 +698,7 @@
 			<Spanish>Esta carpa ya fue embalada.</Spanish>
 			<Dutch>Deze tent wordt momenteel al ingepakt.</Dutch>
 			<French>Cette tente est déjà en train d'être repliée.</French>
-			<Czech>Stan už byl zabalen.</Czech>
+			<Czech>Stan se již balí.</Czech>
 		</Key>
 		<Key ID="str_player_studybody">
 			<Original>His name was %1, it appears he died from %2</Original>
@@ -708,7 +708,7 @@
 			<Spanish>Su nombre era %1, y aparentemente murió por %2</Spanish>
 			<Dutch>Zijn naam was %1, het lijkt dat hij is gestorven aan %2</Dutch>
 			<French>Son nom était %1, il semble qu'il soit mort d' %2</French>
-			<Czech>Jeho jméno bylo %1, vypadá to, že je mrtvý od %2</Czech>
+			<Czech>Jeho jméno bylo %1, vypadá to, že je mrtvý kvůli %2</Czech>
 		</Key>
 		<Key ID="str_death_shothead">
 			<Original>a gunshot to the head</Original>
@@ -718,7 +718,7 @@
 			<Spanish>un disparo en la cabeza</Spanish>
 			<Dutch>een kogel door zijn hoofd</Dutch>
 			<French>une balle dans la tête</French>
-			<Czech>střela do hlavy</Czech>
+			<Czech>střele do hlavy</Czech>
 		</Key>
 		<Key ID="str_death_shotheavy">
 			<Original>a high calibre gunshot</Original>
@@ -728,7 +728,7 @@
 			<Spanish>un disparo de alto calibre</Spanish>
 			<Dutch>een schot van hoog kaliber</Dutch>
 			<French>un tir de gros calibre</French>
-			<Czech>vysoko rážní střelba</Czech>
+			<Czech>vysoko rážní střelbě</Czech>
 		</Key>
 		<Key ID="str_death_bled">
 			<Original>blood loss</Original>
@@ -738,7 +738,7 @@
 			<Spanish>perdida de sangre</Spanish>
 			<Dutch>bloedverlies</Dutch>
 			<French>une hémorragie</French>
-			<Czech>krev ztracena</Czech>
+			<Czech>ztrátě krve</Czech>
 		</Key>
 		<Key ID="str_death_dehyd">
 			<Original>dehydration</Original>
@@ -748,7 +748,7 @@
 			<Spanish>deshidratación</Spanish>
 			<Dutch>uitdroging</Dutch>
 			<French>une déshydratation</French>
-			<Czech>dehydratace</Czech>
+			<Czech>dehydrataci</Czech>
 		</Key>
 		<Key ID="str_death_starve">
 			<Original>starvation</Original>
@@ -768,7 +768,7 @@
 			<Spanish>huir de combate</Spanish>
 			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
 			<French>une déco en combat</French>
-			<Czech>odhlášen z boje</Czech>
+			<Czech>odhlášení z boje</Czech>
 		</Key>
 		<Key ID="str_death_unknown">
 			<Original>an unknown cause</Original>
@@ -778,7 +778,7 @@
 			<Spanish>causas desconocidas</Spanish>
 			<Dutch>een onbekende oorzaak</Dutch>
 			<French>une cause inconnue</French>
-			<Czech>neznámá příčina</Czech>
+			<Czech>neznámé příčiny</Czech>
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<Original>Cannot Abort near another player!</Original>
@@ -788,7 +788,7 @@
 			<Spanish>¡No puedes abortar cerca de otros jugadores!</Spanish>
 			<Dutch>Je kunt niet uitloggen in de buurt van een speler!</Dutch>
 			<French>Vous ne pouvez pas vous déconnecter a proximité d'autres joueurs</French>
-			<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
+			<Czech>Hru nelze opustit, pokud jste blízko jiného hráče!</Czech>
 		</Key>
 		<Key ID="str_abort_zedsclose">
 			<Original>Can Abort in %1</Original>
@@ -818,7 +818,7 @@
 			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
 			<Dutch>De pijl is gebroken en kan niet meer opnieuw gebruikt worden</Dutch>
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
-			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
+			<Czech>Šipka byla zlomena a nemůže být znovu použita</Czech>
 		</Key>
 	</Package>
 	<Package name="ui">
@@ -930,7 +930,7 @@
 			<Spanish>Arrojar</Spanish>
 			<Dutch>Werp</Dutch>
 			<French>Jeter</French>
-			<Czech>Throw</Czech>
+			<Czech>Hodit</Czech>
 		</Key>  
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
@@ -1030,7 +1030,7 @@
 			<Spanish>Dar Epinefrina</Spanish>
 			<Dutch>Adrenaline injecteren</Dutch>
 			<French>Donner de l'Epinéphrine</French>
-			<Czech>Dát Epinefrin</Czech>
+			<Czech>Dát Adrenalin</Czech>
 		</Key>
 		<Key ID="str_actions_medical_06">
 			<Original>Give Morphine</Original>
@@ -1330,7 +1330,7 @@
 			<Spanish>Perro: Rastrear</Spanish>
 			<Dutch>Hond: Zoek</Dutch>
 			<French>Chien: Pister</French>
-			<Czech>Psí příkaz: stopuj</Czech>
+			<Czech>Psí příkaz: Stopuj</Czech>
 		</Key>
 		<Key ID="str_actions_barkdog">
 			<Original>Dog: Bark</Original>
@@ -1562,7 +1562,7 @@
 			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookt vlees om jezelf in leven te houden.</Dutch>
 			<French>La Viande Cuite peut être consommée.</French>
-			<Czech>Upečené maso může být snězeno abyste přežili.</Czech>
+			<Czech>Upečené maso může být snězeno, abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_1">						
 			<Original>Cooked Mutton</Original>						
@@ -1582,7 +1582,7 @@
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookt lamsvlees om jezelf in leven te houden.</Dutch>
 			<French>La Viande de Chèvre peut être consommée.</French>
-			<Czech>Upečené jehněčí může být snězeno abyste přežili.</Czech>
+			<Czech>Upečené jehněčí může být snězeno, abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_2">						
 			<Original>Chicken Leg</Original>						
@@ -1602,7 +1602,7 @@
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookte kippenpoot om jezelf in leven te houden.</Dutch>
 			<French>La cuisse de poulet peut être consommée.</French>
-			<Czech>Kuřecí noha může být snězena abyste přežili.</Czech>
+			<Czech>Kuřecí noha může být snězena, abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_3">						
 			<Original>Rabbit</Original>						
@@ -1622,7 +1622,7 @@
 			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookt konijn om jezelf in leven te houden.</Dutch>
 			<French>Le Lapin peut être consommé.</French>
-			<Czech>Králík může být snězen abyste přežili.</Czech>
+			<Czech>Králík může být snězen, abyste přežili.</Czech>
 		</Key>	
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_4">						
 			<Original>Bacon</Original>						
@@ -1642,7 +1642,7 @@
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Gekookt spek om jezelf in leven te houden.</Dutch>
 			<French>Le Bacon peut être consommé.</French>
-			<Czech>Slanina může býst snězena abyste přežili.</Czech>
+			<Czech>Slanina může být snězena, abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_5">						
 			<Original>Angel Cookies</Original>						
@@ -1682,7 +1682,7 @@
 			<Spanish>Churrasco que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Rundersteak om jezelf in leven te houden.</Dutch>
 			<French>Le Bifteck peut être consommé.</French>
-			<Czech>Biftek může být snězen abyste přežili.</Czech>
+			<Czech>Biftek může být snězen, abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">						
 			<Original>Water Bottle (Boiled)</Original>						
@@ -1752,7 +1752,7 @@
 			<Spanish>Gaseosa (Té Helado)</Spanish>
 			<Dutch>Frisdrank (ijsthee)</Dutch>
 			<French>Soda (Iced Tea)</French>
-			<Czech>Soda (Iced Tea)</Czech>
+			<Czech>Soda (Ledový Čaj)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">						
 			<Original>A clean, unopened can of Long's island iced tea.</Original>
@@ -1762,7 +1762,7 @@
 			<Spanish>Una limpia y cerrada lata de té helado Long's island.</Spanish>
 			<Dutch>Een fris, ongeopend blikje ijsthee.</Dutch>
 			<French>Une canette intacte d'iced tea de Long's Island.</French>
-			<Czech>Čistá a ještě neotevřená plechovka ledového čaje Long's island.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka ledového čaje Long's Island.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">						
 			<Original>Soda (Grape)</Original>
@@ -1772,7 +1772,7 @@
 			<Spanish>Gaseosa (Grape)</Spanish>
 			<Dutch>Frisdrank (Druivensap)</Dutch>
 			<French>Soda (Grape)</French>
-			<Czech>Soda (Grape)</Czech>
+			<Czech>Soda (Grep)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3">						
 			<Original>A clean, unopened can of Smasht grape soda.</Original>
@@ -1802,7 +1802,7 @@
 			<Spanish>Una limpia y cerrada lata de gaseosa Dr. Wasteland.</Spanish>
 			<Dutch>Een fris, ongeopend blikje Dr. Wasteland Cola.</Dutch>
 			<French>Une canette intacte de soda "Dr. Wasteland".</French>
-			<Czech>Čistá a ještě neotevřená plechovka sodovky Dr. Wateland.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka sodovky Dr. Wasteland.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">						
 			<Original>Soda (Orange)</Original>
@@ -1812,7 +1812,7 @@
 			<Spanish>Gaseosa (Orange)</Spanish>
 			<Dutch>Frisdrank (Sinas)</Dutch>
 			<French>Soda (Orange)</French>
-			<Czech>Soda (Orange)</Czech>
+			<Czech>Soda (Pomeranč)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5">						
 			<Original>A clean, unopened can of Franka orange soda.</Original>
@@ -1872,7 +1872,7 @@
 			<Spanish>Cerveza de Raíz</Spanish>
 			<Dutch>Bier (Root bier)</Dutch>
 			<French>Bière (Root Beer)</French>
-			<Czech>Pivo (Root Beer)</Czech>
+			<Czech>Pivo (Kořeněné)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8">						
 			<Original>A clean, unopened can of LVG root beer.</Original>
@@ -1882,7 +1882,7 @@
 			<Spanish>Una limpia y cerrada lata de cerveza de raíz LVG.</Spanish>
 			<Dutch>Een fris, ongeopend blikje root bier.</Dutch>
 			<French>Une canette intacte de bière "LVG root".</French>
-			<Czech>Čistá a ještě neotevřená plechovka piva LVG root.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka kořeněného piva LVG.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9">						
 			<Original>Soda</Original>
@@ -1972,7 +1972,7 @@
 			<Spanish>MRE</Spanish>
 			<Dutch>MRE (Rantsoen)</Dutch>
 			<French>MRE</French>
-			<Czech>MRE</Czech>
+			<Czech>Vojenská dávka potravin</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_MRE">						
 			<Original>Meal Ready-to-Eat</Original>
@@ -1982,7 +1982,7 @@
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Militair Rantsoen klaar-om-op-te-eten</Dutch>
 			<French>Repas prêt à manger</French>
-			<Czech>Meal Ready-to-Eat</Czech>
+			<Czech>Vojenská dávka potravin je ideální pro dlouhodobé skladování. Je také ideální nejenom pro vojáky.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">						
 			<Original>Pistachios</Original>
@@ -1992,7 +1992,7 @@
 			<Spanish>Pistachos</Spanish>
 			<Dutch>Pistache nootjes</Dutch>
 			<French>Pistaches</French>
-			<Czech>Pistachios</Czech>
+			<Czech>Pistácie</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_PISTACHIO">						
 			<Original>A pack of pistachios, roasted and salted.</Original>
@@ -2002,7 +2002,7 @@
 			<Spanish>Una caja de pistachos, tostados y salados.</Spanish>
 			<Dutch>A pakje pistasche nootjes, geroosterd en zout.</Dutch>
 			<French>Un paquet de pistaches, grillées et salées.</French>
-			<Czech>A pack of pistachios, roasted and salted.</Czech>
+			<Czech>Balíček pistácií, pražené a solené.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_NUTMIX">						
 			<Original>Trail Mix</Original>
@@ -2012,7 +2012,7 @@
 			<Spanish>CerealMix</Spanish>
 			<Dutch>Ontbijtgranen</Dutch>
 			<French>Assortiment de fruits secs</French>
-			<Czech>Trail Mix</Czech>
+			<Czech>Cestovní mix</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_NUTMIX">						
 			<Original>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Original>
@@ -2022,7 +2022,7 @@
 			<Spanish>Una cada de CerealMix Original con 12 frutas y anillos diferentes.</Spanish>
 			<Dutch>Een pak ontbijtgranen, met 12 verschillende fruit en nootsoorten.</Dutch>
 			<French>Un paquet d'assortiment de fruits secs "Papa", avec 12 fruits et noix différents.</French>
-			<Czech>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Czech>
+			<Czech>Balíček 12 různých ovocí a oříšků zabalené do tohoto Cestovního mixu od firmy Papa.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">						
 			<Original>Can (Beans)</Original>
@@ -2032,7 +2032,7 @@
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
-			<Czech>Can (Beans)</Czech>
+			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF">						
 			<Original>A clean, unopened can of Griff's black beans.</Original>
@@ -2042,7 +2042,7 @@
 			<Spanish>Una limpia y cerrada lata de frijoles negros "Griff".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Griff's zwarte bonen.</Dutch>
 			<French>Une boîte intacte d'haricots noirs "Griff".</French>
-			<Czech>A clean, unopened can of Griff's black beans.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka Griffových černých fazolí.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2052,7 +2052,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF_EMPTY">						
 			<Original>An empty can of Griff's black beans.</Original>
@@ -2062,7 +2062,7 @@
 			<Spanish>Una lata vacia de frijoles negros "Griff".</Spanish>
 			<Dutch>Een leeg blikje Griff's zwarte bonen.</Dutch>
 			<French>Une boîte vide d'haricots noirs "Griff".</French>
-			<Czech>An empty can of Griff's black beans.</Czech>
+			<Czech>Prázdná plechovka Griffových černých fazolí.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY">						
 			<Original>Can (Peaches)</Original>
@@ -2072,7 +2072,7 @@
 			<Spanish>Lata de Duraznos</Spanish>
 			<Dutch>Blikje (Perzikken)</Dutch>
 			<French>Boîte (Pêches)</French>
-			<Czech>Can (Peaches)</Czech>
+			<Czech>Plechovka (Broskve)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY">						
 			<Original>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Original>
@@ -2082,7 +2082,7 @@
 			<Spanish>Una limpia y cerrada lata de duraznos en rodajas "Bad Guy".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Bad Guy's perzik plakjes.</Dutch>
 			<French>Une boîte intacte de pêches en morceaux de "Bad Guy".</French>
-			<Czech>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka dokonalých kousků broskví od firmy Bad Guy.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2092,7 +2092,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY_EMPTY">						
 			<Original>An empty can of Bad Guy's ubiquitous peach slices.</Original>
@@ -2102,7 +2102,7 @@
 			<Spanish>Una lata vacía de duraznos en rodajas "Bad Guy".</Spanish>
 			<Dutch>Een leeg blikje Bad Guy's perzik plakjes.</Dutch>
 			<French>Une boîte vide de pêches en morceaux "Bad Guy".</French>
-			<Czech>An empty can of Bad Guy's ubiquitous peach slices.</Czech>
+			<Czech>Prázdná plechovka dokonalých kousků broskví od firmy Bad Guy.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY">						
 			<Original>Can (Ravioli)</Original>
@@ -2112,7 +2112,7 @@
 			<Spanish>Lata de Ravioles</Spanish>
 			<Dutch>Blikje (Ravioli)</Dutch>
 			<French>Boîte (Raviolis)</French>
-			<Czech>Can (Ravioli)</Czech>
+			<Czech>Plechovka (Ravioli)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY">						
 			<Original>A clean, unopened can of Chef Boneboy ravioli.</Original>
@@ -2122,7 +2122,7 @@
 			<Spanish>Una limpia y cerrada lata de ravioles "Chef Boneboy".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Chef Boneboy ravioli.</Dutch>
 			<French>Une boîte intacte de raviolis "Chef Boneboy".</French>
-			<Czech>A clean, unopened can of Chef Boneboy ravioli.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka raviol šéfkuchaře Boneboyeho.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2132,7 +2132,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY_EMPTY">						
 			<Original>An empty can of Chef Boneboy ravioli.</Original>
@@ -2142,7 +2142,7 @@
 			<Spanish>Una lata vacía de ravioles "Chef Boneboy".</Spanish>
 			<Dutch>Een leeg blikje Chef Boneboy ravioli.</Dutch>
 			<French>Une boîte vide de raviolis "Chef Boneboy".</French>
-			<Czech>An empty can of Chef Boneboy ravioli.</Czech>
+			<Czech>Prázdná plechovka raviol šéfkuchaře Boneboyeho.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CORN">						
 			<Original>Can (Corn)</Original>
@@ -2152,7 +2152,7 @@
 			<Spanish>Lata de Maíz</Spanish>
 			<Dutch>Blikje (Mais)</Dutch>
 			<French>Boîte (Maïs)</French>
-			<Czech>Can (Corn)</Czech>
+			<Czech>Plechovka (Kukuřice)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN">						
 			<Original>A clean, unopened can of Conrad's whole kernel corn.</Original>
@@ -2162,7 +2162,7 @@
 			<Spanish>Una limpia y cerrada lata de granos de maíz enteros "Conrad".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Conrad's mais op kolf.</Dutch>
 			<French>Une boîte intacte de maïs en grains "Conrad".</French>
-			<Czech>A clean, unopened can of Conrad's whole kernel corn.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka Conrádových celojádrových kukuřic.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CORN_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2172,7 +2172,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN_EMPTY">						
 			<Original>An empty can of Conrad's whole kernel corn.</Original>
@@ -2182,7 +2182,7 @@
 			<Spanish>Una lata vacía de granos de maíz enteros "Conrad".</Spanish>
 			<Dutch>Een leeg blikje Conrad's mais op kolf.</Dutch>
 			<French>Une boîte vide de maïs en grains "Conrad".</French>
-			<Czech>An empty can of Conrad's whole kernel corn.</Czech>
+			<Czech>Prázdná plechovka Conrádových celojádrových kukuřic.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CURGON">						
 			<Original>Can (Soup)</Original>
@@ -2192,7 +2192,7 @@
 			<Spanish>Lata de Sopa</Spanish>
 			<Dutch>Blikje (Soep)</Dutch>
 			<French>Boîte (Soupe)</French>
-			<Czech>Can (Soup)</Czech>
+			<Czech>Plechovka (Polévka)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON">						
 			<Original>A clean, unopened can of Curgon's chicken noodle soup.</Original>
@@ -2202,7 +2202,7 @@
 			<Spanish>Una limpia y cerrada lata de sopa de pollo con fideos "Curgon".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Curgon's kip met noedels soep.</Dutch>
 			<French>Une boîte intacte de soupe de nouilles au poulet "Curgon".</French>
-			<Czech>A clean, unopened can of Curgon's chicken noodle soup.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka Curgonovy kuřecí polévky s nudlemi.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CURGON_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2212,7 +2212,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON_EMPTY">						
 			<Original>An empty can of Curgon's chicken noodle soup.</Original>
@@ -2222,7 +2222,7 @@
 			<Spanish>Una lata vacía de sopa de pollo con fideos "Curgon".</Spanish>
 			<Dutch>Een leeg blikje Curgon's kip met noedels soep.</Dutch>
 			<French>Une boîte vide de soupe de nouilles au poulet "Curgon".</French>
-			<Czech>An empty can of Curgon's chicken noodle soup.</Czech>
+			<Czech>Prázdná plechovka Curgonovy kuřecí polévky s nudlemi.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DEMON">						
 			<Original>Can (Beans)</Original>
@@ -2232,7 +2232,7 @@
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
-			<Czech>Can (Beans)</Czech>
+			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON">						
 			<Original>A clean, unopened can of Demon Groves green beans.</Original>
@@ -2242,7 +2242,7 @@
 			<Spanish>Una limpia y cerrada lata de frijoles verdes "Demon Groves".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Demon Groves groene bonen.</Dutch>
 			<French>Une boîte intacte d'haricots verts "Demon Groves".</French>
-			<Czech>A clean, unopened can of Demon Groves green beans.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka zelených fazolí od firmy Demon Groves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DEMON_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2252,7 +2252,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON_EMPTY">						
 			<Original>An empty can of Demon Groves green beans.</Original>
@@ -2262,7 +2262,7 @@
 			<Spanish>Una lata vacía de frijoles verdes "Demon Groves".</Spanish>
 			<Dutch>Een leeg blikje Demon Groves groene bonen.</Dutch>
 			<French>Une boîte vide d'haricots verts "Demon Groves".</French>
-			<Czech>An empty can of Demon Groves green beans.</Czech>
+			<Czech>Prázdná plechovka zelených fazolí od firmy Demon Groves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS">						
 			<Original>Can (Spaghetti)</Original>
@@ -2272,7 +2272,7 @@
 			<Spanish>Lata de Spaghetti</Spanish>
 			<Dutch>Blikje (Spaghetti)</Dutch>
 			<French>Boîte (Spaghettis)</French>
-			<Czech>Can (Spaghetti)</Czech>
+			<Czech>Plechovka (Špagety)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS">						
 			<Original>A clean, unopened can of FraggleOs spaghetti.</Original>
@@ -2282,7 +2282,7 @@
 			<Spanish>Una limpia y cerrada lata de spaghetti "FraggleOs".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje FraggleOs spaghetti.</Dutch>
 			<French>Une boîte intacte de spaghettis "FraggleOs".</French>
-			<Czech>A clean, unopened can of FraggleOs spaghetti.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka špaget od firmy FraggleOs.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2292,7 +2292,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY">						
 			<Original>An empty can of FraggleOs spaghetti.</Original>
@@ -2302,7 +2302,7 @@
 			<Spanish>Una lata vacía de spaghetti "FraggleOs".</Spanish>
 			<Dutch>Een leeg blikje FraggleOs spaghetti.</Dutch>
 			<French>Une boîte vide de spaghettis "FraggleOs".</French>
-			<Czech>An empty can of FraggleOs spaghetti.</Czech>
+			<Czech>Prázdná plechovka špaget od firmy FraggleOs.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_HERPY">						
 			<Original>Can (Muffins)</Original>
@@ -2312,7 +2312,7 @@
 			<Spanish>Lata de Magdalenas</Spanish>
 			<Dutch>Blikje (Muffins)</Dutch>
 			<French>Boîte (Muffins)</French>
-			<Czech>Can (Muffins)</Czech>
+			<Czech>Plechovka (Muffiny)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY">						
 			<Original>A clean, unopened can of Herpy Dooves canned muffins.</Original>
@@ -2322,7 +2322,7 @@
 			<Spanish>Una limpia y cerrada lata de magdalenas "Herpy Dooves".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Herpy Dooves ingeblikte muffins.</Dutch>
 			<French>Une boîte intacte de muffins en conserve "Herpy Dooves".</French>
-			<Czech>A clean, unopened can of Herpy Dooves canned muffins.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka muffinů od firmy Herpy Dooves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_HERPY_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2332,7 +2332,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY_EMPTY">						
 			<Original>An empty can of Herpy Dooves canned muffins.</Original>
@@ -2342,7 +2342,7 @@
 			<Spanish>Una lata vacía de magdalenas "Herpy Dooves".</Spanish>
 			<Dutch>Een leeg blikje Herpy Dooves ingeblikte muffins.</Dutch>
 			<French>Une boîte vide de muffins en conserve "Herpy Dooves".</French>
-			<Czech>An empty can of Herpy Dooves canned muffins.</Czech>
+			<Czech>Prázdná plechovka muffinů od firmy Herpy Doovess.</Czech>
 		</Key>		
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">						
 			<Original>Can (Fruit)</Original>
@@ -2352,7 +2352,7 @@
 			<Spanish>Ensalada de Frutas</Spanish>
 			<Dutch>Blikje (Fruit)</Dutch>
 			<French>Boîte (Fruits)</French>
-			<Czech>Can (Fruit)</Czech>
+			<Czech>Plechovka (Ovoce)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK">						
 			<Original>A clean, unopened can of Orlok mixed fruit.</Original>
@@ -2362,7 +2362,7 @@
 			<Spanish>Una limpia y cerrada lata de ensaladas de frutas "Orlok".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Orlok gemixt fruit.</Dutch>
 			<French>Une boîte intacte de fruits mixés "Orlok".</French>
-			<Czech>A clean, unopened can of Orlok mixed fruit.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka několika druhů ovoce od firmy Orlok.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2372,7 +2372,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK_EMPTY">						
 			<Original>An empty can of Orlok mixed fruit.</Original>
@@ -2382,7 +2382,7 @@
 			<Spanish>Una lata vacía de ensalada de frutas "Orlok".</Spanish>
 			<Dutch>Een leeg blikje Orlok gemixt fruit.</Dutch>
 			<French>Une boîte vide de fruits mixés "Orlok".</French>
-			<Czech>An empty can of Orlok mixed fruit.</Czech>
+			<Czech>Prázdná plechovka několika druhů ovoce od firmy Orlok.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POWELL">						
 			<Original>Can (Chowder)</Original>
@@ -2392,7 +2392,7 @@
 			<Spanish>Sopa de Pescado</Spanish>
 			<Dutch>Blikje (Chowder)</Dutch>
 			<French>Boîte (Soupe de palourdes)</French>
-			<Czech>Can (Chowder)</Czech>
+			<Czech>Plechovka (Dušené maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL">						
 			<Original>A clean, unopened can of Powell's New England clam chowder.</Original>
@@ -2402,7 +2402,7 @@
 			<Spanish>Una limpia y cerrada lata de sopa de pescados "Powell's New England".</Spanish>
 			<Dutch>Een schoon, ongeopend blikje Powell's New England clam chowder.</Dutch>
 			<French>Une boîte intacte de soupe de palourdes de "Powell's New England".</French>
-			<Czech>A clean, unopened can of Powell's New England clam chowder.</Czech>
+			<Czech>Čistá, ještě neotevřená plechovka dušeného masa od firmy Powell's New England.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POWELL_EMPTY">						
 			<Original>Tin Can</Original>
@@ -2412,7 +2412,7 @@
 			<Spanish>Lata</Spanish>
 			<Dutch>Blikje</Dutch>
 			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
+			<Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL_EMPTY">						
 			<Original>An empty can of Powell's New England clam chowder.</Original>
@@ -2422,7 +2422,7 @@
 			<Spanish>Una lata vacía de sopa de pescado "Powell's New England".</Spanish>
 			<Dutch>Een leeg blikje Powell's New England clam chowder.</Dutch>
 			<French>Une boîte vide de soupe de palourde de "Powell's New England".</French>
-			<Czech>An empty can of Powell's New England clam chowder.</Czech>
+			<Czech>Prázdná plechovka dušeného masa od firmy Powell's New England.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS">						
 			<Original>Can (Beans)</Original>
@@ -2432,7 +2432,7 @@
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Blikje (Bonen)</Dutch>
 			<French>Boîte (Haricots)</French>
-			<Czech>Can (Beans)</Czech>
+			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS">						
 		  <Original>A clean, unopened can of Tyler's delicious kidney beans.</Original>
@@ -2442,7 +2442,7 @@
 		  <Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
 		  <Dutch>Een schoon, ongeopend blikje Tyler's kidney bonen.</Dutch>
 		  <French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
-		  <Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
+		  <Czech>Čistá, ještě neotevřená plechovka výtečných fazolí od firmy Tyler.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS_EMPTY">						
 		  <Original>Tin Can</Original>
@@ -2452,7 +2452,7 @@
 		  <Spanish>Lata</Spanish>
 		  <Dutch>Blikje</Dutch>
 		  <French>Boîte en fer-blanc</French>
-		  <Czech>Tin Can</Czech>
+		  <Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS_EMPTY">						
 		  <Original>An empty can of Tyler's delicious kidney beans.</Original>
@@ -2462,7 +2462,7 @@
 		  <Spanish>Una lata vacía de frijoles rojos "Tyler".</Spanish>
 		  <Dutch>Een leeg blikje Tyler's kidney bonen.</Dutch>
 		  <French>Une boîte vide de délicieux haricots nains "Tyler".</French>
-		  <Czech>An empty can of Tyler's delicious kidney beans.</Czech>
+		  <Czech>Prázdná plechovka výtečných fazolí od firmy Tyler.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED">						
 		  <Original>Can (Unknown)</Original>
@@ -2472,7 +2472,7 @@
 		  <Spanish>Lata Desconocida</Spanish>
 		  <Dutch>Blikje (Onbekend)</Dutch>
 		  <French>Boîte (Inconnu)</French>
-		  <Czech>Can (Unknown)</Czech>
+		  <Czech>Plechovka (Neznámé)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED">						
 		  <Original>A clean, unopened tin can. The label is missing.</Original>
@@ -2482,7 +2482,7 @@
 		  <Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
 		  <Dutch>Een schoon, ongeopend blikje. Het etiket ontbreekt.</Dutch>
 		  <French>Une boîte intacte. L'étiquette est manquante.</French>
-		  <Czech>A clean, unopened tin can. The label is missing.</Czech>
+		  <Czech>Čistá, ještě neotevřená cínová plechovka. Chybí etiketa.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED_EMPTY">						
 		  <Original>Tin Can</Original>
@@ -2492,7 +2492,7 @@
 		  <Spanish>Lata</Spanish>
 		  <Dutch>Blikje</Dutch>
 		  <French>Boîte en fer-blanc</French>
-		  <Czech>Tin Can</Czech>
+		  <Czech>Cínová plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED_EMPTY">						
 		  <Original>An empty tin can.</Original>
@@ -2502,7 +2502,7 @@
 		  <Spanish>Una lata vacía.</Spanish>
 		  <Dutch>Een leeg blikje.</Dutch>
 		  <French>Boîte en fer-blanc vide.</French>
-		  <Czech>An empty tin can.</Czech>
+		  <Czech>Prázdná cínová plechovka.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">						
 		  <Original>Toilet paper</Original>
@@ -2512,7 +2512,7 @@
 		  <Spanish>Papel Higiénico</Spanish>
 		  <Dutch>WC papier</Dutch>
 		  <French>Papier toilette</French>
-		  <Czech>Toilet paper</Czech>
+		  <Czech>Toaletní papír</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_TOILETPAPER">						
 		  <Original>A roll of toilet paper.</Original>
@@ -2522,7 +2522,7 @@
 		  <Spanish>Un rollo de papel higiénico.</Spanish>
 		  <Dutch>Een rol WC Papier.</Dutch>
 		  <French>Un rouleau de papier toilette.</French>
-		  <Czech>A roll of toilet paper.</Czech>
+		  <Czech>Role toaletního papíru.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_RAZOR">
 		  <Original>Razor</Original>
@@ -2532,7 +2532,7 @@
 		  <Spanish>Navaja</Spanish>
 		  <Dutch>Scheermes</Dutch>
 		  <French>Rasoir</French>
-		  <Czech>Razor</Czech>
+		  <Czech>Břitva</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_RAZOR">						
 		  <Original>An old-fashioned cut-throat razor with a rounded French point.</Original>
@@ -2542,7 +2542,7 @@
 		  <Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
 		  <Dutch>Een ouderwets nek-snijdend frans scheermes.</Dutch>
 		  <French>Un traditionnel rasoir coupe-chou avec une pointe arrondie à la française.</French>
-		  <Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
+		  <Czech>Staromódní břitva se zakulaceným držadlem.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_RBULL">
 		  <Original>Red Bull</Original>
@@ -2562,7 +2562,7 @@
 		  <Spanish>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Spanish>
 		  <Dutch>Red Bull geeft je vleugels.</Dutch>
 		  <French>Red Bull est une boisson énergétique vendue par la société Austrichienne Red Bull GmbH.</French>
-		  <Czech>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Czech>
+		  <Czech>Red Bull je energy drink, který prodává rakouská firma Red Bull GmbH.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_OSHERBET">
 		  <Original>Orange Sherbet</Original>
@@ -2572,7 +2572,7 @@
 		  <Spanish>Orange Sherbet</Spanish>
 		  <Dutch>Orange Sherbet</Dutch>
 		  <French>Orange Sherbet</French>
-		  <Czech>Orange Sherbet</Czech>
+		  <Czech>Pomerančová šťáva</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_OSHERBET">
 		  <Original>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Original>
@@ -2582,7 +2582,7 @@
 		  <Spanish>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Spanish>
 		  <Dutch>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Dutch>
 		  <French>Orange Sherbet est une boisson gazeuse rafraîchissante sucrée trés pétillante.</French>
-		  <Czech>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Czech>
+		  <Czech>Tato Pomerančová šťáva je kyselá soda s pomerančovou příchutí se spoustou bublinek.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT">
 		  <Original>Keymakers kit</Original>
@@ -2592,7 +2592,7 @@
 		  <Spanish>Keymakers kit</Spanish>
 		  <Dutch>Sleutelmakers set</Dutch>
 		  <French>Kit de Reproduction de Clés</French>
-		  <Czech>Keymakers kit</Czech>
+		  <Czech>Sada klíčů</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT_DESC">
 		  <Original>Kit including the tools required to smelt, mold and shape keys.</Original>
@@ -2602,7 +2602,7 @@
 		  <Spanish>Kit including the tools required to smelt, mold and shape keys.</Spanish>
 		  <Dutch>Met deze sleutelmakers set kun je indien je een vuur en tin hebt je sleutels kopieren.</Dutch>
 		  <French>Ce kit inclut tous les outils nécessaires à fondre, modeler et découper des clés.</French>
-		  <Czech>Kit including the tools required to smelt, mold and shape keys.</Czech>
+		  <Czech>Sada obsahující nástroje potřebné k vytvoření klíčů.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_SLEDGE">
 		  <Original>Sledgehammer</Original>
@@ -2612,7 +2612,7 @@
 		  <Spanish>Almádena</Spanish>
 		  <Dutch>Voorhamer</Dutch>
 		  <French>Masse</French>
-		  <Czech>Perlík</Czech>
+		  <Czech>Palice</Czech>
 		</Key>   
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
 		  <Original>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Original>
@@ -2622,7 +2622,7 @@
 		  <Spanish>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Spanish>
 		  <Dutch>Een grote voorhamer met stalen kop. Handig voor sloop en bouw werkzaamheden.</Dutch>
 		  <French>Un outil composé d'une large tête aux faces latérales plates attachée à un manche. Sa tête est habituellement faite en acier. La masse se manipule à deux mains et permet d'exercer plus de force qu'un marteau.</French>
-		  <Czech>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Czech>
+		  <Czech>Nástroj s velkou plochou hlavou připevněnou k rukojeti. Hlava je tvořena především z kovu. Palice je silnější než ostatní kladiva.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_FISHPOLE">
 		  <Original>Fishing Pole</Original>
@@ -2632,7 +2632,7 @@
 		  <Spanish>Caña de Pesca</Spanish>
 		  <Dutch>Vishengel</Dutch>
 		  <French>Canne à Pêche</French>
-		  <Czech>Rybářský Prut</Czech>
+		  <Czech>Rybářský prut</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_FISHPOLE_DESC">
 		  <Original>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Original>
@@ -2642,7 +2642,7 @@
 		  <Spanish>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Spanish>
 		  <Dutch>Vishengel: Dit carbonnen hengeltje is al oud, maar werkt nog prima!</Dutch>
 		  <French>Cette canne à pêche en fibre de carbone a beau être vieille, elle fonctionne encore à merveille!</French>
-		  <Czech>Fishing Pole: This carbon fiber rod may be old but, she still works like a charm.</Czech>
+		  <Czech>Tento rybářský prut je již celkem starý, ale funguje tak, jak za mlada.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CROWBAR">
 		  <Original>Crowbar</Original>
@@ -2652,7 +2652,7 @@
 		  <Spanish>Palanca</Spanish>
 		  <Dutch>Breekijzer</Dutch>
 		  <French>Pied-de-biche</French>
-		  <Czech>Sochor</Czech>
+		  <Czech>Páčidlo</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CROWBAR_DESC">
 		  <Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
@@ -2662,7 +2662,7 @@
 		  <Spanish>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Spanish>
 		  <Dutch>Een stevig breekijzer voor breek en sloopwerkzaamheden.</Dutch>
 		  <French>Un outil constitué d'une barre de métal dont l'une des extrémité est recourbée servant de point d'appui, légèrement aplatie et fendue, permettant ainsi d'arracher des clous.</French>
-		  <Czech>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Czech>
+		  <Czech>Nástroj, který se skládá z kovové tyče s jedním zahnutým koncem a se zploštelými body, často tvořené malými štěrbinami na jednom nebo obou koncích, používané k odstranění hřebíků.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_ETOOL">
 		  <Original>Etool</Original>
@@ -2672,7 +2672,7 @@
 		  <Spanish>Pala Afianzar</Spanish>
 		  <Dutch>Opklapbare schep/spade.</Dutch>
 		  <French>Pelle Pliable</French>
-		  <Czech>Etool</Czech>
+		  <Czech>Polní lopatka</Czech>
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
@@ -2684,7 +2684,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Magazijnen %1 / %2 - Wapens %3 / %4 - Rugzakken %5 / %6</Dutch>
 		  <French>Munitions et objets %1 / %2 - Armes et outils %3 / %4 - Sac à dos %5 / %6</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zásoby %1 / %2 - Zbraně %3/%4 - Batohy %4 / %6</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_2">
 		  <Original>Another player wants to tag you as friendly. To accept, tag player as friendly.</Original>
@@ -2694,7 +2694,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Een speler wil je als bevriend te markeren. Om te accepteren, markeer de speler als bevriend.</Dutch>
 		  <French>Un joueur veut vous marquer comme amical(e). Pour accepter, marquez ce joueur comme amical(e).</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Jiný hráč si vás chce označit jako přítele. K příjmutí, označte hráče jako přítele.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_3">
 		  <Original>Pulse is extremely weak</Original>
@@ -2704,7 +2704,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Polsslag is erg zwak</Dutch>
 		  <French>Le pouls est extrêmement faible</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Puls je velmi slabý</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_4">
 		  <Original>Pulse is weak</Original>
@@ -2714,7 +2714,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Polsslag is zwak</Dutch>
 		  <French>Le pouls est faible</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Puls je slabý</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_5">
 		  <Original>Pulse is strong</Original>
@@ -2724,7 +2724,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Polsslag is sterk</Dutch>
 		  <French>Le pouls est fort</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Puls je silný</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_6">
 		  <Original>Trading canceled.</Original>
@@ -2734,7 +2734,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Handel is afgebroken</Dutch>
 		  <French>Échange annulé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Obchodování přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_7">
 		  <Original>Cannot access gear in a locked vehicle.</Original>
@@ -2744,7 +2744,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
 		  <French>Impossible d'accéder au contenu d'un véhicule verrouillé</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze přistupovat k předmětům v zamčeném voze.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_8">
 		  <Original>No camo nets found nearby.</Original>
@@ -2754,7 +2754,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen camouflagenet in de buurt gevonden.</Dutch>
 		  <French>Aucun de filet de camouflage n'a été trouvé aux alentours</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Poblíž nejsou žádné maskovací sítě.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_9">
 		  <Original>You have been crushed between two objects.</Original>
@@ -2764,7 +2764,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent geplet tussen twee objecten.</Dutch>
 		  <French>Vous avez été écrasé entre deux objets.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Byl jste naražen mezi dva objekty.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_10">
 		  <Original>Lock already in progress.</Original>
@@ -2774,7 +2774,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Wordt al op slot gezet.</Dutch>
 		  <French>Le verrouillage est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zamykání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_11">
 		  <Original>Cannot lock while another player is nearby.</Original>
@@ -2784,7 +2784,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet op slot zetten met een andere speler in de buurt.</Dutch>
 		  <French>Impossible de verrouiller lorsque d'autres joueurs sont proches.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze zamknout, když je poblíž jiný hráč.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_12">
 		  <Original>Cannot Abort while in a trader city!</Original>
@@ -2794,7 +2794,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet uitloggen in een handel stad.</Dutch>
 		  <French>Impossible d'interrompre dans un marché!</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze se odpojit, když jste v trader city!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_13">
 		  <Original>Pack tent already in progress.</Original>
@@ -2804,7 +2804,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Tent wordt al reeds ingepakt</Dutch>
 		  <French>Le pliage de la tente est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Balení stanu již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_14">
 		  <Original>Tent not setup yet.</Original>
@@ -2814,7 +2814,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Tent is nog niet opgezet.</Dutch>
 		  <French>La tente n'est pas encore installée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Stan není ještě postaven.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_15">
 		  <Original>That is already being packed.</Original>
@@ -2824,7 +2824,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Dit wordt al reeds ingepakt.</Dutch>
 		  <French>C'est déjà en cours d'empaquetage.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Toto již bylo zabaleno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_16">
 		  <Original>Cannot pack while another player is nearby.</Original>
@@ -2834,7 +2834,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
 		  <French>Impossible d'empaqueter lorsque d'autres joueurs sont proches.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze zabalit, jestliže je jiný hráč poblíž.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_17">
 		  <Original>can't count magazines!</Original>
@@ -2844,7 +2844,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>kan de magazijnen niet tellen</Dutch>
 		  <French>Ne peut pas compter les munitions!</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>nelze spočítat zásoby</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_18">
 		  <Original>You must have RawMeat</Original>
@@ -2854,7 +2854,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je moet in het bezit zijn van rauw vlees</Dutch>
 		  <French>Vous devez avoir de la viande crue</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Musíte mít syrové maso</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_19">
 		  <Original>Wrong code entered to many times wait 10 seconds</Original>
@@ -2864,7 +2864,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt te vaak een foute code ingevoerd. 10 seconden geduld svp.</Dutch>
 		  <French>Trop d'erreurs avec le code, patientez 10 secondes</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Mnohokrát jsi zadal špatný kód, musíš počkat 10 vteřin</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_20">
 		  <Original>Cannot unlock while another player is nearby.</Original>
@@ -2874,7 +2874,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet van slot afhalen met een andere speler in de buurt.</Dutch>
 		  <French>Impossible de déverrouiller lorsque d'autres joueurs sont proches.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze odemknout, pokud jsou poblíž jiní hráči.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_21">
 		  <Original>Unlock already in progress.</Original>
@@ -2884,7 +2884,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Wordt al reeds van slot gehaald.</Dutch>
 		  <French>Le déverrouillage est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Odemykání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_22">
 		  <Original>Boil already in progress.</Original>
@@ -2894,7 +2894,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent al aan ket koken.</Dutch>
 		  <French>L'ébullition est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Převařování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_23">
 		  <Original>Cooking already in progress.</Original>
@@ -2904,7 +2904,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent al aan het koken.</Dutch>
 		  <French>La cuisson est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vaření již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_24">
 		  <Original>Refuel already in progress.</Original>
@@ -2914,7 +2914,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent al aan het tanken.</Dutch>
 		  <French>Le ravitaillement en carburant est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Doplňování paliva již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_25">
 		  <Original>Preparing to fuel and start generator, move to cancel.</Original>
@@ -2924,7 +2924,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>De generator wordt zo volgetankt en gestart, beweeg om te annuleren.</Dutch>
 		  <French>Remplissage du réservoir et démarrage du générateur, bougez pour annuler.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Doplňování paliva a startování generátoru, pro zrušení se pohněte.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_26">
 		  <Original>Canceled.</Original>
@@ -2934,7 +2934,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Ge-annuleerd.</Dutch>
 		  <French>Annulé</French></French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_27">
 		  <Original>No Vehicles Nearby.</Original>
@@ -2944,7 +2944,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen voertuigen in de buurt.</Dutch>
 		  <French>Aucun véhicule aux alentours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Poblíž nejsou žádná vozidla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_28">
 		  <Original>Generator has been started.</Original>
@@ -2954,7 +2954,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>De generator is gestart.</Dutch>
 		  <French>Le générateur a été démarré.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Generátor byl nastartován.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_29">
 		  <Original>Gutting animal already in progress.</Original>
@@ -2964,7 +2964,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent dit dier al aan het opensnijden.</Dutch>
 		  <French>Le dépeçage de l'animal est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Kuchání zvířete již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_30">
 		  <Original>Canceled gutting.</Original>
@@ -2974,7 +2974,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Gestopt met opensnijden.</Dutch>
 		  <French>Dépeçage interrompu.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Akce zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_31">
 		  <Original>Gutting zombie already in progress.</Original>
@@ -2984,7 +2984,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent deze zombie al aan het opensnijden.</Dutch>
 		  <French>Le dépeçage du zombie est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Kuchání zombie již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_32">
 		  <Original>Hotwire vehicle already in progress.</Original>
@@ -2994,7 +2994,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Auto wordt al opengebroken.</Dutch>
 		  <French>Le crochetage du véhicule est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Startování vozidla již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33">
 		  <Original>Failed to unlock car hotwire kit broken.</Original>
@@ -3004,7 +3004,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Openbreken voertuig mislukt, je hotwire kit is kapot gegaan.</Dutch>
 		  <French>Échec du crochetage du véhicule, le kit est détruit.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Otevření auta pomocí paklíče se nezdařilo.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
 		  <Original>Fill Jerry already in progress.</Original>
@@ -3014,7 +3014,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
 		  <French>Le remplissage du jerrycan est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Plnění kanystru již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_35">
 		  <Original>Canceled siphon.</Original>
@@ -3024,7 +3024,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Brandstofverplaatsing stopgezet</Dutch>
 		  <French>Siphonage annulé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přečerpávání přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_36">
 		  <Original>\n\nNo recent Deaths.</Original>
@@ -3034,7 +3034,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nNiet recent doodgegaan.</Dutch>
 		  <French>\n\nPas de décès récents.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nŽádné nedávné úmrtí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_37">
 		  <Original>Lock vehicle already in progress.</Original>
@@ -3044,7 +3044,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
 		  <French>Le verrouillage du véhicule est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zamykání vozidla již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_38">
 		  <Original>Take item already in progress.</Original>
@@ -3054,7 +3054,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met het oppakken</Dutch>
 		  <French>L'objet est déjà pris.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Sbírání předmětu již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_39">
 		  <Original>Add to toolbelt already in progress.</Original>
@@ -3064,7 +3064,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Reeds bezig met toevoegen aan gereedschapsriem</Dutch>
 		  <French>L'ajout à la ceinture est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidávání do opasku na nářadí již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_40">
 		  <Original>\n\nBuilding already in progress.</Original>
@@ -3074,7 +3074,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent al aan het bouwen.</Dutch>
 		  <French>\n\nLa construction est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nStavba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
 		  <Original>\n\nCannot build, too many objects within 30m.</Original>
@@ -3084,7 +3084,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nKan niet bouwen, teveel objecten binnen 30m.</Dutch>
 		  <French>\n\nImpossible de construire, il y a trop d'objets à moins de 30m.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNelze postavit, v okruhu 30 metrů je přiliš mnoho předmětů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_42">
 		  <Original>Cannot build while in a vehicle.</Original>
@@ -3094,7 +3094,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
 		  <French>Impossible de construire à bord d'un véhicule.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze stavět, pokud jste ve vozidle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_43">
 		  <Original>Cannot build while in combat.</Original>
@@ -3104,7 +3104,7 @@
 		  <Spanish>Cannot build while in combat.</Spanish>
 		  <Dutch>Bouwen is niet mogelijk tijdens een conflictsituatie.</Dutch>
 		  <French>Impossible de construire en combat.</French>
-		  <Czech>Cannot build while in combat.</Czech>
+		  <Czech>Nelze stavět v boji.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_44">
 		  <Original>Cannot build plot pole within 45m of an existing plot.</Original>
@@ -3114,7 +3114,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan bouw-paal niet bouwen op minder als 45m afstand van een bestaand bouwterrein.</Dutch>
 		  <French>Impossible de construire un panneau de propriété privée à moins de 45m d'un autre panneau du genre.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze postavit hraniční značku ve vzdálenosti 45 metrů od jiné značky.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_45">
 		  <Original>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</Original>
@@ -3124,7 +3124,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>PgUp voor omhoog or PgDn voor omlaag (Houd ALT ingedrukt voor snel en CTRL voor langzaam), \nQ of E draait het object 180graden. Spatiebalk start het bouwen.</Dutch>
 		  <French>PgUp pour élever ou PgDn pour abaisser (Maintenez ALT pour élever plus rapidement ou CTRL plus lentement), A ou E pour une rotation à 180. Espace pour construire.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>PgUp pro zvednutí nebo PgDn pro klesání (Přidrž ALT pro rychlejší zvedání, nebo CTRL pro rychlejší klesání), Q nebo E pro otočení o 180. Mezerník pro stavbu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_46">
 		  <Original>Canceled building.</Original>
@@ -3134,7 +3134,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Het bouwen is gestopt</Dutch>
 		  <French>Construction annulée</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Stavba zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_47">
 		  <Original>Canceled construction of %1 %2.</Original>
@@ -3144,7 +3144,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Gestopt met het bouwen van %1 %2.</Dutch>
 		  <French>La construction de %1 %2 est annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Stavba %1 %2 byla zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_48">
 		  <Original>Downgrade already in progress.</Original>
@@ -3154,7 +3154,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent al bezig met downgraden.</Dutch>
 		  <French>La dégradation est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Downgrade již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_49">
 		  <Original>Unable to downgrade you do not know the combination.</Original>
@@ -3164,7 +3164,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet downgraden, je weet de combinatie niet.</Dutch>
 		  <French>La dégradation est impossible, vous ne connaissez pas la combinaison!</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Downgrade je nemožný, neznáte kombinanci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_50">
 		  <Original>Not setup yet.</Original>
@@ -3174,7 +3174,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Nog niet ingesteld.</Dutch>
 		  <French>Pas encore installé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Dosud nebylo nastaveno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_51">
 		  <Original>No downgrades available</Original>
@@ -3184,7 +3184,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen downgrades beschikbaar</Dutch>
 		  <French>Pas de dégradation possible.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Downgrade není k dispozici</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_52">
 		  <Original>Upgrade already in progress.</Original>
@@ -3194,7 +3194,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent al aan het upgraden.</Dutch>
 		  <French>L'amélioration est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Upgrade již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_53">
 		  <Original>\n\nHarvest wood already in progress.</Original>
@@ -3204,7 +3204,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent al hout aan het hakken</Dutch>
 		  <French>\n\nLa coupe du bois est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nKácení již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_54">
 		  <Original>\n\nHatchet needs to be in your hand to harvest wood.</Original>
@@ -3214,7 +3214,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe moet een bijl in je handen hebben om hout te hakken.</Dutch>
 		  <French>\n\nVous devez avoir la hache en main pour couper du bois.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nPro kácení stromů musíte mít v ruce sekeru.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_55">
 		  <Original>\n\nCanceled Harvesting Wood.</Original>
@@ -3224,7 +3224,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nGestopt met houthakken</Dutch>
 		  <French>\n\nCoupe du bois annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nKácení přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_56">
 		  <Original>\n\nCopy key already in progress.</Original>
@@ -3234,7 +3234,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent al een sleutel aan het kopieren</Dutch>
 		  <French>\n\nLa duplication de la clé est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Kopírování klíče již probíhá</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_57">
 		  <Original>\n\nNeed Keymakers kit to make a copy of a key.</Original>
@@ -3244,7 +3244,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
 		  <French>\n\nLe kit Keymakers est requis pour faire un double d'une clé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nPotřebujete Sadu klíčů, abyste mohli vytvořit kopii klíče</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_58">
 		  <Original>\n\nKey crafting needs a fire within 3 meters.</Original>
@@ -3254,7 +3254,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe moet binnen 3 meter van het vuur staan om de sleutel te maken.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNa vytvoření klíče potřebujete oheň v dosahu 3 metrů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_59">
 		  <Original>\n\nKey crafting requires a 1 Tin Bar.</Original>
@@ -3264,7 +3264,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe hebt 1 Tin bar nodig om een sleutel te maken.</Dutch>
 		  <French>\n\nConstruire une clé requiert une barre de fer</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNa vytvoření klíče potřebujete 1 cihličku cínu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_60">
 		  <Original>\n\nCopied key has been added to your backpack.</Original>
@@ -3274,7 +3274,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nDe gekopieerde sleutel is in je rugzak gestopt.</Dutch>
 		  <French>\n\nLe double de la clé a été ajouté dans votre sac à dos.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zkopírovaný klíč byl přidán do batohu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_61">
 		  <Original>\n\nCanceled Key Crafting.</Original>
@@ -3284,7 +3284,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nGestopt met het maken van de sleutel.</Dutch>
 		  <French>\n\nConstruction de la clé annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nZrušeno vytváření klíče.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_62">
 		  <Original>\n\nCrafting started</Original>
@@ -3294,7 +3294,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nBezig met creëren</Dutch>
 		  <French>\n\nConstruction démarré</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nTvorba začala</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_63">
 		  <Original>\n\nCrafting already in progress.</Original>
@@ -3304,7 +3304,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent al bezig met creëren</Dutch>
 		  <French>\n\nLa construction est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nVytváření již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_64">
 		  <Original>\n\nCanceled crafting.</Original>
@@ -3314,7 +3314,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nCreatie gestopt.</Dutch>
 		  <French>\n\nConstruction annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nVytváření zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_65">
 		  <Original>\n\nFishing already in progress.</Original>
@@ -3324,7 +3324,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nAfmaken van creatie is al bezig.</Dutch>
 		  <French>\n\nLa pêche est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Již rybaříte.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_66">
 		  <Original>\n\nMust be near a shore or on a boat to fish.</Original>
@@ -3334,7 +3334,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe moet aan de kust of op een boot zijn om te vissen.</Dutch>
 		  <French>\n\nVous devez être sur la côte ou sur un bateau pour pêcher.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nMusíte být poblíž vody nebo na lodi, abyste mohli rybařit.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_67">
 		  <Original>\n\nFishing pole needs to be in your hand to fish.</Original>
@@ -3344,7 +3344,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe moet een vishengel in je hand hebben om te vissen.</Dutch>
 		  <French>\n\nVous devez avoir la canne à pêche en main pour pêcher.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nMusíte mít v ruce Rybářský prut, abyste mohli rybařit.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_68">
 		  <Original>\n\nCanceled Fishing.</Original>
@@ -3354,7 +3354,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nGestopt met vissen.</Dutch>
 		  <French>\n\nPêche annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Rybaření zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_69">
 		  <Original>\n\nYou caught a fish.</Original>
@@ -3364,7 +3364,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe hebt een vis gevangen.</Dutch>
 		  <French>\n\nVous avez pêché un poisson!</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Chytil jsi rybu!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_70">
 		  <Original>\n\nNibble... Nibble...</Original>
@@ -3374,7 +3374,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nDobber.. Dobber..</Dutch>
 		  <French>\n\nÇa grignote... ça grignote...</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nKousek... Ještě kousek...</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_71">
 		  <Original>\n\nYou didn't catch anything.</Original>
@@ -3384,7 +3384,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe hebt niets gevangen.</Dutch>
 		  <French>\n\nVous n'avez rien attrapé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNechytil jste nic.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_72">
 		  <Original>\n\nHarvest already in progress.</Original>
@@ -3394,7 +3394,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent al aan het oogsten.</Dutch>
 		  <French>\n\nLa récolte est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nSběr již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_73">
 		  <Original>\n\nCanceled Harvesting.</Original>
@@ -3404,7 +3404,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nGestopt met oogsten.</Dutch>
 		  <French>\n\nRécolte annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nSběr zrušen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_74">
 		  <Original>\n\nYou must be close to a plant to harvest.</Original>
@@ -3414,7 +3414,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe moet in de buurt van een plant zijn om te oogsten.</Dutch>
 		  <French>\n\nVous devez être près d'une plante pour la récolter.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nMusíte být blízko plodiny, abyste ji mohli sklidit.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_75">
 		  <Original>\n\nOpen Crate already in progress.</Original>
@@ -3424,7 +3424,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent de kist al aan het openmaken.</Dutch>
 		  <French>\n\nL'ouverture de la caisse est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nOtevírání bedny již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_76">
 		  <Original>\n\nYou need a crowbar to open this.</Original>
@@ -3434,7 +3434,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe hebt een breekijzer nodig om dit open te maken.</Dutch>
 		  <French>\n\nVous avez besoin d'un pied-de-biche pour l'ouvrir.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nPotřebujete Páčidlo, abyste toto mohli otevřít.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_77">
 		  <Original>\n\nMissing supply crate.</Original>
@@ -3444,7 +3444,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nSupply kist ontbreekt</Dutch>
 		  <French>\n\nCaisse de fournitures manquante.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nChybí zásobovací bedna.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_78">
 		  <Original>\n\nOpened supply crate.</Original>
@@ -3454,7 +3454,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nSupply kist geopend.</Dutch>
 		  <French>\n\nCaisse de fournitures ouverte.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nOtevřená zásobovací bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_79">
 		  <Original>\n\nOre Mining already in progress.</Original>
@@ -3464,7 +3464,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent al erts aan het ontginnen.</Dutch>
 		  <French>\n\nL'extraction du minerai est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nJiž probíhá těžba rudy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_80">
 		  <Original>\n\nCancelled Mining Ore.</Original>
@@ -3474,7 +3474,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nGestopt met erts ontginnen.</Dutch>
 		  <French>\n\nExtraction du minerai annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nZrušena těžba rudy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_81">
 		  <Original>\n\nCombine ammo failed you need at least 85% capacity to fill a mag</Original>
@@ -3484,7 +3484,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nHet omzetten van kogels is mislukt je dient minstens 85% capaciteit in het magazijn te hebben</Dutch>
 		  <French>\n\nLa combinaison des munitions a échoué, vous devez remplir au moins 85% du chargeur</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nKombinace zásobníků selhala, potřebujete alespoň 85% kapacity, abyste naplnili zásobník</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_82">
 		  <Original>\n\nNo upgrades available</Original>
@@ -3494,7 +3494,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nGeen upgrades beschikbaar</Dutch>
 		  <French>\n\nAucune amélioration disponible</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNejsou dostupné žádné upgrady</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_83">
 		  <Original>\n\nChanging clothes already in progress.</Original>
@@ -3504,7 +3504,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe bent je al aan het omkleden.</Dutch>
 		  <French>\n\nLe changement de vêtements est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nZměna oblečení již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_84">
 		  <Original>\n\nCannot change clothes when another player is nearby.</Original>
@@ -3514,7 +3514,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
 		  <French>\n\nImpossible de changer de vêtements près d'un autre joueur.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNemůžete si změnit oblečení, když je poblíž další hráč.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_85">
 		  <Original>\n\nYou may not change clothes while in a vehicle</Original>
@@ -3524,7 +3524,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe kunt je niet omkleden in een voertuig</Dutch>
 		  <French>\n\nVous ne devriez pas changer de vêtements à bord d'un véhicule</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNemůžete si změnit oblečení, pokud jste v autě.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_86">
 		  <Original>\n\nYou cannot wear a skin of the opposite sex.</Original>
@@ -3534,7 +3534,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
 		  <French>\n\nVous ne pouvez pas porter les vêtements du sexe opposé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNemůžete nosit oblečení opačného pohlaví.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_87">
 		  <Original>Canceled refuel.</Original>
@@ -3544,7 +3544,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bijtanken gestopt.</Dutch>
 		  <French>Remplissage du réservoir annulé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Tankování zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_88">
 		  <Original>Remove already in progress.</Original>
@@ -3554,7 +3554,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Al bezig met verwijderen.</Dutch>
 		  <French>Le démontage est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Odstranění již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_89">
 		  <Original>Cannot remove running generator.</Original>
@@ -3564,7 +3564,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
 		  <French>Impossible de démonter un générateur en route.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nemůžete odstranit běžící generátor.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_90">
 		  <Original>No parts found.</Original>
@@ -3574,7 +3574,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen onderdelen gevonden.</Dutch>
 		  <French>Aucune pièce trouvée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nebyly nalezeny žádné části.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_91">
 		  <Original>Failed object not longer exists.</Original>
@@ -3584,7 +3584,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
 		  <French>Échec, l'objet n'existe plus.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Chyba. Objekt již neexistuje.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_92">
 		  <Original>Repair already in progress.</Original>
@@ -3594,7 +3594,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Wordt al reeds gerepareerd.</Dutch>
 		  <French>La réparation est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Opravování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_93">
 		  <Original>Canceled Repair.</Original>
@@ -3604,7 +3604,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Reparatie afgebroken.</Dutch>
 		  <French>Réparation annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zrušena oprava.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_94">
 		  <Original>Salvage already in progress.</Original>
@@ -3614,7 +3614,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Reeds bezig met bergen.</Dutch>
 		  <French>La récupération est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Demontáž i probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_95">
 		  <Original>Canceled Salvage.</Original>
@@ -3624,7 +3624,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Berging afgebroken.</Dutch>
 		  <French>Récupération annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Demontáž zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_96">
 		  <Original>already in progress.</Original>
@@ -3634,7 +3634,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>reeds bezig.</Dutch>
 		  <French>déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_97">
 		  <Original>Trading already in progress.</Original>
@@ -3644,7 +3644,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Reeds bezig met handellen.</Dutch>
 		  <French>La transaction est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Obchodování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_98">
 		  <Original>Siphon already in progress.</Original>
@@ -3654,7 +3654,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Reeds bezig met brandstofverplaatsing.</Dutch>
 		  <French>Le siphonage est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přečerpávání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_99">
 		  <Original>Stop already in progress.</Original>
@@ -3664,7 +3664,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met stoppen.</Dutch>
 		  <French>L'arrêt est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zastavování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_100">
 		  <Original>Preparing stop generator, move to cancel.</Original>
@@ -3674,7 +3674,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Het uitschakellen van de generator word voorbereid, beweeg om te annuleren.</Dutch>
 		  <French>Préparation de l'arrêt du générateur, déplacez vous pour annuler.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Příprava na vypnutí generátoru, pohněte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_101">
 		  <Original>Generator has been stopped.</Original>
@@ -3684,7 +3684,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>De generator is uitgeschakeld.</Dutch>
 		  <French>Le générateur a été arrêté.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Generátor byl zastaven.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_102">
 		  <Original>No Vehicles In Tow.</Original>
@@ -3694,7 +3694,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen voertuigen op sleep.</Dutch>
 		  <French>Aucun véhicule remorqué.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Žádná vozidla nejsou zaháknutá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_103">
 		  <Original>Trade already in progress.</Original>
@@ -3704,7 +3704,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent al aan het handellen.</Dutch>
 		  <French>La transaction est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Obchodování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_104">
 		  <Original>Cannot trade while another player is nearby.</Original>
@@ -3714,7 +3714,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je kunt niet handellen met een andere speler in de buurt.</Dutch>
 		  <French>Impossible d'effectuer la transaction lorsque d'autres joueurs sont proches.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze obchodovat, dokud je jiný hráč poblíž.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_105">
 		  <Original>Starting trade, stand still to complete trade.</Original>
@@ -3724,7 +3724,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met handellen, blijf stilstaan om af te ronden.</Dutch>
 		  <French>Transaction démarré, restez immobile pour achever la transaction.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Transakce probíhá, stůjte na místě pro dokončení obchodu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_106">
 		  <Original>Canceled Trade.</Original>
@@ -3734,7 +3734,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Handel geannuleerd.</Dutch>
 		  <French>Transaction annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Transakce zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_107">
 		  <Original>You do not have enough room on your toolbelt.</Original>
@@ -3744,7 +3744,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je gereedschapsriem zit vol.</Dutch>
 		  <French>Vous n'avez pas assez de place dans votre ceinture.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nemáte dostatek místa na Vašem opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_108">
 		  <Original>Vault pitching already in progress.</Original>
@@ -3754,7 +3754,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kluis installatie is al bezig.</Dutch>
 		  <French>L'installation du coffre fort est déjà en cours.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Pokládání sejfu již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_109">
 		  <Original>Planning construction stand still 5 seconds to build.</Original>
@@ -3764,7 +3764,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Het bouwen wordt voorbereid, sta 5 seconden stil om te bouwen.</Dutch>
 		  <French>Planification de la construction, restez immobile 5 secondes pour construire.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Pokládání sejfu začalo, vyčkejte 5 sekund pro postavení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_110">
 		  <Original>You cannot place a Safe here. The area must be flat, and free of other objects</Original>
@@ -3774,7 +3774,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <French>Vous ne pouvez pas placer le coffre fort ici. L'endroit doit être plat et dégagé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zde nemůžete postavit sejf. Místo musí být rovné a bez objektů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_111">
 		  <Original>Canceled construction of Safe.</Original>
@@ -3784,7 +3784,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Het bouwen van de kluis is stopgezet.</Dutch>
 		  <French>Mise en place du coffre fort annulée.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Stavění sejfu zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_112">
 		  <Original>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</Original>
@@ -3794,7 +3794,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Deze server draait een verkeerde versie van de serversided software. Je kunt niet op deze server spelen. Als het jouw server is, neem dan contact op met de DayZ Epoch Staff.</Dutch>
 		  <French>Ce serveur exécute une version différente du jeu. Vous ne pouvez pas jouer sur ce serveur. Si vous êtes l'administrateur de ce serveur, contactez l'équipe de DayZ Epoch s'il vous plaît</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Tento server běží na nesprávné verzi serveru. Nemůžete hrát na tomto serveru. Pokud jste administrátor serveru, prosím kontaktujte podporu DayZ Epoch.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_113">
 		  <Original>You have an outdated version of epoch please download the correct version</Original>
@@ -3804,7 +3804,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt een verouderde versie van epoch.</Dutch>
 		  <French>Vous avez une version de DayZ Epoch périmée, une mise à jour est nécessaire.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Máte zastaralou verzi Epochu. Prosím, stáhněte si novou verzi.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_114">
 		  <Original>Could not retrieve date and time from server disconnect and retry.</Original>
@@ -3814,7 +3814,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Het is niet gelukt om de datum en tijd van de server op te halen \nVerbreek de verbinding en probeer het opnieuw.</Dutch>
 		  <French>Récupération de la date et de l'heure impossible à partir du serveur. Déconnectez et réessayez.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze získat datum a čas ze serveru. Odpojte se a připojte znovu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
 		  <Original>You cannot lock this %1, you do not know the combination.</Original>
@@ -3824,7 +3824,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je kunt deze %1 niet op slot zetten, je weet de combinatie niet.</Dutch>
 		  <French>Vous ne pouvez pas verrouiller %1, vous n'en connaissez pas la combinaison.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nemůžete zamknout %1, neznáte správnou kombinaci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_116">
 		  <Original>That %1 is already being locked.</Original>
@@ -3834,7 +3834,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Deze %1 wordt al op slot gezet.</Dutch>
 		  <French>%1 est déjà verrouillé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_117">
 		  <Original>Your %1 has been locked</Original>
@@ -3844,7 +3844,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je %1 staat nu op slot</Dutch>
 		  <French>Votre %1 a été verrouillé</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vaše %1 bylo zamčeno</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_118">
 		  <Original>%1 not setup yet.</Original>
@@ -3854,7 +3854,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 is nog niet ingesteld.</Dutch>
 		  <French>%1 n'est pas encore installé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 není ještě připravený.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_119">
 		  <Original>You cannot pack this %1, you do not know the combination.</Original>
@@ -3864,7 +3864,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
 		  <French>Vous ne pouvez pas emballer %1, vous n'en connaissez pas la combinaison.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nemůžete sbalit %1, neznáte správnou kombinaci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_120">
 		  <Original>That %1 is already being packed.</Original>
@@ -3874,7 +3874,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Deze %1 wordt al reeds ingepakt.</Dutch>
 		  <French>%1 est déjà en cours d'emballage.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Balení %1 již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_121">
 		  <Original>Packing %1 move from this position to cancel within 5 seconds.</Original>
@@ -3884,7 +3884,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
 		  <French>Emballage de %1, déplacez vous pour annuler dans moins de 5 secondes.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Balení %1. Pro zrušení se do 5 sekund pohněte.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_122">
 		  <Original>Packing %1 canceled.</Original>
@@ -3894,7 +3894,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Het inpakken van %1 is gestopt.</Dutch>
 		  <French>Emballage annulé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Balení %1 zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_123">
 		  <Original>Your %1 has been packed</Original>
@@ -3904,7 +3904,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je %1 is ingepakt.</Dutch>
 		  <French>Votre %1 a été emballé(e).</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vaše %1 bylo/y zabalen/y/o.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_124">
 		  <Original>That %1 is already being unlocked.</Original>
@@ -3914,7 +3914,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Deze %1 wordt alreeds van slot gehaald.</Dutch>
 		  <French>%1 est déjà en cours de déverrouillage.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 se již odemyká.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_125">
 		  <Original>%1 has been unlocked.</Original>
@@ -3924,7 +3924,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 staat niet meer op slot</Dutch>
 		  <French>%1 a été déverrouillé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 bylo odemčeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_126">
 		  <Original>Combination incorrect, %1 is still locked.</Original>
@@ -3934,7 +3934,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
 		  <French>Combinaison incorrecte, %1 reste verrouillé.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nesprávná kombinace, %1 je stále zamknut.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_127">
 		  <Original>You have successfully loaded %1 ammunition.</Original>
@@ -3944,7 +3944,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt met succes %1 munitie bijgeladen.</Dutch>
 		  <French>Vous avez rechargé les munitions de %1 avec succés.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Úspěšně jste naložili %1 munici.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_128">
 		  <Original>You need %1 type of ammo to do this.</Original>
@@ -3954,7 +3954,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt minstens %1 munitie nodig om dit te doen.</Dutch>
 		  <French>Vous avez besoin de munitions %1 pour faire ça.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Potřebujete munici typu %1 pro dokončení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_129">
 		  <Original>Started cooking %1</Original>
@@ -3964,7 +3964,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Begonnen met het koken van %1</Dutch>
 		  <French>Début de la cuisson de %1</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Začalo vaření %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_130">
 		  <Original>Canceled cooking %1</Original>
@@ -3974,7 +3974,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Gestopt met het koken van %1</Dutch>
 		  <French>Cuisson de %1 annulée</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zrušeno vaření %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_131">
 		  <Original>Filling up %1, move to cancel.</Original>
@@ -3984,7 +3984,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met het vullen van %1, beweeg om te annuleren.</Dutch>
 		  <French>Remplissage de %1, déplacez vous pour annuler.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Plnění %1, pohněte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_132">
 		  <Original>%1 filled to %2 percent capacity.</Original>
@@ -3994,7 +3994,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 is voor %2 procent gevuld.</Dutch>
 		  <French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 je naplněno do %2 procent kapacity.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_133">
 		  <Original>Preparing to siphon, stand still to fill %1.</Original>
@@ -4004,7 +4004,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
 		  <French>Préparation du siphonage, restez immobile pour remplir %1.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Příprava pro přečerpání, stůjte na místě pro naplnění %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
 		  <Original>You have filled %1 with fuel.</Original>
@@ -4014,7 +4014,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 met brandsfof gevuld.</Dutch>
 		  <French>Vous avez rempli %1 avec du carburant.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Naplnili jste %1 palivem.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
 		  <Original>\n\nThis building needs a %1 within %2 meters</Original>
@@ -4024,7 +4024,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nDit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
 		  <French>\n\nCe bâtiment nécessite un %1 à moins de %2 mètres</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nTato budova potřebuje %1 v rámci %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
 		  <Original>Unable to build %1 nearby.</Original>
@@ -4034,7 +4034,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
 		  <French>Impossible de construire, %1 est trop proche.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nemůžete postavit %1 poblíž.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_137">
 		  <Original>\n\nMissing tool %1</Original>
@@ -4044,7 +4044,7 @@
 		  <Spanish>\n\nMissing tool %1</Spanish>
 		  <Dutch>\n\nOntbrekend gereedschap: %1</Dutch>
 		  <French>\n\nL'outil %1 est nécessaire</French>
-		  <Czech>\n\nMissing tool %1</Czech>
+		  <Czech>\n\nChybějící nástroj %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_138">
 		  <Original>Placing %1, move to cancel.</Original>
@@ -4054,7 +4054,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met het plaatsen van %1, beweeg om te annuleren</Dutch>
 		  <French>Placement de %1, déplacez vous pour annuler.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Umístění %1, přesuňte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_139">
 		  <Original>Constructing %1 stage %2 of %3, move to cancel.</Original>
@@ -4064,7 +4064,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
 		  <French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Stavím %1 fáze %2 z %3, pohněte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_140">
 		  <Original>You have setup your %2. Combination is %1</Original>
@@ -4074,7 +4074,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
 		  <French>Vous avez installé votre %2. La combinaison est %1</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nastavil jste Vaši %2. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_141">
 		  <Original>Unable to downgrade %1 nearby.</Original>
@@ -4084,7 +4084,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet downgraden %1 in de buurt.</Dutch>
 		  <French>Impossible de dégrader, %1 est trop proche.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Downgrade %1 nelze poblíž udělat.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_142">
 		  <Original>You have downgraded %1.</Original>
@@ -4094,7 +4094,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 gedowngrade.</Dutch>
 		  <French>Vous avez dégradé %1.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Downgradnuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_143">
 		  <Original>\n\n%1 of %2 could not be added to your inventory. (not enough room?)</Original>
@@ -4104,7 +4104,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\n%1 van %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
 		  <French>\n\n%1 sur %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\n%1 z %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_144">
 		  <Original>You have repaired %1.</Original>
@@ -4114,7 +4114,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 gerepareerd.</Dutch>
 		  <French>Vous avez réparé %1.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Opravili jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_145">
 		  <Original>\n\nMissing Parts after first check Item: %1 / %2</Original>
@@ -4124,7 +4124,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nMissende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nChybějící části po první kontrole itemu: %1 / %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_146">
 		  <Original>\n\nMissing %1 more of %2</Original>
@@ -4134,7 +4134,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nJe hebt nog %1 extra %2 nodig.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nChybí %1 z %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_147">
 		  <Original>\n\nChopping down tree, walk away at any time to cancel. (%1/%2)</Original>
@@ -4144,7 +4144,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nBoom wordt neergehakt, loop weg om te annuleren. (%1/%2)</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Probíhá kácení stromu, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_148">
 		  <Original>\n\n%1 piles of wood has been successfully added in front of you.</Original>
@@ -4154,7 +4154,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\n%1 stapels hout liggen nu recht voor je.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\n%1 hromad dřeva bylo úspěšně položeno před Vás.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_149">
 		  <Original>\n\nCrafting needs a %1 within %2 meters</Original>
@@ -4164,7 +4164,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nHiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nVýroba potřebuje %1 v rámci %2 metrů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_150">
 		  <Original>\n\nCrafted Item: %1 x %2</Original>
@@ -4174,7 +4174,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nItem gecreëerd: %1 x %2</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nVyrobena věc: %1 x %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_151">
 		  <Original>\n\nMissing Parts after first check Item: %1 / %2</Original>
@@ -4184,7 +4184,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nMissende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nChybějící části po první kontrole věci: %1 / %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_152">
 		  <Original>\n\n%3 complete, missing %1 more of %2</Original>
@@ -4194,7 +4194,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\n%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\n%3 hotovo, chybí ještě %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_153">
 		  <Original>\n\n%3 complete, missing %1 more of %2</Original>
@@ -4204,7 +4204,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\n%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\n%3 hotovo, chybí ještě %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_154">
 		  <Original>\n\n%1 of %2 has been successfully added to your inventory.</Original>
@@ -4214,7 +4214,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\n%1 %2 is aan je inventaris toegevoegd.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\n%1 %2 bylo úspěšně přidáno do Vašeho inventáře.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_155">
 		  <Original>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</Original>
@@ -4224,7 +4224,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nBezig met het delven van Erts, loop weg om te annuleren. (%1/%2)</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nTěžení rudy, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_156">
 		  <Original>\n\n%1 piles of ore has been successfully added in front of you.</Original>
@@ -4234,7 +4234,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\n%1 hoopjes erts liggen nu voor je neus.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>n\n\%1 rudy bylo úspěšně položeno před Vás.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_157">
 		  <Original>Unable to upgrade %1 nearby.</Original>
@@ -4244,7 +4244,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan niet upgraden %1 in de buurt.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Upgrade %1 nelze poblíž udělat.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_158">
 		  <Original>You have upgraded %2. Combination is %1</Original>
@@ -4254,7 +4254,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt een %2 geupgrade. De combinatie is %1</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Upgradnuli jste %2. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_159">
 		  <Original>You have upgraded %1.</Original>
@@ -4264,7 +4264,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 geupgrade.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Upgranuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_160">
 		  <Original>Preparing to refuel, stand still to drain %1.</Original>
@@ -4274,7 +4274,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bijtanken aan het voorbereiden. Sta stil om de %1 leeg te gieten.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Příprava přečerpání, stůjte na místě pro čerpání z %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_161">
 		  <Original>%1 cannot hold that much fuel.</Original>
@@ -4284,7 +4284,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen ruimte meer voor brandstof in deze %1.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 nemůže mít tolik paliva.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_162">
 		  <Original>Starting de-construction of %1.</Original>
@@ -4294,7 +4294,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met het slopen van %1.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Začínám rozebírání %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_163">
 		  <Original>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</Original>
@@ -4304,7 +4304,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Rozebírání %1, fáze %2 z %3. Kdykoliv se pohněte pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_164">
 		  <Original>%1 broke cannot remove %2.</Original>
@@ -4314,7 +4314,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 se rozbil. Nelze odstranit %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_165">
 		  <Original>De-constructing %1.</Original>
@@ -4324,7 +4324,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 aan het slopen.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Rozebírání %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_166">
 		  <Original>You have successfully attached %1 to the %2</Original>
@@ -4334,7 +4334,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt succesvol %1 aan de %2 gemonteerd.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Úspěšně jste připevnili %1 ke %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_167">
 		  <Original>You need %1 to repair this</Original>
@@ -4344,7 +4344,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Om dit te repareren heb je %1 nodig.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>K opravě tohoto potřebujete %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_168">
 		  <Original>You have destroyed %1 while attempting to remove from %2</Original>
@@ -4354,7 +4354,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zničili jste %1 při pokusu o odstranění z %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_169">
 		  <Original>You have successfully removed %1 from the %2</Original>
@@ -4364,7 +4364,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt met succes de %1 van de %2 verwijderd.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Úspěšně jste odstranili %1 z %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_170">
 		  <Original>You need %1 to remove this part.</Original>
@@ -4374,7 +4374,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 nodig om dit deel te verwijderen.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Potřebujete %1 k odstranění této části.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_171">
 		  <Original>%1 has been drained for %2 litres of Fuel</Original>
@@ -4384,7 +4384,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %2 liter brandstof uit de %1 gehaald.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Z %1 bylo odčerpáno %2 litrů paliva</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_172">
 		  <Original>%1 does not have enough fuel to siphon.</Original>
@@ -4394,7 +4394,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 nemá dostatek paliva na odčerpání.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_173">
 		  <Original>Dog consumed %1, and is now tamed.</Original>
@@ -4404,7 +4404,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Hond heeft %1 gegeten, en is nu tam.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Pes snědl %1 a nyní je ochočen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_174">
 		  <Original>Dog consumed %1, yet remains untamed.</Original>
@@ -4414,7 +4414,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Hond heeft %1 gegeten, maar is nog niet tam.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Pes snědl %1, ovšem stále není ochočen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_175">
 		  <Original>%1 has been attached to Tow Truck.</Original>
@@ -4424,7 +4424,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 is bevestigd aan de sleepwagen</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 byla připevněna k odtahovému vozidlu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_176">
 		  <Original>Failed to attach %1 to Tow Truck.</Original>
@@ -4434,7 +4434,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Het is niet gelukt om %1 aan de sleepwagen te bevestigen.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nepodařilo se zaháknout %1 k odtahovému vozidlu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_177">
 		  <Original>%1 too large and cannot be towed.</Original>
@@ -4444,7 +4444,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 is te groot om te slepen.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 je příliž velký a nedá se odtáhnout.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_178">
 		  <Original>%1 has been detached from Tow Truck.</Original>
@@ -4454,7 +4454,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 is losgemaakt van de sleepwagen.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 byl odháknut z odtahového vozidla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_179">
 		  <Original>You have setup your Safe. Combination is %1</Original>
@@ -4464,7 +4464,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt je kluis geinstalleerd. De code is %1</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nastavil jste svůj sejf. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_180">
 		  <Original>Bought %3 for %1 %2.</Original>
@@ -4474,7 +4474,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %3 gekocht voor %1 %2.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nakoupeno %3 za %1 %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_181">
 		  <Original>Sold %1 %2 for %3 %4</Original>
@@ -4484,7 +4484,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 %2 verkocht voor %3 %4.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Prodáno %1 %2 za %3 %4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_182">
 		  <Original>Cannot sell %1, tires are too damaged.</Original>
@@ -4494,7 +4494,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Kan %1 niet verkopen, banden hebben teveel schade.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nelze prodat %1, pneumatiky jsou příliš poškozeny.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_183">
 		  <Original>Insufficient Stock %1</Original>
@@ -4504,7 +4504,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Onvoldoende %1 voorraad.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>%1 není na skladě.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_184">
 		  <Original>Need %1 More %2</Original>
@@ -4514,7 +4514,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Nog %1 %2 nodig</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Bude ještě potřeba %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_185">
 		  <Original>No %1 found within 20 meters.</Original>
@@ -4524,7 +4524,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen %1 binnen 20 meter gevonden.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nenalezen žádný %1 v blízkosti 20 metrů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_186">
 		  <Original>Traded %1 %2 for %3 %4</Original>
@@ -4534,7 +4534,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je hebt %1 %2 verhandeld voor %3 %4</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyobchodováno %1 %2 za %3 %4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_187">
 		  <Original>Starting trade, stand still to complete trade %1 of %2.</Original>
@@ -4544,7 +4544,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Handel gestart, sta stil om te voltooien. (%1 van %2)</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Začínám obchod, stůjte na místě pro dokončení obchodu %1 z %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_188">
 		  <Original>Examine</Original>
@@ -4554,7 +4554,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Onderzoek</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Prozkoumat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_189">
 		  <Original>Craft Ramp</Original>
@@ -4564,7 +4564,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak schans</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Rampu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_190">
 		  <Original>Craft Tent</Original>
@@ -4574,7 +4574,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak tent</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_191">
 		  <Original>Craft Desert Tent</Original>
@@ -4584,7 +4584,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak Woestijntent</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Pouštní stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_192">
 		  <Original>Craft Green Tent</Original>
@@ -4594,7 +4594,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak Groene tent</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Zelený stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_193">
 		  <Original>Craft Sun Shade</Original>
@@ -4604,7 +4604,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak zonwering</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Sluneční clonu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_194">
 		  <Original>Craft Burlap</Original>
@@ -4614,7 +4614,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak Jutte</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Pytlovinu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_195">
 		  <Original>Craft Sandbag</Original>
@@ -4624,7 +4624,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak Zandzak</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_196">
 		  <Original>Craft Light Pole</Original>
@@ -4634,7 +4634,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak Lichtmast</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Lampu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_197">
 		  <Original>Add 1 10oz Gold</Original>
@@ -4644,7 +4644,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 1 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidáno 1 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_198">
 		  <Original>Add 10 10oz Gold</Original>
@@ -4654,7 +4654,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 10 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidáno 10 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_199">
 		  <Original>Add 9 10oz Gold</Original>
@@ -4664,7 +4664,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 9 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidáno 9 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_200">
 		  <Original>Remove 1 10oz Gold</Original>
@@ -4674,7 +4674,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verwijder 1 10oz Goud</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Odebráno 1 10oz zlato</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_201">
 		  <Original>Empty Case</Original>
@@ -4684,7 +4684,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak kist leeg</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Prázdný kufřík</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_202">
 		  <Original>Add 8 10oz Gold</Original>
@@ -4694,7 +4694,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 8 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidáno 8 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_203">
 		  <Original>Add 7 10oz Gold</Original>
@@ -4704,7 +4704,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 7 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidáno 7 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_204">
 		  <Original>Add 6 10oz Gold</Original>
@@ -4714,7 +4714,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 6 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidáno 6 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_205">
 		  <Original>Add 5 10oz Gold</Original>
@@ -4724,7 +4724,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 5 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidáno 5 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_206">
 		  <Original>Add 4 10oz Gold</Original>
@@ -4734,7 +4734,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 4 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidat 4 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_207">
 		  <Original>Add 3 10oz Gold</Original>
@@ -4744,7 +4744,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 3 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Prodat 3 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_208">
 		  <Original>Add 2 10oz Gold</Original>
@@ -4754,7 +4754,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voeg 2 10oz Goud toe</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přidat 2 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_209">
 		  <Original>Open %1</Original>
@@ -4764,7 +4764,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Open %1</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Otevřít %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210">
 		  <Original>Smelt 10oz bar</Original>
@@ -4774,7 +4774,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Smelt 10oz balk</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Slít 10oz cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211">
 		  <Original>Smelt 1oz bar</Original>
@@ -4784,7 +4784,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Smelt 1oz balk</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Slít 1oz cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_212">
 		  <Original>Salvage Scrap</Original>
@@ -4794,7 +4794,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verzamel materiaal</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Rozebrat šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_213">
 		  <Original>Craft Pole</Original>
@@ -4804,7 +4804,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer paal</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit tyč</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_214">
 		  <Original>Build Corrugated Fence</Original>
@@ -4814,7 +4814,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouw Ribbelplaten hek</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Postavit Zvlněný plot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_215">
 		  <Original>Craft Wooden Shed</Original>
@@ -4824,7 +4824,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouw houten schuur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dřevěnou kůlnu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_216">
 		  <Original>Craft Storage Shed</Original>
@@ -4834,7 +4834,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouw opslag schuur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Skladovací kůlnu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_217">
 		  <Original>Craft Outhouse</Original>
@@ -4844,7 +4844,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouw buitenhuisje</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Kadibudku</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_218">
 		  <Original>Craft Corrugated Fence</Original>
@@ -4854,7 +4854,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouw ribbelplaten hek</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Zvlněný plot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_219">
 		  <Original>Craft Rusty Gate</Original>
@@ -4864,7 +4864,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouw roestige poort</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Rezavou bránu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_220">
 		  <Original>Craft Metal Panel</Original>
@@ -4874,7 +4874,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Ceëer metalen paneel</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Železný panel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_221">
 		  <Original>Pack 6 Coke</Original>
@@ -4884,7 +4884,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verpak 6 cola</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zabalit 6 Coca-Col</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_222">
 		  <Original>Pack 6 Pepsi</Original>
@@ -4894,7 +4894,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verpak 6 pepsi</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zabalit 6 Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_223">
 		  <Original>Pack Scrap Metal</Original>
@@ -4904,7 +4904,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verpak scrap metal</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zabalit Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_224">
 		  <Original>Pack Tank Traps</Original>
@@ -4914,7 +4914,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verpak tank traps</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zabalit Tankové zátarasy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_225">
 		  <Original>Pack Wire Kits</Original>
@@ -4924,7 +4924,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verpak prikkeldraad rollen</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zabalit Kotouče drátu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_226">
 		  <Original>Pack Bacon</Original>
@@ -4934,7 +4934,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verpak speklappen</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zabalit Slaninu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_227">
 		  <Original>Pack 6 Bacon</Original>
@@ -4944,7 +4944,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Verpack 6 speklappen</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zabalit 6 Slanin</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_228">
 		  <Original>Craft Metal Floor</Original>
@@ -4954,7 +4954,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer metalen vloer</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Železnou podlahu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_229">
 		  <Original>Craft Lg Camo Net</Original>
@@ -4964,7 +4964,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer groot camouflagenet</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Velkou kamuflážní síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_230">
 		  <Original>Place Safe</Original>
@@ -4974,7 +4974,7 @@
 		  <Spanish>Place Safe</Spanish>
 		  <Dutch>Place Safe</Dutch>
 		  <French>Place Safe</French>
-		  <Czech>Place Safe</Czech>
+		  <Czech>Položit Sejf</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_231">
 		  <Original>Place Lockbox</Original>
@@ -4984,7 +4984,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Plaats afsluitbare kist</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Položit skřínku</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_232">
 		  <Original>Craft Wood Floor</Original>
@@ -4994,7 +4994,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer houten vloer</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dřevěnou podlahu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_232a">
 		  <Original>Craft Wood Floor 1/2</Original>
@@ -5004,7 +5004,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer houten vloer 1/2</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Poloviční dřevěnou podlahu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_233">
 		  <Original>Craft Stair Supports</Original>
@@ -5014,7 +5014,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer trapsteunen</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Podpěry schodů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_234">
 		  <Original>Craft Doorway</Original>
@@ -5024,7 +5024,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer Deuropening</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Vchod</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_235">
 		  <Original>Craft Window</Original>
@@ -5034,7 +5034,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer raam</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Okno</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_236">
 		  <Original>Craft Large Wall</Original>
@@ -5044,7 +5044,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer grote muur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Velkou zeď</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_237">
 		  <Original>Craft Wood Wall</Original>
@@ -5054,7 +5054,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer houten muur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dřevěnou zeď</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_238">
 		  <Original>Craft Door</Original>
@@ -5064,7 +5064,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer deur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dveře</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239">
 		  <Original>Craft Locked Door</Original>
@@ -5074,7 +5074,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer afsluitbare deur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Zamčené dveře</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_240">
 		  <Original>Craft Garage Door</Original>
@@ -5084,7 +5084,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer garagedeur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Garážová vrata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_241">
 		  <Original>Build Fire</Original>
@@ -5094,7 +5094,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bouw kampvuur</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit ohniště</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_242">
 		  <Original>Craft Lumber</Original>
@@ -5104,7 +5104,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer planken</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dřevo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_243">
 		  <Original>Craft Arrows</Original>
@@ -5114,7 +5114,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer pijlen</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Šípy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_244">
 		  <Original>Craft Stick Fence</Original>
@@ -5124,7 +5124,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Creëer takken hek</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dřevěnou ohradu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_245">
 		  <Original>\n\nFailed, you must get into drivers seat first.</Original>
@@ -5134,7 +5134,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nMislukt, stap eerst in de bestuurders stoel.</Dutch>
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>\n\nNepodařilo se, musíte nejdříve na místo řidiče.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_246">
 		  <Original>Plot Pole</Original>
@@ -5144,7 +5144,7 @@
 		  <Spanish>Plot Pole</Spanish>
 		  <Dutch>Plot Pole</Dutch>
 		  <French>Plot Pole</French>
-		  <Czech>Plot Pole</Czech>
+		  <Czech>Pozemková značka</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_247">
 		  <Original>Quiet</Original>
@@ -5154,7 +5154,7 @@
 		  <Spanish>Quiet</Spanish>
 		  <Dutch>Quiet</Dutch>
 		  <French>Quiet</French>
-		  <Czech>Quiet</Czech>
+		  <Czech>Tichý</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_248">
 		  <Original>Alert</Original>
@@ -5164,7 +5164,7 @@
 		  <Spanish>Alert</Spanish>
 		  <Dutch>Alert</Dutch>
 		  <French>Alert</French>
-		  <Czech>Alert</Czech>
+		  <Czech>Poplach</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_249">
 		  <Original>Walk</Original>
@@ -5174,7 +5174,7 @@
 		  <Spanish>Walk</Spanish>
 		  <Dutch>Walk</Dutch>
 		  <French>Walk</French>
-		  <Czech>Walk</Czech>
+		  <Czech>Jít</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_250">
 		  <Original>Run</Original>
@@ -5184,7 +5184,7 @@
 		  <Spanish>Run</Spanish>
 		  <Dutch>Run</Dutch>
 		  <French>Run</French>
-		  <Czech>Run</Czech>
+		  <Czech>Běžet</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_251">
 		  <Original>Unpack</Original>
@@ -5194,7 +5194,7 @@
 		  <Spanish>Unpack</Spanish>
 		  <Dutch>Unpack</Dutch>
 		  <French>Unpack</French>
-		  <Czech>Unpack</Czech>
+		  <Czech>Rozbalit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_252">
 		  <Original>Craft Half Wall</Original>
@@ -5204,7 +5204,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Poloviční zeď</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 		  <Original>Craft Garage Doorway</Original>
@@ -5214,7 +5214,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Garážový vjezd</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_254">
 		  <Original>Craft Plywood</Original>
@@ -5224,7 +5224,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Překližku</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_255">
 		  <Original>Craft Supply Crate</Original>
@@ -5234,7 +5234,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Krabici se zásobami</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_256">
 		  <Original>Craft Deer Stand</Original>
@@ -5244,7 +5244,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Posed</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_257">
 		  <Original>Craft Wood Stairs</Original>
@@ -5254,7 +5254,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dřevěné schody</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_258">
 		  <Original>Craft Wood Ladder</Original>
@@ -5264,7 +5264,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Dřevěné schody</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_259">
 		  <Original>Craft Lumber Pack</Original>
@@ -5274,7 +5274,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Balík dřeva</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_260">
 		  <Original>Craft Workbench</Original>
@@ -5284,7 +5284,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Pracovní stůl</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_261">
 		  <Original>Craft Shack</Original>
@@ -5294,7 +5294,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Chatrč</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_262">
 		  <Original>Craft Floor 1/4</Original>
@@ -5304,7 +5304,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Podlahu (1/4)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_263">
 		  <Original>Craft Wall 1/3</Original>
@@ -5314,7 +5314,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Zeď (1/3)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_264">
 		  <Original>Craft Plywood Pack</Original>
@@ -5324,7 +5324,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Balík překližky</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_265">
 		  <Original>Craft Scrap Metal</Original>
@@ -5334,7 +5334,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vyrobit Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_266">
 		  <Original>Smelt Silver Bar</Original>
@@ -5344,7 +5344,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Slít Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
 		  <Original>Smelt Gold Bar</Original>
@@ -5354,7 +5354,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Slít Zlatou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_268">
 		  <Original>Wear %1</Original>
@@ -5364,7 +5364,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Nosit %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_269">
 		  <Original>Craft Bandages</Original>
@@ -5374,7 +5374,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Obvazy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_269b">
 		  <Original>Craft Canvas</Original>
@@ -5384,7 +5384,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Plátno</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_270">
 		  <Original>Craft Desert Net</Original>
@@ -5394,7 +5394,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Pouštní maskovací síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_271">
 		  <Original>Craft Forest Net</Original>
@@ -5404,7 +5404,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Lesní maskovací síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_272">
 		  <Original>Build Sandbag</Original>
@@ -5414,7 +5414,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Postavit Pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273">
 		  <Original>Craft Large Sandbag</Original>
@@ -5424,7 +5424,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Velké pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_274">
 		  <Original>Craft Sandbag Nest</Original>
@@ -5434,7 +5434,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Pískovou bariéru</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_275">
 		  <Original>Craft Sledge</Original>
@@ -5444,7 +5444,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Palici</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_276">
 		  <Original>Craft Fire Barrel</Original>
@@ -5454,7 +5454,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Hořící sud</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_277">
 		  <Original>Craft Gun Rack</Original>
@@ -5464,7 +5464,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Stojan na zbraně</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_278">
 		  <Original>Gear</Original>
@@ -5474,7 +5474,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Výbava</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_279">
 		  <Original>Filter</Original>
@@ -5484,7 +5484,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Filtr</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_280">
 		  <Original>Rearm</Original>
@@ -5494,7 +5494,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přezbrojit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_281">
 		  <Original>Open bag</Original>
@@ -5504,7 +5504,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Otevřít batoh</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_282">
 		  <Original>Close bag</Original>
@@ -5514,7 +5514,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zavřít batoh</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_283">
 		  <Original>Close</Original>
@@ -5524,7 +5524,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zavřít</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_284">
 		  <Original>All</Original>
@@ -5534,7 +5534,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vše</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_285">
 		  <Original>Primary</Original>
@@ -5544,7 +5544,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Primární</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_286">
 		  <Original>Secondary</Original>
@@ -5554,7 +5554,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Sekundární</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_287">
 		  <Original>HandGun</Original>
@@ -5564,7 +5564,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Příruční zbraň</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_288">
 		  <Original>Items</Original>
@@ -5574,7 +5574,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Předměty</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_289">
 		  <Original>Trader Menu</Original>
@@ -5584,7 +5584,7 @@
 		  <Spanish>Trader Menu</Spanish>
 		  <Dutch>Trader Menu</Dutch>
 		  <French>Trader Menu</French>
-		  <Czech>Trader Menu</Czech>
+		  <Czech>Nabídka obchodníka</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_290">
 		  <Original>Categories</Original>
@@ -5594,7 +5594,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Kategorie</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_291">
 		  <Original>Buy</Original>
@@ -5604,7 +5604,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Koupit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_292">
 		  <Original>Sell</Original>
@@ -5614,7 +5614,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Prodat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_293">
 		  <Original>Buy For</Original>
@@ -5624,7 +5624,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Koupit za</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_294">
 		  <Original>Sell For</Original>
@@ -5634,7 +5634,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Prodat za</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_295">
 		  <Original>Remove from Toolbelt.</Original>
@@ -5644,7 +5644,7 @@
 		  <Spanish>Remove from Toolbelt.</Spanish>
 		  <Dutch>Verwijder van gereedschapsgordel</Dutch>
 		  <French>Retirer de la Ceinture.</French>
-		  <Czech>Remove from Toolbelt.</Czech>
+		  <Czech>Odstranit z opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_296">
 		  <Original>Add to Toolbelt.</Original>
@@ -5654,7 +5654,7 @@
 		  <Spanish>Add to Toolbelt.</Spanish>
 		  <Dutch>Voeg toe aan gereedschapsgordel</Dutch>
 		  <French>Ajouter à la Ceinture.</French>
-		  <Czech>Add to Toolbelt.</Czech>
+		  <Czech>Přidat do opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_297">
 		  <Original>Cast Fishing Pole</Original>
@@ -5664,7 +5664,7 @@
 		  <Spanish>Cast Fishing Pole</Spanish>
 		  <Dutch>Werp vislijn uit</Dutch>
 		  <French>Lancer la Ligne</French>
-		  <Czech>Cast Fishing Pole</Czech>
+		  <Czech>Nahození prutu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_298">
 		  <Original>Craft Round Fence</Original>
@@ -5674,7 +5674,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_299">
 		  <Original>Build Round Fence</Original>
@@ -5684,7 +5684,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Postavit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_300">
 		  <Original>Craft Sandbag</Original>
@@ -5694,7 +5694,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_301">
 		  <Original>Trade Metals</Original>
@@ -5704,7 +5704,7 @@
 		  <Spanish>Trade Metals</Spanish>
 		  <Dutch>Trade Metals</Dutch>
 		  <French>Trade Metals</French>
-		  <Czech>Trade Metals</Czech>
+		  <Czech>Obchod s kovy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 		  <Original>Repair Vehicle</Original>
@@ -5714,7 +5714,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Repareer voertuig</Dutch>
 		  <French>Réparer le véhicule</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Opravit vozidlo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIR">
 		  <Original>Repair</Original>
@@ -5724,7 +5724,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Repareer</Dutch>
 		  <French>Réparer</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Opravit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REMOVE">
 		  <Original>Remove</Original>
@@ -5734,7 +5734,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Demonteer</Dutch>
 		  <French>Retirer</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Demontovat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_SALVAGEV">
 		  <Original>Salvage Vehicle</Original>
@@ -5744,7 +5744,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Demonteer voertuig</Dutch>
 		  <French>Récupérer des pièces</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Demontovat vozidlo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_CARGO">
 		  <Original>Cargo Check</Original>
@@ -5754,7 +5754,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Controleer Bagage</Dutch>
 		  <French>Vérifier la cargaison</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Kontrola nákladu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_CANCEL">
 		  <Original>Cancel</Original>
@@ -5764,7 +5764,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Annuleren</Dutch>
 		  <French>Annuler</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Zrušit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 		  <Original>Upgrade Vehicle</Original>
@@ -5774,7 +5774,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voertuig Verbeteren</Dutch>
 		  <French>Améliorer Véhicule</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Upgrade vozidla</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP">
 		  <Original>Offroad Performance</Original>
@@ -5784,7 +5784,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Offroad Prestaties</Dutch>
 		  <French>Performances tout-terrain</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Terénní výkonnost</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_DESC">
 		  <Original>Offroad performace manual.</Original>
@@ -5794,7 +5794,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Handleiding over offroad prestaties.</Dutch>
 		  <French>Manuel sur les performances tout-terrain.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Manuál terénní výkonnosti.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE">
 		  <Original>Vehicle Maintenance</Original>
@@ -5804,7 +5804,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voertuigonderhoud</Dutch>
 		  <French>Maintenance du véhicule</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Údržba vozidla</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_DESC">
 		  <Original>Vehicle maintenance and engineering manual.</Original>
@@ -5814,7 +5814,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Werkplaatshandboek voor voertuigonderhoud en verbetering.</Dutch>
 		  <French>Manuel de mécanique et d'entretien du véhicule.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Manuál údržby vozidel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK">
 		  <Original>Luggage Rack</Original>
@@ -5824,7 +5824,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch> Bagagerek</Dutch>
 		  <French>Galerie</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Přihrádka na zavazadla</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_DESC">
 		  <Original>Luggage Rack install guide.</Original>
@@ -5834,7 +5834,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Installatiehandleiding voor het bagagerek.</Dutch>
 		  <French>Guide d'installation d'une galerie pour augmenter le stockage du véhicule.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Návod na instalaci Přihrádky na zavazadla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK">
 		  <Original>Fuel Tank</Original>
@@ -5844,7 +5844,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Benzinetank</Dutch>
 		  <French>Réservoir</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Palivová nádrž</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_DESC">
 		  <Original>Fuel Tank install guide.</Original>
@@ -5854,7 +5854,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Installatiehandleiding voor de benzinetank.</Dutch>
 		  <French>Guide d'installation du réservoir.</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Návod na instalaci Palivové nádrže.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
 		  <Original>Vehicle Upgrade Successful.</Original>
@@ -5864,7 +5864,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French></French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Upgrade vozidla byl úspěšný.</Czech>
 		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
@@ -5884,7 +5884,7 @@
 		  <Spanish>%1 | Weight carried : %2 lb</Spanish>
 		  <Dutch>%1 | Weight carried : %2 lb</Dutch>
 		  <French>%1 | Poids transporté : %2 Kg</French>
-		  <Czech>%1 | Weight carried : %2 lb</Czech>
+		  <Czech>%1 | Nesená váha : %2 lb</Czech>
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_English">
 		  <Original>lb</Original>
