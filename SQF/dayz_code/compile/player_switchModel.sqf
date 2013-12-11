@@ -1,4 +1,4 @@
-private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_playerObjName","_wpnType","_ismelee"];
+private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_playerObjName","_wpnType","_ismelee","_tagSetting"];
 _class 			= _this;
 
 _position 		= getPosATL player;
@@ -6,6 +6,7 @@ _dir 			= getDir player;
 _currentAnim 	= animationState player;
 //_currentCamera	= cameraView;
 
+_tagSetting = player getVariable["DZE_display_name",false];
 
 //Get PlayerID
 _playerUID = "";
@@ -150,6 +151,7 @@ if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 player disableConversation true;
 	
 player setVariable ["bodyName",dayz_playerName,true];
+player setVariable["DZE_display_name",_tagSetting,true];
 
 _playerUID=getPlayerUID player;
 _playerObjName = format["player%1",_playerUID];
@@ -163,6 +165,5 @@ if (_ismelee == "true") then {
 	call dayz_meleeMagazineCheck; 
 };
         
-//reveal all near objects.
-{player reveal _x} forEach (nearestObjects [getPosATL player, ["All"], 50]);
-//All is arbitrary and will need to be changed to ["AllVehicles","WeaponHolder","tentStorage"] ++ others (stashes etc.)
+//reveal the same objects we do on login
+{player reveal _x} forEach (nearestObjects [getPosATL player, dayz_reveal, 50]);
