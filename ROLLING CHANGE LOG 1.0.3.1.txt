@@ -4,6 +4,7 @@
 [ADDED] Built in antihack enabled by default via mission init.sqf. @facoptre
 [ADDED] Added Czech localization Credits: GeodarCZ, Brovns, Doomscythe
 [ADDED] DZE_requireplot override variable added. DZE_requireplot = 0; in init.sqf disables plot pole requirement to build. @vbawol
+[ADDED] Bell 47/H-13 Helicopter by hcpookie http://www.armaholic.com/page.php?id=22143
 
 [FIXED] Incorporated DayZ CE skin changing routines for melee weapons and add back actions after skin changes. @dayz10k
 [FIXED] Proper stringtables (options) on SkinBase craftables (bandages, canvas) @dayz10k
