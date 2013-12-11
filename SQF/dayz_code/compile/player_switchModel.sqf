@@ -151,7 +151,10 @@ if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 player disableConversation true;
 	
 player setVariable ["bodyName",dayz_playerName,true];
-player setVariable["DZE_display_name",_tagSetting,true];
+
+if (_tagSetting) then {
+	DZE_ForceNameTags = true;
+};
 
 _playerUID=getPlayerUID player;
 _playerObjName = format["player%1",_playerUID];
