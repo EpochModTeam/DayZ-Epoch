@@ -21,7 +21,9 @@ if (!_hasclothesitem) exitWith { DZE_ActionInProgress = false; cutText [format[(
 
 if (vehicle player != player) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_85"), "PLAIN DOWN"]};
 
-if (!isNull (unitBackpack player)) exitWith { DZE_ActionInProgress = false; cutText ["\n\nUnable to change clothes while still hearing backpack.", "PLAIN DOWN"] };
+if (!isNull (unitBackpack player)) exitWith { DZE_ActionInProgress = false; cutText ["\n\nUnable to change clothes while wearing backpack.", "PLAIN DOWN"] };
+
+if ("CSGAS" in (magazines player)) exitWith { DZE_ActionInProgress = false; cutText ["\n\nUnable to change clothes while carrying a filled chainsaw.", "PLAIN DOWN"] };
 
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
