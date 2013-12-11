@@ -15,6 +15,7 @@
 [FIXED] Armored SUV DZ had incorrect max weapon count. @vbawol
 [FIXED] Fixed two createvehicle calls for weapon spawn_loot.@Torndeco
 
+[CHANGED] Lower plank pack spawn chance raise sledge handle and fishing pole chances in farm spawns. @vbawol
 [CHANGED] Must take backpack off before you can change clothes.  @vbawol
 [CHANGED] Removed 10m check for nearby players when chaning clothes.  @vbawol
 [CHANGED] Null cleanup was not working as intended disabled by default needs further testing. @vbawol
