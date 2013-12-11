@@ -43,16 +43,16 @@ Contributors
 * Torndeco - Fixes - https://github.com/Torndeco
 * Armifer - Humanity changes. - https://github.com/Armifer
 * AVendettaForYou - Trader City Tavi - https://github.com/AVendettaForYou
-* Skaronator, krazey - German localization - https://github.com/Skaronator https://github.com/krazey
-* VeryBigBro - Russian localization - https://github.com/VeryBigBro
-* th4z - French localization - https://github.com/th4z
-* JoSchaap - Dutch localization and some typo's - https://github.com/JoSchaap
+* Skaronator, krazey - German Localization - https://github.com/Skaronator https://github.com/krazey
+* VeryBigBro - Russian Localization - https://github.com/VeryBigBro
+* th4z - French Localization - https://github.com/th4z
+* JoSchaap - Dutch Localization and some typo's - https://github.com/JoSchaap
 * Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
 * aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
 * vos / Axe Cop - Area Maintenance and ideas - https://github.com/vos
-* GeodarCZ - Czech Translation, correction
-* Brovns - Czech Translation
-* Doomscythe - Czech Translation, correction
+* GeodarCZ - Czech Localization, correction - https://github.com/Geodar
+* Brovns - Czech Localization - https://github.com/Brovns
+* Doomscythe - Czech Localization, correction - https://github.com/Doomscythe
 
 --------------------------
 Special thanks
