@@ -247,7 +247,6 @@ dayz_resetSelfActions = {
 	s_player_SurrenderedGear = -1;
 	s_player_maintain_area = -1;
         s_player_maintain_area_preview = -1;
-        s_player_plotpole_preview = -1;
 };
 call dayz_resetSelfActions;
 
