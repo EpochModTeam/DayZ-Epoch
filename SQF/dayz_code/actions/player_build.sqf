@@ -8,7 +8,7 @@ if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_40") , 
 DZE_ActionInProgress = true;
 
 // disallow building if too many objects are found within 30m
-if((count ((position player) nearObjects ["All",30])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_41"), "PLAIN DOWN"];};
+if((count ((getPosATL player) nearObjects ["All",30])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_41"), "PLAIN DOWN"];};
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		dayz_isSwimming;
@@ -57,7 +57,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 	switch(_need) do{
 		case "fire":
 		{
-			_isNear = {inflamed _x} count (position player nearObjects _distance);
+			_isNear = {inflamed _x} count (getPosATL player nearObjects _distance);
 			if(_isNear == 0) then {  
 				_abort = true;
 				_reason = "fire";

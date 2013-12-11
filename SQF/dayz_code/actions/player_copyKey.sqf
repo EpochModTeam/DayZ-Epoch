@@ -16,7 +16,7 @@ if (!_haskey) exitWith {DZE_ActionInProgress = false; cutText [format[(localize 
 _hastoolweapon = "ItemKeyKit" in weapons player;
 if (!_hastoolweapon) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_57") , "PLAIN DOWN"]};
 
-_isNear = {inflamed _x} count (position player nearObjects 3);
+_isNear = {inflamed _x} count (getPosATL player nearObjects 3);
 if(_isNear == 0) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_58") , "PLAIN DOWN"]};
 
 call gear_ui_init;

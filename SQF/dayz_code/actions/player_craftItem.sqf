@@ -42,7 +42,7 @@ _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 // Need Near Requirements
 _needNear = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "neednearby");
 if("fire" in _needNear) then {
-	_isNear = {inflamed _x} count (position player nearObjects _distance);
+	_isNear = {inflamed _x} count (getPosATL player nearObjects _distance);
 	if(_isNear == 0) then {  
 		_abort = true;
 		_reason = "fire";
