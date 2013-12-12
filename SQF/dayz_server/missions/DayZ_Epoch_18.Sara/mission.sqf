@@ -160,11 +160,6 @@ if (true) then
   _this setPos [17177.154, 13595.85, -6.1035156e-005];
 };
 
-_this = createCenter civilian;
-_center_1 = _this;
-
-_group_1 = createGroup _center_1;
-
 _unit_13 = objNull;
 if (true) then
 {
@@ -715,11 +710,6 @@ if (true) then
   _this setPos [17269.094, 9572.1572, -4.5776367e-005];
 };
 
-_this = createCenter resistance;
-_center_2 = _this;
-
-_group_2 = createGroup _center_2;
-
 _unit_108 = objNull;
 if (true) then
 {
@@ -789,10 +779,6 @@ if (true) then
   _this setVehicleInit "this allowDammage false;";
   _this setPos [17177.992, 13584.114, 6.1035156e-005];
 };
-
-setDate [1985, 5, 10, 3, 30];
-
-setDate [1985, 5, 10, 12, 30];
 
 _vehicle_663 = objNull;
 if (true) then
