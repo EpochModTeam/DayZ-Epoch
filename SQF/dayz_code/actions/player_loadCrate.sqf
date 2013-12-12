@@ -1,4 +1,4 @@
-private ["_dir","_classname","_box","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
+private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_75") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -40,23 +40,23 @@ player addMagazine "bulk_empty";
 player playActionNow "Medic";
 sleep 6;
 		
-_box = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-_box setDir _dir;
+_b0x1337 = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+_b0x1337 setDir _dir;
 
 // Fill box with Items from config.
 if(_type == "magazine") then {
-	_box addMagazineCargoGlobal [_create,_qty];
+	_b0x1337 addMagazineCargoGlobal [_create,_qty];
 };
 if(_type == "weapon") then {
-	_box addWeaponCargoGlobal [_create,_qty];
+	_b0x1337 addWeaponCargoGlobal [_create,_qty];
 };
 if(_type == "backpack") then {
-	_box addBackpackCargoGlobal  [_create,_qty];
+	_b0x1337 addBackpackCargoGlobal  [_create,_qty];
 };
 
-player reveal _box;
+player reveal _b0x1337;
 
-player action ["Gear", _box];
+player action ["Gear", _b0x1337];
 		
 cutText [(localize "str_epoch_player_78"), "PLAIN DOWN"];
 	

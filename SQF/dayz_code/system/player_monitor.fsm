@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "D:\Programme\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "F:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -24,11 +24,11 @@ item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.00000
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
 item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
-item23[] = {"ERROR__Player_Already",2,4346,175.000000,700.000000,275.000000,750.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
+item23[] = {"ERROR__Player_Already",2,250,175.000000,700.000000,275.000000,750.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item24[] = {"Alive",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Alive"};
 item25[] = {"Position",2,250,-75.000000,800.000000,25.000000,850.000000,0.000000,"Position"};
 item26[] = {"Version_Ok",4,218,-175.000000,850.000000,-75.000000,900.000000,0.000000,"Version" \n "Ok"};
-item27[] = {"Load_In",2,250,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Load In"};
+item27[] = {"Load_In",2,4346,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Load In"};
 item28[] = {"Bad_Version",4,218,50.000000,800.000000,150.000000,850.000000,0.000000,"Bad" \n "Version"};
 item29[] = {"ERROR__Bad_Versi",2,250,175.000000,800.000000,275.000000,850.000000,0.000000,"ERROR:" \n "Bad Version"};
 item30[] = {"Display_Ready",4,218,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,"Display" \n "Ready"};
@@ -147,8 +147,8 @@ link74[] = {64,57};
 link75[] = {65,13};
 link76[] = {66,67};
 link77[] = {67,18};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-472.070313,354.276123,1027.252686,179.503510,573,613,1};
-window[] = {2,-1,-1,-32000,-32000,979,376,1654,221,1,591};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-472.070313,354.276123,1514.247314,631.657410,581,630,1};
+window[] = {2,-1,-1,-1,-1,793,-39,1239,35,3,599};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -978,8 +978,13 @@ class FSM
        "0 fadeMusic 0.5;" \n
        "" \n
        "//Check mission objects" \n
-       "{ _id = [_x,0] spawn object_roadFlare } forEach (entities ""RoadFlare"");" \n
-       "{ _id = [_x,1] spawn object_roadFlare } forEach (entities ""ChemLight"");"/*%FSM</STATEINIT""">*/;
+       "{ " \n
+       "	if (typeOf _x == ""RoadFlare"") then { " \n
+       "		_id = [_x,0] spawn object_roadFlare " \n
+       "	} else {" \n
+       "		 _id = [_x,1] spawn object_roadFlare " \n
+       "	};" \n
+       " } forEach (allMissionObjects ""LitObject"");"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

@@ -65,7 +65,7 @@ if (_finished) then {
 
 			// Sound_Generator1
 			// Looks like this was the entended way of making the sound, lets test
-			_soundSource = createSoundSource ["Sound_Generator1", position player, [], 0];
+			_soundSource = createSoundSource ["Sound_Generator1", getPosATL player, [], 0];
 
 			_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
@@ -78,7 +78,7 @@ if (_finished) then {
 
 		// Sound_Generator1
 		// Looks like this was the entended way of making the sound, lets test
-		_soundSource = createSoundSource ["Sound_Generator1", position player, [], 0];
+		_soundSource = createSoundSource ["Sound_Generator1", getPosATL player, [], 0];
 
 		_vehicle setVariable ["GeneratorSound", _soundSource,true];
 

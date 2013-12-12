@@ -1,6 +1,6 @@
 /*
 	DayZ Epoch Crafting 0.3
-	Made for DayZ Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+	Made for DayZ Epoch and Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	Thanks to thevisad for help with the spawn call fixes.
 
 USAGE EXAMPLE:
@@ -42,7 +42,7 @@ _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
 // Need Near Requirements
 _needNear = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "neednearby");
 if("fire" in _needNear) then {
-	_isNear = {inflamed _x} count (position player nearObjects _distance);
+	_isNear = {inflamed _x} count (getPosATL player nearObjects _distance);
 	if(_isNear == 0) then {  
 		_abort = true;
 		_reason = "fire";

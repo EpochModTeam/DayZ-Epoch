@@ -53,9 +53,11 @@ if (_hasoutput and !_invehicle) then {
     _itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
     sleep 3;
-    _nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
+    _nearByPile= nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
     if (count _nearByPile ==0) then { 
-        _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
+		_iPos = getPosATL player;
+		_radius = 0.0;
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
     } else {
         _item = _nearByPile select 0;
     };

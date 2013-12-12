@@ -7,10 +7,6 @@ private ["_item","_onLadder","_hasclothesitem","_config","_text","_myModel","_it
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_83") , "PLAIN DOWN"] };
 DZE_ActionInProgress = true;
 
-// cannot change clothes when another player is nearby
-_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_84") , "PLAIN DOWN"];  };
-
 _item = _this;
 call gear_ui_init;
 
@@ -21,9 +17,13 @@ _hasclothesitem = _this in magazines player;
 _config = configFile >> "CfgMagazines";
 _text = getText (_config >> _item >> "displayName");
 
-if (!_hasclothesitem) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
+if (!_hasclothesitem) exitWith { DZE_ActionInProgress = false; cutText [format[(localize "str_player_31"),_text,"wear"] , "PLAIN DOWN"]};
 
-if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_85"), "PLAIN DOWN"]};
+if (vehicle player != player) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_85"), "PLAIN DOWN"]};
+
+if (!isNull (unitBackpack player)) exitWith { DZE_ActionInProgress = false; cutText ["\n\nUnable to change clothes while wearing backpack.", "PLAIN DOWN"] };
+
+if ("CSGAS" in (magazines player)) exitWith { DZE_ActionInProgress = false; cutText ["\n\nUnable to change clothes while carrying a filled chainsaw.", "PLAIN DOWN"] };
 
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;

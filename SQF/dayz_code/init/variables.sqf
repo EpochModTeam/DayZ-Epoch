@@ -614,7 +614,7 @@ if(!isDedicated) then {
 	dayz_clientPreload = 	false;
 	dayz_authed = 			false;
 	dayz_panicCooldown = 	0;
-	dayz_areaAffect =		3.5;
+	dayz_areaAffect =		2.5;
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
 	dayz_spawnDelay =		120;
@@ -659,6 +659,10 @@ if(!isDedicated) then {
 	if(isNil "DZE_AntiWallLimit") then {
 		DZE_AntiWallLimit = 1;
 	};
+	if(isNil "DZE_requireplot") then {
+		DZE_requireplot = 1;
+	};
+	
 	
 	DZE_AntiWallCounter = 0;
 
