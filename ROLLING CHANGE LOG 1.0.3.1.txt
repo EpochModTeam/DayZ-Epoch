@@ -1,4 +1,4 @@
-== ROLLING CHANGE LOG 1.0.3.1 ==
+== CHANGE LOG 1.0.3.1 ==
 [ADDED] Proper mission file support and bikeys for SMD Sara A2 http://forums.bistudio.com/showthread.php?162282-SMD_Sara_A2-Full-Sahrani-Map-Port-Initial-Release
 [ADDED] Added new loot postions for some custom buildings in SMD Sara A2.
 [ADDED] In game clarification on modular removal: you cannot delete locked doors, you must remove the lock first. @dayz10k
