@@ -25,8 +25,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ Epoch Sahrani";
-		briefingDescription="DayZ Epoch Sahrani Private Server";
+		briefingName="DayZ Epoch SMD Sahrani";
+		briefingDescription="DayZ Epoch SMD Sahrani Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;
@@ -1171,7 +1171,7 @@ class Mission
 		items=17;
 		class Item0
 		{
-			position[]={7550.6182,361.05222,8371.957};
+			position[]={10442.41,86.282227,10438.262};
 			name="center";
 			type="Empty";
 		};
@@ -1229,7 +1229,7 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={2906.6597,4.7873259,3072.0527};
+			position[]={11453.298,4.9919319,5418.7021};
 			name="boatTraderEast";
 			text="Wholesaler";
 			type="mil_dot";
@@ -1277,7 +1277,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={14271.439,39.959999,12410.709};
+			position[]={14273.87,41.640797,12408.889};
 			name="TradercityBag";
 			text="Trader City Bag";
 			type="mil_circle";
@@ -1285,7 +1285,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={18083.713,8.6999998,18196.029};
+			position[]={17270.643,14.956485,9570.7744};
 			name="HeroTrader";
 			text="Hero Camp";
 			type="mil_dot";
@@ -1314,7 +1314,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={14061.683,39.959999,12671.449};
+			position[]={14274.979,40.538948,12408.225};
 			a=100;
 			b=100;
 			activationBy="WEST";
@@ -1331,7 +1331,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={17186.52,40.06567,13596.207};
+			position[]={17182.676,40.195862,13597.488};
 			a=100;
 			b=100;
 			activationBy="WEST";
