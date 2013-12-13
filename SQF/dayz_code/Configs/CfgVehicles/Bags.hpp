@@ -21,7 +21,7 @@ class Bag_Base_EP1 : ReammoBox_EP1 {
 class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Patrol Pack (coyote)";
+	displayName = $STR_EPOCH_PACK_PATROL;
 	picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_COYOTE_CA.paa";
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	mapsize = 2;
@@ -37,7 +37,7 @@ class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 class DZ_Assault_Pack_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Assault Pack (ACU)";
+	displayName = $STR_EPOCH_PACK_ASSAULT;
 	picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_CA.paa";
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	mapSize = 2;
@@ -52,7 +52,7 @@ class DZ_Assault_Pack_EP1: Bag_Base_EP1
 
 class DZ_Czech_Vest_Puch: Bag_Base_EP1
 {
-	displayname = "Czech Vest Pouch";
+	displayname = $STR_EPOCH_PACK_POUCH;
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	mapsize = 2;
 	model = "\ca\weapons_e\AmmoBoxes\backpack_acr_small.p3d";
@@ -69,7 +69,7 @@ class DZ_Czech_Vest_Puch: Bag_Base_EP1
 class DZ_ALICE_Pack_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "ALICE Pack";
+	displayName = $STR_EPOCH_PACK_ALICE;
 	picture = "\ca\weapons_e\data\icons\backpack_TK_ALICE_CA.paa";
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	mapsize = 2;
@@ -85,7 +85,7 @@ class DZ_ALICE_Pack_EP1: Bag_Base_EP1
 class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Survival ACU";
+	displayName = $STR_EPOCH_PACK_ACU;
 	mapSize = 2;
 	picture = "\ca\weapons_e\data\icons\backpack_CIVIL_ASSAULT_CA.paa";
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
@@ -101,7 +101,7 @@ class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
 class DZ_British_ACU : Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "British Assault Pack";
+	displayName = $STR_EPOCH_PACK_BAP;
 	mapSize = 2;
 	model = "\ca\weapons_baf\Backpack_Small_BAF";\
 	picture = "\ca\weapons_baf\data\UI\backpack_BAF_CA.paa";
@@ -117,7 +117,7 @@ class DZ_British_ACU : Bag_Base_EP1
 class DZ_CivilBackpack_EP1: Bag_Base_EP1    
 {
 	scope = 2;
-	displayName = "Czech Backpack";
+	displayName = $STR_EPOCH_PACK_CZECH;
 	picture = "\ca\weapons_e\data\icons\backpack_ACR_CA.paa";
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	mapsize = 2;
@@ -133,7 +133,7 @@ class DZ_CivilBackpack_EP1: Bag_Base_EP1
 class DZ_Backpack_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Backpack (coyote)";
+	displayName = $STR_EPOCH_PACK_COYOTE;
 	picture = "\ca\weapons_e\data\icons\backpack_US_CA.paa";
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	mapsize = 2;
@@ -149,7 +149,7 @@ class DZ_Backpack_EP1: Bag_Base_EP1
 class DZ_LargeGunBag_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Large Gunbag";
+	displayName = $STR_EPOCH_PACK_LGB;
 	model = "\ca\weapons_e\AmmoBoxes\StaticX.p3d"; 
 	picture = "\ca\weapons_e\data\icons\staticX_CA.paa"; 
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
@@ -164,7 +164,7 @@ class DZ_LargeGunBag_EP1: Bag_Base_EP1
 class DZ_GunBag_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Gunbag";
+	displayName = $STR_EPOCH_PACK_GB;
 	model = "\ca\weapons_e\AmmoBoxes\StaticY.p3d"; 
 	picture = "\ca\weapons_e\data\icons\staticY_CA.paa"; 
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
@@ -179,7 +179,7 @@ class DZ_GunBag_EP1: Bag_Base_EP1
 class DZ_CompactPack_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Compact Pack"; 
+	displayName = $STR_EPOCH_PACK_COMPACT; 
 	picture = "\ca\weapons_e\data\icons\backpack_RPG_CA.paa"; 
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
 	mapsize = 2; 
@@ -194,7 +194,7 @@ class DZ_CompactPack_EP1: Bag_Base_EP1
 class DZ_TerminalPack_EP1: Bag_Base_EP1
 {
 	scope = 2;
-	displayName = "Terminal Pack"; 
+	displayName = $STR_EPOCH_PACK_TERMINAL; 
 	picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_CA.paa"; 
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
 	mapSize = 2; 
