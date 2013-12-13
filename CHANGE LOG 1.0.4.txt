@@ -1,7 +1,7 @@
 [ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
         by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole @dayz10k @vos
 
-[FIXED]
+[FIXED] More Localization (translations).  @dayz10k, @VeryBigBro (Russian), @JoSchaap (Dutch), @Geodar (Czech)
 
 [CHANGED] All copper prices have been changed to 2 silver to buy, 1 silver to sell @dayz10k
 
