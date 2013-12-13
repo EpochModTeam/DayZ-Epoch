@@ -44,6 +44,8 @@ dayz_tameDogs = true;
 DynamicVehicleDamageLow = 0; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
 
+DZE_BuildOnRoads = false; // Default: False
+
 // DZEdebug = true;
 
 //Load in compiled functions
