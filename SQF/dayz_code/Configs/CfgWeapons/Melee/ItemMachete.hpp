@@ -1,7 +1,7 @@
 class ItemMachete: ItemCore
 	{
 		scope=2;
-		displayName="Machete";
+		displayName=$STR_EQUIP_MACHETE;
 		model="\z\addons\dayz_communityassets\models\machete.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
