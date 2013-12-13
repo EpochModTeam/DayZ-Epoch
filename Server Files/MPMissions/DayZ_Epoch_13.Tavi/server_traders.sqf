@@ -58,7 +58,7 @@ menu_RU_Doctor = [
 //FOOD & DRINK
 menu_RU_Damsel5 = [
 	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
 	"hero"
 ];
 
@@ -87,7 +87,7 @@ menu_Dr_Hladik_EP1 = [
 //FOOD & DRINK
 menu_RU_Farmwife5 = [
 	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
 	"hostile"
 ];
 
@@ -122,7 +122,7 @@ menu_Soldier_GL_PMC = [
 //FOOD & DRINK
 menu_Citizen3 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
 	"neutral"
 ];
 
