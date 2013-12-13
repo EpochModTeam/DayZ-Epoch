@@ -27,7 +27,7 @@ menu_CIV_Contractor1_BAF = [
 // General Store C
 menu_RU_Farmwife4 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Tin Bar",101]],
 	"neutral"
 ];
 // Weapons neutral C
@@ -81,7 +81,7 @@ menu_Ins_Woodlander2 = [
 // General Store 2 C
 menu_RU_Damsel4 = [
 	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Tin Bar",101]],
 	"neutral"
 ];
 // Medical Supplies C
