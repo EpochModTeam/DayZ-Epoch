@@ -457,6 +457,9 @@ if(isNil "DZE_HumanityTargetDistance") then {
 if(isNil "DZE_FriendlySaving") then {
 	DZE_FriendlySaving = true;
 };
+if(isNil "DZE_BuildOnRoads") then {
+	DZE_BuildOnRoads = false;
+};
 
 DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
 
