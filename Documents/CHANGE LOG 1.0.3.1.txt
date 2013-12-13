@@ -14,7 +14,7 @@
 [FIXED] dayz_minpos was incorrectly set to 0 for chernarus and should have been -1 or less. @vbawol
 [FIXED] Fixed some typos in Sahrani mission files. @vbawol
 [FIXED] Removed radar from GAZ Vodnik. @dayz10k
-[FIXED] Incorrect call compile paths for tavi traders.
+[FIXED] Incorrect call compile paths for tavi traders. @vbawol
 [FIXED] Armored SUV DZ had incorrect max weapon count. @vbawol
 [FIXED] Fixed two createvehicle calls for weapon spawn_loot. @Torndeco
 [FIXED] Building count limiter was using wrong position command now uses correct one. @vbawol
