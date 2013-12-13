@@ -6,7 +6,7 @@ class MeleeMachete: MeleeWeapon
 		magazineReloadTime=0;
 		model="\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
-		displayName="Machete";
+		displayName=$STR_EQUIP_MACHETE;
 		droppeditem= "MeleeMachete";
 		magazines[]=
 		{
