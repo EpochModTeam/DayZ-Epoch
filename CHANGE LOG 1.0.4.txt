@@ -1,9 +1,11 @@
-[ADDED]
+[ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
+        by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole @dayz10k @vos
 
 [FIXED]
 
-[CHANGED]
+[CHANGED] All copper prices have been changed to 2 silver to buy, 1 silver to sell @dayz10k
 
-[REMOVED]
+[REMOVED] Copper is no longer a usable currency. Existing copper will remain in game, but has no current use. @dayz10k
 
-[INFO]
+[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Special thanks to http://bmrf.me/ for hosting our development server.
