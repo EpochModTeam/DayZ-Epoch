@@ -31,7 +31,7 @@ menu_Soldier_Bodyguard_M4_PMC = [
 // General Store
 menu_RU_Damsel1 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
 	"neutral"
 ];
 
@@ -94,7 +94,7 @@ menu_GUE_Commander = [
 // General Store 2
 menu_RU_Damsel2 = [
 	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
 	"neutral"
 ];
 

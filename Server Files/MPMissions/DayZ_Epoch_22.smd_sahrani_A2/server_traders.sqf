@@ -27,7 +27,7 @@ menu_Profiteer4 = [
 // General Store
 menu_Rita_Ensler_EP1 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
 	"neutral"
 ];
 // Weapons neutral
