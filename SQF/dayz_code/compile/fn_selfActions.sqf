@@ -214,7 +214,6 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		//Allow owners to delete modulars
                 if(_isModular and (dayz_characterID == _ownerID)) then {
                         if(_hasToolbox and "ItemCrowbar" in _itemsPlayer) then {
-                        	if(_cursorTarget in DZE_DoorsLocked) exitwith  {cutText ["You must remove the lock to delete this item!", "PLAIN DOWN"]; };
                                 _player_deleteBuild = true;
                         };
                 };
@@ -239,11 +238,14 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	
 	};
 
-	if(_player_deleteBuild) then {
+	if(_player_deleteBuild && !(_cursorTarget in DZE_DoorsLocked)) then {
 		if (s_player_deleteBuild < 0) then {
 			s_player_deleteBuild = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, true, true, "", ""];
 		};
 	} else {
+		if (_cursorTarget in DZE_DoorsLocked) then {
+			cutText ["You must remove the lock to delete this item!", "PLAIN DOWN"]; 
+		}
 		player removeAction s_player_deleteBuild;
 		s_player_deleteBuild = -1;
 	};
