@@ -2674,6 +2674,26 @@
 		  <French>Pelle Pliable</French>
 		  <Czech>Polní lopatka</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_MACHETE">
+                 <Original>Machete</Original>
+                  <English>Machete</English>
+                  <!-- <German></German> -->
+                  <Russian>Мачете</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Kapmes</Dutch>
+                  <French></French>
+                  <Czech>Mačeta</Czech>
+                </Key>
+		<Key ID="STR_EQUIP_CROSSBOW">
+                  <Original>Crossbow</Original>
+                  <English>Crossbow</English>
+                  <!-- <German></German> -->
+                  <Russian>Арбалет</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Kruisboog</Dutch>
+                  <French></French>
+                  <Czech>Kuše</Czech>
+                </Key>
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_PLAYER_1">
@@ -5706,6 +5726,26 @@
 		  <French>Trade Metals</French>
 		  <Czech>Obchod s kovy</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_302">
+                  <Original>Kill Board</Original>
+                  <English>Kill Board</English>
+                  <!-- <German></German> -->
+                  <Russian>Таблица убийств</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Herdenkingsbord</Dutch>
+                  <French></French>
+                  <Czech>Nástěnka zabitých</Czech>
+                </Key>
+		<Key ID="STR_EPOCH_PLAYER_303">
+                  <Original>Murder</Original>
+                  <English>Murder</English>
+                  <!-- <German></German> -->
+                  <Russian>Убийство</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Moord</Dutch>
+                  <French></French>
+                  <Czech>Vražda</Czech>
+                </Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 		  <Original>Repair Vehicle</Original>
 		  <English>Repair Vehicle</English>
@@ -5866,6 +5906,126 @@
 		  <French></French>
 		  <Czech>Upgrade vozidla byl úspěšný.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PACK_PATROL">
+                  <Original>Patrol Pack (coyote)</Original>
+                  <English>Patrol Pack (coyote)</English>
+                  <!-- <German></German> -->
+                  <Russian>Патрульный рюкзак (Койот)</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Patrouillerugzak (coyote)</Dutch>
+                  <French></French>
+                  <Czech>Baťůžek (coyote)</Czech>
+                </Key>
+		<Key ID="STR_EPOCH_PACK_ASSAULT">
+                  <Original>Assault Pack (ACU)</Original>
+                  <English>Assault Pack (ACU)</English>
+                  <!-- <German></German> -->
+                  <Russian>Рюкзак штурмовика (ACU)</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Aanvalsrugzak (ACU)</Dutch>
+                  <French></French>
+                  <!-- <Czech></Czech> -->
+                </Key>
+		<Key ID="STR_EPOCH_PACK_POUCH">
+                  <Original>Czech Vest Pouch</Original>
+                  <English>Czech Vest Pouch</English>
+                  <!-- <German></German> -->
+                  <Russian>Чешский жилет-мешок</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Tsjechische Borstzak</Dutch>
+                  <French></French>
+                  <!-- <Czech></Czech> -->
+                </Key>
+		<Key ID="STR_EPOCH_PACK_ALICE">
+        	  <Original>ALICE Pack</Original>
+                  <English>ALICE Pack</English>
+                  <!-- <German></German> -->
+                  <!-- <Russian></Russian> -->
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>ALICE Rugzak</Dutch>
+                  <French></French>
+                  <!-- <Czech></Czech> -->
+                </Key>
+		<Key ID="STR_EPOCH_PACK_ACU">
+                  <Original>Survival ACU</Original>
+                  <English>Survival ACU</English>
+                  <!-- <German></German> -->
+                  <Russian>Рюкзак выжившего (ACU)</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Overlevings ACU</Dutch>
+                  <French></French>
+                  <!-- <Czech></Czech> -->
+                </Key>
+		<Key ID="STR_EPOCH_PACK_BAP">
+                  <Original>British Assault Pack</Original>
+                  <English>British Assault Pack</English>
+                  <!-- <German></German> -->
+                  <!-- <Russian></Russian> -->
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Britse Aanvalsrugzak</Dutch>
+                  <French></French>
+                  <Czech>Britský Batoh</Czech>
+                </Key>
+		<Key ID="STR_EPOCH_PACK_CZECH">
+                  <Original>Czech Backpack</Original>
+                  <English>Czech Backpack</English>
+                  <!-- <German></German> -->
+                  <Russian>Чешский рюкзак</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Tsjechische Rugzak</Dutch>
+                  <French></French>
+                  <Czech>Český Batoh</Czech>
+                </Key>
+		<Key ID="STR_EPOCH_PACK_COYOTE">
+                  <Original>Backpack (Coyote)</Original>
+                  <English>Backpack (Coyote)</English>
+                  <!-- <German></German> -->
+                  <Russian>Рюкзак (Койот)</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Rugzak (Coyote)</Dutch>
+                  <French></French>
+                  <Czech>Batoh (Coyote)</Czech>
+                </Key>
+		<Key ID="STR_EPOCH_PACK_LGB">
+                  <Original>Large Gunbag</Original>
+                  <English>Large Gunbag</English>
+                  <!-- <German></German> -->
+                  <Russian>Большая оружейная сумка</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Grote Wapenzak</Dutch>
+                  <French></French>
+                  <!-- <Czech></Czech> -->
+                </Key>
+		<Key ID="STR_EPOCH_PACK_GB">
+                  <Original>Gunbag</Original>
+                  <English>Gunbag</English>
+                  <!-- <German></German> -->
+                  <Russian>Оружейная сумка</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Wapenzak</Dutch>
+                  <French></French>
+                  <!-- <Czech></Czech> -->
+                </Key>
+		<Key ID="STR_EPOCH_PACK_COMPACT">
+                  <Original>Compact Pack</Original>
+                  <English>Compact Pack</English>
+                  <!-- <German></German> -->
+                  <Russian>Компактный рюкзак</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Compacte Rugzak</Dutch>
+                  <French></French>
+                 <!-- <Czech></Czech> -->
+                </Key>
+		<Key ID="STR_EPOCH_PACK_TERMINAL">
+                  <Original>Terminal Pack</Original>
+                  <English>Terminal Pack</English>
+                  <!-- <German></German> -->
+                  <!-- <Russian></Russian> -->
+                  <!-- <Spanish></Spanish> -->
+                  <Dutch>Terminal Rugzak</Dutch>
+                  <French></French>
+                <!-- <Czech></Czech> -->
+                </Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
 		  <English>1.04</English>
