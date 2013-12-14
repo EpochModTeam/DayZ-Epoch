@@ -2677,7 +2677,7 @@
 		<Key ID="STR_EQUIP_MACHETE">
                  <Original>Machete</Original>
                   <English>Machete</English>
-                  <!-- <German></German> -->
+                  <German>Machete</German>
                   <Russian>Мачете</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Kapmes</Dutch>
@@ -2687,7 +2687,7 @@
 		<Key ID="STR_EQUIP_CROSSBOW">
                   <Original>Crossbow</Original>
                   <English>Crossbow</English>
-                  <!-- <German></German> -->
+                  <German>Armbrust</German>
                   <Russian>Арбалет</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Kruisboog</Dutch>
@@ -4569,7 +4569,7 @@
 		<Key ID="STR_EPOCH_PLAYER_188">
 		  <Original>Examine</Original>
 		  <English>Examine</English>
-		  <!-- <German></German> -->
+		  <German>Prüfe</German>
 		  <Russian>Исследовать</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Onderzoek</Dutch>
@@ -5589,7 +5589,7 @@
 		<Key ID="STR_EPOCH_PLAYER_288">
 		  <Original>Items</Original>
 		  <English>Items</English>
-		  <!-- <German></German> -->
+		  <German>Objekte</German>
 		  <Russian>Предметы</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
@@ -5739,7 +5739,7 @@
 		<Key ID="STR_EPOCH_PLAYER_303">
                   <Original>Murder</Original>
                   <English>Murder</English>
-                  <!-- <German></German> -->
+                  <German>Mord</German>
                   <Russian>Убийство</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Moord</Dutch>
@@ -5789,7 +5789,7 @@
 		<Key ID="STR_EPOCH_PLAYER_CARGO">
 		  <Original>Cargo Check</Original>
 		  <English>Cargo Check</English>
-		  <German>Gepäckkontrolle</German>
+		  <German>Gepäck prüfen</German>
 		  <Russian>Проверить груз</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Controleer Bagage</Dutch>
@@ -5909,7 +5909,7 @@
 		<Key ID="STR_EPOCH_PACK_PATROL">
                   <Original>Patrol Pack (coyote)</Original>
                   <English>Patrol Pack (coyote)</English>
-                  <!-- <German></German> -->
+                  <German>Patrouille Rucksack (coyote)</German>
                   <Russian>Патрульный рюкзак (Койот)</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Patrouillerugzak (coyote)</Dutch>
@@ -5919,7 +5919,7 @@
 		<Key ID="STR_EPOCH_PACK_ASSAULT">
                   <Original>Assault Pack (ACU)</Original>
                   <English>Assault Pack (ACU)</English>
-                  <!-- <German></German> -->
+                  <German>Sturmtrupp Rucksack (ACU)</German>
                   <Russian>Рюкзак штурмовика (ACU)</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Aanvalsrugzak (ACU)</Dutch>
@@ -5929,7 +5929,7 @@
 		<Key ID="STR_EPOCH_PACK_POUCH">
                   <Original>Czech Vest Pouch</Original>
                   <English>Czech Vest Pouch</English>
-                  <!-- <German></German> -->
+                  <German>Tschechischer Beutel</German>
                   <Russian>Чешский жилет-мешок</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Tsjechische Borstzak</Dutch>
@@ -5939,7 +5939,7 @@
 		<Key ID="STR_EPOCH_PACK_ALICE">
         	  <Original>ALICE Pack</Original>
                   <English>ALICE Pack</English>
-                  <!-- <German></German> -->
+                  <German>ALICE Rucksack</German>
                   <!-- <Russian></Russian> -->
                   <!-- <Spanish></Spanish> -->
                   <Dutch>ALICE Rugzak</Dutch>
@@ -5949,7 +5949,7 @@
 		<Key ID="STR_EPOCH_PACK_ACU">
                   <Original>Survival ACU</Original>
                   <English>Survival ACU</English>
-                  <!-- <German></German> -->
+                  <German>Survival Rucksack (ACU)</German>
                   <Russian>Рюкзак выжившего (ACU)</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Overlevings ACU</Dutch>
@@ -5959,7 +5959,7 @@
 		<Key ID="STR_EPOCH_PACK_BAP">
                   <Original>British Assault Pack</Original>
                   <English>British Assault Pack</English>
-                  <!-- <German></German> -->
+                  <German>Britischer Sturmtrupp Rucksack</German>
                   <!-- <Russian></Russian> -->
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Britse Aanvalsrugzak</Dutch>
@@ -5969,7 +5969,7 @@
 		<Key ID="STR_EPOCH_PACK_CZECH">
                   <Original>Czech Backpack</Original>
                   <English>Czech Backpack</English>
-                  <!-- <German></German> -->
+                  <German>Tschechische Rucksack</German>
                   <Russian>Чешский рюкзак</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Tsjechische Rugzak</Dutch>
@@ -5979,7 +5979,7 @@
 		<Key ID="STR_EPOCH_PACK_COYOTE">
                   <Original>Backpack (Coyote)</Original>
                   <English>Backpack (Coyote)</English>
-                  <!-- <German></German> -->
+                  <German>Rucksack (Coyote)</German>
                   <Russian>Рюкзак (Койот)</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Rugzak (Coyote)</Dutch>
@@ -5989,7 +5989,7 @@
 		<Key ID="STR_EPOCH_PACK_LGB">
                   <Original>Large Gunbag</Original>
                   <English>Large Gunbag</English>
-                  <!-- <German></German> -->
+                  <German>Große Waffentasche</German>
                   <Russian>Большая оружейная сумка</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Grote Wapenzak</Dutch>
@@ -5999,7 +5999,7 @@
 		<Key ID="STR_EPOCH_PACK_GB">
                   <Original>Gunbag</Original>
                   <English>Gunbag</English>
-                  <!-- <German></German> -->
+                  <German>Waffentasche</German>
                   <Russian>Оружейная сумка</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Wapenzak</Dutch>
@@ -6009,7 +6009,7 @@
 		<Key ID="STR_EPOCH_PACK_COMPACT">
                   <Original>Compact Pack</Original>
                   <English>Compact Pack</English>
-                  <!-- <German></German> -->
+                  <German>Compact Rucksack</German>
                   <Russian>Компактный рюкзак</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Compacte Rugzak</Dutch>
@@ -6019,7 +6019,7 @@
 		<Key ID="STR_EPOCH_PACK_TERMINAL">
                   <Original>Terminal Pack</Original>
                   <English>Terminal Pack</English>
-                  <!-- <German></German> -->
+                  <German>Terminal Rucksack</German>
                   <!-- <Russian></Russian> -->
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Terminal Rugzak</Dutch>
