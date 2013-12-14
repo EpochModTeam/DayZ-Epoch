@@ -245,7 +245,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	} else {
 		if (_cursorTarget in DZE_DoorsLocked) then {
 			cutText ["You must remove the lock to delete this item!", "PLAIN DOWN"]; 
-		}
+		};
 		player removeAction s_player_deleteBuild;
 		s_player_deleteBuild = -1;
 	};
