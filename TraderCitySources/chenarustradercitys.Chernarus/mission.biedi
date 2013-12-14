@@ -2058,7 +2058,7 @@ class _postfix_0
 	{
 	};
 };
-_vehicle_1329 = objNull;
+
 if (true) then
 {
   _this = createVehicle ["MAP_R2_RockWall", [13861.844, 11779.874, -4.0555434], [], 0, "CAN_COLLIDE"];
