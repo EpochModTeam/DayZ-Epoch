@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "F:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -16,7 +16,7 @@ item11[] = {"no_PlayerID",4,218,50.000000,150.000000,150.000000,200.000000,2.000
 item12[] = {"ERROR__No_Player",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item13[] = {"Request",2,250,-75.000000,400.000000,25.000000,450.000000,0.000000,"Request"};
 item14[] = {"Response",4,218,-175.000000,450.000000,-75.000000,500.000000,0.000000,"Response"};
-item15[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000000,"Parse Login"};
+item15[] = {"Parse_Login",2,4346,-75.000000,500.000000,25.000000,550.000000,0.000000,"Parse Login"};
 item16[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
@@ -28,7 +28,7 @@ item23[] = {"ERROR__Player_Already",2,250,175.000000,700.000000,275.000000,750.0
 item24[] = {"Alive",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Alive"};
 item25[] = {"Position",2,250,-75.000000,800.000000,25.000000,850.000000,0.000000,"Position"};
 item26[] = {"Version_Ok",4,218,-175.000000,850.000000,-75.000000,900.000000,0.000000,"Version" \n "Ok"};
-item27[] = {"Load_In",2,4346,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Load In"};
+item27[] = {"Load_In",2,250,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Load In"};
 item28[] = {"Bad_Version",4,218,50.000000,800.000000,150.000000,850.000000,0.000000,"Bad" \n "Version"};
 item29[] = {"ERROR__Bad_Versi",2,250,175.000000,800.000000,275.000000,850.000000,0.000000,"ERROR:" \n "Bad Version"};
 item30[] = {"Display_Ready",4,218,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,"Display" \n "Ready"};
@@ -147,8 +147,8 @@ link74[] = {64,57};
 link75[] = {65,13};
 link76[] = {66,67};
 link77[] = {67,18};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-472.070313,354.276123,1514.247314,631.657410,581,630,1};
-window[] = {2,-1,-1,-1,-1,793,-39,1239,35,3,599};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-302.770813,491.014099,1190.018555,-54.625389,581,911,1};
+window[] = {2,-1,-1,-1,-1,783,25,1303,25,3,599};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -502,16 +502,11 @@ class FSM
        "_version	= _msg select 5;" \n
        "_model		= _msg select 6;" \n
        "" \n
-       "_isHiveOk = false;" \n
-       "_newPlayer = false;" \n
-       "_isInfected = false;" \n
        "freshSpawn = 0;" \n
-       "if (count _msg > 7) then {" \n
-       "	_isHiveOk = _msg select 7;" \n
-       "	_newPlayer = _msg select 8;" \n
-       "	_isInfected = _msg select 9;" \n
-       "	diag_log (""PLAYER RESULT: "" + str(_isHiveOk));" \n
-       "};" \n
+       "_isHiveOk = _msg select 7;" \n
+       "_newPlayer = _msg select 8;" \n
+       "_isInfected = _msg select 9;" \n
+       "diag_log (""PLAYER RESULT: "" + str(_isHiveOk));" \n
        "" \n
        "dayz_loadScreenMsg = (localize ""str_player_17""); " \n
        "progressLoadingScreen 0.8;" \n
