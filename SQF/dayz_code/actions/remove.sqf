@@ -17,6 +17,7 @@ _activatingPlayer = player;
 _objOwnerID = _obj getVariable["CharacterID","0"];
 _isOwnerOfObj = (_objOwnerID == dayz_characterID);
 
+if (_obj in DZE_DoorsLocked) exitWith { DZE_ActionInProgress = false; cutText ["You must remove the lock to delete this item!", "PLAIN DOWN"]; };
 if(_obj getVariable ["GeneratorRunning", false]) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_89"), "PLAIN DOWN"];};
 
 _objectID 	= _obj getVariable ["ObjectID","0"];
