@@ -44,7 +44,7 @@ UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["m240_
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["M249_m145_EP1_DZE",3]';
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar",1]' WHERE `item`='["200Rnd_556x45_M249",1]';
 
-UPDATE `Traders_DATA` SET `buy`= '[1,"ItemBriefcase100oz",1]' WHERE `item`='["HMMWV_M1151_M2_CZ_DES_EP1_DZE",2]';
+UPDATE `Traders_DATA` SET `buy`= '[2,"ItemBriefcase100oz",1]' WHERE `item`='["HMMWV_M1151_M2_CZ_DES_EP1_DZE",2]';
 UPDATE `Traders_DATA` SET `buy`= '[7,"ItemGoldBar10oz",1]' WHERE `item`='["GAZ_Vodnik_DZE",2]' and `buy`='[6,"ItemGoldBar10oz",1]';
 UPDATE `Traders_DATA` SET `sell`= '[3,"ItemGoldBar10oz",1]' WHERE `item`='["GAZ_Vodnik_DZE",2]';
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["SUV_TK_CIV_EP1",2]';
