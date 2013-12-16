@@ -666,7 +666,7 @@ if(!isDedicated) then {
 		DZE_requireplot = 1;
 	};
 	if(isNil "DZE_PlotPole") then {
-		DZE_PlotPole = [30,60];
+		DZE_PlotPole = [30,45];
 	};
 	
 	
