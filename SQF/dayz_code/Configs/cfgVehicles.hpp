@@ -1475,7 +1475,6 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		constructioncount = 1;
 		removeoutput[] = {{"ItemTankTrap",1}};
-		requireplot = 0;
 		nounderground = 0;
 	};
 	// WorkBench_DZ

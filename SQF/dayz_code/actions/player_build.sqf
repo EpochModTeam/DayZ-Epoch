@@ -372,9 +372,9 @@ if (_hasrequireditem) then {
 		};
 	};
 
-	// No building on roads for most items
+	//No building on roads unless toggled
 	if (!DZE_BuildOnRoads) then {
-		if ((isOnRoad _position) and (_classname!="Hedgehog_DZ")) then { _cancel = true; _reason = "Cannot build on a road."; };
+		if (isOnRoad _position) then { _cancel = true; _reason = "Cannot build on a road."; };
 	};
 
 	// No building in trader zones
