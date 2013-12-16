@@ -665,11 +665,8 @@ if(!isDedicated) then {
 	if(isNil "DZE_requireplot") then {
 		DZE_requireplot = 1;
 	};
-	if(isNil "DZE_plotRadius") then {
-		DZE_plotRadius = 30;
-	};
-	if(isNil "DZE_plotDistance") then {
-		DZE_plotDistance = 60;
+	if(isNil "DZE_PlotPole") then {
+		DZE_PlotPole = [30,45];
 	};
 	
 	
