@@ -2681,9 +2681,19 @@
                   <Russian>Мачете</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Kapmes</Dutch>
-                  <French></French>
+                  <!-- <French></French> -->
                   <Czech>Mačeta</Czech>
                 </Key>
+                <Key ID="STR_EQUIP_MACHETE_DESC">
+                 <Original>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</Original>
+                  <English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
+                  <!-- <German></German> -->
+                  <Russian>Сельскохозяйственный инструмент превратился в оружие, мачете менее универсален, чем обычный топор, но обладает мощностью удара.</Russian>
+                  <!-- <Spanish></Spanish> -->
+                  <!-- <Dutch></Dutch> -->
+                  <!-- <French></French> -->
+                  <Czech>Zemědělské náčiní, které bylo přetvořeno na zbraň. Mačeta není tak univerzální, jako běžná sekera, ale bořád dost bolí.</Czech
+                </Key
 		<Key ID="STR_EQUIP_CROSSBOW">
                   <Original>Crossbow</Original>
                   <English>Crossbow</English>
@@ -5740,7 +5750,7 @@
                   <Original>Murder</Original>
                   <English>Murder</English>
                   <German>Mord</German>
-                  <Russian>Убийство</Russian>
+                  <Russian>Убийства</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Moord</Dutch>
                   <French></French>
