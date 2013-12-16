@@ -4,7 +4,7 @@ class ItemMachete: ItemCore
 		displayName=$STR_EQUIP_MACHETE;
 		model="\z\addons\dayz_communityassets\models\machete.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
-		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
+		descriptionShort=$STR_EQUIP_MACHETE_DESC;
 		class ItemActions
 		{
 			class Toolbelt
