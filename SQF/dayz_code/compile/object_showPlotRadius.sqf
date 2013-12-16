@@ -7,7 +7,7 @@ _nearPlotPole = nearestObject [player, "Plastic_Pole_EP1_DZ", 3];
 
 
 //"privatized" center variable
-_BD_radius = DZE_PlotPole this select 0;
+_BD_radius = DZE_PlotPole select 0;
 _BD_center = getPos _nearPlotPole;
 
  _objects = [];

@@ -117,7 +117,7 @@ if((count _offset) <= 0) then {
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 _isLandFireDZ = (_classname == "Land_Fire_DZ");
 
-_distance = DZE_PlotPole this select 0;
+_distance = DZE_PlotPole select 0;
 _needText = localize "str_epoch_player_246";
 
 if(_isPole) then {
