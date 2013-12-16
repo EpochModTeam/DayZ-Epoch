@@ -117,11 +117,11 @@ if((count _offset) <= 0) then {
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 _isLandFireDZ = (_classname == "Land_Fire_DZ");
 
-_distance = DZE_plotRadius;
+_distance = DZE_PlotPole this select 0;
 _needText = localize "str_epoch_player_246";
 
 if(_isPole) then {
-	_distance = DZE_plotDistance;
+	_distance = DZE_PlotPole this select 1;
 };
 
 // check for near plot
