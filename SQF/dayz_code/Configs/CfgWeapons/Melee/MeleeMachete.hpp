@@ -37,5 +37,5 @@ class MeleeMachete: MeleeWeapon
 		{
 			libTextDesc="";
 		};
-		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
+		descriptionShort=$STR_EQUIP_MACHETE_DESC;
 	};	
