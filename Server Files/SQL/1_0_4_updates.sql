@@ -44,9 +44,9 @@ UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["m240_
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["M249_m145_EP1_DZE",3]';
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar",1]' WHERE `item`='["200Rnd_556x45_M249",1]';
 
-UPDATE `Traders_DATA` SET `buy`= '[2,"ItemBriefcase100oz",1]' WHERE `item`='["HMMWV_M1151_M2_CZ_DES_EP1_DZE",2]';
+UPDATE `Traders_DATA` SET `buy`= '[6,"ItemBriefcase100oz",1]' WHERE `item`='["HMMWV_M1151_M2_CZ_DES_EP1_DZE",2]';
 UPDATE `Traders_DATA` SET `buy`= '[7,"ItemGoldBar10oz",1]' WHERE `item`='["GAZ_Vodnik_DZE",2]' and `buy`='[6,"ItemGoldBar10oz",1]';
-UPDATE `Traders_DATA` SET `sell`= '[3,"ItemGoldBar10oz",1]' WHERE `item`='["GAZ_Vodnik_DZE",2]';
+UPDATE `Traders_DATA` SET `sell`= '[5,"ItemGoldBar10oz",1]' WHERE `item`='["GAZ_Vodnik_DZE",2]';
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["SUV_TK_CIV_EP1",2]';
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["SUV_Blue",2]';
 UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar10oz",1]' WHERE `item`='["SUV_Charcoal",2]';
@@ -75,3 +75,36 @@ UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar",1]' WHERE `item`='["ItemTrout
 UPDATE `Traders_DATA` SET `buy`= '[3,"ItemGoldBar",1]' WHERE `item`='["ItemSeaBassCooked",1]';
 UPDATE `Traders_DATA` SET `buy`= '[4,"ItemGoldBar",1]' WHERE `item`='["ItemTunaCooked",1]';
 UPDATE `Traders_DATA` SET `buy`= '[1,"ItemSilverBar10oz",1]' WHERE `item`='["FoodMRE",1]';
+
+-- ----------------------------
+-- VEHICLE UPGRADE PARTS TO TRADER INVENTORY
+-- ----------------------------
+
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemORP', 1, 'Car Parts', 'trade_items');
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemAVE', 1, 'Car Parts', 'trade_items');
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemLRK', 1, 'Car Parts', 'trade_items');
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemTNK', 1, 'Car Parts', 'trade_items');
+
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemORP",1]', 192, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 509, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemORP",1]', 247, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 531, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemORP",1]', 246, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 664, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemORP",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 677, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemORP",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 682, 'trade_items');
+
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemAVE",1]', 192, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 509, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemAVE",1]', 247, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 531, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemAVE",1]', 246, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 664, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemAVE",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 677, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemAVE",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 682, 'trade_items');
+
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemLRK",1]', 192, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 509, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemLRK",1]', 247, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 531, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemLRK",1]', 246, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 664, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemLRK",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 677, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemLRK",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 682, 'trade_items');
+
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemTNK",1]', 192, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 509, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemTNK",1]', 247, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 531, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemTNK",1]', 246, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 664, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemTNK",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 677, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemTNK",1]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 682, 'trade_items');
