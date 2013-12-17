@@ -2790,7 +2790,7 @@
 		  <Original>You have been crushed between two objects.</Original>
 		  <English>You have been crushed between two objects.</English>
 		  <German>Sie wurden zwischen zwei Objekten zerquetscht.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Вы были сдавлены между двумя объектами.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Je bent geplet tussen twee objecten.</Dutch>
 		  <French>Vous avez été écrasé entre deux objets.</French>
@@ -3150,7 +3150,7 @@
 		  <Original>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</Original>
 		  <English>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</English>
 		  <German>PgUp zum Erhöhen oder PgDn zum Absenken (halte ALT zum schnelleren Eröhen oder STRG zum Absenken), Q oder E zum Drehen. Drücke Leertaste um das Objekt zu plazieren.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>PgUp чтобы поднять или PgDn чтобы опустить (Держитте ALT чтобы поднимать быстрее или CTRL чтобы медленнее), Q или E для поворота на 180. Пробел чтобы построить.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>PgUp voor omhoog or PgDn voor omlaag (Houd ALT ingedrukt voor snel en CTRL voor langzaam), \nQ of E draait het object 180graden. Spatiebalk start het bouwen.</Dutch>
 		  <French>PgUp pour élever ou PgDn pour abaisser (Maintenez ALT pour élever plus rapidement ou CTRL plus lentement), A ou E pour une rotation à 180. Espace pour construire.</French>
@@ -6030,7 +6030,7 @@
                   <Original>Terminal Pack</Original>
                   <English>Terminal Pack</English>
                   <German>Terminal Rucksack</German>
-                  <!-- <Russian></Russian> -->
+                  <Russian>Рюкзак Terminal</Russian>
                   <!-- <Spanish></Spanish> -->
                   <Dutch>Terminal Rugzak</Dutch>
                   <French></French>
