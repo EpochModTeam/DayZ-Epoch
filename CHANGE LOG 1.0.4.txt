@@ -1,10 +1,20 @@
 [ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
-        by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole @dayz10k @vos
+        by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole. @dayz10k @vos
+[ADDED] Buying Vehicle Maintenance Manuals (added in 1.0.3) from the Vehicle Parts Vendors. @dayz10k
+[ADDED] Global variable to allow building on roads, enabled via mission file. DZE_BuildOnRoads = true  will allow building on roads. Default is false. @dayz10k
+[ADDED] Global variable to set plot pole radius and exclusion zone, enabled via mission file. DZE_PlotPole = [x,y] in the mission file controls the [Radius, Exclusion zone]. 
+        Default is DZE_PlotPole = [30,45]. @dayz10k @skaronator
 
 [FIXED] More Localization (translations).  @dayz10k, @VeryBigBro (Russian), @JoSchaap (Dutch), @Geodar (Czech), @krazey (German)
 [FIXED] Fixed incorect spelling of chainsaw name was horlite needed to be hermlite. @vbawol
+[FIXED] Remove nearest tranktrap via toolbox. @dayz10k
+[FIXED] Lingor trader spawn. @dayz10k @sekra
+[FIXED] Crafting a wooden garage door no longer says "Build Fire". @dayz10k
 
-[CHANGED] All copper prices have been changed to 2 silver to buy, 1 silver to sell @dayz10k
+
+[CHANGED] Prices were reviewed and modified for many of the higher tiered weapons/ammo/vehicles/food. @dayz10k
+[CHANGED] All copper prices have been changed to 2 silver to buy, 1 silver to sell. @dayz10k
+[CHANGED] Radius check for Remove Nearest Camo Net (from 10m to 3m). @dayz10k
 
 [REMOVED] Copper is no longer a usable currency. Existing copper will remain in game, but has no current use. @dayz10k
 
