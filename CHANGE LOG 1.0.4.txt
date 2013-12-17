@@ -7,7 +7,7 @@
 
 [FIXED] More Localization (translations).  @dayz10k, @VeryBigBro (Russian), @JoSchaap (Dutch), @Geodar (Czech), @krazey (German)
 [FIXED] Fixed incorect spelling of chainsaw name was horlite needed to be hermlite. @vbawol
-[FIXED] Remove nearest tranktrap via toolbox. @dayz10k
+[FIXED] Remove nearest tranktrap via toolbox not working properly. @dayz10k
 [FIXED] Lingor trader spawn. @dayz10k @sekra
 [FIXED] Crafting a wooden garage door no longer says "Build Fire". @dayz10k
 
