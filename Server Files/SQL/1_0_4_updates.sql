@@ -80,10 +80,10 @@ UPDATE `Traders_DATA` SET `buy`= '[1,"ItemSilverBar10oz",1]' WHERE `item`='["Foo
 -- VEHICLE UPGRADE PARTS TO TRADER INVENTORY
 -- ----------------------------
 
-INSERT INTO `trader_items` VALUES(494, 'ItemORP', 1, 'Car Parts', 'trade_items');
-INSERT INTO `trader_items` VALUES(494, 'ItemAVE', 1, 'Car Parts', 'trade_items');
-INSERT INTO `trader_items` VALUES(494, 'ItemLRK', 1, 'Car Parts', 'trade_items');
-INSERT INTO `trader_items` VALUES(494, 'ItemTNK', 1, 'Car Parts', 'trade_items');
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemORP', 1, 'Car Parts', 'trade_items');
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemAVE', 1, 'Car Parts', 'trade_items');
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemLRK', 1, 'Car Parts', 'trade_items');
+INSERT IGNORE INTO `trader_items` VALUES(NULL, 'ItemTNK', 1, 'Car Parts', 'trade_items');
 
 INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemORP",1]', 192, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 509, 'trade_items');
 INSERT IGNORE INTO `Traders_DATA` VALUES(NULL, '["ItemORP",1]', 247, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 531, 'trade_items');
