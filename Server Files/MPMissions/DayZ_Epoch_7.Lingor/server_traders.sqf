@@ -50,7 +50,7 @@ menu_ibr_lingorman5s = [
 	"neutral"
 ];
 // Juan's Tour Boats
-menu_ibr_lingorman4s = [
+menu_ibr_lingorman4 = [
 	[["Boats Unarmed",672]],
 	[],
 	"neutral"
