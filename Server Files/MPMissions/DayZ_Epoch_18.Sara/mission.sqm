@@ -13,6 +13,7 @@ class Mission
 		"ca_modules_functions",
 		"glt_m300t",
 		"csj_gyroac",
+		"pook_h13",
 		"map_eu",
 		"jetskiyanahuiaddon"
 	};

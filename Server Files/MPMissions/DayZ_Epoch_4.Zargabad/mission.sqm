@@ -18,7 +18,7 @@ class Mission
 		"ind_tank",
 		"camisc_e",
 		"glt_m300t",
-		
+		"pook_h13",
 		"csj_gyroac"
 	};
 	addOnsAuto[]=

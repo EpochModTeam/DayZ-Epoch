@@ -12,6 +12,7 @@ class Mission
 		"ca_modules_functions",
 		"warfarebuildings",
 		"glt_m300t",
+		"pook_h13",
 		"csj_gyroac"
 	};
 	addOnsAuto[]=
@@ -23,7 +24,7 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ Epoch Ovaron PMC";
+		briefingName="DayZ Epoch Ovaron";
 		briefingDescription="DayZ Epoch Ovaron Private Server";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
