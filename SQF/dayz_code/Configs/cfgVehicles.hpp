@@ -3157,7 +3157,7 @@ class CfgVehicles {
 		destrType = "DestructNo";
 		model = "\z\addons\dayz_epoch\models\skeleton.p3d";
 		transportMaxMagazines = 80;
-		transportMaxWeapons = 15;
+		transportMaxWeapons = 20;
 		transportMaxBackpacks = 1;
 	};
 };	
