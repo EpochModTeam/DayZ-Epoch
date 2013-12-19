@@ -127,9 +127,22 @@ if (!isDedicated) then {
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"dayz_preloadFinished = true;";
 	
-
-	 
-
+	// helper functions
+	player_hasTools =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_hasTools.sqf";
+	player_checkItems =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkItems.sqf";
+	player_removeItems =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_removeItems.sqf";
+	// combination of check and remove items
+	player_checkAndRemoveItems = {
+		private ["_items","_b"];
+		_items = _this;
+		_b = _items call player_checkItems;
+		if (_b) then {
+			_b = _items call player_removeItems;
+		};
+		_b
+	};
+	
+	
 	//
 	RunTime = 0;
 	TotalRuns = 0;
