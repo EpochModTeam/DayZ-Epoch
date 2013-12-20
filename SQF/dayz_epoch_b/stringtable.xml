@@ -6036,7 +6036,7 @@
 		  <French></French>
 		  <!-- <Czech></Czech> -->
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_1">
+		<Key ID="STR_EPOCH_ACTIONS_HALO">
 		  <Original>HALO Jump</Original>
 		  <English>HALO Jump</English>
 		  <!-- <German></German> -->
@@ -6046,9 +6046,9 @@
 		  <!-- <French></French> -->
 		  <Czech>Katapultovat se</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_2">
+		<Key ID="STR_EPOCH_ACTIONS_NAMEYES">
 		  <Original>Display Name (Yes)</Original>
-		  <English>HALO Jump</English>
+		  <English>Display Name (Yes)</English>
 		  <!-- <German></German> -->
 		  <Russian>Отображать имя (Да)</Russian>
 		  <!-- <Spanish></Spanish> -->
@@ -6056,7 +6056,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Zobrazovat jména</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_3">
+		<Key ID="STR_EPOCH_ACTIONS_NAMENO">
 		  <Original>Display Name (No)</Original>
 		  <English>Display Name (No)</English>
 		  <!-- <German></German> -->
@@ -6066,7 +6066,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Nezobrazovat jména</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_4">
+		<Key ID="STR_EPOCH_ACTIONS_RAISEHORDE">
 		  <Original>Raise Horde</Original>
 		  <English>Raise Horde</English>
 		  <!-- <German></German> -->
@@ -6076,7 +6076,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Přivolat Zombií</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_5">
+		<Key ID="STR_EPOCH_ACTIONS_NIGHTVIS">
 		  <Original>Night Vision</Original>
 		  <English>Night Vision</English>
 		  <!-- <German></German> -->
@@ -6086,7 +6086,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Noktovizor</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_6">
+		<Key ID="STR_EPOCH_ACTIONS_FEED">
 		  <Original>Feed</Original>
 		  <English>Feed</English>
 		  <!-- <German></German> -->
@@ -6096,7 +6096,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Nakrmit</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_7">
+		<Key ID="STR_EPOCH_ACTIONS_MAINTAREA">
 		  <Original>Maintain Area</Original>
 		  <English>Maintain Area</English>
 		  <!-- <German></German> -->
@@ -6106,7 +6106,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Údržba oblasti</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_8">
+		<Key ID="STR_EPOCH_ACTIONS_MAINTPREV">
 		  <Original>Maintain Area Preview</Original>
 		  <English>Maintain Area Preview</English>
 		  <!-- <German></German> -->
@@ -6116,27 +6116,27 @@
 		  <!-- <French></French> -->
 		  <Czech>Náhled údržby oblasti</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_9">
-		  <Original>Unlock</Original>
-		  <English>Unlock</English>
+		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
+		  <Original>Unlock %1</Original>
+		  <English>Unlock %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Открыть</Russian>
+		  <Russian>Открыть %1</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Haal van Slot</Dutch>
+		  <Dutch>Haal van Slot %1</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Odemknout</Czech>
+		  <Czech>Odemknout %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_10">
-		  <Original>Hotwire</Original>
-		  <English>Hotwire</English>
+		<Key ID="STR_EPOCH_ACTIONS_HOTWIRE">
+		  <Original>Hotwire %1</Original>
+		  <English>Hotwire %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Угнать</Russian>
+		  <Russian>Угнать %1</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Hotwire</Dutch>
+		  <Dutch>Hotwire %1</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Pokusit se Dostat do Vozidla</Czech>
+		  <Czech>Pokusit se Dostat do Vozidla %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_11">
+		<Key ID="STR_EPOCH_ACTIONS_VEHLOCKED">
 		  <Original>Vehicle Locked</Original>
 		  <English>Vehicle Locked</English>
 		  <!-- <German></German> -->
@@ -6146,17 +6146,17 @@
 		  <!-- <French></French> -->
 		  <Czech>Vozidlo Uzamčeno</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_12">
-		  <Original>Lock</Original>
-		  <English>Lock</English>
+		<Key ID="STR_EPOCH_ACTIONS_LOCK">
+		  <Original>Lock %1</Original>
+		  <English>Lock %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Закрыть</Russian>
+		  <Russian>Закрыть %1</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Zet op Slot</Dutch>
+		  <Dutch>Zet op Slot %1</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Zamknout</Czech>
+		  <Czech>Zamknout %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_13">
+		<Key ID="STR_EPOCH_ACTIONS_GUTZOM">
 		  <Original>Gut Zombie</Original>
 		  <English>Gut Zombie</English>
 		  <!-- <German></German> -->
@@ -6166,7 +6166,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Vykuchat Zombie</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_14">
+		<Key ID="STR_EPOCH_ACTIONS_GEAR">
 		  <Original>Gear</Original>
 		  <English>Gear</English>
 		  <!-- <German></German> -->
@@ -6176,7 +6176,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Vybavení</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_15">
+		<Key ID="STR_EPOCH_ACTIONS_DESTROYTENT">
 		  <Original>Destroy Tent</Original>
 		  <English>Destroy Tent</English>
 		  <!-- <German></German> -->
@@ -6186,17 +6186,17 @@
 		  <!-- <French></French> -->
 		  <Czech>Zničit Stan</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_16">
-		  <Original>Open</Original>
-		  <English>Open</English>
+		<Key ID="STR_EPOCH_ACTIONS_OPEN">
+		  <Original>Open %1</Original>
+		  <English>Open %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Открыть</Russian>
+		  <Russian>Открыть %1</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Maak Open</Dutch>
+		  <Dutch>Maak Open %1</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Otevřít</Czech>
+		  <Czech>Otevřít %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_17">
+		<Key ID="STR_EPOCH_ACTIONS_RECOMBO">
 		  <Original>Re-Enter Combination</Original>
 		  <English>Re-Enter Combination</English>
 		  <!-- <German></German> -->
@@ -6206,17 +6206,17 @@
 		  <!-- <French></French> -->
 		  <Czech>Znovu Zadat Kombinaci</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_18">
-		  <Original>Pack</Original>
-		  <English>Pack</English>
+		<Key ID="STR_EPOCH_ACTIONS_PACK">
+		  <Original>Pack %1</Original>
+		  <English>Pack %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Запаковать</Russian>
+		  <Russian>Запаковать %1</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Inpakken</Dutch>
+		  <Dutch>Inpakken %1</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Zabalit</Czech>
+		  <Czech>Zabalit %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_19">
+		<Key ID="STR_EPOCH_ACTIONS_MURDERS">
 		  <Original>Recent Murders</Original>
 		  <English>Recent Murders</English>
 		  <!-- <German></German> -->
@@ -6226,7 +6226,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Nedávné Vraždy</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_20">
+		<Key ID="STR_EPOCH_ACTIONS_FILLVEH">
 		  <Original>Fill Vehicle</Original>
 		  <English>Fill Vehicle</English>
 		  <!-- <German></German> -->
@@ -6236,7 +6236,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Naplnit Vozidlo</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_21">
+		<Key ID="STR_EPOCH_ACTIONS_NEEDPOWER">
 		  <Original>Needs Power</Original>
 		  <English>Needs Power</English>
 		  <!-- <German></German> -->
@@ -6246,37 +6246,37 @@
 		  <!-- <French></French> -->
 		  <Czech>Potřebuje Energii</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_22">
-		  <Original>Upgrade</Original>
-		  <English>Upgrade</English>
+		<Key ID="STR_EPOCH_ACTIONS_UPGRADE">
+		  <Original>Upgrade %1</Original>
+		  <English>Upgrade %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Улучшить</Russian>
+		  <Russian>Улучшить %1</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_23">
-		  <Original>Remove Lock from</Original>
-		  <English>Remove Lock from</English>
+		<Key ID="STR_EPOCH_ACTIONS_REMLOCK">
+		  <Original>Remove Lock from %1</Original>
+		  <English>Remove Lock from %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Снять замок с</Russian>
+		  <Russian>Снять замок с %1</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Verwijder slot van</Dutch>
+		  <Dutch>Verwijder slot van %1</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Odebrat Zámek z</Czech>
+		  <Czech>Odebrat Zámek z %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_24">
-		  <Original>Maintain</Original>
-		  <English>Maintain</English>
+		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN">
+		  <Original>Maintain %1</Original>
+		  <English>Maintain %1</English>
 		  <!-- <German></German> -->
-		  <Russian>Занять</Russian>
+		  <Russian>Занять %1</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Onderhoud</Dutch>
+		  <Dutch>Onderhoud %1</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Opravit</Czech>
+		  <Czech>Opravit %1</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_25">
+		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 		  <Original>Stop Generator</Original>
 		  <English>Stop Generator</English>
 		  <!-- <German></German> -->
@@ -6286,7 +6286,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Zastavit Generátor</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_26">
+		<Key ID="STR_EPOCH_ACTIONS_GENERATOR2">
 		  <Original>Start Generator</Original>
 		  <English>Start Generator</English>
 		  <!-- <German></German> -->
@@ -6296,7 +6296,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Nastartovat Generátor</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_27">
+		<Key ID="STR_EPOCH_ACTIONS_GENERATOR3">
 		  <Original>Fill and Start Generator</Original>
 		  <English>Fill and Start Generator</English>
 		  <!-- <German></German> -->
@@ -6306,7 +6306,7 @@
 		  <!-- <French></French> -->
 		  <Czech>Naplnit a Nastartovat Generátor</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_28">
+		<Key ID="STR_EPOCH_ACTIONS_ATTACH">
 		  <Original>Attach Straps</Original>
 		  <English>Attach Straps</English>
 		  <!-- <German></German> -->
@@ -6316,7 +6316,7 @@
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_29">
+		<Key ID="STR_EPOCH_ACTIONS_DETACH">
 		  <Original>Detach Straps</Original>
 		  <English>Detach Straps</English>
 		  <!-- <German></German> -->
@@ -6326,7 +6326,7 @@
 		  <!-- <French></French> -->
 		  <!-- <Czech></Czech> -->
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_30">
+		<Key ID="STR_EPOCH_ACTIONS_HUMANITY">
 		  <Original>Your humanity is too %1, this trader refuses to talk to you</Original>
 		  <English>Your humanity is too %1, this trader refuses to talk to you</English>
 		  <!-- <German></German> -->
