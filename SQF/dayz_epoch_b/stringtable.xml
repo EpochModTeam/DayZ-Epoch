@@ -6036,6 +6036,326 @@
 		  <French></French>
 		  <!-- <Czech></Czech> -->
 		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_1">
+		  <Original>HALO Jump</Original>
+		  <English>HALO Jump</English>
+		  <!-- <German></German> -->
+		  <Russian>HALO прыжок</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Parachutesprong</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Katapultovat se</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_2">
+		  <Original>Display Name (Yes)</Original>
+		  <English>HALO Jump</English>
+		  <!-- <German></German> -->
+		  <Russian>Отображать имя (Да)</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Naam weergeven (AAN)</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Zobrazovat jména</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_3">
+		  <Original>Display Name (No)</Original>
+		  <English>Display Name (No)</English>
+		  <!-- <German></German> -->
+		  <Russian>Отображать имя (Нет)</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Naam weergeven (UIT)</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Nezobrazovat jména</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_4">
+		  <Original>Raise Horde</Original>
+		  <English>Raise Horde</English>
+		  <!-- <German></German> -->
+		  <Russian>Призвать орду</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Roep een Horde aan</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Přivolat Zombií</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_5">
+		  <Original>Night Vision</Original>
+		  <English>Night Vision</English>
+		  <!-- <German></German> -->
+		  <Russian>Ночное зрение</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Nachtvisie</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Noktovizor</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_6">
+		  <Original>Feed</Original>
+		  <English>Feed</English>
+		  <!-- <German></German> -->
+		  <Russian>Питаться</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Eet</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Nakrmit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_7">
+		  <Original>Maintain Area</Original>
+		  <English>Maintain Area</English>
+		  <!-- <German></German> -->
+		  <Russian>Занять территорию</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Onderhoud het gebied</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Údržba oblasti</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_8">
+		  <Original>Maintain Area Preview</Original>
+		  <English>Maintain Area Preview</English>
+		  <!-- <German></German> -->
+		  <Russian>Занять территорию (пред. просмотр)</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Gebiedsonderhoud (voorbeeld)</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Náhled údržby oblasti</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_9">
+		  <Original>Unlock</Original>
+		  <English>Unlock</English>
+		  <!-- <German></German> -->
+		  <Russian>Открыть</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Haal van Slot</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Odemknout</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_10">
+		  <Original>Hotwire</Original>
+		  <English>Hotwire</English>
+		  <!-- <German></German> -->
+		  <Russian>Угнать</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Hotwire</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Pokusit se Dostat do Vozidla</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_11">
+		  <Original>Vehicle Locked</Original>
+		  <English>Vehicle Locked</English>
+		  <!-- <German></German> -->
+		  <Russian>Транспорт закрыт</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Voertuig Staat op Slot</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Vozidlo Uzamčeno</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_12">
+		  <Original>Lock</Original>
+		  <English>Lock</English>
+		  <!-- <German></German> -->
+		  <Russian>Закрыть</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Zet op Slot</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Zamknout</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_13">
+		  <Original>Gut Zombie</Original>
+		  <English>Gut Zombie</English>
+		  <!-- <German></German> -->
+		  <Russian>Разделать зомби</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Slacht Zombie</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Vykuchat Zombie</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_14">
+		  <Original>Gear</Original>
+		  <English>Gear</English>
+		  <!-- <German></German> -->
+		  <Russian>Инвентарь</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Inventaris</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Vybavení</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_15">
+		  <Original>Destroy Tent</Original>
+		  <English>Destroy Tent</English>
+		  <!-- <German></German> -->
+		  <Russian>Сломать палатку</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Vernietig Tent</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Zničit Stan</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_16">
+		  <Original>Open</Original>
+		  <English>Open</English>
+		  <!-- <German></German> -->
+		  <Russian>Открыть</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Maak Open</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Otevřít</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_17">
+		  <Original>Re-Enter Combination</Original>
+		  <English>Re-Enter Combination</English>
+		  <!-- <German></German> -->
+		  <Russian>Ввести комбинацию заново</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Combinatie Opnieuw Invoeren</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Znovu Zadat Kombinaci</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_18">
+		  <Original>Pack</Original>
+		  <English>Pack</English>
+		  <!-- <German></German> -->
+		  <Russian>Запаковать</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Inpakken</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Zabalit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_19">
+		  <Original>Recent Murders</Original>
+		  <English>Recent Murders</English>
+		  <!-- <German></German> -->
+		  <Russian>Последние убийства</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Recente Moorden</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Nedávné Vraždy</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_20">
+		  <Original>Fill Vehicle</Original>
+		  <English>Fill Vehicle</English>
+		  <!-- <German></German> -->
+		  <Russian>Заправить транспорт</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Vul Voertuig</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Naplnit Vozidlo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_21">
+		  <Original>Needs Power</Original>
+		  <English>Needs Power</English>
+		  <!-- <German></German> -->
+		  <Russian>Нужна энергия</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Heeft Stroom Nodig</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Potřebuje Energii</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_22">
+		  <Original>Upgrade</Original>
+		  <English>Upgrade</English>
+		  <!-- <German></German> -->
+		  <Russian>Улучшить</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <!-- <Dutch></Dutch> -->
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_23">
+		  <Original>Remove Lock from</Original>
+		  <English>Remove Lock from</English>
+		  <!-- <German></German> -->
+		  <Russian>Снять замок с</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Verwijder slot van</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Odebrat Zámek z</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_24">
+		  <Original>Maintain</Original>
+		  <English>Maintain</English>
+		  <!-- <German></German> -->
+		  <Russian>Занять</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Onderhoud</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Opravit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_25">
+		  <Original>Stop Generator</Original>
+		  <English>Stop Generator</English>
+		  <!-- <German></German> -->
+		  <Russian>Остановить генератор</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <!-- <Dutch></Dutch> -->
+		  <!-- <French></French> -->
+		  <Czech>Zastavit Generátor</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_26">
+		  <Original>Start Generator</Original>
+		  <English>Start Generator</English>
+		  <!-- <German></German> -->
+		  <Russian>Запустить генератор</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <!-- <Dutch></Dutch> -->
+		  <!-- <French></French> -->
+		  <Czech>Nastartovat Generátor</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_27">
+		  <Original>Fill and Start Generator</Original>
+		  <English>Fill and Start Generator</English>
+		  <!-- <German></German> -->
+		  <Russian>Заправить и запустить генератор</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Vul en Start Generator</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Naplnit a Nastartovat Generátor</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_28">
+		  <Original>Attach Straps</Original>
+		  <English>Attach Straps</English>
+		  <!-- <German></German> -->
+		  <Russian>Прикрепить стропы</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Monteer Spanbanden</Dutch>
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_29">
+		  <Original>Detach Straps</Original>
+		  <English>Detach Straps</English>
+		  <!-- <German></German> -->
+		  <Russian>Отцепить стропы</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Demonteer Spanbanden</Dutch>
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_30">
+		  <Original>Your humanity is too %1, this trader refuses to talk to you</Original>
+		  <English>Your humanity is too %1, this trader refuses to talk to you</English>
+		  <!-- <German></German> -->
+		  <Russian>Ваша человечность слишком %1, этот торговец отказывается говорить с вами</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Je menselijkheid is te %1. Deze trader doet geen zaken met je.</Dutch>
+		  <!-- <French></French> -->
+		  <Czech>Tvá lidskost je příliš %1, tento obchodník s tebou odmítá mluvit.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_31">
+		  <Original>You must remove the lock to delete this item!</Original>
+		  <English>You must remove the lock to delete this item!</English>
+		  <!-- <German></German> -->
+		  <Russian>Вы должны снять замок, чтобы убрать этот предмет!</Russian>
+		  <!-- <Spanish></Spanish> -->
+		  <Dutch>Je moet het slot verwijderen voor je dit item kunt weghalen!</Dutch>
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_32">
+		  <Original>Deconstructing modular buildables will not refund any components.</Original>
+		  <English>Deconstructing modular buildables will not refund any components.</English>
+		  <!-- <German></German> -->
+		  <!-- <Russian></Russian> -->
+		  <!-- <Spanish></Spanish> -->
+		  <!-- <Dutch></Dutch> -->
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 		  <Original>1.04</Original>
 		  <English>1.04</English>
