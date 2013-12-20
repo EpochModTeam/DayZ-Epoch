@@ -207,7 +207,7 @@ class TraderDialog
 		class RscTextTraderDialog_1003: RscTextTraderDialog
 		{
 			idc = -1;
-			text = "Buy For";
+			text = $STR_EPOCH_PLAYER_293;
 			x = 0.290407 * safezoneW + safezoneX;
 			y = 0.555016 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;
@@ -216,7 +216,7 @@ class TraderDialog
 		class RscTextTraderDialog_1004: RscTextTraderDialog
 		{
 			idc = -1;
-			text = "Sell For";
+			text = $STR_EPOCH_PLAYER_294;
 			x = 0.290407 * safezoneW + safezoneX;
 			y = 0.623786 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;
