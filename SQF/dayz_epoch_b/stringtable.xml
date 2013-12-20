@@ -4804,7 +4804,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Stapel 10oz balk</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Skládat 10oz cihlu</Czech>
+		  <Czech>Poskládat 10oz cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211">
 		  <Original>Smelt 1oz bar</Original>
@@ -4814,7 +4814,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Stapel 1oz balk</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Skládat 1oz cihlu</Czech>
+		  <Czech>Poskládat 1oz cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_212">
 		  <Original>Salvage Scrap</Original>
@@ -5374,7 +5374,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Stapel bar van Zilver</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Skládat Stříbrnou cihlu</Czech>
+		  <Czech>Poskládat Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
 		  <Original>Stack Gold Bar</Original>
@@ -5384,7 +5384,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Stapel bar van Goud</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Skládat Zlatou cihlu</Czech>
+		  <Czech>Poskládat Zlatou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_268">
 		  <Original>Wear %1</Original>
