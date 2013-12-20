@@ -4797,24 +4797,24 @@
 		  <Czech>Otevřít %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210">
-		  <Original>Smelt 10oz bar</Original>
-		  <English>Smelt 10oz bar</English>
-		  <German>10oz bar schmelzen</German>
-		  <Russian>Выплавить 10oz слиток</Russian>
+		  <Original>Stack 10oz bar</Original>
+		  <English>Stack 10oz bar</English>
+		  <German>10oz bar Stapel</German>
+		  <Russian>Уложить в 10oz слиток</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Smelt 10oz balk</Dutch>
+		  <Dutch>Stapel 10oz balk</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Slít 10oz cihlu</Czech>
+		  <Czech>Skládat 10oz cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211">
 		  <Original>Smelt 1oz bar</Original>
 		  <English>Smelt 1oz bar</English>
-		  <German>1oz bar schmelzen</German>
-		  <Russian>Выплавить 1oz слиток</Russian>
+		  <German>1oz bar Stapel</German>
+		  <Russian>Уложить в 1oz слиток</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Smelt 1oz balk</Dutch>
+		  <Dutch>Stapel 1oz balk</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Slít 1oz cihlu</Czech>
+		  <Czech>Skládat 1oz cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_212">
 		  <Original>Salvage Scrap</Original>
@@ -5367,24 +5367,24 @@
 		  <Czech>Vyrobit Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_266">
-		  <Original>Smelt Silver Bar</Original>
-		  <English>Smelt Silver Bar</English>
-		  <German>Silberbarren schmelzen</German>
-		  <Russian>Выплавить серебряный слиток</Russian>
+		  <Original>Stack Silver Bar</Original>
+		  <English>Stack Silver Bar</English>
+		  <German>Silberbarren Stapel</German>
+		  <Russian>Уложить в серебряный слиток</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <!-- <Dutch></Dutch> -->
+		  <Dutch>Stapel bar van Zilver</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Slít Stříbrnou cihlu</Czech>
+		  <Czech>Skládat Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
-		  <Original>Smelt Gold Bar</Original>
-		  <English>Smelt Gold Bar</English>
-		  <German>Goldbarren schmelzen</German>
-		  <Russian>Выплавить золотой слиток</Russian>
+		  <Original>Stack Gold Bar</Original>
+		  <English>Stack Gold Bar</English>
+		  <German>Goldbarren Stapel</German>
+		  <Russian>Уложить в золотой слиток</Russian>
 		  <!-- <Spanish></Spanish> -->
-		  <!-- <Dutch></Dutch> -->
+		  <Dutch>Stapel bar van Goud</Dutch>
 		  <!-- <French></French> -->
-		  <Czech>Slít Zlatou cihlu</Czech>
+		  <Czech>Skládat Zlatou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_268">
 		  <Original>Wear %1</Original>
