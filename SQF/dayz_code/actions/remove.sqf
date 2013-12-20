@@ -17,7 +17,7 @@ _activatingPlayer = player;
 _objOwnerID = _obj getVariable["CharacterID","0"];
 _isOwnerOfObj = (_objOwnerID == dayz_characterID);
 
-if (_obj in DZE_DoorsLocked) exitWith { DZE_ActionInProgress = false; cutText ["You must remove the lock to delete this item!", "PLAIN DOWN"]; };
+if (_obj in DZE_DoorsLocked) exitWith { DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_31"), "PLAIN DOWN"];};
 if(_obj getVariable ["GeneratorRunning", false]) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_89"), "PLAIN DOWN"];};
 
 _objectID 	= _obj getVariable ["ObjectID","0"];
@@ -69,7 +69,7 @@ cutText [format[(localize "str_epoch_player_162"),_nameVehicle], "PLAIN DOWN"];
 
 if (_isModular) then {
      //allow previous cutText to show, then show this if modular.
-     cutText ["Deconstructing modular buildables will not refund any components.", "PLAIN"];
+     cutText [(localize "STR_EPOCH_ACTIONS_32"), "PLAIN DOWN"];
 };
 
 // Alert zombies once.
