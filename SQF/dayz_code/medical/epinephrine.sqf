@@ -15,6 +15,7 @@ if (!_isDead) then {
 	_unit setVariable ["USEC_isCardiac",false,true];
 	sleep 5;
 	//["usecEpi",[_unit,player,"ItemEpinephrine"]] call broadcastRpcCallAll;
+	//DayZ CE: Has been changed to PVC via server_sendToClient.sqf -> Could we also do here - Commit by Skaronator
 	usecEpi = [_unit,player,"ItemEpinephrine"];
 	publicVariable "usecEpi";
 };

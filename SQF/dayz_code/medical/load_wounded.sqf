@@ -35,6 +35,7 @@ if (local _wounded) then
 				_wounded action ["EJECT", _vcl];
 				sleep 1;
 			};
+			//DayZ CE: PublicVariables are removed in DayZ CE -> Could we also do here - Commit by Skaronator
 			norrinRAlie = _wounded;
 			publicVariable "norrinRAlie";
 			_wounded switchMove "ainjppnemstpsnonwrfldnon";

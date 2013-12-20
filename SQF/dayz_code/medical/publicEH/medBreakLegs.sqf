@@ -6,12 +6,9 @@ _unit = _array select 0;
 _attacker = _array select 1;
 
 if (_unit == player && player distance _attacker < 5) then {
-	
 	player setVariable["startcombattimer", 1, false];
-
 	// Make bleed
 	if (random 2 < 1) then {
-		
 		// Find hit
 		_cnt = count (DAYZ_woundHit_ok select 1);
 		_index = floor (random _cnt);
@@ -61,11 +58,4 @@ if (_unit == player && player distance _attacker < 5) then {
 	};
 
 	[_unit,"hit",2,false] call dayz_zombieSpeak;
-
-	
-
-	
-
-	
-
 };

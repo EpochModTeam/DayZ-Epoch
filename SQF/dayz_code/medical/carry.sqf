@@ -1,9 +1,6 @@
 /*
-
  CARRY BODY SCRIPT
-
  Allows players to carry unconscious bodies 
-
  JULY 2010 - norrin
 *****************************************************************************************************************************
 Start carry.sqf
@@ -23,6 +20,7 @@ _dragee setVariable ["NORRN_unit_dragged", true, true];
 detach _dragee;
 sleep 1.5;
 // public EH
+//DayZ CE: PublicVariables are removed in DayZ CE -> Could we also do here - Commit by Skaronator
 norrnRACarUp = _dragee;
 publicVariable "norrnRACarUp";
 _dragee switchMove "ainjpfalmstpsnonwrfldnon_carried_up";
@@ -35,7 +33,7 @@ _dragee attachto [_unit,[-0.2, 0.2, 0]];
 
 
 while {r_carry_sqf} do 
-{	
+{
 	_anim_name = animationstate _unit; 
 	if (!(_dragee getVariable "NORRN_unconscious")) exitWith
 	{ 

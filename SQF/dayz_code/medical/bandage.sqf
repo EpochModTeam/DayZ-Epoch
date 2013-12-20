@@ -49,7 +49,7 @@ if (_finished) then {
 			_display closeDisplay 0;
 		};	
 
-		//["usecBandage",[_unit,player]] call broadcastRpcCallAll;
+		//DayZ CE: Has been changed to PVC via server_sendToClient.sqf -> Could we also do here - Commit by Skaronator
 		usecBandage = [_unit,player];
 		publicVariable "usecBandage";
 		

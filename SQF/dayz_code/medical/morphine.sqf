@@ -56,6 +56,7 @@ if (_finished) then {
 		};
 	
 		//["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
+		//DayZ CE: PublicVariables are removed in DayZ CE -> Could we also do here - Commit by Skaronator
 		usecMorphine = [_unit,player];
 		publicVariable "usecMorphine";
 	};
