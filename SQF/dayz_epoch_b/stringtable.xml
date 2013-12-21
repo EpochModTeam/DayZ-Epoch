@@ -3400,7 +3400,7 @@
 		  <Original>\n\nNibble... Nibble...</Original>
 		  <English>\n\nNibble... Nibble...</English>
 		  <German>\n\nKnabber... Knabber...</German>
-		  <Russian>\n\nКлюй... Клюй...</Russian>
+		  <Russian>\n\nКлюй... клюй...</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>\n\nDobber.. Dobber..</Dutch>
 		  <French>\n\nÇa grignote... ça grignote...</French>
@@ -3827,8 +3827,8 @@
 		  <Czech>Tento server běží na nesprávné verzi serveru. Nemůžete hrát na tomto serveru. Pokud jste administrátor serveru, prosím kontaktujte podporu DayZ Epoch.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_113">
-		  <Original>You have an outdated version of epoch please download the correct version</Original>
-		  <English>You have an outdated version of epoch please download the correct version</English>
+		  <Original>You have an outdated version of Epoch please download the correct version</Original>
+		  <English>You have an outdated version of Epoch please download the correct version</English>
 		  <German>Sie haben eine falsche Version von Epoch. Downloaden Sie bitte die aktuelle Version.</German>
 		  <Russian>У вас устаревшая версия DayZ Epoch, загрузите правильную версию</Russian>
 		  <!-- <Spanish></Spanish> -->
@@ -3910,7 +3910,7 @@
 		  <Original>Packing %1 move from this position to cancel within 5 seconds.</Original>
 		  <English>Packing %1 move from this position to cancel within 5 seconds.</English>
 		  <German>%1 wird gepackt. Bewege dich in den nächsten 5 Sekunden um den Vorgang abzubrechen.</German>
-		  <Russian>Упаковывание 1% сдвиньтесь с этой позиции, чтобы отменить (В течение 5 секунд).</Russian>
+		  <Russian>Упаковывание 1% сдвиньтесь с этой позиции в течение 5 секунд, для отмены.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
 		  <French>Emballage de %1, déplacez vous pour annuler dans moins de 5 secondes.</French>
@@ -4090,7 +4090,7 @@
 		  <Original>Constructing %1 stage %2 of %3, move to cancel.</Original>
 		  <English>Constructing %1 stage %2 of %3, move to cancel.</English>
 		  <German>Konstruieren von %1, Stufe %2 von %3. Bewegen Sie sich um den Vorgang abzubrechen.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Строительство %1 стадия %2 из %3, двигайтесь для отмены.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
 		  <French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
@@ -4320,7 +4320,7 @@
 		  <Original>Starting de-construction of %1.</Original>
 		  <English>Starting de-construction of %1.</English>
 		  <German>Starte Dekonstruktion von %1.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Начат разбор %1.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Bezig met het slopen van %1.</Dutch>
 		  <!-- <French></French> -->
@@ -4330,7 +4330,7 @@
 		  <Original>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</Original>
 		  <English>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</English>
 		  <German>Dekonstruktion von %1, Stufe %2 von %3. Bewegen Sie sich um den Vorgang abzubrechen.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Разбор %1 стадия %2 из %3 уходите в любое время для отмены.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
 		  <!-- <French></French> -->
@@ -4340,7 +4340,7 @@
 		  <Original>%1 broke cannot remove %2.</Original>
 		  <English>%1 broke cannot remove %2.</English>
 		  <German>%1 wurde zerstört. %2 kann nicht mehr entfernt werden.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>%1 сломан, нельзя убрать %2.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
 		  <!-- <French></French> -->
@@ -4350,7 +4350,7 @@
 		  <Original>De-constructing %1.</Original>
 		  <English>De-constructing %1.</English>
 		  <German>Dekonstruktion von %1.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Разбор %1.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>%1 aan het slopen.</Dutch>
 		  <!-- <French></French> -->
@@ -4370,7 +4370,7 @@
 		  <Original>You need %1 to repair this</Original>
 		  <English>You need %1 to repair this</English>
 		  <German>Sie benötigen %1 um dies zu reparieren.</German>
-		  <Russian>Вам нужно %1, чтобы отремонитровать это</Russian>
+		  <Russian>Вам нужно %1, чтобы отремонтировать это</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Om dit te repareren heb je %1 nodig.</Dutch>
 		  <!-- <French></French> -->
@@ -4550,7 +4550,7 @@
 		  <Original>No %1 found within 20 meters.</Original>
 		  <English>No %1 found within 20 meters.</English>
 		  <German>Kein %1 innerhalb von 20 Metern gefunden.</German>
-		  <!-- <Russian></Russian> -->
+		  <Russian>Не найдено %1 вблизи 20 метров.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Geen %1 binnen 20 meter gevonden.</Dutch>
 		  <!-- <French></French> -->
@@ -5300,7 +5300,7 @@
 		  <Original>Craft Lumber Pack</Original>
 		  <English>Craft Lumber Pack</English>
 		  <German>Bauholz-Paket herstellen</German>
-		  <Russian>Создать: Lumber Pack</Russian>
+		  <Russian>Создать: Упаковка пиломатериалов</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
@@ -5410,7 +5410,7 @@
 		  <Original>Craft Canvas</Original>
 		  <English>Craft Canvas</English>
 		  <German>Craft Canvas</German>
-		  <Russian>Craft Canvas</Russian>
+		  <Russian>Создать: Полотно</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
@@ -5690,7 +5690,7 @@
 		  <Original>Cast Fishing Pole</Original>
 		  <English>Cast Fishing Pole</English>
 		  <German>Angelrute auswerfen</German>
-		  <Russian>Закинуть удочку</Russian>
+		  <Russian>Забросить удочку</Russian>
 		  <Spanish>Cast Fishing Pole</Spanish>
 		  <Dutch>Werp vislijn uit</Dutch>
 		  <French>Lancer la Ligne</French>
@@ -6090,7 +6090,7 @@
 		  <Original>Feed</Original>
 		  <English>Feed</English>
 		  <!-- <German></German> -->
-		  <Russian>Питаться</Russian>
+		  <Russian>Кормиться</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Eet</Dutch>
 		  <!-- <French></French> -->
@@ -6310,7 +6310,7 @@
 		  <Original>Attach Straps</Original>
 		  <English>Attach Straps</English>
 		  <!-- <German></German> -->
-		  <Russian>Прикрепить стропы</Russian>
+		  <Russian>Прицепить стропы</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Monteer Spanbanden</Dutch>
 		  <!-- <French></French> -->
