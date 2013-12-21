@@ -1307,7 +1307,7 @@ class Mission
 		class Item19
 		{
 			position[]={6815.0776,7.6293945e-006,8534.1504};
-			name="AircraftDealer";
+			name="AircraftDealer2";
 			text="Aircraft Dealer";
 			type="mil_dot";
 			colorName="ColorBlack";
@@ -1323,7 +1323,7 @@ class Mission
 		class Item21
 		{
 			position[]={17497.631,-235.07928,7159.0879};
-			name="Misc.Vendor";
+			name="Misc.Vendor2";
 			text="Misc. Vendor";
 			type="mil_box";
 			colorName="ColorGreen";
@@ -1339,7 +1339,7 @@ class Mission
 		class Item23
 		{
 			position[]={10570.494,-0.28882828,16772.477};
-			name="BoatDealer";
+			name="BoatDealer2";
 			text="Boat Dealer";
 			type="mil_dot";
 			colorName="ColorBlack";
@@ -1347,7 +1347,7 @@ class Mission
 		class Item24
 		{
 			position[]={10698.463,-0.00011062622,5983.665};
-			name="BoatDealer";
+			name="BoatDealer3";
 			text="Boat Dealer";
 			type="mil_dot";
 			colorName="ColorBlack";
@@ -1355,7 +1355,7 @@ class Mission
 		class Item25
 		{
 			position[]={5419.2437,-1.6689301e-006,9503.5479};
-			name="BoatDealer";
+			name="BoatDealer4";
 			text="Boat Dealer";
 			type="mil_dot";
 			colorName="ColorBlack";
@@ -1371,7 +1371,7 @@ class Mission
 		class Item27
 		{
 			position[]={9859.4209,-173.54755,7471.5684};
-			name="Wholesaler";
+			name="Wholesaler2";
 			text="Wholesaler";
 			type="mil_box";
 			colorName="ColorBlack";
