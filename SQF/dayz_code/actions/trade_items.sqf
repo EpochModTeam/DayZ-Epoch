@@ -167,19 +167,7 @@ if(_total_parts_out >= 1) then {
 		_next_highest_conv = 10000;
 		_third_highest_conv = 10000;
 
-		switch(true)do{ 
-			case (_part_out == "ItemCopperBar"): { 			
-				_next_highest_bar = "ItemCopperBar10oz";
-				_third_highest_bar = "ItemSilverBar";
-				_next_highest_conv = 10;
-				_third_highest_conv = 3;
-			}; 
-			case (_part_out == "ItemCopperBar10oz"): { 
-				_next_highest_bar = "ItemSilverBar";
-				_third_highest_bar = "ItemSilverBar10oz";
-				_next_highest_conv = 3;
-				_third_highest_conv = 10;
-			};
+		switch(true)do{
 			case (_part_out == "ItemSilverBar"): { 
 				_next_highest_bar = "ItemSilverBar10oz";
 				_third_highest_bar = "ItemGoldBar";
