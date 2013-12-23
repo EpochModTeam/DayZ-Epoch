@@ -39,7 +39,7 @@ _hasItems = true;
 		_missingQty = (_countIn - _qty);
 		_hasItems = false;
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-		cutText [format["Missing %1 more of %2", _missingQty, _textMissing], "PLAIN DOWN"];
+		cutText [format[(localize "STR_EPOCH_ACTIONS_12"), _missingQty, _textMissing], "PLAIN DOWN"];
 	};
 } forEach _items;
 _hasItems
