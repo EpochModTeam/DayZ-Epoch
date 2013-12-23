@@ -1,4 +1,4 @@
-private ["_nul","_result","_pos","_wsDone","_dir","_block","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_date","_key","_outcome","_vehLimit","_hiveResponse","_objectCount","_codeCount","_objectArray","_hour","_minute","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0"];
+private ["_nul","_result","_pos","_wsDone","_dir","_block","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_date","_key","_outcome","_vehLimit","_hiveResponse","_objectCount","_codeCount","_hour","_minute","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0"];
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
@@ -53,16 +53,14 @@ if (isServer and isNil "sm_done") then {
 	_BuildingQueue = [];
 	_objectQueue = [];
 
-	_objectArray = [];
 	if ((_hiveResponse select 0) == "ObjectStreamStart") then {
 		_objectCount = _hiveResponse select 1;
 		diag_log ("HIVE: Commence Object Streaming...");
 		for "_i" from 1 to _objectCount do { 
 			_hiveResponse = _key call server_hiveReadWriteLarge;
-			_objectArray set [_i - 1, _hiveResponse];
 			//diag_log (format["HIVE dbg %1 %2", typeName _hiveResponse, _hiveResponse]);
 			
-			_type = (_hiveResponse select _i) select 2;
+			_type = _hiveResponse select 2;
 			
 			switch true do {
 				case (_type isKindOf "ModularItems"): {
@@ -73,7 +71,8 @@ if (isServer and isNil "sm_done") then {
 				};
 			};
 		};
-		diag_log ("HIVE: got " + str(count _objectArray) + " objects");
+		_count = (count _objectQueue) + (count _BuildingQueue);
+		diag_log ("HIVE: got " + str(_count) + " objects");
 	};
 	
 	_spawnSort = [_BuildingQueue,_objectQueue]; // Put arrays in order that you wish them to spawn
