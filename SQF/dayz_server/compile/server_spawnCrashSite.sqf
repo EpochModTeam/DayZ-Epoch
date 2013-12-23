@@ -37,7 +37,7 @@ while {true} do {
 	
 	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
-	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
+	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' in %5 secounds", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
 
 	// Apprehensive about using one giant long sleep here given server time variances over the life of the server daemon
 	while {time < _timeToSpawn} do {
