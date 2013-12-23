@@ -27,7 +27,7 @@ if(!isNull dayz_selectedDoor) then {
 		// close display since another player is closer
 		_display = findDisplay 41144;
 		_display closeDisplay 3000;
-		cutText ["Failed, another player is closer than you are.", "PLAIN DOWN"];
+		cutText [(localize "STR_EPOCH_ACTIONS_16"), "PLAIN DOWN"];
 	} else {
 	
 		// get object combination
