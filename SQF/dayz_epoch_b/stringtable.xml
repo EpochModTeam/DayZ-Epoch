@@ -6516,16 +6516,6 @@
 		  <French>\n\nVous ne pouvez pas effectuer d'améliorations lorsque vous êtes à l'intérieur d'un véhicule.</French>
 		  <Czech></Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_19">
-		  <Original>English: Missing Parts after first check Item: %1 / %2</Original>
-		  <English>English: Missing Parts after first check Item: %1 / %2</English>
-		  <!-- <German></German> -->
-		  <Russian></Russian>
-		  <!-- <Spanish></Spanish> -->
-		  <Dutch></Dutch>
-		  <French>Éléments manquants après la première vérification : %1 / %2</French>
-		  <Czech></Czech>
-		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_20">
 		  <Original>You must remove the lock to delete this item!</Original>
 		  <English>You must remove the lock to delete this item!</English>
