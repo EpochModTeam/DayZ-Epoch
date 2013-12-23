@@ -1,7 +1,7 @@
 //Code developed by Axe Cop for use in DayZ Epoch Mod.
 private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
 
-if (DZE_ActionInProgress) exitWith { cutText ["Maintenance already in progress." , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_ACTIONS_2) , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
 player removeAction s_player_maintain_area;
@@ -115,17 +115,17 @@ switch _option do {
 					player reveal _object;
 				} forEach _objects;
 				
-				cutText [format["You have maintained %1 building parts.", _count], "PLAIN DOWN", 5];
+				cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
 				// uncomment the next 2 lines if you want logging of area maintenance to the server report file (Arma2OAserver.RPT)
 				//maintainArea_log = [player, _target, _count];
 				//publicVariableServer "maintainArea_log";
 			} else {
 				{player addMagazine _x;} forEach _temp_removed_array;
-				cutText [format["Missing Parts after first check Item: %1 / %2",_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+				cutText [format[(localize "STR_EPOCH_ACTIONS_5"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 			};
 		} else {
 			_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-			cutText [format["Missing %1 more of %2", _missingQty, _textMissing], "PLAIN DOWN"];
+			cutText [format[(localize "STR_EPOCH_ACTIONS_6"), _missingQty, _textMissing], "PLAIN DOWN"];
 		};
 	};
 	case "preview": {
@@ -139,7 +139,7 @@ switch _option do {
 			};
 			_cost = _cost + (str(_countIn) + " of " + _itemText);
 		} forEach _requirements;
-		cutText [format["%1 building parts in range, maintenance would cost %2.", _count, _cost], "PLAIN DOWN"];
+		cutText [format[(localize "STR_EPOCH_ACTIONS_7"), _count, _cost], "PLAIN DOWN"];
 	};
 };
 

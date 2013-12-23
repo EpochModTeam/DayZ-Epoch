@@ -166,7 +166,7 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 				_rfriendlyTo set [count _rfriendlyTo, _charID];
 				_humanityTarget setVariable ["friendlyTo", _rfriendlyTo, true];
 				
-				// titleText [format["You and %1 are now tagged as friendlies.", (name _humanityTarget)], "PLAIN DOWN"];
+				// titleText [format[(localize "STR_EPOCH_ACTIONS_17"), (name _humanityTarget)], "PLAIN DOWN"];
 
 			};
 	

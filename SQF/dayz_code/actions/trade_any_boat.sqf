@@ -136,7 +136,7 @@ if (_qty >= _qty_in) then {
 
 							player reveal _veh;
 
-							cutText [format[("Bought %3 for %1 %2, key added to toolbelt."),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
+							cutText [format[(localize "STR_EPOCH_ACTIONS_11"),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
 						} else {
 							player removeMagazine _keySelected;
 						};

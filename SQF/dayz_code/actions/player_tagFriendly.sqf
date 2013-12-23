@@ -16,7 +16,7 @@ _rfriendlies = _target getVariable ["friendlies", []];
 
 if !(_callerID in _rfriendlies) then {
 	// caller
-	titleText ["You have tagged a player as friendly. Waiting for other player to accept.", "PLAIN DOWN"]; // TODO: localize
+	titleText [(localize "STR_EPOCH_ACTIONS_8"), "PLAIN DOWN"];
 	// target
 	//Could be changed to PVC via server_sendToClient.sqf (From DayZCE) - Commit by Skaronator
 	PVDZE_plr_FriendRQ = _target;

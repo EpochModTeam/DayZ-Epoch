@@ -20,4 +20,4 @@ sleep 3;
 // allow menu again
 s_player_callzombies = -1;
 
-// cutText ["Calling Zombies...", "PLAIN DOWN"];
+// cutText [(localize "STR_EPOCH_ACTIONS_1"), "PLAIN DOWN"];

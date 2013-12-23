@@ -9,5 +9,5 @@ _nearTankTrap = _nearTankTraps select 0;
  if (!isNull _nearTankTrap and _canDo) then {
          [0,1,2,_nearTankTrap] spawn player_removeObject;
  } else {
-        cutText ["No Tank Traps found nearby.", "PLAIN DOWN"];
+        cutText [(localize "STR_EPOCH_ACTIONS_14"), "PLAIN DOWN"];
  };

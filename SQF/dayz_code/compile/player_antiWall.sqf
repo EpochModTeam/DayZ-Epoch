@@ -43,22 +43,22 @@ if(_activated) then {
 			_id = [player,"crushed"] spawn player_death;
 		};
 		if ((_vehicle emptyPositions "driver") > 0) exitWith {
-			cutText ["Another object is blocking the vehicle exit.", "PLAIN DOWN"];
+			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
 			player action ["getInDriver", _vehicle];
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "gunner") > 0) exitWith {
-			cutText ["Another object is blocking the vehicle exit.", "PLAIN DOWN"];
+			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
 			player action ["GetInGunner", _vehicle];
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "commander") > 0) exitWith {
-			cutText ["Another object is blocking the vehicle exit.", "PLAIN DOWN"];
+			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
 			player action ["getInCommander", _vehicle];
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "cargo") > 0) exitWith {
-			cutText ["Another object is blocking the vehicle exit.", "PLAIN DOWN"];
+			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
 			player action ["getInCargo", _vehicle];
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
