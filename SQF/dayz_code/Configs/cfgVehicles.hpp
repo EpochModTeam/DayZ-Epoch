@@ -463,6 +463,7 @@ class CfgVehicles {
 	
 	#include "CfgVehicles\AIR\CH47.hpp"
 	#include "CfgVehicles\AIR\UH60.hpp"
+	#include "CfgVehicles\AIR\pook_H13_gunship.hpp"
 
 	// LAND
 	#include "CfgVehicles\LAND\HMMWV.hpp"
