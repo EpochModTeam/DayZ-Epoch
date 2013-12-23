@@ -23,7 +23,7 @@ if (vehicle player != player) exitWith { DZE_ActionInProgress = false; cutText [
 
 if (!isNull (unitBackpack player)) exitWith { DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_9"), "PLAIN DOWN"] };
 
-if ("CSGAS" in (magazines player)) exitWith { DZE_ActionInProgress = false; cutText [(localize "STR_EPOHC_ACTIONS_10"), "PLAIN DOWN"] };
+if ("CSGAS" in (magazines player)) exitWith { DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_10"), "PLAIN DOWN"] };
 
 _myModel = (typeOf player);
 _itemNew = "Skin_" + _myModel;
