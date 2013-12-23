@@ -54,25 +54,20 @@ if (isServer and isNil "sm_done") then {
 	_objectQueue = [];
 
 	if ((_hiveResponse select 0) == "ObjectStreamStart") then {
-		_objectCount = _hiveResponse select 1;
 		diag_log ("HIVE: Commence Object Streaming...");
-		for "_i" from 1 to _objectCount do { 
+		_objectCount = _hiveResponse select 1;
+		_key = format["CHILD:302:%1:", dayZ_instance];
+		for "_i" from 1 to _objectCount do {
 			_hiveResponse = _key call server_hiveReadWriteLarge;
 			//diag_log (format["HIVE dbg %1 %2", typeName _hiveResponse, _hiveResponse]);
-			
-			_type = _hiveResponse select 2;
-			
-			switch true do {
-				case (_type isKindOf "ModularItems"): {
-					_BuildingQueue set [(count _BuildingQueue),_hiveResponse];
-				};
-				default {
-					_objectQueue set [(count _objectQueue),_hiveResponse];
-				};
+
+			if (((_hiveResponse select _i) select 2) isKindOf "ModularItems") then {
+				_BuildingQueue set [(count _BuildingQueue),_hiveResponse];
+			} else {
+				_objectQueue set [(count _objectQueue),_hiveResponse];
 			};
+			diag_log ("HIVE: got " + str(_BuildingQueue) + " Epoch objects and" + str(_objectQueue) + " Vehicles");
 		};
-		_count = (count _objectQueue) + (count _BuildingQueue);
-		diag_log ("HIVE: got " + str(_count) + " objects");
 	};
 	
 	_spawnSort = [_BuildingQueue,_objectQueue]; // Put arrays in order that you wish them to spawn
