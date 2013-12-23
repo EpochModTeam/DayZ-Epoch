@@ -49,6 +49,9 @@ if (isServer and isNil "sm_done") then {
 			_i = 99; // break
 		};
 	};
+	
+	_BuildingQueue = [];
+	_objectQueue = [];
 
 	_objectArray = [];
 	if ((_hiveResponse select 0) == "ObjectStreamStart") then {
@@ -58,47 +61,26 @@ if (isServer and isNil "sm_done") then {
 			_hiveResponse = _key call server_hiveReadWriteLarge;
 			_objectArray set [_i - 1, _hiveResponse];
 			//diag_log (format["HIVE dbg %1 %2", typeName _hiveResponse, _hiveResponse]);
+			
+			_type = (_hiveResponse select _i) select 2;
+			
+			switch true do {
+				case (_type isKindOf "ModularItems"): {
+					_BuildingQueue set [(count _BuildingQueue),_hiveResponse];
+				};
+				default {
+					_objectQueue set [(count _objectQueue),_hiveResponse];
+				};
+			};
 		};
 		diag_log ("HIVE: got " + str(count _objectArray) + " objects");
 	};
-
-	dayz_BuildingQueue = [];
-	dayz_objectQueue = [];
 	
-	// # START OF STREAMING #
-	_countr = 0;	
-	{
-		//Parse Array
-		_countr = _countr + 1;
-
-		_idKey = 	_x select 1;
-		_type =		_x select 2;
-		_ownerID = 	_x select 3;
-
-		_worldspace = _x select 4;
-		_intentory=	_x select 5;
-		_hitPoints=	_x select 6;
-		_fuel =		_x select 7;
-		_damage = 	_x select 8;
-		
-		_objArray = [_countr,_idKey,_type,_ownerID,_worldspace,_intentory,_hitPoints,_fuel,_damage];
-		
-		switch true do {
-			case (_type isKindOf "ModularItems"): {
-				dayz_BuildingQueue set [(count dayz_BuildingQueue),_objArray];
-			};
-			default {
-				dayz_objectQueue set [(count dayz_objectQueue),_objArray];
-			};
-		};
-	} forEach _objectArray;
-	// # END OF STREAMING #
+	_spawnSort = [_BuildingQueue,_objectQueue]; // Put arrays in order that you wish them to spawn
 	
 	// # NOW SPAWN OBJECTS #
 	_totalvehicles = 0;
 	{
-		_ObjArray = _x;
-		
 		{
 			_idKey = 	_x select 1;
 			_type =		_x select 2;
@@ -274,11 +256,8 @@ if (isServer and isNil "sm_done") then {
 				//Monitor the object
 				PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 			};
-		} forEach _ObjArray;
-	} forEach [dayz_BuildingQueue,dayz_objectQueue]; // Put arrays in order that you wish them to spawn
-	
-	dayz_BuildingQueue = nil;
-	dayz_objectQueue = nil;
+		} forEach _x;
+	} forEach _spawnSort;
 	
 	// # END SPAWN OBJECTS #
 	
