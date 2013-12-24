@@ -292,11 +292,13 @@ if (isServer and isNil "sm_done") then {
 
 	//  spawn_vehicles
 	_vehLimit = MaxVehicleLimit - _totalvehicles;
-	diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 	if(_vehLimit > 0) then {
+		diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 		for "_x" from 1 to _vehLimit do {
 			[] spawn spawn_vehicles;
 		};
+	} else {
+		diag_log "HIVE: Vehicle Spawn limit reached!";
 	};
 	//  spawn_roadblocks
 	diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
