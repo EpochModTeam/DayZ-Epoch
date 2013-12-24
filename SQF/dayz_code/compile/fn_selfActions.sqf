@@ -37,6 +37,17 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
+_hasAttached = _vehicle getVariable["hasAttached",false];
+if(_inVehicle and (_vehicle isKindOf "Air") and ((getPos _vehicle select 2) < 30) and (speed _vehicle < 5) and (typeName _hasAttached == "OBJECT")) then {
+	if (s_player_heli_detach < 0) then {
+		dayz_myLiftVehicle = _vehicle;
+		s_player_heli_detach = dayz_myLiftVehicle addAction ["Detach Vehicle","\z\addons\dayz_code\actions\player_heliDetach.sqf",[dayz_myLiftVehicle,_hasAttached],2,false,true,"",""];
+	};
+} else {
+	dayz_myLiftVehicle removeAction s_player_heli_detach;
+	s_player_heli_detach = -1;
+};
+
 if(DZE_HaloJump) then {
 	if(_inVehicle and (_vehicle isKindOf "Air") and ((getPos _vehicle select 2) > 400)) then {
 		if (s_halo_action < 0) then {
@@ -246,7 +257,41 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		player removeAction s_player_deleteBuild;
 		s_player_deleteBuild = -1;
 	};
-
+	
+	_liftHelis = nearestObjects [player, DZE_HeliAllowTow, 30];
+	_liftHeli = objNull;
+	_found = false;
+	{
+		if(!_found) then {
+			_posL = getPos _x;
+			_posC = getPos _cursorTarget;
+			_height = (_posL select 2) - (_posC select 2);
+			_hasAttached = _x getVariable["hasAttached",false];
+			if(_height < 30 and _height > 5 and (typeName _hasAttached != "OBJECT")) then {
+				if(((abs((_posL select 0) - (_posC select 0))) < 10) and ((abs((_posL select 1) - (_posC select 1))) < 10)) then {
+					_liftHeli = _x;
+					_found = true;
+				};
+			};
+		};
+	} forEach _liftHelis;
+	
+	_allowTow = false;
+	{
+		if(!_allowTow) then {
+			_allowTow = _cursorTarget isKindOf _x;
+		};
+	} forEach DZE_HeliAllowToTow;
+	
+	_attached = _cursorTarget getVariable["attached",false];
+	if(_found and _allowTow and _canDo and !locked _cursorTarget and !_isPZombie and (typeName _attached != "OBJECT")) then {
+		if (s_player_heli_lift < 0) then {
+            s_player_heli_lift = player addAction ["Attach to Heli", "\z\addons\dayz_code\actions\player_heliLift.sqf",[_liftHeli,_cursorTarget], -10, false, true, "",""];
+        };
+	} else {
+		player removeAction s_player_heli_lift;
+        s_player_heli_lift = -1;
+	};
 	
 	// Allow Owner to lock and unlock vehicle  
 	if(_player_lockUnlock_crtl) then {
