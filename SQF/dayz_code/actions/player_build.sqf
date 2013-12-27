@@ -75,7 +75,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 			if(_isNear == 0) then {  
 				_abort = true;
 				_reason = "fuel tank";
-				// _distance = 5;
+				_distance = 30;
 			};
 		};
 	};

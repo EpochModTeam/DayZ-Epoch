@@ -2645,7 +2645,7 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "FuelPump_DZ";
-				neednearby[] = {{"fueltank",30}};
+				neednearby[] = {"fueltank"};
 			};
 		};
 	};
