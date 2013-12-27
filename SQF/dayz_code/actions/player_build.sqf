@@ -52,9 +52,7 @@ _reason = "";
 _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "neednearby");
 
 {
-	_need = _x select 0;
-	_distance = _x select 1;
-	switch(_need) do{
+	switch(_x) do{
 		case "fire":
 		{
 			_isNear = {inflamed _x} count (getPosATL player nearObjects _distance);
@@ -77,6 +75,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 			if(_isNear == 0) then {  
 				_abort = true;
 				_reason = "fuel tank";
+				// _distance = 5;
 			};
 		};
 	};
