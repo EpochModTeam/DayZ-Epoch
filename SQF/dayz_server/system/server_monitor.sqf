@@ -70,7 +70,6 @@ if (isServer and isNil "sm_done") then {
 	};
 	diag_log ("HIVE: got " + str(count(_BuildingQueue)) + " Epoch Objects and " + str(count(_objectQueue)) + " Vehicles");
 
-	_finalEpochObjArray = _BuildingQueue + _objectQueue;
 	// # NOW SPAWN OBJECTS #
 	_totalvehicles = 0;
 	{
@@ -248,8 +247,7 @@ if (isServer and isNil "sm_done") then {
 			//Monitor the object
 			PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 		};
-	} forEach _finalEpochObjArray;
-	
+	} forEach (_BuildingQueue + _objectQueue);
 	// # END SPAWN OBJECTS #
 	
 
