@@ -708,10 +708,6 @@ server_timeSync = {
 		_date = _result select 1; 
 		
 		if(dayz_fullMoonNights) then {
-			//date setup
-			//_year = _date select 0;
-			//_month = _date select 1;
-			//_day = _date select 2;
 			_hour = _date select 3;
 			_minute = _date select 4;
 		
@@ -729,9 +725,6 @@ server_timeSync = {
 // must spawn these 
 server_spawncleanDead = {
 	private ["_deathTime","_delQtyZ","_delQtyP","_qty","_allDead"];
-	
-	if(!isNil "DZE_DYN_cleandead") exitWith { };
-	DZE_DYN_cleandead = true;
 
 	_allDead = allDead;
 	_delQtyZ = 0;
@@ -741,7 +734,7 @@ server_spawncleanDead = {
 			if (_x isKindOf "zZombie_Base") then
 			{
 				_x call dayz_perform_purge;
-				sleep 0.025;
+				sleep 0.05;
 				_delQtyZ = _delQtyZ + 1;
 			} else {
 
@@ -749,7 +742,7 @@ server_spawncleanDead = {
 					_deathTime = _x getVariable ["processedDeath", diag_tickTime];
 					if (diag_tickTime - _deathTime > 1800) then {
 						_x call dayz_perform_purge_player;
-						sleep 0.025;
+						sleep 0.05;
 						_delQtyP = _delQtyP + 1;
 					};
 				};
@@ -761,24 +754,36 @@ server_spawncleanDead = {
 		_qty = count _allDead;
 		diag_log (format["CLEANUP: Deleted %1 players and %2 zombies out of %3 dead",_delQtyP,_delQtyZ,_qty]);
 	};
-	DZE_DYN_cleandead = nil;
+};
+server_cleanupGroups = {
+	if (DZE_DYN_AntiSuck3rd > 3) then { DZE_DYN_GroupCleanup = nil; DZE_DYN_AntiSuck3rd = 0; };
+	if(!isNil "DZE_DYN_GroupCleanup") exitWith {  DZE_DYN_AntiSuck3rd = DZE_DYN_AntiSuck3rd + 1;};
+	DZE_DYN_GroupCleanup = true;
+	{
+		// diag_log ("CLEANUP: CHECKING GROUP WITH " + str(count units _x) + " UNITS");
+		if (count units _x==0) then {
+			deleteGroup _x;
+			// diag_log ("CLEANUP: DELETING A GROUP");
+		};
+		sleep 0.01;
+	} forEach allGroups;
+	DZE_DYN_GroupCleanup = nil;
 };
 
-server_spawnCleanNull = {
-	private ["_delQtyNull"];
-	_delQtyNull = 0;
+server_checkHackers = {
+	if (DZE_DYN_AntiSuck2nd > 3) then { DZE_DYN_HackerCheck = nil; DZE_DYN_AntiSuck2nd = 0; };
+	if(!isNil "DZE_DYN_HackerCheck") exitWith {  DZE_DYN_AntiSuck2nd = DZE_DYN_AntiSuck2nd + 1;};
+	DZE_DYN_HackerCheck = true;
 	{
-		if (isNull _x) then {
-			//diag_log (format["CLEANUP: Purge performed on null OBJ: %1",_x]);
-			_x call dayz_perform_purge;
-			sleep 1;
-			_delQtyNull = _delQtyNull + 1;
+		if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {
+			diag_log ("CLEANUP: KILLING A HACKER " + (name _x) + " " + str(_x) + " IN " + (typeOf vehicle _x));
+			(vehicle _x) setDamage 1;
+			_x setDamage 1;
+			sleep 0.25;
 		};
-		sleep 0.001;
-	} forEach (allMissionObjects "");
-	if (_delQtyNull > 0) then {
-		diag_log (format["CLEANUP: Deleted %1 null objects",_delQtyNull]);
-	};
+		sleep 0.01;
+	} forEach allUnits;
+	DZE_DYN_HackerCheck = nil;
 };
 
 server_spawnCleanFire = {
@@ -791,7 +796,7 @@ server_spawnCleanFire = {
 			sleep 0.025;
 			_delQtyFP = _delQtyFP + 1;
 		};
-		sleep 0.001;
+		sleep 0.01;
 	} forEach _missionFires;
 	if (_delQtyFP > 0) then {
 		_qty = count _missionFires;
@@ -800,7 +805,8 @@ server_spawnCleanFire = {
 };
 server_spawnCleanLoot = {
 	private ["_created","_delQty","_nearby","_age","_keep","_qty","_missionObjs","_dateNow"];
-	if(!isNil "DZE_DYN_cleanLoot") exitWith { };
+	if (DZE_DYN_AntiSuck > 3) then { DZE_DYN_cleanLoot = nil; DZE_DYN_AntiSuck = 0; };
+	if(!isNil "DZE_DYN_cleanLoot") exitWith {  DZE_DYN_AntiSuck = DZE_DYN_AntiSuck + 1;};
 	DZE_DYN_cleanLoot = true;
 
 	_missionObjs =  allMissionObjects "ReammoBox";
@@ -825,7 +831,7 @@ server_spawnCleanLoot = {
 				};
 			};
 		};
-		sleep 0.001;
+		sleep 0.01;
 	} forEach _missionObjs;
 	if (_delQty > 0) then {
 		_qty = count _missionObjs;
@@ -836,14 +842,12 @@ server_spawnCleanLoot = {
 
 server_spawnCleanAnimals = {
 	private ["_pos","_delQtyAnimal","_qty","_missonAnimals","_nearby"];
-	if(!isNil "DZE_DYN_cleanAnimals") exitWith { };
-	DZE_DYN_cleanAnimals = true;
 	_missonAnimals = entities "CAAnimalBase";
 	_delQtyAnimal = 0;
 	{
 		if (local _x) then {
 			_x call dayz_perform_purge;
-			sleep 0.025;
+			sleep 0.05;
 			_delQtyAnimal = _delQtyAnimal + 1;
 		} else {
 			if (!alive _x) then {
@@ -852,17 +856,16 @@ server_spawnCleanAnimals = {
 					_nearby = {(isPlayer _x) and (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 130]);
 					if (_nearby==0) then {
 						_x call dayz_perform_purge;
-						sleep 0.025;
+						sleep 0.05;
 						_delQtyAnimal = _delQtyAnimal + 1;
 					};
 				};
 			};
 		};
-		sleep 0.001;
+		sleep 0.01;
 	} forEach _missonAnimals;
 	if (_delQtyAnimal > 0) then {
 		_qty = count _missonAnimals;
 		diag_log (format["CLEANUP: Deleted %1 Animals out of %2",_delQtyAnimal,_qty]);
 	};
-	DZE_DYN_cleanAnimals = nil;
 };
