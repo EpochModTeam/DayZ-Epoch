@@ -337,6 +337,7 @@ if (isServer and isNil "sm_done") then {
 		// Epoch Events
 		_id = [] spawn server_spawnEvents;
 		// server cleanup
+		waitUntil {!isNil "server_spawnCleanAnimals"};
 		_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
 
 		// spawn debug box
