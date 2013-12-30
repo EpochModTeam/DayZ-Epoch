@@ -6424,7 +6424,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>\n\nImpossible de changer ses vêtements lorsque vous portez un sac à dos.</French>
-		  <Czech>\n\nNemůžete si změnit oblečení, dokud nosíte batoh.</Czech>
+		  <Czech>\n\nNemůžete si změnit oblečení, pokud nosíte batoh.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_10">
 		  <Original>\n\nUnable to change clothes while carrying a filled chainsaw.</Original>
@@ -6434,7 +6434,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>\n\nImpossible de changer ses vêtements lorsque vous avez une tronçonneuse en main.</French>
-		  <Czech>\n\nNemůžete si změnit oblečení, dokud nesete naplněnou motorovou pilu.</Czech>
+		  <Czech>\n\nNemůžete si změnit oblečení, pokud nesete naplněnou motorovou pilu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_11">
 		  <Original>Bought %3 for %1 %2, key added to toolbelt.</Original>
@@ -6484,7 +6484,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Un objet empêche de sortir du véhicule.</French>
-		  <Czech>Jiné vozidlo blokuje výstup vozidla.</Czech>
+		  <Czech>Jiný objekt překáží ve výstupu z vozidla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_16">
 		  <Original>Failed, another player is closer than you are.</Original>
@@ -6514,7 +6514,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>\n\nVous ne pouvez pas effectuer d'améliorations lorsque vous êtes à l'intérieur d'un véhicule.</French>
-		  <Czech>\n\nNemůžete upgradovat, dokud jste stále ve vozidle.</Czech>
+		  <Czech>\n\nNemůžete upgradovat, pokud jste ve vozidle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_20">
 		  <Original>You must remove the lock to delete this item!</Original>
