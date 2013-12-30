@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "F:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "D:\Programme\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -20,7 +20,7 @@ item15[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000
 item16[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
-item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
+item19[] = {"Phase_One",2,4346,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
 item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
@@ -28,7 +28,7 @@ item23[] = {"ERROR__Player_Already",2,250,175.000000,700.000000,275.000000,750.0
 item24[] = {"Alive",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Alive"};
 item25[] = {"Position",2,250,-75.000000,800.000000,25.000000,850.000000,0.000000,"Position"};
 item26[] = {"Version_Ok",4,218,-175.000000,850.000000,-75.000000,900.000000,0.000000,"Version" \n "Ok"};
-item27[] = {"Load_In",2,4346,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Load In"};
+item27[] = {"Load_In",2,250,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Load In"};
 item28[] = {"Bad_Version",4,218,50.000000,800.000000,150.000000,850.000000,0.000000,"Bad" \n "Version"};
 item29[] = {"ERROR__Bad_Versi",2,250,175.000000,800.000000,275.000000,850.000000,0.000000,"ERROR:" \n "Bad Version"};
 item30[] = {"Display_Ready",4,218,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,"Display" \n "Ready"};
@@ -43,10 +43,10 @@ item38[] = {"Too_Long",4,218,300.000000,700.000000,400.000000,750.000000,0.00000
 item39[] = {"Too_Long",4,218,300.000000,800.000000,400.000000,850.000000,0.000000,"Too" \n "Long"};
 item40[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
 item41[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
-item42[] = {"New_Character",4,218,-500.000000,375.000000,-400.000000,425.000000,5.000000,"New" \n "Character"};
-item43[] = {"Gender_Selection",2,250,-500.000000,500.000000,-400.000000,550.000000,0.000000,"Gender Selection" \n "Dialog"};
-item44[] = {"Selected",4,218,-400.000000,600.000000,-300.000000,650.000000,0.000000,"Selected"};
-item45[] = {"Process",2,250,-275.000000,600.000000,-175.000000,650.000000,0.000000,"Process"};
+item42[] = {"New_Character",4,218,-325.000000,325.000000,-225.000000,375.000000,5.000000,"New" \n "Character"};
+item43[] = {"Gender_Selection",2,250,-575.000000,325.000000,-475.000000,375.000000,0.000000,"Gender Selection" \n "Dialog"};
+item44[] = {"Selected",4,218,-575.000000,400.000000,-475.000000,450.000000,0.000000,"Selected"};
+item45[] = {"Process",2,250,-575.000000,550.000000,-475.000000,600.000000,0.000000,"Process"};
 item46[] = {"no_PlayerID",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
 item47[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item48[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
@@ -67,8 +67,12 @@ item62[] = {"sleep_",4,218,600.000000,800.000000,700.000000,850.000000,0.000000,
 item63[] = {"Server_Loading",2,250,-75.000000,250.000000,25.000000,300.000000,0.000000,"Server Loading"};
 item64[] = {"Too_Long",4,218,50.000000,250.000000,150.000000,300.000000,0.000000,"Too" \n "Long"};
 item65[] = {"Server_Ready",4,218,-75.000000,325.000000,25.000000,375.000000,0.000000,"Server Ready"};
-item66[] = {"New_Infected_Cha",4,218,-375.000000,450.000000,-275.000000,500.000000,5.000000,"New" \n "Infected" \n "Character"};
-item67[] = {"Player_Zombie__S",2,250,-300.000000,525.000000,-200.000000,575.000000,0.000000,"Player Zombie" \n " Selection"};
+item66[] = {"New_Infected_Cha",4,218,-325.000000,400.000000,-225.000000,450.000000,5.000000,"New" \n "Infected" \n "Character"};
+item67[] = {"Player_Zombie__S",2,250,-450.000000,400.000000,-350.000000,450.000000,0.000000,"Player Zombie" \n " Selection"};
+item68[] = {"",7,210,-204.000000,521.000000,-196.000000,529.000000,0.000000,""};
+item69[] = {"",7,210,-204.000000,421.000000,-196.000000,429.000000,0.000000,""};
+item70[] = {"",7,210,-204.000000,346.000000,-196.000000,354.000000,0.000000,""};
+item71[] = {"",7,210,-404.000000,571.000000,-396.000000,579.000000,0.000000,""};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -89,66 +93,70 @@ link16[] = {13,52};
 link17[] = {14,15};
 link18[] = {15,16};
 link19[] = {15,18};
-link20[] = {15,42};
-link21[] = {15,66};
-link22[] = {16,17};
-link23[] = {17,37};
-link24[] = {18,19};
-link25[] = {19,20};
-link26[] = {20,21};
-link27[] = {21,22};
-link28[] = {21,24};
-link29[] = {22,23};
-link30[] = {23,38};
-link31[] = {24,25};
-link32[] = {25,26};
-link33[] = {25,28};
-link34[] = {26,49};
-link35[] = {27,30};
-link36[] = {28,29};
-link37[] = {29,39};
-link38[] = {30,31};
-link39[] = {31,32};
-link40[] = {32,33};
-link41[] = {33,35};
-link42[] = {33,58};
-link43[] = {35,34};
-link44[] = {36,57};
-link45[] = {37,57};
-link46[] = {38,57};
-link47[] = {39,61};
-link48[] = {40,6};
-link49[] = {40,46};
-link50[] = {41,40};
-link51[] = {42,43};
-link52[] = {43,44};
-link53[] = {44,45};
-link54[] = {45,18};
-link55[] = {46,47};
-link56[] = {47,48};
-link57[] = {48,57};
-link58[] = {49,50};
-link59[] = {50,27};
-link60[] = {51,13};
-link61[] = {52,53};
-link62[] = {53,51};
-link63[] = {53,54};
-link64[] = {54,55};
-link65[] = {55,56};
-link66[] = {56,57};
-link67[] = {58,59};
-link68[] = {59,60};
-link69[] = {60,57};
-link70[] = {61,62};
-link71[] = {62,57};
-link72[] = {63,64};
-link73[] = {63,65};
-link74[] = {64,57};
-link75[] = {65,13};
-link76[] = {66,67};
-link77[] = {67,18};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-472.070313,354.276123,1514.247314,631.657410,581,630,1};
-window[] = {2,-1,-1,-1,-1,793,-39,1239,35,3,599};
+link20[] = {15,68};
+link21[] = {16,17};
+link22[] = {17,37};
+link23[] = {18,19};
+link24[] = {19,20};
+link25[] = {20,21};
+link26[] = {21,22};
+link27[] = {21,24};
+link28[] = {22,23};
+link29[] = {23,38};
+link30[] = {24,25};
+link31[] = {25,26};
+link32[] = {25,28};
+link33[] = {26,49};
+link34[] = {27,30};
+link35[] = {28,29};
+link36[] = {29,39};
+link37[] = {30,31};
+link38[] = {31,32};
+link39[] = {32,33};
+link40[] = {33,35};
+link41[] = {33,58};
+link42[] = {35,34};
+link43[] = {36,57};
+link44[] = {37,57};
+link45[] = {38,57};
+link46[] = {39,61};
+link47[] = {40,6};
+link48[] = {40,46};
+link49[] = {41,40};
+link50[] = {42,43};
+link51[] = {43,44};
+link52[] = {44,45};
+link53[] = {45,71};
+link54[] = {46,47};
+link55[] = {47,48};
+link56[] = {48,57};
+link57[] = {49,50};
+link58[] = {50,27};
+link59[] = {51,13};
+link60[] = {52,53};
+link61[] = {53,51};
+link62[] = {53,54};
+link63[] = {54,55};
+link64[] = {55,56};
+link65[] = {56,57};
+link66[] = {58,59};
+link67[] = {59,60};
+link68[] = {60,57};
+link69[] = {61,62};
+link70[] = {62,57};
+link71[] = {63,64};
+link72[] = {63,65};
+link73[] = {64,57};
+link74[] = {65,13};
+link75[] = {66,67};
+link76[] = {67,71};
+link77[] = {68,69};
+link78[] = {69,66};
+link79[] = {69,70};
+link80[] = {70,42};
+link81[] = {71,18};
+globals[] = {25.000000,1,0,0,0,640,480,1,135,6316128,1,-484.875916,99.442245,872.143433,-44.059429,581,911,1};
+window[] = {2,-1,-1,-1,-1,858,100,1378,100,3,599};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -505,7 +513,7 @@ class FSM
        "_isHiveOk = false;" \n
        "_newPlayer = false;" \n
        "_isInfected = false;" \n
-       "freshSpawn = 0;" \n
+       "" \n
        "if (count _msg > 7) then {" \n
        "	_isHiveOk = _msg select 7;" \n
        "	_newPlayer = _msg select 8;" \n
@@ -551,16 +559,6 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "New_Character">*/
-        class New_Character
-        {
-          priority = 5.000000;
-          to="Gender_Selection";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_isNew && _isInfected == 0"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "New_Infected_Cha">*/
         class New_Infected_Cha
         {
@@ -568,6 +566,16 @@ class FSM
           to="Player_Zombie__S";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_isNew && _isInfected == 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "New_Character">*/
+        class New_Character
+        {
+          priority = 5.000000;
+          to="Gender_Selection";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_isNew && _isInfected == 0"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -626,6 +634,10 @@ class FSM
        "_usedWater = 0;" \n
        "" \n
        "//_inventory = [[""Mk_48_DZ"",""NVGoggles"",""Binocular_Vector"",""M9SD"",""ItemGPS"",""ItemToolbox"",""ItemEtool"",""ItemCompass"",""ItemMatchbox"",""FoodCanBakedBeans"",""ItemKnife"",""ItemMap"",""ItemWatch""],[[""100Rnd_762x51_M240"",47],""ItemPainkiller"",""ItemBandage"",""15Rnd_9x19_M9SD"",""100Rnd_762x51_M240"",""ItemBandage"",""ItemBandage"",""15Rnd_9x19_M9SD"",""15Rnd_9x19_M9SD"",""15Rnd_9x19_M9SD"",""ItemMorphine"",""PartWoodPile""]];" \n
+       "" \n
+       "if (isNil ""freshSpawn"") then {" \n
+       "	freshSpawn = 0;" \n
+       "};" \n
        "" \n
        "dayzGearSave = false;" \n
        "_inventory call player_gearSet;" \n
