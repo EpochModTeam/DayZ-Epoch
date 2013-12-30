@@ -6254,7 +6254,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <French>Améliorer %1</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Upgradovat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_REMLOCK">
 		  <Original>Remove Lock from %1</Original>
@@ -6284,7 +6284,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <French>Arrêter le générateur</French>
-		  <Czech>Zastavit Generátor</Czech>
+		  <Czech>Zastavit generátor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR2">
 		  <Original>Start Generator</Original>
@@ -6294,7 +6294,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <French>Démarrer le générateur</French>
-		  <Czech>Nastartovat Generátor</Czech>
+		  <Czech>Nastartovat generátor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR3">
 		  <Original>Fill and Start Generator</Original>
@@ -6304,7 +6304,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Vul en Start Generator</Dutch>
 		  <French>Remplir et démarrer le générateur</French>
-		  <Czech>Naplnit a Nastartovat Generátor</Czech>
+		  <Czech>Naplnit a nastartovat generátor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_ATTACH">
 		  <Original>Attach Straps</Original>
@@ -6314,7 +6314,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Monteer Spanbanden</Dutch>
 		  <French>Attacher les sangles</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Připevnit popruhy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_DETACH">
 		  <Original>Detach Straps</Original>
@@ -6324,7 +6324,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Demonteer Spanbanden</Dutch>
 		  <French>Détacher les sangles</French>
-		  <!-- <Czech></Czech> -->
+		  <Czech>Odstranit popruhy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HUMANITY">
 		  <Original>Your humanity is too %1, this trader refuses to talk to you</Original>
@@ -6344,7 +6344,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Appeler les zombies...</French>
-		  <Czech></Czech>
+		  <Czech>Volám zombíky...</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_2">
 		  <Original>Maintenance already in progress.</Original>
@@ -6354,7 +6354,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>La maintenance est déjà en cours.</French>
-		  <Czech></Czech>
+		  <Czech>Údržba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_3">
 		  <Original>At least one building part is not setup yet.</Original>
@@ -6364,7 +6364,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Il reste encore des parties de la construction à maintenir.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_4">
 		  <Original>You have maintained %1 building parts.</Original>
@@ -6374,7 +6374,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Vous avez maintenu %1 construction(s).</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_5">
 		  <Original>Missing Parts after first check Item: %1 / %2</Original>
@@ -6384,7 +6384,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Éléments manquants après la première vérification: %1 / %2</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_6">
 		  <Original>Missing %1 more of %2</Original>
@@ -6394,7 +6394,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Il manque %1 %2</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_7">
 		  <Original>%1 building parts in range, maintenance would cost %2.</Original>
@@ -6404,7 +6404,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>%1 constructions à portée, la maintenance coûtera %2.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_8">
 		  <Original>You have tagged a player as friendly. Waiting for other player to accept.</Original>
@@ -6414,7 +6414,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Vous avez marqué un joueur comme amical. En attente de la confirmation de ce joueur.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_9">
 		  <Original>\n\nUnable to change clothes while wearing backpack.</Original>
@@ -6424,7 +6424,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>\n\nImpossible de changer ses vêtements lorsque vous portez un sac à dos.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_10">
 		  <Original>\n\nUnable to change clothes while carrying a filled chainsaw.</Original>
@@ -6434,7 +6434,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>\n\nImpossible de changer ses vêtements lorsque vous avez une tronçonneuse en main.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_11">
 		  <Original>Bought %3 for %1 %2, key added to toolbelt.</Original>
@@ -6444,7 +6444,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Vous avez acheté %3 pour %1 %2, la clé a été ajoutée à votre ceinture.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_12">
 		  <Original>Missing %1 more of %2</Original>
@@ -6454,7 +6454,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Il manque %1 %2</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_13">
 		  <Original>Missing tool %1</Original>
@@ -6464,7 +6464,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Outil manquant : %1</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_14">
 		  <Original>No Tank Traps found nearby.</Original>
@@ -6474,7 +6474,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Aucun piège à tank trouvé aux alentours.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_15">
 		  <Original>Another object is blocking the vehicle exit.</Original>
@@ -6484,7 +6484,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Un objet empêche de sortir du véhicule.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_16">
 		  <Original>Failed, another player is closer than you are.</Original>
@@ -6494,7 +6494,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Échec, un autre joueur est plus proche.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_17">
 		  <Original>You and %1 are now tagged as friendlies.</Original>
@@ -6504,7 +6504,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>Vous et %1 êtes maintenant marqués comme amicaux.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_18">
 		  <Original>\n\nYou cannot perform an upgrade while still inside a vehicle.</Original>
@@ -6514,7 +6514,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
 		  <French>\n\nVous ne pouvez pas effectuer d'améliorations lorsque vous êtes à l'intérieur d'un véhicule.</French>
-		  <Czech></Czech>
+		  <!-- <Czech></Czech>  -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_20">
 		  <Original>You must remove the lock to delete this item!</Original>
