@@ -493,7 +493,7 @@ class SUV_Camo_DZE2: SUV_Camo_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -549,7 +549,7 @@ class SUV_Blue_DZE2: SUV_Blue_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -605,7 +605,7 @@ class SUV_Green_DZE2: SUV_Green_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -661,7 +661,7 @@ class SUV_Yellow_DZE2: SUV_Yellow_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -717,7 +717,7 @@ class SUV_Red_DZE2: SUV_Red_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -773,7 +773,7 @@ class SUV_White_DZE2: SUV_White_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -829,7 +829,7 @@ class SUV_Pink_DZE2: SUV_Pink_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -885,7 +885,7 @@ class SUV_Charcoal_DZE2: SUV_Charcoal_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -941,7 +941,7 @@ class SUV_Orange_DZE2: SUV_Orange_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
@@ -997,7 +997,7 @@ class SUV_Silver_DZE2: SUV_Silver_DZE1
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.15;
+			armor = 0.3;
 		};
 		class HitFuel
 		{
