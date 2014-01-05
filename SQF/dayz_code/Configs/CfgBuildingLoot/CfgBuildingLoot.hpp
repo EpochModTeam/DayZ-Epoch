@@ -1767,7 +1767,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemMachete", "object"},
 			{ "SCAR_H_LNG_Sniper_SD","weapon" },
 			{"2000Rnd_762x51_M134","magazine"},
-			{"KSVK","weapon" },
+			{"KSVK_DZE","weapon" },
 			{"m240_scoped_EP1_DZE","weapon" }
 		};
 		itemChance[] =	{
