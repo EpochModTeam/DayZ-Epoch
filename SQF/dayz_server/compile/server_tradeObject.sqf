@@ -5,12 +5,15 @@ _traderID = 	_this select 1;
 _buyorsell = 	_this select 2;	//0 > Buy // 1 > Sell
 _classname =	_this select 3;
 _traderCity = 	_this select 4;
+_currency =	_this select 5;
+_qty =		_this select 6;
 _clientID = 	owner _player;
+_price = format ["%2x %1",_currency,_qty];
 
 if (_buyorsell == 0) then { //Buy
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in/at %4", (name _player), (getPlayerUID _player), _classname, _traderCity];
+diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in/at %4 for %5", (name _player), (getPlayerUID _player), _classname, _traderCity, _price];
 } else { //SELL
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) sold a %3 in/at %4",(name _player), (getPlayerUID _player), _classname, _traderCity];
+diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) sold a %3 in/at %4 for %5",(name _player), (getPlayerUID _player), _classname, _traderCity, _price];
 };
 
 //Send request
