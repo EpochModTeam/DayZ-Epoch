@@ -11,9 +11,9 @@ _clientID = 	owner _player;
 _price = format ["%2x %1",_currency,_qty];
 
 if (_buyorsell == 0) then { //Buy
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in/at %4 for %5x", (name _player), (getPlayerUID _player), _classname, _traderCity, _price];
+diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in/at %4 for %5", (name _player), (getPlayerUID _player), _classname, _traderCity, _price];
 } else { //SELL
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) sold a %3 in/at %4 for %5x",(name _player), (getPlayerUID _player), _classname, _traderCity, _price];
+diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) sold a %3 in/at %4 for %5",(name _player), (getPlayerUID _player), _classname, _traderCity, _price];
 };
 
 //Send request
