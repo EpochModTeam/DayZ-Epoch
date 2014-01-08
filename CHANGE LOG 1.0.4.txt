@@ -1,5 +1,6 @@
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 
+[ADDED] Added back BAF_AS50_scoped_DZ configs. @vbawol
 [ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
         by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole. @dayz10k @vos
 [ADDED] Buying Vehicle Maintenance Manuals (added in 1.0.3) from the Vehicle Parts Vendors. @dayz10k
@@ -7,6 +8,8 @@
 [ADDED] Global variable to set plot pole radius and exclusion zone, enabled via mission file. DZE_PlotPole = [x,y] in the mission file controls the [Radius, Exclusion zone]. 
         Default is DZE_PlotPole = [30,45]. @dayz10k @Skaronator
 
+[FIXED] Wrong KSVK class spawning on mass graves. @Skaronator via MGT
+[FIXED] Armor value for RBWheel on SUV was lower than it should have been. @SGanthony
 [FIXED] Fixed issues with losing weapons when on graves @vbawol - http://epochmod.com/forum/index.php?/topic/5092-player-grave/?p=33281
 [FIXED] More Localization (translations).  @dayz10k, @VeryBigBro (Russian), @JoSchaap (Dutch), @Geodar (Czech), @krazey (German)
 [FIXED] Fixed incorect spelling of chainsaw name was horlite needed to be hermlite. @vbawol
@@ -14,7 +17,8 @@
 [FIXED] Lingor trader spawn. @dayz10k @sekra
 [FIXED] Crafting a wooden garage door no longer says "Build Fire". @dayz10k
 
-
+[CHANGED] Extended Trader logging and fix for sold itemnames @ctc.Sebi
+[CHANGED] Lowered Safe weapon storage count to 25, to address reports of more safe inventory issues after it was rasied to 50. @vbawol
 [CHANGED] Prices were reviewed and modified for many of the higher tiered weapons/ammo/vehicles/food. @dayz10k
 [CHANGED] All copper prices have been changed to 2 silver to buy, 1 silver to sell. @dayz10k
 [CHANGED] Radius check for Remove Nearest Camo Net (from 10m to 3m). @dayz10k
