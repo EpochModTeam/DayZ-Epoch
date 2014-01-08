@@ -265,7 +265,7 @@ class CfgWeapons {
 	#include "CfgWeapons\Item\ItemKeys.hpp"
 	#include "CfgWeapons\Item\ItemToolbox.hpp"
 	
-	//Sniper Rifel
+	//Sniper Rifles
 	#include "CfgWeapons\Weapon\Sniper\AS50.hpp"
 	#include "CfgWeapons\Weapon\Sniper\M107.hpp"
 	#include "CfgWeapons\Weapon\Sniper\KSVK.hpp"
