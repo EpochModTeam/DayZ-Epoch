@@ -487,7 +487,18 @@ class CfgVehicles {
 
 	// SEA
 	// #include "CfgVehicles\SEA\RHIB.hpp"
-	
+	class BAF_Merlin_HC3_D;
+	class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
+		scope = 2; 
+		crew = ""; 
+		typicalCargo[] = {}; 
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 25;
+		transportmaxbackpacks = 3;
+	};
 	class MV22;
 	class MV22_DZ : MV22 { 
 		accuracy = 1000; 
@@ -500,7 +511,7 @@ class CfgVehicles {
 		driverCanSee = 2+16+32;
 		transportMaxWeapons = 20;
 		transportMaxMagazines = 400;
-        transportmaxbackpacks = 10;
+		transportmaxbackpacks = 10;
 	};	
 	class RubberBoat;
 	class PBX: RubberBoat {
