@@ -9,7 +9,7 @@ class m107: Rifle
 
 class m107_DZ: m107 
 {
-	displayname = "M107_DZ";
+	displayname = "M107";
 	type = "1";
 	canlock = 0;
 	cursor = "";
