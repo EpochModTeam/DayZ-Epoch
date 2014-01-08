@@ -3098,7 +3098,7 @@ class CfgVehicles {
 		destrType = "DestructNo";
 		armor = 800;
 		transportMaxMagazines = 200;
-		transportMaxWeapons = 50;
+		transportMaxWeapons = 25;
 		transportMaxBackpacks = 10;
 		lockedClass = "VaultStorageLocked";
 		packedClass = "WeaponHolder_ItemVault";
