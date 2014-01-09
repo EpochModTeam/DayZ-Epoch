@@ -495,9 +495,9 @@ class CfgVehicles {
 		commanderCanSee = 2+16+32;
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
-		transportMaxWeapons = 5;
-		transportMaxMagazines = 25;
-		transportmaxbackpacks = 3;
+		transportMaxWeapons = 15;
+		transportMaxMagazines = 150;
+		transportmaxbackpacks = 5;
 	};
 	class MV22;
 	class MV22_DZ : MV22 { 
