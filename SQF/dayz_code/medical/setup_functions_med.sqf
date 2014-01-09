@@ -39,7 +39,7 @@ fnc_usec_damageUnconscious = {
 	_unit = _this select 0;
 	_damage = _this select 1;
 	_inVehicle = (vehicle _unit != _unit);
-	if (_unit == player) then {
+	if ((_unit == player) or (vehicle player != player)) then {
 		r_player_timeout = round((((random 2) max 0.1) * _damage) * 20);
 		r_player_unconscious = true;
 		player setVariable["medForceUpdate",true,true];
