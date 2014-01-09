@@ -35,6 +35,11 @@ while {r_doLoop} do {
 	if (r_interrupt) then {
 		r_doLoop = false;
 	};
+	if (vehicle player != player) then {
+		sleep 3;
+		r_doLoop = false;
+		_finished = true;
+	};
 	sleep 0.1;
 };
 r_doLoop = false;
@@ -53,7 +58,7 @@ if (_finished) then {
 		usecBandage = [_unit,player];
 		publicVariable "usecBandage";
 		
-		if (_unit == player) then {
+		if ((_unit == player) or (vehicle player != player)) then {
 			//Self Healing
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 			dayz_sourceBleeding =	objNull;
