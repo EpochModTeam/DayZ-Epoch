@@ -1696,7 +1696,7 @@ class CfgVehicles {
 		picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
 		offset[] = {0,2.5,0};
 		constructioncount = 8;
-		removeoutput[] = {{"ItemSandbagExLarge",3}};
+		removeoutput[] = {{"ItemSandbagExLarge5x",1}};
 		nounderground = 0;
         };
         
