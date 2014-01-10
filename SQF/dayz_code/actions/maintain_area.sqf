@@ -1,7 +1,7 @@
 //Code developed by Axe Cop for use in DayZ Epoch Mod.
 private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
 
-if (DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_ACTIONS_2) , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_ACTIONS_2") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
 player removeAction s_player_maintain_area;
