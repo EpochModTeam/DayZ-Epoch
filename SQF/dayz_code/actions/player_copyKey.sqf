@@ -1,4 +1,4 @@
-private ["_item","_config","_onLadder","_create","_started","_finished","_animState","_isMedic","_qty","_box","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
+private ["_item","_config","_onLadder","_create","_started","_finished","_animState","_isMedic","_qty","_b0x1337","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_56") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -61,8 +61,8 @@ if(_finished) then {
 		// output key to backpack if space
 		_create = _item;
 		_qty = 1;
-		_box = unitBackpack player;
-		_box addWeaponCargoGlobal [_create,_qty];
+		_b0x1337 = unitBackpack player;
+		_b0x1337 addWeaponCargoGlobal [_create,_qty];
 		cutText [(localize "str_epoch_player_60") , "PLAIN DOWN"];
 	} else {
 		cutText [(localize "str_epoch_player_61") , "PLAIN DOWN"];
