@@ -18,6 +18,7 @@
 [FIXED] Remove nearest tranktrap via toolbox not working properly. @dayz10k
 [FIXED] Lingor trader spawn. @dayz10k @sekra
 [FIXED] Crafting a wooden garage door no longer says "Build Fire". @dayz10k
+[FIXED] You will no longer get a 3 by 3H - barrier cube if you remove a 5H - barrier cube @Skaronator
 
 [CHANGED] Extended Trader logging and fix for sold itemnames @ctc.Sebi
 [CHANGED] Lowered Safe weapon storage count to 25, to address reports of more safe inventory issues after it was rasied to 50. @vbawol
