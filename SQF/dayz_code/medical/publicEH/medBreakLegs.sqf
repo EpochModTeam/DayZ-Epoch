@@ -32,7 +32,7 @@ if (_unit == player && player distance _attacker < 5) then {
 		_unit setVariable[_wound,true,true];
 		[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
 		usecBleed = [_unit,_wound,_hit];
-		publicVariable "usecBleed";
+		publicVariable "usecBleed"; //Not sure if this can used over a PVS way, maybe with a rangeCheck like in gutObject.sqf?
 
 		//Set Injured if not already
 		_isInjured = _unit getVariable["USEC_injured",false];

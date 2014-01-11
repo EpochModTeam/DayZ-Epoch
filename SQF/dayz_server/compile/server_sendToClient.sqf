@@ -77,15 +77,4 @@ switch (_variable) do {
 		//Don't forget!! Checkout dayz_code\medical\publicEH\medEpi.sqf #21
 		_unit setVariable["medForceUpdate",true];
 	};
-
-	case "Antibiotics": {
-		PVCDZ_hlt_AntiB = _arraytosend;
-		_owner publicVariableClient "PVCDZ_hlt_AntiB";
-		_unit setVariable["medForceUpdate",true];
-	};
-
-	case "Legs": {
-		PVCDZ_plr_Legs = _arraytosend;
-		_owner publicVariableClient "PVCDZ_plr_Legs";
-	};
 };
