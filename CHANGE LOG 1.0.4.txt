@@ -31,7 +31,7 @@
 
 [SERVER INFO] Removed dayz_vb.bikey and dayz.bikey keys and added new versioned dayz_epoch104.bikey key. Thanks to @Tansien for the suggestion. @vbawol
 [SERVER INFO] Also moved external bikeys to sub folder, for best security use only the bikeys for the map your running.
-[SERVER INFO] pook_H13_amphib causes FPS issues and should not be used. https://github.com/vbawol/DayZ-Epoch/issues/969
+[SERVER INFO] pook_H13_amphib causes Server FPS issues and should not be used. https://github.com/vbawol/DayZ-Epoch/issues/969
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://bmrf.me/ for hosting our development server.
