@@ -79,6 +79,10 @@ if (count _array > 0) then {
 				if (_isBandit and !_isPZombie and (_humanity != 0)) then {
 					PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
 					publicVariable "PVDZE_plr_HumanityChange";
+					/* WIP - PVS/PVC - Skaronator
+					PVDZ_send = [_source,"Humanity",[_source,_humanity,_wait]];
+					publicVariableServer "PVDZ_send";
+					*/
 				};
 			};
 			
@@ -97,6 +101,10 @@ if (count _array > 0) then {
 				_wait = 0;
 				PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
 				publicVariable "PVDZE_plr_HumanityChange";
+				/* WIP - PVS/PVC - Skaronator
+				PVDZ_send = [_source,"Humanity",[_source,_humanity,_wait]];
+				publicVariableServer "PVDZ_send";
+				*/
 			};
 			if (_canHitFree) then {
 				//_humanity = 100; //50

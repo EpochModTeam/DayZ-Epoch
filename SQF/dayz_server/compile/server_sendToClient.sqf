@@ -31,16 +31,14 @@ switch (_variable) do {
 		};
 	};
 	
-	case "HideBody": {
+	case "HideBody": { //DONE
 		PVCDZE_hideBody = _arraytosend select 0;
 		_owner publicVariableClient "PVCDZE_hideBody";
 	};
 	
-	case "Humanity": {
-		PVCDZ_plr_Humanity = _arraytosend;
-		_owner publicVariableClient "PVCDZ_plr_Humanity";
-		
-		//diag_log ("Humanity" +str(PVCDZ_plr_Humanity));
+	case "Humanity": { //DONE
+		PVDZE_plr_HumanityChange = _arraytosend;
+		_owner publicVariableClient "PVDZE_plr_HumanityChange";
 	};
 	
 	case "dayzSetDate": {

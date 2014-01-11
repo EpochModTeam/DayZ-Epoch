@@ -24,29 +24,6 @@ _humanityHit = 0;
 _myKills = 0;
 _unitIsPlayer = _unit == player;
 
-//Publish Damage
-	//player sidechat format["Processed damage for %1",_unit];
-	//USEC_SystemMessage = format["CLIENT: %1 damaged for %2 (in vehicle: %5)",_unit,_damage,_isMinor,_isHeadHit,_inVehicle];
-	//PublicVariable "USEC_SystemMessage";
-
-/*
-if (_isPlayer) then {
-	if (_damage > 0.1) then {
-		dayz_canDisconnect = false;
-		//["PVDZE_plr_DiscAdd",getPlayerUID player] call callRpcProcedure;
-		PVDZE_plr_DiscAdd = getPlayerUID player;
-		publicVariableServer "PVDZE_plr_DiscAdd";
-				
-		dayz_damageCounter = time;
-		
-		//Ensure Control is visible
-		_display = uiNamespace getVariable 'DAYZ_GUI_display';
-		_control = 	_display displayCtrl 1204;
-		_control ctrlShow true;
-	};
-};
-*/
-
 if (_unitIsPlayer) then {
 	if (_hit == "") then {
 		if ((_source != player) and _isPlayer) then {
@@ -68,6 +45,18 @@ if (_unitIsPlayer) then {
 					PVDZE_plr_HumanityChange = [_source,_humanityHit,30];
 					publicVariable "PVDZE_plr_HumanityChange";
 				};
+				
+				/* WIP - PVS/PVC - Skaronator
+				if (_humanityHit != 0) then {
+					[_source,_humanityHit] spawn {	
+						private ["_source","_humanityHit"];
+						_source = _this select 0;
+						_humanityHit = _this select 1;
+						PVDZE_send = [_source,"Humanity",[_source,_humanityHit,30]];
+						publicVariableServer "PVDZE_send";
+					};
+				};
+				*/
 			};
 		};
 	};
