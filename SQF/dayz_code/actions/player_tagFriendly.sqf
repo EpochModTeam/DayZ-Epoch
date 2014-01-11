@@ -22,7 +22,7 @@ if !(_callerID in _rfriendlies) then {
 	publicVariable "PVDZE_plr_FriendRQ";
 	
 	/* WIP - PVS/PVC - Skaronator
-	PVDZE_send = [_vehicle,"tagFriendly",[_target]];
+	PVDZE_send = [_target,"tagFriendly",[_target]];
 	publicVariableServer "PVDZE_send";
 	*/
 };
