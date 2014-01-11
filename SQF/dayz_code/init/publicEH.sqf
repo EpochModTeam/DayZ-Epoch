@@ -28,9 +28,10 @@
 
 //Server only
 if (isServer) then {
+	//WIP - Skaronator
+	//"PVDZ_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
+
 	"PVDZE_plr_Died"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
-	//"PVDZE_plr_DiscAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
-	//"PVDZE_plr_DiscRem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
 	"PVDZE_plr_Save"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
 	"PVDZE_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj};
 	"PVDZE_veh_Update"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_updateObject};
@@ -39,12 +40,9 @@ if (isServer) then {
 	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
 	"PVDZE_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
 	//Checking
-	
 	"PVDZE_obj_Delete"		addPublicVariableEventHandler {(_this select 1) spawn server_deleteObj};
-
 	// upgrade and maintain
 	"PVDZE_obj_Swap"		addPublicVariableEventHandler {(_this select 1) spawn server_swapObject};
-
 	// disable zombies server side
 	"PVDZE_zed_Spawn"		addPublicVariableEventHandler {(_this select 1) spawn server_handleZedSpawn};
 	
@@ -55,19 +53,6 @@ if (isServer) then {
 	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
 	"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
-	
-	
-	//Area Maintenance
-	"maintainArea_log"		addPublicVariableEventHandler {
-		_val = _this select 1;
-		_player = _val select 0;
-		_playerName = name _player;
-		_playerID = getPlayerUID _player;
-		_target = _val select 1;
-		_position = position _target;
-		_count = _val select 2;
-		diag_log format["MAINTAIN_AREA: Player %1 (%2) has maintained %3 building parts at position %4", _playerName, _playerID, _count, _position];
-	};
 };
 
 //Client only

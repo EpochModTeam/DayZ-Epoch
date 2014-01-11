@@ -116,9 +116,6 @@ switch _option do {
 				} forEach _objects;
 				
 				cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
-				// uncomment the next 2 lines if you want logging of area maintenance to the server report file (Arma2OAserver.RPT)
-				//maintainArea_log = [player, _target, _count];
-				//publicVariableServer "maintainArea_log";
 			} else {
 				{player addMagazine _x;} forEach _temp_removed_array;
 				cutText [format[(localize "STR_EPOCH_ACTIONS_5"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
