@@ -15,8 +15,8 @@ switch (_variable) do {
 		if (local _vehicle) then {
 			_arraytosend call fnc_veh_handleDam;
 		} else {
-			PVCDZ_veh_SH = _arraytosend;
-			_owner publicVariableClient "PVCDZ_veh_SH";
+			PVCDZE_vehSH = _arraytosend;
+			_owner publicVariableClient "PVCDZE_vehSH";
 		};
 	};
 	

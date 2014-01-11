@@ -26,6 +26,14 @@
 "PVDZE_plr_HumanityChange"	addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 "PVDZE_serverObjectMonitor" addPublicVariableEventHandler {PVDZE_serverObjectMonitor = dayz_safety};
 
+
+/* WIP - PVS/PVC Skaronator
+
+"PVCDZE_vehSH" 			addPublicVariableEventHandler {(_this select 1) call vehicle_handleDamage}; // set damage to vehicle part
+
+*/
+
+
 //Server only
 if (isServer) then {
 	//WIP - Skaronator
