@@ -18,7 +18,11 @@ if !(_callerID in _rfriendlies) then {
 	// caller
 	titleText [(localize "STR_EPOCH_ACTIONS_8"), "PLAIN DOWN"];
 	// target
-	//Could be changed to PVC via server_sendToClient.sqf (From DayZCE) - Commit by Skaronator
 	PVDZE_plr_FriendRQ = _target;
 	publicVariable "PVDZE_plr_FriendRQ";
+	
+	/* WIP - PVS/PVC - Skaronator
+	PVDZE_send = [_vehicle,"tagFriendly",[_target]];
+	publicVariableServer "PVDZE_send";
+	*/
 };

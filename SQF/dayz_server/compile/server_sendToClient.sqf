@@ -77,4 +77,8 @@ switch (_variable) do {
 		//Don't forget!! Checkout dayz_code\medical\publicEH\medEpi.sqf #21
 		_unit setVariable["medForceUpdate",true];
 	};
+	case "tagFriendly": { //DONE
+		PVDZE_plr_FriendRQ = _arraytosend;
+		_owner publicVariableClient "PVDZE_plr_FriendRQ";
+	};
 };
