@@ -30,6 +30,7 @@
 /* WIP - PVS/PVC Skaronator
 
 "PVCDZE_vehSH" 			addPublicVariableEventHandler {(_this select 1) call vehicle_handleDamage}; // set damage to vehicle part
+"PVCDZE_hideBody"	addPublicVariableEventHandler {hideBody (_this select 1)};
 
 */
 

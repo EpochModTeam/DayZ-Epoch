@@ -10,7 +10,7 @@ _owner = owner _unit;
 
 //execution
 switch (_variable) do {
-	case "VehHandleDam": {
+	case "VehHandleDam": { //DONE
 		_vehicle = _arraytosend select 0;
 		if (local _vehicle) then {
 			_arraytosend call fnc_veh_handleDam;
@@ -20,7 +20,7 @@ switch (_variable) do {
 		};
 	};
 	
-	case "SetFuel": {
+	case "SetFuel": { //DONE
 		_vehicle = _arraytosend select 0;
 		_qty = _arraytosend select 1;
 		if (local _vehicle) then {
@@ -31,14 +31,9 @@ switch (_variable) do {
 		};
 	};
 	
-	case "GutBody": {
-		PVCDZ_obj_GutBody = _arraytosend;
-		_owner publicVariableClient "PVCDZ_obj_GutBody";
-	};
-	
 	case "HideBody": {
-		PVCDZ_obj_HideBody = _arraytosend select 0;
-		_owner publicVariableClient "PVCDZ_obj_HideBody";
+		PVCDZE_hideBody = _arraytosend select 0;
+		_owner publicVariableClient "PVCDZE_hideBody";
 	};
 	
 	case "Humanity": {
