@@ -65,8 +65,9 @@ switch (_variable) do {
 	};
 
 	case "Epinephrine": {
-		PVCDZ_hlt_Epi = _arraytosend;
-		_owner publicVariableClient "PVCDZ_hlt_Epi";
+		usecEpi = _arraytosend;
+		_owner publicVariableClient "usecEpi";
+		//Don't forget!! Checkout dayz_code\medical\publicEH\medEpi.sqf #24
 		_unit setVariable["medForceUpdate",true];
 	};
 
