@@ -5087,7 +5087,6 @@ class CfgMagazines {
 	 };
 
 	#include "CfgMagazines\MeleeSwing.hpp"
-	#include "CfgMagazines\Fuelcan.hpp"
 
 	class HandGrenade_Stone;
 	class ItemTrashToiletpaper : HandGrenade_Stone {
