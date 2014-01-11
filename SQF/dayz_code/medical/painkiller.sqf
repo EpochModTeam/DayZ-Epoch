@@ -34,7 +34,11 @@ if(_num_removed == 1) then {
 
 	sleep 1;
 	//clear the healed player's vision
-	//["usecPainK",[_unit,player]] call broadcastRpcCallAll;
 	usecPainK = [_unit,player];
 	publicVariable "usecPainK";
+	
+	/* WIP - PVS/PVC - Skaronator
+	PVDZE_send = [_unit,"Painkiller",[_unit,player]];
+	publicVariableServer "PVDZE_send";
+	*/
 };

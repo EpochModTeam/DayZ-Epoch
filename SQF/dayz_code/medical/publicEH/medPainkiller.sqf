@@ -10,6 +10,7 @@ if ((_unit == player) or (vehicle player != player)) then {
 	R3F_TIRED_Accumulator = 0;
 	"dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 };
+/* WIP - PVS/PVC - Not anymore used: moved to server_sendToClient.sqf - Skaronator */
 if (isServer) then {
 	_unit setVariable["medForceUpdate",true];
 };

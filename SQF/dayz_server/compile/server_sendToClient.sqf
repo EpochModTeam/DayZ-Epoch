@@ -49,8 +49,9 @@ switch (_variable) do {
 	};
 
 	case "Painkiller": {
-		PVCDZ_hlt_PainK = _arraytosend;
-		_owner publicVariableClient "PVCDZ_hlt_PainK";
+		usecPainK = _arraytosend;
+		_owner publicVariableClient "usecPainK";
+		//Don't forget!! Checkout dayz_code\medical\publicEH\medPainkiller.sqf #13
 		_unit setVariable["medForceUpdate",true];
 	};
 
