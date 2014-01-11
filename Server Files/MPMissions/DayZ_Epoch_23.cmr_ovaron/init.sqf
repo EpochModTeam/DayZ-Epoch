@@ -57,11 +57,11 @@ progressLoadingScreen 1.0;
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
 if (isServer) then {
-	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_23.cmr_ovaron\dynamic_vehicle.sqf";
 	//Compile vehicle configs
 	
 	// Add trader citys
-	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
+	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_23.cmr_ovaron\mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 
