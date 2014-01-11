@@ -80,8 +80,8 @@ if (count _array > 0) then {
 					PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
 					publicVariable "PVDZE_plr_HumanityChange";
 					/* WIP - PVS/PVC - Skaronator
-					PVDZ_send = [_source,"Humanity",[_source,_humanity,_wait]];
-					publicVariableServer "PVDZ_send";
+					PVDZE_send = [_source,"Humanity",[_source,_humanity,_wait]];
+					publicVariableServer "PVDZE_send";
 					*/
 				};
 			};
@@ -102,8 +102,8 @@ if (count _array > 0) then {
 				PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
 				publicVariable "PVDZE_plr_HumanityChange";
 				/* WIP - PVS/PVC - Skaronator
-				PVDZ_send = [_source,"Humanity",[_source,_humanity,_wait]];
-				publicVariableServer "PVDZ_send";
+				PVDZE_send = [_source,"Humanity",[_source,_humanity,_wait]];
+				publicVariableServer "PVDZE_send";
 				*/
 			};
 			if (_canHitFree) then {

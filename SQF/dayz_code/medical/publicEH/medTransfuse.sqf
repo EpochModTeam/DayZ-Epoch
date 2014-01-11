@@ -27,6 +27,7 @@ if (_unit == player) then {
 	
 	player setVariable["USEC_BloodQty",r_player_bloodTotal,true];
 };
+/* WIP - PVS/PVC - Not anymore used: moved to server_sendToClient.sqf - Skaronator */
 if (isServer) then {
 	_unit setVariable["medForceUpdate",true];
 };

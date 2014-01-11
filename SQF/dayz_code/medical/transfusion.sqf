@@ -45,11 +45,14 @@ if (_finished) then {
 	_unit setVariable["USEC_lowBlood",false,true];
 	_num_removed = ([player,"ItemBloodbag"] call BIS_fnc_invRemove);
 	if(_num_removed == 1) then {
-		//["usecTransfuse",[_unit,player]] call broadcastRpcCallAll;
 		usecTransfuse = [_unit,player];
 		publicVariable "usecTransfuse";
+		
+		/* WIP - PVS/PVC - Skaronator
+			PVDZE_send = [_unit,"Transfuse",[_unit,player]];
+			publicVariableServer "PVDZE_send";
+		*/	
 
-		//PVDZE_plr_HumanityChange = [player,100];
 		[player,100] call player_humanityChange;
 	};
 } else {

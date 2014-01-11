@@ -41,16 +41,10 @@ switch (_variable) do {
 		_owner publicVariableClient "PVDZE_plr_HumanityChange";
 	};
 	
-	case "dayzSetDate": {
-		dayzSetDate = dayz_storeTimeDate;
-		_owner publicVariableClient "dayzSetDate";
-		
-		//diag_log ("Time and date: " +str (dayz_storeTimeDate));
-	};
-
-	case "Transfuse": {
-		PVCDZ_hlt_Transfuse = _arraytosend;
-		_owner publicVariableClient "PVCDZ_hlt_Transfuse";
+	case "Transfuse": { //DONE
+		usecTransfuse = _arraytosend;
+		_owner publicVariableClient "usecTransfuse";
+		//Don't forget!! Checkout dayz_code\medical\publicEH\medTransfuse.sqf #30
 		_unit setVariable["medForceUpdate",true];
 	};
 
