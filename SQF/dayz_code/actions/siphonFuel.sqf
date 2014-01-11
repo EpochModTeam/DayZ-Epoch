@@ -112,6 +112,14 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
 						if(([player,_canNameEmpty] call BIS_fnc_invRemove) == 1) then {
 		
+							/* WIP - PVS/PVC - Skaronator
+							if (local _vehicle) then {
+								[_vehicle,_newFuel] call local_setFuel;
+							} else {
+								PVDZE_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
+								publicVariableServer "PVDZE_send";
+							};
+							*/
 							PVDZE_veh_SFuel = [_vehicle,_newFuel];
 							if (local _vehicle) then {
 								PVDZE_veh_SFuel spawn local_setFuel;

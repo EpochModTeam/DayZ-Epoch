@@ -26,8 +26,8 @@ switch (_variable) do {
 		if (local _vehicle) then {
 			_vehicle setFuel _qty;
 		} else {
-			PVCDZ_veh_SetFuel = _arraytosend;
-			_owner publicVariableClient  "PVCDZ_veh_SetFuel";
+			PVDZE_veh_SFuel = _arraytosend;
+			_owner publicVariableClient  "PVDZE_veh_SFuel";
 		};
 	};
 	
