@@ -55,7 +55,7 @@ switch (_variable) do {
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Morphine": {
+	case "Morphine": { //DONE
 		usecMorphine = _arraytosend;
 		_owner publicVariableClient "usecMorphine";
 		//Don't forget!! Checkout dayz_code\medical\publicEH\medMorphine.sqf #22
@@ -64,20 +64,18 @@ switch (_variable) do {
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Epinephrine": {
+	case "Epinephrine": { //DONE
 		usecEpi = _arraytosend;
 		_owner publicVariableClient "usecEpi";
 		//Don't forget!! Checkout dayz_code\medical\publicEH\medEpi.sqf #24
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Bandage": {
-		PVCDZ_hlt_Bandage = _arraytosend;
-		_owner publicVariableClient "PVCDZ_hlt_Bandage";
-		
+	case "Bandage": { //DONE
+		usecBandage = _arraytosend;
+		_owner publicVariableClient "usecBandage";
+		//Don't forget!! Checkout dayz_code\medical\publicEH\medEpi.sqf #21
 		_unit setVariable["medForceUpdate",true];
-		
-		//diag_log ("Bandage: " +str(PVCDZ_hlt_Bandage));
 	};
 
 	case "Antibiotics": {

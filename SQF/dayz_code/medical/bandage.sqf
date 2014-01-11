@@ -1,6 +1,6 @@
 // bleed.sqf
 
-private ["_started","_finished","_animState","_isMedic","_id","_unit"];
+private ["_started","_finished","_animState","_isMedic","_id","_unit","_display"];
 
 disableserialization;
 
@@ -54,16 +54,17 @@ if (_finished) then {
 			_display closeDisplay 0;
 		};	
 
-		//DayZ CE: Has been changed to PVC via server_sendToClient.sqf -> Could we also do here - Commit by Skaronator
-		usecBandage = [_unit,player];
-		publicVariable "usecBandage";
-		
 		if ((_unit == player) or (vehicle player != player)) then {
 			//Self Healing
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 			dayz_sourceBleeding =	objNull;
 		} else {
-			//PVDZE_plr_HumanityChange = [player,20];
+			usecBandage = [_unit,player];
+			publicVariable "usecBandage";
+			/* WIP - PVS/PVC - Skaronator
+			PVDZE_send = [_unit,"Bandage",[_unit,player]];
+			publicVariableServer "PVDZE_send";
+			*/
 			[player,20] call player_humanityChange;
 		};
 
