@@ -48,7 +48,7 @@ switch (_variable) do {
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Painkiller": {
+	case "Painkiller": { //DONE
 		usecPainK = _arraytosend;
 		_owner publicVariableClient "usecPainK";
 		//Don't forget!! Checkout dayz_code\medical\publicEH\medPainkiller.sqf #13
@@ -56,8 +56,9 @@ switch (_variable) do {
 	};
 
 	case "Morphine": {
-		PVCDZ_hlt_Morphine = _arraytosend;
-		_owner publicVariableClient "PVCDZ_hlt_Morphine";
+		usecMorphine = _arraytosend;
+		_owner publicVariableClient "usecMorphine";
+		//Don't forget!! Checkout dayz_code\medical\publicEH\medMorphine.sqf #22
 		_unit setVariable ["hit_legs",0,false];
 		_unit setVariable ["hit_hands",0,false];
 		_unit setVariable["medForceUpdate",true];
