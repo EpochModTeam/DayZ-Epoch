@@ -1,7 +1,7 @@
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 
 [ADDED] BAF_Merlin_DZE - transportMaxWeapons 15, transportMaxMagazines 150, transportmaxbackpacks 5. @Skaronator
-[ADDED] Added back BAF_AS50_scoped_DZ configs. @vbawol
+[ADDED] Added back BAF_AS50_scoped_DZ configs, still not on traders or loot tables. @vbawol
 [ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
         by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole. @dayz10k @vos
 [ADDED] Buying Vehicle Maintenance Manuals (added in 1.0.3) from the Vehicle Parts Vendors. @dayz10k
