@@ -15,14 +15,8 @@ _caller setVariable ["friendlies", _friendlies, true];
 _rfriendlies = _target getVariable ["friendlies", []];
 
 if !(_callerID in _rfriendlies) then {
-	// caller
-	titleText [(localize "STR_EPOCH_ACTIONS_8"), "PLAIN DOWN"];
-	// target
-	PVDZE_plr_FriendRQ = _target;
-	publicVariable "PVDZE_plr_FriendRQ";
-	
-	/* WIP - PVS/PVC - Skaronator
-	PVDZE_send = [_target,"tagFriendly",[_target]];
+	titleText [(localize "STR_EPOCH_ACTIONS_8"), "PLAIN DOWN"]; //To Caller
+	/* PVS/PVC - Skaronator */
+	PVDZE_send = [_target,"tagFriendly",[_target]]; //To Target
 	publicVariableServer "PVDZE_send";
-	*/
 };

@@ -39,14 +39,8 @@ if (_unitIsPlayer) then {
 				//Process Morality Hit
 				_myKills = 0 max (1 - (player getVariable ["humanKills",0]) / 5);
 				_humanityHit = -100 * _myKills * _damage;
-
-				//["PVDZE_plr_HumanityChange",[_source,_humanityHit,30]] call broadcastRpcCallAll;
-				if (_humanityHit != 0) then {
-					PVDZE_plr_HumanityChange = [_source,_humanityHit,30];
-					publicVariable "PVDZE_plr_HumanityChange";
-				};
-				
-				/* WIP - PVS/PVC - Skaronator
+			
+				/* PVS/PVC - Skaronator */
 				if (_humanityHit != 0) then {
 					[_source,_humanityHit] spawn {	
 						private ["_source","_humanityHit"];
@@ -56,7 +50,6 @@ if (_unitIsPlayer) then {
 						publicVariableServer "PVDZE_send";
 					};
 				};
-				*/
 			};
 		};
 	};

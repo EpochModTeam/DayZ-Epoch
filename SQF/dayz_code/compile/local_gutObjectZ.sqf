@@ -13,19 +13,14 @@ if (local _zombiebody) then {
 		while {(count magazines _body >0) and (time - _timer < 300) } do { 
 			sleep 5;
 		}; 
-		//["PVDZE_plr_HideBody",_body] call broadcastRpcCallAll;
-		PVDZE_plr_HideBody = _body;
-		hideBody _body; // local player
-		publicVariable "PVDZE_plr_HideBody"; // remote player
 		
-		/* WIP - PVS/PVC - Skaronator
+		/* PVS/PVC - Skaronator */
 		_inRange = _pos nearEntities ["CAManBase",100];
 		{
 			PVDZE_send = [_x,"HideBody",[_body]];
 			publicVariableServer "PVDZE_send";
 		} forEach _inRange;
-		*/
-		
+
 		sleep 5;
 		deleteVehicle _body;
 		true;
