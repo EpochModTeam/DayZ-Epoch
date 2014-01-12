@@ -20,9 +20,4 @@ if (!_isDead) then {
 		r_player_cardiac = false;
 		r_player_handler1 = false;
 	};
-	
-	/* WIP - PVS/PVC - Not anymore used: moved to server_sendToClient.sqf - Skaronator */
-	if (isServer) then {
-		_unit setVariable["medForceUpdate",true];
-	};
 };

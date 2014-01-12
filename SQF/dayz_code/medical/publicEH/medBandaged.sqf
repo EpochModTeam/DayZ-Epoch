@@ -17,8 +17,3 @@ if ((_unit == player) or (vehicle player != player)) then {
 	_control = 	_display displayCtrl  1303;
 	_control ctrlShow false;
 };
-
-/* WIP - PVS/PVC - Not anymore used: moved to server_sendToClient.sqf - Skaronator */
-if (isServer) then {
-	_unit setVariable["medForceUpdate",true];
-};
