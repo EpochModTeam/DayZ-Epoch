@@ -1487,6 +1487,27 @@ class CfgMagazines {
             };
         };
     };
+	class ItemWoodCrateKit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Wood Crate";
+		descriptionShort = "A wood crate that holds a lot of items.";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 20;
+		class ItemActions
+		{
+			class Build
+			{
+				text = $STR_ACTIONS_BUILD;
+				script = "spawn player_build;";
+				require[] = {"ItemToolbox"};
+				create = "WoodCrate_DZ";
+			};
+		};
+	};			
 	class ItemOilBarrel: CA_Magazine
 	{
 		scope = 2;
@@ -3503,6 +3524,15 @@ class CfgMagazines {
 			        output[] = {{"ItemGunRackKit",1}};
 			        input[] = {{"PartWoodLumber",6}};
 			};
+        	class Crafting7
+			{
+				text = $STR_EPOCH_PLAYER_304;
+				Script = ";['Crafting7','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"ItemWoodCrateKit",1}};
+				input[] = {{"PartWoodLumber",6}};
+			};				
 		};
 	};
 	class PartWoodPlywood: CA_Magazine

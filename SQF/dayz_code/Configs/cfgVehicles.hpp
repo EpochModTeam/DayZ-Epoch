@@ -1873,6 +1873,21 @@ class CfgVehicles {
 		removeoutput[] = {{"ItemGunRackKit",1}};
 		nounderground = 0;
     };
+	class Fort_Crate_wood;
+	class WoodCrate_DZ: Fort_Crate_wood
+	{
+		scope = 2;
+		destrType = "DestructBuilding"; 
+		offset[] = {0,2.5,0.5};
+		armor = 200;
+		displayName = "Wood Crate";
+		vehicleClass = "Fortifications";
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 5;
+		transportMaxBackpacks = 1;
+		removeoutput[] = {{"ItemWoodCrateKit",1}};
+		nounderground = 0;
+	};	
 	// modular
 	class MetalFloor_DZ: ModularItems
 	{
