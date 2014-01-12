@@ -59,12 +59,9 @@ if (_finished) then {
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 			dayz_sourceBleeding =	objNull;
 		} else {
-			usecBandage = [_unit,player];
-			publicVariable "usecBandage";
-			/* WIP - PVS/PVC - Skaronator
+			/* PVS/PVC - Skaronator */
 			PVDZE_send = [_unit,"Bandage",[_unit,player]];
 			publicVariableServer "PVDZE_send";
-			*/
 			[player,20] call player_humanityChange;
 		};
 
