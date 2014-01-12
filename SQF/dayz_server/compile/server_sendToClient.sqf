@@ -10,7 +10,7 @@ _owner = owner _unit;
 
 //execution
 switch (_variable) do {
-	case "VehHandleDam": { //DONE
+	case "VehHandleDam": {
 		_vehicle = _arraytosend select 0;
 		if (local _vehicle) then {
 			_arraytosend call fnc_veh_handleDam;
@@ -20,7 +20,7 @@ switch (_variable) do {
 		};
 	};
 	
-	case "SetFuel": { //DONE
+	case "SetFuel": {
 		_vehicle = _arraytosend select 0;
 		_qty = _arraytosend select 1;
 		if (local _vehicle) then {
@@ -31,53 +31,48 @@ switch (_variable) do {
 		};
 	};
 	
-	case "HideBody": { //DONE
-		PVCDZE_hideBody = _arraytosend select 0;
-		_owner publicVariableClient "PVCDZE_hideBody";
+	case "HideBody": {
+		PVDZE_plr_HideBody = _arraytosend select 0;
+		_owner publicVariableClient "PVDZE_plr_HideBody";
 	};
 	
-	case "Humanity": { //DONE
+	case "Humanity": {
 		PVDZE_plr_HumanityChange = _arraytosend;
 		_owner publicVariableClient "PVDZE_plr_HumanityChange";
 	};
 	
-	case "Transfuse": { //DONE
+	case "Transfuse": {
 		usecTransfuse = _arraytosend;
 		_owner publicVariableClient "usecTransfuse";
-		//Don't forget!! Checkout dayz_code\medical\publicEH\medTransfuse.sqf #30
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Painkiller": { //DONE
+	case "Painkiller": {
 		usecPainK = _arraytosend;
 		_owner publicVariableClient "usecPainK";
-		//Don't forget!! Checkout dayz_code\medical\publicEH\medPainkiller.sqf #13
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Morphine": { //DONE
+	case "Morphine": {
 		usecMorphine = _arraytosend;
 		_owner publicVariableClient "usecMorphine";
-		//Don't forget!! Checkout dayz_code\medical\publicEH\medMorphine.sqf #22
 		_unit setVariable ["hit_legs",0,false];
 		_unit setVariable ["hit_hands",0,false];
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Epinephrine": { //DONE
+	case "Epinephrine": {
 		usecEpi = _arraytosend;
 		_owner publicVariableClient "usecEpi";
-		//Don't forget!! Checkout dayz_code\medical\publicEH\medEpi.sqf #24
 		_unit setVariable["medForceUpdate",true];
 	};
 
-	case "Bandage": { //DONE
+	case "Bandage": {
 		usecBandage = _arraytosend;
 		_owner publicVariableClient "usecBandage";
-		//Don't forget!! Checkout dayz_code\medical\publicEH\medEpi.sqf #21
 		_unit setVariable["medForceUpdate",true];
 	};
-	case "tagFriendly": { //DONE
+	case "tagFriendly": {
 		PVDZE_plr_FriendRQ = _arraytosend;
 		_owner publicVariableClient "PVDZE_plr_FriendRQ";
 	};
