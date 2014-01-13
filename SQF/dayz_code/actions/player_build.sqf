@@ -120,7 +120,7 @@ _distance = DZE_PlotPole select 0;
 _needText = localize "str_epoch_player_246";
 
 if(_isPole) then {
-	_distance = DZE_PlotPole this select 1;
+	_distance = DZE_PlotPole select 1;
 };
 
 // check for near plot
