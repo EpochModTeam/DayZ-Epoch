@@ -27,7 +27,7 @@ class MH60S_DZ : UH60_Base
 	transportMaxBackpacks = 5;
 	scope = 2;
 	accuracy = 1.5;	// accuracy needed to recognize type of this target
-	displayName = "MH60S DZ";
+	displayName = "MH-60S DZ";
 	class Turrets : Turrets
 	{
 		class MainTurret : MainTurret
@@ -245,7 +245,7 @@ class MH60S_DZ : UH60_Base
 };
 class MH60S_DZE : UH60_Base
 {
-	displayName = "MH60S AL";
+	displayName = "MH-60S AL";
 	class Turrets : Turrets
 	{
 		class MainTurret : MainTurret
