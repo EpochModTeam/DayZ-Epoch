@@ -258,7 +258,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		s_player_deleteBuild = -1;
 	};
 	
-	_liftHelis = nearestObjects [player, DZE_HeliAllowTow, 30];
+	_liftHelis = nearestObjects [player, DZE_HeliAllowTowFrom, 30];
 	_liftHeli = objNull;
 	_found = false;
 	{
