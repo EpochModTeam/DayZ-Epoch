@@ -1,0 +1,1 @@
+These folders represent profile folders. The hiveext.ini needs to be inside the active profile folder of the server.
