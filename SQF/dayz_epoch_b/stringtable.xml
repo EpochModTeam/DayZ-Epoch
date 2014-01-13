@@ -5756,6 +5756,16 @@
 		  <French>Meurtres</French>
 		  <Czech>Vražda</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_304">
+		  <Original>Craft Wood Crate</Original>
+		  <English>Craft Wood Crate</English>
+		  <!-- <German></German> -->
+		  <!-- <Russian></Russian> -->
+		  <!-- <Spanish></Spanish> -->
+		  <!-- <Dutch></Dutch> -->
+		  <!-- <French></French> -->
+		  <!-- <Czech></Czech> -->
+		</Key>			
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 		  <Original>Repair Vehicle</Original>
 		  <English>Repair Vehicle</English>
