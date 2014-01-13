@@ -1,5 +1,6 @@
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 
+[ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant 
 [ADDED] BAF_Merlin_DZE - transportMaxWeapons 15, transportMaxMagazines 150, transportmaxbackpacks 5. @Skaronator
 [ADDED] Added back BAF_AS50_scoped_DZ configs, still not on traders or loot tables. @vbawol
 [ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
@@ -9,6 +10,7 @@
 [ADDED] Global variable to set plot pole radius and exclusion zone, enabled via mission file. DZE_PlotPole = [x,y] in the mission file controls the [Radius, Exclusion zone]. 
         Default is DZE_PlotPole = [30,45]. @dayz10k @Skaronator
 
+[FIXED] Wrong german translation "Holzkiste geöffnet.". @Fank @vbawol
 [FIXED] Fix medical actions in vehicles. @icomrade
 [FIXED] Wrong KSVK class spawning on mass graves. @Skaronator via MGT
 [FIXED] Armor value for RBWheel on SUV was lower than it should have been. @SGanthony
