@@ -473,6 +473,9 @@ if(isNil "DZE_FriendlySaving") then {
 if(isNil "DZE_BuildOnRoads") then {
 	DZE_BuildOnRoads = false;
 };
+if(isNil "DZE_MissionLootTable") then {
+	DZE_MissionLootTable = false;
+};
 
 DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
 
