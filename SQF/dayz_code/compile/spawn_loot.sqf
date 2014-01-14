@@ -12,8 +12,12 @@ switch (_iClass) do
 	{
 		//Item is food, add random quantity of cans along with an item (if exists)
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-
-		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+		_itemTypes = [];
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iClass)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+		};
 		_index = dayz_CLBase find _iClass;
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
@@ -37,8 +41,12 @@ switch (_iClass) do
 	{
 		//Item is sigle, add 1 item from cfgloot
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-
-		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		_itemTypes = [];
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
@@ -51,7 +59,11 @@ switch (_iClass) do
 	case "backpack":
 	{
 		//Item is single backpack
-		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
@@ -63,7 +75,11 @@ switch (_iClass) do
 	};
 	case "cfglootweapon":
 	{
-		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;

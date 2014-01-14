@@ -327,7 +327,13 @@ spawn_vehicles = {
 				for "_x" from 1 to _num do {
 					_iClass = _allCfgLoots call BIS_fnc_selectRandom;
 
-					_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+					_itemTypes = [];
+					if (DZE_MissionLootTable) then {
+						_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iClass)) select 0);
+					} else {
+						_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+					};
+
 					_index = dayz_CLBase find _iClass;
 					_weights = dayz_CLChances select _index;
 					_cntWeights = count _weights;

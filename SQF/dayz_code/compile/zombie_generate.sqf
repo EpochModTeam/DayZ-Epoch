@@ -95,7 +95,13 @@ _rnd = random 1;
 if (_rnd > 0.3) then {
 	_lootType = 		configFile >> "CfgVehicles" >> _type >> "zombieLoot";
 	if (isText _lootType) then {
-		_array = []+ getArray (configFile >> "cfgLoot" >> getText(_lootType));
+
+		_array = [];
+		if (DZE_MissionLootTable) then {
+			_array = getArray (missionConfigFile >> "cfgLoot" >> getText(_lootType));
+		} else {
+			_array = getArray (configFile >> "cfgLoot" >> getText(_lootType));
+		};
 		if (count _array > 0) then {
 			_loot = _array call BIS_fnc_selectRandomWeighted;
 			if(!isNil "_array") then {

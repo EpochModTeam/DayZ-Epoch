@@ -5,7 +5,13 @@ dayz_CBLBase = [];
 dayzE_CBLSChances = [];
 dayzE_CBLSBase = [];
 
-_config = configFile >> "CfgBuildingLoot";
+_config = [];
+if (DZE_MissionLootTable) then {
+	_config = missionConfigFile >> "CfgBuildingLoot";
+} else {
+	_config = configFile >> "CfgBuildingLoot";
+};
+
 for "_i" from 0 to ((count _config) - 1) do {
 	_classname = toLower(configName (_config select _i));
 	_itemChances = [] + getArray (_config >> _classname >> "ItemChance");
@@ -53,7 +59,14 @@ for "_i" from 0 to ((count _config) - 1) do {
 
 dayz_CLChances = [];
 dayz_CLBase = [];
-_config = configFile >> "cfgLoot";
+
+_config = [];
+if (DZE_MissionLootTable) then {
+	_config = missionConfigFile >> "cfgLoot";
+} else {
+	_config = configFile >> "cfgLoot";
+};
+
 for "_i" from 0 to ((count (_config)) - 1) do {
 	_itemChances = (getArray (_config select _i)) select 1;
 	_weighted = [];
@@ -71,7 +84,14 @@ for "_i" from 0 to ((count (_config)) - 1) do {
 
 dayzE_CLSChances = [];
 dayzE_CLSBase = [];
-_config = configFile >> "cfgLootSmall";
+
+_config = [];
+if (DZE_MissionLootTable) then {
+	_config = missionConfigFile >> "cfgLootSmall";
+} else {
+	_config = configFile >> "cfgLootSmall";
+};
+
 for "_i" from 0 to ((count (_config)) - 1) do {
 	_itemChances = (getArray (_config select _i)) select 1;
 	_weighted = [];
