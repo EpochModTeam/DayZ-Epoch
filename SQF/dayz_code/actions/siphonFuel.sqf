@@ -119,7 +119,6 @@ _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 								PVDZE_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
 								publicVariableServer "PVDZE_send";
 							};
-							*/
 
 							// Play sound
 							[player,"refuel",0,false] call dayz_zombieSpeak;
