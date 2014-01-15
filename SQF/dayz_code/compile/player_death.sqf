@@ -77,12 +77,9 @@ if (count _array > 0) then {
 					_wait = 0;
 				};
 				if (_isBandit and !_isPZombie and (_humanity != 0)) then {
-					PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
-					publicVariable "PVDZE_plr_HumanityChange";
-					/* WIP - PVS/PVC - Skaronator
+					/* PVS/PVC - Skaronator */
 					PVDZE_send = [_source,"Humanity",[_source,_humanity,_wait]];
 					publicVariableServer "PVDZE_send";
-					*/
 				};
 			};
 			
@@ -90,8 +87,9 @@ if (count _array > 0) then {
 				_wait = 0;
 			};
 			if (!_canHitFree and !_isBandit and !_isPZombie and (_humanity != 0)) then {
-				PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
-				publicVariable "PVDZE_plr_HumanityChange";
+				/* PVS/PVC - Skaronator */
+				PVDZE_send = [_source,"Humanity",[_source,_humanity,_wait]];
+				publicVariableServer "PVDZE_send";
 			};
 			
 			if (_isPZombie) then {
@@ -99,12 +97,9 @@ if (count _array > 0) then {
 				_killsZ = 	_source getVariable ["zombieKills",0];
 				_source setVariable ["zombieKills",(_killsZ + 1),true];
 				_wait = 0;
-				PVDZE_plr_HumanityChange = [_source,_humanity,_wait];
-				publicVariable "PVDZE_plr_HumanityChange";
-				/* WIP - PVS/PVC - Skaronator
+				/* PVS/PVC - Skaronator */
 				PVDZE_send = [_source,"Humanity",[_source,_humanity,_wait]];
 				publicVariableServer "PVDZE_send";
-				*/
 			};
 			if (_canHitFree) then {
 				//_humanity = 100; //50
@@ -167,7 +162,6 @@ if (count _array > 0) then {
 
 _body setVariable["combattimeout", 0, true];
 
-//["dayzFlies",player] call broadcastRpcCallAll;
 sleep 2;
 
 1 cutRsc ["DeathScreen","BLACK OUT",3];

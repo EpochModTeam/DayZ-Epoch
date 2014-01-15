@@ -59,14 +59,10 @@ if (_finished) then {
 			//PVDZE_plr_HumanityChange = [player,50];
 			[player,50] call player_humanityChange;
 		};
-	
-		usecMorphine = [_unit,player];
-		publicVariable "usecMorphine";
 		
-		/* WIP - PVS/PVC - Skaronator
+		/* PVS/PVC - Skaronator */
 		PVDZE_send = [_unit,"Morphine",[_unit,player]];
 		publicVariableServer "PVDZE_send";
-		*/
 	};
 } else {
 	r_interrupt = false;
