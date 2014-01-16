@@ -110,7 +110,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 						if (local _vehicle) then {
 							[_vehicle,_newFuel] call local_setFuel;
 						} else {
-							PVDZE_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
+							PVDZE_send = [_vehicle,"SFuel",[_vehicle,_newFuel]];
 							publicVariableServer "PVDZE_send";
 						};
 

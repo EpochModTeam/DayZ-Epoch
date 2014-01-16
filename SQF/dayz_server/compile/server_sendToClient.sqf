@@ -20,7 +20,7 @@ switch (_variable) do {
 		};
 	};
 	
-	case "SetFuel": {
+	case "SFuel": {
 		_vehicle = _arraytosend select 0;
 		_qty = _arraytosend select 1;
 		if (local _vehicle) then {
