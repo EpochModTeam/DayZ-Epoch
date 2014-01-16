@@ -3,6 +3,7 @@ class Mission
 {
 	addOns[]=
 	{
+		"napf",
 		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
@@ -18,7 +19,7 @@ class Mission
 		"pook_h13",
 		"csj_gyroac",
 		"map_eu",
-		"napf"
+		"jetskiyanahuiaddon"
 	};
 	addOnsAuto[]=
 	{
