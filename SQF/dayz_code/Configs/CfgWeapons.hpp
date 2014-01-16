@@ -275,7 +275,6 @@ class CfgWeapons {
 //	#include "CfgWeapons\Weapon\Sniper\DMR_DZ3.hpp"
 	#include "CfgWeapons\Weapon\Pistol\MakerovSD.hpp"
 	#include "CfgWeapons\Weapon\LMG\m240_scoped.hpp"
-	#include "CfgWeapons\Weapon\LMG\M249_EP1.hpp"
 	#include "CfgWeapons\Weapon\LMG\M249_m145_EP1.hpp"
 	#include "CfgWeapons\Weapon\LMG\M60A4.hpp"
 //	#include "CfgWeapons\Weapon\Rifle\FN_FAL_ANPVS4_DZE.hpp"
