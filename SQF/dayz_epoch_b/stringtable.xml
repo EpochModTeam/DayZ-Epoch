@@ -6359,7 +6359,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_2">
 		  <Original>Maintenance already in progress.</Original>
 		  <English>Maintenance already in progress.</English>
-		  <!-- <German></German> -->
+		  <German>Instandhaltung bereits in bearbeitung.</German>
 		  <Russian>Уже удерживается.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
@@ -6479,7 +6479,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_14">
 		  <Original>No Tank Traps found nearby.</Original>
 		  <English>No Tank Traps found nearby.</English>
-		  <!-- <German></German> -->
+		  <German>Keine Tank Traps in der Nähe gefunden.</German>
 		  <Russian>Вблизи не найдено танковых ловушек.</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch></Dutch>
