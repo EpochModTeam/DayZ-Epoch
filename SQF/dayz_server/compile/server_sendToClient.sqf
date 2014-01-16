@@ -41,6 +41,26 @@ switch (_variable) do {
 		_owner publicVariableClient "PVDZE_plr_HumanityChange";
 	};
 	
+	case "PZ_BreakLegs": {
+		usecBreakLegs = _arraytosend;
+		_owner publicVariableClient "usecBreakLegs";
+	};
+	
+	case "PZ_BreakLegs": {
+		usecBleed = _arraytosend;
+		_owner publicVariableClient "usecBleed";
+	};
+	
+	case "HideObj": {
+		PVDZE_obj_Hide = _arraytosend;
+		_owner publicVariableClient "PVDZE_obj_Hide";
+	};
+	
+	case "RoadFlare": {
+		PVDZE_obj_RoadFlare = _arraytosend;
+		_owner publicVariableClient "PVDZE_obj_RoadFlare";
+	};
+	
 	case "Transfuse": {
 		usecTransfuse = _arraytosend;
 		_owner publicVariableClient "usecTransfuse";

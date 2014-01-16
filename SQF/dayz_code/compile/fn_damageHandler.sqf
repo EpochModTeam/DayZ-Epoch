@@ -159,9 +159,15 @@ if (_damage > 0.4) then {	//0.25
 		if(!_isPZombie) then {
 			//Create Wound
 			_unit setVariable[_wound,true,true];
+			
 			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
-			usecBleed = [_unit,_wound,_hit];
-			publicVariable "usecBleed";
+			/* PVS/PVC - Skaronator */
+			_pos = getPosATL _unit;
+			_inRange = _pos nearEntities ["CAManBase",1000];
+			{
+				PVDZE_send = [_x,"PlayerBleed",[_unit,_wound,_hit]];
+				publicVariableServer "PVDZE_send";
+			} forEach _inRange;
 
 			//Set Injured if not already
 			_isInjured = _unit getVariable["USEC_injured",false];

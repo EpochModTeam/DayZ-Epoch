@@ -13,9 +13,9 @@ if (!isNull cursorTarget) then {
 		if (_ent isKindOf "Animal" or _isZombie) then {
 			_ent setDamage 1;
 		} else {
-			//["usecBreakLegs",[_target,player]] call broadcastRpcCallAll;
-			usecBreakLegs = [_ent,player];
-			publicVariable "usecBreakLegs";
+			/* PVS/PVC - Skaronator */
+			PVDZE_send = [_ent,"PZ_BreakLegs",[_ent,player]];
+			publicVariableServer "PVDZE_send";
 		};
 
 		[player,"hit",0,false] call dayz_zombieSpeak;

@@ -76,7 +76,8 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 		if (local _item) then {
 			[_item,_qty] spawn local_gutObject;
-		} else {		
+		} else {
+			//Leave this as PV instead of PVS/PVC - Skaronator
 			PVDZE_plr_GutBody =[_item,_qty];
 			publicVariable "PVDZE_plr_GutBody";
 		};

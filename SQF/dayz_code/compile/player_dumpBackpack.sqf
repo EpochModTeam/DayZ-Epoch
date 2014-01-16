@@ -6,8 +6,12 @@ if (!(isNull _backpack) and local _backpack) then {
 	_weaponscnt = count (_weapons select 0);
 	_magazinescnt = count (_magazines select 0);
 	if((_magazinescnt > 0) or (_weaponscnt > 0)) then {
-		// hide backpack from everyone else
-		PVDZE_obj_Hide = _backpack;
-		publicVariable "PVDZE_obj_Hide";
+		/* PVS/PVC - Skaronator */
+		_pos = getPosATL player;
+		_inRange = _pos nearEntities ["CAManBase",300];
+		{
+			PVDZE_send = [_x,"HideObj",[_backpack]];
+			publicVariableServer "PVDZE_send";
+		} forEach _inRange;
 	};
 };

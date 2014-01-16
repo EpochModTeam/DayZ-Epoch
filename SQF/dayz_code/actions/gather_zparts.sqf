@@ -69,10 +69,14 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 		[player,"gut",0,false,10] call dayz_zombieSpeak;  
 	
 		_qty = 1;
-	
-		PVDZE_plr_GutBody = [_item,_qty];
-		PVDZE_plr_GutBody spawn local_gutObjectZ;		
-		publicVariable "PVDZE_plr_GutBodyZ";
+		if (local _item) then {
+			[_item,_qty] spawn local_gutObjectZ;
+		} else {
+			//Leave this as PV instead of PVS/PVC - Skaronator 
+			//Also not sure if we need this
+			PVDZE_plr_GutBodyZ = [_item,_qty];	
+			publicVariable "PVDZE_plr_GutBodyZ";
+		};
 		
 		// Reduce humanity for gutting zeds
 		_humanity = player getVariable["humanity",0];
