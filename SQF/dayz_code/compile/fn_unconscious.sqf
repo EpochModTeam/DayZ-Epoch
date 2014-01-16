@@ -66,11 +66,25 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 			//Give Blood
 			r_player_blood = r_player_bloodTotal;
 			player setVariable["USEC_lowBlood",false,true];
+		
+			//Self Healing
+			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
+			player setVariable ["hit_legs",0,false];
+			player setVariable ["hit_hands",0,false];
+			player setVariable["medForceUpdate",true];
+
+			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
+			player setVariable["medForceUpdate",true];
+			
+			/* REMOVED USE THAT ABOVE 
 			usecMorphine = [player,player];
 			publicVariable "usecMorphine";
-			player setVariable ["USEC_inPain", false, true];
+			
 			usecBandage = [player,player];
 			publicVariable "usecBandage";
+			*/		
+			
+			player setVariable ["USEC_inPain", false, true];
 			player setdamage 0;
 			{player setVariable[_x,false,true];} forEach USEC_woundHit;
 			player setVariable ["USEC_injured",false,true];

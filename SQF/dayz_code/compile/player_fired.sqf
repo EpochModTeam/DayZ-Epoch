@@ -60,15 +60,29 @@ if (_ammo isKindOf "SmokeShell") then {
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
 			_id = [_projectile,0] spawn object_roadFlare;
-			PVDZE_obj_RoadFlare = [_projectile,0];
-			publicVariable "PVDZE_obj_RoadFlare";
+		
+			/* PVS/PVC - Skaronator */
+			_pos = getPosATL player;
+			_inRange = _pos nearEntities ["CAManBase",1250];
+			{
+				PVDZE_send = [_x,"RoadFlare",[_projectile,0]];
+				publicVariableServer "PVDZE_send";
+			} forEach _inRange;
+			
 			_id = _this spawn player_throwObject;
 		};
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
 			_id = [_projectile,1] spawn object_roadFlare;
-			PVDZE_obj_RoadFlare = [_projectile,1];
-			publicVariable "PVDZE_obj_RoadFlare";
+			
+			/* PVS/PVC - Skaronator */
+			_pos = getPosATL player;
+			_inRange = _pos nearEntities ["CAManBase",1250];
+			{
+				PVDZE_send = [_x,"RoadFlare",[_projectile,1]];
+				publicVariableServer "PVDZE_send";
+			} forEach _inRange;
+			
 			_id = _this spawn player_throwObject;
 		};
 	};	

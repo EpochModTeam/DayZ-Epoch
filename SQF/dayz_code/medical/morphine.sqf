@@ -56,7 +56,6 @@ if (_finished) then {
 			//Self Healing
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
 		} else {
-			//PVDZE_plr_HumanityChange = [player,50];
 			[player,50] call player_humanityChange;
 		};
 		
