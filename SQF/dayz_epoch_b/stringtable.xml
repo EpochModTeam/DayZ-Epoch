@@ -6119,7 +6119,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_MAINTPREV">
 		  <Original>Maintain Area Preview</Original>
 		  <English>Maintain Area Preview</English>
-		  <!-- <German></German> -->
+		  <German>Kostenvoranschlag für Instandhaltung</German>
 		  <Russian>Занять территорию (пред. просмотр)</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Gebiedsonderhoud (voorbeeld)</Dutch>
@@ -6209,7 +6209,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_RECOMBO">
 		  <Original>Re-Enter Combination</Original>
 		  <English>Re-Enter Combination</English>
-		  <!-- <German></German> -->
+		  <German>Kombination erneut eingeben</German>
 		  <Russian>Ввести комбинацию заново</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Combinatie Opnieuw Invoeren</Dutch>
