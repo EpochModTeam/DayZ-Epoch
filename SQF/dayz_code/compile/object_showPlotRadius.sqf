@@ -3,7 +3,7 @@
 private ["_location","_object","_objects","_i","_dir","_nearPlotPole"];
 
 // global vars
-_nearPlotPole = nearestObject [player, "Plastic_Pole_EP1_DZ", 3];
+_nearPlotPole = nearestObject [player, "Plastic_Pole_EP1_DZ"];
 
 //"privatized" center variable
 _BD_radius = DZE_PlotPole select 0;

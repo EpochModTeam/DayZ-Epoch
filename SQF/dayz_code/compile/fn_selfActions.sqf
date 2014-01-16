@@ -202,8 +202,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 
 	 if (_canDo && (speed player <= 1) && (_cursorTarget isKindOf "Plastic_Pole_EP1_DZ")) then {
 		 if (s_player_maintain_area < 0) then {
-		  	s_player_maintain_area = player addAction ["<t color=""#ffffff"">$STR_EPOCH_ACTIONS_MAINTAREA</t>", "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
-		 	s_player_maintain_area_preview = player addAction ["<t color=""#ccffffff"">$STR_EPOCH_ACTIONS_MAINTPREV</t>", "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
+		  	s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
+		 	s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
 		 };
 	 } else {
     		player removeAction s_player_maintain_area;
@@ -307,7 +307,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 					if(_hasHotwireKit) then {
 						_Unlock = player addAction [format[localize "STR_EPOCH_ACTIONS_HOTWIRE",_text], "\z\addons\dayz_code\actions\hotwire_veh.sqf",_cursorTarget, 2, true, true, "", ""];
 					} else {
-						_Unlock = player addAction ["<t color='#ff0000'>$STR_EPOCH_ACTIONS_VEHLOCKED</t>", "",_cursorTarget, 2, true, true, "", ""];
+						_Unlock = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_VEHLOCKED"], "",_cursorTarget, 2, true, true, "", ""];
 					};
 					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
 					s_player_lockUnlock_crtl = 1;
@@ -409,7 +409,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	if (_player_butcher) then {
 		if (s_player_butcher < 0) then {
 			if(_isZombie) then {
-				s_player_butcher = player addAction [localize "STR_EPOCH_ACTIONS_GUTZOMBIE", "\z\addons\dayz_code\actions\gather_zparts.sqf",_cursorTarget, 0, true, true, "", ""];
+				s_player_butcher = player addAction [localize "STR_EPOCH_ACTIONS_GUTZOM", "\z\addons\dayz_code\actions\gather_zparts.sqf",_cursorTarget, 0, true, true, "", ""];
 			} else {
 				s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",_cursorTarget, 3, true, true, "", ""];
 			};
@@ -537,7 +537,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			};
 		};
 		if (s_player_packvault < 0 and (_ownerID == dayz_combination or _ownerID == dayz_playerUID)) then {
-			s_player_packvault = player addAction [format["<t color='#ff0000'>$STR_EPOCH_ACTIONS_PACK</t>",_text], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true, "",""];
+			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",(format[localize "STR_EPOCH_ACTIONS_PACK",_text])], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_packvault;
@@ -576,7 +576,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			if(_IsNearRunningGen > 0) then {
 				s_player_fuelauto = player addAction [localize "STR_EPOCH_ACTIONS_FILLVEH", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",objNull, 0, false, true, "",""];
 			} else {
-				s_player_fuelauto = player addAction ["<t color='#ff0000'>$STR_EPOCH_ACTIONS_NEEDPOWER</t>", "",[], 0, false, true, "",""];
+				s_player_fuelauto = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_NEEDPOWER"], "",[], 0, false, true, "",""];
 			};
 		};
 	} else {
@@ -591,7 +591,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			if(isEngineOn _cursorTarget) then {
 				s_player_fuelauto2 = player addAction [localize "STR_EPOCH_ACTIONS_FILLVEH", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",_cursorTarget, 0, false, true, "",""];
 			} else {
-				s_player_fuelauto2 = player addAction ["<t color='#ff0000'>$STR_EPOCH_ACTIONS_NEEDPOWER</t>", "",[], 0, false, true, "",""];
+				s_player_fuelauto2 = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_NEEDPOWER"], "",[], 0, false, true, "",""];
 			};
 		};
 	} else {
