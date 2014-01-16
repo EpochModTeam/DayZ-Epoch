@@ -39,7 +39,7 @@ dayz_sellDistance_air = 40;
 
 dayz_paraSpawn = false;
 
-dayz_maxAnimals = 8; // Default: 8
+dayz_maxAnimals = 5; // Default: 8
 dayz_tameDogs = true;
 DynamicVehicleDamageLow = 0; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100

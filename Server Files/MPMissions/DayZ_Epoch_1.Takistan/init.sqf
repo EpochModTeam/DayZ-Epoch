@@ -22,7 +22,7 @@ enableSentences false;
 // DayZ Epochconfig
 spawnShoremode = 0; // Default = 1 (on shore)
 spawnArea= 1000; // Default = 1500
-MaxHeliCrashes= 5; // Default = 5
+
 MaxVehicleLimit = 300; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 12000; // Default = 10000
@@ -30,7 +30,7 @@ dayz_maxLocalZombies = 40; // Default = 40
 
 dayz_paraSpawn = false;
 
-dayz_maxAnimals = 8; // Default: 8
+dayz_maxAnimals = 5; // Default: 8
 dayz_tameDogs = true;
 DynamicVehicleDamageLow = 0; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100

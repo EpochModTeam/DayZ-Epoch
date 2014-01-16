@@ -17,9 +17,7 @@ waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug durin
 if(isnil "MaxVehicleLimit") then {
 	MaxVehicleLimit = 50;
 };
-if(isnil "MaxHeliCrashes") then {
-	MaxHeliCrashes = 5;
-};
+
 if(isnil "MaxDynamicDebris") then {
 	MaxDynamicDebris = 100;
 };

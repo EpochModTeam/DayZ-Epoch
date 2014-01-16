@@ -414,7 +414,7 @@ dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
 
 if(isNil "dayz_maxAnimals") then {
-	dayz_maxAnimals = 8;
+	dayz_maxAnimals = 5;
 };
 if(isNil "timezoneswitch") then {
 	timezoneswitch = 0;
