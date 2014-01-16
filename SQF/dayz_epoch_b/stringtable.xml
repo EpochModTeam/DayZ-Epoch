@@ -5509,7 +5509,7 @@
 		<Key ID="STR_EPOCH_PLAYER_279">
 		  <Original>Filter</Original>
 		  <English>Filter</English>
-		  <!-- <German></German> -->
+		  <German>Filter</German>
 		  <Russian>Фильтр</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
@@ -5759,7 +5759,7 @@
 		<Key ID="STR_EPOCH_PLAYER_304">
 		  <Original>Craft Wood Crate</Original>
 		  <English>Craft Wood Crate</English>
-		  <German>Holzkiste herstellen</German>
+		  <!-- <German></German> -->
 		  <!-- <Russian></Russian> -->
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
@@ -6089,7 +6089,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_NIGHTVIS">
 		  <Original>Night Vision</Original>
 		  <English>Night Vision</English>
-		  <!-- <German></German> -->
+		  <German>Nachtsicht</German>
 		  <Russian>Ночное зрение</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Nachtvisie</Dutch>
@@ -6099,7 +6099,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_FEED">
 		  <Original>Feed</Original>
 		  <English>Feed</English>
-		  <!-- <German></German> -->
+		  <German>Füttern</German>
 		  <Russian>Кормиться</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Eet</Dutch>
@@ -6109,7 +6109,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAREA">
 		  <Original>Maintain Area</Original>
 		  <English>Maintain Area</English>
-		  <!-- <German></German> -->
+		  <German>Gebiet instand halten</German>
 		  <Russian>Занять территорию</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Onderhoud het gebied</Dutch>
@@ -6119,7 +6119,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_MAINTPREV">
 		  <Original>Maintain Area Preview</Original>
 		  <English>Maintain Area Preview</English>
-		  <!-- <German></German> -->
+		  <German>Kostenvoranschlag für Instandhaltung</German>
 		  <Russian>Занять территорию (пред. просмотр)</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Gebiedsonderhoud (voorbeeld)</Dutch>
@@ -6129,7 +6129,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
 		  <Original>Unlock %1</Original>
 		  <English>Unlock %1</English>
-		  <!-- <German></German> -->
+		  <German>%1 aufschließen</German>
 		  <Russian>Открыть %1</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Haal van Slot %1</Dutch>
@@ -6149,7 +6149,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_VEHLOCKED">
 		  <Original>Vehicle Locked</Original>
 		  <English>Vehicle Locked</English>
-		  <!-- <German></German> -->
+		  <German>Fahrzeug abgeschlossen</German> -->
 		  <Russian>Транспорт закрыт</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Voertuig Staat op Slot</Dutch>
@@ -6159,7 +6159,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_LOCK">
 		  <Original>Lock %1</Original>
 		  <English>Lock %1</English>
-		  <!-- <German></German> -->
+		  <German>%1 abschließen</German>
 		  <Russian>Закрыть %1</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Zet op Slot %1</Dutch>
@@ -6189,7 +6189,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_DESTROYTENT">
 		  <Original>Destroy Tent</Original>
 		  <English>Destroy Tent</English>
-		  <!-- <German></German> -->
+		  <German>Zelt zerstören</German>
 		  <Russian>Сломать палатку</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Vernietig Tent</Dutch>
@@ -6199,7 +6199,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 		  <Original>Open %1</Original>
 		  <English>Open %1</English>
-		  <!-- <German></German> -->
+		  <German>%1 öffnen</German>
 		  <Russian>Открыть %1</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Maak Open %1</Dutch>
@@ -6209,7 +6209,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_RECOMBO">
 		  <Original>Re-Enter Combination</Original>
 		  <English>Re-Enter Combination</English>
-		  <!-- <German></German> -->
+		  <German>Kombination erneut eingeben</German>
 		  <Russian>Ввести комбинацию заново</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Combinatie Opnieuw Invoeren</Dutch>
@@ -6249,7 +6249,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_NEEDPOWER">
 		  <Original>Needs Power</Original>
 		  <English>Needs Power</English>
-		  <!-- <German></German> -->
+		  <German>Benötigt Energie</German>
 		  <Russian>Нужна энергия</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Heeft Stroom Nodig</Dutch>
@@ -6259,7 +6259,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_UPGRADE">
 		  <Original>Upgrade %1</Original>
 		  <English>Upgrade %1</English>
-		  <!-- <German></German> -->
+		  <German>%1 aufrüsten</German>
 		  <Russian>Улучшить %1</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
@@ -6279,7 +6279,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN">
 		  <Original>Maintain %1</Original>
 		  <English>Maintain %1</English>
-		  <!-- <German></German> -->
+		  <German>%1 instand halten</German>
 		  <Russian>Занять %1</Russian>
 		  <!-- <Spanish></Spanish> -->
 		  <Dutch>Onderhoud %1</Dutch>
