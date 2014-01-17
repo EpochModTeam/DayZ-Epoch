@@ -33,7 +33,7 @@ Included Custom Islands
 * | MBG Killhouses http://www.armaholic.com/page.php?id=15180
 * | MBG Buildings 3 - European Theatre http://www.armaholic.com/page.php?id=14828
 * | MBG Generic African Buildings http://www.armaholic.com/page.php?id=17817
-* | German Town- and waysigns http://www.armaholic.com/page.php?id=9658
+* | German Town - and waysigns http://www.armaholic.com/page.php?id=9658
 
 --------------------------
 Developers
