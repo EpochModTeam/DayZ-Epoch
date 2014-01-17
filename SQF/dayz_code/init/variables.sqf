@@ -563,29 +563,6 @@ if(isServer) then {
 if(!isDedicated) then {
 
 	dayz_spawnPos = getPosATL player;
-
-	//Establish Location Streaming
-	_funcGetLocation = 
-	{
-		for "_i" from 0 to ((count _this) - 1) do 
-		{
-			private ["_location","_config","_locHdr","_position","_size","_type"];
-			//Get Location Data from config
-			_config = 	(_this select _i);
-			_locHdr = 	configName _config;
-			_position = getArray	(_config >> "position");
-			_size = 	getNumber	(_config >> "size");
-			_type = 	getText		(_config >> "type");
-			
-			//Find the Location
-			_location = nearestLocation [_position, _type];
-			
-			//Record details
-			dayz_Locations set [count dayz_Locations, [_location,_locHdr,_size]]; 
-		};
-	};
-	//_cfgLocation = configFile >> "CfgTownGenerator";
-	//_cfgLocation call _funcGetLocation;
 	
 	dayz_buildingMonitor = [];	//Buildings to check
 	dayz_bodyMonitor = [];
