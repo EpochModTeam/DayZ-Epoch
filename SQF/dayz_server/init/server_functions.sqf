@@ -29,6 +29,7 @@ server_spawnEvents =			compile preprocessFileLineNumbers "\z\addons\dayz_server\
 //server_weather =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_weather.sqf";
 fnc_plyrHit   =					compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
 server_deaths = 				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
+server_maintainArea = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_maintainArea.sqf";
 
 /* PVS/PVC - Skaronator */
 server_sendToClient =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_sendToClient.sqf";
@@ -161,6 +162,13 @@ server_hiveReadWrite = {
 	// diag_log ("READ/WRITE: " +str(_data));
 	_resultArray = call compile format ["%1",_data];
 	_resultArray
+};
+
+server_maintainObj = {
+	private["_data"];
+	//diag_log ("ATTEMPT WRITE: " + _this);
+	_data = "HiveExt" callExtension _this;
+	//diag_log ("WRITE: " +str(_data));
 };
 
 server_hiveReadWriteLarge = {

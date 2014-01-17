@@ -32,6 +32,7 @@
 if (isServer) then {
 	/* PVS/PVC - Skaronator */
 	"PVDZE_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
+	"PVDZE_maintainArea" addPublicVariableEventHandler {(_this select 1) spawn server_maintainArea};
 
 	"PVDZE_plr_Died"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
 	"PVDZE_plr_Save"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};

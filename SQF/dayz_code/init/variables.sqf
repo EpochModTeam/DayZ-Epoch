@@ -527,6 +527,7 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
 
 if(isServer) then {
 	dayz_players = [];
+	DZEMaintainCache = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
 	
