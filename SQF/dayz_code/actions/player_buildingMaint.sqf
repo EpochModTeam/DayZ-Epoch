@@ -80,31 +80,18 @@ if (_proceed) then {
 	// all parts removed proceed
 	if (_tobe_removed_total == _removed_total) then {
 		
-		// Get position
-		_location	= _obj getVariable["OEMPos",(getposATL _obj)];
-
-		// Get direction
-		_dir = getDir _obj;
-
-		// Find CharacterID
-		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
-		
-		// Create new object 
-		_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
-
-		// Set direction
-		_object setDir _dir;
-
-		// Set location
-		_object setPosATL _location;
-
-		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
-		publicVariableServer "PVDZE_obj_Swap";
+		_uniqueID = random(99999);
+		_retry = 0;
+		cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
+		while {2 >= _retry} do { // 2 Times
+			_retry = _retry + 1;
+			PVDZE_maintainArea = [player,2,[_obj],_uniqueID];
+			publicVariableServer "PVDZE_maintainArea";
+			sleep 20;
+		};
 
 		cutText [format[(localize "str_epoch_player_144"),_text], "PLAIN DOWN", 5];
 
-		player reveal _object;
-		
 	} else {
 	
 		{player addMagazine _x;} forEach _temp_removed_array;
