@@ -2,7 +2,7 @@
 [NEW] Optimized Server/Client Communication with PVS+PVC methods from DayZ Mod 1.8. @Skaronator
 [NEW] Updated Hive Dll to latest from rajkosto and added custom call to update the datestamp of base objects. See notes below. @Tansien
 
-[ADDED] Napf Island by #momo# now included by default. Big thanks to Momo for the permission. http://angryinsects.de/
+[ADDED] Napf Island by #momo# now included by default. Big thanks to Momo for the permission. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta
 [ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true will look for loot configs via missionConfigFile. @vbawol
 [ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant 
 [ADDED] BAF_Merlin_DZE - transportMaxWeapons 15, transportMaxMagazines 150, transportmaxbackpacks 5. @Skaronator
