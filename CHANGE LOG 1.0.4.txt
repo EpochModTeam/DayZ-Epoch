@@ -40,7 +40,7 @@
 [SERVER INFO] Updated Hive dll requires DatabaseMySql.dll in arma 2 oa root and visual studio 2013 redistributable x86 installed: http://www.microsoft.com/en-us/download/details.aspx?id=40784
 [SERVER INFO] Removed dayz_vb.bikey and dayz.bikey keys and added new versioned dayz_epoch104.bikey key. Thanks to @Tansien for the suggestion. @vbawol
 [SERVER INFO] Also moved external bikeys to sub folder, for best security use only the bikeys for the map your running.
-[SERVER INFO] pook_H13_amphib causes Server FPS issues and should not be used. https://github.com/vbawol/DayZ-Epoch/issues/969
+[SERVER INFO] pook_H13_amphib, GNT_C185F and GNT_C185E causes Server FPS issues and should not be used. https://github.com/vbawol/DayZ-Epoch/issues/969
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://bmrf.me/ for hosting our development server.
