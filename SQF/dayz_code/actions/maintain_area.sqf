@@ -1,5 +1,5 @@
-//Code developed by Axe Cop for use in DayZ Epoch Mod.
-private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
+//Code developed by Axe Cop - Massiv improvments and performance tunes by Skaronator
+private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_uniqueID","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
 
 if (DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_ACTIONS_2") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -77,45 +77,15 @@ switch _option do {
 
 			// all required items removed from player gear
 			if (_tobe_removed_total == _removed_total) then {
-				{
-					_obj = _x;
-					
-					// Find objectID
-					_objectID = _obj getVariable ["ObjectID","0"];
-
-					// Find objectUID
-					_objectUID = _obj getVariable ["ObjectUID","0"];
-					
-					if (_objectID == "0" && _objectUID == "0") exitWith { cutText ["At least one building part is not setup yet.", "PLAIN DOWN"];};
-					
-					// Get classname
-					_classname = typeOf _obj;
-					
-					// Get position
-					_location = _obj getVariable["OEMPos",(getposATL _obj)];
-
-					// Get direction
-					_dir = getDir _obj;
-
-					// Find CharacterID
-					_objectCharacterID = _obj getVariable ["CharacterID","0"];
-					
-					// Create new object
-					_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
-
-					// Set direction
-					_object setDir _dir;
-
-					// Set location
-					_object setPosATL _location;
-
-					PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
-					publicVariableServer "PVDZE_obj_Swap";
-
-					player reveal _object;
-				} forEach _objects;
-				
+				_uniqueID = random(99999);
+				_retry = 0;
 				cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
+				while {3 >= _retry} do { // 3 Times
+					_retry = _retry + 1;
+					PVDZE_maintainArea = [player,[_target, _objectClasses, _range],_uniqueID];
+					publicVariableServer "PVDZE_maintainArea";
+					sleep 20;
+				};
 			} else {
 				{player addMagazine _x;} forEach _temp_removed_array;
 				cutText [format[(localize "STR_EPOCH_ACTIONS_5"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
