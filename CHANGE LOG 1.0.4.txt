@@ -1,5 +1,7 @@
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
+[NEW] Updated Hive Dll to latest from rajkosto and added custom call to update the datestamp of base objects. @Tansien
 
+[ADDED] Napf Island by #momo# now included by default. Big thanks to Momo for the permission. http://angryinsects.de/
 [ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true will look for loot configs via missionConfigFile. @vbawol
 [ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant 
 [ADDED] BAF_Merlin_DZE - transportMaxWeapons 15, transportMaxMagazines 150, transportmaxbackpacks 5. @Skaronator
