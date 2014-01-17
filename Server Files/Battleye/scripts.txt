@@ -1,5 +1,5 @@
-1 "addBackpackCargoGlobal" !"_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];"
-1 HelicopterExplo !"_expl=createVehicle [\"HelicopterExploSmall\",(getPosATL _v),[],0,\"CAN_COLLIDE\"];"
+1 "addBackpackCargoGlobal" !"_holder addbackpackcargoGlobal \[_x,\(_objWpnQty select _countr\)\];"
+1 HelicopterExplo !"_expl=createVehicle \[\"HelicopterExploSmall\",\(getPosATL _v\),\[\],0,\"CAN_COLLIDE\"\];"
 5 "Logic" !"\"Logic\" createVehicleLocal" !"sideLogic" !"BIS_MPF_clientJIPlogic" !"_humanity_logic"
 5 "FunctionsManager"
 5 BattleFieldClearance
@@ -11,25 +11,25 @@
 5 "_agent setDamage 1"
 5 "_unit createUnit"
 5 "createUnit _array"
-5 "[_pos, _grp, \";\" +"
+5 "\[_pos, _grp, \";\" +"
 5 "+ \";\""
 5 "+\";\""
-5 "+ \";\"]"
-5 "+\";\"]"
-5 "], \"FunctionsManager\"]"
-5 "],\"FunctionsManager\"]"
-5 "], \"Logic\"]"
-5 "],\"Logic\"]"
-5 "hint \"Server Anti-Hack is OFF. Rejoin Server Now\""
+5 "+ \";\"\]"
+5 "+\";\"\]"
+5 "\], \"FunctionsManager\"\]"
+5 "\],\"FunctionsManager\"\]"
+5 "\], \"Logic\"\]"
+5 "\],\"Logic\"\]"
+5 "hint \"Server Anti-Hack is OFF\. Rejoin Server Now\""
 5 "closeDisplay ="
 5 "rJIPrequest =" !"rJIPrequest = 'JIPrequest'"
-5 "{rJIPREQUEST" !"!isNil {rJIPREQUEST}"
+5 "\{rJIPREQUEST" !"!isNil \{rJIPREQUEST\}"
 5 RUSTLER
 5 Ruslter
 5 "Systems Online"
 5 HangenderRE
 5 vilegaming
-5 v.i.l.e
+5 v\.i\.l\.e
 5 Lystic
 5 setDammage
 5 "compile toString"
@@ -37,7 +37,7 @@
 5 beeeh
 5 dayz-injector-menu
 5 Shadowy_NONRE
-5 "lol\car.sqf"
+5 "lol\car\.sqf"
 5 _cute
 5 _stuff
 5 _vgmenu
@@ -51,30 +51,30 @@
 5 Nigger
 5 "\"You\""
 5 "selectedItemCountLeft = lnbText"
-5 "vehicle player addaction [(\"<t color=\"\"#B0C4DE\"\">\" + (\"ET\") +\"</t>\"),"
+5 "vehicle player addaction \[\(\"<t color=\"\"#B0C4DE\"\">\" + \(\"ET\"\) +\"</t>\"\),"
 5 "\"HelicopterExplobig\", \"HelicopterExploSmall\" createVehicleLocal"
 5 "\"HelicopterExploSmall\", \"HelicopterExplobig\" createVehicleLocal"
 5 "\"HelicopterExplobig\", \"HelicopterExploSmall\" createVehicle"
 5 "\"HelicopterExploSmall\", \"HelicopterExplobig\" createVehicle"
-5 "\"HelicopterExplobig\" createvehiclelocal (position "
+5 "\"HelicopterExplobig\" createvehiclelocal \(position "
 5 "_classname = \"HelicopterExploBig\";"
-5 "(getPosATL player) nearObjects [\"Man\", 15000]"
-5 "[[\"Man\",\"Air\",\"Car\",\"Motorcycle\",\"Tank\",\"Ship\",\"StaticWeapon\"],250000]"
+5 "\(getPosATL player\) nearObjects \[\"Man\", 15000\]"
+5 "\[\[\"Man\",\"Air\",\"Car\",\"Motorcycle\",\"Tank\",\"Ship\",\"StaticWeapon\"\],250000\]"
 5 action_crate1
 5 _dummyveh
 5 "case \"CODE\":"
-5 "], 40000])"
-5 "nearestObjects [player, [\"TentStorage\", \"TentStorageDomed\", \"TentStorageDomed2\", \"VaultStorage\", \"VaultStorageLocked\", \"LockboxStorageLocked\", \"LockboxStorage\", \"Land_A_tent\", \"WeaponHolder_ItemTent\"], 5];"
-5 "(getPosATL player) nearObjects [\"Man\", 200];"
-5 "(nearestObject [player, \"Rabbit\"])"
+5 "\], 40000\]\)"
+5 "nearestObjects \[player, \[\"TentStorage\", \"TentStorageDomed\", \"TentStorageDomed2\", \"VaultStorage\", \"VaultStorageLocked\", \"LockboxStorageLocked\", \"LockboxStorage\", \"Land_A_tent\", \"WeaponHolder_ItemTent\"\], 5\];"
+5 "\(getPosATL player\) nearObjects \[\"Man\", 200\];"
+5 "\(nearestObject \[player, \"Rabbit\"\]\)"
 5 "try saving"
-5 "addMagazineCargoGlobal[\"ItemSilverBar\",50];"
-5 "addMagazineCargoGlobal[\"ItemSilverBar10oz\",50];"
-5 "addMagazineCargoGlobal[\"ItemGoldBar\",50];"
-5 "addMagazineCargoGlobal[\"ItemGoldBar10oz\",50];"
-5 "addMagazineCargoGlobal[\"ItemBriefcase100oz\",50];"
-5 "addMagazineCargoGlobal[\"ItemSilverBar\",500];"
-5 "addMagazineCargoGlobal[\"ItemSilverBar10oz\",500];"
-5 "addMagazineCargoGlobal[\"ItemGoldBar\",500];"
-5 "addMagazineCargoGlobal[\"ItemGoldBar10oz\",500];"
-5 "addMagazineCargoGlobal[\"ItemBriefcase100oz\",500];"
+5 "addMagazineCargoGlobal\[\"ItemSilverBar\",50\];"
+5 "addMagazineCargoGlobal\[\"ItemSilverBar10oz\",50\];"
+5 "addMagazineCargoGlobal\[\"ItemGoldBar\",50\];"
+5 "addMagazineCargoGlobal\[\"ItemGoldBar10oz\",50\];"
+5 "addMagazineCargoGlobal\[\"ItemBriefcase100oz\",50\];"
+5 "addMagazineCargoGlobal\[\"ItemSilverBar\",500\];"
+5 "addMagazineCargoGlobal\[\"ItemSilverBar10oz\",500\];"
+5 "addMagazineCargoGlobal\[\"ItemGoldBar\",500\];"
+5 "addMagazineCargoGlobal\[\"ItemGoldBar10oz\",500\];"
+5 "addMagazineCargoGlobal\[\"ItemBriefcase100oz\",500\];"

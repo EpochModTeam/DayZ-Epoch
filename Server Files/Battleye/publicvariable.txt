@@ -2,7 +2,7 @@
 5 PVAHR_ //!PVAHR_0 !PVAHR_1 !PVAHR_2 !PVAHR_3 !PVAHR_4 !PVAHR_5 !PVAHR_6 !PVAHR_7 !PVAHR_8 !PVAHR_9
 5 "HangenderRE"
 5 "vilegaming"
-5 "v.i.l.e"
+5 "v\.i\.l\.e"
 5 "Lystic"
 5 "Rustler"
 5 "BattleFieldClearance"
@@ -13,7 +13,7 @@
 5="player"
 5="server"
 5 "teleported"
-5 "remExFP" !="\"remExFP\" = [,,\"per\",\"execVM\",\"ca\Modules\Functions\init.sqf\"]" !"[,,\"per\",\"execVM\",\"ca\Modules\Functions\init.sqf\"]"
+5 "remExFP" !="\"remExFP\" = \[,,\"per\",\"execVM\",\"ca\Modules\Functions\init\.sqf\"\]" !"\[,,\"per\",\"execVM\",\"ca\Modules\Functions\init\.sqf\"\]"
 5 "dayzSetDate"
 5 "rsay"
 5 "rland"
