@@ -82,7 +82,7 @@ switch _option do {
 				cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
 				while {3 >= _retry} do { // 3 Times
 					_retry = _retry + 1;
-					PVDZE_maintainArea = [player,[_target, _objectClasses, _range],_uniqueID];
+					PVDZE_maintainArea = [player,1,[_target, _objectClasses, _range],_uniqueID];
 					publicVariableServer "PVDZE_maintainArea";
 					sleep 20;
 				};
