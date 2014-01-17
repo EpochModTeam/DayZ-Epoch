@@ -80,6 +80,8 @@ if (_proceed) then {
 	// all parts removed proceed
 	if (_tobe_removed_total == _removed_total) then {
 		
+		cutText [format[(localize "str_epoch_player_144"),_text], "PLAIN DOWN", 5];
+		
 		_uniqueID = random(99999);
 		_retry = 0;
 		cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
@@ -89,9 +91,6 @@ if (_proceed) then {
 			publicVariableServer "PVDZE_maintainArea";
 			sleep 20;
 		};
-
-		cutText [format[(localize "str_epoch_player_144"),_text], "PLAIN DOWN", 5];
-
 	} else {
 	
 		{player addMagazine _x;} forEach _temp_removed_array;
