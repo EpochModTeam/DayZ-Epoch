@@ -25,10 +25,10 @@ Included Custom Addons
 * gdtmod_grass 1.00 by HeinBloed - http://www.gdt-server.net/
 * Bell 47/H-13 Helicopter by hcpookie - http://www.armaholic.com/page.php?id=22143
 * Napf by #momo# Napf Island by #momo# - http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta
-**	MBG Killhouses http://www.armaholic.com/page.php?id=15180
-**	MBG Buildings 3 - European Theatre http://www.armaholic.com/page.php?id=14828
-**	MBG Generic African Buildings http://www.armaholic.com/page.php?id=17817
-**	German Town- and waysigns http://www.armaholic.com/page.php?id=9658
+* | MBG Killhouses http://www.armaholic.com/page.php?id=15180
+* | MBG Buildings 3 - European Theatre http://www.armaholic.com/page.php?id=14828
+* | MBG Generic African Buildings http://www.armaholic.com/page.php?id=17817
+* | German Town- and waysigns http://www.armaholic.com/page.php?id=9658
 
 --------------------------
 Developers
