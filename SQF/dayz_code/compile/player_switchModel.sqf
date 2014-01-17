@@ -150,7 +150,7 @@ if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 //dayz_originalPlayer attachTo [_newUnit];
 player disableConversation true;
 	
-player setVariable ["bodyName",dayz_playerName,true];
+player setVariable ["bodyName",(toArray dayz_playerName),true];
 
 if (_tagSetting) then {
 	DZE_ForceNameTags = true;
