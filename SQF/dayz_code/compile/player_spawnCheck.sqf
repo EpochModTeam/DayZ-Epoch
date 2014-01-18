@@ -109,13 +109,13 @@ if (_nearbyCount < 1) exitwith
 			_dateNow = (DateToNumber date);
 			_age = (_dateNow - _looted) * 525948;
 			//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
-			if ((_age > 10) and (!_cleared)) then {
+			if ((_age > DZE_LootSpawnTimer) and (!_cleared)) then {
 				_nearByObj = nearestObjects [(getPosATL _x), ["WeaponHolder","WeaponHolderBase"],((sizeOf _type)+5)];
 				{deleteVehicle _x} forEach _nearByObj;
 				_x setVariable ["cleared",true,true];
 				_x setVariable ["looted",_dateNow,true];
 			};
-			if ((_age > 10) and (_cleared)) then {
+			if ((_age > DZE_LootSpawnTimer) and (_cleared)) then {
 				//Register
 				_x setVariable ["looted",_dateNow,true];
 				//cleanup
