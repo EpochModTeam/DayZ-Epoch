@@ -1,4 +1,4 @@
-private ["_characterID","_minutes","_newObject","_playerID","_playerName","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record","_victimArray","_victimNameArray"];
+private ["_characterID","_minutes","_newObject","_playerID","_playerName","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _characterID = 	_this select 0;
 _minutes =		_this select 1;
@@ -8,9 +8,8 @@ _playerName = 	toString(_this select 4);
 _infected =		_this select 5;
 
 _victim = _newObject;
-_victimArray = toArray "nil";
-_victimNameArray = _victim getVariable["bodyName", _victimArray];
-_victimName = toString (_victimNameArray);
+_victimName = _victim getVariable["bodyName", "nil"];
+
 _killer = _victim getVariable["AttackedBy", "nil"];
 _killerName = _victim getVariable["AttackedByName", "nil"];
 
