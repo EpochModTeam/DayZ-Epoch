@@ -1173,7 +1173,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=23;
 		class Item0
 		{
 			position[]={10010.905,110.96082,10448.559};
@@ -1194,13 +1194,13 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={6668.4307,10.747399,16982.656};
+			position[]={6946.2808,7.0185013,17384.557};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={5461.1304,6.3582716,16039.573};
+			position[]={5410.916,7.2133398,16675.912};
 			name="spawn2";
 			type="Empty";
 		};
@@ -1218,7 +1218,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={8415.0039,46.702496,17153.494};
+			position[]={12231.441,2.585845,16319.117};
 			name="spawn5";
 			type="Empty";
 		};
@@ -1242,7 +1242,7 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={4212.3252,4.4311266,14017.565};
+			position[]={12861.892,2.1743674,14849.523};
 			name="spawn9";
 			type="Empty";
 		};
@@ -1251,6 +1251,228 @@ class Mission
 			position[]={10709.255,33.675358,17085.104};
 			name="spawn10";
 			type="Empty";
+		};
+		class Item13
+		{
+			position[]={8246.7275,15.544708,15490.344};
+			name="NeutralTraderCity";
+			text="Trader City Lenzburg";
+			type="mil_circle";
+		};
+		class Item14
+		{
+			position[]={12397.357,216.53304,5068.0298};
+			name="FriendlyTraderCity";
+			text="Trader City Schratten";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item15
+		{
+			position[]={5150.6099,71.601753,4862.3594};
+			name="HeroVendor";
+			text="Hero Vendor";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item16
+		{
+			position[]={15128.379,19.974716,16421.879};
+			name="UnarmedAirVehicles";
+			text="AWOLs Airfield";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item17
+		{
+			position[]={2125.5425,13.000834,7807.833};
+			name="West Wholesaler";
+			text="West Wholesaler";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item18
+		{
+			position[]={5372.1465,5.0164638,16091.704};
+			name="NorthWholesaler";
+			text="North Wholesaler";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item19
+		{
+			position[]={6776.3237,-0.25546163,16955.648};
+			name="NorthBoatVendor";
+			text="Nordic Boats";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item20
+		{
+			position[]={10404.296,106.05455,8282.8232};
+			name="BanditVendor";
+			text="Bandit Vendor";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item21
+		{
+			position[]={16835.688,-2.917357,5268.064};
+			name="SouthBoatVendor";
+			text="Pauls Boats";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item22
+		{
+			position[]={15520.298,5.3862243,13225.447};
+			name="NeutralTraderCIty2";
+			text="Trader city Emmen";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=9;
+		class Item0
+		{
+			position[]={8246.3184,15.544708,15485.867};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Lenz";
+			expCond="(player distance Lenz) < 50;";
+			expActiv="TitleText[""Now Entering Trader City Lenzburg"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Lenzburg"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={15506.952,6.2226005,13229.368};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Emmen";
+			expCond="(player distance Emmen) < 100;";
+			expActiv="TitleText[""Now Entering Trader City Emmen"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Emmen"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={12399.751,216.42809,5074.5273};
+			a=75;
+			b=75;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Schratten";
+			expCond="(player distance Schratten) < 75;";
+			expActiv="TitleText[""Now Entering Trader City Schratten"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Schratten"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={10398.626,105.61282,8279.4619};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Bandit";
+			expCond="(player distance Bandit) < 50;";
+			expActiv="TitleText[""Now Entering Bandit Camp"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={5149.9814,71.601753,4864.1191};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Hero";
+			expCond="(player distance Hero) < 50;";
+			expActiv="TitleText[""Now Entering Hero Vendor"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Hero Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={2122.7954,13.000834,7807.9878};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Wholesale1";
+			expCond="(player distance Wholesale1) < 50;";
+			expActiv="TitleText[""Now Entering West Wholesaler"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving West Wholesaler"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={5379.0342,4.9903588,16103.187};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Wholesaler";
+			expCond="(player distance Wholesaler) < 50;";
+			expActiv="TitleText[""Now Entering Wholesaler"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Wholesaler"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={6772.8877,0.45900518,16983.27};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Boat1";
+			expCond="(player distance boat1) < 50;";
+			expActiv="TitleText[""Now Entering Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={16839.973,0.43266046,5264.0566};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Boat2";
+			expCond="(player distance boat2) < 50;";
+			expActiv="TitleText[""Now Entering Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
 		};
 	};
 };
