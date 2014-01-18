@@ -4,7 +4,7 @@ _characterID = 	_this select 0;
 _minutes =		_this select 1;
 _newObject = 	_this select 2;
 _playerID = 	_this select 3;
-_playerName = 	toString(_this select 4);
+_playerName = 	_this select 4;
 _infected =		_this select 5;
 
 _victim = _newObject;
@@ -20,10 +20,13 @@ if (_killerName != "nil") then
 	_weapon = _victim getVariable["AttackedByWeapon", "nil"];
 	_distance = _victim getVariable["AttackedFromDistance", "nil"];
 
-	if (_victimName == _killerName) then {
+	if (_victimName == _killerName) then 
+	{
 		_message = format["%1 killed himself",_victimName];
 		_loc_message = format["PKILL: %1 killed himself", _victimName];
-	} else {
+	}
+	else 
+	{
 		_message = format["%1 was killed by %2 with weapon %3 from %4m",_victimName, _killerName, _weapon, _distance];
 		_loc_message = format["PKILL: %1 was killed by %2 with weapon %3 from %4m", _victimName, _killerName, _weapon, _distance];
 	};
