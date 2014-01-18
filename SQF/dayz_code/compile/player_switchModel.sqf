@@ -61,9 +61,9 @@ player setPosATL dayz_spawnPos;
 //BackUp Player Object
 _oldUnit = player;
 	
-/***********************************/
-//DONT USE player AFTER THIS POINT
-/***********************************/
+/**********************************/
+//DONT USE player AFTER THIS POINT//
+/**********************************/
 
 //Create New Character
 //[player] joinSilent grpNull;
@@ -150,16 +150,16 @@ if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 //dayz_originalPlayer attachTo [_newUnit];
 player disableConversation true;
 	
-player setVariable ["bodyName",dayz_playerName,true];
+//player setVariable ["bodyName",dayz_playerName,true]; //Outcommit (Issue #991) - Also removed in DayZ Mod 1.8
 
 if (_tagSetting) then {
 	DZE_ForceNameTags = true;
 };
 
-_playerUID=getPlayerUID player;
+_playerUID = getPlayerUID player;
 _playerObjName = format["player%1",_playerUID];
 call compile format["%1 = player;",_playerObjName];
-publicVariable _playerObjName;
+publicVariable _playerObjName; //Outcommit in DayZ 1.8 No clue for what this is - Skaronator
 	
 //melee check
 _wpnType = primaryWeapon player;
