@@ -4,6 +4,7 @@
 [NEW] Maintain Area should work now much better. The Server update the Object itself and doesnt remove and rebuild it anymore. @Skaronator
 
 [ADDED] Napf Island by #momo# now included by default. Big thanks to Momo for the permission. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta
+[ADDED] Allow Admins To Customize Loot Spawn Timer using DZE_LootSpawnTimer via init.sqf. Default: 10 @SGanthony
 [ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true will look for loot configs via missionConfigFile. @vbawol
 [ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant 
 [ADDED] BAF_Merlin_DZE - transportMaxWeapons 15, transportMaxMagazines 150, transportmaxbackpacks 5. @Skaronator
