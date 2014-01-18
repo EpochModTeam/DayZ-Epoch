@@ -476,6 +476,9 @@ if(isNil "DZE_BuildOnRoads") then {
 if(isNil "DZE_MissionLootTable") then {
 	DZE_MissionLootTable = false;
 };
+if(isNil "DZE_LootSpawnTimer") then {
+        DZE_LootSpawnTimer = 10;
+};
 
 DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
 
