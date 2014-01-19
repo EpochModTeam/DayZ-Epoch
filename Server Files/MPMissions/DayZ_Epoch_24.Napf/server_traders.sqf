@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["Tanny_PMC","Graves","US_Delta_Force_AR_EP1","GUE_Commander","Damsel3","Soldier_MG_PKM_PMC","GUE_Worker2","GUE_Woodlander2","RUS_Soldier2","Drake_Light","GUE_Woodlander3","Soldier_GL_PMC","GUE_Villager3","UN_CDF_Soldier_Pilot_EP1","CIV_EuroWoman01_EP1","Dr_Annie_Baker_EP1","Soldier_MG_PKM_PMC","Soldier_MG_PMC","RUS_Commander","Damsel5","TK_Special_Forces_MG_EP1","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Ins_Woodlander3","Dr_Hladik_EP1","pook_Doc_Bell47","Ins_Woodlander2","Citizen3_EP1","ibr_lingorman6","ibr_lingorman6s","TK_CIV_Woman02_EP1","Damsel3"];
+serverTraders = ["Tanny_PMC","Graves","US_Delta_Force_AR_EP1","GUE_Commander","Damsel3","Soldier_MG_PKM_PMC","GUE_Worker2","GUE_Woodlander2","RUS_Soldier2","Drake_Light","GUE_Woodlander3","Soldier_GL_PMC","GUE_Villager3","CIV_EuroWoman01_EP1","Dr_Annie_Baker_EP1","Soldier_MG_PKM_PMC","RUS_Commander","Damsel5","TK_Special_Forces_MG_EP1","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Ins_Woodlander3","Dr_Hladik_EP1","pook_Doc_Bell47","Ins_Woodlander2","TK_CIV_Woman02_EP1","Damsel3"];
 // Hero Vendor
 menu_Tanny_PMC = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
