@@ -1,3 +1,8 @@
+_this = createCenter west;
+_center_0 = _this;
+
+_group_0 = createGroup _center_0;
+
 _vehicle_0 = objNull;
 if (true) then
 {
@@ -111,15 +116,6 @@ if (true) then
   _this = createVehicle ["Land_Fire_barrel_burning", [16863.83, 5273.3955, 1.2385281], [], 0, "CAN_COLLIDE"];
   _vehicle_2472 = _this;
   _this setPos [16863.83, 5273.3955, 1.2385281];
-};
-
-_vehicle_2480 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_Fire_barrel_burning", [5117.8955, 4845.9063, 5.5583076], [], 0, "CAN_COLLIDE"];
-  _vehicle_2480 = _this;
-  _this setDir -1.248052;
-  _this setPos [5117.8955, 4845.9063, 5.5583076];
 };
 
 _vehicle_2481 = objNull;
@@ -850,6 +846,11 @@ if (true) then
   _this setPos [8260.1289, 15502.21, 7.4863434e-005];
 };
 
+_this = createCenter resistance;
+_center_1 = _this;
+
+_group_1 = createGroup _center_1;
+
 _unit_31 = objNull;
 if (true) then
 {
@@ -889,6 +890,11 @@ if (true) then
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
 _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;};
+
+_this = createCenter civilian;
+_center_2 = _this;
+
+_group_2 = createGroup _center_2;
 
 _unit_55 = objNull;
 if (true) then
@@ -1813,16 +1819,6 @@ if (true) then
   _this setPos [15534.632, 13232.277, 2.4795532e-005];
 };
 
-_vehicle_3169 = objNull;
-if (true) then
-{
-  _this = createVehicle ["FoldChair", [8252.9014, 15493.901, 0.28394058], [], 0, "CAN_COLLIDE"];
-  _vehicle_3169 = _this;
-  _this setDir 448.93024;
-  _this setVehicleInit "this allowDammage false;this enableSimulation false;  ";
-  _this setPos [8252.9014, 15493.901, 0.28394058];
-};
-
 _vehicle_3170 = objNull;
 if (true) then
 {
@@ -2224,6 +2220,11 @@ if (true) then
   _this setDir 303.5423;
   _this setPos [12422.519, 5079.1973, -0.21555267];
 };
+
+_this = createCenter east;
+_center_3 = _this;
+
+_group_3 = createGroup _center_3;
 
 _unit_172 = objNull;
 if (true) then
