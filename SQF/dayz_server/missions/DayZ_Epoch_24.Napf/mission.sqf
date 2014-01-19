@@ -1,7 +1,3 @@
-_this = createCenter west;
-_center_0 = _this;
-
-_group_0 = createGroup _center_0;
 
 _vehicle_0 = objNull;
 if (true) then
@@ -846,11 +842,6 @@ if (true) then
   _this setPos [8260.1289, 15502.21, 7.4863434e-005];
 };
 
-_this = createCenter resistance;
-_center_1 = _this;
-
-_group_1 = createGroup _center_1;
-
 _unit_31 = objNull;
 if (true) then
 {
@@ -890,11 +881,6 @@ if (true) then
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
 _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;};
-
-_this = createCenter civilian;
-_center_2 = _this;
-
-_group_2 = createGroup _center_2;
 
 _unit_55 = objNull;
 if (true) then
@@ -2220,11 +2206,6 @@ if (true) then
   _this setDir 303.5423;
   _this setPos [12422.519, 5079.1973, -0.21555267];
 };
-
-_this = createCenter east;
-_center_3 = _this;
-
-_group_3 = createGroup _center_3;
 
 _unit_172 = objNull;
 if (true) then
