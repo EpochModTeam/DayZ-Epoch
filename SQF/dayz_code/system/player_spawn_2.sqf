@@ -20,7 +20,7 @@ while {true} do {
 	_inVehicle = (_refObj != player);
 	// _size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
-	_speed = 	round((_vel distance [0,0,0]) * 3.5);
+	_speed = 	(round((_vel distance [0,0,0]) * 3.5)) min 18;
 	
 	// dayz_areaAffect = _size;
 	
