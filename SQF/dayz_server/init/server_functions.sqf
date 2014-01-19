@@ -757,7 +757,7 @@ server_spawncleanDead = {
 					_deathTime = _x getVariable ["processedDeath", diag_tickTime];
 					if (diag_tickTime - _deathTime > 1800) then {
 						_x call dayz_perform_purge_player;
-						sleep 0.05;
+						sleep 0.025;
 						_delQtyP = _delQtyP + 1;
 					};
 				};
@@ -771,23 +771,23 @@ server_spawncleanDead = {
 	};
 };
 server_cleanupGroups = {
-	if (DZE_DYN_AntiSuck3rd > 3) then { DZE_DYN_GroupCleanup = nil; DZE_DYN_AntiSuck3rd = 0; };
-	if(!isNil "DZE_DYN_GroupCleanup") exitWith {  DZE_DYN_AntiSuck3rd = DZE_DYN_AntiSuck3rd + 1;};
+	if (DZE_DYN_AntiStuck3rd > 3) then { DZE_DYN_GroupCleanup = nil; DZE_DYN_AntiStuck3rd = 0; };
+	if(!isNil "DZE_DYN_GroupCleanup") exitWith {  DZE_DYN_AntiStuck3rd = DZE_DYN_AntiStuck3rd + 1;};
 	DZE_DYN_GroupCleanup = true;
 	{
 		// diag_log ("CLEANUP: CHECKING GROUP WITH " + str(count units _x) + " UNITS");
-		if (count units _x==0) then {
+		if (count units _x == 0) then {
 			deleteGroup _x;
 			// diag_log ("CLEANUP: DELETING A GROUP");
 		};
-		sleep 0.01;
+		sleep 0.001;
 	} forEach allGroups;
 	DZE_DYN_GroupCleanup = nil;
 };
 
 server_checkHackers = {
-	if (DZE_DYN_AntiSuck2nd > 3) then { DZE_DYN_HackerCheck = nil; DZE_DYN_AntiSuck2nd = 0; };
-	if(!isNil "DZE_DYN_HackerCheck") exitWith {  DZE_DYN_AntiSuck2nd = DZE_DYN_AntiSuck2nd + 1;};
+	if (DZE_DYN_AntiStuck2nd > 3) then { DZE_DYN_HackerCheck = nil; DZE_DYN_AntiStuck2nd = 0; };
+	if(!isNil "DZE_DYN_HackerCheck") exitWith {  DZE_DYN_AntiStuck2nd = DZE_DYN_AntiStuck2nd + 1;};
 	DZE_DYN_HackerCheck = true;
 	{
 		if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {
@@ -796,7 +796,7 @@ server_checkHackers = {
 			_x setDamage 1;
 			sleep 0.25;
 		};
-		sleep 0.01;
+		sleep 0.001;
 	} forEach allUnits;
 	DZE_DYN_HackerCheck = nil;
 };
@@ -811,7 +811,7 @@ server_spawnCleanFire = {
 			sleep 0.025;
 			_delQtyFP = _delQtyFP + 1;
 		};
-		sleep 0.01;
+		sleep 0.001;
 	} forEach _missionFires;
 	if (_delQtyFP > 0) then {
 		_qty = count _missionFires;
@@ -820,8 +820,8 @@ server_spawnCleanFire = {
 };
 server_spawnCleanLoot = {
 	private ["_created","_delQty","_nearby","_age","_keep","_qty","_missionObjs","_dateNow"];
-	if (DZE_DYN_AntiSuck > 3) then { DZE_DYN_cleanLoot = nil; DZE_DYN_AntiSuck = 0; };
-	if(!isNil "DZE_DYN_cleanLoot") exitWith {  DZE_DYN_AntiSuck = DZE_DYN_AntiSuck + 1;};
+	if (DZE_DYN_AntiStuck > 3) then { DZE_DYN_cleanLoot = nil; DZE_DYN_AntiStuck = 0; };
+	if(!isNil "DZE_DYN_cleanLoot") exitWith {  DZE_DYN_AntiStuck = DZE_DYN_AntiStuck + 1;};
 	DZE_DYN_cleanLoot = true;
 
 	_missionObjs =  allMissionObjects "ReammoBox";
@@ -846,7 +846,7 @@ server_spawnCleanLoot = {
 				};
 			};
 		};
-		sleep 0.01;
+		sleep 0.001;
 	} forEach _missionObjs;
 	if (_delQty > 0) then {
 		_qty = count _missionObjs;
@@ -877,7 +877,7 @@ server_spawnCleanAnimals = {
 				};
 			};
 		};
-		sleep 0.01;
+		sleep 0.001;
 	} forEach _missonAnimals;
 	if (_delQtyAnimal > 0) then {
 		_qty = count _missonAnimals;

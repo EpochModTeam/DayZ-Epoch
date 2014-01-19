@@ -1,4 +1,4 @@
-disableSerialization;
+DZE_DYN_AntiStuck2nddisableSerialization;
 
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
@@ -534,9 +534,9 @@ if(isServer) then {
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
 	
-	DZE_DYN_AntiSuck = 0;
-	DZE_DYN_AntiSuck2nd = 0;
-	DZE_DYN_AntiSuck3rd = 0;
+	DZE_DYN_AntiStuck = 0;
+	DZE_DYN_AntiStuck2nd = 0;
+	DZE_DYN_AntiStuck3rd = 0;
 
 	if(isNil "dayz_fullMoonNights") then {
 		dayz_fullMoonNights = false;
