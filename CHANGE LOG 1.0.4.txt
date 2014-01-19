@@ -14,6 +14,7 @@
 [ADDED] Global variable to allow building on roads, enabled via mission file. DZE_BuildOnRoads = true  will allow building on roads. Default is false. @dayz10k
 [ADDED] Global variable to set plot pole radius and exclusion zone, enabled via mission file. DZE_PlotPole = [x,y] in the mission file controls the [Radius, Exclusion zone]. 
         Default is DZE_PlotPole = [30,45]. @dayz10k @Skaronator
+[ADDED] Server admins can disable Player Zombies with DZE_PlayerZed = false; (Default DZE_PlayerZed = true;) @Skaronator
 
 [FIXED] Wrong german translation "Holzkiste geöffnet.". @Fank @vbawol
 [FIXED] Fix medical actions in vehicles. @icomrade
