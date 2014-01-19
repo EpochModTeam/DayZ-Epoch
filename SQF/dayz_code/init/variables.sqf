@@ -529,6 +529,9 @@ DZE_Lock_Door = "";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
 
 if(isServer) then {
+	if (isNil "DZE_PlayerZed") then {
+		DZE_PlayerZed = true;
+	};
 	dayz_players = [];
 	DZEMaintainCache = [];
 	dead_bodyCleanup = [];
