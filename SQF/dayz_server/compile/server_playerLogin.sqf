@@ -91,7 +91,11 @@ if (!_isNew) then {
 	};
 	
 } else {
-	_isInfected =	_primary select 3;
+	if (DZE_PlayerZed) then {
+		_isInfected = _primary select 3;
+	} else {
+		_isInfected = 0;
+	};
 	_model =		_primary select 4;
 	_hiveVer =		_primary select 5;
 	
@@ -103,6 +107,7 @@ if (!_isNew) then {
 		};
 	};
 
+	
 	//Record initial inventory only if not player zombie 
 	if(_isInfected != 1) then {
 		_config = (configFile >> "CfgSurvival" >> "Inventory" >> "Default");
