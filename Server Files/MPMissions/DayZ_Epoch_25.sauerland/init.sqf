@@ -25,7 +25,7 @@ spawnArea= 2000; // Default = 1500
 // 
 MaxVehicleLimit = 300; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
-dayz_MapArea = 25000; // Default = 10000
+dayz_MapArea = 22000; // Default = 10000
 
 dayz_minpos = -1000; 
 dayz_maxpos = 26000;
