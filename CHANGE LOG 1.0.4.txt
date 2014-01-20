@@ -1,6 +1,5 @@
-
-[NEW] Napf Island by #momo# now included by default. Big thanks to Momo for the permission. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
-[NEW] Sauerland Map by falconsan - http://www.s6computer.de/
+[NEW] Napf Island with permission from #momo# now included by default. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
+[NEW] Sauerland Map with permission from falconsan now included by default. http://www.s6computer.de/
 
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 [NEW] Optimized Server/Client Communication with PVS+PVC methods from DayZ Mod 1.8. @Skaronator
