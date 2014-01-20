@@ -1,11 +1,12 @@
+
+[NEW] Napf Island by #momo# now included by default. Big thanks to Momo for the permission. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
+[NEW] Sauerland Map by falconsan - http://www.s6computer.de/
+
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 [NEW] Optimized Server/Client Communication with PVS+PVC methods from DayZ Mod 1.8. @Skaronator
-[NEW] Updated Hive Dll to latest from rajkosto and added custom call to update the datestamp of base objects. See notes below. @Tansien
+[NEW] Updated Hive Dll to latest from rajkosto and added custom child 396,397 call to update the datestamp of base objects. *See notes below! @Tansien @vbawol
 [NEW] Maintain Area should work now much better. The Server update the Object itself and doesnt remove and rebuild it anymore. @Skaronator
 
-
-[ADDED] Napf Island by #momo# now included by default. Big thanks to Momo for the permission. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
-[ADDED] Sauerland Map by falconsan - http://www.s6computer.de/
 [ADDED] New enterable building added for Chernarus and other maps.  @Sequisha
 [ADDED] Allow Admins To Customize Loot Spawn Timer using DZE_LootSpawnTimer via init.sqf. Default: 10 @SGanthony
 [ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true will look for loot configs via missionConfigFile. @vbawol
