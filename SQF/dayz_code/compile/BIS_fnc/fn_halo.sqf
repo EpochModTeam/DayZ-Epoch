@@ -170,7 +170,7 @@ if (typename _this == typename objnull) then {
 			//--- End
 			player removeaction bis_fnc_halo_action;
 			(finddisplay 46) displayremoveeventhandler ["keydown",bis_fnc_halo_keydown_eh];
-			// ppeffectdestroy bis_fnc_halo_ppRadialBlur;
+			ppeffectdestroy bis_fnc_halo_ppRadialBlur;
 			deletevehicle bis_fnc_halo_clouds;
 
 			bis_fnc_halo_clouds = nil;
