@@ -2898,6 +2898,16 @@ class CfgVehicles {
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"ItemLightBulb",1}};
 	};
+	class Land_Misc_Scaffolding;
+	class Scaffolding_DZ: Land_Misc_Scaffolding
+	{
+		armor = 100;
+		destrType = "DestructBuilding"; 
+		scope = 2;
+		offset[] = {0,2.5,0};
+		displayName = "Scaffolding";
+		vehicleClass = "Fortifications";
+	};
 	class WoodGate_DZ: BuiltItems
 	{
 		scope = 2;
