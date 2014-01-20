@@ -8,7 +8,7 @@ _projectile = 	_this select 6;
 //Alert Nearby
 _audible = getNumber (configFile >> "CfgAmmo" >> _ammo >> "audibleFire");
 _caliber = getNumber (configFile >> "CfgAmmo" >> _ammo >> "caliber");
-_distance = round(_audible * 10 * _caliber);
+_distance = round(_audible * 20 * _caliber);
 
 dayz_disAudial = _distance;
 dayz_firedCooldown = time;
