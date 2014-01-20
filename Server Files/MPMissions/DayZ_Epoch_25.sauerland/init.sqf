@@ -7,7 +7,7 @@ cutText ["","BLACK OUT"];
 enableSaving [false, false];
 
 //REALLY IMPORTANT VALUES
-dayZ_instance =	24;				//The instance
+dayZ_instance =	25;				//The instance
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
