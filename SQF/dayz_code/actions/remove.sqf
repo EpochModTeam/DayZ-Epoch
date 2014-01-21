@@ -32,6 +32,7 @@ _isDestructable = _obj isKindOf "BuiltItems";
 _isWreck = _objType in DZE_isWreck;
 _isRemovable = _objType in DZE_isRemovable;
 _isWreckBuilding = _objType in DZE_isWreckBuilding;
+_isMine = _objType in ["Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck"];
 _isModular = _obj isKindOf "ModularItems";
 
 _limit = 3;
@@ -201,6 +202,14 @@ if (_proceed) then {
 		};
 
 		_radius = 1;
+
+		if (_isMine) then {
+			if((random 10) <= 4) then {
+				_gems = ["ItemTopaz","ItemObsidian","ItemSapphire","ItemAmethyst","ItemEmerald","ItemCitrine","ItemRuby"];
+				_gem = _gems select (floor(random (count _gems)));
+				_selectedRemoveOutput set [(count _selectedRemoveOutput),[_gem,1]];
+			};
+		};
 
 		// give refund items
 		if((count _selectedRemoveOutput) > 0 and !_preventRefund) then {
