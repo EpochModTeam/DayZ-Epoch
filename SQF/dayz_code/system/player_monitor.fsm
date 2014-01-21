@@ -1069,7 +1069,7 @@ class FSM
        "_playerObjName = format[""player%1"",_playerUID];" \n
        "call compile format[""player%1 = player;"",_playerUID];" \n
        "////diag_log (format[""player%1 = player"",_playerUID]);" \n
-       "publicVariable _playerObjName;" \n
+       "publicVariableServer _playerObjName;" \n
        "" \n
        "//_state = player getVariable[""state"",[]];" \n
        "_currentWpn = """";" \n
