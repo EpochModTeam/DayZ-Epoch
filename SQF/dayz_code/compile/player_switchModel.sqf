@@ -159,7 +159,7 @@ if (_tagSetting) then {
 _playerUID = getPlayerUID player;
 _playerObjName = format["player%1",_playerUID];
 call compile format["%1 = player;",_playerObjName];
-publicVariable _playerObjName; //Outcommit in DayZ 1.8 No clue for what this is - Skaronator
+publicVariableServer _playerObjName; //Outcommit in DayZ 1.8 No clue for what this is - Skaronator
 	
 //melee check
 _wpnType = primaryWeapon player;
