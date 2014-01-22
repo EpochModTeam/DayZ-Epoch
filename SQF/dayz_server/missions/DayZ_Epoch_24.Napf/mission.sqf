@@ -1,4 +1,3 @@
-
 _vehicle_0 = objNull;
 if (true) then
 {
@@ -1007,10 +1006,10 @@ if (true) then
 _vehicle_2798 = objNull;
 if (true) then
 {
-  _this = createVehicle ["FoldTable", [12427.277, 5059.9443, 0.1604715], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["FoldTable", [12422.474, 5059.666, 0.24151585], [], 0, "CAN_COLLIDE"];
   _vehicle_2798 = _this;
-  _this setDir -71.64888;
-  _this setPos [12427.277, 5059.9443, 0.1604715];
+  _this setDir -148.10825;
+  _this setPos [12422.474, 5059.666, 0.24151585];
 };
 
 _unit_82 = objNull;
@@ -1287,9 +1286,9 @@ if (true) then
 _unit_121 = objNull;
 if (true) then
 {
-  _this = createAgent ["GUE_Commander", [12428.072, 5059.8018, 0.15634714], [], 0, "CAN_COLLIDE"];
+  _this = createAgent ["GUE_Commander", [12421.825, 5058.9873, 0.15634714], [], 0, "CAN_COLLIDE"];
   _unit_121 = _this;
-  _this setDir -84.397575;
+  _this setDir 24.803446;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;
 _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;};
@@ -2081,24 +2080,6 @@ if (true) then
   _this setPos [15523.733, 13214.894, 0.023783559];
 };
 
-_vehicle_3264 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_HBarrier3_DZ", [15479.982, 13233.829, -0.0001707077], [], 0, "CAN_COLLIDE"];
-  _vehicle_3264 = _this;
-  _this setDir -165.13568;
-  _this setPos [15479.982, 13233.829, -0.0001707077];
-};
-
-_vehicle_3266 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Land_HBarrier3_DZ", [15492.913, 13229.889, 0.0001783371], [], 0, "CAN_COLLIDE"];
-  _vehicle_3266 = _this;
-  _this setDir 11.870488;
-  _this setPos [15492.913, 13229.889, 0.0001783371];
-};
-
 _vehicle_3269 = objNull;
 if (true) then
 {
@@ -2539,5 +2520,120 @@ if (true) then
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
   _this setUnitAbility 0.60000002;
 _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;};
+
+_vehicle_3467 = objNull;
+if (true) then
+{
+  _this = createVehicle ["HeliHEmpty", [6780.2842, 16963.049, 0.029153228], [], 0, "CAN_COLLIDE"];
+  _vehicle_3467 = _this;
+  _this setPos [6780.2842, 16963.049, 0.029153228];
+};
+
+_vehicle_3468 = objNull;
+if (true) then
+{
+  _this = createVehicle ["HeliHEmpty", [16871.145, 5268.6265, 0.15640032], [], 0, "CAN_COLLIDE"];
+  _vehicle_3468 = _this;
+  _this setPos [16871.145, 5268.6265, 0.15640032];
+};
+
+_vehicle_3469 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_HBarrier3", [15478, 13234.252, 0.00020027161], [], 0, "CAN_COLLIDE"];
+  _vehicle_3469 = _this;
+  _this setDir 21.200712;
+  _this setPos [15478, 13234.252, 0.00020027161];
+};
+
+_vehicle_3471 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_HBarrier3", [15493.096, 13230.274, 3.9577484e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3471 = _this;
+  _this setDir 11.764855;
+  _this setPos [15493.096, 13230.274, 3.9577484e-005];
+};
+
+_vehicle_3474 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Misc_Cargo1E_EP1", [12427.667, 5063.4287], [], 0, "CAN_COLLIDE"];
+  _vehicle_3474 = _this;
+  _this setDir 119.37385;
+  _this setPos [12427.667, 5063.4287];
+};
+
+_vehicle_3476 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Misc_Cargo1E_EP1", [12418.428, 5079.4175, 7.6293945e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3476 = _this;
+  _this setDir 108.66718;
+  _this setPos [12418.428, 5079.4175, 7.6293945e-005];
+};
+
+_vehicle_3478 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Misc_Cargo1E_EP1", [12412.728, 5082.168], [], 0, "CAN_COLLIDE"];
+  _vehicle_3478 = _this;
+  _this setDir 128.49065;
+  _this setPos [12412.728, 5082.168];
+};
+
+_vehicle_3480 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Misc_Cargo1E_EP1", [12408.585, 5086.8306, 9.1552734e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3480 = _this;
+  _this setDir 129.75304;
+  _this setPos [12408.585, 5086.8306, 9.1552734e-005];
+};
+
+_vehicle_3482 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Misc_Cargo1E_EP1", [12397.977, 5080.5156, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3482 = _this;
+  _this setDir 38.219521;
+  _this setPos [12397.977, 5080.5156, -3.0517578e-005];
+};
+
+_vehicle_3484 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Misc_Cargo1E_EP1", [12394.144, 5073.9937, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3484 = _this;
+  _this setDir 29.287943;
+  _this setPos [12394.144, 5073.9937, -3.0517578e-005];
+};
+
+_vehicle_3487 = objNull;
+if (true) then
+{
+  _this = createVehicle ["Land_Misc_Cargo1E_EP1", [12428.877, 5068.5962, -6.1035156e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3487 = _this;
+  _this setDir 6.9263525;
+  _this setPos [12428.877, 5068.5962, -6.1035156e-005];
+};
+
+_vehicle_3489 = objNull;
+if (true) then
+{
+  _this = createVehicle ["LADAWreck", [12424.456, 5067.0337, 3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3489 = _this;
+  _this setDir 73.666336;
+  _this setPos [12424.456, 5067.0337, 3.0517578e-005];
+};
+
+_vehicle_3490 = objNull;
+if (true) then
+{
+  _this = createVehicle ["FlagCarrierUSA_EP1", [12799.145, 5284.9287, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_3490 = _this;
+  _this setDir 79.900551;
+  _this setPos [12799.145, 5284.9287, -3.0517578e-005];
+};
 
 processInitCommands;
