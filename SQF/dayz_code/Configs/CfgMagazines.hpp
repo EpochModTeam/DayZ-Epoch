@@ -1121,7 +1121,7 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = "10oz Gold";
-		model = "\z\addons\dayz_epoch\models\gold_bar_10oz.p3d";
+		model = "\z\addons\dayz_epoch\models\gold_stack.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_10oz_CA.paa";
 		descriptionShort = "10oz Gold Bar";
 		class ItemActions
@@ -1166,7 +1166,7 @@ class CfgMagazines {
 		count = 1;
 		type = 256;
 		displayName = "10oz Silver";
-		model = "\z\addons\dayz_epoch\models\silver_bar_10oz.p3d";
+		model = "\z\addons\dayz_epoch\models\silver_stack.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_10oz_CA.paa";
 		descriptionShort = "10oz Silver Bar";
 		class ItemActions
