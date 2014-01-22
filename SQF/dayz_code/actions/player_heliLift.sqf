@@ -1,4 +1,4 @@
-private["_action","_liftHeli","_vehicle","_onLadder","_liftUseTime","_dis","_sfx","_liftUsageTime","_animState","_started","_finished","_moved","_attached","_hasAttached","_animState","_isMedic","_posL","_posC","_height"];
+private ["_action","_liftHeli","_vehicle","_onLadder","_liftUseTime","_dis","_sfx","_liftUsageTime","_animState","_started","_finished","_moved","_attached","_hasAttached","_isMedic","_posL","_posC","_height"];
 
 _action = _this select 3;
 _liftHeli = _action select 0;
@@ -33,8 +33,8 @@ while {r_doLoop} do {
 	_animState = animationState player;
 	_isMedic = ["medic",_animState] call fnc_inString;
 	
-	_posL = getPos _x;
-	_posC = getPos _cursorTarget;
+	_posL = getPos _liftHeli;
+	_posC = getPos _vehicle;
 	_height = (_posL select 2) - (_posC select 2);
 	if(_height < 20) then {
 		if(((abs((_posL select 0) - (_posC select 0))) < 10) and ((abs((_posL select 1) - (_posC select 1))) < 10)) then {
