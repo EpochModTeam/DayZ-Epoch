@@ -480,6 +480,12 @@ if(isNil "DZE_LootSpawnTimer") then {
         DZE_LootSpawnTimer = 10;
 };
 
+// needed on server
+if(isNil "DZE_PlotPole") then {
+	DZE_PlotPole = [30,45];
+};
+DZE_maintainRange = ((DZE_PlotPole select 0)+20);
+
 DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
 
 /*
@@ -508,6 +514,7 @@ DZE_LockableStorage = ["VaultStorage","VaultStorageLocked","LockboxStorageLocked
 DZE_LockedStorage = ["VaultStorageLocked","LockboxStorageLocked"];
 DZE_UnLockedStorage = ["VaultStorage","LockboxStorage"];
 DZE_ExtraMaintain = ["LightPole_DZ"];
+DZE_maintainClasses = ["ModularItems", "DZE_Housebase"] + DZE_ExtraMaintain;
 DZE_DoorsLocked = ["Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_WoodDoorLocked","CinderWallDoorLocked_DZ","CinderWallDoorSmallLocked_DZ"];
 
 // List of removable items that require crowbar
@@ -669,10 +676,6 @@ if(!isDedicated) then {
 	if(isNil "DZE_requireplot") then {
 		DZE_requireplot = 1;
 	};
-	if(isNil "DZE_PlotPole") then {
-		DZE_PlotPole = [30,45];
-	};
-	
 	
 	DZE_AntiWallCounter = 0;
 
