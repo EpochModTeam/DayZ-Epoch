@@ -73,6 +73,11 @@ if(_finished) then {
 		if(((getPos _liftHeli) select 2) < 5) then {
 			r_doLoop = false;
 		};
+
+		if ((count (crew _vehicle)) > 0) then {
+			r_doLoop = false;
+		};
+
 		if(typeName _attached == typeName false) then {
 			r_doLoop = false;
 		};
