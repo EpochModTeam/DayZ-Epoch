@@ -10,8 +10,9 @@ player removeAction s_player_maintain_area_preview;
 s_player_maintain_area_preview = 1;
 
 _target = cursorTarget; // Plastic_Pole_EP1_DZ
-_objectClasses = ["ModularItems", "DZE_Housebase"] + DZE_ExtraMaintain;
-_range = ((DZE_PlotPole select 0)+20); // set the max range for the maintain area
+
+_objectClasses = DZE_maintainClasses;
+_range = DZE_maintainRange; // set the max range for the maintain area
 _objects = nearestObjects [_target, _objectClasses, _range];
 
 //filter to only those that have 10% damage
@@ -77,15 +78,9 @@ switch _option do {
 
 			// all required items removed from player gear
 			if (_tobe_removed_total == _removed_total) then {
-				_uniqueID = random(99999);
-				_retry = 0;
 				cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
-				while {3 >= _retry} do { // 3 Times
-					_retry = _retry + 1;
-					PVDZE_maintainArea = [player,1,[_target, _objectClasses, _range],_uniqueID];
-					publicVariableServer "PVDZE_maintainArea";
-					sleep 20;
-				};
+				PVDZE_maintainArea = [player,1,_target];
+				publicVariableServer "PVDZE_maintainArea";	
 			} else {
 				{player addMagazine _x;} forEach _temp_removed_array;
 				cutText [format[(localize "STR_EPOCH_ACTIONS_5"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
