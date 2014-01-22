@@ -80,7 +80,7 @@ if (_proceed) then {
 	// all parts removed proceed
 	if (_tobe_removed_total == _removed_total) then {
 
-		cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
+		cutText [format[(localize "STR_EPOCH_ACTIONS_4"), 1], "PLAIN DOWN", 5];
 		PVDZE_maintainArea = [player,2,_obj];
 		publicVariableServer "PVDZE_maintainArea";
 
