@@ -13,7 +13,7 @@ if (isServer) then {
 	_this removeAllEventHandlers "GetOut";
 	_this removeAllEventHandlers "GetIn";
 	_this addEventHandler ["GetOut", {[(_this select 0),"all"] call server_updateObject;}];
-	_this addEventHandler ["GetIn", {[(_this select 0),"all"] call server_updateObject;}];
+	_this addEventHandler ["GetIn", {[(_this select 0),"all"] call server_updateObject; _this call server_checkIfTowed;}];
 };
 
 //diag_log(format["%1: all EH reset for %2", __FILE__, _this]);

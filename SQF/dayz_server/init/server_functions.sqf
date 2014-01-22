@@ -180,6 +180,18 @@ server_hiveReadWriteLarge = {
 	_resultArray
 };
 
+server_checkIfTowed = {
+	private ["_vehicle","_player","_attached"];
+	if (DZE_HeliLift) then {
+		_vehicle = 	_this select 0;
+		_player = 	_this select 2;
+		_attached = _vehicle getVariable["attached",false];
+		if ((typeName _attached == "OBJECT")) then {
+			_player action [ "eject", _vehicle)];
+		};
+	};
+};
+
 server_characterSync = {
 	private ["_characterID","_playerPos","_playerGear","_playerBackp","_medical","_currentState","_currentModel","_key"];
 	_characterID = 	_this select 0;	
