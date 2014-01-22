@@ -2881,7 +2881,7 @@ class CfgMagazines {
 		displayName = "Wood Wall";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		descriptionShort = "Wall constucted out of plywood and lumber.";
 		weight = 25;
 		class ItemActions
 		{
@@ -2933,7 +2933,7 @@ class CfgMagazines {
 		displayName = "Wood Wall 1/3";
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-		descriptionShort = "Wood Floor can also be used as a ceiling.";
+		descriptionShort = "Third wall constucted out of plywood and lumber.";
 		weight = 7;
 		class ItemActions
 		{
