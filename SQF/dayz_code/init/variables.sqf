@@ -386,7 +386,21 @@ DZE_HeliAllowTowFrom = [
 ];
 
 DZE_HeliAllowToTow = [
-	"Car"
+	"hilux1_civil_1_open",
+	"HMMWV_Base",
+	"Lada_base",
+	"Offroad_DSHKM_base",
+	"Pickup_PK_base",
+	"SkodaBase",
+	"tractor",
+	"VWGolf",
+	"Volha_TK_CIV_Base_EP1",
+	"S1203_TK_CIV_EP1",
+	"SUV_Base_EP1",
+	"ArmoredSUV_Base_PMC",
+	"UAZ_Base",
+	"LandRover_Base",
+	"Ship"
 ];
 
 //Initialize Zombie Variables
@@ -563,6 +577,10 @@ if(isServer) then {
 	
 	if(isNil "DZE_CleanNull") then {
 		DZE_CleanNull = false;
+	};
+
+	if(isNil "DZE_HeliLift") then {
+		DZE_HeliLift = true;
 	};
 	
 	
