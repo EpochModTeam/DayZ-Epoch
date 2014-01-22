@@ -457,19 +457,19 @@ class SUV_TK_CIV_EP1_DZE2: SUV_TK_CIV_EP1_DZE1
 		};
 		class HitGlass1: HitGlass1
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass2: HitGlass2
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass3: HitGlass3
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 		class HitGlass4: HitGlass4
 		{
-			armor = 0.1;
+			armor = 2;
 		};
 	};
 };
