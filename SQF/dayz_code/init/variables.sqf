@@ -540,7 +540,6 @@ if(isServer) then {
 		DZE_PlayerZed = true;
 	};
 	dayz_players = [];
-	DZEMaintainCache = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
 	
