@@ -274,6 +274,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			} forEach DZE_HeliAllowToTow;
 		};
 
+		//diag_log format["CREW: %1 ALLOW: %2",(count (crew _cursorTarget)),_allowTow];
+
 		if (_allowTow) then {
 			_liftHelis = nearestObjects [player, DZE_HeliAllowTowFrom, 15];
 			{
@@ -291,6 +293,9 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 				};
 			} forEach _liftHelis;
 		};
+
+		//diag_log format["HELI: %1 TARGET: %2",_found,_cursorTarget];
+
 		_attached = _cursorTarget getVariable["attached",false];
 		if(_found and _allowTow and _canDo and !locked _cursorTarget and !_isPZombie and (typeName _attached != "OBJECT")) then {
 			if (s_player_heli_lift < 0) then {
