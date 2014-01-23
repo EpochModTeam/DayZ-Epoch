@@ -1463,7 +1463,15 @@ class CfgMagazines {
 				output[] = {{"metal_panel_kit",1}};
 				input[] = {{"ItemPole",4},{"ItemTankTrap",4}};
 			};
-			
+			class Crafting3
+			{
+				text = $STR_EPOCH_PLAYER_305;
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemCrowbar"};
+				output[] = {{"ItemScaffoldingKit",1}};
+				input[] = {{"ItemPole",4},{"ItemTankTrap",2},{"PartWoodLumber",4}};
+			};
 		};
 	};
 	class ItemGunRackKit: CA_Magazine
@@ -2667,6 +2675,27 @@ class CfgMagazines {
 				require[] = {"ItemToolbox"};
 				create = "FuelPump_DZ";
 				neednearby[] = {"fueltank"};
+			};
+		};
+	};
+	class ItemScaffoldingKit: CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "Scaffolding";
+		descriptionShort = "";
+		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+		weight = 80;
+		class ItemActions
+		{
+			class Build
+			{
+				text = $STR_ACTIONS_BUILD;
+				script = "spawn player_build;";
+				require[] = {"ItemEtool","ItemToolbox"};
+				create = "Scaffolding_DZ";
 			};
 		};
 	};
