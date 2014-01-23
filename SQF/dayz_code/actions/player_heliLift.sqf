@@ -36,6 +36,7 @@ while {r_doLoop} do {
 	_posL = getPos _liftHeli;
 	_posC = getPos _vehicle;
 	_height = (_posL select 2) - (_posC select 2);
+	/*
 	if(_height < 20) then {
 		if(((abs((_posL select 0) - (_posC select 0))) < 10) and ((abs((_posL select 1) - (_posC select 1))) < 10)) then {
 			_moved = true;
@@ -43,6 +44,7 @@ while {r_doLoop} do {
 	} else {
 		_moved = true;
 	};
+	*/
 	
 	if (_isMedic) then {
 		_started = true;
@@ -71,10 +73,6 @@ if(_finished) then {
 		_attached = _vehicle getVariable["attached",false];
 	
 		if(((getPos _liftHeli) select 2) < 5) then {
-			r_doLoop = false;
-		};
-
-		if ((count (crew _vehicle)) > 0) then {
 			r_doLoop = false;
 		};
 

@@ -493,6 +493,9 @@ if(isNil "DZE_MissionLootTable") then {
 if(isNil "DZE_LootSpawnTimer") then {
         DZE_LootSpawnTimer = 10;
 };
+if(isNil "DZE_HeliLift") then {
+	DZE_HeliLift = true;
+};
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
