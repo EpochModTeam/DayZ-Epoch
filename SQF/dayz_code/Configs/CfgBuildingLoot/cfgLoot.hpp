@@ -831,7 +831,7 @@ class CfgLoot {
 			"M24_des_EP1",
 			"M24",
 			"BAF_LRR_scoped",
-			"M107_DZ"
+			"M107_DZ",
 			"KSVK_DZE",
 			"VSS_vintorez",
 			"SCAR_H_LNG_Sniper_SD",
