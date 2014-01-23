@@ -698,7 +698,7 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "sniperrifles","cfglootweapon" },
 			{ "militaryshotguns","cfglootweapon" },
-			{ "submachinegun","cfglootweapon" },c
+			{ "submachinegun","cfglootweapon" },
 			{ "AmmoBoxSmall_556","object" },
 			{ "AmmoBoxSmall_762","object" },
 			{ "Binocular","weapon" },
