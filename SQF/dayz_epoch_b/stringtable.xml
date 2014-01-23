@@ -5774,7 +5774,7 @@
 		  <!-- <Spanish></Spanish> -->
 		  <!-- <Dutch></Dutch> -->
 		  <!-- <French></French> -->
-		  <!-- <Czech></Czech> -->
+		  <Czech>Vytvořit Lešení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 		  <Original>Repair Vehicle</Original>
