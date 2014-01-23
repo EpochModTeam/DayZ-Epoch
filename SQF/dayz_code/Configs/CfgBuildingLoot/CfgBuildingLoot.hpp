@@ -685,6 +685,91 @@ class CfgBuildingLoot {
 			0.03
 		};
 	};
+	class IndustrialMilitary: Default {
+		zombieChance = 0.4;
+		maxRoaming = 6;
+		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman","z_soldier","z_soldier_heavy","z_policeman","z_worker1","z_worker2","z_worker3"};
+		lootChance = 0.5;
+		lootPos[] = {};
+		itemType[] = {
+			{ "pistols","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" },
+			{ "PartGeneric","magazine" },
+			{ "sniperrifles","cfglootweapon" },
+			{ "shotgunsingleshot","cfglootweapon" },
+			{ "ItemGenerator","magazine" },
+			{ "submachinegun","cfglootweapon" },
+			{ "PartWheel","magazine" },
+			{ "Binocular","weapon" },
+			{ "ItemFlashlightRed","military" },
+			{ "ItemKnife","military" },
+			{ "ItemGPS","weapon" },
+			{ "PartVRotor","magazine" },
+			{ "PartFueltank","magazine" },
+			{ "PartEngine","magazine" },
+			{ "PartGlass","magazine" },
+			{ "militarybackpacks","backpack" },
+			{ "","medical" },
+			{ "","generic" },
+			{ "","military" },
+			{ "ItemEtool","weapon" },
+			{ "ItemSandbag","magazine" },
+			{ "ItemFuelBarrelEmpty","magazine" },
+			{ "ItemFuelPump","magazine" },
+			{ "machineguns","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.02,
+			0.05,
+			0.03,
+			0.01,
+			0.05,
+			0.01,
+			0.05,
+			0.02,
+			0.01,
+			0.03,
+			0.04,
+			0.01,
+			0.01,
+			0.03,
+			0.04,
+			0.05,
+			0.03,
+			0.05,
+			0.25,
+			0.07,
+			0.03,
+			0.02,
+			0.03,
+			0.01,
+			0.01
+		};
+		itemTypeSmall[] = {
+			{ "pistols","cfglootweapon" },
+			{ "Binocular","weapon" },
+			{ "ItemFlashlightRed","weapon" },
+			{ "ItemKnife","weapon" },
+			{ "ItemGPS","weapon" },
+			{ "","medical" },
+			{ "","generic" },
+			{ "","military" },
+			{ "submachinegun","cfglootweapon" },
+			{ "ItemEtool","weapon" }
+		};
+		itemChanceSmall[] =	{
+			0.12,
+			0.05,
+			0.03,
+			0.04,
+			0.02,
+			0.02,
+			0.09,
+			0.34,
+			0.26,
+			0.03
+		};
+	};
 	class MilitarySpecial: Default {
 		zombieChance = 0.4;
 		minRoaming = 2;
