@@ -1715,6 +1715,7 @@ INSERT INTO `Traders_DATA` VALUES(7554, '["MG36_camo",3]', 250, '[1,"ItemGoldBar
 INSERT INTO `Traders_DATA` VALUES(7555, '["bizon",3]', 250, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 459, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7556, '["M4A1_HWS_GL_SD_Camo",3]', 250, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 459, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7557, '["KSVK_DZE",3]', 250, '[3,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 459, 'trade_weapons');
+INSERT INTO `Traders_DATA` VALUES(7558, '["HandGrenade_east",1]', 257, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 529, 'trade_items');
 
 -- --------------------------------------------------------
 
@@ -2142,6 +2143,7 @@ INSERT INTO `trader_items` VALUES(917, 'PartPlankPack', 1, 'Wholesale Crates', '
 INSERT INTO `trader_items` VALUES(918, 'KSVK_DZE', 3, 'Rifle Sniper', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(952, 'M4A1_HWS_GL_SD_Camo', 3, 'Rifle', 'trade_items');
 INSERT INTO `trader_items` VALUES(965, 'M249_m145_EP1_DZE', 3, 'Machine Gun', 'trade_weapons');
+INSERT INTO `trader_items` VALUES(966, 'HandGrenade_east', 1, 'Grenades', 'trade_items');
 
 -- --------------------------------------------------------
 
