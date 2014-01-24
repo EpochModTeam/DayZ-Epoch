@@ -75,3 +75,8 @@ UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar",1]' WHERE `item`='["ItemTrout
 UPDATE `Traders_DATA` SET `buy`= '[3,"ItemGoldBar",1]' WHERE `item`='["ItemSeaBassCooked",1]';
 UPDATE `Traders_DATA` SET `buy`= '[4,"ItemGoldBar",1]' WHERE `item`='["ItemTunaCooked",1]';
 UPDATE `Traders_DATA` SET `buy`= '[1,"ItemSilverBar10oz",1]' WHERE `item`='["FoodMRE",1]';
+
+-- ----------------------------
+-- WEAPON UPDATE
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item`= '["M249_EP1_DZ",3]' WHERE `item`='["M249_DZ",3]';
