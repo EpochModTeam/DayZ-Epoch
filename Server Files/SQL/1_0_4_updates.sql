@@ -30,6 +30,13 @@ UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar",1]' WHERE `sell`='[2,"Item
 UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar",1]' WHERE `sell`='[1,"ItemCopperBar",1]';
 
 -- ----------------------------
++-- Set any buy value of 30 silver to 1 gold
++-- ----------------------------
++UPDATE `Traders_DATA` SET `buy`= '[1,"ItemGoldBar",1]' WHERE `buy`='[3,"ItemSilverBar10oz",1]]';
++
++-- ----------------------------
+
+-- ----------------------------
 -- PRICE REVIEW
 -- ----------------------------
 
