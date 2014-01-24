@@ -4,24 +4,13 @@ _class 			= _this;
 _position 		= getPosATL player;
 _dir 			= getDir player;
 _currentAnim 	= animationState player;
-//_currentCamera	= cameraView;
 
 _tagSetting = player getVariable["DZE_display_name",false];
 
 //Get PlayerID
-_playerUID = "";
-if (count playableUnits == 0 and isServer) then {
-	//In Single Player
-	isSinglePlayer = true;
-	player sidechat "Single player Mode detected!";
-	//_id = [42,"SinglePlayer"] spawn server_onPlayerConnect;
-	_playerUID = "42";
-} else {
-	_playerUID = getPlayerUID player;
-};
+_playerUID = getPlayerUID player;
 
 //BackUp Weapons and Mags
-
 _weapons 	= weapons player;
 _magazines	= call player_countmagazines; //magazines player;
 
@@ -45,15 +34,6 @@ _muzzles = getArray(configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
 if (count _muzzles > 1) then {
 	_currentWpn = currentMuzzle player;
 };
-
-//Debug Message
-/*
-diag_log "Attempting to switch model";
-diag_log str(_weapons);
-diag_log str(_magazines);
-diag_log (str(_backpackWpn));
-diag_log (str(_backpackMag));
-*/
 
 //Secure Player for Transformation
 player setPosATL dayz_spawnPos;
@@ -123,14 +103,6 @@ if(_secweapon != (secondaryWeapon _newUnit) && _secweapon != "") then {
 	_newUnit addWeapon _secweapon;		
 };
 
-//Debug Message
-/*
-diag_log "Swichtable Unit Created. Equipment:";
-diag_log str(weapons _newUnit);
-diag_log str(magazines _newUnit);
-diag_log str(getWeaponCargo unitBackpack _newUnit);
-diag_log str(getMagazineCargo unitBackpack _newUnit);
-*/
 //Make New Unit Playable
 addSwitchableUnit _newUnit;
 setPlayable _newUnit;
@@ -144,7 +116,6 @@ deleteVehicle _oldUnit;
 
 //Move player inside
 
-//	player switchCamera = _currentCamera;
 if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 [objNull, player, rSwitchMove,_currentAnim] call RE;
 //dayz_originalPlayer attachTo [_newUnit];

@@ -3,10 +3,6 @@ private ["_nul","_result","_pos","_wsDone","_dir","_block","_isOK","_countr","_o
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 
-if ((count playableUnits == 0) and !isDedicated) then {
-	isSinglePlayer = true;
-};
-
 waitUntil{initialized}; //means all the functions are now defined
 
 diag_log "HIVE: Starting";
