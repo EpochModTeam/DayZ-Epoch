@@ -21,6 +21,7 @@
         Default is DZE_PlotPole = [30,45]. @dayz10k @Skaronator
 [ADDED] Server admins can disable Player Zombies with DZE_PlayerZed = false; (Default DZE_PlayerZed = true;) @Skaronator
 
+[FIXED] Anti-Teleport Log System. @Skaronator
 [FIXED] Wrong german translation "Holzkiste geöffnet.". @Fank @vbawol
 [FIXED] Fix medical actions in vehicles. @icomrade
 [FIXED] Wrong KSVK class spawning on mass graves. @Skaronator via MGT
