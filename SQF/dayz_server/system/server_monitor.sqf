@@ -56,17 +56,21 @@ if (isServer and isNil "sm_done") then {
 		diag_log ("HIVE: Commence Object Streaming...");
 		_key = format["CHILD:302:%1:", dayZ_instance];
 		_objectCount = _hiveResponse select 1;
+		_bQty = 0;
+		_vQty = 0;
 		for "_i" from 1 to _objectCount do {
 			_hiveResponse = _key call server_hiveReadWriteLarge;
 			//diag_log (format["HIVE dbg %1 %2", typeName _hiveResponse, _hiveResponse]);
 			if ((_hiveResponse select 2) isKindOf "ModularItems") then {
-				_BuildingQueue set [(count _BuildingQueue),_hiveResponse];
+				_BuildingQueue set [_bQty,_hiveResponse];
+				_bQty = _bQty + 1;
 			} else {
-				_objectQueue set [(count _objectQueue),_hiveResponse];
+				_objectQueue set [_vQty,_hiveResponse];
+				_vQty = _vQty + 1;
 			};
 		};
 	};
-	diag_log ("HIVE: got " + str(count(_BuildingQueue)) + " Epoch Objects and " + str(count(_objectQueue)) + " Vehicles");
+	diag_log ("HIVE: got " + str(_bQty) + " Epoch Objects and " + str(_vQty) + " Vehicles");
 
 	// # NOW SPAWN OBJECTS #
 	_totalvehicles = 0;
