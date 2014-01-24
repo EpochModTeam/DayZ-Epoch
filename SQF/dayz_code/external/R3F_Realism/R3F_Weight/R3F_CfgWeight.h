@@ -375,6 +375,10 @@ class CfgWeight
 		{
 			weight = 6.5;
 		};
+		class M249_EP1_DZ
+		{
+			weight = 6.5;
+		};
 		class Mk_48
 		{
 			weight = 8.2;
