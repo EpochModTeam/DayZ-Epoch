@@ -80,3 +80,7 @@ UPDATE `Traders_DATA` SET `buy`= '[1,"ItemSilverBar10oz",1]' WHERE `item`='["Foo
 -- WEAPON UPDATE
 -- ----------------------------
 UPDATE `Traders_DATA` SET `item`= '["M249_EP1_DZ",3]' WHERE `item`='["M249_DZ",3]';
+UPDATE `Character_DATA` SET `Inventory` = REPLACE(`Inventory`, '"M249_DZ"', '"M249_EP1_DZ"') WHERE `Inventory` LIKE '%"M249_DZ"%';
+UPDATE `Character_DATA` SET `Backpack` = REPLACE(`Backpack`, '"M249_DZ"', '"M249_EP1_DZ"') WHERE `Backpack` LIKE '%"M249_DZ"%';
+UPDATE `Character_DATA` SET `CurrentState` = '["","",42,[]]' WHERE `CurrentState` LIKE '%"M249_DZ"%';
+UPDATE `Object_DATA` SET `Inventory` = REPLACE(`Inventory`, '"M249_DZ"', '"M249_EP1_DZ"') WHERE `Inventory` LIKE '%"M249_DZ"%';
