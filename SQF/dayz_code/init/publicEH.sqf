@@ -34,6 +34,23 @@ if (isServer) then {
 	"PVDZE_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
 	"PVDZE_maintainArea" addPublicVariableEventHandler {(_this select 1) spawn server_maintainArea};
 
+	"PVDZE_atp" addPublicVariableEventHandler {
+		_x = _this select 1;
+		if (typeName _x == "STRING") then {
+			diag_log _x;
+		/*} else {
+			_unit = _x select 0;
+			_source = _x select 1;
+			if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {((_source isKindOf "CAManBase") AND {(owner _unit != owner _source)})}) then {
+				diag_log format ["Player %1 hit by %2 %3 from %4 meters",
+					_unit call fa_plr2Str,  _source call fa_plr2Str, _x select 2, _x select 3];
+				if (_unit getVariable["processedDeath", 0] == 0) then {
+					_unit setVariable [ "attacker", name _source ];
+					_unit setVariable [ "noatlf4", diag_ticktime ]; // server-side "not in combat" test, if player is not already dead
+				};
+			};*/
+		};
+	};
 	"PVDZE_plr_Died"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
 	"PVDZE_plr_Save"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
 	"PVDZE_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj};

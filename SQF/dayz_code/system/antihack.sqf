@@ -37,14 +37,7 @@ while {true} do {
 	_topv = 0;
 	_toph = 0;
 
-	while {((typeName player == "OBJECT") AND {((player in playableUnits) AND {(alive player)})})} do {
-		//[-18697.58,379.53012,25815.256]
-		/*
-		if ([getMarkerPos "respawn_west", [0,0,0]] call BIS_fnc_areEqual || !([getMarkerPos "respawn_west", _debug] call BIS_fnc_areEqual)) then {
-			createMarkerLocal ["respawn_west", _debug];
-			"respawn_west" setMarkerType "EMPTY";
-		};
-		*/
+	while {((typeName player == "OBJECT") AND {((player in playableUnits) OR {(alive player)})})} do {
 		_curpos = getPosATL (vehicle player);
 		_distance = _lastpos distance _curpos;
 		_curtime = diag_ticktime;
@@ -79,24 +72,13 @@ while {true} do {
 
 			_terrainHeight = getTerrainHeightASL [_curpos select 0, _curpos select 1];
 
-			/*
-			_differenceCheck = false;
-			_lastPosVar = player getVariable ["lastPos", []];
-			if (count _lastPosVar > 0) then {
-				_differenceCheck = (_lastPosVar distance _lastpos) > _topSpeed;
-			} else {
-				diag_log "LASTPOS RESET";
-			};
-			*/
-
 			_safetyVehicle = vehicle player;
 
 			if (_lastVehicle == vehicle player) then {
 				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 					(vehicle player) setposATL  _lastpos;
-//					atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", getPlayerUID player, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
-					atp = [name player, dayz_characterID, _lastpos, _curPos, getPosATL player];
-					publicVariableServer "atp";
+					PVDZE_atp = [name player, dayz_characterID, _lastpos, _curPos, getPosATL player];
+					publicVariableServer "PVDZE_atp";
 				} else {
 					_lastpos = _curpos;
 					_lastheight = _curheight;
@@ -124,11 +106,5 @@ while {true} do {
 		};
 		sleep 0.25;
 	};
-// 	if (_al1veOnce) then {
-// 		sleep 5; 
-// 		endMission "LOSER";
-// 	}
-// 	else {
-		sleep 0.1;
-// 	};
+	sleep 0.1;
 };
