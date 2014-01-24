@@ -1803,7 +1803,7 @@ class CfgBuildingLoot {
 		itemType[] = {
 			{ "M16A2","weapon" },
 			{ "M16A2GL","weapon" },
-			{ "M249_DZ","weapon" },
+			{ "M249_EP1_DZ","weapon" },
 			{ "M9SD","weapon" },
 			{ "Pecheneg_DZ","weapon"},
 			{ "AK_74","weapon" },

@@ -1003,7 +1003,7 @@ class CfgLoot {
 			"M249_m145_EP1_DZE",
 			"m240_scoped_EP1_DZE",
 			"M240_DZ",
-			"M249_DZ",
+			"M249_EP1_DZ",
 			"Mk_48_DZ"
 		},
 		{
