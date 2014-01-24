@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["Tanny_PMC","Graves","US_Delta_Force_AR_EP1","GUE_Commander","Damsel3","Soldier_MG_PKM_PMC","GUE_Worker2","GUE_Woodlander2","RUS_Soldier2","Drake_Light","GUE_Woodlander3","Soldier_GL_PMC","GUE_Villager3","CIV_EuroWoman01_EP1","Dr_Annie_Baker_EP1","Soldier_MG_PKM_PMC","RUS_Commander","Damsel5","TK_Special_Forces_MG_EP1","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Ins_Woodlander3","Dr_Hladik_EP1","pook_Doc_Bell47","Ins_Woodlander2","TK_CIV_Woman02_EP1","Damsel3"];
+serverTraders = ["Tanny_PMC","US_Delta_Force_AR_EP1","FR_Cooper","RU_Profiteer1","Damsel4","TK_Commander_EP1","Ins_Soldier_AR","RU_Villager1","MVD_Soldier_Marksman","RU_Soldier_Pilot","CIV_EuroMan01_EP1","Ins_Soldier_GL","Rocker2","Profiteer1","RU_Damsel5","Dr_Hladic_EP1","TK_Soldier_Crew_EP1","TK_Soldier_AMG_EP1","Soldier_MG_PMC","RU_Damsel2","GUE_Soldier_MG","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Citizen2_EP1","pook_Doc_Bell47","RU_Doctor"];
 // Hero Vendor
 menu_Tanny_PMC = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
@@ -7,103 +7,121 @@ menu_Tanny_PMC = [
 	"hero"
 ];
 // Ammunition Friendly
-menu_Graves = [
+menu_US_Delta_Force_AR_EP1 = [
 	[["Assault Rifle Ammo",480],["Light Machine Gun Ammo",481],["Pistol Ammo",484],["Shotguns and Single-shot Ammo",573],["Sniper Rifle Ammo",482],["Submachine Gun Ammo",483]],
 	[],
 	"friendly"
 ];
 // Weapons Friendly
-menu_US_Delta_Force_AR_EP1 = [
+menu_FR_Cooper = [
 	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
 	"friendly"
 ];
 // Friendly Vehicles
-menu_GUE_Commander = [
+menu_RU_Profiteer1 = [
 	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
 	[],
 	"friendly"
 ];
-// General Store
-menu_Damsel3 = [
+// Friendly General Store
+menu_Damsel4 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
 	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
-	"neutral"
+	"friendly"
 ];
 // Weapons neutral
-menu_Soldier_MG_PKM_PMC = [
+menu_TK_Commander_EP1 = [
 	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
 // Ammunition Neutral
-menu_GUE_Worker2 = [
+menu_Ins_Soldier_AR = [
 	[["Assault Rifle Ammo",609],["Light Machine Gun Ammo",610],["Pistol Ammo",611],["Shotguns and Single-shot Ammo",613],["Sniper Rifle Ammo",614],["Submachine Gun Ammo",612]],
 	[],
 	"neutral"
 ];
 // Neutral Building/Parts
-menu_GUE_Woodlander2 = [
+menu_RU_Villager1 = [
 	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
 // Bandit Trader
-menu_RUS_Soldier2 = [
+menu_MVD_Soldier_Marksman = [
 	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
 // Aircraft Dealer
-menu_Drake_Light = [
+menu_RU_Soldier_Pilot = [
 	[["Airplanes",517],["Helicopter Unarmed",519]],
 	[],
 	"neutral"
 ];
 // Vehicles Neutral
-menu_GUE_Woodlander3 = [
+menu_CIV_EuroMan01_EP1 = [
 	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
 	[],
 	"neutral"
 ];
 // Black Market Vendor
-menu_Soldier_GL_PMC = [
+menu_Ins_Soldier_GL = [
 	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];
 // Friendly Building/Parts
-menu_GUE_Villager3 = [
+menu_Rocker2 = [
 	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
-// General Store 2
-menu_CIV_EuroWoman01_EP1 = [
+// Neutral Vehicles 2
+menu_Profiteer1 = [
+	[["Bikes and ATV",536],["Buses and Vans",592],["Cargo Trucks",570],["Fuel Trucks",595],["Military Unarmed",599],["Trucks Unarmed",535],["Used Cars",600],["Utility Vehicles",568]],
+	[],
+	"neutral"
+];
+// Neutral General Store
+menu_RU_Damsel5 = [
 	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
 	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
-	"friendly"
+	"neutral"
 ];
 // Medical Supplies
-menu_Dr_Annie_Baker_EP1 = [
+menu_Dr_Hladic_EP1 = [
 	[["Chem-lites/Flares",542],["Medical Supplies",541],["Smoke Grenades",543]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"friendly"
 ];
+// Neutral Weapons 2
+menu_TK_Soldier_Crew_EP1 = [
+	[["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
+	[],
+	"neutral"
+];
+// Neutral Ammo 2
+menu_TK_Soldier_AMG_EP1 = [
+	[["Assault Rifle Ammo",621],["Light Machine Gun Ammo",622],["Pistol Ammo",625],["Shotguns and Single-shot Ammo",623],["Sniper Rifle Ammo",624],["Submachine Gun Ammo",626]],
+	[],
+	"neutral"
+];
 // North Wholesaler
-menu_RUS_Commander = [
+menu_Soldier_MG_PMC = [
 	[["Wholesale",555]],
 	[],
 	"neutral"
 ];
-// General Store 3 
-menu_Damsel5 = [
+// Neutral General Store
+menu_RU_Damsel2 = [
 	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
 	[["ItemCopperBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
-// West Wholesaler
-menu_TK_Special_Forces_MG_EP1 = [
+// South Wholesaler
+menu_GUE_Soldier_MG = [
 	[["Wholesale",636]],
 	[],
 	"neutral"
@@ -114,7 +132,7 @@ menu_TK_Special_Forces_EP1 = [
 	[],
 	"neutral"
 ];
-// Weapons neutral 2
+// Weapons neutral 2 NONEED
 menu_Ins_Soldier_AR = [
 	[["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
 	[],
@@ -132,26 +150,20 @@ menu_Ins_Worker2 = [
 	[],
 	"neutral"
 ];
-// Neutral Building/Parts
-menu_Ins_Woodlander3 = [
+// Neutral Building/Parts 2
+menu_Citizen2_EP1 = [
 	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
 	[],
 	"neutral"
 ];
 // Medical Supplies 2
-menu_Dr_Hladik_EP1 = [
+menu_pook_Doc_Bell47 = [
 	[["Chem-lites/Flares",666],["Medical Supplies",665],["Smoke Grenades",668]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
 ];
-// Boat Trader 2
-menu_Ins_Woodlander2 = [
-	[["Boats Armed",673],["Boats Unarmed",672]],
-	[],
-	"neutral"
-];
 // Medical Supplies 3
-menu_pook_Doc_Bell47 = [
+menu_RU_Doctor = [
 	[["Chem-lites/Flares",669],["Medical Supplies",670],["Smoke Grenades",671]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"

@@ -1173,10 +1173,10 @@ class Mission
 	};
 	class Markers
 	{
-		items=23;
+		items=21;
 		class Item0
 		{
-			position[]={15052.172,259.60745,10748.865};
+			position[]={15177.789,286.18497,11335.177};
 			name="center";
 			type="Empty";
 		};
@@ -1188,7 +1188,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={12728.801,231.66705,6874.6953};
+			position[]={15448.31,216.05495,8465.623};
 			name="spawn0";
 			type="Empty";
 		};
@@ -1200,13 +1200,13 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={19299.434,362.29172,7466.5};
+			position[]={19488.018,384.45441,7461.5806};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={16324.075,208.85855,6865.335};
+			position[]={16453.672,226.4933,6895.9395};
 			name="spawn3";
 			type="Empty";
 		};
@@ -1218,7 +1218,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={15069.24,284.62674,14617.38};
+			position[]={10668.591,229.97134,13320.411};
 			name="spawn5";
 			type="Empty";
 		};
@@ -1230,19 +1230,19 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={11676.81,220.25786,8414.8496};
+			position[]={12104.425,272.61899,8935.666};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={19564.07,283.10489,12743.37};
+			position[]={20209.986,182.53618,14501.083};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={17469.141,171.13065,15216.565};
+			position[]={19478.064,234.17647,12439.542};
 			name="spawn9";
 			type="Empty";
 		};
@@ -1254,22 +1254,22 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={5909.7173,115.08607,20361.992};
+			position[]={15487.767,87,17015.457};
 			name="NeutralTraderCity";
-			text="Trader City Lenzburg";
+			text="Trader City Seedorf";
 			type="mil_circle";
 		};
 		class Item14
 		{
-			position[]={14734.365,238.29318,3099.3501};
+			position[]={24713.129,409.62686,21741.785};
 			name="FriendlyTraderCity";
-			text="Trader City Schratten";
+			text="Trader City Oberberg";
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
 		class Item15
 		{
-			position[]={5150.6099,71.601753,4862.3594};
+			position[]={11046.387,179.40204,15669.861};
 			name="HeroVendor";
 			text="Hero Vendor";
 			type="mil_dot";
@@ -1277,23 +1277,23 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={14660.978,289.14929,22194.445};
+			position[]={15361.736,112.05698,18519.205};
 			name="UnarmedAirVehicles";
-			text="AWOLs Airfield";
+			text="Axles Airfield";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
 		class Item17
 		{
-			position[]={2125.5425,13.000834,7807.833};
-			name="West Wholesaler";
-			text="West Wholesaler";
+			position[]={2507.0181,271.86975,3870.2949};
+			name="SouthWholesaler";
+			text="South Wholesaler";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
 		class Item18
 		{
-			position[]={3035.1362,113.69482,20963.352};
+			position[]={223.39224,139.88173,22703.682};
 			name="NorthWholesaler";
 			text="North Wholesaler";
 			type="mil_dot";
@@ -1301,92 +1301,78 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={4439.3135,41.720337,21827.297};
-			name="NorthBoatVendor";
-			text="Nordic Boats";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item20
-		{
-			position[]={1790.741,138.50838,13621.614};
+			position[]={16989.15,300.05701,1778.1558};
 			name="BanditVendor";
 			text="Bandit Vendor";
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item21
+		class Item20
 		{
-			position[]={19172.695,294.36261,3299.3843};
-			name="SouthBoatVendor";
-			text="Pauls Boats";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item22
-		{
-			position[]={23265.82,307.81122,20499.551};
+			position[]={13176.351,176.72119,6614.1758};
 			name="NeutralTraderCIty2";
-			text="Trader city Emmen";
+			text="Trader city Oberdorf";
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
 	};
 	class Sensors
 	{
-		items=9;
+		items=7;
 		class Item0
 		{
-			position[]={5909.3081,116.11543,20357.516};
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			name="Lenz";
-			expCond="(player distance Lenz) < 50;";
-			expActiv="TitleText[""Now Entering Trader City Lenzburg"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Lenzburg"",""PLAIN DOWN""]; canbuild = true;";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={23252.473,308.27832,20503.471};
+			position[]={15502.063,87,17015.162};
 			a=100;
 			b=100;
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="Emmen";
-			expCond="(player distance Emmen) < 100;";
-			expActiv="TitleText[""Now Entering Trader City Emmen"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Emmen"",""PLAIN DOWN""]; canbuild = true;";
+			name="Seedorf";
+			expCond="(player distance Seedorf) < 100;";
+			expActiv="TitleText[""Now Entering Trader City Seedorf"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Seedorf"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={13166.374,176.72119,6611.3574};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Oberdorf";
+			expCond="(player distance Oberdorf) < 100;";
+			expActiv="TitleText[""Now Entering Trader City Oberdorf"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Oberdorf"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 			};
 		};
 		class Item2
 		{
-			position[]={14736.759,238.29318,3105.8477};
-			a=75;
-			b=75;
+			position[]={24710.156,409.62686,21741.969};
+			a=100;
+			b=100;
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="Schratten";
-			expCond="(player distance Schratten) < 75;";
-			expActiv="TitleText[""Now Entering Trader City Schratten"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Schratten"",""PLAIN DOWN""]; canbuild = true;";
+			name="Oberberg";
+			expCond="(player distance Oberberg) < 100;";
+			expActiv="TitleText[""Now Entering Trader City Oberberg"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Trader City Oberberg"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 			};
 		};
 		class Item3
 		{
-			position[]={1785.071,137.78891,13618.253};
+			position[]={16983.479,300.05701,1774.7944};
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;
@@ -1401,7 +1387,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={5149.9814,71.601753,4864.1191};
+			position[]={11045.76,179.40204,15671.621};
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;
@@ -1416,7 +1402,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={2122.7954,13.000834,7807.9878};
+			position[]={2504.271,271.54337,3870.4497};
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;
@@ -1431,7 +1417,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={3042.0239,112.45332,20974.836};
+			position[]={230.57082,140.2729,22703.529};
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;
@@ -1440,36 +1426,6 @@ class Mission
 			expCond="(player distance Wholesaler) < 50;";
 			expActiv="TitleText[""Now Entering Wholesaler"",""PLAIN DOWN""]; canbuild = false;";
 			expDesactiv="TitleText[""Now Leaving Wholesaler"",""PLAIN DOWN""]; canbuild = true;";
-			class Effects
-			{
-			};
-		};
-		class Item7
-		{
-			position[]={4435.8774,39.641243,21854.918};
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			name="Boat1";
-			expCond="(player distance boat1) < 50;";
-			expActiv="TitleText[""Now Entering Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
-			class Effects
-			{
-			};
-		};
-		class Item8
-		{
-			position[]={19176.98,294.69891,3295.377};
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			name="Boat2";
-			expCond="(player distance boat2) < 50;";
-			expActiv="TitleText[""Now Entering Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 			};
