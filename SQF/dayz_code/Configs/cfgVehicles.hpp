@@ -1170,7 +1170,7 @@ class CfgVehicles {
 	  icon = "\Ca\buildings\Icons\i_fuel_CA.paa"; 
 	  scope = 0; 
 	  animated = 0; 
-	  armor = 20; 
+	  armor = 2000; 
 	  displayName = "Fuel station"; 
 	  accuracy = 0.5; 
 	  transportFuel = 0; 
@@ -1529,7 +1529,7 @@ class CfgVehicles {
 		model = "\ca\structures\wall\wall_indcnc2_3.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1200;
+		armor = 4000;
 		displayName = "Metal Panel";
 		vehicleClass = "Fortifications";
 		constructioncount = 6;
@@ -1898,7 +1898,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\metal_floor.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1200;
+		armor = 3000;
 		displayName = "Metal Floor";
 		vehicleClass = "Fortifications";
 		GhostPreview = "MetalFloor_Preview_DZ";
@@ -1924,7 +1924,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\Wood_Ramp.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2000;
 		displayName = "Wood Ramp";
 		vehicleClass = "Fortifications";
 		GhostPreview = "WoodRamp_Preview_DZ";
@@ -1938,7 +1938,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\cinder_wall_half.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1200;
+		armor = 2200;
 		displayName = "Half Cinder Block Wall";
 		vehicleClass = "Fortifications";
 		upgradeBuilding[] = {"CinderWall_DZ",{{"CinderBlocks",4},{"MortarBucket",1}}};
@@ -1967,7 +1967,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\cinder_wall_full.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1200;
+		armor = 3400;
 		displayName = "Cinder Block Wall";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
@@ -1996,7 +1996,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\steel_garage_frame.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1200;
+		armor = 3400;
 		displayName = "Block Garage Doorway";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
@@ -2026,7 +2026,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\Steel_door_frame.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 1200;
+		armor = 3400;
 		displayName = "Block Doorway";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"MortarBucket",1}};
@@ -2056,7 +2056,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\Wood_Floor.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2000;
 		displayName = "Wood Floor";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",4}};
@@ -2084,7 +2084,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\half_floor.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 1000;
 		displayName = "Wood Floor 1/2";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",2}};
@@ -2143,7 +2143,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\large_wall.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2200;
 		displayName = "Large Wall";
 		vehicleClass = "Fortifications";
 		upgradeBuilding[] = {"WoodLargeWallWin_DZ",{{"PartGlass",1}}};
@@ -2172,7 +2172,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\large_wall_door.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2200;
 		displayName = "Large Wall Doorway";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
@@ -2200,7 +2200,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\large_wall_win.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2200;
 		displayName = "Large Wall Window";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
@@ -2228,7 +2228,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\small_wall.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2000;
 		displayName = "Small Wall";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
@@ -2284,7 +2284,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\small_wall_win.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2000;
 		displayName = "Small Wall Window";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
@@ -2311,7 +2311,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\small_wall_door.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 600;
+		armor = 2000;
 		displayName = "Small Wall Door";
 		vehicleClass = "Fortifications";
 		upgradeBuilding[] = {"Land_DZE_WoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
@@ -2340,7 +2340,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\wood_stairs.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 300;
+		armor = 600;
 		displayName = "Wood Stairs";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
@@ -2355,7 +2355,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\wood_ladder.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 100;
+		armor = 300;
 		displayName = "Wood Ladder";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
@@ -2372,7 +2372,7 @@ class CfgVehicles {
 		model="\z\addons\dayz_epoch\models\wood_stairs_sans.p3d";
 		icon = "\ca\data\data\Unknown_object.paa";
 		mapSize = 2;
-		armor = 200;
+		armor = 500;
 		displayName = "Wood Stairs Sans";
 		vehicleClass = "Fortifications";
 		maintainBuilding[] = {{"PartWoodLumber",1}};
@@ -2679,7 +2679,7 @@ class CfgVehicles {
 	class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
 	{
 		destrType = "DestructTree"; 
-		armor = 1000;
+		armor = 2000;
 		
 		// static
 		hasDriver = 0;
@@ -2825,7 +2825,7 @@ class CfgVehicles {
 	class Land_Shed_M01;
 	class StorageShed_DZ: Land_Shed_M01
 	{
-		armor = 800;
+		armor = 1600;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		displayName = "Storage Shed";
@@ -2838,7 +2838,7 @@ class CfgVehicles {
 	class Fence_corrugated_plate;
 	class Fence_corrugated_DZ: Fence_corrugated_plate
 	{
-		armor = 300;
+		armor = 600;
 		scope = 2;
 		offset[] = {0,2.5,1};
 		removeoutput[] = {{"ItemCorrugated",1}};
@@ -2853,7 +2853,7 @@ class CfgVehicles {
 		scope = 2;
 		destrType = "DestructBuilding"; 
 		offset[] = {0,2.5,1.3};
-		armor = 400;
+		armor = 800;
 		displayName = "Wooden Shack";
 		vehicleClass = "Fortifications";
 		transportMaxMagazines = 100;
@@ -2869,7 +2869,7 @@ class CfgVehicles {
 		destrType = "DestructBuilding"; 
 		//cost = 100;
 		offset[] = {0,2.5,1};
-		armor = 400;
+		armor = 800;
 		displayName = "Wooden Shed";
 		vehicleClass = "Fortifications";
 		transportMaxMagazines = 200;

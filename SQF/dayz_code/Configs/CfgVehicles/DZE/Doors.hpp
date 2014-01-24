@@ -14,7 +14,7 @@ class DZE_Base_Object : All {
 	displayName = "";
 	mapSize = 7.5;
 	animated = true;
-	armor = 600;
+	armor = 2200;
 	destrType = "DestructBuilding";
 	damageResistance = 0.004;
 	// static 
@@ -82,7 +82,7 @@ class DZE_Housebase : DZE_Base_Object {
 	transportFuel = 0;
 	mapSize = 11;
 	cost = 0;
-	armor = 800;
+	armor = 2200;
 	reversed = 0;
 	/*extern*/ class DestructionEffects;
 };
@@ -94,7 +94,7 @@ class Land_DZE_WoodDoor_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 600;						/* "Lifepoints", if you like to call it that way.*/
+	armor = 2200;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
@@ -124,7 +124,7 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 600;						/* "Lifepoints", if you like to call it that way.*/
+	armor = 2500;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
@@ -152,7 +152,7 @@ class CinderWallDoor_DZ_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 1000;					/* "Lifepoints", if you like to call it that way.*/
+	armor = 4000;					/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
@@ -179,7 +179,7 @@ class CinderWallDoorLocked_DZ_Base: DZE_Housebase {
 	mapSize = 8;						/* Size of the icon */
 	icon = "\ca\data\data\Unknown_object.paa";			/* Path to the picture shown in the editor. */
 	accuracy = 1000;   
-	armor = 1000;					/* "Lifepoints", if you like to call it that way.*/
+	armor = 4000;					/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
 	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
