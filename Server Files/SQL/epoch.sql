@@ -363,7 +363,7 @@ INSERT INTO `Traders_DATA` VALUES(5057, '["M4A1",3]', 250, '[4,"ItemGoldBar",1]'
 INSERT INTO `Traders_DATA` VALUES(5059, '["M4A1_HWS_GL_camo",3]', 250, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 485, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(5060, '["M4A3_CCO_EP1",3]', 250, '[1,"ItemGoldBar10oz",1]', '[7,"ItemGoldBar",1]', 0, 485, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(5061, '["M4A1_Aim",3]', 250, '[6,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 485, 'trade_weapons');
-INSERT INTO `Traders_DATA` VALUES(5063, '["M249_DZ",3]', 251, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 486, 'trade_weapons');
+INSERT INTO `Traders_DATA` VALUES(5063, '["M249_EP1_DZ",3]', 251, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 486, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(5064, '["M240_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 486, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(5065, '["Mk_48_DZ",3]', 248, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 486, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(5066, '["Pecheneg_DZ",3]', 250, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 486, 'trade_weapons');
@@ -848,7 +848,7 @@ INSERT INTO `Traders_DATA` VALUES(6164, '["AKS_74_U",3]', 250, '[2,"ItemGoldBar"
 INSERT INTO `Traders_DATA` VALUES(6165, '["AK_47_M",3]', 250, '[8,"ItemGoldBar",1]', '[6,"ItemGoldBar",1]', 0, 602, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6166, '["AK_74",3]', 251, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 602, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6167, '["FN_FAL",3]', 250, '[1,"ItemGoldBar10oz",1]', '[7,"ItemGoldBar",1]', 0, 602, 'trade_weapons');
-INSERT INTO `Traders_DATA` VALUES(6168, '["M249_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 603, 'trade_weapons');
+INSERT INTO `Traders_DATA` VALUES(6168, '["M249_EP1_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 603, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6169, '["M240_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 603, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6170, '["Mk_48_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 603, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6171, '["Pecheneg_DZ",3]', 253, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 603, 'trade_weapons');
@@ -942,7 +942,7 @@ INSERT INTO `Traders_DATA` VALUES(6260, '["AKS_74_U",3]', 250, '[2,"ItemGoldBar"
 INSERT INTO `Traders_DATA` VALUES(6261, '["AK_47_M",3]', 250, '[8,"ItemGoldBar",1]', '[6,"ItemGoldBar",1]', 0, 615, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6262, '["AK_74",3]', 250, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 615, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6263, '["FN_FAL",3]', 250, '[1,"ItemGoldBar10oz",1]', '[7,"ItemGoldBar",1]', 0, 615, 'trade_weapons');
-INSERT INTO `Traders_DATA` VALUES(6264, '["M249_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 616, 'trade_weapons');
+INSERT INTO `Traders_DATA` VALUES(6264, '["M249_EP1_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 616, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6265, '["M240_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 616, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6266, '["Mk_48_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 616, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6267, '["Pecheneg_DZ",3]', 250, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 616, 'trade_weapons');
@@ -1145,7 +1145,7 @@ INSERT INTO `Traders_DATA` VALUES(6468, '["AKS_74_U",3]', 251, '[2,"ItemGoldBar"
 INSERT INTO `Traders_DATA` VALUES(6469, '["AK_47_M",3]', 250, '[8,"ItemGoldBar",1]', '[6,"ItemGoldBar",1]', 0, 637, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6470, '["AK_74",3]', 256, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 637, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6471, '["FN_FAL",3]', 252, '[1,"ItemGoldBar10oz",1]', '[7,"ItemGoldBar",1]', 0, 637, 'trade_weapons');
-INSERT INTO `Traders_DATA` VALUES(6472, '["M249_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 638, 'trade_weapons');
+INSERT INTO `Traders_DATA` VALUES(6472, '["M249_EP1_DZ",3]', 250, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 638, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6473, '["M240_DZ",3]', 254, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 638, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6474, '["Mk_48_DZ",3]', 252, '[1,"ItemGoldBar10oz",1]', '[6,"ItemGoldBar",1]', 0, 638, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(6475, '["Pecheneg_DZ",3]', 249, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 638, 'trade_weapons');
@@ -1902,7 +1902,7 @@ INSERT INTO `trader_items` VALUES(466, 'M16A2GL', 3, 'Rifle', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(467, 'M16A4_ACG', 3, 'Rifle', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(468, 'M24', 3, 'Rifle Sniper', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(469, 'M240_DZ', 3, 'Machine Gun', 'trade_weapons');
-INSERT INTO `trader_items` VALUES(470, 'M249_DZ', 3, 'Machine Gun', 'trade_weapons');
+INSERT INTO `trader_items` VALUES(470, 'M249_EP1_DZ', 3, 'Machine Gun', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(471, 'M40A3', 3, 'Rifle Sniper', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(472, 'M4A1', 3, 'Rifle', 'trade_weapons');
 INSERT INTO `trader_items` VALUES(473, 'M4A1_Aim', 3, 'Rifle', 'trade_weapons');
