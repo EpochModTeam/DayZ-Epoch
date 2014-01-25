@@ -70,6 +70,9 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 			_backpacks = 	_obj getVariable["BackpackCargo",[]];
 	
 			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
+			if ((isNull _holder) or (isNil "_holder")) then {
+				_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
+			};
 			// Remove locked vault
 			deleteVehicle _obj;
 			_holder setdir _dir;
