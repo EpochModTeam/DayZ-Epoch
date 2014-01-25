@@ -1,7 +1,5 @@
 /*
-	Anti-Teleport
-	Created By Razor
-	Refactored By Alby
+	Anti-Teleport - Created By Razor / Refactored By Alby & CopyPasted to Epoch by Skaronator
 */
 
 private ["_log","_playerName","_playerUID","_al1veOnce","_debug","_lastpos","_lastheight","_lasttime","_lastVehicle","_v","_h","_topv","_toph","_curpos","_distance","_curtime","_difftime","_plant","_curheight","_speed","_topSpeed","_terrainHeight","_differenceCheck","_lastPosVar","_safetyVehicle","_curPos"];
@@ -14,8 +12,8 @@ waitUntil {vehicle player == player};
 	_playerUID = getPlayerUID player;
 	while {true} do {
 		if (typeName player != "OBJECT") then {
-			atp = format["WARNING typename error for player UID#%1", _playerUID];
-			publicVariableServer "atp";
+			PVDZE_atp = format["WARNING typename error for player UID#%1", _playerUID];
+			publicVariableServer "PVDZE_atp";
 			//forceEnd;
 			endMission "LOSER";
 			sleep 10; //Bypass spam
@@ -53,8 +51,8 @@ while {true} do {
 					_plant = _x createVehicleLocal _debug;
 					sleep 0.1;
 					if (sizeOf _x == 0) exitWith { 
-						atp = "Plants texture hack for type " + _x;
-						publicVariableServer "atp";
+						PVDZE_atp = "Plants texture hack for type " + _x;
+						publicVariableServer "PVDZE_atp";
 						endMission "LOSER";
 					};
 					deleteVehicle _plant;
@@ -77,7 +75,8 @@ while {true} do {
 			if (_lastVehicle == vehicle player) then {
 				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 					(vehicle player) setposATL  _lastpos;
-					PVDZE_atp = [name player, dayz_characterID, _lastpos, _curPos, getPosATL player];
+					//PVDZE_atp = [name player, dayz_characterID, _lastpos, _curPos, getPosATL player];
+					PVDZE_atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", getPlayerUID player, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
 					publicVariableServer "PVDZE_atp";
 				} else {
 					_lastpos = _curpos;
@@ -92,18 +91,20 @@ while {true} do {
 			};
 
 		};
-		// freefall detection:
-		_v = -((velocity player) select 2);
-		_h = (getPosATL player) select 2;
-		if (_v > 4 AND _h > 3) then {
-			_topv = _topv max _v;
-			_toph = _toph max _h;
-			Dayz_freefall = [ time, _toph, _topv ];
-		}
-		else {
-			_topv = 0;
-			_toph = 0;
-		};
+		/*if ((animationState player) != "HaloFreeFall_non") then {
+			// freefall detection:
+			_v = -((velocity player) select 2);
+			_h = (getPosATL player) select 2;
+			if (_v > 4 AND _h > 3) then {
+				_topv = _topv max _v;
+				_toph = _toph max _h;
+				Dayz_freefall = [ time, _toph, _topv ];
+			}
+			else {
+				_topv = 0;
+				_toph = 0;
+			};
+		};*/
 		sleep 0.25;
 	};
 	sleep 0.1;
