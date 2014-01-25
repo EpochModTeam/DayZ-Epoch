@@ -461,7 +461,7 @@ if (_hasrequireditem) then {
 				cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 				
 				if (_isPole) then {
-					0 spawn player_plotPreview;
+					[] spawn player_plotPreview;
 				};
 
 				_tmpbuilt setVariable ["OEMPos",_location,true];
@@ -477,7 +477,7 @@ if (_hasrequireditem) then {
 							_combination_2 = floor(random 10);
 							_combination_3 = floor(random 10);
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
-
+							dayz_combination = _combination;
 							if (_combination_1 == 100) then {
 								_combination_1_Display = "Red";
 							};
@@ -495,6 +495,7 @@ if (_hasrequireditem) then {
 							_combination_2 = floor(random 10);
 							_combination_3 = floor(random 10);
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
+							dayz_combination = _combination;
 							_combinationDisplay = _combination;
 						};
 						
@@ -504,6 +505,7 @@ if (_hasrequireditem) then {
 							_combination_3 = floor(random 10);
 							_combination_4 = floor(random 10);
 							_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
+							dayz_combination = _combination;
 							_combinationDisplay = _combination;
 						};
 					};
@@ -528,8 +530,6 @@ if (_hasrequireditem) then {
 						publicVariableServer "PVDZE_obj_Publish";
 					};
 				};
-
-
 			} else {
 				deleteVehicle _tmpbuilt;
 				cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
