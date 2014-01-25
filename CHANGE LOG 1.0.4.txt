@@ -1,14 +1,16 @@
 [NEW] Napf Island with permission from #momo# now included by default. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
 [NEW] Sauerland Map v1.7.00.1 with permission from falconsan now included by default. http://www.s6computer.de/
 
-[NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 [NEW] Optimized Server/Client Communication with PVS+PVC methods from DayZ Mod 1.8. @Skaronator
+[NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 [NEW] Updated Hive Dll to latest from rajkosto and added custom child 396,397 call to update the datestamp of base objects. *See notes below! @Tansien @vbawol
 [NEW] Maintain Area should work now much better. The Server update the Object itself and doesnt remove and rebuild it anymore. @Skaronator
 
 [ADDED] Cars, small Trucks, and Boats now able to be lifting with Chinooks only. Lifted vehicle must be unlocked and unmanned. Enabled by default use DZE_HeliLift = false; in init.sqf to disable. @Zabn @vbawol
 [ADDED] 40% chance to payout a single gem on removal of mine ruins. @vbawol
-[ADDED] New enterable building added for Chernarus and other maps.  @Sequisha
+[ADDED] M107_DZ to Military, MilitarySpecial, IndustrialMilitary and Helicrash loottable. @Sequisha
+[ADDED] MAAWS (rocket launcher) to Helicrash loottable. @Sequisha
+[ADDED] New enterable building added for Chernarus and other maps. @Sequisha
 [ADDED] Allow Admins To Customize Loot Spawn Timer using DZE_LootSpawnTimer via init.sqf. Default: 10 @SGanthony
 [ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true will look for loot configs via missionConfigFile. @vbawol
 [ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant 
@@ -37,6 +39,7 @@
 [FIXED] BattlEye kicks for some players on death. @Skaronator
 
 [CHANGED] Extended Trader logging and fix for sold itemnames @ctc.Sebi
+[CHANGED] Balance Loottable. @Sequisha
 [CHANGED] Lowered Safe weapon storage count to 25, to address reports of more safe inventory issues after it was rasied to 50. @vbawol
 [CHANGED] Prices were reviewed and modified for many of the higher tiered weapons/ammo/vehicles/food. @dayz10k
 [CHANGED] All copper prices have been changed to 2 silver to buy, 1 silver to sell. @dayz10k
