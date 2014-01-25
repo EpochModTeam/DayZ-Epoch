@@ -12,7 +12,7 @@
 [ADDED] MAAWS (rocket launcher) to Helicrash loottable. @Sequisha
 [ADDED] New enterable building added for Chernarus and other maps. @Sequisha
 [ADDED] Allow Admins To Customize Loot Spawn Timer using DZE_LootSpawnTimer via init.sqf. Default: 10 @SGanthony
-[ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true will look for loot configs via missionConfigFile. @vbawol
+[ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true; will look for loot configs via missionConfigFile. @vbawol
 [ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant 
 [ADDED] BAF_Merlin_DZE - transportMaxWeapons 15, transportMaxMagazines 150, transportmaxbackpacks 5. @Skaronator
 [ADDED] Added back BAF_AS50_scoped_DZ configs, still not on traders or loot tables. @vbawol
