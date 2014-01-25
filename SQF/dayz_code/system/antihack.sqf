@@ -19,6 +19,7 @@ waitUntil {vehicle player == player};
 			sleep 10; //Bypass spam
 		};
 	};
+	endMission "LOSER";
 };
 
 _al1veOnce = false;
@@ -109,3 +110,4 @@ while {true} do {
 	};
 	sleep 0.1;
 };
+endMission "LOSER";
