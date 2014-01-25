@@ -4807,14 +4807,14 @@
 		  <Czech>Poskládat 10oz cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211">
-		  <Original>Smelt 1oz bar</Original>
-		  <English>Smelt 1oz bar</English>
-		  <German>1oz bar Stapel</German>
-		  <Russian>Уложить в 1oz слиток</Russian>
+		  <Original>Unstack</Original>
+		  <English>Unstack</English>
+      <!-- <German>1oz bar Stapel</German> -->
+		  <!-- <Russian>Уложить в 1oz слиток</Russian> -->
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Stapel 1oz balk</Dutch>
+      <!-- <Dutch>Stapel 1oz balk</Dutch> -->
 		  <!-- <French></French> -->
-		  <Czech>Poskládat 1oz cihlu</Czech>
+      <!-- <Czech>Poskládat 1oz cihlu</Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_212">
 		  <Original>Salvage Scrap</Original>
