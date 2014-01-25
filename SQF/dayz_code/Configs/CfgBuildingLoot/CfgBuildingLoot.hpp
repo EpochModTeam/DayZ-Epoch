@@ -798,14 +798,13 @@ class CfgBuildingLoot {
 			{ "","military" },
 			{ "machinegunammo","single" },
 			{ "militaryclothes","single" },
-			{ "NVGoggles","weapon" },
-			{ "militaryammo","single" }
+			{ "NVGoggles","weapon" }
 		};
 		itemChance[] =	{
 			0.1,
 			0.04,
 			0.08,
-			0.02,
+			0.03,
 			0.05,
 			0.06,
 			0.01,
@@ -820,10 +819,9 @@ class CfgBuildingLoot {
 			0.08,
 			0.3,
 			0.01,
-			0.03,
-			0.03,
-			0.01,
-			0.05
+			0.05,
+			0.05,
+			0.01
 
 		};
 		itemTypeSmall[] = {
