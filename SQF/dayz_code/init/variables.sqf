@@ -15,7 +15,6 @@ Soldier1_DZ = 	"Soldier1_DZ";
 Rocket_DZ = 	"Rocket_DZ";
 
 AllPlayers = ["Survivor2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWsequishaD_DZ","SurvivorWsequisha_DZ","SurvivorWpink_DZ","SurvivorW3_DZ","SurvivorW2_DZ","Bandit1_DZ","Bandit2_DZ","BanditW1_DZ","BanditW2_DZ","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ","FR_OHara_DZ","FR_Rodriguez_DZ","CZ_Soldier_Sniper_EP1_DZ","Graves_Light_DZ","GUE_Soldier_MG_DZ","GUE_Soldier_Sniper_DZ","GUE_Soldier_Crew_DZ","GUE_Soldier_CO_DZ","GUE_Soldier_2_DZ","TK_Special_Forces_MG_EP1_DZ","TK_Soldier_Sniper_EP1_DZ","TK_Commander_EP1_DZ","RU_Soldier_Crew_DZ","INS_Lopotev_DZ","INS_Soldier_AR_DZ","INS_Soldier_CO_DZ","INS_Bardak_DZ","INS_Worker2_DZ"];
-// AllPlayersVehicles = ["AllVehicles"]+AllPlayers;
 
 //Cooking
 meatraw = [
@@ -472,9 +471,6 @@ if(isNil "dayz_minpos") then {
 if(isNil "dayz_maxpos") then {
 	dayz_maxpos = 20000;
 };
-if(isNil "DZE_teleport") then {
-	DZE_teleport = [1000,2000,500,200,800];
-};
 if(isNil "DZE_BuildingLimit") then {
 	DZE_BuildingLimit = 150;
 };
@@ -501,15 +497,11 @@ if(isNil "DZE_HeliLift") then {
 if(isNil "DZE_PlotPole") then {
 	DZE_PlotPole = [30,45];
 };
-DZE_maintainRange = ((DZE_PlotPole select 0)+20);
+if(isNil "DZE_maintainRange") then {
+	DZE_maintainRange = ((DZE_PlotPole select 0)+20);
+};
 
 DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
-
-/*
-if(isNil "dayz_canBuildInCity") then {
-	dayz_canBuildInCity = false;
-};
-*/
 
 if(isNil "dayz_zedSpawnVehCount") then {
 	dayz_zedSpawnVehCount = dayz_maxLocalZombies / 2;
@@ -586,12 +578,7 @@ if(isServer) then {
 		DZE_HeliLift = true;
 	};
 	
-	
-	//dayz_flyMonitor = [];		//used for monitor flies
-	//DZE_FlyWorkingSet = [];
-
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
-	
 };
 
 if(!isDedicated) then {
