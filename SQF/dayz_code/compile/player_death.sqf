@@ -8,7 +8,7 @@ _body =		player;
 _playerID =	getPlayerUID player;
 
 _infected = 0;
-if (r_player_infected) then { 
+if (r_player_infected && DZE_PlayerZed) then { 
 	_infected = 1; 
 };
 

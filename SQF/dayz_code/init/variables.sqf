@@ -444,6 +444,9 @@ if(isNil "dayz_maxGlobalZombiesIncrease") then {
 if(isNil "dayz_maxZeds") then {
 	dayz_maxZeds = 500;
 };
+if (isNil "DZE_PlayerZed") then {
+	DZE_PlayerZed = true;
+};
 if(isNil "DZEdebug") then {
 	DZEdebug = false;
 };
@@ -545,9 +548,6 @@ DZE_Lock_Door = "";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
 
 if(isServer) then {
-	if (isNil "DZE_PlayerZed") then {
-		DZE_PlayerZed = true;
-	};
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
