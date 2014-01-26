@@ -34,7 +34,9 @@ switch true do {
 	case (_count <= 200): {_requirements = [["ItemBriefcase100oz",2]]};
 	case (_count <= 300): {_requirements = [["ItemBriefcase100oz",3]]};
 	case (_count <= 400): {_requirements = [["ItemBriefcase100oz",4]]};
-	case (_count > 400): {_requirements = [["ItemBriefcase100oz",5]]};
+	case (_count <= 500): {_requirements = [["ItemBriefcase100oz",5]]};
+	case (_count <= 600): {_requirements = [["ItemBriefcase100oz",6]]};
+	case (_count > 700): {_requirements = [["ItemBriefcase100oz",7]]};
 };
 
 _option = _this select 3;
