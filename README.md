@@ -28,8 +28,8 @@ Included Custom Addons
 --------------------------
 Included Custom Islands
 --------------------------
-* Sauerland by Falconsan - http://www.s6computer.de/
-* Napf Island by #momo# - http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta
+* | Sauerland by Falconsan - http://www.s6computer.de/
+* | Napf Island by #momo# - http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta
 * | MBG Killhouses http://www.armaholic.com/page.php?id=15180
 * | MBG Buildings 3 - European Theatre http://www.armaholic.com/page.php?id=14828
 * | MBG Generic African Buildings http://www.armaholic.com/page.php?id=17817
@@ -59,6 +59,7 @@ Contributors
 * th4z - French Localization - https://github.com/th4z
 * JoSchaap - Dutch Localization and some typo's - https://github.com/JoSchaap
 * Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
+* Tansien - Hive Update to visual studio 2013, added 396 and 397 CHILD for Maintain - https://github.com/Tansien
 * aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
 * vos / Axe Cop - Area Maintenance and ideas - https://github.com/vos
 * GeodarCZ - Czech Localization, correction - https://github.com/Geodar
