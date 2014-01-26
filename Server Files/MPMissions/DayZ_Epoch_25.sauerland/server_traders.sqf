@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["Tanny_PMC","US_Delta_Force_AR_EP1","FR_Cooper","RU_Profiteer1","Damsel4","TK_Commander_EP1","Ins_Soldier_AR","RU_Villager1","MVD_Soldier_Marksman","RU_Soldier_Pilot","CIV_EuroMan01_EP1","Ins_Soldier_GL","Rocker2","Profiteer1","RU_Damsel5","Dr_Hladic_EP1","TK_Soldier_Crew_EP1","TK_Soldier_AMG_EP1","Soldier_MG_PMC","RU_Damsel2","GUE_Soldier_MG","TK_Special_Forces_EP1","Ins_Worker2","Citizen2_EP1","pook_Doc_Bell47","RU_Doctor"];
+serverTraders = ["Tanny_PMC","US_Delta_Force_AR_EP1","FR_Cooper","RU_Profiteer1","Damsel4","TK_Commander_EP1","Ins_Soldier_AR","RU_Villager1","MVD_Soldier_Marksman","RU_Soldier_Pilot","CIV_EuroMan01_EP1","Ins_Soldier_GL","Rocker2","Profiteer1","RU_Damsel5","Dr_Hladic_EP1","TK_Soldier_Crew_EP1","TK_Soldier_AMG_EP1","Soldier_MG_PMC","RU_Damsel2","GUE_Soldier_MG","TK_Special_Forces_EP1","Ins_Worker2","Citizen2_EP1","pook_Doc_Bell47","RU_Doctor","Dr_Hladik"];
 // Hero Vendor
 menu_Tanny_PMC = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
@@ -153,6 +153,12 @@ menu_pook_Doc_Bell47 = [
 // Medical Supplies 3
 menu_RU_Doctor = [
 	[["Chem-lites/Flares",669],["Medical Supplies",670],["Smoke Grenades",671]],
+	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
+	"neutral"
+];
+// Medical Supplies 2
+menu_Dr_Hladik_EP1 = [
+	[["Chem-lites/Flares",666],["Medical Supplies",665],["Smoke Grenades",668]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
 ];
