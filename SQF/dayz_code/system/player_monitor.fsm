@@ -1066,8 +1066,8 @@ class FSM
        "" \n
        "//Select Weapon" \n
        "// Desc: select default weapon & handle multiple muzzles" \n
-       "_playerObjName = format[""player%1"",_playerUID];" \n
-       "call compile format[""player%1 = player;"",_playerUID];" \n
+       "_playerObjName = format[""PVDZE_player%1"",_playerUID];" \n
+       "call compile format[""PVDZE_player%1 = player;"",_playerUID];" \n
        "////diag_log (format[""player%1 = player"",_playerUID]);" \n
        "publicVariableServer _playerObjName;" \n
        "" \n

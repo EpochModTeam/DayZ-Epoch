@@ -11,7 +11,7 @@ if (isNil "_playerObj") then {
 	diag_log format["nil player object attempting PV, :%1", _this];
 	
 	// fall back to using PV for now so we have a better chance at finding the player
-	_playerObj = call compile format["player%1",_playerUID];
+	_playerObj = call compile format["PVDZE_player%1",_playerUID];
 };
 
 if (isNil "_playerObj") exitWith {
