@@ -142,7 +142,42 @@ if (!isDedicated) then {
 		_b
 	};
 	
+
+	epoch_totalCurrency = {
+		// total currency
+		_total_currency = 0;
+		{
+			_part =  (configFile >> "CfgMagazines" >> _x);
+			_worth =  (_part >> "worth");
+			if isNumber (_worth) then {
+				_total_currency = _total_currency + getNumber(_worth);
+			};
+		} forEach (magazines player);
+		_total_currency
+	};
+
+	epoch_itemCost = {
+		_trade_total = 0;
+		{			
+			_part_in_configClass =  configFile >> "CfgMagazines" >> (_x select 0);
+			if (isClass (_part_in_configClass)) then {
+				_part_inWorth = (_part_in_configClass >> "worth");
+				if isNumber (_part_inWorth) then {
+					_trade_total = _trade_total + (getNumber(_part_inWorth) * (_x select 1));
+				};
+			};
+		} forEach _this;
+		
+		diag_log format["DEBUG TRADER ITEMCOST: %1", _this];
+		_trade_total
+	};
+
+	epoch_returnChange =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_returnChange.sqf";
+	// usage [["partinclassname",4]] call epoch_returnChange;
 	
+
+
+
 	//
 	RunTime = 0;
 	TotalRuns = 0;
@@ -251,7 +286,7 @@ if (!isDedicated) then {
 	};
 
 	player_tagFriendlyMsg = {
-		if(player == _this) then { 
+		if(player == (_this select 0)) then { 
 			cutText[(localize "str_epoch_player_2"),"PLAIN DOWN"];
 		}; 
 	};

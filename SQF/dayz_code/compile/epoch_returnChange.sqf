@@ -15,6 +15,7 @@ diag_log format["DEBUG TRADER INPUT TOTAL: %1", _trade_total];
 
 _total_currency_dry = call epoch_totalCurrency;
 
+_return_change_dry = 0;
 if (_buyOrSell == 0) then {
 	//buy
 	_return_change_dry = _total_currency_dry - _trade_total; 
@@ -22,6 +23,9 @@ if (_buyOrSell == 0) then {
 	//sell
 	_return_change_dry = _total_currency_dry + _trade_total; 
 };
+
+diag_log format["DEBUG TRADER DRY: %1", _return_change_dry];
+
 if (_return_change_dry >= 0) then {
 	_canAfford = true;
 };
