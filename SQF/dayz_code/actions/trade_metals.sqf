@@ -7,15 +7,9 @@ DZE_ActionInProgress = true;
 s_player_parts_crtl = 1;
 
 _metals_conversion = [ 
-
-	["ItemTinBar","ItemAluminumBar",1,2,"buy","Aluminum","Tin",108], 
-	["ItemAluminumBar","ItemTinBar",2,1,"buy","Tin","Aluminum",107],
-		
-	["ItemGoldBar","ItemSilverBar10oz",1,3,"buy","10oz Silver","Gold",102],
-	["ItemSilverBar10oz","ItemGoldBar",3,1,"buy","Gold","10oz Silver",101],
-
+	["ItemGoldBar","ItemSilverBar10oz",1,10,"buy","10oz Silver","Gold",102],
+	["ItemSilverBar10oz","ItemGoldBar",10,1,"buy","Gold","10oz Silver",101],
 	["ItemBriefcase100oz","ItemGoldBar10oz",1,12,"buy","10oz Gold","Full Briefcase",99]
-		
 ];
 
 // Static Menu
