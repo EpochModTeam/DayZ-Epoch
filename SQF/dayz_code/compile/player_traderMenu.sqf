@@ -172,11 +172,13 @@ TraderDialogShowPrices = {
 
 	ctrlSetText [TraderDialogBuyPrice, format["%1 %2", _item select 2, _item select 4]];
 
+	/*
 	if(_qty == 0) then {
 		ctrlEnable [TraderDialogBuyBtn, false];
 	} else {
 		ctrlEnable [TraderDialogBuyBtn, true];
 	};
+	*/
 
 	ctrlSetText [TraderDialogSellPrice, format["%1 %2", _item select 5, _item select 7]];
 };
