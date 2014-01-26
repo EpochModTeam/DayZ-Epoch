@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["Tanny_PMC","US_Delta_Force_AR_EP1","FR_Cooper","RU_Profiteer1","Damsel4","TK_Commander_EP1","Ins_Soldier_AR","RU_Villager1","MVD_Soldier_Marksman","RU_Soldier_Pilot","CIV_EuroMan01_EP1","Ins_Soldier_GL","Rocker2","Profiteer1","RU_Damsel5","Dr_Hladic_EP1","TK_Soldier_Crew_EP1","TK_Soldier_AMG_EP1","Soldier_MG_PMC","RU_Damsel2","GUE_Soldier_MG","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Citizen2_EP1","pook_Doc_Bell47","RU_Doctor"];
+serverTraders = ["Tanny_PMC","US_Delta_Force_AR_EP1","FR_Cooper","RU_Profiteer1","Damsel4","TK_Commander_EP1","Ins_Soldier_AR","RU_Villager1","MVD_Soldier_Marksman","RU_Soldier_Pilot","CIV_EuroMan01_EP1","Ins_Soldier_GL","Rocker2","Profiteer1","RU_Damsel5","Dr_Hladic_EP1","TK_Soldier_Crew_EP1","TK_Soldier_AMG_EP1","Soldier_MG_PMC","RU_Damsel2","GUE_Soldier_MG","TK_Special_Forces_EP1","Ins_Worker2","Citizen2_EP1","pook_Doc_Bell47","RU_Doctor"];
 // Hero Vendor
 menu_Tanny_PMC = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
@@ -129,18 +129,6 @@ menu_GUE_Soldier_MG = [
 // North Boat Vendor
 menu_TK_Special_Forces_EP1 = [
 	[["Boats Armed",558],["Boats Unarmed",557]],
-	[],
-	"neutral"
-];
-// Weapons neutral 2 NONEED
-menu_Ins_Soldier_AR = [
-	[["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
-	[],
-	"neutral"
-];
-// Ammunition Neutral 2
-menu_Ins_Lopotev = [
-	[["Assault Rifle Ammo",643],["Light Machine Gun Ammo",644],["Pistol Ammo",646],["Shotguns and Single-shot Ammo",649],["Sniper Rifle Ammo",647],["Submachine Gun Ammo",648]],
 	[],
 	"neutral"
 ];
