@@ -2467,7 +2467,7 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Mixed Gas 16l";
+		displayName = "Mixed Gas 16L";
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "16 liters of Mixed Gas.";
@@ -2490,7 +2490,7 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Mixed Gas 12l";
+		displayName = "Mixed Gas 12L";
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "12 liters of Mixed Gas.";
@@ -2513,7 +2513,7 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Mixed Gas 8l";
+		displayName = "Mixed Gas 8L";
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "8 liters of Mixed Gas.";
@@ -2536,7 +2536,7 @@ class CfgMagazines {
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "Mixed Gas 4l";
+		displayName = "Mixed Gas 4L";
 		model = "\dayz_equip\models\jerrycan.p3d";
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = "4 liters of Mixed Gas.";
