@@ -1,11 +1,12 @@
 [NEW] Napf Island with permission from #momo# now included by default. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
-[NEW] Sauerland Map v1.7.00.1 with permission from falconsan now included by default. http://www.s6computer.de/
+[NEW] WIP Sauerland Map v1.7.00.2 with permission from falconsan now included by default. http://www.s6computer.de/
 
 [NEW] Optimized Server/Client Communication with PVS+PVC methods from DayZ Mod 1.8. @Skaronator
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 [NEW] Maintain Area should work now much better. The Server update the Object itself and doesnt remove and rebuild it anymore. @Skaronator
 [NEW] Updated Hive Dll to latest from rajkosto and added custom child 396 and 397 call to update the datestamp of base objects. *See notes below! @Tansien @vbawol
 
+[ADDED] Trading now makes change and auto combines into the highest denomination. @vbawol
 [ADDED] Cars, small Trucks, and Boats now able to be lifting with Chinooks only. Lifted vehicle must be unlocked and unmanned. Enabled by default use DZE_HeliLift = false; in init.sqf to disable. @Zabn @vbawol
 [ADDED] 40% chance to payout a single gem on removal of mine ruins. @vbawol
 [ADDED] M107_DZ to Military, MilitarySpecial, IndustrialMilitary and Helicrash loottable. @Sequisha
@@ -18,10 +19,11 @@
 [ADDED] Added back BAF_AS50_scoped_DZ configs, still not on traders or loot tables. @vbawol
 [ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
         by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole. @dayz10k @vos
-[ADDED] Global variable to allow building on roads with DZE_BuildOnRoads = true; (Default: DZE_BuildOnRoads = false;) @dayz10k
+[ADDED] Global variabsle to allow building on roads with DZE_BuildOnRoads = true; (Default: DZE_BuildOnRoads = false;) @dayz10k
 [ADDED] Global variable to set plot pole radius and exclusion zone, enabled via mission file. DZE_PlotPole = [x,y] in the mission file controls the [Radius, Exclusion zone]. 
         Default: DZE_PlotPole = [30,45]. @dayz10k @Skaronator
 [ADDED] Global variable to disable Player Zombies with DZE_PlayerZed = false; (Default: DZE_PlayerZed = true;) @Skaronator
+
 
 [FIXED] Anti-Teleport Log System. @Skaronator
 [FIXED] Wrong german translation "Holzkiste geöffnet.". @Fank @vbawol
@@ -39,6 +41,7 @@
 [FIXED] You will no longer get a 3 by 3H - barrier cube if you remove a 5H - barrier cube @Skaronator
 [FIXED] BattlEye kicks for some players on death. @Skaronator
 
+[CHANGED] Drastically increased base wood and cinder building armor levels. Doors now have higher armor than walls. @vbawol
 [CHANGED] Extended Trader logging and fix for sold itemnames @ctc.Sebi
 [CHANGED] Balance Loottable. @Sequisha
 [CHANGED] Lowered Safe weapon storage count to 25, to address reports of more safe inventory issues after it was rasied to 50. @vbawol
