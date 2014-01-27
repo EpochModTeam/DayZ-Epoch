@@ -27,7 +27,6 @@
 5 "_30"
 5 "_ied"
 5 "_CRV7"
-5 "_MEEWS"
 5 "_SMAW"
 5 "_GRAD"
 5 "_SABOT"
