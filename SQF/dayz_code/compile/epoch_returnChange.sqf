@@ -89,9 +89,12 @@ if (_canAfford) then {
 			};
 		};
 		if (_gold_10oz > 0) then {
-			for "_x" from 1 to _gold_10oz do {
+			if (_gold_10oz == 1) then {
 				player addMagazine "ItemGoldBar10oz";
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_10oz, "ItemGoldBar10oz"];
+				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_10oz, "ItemGoldBar10z"];
+			} else {
+				player addMagazine format["ItemBriefcase%1oz",floor(_gold_10oz*10)];
+				diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcase%1oz", floor(_gold_10oz*10)];
 			};
 		};
 		if (_gold_1oz > 0) then {
