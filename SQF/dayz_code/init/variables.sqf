@@ -525,8 +525,9 @@ dayz_allowedObjects = ["TentStorage","TentStorageDomed","TentStorageDomed2", "Va
 DZE_LockableStorage = ["VaultStorage","VaultStorageLocked","LockboxStorageLocked","LockboxStorage"];
 DZE_LockedStorage = ["VaultStorageLocked","LockboxStorageLocked"];
 DZE_UnLockedStorage = ["VaultStorage","LockboxStorage"];
-DZE_ExtraMaintain = ["LightPole_DZ"];
+//["ModularItems", "DZE_Housebase", "BuiltItems", "Plastic_Pole_EP1_DZ" ,"FireBarrel_DZ"] - Skaronator, looks like some classes are missing not sure if this is intended
 DZE_maintainClasses = ["ModularItems", "DZE_Housebase"] + DZE_ExtraMaintain;
+
 DZE_DoorsLocked = ["Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_WoodDoorLocked","CinderWallDoorLocked_DZ","CinderWallDoorSmallLocked_DZ"];
 
 // List of removable items that require crowbar
