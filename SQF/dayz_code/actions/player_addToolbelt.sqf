@@ -44,6 +44,11 @@ _isOk = [player,_config2] call BIS_fnc_invAdd;
 if (_isOk) then {
 	//Remove item
 	player removeWeapon _item;
+
+	if (vehicle player != player) then {
+		_display = findDisplay 106;
+		_display closeDisplay 0;
+	};
 	
 	//Add magazines if needed
 	if (_create in ["MeleeHatchet_DZE","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
@@ -72,6 +77,7 @@ if (_isOk) then {
 			};
 		};
 	};		
+
 } else {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 	
