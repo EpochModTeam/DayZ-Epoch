@@ -5457,25 +5457,25 @@
 		  <Czech>Vyrobit Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_266">
-		  <Original>Stack Silver Bar</Original>
-		  <English>Stack Silver Bar</English>
-		  <German>Silberbarren Stapel</German>
-		  <Russian>Уложить в серебряный слиток</Russian>
+		  <Original>Craft Silver Bar</Original>
+		  <English>Craft Silver Bar</English>
+      <!--<German>Silberbarren Stapel</German> -->
+      <!--<Russian>Уложить в серебряный слиток</Russian> -->
 		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Stapel bar van Zilver</Dutch>
+      <!--<Dutch>Stapel bar van Zilver</Dutch> -->
 		  <!-- <French></French> -->
-		  <Czech>Poskládat Stříbrnou cihlu</Czech>
+      <!--<Czech>Poskládat Stříbrnou cihlu</Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
-		  <Original>Stack Gold Bar</Original>
-		  <English>Stack Gold Bar</English>
-		  <German>Goldbarren Stapel</German>
-		  <Russian>Уложить в золотой слиток</Russian>
-		  <!-- <Spanish></Spanish> -->
-		  <Dutch>Stapel bar van Goud</Dutch>
-		  <!-- <French></French> -->
-		  <Czech>Poskládat Zlatou cihlu</Czech>
-		</Key>
+		  <Original>Craft Gold Bar</Original>
+		  <English>Craft Gold Bar</English>
+      <!-- <German>Goldbarren Stapel</German> -->
+      <!-- <Russian>Уложить в золотой слиток</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Stapel bar van Goud</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Poskládat Zlatou cihlu</Czech> -->
+    </Key>
 		<Key ID="STR_EPOCH_PLAYER_268">
 		  <Original>Wear %1</Original>
 		  <English>Wear %1</English>
