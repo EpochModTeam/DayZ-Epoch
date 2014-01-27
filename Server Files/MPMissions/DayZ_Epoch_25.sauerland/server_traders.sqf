@@ -156,9 +156,9 @@ menu_RU_Doctor = [
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
 ];
-// Medical Supplies 2
+// Medical Supplies
 menu_Dr_Hladik_EP1 = [
-	[["Chem-lites/Flares",666],["Medical Supplies",665],["Smoke Grenades",668]],
+	[["Chem-lites/Flares",542],["Medical Supplies",541],["Smoke Grenades",543]],
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
-	"neutral"
+	"friendly"
 ];
