@@ -35,6 +35,7 @@ _item =  _this select 2;
 _abort = false;
 _distance = 3;
 _reason = "";
+_waterLevel = 0;
 
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
@@ -103,7 +104,7 @@ if (_canDo) then {
 				{
 					_itemIn = _x select 0;
 					_countIn = _x select 1;
-	
+
 					_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;	
 	
 					if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
@@ -158,11 +159,16 @@ if (_canDo) then {
 						_tobe_removed_total = _tobe_removed_total + _countIn;
 	
 						{					
-							if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
+							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
+							if( (_removed < _countIn) && ((_x == _itemIn) || _configParent == _itemIn)) then {
 								_num_removed = ([player,_x] call BIS_fnc_invRemove);
 								_removed = _removed + _num_removed;
 								_removed_total = _removed_total + _num_removed;
 								if(_num_removed >= 1) then {
+									//diag_log format["debug remove: %1 of: %2", _configParent, _x];
+									if (_x == "ItemWaterbottle" || _configParent == "ItemWaterbottle") then {
+										_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
+									};
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
 							};
@@ -196,6 +202,16 @@ if (_canDo) then {
 								_itemOut = _x select 0;
 								_countOut = _x select 1;
 		
+								if (_itemOut == "ItemWaterbottleUnfilled") then {
+									
+									if (_waterLevel > 0) then {
+										_itemOut = format["ItemWaterbottle%1oz",_waterLevel];
+									};
+									
+								};
+
+								 diag_log format["Checking for water level: %1", _waterLevel];
+
 								for "_x" from 1 to _countOut do {
 									player addMagazine _itemOut;
 								};
