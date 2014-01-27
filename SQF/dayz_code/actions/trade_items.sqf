@@ -136,12 +136,12 @@ while {r_autoTrade} do {
 			_qty = {_x == _part_in} count magazines player;
 			_needed =  _qty_in - _qty;
 			cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+			_abort = true;
 		};
 	};
+	if(_abort) exitWith {r_autoTrade = false};
 	
 	sleep 1;
-
-	if(_abort || !_canAfford) exitWith {r_autoTrade = false};
 };
 
 DZE_ActionInProgress = false;
