@@ -52,7 +52,7 @@ switch (_variable) do {
 	};
 	
 	case "HideObj": {
-		PVDZE_obj_Hide = _arraytosend;
+		PVDZE_obj_Hide = _arraytosend select 0;
 		_owner publicVariableClient "PVDZE_obj_Hide";
 	};
 	
