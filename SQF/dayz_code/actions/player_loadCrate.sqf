@@ -54,6 +54,8 @@ if(_type == "backpack") then {
 	_b0x1337 addBackpackCargoGlobal  [_create,_qty];
 };
 
+_b0x1337 setPosATL _location;
+
 player reveal _b0x1337;
 
 player action ["Gear", _b0x1337];

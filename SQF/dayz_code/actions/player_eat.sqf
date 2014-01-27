@@ -58,6 +58,7 @@ if (_hasoutput and !_invehicle) then {
         _iPos = getPosATL player;
 		_radius = 0.0;
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+		_item setposATL _iPos;
     } else {
         _item = _nearByPile select 0;
     };
