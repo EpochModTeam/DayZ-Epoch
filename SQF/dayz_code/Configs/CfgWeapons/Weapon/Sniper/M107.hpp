@@ -47,3 +47,4 @@ class m107_DZ: m107
 		};
 	};
 };
+class m107_SKN : m107_DZ {};
