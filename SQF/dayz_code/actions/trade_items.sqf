@@ -15,8 +15,6 @@ _textPartIn = (_this select 3) select 5;
 _textPartOut = (_this select 3) select 6;
 _traderID = (_this select 3) select 7;
 
-_removed = 0;
-
 _bos = 0;
 if(_buy_o_sell == "sell") then {
 	_bos = 1;
@@ -29,6 +27,7 @@ r_autoTrade = true;
 while {r_autoTrade} do {
 
 	_removed = 0;
+	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
 
 	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
@@ -113,19 +112,16 @@ while {r_autoTrade} do {
 			publicVariableServer  "PVDZE_obj_Trade";
 
 			if(_bos == 0) then {
-				
 				// only wait for result when buying
 				waitUntil {!isNil "dayzTradeResult"};
-
 				if(dayzTradeResult == "PASS") then {
-					
 					_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
 					if (_done) then {
 						for "_x" from 1 to _qty_out do {
 							player addMagazine _part_out;
 						};
+						cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 					};
-					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 				};
 			} else {
 				cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
