@@ -1,4 +1,4 @@
-[NEW] Napf Island with permission from #momo# now included by default. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
+[NEW] Napf Island v0.99 with permission from #momo# now included by default. http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta\
 [NEW] WIP Sauerland Map v1.7.00.2 with permission from falconsan now included by default. http://www.s6computer.de/
 
 [NEW] Optimized Server/Client Communication with PVS+PVC methods from DayZ Mod 1.8. @Skaronator
