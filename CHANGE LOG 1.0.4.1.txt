@@ -1,5 +1,6 @@
 
-
+[FIXED] Issue that prevented the server from starting. @Skaronator
+[FIXED] Some tipos in the loot table. @Skaronator
 
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
