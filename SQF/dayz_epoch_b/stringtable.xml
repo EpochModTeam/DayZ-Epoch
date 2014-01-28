@@ -4804,7 +4804,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 1 cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_2">
 			<Original>Add 2 bars</Original>
@@ -4814,7 +4814,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 2 cihly</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_3">
 			<Original>Add 3 bars</Original>
@@ -4824,7 +4824,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 3 cihly</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_4">
 			<Original>Add 4 bars</Original>
@@ -4834,7 +4834,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 4 cihly</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_5">
 			<Original>Add 5 bars</Original>
@@ -4844,7 +4844,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 5 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_6">
 			<Original>Add 6 bars</Original>
@@ -4854,7 +4854,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 6 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_7">
 			<Original>Add 7 bars</Original>
@@ -4864,7 +4864,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 7 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_8">
 			<Original>Add 8 bars</Original>
@@ -4874,7 +4874,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 8 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_9">
 			<Original>Add 9 bars</Original>
@@ -4884,7 +4884,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 10oz cihlu</Czech> -->
+			<Czech>Přidat 9 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211_1">
 			<Original>Remove 1 bar</Original>
@@ -4894,7 +4894,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 1oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 1oz cihlu</Czech> -->
+			<Czech>Odebrat 1 cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211">
 			<Original>Unstack</Original>
@@ -4904,7 +4904,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 1oz balk</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat 1oz cihlu</Czech> -->
+			<Czech>Odstackovat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_212">
 			<Original>Salvage Scrap</Original>
@@ -5464,7 +5464,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel bar van Zilver</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat Stříbrnou cihlu</Czech> -->
+			<Czech>Vytvořit Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
 			<Original>Craft Gold Bar</Original>
@@ -5474,7 +5474,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel bar van Goud</Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech>Poskládat Zlatou cihlu</Czech> -->
+			<Czech>Vytvořit Zlatou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_268">
 			<Original>Wear %1</Original>
