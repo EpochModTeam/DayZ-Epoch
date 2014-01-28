@@ -227,8 +227,10 @@ if (_finished) then {
 		};
 		dayzTradeResult = nil;
 	} else {
-		_needed =  _qty_in - _qty;
+		
 		if(_buy_o_sell == "buy") then {
+			_qty = {_x == _part_in} count magazines player;
+			_needed =  _qty_in - _qty;
 			cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 		} else {
 			cutText [format[(localize "str_epoch_player_185"),_textPartIn] , "PLAIN DOWN"];
