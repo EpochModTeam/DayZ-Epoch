@@ -46,8 +46,7 @@ if (isServer and isNil "sm_done") then {
 	
 	_BuildingQueue = [];
 	_objectQueue = [];
-	_finalEpochObjArray = [];
-
+	
 	if ((_hiveResponse select 0) == "ObjectStreamStart") then {
 		diag_log ("HIVE: Commence Object Streaming...");
 		_key = format["CHILD:302:%1:", dayZ_instance];
@@ -68,7 +67,6 @@ if (isServer and isNil "sm_done") then {
 		diag_log ("HIVE: got " + str(_bQty) + " Epoch Objects and " + str(_vQty) + " Vehicles");
 	};
 	
-
 	// # NOW SPAWN OBJECTS #
 	_totalvehicles = 0;
 	{
