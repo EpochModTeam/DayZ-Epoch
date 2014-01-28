@@ -5,8 +5,8 @@
 [NEW] Modular building spawning now ahead on server start, vehicles spawning after it. @Skaronator @zabn
 [NEW] Maintain Area should work now much better. The Server update the Object itself and doesnt remove and rebuild it anymore. @Skaronator
 [NEW] Updated Hive Dll to latest from rajkosto and added custom child 396 and 397 call to update the datestamp of base objects. *See notes below! @Tansien @vbawol
+[NEW] Trading now makes change and auto combines into the highest denomination. @vbawol
 
-[ADDED] Trading now makes change and auto combines into the highest denomination. @vbawol
 [ADDED] Cars, small Trucks, and Boats now able to be lifting with Chinooks only. Lifted vehicle must be unlocked and unmanned. Enabled by default use DZE_HeliLift = false; in init.sqf to disable. @Zabn @vbawol
 [ADDED] 40% chance to payout a single gem on removal of mine ruins. @vbawol
 [ADDED] M107_DZ to Military, MilitarySpecial, IndustrialMilitary and Helicrash loottable. @Sequisha
@@ -14,25 +14,25 @@
 [ADDED] New enterable building added for Chernarus and other maps. @Sequisha
 [ADDED] Allow Admins To Customize Loot Spawn Timer using DZE_LootSpawnTimer via init.sqf. Default: 10 @SGanthony
 [ADDED] Provide option to have loot tables loaded from mission file. DZE_MissionLootTable = true; will look for loot configs via missionConfigFile. @vbawol
-[ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant 
+[ADDED] Added Craftable/Buildable Wood Crate Storage. Recipe 6 x PartWoodLumber = ItemWoodCrateKit. @Mochnant
 [ADDED] BAF_Merlin_DZE - transportMaxWeapons 15, transportMaxMagazines 150, transportmaxbackpacks 5. @Skaronator
 [ADDED] Added back BAF_AS50_scoped_DZ configs, still not on traders or loot tables. @vbawol
-[ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable 
+[ADDED] Placing a plot pole now creates a preview of the "safe" build area protected by the plot pole. This is only viewable
         by the plot owner, will disappear upon logout, and is only re-creatable by re-placing the plot pole. @dayz10k @vos
-[ADDED] Global variabsle to allow building on roads with DZE_BuildOnRoads = true; (Default: DZE_BuildOnRoads = false;) @dayz10k
-[ADDED] Global variable to set plot pole radius and exclusion zone, enabled via mission file. DZE_PlotPole = [x,y] in the mission file controls the [Radius, Exclusion zone]. 
+[ADDED] Global variable to allow building on roads with DZE_BuildOnRoads = true; (Default: DZE_BuildOnRoads = false;) @dayz10k
+[ADDED] Global variable to set plot pole radius and exclusion zone, enabled via mission file. DZE_PlotPole = [x,y] in the mission file controls the [Radius, Exclusion zone].
         Default: DZE_PlotPole = [30,45]. @dayz10k @Skaronator
 [ADDED] Global variable to disable Player Zombies with DZE_PlayerZed = false; (Default: DZE_PlayerZed = true;) @Skaronator
 
 
 [FIXED] Anti-Teleport Log System. @Skaronator
-[FIXED] Wrong german translation "Holzkiste geöffnet.". @Fank @vbawol
+[FIXED] Wrong German translations. @Fank
 [FIXED] Fix medical actions in vehicles. @icomrade
 [FIXED] Wrong KSVK class spawning on mass graves. @Skaronator via MGT
 [FIXED] Armor value for RBWheel on SUV was lower than it should have been. @SGanthony
 [FIXED] Fixed issues with losing weapons when on graves @vbawol - http://epochmod.com/forum/index.php?/topic/5092-player-grave/?p=33281
 [FIXED] More Localization (translations).  @dayz10k, @VeryBigBro (Russian), @JoSchaap (Dutch), @Geodar (Czech), @krazey (German)
-[FIXED] Fixed incorect spelling of chainsaw name was horlite needed to be hermlite. @vbawol
+[FIXED] Fixed incorrect spelling of chainsaw name was horlite needed to be hermlite. @vbawol
 [FIXED] Remove nearest tranktrap via toolbox not working properly. @dayz10k
 [FIXED] Lingor trader spawn. @dayz10k @sekra
 [FIXED] Disappearing of Vault while unlocking. (Need Feedback!) @Skaronator
@@ -41,19 +41,20 @@
 [FIXED] You will no longer get a 3 by 3H - barrier cube if you remove a 5H - barrier cube @Skaronator
 [FIXED] BattlEye kicks for some players on death. @Skaronator
 
-[CHANGED] Drastically increased base wood and cinder building armor levels. Doors now have higher armor than walls. @vbawol
+[CHANGED] Changed currency conversion rates to multiples of 10. @vbawol
+[CHANGED] Drastically increased base building armor levels. Doors now have much higher armor than walls. @vbawol
 [CHANGED] Extended Trader logging and fix for sold itemnames @ctc.Sebi
-[CHANGED] Balance Loottable. @Sequisha
-[CHANGED] Lowered Safe weapon storage count to 25, to address reports of more safe inventory issues after it was rasied to 50. @vbawol
+[CHANGED] Balance Loot table. @Sequisha
+[CHANGED] Lowered Safe weapon storage count to 25, to address reports of more safe inventory issues after it was raised to 50. @vbawol
 [CHANGED] Prices were reviewed and modified for many of the higher tiered weapons/ammo/vehicles/food. @dayz10k
 [CHANGED] All copper prices have been changed to 2 silver to buy, 1 silver to sell. @dayz10k
 [CHANGED] Radius check for Remove Nearest Camo Net (from 10m to 3m). @dayz10k
-[CHANGED] Loot Improvments (Based on the Feedback of the Skaronator.com Server) @Skaronator
+[CHANGED] Loot Improvements (Based on the Feedback of the Skaronator.com Server) @Skaronator
 
 [REMOVED] Copper is no longer a usable currency. Existing copper will remain in game, but has no current use. @dayz10k
 
 [SERVER INFO] Updated Hive dll requires DatabaseMySql.dll in arma 2 oa root and visual studio 2013 redistributable x86 installed: http://www.microsoft.com/en-us/download/details.aspx?id=40784
-[SERVER INFO] Removed dayz_vb.bikey and dayz.bikey keys and added new versioned dayz_epoch104.bikey key. Thanks to @Tansien for the suggestion. @vbawol
+[SERVER INFO] Removed dayz_vb.bikey and dayz.bikey keys and added new version ed dayz_epoch104.bikey key. Thanks to @Tansien for the suggestion. @vbawol
 [SERVER INFO] Also moved external bikeys to sub folder, for best security use only the bikeys for the map your running.
 [SERVER INFO] pook_H13_amphib, GNT_C185F and GNT_C185E causes Server FPS issues and should not be used. https://github.com/vbawol/DayZ-Epoch/issues/969
 
