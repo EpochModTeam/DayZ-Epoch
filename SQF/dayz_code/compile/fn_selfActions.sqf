@@ -111,7 +111,7 @@ _allowedDistance = 4;
 _isAir = cursorTarget isKindOf "Air";
 _isShip = cursorTarget isKindOf "Ship";
 if(_isAir or _isShip) then {
-	_allowedDistance = 6;
+	_allowedDistance = 8;
 };
 
 if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cursorTarget < _allowedDistance) and _canDo) then {	//Has some kind of target
