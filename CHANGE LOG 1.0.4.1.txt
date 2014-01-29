@@ -1,3 +1,4 @@
+[FIXED] Reclassed Land_Ind_Pec_03b to fix ladder errors in log file. @vbawol
 [FIXED] Issue that prevented the server from starting. @Skaronator
 [FIXED] Some typos in the loot table. @Skaronator
 
