@@ -21,14 +21,15 @@ class Mission
 		"pook_h13",
 		"csj_gyroac",
 		"map_eu",
-		"jetskiyanahuiaddon",
-		"warfarebuildings"
+		"jetskiyanahuiaddon"
 	};
 	addOnsAuto[]=
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
+		"warfarebuildings",
 		"ibr_panthera2"
+		
 	};
 	randomSeed=11171215;
 	class Intel
