@@ -18,11 +18,16 @@ if (local _animalbody) then {
 			sleep 5;
 		}; 
 		
+		hideBody _body;
+
 		/* PVS/PVC - Skaronator */
 		_inRange = _pos nearEntities ["CAManBase",100];
 		{
-			PVDZE_send = [_x,"HideBody",[_body]];
-			publicVariableServer "PVDZE_send";
+			// only send to other players
+			if(isPlayer _x and _x != player) then {
+				PVDZE_send = [_x,"HideBody",[_body]];
+				publicVariableServer "PVDZE_send";
+			};
 		} forEach _inRange;
 
 		sleep 5;
