@@ -49,7 +49,10 @@ while {true} do {
 	};
 
 	//Hunger
-	_hunger = +((((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal) * 5) + _speed + dayz_myLoad) * 3;
+	_hunger = + (((((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal) * 5)*3)+1); // +1 added because no blood loss would otherwise be no hunger
+	if (!_inVehicle) then {
+		_hunger = _hunger + ((_speed + dayz_myLoad) * 3);
+	}; // in a car sitting down and weight of pack supported
 	if (time - dayz_panicCooldown < 120) then {
 		_hunger = _hunger * 2;
 	};
