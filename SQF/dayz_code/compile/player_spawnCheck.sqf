@@ -31,10 +31,12 @@ dayz_maxGlobalZombies = dayz_maxGlobalZombiesInit;
 	if(isPlayer _x) then {
 		dayz_maxGlobalZombies = dayz_maxGlobalZombies + dayz_maxGlobalZombiesIncrease;
 	} else {
-		if (local _x) then {
-			dayz_spawnZombies = dayz_spawnZombies + 1;
+		if (_x isKindof zZombie_Base) then { // zombie or AI?
+			if (local _x) then {
+				dayz_spawnZombies = dayz_spawnZombies + 1;
+			};
+			dayz_CurrentZombies = dayz_CurrentZombies + 1;
 		};
-		dayz_CurrentZombies = dayz_CurrentZombies + 1;
 	};
 } foreach _players;
 
