@@ -165,8 +165,11 @@ if (_damage > 0.4) then {	//0.25
 			_pos = getPosATL _unit;
 			_inRange = _pos nearEntities ["CAManBase",1000];
 			{
-				PVDZE_send = [_x,"PlayerBleed",[_unit,_wound,_hit]];
-				publicVariableServer "PVDZE_send";
+				// only send to other players
+				if(isPlayer _x and _x != player) then {
+					PVDZE_send = [_x,"Bleed",[_unit,_wound,_hit]];
+					publicVariableServer "PVDZE_send";
+				};
 			} forEach _inRange;
 
 			//Set Injured if not already

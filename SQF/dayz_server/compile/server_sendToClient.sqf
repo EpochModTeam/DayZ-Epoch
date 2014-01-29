@@ -46,7 +46,7 @@ switch (_variable) do {
 		_owner publicVariableClient "usecBreakLegs";
 	};
 	
-	case "PZ_BreakLegs": {
+	case "Bleed": {
 		usecBleed = _arraytosend;
 		_owner publicVariableClient "usecBleed";
 	};
