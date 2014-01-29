@@ -10,8 +10,11 @@ if (!(isNull _backpack) and local _backpack) then {
 		_pos = getPosATL player;
 		_inRange = _pos nearEntities ["CAManBase",300];
 		{
-			PVDZE_send = [_x,"HideObj",[_backpack]];
-			publicVariableServer "PVDZE_send";
+			// run only on other players 
+			if(isPlayer _x and _x != player) then {
+				PVDZE_send = [_x,"HideObj",[_backpack]];
+				publicVariableServer "PVDZE_send";
+			};
 		} forEach _inRange;
 	};
 };
