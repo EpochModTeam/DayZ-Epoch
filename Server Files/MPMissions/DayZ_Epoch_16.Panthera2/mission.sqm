@@ -27,9 +27,7 @@ class Mission
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
-		"warfarebuildings",
 		"ibr_panthera2"
-		
 	};
 	randomSeed=11171215;
 	class Intel
@@ -1510,10 +1508,10 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="PlanicaTraders_1";
-			expCond="(player distance PlanicaTraders) < 100; ";
-			expActiv="TitleText[""Now Entering Trader City Planica"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Planica"",""PLAIN DOWN""]; canbuild = true;";
+			name="MelloVehicleRepair";
+			expCond="(player distance MelloVehicleRepair) < 100; ";
+			expActiv="TitleText[""Now Entering Mello"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Mello"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 			};
