@@ -21,7 +21,8 @@ class Mission
 		"pook_h13",
 		"csj_gyroac",
 		"map_eu",
-		"jetskiyanahuiaddon"
+		"jetskiyanahuiaddon",
+		"warfarebuildings"
 	};
 	addOnsAuto[]=
 	{
