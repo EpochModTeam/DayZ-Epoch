@@ -7,7 +7,13 @@ _obj = 			_this select 0;
 _type = toLower(typeOf _obj);
 
 //diag_log format["Spawning loot for: %1", _type];
+
+
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
+if (DZE_MissionLootTable) then {
+	_config = missionConfigFile >> "CfgBuildingLoot" >> _type;
+};
+
 _positions =	 [] + getArray (_config >> "lootPos");
 _itemTypes =	[] + getArray (_config >> "itemType");
 _lootChance =	getNumber (_config >> "lootChance");

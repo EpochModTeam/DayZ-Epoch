@@ -96,9 +96,11 @@ while {true} do {
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
 
-		
-		
 		_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
+		if (DZE_MissionLootTable) then {
+			_config = missionConfigFile >> "CfgBuildingLoot" >> _lootTable;
+		};
+
 		_itemTypes =	[] + getArray (_config >> "itemType");
 		_index =        dayz_CBLBase find toLower(_lootTable);
 		_weights =		dayz_CBLChances select _index;

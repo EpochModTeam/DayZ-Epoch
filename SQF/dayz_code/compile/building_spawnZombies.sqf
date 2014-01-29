@@ -8,6 +8,9 @@ if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {};
 _obj = _this select 0;
 _type = 		typeOf _obj;
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
+if (DZE_MissionLootTable) then {
+	_config = missionConfigFile >> "CfgBuildingLoot" >> _type;
+};
 _canLoot = 		isClass (_config);
 
 if (_canLoot) then {
