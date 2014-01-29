@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["Tanny_PMC","BAF_Soldier_AMG_W","BAF_Soldier_AAR_DDPM","CZ_Special_Forces_MG_DES_EP1","Damsel5","GUE_Commander","GUE_Woodlander1","GUE_Woodlander3","GUE_Soldier_Sab","GUE_Soldier_Pilot","GUE_Soldier_2","Soldier_PMC","Citizen2_EP1","Rita_Ensler_EP1","RU_Farmwife1","US_Soldier_Medic_EP1","USMC_Soldier_TL","USMC_SoldierS_Engineer","UN_CDF_Soldier_AAT_EP1","ValentinaVictim","UN_CDF_Soldier_MG_EP1","GUE_Soldier_1","FR_Corpsman","GUE_Soldier_AR","Dr_Hladik_EP1","RU_Villager1"];
+serverTraders = ["Tanny_PMC","BAF_Soldier_AMG_W","BAF_Soldier_AAR_DDPM","CZ_Special_Forces_MG_DES_EP1","Damsel5","GUE_Commander","GUE_Woodlander1","GUE_Woodlander3","GUE_Soldier_Sab","GUE_Soldier_Pilot","GUE_Soldier_2","Soldier_PMC","Citizen2_EP1","Rita_Ensler_EP1","RU_Farmwife1","US_Soldier_Medic_EP1","USMC_Soldier_TL","USMC_SoldierS_Engineer","UN_CDF_Soldier_AAT_EP1","ValentinaVictim","UN_CDF_Soldier_MG_EP1","GUE_Soldier_1","FR_Corpsman","GUE_Soldier_AR","Dr_Hladik_EP1","RU_Villager1","Reynolds_PMC"];
 // Hero Vendor P
 menu_Tanny_PMC = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
@@ -159,6 +159,12 @@ menu_RU_Doctor = [
 // Boat Trader 1P
 menu_RU_Villager1 = [
 	[["Boats Armed",673],["Boats Unarmed",672]],
+	[],
+	"neutral"
+];
+// Neutral Building/Parts 4p
+menu_Reynolds_PMC = [
+	[["Building Supplies",678],["Toolbelt Items",679],["Vehicle Parts",677]],
 	[],
 	"neutral"
 ];
