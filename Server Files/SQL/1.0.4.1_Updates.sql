@@ -1,0 +1,2 @@
+UPDATE `traders_data` SET `buy` = '[4,"ItemBriefcase100oz",1]' WHERE `item` LIKE  '%pipebomb%';
+UPDATE `traders_data` SET `buy` = '[4,"ItemBriefcase100oz",1]', `sell` = '[1,"ItemBriefcase100oz",1]' WHERE `item` LIKE  '%HMMWV_M1151_M2_CZ_DES_EP1%';
