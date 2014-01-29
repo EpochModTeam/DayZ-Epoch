@@ -1,6 +1,6 @@
-[FIXED] Fixed backpack disappering issue. @vbawol
+[FIXED] Fixed backpack disappearing issue. @vbawol
 [FIXED] Some fixes and optimizing to PVS/PVC system to only send to other players nearby. @vbawol
-[FIXED] Bleeding was not visable to other players due to typo in new PVS/PVC system. @vbawol
+[FIXED] Bleeding was not visible to other players due to typo in new PVS/PVC system. @vbawol
 [FIXED] Reclassed Land_Ind_Pec_03b to fix ladder errors in log file. @vbawol
 [FIXED] Issue that prevented the server from starting. @Skaronator
 [FIXED] Some typos in the loot table. @Skaronator
