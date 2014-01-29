@@ -27,6 +27,7 @@ class Mission
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
+		"warfarebuildings",
 		"ibr_panthera2"
 	};
 	randomSeed=11171215;
