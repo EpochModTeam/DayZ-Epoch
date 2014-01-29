@@ -31,10 +31,12 @@ dayz_maxGlobalZombies = dayz_maxGlobalZombiesInit;
 	if(isPlayer _x) then {
 		dayz_maxGlobalZombies = dayz_maxGlobalZombies + dayz_maxGlobalZombiesIncrease;
 	} else {
-		if (local _x) then {
-			dayz_spawnZombies = dayz_spawnZombies + 1;
+		if (_x isKindOf "zZombie_Base") then {
+			if (local _x) then {
+				dayz_spawnZombies = dayz_spawnZombies + 1;
+			};
+			dayz_CurrentZombies = dayz_CurrentZombies + 1;
 		};
-		dayz_CurrentZombies = dayz_CurrentZombies + 1;
 	};
 } foreach _players;
 
@@ -96,6 +98,9 @@ if (_nearbyCount < 1) exitwith
 {
 	_type = typeOf _x;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
+	if (DZE_MissionLootTable) then {
+		_config = missionConfigFile >> "CfgBuildingLoot" >> _type;
+	};
 	_canLoot = 		isClass (_config);
 	
 	if(_canLoot) then {

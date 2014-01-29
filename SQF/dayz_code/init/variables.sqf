@@ -593,7 +593,12 @@ if(!isDedicated) then {
 	zeroPreviousWeather = [0,0,[0,0],0];
 	zeroCurrentWeather = [0,0,[0,0],0];
 	
-	dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	if (DZE_MissionLootTable) then {
+		dayz_baseTypes = 		getArray (missionConfigFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	} else {
+		dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	};
+	
 	
 	//temperature variables
 	dayz_temperatur 		= 	36;		//TeeChange

@@ -1176,7 +1176,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			position[]={5192.2104,62.495663,4994.3667};
@@ -1266,8 +1266,8 @@ class Mission
 		class Item14
 		{
 			position[]={5232.6299,1.9700195,8228.4785};
-			name="WholesalerWest";
-			text="West's Wholesaler";
+			name="WholesalerNorth";
+			text="North's Wholesaler";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
@@ -1335,10 +1335,18 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBrown";
 		};
+		class Item23
+		{
+			position[]={3804.6707,-1.1429843,7656.6055};
+			name="Boat2";
+			text="North Boat Vendor";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
 	};
 	class Sensors
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			position[]={4419.9492,22.076105,1629.0402};
@@ -1501,10 +1509,27 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			name="PlanicaTraders_1";
-			expCond="(player distance PlanicaTraders) < 100; ";
-			expActiv="TitleText[""Now Entering Trader City Planica"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Planica"",""PLAIN DOWN""]; canbuild = true;";
+			name="MelloVehicleRepair";
+			expCond="(player distance MelloVehicleRepair) < 100; ";
+			expActiv="TitleText[""Now Entering Mello"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving Mello"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={3807.3525,0.86945671,7661.0386};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="BOAT12";
+			expCond="(player distance BOAT12) < 100; ";
+			expActiv="TitleText[""Now Entering North Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now Leaving North Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 			};

@@ -110,8 +110,16 @@ for "_i" from 0 to ((count (_config)) - 1) do {
 private["_i","_type","_config","_canZombie","_canLoot"];
 dayz_ZombieBuildings = [];
 dayz_LootBuildings = [];
-for "_i" from 0 to (count (configFile >> "CfgBuildingLoot") - 1) do {
-	_type = (configFile >> "CfgBuildingLoot") select _i;
+
+_config = [];
+if (DZE_MissionLootTable) then {
+	_config = missionConfigFile >> "CfgBuildingLoot";
+} else {
+	_config = configFile >> "CfgBuildingLoot";
+};
+
+for "_i" from 0 to (count (_config) - 1) do {
+	_type = _config select _i;
 	_canZombie = 	getNumber (_type >> "zombieChance") > 0;
 	_canLoot = 		getNumber (_type >> "lootChance") > 0;
 	if(_canZombie) then {

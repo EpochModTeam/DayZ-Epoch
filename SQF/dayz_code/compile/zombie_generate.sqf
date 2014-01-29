@@ -16,7 +16,12 @@ _agent = 	objNull;
 if (!_isNoone) exitWith {};
 
 if (count _unitTypes == 0) then {
-	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+
+	if (DZE_MissionLootTable) then {
+		_unitTypes = 	[]+ getArray (missionConfigFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	} else {
+		_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	};
 };
 
 _type = _unitTypes call BIS_fnc_selectRandom;

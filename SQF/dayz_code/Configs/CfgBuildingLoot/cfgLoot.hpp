@@ -589,7 +589,7 @@ class CfgLoot {
 			"Skin_SurvivorWpink_DZ",
 			"Skin_SurvivorWurban_DZ",
 			"Skin_INS_Bardak_DZ",
-			"Skin_INS_Worker2_DZ",
+			"Skin_INS_Worker2_DZ"
 		},
 		{
 			0.11,
@@ -783,7 +783,7 @@ class CfgLoot {
 			"Saiga12K",
 			"Remington870_lamp",
 			"Crossbow_DZ",
-			"M1014",
+			"M1014"
 		},
 		{
 			0.25,
@@ -836,7 +836,7 @@ class CfgLoot {
 			"VSS_vintorez",
 			"SCAR_H_LNG_Sniper_SD",
 			"M14_EP1",
-			"DMR",
+			"DMR"
 		},
 		{
 			0.1,
@@ -889,7 +889,7 @@ class CfgLoot {
 			"MP5A5",
 			"bizon_silenced",
 			"UZI_SD_EP1",
-			"MP5SD",
+			"MP5SD"
 		},
 		{
 			0.25,
@@ -978,7 +978,7 @@ class CfgLoot {
 			"30Rnd_556x45_Stanag",
 			"30Rnd_545x39_AK",
 			"30Rnd_556x45_StanagSD",
-			"20Rnd_762x51_FNFAL",
+			"20Rnd_762x51_FNFAL"
 		},
 		{
 			0.25,
@@ -1065,7 +1065,7 @@ class CfgLoot {
 		{
 			"Saiga12K",
 			"Remington870_lamp",
-			"M1014",
+			"M1014"
 		},
 		{
 			0.25,

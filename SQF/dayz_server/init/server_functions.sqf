@@ -223,10 +223,19 @@ RoadList = MarkerPosition nearRoads DynamicVehicleArea;
 // Very taxing !!! but only on first startup
 BuildingList = [];
 {
-	if (isClass (configFile >> "CfgBuildingLoot" >> (typeOf _x))) then
-	{
-		BuildingList set [count BuildingList,_x];
+	if (DZE_MissionLootTable) then {
+		if (isClass (missionConfigFile >> "CfgBuildingLoot" >> (typeOf _x))) then
+		{
+				BuildingList set [count BuildingList,_x];
+		};
+	} else {
+		if (isClass (configFile >> "CfgBuildingLoot" >> (typeOf _x))) then
+		{
+			BuildingList set [count BuildingList,_x];
+		};
 	};
+	
+	
 } forEach (MarkerPosition nearObjects ["building",DynamicVehicleArea]);
 
 spawn_vehicles = {
