@@ -65,8 +65,10 @@ if (_ammo isKindOf "SmokeShell") then {
 			_pos = getPosATL player;
 			_inRange = _pos nearEntities ["CAManBase",1250];
 			{
-				PVDZE_send = [_x,"RoadFlare",[_projectile,0]];
-				publicVariableServer "PVDZE_send";
+				if(isPlayer _x and _x != player) then {
+					PVDZE_send = [_x,"RoadFlare",[_projectile,0]];
+					publicVariableServer "PVDZE_send";
+				};
 			} forEach _inRange;
 			
 			_id = _this spawn player_throwObject;
@@ -79,8 +81,10 @@ if (_ammo isKindOf "SmokeShell") then {
 			_pos = getPosATL player;
 			_inRange = _pos nearEntities ["CAManBase",1250];
 			{
-				PVDZE_send = [_x,"RoadFlare",[_projectile,1]];
-				publicVariableServer "PVDZE_send";
+				if(isPlayer _x and _x != player) then {
+					PVDZE_send = [_x,"RoadFlare",[_projectile,1]];
+					publicVariableServer "PVDZE_send";
+				}
 			} forEach _inRange;
 			
 			_id = _this spawn player_throwObject;
