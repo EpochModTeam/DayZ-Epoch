@@ -122,6 +122,9 @@ while {r_autoTrade} do {
 						};
 						cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 					};
+				} else {
+					_abort = true;
+					cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 				};
 			} else {
 				cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
