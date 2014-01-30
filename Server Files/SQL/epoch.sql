@@ -1714,7 +1714,7 @@ INSERT INTO `Traders_DATA` VALUES(7555, '["bizon",3]', 250, '[1,"ItemGoldBar10oz
 INSERT INTO `Traders_DATA` VALUES(7556, '["M4A1_HWS_GL_SD_Camo",3]', 250, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 459, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7557, '["KSVK_DZE",3]', 250, '[3,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 459, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7558, '["HandGrenade_east",1]', 257, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 529, 'trade_items');
-INSERT INTO `Traders_DATA` VALUES(7565, '["bulk_ItemWire",1]', 250, '[3,"ItemSilverBar10oz",1]', '[3,"ItemSilverBar10oz",1]', 0, 555, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7559, '["bulk_ItemWire",1]', 250, '[3,"ItemSilverBar10oz",1]', '[3,"ItemSilverBar10oz",1]', 0, 555, 'trade_items');
 
 -- --------------------------------------------------------
 
