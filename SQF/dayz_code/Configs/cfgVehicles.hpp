@@ -2914,7 +2914,7 @@ class CfgVehicles {
 		transportRepair = 0;
 		transportFuel = 0;
 		typicalCargo[] = {};
-		offset[] = {0,8,3};
+		offset[] = {0,10,3};
 		cost = 0;
 	};
 	class WoodGate_DZ: BuiltItems
