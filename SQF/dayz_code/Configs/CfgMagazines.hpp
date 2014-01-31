@@ -2,6 +2,7 @@ class CfgMagazines {
 	class CA_Magazine;	// External class reference
 
 	// Ammmo
+	#include "CfgMagazines\VehicleAmmo.hpp"
 	class 100Rnd_762x54_PK : CA_Magazine { 
 		scope = 2; 
 		displayName = "PKM Mag."; 
@@ -17,78 +18,6 @@ class CfgMagazines {
 		descriptionShort = "Caliber: 7.62x54mm <br/>Rounds: 100 <br/>Used in: PK"; 
 		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x54_PK.p3d"; 
 	};
-
-	class 29Rnd_30mm_AGS30 : CA_Magazine { 
-		scope = 2; 
-		displayName = "HE Rounds"; 
-		model = "\z\addons\dayz_epoch\models\30mm_mag.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_30mm_mag_ca.paa";
-		ammo = "G_30mm_HE"; 
-		count = 29; 
-		type = "256";
-		initSpeed = 185; 
-		maxLeadSpeed = 100; 
-		nameSound = "grenadelauncher"; 
-		weight = 16;
-	};
-
-	class 50Rnd_127x107_DSHKM : CA_Magazine { 
-		scope = 2; 
-		displayName = "DShKM"; 
-		picture = "\z\addons\dayz_epoch\pictures\equip_Dshkm_mag_ca.paa";
-		model = "\z\addons\dayz_epoch\models\dshkm_mag.p3d";
-		ammo = "B_127x107_Ball"; 
-		count = 50; 
-		type = "256";
-		initSpeed = 850; 
-		maxLeadSpeed = 200; 
-		tracersEvery = 3; 
-		lastRoundsTracer = 5; 
-		nameSound = "mgun"; 
-		weight = 4;
-	};
-	class 100Rnd_127x99_M2 : CA_Magazine { 
-		scope = 2; 
-		displayName = "M2 Machine Gun"; 
-		model = "\z\addons\dayz_epoch\models\50cal_mag.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_50cal_mag_ca.paa";
-		ammo = "B_127x99_Ball"; 
-		count = 100; 
-		type = "256";
-		initSpeed = 930; 
-		maxLeadSpeed = 200; 
-		tracersEvery = 3; 
-		lastRoundsTracer = 5; 
-		nameSound = "mgun"; 
-		weight = 8;
-	};
-	class 2000Rnd_762x51_M134 : CA_Magazine { 
-		count = 2000; 
-		scope = 2; 
-		displayName = "M134 7.62 Nato"; 
-		picture = "\z\addons\dayz_epoch\pictures\equip_m134_mag_ca.paa";
-		model = "\z\addons\dayz_epoch\models\m134_mag.p3d";
-		ammo = "B_762x51_3RndBurst"; 
-		type = "256";
-		maxLeadSpeed = 200; 
-		tracersEvery = 5; 
-		nameSound = "mgun";
-		weight = 50;
-	};
-	class 48Rnd_40mm_MK19 : CA_Magazine { 
-		scope = 2; 
-		displayName = "Mk. 19 40mm"; 
-		model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
-		ammo = "G_40mm_HE"; 
-		count = 48; 
-		type = "256";
-		initSpeed = 240; 
-		maxLeadSpeed = 100; 
-		nameSound = "grenadelauncher"; 
-		weight = 25;
-	};
-
 	class 100Rnd_762x51_M240 : CA_Magazine { 
 		scope = 2; 
 		displayName = "100Rnd. M240"; 
@@ -103,142 +32,9 @@ class CfgMagazines {
 		descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 100 <br/>Used in: M240, Mk 48 Mod 0"; 
 		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x51_M240.p3d"; 
 	};
-
-	// Gems
-	class ItemTopaz : CA_Magazine { 
-		scope = 2; 
-		displayName = "Topaz"; 
-		model = "\z\addons\dayz_epoch\models\topaz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_topaz_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "Topaz"; 
-	};
-	class ItemObsidian : CA_Magazine { 
-		scope = 2; 
-		displayName = "Obsidian"; 
-		model = "\z\addons\dayz_epoch\models\obsidian.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_obsidian_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "Obsidian"; 
-	};
-	class ItemSapphire : CA_Magazine { 
-		scope = 2; 
-		displayName = "Sapphire"; 
-		model = "\z\addons\dayz_epoch\models\sapphire.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_sapphire_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "Sapphire"; 
-	};
-	class ItemAmethyst : CA_Magazine { 
-		scope = 2; 
-		displayName = "Amethyst"; 
-		model = "\z\addons\dayz_epoch\models\amethyst.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_amethyst_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "Amethyst"; 
-	};
-	class ItemEmerald : CA_Magazine { 
-		scope = 2; 
-		displayName = "Emerald"; 
-		model = "\z\addons\dayz_epoch\models\emerald.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_emerald_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "Emerald"; 
-	};
-	class ItemCitrine : CA_Magazine { 
-		scope = 2; 
-		displayName = "Citrine"; 
-		model = "\z\addons\dayz_epoch\models\citrine.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_citrine_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "Citrine"; 
-	};
-	class ItemRuby : CA_Magazine { 
-		scope = 2; 
-		displayName = "Ruby"; 
-		model = "\z\addons\dayz_epoch\models\ruby.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_ruby_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "Ruby"; 
-	};
-	
-	class ItemMixOil : CA_Magazine { 
-		scope = 2; 
-		displayName = "2-Stroke Engine Oil"; 
-		model = "\z\addons\dayz_epoch\models\oilmix.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_oilmix_CA.paa";
-		count = 1; 
-		type = "256";
-		descriptionShort = "2-Stroke Engine Oil"; 
-		sfx = "refuel";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = "Mix Chainsaw Gas"; // TODO: localize
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemJerryMixed",1}};
-				input[] = {{"ItemMixOil",1},{"ItemJerrycan",1}};
-			};
-		};
-	};
-
-	class CSGAS : CA_Magazine { 
-		scope = 2; 
-		type = VSoft;
-		displayName = "Gas"; 
-		descriptionShort = "Gas for Chainsaw"; 
-		count = 1000;
-		picture = "\CA\weapons\data\equip\m_m240_ca.paa";
-		ammo = "Chainsaw_Swing_Ammo"; 
-
-		initSpeed = 100;
-		maxLeadSpeed = 15;
-		tracersEvery = 0; 
-		lastRoundsTracer = 0; 
-		
-		optics = false;
-		distanceZoomMin = 0;
-		distanceZoomMax = 0;
-
-		showEmpty = 0;
-		autoReload = true;
-		canLock = LockNo;
-		
-		//
-		burst = 1;
-		multiplier = 1;
-		ffMagnitude = 0.1;
-		ffFrequency = 1;
-		ffCount = 1;
-
-		class HitEffects {
-			hit_blood = "ImpactBlood";
-			hit_concrete = "ImpactConcrete";
-			hit_foliage = "ImpactWood";
-			hit_foliage_green = "ImpactWood";
-			hit_glass = "ImpactGlass";
-			hit_glass_thin = "ImpactGlassThin";
-			hit_metal = "ImpactMetal";
-			hit_plaster = "ImpactPlaster";
-			hit_rubber = "ImpactRubber";
-			hit_wood = "ImpactWood";
-		};
-	};
-
 	class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 { 
 		count = 200; 
 	};
-
 	class 200Rnd_556x45_M249 : CA_Magazine { 
 		scope = 2; 
 		displayName = "200Rnd. M249 Belt"; 
@@ -255,7 +51,6 @@ class CfgMagazines {
 		descriptionShort = "Caliber: 5.56x45 mm NATO <br/>Rounds: 200  <br/>Used in: M249 SAW"; 
 		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\200Rnd_556x45_M249.p3d"; 
 	};
-
 	class 100Rnd_556x45_M249 : 200Rnd_556x45_M249 { 
 		displayName = "M249 Mag."; 
 		descriptionShort = "Caliber: 5.56x45mm NATO<br/>Rounds: 100<br/>Used in: M249"; 
@@ -287,134 +82,10 @@ class CfgMagazines {
 		descriptionShort = "Caliber: 5.45x39mm Rounds: 75 Used in: RPK-74";
 	};
 
-	 // Items
-	class ItemHotwireKit: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Hotwire kit";
-		model = "\z\addons\dayz_epoch\models\hotwire.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_hotwire_ca.paa";
-		descriptionShort = "Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.";
-		weight = 2;
-	};
-
-	class ItemDocument: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Document";
-		model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
-		descriptionShort = "Unknown document";
-		weight = 0.1;
-		sfx = "document";		
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_188;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				randomOutput = 1;
-				output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1},{"ItemBook1",1},{"ItemBook2",1},{"ItemBook3",1},{"ItemBook4",1},{"ItemNewspaper",1},{"ItemORP",1},{"ItemAVE",1},{"ItemLRK",1},{"ItemTNK",1},{"ItemPlotDeed",1}};
-				input[] = {{"ItemDocument",1}};
-			};
-		};
-
-	};
-	
-	class ItemORP: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = $STR_EPOCH_VEHUP_ORP;
-		model = "\z\addons\dayz_epoch\models\doc_Up1.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_docup1_ca.paa";
-		descriptionShort = $STR_EPOCH_VEHUP_ORP_DESC;
-		weight = 0.1;
-		sfx = "document";
-		class ItemActions
-		{
-			class Upgrades
-			{
-				text = $STR_EPOCH_PLAYER_UPGRADEV;
-				script = "spawn player_upgradeVehicle;";
-			};
-		};
-
-	};
-
-	class ItemAVE: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = $STR_EPOCH_VEHUP_AVE;
-		model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_docup2_ca.paa";
-		descriptionShort = $STR_EPOCH_VEHUP_AVE_DESC;
-		weight = 0.1;
-		sfx = "document";
-		class ItemActions
-		{
-			class Upgrades
-			{
-				text = $STR_EPOCH_PLAYER_UPGRADEV;
-				script = "spawn player_upgradeVehicle;";
-			};
-		};
-
-	};
-
-	class ItemLRK: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = $STR_EPOCH_VEHUP_LRK;
-		model = "\z\addons\dayz_epoch\models\doc_Up3.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_docup3_ca.paa";
-		descriptionShort = $STR_EPOCH_VEHUP_LRK_DESC;
-		weight = 0.1;
-		sfx = "document";
-		class ItemActions
-		{
-			class Upgrades
-			{
-				text = $STR_EPOCH_PLAYER_UPGRADEV;
-				script = "spawn player_upgradeVehicle;";
-			};
-		};
-
-	};
-
-	class ItemTNK: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = $STR_EPOCH_VEHUP_TNK;
-		model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
-		descriptionShort = $STR_EPOCH_VEHUP_TNK_DESC;
-		weight = 0.1;
-		sfx = "document";
-		class ItemActions
-		{
-			class Upgrades
-			{
-				text = $STR_EPOCH_PLAYER_UPGRADEV;
-				script = "spawn player_upgradeVehicle;";
-			};
-		};
-
-	};
-	
+	// Gems
+	#include "CfgMagazines\DZE\Gems.hpp"
+	// Items
+	#include "CfgMagazines\DZE\Items.hpp"
 	class ItemPlotDeed: CA_Magazine
 	{
 		scope = 2;
