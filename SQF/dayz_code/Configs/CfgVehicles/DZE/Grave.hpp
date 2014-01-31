@@ -1,4 +1,3 @@
-class Land_A_tent;
 class GraveDZE: Land_A_tent {
 	vehicleClass = "Survival";
 	displayName = "Grave DZE";

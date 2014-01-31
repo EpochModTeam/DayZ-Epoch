@@ -1,4 +1,3 @@
-class Land_A_tent;
 class TentStorage: Land_A_tent {
 	vehicleClass = "Survival";
 	transportMaxMagazines = 50;
@@ -31,7 +30,6 @@ class TentStorageDomed2: TentStorage {
 	offset[] = {0,2.5,0};
 };
 
-class WeaponHolder;
 class WeaponHolder_ItemTentOld: WeaponHolder {
 	scope = 2;
 	displayName = $STR_EQUIP_NAME_20;

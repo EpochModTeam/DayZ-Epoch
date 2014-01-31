@@ -17,9 +17,11 @@ class CfgVehicles {
 	class Ruins: HouseBase {};
 	#include "CfgVehicles\antihack_plants.hpp"
 	#include "CfgVehicles\DZE\Doors.hpp"
+	class Land_A_tent;	// External class reference
+	#include "CfgVehicles\DZE\Grave.hpp"
+	class WeaponHolder;	// External class reference
 	#include "CfgVehicles\DZE\LockboxStorage.hpp"
 	#include "CfgVehicles\DZE\VaultStorage.hpp"
-	#include "CfgVehicles\DZE\Grave.hpp"
 	#include "CfgVehicles\DZE\TentStorage.hpp"
 
 	class AllVehicles;

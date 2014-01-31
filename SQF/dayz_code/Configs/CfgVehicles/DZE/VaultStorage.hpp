@@ -1,4 +1,3 @@
-class Land_A_tent;
 class VaultStorage: Land_A_tent {
 	placement = "vertical";
 	vehicleClass = "Survival";
@@ -29,7 +28,6 @@ class VaultStorageLocked: Land_A_tent {
 	nounderground = 0;
 };
 
-class WeaponHolder;
 class WeaponHolder_ItemVault: WeaponHolder {
 	scope = 2;
 	displayName = "Safe";

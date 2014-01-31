@@ -1,4 +1,3 @@
-class Land_A_tent;
 class LockboxStorageLocked: Land_A_tent {
 	vehicleClass = "Survival";
 	displayName = "Locked Lockbox";
@@ -27,7 +26,6 @@ class LockboxStorage: Land_A_tent {
 	packedClass = "WeaponHolder_ItemLockbox";
 };
 
-class WeaponHolder;
 class WeaponHolder_ItemLockbox: WeaponHolder {
 	scope = 2;
 	displayName = "Lockbox";
