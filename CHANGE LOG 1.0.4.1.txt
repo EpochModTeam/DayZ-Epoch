@@ -1,3 +1,5 @@
+[ADDED] Option to disable R3F weight system. DZE_R3F_WEIGHT = false in init.sqf to disable. @vbawol
+
 [FIXED] Issue with Scaffolding being too close and killing player. @Fank
 [FIXED] Stuck in infinite trading loop when item is out of stock. @vbawol
 [FIXED] Fixed backpack disappearing issue. @vbawol
