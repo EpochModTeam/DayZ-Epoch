@@ -2636,6 +2636,15 @@ class CfgMagazines {
 				output[] = {{"bulk_FoodbaconCooked",1}};
 				input[] = {{"bulk_empty",1},{"FoodbaconCooked",6}};
 			};
+			class Crafting6
+			{
+				text = $STR_EPOCH_PLAYER_225;
+				script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"bulk_ItemSandbagHalf",1}};
+				input[] = {{"bulk_empty",1},{"ItemSandbag",6}};
+			};
 		};
 	};
 	class bulk_ItemSodaCoke: bulk
@@ -2786,6 +2795,7 @@ class CfgMagazines {
 	class bulk_ItemSandbag: bulk
 	{
 		descriptionShort = "12 x SandBag";
+		weight = 25;
 		class ItemActions
 		{
 			class CreateMags
@@ -2796,7 +2806,29 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+	class bulk_ItemSandbagHalf: bulk
+	{
+		descriptionShort = "6 x SandBag";
+		weight = 12.5;
+		class ItemActions
+		{
+			class CreateMags
+			{
+				text = $STR_EPOCH_PLAYER_209;
+				script = "spawn player_loadCrate;";
+				output[] = {"ItemSandbag",6,"magazine"};
+			};
+			class Crafting
+			{
+				text = $STR_EPOCH_PLAYER_225;
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {};
+				requiretools[] = {"ItemToolbox"};
+				output[] = {{"bulk_ItemSandbag",1}};
+				input[] = {{"bulk_ItemSandbagHalf",1},{"ItemSandbag",6}};
+			};
+		};
+	};
 	class bulk_ItemTankTrap: bulk
 	{
 		descriptionShort = "12 x Tank Trap";
@@ -2834,7 +2866,6 @@ class CfgMagazines {
 			};
 		};
 	};
-	
 	class bulk_ItemWire: bulk
 	{
 		descriptionShort = "12 x Wire Kit";
