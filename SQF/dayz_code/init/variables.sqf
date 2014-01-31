@@ -689,6 +689,10 @@ if(!isDedicated) then {
 	if(isNil "DZE_requireplot") then {
 		DZE_requireplot = 1;
 	};
+	if(isNil "DZE_R3F_WEIGHT") then {
+		DZE_R3F_WEIGHT = true;
+	};
+	
 	
 	DZE_AntiWallCounter = 0;
 
