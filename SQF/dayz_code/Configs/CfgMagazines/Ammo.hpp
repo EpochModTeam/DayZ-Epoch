@@ -125,3 +125,32 @@ class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets {
 		};
 	};
 };
+
+class Quiver : CA_Magazine {
+	scope = public;
+	ammo = "WoodenArrow";
+	count = 6;
+	descriptionshort = "Small Quiver used with the Crossbow, Max arrows 6.";
+	displayname = "Quiver";
+	initSpeed = 150;
+	model = "\z\addons\dayz_communityassets\models\quiver";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
+};
+class WoodenArrow : CA_Magazine {
+	scope = public;
+	displayName = "Arrow"; //$STR_MAG_NAME_3;
+	model = "\dayz_weapons\models\bolt_gear";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_warrow_ca.paa";
+	ammo = "WoodenArrow";
+	count = 1;
+	initSpeed = 150;
+	descriptionShort = "Arrow made out of wood, used with the Crossbow."; //$STR_MAG_DESC_3;
+	class ItemActions {
+		class ReloadMag {
+			text = "Combine into Quiver";
+			script = "spawn player_reloadMag;";
+			use[] = {"WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow"};
+			output[] = {"Quiver"};
+		};
+	};
+};
