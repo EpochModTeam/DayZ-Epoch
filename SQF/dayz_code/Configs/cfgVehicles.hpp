@@ -461,7 +461,9 @@ class CfgVehicles {
 		class Turrets {};
 	};
 	
+	#include "CfgVehicles\AIR\BAF_Merlin.hpp"
 	#include "CfgVehicles\AIR\CH47.hpp"
+	#include "CfgVehicles\AIR\MV22.hpp"
 	#include "CfgVehicles\AIR\UH60.hpp"
 
 	// LAND
@@ -484,35 +486,10 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\hilux.hpp"
 	#include "CfgVehicles\LAND\UAZ.hpp"
 	#include "CfgVehicles\LAND\SUV.hpp"
+	#include "CfgVehicles\LAND\TT650.hpp"
 
 	// SEA
 	// #include "CfgVehicles\SEA\RHIB.hpp"
-	class BAF_Merlin_HC3_D;
-	class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
-		scope = 2; 
-		crew = ""; 
-		typicalCargo[] = {}; 
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 15;
-		transportMaxMagazines = 150;
-		transportmaxbackpacks = 5;
-	};
-	class MV22;
-	class MV22_DZ : MV22 { 
-		accuracy = 1000; 
-		scope = 2; 
-		displayName = "MV-22"; 
-		crew = ""; 
-		typicalCargo[] = {}; 
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 20;
-		transportMaxMagazines = 400;
-		transportmaxbackpacks = 10;
-	};	
 	class RubberBoat;
 	class PBX: RubberBoat {
 		cargoaction[] = {"PBX_Cargo01", "PBX_Cargo02", "PBX_Cargo03"};
@@ -541,15 +518,6 @@ class CfgVehicles {
 		transportMaxMagazines = 50;
         transportMaxWeapons = 5;
         transportMaxBackpacks = 1;
-	};
-	class TT650_Base;
-	class TT650_Ins: TT650_Base {
-		crew = "";
-		faction = "INS";
-		hiddenselectionstextures[] = {"\ca\wheeled3\tt650\data\Yam650_skin1_CO.paa"};
-		scope = 2;
-		side = 0;
-		typicalcargo[] = {};
 	};
 	class MH6J_DZ: AH6_Base_EP1
 	{
