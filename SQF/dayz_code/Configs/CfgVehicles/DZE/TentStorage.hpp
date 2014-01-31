@@ -61,4 +61,4 @@ class WeaponHolder_ItemTentDomed2: WeaponHolder {
 			count = 1;
 		};
 	};
-};	
+};
