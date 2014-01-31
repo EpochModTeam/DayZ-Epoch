@@ -6646,6 +6646,206 @@
 			<French>Le démontage de la construction ne rendra pas de composants.</French>
 			<Czech>Demontáž budovy nevrátí žádné její komponenty.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_NAME">
+			<Original>Supply Crate</Original>
+			<English>Supply Crate</English>
+			<German>Versorgungskiste</German>
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC">
+			<Original>12 x Random Item</Original>
+			<English>12 x Random Item</English>
+			<German>12 x Zufällige Gegenstände</German>
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_EMPTY">
+			<Original>Empty Supply Crate</Original>
+			<English>Empty Supply Crate</English>
+			<German>Leere Versorgungskiste</German>
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
+			<Original>6 x ItemSodaCoke</Original>
+			<English>6 x ItemSodaCoke</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
+			<Original>12 x ItemSodaCoke</Original>
+			<English>12 x ItemSodaCoke</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
+			<Original>6 x ItemSodaPepsi</Original>
+			<English>6 x ItemSodaPepsi</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
+			<Original>12 x ItemSodaPepsi</Original>
+			<English>12 x ItemSodaPepsi</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
+			<Original>6 x FoodbaconCooked</Original>
+			<English>6 x FoodbaconCooked</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
+			<Original>12 x FoodbaconCooked</Original>
+			<English>12 x FoodbaconCooked</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_G17">
+			<Original>12 x 17Rnd_9x19_glock17</Original>
+			<English>12 x 17Rnd_9x19_glock17</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_M9SD">
+			<Original>12 x 15Rnd_9x19_M9SD</Original>
+			<English>12 x 15Rnd_9x19_M9SD</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
+			<Original>12 x 30Rnd_9x19_MP5SD</Original>
+			<English>12 x 30Rnd_9x19_MP5SD</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
+			<Original>12 x 30Rnd_556x45_StanagSD</Original>
+			<English>12 x 30Rnd_556x45_StanagSD</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
+			<Original>12 x SandBag</Original>
+			<English>12 x SandBag</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
+			<Original>6 x Tank Trap</Original>
+			<English>6 x Tank Trap</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
+			<Original>12 x Tank Trap</Original>
+			<English>12 x Tank Trap</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
+			<Original>6 x Wire Kit</Original>
+			<English>6 x Wire Kit</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
+			<Original>12 x Wire Kit</Original>
+			<English>12 x Wire Kit</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
+			<Original>6 x Scrap Metal</Original>
+			<English>6 x Scrap Metal</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
+			<Original>12 x Scrap Metal</Original>
+			<English>12 x Scrap Metal</English>
+			<!-- <German></German> -->
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 			<Original>1.04</Original>
 			<English>1.04</English>
