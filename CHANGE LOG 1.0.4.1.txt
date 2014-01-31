@@ -1,5 +1,5 @@
 [FIXED] Issue with Scaffolding being too close and killing player. @Fank
-[FIXED] Infinite trading loop when item is out of stock.
+[FIXED] Stuck in infinite trading loop when item is out of stock.
 [FIXED] Fixed backpack disappearing issue. @vbawol
 [FIXED] Some fixes and optimizing to PVS/PVC system to only send to other players nearby. @vbawol
 [FIXED] Bleeding was not visible to other players due to typo in new PVS/PVC system. @vbawol
