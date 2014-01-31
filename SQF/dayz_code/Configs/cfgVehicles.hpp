@@ -19,6 +19,8 @@ class CfgVehicles {
 	#include "CfgVehicles\DZE\Doors.hpp"
 	#include "CfgVehicles\DZE\LockboxStorage.hpp"
 	#include "CfgVehicles\DZE\VaultStorage.hpp"
+	#include "CfgVehicles\DZE\Grave.hpp"
+	#include "CfgVehicles\DZE\TentStorage.hpp"
 
 	class AllVehicles;
 	
@@ -2599,52 +2601,5 @@ class CfgVehicles {
 		{
 			init = "[(_this select 0),'cfgMagazines','ItemJerrycanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
-	};
-	
-	class Land_A_tent;
-	class ACamp;
-	class TentStorage: Land_A_tent
-	{
-		vehicleClass = "Survival";
-		transportMaxMagazines = 50;
-		transportMaxWeapons = 10;
-		transportMaxBackpacks = 5;
-		create = "WeaponHolder_ItemTentOld";
-		constructioncount = 1;
-		offset[] = {0,2.5,0};
-		requireplot = 0;
-		nounderground = 0;
-	};
-	class TentStorageDomed: TentStorage
-	{
-		displayName = "Digital Camo Tent";
-		vehicleClass = "Survival";
-		model = "\dayz_epoch_b\models\astan.p3d";
-		transportMaxMagazines = 75;
-		transportMaxWeapons = 12;
-		transportMaxBackpacks = 7;
-		create = "WeaponHolder_ItemTentDomed";
-		offset[] = {0,2.5,0};
-	};
-	class TentStorageDomed2: TentStorage
-	{
-		displayName = "Green Domed Tent";
-		vehicleClass = "Survival";
-		model = "\ca\Misc_E\Astan_ep1.p3d"; 
-		transportMaxMagazines = 75;
-		transportMaxWeapons = 12;
-		transportMaxBackpacks = 7;
-		create = "WeaponHolder_ItemTentDomed2";
-		offset[] = {0,2.5,0};
-	};
-	class GraveDZE: Land_A_tent
-	{
-		vehicleClass = "Survival";
-		displayName = "Grave DZE";
-		destrType = "DestructNo";
-		model = "\z\addons\dayz_epoch\models\skeleton.p3d";
-		transportMaxMagazines = 80;
-		transportMaxWeapons = 20;
-		transportMaxBackpacks = 1;
 	};
 };	
