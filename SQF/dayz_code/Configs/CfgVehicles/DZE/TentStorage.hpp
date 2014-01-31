@@ -30,3 +30,35 @@ class TentStorageDomed2: TentStorage {
 	create = "WeaponHolder_ItemTentDomed2";
 	offset[] = {0,2.5,0};
 };
+
+class WeaponHolder;
+class WeaponHolder_ItemTentOld: WeaponHolder {
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_20;
+	class transportmagazines {
+		class _xx_ItemTentOld {
+			magazine = "ItemTentOld";
+			count = 1;
+		};
+	};
+};
+class WeaponHolder_ItemTentDomed: WeaponHolder {
+	scope = 2;
+	displayName = "Domed Desert Tent";
+	class transportmagazines {
+		class _xx_ItemTentDomed {
+			magazine = "ItemTentDomed";
+			count = 1;
+		};
+	};
+};
+class WeaponHolder_ItemTentDomed2: WeaponHolder {
+	scope = 2;
+	displayName = "Domed Green Tent";
+	class transportmagazines {
+		class _xx_ItemTentDomed2 {
+			magazine = "ItemTentDomed2";
+			count = 1;
+		};
+	};
+};	

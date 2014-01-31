@@ -28,3 +28,15 @@ class VaultStorageLocked: Land_A_tent {
 	requireplot = 0;
 	nounderground = 0;
 };
+
+class WeaponHolder;
+class WeaponHolder_ItemVault: WeaponHolder {
+	scope = 2;
+	displayName = "Safe";
+	class transportmagazines {
+		class _xx_ItemVault {
+			magazine = "ItemVault";
+			count = 1;
+		};
+	};
+};

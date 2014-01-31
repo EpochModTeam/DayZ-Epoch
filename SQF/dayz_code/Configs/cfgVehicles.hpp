@@ -2482,7 +2482,8 @@ class CfgVehicles {
 		transportRepair = 0;
 		transportFuel = 0;
 	};
-	class WoodenArrowF : WeaponHolderBase {
+	class WoodenArrowF : WeaponHolderBase
+	{
 		scope = public;
 		displayName = "Arrow";
 		model = "\dayz_weapons\models\bolt";
@@ -2491,7 +2492,6 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-	
 	class WeaponHolder_ItemHatchet_DZE: WeaponHolderBase
 	{
 		scope = 2;
@@ -2502,7 +2502,6 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgWeapons','ItemHatchet_DZE'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-
 	class WeaponHolder_ItemMachete: WeaponHolderBase
 	{
 		scope = 2;
@@ -2521,75 +2520,6 @@ class CfgVehicles {
 		class eventHandlers
 		{
 			init = "[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
-		};
-	};
-
-	class WeaponHolder;
-
-	class WeaponHolder_ItemTentOld: WeaponHolder
-	{
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_20;
-		class transportmagazines
-		{
-			class _xx_ItemTentOld
-			{
-				magazine = "ItemTentOld";
-				count = 1;
-			};
-		};
-	};
-	class WeaponHolder_ItemTentDomed: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Domed Desert Tent";
-		class transportmagazines
-		{
-			class _xx_ItemTentDomed
-			{
-				magazine = "ItemTentDomed";
-				count = 1;
-			};
-		};
-	};
-	class WeaponHolder_ItemTentDomed2: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Domed Green Tent";
-		class transportmagazines
-		{
-			class _xx_ItemTentDomed2
-			{
-				magazine = "ItemTentDomed2";
-				count = 1;
-			};
-		};
-	};	
-	
-	class WeaponHolder_ItemVault: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Safe";
-		class transportmagazines
-		{
-			class _xx_ItemVault
-			{
-				magazine = "ItemVault";
-				count = 1;
-			};
-		};
-	};
-	class WeaponHolder_ItemLockbox: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Lockbox";
-		class transportmagazines
-		{
-			class _xx_ItemLockbox
-			{
-				magazine = "ItemLockbox";
-				count = 1;
-			};
 		};
 	};
 	class WeaponHolder_ItemJerrycanEmpty: WeaponHolderBase
