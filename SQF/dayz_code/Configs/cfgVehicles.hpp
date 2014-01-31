@@ -15,8 +15,14 @@ class CfgVehicles {
 	
 	class HouseBase;
 	class Ruins: HouseBase {};
-        #include "CfgVehicles\antihack_plants.hpp"
+	#include "CfgVehicles\antihack_plants.hpp"
 	#include "CfgVehicles\DZE\Doors.hpp"
+	class Land_A_tent;	// External class reference
+	#include "CfgVehicles\DZE\Grave.hpp"
+	class WeaponHolder;	// External class reference
+	#include "CfgVehicles\DZE\LockboxStorage.hpp"
+	#include "CfgVehicles\DZE\VaultStorage.hpp"
+	#include "CfgVehicles\DZE\TentStorage.hpp"
 
 	class AllVehicles;
 	
@@ -461,7 +467,10 @@ class CfgVehicles {
 		class Turrets {};
 	};
 	
+	#include "CfgVehicles\AIR\AN2.hpp"
+	#include "CfgVehicles\AIR\BAF_Merlin.hpp"
 	#include "CfgVehicles\AIR\CH47.hpp"
+	#include "CfgVehicles\AIR\MV22.hpp"
 	#include "CfgVehicles\AIR\UH60.hpp"
 
 	// LAND
@@ -484,35 +493,10 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\hilux.hpp"
 	#include "CfgVehicles\LAND\UAZ.hpp"
 	#include "CfgVehicles\LAND\SUV.hpp"
+	#include "CfgVehicles\LAND\TT650.hpp"
 
 	// SEA
 	// #include "CfgVehicles\SEA\RHIB.hpp"
-	class BAF_Merlin_HC3_D;
-	class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
-		scope = 2; 
-		crew = ""; 
-		typicalCargo[] = {}; 
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 15;
-		transportMaxMagazines = 150;
-		transportmaxbackpacks = 5;
-	};
-	class MV22;
-	class MV22_DZ : MV22 { 
-		accuracy = 1000; 
-		scope = 2; 
-		displayName = "MV-22"; 
-		crew = ""; 
-		typicalCargo[] = {}; 
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 20;
-		transportMaxMagazines = 400;
-		transportmaxbackpacks = 10;
-	};	
 	class RubberBoat;
 	class PBX: RubberBoat {
 		cargoaction[] = {"PBX_Cargo01", "PBX_Cargo02", "PBX_Cargo03"};
@@ -541,15 +525,6 @@ class CfgVehicles {
 		transportMaxMagazines = 50;
         transportMaxWeapons = 5;
         transportMaxBackpacks = 1;
-	};
-	class TT650_Base;
-	class TT650_Ins: TT650_Base {
-		crew = "";
-		faction = "INS";
-		hiddenselectionstextures[] = {"\ca\wheeled3\tt650\data\Yam650_skin1_CO.paa"};
-		scope = 2;
-		side = 0;
-		typicalcargo[] = {};
 	};
 	class MH6J_DZ: AH6_Base_EP1
 	{
@@ -651,477 +626,9 @@ class CfgVehicles {
 		fsmDanger = "";
 		fsmFormation = "";
 	};
-
-	class Soldier_Crew_PMC;
-	class Bandit1_DZ : Soldier_Crew_PMC {
-		displayName = $STR_CHAR_2;
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		model = "\dayz\characters\man_bandit";
-		portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
-		magazines[] = {};
-		backpack = "";
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	class Bandit2_DZ: Soldier_Crew_PMC
-	{
-		scope = 2;
-		displayName = $STR_CHAR_2;
-		weapons[] = {"Throw","Put"};
-		model = "\ca\characters_E\GER\GER_rifleman";
-		portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
-		magazines[] = {};
-		backpack = "";
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\dayz\textures\clothes\bandit_tex1_co.paa"};
-		weaponSlots = "1 + 4 + 12* 256 + 2* 4096 + 2 + 8* 16 + 12*131072";
-		canHideBodies = 1;
-	};
-
-	// new bandits
-	class GUE_Soldier_MG;
-	class GUE_Soldier_MG_DZ: GUE_Soldier_MG {
-		displayName = "Bandit Gunner";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class GUE_Soldier_Sniper;
-	class GUE_Soldier_Sniper_DZ: GUE_Soldier_Sniper {
-		displayName = "Bandit Sniper";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class GUE_Soldier_Crew;
-	class GUE_Soldier_Crew_DZ: GUE_Soldier_Crew {
-		displayName = "Bandit ";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class GUE_Soldier_CO;
-	class GUE_Soldier_CO_DZ: GUE_Soldier_CO {
-		displayName = "Bandit Gunner";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class GUE_Soldier_2;
-	class GUE_Soldier_2_DZ: GUE_Soldier_2 {
-		displayName = "Bandit Gunner";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-
-
-	class BAF_Soldier_Officer_W;
-	class Rocket_DZ: BAF_Soldier_Officer_W {
-		displayName = "Officer";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	class RU_Policeman;
-	class RU_Policeman_DZ: RU_Policeman {
-		displayName = "Policeman";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Pilot_EP1;
-	class Pilot_EP1_DZ: Pilot_EP1 {
-		displayName = "Pilot";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Haris_Press_EP1;
-	class Haris_Press_EP1_DZ: Haris_Press_EP1 {
-		displayName = "Press";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Ins_Soldier_GL;
-	class Ins_Soldier_GL_DZ: Ins_Soldier_GL {
-		displayName = "Terrorist";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class GUE_Commander;
-	class GUE_Commander_DZ: GUE_Commander {
-		displayName = "Rebel";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Functionary1_EP1;
-	class Functionary1_EP1_DZ: Functionary1_EP1 {
-		displayName = "Business Suit";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Priest;
-	class Priest_DZ: Priest {
-		displayName = "Priest";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Rocker1;
-	class Rocker1_DZ: Rocker1 {
-		displayName = "Rocker (black)";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Rocker2;
-	class Rocker2_DZ: Rocker2 {
-		displayName = "Rocker (brown)";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Rocker3;
-	class Rocker3_DZ: Rocker3 {
-		displayName = "Rocker (blue)";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Rocker4;
-	class Rocker4_DZ: Rocker4 {
-		displayName = "Rocker (green)";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-
-	class TK_INS_Warlord_EP1;
-	class TK_INS_Warlord_EP1_DZ: TK_INS_Warlord_EP1 {
-		displayName = "Takistani Warlord";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	
-	class TK_INS_Soldier_EP1;
-	class TK_INS_Soldier_EP1_DZ: TK_INS_Soldier_EP1 {
-		displayName = "Takistani Soldier";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-		
-	class CZ_Special_Forces_GL_DES_EP1;
-	class CZ_Special_Forces_GL_DES_EP1_DZ: CZ_Special_Forces_GL_DES_EP1 {
-		displayName = "Special Forces";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-		
-	class Drake_Light;
-	class Drake_Light_DZ: Drake_Light {
-		displayName = "Desert Camo";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	class Soldier_Bodyguard_AA12_PMC;
-	class Soldier_Bodyguard_AA12_PMC_DZ: Soldier_Bodyguard_AA12_PMC {
-		displayName = "Bodyguard";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-
-	class Soldier_Sniper_PMC_DZ: Soldier_Crew_PMC
-	{
-		displayName = "Marksman";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-
-		model = "\dayz\characters\man_hero";
-		HiddenSelections[] = {"camo1","camo2","camo3"};
-		HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa","ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa","ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
-		class EventHandlers
-		{
-			init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\PMC_soldier\Data\bauer_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_3_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_4_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_5_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [1,[""ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_1_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_3_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [2,[""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_CO.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa""] select floor random 2]";
-		};
-	};
-	class Soldier_TL_PMC;
-	class Soldier_TL_PMC_DZ: Soldier_TL_PMC {
-		displayName = "Team Leader";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	class FR_OHara;
-	class FR_OHara_DZ: FR_OHara {
-		displayName = "Jungle Camo";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-		attendant = 0; 
-	};
-	class FR_Rodriguez;
-	class FR_Rodriguez_DZ: FR_Rodriguez {
-		displayName = "Gunner Outfit";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class CZ_Soldier_Sniper_EP1;
-	class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
-		displayName = "Desert Ghillie";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	class Graves_Light;
-	class Graves_Light_DZ: Graves_Light {
-		displayName = "Urban Camo";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-	};
-	
-
-	class BAF_Soldier_W;
-	class Soldier1_DZ: BAF_Soldier_W {
-		displayName = "Soldier";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	class BAF_Soldier_SniperH_W;
-	class Sniper1_DZ: BAF_Soldier_SniperH_W {
-		displayName = "Sniper";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-	class BAF_Soldier_L_W;
-	class Camo1_DZ: BAF_Soldier_L_W {
-		displayName = "Survivor";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-	};
-
 	#include "CfgVehicles\Players.hpp"
-
 	#include "CfgVehicles\Bags.hpp"
-	
-	//An2_TK_EP1
-	class An2_Base_EP1;
-	class AN2_DZ: An2_Base_EP1
-	{
-		displayname = "AN2 Cargo Plane";
-		displaynameshort = "AN2_DZ";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		gunnerHasFlares = false;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 80;
-		transportmaxbackpacks = 15;
-	};
+
 	class House {
 		class DestructionEffects;
 	};
@@ -2977,7 +2484,8 @@ class CfgVehicles {
 		transportRepair = 0;
 		transportFuel = 0;
 	};
-	class WoodenArrowF : WeaponHolderBase {
+	class WoodenArrowF : WeaponHolderBase
+	{
 		scope = public;
 		displayName = "Arrow";
 		model = "\dayz_weapons\models\bolt";
@@ -2986,7 +2494,6 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-	
 	class WeaponHolder_ItemHatchet_DZE: WeaponHolderBase
 	{
 		scope = 2;
@@ -2997,7 +2504,6 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgWeapons','ItemHatchet_DZE'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-
 	class WeaponHolder_ItemMachete: WeaponHolderBase
 	{
 		scope = 2;
@@ -3018,75 +2524,6 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-
-	class WeaponHolder;
-
-	class WeaponHolder_ItemTentOld: WeaponHolder
-	{
-		scope = 2;
-		displayName = $STR_EQUIP_NAME_20;
-		class transportmagazines
-		{
-			class _xx_ItemTentOld
-			{
-				magazine = "ItemTentOld";
-				count = 1;
-			};
-		};
-	};
-	class WeaponHolder_ItemTentDomed: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Domed Desert Tent";
-		class transportmagazines
-		{
-			class _xx_ItemTentDomed
-			{
-				magazine = "ItemTentDomed";
-				count = 1;
-			};
-		};
-	};
-	class WeaponHolder_ItemTentDomed2: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Domed Green Tent";
-		class transportmagazines
-		{
-			class _xx_ItemTentDomed2
-			{
-				magazine = "ItemTentDomed2";
-				count = 1;
-			};
-		};
-	};	
-	
-	class WeaponHolder_ItemVault: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Safe";
-		class transportmagazines
-		{
-			class _xx_ItemVault
-			{
-				magazine = "ItemVault";
-				count = 1;
-			};
-		};
-	};
-	class WeaponHolder_ItemLockbox: WeaponHolder
-	{
-		scope = 2;
-		displayName = "Lockbox";
-		class transportmagazines
-		{
-			class _xx_ItemLockbox
-			{
-				magazine = "ItemLockbox";
-				count = 1;
-			};
-		};
-	};
 	class WeaponHolder_ItemJerrycanEmpty: WeaponHolderBase
 	{
 		scope = 2;
@@ -3096,113 +2533,5 @@ class CfgVehicles {
 		{
 			init = "[(_this select 0),'cfgMagazines','ItemJerrycanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
-	};
-	
-	class Land_A_tent;
-	class ACamp;
-	class TentStorage: Land_A_tent
-	{
-		vehicleClass = "Survival";
-		transportMaxMagazines = 50;
-		transportMaxWeapons = 10;
-		transportMaxBackpacks = 5;
-		create = "WeaponHolder_ItemTentOld";
-		constructioncount = 1;
-		offset[] = {0,2.5,0};
-		requireplot = 0;
-		nounderground = 0;
-	};
-	class TentStorageDomed: TentStorage
-	{
-		displayName = "Digital Camo Tent";
-		vehicleClass = "Survival";
-		model = "\dayz_epoch_b\models\astan.p3d";
-		transportMaxMagazines = 75;
-		transportMaxWeapons = 12;
-		transportMaxBackpacks = 7;
-		create = "WeaponHolder_ItemTentDomed";
-		offset[] = {0,2.5,0};
-	};
-	class TentStorageDomed2: TentStorage
-	{
-		displayName = "Green Domed Tent";
-		vehicleClass = "Survival";
-		model = "\ca\Misc_E\Astan_ep1.p3d"; 
-		transportMaxMagazines = 75;
-		transportMaxWeapons = 12;
-		transportMaxBackpacks = 7;
-		create = "WeaponHolder_ItemTentDomed2";
-		offset[] = {0,2.5,0};
-	};
-	class VaultStorage: Land_A_tent
-	{
-		placement = "vertical";
-		vehicleClass = "Survival";
-		displayName = "Safe";
-		model = "\z\addons\dayz_epoch\models\safe.p3d";
-		destrType = "DestructNo";
-		armor = 800;
-		transportMaxMagazines = 200;
-		transportMaxWeapons = 25;
-		transportMaxBackpacks = 10;
-		lockedClass = "VaultStorageLocked";
-		packedClass = "WeaponHolder_ItemVault";
-	};	
-	class VaultStorageLocked: Land_A_tent
-	{
-		placement = "vertical";
-		vehicleClass = "Survival";
-		displayName = "Locked Safe";
-		model = "\z\addons\dayz_epoch\models\safe.p3d";
-		destrType = "DestructNo";
-		armor = 800;
-		transportMaxMagazines = 0;
-		transportMaxWeapons = 0;
-		transportMaxBackpacks = 0;
-		offset[] = {0,1.5,0};
-		lockable = 4;
-		unlockedClass = "VaultStorage";
-		requireplot = 0;
-		nounderground = 0;
-	};
-
-	class LockboxStorageLocked: Land_A_tent
-	{
-		vehicleClass = "Survival";
-		displayName = "Locked Lockbox";
-		model = "\z\addons\dayz_epoch\models\lockbox.p3d";
-		destrType = "DestructNo";
-		armor = 800;
-		transportMaxMagazines = 0;
-		transportMaxWeapons = 0;
-		transportMaxBackpacks = 0;
-		offset[] = {0,1.5,0.5};
-		lockable = 2;
-		unlockedClass = "LockboxStorage";
-		nounderground = 0;
-		requireplot = 0;
-	};
-	class LockboxStorage: Land_A_tent
-	{
-		vehicleClass = "Survival";
-		displayName = "Lockbox";
-		model = "\z\addons\dayz_epoch\models\lockbox.p3d";
-		destrType = "DestructNo";
-		armor = 800;
-		transportMaxMagazines = 50;
-		transportMaxWeapons = 20;
-		transportMaxBackpacks = 10;
-		lockedClass = "LockboxStorageLocked";
-		packedClass = "WeaponHolder_ItemLockbox";
-	};	
-	class GraveDZE: Land_A_tent
-	{
-		vehicleClass = "Survival";
-		displayName = "Grave DZE";
-		destrType = "DestructNo";
-		model = "\z\addons\dayz_epoch\models\skeleton.p3d";
-		transportMaxMagazines = 80;
-		transportMaxWeapons = 20;
-		transportMaxBackpacks = 1;
 	};
 };	
