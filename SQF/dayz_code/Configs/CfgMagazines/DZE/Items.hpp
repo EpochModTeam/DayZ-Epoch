@@ -60,6 +60,106 @@ class CSGAS : CA_Magazine {
 		hit_wood = "ImpactWood";
 	};
 };
+class ItemJerryMixed: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "Mixed Gas Full";
+	model = "\dayz_equip\models\jerrycan.p3d";
+	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+	descriptionShort = "20 liters of Mixed Gas.";
+	sfx = "refuel";
+	class ItemActions {
+		class Crafting {
+			text = "Fill Chainsaw";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"CSGAS",1},{"ItemJerryMixed4",1}};
+			input[] = {{"ItemJerryMixed",1}};
+		};
+	};
+};
+class ItemJerryMixed4: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "Mixed Gas 16L";
+	model = "\dayz_equip\models\jerrycan.p3d";
+	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+	descriptionShort = "16 liters of Mixed Gas.";
+	sfx = "refuel";
+	class ItemActions {
+		class Crafting {
+			text = "Fill Chainsaw";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"CSGAS",1},{"ItemJerryMixed3",1}};
+			input[] = {{"ItemJerryMixed4",1}};
+		};
+	};
+};
+class ItemJerryMixed3: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "Mixed Gas 12L";
+	model = "\dayz_equip\models\jerrycan.p3d";
+	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+	descriptionShort = "12 liters of Mixed Gas.";
+	sfx = "refuel";
+	class ItemActions {
+		class Crafting {
+			text = "Fill Chainsaw";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"CSGAS",1},{"ItemJerryMixed2",1}};
+			input[] = {{"ItemJerryMixed3",1}};
+		};
+	};
+};
+class ItemJerryMixed2: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "Mixed Gas 8L";
+	model = "\dayz_equip\models\jerrycan.p3d";
+	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+	descriptionShort = "8 liters of Mixed Gas.";
+	sfx = "refuel";
+	class ItemActions {
+		class Crafting {
+			text = "Fill Chainsaw";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"CSGAS",1},{"ItemJerryMixed1",1}};
+			input[] = {{"ItemJerryMixed2",1}};
+		};
+	};
+};
+class ItemJerryMixed1: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "Mixed Gas 4L";
+	model = "\dayz_equip\models\jerrycan.p3d";
+	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+	descriptionShort = "4 liters of Mixed Gas.";
+	sfx = "refuel";
+	class ItemActions {
+		class Crafting {
+			text = "Fill Chainsaw";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"CSGAS",1},{"ItemJerrycanEmpty",1}};
+			input[] = {{"ItemJerryMixed1",1}};
+		};
+	};
+};
 
 // Vehicle upgrade parts
 class ItemORP: CA_Magazine {
@@ -146,10 +246,8 @@ class ItemDocument: CA_Magazine {
 	descriptionShort = "Unknown document";
 	weight = 0.1;
 	sfx = "document";
-	class ItemActions
-	{
-		class Crafting
-		{
+	class ItemActions {
+		class Crafting {
 			text = $STR_EPOCH_PLAYER_188;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
