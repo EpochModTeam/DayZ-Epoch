@@ -16,6 +16,7 @@ class CfgVehicles {
 	class HouseBase;
 	class Ruins: HouseBase {};
 	#include "CfgVehicles\antihack_plants.hpp"
+	#include "CfgVehicles\DZE\Doors.hpp"
 	#include "CfgVehicles\DZE\LockboxStorage.hpp"
 	#include "CfgVehicles\DZE\VaultStorage.hpp"
 
