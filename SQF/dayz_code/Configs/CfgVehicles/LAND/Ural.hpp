@@ -1,11 +1,5 @@
 class Ural_Base;
-class UralCivil_DZE : Ural_Base
-{
-	//maxSpeed = 80;
-	//transportMaxMagazines = 200;
-	//transportMaxWeapons = 50;
-	//transportMaxBackpacks = 8;
-	//terrainCoef = 2.5;
+class UralCivil_DZE : Ural_Base {
 	scope = 2;
 	side = 3;
 	faction = "CIV";
@@ -25,9 +19,7 @@ class UralCivil_DZE : Ural_Base
 	};
 };
 class UralOpen_Base;
-class UralCivil2_DZE : UralOpen_Base
-{
-	// maxSpeed = 80;
+class UralCivil2_DZE : UralOpen_Base {
 	displayName = "Ural (Civil 2)";
 	model = "\ca\wheeled\Ural_Open";
 	accuracy = 0.22;
@@ -45,4 +37,16 @@ class UralCivil2_DZE : UralOpen_Base
 		"\ca\wheeled\data\ural_kabina_civ2_co.paa",
 		"\ca\wheeled\data\ural_korba_civ2_co.paa"
 	};
+};
+class UralRefuel_TK_EP1;
+class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
+	scope = 2;
+	side = 2;
+	crew = "";
+	typicalCargo[] = {};
+	hiddenSelections[] = {};
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportFuel = 0;
+	fuelCapacity = 10000;
 };
