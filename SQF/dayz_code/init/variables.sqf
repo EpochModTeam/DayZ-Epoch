@@ -574,10 +574,6 @@ if(isServer) then {
 	if(isNil "DZE_CleanNull") then {
 		DZE_CleanNull = false;
 	};
-
-	if(isNil "DZE_HeliLift") then {
-		DZE_HeliLift = true;
-	};
 	
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 };
