@@ -2,14 +2,14 @@ class bulk: CA_Magazine {
 	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = "Supply Crate";
+	displayName = $STR_EPOCH_BULK_NAME;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "12 x Random Item";
+	descriptionShort = $STR_EPOCH_BULK_DESC;
 	weight = 5;
 };
 class bulk_empty: bulk {
-	descriptionShort = "Empty Supply Crate";
+	descriptionShort = $STR_EPOCH_BULK_DESC_EMPTY;
 	weight = 5;
 	class ItemActions {
 		class Crafting {
@@ -65,7 +65,7 @@ class bulk_empty: bulk {
 };
 
 class bulk_ItemSodaCoke: bulk {
-	descriptionShort = "6 x ItemSodaCoke";
+	descriptionShort = $STR_EPOCH_BULK_DESC_SODACOKE_HALF;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -83,7 +83,7 @@ class bulk_ItemSodaCoke: bulk {
 	};
 };
 class bulk_ItemSodaCokeFull: bulk {
-	descriptionShort = "12 x ItemSodaCoke";
+	descriptionShort = $STR_EPOCH_BULK_DESC_SODACOKE_FULL;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -94,7 +94,7 @@ class bulk_ItemSodaCokeFull: bulk {
 };
 
 class bulk_ItemSodaPepsi: bulk {
-	descriptionShort = "6 x ItemSodaPepsi";
+	descriptionShort = $STR_EPOCH_BULK_DESC_SODAPEPSI_HALF;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -112,7 +112,7 @@ class bulk_ItemSodaPepsi: bulk {
 	};
 };
 class bulk_ItemSodaPepsiFull: bulk {
-	descriptionShort = "12 x ItemSodaPepsi";
+	descriptionShort = $STR_EPOCH_BULK_DESC_SODAPEPSI_FULL;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -123,7 +123,7 @@ class bulk_ItemSodaPepsiFull: bulk {
 };
 
 class bulk_FoodbaconCooked: bulk {
-	descriptionShort = "6 x FoodbaconCooked";
+	descriptionShort = $STR_EPOCH_BULK_DESC_BACON_HALF;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -141,7 +141,7 @@ class bulk_FoodbaconCooked: bulk {
 	};
 };
 class bulk_FoodbaconCookedFull: bulk {
-	descriptionshort = "12 x FoodbaconCooked";
+	descriptionshort = $STR_EPOCH_BULK_DESC_BACON_FULL;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -151,19 +151,19 @@ class bulk_FoodbaconCookedFull: bulk {
 	};
 };
 
-class bulk_30Rnd_9x19_MP5SD: bulk {
-	descriptionShort = "12 x 30Rnd_9x19_MP5SD";
-
+// Ammo
+class bulk_17Rnd_9x19_glock17: bulk {
+	descriptionShort = $STR_EPOCH_BULK_DESC_G17;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
 			script = "spawn player_loadCrate;";
-			output[] = {"30Rnd_9x19_MP5SD",12,"magazine"};
+			output[] = {"17Rnd_9x19_glock17",12,"magazine"};
 		};
 	};
 };
 class bulk_15Rnd_9x19_M9SD: bulk {
-	descriptionShort = "12 x 15Rnd_9x19_M9SD";
+	descriptionShort = $STR_EPOCH_BULK_DESC_M9SD;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -172,8 +172,18 @@ class bulk_15Rnd_9x19_M9SD: bulk {
 		};
 	};
 };
+class bulk_30Rnd_9x19_MP5SD: bulk {
+	descriptionShort = $STR_EPOCH_BULK_DESC_MP5SD;
+	class ItemActions {
+		class CreateMags {
+			text = $STR_EPOCH_PLAYER_209;
+			script = "spawn player_loadCrate;";
+			output[] = {"30Rnd_9x19_MP5SD",12,"magazine"};
+		};
+	};
+};
 class bulk_30Rnd_556x45_StanagSD: bulk {
-	descriptionShort = "12 x 30Rnd_556x45_StanagSD";
+	descriptionShort = $STR_EPOCH_BULK_DESC_STANAGSD;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -182,8 +192,9 @@ class bulk_30Rnd_556x45_StanagSD: bulk {
 		};
 	};
 };
+
 class bulk_ItemSandbag: bulk {
-	descriptionShort = "12 x SandBag";
+	descriptionShort = $STR_EPOCH_BULK_DESC_SANDBAG;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_PLAYER_209;
@@ -194,7 +205,7 @@ class bulk_ItemSandbag: bulk {
 };
 
 class bulk_ItemTankTrap: bulk {
-	descriptionShort = "12 x Tank Trap";
+	descriptionShort = $STR_EPOCH_BULK_DESC_TANKTRAP_FULL;
 	weight = 25;
 	class ItemActions {
 		class CreateMags {
@@ -205,7 +216,7 @@ class bulk_ItemTankTrap: bulk {
 	};
 };
 class bulk_ItemTankTrapHalf: bulk {
-	descriptionShort = "6 x Tank Trap";
+	descriptionShort = $STR_EPOCH_BULK_DESC_TANKTRAP_HALF;
 	weight = 12.5;
 	class ItemActions {
 		class CreateMags {
@@ -225,7 +236,7 @@ class bulk_ItemTankTrapHalf: bulk {
 };
 
 class bulk_ItemWire: bulk {
-	descriptionShort = "12 x Wire Kit";
+	descriptionShort = $STR_EPOCH_BULK_DESC_WIREKIT_FULL;
 	weight = 25;
 	class ItemActions {
 		class CreateMags {
@@ -236,7 +247,7 @@ class bulk_ItemWire: bulk {
 	};
 };
 class bulk_ItemWireHalf: bulk {
-	descriptionShort = "6 x Wire Kit";
+	descriptionShort = $STR_EPOCH_BULK_DESC_WIREKIT_HALF;
 	weight = 12.5;
 	class ItemActions {
 		class CreateMags {
@@ -256,7 +267,7 @@ class bulk_ItemWireHalf: bulk {
 };
 
 class bulk_PartGeneric: bulk {
-	descriptionShort = "12 x Scrap Metal";
+	descriptionShort = $STR_EPOCH_BULK_DESC_GENERIC_FULL;
 	weight = 60;
 	class ItemActions {
 		class CreateMags {
@@ -267,7 +278,7 @@ class bulk_PartGeneric: bulk {
 	};
 };
 class bulk_PartGenericHalf: bulk {
-	descriptionShort = "6 x Scrap Metal";
+	descriptionShort = $STR_EPOCH_BULK_DESC_GENERIC_HALF;
 	weight = 30;
 	class ItemActions {
 		class CreateMags {
@@ -282,17 +293,6 @@ class bulk_PartGenericHalf: bulk {
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"bulk_PartGeneric",1}};
 			input[] = {{"bulk_PartGenericHalf",1},{"PartGeneric",6}};
-		};
-	};
-};
-
-class bulk_17Rnd_9x19_glock17: bulk {
-	descriptionShort = "12 x 17Rnd_9x19_glock17";
-	class ItemActions {
-		class CreateMags {
-			text = $STR_EPOCH_PLAYER_209;
-			script = "spawn player_loadCrate;";
-			output[] = {"17Rnd_9x19_glock17",12,"magazine"};
 		};
 	};
 };
