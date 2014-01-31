@@ -3,59 +3,59 @@ class CfgMagazines {
 
 	// Ammmo
 	#include "CfgMagazines\VehicleAmmo.hpp"
-	class 100Rnd_762x54_PK : CA_Magazine { 
-		scope = 2; 
-		displayName = "PKM Mag."; 
-		picture = "\CA\weapons\data\equip\m_pk_ca.paa"; 
-		ammo = "B_762x54_Ball"; 
-		count = 100; 
+	class 100Rnd_762x54_PK : CA_Magazine {
+		scope = 2;
+		displayName = "PKM Mag.";
+		picture = "\CA\weapons\data\equip\m_pk_ca.paa";
+		ammo = "B_762x54_Ball";
+		count = 100;
 		type = "256";
-		initSpeed = 850; 
+		initSpeed = 850;
 		sound[] = {"\ca\Weapons\Data\Sound\PK_1_SS", 3.16228, 1, 1500};
-		tracersEvery = 4; 
-		lastRoundsTracer = 4; 
-		nameSound = "mgun"; 
-		descriptionShort = "Caliber: 7.62x54mm <br/>Rounds: 100 <br/>Used in: PK"; 
-		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x54_PK.p3d"; 
+		tracersEvery = 4;
+		lastRoundsTracer = 4;
+		nameSound = "mgun";
+		descriptionShort = "Caliber: 7.62x54mm <br/>Rounds: 100 <br/>Used in: PK";
+		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x54_PK.p3d";
 	};
-	class 100Rnd_762x51_M240 : CA_Magazine { 
-		scope = 2; 
-		displayName = "100Rnd. M240"; 
-		picture = "\CA\weapons\data\equip\m_m240_ca.paa"; 
-		count = 100; 
+	class 100Rnd_762x51_M240 : CA_Magazine {
+		scope = 2;
+		displayName = "100Rnd. M240";
+		picture = "\CA\weapons\data\equip\m_m240_ca.paa";
+		count = 100;
 		type = "256";
-		ammo = "B_762x51_Ball"; 
-		initSpeed = 900; 
-		tracersEvery = 4; 
-		lastRoundsTracer = 4; 
-		nameSound = "mgun"; 
-		descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 100 <br/>Used in: M240, Mk 48 Mod 0"; 
-		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x51_M240.p3d"; 
+		ammo = "B_762x51_Ball";
+		initSpeed = 900;
+		tracersEvery = 4;
+		lastRoundsTracer = 4;
+		nameSound = "mgun";
+		descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 100 <br/>Used in: M240, Mk 48 Mod 0";
+		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x51_M240.p3d";
 	};
-	class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 { 
-		count = 200; 
+	class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 {
+		count = 200;
 	};
-	class 200Rnd_556x45_M249 : CA_Magazine { 
-		scope = 2; 
-		displayName = "200Rnd. M249 Belt"; 
-		picture = "\CA\weapons\data\equip\m_m249_ca.paa"; 
-		ammo = "B_556x45_Ball"; 
-		count = 200; 
-		type = "256"; 
-		initSpeed = 915; 
-		sound[] = {"\ca\Weapons\Data\Sound\M249_1_SS", 17.7828, 1, 1300}; 
-		reloadMagazineSound[] = {"\ca\Weapons\Data\Sound\FAL_reload", 0.01, 1, 20}; 
-		tracersEvery = 4; 
-		lastRoundsTracer = 4; 
-		nameSound = "mgun"; 
-		descriptionShort = "Caliber: 5.56x45 mm NATO <br/>Rounds: 200  <br/>Used in: M249 SAW"; 
-		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\200Rnd_556x45_M249.p3d"; 
+	class 200Rnd_556x45_M249 : CA_Magazine {
+		scope = 2;
+		displayName = "200Rnd. M249 Belt";
+		picture = "\CA\weapons\data\equip\m_m249_ca.paa";
+		ammo = "B_556x45_Ball";
+		count = 200;
+		type = "256";
+		initSpeed = 915;
+		sound[] = {"\ca\Weapons\Data\Sound\M249_1_SS", 17.7828, 1, 1300};
+		reloadMagazineSound[] = {"\ca\Weapons\Data\Sound\FAL_reload", 0.01, 1, 20};
+		tracersEvery = 4;
+		lastRoundsTracer = 4;
+		nameSound = "mgun";
+		descriptionShort = "Caliber: 5.56x45 mm NATO <br/>Rounds: 200  <br/>Used in: M249 SAW";
+		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\200Rnd_556x45_M249.p3d";
 	};
-	class 100Rnd_556x45_M249 : 200Rnd_556x45_M249 { 
-		displayName = "M249 Mag."; 
-		descriptionShort = "Caliber: 5.56x45mm NATO<br/>Rounds: 100<br/>Used in: M249"; 
-		count = 100; 
-		picture = "\CA\weapons_E\Data\icons\m_m245_CA.paa";  
+	class 100Rnd_556x45_M249 : 200Rnd_556x45_M249 {
+		displayName = "M249 Mag.";
+		descriptionShort = "Caliber: 5.56x45mm NATO<br/>Rounds: 100<br/>Used in: M249";
+		count = 100;
+		picture = "\CA\weapons_E\Data\icons\m_m245_CA.paa";
 	};
 	class 100Rnd_556x45_BetaCMag: CA_Magazine {
 		scope = 2;
@@ -86,9 +86,18 @@ class CfgMagazines {
 	#include "CfgMagazines\DZE\Gems.hpp"
 	// Items
 	#include "CfgMagazines\DZE\Items.hpp"
+	#include "CfgMagazines\DZE\Bulk.hpp"
 	// Currency
 	#include "CfgMagazines\DZE\Currency\Briefcase.hpp"
-	
+	#include "CfgMagazines\DZE\Currency\GoldBar.hpp"
+	#include "CfgMagazines\DZE\Currency\SilverBar.hpp"
+	#include "CfgMagazines\DZE\Currency\CopperBar.hpp"
+	#include "CfgMagazines\DZE\Currency\BronzeBar.hpp"
+	#include "CfgMagazines\DZE\Currency\AluminumBar.hpp"
+	#include "CfgMagazines\DZE\Currency\TinBar.hpp"
+
+	#include "CfgMagazines\Parts.hpp"
+
 	class ItemCanvas: CA_Magazine
 	{
 		scope = 2;
@@ -190,1056 +199,8 @@ class CfgMagazines {
 			};
 		};
 	};
-	class ItemGoldBar: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 100;
-		type = 256;
-		displayName = "Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar1oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar2oz",1}};
-				input[] = {{"ItemGoldBar",2}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_210_9;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar",10}};
-			};
-		};
-	};
-	class ItemGoldBar2oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 200;
-		type = 256;
-		displayName = "2oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar2oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "2 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar3oz",1}};
-				input[] = {{"ItemGoldBar2oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",2}};
-				input[] = {{"ItemGoldBar2oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_8;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar2oz",1},{"ItemGoldBar",8}};
-			};
-		};
-	};
-	class ItemGoldBar3oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 300;
-		type = 256;
-		displayName = "3oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar3oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "3 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar4oz",1}};
-				input[] = {{"ItemGoldBar3oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar2oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar3oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_7;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar3oz",1},{"ItemGoldBar",7}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",3}};
-				input[] = {{"ItemGoldBar3oz",1}};
-			};
-		};
-	};
-	class ItemGoldBar4oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 400;
-		type = 256;
-		displayName = "4oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar4oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "4 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar5oz",1}};
-				input[] = {{"ItemGoldBar4oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar3oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar4oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_6;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar4oz",1},{"ItemGoldBar",6}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",4}};
-				input[] = {{"ItemGoldBar4oz",1}};
-			};
-		};
-	};
-	class ItemGoldBar5oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 500;
-		type = 256;
-		displayName = "5oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar5oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "5 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar6oz",1}};
-				input[] = {{"ItemGoldBar5oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar4oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar5oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_5;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar5oz",1},{"ItemGoldBar",5}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",5}};
-				input[] = {{"ItemGoldBar5oz",1}};
-			};
-		};
-	};
-	class ItemGoldBar6oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 600;
-		type = 256;
-		displayName = "6oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar6oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "6 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar7oz",1}};
-				input[] = {{"ItemGoldBar6oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar5oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar6oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_4;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar6oz",1},{"ItemGoldBar",4}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",6}};
-				input[] = {{"ItemGoldBar6oz",1}};
-			};
-		};
-	};
-	class ItemGoldBar7oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 700;
-		type = 256;
-		displayName = "7oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar7oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "7 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar8oz",1}};
-				input[] = {{"ItemGoldBar7oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar6oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar7oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_3;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar7oz",1},{"ItemGoldBar",3}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",7}};
-				input[] = {{"ItemGoldBar7oz",1}};
-			};
-		};
-	};
-	class ItemGoldBar8oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 800;
-		type = 256;
-		displayName = "8oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar8oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "8 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar9oz",1}};
-				input[] = {{"ItemGoldBar8oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar7oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar8oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_2;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar8oz",1},{"ItemGoldBar",2}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",8}};
-				input[] = {{"ItemGoldBar8oz",1}};
-			};
-		};
-	};
-	class ItemGoldBar9oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 900;
-		type = 256;
-		displayName = "9oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar9oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-		descriptionShort = "9 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar10oz",1}};
-				input[] = {{"ItemGoldBar9oz",1},{"ItemGoldBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar8oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar9oz",1}};
-				
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",9}};
-				input[] = {{"ItemGoldBar9oz",1}};
-			};
-		};
-	};
-	class ItemGoldBar10oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 1000;
-		type = 256;
-		displayName = "10oz Gold";
-		model = "\z\addons\dayz_epoch\models\ItemGoldBar10oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_10oz_CA.paa";
-		descriptionShort = "10 x 1oz Gold Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar9oz",1},{"ItemGoldBar",1}};
-				input[] = {{"ItemGoldBar10oz",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemGoldBar",10}};
-				input[] = {{"ItemGoldBar10oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 1;
-		type = 256;
-		displayName = "Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar1oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar2oz",1}};
-				input[] = {{"ItemSilverBar",2}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_210_9;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar",10}};
-			};
-		};
-	};
-	class ItemSilverBar2oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 2;
-		type = 256;
-		displayName = "2oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar2oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "2 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar3oz",1}};
-				input[] = {{"ItemSilverBar2oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",2}};
-				input[] = {{"ItemSilverBar2oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_8;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar2oz",1},{"ItemSilverBar",8}};
-			};
-		};
-	};
-	class ItemSilverBar3oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 3;
-		type = 256;
-		displayName = "3oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar3oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "3 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar4oz",1}};
-				input[] = {{"ItemSilverBar3oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar2oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar3oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_7;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar3oz",1},{"ItemSilverBar",7}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",3}};
-				input[] = {{"ItemSilverBar3oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar4oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 4;
-		type = 256;
-		displayName = "4oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar4oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "4 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar5oz",1}};
-				input[] = {{"ItemSilverBar4oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar3oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar4oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_6;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar4oz",1},{"ItemSilverBar",6}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",4}};
-				input[] = {{"ItemSilverBar4oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar5oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 5;
-		type = 256;
-		displayName = "5oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar5oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "5 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar6oz",1}};
-				input[] = {{"ItemSilverBar5oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar4oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar5oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_5;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar5oz",1},{"ItemSilverBar",5}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",5}};
-				input[] = {{"ItemSilverBar5oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar6oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 6;
-		type = 256;
-		displayName = "6oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar6oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "6 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar7oz",1}};
-				input[] = {{"ItemSilverBar6oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar5oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar6oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_4;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar6oz",1},{"ItemSilverBar",4}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",6}};
-				input[] = {{"ItemSilverBar6oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar7oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 7;
-		type = 256;
-		displayName = "7oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar7oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "7 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar8oz",1}};
-				input[] = {{"ItemSilverBar7oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar6oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar7oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_3;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar7oz",1},{"ItemSilverBar",3}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",7}};
-				input[] = {{"ItemSilverBar7oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar8oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 8;
-		type = 256;
-		displayName = "8oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar8oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "8 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar9oz",1}};
-				input[] = {{"ItemSilverBar8oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar7oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar8oz",1}};
-				
-			};
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_210_2;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar8oz",1},{"ItemSilverBar",2}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",8}};
-				input[] = {{"ItemSilverBar8oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar9oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 9;
-		type = 256;
-		displayName = "9oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar9oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-		descriptionShort = "9 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar10oz",1}};
-				input[] = {{"ItemSilverBar9oz",1},{"ItemSilverBar",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar8oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar9oz",1}};
-				
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",9}};
-				input[] = {{"ItemSilverBar9oz",1}};
-			};
-		};
-	};
-	class ItemSilverBar10oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		worth = 10;
-		type = 256;
-		displayName = "10oz Silver";
-		model = "\z\addons\dayz_epoch\models\ItemSilverBar10oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_Silver_bar_10oz_CA.paa";
-		descriptionShort = "10 x 1oz Silver Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_211_1;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar9oz",1},{"ItemSilverBar",1}};
-				input[] = {{"ItemSilverBar10oz",1}};
-				
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemSilverBar",10}};
-				input[] = {{"ItemSilverBar10oz",1}};
-			};
-		};
-	};
-	class ItemCopperBar: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Copper";
-		model = "\z\addons\dayz_epoch\models\copper_bar.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_copper_bar_CA.paa";
-		descriptionShort = "Copper Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_210;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemCopperBar10oz",1}};
-				input[] = {{"ItemCopperBar",10}};
-			};
-		};
-	};
 
-	class ItemCopperBar10oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "10oz Copper";
-		model = "\z\addons\dayz_epoch\models\copper_bar_10oz.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_copper_bar_10oz_CA.paa";
-		descriptionShort = "10oz Copper Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemCopperBar",10}};
-				input[] = {{"ItemCopperBar10oz",1}};
-			};
-		};
-	};
-	
-	class ItemBronzeBar: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Bronze";
-		model = "\z\addons\dayz_epoch\models\bronze_bar.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_bar_bronze_CA.paa";
-		descriptionShort = "Bronze Bar";
-	};
-	class ItemAluminumBar: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Aluminum";
-		model = "\z\addons\dayz_epoch\models\aluminum_bar.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_alum_bar_CA.paa";
-		descriptionShort = "Aluminum Bar";
-		
-	};
-	class ItemAluminumBar10oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "10oz Aluminum";
-		model = "\z\addons\dayz_epoch\models\aluminum_bar.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_alum_bar_10oz_CA.paa";
-		descriptionShort = "10oz Aluminum Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {};
-				output[] = {{"ItemAluminumBar",10}};
-				input[] = {{"ItemAluminumBar10oz",1}};
-			};
-		};
-	};
-	class ItemTinBar: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Tin";
-		model = "\z\addons\dayz_epoch\models\tin_bar.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_tin_bar_CA.paa";
-		descriptionShort = "Tin Bar";
-		
-	};
-	class ItemTinBar10oz: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "10oz Tin";
-		model = "\z\addons\dayz_epoch\models\tin_bar.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_tin_bar_10oz_CA.paa";
-		descriptionShort = "10oz Tin Bar";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_211;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"ItemTinBar",10}};
-				input[] = {{"ItemTinBar10oz",1}};
-			};
-		};
-	};
+
 
 	class ItemZombieParts: CA_Magazine
 	{
@@ -1264,59 +225,7 @@ class CfgMagazines {
 		descriptionShort = "Used to secure structures from unauthorized entry.";
 
 	};
-	
-	class PartFueltank: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = $STR_EQUIP_NAME_8;
-		model = "\dayz_equip\models\fueltank.p3d";
-		picture = "\dayz_equip\textures\equip_fueltank_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_8;
-		class ItemActions {
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_212;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"workshop"};
-				requiretools[] = {"ItemToolbox","ItemCrowbar"};
-				output[] = {{"PartGeneric",1}};
-				input[] = {{"PartFueltank",1}};
-			};
-		};
-	};
-	class PartWheel: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = $STR_EQUIP_NAME_9;
-		model = "\dayz_equip\models\wheel.p3d";
-		picture = "\dayz_equip\textures\equip_wheel_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_9;
-	};
-	class PartGeneric: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = $STR_EQUIP_NAME_10;
-		model = "\dayz_equip\models\genericparts.p3d";
-		picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_10;
-		class ItemActions {
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_213;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"fire"};
-				requiretools[] = {"ItemToolbox","ItemCrowbar"};
-				output[] = {{"ItemPole",1}};
-				input[] = {{"PartGeneric",2}};
-			};
-		};
-	};
+
 	class ItemCorrugated : CA_Magazine
 	{
 		scope = 2;
@@ -1451,7 +360,7 @@ class CfgMagazines {
 				create = "WoodCrate_DZ";
 			};
 		};
-	};			
+	};
 	class ItemOilBarrel: CA_Magazine
 	{
 		scope = 2;
@@ -1527,122 +436,6 @@ class CfgMagazines {
 		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_19;
 	};
-	class ItemJerryMixed: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Mixed Gas Full";
-		model = "\dayz_equip\models\jerrycan.p3d";
-		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-		descriptionShort = "20 liters of Mixed Gas.";
-		sfx = "refuel";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = "Fill Chainsaw";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"CSGAS",1},{"ItemJerryMixed4",1}};
-				input[] = {{"ItemJerryMixed",1}};
-			};
-		};
-	};
-	class ItemJerryMixed4: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Mixed Gas 16L";
-		model = "\dayz_equip\models\jerrycan.p3d";
-		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-		descriptionShort = "16 liters of Mixed Gas.";
-		sfx = "refuel";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = "Fill Chainsaw";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"CSGAS",1},{"ItemJerryMixed3",1}};
-				input[] = {{"ItemJerryMixed4",1}};
-			};
-		};
-	};
-	class ItemJerryMixed3: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Mixed Gas 12L";
-		model = "\dayz_equip\models\jerrycan.p3d";
-		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-		descriptionShort = "12 liters of Mixed Gas.";
-		sfx = "refuel";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = "Fill Chainsaw";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"CSGAS",1},{"ItemJerryMixed2",1}};
-				input[] = {{"ItemJerryMixed3",1}};
-			};
-		};
-	};
-	class ItemJerryMixed2: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Mixed Gas 8L";
-		model = "\dayz_equip\models\jerrycan.p3d";
-		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-		descriptionShort = "8 liters of Mixed Gas.";
-		sfx = "refuel";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = "Fill Chainsaw";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"CSGAS",1},{"ItemJerryMixed1",1}};
-				input[] = {{"ItemJerryMixed2",1}};
-			};
-		};
-	};
-	class ItemJerryMixed1: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Mixed Gas 4L";
-		model = "\dayz_equip\models\jerrycan.p3d";
-		picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-		descriptionShort = "4 liters of Mixed Gas.";
-		sfx = "refuel";
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = "Fill Chainsaw";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"CSGAS",1},{"ItemJerrycanEmpty",1}};
-				input[] = {{"ItemJerryMixed1",1}};
-			};
-		};
-	};
-
 	class ItemJerrycanEmpty: ItemJerrycan
 	{
 		fuelQuantity = 0;
@@ -1651,368 +444,7 @@ class CfgMagazines {
 		picture = "\dayz_equip\textures\equip_jerrycan_e_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_39;
 	};
-	
-	class bulk: CA_Magazine
-	{
-		scope = 2;
-		count = 1;
-		type = 256;
-		displayName = "Supply Crate";
-		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-		descriptionShort = "12 x Random Item";
-		weight = 5;
-	};
-	class bulk_empty: bulk
-	{
-		descriptionShort = "Empty Supply Crate";
-		weight = 5;
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_221;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemSodaCoke",1}};
-				input[] = {{"bulk_empty",1},{"ItemSodaCoke",6}};
-			};
-			class Crafting1
-			{
-				text = $STR_EPOCH_PLAYER_222;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemSodaPepsi",1}};
-				input[] = {{"bulk_empty",1},{"ItemSodaPepsi",6}};
-			};
 
-			class Crafting2
-			{
-				text = $STR_EPOCH_PLAYER_223;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_PartGenericHalf",1}};
-				input[] = {{"bulk_empty",1},{"PartGeneric",6}};
-			};
-			class Crafting3
-			{
-				text = $STR_EPOCH_PLAYER_224;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemTankTrapHalf",1}};
-				input[] = {{"bulk_empty",1},{"ItemTankTrap",6}};
-			};
-			class Crafting4
-			{
-				text = $STR_EPOCH_PLAYER_225;
-				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemWireHalf",1}};
-				input[] = {{"bulk_empty",1},{"ItemWire",6}};
-			};
-			class Crafting5
-			{
-				text = $STR_EPOCH_PLAYER_226;
-				script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_FoodbaconCooked",1}};
-				input[] = {{"bulk_empty",1},{"FoodbaconCooked",6}};
-			};
-		};
-	};
-	class bulk_ItemSodaCoke: bulk
-	{
-		descriptionShort = "6 x ItemSodaCoke";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemSodaCoke",6,"magazine"};
-			};
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_221;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemSodaCokeFull",1}};
-				input[] = {{"bulk_ItemSodaCoke",1},{"ItemSodaCoke",6}};
-			};
-		};
-	};
-	class bulk_ItemSodaCokeFull: bulk
-	{
-		descriptionShort = "12 x ItemSodaCoke";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemSodaCoke",12,"magazine"};
-			};
-		};
-	};
-	class bulk_ItemSodaPepsi: bulk
-	{
-		descriptionShort = "6 x ItemSodaPepsi";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemSodaPepsi",6,"magazine"};
-			};
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_222;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemSodaPepsiFull",1}};
-				input[] = {{"bulk_ItemSodaPepsi",1},{"ItemSodaPepsi",6}};
-			};
-		};
-	};
-	class bulk_ItemSodaPepsiFull: bulk
-	{
-		descriptionShort = "12 x ItemSodaPepsi";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemSodaPepsi",12,"magazine"};
-			};
-		};
-	};
-	class bulk_FoodbaconCooked: bulk
-	{
-		descriptionShort = "6 x FoodbaconCooked";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"FoodbaconCooked",6,"magazine"};
-			};
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_227;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_FoodbaconCookedFull",1}};
-				input[] = {{"bulk_FoodbaconCooked",1},{"FoodbaconCooked",6}};
-			};
-		};
-	};
-	class bulk_FoodbaconCookedFull: bulk
-	{
-		descriptionshort = "12 x FoodbaconCooked";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"FoodbaconCooked",12,"magazine"};
-			};
-		};
-	};
-	class bulk_30Rnd_9x19_MP5SD: bulk
-	{
-		descriptionShort = "12 x 30Rnd_9x19_MP5SD";
-		
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"30Rnd_9x19_MP5SD",12,"magazine"};
-			};
-		};
-	};
-	class bulk_15Rnd_9x19_M9SD: bulk
-	{
-		descriptionShort = "12 x 15Rnd_9x19_M9SD";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"15Rnd_9x19_M9SD",12,"magazine"};
-			};
-		};
-	};
-	class bulk_30Rnd_556x45_StanagSD: bulk
-	{
-		descriptionShort = "12 x 30Rnd_556x45_StanagSD";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"30Rnd_556x45_StanagSD",12,"magazine"};
-			};
-		};
-	};
-	class bulk_ItemSandbag: bulk
-	{
-		descriptionShort = "12 x SandBag";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemSandbag",12,"magazine"};
-			};
-		};
-	};
-	
-	class bulk_ItemTankTrap: bulk
-	{
-		descriptionShort = "12 x Tank Trap";
-		weight = 25;
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemTankTrap",12,"magazine"};
-			};
-		};
-	};
-	class bulk_ItemTankTrapHalf: bulk
-	{
-		descriptionShort = "6 x Tank Trap";
-		weight = 12.5;
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemTankTrap",6,"magazine"};
-			};
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_224;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemTankTrap",1}};
-				input[] = {{"bulk_ItemTankTrapHalf",1},{"ItemTankTrap",6}};
-			};
-		};
-	};
-	
-	class bulk_ItemWire: bulk
-	{
-		descriptionShort = "12 x Wire Kit";
-		weight = 25;
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemWire",12,"magazine"};
-			};
-		};
-	};
-	class bulk_ItemWireHalf: bulk
-	{
-		descriptionShort = "6 x Wire Kit";
-		weight = 12.5;
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"ItemWire",6,"magazine"};
-			};
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_225;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_ItemWire",1}};
-				input[] = {{"bulk_ItemWireHalf",1},{"ItemWire",6}};
-			};
-		};
-	};
-	
-	class bulk_PartGeneric: bulk
-	{
-		descriptionShort = "12 x Scrap Metal";
-		weight = 60;
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"PartGeneric",12,"magazine"};
-			};
-		};
-	};
-	class bulk_PartGenericHalf: bulk
-	{
-		descriptionShort = "6 x Scrap Metal";
-		weight = 30;
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"PartGeneric",6,"magazine"};
-			};
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_223;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox"};
-				output[] = {{"bulk_PartGeneric",1}};
-				input[] = {{"bulk_PartGenericHalf",1},{"PartGeneric",6}};
-			};
-		};
-	};
-
-	class bulk_17Rnd_9x19_glock17: bulk
-	{
-		descriptionShort = "12 x 17Rnd_9x19_glock17";
-		class ItemActions
-		{
-			class CreateMags
-			{
-				text = $STR_EPOCH_PLAYER_209;
-				script = "spawn player_loadCrate;";
-				output[] = {"17Rnd_9x19_glock17",12,"magazine"};
-			};
-		};
-	};
-	
 	class metal_floor_kit: CA_Magazine
 	{
 		scope = 2;
@@ -2164,7 +596,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class metal_panel_kit: CA_Magazine
 	{
 		scope = 2;
@@ -2570,7 +1002,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class ItemGenerator: CA_Magazine
 	{
 		scope = 2;
@@ -2726,7 +1158,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodFloor",1}};
 				input[] = {{"ItemWoodFloorHalf",2}};
-				
+
 			};
 		};
 	};
@@ -2757,7 +1189,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodFloorHalf",1}};
 				input[] = {{"ItemWoodFloorQuarter",2}};
-				
+
 			};
 		};
 	};
@@ -2789,7 +1221,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodStairsSupport",1}};
 				input[] = {{"ItemWoodStairs",1},{"PartWoodLumber",2}};
-				
+
 			};
 		};
 	};
@@ -2857,7 +1289,7 @@ class CfgMagazines {
 				require[] = {"ItemToolbox"};
 				create = "WoodSmallWall_DZ";
 			};
-			
+
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_234;
@@ -2866,7 +1298,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallDoor",1}};
 				input[] = {{"ItemWoodWall",1}};
-				
+
 			};
 			class Crafting1
 			{
@@ -2876,7 +1308,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWindow",1}};
 				input[] = {{"ItemWoodWall",1},{"PartGlass",1}};
-				
+
 			};
 			class Crafting2
 			{
@@ -2886,7 +1318,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallLg",1}};
 				input[] = {{"ItemWoodWall",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-				
+
 			};
 		};
 	};
@@ -2917,7 +1349,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWall",1}};
 				input[] = {{"ItemWoodWallThird",3}};
-				
+
 			};
 		};
 	};
@@ -2948,7 +1380,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoor",1}};
 				input[] = {{"ItemWoodWallDoor",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-				
+
 			};
 		};
 	};
@@ -2979,7 +1411,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoorLocked",1}};
 				input[] = {{"ItemWoodWallWithDoor",1},{"ItemComboLock",1}};
-				
+
 			};
 		};
 	};
@@ -3005,7 +1437,7 @@ class CfgMagazines {
 		};
 	};
 
-	
+
 
 	class ItemWoodWallWindow: CA_Magazine
 	{
@@ -3056,7 +1488,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallDoorLg",1}};
 				input[] = {{"ItemWoodWallLg",1}};
-				
+
 			};
 			class Crafting1
 			{
@@ -3066,7 +1498,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWindowLg",1}};
 				input[] = {{"ItemWoodWallLg",1},{"PartGlass",1}};
-				
+
 			};
 			class Crafting2
 			{
@@ -3076,7 +1508,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallGarageDoor",1}};
 				input[] = {{"ItemWoodWallLg",1},{"PartWoodLumber",2}};
-				
+
 			};
 		};
 	};
@@ -3108,7 +1540,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallGarageDoorLocked",1}};
 				input[] = {{"ItemWoodWallGarageDoor",1},{"ItemComboLock",1}};
-				
+
 			};
 		};
 	};
@@ -3152,7 +1584,7 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodLargeWallDoor_DZ";
-			};			
+			};
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_238;
@@ -3161,7 +1593,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoorLg",1}};
 				input[] = {{"ItemWoodWallDoorLg",1},{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-				
+
 			};
 		};
 	};
@@ -3184,7 +1616,7 @@ class CfgMagazines {
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Land_DZE_LargeWoodDoor";
-			};			
+			};
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_239;
@@ -3193,7 +1625,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodWallWithDoorLgLocked",1}};
 				input[] = {{"ItemWoodWallWithDoorLg",1},{"ItemComboLock",1}};
-				
+
 			};
 		};
 	};
@@ -3297,7 +1729,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemKnife"};
 				output[] = {{"WoodenArrow",3}};
 				input[] = {{"PartWoodPile",1},{"ItemTrashRazor",1}};
-				
+
 			};
 			class Crafting2
 			{
@@ -3307,9 +1739,9 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"stick_fence_kit",1}};
 				input[] = {{"PartWoodPile",6}};
-				
+
 			};
-			
+
 		};
 	};
 	class PartPlankPack: CA_Magazine
@@ -3372,8 +1804,8 @@ class CfgMagazines {
 				output[] = {{"cinder_door_kit",1}};
 				input[] = {{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",1}};
 			};
-			
-			
+
+
 		};
 	};
 	class MortarBucket: CA_Magazine
@@ -3407,7 +1839,7 @@ class CfgMagazines {
 				output[] = {{"PartWoodPlywood",3}};
 				input[] = {{"PartPlywoodPack",1}};
 			};
-			
+
 		};
 	};
 	class PartWoodLumber: CA_Magazine
@@ -3428,7 +1860,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"PartWoodPlywood",1}};
 				input[] = {{"PartWoodLumber",2}};
-				
+
 			};
 			class Crafting1
 			{
@@ -3438,7 +1870,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",1}};
 				input[] = {{"PartWoodLumber",2},{"PartGeneric",1}};
-				
+
 			};
 			class Crafting2
 			{
@@ -3448,9 +1880,9 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"deer_stand_kit",1}};
 				input[] = {{"PartWoodLumber",8},{"PartWoodPile",2}};
-				
+
 			};
-			
+
 			class Crafting3
 			{
 				text = $STR_EPOCH_PLAYER_257;
@@ -3459,7 +1891,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodStairs",1}};
 				input[] = {{"PartWoodLumber",8}};
-				
+
 			};
 			class Crafting4
 			{
@@ -3469,7 +1901,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodLadder",1}};
 				input[] = {{"PartWoodLumber",8}};
-				
+
 			};
 			class Crafting5
         		{
@@ -3497,7 +1929,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodCrateKit",1}};
 				input[] = {{"PartWoodLumber",6}};
-			};				
+			};
 		};
 	};
 	class PartWoodPlywood: CA_Magazine
@@ -3518,7 +1950,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"workbench_kit",1}};
 				input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
-				
+
 			};
 			class Crafting1
 			{
@@ -3556,7 +1988,7 @@ class CfgMagazines {
 		                output[] = {{"PartPlywoodPack",1}};
 		                input[] = {{"PartWoodPlywood",3}};
 		        };
-			
+
 		};
 	};
 	class PartOre: CA_Magazine
@@ -3578,7 +2010,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemSledge"};
 				output[] = {{"PartGeneric",1},{"ItemWaterbottleUnfilled",1}};
 				input[] = {{"PartOre",4},{"ItemWaterbottle",1}};
-			};			
+			};
 		};
 	};
 	class PartOreSilver: CA_Magazine
@@ -3600,7 +2032,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemSledge"};
 				output[] = {{"ItemSilverBar",1},{"ItemWaterbottleUnfilled",1}};
 				input[] = {{"PartOreSilver",1},{"ItemWaterbottle",1}};
-			};			
+			};
 		};
 	};
 	class PartOreGold: CA_Magazine
@@ -3622,7 +2054,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemSledge"};
 				output[] = {{"ItemGoldBar",1},{"ItemWaterbottleUnfilled",1}};
 				input[] = {{"PartOreGold",1},{"ItemWaterbottle",1}};
-			};			
+			};
 		};
 	};
 	class PartVRotor: CA_Magazine
@@ -3754,7 +2186,7 @@ class CfgMagazines {
 		scope = 2;
 		displayName = "Duane";
 		descriptionShort = "Rocker (black)";
-	};	
+	};
 	class Skin_Rocker2_DZ: SkinBase
 	{
 		scope = 2;
@@ -3778,7 +2210,7 @@ class CfgMagazines {
 		scope = 2;
 		displayName = "Bandit Outfit";
 		descriptionShort = "Bandit Outfit";
-	};	
+	};
 	class Skin_Bandit2_DZ: SkinBase
 	{
 		scope = 2;
@@ -3944,7 +2376,7 @@ class CfgMagazines {
 		descriptionShort = "Team Leader";
 	};
 	// new
-		
+
 
 
 
@@ -4006,7 +2438,7 @@ class CfgMagazines {
 
 	//
 
-	class ItemTent; 
+	class ItemTent;
 	class ItemTentOld: ItemTent
 	{
 		scope = 2;
@@ -4053,7 +2485,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 		descriptionShort = "A domed camping tent desert that can be pitched, allowing you extended storage.";
-		
+
 		class ItemActions {
 			class Build {
 				text = $STR_PITCH_TENT;
@@ -4116,7 +2548,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class ItemSandbag : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -4125,7 +2557,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\sandbags.p3d";
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_21;
-		
+
 		class ItemActions {
 			class Build {
 				text = $STR_EPOCH_PLAYER_272;
@@ -4172,7 +2604,7 @@ class CfgMagazines {
 				inputweapons[] = {"M240_DZ"};
 			};
 			*/
-			
+
 		};
 	};
 
@@ -4184,7 +2616,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\sandbags.p3d";
 		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_21;
-		
+
 		class ItemActions {
 			class Build {
 				text = $STR_EPOCH_PLAYER_299;
@@ -4200,7 +2632,7 @@ class CfgMagazines {
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbag",1}};
 				input[] = {{"BagFenceRound_DZ_kit",1}};
-			};	
+			};
 		};
 	};
 
@@ -4277,7 +2709,7 @@ class CfgMagazines {
 		};
 	};
 
-	
+
 	class ItemSandbagExLarge : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -4305,7 +2737,7 @@ class CfgMagazines {
                         };
 		};
 	};
-	
+
 	class ItemSandbagExLarge5x : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -4324,7 +2756,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class ItemTankTrap : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -4333,7 +2765,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\tank_trap_kit.p3d";
 		picture = "\dayz_equip\textures\equip_tanktrap_kit_CA.paa";
 		descriptionShort = $STR_EQUIP_DESC_22;
-		
+
 		class ItemActions {
 			class Build {
 				text = $STR_ACTIONS_BUILD;
@@ -4343,7 +2775,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class TrapBear : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -4352,7 +2784,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\bear_trap_gear.p3d";
 		picture = "\dayz_equip\textures\equip_bear_trap_ca.paa";
 		descriptionShort = "Place to add a bear trap";
-		
+
 		class ItemActions {
 			class Build {
 				text = "Place Trap";
@@ -4362,7 +2794,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class ItemWire : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -4371,7 +2803,7 @@ class CfgMagazines {
 		model = "\dayz_equip\models\Fence_wire_kit.p3d";
 		picture = "\dayz_equip\textures\equip_fencewire_kit_CA.paa";
 		descriptionShort = $STR_EQUIP_DESC_23;
-		
+
 		class ItemActions {
 			class Build {
 				text = $STR_ACTIONS_BUILD;
@@ -4381,7 +2813,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class Quiver : CA_Magazine
 	{
 		scope = public;
@@ -4393,7 +2825,7 @@ class CfgMagazines {
 		model = "\z\addons\dayz_communityassets\models\quiver";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
 	};
-	
+
 	class WoodenArrow : CA_Magazine {
 		scope = public;
 		displayName = "Arrow"; //$STR_MAG_NAME_3;
@@ -4403,7 +2835,7 @@ class CfgMagazines {
 		count = 1;
 		initSpeed = 150;
 		descriptionShort = "Arrow made out of wood, used with the Crossbow."; //$STR_MAG_DESC_3;
-		
+
 		class ItemActions {
 			class ReloadMag {
 				text = "Combine into Quiver";
@@ -4413,9 +2845,9 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class HandGrenade;//External class reference
-	
+
 	class ItemSodaEmpty: HandGrenade
 	{
 		scope = 2;
@@ -4437,10 +2869,10 @@ class CfgMagazines {
 			};
 		};
 	};
-	
-	
+
+
 	class ItemSodaCoke; //External class reference
-	
+
 	class ItemSodaCokeEmpty : ItemSodaEmpty{
 		model = "\dayz_equip\models\soda_coke_e.p3d";
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
@@ -4625,8 +3057,8 @@ class CfgMagazines {
 	};
 */
 	class FoodEdible;
-	
-	
+
+
 	class FoodCanFrankBeans: FoodEdible
 	{
 		scope = 2;
@@ -4710,19 +3142,19 @@ class CfgMagazines {
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_1;
 		bloodRegen = 100;
 	};
-	
+
 	class FoodchickenRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_2;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_2;
 		bloodRegen = 100;
 	};
-	
+
 	class FoodrabbitRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_3;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_3;
 		bloodRegen = 400;
 	};
-	
+
 	class FoodbaconRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_4;
 		model = "z\addons\dayz_communityassets\models\bacon_raw.p3d";
@@ -4735,7 +3167,7 @@ class CfgMagazines {
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_6;
 		bloodRegen = 100;
 			};
-	
+
 	class FoodmeatCooked : FoodEdible {
 		scope = public;
 		count = 1;
@@ -4750,13 +3182,13 @@ class CfgMagazines {
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;
 		bloodRegen = 400;
 	};
-	
+
 	class FoodchickenCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_2;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_2;
 		bloodRegen = 400;
 	};
-	
+
 	class FoodbaconCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_4;
 		model = "z\addons\dayz_communityassets\models\bacon_fried.p3d";
@@ -4774,7 +3206,7 @@ class CfgMagazines {
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
 		bloodRegen = 600;
 	};
-	
+
 	class AngelCookies : FoodEdible {
 		scope = public;
 		count = 1;
@@ -4793,7 +3225,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\mre.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
 	};
-	
+
 	class FoodPistachio : FoodEdible {
 		scope = public;
 		count = 1;
@@ -4812,7 +3244,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\nutmix.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_nutmix_CA.paa";
 	};
-	
+
 	class FoodCanGriff : FoodEdible {
 		scope = public;
 		count = 1;
@@ -4921,7 +3353,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
 	};
-	
+
 	// new DZE harvested food
 	class FoodPumpkin : FoodEdible {
 		scope = public;
@@ -4943,7 +3375,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
 	};
-	
+
 	class TrashTinCan: HandGrenade
 	{
 		scope = 2;
@@ -5074,14 +3506,14 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
-	
+
 	class FoodDrink;
 	class ItemWaterbottle: FoodDrink
 	{
 		scope = 2;
 		refillable = 1;
 		sfx = "drink";
-		wateroz = 10; 
+		wateroz = 10;
 		displayName = "$STR_EQUIP_NAME_12";
 		model = "\dayz_equip\models\waterbottle_gear.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle10oz_ca.paa";
@@ -5105,12 +3537,12 @@ class CfgMagazines {
 			};
 		};
 	};
-	
+
 	class ItemWaterbottleBoiled : ItemWaterbottle {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	};
-	
+
 	class ItemWaterbottle1oz : ItemWaterbottle {
 		displayName = "Water Bottle (1oz)";
 		descriptionShort = "Watter Bottle with 1oz of water";
@@ -5285,11 +3717,11 @@ class CfgMagazines {
 		};
 	};
 
-	
+
 
 	class 8Rnd_B_Beneli_74Slug;
 	class 8Rnd_B_Beneli_Pellets;
-	
+
 	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
 	{
 		displayName="2Rnd. Slug";
@@ -5324,7 +3756,7 @@ class CfgMagazines {
 		descriptionShort="Caliber: 12 gauge <br/>Rounds: 2 Pellets<br/>Used in: M1014";
 		model = "\z\addons\dayz_communityassets\models\2shells_pellet.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_CA.paa";
-		weight = 0.1; 
+		weight = 0.1;
 		class ItemActions
 		{
 			class ReloadMag
