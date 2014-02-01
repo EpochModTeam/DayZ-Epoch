@@ -107,10 +107,6 @@ if (_locked) then { //unlock
 	_holder setVariable["ObjectID",_objectID,true];
 	_holder setVariable["ObjectUID",_objectUID,true];
 	_holder setVariable ["OEMPos", _pos, true];
-
-	_weapons = 		getWeaponCargo _obj;
-	_magazines = 	getMagazineCargo _obj;
-	_backpacks = 	getBackpackCargo _obj;
 	
 	// remove vault
 	deleteVehicle _obj;
