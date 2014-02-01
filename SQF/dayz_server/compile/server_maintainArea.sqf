@@ -18,12 +18,12 @@ if (_option == 1) then {
 				if (_objectUID != "0") then {
 					_x setDamage 0;
 					_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" and ID is "0"
-					_key call server_maintainObj;
+					_data = "HiveExt" callExtension _key;
 				};
 			} else {
 				_x setDamage 0;
 				_key = format["CHILD:396:%1:", _objectID]; //Use ID instead of UID because ID is shorter
-				_key call server_maintainObj;
+				_data = "HiveExt" callExtension _key;
 			};
 		};
 	} forEach _objects;
@@ -38,12 +38,12 @@ if (_option == 2) then {
 			if (_objectUID != "0") then {
 				_targetObj setDamage 0;
 				_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" and ID is "0"
-				_key call server_maintainObj;
+				_data = "HiveExt" callExtension _key;
 			};
 		} else {
 			_targetObj setDamage 0;
 			_key = format["CHILD:396:%1:", _objectID]; //Use ID instead of UID because ID is shorter
-			_key call server_maintainObj;
+			_data = "HiveExt" callExtension _key;
 			
 		};
 	};
