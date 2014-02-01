@@ -163,7 +163,12 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 
 	_isMan = _cursorTarget isKindOf "Man";
 	_traderType = _typeOfCursorTarget;
-	_ownerID = _cursorTarget getVariable ["CharacterID","0"];
+	_charID = _cursorTarget getVariable ["CharacterID","0"];
+	if ((typeName _charID) == "ARRAY") then {
+		_ownerID = _charID select 0;
+	} else {
+		_ownerID = _charID;
+	};
 	_isAnimal = _cursorTarget isKindOf "Animal";
 	_isDog =  (_cursorTarget isKindOf "DZ_Pastor" || _cursorTarget isKindOf "DZ_Fin");
 	_isZombie = _cursorTarget isKindOf "zZombie_base";

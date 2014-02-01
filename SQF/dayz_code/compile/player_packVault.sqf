@@ -1,7 +1,7 @@
 /*
 [_obj] spawn player_packVault;
 */
-private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
+private ["_activatingPlayer","_obj","_ownerID","_charID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -20,9 +20,15 @@ _playerNear = _obj call dze_isnearest_player;
 
 if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_16") , "PLAIN DOWN"];  };
 
-_ownerID = _obj getVariable["CharacterID","0"];
+_charID 	= _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
+
+if ((typeName _charID) == "ARRAY") then {
+	_ownerID = _charID select 0;
+} else {
+	_ownerID = _charID;
+};
 
 player removeAction s_player_packvault;
 s_player_packvault = 1;

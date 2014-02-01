@@ -12,9 +12,15 @@ s_player_packtent = 1;
 _activatingPlayer = getPlayerUID player;
 
 _obj = _this;
-_ownerID = _obj getVariable["CharacterID","0"];
+_charID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
+if ((typeName _charID) == "ARRAY") then {
+	_ownerID = _charID select 0;
+} else {
+	_ownerID = _charID;
+};
+		
 [1,1] call dayz_HungerThirst;
 player playActionNow "Medic";
 
