@@ -52,7 +52,7 @@ BEGIN
 		AND `Object_DATA`.`Classname` NOT LIKE 'Metal%'
 		AND `Object_DATA`.`Classname` NOT LIKE '%Storage%'
 		AND `Object_DATA`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ')
-		AND FindVehicleKeys(Object_DATA.CharacterID) = 0;
+		AND FindVehicleKeysCount(Object_DATA.CharacterID) = 0;
 
 	RETURN ROW_COUNT();
 END
