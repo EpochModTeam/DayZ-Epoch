@@ -10,3 +10,5 @@ UPDATE `Traders_DATA` SET `buy` = '[2,"ItemBriefcase100oz",1]', `sell` = '[1,"It
 UPDATE `Traders_DATA` SET `buy` = '[1,"ItemBriefcase100oz",1]', `sell` = '[5,"ItemGoldBar10oz",1]' WHERE `item` LIKE  '%GAZ_Vodnik_MedEvac%';
 
 INSERT IGNORE INTO `Traders_DATA` (`id`, `item`, `qty`, `buy`, `sell`, `order`, `tid`, `afile`) VALUES (NULL,'["BAF_Merlin_DZE",2]', 261, '[2,"ItemBriefcase100oz",1]]', '[1,"ItemBriefcase100oz",1]]', 0, 517, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` (`id`, `item`, `qty`, `buy`, `sell`, `order`, `tid`, `afile`) VALUES (NULL,'["MH60S_DZE",2]', 512, '[4,"ItemBriefcase100oz",1]]', '[1,"ItemBriefcase100oz",1]]', 0, 517, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` (`id`, `item`, `qty`, `buy`, `sell`, `order`, `tid`, `afile`) VALUES (NULL,'["MH60S_DZE",2]', 493, '[2,"ItemBriefcase100oz",1]]', '[1,"ItemBriefcase100oz",1]]', 0, 517, 'trade_any_vehicle');
