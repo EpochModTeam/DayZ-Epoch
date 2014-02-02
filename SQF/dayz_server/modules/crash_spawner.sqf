@@ -11,8 +11,8 @@ _fadeFire = false;
 
 _spawnRoll = random 1;
 if (_spawnRoll <= _spawnChance) then {
-	
-	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ","Mass_grave_DZ"] call BIS_fnc_selectRandom;
+
+	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ","UH60_NAVY_Wreck_DZ","UH60_ARMY_Wreck_DZ","UH60_NAVY_Wreck_burned_DZ","UH60_ARMY_Wreck_burned_DZ","Mass_grave_DZ"] call BIS_fnc_selectRandom;
 
 	if(_crashModel == "Mass_grave_DZ") then {
 		_lootTable = "MassGrave";
@@ -21,7 +21,7 @@ if (_spawnRoll <= _spawnChance) then {
 	};
 
 	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
-	
+
 	// Loop for a new location without any vehicles
 	_needsrelocated = true;
 	while {_needsrelocated} do {
@@ -73,7 +73,7 @@ if (_spawnRoll <= _spawnChance) then {
 		publicVariable "PVDZE_obj_Fire";
 		_crash setvariable ["fadeFire",_fadeFire,true];
 	};
-	
+
 	_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
 	if (DZE_MissionLootTable) then {
 		_config = missionConfigFile >> "CfgBuildingLoot" >> _lootTable;;
@@ -89,9 +89,9 @@ if (_spawnRoll <= _spawnChance) then {
 		_index = _weights select _index;
 		_itemType = _itemTypes select _index;
 		[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
-		//diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]); 
+		//diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]);
 	};
-	
+
 	// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
 	_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
 	{
