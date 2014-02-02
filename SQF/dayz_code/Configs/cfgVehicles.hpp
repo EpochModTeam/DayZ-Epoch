@@ -323,6 +323,7 @@ class CfgVehicles {
 		class DestructionEffects;
 	};
 	#include "CfgVehicles\Wrecks.hpp"
+	#include "CfgVehicles\DZE\Wrecks.hpp"
 
 	class Mass_grave;
 	class Mass_grave_DZ: Mass_grave
