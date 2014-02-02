@@ -915,3 +915,26 @@ server_getLocalObjVars = {
 	PVDZE_localVarsResult = _vals;
 	(owner _player) publicVariableClient "PVDZE_localVarsResult";
 };
+
+server_setLocalObjVars = {
+	private ["_obj", "_holder", "_weapons", "_magazines", "_backpacks"];
+
+	_obj = _this select 0;
+	_holder = _this select 1;
+	
+	_weapons = 		getWeaponCargo _obj;
+	_magazines = 	getMagazineCargo _obj;
+	_backpacks = 	getBackpackCargo _obj;
+	
+	deleteVehicle _obj;
+	
+	if (count _weapons > 0) then {
+		_holder setVariable ["WeaponCargo", _weapons];
+	};
+	if (count _magazines > 0) then {
+		_holder setVariable ["MagazineCargo", _magazines];
+	};
+	if (count _backpacks > 0) then {
+		_holder setVariable ["BackpackCargo", _backpacks];
+	};
+};
