@@ -58,23 +58,11 @@ if(!isNull _obj) then {
 	_holder setVariable["ObjectUID",_objectUID,true];
 	_holder setVariable ["OEMPos", _pos, true];
 
-	_weapons = 		getWeaponCargo _obj;
-	_magazines = 	getMagazineCargo _obj;
-	_backpacks = 	getBackpackCargo _obj;
-	
+	PVDZE_obj_setlocalVars = [_obj,_holder];
+	publicVariableServer "PVDZE_obj_setlocalVars";
+			
 	// remove vault
 	deleteVehicle _obj;
-
-	// Fill variables with loot
-	if (count _weapons > 0) then {
-		_holder setVariable ["WeaponCargo", _weapons, true];
-	};
-	if (count _magazines > 0) then {
-		_holder setVariable ["MagazineCargo", _magazines, true];
-	};
-	if (count _backpacks > 0) then {
-		_holder setVariable ["BackpackCargo", _backpacks, true];
-	};
 	
 	cutText [format[(localize "str_epoch_player_117"),_text], "PLAIN DOWN"];
 };
