@@ -65,10 +65,16 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			sleep 5;
 
-			_weapons = 		_obj getVariable["WeaponCargo",[]];
-			_magazines = 	_obj getVariable["MagazineCargo",[]];
-			_backpacks = 	_obj getVariable["BackpackCargo",[]];
-	
+			PVDZE_obj_localVars = [player, _obj, ["WeaponCargo", "MagazineCargo", "BackpackCargo"]];
+			publicVariableServer "PVDZE_obj_localVars";
+			
+			PVDZE_localVarsResult = nil;
+			waitUntil {sleep 1; !isNil "PVDZE_localVarsResult"};
+
+			_weapons = if (typeName (PVDZE_localVarsResult select 0) == "ARRAY") then { (PVDZE_localVarsResult select 0) } else { [] };
+			_magazines = if (typeName (PVDZE_localVarsResult select 1) == "ARRAY") then { (PVDZE_localVarsResult select 1) } else { [] };
+			_backpacks = if (typeName (PVDZE_localVarsResult select 2) == "ARRAY") then { (PVDZE_localVarsResult select 2) } else { [] };
+
 			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
 			if ((isNull _holder) or (isNil "_holder")) then {
 				_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];

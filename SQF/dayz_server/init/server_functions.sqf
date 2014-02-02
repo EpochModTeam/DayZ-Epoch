@@ -884,3 +884,34 @@ server_spawnCleanAnimals = {
 		diag_log (format["CLEANUP: Deleted %1 Animals out of %2",_delQtyAnimal,_qty]);
 	};
 };
+
+/*
+server_getLocalObjVars
+Gets local vars from a target objects and pushing results back to client
+Eg.
+
+PVDZE_obj_localVars = [player, _obj, ["WeaponCargo", "MagazineCargo", "BackpackCargo"]];
+publicVariableServer "PVDZE_obj_localVars";
+
+PVDZE_localObjVarsResult = nil;
+waitUntil {sleep 1; !isNil "PVDZE_localObjVarsResult"};
+*/
+server_getLocalObjVars = {
+	private ["_player", "_obj", "_vars", "_vals"];
+
+	_player = _this select 0;
+	_obj = _this select 1;
+	_vars = _this select 2;
+	
+	if (typeName _vars != "ARRAY") then {
+		_vars = [_vars];
+	};
+
+	_vals = [];
+	{
+		_vals = _vals + [_obj getVariable [_x, false]];
+	} forEach _vars;
+
+	PVDZE_localVarsResult = _vals;
+	(owner _player) publicVariableClient "PVDZE_localVarsResult";
+};
