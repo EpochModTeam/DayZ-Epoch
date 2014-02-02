@@ -1,3 +1,4 @@
+[ADDED] Keep safe/lockbox vars server side until needed. This should help with performance. @maca134
 [ADDED] Added SQL Function DeleteNonKeyVehicles and SQL event UnlockNonKeyVehicles. Use one or the other not both. @maca134 @Fank
 [ADDED] Option to disable R3F weight system. DZE_R3F_WEIGHT = false in init.sqf to disable. @vbawol
 
