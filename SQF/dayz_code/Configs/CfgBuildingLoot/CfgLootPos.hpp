@@ -434,7 +434,7 @@ class Land_Ind_Shed_02_main: Default {
 	maxRoaming = 3;
 }; // Qty: 283
 
-class HOUSERoaming: Residential {
+class HouseRoaming: Residential {
 	lootChance = 0.5;
 	zombieChance = 0.2;
 	maxRoaming = 2;
