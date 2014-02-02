@@ -2,6 +2,7 @@
 [ADDED] Added SQL Function DeleteNonKeyVehicles and SQL event UnlockNonKeyVehicles. Use one or the other not both. @maca134 @Fank
 [ADDED] Option to disable R3F weight system. DZE_R3F_WEIGHT = false in init.sqf to disable. @vbawol
 
+[FIXED] General cleanup and fixes. @Fank @Skaronator @icomrade @vbawol 
 [FIXED] Issue with Scaffolding being too close and killing player. @Fank
 [FIXED] Stuck in infinite trading loop when item is out of stock. @vbawol
 [FIXED] Fixed backpack disappearing issue. @vbawol
@@ -11,8 +12,6 @@
 [FIXED] Issue that prevented the server from starting. @Skaronator
 [FIXED] Some typos in the loot table. @Skaronator
 [FIXED] DZE_MissionLootTable - Some things are missing. @vbawol @Skaronator
-
-[CHANGED] General cleanup and fixes. @Fank @Skaronator @vbawol 
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://bmrf.me/ for hosting our development server.
