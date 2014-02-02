@@ -12,5 +12,7 @@
 [FIXED] Some typos in the loot table. @Skaronator
 [FIXED] DZE_MissionLootTable - Some things are missing. @vbawol @Skaronator
 
+[CHANGED] General cleanup and fixes. @Fank @Skaronator @vbawol 
+
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://bmrf.me/ for hosting our development server.
