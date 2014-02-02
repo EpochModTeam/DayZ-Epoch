@@ -15,6 +15,7 @@ Included Custom Addons
 --------------------------
 * AutoGyro - by CSJ http://www.armaholic.com/page.php?id=2359
 * Taxi by [GLT]Myke http://www.armaholic.com/page.php?id=12289
+* Blackhawk and Seahawk Wrecks by [GLT]Myke http://www.armaholic.com/page.php?id=10670
 * SUV Colors by Python.au http://www.armaholic.com/page.php?id=17176
 * R3F Realism by http://www.team-r3f.org/
 * ASC EU Lights Mod http://www.armaholic.com/page.php?id=12076
