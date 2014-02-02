@@ -29,10 +29,7 @@ server_publishVeh3 = 			compile preprocessFileLineNumbers "\z\addons\dayz_server
 server_tradeObj = 				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_tradeObject.sqf";
 server_traders = 				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_traders.sqf";
 server_playerSync =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
-zombie_findOwner =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
-server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 server_spawnCrashSite  =    	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
-server_handleZedSpawn =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleZedSpawn.sqf";
 server_spawnEvents =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
 //server_weather =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_weather.sqf";
 fnc_plyrHit   =					compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
@@ -44,6 +41,29 @@ server_sendToClient =			compile preprocessFileLineNumbers "\z\addons\dayz_server
 
 //onPlayerConnected 			{[_uid,_name] call server_onPlayerConnect;};
 onPlayerDisconnected 		{[_uid,_name] call server_onPlayerDisconnect;};
+
+server_updateNearbyObjects = {
+	private["_pos"];
+	_pos = _this select 0;
+	{
+		[_x, "gear"] call server_updateObject;
+	} forEach nearestObjects [_pos, dayz_updateObjects, 10];
+};
+
+server_handleZedSpawn = {
+	private["_zed"];
+	_zed = _this select 0;
+	_zed enableSimulation false;
+};
+
+zombie_findOwner = {
+	private["_unit"];
+	_unit = _this select 0;
+	#ifdef DZE_SERVER_DEBUG
+	diag_log ("CLEANUP: DELETE UNCONTROLLED ZOMBIE: " + (typeOf _unit) + " OF: " + str(_unit) );
+	#endif
+	deleteVehicle _unit;
+};
 
 vehicle_handleInteract = {
 	private["_object"];
