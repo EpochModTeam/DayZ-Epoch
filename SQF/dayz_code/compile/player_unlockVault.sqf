@@ -65,8 +65,8 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			sleep 5;
 
-			PVDZE_obj_localVars = [player, _obj, ["WeaponCargo", "MagazineCargo", "BackpackCargo"]];
-			publicVariableServer "PVDZE_obj_localVars";
+			PVDZE_obj_getlocalVars = [player, _obj, ["WeaponCargo", "MagazineCargo", "BackpackCargo"]];
+			publicVariableServer "PVDZE_obj_getlocalVars";
 			
 			PVDZE_localVarsResult = nil;
 			waitUntil {sleep 1; !isNil "PVDZE_localVarsResult"};
