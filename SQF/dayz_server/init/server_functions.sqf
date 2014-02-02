@@ -926,6 +926,8 @@ server_setLocalObjVars = {
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
 	
+	deleteVehicle _obj;
+	
 	if (count _weapons > 0) then {
 		_holder setVariable ["WeaponCargo", _weapons];
 	};

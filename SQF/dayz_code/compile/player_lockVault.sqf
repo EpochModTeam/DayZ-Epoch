@@ -60,10 +60,7 @@ if(!isNull _obj) then {
 
 	PVDZE_obj_setlocalVars = [_obj,_holder];
 	publicVariableServer "PVDZE_obj_setlocalVars";
-			
-	// remove vault
-	deleteVehicle _obj;
-	
+
 	cutText [format[(localize "str_epoch_player_117"),_text], "PLAIN DOWN"];
 };
 s_player_lockvault = -1;
