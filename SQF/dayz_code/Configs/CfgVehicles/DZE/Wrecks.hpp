@@ -1,4 +1,4 @@
-class GLT_UH60_NAVY_Wreck_DZ: SpawnableWreck {
+class UH60_NAVY_Wreck_DZ: SpawnableWreck {
 	scope = public;
 	class Armory {
 		disabled = 1;
@@ -17,15 +17,15 @@ class GLT_UH60_NAVY_Wreck_DZ: SpawnableWreck {
 	transportSoldier = 0;
 	class Eventhandlers {};
 };
-class GLT_UH60_ARMY_Wreck_DZ: GLT_UH60_NAVY_Wreck_DZ {
+class UH60_ARMY_Wreck_DZ: UH60_NAVY_Wreck_DZ {
 	displayName = "UH60 Wreck (ARMY)";
 	hiddenSelectionsTextures[] = {"\glt_bh_wreck\uh60_1_co.paa", "\glt_bh_wreck\uh60_2_co.paa", "\glt_bh_wreck\uh60_3_co.paa", "\glt_bh_wreck\uh60_4_co.paa"};
 };
-class GLT_UH60_NAVY_Wreck_burned_DZ: GLT_UH60_NAVY_Wreck_DZ {
+class UH60_NAVY_Wreck_burned_DZ: UH60_NAVY_Wreck_DZ {
 	displayName = "UH60 Wreck burned (NAVY)";
 	hiddenSelectionsTextures[] = {"\glt_bh_wreck_burned\uh60_1_navy_destr_co.paa", "\glt_bh_wreck_burned\uh60_2_navy_destr_co.paa", "\glt_bh_wreck_burned\uh60_3_navy_destr_co.paa", "\glt_bh_wreck_burned\uh60_4_navy_destr_co.paa"};
 };
-class GLT_UH60_ARMY_Wreck_burned_DZ: GLT_UH60_NAVY_Wreck_DZ {
+class UH60_ARMY_Wreck_burned_DZ: UH60_NAVY_Wreck_DZ {
 	displayName = "UH60 Wreck burned (ARMY)";
 	hiddenSelectionsTextures[] = {"\glt_bh_wreck_burned\uh60_1_destr_co.paa", "\glt_bh_wreck_burned\uh60_2_destr_co.paa", "\glt_bh_wreck_burned\uh60_3_destr_co.paa", "\glt_bh_wreck_burned\uh60_4_destr_co.paa"};
 };
