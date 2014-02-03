@@ -4,7 +4,7 @@
 [ADDED] SQL event UnlockNonKeyVehicles run once a day. Use one or the other not both. @maca134 @Fank
 [ADDED] Option to disable R3F weight system. DZE_R3F_WEIGHT = false in init.sqf to disable. @vbawol
 
-[FIXED] DZE_DamageBeforeMaint = 0.09 by defaut and should fix issues with maintain option not working when damage is set to 0.1 with SQL event. @vbawol
+[FIXED] DZE_DamageBeforeMaint = 0.09 by defaut should fix issues with maintain option not working when damage is set to 0.1 with SQL event. @vbawol
 [FIXED] Fix for Death Messages <NULL> when attacker is in vehicle. @icomrade @vbawol
 [FIXED] General cleanup and fixes. @Fank @Skaronator @icomrade @vbawol 
 [FIXED] Issue with Scaffolding being too close and killing player. @Fank
