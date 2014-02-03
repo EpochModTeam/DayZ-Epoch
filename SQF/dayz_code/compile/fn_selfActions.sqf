@@ -1,4 +1,3 @@
-
 scriptName "Functions\misc\fn_selfActions.sqf";
 /***********************************************************
 	ADD ACTIONS FOR SELF
@@ -650,7 +649,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	};
 
 	// inplace maintenance tool
-	if((_cursorTarget isKindOf "ModularItems" or _cursorTarget isKindOf "DZE_Housebase" or _typeOfCursorTarget in DZE_ExtraMaintain) and (damage _cursorTarget >= DZE_DamageBeforeMaint)) then {
+	if((_cursorTarget isKindOf "ModularItems" or _cursorTarget isKindOf "DZE_Housebase" or _typeOfCursorTarget == "LightPole_DZ") and (damage _cursorTarget >= DZE_DamageBeforeMaint)) then {
 		if ((s_player_lastTarget select 2) != _cursorTarget) then {
 			if (s_player_maint_build > 0) then {	
 				player removeAction s_player_maint_build;
