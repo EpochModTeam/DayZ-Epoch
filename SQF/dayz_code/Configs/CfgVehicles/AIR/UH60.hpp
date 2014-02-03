@@ -1,5 +1,4 @@
-class UH60_Base: Helicopter
-{
+class UH60_Base: Helicopter {
 	scope = 0;
 	side = 1;
 	faction = "USMC";
@@ -13,8 +12,7 @@ class UH60_Base: Helicopter
 	lockDetectionSystem = "8 + 4";
 	incommingMisslieDetectionSystem = 0;
 };
-class MH60S_DZ : UH60_Base
-{
+class MH60S_DZ : UH60_Base {
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -28,10 +26,8 @@ class MH60S_DZ : UH60_Base
 	scope = 2;
 	accuracy = 1.5;	// accuracy needed to recognize type of this target
 	displayName = "MH-60S DZ";
-	class Turrets : Turrets
-	{
-		class MainTurret : MainTurret
-		{
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
 			minElev = -80;
@@ -53,8 +49,7 @@ class MH60S_DZ : UH60_Base
 			gunnerAction = "MH60_Gunner";
 			gunnerInAction = "MH60_Gunner";
 			primaryGunner = 1;
-			class ViewOptics
-			{
+			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
 				maxAngleX = 30;
@@ -91,8 +86,7 @@ class MH60S_DZ : UH60_Base
 			memoryPointGunnerOptics = "gunnerview_2";
 		};
 	};
-	class AnimationSources : AnimationSources
-	{
+	class AnimationSources : AnimationSources {
 		class ReloadAnim {
 			source = "reload";
 			weapon = "M240_veh";
@@ -243,75 +237,7 @@ class MH60S_DZ : UH60_Base
 		};
 	};
 };
-class MH60S_DZE : UH60_Base
-{
-	displayName = "MH-60S AL";
-	class Turrets : Turrets
-	{
-		class MainTurret : MainTurret
-		{
-			body = "mainTurret";
-			gun = "mainGun";
-			minElev = -80;
-			maxElev = 25;
-			initElev = -80;
-			minTurn = 30;
-			maxTurn = 150;
-			initTurn = 90;
-			soundServo[] = {"",0.01,1};
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_1";	// endpoint of the gun
-			gunEnd = "chamber_1";	// chamber of the gun
-			weapons[] = {"M240_veh"};
-			magazines[] = {};
-			gunnerName = $STR_POSITION_CREWCHIEF;
-			gunnerOpticsModel = "\ca\weapons\optika_empty";
-			gunnerOutOpticsShowCursor = 1;
-			gunnerOpticsShowCursor = 1;
-			gunnerAction = "MH60_Gunner";
-			gunnerInAction = "MH60_Gunner";
-			primaryGunner = 1;
-			class ViewOptics
-			{
-				initAngleX = 0;
-				minAngleX = -30;
-				maxAngleX = 30;
-				initAngleY = 0;
-				minAngleY = -100;
-				maxAngleY = 100;
-				initFov = 0.7;
-				minFov = 0.25;
-				maxFov = 1.1;
-			};
-			gunnerCompartments = "Compartment2";
-		};
-
-		class RightDoorGun : MainTurret {
-			body = "Turret_2";
-			gun = "Gun_2";
-			animationSourceBody = "Turret_2";
-			animationSourceGun = "Gun_2";
-			weapons[] = {"M240_veh_2"};
-			animationSourceHatch = "";
-			selectionFireAnim = "zasleh_1";
-			proxyIndex = 2;
-			gunnerName = $STR_POSITION_DOORGUNNER;
-			commanding = -2;
-			minTurn = -150;
-			maxTurn = -30;
-			initTurn = -90;
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_2";	// endpoint of the gun
-			gunEnd = "chamber_2";	// chamber of the gun
-			primaryGunner = 0;
-			gunnerCompartments = "Compartment2";
-			memoryPointGun = "machinegun_2";
-			memoryPointGunnerOptics = "gunnerview_2";
-		};
-	};
-}
-class UH60M_base_EP1: UH60_Base
-{
+class UH60M_base_EP1: UH60_Base {
 	expansion = 1;
 	scope = 0;
 	model = "\Ca\Air_E\UH60M\UH60M.p3d";
@@ -320,8 +246,7 @@ class UH60M_base_EP1: UH60_Base
 	picture = "\ca\air_e\data\UI\Picture_uh60m_CA.paa";
 	icon = "\ca\air_e\data\UI\Icon_uh60m_CA.paa";
 	mapSize = 17;
-	class Library
-	{
+	class Library {
 		libTextDesc = "The Blackhawk is the US Army’s front-line utility helicopter used for transport roles, medical evacuation and even air support.<br />It is capable of carrying 11 combat-equipped soldiers. Easy to maintain in the field, the Blackhawk performs well in a variety of roles including air assault and medical evacuation.";
 	};
 	crew = "US_Soldier_Pilot_EP1";
@@ -339,31 +264,25 @@ class UH60M_base_EP1: UH60_Base
 	memoryPointsGetInCargoDir[] = {"pos codriver dir","pos cargo dir"};
 	cargoIsCoDriver[] = {0,0};
 	threat[] = {0.8,0.1,0.3};
-	class TransportMagazines
-	{
-		class _xx_30Rnd_556x45_Stanag
-		{
+	class TransportMagazines {
+		class _xx_30Rnd_556x45_Stanag {
 			magazine = "30Rnd_556x45_Stanag";
 			count = 30;
 		};
-		class _xx_HandGrenade_West
-		{
+		class _xx_HandGrenade_West {
 			magazine = "HandGrenade_West";
 			count = 5;
 		};
-		class _xx_SmokeShellGreen
-		{
+		class _xx_SmokeShellGreen {
 			magazine = "SmokeShellGreen";
 			count = 2;
 		};
-		class _xx_SmokeShell
-		{
+		class _xx_SmokeShell {
 			magazine = "SmokeShell";
 			count = 2;
 		};
 	};
-	class TransportWeapons
-	{
+	class TransportWeapons {
 	};
 	radarType = 4;
 	soundGetIn[] = {"Ca\Sounds_E\Air_E\UH1H\open_close",0.316228,1};
@@ -372,42 +291,35 @@ class UH60M_base_EP1: UH60_Base
 	soundEngineOnExt[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_start_ext",0.446684,1,700};
 	soundEngineOffInt[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_stop_int",0.446684,1};
 	soundEngineOffExt[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_stop_ext",0.446684,1,700};
-	class Sounds
-	{
-		class Engine
-		{
+	class Sounds {
+		class Engine {
 			sound[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_engine_ext_2",1,0.8,800};
 			frequency = "rotorSpeed";
 			volume = "camPos*((rotorSpeed-0.72)*4)";
 		};
-		class RotorLowOut
-		{
+		class RotorLowOut {
 			sound[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_rotor_ext_1",2.51189,1.1,1400};
 			frequency = "rotorSpeed";
 			volume = "camPos*(0 max (rotorSpeed-0.1))";
 			cone[] = {1.6,3.14,2,0.5};
 		};
-		class RotorHighOut
-		{
+		class RotorHighOut {
 			sound[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_rotor_high_ext_1",2.51189,1.1,1600};
 			frequency = "rotorSpeed";
 			volume = "camPos*10*(0 max (rotorThrust-0.9))";
 			cone[] = {1.6,3.14,2,0.5};
 		};
-		class EngineIn
-		{
+		class EngineIn {
 			sound[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_engine_int_1",1,0.8};
 			frequency = "rotorSpeed";
 			volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
 		};
-		class RotorLowIn
-		{
+		class RotorLowIn {
 			sound[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_rotor_int_1",1.77828,1.1};
 			frequency = "rotorSpeed";
 			volume = "2*(1-camPos)*((rotorSpeed factor[0.3, 1.1]) min (rotorSpeed factor[1.1, 0.3]))";
 		};
-		class RotorHighIn
-		{
+		class RotorHighIn {
 			sound[] = {"Ca\Sounds_E\Air_E\UH1H\UH1H_rotor_high_int_1",3.16228,1.1};
 			frequency = "rotorSpeed";
 			volume = "(1-camPos)*3*(rotorThrust-0.9)";
@@ -416,34 +328,26 @@ class UH60M_base_EP1: UH60_Base
 	driverInAction = "UH60M_Pilot_EP1";
 	driverAction = "UH60M_Pilot_EP1";
 	cargoAction[] = {"UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02","UH60_Cargo02"};
-	class HitPoints: HitPoints
-	{
-		class HitGlass1: HitGlass1
-		{
+	class HitPoints: HitPoints {
+		class HitGlass1: HitGlass1 {
 			armor = 0.25;
 		};
-		class HitGlass2: HitGlass2
-		{
+		class HitGlass2: HitGlass2 {
 			armor = 0.25;
 		};
-		class HitGlass3: HitGlass3
-		{
+		class HitGlass3: HitGlass3 {
 			armor = 0.25;
 		};
-		class HitGlass4: HitGlass4
-		{
+		class HitGlass4: HitGlass4 {
 			armor = 0.25;
 		};
-		class HitGlass5: HitGlass5
-		{
+		class HitGlass5: HitGlass5 {
 			armor = 0.25;
 		};
 	};
-	class AnimationSources: AnimationSources
-	{
+	class AnimationSources: AnimationSources {
 	};
-	class Damage
-	{
+	class Damage {
 		tex[] = {};
 		mat[] = {"ca\Air_E\UH60M\Data\uh60m_dust_filter.rvmat","ca\Air_E\UH60M\Data\uh60m_dust_filter.rvmat","ca\Air_E\UH60M\Data\uh60m_dust_filter_destruct.rvmat","ca\Air_E\UH60M\Data\uh60m_engine.rvmat","ca\Air_E\UH60M\Data\uh60m_engine.rvmat","ca\Air_E\UH60M\Data\uh60m_engine_destruct.rvmat","ca\Air_E\UH60M\Data\uh60m_fuselage.rvmat","ca\Air_E\UH60M\Data\uh60m_fuselage.rvmat","ca\Air_E\UH60M\Data\uh60m_fuselage_destruct.rvmat","ca\Air_E\UH60M\Data\uh60m_interior.rvmat","ca\Air_E\UH60M\Data\uh60m_interior.rvmat","ca\Air_E\UH60M\Data\uh60m_interior_destruct.rvmat","ca\Air_E\UH60M\Data\uh60m_navijak.rvmat","ca\Air_E\UH60M\Data\uh60m_navijak.rvmat","ca\Air_E\UH60M\Data\uh60m_navijak_destruct.rvmat","ca\Air_E\UH60M\Data\uh60m_glass.rvmat","ca\Air_E\UH60M\Data\uh60m_glass_damage.rvmat","ca\Air_E\UH60M\Data\uh60m_glass_damage.rvmat","ca\data\data\default.rvmat","ca\data\data\default.rvmat","ca\Air_E\UH60M\Data\default_destruct.rvmat","ca\Air_E\UH60M\Data\uh60m_engine_MEV.rvmat","ca\Air_E\UH60M\Data\uh60m_engine_MEV.rvmat","ca\Air_E\UH60M\Data\uh60m_engine_MEV_destruct.rvmat","ca\Air_E\UH60M\Data\uh60m_fuselage_MEV.rvmat","ca\Air_E\UH60M\Data\uh60m_fuselage_MEV.rvmat","ca\Air_E\UH60M\Data\uh60m_fuselage_MEV_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
 	};
@@ -454,13 +358,11 @@ class UH60M_base_EP1: UH60_Base
 	hiddenSelections[] = {"camo1","camo2","camo3"};
 	hiddenSelectionsTextures[] = {"ca\air_e\uh60m\data\uh60m_fuselage_co.paa","ca\air_e\uh60m\data\uh60m_engine_co.paa","ca\air_e\uh60m\data\default_co.paa"};
 };
-class UH60M_US_base_EP1: UH60M_base_EP1
-{
+class UH60M_US_base_EP1: UH60M_base_EP1 {
 	side = 1;
 	faction = "BIS_US";
 };
-class UH60M_EP1_DZ: UH60M_US_base_EP1
-{
+class UH60M_EP1_DZ: UH60M_US_base_EP1 {
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -474,10 +376,8 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1
 	scope = 2;
 	accuracy = 1.5;
 	displayName = "UH-60M DZ";
-	class Turrets: Turrets
-	{
-		class MainTurret: MainTurret
-		{
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
 			minElev = -60;
@@ -501,8 +401,7 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1
 			gunnerInAction = "UH60M_Gunner_EP1";
 			commanding = -2;
 			primaryGunner = 1;
-			class ViewOptics
-			{
+			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
 				maxAngleX = 30;
@@ -515,8 +414,7 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1
 			};
 			gunnerCompartments = "Compartment2";
 		};
-		class RightDoorGun: MainTurret
-		{
+		class RightDoorGun: MainTurret {
 			body = "Turret_2";
 			gun = "Gun_2";
 			animationSourceBody = "Turret_2";
@@ -541,23 +439,30 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1
 			memoryPointGunnerOptics = "gunnerview_2";
 		};
 	};
-	class AnimationSources: AnimationSources
-	{
-		class Gatling_1
-		{
+	class AnimationSources: AnimationSources {
+		class Gatling_1 {
 			source = "revolving";
 			weapon = "M134";
 		};
-		class Gatling_2
-		{
+		class Gatling_2 {
 			source = "revolving";
 			weapon = "M134_2";
 		};
 	};
 };
 // AMMO LESS
-class UH60M_EP1_DZE: UH60M_US_base_EP1
-{
+class MH60S_DZE : MH60S_DZ {
+	displayName = "MH-60S AL";
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			magazines[] = {};
+		};
+		class RightDoorGun : RightDoorGun {
+			magazines[] = {};
+		};
+	};
+};
+class UH60M_EP1_DZE: UH60M_US_base_EP1 {
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -571,10 +476,8 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1
 	scope = 2;
 	accuracy = 1.5;
 	displayName = "UH-60M AL";
-	class Turrets: Turrets
-	{
-		class MainTurret: MainTurret
-		{
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
 			body = "mainTurret";
 			gun = "mainGun";
 			minElev = -60;
@@ -598,8 +501,7 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1
 			gunnerInAction = "UH60M_Gunner_EP1";
 			commanding = -2;
 			primaryGunner = 1;
-			class ViewOptics
-			{
+			class ViewOptics {
 				initAngleX = 0;
 				minAngleX = -30;
 				maxAngleX = 30;
@@ -612,8 +514,7 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1
 			};
 			gunnerCompartments = "Compartment2";
 		};
-		class RightDoorGun: MainTurret
-		{
+		class RightDoorGun: MainTurret {
 			body = "Turret_2";
 			gun = "Gun_2";
 			animationSourceBody = "Turret_2";
@@ -638,15 +539,12 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1
 			memoryPointGunnerOptics = "gunnerview_2";
 		};
 	};
-	class AnimationSources: AnimationSources
-	{
-		class Gatling_1
-		{
+	class AnimationSources: AnimationSources {
+		class Gatling_1 {
 			source = "revolving";
 			weapon = "M134";
 		};
-		class Gatling_2
-		{
+		class Gatling_2 {
 			source = "revolving";
 			weapon = "M134_2";
 		};
