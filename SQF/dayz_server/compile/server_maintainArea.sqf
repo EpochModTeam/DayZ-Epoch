@@ -11,7 +11,7 @@ _targetObj = _this select 2;
 if (_option == 1) then {
 	_objects = nearestObjects [_targetObj, DZE_maintainClasses, DZE_maintainRange];
 	{
-		if (damage _x >= 0.1) then {
+		if (damage _x >= DZE_DamageBeforeMaint) then {
 			_objectID = _x getVariable ["ObjectID","0"];
 			if (_objectID == "0") then {
 				_objectUID = _x getVariable ["ObjectUID","0"];
@@ -31,7 +31,7 @@ if (_option == 1) then {
 	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", name _player, count _objects, position _player];
 };
 if (_option == 2) then {
-	if (damage _targetObj >= 0.1) then {
+	if (damage _targetObj >= DZE_DamageBeforeMaint) then {
 		_objectID = _targetObj getVariable ["ObjectID","0"];
 		if (_objectID == "0") then {
 			_objectUID = _targetObj getVariable ["ObjectUID","0"];

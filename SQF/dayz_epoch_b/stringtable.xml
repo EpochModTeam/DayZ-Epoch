@@ -6646,7 +6646,17 @@
 			<French>Le démontage de la construction ne rendra pas de composants.</French>
 			<Czech>Demontáž budovy nevrátí žádné její komponenty.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_BULK_NAME">
+    <Key ID="STR_EPOCH_ACTIONS_22">
+      <Original>%1 building parts in range.</Original>
+      <English>%1 building parts in range.</English>
+      <!-- <German></German> -->
+      <Russian>В радиусе %1 частей зданий.</Russian>
+      <!-- <Spanish></Spanish> -->
+      <Dutch></Dutch>
+      <French>%1 constructions à portée.</French>
+      <Czech>%1 částí staveb v okruhu.</Czech>
+    </Key>
+    <Key ID="STR_EPOCH_BULK_NAME">
 			<Original>Supply Crate</Original>
 			<English>Supply Crate</English>
 			<German>Versorgungskiste</German>

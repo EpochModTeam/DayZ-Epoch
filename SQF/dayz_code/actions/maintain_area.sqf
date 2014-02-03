@@ -18,7 +18,7 @@ _objects = nearestObjects [_target, _objectClasses, _range];
 //filter to only those that have 10% damage
 _objects_filtered = [];
 {
-    if (damage _x >= 0.1) then {
+    if (damage _x >= DZE_DamageBeforeMaint) then {
         _objects_filtered set [count _objects_filtered, _x];
    };
 } forEach _objects;
@@ -26,6 +26,14 @@ _objects = _objects_filtered;
 
 // TODO dynamic requirements based on used building parts?
 _count = count _objects;
+
+if (_count == 0) exitWith {
+	cutText [format[(localize "STR_EPOCH_ACTIONS_22"), _count], "PLAIN DOWN"];
+	DZE_ActionInProgress = false;
+	s_player_maintain_area = -1;
+	s_player_maintain_area_preview = -1;
+};
+
 _requirements = [];
 switch true do {
 	case (_count <= 20): {_requirements = [["ItemGoldBar10oz",2]]};
@@ -39,9 +47,12 @@ switch true do {
 	case (_count > 700): {_requirements = [["ItemBriefcase100oz",7]]};
 };
 
+
+
 _option = _this select 3;
 switch _option do {
 	case "maintain": {
+		
 		_missing = "";
 		_missingQty = 0;
 		_proceed = true;

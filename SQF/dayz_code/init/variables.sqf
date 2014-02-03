@@ -495,6 +495,10 @@ if(isNil "DZE_LootSpawnTimer") then {
 if(isNil "DZE_HeliLift") then {
 	DZE_HeliLift = true;
 };
+if(isNil "DZE_DamageBeforeMaint") then {
+	DZE_DamageBeforeMaint = 0.09;
+};
+
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
