@@ -44,7 +44,7 @@ TraderDialogLoadItemList = {
 		if (_type == "trade_weapons") then {
 			_typeNum = 3;
 		} else { 
-			if (_type in ["trade_backpacks", "trade_any_vehicle", "trade_any_boat", "trade_any_bicycle"] then {
+			if (_type in ["trade_backpacks", "trade_any_vehicle", "trade_any_boat", "trade_any_bicycle"]) then {
 				_typeNum = 2;
 			};
 		};
