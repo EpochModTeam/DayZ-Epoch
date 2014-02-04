@@ -1,10 +1,3 @@
-class CfgServerTrader {
-	#include "Trader\TraderHero.hpp"
-	#include "Trader\TraderFriendly.hpp"
-	#include "Trader\TraderNeutral.hpp"
-	#include "Trader\TraderBandit.hpp"
-};
-
 class CfgTraderCategory {
 	#include "Category\BanditAmmunition.hpp"
 	#include "Category\BanditClothing.hpp"

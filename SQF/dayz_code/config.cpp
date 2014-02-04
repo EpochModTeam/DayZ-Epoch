@@ -129,4 +129,7 @@ class RscStructuredTextGUI: RscStructuredText
 #include "Configs\CfgBuildingLoot\CfgBuildingLoot.hpp"
 #include "Configs\CfgArma.hpp"
 
+#include "Configs\CfgServerTrader\cfgServerTrader.hpp"
+
+
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
