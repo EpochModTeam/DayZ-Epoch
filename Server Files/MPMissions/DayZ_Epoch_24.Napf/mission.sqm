@@ -1334,7 +1334,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			position[]={8246.3184,15.544708,15485.867};
@@ -1474,6 +1474,21 @@ class Mission
 			{
 			};
 		};
+		class Item9
+        		{
+            		position[]={15128.379,19.974716,16421.879};
+            		activationBy="WEST";
+            		repeating=1;
+            		interruptable=1;
+            		age="UNKNOWN";
+            		name="AWOL";
+            		expCond="(player distance awol) < 75;";
+            		expActiv="TitleText[""Now Entering Aircraft Vendor"",""PLAIN DOWN""]; canbuild = false;";
+            		expDesactiv="TitleText[""Now Leaving Aircraft Vendor"",""PLAIN DOWN""]; canbuild = true;";
+            		class Effects
+            		{
+            		};
+	        };		
 	};
 };
 class Intro
