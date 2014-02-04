@@ -27,18 +27,31 @@ TraderDialogLoadItemList = {
 	ctrlSetText [TraderDialogSellPrice, ""];
 
 	lbAdd [TraderDialogItemList, "Loading items..."];
-
-	PVDZE_plr_TradeMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
 	
-	//Use Missionfile, don't include in epoch by default
-	_cfgTraderCategory = MissionConfigFile >> "CfgServerTrader" >> (format["Category_%1",_trader_id]);
+	_cfgTraderCategory = configFile >> "CfgServerTrader" >> (format["Category_%1",_trader_id]);	
+	
+	for "_i" from 0 to ((count _cfgTraderCategory) - 1) do {
+		_class = configName (_cfgTraderCategory select _i);
+					
+		_type  = getText (_class >> "type");	
+		_buy  = getArray (_class >> "buy");	
+		_sell = getArray (_class >> "sell");
+		
+		_buy set [2,1];
+		_sell set [2,1];
 
-	//[[5969,["Ikarus",2],10003,[5,"ItemGoldBar",1],[3,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5970,["Ikarus_TK_CIV_EP1",2],10006,[5,"ItemGoldBar",1],[3,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5971,["S1203_TK_CIV_EP1",2],10004,[4,"ItemGoldBar",1],[2,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5972,["S1203_ambulance_EP1",2],10002,[4,"ItemGoldBar",1],[2,"ItemGoldBar",1],0,588,"trade_any_vehicle"]]
-
-	if(isNil "PVDZE_plr_TradeMenuResult") then {
-		PVDZE_plr_TradeMenu = [_activatingPlayer,_trader_id];
-		publicVariableServer  "PVDZE_plr_TradeMenu";
-		waitUntil {!isNil "PVDZE_plr_TradeMenuResult"};
+		_typeNum = 1;
+		if (_type == "trade_weapons") then {
+			_typeNum = 3;
+		} else { 
+			if (_type in ["trade_backpacks", "trade_any_vehicle", "trade_any_boat", "trade_any_bicycle"] then {
+				_typeNum = 2;
+			};
+		};
+		
+		_data = [9999,[_class,_typeNum],99999,_buy,_sell,0,_trader_id,_type];
+		
+		PVDZE_plr_TradeMenuResult set [count PVDZE_plr_TradeMenuResult, _data];
 	};
 
 	lbClear TraderDialogItemList;
@@ -48,16 +61,15 @@ TraderDialogLoadItemList = {
 		_header = _x select 0; // "TRD"
 		_item = _x select 1;
 		_name = _item select 0;
-		
-		_type = getText (_cfgTraderCategory >> _name >> "type");
-		switch _type do {
-			case "trade_items": {
+		_type = _item select 1;
+		switch (true) do {
+			case (_type == 1): {
 				_type = "CfgMagazines";
 			}; 
-			case "trade_any_vehicle": {
+			case (_type == 2): {
 				_type = "CfgVehicles";
 			}; 
-			case "trade_weapons": {
+			case (_type == 3): {
 				_type = "CfgWeapons";
 			};
 		};
