@@ -16,7 +16,7 @@ else
 	_weapon = _weapon select 0;
 };
 
-if (_weapon == "" and (vehicle _attacker) != _attacker) then {
+if (_weapon == "" or isNil "_weapon") then {
 	_vehicle = typeOf (vehicle _attacker); 
 	_weapon = getText (configFile >> "CfgVehicles" >> _vehicle >> "displayName");
 };
