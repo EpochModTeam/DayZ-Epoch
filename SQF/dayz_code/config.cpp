@@ -113,9 +113,9 @@ class RscStructuredTextGUI: RscStructuredText
 #include "Configs\cfgMoves.hpp"
 #include "Configs\rscTitles.hpp"
 
-#include "Configs\safegui.hpp"
-#include "Configs\dialog.hpp"
-#include "Configs\deathboards.hpp"
+#include "Configs\RscDisplay\safegui.hpp"
+#include "Configs\RscDisplay\dialog.hpp"
+#include "Configs\RscDisplay\deathboards.hpp"
 
 #include "Configs\CfgVehicles.hpp"
 #include "Configs\CfgWeapons.hpp"
