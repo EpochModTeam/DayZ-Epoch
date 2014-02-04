@@ -1,4 +1,4 @@
-class NeutralCargoTrucks {
+class Category_653 {
 	class Ural_CDF {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar10oz"};

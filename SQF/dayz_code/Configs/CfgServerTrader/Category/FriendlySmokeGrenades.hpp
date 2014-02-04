@@ -1,4 +1,4 @@
-class FriendlySmokeGrenades {
+class Category_543 {
 	class SmokeShell {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

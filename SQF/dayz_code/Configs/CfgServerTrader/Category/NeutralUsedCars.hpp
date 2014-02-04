@@ -1,4 +1,4 @@
-class NeutralUsedCars {
+class Category_660 {
 	class Skoda {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar"};

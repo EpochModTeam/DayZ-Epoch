@@ -1,4 +1,4 @@
-class FriendlyAssaultRifle {
+class Category_485 {
 	class G36A_camo {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};

@@ -1,4 +1,4 @@
-class NeutralSniperRifleAmmo {
+class Category_614 {
 	class 20Rnd_762x51_DMR {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar10oz"};

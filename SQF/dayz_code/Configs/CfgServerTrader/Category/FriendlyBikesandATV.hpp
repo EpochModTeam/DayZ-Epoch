@@ -1,4 +1,4 @@
-class FriendlyBikesandATV {
+class Category_536 {
 	class MMT_Civ {
 		type = "trade_any_bicycle";
 		buy[] = {4,"ItemSilverBar"};

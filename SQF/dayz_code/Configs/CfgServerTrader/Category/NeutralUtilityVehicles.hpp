@@ -1,4 +1,4 @@
-class NeutralUtilityVehicles {
+class Category_661 {
 	class SUV_TK_CIV_EP1 {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar10oz"};

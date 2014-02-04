@@ -1,4 +1,4 @@
-class FriendlyAssaultRifleAmmo {
+class Category_480 {
 	class 30Rnd_556x45_Stanag {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar"};

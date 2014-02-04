@@ -1,4 +1,4 @@
-class NeutralShotgunsandSingleshot {
+class Category_641 {
 	class Winchester1866 {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};

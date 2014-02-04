@@ -1,4 +1,4 @@
-class BanditClothing {
+class Category_575 {
 	class Skin_Bandit1_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};

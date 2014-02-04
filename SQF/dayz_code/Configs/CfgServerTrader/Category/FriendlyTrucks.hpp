@@ -1,4 +1,4 @@
-class FriendlyTrucks {
+class Category_495 {
 	class hilux1_civil_3_open_EP1 {
 		type = "trade_any_vehicle";
 		buy[] = {8,"ItemGoldBar"};

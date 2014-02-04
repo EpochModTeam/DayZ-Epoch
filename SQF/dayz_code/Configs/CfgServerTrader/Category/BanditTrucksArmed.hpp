@@ -1,4 +1,4 @@
-class BanditTrucksArmed {
+class Category_534 {
 	class Pickup_PK_GUE_DZE {
 		type = "trade_any_vehicle";
 		buy[] = {1,"ItemGoldBar10oz"};

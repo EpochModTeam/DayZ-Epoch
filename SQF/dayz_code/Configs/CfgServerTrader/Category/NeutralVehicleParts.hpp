@@ -1,4 +1,4 @@
-class NeutralVehicleParts {
+class Category_664 {
 	class ItemJerrycan {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar"};

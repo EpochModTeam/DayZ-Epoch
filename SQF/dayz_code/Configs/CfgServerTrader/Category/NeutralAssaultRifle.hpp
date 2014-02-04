@@ -1,4 +1,4 @@
-class NeutralAssaultRifle {
+class Category_637 {
 	class G36A_camo {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};

@@ -1,4 +1,4 @@
-class FriendlyChemlitesFlares {
+class Category_542 {
 	class HandChemBlue {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
