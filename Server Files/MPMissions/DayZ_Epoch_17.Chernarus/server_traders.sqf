@@ -58,7 +58,7 @@ menu_GUE_Soldier_1 = [
 menu_Soldier_Sniper_PMC = [
 	[["Airplanes",517],["Helicopter Unarmed",519]],
 	[],
-	"friendly"
+	"neutral"
 ];
 // Vehicles Neutral
 menu_UN_CDF_Soldier_Pilot_EP1 = [
