@@ -1,4 +1,4 @@
-class NeutralShotgunsandSingleshotAmmo {
+class Category_613 {
 	class 15Rnd_W1866_Slug {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

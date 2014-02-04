@@ -1,4 +1,4 @@
-class NeutralSubmachineGunAmmo {
+class Category_612 {
 	class 30rnd_9x19_MP5 {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar10oz"};

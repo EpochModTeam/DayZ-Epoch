@@ -1,4 +1,4 @@
-class FriendlyPistols {
+class Category_489 {
 	class M9SD {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};

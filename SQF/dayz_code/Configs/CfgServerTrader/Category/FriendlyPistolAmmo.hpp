@@ -1,4 +1,4 @@
-class FriendlyPistolAmmo {
+class Category_484 {
 	class 15Rnd_9x19_M9 {
 		type = "trade_items";
 		buy[] = {1,"ItemSilverBar10oz"};

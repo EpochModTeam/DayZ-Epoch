@@ -1,4 +1,4 @@
-class NeutralToolbeltItems {
+class Category_663 {
 	class ItemCompass {
 		type = "trade_weapons";
 		buy[] = {6,"ItemSilverBar"};

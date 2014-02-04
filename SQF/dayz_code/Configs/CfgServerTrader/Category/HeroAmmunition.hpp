@@ -1,4 +1,4 @@
-class HeroAmmunition {
+class Category_478 {
 	class 30Rnd_556x45_StanagSD {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar10oz"};

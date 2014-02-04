@@ -1,4 +1,4 @@
-class HeroTrucksArmed {
+class Category_479 {
 	class ArmoredSUV_PMC_DZE {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemBriefcase100oz"};

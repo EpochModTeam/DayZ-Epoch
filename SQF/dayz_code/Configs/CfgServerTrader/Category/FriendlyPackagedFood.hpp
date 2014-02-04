@@ -1,4 +1,4 @@
-class FriendlyPackagedFood {
+class Category_629 {
 	class FoodCanBakedBeans {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

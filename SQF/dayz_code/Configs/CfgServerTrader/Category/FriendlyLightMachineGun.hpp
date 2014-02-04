@@ -1,4 +1,4 @@
-class FriendlyLightMachineGun {
+class Category_486 {
 	class M249_EP1_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};

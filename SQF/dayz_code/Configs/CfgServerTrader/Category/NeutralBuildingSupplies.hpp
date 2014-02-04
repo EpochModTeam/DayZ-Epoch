@@ -1,4 +1,4 @@
-class NeutralBuildingSupplies {
+class Category_662 {
 	class ItemSandbag {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};

@@ -1,4 +1,4 @@
-class NeutralMilitaryUnarmed {
+class Category_658 {
 	class HMMWV_M1035_DES_EP1 {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};

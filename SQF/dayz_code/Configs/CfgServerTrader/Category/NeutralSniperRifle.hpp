@@ -1,4 +1,4 @@
-class NeutralSniperRifle {
+class Category_640 {
 	class SVD_CAMO {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};

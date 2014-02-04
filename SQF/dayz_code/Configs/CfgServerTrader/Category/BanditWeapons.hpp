@@ -1,4 +1,4 @@
-class BanditWeapons {
+class Category_627 {
 	class G36_C_SD_camo {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};

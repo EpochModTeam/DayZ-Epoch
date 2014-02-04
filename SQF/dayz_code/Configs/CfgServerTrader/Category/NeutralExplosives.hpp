@@ -1,4 +1,4 @@
-class NeutralExplosives {
+class Category_529 {
 	class HandGrenade_west {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};

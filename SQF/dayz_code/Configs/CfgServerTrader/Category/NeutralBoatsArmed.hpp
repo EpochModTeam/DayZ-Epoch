@@ -1,4 +1,4 @@
-class NeutralBoatsArmed {
+class Category_588 {
 	class RHIB {
 		type = "trade_any_boat";
 		buy[] = {4,"ItemGoldBar10oz"};

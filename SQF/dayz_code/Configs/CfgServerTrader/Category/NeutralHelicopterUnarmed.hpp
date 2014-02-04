@@ -1,4 +1,4 @@
-class NeutralHelicopterUnarmed {
+class Category_519 {
 	class Mi17_Civilian_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};

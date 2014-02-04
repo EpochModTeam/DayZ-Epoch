@@ -1,4 +1,4 @@
-class FriendlyToolbeltItems {
+class Category_532 {
 	class ItemCompass {
 		type = "trade_weapons";
 		buy[] = {6,"ItemSilverBar"};

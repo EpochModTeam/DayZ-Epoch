@@ -1,4 +1,4 @@
-class HeroClothes {
+class Category_476 {
 	class Skin_CZ_Special_Forces_GL_DES_EP1_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};

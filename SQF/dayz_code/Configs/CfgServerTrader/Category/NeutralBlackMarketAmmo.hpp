@@ -1,4 +1,4 @@
-class NeutralBlackMarketAmmo {
+class Category_527 {
 	class 20Rnd_9x39_SP5_VSS {
 		type = "trade_items";
 		buy[] = {3,"ItemGoldBar"};

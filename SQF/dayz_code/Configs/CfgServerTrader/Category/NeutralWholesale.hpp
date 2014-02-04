@@ -1,4 +1,4 @@
-class NeutralWholesale {
+class Category_636 {
 	class bulk_15Rnd_9x19_M9SD {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};

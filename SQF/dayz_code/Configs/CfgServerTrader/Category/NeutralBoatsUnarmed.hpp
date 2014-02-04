@@ -1,4 +1,4 @@
-class NeutralBoatsUnarmed {
+class Category_557 {
 	class Smallboat_1 {
 		type = "trade_any_boat";
 		buy[] = {2,"ItemGoldBar10oz"};

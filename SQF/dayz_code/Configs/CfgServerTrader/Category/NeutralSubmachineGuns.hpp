@@ -1,4 +1,4 @@
-class NeutralSubmachineGuns {
+class Category_642 {
 	class bizon_silenced {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};

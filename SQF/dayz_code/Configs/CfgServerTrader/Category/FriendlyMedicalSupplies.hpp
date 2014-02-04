@@ -1,4 +1,4 @@
-class FriendlyMedicalSupplies {
+class Category_541 {
 	class ItemAntibiotic {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar"};

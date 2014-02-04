@@ -1,4 +1,4 @@
-class NeutralCookedMeats {
+class Category_634 {
 	class FoodbaconCooked {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar"};

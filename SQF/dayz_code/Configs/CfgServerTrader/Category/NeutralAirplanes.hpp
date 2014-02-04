@@ -1,4 +1,4 @@
-class NeutralAirplanes {
+class Category_517 {
 	class AN2_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};
