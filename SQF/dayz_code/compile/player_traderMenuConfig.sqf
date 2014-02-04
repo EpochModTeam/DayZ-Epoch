@@ -28,14 +28,16 @@ TraderDialogLoadItemList = {
 
 	lbAdd [TraderDialogItemList, "Loading items..."];
 	
-	_cfgTraderCategory = configFile >> "CfgServerTrader" >> (format["Category_%1",_trader_id]);	
+	_cfgTraderCategory = configFile >> "CfgTraderCategory" >> (format["Category_%1",_trader_id]);	
+
+	PVDZE_plr_TradeMenuResult = [];
 	
 	for "_i" from 0 to ((count _cfgTraderCategory) - 1) do {
 		_class = configName (_cfgTraderCategory select _i);
 					
-		_type  = getText (_class >> "type");	
-		_buy  = getArray (_class >> "buy");	
-		_sell = getArray (_class >> "sell");
+		_type  = getText ((_cfgTraderCategory select _i) >> "type");	
+		_buy  = getArray ((_cfgTraderCategory select _i) >> "buy");	
+		_sell = getArray ((_cfgTraderCategory select _i) >> "sell");
 		
 		_buy set [2,1];
 		_sell set [2,1];
