@@ -102,6 +102,35 @@ foreach my $traderCategory (keys $traderCategories) {
 
 	$cfg .= "class ".$traderCategory." {\n";
 	$cfg .= "\ttid = ".$traderCategories->{$traderCategory}.";\n";
+	my $sth = $MySQL->prepare(q~
+		SELECT
+			item	AS Item
+			,buy	AS Buy
+			,sell	AS Sell
+			,afile	AS aFile
+		FROM
+			traders_data
+		WHERE
+			tid = ?
+	~);
+	$sth->execute($traderCategories->{$traderCategory});
+	while (my $row = $sth->fetchrow_hashref()) {
+		if ($row->{Item} =~ /^\["([^"]+)",\d+\]$/) {
+			$row->{Item} = $1;
+		}
+		else {next;}
+		if ($row->{Buy} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2",$3}/) {}
+		else {next;}
+		if ($row->{Sell} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2",$3}/) {}
+		else {next;}
+
+		$cfg .= "\tclass ".$row->{Item}." {\n";
+		$cfg .= "\t\ttype = \"".$row->{aFile}."\";\n";
+		$cfg .= "\t\tbuy[] = ".$row->{Buy}.";\n";
+		$cfg .= "\t\tsell[] = ".$row->{Sell}.";\n";
+		$cfg .= "\t};\n";
+	}
+	$sth->finish();
 	$cfg .= "};\n";
 
 	open(CFG, '>', $pathServerTraderCategoriesCfg.$traderCategory.'.hpp') or die $!;
