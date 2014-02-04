@@ -29,6 +29,10 @@ TraderDialogLoadItemList = {
 	lbAdd [TraderDialogItemList, "Loading items..."];
 
 	PVDZE_plr_TradeMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
+	
+	//Use Missionfile, don't include in epoch by default
+	_cfgTraderCategory = MissionConfigFile >> "CfgServerTrader" >> (format["Category_%1",_trader_id]);
+
 	//[[5969,["Ikarus",2],10003,[5,"ItemGoldBar",1],[3,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5970,["Ikarus_TK_CIV_EP1",2],10006,[5,"ItemGoldBar",1],[3,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5971,["S1203_TK_CIV_EP1",2],10004,[4,"ItemGoldBar",1],[2,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5972,["S1203_ambulance_EP1",2],10002,[4,"ItemGoldBar",1],[2,"ItemGoldBar",1],0,588,"trade_any_vehicle"]]
 
 	if(isNil "PVDZE_plr_TradeMenuResult") then {
@@ -44,15 +48,16 @@ TraderDialogLoadItemList = {
 		_header = _x select 0; // "TRD"
 		_item = _x select 1;
 		_name = _item select 0;
-		_type = _item select 1;
-		switch (true) do {
-			case (_type == 1): {
+		
+		_type = getText (_cfgTraderCategory >> _name >> "type");
+		switch _type do {
+			case "trade_items": {
 				_type = "CfgMagazines";
 			}; 
-			case (_type == 2): {
+			case "trade_any_vehicle": {
 				_type = "CfgVehicles";
 			}; 
-			case (_type == 3): {
+			case "trade_weapons": {
 				_type = "CfgWeapons";
 			};
 		};
