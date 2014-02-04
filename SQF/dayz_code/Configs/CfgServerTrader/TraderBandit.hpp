@@ -1,11 +1,11 @@
 class GUE_Soldier_MG {
 	humanity = "hostile";
 	category[] = {
-		{"Ammunition","Ammunition"}
-		{"Clothing","Clothing"}
-		{"Helicopter Armed","HelicopterArmed"}
-		{"Military Armed","MilitaryArmed"}
-		{"Trucks Armed","TrucksArmed"}
-		{"Weapons","Weapons"}
+		{"Ammunition","BanditAmmunition"}
+		{"Clothing","BanditClothing"}
+		{"Helicopter Armed","BanditHelicopterArmed"}
+		{"Military Armed","BanditMilitaryArmed"}
+		{"Trucks Armed","BanditTrucksArmed"}
+		{"Weapons","BanditWeapons"}
 	};
 };

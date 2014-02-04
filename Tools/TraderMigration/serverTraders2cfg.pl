@@ -78,7 +78,7 @@ foreach my $traderhuman (keys $traderHumanity) {
 				$cat->[1]
 			);
 			while (my $row = $sth->fetchrow_hashref()) {
-				$catName = $row->{CatName};
+				$catName = $traderhuman.$row->{CatName};
 			}
 			$sth->finish();
 			$catName =~ s~ |-|/~~g;
