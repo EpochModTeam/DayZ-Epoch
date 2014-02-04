@@ -1,5 +1,4 @@
 class BanditHelicopterArmed {
-	tid = 512;
 	class CH_47F_EP1_DZE {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemBriefcase100oz",1};

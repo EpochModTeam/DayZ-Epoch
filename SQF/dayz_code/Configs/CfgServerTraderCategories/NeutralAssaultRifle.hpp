@@ -1,5 +1,4 @@
 class NeutralAssaultRifle {
-	tid = 637;
 	class G36A_camo {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar",1};

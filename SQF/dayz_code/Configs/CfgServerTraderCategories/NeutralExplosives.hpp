@@ -1,5 +1,4 @@
 class NeutralExplosives {
-	tid = 529;
 	class HandGrenade_west {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar",1};

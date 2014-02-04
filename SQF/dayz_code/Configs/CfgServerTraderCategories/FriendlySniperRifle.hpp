@@ -1,5 +1,4 @@
 class FriendlySniperRifle {
-	tid = 487;
 	class SVD_CAMO {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz",1};

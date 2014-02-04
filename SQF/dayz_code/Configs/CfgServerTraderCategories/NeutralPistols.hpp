@@ -1,5 +1,4 @@
 class NeutralPistols {
-	tid = 674;
 	class M9SD {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar",1};

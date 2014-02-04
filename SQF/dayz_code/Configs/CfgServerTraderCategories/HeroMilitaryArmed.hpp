@@ -1,5 +1,4 @@
 class HeroMilitaryArmed {
-	tid = 562;
 	class HMMWV_M998A2_SOV_DES_EP1_DZE {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz",1};

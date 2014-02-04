@@ -1,5 +1,4 @@
 class NeutralShotgunsandSingleshot {
-	tid = 641;
 	class Winchester1866 {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz",1};

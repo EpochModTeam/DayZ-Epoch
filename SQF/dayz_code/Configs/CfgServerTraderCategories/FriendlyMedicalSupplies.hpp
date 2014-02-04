@@ -1,5 +1,4 @@
 class FriendlyMedicalSupplies {
-	tid = 541;
 	class ItemAntibiotic {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar",1};

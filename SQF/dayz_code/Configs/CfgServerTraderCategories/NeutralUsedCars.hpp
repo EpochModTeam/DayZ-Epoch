@@ -1,5 +1,4 @@
 class NeutralUsedCars {
-	tid = 660;
 	class Skoda {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar",1};

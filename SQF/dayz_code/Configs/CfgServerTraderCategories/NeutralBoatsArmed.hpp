@@ -1,5 +1,4 @@
 class NeutralBoatsArmed {
-	tid = 558;
 	class RHIB {
 		type = "trade_any_boat";
 		buy[] = {4,"ItemGoldBar10oz",1};

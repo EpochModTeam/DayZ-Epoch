@@ -1,5 +1,4 @@
 class FriendlyCargoTrucks {
-	tid = 570;
 	class Ural_CDF {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar10oz",1};

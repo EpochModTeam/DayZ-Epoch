@@ -1,5 +1,4 @@
 class FriendlyChemlitesFlares {
-	tid = 542;
 	class HandChemBlue {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar",1};

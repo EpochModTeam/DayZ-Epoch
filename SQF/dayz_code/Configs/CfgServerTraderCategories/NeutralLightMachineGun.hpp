@@ -1,5 +1,4 @@
 class NeutralLightMachineGun {
-	tid = 638;
 	class M249_EP1_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz",1};

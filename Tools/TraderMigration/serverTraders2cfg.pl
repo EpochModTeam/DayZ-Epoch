@@ -101,7 +101,7 @@ foreach my $traderCategory (keys $traderCategories) {
 	my $cfg = '';
 
 	$cfg .= "class ".$traderCategory." {\n";
-	$cfg .= "\ttid = ".$traderCategories->{$traderCategory}.";\n";
+	#$cfg .= "\ttid = ".$traderCategories->{$traderCategory}.";\n";
 	my $sth = $MySQL->prepare(q~
 		SELECT
 			item	AS Item

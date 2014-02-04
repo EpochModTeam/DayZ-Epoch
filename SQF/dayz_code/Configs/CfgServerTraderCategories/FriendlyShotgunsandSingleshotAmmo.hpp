@@ -1,5 +1,4 @@
 class FriendlyShotgunsandSingleshotAmmo {
-	tid = 573;
 	class 15Rnd_W1866_Slug {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar",1};

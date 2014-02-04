@@ -1,5 +1,4 @@
 class FriendlyToolbeltItems {
-	tid = 532;
 	class ItemCompass {
 		type = "trade_weapons";
 		buy[] = {6,"ItemSilverBar",1};

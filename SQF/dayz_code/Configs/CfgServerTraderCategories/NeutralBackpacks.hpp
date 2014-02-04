@@ -1,5 +1,4 @@
 class NeutralBackpacks {
-	tid = 632;
 	class DZ_Patrol_Pack_EP1 {
 		type = "trade_backpacks";
 		buy[] = {2,"ItemSilverBar",1};

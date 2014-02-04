@@ -1,5 +1,4 @@
 class FriendlyPackagedFood {
-	tid = 629;
 	class FoodCanBakedBeans {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar",1};

@@ -1,5 +1,4 @@
 class NeutralLightMachineGunAmmo {
-	tid = 610;
 	class 100Rnd_762x51_M240 {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar",1};

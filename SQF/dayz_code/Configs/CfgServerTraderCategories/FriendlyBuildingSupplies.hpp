@@ -1,5 +1,4 @@
 class FriendlyBuildingSupplies {
-	tid = 530;
 	class ItemSandbag {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar",1};

@@ -1,5 +1,4 @@
 class NeutralAssaultRifleAmmo {
-	tid = 609;
 	class 30Rnd_556x45_Stanag {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar",1};

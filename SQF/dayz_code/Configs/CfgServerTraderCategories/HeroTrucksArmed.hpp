@@ -1,5 +1,4 @@
 class HeroTrucksArmed {
-	tid = 479;
 	class ArmoredSUV_PMC_DZE {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemBriefcase100oz",1};

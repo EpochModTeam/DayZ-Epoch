@@ -1,5 +1,4 @@
 class NeutralVehicleParts {
-	tid = 664;
 	class ItemJerrycan {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar",1};

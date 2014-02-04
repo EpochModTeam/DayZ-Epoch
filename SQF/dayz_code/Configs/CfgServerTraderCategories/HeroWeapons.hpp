@@ -1,5 +1,4 @@
 class HeroWeapons {
-	tid = 477;
 	class G36_C_SD_camo {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz",1};

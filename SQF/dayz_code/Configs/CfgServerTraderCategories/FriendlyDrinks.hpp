@@ -1,5 +1,4 @@
 class FriendlyDrinks {
-	tid = 601;
 	class ItemSodaCoke {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar",1};

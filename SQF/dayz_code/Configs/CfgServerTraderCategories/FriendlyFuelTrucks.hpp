@@ -1,5 +1,4 @@
 class FriendlyFuelTrucks {
-	tid = 595;
 	class KamazRefuel_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {7,"ItemGoldBar10oz",1};

@@ -1,5 +1,4 @@
 class NeutralClothes {
-	tid = 631;
 	class Skin_Rocker2_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar",1};

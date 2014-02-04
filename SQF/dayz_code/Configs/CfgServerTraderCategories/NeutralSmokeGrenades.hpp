@@ -1,5 +1,4 @@
 class NeutralSmokeGrenades {
-	tid = 668;
 	class SmokeShell {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar",1};

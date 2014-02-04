@@ -1,5 +1,4 @@
 class NeutralBlackMarketWeapons {
-	tid = 526;
 	class Saiga12K {
 		type = "trade_weapons";
 		buy[] = {5,"ItemGoldBar",1};
