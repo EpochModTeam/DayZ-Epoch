@@ -1,4 +1,4 @@
-class Category_485 {
+class Category_615 {
 	class G36A_camo {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};

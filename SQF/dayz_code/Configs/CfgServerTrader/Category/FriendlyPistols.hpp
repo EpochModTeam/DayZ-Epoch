@@ -1,4 +1,4 @@
-class Category_489 {
+class Category_617 {
 	class M9SD {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};

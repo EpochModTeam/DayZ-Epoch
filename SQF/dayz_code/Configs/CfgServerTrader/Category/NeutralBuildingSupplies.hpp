@@ -1,4 +1,4 @@
-class Category_662 {
+class Category_508 {
 	class ItemSandbag {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
@@ -23,6 +23,16 @@ class Category_662 {
 		type = "trade_items";
 		buy[] = {6,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar10oz"};
+	};
+	class ItemCorrugated {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class ItemPole {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar10oz"};
+		sell[] = {5,"ItemSilverBar"};
 	};
 	class ItemVault {
 		type = "trade_items";

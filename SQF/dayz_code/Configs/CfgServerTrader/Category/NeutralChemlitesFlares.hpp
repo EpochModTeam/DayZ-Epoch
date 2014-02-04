@@ -1,4 +1,4 @@
-class Category_666 {
+class Category_669 {
 	class HandChemBlue {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

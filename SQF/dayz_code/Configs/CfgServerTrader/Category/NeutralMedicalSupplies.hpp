@@ -1,4 +1,4 @@
-class Category_665 {
+class Category_670 {
 	class ItemAntibiotic {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar"};

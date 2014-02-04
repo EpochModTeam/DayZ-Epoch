@@ -1,4 +1,4 @@
-class Category_650 {
+class Category_587 {
 	class MMT_Civ {
 		type = "trade_any_bicycle";
 		buy[] = {4,"ItemSilverBar"};

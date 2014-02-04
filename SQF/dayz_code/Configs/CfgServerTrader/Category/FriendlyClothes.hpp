@@ -1,4 +1,4 @@
-class Category_628 {
+class Category_689 {
 	class Skin_Rocker2_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};

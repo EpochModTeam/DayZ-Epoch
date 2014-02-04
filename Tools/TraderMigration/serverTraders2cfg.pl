@@ -5,9 +5,9 @@ use DBI;
 use JSON;
 use Data::Dumper;
 
-my $pathServerTradersSQF = '..\..\Server Files\MPMissions\DayZ_Epoch_11.Chernarus\server_traders.sqf';
+my $pathServerTradersSQF = '..\..\Server Files\MPMissions\DayZ_Epoch_17.Chernarus\server_traders.sqf';
 my $pathServerTradersCfg = '..\..\SQF\dayz_code\Configs\CfgServerTrader\\';
-my $pathServerTraderCategoriesCfg = '..\..\SQF\dayz_code\Configs\CfgServerTraderCategories\\';
+my $pathServerTraderCategoriesCfg = '..\..\SQF\dayz_code\Configs\CfgServerTrader\Category\\';
 my $MySQL = DBI->connect('DBI:mysql:host=localhost;database=test2', 'root', 'root');
 
 open(TRADERSQF, '<', $pathServerTradersSQF) or die $!;
@@ -100,7 +100,7 @@ foreach my $traderhuman (keys $traderHumanity) {
 foreach my $traderCategory (keys $traderCategories) {
 	my $cfg = '';
 
-	$cfg .= "class ".$traderCategory." {\n";
+	$cfg .= "class Category_".$traderCategories->{$traderCategory}." {\n";
 	#$cfg .= "\ttid = ".$traderCategories->{$traderCategory}.";\n";
 	my $sth = $MySQL->prepare(q~
 		SELECT
@@ -119,9 +119,9 @@ foreach my $traderCategory (keys $traderCategories) {
 			$row->{Item} = $1;
 		}
 		else {next;}
-		if ($row->{Buy} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2",$3}/) {}
+		if ($row->{Buy} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2"}/) {}
 		else {next;}
-		if ($row->{Sell} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2",$3}/) {}
+		if ($row->{Sell} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2"}/) {}
 		else {next;}
 
 		$cfg .= "\tclass ".$row->{Item}." {\n";

@@ -1,4 +1,4 @@
-class Category_664 {
+class Category_509 {
 	class ItemJerrycan {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar"};

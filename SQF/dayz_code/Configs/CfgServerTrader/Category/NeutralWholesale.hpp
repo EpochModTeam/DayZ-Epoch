@@ -1,4 +1,4 @@
-class Category_636 {
+class Category_555 {
 	class bulk_15Rnd_9x19_M9SD {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
@@ -29,11 +29,6 @@ class Category_636 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class bulk_ItemWire {
-		type = "trade_items";
-		buy[] = {3,"ItemSilverBar10oz"};
-		sell[] = {3,"ItemSilverBar10oz"};
-	};
 	class bulk_PartGeneric {
 		type = "trade_items";
 		buy[] = {6,"ItemSilverBar10oz"};
@@ -58,5 +53,10 @@ class Category_636 {
 		type = "trade_items";
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {5,"ItemSilverBar"};
+	};
+	class bulk_ItemWire {
+		type = "trade_items";
+		buy[] = {3,"ItemSilverBar10oz"};
+		sell[] = {3,"ItemSilverBar10oz"};
 	};
 };

@@ -1,4 +1,4 @@
-class Category_574 {
+class Category_620 {
 	class Winchester1866 {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
