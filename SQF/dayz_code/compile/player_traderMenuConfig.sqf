@@ -26,7 +26,7 @@ TraderDialogLoadItemList = {
 	ctrlSetText [TraderDialogBuyPrice, ""];
 	ctrlSetText [TraderDialogSellPrice, ""];
 
-	_cfgTraderCategory = configFile >> "CfgTraderCategory" >> (format["Category_%1",_trader_id]);	
+	_cfgTraderCategory = missionConfigFile >> "CfgTraderCategory" >> (format["Category_%1",_trader_id]);	
 
 	PVDZE_plr_TradeMenuResult = [];
 	
