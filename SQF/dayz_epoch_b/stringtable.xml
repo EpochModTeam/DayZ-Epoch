@@ -6869,22 +6869,22 @@
 		<Key ID="STR_R3F_WEIGHT_InGearBox">
 			<Original>%1 | Weight carried : %2 lb</Original>
 			<English>%1 | Weight carried : %2 lb</English>
-			<German>%1 | Getragenes Gewicht : %2 lb</German>
+			<German>%1 | Getragenes Gewicht : %2 Kg</German>
 			<Russian>%1 | Переносимый вес : %2 Кг</Russian>
-			<Spanish>%1 | Weight carried : %2 lb</Spanish>
-			<Dutch>%1 | Weight carried : %2 lb</Dutch>
+			<Spanish>%1 | Weight carried : %2 Kg</Spanish>
+			<Dutch>%1 | Dragend gewicht : %2 Kg</Dutch>
 			<French>%1 | Poids transporté : %2 Kg</French>
-			<Czech>%1 | Nesená váha : %2 lb</Czech>
+			<Czech>%1 | Nesená váha : %2 Kg</Czech>
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_English">
 			<Original>lb</Original>
 			<English>lb</English>
-			<German>lb</German>
+			<German>Kg</German>
 			<Russian>Кг</Russian>
-			<Spanish>lb</Spanish>
+			<Spanish>Kg</Spanish>
 			<Dutch>Kg</Dutch>
 			<French>Kg</French>
-			<Czech>lb</Czech>
+			<Czech>Kg</Czech>
 		</Key>
 		<Key ID="str_player_login_timeout">
 			<English>Login timed out!\nDisconnect and try again!</English>
