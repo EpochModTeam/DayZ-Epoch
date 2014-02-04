@@ -1,17 +1,17 @@
 class NeutralSmokeGrenades {
 	class SmokeShell {
 		type = "trade_items";
-		buy[] = {2,"ItemSilverBar",1};
-		sell[] = {1,"ItemSilverBar",1};
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
 	};
 	class SmokeShellGreen {
 		type = "trade_items";
-		buy[] = {2,"ItemSilverBar",1};
-		sell[] = {1,"ItemSilverBar",1};
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
 	};
 	class SmokeShellRed {
 		type = "trade_items";
-		buy[] = {2,"ItemSilverBar",1};
-		sell[] = {1,"ItemSilverBar",1};
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
 	};
 };
