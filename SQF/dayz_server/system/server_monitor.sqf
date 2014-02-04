@@ -249,41 +249,43 @@ if (isServer and isNil "sm_done") then {
 	
 
 	// preload server traders menu data into cache
-	{
-		// get tids
-		_traderData = call compile format["menu_%1;",_x];
-		if(!isNil "_traderData") then {
-			{
-				_traderid = _x select 1;
+	if !(DZE_ConfigTrader) then {
+		{
+			// get tids
+			_traderData = call compile format["menu_%1;",_x];
+			if(!isNil "_traderData") then {
+				{
+					_traderid = _x select 1;
 
-				_retrader = [];
+					_retrader = [];
 
-				_key = format["CHILD:399:%1:",_traderid];
-				_data = "HiveEXT" callExtension _key;
+					_key = format["CHILD:399:%1:",_traderid];
+					_data = "HiveEXT" callExtension _key;
 
-				//diag_log "HIVE: Request sent";
-		
-				//Process result
-				_result = call compile format ["%1",_data];
-				_status = _result select 0;
-		
-				if (_status == "ObjectStreamStart") then {
-					_val = _result select 1;
-					//Stream Objects
-					//diag_log ("HIVE: Commence Menu Streaming...");
-					call compile format["ServerTcache_%1 = [];",_traderid];
-					for "_i" from 1 to _val do {
-						_data = "HiveEXT" callExtension _key;
-						_result = call compile format ["%1",_data];
-						call compile format["ServerTcache_%1 set [count ServerTcache_%1,%2]",_traderid,_result];
-						_retrader set [count _retrader,_result];
+					//diag_log "HIVE: Request sent";
+			
+					//Process result
+					_result = call compile format ["%1",_data];
+					_status = _result select 0;
+			
+					if (_status == "ObjectStreamStart") then {
+						_val = _result select 1;
+						//Stream Objects
+						//diag_log ("HIVE: Commence Menu Streaming...");
+						call compile format["ServerTcache_%1 = [];",_traderid];
+						for "_i" from 1 to _val do {
+							_data = "HiveEXT" callExtension _key;
+							_result = call compile format ["%1",_data];
+							call compile format["ServerTcache_%1 set [count ServerTcache_%1,%2]",_traderid,_result];
+							_retrader set [count _retrader,_result];
+						};
+						//diag_log ("HIVE: Streamed " + str(_val) + " objects");
 					};
-					//diag_log ("HIVE: Streamed " + str(_val) + " objects");
-				};
 
-			} forEach (_traderData select 0);
-		};
-	} forEach serverTraders;
+				} forEach (_traderData select 0);
+			};
+		} forEach serverTraders;
+	};
 
 	//  spawn_vehicles
 	_vehLimit = MaxVehicleLimit - _totalvehicles;

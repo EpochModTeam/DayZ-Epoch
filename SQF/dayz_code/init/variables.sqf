@@ -489,8 +489,11 @@ if(isNil "DZE_BuildOnRoads") then {
 if(isNil "DZE_MissionLootTable") then {
 	DZE_MissionLootTable = false;
 };
+if(isNil "DZE_ConfigTrader") then {
+	DZE_ConfigTrader = false;
+};
 if(isNil "DZE_LootSpawnTimer") then {
-        DZE_LootSpawnTimer = 10;
+	DZE_LootSpawnTimer = 10;
 };
 if(isNil "DZE_HeliLift") then {
 	DZE_HeliLift = true;

@@ -395,8 +395,11 @@ if (!isDedicated) then {
 	};
 		
 	// trader menu code
-	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderMenu.sqf";
-	
+	if (DZE_ConfigTrader) then {
+		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderMenuConfig.sqf";
+	}else{
+		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderMenuHive.sqf";
+	};
 	// recent murders menu code
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_murderMenu.sqf";
 
