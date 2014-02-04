@@ -86,7 +86,11 @@ foreach my $traderhuman (keys $traderHumanity) {
 			$catName =~ s~ |-|/~~g;
 
 			$cfg .= "\t\t{\"".$cat->[0]."\",\"".$catName."\"}\n";
-			$traderCategories->{$catName} = $cat->[1];
+			if (!defined($traderCategories->{$catName})) {
+				$traderCategories->{$catName} = [$cat->[1]]
+			} else {
+				push(@{$traderCategories->{$catName}}, $cat->[1]);
+			}
 		}
 		$cfg .= "\t};\n";
 		$cfg .= "};\n"
@@ -100,39 +104,40 @@ foreach my $traderhuman (keys $traderHumanity) {
 foreach my $traderCategory (keys $traderCategories) {
 	my $cfg = '';
 
-	$cfg .= "class Category_".$traderCategories->{$traderCategory}." {\n";
-	#$cfg .= "\ttid = ".$traderCategories->{$traderCategory}.";\n";
-	my $sth = $MySQL->prepare(q~
-		SELECT
-			item	AS Item
-			,buy	AS Buy
-			,sell	AS Sell
-			,afile	AS aFile
-		FROM
-			traders_data
-		WHERE
-			tid = ?
-	~);
-	$sth->execute($traderCategories->{$traderCategory});
-	while (my $row = $sth->fetchrow_hashref()) {
-		if ($row->{Item} =~ /^\["([^"]+)",\d+\]$/) {
-			$row->{Item} = $1;
+	foreach my $categoryId (@{$traderCategories->{$traderCategory}}) {
+		$cfg .= "class Category_".$categoryId." {\n";
+		#$cfg .= "\ttid = ".$traderCategories->{$traderCategory}.";\n";
+		my $sth = $MySQL->prepare(q~
+			SELECT
+				item	AS Item
+				,buy	AS Buy
+				,sell	AS Sell
+				,afile	AS aFile
+			FROM
+				traders_data
+			WHERE
+				tid = ?
+		~);
+		$sth->execute($categoryId);
+		while (my $row = $sth->fetchrow_hashref()) {
+			if ($row->{Item} =~ /^\["([^"]+)",\d+\]$/) {
+				$row->{Item} = $1;
+			}
+			else {next;}
+			if ($row->{Buy} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2"}/) {}
+			else {next;}
+			if ($row->{Sell} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2"}/) {}
+			else {next;}
+
+			$cfg .= "\tclass ".$row->{Item}." {\n";
+			$cfg .= "\t\ttype = \"".$row->{aFile}."\";\n";
+			$cfg .= "\t\tbuy[] = ".$row->{Buy}.";\n";
+			$cfg .= "\t\tsell[] = ".$row->{Sell}.";\n";
+			$cfg .= "\t};\n";
 		}
-		else {next;}
-		if ($row->{Buy} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2"}/) {}
-		else {next;}
-		if ($row->{Sell} =~ s/^\[(\d+),"([^"]+)",(\d+)\]$/{$1,"$2"}/) {}
-		else {next;}
-
-		$cfg .= "\tclass ".$row->{Item}." {\n";
-		$cfg .= "\t\ttype = \"".$row->{aFile}."\";\n";
-		$cfg .= "\t\tbuy[] = ".$row->{Buy}.";\n";
-		$cfg .= "\t\tsell[] = ".$row->{Sell}.";\n";
-		$cfg .= "\t};\n";
+		$sth->finish();
+		$cfg .= "};\n";
 	}
-	$sth->finish();
-	$cfg .= "};\n";
-
 	open(CFG, '>', $pathServerTraderCategoriesCfg.$traderCategory.'.hpp') or die $!;
 	print CFG $cfg;
 	close(CFG);
