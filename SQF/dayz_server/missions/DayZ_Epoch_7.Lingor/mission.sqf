@@ -221,7 +221,7 @@ if (true) then
 _unit_20 = objNull;
 if (true) then
 {
-  _this = createAgent ["TKCIV_Worker01_EP1", [6013.0737, 6629.2124, 1.5258789e-005], [], 0, "CAN_COLLIDE"];
+  _this = createAgent ["TK_CIV_Worker01_EP1", [6013.0737, 6629.2124, 1.5258789e-005], [], 0, "CAN_COLLIDE"];
   _unit_20 = _this;
   _this setDir 138.41472;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
