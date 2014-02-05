@@ -1,14 +1,20 @@
-[NEW] Config based trader setup option that is more performant, however does not track inventory. DZE_ConfigTrader = true; and #include "CfgServerTrader\cfgServerTrader.hpp" in description.ext @Fank @Skaronator @vbawol 
+[NEW] Config based trader setup option that is more performant, however does not track inventory. DZE_ConfigTrader = true; and #include "\dayz_epoch_b\CfgServerTrader\cfgServerTrader.hpp" in description.ext @Fank @Skaronator @vbawol 
 
+[ADDED] Stacking of 10oz silver bars into briefcases, also traders now give this as change if return is 2-9 10oz silver bars. @vbawol
 [ADDED] Variable DZE_DamageBeforeMaint to control what damage level is needed for the maintain option to appear. @vbawol
 [ADDED] Keep safe/lockbox vars server side. This should help with performance. @maca134 @Skaronator
 [ADDED] Added SQL Function DeleteNonKeyVehicles run before server start and SQL event UnlockNonKeyVehicles run once a day. Use one or the other not both. @maca134 @Fank
 [ADDED] Option to disable R3F weight system. DZE_R3F_WEIGHT = false in init.sqf to disable. @vbawol
+[ADDED] Added to heli crash code, Blackhawk and Seahawk Wrecks by [GLT]Myke http://www.armaholic.com/page.php?id=10670
+[ADDED] Added following Config Classes: M113_UN_EP1_DZ M113_UN_EP1_DZE M113_TK_EP1_DZ M113_TK_EP1_DZE BTR90_DZ BTR90_DZE BTR90_HQ_DZ BTR90_HQ_DZE LAV25_DZ LAV25_DZE LAV25_HQ_DZ LAV25_HQ_DZE @Fank
 
+[FIXED] Add missing sensor for aircraft dealer on Napf. @JoSchaap
+[FIXED] Traders now give ItemTinBar in exchange for TrashJackDaniels. @vbawol
 [FIXED] M107 zeroing was stuck at 500m now set to default settings. @vbawol 
 [FIXED] DZE_DamageBeforeMaint = 0.09 by default should fix issues with maintain option not working when damage is set to 0.1 with SQL event. @vbawol
 [FIXED] Fix for Death Messages <NULL> when attacker is in vehicle. @icomrade @vbawol
-[FIXED] General cleanup and fixes. @Fank @Skaronator @icomrade @vbawol 
+[FIXED] Added missing DZE fueltracks to DZE_fueltrackarray. @Fank
+[FIXED] Fix AI from being counted as zeds. @jwo7777777
 [FIXED] Issue with Scaffolding being too close and killing player. @Fank
 [FIXED] Stuck in infinite trading loop when item is out of stock. @vbawol
 [FIXED] Fixed backpack disappearing issue. @vbawol
@@ -18,8 +24,14 @@
 [FIXED] Issue that prevented the server from starting. @Skaronator
 [FIXED] Some typos in the loot table. @Skaronator
 [FIXED] DZE_MissionLootTable - Some things are missing. @vbawol @Skaronator
+[FIXED] General cleanup and fixes. @Fank @Skaronator @icomrade @vbawol 
 
-[CHANGED] R3F weight for dutch in Kg @vbawol http://epochmod.com/forum/index.php?/topic/6510-request-r3f-weight-for-dutch-in-kg/
+[CHANGED] R3F weight now in Kg for every language except english. @VeryBigBro
+[CHANGED] Increased trader prices for Armed vehicles and pipebombs. @vbawol
+[CHANGED] Added BAF_Merlin_DZE and MH60S_DZE to traders. @vbawol
 
+[REMOVED] Trade metals option removed from self actions as it should no longer be needed with new trader code. @vbawol
+
+[INFO] Moved binaries to root of server files and wrote up basic install upgrade guide. @vbawol
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://bmrf.me/ for hosting our development server.
