@@ -32,7 +32,7 @@ class Category_653 {
 	class MTVR_DES_EP1 {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar10oz"};
 	};
 	class V3S_Civ {
 		type = "trade_any_vehicle";
@@ -104,7 +104,7 @@ class Category_586 {
 	class MTVR_DES_EP1 {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar10oz"};
 	};
 	class V3S_Civ {
 		type = "trade_any_vehicle";
