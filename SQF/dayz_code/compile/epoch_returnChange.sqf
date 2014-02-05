@@ -107,9 +107,12 @@ if (_canAfford) then {
 			};
 		};
 		if (_silver_10oz > 0) then {
-			for "_x" from 1 to _silver_10oz do {
+			if (_silver_10oz == 1) then {
 				player addMagazine "ItemSilverBar10oz";
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_10oz, "ItemSilverBar10z"];
+				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_10oz, "ItemSilverBar10oz"];
+			} else {
+				player addMagazine format["ItemBriefcaseS%1oz",floor(_silver_10oz*10)];
+				diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcaseS%1oz", floor(_silver_10oz*10)];
 			};
 		};
 		if (_silver_1oz > 0) then {

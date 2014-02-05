@@ -27,6 +27,22 @@ class ItemBriefcaseEmpty: ItemBriefcase_Base {
 			output[] = {{"ItemBriefcase100oz",1}};
 			input[] = {{"ItemBriefcaseEmpty",1},{"ItemGoldBar10oz",10}};
 		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS10oz",1}};
+			input[] = {{"ItemBriefcaseEmpty",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_S_198;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseEmpty",1},{"ItemSilverBar10oz",10}};
+		};
 	};
 };
 class ItemBriefcase10oz: ItemBriefcase_Base {
@@ -394,6 +410,375 @@ class ItemBriefcase100oz: ItemBriefcase_Base {
 			requiretools[] = {};
 			output[] = {{"ItemGoldBar10oz",10},{"ItemBriefcaseEmpty",1}};
 			input[] = {{"ItemBriefcase100oz",1}};
+		};
+	};
+};
+// Silver 
+class ItemBriefcaseS10oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_10oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 1 x 10oz Silver Bar)";
+	weight = 1.2;
+	worth = 10;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS20oz",1}};
+			input[] = {{"ItemBriefcaseS10oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_199;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS10oz",1},{"ItemSilverBar10oz",9}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS10oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS20oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_20oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 2 x 10oz Silver Bar)";
+	weight = 1.5;
+	worth = 20;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS30oz",1}};
+			input[] = {{"ItemBriefcaseS20oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_202;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS20oz",1},{"ItemSilverBar10oz",8}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS10oz",1}};
+			input[] = {{"ItemBriefcaseS20oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",2},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS20oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS30oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_30oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 3 x 10oz Silver Bar)";
+	weight = 1.8;
+	worth = 30;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS40oz",1}};
+			input[] = {{"ItemBriefcaseS30oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_203;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS30oz",1},{"ItemSilverBar10oz",7}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS20oz",1}};
+			input[] = {{"ItemBriefcaseS30oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",3},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS30oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS40oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_40oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 4 x 10oz Silver Bar)";
+	weight = 2.1;
+	worth = 40;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS50oz",1}};
+			input[] = {{"ItemBriefcaseS40oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_204;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS40oz",1},{"ItemSilverBar10oz",6}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS30oz",1}};
+			input[] = {{"ItemBriefcaseS40oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",4},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS40oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS50oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_50oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 5 x 10oz Silver Bar)";
+	weight = 2.4;
+	worth = 50;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS60oz",1}};
+			input[] = {{"ItemBriefcaseS50oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_205;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS50oz",1},{"ItemSilverBar10oz",5}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS40oz",1}};
+			input[] = {{"ItemBriefcaseS50oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",5},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS50oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS60oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_60oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 6 x 10oz Silver Bar)";
+	weight = 2.7;
+	worth = 60;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS70oz",1}};
+			input[] = {{"ItemBriefcaseS60oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_206;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS60oz",1},{"ItemSilverBar10oz",4}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS50oz",1}};
+			input[] = {{"ItemBriefcaseS60oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",6},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS60oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS70oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_70oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 7 x 10oz Silver Bar)";
+	weight = 2.9;
+	worth = 70;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS80oz",1}};
+			input[] = {{"ItemBriefcaseS70oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_207;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS70oz",1},{"ItemSilverBar10oz",3}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS60oz",1}};
+			input[] = {{"ItemBriefcaseS70oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",7},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS70oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS80oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_80oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 8 x 10oz Silver Bar)";
+	weight = 3.2;
+	worth = 80;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS90oz",1}};
+			input[] = {{"ItemBriefcaseS80oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_208;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS80oz",1},{"ItemSilverBar10oz",2}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS70oz",1}};
+			input[] = {{"ItemBriefcaseS80oz",1}};
+		};
+		class Crafting3 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",8},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS80oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS90oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_90oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 9 x 10oz Silver Bar)";
+	weight = 3.5;
+	worth = 90;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_197;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemBriefcaseS100oz",1}};
+			input[] = {{"ItemBriefcaseS90oz",1},{"ItemSilverBar10oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS80oz",1}};
+			input[] = {{"ItemBriefcaseS90oz",1}};
+		};
+		class Crafting2 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",9},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS90oz",1}};
+		};
+	};
+};
+class ItemBriefcaseS100oz: ItemBriefcase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_100oz_CA.paa";
+	descriptionShort = "Briefcase (Contains: 10 x 10oz Silver Bar)";
+	weight = 3.8;
+	worth = 100;
+	class ItemActions {
+		class Crafting {
+			text = $STR_EPOCH_PLAYER_S_200;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",1},{"ItemBriefcaseS90oz",1}};
+			input[] = {{"ItemBriefcaseS100oz",1}};
+		};
+		class Crafting1 {
+			text = $STR_EPOCH_PLAYER_201;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSilverBar10oz",10},{"ItemBriefcaseEmpty",1}};
+			input[] = {{"ItemBriefcaseS100oz",1}};
 		};
 	};
 };

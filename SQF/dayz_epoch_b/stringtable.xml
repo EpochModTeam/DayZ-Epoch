@@ -4786,6 +4786,116 @@
 			<!-- <French></French> -->
 			<Czech>Přidat 2 10oz zlata</Czech>
 		</Key>
+    <Key ID="STR_EPOCH_PLAYER_S_197">
+      <Original>Add 1 10oz Silver</Original>
+      <English>Add 1 10oz Silver</English>
+      <!-- <German>1 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 1 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 1 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidáno 1 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_198">
+      <Original>Add 10 10oz Silver</Original>
+      <English>Add 10 10oz Silver</English>
+      <!-- <German>10 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 10 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 10 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidáno 10 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_199">
+      <Original>Add 9 10oz Silver</Original>
+      <English>Add 9 10oz Silver</English>
+      <!-- <German>9 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 9 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 9 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidáno 9 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_200">
+      <Original>Remove 1 10oz Silver</Original>
+      <English>Remove 1 10oz Silver</English>
+      <!-- <German>1 10oz Silver entfernen</German> -->
+      <!-- <Russian>Забрать 1 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Verwijder 1 10oz Goud</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Odebráno 1 10oz zlato</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_202">
+      <Original>Add 8 10oz Silver</Original>
+      <English>Add 8 10oz Silver</English>
+      <!-- <German>8 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 8 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 8 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidáno 8 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_203">
+      <Original>Add 7 10oz Silver</Original>
+      <English>Add 7 10oz Silver</English>
+      <!-- <German>7 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 7 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 7 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidáno 7 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_204">
+      <Original>Add 6 10oz Silver</Original>
+      <English>Add 6 10oz Silver</English>
+      <!-- <German>6 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 6 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 6 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidáno 6 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_205">
+      <Original>Add 5 10oz Silver</Original>
+      <English>Add 5 10oz Silver</English>
+      <!-- <German>5 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 5 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 5 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidáno 5 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_206">
+      <Original>Add 4 10oz Silver</Original>
+      <English>Add 4 10oz Silver</English>
+      <!-- <German>4 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 4 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 4 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidat 4 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_207">
+      <Original>Add 3 10oz Silver</Original>
+      <English>Add 3 10oz Silver</English>
+      <!-- <German>3 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 3 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 3 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Prodat 3 10oz zlata</Czech> -->
+    </Key>
+    <Key ID="STR_EPOCH_PLAYER_S_208">
+      <Original>Add 2 10oz Silver</Original>
+      <English>Add 2 10oz Silver</English>
+      <!-- <German>2 10oz Silver hinzufügen</German> -->
+      <!-- <Russian>Добавить 2 10oz золота</Russian> -->
+      <!-- <Spanish></Spanish> -->
+      <!-- <Dutch>Voeg 2 10oz Goud toe</Dutch> -->
+      <!-- <French></French> -->
+      <!-- <Czech>Přidat 2 10oz zlata</Czech> -->
+    </Key>
 		<Key ID="STR_EPOCH_PLAYER_209">
 			<Original>Open %1</Original>
 			<English>Open %1</English>
