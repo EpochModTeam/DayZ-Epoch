@@ -223,6 +223,8 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\ArmoredSUV.hpp"
 	#include "CfgVehicles\LAND\Pickup_PK.hpp"
 	#include "CfgVehicles\LAND\Offroad_DSHKM.hpp"
+	#include "CfgVehicles\LAND\BTR90.hpp"
+	#include "CfgVehicles\LAND\LAV25.hpp"
 
 	// LAND (Unarmed)
 	#include "CfgVehicles\LAND\V3S.hpp"
@@ -238,6 +240,8 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\UAZ.hpp"
 	#include "CfgVehicles\LAND\SUV.hpp"
 	#include "CfgVehicles\LAND\TT650.hpp"
+
+	// Land (Armed & Unarmed)
 	#include "CfgVehicles\LAND\M113.hpp"
 
 	// SEA
