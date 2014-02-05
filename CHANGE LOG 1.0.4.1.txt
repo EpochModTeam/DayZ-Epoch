@@ -21,7 +21,7 @@
 [FIXED] Some typos in the loot table. @Skaronator
 [FIXED] DZE_MissionLootTable - Some things are missing. @vbawol @Skaronator
 
-[CHANGED] R3F weight for dutch in Kg @vbawol http://epochmod.com/forum/index.php?/topic/6510-request-r3f-weight-for-dutch-in-kg/
+[CHANGED] R3F weight now in Kg for every language except english. @Anton
 
 [REMOVED] Trade metals option removed from self actions as it should no longer be needed with new trader code. @vbawol
 
