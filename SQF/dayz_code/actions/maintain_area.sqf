@@ -36,15 +36,17 @@ if (_count == 0) exitWith {
 
 _requirements = [];
 switch true do {
-	case (_count <= 20): {_requirements = [["ItemGoldBar10oz",2]]};
-	case (_count <= 50): {_requirements = [["ItemGoldBar10oz",4]]};
+	case (_count <= 20):  {_requirements = [["ItemGoldBar10oz",2]]};
+	case (_count <= 50):  {_requirements = [["ItemGoldBar10oz",4]]};
 	case (_count <= 100): {_requirements = [["ItemBriefcase100oz",1]]};
-	case (_count <= 200): {_requirements = [["ItemBriefcase100oz",2]]};
-	case (_count <= 300): {_requirements = [["ItemBriefcase100oz",3]]};
-	case (_count <= 400): {_requirements = [["ItemBriefcase100oz",4]]};
-	case (_count <= 500): {_requirements = [["ItemBriefcase100oz",5]]};
-	case (_count <= 600): {_requirements = [["ItemBriefcase100oz",6]]};
-	case (_count > 700): {_requirements = [["ItemBriefcase100oz",7]]};
+	case (_count <= 175): {_requirements = [["ItemBriefcase100oz",2]]};
+	case (_count <= 250): {_requirements = [["ItemBriefcase100oz",3]]};
+	case (_count <= 325): {_requirements = [["ItemBriefcase100oz",4]]};
+	case (_count <= 400): {_requirements = [["ItemBriefcase100oz",5]]};
+	case (_count <= 475): {_requirements = [["ItemBriefcase100oz",6]]};
+	case (_count <= 550): {_requirements = [["ItemBriefcase100oz",7]]};
+	case (_count <= 625): {_requirements = [["ItemBriefcase100oz",8]]};
+	case (_count > 700):  {_requirements = [["ItemBriefcase100oz",9]]};
 };
 
 
