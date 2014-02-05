@@ -240,6 +240,8 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\UAZ.hpp"
 	#include "CfgVehicles\LAND\SUV.hpp"
 	#include "CfgVehicles\LAND\TT650.hpp"
+
+	// Land (Armed & Unarmed)
 	#include "CfgVehicles\LAND\M113.hpp"
 
 	// SEA
@@ -323,7 +325,6 @@ class CfgVehicles {
 
 	class House {
 		class DestructionEffects;
-	};
 	};
 	#include "CfgVehicles\Wrecks.hpp"
 	#include "CfgVehicles\DZE\Wrecks.hpp"
