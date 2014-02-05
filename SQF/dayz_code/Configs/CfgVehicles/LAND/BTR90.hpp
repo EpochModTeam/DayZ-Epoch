@@ -10,18 +10,14 @@ class BTR90_DZ: BTR90 {
 
 	crew = "";
 	typicalCargo[] = {};
-	TransportMagazines[] = {};
+	class TransportMagazines{};
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
 
-	class Turrets {
-		class MainTurret; // External class reference
-		class Turrets {
-			class CommanderOptics; // External class reference
-		};
-	};
+	class Turrets; // External class reference
+	class MainTurret; // External class reference
 };
 class BTR90_HQ;
 class BTR90_HQ_DZ: BTR90_HQ {
@@ -35,15 +31,14 @@ class BTR90_HQ_DZ: BTR90_HQ {
 
 	crew = "";
 	typicalCargo[] = {};
-	TransportMagazines[] = {};
+	class TransportMagazines{};
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
 
-	class Turrets {
-		class MainTurret; // External class reference
-	}
+	class Turrets; // External class reference
+	class MainTurret; // External class reference
 };
 
 // Ammo Less
@@ -52,11 +47,6 @@ class BTR90_DZE: BTR90_DZ {
 	class Turrets: Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
-		};
-		class Turrets: Turrets {
-			class CommanderOptics: CommanderOptics {
-				magazines[] = {};
-			};
 		};
 	};
 };

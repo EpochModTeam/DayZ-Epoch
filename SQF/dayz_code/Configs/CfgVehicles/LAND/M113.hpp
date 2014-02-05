@@ -11,15 +11,13 @@ class M113_UN_EP1_DZ: M113_UN_EP1 {
 
 	crew = "";
 	typicalCargo[] = {};
-	TransportMagazines[] = {};
+	class TransportMagazines{};
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 20; // Default: 20
 	//transportmaxbackpacks = ; // Default:
 
-	class Turrets {
-		class MainTurret; // External class reference
-	};
+	class MainTurret; // External class reference
 };
 class M113_TK_EP1;
 class M113_TK_EP1_DZ: M113_TK_EP1 {
@@ -33,15 +31,13 @@ class M113_TK_EP1_DZ: M113_TK_EP1 {
 
 	crew = "";
 	typicalCargo[] = {};
-	TransportMagazines[] = {};
+	class TransportMagazines{};
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 20; // Default: 20
 	//transportmaxbackpacks = ; // Default:
 
-	class Turrets {
-		class MainTurret; // External class reference
-	};
+	class MainTurret; // External class reference
 };
 
 // Ammo Less

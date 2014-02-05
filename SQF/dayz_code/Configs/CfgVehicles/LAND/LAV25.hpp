@@ -10,15 +10,14 @@ class LAV25_DZ: LAV25 {
 
 	crew = "";
 	typicalCargo[] = {};
-	TransportMagazines[] = {};
+	class TransportMagazines{};
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
 
-	class Turrets;
-	class MainTurret;
-	class CommanderOptics;
+	class Turrets; // External class reference
+	class MainTurret; // External class reference
 };
 class LAV25_HQ;
 class LAV25_HQ_DZ: LAV25_HQ {
@@ -32,14 +31,14 @@ class LAV25_HQ_DZ: LAV25_HQ {
 
 	crew = "";
 	typicalCargo[] = {};
-	TransportMagazines[] = {};
+	class TransportMagazines{};
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
 
-	class Turrets;
-	class MainTurret;
+	class Turrets; // External class reference
+	class MainTurret; // External class reference
 };
 
 // Ammo Less
@@ -48,11 +47,6 @@ class LAV25_DZE: LAV25_DZ {
 	class Turrets: Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
-		};
-		class Turrets: Turrets {
-			class CommanderOptics: CommanderOptics {
-				magazines[] = {};
-			};
 		};
 	};
 };
