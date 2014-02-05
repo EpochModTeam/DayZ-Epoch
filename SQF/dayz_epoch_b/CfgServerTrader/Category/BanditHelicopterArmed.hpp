@@ -24,4 +24,9 @@ class Category_512 {
 		buy[] = {2,"ItemBriefcase100oz"};
 		sell[] = {1,"ItemBriefcase100oz"};
 	};
+	class MH60S_DZE {
+		type = "trade_any_vehicle";
+		buy[] = {2,"ItemBriefcase100oz"};
+		sell[] = {1,"ItemBriefcase100oz"};
+	};
 };
