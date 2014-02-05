@@ -6,7 +6,7 @@ class Category_529 {
 	};
 	class PipeBomb {
 		type = "trade_items";
-		buy[] = {4,"ItemGoldBar10oz"};
+		buy[] = {4,"ItemBriefcase100oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
 	};
 	class 1Rnd_HE_M203 {
