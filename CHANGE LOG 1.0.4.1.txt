@@ -1,9 +1,11 @@
+[NEW] Config based trader setup option that is more performant, however does not track inventory. DZE_ConfigTrader = true; and #include "CfgServerTrader\cfgServerTrader.hpp" in description.ext @Fank @Skaronator @vbawol 
+
 [ADDED] Variable DZE_DamageBeforeMaint to control what damage level is needed for the maintain option to appear. @vbawol
 [ADDED] Keep safe/lockbox vars server side until needed. This should help with performance. @maca134
 [ADDED] Added SQL Function DeleteNonKeyVehicles run before server start and SQL event UnlockNonKeyVehicles run once a day. Use one or the other not both. @maca134 @Fank
 [ADDED] Option to disable R3F weight system. DZE_R3F_WEIGHT = false in init.sqf to disable. @vbawol
 
-
+[FIXED] M107 zeroing was stuck at 500m now set to default settings. @vbawol 
 [FIXED] DZE_DamageBeforeMaint = 0.09 by default should fix issues with maintain option not working when damage is set to 0.1 with SQL event. @vbawol
 [FIXED] Fix for Death Messages <NULL> when attacker is in vehicle. @icomrade @vbawol
 [FIXED] General cleanup and fixes. @Fank @Skaronator @icomrade @vbawol 
