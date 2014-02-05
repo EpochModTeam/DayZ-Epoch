@@ -477,7 +477,7 @@ class ItemBriefcaseS20oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS20oz",1}};
 		};
 		class Crafting3 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -517,7 +517,7 @@ class ItemBriefcaseS30oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS30oz",1}};
 		};
 		class Crafting3 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -557,7 +557,7 @@ class ItemBriefcaseS40oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS40oz",1}};
 		};
 		class Crafting3 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -597,7 +597,7 @@ class ItemBriefcaseS50oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS50oz",1}};
 		};
 		class Crafting3 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -637,7 +637,7 @@ class ItemBriefcaseS60oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS60oz",1}};
 		};
 		class Crafting3 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -677,7 +677,7 @@ class ItemBriefcaseS70oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS70oz",1}};
 		};
 		class Crafting3 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -717,7 +717,7 @@ class ItemBriefcaseS80oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS80oz",1}};
 		};
 		class Crafting3 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -749,7 +749,7 @@ class ItemBriefcaseS90oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS90oz",1}};
 		};
 		class Crafting2 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -773,7 +773,7 @@ class ItemBriefcaseS100oz: ItemBriefcase_Base {
 			input[] = {{"ItemBriefcaseS100oz",1}};
 		};
 		class Crafting1 {
-			text = $STR_EPOCH_PLAYER_S_201;
+			text = $STR_EPOCH_PLAYER_201;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
