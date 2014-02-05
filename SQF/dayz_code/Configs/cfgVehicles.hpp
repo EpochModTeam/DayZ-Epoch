@@ -223,6 +223,7 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\ArmoredSUV.hpp"
 	#include "CfgVehicles\LAND\Pickup_PK.hpp"
 	#include "CfgVehicles\LAND\Offroad_DSHKM.hpp"
+	#include "CfgVehicles\LAND\BTR90.hpp"
 
 	// LAND (Unarmed)
 	#include "CfgVehicles\LAND\V3S.hpp"
@@ -321,6 +322,7 @@ class CfgVehicles {
 
 	class House {
 		class DestructionEffects;
+	};
 	};
 	#include "CfgVehicles\Wrecks.hpp"
 	#include "CfgVehicles\DZE\Wrecks.hpp"

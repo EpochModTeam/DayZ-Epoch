@@ -1,0 +1,57 @@
+class BTR90_DZ: BTR90 {
+	scope = public;
+	side = TGuerrila;
+	displayName = "BTR-90 DZ";
+
+	commanderCanSee = 2+16+32;
+	gunnerCanSee = 2+16+32;
+	driverCanSee = 2+16+32;
+
+	crew = "";
+	typicalCargo[] = {};
+	TransportMagazines[] = {};
+
+	transportMaxMagazines = 100; // Default: 100
+	transportMaxWeapons = 10; // Default: 10
+	//transportmaxbackpacks = ; // Default:
+};
+class BTR90_HQ_DZ: BTR90_HQ {
+	scope = public;
+	side = TGuerrila;
+	displayName = "BTR-90 (HQ) DZ";
+
+	commanderCanSee = 2+16+32;
+	gunnerCanSee = 2+16+32;
+	driverCanSee = 2+16+32;
+
+	crew = "";
+	typicalCargo[] = {};
+	TransportMagazines[] = {};
+
+	transportMaxMagazines = 100; // Default: 100
+	transportMaxWeapons = 10; // Default: 10
+	//transportmaxbackpacks = ; // Default:
+};
+
+// Ammo Less
+class BTR90_DZE: BTR90_DZ {
+	displayName = "BTR-90 AL";
+	class Turrets: Turrets {
+		class MainTurret : MainTurret {
+			magazines[] = {};
+		};
+		class Turrets: Turrets {
+			class CommanderOptics: CommanderOptics {
+				magazines[] = {};
+			};
+		};
+	};
+};
+class BTR90_HQ_DZE: BTR90_HQ_DZ {
+	displayName = "BTR-90 (HQ) AL";
+	class Turrets: Turrets {
+		class MainTurret : MainTurret {
+			magazines[] = {};
+		};
+	};
+};
