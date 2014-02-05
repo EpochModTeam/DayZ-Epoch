@@ -101,7 +101,7 @@ foreach my $traderhuman (keys $traderHumanity) {
 	close(CFG);
 }
 
-foreach my $traderCategory (keys $traderCategories) {
+foreach my $traderCategory (sort keys $traderCategories) {
 	my $cfg = '';
 
 	foreach my $categoryId (@{$traderCategories->{$traderCategory}}) {
@@ -137,6 +137,8 @@ foreach my $traderCategory (keys $traderCategories) {
 		}
 		$sth->finish();
 		$cfg .= "};\n";
+
+		print STDERR $traderCategory." - ".$categoryId."\n";
 	}
 	open(CFG, '>', $pathServerTraderCategoriesCfg.$traderCategory.'.hpp') or die $!;
 	print CFG $cfg;
