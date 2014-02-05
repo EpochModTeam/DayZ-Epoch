@@ -224,6 +224,7 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\Pickup_PK.hpp"
 	#include "CfgVehicles\LAND\Offroad_DSHKM.hpp"
 	#include "CfgVehicles\LAND\BTR90.hpp"
+	#include "CfgVehicles\LAND\LAV25.hpp"
 
 	// LAND (Unarmed)
 	#include "CfgVehicles\LAND\V3S.hpp"
