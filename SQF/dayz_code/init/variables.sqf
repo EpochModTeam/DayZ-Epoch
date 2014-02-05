@@ -447,6 +447,9 @@ if(isNil "dayz_maxZeds") then {
 if (isNil "DZE_PlayerZed") then {
 	DZE_PlayerZed = true;
 };
+if (isNil "DZE_GodModeBase") then {
+	DZE_GodModeBase = false;
+};
 if(isNil "DZEdebug") then {
 	DZEdebug = false;
 };
