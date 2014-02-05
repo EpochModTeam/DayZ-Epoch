@@ -1,3 +1,4 @@
+class LAV25;
 class LAV25_DZ: LAV25 {
 	scope = public;
 	side = TGuerrila;
@@ -14,7 +15,12 @@ class LAV25_DZ: LAV25 {
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
+
+	class Turrets;
+	class MainTurret;
+	class CommanderOptics;
 };
+class LAV25_HQ;
 class LAV25_HQ_DZ: LAV25_HQ {
 	scope = public;
 	side = TGuerrila;
@@ -31,6 +37,9 @@ class LAV25_HQ_DZ: LAV25_HQ {
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
+
+	class Turrets;
+	class MainTurret;
 };
 
 // Ammo Less

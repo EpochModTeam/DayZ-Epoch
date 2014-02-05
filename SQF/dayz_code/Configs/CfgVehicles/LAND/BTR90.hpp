@@ -1,3 +1,4 @@
+class BTR90;
 class BTR90_DZ: BTR90 {
 	scope = public;
 	side = TGuerrila;
@@ -14,7 +15,15 @@ class BTR90_DZ: BTR90 {
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
+
+	class Turrets {
+		class MainTurret; // External class reference
+		class Turrets {
+			class CommanderOptics; // External class reference
+		};
+	};
 };
+class BTR90_HQ;
 class BTR90_HQ_DZ: BTR90_HQ {
 	scope = public;
 	side = TGuerrila;
@@ -31,6 +40,10 @@ class BTR90_HQ_DZ: BTR90_HQ {
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
+
+	class Turrets {
+		class MainTurret; // External class reference
+	}
 };
 
 // Ammo Less
