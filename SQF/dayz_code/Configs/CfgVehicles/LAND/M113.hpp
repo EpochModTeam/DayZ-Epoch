@@ -17,6 +17,7 @@ class M113_UN_EP1_DZ: M113_UN_EP1 {
 	transportMaxWeapons = 20; // Default: 20
 	//transportmaxbackpacks = ; // Default:
 
+	class Turrets; // External class reference
 	class MainTurret; // External class reference
 };
 class M113_TK_EP1;
@@ -37,6 +38,7 @@ class M113_TK_EP1_DZ: M113_TK_EP1 {
 	transportMaxWeapons = 20; // Default: 20
 	//transportmaxbackpacks = ; // Default:
 
+	class Turrets; // External class reference
 	class MainTurret; // External class reference
 };
 
