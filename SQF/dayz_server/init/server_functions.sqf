@@ -903,7 +903,7 @@ PVDZE_localObjVarsResult = nil;
 waitUntil {sleep 1; !isNil "PVDZE_localObjVarsResult"};
 */
 server_getLocalObjVars = {
-	private ["_player","_obj","_vars","_vals","_objectID","_objectUID"];
+	private ["_player","_obj","_objectID","_objectUID","_weapons","_magazines","_backpacks"];
 
 	_player = _this select 0;
 	_obj = _this select 1;
