@@ -58,7 +58,7 @@ if(!isNull _obj) then {
 	_holder setVariable["ObjectUID",_objectUID,true];
 	_holder setVariable ["OEMPos", _pos, true];
 
-	PVDZE_obj_setlocalVars = [_obj,_holder];
+	PVDZE_obj_setlocalVars = [_obj,_holder,player];
 	publicVariableServer "PVDZE_obj_setlocalVars";
 
 	cutText [format[(localize "str_epoch_player_117"),_text], "PLAIN DOWN"];

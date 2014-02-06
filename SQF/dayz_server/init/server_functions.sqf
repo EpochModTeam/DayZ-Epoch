@@ -903,10 +903,14 @@ PVDZE_localObjVarsResult = nil;
 waitUntil {sleep 1; !isNil "PVDZE_localObjVarsResult"};
 */
 server_getLocalObjVars = {
-	private ["_player", "_obj", "_vars", "_vals"];
+	private ["_player","_obj","_vars","_vals","_objectID","_objectUID"];
 
 	_player = _this select 0;
 	_obj = _this select 1;
+
+	_objectID 	= _obj getVariable["ObjectID","0"];
+	_objectUID	= _obj getVariable["ObjectUID","0"];
+
 	_vars = _this select 2;
 	
 	if (typeName _vars != "ARRAY") then {
@@ -920,14 +924,20 @@ server_getLocalObjVars = {
 
 	PVDZE_localVarsResult = _vals;
 	(owner _player) publicVariableClient "PVDZE_localVarsResult";
+	
+	diag_log format["SAFE UNLOCKED: ID:%1 UID:%2 BY %3", _objectID, _objectUID, (getPlayerUID _player)];
 };
 
 server_setLocalObjVars = {
-	private ["_obj", "_holder", "_weapons", "_magazines", "_backpacks"];
+	private ["_obj","_holder","_weapons","_magazines","_backpacks","_player","_objectID","_objectUID"];
 
 	_obj = _this select 0;
 	_holder = _this select 1;
-	
+	_player = _this select 2;
+
+	_objectID 	= _obj getVariable["ObjectID","0"];
+	_objectUID	= _obj getVariable["ObjectUID","0"];
+
 	_weapons = 		getWeaponCargo _obj;
 	_magazines = 	getMagazineCargo _obj;
 	_backpacks = 	getBackpackCargo _obj;
@@ -943,4 +953,6 @@ server_setLocalObjVars = {
 	if (count _backpacks > 0) then {
 		_holder setVariable ["BackpackCargo", _backpacks];
 	};
+
+	diag_log format["SAFE LOCKED: ID:%1 UID:%2 BY %3", _objectID, _objectUID, (getPlayerUID _player)];
 };
