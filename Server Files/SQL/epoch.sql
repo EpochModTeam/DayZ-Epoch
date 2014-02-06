@@ -1715,9 +1715,9 @@ INSERT INTO `Traders_DATA` VALUES(7556, '["M4A1_HWS_GL_SD_Camo",3]', 250, '[2,"I
 INSERT INTO `Traders_DATA` VALUES(7557, '["KSVK_DZE",3]', 250, '[3,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 459, 'trade_weapons');
 INSERT INTO `Traders_DATA` VALUES(7558, '["HandGrenade_east",1]', 257, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 529, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(7565, '["bulk_ItemWire",1]', 250, '[3,"ItemSilverBar10oz",1]', '[3,"ItemSilverBar10oz",1]', 0, 555, 'trade_items');
-INSERT INTO `Traders_DATA` VALUES(7571, '["BAF_Merlin_DZE",2]', 261, '[2,"ItemBriefcase100oz",1]]', '[1,"ItemBriefcase100oz",1]]', 0, 519, 'trade_any_vehicle');
-INSERT INTO `Traders_DATA` VALUES(7573, '["MH60S_DZE",2]', 10, '[4,"ItemBriefcase100oz",1]]', '[1,"ItemBriefcase100oz",1]]', 0, 512, 'trade_any_vehicle');
-INSERT INTO `Traders_DATA` VALUES(7574, '["MH60S_DZE",2]', 10, '[2,"ItemBriefcase100oz",1]]', '[1,"ItemBriefcase100oz",1]]', 0, 493, 'trade_any_vehicle');
+INSERT INTO `Traders_DATA` VALUES(7571, '["BAF_Merlin_DZE",2]', 261, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 519, 'trade_any_vehicle');
+INSERT INTO `Traders_DATA` VALUES(7573, '["MH60S_DZE",2]', 10, '[4,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 512, 'trade_any_vehicle');
+INSERT INTO `Traders_DATA` VALUES(7574, '["MH60S_DZE",2]', 10, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 493, 'trade_any_vehicle');
 
 -- --------------------------------------------------------
 
