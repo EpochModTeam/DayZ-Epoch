@@ -891,17 +891,6 @@ server_spawnCleanAnimals = {
 	};
 };
 
-/*
-server_getLocalObjVars
-Gets local vars from a target objects and pushing results back to client
-Eg.
-
-PVDZE_obj_getlocalVars = [player, _obj, ["WeaponCargo", "MagazineCargo", "BackpackCargo"]];
-publicVariableServer "PVDZE_obj_getlocalVars";
-
-PVDZE_localObjVarsResult = nil;
-waitUntil {sleep 1; !isNil "PVDZE_localObjVarsResult"};
-*/
 server_getLocalObjVars = {
 	private ["_player","_obj","_objectID","_objectUID","_weapons","_magazines","_backpacks"];
 
