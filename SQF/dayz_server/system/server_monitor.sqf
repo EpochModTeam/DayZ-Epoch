@@ -143,17 +143,23 @@ if (isServer and isNil "sm_done") then {
 			clearMagazineCargoGlobal  _object;
 			// _object setVehicleAmmo DZE_vehicleAmmo;
 			
+			_object setdir _dir;
+			_object setposATL _pos;
+			_object setDamage _damage;
+			
 			if ((typeOf _object) in dayz_allowedObjects) then {
-				_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
+				if (DZE_GodModeBase) then {
+					_object addEventHandler ["HandleDamage", {false}];
+					_object setDamage 0;
+				} else {
+					_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
+				};
 				// Test disabling simulation server side on buildables only.
 				_object enableSimulation false;
 				// used for inplace upgrades and lock/unlock of safe
 				_object setVariable ["OEMPos", _pos, true];
+				
 			};
-			
-			_object setdir _dir;
-			_object setposATL _pos;
-			_object setDamage _damage;
 
 			if (count _intentory > 0) then {
 				if (_type in DZE_LockedStorage) then {

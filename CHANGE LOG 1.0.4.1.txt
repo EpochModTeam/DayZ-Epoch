@@ -1,3 +1,4 @@
+[NEW] Base Building Godmode is now included. Use DZE_GodModeBase = true; to enable it. (Disabled by Default) @Skaronator
 [NEW] Config based trader setup option that is more performant, however does not track inventory. DZE_ConfigTrader = true; and #include "\dayz_epoch_b\CfgServerTrader\cfgServerTrader.hpp" in description.ext @Fank @Skaronator @vbawol 
 
 [ADDED] Stacking of 10oz silver bars into briefcases, also traders now give this as change if return is 2-9 10oz silver bars. @vbawol
