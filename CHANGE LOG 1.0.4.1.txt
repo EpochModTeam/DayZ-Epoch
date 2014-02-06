@@ -32,6 +32,7 @@
 
 [REMOVED] Trade metals option removed from self actions as it should no longer be needed with new trader code. @vbawol
 
+[INFO] Re-added old trader code for backwards compatibility. @vbawol
 [INFO] Moved binaries to root of server files and wrote up basic install upgrade guide. @vbawol
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://bmrf.me/ for hosting our development server.
