@@ -1277,7 +1277,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={15361.736,112.05698,18519.205};
+			position[]={15350.896,112.05698,18522.543};
 			name="UnarmedAirVehicles";
 			text="Axles Airfield";
 			type="mil_dot";
