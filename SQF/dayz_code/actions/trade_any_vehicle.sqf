@@ -1,4 +1,4 @@
-private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
+private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_temp_keys","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -26,9 +26,9 @@ if(_buy_o_sell == "sell") then {
 };
 
 cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
-	 
+
 [1,1] call dayz_HungerThirst;
-// force animation 
+// force animation
 player playActionNow "Medic";
 
 r_interrupt = false;
@@ -36,7 +36,7 @@ _animState = animationState player;
 r_doLoop = true;
 _started = false;
 _finished = false;
-	
+
 while {r_doLoop} do {
 	_animState = animationState player;
 	_isMedic = ["medic",_animState] call fnc_inString;
@@ -54,7 +54,7 @@ while {r_doLoop} do {
 };
 r_doLoop = false;
 
-if (!_finished) exitWith { 
+if (!_finished) exitWith {
 	r_interrupt = false;
 	if (vehicle player == player) then {
 		[objNull, player, rSwitchMove,""] call RE;
@@ -68,7 +68,7 @@ if (_finished) then {
 
 	_canAfford = false;
 	if(_bos == 1) then {
-		
+
 		_distance = dayz_sellDistance_vehicle;
 		if (_part_in isKindOf "Air") then {
 			_distance = dayz_sellDistance_air;
@@ -83,11 +83,11 @@ if (_finished) then {
 		diag_log format["DEBUG vehicle sell count: %1", _count];
 
 	} else {
-			
+
 		//buy
 		_trade_total = [[_part_in,_qty_in]] call epoch_itemCost;
 		_total_currency = call epoch_totalCurrency;
-		_return_change = _total_currency - _trade_total; 
+		_return_change = _total_currency - _trade_total;
 		if (_return_change >= 0) then {
 			_canAfford = true;
 		};
@@ -107,10 +107,10 @@ if (_finished) then {
 			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_out,inTraderCity,_part_in,_qty_in];
 		};
 		publicVariableServer  "PVDZE_obj_Trade";
-	
+
 		//diag_log format["DEBUG Starting to wait for answer: %1", PVDZE_obj_Trade];
-		
-		if(_buy_o_sell == "buy") then {	
+
+		if(_buy_o_sell == "buy") then {
 
 			waitUntil {!isNil "dayzTradeResult"};
 
@@ -125,19 +125,19 @@ if (_finished) then {
 				_keyNumber = (floor(random 2500)) + 1;
 
 				// Combine to key (eg.ItemKeyYellow2494) classname
-				_keySelected = format[("ItemKey%1%2"),_keyColor,_keyNumber];	
+				_keySelected = format[("ItemKey%1%2"),_keyColor,_keyNumber];
 
 				_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
-					
+
 				_config = _keySelected;
 				_isOk = [player,_config] call BIS_fnc_invAdd;
-					
+
 				waitUntil {!isNil "_isOk"};
 
 				if (_isOk and _isKeyOK) then {
 
 					_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
-					if (_done) then {	
+					if (_done) then {
 
 						// spawn vehicle
 						_dir = round(random 360);
@@ -148,7 +148,7 @@ if (_finished) then {
 						} else {
 							_location = [(position player),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
 						};
-	
+
 						//place vehicle spawn marker (local)
 						_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
 
@@ -157,7 +157,7 @@ if (_finished) then {
 						//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
 						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 						publicVariableServer  "PVDZE_veh_Publish2";
-						
+
 						cutText [format[(localize "STR_EPOCH_ACTIONS_11"),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
 					};
 				} else {
@@ -168,7 +168,7 @@ if (_finished) then {
 				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
 		} else {
-			
+
 			//sell
 			_distance = dayz_sellDistance_vehicle;
 			if (_part_in isKindOf "Air") then {
@@ -177,7 +177,7 @@ if (_finished) then {
 			if (_part_in isKindOf "Ship") then {
 				_distance = dayz_sellDistance_boat;
 			};
-			
+
 			_objects = nearestObjects [(getPosATL player), [_part_in], _distance];
 
 			diag_log format["DEBUG vehicle sell objects: %1", _objects];
@@ -193,14 +193,14 @@ if (_finished) then {
 				_okToSell = true;
 
 				// count parts
-				_tires = 0; 
+				_tires = 0;
 
-				// total damage 
+				// total damage
 				_tireDmg = 0;
 
 				_damage = 0;
-				{					
-					if(["Wheel",_x,false] call fnc_inString) then {		
+				{
+					if(["Wheel",_x,false] call fnc_inString) then {
 						_damage = [_obj,_x] call object_getHit;
 						_tireDmg = _tireDmg + _damage;
 						_tires = _tires + 1;
@@ -214,8 +214,9 @@ if (_finished) then {
 					};
 				};
 
-				_objectID 	= _obj getVariable ["ObjectID","0"];
-				_objectUID	= _obj getVariable ["ObjectUID","0"];
+				_objectID			= _obj getVariable ["ObjectID","0"];
+				_objectUID			= _obj getVariable ["ObjectUID","0"];
+				_objectCharacterId	= _obj getVariable ["CharacterID","0"];
 
 				_notSetup = (_objectID == "0" && _objectUID == "0");
 
@@ -223,21 +224,30 @@ if (_finished) then {
 
 					if(_okToSell) then {
 
-						
-
 						//if(_objectID != "0" && _objectUID != "0") then {
-					
+
 						PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
 						publicVariableServer "PVDZE_obj_Delete";
 
-						deleteVehicle _obj; 
+						deleteVehicle _obj;
 
-						// payout 
+						// remove Key
+						_temp_keys = [];
+						_keyColor = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
+						{
+							if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _key_colors) then {
+								if (getNumber(configFile >> "CfgWeapons" >> _x >> "keyid") == _objectCharacterId) then {
+									[_activatingPlayer,_x] call BIS_fnc_invRemove;
+								};
+							};
+						} forEach (items _activatingPlayer);
+
+						// payout
 						_canAfford = [[[_part_out,_qty_out]],1] call epoch_returnChange;
-					
+
 						cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
-						
-							
+
+
 					} else {
 						cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
 					};
@@ -254,7 +264,7 @@ if (_finished) then {
 			cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 		} else {
 			cutText [format[(localize "str_epoch_player_185"),_textPartIn] , "PLAIN DOWN"];
-		};	
+		};
 	};
 };
 DZE_ActionInProgress = false;

@@ -1,6 +1,7 @@
 [NEW] Base Building Godmode is now included. Use DZE_GodModeBase = true; to enable it. (Disabled by Default) @Skaronator
 [NEW] Config based trader setup option that is more performant, however does not track inventory. DZE_ConfigTrader = true; and #include "\dayz_epoch_b\CfgServerTrader\cfgServerTrader.hpp" in description.ext @Fank @Skaronator @vbawol 
 
+[ADDED] Static build construction count will force the constructioncount to number set by DZE_StaticConstructionCount = # in init.sqf. @Fank
 [ADDED] Stacking of 10oz silver bars into briefcases, also traders now give this as change if return is 2-9 10oz silver bars. @vbawol
 [ADDED] Variable DZE_DamageBeforeMaint to control what damage level is needed for the maintain option to appear. @vbawol
 [ADDED] Keep safe/lockbox vars server side. This should help with performance. @maca134 @Skaronator
@@ -27,6 +28,7 @@
 [FIXED] DZE_MissionLootTable - Some things are missing. @vbawol @Skaronator
 [FIXED] General cleanup and fixes. @Fank @Skaronator @icomrade @vbawol 
 
+[CHANGED] Selling vehicle will now remove the key if you have it on your toolbelt. @Fank
 [CHANGED] R3F weight now in Kg for every language except english. @VeryBigBro
 [CHANGED] Increased trader prices for Armed vehicles and pipebombs. @vbawol
 [CHANGED] Added BAF_Merlin_DZE and MH60S_DZE to traders. @vbawol
