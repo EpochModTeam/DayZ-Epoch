@@ -3,7 +3,7 @@
 	Usage: [_obj] call player_unlockDoor;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_display","_obj","_objectCharacterID"];
+private ["_display","_obj","_objectCharacterID","_charID"];
 
 if(!isNil "DZE_DYN_UnlockDoorInprogress") exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
 
@@ -31,7 +31,12 @@ if(!isNull dayz_selectedDoor) then {
 	} else {
 	
 		// get object combination
-		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
+		_charID = _obj getVariable ["CharacterID","0"];
+		if ((typeName _charID) == "ARRAY") then {
+			_objectCharacterID = _charID select 0;
+		} else {
+			_objectCharacterID = _charID;
+		};
 
 		// Check combination
 		if (DZE_Lock_Door == _objectCharacterID) then {

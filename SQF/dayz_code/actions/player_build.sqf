@@ -2,7 +2,7 @@
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_objHupDiff","_needNear","_vehicle","_inVehicle","_requireplot","_objHDiff","_isLandFireDZ","_isTankTrap"];
+private ["_location","_dir","_classname","_charID","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_objHupDiff","_needNear","_vehicle","_inVehicle","_requireplot","_objHDiff","_isLandFireDZ","_isTankTrap"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_40") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -152,7 +152,12 @@ if(_IsNearPlot == 0) then {
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner 
-	_ownerID = _nearestPole getVariable["CharacterID","0"];
+	_charID = _nearestPole getVariable["CharacterID","0"];
+	if ((typeName _charID) == "ARRAY") then {
+		_ownerID = _charID select 0;
+	} else {
+		_ownerID = _charID;
+	};
 
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
@@ -477,7 +482,6 @@ if (_hasrequireditem) then {
 							_combination_2 = floor(random 10);
 							_combination_3 = floor(random 10);
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
-							dayz_combination = _combination;
 							if (_combination_1 == 100) then {
 								_combination_1_Display = "Red";
 							};
@@ -495,7 +499,6 @@ if (_hasrequireditem) then {
 							_combination_2 = floor(random 10);
 							_combination_3 = floor(random 10);
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
-							dayz_combination = _combination;
 							_combinationDisplay = _combination;
 						};
 						
@@ -505,28 +508,30 @@ if (_hasrequireditem) then {
 							_combination_3 = floor(random 10);
 							_combination_4 = floor(random 10);
 							_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
-							dayz_combination = _combination;
 							_combinationDisplay = _combination;
 						};
 					};
-
-					_tmpbuilt setVariable ["CharacterID",_combination,true];
+					dayz_combination = _combination;
+					_combi = [_combination,dayz_playerUID];
+					
+					_tmpbuilt setVariable ["CharacterID",_combi,true];
 					
 
-					PVDZE_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],_classname];
+					PVDZE_obj_Publish = [_combi,_tmpbuilt,[_dir,_location],_classname];
 					publicVariableServer "PVDZE_obj_Publish";
 
 					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5];
 					
 
 				} else {
-					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
+					_charID = [dayz_characterID,dayz_playerUID];
+					_tmpbuilt setVariable ["CharacterID",_charID,true];
 					
 					// fire?
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						PVDZE_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
+						PVDZE_obj_Publish = [_charID,_tmpbuilt,[_dir,_location],_classname];
 						publicVariableServer "PVDZE_obj_Publish";
 					};
 				};

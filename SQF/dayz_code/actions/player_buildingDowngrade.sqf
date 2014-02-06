@@ -35,8 +35,12 @@ if(_IsNearPlot == 0) then {
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner 
-	_ownerID = _nearestPole getVariable["CharacterID","0"];
-
+	_charID = _nearestPole getVariable["CharacterID","0"];
+	if ((typeName _charID) == "ARRAY") then {
+		_ownerID = _charID select 0;
+	} else {
+		_ownerID = _charID;
+	};
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
 	// check if friendly to owner
