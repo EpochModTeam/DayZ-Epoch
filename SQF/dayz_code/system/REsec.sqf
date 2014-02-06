@@ -27,7 +27,7 @@ private["_ofn","_nfn","_REMOVED_LIB","_TRACED_LIB"];
 
 #ifndef SKIP_REMOTEEXECUTIONSERVER
 []spawn{
-	while{(true)}do{
+	while {(1 == 1)} do {
 		private["_nfn"];
 		waitUntil{BIS_PathMPscriptCommandsCustom=="\ca\Modules\MP\data\scriptCommandsCustom\"};
 		_nfn="BIS_MPF_remoteExecutionServer"+str(round(random(100000)));
