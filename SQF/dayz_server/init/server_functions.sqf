@@ -911,9 +911,9 @@ server_getLocalObjVars = {
 	_objectID 	= _obj getVariable["ObjectID","0"];
 	_objectUID	= _obj getVariable["ObjectUID","0"];
 
-	_weapons = _obj getVariable ["WeaponCargo", false];
-	_magazines = _obj getVariable ["MagazineCargo", false];
-	_backpacks = _obj getVariable ["BackpackCargo", false];
+	_weapons = _obj getVariable ["WeaponCargo", []];
+	_magazines = _obj getVariable ["MagazineCargo", []];
+	_backpacks = _obj getVariable ["BackpackCargo", []];
 
 	PVDZE_localVarsResult = [_weapons,_magazines,_backpacks];
 	(owner _player) publicVariableClient "PVDZE_localVarsResult";
