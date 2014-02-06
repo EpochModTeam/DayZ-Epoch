@@ -29,8 +29,8 @@ Included Custom Addons
 --------------------------
 Included Custom Islands
 --------------------------
-* | Sauerland by Falconsan - http://www.s6computer.de/
-* | Napf Island by #momo# - http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta
+* Sauerland by Falconsan - http://www.s6computer.de/
+* Napf Island by #momo# - http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta
 * | MBG Killhouses http://www.armaholic.com/page.php?id=15180
 * | MBG Buildings 3 - European Theatre http://www.armaholic.com/page.php?id=14828
 * | MBG Generic African Buildings http://www.armaholic.com/page.php?id=17817
