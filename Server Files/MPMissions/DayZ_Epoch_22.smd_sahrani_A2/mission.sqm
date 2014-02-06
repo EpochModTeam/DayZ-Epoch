@@ -13,7 +13,6 @@ class Mission
 		"ca_modules_functions",
 		"glt_m300t",
 		"csj_gyroac",
-		"pook_h13",
 		"map_eu",
 		"jetskiyanahuiaddon"
 	};
@@ -1169,7 +1168,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=17;
+		items=20;
 		class Item0
 		{
 			position[]={10442.41,86.282227,10438.262};
@@ -1292,10 +1291,34 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
+		class Item17
+		{
+			position[]={13243.119,25.951698,11188.961};
+			name="BlackMarket";
+			text="Black Market Vendor";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item18
+		{
+			position[]={12202.001,0.45867854,9895.2207};
+			name="BlackMarket_1";
+			text="Black Market Vendor";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item19
+		{
+			position[]={11162.368,259.74371,8631.5537};
+			name="BlackMarket_1_1";
+			text="Black Market Vendor";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
 	};
 	class Sensors
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={12555.938,41.838242,8357.666};
@@ -1343,6 +1366,21 @@ class Mission
 			expCond="(player distance zone1) < 100;";
 			expActiv="TitleText[""Now entering trader city Ixel"",""PLAIN DOWN""]; canbuild = false;";
 			expDesactiv="TitleText[""Now leaving trader city Ixel"",""PLAIN DOWN""]; canbuild = true;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={13241.491,25.951698,11188.463};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="bmarket";
+			expCond="(player distance bmarket) < 50;";
+			expActiv="TitleText[""Now entering Black Market"",""PLAIN DOWN""]; canbuild = false;";
+			expDesactiv="TitleText[""Now leaving Black Market"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 			};
