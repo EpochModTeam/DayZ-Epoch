@@ -101,20 +101,6 @@ array_reduceSize = {
 	_array
 };
 
-vehicle_handleServerKilled = {
-	private["_unit","_killer"];
-	_unit = _this select 0;
-	_killer = _this select 1;
-		
-	[_unit, "killed"] call server_updateObject;
-	
-	_unit removeAllMPEventHandlers "MPKilled";
-	_unit removeAllEventHandlers "Killed";
-	_unit removeAllEventHandlers "HandleDamage";
-	_unit removeAllEventHandlers "GetIn";
-	_unit removeAllEventHandlers "GetOut";
-};
-
 object_handleServerKilled = {
 	private["_unit","_objectID","_objectUID","_killer"];
 	_unit = _this select 0;
