@@ -10,6 +10,7 @@
 [ADDED] Added to heli crash code, Blackhawk and Seahawk Wrecks by [GLT]Myke http://www.armaholic.com/page.php?id=10670
 [ADDED] Added following Config Classes: M113_UN_EP1_DZ M113_UN_EP1_DZE M113_TK_EP1_DZ M113_TK_EP1_DZE BTR90_DZ BTR90_DZE BTR90_HQ_DZ BTR90_HQ_DZE LAV25_DZ LAV25_DZE LAV25_HQ_DZ LAV25_HQ_DZE @Fank
 
+[FIXED] Fix init errors, improve antihack. @icomrade
 [FIXED] Add missing sensor for aircraft dealer on Napf. @JoSchaap
 [FIXED] Traders now give ItemTinBar in exchange for TrashJackDaniels. @vbawol
 [FIXED] M107 zeroing was stuck at 500m now set to default settings. @vbawol 
