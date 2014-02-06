@@ -16,8 +16,8 @@ TraderDialogLoadItemList = {
 	TraderItemList = -1;
 	_index = _this select 0;
 
-	if (_index < 0 or TraderCurrentCatIndex == _index) exitWith {};
-	TraderCurrentCatIndex = _index;
+	if (_index < 0) exitWith {};
+	//TraderCurrentCatIndex = _index;
 
 	_trader_id = TraderCatList select _index;
 	_activatingPlayer = player;
