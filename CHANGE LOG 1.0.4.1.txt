@@ -28,6 +28,7 @@
 [FIXED] DZE_MissionLootTable - Some things are missing. @vbawol @Skaronator
 [FIXED] General cleanup and fixes. @Fank @Skaronator @icomrade @vbawol 
 
+[CHANGED] Selling vehicle will now remove the key if you have it on your toolbelt. @Fank
 [CHANGED] R3F weight now in Kg for every language except english. @VeryBigBro
 [CHANGED] Increased trader prices for Armed vehicles and pipebombs. @vbawol
 [CHANGED] Added BAF_Merlin_DZE and MH60S_DZE to traders. @vbawol
