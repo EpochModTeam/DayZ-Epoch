@@ -77,10 +77,6 @@ if (!isDedicated) then {
 	
 	//
 	dog_findTargetAgent = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
-	
-	// Vehicle damage fix
-	vehicle_handleDamage    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleDamage.sqf";
-	vehicle_handleKilled    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
 
 	//actions
 	player_countmagazines =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
