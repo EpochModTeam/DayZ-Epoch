@@ -27,7 +27,7 @@ _isOk = true;
 _proceed = false;
 _objType = typeOf _obj;
 
-// Chance to break tools 
+// Chance to break tools
 _isDestructable = _obj isKindOf "BuiltItems";
 _isWreck = _objType in DZE_isWreck;
 _isRemovable = _objType in DZE_isRemovable;
@@ -36,8 +36,13 @@ _isMine = _objType in ["Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gol
 _isModular = _obj isKindOf "ModularItems";
 
 _limit = 3;
-if(isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
-	_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
+if (DZE_StaticConstructionCount > 0) then {
+	_limit = DZE_StaticConstructionCount;
+}
+else {
+	if (isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
+		_limit = getNumber(configFile >> "_objType" >> _classname >> "constructioncount");
+	};
 };
 
 _findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 30];
@@ -50,12 +55,12 @@ if(_IsNearPlot >= 1) then {
 
 	_nearestPole = _findNearestPole select 0;
 
-	// Find owner 
+	// Find owner
 	_ownerID = _nearestPole getVariable["CharacterID","0"];
 
 	// check if friendly to owner
 	if(dayz_characterID != _ownerID) then {
-		
+
 		_friendlies		= player getVariable ["friendlyTo",[]];
 		// check if friendly to owner
 		if(!(_ownerID in _friendlies)) then {
@@ -91,7 +96,7 @@ while {_isOk} do {
 	player playActionNow "Medic";
 	_dis=20;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	r_interrupt = false;
 	_animState = animationState player;
 	r_doLoop = true;
@@ -113,9 +118,9 @@ while {_isOk} do {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		
+
 		sleep 0.1;
-		
+
 	};
 
 	if(!_finished) exitWith {
@@ -143,7 +148,7 @@ while {_isOk} do {
 		_isOk = false;
 		_proceed = true;
 	};
-	
+
 };
 
 
@@ -161,21 +166,21 @@ if(_brokenTool) then {
 
 // Remove only if player waited
 if (_proceed) then {
-	
+
 	// Double check that object is not null
 	if(!isNull(_obj)) then {
-		
+
 		_ipos = getPosATL _obj;
 
 		deleteVehicle _obj;
-		
+
 		if(!_isWreck) then {
 			PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
 			publicVariableServer "PVDZE_obj_Delete";
 		};
 
 		cutText [format[(localize "str_epoch_player_165"),_nameVehicle], "PLAIN DOWN"];
-		
+
 		_preventRefund = false;
 
 		_selectedRemoveOutput = [];
@@ -189,10 +194,10 @@ if (_proceed) then {
 			} else {
 				_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
 				_preventRefund = (_objectID == "0" && _objectUID == "0");
-			
+
 			};
 		};
-		
+
 		if((count _selectedRemoveOutput) <= 0) then {
 			cutText [(localize "str_epoch_player_90"), "PLAIN DOWN"];
 		};
@@ -220,7 +225,7 @@ if (_proceed) then {
 				if (typeName _countOut == "ARRAY") then {
 					_countOut = round((random (_countOut select 1)) + (_countOut select 0));
 				};
-				_item addMagazineCargoGlobal [_itemOut,_countOut];				
+				_item addMagazineCargoGlobal [_itemOut,_countOut];
 			} forEach _selectedRemoveOutput;
 
 			_item setposATL _iPos;
