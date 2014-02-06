@@ -10,7 +10,7 @@ waitUntil {vehicle player == player};
 	private ["_playerName","_playerUID"];
 	_playerName = name player;
 	_playerUID = getPlayerUID player;
-	while {true} do {
+	while {1 == 1} do {
 		if (typeName player != "OBJECT") then {
 			PVDZE_atp = format["WARNING typename error for player UID#%1", _playerUID];
 			publicVariableServer "PVDZE_atp";
@@ -22,8 +22,20 @@ waitUntil {vehicle player == player};
 	endMission "LOSER";
 };
 
+[] spawn {
+	_playerName = name player;
+	_playerUID = getPlayerUID player;
+	while {true} do {
+		sleep 5;
+	};
+	PVDZE_atp = format["WARNING PLAYER WITH NAME (%1) and UID# (%2) HAS CHANGED THE TRUE VALUE TO FALSE", _playerName, _playerUID];
+	publicVariableServer "PVDZE_atp";
+	endMission "LOSER";
+	sleep 10;
+};
+
 _al1veOnce = false;
-while {true} do {
+while {1 == 1} do {
 	_debug = getMarkerpos "respawn_west";
 	_lastpos = getPosATL (vehicle player);
 	_lastheight = (ATLtoASL _lastpos) select 2;
