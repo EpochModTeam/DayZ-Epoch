@@ -911,21 +911,14 @@ server_getLocalObjVars = {
 	_objectID 	= _obj getVariable["ObjectID","0"];
 	_objectUID	= _obj getVariable["ObjectUID","0"];
 
-	_vars = _this select 2;
-	
-	if (typeName _vars != "ARRAY") then {
-		_vars = [_vars];
-	};
+	_weapons = _obj getVariable ["WeaponCargo", false];
+	_magazines = _obj getVariable ["MagazineCargo", false];
+	_backpacks = _obj getVariable ["BackpackCargo", false];
 
-	_vals = [];
-	{
-		_vals = _vals + [_obj getVariable [_x, false]];
-	} forEach _vars;
-
-	PVDZE_localVarsResult = _vals;
+	PVDZE_localVarsResult = [_weapons,_magazines,_backpacks];
 	(owner _player) publicVariableClient "PVDZE_localVarsResult";
 	
-	diag_log format["SAFE UNLOCKED: ID:%1 UID:%2 BY %3", _objectID, _objectUID, (getPlayerUID _player)];
+	diag_log format["SAFE UNLOCKED: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), (getPlayerUID _player)];
 };
 
 server_setLocalObjVars = {
@@ -943,16 +936,10 @@ server_setLocalObjVars = {
 	_backpacks = 	getBackpackCargo _obj;
 	
 	deleteVehicle _obj;
-	
-	if (count _weapons > 0) then {
-		_holder setVariable ["WeaponCargo", _weapons];
-	};
-	if (count _magazines > 0) then {
-		_holder setVariable ["MagazineCargo", _magazines];
-	};
-	if (count _backpacks > 0) then {
-		_holder setVariable ["BackpackCargo", _backpacks];
-	};
 
-	diag_log format["SAFE LOCKED: ID:%1 UID:%2 BY %3", _objectID, _objectUID, (getPlayerUID _player)];
+	_holder setVariable ["WeaponCargo", _weapons];
+	_holder setVariable ["MagazineCargo", _magazines];
+	_holder setVariable ["BackpackCargo", _backpacks];
+	
+	diag_log format["SAFE LOCKED: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), (getPlayerUID _player)];
 };
