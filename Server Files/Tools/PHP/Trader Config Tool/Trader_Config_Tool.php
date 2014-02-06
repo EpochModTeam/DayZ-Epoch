@@ -442,7 +442,7 @@ if(isset($_POST['add_item']) && !empty($_POST['add_item']) && isset($_GET['tid']
 // Allow dump of all vehicles in the database to use for dynamic_vehicle.sqf
 if(isset($_GET['show_dvs'])){
 	
-	if ($stmt = $mysqli->prepare("SELECT `item` FROM `traders_data` WHERE `afile`='trade_any_vehicle' OR `afile`='trade_any_boat' GROUP BY `item` ORDER BY `item` ASC")) {
+	if ($stmt = $mysqli->prepare("SELECT `item` FROM `traders_data` WHERE `afile`='trade_any_vehicle' OR `afile`='trade_any_vehicle_free' OR `afile`='trade_any_boat' GROUP BY `item` ORDER BY `item` ASC")) {
 
 		$stmt->execute();
 		$stmt->bind_result($item);
