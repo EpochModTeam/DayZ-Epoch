@@ -56,7 +56,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 		case "fire":
 		{
 			_isNear = {inflamed _x} count (getPosATL player nearObjects _distance);
-			if(_isNear == 0) then {  
+			if(_isNear == 0) then {
 				_abort = true;
 				_reason = "fire";
 			};
@@ -64,7 +64,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 		case "workshop":
 		{
 			_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
-			if(_isNear == 0) then {  
+			if(_isNear == 0) then {
 				_abort = true;
 				_reason = "workshop";
 			};
@@ -72,7 +72,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 		case "fueltank":
 		{
 			_isNear = count (nearestObjects [player, dayz_fuelsources, _distance]);
-			if(_isNear == 0) then {  
+			if(_isNear == 0) then {
 				_abort = true;
 				_reason = "fuel tank";
 				_distance = 30;
@@ -147,11 +147,11 @@ if(_IsNearPlot == 0) then {
 
 } else {
 	// Since there are plots nearby we check for ownership and then for friend status
-	
+
 	// check nearby plots ownership and then for friend status
 	_nearestPole = _findNearestPole select 0;
 
-	// Find owner 
+	// Find owner
 	_ownerID = _nearestPole getVariable["CharacterID","0"];
 
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
@@ -160,7 +160,7 @@ if(_IsNearPlot == 0) then {
 	if(dayz_characterID == _ownerID) then {  //Keep ownership
 		// owner can build anything within his plot except other plots
 		if(!_isPole) then {
-			_canBuildOnPlot = true;		
+			_canBuildOnPlot = true;
 		};
 
 	} else {
@@ -204,21 +204,21 @@ if (_hasrequireditem) then {
 	};
 
 	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-	
+
 	_object attachTo [player,_offset];
-	
+
 	_position = getPosATL _object;
 
 	cutText [(localize "str_epoch_player_45"), "PLAIN DOWN"];
 
 	_objHDiff = 0;
-	
+
 	while {_isOk} do {
-		
+
 		_zheightchanged = false;
 		_zheightdirection = "";
 		_rotate = false;
-	
+
 		if (DZE_Q) then {
 			DZE_Q = false;
 			_zheightdirection = "up";
@@ -227,7 +227,7 @@ if (_hasrequireditem) then {
 		if (DZE_Z) then {
 			DZE_Z = false;
 			_zheightdirection = "down";
-			_zheightchanged = true;	
+			_zheightchanged = true;
 		};
 		if (DZE_Q_alt) then {
 			DZE_Q_alt = false;
@@ -259,7 +259,7 @@ if (_hasrequireditem) then {
 			DZE_6 = false;
 			_dir = 0;
 		};
-		
+
 		if(_rotate) then {
 			_object setDir _dir;
 			_object setPosATL _position;
@@ -297,7 +297,7 @@ if (_hasrequireditem) then {
 				_position set [2,((_position select 2)-0.01)];
 				_objHDiff = _objHDiff - 0.01;
 			};
-			
+
 			_object setDir (getDir _object);
 
 			if((_isAllowedUnderGround == 0) and ((_position select 2) < 0)) then {
@@ -305,13 +305,13 @@ if (_hasrequireditem) then {
 			};
 
 			_object setPosATL _position;
-			
+
 			//diag_log format["DEBUG Change BUILDING POS: %1", _position];
-			
+
 			_object attachTo [player];
-			
+
 		};
-		
+
 		sleep 0.5;
 
 		_location2 = getPosATL player;
@@ -324,19 +324,19 @@ if (_hasrequireditem) then {
 			//diag_log format["DEBUG BUILDING POS: %1", _position];
 			deleteVehicle _object;
 		};
-		
+
 		if(_location1 distance _location2 > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "You've moved to far away from where you started building (within 5 meters)"; 
+			_reason = "You've moved to far away from where you started building (within 5 meters)";
 			detach _object;
 			deleteVehicle _object;
 		};
-		
+
 		if(abs(_objHDiff) > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cannot move up or down more than 5 meters"; 
+			_reason = "Cannot move up or down more than 5 meters";
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -371,49 +371,54 @@ if (_hasrequireditem) then {
 
 		_classname = _classnametmp;
 
-		// Start Build 
+		// Start Build
 		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 
 		_tmpbuilt setdir _dir;
-	
+
 		// Get position based on object
 		_location = _position;
 
 		if((_isAllowedUnderGround == 0) and ((_location select 2) < 0)) then {
 			_location set [2,0];
 		};
-	
+
 		_tmpbuilt setPosATL _location;
 
-		
+
 		cutText [format[(localize "str_epoch_player_138"),_text], "PLAIN DOWN"];
-		
+
 		_limit = 3;
 
-		if(isNumber (configFile >> "CfgVehicles" >> _classname >> "constructioncount")) then {
-			_limit = getNumber(configFile >> "CfgVehicles" >> _classname >> "constructioncount");
+		if (DZE_StaticConstructionCount > 0) then {
+			_limit = DZE_StaticConstructionCount;
+		}
+		else {
+			if (isNumber (configFile >> "CfgVehicles" >> _classname >> "constructioncount")) then {
+				_limit = getNumber(configFile >> "CfgVehicles" >> _classname >> "constructioncount");
+			};
 		};
 
 		_isOk = true;
 		_proceed = false;
 		_counter = 0;
-		
+
 		while {_isOk} do {
 
 			[10,10] call dayz_HungerThirst;
 			player playActionNow "Medic";
-			
+
 			_dis=20;
 			_sfx = "repair";
-			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 			[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 			r_interrupt = false;
 			_animState = animationState player;
 			r_doLoop = true;
 			_started = false;
 			_finished = false;
-	
+
 			while {r_doLoop} do {
 				_animState = animationState player;
 				_isMedic = ["medic",_animState] call fnc_inString;
@@ -450,16 +455,16 @@ if (_hasrequireditem) then {
 				_isOk = false;
 				_proceed = true;
 			};
-	
+
 		};
 
 		if (_proceed) then {
-	
+
 			_num_removed = ([player,_item] call BIS_fnc_invRemove);
 			if(_num_removed == 1) then {
 
 				cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
-				
+
 				if (_isPole) then {
 					[] spawn player_plotPreview;
 				};
@@ -467,11 +472,11 @@ if (_hasrequireditem) then {
 				_tmpbuilt setVariable ["OEMPos",_location,true];
 
 				if(_lockable > 1) then {
-					
+
 					_combinationDisplay = "";
 
 					switch (_lockable) do {
-						
+
 						case 2: { // 2 lockbox
 							_combination_1 = (floor(random 3)) + 100; // 100=red,101=green,102=blue
 							_combination_2 = floor(random 10);
@@ -489,7 +494,7 @@ if (_hasrequireditem) then {
 							};
 							_combinationDisplay = format["%1%2%3",_combination_1_Display,_combination_2,_combination_3];
 						};
-						
+
 						case 3: { // 3 combolock
 							_combination_1 = floor(random 10);
 							_combination_2 = floor(random 10);
@@ -498,7 +503,7 @@ if (_hasrequireditem) then {
 							dayz_combination = _combination;
 							_combinationDisplay = _combination;
 						};
-						
+
 						case 4: { // 4 safe
 							_combination_1 = floor(random 10);
 							_combination_2 = floor(random 10);
@@ -511,17 +516,17 @@ if (_hasrequireditem) then {
 					};
 
 					_tmpbuilt setVariable ["CharacterID",_combination,true];
-					
+
 
 					PVDZE_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],_classname];
 					publicVariableServer "PVDZE_obj_Publish";
 
 					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5];
-					
+
 
 				} else {
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
-					
+
 					// fire?
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then {
 						_tmpbuilt spawn player_fireMonitor;
