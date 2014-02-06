@@ -381,7 +381,8 @@ DZE_HeliAllowTowFrom = [
 	"CH_47F_EP1_DZE",
 	"CH_47F_EP1_DZ",
 	"CH_47F_BAF",
-	"CH_47F_EP1"
+	"CH_47F_EP1",
+	"BAF_Merlin_DZE"
 ];
 
 DZE_HeliAllowToTow = [
