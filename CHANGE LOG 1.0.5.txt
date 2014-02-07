@@ -1,0 +1,4 @@
+
+
+[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Special thanks to http://bmrf.me/ for hosting our development server.
