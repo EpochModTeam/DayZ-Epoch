@@ -1168,7 +1168,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=20;
+		items=18;
 		class Item0
 		{
 			position[]={10442.41,86.282227,10438.262};
@@ -1295,22 +1295,6 @@ class Mission
 		{
 			position[]={13243.119,25.951698,11188.961};
 			name="BlackMarket";
-			text="Black Market Vendor";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item18
-		{
-			position[]={12202.001,0.45867854,9895.2207};
-			name="BlackMarket_1";
-			text="Black Market Vendor";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item19
-		{
-			position[]={11162.368,259.74371,8631.5537};
-			name="BlackMarket_1_1";
 			text="Black Market Vendor";
 			type="mil_dot";
 			colorName="ColorBlack";
