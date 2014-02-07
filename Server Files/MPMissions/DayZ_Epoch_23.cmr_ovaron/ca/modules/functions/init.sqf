@@ -1,1 +1,1 @@
-#include "\z\addons\dayz_code\system\CA\init.sqf"
+#include "\z\addons\dayz_code\system\ca\functions\init.sqf"
