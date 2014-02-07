@@ -22,7 +22,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		dayzVersion = "1.0.4";
+		dayzVersion = "1.0.4.1";
 		requiredAddons[] = {};
 	};
 };
@@ -53,7 +53,7 @@ class CfgSFX {
 		DestrMine1[] = {"\ca\BUILDINGS\sound\building2_destroy", 3.16228, 1, 150, 1, 60, 120, 240}; 
 		DestrMine2[] = {"\dayz_sfx\effects\vein_wreck.ogg", 5, 1, 150, 1, 60, 120, 240}; 
 		empty[] = {"", 0, 0, 0, 0, 1, 5, 20}; 
-	}
+	};
 };
 
 #include "CfgSounds.hpp"
