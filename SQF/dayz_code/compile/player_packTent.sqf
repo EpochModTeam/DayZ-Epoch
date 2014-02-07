@@ -63,10 +63,12 @@ if(!isNull _obj and alive _obj) then {
 	_backpacks = 	getBackpackCargo _obj;
 
 	deleteVehicle _obj;
-	PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
-	publicVariableServer "PVDZE_obj_Delete";
+	
 	if (isServer) then {
 		PVDZE_obj_Delete call server_deleteObj;
+	} else {
+		PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
+		publicVariableServer "PVDZE_obj_Delete";
 	};
 	
 	//Add weapons
