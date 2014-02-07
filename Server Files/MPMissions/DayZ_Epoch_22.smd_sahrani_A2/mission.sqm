@@ -14,7 +14,8 @@ class Mission
 		"glt_m300t",
 		"csj_gyroac",
 		"map_eu",
-		"jetskiyanahuiaddon"
+		"jetskiyanahuiaddon",
+		"pook_h13"
 	};
 	addOnsAuto[]=
 	{
