@@ -27,7 +27,7 @@ menu_GUE_Commander = [
 // General Store
 menu_Damsel3 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemTinBar","TrashJackDaniels"",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Weapons neutral
@@ -81,7 +81,7 @@ menu_GUE_Villager3 = [
 // General Store 2
 menu_CIV_EuroWoman01_EP1 = [
 	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
-	[["ItemTinBar","TrashJackDaniels"",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"friendly"
 ];
 // Medical Supplies
@@ -99,7 +99,7 @@ menu_RUS_Commander = [
 // General Store 3 
 menu_Damsel5 = [
 	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
-	[["ItemTinBar","TrashJackDaniels"",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // West Wholesaler

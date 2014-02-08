@@ -27,7 +27,7 @@ menu_CZ_Special_Forces_MG_DES_EP1 = [
 // General Store P
 menu_Damsel5 = [
 	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemTinBar","TrashJackDaniels"",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Weapons neutral 1P
@@ -87,7 +87,7 @@ menu_Rita_Ensler_EP1 = [
 // Neutral General Store 1P
 menu_RU_Farmwife1 = [
 	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
-	[["ItemTinBar","TrashJackDaniels"",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // Medical Supplies P
@@ -117,7 +117,7 @@ menu_UN_CDF_Soldier_AAT_EP1 = [
 // General Store 2P
 menu_ValentinaVictim = [
 	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
-	[["ItemTinBar","TrashJackDaniels"",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
+	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Wiskey Bottle","Copper Bar",101]],
 	"neutral"
 ];
 // North Wholesaler P
