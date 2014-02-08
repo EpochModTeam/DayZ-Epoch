@@ -30,6 +30,7 @@ class BTR90_HQ_DZ: BTR90_HQ {
 	driverCanSee = 2+16+32;
 
 	crew = "";
+	transportSoldier = 7;
 	typicalCargo[] = {};
 	class TransportMagazines{};
 
@@ -45,7 +46,7 @@ class BTR90_HQ_DZ: BTR90_HQ {
 class BTR90_DZE: BTR90_DZ {
 	displayName = "BTR-90 AL";
 	class Turrets: Turrets {
-		class MainTurret : MainTurret {
+		class MainTurret: MainTurret {
 			magazines[] = {};
 		};
 	};
@@ -53,7 +54,7 @@ class BTR90_DZE: BTR90_DZ {
 class BTR90_HQ_DZE: BTR90_HQ_DZ {
 	displayName = "BTR-90 (HQ) AL";
 	class Turrets: Turrets {
-		class MainTurret : MainTurret {
+		class MainTurret: MainTurret {
 			magazines[] = {};
 		};
 	};
