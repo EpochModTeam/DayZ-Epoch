@@ -709,6 +709,7 @@ if(!isDedicated) then {
 	DZE_FreshSpawn = false;
 
 	DZE_myHaloVehicle = objNull;
+	dayz_myLiftVehicle = objNull;
 
 	DZE_Friends = [];
 
