@@ -150,7 +150,6 @@ if (isServer and isNil "sm_done") then {
 			if ((typeOf _object) in dayz_allowedObjects) then {
 				if (DZE_GodModeBase) then {
 					_object addEventHandler ["HandleDamage", {false}];
-					_object setDamage 0;
 				} else {
 					_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
 				};
