@@ -212,6 +212,7 @@ dayz_resetSelfActions = {
 	s_player_removeflare = 	-1;
 	s_player_painkiller =	-1;
 	s_player_studybody = 	-1;
+	s_player_tamedog =		-1;
 	s_player_madsci_crtl =	-1;
 	s_player_parts_crtl =	-1;
 	s_build_Sandbag1_DZ = 	-1;
