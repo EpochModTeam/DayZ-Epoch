@@ -1,4 +1,4 @@
-
+[FIXED] Fix server startup issues when using CA folder fix with some A2 and A2 free installs. @icomrade
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
-[INFO] Special thanks to http://bmrf.me/ for hosting our development server.
+[INFO] Special thanks to http://verthosting.com for hosting our development server.
