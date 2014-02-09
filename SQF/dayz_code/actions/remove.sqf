@@ -41,7 +41,7 @@ if (DZE_StaticConstructionCount > 0) then {
 }
 else {
 	if (isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
-		_limit = getNumber(configFile >> "_objType" >> _classname >> "constructioncount");
+		_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
 	};
 };
 
