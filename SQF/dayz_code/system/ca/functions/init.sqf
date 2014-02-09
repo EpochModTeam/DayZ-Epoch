@@ -92,7 +92,12 @@ for "_t" from 0 to 2 do {
 private ["_test", "_test2"];
 _test = (_this select 0) setPos (position (_this select 0)); if (isnil "_test") then {_test = false};
 _test2 = (_this select 0) playMove ""; if (isnil "_test2") then {_test2 = false};
-(_test || _test2) call (compile (preprocessFileLineNumbers "ca\modules\functions\misc\fn_initCounter.sqf"));
+_testvar = getText (configFile >> "CfgMissions" >> "Missions" >> "SP_BearRising" >> "directory");
+if (_testvar != "") then {
+	(_test || _test2) call (compile (preprocessFileLineNumbers "\z\addons\dayz_code\system\ca\functions\fn_initCounter.sqf"));
+} else { // Player has A2 Free
+	if (_test || _test2) then {0 call (compile (preprocessFileLineNumbers "ca\modules\functions\misc\fn_initCounter.sqf"))};
+};
 
 //--------------------------------------------------------------------------------------------------------
 //--- INIT COMPLETE --------------------------------------------------------------------------------------
