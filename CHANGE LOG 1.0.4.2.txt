@@ -1,4 +1,5 @@
 [FIXED] Fix server startup issues when using "CA folder fix" on some A2 and A2 free installs. @icomrade
+[FIXED] Fixed error in expression when removing buildings. @Fank
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
