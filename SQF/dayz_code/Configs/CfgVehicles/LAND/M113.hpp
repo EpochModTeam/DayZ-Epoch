@@ -46,7 +46,7 @@ class M113_TK_EP1_DZ: M113_TK_EP1 {
 class M113_UN_EP1_DZE: M113_UN_EP1_DZ {
 	displayName = "M113 AL";
 	class Turrets: Turrets {
-		class MainTurret : MainTurret {
+		class MainTurret: MainTurret {
 			magazines[] = {};
 		};
 	};
@@ -54,7 +54,7 @@ class M113_UN_EP1_DZE: M113_UN_EP1_DZ {
 class M113_TK_EP1_DZE: M113_TK_EP1_DZ {
 	displayName = "M113 AL";
 	class Turrets: Turrets {
-		class MainTurret : MainTurret {
+		class MainTurret: MainTurret {
 			magazines[] = {};
 		};
 	};

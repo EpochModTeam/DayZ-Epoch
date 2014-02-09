@@ -36,8 +36,11 @@ if (_count == 0) exitWith {
 
 _requirements = [];
 switch true do {
+	case (_count <= 10):  {_requirements = [["ItemGoldBar10oz",1]]};
 	case (_count <= 20):  {_requirements = [["ItemGoldBar10oz",2]]};
+	case (_count <= 35):  {_requirements = [["ItemGoldBar10oz",3]]};
 	case (_count <= 50):  {_requirements = [["ItemGoldBar10oz",4]]};
+	case (_count <= 75):  {_requirements = [["ItemGoldBar10oz",6]]};
 	case (_count <= 100): {_requirements = [["ItemBriefcase100oz",1]]};
 	case (_count <= 175): {_requirements = [["ItemBriefcase100oz",2]]};
 	case (_count <= 250): {_requirements = [["ItemBriefcase100oz",3]]};

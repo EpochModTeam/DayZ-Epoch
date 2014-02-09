@@ -16,6 +16,7 @@ class ItemMixOil : CA_Magazine {
 			requiretools[] = {};
 			output[] = {{"ItemJerryMixed",1}};
 			input[] = {{"ItemMixOil",1},{"ItemJerrycan",1}};
+			inputstrict = true;
 		};
 	};
 };
