@@ -1,8 +1,9 @@
 [ADDED] BTR90 HQ ride in back option. @Fank
 
+[FIXED] Completed trade counter was incorrectly returning output count instead of actual number of trades. @vbawol 
 [FIXED] Incremental water bottle had a typo in the picture path. fixes: https://github.com/vbawol/DayZ-Epoch/issues/1084 vbawol@
 [FIXED] second attempt at fixing <NULL> kill messages from vehicles. @icomrade
-[FIXED] remove setdamage 0 on godmode base objects so they can be maintained. @vbawol
+[FIXED] remove setdamage 0 on godmode/indestructible base objects so they can be maintained. @vbawol
 [FIXED] Fix server startup issues when using "CA folder fix" on some A2 and A2 free installs. @icomrade
 [FIXED] Fixed error in expression when removing buildings. @Fank
 [FIXED] Was possible to fill a mixed gas with an empty jerry can. @Fank
