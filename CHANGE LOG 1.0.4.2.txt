@@ -1,5 +1,12 @@
+[ADDED] BTR90 HQ ride in back option. @Fank
+
+[FIXED] second attempt at fixing <NULL> kill messages from vehicles. @icomrade
+[FIXED] remove setdamage 0 on godmode base objects so they can be maintained. @vbawol
 [FIXED] Fix server startup issues when using "CA folder fix" on some A2 and A2 free installs. @icomrade
 [FIXED] Fixed error in expression when removing buildings. @Fank
+[FIXED] Was possible to fill a mixed gas with an empty jerry can. @Fank
+[FIXED] Fixed undefined variables s_player_tamedog and dayz_myLiftVehicle. @Fank @vbawol
+[FIXED] Typo in server_traders.sqf for Napf, Sauerland, and panthera. @vbawol
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
