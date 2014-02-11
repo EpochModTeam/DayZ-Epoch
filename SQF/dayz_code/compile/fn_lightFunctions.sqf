@@ -1,14 +1,13 @@
 /*
 	DayZ Epoch Lighting System - Light Functions
-	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com or vbawol@veteranbastards.com.
+	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com.
 */
-axe_returnStreetLights={
-private["_lights","_objName","_rng","_nrstGen","_rndLights","_sleeptime"];
-_rng = _this select 0;
-_nrstGen = _this select 1;
-_rndLights = _this select 2;
+axe_NoStreetLights={//For testing - Need to see brightness of house lights
+private["_lights","_rng","_target","_objName"];
+_target = _this select 0;
+_rng = _this select 1;
+
 _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_sidl_3.p3d","lampa_sidl_2.p3d","lampa_sidl.p3d","powlines_concl.p3d","powlines_woodl.p3d"];
-axe_streetLamps=[];
 
 	{
 		if("" != typeOf _x) then {
@@ -18,40 +17,16 @@ axe_streetLamps=[];
 				_objName = _x call DZE_getModelName;
 
 				if (_objName in _lights) then {
-					if(_rndLights<random 100)then{
-						if(_rndLights/3>random 100)then{//Reduce chance more due to speed of script
-						
-							for "_s" from 1 to 8 do {
-								if(_s%2==0)then{
-								_x switchlight "off";
-								
-								}else{
-								_x switchlight "on";
-								;
-								};
-							_sleeptime=(random 100)/100;
-							sleep _sleeptime;
-							};
-							_x switchlight "off";
-							//axeDiagLog = format["FN:SL NEW OFF:%1",_x];
-							//publicVariable "axeDiagLog";
-						}else{
-						_x switchlight "on";
-						//axeDiagLog = format["FN:SL NEW ON:%1",_x];
-						//publicVariable "axeDiagLog";
-						};
-					}else{
-					_x switchlight "on";
-					//axeDiagLog = format["FN:SL NEW ON:%1",_x];
-					//publicVariable "axeDiagLog";
-					};
-				[axe_streetLamps , [_x]] call BIS_fnc_arrayPush;
+
+					_x switchlight "off";
+
 				};
 			};
 		};
-	} foreach nearestObjects [getPos _nrstGen, [], _rng];
-axe_streetLamps
+	} foreach nearestObjects [getPos _target, [], _rng];
+
 };
+
 axe_newLightPoint={
 private ["_lp","_pos","_col","_brt","_amb","_pos","_dir","_vect"];
 _col = _this select 0;
@@ -60,16 +35,18 @@ _amb = _this select 2;
 _pos = _this select 3;
 _dir = _this select 4;
 _vect = _this select 5;
-_lp = "#lightpoint" createVehicleLocal _pos;
+_lp = "#lightpoint" createVehicleLocal _pos;//Only create locally now.
 _lp setLightColor _col;
 _lp setLightBrightness _brt;
 _lp setLightAmbient _amb;
 _lp setDir _dir;
 _lp setVectorUp _vect;
-//axeDiagLog = format["FN:LP NEW CREATE:%1",_lp];
+//_lp enableSimulation false;//Using this stops lights from illuminating for local player (not tried moving it to before parameters set) - Makes no difference to network broadcast, other players DO NOT see the object anyway
+//axeDiagLog = format["FN:LP NEW CREATE:BRIGHT:%3 | %1 for %2",_lp,player,_brt];
 //publicVariable "axeDiagLog";
 _lp
 };
+
 axe_lightPoint={
 private ["_lp","_col","_brt","_amb"];
 _col = _this select 0;
@@ -82,6 +59,26 @@ _lp setLightAmbient _amb;
 //axeDiagLog = format["FN:LP EXISTS LIGHT:%1",_lp];
 //publicVariable "axeDiagLog";
 };
+
+//return brightness of light attached to object
+axe_lightBrightness={
+private["_plyr","_brtns","_lightPcnt","_target"];
+_plyr = _this select 0;
+_target = _this select 1;
+
+if(isNil "dayz_fullMoonNights")then{dayz_fullMoonNights = false;};
+if(dayz_fullMoonNights)then{
+_brtns = 0.024;
+}else{
+_brtns = 0.018;
+};
+_brtns = _brtns + ((_brtns/100) * ((_plyr distance _target)/15)); //Add percentage of brightness based on distance from player
+//Min / Max Levels
+//if (_brtns > 0.025)then{_brtns = 0.025;};
+//if (_brtns < 0.015)then{_brtns = 0.015;};
+_brtns
+};
+
 axe_towerLight={
 private["_twr","_lCol","_lbrt","_lamb","_oset","_twrPos","_rad","_a","_b","_ang","_nrTLs","_doLit"];
 _twr = _this select 3 select 0;
