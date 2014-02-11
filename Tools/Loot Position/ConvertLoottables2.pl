@@ -3,7 +3,7 @@ use warnings;
 use Data::Dumper;
 
 # Customize
-my $configFile = '../../SQF/dayz_code/Configs/CfgBuildingLoot/cfgLoot.hpp';
+my $configFile = '../../SQF/dayz_code/Configs/CfgBuildingLoot/CfgLootSmall.hpp';
 
 # do not touch
 my $cfg = '';

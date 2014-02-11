@@ -49,7 +49,7 @@ while (my $line = <CFG>) {
 		$cfg .= "\t\titemChance[] = {\n" if $small == 0;
 		$cfg .= "\t\titemChanceSmall[] = {\n" if $small == 1;
 		for (my $i=0; $i<scalar(@itemType); $i++) {
-			$cfg .= sprintf("\t\t\t{\"%s\",\"%s\",%.3f}\n", $itemType[$i]->{Class}, $itemType[$i]->{Type}, $itemChance[$i]);
+			$cfg .= sprintf("\t\t\t%s{\"%s\",\"%s\",%.3f}\n", ($i > 0 ? ',' : ''), $itemType[$i]->{Class}, $itemType[$i]->{Type}, $itemChance[$i]);
 		}
 		$cfg .= "\t\t};\n";
 	}
