@@ -1,5 +1,5 @@
 //new
-5 "setDamage" !"player setdamage 0;" !"player setDamage 1;" !"_vehicle setDamage 0; "!"if("""" == typeOf _tree) then {\n_tree setDamage 1;\n};" !"if("""" == typeOf _tree) then {\n_tree setDamage 0.99;\n};" !"if (_ent isKindOf ""Animal"") then {\n_ent setDamage 1;\n" !"if (_ent isKindOf ""Animal"" or _isZombie) then {\n_ent setDamage 1;"
+5 "setDamage" !"player setdamage 0;" !"player setDamage 1;" !"_vehicle setDamage 0; "!"if\("""" == typeOf _tree\) then \{\n_tree setDamage 1;\n\};" !"if\("""" == typeOf _tree\) then \{\n_tree setDamage 0.99;\n\};" !"if \(_ent isKindOf ""Animal""\) then \{\n_ent setDamage 1;\n" !"if \(_ent isKindOf ""Animal"" or _isZombie\) then \{\n_ent setDamage 1;"
 1 "addBackpackCargoGlobal" !"_holder addbackpackcargoGlobal \[_x,\(_objWpnQty select _countr\)\];"
 1 HelicopterExplo !"_expl=createVehicle \[\"HelicopterExploSmall\",\(getPosATL _v\),\[\],0,\"CAN_COLLIDE\"\];"
 5 "Logic" !"\"Logic\" createVehicleLocal" !"sideLogic" !"BIS_MPF_clientJIPlogic" !"_humanity_logic"
