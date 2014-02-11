@@ -6,6 +6,10 @@ class ItemBriefcase_Base: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\briefcase.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_CA.paa";
 };
+class ItemSilvercase_Base: ItemBriefcase_Base {
+	model = "\z\addons\dayz_epoch\models\silvercase.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_CA.paa";
+};
 class ItemBriefcaseEmpty: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_E_CA.paa";
 	descriptionShort = "Empty Briefcase";
@@ -414,8 +418,9 @@ class ItemBriefcase100oz: ItemBriefcase_Base {
 	};
 };
 // Silver 
-class ItemBriefcaseS10oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_10oz_CA.paa";
+// Silver 
+class ItemBriefcaseS10oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_10oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 1 x 10oz Silver Bar)";
 	weight = 1.2;
 	worth = 10;
@@ -446,8 +451,8 @@ class ItemBriefcaseS10oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS20oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_20oz_CA.paa";
+class ItemBriefcaseS20oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_20oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 2 x 10oz Silver Bar)";
 	weight = 1.5;
 	worth = 20;
@@ -486,8 +491,8 @@ class ItemBriefcaseS20oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS30oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_30oz_CA.paa";
+class ItemBriefcaseS30oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_30oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 3 x 10oz Silver Bar)";
 	weight = 1.8;
 	worth = 30;
@@ -526,8 +531,8 @@ class ItemBriefcaseS30oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS40oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_40oz_CA.paa";
+class ItemBriefcaseS40oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_40oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 4 x 10oz Silver Bar)";
 	weight = 2.1;
 	worth = 40;
@@ -566,8 +571,8 @@ class ItemBriefcaseS40oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS50oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_50oz_CA.paa";
+class ItemBriefcaseS50oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_50oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 5 x 10oz Silver Bar)";
 	weight = 2.4;
 	worth = 50;
@@ -606,8 +611,8 @@ class ItemBriefcaseS50oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS60oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_60oz_CA.paa";
+class ItemBriefcaseS60oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_60oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 6 x 10oz Silver Bar)";
 	weight = 2.7;
 	worth = 60;
@@ -646,8 +651,8 @@ class ItemBriefcaseS60oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS70oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_70oz_CA.paa";
+class ItemBriefcaseS70oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_70oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 7 x 10oz Silver Bar)";
 	weight = 2.9;
 	worth = 70;
@@ -686,8 +691,8 @@ class ItemBriefcaseS70oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS80oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_80oz_CA.paa";
+class ItemBriefcaseS80oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_80oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 8 x 10oz Silver Bar)";
 	weight = 3.2;
 	worth = 80;
@@ -726,8 +731,8 @@ class ItemBriefcaseS80oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS90oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_90oz_CA.paa";
+class ItemBriefcaseS90oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_90oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 9 x 10oz Silver Bar)";
 	weight = 3.5;
 	worth = 90;
@@ -758,8 +763,8 @@ class ItemBriefcaseS90oz: ItemBriefcase_Base {
 		};
 	};
 };
-class ItemBriefcaseS100oz: ItemBriefcase_Base {
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_100oz_CA.paa";
+class ItemBriefcaseS100oz: ItemSilvercase_Base {
+	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_100oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 10 x 10oz Silver Bar)";
 	weight = 3.8;
 	worth = 100;
