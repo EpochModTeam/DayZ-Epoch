@@ -552,7 +552,6 @@ if (_hasrequireditem) then {
 		};
 
 	} else {
-		deleteVehicle _tmpbuilt;
 		cutText [format[(localize "str_epoch_player_47"),_text,_reason], "PLAIN DOWN"];
 	};
 };
