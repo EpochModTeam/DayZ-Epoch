@@ -218,8 +218,6 @@ if (_canDo) then {
 									player addMagazine _itemOut;
 								};
 
-								_tradeComplete = _tradeComplete+1;
-
 								_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 
 								// Add crafted item
@@ -228,6 +226,8 @@ if (_canDo) then {
 								sleep 1;
 
 							} forEach _selectedRecipeOutput;
+
+							_tradeComplete = _tradeComplete+1;
 						};
 
 					} else {
