@@ -434,6 +434,7 @@ class WoodStairs_DZ: ModularItems {
 	displayName = "Wood Stairs";
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
+	upgradeBuilding[] = {"WoodStairsRails_DZ",{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairs_Preview_DZ";
 };
 class WoodLadder_DZ: ModularItems {
@@ -450,6 +451,21 @@ class WoodLadder_DZ: ModularItems {
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "WoodLadder_Preview_DZ";
 	ladders[] = {{"start1","end1"}};
+};
+
+class WoodStairsRails_DZ: ModularItems {
+	scope = 2;
+	destrType = "DestructBuilding";
+	cost = 100;
+	offset[] = {0,1.5,0};
+	model="\z\addons\dayz_epoch\models\wood_stairs_rail.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 700;
+	displayName = "Wood Stairs Rail";
+	vehicleClass = "Fortifications";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	GhostPreview = "WoodStairs_Preview_DZ";
 };
 
 class WoodStairsSans_DZ: ModularItems {
