@@ -113,16 +113,11 @@ if (count _array > 0) then {
 };
 
 terminate dayz_musicH;
-terminate dayz_lootCheck;
 terminate dayz_slowCheck;
 terminate dayz_animalCheck;
 terminate dayz_monitor1;
 terminate dayz_medicalH;
 terminate dayz_gui;
-terminate dayz_zedCheck;
-terminate dayz_locationCheck;
-terminate dayz_combatCheck;
-terminate dayz_friendliesCheck;
 
 //Reset (just in case)
 //deleteVehicle dayz_playerTrigger;
