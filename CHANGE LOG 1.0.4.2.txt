@@ -1,5 +1,6 @@
 [ADDED] BTR90 HQ ride in back option. @Fank
 [ADDED] Version check for dayz.pbo. @Skaronator
+[ADDED] Updated dayZ Lighting by Axeman disabled by default, uncomment line in init.sqf to enable. @andgregor
 
 [FIXED] Completed trade counter was incorrectly returning output count instead of actual number of trades. @vbawol 
 [FIXED] Incremental water bottle had a typo in the picture path. fixes: https://github.com/vbawol/DayZ-Epoch/issues/1084 @vbawol
