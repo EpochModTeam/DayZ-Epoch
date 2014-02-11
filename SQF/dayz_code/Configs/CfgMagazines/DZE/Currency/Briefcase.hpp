@@ -6,10 +6,7 @@ class ItemBriefcase_Base: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\briefcase.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_CA.paa";
 };
-class ItemSilvercase_Base: ItemBriefcase_Base {
-	model = "\z\addons\dayz_epoch\models\silvercase.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_CA.paa";
-};
+// Gold
 class ItemBriefcaseEmpty: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_E_CA.paa";
 	descriptionShort = "Empty Briefcase";
@@ -417,8 +414,11 @@ class ItemBriefcase100oz: ItemBriefcase_Base {
 		};
 	};
 };
-// Silver 
-// Silver 
+// Silver
+class ItemSilvercase_Base: ItemBriefcase_Base {
+	model = "\z\addons\dayz_epoch\models\silvercase.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_CA.paa";
+};
 class ItemBriefcaseS10oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_10oz_CA.paa";
 	descriptionShort = "Briefcase (Contains: 1 x 10oz Silver Bar)";
