@@ -28,13 +28,16 @@ TraderDialogLoadItemList = {
 
 	lbAdd [TraderDialogItemList, "Loading items..."];
 
-	PVDZE_plr_TradeMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
+	//PVDZE_plr_TradeMenuResult = call compile format["tcacheBuy_%1;",_trader_id];
+	PVDZE_plr_TradeMenuResult = missionNamespace getVariable (format["tcacheBuy_%1;",_trader_id]);
+
 	//[[5969,["Ikarus",2],10003,[5,"ItemGoldBar",1],[3,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5970,["Ikarus_TK_CIV_EP1",2],10006,[5,"ItemGoldBar",1],[3,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5971,["S1203_TK_CIV_EP1",2],10004,[4,"ItemGoldBar",1],[2,"ItemGoldBar",1],0,588,"trade_any_vehicle"],[5972,["S1203_ambulance_EP1",2],10002,[4,"ItemGoldBar",1],[2,"ItemGoldBar",1],0,588,"trade_any_vehicle"]]
 
 	if(isNil "PVDZE_plr_TradeMenuResult") then {
 		PVDZE_plr_TradeMenu = [_activatingPlayer,_trader_id];
 		publicVariableServer  "PVDZE_plr_TradeMenu";
 		waitUntil {!isNil "PVDZE_plr_TradeMenuResult"};
+		missionNamespace setVariable [(format["tcacheBuy_%1;",_trader_id]),PVDZE_plr_TradeMenuResult];
 	};
 
 	lbClear TraderDialogItemList;
