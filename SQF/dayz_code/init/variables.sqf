@@ -249,6 +249,7 @@ dayz_resetSelfActions = {
 	s_player_maintain_area_preview = -1;
 	s_player_heli_lift = -1;
 	s_player_heli_detach = -1;
+	s_player_lockUnlock_crtl = -1;
 };
 call dayz_resetSelfActions;
 
