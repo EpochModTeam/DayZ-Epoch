@@ -308,7 +308,7 @@ class CfgLootSmall {
 			"1Rnd_HE_M203",
 			"FlareWhite_M203",
 			"FlareGreen_M203",
-			"1Rnd_Smoke_M203",		
+			"1Rnd_Smoke_M203",
 			"200Rnd_556x45_M249",
 			"HandGrenade_west",
 			"HandGrenade_east",
@@ -558,6 +558,28 @@ class CfgLootSmall {
 			0.14,
 			0.01,
 			0.01,
+		}
+	};
+	pistols[] = {
+		{
+			"Makarov",
+			"Colt1911",
+			"revolver_EP1",
+			"glock17_EP1",
+			"MakarovSD",
+			"M9",
+			"M9SD",
+			"revolver_gold_EP1"
+		},
+		{
+			0.25,
+			0.23,
+			0.20,
+			0.10,
+			0.10,
+			0.07,
+			0.04,
+			0.01
 		}
 	};
 };
