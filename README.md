@@ -51,6 +51,7 @@ Developers
 --------------------------
 Contributors
 --------------------------
+* Fank - Fixes - https://github.com/Fank
 * facoptere - Extra Security - https://github.com/facoptere
 * Torndeco - Fixes - https://github.com/Torndeco
 * Armifer - Humanity changes. - https://github.com/Armifer
