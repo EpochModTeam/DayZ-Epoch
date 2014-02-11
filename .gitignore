@@ -4,6 +4,6 @@
 /SQF/dayz_equip
 /SQF/dayz_vehicles
 /SQF/dayz_weapons
-*.rtm
-*.p3d
+#*.rtm
+#*.p3d
 *.komodoproject
