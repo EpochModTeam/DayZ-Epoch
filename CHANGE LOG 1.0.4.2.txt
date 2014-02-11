@@ -1,4 +1,5 @@
 [ADDED] BTR90 HQ ride in back option. @Fank
+[ADDED] Version check for dayz.pbo. @Skaronator
 
 [FIXED] Completed trade counter was incorrectly returning output count instead of actual number of trades. @vbawol 
 [FIXED] Incremental water bottle had a typo in the picture path. fixes: https://github.com/vbawol/DayZ-Epoch/issues/1084 @vbawol
@@ -9,6 +10,8 @@
 [FIXED] Was possible to fill a mixed gas with an empty jerry can. @Fank
 [FIXED] Fixed undefined variables s_player_tamedog and dayz_myLiftVehicle. @Fank @vbawol
 [FIXED] Typo in server_traders.sqf for Napf, Sauerland, and panthera. @vbawol
+
+[REMOVED] Old Towngenerator Config. @Skaronator
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.

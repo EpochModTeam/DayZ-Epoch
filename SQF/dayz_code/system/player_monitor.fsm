@@ -47,7 +47,7 @@ item42[] = {"New_Character",4,218,-325.000000,400.000000,-225.000000,450.000000,
 item43[] = {"Gender_Selection",2,250,-575.000000,400.000000,-475.000000,450.000000,0.000000,"Gender Selection" \n "Dialog"};
 item44[] = {"Selected",4,218,-575.000000,475.000000,-475.000000,525.000000,0.000000,"Selected"};
 item45[] = {"Process",2,250,-575.000000,550.000000,-475.000000,600.000000,0.000000,"Process"};
-item46[] = {"no_PlayerID",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
+item46[] = {"no_PlayerID",4,4314,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
 item47[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item48[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
 item49[] = {"Stream",2,250,-75.000000,900.000000,25.000000,950.000000,0.000000,"Stream"};
@@ -169,8 +169,8 @@ link85[] = {75,57};
 link86[] = {76,78};
 link87[] = {77,76};
 link88[] = {78,57};
-globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-158.844666,996.923462,645.150146,-280.887787,1137,911,1};
-window[] = {2,-1,-1,-1,-1,908,150,1428,150,3,1155};
+globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-400.773193,754.994873,294.455383,-631.582458,1137,911,1};
+window[] = {2,-1,-1,-1,-1,958,200,1478,200,3,1155};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1341,7 +1341,7 @@ class FSM
        "_myEpoch = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
        "_myEpochB = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch_b"" >> ""dayzVersion"");" \n
        "_myEpochSfx = getText(configFile >> ""CfgPatches"" >> ""dayz_sfx"" >> ""dayzVersion"");" \n
-       "" \n
+       "_myEpochDayZ = getText(configFile >> ""CfgPatches"" >> ""dayz"" >> ""dayzVersion"");" \n
        "" \n
        "player enableSimulation true;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1353,7 +1353,7 @@ class FSM
           priority = 2.000000;
           to="ERROR__No_Player_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(_myEpochAnim != ""1.0.4"") || (_myEpoch != ""1.0.4"") || (_myEpochB != ""1.0.4.1"") || (_myEpochSfx != ""1.0.4.1"")"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_myEpochAnim != ""1.0.4"") || (_myEpoch != ""1.0.4"") || (_myEpochB != ""1.0.4.1"") || (_myEpochSfx != ""1.0.4.1"") || (_myEpochDayZ != ""1.0.4.2"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
