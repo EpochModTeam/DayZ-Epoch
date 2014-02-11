@@ -365,7 +365,6 @@ if (_hasrequireditem) then {
 
 	// No building in trader zones
 	if(!canbuild) then { _cancel = true; _reason = "Cannot build in a city."; };
-	if(!placevault) then { _cancel = true; _reason = "Cannot build in a city."; };
 
 	if(!_cancel) then {
 

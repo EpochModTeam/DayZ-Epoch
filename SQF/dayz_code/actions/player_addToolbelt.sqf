@@ -49,7 +49,7 @@ if (_isOk) then {
 		_display = findDisplay 106;
 		_display closeDisplay 0;
 	};
-	
+
 	//Add magazines if needed
 	if (_create in ["MeleeHatchet_DZE","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 		if (_create == "MeleeCrowbar") then {
@@ -67,20 +67,11 @@ if (_isOk) then {
 		if (_create == "MeleeFishingPole") then {
 				player addMagazine 'Fishing_Swing';
 		};
-		if (_type == "cfgWeapons") then {
-			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
-			_wtype = ((weapons player) select 0);
-			if (count _muzzles > 1) then {
-				player selectWeapon (_muzzles select 0);
-			} else {
-				player selectWeapon _wtype;
-			};
-		};
-	};		
+	};
 
 } else {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
-	
+
 	//Add magazines back
 	if (_item in ["MeleeHatchet_DZE","MeleeCrowbar","MeleeMachete","MeleeFishingPole","MeleeSledge"]) then {
 		if (_item == "MeleeCrowbar") then {
@@ -98,6 +89,6 @@ if (_isOk) then {
 		if (_item == "MeleeFishingPole") then {
 			player addMagazine 'Fishing_Swing';
 		};
-	};	
+	};
 };
 DZE_ActionInProgress = false;
