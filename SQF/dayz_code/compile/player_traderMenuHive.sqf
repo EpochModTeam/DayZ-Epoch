@@ -37,7 +37,9 @@ TraderDialogLoadItemList = {
 		PVDZE_plr_TradeMenu = [_activatingPlayer,_trader_id];
 		publicVariableServer  "PVDZE_plr_TradeMenu";
 		waitUntil {!isNil "PVDZE_plr_TradeMenuResult"};
-		missionNamespace setVariable [(format["tcacheBuy_%1;",_trader_id]),PVDZE_plr_TradeMenuResult];
+		if (count PVDZE_plr_TradeMenuResult > 0) then {
+			missionNamespace setVariable [(format["tcacheBuy_%1;",_trader_id]),PVDZE_plr_TradeMenuResult];
+		};
 	};
 
 	lbClear TraderDialogItemList;
