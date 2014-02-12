@@ -33,6 +33,8 @@ class LAV25_HQ_DZ: LAV25_HQ {
 	typicalCargo[] = {};
 	class TransportMagazines{};
 
+	transportSoldier = 6;
+
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:

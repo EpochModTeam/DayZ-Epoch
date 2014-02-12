@@ -1,31 +1,27 @@
 class BTR90;
-class BTR90_DZ_Base: BTR90 {
-	scope = private;
-	side = TGuerrila;
-
-	commanderCanSee = 2+16+32;
-	gunnerCanSee = 2+16+32;
-	driverCanSee = 2+16+32;
-
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines{};
-
-	class Turrets; // External class reference
-	class MainTurret; // External class reference
-};
-class BTR90_DZ: BTR90_DZ_Base {
+class BTR90_DZ: BTR90 {
 	scope = public;
 	displayName = "BTR-90 DZ";
 
+	commanderCanSee = 2+16+32;
+	gunnerCanSee = 2+16+32;
+	driverCanSee = 2+16+32;
+
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines{};
+
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
+
+	class Turrets; // External class reference
+	class MainTurret; // External class reference
 };
 class BTR90_HQ;
-class BTR90_HQ_DZ_Base: BTR90_HQ {
-	scope = private;
-	side = TGuerrila;
+class BTR90_HQ_DZ: BTR90_HQ {
+	scope = public;
+	displayName = "BTR-90 (HQ) DZ";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -35,18 +31,14 @@ class BTR90_HQ_DZ_Base: BTR90_HQ {
 	typicalCargo[] = {};
 	class TransportMagazines{};
 
-	class Turrets; // External class reference
-	class MainTurret; // External class reference
-};
-class BTR90_HQ_DZ: BTR90_HQ_DZ_Base {
-	scope = public;
-	displayName = "BTR-90 (HQ) DZ";
-
-	transportSoldier = 7;
+	transportSoldier = 6;
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
 	//transportmaxbackpacks = ; // Default:
+
+	class Turrets; // External class reference
+	class MainTurret; // External class reference
 };
 
 // Ammo Less
