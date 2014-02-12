@@ -1,4 +1,4 @@
-private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_mylastPos","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood","_wpnType"];
+private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood","_wpnType"];
 disableSerialization;
 
 _messTimer = 0;
@@ -73,7 +73,7 @@ while {true} do {
 	if (!r_player_infected and !_isPZombie) then {
 		//Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
-			_listTalk = _mylastPos nearEntities ["CAManBase",8];
+			_listTalk = (getPosATL _refObj) nearEntities ["CAManBase",8];
 			{
 				if (_x getVariable["USEC_infected",false]) then {
 					_rnd = (random 1) * (((dayz_temperaturnormal - dayz_temperatur) * (100 /(dayz_temperaturnormal - dayz_temperaturmin)))/ 50);	//TeeChange
