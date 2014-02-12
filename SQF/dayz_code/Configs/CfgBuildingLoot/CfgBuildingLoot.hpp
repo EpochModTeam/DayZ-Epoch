@@ -1167,4 +1167,8 @@ class CfgBuildingLoot {
 		};
 	};
 	#include "CfgLootPos.hpp"
+	//If you want to copypast your loottable to your mission w/o
+	//changing something on the lootPos then use the a include instead of copypasting the CfgLootPos.hpp
+	
+	//#include "\dayz_epoch_b\CfgLootPos.hpp"
 };
