@@ -30,7 +30,7 @@ while (my $line = <CFG>) {
 		$collect = 0;
 
 		for (my $i=0; $i<scalar(@itemType); $i++) {
-			$cfg .= sprintf("\t\t%s{\"%s\",%.3f}\n", ($i > 0 ? ',' : ''), $itemType[$i], $itemChance[$i]);
+			$cfg .= sprintf("\t\t%s{\"%s\",%.2f}\n", ($i > 0 ? ',' : ''), $itemType[$i], $itemChance[$i]);
 		}
 
 		$cfg .= "\t};\n";
@@ -40,6 +40,8 @@ while (my $line = <CFG>) {
 	}
 }
 close(CFG);
+
+$cfg =~ s/(\d+\.\d+)[0]+\}\s*$/$1}/gm;
 
 open(NEWCFG,'>', $configFile) or die $!;
 print NEWCFG $cfg;
