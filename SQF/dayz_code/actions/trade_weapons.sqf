@@ -26,13 +26,17 @@ if(_buy_o_sell == "sell") then {
 	_msg = "Need the weapon in your hands before you can sell it.";
 	_config = (configFile >> "CfgWeapons" >> _part_in);
 	_configName = configName(_config);
-	
+	_wepType = getNumber(_config >> "Type");
+
+	_isToolBelt = (_wepType == 131072);
+	_isBinocs = (_wepType == 4096);
+
 	_abort = (!(_configName in (weapons player)));
-	
+
 	if(_isToolBelt or _isBinocs) then {
 		_msg = "Need the item on your toolbelt before you can sell it.";
 	};
-	
+
 } else {
 
 	// buying item type must NOT exist if rifle or pistol
@@ -70,17 +74,17 @@ if (_abort) exitWith {
 };
 
 cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
-	 
-// force animation 
+
+// force animation
 player playActionNow "Medic";
 [1,1] call dayz_HungerThirst;
-	
+
 r_interrupt = false;
 _animState = animationState player;
 r_doLoop = true;
 _started = false;
 _finished = false;
-	
+
 while {r_doLoop} do {
 	_animState = animationState player;
 	_isMedic = ["medic",_animState] call fnc_inString;
@@ -98,7 +102,7 @@ while {r_doLoop} do {
 };
 r_doLoop = false;
 
-if (!_finished) exitWith { 
+if (!_finished) exitWith {
 	r_interrupt = false;
 	if (vehicle player == player) then {
 		[objNull, player, rSwitchMove,""] call RE;
@@ -112,7 +116,7 @@ if (_finished) then {
 
 	_canAfford = false;
 	if(_bos == 1) then {
-			
+
 		//sell
 		_qty = {_x == _part_in} count weapons player;
 		if (_qty >= _qty_in) then {
@@ -124,11 +128,11 @@ if (_finished) then {
 		};
 
 	} else {
-			
+
 		//buy
 		_trade_total = [[_part_in,_qty_in]] call epoch_itemCost;
 		_total_currency = call epoch_totalCurrency;
-		_return_change = _total_currency - _trade_total; 
+		_return_change = _total_currency - _trade_total;
 		if (_return_change >= 0) then {
 			_canAfford = true;
 		};
@@ -147,15 +151,15 @@ if (_finished) then {
 			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_out,inTraderCity,_part_in,_qty_in];
 		};
 		publicVariableServer  "PVDZE_obj_Trade";
-	
+
 		if(_bos == 0) then {
 
 			waitUntil {!isNil "dayzTradeResult"};
 
 			//diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
-			
+
 			if(dayzTradeResult == "PASS") then {
-						
+
 				_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
 				if (_done) then {
 					player addWeapon _part_out;
@@ -166,7 +170,7 @@ if (_finished) then {
 				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
 		} else {
-			// selling 
+			// selling
 			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 		};
 
