@@ -30,18 +30,18 @@ _canBuildOnPlot = false;
 if(_IsNearPlot == 0) then {
 	_canBuildOnPlot = true;
 } else {
-	
+
 	// check nearby plots ownership and then for friend status
 	_nearestPole = _findNearestPole select 0;
 
-	// Find owner 
+	// Find owner
 	_ownerID = _nearestPole getVariable["CharacterID","0"];
 
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
 	// check if friendly to owner
 	if(dayz_characterID == _ownerID) then {
-		_canBuildOnPlot = true;		
+		_canBuildOnPlot = true;
 	} else {
 		_friendlies		= player getVariable ["friendlyTo",[]];
 		// check if friendly to owner
@@ -87,7 +87,7 @@ if ((count _upgrade) > 0) then {
 	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
-		
+
 	_invResult = false;
 	_abortInvAdd = false;
 	_i = 0;
@@ -96,7 +96,7 @@ if ((count _upgrade) > 0) then {
 	{
 		_itemOut = _x select 0;
 		_countOut = _x select 1;
-		
+
 		for "_x" from 1 to _countOut do {
 			_invResult = [player,_itemOut] call BIS_fnc_invAdd;
 			if(!_invResult) exitWith {
@@ -107,29 +107,29 @@ if ((count _upgrade) > 0) then {
 				_addedItems set [(count _addedItems),[_itemOut,1]];
 			};
 		};
-		
+
 		if (_abortInvAdd) exitWith {};
 
 	} forEach _refund;
 
 	// all parts added proceed
 	if(_i != 0) then {
-			
+
 		// Get position
 		_location	= _obj getVariable["OEMPos",(getposATL _obj)];
 
 		// Get direction
 		_dir = getDir _obj;
-		
+
 		// Reset the character ID on locked doors before they inherit the newclassname
 		if (_classname in DZE_DoorsLocked) then {
-			_object setVariable ["CharacterID",dayz_characterID,true];
+			_obj setVariable ["CharacterID",dayz_characterID,true];
 			_objectCharacterID = dayz_characterID;
 		};
 
 		_classname = _newclassname;
-			
-		// Create new object 
+
+		// Create new object
 		_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
 
 		// Set direction
@@ -137,23 +137,23 @@ if ((count _upgrade) > 0) then {
 
 		// Set location
 		_object setPosATL _location;
-		
-	
+
+
 		cutText [format[(localize "str_epoch_player_142"),_text], "PLAIN DOWN", 5];
 
 		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
 		publicVariableServer "PVDZE_obj_Swap";
 
 		player reveal _object;
-			
+
 	} else {
 		cutText [format[(localize "str_epoch_player_143"), _i,(getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName"))], "PLAIN DOWN"];
 		{
 			[player,(_x select 0),(_x select 1)] call BIS_fnc_invRemove;
 		} forEach _addedItems;
-		
+
 	};
-	
+
 } else {
 	cutText [(localize "str_epoch_player_51"), "PLAIN DOWN"];
 };
