@@ -189,10 +189,16 @@ if (_canDo) then {
 						} forEach _inputWeapons;
 						if (_num_removed_weapons == (count _inputWeapons)) then {
 							if(_randomOutput == 1) then {
-								_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
-								_outputWeapons = [_selectedWeapon];
-								_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
-								_selectedRecipeOutput = [_selectedMag];
+								_outputWeapons = [];
+								if (!isNil "_outputWeapons" && count _outputWeapons > 0) then {
+									_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
+									_outputWeapons = [_selectedWeapon];
+								};
+								_selectedRecipeOutput = [];
+								if (!isNil "_selectedRecipeOutput" && count _selectedRecipeOutput > 0) then {
+									_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
+									_selectedRecipeOutput = [_selectedMag];
+								};
 								// exit loop
 								_craft_doLoop = false;
 							};
