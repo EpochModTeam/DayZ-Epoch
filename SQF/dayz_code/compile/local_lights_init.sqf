@@ -26,9 +26,9 @@ if(!isDedicated)then{
 	_houseNum = 0;//Monitor house numbers in range.. Pass around and reduce range if too many and/or client lag (NOT server / client lag)
 	_lightTrig = vehicle player;//Central point around which to run the lights
 	_plyPos = [0,0,0];
-	call compile preprocessFileLineNumbers "z\addons\dayz_code\compile\fn_lightFunctions.sqf";
-	axeTowerLights = compile preprocessFileLineNumbers "z\addons\dayz_code\compile\local_lights_tower.sqf";
-	axeHouseLights = compile preprocessFileLineNumbers "z\addons\dayz_code\compile\local_lights_house.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_lightFunctions.sqf";
+	axeTowerLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_tower.sqf";
+	axeHouseLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_house.sqf";
 
 	waitUntil {getPos Player select 0 > 0};
 
