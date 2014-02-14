@@ -530,7 +530,7 @@ class datsun1_civil_1_open : SkodaBase
     rarityUrban = 0.5;
 	upgradeVehicle[] = {"datsun1_civil_3_open_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
   };
-  
+
 // Performance 1
 class datsun1_civil_1_open_DZE1: datsun1_civil_1_open
 {
@@ -666,7 +666,7 @@ class datsun1_civil_2_covered_DZE2: datsun1_civil_2_covered_DZE1
 class datsun1_civil_3_open_DZE2: datsun1_civil_3_open_DZE1
 {
 	armor = 50; // car 20
-	upgradeVehicle[] = {"datsun1_civil_3_open_DZE1_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
+	upgradeVehicle[] = {"datsun1_civil_3_open_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
 	class HitPoints: HitPoints
 	{
 		class HitLFWheel: HitLFWheel
@@ -725,21 +725,21 @@ class datsun1_civil_3_open_DZE2: datsun1_civil_3_open_DZE1
 class datsun1_civil_1_open_DZE3: datsun1_civil_1_open_DZE2
 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
 	upgradeVehicle[] = {"datsun1_civil_1_open_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
 };
 class datsun1_civil_2_covered_DZE3: datsun1_civil_2_covered_DZE2
 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
 	upgradeVehicle[] = {"datsun1_civil_2_covered_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
 };
 class datsun1_civil_3_open_DZE3: datsun1_civil_3_open_DZE2
 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
 	upgradeVehicle[] = {"datsun1_civil_3_open_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
 };
