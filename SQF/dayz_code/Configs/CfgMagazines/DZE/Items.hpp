@@ -176,7 +176,7 @@ class ItemORP: CA_Magazine {
 	class ItemActions {
 		class Upgrades {
 			text = $STR_EPOCH_PLAYER_UPGRADEV;
-			script = "spawn player_upgradeVehicle;";
+			script = "['ORP'] spawn player_upgradeVehicle;";
 		};
 	};
 
@@ -194,7 +194,7 @@ class ItemAVE: CA_Magazine {
 	class ItemActions {
 		class Upgrades {
 			text = $STR_EPOCH_PLAYER_UPGRADEV;
-			script = "spawn player_upgradeVehicle;";
+			script = "['AVE'] spawn player_upgradeVehicle;";
 		};
 	};
 
@@ -212,7 +212,7 @@ class ItemLRK: CA_Magazine {
 	class ItemActions {
 		class Upgrades {
 			text = $STR_EPOCH_PLAYER_UPGRADEV;
-			script = "spawn player_upgradeVehicle;";
+			script = "['LRK'] spawn player_upgradeVehicle;";
 		};
 	};
 
@@ -230,7 +230,7 @@ class ItemTNK: CA_Magazine {
 	class ItemActions {
 		class Upgrades {
 			text = $STR_EPOCH_PLAYER_UPGRADEV;
-			script = "spawn player_upgradeVehicle;";
+			script = "['TNK'] spawn player_upgradeVehicle;";
 		};
 	};
 
