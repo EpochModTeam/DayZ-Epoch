@@ -8,7 +8,7 @@ if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_52") , 
 DZE_ActionInProgress = true;
 
 // This is used to find correct upgrade based what upgrades was called allows multiple upgrades per vehicle.
-_upgrade = _this select 0;
+_upgrade = _this;
 
 if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_18"), "PLAIN DOWN"]};
 
@@ -72,7 +72,7 @@ if (_IsNearVehicle >= 1) then {
 					_removed = 0;
 					_itemIn = _x select 0;
 					_countIn = _x select 1;
-					diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+					//diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
 					_tobe_removed_total = _tobe_removed_total + _countIn;
 
 					{
@@ -85,6 +85,15 @@ if (_IsNearVehicle >= 1) then {
 							};
 						};
 					} forEach magazines player;
+				} forEach _requirementsMagazine;
+
+				{
+					_removed = 0;
+					_itemIn = _x select 0;
+					_countIn = _x select 1;
+					diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+					_tobe_removed_total = _tobe_removed_total + _countIn;
+
 					{
 						if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgWeapons" >> _x)) == _itemIn)) then {
 							_num_removed = ([player,_x] call BIS_fnc_invRemove);
@@ -95,8 +104,7 @@ if (_IsNearVehicle >= 1) then {
 							};
 						};
 					} forEach weapons player;
-
-				} forEach _requirements;
+				} forEach _requirementsWeapon;
 
 				// all parts removed proceed
 				if (_tobe_removed_total == _removed_total) then {
