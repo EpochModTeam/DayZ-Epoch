@@ -109,8 +109,11 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 				_objWpnQty = _magazines select 1;
 				_countr = 0;
 				{
-					_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-					_countr = _countr + 1;
+					if( _x != "CSGAS" ) then
+					{
+						_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
+						_countr = _countr + 1;
+					};
 				} forEach _objWpnTypes;
 			};
 
@@ -120,12 +123,8 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 				_objWpnQty = _backpacks select 1;
 				_countr = 0;
 				{
-					
-					if( _x != "CSGAS" ) then
-					{
-						_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
-						_countr = _countr + 1;
-					};
+					_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
+					_countr = _countr + 1;
 				} forEach _objWpnTypes;
 			};
 	
