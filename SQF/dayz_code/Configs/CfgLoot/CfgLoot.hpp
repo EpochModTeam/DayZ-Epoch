@@ -1,4 +1,3 @@
-#include "CfgLootSmall.hpp"
 class CfgLoot {
 	trash[] = {
 		{"TrashTinCan",0.5}
