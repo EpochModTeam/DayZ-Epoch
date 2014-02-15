@@ -20,7 +20,7 @@ class ItemActions
 	};
 };
 */
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_63") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -152,6 +152,7 @@ if (_canDo) then {
 
 					_removed_total = 0; // count total of removed items
 					_tobe_removed_total = 0; // count total of all to be removed items
+					_waterLevel_lowest = 0; // find the lowest _waterLevel
 					// Take items
 					{
 						_removed = 0;
@@ -160,10 +161,29 @@ if (_canDo) then {
 						// diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
 						_tobe_removed_total = _tobe_removed_total + _countIn;
 
+						// Preselect the item
+						{
+							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
+							if ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn)) then {
+								// Get lowest waterlevel
+								if ((_x == "ItemWaterbottle") ||( _configParent == "ItemWaterbottle")) then {
+									_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
+									if (_waterLevel_lowest == 0 || _waterLevel < _waterLevel_lowest) then {
+										_waterLevel_lowest = _waterLevel;
+									};
+								};
+							};
+						} forEach magazines player;
+
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
 							if( (_removed < _countIn) && ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn))) then {
-								_num_removed = ([player,_x] call BIS_fnc_invRemove);
+								if ((_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && (getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest))) then {
+									_num_removed = ([player,_x] call BIS_fnc_invRemove);
+								}
+								else {
+									_num_removed = 0;
+								};
 								_removed = _removed + _num_removed;
 								_removed_total = _removed_total + _num_removed;
 								if(_num_removed >= 1) then {
@@ -174,7 +194,6 @@ if (_canDo) then {
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
 							};
-
 						} forEach magazines player;
 
 					} forEach _selectedRecipeInput;
