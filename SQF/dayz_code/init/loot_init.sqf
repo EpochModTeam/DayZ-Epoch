@@ -1,4 +1,4 @@
-private ["_weighted","_j"];
+private ["_config","_classname","_itemChances","_itemCount","_weight","_type","_canZombie","_canLoot","_weighted","_j"];
 dayz_CBLChances = [];
 dayz_CBLBase = [];
 _config = configFile >> "CfgBuildingLoot";
@@ -11,7 +11,7 @@ for "_i" from 0 to ((count _config) - 1) do {
 	_itemChances = getArray (_config >> _classname >> "lootType");
 	_itemCount = count _itemChances;
 
-//diag_log format["Classname: %1, Array: %2, Amount: %3", _classname, _itemChances, _itemCount];
+	//diag_log format["Classname: %1, Array: %2, Amount: %3", _classname, _itemChances, _itemCount];
 
 	if (_itemCount > 0) then {
 		if (dayz_CBLBase find _classname < 0) then {
@@ -59,7 +59,7 @@ for "_i" from 0 to ((count (_config)) - 1) do {
 	dayz_CLBase set [count dayz_CLBase, _classname];
 	//dayz_CLItemNames set [count dayz_CLBase, _items];
 	dayz_CLChances set [count dayz_CLChances, _weighted];
-	
+
 	//diag_log format["CFGLoot: %1, Array: %2", _classname, _items];
 };
 //diag_log ("BaseLoot: " +str(dayz_CLBase));
