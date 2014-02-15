@@ -89,7 +89,7 @@ class hilux1_civil_3_open_DZE1: hilux1_civil_3_open_DZE {
 	};
 
 	class Upgrades {
-		ItemAVE[] = {"hilux1_civil_3_open_DZE3",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"hilux1_civil_3_open_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
 		ItemARM[] = {"Pickup_PK_INS_DZE1",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
