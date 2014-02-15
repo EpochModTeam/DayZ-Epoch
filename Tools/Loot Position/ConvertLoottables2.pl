@@ -32,6 +32,8 @@ while (my $line = <CFG>) {
 		for (my $i=0; $i<scalar(@itemType); $i++) {
 			$cfg .= sprintf("\t\t%s{\"%s\",%.2f}\n", ($i > 0 ? ',' : ''), $itemType[$i], $itemChance[$i]);
 		}
+		@itemType = ();
+		@itemChance = ();
 
 		$cfg .= "\t};\n";
 	}

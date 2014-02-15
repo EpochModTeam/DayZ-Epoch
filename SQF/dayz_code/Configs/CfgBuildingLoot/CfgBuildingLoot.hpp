@@ -538,7 +538,7 @@ class CfgBuildingLoot {
 			,{"PartGlass","magazine",0.08}
 			,{"WeaponHolder_ItemJerrycan","object",0.03}
 		};
-	}; 
+	};
 	class DynamicDebrisMilitary: Default
 	{
 		lootChance = 0.4;
@@ -598,7 +598,8 @@ class CfgBuildingLoot {
 			,{"M16A2GL","weapon",0.01}
 			,{"M249_EP1_DZ","weapon",0.01}
 			,{"M9SD","weapon",0.02}
-			,{"Pecheneg_DZ","weapon",0.01}
+			,{"Pecheneg_DZ","weapon",0.02}
+			,{"PK_DZ","weapon",0.01}
 			,{"AK_74","weapon",0.02}
 			,{"M4A1_Aim","weapon",0.01}
 			,{"AKS_74_kobra","weapon",0.01}
