@@ -1,25 +1,31 @@
 class hilux1_civil_1_open;
 class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
 	terrainCoef = 2.5;
+	class HitPoints;
 
 	class Upgrades {
-		ORP[] = {"hilux1_civil_1_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"hilux1_civil_1_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_2_covered;
 class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
 	terrainCoef = 2.5;
+	class HitPoints;
 
 	class Upgrades {
-		ORP[] = {"hilux1_civil_2_covered_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"hilux1_civil_2_covered_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_3_open;
 class hilux1_civil_3_open_DZE: hilux1_civil_3_open {
 	terrainCoef = 2.5;
+	class HitPoints;
 
 	class Upgrades {
-		ORP[] = {"hilux1_civil_3_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"hilux1_civil_3_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 
@@ -27,25 +33,64 @@ class hilux1_civil_3_open_DZE: hilux1_civil_3_open {
 class hilux1_civil_1_open_DZE1: hilux1_civil_1_open_DZE {
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 1.8;
+	class HitPoints: HitPoints {
+		class HitLFWheel;
+		class HitLBWheel;
+		class HitRFWheel;
+		class HitRBWheel;
+		class HitFuel;
+		class HitEngine;
+		class HitGlass1;
+		class HitGlass2;
+		class HitGlass3;
+		class HitGlass4;
+	};
 
 	class Upgrades {
-		AVE[] = {"hilux1_civil_1_open_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"hilux1_civil_1_open_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_2_covered_DZE1: hilux1_civil_2_covered_DZE {
 	maxspeed = 150; // car 100
 	terrainCoef = 1.8;
+	class HitPoints: HitPoints {
+		class HitLFWheel;
+		class HitLBWheel;
+		class HitRFWheel;
+		class HitRBWheel;
+		class HitFuel;
+		class HitEngine;
+		class HitGlass1;
+		class HitGlass2;
+		class HitGlass3;
+		class HitGlass4;
+	};
 
 	class Upgrades {
-		AVE[] = {"hilux1_civil_2_covered_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"hilux1_civil_2_covered_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_3_open_DZE1: hilux1_civil_3_open_DZE {
 	maxspeed = 150; // car 100
 	terrainCoef = 1.8;
+	class HitPoints: HitPoints {
+		class HitLFWheel;
+		class HitLBWheel;
+		class HitRFWheel;
+		class HitRBWheel;
+		class HitFuel;
+		class HitEngine;
+		class HitGlass1;
+		class HitGlass2;
+		class HitGlass3;
+		class HitGlass4;
+	};
 
 	class Upgrades {
-		AVE[] = {"hilux1_civil_3_open_DZE3",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"hilux1_civil_3_open_DZE3",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 
@@ -94,7 +139,8 @@ class hilux1_civil_1_open_DZE2: hilux1_civil_1_open_DZE1 {
 	};
 
 	class Upgrades {
-		LRK[] = {"hilux1_civil_1_open_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
+		ItemLRK[] = {"hilux1_civil_1_open_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_2_covered_DZE2: hilux1_civil_2_covered_DZE1 {
@@ -141,7 +187,8 @@ class hilux1_civil_2_covered_DZE2: hilux1_civil_2_covered_DZE1 {
 	};
 
 	class Upgrades {
-		LRK[] = {"hilux1_civil_2_covered_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
+		ItemLRK[] = {"hilux1_civil_2_covered_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_3_open_DZE2: hilux1_civil_3_open_DZE1 {
@@ -188,7 +235,8 @@ class hilux1_civil_3_open_DZE2: hilux1_civil_3_open_DZE1 {
 	};
 
 	class Upgrades {
-		LRK[] = {"hilux1_civil_3_open_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
+		ItemLRK[] = {"hilux1_civil_3_open_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 
@@ -199,7 +247,8 @@ class hilux1_civil_1_open_DZE3: hilux1_civil_1_open_DZE2 {
     transportmaxbackpacks = 4; // car 2
 
 	class Upgrades {
-		TNK[] = {"hilux1_civil_1_open_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"hilux1_civil_1_open_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_2_covered_DZE3: hilux1_civil_2_covered_DZE2 {
@@ -208,7 +257,8 @@ class hilux1_civil_2_covered_DZE3: hilux1_civil_2_covered_DZE2 {
     transportmaxbackpacks = 4; // car 2
 
 	class Upgrades {
-		TNK[] = {"hilux1_civil_2_covered_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"hilux1_civil_2_covered_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class hilux1_civil_3_open_DZE3: hilux1_civil_3_open_DZE2 {
@@ -217,17 +267,30 @@ class hilux1_civil_3_open_DZE3: hilux1_civil_3_open_DZE2 {
     transportmaxbackpacks = 4; // car 2
 
 	class Upgrades {
-		TNK[] = {"hilux1_civil_3_open_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"hilux1_civil_3_open_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 
 // Fuel 4
 class hilux1_civil_1_open_DZE4: hilux1_civil_1_open_DZE3 {
 	fuelCapacity = 210; // car 100
+
+	class Upgrades {
+		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+	};
 };
 class hilux1_civil_2_covered_DZE4: hilux1_civil_2_covered_DZE3 {
 	fuelCapacity = 210; // car 100
+
+	class Upgrades {
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+	};
 };
 class hilux1_civil_3_open_DZE4: hilux1_civil_3_open_DZE3 {
 	fuelCapacity = 210; // car 100
+
+	class Upgrades {
+		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+	};
 };
