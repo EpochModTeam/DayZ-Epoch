@@ -320,7 +320,7 @@ class CfgLoot {
 			"1Rnd_HE_M203",
 			"FlareWhite_M203",
 			"FlareGreen_M203",
-			"1Rnd_Smoke_M203",		
+			"1Rnd_Smoke_M203",
 			"200Rnd_556x45_M249",
 			"HandGrenade_west",
 			"HandGrenade_east",
@@ -410,7 +410,7 @@ class CfgLoot {
 			"1Rnd_HE_M203",
 			"FlareWhite_M203",
 			"FlareGreen_M203",
-			"1Rnd_Smoke_M203",		
+			"1Rnd_Smoke_M203",
 			"200Rnd_556x45_M249",
 			"HandGrenade_west",
 			"HandGrenade_east",
@@ -725,7 +725,7 @@ class CfgLoot {
 			"DZ_GunBag_EP1",  // 3-35
 			"DZ_CivilBackpack_EP1", //4-40
 			"DZ_Backpack_EP1",  //5-50
-			"DZ_LargeGunBag_EP1" // 6-60 
+			"DZ_LargeGunBag_EP1" // 6-60
 		},
 		{
 			0.30,
@@ -999,6 +999,7 @@ class CfgLoot {
 			"RPK_74",
 			"M8_SAW",
 			"Pecheneg_DZ",
+			"PK_DZ",
 			"MG36_camo",
 			"M60A4_EP1_DZE",
 			"MG36",
@@ -1011,6 +1012,7 @@ class CfgLoot {
 		{
 			0.11,
 			0.11,
+			0.1,
 			0.1,
 			0.1,
 			0.1,

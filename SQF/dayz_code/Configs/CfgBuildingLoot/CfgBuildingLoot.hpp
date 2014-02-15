@@ -98,7 +98,7 @@ class CfgBuildingLoot {
 			0.02,
 			0.01,
 			0.01
-		};		
+		};
 	};
 	class Office: Default {
 		maxRoaming = 3;
@@ -147,7 +147,7 @@ class CfgBuildingLoot {
 			0.01,
 			0.03,
 			0.01
-		};	
+		};
 		itemTypeSmall[] = {
 			{ "ItemSodaMdew","magazine" },
 			{ "ItemSodaRbull","magazine" },
@@ -159,7 +159,7 @@ class CfgBuildingLoot {
 			{ "ItemFlashlight","weapon" },
 			{ "ItemKnife","weapon" },
 			{ "ItemMatchbox_DZE","weapon" },
-			{ "","generic" },			
+			{ "","generic" },
 			{ "","military" },
 			{ "","trash" },
 			{ "Binocular","weapon" },
@@ -185,7 +185,7 @@ class CfgBuildingLoot {
 			0.16,
 			0.02,
 			0.01
-		};	
+		};
 	};
 	class Industrial: Default {
 		zombieChance = 0.4;
@@ -323,7 +323,7 @@ class CfgBuildingLoot {
 			{ "ItemJerrycan","magazine" },
 			{ "","generic" },
 			{ "farmweapons","cfglootweapon" },
-			{ "","trash" },			
+			{ "","trash" },
 			{ "PartPlankPack","magazine" },
 			{ "WeaponHolder_ItemHatchet_DZE","object" },
 			{ "ItemFuelBarrelEmpty","magazine"},
@@ -956,8 +956,8 @@ class CfgBuildingLoot {
 			0.078,
 			0.033
 		};
-	}; 
-	
+	};
+
 	class DynamicDebrisMilitary: Default
 	{
 		lootChance = 0.4;
@@ -1051,6 +1051,7 @@ class CfgBuildingLoot {
 			{ "M249_EP1_DZ","weapon" },
 			{ "M9SD","weapon" },
 			{ "Pecheneg_DZ","weapon"},
+			{ "PK_DZ","weapon"},
 			{ "AK_74","weapon" },
 			{ "M4A1_Aim","weapon" },
 			{ "AKS_74_kobra","weapon" },
@@ -1088,7 +1089,7 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
 			{"DZ_British_ACU","object"}, // 18
 			{"DZ_CivilBackpack_EP1","object"}, // 24
-			{"DZ_Backpack_EP1","object"}, // 30		
+			{"DZ_Backpack_EP1","object"}, // 30
 			{"DZ_LargeGunBag_EP1","object"}, // 45
 
 			{ "","medical" },
@@ -1112,6 +1113,7 @@ class CfgBuildingLoot {
 			0.03,
 			0.01,
 			0.01,
+			0.02,
 			0.02,
 			0.01,
 			0.02,
@@ -1169,6 +1171,6 @@ class CfgBuildingLoot {
 	#include "CfgLootPos.hpp"
 	//If you want to copypast your loottable to your mission w/o
 	//changing something on the lootPos then use the a include instead of copypasting the CfgLootPos.hpp
-	
+
 	//#include "\dayz_epoch_b\CfgLootPos.hpp"
 };
