@@ -91,7 +91,7 @@ if (_IsNearVehicle >= 1) then {
 					_removed = 0;
 					_itemIn = _x select 0;
 					_countIn = _x select 1;
-					diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+					//diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
 					_tobe_removed_total = _tobe_removed_total + _countIn;
 
 					{
