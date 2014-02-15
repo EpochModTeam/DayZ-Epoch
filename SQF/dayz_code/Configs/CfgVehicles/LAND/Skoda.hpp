@@ -1,5 +1,4 @@
-class SkodaBase: Car
-{
+class SkodaBase: Car {
 	brakeDistance = 9;
 	scope = 0;
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
@@ -47,145 +46,120 @@ class SkodaBase: Car
 	ArmorCrash2[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_03",0.707946,1,200};
 	ArmorCrash3[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_04",0.707946,1,200};
 	soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
-	class SoundEvents
-	{
-		class AccelerationIn
-		{
+	class SoundEvents {
+		class AccelerationIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Car\int\int-Car-acce-2",0.316228,1};
 			limit = "0.5";
 			expression = "(engineOn*(1-camPos))*gmeterZ";
 		};
-		class AccelerationOut
-		{
+		class AccelerationOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Car\ext\ext-Car-acce-2",0.316228,1,200};
 			limit = "0.5";
 			expression = "(engineOn*camPos)*gmeterZ";
 		};
 	};
-	class Sounds
-	{
-		class Engine
-		{
+	class Sounds {
+		class Engine {
 			sound[] = {"\ca\sounds\Vehicles\Wheeled\Car\ext\ext-car-low-4",0.562341,1,250};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "engineOn*camPos*(rpm factor[0.7, 0.2])";
 		};
-		class EngineHighOut
-		{
+		class EngineHighOut {
 			sound[] = {"\ca\sounds\Vehicles\Wheeled\Car\ext\ext-car-high-4",0.562341,1.1,350};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "engineOn*camPos*(rpm factor[0.5, 0.9])";
 		};
-		class IdleOut
-		{
+		class IdleOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Car\ext\ext-car-idle-2",0.316228,1,150};
 			frequency = "1";
 			volume = "engineOn*camPos*(rpm factor[0.3, 0])";
 		};
-		class TiresRockOut
-		{
+		class TiresRockOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*rock*(speed factor[2, 20])";
 		};
-		class TiresSandOut
-		{
+		class TiresSandOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*sand*(speed factor[2, 20])";
 		};
-		class TiresGrassOut
-		{
+		class TiresGrassOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*grass*(speed factor[2, 20])";
 		};
-		class TiresMudOut
-		{
+		class TiresMudOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*mud*(speed factor[2, 20])";
 		};
-		class TiresGravelOut
-		{
+		class TiresGravelOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*gravel*(speed factor[2, 20])";
 		};
-		class TiresAsphaltOut
-		{
+		class TiresAsphaltOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*asphalt*(speed factor[2, 20])";
 		};
-		class NoiseOut
-		{
+		class NoiseOut {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\int-noise3",0.1,1,30};
 			frequency = "1";
 			volume = "camPos*(damper0 max 0.04)*(speed factor[0, 8])";
 		};
-		class EngineLowIn
-		{
+		class EngineLowIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Car\int\int-car-low-4",0.707946,0.8};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "((engineOn*thrust) factor[0.65, 0.2])*(1-camPos)";
 		};
-		class EngineHighIn
-		{
+		class EngineHighIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Car\int\int-car-high-4",0.707946,0.8};
 			frequency = "(randomizer*0.05+0.95)*rpm";
 			volume = "((engineOn*thrust) factor[0.55, 0.95])*(1-camPos)";
 		};
-		class IdleIn
-		{
+		class IdleIn {
 			sound[] = {"\ca\sounds\Vehicles\Wheeled\Car\int\int-car-idle-1",0.398107,1};
 			frequency = "1";
 			volume = "engineOn*(rpm factor[0.3, 0])*(1-camPos)";
 		};
-		class TiresRockIn
-		{
+		class TiresRockIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",0.1,1};
 			frequency = "1";
 			volume = "(1-camPos)*rock*(speed factor[2, 20])";
 		};
-		class TiresSandIn
-		{
+		class TiresSandIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",0.1,1};
 			frequency = "1";
 			volume = "(1-camPos)*sand*(speed factor[2, 20])";
 		};
-		class TiresGrassIn
-		{
+		class TiresGrassIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3",0.1,1};
 			frequency = "1";
 			volume = "(1-camPos)*grass*(speed factor[2, 20])";
 		};
-		class TiresMudIn
-		{
+		class TiresMudIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",0.1,1};
 			frequency = "1";
 			volume = "(1-camPos)*mud*(speed factor[2, 20])";
 		};
-		class TiresGravelIn
-		{
+		class TiresGravelIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",0.1,1};
 			frequency = "1";
 			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
 		};
-		class TiresAsphaltIn
-		{
+		class TiresAsphaltIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",0.1,1};
 			frequency = "1";
 			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
 		};
-		class NoiseIn
-		{
+		class NoiseIn {
 			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\BUS\int\noise3",0.1,1};
 			frequency = "1";
 			volume = "(damper0 max 0.04)*(speed factor[0, 8])*(1-camPos)";
 		};
-		class Movement
-		{
+		class Movement {
 			sound = "soundEnviron";
 			frequency = "1";
 			volume = "0";
@@ -197,17 +171,15 @@ class SkodaBase: Car
 	cargoAction[] = {"Skodovka_Cargo01"};
 	cargoIsCoDriver[] = {1,0};
 	hasGunner = 0;
-	class Turrets
-	{
+	class Turrets {
 	};
-	class Library
-	{
+	class Library {
 		libTextDesc = "A Czech-made civilian car, very popular during the Soviet era. This car was designed for the rugged roads of Central and Eastern Europe and displays good off-road performance in comparison to other vehicles in its class.";
 	};
 	rarityUrban = 0.5;
 };
-class Skoda: SkodaBase
-{
+
+class Skoda: SkodaBase {
 	scope = 2;
 	accuracy = 1000;
 	crew = "Citizen1";
@@ -221,16 +193,17 @@ class Skoda: SkodaBase
 	displayNameShort = "Car";
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\ca\wheeled\data\skodovka_bila_co.paa","\ca\wheeled\data\skodovka_int_co.paa"};
-	class Damage
-	{
+	class Damage {
 		tex[] = {};
 		mat[] = {"ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
 	};
 	rarityUrban = 0.25;
-	upgradeVehicle[] = {"Skoda_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
+
+	class Upgrades {
+		ItemORP[] = {"Skoda_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+	};
 };
-class SkodaBlue: SkodaBase
-{
+class SkodaBlue: SkodaBase {
 	scope = 2;
 	accuracy = 1000;
 	crew = "Villager2";
@@ -242,16 +215,17 @@ class SkodaBlue: SkodaBase
 	mapSize = 6;
 	displayName = "Car (blue)";
 	displayNameShort = "Car";
-	class Damage
-	{
+	class Damage {
 		tex[] = {};
 		mat[] = {"ca\wheeled\data\skodovka_modra.rvmat","ca\wheeled\data\skodovka_modra.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
 	};
 	rarityUrban = 0.25;
-	upgradeVehicle[] = {"SkodaBlue_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
+
+	class Upgrades {
+		ItemORP[] = {"SkodaBlue_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+	};
 };
-class SkodaRed: SkodaBase
-{
+class SkodaRed: SkodaBase {
 	scope = 2;
 	faction = "CIV";
 	accuracy = 1000;
@@ -263,15 +237,16 @@ class SkodaRed: SkodaBase
 	typicalCargo[] = {"Villager1"};
 	displayName = "Car (red)";
 	displayNameShort = "Car";
-	class Damage
-	{
+	class Damage {
 		tex[] = {};
 		mat[] = {"ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
 	};
-	upgradeVehicle[] = {"SkodaRed_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
+
+	class Upgrades {
+		ItemORP[] = {"SkodaRed_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+	};
 };
-class SkodaGreen: SkodaBase
-{
+class SkodaGreen: SkodaBase {
 	scope = 2;
 	faction = "CIV";
 	accuracy = 1000;
@@ -283,312 +258,289 @@ class SkodaGreen: SkodaBase
 	typicalCargo[] = {"Villager3"};
 	displayName = "Car (green)";
 	displayNameShort = "Car";
-	class Damage
-	{
+	class Damage {
 		tex[] = {};
 		mat[] = {"ca\wheeled\data\skodovka_zelena.rvmat","ca\wheeled\data\skodovka_zelena.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
 	};
-	upgradeVehicle[] = {"SkodaGreen_DZE1",{{"ItemORP",1},{"PartEngine",2}}};
+
+	class Upgrades {
+		ItemORP[] = {"SkodaGreen_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+	};
 };
 
 // Performance 1
-class Skoda_DZE1: Skoda
-{
+class Skoda_DZE1: Skoda {
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
-	upgradeVehicle[] = {"Skoda_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
-};
 
-class SkodaBlue_DZE1: SkodaBlue
-{
-	maxspeed = 150; // car 100
-	terrainCoef = 2.5;
-	upgradeVehicle[] = {"SkodaBlue_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
+	class Upgrades {
+		ItemAVE[] = {"Skoda_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+	};
 };
-class SkodaRed_DZE1: SkodaRed
-{
+class SkodaBlue_DZE1: SkodaBlue {
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
-	upgradeVehicle[] = {"SkodaRed_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
+
+	class Upgrades {
+		ItemAVE[] = {"SkodaBlue_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+	};
 };
-class SkodaGreen_DZE1: SkodaGreen
-{
+class SkodaRed_DZE1: SkodaRed {
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
-	upgradeVehicle[] = {"SkodaGreen_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
+
+	class Upgrades {
+		ItemAVE[] = {"SkodaRed_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+	};
+};
+class SkodaGreen_DZE1: SkodaGreen {
+	maxspeed = 150; // car 100
+	terrainCoef = 2.5;
+
+	class Upgrades {
+		ItemAVE[] = {"SkodaGreen_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+	};
 };
 
 // Armor 2
-class Skoda_DZE2: Skoda_DZE1
-{
+class Skoda_DZE2: Skoda_DZE1 {
 	armor = 50; // car 20
-	upgradeVehicle[] = {"Skoda_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
-	class HitPoints: HitPoints
-	{
-		class HitLFWheel: HitLFWheel
-		{
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
 		};
-		class HitLBWheel: HitLBWheel
-		{
+		class HitLBWheel: HitLBWheel {
 			armor = 0.3;
 		};
-		class HitRFWheel: HitRFWheel
-		{
+		class HitRFWheel: HitRFWheel {
 			armor = 0.3;
 		};
-		class HitRBWheel: HitRBWheel
-		{
+		class HitRBWheel: HitRBWheel {
 			armor = 0.3;
 		};
-		class HitFuel
-		{
+		class HitFuel {
 			armor = 0.28;
 			material = -1;
 			name = "palivo";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitEngine
-		{
+		class HitEngine {
 			armor = 1;
 			material = -1;
 			name = "motor";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitGlass1: HitGlass1
-		{
+		class HitGlass1: HitGlass1 {
 			armor = 0.1;
 		};
-		class HitGlass2: HitGlass2
-		{
+		class HitGlass2: HitGlass2 {
 			armor = 0.1;
 		};
-		class HitGlass3: HitGlass3
-		{
+		class HitGlass3: HitGlass3 {
 			armor = 0.1;
 		};
-		class HitGlass4: HitGlass4
-		{
+		class HitGlass4: HitGlass4 {
 			armor = 0.1;
 		};
 	};
+
+	class Upgrades {
+		ItemLRK[] = {"Skoda_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+	};
 };
-class SkodaBlue_DZE2: SkodaBlue_DZE1
-{
+class SkodaBlue_DZE2: SkodaBlue_DZE1 {
 	armor = 50; // car 20
-	upgradeVehicle[] = {"SkodaBlue_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
-	class HitPoints: HitPoints
-	{
-		class HitLFWheel: HitLFWheel
-		{
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
 		};
-		class HitLBWheel: HitLBWheel
-		{
+		class HitLBWheel: HitLBWheel {
 			armor = 0.3;
 		};
-		class HitRFWheel: HitRFWheel
-		{
+		class HitRFWheel: HitRFWheel {
 			armor = 0.3;
 		};
-		class HitRBWheel: HitRBWheel
-		{
+		class HitRBWheel: HitRBWheel {
 			armor = 0.3;
 		};
-		class HitFuel
-		{
+		class HitFuel {
 			armor = 0.28;
 			material = -1;
 			name = "palivo";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitEngine
-		{
+		class HitEngine {
 			armor = 1;
 			material = -1;
 			name = "motor";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitGlass1: HitGlass1
-		{
+		class HitGlass1: HitGlass1 {
 			armor = 0.1;
 		};
-		class HitGlass2: HitGlass2
-		{
+		class HitGlass2: HitGlass2 {
 			armor = 0.1;
 		};
-		class HitGlass3: HitGlass3
-		{
+		class HitGlass3: HitGlass3 {
 			armor = 0.1;
 		};
-		class HitGlass4: HitGlass4
-		{
+		class HitGlass4: HitGlass4 {
 			armor = 0.1;
 		};
 	};
+
+	class Upgrades {
+		ItemLRK[] = {"SkodaBlue_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+	};
 };
-class SkodaRed_DZE2: SkodaRed_DZE1
-{
+class SkodaRed_DZE2: SkodaRed_DZE1 {
 	armor = 50; // car 20
-	upgradeVehicle[] = {"SkodaRed_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
-	class HitPoints: HitPoints
-	{
-		class HitLFWheel: HitLFWheel
-		{
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
 		};
-		class HitLBWheel: HitLBWheel
-		{
+		class HitLBWheel: HitLBWheel {
 			armor = 0.3;
 		};
-		class HitRFWheel: HitRFWheel
-		{
+		class HitRFWheel: HitRFWheel {
 			armor = 0.3;
 		};
-		class HitRBWheel: HitRBWheel
-		{
+		class HitRBWheel: HitRBWheel {
 			armor = 0.3;
 		};
-		class HitFuel
-		{
+		class HitFuel {
 			armor = 0.28;
 			material = -1;
 			name = "palivo";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitEngine
-		{
+		class HitEngine {
 			armor = 1;
 			material = -1;
 			name = "motor";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitGlass1: HitGlass1
-		{
+		class HitGlass1: HitGlass1 {
 			armor = 0.1;
 		};
-		class HitGlass2: HitGlass2
-		{
+		class HitGlass2: HitGlass2 {
 			armor = 0.1;
 		};
-		class HitGlass3: HitGlass3
-		{
+		class HitGlass3: HitGlass3 {
 			armor = 0.1;
 		};
-		class HitGlass4: HitGlass4
-		{
+		class HitGlass4: HitGlass4 {
 			armor = 0.1;
 		};
 	};
+
+	class Upgrades {
+		ItemLRK[] = {"SkodaRed_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+	};
 };
-class SkodaGreen_DZE2: SkodaGreen_DZE1
-{
+class SkodaGreen_DZE2: SkodaGreen_DZE1 {
 	armor = 50; // car 20
-	upgradeVehicle[] = {"SkodaGreen_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
-	class HitPoints: HitPoints
-	{
-		class HitLFWheel: HitLFWheel
-		{
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
 		};
-		class HitLBWheel: HitLBWheel
-		{
+		class HitLBWheel: HitLBWheel {
 			armor = 0.3;
 		};
-		class HitRFWheel: HitRFWheel
-		{
+		class HitRFWheel: HitRFWheel {
 			armor = 0.3;
 		};
-		class HitRBWheel: HitRBWheel
-		{
+		class HitRBWheel: HitRBWheel {
 			armor = 0.3;
 		};
-		class HitFuel
-		{
+		class HitFuel {
 			armor = 0.28;
 			material = -1;
 			name = "palivo";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitEngine
-		{
+		class HitEngine {
 			armor = 1;
 			material = -1;
 			name = "motor";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitGlass1: HitGlass1
-		{
+		class HitGlass1: HitGlass1 {
 			armor = 0.1;
 		};
-		class HitGlass2: HitGlass2
-		{
+		class HitGlass2: HitGlass2 {
 			armor = 0.1;
 		};
-		class HitGlass3: HitGlass3
-		{
+		class HitGlass3: HitGlass3 {
 			armor = 0.1;
 		};
-		class HitGlass4: HitGlass4
-		{
+		class HitGlass4: HitGlass4 {
 			armor = 0.1;
 		};
+	};
+
+	class Upgrades {
+		ItemLRK[] = {"SkodaGreen_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
 	};
 };
 
 // Cargo 3
-class Skoda_DZE3: Skoda_DZE2
-{
+class Skoda_DZE3: Skoda_DZE2 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
-	upgradeVehicle[] = {"Skoda_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
+
+	class Upgrades {
+		ItemTNK[] = {"Skoda_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+	};
 };
-class SkodaBlue_DZE3: SkodaBlue_DZE2
-{
+class SkodaBlue_DZE3: SkodaBlue_DZE2 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
-	upgradeVehicle[] = {"SkodaBlue_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
+
+	class Upgrades {
+		ItemTNK[] = {"SkodaBlue_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+	};
 };
-class SkodaRed_DZE3: SkodaRed_DZE2
-{
+class SkodaRed_DZE3: SkodaRed_DZE2 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
-	upgradeVehicle[] = {"SkodaRed_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
+
+	class Upgrades {
+		ItemTNK[] = {"SkodaRed_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+	};
 };
-class SkodaGreen_DZE3: SkodaGreen_DZE2
-{
+class SkodaGreen_DZE3: SkodaGreen_DZE2 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
-	upgradeVehicle[] = {"SkodaGreen_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
+
+	class Upgrades {
+		ItemTNK[] = {"SkodaGreen_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+	};
 };
 
 // Fuel 4
-class Skoda_DZE4: Skoda_DZE3
-{
+class Skoda_DZE4: Skoda_DZE3 {
 	fuelCapacity = 210; // car 100
 };
-class SkodaBlue_DZE4: SkodaBlue_DZE3
-{
+class SkodaBlue_DZE4: SkodaBlue_DZE3 {
 	fuelCapacity = 210; // car 100
 };
-class SkodaRed_DZE4: SkodaRed_DZE3
-{
+class SkodaRed_DZE4: SkodaRed_DZE3 {
 	fuelCapacity = 210; // car 100
 };
-class SkodaGreen_DZE4: SkodaGreen_DZE3
-{
+class SkodaGreen_DZE4: SkodaGreen_DZE3 {
 	fuelCapacity = 210; // car 100
 };
 
@@ -761,90 +713,88 @@ class car_hatchback: SkodaBase {
 	class Library {
 		libtextdesc = "Civilian Car";
 	};
+
+	class Upgrades {
+		ItemORP[] = {"car_hatchback_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+	};
 };
 
 // Performance 1
-class car_hatchback_DZE1: car_hatchback
-{
+class car_hatchback_DZE1: car_hatchback {
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
-	upgradeVehicle[] = {"car_hatchback_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
+
+	class Upgrades {
+		ItemAVE[] = {"car_hatchback_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+	};
 };
+
 // Armor 2
-class car_hatchback_DZE2: car_hatchback_DZE1
-{
+class car_hatchback_DZE2: car_hatchback_DZE1 {
 	armor = 50; // car 20
-	upgradeVehicle[] = {"car_hatchback_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
-	
-	class HitPoints: HitPoints
-	{
-		class HitLFWheel: HitLFWheel
-		{
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
 		};
-		class HitLBWheel: HitLBWheel
-		{
+		class HitLBWheel: HitLBWheel {
 			armor = 0.3;
 		};
-		class HitRFWheel: HitRFWheel
-		{
+		class HitRFWheel: HitRFWheel {
 			armor = 0.3;
 		};
-		class HitRBWheel: HitRBWheel
-		{
+		class HitRBWheel: HitRBWheel {
 			armor = 0.3;
 		};
-		class HitFuel
-		{
+		class HitFuel {
 			armor = 0.28;
 			material = -1;
 			name = "palivo";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitEngine
-		{
+		class HitEngine {
 			armor = 1;
 			material = -1;
 			name = "motor";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitGlass1: HitGlass1
-		{
+		class HitGlass1: HitGlass1 {
 			armor = 0.1;
 		};
-		class HitGlass2: HitGlass2
-		{
+		class HitGlass2: HitGlass2 {
 			armor = 0.1;
 		};
-		class HitGlass3: HitGlass3
-		{
+		class HitGlass3: HitGlass3 {
 			armor = 0.1;
 		};
-		class HitGlass4: HitGlass4
-		{
+		class HitGlass4: HitGlass4 {
 			armor = 0.1;
 		};
 	};
+
+	class Upgrades {
+		ItemLRK[] = {"car_hatchback_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+	};
 };
+
 // Cargo 3
-class car_hatchback_DZE3: car_hatchback_DZE2
-{
+class car_hatchback_DZE3: car_hatchback_DZE2 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
-	upgradeVehicle[] = {"car_hatchback_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
+
+	class Upgrades {
+		ItemTNK[] = {"car_hatchback_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+	};
 };
+
 // Fuel 4
-class car_hatchback_DZE4: car_hatchback_DZE3
-{
+class car_hatchback_DZE4: car_hatchback_DZE3 {
 	fuelCapacity = 210; // car 100
 };
 
-
-class car_sedan : SkodaBase
-  {
+class car_sedan : SkodaBase {
     scope = 2;
     faction = "CIV";
     maxSpeed = 125;
@@ -1015,10 +965,8 @@ class car_sedan : SkodaBase
       "ArmorCrash3",
       0.25
     };
-    class SoundEvents
-    {
-      class AccelerationIn
-      {
+    class SoundEvents {
+      class AccelerationIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\sedan\int\int-sedan-acce-2",
           0.398107,
@@ -1027,8 +975,7 @@ class car_sedan : SkodaBase
         limit = "0.5";
         expression = "(engineOn*(1-camPos))*gmeterZ";
       };
-      class AccelerationOut
-      {
+      class AccelerationOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\sedan\ext\ext-sedan-acce-2",
           0.398107,
@@ -1039,10 +986,8 @@ class car_sedan : SkodaBase
         expression = "(engineOn*camPos)*gmeterZ";
       };
     };
-    class Sounds
-    {
-      class Engine
-      {
+    class Sounds {
+      class Engine {
         sound[] = {
           "\ca\sounds\Vehicles\Wheeled\sedan\ext\ext-sedan-low-1",
           0.562341,
@@ -1052,8 +997,7 @@ class car_sedan : SkodaBase
         frequency = "(randomizer*0.05+0.95)*rpm";
         volume = "engineOn*camPos*(rpm factor[0.6, 0.2])";
       };
-      class EngineHighOut
-      {
+      class EngineHighOut {
         sound[] = {
           "\ca\sounds\Vehicles\Wheeled\sedan\ext\ext-sedan-high-1",
           0.562341,
@@ -1063,8 +1007,7 @@ class car_sedan : SkodaBase
         frequency = "(randomizer*0.05+0.98)*rpm";
         volume = "engineOn*camPos*(rpm factor[0.45, 0.9])";
       };
-      class IdleOut
-      {
+      class IdleOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\sedan\ext\ext-sedan-idle-1",
           0.354813,
@@ -1074,8 +1017,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "engineOn*camPos*(rpm factor[0.3, 0])";
       };
-      class TiresRockOut
-      {
+      class TiresRockOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",
           0.1,
@@ -1085,8 +1027,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "camPos*rock*(speed factor[2, 20])";
       };
-      class TiresSandOut
-      {
+      class TiresSandOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",
           0.1,
@@ -1096,8 +1037,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "camPos*sand*(speed factor[2, 20])";
       };
-      class TiresGrassOut
-      {
+      class TiresGrassOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",
           0.1,
@@ -1107,8 +1047,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "camPos*grass*(speed factor[2, 20])";
       };
-      class TiresMudOut
-      {
+      class TiresMudOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",
           0.1,
@@ -1118,8 +1057,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "camPos*mud*(speed factor[2, 20])";
       };
-      class TiresGravelOut
-      {
+      class TiresGravelOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",
           0.1,
@@ -1129,8 +1067,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "camPos*gravel*(speed factor[2, 20])";
       };
-      class TiresAsphaltOut
-      {
+      class TiresAsphaltOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",
           0.1,
@@ -1140,8 +1077,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "camPos*asphalt*(speed factor[2, 20])";
       };
-      class NoiseOut
-      {
+      class NoiseOut {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\int-noise3",
           0.1,
@@ -1151,8 +1087,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "camPos*(damper0 max 0.04)*(speed factor[0, 8])";
       };
-      class EngineLowIn
-      {
+      class EngineLowIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\sedan\int\int-sedan-low-1",
           0.562341,
@@ -1161,8 +1096,7 @@ class car_sedan : SkodaBase
         frequency = "(randomizer*0.05+0.95)*rpm";
         volume = "((engineOn*thrust) factor[0.65, 0.2])*(1-camPos)";
       };
-      class EngineHighIn
-      {
+      class EngineHighIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\sedan\int\int-sedan-high-1",
           0.562341,
@@ -1171,8 +1105,7 @@ class car_sedan : SkodaBase
         frequency = "(randomizer*0.05+0.95)*rpm";
         volume = "((engineOn*thrust) factor[0.55, 0.95])*(1-camPos)";
       };
-      class IdleIn
-      {
+      class IdleIn {
         sound[] = {
           "\ca\sounds\Vehicles\Wheeled\sedan\int\int-sedan-idle-1",
           0.354813,
@@ -1181,8 +1114,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "engineOn*(rpm factor[0.3, 0])*(1-camPos)";
       };
-      class TiresRockIn
-      {
+      class TiresRockIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",
           0.1,
@@ -1191,8 +1123,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "(1-camPos)*rock*(speed factor[2, 20])";
       };
-      class TiresSandIn
-      {
+      class TiresSandIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",
           0.1,
@@ -1201,8 +1132,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "(1-camPos)*sand*(speed factor[2, 20])";
       };
-      class TiresGrassIn
-      {
+      class TiresGrassIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3",
           0.1,
@@ -1211,8 +1141,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "(1-camPos)*grass*(speed factor[2, 20])";
       };
-      class TiresMudIn
-      {
+      class TiresMudIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",
           0.1,
@@ -1221,8 +1150,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "(1-camPos)*mud*(speed factor[2, 20])";
       };
-      class TiresGravelIn
-      {
+      class TiresGravelIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",
           0.1,
@@ -1231,8 +1159,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "(1-camPos)*gravel*(speed factor[2, 20])";
       };
-      class TiresAsphaltIn
-      {
+      class TiresAsphaltIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",
           0.1,
@@ -1241,8 +1168,7 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
       };
-      class NoiseIn
-      {
+      class NoiseIn {
         sound[] = {
           "\ca\SOUNDS\Vehicles\Wheeled\BUS\int\noise3",
           0.177828,
@@ -1251,19 +1177,16 @@ class car_sedan : SkodaBase
         frequency = "1";
         volume = "(damper0 max 0.04)*(speed factor[0, 8])*(1-camPos)";
       };
-      class Movement
-      {
+      class Movement {
         sound = "soundEnviron";
         frequency = "1";
         volume = "0";
       };
     };
-    class Library
-    {
+    class Library {
       libTextDesc = "Civilian Car";
     };
-    class Damage
-    {
+    class Damage {
       tex[] = {
       };
       mat[] = {
@@ -1288,84 +1211,83 @@ class car_sedan : SkodaBase
       "\ca\wheeled\data\sedan_ext_co.paa"
     };
     rarityUrban = 0.6;
-  };
 
+	class Upgrades {
+		ItemORP[] = {"car_sedan_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+	};
+};
 
-  // Performance 1
-class car_sedan_DZE1: car_sedan
-{
+// Performance 1
+class car_sedan_DZE1: car_sedan {
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
-	upgradeVehicle[] = {"car_sedan_DZE2",{{"ItemAVE",1},{"PartGeneric",1},{"ItemTankTrap",1}}};
+
+	class Upgrades {
+		ItemAVE[] = {"car_sedan_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+	};
 };
+
 // Armor 2
-class car_sedan_DZE2: car_sedan_DZE1
-{
+class car_sedan_DZE2: car_sedan_DZE1 {
 	armor = 50; // car 20
-	upgradeVehicle[] = {"car_sedan_DZE3",{{"ItemLRK",1},{"ItemTent",1}}};
-	
-	class HitPoints: HitPoints
-	{
-		class HitLFWheel: HitLFWheel
-		{
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
 		};
-		class HitLBWheel: HitLBWheel
-		{
+		class HitLBWheel: HitLBWheel {
 			armor = 0.3;
 		};
-		class HitRFWheel: HitRFWheel
-		{
+		class HitRFWheel: HitRFWheel {
 			armor = 0.3;
 		};
-		class HitRBWheel: HitRBWheel
-		{
+		class HitRBWheel: HitRBWheel {
 			armor = 0.3;
 		};
-		class HitFuel
-		{
+		class HitFuel {
 			armor = 0.28;
 			material = -1;
 			name = "palivo";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitEngine
-		{
+		class HitEngine {
 			armor = 1;
 			material = -1;
 			name = "motor";
 			visual = "";
 			passThrough = 1;
 		};
-		class HitGlass1: HitGlass1
-		{
+		class HitGlass1: HitGlass1 {
 			armor = 0.1;
 		};
-		class HitGlass2: HitGlass2
-		{
+		class HitGlass2: HitGlass2 {
 			armor = 0.1;
 		};
-		class HitGlass3: HitGlass3
-		{
+		class HitGlass3: HitGlass3 {
 			armor = 0.1;
 		};
-		class HitGlass4: HitGlass4
-		{
+		class HitGlass4: HitGlass4 {
 			armor = 0.1;
 		};
 	};
+
+	class Upgrades {
+		ItemLRK[] = {"car_sedan_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+	};
 };
+
 // Cargo 3
-class car_sedan_DZE3: car_sedan_DZE2
-{
+class car_sedan_DZE3: car_sedan_DZE2 {
 	transportMaxWeapons = 20;  // car 10
-	transportMaxMagazines = 100; // car 50 
+	transportMaxMagazines = 100; // car 50
     transportmaxbackpacks = 4; // car 2
-	upgradeVehicle[] = {"car_sedan_DZE4",{{"ItemTNK",1},{"PartFueltank",2}}};
+
+	class Upgrades {
+		ItemTNK[] = {"car_sedan_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+	};
 };
+
 // Fuel 4
-class car_sedan_DZE4: car_sedan_DZE3
-{
+class car_sedan_DZE4: car_sedan_DZE3 {
 	fuelCapacity = 210; // car 100
 };

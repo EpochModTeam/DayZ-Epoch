@@ -179,7 +179,6 @@ class ItemORP: CA_Magazine {
 			script = "spawn player_upgradeVehicle;";
 		};
 	};
-
 };
 class ItemAVE: CA_Magazine {
 	scope = 2;
@@ -197,7 +196,6 @@ class ItemAVE: CA_Magazine {
 			script = "spawn player_upgradeVehicle;";
 		};
 	};
-
 };
 class ItemLRK: CA_Magazine {
 	scope = 2;
@@ -215,7 +213,6 @@ class ItemLRK: CA_Magazine {
 			script = "spawn player_upgradeVehicle;";
 		};
 	};
-
 };
 class ItemTNK: CA_Magazine {
 	scope = 2;
@@ -233,7 +230,23 @@ class ItemTNK: CA_Magazine {
 			script = "spawn player_upgradeVehicle;";
 		};
 	};
-
+};
+class ItemARM: CA_Magazine {
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_VEHUP_ARM;
+	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
+	descriptionShort = $STR_EPOCH_VEHUP_ARM_DESC;
+	weight = 0.1;
+	sfx = "document";
+	class ItemActions {
+		class Upgrades {
+			text = $STR_EPOCH_PLAYER_UPGRADEV;
+			script = "spawn player_upgradeVehicle;";
+		};
+	};
 };
 
 // Documents

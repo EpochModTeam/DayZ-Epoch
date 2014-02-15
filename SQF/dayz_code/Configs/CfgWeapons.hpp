@@ -68,10 +68,13 @@ class Mode_FullAuto: Mode_SemiAuto
 class CfgWeapons {
 
 	class Pecheneg;
-	class Pecheneg_DZ: Pecheneg
-	{
+	class Pecheneg_DZ: Pecheneg {
 		type = "1";
 	};
+	class PK;
+	class PK_DZ: PK {
+		type = "1";
+	}
 
 	class Default {
 		canlock = 0;
@@ -84,7 +87,7 @@ class CfgWeapons {
 	{
 		scope = 2;
 		//melee= "true";
-		
+
 		/*
 		bullet1[] = {"ca\sounds\weapons\shells\big_shell_wood_01",0.0707946,1,15};
 		bullet2[] = {"ca\sounds\weapons\shells\big_shell_wood_02",0.0707946,1,15};
@@ -101,20 +104,20 @@ class CfgWeapons {
 		*/
 
 		//soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
-		
+
 		emptySound[] = {"",10,1};
 		soundBullet[] = {"emptySound",1};
-		
+
 
 		model = "\z\addons\dayz_epoch\models\chainsaw.p3d";
 
 		picture = "\z\addons\dayz_epoch\pictures\equip_chainsaw_CA.paa";
-		
+
 		displayName = "Chainsaw";
-		
+
 		cursor = "";
 		cursoraim = "\ca\Weapons\Data\clear_empty";
-		 
+
 		modes[] = {"manual"};
 		handAnim[]=
 		{
@@ -125,7 +128,7 @@ class CfgWeapons {
 		{
 			recoil = "recoil_auto_machinegun_10outof10";
 			recoilProne = "recoil_auto_machinegun_prone_10outof10";
-			
+
 			dispersion = 0.2;
 
 			begin1[] = {"\dayz_sfx\chainsaw\running2.ogg",1.77828,1,1000};
@@ -143,10 +146,10 @@ class CfgWeapons {
 
 			burst = 1;
 			multiplier = 1;
-		
+
 			soundContinuous = 0;
 			soundBurst = 0;
-			
+
 			useAction = 0;
 			useActionTitle = "";
 
@@ -207,7 +210,7 @@ class CfgWeapons {
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class GrenadeLauncher; // External class reference
-	
+
 	class DMR;	// External class reference
 
 	class ItemMatchbox_DZE: ItemCore
@@ -235,7 +238,7 @@ class CfgWeapons {
 			};
 		};
 	};
-		
+
 	#include "CfgWeapons\Loot.hpp"
 
 	#include "CfgWeapons\Melee\MeleeMachete.hpp"
@@ -250,7 +253,7 @@ class CfgWeapons {
 	#include "CfgWeapons\Melee\MeleeSledgehammer.hpp"
 	//	#include "CfgWeapons\Melee\MeleeBaseBallBatBarbed.hpp"
 	//	#include "CfgWeapons\Melee\MeleeBaseBallBatNails.hpp"
-	 
+
 	#include "CfgWeapons\Item\ItemWatch.hpp"
 	#include "CfgWeapons\Item\ItemMap.hpp"
 	#include "CfgWeapons\Item\ItemMap_Debug.hpp"
@@ -264,12 +267,12 @@ class CfgWeapons {
 	#include "CfgWeapons\Item\ItemKeyKit.hpp"
 	#include "CfgWeapons\Item\ItemKeys.hpp"
 	#include "CfgWeapons\Item\ItemToolbox.hpp"
-	
+
 	//Sniper Rifles
 	#include "CfgWeapons\Weapon\Sniper\AS50.hpp"
 	#include "CfgWeapons\Weapon\Sniper\M107.hpp"
 	#include "CfgWeapons\Weapon\Sniper\KSVK.hpp"
-	
+
 	#include "CfgWeapons\Weapon\Sniper\DMR_DZ.hpp"
 	#include "CfgWeapons\Weapon\Pistol\MakerovSD.hpp"
 	#include "CfgWeapons\Weapon\LMG\m240_scoped.hpp"
