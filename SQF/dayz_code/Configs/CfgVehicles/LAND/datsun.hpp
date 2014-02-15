@@ -48,7 +48,7 @@ class datsun1_civil_1_open_DZE1: datsun1_civil_1_open_DZE {
 
 	class Upgrades {
 		ItemAVE[] = {"datsun1_civil_1_open_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
-		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE1",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_2_covered_DZE1: datsun1_civil_2_covered_DZE {
@@ -69,7 +69,7 @@ class datsun1_civil_2_covered_DZE1: datsun1_civil_2_covered_DZE {
 
 	class Upgrades {
 		ItemAVE[] = {"datsun1_civil_2_covered_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
-		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE1",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_3_open_DZE1: datsun1_civil_3_open_DZE {
@@ -90,7 +90,7 @@ class datsun1_civil_3_open_DZE1: datsun1_civil_3_open_DZE {
 
 	class Upgrades {
 		ItemAVE[] = {"datsun1_civil_3_open_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
-		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE1",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 
@@ -140,7 +140,7 @@ class datsun1_civil_1_open_DZE2: datsun1_civil_1_open_DZE1 {
 
 	class Upgrades {
 		ItemLRK[] = {"datsun1_civil_1_open_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
-		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE2",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_2_covered_DZE2: datsun1_civil_2_covered_DZE1 {
@@ -188,7 +188,7 @@ class datsun1_civil_2_covered_DZE2: datsun1_civil_2_covered_DZE1 {
 
 	class Upgrades {
 		ItemLRK[] = {"datsun1_civil_2_covered_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
-		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE2",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_3_open_DZE2: datsun1_civil_3_open_DZE1 {
@@ -236,7 +236,7 @@ class datsun1_civil_3_open_DZE2: datsun1_civil_3_open_DZE1 {
 
 	class Upgrades {
 		ItemLRK[] = {"datsun1_civil_3_open_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
-		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE2",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 
@@ -248,7 +248,7 @@ class datsun1_civil_1_open_DZE3: datsun1_civil_1_open_DZE2 {
 
 	class Upgrades {
 		ItemTNK[] = {"datsun1_civil_1_open_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
-		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE3",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_2_covered_DZE3: datsun1_civil_2_covered_DZE2 {
@@ -258,7 +258,7 @@ class datsun1_civil_2_covered_DZE3: datsun1_civil_2_covered_DZE2 {
 
 	class Upgrades {
 		ItemTNK[] = {"datsun1_civil_2_covered_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
-		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE3",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_3_open_DZE3: datsun1_civil_3_open_DZE2 {
@@ -268,7 +268,7 @@ class datsun1_civil_3_open_DZE3: datsun1_civil_3_open_DZE2 {
 
 	class Upgrades {
 		ItemTNK[] = {"datsun1_civil_3_open_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
-		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE3",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 
@@ -277,20 +277,20 @@ class datsun1_civil_1_open_DZE4: datsun1_civil_1_open_DZE3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"Pickup_PK_GUE_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_GUE_DZE4",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_2_covered_DZE4: datsun1_civil_2_covered_DZE3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_TK_GUE_EP1_DZE4",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
 class datsun1_civil_3_open_DZE4: datsun1_civil_3_open_DZE3 {
 	fuelCapacity = 210; // car 100
 
 	class Upgrades {
-		ItemARM[] = {"Pickup_PK_INS_DZE",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
+		ItemARM[] = {"Pickup_PK_INS_DZE4",{{"PK_DZ",1}},{{"ItemARM",1},{"PartGeneric",2}}};
 	};
 };
