@@ -1,0 +1,2 @@
+[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Special thanks to http://verthosting.com for hosting our development server.
