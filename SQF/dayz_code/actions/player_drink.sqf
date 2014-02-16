@@ -48,9 +48,14 @@ if (["ItemSoda",_itemorignal] call fnc_inString) then {
     [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 };  
 
-if (_hasoutput and !_invehicle) then {
+if (_hasoutput) then {
     // Selecting output
     _itemtodrop = drink_output select (drink_with_output find _itemorignal);
+
+    if (_invehicle) exitWith {
+        sleep 2;
+        (vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
+    };
 
     sleep 3;
     _nearByPile= nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
