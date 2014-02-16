@@ -7,7 +7,7 @@ _onTheMove = (speed (vehicle player) > 10);
 _dateNow = (DateToNumber date);
 _maxWildZombies = 3;
 _age = -1;
-_radius = 200; 
+_radius = 200;
 _position = getPosATL player;
 
 dayz_spawnZombies = 0;
@@ -46,7 +46,7 @@ if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "Loot30";
 	deleteMarkerLocal "Loot120";
 	deleteMarkerLocal "Agro80";
-	
+
 	_markerstr = createMarkerLocal ["MaxZeds", _position];
 	_markerstr setMarkerColorLocal "ColorYellow";
 	_markerstr setMarkerShapeLocal "ELLIPSE";
@@ -58,7 +58,7 @@ if ("ItemMap_Debug" in items player) then {
 	_markerstr1 setMarkerShapeLocal "ELLIPSE";
 	_markerstr1 setMarkerBrushLocal "Border";
 	_markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];
-	
+
 	_markerstr2 = createMarkerLocal ["Agro80", _position];
 	_markerstr2 setMarkerColorLocal "ColorRed";
 	_markerstr2 setMarkerShapeLocal "ELLIPSE";
@@ -83,11 +83,11 @@ diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZ
 diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
 
 };
-	
+
 
 _nearby = _position nearObjects ["building",_radius];
 _nearbyCount = count _nearby;
-if (_nearbyCount < 1) exitwith 
+if (_nearbyCount < 1) exitwith
 {
 	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
 		[_position] call wild_spawnZombies;
@@ -102,7 +102,7 @@ if (_nearbyCount < 1) exitwith
 		_config = missionConfigFile >> "CfgBuildingLoot" >> _type;
 	};
 	_canLoot = 		isClass (_config);
-	
+
 	if(_canLoot) then {
 
 		_dis = _x distance player;
@@ -124,8 +124,7 @@ if (_nearbyCount < 1) exitwith
 				//Register
 				_x setVariable ["looted",_dateNow,true];
 				//cleanup
-				_handle = [_x] spawn building_spawnLoot;
-				waitUntil{scriptDone _handle};
+				_x call building_spawnLoot;
 			};
 		};
 

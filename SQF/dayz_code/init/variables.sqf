@@ -429,6 +429,12 @@ DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
 
+dayz_maxMaxModels = 80; // max quantity of Man models (player or Z, dead or alive) around players. Below this limit we can spawn Z // max quantity of loot piles around players. Below this limit we can spawn some loot
+dayz_spawnArea = 200; // radius around player where we can spawn loot & Z
+dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
+dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players
+dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
+
 if(isNil "dayz_maxAnimals") then {
 	dayz_maxAnimals = 5;
 };
@@ -656,20 +662,34 @@ if(!isDedicated) then {
 	dayz_areaAffect =		2.5;
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
+//Current local
+	dayz_spawnZombies = 0;
+	dayz_swarmSpawnZombies = 0;
+//Max local
+	dayz_maxLocalZombies = 30; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
+//Current NearBy
+	dayz_CurrentNearByZombies = 0;
+//Max NearBy
+	dayz_maxNearByZombies = 60; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
+//Current total
+	dayz_currentGlobalZombies = 0;
+//Max global zeds.
+	dayz_maxGlobalZeds = 3000;
 	dayz_spawnDelay =		120;
 	dayz_spawnWait =		-120;
 	dayz_lootDelay =		3;
 	dayz_lootWait =			-300;
-	dayz_spawnZombies =		0;
 	//used to count global zeds around players
 	dayz_CurrentZombies = 0;
 	//Used to limit overall zed counts
+	dayz_tickTimeOffset = 0;
+	dayz_currentWeaponHolders = 0;
+	dayz_maxMaxWeaponHolders = 80;
 	dayz_maxCurrentZeds = 0;
 	dayz_inVehicle =		false;
 	dayz_Magazines = 		[];
 	dayzGearSave = 			false;
 	dayz_unsaved =			false;
-	DZE_ActionInProgress =		false;
 	dayz_scaleLight = 		0;
 	dayzDebug = false;
 	dayzState = -1;
@@ -677,6 +697,8 @@ if(!isDedicated) then {
 	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {
 	//	dayzDebug = true;
 	//};
+
+	DZE_ActionInProgress =		false;
 
 	// DayZ Epoch Client only variables
 	if(isNil "DZE_AllowForceSave") then {

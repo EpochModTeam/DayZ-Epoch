@@ -28,6 +28,13 @@
 /* PVS/PVC - Skaronator */
 "PVCDZE_vehSH" 			addPublicVariableEventHandler {(_this select 1) call vehicle_handleDamage}; // set damage to vehicle part
 
+	"PVDZ_Server_Simulation" addPublicVariableEventHandler {
+		_agent = ((_this select 1) select 0);
+		_control = ((_this select 1) select 1);
+
+		_agent enableSimulation _control;
+	};
+
 //Server only
 if (isServer) then {
 	/* PVS/PVC - Skaronator */
@@ -54,8 +61,8 @@ if (isServer) then {
 	"PVDZE_obj_Swap"		addPublicVariableEventHandler {(_this select 1) spawn server_swapObject};
 	// disable zombies server side
 	"PVDZE_zed_Spawn"		addPublicVariableEventHandler {(_this select 1) spawn server_handleZedSpawn};
-	
-	// Dayz epoch custom 
+
+	// Dayz epoch custom
 	"PVDZE_veh_Publish"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh};
 	"PVDZE_veh_Publish2"	addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh2};
 	"PVDZE_veh_Upgrade"	addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh3};
@@ -76,9 +83,9 @@ if (!isDedicated) then {
 	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
 	"PVDZE_obj_Fire"		addPublicVariableEventHandler {nulexp=(_this select 1) spawn BIS_Effects_Burn};
 	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {(_this select 1) call player_tagFriendlyMsg};
-	
+
 	// "PVDZE_obj_Debris"		addPublicVariableEventHandler {(_this select 1) call local_roadDebris};
-	
+
 	"norrnRaDrag"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
 	"norrnRnoAnim"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\noAnim.sqf"};
 };
