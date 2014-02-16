@@ -46,20 +46,15 @@ if (["ItemSoda",_itemorignal] call fnc_inString) then {
     _dis=10;
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
     [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-};  
+};
 
-if (_hasoutput) then {
+if (_hasoutput && !_invehicle) then {
     // Selecting output
     _itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
-    if (_invehicle) exitWith {
-        sleep 2;
-        (vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
-    };
-
     sleep 3;
     _nearByPile= nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
-    if (count _nearByPile ==0) then { 
+    if (count _nearByPile ==0) then {
 		_iPos = getPosATL player;
 		_radius = 0.0;
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
@@ -70,11 +65,12 @@ if (_hasoutput) then {
     _item addMagazineCargoGlobal [_itemtodrop,1];
 };
 
+if (_invehicle) then {
+	sleep 2;
+	(vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
+};
 
-
-
-
-//add infection chance for "ItemWaterbottle", 
+//add infection chance for "ItemWaterbottle",
 if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
     r_player_infected = true;
     player setVariable["USEC_infected",true,true];
