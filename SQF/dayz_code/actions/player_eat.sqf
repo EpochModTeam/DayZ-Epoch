@@ -48,9 +48,14 @@ if (dayz_lastMeal < 3600) then {
 	};
 };
 
-if (_hasoutput and !_invehicle) then {
+if (_hasoutput) then {
     // Selecting output
     _itemtodrop = food_output select (food_with_output find _itemorignal);
+
+    if (_invehicle) exitWith {
+        sleep 2;
+        (vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
+    };
 
     sleep 3;
     _nearByPile= nearestObjects [(getposATL player), ["WeaponHolder","WeaponHolderBase"],2];
