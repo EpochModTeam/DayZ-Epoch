@@ -214,6 +214,7 @@ class CfgVehicles {
 	#include "CfgVehicles\AIR\Mi17.hpp"
 	#include "CfgVehicles\AIR\UH1.hpp"
 	#include "CfgVehicles\AIR\AH6.hpp"
+	#include "CfgVehicles\AIR\C130.hpp"
 
 	// LAND (Armed)
 	#include "CfgVehicles\LAND\HMMWV.hpp"

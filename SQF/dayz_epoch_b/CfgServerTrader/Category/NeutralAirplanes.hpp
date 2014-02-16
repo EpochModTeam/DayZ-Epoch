@@ -4,7 +4,7 @@ class Category_517 {
 		buy[] = {4,"ItemGoldBar10oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
 	};
-	class C130J_US_EP1 {
+	class C130J_US_EP1_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemBriefcase100oz"};
 		sell[] = {2,"ItemBriefcase100oz"};
