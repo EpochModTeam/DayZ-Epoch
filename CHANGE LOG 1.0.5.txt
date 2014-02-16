@@ -1,2 +1,6 @@
+[ADDED] Classname C130J_US_EP1_DZ 50/400/10 @Fank
+
+[CHANGED] PBOPREFIX to $PBOPREFIX$ @Fank
+
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
