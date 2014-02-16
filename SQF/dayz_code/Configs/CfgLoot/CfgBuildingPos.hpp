@@ -673,7 +673,6 @@ class Land_Toilet: Military {
 	//weapons
 	//special
 	//mags special
-		{"equip_rag","magazine",0.02},
 		{"TrashJackDaniels","magazine",0.03},
 		{"ItemTrashToiletpaper","magazine",0.08}
 	//bags
