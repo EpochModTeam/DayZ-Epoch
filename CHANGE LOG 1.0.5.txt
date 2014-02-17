@@ -5,7 +5,7 @@
 
 [CHANGED] PBOPREFIX to $PBOPREFIX$ @Fank
 [CHANGED] Consum Eat/Drink in vehicle will add empty food/drink cans into vehicle inventory. @SilvDev
-[CHANGED] Lootsystem based on DayZ 1.8
+[CHANGED] Lootsystem based on DayZ 1.8 @Skaronator @Fank
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
