@@ -4,8 +4,6 @@
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev
 [FIXED] Cargo Check overlapping. @SilvDev
 
-[CHANGED] PBOPREFIX to $PBOPREFIX$ @Fank
-[CHANGED] Consum Eat/Drink in vehicle will add empty food/drink cans into vehicle inventory. @SilvDev
 [CHANGED] Lootsystem based on DayZ 1.8 @Skaronator @Fank
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
