@@ -65,7 +65,7 @@ if (_hasoutput && !_invehicle) then {
     _item addMagazineCargoGlobal [_itemtodrop,1];
 };
 
-if (_invehicle) then {
+if (_hasoutput && _invehicle) then {
 	sleep 2;
 	(vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
 };
