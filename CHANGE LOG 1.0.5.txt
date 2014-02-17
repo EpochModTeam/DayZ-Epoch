@@ -1,3 +1,4 @@
+[ADDED] Latest version of Napf 1.0 by Momo
 [ADDED] Classname C130J_US_EP1_DZ 50/400/10 @Fank
 
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev
