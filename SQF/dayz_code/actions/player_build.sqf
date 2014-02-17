@@ -2,7 +2,7 @@
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_objHupDiff","_needNear","_vehicle","_inVehicle","_requireplot","_objHDiff","_isLandFireDZ","_isTankTrap"];
+private ["_location","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_needNear","_vehicle","_inVehicle","_requireplot","_objHDiff","_isLandFireDZ","_isTankTrap"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_40") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -282,7 +282,7 @@ if (_hasrequireditem) then {
 
 			if(_zheightdirection == "up_alt") then {
 				_position set [2,((_position select 2)+1)];
-				_objHupDiff = _objHupDiff + 1;
+				_objHDiff = _objHDiff + 1;
 			};
 			if(_zheightdirection == "down_alt") then {
 				_position set [2,((_position select 2)-1)];
@@ -291,7 +291,7 @@ if (_hasrequireditem) then {
 
 			if(_zheightdirection == "up_ctrl") then {
 				_position set [2,((_position select 2)+0.01)];
-				_objHupDiff = _objHupDiff + 0.01;
+				_objHDiff = _objHDiff + 0.01;
 			};
 			if(_zheightdirection == "down_ctrl") then {
 				_position set [2,((_position select 2)-0.01)];
