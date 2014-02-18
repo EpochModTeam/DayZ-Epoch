@@ -28,12 +28,12 @@
 /* PVS/PVC - Skaronator */
 "PVCDZE_vehSH" 			addPublicVariableEventHandler {(_this select 1) call vehicle_handleDamage}; // set damage to vehicle part
 
-	"PVDZ_Server_Simulation" addPublicVariableEventHandler {
-		_agent = ((_this select 1) select 0);
-		_control = ((_this select 1) select 1);
+"PVDZE_Server_Simulation" addPublicVariableEventHandler {
+	_agent = ((_this select 1) select 0);
+	_control = ((_this select 1) select 1);
 
-		_agent enableSimulation _control;
-	};
+	_agent enableSimulation _control;
+};
 
 //Server only
 if (isServer) then {
