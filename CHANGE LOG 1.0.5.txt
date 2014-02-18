@@ -1,11 +1,13 @@
 [ADDED] Latest version of Napf 1.0 by Momo
 [ADDED] Classname C130J_US_EP1_DZ Weapon: 50 Magazine: 400 Backpack: 10 @Fank
 
+[FIXED] Instance already initialized error in server_monitor.sqf @vbawol
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev
 [FIXED] Cargo Check overlapping. @SilvDev
 
 [CHANGED] Lootsystem based on DayZ 1.8 @Skaronator @Fank
 [CHANGED] Consum Eat/Drink in vehicle will add empty food/drink cans into vehicle inventory. @SilvDev @Fank
+[CHANGED] SQL Removed empty fuel barrel from vehicle parts trader and moved to wholesaler as increased buy/sell price. @Fank
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
