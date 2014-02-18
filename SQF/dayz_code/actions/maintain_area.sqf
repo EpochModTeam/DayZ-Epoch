@@ -49,7 +49,7 @@ switch true do {
 	case (_count <= 475): {_requirements = [["ItemBriefcase100oz",6]]};
 	case (_count <= 550): {_requirements = [["ItemBriefcase100oz",7]]};
 	case (_count <= 625): {_requirements = [["ItemBriefcase100oz",8]]};
-	case (_count > 700):  {_requirements = [["ItemBriefcase100oz",9]]};
+	case (_count > 625):  {_requirements = [["ItemBriefcase100oz",9]]};
 };
 
 
