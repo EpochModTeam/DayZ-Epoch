@@ -2,9 +2,6 @@ class RscDisplaySpawnSelecter {
 	idd = 6903;
 	enableDisplay = 1;
 	
-	onLoad = "DZE_DisplaySpawnSelector = true;";
-	//onUnload = "DZE_DisplaySpawnSelector = false;";
-	
 	class controlsBackground {
 		class Mainback : RscPicture {
 			idc = -1;
@@ -28,7 +25,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.3044 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;DZE_DisplaySpawnSelector = false;dayz_selectRegion = 1;";
+			action = "closeDialog 0;dayz_selectRegion = 1;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		class RscSelectedRegion2: RscActiveText
@@ -42,7 +39,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.270356 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;DZE_DisplaySpawnSelector = false;dayz_selectRegion = 0;";
+			action = "closeDialog 0;dayz_selectRegion = 0;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		class RscSelectedRegion3: RscActiveText
@@ -56,7 +53,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.275 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;DZE_DisplaySpawnSelector = false;dayz_selectRegion = 2;";
+			action = "closeDialog 0;dayz_selectRegion = 2;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		class RscSelectedRegion4: RscActiveText
@@ -70,7 +67,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.274546 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;DZE_DisplaySpawnSelector = false;dayz_selectRegion = 3;";
+			action = "closeDialog 0;dayz_selectRegion = 3;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		class RscSelectedRegion5: RscActiveText
@@ -84,7 +81,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.275001 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;DZE_DisplaySpawnSelector = false;dayz_selectRegion = 4;";
+			action = "closeDialog 0;dayz_selectRegion = 4;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		class RscSelectedRegion6: RscActiveText
@@ -98,7 +95,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.275 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;DZE_DisplaySpawnSelector = false;dayz_selectRegion = 5;";
+			action = "closeDialog 0;dayz_selectRegion = 5;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		class RscSelectedRegionRandom: RscActiveText
@@ -112,7 +109,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.331135035 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;DZE_DisplaySpawnSelector = false;dayz_selectRegion = 9;";
+			action = "closeDialog 0;dayz_selectRegion = 9;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		
