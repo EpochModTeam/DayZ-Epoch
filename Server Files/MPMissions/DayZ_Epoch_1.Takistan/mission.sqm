@@ -1331,8 +1331,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone1";
 			expCond="(player distance zone1) < 100;";
-			expActiv="TitleText[""Now entering trader city Khush"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Khush"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Khush"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Khush"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1349,8 +1349,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone2";
 			expCond="(player distance zone2) < 100;";
-			expActiv="TitleText[""Now entering trader city Nur"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Nur"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Nur"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Nur"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1367,8 +1367,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone3";
 			expCond="(player distance zone3) < 100;";
-			expActiv="TitleText[""Now entering trader city Garm"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Garm"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Garm"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Garm"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_1";

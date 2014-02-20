@@ -1358,8 +1358,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity1";
 			expCond="(player distance TraderCity1) < 100; ";
-			expActiv="TitleText[""Now Entering Trader City Pikla"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Pikla"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Pikla"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Pikla"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1375,8 +1375,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity2";
 			expCond="(player distance TraderCity2) < 100; ";
-			expActiv="TitleText[""Now Entering Trader City Selca"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Selca"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Selca"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Selca"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1392,8 +1392,8 @@ class Mission
 			age="UNKNOWN";
 			name="HeroVendors";
 			expCond="(player distance HeroVendors) < 100; ";
-			expActiv="TitleText[""Now Entering Hero Trader Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Hero Trader Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Hero Trader Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Hero Trader Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1409,8 +1409,8 @@ class Mission
 			age="UNKNOWN";
 			name="WholeSaler1";
 			expCond="(player distance WholeSaler1) < 100; ";
-			expActiv="TitleText[""Now Entering South's Wholesale"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving South's Wholesale"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""South's Wholesale"",true] spawn trader_enter;";
+			expDesactiv="[""South's Wholesale"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1426,8 +1426,8 @@ class Mission
 			age="UNKNOWN";
 			name="BanditTrader";
 			expCond="(player distance BanditTrader) < 100; ";
-			expActiv="TitleText[""Now Entering Bandit Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Bandit Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Bandit Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1443,8 +1443,8 @@ class Mission
 			age="UNKNOWN";
 			name="AWOLsAirField";
 			expCond="(player distance AWOLsAirField) < 100; ";
-			expActiv="TitleText[""Now Entering AWOLs Airfield"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving AWOLs Airfield"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""AWOLs Airfield"",true] spawn trader_enter;";
+			expDesactiv="[""AWOLs Airfield"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1460,8 +1460,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesaler2";
 			expCond="(player distance Wholesaler2) < 100; ";
-			expActiv="TitleText[""Now Entering West's Wholesale"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving West's Wholesale"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""West's Wholesale"",true] spawn trader_enter;";
+			expDesactiv="[""West's Wholesale"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1477,8 +1477,8 @@ class Mission
 			age="UNKNOWN";
 			name="BoatVendor";
 			expCond="(player distance BoatVendor) < 100; ";
-			expActiv="TitleText[""Now Entering Sams Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Sams Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Sams Boat Vendor"",true] spawn trader_enter;";
+			expDesactiv="[""Sams Boat Vendor"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1494,8 +1494,8 @@ class Mission
 			age="UNKNOWN";
 			name="PlanicaTraders";
 			expCond="(player distance PlanicaTraders) < 100; ";
-			expActiv="TitleText[""Now Entering Trader City Planica"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Planica"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Planica"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Planica"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1511,8 +1511,8 @@ class Mission
 			age="UNKNOWN";
 			name="MelloVehicleRepair";
 			expCond="(player distance MelloVehicleRepair) < 100; ";
-			expActiv="TitleText[""Now Entering Mello"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Mello"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Mello"",true] spawn trader_enter;";
+			expDesactiv="[""Mello"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1528,8 +1528,8 @@ class Mission
 			age="UNKNOWN";
 			name="BOAT12";
 			expCond="(player distance BOAT12) < 100; ";
-			expActiv="TitleText[""Now Entering North Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving North Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""North Boat Vendor"",true] spawn trader_enter;";
+			expDesactiv="[""North Boat Vendor"",true] spawn trader_leave;";
 			class Effects
 			{
 			};

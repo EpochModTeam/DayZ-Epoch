@@ -1344,8 +1344,8 @@ class Mission
 			age="UNKNOWN";
 			name="Lenz";
 			expCond="(player distance Lenz) < 50;";
-			expActiv="TitleText[""Now Entering Trader City Lenzburg"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Lenzburg"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Lenzburg"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Lenzburg"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1361,8 +1361,8 @@ class Mission
 			age="UNKNOWN";
 			name="Emmen";
 			expCond="(player distance Emmen) < 100;";
-			expActiv="TitleText[""Now Entering Trader City Emmen"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Emmen"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Emmen"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Emmen"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1378,8 +1378,8 @@ class Mission
 			age="UNKNOWN";
 			name="Schratten";
 			expCond="(player distance Schratten) < 75;";
-			expActiv="TitleText[""Now Entering Trader City Schratten"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Schratten"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Schratten"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Schratten"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1393,8 +1393,8 @@ class Mission
 			age="UNKNOWN";
 			name="Bandit";
 			expCond="(player distance Bandit) < 50;";
-			expActiv="TitleText[""Now Entering Bandit Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Bandit Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Bandit Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1408,8 +1408,8 @@ class Mission
 			age="UNKNOWN";
 			name="Hero";
 			expCond="(player distance Hero) < 50;";
-			expActiv="TitleText[""Now Entering Hero Vendor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Hero Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Hero Vendor"",true] spawn trader_enter;";
+			expDesactiv="[""Hero Vendor"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1423,8 +1423,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesale1";
 			expCond="(player distance Wholesale1) < 50;";
-			expActiv="TitleText[""Now Entering West Wholesaler"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving West Wholesaler"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""West Wholesaler"",true] spawn trader_enter;";
+			expDesactiv="[""West Wholesaler"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1438,8 +1438,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesaler";
 			expCond="(player distance Wholesaler) < 50;";
-			expActiv="TitleText[""Now Entering Wholesaler"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Wholesaler"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Wholesaler"",true] spawn trader_enter;";
+			expDesactiv="[""Wholesaler"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1453,8 +1453,8 @@ class Mission
 			age="UNKNOWN";
 			name="Boat1";
 			expCond="(player distance boat1) < 50;";
-			expActiv="TitleText[""Now Entering Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Boat Vendor"",true] spawn trader_enter;";
+			expDesactiv="[""Boat Vendor"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1468,27 +1468,27 @@ class Mission
 			age="UNKNOWN";
 			name="Boat2";
 			expCond="(player distance boat2) < 50;";
-			expActiv="TitleText[""Now Entering Boat Vendor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Boat Vendor"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Boat Vendor"",true] spawn trader_enter;";
+			expDesactiv="[""Boat Vendor"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
 		};
 		class Item9
-        		{
-            		position[]={15128.379,19.974716,16421.879};
-            		activationBy="WEST";
-            		repeating=1;
-            		interruptable=1;
-            		age="UNKNOWN";
-            		name="AWOL";
-            		expCond="(player distance awol) < 75;";
-            		expActiv="TitleText[""Now Entering Aircraft Vendor"",""PLAIN DOWN""]; canbuild = false;";
-            		expDesactiv="TitleText[""Now Leaving Aircraft Vendor"",""PLAIN DOWN""]; canbuild = true;";
-            		class Effects
-            		{
-            		};
-	        };		
+		{
+			position[]={15128.379,19.974716,16421.879};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="AWOL";
+			expCond="(player distance awol) < 75;";
+			expActiv="[""Aircraft Vendor"",true] spawn trader_enter;";
+			expDesactiv="[""Aircraft Vendor"",true] spawn trader_leave;";
+			class Effects
+			{
+			};
+		};
 	};
 };
 class Intro

@@ -1310,8 +1310,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonestary";
 			expCond="(player distance zonestary) < 100;";
-			expActiv="TitleText[""Now entering trader city Stary"",""PLAIN DOWN""]; canbuild = false; inTraderCity = ""Stary"";";
-			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; canbuild = true; inTraderCity = ""Any"";";
+			expActiv="[""trader city Stary"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Stary"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1327,8 +1327,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebash";
 			expCond="(player distance zonebash) < 100;";
-			expActiv="TitleText[""Now entering trader city Bash"",""PLAIN DOWN""]; canbuild = false; inTraderCity = ""Bash"";";
-			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; canbuild = true; inTraderCity = ""Any"";";
+			expActiv="[""trader city Bash"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Bash"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1344,8 +1344,8 @@ class Mission
 			age="UNKNOWN";
 			name="zoneklen";
 			expCond="(player distance zoneklen) < 100;";
-			expActiv="TitleText[""Now entering trader city Klen"",""PLAIN DOWN""]; canbuild = false; inTraderCity = ""Klen"";";
-			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; canbuild = true; inTraderCity = ""Any"";";
+			expActiv="[""trader city Klen"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Klen"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1361,8 +1361,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebandit";
 			expCond="(player distance zonebandit) < 100;";
-			expActiv="canbuild = false; inTraderCity = ""Bandit Trader"";";
-			expDesactiv="canbuild = true; inTraderCity = ""Any"";";
+			expActiv="[""Bandit Trader"",false] spawn trader_enter;";
+			expDesactiv="[""Bandit Trader"",false] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1378,8 +1378,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonehero";
 			expCond="(player distance zonehero) < 100;";
-			expActiv="canbuild = false; inTraderCity = ""Hero Trader"";";
-			expDesactiv="canbuild = true; inTraderCity = ""Any"";";
+			expActiv="[""Hero Trader"",false] spawn trader_enter;";
+			expDesactiv="[""Hero Trader"",false] spawn trader_leave;";
 			class Effects
 			{
 			};

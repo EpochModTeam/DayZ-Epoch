@@ -1338,8 +1338,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneRaven";
 			expCond="(player distance ZoneRaven) < 100;";
-			expActiv="TitleText[""Now entering trader city Raven Rock"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Raven Rock"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Raven Rock"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Raven Rock"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1355,8 +1355,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneRaun";
 			expCond="(player distance ZoneRaun) < 100;";
-			expActiv="TitleText[""Now entering trader city Raun"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Raun"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Raun"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Raun"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1372,8 +1372,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneHero";
 			expCond="(player distance ZoneHero) < 100;";
-			expActiv="TitleText[""Now entering Hero Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Hero Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Hero Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Hero Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1389,8 +1389,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneSouthWholesale";
 			expCond="(player distance ZoneSouthWholesale) < 100;";
-			expActiv="TitleText[""Now entering Wholesalers"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Wholesalers"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Wholesalers"",true] spawn trader_enter;";
+			expDesactiv="[""Wholesalers"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1406,8 +1406,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneAircraft";
 			expCond="(player distance ZoneAircraft) < 100;";
-			expActiv="TitleText[""Now entering Airfield"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Airfield"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Airfield"",true] spawn trader_enter;";
+			expDesactiv="[""Airfield"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1423,8 +1423,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneBandit";
 			expCond="(player distance ZoneBandit) < 100;";
-			expActiv="TitleText[""Now entering Bandit Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Bandit Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Bandit Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1440,8 +1440,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneNorthWholesale";
 			expCond="(player distance ZoneNorthWholesale) < 100;";
-			expActiv="TitleText[""Now entering Wholesalers"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Wholesalers"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Wholesalers"",true] spawn trader_enter;";
+			expDesactiv="[""Wholesalers"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1457,8 +1457,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneBlackMarket";
 			expCond="(player distance ZoneBlackMarket) < 100;";
-			expActiv="TitleText[""Now entering the Black Market"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving the Black Market"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Black Market"",true] spawn trader_enter;";
+			expDesactiv="[""Black Market"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1474,8 +1474,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneBoat";
 			expCond="(player distance ZoneBoat) < 100;";
-			expActiv="TitleText[""Now entering Boat Dealer"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Boat Dealer"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Boat Dealer"",true] spawn trader_enter;";
+			expDesactiv="[""Boat Dealer"",true] spawn trader_leave;";
 			class Effects
 			{
 			};

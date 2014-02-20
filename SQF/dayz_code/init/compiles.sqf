@@ -127,6 +127,11 @@ if (!isDedicated) then {
 	player_hasTools =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_hasTools.sqf";
 	player_checkItems =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkItems.sqf";
 	player_removeItems =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_removeItems.sqf";
+
+	// trader
+	trader_enter =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\trader_enter.sqf";
+	trader_leave =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\trader_leave.sqf";
+
 	// combination of check and remove items
 	player_checkAndRemoveItems = {
 		private ["_items","_b"];

@@ -1314,8 +1314,8 @@ class Mission
 			age="UNKNOWN";
 			name="BanditVendor";
 			expCond="(player distance BanditVendor) < 100; ";
-			expActiv="TitleText[""Now Entering Bandit Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Bandit Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Bandit Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1331,8 +1331,8 @@ class Mission
 			age="UNKNOWN";
 			name="AirVehicleVendor";
 			expCond="(player distance AirVehicleVendor) < 100; ";
-			expActiv="TitleText[""Now Entering AWOLs Air Vehicles"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving AWOLs Air Vehicles"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""AWOLs Air Vehicles"",true] spawn trader_enter;";
+			expDesactiv="[""AWOLs Air Vehicles"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1348,8 +1348,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity1";
 			expCond="(player distance TraderCity1) < 100; ";
-			expActiv="TitleText[""Now Entering Trader CIty Lixovo"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Lixovo"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Lixovo"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Lixovo"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1365,8 +1365,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesaler";
 			expCond="(player distance Wholesaler) < 100; ";
-			expActiv="TitleText[""Now Entering Pauls Wholesale Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Bandit Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Pauls Wholesale Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Pauls Wholesale Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1382,8 +1382,8 @@ class Mission
 			age="UNKNOWN";
 			name="HeroVendor";
 			expCond="(player distance HeroVendor) < 100; ";
-			expActiv="TitleText[""Now Entering Hero Camp"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Hero Camp"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Hero Camp"",true] spawn trader_enter;";
+			expDesactiv="[""Hero Camp"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1399,8 +1399,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity2";
 			expCond="(player distance TraderCity2) < 100; ";
-			expActiv="TitleText[""Now Entering Trader CIty Didina"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader CIty Didina"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Didina"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Didina"",true] spawn trader_leave;";
 			class Effects
 			{
 			};

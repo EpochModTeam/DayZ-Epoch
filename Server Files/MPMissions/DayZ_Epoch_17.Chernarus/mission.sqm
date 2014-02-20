@@ -1305,8 +1305,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebash";
 			expCond="(player distance zonebash) < 100;";
-			expActiv="TitleText[""Now entering trader city Bash"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Bash"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Bash"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1320,8 +1320,8 @@ class Mission
 			age="UNKNOWN";
 			name="zoneklen";
 			expCond="(player distance zoneklen) < 100;";
-			expActiv="TitleText[""Now entering trader city Klen"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Klen"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Klen"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1335,8 +1335,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonestary";
 			expCond="(player distance zonestary) < 100;";
-			expActiv="TitleText[""Now entering trader city Stary"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Stary"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Stary"",true] spawn trader_leave;";
 			class Effects
 			{
 			};

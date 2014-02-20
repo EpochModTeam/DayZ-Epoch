@@ -1391,8 +1391,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonesabina";
 			expCond="(player distance zonesabina) < 40;";
-			expActiv="TitleText[""Now entering Trader City Sabina"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Trader City Sabina"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Sabina"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Sabina"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1408,8 +1408,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonelyep";
 			expCond="(player distance zonelyep) < 50;";
-			expActiv="TitleText[""Now entering Trader City Lyepestok"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Trader City Lyepestok"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Lyepestok"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Lyepestok"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1425,8 +1425,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebilgrad";
 			expCond="(player distance zonebilgrad) < 50;";
-			expActiv="TitleText[""Now entering Trader City Bilgrad"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Trader City Bilgrad"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Bilgrad"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Bilgrad"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1442,8 +1442,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebranibor";
 			expCond="(player distance zonebranibor) < 60;";
-			expActiv="TitleText[""Now entering Trader City Branibor"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Trader City Branibor"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Branibor"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Branibor"",true] spawn trader_leave;";
 			class Effects
 			{
 			};

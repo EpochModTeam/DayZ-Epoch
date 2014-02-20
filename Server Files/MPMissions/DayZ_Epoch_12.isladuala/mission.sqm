@@ -1357,8 +1357,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonenubak";
 			expCond="(player distance zonenubak) < 100;";
-			expActiv="TitleText[""Now entering trader city Nubak"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Nubak"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Nubak"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Nubak"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1373,8 +1373,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonepinley";
 			expCond="(player distance zonepinley) < 100;";
-			expActiv="TitleText[""Now entering trader city Pinley"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Pinley"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Pinley"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Pinley"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1389,8 +1389,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonecamara";
 			expCond="(player distance zonecamara) < 100;";
-			expActiv="TitleText[""Now entering trader city Camara"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Camara"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Camara"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Camara"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_1";

@@ -1315,8 +1315,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone3";
 			expCond="(player distance zone3) < 100;";
-			expActiv="TitleText[""Now entering trader city Corazol"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Corazol"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Corazol"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Corazol"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1332,8 +1332,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone2";
 			expCond="(player distance zone2) < 100;";
-			expActiv="TitleText[""Now entering trader city Bag"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Bag"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Bag"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Bag"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1349,8 +1349,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone1";
 			expCond="(player distance zone1) < 100;";
-			expActiv="TitleText[""Now entering trader city Ixel"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Ixel"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Ixel"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Ixel"",true] spawn trader_leave;";
 			class Effects
 			{
 			};
@@ -1364,8 +1364,8 @@ class Mission
 			age="UNKNOWN";
 			name="bmarket";
 			expCond="(player distance bmarket) < 50;";
-			expActiv="TitleText[""Now entering Black Market"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Black Market"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""Black Market"",true] spawn trader_enter;";
+			expDesactiv="[""Black Market"",true] spawn trader_leave;";
 			class Effects
 			{
 			};

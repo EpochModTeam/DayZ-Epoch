@@ -712,6 +712,9 @@ if(!isDedicated) then {
 	if(isNil "DZE_ForceNameTagsOff") then {
 		DZE_ForceNameTagsOff = false;
 	};
+	if(isNil "DZE_ForceNameTagsInTrader") then {
+		DZE_ForceNameTagsInTrader = false;
+	};
 	if(isNil "DZE_HaloJump") then {
 		DZE_HaloJump = true;
 	};

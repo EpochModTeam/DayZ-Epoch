@@ -1291,8 +1291,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebash";
 			expCond="(player distance zonebash) < 100;";
-			expActiv="TitleText[""Now entering trader city Berezniki"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Berezniki"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Berezniki"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Berezniki"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_3";
@@ -1309,8 +1309,8 @@ class Mission
 			age="UNKNOWN";
 			name="zoneklen";
 			expCond="(player distance zoneklen) < 100;";
-			expActiv="TitleText[""Now entering trader city Jesco"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now leaving trader city Jesco"",""PLAIN DOWN""]; canbuild = true;";
+			expActiv="[""trader city Jesco"",true] spawn trader_enter;";
+			expDesactiv="[""trader city Jesco"",true] spawn trader_leave;";
 			class Effects
 			{
 				soundDet="arabian_market_3";

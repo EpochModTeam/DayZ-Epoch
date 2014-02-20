@@ -6996,6 +6996,26 @@
 			<!-- <French></French> -->
 			<!-- <Czech></Czech> -->
 		</Key>
+		<Key ID="STR_EPOCH_TRADER_ENTER">
+			<Original>Now entering %1</Original>
+			<English>Now entering %1</English>
+			<German>Du betrittst %1</German>
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_TRADER_LEAVE">
+			<Original>Now leaving %1</Original>
+			<English>Now leaving %1</English>
+			<German>Du verlässt %1</German>
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 			<Original>1.04</Original>
 			<English>1.04</English>
