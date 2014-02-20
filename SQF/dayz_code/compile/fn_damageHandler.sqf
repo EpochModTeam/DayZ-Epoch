@@ -1,4 +1,4 @@
- 
+
 scriptName "Functions\misc\fn_damageHandler.sqf";
 /***********************************************************
 	PROCESS DAMAGE TO A UNIT
@@ -29,20 +29,20 @@ if (_unitIsPlayer) then {
 		if ((_source != player) and _isPlayer) then {
 		//Enable aggressor Actions
 			if (_source isKindOf "CAManBase") then {
-				_source setVariable["startcombattimer",1];	
+				_source setVariable["startcombattimer",1];
 			};
 			_canHitFree = 	player getVariable ["freeTarget",false];
 			_isBandit = (player getVariable["humanity",0]) <= -5000;
 			_isPZombie = player isKindOf "PZombie_VB";
-			
+
 			if (!_canHitFree and !_isBandit and !_isPZombie) then {
 				//Process Morality Hit
 				_myKills = 0 max (1 - (player getVariable ["humanKills",0]) / 5);
 				_humanityHit = -100 * _myKills * _damage;
-			
+
 				/* PVS/PVC - Skaronator */
 				if (_humanityHit != 0) then {
-					[_source,_humanityHit] spawn {	
+					[_source,_humanityHit] spawn {
 						private ["_source","_humanityHit"];
 						_source = _this select 0;
 						_humanityHit = _this select 1;
@@ -101,7 +101,7 @@ if (_hit in USEC_MinorWounds) then {
 
 if (_unitIsPlayer) then {
 //incombat
-	_unit setVariable["startcombattimer", 1, false];	
+	_unit setVariable["startcombattimer", 1];
 };
 
 if (_damage > 0.1) then {
@@ -117,10 +117,10 @@ if (_damage > 0.1) then {
 if (_damage > 0.4) then {	//0.25
 	/*
 		BLEEDING
-	*/		
+	*/
 	_wound = _hit call fnc_usec_damageGetWound;
 	_isHit = _unit getVariable[_wound,false];
-	if (_unitIsPlayer) then {	
+	if (_unitIsPlayer) then {
 		_rndPain = 		(random 10);
 		_rndInfection = (random 500);
 		_hitPain = 		(_rndPain < _damage);
@@ -141,7 +141,7 @@ if (_damage > 0.4) then {	//0.25
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
 			};
-			
+
 		};
 		if (_hitPain) then {
 			//Set Pain if not already
@@ -155,11 +155,11 @@ if (_damage > 0.4) then {	//0.25
 		};
 	};
 	if(!_isHit) then {
-		
+
 		if(!_isPZombie) then {
 			//Create Wound
 			_unit setVariable[_wound,true,true];
-			
+
 			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
 			/* PVS/PVC - Skaronator */
 			_pos = getPosATL _unit;
@@ -193,8 +193,8 @@ if (_damage > 0.4) then {	//0.25
 };
 if (_type == 1) then {
 	/*
-		BALISTIC DAMAGE		
-	*/		
+		BALISTIC DAMAGE
+	*/
 	if ((_damage > 0.01) and (_unitIsPlayer)) then {
 		//affect the player
 		[20,45] call fnc_usec_pitchWhine; //Visual , Sound

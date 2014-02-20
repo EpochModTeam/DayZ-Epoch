@@ -8,7 +8,7 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 	_weapon = 	_this select 3;
 	_ammo = 	_this select 6;
 	_killerID = _firer getVariable["MemberID",0];
-	
+
 	_handled = 	false;
 	_arc = 60;
 	_isBallistic = (getNumber (configfile >> "CfgAmmo" >> _ammo >> "whistleOnFire") > 0);
@@ -18,18 +18,18 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 	_inVehicle = (vehicle _unit != _unit);
 	_evType = "";
 	_recordable = false;
-	
+
 	// Both the firer and those nearby (<=8m) go into "combat" to prevent ALT-F4
 	//diag_log ("DEBUG: AMMO TYPE: " +str(_ammo));
-	_firer setVariable["startcombattimer", 1, false];
+	_firer setVariable["startcombattimer", 1];
 	if (_distance <= 8) then {
-		_unit setVariable["startcombattimer", 1, false];
+		_unit setVariable["startcombattimer", 1];
 	};
 
-	
+
 	if (_inVehicle) exitWith{};
 	if (_firer == player) exitWith{};
-	
+
 	//Is in danger angle?
 	_turretDir = _firer weaponDirection _weapon;
 	_weaponDir = ((_turretDir select 0) atan2 (_turretDir select 1));
@@ -42,7 +42,7 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 	//In front?
 	_isInFront = (_firingArc < _arc);
 	_isInRear = (_firingArc > (180 - _arc));
-	
+
 	//Ballistic Handler
 	if ((_isBallistic and _isInFront) and (_distance < (_dmgDistance * 2))) then {
 		if (_distance < _dmgDistance) then {
@@ -88,6 +88,6 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 				[10,20] call fnc_usec_pitchWhine; //Visual , Sound
 				addCamShake [15, 0.8, 25];
 			};
-		};	
+		};
 	};
 	//Launcher Handler

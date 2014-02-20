@@ -21,9 +21,9 @@ while {true} do {
 	// _size = 	(sizeOf typeOf _refObj) * _factor;
 	_vel = 		velocity player;
 	_speed = 	(round((_vel distance [0,0,0]) * 3.5)) min 18;
-	
+
 	// dayz_areaAffect = _size;
-	
+
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
 	if (_lastUpdate > 8) then {
@@ -35,9 +35,9 @@ while {true} do {
 
 			// Check for radiation
 			DZE_InRadiationZone = false;
-			
+
 			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos OR (dayz_myPosition select 1) < dayz_minpos OR (dayz_myPosition select 0) > dayz_maxpos OR (dayz_myPosition select 1) > dayz_maxpos);
-			
+
 			if(_outsideMap OR DZE_Quarantine) then {
 				DZE_InRadiationZone = true;
 			};
@@ -68,7 +68,7 @@ while {true} do {
 		player setVariable ["temperature",dayz_temperatur,true];
 		_lastTemp = dayz_temperatur;
 	};
-	
+
 	//can get nearby infection
 	if (!r_player_infected and !_isPZombie) then {
 		//Infectionriskstart
@@ -98,16 +98,16 @@ while {true} do {
 			};
 		};
 	};
-	
+
 	//If has infection reduce blood cough and add shake
 	if (r_player_infected) then {
-		if !(player getVariable["USEC_infected",false]) then { 
-			player setVariable["USEC_infected",true,true];  
+		if !(player getVariable["USEC_infected",false]) then {
+			player setVariable["USEC_infected",true,true];
 		};
-		
+
 		_rnd = ceil (random 8);
 		[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
-		
+
 		if (_rnd < 3) then {
 			addCamShake [2, 1, 25];
 		};
@@ -115,13 +115,13 @@ while {true} do {
 			r_player_blood = r_player_blood - 3;
 		};
 	};
-	
+
 	//Pain Shake Effects
 	if (r_player_inpain and !r_player_unconscious) then {
 		playSound "breath_1";
 		addCamShake [2, 1, 25];
 	};
-	
+
 	//Hunger Effect
 	_foodVal = 		dayz_statusArray select 0;
 	_thirstVal = 	dayz_statusArray select 1;
@@ -144,7 +144,7 @@ while {true} do {
 
 	// Radiation zones rapid blood loss
 	if (DZE_InRadiationZone) then {
-		
+
 		_radsound = "radzone1";
 		_bloodloss = 10;
 		if(_radTimer > 5 AND _radTimer < 10) then {
@@ -171,7 +171,7 @@ while {true} do {
 	} else {
 		_radTimer = 0;
 	};
-	
+
 	// Health uptick when healty not thirsty or hungry
 	if (_foodVal >= 0.9 and _thirstVal >= 0.9) then {
 		if (!r_player_infected and !r_player_inpain and !r_player_injured and !DZE_InRadiationZone) then {
@@ -183,20 +183,20 @@ while {true} do {
 			};
 		};
 	};
-	
+
 	//Record low blood
 	_lowBlood = player getVariable ["USEC_lowBlood", false];
 	if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
 		player setVariable["USEC_lowBlood",true,true];
 	};
-	
+
 	//Broadcast Hunger/Thirst
 	_messTimer = _messTimer + 1;
 	if (_messTimer > 15) then {
 		_messTimer = 0;
 		player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 	};
-	
+
 	// Update blood only if PVAR does not match GVAR.
 	_currentBlood = player getVariable ["USEC_BloodQty", 12000];
 	if (_currentBlood != r_player_blood) then {
@@ -218,7 +218,7 @@ while {true} do {
 	_startcombattimer      = player getVariable["startcombattimer",0];
 	if (_startcombattimer == 1) then {
 		player setVariable["combattimeout", time + 30, true];
-		player setVariable["startcombattimer", 0, true];
+		player setVariable["startcombattimer", 0];
 		dayz_combat = 1;
 	};
 
@@ -242,7 +242,7 @@ while {true} do {
 		_combatcontrol = 	_combatdisplay displayCtrl 1307;
 		_combatcontrol ctrlShow true;
 	};
-	
+
 	//Melee Weapons ammo fix
         if(isNil {login_ammochecked}) then {
                 login_ammochecked = true;
@@ -252,10 +252,10 @@ while {true} do {
                         call dayz_meleeMagazineCheck;
                 };
         };
-	
+
 	// Blood Effects
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, (r_player_blood/r_player_bloodTotal)],  [1, 1, 1, 0.0]];
 	"colorCorrections" ppEffectCommit 0;
-	
+
 	sleep 2;
 };

@@ -6,14 +6,14 @@ _unit = _array select 0;
 _attacker = _array select 1;
 
 if (_unit == player && player distance _attacker < 5) then {
-	player setVariable["startcombattimer", 1, false];
+	player setVariable["startcombattimer", 1];
 	// Make bleed
 	if (random 2 < 1) then {
 		// Find hit
 		_cnt = count (DAYZ_woundHit_ok select 1);
 		_index = floor (random _cnt);
 		_index = (DAYZ_woundHit_ok select 1) select _index;
-		_hit = (DAYZ_woundHit_ok select 0) select _index; 
+		_hit = (DAYZ_woundHit_ok select 0) select _index;
 
 		_damage = 0.1 + random (1.2);
 
@@ -23,7 +23,7 @@ if (_unit == player && player distance _attacker < 5) then {
 		};
 
 		player setVariable["medForceUpdate",true,true];
-	
+
 		1 call fnc_usec_bulletHit;
 
 		_wound = _hit call fnc_usec_damageGetWound;
