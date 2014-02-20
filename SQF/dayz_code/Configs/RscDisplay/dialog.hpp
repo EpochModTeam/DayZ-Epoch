@@ -207,7 +207,7 @@ class TraderDialog
 		class RscShortcutButtonTraderDialog_1703: RscShortcutButtonTraderDialog
 		{
 			idc = 12007;
-			text = "Combine Bars";
+			text = $STR_EPOCH_PLAYER_306;
 			x = 0.445911 * safezoneW + safezoneX;
 			y = 0.720064 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;

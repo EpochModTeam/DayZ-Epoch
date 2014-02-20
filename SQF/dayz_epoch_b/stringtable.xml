@@ -5976,6 +5976,16 @@
 			<!-- <French></French> -->
 			<Czech>Vytvořit Lešení</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_306">
+			<Original>Combine Bars</Original>
+			<English>Combine Bars</English>
+			<German>Barren kombinieren</German>
+			<!-- <Russian></Russian> -->
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 			<Original>Repair Vehicle</Original>
 			<English>Repair Vehicle</English>
@@ -6289,7 +6299,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_NAMEYES">
 			<Original>Display Name (Yes)</Original>
 			<English>Display Name (Yes)</English>
-			<!-- <German></German> -->
+			<German>Namen anzeigen (Ja)</German>
 			<Russian>Отображать имя (Да)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Naam weergeven (AAN)</Dutch>
@@ -6299,7 +6309,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_NAMENO">
 			<Original>Display Name (No)</Original>
 			<English>Display Name (No)</English>
-			<!-- <German></German> -->
+			<German>Namen anzeigen (Nein)</German>
 			<Russian>Отображать имя (Нет)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Naam weergeven (UIT)</Dutch>
