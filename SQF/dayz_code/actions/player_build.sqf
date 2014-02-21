@@ -413,7 +413,6 @@ if (_hasrequireditem) then {
 			[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
 			r_interrupt = false;
-			_animState = animationState player;
 			r_doLoop = true;
 			_started = false;
 			_finished = false;
