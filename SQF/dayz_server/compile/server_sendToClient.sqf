@@ -1,10 +1,12 @@
 private ["_unit","_variable","_arraytosend","_owner","_vehicle","_qty"];
 //Inbound [_unit,"PVCDZ_hlt_Transfuse",[_unit,player,1000]]
 _unit = _this select 0;
+
+if(isNull _unit) exitWith {diag_log format ["ERROR: sendToClient is Null: %1", _unit]};
+
 _variable = _this select 1;
 _arraytosend = _this select 2;
 _owner = owner _unit;
-
 
 //diag_log format ["%1, %2, %3, %4", _unit, _variable, _arraytosend, _owner];
 

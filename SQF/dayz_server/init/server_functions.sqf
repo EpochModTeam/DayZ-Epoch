@@ -889,6 +889,8 @@ server_getLocalObjVars = {
 	_player = _this select 0;
 	_obj = _this select 1;
 
+	if (isNull _player or isNull _obj) exitWith { diag_log format["ERROR: getLocalObjVars is Null Player: %1 Object: %2 ", _player, _obj] };
+
 	_objectID 	= _obj getVariable["ObjectID","0"];
 	_objectUID	= _obj getVariable["ObjectUID","0"];
 
@@ -898,7 +900,6 @@ server_getLocalObjVars = {
 
 	PVDZE_localVarsResult = [_weapons,_magazines,_backpacks];
 	(owner _player) publicVariableClient "PVDZE_localVarsResult";
-	
 	diag_log format["SAFE UNLOCKED: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), (getPlayerUID _player)];
 };
 
@@ -908,6 +909,8 @@ server_setLocalObjVars = {
 	_obj = _this select 0;
 	_holder = _this select 1;
 	_player = _this select 2;
+
+	if (isNull _player or isNull _holder or isNull _obj) exitWith { diag_log format["ERROR: setLocalObjVars is Null Player: %1 Object: %2 Holder: %3", _player, _obj, _holder] };
 
 	_objectID 	= _obj getVariable["ObjectID","0"];
 	_objectUID	= _obj getVariable["ObjectUID","0"];
