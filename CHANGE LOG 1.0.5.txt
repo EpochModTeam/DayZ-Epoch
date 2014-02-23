@@ -1,6 +1,6 @@
 [ADDED] Latest version of Napf 1.0 by Momo
 [ADDED] Classname C130J_US_EP1_DZ Weapon: 50 Magazine: 400 Backpack: 10 @Fank
-[ADDED] variable DZE_ForceNameTagsInTrader to force name tags in traders @Fank
+[ADDED] Variable DZE_ForceNameTagsInTrader to force name tags in traders. @Skaronator @Fank
 
 [FIXED] Instance already initialized error in server_monitor.sqf @vbawol
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev
