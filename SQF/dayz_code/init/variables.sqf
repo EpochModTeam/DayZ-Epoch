@@ -295,6 +295,7 @@ r_action_repair = 		false;
 r_action_targets = 		[];
 r_pitchWhine = 			false;
 r_isBandit =			false;
+isInTraderCity =		false;
 
 DZE_PROTOBOX = objNull;
 

@@ -188,7 +188,7 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 					_color = "color='#3333ff'";
 				};
 			};
-			if(_humanityTarget getVariable ["DZE_display_name", false]) then {
+			if((_humanityTarget getVariable ["DZE_display_name", false]) or (DZE_ForceNameTagsInTrader && isInTraderCity)) then {
 				_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
 			};
 		};
