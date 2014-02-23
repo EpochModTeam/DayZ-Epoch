@@ -60,4 +60,3 @@ if (_canLoot) then {
 
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 };
-//["building_spawnZombies.sqf",(diag_tickTime - _t1)] call fnc_dump;
