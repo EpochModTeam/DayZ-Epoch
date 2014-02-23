@@ -42,6 +42,14 @@ if (!isDedicated) then {
 		[player, ["DesertLargeCamoNet","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ"], 5] call player_removeNearby;
 	};
 
+	player_login = {
+		private ["_unit","_detail"];
+		_unit = _this select 0;
+		_detail = _this select 1;
+		if(_unit == getPlayerUID player) then {
+			player setVariable["publish",_detail];
+		};
+	};
 
 	player_unlockDoor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_changeCombo =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
@@ -51,7 +59,6 @@ if (!isDedicated) then {
 	player_updateGui =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";
 	player_crossbowBolt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	player_music = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music
-	player_login = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_login.sqf";			//Used to generate ambient music
 	player_death =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_death.sqf";
 	player_switchModel =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_switchModel.sqf";
 	player_checkStealth =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_checkStealth.sqf";
@@ -458,7 +465,7 @@ if (!isDedicated) then {
 
 	fnc_buildWeightedArray = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildWeightedArray.sqf";		//Checks which actions for nearby casualty
 	fnc_usec_damageVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandlerVehicle.sqf";		//Event handler run on damage
-	zombie_initialize = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\init\zombie_init.sqf";
+
 	// object_vehicleKilled =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_vehicleKilled.sqf";		//Event handler run on damage
 	object_setHitServer =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_setHitServer.sqf";	//process the hit as a NORMAL damage (useful for persistent vehicles)
 	object_setFixServer =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_setFixServer.sqf";	//process the hit as a NORMAL damage (useful for persistent vehicles)
@@ -504,7 +511,14 @@ if (!isDedicated) then {
 		_qty = _this select 1;
 		_vehicle setFuel _qty;
 	};
-	
+	zombie_initialize = {
+		private ["_unit","_position"];
+		_unit = _this select 0;
+		if (isServer) then {
+			_unit addEventHandler ["local", {_this call zombie_findOwner}];
+		};
+	};
+
 	// better item counting by maca134 - https://github.com/vbawol/DayZ-Epoch/issues/916
 	MC_item_spaces = {
         private ["_unit", "_item", "_slotsEmpty", "_slotsItem", "_slotsAfterAdd", "_c", "_space"];
