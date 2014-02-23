@@ -368,7 +368,7 @@ class RscDisplayGear {
 	idd = 106;
 	enableDisplay = 1;
 	// 177 based
-	//onLoad = "_this call fn_gearMenuChecks;[] spawn object_monitorGear; {player removeMagazines _x} forEach MeleeMagazines; call gear_ui_init; if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\z\addons\dayz_code\BIS_scripts\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\z\addons\dayz_code\BIS_scripts\handleGear.sqf'; _dummy;";
+	//onLoad = "_this call fn_gearMenuChecks;[] spawn object_monitorGear; {player removeMagazines _x} forEach MeleeMagazines; call gear_ui_init; if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\z\addons\dayz_code\system\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\z\addons\dayz_code\system\handleGear.sqf'; _dummy;";
 	onUnload = "call player_gearSync; call dayz_forceSave;";
 
 	class controls {
@@ -511,8 +511,8 @@ class RscDisplayGear {
 					idc = 146;
 					x = -2;
 					style = 2048;
-					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM	""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
-					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
+					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM	""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
+					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
 					text = "&lt;";
 				};
 				class Available_items: RscIGUIListNBox {
@@ -522,10 +522,10 @@ class RscDisplayGear {
 					idcRight = 147;
 					idcLeft = 146;
 					colorPlayerItem[] = {0.8784,0.8471,0.651,1};
-					onKeyDown = "private [""_dummy""]; _dummy = [_this,""onKeyDown"",0,107,0,107] execVM	""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
-					onLBSelChanged = "private [""_dummy""]; _dummy = [_this,""onLBSelChanged""] execVM ""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
-					onLBListSelChanged = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
-					onKillFocus = "private [""_dummy""]; _dummy = [_this,""onKillFocus""] execVM	""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
+					onKeyDown = "private [""_dummy""]; _dummy = [_this,""onKeyDown"",0,107,0,107] execVM	""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
+					onLBSelChanged = "private [""_dummy""]; _dummy = [_this,""onLBSelChanged""] execVM ""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
+					onLBListSelChanged = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
+					onKillFocus = "private [""_dummy""]; _dummy = [_this,""onKillFocus""] execVM	""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
 					x = 0;
 					y = 0;
 					w = 0.46;
@@ -535,8 +535,8 @@ class RscDisplayGear {
 				class CA_B_Remove: CA_B_Add {
 					idc = 147;
 					x = -2;
-					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM ""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
-					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\z\addons\dayz_code\BIS_scripts\handleGear.sqf""; _dummy;";
+					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM ""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
+					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\z\addons\dayz_code\system\handleGear.sqf""; _dummy;";
 					text = ">";
 				};
 			};
@@ -998,7 +998,7 @@ class RscDisplayGear {
 	emptyMag2 = "\ca\ui\data\ui_gear_mag2_gs.paa";
 	emptyHGun = "\ca\ui\data\ui_gear_hgun_gs.paa";
 	emptyHGunMag = "\ca\ui\data\ui_gear_hgunmag_gs.paa";
-	onLoad = "_this call fn_gearMenuChecks;[] spawn object_monitorGear; call gear_ui_init; call ui_gear_sound;if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\z\addons\dayz_code\BIS_scripts\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\z\addons\dayz_code\BIS_scripts\handleGear.sqf'; _dummy;";
+	onLoad = "_this call fn_gearMenuChecks;[] spawn object_monitorGear; call gear_ui_init; call ui_gear_sound;if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\z\addons\dayz_code\system\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\z\addons\dayz_code\system\handleGear.sqf'; _dummy;";
 	class ControlsBackground {
 		class Mainback: RscPicture {
 			idc = 1005;
