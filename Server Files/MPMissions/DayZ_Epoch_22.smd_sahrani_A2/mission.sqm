@@ -1315,8 +1315,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone3";
 			expCond="(player distance zone3) < 100;";
-			expActiv="[""trader city Corazol"",true] spawn trader_enter;";
-			expDesactiv="[""trader city Corazol"",true] spawn trader_leave;";
+			expActiv="[""trader city Corazol"",true,"enter"] spawn player_traderCity;";
+			expDesactiv="[""trader city Corazol"",true,"leave"] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1332,8 +1332,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone2";
 			expCond="(player distance zone2) < 100;";
-			expActiv="[""trader city Bag"",true] spawn trader_enter;";
-			expDesactiv="[""trader city Bag"",true] spawn trader_leave;";
+			expActiv="[""trader city Bag"",true,"enter"] spawn player_traderCity;";
+			expDesactiv="[""trader city Bag"",true,"leave"] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1349,8 +1349,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone1";
 			expCond="(player distance zone1) < 100;";
-			expActiv="[""trader city Ixel"",true] spawn trader_enter;";
-			expDesactiv="[""trader city Ixel"",true] spawn trader_leave;";
+			expActiv="[""trader city Ixel"",true,"enter"] spawn player_traderCity;";
+			expDesactiv="[""trader city Ixel"",true,"leave"] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1364,8 +1364,8 @@ class Mission
 			age="UNKNOWN";
 			name="bmarket";
 			expCond="(player distance bmarket) < 50;";
-			expActiv="[""Black Market"",true] spawn trader_enter;";
-			expDesactiv="[""Black Market"",true] spawn trader_leave;";
+			expActiv="[""Black Market"",true,"enter"] spawn player_traderCity;";
+			expDesactiv="[""Black Market"",true,"leave"] spawn player_traderCity;";
 			class Effects
 			{
 			};

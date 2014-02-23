@@ -1331,8 +1331,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone1";
 			expCond="(player distance zone1) < 100;";
-			expActiv="[""trader city Khush"",true] spawn trader_enter;";
-			expDesactiv="[""trader city Khush"",true] spawn trader_leave;";
+			expActiv="[""trader city Khush"",true,"enter"] spawn player_traderCity;";
+			expDesactiv="[""trader city Khush"",true,"leave"] spawn player_traderCity;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1349,8 +1349,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone2";
 			expCond="(player distance zone2) < 100;";
-			expActiv="[""trader city Nur"",true] spawn trader_enter;";
-			expDesactiv="[""trader city Nur"",true] spawn trader_leave;";
+			expActiv="[""trader city Nur"",true,"enter"] spawn player_traderCity;";
+			expDesactiv="[""trader city Nur"",true,"leave"] spawn player_traderCity;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1367,8 +1367,8 @@ class Mission
 			age="UNKNOWN";
 			name="zone3";
 			expCond="(player distance zone3) < 100;";
-			expActiv="[""trader city Garm"",true] spawn trader_enter;";
-			expDesactiv="[""trader city Garm"",true] spawn trader_leave;";
+			expActiv="[""trader city Garm"",true,"enter"] spawn player_traderCity;";
+			expDesactiv="[""trader city Garm"",true,"leave"] spawn player_traderCity;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
