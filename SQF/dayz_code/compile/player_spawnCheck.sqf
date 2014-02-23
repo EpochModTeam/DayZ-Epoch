@@ -135,7 +135,6 @@ if (_nearbyCount < 1) exitwith
 				if (dayz_maxCurrentZeds < dayz_maxZeds) then {
 					if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
 						if (dayz_spawnZombies < dayz_maxLocalZombies) then {
-								//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 								_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 								_dateNow = (DateToNumber date);
 								_age = (_dateNow - _zombied) * 525948;
