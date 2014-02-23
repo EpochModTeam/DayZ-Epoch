@@ -1,9 +1,10 @@
-private ["_characterID","_minutes","_newObject","_playerID","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record"];
+private ["_characterID","_minutes","_newObject","_playerID","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _characterID = 	_this select 0;
 _minutes =		_this select 1;
 _newObject = 	_this select 2;
 _playerID = 	_this select 3;
+_infected =		_this select 4;
 _victimName = 	name _newObject;
 
 _victim = _newObject;
@@ -84,7 +85,7 @@ diag_log ("PDEATH: Player Died " + _playerID);
 
 if (_characterID != "0") then
 {
-	_key = format["CHILD:202:%1:%2:%3:",_characterID,_minutes,0];
+	_key = format["CHILD:202:%1:%2:%3:",_characterID,_minutes,_infected];
 	#ifdef DZE_SERVER_DEBUG_HIVE
 	diag_log ("HIVE: WRITE: "+ str(_key));
 	#endif

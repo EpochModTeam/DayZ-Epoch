@@ -1,9 +1,8 @@
 private ["_display","_body","_playerID","_array","_source","_method","_canHitFree","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup"];
 disableSerialization;
 if (deathHandled) exitWith {};
-
 deathHandled = true;
-//Death
+
 //Prevent client freezes
 _display = findDisplay 49;
 if(!isNull _display) then {_display closeDisplay 0;};
@@ -12,13 +11,18 @@ if (visibleMap) then {openMap false;};
 
 _body = player;
 _playerID = getPlayerUID player;
+
 disableUserInput true;
 //add weapon on back to player...
 //if (dayz_onBack != "") then {
 //	_body addWeapon dayz_onBack;
 //};
-//Send Death Notice
-PVDZE_plr_Died = [dayz_characterID,0,_body,_playerID];
+
+_infected = 0;
+if (r_player_infected && DZE_PlayerZed) then { 
+	_infected = 1; 
+};
+PVDZE_plr_Died = [dayz_characterID,_infected,_body,_playerID];
 publicVariableServer "PVDZE_plr_Died";
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;
@@ -32,7 +36,6 @@ player setVariable ["NORRN_unconscious", false, true];
 player setVariable ["unconsciousTime", 0, true];
 player setVariable ["USEC_isCardiac",false,true];
 player setVariable ["medForceUpdate",true,true];
-//remove combat timer on death
 player setVariable ["startcombattimer", 0];
 r_player_unconscious = false;
 r_player_cardiac = false;
@@ -64,20 +67,12 @@ if (count _array > 0) then {
 };
 
 terminate dayz_musicH;
-//terminate dayz_lootCheck;
 terminate dayz_slowCheck;
 terminate dayz_animalCheck;
 terminate dayz_monitor1;
 terminate dayz_medicalH;
 terminate dayz_gui;
-//terminate dayz_zedCheck;
-//terminate dayz_locationCheck;
-//terminate dayz_combatCheck;
-//terminate dayz_spawnCheck;
 
-//Reset (just in case)
-//deleteVehicle dayz_playerTrigger;
-//disableUserInput false;
 r_player_dead = true;
 
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [4]; "dynamicBlur" ppEffectCommit 0.2;
