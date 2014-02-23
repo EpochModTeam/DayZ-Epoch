@@ -152,4 +152,3 @@ if (_nearbyCount < 1) exitwith
 		};
 	};
 } forEach _nearby;
-// ["player_spawnCheck.sqf",(diag_tickTime - _t1)] call fnc_dump;
