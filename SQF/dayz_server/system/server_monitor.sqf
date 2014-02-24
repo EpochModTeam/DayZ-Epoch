@@ -10,13 +10,6 @@ waitUntil{initialized}; //means all the functions are now defined
 diag_log "HIVE: Starting";
 
 waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug during login of the first player)
-
-if (isNil "server_initCount") then {
-	server_initCount = 1;
-} else {
-	server_initCount = server_initCount + 1;
-};
-diag_log format["server_monitor.sqf execution count = %1", server_initCount];
 	
 // Custom Configs
 if(isnil "MaxVehicleLimit") then {
@@ -68,7 +61,6 @@ if (isServer and isNil "sm_done") then {
 	
 		// save superkey
 		profileNamespace setVariable ["SUPERKEY",(_hiveResponse select 2)];
-		saveProfileNamespace;
 		
 		_hiveLoaded = true;
 	
