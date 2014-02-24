@@ -19,10 +19,10 @@ disableUserInput true;
 //};
 
 _infected = 0;
-if (r_player_infected && DZE_PlayerZed) then { 
-	_infected = 1; 
+if (r_player_infected && DZE_PlayerZed) then {
+	_infected = 1;
 };
-PVDZE_plr_Died = [dayz_characterID,_infected,_body,_playerID];
+PVDZE_plr_Died = [dayz_characterID,0,_body,_playerID,_infected];
 publicVariableServer "PVDZE_plr_Died";
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;
