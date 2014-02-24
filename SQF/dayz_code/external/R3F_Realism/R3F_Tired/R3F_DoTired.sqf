@@ -24,6 +24,7 @@ _s call FNC_PrintToRPT;
 #endif
 
 R3F_TIRED_Accumulator = 0;
+R3F_TIRED_vitesse_de_mon_joueur = 0;
 sleep 1;
 _level = 1;
 
