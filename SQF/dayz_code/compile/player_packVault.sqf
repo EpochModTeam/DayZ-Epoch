@@ -45,6 +45,8 @@ _location2 = getPosATL player;
 if(_location1 distance _location2 > 0.1) exitWith {
 	cutText [format[(localize "str_epoch_player_122"),_text] , "PLAIN DOWN"];
 	_obj setVariable["packing",0];
+	s_player_packvault = -1;
+	DZE_ActionInProgress = false;
 };
 
 
