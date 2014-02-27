@@ -171,7 +171,7 @@ if (!isDedicated) then {
 			};
 		} forEach _this;
 
-		diag_log format["DEBUG TRADER ITEMCOST: %1", _this];
+		//diag_log format["DEBUG TRADER ITEMCOST: %1", _this];
 		_trade_total
 	};
 

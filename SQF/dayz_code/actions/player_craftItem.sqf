@@ -237,7 +237,7 @@ if (_canDo) then {
 
 								};
 
-								 diag_log format["Checking for water level: %1", _waterLevel];
+								// diag_log format["Checking for water level: %1", _waterLevel];
 
 								for "_x" from 1 to _countOut do {
 									player addMagazine _itemOut;

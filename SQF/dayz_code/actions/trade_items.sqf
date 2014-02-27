@@ -95,7 +95,7 @@ while {r_autoTrade} do {
 			};
 		};
 
-		diag_log format["DEBUG TRADER DONE?: %1", _canAfford];
+		//diag_log format["DEBUG TRADER DONE?: %1", _canAfford];
 		
 		if (_canAfford) then {
 			

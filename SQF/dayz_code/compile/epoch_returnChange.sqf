@@ -6,12 +6,12 @@ _canAfford = false;
 
 _buyOrSell = (_this select 1);
 
-diag_log format["DEBUG TRADER INPUT: %1", (_this select 0)];
+//diag_log format["DEBUG TRADER INPUT: %1", (_this select 0)];
 
 // buying in currency
 _trade_total = (_this select 0) call epoch_itemCost;
 
-diag_log format["DEBUG TRADER INPUT TOTAL: %1", _trade_total];
+//diag_log format["DEBUG TRADER INPUT TOTAL: %1", _trade_total];
 
 _total_currency_dry = call epoch_totalCurrency;
 
@@ -24,7 +24,7 @@ if (_buyOrSell == 0) then {
 	_return_change_dry = _total_currency_dry + _trade_total; 
 };
 
-diag_log format["DEBUG TRADER DRY: %1", _return_change_dry];
+//diag_log format["DEBUG TRADER DRY: %1", _return_change_dry];
 
 if (_return_change_dry >= 0) then {
 	_canAfford = true;
@@ -45,7 +45,7 @@ if (_canAfford) then {
 
 	} forEach (magazines player);
 
-	diag_log format["DEBUG TRADER INPUT CURRENCY TOTAL: %1", _total_currency];
+	//diag_log format["DEBUG TRADER INPUT CURRENCY TOTAL: %1", _total_currency];
 
 	_return_change = 0;
 	if (_buyOrSell == 0) then {
@@ -56,7 +56,7 @@ if (_canAfford) then {
 		_return_change = _total_currency + _trade_total; 
 	};
 
-	diag_log format["DEBUG TRADER CHANGE: %1", _return_change];
+	//diag_log format["DEBUG TRADER CHANGE: %1", _return_change];
 
 	if (_return_change >= 0) then {
 		
@@ -85,43 +85,43 @@ if (_canAfford) then {
 		if (_briefcase_100oz > 0) then {
 			for "_x" from 1 to _briefcase_100oz do {
 				player addMagazine "ItemBriefcase100oz";
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _briefcase_100oz, "ItemBriefcase100oz"];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _briefcase_100oz, "ItemBriefcase100oz"];
 			};
 		};
 		if (_gold_10oz > 0) then {
 			if (_gold_10oz == 1) then {
 				player addMagazine "ItemGoldBar10oz";
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_10oz, "ItemGoldBar10z"];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_10oz, "ItemGoldBar10z"];
 			} else {
 				player addMagazine format["ItemBriefcase%1oz",floor(_gold_10oz*10)];
-				diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcase%1oz", floor(_gold_10oz*10)];
+				//diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcase%1oz", floor(_gold_10oz*10)];
 			};
 		};
 		if (_gold_1oz > 0) then {
 			if (_gold_1oz == 1) then {
 				player addMagazine "ItemGoldBar";
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, "ItemGoldBar"];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, "ItemGoldBar"];
 			} else {
 				player addMagazine format["ItemGoldBar%1oz",_gold_1oz];
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, "ItemGoldBar"];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _gold_1oz, "ItemGoldBar"];
 			};
 		};
 		if (_silver_10oz > 0) then {
 			if (_silver_10oz == 1) then {
 				player addMagazine "ItemSilverBar10oz";
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_10oz, "ItemSilverBar10oz"];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_10oz, "ItemSilverBar10oz"];
 			} else {
 				player addMagazine format["ItemBriefcaseS%1oz",floor(_silver_10oz*10)];
-				diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcaseS%1oz", floor(_silver_10oz*10)];
+				//diag_log format["DEBUG TRADER CHANG MADE: ItemBriefcaseS%1oz", floor(_silver_10oz*10)];
 			};
 		};
 		if (_silver_1oz > 0) then {
 			if (_silver_1oz == 1) then {
 				player addMagazine "ItemSilverBar";
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, "ItemSilverBar"];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, "ItemSilverBar"];
 			} else {
 				player addMagazine format["ItemSilverBar%1oz",_silver_1oz];
-				diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, "ItemSilverBar"];
+				//diag_log format["DEBUG TRADER CHANG MADE: %1 x %2", _silver_1oz, "ItemSilverBar"];
 			};
 		};
 		_successful = true;
