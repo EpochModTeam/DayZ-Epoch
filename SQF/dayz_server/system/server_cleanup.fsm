@@ -13,7 +13,7 @@ item8[] = {"",7,210,21.000004,-254.000000,28.999998,-246.000000,0.000000,""};
 item9[] = {"",7,210,821.000000,-179.000000,829.000000,-171.000000,0.000000,""};
 item10[] = {"",7,210,821.000000,96.000000,829.000000,104.000000,0.000000,""};
 item11[] = {"___second_loop",4,218,50.000000,-75.000000,150.000000,-25.000000,1.000000,"3 second" \n "loop"};
-item12[] = {"__s_update__obje",4,218,175.000000,-100.000000,275.000000,-50.000000,2.000000,"5s" \n "update " \n "objects"};
+item12[] = {"__0s_update__obj",4,218,175.000000,-100.000000,275.000000,-50.000000,2.000000,"50s" \n "update " \n "objects"};
 item13[] = {"___min__loop",4,218,300.000000,-125.000000,400.000000,-75.000000,3.000000,"1 min" \n " loop"};
 item14[] = {"___min_loop",4,218,450.000000,-125.000000,550.000000,-75.000000,4.000000,"5 min" \n "loop"};
 item15[] = {"__0_min__loop",4,218,575.000000,-100.000000,675.000000,-50.000000,5.000000,"10 min" \n " loop"};
@@ -22,7 +22,7 @@ item17[] = {"cleanup_animals",2,250,700.000000,25.000000,800.000000,75.000000,0.
 item18[] = {"cleanup_dead",2,250,575.000000,0.000000,675.000000,50.000000,0.000000,"cleanup" \n "dead"};
 item19[] = {"sync_time",2,250,450.000000,-25.000000,550.000000,25.000000,0.000000,"sync time"};
 item20[] = {"cleanup_loot",2,250,300.000000,-25.000000,400.000000,25.000000,0.000000,"cleanup" \n "loot"};
-item21[] = {"group_cleanup",2,4346,50.000000,25.000000,150.000000,75.000000,0.000000,"group" \n "cleanup"};
+item21[] = {"group_cleanup",2,250,50.000000,25.000000,150.000000,75.000000,0.000000,"group" \n "cleanup"};
 item22[] = {"update_objects",2,250,175.000000,0.000000,275.000000,50.000000,0.000000,"update objects"};
 link0[] = {0,2};
 link1[] = {1,3};
@@ -54,7 +54,7 @@ link26[] = {20,5};
 link27[] = {21,5};
 link28[] = {22,5};
 globals[] = {25.000000,1,0,0,0,640,480,1,136,6316128,1,-53.328339,954.791992,443.544983,-436.145996,1044,911,1};
-window[] = {2,-1,-1,-1,-1,1089,222,1514,277,3,1062};
+window[] = {2,-1,-1,-1,-1,912,100,1392,100,3,1062};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -162,13 +162,13 @@ class FSM
           action=/*%FSM<ACTION""">*/"_lastCleanupVehicles = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "__s_update__obje">*/
-        class __s_update__obje
+        /*%FSM<LINK "__0s_update__obj">*/
+        class __0s_update__obj
         {
           priority = 2.000000;
           to="update_objects";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(( (count needUpdate_objects) > 0) && (diag_tickTime -_lastNeedUpdate> 5))"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(( (count needUpdate_objects) > 0) && (diag_tickTime -_lastNeedUpdate> 50))"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastNeedUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
