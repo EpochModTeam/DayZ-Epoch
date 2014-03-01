@@ -74,24 +74,22 @@ if (_spawnRoll <= _spawnChance) then {
 		_crash setvariable ["fadeFire",_fadeFire,true];
 	};
 
-	_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
-	if (DZE_MissionLootTable) then {
-		_config = missionConfigFile >> "CfgBuildingLoot" >> _lootTable;;
+  	if (DZE_MissionLootTable) then {
+		_itemTypes = [] + getArray (missionConfigFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
+	} else {
+		_itemTypes = [] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
 	};
-	_itemTypes =	[] + getArray (_config >> "itemType");
-	_index =        dayz_CBLBase find toLower(_lootTable);
-	_weights =		dayz_CBLChances select _index;
+	_CBLBase = dayz_CBLBase find _lootTable;
+	_weights = dayz_CBLChances select _CBLBase;
 	_cntWeights = count _weights;
 
 	for "_x" from 1 to _num do {
 		//create loot
-		_index = floor(random _cntWeights);
-		_index = _weights select _index;
-		_itemType = _itemTypes select _index;
+		_index1 = floor(random _cntWeights);
+		_index2 = _weights select _index1;
+		_itemType = _itemTypes select _index2;
 		[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
-		//diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]);
 	};
-
 	// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
 	_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
 	{
