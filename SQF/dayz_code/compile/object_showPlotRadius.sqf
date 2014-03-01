@@ -14,6 +14,6 @@ _BD_center = getPos _nearPlotPole;
 // circle
 for "_i" from 0 to 360 step (270 / _BD_radius) do {
 	_location = [(_BD_center select 0) + ((cos _i) * _BD_radius), (_BD_center select 1) + ((sin _i) * _BD_radius), _BD_center select 2];
-	_object = "Plastic_Pole_EP1" createVehicleLocal _location;
+	_object = "Plastic_Pole_EP1" createVehicle _location;
 	_object setpos _location;
 };
