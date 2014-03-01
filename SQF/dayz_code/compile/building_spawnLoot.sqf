@@ -18,7 +18,7 @@ _lootSpawnBias = 67; //67 between 50 and 100. The lower it is, the lower chance 
 // shuffles an array
 // parameters: array
 // example: _myrandomarray = _myNormalArray call _ShuffleArray;
-ShuffleArray = {
+_ShuffleArray = {
 	private ["_ar","_rand_array","_rand"];
 	_ar = _this;
 	_rand_array = [];
@@ -31,7 +31,7 @@ ShuffleArray = {
 	};
 	_rand_array;
 };
-_positions = _pos call ShuffleArray;
+_positions = _pos call _ShuffleArray;
 
 
 // bias for this building. The lower it is, the lower chance some of the lootpiles will spawn
