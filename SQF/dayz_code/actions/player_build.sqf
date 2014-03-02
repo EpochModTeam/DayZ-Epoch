@@ -46,7 +46,6 @@ _item =	_this;
 
 // Need Near Requirements
 _abort = false;
-_distance = 3;
 _reason = "";
 
 _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "neednearby");
@@ -55,6 +54,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 	switch(_x) do{
 		case "fire":
 		{
+			_distance = 3;
 			_isNear = {inflamed _x} count (getPosATL player nearObjects _distance);
 			if(_isNear == 0) then {
 				_abort = true;
@@ -63,6 +63,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 		};
 		case "workshop":
 		{
+			_distance = 3;
 			_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
@@ -71,11 +72,11 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 		};
 		case "fueltank":
 		{
+			_distance = 30;
 			_isNear = count (nearestObjects [player, dayz_fuelsources, _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
 				_reason = "fuel tank";
-				_distance = 30;
 			};
 		};
 	};
