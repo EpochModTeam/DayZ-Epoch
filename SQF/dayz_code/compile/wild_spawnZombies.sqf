@@ -50,20 +50,37 @@ _agent setVariable ["newDest",_newDest];
 //Add some loot
 _rnd = random 1;
 if (_rnd > 0.3) then {
-	_lootType = 		configFile >> "CfgVehicles" >> _type >> "zombieLoot";
-	if (isText _lootType) then {
+	if (DZE_MissionLootTable) then {
+		_lootType = missionConfigFile >> "CfgVehicles" >> _type >> "zombieLoot";
+	} else {
+		_lootType = configFile >> "CfgVehicles" >> _type >> "zombieLoot";
+	};
 
-		_array = [];
+	if (isText _lootType) then {
 		if (DZE_MissionLootTable) then {
-			_array = getArray (missionConfigFile >> "cfgLoot" >> getText(_lootType));
+			_lootTypeCfg = getArray (missionConfigFile >> "cfgLoot" >> getText(_lootType));
 		} else {
-			_array = getArray (configFile >> "cfgLoot" >> getText(_lootType));
+			_lootTypeCfg = getArray (configFile >> "cfgLoot" >> getText(_lootType));
 		};
-		
+		_array = [];
+		{
+			_array set [count _array, _x select 0]
+		} foreach _lootTypeCfg;
 		if (count _array > 0) then {
-			_loot = _array call BIS_fnc_selectRandomWeighted;
+			_index = dayz_CLBase find getText(_lootType);
+			_weights = dayz_CLChances select _index;
+			_loot = _array select (_weights select (floor(random (count _weights))));
 			if(!isNil "_array") then {
-				_agent addMagazine _loot;
+				if (DZE_MissionLootTable) then {
+					_loot_count =	getNumber(missionConfigFile >> "CfgMagazines" >> _loot >> "count");
+				} else {
+					_loot_count =	getNumber(configFile >> "CfgMagazines" >> _loot >> "count");
+				};
+				if(_loot_count>1) then {
+					_agent addMagazine [_loot, ceil(random _loot_count)];
+				} else {
+					_agent addMagazine _loot;
+				};
 			};
 		};
 	};
