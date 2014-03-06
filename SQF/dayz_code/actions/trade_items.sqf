@@ -27,6 +27,12 @@ r_autoTrade = true;
 while {r_autoTrade} do {
 
 	_removed = 0;
+
+	// check if current magazine count is greater than 20
+
+	if ((count (magazines player) > 20) exitWith { cutText [(localize "STR_DAYZ_CODE_2"), "PLAIN DOWN"]; r_autoTrade = false};
+	
+
 	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
 
 	[1,1] call dayz_HungerThirst;
