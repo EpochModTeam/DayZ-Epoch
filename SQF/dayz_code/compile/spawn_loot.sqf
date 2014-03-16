@@ -1,4 +1,4 @@
-private ["_item","_itemTypes","_qty","_tQty","_uniq"];
+private ["_iPos","_tQty","_qty","_index","_weights","_cntWeights","_canType","_item","_itemTypes","_max","_magQty","_mags","_iItem","_iClass","_radius","_uniq","_iPosZ"];
 
 _iItem = _this select 0;
 _iClass = _this select 1;
