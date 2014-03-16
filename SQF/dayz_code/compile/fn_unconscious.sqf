@@ -3,6 +3,7 @@ disableSerialization;
 if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 	//Unconscious Meter
 	_totalTimeout = r_player_timeout;
+	if (_totalTimeout == 0) then { _totalTimeout = 1; }; //Fix for zero divisor
 	4 cutRsc ["playerStatusWaiting", "PLAIN",0];
 	_display = uiNamespace getVariable 'DAYZ_GUI_waiting';
 	_ctrl1 = 	_display displayCtrl 1400;

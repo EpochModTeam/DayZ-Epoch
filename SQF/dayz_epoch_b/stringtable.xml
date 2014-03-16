@@ -5996,6 +5996,56 @@
 			<!-- <French></French> -->
 			<!-- <Czech></Czech> -->
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_308">
+			<Original>To driver's seat</Original>
+			<English>To driver's seat</English>
+			<Spanish>Para el asiento del conductor</Spanish>
+			<Russian>Для сиденья водителя</Russian>
+			<French>Pour le siège du conducteur</French>
+			<Czech>Chcete-li sedadla řidiče</Czech>
+			<!-- <Dutch></Dutch> -->
+			<!-- <German></German> -->
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_308A">
+			<Original>To pilot's seat</Original>
+			<English>To pilot's seat</English>
+			<Spanish>Al asiento de piloto</Spanish>
+			<Russian>Пересесть на место пилота</Russian>
+			<French>Vers la place conducteur</French>
+			<Czech>Na místo pilota</Czech>
+			<!-- <Dutch></Dutch> -->
+			<!-- <German></German> -->
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_309">
+			<Original>To back seat</Original>
+			<English>To back seat</English>
+			<Spanish>Al asiento trasero</Spanish>
+			<Russian>Пересесть на место пассажира</Russian>
+			<French>Vers une place passager</French>
+			<Czech>Na zadní sedadlo</Czech>
+			<!-- <Dutch></Dutch> -->
+			<!-- <German></German> -->
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_310">
+			<Original>To gunner's seat</Original>
+			<English>To gunner's seat</English>
+			<Spanish>Al asiento del artillero</Spanish>
+			<Russian>Пересесть на место стрелка</Russian>
+			<French>Vers la place du tireur</French>
+			<Czech>Na sedadlo střelce</Czech>
+			<!-- <Dutch></Dutch> -->
+			<!-- <German></German> -->
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_311">
+			<Original>To commander's seat</Original>
+			<English>To commander's seat</English>
+			<Spanish>Para el asiento del comandante</Spanish>
+			<Russian>Чтобы сиденье командира</Russian>
+			<French>Pour le siège du commandant</French>
+			<Czech>Chcete-li sídlo velitele</Czech>
+			<!-- <Dutch></Dutch> -->
+			<!-- <German></German> -->
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 			<Original>Repair Vehicle</Original>
 			<English>Repair Vehicle</English>

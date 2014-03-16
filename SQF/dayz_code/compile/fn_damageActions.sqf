@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- Function
 	- [] call fnc_usec_damageActions;
 ************************************************************/
-private ["_weaponName","_action","_turret","_weapons","_assignedRole","_action1","_action2","_x","_vehicle","_unit","_vehType","_displayName","_ammoQty","_ammoSerial","_weapon","_magTypes","_type","_typeVeh","_index","_inventory","_unitTo","_isEngineer","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasJerryE","_hasWire","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_bag","_classbag","_isDisallowRefuel","_hasBarrel","_hasBarrelE"];
+private ["_action","_weaponName","_turret","_weapons","_assignedRole","_driver","_action1","_action2","_x","_vehicle","_unit","_vehType","_type","_typeVeh","_isDisallowRefuel","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasJerry","_hasBarrel","_hasJerryE","_hasBarrelE","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose"];
 
 disableSerialization;
 
@@ -15,17 +15,48 @@ _hasPatient = alive _menClose;
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
 _isClose = ((player distance _menClose) < ((sizeOf typeOf _menClose) / 2));
-_bag = unitBackpack player;
-_classbag = typeOf _bag;
+//_bag = unitBackpack player;
+//_classbag = typeOf _bag;
 
 if (_inVehicle) then {
 	r_player_lastVehicle = _vehicle;
 	_assignedRole = assignedVehicleRole player;
+	_driver = driver (vehicle player);
 	if (str (_assignedRole) != str (r_player_lastSeat)) then {
 		call r_player_removeActions2;
 	};
-	if (!r_player_unconscious && !r_action2) then {
-		r_player_lastSeat = _assignedRole;
+		if (!r_player_unconscious && !r_action2) then {
+			r_player_lastSeat = _assignedRole;
+		if (_inVehicle) then {
+			//allow switch to pilot
+			if (((_assignedRole select 0) != "driver") and ((!alive _driver) or ((_vehicle emptyPositions "Driver") > 0))) then {
+				if (_vehicle isKindOf "helicopter") then {
+					_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_308A", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToPilot",_driver], 0, false, true];
+				} else {
+					_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_308", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToPilot",_driver], 0, false, true];
+				};
+				r_player_actions2 set [count r_player_actions2,_action];
+				r_action2 = true;
+			};
+			//allow switch to cargo
+			if (((_assignedRole select 0) != "cargo") and ((_vehicle emptyPositions "Cargo") > 0)) then {
+				_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_309", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToCargo",_driver], 0, false, true];
+				r_player_actions2 set [count r_player_actions2,_action];
+				r_action2 = true;
+			};
+			//allow switch to gunner
+			if (((_assignedRole select 0) != "Turret") and ((_vehicle emptyPositions "Gunner") > 0)) then {
+				_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_310", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToTurret",_driver], 0, false, true];
+				r_player_actions2 set [count r_player_actions2,_action];
+				r_action2 = true;
+			};
+			//allow switch to commander
+			if (((assignedCommander _vehicle) != player) and ((_vehicle emptyPositions "Commander") > 0)) then {
+				_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_311", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToTurret",_driver], 0, false, true];
+				r_player_actions2 set [count r_player_actions2,_action];
+				r_action2 = true;
+			};
+		};
 		if (count _assignedRole > 1) then {
 			_turret = _assignedRole select 1;
 			_weapons = _vehicle weaponsTurret _turret;
@@ -62,13 +93,13 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 	_hasEpi = 		"ItemEpinephrine" in _playerMagazines;
 	_hasMorphine = 	"ItemMorphine" in _playerMagazines;
 	_hasBlood = 	"ItemBloodbag" in _playerMagazines;	
-	_hasToolbox = 	"ItemToolbox" in items player;
+	//_hasToolbox = 	"ItemToolbox" in items player;
 	_hasJerry = 	"ItemJerrycan" in _playerMagazines;
 	_hasBarrel = 	"ItemFuelBarrel" in _playerMagazines;
 	_hasJerryE = 	"ItemJerrycanEmpty" in _playerMagazines;
 	_hasBarrelE = 	"ItemFuelBarrelEmpty" in _playerMagazines;
 	//_hasEtool = 	"ItemEtool" in weapons player;
-	_hasWire = 		"ItemWire" in _playerMagazines;
+	//_hasWire = 		"ItemWire" in _playerMagazines;
 	_hasPainkillers = 	"ItemPainkiller" in _playerMagazines;
 
 	//Allow player to drag

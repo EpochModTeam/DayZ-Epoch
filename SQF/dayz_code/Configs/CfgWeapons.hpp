@@ -74,7 +74,7 @@ class CfgWeapons {
 	class PK;
 	class PK_DZ: PK {
 		type = "1";
-	}
+	};
 
 	class Default {
 		canlock = 0;
