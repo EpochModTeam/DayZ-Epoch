@@ -135,6 +135,7 @@ class Bandit1_DZ : Soldier_Crew_PMC {
 };
 class Bandit2_DZ: Soldier_Crew_PMC {
 	scope = 2;
+	side = 1;
 	displayName = $STR_CHAR_2;
 	weapons[] = {"Throw","Put"};
 	model = "\ca\characters_E\GER\GER_rifleman";
