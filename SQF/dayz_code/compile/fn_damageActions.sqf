@@ -27,7 +27,7 @@ if (_inVehicle) then {
 	};
 		if (!r_player_unconscious && !r_action2) then {
 			r_player_lastSeat = _assignedRole;
-		if (_inVehicle) then {
+		if ((_vehicle isKindOf "helicopter") || (_inVehicle && ({(isPlayer _x) && (alive _x)} count (crew _vehicle) > 1))) then {
 			//allow switch to pilot
 			if (((_assignedRole select 0) != "driver") and ((!alive _driver) or ((_vehicle emptyPositions "Driver") > 0))) then {
 				if (_vehicle isKindOf "helicopter") then {
