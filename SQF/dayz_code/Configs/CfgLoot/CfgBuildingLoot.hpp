@@ -154,7 +154,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		lootType[] = {
 			{"ItemGenerator","magazine",0.01}
-			,{"ItemFuelPump","magazine",0.01}
+			,{"fuel_pump_kit","magazine",0.01}
 			,{"","generic",0.18}
 			,{"","trash",0.28}
 			,{"","military",0.04}
@@ -309,7 +309,7 @@ class CfgBuildingLoot {
 			,{"ItemEtool","weapon",0.03}
 			,{"ItemSandbag","magazine",0.02}
 			,{"ItemFuelBarrelEmpty","magazine",0.03}
-			,{"ItemFuelPump","magazine",0.01}
+			,{"fuel_pump_kit","magazine",0.01}
 		};
 	};
 	class IndustrialMilitary: Default {
@@ -337,7 +337,7 @@ class CfgBuildingLoot {
 			,{"ItemEtool","weapon",0.03}
 			,{"ItemSandbag","magazine",0.02}
 			,{"ItemFuelBarrelEmpty","magazine",0.03}
-			,{"ItemFuelPump","magazine",0.01}
+			,{"fuel_pump_kit","magazine",0.01}
 		};
 	};
 	class MilitarySpecial: Default {

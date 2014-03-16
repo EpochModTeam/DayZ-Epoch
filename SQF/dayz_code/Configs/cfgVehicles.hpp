@@ -619,7 +619,7 @@ class CfgVehicles {
 		displayName = "Fuel Pump";
 		vehicleClass = "Fortifications";
 		constructioncount = 2;
-		removeoutput[] = {{"ItemFuelPump",1}};
+		removeoutput[] = {{"fuel_pump_kit",1}};
 		requireplot = 0;
 		nounderground = 0;
 	};
