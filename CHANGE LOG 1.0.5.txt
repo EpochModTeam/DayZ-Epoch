@@ -11,7 +11,7 @@
 [CHANGED] Lootsystem based on DayZ 1.8 @Skaronator @Fank
 [CHANGED] Consume Eat/Drink in vehicle will add empty food/drink cans into vehicle inventory. @SilvDev @Fank
 [CHANGED] SQL Removed empty fuel barrel from vehicle parts trader and moved to wholesaler as increased buy/sell price. @Fank
-[CHANGED] You can switch skins with while wearing a backpack. @icomrade
+[CHANGED] You may again switch skins while wearing a backpack. @icomrade
 
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
