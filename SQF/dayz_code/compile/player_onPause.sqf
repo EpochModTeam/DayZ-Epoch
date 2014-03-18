@@ -20,7 +20,8 @@ if(r_fracture_legs && !r_player_dead) then {_btnRespawn ctrlEnable true;};
 if (!r_player_dead and time - dayz_lastCheckBit > 10) then {
 	call dayz_forceSave;
 };			
-		
+
+if (r_player_dead || (!alive player)) exitWith {_btnAbort ctrlEnable true; _btnAbort ctrlSetText _btnAbortText;};		
 _sleep = 1;
 
 while {!isNull _display} do {
