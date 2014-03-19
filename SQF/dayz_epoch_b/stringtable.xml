@@ -1153,14 +1153,14 @@
 			<Czech>Uhasit %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_18">
-			<Original>You cannot perform another blood transfusion so fast</Original>
-			<English>You cannot perform another blood transfusion so fast</English>
-			<German>Sie können so schnell keine weitere Bluttransfusion durchführen</German>
-			<Russian>Вы не можете переливать кровь так быстро</Russian>
-			<Spanish>No puedes realizar otra transfución de sangre tan rápido.</Spanish>
-			<Dutch>Je kunt niet zosnel aaneenvolgend een bloedtransfusie uitvoeren</Dutch>
-			<French>Vous ne pouvez pas faire d'autre transfusion de sang aussi rapidement</French>
-			<Czech>Nelze znovu provést krevní transfúzi tak rychle po sobě.</Czech>
+			<Original>You cannot perform another blood transfusion so fast, wait %1 seconds</Original>
+			<English>You cannot perform another blood transfusion so fast, wait %1 seconds</English>
+			<German>Sie können eine weitere Bluttransfusion so schnell nicht durchführen, warten Sie %1 Sekunden.</German>
+			<Russian>Вы не можете выполнить другую переливание крови так быстро, подождите %1 секунд.</Russian>
+			<Spanish>No es posible realizar otra transfusión de sangre tan rápido, esperar %1 segundos.</Spanish>
+			<Dutch>U kunt een bloedtransfusie niet uit te voeren zo snel, wacht %1 seconden.</Dutch>
+			<French>Vous ne pouvez pas effectuer une autre transfusion sanguine si vite, attendez %1 secondes.</French>
+			<Czech>Nemůžete provádět další krevní transfuzi tak rychle, počkejte %1 sekund.</Czech>
 		</Key>
 		<Key ID="str_action_studybody">
 			<Original>Study Body</Original>

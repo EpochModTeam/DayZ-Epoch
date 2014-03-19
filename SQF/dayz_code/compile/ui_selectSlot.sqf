@@ -5,7 +5,7 @@ _button =	_this select 1;
 _parent = 	findDisplay 106;
 
 //if ((time - dayzClickTime) < 1) exitWith {};
-
+if (!DZE_SelfTransfuse && ((gearSlotData _control) == "ItemBloodBag")) exitWith {};
 if (_button == 1) then {
 	//dayzClickTime = time;
 	_group = _parent displayCtrl 6902;

@@ -3,6 +3,7 @@
 [ADDED] Classname C130J_US_EP1_DZ Weapon: 50 Magazine: 400 Backpack: 10 @Fank
 [ADDED] Variable DZE_ForceNameTagsInTrader to force name tags in traders. @Skaronator @Fank
 [ADDED] Switch seats in all vehicles. @icomrade
+[ADDED] Self transfusions (works in vehicles) must be enabled in mission using DZE_SelfTransfuse. @icomrade
 
 [FIXED] Instance already initialized error in server_monitor.sqf @vbawol
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev

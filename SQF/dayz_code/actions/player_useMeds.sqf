@@ -10,7 +10,6 @@ _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
 if (!_hasmeditem) exitWith {cutText [format[(localize "str_player_31"),_text,"use"] , "PLAIN DOWN"]};
-
 switch (_item) do {
 	case "ItemBandage": {
 		_id = [0,0,0,[player]] execVM "\z\addons\dayz_code\medical\bandage.sqf";
@@ -23,6 +22,9 @@ switch (_item) do {
 	};
 	case "ItemAntibiotic": {
 		_id = [0,0,0,[player]] execVM "\z\addons\dayz_code\medical\antibiotics.sqf";
+	};
+	case "ItemBloodbag": {
+		_id = [0,0,0,[player]] execVM "\z\addons\dayz_code\medical\self_transfusion.sqf";
 	};
 	case "ItemHeatPack": {
 		player removeMagazine "ItemHeatPack";
