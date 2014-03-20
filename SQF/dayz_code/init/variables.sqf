@@ -436,7 +436,7 @@ dayz_spawnArea = 200; // radius around player where we can spawn loot & Z
 dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
 dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
-selfTransfusionTime = -300; //time to keep for last  self transfusion.
+selfTransfusionTime = time; //time to keep for last  self transfusion.
 
 if(isNil "DZE_SelfTransfuse") then {
 	DZE_SelfTransfuse = false;

@@ -170,7 +170,7 @@ link86[] = {76,78};
 link87[] = {77,76};
 link88[] = {78,57};
 globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-629.823975,628.807434,621.934326,-518.250671,1137,1030,1};
-window[] = {2,-1,-1,-1,-1,1018,260,1538,260,3,1155};
+window[] = {2,-1,-1,-32000,-32000,862,104,1382,104,3,1155};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -636,7 +636,15 @@ class FSM
     class Phase_One
     {
       name = "Phase_One";
-      init = /*%FSM<STATEINIT""">*/"dayz_playerName = name player;" \n
+      init = /*%FSM<STATEINIT""">*/"if ((!isNil ""DZE_defaultSkin"") && _isNew && (_isInfected == 0)) then {" \n
+       "	if (dayz_selectGender == ""Survivor2_DZ"") then {" \n
+       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> (DZE_defaultSkin select 0) >> ""playerModel""); //MALE" \n
+       "	} else {" \n
+       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> (DZE_defaultSkin select 1) >> ""playerModel""); //FEMALE" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "dayz_playerName = name player;" \n
        "_model call player_switchModel;" \n
        "" \n
        "gear_done= true;" \n
