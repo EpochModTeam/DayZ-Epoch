@@ -11,8 +11,7 @@ dayZ_instance =	11;					//The instance
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
-DefaultBackpack = "DZ_LargeGunBag_EP1";
-DefaultBackpackItems = ["ItemJerrycan","PartEngine","PartFueltank","PartGeneric","PartWheel","Skin_Ins_Soldier_GL_DZ","Skin_Soldier1_DZ","M9SD","Binocular","NVGoggles","Mk_48_DZ","ItemGPS","ItemMap","ItemCompass","ItemKnife","ItemMatchbox","ItemToolbox"];
+
 //disable greeting menu 
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
