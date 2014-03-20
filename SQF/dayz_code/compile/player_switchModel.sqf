@@ -130,13 +130,15 @@ if (!isNil "_newBackpackType") then {
 		//magazines
 		_countr = 0;
 		{
-			_countr = _countr + 1;
-			if ((typeName _x) != "STRING") then {
-				(unitBackpack player) addMagazineCargoGlobal [(_x select 0), 1];
-				_idc = 4999 + _countr;
-				_idc setIDCAmmoCount (_x select 1);
-			} else {
-				(unitBackpack player) addMagazineCargoGlobal [_x, 1];
+			if (!(isClass(configFile >> "CfgWeapons" >> _x))) then {
+				_countr = _countr + 1;
+				if ((typeName _x) != "STRING") then {
+					(unitBackpack player) addMagazineCargoGlobal [(_x select 0), 1];
+					_idc = 4999 + _countr;
+					_idc setIDCAmmoCount (_x select 1);
+				} else {
+					(unitBackpack player) addMagazineCargoGlobal [_x, 1];
+				};
 			};
 		} forEach _backpackMag;
 		(findDisplay 106) closeDisplay 0;

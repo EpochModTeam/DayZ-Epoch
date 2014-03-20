@@ -20,9 +20,9 @@ item15[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000
 item16[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
-item19[] = {"Phase_One",2,4346,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
+item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
-item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
+item21[] = {"Phase_Two",2,4346,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
 item23[] = {"ERROR__Player_Already",2,250,175.000000,700.000000,275.000000,750.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item24[] = {"Alive",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Alive"};
@@ -169,8 +169,8 @@ link85[] = {75,57};
 link86[] = {76,78};
 link87[] = {77,76};
 link88[] = {78,57};
-globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-629.823975,628.807434,621.934326,-518.250671,1137,1030,1};
-window[] = {2,-1,-1,-32000,-32000,862,104,1382,104,3,1155};
+globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-383.230377,382.212097,1033.530151,397.048065,736,612,1};
+window[] = {0,-1,-1,-32000,-32000,994,351,1629,236,1,754};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -819,7 +819,7 @@ class FSM
        "		_mags = getArray (_config >> ""magazines"");" \n
        "		_wpns = getArray (_config >> ""weapons"");		" \n
        "		_bcpk = getText (_config >> ""backpack"");" \n
-       "		_bcpkWpn = getText (_config >> ""backpackWeapon"");" \n
+       "		_bcpkItems = getText (_config >> ""backpackWeapon"");" \n
        "		if(!isNil ""DefaultMagazines"") then {" \n
        "			_mags = DefaultMagazines;" \n
        "		};" \n
@@ -829,8 +829,8 @@ class FSM
        "		if(!isNil ""DefaultBackpack"") then {" \n
        "			_bcpk = DefaultBackpack;" \n
        "		};" \n
-       "		if(!isNil ""DefaultBackpackWeapon"") then {" \n
-       "			_bcpkWpn = DefaultBackpackWeapon;" \n
+       "		if(!isNil ""DefaultBackpackItems"") then {" \n
+       "			_bcpkItems = DefaultBackpackItems;" \n
        "		};" \n
        "		//Add inventory" \n
        "		{" \n
@@ -850,8 +850,18 @@ class FSM
        "			player addBackpack _bcpk; " \n
        "			dayz_myBackpack =	unitBackpack player;" \n
        "		};" \n
-       "		if (_bcpkWpn != """") then {" \n
-       "			dayz_myBackpack addWeaponCargoGlobal [_bcpkWpn,1];" \n
+       "		if ((typeName _bcpkItems) == ""ARRAY"") then {" \n
+       "			{" \n
+       "				if (isClass(configFile >> ""CfgWeapons"" >> _x)) then {" \n
+       "					dayz_myBackpack addWeaponCargoGlobal [_x,1];" \n
+       "				} else {" \n
+       "					dayz_myBackpack addMagazineCargoGlobal [_x, 1];" \n
+       "				};" \n
+       "			} forEach _bcpkItems;" \n
+       "		} else {" \n
+       "			if (_bcpkItems != """") then {" \n
+       "				dayz_myBackpack addMagazineCargoGlobal [_bcpkItems, 1];" \n
+       "			};" \n
        "		};" \n
        "	};" \n
        "};" \n

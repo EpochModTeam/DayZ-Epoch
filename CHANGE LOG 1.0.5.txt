@@ -14,6 +14,7 @@
 [CHANGED] Consume Eat/Drink in vehicle will add empty food/drink cans into vehicle inventory. @SilvDev @Fank
 [CHANGED] SQL Removed empty fuel barrel from vehicle parts trader and moved to wholesaler as increased buy/sell price. @Fank
 [CHANGED] You may again switch skins while wearing a backpack. @icomrade
+[CHANGED] Replaced variable DefaultBackpackWeapon = ""; with DefaultBackpackItems = [""]; which accepts both weapons and magazines. @icomrade
 
 [INFO]Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
 [INFO] Models/textures by Paul Tomany. @Sequisha.
