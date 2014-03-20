@@ -15,5 +15,6 @@
 [CHANGED] SQL Removed empty fuel barrel from vehicle parts trader and moved to wholesaler as increased buy/sell price. @Fank
 [CHANGED] You may again switch skins while wearing a backpack. @icomrade
 
+[INFO]Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
