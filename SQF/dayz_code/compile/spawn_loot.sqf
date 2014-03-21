@@ -8,7 +8,7 @@ _uniq = [];
 _iPosZ = _iPos select 2;
 if((isNil "_iPosZ") OR {( _iPosZ < 0)}) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
 if (isNil "_iClass") exitWith {diag_log "_iClass isNil, exiting loot spawn!";};
-diag_log _iClass;
+
 switch (_iClass) do {
 	default {
 		_itemTypes = [];
