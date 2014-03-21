@@ -76,14 +76,14 @@ class CfgBuildingLoot {
 			,{"ItemKnife","generic",0.04}
 			,{"ItemMatchbox_DZE","generic",0.01}
 			,{"","generic",0.36}
-			,{"backpacks","backpack",0.04}
-			,{"tents","single",0.01}
+			,{"backpacks","backpacks",0.04}
+			,{"tents","tents",0.01}
 			,{"","military",0.02}
 			,{"","trash",0.17}
 			,{"Binocular","weapon",0.02}
 			,{"PartPlywoodPack","magazine",0.02}
-			,{"clothes","single",0.01}
-			,{"specialclothes","single",0.01}
+			,{"clothes","clothes",0.01}
+			,{"specialclothes","specialclothes",0.01}
 			,{"WeaponHolder_MeleeCrowbar","object",0.03}
 		};
 	};
@@ -104,14 +104,14 @@ class CfgBuildingLoot {
 			,{"ItemKnife","generic",0.04}
 			,{"ItemMatchbox_DZE","generic",0.01}
 			,{"","generic",0.31}
-			,{"backpacks","backpack",0.04}
-			,{"tents","single",0.01}
+			,{"backpacks","backpacks",0.04}
+			,{"tents","tents",0.01}
 			,{"","military",0.02}
 			,{"","trash",0.21}
 			,{"Binocular","weapon",0.02}
 			,{"PartPlywoodPack","magazine",0.02}
-			,{"clothes","single",0.01}
-			,{"specialclothes","single",0.01}
+			,{"clothes","clothes",0.01}
+			,{"specialclothes","specialclothes",0.01}
 			,{"WeaponHolder_MeleeCrowbar","object",0.03}
 			,{"ItemBriefcaseEmpty","magazine",0.01}
 			,{"ItemDocument","magazine",0.01}
@@ -209,8 +209,8 @@ class CfgBuildingLoot {
 			,{"ItemKnife","generic",0.02}
 			,{"ItemMatchbox_DZE","generic",0.04}
 			,{"","generic",0.04}
-			,{"backpacks","backpack",0.07}
-			,{"tents","single",0.01}
+			,{"backpacks","backpacks",0.07}
+			,{"tents","tents",0.01}
 			,{"","food",0.3}
 			,{"","trash",0.23}
 			,{"Binocular","weapon",0.05}
@@ -232,8 +232,8 @@ class CfgBuildingLoot {
 			,{"NVGoggles","weapon",0.01}
 			,{"AmmoBoxSmall_556","object",0.03}
 			,{"AmmoBoxSmall_762","object",0.03}
-			,{"militaryclothes","single",0.05}
-			,{"militaryammo","single",0.06}
+			,{"militaryclothes","militaryclothes",0.05}
+			,{"militaryammo","militaryammo",0.06}
 		};
 	};
 	class HeliCrash_No50s: Default {
@@ -250,8 +250,8 @@ class CfgBuildingLoot {
 			,{"NVGoggles","weapon",0.01}
 			,{"AmmoBoxSmall_556","object",0.03}
 			,{"AmmoBoxSmall_762","object",0.03}
-			,{"militaryclothes","single",0.05}
-			,{"militaryammo","single",0.06}
+			,{"militaryclothes","militaryclothes",0.05}
+			,{"militaryammo","militaryammo",0.06}
 		};
 	};
 	class Hospital: Default {
@@ -279,7 +279,7 @@ class CfgBuildingLoot {
 			,{"ItemKnife","military",0.01}
 			,{"ItemGPS","weapon",0.01}
 			,{"ItemMap","military",0.02}
-			,{"militarybackpacks","backpack",0.05}
+			,{"militarybackpacks","militarybackpacks",0.05}
 			,{"","medical",0.03}
 			,{"","generic",0.1}
 			,{"","military",0.3}
@@ -302,7 +302,7 @@ class CfgBuildingLoot {
 			,{"ItemKnife","military",0.04}
 			,{"ItemGPS","weapon",0.01}
 			,{"PartVRotor","magazine",0.01}
-			,{"militarybackpacks","backpack",0.03}
+			,{"militarybackpacks","militarybackpacks",0.03}
 			,{"","medical",0.05}
 			,{"","generic",0.35}
 			,{"","military",0.07}
@@ -330,7 +330,7 @@ class CfgBuildingLoot {
 			,{"PartFueltank","magazine",0.03}
 			,{"PartEngine","magazine",0.04}
 			,{"PartGlass","magazine",0.05}
-			,{"militarybackpacks","backpack",0.03}
+			,{"militarybackpacks","militarybackpacks",0.03}
 			,{"","medical",0.05}
 			,{"","generic",0.25}
 			,{"","military",0.07}
@@ -356,12 +356,12 @@ class CfgBuildingLoot {
 			,{"ItemGPS","weapon",0.01}
 			,{"ItemMap","military",0.01}
 			,{"Binocular_Vector","military",0.01}
-			,{"militarybackpacks","backpack",0.04}
+			,{"militarybackpacks","militarybackpacks",0.04}
 			,{"","medical",0.08}
 			,{"","generic",0.3}
 			,{"","military",0.01}
-			,{"machinegunammo","single",0.05}
-			,{"militaryclothes","single",0.05}
+			,{"machinegunammo","machinegunammo",0.05}
+			,{"militaryclothes","militaryclothes",0.05}
 			,{"NVGoggles","weapon",0.01}
 			,{"100Rnd_762x54_PK","magazine",0.05}
 		};

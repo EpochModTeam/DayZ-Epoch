@@ -1,5 +1,5 @@
 [] spawn {
-	while {true} do {
+	while {1 == 1} do {
 		waitUntil {((isNil "BIS_Effects_Rifle") OR {(count(toArray(str(BIS_Effects_Rifle)))!=7)})};
 		diag_log "Res3tting B!S effects...";
 		/* BIS_Effects_* fixes from Dwarden */

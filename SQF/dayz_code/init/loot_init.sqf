@@ -9,15 +9,14 @@ if (DZE_MissionLootTable) then {
 for "_i" from 0 to ((count _config) - 1) do {
 	_classname = configName (_config select _i);
 	_itemChances = getArray (_config >> _classname >> "lootType");
-	_itemCount = count _itemChances;
-
+	_itemCount = count _itemChances; 
 	//diag_log format["Classname: %1, Array: %2, Amount: %3", _classname, _itemChances, _itemCount];
 
 	if (_itemCount > 0) then {
-		if (dayz_CBLBase find _classname < 0) then {
+		if ((dayz_CBLBase find _classname) < 0) then {
 			_weighted = [];
 			_j = 0;
-			for "_l" from 0 to ((count _itemChances) - 1) do {
+			for "_l" from 0 to (_itemCount - 1) do {
 			_weight = round (((_itemChances select _l) select 2) * 100);
 				for "_k" from 0 to (_weight - 1) do
 				{

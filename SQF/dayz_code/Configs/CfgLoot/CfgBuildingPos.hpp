@@ -95,17 +95,17 @@ class Land_SS_hangar: Military {
 	lootType[] = {
 		//one spawn
 		//tools
-			{"ItemEtool","weapon",0.02},
+		{"ItemEtool","weapon",0.02},
 		//weapons
 		//special
 		{"WeaponHolder_PartVRotor", "object",0.02},
 		//mags special
 		{"ItemSandbag","magazine",0.02},
-			{"ItemWire","magazine",0.02},
+		{"ItemWire","magazine",0.02},
 		{"ItemTankTrap","magazine",0.02},
 		//bags
 		//multiple spawns
-		{"", "Industrial",0.60}
+		{"","generic",0.60}
 	};
 };
 class Land_A_Pub_01: Residential {
@@ -414,7 +414,7 @@ class USMC_WarfareBFieldhHospital: MASH {
 	zedPos[] = {{-3.52246,-5.03906,1.20731},{2.36621,-4.52246,1.20792},{1.39209,-0.420898,1.20752},{1.14258,5.01172,1.20786},{3.7124,1.89746,1.19794}};
 }; // Qty: 1
 
-class Land_Ind_Shed_02_main: Default {
+class Land_Ind_Shed_02_main: Industrial {
 	zombieChance = 0.3;
 	maxRoaming = 3;
 }; // Qty: 283

@@ -325,9 +325,9 @@ class CfgLoot {
 		,{"Skin_INS_Lopotev_DZ",0.02}
 	};
 	tents[] = {
-		{"ItemTentOld",0.34}
-		,{"ItemTentDomed",0.33}
-		,{"ItemTentDomed2",0.33}
+		{"WeaponHolder_ItemTentOld",0.34}
+		,{"WeaponHolder_ItemTentDomed",0.33}
+		,{"WeaponHolder_ItemTentDomed2",0.33}
 	};
 	backpacks[] = {
 		{"DZ_Assault_Pack_EP1",0.22}

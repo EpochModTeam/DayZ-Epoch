@@ -2,10 +2,9 @@
         Created exclusively for ArmA2:OA - DayZMod.
         Please request permission to use/alter/distribute from project leader (R4Z0R49)
 */
-//private ["_lootChance","_index","_weights","_cntWeights","_itemType","_qty","_rnd","_iPos","_obj","_type","_config","_pos","_itemTypes","_positions","_bias"];
 private ["_lootChance"];
 _obj = _this;
-_type = typeOf _obj;
+_type = configName (configFile >> "CfgBuildingLoot" >> (typeOf _obj)); //make sure we return the same case
 _config = configFile >> "CfgBuildingLoot" >> _type;
 _pos = [] + getArray (_config >> "lootPos");
 _itemTypes = [] + getArray (_config >> "lootType");
@@ -32,7 +31,6 @@ _ShuffleArray = {
 	_rand_array;
 };
 _positions = _pos call _ShuffleArray;
-
 
 // bias for this building. The lower it is, the lower chance some of the lootpiles will spawn
 _bias = 50 max _lootSpawnBias;
