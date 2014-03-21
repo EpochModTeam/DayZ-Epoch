@@ -810,6 +810,16 @@
 			<French>Vous ne pouvez pas vous déconnecter en combat!</French>
 			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
 		</Key>
+		<Key ID="str_return_lobby">
+			<Original>Returning to lobby in %1 second(s)...</Original>
+			<English>Returning to lobby in %1 second(s)...</English>
+			<Russian>Возврат в лобби через %1 сек.</Russian>
+			<Spanish>Volviendo al lobby en %1 segundo(s)...</Spanish>
+			<Czech>Návrat do lobby za %1 sekund...</Czech>
+			<French>Retour à l'accueil dans %1 secondes...</French>
+			<German>Rückkehr zur lobby in %1 Sekunden...</German>
+			<Dutch>Terugkomend op lobbyen in %1 seconden</Dutch>
+		</Key>
 		<Key ID="str_broken_arrow">
 			<Original>Arrow was broken and cannot be used again</Original>
 			<English>Arrow was broken and cannot be used again</English>
