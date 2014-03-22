@@ -38,7 +38,7 @@ while {true} do {
 
 			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos OR (dayz_myPosition select 1) < dayz_minpos OR (dayz_myPosition select 0) > dayz_maxpos OR (dayz_myPosition select 1) > dayz_maxpos);
 
-			if(_outsideMap OR DZE_Quarantine) then {
+			if((_outsideMap || DZE_Quarantine) && !r_player_dead && !isNull (findDisplay 46)) then {
 				DZE_InRadiationZone = true;
 			};
 
