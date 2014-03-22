@@ -20,6 +20,10 @@ if (_dikCode == 0x01) then {
 	DZE_cancelBuilding = true;
 	call dayz_EjectPlayer;
 };
+// Disable ESC after death
+if (_dikCode == 0x01 && r_player_dead) then {
+	_handled = true;
+};
 
 // surrender 
 if (_dikCode in actionKeys "Surrender") then {
