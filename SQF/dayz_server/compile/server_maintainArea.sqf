@@ -1,5 +1,5 @@
 /* Maintain Area - written by Skaronator */
-private ["_player","_ObjArray","_uniqueID","_objects","_key"];
+private ["_player","_name","_ObjArray","_uniqueID","_objects","_key"];
 _player = _this select 0;
 _option = _this select 1;
 /*
@@ -27,8 +27,8 @@ if (_option == 1) then {
 			};
 		};
 	} forEach _objects;
-
-	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", name _player, count _objects, position _player];
+	_name = if (alive _player) then { name _player; } else { "Dead Player"; };
+	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", _name, count _objects, position _player];
 };
 if (_option == 2) then {
 	if (damage _targetObj >= DZE_DamageBeforeMaint) then {

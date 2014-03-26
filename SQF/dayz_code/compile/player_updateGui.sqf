@@ -1,4 +1,4 @@
-private ["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_humanityTarget"];
+private ["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_humanityTarget"];
 disableSerialization;
 
 _foodVal = 		1 - (dayz_hunger / SleepFood);
@@ -173,7 +173,8 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 			// <br /><t %2 align='center' size='0.7'>Humanity: %3</t>
 
 			_color = "color='#339933'";
-			_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+			_humanityName = if (alive _humanityTarget) then {name _humanityTarget; } else { "Dead Player";};
+			_string = format["<t %2 align='center' size='%3'>%1</t>",_humanityName,_color,_size];
 		
 		} else {
 
@@ -189,7 +190,8 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 				};
 			};
 			if((_humanityTarget getVariable ["DZE_display_name", false]) or (DZE_ForceNameTagsInTrader && isInTraderCity)) then {
-				_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+				_humanityName = if (alive _humanityTarget) then {name _humanityTarget; } else { "Dead Player";};
+				_string = format["<t %2 align='center' size='%3'>%1</t>",_humanityName,_color,_size];
 			};
 		};
 	};
