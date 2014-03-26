@@ -13,7 +13,14 @@ _hitPoints = _unit call vehicle_getHitpoints;
 if (isServer) then {
 	[_unit, "killed"] call server_updateObject;
 } else {
-	PVDZE_veh_Update = [_unit, "killed"];
+	if (DZE_Debug_Damage && !(isPlayer _unit)) then {
+		PVDZE_veh_Update = [_unit, "killed",_killer];
+		_killerVeh = if (vehicle _killer != _killer) then { format["[KILLER IN VEHICLE %1 OF TYPE %2]", (vehicle _killer), (typeOf (vehicle _killer))]; } else {"KILLER NOT IN VEHICLE";};
+		_name = if (alive _killer) then { name _killer; } else { format["OBJECT %1", _killer]; };
+		diag_log format["DAMAGE: Vehicle %1 (TYPE: %2) Killed by player %3 (UID: %4) %5",_unit, (typeOf _unit), _name, (getPlayerUID _killer), _killerVeh];
+	} else {
+		PVDZE_veh_Update = [_unit, "killed"];
+	};
 	publicVariableServer "PVDZE_veh_Update";
 };
 

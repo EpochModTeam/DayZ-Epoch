@@ -1182,7 +1182,7 @@
 			<French>Examiner le corps</French>
 			<Czech>Prozkoumat tělo</Czech>
 		</Key>
-		<Key ID="str_actions_build">
+		<Key ID="STR_ACTIONS_BUILD_EPOCH">
 			<Original>Build %1</Original>
 			<English>Build %1</English>
 			<German>%1 bauen</German>
@@ -6979,16 +6979,6 @@
 		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
 			<Original>12 x 30Rnd_9x19_MP5SD</Original>
 			<English>12 x 30Rnd_9x19_MP5SD</English>
-			<!-- <German></German> -->
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
-		</Key>
-		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
-			<Original>12 x 30Rnd_556x45_StanagSD</Original>
-			<English>12 x 30Rnd_556x45_StanagSD</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->

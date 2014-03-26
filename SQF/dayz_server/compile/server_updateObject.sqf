@@ -120,6 +120,12 @@ _object_killed = {
 	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
+	if ((count _this) > 2) then {
+		_killer = _this select 2;
+		_killerVeh = if (vehicle _killer != _killer) then { format["[KILLER IN VEHICLE %1 OF TYPE %2]", (vehicle _killer), (typeOf (vehicle _killer))]; } else {""};
+		_name = if (alive _killer) then { name _killer; } else { format["OBJECT %1", _killer]; };
+		diag_log format["DAMAGE: Vehicle %1 (TYPE: %2) Killed by player %3 (UID: %4) %5",_unit, (typeOf _unit), _name, (getPlayerUID _killer), _killerVeh];
+	};
 };
 
 _object_repair = {

@@ -264,7 +264,7 @@ class CfgMagazines {
         {
             class Build
             {
-                    text = $STR_ACTIONS_BUILD;
+                    text = $STR_ACTIONS_BUILD_EPOCH;
                     script = "spawn player_build;";
                     require[] = {"ItemToolbox"};
                     create = "GunRack_DZ";
@@ -285,7 +285,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WoodCrate_DZ";
@@ -349,7 +349,7 @@ class CfgMagazines {
             {
                 class Build
                 {
-                    text = $STR_ACTIONS_BUILD;
+                    text = $STR_ACTIONS_BUILD_EPOCH;
                     script = "spawn player_build;";
                     require[] = {"ItemToolbox"};
                     create = "FireBarrel_DZ";
@@ -390,7 +390,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "WorkBench_DZ";
@@ -412,7 +412,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "WoodRamp_DZ";
@@ -432,7 +432,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Plastic_Pole_EP1_DZ";
@@ -454,7 +454,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "MetalPanel_DZ";
@@ -484,7 +484,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "DeerStand_DZ";
@@ -505,7 +505,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "DesertLargeCamoNet_DZ";
@@ -526,7 +526,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "ForestLargeCamoNet_DZ";
@@ -547,7 +547,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "DesertCamoNet_DZ";
@@ -577,7 +577,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "ForestCamoNet_DZ";
@@ -607,7 +607,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "FuelPump_DZ";
@@ -628,7 +628,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "LightPole_DZ";
@@ -649,7 +649,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "StickFence_DZ";
@@ -670,7 +670,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Wooden_shed_DZ";
@@ -691,7 +691,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "WoodShack_DZ";
@@ -712,7 +712,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "M240Nest_DZ";
@@ -733,7 +733,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "CanvasHut_DZ";
@@ -754,7 +754,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "ParkBench_DZ";
@@ -775,7 +775,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "MetalGate_DZ";
@@ -796,7 +796,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "SandNest_DZ";
@@ -817,7 +817,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "OutHouse_DZ";
@@ -838,7 +838,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "StorageShed_DZ";
@@ -860,7 +860,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Generator_DZ";
@@ -881,7 +881,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "FuelPump_DZ";
@@ -903,7 +903,7 @@ class CfgMagazines {
 		{
 			class Build
 			{
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemEtool","ItemToolbox"};
 				create = "Scaffolding_DZ";
@@ -1631,7 +1631,7 @@ class CfgMagazines {
 
 		class ItemActions {
 			class Build {
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Hedgehog_DZ";
@@ -1669,7 +1669,7 @@ class CfgMagazines {
 
 		class ItemActions {
 			class Build {
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTIONS_BUILD_EPOCH;
 				script = "spawn player_build;";
 				require[] = {"ItemToolbox"};
 				create = "Fort_RazorWire";

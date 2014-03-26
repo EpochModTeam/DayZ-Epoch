@@ -77,7 +77,9 @@ if (_damage > 0.4) then {
 	if (_unitIsPlayer) then {
 		//Cause blood loss
 		//Log Damage
-		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		if (DZE_Debug_Damage) then {
+			diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		};
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };

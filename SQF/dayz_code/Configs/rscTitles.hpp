@@ -95,7 +95,7 @@ class RscDisplayDebriefing: RscStandardDisplay {
 		delete CA_MissionTitle;
 		delete CA_TextVotingTimeLeft;
 		delete CA_MissionResult;
-		delete CA_DebriefingInfo;
+		class CA_DebriefingInfo: RscHTML {};
 		delete CA_DebriefingTextGroup;
 		delete CA_DebriefingObjectivesGroup;
 		delete CA_DebriefingStatsGroup;
@@ -120,7 +120,7 @@ class RscDisplayMissionFail: RscStandardDisplay {
 		delete CA_MissionTitle;
 		delete CA_TextVotingTimeLeft;
 		delete CA_MissionResult;
-		delete CA_DebriefingInfo;
+		class CA_DebriefingInfo: RscHTML {};
 		delete CA_DebriefingTextGroup;
 		delete CA_DebriefingObjectivesGroup;
 		delete CA_DebriefingStatsGroup;
