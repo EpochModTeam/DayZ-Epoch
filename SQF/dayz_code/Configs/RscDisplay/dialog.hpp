@@ -134,7 +134,7 @@ class RscShortcutButtonTraderDialog
 
 class TraderDialog
 {
-	idd = -1;
+	idd = 420420;
 	movingenable = 0;
 
 	class Controls {
@@ -208,9 +208,9 @@ class TraderDialog
 		{
 			idc = 12007;
 			text = $STR_EPOCH_PLAYER_306;
-			x = 0.351256 * safezoneW + safezoneX;
+			x = 0.381256 * safezoneW + safezoneX;
 			y = 0.720064 * safezoneH + safezoneY;
-			w = 0.1487436 * safezoneW;
+			w = 0.1287436 * safezoneW;
 			h = 0.055016 * safezoneH;
 			onButtonClick = "[[],0] call epoch_returnChange; ((ctrlParent (_this select 0)) closeDisplay 9000); cutText [(localize ""STR_EPOCH_PLAYER_307"") , ""PLAIN DOWN""];";
 		};
