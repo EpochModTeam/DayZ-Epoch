@@ -31,10 +31,5 @@ class VaultStorageLocked: Land_A_tent {
 class WeaponHolder_ItemVault: WeaponHolder {
 	scope = 2;
 	displayName = "Safe";
-	class transportmagazines {
-		class _xx_ItemVault {
-			magazine = "ItemVault";
-			count = 1;
-		};
-	};
+	seedItem = "ItemVault";
 };

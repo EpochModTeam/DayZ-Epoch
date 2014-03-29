@@ -29,10 +29,5 @@ class LockboxStorage: Land_A_tent {
 class WeaponHolder_ItemLockbox: WeaponHolder {
 	scope = 2;
 	displayName = "Lockbox";
-	class transportmagazines {
-		class _xx_ItemLockbox {
-			magazine = "ItemLockbox";
-			count = 1;
-		};
-	};
+	seedItem = "ItemLockbox";
 };

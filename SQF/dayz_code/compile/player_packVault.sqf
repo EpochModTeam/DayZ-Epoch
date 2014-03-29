@@ -13,6 +13,7 @@ _obj = _this;
 _packedClass = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "packedClass");
 _text = 		getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
 
+
 // Silently exit if object no longer exists
 if(isNull _obj or !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
 
@@ -80,6 +81,11 @@ if(!isNull _obj and alive _obj) then {
 
 	// Empty weapon holder 
 	_holder = _bag;
+	
+	// add seed item
+	_itemOut = getText(configFile >> "CfgVehicles" >> _packedClass >> "seedItem");
+	_countOut = 1;
+	_holder addMagazineCargoGlobal[_itemOut, _countOut];
 	
 	//Add weapons
 	_objWpnTypes = 	_weapons select 0;
