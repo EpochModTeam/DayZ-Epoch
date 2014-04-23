@@ -1,10 +1,10 @@
 class CfgLootSmall {
 	trash[] = {		
-		{"TrashTinCan"},0.5},
-		{"TrashJackDaniels"},0.05},
-		{"ItemSodaEmpty"},0.25},
-		{"ItemTrashToiletpaper"},0.1},
-		{"ItemTrashRazor"},0.1}
+		{"TrashTinCan",0.5},
+		{"TrashJackDaniels",0.05},
+		{"ItemSodaEmpty",0.25},
+		{"ItemTrashToiletpaper",0.1},
+		{"ItemTrashRazor",0.1}
 	};
 	civilian[] = {
 		{"FoodCanUnlabeled",0.07},
