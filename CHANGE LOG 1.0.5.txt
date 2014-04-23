@@ -1,5 +1,5 @@
 [ADDED] More enterable buildings thanks to @Tansien and the DayZero crew.
-[ADDED] Latest version of Napf 1.0 by Momo
+[ADDED] Latest version of Napf 1.0.1 by Momo
 [ADDED] Classname C130J_US_EP1_DZ Weapon: 50 Magazine: 400 Backpack: 10 @Fank
 [ADDED] Variable DZE_ForceNameTagsInTrader to force name tags in traders. @Skaronator @Fank
 [ADDED] Switch seats in all vehicles. @icomrade
