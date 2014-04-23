@@ -1,14 +1,23 @@
 /*
-        Created exclusively for ArmA2:OA - DayZMod.
+        Created exclusively for ArmA2:OA - DayZMod
         Please request permission to use/alter/distribute from project leader (R4Z0R49)
+		Modified for DayZ Epoch by [VB]AWOL vbawol@veteranbastards.com.
 */
 private ["_lootChance"];
 _obj = _this;
-_type = configName (configFile >> "CfgBuildingLoot" >> (typeOf _obj)); //make sure we return the same case
-_config = configFile >> "CfgBuildingLoot" >> _type;
+
+// lower case to prevent issues with differing case for buildings from map to map.
+_type = toLower(typeOf _obj);
+
+_config = 		configFile >> "CfgBuildingLoot" >> _type;
+if (DZE_MissionLootTable) then {
+	_config = missionConfigFile >> "CfgBuildingLoot" >> _type;
+};
+
 _pos = [] + getArray (_config >> "lootPos");
 _itemTypes = [] + getArray (_config >> "lootType");
 _lootChance = getNumber (_config >> "lootChance");
+
 //_countPositions = count _pos;
 _qty = 0; // effective quantity of spawned weaponholder
 _lootSpawnBias = 67; //67 between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
@@ -61,13 +70,45 @@ _bias = (_bias + random(100 - _bias)) / 100;
 	//				diag_log (format["SpawnLoot: Pos: %1, LootType: %2/%3,",_iPos,_itemType select 0,_itemType select 1]);
 					dayz_currentWeaponHolders = dayz_currentWeaponHolders +1;
 					//loclout system
-					_islocal = _obj getVariable ["", false]; // object created locally via TownGenerator. See stream_locationFill.sqf
-					_obj setVariable ["looted",diag_tickTime + dayz_tickTimeOffset,!_islocal];
+					_obj setVariable ["looted",diag_tickTime + dayz_tickTimeOffset];
 				};
 			};
 		};
-		//sleep 0.002;
 	};
 } forEach _positions;
 
-//dayz_currentWeaponHolders;
+// small loot
+_posSmall =	 [] + getArray (_config >> "lootPosSmall");
+_itemTypesSmall =	[] + getArray (_config >> "itemTypeSmall");
+
+_positionsSmall = _posSmall call _ShuffleArray;
+
+{
+	if (count _x == 3) then {
+		_rnd = (random 1) / _bias;
+		_iPos = _obj modelToWorld _x;
+		_nearBy = nearestObjects [_iPos, ["ReammoBox"], 2];
+
+		if (count _nearBy > 0) then {
+			_lootChance = _lootChance + 0.05;
+		};
+
+		if (dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders) then {
+			if (_rnd <= _lootChance) then {
+				if (count _nearBy == 0) then {
+					_index = dayzE_CBLSBase find _type;
+					_weights = dayzE_CBLSChances select _index;
+					_cntWeights = count _weights;
+					_index = floor(random _cntWeights);
+					_index = _weights select _index;
+					_itemType = _itemTypesSmall select _index;
+					[_itemType select 0, _itemType select 1 , _iPos, 0.0] call spawn_loot;
+	//				diag_log (format["SpawnLoot: Pos: %1, LootType: %2/%3,",_iPos,_itemType select 0,_itemType select 1]);
+					dayz_currentWeaponHolders = dayz_currentWeaponHolders +1;
+					//loclout system
+					_obj setVariable ["looted",diag_tickTime + dayz_tickTimeOffset];
+				};
+			};
+		};
+	};
+} forEach _positionsSmall;

@@ -12,10 +12,11 @@ if (isNil "_iClass") exitWith {diag_log "_iClass isNil, exiting loot spawn!";};
 switch (_iClass) do {
 	default {
 		_itemTypes = [];
-		{
-			_itemTypes set [count _itemTypes, _x select 0]
-		} foreach getArray (configFile >> "cfgLoot" >> _iClass);
-
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iClass)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+		};
 		_qty = 0;
 		_max = ceil(random 2) + 1;
 		if (_iClass in ["trash","civilian","office","office2","food","generic","medical","hospital","military","militarypilot","policeman","hunter","worker"]) then {
@@ -73,12 +74,86 @@ switch (_iClass) do {
 				_item = createVehicle [_item2, _iPos, [], _radius, "CAN_COLLIDE"];
 			};
 		};
+		
 	};
-	case "weapon": {
+	case "single":
+	{
+		//Item is sigle, add 1 item from cfgloot
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+		_itemTypes = [];
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		};
+		_index = dayz_CLBase find _iItem;
+		_weights = dayz_CLChances select _index;
+		_cntWeights = count _weights;
+			
+	    _index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_canType = _itemTypes select _index;
+		_item addMagazineCargoGlobal [_canType,1];
+	};
+	case "backpack":
+	{
+		//Item is single backpack
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		};
+		_index = dayz_CLBase find _iItem;
+		_weights = dayz_CLChances select _index;
+		_cntWeights = count _weights;
+	    _index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_iItem = _itemTypes select _index;
+
+		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
+	};
+	case "cfglootweapon":
+	{
+		if (DZE_MissionLootTable) then {
+			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
+		} else {
+			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		};
+		_index = dayz_CLBase find _iItem;
+		_weights = dayz_CLChances select _index;
+		_cntWeights = count _weights;
+			
+	    _index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_iItem = _itemTypes select _index;
+
+		if (_iItem == "Chainsaw") then {
+			_iItem = ["ChainSaw","ChainSawB","ChainSawG","ChainSawP","ChainSawR"] call BIS_fnc_selectRandom;
+		};
+
+		//Item is a weapon, add it and a random quantity of magazines
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
-		if ((count _mags) > 0) then {
+		if ((count _mags) > 0) then
+		{
+			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
+			if (_mags select 0 == "20Rnd_556x45_Stanag") then { _mags set [0, "30Rnd_556x45_Stanag"] };
+			if (_mags select 0 == "30Rnd_556x45_G36") then { _mags set [0, "30Rnd_556x45_Stanag"] };
+			if (_mags select 0 == "30Rnd_556x45_G36SD") then { _mags set [0, "30Rnd_556x45_StanagSD"] };
+			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
+		};
+		
+	};
+	case "weapon":
+	{
+		//Item is a weapon, add it and a random quantity of magazines
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+		_item addWeaponCargoGlobal [_iItem,1];
+		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
+		if ((count _mags) > 0) then
+		{
+			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
 			if (_mags select 0 == "20Rnd_556x45_Stanag") then { _mags set [0, "30Rnd_556x45_Stanag"] };
 			if (_mags select 0 == "30Rnd_556x45_G36") then { _mags set [0, "30Rnd_556x45_Stanag"] };
 			if (_mags select 0 == "30Rnd_556x45_G36SD") then { _mags set [0, "30Rnd_556x45_StanagSD"] };
@@ -90,7 +165,15 @@ switch (_iClass) do {
 			};
 		};
 	};
-	case "magazine": {
+	case "weaponnomags":
+	{
+		//Item is a weapon, and spawns no mags
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+		_item addWeaponCargoGlobal [_iItem,1];
+	};
+	case "magazine":
+	{
+		//Item is one magazine
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addMagazineCargoGlobal [_iItem,1];
 	};
