@@ -1,4 +1,3 @@
-
 class CfgSounds {
 	class breath_1 {
 		name = "";
@@ -355,6 +354,24 @@ class CfgSounds {
 	class z_chase_14 : z_chase_0 {
 		sound[] = {"\dayz_sfx\zombie\chase_14.ogg",0.5,1,80};
 	};
+	
+	class z_fchase_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\zombie\femalezombie_chase_01.ogg",0.5,1,80};
+		titles[] = {0, ""};
+	};
+	class z_fchase_1 : z_fchase_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_chase_02.ogg",0.5,1,80};
+	};
+	class z_fchase_2 : z_fchase_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_chase_03.ogg",0.5,1,80};
+	};
+	class z_fchase_3 : z_fchase_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_chase_04.ogg",0.5,1,80};
+	};
+	class z_fchase_4 : z_fchase_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_chase_05.ogg",0.5,1,80};
+	};
 
 	class z_spotted_0 {
 		name = "";
@@ -400,6 +417,24 @@ class CfgSounds {
 	class z_spotted_13 : z_spotted_0 {
 		sound[] = {"\dayz_sfx\zombie\spotted_13.ogg",0.8,1,80};
 	};
+	
+	class z_fspotted_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\zombie\femalezombie_spotted_01.ogg",0.8,1,80};
+		titles[] = {0, ""};
+	};
+	class z_fspotted_1 : z_fspotted_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_spotted_02.ogg",0.8,1,80};
+	};
+	class z_fspotted_2 : z_fspotted_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_spotted_03.ogg",0.8,1,80};
+	};
+	class z_fspotted_3 : z_fspotted_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_spotted_04.ogg",0.8,1,80};
+	};
+	class z_fspotted_4 : z_fspotted_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_spotted_05.ogg",0.8,1,80};
+	};
 
 	class z_attack_0 {
 		name = "";
@@ -444,6 +479,27 @@ class CfgSounds {
 	};
 	class z_attack_13 : z_attack_0 {
 		sound[] = {"\dayz_sfx\zombie\attack_13.ogg",0.5,1,80};
+	};
+	class z_attack_13 : z_attack_0 {
+		sound[] = {"\dayz_sfx\zombie\attack_13.ogg",0.5,1,80};
+	};
+
+	class z_fattack_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\zombie\femalezombie_attack_01.ogg",0.5,1,80};
+		titles[] = {0, ""};
+	};
+	class z_fattack_1 : z_fattack_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_attack_02.ogg",0.5,1,80};
+	};
+	class z_fattack_2 : z_fattack_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_attack_03.ogg",0.5,1,80};
+	};
+	class z_fattack_3 : z_fattack_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_attack_04.ogg",0.5,1,80};
+	};
+	class z_fattack_4 : z_fattack_0 {
+		sound[] = {"\dayz_sfx\zombie\femalezombie_attack_05.ogg",0.5,1,80};
 	};
 
 	class z_hit_0 {
