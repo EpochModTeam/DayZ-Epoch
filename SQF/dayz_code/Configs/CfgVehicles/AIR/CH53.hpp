@@ -10,11 +10,15 @@ class CH53_base: Helicopter  {
 class CH53_DZ: CH53_base	 {
 	displayname = "USEC CH53";
 	displaynameshort = "CH53_DZ";
+	enablemanualfire = 0;
 	scope = 2;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
+	icon = "\ca\air_e\data\UI\Icon_ah6x_CA.paa";
+	model = "\ca\air_e\ah6j\ah6x";
+	radartype = 0;
 	class TransportMagazines{};
 	class TransportWeapons{};
 	commanderCanSee = 2+16+32;
