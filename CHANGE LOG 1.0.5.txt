@@ -5,7 +5,7 @@
 [ADDED] Switch seats in all vehicles. @icomrade
 [ADDED] Self transfusions (works in vehicles) must be enabled in mission using DZE_SelfTransfuse. @icomrade
 [ADDED] Default player skin for fresh spawns DZE_defaultSkin = ["Male skin","Female skin"]. @icomrade
-[ADDED] The USEC CH53 Super Stallion to the spawn lists @raginruffalo
+[ADDED] The USEC CH53 Super Stallion to the dynamic vehicle lists & trader @Namindu @raginruffalo
 
 [FIXED] Instance already initialized error in server_monitor.sqf @vbawol
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev
