@@ -35,7 +35,7 @@ class CH53_DZ: CH53_base {
 	};
 };
 class CH53_DZE: CH53_DZ	 {
-	displaynameshort = "Mi17_DZE";
+	displaynameshort = "CH53_DZE";
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
 			magazines[] = {"2000Rnd_762x51_M134"};
