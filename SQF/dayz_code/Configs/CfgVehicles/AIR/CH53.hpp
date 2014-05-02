@@ -1,4 +1,4 @@
-#using "usec_ch53\config.cpp";
+#using "\usec_ch53\config.cpp";
 
 class CH53_base: USEC_ch53_E {
 	class Turrets: Turrets {
