@@ -1,4 +1,6 @@
-class CH53_base: Helicopter  {
+#using usec_ch53\config.cpp;
+
+class CH53_base: USEC_ch53_E {
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			class ViewOptics: ViewOptics {};
@@ -7,8 +9,8 @@ class CH53_base: Helicopter  {
 	};
 };
 
-class CH53_DZ: CH53_base	 {
-	displayname = "USEC CH53";
+class CH53_DZ: CH53_base {
+	displayname = "USEC CH53E";
 	displaynameshort = "CH53_DZ";
 	enablemanualfire = 0;
 	scope = 2;
@@ -16,8 +18,6 @@ class CH53_DZ: CH53_base	 {
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
-	icon = "\ca\air_e\data\UI\Icon_ah6x_CA.paa";
-	model = "\ca\air_e\ah6j\ah6x";
 	radartype = 0;
 	class TransportMagazines{};
 	class TransportWeapons{};
@@ -38,10 +38,7 @@ class CH53_DZE: CH53_DZ	 {
 	displaynameshort = "Mi17_DZE";
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
-			magazines[] = {};
-		};
-		class BackTurret : BackTurret {
-			magazines[] = {};
+			magazines[] = {"2000Rnd_762x51_M134"};
 		};
 	};
 };
