@@ -236,7 +236,7 @@ if (_finished) then {
 						_keyColor = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
 						{
 							if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _keyColor) then {
-								if (getNumber(configFile >> "CfgWeapons" >> _x >> "keyid") == _objectCharacterId) then {
+								if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _objectCharacterId) then {
 									[_activatingPlayer,_x] call BIS_fnc_invRemove;
 								};
 							};
