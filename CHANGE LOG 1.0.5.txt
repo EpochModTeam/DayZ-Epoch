@@ -10,6 +10,7 @@
 [FIXED] Instance already initialized error in server_monitor.sqf @vbawol
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev
 [FIXED] Cargo Check overlapping. @SilvDev
+[FIXED] The Makarov SD now only accepts SD clips @raginruffalo
 
 [CHANGED] Lootsystem based on DayZ 1.8 @Skaronator @Fank
 [CHANGED] Consume Eat/Drink in vehicle will add empty food/drink cans into vehicle inventory. @SilvDev @Fank
