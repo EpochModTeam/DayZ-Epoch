@@ -15,5 +15,5 @@ class MakarovSD : Makarov {
   descriptionShort = "Silenced semi-automatic pistol <br/>Caliber: 9x18mm"; 
   model = "ca\weapons_E\makarov\makarov_silenced"; 
   displayName = "Makarov SD"; 
-  magazines[] = {"8Rnd_9x18_MakarovSD","8Rnd_9x18_Makarov"}; 
+  magazines[] = {"8Rnd_9x18_MakarovSD"}; 
 };
