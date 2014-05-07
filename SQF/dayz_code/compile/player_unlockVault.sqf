@@ -58,6 +58,9 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 
 		if(!isNull _obj and alive _obj) then {
 
+			PVDZE_log_lockUnlock = [player, _obj, false];
+			publicVariableServer "PVDZE_log_lockUnlock";
+
 			_obj setVariable["packing",1];
 			[1,1] call dayz_HungerThirst;
 			_weapons = 		_obj getVariable["WeaponCargo",[]];

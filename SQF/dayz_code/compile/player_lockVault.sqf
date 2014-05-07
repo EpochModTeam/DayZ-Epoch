@@ -43,9 +43,8 @@ _pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
 if(!isNull _obj) then {
 
-	//force vault save just before locking
-	PVDZE_veh_Update = [_obj,"gear"];
-	publicVariableServer "PVDZE_veh_Update";
+	PVDZE_log_lockUnlock = [player, _obj,true];
+	publicVariableServer "PVDZE_log_lockUnlock";
 
 	//place vault
 	_holder = createVehicle [_lockedClass,_pos,[], 0, "CAN_COLLIDE"];
