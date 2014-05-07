@@ -141,7 +141,7 @@ class RscTitles
 			class RscPicture_1901: RscPictureGUI
 			{
 				idc = 1901;
-				text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.86 * safezoneH + safezoneY;//2
 				w = 0.075;
@@ -150,7 +150,7 @@ class RscTitles
 			class RscPicture_1201: RscPictureGUI
 			{
 				idc = 1201;
-				text = "\z\addons\dayz_code\gui\status\status_food_border_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_food_border_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.86 * safezoneH + safezoneY;//2
 				w = 0.075;
@@ -159,7 +159,7 @@ class RscTitles
 			class RscPicture_1900: RscPictureGUI
 			{
 				idc = 1900;
-				text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.79 * safezoneH + safezoneY; //3
 				w = 0.075;
@@ -177,7 +177,7 @@ class RscTitles
 			class RscPicture_1902: RscPictureGUI
 			{
 				idc = 1902;
-				text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.93 * safezoneH + safezoneY; //1
 				w = 0.075;
@@ -186,7 +186,7 @@ class RscTitles
 			class RscPicture_1202: RscPictureGUI
 			{
 				idc = 1202;
-				text = "\z\addons\dayz_code\gui\status\status_thirst_border_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_thirst_border_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.93 * safezoneH + safezoneY; //1
 				w = 0.075;
@@ -195,7 +195,7 @@ class RscTitles
 			class RscPicture_1908: RscPictureGUI
 			{
 				idc = 1908;
-				text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.72 * safezoneH + safezoneY; //3
 				w = 0.075;
@@ -204,7 +204,7 @@ class RscTitles
 			class RscPicture_1208: RscPictureGUI
 			{
 				idc = 1208;
-				text = "\z\addons\dayz_code\gui\status\status_temp_outside_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_temp_outside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.72 * safezoneH + safezoneY; //3
 				w = 0.075;
@@ -233,7 +233,7 @@ class RscTitles
 			class RscPicture_1205: RscPictureGUI
 			{
 				idc = 1205;
-				text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.30 * safezoneH + safezoneY;
 				w = 0.075;
@@ -242,7 +242,7 @@ class RscTitles
 			class RscPicture_1206: RscPictureGUI
 			{
 				idc = 1206;
-				text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.37 * safezoneH + safezoneY;
 				w = 0.075;
