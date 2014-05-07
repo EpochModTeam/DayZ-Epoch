@@ -480,9 +480,6 @@ class CfgSounds {
 	class z_attack_13 : z_attack_0 {
 		sound[] = {"\dayz_sfx\zombie\attack_13.ogg",0.5,1,80};
 	};
-	class z_attack_13 : z_attack_0 {
-		sound[] = {"\dayz_sfx\zombie\attack_13.ogg",0.5,1,80};
-	};
 
 	class z_fattack_0 {
 		name = "";
