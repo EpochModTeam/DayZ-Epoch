@@ -1373,7 +1373,7 @@ class FSM
           priority = 2.000000;
           to="ERROR__No_Player_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(_myEpochAnim != ""1.0.4.2"") || (_myEpoch != ""1.0.4.2"") || (_myEpochB != ""1.0.5"") || (_myEpochSfx != ""1.0.4.2"") || (_myEpochDayZ != ""1.0.4.2"")"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_myEpochAnim != ""1.0.5"") || (_myEpoch != ""1.0.5"") || (_myEpochB != ""1.0.5"") || (_myEpochSfx != ""1.0.5"") || (_myEpochDayZ != ""1.0.5"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
