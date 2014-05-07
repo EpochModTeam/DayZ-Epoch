@@ -891,10 +891,10 @@ server_logUnlockLockEvent = {
 	if (!isNull(_obj)) then {
 		_objectID = _obj getVariable["ObjectID", "0"];
 		_objectUID = _obj getVariable["ObjectUID", "0"];
-		_statusText = "UNLOCKED"
+		_statusText = "UNLOCKED";
 		if (_status) then {
 			[_obj, "gear"] call server_updateObject;
-			_statusText = "LOCKED"
+			_statusText = "LOCKED";
 		};
 		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), (getPlayerUID _player), _statusText];
 	};
