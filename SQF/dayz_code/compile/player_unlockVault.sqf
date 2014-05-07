@@ -60,27 +60,15 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 
 			_obj setVariable["packing",1];
 			[1,1] call dayz_HungerThirst;
+			_weapons = 		_obj getVariable["WeaponCargo",[]];
+			_magazines = 	_obj getVariable["MagazineCargo",[]];
+			_backpacks = 	_obj getVariable["BackpackCargo",[]];
 			player playActionNow "Medic";
 			sleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			sleep 5;
 
-			PVDZE_obj_getlocalVars = [player, _obj];
-			
-			PVDZE_localVarsResult = nil;
-
-			publicVariableServer "PVDZE_obj_getlocalVars";
-			
-			waitUntil {sleep 1; !isNil "PVDZE_localVarsResult"};
-
-			_weapons = if (typeName (PVDZE_localVarsResult select 0) == "ARRAY") then { (PVDZE_localVarsResult select 0) } else { [] };
-			_magazines = if (typeName (PVDZE_localVarsResult select 1) == "ARRAY") then { (PVDZE_localVarsResult select 1) } else { [] };
-			_backpacks = if (typeName (PVDZE_localVarsResult select 2) == "ARRAY") then { (PVDZE_localVarsResult select 2) } else { [] };
-
 			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
-			if ((isNull _holder) or (isNil "_holder")) then {
-				_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
-			};
 			// Remove locked vault
 			deleteVehicle _obj;
 			_holder setdir _dir;
