@@ -5,6 +5,7 @@ INSERT INTO `Traders_DATA` VALUES (NULL, '["ItemFuelBarrelEmpty",1]', 250, '[1,"
 
 INSERT INTO `Traders_DATA` VALUES (NULL, '["USEC_CH53_DZE",1]', 6, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 493, 'trade_any_vehicle');
 INSERT INTO `Traders_DATA` VALUES (NULL, '["USEC_CH53_DZE",1]', 10, '[3,"ItemBriefcase100oz",1]', '[2,"ItemBriefcase100oz",1]', 0, 512, 'trade_any_vehicle');
+INSERT INTO 'Traders_DATA' VALUES (NULL, '["BAF_Merlin_DZE",1]', 5, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 519, 'trade_any_vehicle');
 
 UPDATE `Traders_DATA` SET `item` = '["C130J_US_EP1_DZ",2]' WHERE `item` = '["C130J_US_EP1",2]';
 
