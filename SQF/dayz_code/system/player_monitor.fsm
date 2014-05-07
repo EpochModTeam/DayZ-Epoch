@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "F:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -22,7 +22,7 @@ item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.00000
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
 item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
-item21[] = {"Phase_Two",2,4346,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
+item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
 item23[] = {"ERROR__Player_Already",2,250,175.000000,700.000000,275.000000,750.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item24[] = {"Alive",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Alive"};
@@ -47,8 +47,8 @@ item42[] = {"New_Character",4,218,-325.000000,400.000000,-225.000000,450.000000,
 item43[] = {"Gender_Selection",2,250,-575.000000,400.000000,-475.000000,450.000000,0.000000,"Gender Selection" \n "Dialog"};
 item44[] = {"Selected",4,218,-575.000000,475.000000,-475.000000,525.000000,0.000000,"Selected"};
 item45[] = {"Process",2,250,-575.000000,550.000000,-475.000000,600.000000,0.000000,"Process"};
-item46[] = {"no_PlayerID",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
-item47[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "No PlayerID"};
+item46[] = {"version_check",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"version check"};
+item47[] = {"ERROR__version_c",2,4346,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "version check"};
 item48[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
 item49[] = {"Stream",2,250,-75.000000,900.000000,25.000000,950.000000,0.000000,"Stream"};
 item50[] = {"Preloaded",4,218,-175.000000,950.000000,-75.000000,1000.000000,0.000000,"Preloaded"};
@@ -169,8 +169,8 @@ link85[] = {75,57};
 link86[] = {76,78};
 link87[] = {77,76};
 link88[] = {78,57};
-globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-383.230377,382.212097,1033.530151,397.048065,736,612,1};
-window[] = {0,-1,-1,-32000,-32000,994,351,1629,236,1,754};
+globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-383.230377,382.212097,289.120941,-347.361115,736,612,1};
+window[] = {0,-1,-1,-1,-1,810,1732,3010,52,1,754};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1367,11 +1367,11 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "no_PlayerID">*/
-        class no_PlayerID
+        /*%FSM<LINK "version_check">*/
+        class version_check
         {
           priority = 2.000000;
-          to="ERROR__No_Player_1";
+          to="ERROR__version_c";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(_myEpochAnim != ""1.0.5"") || (_myEpoch != ""1.0.5"") || (_myEpochB != ""1.0.5"") || (_myEpochSfx != ""1.0.5"") || (_myEpochDayZ != ""1.0.5"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -1436,14 +1436,16 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "ERROR__No_Player_1">*/
-    class ERROR__No_Player_1
+    /*%FSM<STATE "ERROR__version_c">*/
+    class ERROR__version_c
     {
-      name = "ERROR__No_Player_1";
+      name = "ERROR__version_c";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
        "_myTime = diag_tickTime;" \n
-       "1 cutText [(localize ""str_epoch_player_113""), ""PLAIN"",15];"/*%FSM</STATEINIT""">*/;
+       "1 cutText [(localize ""str_epoch_player_113""), ""PLAIN"",15];" \n
+       "diag_log format [""VERSION CHECK: Anim:%1 Epoch:%2 EpochB:%3 Sfx:%4 DayZ:%5"",_myEpochAnim,_myEpoch,_myEpochB,_myEpochSfx,_myEpochDayZ];" \n
+       ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
