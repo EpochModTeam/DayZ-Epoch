@@ -5,6 +5,8 @@ _iPos = _this select 2;
 _radius = _this select 3;
 _uniq = [];
 
+_item = objNull;
+
 _iPosZ = _iPos select 2;
 if((isNil "_iPosZ") OR {( _iPosZ < 0)}) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
 if (isNil "_iClass") exitWith {diag_log "_iClass isNil, exiting loot spawn!";};
@@ -13,9 +15,13 @@ switch (_iClass) do {
 	default {
 		_itemTypes = [];
 		if (DZE_MissionLootTable) then {
-			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iClass)) select 0);
+			{
+				_itemTypes set [count _itemTypes, _x select 0]
+			} foreach getArray (missionConfigFile >> "cfgLoot" >> _iClass);
 		} else {
-			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+			{
+				_itemTypes set [count _itemTypes, _x select 0]
+			} foreach getArray (configFile >> "cfgLoot" >> _iClass);
 		};
 		_qty = 0;
 		_max = ceil(random 2) + 1;
@@ -25,8 +31,14 @@ switch (_iClass) do {
 				_index = dayz_CLBase find _iClass;
 				_weights = dayz_CLChances select _index;
 				_cntWeights = count _weights;
+
+				// diag_log ("dayz_CLChances: "+str(dayz_CLChances));
+
 				_index = floor(random _cntWeights);
 				_index = _weights select _index;
+
+				//diag_log ("dayz_CLChances: "+str(_itemTypes));
+				
 				_canType = _itemTypes select _index;
 				_tQty = round(random 1) + 1;
 				if (_canType in _uniq) then {
@@ -44,34 +56,39 @@ switch (_iClass) do {
 			if ((_iItem != "") && (isClass(configFile >> "CfgWeapons" >> _iItem))) then {
 				_item addWeaponCargoGlobal [_iItem,1];
 			};
-		} else {
+		}
+		else {
+			diag_log format["DEBUG dayz_CLBase: %1", dayz_CLBase];
 			_index = dayz_CLBase find _iClass;
-			_weights = dayz_CLChances select _index;
-			_cntWeights = count _weights;
-			_index = floor(random _cntWeights);
-			_index = _weights select _index;
-			_item2 = _itemTypes select _index;
-			if ((_item2 != "") && (isClass(configFile >> "CfgWeapons" >> _item2))) then {
-				_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-				_item addWeaponCargoGlobal [_item2,1];
-				if ((count _mags) > 0) then {
-					if (_mags select 0 == "20Rnd_556x45_Stanag") then { _mags set [0, "30Rnd_556x45_Stanag"] };
-					if (_mags select 0 == "30Rnd_556x45_G36") then { _mags set [0, "30Rnd_556x45_Stanag"] };
-					if (_mags select 0 == "30Rnd_556x45_G36SD") then { _mags set [0, "30Rnd_556x45_StanagSD"] };
-					if (!(_item2 in MeleeWeapons)) then {
-						_magQty = round(random 10);
-						if (_magQty > 3) then {
-							_item addMagazineCargoGlobal [(_mags select 0), (round(random 1) + 1)];
+			if (_index > 0) then {
+				_weights = dayz_CLChances select _index;
+				diag_log format["DEBUG dayz_CLChances: %1", dayz_CLChances];
+				_cntWeights = count _weights;
+				_index = floor(random _cntWeights);
+				_index = _weights select _index;
+				_item2 = _itemTypes select _index;
+				if ((_item2 != "") && (isClass(configFile >> "CfgWeapons" >> _item2))) then{
+					_item = createVehicle["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+					_item addWeaponCargoGlobal[_item2, 1];
+					if ((count _mags) > 0) then{
+						if (_mags select 0 == "20Rnd_556x45_Stanag") then{ _mags set[0, "30Rnd_556x45_Stanag"] };
+						if (_mags select 0 == "30Rnd_556x45_G36") then{ _mags set[0, "30Rnd_556x45_Stanag"] };
+						if (_mags select 0 == "30Rnd_556x45_G36SD") then{ _mags set[0, "30Rnd_556x45_StanagSD"] };
+						if (!(_item2 in MeleeWeapons)) then{
+							_magQty = round(random 10);
+							if (_magQty > 3) then{
+								_item addMagazineCargoGlobal[(_mags select 0), (round(random 1) + 1)];
+							};
 						};
 					};
 				};
-			};
-			if ((_item2 != "") && (isClass(configFile >> "CfgMagazines" >> _item2))) then {
-				_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-				_item addMagazineCargoGlobal [_item2,1];
-			};
-			if ((_item2 != "") && (isClass(configFile >> "CfgVehicles" >> _item2))) then {
-				_item = createVehicle [_item2, _iPos, [], _radius, "CAN_COLLIDE"];
+				if ((_item2 != "") && (isClass(configFile >> "CfgMagazines" >> _item2))) then{
+					_item = createVehicle["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+					_item addMagazineCargoGlobal[_item2, 1];
+				};
+				if ((_item2 != "") && (isClass(configFile >> "CfgVehicles" >> _item2))) then{
+					_item = createVehicle[_item2, _iPos, [], _radius, "CAN_COLLIDE"];
+				};
 			};
 		};
 		
@@ -81,10 +98,15 @@ switch (_iClass) do {
 		//Item is sigle, add 1 item from cfgloot
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_itemTypes = [];
-		if (DZE_MissionLootTable) then {
-			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
-		} else {
-			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		if (DZE_MissionLootTable) then{
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+		}
+		else {
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(configFile >> "cfgLoot" >> _iClass);
 		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
@@ -114,10 +136,15 @@ switch (_iClass) do {
 	};
 	case "cfglootweapon":
 	{
-		if (DZE_MissionLootTable) then {
-			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
-		} else {
-			_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
+		if (DZE_MissionLootTable) then{
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+		}
+		else {
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(configFile >> "cfgLoot" >> _iClass);
 		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
@@ -179,10 +206,15 @@ switch (_iClass) do {
 	};
 	case "object": {
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
+		if ((count _iPos) > 2) then {
+			_item setPosATL _iPos;
+		};
 	};
 };
-if ((count _iPos) > 2) then {
-	_item setPosATL _iPos;
+if (!isNull(_item)) then{
+	if ((count _iPos) > 2) then{
+		_item setPosATL _iPos;
+	};
 };
 
 _item

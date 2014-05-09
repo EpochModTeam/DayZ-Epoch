@@ -79,7 +79,7 @@ _bias = (_bias + random(100 - _bias)) / 100;
 
 // small loot
 _posSmall =	 [] + getArray (_config >> "lootPosSmall");
-_itemTypesSmall =	[] + getArray (_config >> "itemTypeSmall");
+_itemTypesSmall =	[] + getArray (_config >> "lootTypeSmall");
 
 _positionsSmall = _posSmall call _ShuffleArray;
 
@@ -101,8 +101,11 @@ _positionsSmall = _posSmall call _ShuffleArray;
 					_cntWeights = count _weights;
 					_index = floor(random _cntWeights);
 					_index = _weights select _index;
+
+					diag_log format["building_spawnLoot.sqf: %1", _itemTypesSmall];
+
 					_itemType = _itemTypesSmall select _index;
-					[_itemType select 0, _itemType select 1 , _iPos, 0.0] call spawn_loot;
+					[_itemType select 0, _itemType select 1, _iPos, 0.0] call spawn_loot_small;
 	//				diag_log (format["SpawnLoot: Pos: %1, LootType: %2/%3,",_iPos,_itemType select 0,_itemType select 1]);
 					dayz_currentWeaponHolders = dayz_currentWeaponHolders +1;
 					//loclout system

@@ -347,10 +347,15 @@ spawn_vehicles = {
 				_iClass = _allCfgLoots call BIS_fnc_selectRandom;
 
 				_itemTypes = [];
-				if (DZE_MissionLootTable) then {
-					_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iClass)) select 0);
-				} else {
-					_itemTypes = ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+				if (DZE_MissionLootTable) then{
+					{
+						_itemTypes set[count _itemTypes, _x select 0]
+					} foreach getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+				}
+				else {
+					{
+						_itemTypes set[count _itemTypes, _x select 0]
+					} foreach getArray(configFile >> "cfgLoot" >> _iClass);
 				};
 
 				_index = dayz_CLBase find _iClass;

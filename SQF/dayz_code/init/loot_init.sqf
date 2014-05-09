@@ -23,7 +23,7 @@ for "_i" from 0 to ((count _config) - 1) do {
 			_weighted = [];
 			_j = 0;
 			for "_l" from 0 to (_itemCount - 1) do {
-			_weight = round (((_itemChances select _l) select 2) * 100);
+				_weight = round (((_itemChances select _l) select 2) * 100);
 				for "_k" from 0 to (_weight - 1) do
 				{
 					_weighted set [_j + _k, _l];
@@ -38,18 +38,21 @@ for "_i" from 0 to ((count _config) - 1) do {
 		dayz_CBLBase set [count dayz_CBLBase, _classname];
 	};
 	
-	_itemChancesSmall = [] + getArray (_config >> _classname >> "ItemChanceSmall");
+	_itemChancesSmall = [] + getArray (_config >> _classname >> "lootTypeSmall");
+
 	_itemCountSmall = count _itemChancesSmall;
+
+	diag_log format["loot_init.sqf %1", _itemChancesSmall];
+
 	if (_itemCountSmall > 0) then {
 		if (dayzE_CBLSBase find _classname < 0) then {
 			_weighted = [];
 			_j = 0;
-			for "_l" from 0 to ((count _itemChancesSmall) - 1) do 
-			{
-				_weight = round (((_itemChancesSmall select _l) select 2) * 100);
-				for "_k" from 0 to _weight - 1 do 
+			for "_l" from 0 to(_itemCountSmall - 1) do {
+				_weight = round(((_itemChancesSmall select _l) select 2) * 100);
+				for "_k" from 0 to(_weight - 1) do
 				{
-					_weighted set [_j + _k, _l];
+					_weighted set[_j + _k, _l];
 				};
 				_j = _j + _weight;
 			};

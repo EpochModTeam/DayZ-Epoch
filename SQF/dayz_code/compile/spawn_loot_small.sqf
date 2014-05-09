@@ -7,6 +7,8 @@ _iClass = 	_this select 1;
 _iPos =		_this select 2;
 _radius =	_this select 3;
 
+_item = objNull;
+
 switch (_iClass) do
 {
 	default
@@ -14,10 +16,15 @@ switch (_iClass) do
 		//Item is sigle, add 1 item from CfgLootSmall
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_itemTypes = [];
-		if (DZE_MissionLootTable) then {
-			_itemTypes = ((getArray (missionConfigFile >> "CfgLootSmall" >> _iClass)) select 0);
-		} else {
-			_itemTypes = ((getArray (configFile >> "CfgLootSmall" >> _iClass)) select 0);
+		if (DZE_MissionLootTable) then{
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(missionConfigFile >> "CfgLootSmall" >> _iClass);
+		}
+		else {
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(configFile >> "CfgLootSmall" >> _iClass);
 		};
 		_index = dayzE_CLSBase find _iClass;
 		
@@ -35,10 +42,15 @@ switch (_iClass) do
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 
 		_itemTypes = [];
-		if (DZE_MissionLootTable) then {
-			_itemTypes = ((getArray (missionConfigFile >> "CfgLootSmall" >> _iItem)) select 0);
-		} else {
-			_itemTypes = ((getArray (configFile >> "CfgLootSmall" >> _iItem)) select 0);
+		if (DZE_MissionLootTable) then{
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(missionConfigFile >> "CfgLootSmall" >> _iClass);
+		}
+		else {
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(configFile >> "CfgLootSmall" >> _iClass);
 		};
 		_index = dayzE_CLSBase find _iItem;
 		_weights = dayzE_CLSChances select _index;
@@ -55,15 +67,22 @@ switch (_iClass) do
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 
 		_itemTypes = [];
-		if (DZE_MissionLootTable) then {
-			_itemTypes = ((getArray (missionConfigFile >> "CfgLootSmall" >> _iItem)) select 0);
-		} else {
-			_itemTypes = ((getArray (configFile >> "CfgLootSmall" >> _iItem)) select 0);
+		if (DZE_MissionLootTable) then{
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(missionConfigFile >> "CfgLootSmall" >> _iClass);
+		}
+		else {
+			{
+				_itemTypes set[count _itemTypes, _x select 0]
+			} foreach getArray(configFile >> "CfgLootSmall" >> _iClass);
 		};
-		_index = dayz_CLBase find _iItem;
-		_weights = dayz_CLChances select _index;
+		_index = dayzE_CLSBase find _iItem;
+		_weights = dayzE_CLSChances select _index;
 		_cntWeights = count _weights;
-			
+	
+		diag_log("_itemTypes small:" + str(_itemTypes));
+
 	    _index = floor(random _cntWeights);
 		_index = _weights select _index;
 		_iItem = _itemTypes select _index;
@@ -97,8 +116,10 @@ switch (_iClass) do
 		//do nothing for now
 	};
 };
-if ((count _iPos) > 2) then {
-	_item setPosATL _iPos;
+if (!isNull(_item)) then{
+	if ((count _iPos) > 2) then{
+		_item setPosATL _iPos;
+	};
 };
 
 _item
