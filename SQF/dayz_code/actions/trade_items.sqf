@@ -38,11 +38,7 @@ while {r_autoTrade} do {
 		//sell
 		_qty = {_x == _part_in} count magazines player;
 		if (_qty >= _qty_in) then {
-			_part_inClass =  configFile >> "CfgMagazines" >> _part_in;
-			_removed = _removed + ([player,_part_inClass,_qty_in] call BIS_fnc_invRemove);
-			if (_removed == _qty_in) then {
-				_canAfford = [[[_part_out,_qty_out]],1] call epoch_returnChange;
-			};
+			_canAfford = true;
 		};
 
 	} else {
@@ -137,6 +133,11 @@ while {r_autoTrade} do {
 				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
 		} else {
+			_part_inClass =  configFile >> "CfgMagazines" >> _part_in;
+			_removed = _removed + ([player,_part_inClass,_qty_in] call BIS_fnc_invRemove);
+			if (_removed == _qty_in) then {
+				[[[_part_out,_qty_out]],1] call epoch_returnChange;
+			};
 			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 		};
 		dayzTradeResult = nil;
