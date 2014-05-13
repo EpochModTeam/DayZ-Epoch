@@ -10,14 +10,14 @@ if (_selection != "" and local _unit) then {
 	_unit setVariable [_strH,_damage,true];
 	if (_damage == 0) then {
 		if (isServer) then { 
-			[_unit,"repair"] call server_updateObject 
+			[_unit,"repair"] call server_updateObject;
 		} else { 
 			PVDZE_veh_Update = [_unit,"repair"]; 
 			publicVariableServer "PVDZE_veh_Update"; 
 		};
 	} else {
 		if (isServer) then { 
-			[_unit,"damage"] call server_updateObject 
+			[_unit,"damage"] call server_updateObject;
 		} else { 
 			PVDZE_veh_Update = [_unit,"damage"]; 
 			publicVariableServer "PVDZE_veh_Update"; 
