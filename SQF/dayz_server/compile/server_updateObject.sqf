@@ -122,9 +122,16 @@ _object_killed = {
 	_object setVariable ["needUpdate",false,true];
 	if ((count _this) > 2) then {
 		_killer = _this select 2;
-		_killerVeh = if (vehicle _killer != _killer) then { format["[KILLER IN VEHICLE %1 OF TYPE %2]", (vehicle _killer), (typeOf (vehicle _killer))]; } else {""};
-		_name = if (alive _killer) then { name _killer; } else { format["OBJECT %1", _killer]; };
-		diag_log format["DAMAGE: Vehicle %1 (TYPE: %2) Killed by player %3 (UID: %4) %5",_unit, (typeOf _unit), _name, (getPlayerUID _killer), _killerVeh];
+		_charID = _object getVariable ['CharacterID','0'];
+		_objID 	= _object getVariable['ObjectID','0'];
+		_objUID	= _object getVariable['ObjectUID','0'];
+		_worldSpace = getPosATL _object;
+		if (getPlayerUID _killer != "") then {
+			_name = if (alive _killer) then { name _killer; } else { format["OBJECT %1", _killer]; };
+			diag_log format["Vehicle killed: Vehicle %1 (TYPE: %2), CharacterID: %3, ObjectID: %4, ObjectUID: %5, Position: %6, Killer: %7 (UID: %8)", _object, (typeOf _object), _charID, _objID, _objUID, _worldSpace, _name, (getPlayerUID _killer)];
+		} else {
+			diag_log format["Vehicle killed: Vehicle %1 (TYPE: %2), CharacterID: %3, ObjectID: %4, ObjectUID: %5, Position: %6", _object, (typeOf _object), _charID, _objID, _objUID, _worldSpace];
+		};
 	};
 };
 
