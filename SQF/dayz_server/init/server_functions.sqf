@@ -560,7 +560,7 @@ server_getDiff =	{
 		_vNew = _vNew + _vOld;
 		_object getVariable[(_variable + "_CHK"),_vNew];
 	} else {
-		_result = _vNew - _vOld;
+		_result = _vNew;
 		_object setVariable[(_variable + "_CHK"),_vNew];
 	};
 	_result
