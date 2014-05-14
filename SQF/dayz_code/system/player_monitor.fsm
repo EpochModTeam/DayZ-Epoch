@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "F:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -20,7 +20,7 @@ item15[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000
 item16[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
-item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
+item19[] = {"Phase_One",2,4346,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
 item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
@@ -47,7 +47,7 @@ item42[] = {"New_Character",4,218,-325.000000,400.000000,-225.000000,450.000000,
 item43[] = {"Gender_Selection",2,250,-575.000000,400.000000,-475.000000,450.000000,0.000000,"Gender Selection" \n "Dialog"};
 item44[] = {"Selected",4,218,-575.000000,475.000000,-475.000000,525.000000,0.000000,"Selected"};
 item45[] = {"Process",2,250,-575.000000,550.000000,-475.000000,600.000000,0.000000,"Process"};
-item46[] = {"version_check",4,4314,50.000000,-100.000000,150.000000,-50.000000,2.000000,"version check"};
+item46[] = {"version_check",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"version check"};
 item47[] = {"ERROR__version_c",2,250,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "version check"};
 item48[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
 item49[] = {"Stream",2,250,-75.000000,900.000000,25.000000,950.000000,0.000000,"Stream"};
@@ -169,8 +169,8 @@ link85[] = {75,57};
 link86[] = {76,78};
 link87[] = {77,76};
 link88[] = {78,57};
-globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-383.230377,382.212097,289.120941,-347.361115,736,612,1};
-window[] = {0,-1,-1,-1,-1,888,130,1408,130,1,754};
+globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-772.896301,771.877197,613.135803,-671.376831,864,612,1};
+window[] = {0,-1,-1,-32000,-32000,1008,15,1504,250,1,882};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -638,9 +638,11 @@ class FSM
       name = "Phase_One";
       init = /*%FSM<STATEINIT""">*/"if ((!isNil ""DZE_defaultSkin"") && _isNew && (_isInfected == 0)) then {" \n
        "	if (dayz_selectGender == ""Survivor2_DZ"") then {" \n
-       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> (DZE_defaultSkin select 0) >> ""playerModel""); //MALE" \n
+       "		_rand = floor(random (count (DZE_defaultSkin select 0)));" \n
+       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> ((DZE_defaultSkin select 0) select _rand) >> ""playerModel""); //MALE" \n
        "	} else {" \n
-       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> (DZE_defaultSkin select 1) >> ""playerModel""); //FEMALE" \n
+       "		_rand = floor(random (count (DZE_defaultSkin select 1)));" \n
+       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> ((DZE_defaultSkin select 1) select _rand) >> ""playerModel""); //FEMALE" \n
        "	};" \n
        "};" \n
        "" \n

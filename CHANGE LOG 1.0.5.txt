@@ -4,7 +4,7 @@
 [ADDED] Variable DZE_ForceNameTagsInTrader to force name tags in traders. @Skaronator @Fank
 [ADDED] Switch seats in all vehicles. @icomrade
 [ADDED] Self transfusions (works in vehicles) must be enabled in mission using DZE_SelfTransfuse. @icomrade
-[ADDED] Default player skin for fresh spawns DZE_defaultSkin = ["Male skin","Female skin"]. @icomrade
+[ADDED] Default player skin for fresh spawns, selected randomly DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]]. @icomrade
 [ADDED] The USEC CH53 Super Stallion to the dynamic vehicle lists & trader. @Namindu @raginruffalo
 [ADDED] The BAF Merlin has been added to the neutral aircraft trader under Unarmed Helicopters. @raginruffalo
 
