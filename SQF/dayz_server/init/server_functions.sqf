@@ -32,7 +32,7 @@ server_maintainArea = 			compile preprocessFileLineNumbers "\z\addons\dayz_serve
 server_sendToClient =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_sendToClient.sqf";
 
 //onPlayerConnected 			{[_uid,_name] call server_onPlayerConnect;};
-onPlayerDisconnected 		{[_uid,_name] call server_onPlayerDisconnect;};
+onPlayerDisconnected 	=	{[_uid,_name] call server_onPlayerDisconnect;};
 
 server_updateNearbyObjects = {
 	private["_pos"];
