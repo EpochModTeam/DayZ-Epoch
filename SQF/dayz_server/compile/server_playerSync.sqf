@@ -139,7 +139,7 @@ if (_characterID != "0") then {
 		if (_currentModel == _modelChk) then {
 			_currentModel = "";
 		} else {
-			_currentModel = str(_currentModel);
+			_currentModel = _currentModel;
 			_character setVariable ["model_CHK",typeOf _character];
 		};
 		
