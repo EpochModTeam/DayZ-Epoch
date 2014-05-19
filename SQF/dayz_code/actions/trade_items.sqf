@@ -32,7 +32,33 @@ while {r_autoTrade} do {
 
 	if ((count (magazines player)) > 20) exitWith { cutText [(localize "STR_DAYZ_CODE_2"), "PLAIN DOWN"]; r_autoTrade = false};
 	
+	_canAfford = false;
+	if(_bos == 1) then {
+		
+		//sell
+		_qty = {_x == _part_in} count magazines player;
+		if (_qty >= _qty_in) then {
+			_canAfford = true;
+		};
 
+	} else {
+		
+		//buy
+		_trade_total = [[_part_in,_qty_in]] call epoch_itemCost;
+		_total_currency = call epoch_totalCurrency;
+		_return_change = _total_currency - _trade_total; 
+		if (_return_change >= 0) then {
+			_canAfford = true;
+		};
+	};
+	
+	if(!_canAfford) exitWith {
+		_qty = {_x == _part_in} count magazines player;
+		_needed =  _qty_in - _qty;
+		cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+		r_autoTrade = false
+	};
+	
 	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
 
 	[1,1] call dayz_HungerThirst;
@@ -76,73 +102,45 @@ while {r_autoTrade} do {
 	};
 
 	if (_finished) then {
-		
-		_canAfford = false;
-		if(_bos == 1) then {
-			
-			//sell
-			_qty = {_x == _part_in} count magazines player;
-			if (_qty >= _qty_in) then {
-				_part_inClass =  configFile >> "CfgMagazines" >> _part_in;
-				_removed = _removed + ([player,_part_inClass,_qty_in] call BIS_fnc_invRemove);
-				if (_removed == _qty_in) then {
-					_canAfford = [[[_part_out,_qty_out]],1] call epoch_returnChange;
-				};
-			};
-
-		} else {
-			
-			//buy
-			_trade_total = [[_part_in,_qty_in]] call epoch_itemCost;
-			_total_currency = call epoch_totalCurrency;
-			_return_change = _total_currency - _trade_total; 
-			if (_return_change >= 0) then {
-				_canAfford = true;
-			};
-		};
 
 		//diag_log format["DEBUG TRADER DONE?: %1", _canAfford];
 		
-		if (_canAfford) then {
-			
-			// Continue with trade.
-			if (isNil "_part_in") then { _part_in = "Unknown Item" };
-			if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
-			if(_bos == 1) then {
-				// Selling
-				PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_in,inTraderCity,_part_out,_qty_out];
-			} else {
-				// Buying
-				PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_out,inTraderCity,_part_in,_qty_in];
-			};
-			publicVariableServer  "PVDZE_obj_Trade";
+		// Continue with trade.
+		if (isNil "_part_in") then { _part_in = "Unknown Item" };
+		if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
+		if(_bos == 1) then {
+			// Selling
+			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_in,inTraderCity,_part_out,_qty_out];
+		} else {
+			// Buying
+			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_out,inTraderCity,_part_in,_qty_in];
+		};
+		publicVariableServer  "PVDZE_obj_Trade";
 
-			if(_bos == 0) then {
-				// only wait for result when buying
-				waitUntil {!isNil "dayzTradeResult"};
-				if(dayzTradeResult == "PASS") then {
-					_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
-					if (_done) then {
-						for "_x" from 1 to _qty_out do {
-							player addMagazine _part_out;
-						};
-						cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+		if(_bos == 0) then {
+			// only wait for result when buying
+			waitUntil {!isNil "dayzTradeResult"};
+			if(dayzTradeResult == "PASS") then {
+				_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
+				if (_done) then {
+					for "_x" from 1 to _qty_out do {
+						player addMagazine _part_out;
 					};
-				} else {
-					_abort = true;
-					cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
+					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 				};
 			} else {
-				cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+				_abort = true;
+				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
 			};
-			dayzTradeResult = nil;
-			
 		} else {
-			_qty = {_x == _part_in} count magazines player;
-			_needed =  _qty_in - _qty;
-			cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
-			_abort = true;
+			_part_inClass =  configFile >> "CfgMagazines" >> _part_in;
+			_removed = _removed + ([player,_part_inClass,_qty_in] call BIS_fnc_invRemove);
+			if (_removed == _qty_in) then {
+				[[[_part_out,_qty_out]],1] call epoch_returnChange;
+			};
+			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 		};
+		dayzTradeResult = nil;
 	};
 	if(_abort) exitWith {r_autoTrade = false};
 	
