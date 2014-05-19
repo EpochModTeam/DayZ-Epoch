@@ -1,6 +1,6 @@
 //Medical Event Handlers
-"norrnRaLW"					addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\load_wounded.sqf"};
-"norrnRLact"				addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
+"norrnRaLW"					addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\load_wounded.sqf"};
+"norrnRLact"				addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
 "norrnRDead"				addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\deadState.sqf"};
 "usecBleed"					addPublicVariableEventHandler {_id = (_this select 1) spawn fnc_usec_damageBleed};
 "usecBandage"				addPublicVariableEventHandler {(_this select 1) call player_medBandage};
