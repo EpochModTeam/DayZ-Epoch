@@ -16,7 +16,7 @@ _objHouses = nearestObjects [_nrstTrig, ["House"], _hsRange];
 	_hsCount = count _objHouses;
 	_rnd = random _hsCount;
 	_objHouse = _objHouses select _rnd;
-	_pos = getPos _objHouse;
+	_pos = [_objHouse] call FNC_getPos;
 	_lightstate = _objHouse animationPhase "Lights_1";
 		if(_lightstate==1) then{
 		_animlightpoint = nearestObject [_objHouse, "#lightpoint"];
@@ -47,7 +47,7 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 	if(count _objHouses >0)then{
 		{
 		_objLightPoint = nearestObject [_x, "#lightpoint"];
-			if((abs ([getPos _x, _objLightPoint] call BIS_fnc_distance2D))<1.5)then{
+			if((abs ([([_x] call FNC_getPos), _objLightPoint] call BIS_fnc_distance2D))<1.5)then{
 			deleteVehicle _objLightPoint;
 			};
 		}forEach _objHouses;
@@ -65,7 +65,7 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 		{
 			for "_s" from 1 to 4 do {
 			_objLightPoint = nearestObject [_x, "#lightpoint"];
-				if((abs ([getPos _x, _objLightPoint] call BIS_fnc_distance2D))<25)then{
+				if((abs ([([_x] call FNC_getPos), _objLightPoint] call BIS_fnc_distance2D))<25)then{
 				deleteVehicle _objLightPoint;
 				};
 			};

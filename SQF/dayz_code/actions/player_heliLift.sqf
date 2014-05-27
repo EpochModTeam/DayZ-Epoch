@@ -33,8 +33,8 @@ while {r_doLoop} do {
 	_animState = animationState player;
 	_isMedic = ["medic",_animState] call fnc_inString;
 	
-	_posL = getPos _liftHeli;
-	_posC = getPos _vehicle;
+	_posL = [_liftHeli] call FNC_getPos;
+	_posC = [_vehicle] call FNC_getPos;
 	_height = (_posL select 2) - (_posC select 2);
 	/*
 	if(_height < 20) then {
@@ -72,7 +72,7 @@ if(_finished) then {
 	while {r_doLoop} do {
 		_attached = _vehicle getVariable["attached",false];
 	
-		if(((getPos _liftHeli) select 2) < 5) then {
+		if ((([_liftHeli] call FNC_getPos) select 2) < 5) then {
 			r_doLoop = false;
 		};
 

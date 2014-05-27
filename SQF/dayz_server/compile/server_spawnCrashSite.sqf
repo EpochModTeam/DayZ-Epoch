@@ -15,7 +15,7 @@ _fadeFire	= _this select 8;
 
 diag_log("CRASHSPAWNER: Starting spawn logic for Crash Spawner");
 
-while {true} do {
+while {1 == 1} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
 	// Allows the variance to act as +/- from the spawn frequency timer
     _timeAdjust = round((random(_variance * 2)) - _variance);

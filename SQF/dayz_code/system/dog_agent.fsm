@@ -285,7 +285,7 @@ class FSM
        "_target = objNull;" \n
        "_attackTarget = objNull;" \n
        "_target setVariable ['forceWalk',false];" \n
-       "_pos = position _dog;" \n
+       "_pos = [_dog] call FNC_GetPos;" \n
        "_lastPos = _pos;" \n
        "_move = """";" \n
        "_movePos = [];" \n
@@ -325,7 +325,7 @@ class FSM
     class Moving
     {
       name = "Moving";
-      init = /*%FSM<STATEINIT""">*/"_pos = [(getPos (vehicle player)),1,2,4,0,5,0] call BIS_fnc_findSafePos;" \n
+      init = /*%FSM<STATEINIT""">*/"_pos = [([(vehicle player)] call FNC_GetPos),1,2,4,0,5,0] call BIS_fnc_findSafePos;" \n
        "" \n
        "_dog moveTo _pos;" \n
        "_dog forceSpeed (_speedVal select _maxSpeed);" \n
@@ -629,7 +629,7 @@ class FSM
     class Tracking
     {
       name = "Tracking";
-      init = /*%FSM<STATEINIT""">*/"_pos = [(getPos _target),1,2,4,0,5,0] call BIS_fnc_findSafePos;" \n
+      init = /*%FSM<STATEINIT""">*/"_pos = [([_target] call FNC_GetPos),1,2,4,0,5,0] call BIS_fnc_findSafePos;" \n
        "_dog moveTo _pos;" \n
        "_dog forceSpeed (_speedVal select _maxSpeed);" \n
        "_forceChange = false;" \n
@@ -707,9 +707,9 @@ class FSM
     class Checking
     {
       name = "Checking";
-      init = /*%FSM<STATEINIT""">*/"_lastPos = position _dog;" \n
+      init = /*%FSM<STATEINIT""">*/"_lastPos = [_dog] call FNC_GetPos;" \n
        "" \n
-       "_list = (position _dog) nearEntities [""Animal"",(_senseSkill * 3)];" \n
+       "_list = ([_dog] call FNC_GetPos) nearEntities [""Animal"",(_senseSkill * 3)];" \n
        "_list = _list - [_dog];" \n
        "" \n
        "if (count _list > 0) then {" \n
@@ -750,7 +750,7 @@ class FSM
           to="Tracking";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!isNull _target and ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_lastPos = position _dog;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastPos = [_dog] call FNC_GetPos;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -898,7 +898,7 @@ class FSM
           condition=/*%FSM<CONDITION""">*/"!(isNull _attackTarget)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_command = ""none"";" \n
            "if (!moveToCompleted _dog) then {" \n
-           "	_dog moveTo (position _dog);" \n
+           "	_dog moveTo ([_dog] call FNC_GetPos);" \n
            "};" \n
            "diag_log ""DEBUG: HAS TARGET"";"/*%FSM</ACTION""">*/;
         };
@@ -921,7 +921,7 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((time - _lostTime) > 60 && _waitTime > 1) || (_lostTarget && _waitTime > 1)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_dog playActionNow ""GestureSniff"";" \n
-           "_pos = [(getPos _dog),10,90,4,0,5,0] call BIS_fnc_findSafePos;"/*%FSM</ACTION""">*/;
+           "_pos = [([_dog] call FNC_GetPos),10,90,4,0,5,0] call BIS_fnc_findSafePos;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "commanded">*/
@@ -963,7 +963,7 @@ class FSM
           condition=/*%FSM<CONDITION""">*/"(vehicle _character == _character)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"if (isNull _dog) then {" \n
            "	_dog = createAgent [_type, _Pos, [], 0, ""NONE""];" \n
-           "	_pos = [(getPos player),1,3,4,0,5,0] call BIS_fnc_findSafePos;" \n
+           "	_pos = [([player] call FNC_GetPos),1,3,4,0,5,0] call BIS_fnc_findSafePos;" \n
            "	_dog setpos _pos;" \n
            "} ;" \n
            "" \n
@@ -977,7 +977,7 @@ class FSM
     class move_to_vehicle
     {
       name = "move_to_vehicle";
-      init = /*%FSM<STATEINIT""">*/"_playerloc = getPos (vehicle player);" \n
+      init = /*%FSM<STATEINIT""">*/"_playerloc = [(vehicle player)] call FNC_GetPos;" \n
        "_dog moveTo _playerloc;" \n
        "" \n
        "diag_log ""DOG MOVING TO VEHICLE"";" \n
@@ -1022,7 +1022,7 @@ class FSM
     class Wait
     {
       name = "Wait";
-      init = /*%FSM<STATEINIT""">*/"_pos = [(getPos _dog),10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
+      init = /*%FSM<STATEINIT""">*/"_pos = [([_dog] call FNC_GetPos),10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
        "_dog moveTo _pos;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links

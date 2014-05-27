@@ -28,7 +28,7 @@ if (_option == 1) then {
 		};
 	} forEach _objects;
 	_name = if (alive _player) then { name _player; } else { "Dead Player"; };
-	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", _name, count _objects, position _player];
+	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", _name, count _objects, (getPosATL _player)];
 };
 if (_option == 2) then {
 	if (damage _targetObj >= DZE_DamageBeforeMaint) then {

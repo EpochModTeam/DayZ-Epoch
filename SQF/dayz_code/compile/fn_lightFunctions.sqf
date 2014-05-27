@@ -23,7 +23,7 @@ _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_
 				};
 			};
 		};
-	} foreach nearestObjects [getPos _target, [], _rng];
+	} foreach nearestObjects [([_target] call FNC_getPos), [], _rng];
 
 };
 
@@ -86,10 +86,10 @@ _lCol = _this select 0;
 _lbrt = _this select 1;
 _lamb = _this select 2;
 _doLit = _this select 4 select 0;
-_twrPos =  getPos _twr;
+_twrPos =  ([_twr] call FNC_getPos);
 _rad=2.65;
 _oset=14;
-_nrTLs= position _twr nearObjects ["#lightpoint",20];
+_nrTLs= _twrPos nearObjects ["#lightpoint",20];
 
 	if(count _nrTLs > 3)then{
 	//axeDiagLog = format["FN:TL FOUND LP:%1",count _nrTLs];

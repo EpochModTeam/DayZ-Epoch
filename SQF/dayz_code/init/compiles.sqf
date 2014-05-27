@@ -381,7 +381,7 @@ if (!isDedicated) then {
 		} forEach _objInfo;
 		_i = _i + 2; // skip the ": " part
 		for "_k" from _i to _lenInfo do {
-			_objName = _objName + [_objInfo select _k];
+			_objName set [(count _objName), (_objInfo select _k)];
 		};
 		_objName = toLower(toString(_objName));
 		_objName
@@ -527,7 +527,26 @@ if (!isDedicated) then {
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot.sqf";
 	spawn_loot_small = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot_small.sqf";
 	// player_projectileNear = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
-
+	FNC_GetSetPos = { //DO NOT USE IF YOU NEED ANGLE COMPENSATION!!!!
+		private "_pos";
+		_thingy = _this select 0;
+		_pos = getPosASL _thingy;
+		if (surfaceIsWater _pos) then {
+			_thingy setPosASL _pos;
+		} else {
+			_thingy setPosATL (ASLToATL _pos);
+		};
+	};
+	FNC_GetPos = {
+		private "_pos";
+		if (isNil {_this select 0}) exitWith {[0,0,0]};
+		_thingy = _this select 0;
+		_pos = getPosASL _thingy;
+		if !(surfaceIsWater _pos) then {
+			_pos =  ASLToATL _pos;
+		};
+		_pos
+	};
 	local_setFuel =	{
 		private["_qty","_vehicle"];
 		_vehicle = ;

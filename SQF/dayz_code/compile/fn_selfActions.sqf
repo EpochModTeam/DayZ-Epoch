@@ -39,7 +39,7 @@ if (_canPickLight and !dayz_hasLight and !_isPZombie) then {
 
 if (DZE_HeliLift) then {
 	_hasAttached = _vehicle getVariable["hasAttached",false];
-	if(_inVehicle and (_vehicle isKindOf "Air") and ((getPos _vehicle select 2) < 30) and (speed _vehicle < 5) and (typeName _hasAttached == "OBJECT")) then {
+	if(_inVehicle and (_vehicle isKindOf "Air") and ((([_vehicle] call FNC_getPos) select 2) < 30) and (speed _vehicle < 5) and (typeName _hasAttached == "OBJECT")) then {
 		if (s_player_heli_detach < 0) then {
 			dayz_myLiftVehicle = _vehicle;
 			s_player_heli_detach = dayz_myLiftVehicle addAction ["Detach Vehicle","\z\addons\dayz_code\actions\player_heliDetach.sqf",[dayz_myLiftVehicle,_hasAttached],2,false,true,"",""];
@@ -51,7 +51,7 @@ if (DZE_HeliLift) then {
 };
 
 if(DZE_HaloJump) then {
-	if(_inVehicle and (_vehicle isKindOf "Air") and ((getPos _vehicle select 2) > 400)) then {
+	if(_inVehicle and (_vehicle isKindOf "Air") and ((([_vehicle] call FNC_getPos) select 2) > 400)) then {
 		if (s_halo_action < 0) then {
 			DZE_myHaloVehicle = _vehicle;
 			s_halo_action = DZE_myHaloVehicle addAction [localize "STR_EPOCH_ACTIONS_HALO","\z\addons\dayz_code\actions\halo_jump.sqf",[],2,false,true,"",""];
@@ -285,8 +285,8 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 			_liftHelis = nearestObjects [player, DZE_HeliAllowTowFrom, 15];
 			{
 				if(!_found) then {
-					_posL = getPos _x;
-					_posC = getPos _cursorTarget;
+					_posL = [_x] call FNC_getPos;
+					_posC = [_cursorTarget] call FNC_getPos;
 					_height = (_posL select 2) - (_posC select 2);
 					_hasAttached = _x getVariable["hasAttached",false];
 					if(_height < 15 and _height > 5 and (typeName _hasAttached != "OBJECT")) then {

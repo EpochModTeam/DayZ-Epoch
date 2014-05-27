@@ -1,6 +1,6 @@
 private ["_listTalk","_eyeDir","_attacked","_continue","_type","_chance","_last","_refObj","_inAngle","_tPos","_zPos","_cantSee","_entHeight","_delta","_targets","_pHeight","_lowBlood","_dist"];
 _refObj = vehicle player;
-_listTalk = (getPos _refObj) nearEntities ["zZombie_Base",80];
+_listTalk = ([_refObj] call FNC_GetPos) nearEntities ["zZombie_Base",80];
 _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 {

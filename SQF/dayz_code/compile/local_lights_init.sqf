@@ -30,7 +30,7 @@ if(!isDedicated)then{
 	axeTowerLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_tower.sqf";
 	axeHouseLights = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lights_house.sqf";
 
-	waitUntil {getPos Player select 0 > 0};
+	waitUntil {(([Player] call FNC_getPos) select 0) > 0};
 
 	//Detect Dusk and Dawn
 	_sunrise = call world_sunRise;
@@ -101,7 +101,7 @@ if(!isDedicated)then{
 						};
 					};
 			//};
-		_plyPos = getPos player;
+		_plyPos = [Player] call FNC_getPos;
 		};	
 	sleep _slpTime;
 	};

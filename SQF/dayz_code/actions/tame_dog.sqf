@@ -46,7 +46,7 @@ if(_removed == _countIn) then {
 		sleep 1;
 		//diag_log format["DEBUG: %1, id: %2 [%3]",_dog,_animalID,completedFSM _animalID];
 		if (!moveToCompleted _dog) then {
-			_dog moveTo (position _dog);
+			_dog moveTo ([_dog] call FNC_GetPos);
 		};
 		_dog disableAI "FSM";
 		(group _dog) setBehaviour "AWARE";

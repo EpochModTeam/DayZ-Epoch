@@ -2,7 +2,7 @@ private ["_unit","_originalPos","_pos","_chance","_playerpos"];
 _unit = 		_this select 0;
 _originalPos = 	_this select 1;
 _pos = 			getPosATL _unit;
-_playerpos = 	getPos player;
+_playerpos = 	([player] call FNC_GetPos);
 
 if (count _this > 2) then {
 	_pos = _this select 2;

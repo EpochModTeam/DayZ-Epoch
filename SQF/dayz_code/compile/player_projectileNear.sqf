@@ -19,7 +19,7 @@ while {(alive _projectile) && !(isNull _projectile) && _callCount < 85;} do {
 	if (_projectflight > 0) then {
 		sleep (12 / (_projectflight));
 	};
-	if (alive _projectile && !(isNull _projectile)) then {_currentNear = (Position _projectile) nearEntities [["CAManBase","AllVehicles"],15];};
+	if (alive _projectile && !(isNull _projectile)) then {_currentNear = ([_projectile] call FNC_GetPos) nearEntities [["CAManBase","AllVehicles"],15];};
 	_listNear = _listNear + _currentNear;
 	_callCount = _callCount + 1;
 };

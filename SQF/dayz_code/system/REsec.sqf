@@ -46,7 +46,7 @@ private["_ofn","_nfn","_REMOVED_LIB","_TRACED_LIB"];
 			if(typeName _co==""STRING"")then{
 				{
 					if(!((_x>=65&&_x<=90)OR(_x>=97&&_x<=122))) exitWith {diag_log(""WARNING possible code injection args:""+str(_this)); _this=[];};
-				}forEach toArray _co;
+				}forEach (toArray _co);
 			};
 		};
 		_this call "+_nfn+"};"

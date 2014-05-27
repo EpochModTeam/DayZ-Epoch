@@ -101,11 +101,11 @@ if(!isNil "_objHouse")then{
 				//publicVariable "axeDiagLog";
 				
 				_objLightPoint = nearestObject [_x, "#lightpoint"];
-				_pos = getPos _x;
+				_pos = [_x] call FNC_getPos;
 				_dir = getDir _x;
 					
 					if(_plyr distance _x < _lpRange)then{//If within create radius
-					[_lmpCol,_brtns,_lmpCol,getPos _x,_dir,[0,0,-1]] call axe_newLightPoint;
+					[_lmpCol,_brtns,_lmpCol,_pos,_dir,[0,0,-1]] call axe_newLightPoint;
 					//_x setVariable ["axeHLight", 1, false];		
 					};
 					
@@ -124,7 +124,7 @@ if(!isNil "_objHouse")then{
 	if(count _litHouses > 0 )then{
 		{
 			_objLightPoint = nearestObject [_x, "#lightpoint"];
-			_pos = getPos _x;
+			_pos = [_x] call FNC_getPos;
 			if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<_hsLPDist)then{//In House
 				
 				if(_plyr distance _x < _lpRange)then{//If within range and outside band
@@ -147,7 +147,7 @@ if(!isNil "_objHouse")then{
 			}else{
 				if(_plyr distance _x < _lpRange)then{//If within create radius recreate lightpoint (after logging)
 				_brtns = [_plyr,_x] call axe_lightBrightness;
-				[_lmpCol,_brtns,_lmpCol,getPos _x,_dir,[0,0,-2.6]] call axe_newLightPoint;
+				[_lmpCol,_brtns,_lmpCol,_pos,_dir,[0,0,-2.6]] call axe_newLightPoint;
 				//axeDiagLog = format["HL:Recreating light %1 for %2 ",_x,name player];
 				//publicVariable "axeDiagLog";
 				};

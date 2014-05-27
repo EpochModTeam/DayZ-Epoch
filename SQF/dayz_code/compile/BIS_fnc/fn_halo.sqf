@@ -27,7 +27,7 @@ if (typename _this == typename objnull) then {
 		//--- PLAYER ------------------------------------------------
 
 		_brightness = 0.99;
-		_pos = position player;
+		_pos = [player] call FNC_GetPos;
 		_parray = [
 		/* 00 */		["\Ca\Data\ParticleEffects\Universal\Universal", 16, 12, 13, 0],
 		/* 01 */		"",
@@ -192,9 +192,10 @@ if (typename _this == typename objnull) then {
 		};
 	} else {
 		//--- AI ------------------------------------------------
-		while {(position _unit select 2) > 100} do {
+		while {(([_unit] call FNC_GetPos) select 2) > 100} do {
 			_destination = expecteddestination _unit select 0;
-			if (_destination distance [position _unit select 0,position _unit select 1,0] > 10) then {
+			_unitPosition = [_unit] call FNC_GetPos;
+			if ((_destination distance [(_unitPosition select 0),(_unitPosition select 1),0]) > 10) then {
 				_vel = velocity _unit;
 				_dirTo = [_unit,_destination] call bis_fnc_dirto;
 				if (player distance _unit > 500) then {
@@ -223,7 +224,8 @@ if (typename _this == typename []) then {
 	//--- Free fall
 	if (count _this == 2) exitwith {
 		_alt = _this select 1;
-		_unit setpos [position _unit select 0,position _unit select 1,_alt];
+		_paraPosition = [_unit] call FNC_GetPos;
+		_unit setpos [(_paraPosition select 0),(_paraPosition select 1),_alt];
 		_unit setvariable ["bis_fnc_halo_now",true];
 		_unit spawn bis_fnc_halo;
 	};
@@ -231,9 +233,10 @@ if (typename _this == typename []) then {
 	
 	_para = objnull;
 	_vel = [];
-	_para = "ParachuteWest" createVehicle position _unit;
+	_paraPosition1 = [_unit] call FNC_GetPos;
+	_para = createVehicle ["ParachuteWest", _paraPosition1, [], 0, "CAN_COLLIDE"];
 	//_para = "BIS_Steerable_Parachute" createVehicle position _unit;
-	_para setpos position _unit;
+	_para setpos _paraPosition1;
 	_para setdir direction _unit;
 	_vel = velocity _unit;
 	_unit moveindriver _para;
@@ -339,7 +342,7 @@ if (typename _this == typename []) then {
 		//--- End
 		//waituntil {vehicle player == player};
 		player setvariable ["bis_fnc_halo_terminate",nil];
-		waituntil {(position vehicle player select 2) < 2 || !isnil {player getvariable "bis_fnc_halo_terminate"}};
+		waituntil {(([(vehicle player)] call FNC_GetPos) select 2) < 2 || !isnil {player getvariable "bis_fnc_halo_terminate"}};
 		(finddisplay 46) displayremoveeventhandler ["keydown",bis_fnc_halo_para_keydown_eh];
 		(finddisplay 46) displayremoveeventhandler ["mousemoving",bis_fnc_halo_para_mousemoving_eh];
 		(finddisplay 46) displayremoveeventhandler ["mouseholding",bis_fnc_halo_para_mouseholding_eh];

@@ -122,7 +122,7 @@ if (_qty >= _qty_in) then {
 							if(count _helipad > 0) then {
 								_location = (getPosATL (_helipad select 0));
 							} else {
-								_location = [(position player),0,20,1,2,2000,0] call BIS_fnc_findSafePos;
+								_location = [([player] call FNC_GetPos),0,20,1,2,2000,0] call BIS_fnc_findSafePos;
 							};
 	
 							//place vehicle spawn marker (local)

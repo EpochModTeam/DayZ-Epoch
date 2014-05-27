@@ -3,7 +3,7 @@ _target = 	_this select 0;
 //_caller = 	_this select 1;
 _id =		_this select 2;
 //_params =	_this select 3;
-_pos = 		position _target;
+_pos = 		[_target] call FNC_GetPos;
 _hasRawMeat = "FoodSteakRaw" in magazines player;
 _hasdog = player getVariable ["dogid", "false"];
 

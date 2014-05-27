@@ -21,4 +21,4 @@ _findNearestlight = [];
 		};
 	};
 
-} foreach nearestObjects [getPos player, [], 20];
+} foreach nearestObjects [([player] call FNC_getPos), [], 20];

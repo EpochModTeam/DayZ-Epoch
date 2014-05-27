@@ -50,7 +50,7 @@ fnc_usec_damageUnconscious = {
 			private["_veh","_unit"];
 			_veh = vehicle _this;
 			_unit = _this;
-			waitUntil{(((position _veh select 2 < 1) and (speed _veh < 1)) or (!r_player_unconscious))};
+			waitUntil{(((([_veh] call FNC_GetPos) select 2 < 1) and (speed _veh < 1)) or (!r_player_unconscious))};
 			if (r_player_unconscious) then {
 				_unit action ["eject", _veh];
 				waitUntil{((vehicle _this) != _this)};

@@ -4,7 +4,7 @@ player playActionNow "PutDown";
 sleep 2;
 _flare attachTo [player,[0,0,0],"granat2"];
 [_flare, -90, -10] call object_setpitchbank;
-_flare setPos (getPos _flare);
+[_flare] call FNC_GetSetPos;
 _flare setVariable ["owner",player,true];
 player removeAction s_player_grabflare;
 player removeAction s_player_removeflare;

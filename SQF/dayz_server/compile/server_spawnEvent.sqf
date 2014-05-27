@@ -31,7 +31,7 @@ epoch_eventIsAny = {
 	_boolReturn
 };
 
-while {true} do {
+while {1 == 1} do {
 	
 	// Find current time from server
 	_key = "CHILD:307:";

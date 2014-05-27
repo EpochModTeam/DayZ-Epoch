@@ -54,7 +54,7 @@ if (_height < 100) then {
 		_bolt attachTo [_hitObject,_val,_hitMemoryPt];
 		_dir = ([_hitObject,_unit] call BIS_fnc_relativeDirTo) + 180;
 		_bolt setDir (_dir);
-		_bolt setPos (getPos _bolt);
+		[_bolt] call FNC_GetSetPos;
 		_unit setVariable["firedHit",[]];
 		_unit setVariable["firedDamage",0,true];
 	};

@@ -29,7 +29,7 @@ while {true} do {
 	};
 
 	_world = toUpper(worldName); //toUpper(getText (configFile >> "CfgWorlds" >> (worldName) >> "description"));
-	_nearestCity = nearestLocations [getPos player, ["NameCityCapital","NameCity","NameVillage","NameLocal"],300];
+	_nearestCity = nearestLocations [([player] call FNC_GetPos), ["NameCityCapital","NameCity","NameVillage","NameLocal"],300];
 	
 	if (count _nearestCity > 0) then {
 		_town = text (_nearestCity select 0); 
