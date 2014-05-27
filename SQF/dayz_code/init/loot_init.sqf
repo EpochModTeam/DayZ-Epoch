@@ -42,7 +42,7 @@ for "_i" from 0 to ((count _config) - 1) do {
 
 	_itemCountSmall = count _itemChancesSmall;
 
-	diag_log format["loot_init.sqf %1", _itemChancesSmall];
+	//diag_log format["loot_init.sqf %1", _itemChancesSmall];
 
 	if (_itemCountSmall > 0) then {
 		if (dayzE_CBLSBase find _classname < 0) then {
