@@ -2,7 +2,7 @@ private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","
 if (!DZE_SelfTransfuse) exitWith {};
 _unit = player;
 _lastused = selfTransfusionTime;
-_timeout = (DZE_selfTransfuse_Values select 3);
+_timeout = (DZE_selfTransfuse_Values select 2);
 if ((round(time - _lastused)) <= _timeout) exitWith {cutText [format[(localize "str_actions_medical_18"),(_timeout - (round(time - _lastused)))] , "PLAIN DOWN"]};
 
 call fnc_usec_medic_removeActions;

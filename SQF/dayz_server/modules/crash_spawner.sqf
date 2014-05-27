@@ -79,7 +79,7 @@ if (_spawnRoll <= _spawnChance) then {
 	} else {
 		_itemTypes = [] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
 	};
-	_CBLBase = dayz_CBLBase find _lootTable;
+	_CBLBase = dayz_CBLBase find (toLower(_lootTable));
 	_weights = dayz_CBLChances select _CBLBase;
 	_cntWeights = count _weights;
 
