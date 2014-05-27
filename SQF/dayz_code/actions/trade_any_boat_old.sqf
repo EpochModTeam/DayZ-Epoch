@@ -50,7 +50,7 @@ if (_qty >= _qty_in) then {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -112,7 +112,7 @@ if (_qty >= _qty_in) then {
 					_config = _keySelected;
 					_isOk = [player,_config] call BIS_fnc_invAdd;
 					waitUntil {!isNil "_isOk"};
-					if (_isOk and _isKeyOK) then {
+					if (_isOk && _isKeyOK) then {
 					
 						_removed = ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
 						if(_removed == _qty_in) then {
@@ -152,7 +152,7 @@ if (_qty >= _qty_in) then {
 						_okToSell = false;
 					};
 
-					if(_okToSell and !isNull _obj and alive _obj) then {
+					if(_okToSell && !isNull _obj && alive _obj) then {
 
 						for "_x" from 1 to _qty_out do {
 							player addMagazine _part_out;
@@ -172,7 +172,7 @@ if (_qty >= _qty_in) then {
 					};
 				};
 	
-				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+				{player removeAction _x} count s_player_parts;s_player_parts = [];
 				s_player_parts_crtl = -1;
 
 			} else {

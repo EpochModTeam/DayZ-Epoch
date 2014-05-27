@@ -32,7 +32,7 @@ while {(alive _projectile) && !(isNull _projectile) && _callCount < 85;} do {
 
 	if (isPlayer _nearVehicle) then {
 		_isInCombat = _nearVehicle getVariable["startcombattimer",0];
-		if ((alive _nearVehicle) and _isInCombat == 0) then {
+		if ((alive _nearVehicle) && _isInCombat == 0) then {
 			_nearVehicle setVariable["startcombattimer", 1];
 			diag_log("Now in Combat (Player): " + name _unit);
 		};
@@ -41,11 +41,11 @@ while {(alive _projectile) && !(isNull _projectile) && _callCount < 85;} do {
 	if (_nearVehicle isKindOf "AllVehicles") then {
 		{
 			_isInCombat = _x getVariable["startcombattimer",0];
-			if (isPlayer _x and _isInCombat == 0 and alive _x) then {
+			if (isPlayer _x && _isInCombat == 0 && alive _x) then {
 				_x setVariable["startcombattimer", 1];
 				diag_log("Now in Combat (Crew): " + name _x);
 			};
-		} forEach (crew _nearVehicle);
+		} count (crew _nearVehicle);
 	};
 
-} forEach _listNear;
+} count _listNear;

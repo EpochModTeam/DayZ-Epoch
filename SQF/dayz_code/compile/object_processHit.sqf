@@ -11,11 +11,11 @@ if (local _unit) then {
 	_unit setVariable [_strH,_total,true];
 	_break = false;
 
-	if (_selection in USEC_MinorWounds and _total >= 1 and _unit == player) then {
+	if (_selection in USEC_MinorWounds && _total >= 1 && _unit == player) then {
 		_display = uiNamespace getVariable 'DAYZ_GUI_display';
 		_ctrlFracture = 	_display displayCtrl 1203;
 		
-		if ((_selection == "legs") and !r_fracture_legs) then {
+		if ((_selection == "legs") && !r_fracture_legs) then {
 			r_fracture_legs = true;
 			_ctrlFracture ctrlShow true;
 			_id = [] spawn {
@@ -23,7 +23,7 @@ if (local _unit) then {
 			};
 			_break = true;
 		};
-		if ((_selection == "arms") and !r_fracture_arms) then {
+		if ((_selection == "arms") && !r_fracture_arms) then {
 			r_fracture_arms = true;
 			_ctrlFracture ctrlShow true;
 			_id = [] spawn {

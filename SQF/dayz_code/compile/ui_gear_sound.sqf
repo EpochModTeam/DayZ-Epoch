@@ -16,7 +16,7 @@ if( (!isNull cursorTarget) && (player distance cursorTarget < 5) && (vehicle pla
     };
 };
 
-/*Player doesn't have a cursor target, or its too far away, or they are in a vehicle.
+/*Player doesn't have a cursor target, || its too far away, || they are in a vehicle.
 else{
     if ( (vehicle player != player) && (vehicle player isKindOf "AllVehicles") ) then {
         //Player is in a vehicle, placeholder for vehicle trunk sounds(if added)

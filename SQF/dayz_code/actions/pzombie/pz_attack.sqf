@@ -10,7 +10,7 @@ if (!isNull cursorTarget) then {
 
 	if(player distance _ent < 5) then {
 
-		if (_ent isKindOf "Animal" or _isZombie) then {
+		if (_ent isKindOf "Animal" || _isZombie) then {
 			_ent setDamage 1;
 		} else {
 			/* PVS/PVC - Skaronator */

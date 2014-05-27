@@ -173,7 +173,7 @@ class FSM
           priority = 0.000000;
           to="Begin";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"dayz_clientPreload and !(isNull _agent)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"dayz_clientPreload && !(isNull _agent)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

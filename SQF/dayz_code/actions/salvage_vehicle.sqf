@@ -2,7 +2,7 @@ private ["_part","_cancel","_color","_percent","_string","_handle","_damage","_c
 
 _vehicle = _this select 3;
 
-{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 // dayz_myCursorTarget = _vehicle;
 
 // _allFixed = true;
@@ -40,10 +40,10 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 	};
 
 	// allow removal of any lightly damaged parts
-	if (_damage < 1 and _damage > 0) then {
+	if (_damage < 1 && _damage > 0) then {
 		
-		// Do not allow removal of engine or fueltanks
-		if( _part == "PartGlass" or _part == "PartWheel" ) then {
+		// Do not allow removal of engine || fueltanks
+		if( _part == "PartGlass" || _part == "PartWheel" ) then {
 
 			_color = "color='#ffff00'"; //yellow
 			if (_damage >= 0.5) then {_color = "color='#ff8800'";}; //orange
@@ -57,7 +57,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 		};
 	};
 
-} forEach _hitpoints;
+} count _hitpoints;
 
 if(count _hitpoints > 0 ) then {
 	

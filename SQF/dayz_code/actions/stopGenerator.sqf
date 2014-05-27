@@ -29,7 +29,7 @@ while {r_doLoop} do {
 	if (_isMedic) then {
 		_started = true;
 	};
-	if (_started and !_isMedic) then {
+	if (_started && !_isMedic) then {
 		r_doLoop = false;
 		_finished = true;
 	};
@@ -51,7 +51,7 @@ if(!_finished) then {
 
 if (_finished) then {
 
-		// find sound and delete
+		// find sound && delete
 		_soundObject = _vehicle getVariable "GeneratorSound";
 		
 		deleteVehicle _soundObject;

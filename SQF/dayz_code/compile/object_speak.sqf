@@ -39,12 +39,12 @@ if (count _this > 4) then {
 };
 
 _isWoman = getText(configFile >> "cfgVehicles" >> (typeOf _unit) >> "TextPlural") == "Women";
-if (_isWoman and (_type in ["scream","panic"])) then {
+if (_isWoman && (_type in ["scream","panic"])) then {
 	_type = _type + "_w";
 };
 
 
-if ((round(random _chance) == _chance) or (_chance == 0)) then {
+if ((round(random _chance) == _chance) || (_chance == 0)) then {
 	_rnd =(round(random _num));
 	_sound = "z_" + _type + "_" + str(_rnd);
 	if (_local) then {

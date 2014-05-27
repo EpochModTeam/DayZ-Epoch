@@ -38,7 +38,7 @@ if (count _list < dayz_maxAnimals) then {
 	_list = 		_Pos nearEntities [["CAAnimalBase","Man"],50];
 	
 	
-	if (player distance _Pos < dayz_animalDistance and NOT surfaceIsWater _Pos and (count _list <= 1)) then {
+	if (player distance _Pos < dayz_animalDistance && NOT surfaceIsWater _Pos && (count _list <= 1)) then {
 		if (_type == "DZ_Pastor") then { _agent = createAgent [_type, _Pos, [], 0, "NONE"]; } else { _agent = createAgent [_type, _Pos, [], 0, "FORM"]; };
 		_agent setpos _Pos;
 

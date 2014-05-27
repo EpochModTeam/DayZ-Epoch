@@ -80,7 +80,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 			};
 		};
 	};
-} forEach _needNear;
+} count _needNear;
 
 
 if(_abort) exitWith {
@@ -132,24 +132,24 @@ _findNearestPole = [];
 	if (alive _x) then {
 		_findNearestPole set [(count _findNearestPole),_x];
 	};
-} foreach _findNearestPoles;
+} count _findNearestPoles;
 
 _IsNearPlot = count (_findNearestPole);
 
-// If item is plot pole and another one exists within 45m
-if(_isPole and _IsNearPlot > 0) exitWith {  DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_44") , "PLAIN DOWN"]; };
+// If item is plot pole && another one exists within 45m
+if(_isPole && _IsNearPlot > 0) exitWith {  DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_44") , "PLAIN DOWN"]; };
 
 if(_IsNearPlot == 0) then {
 
 	// Allow building of plot
-	if(_requireplot == 0 or _isLandFireDZ) then {
+	if(_requireplot == 0 || _isLandFireDZ) then {
 		_canBuildOnPlot = true;
 	};
 
 } else {
-	// Since there are plots nearby we check for ownership and then for friend status
+	// Since there are plots nearby we check for ownership && then for friend status
 
-	// check nearby plots ownership and then for friend status
+	// check nearby plots ownership && then for friend status
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner
@@ -184,7 +184,7 @@ _hasrequireditem = true;
 {
 	_hastoolweapon = _x in weapons player;
 	if(!_hastoolweapon) exitWith { _hasrequireditem = false; _missing = getText (configFile >> "cfgWeapons" >> _x >> "displayName"); }
-} forEach _require;
+} count _require;
 
 _hasbuilditem = _this in magazines player;
 if (!_hasbuilditem) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]; };
@@ -301,7 +301,7 @@ if (_hasrequireditem) then {
 
 			_object setDir (getDir _object);
 
-			if((_isAllowedUnderGround == 0) and ((_position select 2) < 0)) then {
+			if((_isAllowedUnderGround == 0) && ((_position select 2) < 0)) then {
 				_position set [2,0];
 			};
 
@@ -337,7 +337,7 @@ if (_hasrequireditem) then {
 		if(abs(_objHDiff) > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cannot move up or down more than 5 meters";
+			_reason = "Cannot move up || down more than 5 meters";
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -379,7 +379,7 @@ if (_hasrequireditem) then {
 		// Get position based on object
 		_location = _position;
 
-		if((_isAllowedUnderGround == 0) and ((_location select 2) < 0)) then {
+		if((_isAllowedUnderGround == 0) && ((_location select 2) < 0)) then {
 			_location set [2,0];
 		};
 
@@ -424,11 +424,11 @@ if (_hasrequireditem) then {
 				if (_isMedic) then {
 					_started = true;
 				};
-				if (_started and !_isMedic) then {
+				if (_started && !_isMedic) then {
 					r_doLoop = false;
 					_finished = true;
 				};
-				if (r_interrupt or (player getVariable["combattimeout", 0] >= time)) then {
+				if (r_interrupt || (player getVariable["combattimeout", 0] >= time)) then {
 					r_doLoop = false;
 				};
 				if (DZE_cancelBuilding) exitWith {

@@ -43,7 +43,7 @@ if (_canAfford) then {
 			};
 		};
 
-	} forEach (magazines player);
+	} count (magazines player);
 
 	//diag_log format["DEBUG TRADER INPUT CURRENCY TOTAL: %1", _total_currency];
 

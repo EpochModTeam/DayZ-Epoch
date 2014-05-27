@@ -369,7 +369,7 @@ _filterItems = {
     LB_CTRL = _lbcontrol;    
     {
       _lbcontrol lnbDeleteRow _x;
-    } forEach _deleteIndexes; 
+    } count _deleteIndexes; 
 };
 
 _itemPicture = {

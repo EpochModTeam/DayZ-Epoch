@@ -15,7 +15,7 @@ _agent = 	objNull;
 
 _type = _unitTypes call BIS_fnc_selectRandom;
 
-//Create the Group and populate it
+//Create the Group && populate it
 //diag_log ("Spawned: " + _type);
 _radius = 40;
 _method = "NONE";
@@ -64,7 +64,7 @@ if (_rnd > 0.3) then {
 	_array = [];
 	{
 		_array set [count _array, _x select 0]
-	} foreach _lootTypeCfg;
+	} count _lootTypeCfg;
 	if (count _array > 0) then {
 		_index = dayz_CLBase find _lootType;
 		_weights = dayz_CLChances select _index;

@@ -2,7 +2,7 @@ private ["_part","_cancel","_color","_allFixed","_percent","_string","_handle","
 
 _vehicle = _this select 3;
 
-{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 // dayz_myCursorTarget = _vehicle;
 
 _allFixed = true;
@@ -53,7 +53,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 		s_player_repairActions set [count s_player_repairActions,_handle];
 	};
 
-} forEach _hitpoints;
+} count _hitpoints;
 if (_allFixed) then {
 	_vehicle setDamage 0;
 };

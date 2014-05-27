@@ -11,7 +11,7 @@ _projectile = 	_this select 4;
 
 if (local _zed) then {
 
-	if (_damage > 1 and _projectile != "") then {
+	if (_damage > 1 && _projectile != "") then {
 		//Record deliberate critical damages
 		switch (_selection) do {
 			case "head_hit": {

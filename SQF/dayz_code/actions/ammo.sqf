@@ -13,7 +13,7 @@ _magazines = getArray (configFile >> "cfgWeapons" >> _weapon >> "magazines");
 	if (_ammoType == "") then {_ammoType = _x;};
 	if (!(_ammoType in _text)) then {_text set [count _text,_ammoType];};
 	if (_x in magazines player) exitWith {_ammo = _x;};
-} forEach _magazines;
+} count _magazines;
 if (_ammo != "") then {
 	_vehicle removeMagazineTurret [_ammo,_turret];
 	_vehicle addMagazineTurret [_ammo,_turret];

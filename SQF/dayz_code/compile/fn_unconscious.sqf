@@ -1,6 +1,6 @@
 private ["_nul","_timeout","_isOnDeck","_isInLocation","_inVehicle","_bloodLow","_isHospital","_totalTimeout","_display","_ctrl1","_ctrl1Pos"];
 disableSerialization;
-if ((!r_player_handler1) and (r_handlerCount == 0)) then {
+if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 	//Unconscious Meter
 	_totalTimeout = r_player_timeout;
 	if (_totalTimeout == 0) then { _totalTimeout = 1; }; //Fix for zero divisor
@@ -29,12 +29,12 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		_isInLocation = false; //getPos player in LHA_Location;
 		_inVehicle = (vehicle player != player);
 		_bloodLow = ((r_player_blood/r_player_bloodTotal) < 0.5);
-		if ((surfaceIsWater (getPosASL player)) and !_isOnDeck and !_inVehicle) then {
+		if ((surfaceIsWater (getPosASL player)) && !_isOnDeck && !_inVehicle) then {
 			player setpos [(getPosASL player select 0),(getPosASL player select 1),0.3];
 		};
 		
 		if(_timeout == 0) then {
-			if (!r_player_dead and !_bloodLow and r_player_injured) then {
+			if (!r_player_dead && !_bloodLow && r_player_injured) then {
 				_timeout = 10;
 				//_animType = (USEC_WoundAnim select (floor(random (count USEC_WoundAnim))));
 				//player playActionNow _anim;
@@ -46,13 +46,13 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		if (r_player_timeout > 0) then {
 			r_player_timeout = r_player_timeout - 1;
 		} else {
-			if ((!r_player_dead) and (!r_player_cardiac)) then {
+			if ((!r_player_dead) && (!r_player_cardiac)) then {
 				_nul = [] spawn fnc_usec_recoverUncons;
 			};
 		};
 		//Check if near field hospital
 		_isHospital = false; //(count( nearestObjects [player, ["USMC_WarfareBFieldhHospital"], 8]) > 0);
-		if (_isHospital or _isOnDeck or _isInLocation) then {
+		if (_isHospital || _isOnDeck || _isInLocation) then {
 		
 			waitUntil {!(player getVariable ["NORRN_unit_dragged", false])};
 		
@@ -87,7 +87,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 			
 			player setVariable ["USEC_inPain", false, true];
 			player setdamage 0;
-			{player setVariable[_x,false,true];} forEach USEC_woundHit;
+			{player setVariable[_x,false,true];} count USEC_woundHit;
 			player setVariable ["USEC_injured",false,true];
 			
 			sleep 1;
@@ -106,7 +106,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 	disableUserInput false;
 	//waitUntil{USEC_MotherInbox == ""};
 	//["MED001",0,"Conscious"] call fnc_usec_recordEventClient;
-	if (!r_player_injured and ((r_player_blood/r_player_bloodTotal) >= 0.5)) then {
+	if (!r_player_injured && ((r_player_blood/r_player_bloodTotal) >= 0.5)) then {
 		10 fadeSound 1;
 		"dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 		"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;

@@ -20,7 +20,7 @@ _lootChance = getNumber (_config >> "lootChance");
 
 //_countPositions = count _pos;
 _qty = 0; // effective quantity of spawned weaponholder
-_lootSpawnBias = 67; //67 between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
+_lootSpawnBias = 67; //67 between 50 && 100. The lower it is, the lower chance some of the lootpiles will spawn
 
 
 // shuffles an array
@@ -75,7 +75,7 @@ _bias = (_bias + random(100 - _bias)) / 100;
 			};
 		};
 	};
-} forEach _positions;
+} count _positions;
 
 // small loot
 _posSmall =	 [] + getArray (_config >> "lootPosSmall");
@@ -114,4 +114,4 @@ _positionsSmall = _posSmall call _ShuffleArray;
 			};
 		};
 	};
-} forEach _positionsSmall;
+} count _positionsSmall;

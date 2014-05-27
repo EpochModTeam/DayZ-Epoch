@@ -91,10 +91,10 @@ _qtynew_create_mags_full = floor(_qtynew_create_ammo/_create_magsize);
 _qtynew_consume_ammo_rest = _qtynew_consume_ammo - (_qtynew_consume_mags_full*_consume_magsize);
 _qtynew_create_ammo_rest = _qtynew_create_ammo - (_qtynew_create_mags_full*_create_magsize);
 
-// abort if no complete mags or partial mag is less than 15% full
-if(_qtynew_create_ammo_rest > 0 and _qtynew_create_ammo_rest < (_create_magsize*0.85)) exitWith { cutText [(localize "str_epoch_player_81"), "PLAIN DOWN"]; };
+// abort if no complete mags || partial mag is less than 15% full
+if(_qtynew_create_ammo_rest > 0 && _qtynew_create_ammo_rest < (_create_magsize*0.85)) exitWith { cutText [(localize "str_epoch_player_81"), "PLAIN DOWN"]; };
 
-//remove all _consume and _create mags (we already have total ammo count) 
+//remove all _consume && _create mags (we already have total ammo count) 
 player removeMagazines _consume;
 player removeMagazines _create; 
 

@@ -37,7 +37,7 @@ if (_spawnDMG) then {
 				_array set [count _array,[_selection,_dam]];
 				_totaldam = _totaldam + _dam;
 			};
-		} forEach _hitpoints;	
+		} count _hitpoints;	
 
 
 		// just set low base dmg - may change later
@@ -49,7 +49,7 @@ if (_spawnDMG) then {
 	};
 };
 
-// TODO: check if uid already exists and if so increment by 1 and check again as soon as we find nothing continue.
+// TODO: check if uid already exists && if so increment by 1 && check again as soon as we find nothing continue.
 
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _characterID, _worldspace, [], _array, _fuel,_uid];
@@ -104,9 +104,9 @@ PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 	{
 		_selection = _x select 0;
 		_dam = _x select 1;
-		if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
+		if (_selection in dayZ_explosiveParts && _dam > 0.8) then {_dam = 0.8};
 		[_object,_selection,_dam] call object_setFixServer;
-	} forEach _array;
+	} count _array;
 	
 	_object setFuel _fuel;
 	

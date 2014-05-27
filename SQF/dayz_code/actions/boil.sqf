@@ -13,7 +13,7 @@ _hastinitem = false;
         _hastinitem = true;
     };
 
-} forEach boil_tin_cans;
+} count boil_tin_cans;
 
 _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "displayName");
 _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
@@ -24,7 +24,7 @@ if (!_hastinitem) exitWith {DZE_ActionInProgress = false; cutText [format[(local
 
 _removed = 0;
 
-if (_hasbottleitem and _hastinitem) then {
+if (_hasbottleitem && _hastinitem) then {
 	_qty = {_x == "ItemWaterbottle"} count magazines player;
 	if ("ItemWaterbottle" in magazines player) then {
 		

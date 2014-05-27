@@ -5,7 +5,7 @@ _vehicle = (vehicle player);
 
 _targets = _unit getVariable ["targets",[]];
 
-if (!dayz_zedsAttackVehicles and !(_vehicle in _targets)) exitWith { 
+if (!dayz_zedsAttackVehicles && !(_vehicle in _targets)) exitWith { 
 	//diag_log ("not attacking vehicle" + str(_vehicle));  
 };
 
@@ -56,7 +56,7 @@ if (_vehicle != player) then {
 			if (_vehicle isKindOf _x) exitWith {
 				player action ["eject", _vehicle];
 			};
-		} forEach _openVehicles;
+		} count _openVehicles;
 	};
 
 	//diag_log ("Hitpoints " +str(_wound) + "hit points " + str(_hpList));
@@ -89,7 +89,7 @@ if (_vehicle != player) then {
 } else {
 	//diag_log ("Animation state: " +(_currentAnim));
 	_attackanimations = ["zombiestandingattack1","zombiestandingattack2","zombiestandingattack3","zombiestandingattack4","zombiestandingattack5","zombiestandingattack6","zombiestandingattack7","zombiestandingattack8","zombiestandingattack9","zombiestandingattack10","zombiefeed1","zombiefeed2","zombiefeed3","zombiefeed4","zombiefeed5"];
-	if (((_unit distance player) <= dayz_areaAffect) and ((animationState _unit) in _attackanimations)) then {
+	if (((_unit distance player) <= dayz_areaAffect) && ((animationState _unit) in _attackanimations)) then {
 		//check LOS
 		_inAngle = [_zPos,(getdir _unit),50,_tPos] call fnc_inAngleSector;
 		if (_inAngle) then {

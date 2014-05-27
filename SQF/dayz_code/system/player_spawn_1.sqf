@@ -16,7 +16,7 @@ while {true} do {
 			_delMe = true;
 		};
 		_cursor = _cursor + 1;
-	} forEach dayz_buildingMonitor;
+	} count dayz_buildingMonitor;
 	if (_delMe) then {
 		dayz_buildingMonitor = dayz_buildingMonitor - ["DEL"];
 	};

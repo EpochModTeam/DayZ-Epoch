@@ -1,6 +1,6 @@
 /*
 count player magazines with ammo count
-value = call player_countMagazines; //must be called from a spawned thread (or use spawn)
+value = call player_countMagazines; //must be called from a spawned thread (|| use spawn)
 return all player magazines with ammo count
 Modified to save backpack magazine count by icomrade - Base for fix by Ziellos2k
 */

@@ -43,7 +43,7 @@ if(_inTow) then {
 			if (_isMedic) then {
 				_started = true;
 			};
-			if (_started and !_isMedic) then {
+			if (_started && !_isMedic) then {
 				r_doLoop = false;
 				_finished = true;
 			};

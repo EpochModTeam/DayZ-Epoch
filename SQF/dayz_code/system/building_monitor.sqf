@@ -9,10 +9,10 @@ while {_run} do {
 	_nearby = false;
 	{
 		if (_x distance _building < 500) then {_nearby = true};
-	} forEach (call BIS_fnc_listPlayers);
+	} count (call BIS_fnc_listPlayers);
 	if (!_nearby) then {_run = false};
 	sleep 5;
 };
-{deleteVehicle _x;} forEach _items;
+{deleteVehicle _x;} count _items;
 
 _building setVariable ["looted",(DateToNumber date),true];

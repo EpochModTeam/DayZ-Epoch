@@ -27,7 +27,7 @@ if(isnil "MaxMineVeins") then {
 };
 // Custon Configs End
 
-if (isServer and isNil "sm_done") then {
+if (isServer && isNil "sm_done") then {
 
 	serverVehicleCounter = [];
 	_hiveResponse = [];
@@ -80,7 +80,7 @@ if (isServer and isNil "sm_done") then {
 				_vQty = _vQty + 1;
 			};
 		};
-		diag_log ("HIVE: got " + str(_bQty) + " Epoch Objects and " + str(_vQty) + " Vehicles");
+		diag_log ("HIVE: got " + str(_bQty) + " Epoch Objects && " + str(_vQty) + " Vehicles");
 	};
 	
 	// # NOW SPAWN OBJECTS #
@@ -171,7 +171,7 @@ if (isServer and isNil "sm_done") then {
 				};
 				// Test disabling simulation server side on buildables only.
 				_object enableSimulation false;
-				// used for inplace upgrades and lock/unlock of safe
+				// used for inplace upgrades && lock/unlock of safe
 				_object setVariable ["OEMPos", _pos, true];
 				
 			};
@@ -197,7 +197,7 @@ if (isServer and isNil "sm_done") then {
 							_object addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
 						};
 						_countr = _countr + 1;
-					} forEach _objWpnTypes; 
+					} count _objWpnTypes; 
 				
 					//Add Magazines
 					_objWpnTypes = (_intentory select 1) select 0;
@@ -211,7 +211,7 @@ if (isServer and isNil "sm_done") then {
 							_object addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
 						};
 						_countr = _countr + 1;
-					} forEach _objWpnTypes;
+					} count _objWpnTypes;
 
 					//Add Backpacks
 					_objWpnTypes = (_intentory select 2) select 0;
@@ -223,7 +223,7 @@ if (isServer and isNil "sm_done") then {
 							_object addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
 						};
 						_countr = _countr + 1;
-					} forEach _objWpnTypes;
+					} count _objWpnTypes;
 				};
 			};	
 			
@@ -231,9 +231,9 @@ if (isServer and isNil "sm_done") then {
 				{
 					_selection = _x select 0;
 					_dam = _x select 1;
-					if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
+					if (_selection in dayZ_explosiveParts && _dam > 0.8) then {_dam = 0.8};
 					[_object,_selection,_dam] call object_setFixServer;
-				} forEach _hitpoints;
+				} count _hitpoints;
 
 				_object setFuel _fuel;
 
@@ -242,7 +242,7 @@ if (isServer and isNil "sm_done") then {
 					//_object setvelocity [0,0,1];
 					_object call fnc_veh_ResetEH;		
 					
-					if(_ownerID != "0" and !(_object isKindOf "Bicycle")) then {
+					if(_ownerID != "0" && !(_object isKindOf "Bicycle")) then {
 						_object setvehiclelock "locked";
 					};
 					
@@ -256,7 +256,7 @@ if (isServer and isNil "sm_done") then {
 			//Monitor the object
 			PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 		};
-	} forEach (_BuildingQueue + _objectQueue);
+	} count (_BuildingQueue + _objectQueue);
 	// # END SPAWN OBJECTS #
 
 	// preload server traders menu data into cache
@@ -293,9 +293,9 @@ if (isServer and isNil "sm_done") then {
 						//diag_log ("HIVE: Streamed " + str(_val) + " objects");
 					};
 
-				} forEach (_traderData select 0);
+				} count (_traderData select 0);
 			};
-		} forEach serverTraders;
+		} count serverTraders;
 	};
 
 	if (_hiveLoaded) then {

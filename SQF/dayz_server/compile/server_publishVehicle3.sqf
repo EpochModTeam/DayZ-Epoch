@@ -9,7 +9,7 @@ _activatingPlayer =  _this select 5;
 _characterID = _keySelected;
 
 _isOK = isClass(configFile >> "CfgVehicles" >> _class);
-if(!_isOK or isNull _object) exitWith { diag_log ("HIVE-pv3: Vehicle does not exist: "+ str(_class)); };
+if(!_isOK || isNull _object) exitWith { diag_log ("HIVE-pv3: Vehicle does not exist: "+ str(_class)); };
 
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
@@ -96,7 +96,7 @@ _key call server_hiveWrite;
 	{
 		_object addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 	
 	//Add Magazines
 	_objWpnTypes = _magazines select 0;
@@ -105,7 +105,7 @@ _key call server_hiveWrite;
 	{
 		_object addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 
 	//Add Backpacks
 	_objWpnTypes = _backpacks select 0;
@@ -114,7 +114,7 @@ _key call server_hiveWrite;
 	{
 		_object addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 
 	_object setVariable ["ObjectID", _oid, true];
 	

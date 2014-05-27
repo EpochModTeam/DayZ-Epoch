@@ -23,7 +23,7 @@ _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_
 				};
 			};
 		};
-	} foreach nearestObjects [([_target] call FNC_getPos), [], _rng];
+	} count nearestObjects [([_target] call FNC_getPos), [], _rng];
 
 };
 
@@ -101,7 +101,7 @@ _nrTLs= _twrPos nearObjects ["#lightpoint",20];
 			deleteVehicle _x;
 			};
 		sleep .2;
-		}forEach _nrTLs;
+		}count _nrTLs;
 		
 	}else{
 	//axeDiagLog = format["FN:TL NEW LPS:%1",_twr];

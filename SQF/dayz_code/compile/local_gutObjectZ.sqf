@@ -10,7 +10,7 @@ if (local _zombiebody) then {
 		_timer = _this select 0;
 		_body = _this select 1;
 		_pos = getPosATL _body;
-		while {(count magazines _body >0) and (time - _timer < 300) } do { 
+		while {(count magazines _body >0) && (time - _timer < 300) } do { 
 			sleep 5;
 		}; 
 
@@ -19,11 +19,11 @@ if (local _zombiebody) then {
 		/* PVS/PVC - Skaronator */
 		_inRange = _pos nearEntities ["CAManBase",100];
 		{
-			if(isPlayer _x and _x != player) then {
+			if(isPlayer _x && _x != player) then {
 				PVDZE_send = [_x,"HideBody",[_body]];
 				publicVariableServer "PVDZE_send";
 			};
-		} forEach _inRange;
+		} count _inRange;
 
 		sleep 5;
 		deleteVehicle _body;

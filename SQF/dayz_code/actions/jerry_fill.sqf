@@ -12,10 +12,10 @@ _abort = false;
 _fuelCans = [];
 
 {
-	if(_x == "ItemJerrycanEmpty" or _x == "ItemFuelBarrelEmpty") then {
+	if(_x == "ItemJerrycanEmpty" || _x == "ItemFuelBarrelEmpty") then {
 		_fuelCans set [(count _fuelCans),_x];
 	};
-} forEach magazines player;
+} count magazines player;
 
 _qty = count _fuelCans;
 
@@ -29,7 +29,7 @@ _qty = count _fuelCans;
 	[1,1] call dayz_HungerThirst;
 	// force animation 
 	player playActionNow "Medic";
-	// Play sound and alert zombies
+	// Play sound && alert zombies
 	
 	_dis=10;
 	_sfx = "refuel";
@@ -48,7 +48,7 @@ _qty = count _fuelCans;
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -85,7 +85,7 @@ _qty = count _fuelCans;
 	sleep 1;
 	if(_abort) exitWith {};
 
-} forEach _fuelCans;
+} count _fuelCans;
 
 s_player_fillfuel = -1;
 DZE_ActionInProgress = false;

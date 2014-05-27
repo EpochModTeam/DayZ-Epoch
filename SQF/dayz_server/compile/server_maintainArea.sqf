@@ -17,7 +17,7 @@ if (_option == 1) then {
 				_objectUID = _x getVariable ["ObjectUID","0"];
 				if (_objectUID != "0") then {
 					_x setDamage 0;
-					_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" and ID is "0"
+					_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" && ID is "0"
 					_data = "HiveExt" callExtension _key;
 				};
 			} else {
@@ -26,7 +26,7 @@ if (_option == 1) then {
 				_data = "HiveExt" callExtension _key;
 			};
 		};
-	} forEach _objects;
+	} count _objects;
 	_name = if (alive _player) then { name _player; } else { "Dead Player"; };
 	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", _name, count _objects, (getPosATL _player)];
 };
@@ -37,7 +37,7 @@ if (_option == 2) then {
 			_objectUID = _targetObj getVariable ["ObjectUID","0"];
 			if (_objectUID != "0") then {
 				_targetObj setDamage 0;
-				_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" and ID is "0"
+				_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" && ID is "0"
 				_data = "HiveExt" callExtension _key;
 			};
 		} else {

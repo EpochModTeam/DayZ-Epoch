@@ -13,4 +13,4 @@ private ["_spawnveh","_position","_direction","_veh"];
 	_veh setDir _direction;
 	_veh setpos _position;
 
-} forEach _this;
+} count _this;

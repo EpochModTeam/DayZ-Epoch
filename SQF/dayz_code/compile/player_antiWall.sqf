@@ -24,14 +24,14 @@ _intersectsWith = lineIntersectsWith [_playerPos, _vehiclePos, player, _vehicle]
 if ((count _intersectsWith) > 0) then {
 	{
 		// buildings
-		if (_x isKindOf "Building" or _x isKindOf "DZE_Housebase") exitWith {
+		if (_x isKindOf "Building" || _x isKindOf "DZE_Housebase") exitWith {
 			_activated = true;
 		};
 		// walls
-		if ((typeOf _x) == "" and {["wall_", str _x, false] call fnc_inString}) exitWith {
+		if ((typeOf _x) == "" && {["wall_", str _x, false] call fnc_inString}) exitWith {
 			_activated = true;
 		};
-	} forEach _intersectsWith;
+	} count _intersectsWith;
 };
 
 if(_activated) then {

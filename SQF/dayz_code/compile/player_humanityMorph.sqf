@@ -51,7 +51,7 @@ if (count _medical > 0) then {
 		//["usecBleed",[player,_x,_hit]] call broadcastRpcCallAll;
 		usecBleed = [player,_x,0];
 		publicVariable "usecBleed";
-	} forEach (_medical select 8);
+	} count (_medical select 8);
 	
 	//Add fractures
 	_fractures = (_medical select 9);

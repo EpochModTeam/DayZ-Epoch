@@ -18,5 +18,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define R3F_WEIGHT_SHOW_WEIGHT
 
-//show or not classes not found in arma.rpt
+//show || not classes not found in arma.rpt
 //#define R3F_WEIGHT_SHOW_CLASSES_NOT_FOUND

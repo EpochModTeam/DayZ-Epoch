@@ -29,7 +29,7 @@ while {r_doLoop} do {
 	if (_isMedic) then {
 		_started = true;
 	};
-	if (_started and !_isMedic) then {
+	if (_started && !_isMedic) then {
 		r_doLoop = false;
 		_finished = true;
 	};
@@ -50,9 +50,9 @@ if(!_finished) then {
 };
 
 if (_finished) then {
-	// take jerry can and replace with empty
+	// take jerry can && replace with empty
 	
-	if(!(_vehicle getVariable ["GeneratorFilled", false]) and ("ItemJerrycan" in magazines player)) then {
+	if(!(_vehicle getVariable ["GeneratorFilled", false]) && ("ItemJerrycan" in magazines player)) then {
 	 
 		if(([player,"ItemJerrycan"] call BIS_fnc_invRemove) == 1) then {
 			player addMagazine "ItemJerrycanEmpty";

@@ -47,7 +47,7 @@ while {_doLoop < 5} do {
 	_doLoop = _doLoop + 1;
 };
 
-if (isNull _playerObj or !isPlayer _playerObj) exitWith {
+if (isNull _playerObj || !isPlayer _playerObj) exitWith {
 	diag_log ("SETUP RESULT: Exiting, player object null: " + str(_playerObj));
 };
 
@@ -112,7 +112,7 @@ if (count _medical > 0) then {
 		//["usecBleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
 		usecBleed = [_playerObj,_x,_hit];
 		publicVariable "usecBleed";
-	} forEach (_medical select 8);
+	} count (_medical select 8);
 	
 	//Add fractures
 	_fractures = (_medical select 9);
@@ -194,12 +194,12 @@ if (_randomSpot) then {
 	_mkr = "";
 	while {_findSpot} do {
 		_counter = 0;
-		while {_counter < 20 and _findSpot} do {
+		while {_counter < 20 && _findSpot} do {
 			// switched to floor
 			_mkr = "spawn" + str(floor(random _spawnMC));
 			_position = ([(getMarkerPos _mkr),0,spawnArea,10,0,2000,spawnShoremode] call BIS_fnc_findSafePos);
 			_isNear = count (_position nearEntities ["Man",100]) == 0;
-			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
+			_isZero = ((_position select 0) == 0) && ((_position select 1) == 0);
 			//Island Check		//TeeChange
 			_pos 		= _position;
 			_isIsland	= false;		//Can be set to true during the Check
@@ -210,11 +210,11 @@ if (_randomSpot) then {
 				};
 			};
 			
-			if ((_isNear and !_isZero) || _isIsland) then {_findSpot = false};
+			if ((_isNear && !_isZero) || _isIsland) then {_findSpot = false};
 			_counter = _counter + 1;
 		};
 	};
-	_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
+	_isZero = ((_position select 0) == 0) && ((_position select 1) == 0);
 	_position = [_position select 0,_position select 1,0];
 	if (!_isZero) then {
 		//_playerObj setPosATL _position;

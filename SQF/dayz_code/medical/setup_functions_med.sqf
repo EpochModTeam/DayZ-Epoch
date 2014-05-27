@@ -39,7 +39,7 @@ fnc_usec_damageUnconscious = {
 	_unit = _this select 0;
 	_damage = _this select 1;
 	_inVehicle = (vehicle _unit != _unit);
-	if ((_unit == player) or (vehicle player != player)) then {
+	if ((_unit == player) || (vehicle player != player)) then {
 		r_player_timeout = round((((random 2) max 0.1) * _damage) * 20);
 		r_player_unconscious = true;
 		player setVariable["medForceUpdate",true,true];
@@ -50,7 +50,7 @@ fnc_usec_damageUnconscious = {
 			private["_veh","_unit"];
 			_veh = vehicle _this;
 			_unit = _this;
-			waitUntil{(((([_veh] call FNC_GetPos) select 2 < 1) and (speed _veh < 1)) or (!r_player_unconscious))};
+			waitUntil{(((([_veh] call FNC_GetPos) select 2 < 1) && (speed _veh < 1)) || (!r_player_unconscious))};
 			if (r_player_unconscious) then {
 				_unit action ["eject", _veh];
 				waitUntil{((vehicle _this) != _this)};
@@ -84,10 +84,10 @@ fnc_usec_damageType = {
 	_damage = _this select 0;
 	_ammo = _this select 1;
 	_type = 0;
-	if ((_ammo isKindof "Grenade") or (_ammo isKindof "ShellBase") or  (_ammo isKindof "TimeBombCore") or (_ammo isKindof "BombCore") or (_ammo isKindof "MissileCore") or (_ammo isKindof "RocketCore") or (_ammo isKindof "FuelExplosion") or (_ammo isKindof "GrenadeBase")) then {
+	if ((_ammo isKindof "Grenade") || (_ammo isKindof "ShellBase") ||  (_ammo isKindof "TimeBombCore") || (_ammo isKindof "BombCore") || (_ammo isKindof "MissileCore") || (_ammo isKindof "RocketCore") || (_ammo isKindof "FuelExplosion") || (_ammo isKindof "GrenadeBase")) then {
 		_type = 1;
 	};
-	if ((_ammo isKindof "B_127x107_Ball") or (_ammo isKindof "B_127x99_Ball")) then {
+	if ((_ammo isKindof "B_127x107_Ball") || (_ammo isKindof "B_127x99_Ball")) then {
 		_type = 2;
 	};
 	if (_ammo isKindof "Melee") then {
@@ -115,8 +115,8 @@ fnc_usec_medic_removeActions = {
 		_obj = _x;
 		{
 			_obj removeAction _x;
-		} forEach r_player_actions;
-	} forEach r_action_targets;
+		} count r_player_actions;
+	} count r_action_targets;
 	r_player_actions = [];
 	r_action_targets = [];
 };
@@ -124,12 +124,12 @@ fnc_usec_medic_removeActions = {
 fnc_usec_self_removeActions = {
 	{
 		player removeAction _x;
-	} forEach r_self_actions;
+	} count r_self_actions;
 	r_self_actions = [];
 };
 
 fnc_med_publicBlood = {
-	while {(r_player_injured or r_player_infected) and r_player_blood > 0} do {
+	while {(r_player_injured || r_player_infected) && r_player_blood > 0} do {
 		player setVariable["USEC_BloodQty",r_player_blood,true];
 		player setVariable["medForceUpdate",true];
 		sleep 5;
@@ -146,11 +146,11 @@ fnc_usec_playerBleed = {
 	while {r_player_injured} do {
 		
 		_bleedPerSec = 30;
-		// If kneeling or crawling reduce bleeding
-		if (dayz_isKneeling and !r_player_unconscious) then{
+		// If kneeling || crawling reduce bleeding
+		if (dayz_isKneeling && !r_player_unconscious) then{
 			_bleedPerSec = 15;
 		};
-		if (dayz_isCrawling and !r_player_unconscious) then{
+		if (dayz_isCrawling && !r_player_unconscious) then{
 			_bleedPerSec = 7.5;
 		};
 
@@ -163,7 +163,7 @@ fnc_usec_playerBleed = {
 			r_player_injured = false;
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 			dayz_sourceBleeding =	objNull;
-			{player setVariable[_x,false,true];} forEach USEC_woundHit;
+			{player setVariable[_x,false,true];} count USEC_woundHit;
 			player setVariable ["USEC_injured",false,true];
 		};
 		sleep 1;
@@ -228,7 +228,7 @@ fnc_usec_damageBleed = {
 			
 			sleep 5;
 			
-			while {((_unit getVariable["USEC_injured",true]) and (alive _unit))} do {
+			while {((_unit getVariable["USEC_injured",true]) && (alive _unit))} do {
 				scopeName "loop";
 				if (vehicle _unit != _unit) then {
 					BreakOut "loop";

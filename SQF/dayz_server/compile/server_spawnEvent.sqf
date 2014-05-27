@@ -26,7 +26,7 @@ epoch_eventIsAny = {
 		};
 		if (!_boolReturn) exitWith {};
 		_index = _index + 1;	
-	} forEach _event;
+	} count _event;
 
 	_boolReturn
 };
@@ -54,7 +54,7 @@ while {1 == 1} do {
 					diag_log ("RUNNING EVENT: " + (_x select 5) + " on " + _datestr);
 					_handle = [] execVM "\z\addons\dayz_server\modules\" + (_x select 5) + ".sqf";
 				};
-			} forEach EpochEvents;
+			} count EpochEvents;
 		};
 	};
 	sleep 10;

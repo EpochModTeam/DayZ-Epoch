@@ -23,7 +23,7 @@ if(!isDedicated)then{
 	_nrGen = [];
 	_genCount = 0;
 	_hsRange = 250;//set var
-	_houseNum = 0;//Monitor house numbers in range.. Pass around and reduce range if too many and/or client lag (NOT server / client lag)
+	_houseNum = 0;//Monitor house numbers in range.. Pass around && reduce range if too many &&/|| client lag (NOT server / client lag)
 	_lightTrig = vehicle player;//Central point around which to run the lights
 	_plyPos = [0,0,0];
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_lightFunctions.sqf";
@@ -32,7 +32,7 @@ if(!isDedicated)then{
 
 	waitUntil {(([Player] call FNC_getPos) select 0) > 0};
 
-	//Detect Dusk and Dawn
+	//Detect Dusk && Dawn
 	_sunrise = call world_sunRise;
 	_fnHr =  _sunrise + 0.5;
 	_stHr =  (24 - _sunrise) - 0.5;
@@ -50,14 +50,14 @@ if(!isDedicated)then{
 			_nrGen = nearestObjects [_plyr, [_genClass], _rngPlyr];
 			_genCount = count _nrGen;
 			
-			//Set Generator to use and Assign trigger object
+			//Set Generator to use && Assign trigger object
 			
 				if(_genCount>0)then{
 					{
 						if(_x getVariable["GeneratorRunning",false])exitWith{
 						_lightTrig = _x;
 						};
-					}forEach _nrGen;
+					}count _nrGen;
 				};
 			};
 			
@@ -69,7 +69,7 @@ if(!isDedicated)then{
 			//Generator not required !
 			if(!_ndGen)then{_doLight = true;};
 			
-			//Choose range, player or generator
+			//Choose range, player || generator
 			if(_ndGen)then{_hsRange = _trgRng;}else{_hsRange = _rngPlyr;};
 			
 			//100% chance of lights with nearby generator - ToDo, make this slightly lower.
@@ -116,7 +116,7 @@ if(isServer)then{
 		DZE_DYN_cleanLightpoints = true;
 		_missonLights = entities "#lightpoint";
 		_missionObjs =  allMissionObjects "#lightpoint";
-		diag_log (format["CLEANUP: Attempting Cleanup of Lights out of %1 or %2",count _missonLights, count _missionObjs]);
+		diag_log (format["CLEANUP: Attempting Cleanup of Lights out of %1 || %2",count _missonLights, count _missionObjs]);
 		_delQtyLights = 0;
 		{
 			if (local _x) then {
@@ -127,7 +127,7 @@ if(isServer)then{
 				if (!alive _x) then {
 					_pos = getPosATL _x;
 					if (count _pos > 0) then {
-						_nearby = {(isPlayer _x) and (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 420]);//Use calculated range here.
+						_nearby = {(isPlayer _x) && (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 420]);//Use calculated range here.
 						if (_nearby==0) then {
 							_x call dayz_perform_purge;
 							sleep 0.025;
@@ -137,7 +137,7 @@ if(isServer)then{
 				};
 			};
 			sleep 0.001;
-		} forEach _missonLights;
+		} count _missonLights;
 		if (_delQtyLights > 0) then {
 			_qty = count _missonLights;
 			diag_log (format["CLEANUP: Deleted %1 Lights out of %2",_delQtyLights,_qty]);

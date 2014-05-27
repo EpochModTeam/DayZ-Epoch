@@ -5,7 +5,7 @@ _objects = nearestObjects [getPosATL player, dayz_updateObjects, 10];
 	PVDZE_veh_Update = [_x,"gear"];
 	publicVariableServer "PVDZE_veh_Update";
 	
-} foreach _objects;
+} count _objects;
 
 private["_dialog","_magazineArray","_control","_item","_val","_max"];
 

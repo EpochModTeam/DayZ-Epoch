@@ -14,7 +14,7 @@ dayz_hasLight = true;
 _text = getText (configFile >> "CfgAmmo" >> (typeOf _flare) >> "displayName");
 s_player_dropflare = player addAction [format[localize "str_actions_medical_16",_text], "\z\addons\dayz_code\actions\flare_drop.sqf",_flare, 1, false, true, "", ""];
 
-while {(alive _flare) and dayz_hasLight} do {
+while {(alive _flare) && dayz_hasLight} do {
 	sleep 0.1;
 };
 if (dayz_hasLight) then {

@@ -26,7 +26,7 @@ _unitIsPlayer = _unit == player;
 
 if (_unitIsPlayer) then {
 	if (_hit == "") then {
-		if ((_source != player) and _isPlayer) then {
+		if ((_source != player) && _isPlayer) then {
 		//Enable aggressor Actions
 			if (_source isKindOf "CAManBase") then {
 				_source setVariable["startcombattimer",1];
@@ -35,7 +35,7 @@ if (_unitIsPlayer) then {
 			_isBandit = (player getVariable["humanity",0]) <= -5000;
 			_isPZombie = player isKindOf "PZombie_VB";
 
-			if (!_canHitFree and !_isBandit and !_isPZombie) then {
+			if (!_canHitFree && !_isBandit && !_isPZombie) then {
 				//Process Morality Hit
 				_myKills = 0 max (1 - (player getVariable ["humanKills",0]) / 5);
 				_humanityHit = -100 * _myKills * _damage;
@@ -64,7 +64,7 @@ if (_damage > 0.4) then {
 	if (_isHeadHit) then {
 		_scale = _scale + 500;
 	};
-	if ((isPlayer _source) and !(player == _source)) then {
+	if ((isPlayer _source) && !(player == _source)) then {
 		_scale = _scale + 800;
 		if (_isHeadHit) then {
 			_scale = _scale + 500;
@@ -126,7 +126,7 @@ if (_damage > 0.4) then {	//0.25
 		_rndPain = 		(random 10);
 		_rndInfection = (random 500);
 		_hitPain = 		(_rndPain < _damage);
-		if ((_isHeadHit) or (_damage > 1.2 and _hitPain)) then {
+		if ((_isHeadHit) || (_damage > 1.2 && _hitPain)) then {
 			_hitPain = true;
 		};
 		_hitInfection = (_rndInfection < 1);
@@ -139,7 +139,7 @@ if (_damage > 0.4) then {	//0.25
 		};
 		if (_hitInfection) then {
 			//Set Infection if not already
-			if (_unitIsPlayer and !_isPZombie) then {
+			if (_unitIsPlayer && !_isPZombie) then {
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
 			};
@@ -152,7 +152,7 @@ if (_damage > 0.4) then {	//0.25
 				player setVariable["USEC_inPain",true,true];
 			};
 		};
-		if ((_damage > 1.5) and _isHeadHit) then {
+		if ((_damage > 1.5) && _isHeadHit) then {
 			[_source,"shothead"] spawn player_death;
 		};
 	};
@@ -168,17 +168,17 @@ if (_damage > 0.4) then {	//0.25
 			_inRange = _pos nearEntities ["CAManBase",1000];
 			{
 				// only send to other players
-				if(isPlayer _x and _x != player) then {
+				if(isPlayer _x && _x != player) then {
 					PVDZE_send = [_x,"Bleed",[_unit,_wound,_hit]];
 					publicVariableServer "PVDZE_send";
 				};
-			} forEach _inRange;
+			} count _inRange;
 
 			//Set Injured if not already
 			_isInjured = _unit getVariable["USEC_injured",false];
 			if (!_isInjured) then {
 				_unit setVariable["USEC_injured",true,true];
-			if ((_unitIsPlayer) and (_ammo != "zombie")) then {
+			if ((_unitIsPlayer) && (_ammo != "zombie")) then {
 					dayz_sourceBleeding = _source;
 				};
 			};
@@ -197,7 +197,7 @@ if (_type == 1) then {
 	/*
 		BALISTIC DAMAGE
 	*/
-	if ((_damage > 0.01) and (_unitIsPlayer)) then {
+	if ((_damage > 0.01) && (_unitIsPlayer)) then {
 		//affect the player
 		[20,45] call fnc_usec_pitchWhine; //Visual , Sound
 	};
@@ -236,7 +236,7 @@ if (_type == 2) then {
 	};
 };
 
-if (!_unconscious and !_isMinor and ((_damage > 2) or ((_damage > 0.5) and _isHeadHit))) then {
+if (!_unconscious && !_isMinor && ((_damage > 2) || ((_damage > 0.5) && _isHeadHit))) then {
 	//set unconsious
 	[_unit,_damage] call fnc_usec_damageUnconscious;
 };

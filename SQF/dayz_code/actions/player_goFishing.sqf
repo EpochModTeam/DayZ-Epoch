@@ -31,7 +31,7 @@ r_interrupt = false;
 
 while {_isOk} do {
 
-	if (r_interrupt or (player getVariable["combattimeout", 0] >= time)) then {
+	if (r_interrupt || (player getVariable["combattimeout", 0] >= time)) then {
 		_isOk = false;
 		cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];
 	} else {

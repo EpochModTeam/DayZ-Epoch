@@ -49,7 +49,7 @@ if (_qty >= _qty_in) then {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -143,10 +143,10 @@ if (_qty >= _qty_in) then {
 							_tireDmg = _tireDmg + _damage;
 							_tires = _tires + 1;
 						};
-					} forEach _hitpoints;
+					} count _hitpoints;
 
 					// find average tire damage
-					if(_tireDmg > 0 and _tires > 0) then {
+					if(_tireDmg > 0 && _tires > 0) then {
 						if((_tireDmg / _tires) > 0.75) then {
 							_okToSell = false;
 						};
@@ -155,7 +155,7 @@ if (_qty >= _qty_in) then {
 
 						if(_okToSell) then {
 
-							if(!isNull _obj and alive _obj) then {
+							if(!isNull _obj && alive _obj) then {
 							
 								for "_x" from 1 to _qty_out do {
 									player addMagazine _part_out;
@@ -179,7 +179,7 @@ if (_qty >= _qty_in) then {
 					};
 				};
 	
-				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+				{player removeAction _x} count s_player_parts;s_player_parts = [];
 				s_player_parts_crtl = -1;
 
 			} else {

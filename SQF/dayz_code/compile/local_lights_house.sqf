@@ -63,7 +63,7 @@ if(!isNil "_objHouse")then{
 		_validHouses = _validHouses +1;
 		};
 		
-	} forEach _objHouse;
+	} count _objHouse;
 	
 	_maxHouses = ((_validHouses/100)*_lightPcnt);
 
@@ -77,7 +77,7 @@ if(!isNil "_objHouse")then{
 			if(_currLighting < _maxHouses)then{
 				
 				
-				if(_lightPcnt > floor (random 100))then{//Randomness required or first nearest houses to player get lit in a block - Needs to be based on range !
+				if(_lightPcnt > floor (random 100))then{//Randomness required || first nearest houses to player get lit in a block - Needs to be based on range !
 				
 				//axeDiagLog = format["HL:Lighting New House: %3 Num:%1 Type: %4 for %2 | Dist:%5",_currLighting, name player,_x,typeOf _x,player distance _x];
 				//publicVariable "axeDiagLog";
@@ -114,7 +114,7 @@ if(!isNil "_objHouse")then{
 				};
 			};
 
-		}forEach _notLitHouses;
+		}count _notLitHouses;
 	
 	}else{
 	//axeDiagLog = format["House Limit Reached(%3): Max:%1 | Count:%2",_maxHouses,count _litHouses,name player];
@@ -127,7 +127,7 @@ if(!isNil "_objHouse")then{
 			_pos = [_x] call FNC_getPos;
 			if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<_hsLPDist)then{//In House
 				
-				if(_plyr distance _x < _lpRange)then{//If within range and outside band
+				if(_plyr distance _x < _lpRange)then{//If within range && outside band
 				_brtns = [_plyr,_x] call axe_lightBrightness;
 				_objLightPoint enableSimulation false;//Attempt to stop Arma from broadcasting lightpoint, just reminding it here ! DO NOT USE ! Will stop light from being visible to player (At least upon creation) !
 				_objLightPoint setLightColor _lmpCol;
@@ -153,7 +153,7 @@ if(!isNil "_objHouse")then{
 				};
 			};
 			
-		}forEach _litHouses;
+		}count _litHouses;
 	};
 	
 }else{

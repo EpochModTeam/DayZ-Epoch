@@ -29,7 +29,7 @@ if (_inVehicle) then {
 			r_player_lastSeat = _assignedRole;
 		if ((_vehicle isKindOf "helicopter") || (_inVehicle && ({(isPlayer _x) && (alive _x)} count (crew _vehicle) > 1))) then {
 			//allow switch to pilot
-			if (((_assignedRole select 0) != "driver") and ((!alive _driver) or ((_vehicle emptyPositions "Driver") > 0))) then {
+			if (((_assignedRole select 0) != "driver") && ((!alive _driver) || ((_vehicle emptyPositions "Driver") > 0))) then {
 				if (_vehicle isKindOf "helicopter") then {
 					_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_308A", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToPilot",_driver], 0, false, true];
 				} else {
@@ -39,19 +39,19 @@ if (_inVehicle) then {
 				r_action2 = true;
 			};
 			//allow switch to cargo
-			if (((_assignedRole select 0) != "cargo") and ((_vehicle emptyPositions "Cargo") > 0)) then {
+			if (((_assignedRole select 0) != "cargo") && ((_vehicle emptyPositions "Cargo") > 0)) then {
 				_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_309", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToCargo",_driver], 0, false, true];
 				r_player_actions2 set [count r_player_actions2,_action];
 				r_action2 = true;
 			};
 			//allow switch to gunner
-			if (((_assignedRole select 0) != "Turret") and ((_vehicle emptyPositions "Gunner") > 0)) then {
+			if (((_assignedRole select 0) != "Turret") && ((_vehicle emptyPositions "Gunner") > 0)) then {
 				_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_310", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToTurret",_driver], 0, false, true];
 				r_player_actions2 set [count r_player_actions2,_action];
 				r_action2 = true;
 			};
 			//allow switch to commander
-			if (((assignedCommander _vehicle) != player) and ((_vehicle emptyPositions "Commander") > 0)) then {
+			if (((assignedCommander _vehicle) != player) && ((_vehicle emptyPositions "Commander") > 0)) then {
 				_action = _vehicle addAction [localize "STR_EPOCH_PLAYER_311", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToTurret",_driver], 0, false, true];
 				r_player_actions2 set [count r_player_actions2,_action];
 				r_action2 = true;
@@ -65,7 +65,7 @@ if (_inVehicle) then {
 				_action = _vehicle addAction [format["Add AMMO to %1",_weaponName], "\z\addons\dayz_code\actions\ammo.sqf",[_vehicle,_x,_turret], 0, false, true];
 				r_player_actions2 set [count r_player_actions2,_action];
 				r_action2 = true;
-			} forEach _weapons;
+			} count _weapons;
 		};
 	};
 } else {
@@ -74,7 +74,7 @@ if (_inVehicle) then {
 	r_player_lastSeat = [];
 };
 
-if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
+if (!isNull _menClose && _hasPatient && !r_drag_sqf && !r_action && !_inVehicle && !r_player_unconscious && _isClose) then {
 	_unit = 		cursorTarget;
 	_isDisallowRefuel = typeOf _unit in ["M240Nest_DZ"];
 	// player reveal _unit;
@@ -110,12 +110,12 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 		r_player_actions = r_player_actions + [_action1,_action2];
 	};
 	//Load Vehicle
-	if (_hasVehicle and _unconscious) then {
+	if (_hasVehicle && _unconscious) then {
 		_x = 0;
 		r_action = true;
 		_unit = _unit;
 		_vehicle = (_vehClose select _x);
-		while{((!alive _vehicle) and (_x < (count _vehClose)))} do {
+		while{((!alive _vehicle) && (_x < (count _vehClose)))} do {
 			_x = _x + 1;
 			_vehicle = (_vehClose select _x);
 		};
@@ -124,49 +124,49 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to bandage
-	if(_injured and _hasBandage) then {
+	if(_injured && _hasBandage) then {
 		r_action = true;
 		_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to give Epinephrine
-	if(_unconscious and _hasEpi) then {
+	if(_unconscious && _hasEpi) then {
 		r_action = true;
 		_action = _unit addAction [localize "str_actions_medical_05", "\z\addons\dayz_code\medical\epinephrine.sqf",[_unit], 0, true, true];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to give Morphine
-	if((_legsBroke or _armsBroke) and _hasMorphine) then {
+	if((_legsBroke || _armsBroke) && _hasMorphine) then {
 		r_action = true;
 		_action = _unit addAction [localize "str_actions_medical_06", "\z\addons\dayz_code\medical\morphine.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to give Painkillers
-	if(_inPain and _hasPainkillers) then {
+	if(_inPain && _hasPainkillers) then {
 		r_action = true;
 		_action = _unit addAction [localize "str_actions_medical_07", "\z\addons\dayz_code\medical\painkiller.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	//Allow player to transfuse blood
-	if(_lowBlood and _hasBlood) then {
+	if(_lowBlood && _hasBlood) then {
 		r_action = true;
 		_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit], 0, true, true, "", ""];
 		r_player_actions set [count r_player_actions,_action];
 	};
 	
 	//Repairs
-	if ((_unit isKindOf "AllVehicles") and !(_unit isKindOf "Man") and !_isDisallowRefuel) then {
+	if ((_unit isKindOf "AllVehicles") && !(_unit isKindOf "Man") && !_isDisallowRefuel) then {
 		_type = TypeOf(_unit);
 		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 
 		//CAN WE REFUEL THE OBJECT?
-		if ((fuel _unit < 1) and (_hasJerry or _hasBarrel)) then {
+		if ((fuel _unit < 1) && (_hasJerry || _hasBarrel)) then {
 			r_action = true;
 			_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",[], 0, true, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];
 		};
 		//CAN WE siphon fuel from THE OBJECT?
-		if ((fuel _unit > 0) and (_hasJerryE or _hasBarrelE)) then {
+		if ((fuel _unit > 0) && (_hasJerryE || _hasBarrelE)) then {
 			r_action = true;
 			_action = _unit addAction [format["Siphon fuel from %1",_typeVeh], "\z\addons\dayz_code\actions\siphonFuel.sqf",[], 0, true, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];
@@ -174,8 +174,8 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 
 	} else {
 	
-		// should only fire if cursor target is man and not vehicle
-		if ((isPlayer _unit) and !(_charID in _friendlies)) then {
+		// should only fire if cursor target is man && not vehicle
+		if ((isPlayer _unit) && !(_charID in _friendlies)) then {
 			r_action = true;
 			_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];
@@ -188,7 +188,7 @@ if (!isNull _menClose and _hasPatient and !r_drag_sqf and !r_action and !_inVehi
 };
 
 /*
-if ((r_player_vehicle != _vehicle) and r_action) then {
+if ((r_player_vehicle != _vehicle) && r_action) then {
 	//Player is in a new vehicle
 	r_action = false;
 	call fnc_usec_medic_removeActions;
@@ -204,7 +204,7 @@ if (_inVehicle) then {
 			if (_x getVariable "NORRN_unconscious") then {
 				_unconscious_crew = _unconscious_crew + [_x]
 			};
-		} forEach _crew;
+		} count _crew;
 		_patients = (count _unconscious_crew);
 		if (_patients > 0) then {
 			if (!r_action_unload) then {
@@ -229,13 +229,13 @@ if (_inVehicle) then {
 };
 
 //Remove Actions
-if ((!_isClose or !_hasPatient) and r_action) then {
+if ((!_isClose || !_hasPatient) && r_action) then {
 	call fnc_usec_medic_removeActions;
 	r_action = false;
 };
 
 //Pain Effects
-//if (r_player_inpain and !r_player_unconscious) then {
+//if (r_player_inpain && !r_player_unconscious) then {
 //	playSound "breath_1";
 //	addCamShake [2, 1, 25];
 //};

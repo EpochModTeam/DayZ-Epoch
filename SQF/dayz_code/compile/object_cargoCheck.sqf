@@ -36,7 +36,7 @@ _serial = 0;
 	if (_itemQty != _oldQty) then {_change = true};
 	
 	_serial = _serial + 1;
-} forEach _currentTypes;
+} count _currentTypes;
 
 //Review old loadout
 _serial = 0;
@@ -52,6 +52,6 @@ _serial = 0;
 	if (_itemQty != _oldQty) then {_change = true};
 	
 	_serial = _serial + 1;
-} forEach _previousTypes;
+} count _previousTypes;
 
 _change

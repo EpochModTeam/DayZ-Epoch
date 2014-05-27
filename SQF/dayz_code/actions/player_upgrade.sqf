@@ -22,7 +22,7 @@ _findNearestPole = [];
 	if (alive _x) then {
 		_findNearestPole set [(count _findNearestPole),_x];
 	};
-} foreach _findNearestPoles;
+} count _findNearestPoles;
 
 _IsNearPlot = count (_findNearestPole);
 
@@ -32,7 +32,7 @@ if(_IsNearPlot == 0) then {
 	_canBuildOnPlot = true;
 } else {
 	
-	// check nearby plots ownership and then for friend status
+	// check nearby plots ownership && then for friend status
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner 
@@ -95,7 +95,7 @@ if ((count _upgrade) > 0) then {
 		_countIn = _x select 1;
 		_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 		if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-	} forEach _requirements;
+	} count _requirements;
 	
 	if (_proceed) then {
 		[1,1] call dayz_HungerThirst;
@@ -123,9 +123,9 @@ if ((count _upgrade) > 0) then {
 					};
 				};
 		
-			} forEach magazines player;
+			} count magazines player;
 
-		} forEach _requirements;
+		} count _requirements;
 
 		// all parts removed proceed
 		if (_tobe_removed_total == _removed_total) then {
@@ -171,7 +171,7 @@ if ((count _upgrade) > 0) then {
 			
 		} else {
 		
-			{player addMagazine _x;} forEach _temp_removed_array;
+			{player addMagazine _x;} count _temp_removed_array;
 			cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 		
 		};

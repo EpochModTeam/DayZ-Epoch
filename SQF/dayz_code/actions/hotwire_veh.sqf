@@ -4,7 +4,7 @@ _vehicle = _this select 3;
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_32") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
-{player removeAction _x} forEach s_player_lockunlock;s_player_lockunlock = [];
+{player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
 
 _removed = ([player,"ItemHotwireKit",1] call BIS_fnc_invRemove);

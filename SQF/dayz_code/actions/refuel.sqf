@@ -16,7 +16,7 @@ _nameText = 	getText(_configVeh >> "displayName");
 // _availableCansEmpty = ["ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 
-// Loop to find containers that can could hold fuel and fill them
+// Loop to find containers that can could hold fuel && fill them
 {
 	_configCan =  configFile >> "CfgMagazines" >> _x;
 
@@ -61,7 +61,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					if (_isMedic) then {
 						_started = true;
 					};
-					if (_started and !_isMedic) then {
+					if (_started && !_isMedic) then {
 						r_doLoop = false;
 						_finished = true;
 					};
@@ -146,6 +146,6 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 	// exit if abort flag was set
 	if(_abort) exitWith {};
 
-} forEach magazines player;
+} count magazines player;
 
 DZE_ActionInProgress = false;

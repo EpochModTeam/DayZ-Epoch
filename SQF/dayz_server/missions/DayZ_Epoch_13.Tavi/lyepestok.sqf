@@ -2,7 +2,7 @@
                        Lyepenstok Trader City
                       Author: AVendettaForYou
                           Date: 12/11/13
-        If modified and released give credits where due thank you
+        If modified && released give credits where due thank you
 ---------------------------------------------------------------------------*/
 
 if (isServer) then {

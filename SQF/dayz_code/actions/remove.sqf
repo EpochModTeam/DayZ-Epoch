@@ -47,7 +47,7 @@ else {
 
 _findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], 30];
 _findNearestPole = [];
-{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} foreach _findNearestPoles;
+{if (alive _x) then {_findNearestPole set [(count _findNearestPole),_x];};} count _findNearestPoles;
 
 _IsNearPlot = count (_findNearestPole);
 
@@ -109,7 +109,7 @@ while {_isOk} do {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 			_sfx = "repair";
@@ -131,7 +131,7 @@ while {_isOk} do {
 	if(_finished) then {
 		_counter = _counter + 1;
 		// 10% chance to break a required tool each pass
-		if((_isDestructable or _isRemovable) and !_isOwnerOfObj) then {
+		if((_isDestructable || _isRemovable) && !_isOwnerOfObj) then {
 			if((random 10) <= 1) then {
 				_brokenTool = true;
 			};
@@ -217,7 +217,7 @@ if (_proceed) then {
 		};
 
 		// give refund items
-		if((count _selectedRemoveOutput) > 0 and !_preventRefund) then {
+		if((count _selectedRemoveOutput) > 0 && !_preventRefund) then {
 			_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 			{
 				_itemOut = _x select 0;
@@ -226,7 +226,7 @@ if (_proceed) then {
 					_countOut = round((random (_countOut select 1)) + (_countOut select 0));
 				};
 				_item addMagazineCargoGlobal [_itemOut,_countOut];
-			} forEach _selectedRemoveOutput;
+			} count _selectedRemoveOutput;
 
 			_item setposATL _iPos;
 

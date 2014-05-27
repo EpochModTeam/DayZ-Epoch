@@ -43,7 +43,7 @@ _cookedmeat = meatcooked;
 			if (_isMedic) then {
 				_started = true;
 			};
-			if (_started and !_isMedic) then {
+			if (_started && !_isMedic) then {
 				r_doLoop = false;
 				_finished = true;
 			};
@@ -74,7 +74,7 @@ _cookedmeat = meatcooked;
 			cutText [format[(localize "str_epoch_player_130"),_textraw], "PLAIN DOWN"];
 		};
 	};
-} forEach _rawmeat;
+} count _rawmeat;
 
 s_player_cook = -1;
 DZE_ActionInProgress = false;

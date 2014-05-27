@@ -1,6 +1,6 @@
 /*
 	DayZ Epoch Crafting 0.3
-	Made for DayZ Epoch and Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+	Made for DayZ Epoch && Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	Thanks to thevisad for help with the spawn call fixes.
 
 USAGE EXAMPLE:
@@ -9,7 +9,7 @@ class ItemActions
 	class Crafting
 	{
 		text = "Craft Tent";
-		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // [Class of itemaction,CfgMagazines or CfgWeapons, item]
+		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // [Class of itemaction,CfgMagazines || CfgWeapons, item]
 		neednearby[] = {"workshop","fire"};
 		requiretools[] = {"ItemToolbox","ItemKnife"}; // (cfgweapons only)
 		output[] = {{"ItemTent",1}}; // (CfgMagazines, qty)
@@ -39,7 +39,7 @@ _reason = "";
 _waterLevel = 0;
 
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-_canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
+_canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 
 // Need Near Requirements
 _needNear = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "neednearby");
@@ -95,7 +95,7 @@ if (_canDo) then {
 		{
 			_hastoolweapon = _x in weapons player;
 			if(!_hastoolweapon) exitWith { _craft_doLoop = false; _missingTools = true; _missing = _x; };
-		} forEach _selectedRecipeTools;
+		} count _selectedRecipeTools;
 
 		if(!_missingTools) then {
 
@@ -111,7 +111,7 @@ if (_canDo) then {
 
 					if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
 
-				} forEach _selectedRecipeInput;
+				} count _selectedRecipeInput;
 			};
 
 			// If all parts proceed
@@ -137,7 +137,7 @@ if (_canDo) then {
 					if (_isMedic) then {
 						_started = true;
 					};
-					if (_started and !_isMedic) then {
+					if (_started && !_isMedic) then {
 						r_doLoop = false;
 						_finished = true;
 					};
@@ -173,7 +173,7 @@ if (_canDo) then {
 									};
 								};
 							};
-						} forEach magazines player;
+						} count magazines player;
 
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
@@ -194,9 +194,9 @@ if (_canDo) then {
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
 							};
-						} forEach magazines player;
+						} count magazines player;
 
-					} forEach _selectedRecipeInput;
+					} count _selectedRecipeInput;
 
 					//diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
 
@@ -205,7 +205,7 @@ if (_canDo) then {
 						_num_removed_weapons = 0;
 						{
 							_num_removed_weapons = _num_removed_weapons + ([player,_x] call BIS_fnc_invRemove);
-						} forEach _inputWeapons;
+						} count _inputWeapons;
 						if (_num_removed_weapons == (count _inputWeapons)) then {
 							if(_randomOutput == 1) then {
 								_outputWeapons = [];
@@ -223,7 +223,7 @@ if (_canDo) then {
 							};
 							{
 								player addWeapon _x;
-							} forEach _outputWeapons;
+							} count _outputWeapons;
 							{
 
 								_itemOut = _x select 0;
@@ -250,14 +250,14 @@ if (_canDo) then {
 								// sleep here
 								sleep 1;
 
-							} forEach _selectedRecipeOutput;
+							} count _selectedRecipeOutput;
 
 							_tradeComplete = _tradeComplete+1;
 						};
 
 					} else {
 						// Refund parts since we failed
-						{player addMagazine _x;} forEach _temp_removed_array;
+						{player addMagazine _x;} count _temp_removed_array;
 
 						cutText [format[(localize "str_epoch_player_151"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 					};

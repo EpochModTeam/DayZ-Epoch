@@ -43,7 +43,7 @@ if (count _targets == 0) then
 			_targets set [count _targets,_x];
 			_targetDis set [count _targetDis,_dis];
 		};
-	} forEach _objects;
+	} count _objects;
 };
 
 //Find best target
@@ -68,7 +68,7 @@ if (count _targets > 0) then
 			_man = _x;
 			_manDis = _dis;
 		};
-	} forEach _targets;
+	} count _targets;
 
 	_target = _man;
 };

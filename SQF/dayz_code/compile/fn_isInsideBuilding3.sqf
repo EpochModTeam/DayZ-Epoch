@@ -23,9 +23,9 @@ _myZ = _relPos select 2;
 //diag_log ("Y: " + str(_myY) );
 //diag_log ("Z: " + str(_myZ) );
 
-if ((_myX > (_min select 0)) and (_myX < (_max select 0))) then {
-	if ((_myY > (_min select 1)) and (_myY < (_max select 1))) then {
-		if ((_myZ > (_min select 2)) and (_myZ < (_max select 2))) then {
+if ((_myX > (_min select 0)) && (_myX < (_max select 0))) then {
+	if ((_myY > (_min select 1)) && (_myY < (_max select 1))) then {
+		if ((_myZ > (_min select 2)) && (_myZ < (_max select 2))) then {
 			_inside = true;
 				} else { _inside = false; };
 		} else { _inside = false; };

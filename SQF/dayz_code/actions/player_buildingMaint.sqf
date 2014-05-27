@@ -45,7 +45,7 @@ _proceed = true;
 	_countIn = _x select 1;
 	_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 	if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-} forEach _requirements;
+} count _requirements;
 
 if (_proceed) then {
 	[1,1] call dayz_HungerThirst;
@@ -73,9 +73,9 @@ if (_proceed) then {
 				};
 			};
 	
-		} forEach magazines player;
+		} count magazines player;
 
-	} forEach _requirements;
+	} count _requirements;
 
 	// all parts removed proceed
 	if (_tobe_removed_total == _removed_total) then {
@@ -86,7 +86,7 @@ if (_proceed) then {
 
 	} else {
 	
-		{player addMagazine _x;} forEach _temp_removed_array;
+		{player addMagazine _x;} count _temp_removed_array;
 		cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 	
 	};

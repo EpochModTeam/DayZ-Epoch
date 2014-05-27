@@ -39,7 +39,7 @@ server_updateNearbyObjects = {
 	_pos = _this select 0;
 	{
 		[_x, "gear"] call server_updateObject;
-	} forEach nearestObjects [_pos, dayz_updateObjects, 10];
+	} count nearestObjects [_pos, dayz_updateObjects, 10];
 };
 
 server_handleZedSpawn = {
@@ -210,7 +210,7 @@ if(isnil "DynamicVehicleArea") then {
 	DynamicVehicleArea = dayz_MapArea / 2;
 };
 
-// Get all buildings and roads only once TODO: set variables to nil after done if nessicary 
+// Get all buildings && roads only once TODO: set variables to nil after done if nessicary 
 MarkerPosition = getMarkerPos "center";
 RoadList = MarkerPosition nearRoads DynamicVehicleArea;
 
@@ -230,7 +230,7 @@ BuildingList = [];
 	};
 	
 	
-} forEach (MarkerPosition nearObjects ["building",DynamicVehicleArea]);
+} count (MarkerPosition nearObjects ["building",DynamicVehicleArea]);
 
 spawn_vehicles = {
 	private ["_random","_lastIndex","_weights","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_marker","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
@@ -251,7 +251,7 @@ spawn_vehicles = {
 		if (_qty <= _velimit) exitWith {};
 
 		// vehicle limit reached, remove vehicle from list
-		// since elements cannot be removed from an array, overwrite it with the last element and cut the last element of (as long as order is not important)
+		// since elements cannot be removed from an array, overwrite it with the last element && cut the last element of (as long as order is not important)
 		_lastIndex = (count AllowedVehiclesList) - 1;
 		if (_lastIndex != _index) then {
 			AllowedVehiclesList set [_index, AllowedVehiclesList select _lastIndex];
@@ -285,7 +285,7 @@ spawn_vehicles = {
 		
 		
 		} else {
-			// Spawn around buildings and 50% near roads
+			// Spawn around buildings && 50% near roads
 			if((random 1) > 0.5) then {
 			
 				waitUntil{!isNil "BIS_fnc_selectRandom"};
@@ -312,7 +312,7 @@ spawn_vehicles = {
 		
 			};
 		};
-		// only proceed if two params otherwise BIS_fnc_findSafePos failed and may spawn in air
+		// only proceed if two params otherwise BIS_fnc_findSafePos failed && may spawn in air
 		if ((count _position) == 2) then { 
 	
 			_dir = round(random 180);
@@ -350,12 +350,12 @@ spawn_vehicles = {
 				if (DZE_MissionLootTable) then{
 					{
 						_itemTypes set[count _itemTypes, _x select 0]
-					} foreach getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+					} count getArray(missionConfigFile >> "cfgLoot" >> _iClass);
 				}
 				else {
 					{
 						_itemTypes set[count _itemTypes, _x select 0]
-					} foreach getArray(configFile >> "cfgLoot" >> _iClass);
+					} count getArray(configFile >> "cfgLoot" >> _iClass);
 				};
 
 				_index = dayz_CLBase find _iClass;
@@ -595,7 +595,7 @@ dayz_objectUID2 = {
 		_x = _x * 10;
 		if ( _x < 0 ) then { _x = _x * -10 };
 		_key = _key + str(round(_x));
-	} forEach _position;
+	} count _position;
 	_key = _key + str(round(_dir));
 	_key
 };
@@ -609,7 +609,7 @@ dayz_objectUID3 = {
 		_x = _x * 10;
 		if ( _x < 0 ) then { _x = _x * -10 };
 		_key = _key + str(round(_x));
-	} forEach _position;
+	} count _position;
 	_key = _key + str(round(_dir + time));
 	_key
 };
@@ -673,7 +673,7 @@ dayz_perform_purge_player = {
 			{
 				_holder addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
 				_countr = _countr + 1;
-			} forEach _objWpnTypes;
+			} count _objWpnTypes;
 
 			// add backpack magazine items
 			_objWpnTypes = _backpackMag select 0;
@@ -682,19 +682,19 @@ dayz_perform_purge_player = {
 			{
 				_holder addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
 				_countr = _countr + 1;
-			} forEach _objWpnTypes;
+			} count _objWpnTypes;
 		};
 	};
 
 	// add weapons
 	{ 
 		_holder addWeaponCargoGlobal [_x, 1];
-	} forEach _weapons;
+	} count _weapons;
 
 	// add mags
 	{ 
 		_holder addMagazineCargoGlobal [_x, 1];
-	} forEach _magazines;
+	} count _magazines;
 
 	_this removeAllMPEventHandlers "mpkilled";
 	_this removeAllMPEventHandlers "mphit";
@@ -769,10 +769,10 @@ server_spawncleanDead = {
 			};
 		};
 		sleep 0.025;
-	} forEach _allDead;
-	if (_delQtyZ > 0 or _delQtyP > 0) then {
+	} count _allDead;
+	if (_delQtyZ > 0 || _delQtyP > 0) then {
 		_qty = count _allDead;
-		diag_log (format["CLEANUP: Deleted %1 players and %2 zombies out of %3 dead",_delQtyP,_delQtyZ,_qty]);
+		diag_log (format["CLEANUP: Deleted %1 players && %2 zombies out of %3 dead",_delQtyP,_delQtyZ,_qty]);
 	};
 };
 server_cleanupGroups = {
@@ -784,7 +784,7 @@ server_cleanupGroups = {
 			deleteGroup _x;
 		};
 		sleep 0.001;
-	} forEach allGroups;
+	} count allGroups;
 	DZE_DYN_GroupCleanup = nil;
 };
 
@@ -793,7 +793,7 @@ server_checkHackers = {
 	if(!isNil "DZE_DYN_HackerCheck") exitWith {  DZE_DYN_AntiStuck2nd = DZE_DYN_AntiStuck2nd + 1;};
 	DZE_DYN_HackerCheck = true;
 	{
-	if (!((isNil "_x") OR {(isNull _x)})) then {
+	if (!((isNil "_x") || {(isNull _x)})) then {
 		if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {
 			diag_log ("CLEANUP: KILLING A HACKER " + (name _x) + " " + str(_x) + " IN " + (typeOf vehicle _x));
 			(vehicle _x) setDamage 1;
@@ -802,7 +802,7 @@ server_checkHackers = {
 		};
 	};
 		sleep 0.001;
-	} forEach allUnits;
+	} count allUnits;
 	DZE_DYN_HackerCheck = nil;
 };
 
@@ -817,7 +817,7 @@ server_spawnCleanFire = {
 			_delQtyFP = _delQtyFP + 1;
 		};
 		sleep 0.001;
-	} forEach _missionFires;
+	} count _missionFires;
 	if (_delQtyFP > 0) then {
 		_qty = count _missionFires;
 		diag_log (format["CLEANUP: Deleted %1 fireplaces out of %2",_delQtyNull,_qty]);
@@ -842,7 +842,7 @@ server_spawnCleanLoot = {
 			} else {
 				_age = (_dateNow - _created) * 525948;
 				if (_age > 20) then {
-					_nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
+					_nearby = {(isPlayer _x) && (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
 					if (_nearby==0) then {
 						deleteVehicle _x;
 						sleep 0.025;
@@ -852,7 +852,7 @@ server_spawnCleanLoot = {
 			};
 		};
 		sleep 0.001;
-	} forEach _missionObjs;
+	} count _missionObjs;
 	if (_delQty > 0) then {
 		_qty = count _missionObjs;
 		diag_log (format["CLEANUP: Deleted %1 Loot Piles out of %2",_delQty,_qty]);
@@ -873,7 +873,7 @@ server_spawnCleanAnimals = {
 			if (!alive _x) then {
 				_pos = getPosATL _x;
 				if (count _pos > 0) then {
-					_nearby = {(isPlayer _x) and (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 130]);
+					_nearby = {(isPlayer _x) && (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 130]);
 					if (_nearby==0) then {
 						_x call dayz_perform_purge;
 						sleep 0.05;
@@ -883,7 +883,7 @@ server_spawnCleanAnimals = {
 			};
 		};
 		sleep 0.001;
-	} forEach _missonAnimals;
+	} count _missonAnimals;
 	if (_delQtyAnimal > 0) then {
 		_qty = count _missonAnimals;
 		diag_log (format["CLEANUP: Deleted %1 Animals out of %2",_delQtyAnimal,_qty]);

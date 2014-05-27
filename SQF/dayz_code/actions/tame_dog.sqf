@@ -28,7 +28,7 @@ _selected = "";
 		_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
 	};
 	if(_removed == 1) exitWith { _selected = _x; };	
-} forEach magazines player;
+} count magazines player;
 
 // Only proceed if removed count matches
 if(_removed == _countIn) then {

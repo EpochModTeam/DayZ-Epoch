@@ -1,7 +1,7 @@
 private["_firePlace","_ok","_mags","_serial","_qty","_countr"];
 _firePlace = _this;
 while {alive _firePlace} do {
-	while {inflamed _firePlace and alive _fireplace} do {
+	while {inflamed _firePlace && alive _fireplace} do {
 		//Use Wood
 		_ok = false;
 		_mags = getMagazineCargo _firePlace;
@@ -33,7 +33,7 @@ while {alive _firePlace} do {
 			_firePlace inflame false;
 		};
 	};
-	while {!inflamed _firePlace and alive _fireplace} do {
+	while {!inflamed _firePlace && alive _fireplace} do {
 		//Wait
 		sleep 1;
 	};

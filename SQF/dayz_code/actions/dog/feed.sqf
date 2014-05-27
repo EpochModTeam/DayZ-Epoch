@@ -18,7 +18,7 @@ switch (_type) do {
 			if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
 				_removed = _removed + ([player,_x] call BIS_fnc_invRemove);
 			};
-		} forEach magazines player;
+		} count magazines player;
 		if(_removed == _countIn) then {
 			_handle setFSMVariable ["_hunger",0];
 			player removeAction s_player_feeddog;

@@ -13,7 +13,7 @@ _type = typeOf _item;
 _hasHarvested = _item getVariable["meatHarvested",false];
 _config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
 
-if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
+if ((_hasKnife || _hasKnifeBlunt) && !_hasHarvested) then {
 	//Get Animal Type
 	_isListed =		isClass (_config);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
@@ -37,7 +37,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -60,7 +60,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 
 	_hasHarvested = _item getVariable["meatHarvested",false];
 	
-	if(_finished and !_hasHarvested) then {
+	if(_finished && !_hasHarvested) then {
 
 		_item setVariable["meatHarvested",true,true];
 

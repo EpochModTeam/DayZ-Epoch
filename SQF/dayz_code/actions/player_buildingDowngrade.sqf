@@ -21,7 +21,7 @@ _findNearestPole = [];
 	if (alive _x) then {
 		_findNearestPole set [(count _findNearestPole),_x];
 	};
-} foreach _findNearestPoles;
+} count _findNearestPoles;
 
 _IsNearPlot = count (_findNearestPole);
 
@@ -31,7 +31,7 @@ if(_IsNearPlot == 0) then {
 	_canBuildOnPlot = true;
 } else {
 
-	// check nearby plots ownership and then for friend status
+	// check nearby plots ownership && then for friend status
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner
@@ -110,7 +110,7 @@ if ((count _upgrade) > 0) then {
 
 		if (_abortInvAdd) exitWith {};
 
-	} forEach _refund;
+	} count _refund;
 
 	// all parts added proceed
 	if(_i != 0) then {
@@ -150,7 +150,7 @@ if ((count _upgrade) > 0) then {
 		cutText [format[(localize "str_epoch_player_143"), _i,(getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName"))], "PLAIN DOWN"];
 		{
 			[player,(_x select 0),(_x select 1)] call BIS_fnc_invRemove;
-		} forEach _addedItems;
+		} count _addedItems;
 
 	};
 

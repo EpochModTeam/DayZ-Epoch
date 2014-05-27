@@ -6,11 +6,11 @@ textLogFormat ["PRELOAD_ Functions\init.sqf %1", _this];
 
 	Description:
 	Function library initialization.
-	All files have to start with 'fn_' prefix and they name have to be same as name of function.
+	All files have to start with 'fn_' prefix && they name have to be same as name of function.
 	Don't forget to exclude comma after last item in array!
 	
 	Caution:
-	Do not execute this init directly - there is dependency with MPF and need to run on all machines.
+	Do not execute this init directly - there is dependency with MPF && need to run on all machines.
 
 	Parameter(s):
 	_this select 0: 'Function manager' logic
@@ -33,7 +33,7 @@ textLogFormat ["Log: [Functions] Init script executed at %1",time];
 //--- PREPROCESS -----------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------
 
-//--- Create variables for all functions (and preprocess them after first call)
+//--- Create variables for all functions (&& preprocess them after first call)
 for "_t" from 0 to 2 do {
 	_pathConfig = [configfile,campaignconfigfile,missionconfigfile] select _t;
 	_pathFile = ["ca\modules\functions","functions","functions"] select _t;

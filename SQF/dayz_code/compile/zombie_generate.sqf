@@ -32,21 +32,21 @@ _cantSee = {
 				_deg = [_xasl, _zPos] call BIS_fnc_dirTo;
 				_deg = (_deg - _ed + 720) % 360;
 				if (_deg > 180) then { _deg = _deg - 360; };
-				if ((abs(_deg) < _fov) AND {( // in right angle sector?
+				if ((abs(_deg) < _fov) && {( // in right angle sector?
 						(!(terrainIntersectASL [_zPos, _eye]) // no terrain between?
-						AND {(!(lineIntersects [_zPos, _eye]))}) // and no object between?
+						&& {(!(lineIntersects [_zPos, _eye]))}) // && no object between?
 					)}) then {
 					_isok = false;
 				};
 			};
 		};
 		if (!_isok) exitWith {false};
-	} forEach playableUnits;
+	} count playableUnits;
 
 	_isok
 };
 
-if ((dayz_spawnZombies < _maxControlledZombies) and (dayz_CurrentNearByZombies < dayz_maxNearByZombies) and (dayz_currentGlobalZombies < dayz_maxGlobalZeds)) then {
+if ((dayz_spawnZombies < _maxControlledZombies) && (dayz_CurrentNearByZombies < dayz_maxNearByZombies) && (dayz_currentGlobalZombies < dayz_maxGlobalZeds)) then {
 	if ([_position, dayz_cantseefov, 10, dayz_cantseeDist] call _cantSee) then {
 		//Check if anyone close
 		_tooClose = {isPlayer _x} count (_position nearEntities ["CAManBase",30]) > 0;
@@ -91,7 +91,7 @@ if ((dayz_spawnZombies < _maxControlledZombies) and (dayz_CurrentNearByZombies <
 				_array = [];
 				{
 					_array set [count _array, _x select 0]
-				} foreach getArray (configFile >> "cfgLoot" >> getText(_lootType));
+				} count getArray (configFile >> "cfgLoot" >> getText(_lootType));
 				if (count _array > 0) then {
 					_index = dayz_CLBase find getText(_lootType);
 					_weights = dayz_CLChances select _index;

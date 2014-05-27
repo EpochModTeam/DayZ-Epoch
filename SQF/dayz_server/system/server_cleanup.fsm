@@ -18,7 +18,7 @@ item13[] = {"___min__loop",4,218,300.000000,-125.000000,400.000000,-75.000000,3.
 item14[] = {"___min_loop",4,218,450.000000,-125.000000,550.000000,-75.000000,4.000000,"5 min" \n "loop"};
 item15[] = {"__0_min__loop",4,218,575.000000,-100.000000,675.000000,-50.000000,5.000000,"10 min" \n " loop"};
 item16[] = {"__5_min__loop",4,218,700.000000,-75.000000,800.000000,-25.000000,6.000000,"15 min" \n " loop"};
-item17[] = {"cleanup_animals",2,250,700.000000,25.000000,800.000000,75.000000,0.000000,"cleanup" \n "animals and fire"};
+item17[] = {"cleanup_animals",2,250,700.000000,25.000000,800.000000,75.000000,0.000000,"cleanup" \n "animals && fire"};
 item18[] = {"cleanup_dead",2,250,575.000000,0.000000,675.000000,50.000000,0.000000,"cleanup" \n "dead"};
 item19[] = {"sync_time",2,250,450.000000,-25.000000,550.000000,25.000000,0.000000,"sync time"};
 item20[] = {"cleanup_loot",2,250,300.000000,-25.000000,400.000000,25.000000,0.000000,"cleanup" \n "loot"};
@@ -342,7 +342,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"{" \n
        "	needUpdate_objects = needUpdate_objects - [_x];" \n
        "	[_x,""damage"",true] call server_updateObject;" \n
-       "} forEach needUpdate_objects;"/*%FSM</STATEINIT""">*/;
+       "} count needUpdate_objects;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

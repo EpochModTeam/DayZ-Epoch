@@ -12,22 +12,22 @@ _maxWeapons =	getNumber (configFile >> "CfgVehicles" >> _class >> "transportMaxW
 // Get max backpack count
 _maxBackpacks =	getNumber (configFile >> "CfgVehicles" >> _class >> "transportmaxbackpacks");
 
-// Count and show magazines available space 
+// Count && show magazines available space 
 _magazineCount_raw = getMagazineCargo _vehicle;
 
-// Count and show weapons available space
+// Count && show weapons available space
 _weaponsCount_raw = getWeaponCargo _vehicle;
 
-// Count and show backpacks available space
+// Count && show backpacks available space
 _backpackCount_raw = getBackpackCargo _vehicle;
 
-// Count and show magazines available space 
+// Count && show magazines available space 
 _magazineCount = (_magazineCount_raw select 1) call vehicle_gear_count;
 
-// Count and show weapons available space
+// Count && show weapons available space
 _weaponsCount = (_weaponsCount_raw select 1) call vehicle_gear_count;
 
-// Count and show weapons available space
+// Count && show weapons available space
 _backpackCount = (_backpackCount_raw select 1) call vehicle_gear_count;
 
 cutText [format[(localize "str_epoch_player_1"),_magazineCount,_maxMagazines,_weaponsCount,_maxWeapons,_backpackCount,_maxBackpacks], "PLAIN DOWN"];

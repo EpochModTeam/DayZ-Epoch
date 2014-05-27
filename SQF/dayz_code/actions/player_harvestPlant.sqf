@@ -39,7 +39,7 @@ _findNearestTree = [];
 		};
 	};
 
-} foreach nearestObjects [([player] call FNC_getPos), [], 10];
+} count nearestObjects [([player] call FNC_getPos), [], 10];
 
 //diag_log format["DEBUG TREES: %1", _findNearestTree];
 
@@ -68,7 +68,7 @@ if (count(_findNearestTree) >= 1) then {
 			if (_isMedic) then {
 				_started = true;
 			};
-			if (_started and !_isMedic) then {
+			if (_started && !_isMedic) then {
 				r_doLoop = false;
 				_finished = true;
 				[player,"chopwood",0,false] call dayz_zombieSpeak;

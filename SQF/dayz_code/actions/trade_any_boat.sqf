@@ -43,7 +43,7 @@ while {r_doLoop} do {
 	if (_isMedic) then {
 		_started = true;
 	};
-	if (_started and !_isMedic) then {
+	if (_started && !_isMedic) then {
 		r_doLoop = false;
 		_finished = true;
 	};
@@ -134,7 +134,7 @@ if (_finished) then {
 					
 				waitUntil {!isNil "_isOk"};
 
-				if (_isOk and _isKeyOK) then {
+				if (_isOk && _isKeyOK) then {
 
 					_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
 					if (_done) then {	
@@ -193,7 +193,7 @@ if (_finished) then {
 
 				_notSetup = (_objectID == "0" && _objectUID == "0");
 
-				if(local _obj and !isNull _obj and alive _obj and !_notSetup) then {
+				if(local _obj && !isNull _obj && alive _obj && !_notSetup) then {
 
 					PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
 					publicVariableServer "PVDZE_obj_Delete";

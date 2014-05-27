@@ -24,7 +24,7 @@ if(_num_removed == 1) then {
 		player playActionNow "Gear";
 	};
 
-	if ((_unit == player) or (vehicle player != player)) then {
+	if ((_unit == player) || (vehicle player != player)) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
 	} else {

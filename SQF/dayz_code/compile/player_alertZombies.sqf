@@ -27,4 +27,4 @@ if ("ItemMap_Debug" in items player) then {
 	} else {
 		_zombie setVariable ["myDest",_pos,true];
 	};
-} forEach _listTalk;
+} count _listTalk;

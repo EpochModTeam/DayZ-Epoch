@@ -15,5 +15,5 @@ if(count _nrTowers >0)then{
 		[_lCol,_lbrt,_lamb,[_x],[true]] call axe_towerLight;	
 		_x setVariable ["axeTLight", 1, false];
 		};	
-	}forEach _nrTowers;	
+	}count _nrTowers;	
 };

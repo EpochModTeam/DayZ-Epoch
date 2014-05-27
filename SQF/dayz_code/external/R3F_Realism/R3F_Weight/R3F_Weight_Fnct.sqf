@@ -23,7 +23,7 @@ R3F_WEIGHT_FNCT_MakeSingleArray = {
 		};
 		_n = _n + 1;
 		
-	}foreach _arr_i;
+	}count _arr_i;
 	
 	_arr;
 };
@@ -57,7 +57,7 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 				};				
 			};
 		};
-	}foreach _arr_class;
+	}count _arr_class;
 	_total_weight;
 };
 

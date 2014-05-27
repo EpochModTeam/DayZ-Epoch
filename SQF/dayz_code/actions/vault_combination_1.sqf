@@ -8,7 +8,7 @@ dayz_combination = "";
 		
 if(!isNull dayz_selectedVault) then {
 
-	if ((typeOf dayz_selectedVault) == "VaultStorageLocked" or (typeOf dayz_selectedVault) == "VaultStorage") then {
+	if ((typeOf dayz_selectedVault) == "VaultStorageLocked" || (typeOf dayz_selectedVault) == "VaultStorage") then {
 		_ok = createdialog "SafeKeyPad";
 	} else {
 		_ok = createdialog "KeypadUI";

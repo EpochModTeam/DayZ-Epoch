@@ -22,7 +22,7 @@ EpochDeathBoardLoad = {
 	];*/
 	{
 		lbAdd [EpochDeathBoardDialogList, (_x select 0)];
-	} forEach PVDZE_plr_DeathBResult;
+	} count PVDZE_plr_DeathBResult;
 };
 
 
@@ -34,7 +34,7 @@ EpochDeathBoardClick = {
 		"What happens if you get scared half to death, twice?",
 		"Don't upset me.. I'm running out of places to hide the bodies.",
 		"Don't run, you'll just die tired.",
-		"Give me immortality or give me death.",
+		"Give me immortality || give me death.",
 		"I can't live with death; he's always leaving the toilet seat up.",
 		"Why won't you die?!?!",
 		"Guns don't kill people; death kills people. It's a proven medical fact."

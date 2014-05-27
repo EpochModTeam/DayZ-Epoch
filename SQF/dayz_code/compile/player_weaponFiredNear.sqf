@@ -13,13 +13,13 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 	_arc = 60;
 	_isBallistic = (getNumber (configfile >> "CfgAmmo" >> _ammo >> "whistleOnFire") > 0);
 	_dmgDistance = getNumber (configfile >> "CfgAmmo" >> _ammo >> "whistleDist");
-	_isRocket = ((_ammo isKindOf "RocketBase") and (_firer isKindOf "Man"));
+	_isRocket = ((_ammo isKindOf "RocketBase") && (_firer isKindOf "Man"));
 	_isPlayer = (_unit == player);
 	_inVehicle = (vehicle _unit != _unit);
 	_evType = "";
 	_recordable = false;
 
-	// Both the firer and those nearby (<=8m) go into "combat" to prevent ALT-F4
+	// Both the firer && those nearby (<=8m) go into "combat" to prevent ALT-F4
 	//diag_log ("DEBUG: AMMO TYPE: " +str(_ammo));
 	_firer setVariable["startcombattimer", 1];
 	if (_distance <= 8) then {
@@ -44,7 +44,7 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 	_isInRear = (_firingArc > (180 - _arc));
 
 	//Ballistic Handler
-	if ((_isBallistic and _isInFront) and (_distance < (_dmgDistance * 2))) then {
+	if ((_isBallistic && _isInFront) && (_distance < (_dmgDistance * 2))) then {
 		if (_distance < _dmgDistance) then {
 			//Will Cause Damage
 			1 call fnc_usec_bulletHit;
@@ -68,8 +68,8 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 			};
 		};
 	} else {
-		if (_isRocket and (_isInFront or _isInRear)) then {
-			if ((_distance < 5) and !_handled) then {
+		if (_isRocket && (_isInFront || _isInRear)) then {
+			if ((_distance < 5) && !_handled) then {
 				1 call fnc_usec_bulletHit;
 				[20,45] call fnc_usec_pitchWhine; //Visual , Sound
 				// Dead
@@ -78,12 +78,12 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 				};
 				[_unit,2] call fnc_usec_damageUnconscious;
 			};
-			if ((_distance < 10) and !_handled) then {
+			if ((_distance < 10) && !_handled) then {
 				[10,20] call fnc_usec_pitchWhine; //Visual , Sound
 				// Unconscious
 				[_unit,0.2] call fnc_usec_damageUnconscious;
 			};
-			if ((_distance < 20) and !_handled and _isPlayer) then {
+			if ((_distance < 20) && !_handled && _isPlayer) then {
 				// Warn
 				[10,20] call fnc_usec_pitchWhine; //Visual , Sound
 				addCamShake [15, 0.8, 25];

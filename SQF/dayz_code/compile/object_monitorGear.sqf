@@ -6,7 +6,7 @@ _countWeapons = {
 	_return = 0;
 	
 	_weapons = (getWeaponCargo _object) select 1;
-	{ _return = _return + _x } foreach _weapons;
+	{ _return = _return + _x } count _weapons;
 	_return;
 };
 
@@ -16,7 +16,7 @@ _countMagazines = {
 	_return = 0;
 	
 	_magazines = (getMagazineCargo _object) select 1;
-	{ _return = _return + _x } foreach _magazines;
+	{ _return = _return + _x } count _magazines;
 	_return;
 };
 
@@ -26,7 +26,7 @@ _countBackpacks = {
 	_return = 0;
 	
 	_backpacks = (getBackpackCargo _object) select 1;
-	{ _return = _return + _x } foreach _backpacks;
+	{ _return = _return + _x } count _backpacks;
 	_return;
 };
 
@@ -63,11 +63,11 @@ _isStorage = _object isKindOf "Land_A_tent";
 _isnewstorage = (typeOf _object) in DZE_isNewStorage;
 
 _timeout = time + 2;
-waitUntil { !(isNull (findDisplay 106)) or (_timeout < time) };
+waitUntil { !(isNull (findDisplay 106)) || (_timeout < time) };
 
 //diag_log format["object_monitorGear.sqf: _object: %1 _isStorage: %4 _isVehicle: %2 _isMan: %3 _display: %5", _object, _isVehicle, _isMan, _isStorage, findDisplay 106];
 
-if ((_isVehicle or _isStorage or _isnewstorage) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
+if ((_isVehicle || _isStorage || _isnewstorage) && (!_isMan) && (!(isNull (findDisplay 106)))) then {
 	_objectName = getText (configFile >> "CfgVehicles" >> (typeof _object) >> "displayName");
 	_controlText = [] call _getControlText;
 	

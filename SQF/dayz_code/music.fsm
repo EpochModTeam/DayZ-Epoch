@@ -124,7 +124,7 @@ class FSM
           priority = 90.000000;
           to="wait";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"r_player_unconscious or r_player_dead"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"r_player_unconscious || r_player_dead"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_delay = 20;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

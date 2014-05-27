@@ -21,7 +21,7 @@ if (!isDedicated) then {
 	building_spawnLoot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnLoot.sqf";
 	building_spawnZombies =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
 	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\dayz_spaceInterrupt.sqf";
-	player_fired =					compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
+	player_fired =					compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre && audial rating
 	player_harvest =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_harvest.sqf";
 	player_packTent =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packTent.sqf";
 	player_packVault =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packVault.sqf";
@@ -127,10 +127,10 @@ if (!isDedicated) then {
 	player_hasTools =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_hasTools.sqf";
 	player_checkItems =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkItems.sqf";
 	player_removeItems =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_removeItems.sqf";
-	//Trader ["Trader City Name",false,"enter"] - Trader City Name | Show Message | "enter" or "leave"
+	//Trader ["Trader City Name",false,"enter"] - Trader City Name | Show Message | "enter" || "leave"
 	player_traderCity = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderCity.sqf";
 
-	// combination of check and remove items
+	// combination of check && remove items
 	player_checkAndRemoveItems = {
 		private ["_items","_b"];
 		_items = _this;
@@ -155,7 +155,7 @@ if (!isDedicated) then {
 			if isNumber (_worth) then {
 				_total_currency = _total_currency + getNumber(_worth);
 			};
-		} forEach (magazines player);
+		} count (magazines player);
 		_total_currency
 	};
 
@@ -169,7 +169,7 @@ if (!isDedicated) then {
 					_trade_total = _trade_total + (getNumber(_part_inWorth) * (_x select 1));
 				};
 			};
-		} forEach _this;
+		} count _this;
 
 		//diag_log format["DEBUG TRADER ITEMCOST: %1", _this];
 		_trade_total
@@ -201,7 +201,7 @@ if (!isDedicated) then {
 			_ctrlBleed = 	_display displayCtrl 1303;
 			_ctrlBleed ctrlShow false;
 		};
-		if (!r_fracture_legs and !r_fracture_arms) then {
+		if (!r_fracture_legs && !r_fracture_arms) then {
 			_ctrlFracture = 	_display displayCtrl 1203;
 			_ctrlFracture ctrlShow false;
 		};
@@ -229,7 +229,7 @@ if (!isDedicated) then {
 			_tPos set [2,(_tPos select 2)+1];
 			_zPos set [2,(_zPos select 2)+1];
 
-			if ((count _tPos > 0) and (count _zPos > 0)) then {
+			if ((count _tPos > 0) && (count _zPos > 0)) then {
 				_cantSee = terrainIntersectASL [_tPos, _zPos];
 				if (!_cantSee) then {
 					_cantSee = lineIntersects [_tPos, _zPos, _agent, vehicle _target];
@@ -249,7 +249,7 @@ if (!isDedicated) then {
 		_success = true;
 		{
 			if (_x > 0) then {_success = false};
-		} forEach _diff;
+		} count _diff;
 		hint format["Config: %5\nEmpty: %1\nNeeded: %2\nDiff: %3\nSuccess: %4",_empty,_needed,_diff,_success,_config];
 		_success
 	};
@@ -259,7 +259,7 @@ if (!isDedicated) then {
 		_counter = 0;
 		{
 			_counter = _counter + _x;
-		} forEach _this;
+		} count _this;
 		_counter
 	};
 
@@ -378,7 +378,7 @@ if (!isDedicated) then {
 		{
 			if (58 == _objInfo select _i) exitWith {};
 			_i = _i + 1;
-		} forEach _objInfo;
+		} count _objInfo;
 		_i = _i + 2; // skip the ": " part
 		for "_k" from _i to _lenInfo do {
 			_objName set [(count _objName), (_objInfo select _k)];
@@ -398,7 +398,7 @@ if (!isDedicated) then {
 				_playerDistance = player distance _this;
 				{
 					if (_playerDistance > (_x distance _this)) exitWith { _notClosest = true; };
-				} forEach _nearPlayers;
+				} count _nearPlayers;
 			};
 		} else {
 			_notClosest = false;
@@ -493,9 +493,9 @@ if (!isDedicated) then {
 	object_setFixServer =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_setFixServer.sqf";	//process the hit as a NORMAL damage (useful for persistent vehicles)
 	object_getHit =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_getHit.sqf";			//gets the hit value for a HitPoint (i.e. HitLegs) against the selection (i.e. "legs"), returns the value
 	object_setHit =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_setHit.sqf";			//process the hit as a NORMAL damage (useful for persistent vehicles)
-	object_processHit =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_processHit.sqf";		//process the hit in the REVO damage system (records and sets hit)
+	object_processHit =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_processHit.sqf";		//process the hit in the REVO damage system (records && sets hit)
 	object_delLocal =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_delLocal.sqf";
-	// object_cargoCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_cargoCheck.sqf";		//Run by the player or server to monitor changes in cargo contents
+	// object_cargoCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_cargoCheck.sqf";		//Run by the player || server to monitor changes in cargo contents
 	fnc_usec_damageHandler =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
 	fnc_veh_ResetEH = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\init\veh_ResetEH.sqf";			//Initialize vehicle
 	// Vehicle damage fix
@@ -508,12 +508,12 @@ if (!isDedicated) then {
 	fnc_isInsideBuilding3 = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_isInsideBuilding3.sqf";	//_isInside = [_unit,_building] call fnc_isInsideBuilding3;
 	dayz_zombieSpeak = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_speak.sqf";			//Used to generate random speech for a unit
 	vehicle_getHitpoints =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_getHitpoints.sqf";
-	local_gutObject =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_gutObject.sqf";		//Generated on the server (or local to unit) when gutting an object
+	local_gutObject =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_gutObject.sqf";		//Generated on the server (|| local to unit) when gutting an object
 	local_lockUnlock =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lockUnlock.sqf";		//When vehicle is local to unit perform locking vehicle
-	local_gutObjectZ =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_gutObjectZ.sqf";		//Generated on the server (or local to unit) when gutting an object
+	local_gutObjectZ =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_gutObjectZ.sqf";		//Generated on the server (|| local to unit) when gutting an object
 	local_zombieDamage = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandlerZ.sqf";		//Generated by the client who created a zombie to track damage
 	local_eventKill = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_eventKill.sqf";		//Generated when something is killed
-	//player_weaponCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_weaponCheck.sqf";	//Run by the player or server to monitor whether they have picked up a new weapon
+	//player_weaponCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_weaponCheck.sqf";	//Run by the player || server to monitor whether they have picked up a new weapon
 	curTimeStr =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_curTimeStr.sqf";
 	player_medBandage =			compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 	player_medInject =			compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\publicEH\medInject.sqf";
@@ -522,7 +522,7 @@ if (!isDedicated) then {
 	player_medMorphine =			compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
 	player_breaklegs =			compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\publicEH\medBreakLegs.sqf";
 	player_medPainkiller =			compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
-	world_isDay = 				{if ((daytime < (24 - dayz_sunRise)) and (daytime > dayz_sunRise)) then {true} else {false}};
+	world_isDay = 				{if ((daytime < (24 - dayz_sunRise)) && (daytime > dayz_sunRise)) then {true} else {false}};
 	player_humanityChange =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_humanityChange.sqf";
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot.sqf";
 	spawn_loot_small = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot_small.sqf";
@@ -579,7 +579,7 @@ if (!isDedicated) then {
                         _space = floor((_slotsEmpty select _c) / _x);
                 };
                 _c = _c + 1;
-        } forEach _slotsItem;
+        } count _slotsItem;
         _space
 	};
 
@@ -590,7 +590,7 @@ if (!isDedicated) then {
 		_inVehicle = (_vehicle != player);
 		if(_inVehicle) then {
 			_noDriver = ((_vehicle emptyPositions "driver") > 0);
-			if (_noDriver and (speed _vehicle) != 0) then {
+			if (_noDriver && (speed _vehicle) != 0) then {
 				player action [ "eject", _vehicle];
 			};
 		};
@@ -605,7 +605,7 @@ if (!isDedicated) then {
 				if (_character getVariable[_x,false]) then {
 					_wounds set [count _wounds,_x];
 				};
-			} forEach USEC_typeOfWounds;
+			} count USEC_typeOfWounds;
 		};
 		_legs = _character getVariable ["hit_legs",0];
 		_arms = _character getVariable ["hit_arms",0];

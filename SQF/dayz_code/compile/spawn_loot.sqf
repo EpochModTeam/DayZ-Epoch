@@ -8,7 +8,7 @@ _uniq = [];
 _item = objNull;
 
 _iPosZ = _iPos select 2;
-if((isNil "_iPosZ") OR {( _iPosZ < 0)}) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
+if((isNil "_iPosZ") || {( _iPosZ < 0)}) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
 if (isNil "_iClass") exitWith {diag_log "_iClass isNil, exiting loot spawn!";};
 
 switch (_iClass) do {
@@ -17,11 +17,11 @@ switch (_iClass) do {
 		if (DZE_MissionLootTable) then {
 			{
 				_itemTypes set [count _itemTypes, _x select 0]
-			} foreach getArray (missionConfigFile >> "cfgLoot" >> _iClass);
+			} count getArray (missionConfigFile >> "cfgLoot" >> _iClass);
 		} else {
 			{
 				_itemTypes set [count _itemTypes, _x select 0]
-			} foreach getArray (configFile >> "cfgLoot" >> _iClass);
+			} count getArray (configFile >> "cfgLoot" >> _iClass);
 		};
 		_qty = 0;
 		_max = ceil(random 2) + 1;
@@ -101,12 +101,12 @@ switch (_iClass) do {
 		if (DZE_MissionLootTable) then{
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} foreach getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+			} count getArray(missionConfigFile >> "cfgLoot" >> _iClass);
 		}
 		else {
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} foreach getArray(configFile >> "cfgLoot" >> _iClass);
+			} count getArray(configFile >> "cfgLoot" >> _iClass);
 		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
@@ -139,12 +139,12 @@ switch (_iClass) do {
 		if (DZE_MissionLootTable) then{
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} foreach getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+			} count getArray(missionConfigFile >> "cfgLoot" >> _iClass);
 		}
 		else {
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} foreach getArray(configFile >> "cfgLoot" >> _iClass);
+			} count getArray(configFile >> "cfgLoot" >> _iClass);
 		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
@@ -158,7 +158,7 @@ switch (_iClass) do {
 			_iItem = ["ChainSaw","ChainSawB","ChainSawG","ChainSawP","ChainSawR"] call BIS_fnc_selectRandom;
 		};
 
-		//Item is a weapon, add it and a random quantity of magazines
+		//Item is a weapon, add it && a random quantity of magazines
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
@@ -174,7 +174,7 @@ switch (_iClass) do {
 	};
 	case "weapon":
 	{
-		//Item is a weapon, add it and a random quantity of magazines
+		//Item is a weapon, add it && a random quantity of magazines
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
@@ -194,7 +194,7 @@ switch (_iClass) do {
 	};
 	case "weaponnomags":
 	{
-		//Item is a weapon, and spawns no mags
+		//Item is a weapon, && spawns no mags
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
 	};

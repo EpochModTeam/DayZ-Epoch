@@ -1,18 +1,18 @@
 /************************************************************
-Set Pitch and Bank
-By General Barron ([EMAIL=aw_barron@hotmail.com]aw_barron@hotmail.com[/EMAIL]) and vektorboson
+Set Pitch && Bank
+By General Barron ([EMAIL=aw_barron@hotmail.com]aw_barron@hotmail.com[/EMAIL]) && vektorboson
 
 Parameters: [object, pitch, bank]
 Returns: nothing
 
-Rotates an object, giving it the specified pitch and bank,
+Rotates an object, giving it the specified pitch && bank,
 in degrees.
 
 Pitch is 0 when the object is level; 90 when pointing straight
-up; and -90 when pointing straight down.
+up; && -90 when pointing straight down.
 
 Bank is 0 when level; 90 when the object is rolled to the right,
--90 when rolled to the left, and 180 when rolled upside down.
+-90 when rolled to the left, && 180 when rolled upside down.
 
 Note that the object's yaw can be set with the setdir command,
 which should be issued before using this function, if required.
@@ -83,7 +83,7 @@ _yaw = 360-(getdir _obj);
 //use bank to flip upside down
 _bank = _bank + 180;
 
-//and adjust our original pitch
+//&& adjust our original pitch
 _pitch = (180 - abs _pitch)*_sign;
 };
 

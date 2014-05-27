@@ -16,7 +16,7 @@ TraderDialogLoadItemList = {
 	TraderItemList = -1;
 	_index = _this select 0;
 
-	if (_index < 0 or TraderCurrentCatIndex == _index) exitWith {};
+	if (_index < 0 || TraderCurrentCatIndex == _index) exitWith {};
 	TraderCurrentCatIndex = _index;
 
 	_trader_id = TraderCatList select _index;
@@ -163,7 +163,7 @@ TraderDialogLoadItemList = {
 			_header,
 			_File
 		]];
-	} forEach PVDZE_plr_TradeMenuResult;
+	} count PVDZE_plr_TradeMenuResult;
 	TraderItemList = _item_list;
 };
 

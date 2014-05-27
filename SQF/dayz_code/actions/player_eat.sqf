@@ -70,12 +70,12 @@ if (_hasoutput && _invehicle) then {
 	(vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
 };
 
-if (_rawfood and !_rawexceptions and (random 15 < 1)) then {
+if (_rawfood && !_rawexceptions && (random 15 < 1)) then {
 	r_player_infected = true;
 	player setVariable["USEC_infected",true,true];
 };
 
-if (_badfood and (random 2 < 1)) then {
+if (_badfood && (random 2 < 1)) then {
 	r_player_infected = true;
 	player setVariable["USEC_infected",true,true];
 };

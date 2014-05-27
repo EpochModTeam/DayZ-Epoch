@@ -43,7 +43,7 @@ while {r_doLoop} do {
 	if (_isMedic) then {
 		_started = true;
 	};
-	if (_started and !_isMedic) then {
+	if (_started && !_isMedic) then {
 		r_doLoop = false;
 		_finished = true;
 	};
@@ -134,7 +134,7 @@ if (_finished) then {
 
 				waitUntil {!isNil "_isOk"};
 
-				if (_isOk and _isKeyOK) then {
+				if (_isOk && _isKeyOK) then {
 
 					_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
 					if (_done) then {
@@ -205,10 +205,10 @@ if (_finished) then {
 						_tireDmg = _tireDmg + _damage;
 						_tires = _tires + 1;
 					};
-				} forEach _hitpoints;
+				} count _hitpoints;
 
 				// find average tire damage
-				if(_tireDmg > 0 and _tires > 0) then {
+				if(_tireDmg > 0 && _tires > 0) then {
 					if((_tireDmg / _tires) > 0.75) then {
 						_okToSell = false;
 					};
@@ -220,7 +220,7 @@ if (_finished) then {
 
 				_notSetup = (_objectID == "0" && _objectUID == "0");
 
-				if(local _obj and !isNull _obj and alive _obj and !_notSetup) then {
+				if(local _obj && !isNull _obj && alive _obj && !_notSetup) then {
 
 					if(_okToSell) then {
 
@@ -240,7 +240,7 @@ if (_finished) then {
 									[_activatingPlayer,_x] call BIS_fnc_invRemove;
 								};
 							};
-						} forEach (items _activatingPlayer);
+						} count (items _activatingPlayer);
 
 						// payout
 						_canAfford = [[[_part_out,_qty_out]],1] call epoch_returnChange;

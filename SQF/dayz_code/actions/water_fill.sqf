@@ -29,7 +29,7 @@ if (!_canFill) then {
 		//Check for Well
 		_isWell = ["_well",str(_x),false] call fnc_inString;
 		if (_isWell) then {_canFill = true};
-	} forEach _objectsWell;
+	} count _objectsWell;
 };
 
 if (!_canFill) then {
@@ -43,7 +43,7 @@ if (!_canFill) then {
 				_canFill = true;
 			};
 		};
-	} forEach _objectsPond;
+	} count _objectsPond;
 };
 
 if (_canFill) then {

@@ -56,29 +56,29 @@ _newUnit 	setPosATL _position;
 _newUnit 	setDir _dir;
 
 //Clear New Character
-{_newUnit removeMagazine _x;} forEach  magazines _newUnit;
+{_newUnit removeMagazine _x;} count  magazines _newUnit;
 removeAllWeapons _newUnit;	
 
 //Equip New Charactar
 {
 	if (typeName _x == "ARRAY") then {if ((count _x) > 0) then {_newUnit addMagazine [(_x select 0), (_x select 1)]; }; } else { _newUnit addMagazine _x; };
-} forEach _magazines;
+} count _magazines;
 
 {
 	_newUnit addWeapon _x;
-} forEach _weapons;
+} count _weapons;
 
-//Check and Compare it
+//Check && Compare it
 if(str(_weapons) != str(weapons _newUnit)) then {
 	//Get Differecnce
 	{
 		_weapons = _weapons - [_x];
-	} forEach (weapons _newUnit);
+	} count (weapons _newUnit);
 	
 	//Add the Missing
 	{
 		_newUnit addWeapon _x;
-	} forEach _weapons;
+	} count _weapons;
 };
 
 if(_primweapon !=  (primaryWeapon _newUnit)) then {
@@ -108,11 +108,11 @@ _switchUnit = {
 	setPlayable _newUnit;
 	selectPlayer _newUnit;
 	removeAllWeapons _oldUnit;
-	{_oldUnit removeMagazine _x;} forEach  magazines _oldUnit;
+	{_oldUnit removeMagazine _x;} count  magazines _oldUnit;
 	deleteVehicle _oldUnit;
 	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 };
-//Add and Fill BackPack
+//Add && Fill BackPack
 if (!isNil "_newBackpackType") then {
 	if (_newBackpackType != "") then {
 		_newUnit addBackpack _newBackpackType;
@@ -140,13 +140,13 @@ if (!isNil "_newBackpackType") then {
 					(unitBackpack player) addMagazineCargoGlobal [_x, 1];
 				};
 			};
-		} forEach _backpackMag;
+		} count _backpackMag;
 		(findDisplay 106) closeDisplay 0;
 		_countr = 0;
 		{
 			(unitBackpack player) addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];
 			_countr = _countr + 1;
-		} forEach _backpackWpnTypes;
+		} count _backpackWpnTypes;
 	} else { [] call _switchUnit; };
 } else { [] call _switchUnit; };
 [objNull, player, rSwitchMove,_currentAnim] call RE;
@@ -171,4 +171,4 @@ if (_ismelee == "true") then {
 };
 
 //reveal the same objects we do on login
-{player reveal _x} forEach (nearestObjects [getPosATL player, dayz_reveal, 50]);
+{player reveal _x} count (nearestObjects [getPosATL player, dayz_reveal, 50]);

@@ -42,7 +42,7 @@ if (_button == 1) then {
 			/*
 				This flag means that the action is output oriented
 				the output class will then be transferred to the script
-				and the type used for the name
+				&& the type used for the name
 			*/			
 			_array = 	getArray	(_config >> "output");
 			_outputClass = _array select 0;

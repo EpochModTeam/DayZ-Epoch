@@ -5,7 +5,7 @@ _playerObj = nil;
 _playerPos = [];
 {
 	if ((getPlayerUID _x) == _playerUID) exitWith {_playerObj = _x;};
-} forEach playableUnits;
+} count playableUnits;
 
 if (isNil "_playerObj") then {
 	diag_log format["nil player object attempting PV, :%1", _this];
@@ -53,7 +53,7 @@ if (!isNull _playerObj) then {
 
 	if (alive _playerObj) then {
 
-		_isplayernearby = (DZE_BackpackGuard and !_invehicle and ({(isPlayer _x) and (alive _x)} count (_playerPos nearEntities ["AllVehicles", 5]) > 1));
+		_isplayernearby = (DZE_BackpackGuard && !_invehicle && ({(isPlayer _x) && (alive _x)} count (_playerPos nearEntities ["AllVehicles", 5]) > 1));
 
 		// prevent saving more than 20 magazine items
 		_magazines = [(magazines _playerObj),20] call array_reduceSize;
@@ -66,6 +66,6 @@ if (!isNull _playerObj) then {
 		//Update Vehicle
 		{ 
 			[_x,"gear"] call server_updateObject;
-		} foreach (nearestObjects [_playerPos, dayz_updateObjects, 10]);
+		} count (nearestObjects [_playerPos, dayz_updateObjects, 10]);
 	};
 };

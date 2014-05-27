@@ -69,9 +69,9 @@ if (_foodLvl < 0) then { _foodLvl = 0 };
 _food = "\z\addons\dayz_code\gui\status_food_inside_" + str(_foodLvl) + "_ca.paa";
 
 if ( _tempLvl >= 36 )							then { _tempImg = 4 };
-if ( _tempLvl > 33 and _tempLvl < 36 )			then { _tempImg = 3 };
-if ( _tempLvl >= 30 and _tempLvl <= 33 )		then { _tempImg = 2 };
-if ( _tempLvl > 28 and _tempLvl < 30 )			then { _tempImg = 1 };
+if ( _tempLvl > 33 && _tempLvl < 36 )			then { _tempImg = 3 };
+if ( _tempLvl >= 30 && _tempLvl <= 33 )		then { _tempImg = 2 };
+if ( _tempLvl > 28 && _tempLvl < 30 )			then { _tempImg = 1 };
 if ( _tempLvl <= 28 )							then { _tempImg = 0 };
 
 _temp = "\z\addons\dayz_code\gui\status_temp_" + str(_tempImg) + "_ca.paa";
@@ -142,7 +142,7 @@ Opt-in tag system with friend tagging
 _targetControl = _display displayCtrl 1199;
 _string = "";
 _humanityTarget = cursorTarget;
-if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarget) then {
+if (!isNull _humanityTarget && isPlayer _humanityTarget && alive _humanityTarget) then {
 
 	_distance = (player distance _humanityTarget);
 
@@ -150,7 +150,7 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 		
 		_size = (1-(floor(_distance/5)*0.1)) max 0.1;
 
-		// Display name if player opt-in or if friend
+		// Display name if player opt-in || if friend
 		_friendlies = player getVariable ["friendlies", []];
 		_charID = player getVariable ["CharacterID", "0"];
 
@@ -158,7 +158,7 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 		_rfriendlies = _humanityTarget getVariable ["friendlies", []];
 		_rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
 			
-		if ((_rcharID in _friendlies) and (_charID in _rfriendlies)) then {
+		if ((_rcharID in _friendlies) && (_charID in _rfriendlies)) then {
 
 			if (!(_charID in _rfriendlyTo)) then {
 
@@ -189,7 +189,7 @@ if (!isNull _humanityTarget and isPlayer _humanityTarget and alive _humanityTarg
 					_color = "color='#3333ff'";
 				};
 			};
-			if((_humanityTarget getVariable ["DZE_display_name", false]) or (DZE_ForceNameTagsInTrader && isInTraderCity)) then {
+			if((_humanityTarget getVariable ["DZE_display_name", false]) || (DZE_ForceNameTagsInTrader && isInTraderCity)) then {
 				_humanityName = if (alive _humanityTarget) then {name _humanityTarget; } else { "Dead Player";};
 				_string = format["<t %2 align='center' size='%3'>%1</t>",_humanityName,_color,_size];
 			};

@@ -15,7 +15,7 @@ _text = 		getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName"
 
 
 // Silently exit if object no longer exists
-if(isNull _obj or !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
+if(isNull _obj || !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
 
 _playerNear = _obj call dze_isnearest_player;
 
@@ -30,7 +30,7 @@ s_player_packvault = 1;
 
 if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_118"),_text], "PLAIN DOWN"];};
 
-if((_ownerID != dayz_combination) and (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
+if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
 
 _alreadyPacking = _obj getVariable["packing",0];
 
@@ -54,7 +54,7 @@ if(_location1 distance _location2 > 0.1) exitWith {
 _dir = direction _obj;
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
-if(!isNull _obj and alive _obj) then {
+if(!isNull _obj && alive _obj) then {
 
 	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
@@ -94,7 +94,7 @@ if(!isNull _obj and alive _obj) then {
 	{
 		_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 	
 	//Add Magazines
 	_objWpnTypes = _magazines select 0;
@@ -103,7 +103,7 @@ if(!isNull _obj and alive _obj) then {
 	{
 		_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 
 	//Add Backpacks
 	_objWpnTypes = _backpacks select 0;
@@ -112,7 +112,7 @@ if(!isNull _obj and alive _obj) then {
 	{
 		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 	
 	cutText [format[(localize "str_epoch_player_123"),_text], "PLAIN DOWN"];
 

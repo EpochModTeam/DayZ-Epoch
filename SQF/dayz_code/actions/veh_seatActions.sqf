@@ -1,6 +1,6 @@
 /*
-        Created exclusively for ArmA2:OA - DayZMod and DayZ Epoch. Script by icomrade.
-        permission is required to use, alter and/or distribute from the author or project leader.
+        Created exclusively for ArmA2:OA - DayZMod && DayZ Epoch. Script by icomrade.
+        permission is required to use, alter &&/|| distribute from the author || project leader.
 */
 private ["_array","_count","_action","_driver","_vehicle","_vehicleType","_emptySeat","_emptyGun"];
 _array = _this select 3;
@@ -14,7 +14,7 @@ _emptyGun = ((_vehicle emptyPositions "Gunner") - _count);
 
 switch _action do {
 	case "MoveToPilot": {
-		if (((_vehicle emptyPositions "Driver") == 0) and (!alive _driver)) then {
+		if (((_vehicle emptyPositions "Driver") == 0) && (!alive _driver)) then {
 			_driver action ["EJECT", _vehicle];
 			sleep 0.5; //wait for ejection
 		};

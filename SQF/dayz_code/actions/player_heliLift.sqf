@@ -38,7 +38,7 @@ while {r_doLoop} do {
 	_height = (_posL select 2) - (_posC select 2);
 	/*
 	if(_height < 20) then {
-		if(((abs((_posL select 0) - (_posC select 0))) < 10) and ((abs((_posL select 1) - (_posC select 1))) < 10)) then {
+		if(((abs((_posL select 0) - (_posC select 0))) < 10) && ((abs((_posL select 1) - (_posC select 1))) < 10)) then {
 			_moved = true;
 		};
 	} else {
@@ -57,7 +57,7 @@ while {r_doLoop} do {
 		r_doLoop = false; 
 		_finished = true; 
 	};
-	if (r_interrupt or _moved or (typeName _attached == "OBJECT") or (typeName _hasAttached == "OBJECT")) then {
+	if (r_interrupt || _moved || (typeName _attached == "OBJECT") || (typeName _hasAttached == "OBJECT")) then {
 		r_doLoop = false; 
 	};
 	sleep 0.1;
@@ -90,10 +90,10 @@ if(_finished) then {
 		player playActionNow "stop";
 		cutText [format["the lift heli moved to much from the vehicle that was being lifted!"], "PLAIN DOWN"]; //display text at bottom center of screen on interrupt
 	} else {
-		if((typeName _attached == "OBJECT") or (typeName _hasAttached == "OBJECT")) then {
+		if((typeName _attached == "OBJECT") || (typeName _hasAttached == "OBJECT")) then {
 			player switchMove "";
 			player playActionNow "stop";
-			cutText [format["Another vehicle was attached or the vehicle was attached to another heli!"], "PLAIN DOWN"]; //display text at bottom center of screen on interrupt
+			cutText [format["Another vehicle was attached || the vehicle was attached to another heli!"], "PLAIN DOWN"]; //display text at bottom center of screen on interrupt
 		} else {
 			r_interrupt = false;
 			player switchMove "";

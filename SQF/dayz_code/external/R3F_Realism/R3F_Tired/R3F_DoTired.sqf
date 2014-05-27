@@ -88,7 +88,7 @@ while {true} do {
 		
 		[_level] call R3F_TIRED_FNCT_Voile_Noir;
 		
-		if (R3F_TIRED_Accumulator  > R3F_TIRED_BLACKOUT_LEVEL and scriptDone R3F_TIRED_Handle_Blackout_Effect and scriptDone R3F_TIRED_Handle_Blur_Effect) then {
+		if (R3F_TIRED_Accumulator  > R3F_TIRED_BLACKOUT_LEVEL && scriptDone R3F_TIRED_Handle_Blackout_Effect && scriptDone R3F_TIRED_Handle_Blur_Effect) then {
 			R3F_TIRED_Handle_Blackout_Effect = [] spawn R3F_TIRED_FNCT_DoBlackVanish;
 		};
 	} else {	

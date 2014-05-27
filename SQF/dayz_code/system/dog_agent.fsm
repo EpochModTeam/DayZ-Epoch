@@ -107,7 +107,7 @@ item102[] = {"target_lost",4,218,525.000000,-475.000000,625.000000,-425.000000,0
 item103[] = {"target_dead",4,218,525.000000,-525.000000,625.000000,-475.000000,0.000000,"target dead"};
 item104[] = {"",7,210,696.000000,-154.000000,704.000000,-146.000000,0.000000,""};
 item105[] = {"find_target",4,218,350.000000,-275.000000,450.000000,-225.000000,1.000000,"find target"};
-item106[] = {"DayZ_Dog_Agent_FSM",-1,250,-475.000000,-625.000000,-75.000000,-425.000000,0.000000,"DayZ Dog Agent FSM" \n "Created by Rocket and Alby"};
+item106[] = {"DayZ_Dog_Agent_FSM",-1,250,-475.000000,-625.000000,-75.000000,-425.000000,0.000000,"DayZ Dog Agent FSM" \n "Created by Rocket && Alby"};
 item107[] = {"____FAKE____",9,4280,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 version=1;
 class LayoutItems
@@ -314,7 +314,7 @@ class FSM
           priority = 0.000000;
           to="action_init";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"dayz_clientPreload and (!isNil ""_handle"")"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"dayz_clientPreload && (!isNil ""_handle"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -435,7 +435,7 @@ class FSM
           priority = 0.000000;
           to="Sitting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > _idleTime) and _standing"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > _idleTime) && _standing"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_standing = false;" \n
            "if (!_watchDog) then {" \n
            "	_move = ""Dog_LieDown"";" \n
@@ -605,7 +605,7 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command != ""stay"""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"if (_command == ""return"") then {" \n
-           "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
+           "	if ((player distance _dog > 5) && (_watchDog)) then {" \n
            "		_dog playActionNow ""GestureBark"";" \n
            "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
            "	};" \n
@@ -655,7 +655,7 @@ class FSM
           priority = 4.000000;
           to="Waiting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"isNull _target and ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNull _target && ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -680,7 +680,7 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command != ""track"""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"if (_command == ""return"") then {" \n
-           "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
+           "	if ((player distance _dog > 5) && (_watchDog)) then {" \n
            "		_dog playActionNow ""GestureBark"";" \n
            "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
            "	};" \n
@@ -694,7 +694,7 @@ class FSM
           to="Tracking";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((time - _waitTime) > 0.5)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"if ((random 1) < 0.3 and (time - _coolDown > 4) and _dog distance _target > 10 ) then {" \n
+          action=/*%FSM<ACTION""">*/"if ((random 1) < 0.3 && (time - _coolDown > 4) && _dog distance _target > 10 ) then {" \n
            "	_dog playActionNow ""GestureSniff"";" \n
            "	_coolDown = time;" \n
            "};"/*%FSM</ACTION""">*/;
@@ -739,7 +739,7 @@ class FSM
           priority = 4.000000;
           to="Waiting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"isNull _target and ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNull _target && ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_command = ""none"";"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -749,7 +749,7 @@ class FSM
           priority = 1.000000;
           to="Tracking";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!isNull _target and ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isNull _target && ((time - _waitTime) > 2)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastPos = [_dog] call FNC_GetPos;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -932,7 +932,7 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command != ""none"""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"if (_command == ""return"") then {" \n
-           "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
+           "	if ((player distance _dog > 5) && (_watchDog)) then {" \n
            "		_dog playActionNow ""GestureBark"";" \n
            "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
            "	};" \n
@@ -1044,7 +1044,7 @@ class FSM
           to="Waiting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_command == ""return"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"if ((player distance _dog > 5) and (_watchDog)) then {" \n
+          action=/*%FSM<ACTION""">*/"if ((player distance _dog > 5) && (_watchDog)) then {" \n
            "	_dog playActionNow ""GestureBark"";" \n
            "	[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
            "};"/*%FSM</ACTION""">*/;
@@ -1115,7 +1115,7 @@ class FSM
            "_dog setVariable [""state"", ""passive"", true];" \n
            "" \n
            "if (_command == ""return"") then {" \n
-           "	if ((player distance _dog > 5) and (_watchDog)) then {" \n
+           "	if ((player distance _dog > 5) && (_watchDog)) then {" \n
            "		_dog playActionNow ""GestureBark"";" \n
            "		[_dog,""dog_bark"",0,false] call dayz_zombieSpeak;" \n
            "	};" \n

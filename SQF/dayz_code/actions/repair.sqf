@@ -20,7 +20,7 @@ _namePart = 		getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
 s_player_repair_crtl = 1;
 
-if (_section and _hasToolbox) then {
+if (_section && _hasToolbox) then {
 
 	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
@@ -42,7 +42,7 @@ if (_section and _hasToolbox) then {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -70,7 +70,7 @@ if (_section and _hasToolbox) then {
 				//Fix the part
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 		
-				//vehicle is owned by whoever is in it, so we have to have each client try and fix it
+				//vehicle is owned by whoever is in it, so we have to have each client try && fix it
 				PVDZE_veh_SFix = [_vehicle,_selection,0];
 				publicVariable "PVDZE_veh_SFix";
 				if (local _vehicle) then {
@@ -99,7 +99,7 @@ if (_section and _hasToolbox) then {
 	cutText [format[(localize "str_epoch_player_167"),_namePart], "PLAIN DOWN"];
 };
 
-{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 dayz_myCursorTarget = objNull;
 
 //check if repaired fully
@@ -110,7 +110,7 @@ _allFixed = true;
 	if (_damage > 0) exitWith {
 		_allFixed = false;
 	};
-} forEach _hitpoints;
+} count _hitpoints;
 
 //update if repaired
 if (_allFixed) then {

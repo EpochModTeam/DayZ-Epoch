@@ -44,7 +44,7 @@ if (_ammo isKindOf "SmokeShell") then {
 			_group setVariable ["targets",_targets,true];
 		};
 		_i = _i + 1;
-	} forEach _listTalk;
+	} count _listTalk;
 } else {
 	[_unit,_distance,true,(getPosATL player)] spawn player_alertZombies;
 	//Check if need to place arrow
@@ -65,11 +65,11 @@ if (_ammo isKindOf "SmokeShell") then {
 			_pos = getPosATL player;
 			_inRange = _pos nearEntities ["CAManBase",1250];
 			{
-				if(isPlayer _x and _x != player) then {
+				if(isPlayer _x && _x != player) then {
 					PVDZE_send = [_x,"RoadFlare",[_projectile,0]];
 					publicVariableServer "PVDZE_send";
 				};
-			} forEach _inRange;
+			} count _inRange;
 			
 			_id = _this spawn player_throwObject;
 		};
@@ -81,11 +81,11 @@ if (_ammo isKindOf "SmokeShell") then {
 			_pos = getPosATL player;
 			_inRange = _pos nearEntities ["CAManBase",1250];
 			{
-				if(isPlayer _x and _x != player) then {
+				if(isPlayer _x && _x != player) then {
 					PVDZE_send = [_x,"RoadFlare",[_projectile,1]];
 					publicVariableServer "PVDZE_send";
 				}
-			} forEach _inRange;
+			} count _inRange;
 			
 			_id = _this spawn player_throwObject;
 		};

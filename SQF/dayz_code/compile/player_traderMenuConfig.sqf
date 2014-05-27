@@ -175,7 +175,7 @@ TraderDialogLoadItemList = {
 			_header,
 			_File
 		]];
-	} forEach PVDZE_plr_TradeMenuResult;
+	} count PVDZE_plr_TradeMenuResult;
 	TraderItemList = _item_list;
 };
 

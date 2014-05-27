@@ -18,7 +18,7 @@ _index = 0;
 	_NV set [_index,(_NV select _index) + _x];
 
 	_index =_index + 1;
-} forEach _increase;
+} count _increase;
 
 // set rgb + m 
 player setVariable [_NVx, _NV];

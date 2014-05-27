@@ -9,7 +9,7 @@ _range = 500;
 _assigned = _group getVariable ["targets",[]];
 {
 	_group reveal [_x,4];
-} forEach _assigned;
+} count _assigned;
 
 //Find targets
 _targets = _lead nearTargets _range;
@@ -17,14 +17,14 @@ _targets = _lead nearTargets _range;
 	private["_obj","_dis"];
 	_obj = _x select 4;
 	_dis = _obj distance _lead;
-	if (_obj isKindOf "Man" and ((speed _obj) < 15)) then {
-		if (!(_obj isKindOf "zZombie_Base") and !(_obj in _targetMen)) then {
+	if (_obj isKindOf "Man" && ((speed _obj) < 15)) then {
+		if (!(_obj isKindOf "zZombie_Base") && !(_obj in _targetMen)) then {
 			//process man targets
 			_targetMen set [count _targetMen,_obj];
 			_targetDis set [count _targetDis,_dis];
 		};
 	};
-} forEach _targets;
+} count _targets;
 
 //Search for fires
 if (count _targetMen == 0) then {
@@ -32,15 +32,15 @@ if (count _targetMen == 0) then {
 	{
 		private["_dis"];
 		_dis = _x distance _lead;
-		if ((_dis < _range) and !(_x in _targetMen)) then {
+		if ((_dis < _range) && !(_x in _targetMen)) then {
 			_rnd = random 1;
 			if (_rnd < 0.5) then {
-				if ((inflamed _x) or (_x isKindOf "SmokeShell")) then {
+				if ((inflamed _x) || (_x isKindOf "SmokeShell")) then {
 					_targetMen set [count _targetMen,_x];
 					_targetDis set [count _targetDis,_dis];
 				} else {
 					if (_x isKindOf "Generator_DZ") then {
-						if (alive _x and (_x getVariable ["GeneratorRunning", false])) then {
+						if (alive _x && (_x getVariable ["GeneratorRunning", false])) then {
 							_targetMen set [count _targetMen,_x];
 							_targetDis set [count _targetDis,_dis];
 						};
@@ -48,7 +48,7 @@ if (count _targetMen == 0) then {
 				};
 			};
 		};
-	} forEach _fires;
+	} count _fires;
 };
 
 //Find best target
@@ -68,7 +68,7 @@ if (count _targetMen > 0) then {
 			_manDis = _dis;
 		};
 		_c = _c + 1;
-	} forEach _targetMen;
+	} count _targetMen;
 	_target = _man;
 };
 

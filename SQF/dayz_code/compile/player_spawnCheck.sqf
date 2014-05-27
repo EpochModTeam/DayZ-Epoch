@@ -13,7 +13,7 @@ _position = getPosATL player;
 dayz_spawnZombies = 0;
 dayz_CurrentZombies = 0;
 
-// experiment with adding fly sounds locally for both zombies and players.
+// experiment with adding fly sounds locally for both zombies && players.
 _soundLimit = 2;
 {
 	if (!alive _x) then {
@@ -23,7 +23,7 @@ _soundLimit = 2;
 		};
 	};
 	if (_soundLimit == 0) exitWith {};
-} foreach (nearestObjects [player, ["CAManBase"], 8]);
+} count (nearestObjects [player, ["CAManBase"], 8]);
 
 _players = _position nearEntities ["CAManBase",_radius+200];
 dayz_maxGlobalZombies = dayz_maxGlobalZombiesInit;
@@ -38,7 +38,7 @@ dayz_maxGlobalZombies = dayz_maxGlobalZombiesInit;
 			dayz_CurrentZombies = dayz_CurrentZombies + 1;
 		};
 	};
-} foreach _players;
+} count _players;
 
 if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
@@ -89,7 +89,7 @@ _nearby = _position nearObjects ["building",_radius];
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith
 {
-	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
+	if ((dayz_spawnZombies < _maxWildZombies) && !_inVehicle)  then {
 		[_position] call wild_spawnZombies;
 	};
 };
@@ -108,19 +108,19 @@ if (_nearbyCount < 1) exitwith
 		_dis = _x distance player;
 
 		//Loot
-		if ((_dis < 120) and (_dis > 30) and !_inVehicle) then {
+		if ((_dis < 120) && (_dis > 30) && !_inVehicle) then {
 			_looted = (_x getVariable ["looted",-0.1]);
 			_cleared = (_x getVariable ["cleared",true]);
 			_dateNow = (DateToNumber date);
 			_age = (_dateNow - _looted) * 525948;
 			//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
-			if ((_age > DZE_LootSpawnTimer) and (!_cleared)) then {
+			if ((_age > DZE_LootSpawnTimer) && (!_cleared)) then {
 				_nearByObj = nearestObjects [(getPosATL _x), ["WeaponHolder","WeaponHolderBase"],((sizeOf _type)+5)];
-				{deleteVehicle _x} forEach _nearByObj;
+				{deleteVehicle _x} count _nearByObj;
 				_x setVariable ["cleared",true,true];
 				_x setVariable ["looted",_dateNow,true];
 			};
-			if ((_age > DZE_LootSpawnTimer) and (_cleared)) then {
+			if ((_age > DZE_LootSpawnTimer) && (_cleared)) then {
 				//Register
 				_x setVariable ["looted",_dateNow,true];
 				//cleanup
@@ -150,4 +150,4 @@ if (_nearbyCount < 1) exitwith
 			};
 		};
 	};
-} forEach _nearby;
+} count _nearby;

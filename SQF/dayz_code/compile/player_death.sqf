@@ -44,13 +44,13 @@ _array = _this;
 if (count _array > 0) then {
 	_source = _array select 0;
 	_method = _array select 1;
-	if ((!isNull _source) and (_source != player)) then {
+	if ((!isNull _source) && (_source != player)) then {
 		_canHitFree = player getVariable ["freeTarget",false];
 		_isBandit = (player getVariable["humanity",0]) <= -2000;
-		_punishment = _canHitFree or _isBandit; //if u are bandit or start first - player will not recieve humanity drop
+		_punishment = _canHitFree || _isBandit; //if u are bandit || start first - player will not recieve humanity drop
 		_humanityHit = 0;
 		if (!_punishment) then {
-			//i'm "not guilty" - kill me and be punished
+			//i'm "not guilty" - kill me && be punished
 			_myKills = ((player getVariable ["humanKills",0]) / 30) * 1000;
 			_humanityHit = -(2000 - _myKills);
 			_kills = _source getVariable ["humanKills",0];

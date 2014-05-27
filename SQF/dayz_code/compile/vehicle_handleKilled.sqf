@@ -7,7 +7,7 @@ _hitPoints = _unit call vehicle_getHitpoints;
 {
 	_selection = getText (configFile >> "CfgVehicles" >> (typeof _unit) >> "HitPoints" >> _x >> "name");
 	_unit setVariable [_selection, 1, true];
-} forEach _hitPoints;
+} count _hitPoints;
 
 //["PVDZE_veh_Update",[_unit, "damage"]] call callRpcProcedure;
 if (isServer) then {

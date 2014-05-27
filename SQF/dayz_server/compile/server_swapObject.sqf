@@ -38,7 +38,7 @@ if(_objectID == "0" && _objectUID == "0") then {
 };
 
 _allowed = [_object, "Server"] call check_publishobject;
-if (!_allowed or !_proceed) exitWith { 
+if (!_allowed || !_proceed) exitWith { 
 	if(!isNull(_object)) then {
 		deleteVehicle _object; 
 	};

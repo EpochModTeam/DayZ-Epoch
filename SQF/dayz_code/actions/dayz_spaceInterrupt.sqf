@@ -7,7 +7,7 @@ if (_dikCode in[0x02,0x03,0x04,0x58,0x57,0x44,0x43,0x42,0x41,0x40,0x3F,0x3E,0x3D
 	_handled = true;
 };
 
-if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3)) then {
+if ((_dikCode == 0x3E || _dikCode == 0x0F || _dikCode == 0xD3)) then {
 	if(diag_tickTime - dayz_lastCheckBit > 10) then {
 		dayz_lastCheckBit = diag_tickTime;
 		call dayz_forceSave;
@@ -31,9 +31,9 @@ if (_dikCode in actionKeys "Surrender") then {
 	_vehicle = vehicle player;
 	_inVehicle = (_vehicle != player);
 	_onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-	_canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder and !_inVehicle);
+	_canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder && !_inVehicle);
 	
-	if (_canDo and !DZE_Surrender and !(player isKindOf  "PZombie_VB")) then {
+	if (_canDo && !DZE_Surrender && !(player isKindOf  "PZombie_VB")) then {
 		DZE_Surrender = true;
 		_dropPrimary = false;
 		_dropSecondary = false;
@@ -45,10 +45,10 @@ if (_dikCode in actionKeys "Surrender") then {
 			if ((getNumber (configFile >> "CfgWeapons" >> _x >> "Type")) == 2) exitWith {
 					_secondaryWeapon = _x;
 			};
-		} forEach (weapons player);
+		} count (weapons player);
 		if (_secondaryWeapon != "") then {_dropSecondary = true;};
 
-		if (_dropPrimary or _dropSecondary) then {
+		if (_dropPrimary || _dropSecondary) then {
 			player playActionNow "PutDown";
 			_iPos = getPosATL player;
 			_radius = 1;
@@ -85,15 +85,15 @@ if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true; if (DZE_Su
 if (_dikCode in actionKeys "MoveBack") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
 
 //Prevent exploit of drag body
-if ((_dikCode in actionKeys "Prone") and r_drag_sqf) exitWith { force_dropBody = true; };
-if ((_dikCode in actionKeys "Crouch") and r_drag_sqf) exitWith { force_dropBody = true; };
+if ((_dikCode in actionKeys "Prone") && r_drag_sqf) exitWith { force_dropBody = true; };
+if ((_dikCode in actionKeys "Crouch") && r_drag_sqf) exitWith { force_dropBody = true; };
 
 _shift = 	_this select 2;
 _ctrl = 	_this select 3;
 _alt =		_this select 4;
 
 //diag_log format["Keypress: %1", _this];
-if ((_dikCode in actionKeys "Gear") and (vehicle player != player) and !_shift and !_ctrl and !_alt && !dialog) then {
+if ((_dikCode in actionKeys "Gear") && (vehicle player != player) && !_shift && !_ctrl && !_alt && !dialog) then {
 			createGearDialog [player, "RscDisplayGear"];
 			_handled = true;
 };
@@ -117,59 +117,59 @@ if (_dikCode in (actionKeys "GetOver")) then {
 	};
 };
 //if (_dikCode == 57) then {_handled = true}; // space
-//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
+//if (_dikCode in actionKeys 'MoveForward' || _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
 if (_dikCode == 210) then {
 		_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 };
 
 if (_dikCode in actionKeys "ForceCommandingMode") then {_handled = true};
-if (_dikCode in actionKeys "PushToTalk" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+if (_dikCode in actionKeys "PushToTalk" && (diag_tickTime - dayz_lastCheckBit > 10)) then {
 	dayz_lastCheckBit = diag_tickTime;
 	[player,50,true,(getPosATL player)] spawn player_alertZombies;
 };
-if (_dikCode in actionKeys "VoiceOverNet" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+if (_dikCode in actionKeys "VoiceOverNet" && (diag_tickTime - dayz_lastCheckBit > 10)) then {
 	dayz_lastCheckBit = diag_tickTime;
 	[player,50,true,(getPosATL player)] spawn player_alertZombies;
 };
-if (_dikCode in actionKeys "PushToTalkDirect" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+if (_dikCode in actionKeys "PushToTalkDirect" && (diag_tickTime - dayz_lastCheckBit > 10)) then {
 	dayz_lastCheckBit = diag_tickTime;
 	[player,15,false,(getPosATL player)] spawn player_alertZombies;
 };
-if (_dikCode in actionKeys "Chat" and (diag_tickTime - dayz_lastCheckBit > 10)) then {
+if (_dikCode in actionKeys "Chat" && (diag_tickTime - dayz_lastCheckBit > 10)) then {
 	dayz_lastCheckBit = diag_tickTime;
 	[player,15,false,(getPosATL player)] spawn player_alertZombies;
 };
-if (_dikCode in actionKeys "User20" and (diag_tickTime - dayz_lastCheckBit > 5)) then {
+if (_dikCode in actionKeys "User20" && (diag_tickTime - dayz_lastCheckBit > 5)) then {
 	dayz_lastCheckBit = diag_tickTime;
 	_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 };
 
 // numpad 8 0x48 now pgup 0xC9 1
-if ((_dikCode == 0xC9 and (!_alt or !_ctrl)) or (_dikCode in actionKeys "User15")) then {
+if ((_dikCode == 0xC9 && (!_alt || !_ctrl)) || (_dikCode in actionKeys "User15")) then {
 	DZE_Q = true;
 };
 // numpad 2 0x50 now pgdn 0xD1
-if ((_dikCode == 0xD1 and (!_alt or !_ctrl)) or (_dikCode in actionKeys "User16")) then {
+if ((_dikCode == 0xD1 && (!_alt || !_ctrl)) || (_dikCode in actionKeys "User16")) then {
 	DZE_Z = true;
 };
 
 
 // numpad 8 0x48 now pgup 0xC9 0.1
-if ((_dikCode == 0xC9 and (_alt and !_ctrl)) or (_dikCode in actionKeys "User13")) then {
+if ((_dikCode == 0xC9 && (_alt && !_ctrl)) || (_dikCode in actionKeys "User13")) then {
 	DZE_Q_alt = true;
 };
 // numpad 2 0x50 now pgdn 0xD1
-if ((_dikCode == 0xD1 and (_alt and !_ctrl)) or (_dikCode in actionKeys "User14")) then {
+if ((_dikCode == 0xD1 && (_alt && !_ctrl)) || (_dikCode in actionKeys "User14")) then {
 	DZE_Z_alt = true;
 };
 
 
 // numpad 8 0x48 now pgup 0xC9 0.01
-if ((_dikCode == 0xC9 and (!_alt and _ctrl)) or (_dikCode in actionKeys "User7")) then {
+if ((_dikCode == 0xC9 && (!_alt && _ctrl)) || (_dikCode in actionKeys "User7")) then {
 	DZE_Q_ctrl = true;
 };
 // numpad 2 0x50 now pgdn 0xD1
-if ((_dikCode == 0xD1 and (!_alt and _ctrl)) or (_dikCode in actionKeys "User8")) then {
+if ((_dikCode == 0xD1 && (!_alt && _ctrl)) || (_dikCode in actionKeys "User8")) then {
 	DZE_Z_ctrl = true;
 };
 
@@ -177,15 +177,15 @@ if ((_dikCode == 0xD1 and (!_alt and _ctrl)) or (_dikCode in actionKeys "User8")
 
 
 // numpad 4 0x4B now Q 0x10
-if (_dikCode == 0x10 or (_dikCode in actionKeys "User17")) then {
+if (_dikCode == 0x10 || (_dikCode in actionKeys "User17")) then {
 	DZE_4 = true;
 };		
 // numpad 6 0x4D now E 0x12
-if (_dikCode == 0x12 or (_dikCode in actionKeys "User18")) then {
+if (_dikCode == 0x12 || (_dikCode in actionKeys "User18")) then {
 	DZE_6 = true;
 };
 // numpad 5 0x4C now space 0x39
-if (_dikCode == 0x39 or (_dikCode in actionKeys "User19")) then {
+if (_dikCode == 0x39 || (_dikCode in actionKeys "User19")) then {
 	DZE_5 = true;
 };
 

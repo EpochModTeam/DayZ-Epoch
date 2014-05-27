@@ -48,7 +48,7 @@ if (_qty >= _qty_in) then {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -117,7 +117,7 @@ if (_qty >= _qty_in) then {
 
 				cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
 
-				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+				{player removeAction _x} count s_player_parts;s_player_parts = [];
 				s_player_parts_crtl = -1;
 	
 			} else {

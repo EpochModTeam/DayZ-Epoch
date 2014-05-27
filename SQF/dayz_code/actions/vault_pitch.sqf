@@ -101,7 +101,7 @@ _objectsPond = 		nearestObjects [_playerPos, [], 10];
 				_isOk = true;
 			};
 		};
-	} forEach _objectsPond;
+	} count _objectsPond;
 
 deleteVehicle _tmpvault;
 

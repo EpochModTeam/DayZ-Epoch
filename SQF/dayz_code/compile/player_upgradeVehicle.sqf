@@ -16,10 +16,10 @@ if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(
 _findNearestVehicles = nearestObjects [player, ["LandVehicle"], 10];
 _findNearestVehicle = [];
 {
-	if (alive _x and (count (crew _x)) == 0) exitWith {
+	if (alive _x && (count (crew _x)) == 0) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
-} foreach _findNearestVehicles;
+} count _findNearestVehicles;
 
 _IsNearVehicle = count (_findNearestVehicle);
 if (_IsNearVehicle >= 1) then {
@@ -28,11 +28,11 @@ if (_IsNearVehicle >= 1) then {
 
 	_notNearestPlayer = _vehicle call dze_isnearest_player;
 
-	if (!isNull _vehicle and local _vehicle and !_notNearestPlayer) then {
+	if (!isNull _vehicle && local _vehicle && !_notNearestPlayer) then {
 
 		_classname = typeOf _vehicle;
 
-		// lookup vehicle and find if any upgrades are available
+		// lookup vehicle && find if any upgrades are available
 		_upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "Upgrades" >> _upgrade);
 
 		if (!isNil "_upgrade" && (count _upgrade) > 0) then {
@@ -50,13 +50,13 @@ if (_IsNearVehicle >= 1) then {
 				_countIn = _x select 1;
 				_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 				if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-			} forEach _requirementsMagazine;
+			} count _requirementsMagazine;
 			{
 				_itemIn = _x select 0;
 				_countIn = _x select 1;
 				_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgWeapons" >> _x)) == _itemIn) } count weapons player;
 				if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-			} forEach _requirementsWeapon;
+			} count _requirementsWeapon;
 
 			if (_proceed) then {
 
@@ -84,8 +84,8 @@ if (_IsNearVehicle >= 1) then {
 								_temp_removed_array_mag set [count _temp_removed_array_mag,_x];
 							};
 						};
-					} forEach magazines player;
-				} forEach _requirementsMagazine;
+					} count magazines player;
+				} count _requirementsMagazine;
 
 				{
 					_removed = 0;
@@ -103,8 +103,8 @@ if (_IsNearVehicle >= 1) then {
 								_temp_removed_array_wep set [count _temp_removed_array_wep,_x];
 							};
 						};
-					} forEach weapons player;
-				} forEach _requirementsWeapon;
+					} count weapons player;
+				} count _requirementsWeapon;
 
 				// all parts removed proceed
 				if (_tobe_removed_total == _removed_total) then {
@@ -132,8 +132,8 @@ if (_IsNearVehicle >= 1) then {
 					};
 				}
 				else {
-					{player addMagazine _x;} forEach _temp_removed_array_mag;
-					{player addWeapon _x;} forEach _temp_removed_array_wep;
+					{player addMagazine _x;} count _temp_removed_array_mag;
+					{player addWeapon _x;} count _temp_removed_array_wep;
 					cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 				};
 			}

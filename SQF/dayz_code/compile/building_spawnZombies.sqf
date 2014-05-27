@@ -45,7 +45,7 @@ if (_canLoot) then {
 						[_iPos,true,_unitTypes] call zombie_generate;
 					};
 				};
-			} forEach _positions;
+			} count _positions;
 			
 		} else {
 

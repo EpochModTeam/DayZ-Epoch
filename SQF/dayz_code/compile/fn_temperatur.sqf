@@ -27,7 +27,7 @@ Missing:
 	//All Values can be seen as x of 100: 100 / x = minutes from min temperetaure to max temperature (without other effects)
 	_vehicle_factor		=	4;
 	_moving_factor 		=  	7;
-	_fire_factor		=	15;	//Should be always:  _rain_factor + _night_factor + _wind_factor OR higher !
+	_fire_factor		=	15;	//Should be always:  _rain_factor + _night_factor + _wind_factor || higher !
 	_building_factor 	=  	7;
 	_sun_factor			= 	4;	//max sunfactor linear over the day. highest value in the middle of the day
 
@@ -72,7 +72,7 @@ Missing:
 	_building = nearestObject [player, "HouseBase"];
 	if(!isNull _building) then {
 		if([player,_building] call fnc_isInsideBuilding) then {
-			//Make sure thate Fire and Building Effect can only appear single		Not used at the moment
+			//Make sure thate Fire && Building Effect can only appear single		Not used at the moment
 			//if(!_hasfireffect && _fire_factor > _building_factor) then {
 				_difference = _difference + _building_factor;
 			//};
@@ -106,7 +106,7 @@ Missing:
 		t = -(f / (12 - s)�) * (d - 12)� + f
 		
 		Parabel with highest Point( greatest Effect == _sun_factor) always at 12.00
-		Zero Points are always at sunrise and sunset -> Only Positiv Values Possible
+		Zero Points are always at sunrise && sunset -> Only Positiv Values Possible
 		*/
 		
 		_difference = _difference + (-((_sun_factor / (12 - _sunrise)^2)) * ((daytime - 12)^2) + _sun_factor);	

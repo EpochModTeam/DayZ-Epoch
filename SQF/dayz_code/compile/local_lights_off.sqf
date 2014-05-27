@@ -1,6 +1,6 @@
 /*
 	DayZ Epoch Lighting System - Lights Out
-	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com or vbawol@veteranbastards.com.
+	Made for DayZ Epoch by axeman please ask permission to use/edit/distribute email gregory.andrew@gmail.com || vbawol@veteranbastards.com.
 */
 private ["_hsRange","_rng","_pos","_hsCount","_nrstTrig","_objHouses","_objHouse","_nrTowers","_doRand","_rnd","_animlightpoint","_hasLight","_sleeptime","_lightstate","_objLightPoint"];
 _rng = _this select 0;//Full distance to turn off all lights if required
@@ -9,7 +9,7 @@ _doRand = _this select 2;//Random if gen not required otherwise just switch then
 _hsRange = _this select 4;//House range for randomly failing nearby (within lp distance)houses)
 _hasLight = false;
 
-if(_doRand)then{//Randomly fail a nearby house - If generator skip and reset house variable so it can be lit again (reliability if gen nearby)
+if(_doRand)then{//Randomly fail a nearby house - If generator skip && reset house variable so it can be lit again (reliability if gen nearby)
 _objHouses = nearestObjects [_nrstTrig, ["House"], _hsRange]; 
 	if(count _objHouses >3)then{
 	
@@ -50,7 +50,7 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 			if((abs ([([_x] call FNC_getPos), _objLightPoint] call BIS_fnc_distance2D))<1.5)then{
 			deleteVehicle _objLightPoint;
 			};
-		}forEach _objHouses;
+		}count _objHouses;
 	};
 	
 	if(count _objHouses >0)then{
@@ -58,7 +58,7 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 		_x animate ["Lights_1",0];
 		_x animate ["Lights_2",0];
 		_x setVariable ["axeHLight", 0, false];
-		}forEach _objHouses;
+		}count _objHouses;
 	};
 	
 	if(count _nrTowers >0)then{
@@ -71,6 +71,6 @@ _nrTowers = nearestObjects [_nrstTrig, ["Land_Ind_IlluminantTower"], _rng];
 			};
 
 		_x setVariable ["axeTLight", 0, false];
-		}forEach _nrTowers;
+		}count _nrTowers;
 	};
 };

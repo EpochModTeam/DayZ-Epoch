@@ -57,9 +57,9 @@ if (_spawnRoll <= _spawnChance) then {
 		[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
 	};
 	
-	// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
+	// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 && other such items.
 	_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
 	{
 		_x setVariable ["permaLoot",true];
-	} forEach _nearBy;
+	} count _nearBy;
 };

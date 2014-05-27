@@ -92,7 +92,7 @@ if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
 				clearvehicleinit _v;
 				deleteVehicle _v;
 				_v =(_wreck) createvehicle _pos;
-				{_x moveincargo _v} foreach _crw;
+				{_x moveincargo _v} count _crw;
 				_v setVectorDirAndUp [_dir,_vecUp];
 				_v setFuel 0;
 				_v setdamage 0;
@@ -126,7 +126,7 @@ else
 				clearvehicleinit _v;
 				deleteVehicle _v;
 				_v =(_wreck) createvehicle _pos;
-				{_x moveincargo _v} foreach _crw;
+				{_x moveincargo _v} count _crw;
 				//sleep 0.05;
 				_v setvelocity _vel;
 				//_v setPos _pos;

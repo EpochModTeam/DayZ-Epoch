@@ -9,7 +9,7 @@ _vehicleSrc = 	_this select 3;
 
 if(!(isNull _vehicleSrc)) then {
 
-	_isVehicle = ((_vehicleSrc isKindOf "AllVehicles") and !(_vehicleSrc isKindOf "Man"));
+	_isVehicle = ((_vehicleSrc isKindOf "AllVehicles") && !(_vehicleSrc isKindOf "Man"));
 	// If fuel source is vehicle get actual capacity
 	_configSrcVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicleSrc);
 	_capacitySrc = 	getNumber(_configSrcVeh >> "fuelCapacity");
@@ -21,10 +21,10 @@ _findNearestVehicles = nearestObjects [player, ["AllVehicles"], 30];
 _findNearestVehicle = [];
 {
 	//diag_log ("FILL = " + str(_x) + " = " + str(_vehicleSrc));
-	if (alive _x and !(_x == _vehicleSrc) and !(_x isKindOf "Man")) exitWith {
+	if (alive _x && !(_x == _vehicleSrc) && !(_x isKindOf "Man")) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
-} foreach _findNearestVehicles;
+} count _findNearestVehicles;
 		
 _IsNearVehicle = count (_findNearestVehicle);
 
@@ -67,7 +67,7 @@ if(_IsNearVehicle >= 1) then {
 			if (_isMedic) then {
 				_started = true;
 			};
-			if (_started and !_isMedic) then {
+			if (_started && !_isMedic) then {
 				r_doLoop = false;
 				_finished = true;
 			};

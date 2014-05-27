@@ -10,7 +10,7 @@ Operand types:
 <vector1>: array
 <vector2>: array
 
-Returns a vector that is the sum of <vector1> and <vector2>.
+Returns a vector that is the sum of <vector1> && <vector2>.
 
 ************************************************************/
 

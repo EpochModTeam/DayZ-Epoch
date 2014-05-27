@@ -8,7 +8,7 @@ private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_we
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
-{player removeAction _x} forEach s_player_combi;s_player_combi = [];
+{player removeAction _x} count s_player_combi;s_player_combi = [];
 s_player_unlockvault = 1;
 
 _obj = _this;
@@ -22,8 +22,8 @@ if (!(_objType in DZE_LockedStorage)) exitWith {
 _playerNear = _obj call dze_isnearest_player;
 if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
 
-// Silently exit if object no longer exists or alive
-if(isNull _obj or !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
+// Silently exit if object no longer exists || alive
+if(isNull _obj || !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
 
 _unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
 _text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
@@ -35,14 +35,14 @@ _ownerID = _obj getVariable["CharacterID","0"];
 if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
 
 // Promt user for password if _ownerID != dayz_playerUID
-if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
+if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 
 	// Check if any players are nearby if not allow player to claim item.
 	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
 	_playerID = getPlayerUID player;
 	
 	// Only allow if not already claimed.
-	if (_claimedBy == "0" or !_playerNear) then {
+	if (_claimedBy == "0" || !_playerNear) then {
 		// Since item was not claimed proceed with claiming it.
 		_obj setVariable["claimed",_playerID,true];
 	};
@@ -56,7 +56,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 	
 	if (_claimedBy == _playerID) then {
 
-		if(!isNull _obj and alive _obj) then {
+		if(!isNull _obj && alive _obj) then {
 
 			PVDZE_log_lockUnlock = [player, _obj, false];
 			publicVariableServer "PVDZE_log_lockUnlock";
@@ -91,7 +91,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 				{
 					_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
 					_countr = _countr + 1;
-				} forEach _objWpnTypes;
+				} count _objWpnTypes;
 			};
 	
 			if (count _magazines > 0) then {
@@ -105,7 +105,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 						_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
 						_countr = _countr + 1;
 					};
-				} forEach _objWpnTypes;
+				} count _objWpnTypes;
 			};
 
 			if (count _backpacks > 0) then {
@@ -116,7 +116,7 @@ if ((_ownerID == dayz_combination) or (_ownerID == dayz_playerUID)) then {
 				{
 					_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
 					_countr = _countr + 1;
-				} forEach _objWpnTypes;
+				} count _objWpnTypes;
 			};
 	
 			cutText [format[(localize "str_epoch_player_125"),_text], "PLAIN DOWN"];

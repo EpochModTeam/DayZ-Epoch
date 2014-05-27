@@ -28,7 +28,7 @@ while {r_doLoop} do {
 	if (_isMedic) then {
 		_started = true;
 	};
-	if (_started and !_isMedic) then {
+	if (_started && !_isMedic) then {
 		r_doLoop = false;
 		_finished = true;
 	};
@@ -54,7 +54,7 @@ if (_finished) then {
 			_display closeDisplay 0;
 		};	
 
-		if ((_unit == player) or (vehicle player != player)) then {
+		if ((_unit == player) || (vehicle player != player)) then {
 			//Self Healing
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 			dayz_sourceBleeding =	objNull;
@@ -65,7 +65,7 @@ if (_finished) then {
 			[player,20] call player_humanityChange;
 		};
 
-		{_unit setVariable[_x,false,true];} forEach USEC_woundHit;
+		{_unit setVariable[_x,false,true];} count USEC_woundHit;
 		_unit setVariable ["USEC_injured",false,true];
 
 	};

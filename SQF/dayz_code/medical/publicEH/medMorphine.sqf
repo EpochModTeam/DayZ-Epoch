@@ -5,7 +5,7 @@ _array = _this; //_this select 0;
 _unit = _array select 0;
 _medic = _array select 1;
 
-if ((_unit == player) or (vehicle player != player)) then {
+if ((_unit == player) || (vehicle player != player)) then {
 	r_fracture_legs = false;
 	r_fracture_arms = false;
 	_unit setHit["legs",0];

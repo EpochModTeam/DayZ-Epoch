@@ -41,7 +41,7 @@ sleep 3;
 
 _classname = 	getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "create");
 
-if(!isNull _obj and alive _obj) then {
+if(!isNull _obj && alive _obj) then {
 
 	_location = _pos;
 
@@ -78,7 +78,7 @@ if(!isNull _obj and alive _obj) then {
 	{
 		_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 	
 	//Add Magazines
 	_objWpnTypes = _magazines select 0;
@@ -87,7 +87,7 @@ if(!isNull _obj and alive _obj) then {
 	{
 		_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 
 	//Add Backpacks
 	_objWpnTypes = _backpacks select 0;
@@ -96,7 +96,7 @@ if(!isNull _obj and alive _obj) then {
 	{
 		_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
 		_countr = _countr + 1;
-	} forEach _objWpnTypes;
+	} count _objWpnTypes;
 	
 	cutText [localize "str_success_tent_pack", "PLAIN DOWN"];
 

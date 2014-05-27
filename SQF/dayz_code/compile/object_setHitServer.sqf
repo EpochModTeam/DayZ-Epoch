@@ -2,7 +2,7 @@ private["_unit","_selection","_damage","_strH","_dam","_total"];
 _unit =			_this select 0;
 _selection =	_this select 1;
 _damage =		_this select 2;
-if ((_selection != "") and local _unit) then {
+if ((_selection != "") && local _unit) then {
 	_strH = "hit_" + (_selection);
 	_dam = _unit getVariable [_strH,0];
 	_total = (_dam + _damage);

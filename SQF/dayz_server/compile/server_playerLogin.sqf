@@ -31,7 +31,7 @@ if (_playerID == "") then {
 	_playerID = getPlayerUID _playerObj;
 };
 
-if ((_playerID == "") or (isNil "_playerID")) exitWith {
+if ((_playerID == "") || (isNil "_playerID")) exitWith {
 #ifdef DZE_SERVER_DEBUG
 	diag_log ("LOGIN FAILED: Player [" + _playerName + "] has no login ID");
 #endif
@@ -54,7 +54,7 @@ while {_doLoop < 5} do {
 	_doLoop = _doLoop + 1;
 };
 
-if (isNull _playerObj or !isPlayer _playerObj) exitWith {
+if (isNull _playerObj || !isPlayer _playerObj) exitWith {
 #ifdef DZE_SERVER_DEBUG
 	diag_log ("LOGIN RESULT: Exiting, player object null: " + str(_playerObj));
 #endif

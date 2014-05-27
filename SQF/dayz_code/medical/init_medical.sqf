@@ -3,7 +3,7 @@
 
 // Functions
 
-// Added pvEH - scripts modified to remove the need for sending long strings via setVehicleInit to reduce network traffic and JIP load - 04072010
+// Added pvEH - scripts modified to remove the need for sending long strings via setVehicleInit to reduce network traffic && JIP load - 04072010
 
 // INCLUDE REQUIRED GAME CODES
 #include "\ca\editor\Data\Scripts\dikCodes.h"
@@ -32,7 +32,7 @@ while {true} do {
 		_id = [dayz_sourceBleeding,"bled"] spawn player_death;
 	};
 	
-	if ((r_player_blood <= 3000) and !r_player_unconscious) then {
+	if ((r_player_blood <= 3000) && !r_player_unconscious) then {
 		_rnd = random 100;
 		if (_rnd > 99) then {
 			[player,((random 0.1) + 0.2)] call fnc_usec_damageUnconscious;
@@ -40,13 +40,13 @@ while {true} do {
 	};
 	
 	//Handle Unconscious player
-	if ((r_player_unconscious) and (!r_player_handler1)) then {
+	if ((r_player_unconscious) && (!r_player_handler1)) then {
 		//localize "CLIENT: Start Unconscious Function";
 		[] spawn fnc_usec_unconscious;
 	};
 	
 	//Handle player bleeding
-	if ((r_player_injured) and (!r_player_handler)) then {
+	if ((r_player_injured) && (!r_player_handler)) then {
 		r_player_handler = true;
 		sleep 1;
 		//localize "CLIENT: Start Player Bleeding";
@@ -55,7 +55,7 @@ while {true} do {
 	};
 	
 	//Handle player infection
-	if ((r_player_infected) and (!r_player_handler)) then {
+	if ((r_player_infected) && (!r_player_handler)) then {
 		r_player_handler = true;
 		sleep 1;
 		[] spawn fnc_med_publicBlood;
@@ -81,7 +81,7 @@ while {true} do {
 			};
 			sleep 0.5;
 			_lowBlood =	player getVariable ["USEC_lowBlood", false];
-			if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
+			if ((r_player_blood < r_player_bloodTotal) && !_lowBlood) then {
 				player setVariable["USEC_lowBlood",true,true];
 			};
 		};

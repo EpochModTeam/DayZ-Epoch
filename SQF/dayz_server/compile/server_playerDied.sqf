@@ -13,8 +13,8 @@ _newObject setVariable ["bodyName", _victimName, true];
 _killer = _victim getVariable["AttackedBy", "nil"];
 _killerName = _victim getVariable["AttackedByName", "nil"];
 
-// when a zombie kills a player _killer, _killerName and _weapon will be "nil"
-// we can use this to determine a zombie kill and send a customized message for that. right now no killmsg means it was a zombie.
+// when a zombie kills a player _killer, _killerName && _weapon will be "nil"
+// we can use this to determine a zombie kill && send a customized message for that. right now no killmsg means it was a zombie.
 if (_killerName != "nil") then
 {
 	_weapon = _victim getVariable["AttackedByWeapon", "nil"];

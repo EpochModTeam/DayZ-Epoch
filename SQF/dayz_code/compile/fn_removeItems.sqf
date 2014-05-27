@@ -1,10 +1,10 @@
 /*
 Description:
 Removes the items (magazines) from the player's inventory
-and performs a double check for the required items.
+&& performs a double check for the required items.
 
 Parameter(s):
-_this: <array> list of item names to be removed (can also be an sub-array with item name and quantity)
+_this: <array> list of item names to be removed (can also be an sub-array with item name && quantity)
 
 Returns:
 Boolean (true if all items have been removed from the player's inventory)
@@ -43,12 +43,12 @@ _tobe_removed_total = 0;
 					_temp_removed_array set [count _temp_removed_array, _x];
 				};
 			};
-		} forEach _inventory;
+		} count _inventory;
 	};
-} forEach _items;
+} count _items;
 // all parts removed
 if (_tobe_removed_total == _removed_total) exitWith { true };
 // missing parts
-{ player addMagazine _x; } forEach _temp_removed_array;
+{ player addMagazine _x; } count _temp_removed_array;
 cutText [format[(localize "STR_EPOCH_ACTIONS_5"), _removed_total, _tobe_removed_total], "PLAIN DOWN"];
 false

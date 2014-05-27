@@ -19,7 +19,7 @@ _invehicle = false;
 _config = configFile >> "CfgMagazines" >> _itemorignal;
 _text = getText (_config >> "displayName");
 
-//getting type of sfx (now just drink od soda open and drink)
+//getting type of sfx (now just drink od soda open && drink)
 _sfx =  getText (_config >> "sfx");
 
 if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,"drink"] , "PLAIN DOWN"]};
@@ -35,14 +35,14 @@ if (vehicle player != player) then {
 sleep 1;
 
 if (["ItemWaterbottle",_itemorignal] call fnc_inString) then {
-    //low alert and sound radius
+    //low alert && sound radius
     _dis=5;
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
     [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
     player addMagazine "ItemWaterbottleUnfilled";
 };
 if (["ItemSoda",_itemorignal] call fnc_inString) then {
-    //higher alert and sound radius
+    //higher alert && sound radius
     _dis=10;
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
     [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
@@ -71,7 +71,7 @@ if (_hasoutput && _invehicle) then {
 };
 
 //add infection chance for "ItemWaterbottle",
-if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
+if ((random 15 < 1) && (_itemorignal == "ItemWaterbottle")) then {
     r_player_infected = true;
     player setVariable["USEC_infected",true,true];
 };

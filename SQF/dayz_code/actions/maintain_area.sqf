@@ -1,4 +1,4 @@
-//Code developed by Axe Cop - Massiv improvments and performance tunes by Skaronator
+//Code developed by Axe Cop - Massiv improvments && performance tunes by Skaronator
 private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_uniqueID","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
 
 if (DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_ACTIONS_2") , "PLAIN DOWN"]; };
@@ -21,7 +21,7 @@ _objects_filtered = [];
     if (damage _x >= DZE_DamageBeforeMaint) then {
         _objects_filtered set [count _objects_filtered, _x];
    };
-} forEach _objects;
+} count _objects;
 _objects = _objects_filtered;
 
 // TODO dynamic requirements based on used building parts?
@@ -66,7 +66,7 @@ switch _option do {
 			_countIn = _x select 1;
 			_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 			if (_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-		} forEach _requirements;
+		} count _requirements;
 
 		if (_proceed) then {
 			player playActionNow "Medic";
@@ -91,8 +91,8 @@ switch _option do {
 							_temp_removed_array set [count _temp_removed_array,_x];
 						};
 					};
-				} forEach magazines player;
-			} forEach _requirements;
+				} count magazines player;
+			} count _requirements;
 
 			// all required items removed from player gear
 			if (_tobe_removed_total == _removed_total) then {
@@ -100,7 +100,7 @@ switch _option do {
 				PVDZE_maintainArea = [player,1,_target];
 				publicVariableServer "PVDZE_maintainArea";	
 			} else {
-				{player addMagazine _x;} forEach _temp_removed_array;
+				{player addMagazine _x;} count _temp_removed_array;
 				cutText [format[(localize "STR_EPOCH_ACTIONS_5"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 			};
 		} else {
@@ -115,10 +115,10 @@ switch _option do {
 			_countIn = _x select 1;
 			_itemText = getText(configFile >> "CfgMagazines" >> _itemIn >> "displayName");
 			if (_cost != "") then {
-				_cost = _cost + " and ";
+				_cost = _cost + " && ";
 			};
 			_cost = _cost + (str(_countIn) + " of " + _itemText);
-		} forEach _requirements;
+		} count _requirements;
 		cutText [format[(localize "STR_EPOCH_ACTIONS_7"), _count, _cost], "PLAIN DOWN"];
 	};
 };

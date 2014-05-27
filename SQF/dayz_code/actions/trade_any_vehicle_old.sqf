@@ -54,7 +54,7 @@ if (_qty >= _qty_in) then {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -120,7 +120,7 @@ if (_qty >= _qty_in) then {
 					_config = _keySelected;
 					_isOk = [player,_config] call BIS_fnc_invAdd;
 					waitUntil {!isNil "_isOk"};
-					if (_isOk and _isKeyOK) then {
+					if (_isOk && _isKeyOK) then {
 					
 						_removed = ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
 						if(_removed == _qty_in) then {
@@ -170,16 +170,16 @@ if (_qty >= _qty_in) then {
 							_tireDmg = _tireDmg + _damage;
 							_tires = _tires + 1;
 						};
-					} forEach _hitpoints;
+					} count _hitpoints;
 
 					// find average tire damage
-					if(_tireDmg > 0 and _tires > 0) then {
+					if(_tireDmg > 0 && _tires > 0) then {
 						if((_tireDmg / _tires) > 0.75) then {
 							_okToSell = false;
 						};
 					};
 
-					if(local _obj and !isNull _obj and alive _obj) then {
+					if(local _obj && !isNull _obj && alive _obj) then {
 
 						if(_okToSell) then {
 
@@ -206,7 +206,7 @@ if (_qty >= _qty_in) then {
 					
 				};
 	
-				{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+				{player removeAction _x} count s_player_parts;s_player_parts = [];
 				s_player_parts_crtl = -1;
 
 			} else {

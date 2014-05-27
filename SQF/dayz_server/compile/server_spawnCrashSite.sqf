@@ -115,11 +115,11 @@ while {1 == 1} do {
 
 			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]);
 
-			// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
+			// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 && other such items.
 			_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
 			{
 				_x setVariable ["permaLoot",true];
-			} forEach _nearBy;
+			} count _nearBy;
 		};
 
 	};

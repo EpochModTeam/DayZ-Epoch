@@ -36,7 +36,7 @@ while {true} do {
 			// Check for radiation
 			DZE_InRadiationZone = false;
 
-			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos OR (dayz_myPosition select 1) < dayz_minpos OR (dayz_myPosition select 0) > dayz_maxpos OR (dayz_myPosition select 1) > dayz_maxpos);
+			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos || (dayz_myPosition select 1) < dayz_minpos || (dayz_myPosition select 0) > dayz_maxpos || (dayz_myPosition select 1) > dayz_maxpos);
 
 			if((_outsideMap || DZE_Quarantine) && !r_player_dead && !isNull (findDisplay 46)) then {
 				DZE_InRadiationZone = true;
@@ -60,17 +60,17 @@ while {true} do {
 	if (!_inVehicle) then {
 		_thirst = (_speed + 4) * 3;
 	};
-	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% and + 16.6% waterloss
+	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% && + 16.6% waterloss
 
 	//Temperatur
 	2 call player_temp_calculation; //2 = sleep time of this loop		//TeeChange
-	if ((_lastTemp - dayz_temperatur) > 0.75 or (_lastTemp - dayz_temperatur) < -0.75 ) then {
+	if ((_lastTemp - dayz_temperatur) > 0.75 || (_lastTemp - dayz_temperatur) < -0.75 ) then {
 		player setVariable ["temperature",dayz_temperatur,true];
 		_lastTemp = dayz_temperatur;
 	};
 
 	//can get nearby infection
-	if (!r_player_infected and !_isPZombie) then {
+	if (!r_player_infected && !_isPZombie) then {
 		//Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
 			_listTalk = (getPosATL _refObj) nearEntities ["CAManBase",8];
@@ -85,7 +85,7 @@ while {true} do {
 						};
 					};
 				};
-			} forEach _listTalk;
+			} count _listTalk;
 			if (dayz_temperatur < ((50 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
 				_rnd = (random 1) * (((dayz_temperaturnormal - dayz_temperatur) * (100 /(dayz_temperaturnormal - dayz_temperaturmin)))/ 25);	//TeeChange
 				if (_rnd < 0.05) then {
@@ -99,7 +99,7 @@ while {true} do {
 		};
 	};
 
-	//If has infection reduce blood cough and add shake
+	//If has infection reduce blood cough && add shake
 	if (r_player_infected) then {
 		if !(player getVariable["USEC_infected",false]) then {
 			player setVariable["USEC_infected",true,true];
@@ -117,7 +117,7 @@ while {true} do {
 	};
 
 	//Pain Shake Effects
-	if (r_player_inpain and !r_player_unconscious) then {
+	if (r_player_inpain && !r_player_unconscious) then {
 		playSound "breath_1";
 		addCamShake [2, 1, 25];
 	};
@@ -147,7 +147,7 @@ while {true} do {
 
 		_radsound = "radzone1";
 		_bloodloss = 10;
-		if(_radTimer > 5 AND _radTimer < 10) then {
+		if(_radTimer > 5 && _radTimer < 10) then {
 			_radsound = "radzone2";
 			_bloodloss = 20;
 		};
@@ -172,9 +172,9 @@ while {true} do {
 		_radTimer = 0;
 	};
 
-	// Health uptick when healty not thirsty or hungry
-	if (_foodVal >= 0.9 and _thirstVal >= 0.9) then {
-		if (!r_player_infected and !r_player_inpain and !r_player_injured and !DZE_InRadiationZone) then {
+	// Health uptick when healty not thirsty || hungry
+	if (_foodVal >= 0.9 && _thirstVal >= 0.9) then {
+		if (!r_player_infected && !r_player_inpain && !r_player_injured && !DZE_InRadiationZone) then {
 			_result = r_player_blood + 10;
 			if (_result >= r_player_bloodTotal) then {
 				r_player_blood = r_player_bloodTotal;
@@ -186,7 +186,7 @@ while {true} do {
 
 	//Record low blood
 	_lowBlood = player getVariable ["USEC_lowBlood", false];
-	if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
+	if ((r_player_blood < r_player_bloodTotal) && !_lowBlood) then {
 		player setVariable["USEC_lowBlood",true,true];
 	};
 
@@ -214,7 +214,7 @@ while {true} do {
 		};
 	};
 
-	// If in combat, display counter and restrict logout
+	// If in combat, display counter && restrict logout
 	_startcombattimer      = player getVariable["startcombattimer",0];
 	if (_startcombattimer == 1) then {
 		player setVariable["combattimeout", time + 30, true];

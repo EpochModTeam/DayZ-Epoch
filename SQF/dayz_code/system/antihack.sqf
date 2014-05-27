@@ -28,7 +28,7 @@ waitUntil {vehicle player == player};
 	while {true} do {
 		sleep 5;
 	};
-	PVDZE_atp = format["WARNING PLAYER WITH NAME (%1) and UID# (%2) HAS CHANGED THE TRUE VALUE TO FALSE", _playerName, _playerUID];
+	PVDZE_atp = format["WARNING PLAYER WITH NAME (%1) && UID# (%2) HAS CHANGED THE TRUE VALUE TO FALSE", _playerName, _playerUID];
 	publicVariableServer "PVDZE_atp";
 	endMission "LOSER";
 	sleep 10;
@@ -48,13 +48,13 @@ while {1 == 1} do {
 	_topv = 0;
 	_toph = 0;
 
-	while {((typeName player == "OBJECT") AND {((player in playableUnits) OR {(alive player)})})} do {
+	while {((typeName player == "OBJECT") && {((player in playableUnits) || {(alive player)})})} do {
 		_curpos = getPosATL (vehicle player);
 		_distance = _lastpos distance _curpos;
 		_curtime = diag_ticktime;
 		_difftime = _curtime - _lasttime;
 
-		if ((_distance > 10) OR {(_difftime > 1)}) then {
+		if ((_distance > 10) || {(_difftime > 1)}) then {
 			if (!_al1veOnce) then {
 				private [ "_loc", "_plant"];
 				// check that plants libs are properly loaded
@@ -69,7 +69,7 @@ while {1 == 1} do {
 						endMission "LOSER";
 					};
 					deleteVehicle _plant;
-				} forEach ["grass", "prunus", "picea", "fallentree", "phragmites", "acer", "amygdalusn", "Brush", "fiberplant", "amygdalusc", "boulder"];
+				} count ["grass", "prunus", "picea", "fallentree", "phragmites", "acer", "amygdalusn", "Brush", "fiberplant", "amygdalusc", "boulder"];
 				diag_log format [ "%1: Plants libs tests done!", __FILE__];
 			};
 			_al1veOnce = true;
@@ -86,7 +86,7 @@ while {1 == 1} do {
 			_safetyVehicle = vehicle player;
 
 			if (_lastVehicle == vehicle player) then {
-				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
+				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) || (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 					(vehicle player) setposATL  _lastpos;
 					//PVDZE_atp = [name player, dayz_characterID, _lastpos, _curPos, getPosATL player];
 					PVDZE_atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", getPlayerUID player, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
@@ -108,7 +108,7 @@ while {1 == 1} do {
 			// freefall detection:
 			_v = -((velocity player) select 2);
 			_h = (getPosATL player) select 2;
-			if (_v > 4 AND _h > 3) then {
+			if (_v > 4 && _h > 3) then {
 				_topv = _topv max _v;
 				_toph = _toph max _h;
 				Dayz_freefall = [ time, _toph, _topv ];

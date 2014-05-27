@@ -17,7 +17,7 @@ dayz_lastCheckBit = time;
 if(r_fracture_legs && !r_player_dead) then {_btnRespawn ctrlEnable true;};
 		
 //force gear save
-if (!r_player_dead and time - dayz_lastCheckBit > 10) then {
+if (!r_player_dead && time - dayz_lastCheckBit > 10) then {
 	call dayz_forceSave;
 };			
 
@@ -26,17 +26,17 @@ _sleep = 1;
 
 while {!isNull _display} do {
 	switch true do {
-		case (!r_player_dead and {isPlayer _x} count (player nearEntities ["AllVehicles", 12]) > 1) : {
+		case (!r_player_dead && {isPlayer _x} count (player nearEntities ["AllVehicles", 12]) > 1) : {
 			_btnAbort ctrlEnable false;
 			cutText [localize "str_abort_playerclose", "PLAIN DOWN"];
 			_sleep = 1;
 		};
-		case (!r_player_dead and !canbuild) : {
+		case (!r_player_dead && !canbuild) : {
 			_btnAbort ctrlEnable false;
 			cutText [(localize "str_epoch_player_12"), "PLAIN DOWN"];
 			_sleep = 1;
 		};
-		case (!r_player_dead and player getVariable["combattimeout", 0] >= time) : {
+		case (!r_player_dead && player getVariable["combattimeout", 0] >= time) : {
 			_btnAbort ctrlEnable false;
 			//cutText ["Cannot Abort while in combat!", "PLAIN DOWN"];
 			cutText [localize "str_abort_playerincombat", "PLAIN DOWN"];

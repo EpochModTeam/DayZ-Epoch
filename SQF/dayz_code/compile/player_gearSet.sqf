@@ -30,7 +30,7 @@ if (count _inventory > 0) then {
 			};
 		};
 		_idc = _idc + 1;
-	} forEach _mags;
+	} count _mags;
 	
 	//Add weapons
 	{
@@ -43,5 +43,5 @@ if (count _inventory > 0) then {
 		if (_isOK) then {
 			player addWeapon _x;
 		};
-	} forEach _wpns;
+	} count _wpns;
 };

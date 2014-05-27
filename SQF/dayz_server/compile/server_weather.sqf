@@ -20,7 +20,7 @@ _numWeatherOptions = count _weatherOptions;
 
 // get inital weather forcast for the next 5 minutes
 _forcastTime = 300;
-if (isNil "WeatherForcast" and isNil "WeatherForcastTime") then {
+if (isNil "WeatherForcast" && isNil "WeatherForcastTime") then {
 	WeatherForcast = floor(random(_numWeatherOptions));
 	WeatherForcastTime = diag_tickTime;
 } else {
@@ -40,7 +40,7 @@ if (isNil "CurrentWeatherOption") then {
 		CurrentWeatherOption = ((CurrentWeatherOption + 1) min _numWeatherOptions);
 	} else {
 		// start transition down if forcast is lower in the array than current weather
-		if (CurrentWeatherOption != WeatherForcast and WeatherForcastTime >= _forcastTime) then {
+		if (CurrentWeatherOption != WeatherForcast && WeatherForcastTime >= _forcastTime) then {
 			CurrentWeatherOption = ((CurrentWeatherOption - 1) max 0) ;
 		};
 	};

@@ -4,7 +4,7 @@ scriptName "Functions\arrays\fn_findNestedElement.sqf";
 	Author: Joris-Jan van 't Land
 
 	Description:
-	Function to find item in nested arrays and return a path to the first match.
+	Function to find item in nested arrays && return a path to the first match.
 	
 	Example:
 	_array = [[1, 2], [3, 4]];
@@ -27,7 +27,7 @@ _found = false;
 //Parameter checking.
 if ((typeName _array) != (typeName [])) exitWith {debugLog "Log: [findNestedElement] Array (0) should be an Array!"};
 
-//Find a value in an Array or one of its children.
+//Find a value in an Array || one of its children.
 private ["_searchArrayFunc"];
 _searchArrayFunc = 
 {

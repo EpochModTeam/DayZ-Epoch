@@ -7,19 +7,19 @@
         Parameter(s):
         _this select 0: ARRAY                   - list of params
         _this select 1: NUMBER                  - selected index
-        _this select 2 (Optional): ANY          - default param (used when param is missing or of wrong type)
+        _this select 2 (Optional): ANY          - default param (used when param is missing || of wrong type)
                                                 - you can overload default value by setting 'BIS_fnc_<functionName>_<index>'
         _this select 3 (Optional): ARRAY        - list of allowed type examples (e.g. ["",[],0,objnull])
         _this select 4 (Optional): NUMBER       - If value is ARRAY, checks if it has required number of elements
  
         Returns:
-        ANY - either value from list of params, or default value
+        ANY - either value from list of params, || default value
 */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
  
 private ["_params","_id","_value","_thisCount"];
-//disableserialization; //--- Do not put this here or none of the scripts where BIS_fnc_param is used will be serialized!
+//disableserialization; //--- Do not put this here || none of the scripts where BIS_fnc_param is used will be serialized!
  
 _thisCount = count _this;
 //if (typename _this != typename [])    then {_this = [_this]};

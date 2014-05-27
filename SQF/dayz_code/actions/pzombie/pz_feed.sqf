@@ -69,7 +69,7 @@ if(!(alive _item)) then {
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 
-	// todo: dump loot on ground and then remove
+	// todo: dump loot on ground && then remove
 
 	//Ensure Control is visible
 	_display = uiNamespace getVariable 'DAYZ_GUI_display';

@@ -4,7 +4,7 @@ _weapon = 		_this select 1;
 _ammo = 		_this select 4;
 _projectile = 	_this select 6;
 
-if (_ammo isKindOf "Hatchet_Swing_Ammo" or _ammo isKindOf "Chainsaw_Swing_Ammo") then {
+if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo") then {
 	
 	_findNearestTree = [];
 	{
@@ -20,7 +20,7 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" or _ammo isKindOf "Chainsaw_Swing_Ammo")
 				};
 			};
 		};
-	} foreach nearestObjects [getPosATL player, [], 20];
+	} count nearestObjects [getPosATL player, [], 20];
 
 	//diag_log ("POSITION: " + str(_endPos));
 

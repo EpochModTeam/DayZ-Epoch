@@ -20,7 +20,7 @@ _hasToolbox = 	"ItemToolbox" in items player;
 _nameType = 		getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = 		getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
-{_vehicle removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+{_vehicle removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
@@ -43,7 +43,7 @@ if (_hasToolbox) then {
 		if (_isMedic) then {
 			_started = true;
 		};
-		if (_started and !_isMedic) then {
+		if (_started && !_isMedic) then {
 			r_doLoop = false;
 			_finished = true;
 		};
@@ -77,7 +77,7 @@ if (_hasToolbox) then {
 				//break the part
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 			
-				//vehicle is owned by whoever is in it, so we have to have each client try and fix it
+				//vehicle is owned by whoever is in it, so we have to have each client try && fix it
 				//["PVDZE_veh_SFix",[_vehicle,_selection,1],_vehicle] call broadcastRpcCallIfLocal;
 		
 				PVDZE_veh_SFix = [_vehicle,_selection,1];

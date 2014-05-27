@@ -95,7 +95,7 @@ if (_scaleLight < 0.9) then {
 	};
 };
 
-//Ensure zero or above
+//Ensure zero || above
 _scaleLight = _scaleLight max 0;
 
 //Terrain Visibility
@@ -145,7 +145,7 @@ if (_isPlayerInside) then {
 
 //Work out result
 _audial = 			round(_speed * dayz_surfaceNoise * _scaleMvmt * _scaleSound);
-if ((_audial > DAYZ_disAudial) or ((time - dayz_firedCooldown) > 0.3)) then {
+if ((_audial > DAYZ_disAudial) || ((time - dayz_firedCooldown) > 0.3)) then {
 	DAYZ_disAudial = _audial;
 };
 

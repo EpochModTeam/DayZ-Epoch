@@ -60,7 +60,7 @@ item55[] = {"get_ready_to_clo",2,250,400.000000,400.000000,500.000000,450.000000
 item56[] = {"sleep_",4,218,550.000000,400.000000,650.000000,450.000000,0.000000,"sleep" \n ""};
 item57[] = {"Disconnect",2,250,825.000000,400.000000,925.000000,450.000000,0.000000,"Disconnect"};
 item58[] = {"No_time_date",4,218,25.000000,1150.000000,125.000000,1200.000000,0.000000,"No time/date"};
-item59[] = {"ERROR__No_Date_or",2,250,175.000000,1150.000000,275.000000,1200.000000,0.000000,"ERROR:" \n "No Date or Time"};
+item59[] = {"ERROR__No_Date_or",2,250,175.000000,1150.000000,275.000000,1200.000000,0.000000,"ERROR:" \n "No Date || Time"};
 item60[] = {"Too_Long",4,218,300.000000,1150.000000,400.000000,1200.000000,0.000000,"Too" \n "Long"};
 item61[] = {"get_ready_to_clo_1",2,250,450.000000,800.000000,550.000000,850.000000,0.000000,"get ready to close"};
 item62[] = {"sleep_",4,218,600.000000,800.000000,700.000000,850.000000,0.000000,"sleep" \n ""};
@@ -334,10 +334,10 @@ class FSM
            "	_charPos = getPosATL player;" \n
            "	_playerPos = 	[round(direction player),_charPos];" \n
            "	" \n
-           "	if (_onLadder or _isInVehicle or _isTerminal) then {" \n
+           "	if (_onLadder || _isInVehicle || _isTerminal) then {" \n
            "		_currentAnim = """";" \n
            "		//If position to be updated, make sure it is at ground level!" \n
-           "		if ((count _playerPos > 0) and !_isTerminal) then {" \n
+           "		if ((count _playerPos > 0) && !_isTerminal) then {" \n
            "			_charPos set [2,0];" \n
            "			_playerPos set[1,_charPos];" \n
            "		};" \n
@@ -698,7 +698,7 @@ class FSM
        "				};" \n
        "				dayz_myBackpack addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];" \n
        "				_countr = _countr + 1;" \n
-       "			} forEach _backpackWpnTypes;" \n
+       "			} count _backpackWpnTypes;" \n
        "			" \n
        "			//Magazines" \n
        "			_countr = 0;" \n
@@ -707,7 +707,7 @@ class FSM
        "				if (_x == ""ItemTent"") then { _x = ""ItemTentOld"" };" \n
        "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
        "				_countr = _countr + 1;" \n
-       "			} forEach _backpackMagTypes;" \n
+       "			} count _backpackMagTypes;" \n
        "			" \n
        "			dayz_myBackpackMags =	getMagazineCargo dayz_myBackpack;" \n
        "			dayz_myBackpackWpns =	getWeaponCargo dayz_myBackpack;" \n
@@ -772,7 +772,7 @@ class FSM
        "	freshSpawn = 0;" \n
        "};" \n
        "" \n
-       "if(dayz_paraSpawn and (freshSpawn == 2)) then {" \n
+       "if(dayz_paraSpawn && (freshSpawn == 2)) then {" \n
        "	player setDir _setDir;" \n
        "	player setPosATL [(_setPos select 0),(_setPos select 1),2000];" \n
        "	[player,2000] spawn BIS_fnc_halo;" \n
@@ -793,8 +793,8 @@ class FSM
        "		usecBleed = [player,_x,_x];" \n
        "		publicVariable ""usecBleed""; // draw blood stream on character, on all gameclients" \n
        "	};" \n
-       "} forEach USEC_typeOfWounds;" \n
-       "//Legs and Arm fractures" \n
+       "} count USEC_typeOfWounds;" \n
+       "//Legs && Arm fractures" \n
        "_legs = player getVariable [""hit_legs"",0];" \n
        "_arms = player getVariable [""hit_hands"",0];" \n
        "" \n
@@ -814,7 +814,7 @@ class FSM
        "" \n
        "dayz_playerUID = _playerUID;" \n
        "" \n
-       "if ((_isNew) OR (count _inventory == 0)) then {" \n
+       "if ((_isNew) || (count _inventory == 0)) then {" \n
        "	//player is new, add initial loadout only if player is not pzombie" \n
        "	if(!(player isKindOf ""PZombie_VB"")) then {" \n
        "		_config = (configFile >> ""CfgSurvival"" >> ""Inventory"" >> ""Default"");" \n
@@ -840,13 +840,13 @@ class FSM
        "			if (_isOK) then {" \n
        "				player addMagazine _x;" \n
        "			};" \n
-       "		} forEach _mags;" \n
+       "		} count _mags;" \n
        "		{" \n
        "			_isOK = 	isClass(configFile >> ""CfgWeapons"" >> _x);" \n
        "			if (_isOK) then {" \n
        "				player addWeapon _x;" \n
        "			};" \n
-       "		} forEach _wpns;" \n
+       "		} count _wpns;" \n
        "		" \n
        "		if (_bcpk != """") then {" \n
        "			player addBackpack _bcpk; " \n
@@ -859,7 +859,7 @@ class FSM
        "				} else {" \n
        "					dayz_myBackpack addMagazineCargoGlobal [_x, 1];" \n
        "				};" \n
-       "			} forEach _bcpkItems;" \n
+       "			} count _bcpkItems;" \n
        "		} else {" \n
        "			if (_bcpkItems != """") then {" \n
        "				dayz_myBackpack addMagazineCargoGlobal [_bcpkItems, 1];" \n
@@ -975,7 +975,7 @@ class FSM
        "		_ctrlBleed = 	_display displayCtrl 1303;" \n
        "		_ctrlBleed ctrlShow false;" \n
        "	};" \n
-       "	if (!r_fracture_legs and !r_fracture_arms) then {" \n
+       "	if (!r_fracture_legs && !r_fracture_arms) then {" \n
        "		_ctrlFracture = 	_display displayCtrl 1203;" \n
        "		_ctrlFracture ctrlShow false;" \n
        "	};" \n
@@ -1014,7 +1014,7 @@ class FSM
       name = "Load_In";
       init = /*%FSM<STATEINIT""">*/"//Reveal action types" \n
        "" \n
-       "{player reveal _x} forEach (nearestObjects [getPosATL player, dayz_reveal, 50]);" \n
+       "{player reveal _x} count (nearestObjects [getPosATL player, dayz_reveal, 50]);" \n
        "" \n
        "dayz_clientPreload = true;" \n
        "3 fadeSound 1;" \n
@@ -1028,7 +1028,7 @@ class FSM
        "	} else {" \n
        "		 _id = [_x,1] spawn object_roadFlare " \n
        "	};" \n
-       " } forEach (allMissionObjects ""LitObject"");"/*%FSM</STATEINIT""">*/;
+       " } count (allMissionObjects ""LitObject"");"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1104,7 +1104,7 @@ class FSM
        "	if (count _state > 2) then {" \n
        "		dayz_temperatur = _state select 2;" \n
        "	}; " \n
-       "	if ((count _state > 3) and DZE_FriendlySaving) then {" \n
+       "	if ((count _state > 3) && DZE_FriendlySaving) then {" \n
        "		DZE_Friends = _state select 3;" \n
        "	}; " \n
        "} else {" \n
@@ -1135,7 +1135,7 @@ class FSM
        "" \n
        "reload player;" \n
        "" \n
-       "if (_currentAnim != """" and !dayz_paraSpawn) then {" \n
+       "if (_currentAnim != """" && !dayz_paraSpawn) then {" \n
        "	[objNull, player, rSwitchMove,_currentAnim] call RE;" \n
        "};" \n
        "" \n
@@ -1283,7 +1283,7 @@ class FSM
        "};" \n
        "" \n
        "// TODO: questionably" \n
-       "{ _x call fnc_veh_ResetEH; } forEach vehicles;" \n
+       "{ _x call fnc_veh_ResetEH; } count vehicles;" \n
        "" \n
        "private[""_fadeFire""];" \n
        "{" \n
@@ -1291,14 +1291,14 @@ class FSM
        "	if (!_fadeFire) then {" \n
        "		_nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
        "	};" \n
-       "} forEach entities ""SpawnableWreck"";" \n
+       "} count entities ""SpawnableWreck"";" \n
        "" \n
        "// remove box " \n
        "[] spawn {" \n
        "	private [""_counter""];" \n
        "	_counter = 0;" \n
        "	while {true} do {" \n
-       "		if ((player getVariable[""combattimeout"", 0] >= time) or (_counter >= 60) or (player distance DZE_PROTOBOX > 2)) exitWith {" \n
+       "		if ((player getVariable[""combattimeout"", 0] >= time) || (_counter >= 60) || (player distance DZE_PROTOBOX > 2)) exitWith {" \n
        "			deleteVehicle DZE_PROTOBOX;" \n
        "		};" \n
        "		sleep 1;" \n
@@ -1472,7 +1472,7 @@ class FSM
        "//[false] call stream_locationCheck;" \n
        "" \n
        "_zombies = (getPosATL player) nearEntities [""zZombie_Base"",25];" \n
-       "{deleteVehicle _x} forEach _zombies;" \n
+       "{deleteVehicle _x} count _zombies;" \n
        "" \n
        "endLoadingScreen;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1559,7 +1559,7 @@ class FSM
       name = "Disconnect";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "" \n
-       "// disable player interaction and move him off site" \n
+       "// disable player interaction && move him off site" \n
        "// player setPos [10,10,100000];" \n
        " player enableSimulation false;" \n
        "" \n

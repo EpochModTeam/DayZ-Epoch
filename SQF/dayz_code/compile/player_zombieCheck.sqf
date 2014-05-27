@@ -14,7 +14,7 @@ _attacked = false;
 		_dist = (_x distance _refObj);
 			
 		_chance = 1;
-		if ((_dist < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
+		if ((_dist < dayz_areaAffect) && !(animationState _x == "ZombieFeed")) then {
 
 			//diag_log ("within attack range: " + str(_x));
 
@@ -23,7 +23,7 @@ _attacked = false;
 			_last = _x getVariable["lastAttack",0];
 			_entHeight = (getPosATL _x) select 2;
 			_delta = _pHeight - _entHeight;
-			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then
+			if ( ((time - _last) > 1) && ((_delta < 1.5) && (_delta > -1.5)) ) then
 			{
 				//diag_log ("perform attack: " + str(_x));
 				[_x, _type] spawn player_zombieAttack;
@@ -41,7 +41,7 @@ _attacked = false;
 		};
 		//Noise Activation
 		_targets = _x getVariable ["targets",[]];
-		if (!(_refObj in _targets) and !isNull _refObj) then {
+		if (!(_refObj in _targets) && !isNull _refObj) then {
 			if (_dist < DAYZ_disAudial) then {
 				if (DAYZ_disAudial > 80) then {
 					
@@ -72,7 +72,7 @@ _attacked = false;
 		};
 		//Sight Activation
 		_targets = _x getVariable ["targets",[]];
-		if (!(_refObj in _targets) and !isNull _refObj) then {
+		if (!(_refObj in _targets) && !isNull _refObj) then {
 			if (_dist < DAYZ_disVisual) then {
 						
 				_tPos = (getPosASL _refObj);
@@ -95,7 +95,7 @@ _attacked = false;
 			};
 		};
 	};
-} forEach _listTalk;
+} count _listTalk;
 
 if (_attacked) then {
 	if (r_player_unconscious) then {
