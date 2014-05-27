@@ -103,7 +103,7 @@ class CfgSkeletons
 			"rightUpLeg","spine",
 			"spine","",
 			"spine1","spine",
-			"tail","Hips",
+			"tail","Hips"
 };
 	};
 	class CfgMovesButterfly: Default
