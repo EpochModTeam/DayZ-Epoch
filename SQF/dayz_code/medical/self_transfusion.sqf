@@ -1,8 +1,9 @@
-private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","_lastused"];
+private ["_started","_finished","_animState","_isMedic","_num_removed","_unit","_lastused","_timeout"];
 if (!DZE_SelfTransfuse) exitWith {};
 _unit = player;
 _lastused = selfTransfusionTime;
-if ((round(time - _lastused)) <= 300) exitWith {cutText [format[(localize "str_actions_medical_18"),(300 - (round(time - _lastused)))] , "PLAIN DOWN"]};
+_timeout = (DZE_selfTransfuse_Values select 3);
+if ((round(time - _lastused)) <= _timeout) exitWith {cutText [format[(localize "str_actions_medical_18"),(_timeout - (round(time - _lastused)))] , "PLAIN DOWN"]};
 
 call fnc_usec_medic_removeActions;
 r_action = false;
@@ -46,7 +47,7 @@ if (_finished) then {
 		if (vehicle player != player) then {
 			(findDisplay 106) closeDisplay 0;
 		};	
-		[_unit] call player_medTransfuse;
+		[_unit, DZE_selfTransfuse_Values] call player_medTransfuse;
 	};
 } else {
 	r_interrupt = false;

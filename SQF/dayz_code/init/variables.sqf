@@ -525,7 +525,9 @@ if(isNil "DZE_DamageBeforeMaint") then {
 if(isNil "DZE_StaticConstructionCount") then {
 	DZE_StaticConstructionCount = 0;
 };
-
+if (isNil "DZE_selfTransfuse_Values") then {
+	DZE_selfTransfuse_Values = [12000, 15, 300];
+};
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
