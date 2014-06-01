@@ -21,28 +21,7 @@ class CfgBuildingLoot {
 		hangPos[] = {};
 		vehPos[] = {};
 	};
-	//New System
-	class Church: Default {
-		zombieChance = 0.3;
-		minRoaming = 1;
-		maxRoaming = 3;
-		zombieClass[] = {"z_priest","z_priest","z_priest"};
-		lootChance = 0.3;
-		lootPos[] = {};
-		lootType[] = {
-		//one spawn
-		//tools
-			//{"ItemMatchbox","generic",0.02},
-		//weapons
-		//special
-		//mags special
-			//{"ItemBookBible","magazine",0.03},
-		//bags
-		//multiple spawns
-			{"","Church",0.50},
-			{"","generic",0.50}
-		};
-	};
+	
 	class Castle: Default {
 		lootChance = 0.2;
 		lootPos[] = {};
