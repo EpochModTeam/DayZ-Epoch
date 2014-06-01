@@ -293,9 +293,9 @@ if (isServer && isNil "sm_done") then {
 						//diag_log ("HIVE: Streamed " + str(_val) + " objects");
 					};
 
-				} count (_traderData select 0);
+				} forEach (_traderData select 0);
 			};
-		} count serverTraders;
+		} forEach serverTraders;
 	};
 
 	if (_hiveLoaded) then {
