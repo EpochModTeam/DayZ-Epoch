@@ -101,5 +101,5 @@ AllowedVehiclesList = [
 ["Volha_1_TK_CIV_EP1",3],
 ["Volha_2_TK_CIV_EP1",3],
 ["VWGolf",3],
-["USEC_CH53_DZE",1]
+["CH53_DZE",1]
 ];
