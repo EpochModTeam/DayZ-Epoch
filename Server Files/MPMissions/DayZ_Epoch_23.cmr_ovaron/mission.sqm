@@ -1349,8 +1349,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity1";
 			expCond="(player distance TraderCity1) < 100; ";
-			expActiv="[""trader city Pikla"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Pikla"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Pikla"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Pikla"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1366,8 +1366,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity2";
 			expCond="(player distance TraderCity2) < 100; ";
-			expActiv="[""trader city Selca"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Selca"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Selca"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Selca"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1383,8 +1383,8 @@ class Mission
 			age="UNKNOWN";
 			name="HeroVendors";
 			expCond="(player distance HeroVendors) < 100; ";
-			expActiv="[""Hero Trader Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Hero Trader Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Hero Trader Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Hero Trader Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1400,8 +1400,8 @@ class Mission
 			age="UNKNOWN";
 			name="WholeSaler1";
 			expCond="(player distance WholeSaler1) < 100; ";
-			expActiv="[""South's Wholesale"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""South's Wholesale"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""South's Wholesale"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""South's Wholesale"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1417,8 +1417,8 @@ class Mission
 			age="UNKNOWN";
 			name="BanditTrader";
 			expCond="(player distance BanditTrader) < 100; ";
-			expActiv="[""Bandit Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Bandit Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Bandit Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Bandit Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1434,8 +1434,8 @@ class Mission
 			age="UNKNOWN";
 			name="AWOLsAirField";
 			expCond="(player distance AWOLsAirField) < 100; ";
-			expActiv="[""AWOLs Airfield"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""AWOLs Airfield"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""AWOLs Airfield"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""AWOLs Airfield"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1451,8 +1451,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesaler2";
 			expCond="(player distance Wholesaler2) < 100; ";
-			expActiv="[""West's Wholesale"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""West's Wholesale"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""West's Wholesale"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""West's Wholesale"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1468,8 +1468,8 @@ class Mission
 			age="UNKNOWN";
 			name="BoatVendor";
 			expCond="(player distance BoatVendor) < 100; ";
-			expActiv="[""Sams Boat Vendor"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Sams Boat Vendor"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Sams Boat Vendor"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Sams Boat Vendor"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1485,8 +1485,8 @@ class Mission
 			age="UNKNOWN";
 			name="PlanicaTraders";
 			expCond="(player distance PlanicaTraders) < 100; ";
-			expActiv="[""trader city Planica"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Planica"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Planica"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Planica"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1502,8 +1502,8 @@ class Mission
 			age="UNKNOWN";
 			name="PlanicaTraders_1";
 			expCond="(player distance PlanicaTraders) < 100; ";
-			expActiv="[""trader city Planica"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Planica"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Planica"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Planica"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};

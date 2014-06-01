@@ -1357,8 +1357,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonenubak";
 			expCond="(player distance zonenubak) < 100;";
-			expActiv="[""trader city Nubak"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Nubak"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Nubak"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Nubak"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1373,8 +1373,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonepinley";
 			expCond="(player distance zonepinley) < 100;";
-			expActiv="[""trader city Pinley"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Pinley"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Pinley"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Pinley"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 				soundDet="arabian_market_1";
@@ -1389,8 +1389,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonecamara";
 			expCond="(player distance zonecamara) < 100;";
-			expActiv="[""trader city Camara"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Camara"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Camara"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Camara"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 				soundDet="arabian_market_1";

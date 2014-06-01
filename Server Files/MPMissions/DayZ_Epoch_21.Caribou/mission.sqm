@@ -1338,8 +1338,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneRaven";
 			expCond="(player distance ZoneRaven) < 100;";
-			expActiv="[""trader city Raven Rock"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Raven Rock"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Raven Rock"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Raven Rock"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1355,8 +1355,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneRaun";
 			expCond="(player distance ZoneRaun) < 100;";
-			expActiv="[""trader city Raun"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Raun"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Raun"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Raun"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1372,8 +1372,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneHero";
 			expCond="(player distance ZoneHero) < 100;";
-			expActiv="[""Hero Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Hero Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Hero Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Hero Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1389,8 +1389,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneSouthWholesale";
 			expCond="(player distance ZoneSouthWholesale) < 100;";
-			expActiv="[""Wholesalers"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Wholesalers"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Wholesalers"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Wholesalers"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1406,8 +1406,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneAircraft";
 			expCond="(player distance ZoneAircraft) < 100;";
-			expActiv="[""Airfield"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Airfield"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Airfield"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Airfield"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1423,8 +1423,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneBandit";
 			expCond="(player distance ZoneBandit) < 100;";
-			expActiv="[""Bandit Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Bandit Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Bandit Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Bandit Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1440,8 +1440,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneNorthWholesale";
 			expCond="(player distance ZoneNorthWholesale) < 100;";
-			expActiv="[""Wholesalers"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Wholesalers"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Wholesalers"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Wholesalers"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1457,8 +1457,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneBlackMarket";
 			expCond="(player distance ZoneBlackMarket) < 100;";
-			expActiv="[""Black Market"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Black Market"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Black Market"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Black Market"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1474,8 +1474,8 @@ class Mission
 			age="UNKNOWN";
 			name="ZoneBoat";
 			expCond="(player distance ZoneBoat) < 100;";
-			expActiv="[""Boat Dealer"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Boat Dealer"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Boat Dealer"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Boat Dealer"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};

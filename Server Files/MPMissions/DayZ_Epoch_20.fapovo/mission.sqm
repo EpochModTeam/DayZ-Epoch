@@ -1314,8 +1314,8 @@ class Mission
 			age="UNKNOWN";
 			name="BanditVendor";
 			expCond="(player distance BanditVendor) < 100; ";
-			expActiv="[""Bandit Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Bandit Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Bandit Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Bandit Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1331,8 +1331,8 @@ class Mission
 			age="UNKNOWN";
 			name="AirVehicleVendor";
 			expCond="(player distance AirVehicleVendor) < 100; ";
-			expActiv="[""AWOLs Air Vehicles"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""AWOLs Air Vehicles"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""AWOLs Air Vehicles"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""AWOLs Air Vehicles"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1348,8 +1348,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity1";
 			expCond="(player distance TraderCity1) < 100; ";
-			expActiv="[""trader city Lixovo"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Lixovo"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Lixovo"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Lixovo"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1365,8 +1365,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesaler";
 			expCond="(player distance Wholesaler) < 100; ";
-			expActiv="[""Pauls Wholesale Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Pauls Wholesale Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Pauls Wholesale Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Pauls Wholesale Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1382,8 +1382,8 @@ class Mission
 			age="UNKNOWN";
 			name="HeroVendor";
 			expCond="(player distance HeroVendor) < 100; ";
-			expActiv="[""Hero Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Hero Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Hero Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Hero Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1399,8 +1399,8 @@ class Mission
 			age="UNKNOWN";
 			name="TraderCity2";
 			expCond="(player distance TraderCity2) < 100; ";
-			expActiv="[""trader city Didina"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Didina"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Didina"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Didina"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};

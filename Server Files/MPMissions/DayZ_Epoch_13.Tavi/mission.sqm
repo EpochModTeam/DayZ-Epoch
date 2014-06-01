@@ -1391,8 +1391,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonesabina";
 			expCond="(player distance zonesabina) < 40;";
-			expActiv="[""trader city Sabina"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Sabina"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Sabina"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Sabina"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1408,8 +1408,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonelyep";
 			expCond="(player distance zonelyep) < 50;";
-			expActiv="[""trader city Lyepestok"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Lyepestok"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Lyepestok"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Lyepestok"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1425,8 +1425,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebilgrad";
 			expCond="(player distance zonebilgrad) < 50;";
-			expActiv="[""trader city Bilgrad"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Bilgrad"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Bilgrad"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Bilgrad"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1442,8 +1442,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebranibor";
 			expCond="(player distance zonebranibor) < 60;";
-			expActiv="[""trader city Branibor"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Branibor"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Branibor"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Branibor"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};

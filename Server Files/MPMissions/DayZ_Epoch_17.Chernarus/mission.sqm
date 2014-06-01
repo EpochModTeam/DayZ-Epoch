@@ -1305,8 +1305,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonebash";
 			expCond="(player distance zonebash) < 100;";
-			expActiv="[""trader city Bash"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Bash"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Bash"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Bash"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1320,8 +1320,8 @@ class Mission
 			age="UNKNOWN";
 			name="zoneklen";
 			expCond="(player distance zoneklen) < 100;";
-			expActiv="[""trader city Klen"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Klen"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Klen"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Klen"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1335,8 +1335,8 @@ class Mission
 			age="UNKNOWN";
 			name="zonestary";
 			expCond="(player distance zonestary) < 100;";
-			expActiv="[""trader city Stary"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Stary"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Stary"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Stary"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};

@@ -1344,8 +1344,8 @@ class Mission
 			age="UNKNOWN";
 			name="Lenz";
 			expCond="(player distance Lenz) < 50;";
-			expActiv="[""trader city Lenzburg"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Lenzburg"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Lenzburg"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Lenzburg"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1361,8 +1361,8 @@ class Mission
 			age="UNKNOWN";
 			name="Emmen";
 			expCond="(player distance Emmen) < 100;";
-			expActiv="[""trader city Emmen"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Emmen"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Emmen"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Emmen"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1378,8 +1378,8 @@ class Mission
 			age="UNKNOWN";
 			name="Schratten";
 			expCond="(player distance Schratten) < 75;";
-			expActiv="[""trader city Schratten"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""trader city Schratten"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""trader city Schratten"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""trader city Schratten"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1393,8 +1393,8 @@ class Mission
 			age="UNKNOWN";
 			name="Bandit";
 			expCond="(player distance Bandit) < 50;";
-			expActiv="[""Bandit Camp"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Bandit Camp"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Bandit Camp"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Bandit Camp"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1408,8 +1408,8 @@ class Mission
 			age="UNKNOWN";
 			name="Hero";
 			expCond="(player distance Hero) < 50;";
-			expActiv="[""Hero Vendor"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Hero Vendor"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Hero Vendor"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Hero Vendor"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1423,8 +1423,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesale1";
 			expCond="(player distance Wholesale1) < 50;";
-			expActiv="[""West Wholesaler"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""West Wholesaler"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""West Wholesaler"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""West Wholesaler"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1438,8 +1438,8 @@ class Mission
 			age="UNKNOWN";
 			name="Wholesaler";
 			expCond="(player distance Wholesaler) < 50;";
-			expActiv="[""Wholesaler"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Wholesaler"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Wholesaler"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Wholesaler"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1453,8 +1453,8 @@ class Mission
 			age="UNKNOWN";
 			name="Boat1";
 			expCond="(player distance boat1) < 50;";
-			expActiv="[""Boat Vendor"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Boat Vendor"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Boat Vendor"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Boat Vendor"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1468,8 +1468,8 @@ class Mission
 			age="UNKNOWN";
 			name="Boat2";
 			expCond="(player distance boat2) < 50;";
-			expActiv="[""Boat Vendor"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Boat Vendor"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Boat Vendor"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Boat Vendor"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
@@ -1483,8 +1483,8 @@ class Mission
 			age="UNKNOWN";
 			name="AWOL";
 			expCond="(player distance awol) < 75;";
-			expActiv="[""Aircraft Vendor"",true,"enter"] spawn player_traderCity;";
-			expDesactiv="[""Aircraft Vendor"",true,"leave"] spawn player_traderCity;";
+			expActiv="[""Aircraft Vendor"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Aircraft Vendor"",true,""leave""] spawn player_traderCity;";
 			class Effects
 			{
 			};
