@@ -90,7 +90,7 @@ for "_t" from 0 to 2 do {
 //"
 
 private ["_test", "_test2"];
-_test = (_this select 0) setPos ([(_this select 0)] call FNC_GetPos); if (isnil "_test") then {_test = false};
+_test = (_this select 0) setPos (getPos (_this select 0)); if (isnil "_test") then {_test = false};
 _test2 = (_this select 0) playMove ""; if (isnil "_test2") then {_test2 = false};
 _testvar = getText (configFile >> "CfgMissions" >> "Missions" >> "SP_BearRising" >> "directory");
 if (_testvar != "") then {
