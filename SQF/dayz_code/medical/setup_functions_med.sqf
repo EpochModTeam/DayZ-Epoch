@@ -113,10 +113,10 @@ fnc_usec_medic_removeActions = {
 	_obj = player;
 	{
 		_obj = _x;
-		_c = {
+		{
 			_obj removeAction _x;
-		} count r_player_actions;
-	} count r_action_targets;
+		} forEach r_player_actions;
+	} forEach r_action_targets;
 	r_player_actions = [];
 	r_action_targets = [];
 };
