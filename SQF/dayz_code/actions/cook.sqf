@@ -74,7 +74,7 @@ _cookedmeat = meatcooked;
 			cutText [format[(localize "str_epoch_player_130"),_textraw], "PLAIN DOWN"];
 		};
 	};
-} count _rawmeat;
+} forEach _rawmeat;
 
 s_player_cook = -1;
 DZE_ActionInProgress = false;

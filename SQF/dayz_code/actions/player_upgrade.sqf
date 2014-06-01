@@ -95,7 +95,7 @@ if ((count _upgrade) > 0) then {
 		_countIn = _x select 1;
 		_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 		if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-	} count _requirements;
+	} forEach _requirements;
 	
 	if (_proceed) then {
 		[1,1] call dayz_HungerThirst;
@@ -123,9 +123,9 @@ if ((count _upgrade) > 0) then {
 					};
 				};
 		
-			} count magazines player;
+			} forEach magazines player;
 
-		} count _requirements;
+		} forEach _requirements;
 
 		// all parts removed proceed
 		if (_tobe_removed_total == _removed_total) then {

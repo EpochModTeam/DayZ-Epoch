@@ -111,7 +111,7 @@ if (_canDo) then {
 
 					if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
 
-				} count _selectedRecipeInput;
+				} forEach _selectedRecipeInput;
 			};
 
 			// If all parts proceed
@@ -194,9 +194,9 @@ if (_canDo) then {
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
 							};
-						} count magazines player;
+						} forEach magazines player;
 
-					} count _selectedRecipeInput;
+					} forEach _selectedRecipeInput;
 
 					//diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
 

@@ -17,7 +17,7 @@ _newObjects = [];
 		};
 		_newObjects set [count _newObjects,_type];
 	};
-} count _currentObjects;
+} forEach _currentObjects;
 
 //Compare current loadout with old loadout
 _newObjects = [];
@@ -31,6 +31,6 @@ _newObjects = [];
 		};
 		_newObjects set [count _newObjects,_type];
 	};
-} count _checkObjects;
+} forEach _checkObjects;
 
 _change;

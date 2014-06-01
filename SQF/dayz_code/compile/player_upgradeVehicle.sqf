@@ -50,13 +50,13 @@ if (_IsNearVehicle >= 1) then {
 				_countIn = _x select 1;
 				_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 				if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-			} count _requirementsMagazine;
+			} forEach _requirementsMagazine;
 			{
 				_itemIn = _x select 0;
 				_countIn = _x select 1;
 				_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgWeapons" >> _x)) == _itemIn) } count weapons player;
 				if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-			} count _requirementsWeapon;
+			} forEach _requirementsWeapon;
 
 			if (_proceed) then {
 
@@ -84,8 +84,8 @@ if (_IsNearVehicle >= 1) then {
 								_temp_removed_array_mag set [count _temp_removed_array_mag,_x];
 							};
 						};
-					} count magazines player;
-				} count _requirementsMagazine;
+					} forEach magazines player;
+				} forEach _requirementsMagazine;
 
 				{
 					_removed = 0;
@@ -103,8 +103,8 @@ if (_IsNearVehicle >= 1) then {
 								_temp_removed_array_wep set [count _temp_removed_array_wep,_x];
 							};
 						};
-					} count weapons player;
-				} count _requirementsWeapon;
+					} forEach weapons player;
+				} forEach _requirementsWeapon;
 
 				// all parts removed proceed
 				if (_tobe_removed_total == _removed_total) then {

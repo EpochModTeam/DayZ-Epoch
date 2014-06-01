@@ -43,9 +43,9 @@ _tobe_removed_total = 0;
 					_temp_removed_array set [count _temp_removed_array, _x];
 				};
 			};
-		} count _inventory;
+		} forEach _inventory;
 	};
-} count _items;
+} forEach _items;
 // all parts removed
 if (_tobe_removed_total == _removed_total) exitWith { true };
 // missing parts

@@ -45,7 +45,7 @@ while {(alive _projectile) && !(isNull _projectile) && _callCount < 85;} do {
 				_x setVariable["startcombattimer", 1];
 				diag_log("Now in Combat (Crew): " + name _x);
 			};
-		} count (crew _nearVehicle);
+		} forEach (crew _nearVehicle);
 	};
 
-} count _listNear;
+} forEach _listNear;

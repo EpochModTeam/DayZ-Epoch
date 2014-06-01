@@ -91,8 +91,8 @@ switch _option do {
 							_temp_removed_array set [count _temp_removed_array,_x];
 						};
 					};
-				} count magazines player;
-			} count _requirements;
+				} forEach magazines player;
+			} forEach _requirements;
 
 			// all required items removed from player gear
 			if (_tobe_removed_total == _removed_total) then {

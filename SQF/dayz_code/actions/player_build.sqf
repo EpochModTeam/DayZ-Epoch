@@ -80,7 +80,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 			};
 		};
 	};
-} count _needNear;
+} forEach _needNear;
 
 
 if(_abort) exitWith {
