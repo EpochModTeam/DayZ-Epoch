@@ -58,11 +58,11 @@ switch (_iClass) do {
 			};
 		}
 		else {
-			diag_log format["DEBUG dayz_CLBase: %1", dayz_CLBase];
+			// diag_log format["DEBUG dayz_CLBase: %1", dayz_CLBase];
 			_index = dayz_CLBase find _iClass;
 			if (_index > 0) then {
 				_weights = dayz_CLChances select _index;
-				diag_log format["DEBUG dayz_CLChances: %1", dayz_CLChances];
+				//diag_log format["DEBUG dayz_CLChances: %1", dayz_CLChances];
 				_cntWeights = count _weights;
 				_index = floor(random _cntWeights);
 				_index = _weights select _index;
