@@ -102,7 +102,7 @@ _positionsSmall = _posSmall call _ShuffleArray;
 					_index = floor(random _cntWeights);
 					_index = _weights select _index;
 
-					diag_log format["building_spawnLoot.sqf: %1", _itemTypesSmall];
+					//diag_log format["building_spawnLoot.sqf: %1", _itemTypesSmall];
 
 					_itemType = _itemTypesSmall select _index;
 					[_itemType select 0, _itemType select 1, _iPos, 0.0] call spawn_loot_small;
