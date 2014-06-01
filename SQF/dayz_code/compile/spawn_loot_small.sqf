@@ -45,12 +45,12 @@ switch (_iClass) do
 		if (DZE_MissionLootTable) then{
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(missionConfigFile >> "CfgLootSmall" >> _iClass);
+			} count getArray(missionConfigFile >> "CfgLootSmall" >> _iItem);
 		}
 		else {
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(configFile >> "CfgLootSmall" >> _iClass);
+			} count getArray(configFile >> "CfgLootSmall" >> _iItem);
 		};
 		_index = dayzE_CLSBase find _iItem;
 		_weights = dayzE_CLSChances select _index;
@@ -70,18 +70,18 @@ switch (_iClass) do
 		if (DZE_MissionLootTable) then{
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(missionConfigFile >> "CfgLootSmall" >> _iClass);
+			} count getArray(missionConfigFile >> "CfgLootSmall" >> _iItem);
 		}
 		else {
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(configFile >> "CfgLootSmall" >> _iClass);
+			} count getArray(configFile >> "CfgLootSmall" >> _iItem);
 		};
 		_index = dayzE_CLSBase find _iItem;
 		_weights = dayzE_CLSChances select _index;
 		_cntWeights = count _weights;
 	
-		diag_log("_itemTypes small:" + str(_itemTypes));
+		//diag_log("_itemTypes small:" + str(_itemTypes));
 
 	    _index = floor(random _cntWeights);
 		_index = _weights select _index;
