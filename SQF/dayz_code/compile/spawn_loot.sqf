@@ -101,12 +101,12 @@ switch (_iClass) do {
 		if (DZE_MissionLootTable) then{
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+			} count getArray(missionConfigFile >> "cfgLoot" >> _iItem);
 		}
 		else {
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(configFile >> "cfgLoot" >> _iClass);
+			} count getArray(configFile >> "cfgLoot" >> _iItem);
 		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
@@ -120,6 +120,7 @@ switch (_iClass) do {
 	case "backpack":
 	{
 		//Item is single backpack
+		_itemTypes = [];
 		if (DZE_MissionLootTable) then {
 			_itemTypes = ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
 		} else {
@@ -136,15 +137,16 @@ switch (_iClass) do {
 	};
 	case "cfglootweapon":
 	{
+		_itemTypes = [];
 		if (DZE_MissionLootTable) then{
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(missionConfigFile >> "cfgLoot" >> _iClass);
+			} count getArray(missionConfigFile >> "cfgLoot" >> _iItem);
 		}
 		else {
 			{
 				_itemTypes set[count _itemTypes, _x select 0]
-			} count getArray(configFile >> "cfgLoot" >> _iClass);
+			} count getArray(configFile >> "cfgLoot" >> _iItem);
 		};
 		_index = dayz_CLBase find _iItem;
 		_weights = dayz_CLChances select _index;
