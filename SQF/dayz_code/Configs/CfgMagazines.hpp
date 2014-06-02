@@ -1164,7 +1164,7 @@ class CfgMagazines {
         		{
 			        text = $STR_EPOCH_PLAYER_259;
 			        Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
-			        neednearby[] = {"workshop"};
+			        neednearby[] = {"sawmill"};
 			        requiretools[] = {"ItemToolbox"};
 			        output[] = {{"PartPlankPack",1}};
 			        input[] = {{"PartWoodLumber",3}};
@@ -1238,12 +1238,12 @@ class CfgMagazines {
 			};
 			class Crafting4
 		        {
-		                text = $STR_EPOCH_PLAYER_264;
-		                Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
-		                neednearby[] = {"workshop"};
-		                requiretools[] = {"ItemToolbox"};
-		                output[] = {{"PartPlywoodPack",1}};
-		                input[] = {{"PartWoodPlywood",3}};
+		            text = $STR_EPOCH_PLAYER_264;
+		            Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+		            neednearby[] = {"sawmill"};
+		            requiretools[] = {"ItemToolbox"};
+		            output[] = {{"PartPlywoodPack",1}};
+		            input[] = {{"PartWoodPlywood",3}};
 		        };
 
 		};
