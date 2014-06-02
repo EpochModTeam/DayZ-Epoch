@@ -42,15 +42,16 @@ Developers
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
 * Axle - Beta Tester, Lead Trader City Designer, Ideas. - http://www.twitch.tv/axles
 * Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
-* Axeman - Developer - Light system - axeman@thefreezer.co.uk
-* Harlan (dayz10k) - Developer - https://github.com/dayz10k
 * Skaronator - Developer - Help with many things https://github.com/Skaronator
-* [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 * Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.  https://github.com/Zabn
+* Harlan (dayz10k) - Developer - https://github.com/dayz10k
+* Axeman - Developer - Light system - axeman@thefreezer.co.uk
+* [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
 
 --------------------------
 Contributors
 --------------------------
+* Icomrade - Fixes - https://github.com/Icomrade
 * Fank - Fixes - https://github.com/Fank
 * facoptere - Extra Security - https://github.com/facoptere
 * Torndeco - Fixes - https://github.com/Torndeco
