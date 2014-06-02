@@ -179,9 +179,9 @@ if (isServer && isNil "sm_done") then {
 			if (count _intentory > 0) then {
 				if (_type in DZE_LockedStorage) then {
 					// Fill variables with loot
-					_object setVariable ["WeaponCargo", (_intentory select 0)];
-					_object setVariable ["MagazineCargo", (_intentory select 1)];
-					_object setVariable ["BackpackCargo", (_intentory select 2)];
+					_object setVariable ["WeaponCargo", (_intentory select 0),true];
+					_object setVariable ["MagazineCargo", (_intentory select 1),true];
+					_object setVariable ["BackpackCargo", (_intentory select 2),true];
 				} else {
 
 					//Add weapons
