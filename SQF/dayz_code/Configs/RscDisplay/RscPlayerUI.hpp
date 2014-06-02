@@ -128,6 +128,14 @@ class RscTitles
 				w = 0.075;
 				h = 0.10;
 			};
+			class RscPicture_1307 : RscPictureGUI {
+				idc = 1307;
+				text = "\z\addons\dayz_code\gui\status_combat_inside_ca.paa";
+				x = "0.955313 * safezoneW + safezoneX";
+				y = "0.65 * safezoneH + safezoneY";
+				w = 0.06;
+				h = 0.08;
+			};
 			class RscPicture_1201: RscPictureGUI
 			{
 				idc = 1201;
