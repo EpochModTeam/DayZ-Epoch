@@ -561,28 +561,6 @@ if (!isDedicated) then {
 		};
 	};
 
-	// better item counting by maca134 - https://github.com/vbawol/DayZ-Epoch/issues/916
-	MC_item_spaces = {
-        private ["_unit", "_item", "_slotsEmpty", "_slotsItem", "_slotsAfterAdd", "_c", "_space"];
-        _unit = _this select 0;
-        _item = _this select 1;
-
-        _slotsEmpty = [_unit] call BIS_fnc_invSlotsEmpty;
-        _slotsItem = [_item] call BIS_fnc_invSlotType;
-        if ((typeName _unit) != "OBJECT") exitWith {textLogFormat ["INV_ Error: BIS_FNC_invAdd - 1st parameter must be unit! %1", _this];false};
-        if (((typeName _item) != "CONFIG") && ((typeName _item) != "STRING")) exitWith {textLogFormat ["INV_ Error: BIS_FNC_invAdd - 2nd parameter must be config|string|array of (config|string)! %1", _this];false};
-        if (isNil {_item})  exitWith {textLogFormat ["INV_ Error: BIS_FNC_invAdd - 2nd parameter - _item is undefined! %1", _this];false};
-        _c = 0;
-        _space = 0;
-        {
-                if (_x > 0) exitWith {
-                        _space = floor((_slotsEmpty select _c) / _x);
-                };
-                _c = _c + 1;
-        } count _slotsItem;
-        _space
-	};
-
 	dayz_EjectPlayer = {
 		// check if player in vehicle
         private ["_noDriver","_vehicle","_inVehicle"];
