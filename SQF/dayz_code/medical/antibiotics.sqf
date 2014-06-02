@@ -5,8 +5,8 @@ if (_hasMeds) then {
 	player removeMagazine _med;
 };
 //remove option
-player removeAction s_player_antiobiotic;
-s_player_antiobiotic = -1;
+// player removeAction s_player_antiobiotic;
+//s_player_antiobiotic = -1;
 
 //remove infection
 r_player_infected = false;
