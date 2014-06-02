@@ -6,7 +6,7 @@ DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
 
-diag_log format["DEBUG BACKPACK: %1", _this];
+//diag_log format["DEBUG BACKPACK: %1", _this];
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;

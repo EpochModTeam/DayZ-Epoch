@@ -80,7 +80,7 @@ if (_finished) then {
 		if (_count >= _qty_in) then {
 			_canAfford = true;
 		};
-		diag_log format["DEBUG vehicle sell count: %1", _count];
+		//diag_log format["DEBUG vehicle sell count: %1", _count];
 
 	} else {
 
@@ -157,7 +157,7 @@ if (_finished) then {
 
 			_objects = nearestObjects [(getPosATL player), [_part_in], _distance];
 
-			diag_log format["DEBUG vehicle sell objects: %1", _objects];
+			//diag_log format["DEBUG vehicle sell objects: %1", _objects];
 
 			_qty = ({(typeOf _x) == _part_in} count _objects);
 

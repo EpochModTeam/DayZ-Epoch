@@ -87,9 +87,9 @@ _vault_location = (getPosATL _tmpvault);
 
 
 // Make sure vault is not placed on road. 
-if (isOnRoad _vault_location) then { _isOk = true; diag_log ("surface is road"); };
+if (isOnRoad _vault_location) then { _isOk = true; };
 // Make sure vault is not placed in trader citys
-if(!canbuild) then { _isOk = true; diag_log ("is trader city"); };
+if(!canbuild) then { _isOk = true; };
 
 //Block Tents in pounds
 _objectsPond = 		nearestObjects [_playerPos, [], 10];

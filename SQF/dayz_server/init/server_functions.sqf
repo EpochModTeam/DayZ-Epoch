@@ -148,7 +148,7 @@ eh_localCleanup = {
 			deleteVehicle _unit;
 			deleteGroup _myGroupUnit;
 			//_unit = nil;
-			diag_log ("CLEANUP: DELETED A " + str(_type) );
+			// diag_log ("CLEANUP: DELETED A " + str(_type) );
 		};
 	}];
 };

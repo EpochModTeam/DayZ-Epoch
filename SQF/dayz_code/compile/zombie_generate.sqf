@@ -51,7 +51,7 @@ if ((dayz_spawnZombies < _maxControlledZombies) && (dayz_CurrentNearByZombies < 
 		//Check if anyone close
 		_tooClose = {isPlayer _x} count (_position nearEntities ["CAManBase",30]) > 0;
 		if (_tooClose) exitwith {
-			diag_log ("Zombie_Generate: was too close to player.");
+			// diag_log ("Zombie_Generate: was too close to player.");
 		};
 
 		//Add zeds if unitTypes equals 0
@@ -73,7 +73,7 @@ if ((dayz_spawnZombies < _maxControlledZombies) && (dayz_CurrentNearByZombies < 
 		};
 
 		//Check if point is in water
-		if (surfaceIsWater _position) exitwith { Diag_log ("Location is in Water Abort"); };
+		if (surfaceIsWater _position) exitwith {  };
 
 		_agent = createAgent [_type, _position, [], _radius, _method];
 		sleep 0.001;

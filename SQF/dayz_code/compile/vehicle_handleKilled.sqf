@@ -17,7 +17,7 @@ if (isServer) then {
 		PVDZE_veh_Update = [_unit, "killed",_killer];
 		_killerVeh = if (vehicle _killer != _killer) then { format["[KILLER IN VEHICLE %1 OF TYPE %2]", (vehicle _killer), (typeOf (vehicle _killer))]; } else {""};
 		_name = if (alive _killer) then { name _killer; } else { format["OBJECT %1", _killer]; };
-		diag_log format["DAMAGE: Vehicle %1 (TYPE: %2) Killed by player %3 (UID: %4) %5",_unit, (typeOf _unit), _name, (getPlayerUID _killer), _killerVeh];
+		// diag_log format["DAMAGE: Vehicle %1 (TYPE: %2) Killed by player %3 (UID: %4) %5",_unit, (typeOf _unit), _name, (getPlayerUID _killer), _killerVeh];
 	} else {
 		PVDZE_veh_Update = [_unit, "killed"];
 	};

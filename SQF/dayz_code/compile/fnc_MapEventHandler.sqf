@@ -6,7 +6,7 @@ if ("ItemMap_Debug" in items player) then {
 	for "_i" from 0 to (count _config -1) do {
 		_class = _config select _i; //Returns a conif		_name = 		getText (_class >> "name");		_type = 		getText (_class >> "type");		_position = 	getArray (_class >> "position");		_radiusA = 		getNumber (_class >> "radiusA");		_radiusB = 		getNumber (_class >> "radiusB");
 		if (_type in _maptype) then {
-		diag_log(format["Config Type, Name: %1 / Type: %2 / Position: %3, Passed",_name,_type,_position]);
+		//diag_log(format["Config Type, Name: %1 / Type: %2 / Position: %3, Passed",_name,_type,_position]);
 	//		_rnd = random 1;
 	//		_chance = 0.6;
 	//		if (_rnd < _chance) then {
