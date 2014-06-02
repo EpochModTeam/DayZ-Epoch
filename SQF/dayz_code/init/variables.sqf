@@ -731,7 +731,7 @@ if(!isDedicated) then {
 	};
 
 	if(isNil "DZE_AntiWallLimit") then {
-		DZE_AntiWallLimit = 1;
+		DZE_AntiWallLimit = 3;
 	};
 	if(isNil "DZE_requireplot") then {
 		DZE_requireplot = 1;
