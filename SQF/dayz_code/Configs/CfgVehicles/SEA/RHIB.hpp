@@ -17,7 +17,7 @@ class Ship : AllVehicles
     maxSpeed = 30;
     simulation = "ship";
     audible = 6;
-    fuelCapacity = 100;
+    fuelCapacity = 250;
     formationX = 50;
     formationZ = 100;
     brakeDistance = 50;
