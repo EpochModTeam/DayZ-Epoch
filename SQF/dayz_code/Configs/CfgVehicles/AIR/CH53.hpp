@@ -27,7 +27,8 @@ class CH53_DZ: CH53_base {
 	transportMaxWeapons = 25;
 	transportMaxMagazines = 80;
 	transportmaxbackpacks = 15;
-
+	fuelCapacity = 3849;
+	
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
 			magazines[] = {"2000Rnd_762x51_M134"};
