@@ -28,6 +28,7 @@ class UH1Y_DZ: UH1_Base {
 	transportmaxbackpacks = 4;
 	weapons[] = {};
 	magazines[] = {};
+	fuelCapacity = 1333;
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {"2000Rnd_762x51_M134"};
@@ -73,6 +74,7 @@ class UH1H_DZ: UH1H_base {
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 4;
+	fuelCapacity = 1333;
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {"100Rnd_762x51_M240"};
