@@ -25,6 +25,7 @@ class AH6X_DZ: AH6_Base_EP1 {
 	transportMaxWeapons = 3;
 	transportMaxMagazines = 10;
 	transportmaxbackpacks = 2;
+	fuelCapacity = 242;
 	class Turrets {};
 };
 class MH6J_DZ: AH6_Base_EP1 {
