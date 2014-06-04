@@ -1700,7 +1700,7 @@ class CfgMagazines {
 		{
 			class Crafting
 			{
-				text = $STR_EPOCH_PLAYER_269;
+				text = $STR_EPOCH_PLAYER_269b;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
