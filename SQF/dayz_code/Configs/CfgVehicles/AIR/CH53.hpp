@@ -29,15 +29,15 @@ class CH53_DZ: CH53_base {
 	transportmaxbackpacks = 15;
 
 	class Turrets : Turrets  {
-		class MainTurret : MainTurret  {
+		class MainTurret: MainTurret  {
 			magazines[] = {"2000Rnd_762x51_M134"};
 		};
 	};
 };
 class CH53_DZE: CH53_DZ	 {
 	displaynameshort = "CH53_DZE";
-	class Turrets : Turrets  {
-		class MainTurret : MainTurret  {
+	class Turrets: Turrets  {
+		class MainTurret: MainTurret  {
 			magazines[] = {""};
 		};
 	};
