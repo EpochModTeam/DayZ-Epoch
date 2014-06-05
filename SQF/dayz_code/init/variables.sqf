@@ -297,7 +297,7 @@ r_action_targets = 		[];
 r_pitchWhine = 			false;
 r_isBandit =			false;
 isInTraderCity =		false;
-
+NORRN_dropAction =		-1;
 DZE_PROTOBOX = objNull;
 
 //ammo routine
