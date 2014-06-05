@@ -8,7 +8,7 @@ _name 		= _args select 0;
 _vcl 		= _args select 1;
 _crewVcl	= crew _vcl;
 
-_name removeAction NORRN_pullOutAction;
+_name removeAction (_this select 2);
 
 for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 {

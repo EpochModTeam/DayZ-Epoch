@@ -20,7 +20,7 @@ item15[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000
 item16[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
-item19[] = {"Phase_One",2,4346,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
+item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
 item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
@@ -34,7 +34,7 @@ item29[] = {"ERROR__Bad_Versi",2,250,175.000000,800.000000,275.000000,850.000000
 item30[] = {"Display_Ready",4,218,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,"Display" \n "Ready"};
 item31[] = {"Preload_Display",2,250,-75.000000,1100.000000,25.000000,1150.000000,0.000000,"Preload" \n "Display"};
 item32[] = {"Preload_Done",4,218,-175.000000,1150.000000,-75.000000,1200.000000,0.000000,"Preload" \n "Done"};
-item33[] = {"Initialize",2,250,-75.000000,1200.000000,25.000000,1250.000000,0.000000,"Initialize"};
+item33[] = {"Initialize",2,4346,-75.000000,1200.000000,25.000000,1250.000000,0.000000,"Initialize"};
 item34[] = {"Finish",1,250,-75.000000,1300.000000,25.000000,1350.000000,0.000000,"Finish"};
 item35[] = {"True",8,218,25.000000,1250.000000,125.000000,1300.000000,0.000000,"True"};
 item36[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -60,7 +60,7 @@ item55[] = {"get_ready_to_clo",2,250,400.000000,400.000000,500.000000,450.000000
 item56[] = {"sleep_",4,218,550.000000,400.000000,650.000000,450.000000,0.000000,"sleep" \n ""};
 item57[] = {"Disconnect",2,250,825.000000,400.000000,925.000000,450.000000,0.000000,"Disconnect"};
 item58[] = {"No_time_date",4,218,25.000000,1150.000000,125.000000,1200.000000,0.000000,"No time/date"};
-item59[] = {"ERROR__No_Date_or",2,250,175.000000,1150.000000,275.000000,1200.000000,0.000000,"ERROR:" \n "No Date || Time"};
+item59[] = {"ERROR__No_Date_",2,250,175.000000,1150.000000,275.000000,1200.000000,0.000000,"ERROR:" \n "No Date || Time"};
 item60[] = {"Too_Long",4,218,300.000000,1150.000000,400.000000,1200.000000,0.000000,"Too" \n "Long"};
 item61[] = {"get_ready_to_clo_1",2,250,450.000000,800.000000,550.000000,850.000000,0.000000,"get ready to close"};
 item62[] = {"sleep_",4,218,600.000000,800.000000,700.000000,850.000000,0.000000,"sleep" \n ""};
@@ -169,8 +169,8 @@ link85[] = {75,57};
 link86[] = {76,78};
 link87[] = {77,76};
 link88[] = {78,57};
-globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-772.896301,771.877197,613.135803,-671.376831,864,612,1};
-window[] = {0,-1,-1,-1,-1,862,104,1593,104,1,882};
+globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-406.882782,405.863464,1403.492432,827.797180,864,612,1};
+window[] = {0,-1,-1,-1,-1,940,182,1671,182,1,882};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1212,6 +1212,7 @@ class FSM
        "r_player_cardiac = 		player getVariable[""USEC_isCardiac"",false];" \n
        "r_player_lowblood =		player getVariable[""USEC_lowBlood"",false];" \n
        "r_player_blood = 		player getVariable[""USEC_BloodQty"",r_player_bloodTotal];" \n
+       "selfTransfusionTime = time; //time to keep for last  self transfusion." \n
        "" \n
        """colorCorrections"" ppEffectEnable true;" \n
        """colorCorrections"" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1 min (4*r_player_blood/3/r_player_bloodTotal)],  [1, 1, 1, 0.0]];" \n
@@ -1312,7 +1313,7 @@ class FSM
         class No_time_date
         {
           priority = 0.000000;
-          to="ERROR__No_Date_or";
+          to="ERROR__No_Date_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!isNil ""PVDZE_plr_SetDate"""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -1575,10 +1576,10 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "ERROR__No_Date_or">*/
-    class ERROR__No_Date_or
+    /*%FSM<STATE "ERROR__No_Date_">*/
+    class ERROR__No_Date_
     {
-      name = "ERROR__No_Date_or";
+      name = "ERROR__No_Date_";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
        "_myTime = diag_tickTime;" \n

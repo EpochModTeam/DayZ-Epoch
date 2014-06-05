@@ -116,7 +116,7 @@ class CfgBuildingLoot {
 			{"specialclothes","specialclothes",0.01},
 			{"WeaponHolder_MeleeCrowbar","object",0.03},
 			{"ItemBriefcaseEmpty","magazine",0.01},
-			{ "shotgunsingleshot", "cfglootweapon", 0.05},
+			{ "shotgunsingleshot", "cfglootweapon", 0.05}
 		};
 		lootTypeSmall[] = {
 			{ "ItemSodaMdew","magazine",0.01 },
@@ -225,7 +225,7 @@ class CfgBuildingLoot {
 			{"ItemFishingPole","weapon",0.02},
 			{"ItemLightBulb","magazine",0.02},
 			{"ItemSledgeHandle","magazine",0.02},
-			{ "farmweapons", "cfglootweapon", 0.15},
+			{ "farmweapons", "cfglootweapon", 0.15}
 		};
 		lootTypeSmall[] = {
 			{ "","generic", 0.79},

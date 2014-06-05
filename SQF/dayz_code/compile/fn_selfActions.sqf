@@ -468,7 +468,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 
 	if (_player_SurrenderedGear) then {
 		if (s_player_SurrenderedGear < 0) then {
-			s_player_SurrenderedGear = player addAction [localize "STR_EPOCH_ACTION_GEAR", "\z\addons\dayz_code\actions\surrender_gear.sqf",_cursorTarget, 1, true, true, "", ""];
+			s_player_SurrenderedGear = player addAction [localize "STR_EPOCH_ACTIONS_GEAR", "\z\addons\dayz_code\actions\surrender_gear.sqf",_cursorTarget, 1, true, true, "", ""];
 		};
 	} else {
 		player removeAction s_player_SurrenderedGear;
