@@ -38,7 +38,7 @@ class CH53_DZE: CH53_DZ	 {
 	displaynameshort = "CH53_DZE";
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
-			magazines[] = {""};
+			magazines[] = {};
 		};
 	};
 };
