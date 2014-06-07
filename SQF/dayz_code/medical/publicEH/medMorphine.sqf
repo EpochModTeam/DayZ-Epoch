@@ -16,5 +16,5 @@ if ((_unit == player) || (vehicle player != player)) then {
 	_control = 	_display displayCtrl 1203;
 	_control ctrlShow false;
 	
-	_id = false spawn dayz_disableRespawn;
+	// _id = false spawn dayz_disableRespawn;
 };
