@@ -605,7 +605,15 @@ if(isServer) then {
 	if(isNil "DZE_CleanNull") then {
 		DZE_CleanNull = false;
 	};
-
+	if (isNil "DZE_DeathMsgGlobal") then {
+		DZE_DeathMsgGlobal = false;
+	};
+	if (isNil "DZE_DeathMsgSide") then {
+		DZE_DeathMsgSide = false;
+	};
+	if (isNil "DZE_DeathMsgTitleText") then {
+		DZE_DeathMsgTitleText = false;
+	};
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 };
 
