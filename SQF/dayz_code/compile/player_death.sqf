@@ -91,9 +91,9 @@ addSwitchableUnit dayz_originalPlayer;
 setPlayable dayz_originalPlayer;
 selectPlayer dayz_originalPlayer;
 
-_myGroup = group _body;
-[_body] joinSilent dayz_firstGroup;
-deleteGroup _myGroup;
+//_myGroup = group _body;
+//[_body] joinSilent dayz_firstGroup;
+//deleteGroup _myGroup;
 
 3 cutRsc ["default", "PLAIN",3];
 4 cutRsc ["default", "PLAIN",3];
