@@ -671,7 +671,7 @@ if(!isDedicated) then {
 	dayz_guiHumanity =		-90000;
 	dayz_firstGroup = 		group player;
 	dayz_originalPlayer = 	player;
-	dayz_playerName =		"Unknown";
+	dayz_playerName =		name player;
 	dayz_sourceBleeding =	objNull;
 	dayz_clientPreload = 	false;
 	dayz_authed = 			false;

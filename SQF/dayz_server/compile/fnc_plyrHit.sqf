@@ -4,7 +4,9 @@ _attacker = _this select 1;
 _damage = _this select 2;
 
 if (!isPlayer _victim || !isPlayer _attacker) exitWith {};
-if ((owner _victim) == (owner _attacker)) exitWith {};
+if ((owner _victim) == (owner _attacker)) exitWith {
+	_victim setVariable["AttackedBy", _victim, true];
+};
 
 _weapon = weaponState _attacker;
 if (_weapon select 0 == "Throw") then 
