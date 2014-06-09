@@ -7,7 +7,7 @@ _isVehicle = false;
 
 _vehicleSrc = 	_this select 3;
 
-_abort = false
+_abort = false;
 
 if(!(isNull _vehicleSrc)) then {
 
