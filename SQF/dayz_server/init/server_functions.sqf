@@ -833,20 +833,23 @@ server_spawnCleanLoot = {
 	_delQty = 0;
 	_dateNow = (DateToNumber date);
 	{
-		_keep = _x getVariable ["permaLoot",false];
-		if (!_keep) then {
-			_created = _x getVariable ["created",-0.1];
-			if (_created == -0.1) then {
-				_x setVariable ["created",_dateNow,false];
-				_created = _dateNow;
-			} else {
-				_age = (_dateNow - _created) * 525948;
-				if (_age > 20) then {
-					_nearby = {(isPlayer _x) && (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
-					if (_nearby==0) then {
-						deleteVehicle _x;
-						sleep 0.025;
-						_delQty = _delQty + 1;
+		if (!isNull _x) then {
+			_keep = _x getVariable["permaLoot", false];
+			if (!_keep) then {
+				_created = _x getVariable["created", -0.1];
+				if (_created == -0.1) then{
+					_x setVariable["created", _dateNow, false];
+					_created = _dateNow;
+				}
+				else {
+					_age = (_dateNow - _created) * 525948;
+					if (_age > 20) then{
+						_nearby = { (isPlayer _x) && (alive _x) } count(_x nearEntities[["CAManBase", "AllVehicles"], 130]);
+						if (_nearby == 0) then{
+							deleteVehicle _x;
+							sleep 0.025;
+							_delQty = _delQty + 1;
+						};
 					};
 				};
 			};
