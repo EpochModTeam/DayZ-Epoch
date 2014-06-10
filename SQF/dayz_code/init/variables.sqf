@@ -605,7 +605,15 @@ if(isServer) then {
 	if(isNil "DZE_CleanNull") then {
 		DZE_CleanNull = false;
 	};
-
+	if (isNil "DZE_DeathMsgGlobal") then {
+		DZE_DeathMsgGlobal = false;
+	};
+	if (isNil "DZE_DeathMsgSide") then {
+		DZE_DeathMsgSide = false;
+	};
+	if (isNil "DZE_DeathMsgTitleText") then {
+		DZE_DeathMsgTitleText = false;
+	};
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 };
 
@@ -663,7 +671,7 @@ if(!isDedicated) then {
 	dayz_guiHumanity =		-90000;
 	dayz_firstGroup = 		group player;
 	dayz_originalPlayer = 	player;
-	dayz_playerName =		"Unknown";
+	dayz_playerName =		name player;
 	dayz_sourceBleeding =	objNull;
 	dayz_clientPreload = 	false;
 	dayz_authed = 			false;

@@ -115,7 +115,7 @@ switch _option do {
 			_countIn = _x select 1;
 			_itemText = getText(configFile >> "CfgMagazines" >> _itemIn >> "displayName");
 			if (_cost != "") then {
-				_cost = _cost + " && ";
+				_cost = _cost + " and ";
 			};
 			_cost = _cost + (str(_countIn) + " of " + _itemText);
 		} count _requirements;

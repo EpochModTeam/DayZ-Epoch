@@ -366,17 +366,15 @@ class CfgBuildingLoot {
 			{ "machineguns", "cfglootweapon", 0.03 }
 		};
 		lootTypeSmall[] = {
-			{ "pistols","cfglootweapon",0.15 },
-			{ "Binocular","weapon",0.02 },
-			{ "ItemFlashlightRed","weapon",0.03 },
-			{ "ItemKnife","weapon",0.04 },
-			{ "ItemGPS","weapon",0.02 },
-			{ "ItemMap","weapon",0.02 },
-			{ "","medical",0.09 },
-			{ "","generic",0.34 },
-			{ "","military",0.26 },
-			{ "submachinegun","cfglootweapon",0.02 },
-			{ "ItemEtool","weapon",0.01 }
+			{ "pistols", "cfglootweapon", 0.14 },
+			{ "Binocular", "weapon", 0.05 },
+			{ "ItemFlashlightRed", "weapon", 0.03 },
+			{ "ItemKnife", "weapon", 0.04 },
+			{ "ItemGPS", "weapon", 0.02 },
+			{ "", "medical", 0.12 },
+			{ "", "generic", 0.22 },
+			{ "", "military", 0.35 },
+			{ "ItemEtool", "weapon", 0.03 }
 		};
 	};
 	class MilitaryIndustrial: Default {
@@ -412,16 +410,15 @@ class CfgBuildingLoot {
 			{ "machineguns", "cfglootweapon", 0.01 }
 		};
 		lootTypeSmall[] = {
-			{ "pistols","cfglootweapon",0.12 },
-			{ "Binocular","weapon",0.05 },
-			{ "ItemFlashlightRed","weapon",0.03 },
-			{ "ItemKnife","weapon",0.04 },
-			{ "ItemGPS","weapon",0.02 },
-			{ "","medical",0.02 },
-			{ "","generic",0.09 },
-			{ "","military",0.34 },
-			{ "submachinegun","cfglootweapon",0.26 },
-			{ "ItemEtool","weapon",0.03 }
+			{ "pistols", "cfglootweapon", 0.14 },
+			{ "Binocular", "weapon", 0.05 },
+			{ "ItemFlashlightRed", "weapon", 0.03 },
+			{ "ItemKnife", "weapon", 0.04 },
+			{ "ItemGPS", "weapon", 0.02 },
+			{ "", "medical", 0.12 },
+			{ "", "generic", 0.22 },
+			{ "", "military", 0.35 },
+			{ "ItemEtool", "weapon", 0.03 }
 		};
 	};
 	class IndustrialMilitary: Default {
@@ -462,15 +459,14 @@ class CfgBuildingLoot {
 			{ "machineguns", "cfglootweapon", 0.01 }
 		};
 		lootTypeSmall[] = {
-			{ "pistols", "cfglootweapon", 0.12 },
+			{ "pistols", "cfglootweapon", 0.14 },
 			{ "Binocular", "weapon", 0.05 },
 			{ "ItemFlashlightRed", "weapon", 0.03 },
 			{ "ItemKnife", "weapon", 0.04 },
 			{ "ItemGPS", "weapon", 0.02 },
-			{ "", "medical", 0.02 },
-			{ "", "generic", 0.09 },
-			{ "", "military", 0.34 },
-			{ "submachinegun", "cfglootweapon", 0.26 },
+			{ "", "medical", 0.12 },
+			{ "", "generic", 0.22 },
+			{ "", "military", 0.35 },
 			{ "ItemEtool", "weapon", 0.03 }
 		};
 	};
