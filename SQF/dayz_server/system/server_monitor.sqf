@@ -80,7 +80,7 @@ if (isServer && isNil "sm_done") then {
 				_vQty = _vQty + 1;
 			};
 		};
-		diag_log ("HIVE: got " + str(_bQty) + " Epoch Objects && " + str(_vQty) + " Vehicles");
+		diag_log ("HIVE: got " + str(_bQty) + " Epoch Objects and " + str(_vQty) + " Vehicles");
 	};
 	
 	// # NOW SPAWN OBJECTS #
