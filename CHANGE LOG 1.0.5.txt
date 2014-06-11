@@ -16,6 +16,7 @@
 [FIXED] Load patient into vehicle now working. @SilvDev
 [FIXED] Fix invalid str format for player skin class. @Sandbird https://github.com/vbawol/DayZ-Epoch/commit/55d49c279bfd1e03d3802bfe4fdf55f2335f8f47
 [FIXED] Check trade requirements before animation. @Cornyfisch
+[FIXED] Undefined variable in expression in "fill_nearestVehicle.sqf" @Namindu
 
 [CHANGED] Crafting lumber or plywood packs no longer require workbench. @vbawol
 [CHANGED] Force mouse to center of screen on gear open. @vbawol
