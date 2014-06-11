@@ -1,3 +1,4 @@
+[ADDED] Updated Sauerland map V1.80.01 by Falconsan http://epochmod.com/forum/index.php?/topic/6365-dayz-epoch-sauerland-changelog
 [ADDED] More enterable buildings thanks to @Tansien and the DayZero crew.
 [ADDED] Latest version of Napf 1.0.1 by Momo
 [ADDED] Classname C130J_US_EP1_DZ Weapon: 50 Magazine: 400 Backpack: 10 @Fank
