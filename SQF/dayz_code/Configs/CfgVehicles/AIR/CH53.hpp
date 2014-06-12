@@ -1,7 +1,7 @@
 class USEC_ch53_E;
 class CH53_DZE : USEC_ch53_E {
-	displayname = "USEC CH53E DZ";
-	displaynameshort = "CH53_DZ";
+	displayname = "USEC CH53E DZE";
+	displaynameshort = "CH53_DZE";
 	enablemanualfire = 0;
 	scope = 2;
 	side = 2;
