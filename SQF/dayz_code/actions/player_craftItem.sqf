@@ -37,7 +37,8 @@ _abort = false;
 _distance = 3;
 _reason = "";
 _waterLevel = 0;
-
+_outputWeapons = [];
+_selectedRecipeOutput = [];
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 
@@ -208,12 +209,10 @@ if (_canDo) then {
 						} forEach _inputWeapons;
 						if (_num_removed_weapons == (count _inputWeapons)) then {
 							if(_randomOutput == 1) then {
-								_outputWeapons = [];
 								if (!isNil "_outputWeapons" && count _outputWeapons > 0) then {
 									_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
 									_outputWeapons = [_selectedWeapon];
 								};
-								_selectedRecipeOutput = [];
 								if (!isNil "_selectedRecipeOutput" && count _selectedRecipeOutput > 0) then {
 									_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
 									_selectedRecipeOutput = [_selectedMag];
