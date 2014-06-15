@@ -15,7 +15,7 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 	"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
 	0 fadeSound 0.05;
 	disableUserInput true;
-	while {(r_player_unconscious)} do {
+	while {r_player_unconscious} do {
 		_ctrl1 ctrlSetPosition [(_ctrl1Pos select 0),(_ctrl1Pos select 1),(_ctrl1Pos select 2),((0.136829 * safezoneH) * (1 -(r_player_timeout / _totalTimeout)))];
 		_ctrl1 ctrlCommit 1;
 		playSound "heartbeat_1";
@@ -33,7 +33,7 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 		if (r_player_timeout > 0) then {
 			r_player_timeout = r_player_timeout - 1;
 		} else {
-			if ((!r_player_dead) && (!r_player_cardiac)) then {
+			if (!r_player_dead) then {
 				_nul = [] spawn fnc_usec_recoverUncons;
 			};
 		};
