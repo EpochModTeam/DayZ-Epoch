@@ -1,6 +1,7 @@
 private ["_totalTimeout","_timeout","_bloodLow","_display","_ctrl1","_ctrl1Pos"];
 disableSerialization;
 if ((!r_player_handler1) && (r_handlerCount == 0)) then {
+	if (r_player_cardiac) then {r_player_timeout = r_player_timeout max 300;};
 	_totalTimeout = r_player_timeout;
 	if (_totalTimeout == 0) then { _totalTimeout = 1; };
 	4 cutRsc ["playerStatusWaiting", "PLAIN",0];
