@@ -7,7 +7,7 @@ r_action = false;
 
 _callerID = _caller getVariable ["CharacterID", "0"];
 _targetID = _target getVariable ["CharacterID", "0"];
-if ((_callerID != 0) && (_callerID != 0)) then {
+if ((_callerID != 0) && (_targetID != 0)) then {
 	_friendlies = _caller getVariable ["friendlies", []];
 	_friendlies set [count _friendlies, _targetID];
 	_caller setVariable ["friendlies", _friendlies, true];
