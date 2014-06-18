@@ -19,6 +19,7 @@
 [FIXED] Check trade requirements before animation. @Cornyfisch
 [FIXED] Undefined variable in expression in "fill_nearestVehicle.sqf" @Namindu
 [FIXED] Fix infinite knockout @icomrade
+[FIXED] Fixed typo in "player_tagFriendly.sqf" @Namindu
 
 [CHANGED] Crafting lumber or plywood packs no longer require workbench. @vbawol
 [CHANGED] Force mouse to center of screen on gear open. @vbawol
