@@ -1,0 +1,368 @@
+/*%FSM<COMPILE "D:\Programme\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Server Cleanup">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-25.000000,-350.000000,75.000000,-300.000000,0.000000,"init"};
+item1[] = {"prepare",2,250,375.000000,-350.000000,475.000000,-300.000000,0.000000,"prepare"};
+item2[] = {"initialized",4,218,175.000000,-350.000000,275.000000,-300.000000,0.000000,"initialized"};
+item3[] = {"true",8,218,375.000000,-275.000000,475.000000,-225.000000,0.000000,"true"};
+item4[] = {"waiting",2,250,375.000000,-200.000000,475.000000,-150.000000,0.000000,"waiting"};
+item5[] = {"true",8,218,375.000000,75.000000,475.000000,125.000000,0.000000,"true"};
+item6[] = {"general_cleanup",2,250,375.000000,150.000000,475.000000,200.000000,0.000000,"general" \n "cleanup" \n "loop"};
+item7[] = {"",7,210,21.000000,170.999985,29.000000,179.000000,0.000000,""};
+item8[] = {"",7,210,21.000004,-254.000000,28.999998,-246.000000,0.000000,""};
+item9[] = {"",7,210,821.000000,-179.000000,829.000000,-171.000000,0.000000,""};
+item10[] = {"",7,210,821.000000,96.000000,829.000000,104.000000,0.000000,""};
+item11[] = {"___second_loop",4,218,50.000000,-75.000000,150.000000,-25.000000,1.000000,"3 second" \n "loop"};
+item12[] = {"__s_update__obje",4,218,175.000000,-100.000000,275.000000,-50.000000,2.000000,"5s" \n "update " \n "objects"};
+item13[] = {"___min__loop",4,218,300.000000,-125.000000,400.000000,-75.000000,3.000000,"1 min" \n " loop"};
+item14[] = {"___min_loop",4,218,450.000000,-125.000000,550.000000,-75.000000,4.000000,"5 min" \n "loop"};
+item15[] = {"__0_min__loop",4,218,575.000000,-100.000000,675.000000,-50.000000,5.000000,"10 min" \n " loop"};
+item16[] = {"__5_min__loop",4,218,700.000000,-75.000000,800.000000,-25.000000,6.000000,"15 min" \n " loop"};
+item17[] = {"cleanup_animals",2,250,700.000000,25.000000,800.000000,75.000000,0.000000,"cleanup" \n "animals and fire"};
+item18[] = {"cleanup_dead",2,250,575.000000,0.000000,675.000000,50.000000,0.000000,"cleanup" \n "dead"};
+item19[] = {"sync_time",2,250,450.000000,-25.000000,550.000000,25.000000,0.000000,"sync time"};
+item20[] = {"cleanup_loot",2,250,300.000000,-25.000000,400.000000,25.000000,0.000000,"cleanup" \n "loot"};
+item21[] = {"group_cleanup",2,4346,50.000000,25.000000,150.000000,75.000000,0.000000,"group" \n "cleanup"};
+item22[] = {"update_objects",2,250,175.000000,0.000000,275.000000,50.000000,0.000000,"update objects"};
+link0[] = {0,2};
+link1[] = {1,3};
+link2[] = {2,1};
+link3[] = {3,4};
+link4[] = {4,9};
+link5[] = {4,11};
+link6[] = {4,12};
+link7[] = {4,13};
+link8[] = {4,14};
+link9[] = {4,15};
+link10[] = {4,16};
+link11[] = {5,6};
+link12[] = {6,7};
+link13[] = {7,8};
+link14[] = {8,3};
+link15[] = {9,10};
+link16[] = {10,5};
+link17[] = {11,21};
+link18[] = {12,22};
+link19[] = {13,20};
+link20[] = {14,19};
+link21[] = {15,18};
+link22[] = {16,17};
+link23[] = {17,5};
+link24[] = {18,5};
+link25[] = {19,5};
+link26[] = {20,5};
+link27[] = {21,5};
+link28[] = {22,5};
+globals[] = {25.000000,1,0,0,0,640,480,1,136,6316128,1,-53.328339,954.791992,443.544983,-436.145996,1044,911,1};
+window[] = {2,-1,-1,-1,-1,1089,222,1514,277,3,1062};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "DayZ Server Cleanup";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"//Major Performance Speedup by Skaronator ;)"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "initialized">*/
+        class initialized
+        {
+          priority = 0.000000;
+          to="prepare";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isnil ""bis_fnc_init"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "prepare">*/
+    class prepare
+    {
+      name = "prepare";
+      init = /*%FSM<STATEINIT""">*/"diag_log (""CLEANUP: INITIALIZING CLEANUP SCRIPT"");" \n
+       "" \n
+       "_lastUpdate = diag_tickTime;" \n
+       "_lastNeedUpdate = diag_tickTime;" \n
+       "_lastCleanupVehicles = diag_tickTime;" \n
+       "_lastCleanupGroups = diag_tickTime;" \n
+       "_lastCleanupNull = diag_tickTime;" \n
+       "" \n
+       "_lastCleanup900 = diag_tickTime;" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="waiting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "waiting">*/
+    class waiting
+    {
+      name = "waiting";
+      init = /*%FSM<STATEINIT""">*/"//diag_log ""CLEANUP: Waiting for next task"";" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__5_min__loop">*/
+        class __5_min__loop
+        {
+          priority = 6.000000;
+          to="cleanup_animals";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanup900) > 900)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastCleanup900 = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__0_min__loop">*/
+        class __0_min__loop
+        {
+          priority = 5.000000;
+          to="cleanup_dead";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupNull) > 600)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastCleanupNull = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "___min_loop">*/
+        class ___min_loop
+        {
+          priority = 4.000000;
+          to="sync_time";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastUpdate) > 300)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "___min__loop">*/
+        class ___min__loop
+        {
+          priority = 3.000000;
+          to="cleanup_loot";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupVehicles) > 60)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastCleanupVehicles = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__s_update__obje">*/
+        class __s_update__obje
+        {
+          priority = 2.000000;
+          to="update_objects";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(( (count needUpdate_objects) > 0) && (diag_tickTime -_lastNeedUpdate> 5))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastNeedUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "___second_loop">*/
+        class ___second_loop
+        {
+          priority = 1.000000;
+          to="group_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastCleanupGroups) > 3)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastCleanupGroups = diag_tickTime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "general_cleanup">*/
+    class general_cleanup
+    {
+      name = "general_cleanup";
+      init = /*%FSM<STATEINIT""">*/"//diag_log ""CLEANUP: Starting loop for next task"";" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="waiting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "cleanup_animals">*/
+    class cleanup_animals
+    {
+      name = "cleanup_animals";
+      init = /*%FSM<STATEINIT""">*/"[] spawn server_spawnCleanFire;" \n
+       "[] spawn server_spawnCleanAnimals;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "cleanup_dead">*/
+    class cleanup_dead
+    {
+      name = "cleanup_dead";
+      init = /*%FSM<STATEINIT""">*/"[] spawn server_spawncleanDead;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "sync_time">*/
+    class sync_time
+    {
+      name = "sync_time";
+      init = /*%FSM<STATEINIT""">*/"if (DZE_DiagFpsSlow) then {" \n
+       "	call dze_diag_fps;" \n
+       "};" \n
+       "call server_timeSync;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "cleanup_loot">*/
+    class cleanup_loot
+    {
+      name = "cleanup_loot";
+      init = /*%FSM<STATEINIT""">*/"if (DZE_DiagFpsFast) then {" \n
+       "	call dze_diag_fps;" \n
+       "};" \n
+       "" \n
+       "[] spawn server_spawnCleanLoot;" \n
+       "" \n
+       "// set player save time based on server performance" \n
+       "PVDZE_plr_SetSaveTime = round(60 - diag_fps);" \n
+       "publicVariable ""PVDZE_plr_SetSaveTime"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "group_cleanup">*/
+    class group_cleanup
+    {
+      name = "group_cleanup";
+      init = /*%FSM<STATEINIT""">*/"[] spawn server_checkHackers;" \n
+       "[] spawn server_cleanupGroups;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "update_objects">*/
+    class update_objects
+    {
+      name = "update_objects";
+      init = /*%FSM<STATEINIT""">*/"{" \n
+       "	needUpdate_objects = needUpdate_objects - [_x];" \n
+       "	[_x,""damage"",true] call server_updateObject;" \n
+       "} forEach needUpdate_objects;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="general_cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+  };
+};
+/*%FSM</COMPILE>*/

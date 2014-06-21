@@ -1,0 +1,11 @@
+/*
+/*/
+!.gitignore
+!/@DayZ_Epoch_Server/
+!/Battleye/
+!/Config-Examples/
+!/Keys/
+!/MPMissions/
+!/SQL/
+!/Tools/
+!Readme.txt
