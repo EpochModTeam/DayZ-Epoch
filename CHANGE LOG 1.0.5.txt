@@ -1,3 +1,4 @@
+[ADDED] Updated Sauerland map V1.80.01 by Falconsan http://epochmod.com/forum/index.php?/topic/6365-dayz-epoch-sauerland-changelog
 [ADDED] More enterable buildings thanks to @Tansien and the DayZero crew.
 [ADDED] Latest version of Napf 1.0.1 by Momo
 [ADDED] Classname C130J_US_EP1_DZ Weapon: 50 Magazine: 400 Backpack: 10 @Fank
@@ -16,6 +17,9 @@
 [FIXED] Load patient into vehicle now working. @SilvDev
 [FIXED] Fix invalid str format for player skin class. @Sandbird https://github.com/vbawol/DayZ-Epoch/commit/55d49c279bfd1e03d3802bfe4fdf55f2335f8f47
 [FIXED] Check trade requirements before animation. @Cornyfisch
+[FIXED] Undefined variable in expression in "fill_nearestVehicle.sqf" @Namindu
+[FIXED] Fix infinite knockout @icomrade
+[FIXED] Fixed typo in "player_tagFriendly.sqf" @Namindu
 
 [CHANGED] Crafting lumber or plywood packs no longer require workbench. @vbawol
 [CHANGED] Force mouse to center of screen on gear open. @vbawol

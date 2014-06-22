@@ -153,7 +153,7 @@ if(_IsNearPlot == 0) then {
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner
-	_ownerID = _nearestPole getVariable["CharacterID","0"];
+	_ownerID = _nearestPole getVariable ["CharacterID","0"];
 
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
@@ -183,7 +183,7 @@ _missing = "";
 _hasrequireditem = true;
 {
 	_hastoolweapon = _x in weapons player;
-	if(!_hastoolweapon) exitWith { _hasrequireditem = false; _missing = getText (configFile >> "cfgWeapons" >> _x >> "displayName"); }
+	if(!_hastoolweapon) exitWith { _hasrequireditem = false; _missing = getText (configFile >> "cfgWeapons" >> _x >> "displayName"); };
 } count _require;
 
 _hasbuilditem = _this in magazines player;

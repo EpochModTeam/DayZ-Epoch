@@ -5,8 +5,11 @@ _minutes =		_this select 1;
 _newObject = 	_this select 2;
 _playerID = 	_this select 3;
 _infected =		_this select 4;
-_victimName =	_this select 5;
-
+if (((count _this) >= 6) && {(typeName (_this select 5)) == "STRING"} && {(_this select 5) != ""}) then {
+	_victimName =	_this select 5;
+} else {
+	_victimName =  if (alive _newObject) then {name _newObject;} else {"";};
+};
 _victim = _newObject;
 _newObject setVariable ["bodyName", _victimName, true];
 

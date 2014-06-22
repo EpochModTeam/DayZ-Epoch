@@ -37,7 +37,8 @@ _abort = false;
 _distance = 3;
 _reason = "";
 _waterLevel = 0;
-
+_outputWeapons = [];
+_selectedRecipeOutput = [];
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 
@@ -95,7 +96,7 @@ if (_canDo) then {
 		{
 			_hastoolweapon = _x in weapons player;
 			if(!_hastoolweapon) exitWith { _craft_doLoop = false; _missingTools = true; _missing = _x; };
-		} count _selectedRecipeTools;
+		} forEach _selectedRecipeTools;
 
 		if(!_missingTools) then {
 
@@ -173,7 +174,7 @@ if (_canDo) then {
 									};
 								};
 							};
-						} count magazines player;
+						} forEach magazines player;
 
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
@@ -205,15 +206,13 @@ if (_canDo) then {
 						_num_removed_weapons = 0;
 						{
 							_num_removed_weapons = _num_removed_weapons + ([player,_x] call BIS_fnc_invRemove);
-						} count _inputWeapons;
+						} forEach _inputWeapons;
 						if (_num_removed_weapons == (count _inputWeapons)) then {
 							if(_randomOutput == 1) then {
-								_outputWeapons = [];
 								if (!isNil "_outputWeapons" && count _outputWeapons > 0) then {
 									_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
 									_outputWeapons = [_selectedWeapon];
 								};
-								_selectedRecipeOutput = [];
 								if (!isNil "_selectedRecipeOutput" && count _selectedRecipeOutput > 0) then {
 									_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
 									_selectedRecipeOutput = [_selectedMag];
@@ -223,7 +222,7 @@ if (_canDo) then {
 							};
 							{
 								player addWeapon _x;
-							} count _outputWeapons;
+							} forEach _outputWeapons;
 							{
 
 								_itemOut = _x select 0;
@@ -250,14 +249,14 @@ if (_canDo) then {
 								// sleep here
 								sleep 1;
 
-							} count _selectedRecipeOutput;
+							} forEach _selectedRecipeOutput;
 
 							_tradeComplete = _tradeComplete+1;
 						};
 
 					} else {
 						// Refund parts since we failed
-						{player addMagazine _x;} count _temp_removed_array;
+						{player addMagazine _x; } forEach _temp_removed_array;
 
 						cutText [format[(localize "str_epoch_player_151"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 					};
