@@ -559,6 +559,8 @@ if (!isDedicated) then {
 		if (isServer) then {
 			_unit addEventHandler ["local", {_this call zombie_findOwner}];
 		};
+		_id = _unit addeventhandler["HandleDamage", { _this call local_zombieDamage }];
+		_id = _unit addeventhandler["Killed", { [_this, "zombieKills"] call local_eventKill }];
 	};
 
 	dayz_EjectPlayer = {
