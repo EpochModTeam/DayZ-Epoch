@@ -27,6 +27,7 @@ Included Custom Addons
 * gdtmod_grass 1.00 by HeinBloed - http://www.gdt-server.net/
 * Bell 47/H-13 Helicopter by hcpookie - http://www.armaholic.com/page.php?id=22143
 * USEC CH53 by Rocket - http://dayz.com
+* More enterable buildings - Dayzero - https://zombies.nu/
 
 --------------------------
 Included Custom Islands
