@@ -42,12 +42,12 @@ Included Custom Islands
 Developers
 --------------------------
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
-* Axle - Beta Tester, Trader City Designer - http://www.twitch.tv/axles
+* Axle - Tester, Trader City Designer - http://www.twitch.tv/axles
 * Paul Tomany - Models, Textures - ptomany@gmail.com - http://www.twitch.tv/sequisha
 * [VB]GREEN - Graphics - http://www.twitch.tv/vbgreen
 
 --------------------------
-GitHub Collaborators
+GitHub Collaborators (In order of most commits)
 --------------------------
 * vbawol - https://github.com/vbawol
 * eltexonline - https://github.com/eltexonline
@@ -62,7 +62,7 @@ GitHub Collaborators
 * Armifer - https://github.com/Armifer
 
 --------------------------
-GitHub Contributors
+GitHub Contributors (In order of most commits)
 --------------------------
 * vbawol - https://github.com/vbawol
 * dayz10k - https://github.com/dayz10k
