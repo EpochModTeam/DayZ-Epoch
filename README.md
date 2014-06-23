@@ -39,7 +39,7 @@ Included Custom Islands
 * | German Town - and waysigns http://www.armaholic.com/page.php?id=9658
 
 --------------------------
-Developers
+Inital Developers
 --------------------------
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
 * Axle - Tester, Trader City Designer - http://www.twitch.tv/axles
