@@ -1332,8 +1332,6 @@ class Mission
 			expCond="(player distance Seedorf) < 100;";
 			expActiv="[""Boat Vendor"",true,""enter""] spawn player_traderCity;";
 			expDesactiv="[""Boat Vendor"",true,""leave""] spawn player_traderCity;";
-			expActiv="TitleText[""Now Entering Trader City Seedorf"",""PLAIN DOWN""]; canbuild = false;";
-			expDesactiv="TitleText[""Now Leaving Trader City Seedorf"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
 			{
 			};
