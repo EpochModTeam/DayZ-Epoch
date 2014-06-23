@@ -9,6 +9,7 @@
 [ADDED] Default player skin for fresh spawns, selected randomly DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]]. @icomrade
 [ADDED] The USEC CH53 Super Stallion to the dynamic vehicle lists & trader. @Namindu @raginruffalo
 [ADDED] The BAF Merlin has been added to the neutral aircraft trader under Unarmed Helicopters. @raginruffalo
+[ADDED] Added CH53 Super Stallion to Allowed to Tow Heli array in "variables.sqf" @Namindu
 
 [FIXED] Instance already initialized error in server_monitor.sqf @vbawol
 [FIXED] Fixed infinite chainsaw fuel when put into vaults/lockboxes. @SilvDev
