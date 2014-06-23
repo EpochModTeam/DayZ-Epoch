@@ -42,13 +42,9 @@ Included Custom Islands
 Developers
 --------------------------
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
-* Axle - Beta Tester, Lead Trader City Designer, Ideas. - http://www.twitch.tv/axles
-* Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
-* icomrade - Developer - https://github.com/Icomrade
-* Skaronator - Developer - Help with many things https://github.com/Skaronator
-* Harlan (dayz10k) - Developer - https://github.com/dayz10k
-* Axeman - Developer - Light system - axeman@thefreezer.co.uk
-* [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
+* Axle - Beta Tester, Trader City Designer - http://www.twitch.tv/axles
+* Paul Tomany - Models, Textures - ptomany@gmail.com - http://www.twitch.tv/sequisha
+* [VB]GREEN - Graphics - http://www.twitch.tv/vbgreen
 
 --------------------------
 GitHub Collaborators
