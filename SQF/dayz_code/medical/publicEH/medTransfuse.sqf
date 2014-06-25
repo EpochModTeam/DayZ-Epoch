@@ -9,7 +9,11 @@ if (_unit == player) then {
 		_selfTransValues = _this select 1;
 		r_player_blood = r_player_blood + (_selfTransValues select 0);
 		if (r_player_blood > 12000) then {r_player_blood = 12000;};
-		_TransfusionInfection = ((random (_selfTransValues select 1)) < 1);
+		if ((_selfTransValues select 1) < 0) then {
+			_TransfusionInfection = false;
+		} else {
+			_TransfusionInfection = ((random (_selfTransValues select 1)) < 1);
+		};
 	} else {
 		r_player_blood = r_player_bloodTotal;
 	};
