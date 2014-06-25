@@ -181,7 +181,7 @@ class RscDisplayMain : RscStandardDisplay {
 		class CA_Version;
 		class DAYZ_Version : CA_Version {
 			idc = -1;
-			text = "1.0.5";
+			text = "1.0.5.1";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
