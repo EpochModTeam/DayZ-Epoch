@@ -1,0 +1,5 @@
+[FIXED] Fixed client crash when player has chainsaw due to corrupt RTM file. @vbawol
+
+[INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
+[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Special thanks to http://verthosting.com for hosting our development server.
