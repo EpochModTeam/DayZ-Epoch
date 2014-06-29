@@ -155,6 +155,7 @@ class Skin_SurvivorWpink_DZ: SkinBase {
 	displayName = "Melly (female)";
 	descriptionShort = "Purple top with blue pants.";
 };
+/*
 class Skin_SurvivorWsequisha_DZ: SkinBase {
 	scope = 2;
 	displayName = "Maria (female)";
@@ -165,6 +166,7 @@ class Skin_SurvivorWsequishaD_DZ: SkinBase {
 	displayName = "Sequisha (female)";
 	descriptionShort = "Sequisha Clothes (female)";
 };
+*/
 class Skin_SurvivorWcombat_DZ: SkinBase {
 	scope = 2;
 	displayName = "Alejandria";
