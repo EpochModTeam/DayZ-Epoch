@@ -1,4 +1,4 @@
-private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_tagSetting","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_playerObjName","_wpnType","_ismelee"];
+private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_tagSetting","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_playerObjName","_wpnType","_ismelee"];
 
 _class 			= _this;
 _position 		= getPosATL player;
@@ -130,7 +130,12 @@ if (!isNil "_newBackpackType") then {
 		//magazines
 		_countr = 0;
 		{
-			if (!(isClass(configFile >> "CfgWeapons" >> _x))) then {
+			if ((typeName _x) != "STRING") then {
+				_isWeapon = (isClass(configFile >> "CfgWeapons" >> (_x select 0)));
+			} else {
+				_isWeapon = (isClass(configFile >> "CfgWeapons" >> _x));
+			};
+			if (!_isWeapon) then {
 				_countr = _countr + 1;
 				if ((typeName _x) != "STRING") then {
 					(unitBackpack player) addMagazineCargoGlobal [(_x select 0), 1];
