@@ -1,6 +1,8 @@
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 
-[FIXED] Backpack wipes when changing #1361 @icomrade
+[FIXED] Backpack wipes when changing. #1361 @icomrade
+
+[UPDATED] hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 
 [INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
 [INFO] Models/textures by Paul Tomany. @Sequisha.
