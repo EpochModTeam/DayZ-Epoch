@@ -683,18 +683,24 @@ if(!isDedicated) then {
 	dayz_spawnZombies = 0;
 	dayz_swarmSpawnZombies = 0;
 //Max local
-	dayz_maxLocalZombies = 30; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
-//Current NearBy
 	dayz_CurrentNearByZombies = 0;
 //Max NearBy
-	dayz_maxNearByZombies = 60; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
+	if (isNil "dayz_maxNearByZombies") then {
+		dayz_maxNearByZombies = 60; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 //Current total
+	};
 	dayz_currentGlobalZombies = 0;
 //Max global zeds.
-	dayz_maxGlobalZeds = 3000;
-	dayz_spawnDelay =		120;
-	dayz_spawnWait =		-120;
-	dayz_lootDelay =		3;
+	if (isNil "dayz_maxGlobalZeds") then {
+		dayz_maxGlobalZeds = 3000;
+	};
+	if (isNil "dayz_spawnDelay") then {
+		dayz_spawnDelay =		120;
+	};
+	dayz_spawnWait =		-(dayz_spawnDelay);
+	if (isNil "dayz_lootDelay") then {
+		dayz_lootDelay =		3;
+	};
 	dayz_lootWait =			-300;
 	//used to count global zeds around players
 	dayz_CurrentZombies = 0;
