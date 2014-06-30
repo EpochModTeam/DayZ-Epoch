@@ -1,9 +1,13 @@
+[NEW] Use DayZ_UseSteamID = false; in your init.sqf to use the old PlayerUID, instead of SteamID @icomrade
+[NOTE] It's recommend to convert to the new SteamID system if possible, New servers should not use DayZ_UseSteamID = false;
+
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 
 [FIXED] Backpack wipes when changing. #1361 @icomrade
 
 [UPDATED] hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 
+[INFO] Server owners MUST update their required build and beta to 125548
 [INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
