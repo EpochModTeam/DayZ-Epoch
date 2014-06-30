@@ -4,7 +4,7 @@ _playerName = _this select 1;
 _playerObj = nil;
 _playerPos = [];
 {
-	if ((getPlayerUID _x) == _playerUID) exitWith {_playerObj = _x;};
+	if ((GetPlayerUIDOld _x) == _playerUID) exitWith {_playerObj = _x;};
 } count playableUnits;
 
 if (isNil "_playerObj") then {
@@ -18,7 +18,7 @@ if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
 
-diag_log format["get: %1 (%2), sent: %3 (%4)",typeName (getPlayerUID _playerObj), getPlayerUID _playerObj, typeName _playerUID, _playerUID];
+diag_log format["get: %1 (%2), sent: %3 (%4)",typeName (GetPlayerUIDOld _playerObj), GetPlayerUIDOld _playerObj, typeName _playerUID, _playerUID];
 
 if (!isNull _playerObj) then {
 

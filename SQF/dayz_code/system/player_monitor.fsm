@@ -408,7 +408,7 @@ class FSM
        "" \n
        "progressLoadingScreen 0.3;" \n
        "" \n
-       "_playerUID = getPlayerUID player;"/*%FSM</STATEINIT""">*/;
+       "_playerUID = GetPlayerUIDOld player;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

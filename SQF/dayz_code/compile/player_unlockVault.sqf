@@ -39,7 +39,7 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 
 	// Check if any players are nearby if not allow player to claim item.
 	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-	_playerID = getPlayerUID player;
+	_playerID = GetPlayerUIDOld player;
 	
 	// Only allow if not already claimed.
 	if (_claimedBy == "0" || !_playerNear) then {

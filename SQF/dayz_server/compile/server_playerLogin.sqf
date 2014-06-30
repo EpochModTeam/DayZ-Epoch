@@ -28,7 +28,7 @@ _isInfected =   0;
 _model =		"";
 
 if (_playerID == "") then {
-	_playerID = getPlayerUID _playerObj;
+	_playerID = GetPlayerUIDOld _playerObj;
 };
 
 if ((_playerID == "") || (isNil "_playerID")) exitWith {

@@ -5,7 +5,7 @@ _position 		= getPosATL player;
 _dir 			= getDir player;
 _currentAnim 	= animationState player;
 _tagSetting = player getVariable["DZE_display_name",false];
-_playerUID = getPlayerUID player;
+_playerUID = GetPlayerUIDOld player;
 _weapons 	= weapons player;
 _countMags = call player_countMagazines; 
 _magazines = _countMags select 0;
@@ -163,7 +163,7 @@ if (_tagSetting) then {
 	DZE_ForceNameTags = true;
 };
 
-_playerUID = getPlayerUID player;
+_playerUID = GetPlayerUIDOld player;
 _playerObjName = format["PVDZE_player%1",_playerUID];
 call compile format["%1 = player;",_playerObjName];
 publicVariableServer _playerObjName; //Outcommit in DayZ 1.8 No clue for what this is - Skaronator
