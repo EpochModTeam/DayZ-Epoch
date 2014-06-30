@@ -168,13 +168,13 @@ if (_canDo) then {
 							if ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn)) then {
 								// Get lowest waterlevel
 								if ((_x == "ItemWaterbottle") ||( _configParent == "ItemWaterbottle")) then {
-									_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
+									_waterLevel = getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz");
 									if (_waterLevel_lowest == 0 || _waterLevel < _waterLevel_lowest) then {
 										_waterLevel_lowest = _waterLevel;
 									};
 								};
 							};
-						} forEach magazines player;
+						} forEach (magazines player);
 
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
@@ -195,7 +195,7 @@ if (_canDo) then {
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
 							};
-						} forEach magazines player;
+						} forEach (magazines player);
 
 					} forEach _selectedRecipeInput;
 
