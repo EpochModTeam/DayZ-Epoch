@@ -28,7 +28,7 @@ _isInfected =   0;
 _model =		"";
 
 if (_playerID == "") then {
-	_playerID = GetPlayerUIDOld _playerObj;
+	_playerID = if (DayZ_UseSteamID) then {GetPlayerUID _playerObj;} else {GetPlayerUIDOld _playerObj;};
 };
 
 if ((_playerID == "") || (isNil "_playerID")) exitWith {

@@ -2,14 +2,14 @@
 	Anti-Teleport - Created By Razor / Refactored By Alby & CopyPasted to Epoch by Skaronator
 */
 
-private ["_log","_playerName","_playerUID","_al1veOnce","_debug","_lastpos","_lastheight","_lasttime","_lastVehicle","_v","_h","_topv","_toph","_curpos","_distance","_acceptableDistance","_curtime","_difftime","_plant","_curheight","_speed","_topSpeed","_terrainHeight","_differenceCheck","_lastPosVar","_safetyVehicle","_curPos"];
+private ["_log","_playerName","_playerUID","_PUID","_al1veOnce","_debug","_lastpos","_lastheight","_lasttime","_lastVehicle","_v","_h","_topv","_toph","_curpos","_distance","_acceptableDistance","_curtime","_difftime","_plant","_curheight","_speed","_topSpeed","_terrainHeight","_differenceCheck","_lastPosVar","_safetyVehicle","_curPos"];
 
 waitUntil {vehicle player == player};
 
 [] spawn {
 	private ["_playerName","_playerUID"];
 	_playerName = name player;
-	_playerUID = GetPlayerUIDOld player;
+	_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
 	while {1 == 1} do {
 		if (typeName player != "OBJECT") then {
 			PVDZE_atp = format["WARNING typename error for player UID#%1", _playerUID];
@@ -24,7 +24,7 @@ waitUntil {vehicle player == player};
 
 [] spawn {
 	_playerName = name player;
-	_playerUID = GetPlayerUIDOld player;
+	_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
 	while {true} do {
 		sleep 5;
 	};
@@ -93,7 +93,8 @@ while {1 == 1} do {
 			if (_lastVehicle == vehicle player) then {
 				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) || (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 					(vehicle player) setposATL  _lastpos;
-					PVDZE_atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", GetPlayerUIDOld player, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
+					_PUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+					PVDZE_atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", _PUID, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
 					publicVariableServer "PVDZE_atp";
 				} else {
 					_lastpos = _curpos;

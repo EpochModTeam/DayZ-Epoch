@@ -6,8 +6,7 @@ _worldspace = 	_this select 2;
 _class = 		_this select 3;
 _obj = 		_this select 4;
 _activatingplayer = 		_this select 5;
-_activatingplayerUID = 		(GetPlayerUIDOld _activatingplayer);
-
+_activatingplayerUID = if (DayZ_UseSteamID) then {GetPlayerUID _activatingplayer;} else {GetPlayerUIDOld _activatingplayer;};
 _proceed = false;
 
 _objectID = "0";

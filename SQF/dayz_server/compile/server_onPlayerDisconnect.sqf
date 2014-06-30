@@ -1,10 +1,11 @@
-private ["_invehicle","_isplayernearby","_playerObj","_myGroup","_id","_playerUID","_playerName","_characterID","_timeout","_message","_magazines","_playerPos"];
+private ["_invehicle","_isplayernearby","_playerObj","_myGroup","_PUID","_id","_playerUID","_playerName","_characterID","_timeout","_message","_magazines","_playerPos"];
 _playerUID = _this select 0;
 _playerName = _this select 1;
 _playerObj = nil;
 _playerPos = [];
 {
-	if ((GetPlayerUIDOld _x) == _playerUID) exitWith {_playerObj = _x;};
+	_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _x;} else {GetPlayerUIDOld _x;};
+	if (_PUID == _playerUID) exitWith {_playerObj = _x;};
 } count playableUnits;
 
 if (isNil "_playerObj") then {
@@ -17,8 +18,8 @@ if (isNil "_playerObj") then {
 if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
-
-diag_log format["get: %1 (%2), sent: %3 (%4)",typeName (GetPlayerUIDOld _playerObj), GetPlayerUIDOld _playerObj, typeName _playerUID, _playerUID];
+_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _playerObj;} else {GetPlayerUIDOld _playerObj;};
+diag_log format["get: %1 (%2), sent: %3 (%4)",typeName _PUID, _PUID, typeName _playerUID, _playerUID];
 
 if (!isNull _playerObj) then {
 

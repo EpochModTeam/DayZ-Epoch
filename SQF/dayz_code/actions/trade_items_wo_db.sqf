@@ -4,7 +4,7 @@ private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
-//_activatingPlayer = GetPlayerUIDOld player;
+//_activatingPlayer = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;
