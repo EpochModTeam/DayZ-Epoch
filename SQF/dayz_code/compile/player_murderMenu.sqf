@@ -22,7 +22,7 @@ EpochDeathBoardLoad = {
 	];*/
 	{
 		lbAdd [EpochDeathBoardDialogList, (_x select 0)];
-	} count PVDZE_plr_DeathBResult;
+	} forEach PVDZE_plr_DeathBResult;
 };
 
 
