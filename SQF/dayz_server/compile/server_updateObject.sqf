@@ -99,7 +99,7 @@ _object_damage = {
 	};
 
 _object_killed = {
-	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
+	private["_hitpoints","_array","_hit","_PUID","_selection","_key","_damage"];
 	_hitpoints = _object call vehicle_getHitpoints;
 	//_damage = damage _object;
 	_damage = 1;
@@ -126,9 +126,10 @@ _object_killed = {
 		_objID 	= _object getVariable['ObjectID','0'];
 		_objUID	= _object getVariable['ObjectUID','0'];
 		_worldSpace = getPosATL _object;
-		if (getPlayerUID _killer != "") then {
+		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _killer;} else {GetPlayerUIDOld _killer;};
+		if (_PUID != "") then {
 			_name = if (alive _killer) then { name _killer; } else { format["OBJECT %1", _killer]; };
-			diag_log format["Vehicle killed: Vehicle %1 (TYPE: %2), CharacterID: %3, ObjectID: %4, ObjectUID: %5, Position: %6, Killer: %7 (UID: %8)", _object, (typeOf _object), _charID, _objID, _objUID, _worldSpace, _name, (getPlayerUID _killer)];
+			diag_log format["Vehicle killed: Vehicle %1 (TYPE: %2), CharacterID: %3, ObjectID: %4, ObjectUID: %5, Position: %6, Killer: %7 (UID: %8)", _object, (typeOf _object), _charID, _objID, _objUID, _worldSpace, _name, _PUID];
 		} else {
 			diag_log format["Vehicle killed: Vehicle %1 (TYPE: %2), CharacterID: %3, ObjectID: %4, ObjectUID: %5, Position: %6", _object, (typeOf _object), _charID, _objID, _objUID, _worldSpace];
 		};

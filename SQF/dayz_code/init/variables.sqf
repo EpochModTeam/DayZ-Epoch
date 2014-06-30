@@ -1,5 +1,7 @@
 disableSerialization;
-
+if (isNil "DayZ_UseSteamID") then {
+	DayZ_UseSteamID = true;
+};
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
 Bandit2_DZ = 	"Bandit2_DZ";
