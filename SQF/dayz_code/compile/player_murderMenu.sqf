@@ -77,5 +77,7 @@ EpochDeathBoardClick = {
 		_record_stxt = format["%1<t font='Bitstream'>%2</t>", _record_stxt, (_quotes call BIS_fnc_selectRandom)];
 		call compile format["epoch_death_board_record_%1 = ""%2"";" ,_i , _record_stxt];
 	};
-	_output ctrlSetStructuredText parseText _record_stxt;
+	if (!isNil "_record_stxt") then {
+		_output ctrlSetStructuredText (parseText _record_stxt);
+	};
 };
