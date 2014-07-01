@@ -20,7 +20,7 @@ item15[] = {"Parse_Login",2,250,-75.000000,500.000000,25.000000,550.000000,0.000
 item16[] = {"Hive_Bad",4,218,50.000000,500.000000,150.000000,550.000000,10.000000,"Hive" \n "Bad"};
 item17[] = {"ERROR__Wrong_HIVE",2,250,175.000000,500.000000,275.000000,550.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item18[] = {"Hive_Ok",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Hive" \n "Ok"};
-item19[] = {"Phase_One",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
+item19[] = {"Phase_One",2,4346,-75.000000,600.000000,25.000000,650.000000,0.000000,"Phase One"};
 item20[] = {"Response",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Response"};
 item21[] = {"Phase_Two",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase Two"};
 item22[] = {"Dead_Player",4,218,50.000000,700.000000,150.000000,750.000000,0.000000,"Dead" \n "Player"};
@@ -34,7 +34,7 @@ item29[] = {"ERROR__Bad_Versi",2,250,175.000000,800.000000,275.000000,850.000000
 item30[] = {"Display_Ready",4,218,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,"Display" \n "Ready"};
 item31[] = {"Preload_Display",2,250,-75.000000,1100.000000,25.000000,1150.000000,0.000000,"Preload" \n "Display"};
 item32[] = {"Preload_Done",4,218,-175.000000,1150.000000,-75.000000,1200.000000,0.000000,"Preload" \n "Done"};
-item33[] = {"Initialize",2,4346,-75.000000,1200.000000,25.000000,1250.000000,0.000000,"Initialize"};
+item33[] = {"Initialize",2,250,-75.000000,1200.000000,25.000000,1250.000000,0.000000,"Initialize"};
 item34[] = {"Finish",1,250,-75.000000,1300.000000,25.000000,1350.000000,0.000000,"Finish"};
 item35[] = {"True",8,218,25.000000,1250.000000,125.000000,1300.000000,0.000000,"True"};
 item36[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -169,8 +169,8 @@ link85[] = {75,57};
 link86[] = {76,78};
 link87[] = {77,76};
 link88[] = {78,57};
-globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-280.065002,277.754272,1315.142944,920.020874,864,612,1};
-window[] = {0,-1,-1,-1,-1,966,208,1697,208,1,882};
+globals[] = {25.000000,1,0,0,0,640,480,1,143,6316128,1,-648.860474,646.549011,954.039734,36.458042,864,612,1};
+window[] = {0,-1,-1,-32000,-32000,1018,260,1749,260,1,882};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -638,11 +638,17 @@ class FSM
       name = "Phase_One";
       init = /*%FSM<STATEINIT""">*/"if ((!isNil ""DZE_defaultSkin"") && _isNew && (_isInfected == 0)) then {" \n
        "	if (dayz_selectGender == ""Survivor2_DZ"") then {" \n
-       "		_rand = floor(random (count (DZE_defaultSkin select 0)));" \n
-       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> ((DZE_defaultSkin select 0) select _rand) >> ""playerModel""); //MALE" \n
+       "		_rand = (DZE_defaultSkin select 0) call BIS_fnc_selectRandom;" \n
+       "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""playerModel""); //MALE" \n
+       "		if (_model == """") then {" \n
+       "		_model = _rand;" \n
+       "		};" \n
        "	} else {" \n
-       "		_rand = floor(random (count (DZE_defaultSkin select 1)));" \n
-       "		_model = getText (configFile >> ""CfgSurvival"" >> ""Skins"" >> ((DZE_defaultSkin select 1) select _rand) >> ""playerModel""); //FEMALE" \n
+       "		_rand = (DZE_defaultSkin select 1) call BIS_fnc_selectRandom;" \n
+       "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""playerModel""); //FEMALE" \n
+       "		if (_model == """") then {" \n
+       "			_model = _rand;" \n
+       "		};" \n
        "	};" \n
        "};" \n
        "" \n
