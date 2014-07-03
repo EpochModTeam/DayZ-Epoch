@@ -1,5 +1,7 @@
 disableSerialization;
-
+if (isNil "DayZ_UseSteamID") then {
+	DayZ_UseSteamID = true;
+};
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
 Bandit2_DZ = 	"Bandit2_DZ";
@@ -188,6 +190,7 @@ dayz_locationsActive = [];
 Dayz_GUI_R = 0.38; // 0.7
 Dayz_GUI_G = 0.63; // -0.63
 Dayz_GUI_B = 0.26; // -0.26
+Dayz_Dark_UI = true;
 
 //Player self-action handles
 dayz_resetSelfActions = {
@@ -683,18 +686,24 @@ if(!isDedicated) then {
 	dayz_spawnZombies = 0;
 	dayz_swarmSpawnZombies = 0;
 //Max local
-	dayz_maxLocalZombies = 30; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
-//Current NearBy
 	dayz_CurrentNearByZombies = 0;
 //Max NearBy
-	dayz_maxNearByZombies = 60; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
+	if (isNil "dayz_maxNearByZombies") then {
+		dayz_maxNearByZombies = 60; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 //Current total
+	};
 	dayz_currentGlobalZombies = 0;
 //Max global zeds.
-	dayz_maxGlobalZeds = 3000;
-	dayz_spawnDelay =		120;
-	dayz_spawnWait =		-120;
-	dayz_lootDelay =		3;
+	if (isNil "dayz_maxGlobalZeds") then {
+		dayz_maxGlobalZeds = 3000;
+	};
+	if (isNil "dayz_spawnDelay") then {
+		dayz_spawnDelay =		120;
+	};
+	dayz_spawnWait =		-(dayz_spawnDelay);
+	if (isNil "dayz_lootDelay") then {
+		dayz_lootDelay =		3;
+	};
 	dayz_lootWait =			-300;
 	//used to count global zeds around players
 	dayz_CurrentZombies = 0;

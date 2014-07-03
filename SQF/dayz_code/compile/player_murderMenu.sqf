@@ -22,7 +22,7 @@ EpochDeathBoardLoad = {
 	];*/
 	{
 		lbAdd [EpochDeathBoardDialogList, (_x select 0)];
-	} count PVDZE_plr_DeathBResult;
+	} forEach PVDZE_plr_DeathBResult;
 };
 
 
@@ -34,7 +34,7 @@ EpochDeathBoardClick = {
 		"What happens if you get scared half to death, twice?",
 		"Don't upset me.. I'm running out of places to hide the bodies.",
 		"Don't run, you'll just die tired.",
-		"Give me immortality || give me death.",
+		"Give me immortality or give me death.",
 		"I can't live with death; he's always leaving the toilet seat up.",
 		"Why won't you die?!?!",
 		"Guns don't kill people; death kills people. It's a proven medical fact."
@@ -77,5 +77,7 @@ EpochDeathBoardClick = {
 		_record_stxt = format["%1<t font='Bitstream'>%2</t>", _record_stxt, (_quotes call BIS_fnc_selectRandom)];
 		call compile format["epoch_death_board_record_%1 = ""%2"";" ,_i , _record_stxt];
 	};
-	_output ctrlSetStructuredText parseText _record_stxt;
+	if (!isNil "_record_stxt") then {
+		_output ctrlSetStructuredText (parseText _record_stxt);
+	};
 };

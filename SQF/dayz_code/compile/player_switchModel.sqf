@@ -1,11 +1,11 @@
-private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_tagSetting","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_playerObjName","_wpnType","_ismelee"];
+private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_tagSetting","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_playerObjName","_wpnType","_ismelee"];
 
 _class 			= _this;
 _position 		= getPosATL player;
 _dir 			= getDir player;
 _currentAnim 	= animationState player;
 _tagSetting = player getVariable["DZE_display_name",false];
-_playerUID = getPlayerUID player;
+_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
 _weapons 	= weapons player;
 _countMags = call player_countMagazines; 
 _magazines = _countMags select 0;
@@ -130,7 +130,12 @@ if (!isNil "_newBackpackType") then {
 		//magazines
 		_countr = 0;
 		{
-			if (!(isClass(configFile >> "CfgWeapons" >> _x))) then {
+			if ((typeName _x) != "STRING") then {
+				_isWeapon = (isClass(configFile >> "CfgWeapons" >> (_x select 0)));
+			} else {
+				_isWeapon = (isClass(configFile >> "CfgWeapons" >> _x));
+			};
+			if (!_isWeapon) then {
 				_countr = _countr + 1;
 				if ((typeName _x) != "STRING") then {
 					(unitBackpack player) addMagazineCargoGlobal [(_x select 0), 1];
@@ -158,7 +163,7 @@ if (_tagSetting) then {
 	DZE_ForceNameTags = true;
 };
 
-_playerUID = getPlayerUID player;
+_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
 _playerObjName = format["PVDZE_player%1",_playerUID];
 call compile format["%1 = player;",_playerObjName];
 publicVariableServer _playerObjName; //Outcommit in DayZ 1.8 No clue for what this is - Skaronator

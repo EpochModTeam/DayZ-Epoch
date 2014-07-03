@@ -902,7 +902,7 @@ server_spawnCleanAnimals = {
 };
 
 server_logUnlockLockEvent = {
-	private["_player", "_obj", "_objectID", "_objectUID", "_statusText", "_status"];
+	private["_player", "_obj", "_objectID", "_objectUID", "_statusText", "_PUID", "_status"];
 	_player = _this select 0;
 	_obj = _this select 1;
 	_status = _this select 2;
@@ -914,6 +914,7 @@ server_logUnlockLockEvent = {
 			[_obj, "gear"] call server_updateObject;
 			_statusText = "LOCKED";
 		};
-		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), (getPlayerUID _player), _statusText];
+		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _killer;} else {GetPlayerUIDOld _killer;};
+		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), _PUID, _statusText];
 	};
 };

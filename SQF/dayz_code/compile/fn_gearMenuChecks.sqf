@@ -1,4 +1,4 @@
-private ["_cTarget","_isOk","_display","_inVehicle"];
+private ["_cTarget","_isOk","_Dis","_display","_inVehicle"];
 disableSerialization;
 _display = (_this select 0);
 _inVehicle = (vehicle player) != player;
@@ -13,8 +13,8 @@ _isOk = false;
 		_isOk = _cTarget isKindOf _x;
 	};
 } count ["LandVehicle","Air", "Ship"];
-
-if((locked _cTarget) && _isOk && (((vehicle player) distance _cTarget) < 12)) then {
+_Dis = if (_cTarget isKindOf "USEC_ch53_E") then {25;} else {12;};
+if((locked _cTarget) && _isOk && (((vehicle player) distance _cTarget) < _Dis)) then {
 	cutText [(localize "str_epoch_player_7") , "PLAIN DOWN"];
 	_display closeDisplay 1;
 };

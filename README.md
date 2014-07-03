@@ -10,6 +10,7 @@ Based on DayZ Mod Community edition
 https://github.com/DayZMod/DayZ/blob/Release_1.8/Documentation/Credits.md
 http://dayzmod.com 
 
+
 --------------------------
 Included Custom Addons
 --------------------------
@@ -25,6 +26,8 @@ Included Custom Addons
 * Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr and Sahbazz http://www.armaholic.com/page.php?id=13053
 * gdtmod_grass 1.00 by HeinBloed - http://www.gdt-server.net/
 * Bell 47/H-13 Helicopter by hcpookie - http://www.armaholic.com/page.php?id=22143
+* USEC CH53 by Rocket - http://dayz.com
+* More enterable buildings - Dayzero - https://zombies.nu/
 
 --------------------------
 Included Custom Islands
@@ -37,37 +40,62 @@ Included Custom Islands
 * | German Town - and waysigns http://www.armaholic.com/page.php?id=9658
 
 --------------------------
-Developers
+Initial Developers
 --------------------------
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
-* Axle - Beta Tester, Lead Trader City Designer, Ideas. - http://www.twitch.tv/axles
-* Paul Tomany - Models, Textures, Ideas, Beta Tester. - ptomany@gmail.com
-* Skaronator - Developer - Help with many things https://github.com/Skaronator
-* Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.  https://github.com/Zabn
-* Harlan (dayz10k) - Developer - https://github.com/dayz10k
-* Axeman - Developer - Light system - axeman@thefreezer.co.uk
-* [VB]GREEN - Graphics, Beta Tester, Ideas. http://www.twitch.tv/vbgreen
+* Axle - Tester, Trader City Designer - http://www.twitch.tv/axles
+* Paul Tomany - Models, Textures - ptomany@gmail.com - http://www.twitch.tv/sequisha
+* [VB]GREEN - Graphics - http://www.twitch.tv/vbgreen
 
 --------------------------
-Contributors
+GitHub Collaborators (In order of most commits)
 --------------------------
-* Icomrade - Fixes - https://github.com/Icomrade
-* Fank - Fixes - https://github.com/Fank
-* facoptere - Extra Security - https://github.com/facoptere
-* Torndeco - Fixes - https://github.com/Torndeco
-* Armifer - Humanity changes. - https://github.com/Armifer
-* AVendettaForYou - Trader City Tavi - https://github.com/AVendettaForYou
-* Skaronator, krazey - German Localization - https://github.com/Skaronator https://github.com/krazey
-* VeryBigBro - Russian Localization - https://github.com/VeryBigBro
-* th4z - French Localization - https://github.com/th4z
-* JoSchaap - Dutch Localization and some typo's - https://github.com/JoSchaap
-* Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - maca134@gmail.com
-* Tansien - Hive Update to visual studio 2013, added 396 and 397 CHILD for Maintain - https://github.com/Tansien
-* aeinstein - Crafting now supports all can types. - https://github.com/aeinstein
-* vos / Axe Cop - Area Maintenance and ideas - https://github.com/vos
-* GeodarCZ - Czech Localization, correction - https://github.com/Geodar
-* Brovns - Czech Localization - https://github.com/Brovns
-* Doomscythe - Czech Localization, correction - https://github.com/Doomscythe
+* vbawol - https://github.com/vbawol
+* eltexonline - https://github.com/eltexonline
+* zabn - https://github.com/zabn
+* Sequisha - https://github.com/Sequisha
+* andgregor - https://github.com/andgregor
+* facoptere - https://github.com/facoptere
+* dayz10k - https://github.com/dayz10k
+* Skaronator - https://github.com/Skaronator
+* icomrade - https://github.com/icomrade
+* Axles - https://github.com/Axles
+* Armifer - https://github.com/Armifer
+
+--------------------------
+GitHub Contributors (In order of most commits)
+--------------------------
+* vbawol - https://github.com/vbawol
+* dayz10k - https://github.com/dayz10k
+* Skaronator - https://github.com/Skaronator
+* Fank - https://github.com/Fank
+* andgregor - https://github.com/andgregor
+* Axles - https://github.com/Axles
+* zabn - https://github.com/zabn
+* eltexonline - https://github.com/eltexonline
+* icomrade - https://github.com/icomrade
+* Namindu - https://github.com/Namindu
+* raginruffalo - https://github.com/raginruffalo
+* Adaptivity - https://github.com/Adaptivity
+* facoptere - https://github.com/facoptere
+* ctcDNightmare - https://github.com/ctcDNightmare
+* SGanthony - https://github.com/SGanthony
+* Geodar - https://github.com/Geodar
+* Sandbird - https://github.com/Sandbird
+* krazey - https://github.com/krazey
+* jostster - https://github.com/jostster
+* SilvDev - https://github.com/SilvDev
+* AVendettaForYou - https://github.com/AVendettaForYou
+* Sequisha - https://github.com/Sequisha
+* Armifer - https://github.com/Armifer
+* infiSTAR - https://github.com/infiSTAR
+* Cornyfisch - https://github.com/Cornyfisch
+* JoSchaap - https://github.com/JoSchaap
+* maca134 - https://github.com/maca134
+* Schmoopiie - https://github.com/Schmoopiie
+* nahkiss - https://github.com/nahkiss
+* BlackLA - https://github.com/BlackLA
+* Hogscraper - https://github.com/hogscraper
 
 --------------------------
 Special thanks
