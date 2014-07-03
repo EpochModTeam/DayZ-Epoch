@@ -42,7 +42,7 @@ if (!isDedicated) then {
 		private ["_unit","_detail","_PUID"];
 		_unit = _this select 0;
 		_detail = _this select 1;
-		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID player} else {GetPlayerUIDOld player};
 		if(_unit == _PUID) then {
 			player setVariable["publish",_detail];
 		};
