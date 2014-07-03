@@ -95,6 +95,7 @@ GitHub Contributors (In order of most commits)
 * Schmoopiie - https://github.com/Schmoopiie
 * nahkiss - https://github.com/nahkiss
 * BlackLA - https://github.com/BlackLA
+* Hogscraper - https://github.com/hogscraper
 
 --------------------------
 Special thanks
