@@ -2635,6 +2635,9 @@ _unit_45 = objNull;
 if (true) then
 {
   _this = createAgent ["Worker2", [5976.3008, 6163.7275, 1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_45 = _this;
   _this setDir -140.00029;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2646,6 +2649,9 @@ _unit_47 = objNull;
 if (true) then
 {
   _this = createAgent ["GUE_Soldier_MG", [8414.8604, 3368.6594, -2.8610229e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_47 = _this;
   _this setDir -27.777979;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2657,6 +2663,9 @@ _unit_49 = objNull;
 if (true) then
 {
   _this = createAgent ["Soldier_GL_M16A2_PMC", [7222.3716, 2132.9478, 1.5258789e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_49 = _this;
   _this setDir -293.24121;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2668,6 +2677,9 @@ _unit_51 = objNull;
 if (true) then
 {
   _this = createAgent ["RU_Villager3", [2648.3003, 7122.5845, -1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_51 = _this;
   _this setDir -22.2006;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2679,6 +2691,9 @@ _unit_53 = objNull;
 if (true) then
 {
   _this = createAgent ["HouseWife1", [8781.6064, 5191.5684, 4.7326088e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_53 = _this;
   _this setDir -187.81914;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2690,6 +2705,9 @@ _unit_55 = objNull;
 if (true) then
 {
   _this = createAgent ["US_Delta_Force_Assault_EP1", [6272.8584, 1274.2034, -1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_55 = _this;
   _this setDir -93.52697;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2701,6 +2719,9 @@ _unit_57 = objNull;
 if (true) then
 {
   _this = createAgent ["RU_Citizen4", [6286.2813, 1298.1885, 1.9073486e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_57 = _this;
   _this setDir -108.68906;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2712,6 +2733,9 @@ _unit_59 = objNull;
 if (true) then
 {
   _this = createAgent ["RU_Citizen1", [8407.6299, 3378.7595, 1.6212463e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_59 = _this;
   _this setDir -253.03992;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2739,6 +2763,9 @@ _unit_62 = objNull;
 if (true) then
 {
   _this = createAgent ["RU_Citizen3", [4971.9692, 5114.3472], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_62 = _this;
   _this setDir -83.308296;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2750,6 +2777,9 @@ _unit_64 = objNull;
 if (true) then
 {
   _this = createAgent ["Woodlander1", [4979.2168, 5139.1733, 6.6757202e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_64 = _this;
   _this setDir -181.55573;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2761,6 +2791,9 @@ _unit_66 = objNull;
 if (true) then
 {
   _this = createAgent ["RU_WorkWoman1", [4965.9014, 5108.644, 1.9073486e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_66 = _this;
   _this setDir 2.7557797;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2772,6 +2805,9 @@ _unit_68 = objNull;
 if (true) then
 {
   _this = createAgent ["Dr_Annie_Baker_EP1", [4965.6421, 5115.1631, 1.1444092e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_68 = _this;
   _this setDir 73.497513;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2783,6 +2819,9 @@ _unit_70 = objNull;
 if (true) then
 {
   _this = createAgent ["Profiteer4", [4957.1533, 5126.5654, 7.6293945e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_70 = _this;
   _this setDir 110.76637;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2794,6 +2833,9 @@ _unit_72 = objNull;
 if (true) then
 {
   _this = createAgent ["Rocker4", [4971.4492, 5109.6177, 9.5367432e-007], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_72 = _this;
   _this setDir -40.860092;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2805,6 +2847,9 @@ _unit_74 = objNull;
 if (true) then
 {
   _this = createAgent ["CIV_EuroMan02_EP1", [1277.3499, 9078.915], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_74 = _this;
   _this setDir 171.43173;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2816,6 +2861,9 @@ _unit_76 = objNull;
 if (true) then
 {
   _this = createAgent ["Woodlander3", [1288.8369, 9070.9072], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_76 = _this;
   _this setDir -157.63625;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2827,6 +2875,9 @@ _unit_78 = objNull;
 if (true) then
 {
   _this = createAgent ["Rita_Ensler_EP1", [1272.0219, 9076.0498, 8.7738037e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_78 = _this;
   _this setDir 116.10448;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2838,6 +2889,9 @@ _unit_80 = objNull;
 if (true) then
 {
   _this = createAgent ["Dr_Hladik_EP1", [1271.2402, 9071.4688, 7.6293945e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_80 = _this;
   _this setDir 66.620392;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2849,6 +2903,9 @@ _unit_82 = objNull;
 if (true) then
 {
   _this = createAgent ["Worker3", [1289.3068, 9065.6982, 1.9073486e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_82 = _this;
   _this setDir -110.7572;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2860,6 +2917,9 @@ _unit_84 = objNull;
 if (true) then
 {
   _this = createAgent ["CIV_EuroMan01_EP1", [1280.7538, 9076.2578, 3.8146973e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_84 = _this;
   _this setDir -110.97326;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2871,6 +2931,9 @@ _unit_86 = objNull;
 if (true) then
 {
   _this = createAgent ["Pilot_EP1", [1996.1123, 1202.0564, 2.3841858e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_86 = _this;
   _this setDir 86.784157;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2882,6 +2945,9 @@ _unit_88 = objNull;
 if (true) then
 {
   _this = createAgent ["TK_GUE_Soldier_5_EP1", [1995.3817, 1153.9949, 1.7642975e-005], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_88 = _this;
   _this setDir 56.780041;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2893,6 +2959,9 @@ _unit_90 = objNull;
 if (true) then
 {
   _this = createAgent ["RU_WorkWoman5", [2002.8221, 1203.0331, -4.529953e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_90 = _this;
   _this setDir -105.09073;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2904,6 +2973,9 @@ _unit_92 = objNull;
 if (true) then
 {
   _this = createAgent ["Doctor", [1998.7803, 1197.3105, 3.3378601e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_92 = _this;
   _this setDir 9.4260817;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2915,6 +2987,9 @@ _unit_94 = objNull;
 if (true) then
 {
   _this = createAgent ["UN_CDF_Soldier_Pilot_EP1", [1988.5029, 1124.8167, 4.7683716e-007], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_94 = _this;
   _this setDir 78.213387;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
@@ -2926,6 +3001,9 @@ _unit_96 = objNull;
 if (true) then
 {
   _this = createAgent ["TK_CIV_Takistani04_EP1", [1999.0026, 1207.135, 6.1988831e-006], [], 0, "CAN_COLLIDE"];
+  {_this removeMagazine _x;} count  magazines _this;
+  removeAllWeapons _this;
+  _this switchMove "";
   _unit_96 = _this;
   _this setDir -170.20198;
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
