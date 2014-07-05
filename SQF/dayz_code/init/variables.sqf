@@ -207,6 +207,7 @@ dayz_resetSelfActions = {
 	s_player_fillwater2 = 	-1;
 	s_player_fillfuel = 	-1;
 	s_player_grabflare = 	-1;
+	s_player_dropflare =	-1;
 	s_player_callzombies = 	-1;
 	s_player_showname = 	-1;
 	s_player_debuglootpos = 	-1;
