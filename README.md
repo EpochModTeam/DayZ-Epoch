@@ -96,6 +96,7 @@ GitHub Contributors (In order of most commits)
 * nahkiss - https://github.com/nahkiss
 * BlackLA - https://github.com/BlackLA
 * Hogscraper - https://github.com/hogscraper
+* Raziel23x - https://github.com/Raziel23x
 
 --------------------------
 Special thanks

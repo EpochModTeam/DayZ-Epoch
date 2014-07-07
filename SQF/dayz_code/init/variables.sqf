@@ -190,7 +190,9 @@ dayz_locationsActive = [];
 Dayz_GUI_R = 0.38; // 0.7
 Dayz_GUI_G = 0.63; // -0.63
 Dayz_GUI_B = 0.26; // -0.26
-Dayz_Dark_UI = true;
+if (isNil "Dayz_Dark_UI") then {
+	Dayz_Dark_UI = false;
+};
 
 //Player self-action handles
 dayz_resetSelfActions = {
@@ -207,6 +209,7 @@ dayz_resetSelfActions = {
 	s_player_fillwater2 = 	-1;
 	s_player_fillfuel = 	-1;
 	s_player_grabflare = 	-1;
+	s_player_dropflare =	-1;
 	s_player_callzombies = 	-1;
 	s_player_showname = 	-1;
 	s_player_debuglootpos = 	-1;

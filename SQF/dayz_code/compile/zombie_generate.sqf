@@ -91,7 +91,7 @@ if ((dayz_spawnZombies < _maxControlledZombies) && (dayz_CurrentNearByZombies < 
 				_array = [];
 				{
 					_array set [count _array, _x select 0]
-				} count getArray (configFile >> "cfgLoot" >> getText(_lootType));
+				} forEach getArray (configFile >> "cfgLoot" >> getText(_lootType));
 				if (count _array > 0) then {
 					_index = dayz_CLBase find getText(_lootType);
 					_weights = dayz_CLChances select _index;
