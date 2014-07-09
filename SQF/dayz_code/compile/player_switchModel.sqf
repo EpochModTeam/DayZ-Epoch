@@ -163,10 +163,12 @@ if (_tagSetting) then {
 	DZE_ForceNameTags = true;
 };
 
+/*
 _playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
 _playerObjName = format["PVDZE_player%1",_playerUID];
 call compile format["%1 = player;",_playerObjName];
-publicVariableServer _playerObjName; //Outcommit in DayZ 1.8 No clue for what this is - Skaronator
+publicVariableServer _playerObjName;
+*/
 
 //melee check
 _wpnType = primaryWeapon player;
