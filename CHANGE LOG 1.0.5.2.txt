@@ -10,6 +10,7 @@
 [FIXED] Infinite loop when crafting ore into bars #1351 @icomrade
 [FIXED] Only first kill showing on death boards #1362 #1124 @vbawol @icomrade
 [FIXED] Crossbow quivers not working #1355 @icomrade
+[FIXED] Crash_spawner & Supply_drop modules spawning inaccessible loot piles #1408 #1390 @Uro1
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
