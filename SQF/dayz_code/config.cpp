@@ -97,5 +97,6 @@ class CfgAddons
 #include "Configs\CfgAmmo.hpp"
 #include "Configs\CfgLoot\CfgBuildingLoot.hpp"
 #include "Configs\CfgArma.hpp"
+#include "Configs\CfgExtra\snappoints.hpp"
 
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.h"

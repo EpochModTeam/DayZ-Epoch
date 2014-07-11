@@ -106,7 +106,13 @@ if (!isDedicated) then {
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
 	player_antiWall =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_antiWall.sqf";
 	player_deathBoard =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\list_playerDeathsAlt.sqf";
-
+	
+	//Snap building - disabled by default, not sure about your stance towards this mod yet, feel free to edit
+	if (DZE_snapBuilding) then {
+		player_build =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build2.sqf";
+		snap_build = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
+	};
+	
 	player_plotPreview = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_showPlotRadius.sqf";
 	player_upgradeVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 
