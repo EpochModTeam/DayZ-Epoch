@@ -87,32 +87,49 @@ if (!canStand player) then {
 /*
 	Flashing:
 */
-if (_combatVal == 1) then {
-	_ctrlCombat call player_guiControlFlash;
+_ctrl_Array=[];
+if (_combatVal > 0) then {
+	_ctrl_Array=_ctrl_Array + [_ctrlCombat];	 
+}else {
+	_ctrlCombat ctrlShow true;
 };
 
-if (_bloodVal < 0.2) then {
-	_ctrlBlood call player_guiControlFlash;
+
+if (_bloodVal < 0.4) then {
+	_ctrl_Array=_ctrl_Array + [_ctrlBlood];
+}else {
+	_ctrlBlood ctrlShow true;
 };
+
 
 if (_thirstVal > 0.8) then {
-	_ctrlThirst call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlThirst];
+}else {
+	_ctrlThirst ctrlShow true;
 };
 
 if (_foodVal > 0.8) then {
-	_ctrlFood call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlFood];
+}else {
+	_ctrlFood ctrlShow true;
 };
 
 if (_tempVal < 0.2) then {	//TeeChange
-	_ctrlTemp call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlTemp];
 } else {
 	_ctrlTemp ctrlShow true;
 };
 
 if (r_player_injured) then {
-	_ctrlBleed call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlBleed];
+}else {
+	_ctrlBleed ctrlShow false;
 };
 
+if((count _ctrl_Array) > 0) then
+{
+_ctrl_Array call player_guiControlFlash;
+};
 
 
 }
@@ -226,30 +243,48 @@ if (!canStand player) then {
 /*
 	Flashing:
 */
+_ctrl_Array=[];
 if (_combatVal == 0) then {
-	_ctrlCombat call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlCombat];	 
+}else {
+	_ctrlCombat ctrlShow true;
 };
 
-if (_bloodVal < 0.2) then {
-	_ctrlBlood call player_guiControlFlash;
+
+if (_bloodVal < 0.4) then {
+	_ctrl_Array=_ctrl_Array + [_ctrlBlood];
+}else {
+	_ctrlBlood ctrlShow true;
 };
+
 
 if (_thirstVal < 0.2) then {
-	_ctrlThirst call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlThirst];
+}else {
+	_ctrlThirst ctrlShow true;
 };
 
 if (_foodVal < 0.2) then {
-	_ctrlFood call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlFood];
+}else {
+	_ctrlFood ctrlShow true;
 };
 
 if (_tempVal > 0.8) then {	//TeeChange
-	_ctrlTemp call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlTemp];
 } else {
 	_ctrlTemp ctrlShow true;
 };
 
 if (r_player_injured) then {
-	_ctrlBleed call player_guiControlFlash;
+	_ctrl_Array=_ctrl_Array + [_ctrlBleed];
+}else {
+	_ctrlBleed ctrlShow false;
+};
+
+if((count _ctrl_Array) > 0) then
+{
+_ctrl_Array call player_guiControlFlash;
 };
 
 
