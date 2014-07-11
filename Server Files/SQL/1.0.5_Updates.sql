@@ -20,3 +20,9 @@ UPDATE `Traders_DATA` SET `qty` = '10' WHERE `afile` = 'trade_backpacks';
 UPDATE `Traders_DATA` SET `qty` = '2' WHERE `afile` = 'trade_any_vehicle';
 UPDATE `Traders_DATA` SET `qty` = '2' WHERE `afile` = 'trade_any_boat';
 UPDATE `Traders_DATA` SET `qty` = '10' WHERE `afile` = 'trade_any_bicycle';
+
+--
+-- Prevent hitpoints from overflooding and causing errors
+--
+
+ALTER TABLE `object_data` CHANGE `Hitpoints` `Hitpoints` VARCHAR(1024) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '[]';
