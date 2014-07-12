@@ -371,4 +371,20 @@ class SnapBuilding {
 		};
 	};
 	class WoodLadder_DZ: WoodLadder_Preview_DZ{};
+	
+	class VaultStorageLocked {
+		snapTo[] = {
+			"VaultStorageLocked",
+			"VaultStorage"
+		};
+		points[] = {
+		{0,0,0,"Pivot"},
+		{0,0.284,0.615,"Back"},
+		{0,0,1.23,"Top"},
+		{-0.362,0,0.615,"Left"},
+		{0.362,0,0.615,"Right"}
+		};
+		
+	};
+	class VaultStorage: VaultStorageLocked {};
 };
