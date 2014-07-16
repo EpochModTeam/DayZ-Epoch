@@ -183,6 +183,7 @@ class SnapBuilding {
 		{-1.73926,0.05,0,"Bottom"}
 		};
 	};
+	class WoodStairs_DZ: Stairs_DZE {};
 	class WoodStairs_Preview_DZ: Stairs_DZE {};
 	class WoodStairsSans_Preview_DZ: Stairs_DZE {};
 	class WoodStairsSans_DZ: Stairs_DZE {};
@@ -203,6 +204,7 @@ class SnapBuilding {
 	class WoodSmallWallWin_DZ: WoodSmall_DZE {};
 	class Land_DZE_WoodDoor: WoodSmall_DZE {};
 	class Land_DZE_WoodDoorLocked: WoodSmall_DZE {};
+	class WoodDoor_Preview_DZ: WoodSmall_DZE{};
 	
 	class WoodLarge_DZE: FloorsWallsStairs { //Large wood walls
 		points[] = {
