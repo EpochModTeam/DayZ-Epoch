@@ -203,10 +203,9 @@ if (_characterID != "0") then {
 		};
 		
 		// Force gear updates for nearby vehicles/tents
-		_pos = _this select 0;
 		{
 			[_x, "gear"] call server_updateObject;
-		} count nearestObjects [_pos, dayz_updateObjects, 10];
+		} count (nearestObjects [_charPos, dayz_updateObjects, 10]);
 		//[_charPos] call server_updateNearbyObjects;
 
 		//Reset timer
