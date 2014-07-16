@@ -9,13 +9,17 @@ if ((owner _victim) == (owner _attacker)) exitWith {
 };
 
 _weapon = weaponState _attacker;
-if (_weapon select 0 == "Throw") then 
-{
-	_weapon = _weapon select 3;
-}
-else
-{
-	_weapon = _weapon select 0;
+if (!isNil "_weapon") then {
+	if (count _weapon != 0) then {
+		if (_weapon select 0 == "Throw") then 
+		{
+			_weapon = _weapon select 3;
+		}
+		else
+		{
+			_weapon = _weapon select 0;
+		};
+	};
 };
 
 _vehicle = typeOf (vehicle _attacker); 
