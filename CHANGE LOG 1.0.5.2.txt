@@ -12,6 +12,10 @@
 [FIXED] Only first kill showing on death boards #1362 #1124 @vbawol @icomrade
 [FIXED] Crossbow quivers not working #1355 @icomrade
 [FIXED] Crash_spawner & Supply_drop modules spawning inaccessible loot piles #1408 #1390 @Uro1
+[FIXED] Undefined variable "_weapon" in fnc_plyrHit.sqf #1420 @ebaydayz
+[FIXED] A few undefined variables in server_functions.sqf #1421 #1428 @ebaydayz
+[FIXED] Several undefined variables in server_playerSync.sqf #1425 #1426 @ebaydayz
+[FIXED] Undefined variables "_objectID" and "_uid" in server_updateObject.sqf #1427 @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
