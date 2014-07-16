@@ -25,4 +25,4 @@ UPDATE `Traders_DATA` SET `qty` = '10' WHERE `afile` = 'trade_any_bicycle';
 -- Prevent hitpoints from overflooding and causing errors
 --
 
-ALTER TABLE `object_data` CHANGE `Hitpoints` `Hitpoints` VARCHAR(1024) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '[]';
+ALTER TABLE `Object_DATA` CHANGE `Hitpoints` `Hitpoints` VARCHAR(1024) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '[]';
