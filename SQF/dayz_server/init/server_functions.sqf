@@ -555,7 +555,9 @@ server_getDiff =	{
 	_variable = _this select 0;
 	_object = 	_this select 1;
 	_vNew = 	_object getVariable[_variable,0];
+	if (isNil "_vNew") then {_vNew = 0;};
 	_vOld = 	_object getVariable[(_variable + "_CHK"),_vNew];
+	if (isNil "_vOld") then {_vOld = _vNew;};
 	_result = 	0;
 	if (_vNew < _vOld) then {
 		//JIP issues
@@ -573,7 +575,9 @@ server_getDiff2 =	{
 	_variable = _this select 0;
 	_object = 	_this select 1;
 	_vNew = 	_object getVariable[_variable,0];
+	if (isNil "_vNew") then {_vNew = 0;};
 	_vOld = 	_object getVariable[(_variable + "_CHK"),_vNew];
+	if (isNil "_vOld") then {_vOld = _vNew;};
 	_result = _vNew - _vOld;
 	_object setVariable[(_variable + "_CHK"),_vNew];
 	_result
