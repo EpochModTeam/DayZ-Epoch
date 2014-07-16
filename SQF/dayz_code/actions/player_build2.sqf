@@ -386,7 +386,7 @@ if (isClass (configFile >> "SnapBuilding" >> _classname)) then {
 			deleteVehicle _objectHelper;
 		};
 		
-		if(_IsNearPlot == 0) then {
+		if(_IsNearPlot == 0 && !_isPole) then {
 			_findNearestPoles = nearestObjects [_objectHelper, ["Plastic_Pole_EP1_DZ"], 30];
 			_nearestPole = _findNearestPoles select 0;
 			_objectHelperPos = getPosATL _objectHelper;
