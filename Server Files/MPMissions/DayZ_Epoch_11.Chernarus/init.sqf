@@ -11,6 +11,7 @@ dayZ_instance =	11;					//The instance
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
+DayZ_UseSteamID = false;
 
 //disable greeting menu 
 player setVariable ["BIS_noCoreConversations", true];

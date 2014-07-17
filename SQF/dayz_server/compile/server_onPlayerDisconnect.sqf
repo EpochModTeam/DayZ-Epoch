@@ -4,7 +4,7 @@ _playerName = _this select 1;
 _playerObj = nil;
 _playerPos = [];
 {
-	_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _x;} else {GetPlayerUIDOld _x;};
+	_PUID = [_x] call FNC_GetPlayerUID;
 	if (_PUID == _playerUID) exitWith {_playerObj = _x;};
 } count playableUnits;
 
@@ -18,7 +18,7 @@ if (isNil "_playerObj") then {
 if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
-_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _playerObj;} else {GetPlayerUIDOld _playerObj;};
+_PUID = [_playerObj] call FNC_GetPlayerUID;
 diag_log format["get: %1 (%2), sent: %3 (%4)",typeName _PUID, _PUID, typeName _playerUID, _playerUID];
 
 if (!isNull _playerObj) then {

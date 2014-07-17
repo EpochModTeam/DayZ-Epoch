@@ -5,7 +5,7 @@ _position 		= getPosATL player;
 _dir 			= getDir player;
 _currentAnim 	= animationState player;
 _tagSetting = player getVariable["DZE_display_name",false];
-_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+_playerUID = [player] call FNC_GetPlayerUID;
 _weapons 	= weapons player;
 _countMags = call player_countMagazines; 
 _magazines = _countMags select 0;
@@ -147,7 +147,7 @@ if (!isNil "_newBackpackType") then {
 				};
 			};
 		} count _backpackMag;
-		(findDisplay 106) ctrlActivate 2;
+		(findDisplay 106) closeDisplay 0;
 		if (gear_done) then {sleep 0.001; disableUserInput false;};
 		_countr = 0;
 		{

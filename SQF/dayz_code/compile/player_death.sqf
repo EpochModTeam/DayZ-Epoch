@@ -12,7 +12,7 @@ if (dialog) then {closeDialog 0;};
 if (visibleMap) then {openMap false;};
 
 _body = player;
-_playerID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+_playerID = [player] call FNC_GetPlayerUID;
 
 disableUserInput true;
 //add weapon on back to player...
