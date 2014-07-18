@@ -122,6 +122,7 @@ if (_characterID != "0") then {
 			Assess how much time has passed, for recording total time on server
 		*/
 		_lastTime = 	_character getVariable["lastTime",time];
+		if (isNil "_lastTime") then {_lastTime = time;};
 		_timeGross = 	(time - _lastTime);
 		_timeSince = 	floor(_timeGross / 60);
 		_timeLeft =		(_timeGross - (_timeSince * 60));
@@ -136,6 +137,7 @@ if (_characterID != "0") then {
 		//_wpnDisabled =	(getNumber (_config >> "disableWeapons")) == 1;
 		_currentModel = typeOf _character;
 		_modelChk = 	_character getVariable ["model_CHK",""];
+		if (isNil "_modelChk") then {_modelChk = "";};
 		if (_currentModel == _modelChk) then {
 			_currentModel = "";
 		} else {
@@ -165,10 +167,13 @@ if (_characterID != "0") then {
 			};
 		};
 		_temp = round(_character getVariable ["temperature",100]);
+		if (isNil "_temp") then {_temp = 100;};
 		_currentState = [_currentWpn,_currentAnim,_temp];
 		if(DZE_FriendlySaving) then {
 			// save only last/most recent 5 entrys as we only have 200 chars in db field && weapon + animation names are sometimes really long 60-70 chars.
-			_friendlies = [(_character getVariable ["friendlies",[]]),5] call array_reduceSizeReverse;
+			_arrayToSave = (_character getVariable ["friendlies",[]]);
+			if (isNil "_arrayToSave") then {_arrayToSave = [];};
+			_friendlies = [_arrayToSave,5] call array_reduceSizeReverse;
 			_currentState set [(count _currentState),_friendlies];
 		};
 		/*
