@@ -17,6 +17,8 @@ _firstTime = false;
 
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
+if (isNil "_objectID") then {_objectID = "0";};
+if (isNil "_uid") then {_uid = "0";};
 
 if ((typeName _objectID != "string") || (typeName _uid != "string")) then
 { 
