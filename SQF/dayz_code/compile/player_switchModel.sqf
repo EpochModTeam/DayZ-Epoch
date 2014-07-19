@@ -16,11 +16,11 @@ _primweapon	= primaryWeapon player;
 _secweapon	= secondaryWeapon player;
 
 if(!(_primweapon in _weapons) && _primweapon != "") then {
-	_weapons = _weapons + [_primweapon];
+	_weapons set [(count _weapons), _primweapon];
 };
 
 if(!(_secweapon in _weapons) && _secweapon != "") then {
-	_weapons = _weapons + [_secweapon];
+	_weapons set [(count _weapons), _secweapon];
 };
 
 //BackUp Backpack
