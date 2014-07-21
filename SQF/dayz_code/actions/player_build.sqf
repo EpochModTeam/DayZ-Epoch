@@ -337,7 +337,7 @@ if (_hasrequireditem) then {
 		if(abs(_objHDiff) > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cannot move up || down more than 5 meters";
+			_reason = "Cannot move up or down more than 5 meters";
 			detach _object;
 			deleteVehicle _object;
 		};
