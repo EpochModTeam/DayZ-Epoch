@@ -386,22 +386,6 @@ if (isClass (configFile >> "SnapBuilding" >> _classname)) then {
 			deleteVehicle _objectHelper;
 		};
 		
-		if(_IsNearPlot == 0 && !_isPole) then {
-			_findNearestPoles = nearestObjects [_objectHelper, ["Plastic_Pole_EP1_DZ"], 30];
-			_nearestPole = _findNearestPoles select 0;
-			_objectHelperPos = getPosATL _objectHelper;
-			if (_objectHelperPos distance _nearestPole < 30) exitWith {
-				_isOk = false; 
-				_cancel = true;
-				_reason = "You cannot enter plot pole area while building is in progress";
-				detach _object;
-				deleteVehicle _object;
-				detach _objectHelper;
-				deleteVehicle _objectHelper;
-			};
-		};
-			
-		
 		if(_location1 distance _objectHelperPos > 10) exitWith {
 			_isOk = false;
 			_cancel = true;
