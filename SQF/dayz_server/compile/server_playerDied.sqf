@@ -5,8 +5,11 @@ _minutes =		_this select 1;
 _newObject = 	_this select 2;
 _playerID = 	_this select 3;
 _infected =		_this select 4;
-_victimName = 	name _newObject;
-
+if (((count _this) >= 6) && {(typeName (_this select 5)) == "STRING"} && {(_this select 5) != ""}) then {
+	_victimName =	_this select 5;
+} else {
+	_victimName =  if (alive _newObject) then {name _newObject;} else {"";};
+};
 _victim = _newObject;
 _newObject setVariable ["bodyName", _victimName, true];
 
@@ -15,12 +18,12 @@ _killerName = _victim getVariable["AttackedByName", "nil"];
 
 // when a zombie kills a player _killer, _killerName && _weapon will be "nil"
 // we can use this to determine a zombie kill && send a customized message for that. right now no killmsg means it was a zombie.
-if (_killerName != "nil") then
+if ((typeName _killer) != "STRING") then
 {
 	_weapon = _victim getVariable["AttackedByWeapon", "nil"];
 	_distance = _victim getVariable["AttackedFromDistance", "nil"];
 
-	if (_victimName == _killerName) then
+	if ((owner _victim) == (owner _killer)) then 
 	{
 		_message = format["%1 killed himself",_victimName];
 		_loc_message = format["PKILL: %1 killed himself", _victimName];

@@ -39,10 +39,11 @@ if (!isDedicated) then {
 	};
 
 	player_login = {
-		private ["_unit","_detail"];
+		private ["_unit","_detail","_PUID"];
 		_unit = _this select 0;
 		_detail = _this select 1;
-		if(_unit == getPlayerUID player) then {
+		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+		if(_unit == _PUID) then {
 			player setVariable["publish",_detail];
 		};
 	};
@@ -559,6 +560,8 @@ if (!isDedicated) then {
 		if (isServer) then {
 			_unit addEventHandler ["local", {_this call zombie_findOwner}];
 		};
+		_id = _unit addeventhandler["HandleDamage", { _this call local_zombieDamage }];
+		_id = _unit addeventhandler["Killed", { [_this, "zombieKills"] call local_eventKill }];
 	};
 
 	dayz_EjectPlayer = {

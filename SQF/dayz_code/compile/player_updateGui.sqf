@@ -1,4 +1,4 @@
-private ["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_humanityTarget"];
+private ["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl"];
 disableSerialization;
 
 _foodVal = 		1 - (dayz_hunger / SleepFood);
@@ -6,7 +6,7 @@ _thirstVal = 	1 - (dayz_thirst / SleepWater);
 _tempVal 	= 	1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));	// Normalise to [0,1]
 _combatVal =	1 - dayz_combat; // May change later to be a range of red/green to loosely indicate 'time left in combat'
 
-if (uiNamespace getVariable ['DZ_displayUI', 0] == 1) exitWith {
+if (uiNamespace getVariable ["DZ_displayUI", 0] == 1) exitWith {
 	_array = [_foodVal,_thirstVal];
 	_array
 };
@@ -139,12 +139,11 @@ if (r_player_injured) then {
 /*
 Opt-in tag system with friend tagging
 */
-_targetControl = _display displayCtrl 1199;
 _string = "";
 _humanityTarget = cursorTarget;
 if (!isNull _humanityTarget && isPlayer _humanityTarget && alive _humanityTarget) then {
 
-	_distance = (player distance _humanityTarget);
+	_distance = player distance _humanityTarget;
 
 	if (_distance < DZE_HumanityTargetDistance) then {
 		
@@ -157,24 +156,19 @@ if (!isNull _humanityTarget && isPlayer _humanityTarget && alive _humanityTarget
 		_rcharID = _humanityTarget getVariable ["CharacterID", "0"];
 		_rfriendlies = _humanityTarget getVariable ["friendlies", []];
 		_rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
-			
+
 		if ((_rcharID in _friendlies) && (_charID in _rfriendlies)) then {
 
-			if (!(_charID in _rfriendlyTo)) then {
-
+			if !(_charID in _rfriendlyTo) then {
 				// diag_log format["IS FRIENDLY: %1", _player];
 				_rfriendlyTo set [count _rfriendlyTo, _charID];
 				_humanityTarget setVariable ["friendlyTo", _rfriendlyTo, true];
-				
-				// titleText [format[(localize "STR_EPOCH_ACTIONS_17"), (name _humanityTarget)], "PLAIN DOWN"];
-
 			};
 	
 			// <br /><t %2 align='center' size='0.7'>Humanity: %3</t>
 
 			_color = "color='#339933'";
-			_humanityName = if (alive _humanityTarget) then {name _humanityTarget; } else { "Dead Player";};
-			_string = format["<t %2 align='center' size='%3'>%1</t>",_humanityName,_color,_size];
+			_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
 		
 		} else {
 
@@ -190,8 +184,7 @@ if (!isNull _humanityTarget && isPlayer _humanityTarget && alive _humanityTarget
 				};
 			};
 			if((_humanityTarget getVariable ["DZE_display_name", false]) || (DZE_ForceNameTagsInTrader && isInTraderCity)) then {
-				_humanityName = if (alive _humanityTarget) then {name _humanityTarget; } else { "Dead Player";};
-				_string = format["<t %2 align='center' size='%3'>%1</t>",_humanityName,_color,_size];
+				_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
 			};
 		};
 	};
@@ -199,6 +192,7 @@ if (!isNull _humanityTarget && isPlayer _humanityTarget && alive _humanityTarget
 
 // update gui if changed
 if (dayz_humanitytarget != _string) then {
+	_targetControl = _display displayCtrl 1199;
 	_targetControl ctrlSetStructuredText (parseText _string);
 	dayz_humanitytarget = _string;
 };

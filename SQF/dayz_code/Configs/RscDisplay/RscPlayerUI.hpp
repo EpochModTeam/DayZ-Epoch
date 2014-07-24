@@ -119,6 +119,14 @@ class RscTitles
 		name = "statusBorder";
 		onLoad = "uiNamespace setVariable ['DAYZ_GUI_display', _this select 0];";
 		class ControlsBackground {
+			class RscStructuredText_1199: RscStructuredText
+			{
+				idc = 1199;
+				x = 0.250001;
+				y = 0.350001;
+				w = 0.5;
+				h = 0.1;
+			};
 			class RscPicture_1901: RscPictureGUI
 			{
 				idc = 1901;

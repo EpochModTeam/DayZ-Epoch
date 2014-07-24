@@ -2,7 +2,9 @@ private ["_display","_body","_playerID","_array","_source","_method","_canHitFre
 disableSerialization;
 if (deathHandled) exitWith {};
 deathHandled = true;
-
+if ((alive player) && {isNil {dayz_playerName}}) then {
+	dayz_playerName = name player;
+};
 //Prevent client freezes
 _display = findDisplay 49;
 if(!isNull _display) then {_display closeDisplay 0;};
@@ -10,7 +12,7 @@ if (dialog) then {closeDialog 0;};
 if (visibleMap) then {openMap false;};
 
 _body = player;
-_playerID = getPlayerUID player;
+_playerID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
 
 disableUserInput true;
 //add weapon on back to player...
@@ -22,7 +24,7 @@ _infected = 0;
 if (r_player_infected && DZE_PlayerZed) then {
 	_infected = 1;
 };
-PVDZE_plr_Died = [dayz_characterID,0,_body,_playerID,_infected];
+PVDZE_plr_Died = [dayz_characterID,0,_body,_playerID,_infected, dayz_playerName];
 publicVariableServer "PVDZE_plr_Died";
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;
@@ -91,9 +93,9 @@ addSwitchableUnit dayz_originalPlayer;
 setPlayable dayz_originalPlayer;
 selectPlayer dayz_originalPlayer;
 
-_myGroup = group _body;
-[_body] joinSilent dayz_firstGroup;
-deleteGroup _myGroup;
+//_myGroup = group _body;
+//[_body] joinSilent dayz_firstGroup;
+//deleteGroup _myGroup;
 
 3 cutRsc ["default", "PLAIN",3];
 4 cutRsc ["default", "PLAIN",3];

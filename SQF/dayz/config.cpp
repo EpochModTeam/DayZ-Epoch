@@ -43,7 +43,7 @@ class RscTitles {
 			y = "0.00001 * safezoneH + safezoneY";
 			w = "1 * safezoneW";
 			h = "1 * safezoneH";
-			text = "\dayz\ui\screen_death_ca.paa";
+			text = "\z\addons\dayz_epoch\ui\screen_death_ca.paa";
 		};
 	};
 	

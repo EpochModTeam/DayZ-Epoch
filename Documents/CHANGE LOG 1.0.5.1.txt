@@ -1,0 +1,9 @@
+[ADDED] Updated Sauerland map V1.80.04 by Falconsan http://epochmod.com/forum/index.php?/topic/6365-dayz-epoch-sauerland-changelog
+[ADDED] Configure AH6J for DZ + DZE @icomrade
+
+[FIXED] Fixed client crash when player has chainsaw due to corrupt RTM file. @vbawol
+
+[INFO] dayz_epoch1051.bikey found in client files "Keys" folder.
+[INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
+[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Special thanks to http://verthosting.com for hosting our development server.

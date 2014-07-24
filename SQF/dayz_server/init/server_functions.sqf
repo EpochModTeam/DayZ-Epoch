@@ -146,7 +146,9 @@ eh_localCleanup = {
 			_unit removeAllEventHandlers "Local";
 			clearVehicleInit _unit;
 			deleteVehicle _unit;
-			deleteGroup _myGroupUnit;
+			if ((count (units _myGroupUnit) == 0) && (_myGroupUnit != grpNull)) then {
+				deleteGroup _myGroupUnit;
+			};
 			//_unit = nil;
 			// diag_log ("CLEANUP: DELETED A " + str(_type) );
 		};
@@ -622,6 +624,7 @@ dayz_recordLogin = {
 
 dayz_perform_purge = {
 	if(!isNull(_this)) then {
+		_group = group _this;
 		_this removeAllMPEventHandlers "mpkilled";
 		_this removeAllMPEventHandlers "mphit";
 		_this removeAllMPEventHandlers "mprespawn";
@@ -634,7 +637,9 @@ dayz_perform_purge = {
 		_this removeAllEventHandlers "Local";
 		clearVehicleInit _this;
 		deleteVehicle _this;
-		deleteGroup (group _this);
+		if ((count (units _group) == 0) && (_group != grpNull)) then {
+			deleteGroup _group;
+		};
 	};
 };
 
@@ -695,7 +700,7 @@ dayz_perform_purge_player = {
 	{ 
 		_holder addMagazineCargoGlobal [_x, 1];
 	} count _magazines;
-
+	_group = group _this;
 	_this removeAllMPEventHandlers "mpkilled";
 	_this removeAllMPEventHandlers "mphit";
 	_this removeAllMPEventHandlers "mprespawn";
@@ -708,13 +713,16 @@ dayz_perform_purge_player = {
 	_this removeAllEventHandlers "Local";
 	clearVehicleInit _this;
 	deleteVehicle _this;
-	deleteGroup (group _this);
+	if ((count (units _group) == 0) && (_group != grpNull)) then {
+		deleteGroup _group;
+	};
 	//  _this = nil;
 };
 
 
 dayz_removePlayerOnDisconnect = {
 	if(!isNull(_this)) then {
+		_group = group _this;
 		_this removeAllMPEventHandlers "mphit";
 		deleteVehicle _this;
 		deleteGroup (group _this);
@@ -780,7 +788,7 @@ server_cleanupGroups = {
 	if(!isNil "DZE_DYN_GroupCleanup") exitWith {  DZE_DYN_AntiStuck3rd = DZE_DYN_AntiStuck3rd + 1;};
 	DZE_DYN_GroupCleanup = true;
 	{
-		if (count units _x == 0) then {
+		if ((count (units _x) == 0) && (_x != grpNull)) then {
 			deleteGroup _x;
 		};
 		sleep 0.001;
@@ -833,20 +841,23 @@ server_spawnCleanLoot = {
 	_delQty = 0;
 	_dateNow = (DateToNumber date);
 	{
-		_keep = _x getVariable ["permaLoot",false];
-		if (!_keep) then {
-			_created = _x getVariable ["created",-0.1];
-			if (_created == -0.1) then {
-				_x setVariable ["created",_dateNow,false];
-				_created = _dateNow;
-			} else {
-				_age = (_dateNow - _created) * 525948;
-				if (_age > 20) then {
-					_nearby = {(isPlayer _x) && (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
-					if (_nearby==0) then {
-						deleteVehicle _x;
-						sleep 0.025;
-						_delQty = _delQty + 1;
+		if (!isNull _x) then {
+			_keep = _x getVariable["permaLoot", false];
+			if (!_keep) then {
+				_created = _x getVariable["created", -0.1];
+				if (_created == -0.1) then{
+					_x setVariable["created", _dateNow, false];
+					_created = _dateNow;
+				}
+				else {
+					_age = (_dateNow - _created) * 525948;
+					if (_age > 20) then{
+						_nearby = { (isPlayer _x) && (alive _x) } count(_x nearEntities[["CAManBase", "AllVehicles"], 130]);
+						if (_nearby == 0) then{
+							deleteVehicle _x;
+							sleep 0.025;
+							_delQty = _delQty + 1;
+						};
 					};
 				};
 			};
@@ -891,7 +902,7 @@ server_spawnCleanAnimals = {
 };
 
 server_logUnlockLockEvent = {
-	private["_player", "_obj", "_objectID", "_objectUID", "_statusText", "_status"];
+	private["_player", "_obj", "_objectID", "_objectUID", "_statusText", "_PUID", "_status"];
 	_player = _this select 0;
 	_obj = _this select 1;
 	_status = _this select 2;
@@ -903,6 +914,7 @@ server_logUnlockLockEvent = {
 			[_obj, "gear"] call server_updateObject;
 			_statusText = "LOCKED";
 		};
-		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), (getPlayerUID _player), _statusText];
+		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _killer;} else {GetPlayerUIDOld _killer;};
+		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), _PUID, _statusText];
 	};
 };

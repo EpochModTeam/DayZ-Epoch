@@ -7,6 +7,8 @@ _isVehicle = false;
 
 _vehicleSrc = 	_this select 3;
 
+_abort = false;
+
 if(!(isNull _vehicleSrc)) then {
 
 	_isVehicle = ((_vehicleSrc isKindOf "AllVehicles") && !(_vehicleSrc isKindOf "Man"));

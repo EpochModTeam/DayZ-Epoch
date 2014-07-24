@@ -4,7 +4,7 @@ private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state"
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
-_playerID = getPlayerUID _playerObj;
+_playerID = if (DayZ_UseSteamID) then {GetPlayerUID _playerObj;} else {GetPlayerUIDOld _playerObj;};
 
 if (isNull _playerObj) exitWith {
 	diag_log ("SETUP INIT FAILED: Exiting, player object null: " + str(_playerObj));
@@ -15,7 +15,7 @@ if (isNull _playerObj) exitWith {
 _playerObj addMPEventHandler ["MPHit", {_this spawn fnc_plyrHit;}];
 
 if (_playerID == "") then {
-	_playerID = getPlayerUID _playerObj;
+	_playerID = if (DayZ_UseSteamID) then {GetPlayerUID _playerObj;} else {GetPlayerUIDOld _playerObj;};
 };
 
 if (_playerID == "") exitWith {
@@ -23,7 +23,7 @@ if (_playerID == "") exitWith {
 };
 
 private["_dummy"];
-_dummy = getPlayerUID _playerObj;
+_dummy = if (DayZ_UseSteamID) then {GetPlayerUID _playerObj;} else {GetPlayerUIDOld _playerObj;};
 if ( _playerID != _dummy ) then { 
 	diag_log format["DEBUG: _playerID miscompare with UID! _playerID:%1",_playerID]; 
 	_playerID = _dummy;
