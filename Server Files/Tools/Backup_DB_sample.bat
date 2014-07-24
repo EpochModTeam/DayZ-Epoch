@@ -5,7 +5,14 @@ SET mysqlschema=[Your DB schema name]
 SET mysqlpassword=[your DB password]
 SET mysqluser=[your DB user login]
 SET housekeepafter=5
-SET datestamp=%date:~-10,2%-%date:~-7,2%-%date:~-4,4%_%time:~0,2%.%time:~3,2%.%time:~6,2%
+
+For /f "tokens=2-4 delims=/ " %%a in ('date /t') do (set mydate=%%c-%%a-%%b)
+For /f "tokens=1-2 delims=/:" %%a in ("%TIME%") do (set mytime=%%a.%%b)
+
+set hour=%time:~0,2%
+if "%time:~0,1%"==" " set hour=0%time:~1,1%
+set datestamp=%date:~10,4%-%date:~4,2%-%date:~7,2%_%hour%%time:~3,2%
+
 @REM *** EXECUTION ***
 @REM Change to mysqldir
 c:
