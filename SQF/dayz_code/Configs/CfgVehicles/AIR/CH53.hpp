@@ -27,23 +27,5 @@ class CH53_DZE : USEC_ch53_E {
 	transportMaxWeapons = 25;
 	transportMaxMagazines = 80;
 	transportmaxbackpacks = 15;
-<<<<<<< HEAD
 	fuelCapacity = 3849;
-	
-	class Turrets : Turrets  {
-		class MainTurret : MainTurret  {
-			magazines[] = {"2000Rnd_762x51_M134"};
-		};
-	};
 };
-class CH53_DZE: CH53_DZ	 {
-	displaynameshort = "CH53_DZE";
-	class Turrets : Turrets  {
-		class MainTurret : MainTurret  {
-			magazines[] = {""};
-		};
-	};
-};
-=======
-};
->>>>>>> 41c658c0c8b8f580c5b137ea22830ac81c2123e6
