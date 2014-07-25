@@ -521,7 +521,7 @@ if (_hasrequireditem) then {
 					publicVariableServer "PVDZE_obj_Publish";
 
 					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5];
-
+                                        systemChat format [(localize "str_epoch_player_140"),_combinationDisplay,_text];
 
 				} else {
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
