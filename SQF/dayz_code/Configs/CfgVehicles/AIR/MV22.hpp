@@ -11,4 +11,5 @@ class MV22_DZ : MV22 {
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 400;
 	transportmaxbackpacks = 10;
+	fuelCapacity = 6513;
 };

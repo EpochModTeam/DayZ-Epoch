@@ -26,6 +26,7 @@ class Mi17_DZ: Mi17_base	 {
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
 	transportmaxbackpacks = 10;
+	fuelCapacity = 1870;
 
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {

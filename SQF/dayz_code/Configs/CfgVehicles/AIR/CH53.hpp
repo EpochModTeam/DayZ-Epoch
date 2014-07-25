@@ -27,4 +27,5 @@ class CH53_DZE : USEC_ch53_E {
 	transportMaxWeapons = 25;
 	transportMaxMagazines = 80;
 	transportmaxbackpacks = 15;
+	fuelCapacity = 3849;
 };
