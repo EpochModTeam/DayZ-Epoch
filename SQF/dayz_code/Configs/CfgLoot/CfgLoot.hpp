@@ -369,6 +369,7 @@ class CfgLoot {
 		,{"Saiga12K",0.13}
 		,{"Remington870_lamp",0.1}
 		,{"Crossbow_DZ",0.07}
+		,{"RedRyder",0.06}
 		,{"M1014",0.05}
 	};
 	farmweapons[] = {
@@ -378,6 +379,7 @@ class CfgLoot {
 		,{"Saiga12K",0.13}
 		,{"Remington870_lamp",0.1}
 		,{"Crossbow_DZ",0.07}
+		,{"RedRyder",0.06}
 		,{"huntingrifle",0.05}
 		,{"Chainsaw",0.01}
 	};
