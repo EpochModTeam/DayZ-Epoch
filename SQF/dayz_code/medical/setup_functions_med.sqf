@@ -260,7 +260,9 @@ fnc_usec_recoverUncons = {
 	sleep 1;
 
 	disableUserInput false;
-	[objNull,player,rSwitchMove,"AinjPpneMstpSnonWnonDnon"] call RE;
-	player switchMove "AinjPpneMstpSnonWnonDnon";
-	player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
+	if (vehicle player == player) then {
+		[objNull,player,rSwitchMove,"AinjPpneMstpSnonWnonDnon"] call RE;
+		player switchMove "AinjPpneMstpSnonWnonDnon";
+		player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
+	};
 };
