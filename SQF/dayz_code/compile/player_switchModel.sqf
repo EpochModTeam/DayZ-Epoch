@@ -1,11 +1,11 @@
 private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_tagSetting","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_playerObjName","_wpnType","_ismelee"];
-
+if (gear_done) then {disableUserInput true;};
 _class 			= _this;
 _position 		= getPosATL player;
 _dir 			= getDir player;
 _currentAnim 	= animationState player;
 _tagSetting = player getVariable["DZE_display_name",false];
-_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+_playerUID = [player] call FNC_GetPlayerUID;
 _weapons 	= weapons player;
 _countMags = call player_countMagazines; 
 _magazines = _countMags select 0;
@@ -16,11 +16,11 @@ _primweapon	= primaryWeapon player;
 _secweapon	= secondaryWeapon player;
 
 if(!(_primweapon in _weapons) && _primweapon != "") then {
-	_weapons = _weapons + [_primweapon];
+	_weapons set [(count _weapons), _primweapon];
 };
 
 if(!(_secweapon in _weapons) && _secweapon != "") then {
-	_weapons = _weapons + [_secweapon];
+	_weapons set [(count _weapons), _secweapon];
 };
 
 //BackUp Backpack
@@ -127,6 +127,7 @@ if (!isNil "_newBackpackType") then {
 		[] call _switchUnit;
 		if (gear_done) then {sleep 0.001;};
 		["1"] call gearDialog_create;
+		if (gear_done) then {sleep 0.001;};
 		//magazines
 		_countr = 0;
 		{
@@ -147,6 +148,7 @@ if (!isNil "_newBackpackType") then {
 			};
 		} count _backpackMag;
 		(findDisplay 106) closeDisplay 0;
+		if (gear_done) then {sleep 0.001; disableUserInput false;};
 		_countr = 0;
 		{
 			(unitBackpack player) addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];
@@ -156,26 +158,14 @@ if (!isNil "_newBackpackType") then {
 } else { [] call _switchUnit; };
 [objNull, player, rSwitchMove,_currentAnim] call RE;
 player disableConversation true;
-
-//player setVariable ["bodyName",dayz_playerName,true]; //Outcommit (Issue #991) - Also removed in DayZ Mod 1.8
-
 if (_tagSetting) then {
 	DZE_ForceNameTags = true;
 };
 
-/*
-_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
-_playerObjName = format["PVDZE_player%1",_playerUID];
-call compile format["%1 = player;",_playerObjName];
-publicVariableServer _playerObjName;
-*/
-
-//melee check
 _wpnType = primaryWeapon player;
 _ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
 if (_ismelee == "true") then {
 	call dayz_meleeMagazineCheck; 
 };
 
-//reveal the same objects we do on login
 {player reveal _x} count (nearestObjects [getPosATL player, dayz_reveal, 50]);

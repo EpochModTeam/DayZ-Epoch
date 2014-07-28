@@ -11,7 +11,9 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 	_timeout = 0;
 	r_handlerCount = r_handlerCount + 1;
 	r_player_handler1 = true;
-	player playAction "CanNotMove";
+	if (vehicle player == player) then {
+		player playAction "CanNotMove";
+	};
 	"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
 	"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
 	0 fadeSound 0.05;

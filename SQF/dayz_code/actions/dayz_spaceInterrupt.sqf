@@ -189,4 +189,9 @@ if (_dikCode == 0x39 || (_dikCode in actionKeys "User19")) then {
 	DZE_5 = true;
 };
 
+// F key
+if ((_dikCode == 0x21 && (!_alt && !_ctrl)) || (_dikCode in actionKeys "User6")) then {
+	DZE_F = true;
+};
+
 _handled

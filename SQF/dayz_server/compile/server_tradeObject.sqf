@@ -10,7 +10,7 @@ _qty =		_this select 6;
 _clientID = 	owner _player;
 _price = format ["%2x %1",_currency,_qty];
 _name = if (alive _player) then { name _player; } else { "Dead Player"; };
-_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _player;} else {GetPlayerUIDOld _player;};
+_PUID = [_player] call FNC_GetPlayerUID;
 
 if (_buyorsell == 0) then { //Buy
 diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in/at %4 for %5", _name, _PUID, _classname, _traderCity, _price];

@@ -35,14 +35,14 @@ if (!isDedicated) then {
 		[["Hedgehog_DZ"], 1,"STR_EPOCH_ACTIONS_14"] call player_removeNearby;
 	};
 	player_removeNet = {
-		[["DesertLargeCamoNet","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ"], 5,"str_epoch_player_8"] call player_removeNearby;
+		[["DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ"], 5,"str_epoch_player_8"] call player_removeNearby;
 	};
 
 	player_login = {
 		private ["_unit","_detail","_PUID"];
 		_unit = _this select 0;
 		_detail = _this select 1;
-		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID player} else {GetPlayerUIDOld player};
+		_PUID = [player] call FNC_GetPlayerUID;
 		if(_unit == _PUID) then {
 			player setVariable["publish",_detail];
 		};
@@ -106,7 +106,13 @@ if (!isDedicated) then {
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
 	player_antiWall =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_antiWall.sqf";
 	player_deathBoard =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\list_playerDeathsAlt.sqf";
-
+	
+	//Snap building - disabled by default, not sure about your stance towards this mod yet, feel free to edit
+	if (DZE_snapBuilding) then {
+		player_build =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build2.sqf";
+		snap_build = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
+	};
+	
 	player_plotPreview = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_showPlotRadius.sqf";
 	player_upgradeVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 
@@ -279,15 +285,15 @@ if (!isDedicated) then {
 		};
 	};
 
-	player_guiControlFlash = 	{
-		private["_control"];
-		_control = _this;
-		if (ctrlShown _control) then {
-			_control ctrlShow false;
-		} else {
-			_control ctrlShow true;
-		};
-	};
+    player_guiControlFlash =     {
+        private["_control"];
+        _control = _this;
+        if (ctrlShown (_control select 0)) then {
+            {_x ctrlShow false} foreach _control;
+        } else {
+            {_x ctrlShow true} foreach _control;
+        };
+    };
 	
 	gearDialog_create = {
 		private ["_i","_dialog"];
@@ -528,6 +534,22 @@ if (!isDedicated) then {
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot.sqf";
 	spawn_loot_small = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot_small.sqf";
 	// player_projectileNear = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
+	FNC_GetPlayerUID = {
+		private ["_object","_version","_PID"];
+		_object = _this select 0;
+		_version = productVersion select 3;
+		if (DayZ_UseSteamID) then {
+			_PID = GetPlayerUID _object;
+		} else {
+			if (_version >= 125548) then {
+				_PID = call (compile "GetPlayerUIDOld _object");
+			} else {
+				_PID = GetPlayerUID _object;
+				diag_log format["Your game version, %1, is less than the required for the old UID system; using Steam ID system instead. Update to 1.63.125548 (or latest steam beta)", _version];
+			};
+		};
+		_PID;
+	};
 	FNC_GetSetPos = { //DO NOT USE IF YOU NEED ANGLE COMPENSATION!!!!
 		private "_pos";
 		_thingy = _this select 0;

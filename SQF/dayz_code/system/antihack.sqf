@@ -9,7 +9,7 @@ waitUntil {vehicle player == player};
 [] spawn {
 	private ["_playerName","_playerUID"];
 	_playerName = name player;
-	_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+	_playerUID = [player] call FNC_GetPlayerUID;
 	while {1 == 1} do {
 		if (typeName player != "OBJECT") then {
 			PVDZE_atp = format["WARNING typename error for player UID#%1", _playerUID];
@@ -24,7 +24,7 @@ waitUntil {vehicle player == player};
 
 [] spawn {
 	_playerName = name player;
-	_playerUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+	_playerUID = [player] call FNC_GetPlayerUID;
 	while {true} do {
 		sleep 5;
 	};
@@ -93,7 +93,7 @@ while {1 == 1} do {
 			if (_lastVehicle == vehicle player) then {
 				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) || (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 					(vehicle player) setposATL  _lastpos;
-					_PUID = if (DayZ_UseSteamID) then {GetPlayerUID player;} else {GetPlayerUIDOld player;};
+					_PUID = [player] call FNC_GetPlayerUID;
 					PVDZE_atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", _PUID, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
 					publicVariableServer "PVDZE_atp";
 				} else {

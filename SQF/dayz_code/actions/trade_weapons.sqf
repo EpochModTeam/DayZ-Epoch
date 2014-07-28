@@ -40,7 +40,7 @@ if(_buy_o_sell == "sell") then {
 } else {
 
 	// buying item type must NOT exist if rifle || pistol
-	_msg = "Drop || sell your current weapon before you can buy a new one.";
+	_msg = "Drop or sell your current weapon before you can buy a new one.";
 	_config = (configFile >> "CfgWeapons" >> _part_out);
 	_configName = configName(_config);
 	_wepType = getNumber(_config >> "Type");
@@ -64,7 +64,7 @@ if(_buy_o_sell == "sell") then {
 	};
 	if(_isToolBelt || _isBinocs) then {
 		_abort = (_configName in (weapons player));
-		_msg = "Drop || sell your current toolbelt item before you can buy a new one.";
+		_msg = "Drop or sell your current toolbelt item before you can buy a new one.";
 	};
 };
 

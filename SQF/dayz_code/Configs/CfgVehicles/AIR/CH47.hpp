@@ -117,6 +117,7 @@ class CH47_base_EP1: Helicopter
 	irScanRangeMin = 100;
 	irScanRangeMax = 1000;
 	irScanToEyeFactor = 2;
+	fuelCapacity = 4043;
 };
 
 class CH_47F_EP1;

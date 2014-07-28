@@ -26,4 +26,5 @@ class PBX: RubberBoat {
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 5;
 	transportMaxBackpacks = 1;
+	fuelCapacity = 23;
 };

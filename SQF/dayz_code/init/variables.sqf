@@ -257,6 +257,10 @@ dayz_resetSelfActions = {
 	s_player_heli_lift = -1;
 	s_player_heli_detach = -1;
 	s_player_lockUnlock_crtl = -1;
+	s_player_toggleSnap = -1;
+    s_player_toggleSnapSelect = -1;
+    s_player_toggleSnapSelectPoint=[];
+    snapActions = -1;
 };
 call dayz_resetSelfActions;
 
@@ -534,6 +538,12 @@ if(isNil "DZE_StaticConstructionCount") then {
 if (isNil "DZE_selfTransfuse_Values") then {
 	DZE_selfTransfuse_Values = [12000, 15, 300];
 };
+if (isNil "DZE_snapBuilding") then {
+	DZE_snapBuilding = false;
+};
+if (isNil "helperDetach") then {
+	helperDetach = false;
+};
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
@@ -782,6 +792,8 @@ if(!isDedicated) then {
 	DZE_5 = false;
 	DZE_4 = false;
 	DZE_6 = false;
+	
+	DZE_F = false;
 
 	DZE_cancelBuilding = false;
 	DZE_PZATTACK = false;
