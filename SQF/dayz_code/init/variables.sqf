@@ -541,6 +541,9 @@ if (isNil "DZE_selfTransfuse_Values") then {
 if (isNil "DZE_snapBuilding") then {
 	DZE_snapBuilding = false;
 };
+if (isNil "helperDetach") then {
+	helperDetach = false;
+};
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
@@ -789,6 +792,8 @@ if(!isDedicated) then {
 	DZE_5 = false;
 	DZE_4 = false;
 	DZE_6 = false;
+	
+	DZE_F = false;
 
 	DZE_cancelBuilding = false;
 	DZE_PZATTACK = false;
