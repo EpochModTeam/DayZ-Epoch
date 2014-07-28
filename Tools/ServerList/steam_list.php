@@ -1,7 +1,7 @@
 <pre>
 	<?php
 	/*
-		Example of how to get from server list from steam works for both Arma 2 and 3 servers
+		Example of how to get server list from steam. Works for both Arma 2 and 3 servers
 		Original Source: https://developer.valvesoftware.com/wiki/User:Pizzahut/test.php
 	*/
 
