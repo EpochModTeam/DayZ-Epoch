@@ -256,7 +256,7 @@ if (isServer && isNil "sm_done") then {
 			//Monitor the object
 			PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 		};
-	} count (_BuildingQueue + _objectQueue);
+	} forEach (_BuildingQueue + _objectQueue);
 	// # END SPAWN OBJECTS #
 
 	// preload server traders menu data into cache
