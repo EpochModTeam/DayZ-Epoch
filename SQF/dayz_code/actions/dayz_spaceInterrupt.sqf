@@ -84,6 +84,14 @@ if (_dikCode in actionKeys "MoveLeft") exitWith {r_interrupt = true; if (DZE_Sur
 if (_dikCode in actionKeys "MoveRight") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
 if (_dikCode in actionKeys "MoveBack") exitWith {r_interrupt = true; if (DZE_Surrender) then {call dze_surrender_off};};
 
+//Prevent exploit of glitching through doors
+if (_dikCode in actionKeys "Prone") then {
+	_doors = nearestObjects [player, DZE_DoorsLocked, 3];
+	if (count _doors > 0) then {
+		_handled = true;
+	};
+};
+
 //Prevent exploit of drag body
 if ((_dikCode in actionKeys "Prone") && r_drag_sqf) exitWith { force_dropBody = true; };
 if ((_dikCode in actionKeys "Crouch") && r_drag_sqf) exitWith { force_dropBody = true; };
