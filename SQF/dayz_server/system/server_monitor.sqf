@@ -1,4 +1,4 @@
-private ["_nul","_result","_pos","_wsDone","_dir","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_key","_vehLimit","_hiveResponse","_objectCount","_codeCount","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0","_bQty","_vQty","_BuildingQueue","_objectQueue","_superkey","_shutdown","_res","_hiveLoaded"];
+private ["_nul","_result","_pos","_wsDone","_dir","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_inventory","_hitPoints","_fuel","_damage","_key","_vehLimit","_hiveResponse","_objectCount","_codeCount","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0","_bQty","_vQty","_BuildingQueue","_objectQueue","_superkey","_shutdown","_res","_hiveLoaded"];
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
@@ -91,7 +91,7 @@ if (isServer && isNil "sm_done") then {
 		_ownerID = 		_x select 3;
 
 		_worldspace = 	_x select 4;
-		_intentory =	_x select 5;
+		_inventory =	_x select 5;
 		_hitPoints =	_x select 6;
 		_fuel =			_x select 7;
 		_damage = 		_x select 8;
@@ -176,17 +176,17 @@ if (isServer && isNil "sm_done") then {
 				
 			};
 
-			if (count _intentory > 0) then {
+			if (count _inventory > 0) then {
 				if (_type in DZE_LockedStorage) then {
 					// Fill variables with loot
-					_object setVariable ["WeaponCargo", (_intentory select 0),true];
-					_object setVariable ["MagazineCargo", (_intentory select 1),true];
-					_object setVariable ["BackpackCargo", (_intentory select 2),true];
+					_object setVariable ["WeaponCargo", (_inventory select 0),true];
+					_object setVariable ["MagazineCargo", (_inventory select 1),true];
+					_object setVariable ["BackpackCargo", (_inventory select 2),true];
 				} else {
 
 					//Add weapons
-					_objWpnTypes = (_intentory select 0) select 0;
-					_objWpnQty = (_intentory select 0) select 1;
+					_objWpnTypes = (_inventory select 0) select 0;
+					_objWpnQty = (_inventory select 0) select 1;
 					_countr = 0;					
 					{
 						if(_x in (DZE_REPLACE_WEAPONS select 0)) then {
@@ -200,8 +200,8 @@ if (isServer && isNil "sm_done") then {
 					} count _objWpnTypes; 
 				
 					//Add Magazines
-					_objWpnTypes = (_intentory select 1) select 0;
-					_objWpnQty = (_intentory select 1) select 1;
+					_objWpnTypes = (_inventory select 1) select 0;
+					_objWpnQty = (_inventory select 1) select 1;
 					_countr = 0;
 					{
 						if (_x == "BoltSteel") then { _x = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
@@ -214,8 +214,8 @@ if (isServer && isNil "sm_done") then {
 					} count _objWpnTypes;
 
 					//Add Backpacks
-					_objWpnTypes = (_intentory select 2) select 0;
-					_objWpnQty = (_intentory select 2) select 1;
+					_objWpnTypes = (_inventory select 2) select 0;
+					_objWpnQty = (_inventory select 2) select 1;
 					_countr = 0;
 					{
 						_isOK = 	isClass(configFile >> "CfgVehicles" >> _x);
