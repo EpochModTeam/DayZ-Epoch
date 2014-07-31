@@ -66,7 +66,7 @@ switch _option do {
 			_countIn = _x select 1;
 			_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 			if (_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-		} count _requirements;
+		} forEach _requirements;
 
 		if (_proceed) then {
 			player playActionNow "Medic";
