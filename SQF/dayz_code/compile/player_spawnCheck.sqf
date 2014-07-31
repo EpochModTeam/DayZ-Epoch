@@ -150,4 +150,4 @@ if (_nearbyCount < 1) exitwith
 			};
 		};
 	};
-} count _nearby;
+} forEach _nearby;
