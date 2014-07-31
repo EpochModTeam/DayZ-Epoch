@@ -41,5 +41,5 @@ _hasItems = true;
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
 		cutText [format[(localize "STR_EPOCH_ACTIONS_12"), _missingQty, _textMissing], "PLAIN DOWN"];
 	};
-} count _items;
+} forEach _items;
 _hasItems
