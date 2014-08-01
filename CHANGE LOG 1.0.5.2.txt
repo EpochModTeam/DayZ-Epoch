@@ -19,6 +19,7 @@
 [FIXED] Fire cleanup diag_log error in server_functions.sqf #1421 @ebaydayz
 [FIXED] NearestObjects position error in server_playerSync.sqf #1425 @ebaydayz
 [FIXED] Corrected ClassName type for CH53_DZE and BAF_Merlin_DZE. @Cinjun
+[FIXED] Several count reverted to forEach due to count loops not being nestable inside other count loops #1491-#1495 @ebaydayz
 [FIXED] Safes empty when opening after restart #1467 @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
