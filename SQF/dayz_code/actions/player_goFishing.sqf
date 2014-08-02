@@ -17,7 +17,7 @@ if(!(surfaceIsWater _position)) exitWith {DZE_ActionInProgress = false; cutText 
 if((currentWeapon player) != "MeleeFishingPole") exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_67"), "PLAIN DOWN"]; };
 
 if(dayz_isSwimming) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_26", "PLAIN DOWN"]; };
-if(player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];};
+if(player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText ["You cannot fish while in combat!","PLAIN DOWN"];};
 
 _isOk = true;
 _counter = 0;
