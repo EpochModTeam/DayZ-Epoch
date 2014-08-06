@@ -39,6 +39,7 @@ if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_lockv
 _obj setVariable["packing",1];
 
 _dir = direction _obj;
+_vector = [(vectorDir _obj),(vectorUp _obj)];
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
 if(!isNull _obj) then {
@@ -49,6 +50,7 @@ if(!isNull _obj) then {
 	//place vault
 	_holder = createVehicle [_lockedClass,_pos,[], 0, "CAN_COLLIDE"];
 	_holder setdir _dir;
+	_holder setVectorDirAndUp _vector;
 	_holder setPosATL _pos;
 	player reveal _holder;
 	
