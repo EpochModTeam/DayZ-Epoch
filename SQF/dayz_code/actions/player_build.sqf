@@ -197,7 +197,7 @@ if (_hasrequireditem) then {
 
 	// get inital players position
 	_location1 = getPosATL player;
-	_dir = getDir player;
+	_dir = 0;
 
 	// if ghost preview available use that instead
 	if (_ghost != "") then {
@@ -205,7 +205,7 @@ if (_hasrequireditem) then {
 	};
 
 	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-
+	_object setDir 0;
 	_object attachTo [player,_offset];
 
 	_position = getPosATL _object;
@@ -213,9 +213,65 @@ if (_hasrequireditem) then {
 	cutText [(localize "str_epoch_player_45"), "PLAIN DOWN"];
 
 	_objHDiff = 0;
-
+	
+	
+	DZE_updateVec = false;
+	DZE_memForBack = 0;
+	DZE_memLeftRight = 0;
+	DZE_curPitch = 45;
+	_vector = [[0,0,0],[0,0,0]];
+	_useVec = false;
+	_permUse = true;
+	_noRotate = [];
+	if((typeOf _object) in _noRotate)then{
+		_permUse = false;
+	};
+	if(_permUse) then{
+		s_player_setVectorsReset = player addaction ["Reset","\z\addons\dayz_code\actions\player_vectorChange.sqf","reset"];
+		s_player_setVectorsForward = player addaction ["Pitch Forward","\z\addons\dayz_code\actions\player_vectorChange.sqf","forward"];
+		s_player_setVectorsBack = player addaction ["Pitch Back","\z\addons\dayz_code\actions\player_vectorChange.sqf","back"];
+		s_player_setVectorsLeft = player addaction ["Bank Left","\z\addons\dayz_code\actions\player_vectorChange.sqf","left"];
+		s_player_setVectorsRight = player addaction ["Bank Right","\z\addons\dayz_code\actions\player_vectorChange.sqf","right"];
+		s_player_setVectors3 = player addaction ["Increment by 3 degrees","\z\addons\dayz_code\actions\player_vectorChange.sqf","3"];
+		s_player_setVectors45 = player addaction ["Increment by 45 degrees","\z\addons\dayz_code\actions\player_vectorChange.sqf","45"];
+		s_player_setVectors90 = player addaction ["Increment by 90 degrees","\z\addons\dayz_code\actions\player_vectorChange.sqf","90"];
+	};
 	while {_isOk} do {
+		//Update the vector
+		if(DZE_updateVec) then{
+			detach _object;
+			
+			_object setDir _dir;
+			_object setPosATL _location;
 
+			_pitch = DZE_memForBack;
+			_bank = DZE_memLeftRight;
+			_yaw = 360-(getdir _object);
+			_sign = [1,-1] select (_pitch < 0);
+			while {abs _pitch > 180} do {_pitch = _sign*(abs _pitch - 180)};
+			if(abs _pitch == 90) then {_pitch = _sign*(89.9)};
+			if(abs _pitch > 90) then
+			{
+				_object setdir (getdir _object)-180;
+				_object setPosATL (getPosATL _object);
+				_yaw = 360-(getdir _object);
+				_bank = _bank + 180;
+				_pitch = (180 - abs _pitch)*_sign;
+			};
+			_vdir = [0, cos _pitch, sin _pitch];
+			_vdir = [_vdir, _yaw] call BIS_fnc_rotateVector2D;
+			_sign = [1,-1] select (_bank < 0);
+			while {abs _bank > 360} do {_bank = _sign*(abs _bank - 360)};
+			if(abs _bank > 180) then {_sign = -1*_sign; _bank = (360-_bank)*_sign};
+			_vup = [sin _bank, 0, cos _bank];
+			_vup = [_vup, _yaw] call BIS_fnc_rotateVector2D;
+
+			_object attachTo [player,_offset];
+			_object setVectorDirAndUp [_vdir, _vup];
+			_vector = [_vdir, _vup];
+			DZE_updateVec = false;
+			_useVec = true;
+		};
 		_zheightchanged = false;
 		_zheightdirection = "";
 		_rotate = false;
@@ -260,59 +316,62 @@ if (_hasrequireditem) then {
 			DZE_6 = false;
 			_dir = 0;
 		};
-
+		
 		if(_rotate) then {
-			_object setDir _dir;
-			_object setPosATL _position;
+			if(_useVec) then{
+				DZE_updateVec = true;
+			}else{
+				_object setDir _dir;
+				_object setPosATL _position;
+			};
 			//diag_log format["DEBUG Rotate BUILDING POS: %1", _position];
 		};
+		
 
 		if(_zheightchanged) then {
 			detach _object;
 
-			_position = getPosATL _object;
-
 			if(_zheightdirection == "up") then {
-				_position set [2,((_position select 2)+0.1)];
+				_offset set [2, ((_offset select 2) + 0.1)];
 				_objHDiff = _objHDiff + 0.1;
 			};
 			if(_zheightdirection == "down") then {
-				_position set [2,((_position select 2)-0.1)];
+				_offset set [2,((_offset select 2)-0.1)];
 				_objHDiff = _objHDiff - 0.1;
 			};
 
 			if(_zheightdirection == "up_alt") then {
-				_position set [2,((_position select 2)+1)];
+				_offset set [2,((_offset select 2)+1)];
 				_objHDiff = _objHDiff + 1;
 			};
 			if(_zheightdirection == "down_alt") then {
-				_position set [2,((_position select 2)-1)];
+				_offset set [2,((_offset select 2)-1)];
 				_objHDiff = _objHDiff - 1;
 			};
 
 			if(_zheightdirection == "up_ctrl") then {
-				_position set [2,((_position select 2)+0.01)];
+				_offset set [2,((_offset select 2)+0.01)];
 				_objHDiff = _objHDiff + 0.01;
 			};
 			if(_zheightdirection == "down_ctrl") then {
-				_position set [2,((_position select 2)-0.01)];
+				_offset set [2,((_offset select 2)-0.01)];
 				_objHDiff = _objHDiff - 0.01;
 			};
 
-			_object setDir (getDir _object);
-
 			if((_isAllowedUnderGround == 0) && ((_position select 2) < 0)) then {
-				_position set [2,0];
+				_offset set [2,0];
 			};
 
-			_object setPosATL _position;
-
 			//diag_log format["DEBUG Change BUILDING POS: %1", _position];
-
-			_object attachTo [player];
-
+			
+			_object attachTo [player,_offset];
+			if(_useVec) then{
+				_object setVectorDirAndUp _vector;
+			};
+			
 		};
 
+		
 		sleep 0.5;
 
 		_location2 = getPosATL player;
@@ -321,6 +380,7 @@ if (_hasrequireditem) then {
 			_isOk = false;
 			detach _object;
 			_dir = getDir _object;
+			_vector = [(vectorDir _object),(vectorUp _object)];
 			_position = getPosATL _object;
 			//diag_log format["DEBUG BUILDING POS: %1", _position];
 			deleteVehicle _object;
@@ -358,7 +418,18 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 	};
-
+	
+	if(_permUse) then{
+		player removeAction s_player_setVectorsReset;
+		player removeAction s_player_setVectorsForward;
+		player removeAction s_player_setVectorsBack;
+		player removeAction s_player_setVectorsLeft;
+		player removeAction s_player_setVectorsRight;
+		player removeAction s_player_setVectors3;
+		player removeAction s_player_setVectors45;
+		player removeAction s_player_setVectors90;
+	};
+	
 	//No building on roads unless toggled
 	if (!DZE_BuildOnRoads) then {
 		if (isOnRoad _position) then { _cancel = true; _reason = "Cannot build on a road."; };
@@ -375,7 +446,7 @@ if (_hasrequireditem) then {
 		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 
 		_tmpbuilt setdir _dir;
-
+		_tmpbuilt setVectorDirAndUp _vector;
 		// Get position based on object
 		_location = _position;
 
@@ -384,6 +455,7 @@ if (_hasrequireditem) then {
 		};
 
 		_tmpbuilt setPosATL _location;
+
 
 
 		cutText [format[(localize "str_epoch_player_138"),_text], "PLAIN DOWN"];
@@ -517,11 +589,11 @@ if (_hasrequireditem) then {
 					_tmpbuilt setVariable ["CharacterID",_combination,true];
 
 
-					PVDZE_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],_classname];
+					PVDZE_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_vector],_classname];
 					publicVariableServer "PVDZE_obj_Publish";
 
 					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5];
-                                        systemChat format [(localize "str_epoch_player_140"),_combinationDisplay,_text];
+					 systemChat format [(localize "str_epoch_player_140"),_combinationDisplay,_text];
 
 				} else {
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
@@ -530,7 +602,7 @@ if (_hasrequireditem) then {
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						PVDZE_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
+						PVDZE_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_vector],_classname];
 						publicVariableServer "PVDZE_obj_Publish";
 					};
 				};
