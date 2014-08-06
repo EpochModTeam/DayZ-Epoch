@@ -135,7 +135,10 @@ if ((count _upgrade) > 0) then {
 
 			// Get direction
 			_dir = getDir _obj;
-
+			
+			//Get Vector
+			_vector = [(vectorDir _obj),(vectorUp _obj)];
+			
 			// Current charID
 			_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
@@ -147,6 +150,9 @@ if ((count _upgrade) > 0) then {
 			// Set direction
 			_object setDir _dir;
 
+			// Set vector
+			_object setVectorDirAndUp _vector;
+			
 			// Set location
 			_object setPosATL _location;
 
@@ -164,7 +170,7 @@ if ((count _upgrade) > 0) then {
 				cutText [format[(localize "str_epoch_player_159"),_text], "PLAIN DOWN", 5];
 			};
 
-			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_vector],_classname,_obj,player];
 			publicVariableServer "PVDZE_obj_Swap";
 
 			player reveal _object;
