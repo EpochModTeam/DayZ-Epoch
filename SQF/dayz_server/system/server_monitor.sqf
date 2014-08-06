@@ -97,16 +97,22 @@ if (isServer && isNil "sm_done") then {
 		_damage = 		_x select 8;
 		
 		_dir = 0;
+		_vector = [[0,0,0],[0,0,0]];
+		_vecExists = false;
 		_pos = [0,0,0];
 		_wsDone = false;
 		if (count _worldspace >= 2) then
 		{
+			if(count _worldspace == 3) then{
+				_vector = _worldspace select 2;
+				_vecExists = true;
+			};
 			_dir = _worldspace select 0;
 			if (count (_worldspace select 1) == 3) then {
 				_pos = _worldspace select 1;
 				_wsDone = true;
-			}
-		};			
+			};
+		};	
 		
 		if (!_wsDone) then {
 			if (count _worldspace >= 1) then { _dir = _worldspace select 0; };
@@ -160,6 +166,11 @@ if (isServer && isNil "sm_done") then {
 			// _object setVehicleAmmo DZE_vehicleAmmo;
 			
 			_object setdir _dir;
+			
+			if(_vecExists)then{
+				_object setVectorDirAndUp _vector;
+			};
+			
 			_object setposATL _pos;
 			_object setDamage _damage;
 			
