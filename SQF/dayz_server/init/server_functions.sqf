@@ -590,15 +590,44 @@ dayz_objectUID = {
 
 dayz_objectUID2 = {
 	private["_position","_dir","_key"];
-	_dir = _this select 0;
-	_key = "";
-	_position = _this select 1;
-	{
-		_x = _x * 10;
-		if ( _x < 0 ) then { _x = _x * -10 };
-		_key = _key + str(round(_x));
-	} count _position;
-	_key = _key + str(round(_dir));
+	if((count _this) == 2) then{
+		_dir = _this select 0;
+		_key = "";
+		_position = _this select 1;
+		{
+			_x = _x * 10;
+			if ( _x < 0 ) then { _x = _x * -10 };
+			_key = _key + str(round(_x));
+		} count _position;
+		_key = _key + str(round(_dir));
+	}else{
+		_dir = _this select 0;
+
+		_key = "";
+		_position = _this select 1;
+		{
+			_x = _x * 10;
+			if ( _x < 0 ) then { _x = _x * -10 };
+			_key = _key + str(round(_x));
+		} count _position;
+		_key = _key + str(round(_dir));
+		
+		_vecCnt = 0;
+		_rand = random 10;
+		_vector = _this select 2;
+		{
+			_set = _x;
+			{
+				_vecCnt = _vecCnt + (round (_x * 10))
+				
+			} foreach _set;
+			
+		} foreach _vector;
+		if(_vecCnt < 0)then{
+			_vecCnt = (_vecCnt * -1) * (round(_rand + 2));
+		};
+		_key = _key + str(_vecCnt);	
+	};
 	_key
 };
 
