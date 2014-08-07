@@ -274,6 +274,10 @@ s_player_madsci 		= 	[];
 s_player_parts 			= 	[];
 s_player_combi 			= 	[];
 
+//Modular player_build
+snapGizmos = [];
+snapGizmosNearby = [];
+
 //Initialize Medical Variables
 r_interrupt = 			false;
 r_doLoop = 				false;
@@ -538,11 +542,11 @@ if(isNil "DZE_StaticConstructionCount") then {
 if (isNil "DZE_selfTransfuse_Values") then {
 	DZE_selfTransfuse_Values = [12000, 15, 300];
 };
-if (isNil "DZE_snapBuilding") then {
-	DZE_snapBuilding = false;
-};
 if (isNil "helperDetach") then {
 	helperDetach = false;
+};
+if (isNil "DZE_modularBuild") then {
+	DZE_modularBuild = false;
 };
 
 // needed on server
