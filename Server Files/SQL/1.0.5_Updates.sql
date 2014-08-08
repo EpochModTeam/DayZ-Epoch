@@ -7,6 +7,43 @@ INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["CH53_DZE",2]', 6, '[2,"ItemBr
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["CH53_DZE",2]', 10, '[3,"ItemBriefcase100oz",1]', '[2,"ItemBriefcase100oz",1]', 0, 512, 'trade_any_vehicle');
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["BAF_Merlin_DZE",2]', 10, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 519, 'trade_any_vehicle');
 
+DELETE FROM `Traders_DATA` WHERE item = '["hilux1_civil_1_open"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_1_open_DZE",2]', 9, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 495, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_1_open_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_1_open_DZE",2]', 9, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 590, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_1_open_DZE",2]', 9, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 659, 'trade_any_vehicle');
+
+DELETE FROM `Traders_DATA` WHERE item = '["hilux1_civil_2_covered"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_2_covered_DZE",2]', 7, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 495, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_2_covered_DZE",2]', 9, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_2_covered_DZE",2]', 7, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 590, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_2_covered_DZE",2]', 9, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 659, 'trade_any_vehicle');
+
+DELETE FROM `Traders_DATA` WHERE item = '["hilux1_civil_3_open"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_3_open_DZE",2]', 9, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 495, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_3_open_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_3_open_DZE",2]', 5, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 590, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_3_open_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 659, 'trade_any_vehicle');
+
+DELETE FROM `Traders_DATA` WHERE item = '["datsun1_civil_1_open"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_1_open_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 495, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_1_open_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_1_open_DZE",2]', 11, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 590, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_1_open_DZE",2]', 12, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 659, 'trade_any_vehicle');
+
+DELETE FROM `Traders_DATA` WHERE item = '["datsun1_civil_2_covered"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_2_covered_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 495, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_2_covered_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_2_covered_DZE",2]', 11, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 590, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_2_covered_DZE",2]', 11, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 659, 'trade_any_vehicle');
+
+DELETE FROM `Traders_DATA` WHERE item = '["datsun1_civil_3_open"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]', 11, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 495, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 590, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]', 11, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 659, 'trade_any_vehicle');
+
+
 -- Remove incorrect lines 
 DELETE FROM `Traders_DATA` WHERE item = '["CH53_DZE",1]';
 DELETE FROM `Traders_DATA` WHERE item = '["BAF_Merlin_DZE",1]';
