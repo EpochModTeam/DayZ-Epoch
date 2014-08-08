@@ -81,7 +81,5 @@ if (_hasrequireditem and DZE_ActionInProgress) then {
 	_dir = _controls select 3; //int
 	
 	//Publish item to a database
-	if (!DZE_cancelBuilding) then { //double check that building was not cancelled externally
-		[_cancel, _position, _classnametmp,_isAllowedUnderGround, _text, _isPole, _lockable,_dir, _reason] call player_build_publish;
-	};
+	[_cancel, _position, _classnametmp,_isAllowedUnderGround, _text, _isPole, _lockable,_dir, _reason] call player_build_publish;
 };

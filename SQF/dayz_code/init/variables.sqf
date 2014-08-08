@@ -548,6 +548,9 @@ if (isNil "helperDetach") then {
 if (isNil "DZE_modularBuild") then {
 	DZE_modularBuild = false;
 };
+if (isNil "DZE_snapExtraRange") then {
+	DZE_snapExtraRange = 0;
+};
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
