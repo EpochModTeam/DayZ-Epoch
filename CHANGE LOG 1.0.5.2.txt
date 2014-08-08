@@ -27,7 +27,7 @@
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
 [UPDATED] Updated all config.cfg in Config-Examples, Added Default Steam Ports and Updated Layout. @Namindu
-[UPDATED] Epoch.sql & 1.0.5_Updates.sql to correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
+[UPDATED] Epoch.sql & 1.0.5_Updates.sql with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 
 [INFO] (EXTREMELY IMPORTANT) Server owners MUST update their required build and beta to 125548
 [INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
