@@ -59,7 +59,7 @@ fnc_initSnapPoints = {
 fnc_initSnapPointsNearby = {
 	_pos = getPosATL _object;
 	_findWhitelisted = []; _pointsNearby = [];
-	_findWhitelisted = nearestObjects [_pos,_whitelist,_radius]-[_object];
+	_findWhitelisted = nearestObjects [_pos,_whitelist,(_radius + DZE_snapExtraRange)]-[_object];
 	snapGizmosNearby = [];	
 	{	
 		_nearbyObject = _x;
@@ -242,7 +242,7 @@ switch (snapActionState) do {
 		[1,0,0] call fnc_snapActionCleanup;
 		[] spawn {
 		while {true} do {
-			if(!DZE_ActionInProgress) exitWith {call fnc_initSnapPointsCleanup;[0,0,0] call fnc_snapActionCleanup; ["",false] call fnc_initSnapTutorial; snapActionState = "OFF";};
+			if(!DZE_ActionInProgress || DZE_cancelBuilding) exitWith {call fnc_initSnapPointsCleanup;[0,0,0] call fnc_snapActionCleanup; ["",false] call fnc_initSnapTutorial; snapActionState = "OFF";};
 			sleep 2;
 			};
 		};
