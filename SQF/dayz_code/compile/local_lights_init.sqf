@@ -137,7 +137,7 @@ if(isServer)then{
 				};
 			};
 			sleep 0.001;
-		} count _missonLights;
+		} forEach _missonLights;
 		if (_delQtyLights > 0) then {
 			_qty = count _missonLights;
 			diag_log (format["CLEANUP: Deleted %1 Lights out of %2",_delQtyLights,_qty]);

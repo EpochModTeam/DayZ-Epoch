@@ -99,19 +99,29 @@ if (!isDedicated) then {
 	player_makeFire =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_makefire.sqf";
 	player_harvestPlant =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_harvestPlant.sqf";
 	player_goFishing =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_goFishing.sqf";
-	player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
+	
+	if (DZE_modularBuild) then {
+		player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\modular_build.sqf";
+		player_build_countNearby =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_countNearby.sqf";
+		player_build_states =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_states.sqf";
+		player_build_needNearby =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_needNearby.sqf";
+		player_build_getConfig =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_getConfig.sqf";
+		player_build_plotCheck =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_plotCheck.sqf";
+		player_build_buildReq =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_buildReq.sqf";
+		player_build_create =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_create.sqf";
+		player_build_controls =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_controls.sqf";
+		player_build_publish =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_publish.sqf";
+		snap_build = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
+	} else {
+		player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
+	};
+	
 	player_wearClothes =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
 	player_antiWall =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_antiWall.sqf";
 	player_deathBoard =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\list_playerDeathsAlt.sqf";
-	
-	//Snap building - disabled by default, not sure about your stance towards this mod yet, feel free to edit
-	if (DZE_snapBuilding) then {
-		player_build =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build2.sqf";
-		snap_build = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
-	};
 	
 	player_plotPreview = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_showPlotRadius.sqf";
 	player_upgradeVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
