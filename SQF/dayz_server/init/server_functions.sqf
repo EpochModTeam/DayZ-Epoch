@@ -914,7 +914,7 @@ server_logUnlockLockEvent = {
 			[_obj, "gear"] call server_updateObject;
 			_statusText = "LOCKED";
 		};
-		_PUID = [_killer] call FNC_GetPlayerUID;
+		_PUID = [_player] call FNC_GetPlayerUID;
 		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), _PUID, _statusText];
 	};
 };
