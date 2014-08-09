@@ -201,10 +201,56 @@ class CfgVehicles {
 			class MainTurret: NewTurret {
 				class Turrets;
 				class ViewOptics;
+					class HitPoints {
+     						class HitTurret {
+					      	armor = 0.2;
+	      					material = 51;	
+	      					name = "vez";
+	      					visual = "vez";
+	      					passThrough = 0.3;
+     				    	};
+	     				class HitGun {
+	      					armor = 0.2;
+	      					material = 51;
+						name = "zbran";
+						visual = "zbran";
+						passThrough = 0.1;
+	     				};
+				};
 			};
 		};
+		class AnimationSources: AnimationSources {
+	   		class HitGlass1	{
+	    			source = "Hit";
+	    			hitpoint = "HitGlass1";
+	    			raw = 1;
+	   		};
+	   		class HitGlass2: HitGlass1 {
+	    			hitpoint = "HitGlass2";
+	   		};
+	   		class HitGlass3: HitGlass1 {
+	    			hitpoint = "HitGlass3";
+	   		};
+	   		class HitGlass4: HitGlass1 {
+	    			hitpoint = "HitGlass4";
+	   		};
+	   		class HitGlass5: HitGlass1 {
+	    			hitpoint = "HitGlass5";
+	   		};
+	   		class HitGlass6: HitGlass1 {
+	    			hitpoint = "HitGlass6";
+	   		};
+  		};
+	  	dammageHalf[] = {};
+	  	dammageFull[] = {};
+	  	supplyRadius = 1.2;
+	  	accuracy = 0.02;
+	  	camouflage = 100;
+	  	audible = 30;
+	  	class DefaultEventhandlers;
+	  	class Eventhandlers: DefaultEventhandlers{};
+	  	class DestructionEffects{};
 	};
-
 	// AIR
 	#include "CfgVehicles\AIR\AN2.hpp"
 	#include "CfgVehicles\AIR\BAF_Merlin.hpp"
