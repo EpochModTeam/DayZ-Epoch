@@ -498,5 +498,5 @@ class ArmoredSUV_PMC_DZE3: ArmoredSUV_PMC_DZE2
 
 class ArmoredSUV_PMC_DZE4: ArmoredSUV_PMC_DZE3
 {
-	fuelCapacity = 250;
+	fuelCapacity = 250; 
 };
