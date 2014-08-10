@@ -401,7 +401,7 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 
 class ArmoredSUV_PMC_DZE1: ArmoredSUV_PMC_DZE
 {
-	maxspeed = 250
+	maxspeed = 270  //increased speed slightly since origional is 230
 	brakeDistance = 14;
 	terrainCoef = 1.5;
 	class Upgrades
@@ -483,9 +483,9 @@ class ArmoredSUV_PMC_DZE2: ArmoredSUV_PMC_DZE1
 
 class ArmoredSUV_PMC_DZE3: ArmoredSUV_PMC_DZE2
 {
-	transportMaxWeapons = 20;
-	transportMaxMagazines = 100;
-	transportmaxbackpacks = 4;
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 800; 
+	transportmaxbackpacks = 15;
 	class Upgrades
 	{
 		ItemTNK[] = {"ArmoredSUV_PMC_DZE4",
