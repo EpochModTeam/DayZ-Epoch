@@ -389,4 +389,114 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 		{
 		};
 	};
+	class Upgrades
+	{
+			ItemORP[] = {"ArmoredSUV_PMC_DZE1",
+			{  },
+			{ 
+				{ "ItemORP",1 },
+				{ "PartEngine",2 } }};
+	};
+};
+
+class ArmoredSUV_PMC_DZE1: ArmoredSUV_PMC_DZE
+{
+	maxspeed = 250
+	brakeDistance = 14;
+	terrainCoef = 1.5;
+	class Upgrades
+	{
+		ItemAVE[] = {"ArmoredSUV_PMC_DZE2",
+			{  },
+			{ 
+				{ "ItemAVE",1 },
+				{ "PartGeneric",2 },
+				{ "metal_panel_kit",2 },
+				{ "ItemTankTrap",2 } }};
+	};
+};
+
+class ArmoredSUV_PMC_DZE2: ArmoredSUV_PMC_DZE1
+{
+	armor = 350;
+	class HitPoints: HitPoints
+	{
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.3;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.3;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.3;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.3;
+		};
+		class HitFuel
+		{
+			armor = 0.28;
+			material = -1;
+			name = "palivo";
+			visual = "";
+			passThrough = 1;
+		};
+		class HitEngine
+		{
+			armor = 1;
+			material = -1;
+			name = "motor";
+			visual = "";
+			passThrough = 1;
+		};
+		class HitGlass1: HitGlass1
+		{
+			armor = 2;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 2;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 2;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 2;
+		};
+	};
+	class Upgrades
+	{
+		ItemLRK[] = {"ArmoredSUV_PMC_DZE4",
+			{  },
+			{ 
+				{ "ItemLRK",1 },
+				{ "PartGeneric",1 },
+				{ "ItemTent",1 } }};
+	};
+};
+
+class ArmoredSUV_PMC_DZE3: ArmoredSUV_PMC_DZE2
+{
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 4;
+	class Upgrades
+	{
+		ItemTNK[] = {"ArmoredSUV_PMC_DZE4",
+			{  },
+			{ 
+				{ "ItemTNK",1 },
+				{ "PartFueltank",2 } }};
+	};
+};
+
+class ArmoredSUV_PMC_DZE4: ArmoredSUV_PMC_DZE3
+{
+	fuelCapacity = 250;
 };
