@@ -592,7 +592,7 @@ class Lada2_DZE2: Lada2_DZE1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"Lada1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"Lada2_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
 	};
 };
 class LadaLM_DZE2: LadaLM_DZE1 {
@@ -639,7 +639,7 @@ class LadaLM_DZE2: LadaLM_DZE1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"Lada1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"LadaLM_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
 	};
 };
 class Lada1_TK_CIV_EP1_DZE2: Lada1_TK_CIV_EP1_DZE1 {
@@ -686,7 +686,7 @@ class Lada1_TK_CIV_EP1_DZE2: Lada1_TK_CIV_EP1_DZE1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"Lada1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"Lada1_TK_CIV_EP1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
 	};
 };
 class Lada2_TK_CIV_EP1_DZE2: Lada2_TK_CIV_EP1_DZE1 {
@@ -733,7 +733,7 @@ class Lada2_TK_CIV_EP1_DZE2: Lada2_TK_CIV_EP1_DZE1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"Lada1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"Lada2_TK_CIV_EP1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
 	};
 };
 
