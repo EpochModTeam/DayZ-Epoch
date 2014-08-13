@@ -36,12 +36,18 @@ if(_IsNearPlot == 0) then {
 	_nearestPole = _findNearestPole select 0;
 
 	// Find owner 
-	_ownerID = _nearestPole getVariable["CharacterID","0"];
+	_ownerID = _nearestPole getVariable["ownerPUID","0"];
+	
+	if (DZE_APlotforLife) then {
+		_playerUID = getPlayerUID player;
+	}else{
+		_playerUID = dayz_characterID
+	};
 
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
 
 	// check if friendly to owner
-	if(dayz_characterID == _ownerID) then {
+	if(_playerUID == _ownerID) then {
 		_canBuildOnPlot = true;		
 	} else {
 		_friendlies		= player getVariable ["friendlyTo",[]];
@@ -138,6 +144,7 @@ if ((count _upgrade) > 0) then {
 
 			// Current charID
 			_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
+			_ownerID = _obj getVariable["ownerPUID","0"];
 
 			_classname = _newclassname;
 			
@@ -150,6 +157,12 @@ if ((count _upgrade) > 0) then {
 			// Set location
 			_object setPosATL _location;
 
+			// Set Owner.
+			if (DZE_APlotforLife) then {
+				_object setVariable ["ownerPUID",_ownerID,true];
+			}else{
+				_object setVariable ["ownerPUID",__objectCharacterID,true];
+			};
 			if (_lockable == 3) then {
 
 				_combination_1 = floor(random 10);
@@ -164,7 +177,7 @@ if ((count _upgrade) > 0) then {
 				cutText [format[(localize "str_epoch_player_159"),_text], "PLAIN DOWN", 5];
 			};
 
-			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _ownerID],_classname,_obj,player];
 			publicVariableServer "PVDZE_obj_Swap";
 
 			player reveal _object;

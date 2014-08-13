@@ -1,4 +1,4 @@
-private ["_nul","_result","_pos","_wsDone","_dir","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_inventory","_hitPoints","_fuel","_damage","_key","_vehLimit","_hiveResponse","_objectCount","_codeCount","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0","_bQty","_vQty","_BuildingQueue","_objectQueue","_superkey","_shutdown","_res","_hiveLoaded"];
+private ["_nul","_result","_pos","_wsDone","_dir","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_inventory","_hitPoints","_fuel","_damage","_key","_vehLimit","_hiveResponse","_objectCount","_codeCount","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0","_bQty","_vQty","_BuildingQueue","_objectQueue","_superkey","_shutdown","_res","_hiveLoaded","_ownerPUID"];
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
@@ -115,7 +115,20 @@ if (isServer && isNil "sm_done") then {
 			diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 		};
 		
-
+		// Realign characterID to OwnerPUID - need to force save though.
+		
+		if (DZE_APlotforLife) then {
+			if (count _worldspace < 3) then
+			{
+				_worldspace set [count _worldspace, "0"];
+			};		
+			_ownerPUID = _worldspace select 2;
+		} else {
+			_ownerPUID = _ownerID;
+		};
+		
+		// diag_log format["Server_monitor: [ObjectID = %1]  [ClassID = %2] [_ownerPUID = %3]", _idKey, _type, _ownerPUID];
+		
 		if (_damage < 1) then {
 			//diag_log format["OBJ: %1 - %2", _idKey,_type];
 			
@@ -123,6 +136,7 @@ if (isServer && isNil "sm_done") then {
 			_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
 			_object setVariable ["lastUpdate",time];
 			_object setVariable ["ObjectID", _idKey, true];
+			_object setVariable ["OwnerPUID", _ownerPUID, true];
 
 			_lockable = 0;
 			if(isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {
