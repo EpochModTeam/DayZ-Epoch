@@ -42,7 +42,7 @@ class AH6J_EP1_DZE: AH6J_EP1_DZ
 	scope = 2;
 	side = 2;
 	displayName = "AH6J_DZE";
-	magazines[] = {};
+	magazines[] = {"60Rnd_CMFlareMagazine"};
 };
 class AH6X_DZ: AH6_Base_EP1 {
 	displayname = "AH6X Little Bird";
