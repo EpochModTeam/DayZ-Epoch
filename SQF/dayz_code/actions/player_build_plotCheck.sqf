@@ -34,7 +34,7 @@ _IsNearPlot = count (_findNearestPole); //count our new array of non-destroyed p
 // End script early if item is plot pole and another one exists within defined radius
 if(_isPole && _IsNearPlot > 0) exitWith { 
 	DZE_ActionInProgress = false;
-	cutText [(localize "str_epoch_player_44") , "PLAIN DOWN"]; 
+	cutText [(format [localize "str_epoch_player_44"), DZE_PlotPole select 1], "PLAIN DOWN"]; 
 };
 
 if(_IsNearPlot == 0) then { //No live plotpoles were found nearby
