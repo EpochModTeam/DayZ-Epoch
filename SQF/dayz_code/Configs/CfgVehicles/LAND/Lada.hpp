@@ -503,6 +503,7 @@ class Lada2_TK_CIV_EP1_DZE1: Lada2_TK_CIV_EP1 {
 // Armor 2
 class Lada1_DZE2: Lada1_DZE1 {
 	armor = 50; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -550,6 +551,7 @@ class Lada1_DZE2: Lada1_DZE1 {
 };
 class Lada2_DZE2: Lada2_DZE1 {
 	armor = 50; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -597,6 +599,7 @@ class Lada2_DZE2: Lada2_DZE1 {
 };
 class LadaLM_DZE2: LadaLM_DZE1 {
 	armor = 50; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -644,6 +647,7 @@ class LadaLM_DZE2: LadaLM_DZE1 {
 };
 class Lada1_TK_CIV_EP1_DZE2: Lada1_TK_CIV_EP1_DZE1 {
 	armor = 50; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -691,6 +695,7 @@ class Lada1_TK_CIV_EP1_DZE2: Lada1_TK_CIV_EP1_DZE1 {
 };
 class Lada2_TK_CIV_EP1_DZE2: Lada2_TK_CIV_EP1_DZE1 {
 	armor = 50; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -786,17 +791,17 @@ class Lada2_TK_CIV_EP1_DZE3: Lada2_TK_CIV_EP1_DZE2 {
 
 // Fuel 4
 class Lada1_DZE4: Lada1_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class Lada2_DZE4: Lada2_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class LadaLM_DZE4: LadaLM_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class Lada1_TK_CIV_EP1_DZE4: Lada1_TK_CIV_EP1_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class Lada2_TK_CIV_EP1_DZE4: Lada2_TK_CIV_EP1_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
