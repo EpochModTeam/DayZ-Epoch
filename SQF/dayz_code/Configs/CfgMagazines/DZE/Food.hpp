@@ -64,6 +64,18 @@ class FoodPumpkin : FoodEdible {
 	weight = 1;
 	model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
 	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	class ItemActions
+	{
+		class Crafting
+		{
+		text = "Craft Pumpkin Seeds";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {""};
+			requiretools[] = {"ItemKnife"};
+			output[] = {{"ItemPumpkinSeed",5}};
+			input[] = {{"FoodPumpkin",1}};
+		};
+	};
 };
 class FoodSunFlowerSeed : FoodEdible {
 	scope = public;

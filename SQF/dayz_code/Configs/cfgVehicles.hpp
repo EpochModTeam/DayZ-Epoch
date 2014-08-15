@@ -204,6 +204,174 @@ class CfgVehicles {
 			};
 		};
 	};
+	class Tank: landvehicle	{
+  		class Sounds: Sounds  {
+   			class Engine;
+   			class Movement;
+  		};
+  		driverOpticsModel = "\ca\Tracked\optika_tank_driver";
+  		commanderCanSee = 31;
+  		gunnerCanSee = 30;
+  		getInAction = "GetInMedium";
+  		getOutAction = "GetOutMedium";
+  		cargoGetInAction[] = {"GetInLow"};
+  		cargoGetOutAction[] = {"GetOutLow"};
+  		audible = 18;
+  		sensitivityEar = "0.0075 /3";
+  		armorStructural = 2;
+  		class AnimationSources;
+  		class HitPoints  {
+   			class HitHull {
+    				armor = 1;
+    				material = -1;
+    				name = "NEtelo";
+    				visual = "telo";
+    				passThrough = 1;
+   			};
+   			class HitLTrack {
+    				armor = 0.15;
+    				material = -1;
+    				name = "pas_L";
+    				visual = "pas_L";
+    				passThrough = 0.3;
+   			};
+   			class HitRTrack {
+    				armor = 0.15;
+    				material = -1;
+    				name = "pas_P";
+    				visual = "pas_P";
+    				passThrough = 0.3;
+   			};
+   			class HitEngine {
+    				armor = 0.35;
+    				material = -1;
+    				name = "motor";
+    				visual = "motor";
+    				passThrough = 0.2;
+    				minimalHit = 0.02;
+   			};
+  		};
+  		weapons[] = {};
+  		magazines[] = {};
+  		class Turrets  {
+   			class MainTurret: NewTurret {
+    				gunnerAction = "ManActTestDriverOut";
+    				gunnerOpticsModel = "\ca\Tracked\optika_tank_gunner";
+    				gunnerOutOpticsModel = "\ca\Weapons\optika_empty";
+    				gunBeg = "usti hlavne";
+    				gunEnd = "konec hlavne";
+				memoryPointsGetInGunner = "pos gunner";
+    				memoryPointsGetInGunnerDir = "pos gunner dir";
+    				gunnerGetInAction = "GetInHigh";
+    				gunnerGetOutAction = "GetOutHigh";
+    				viewGunnerInExternal = 0;
+    				primaryGunner = 1;
+    				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
+    				gunnerOutOpticsEffect[] = {};
+    				class HitPoints {
+     					class HitTurret {
+      						armor = 1;
+      						material = -1;
+      						name = "vez";
+      						visual = "vez";
+      						passThrough = 1;
+     					};
+     					class HitGun {
+      						armor = 0.3;
+      						material = -1;
+      						name = "zbran";
+      						visual = "zbran";
+      						passThrough = 0;
+     					};
+    				};
+    				class Turrets {
+     					class CommanderOptics: NewTurret {
+      						proxyType = "CPCommander";
+      						proxyIndex = 1;
+      						gunnerName = "$STR_POSITION_COMMANDER";
+      						primaryGunner = 0;
+      						primaryObserver = 1;
+      						stabilizedInAxes = "StabilizedInAxesNone";
+      						body = "obsTurret";
+      						gun = "obsGun";
+      						animationSourceBody = "obsTurret";
+      						animationSourceGun = "obsGun";
+      						animationSourceHatch = "hatchCommander";
+      						soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.01,1,10};
+      						gunBeg = "";
+      						gunEnd = "";
+      						minElev = -4;
+      						maxElev = 20;
+      						initElev = 0;
+      						minTurn = -360;
+      						maxTurn = 360;
+      						initTurn = 0;
+      						commanding = 2;
+      						outGunnerMayFire = 1;
+      						inGunnerMayFire = 1;
+      						viewGunnerInExternal = 0;
+      						gunnerOpticsModel = "\ca\Tracked\optika_tank_driver";
+      						gunnerOutOpticsModel = "\ca\Weapons\optika_empty";
+      						gunnerOutOpticsColor[] = {0,0,0,1};
+      						gunnerOutForceOptics = 0;
+      						gunnerOutOpticsShowCursor = 0;
+      						gunnerOpticsEffect[] = {};
+      						gunnerOutOpticsEffect[] = {};
+      						memoryPointGunnerOutOptics = "commander_weapon_view";
+      						memoryPointGunnerOptics = "commanderview";
+      						memoryPointsGetInGunner = "pos commander";
+      						memoryPointsGetInGunnerDir = "pos commander dir";
+      						gunnerGetInAction = "GetInHigh";
+      						gunnerGetOutAction = "GetOutHigh";
+      						memoryPointGun = "gun_muzzle";
+      						selectionFireAnim = "zasleh_1";
+      						class ViewOptics {
+       							initAngleX = 0;
+       							minAngleX = -30;
+       							maxAngleX = 30;
+       							initAngleY = 0;
+       							minAngleY = -100;
+       							maxAngleY = 100;
+       							initFov = 0.155;
+       							minFov = 0.0625;
+       							maxFov = 0.466;
+      						};
+      						class ViewGunner {
+       							initAngleX = 5;
+       							minAngleX = -65;
+       							maxAngleX = 85;
+						       initAngleY = 0;
+						       minAngleY = -150;
+						       maxAngleY = 150;
+						       initFov = 0.7;
+						       minFov = 0.25;
+						       maxFov = 1.1;
+      						};
+     					};
+    				};
+   			};
+  		};
+  		soundDammage[] = {"\ca\Tracked\Data\Sound\alarm_loop1",0.000316228,1};
+  		supplyRadius = 1.5;
+  		class ViewOptics: ViewOptics  {
+			initAngleX = 0;
+		        minAngleX = -30;
+		   	maxAngleX = 30;
+		   	initAngleY = 0;
+		   	minAngleY = -100;
+		   	maxAngleY = 100;
+		   	initFov = 0.466;
+		   	minFov = 0.466;
+		   	maxFov = 0.466;
+  		};
+  		class DefaultEventhandlers;
+  		class Eventhandlers: DefaultEventhandlers{};
+  		smokeLauncherGrenadeCount = 6;
+  		smokeLauncherVelocity = 15;
+  		smokeLauncherOnTurret = 1;
+  		smokeLauncherAngle = 120;
+ 	};
+
 
 	// AIR
 	#include "CfgVehicles\AIR\AN2.hpp"
