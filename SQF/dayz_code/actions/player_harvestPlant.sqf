@@ -19,9 +19,8 @@ _countOut = 0;
 
 _findNearestTree = [];
 {
-	if("" == typeOf _x) then {
-			
-		if (alive _x) then {
+	if (alive _x) then {
+		if("" == typeOf _x) then {
 				
 			_objName = _x call DZE_getModelName;
 
@@ -36,9 +35,19 @@ _findNearestTree = [];
 				_countOut = 1; 
 
 			};
+		} else {
+			if (typeOf _x in _trees_objects) exitWith
+			{
+				_findNearestTree set [(count _findNearestTree),_x];
+
+				_index = _trees_objects find typeOf _x;
+
+				_itemOut = _treesOutput select _index;
+
+				_countOut = 1; 
+			};
 		};
 	};
-
 } count nearestObjects [([player] call FNC_getPos), [], 10];
 
 //diag_log format["DEBUG TREES: %1", _findNearestTree];
