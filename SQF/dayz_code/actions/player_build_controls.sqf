@@ -1,4 +1,4 @@
-private ["_canDo","_passArray","_objHDiff","_isOk","_zheightchanged","_zheightdirection","_rotate","_dir","_object","_position","_isAllowedUnderGround","_location2","_cancel","_reason","_lastDir","_objectHelper","_objectHelperDir","_objectHelperPos"];
+private ["_canDo","_passArray","_objHDiff","_isOk","_zheightchanged","_zheightdirection","_rotate","_dir","_object","_position","_isAllowedUnderGround","_location1","_location2","_cancel","_reason","_lastDir","_objectHelper","_objectHelperDir","_objectHelperPos"];
 
 _object = _this select 0;
 _isAllowedUnderGround = _this select 1;
@@ -142,8 +142,6 @@ while {_isOk} do {
 
 		_objectHelper setPosATL _position;
 
-		//diag_log format["DEBUG Change BUILDING POS: %1", _position];
-
 		if (!helperDetach) then {
 		_objectHelper attachTo [player];
 		};
@@ -153,13 +151,13 @@ while {_isOk} do {
 
 	_location2 = getPosATL player;
 	_objectHelperPos = getPosATL _objectHelper;
-
+	
 	if(DZE_5) exitWith {
 		_isOk = false;
 		detach _object;
-		_dir = getDir _object;
 		_position = getPosATL _object;
-		//diag_log format["DEBUG BUILDING POS: %1", _position];
+		_dir = getDir _object;
+		
 		deleteVehicle _object;
 		detach _objectHelper;
 		deleteVehicle _objectHelper;

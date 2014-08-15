@@ -551,6 +551,9 @@ if (isNil "DZE_modularBuild") then {
 if (isNil "DZE_snapExtraRange") then {
 	DZE_snapExtraRange = 0;
 };
+if (isNil "DZE_checkNearbyRadius") then {
+	DZE_checkNearbyRadius = 30;
+};
 
 // needed on server
 if(isNil "DZE_PlotPole") then {

@@ -3,7 +3,7 @@
 // July 10 2014					   //
 /*--------------------------------*/
 
-private ["_object","_objectSnapGizmo","_objColorActive","_objColorInactive","_classname","_whitelist","_points","_radius","_cfg","_cnt","_pos","_findWhitelisted","_nearbyObject","_posNearby","_selectedAction","_newPos","_pointsNearby","_onWater"];
+private ["_object","_objectSnapGizmo","_objColorActive","_objColorInactive","_classname","_whitelist","_points","_radius","_cfg","_cnt","_pos","_findWhitelisted","_nearbyObject","_posNearby","_selectedAction","_newPos","_pointsNearby","_onWater","_waterBase"];
 //Args
 snapActionState = _this select 3 select 0;
 _object = _this select 3 select 1;
@@ -58,8 +58,10 @@ fnc_initSnapPoints = {
 
 fnc_initSnapPointsNearby = {
 	_pos = getPosATL _object;
-	_findWhitelisted = []; _pointsNearby = [];
-	_findWhitelisted = nearestObjects [_pos,_whitelist,(_radius + DZE_snapExtraRange)]-[_object];
+	_findWhitelisted = []; _pointsNearby = []; _waterBase = 0;
+	_onWater = surfaceIsWater position player;
+	if (_onWater) then { _waterBase = (getPosATL player select 2);};
+	_findWhitelisted = nearestObjects [_pos,_whitelist,(_radius + DZE_snapExtraRange + _waterBase)]-[_object];
 	snapGizmosNearby = [];	
 	{	
 		_nearbyObject = _x;
