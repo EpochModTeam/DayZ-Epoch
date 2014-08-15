@@ -8,7 +8,14 @@ _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
 _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
-_playerUID = getPlayerUID player;
+
+_playerUID = [player] call FNC_GetPlayerUID;
+
+if (DZE_APlotforLife) then {
+	_OwnerUID = _playerUID;
+}else{
+	_OwnerUID = dayz_characterID;
+}
 
 //_isOk = true;
 
@@ -61,7 +68,7 @@ if (!_isOk) then {
 	_location = getPosATL _object;
 
 	_object setVariable ["CharacterID",dayz_characterID,true];
-	_object setVariable ["ownerPUID",_playerUID,true];
+	_object setVariable ["ownerPUID",_OwnerUID,true];
 
 	//["PVDZE_obj_Publish",[dayz_characterID,_tent,[_dir,_location],_classname]] call callRpcProcedure;
 	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir,_location, _playerUID],_classname];

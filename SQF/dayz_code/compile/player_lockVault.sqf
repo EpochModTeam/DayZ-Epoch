@@ -33,7 +33,13 @@ _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
 _ownerID =  _obj getVariable["ownerPUID", "0"];
 
-if((_characterID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_115"),_text], "PLAIN DOWN"]; };
+if (DZE_APlotforLife) then {
+	_playerUID = [player] call FNC_GetPlayerUID;
+}else{
+	_PlayerUID = dayz_characterID;
+};
+
+if((_characterID != dayz_combination) && (_ownerID != _PlayerUID)) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_115"),_text], "PLAIN DOWN"]; };
 
 _alreadyPacking = _obj getVariable["packing",0];
 if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_116"),_text], "PLAIN DOWN"]};
@@ -57,12 +63,7 @@ if(!isNull _obj) then {
 	_holder setVariable["ObjectID",_objectID,true];
 	_holder setVariable["ObjectUID",_objectUID,true];
 	_holder setVariable ["OEMPos", _pos, true];
-
-	if (DZE_APlotforLife) then {
-		_holder setVariable ["ownerPUID", _ownerID , true];
-	}else{
-		_holder setVariable ["ownerPUID", _characterID , true];
-	};
+	_holder setVariable ["ownerPUID", _ownerID , true];
 
 	_weapons = 		getWeaponCargo _obj;
 	_magazines = 	getMagazineCargo _obj;

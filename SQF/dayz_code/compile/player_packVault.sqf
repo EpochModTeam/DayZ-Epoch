@@ -27,9 +27,9 @@ _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
 
 if (DZE_APlotforLife) then {
-	_playerUID = getPlayerUID player;
+	_playerUID = [player] call FNC_GetPlayerUID;
 }else{
-	_PlayerUID = _player getVariable["characterID","0"];
+	_PlayerUID = dayz_characterID;
 };
 
 player removeAction s_player_packvault;
@@ -56,7 +56,6 @@ if(_location1 distance _location2 > 0.1) exitWith {
 	s_player_packvault = -1;
 	DZE_ActionInProgress = false;
 };
-
 
 _dir = direction _obj;
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];

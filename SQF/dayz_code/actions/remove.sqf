@@ -17,7 +17,7 @@ _activatingPlayer = player;
 _objOwnerID = _obj getVariable["ownerPUID","0"];
 
 if (DZE_APlotforLife) then {
-	_playerUID = getPlayerUID _activatingPlayer;
+	[_activatingPlayer] call FNC_GetPlayerUID;
 	_isOwnerOfObj = (_objOwnerID == _playerUID);
 }else{
 	_playerUID = dayz_characterID;
@@ -156,8 +156,6 @@ while {_isOk} do {
 	};
 
 };
-
-
 
 if(_brokenTool) then {
 	if(_isWreck) then {

@@ -39,9 +39,9 @@ if(_IsNearPlot == 0) then {
 	_ownerID = _nearestPole getVariable["ownerPUID","0"];
 	
 	if (DZE_APlotforLife) then {
-		_playerUID = getPlayerUID player;
+		_playerUID = [player] call FNC_GetPlayerUID;
 	}else{
-		_playerUID = dayz_characterID
+		_playerUID = dayz_characterID;
 	};
 
 	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
@@ -158,11 +158,8 @@ if ((count _upgrade) > 0) then {
 			_object setPosATL _location;
 
 			// Set Owner.
-			if (DZE_APlotforLife) then {
-				_object setVariable ["ownerPUID",_ownerID,true];
-			}else{
-				_object setVariable ["ownerPUID",__objectCharacterID,true];
-			};
+			_object setVariable ["ownerPUID",_ownerID,true];
+
 			if (_lockable == 3) then {
 
 				_combination_1 = floor(random 10);
@@ -177,7 +174,8 @@ if ((count _upgrade) > 0) then {
 				cutText [format[(localize "str_epoch_player_159"),_text], "PLAIN DOWN", 5];
 			};
 
-			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _ownerID],_classname,_obj,player];
+			_playerUID = [player] call FNC_GetPlayerUID;
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _playerUID],_classname,_obj,player];
 			publicVariableServer "PVDZE_obj_Swap";
 
 			player reveal _object;

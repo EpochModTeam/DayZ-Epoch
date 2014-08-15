@@ -1,4 +1,4 @@
-private ["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_playerUID","_rplayerUID"];
+private ["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_combattimeout","_timeleft"];
 disableSerialization;
 if(Dayz_Dark_UI) then {
 
@@ -307,8 +307,8 @@ if (!isNull _humanityTarget && isPlayer _humanityTarget && alive _humanityTarget
 		_friendlies = player getVariable ["friendlies", []];
 
 		if (DZE_APlotforLife) then {
-			_playerUID = getPlayerUID player;
-			_rplayerUID = getPlayerUID _humanityTarget;
+			_playerUID = [player] call FNC_GetPlayerUID;
+			_rplayerUID = [_humanityTarget] call FNC_GetPlayerUID;
 		}else{
 			_playerUID = player getVariable ["CharacterID", "0"];
 			_rplayerUID = _humanityTarget getVariable ["CharacterID", "0"];

@@ -17,7 +17,7 @@ _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
 
 if (DZE_APlotforLife) then {
-	_playerUID = getPlayerUID player;
+	_playerUID = [player] call FNC_GetPlayerUID;
 }else{
 	_playerUID = dayz_characterID;
 };

@@ -2,7 +2,7 @@
 	DayZ Safe
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_removed","_playerUID"];
+private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_removed","_playerUID","_OwnerUID"];
 //check if can pitch here
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_108") , "PLAIN DOWN"]; };
@@ -19,7 +19,14 @@ _offset_z = 0;
 _offset_z_attach = 0.5;
 
 _location = player modeltoworld [_offset_x,_offset_y,_offset_z];
-_playerUID = getPlayerUID player;
+
+_playerUID = [player] call FNC_GetPlayerUID;
+
+if (DZE_APlotforLife) then {
+	_OwnerUID = _playerUID;
+}else{
+	_OwnerUID = dayz_characterID;
+}
 
 // Allow placement anywhere.
 
@@ -158,7 +165,7 @@ if(!_cancel) then {
 			_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
 
 			_tent setVariable ["CharacterID",_combination,true];
-			_tent setVariable ["ownerPUID",_playerUID,true];
+			_tent setVariable ["ownerPUID",_OwnerUID,true];
 			_tent setVariable ["OEMPos",_location,true];
 
 			//["PVDZE_obj_Publish",[_combination,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;

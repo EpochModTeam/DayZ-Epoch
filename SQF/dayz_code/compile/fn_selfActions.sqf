@@ -161,7 +161,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	_hasToolbox = 	"ItemToolbox" in _itemsPlayer;
 
 	if (DZE_APlotforLife) then {
-		_playerUID = getPlayerUID player;
+		_playerUID = [player] call FNC_GetPlayerUID;
 	}else{
 		_playerUID = dayz_characterID;
 	};
@@ -233,24 +233,25 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		};
 		
 		//Allow owners to delete modulars
- 		
+
+  		
 		//diag_log format["fn_actons: [PlayerUID: %1] [_ownerID: %2] [_isModular: %3] [typeOfCursorTarget: %4]",_playerUID, _ownerID, _isModular, _typeOfCursorTarget];
 
 		if(_isModular && (_playerUID == _ownerID)) then {
-        	if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
+             		if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 				// diag_log text "fn_selfactions remove: [can remove modular item]";
-				_player_deleteBuild = true;
+                    _		player_deleteBuild = true;
+             		};
          	};
-        };
 		//Allow owners to delete modular doors without locks
 		
 		//diag_log format["fn_actons: [PlayerUID: %1] [_ownerID: %2] [_isModularDoor: %3] [typeOfCursorTarget: %4]",_playerUID, _ownerID, _isModularDoor, _typeOfCursorTarget];
 		
 		if(_isModularDoor && (_playerUID == _ownerID)) then {
-       		if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
+            		if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 				_player_deleteBuild = true;
-       		};		
-		};	
+             		};		
+		 };	
 		// CURSOR TARGET VEHICLE
 		if(_isVehicle) then {
 			
