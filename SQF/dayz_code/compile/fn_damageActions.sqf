@@ -76,7 +76,7 @@ if (_inVehicle) then {
 
 if (!isNull _menClose && _hasPatient && !r_drag_sqf && !r_action && !_inVehicle && !r_player_unconscious && _isClose) then {
 	_unit = 		cursorTarget;
-	_isDisallowRefuel = typeOf _unit in ["M240Nest_DZ"];
+	_isDisallowRefuel = typeOf _unit in ["M240Nest_DZ","MMT_Civ","MMT_USMC","Old_bike_TK_CIV_EP1","Old_bike_TK_INS_EP1"];
 	// player reveal _unit;
 	_vehClose = 	(getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5]; //nearestObjects [player, ["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"], 5];
 	_hasVehicle = 	({alive _x} count _vehClose > 0);

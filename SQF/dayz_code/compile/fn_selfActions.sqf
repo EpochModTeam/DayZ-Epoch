@@ -881,6 +881,10 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	s_player_SurrenderedGear = -1;
 
 	//Others
+    	player removeAction s_player_maintain_area;
+    	s_player_maintain_area = -1;
+    	player removeAction s_player_maintain_area_preview;
+    	s_player_maintain_area_preview = -1;
 	player removeAction s_player_forceSave;
 	s_player_forceSave = -1;
 	player removeAction s_player_flipveh;

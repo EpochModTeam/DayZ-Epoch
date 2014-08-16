@@ -554,6 +554,12 @@ if (isNil "DZE_snapExtraRange") then {
 if (isNil "DZE_APlotforLife") then {
 	DZE_APlotforLife = false;
 };
+<<<<<<< HEAD
+=======
+if (isNil "DZE_checkNearbyRadius") then {
+	DZE_checkNearbyRadius = 30;
+};
+>>>>>>> c66b229a96deecd0ecca1100dc2f682ade13f0d4
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
