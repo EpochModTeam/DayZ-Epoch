@@ -3147,14 +3147,14 @@
 			<Czech>Nelze stavět v boji.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_44">
-			<Original>Cannot build plot pole within 45m of an existing plot.</Original>
-			<English>Cannot build plot pole within 45m of an existing plot.</English>
-			<German>Grundstück-Markierung kann nicht innerhalb 45m von einem bestehenden Grundstück erbaut werden.</German>
-			<Russian>Нельзя построить столб в пределах 45м. от существующего столба.</Russian>
+			<Original>Cannot build plot pole within %1m of an existing plot.</Original>
+			<English>Cannot build plot pole within %1m of an existing plot.</English>
+			<German>Grundstück-Markierung kann nicht innerhalb %1m von einem bestehenden Grundstück erbaut werden.</German>
+			<Russian>Нельзя построить столб в пределах %1м. от существующего столба.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>Kan bouw-paal niet bouwen op minder als 45m afstand van een bestaand bouwterrein.</Dutch>
-			<French>Impossible de construire un panneau de propriété privée à moins de 45m d'un autre panneau du genre.</French>
-			<Czech>Nelze postavit hraniční značku ve vzdálenosti 45 metrů od jiné značky.</Czech>
+			<Dutch>Kan bouw-paal niet bouwen op minder als %1m afstand van een bestaand bouwterrein.</Dutch>
+			<French>Impossible de construire un panneau de propriété privée à moins de %1m d'un autre panneau du genre.</French>
+			<Czech>Nelze postavit hraniční značku ve vzdálenosti %1 metrů od jiné značky.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_45">
 			<Original>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</Original>
