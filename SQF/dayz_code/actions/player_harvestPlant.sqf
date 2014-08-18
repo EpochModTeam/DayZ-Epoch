@@ -3,7 +3,7 @@
 	Usage: spawn player_harvestPlant;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text"];
+private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text","_ObjectID", "_ObjectUID"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_72") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -119,6 +119,20 @@ if (count(_findNearestTree) >= 1) then {
 			// chop down tree
 			if("" == typeOf _tree) then {
 				_tree setDamage 1;
+			} else {
+				_ObjectID = _tree getVariable ["ObjectID","unset"];
+				_ObjectUID = _tree getVariable ["ObjectUID","unset"];
+
+				deleteVehicle _tree;
+				
+				if(_ObjectID != "0" && _ObjectUID != "0") then {
+					if(DZE_PlantingReUsePlant) then {
+						cutText ["ReUsePlant is not implemented\nPlant will not be downgraded", "PLAIN DOWN"];
+					} else {
+						PVDZE_obj_Delete = [_ObjectID,_ObjectUID,player];
+						publicVariableServer "PVDZE_obj_Delete";
+					};
+				};
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 		
