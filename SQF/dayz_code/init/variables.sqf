@@ -452,6 +452,14 @@ dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any 
 dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 
+if(isNil "DZE_PlantingActionDistance") then {
+	DZE_PlantingActionDistance = 5;
+};
+
+if(isNil "DZE_PlantingUpgradeWaterlevel") then {
+	DZE_PlantingUpgradeWaterlevel = 5;
+};
+
 if(isNil "DZE_PlantingReUsePlant") then {
 	DZE_PlantingReUsePlant = false;
 };
