@@ -114,7 +114,7 @@ class ItemKiloHemp : CA_Magazine {
 		class Crafting1
 		{
 			text = "Craft Hemp Seeds";
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
 			requiretools[] = {"ItemKnife"};
 			output[] = {{"ItemHempSeed",5}};
@@ -175,7 +175,7 @@ class ItemPoppyTears: CA_Magazine {
 	type = 256;
 	class ItemActions
 	{
-		class Crafting1
+		class Crafting
 		{
 			text = "Craft Morphine Auto-Injector";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
