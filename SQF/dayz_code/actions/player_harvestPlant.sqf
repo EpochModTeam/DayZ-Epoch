@@ -9,8 +9,9 @@ if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_72") , 
 DZE_ActionInProgress = true;
 
 // allowed trees list move this later
-_trees = ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d"];
-_treesOutput = ["FoodPumpkin","FoodSunFlowerSeed","ItemKiloHemp"];
+_trees = ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d","p_papaver_ep1.p3d","p_wheat_ep1.p3d"];
+_treesObjects = ["MAP_pumpkin","MAP_p_heracleum","fiberplant","papaver","wheat"];
+_treesOutput = ["FoodPumpkin","FoodSunFlowerSeed","ItemKiloHemp","ItemPoppyTears","ItemWheatCereal"];
 
 //_item = _this;
 call gear_ui_init;
@@ -36,11 +37,11 @@ _findNearestTree = [];
 
 			};
 		} else {
-			if (typeOf _x in _trees_objects) exitWith
+			if (typeOf _x in _treesObjects) exitWith
 			{
 				_findNearestTree set [(count _findNearestTree),_x];
 
-				_index = _trees_objects find typeOf _x;
+				_index = _treesObjects find typeOf _x;
 
 				_itemOut = _treesOutput select _index;
 
