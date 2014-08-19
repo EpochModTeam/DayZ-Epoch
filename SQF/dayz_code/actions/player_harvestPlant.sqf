@@ -1,17 +1,12 @@
 /*
 	DayZ Harvest Plant
 	Usage: spawn player_harvestPlant;
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+	Made for DayZ Epoch please ask permission to use/edit/distribute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text","_ObjectID", "_ObjectUID"];
+private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_findNearestTree","_index","_invResult","_text","_ObjectID", "_ObjectUID","_plantInfo","_plantType","_plantGrownUp","_plantObjects","_plantOutput","_tmp"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_72") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
-
-// allowed trees list move this later
-_trees = ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d","p_papaver_ep1.p3d","p_wheat_ep1.p3d"];
-_treesObjects = ["MAP_pumpkin","MAP_p_heracleum","fiberplant","papaver","wheat"];
-_treesOutput = ["FoodPumpkin","FoodSunFlowerSeed","ItemKiloHemp","ItemPoppyTears","ItemWheatCereal"];
 
 //_item = _this;
 call gear_ui_init;
@@ -21,32 +16,16 @@ _countOut = 0;
 _findNearestTree = [];
 {
 	if (alive _x) then {
-		if("" == typeOf _x) then {
-				
-			_objName = _x call DZE_getModelName;
-
-			// Exit since we found a tree
-			if (_objName in _trees) exitWith { 
-				_findNearestTree set [(count _findNearestTree),_x];
-
-				_index = _trees find _objName;
-
-				_itemOut = _treesOutput select _index;
-
-				_countOut = 1; 
-
-			};
-		} else {
-			if (typeOf _x in _treesObjects) exitWith
-			{
-				_findNearestTree set [(count _findNearestTree),_x];
-
-				_index = _treesObjects find typeOf _x;
-
-				_itemOut = _treesOutput select _index;
-
-				_countOut = 1; 
-			};
+		_plantInfo = [_x] call plant_getInfo;
+		_plantType = _plantInfo select 0;
+		_plantGrownUp = _plantInfo select 1;
+		_plantObjects = _plantInfo select 2;
+		_plantOutput = _plantInfo select 3;
+		
+		if (_plantType != "undef" && _plantGrownUp) exitWith {
+			_findNearestTree set [(count _findNearestTree),_x];
+			_itemOut = (_plantOutput select 0) select 0;
+			_countOut = (_plantOutput select 0) select 1; 
 		};
 	};
 } count nearestObjects [([player] call FNC_getPos), [], 10];
