@@ -12,7 +12,7 @@ class ItemFertilizer: CA_Magazine {
 class ItemPumpkinSeed: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Pumpkin Seed";
+	displayName = "Pumpkin Seed";
 	descriptionShort = "A Pumpkin Seed";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
@@ -34,7 +34,7 @@ class ItemPumpkinSeed: CA_Magazine {
 class ItemPumpkinPlant: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Pumpkin Plant";
+	displayName = "Pumpkin Plant";
 	descriptionShort = "A Pumpkin Plant";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
@@ -53,7 +53,7 @@ class ItemPumpkinPlant: CA_Magazine {
 class ItemHempSeed: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Hemp Seed";
+	displayName = "Hemp Seed";
 	descriptionShort = "A Hemp Seed";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
@@ -75,7 +75,7 @@ class ItemHempSeed: CA_Magazine {
 class ItemHempPlant: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Hemp Plant";
+	displayName = "Hemp Plant";
 	descriptionShort = "A Hemp Plant";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
@@ -117,7 +117,7 @@ class ItemKiloHemp : CA_Magazine {
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
 			requiretools[] = {"ItemKnife"};
-			output[] = {{"ItemHempSeed",5}};
+			output[] = {{"ItemHempSeed",3}};
 			input[] = {{"ItemKiloHemp",1}};
 		};
 	};
@@ -126,7 +126,7 @@ class ItemKiloHemp : CA_Magazine {
 class ItemPoppySeed: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Poppy Seed";
+	displayName = "Poppy Seed";
 	descriptionShort = "A Poppy Seed";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
@@ -148,7 +148,7 @@ class ItemPoppySeed: CA_Magazine {
 class ItemPoppyPlant: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Poppy Plant";
+	displayName = "Poppy Plant";
 	descriptionShort = "A Poppy Plant";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
@@ -190,7 +190,7 @@ class ItemPoppyTears: CA_Magazine {
 class ItemWheatSeed: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Wheat Seed";
+	displayName = "Wheat Seed";
 	descriptionShort = "A Wheat Seed";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
@@ -212,7 +212,7 @@ class ItemWheatSeed: CA_Magazine {
 class ItemWheatPlant: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Wheat Plant";
+	displayName = "Wheat Plant";
 	descriptionShort = "A Wheat Plant";
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon

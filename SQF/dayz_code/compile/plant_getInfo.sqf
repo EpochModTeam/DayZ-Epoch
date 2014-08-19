@@ -21,7 +21,7 @@ private ["_object","_plantObject","_plantType","_plantGrownUp","_plantObjects","
 
 /********** Begin Plant Informations **********/
 DZE_PlantingPumpkinObjects = ["Grave","MAP_pumpkin2","MAP_pumpkin"];
-DZE_PlantingPumpkinOutput = [["FoodPumpkin",2]];
+DZE_PlantingPumpkinOutput = [["FoodPumpkin",2],["ItemPumpkinSeed",2]];
 
 DZE_PlantingSunFlowerObjects = ["MAP_p_heracleum"];
 DZE_PlantingSunFlowerOutput = [["FoodSunFlowerSeed",1]];
