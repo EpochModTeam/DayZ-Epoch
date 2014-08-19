@@ -15,7 +15,7 @@ if (DZE_APlotforLife) then {
 	_OwnerUID = _playerUID;
 }else{
 	_OwnerUID = dayz_characterID;
-}
+};
 
 //_isOk = true;
 
