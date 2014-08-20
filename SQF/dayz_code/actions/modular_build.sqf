@@ -55,31 +55,34 @@ _isLandFireDZ = _itemConfig select 10; //bool
 //Check for nearby plotpoles. Returns [_IsNearPlot,_nearestPole,_ownerID,_friendlies] [int,Obj,int,array]
 [_isPole, _requireplot, _isLandFireDZ] call player_build_plotCheck;
 
+if (DZE_ActionInProgress) then { //needed otherwise _hasRequired gets RPT error
+
 //Check for build requirements (missing tools and items). Returns [_hasrequireditem,_reason] [bool,string]
 _hasRequired = [_require, _text, true, true] call player_build_buildReq;
 
 //define item collected from function
 _hasrequireditem = _hasRequired select 0; //bool
 
-if (_hasrequireditem and DZE_ActionInProgress) then {
-	
-	//Create object that is attached to a player (i.e Ghost preview if available)
-	_buildObject = [_classname, _ghost, _offset, true] call player_build_create;
-	
-	//define items collected from function
-	_location1 = _buildObject select 0; //array
-	_object = _buildObject select 1; //Obj
-	_position = _buildObject select 2; // array
-	_objectHelper = _buildObject select 3; //Obj
-	
-	_controls = [_object, _isAllowedUnderGround, _location1, _position, _objectHelper] call player_build_controls;
+	if (_hasrequireditem) then {
+		
+		//Create object that is attached to a player (i.e Ghost preview if available)
+		_buildObject = [_classname, _ghost, _offset, true] call player_build_create;
+		
+		//define items collected from function
+		_location1 = _buildObject select 0; //array
+		_object = _buildObject select 1; //Obj
+		_position = _buildObject select 2; // array
+		_objectHelper = _buildObject select 3; //Obj
+		
+		_controls = [_object, _isAllowedUnderGround, _location1, _position, _objectHelper] call player_build_controls;
 
-	//define items collected from function
-	_cancel = _controls select 0; //bool
-	_reason = _controls select 1; //string
-	_position = _controls select 2; //array
-	_dir = _controls select 3; //int
-	
-	//Publish item to a database
-	[_cancel, _position, _classnametmp,_isAllowedUnderGround, _text, _isPole, _lockable,_dir, _reason] call player_build_publish;
+		//define items collected from function
+		_cancel = _controls select 0; //bool
+		_reason = _controls select 1; //string
+		_position = _controls select 2; //array
+		_dir = _controls select 3; //int
+		
+		//Publish item to a database
+		[_cancel, _position, _classnametmp,_isAllowedUnderGround, _text, _isPole, _lockable,_dir, _reason] call player_build_publish;
+	};
 };

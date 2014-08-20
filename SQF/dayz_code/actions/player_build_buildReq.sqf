@@ -1,3 +1,4 @@
+if(!DZE_ActionInProgress) exitWith {};
 //Check for build requirements like tools and if item is in magazines (check args to disable checks)
 private ["_passArray","_missing","_hasrequireditem","_require","_hastoolweapon","_hasbuilditem","_checkMag","_checkTools","_reason"];
 
@@ -20,11 +21,14 @@ _passArray = [];
 
 _hasbuilditem = DZE_buildItem in magazines player;
 
+_passArray = [_hasrequireditem,_reason];
+
 if (_checkMag) then { //passed argument
 	if (!_hasbuilditem) exitWith { //End script if magazine was not found
 		DZE_ActionInProgress = false;
 		cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"];
 		_reason = "missing item";
+		_passArray
 	};
 };
 
@@ -33,9 +37,8 @@ if (_checkTools) then { //passed argument
 		DZE_ActionInProgress = false;
 		cutText [format[(localize "str_epoch_player_137"),_missing] , "PLAIN DOWN"];
 		_reason = "missing tools";
+		_passArray
 	};
 };
-
-_passArray = [_hasrequireditem,_reason];
 _passArray //[bool,string]
 

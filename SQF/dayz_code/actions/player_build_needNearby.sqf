@@ -1,3 +1,4 @@
+if(!DZE_ActionInProgress) exitWith {};
 //disallow building if required items (defined in config) are not found nearby
 private ["_abort","_reason","_distance","_needNear","_isNear"];
 
@@ -41,5 +42,3 @@ if (_abort) exitWith {
 	cutText [format[(localize "str_epoch_player_135"),_reason,_distance], "PLAIN DOWN"];
 	DZE_ActionInProgress = false;
 };
-
-_reason //return string to a caller

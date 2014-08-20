@@ -1,3 +1,4 @@
+if(!DZE_ActionInProgress) exitWith {};
 //Build an array of various variables gathered about build object from config files, only applies to legit buildable objects
 private ["_passArray","_classname","_classnametmp","_require","_text","_ghost","_lockable","_requireplot","_isAllowedUnderGround","_offset","_isPole","_isLandFireDZ"];
 
