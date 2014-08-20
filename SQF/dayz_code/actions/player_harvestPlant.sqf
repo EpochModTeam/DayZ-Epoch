@@ -129,14 +129,15 @@ if (count(_nearestPlants) >= 1) then {
 						if("" == typeOf _tree) then {
 							_tree setDamage 1;
 						} else {
-							_ObjectID = _tree getVariable ["ObjectID","unset"];
-							_ObjectUID = _tree getVariable ["ObjectUID","unset"];
+							_ObjectID = _tree getVariable ["ObjectID","0"];
+							_ObjectUID = _tree getVariable ["ObjectUID","0"];
 
 							deleteVehicle _tree;
 							
-							if(_ObjectID != "0" && _ObjectUID != "0") then {
+							if(_ObjectID != "0" || _ObjectUID != "0") then {
 								if(DZE_PlantingReUsePlant) then {
 									cutText ["ReUsePlant is not implemented\nPlant will not be downgraded", "PLAIN DOWN"];
+									sleep 5;
 								} else {
 									PVDZE_obj_Delete = [_ObjectID,_ObjectUID,player];
 									publicVariableServer "PVDZE_obj_Delete";
