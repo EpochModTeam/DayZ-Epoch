@@ -918,3 +918,29 @@ server_logUnlockLockEvent = {
 		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), _PUID, _statusText];
 	};
 };
+
+KK_fnc_floatToString = {
+    private "_arr";
+	_arr = toArray str abs (_this % 1);
+	_arr set [0, 32];
+	toString (toArray str (
+		abs (_this - _this % 1) * _this / abs _this
+	) + _arr - [32])
+};
+
+KK_fnc_positionToString = {
+    private ["_f2s","_arr"];
+    _f2s = {
+        _arr = toArray str abs (_this % 1);
+        _arr set [0, 32];
+        toString (toArray str (
+            abs (_this - _this % 1) * _this / abs _this
+        ) + _arr - [32])
+    };
+    format [
+        "[%1,%2,%3]",
+        _this select 0 call _f2s,
+        _this select 1 call _f2s,
+        _this select 2 call _f2s
+    ]
+};
