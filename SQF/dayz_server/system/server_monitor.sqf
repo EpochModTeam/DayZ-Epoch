@@ -101,6 +101,11 @@ if (isServer && isNil "sm_done") then {
 		_wsDone = false;
 		if (count _worldspace >= 2) then
 		{
+			if ((typeName (_worldspace select 0)) == "STRING") then {
+				_worldspace set [0, call compile (_worldspace select 0)];
+				_worldspace set [1, call compile (_worldspace select 1)];
+			};
+
 			_dir = _worldspace select 0;
 			if (count (_worldspace select 1) == 3) then {
 				_pos = _worldspace select 1;
