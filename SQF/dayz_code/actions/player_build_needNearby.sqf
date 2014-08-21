@@ -1,17 +1,17 @@
 if(!DZE_ActionInProgress) exitWith {};
 //disallow building if required items (defined in config) are not found nearby
-private ["_abort","_reason","_distance","_needNear","_isNear"];
+private ["_abort","_reason","_distance","_needNear","_isNear","_pos"];
 
 _abort = false; //do not abort by default
 _reason = ""; // define to avoid RPT errors
 _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActions" >> "Build" >> "neednearby");
-
+_pos = [player] call FNC_GetPos;
 {
 	switch(_x) do{
 		case "fire":
 		{
 			_distance = 3;
-			_isNear = {inflamed _x} count (getPosATL player nearObjects _distance);
+			_isNear = {inflamed _x} count (_pos nearObjects _distance);
 			if(_isNear == 0) then {
 				_abort = true;
 				_reason = "fire";
@@ -20,7 +20,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 		case "workshop":
 		{
 			_distance = 3;
-			_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
+			_isNear = count (nearestObjects [_pos, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
 				_reason = "workshop";
@@ -29,7 +29,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 		case "fueltank":
 		{
 			_distance = 30;
-			_isNear = count (nearestObjects [player, dayz_fuelsources, _distance]);
+			_isNear = count (nearestObjects [_pos, dayz_fuelsources, _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
 				_reason = "fuel tank";

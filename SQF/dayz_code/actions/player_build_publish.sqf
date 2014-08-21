@@ -48,8 +48,11 @@ if(!_cancel) then {
 		_location set [2,0]; //reset Z axis to zero (above terrain)
 	};
 
-	_tmpbuilt setPosATL _location; //update position passed from args or previous if statement
-
+	if (surfaceIsWater _location) then {
+		_tmpbuilt setPosASL _location;
+	} else {
+		_tmpbuilt setPosATL _location;
+	};
 
 	cutText [format[(localize "str_epoch_player_138"),_text], "PLAIN DOWN"];
 
