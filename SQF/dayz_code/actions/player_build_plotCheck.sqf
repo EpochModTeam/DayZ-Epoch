@@ -74,7 +74,7 @@ _passArray = [_IsNearPlot,_nearestPole,_ownerID,_friendlies]; //create new array
 // End script if item is plot pole and another one exists within defined radius
 if(_isPole && _IsNearPlot > 0) exitWith { 
 	DZE_ActionInProgress = false;
-	cutText [(localize "str_epoch_player_44") , "PLAIN DOWN"]; 
+	cutText [(format [localize "str_epoch_player_44", DZE_PlotPole select 1]) , "PLAIN DOWN"];
 	_passArray
 };
 
