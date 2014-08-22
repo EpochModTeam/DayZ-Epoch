@@ -86,7 +86,7 @@ class KamazRefuel_DZ: KamazRefuel {
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportFuel = 0;
-	fuelCapacity = 10400;
+	transportFuel = 10400;			// refueltruck
 };
 class KamazRefuel_DZE1: KamazRefuel_DZ {
 	maxspeed = 100; //base 80
@@ -108,9 +108,9 @@ class KamazRefuel_DZE3: KamazRefuel_DZE2 {
 	transportMaxMagazines = 300; // Ural Base 200
 	transportmaxbackpacks = 12; // Ural Base 8
 	class Upgrades {
-	ItemTNK[] = {"KamazRefuel_DZE4",{},{{"ItemTNK",1},{"PartFueltank",8}}};
+	ItemTNK[] = {"KamazRefuel_DZE4",{},{{"ItemTNK",1},{"PartFueltank",4}}};
 	};
 };
 class KamazRefuel_DZE4: KamazRefuel_DZE3 {
-	fuelCapacity = 45000; // Refuel  Base 10400
+	fuelCapacity = 615; // Refuel  Base 303
 };
