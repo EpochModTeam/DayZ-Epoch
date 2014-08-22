@@ -17,12 +17,13 @@ _activatingPlayer = player;
 _objOwnerID = _obj getVariable["ownerPUID","0"];
 
 if (DZE_APlotforLife) then {
-	[_activatingPlayer] call FNC_GetPlayerUID;
+	_playerUID = [player] call FNC_GetPlayerUID;
 	_isOwnerOfObj = (_objOwnerID == _playerUID);
 }else{
 	_playerUID = dayz_characterID;
 	_isOwnerOfObj = (_objOwnerID == dayz_characterID);
 };
+
 if (_obj in DZE_DoorsLocked) exitWith { DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_20"), "PLAIN DOWN"];};
 if(_obj getVariable ["GeneratorRunning", false]) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_89"), "PLAIN DOWN"];};
 
