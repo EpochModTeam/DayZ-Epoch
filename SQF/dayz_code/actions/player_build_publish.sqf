@@ -50,6 +50,7 @@ if(!_cancel) then {
 
 	if (surfaceIsWater _location) then {
 		_tmpbuilt setPosASL _location;
+		_location = ASLtoATL _location; //Database uses ATL
 	} else {
 		_tmpbuilt setPosATL _location;
 	};
