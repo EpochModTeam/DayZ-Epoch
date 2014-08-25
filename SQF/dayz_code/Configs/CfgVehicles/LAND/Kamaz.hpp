@@ -85,8 +85,8 @@ class KamazRefuel_DZ: KamazRefuel {
 	hiddenSelections[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
-	transportFuel = 0;
-	transportFuel = 10400;			// refueltruck
+	fuelCapacity = 10400;
+	//For future Developement = transportFuel = 10400;			// refueltruck
 };
 class KamazRefuel_DZE1: KamazRefuel_DZ {
 	maxspeed = 100; //base 80
@@ -112,5 +112,5 @@ class KamazRefuel_DZE3: KamazRefuel_DZE2 {
 	};
 };
 class KamazRefuel_DZE4: KamazRefuel_DZE3 {
-	fuelCapacity = 615; // Refuel  Base 303
+	fuelCapacity = 10700; // Increase the total fuel capacity of the Refuel truck by the additional normal sized fuel tank of a Ural.
 };
