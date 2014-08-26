@@ -96,7 +96,8 @@ class hilux1_civil_3_open_DZE1: hilux1_civil_3_open_DZE {
 
 // Armor 2
 class hilux1_civil_1_open_DZE2: hilux1_civil_1_open_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -144,7 +145,8 @@ class hilux1_civil_1_open_DZE2: hilux1_civil_1_open_DZE1 {
 	};
 };
 class hilux1_civil_2_covered_DZE2: hilux1_civil_2_covered_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -192,7 +194,8 @@ class hilux1_civil_2_covered_DZE2: hilux1_civil_2_covered_DZE1 {
 	};
 };
 class hilux1_civil_3_open_DZE2: hilux1_civil_3_open_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
