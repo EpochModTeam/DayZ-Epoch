@@ -502,7 +502,8 @@ class Lada2_TK_CIV_EP1_DZE1: Lada2_TK_CIV_EP1 {
 
 // Armor 2
 class Lada1_DZE2: Lada1_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -549,7 +550,8 @@ class Lada1_DZE2: Lada1_DZE1 {
 	};
 };
 class Lada2_DZE2: Lada2_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -596,7 +598,8 @@ class Lada2_DZE2: Lada2_DZE1 {
 	};
 };
 class LadaLM_DZE2: LadaLM_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -643,7 +646,8 @@ class LadaLM_DZE2: LadaLM_DZE1 {
 	};
 };
 class Lada1_TK_CIV_EP1_DZE2: Lada1_TK_CIV_EP1_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -690,7 +694,8 @@ class Lada1_TK_CIV_EP1_DZE2: Lada1_TK_CIV_EP1_DZE1 {
 	};
 };
 class Lada2_TK_CIV_EP1_DZE2: Lada2_TK_CIV_EP1_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
