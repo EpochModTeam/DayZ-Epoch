@@ -360,7 +360,8 @@ class Offroad_DSHKM_Gue_DZE1: Offroad_DSHKM_Gue_DZE
 // Armmor 2
 class Offroad_DSHKM_Gue_DZE2: Offroad_DSHKM_Gue_DZE1
 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints
 	{
 		class HitLFWheel: HitLFWheel
