@@ -304,7 +304,8 @@ class SkodaGreen_DZE1: SkodaGreen {
 
 // Armor 2
 class Skoda_DZE2: Skoda_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -351,7 +352,8 @@ class Skoda_DZE2: Skoda_DZE1 {
 	};
 };
 class SkodaBlue_DZE2: SkodaBlue_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -398,7 +400,8 @@ class SkodaBlue_DZE2: SkodaBlue_DZE1 {
 	};
 };
 class SkodaRed_DZE2: SkodaRed_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -445,7 +448,8 @@ class SkodaRed_DZE2: SkodaRed_DZE1 {
 	};
 };
 class SkodaGreen_DZE2: SkodaGreen_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
