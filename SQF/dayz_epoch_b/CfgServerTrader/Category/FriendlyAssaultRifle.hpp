@@ -218,7 +218,7 @@ class Category_615 {
 	};
 	class BAF_L85A2_RIS_Holo {
 		type = "trade_weapons";
-		buy[] = {9,"ItemGoldBar10oz"};
+		buy[] = {9,"ItemGoldBar"};
 		sell[] = {6,"ItemGoldBar"};
 	};
 };
