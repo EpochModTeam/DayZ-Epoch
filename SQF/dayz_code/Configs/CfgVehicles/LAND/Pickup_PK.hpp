@@ -146,7 +146,8 @@ class Pickup_PK_INS_DZE1: Pickup_PK_INS_DZE {
 
 // Armor 2
 class Pickup_PK_GUE_DZE2: Pickup_PK_GUE_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -193,7 +194,8 @@ class Pickup_PK_GUE_DZE2: Pickup_PK_GUE_DZE1 {
 	};
 };
 class Pickup_PK_TK_GUE_EP1_DZE2: Pickup_PK_TK_GUE_EP1_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -240,7 +242,8 @@ class Pickup_PK_TK_GUE_EP1_DZE2: Pickup_PK_TK_GUE_EP1_DZE1 {
 	};
 };
 class Pickup_PK_INS_DZE2: Pickup_PK_INS_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
