@@ -136,8 +136,7 @@ if (count(_nearestPlants) >= 1) then {
 							
 							if(_ObjectID != "0" || _ObjectUID != "0") then {
 								if(DZE_PlantingReUsePlant) then {
-									cutText ["ReUsePlant is not implemented\nPlant will not be downgraded", "PLAIN DOWN"];
-									sleep 5;
+									[_tree,_plantObjects select 0] call plant_changeClass;
 								} else {
 									PVDZE_obj_Delete = [_ObjectID,_ObjectUID,player];
 									publicVariableServer "PVDZE_obj_Delete";

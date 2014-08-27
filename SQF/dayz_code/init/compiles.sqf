@@ -145,6 +145,7 @@ if (!isDedicated) then {
 	player_checkItems =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkItems.sqf";
 	player_removeItems =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_removeItems.sqf";
 	plant_getInfo =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\plant_getInfo.sqf";
+	plant_changeClass =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\plant_changeClass.sqf";
 	//Trader ["Trader City Name",false,"enter"] - Trader City Name | Show Message | "enter" || "leave"
 	player_traderCity = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderCity.sqf";
 
