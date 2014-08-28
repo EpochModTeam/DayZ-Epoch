@@ -3,8 +3,7 @@ private ["_canDo","_passArray","_objHDiff","_isOk","_zheightchanged","_zheightdi
 _object = _this select 0;
 _isAllowedUnderGround = _this select 1;
 _location1 = _this select 2;
-_position = _this select 3;
-_objectHelper  = _this select 4;
+_objectHelper  = _this select 3;
 
 _passArray = [];
 
@@ -15,6 +14,7 @@ _reason = "";
 _dir = getDir player; //required to pass direction when building
 helperDetach = false;
 _canDo = (!r_drag_sqf and !r_player_unconscious);
+_position = [_objectHelper] call FNC_GetPos;
 
 while {_isOk} do {
 
@@ -55,35 +55,26 @@ while {_isOk} do {
 	if (DZE_4) then {
 		_rotate = true;
 		DZE_4 = false;
-		if (helperDetach) then {
-			_dir = -45;
-		} else {
-			_dir = 180;
-		};
+		_dir = -45;
 	};
 	if (DZE_6) then {
 		_rotate = true;
 		DZE_6 = false;
-		if (helperDetach) then {
-			_dir = 45;
-		} else {
-			_dir = 0;
-		};
+		_dir = 45;
 	};
 	
 	if (DZE_F and _canDo) then {	
-		if (helperDetach) then {
-		_objectHelperDir = getDir _objectHelper; 
-		_objectHelper attachTo [player];
-		_objectHelper setDir _objectHelperDir-(getDir player);
-		helperDetach = false;
+		if (helperDetach) then { 
+			_objectHelperDir = getDir _objectHelper;
+			_objectHelper attachTo [player];
+			_objectHelper setDir _objectHelperDir-(getDir player);
+			helperDetach = false;
 		} else {
-		_objectHelperPos = getPosATL _objectHelper;
-		detach _objectHelper;			
-		_objectHelper setPosATL _objectHelperPos;
-		_objectHelperDir = getDir _objectHelper;
-		_objectHelper setVelocity [0,0,0]; //fix sliding glitch
-		helperDetach = true;
+			_objectHelperDir = getDir _objectHelper;
+			detach _objectHelper;
+			[_objectHelper]	call FNC_GetSetPos;
+			_objectHelper setVelocity [0,0,0]; //fix sliding glitch
+			helperDetach = true;
 		};
 		DZE_F = false;
 	};
@@ -91,21 +82,26 @@ while {_isOk} do {
 	if(_rotate) then {
 		if (helperDetach) then {
 			_objectHelperDir = getDir _objectHelper;
-			_objectHelperPos = getPosATL _objectHelper;
 			_objectHelper setDir _objectHelperDir+_dir;
-			_objectHelper setPosATL _objectHelperPos;
+			[_objectHelper]	call FNC_GetSetPos;
 		} else {
-			_objectHelper setDir _dir;
-			_objectHelper setPosATL _position;		
+			detach _objectHelper;
+			_objectHelperDir = getDir _objectHelper;
+			_objectHelper setDir _objectHelperDir+_dir;
+			[_objectHelper]	call FNC_GetSetPos;
+			_objectHelperDir = getDir _objectHelper;
+			_objectHelper attachTo [player];
+			_objectHelper setDir _objectHelperDir-(getDir player);
 		};
 	};
 
 	if(_zheightchanged) then {
 		if (!helperDetach) then {
 		detach _objectHelper;
+		_objectHelperDir = getDir _objectHelper;
 		};
 
-		_position = getPosATL _objectHelper;
+		_position = [_objectHelper] call FNC_GetPos;
 
 		if(_zheightdirection == "up") then {
 			_position set [2,((_position select 2)+0.1)];
@@ -134,30 +130,32 @@ while {_isOk} do {
 			_objHDiff = _objHDiff - 0.01;
 		};
 
-		_objectHelper setDir (getDir _objectHelper);
-
 		if((_isAllowedUnderGround == 0) && ((_position select 2) < 0)) then {
 			_position set [2,0];
 		};
 
-		_objectHelper setPosATL _position;
+		if (surfaceIsWater _position) then {
+			_objectHelper setPosASL _position;
+		} else {
+			_objectHelper setPosATL _position;
+		};
 
 		if (!helperDetach) then {
 		_objectHelper attachTo [player];
+		_objectHelper setDir _objectHelperDir-(getDir player);
 		};
 	};
 
 	sleep 0.5;
 
-	_location2 = getPosATL player;
-	_objectHelperPos = getPosATL _objectHelper;
+	_location2 = [player] call FNC_GetPos;
+	_objectHelperPos = [_objectHelper] call FNC_GetPos;
 	
 	if(DZE_5) exitWith {
 		_isOk = false;
+		_position = [_object] call FNC_GetPos;
 		detach _object;
-		_position = getPosATL _object;
 		_dir = getDir _object;
-		
 		deleteVehicle _object;
 		detach _objectHelper;
 		deleteVehicle _objectHelper;

@@ -33,7 +33,7 @@ DZE_buildItem = _this; //This is a magazine! It's global to allow access to it f
 //Check illegal player states. Returns [_isFine] string
 [] call player_build_states;
 
-//check for nearby requirements (campfire, workshop, fueltank). Returns [_reason] string
+//check for nearby requirements (campfire, workshop, fueltank).
 [] call player_build_needNearby;
 
 //check config files and gather info about item (if using custom buildables, make your own similar function instead).
@@ -71,10 +71,9 @@ _hasrequireditem = _hasRequired select 0; //bool
 		//define items collected from function
 		_location1 = _buildObject select 0; //array
 		_object = _buildObject select 1; //Obj
-		_position = _buildObject select 2; // array
-		_objectHelper = _buildObject select 3; //Obj
+		_objectHelper = _buildObject select 2; //Obj
 		
-		_controls = [_object, _isAllowedUnderGround, _location1, _position, _objectHelper] call player_build_controls;
+		_controls = [_object, _isAllowedUnderGround, _location1, _objectHelper] call player_build_controls;
 
 		//define items collected from function
 		_cancel = _controls select 0; //bool

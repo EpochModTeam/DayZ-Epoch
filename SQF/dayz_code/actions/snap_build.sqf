@@ -57,26 +57,18 @@ fnc_initSnapPoints = {
 };
 
 fnc_initSnapPointsNearby = {
-	_pos = getPosATL _object;
-	_findWhitelisted = []; _pointsNearby = []; _waterBase = 0;
-	_onWater = surfaceIsWater position player;
-	if (_onWater) then { _waterBase = (getPosATL player select 2);};
-	_findWhitelisted = nearestObjects [_pos,_whitelist,(_radius + DZE_snapExtraRange + _waterBase)]-[_object];
+	_pos = [_object] call FNC_GetPos;
+	_findWhitelisted = []; _pointsNearby = [];
+	_findWhitelisted = nearestObjects [_pos,_whitelist,(_radius + DZE_snapExtraRange)]-[_object];
 	snapGizmosNearby = [];	
 	{	
 		_nearbyObject = _x;
 		_pointsNearby = getArray (configFile >> "SnapBuilding" >> (typeOf _x) >> "points");
 		{
-			_onWater = surfaceIsWater position _nearbyObject;
 			_objectSnapGizmo = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
 			_objectSnapGizmo setobjecttexture [0,_objColorInactive];
-			_posNearby = _nearbyObject modelToWorld [_x select 0,_x select 1,_x select 2];
-			if (_onWater) then {
-				_objectSnapGizmo setPosASL [(_posNearby) select 0,(_posNearby) select 1,(getPosASL _nearbyObject select 2) + (_x select 2)];
-			} else {
-				_objectSnapGizmo setPosATL _posNearby;
-			};
-			_objectSnapGizmo setDir (getDir _nearbyObject);
+			_objectSnapGizmo setDir ((getDir _nearbyObject)-45);
+			_objectSnapGizmo attachTo [_nearbyObject,[_x select 0,_x select 1,_x select 2]];
 			snapGizmosNearby set [count snapGizmosNearby,_objectSnapGizmo];
 		} count _pointsNearby;
 	} forEach _findWhitelisted;
@@ -84,7 +76,7 @@ fnc_initSnapPointsNearby = {
 
 fnc_initSnapPointsCleanup = {
 	{detach _x;deleteVehicle _x;}count snapGizmos;snapGizmos=[];
-	{deleteVehicle _x;}count snapGizmosNearby;snapGizmosNearby=[];
+	{detach _x;deleteVehicle _x;}count snapGizmosNearby;snapGizmosNearby=[];
 	snapActionState = "OFF";
 };
 
@@ -94,12 +86,7 @@ fnc_snapDistanceCheck = {
 	_distClosestPointFound = objNull; _distCheck = 0; _distClosest = 10; _distClosestPoint = objNull; _testXPos = []; _distClosestPointFoundPos =[]; _distClosestPointFoundDir = 0;
 		{	
 			if (_x !=_distClosestPointFound) then {_x setobjecttexture [0,_objColorInactive];};
-			_onWater = surfaceIsWater position _x;
-			if (_onWater) then {
-				_testXPos = [(getPosASL _x select 0),(getPosASL _x select 1),(getPosASL _x select 2)];
-			} else {
-				_testXPos = [(getPosATL _x select 0),(getPosATL _x select 1),(getPosATL _x select 2)];
-			};
+			_testXPos = [_x] call FNC_GetPos;
 			_distCheck = _objectHelper distance _testXPos;
 			_distClosestPoint = _x;
 				if (_distCheck < _distClosest) then {
@@ -121,7 +108,7 @@ fnc_snapDistanceCheck = {
 					} else {
 						_distClosestPointFoundPos = getPosATL _distClosestPointFound;
 						_objectHelper setPosATL _distClosestPointFoundPos;
-					};
+					}; 
 					_objectHelper setDir _distClosestPointFoundDir;
 					waitUntil {sleep 0.1; !helperDetach};
 				};
@@ -129,12 +116,7 @@ fnc_snapDistanceCheck = {
 				_distClosestAttached = objNull; _distCheckAttached = 0; _distClosest = 10; _distClosestAttachedFoundPos = [];
 				{
 					if (_x !=_distClosestAttached) then {_x setobjecttexture [0,_objColorInactive];};
-					_onWater = surfaceIsWater position _x;
-					if (_onWater) then {
-						_testXPos = [(getPosASL _x select 0),(getPosASL _x select 1),(getPosASL _x select 2)];
-					} else {
-						_testXPos = [(getPosATL _x select 0),(getPosATL _x select 1),(getPosATL _x select 2)];
-					};
+					_testXPos = [_x] call FNC_GetPos;
 					_distCheckAttached = _distClosestPointFound distance _testXPos;
 					_distClosestPoint = _x;
 						if (_distCheckAttached < _distClosest) then {
@@ -285,10 +267,11 @@ switch (snapActionState) do {
 		_newPos = [(getPosATL _x select 0),(getPosATL _x select 1),(getPosATL _x select 2)];
 		detach _object;
 		detach _objectHelper;
+		_objectHelper setDir (getDir _object);
 		_objectHelper setPosATL _newPos;
 		_object attachTo [_objectHelper];
 		_x setobjecttexture [0,_objColorActive];
-		if (!helperDetach) then {_objectHelper attachTo [player];};	
+		if (!helperDetach) then {_objectHelper attachTo [player]; _objectHelper setDir ((getDir _objectHelper)-(getDir player));};	
 	};
 	_cnt = _cnt+1;
 }count snapGizmos;
