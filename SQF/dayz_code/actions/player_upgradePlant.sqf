@@ -3,7 +3,7 @@
 	Usage: spawn player_upgradePlant;
 	Made for DayZ Epoch please ask permission to use/edit/distribute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_tree","_nearestPlants","_index","_invResult","_text","_ObjectID", "_ObjectUID","_plantInfo","_plantType","_plantGrownUp","_plantObjects","_plantOutput","_tmp","_emptySlots","_freeItemSlots","_firstItemCount","_isWatered"];
+private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_tree","_nearestPlants","_index","_invResult","_text","_ObjectID", "_ObjectUID","_plantInfo","_plantType","_plantGrownUp","_plantObjects","_plantOutput","_tmp","_emptySlots","_freeItemSlots","_firstItemCount","_isWatered","_waterNeeded","_waterLevel","_totalWaterLevel","_waterLevel_lowest","_configParent","_nextStage","_takeNext"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_72") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -110,7 +110,6 @@ if (count(_nearestPlants) >= 1) then {
 
 					if (_totalWaterLevel >= DZE_PlantingUpgradeWaterlevel) then {
 						_waterNeeded = DZE_PlantingUpgradeWaterlevel;
-						_emptyBottles = 0;
 						
 						while { _waterNeeded > 0 } do {
 							_waterLevel_lowest = 0;
