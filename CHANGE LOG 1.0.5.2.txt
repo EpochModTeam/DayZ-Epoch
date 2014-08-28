@@ -9,6 +9,7 @@
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
 [CHANGED] Tweaked fuel capacity variables for vehicles. @RimBlock
+[CHANGED] Tweaked rotate_logs.bat to incorporate the day of the week for better organization @Raziel23x 
 
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
