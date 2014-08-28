@@ -71,7 +71,6 @@ FOR /F "skip=1" %%D IN ('wmic path win32_localtime get dayofweek') DO (
     IF %%D==5 set weekday=Friday
     IF %%D==6 set weekday=Saturday
     IF %%D==7 set weekday=Sunday
-    SET /a count+=1
 )
 
 echo (%weekday%) (%date%) (%time%) Starting Log Rotation.
