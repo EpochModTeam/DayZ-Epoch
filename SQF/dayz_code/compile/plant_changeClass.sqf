@@ -25,5 +25,5 @@ if(_ObjectID != "0" || _ObjectUID != "0") then {
 	PVDZE_veh_Publish = [_Object,_worldspace,_ClassName,true,_CharacterID];
 	publicVariableServer  "PVDZE_veh_Publish";
 
-	_Object setVariable ["isWatered", "1", true];
+	_Object setVariable ["isWatered", true, true];
 }

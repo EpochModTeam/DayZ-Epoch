@@ -8,6 +8,10 @@ class ItemWaterbottle1oz : ItemWaterbottle {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
+		};
 	};
 };
 class ItemWaterbottle2oz : ItemWaterbottle {
@@ -19,6 +23,10 @@ class ItemWaterbottle2oz : ItemWaterbottle {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
+		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
 		};
 	};
 };
@@ -32,6 +40,10 @@ class ItemWaterbottle3oz : ItemWaterbottle {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
+		};
 	};
 };
 class ItemWaterbottle4oz : ItemWaterbottle {
@@ -43,6 +55,10 @@ class ItemWaterbottle4oz : ItemWaterbottle {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
+		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
 		};
 	};
 };
@@ -56,6 +72,10 @@ class ItemWaterbottle5oz : ItemWaterbottle {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
+		};
 	};
 };
 class ItemWaterbottle6oz : ItemWaterbottle {
@@ -67,6 +87,10 @@ class ItemWaterbottle6oz : ItemWaterbottle {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
+		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
 		};
 	};
 };
@@ -80,6 +104,10 @@ class ItemWaterbottle7oz : ItemWaterbottle {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
+		};
 	};
 };
 class ItemWaterbottle8oz : ItemWaterbottle {
@@ -92,6 +120,10 @@ class ItemWaterbottle8oz : ItemWaterbottle {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
+		};
 	};
 };
 class ItemWaterbottle9oz : ItemWaterbottle {
@@ -103,6 +135,10 @@ class ItemWaterbottle9oz : ItemWaterbottle {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
+		};
+		class WaterPlant {
+			text = "Water Plants";
+			script = "spawn player_upgradePlant;";
 		};
 	};
 };
