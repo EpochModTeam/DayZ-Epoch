@@ -103,8 +103,8 @@ copy "%arma2srvpath%\%servername%\BattlEye\setpos.log" "%arma2srvpath%\%serverna
 copy "%arma2srvpath%\%servername%\BattlEye\setvariable.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\setvariable.log"
 copy "%arma2srvpath%\%servername%\BattlEye\addmagazinecargo.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\addmagazinecargo.log"
 
-echo (%date%) (%time%) Logs are backed up now...
-echo (%date%) (%time%) Removing original log files.
+echo (%weekday%) (%date%) (%time%)) Logs are backed up now...
+echo (%weekday%) (%date%) (%time%) Removing original log files.
 del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.RPT"
 del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.mdmp"
 del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.bidmp"
