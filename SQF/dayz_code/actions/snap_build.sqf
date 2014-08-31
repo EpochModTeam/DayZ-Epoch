@@ -67,8 +67,13 @@ fnc_initSnapPointsNearby = {
 		{
 			_objectSnapGizmo = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
 			_objectSnapGizmo setobjecttexture [0,_objColorInactive];
-			_objectSnapGizmo setDir ((getDir _nearbyObject)-45);
-			_objectSnapGizmo attachTo [_nearbyObject,[_x select 0,_x select 1,_x select 2]];
+			_objectSnapGizmo setDir (getDir _nearbyObject);
+			_posNearby = _nearbyObject modelToWorld [_x select 0,_x select 1,_x select 2];
+			if (surfaceIsWater _posNearby) then {
+				_objectSnapGizmo setPosASL [(_posNearby) select 0,(_posNearby) select 1,(getPosASL _nearbyObject select 2) + (_x select 2)];
+			} else {
+				_objectSnapGizmo setPosATL _posNearby;
+			};
 			snapGizmosNearby set [count snapGizmosNearby,_objectSnapGizmo];
 		} count _pointsNearby;
 	} forEach _findWhitelisted;
