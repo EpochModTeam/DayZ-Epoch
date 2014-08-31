@@ -5,8 +5,14 @@ _caller = _this select 1;
 call fnc_usec_medic_removeActions;
 r_action = false;
 
-_callerID = _caller getVariable ["CharacterID", "0"];
-_targetID = _target getVariable ["CharacterID", "0"];
+if (DZE_APlotforLife) then {
+	_callerID = [_caller] call FNC_GetPlayerUID;
+	_targetID = [_target] call FNC_GetPlayerUID;
+}else{
+	_callerID = _caller getVariable ["CharacterID", "0"];
+	_targetID = _target getVariable ["CharacterID", "0"];
+};
+
 if ((_callerID != "0") && (_targetID != "0")) then {
 	_friendlies = _caller getVariable ["friendlies", []];
 	_friendlies set [count _friendlies, _targetID];

@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- Function
 	- [] call fnc_usec_damageActions;
 ************************************************************/
-private ["_action","_weaponName","_turret","_weapons","_assignedRole","_driver","_action1","_action2","_vehicle","_unit","_vehType","_type","_typeVeh","_isDisallowRefuel","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasJerry","_hasBarrel","_hasJerryE","_hasBarrelE","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose"];
+private ["_action","_weaponName","_turret","_weapons","_assignedRole","_driver","_action1","_action2","_vehicle","_unit","_vehType","_type","_typeVeh","_isDisallowRefuel","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasJerry","_hasBarrel","_hasJerryE","_hasBarrelE","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_targetUID"];
 
 disableSerialization;
 
@@ -86,7 +86,13 @@ if (!isNull _menClose && _hasPatient && !r_drag_sqf && !r_action && !_inVehicle 
 	_inPain = 		_unit getVariable ["USEC_inPain", false];
 	_legsBroke = 	_unit getVariable ["hit_legs", 0] >= 1;
 	_armsBroke = 	_unit getVariable ["hit_hands", 0] >= 1;
-	_charID =		_unit getVariable ["CharacterID", 0];
+
+	if (DZE_APlotforLife) then {
+		_targetUID = [_unit] call FNC_GetPlayerUID;
+	}else{
+		_targetUID = _unit getVariable ["CharacterID", 0];
+	};
+
 	_friendlies =	player getVariable ["friendlies", []];
 	_playerMagazines = magazines player;
 	_hasBandage = 	"ItemBandage" in _playerMagazines;
@@ -175,7 +181,7 @@ if (!isNull _menClose && _hasPatient && !r_drag_sqf && !r_action && !_inVehicle 
 	} else {
 	
 		// should only fire if cursor target is man && not vehicle
-		if ((isPlayer _unit) && !(_charID in _friendlies)) then {
+		if ((isPlayer _unit) && !(_targetUID in _friendlies)) then {
 			r_action = true;
 			_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true, "", ""];
 			r_player_actions set [count r_player_actions,_action];

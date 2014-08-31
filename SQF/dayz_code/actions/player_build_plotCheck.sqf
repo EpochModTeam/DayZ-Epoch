@@ -1,6 +1,6 @@
 if(!DZE_ActionInProgress) exitWith {};
 //Check if nearby plotpoles exists
-private ["_passArray","_isPole","_needText","_distance","_findNearestPoles","_findNearestPole","_IsNearPlot","_requireplot","_isLandFireDZ","_canBuildOnPlot","_nearestPole","_ownerID","_friendlies"];
+private ["_passArray","_isPole","_needText","_distance","_findNearestPoles","_findNearestPole","_IsNearPlot","_requireplot","_isLandFireDZ","_canBuildOnPlot","_nearestPole","_ownerID","_friendlies", "_playerUID"];
 
 //defines
 _isPole = _this select 0;
@@ -41,11 +41,18 @@ if(_IsNearPlot == 0) then { //No live plotpoles were found nearby
 	// check nearby plots ownership && then for friend status
 	_nearestPole = _findNearestPole select 0; //nearest is always first in array when using nearestObjects check
 
+	// Find player / character
+	if (DZE_APlotforLife) then {
+		_playerUID = [player] call FNC_GetPlayerUID;
+	}else{
+		_playerUID = dayz_characterID;
+	};
+	
 	// Find owner
-	_ownerID = _nearestPole getVariable ["CharacterID","0"];
+	_ownerID = _nearestPole getVariable ["ownerPUID","0"];
 
 	// check if friendly to owner
-	if(dayz_characterID == _ownerID) then {  //Keep ownership
+	if(_playerUID == _ownerID) then {  //Keep ownership
 		// owner can build anything within his plot except other plots
 		if(!_isPole) then {
 			_canBuildOnPlot = true;

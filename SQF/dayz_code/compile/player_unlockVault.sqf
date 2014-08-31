@@ -3,7 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_nul","_objType"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_nul","_objType","_characterID","_playerUID"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -30,12 +30,19 @@ _text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 
 _alreadyPacking = _obj getVariable["packing",0];
 _claimedBy = _obj getVariable["claimed","0"];
-_ownerID = _obj getVariable["CharacterID","0"];
+_characterID = _obj getVariable["CharacterID","0"];
+_ownerID = _obj getVariable["ownerPUID","0"];;
+
+if (DZE_APlotforLife) then {
+	_playerUID = [player] call FNC_GetPlayerUID;
+}else{
+	_playerUID = dayz_characterID;
+};
 
 if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
 
-// Promt user for password if _ownerID != dayz_playerUID
-if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
+// Prompt user for password if _ownerID != _playerUID
+if ((_characterID == dayz_combination) || (_ownerID == _playerUID)) then {
 
 	// Check if any players are nearby if not allow player to claim item.
 	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
@@ -78,10 +85,11 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 			_holder setPosATL _pos;
 			player reveal _holder;
 	
-			_holder setVariable["CharacterID",_ownerID,true];
+			_holder setVariable["CharacterID",_characterID,true];
 			_holder setVariable["ObjectID",_objectID,true];
 			_holder setVariable["ObjectUID",_objectUID,true];
 			_holder setVariable ["OEMPos", _pos, true];
+			_holder setVariable ["ownerPUID", _ownerID , true];
 
 			if (count _weapons > 0) then {
 				//Add weapons

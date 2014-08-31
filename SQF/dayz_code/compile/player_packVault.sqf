@@ -1,7 +1,7 @@
 /*
 [_obj] spawn player_packVault;
 */
-private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
+private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear","_playerUID","_combination"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_15") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -21,16 +21,23 @@ _playerNear = _obj call dze_isnearest_player;
 
 if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_16") , "PLAIN DOWN"];  };
 
-_ownerID = _obj getVariable["CharacterID","0"];
+_combination = _obj getVariable["characterID","0"];
+_ownerID = _obj getVariable["ownerPUID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
+
+if (DZE_APlotforLife) then {
+	_playerUID = [player] call FNC_GetPlayerUID;
+}else{
+	_PlayerUID = dayz_characterID;
+};
 
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
 if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_118"),_text], "PLAIN DOWN"];};
 
-if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
+if((_combination != dayz_combination) && (_ownerID != _playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
 
 _alreadyPacking = _obj getVariable["packing",0];
 
@@ -49,7 +56,6 @@ if(_location1 distance _location2 > 0.1) exitWith {
 	s_player_packvault = -1;
 	DZE_ActionInProgress = false;
 };
-
 
 _dir = direction _obj;
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];
