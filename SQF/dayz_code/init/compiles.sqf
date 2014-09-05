@@ -332,7 +332,6 @@ if (!isDedicated) then {
 		if ((parseNumber(_this select 0)) != 0) then {
 			ctrlActivate (_dialog displayCtrl 157);
 			if (gear_done) then {
-				waitUntil {ctrlShown (_dialog displayCtrl 159)};
 				sleep 0.001;
 			};
 		};
