@@ -46,7 +46,6 @@ if ((typeOf (unitBackPack player)) != "") then {
 	_count = getNumber (configFile >> "CfgVehicles" >> (typeOf (unitBackpack Player)) >> "transportMaxMagazines");
 	ctrlActivate (_dialog displayCtrl 157);
 	if (gear_done) then {
-		waitUntil {ctrlShown (_dialog displayCtrl 159)};
 		sleep 0.001;
 	};
 
