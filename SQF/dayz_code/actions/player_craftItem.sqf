@@ -221,7 +221,20 @@ if (_canDo) then {
 								_craft_doLoop = false;
 							};
 							{
-								player addWeapon _x;
+								if (_x == "ItemSledge") then {
+									_inventory = weapons player;
+									_backpack = unitBackpack player;
+									if (_x in _inventory) then {
+										cutText [format["Object [%1] already in your inventory adding to Backpack!",_x], "PLAIN"];
+										_item = _x;
+										_qty = 1;
+										_backpack addWeaponCargoGlobal [_item,_qty];
+									} else {
+										player addWeapon _x;
+									};
+								} else {
+									player addWeapon _x;
+								};
 							} forEach _outputWeapons;
 							{
 
