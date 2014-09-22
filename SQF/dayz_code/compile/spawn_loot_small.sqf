@@ -64,7 +64,6 @@ switch (_iClass) do
 	case "cfglootweapon":
 	{
 		//Item is sigle, add 1 item from cfgloot
-		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 
 		_itemTypes = [];
 		if (DZE_MissionLootTable) then{
