@@ -19,7 +19,8 @@ c:
 cd %mysqldir%
 
 @REM dump/backup ALL database, this is all in one line
-mysqldump -u %mysqluser% -p%mysqlpassword% --databases %mysqlschema% >%BackupDir%\%mysqlschema%_backup.%datestamp%.sql
+mysqldump -u %mysqluser% -p%mysqlpassword% --databases %mysqlschema% --routines --events --triggers --quick  >%BackupDir%\%mysqlschema%_backup.%datestamp%.sql
 
 @REM - Housekeeping
 forfiles -p %BackupDir% -s -m *.sql -d -%housekeepafter% -c "cmd /c del @path"
+
