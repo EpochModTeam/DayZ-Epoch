@@ -6884,7 +6884,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Bedna zásob</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC">
 			<Original>12 x Random Item</Original>
@@ -6894,7 +6894,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Náhodných předmětů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_EMPTY">
 			<Original>Empty Supply Crate</Original>
@@ -6904,7 +6904,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Prázdná bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
 			<Original>6 x ItemSodaCoke</Original>
@@ -6914,7 +6914,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
 			<Original>12 x ItemSodaCoke</Original>
@@ -6924,7 +6924,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
 			<Original>6 x ItemSodaPepsi</Original>
@@ -6934,7 +6934,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
 			<Original>12 x ItemSodaPepsi</Original>
@@ -6944,7 +6944,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
 			<Original>6 x FoodbaconCooked</Original>
@@ -6954,7 +6954,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
 			<Original>12 x FoodbaconCooked</Original>
@@ -6964,7 +6964,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_G17">
 			<Original>12 x 17Rnd_9x19_glock17</Original>
@@ -6974,7 +6974,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x 17Rnd_9x19_glock17</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_M9SD">
 			<Original>12 x 15Rnd_9x19_M9SD</Original>
@@ -6984,7 +6984,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x 15Rnd_9x19_M9SD</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
 			<Original>12 x 30Rnd_9x19_MP5SD</Original>
@@ -6994,7 +6994,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x 30Rnd_9x19_MP5SD</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<Original>12 x SandBag</Original>
@@ -7004,7 +7004,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12 Pytlů s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
 			<Original>6 x Tank Trap</Original>
@@ -7014,7 +7014,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
 			<Original>12 x Tank Trap</Original>
@@ -7024,7 +7024,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
 			<Original>6 x Wire Kit</Original>
@@ -7034,7 +7034,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
 			<Original>12 x Wire Kit</Original>
@@ -7044,7 +7044,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
 			<Original>6 x Scrap Metal</Original>
@@ -7054,7 +7054,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<Original>12 x Scrap Metal</Original>
@@ -7064,7 +7064,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_ENTER">
 			<Original>Now entering %1</Original>
@@ -7074,7 +7074,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Vstoupili jste do %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_LEAVE">
 			<Original>Now leaving %1</Original>
@@ -7084,7 +7084,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Opustili jste %1</Czech>
 		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 			<Original>1.04</Original>
