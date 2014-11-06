@@ -5244,7 +5244,7 @@
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Creëer houten vloer 1/2</Dutch>
 			<!-- <French></French> -->
-			<Czech>Vytvořit Poloviční dřevěnou podlahu</Czech>
+			<Czech>Vytvořit 1/2 dřevěné podlahy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_233">
 			<Original>Craft Stair Supports</Original>
@@ -5444,7 +5444,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<Czech>Vytvořit Poloviční zeď</Czech>
+			<Czech>Vytvořit 1/2 zdi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<Original>Craft Garage Doorway</Original>
@@ -6774,7 +6774,7 @@
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Vous avez acheté %3 pour %1 %2, la clé a été ajoutée à votre ceinture.</French>
-			<Czech>Koupeno %3 za 1% 2%, klíč byl přidán do opasku na nářadí.</Czech>
+			<Czech>Koupeno %3 za %1 %2, klíč byl přidán do opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_12">
 			<Original>Missing %1 more of %2</Original>
