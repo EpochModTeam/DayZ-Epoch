@@ -279,5 +279,5 @@ class CfgWeapons {
 	#include "CfgWeapons\Weapon\LMG\M249_EP1.hpp"
 	#include "CfgWeapons\Weapon\LMG\M249_m145_EP1.hpp"
 	#include "CfgWeapons\Weapon\LMG\M60A4.hpp"
-//	#include "CfgWeapons\Weapon\Rifle\FN_FAL_ANPVS4_DZE.hpp"
+	#include "CfgWeapons\Weapon\Rifle\FN_FAL_ANPVS4_DZE.hpp"
 };
