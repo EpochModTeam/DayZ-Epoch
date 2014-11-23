@@ -98,6 +98,7 @@ if (!isDedicated) then {
 	player_fillWater = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\water_fill.sqf";
 	player_makeFire =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_makefire.sqf";
 	player_harvestPlant =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_harvestPlant.sqf";
+	player_upgradePlant =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_upgradePlant.sqf";
 	player_goFishing =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_goFishing.sqf";
 	
 	if (DZE_modularBuild) then {
@@ -144,6 +145,8 @@ if (!isDedicated) then {
 	player_hasTools =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_hasTools.sqf";
 	player_checkItems =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkItems.sqf";
 	player_removeItems =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_removeItems.sqf";
+	plant_getInfo =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\plant_getInfo.sqf";
+	plant_changeClass =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\plant_changeClass.sqf";
 	//Trader ["Trader City Name",false,"enter"] - Trader City Name | Show Message | "enter" || "leave"
 	player_traderCity = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderCity.sqf";
 

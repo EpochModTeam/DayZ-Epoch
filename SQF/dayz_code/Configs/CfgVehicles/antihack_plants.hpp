@@ -74,6 +74,22 @@
 			class AnimationSources {};
 	};
 
+	class papaver: faplants 
+	{
+			model = "\ca\plants_e\plant\p_papaver_ep1.p3d";
+			displayName = "papaver";
+			vehicleClass = "papaver";
+			class AnimationSources {};
+	};
+
+	class wheat: faplants 
+	{
+			model = "\ca\plants_e\plant\p_wheat_ep1.p3d";
+			displayName = "wheat";
+			vehicleClass = "wheat";
+			class AnimationSources {};
+	};
+
 	class amygdalusc: faplants 
 	{
 			model = "\ca\plants_e\tree\t_amygdalusc2s_ep1.p3d";

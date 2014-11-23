@@ -1688,36 +1688,4 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
 	};
-
-	class ItemKiloHemp : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = "Kilo of Hemp";
-		descriptionShort = "Kilo of Hemp";
-		weight = 1;
-		model = "z\addons\dayz_epoch\models\kilohemp.p3d";
-		picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
-		type = 256;
-		class ItemActions
-		{
-			class Crafting
-			{
-				text = $STR_EPOCH_PLAYER_269b;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {"workshop"};
-				requiretools[] = {"ItemToolbox","ItemKnife"};
-				output[] = {{"ItemCanvas",1}};
-				input[] = {{"ItemKiloHemp",1}};
-			};
-			class Crafting1
-			{
-				text = "Craft Hemp Seeds";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-				neednearby[] = {""};
-				requiretools[] = {"ItemKnife"};
-				output[] = {{"ItemHempSeed",5}};
-				input[] = {{"ItemKiloHemp",1}};
-			};
-		};
-	};
 };
