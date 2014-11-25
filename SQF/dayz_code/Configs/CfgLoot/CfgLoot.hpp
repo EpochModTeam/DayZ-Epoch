@@ -26,6 +26,8 @@ class CfgLoot {
 		,{"FoodBioMeat",0.01}
 		,{"8Rnd_9x18_MakarovSD",0.01}
 		,{"ItemDocument",0.03}
+		,{"RedRyder",0.06}
+		,{"350Rnd_BB_Magazine",0.07}
 	};
 	office2[] = {
 		{"FoodCanUnlabeled",0.07}
@@ -47,6 +49,7 @@ class CfgLoot {
 		,{"8Rnd_9x18_MakarovSD",0.01}
 		,{"ItemBriefcaseEmpty",0.01}
 		,{"ItemDocument",0.02}
+		,{"350Rnd_BB_Magazine",0.09}
 	};
 	food[] = {
 		{"TrashTinCan",0.09}
@@ -121,6 +124,7 @@ class CfgLoot {
 		,{"HandChemBlue",0.03}
 		,{"HandChemRed",0.03}
 		,{"ItemHeatPack",0.04}
+		,{"350Rnd_BB_Magazine",0.09}
 	};
 	medical[] = {
 		{"ItemBandage",0.4}
@@ -252,6 +256,8 @@ class CfgLoot {
 		,{"FoodNutmix",0.02}
 		,{"ItemDocument",0.01}
 		,{"ItemMixOil",0.01}
+		,{"RedRyder",0.06}
+		,{"350Rnd_BB_Magazine",0.09}
 	};
 	worker[] = {
 		{"FoodCanUnlabeled",0.09}
@@ -380,6 +386,7 @@ class CfgLoot {
 		,{"Crossbow_DZ",0.07}
 		,{"huntingrifle",0.05}
 		,{"Chainsaw",0.01}
+		,{"RedRyder",0.06}
 	};
 	sniperrifles[] = {
 		{"AK_107_PSO",0.1}
