@@ -23,18 +23,18 @@ class CfgPatches
 };
 class CfgModels
 {
-	class Default{};
- 	class Weapon: Default{};
+	class Default {};
+ 	class Weapon : Default {};
  	class RedRyder : Weapon{};
 };
 
 class CfgAmmo
 {
     class BulletBase;
-	class 177_BB: BulletBase {
+	class 177_BB : BulletBase {
 		model = "z\addons\redryder\models\BB_Round.p3d";
 		simulation = shotShell;
-		soundHit[] = {0,1};
+		soundHit[] = {0, 1};
 		hit = 3.7;
 		indirectHit = 0;
 		indirectHitRange = 0;
@@ -53,7 +53,8 @@ class CfgAmmo
 class CfgMagazines
 {
 	class CA_Magazine;
-	class 350Rnd_BB_Magazine: CA_Magazine {   
+	class 350Rnd_BB_Magazine : CA_Magazine 
+	{   
 		scope = 2;
 		model = "z\addons\redryder\models\bb_magazine.p3d";	
 		picture = "z\addons\redryder\textures\bb_magazine_picture.paa"; 
@@ -61,16 +62,16 @@ class CfgMagazines
 		count = 350;
 		ammo = 177_BB;
 		initSpeed = 175;
-		sound[] = {"z\addons\redryder\M9SD_S1", db+8, 1,60}; 
-		reloadMagazineSound[] = {"Ca\sounds\Weapons\rifles\M1014-reload", db-40, 1, 20};
+		sound[] = {"z\addons\redryder\M9SD_S1", db + 8, 1,60}; 
+		reloadMagazineSound[] = {"Ca\sounds\Weapons\rifles\M1014-reload", db - 40, 1, 20};
 		descriptionShort = "350 Zinc Coated .177, 4.5mm BBs";
-};
+	};
 };
 class CfgWeapons
 {
 	class Default {};
-	class Rifle: Default {};
-	class RedRyder: Rifle {
+	class Rifle : Default {};
+	class RedRyder : Rifle {
 		scope = 2;
 		model = "z\addons\redryder\models\RedRyder.p3d"; 
 		displayName = "RedRyder BB Gun";
@@ -79,7 +80,7 @@ class CfgWeapons
 		recoil = "recoil_single_pistol_2outof3";
 		recoilProne = "recoil_single_pistol_prone_2outof3";
 		reloadTime = 0.45;
-		sound[] = {"z\addons\redryder\RedRyder\M9SD_S1", db8, 1,60}; 
+		sound[] = {"z\addons\redryder\RedRyder\M9SD_S1", db + 8, 1, 60}; 
 		dispersion = 0.00045;
 		minRange = 0;
 		minRangeProbab = 0.30;
@@ -88,6 +89,6 @@ class CfgWeapons
 		maxRange = 75;
 		maxRangeProbab = 0.05;
 		picture = "z\addons\redryder\textures\redryder_picture.paa"; 
-		handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\M24.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\M24.rtm"};
 	};
 };
