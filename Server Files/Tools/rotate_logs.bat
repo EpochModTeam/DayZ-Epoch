@@ -133,7 +133,7 @@ del /Q /F "%arma2srvpath%\AdminLog.txt"
 del /Q /F "%arma2srvpath%\HackLog.txt"
 del /Q /F "%arma2srvpath%\logUnlockLock.txt"
 del /Q /F "%arma2srvpath%\SafeZone.txt"
-del /Q /F "%arma2srvpath%\%servername%\runtime.log"
+del /Q /F "%arma2srvpath%\runtime.log"
 
 if %debug% == 1 (
 timeout %dbsecs%
