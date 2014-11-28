@@ -102,6 +102,12 @@ copy "%arma2srvpath%\%servername%\BattlEye\setdamage.log" "%arma2srvpath%\%serve
 copy "%arma2srvpath%\%servername%\BattlEye\setpos.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\setpos.log"
 copy "%arma2srvpath%\%servername%\BattlEye\setvariable.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\setvariable.log"
 copy "%arma2srvpath%\%servername%\BattlEye\addmagazinecargo.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\addmagazinecargo.log"
+::infiSTAR.de Support added
+copy "%arma2srvpath%\AdminLog.txt" "%arma2srvpath%\%servername%\RotatedLogs\infiSTAR.de\%weekday%\%dtStamp%\AdminLog.txt"
+copy "%arma2srvpath%\HackLog.txt" "%arma2srvpath%\%servername%\RotatedLogs\infiSTAR.de\%weekday%\%dtStamp%\HackLog.txt"
+copy "%arma2srvpath%\logUnlockLock.txt" "%arma2srvpath%\%servername%\RotatedLogs\infiSTAR.de\%weekday%\%dtStamp%\logUnlockLock.txt"
+copy "%arma2srvpath%\SafeZone.txt" "%arma2srvpath%\%servername%\RotatedLogs\infiSTAR.de\%weekday%\%dtStamp%\SafeZone.txt"
+copy "%arma2srvpath%\SurveillanceLog.txt" "%arma2srvpath%\%servername%\RotatedLogs\infiSTAR.de\%weekday%\%dtStamp%\SurveillanceLog.txt"
 
 echo (%weekday%) (%date%) (%time%)) Logs are backed up now...
 echo (%weekday%) (%date%) (%time%) Removing original log files.
@@ -120,6 +126,14 @@ del /Q /F "%arma2srvpath%\%servername%\BattlEye\setdamage.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\setpos.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\setvariable.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\addmagazinecargo.log"
+
+echo (%weekday%) (%date%) (%time%)) infiSTAR.de Logs are backed up now...
+echo (%weekday%) (%date%) (%time%) Removing original infiSTAR.de log files.
+del /Q /F "%arma2srvpath%\AdminLog.txt"
+del /Q /F "%arma2srvpath%\HackLog.txt"
+del /Q /F "%arma2srvpath%\logUnlockLock.txt"
+del /Q /F "%arma2srvpath%\SafeZone.txt"
+del /Q /F "%arma2srvpath%\%servername%\runtime.log"
 
 if %debug% == 1 (
 timeout %dbsecs%
