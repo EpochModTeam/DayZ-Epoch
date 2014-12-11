@@ -114,7 +114,7 @@ echo (%weekday%) (%date%) (%time%) Removing original log files.
 del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.RPT"
 del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.mdmp"
 del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.bidmp"
-del /Q /F "%arma2srvpath%\%servername%\server_console.log"
+del /Q /F "%arma2srvpath%\%servername%\server_log.log"
 del /Q /F "%arma2srvpath%\%servername%\runtime.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\scripts.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\createvehicle.log"
