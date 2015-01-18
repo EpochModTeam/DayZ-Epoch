@@ -24,6 +24,8 @@
 [FIXED] Some counts reverted to forEach - count loops can not be nested inside other count loops #1491-#1495 @ebaydayz
 [FIXED] Safes empty when opening after restart #1467 @ebaydayz
 [FIXED] Dynamic_vehicle spawning non-upgradable classes of hilux1 & datsun1.  @Uro1
+[FIXED] Eating while inside a vehicle did not drop empty can  @deadeye2
+[FIXED] Zombie loot error when using loot tables in mission file  @deadeye2
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
