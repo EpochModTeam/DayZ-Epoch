@@ -50,11 +50,8 @@ _agent setVariable ["newDest",_newDest];
 //Add some loot
 _rnd = random 1;
 if (_rnd > 0.3) then {
-	if (DZE_MissionLootTable) then {
-		_lootType = getText (missionConfigFile >> "CfgVehicles" >> _type >> "zombieLoot");
-	} else {
-		_lootType = getText (configFile >> "CfgVehicles" >> _type >> "zombieLoot");
-	};
+
+	_lootType = getText (configFile >> "CfgVehicles" >> _type >> "zombieLoot");
 
 	if (DZE_MissionLootTable) then {
 		_lootTypeCfg = getArray (missionConfigFile >> "CfgLoot" >> _lootType);
