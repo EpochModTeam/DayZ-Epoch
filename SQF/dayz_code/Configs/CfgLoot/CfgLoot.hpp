@@ -87,6 +87,7 @@ class CfgLoot {
 		,{"8Rnd_9x18_Makarov",0.08}
 		,{"15Rnd_W1866_Slug",0.02}
 		,{"WoodenArrow",0.04}
+		,{"350Rnd_BB_Magazine",0.05}
 		,{"HandRoadFlare",0.07}
 		,{"ItemPainkiller",0.02}
 		,{"HandChemGreen",0.01}
@@ -118,6 +119,7 @@ class CfgLoot {
 		,{"8Rnd_9x18_Makarov",0.09}
 		,{"15Rnd_W1866_Slug",0.02}
 		,{"WoodenArrow",0.04}
+		,{"350Rnd_BB_Magazine",0.05}
 		,{"HandRoadFlare",0.07}
 		,{"ItemPainkiller",0.02}
 		,{"HandChemGreen",0.01}
@@ -251,6 +253,7 @@ class CfgLoot {
 		,{"10x_303",0.1}
 		,{"ItemWaterbottleUnfilled",0.05}
 		,{"WoodenArrow",0.2}
+		,{"350Rnd_BB_Magazine",0.05}
 		,{"ItemHeatPack",0.02}
 		,{"FoodMRE",0.01}
 		,{"FoodNutmix",0.02}
