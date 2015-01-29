@@ -5,7 +5,7 @@ class Mission
 	{
 		"tavi",
 		"kh_dayztaviana",
-	    "ca_modules_animals",
+	    	"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
