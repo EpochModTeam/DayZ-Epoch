@@ -11,7 +11,7 @@ lbClear TraderDialogCatList;
 lbClear TraderDialogItemList;
 
 TraderCurrentCatIndex = -1;
-TraderItemList = -1;
+TraderItemList = [];
 
 TraderCatList = [];
 {
