@@ -8,12 +8,12 @@ TraderDialogSellBtn = 12005;
 TraderDialogCurrency = 12006;
 
 TraderCurrentCatIndex = -1;
-TraderCatList = -1;
-TraderItemList = -1;
+TraderCatList = [];
+TraderItemList = [];
 
 TraderDialogLoadItemList = {
 	private ["_index","_trader_id","_activatingPlayer","_distance","_objclass","_item_list"];
-	TraderItemList = -1;
+	TraderItemList = [];
 	_index = _this select 0;
 
 	if (_index < 0 || TraderCurrentCatIndex == _index) exitWith {};
@@ -198,7 +198,7 @@ TraderDialogBuy = {
 	_item = TraderItemList select _index;
 	_data = [_item select 0, _item select 3, 1, _item select 2, "buy", _item select 4, _item select 1, _item select 8];
 	[0, player, '', _data] execVM (_item select 9);
-	TraderItemList = -1;
+	TraderItemList = [];
 };
 
 TraderDialogSell = {
@@ -210,5 +210,5 @@ TraderDialogSell = {
 	_item = TraderItemList select _index;
 	_data = [_item select 6, _item select 0, _item select 5, 1, "sell", _item select 1, _item select 7, _item select 8];
 	[0, player, '', _data] execVM (_item select 9);
-	TraderItemList = -1;
+	TraderItemList = [];
 };
