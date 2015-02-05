@@ -28,8 +28,8 @@ class Mission
 	{
 		briefingName="DayZ Epoch Proving Grounds PMC";
 		briefingDescription="DayZ Epoch Proving Grounds PMC Private Server";
-		startWeather=0.067362607;
-		forecastWeather=0.52341133;
+		startWeather=0;
+		forecastWeather=0;
 		year=2008;
 		month=6;
 		day=1;
@@ -44,1108 +44,119 @@ class Mission
 			class Vehicles
 			{
 				items=100;
-				class Item0
-				{
-					position[]={-9227.7705,339.88535,13286.491};
-					azimut=-17.0839;
-					id=11;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
+#define PLRDEF position[]={-9226,340,13286};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
+				class Item0{id=0;PLRDEF};
 				class Item1
 				{
-					position[]={-9226.2275,339.79999,13286.042};
-					azimut=-17.0839;
+					position[]={-9226,340,13286};
+					azimut=0;
 					id=0;
 					side="WEST";
 					vehicle="Survivor1_DZ";
 					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item2
-				{
-					position[]={-9227.2695,339.85739,13286.331};
-					azimut=-17.083944;
-					id=5;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item3
-				{
-					position[]={-9228.1406,339.89682,13285.876};
-					azimut=-17.083944;
-					id=8;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item4
-				{
-					position[]={-9226.3682,339.82693,13287.624};
-					azimut=-17.083944;
-					id=18;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item5
-				{
-					position[]={-9226.3809,339.80844,13286.085};
-					azimut=-17.083944;
-					id=2;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item6
-				{
-					position[]={-9227.0127,339.84363,13286.29};
-					azimut=-17.083937;
-					id=9;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item7
-				{
-					position[]={-9225.6738,339.77631,13286.438};
-					azimut=-17.083944;
-					id=21;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item8
-				{
-					position[]={-9226.2734,339.78833,13284.918};
-					azimut=-17.083944;
-					id=13;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item9
-				{
-					position[]={-9225.5596,339.76682,13286.151};
-					azimut=-17.083944;
-					id=7;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item10
-				{
-					position[]={-9227.7363,339.87744,13286.001};
-					azimut=-17.0839;
-					id=36;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item11
-				{
-					position[]={-9227.8799,339.8887,13286.307};
-					azimut=-17.083944;
-					id=25;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item12
-				{
-					position[]={-9229.8154,339.96829,13285.283};
-					azimut=-17.083944;
-					id=43;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item13
-				{
-					position[]={-9226.4443,339.81305,13286.193};
-					azimut=-17.083944;
-					id=30;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item14
-				{
-					position[]={-9226.4033,339.80716,13285.891};
-					azimut=-17.083944;
-					id=33;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item15
-				{
-					position[]={-9225.7578,339.78458,13286.758};
-					azimut=-17.083944;
-					id=1;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item16
-				{
-					position[]={-9226.416,339.82135,13286.978};
-					azimut=-17.083944;
-					id=4;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item17
-				{
-					position[]={-9227.9834,339.87796,13285.123};
-					azimut=-17.083944;
-					id=3;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item18
-				{
-					position[]={-9227.2666,339.87115,13287.445};
-					azimut=-17.083944;
-					id=6;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item19
-				{
-					position[]={-9227.5576,339.88266,13287.161};
-					azimut=-17.083944;
-					id=10;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item20
-				{
-					position[]={-9226.0488,339.7916,13286.112};
-					azimut=-17.083944;
-					id=16;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item21
-				{
-					position[]={-9226.2988,339.80313,13285.998};
-					azimut=-17.083944;
-					id=19;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item22
-				{
-					position[]={-9226.3936,339.81274,13286.376};
-					azimut=-17.083944;
-					id=15;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item23
-				{
-					position[]={-9226.2412,339.80209,13286.156};
-					azimut=-17.083944;
-					id=23;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item24
-				{
-					position[]={-9226.3418,339.81396,13286.693};
-					azimut=-17.083944;
-					id=26;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item25
-				{
-					position[]={-9226.9863,339.84131,13286.213};
-					azimut=-17.083944;
-					id=29;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item26
-				{
-					position[]={-9226.6006,339.82108,13286.188};
-					azimut=-17.083944;
-					id=31;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item27
-				{
-					position[]={-9225.9824,339.79691,13286.812};
-					azimut=-17.083944;
-					id=28;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item28
-				{
-					position[]={-9226.04,339.80713,13287.394};
-					azimut=-17.083944;
-					id=35;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item29
-				{
-					position[]={-9226.7217,339.81482,13285.184};
-					azimut=-17.083944;
-					id=27;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item30
-				{
-					position[]={-9227.8877,339.88629,13286.08};
-					azimut=-17.083937;
-					id=34;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item31
-				{
-					position[]={-9226.3291,339.79385,13285.128};
-					azimut=-17.083944;
-					id=46;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item32
-				{
-					position[]={-9226.7764,339.82602,13285.854};
-					azimut=-17.083944;
-					id=38;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item33
-				{
-					position[]={-9228.0107,339.87933,13285.128};
-					azimut=-17.083944;
-					id=32;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item34
-				{
-					position[]={-9226.6563,339.83197,13286.831};
-					azimut=-17.083944;
-					id=47;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item35
-				{
-					position[]={-9228.0459,339.89471,13286.104};
-					azimut=-17.083944;
-					id=41;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item36
-				{
-					position[]={-9225.9746,339.78494,13285.885};
-					azimut=-17.083944;
-					id=40;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item37
-				{
-					position[]={-9227.1689,339.84113,13285.438};
-					azimut=-17.083944;
-					id=44;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item38
-				{
-					position[]={-9228.6396,339.90808,13285.044};
-					azimut=-17.083944;
-					id=48;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item39
-				{
-					position[]={-9228.2998,339.90469,13285.848};
-					azimut=-17.083944;
-					id=39;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item40
-				{
-					position[]={-9227.8906,339.8688,13284.835};
-					azimut=-17.083944;
-					id=37;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item41
-				{
-					position[]={-9229.0918,339.94571,13286.026};
-					azimut=-17.083944;
-					id=45;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item42
-				{
-					position[]={-9227.165,339.84357,13285.651};
-					azimut=-17.0839;
-					id=49;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item43
-				{
-					position[]={-9226.8242,339.82153,13285.296};
-					azimut=-17.083944;
-					id=42;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item44
-				{
-					position[]={-9226.3633,339.80768,13286.095};
-					azimut=-17.083944;
-					id=22;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item45
-				{
-					position[]={-9226.7969,339.8335,13286.373};
-					azimut=-17.083944;
-					id=12;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item46
-				{
-					position[]={-9226.2236,339.81598,13287.346};
-					azimut=-17.083944;
-					id=14;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item47
-				{
-					position[]={-9226.208,339.81073,13286.987};
-					azimut=-17.0839;
-					id=24;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item48
-				{
-					position[]={-9225.75,339.7869,13286.974};
-					azimut=-17.083944;
-					id=20;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item49
-				{
-					position[]={-9228.4834,339.9317,13287.258};
-					azimut=-17.083944;
-					id=17;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item50
-				{
-					position[]={-9226.1025,339.79715,13286.333};
-					azimut=-17.0839;
-					id=51;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item51
-				{
-					position[]={-9226.2676,339.80045,13285.912};
-					azimut=-17.0839;
-					id=52;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item52
-				{
-					position[]={-9225.6104,339.77072,13286.257};
-					azimut=-17.0839;
-					id=55;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item53
-				{
-					position[]={-9227.1758,339.84412,13285.65};
-					azimut=-17.0839;
-					id=53;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item54
-				{
-					position[]={-9226.7432,339.82593,13285.985};
-					azimut=-17.0839;
-					id=54;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item55
-				{
-					position[]={-9226.2275,339.80112,13286.133};
-					azimut=-17.0839;
-					id=70;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item56
-				{
-					position[]={-9227.8281,339.88962,13286.597};
-					azimut=-17.0839;
-					id=60;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item57
-				{
-					position[]={-9227.7969,339.88263,13286.166};
-					azimut=-17.0839;
-					id=68;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item58
-				{
-					position[]={-9227.3564,339.86536,13286.608};
-					azimut=-17.0839;
-					id=66;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item59
-				{
-					position[]={-9227.0605,339.83997,13285.795};
-					azimut=-17.0839;
-					id=61;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item60
-				{
-					position[]={-9227.3223,339.85941,13286.271};
-					azimut=-17.0839;
-					id=63;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item61
-				{
-					position[]={-9226.0098,339.80829,13287.616};
-					azimut=-17.0839;
-					id=72;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item62
-				{
-					position[]={-9226.333,339.79715,13285.377};
-					azimut=-17.0839;
-					id=57;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item63
-				{
-					position[]={-9226.3096,339.79947,13285.661};
-					azimut=-17.0839;
-					id=58;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item64
-				{
-					position[]={-9228.4053,339.9176,13286.448};
-					azimut=-17.0839;
-					id=62;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item65
-				{
-					position[]={-9227.2754,339.85733,13286.298};
-					azimut=-17.0839;
-					id=75;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item66
-				{
-					position[]={-9227.0635,339.83984,13285.776};
-					azimut=-17.0839;
-					id=56;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item67
-				{
-					position[]={-9228.1729,339.89459,13285.591};
-					azimut=-17.0839;
-					id=73;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item68
-				{
-					position[]={-9226.2158,339.7851,13284.893};
-					azimut=-17.0839;
-					id=69;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item69
-				{
-					position[]={-9227.1328,339.84109,13285.587};
-					azimut=-17.0839;
-					id=67;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item70
-				{
-					position[]={-9227.875,339.8754,13285.286};
-					azimut=-17.0839;
-					id=65;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item71
-				{
-					position[]={-9226.7676,339.83124,13286.31};
-					azimut=-17.0839;
-					id=74;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item72
-				{
-					position[]={-9228.6436,339.93161,13286.586};
-					azimut=-17.0839;
-					id=71;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item73
-				{
-					position[]={-9226.9951,339.8414,13286.182};
-					azimut=-17.0839;
-					id=59;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item74
-				{
-					position[]={-9228.3154,339.91071,13286.268};
-					azimut=-17.0839;
-					id=64;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item75
-				{
-					position[]={-9226.0654,339.80463,13287.091};
-					azimut=-17.0839;
-					id=81;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item76
-				{
-					position[]={-9228.6787,339.92975,13286.287};
-					azimut=-17.0839;
-					id=83;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item77
-				{
-					position[]={-9228.6621,339.92181,13285.821};
-					azimut=-17.0839;
-					id=82;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item78
-				{
-					position[]={-9228.2646,339.90421,13285.957};
-					azimut=-17.0839;
-					id=84;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item79
-				{
-					position[]={-9227.6934,339.86774,13285.4};
-					azimut=-17.0839;
-					id=85;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item80
-				{
-					position[]={-9228.4668,339.91537,13286.013};
-					azimut=-17.0839;
-					id=77;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item81
-				{
-					position[]={-9229.5625,339.97446,13286.408};
-					azimut=-17.0839;
-					id=78;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item82
-				{
-					position[]={-9229.0146,339.93137,13285.37};
-					azimut=-17.0839;
-					id=79;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item83
-				{
-					position[]={-9226.8789,339.83426,13286.091};
-					azimut=-17.0839;
-					id=76;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item84
-				{
-					position[]={-9227.2725,339.85904,13286.446};
-					azimut=-17.0839;
-					id=80;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item85
-				{
-					position[]={-9226.5635,339.83371,13287.358};
-					azimut=-17.0839;
-					id=97;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item86
-				{
-					position[]={-9229.0674,339.95273,13286.533};
-					azimut=-17.0839;
-					id=98;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item87
-				{
-					position[]={-9226.6563,339.83679,13287.217};
-					azimut=-17.0839;
-					id=99;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item88
-				{
-					position[]={-9227.3896,339.87329,13287.105};
-					azimut=-17.0839;
-					id=100;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item89
-				{
-					position[]={-9227.2051,339.86279,13287.03};
-					azimut=-17.0839;
-					id=96;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item90
-				{
-					position[]={-9227.7627,339.87299,13285.532};
-					azimut=-17.0839;
-					id=87;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item91
-				{
-					position[]={-9228.4023,339.91022,13285.875};
-					azimut=-17.0839;
-					id=92;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item92
-				{
-					position[]={-9226.6992,339.83041,13286.526};
-					azimut=-17.0839;
-					id=88;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item93
-				{
-					position[]={-9227.2813,339.85928,13286.43};
-					azimut=-17.0839;
-					id=89;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item94
-				{
-					position[]={-9226.8467,339.84055,13286.729};
-					azimut=-17.0839;
-					id=90;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item95
-				{
-					position[]={-9226.6357,339.83777,13287.384};
-					azimut=-17.0839;
-					id=86;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item96
-				{
-					position[]={-9227.6309,339.87009,13285.848};
-					azimut=-17.0839;
-					id=93;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item97
-				{
-					position[]={-9226.5049,339.82465,13286.874};
-					azimut=-17.0839;
-					id=94;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item98
-				{
-					position[]={-9226.165,339.81055,13287.152};
-					azimut=-17.0839;
-					id=91;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
-				class Item99
-				{
-					position[]={-9227.6592,339.87982,13286.512};
-					azimut=-17.0839;
-					id=95;
-					side="WEST";
-					vehicle="Survivor1_DZ";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
-				};
+					skill=0.6;
+					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+				};
+				class Item2{id=2;PLRDEF};
+				class Item3{id=3;PLRDEF};
+				class Item4{id=4;PLRDEF};
+				class Item5{id=5;PLRDEF};
+				class Item6{id=6;PLRDEF};
+				class Item7{id=7;PLRDEF};
+				class Item8{id=8;PLRDEF};
+				class Item9{id=9;PLRDEF};
+				class Item10{id=10;PLRDEF};
+				class Item11{id=11;PLRDEF};
+				class Item12{id=12;PLRDEF};
+				class Item13{id=13;PLRDEF};
+				class Item14{id=14;PLRDEF};
+				class Item15{id=15;PLRDEF};
+				class Item16{id=16;PLRDEF};
+				class Item17{id=17;PLRDEF};
+				class Item18{id=18;PLRDEF};
+				class Item19{id=19;PLRDEF};
+				class Item20{id=20;PLRDEF};
+				class Item21{id=21;PLRDEF};
+				class Item22{id=22;PLRDEF};
+				class Item23{id=23;PLRDEF};
+				class Item24{id=24;PLRDEF};
+				class Item25{id=25;PLRDEF};
+				class Item26{id=26;PLRDEF};
+				class Item27{id=27;PLRDEF};
+				class Item28{id=28;PLRDEF};
+				class Item29{id=29;PLRDEF};
+				class Item30{id=30;PLRDEF};
+				class Item31{id=31;PLRDEF};
+				class Item32{id=32;PLRDEF};
+				class Item33{id=33;PLRDEF};
+				class Item34{id=34;PLRDEF};
+				class Item35{id=35;PLRDEF};
+				class Item36{id=36;PLRDEF};
+				class Item37{id=37;PLRDEF};
+				class Item38{id=38;PLRDEF};
+				class Item39{id=39;PLRDEF};
+				class Item40{id=40;PLRDEF};
+				class Item41{id=41;PLRDEF};
+				class Item42{id=42;PLRDEF};
+				class Item43{id=43;PLRDEF};
+				class Item44{id=44;PLRDEF};
+				class Item45{id=45;PLRDEF};
+				class Item46{id=46;PLRDEF};
+				class Item47{id=47;PLRDEF};
+				class Item48{id=48;PLRDEF};
+				class Item49{id=49;PLRDEF};
+				class Item50{id=50;PLRDEF};
+				class Item51{id=51;PLRDEF};
+				class Item52{id=52;PLRDEF};
+				class Item53{id=53;PLRDEF};
+				class Item54{id=54;PLRDEF};
+				class Item55{id=55;PLRDEF};
+				class Item56{id=56;PLRDEF};
+				class Item57{id=57;PLRDEF};
+				class Item58{id=58;PLRDEF};
+				class Item59{id=59;PLRDEF};
+				class Item60{id=60;PLRDEF};
+				class Item61{id=61;PLRDEF};
+				class Item62{id=62;PLRDEF};
+				class Item63{id=63;PLRDEF};
+				class Item64{id=64;PLRDEF};
+				class Item65{id=65;PLRDEF};
+				class Item66{id=66;PLRDEF};
+				class Item67{id=67;PLRDEF};
+				class Item68{id=68;PLRDEF};
+				class Item69{id=69;PLRDEF};
+				class Item70{id=70;PLRDEF};
+				class Item71{id=71;PLRDEF};
+				class Item72{id=72;PLRDEF};
+				class Item73{id=73;PLRDEF};
+				class Item74{id=74;PLRDEF};
+				class Item75{id=75;PLRDEF};
+				class Item76{id=76;PLRDEF};
+				class Item77{id=77;PLRDEF};
+				class Item78{id=78;PLRDEF};
+				class Item79{id=79;PLRDEF};
+				class Item80{id=80;PLRDEF};
+				class Item81{id=81;PLRDEF};
+				class Item82{id=82;PLRDEF};
+				class Item83{id=83;PLRDEF};
+				class Item84{id=84;PLRDEF};
+				class Item85{id=85;PLRDEF};
+				class Item86{id=86;PLRDEF};
+				class Item87{id=87;PLRDEF};
+				class Item88{id=88;PLRDEF};
+				class Item89{id=89;PLRDEF};
+				class Item90{id=90;PLRDEF};
+				class Item91{id=91;PLRDEF};
+				class Item92{id=92;PLRDEF};
+				class Item93{id=93;PLRDEF};
+				class Item94{id=94;PLRDEF};
+				class Item95{id=95;PLRDEF};
+				class Item96{id=96;PLRDEF};
+				class Item97{id=97;PLRDEF};
+				class Item98{id=98;PLRDEF};
+				class Item99{id=99;PLRDEF};
 			};
 		};
 		class Item1
@@ -1162,7 +173,7 @@ class Mission
 					vehicle="FunctionsManager";
 					leader=1;
 					lock="UNLOCKED";
-					skill=0.60000002;
+					skill=0.6;
 				};
 			};
 		};
@@ -1176,7 +187,7 @@ class Mission
 			id=101;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 		};
 		class Item1
 		{
@@ -1184,7 +195,7 @@ class Mission
 			id=102;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 		};
 		class Item2
 		{
@@ -1192,7 +203,7 @@ class Mission
 			id=103;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 		};
 		class Item3
 		{
@@ -1200,7 +211,7 @@ class Mission
 			id=104;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 		};
 		class Item4
 		{
@@ -1209,7 +220,7 @@ class Mission
 			id=105;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 		};
 		class Item5
 		{
@@ -1218,7 +229,7 @@ class Mission
 			id=106;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 		};
 		class Item6
 		{
@@ -1227,7 +238,7 @@ class Mission
 			id=107;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 			text="wall";
 		};
 		class Item7
@@ -1237,7 +248,7 @@ class Mission
 			id=108;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
-			skill=0.60000002;
+			skill=0.6;
 		};
 	};
 	class Markers
@@ -1336,8 +347,8 @@ class Intro
 	randomSeed=6913869;
 	class Intel
 	{
-		startWeather=0.25;
-		forecastWeather=0.25;
+		startWeather=0;
+		forecastWeather=0;
 		year=2008;
 		month=10;
 		day=11;
@@ -1358,8 +369,8 @@ class OutroWin
 	randomSeed=4081731;
 	class Intel
 	{
-		startWeather=0.25;
-		forecastWeather=0.25;
+		startWeather=0;
+		forecastWeather=0;
 		year=2008;
 		month=10;
 		day=11;
@@ -1380,8 +391,8 @@ class OutroLoose
 	randomSeed=4975929;
 	class Intel
 	{
-		startWeather=0.25;
-		forecastWeather=0.25;
+		startWeather=0;
+		forecastWeather=0;
 		year=2008;
 		month=10;
 		day=11;
