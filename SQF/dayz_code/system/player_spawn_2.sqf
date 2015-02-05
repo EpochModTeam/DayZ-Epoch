@@ -125,6 +125,10 @@ while {true} do {
 	//Hunger Effect
 	_foodVal = 		dayz_statusArray select 0;
 	_thirstVal = 	dayz_statusArray select 1;
+	if(Dayz_Dark_UI) then {
+	_foodVal = 1 - (dayz_hunger / SleepFood);
+	_thirstVal = 1 - (dayz_thirst / SleepWater);
+	};
 	if (_thirstVal <= 0) then {
 		_result = r_player_blood - 10;
 		if (_result < 0) then {
