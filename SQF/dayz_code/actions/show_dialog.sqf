@@ -11,7 +11,7 @@ lbClear TraderDialogCatList;
 lbClear TraderDialogItemList;
 
 TraderCurrentCatIndex = -1;
-TraderItemList = -1;
+TraderItemList = [];
 
 TraderCatList = [];
 {
@@ -21,4 +21,4 @@ TraderCatList = [];
 } count _trader_data;
 waitUntil { !dialog };
 TraderCurrentCatIndex = -1;
-TraderCatList = -1;
+TraderCatList = [];
