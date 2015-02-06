@@ -450,7 +450,10 @@ if (!isDedicated) then {
 
         // 120 sec timeout (12000 * 0.01)
         while { _timeOut < 12000 } do {
-            if (dayz_clientPreload && dayz_authed) exitWith { diag_log "PLOGIN: Login loop completed!"; };
+           if (dayz_clientPreload && dayz_authed) exitWith { 
+					diag_log "PLOGIN: Login loop completed!"; 
+					endLoadingScreen;
+				 };
             if (!isNil "_display") then {
                 if ( isNull _display ) then {
                         waitUntil { !dialog; };
