@@ -574,6 +574,9 @@ if(isNil "dayz_spawnAirCount") then {
 if(isNil "dayz_zedsAttackVehicles") then {
 	dayz_zedsAttackVehicles = true;
 };
+if (isNil "DZE_slowZombies") then {
+	DZE_slowZombies = false;
+};
 
 // update objects
 dayz_updateObjects = ["Plane","Tank","Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "VaultStorage","LockboxStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ","Scaffolding_DZ"];
