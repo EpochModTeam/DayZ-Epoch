@@ -472,7 +472,8 @@ class FSM
        "" \n
        "//Move to target" \n
        "_agent moveTo _targetPos;" \n
-       "_agent forceSpeed 10;" \n
+       "_speed = if (!isNil "DZE_slowZombies" && {DZE_slowZombies}) then { 2 } else { 10 };
+       "_agent forceSpeed _speed;" \n
        "" \n
        "if (_losCheck == 2) then {" \n
        "	_losCheck = 0;" \n
