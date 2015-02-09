@@ -43,7 +43,6 @@ if (_isWoman && (_type in ["scream","panic","cough"])) then {
 	_type = _type + "_w";
 };
 
-
 if ((round(random _chance) == _chance) || (_chance == 0)) then {
 	_rnd =(round(random _num));
 	_sound = "z_" + _type + "_" + str(_rnd);
