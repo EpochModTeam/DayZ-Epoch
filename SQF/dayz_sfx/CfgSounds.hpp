@@ -145,6 +145,21 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\cough_2.ogg",0.3,1,40};
 		titles[] = {};
 	};
+	class z_cough_w_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\cough_0.ogg",0.5,1.5,40};
+		titles[] = {};
+	};
+	class z_cough_w_1 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\cough_1.ogg",0.4,1.5,40};
+		titles[] = {};
+	};
+	class z_cough_w_2 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\cough_2.ogg",0.3,1.5,40};
+		titles[] = {};
+	};
 	class z_bandage_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\bandage_0.ogg",0.3,1,40};
