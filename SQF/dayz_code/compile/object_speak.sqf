@@ -39,7 +39,7 @@ if (count _this > 4) then {
 };
 
 _isWoman = getText(configFile >> "cfgVehicles" >> (typeOf _unit) >> "TextPlural") == "Women";
-if (_isWoman && (_type in ["scream","panic"])) then {
+if (_isWoman && (_type in ["scream","panic","cough"])) then {
 	_type = _type + "_w";
 };
 
