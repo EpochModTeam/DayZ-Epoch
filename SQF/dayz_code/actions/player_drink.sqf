@@ -48,31 +48,26 @@ if (["ItemSoda",_itemorignal] call fnc_inString) then {
     [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 };
 
-if (_hasoutput) then{
-	_itemtodrop = drink_output select(drink_with_output find _itemorignal);
+if (_hasoutput) then {
+	// Selecting output
+	_itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
 	if (!_invehicle) then {
-		// Selecting output
-		_itemtodrop = drink_output select (drink_with_output find _itemorignal);
-
 		sleep 3;
-		_nearByPile= nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
-		if (count _nearByPile ==0) then {
+		_nearByPile = nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
+		if (count _nearByPile == 0) then {
 			_iPos = getPosATL player;
 			_radius = 0.0;
 			_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-			_item setposATL _iPos;
+			_item setPosATL _iPos;
 		} else {
 			_item = _nearByPile select 0;
 		};
 		_item addMagazineCargoGlobal [_itemtodrop,1];
-	};
-
-	if (_invehicle) then {
+	} else {
 		sleep 2;
 		(vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
 	};
-
 };
 
 //add infection chance for "ItemWaterbottle",

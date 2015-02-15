@@ -4804,7 +4804,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 1 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidáno 1 10oz zlata</Czech> -->
+      <Czech>Přidat 1 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_198">
       <Original>Add 10 10oz Silver</Original>
@@ -4814,7 +4814,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 10 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidáno 10 10oz zlata</Czech> -->
+      <Czech>Přidat 10 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_199">
       <Original>Add 9 10oz Silver</Original>
@@ -4824,7 +4824,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 9 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidáno 9 10oz zlata</Czech> -->
+      <Czech>Přidat 9 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_200">
       <Original>Remove 1 10oz Silver</Original>
@@ -4834,7 +4834,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Verwijder 1 10oz Goud</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Odebráno 1 10oz zlato</Czech> -->
+      <Czech>Odebráno 1 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_202">
       <Original>Add 8 10oz Silver</Original>
@@ -4844,7 +4844,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 8 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidáno 8 10oz zlata</Czech> -->
+      <Czech>Přidat 8 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_203">
       <Original>Add 7 10oz Silver</Original>
@@ -4854,7 +4854,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 7 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidáno 7 10oz zlata</Czech> -->
+      <Czech>Přidat 7 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_204">
       <Original>Add 6 10oz Silver</Original>
@@ -4864,7 +4864,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 6 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidáno 6 10oz zlata</Czech> -->
+      <Czech>Přidat 6 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_205">
       <Original>Add 5 10oz Silver</Original>
@@ -4874,7 +4874,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 5 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidáno 5 10oz zlata</Czech> -->
+      <Czech>Přidat 5 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_206">
       <Original>Add 4 10oz Silver</Original>
@@ -4884,7 +4884,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 4 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidat 4 10oz zlata</Czech> -->
+      <Czech>Přidat 4 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_207">
       <Original>Add 3 10oz Silver</Original>
@@ -4894,7 +4894,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 3 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Prodat 3 10oz zlata</Czech> -->
+      <Czech>Přidat 3 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_208">
       <Original>Add 2 10oz Silver</Original>
@@ -4904,7 +4904,7 @@
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 2 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
-      <!-- <Czech>Přidat 2 10oz zlata</Czech> -->
+      <Czech>Přidat 2 10oz stříbra</Czech>
     </Key>
 		<Key ID="STR_EPOCH_PLAYER_209">
 			<Original>Open %1</Original>
@@ -5244,7 +5244,7 @@
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Creëer houten vloer 1/2</Dutch>
 			<!-- <French></French> -->
-			<Czech>Vytvořit Poloviční dřevěnou podlahu</Czech>
+			<Czech>Vytvořit 1/2 dřevěné podlahy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_233">
 			<Original>Craft Stair Supports</Original>
@@ -5444,7 +5444,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<Czech>Vytvořit Poloviční zeď</Czech>
+			<Czech>Vytvořit 1/2 zdi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<Original>Craft Garage Doorway</Original>
@@ -5994,7 +5994,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Skombinovat cihly</Czech>
 		</Key>
     <Key ID="STR_EPOCH_PLAYER_307">
 			<Original>Combined all bars in your inventory to highest denomination.</Original>
@@ -6004,7 +6004,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Skombinovány cihly ve vašem inventáři na maximum.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_308">
 			<Original>To driver's seat</Original>
@@ -6064,7 +6064,7 @@
 			<!-- <Spanish></Spanish> -->
 			<Dutch>\n\nVissen is niet mogelijk tijdens een conflictsituatie.</Dutch>
 			<French>\n\nVous ne pouvez pas pêcher pendant les combats.</French>
-			<Czech>Nemůžete ryby, když v boji.</Czech>
+			<Czech>\n\nNemůžete rybařit, když jste v boji.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 			<Original>Repair Vehicle</Original>
@@ -6224,7 +6224,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Vylepšení zbraně na vozidle</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_DESC">
 			<Original>Weapon install guide.</Original>
@@ -6234,7 +6234,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Návod na instalaci zbraně na vozidlo.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
 			<Original>Vehicle Upgrade Successful.</Original>
@@ -6774,7 +6774,7 @@
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Vous avez acheté %3 pour %1 %2, la clé a été ajoutée à votre ceinture.</French>
-			<Czech>Koupeno %3 za 1% 2%, klíč byl přidán do opasku na nářadí.</Czech>
+			<Czech>Koupeno %3 za %1 %2, klíč byl přidán do opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_12">
 			<Original>Missing %1 more of %2</Original>
@@ -6884,7 +6884,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Bedna zásob</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC">
 			<Original>12 x Random Item</Original>
@@ -6894,7 +6894,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Náhodných předmětů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_EMPTY">
 			<Original>Empty Supply Crate</Original>
@@ -6904,7 +6904,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Prázdná bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
 			<Original>6 x ItemSodaCoke</Original>
@@ -6914,7 +6914,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
 			<Original>12 x ItemSodaCoke</Original>
@@ -6924,7 +6924,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
 			<Original>6 x ItemSodaPepsi</Original>
@@ -6934,7 +6934,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
 			<Original>12 x ItemSodaPepsi</Original>
@@ -6944,7 +6944,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
 			<Original>6 x FoodbaconCooked</Original>
@@ -6954,7 +6954,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
 			<Original>12 x FoodbaconCooked</Original>
@@ -6964,7 +6964,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_G17">
 			<Original>12 x 17Rnd_9x19_glock17</Original>
@@ -6974,7 +6974,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x 17Rnd_9x19_glock17</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_M9SD">
 			<Original>12 x 15Rnd_9x19_M9SD</Original>
@@ -6984,7 +6984,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x 15Rnd_9x19_M9SD</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
 			<Original>12 x 30Rnd_9x19_MP5SD</Original>
@@ -6994,7 +6994,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x 30Rnd_9x19_MP5SD</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<Original>12 x SandBag</Original>
@@ -7004,7 +7004,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12 Pytlů s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
 			<Original>6 x Tank Trap</Original>
@@ -7014,7 +7014,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
 			<Original>12 x Tank Trap</Original>
@@ -7024,7 +7024,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
 			<Original>6 x Wire Kit</Original>
@@ -7034,7 +7034,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
 			<Original>12 x Wire Kit</Original>
@@ -7044,7 +7044,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
 			<Original>6 x Scrap Metal</Original>
@@ -7054,7 +7054,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>6x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<Original>12 x Scrap Metal</Original>
@@ -7064,7 +7064,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>12x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_ENTER">
 			<Original>Now entering %1</Original>
@@ -7074,7 +7074,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Vstoupili jste do %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_LEAVE">
 			<Original>Now leaving %1</Original>
@@ -7084,7 +7084,7 @@
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
-			<!-- <Czech></Czech> -->
+			<Czech>Opustili jste %1</Czech>
 		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
 			<Original>1.04</Original>

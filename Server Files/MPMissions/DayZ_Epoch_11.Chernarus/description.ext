@@ -2,10 +2,10 @@ respawn = "BASE";
 respawndelay = 5;
 onLoadMission= "DayZ Epoch Chernarus";
 OnLoadIntro = "Welcome to DayZ Epoch Chernarus";
-OnLoadIntroTime = False;
-OnLoadMissionTime = False;
+OnLoadIntroTime = false;
+OnLoadMissionTime = false;
 disabledAI = true;
-disableChannels[]={0,2,6};
+disableChannels[]= {0,2,6};
 enableItemsDropping = 0;
 
 briefing = 0;
@@ -18,7 +18,7 @@ class Header
 {
  gameType = COOP;            //DM, Team, Coop, ...
  minPlayers = 1;             //min # of players the mission supports
- maxPlayers = 100;            //Max # of players the mission supports
+ maxPlayers = 100;           //Max # of players the mission supports
 };
 
 aiKills = 1;

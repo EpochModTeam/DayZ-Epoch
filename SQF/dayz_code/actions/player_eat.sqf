@@ -48,26 +48,26 @@ if (dayz_lastMeal < 3600) then {
 	};
 };
 
-if (_hasoutput && !_invehicle) then {
-    // Selecting output
-    _itemtodrop = food_output select (food_with_output find _itemorignal);
+if (_hasoutput) then {
+	// Selecting output
+	_itemtodrop = food_output select (food_with_output find _itemorignal);
 
-    sleep 3;
-    _nearByPile= nearestObjects [(getposATL player), ["WeaponHolder","WeaponHolderBase"],2];
-    if (count _nearByPile ==0) then {
-        _iPos = getPosATL player;
-		_radius = 0.0;
-		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-		_item setposATL _iPos;
-    } else {
-        _item = _nearByPile select 0;
-    };
-    _item addMagazineCargoGlobal [_itemtodrop,1];
-};
-
-if (_hasoutput && _invehicle) then {
-	sleep 2;
-	(vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
+	if (!_invehicle) then {
+		sleep 3;
+		_nearByPile = nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
+		if (count _nearByPile == 0) then {
+			_iPos = getPosATL player;
+			_radius = 0.0;
+			_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+			_item setPosATL _iPos;
+		} else {
+			_item = _nearByPile select 0;
+		};
+		_item addMagazineCargoGlobal [_itemtodrop,1];
+	} else {
+		sleep 2;
+		(vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
+	};
 };
 
 if (_rawfood && !_rawexceptions && (random 15 < 1)) then {
