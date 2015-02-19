@@ -11,15 +11,9 @@ _btnAbort ctrlEnable false;
 _btnAbortText = ctrlText _btnAbort;
 _timeOut = 0;
 _timeMax = diag_tickTime+10;
-dayz_lastCheckBit = time;
-		
+
 // if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
 if(r_fracture_legs && !r_player_dead) then {_btnRespawn ctrlEnable true;};
-		
-//force gear save
-if (!r_player_dead && time - dayz_lastCheckBit > 10) then {
-	call dayz_forceSave;
-};			
 
 if (r_player_dead || (!alive player)) exitWith {_btnAbort ctrlEnable true; _btnAbort ctrlSetText _btnAbortText;};		
 _sleep = 1;
@@ -49,6 +43,7 @@ while {!isNull _display} do {
 			_sleep = 0.1;
 		};
 		default {
+			call dayz_forceSave;
 			_btnAbort ctrlEnable true;
 			_btnAbort ctrlSetText _btnAbortText;
 			cutText ["", "PLAIN DOWN"];	
