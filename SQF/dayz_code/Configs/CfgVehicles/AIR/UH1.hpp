@@ -17,7 +17,6 @@ class UH1Y_DZ: UH1_Base {
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
-	hiddenSelections[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
 	commanderCanSee = 2+16+32;
@@ -65,7 +64,6 @@ class UH1H_DZ: UH1H_base {
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
-	hiddenSelections[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
 	commanderCanSee = 2+16+32;
