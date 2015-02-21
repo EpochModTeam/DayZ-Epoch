@@ -17,7 +17,6 @@ class Mi17_DZ: Mi17_base	 {
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
-	hiddenSelections[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
 	commanderCanSee = 2+16+32;
