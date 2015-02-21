@@ -8,7 +8,6 @@ class AN2_DZ: An2_Base_EP1
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
-	hiddenSelections[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
 	weapons[] = {};
