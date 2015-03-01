@@ -29,7 +29,7 @@ if (typeName _objectID != "STRING" || typeName _uid != "STRING") then {
 if (!_parachuteWest && !locked _object) then {
 	if (_objectID == "0" && _uid == "0") then {
 		_object_position = getPosATL _object;
-    	_isNotOk = true;
+    		_isNotOk = true;
 	};
 };
 
@@ -64,7 +64,7 @@ _object_inventory = {
 	_previous = str (_object getVariable ["lastInventory", []]);
 	if (str _inventory != _previous) then {
 		_object setVariable ["lastInventory", _inventory];
-		_key = if (_objectID == "0") then { format ["CHILD:309:%1:", _uid] + str _inventory } else { format ["CHILD:303:%1:", _objectID] + str _inventory };
+		_key = if (_objectID == "0") then { format ["CHILD:309:%1:", _uid] + str _inventory + ":" } else { format ["CHILD:303:%1:", _objectID] + str _inventory + ":" };
 		_key call server_hiveWrite;
 	};
 };
@@ -84,7 +84,7 @@ _object_damage = {
 		_object setHit [_selection, _hit];
 	} count _hitpoints;
 
-	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage;
+	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage + ":";
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate", false, true];
 };
@@ -104,7 +104,7 @@ _object_killed = {
 		_object setHit [_selection, 1];
 	} count _hitpoints;
 
-	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage;
+	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage + ":";
 	_key call server_hiveWrite;
 
 	_object setVariable ["needUpdate", false, true];
@@ -140,7 +140,7 @@ _object_repair = {
 		_object setHit [_selection, _hit];
 	} count _hitpoints;
 
-	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage;
+	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage + ":";
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate", false, true];
 };
