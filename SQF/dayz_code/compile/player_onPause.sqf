@@ -31,7 +31,7 @@ while {!isNull _display} do {
 			cutText [localize "str_abort_playerclose", "PLAIN DOWN"];
 			_sleep = 1;
 		};
-		case (!r_player_dead && !canbuild) : {
+		case (!r_player_dead && isInTraderCity) : {
 			_btnAbort ctrlEnable false;
 			cutText [(localize "str_epoch_player_12"), "PLAIN DOWN"];
 			_sleep = 1;

@@ -75,7 +75,7 @@ while {1 == 1} do {
 		_distance = _lastpos distance _curpos;
 		_curtime = diag_ticktime;
 		_difftime = _curtime - _lasttime;
-		_acceptableDistance = if (_lastVehicle isKindOf "Plane") then { 15; } else { 10; };
+		_acceptableDistance = if (_lastVehicle isKindOf "Plane") then [{15},{10}];
 
 		if ((_distance > _acceptableDistance) || {(_difftime > 1)}) then {
 			_curheight = (ATLtoASL _curpos) select 2;

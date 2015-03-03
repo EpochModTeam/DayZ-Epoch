@@ -11,6 +11,7 @@ class UH60_Base: Helicopter {
 	magazines[] = {"60Rnd_CMFlareMagazine"};
 	lockDetectionSystem = "8 + 4";
 	incommingMisslieDetectionSystem = 0;
+	fuelCapacity = 2760;
 };
 class MH60S_DZ : UH60_Base {
 	crew = "";
@@ -247,14 +248,13 @@ class UH60M_base_EP1: UH60_Base {
 	icon = "\ca\air_e\data\UI\Icon_uh60m_CA.paa";
 	mapSize = 17;
 	class Library {
-		libTextDesc = "The Blackhawk is the US Army’s front-line utility helicopter used for transport roles, medical evacuation and even air support.<br />It is capable of carrying 11 combat-equipped soldiers. Easy to maintain in the field, the Blackhawk performs well in a variety of roles including air assault and medical evacuation.";
+		libTextDesc = "The Blackhawk is the US Armyï¿½s front-line utility helicopter used for transport roles, medical evacuation and even air support.<br />It is capable of carrying 11 combat-equipped soldiers. Easy to maintain in the field, the Blackhawk performs well in a variety of roles including air assault and medical evacuation.";
 	};
 	crew = "US_Soldier_Pilot_EP1";
 	typicalCargo[] = {"US_Soldier_Pilot_EP1","US_Soldier_Pilot_EP1"};
 	gunnerAction = "ManActTestDriver";
 	transportMaxBackpacks = 10;
 	transportSoldier = 13;
-	fuelCapacity = 600;
 	maxSpeed = 295;
 	mainRotorSpeed = 1.2;
 	backRotorSpeed = 6.1;

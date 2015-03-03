@@ -1,0 +1,22 @@
+RimBlocks basic MySQL DB backup.
+
+This batch (.bat) file will connect to your MySQL server and create a dump of the sql code required to recreate the DB you have selected.  mysqldump.exe has other options you can supply so you could talior the basic script fairly easily to fit your individual need.
+
+How to use Backup_DB.bat
+
+Input your DB connection details and desired backup save location.  All details that need changing are in []. Make the changes without the []. 
+
+e.g.
+SET mysqlschema=[Your DB schema name]
+may change to 
+SET mysqlschema=EpochDB
+
+SET BackupDir="[Where you want to save the backups]"
+May change to 
+SET BackupDir="c:\DB-Backups"
+
+Housekeeping will clear any .sql files that are over housekeepafter number of days old.
+
+You may need to confirm the MySQL path for the mysqldump exe as it may depend on your provider.
+
+Add "pause" (without "") at the end of the file to require an input for debugging.  This allows you to check the test backup is ok and troubleshoot any issues.  Remove it when automating or the .bat file will never close.  Automation can be done via Windows task scheduler.  Create a basic task and then edit the tasks parameters after creating if you want to backup more than once a day.  The option is only available after the task is created.

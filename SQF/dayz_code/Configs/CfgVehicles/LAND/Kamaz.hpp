@@ -24,5 +24,5 @@ class KamazRefuel_DZ: KamazRefuel {
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportFuel = 0;
-	fuelCapacity = 10000;
+	fuelCapacity = 10400;
 };

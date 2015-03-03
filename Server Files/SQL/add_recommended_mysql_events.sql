@@ -46,12 +46,12 @@ BEGIN
 		AND `Object_DATA`.`CharacterID` <= 12500
 		AND `Object_DATA`.`Classname` NOT LIKE 'Tent%'
 		AND `Object_DATA`.`Classname` NOT LIKE '%Locked'
-		AND `Object_DATA`.`Classname` NOT LIKE 'Land%'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Land\_%' -- added escape character so LandRover vehicles are not ignored
 		AND `Object_DATA`.`Classname` NOT LIKE 'Cinder%'
 		AND `Object_DATA`.`Classname` NOT LIKE 'Wood%'
 		AND `Object_DATA`.`Classname` NOT LIKE 'Metal%'
 		AND `Object_DATA`.`Classname` NOT LIKE '%Storage%'
-		AND `Object_DATA`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ')
+		AND `Object_DATA`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'DesertLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
 		AND FindVehicleKeysCount(Object_DATA.CharacterID) = 0;
 
 	RETURN ROW_COUNT();
@@ -118,12 +118,12 @@ CREATE EVENT `UnlockNonKeyVehicles` ON SCHEDULE EVERY 1 DAY DO UPDATE
 			AND `Object_DATA`.`CharacterID` <= 12500
 			AND `Object_DATA`.`Classname` NOT LIKE 'Tent%'
 			AND `Object_DATA`.`Classname` NOT LIKE '%Locked'
-			AND `Object_DATA`.`Classname` NOT LIKE 'Land%'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Land\_%' -- added escape character so LandRover vehicles are not ignored
 			AND `Object_DATA`.`Classname` NOT LIKE 'Cinder%'
 			AND `Object_DATA`.`Classname` NOT LIKE 'Wood%'
 			AND `Object_DATA`.`Classname` NOT LIKE 'Metal%'
 			AND `Object_DATA`.`Classname` NOT LIKE '%Storage%'
-			AND `Object_DATA`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ')
+			AND `Object_DATA`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'DesertLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
 			AND FindVehicleKeysCount(Object_DATA.CharacterID) = 0
 ;;
 DELIMITER ;

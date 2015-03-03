@@ -1,4 +1,4 @@
-private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_tagSetting","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_playerObjName","_wpnType","_ismelee"];
+private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_tagSetting","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_playerObjName","_wpnType","_ismelee","_oldGroup"];
 if (gear_done) then {disableUserInput true;};
 _class 			= _this;
 _position 		= getPosATL player;
@@ -16,11 +16,11 @@ _primweapon	= primaryWeapon player;
 _secweapon	= secondaryWeapon player;
 
 if(!(_primweapon in _weapons) && _primweapon != "") then {
-	_weapons = _weapons + [_primweapon];
+	_weapons set [(count _weapons), _primweapon];
 };
 
 if(!(_secweapon in _weapons) && _secweapon != "") then {
-	_weapons = _weapons + [_secweapon];
+	_weapons set [(count _weapons), _secweapon];
 };
 
 //BackUp Backpack
@@ -43,6 +43,7 @@ player setPosATL dayz_spawnPos;
 
 //BackUp Player Object
 _oldUnit = player;
+_oldGroup = group player;
 
 /**********************************/
 //DONT USE player AFTER THIS POINT//
@@ -110,6 +111,7 @@ _switchUnit = {
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count  magazines _oldUnit;
 	deleteVehicle _oldUnit;
+	if (count units _oldGroup < 1) then {deleteGroup _oldGroup;};
 	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 };
 //Add && Fill BackPack

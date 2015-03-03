@@ -9,4 +9,5 @@ class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 150;
 	transportmaxbackpacks = 5;
+	fuelCapacity = 3222;
 };

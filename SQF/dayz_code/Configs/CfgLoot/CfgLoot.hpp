@@ -26,6 +26,8 @@ class CfgLoot {
 		,{"FoodBioMeat",0.01}
 		,{"8Rnd_9x18_MakarovSD",0.01}
 		,{"ItemDocument",0.03}
+		,{"RedRyder",0.06}
+		,{"350Rnd_BB_Magazine",0.07}
 	};
 	office2[] = {
 		{"FoodCanUnlabeled",0.07}
@@ -47,6 +49,7 @@ class CfgLoot {
 		,{"8Rnd_9x18_MakarovSD",0.01}
 		,{"ItemBriefcaseEmpty",0.01}
 		,{"ItemDocument",0.02}
+		,{"350Rnd_BB_Magazine",0.09}
 	};
 	food[] = {
 		{"TrashTinCan",0.09}
@@ -84,6 +87,7 @@ class CfgLoot {
 		,{"8Rnd_9x18_Makarov",0.08}
 		,{"15Rnd_W1866_Slug",0.02}
 		,{"WoodenArrow",0.04}
+		,{"350Rnd_BB_Magazine",0.05}
 		,{"HandRoadFlare",0.07}
 		,{"ItemPainkiller",0.02}
 		,{"HandChemGreen",0.01}
@@ -115,12 +119,14 @@ class CfgLoot {
 		,{"8Rnd_9x18_Makarov",0.09}
 		,{"15Rnd_W1866_Slug",0.02}
 		,{"WoodenArrow",0.04}
+		,{"350Rnd_BB_Magazine",0.05}
 		,{"HandRoadFlare",0.07}
 		,{"ItemPainkiller",0.02}
 		,{"HandChemGreen",0.01}
 		,{"HandChemBlue",0.03}
 		,{"HandChemRed",0.03}
 		,{"ItemHeatPack",0.04}
+		,{"350Rnd_BB_Magazine",0.09}
 	};
 	medical[] = {
 		{"ItemBandage",0.4}
@@ -247,11 +253,14 @@ class CfgLoot {
 		,{"10x_303",0.1}
 		,{"ItemWaterbottleUnfilled",0.05}
 		,{"WoodenArrow",0.2}
+		,{"350Rnd_BB_Magazine",0.05}
 		,{"ItemHeatPack",0.02}
 		,{"FoodMRE",0.01}
 		,{"FoodNutmix",0.02}
 		,{"ItemDocument",0.01}
 		,{"ItemMixOil",0.01}
+		,{"RedRyder",0.06}
+		,{"350Rnd_BB_Magazine",0.09}
 	};
 	worker[] = {
 		{"FoodCanUnlabeled",0.09}
@@ -369,6 +378,7 @@ class CfgLoot {
 		,{"Saiga12K",0.13}
 		,{"Remington870_lamp",0.1}
 		,{"Crossbow_DZ",0.07}
+		,{"RedRyder",0.06}
 		,{"M1014",0.05}
 	};
 	farmweapons[] = {
@@ -378,8 +388,10 @@ class CfgLoot {
 		,{"Saiga12K",0.13}
 		,{"Remington870_lamp",0.1}
 		,{"Crossbow_DZ",0.07}
+		,{"RedRyder",0.06}
 		,{"huntingrifle",0.05}
 		,{"Chainsaw",0.01}
+		,{"RedRyder",0.06}
 	};
 	sniperrifles[] = {
 		{"AK_107_PSO",0.1}

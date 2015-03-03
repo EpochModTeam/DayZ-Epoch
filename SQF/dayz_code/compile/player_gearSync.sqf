@@ -1,5 +1,5 @@
 private ["_objects"];
-_objects = nearestObjects [getPosATL player, dayz_updateObjects, 10];
+_objects = nearestObjects [player, dayz_updateObjects, 10];
 {
 	//["PVDZE_veh_Update",[_x,"gear"]] call callRpcProcedure;
 	PVDZE_veh_Update = [_x,"gear"];

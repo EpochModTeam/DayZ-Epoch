@@ -1666,6 +1666,8 @@ class CfgMagazines {
 
 	#include "CfgMagazines\MeleeSwing.hpp"
 
+	#include "CfgMagazines\Planting.hpp"
+
 	class HandGrenade_Stone;
 	class ItemTrashToiletpaper : HandGrenade_Stone {
 		scope = public;
@@ -1705,6 +1707,15 @@ class CfgMagazines {
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemCanvas",1}};
+				input[] = {{"ItemKiloHemp",1}};
+			};
+			class Crafting1
+			{
+				text = "Craft Hemp Seeds";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				neednearby[] = {""};
+				requiretools[] = {"ItemKnife"};
+				output[] = {{"ItemHempSeed",5}};
 				input[] = {{"ItemKiloHemp",1}};
 			};
 		};
