@@ -15,7 +15,8 @@ class Mission
 		"csj_gyroac",
 		"map_eu",
 		"jetskiyanahuiaddon",
-		"pook_h13"
+		"pook_h13",
+		"redryder"
 	};
 	addOnsAuto[]=
 	{

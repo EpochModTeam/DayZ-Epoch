@@ -19,7 +19,8 @@ class Mission
 		"csj_gyroac",
 		"map_eu",
 		"jetskiyanahuiaddon",
-		"warfarebuildings"
+		"warfarebuildings",
+		"redryder"
 	};
 	addOnsAuto[]=
 	{
