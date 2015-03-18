@@ -840,7 +840,7 @@ class CfgVehicles {
 		displayName = "Bag fence (Round)";
 		vehicleClass = "Fortifications";
 		constructioncount = 3;
-		removeoutput[] = {{"ItemSandbag",1}};
+		removeoutput[] = {{"BagFenceRound_DZ_kit",1}};
 		nounderground = 0;
 	};
 
