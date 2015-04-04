@@ -39,10 +39,9 @@ if (count _this > 4) then {
 };
 
 _isWoman = getText(configFile >> "cfgVehicles" >> (typeOf _unit) >> "TextPlural") == "Women";
-if (_isWoman && (_type in ["scream","panic"])) then {
+if (_isWoman && (_type in ["scream","panic","cough"])) then {
 	_type = _type + "_w";
 };
-
 
 if ((round(random _chance) == _chance) || (_chance == 0)) then {
 	_rnd =(round(random _num));
