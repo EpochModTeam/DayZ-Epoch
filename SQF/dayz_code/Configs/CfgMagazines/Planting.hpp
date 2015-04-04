@@ -75,7 +75,6 @@ class ItemHempSeed: CA_Magazine {
 class ItemHempPlant: CA_Magazine {
 	scope = public;
 	count = 1;
-	type = 256;
 	displayName = "A Hemp Plant";
 	descriptionShort = "A Hemp Plant";
 	weight = 0.1;
