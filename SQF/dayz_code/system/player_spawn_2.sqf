@@ -206,11 +206,10 @@ while {true} do {
 	//Save Checker
 	if (dayz_unsaved) then {
 		if ((time - dayz_lastSave) > DZE_SaveTime) then {
-			PVDZE_plr_Save = [player,dayz_Magazines,false,false];
+			PVDZE_plr_Save = [player,magazines player,false,false];
 			publicVariableServer "PVDZE_plr_Save";
 			dayz_unsaved = false;
 			dayz_lastSave = time;
-			dayz_Magazines = [];
 		};
 	};
 
