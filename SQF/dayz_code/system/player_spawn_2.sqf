@@ -206,7 +206,7 @@ while {true} do {
 	//Save Checker
 	if (dayz_unsaved) then {
 		if ((time - dayz_lastSave) > DZE_SaveTime) then {
-			_dayzMags = if (count dayz_Magazines > 0) then {dayz_Magazines} else {magazines player};
+			_dayzMags = if (!isNil "dayz_Magazines" && {typeName dayz_Magazines} == "ARRAY" && {count dayz_Magazines > 0}) then {dayz_Magazines} else {magazines player};
 			PVDZE_plr_Save = [player,_dayzMags,false,false];
 			publicVariableServer "PVDZE_plr_Save";
 			dayz_unsaved = false;
