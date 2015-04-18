@@ -20,4 +20,4 @@ Important Note: On some Windows systems you may need to "UnBlock" the dll files.
 
 3. Connect to your mysql server using naicat or phpmyadmin and import the epoch.sql file found in the SQL folder. This will drop and re-add the traders tables and will leave everything else intact.
 
-4. Inside the "Keys" folder on your server remove any previous day_epoch*.bikey keys. As of 1.0.5.2 our bikey is called dayz_epoch1052.bikey and we will use a new one for each release.
+4. Inside the "Keys" folder on your server remove any previous day_epoch*.bikey keys. As of 1.0.6 our bikey is called dayz_epoch106.bikey and we will use a new one for each release.
