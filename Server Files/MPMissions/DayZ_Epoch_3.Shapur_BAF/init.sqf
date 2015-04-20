@@ -62,11 +62,14 @@ if (isServer) then {
 	
 	//Compile vehicle configs
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_3.Shapur_BAF\dynamic_vehicle.sqf";				
-	// Add trader citys
+	// Add trader agents on server
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_3.Shapur_BAF\mission.sqf";
 	
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
+
+// Add trader city objects locally on each machine
+_nil = [] execVM "\z\addons\dayz_code\compile\missions\DayZ_Epoch_3.Shapur_BAF\mission.sqf";
 
 if (!isDedicated) then {
 	//Conduct map operations
