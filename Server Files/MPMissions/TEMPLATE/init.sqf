@@ -60,10 +60,13 @@ if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
 	//Compile vehicle configs
 	
-	// Add trader citys
+	// Add trader agents on server
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
+
+// Add trader city objects locally on each machine
+_nil = [] execVM "\z\addons\dayz_code\compile\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
 
 if (!isDedicated) then {
 	//Conduct map operations
