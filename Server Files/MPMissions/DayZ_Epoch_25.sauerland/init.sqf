@@ -63,11 +63,14 @@ progressLoadingScreen 1.0;
 if (isServer) then {
 	//Compile vehicle configs
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_25.sauerland\dynamic_vehicle.sqf";				
-	// Add trader citys
+	// Add trader agents on server
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_25.sauerland\mission.sqf";
 
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
+
+// Add trader city objects locally on each machine
+_nil = [] execVM "\z\addons\dayz_code\compile\missions\DayZ_Epoch_25.sauerland\mission.sqf";
 
 if (!isDedicated) then {
 	//Conduct map operations
