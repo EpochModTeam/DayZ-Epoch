@@ -69,7 +69,7 @@ if (isServer) then {
 };
 
 // Add trader city objects locally on each machine
-_nil = [] execVM "\z\addons\dayz_code\compile\missions\DayZ_Epoch_17.Chernarus\mission.sqf";
+_nil = [] execVM "\z\addons\dayz_code\compile\missions\DayZ_Epoch_3.Shapur_BAF\mission.sqf";
 
 if (!isDedicated) then {
 	//Conduct map operations
