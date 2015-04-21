@@ -58,6 +58,9 @@ progressLoadingScreen 1.0;
 
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
+// Add trader city objects locally on each machine first
+_nil = [] execVM "\z\addons\dayz_code\compile\missions\DayZ_Epoch_18.Sara\mission.sqf";
+
 if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_18.Sara\dynamic_vehicle.sqf";
 	//Compile vehicle configs
@@ -66,9 +69,6 @@ if (isServer) then {
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_18.Sara\mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
-
-// Add trader city objects locally on each machine
-_nil = [] execVM "\z\addons\dayz_code\compile\missions\DayZ_Epoch_18.Sara\mission.sqf";
 
 if (!isDedicated) then {
 	//Conduct map operations
