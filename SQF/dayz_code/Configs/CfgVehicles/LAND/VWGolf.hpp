@@ -504,7 +504,8 @@ class VWGolf_DZE1: VWGolf {
 
 // Armor 2
 class VWGolf_DZE2: VWGolf_DZE1 {
-	armor = 50; // car 20
+	armor = 55; // car 20
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;

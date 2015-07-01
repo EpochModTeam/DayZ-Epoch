@@ -219,7 +219,7 @@ class UAZ_Unarmed_TK_CIV_EP1_DZE1: UAZ_Unarmed_TK_CIV_EP1 {
 
 // Armor 2
 class UAZ_CDF_DZE2: UAZ_CDF_DZE1 {
-	armor = 100; // UAZ 40
+	armor = 75; // UAZ 40
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
@@ -267,7 +267,7 @@ class UAZ_CDF_DZE2: UAZ_CDF_DZE1 {
 	};
 };
 class UAZ_INS_DZE2: UAZ_INS_DZE1 {
-	armor = 100; // UAZ 40
+	armor = 75; // UAZ 40
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
@@ -315,7 +315,7 @@ class UAZ_INS_DZE2: UAZ_INS_DZE1 {
 	};
 };
 class UAZ_RU_DZE2: UAZ_RU_DZE1 {
-	armor = 100; // UAZ 40
+	armor = 75; // UAZ 40
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
@@ -363,7 +363,7 @@ class UAZ_RU_DZE2: UAZ_RU_DZE1 {
 	};
 };
 class UAZ_Unarmed_TK_EP1_DZE2: UAZ_Unarmed_TK_EP1_DZE1 {
-	armor = 100; // UAZ 40
+	armor = 75; // UAZ 40
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
@@ -411,7 +411,7 @@ class UAZ_Unarmed_TK_EP1_DZE2: UAZ_Unarmed_TK_EP1_DZE1 {
 	};
 };
 class UAZ_Unarmed_UN_EP1_DZE2: UAZ_Unarmed_UN_EP1_DZE1 {
-	armor = 100; // UAZ 40
+	armor = 75; // UAZ 40
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
@@ -459,7 +459,7 @@ class UAZ_Unarmed_UN_EP1_DZE2: UAZ_Unarmed_UN_EP1_DZE1 {
 	};
 };
 class UAZ_Unarmed_TK_CIV_EP1_DZE2: UAZ_Unarmed_TK_CIV_EP1_DZE1 {
-	armor = 100; // UAZ 40
+	armor = 75; // UAZ 40
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
@@ -511,7 +511,7 @@ class UAZ_Unarmed_TK_CIV_EP1_DZE2: UAZ_Unarmed_TK_CIV_EP1_DZE1 {
 class UAZ_CDF_DZE3: UAZ_CDF_DZE2 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50
-    transportmaxbackpacks = 4; // car 2
+    transportmaxbackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
 		ItemTNK[] = {"UAZ_CDF_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
@@ -520,7 +520,7 @@ class UAZ_CDF_DZE3: UAZ_CDF_DZE2 {
 class UAZ_INS_DZE3: UAZ_INS_DZE2 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50
-    transportmaxbackpacks = 4; // car 2
+    transportmaxbackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
 		ItemTNK[] = {"UAZ_INS_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
@@ -529,7 +529,7 @@ class UAZ_INS_DZE3: UAZ_INS_DZE2 {
 class UAZ_RU_DZE3: UAZ_RU_DZE2 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50
-    transportmaxbackpacks = 4; // car 2
+    transportmaxbackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
 		ItemTNK[] = {"UAZ_RU_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
@@ -538,7 +538,7 @@ class UAZ_RU_DZE3: UAZ_RU_DZE2 {
 class UAZ_Unarmed_TK_EP1_DZE3: UAZ_Unarmed_TK_EP1_DZE2 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50
-    transportmaxbackpacks = 4; // car 2
+    transportmaxbackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
 		ItemTNK[] = {"UAZ_Unarmed_TK_EP1_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
@@ -547,7 +547,7 @@ class UAZ_Unarmed_TK_EP1_DZE3: UAZ_Unarmed_TK_EP1_DZE2 {
 class UAZ_Unarmed_UN_EP1_DZE3: UAZ_Unarmed_UN_EP1_DZE2 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50
-    transportmaxbackpacks = 4; // car 2
+    transportmaxbackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
 		ItemTNK[] = {"UAZ_Unarmed_UN_EP1_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
@@ -556,7 +556,7 @@ class UAZ_Unarmed_UN_EP1_DZE3: UAZ_Unarmed_UN_EP1_DZE2 {
 class UAZ_Unarmed_TK_CIV_EP1_DZE3: UAZ_Unarmed_TK_CIV_EP1_DZE2 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50
-    transportmaxbackpacks = 4; // car 2
+    transportmaxbackpacks = 9; // car 2, UAZ 7
 
 	class Upgrades {
 		ItemTNK[] = {"UAZ_Unarmed_TK_CIV_EP1_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};

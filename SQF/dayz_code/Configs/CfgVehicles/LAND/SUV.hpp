@@ -420,7 +420,8 @@ class SUV_Silver_DZE1: SUV_Silver {
 
 // Armor 2
 class SUV_TK_CIV_EP1_DZE2: SUV_TK_CIV_EP1_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -467,7 +468,8 @@ class SUV_TK_CIV_EP1_DZE2: SUV_TK_CIV_EP1_DZE1 {
 	};
 };
 class SUV_Camo_DZE2: SUV_Camo_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -514,7 +516,8 @@ class SUV_Camo_DZE2: SUV_Camo_DZE1 {
 	};
 };
 class SUV_Blue_DZE2: SUV_Blue_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -561,7 +564,8 @@ class SUV_Blue_DZE2: SUV_Blue_DZE1 {
 	};
 };
 class SUV_Green_DZE2: SUV_Green_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -608,7 +612,8 @@ class SUV_Green_DZE2: SUV_Green_DZE1 {
 	};
 };
 class SUV_Yellow_DZE2: SUV_Yellow_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -655,7 +660,8 @@ class SUV_Yellow_DZE2: SUV_Yellow_DZE1 {
 	};
 };
 class SUV_Red_DZE2: SUV_Red_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -702,7 +708,8 @@ class SUV_Red_DZE2: SUV_Red_DZE1 {
 	};
 };
 class SUV_White_DZE2: SUV_White_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -749,7 +756,8 @@ class SUV_White_DZE2: SUV_White_DZE1 {
 	};
 };
 class SUV_Pink_DZE2: SUV_Pink_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -796,7 +804,8 @@ class SUV_Pink_DZE2: SUV_Pink_DZE1 {
 	};
 };
 class SUV_Charcoal_DZE2: SUV_Charcoal_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -843,7 +852,8 @@ class SUV_Charcoal_DZE2: SUV_Charcoal_DZE1 {
 	};
 };
 class SUV_Orange_DZE2: SUV_Orange_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
@@ -890,7 +900,8 @@ class SUV_Orange_DZE2: SUV_Orange_DZE1 {
 	};
 };
 class SUV_Silver_DZE2: SUV_Silver_DZE1 {
-	armor = 50; // car 20
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
 			armor = 0.3;
