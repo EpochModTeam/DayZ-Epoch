@@ -56,6 +56,8 @@ _newUnit 	= _group createUnit [_class,dayz_spawnPos,[],0,"NONE"];
 _newUnit 	setPosATL _position;
 _newUnit 	setDir _dir;
 
+_newUnit setVariable ["DZE_display_name", _tagSetting, true];
+
 //Clear New Character
 {_newUnit removeMagazine _x;} count  magazines _newUnit;
 removeAllWeapons _newUnit;	
