@@ -1,6 +1,8 @@
 **DayZ Epoch**
 ================
 
+## This is the experimental beta branch
+
 Experimental DayZ mod 
 
 http://dayzepoch.com
