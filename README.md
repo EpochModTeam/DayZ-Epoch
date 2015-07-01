@@ -1,6 +1,10 @@
 **DayZ Epoch**
 ================
 
+#Production Branch
+
+This branch is current deployed game code.
+
 Experimental DayZ mod 
 
 http://dayzepoch.com
