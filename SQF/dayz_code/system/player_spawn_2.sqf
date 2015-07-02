@@ -1,4 +1,4 @@
-private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood","_wpnType"];
+private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood","_wpnType","_dayzMags"];
 disableSerialization;
 
 _messTimer = 0;
@@ -206,7 +206,8 @@ while {true} do {
 	//Save Checker
 	if (dayz_unsaved) then {
 		if ((time - dayz_lastSave) > DZE_SaveTime) then {
-			PVDZE_plr_Save = [player,dayz_Magazines,false,false];
+			_dayzMags = if (!isNil "dayz_Magazines" && {typeName dayz_Magazines == "ARRAY"} && {count dayz_Magazines > 0}) then {dayz_Magazines} else {magazines player};
+			PVDZE_plr_Save = [player,_dayzMags,false,false];
 			publicVariableServer "PVDZE_plr_Save";
 			dayz_unsaved = false;
 			dayz_lastSave = time;
