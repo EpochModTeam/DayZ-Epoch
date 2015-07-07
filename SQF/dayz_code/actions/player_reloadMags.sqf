@@ -13,6 +13,22 @@ _config =   configFile >> "CfgMagazines" >> _item;
 _consume =  getArray (_config >> "ItemActions" >> "ReloadMag" >> "use") select 0;
 _create =   getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") select 0;
 
+// EDIT by seb3sec: vil-ammo-dupe-fix
+switch (_item) do {
+    case "vil_20Rnd_762x51_SG": {
+        _consume = "vil_20Rnd_762x51_SG";
+    };
+    case "vil_30Rnd_762x51_SG": {
+        _consume = "vil_30Rnd_762x51_SG";
+    };
+    case "vil_20Rnd_762x51_G3": {
+        _consume = "vil_20Rnd_762x51_G3";
+    };
+};
+
+diag_log format ["reloadMag: %1, %2, %3", _item, _consume, _create];
+// EDIT END
+
 _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
 
 //add check if weapon can use create (if not - show message)
