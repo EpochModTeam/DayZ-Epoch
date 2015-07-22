@@ -224,10 +224,10 @@ if (_canDo) then {
 								if ((_x == "ItemSledge") && {_x in items player}) then {
 									_bag = unitBackpack player;
 									if (!isNull _bag) then {
-										cutText [format["Object [%1] is already in your inventory. Adding to backpack!",_x], "PLAIN"];
+										cutText [format[(localize "str_epoch_player_313"),_textCreate,_countOut], "PLAIN DOWN"];
 										_bag addWeaponCargoGlobal [_x,1];
 									} else {
-										cutText [format["Object [%1] is already in your inventory. Dropping on the ground!",_x], "PLAIN"];
+										cutText [format[(localize "str_epoch_player_314"),_textCreate,_countOut], "PLAIN DOWN"];
 										_object = createVehicle ["WeaponHolder",position player,[],0,"CAN_COLLIDE"];
 										_object setVariable ["permaLoot",true];
 										_object addWeaponCargoGlobal [_x,1];
