@@ -7,8 +7,7 @@ _TransfusionInfection = (_rndInfection < 1);
 if (_unit == player) then {
 	if (((count _this) > 1) && {(typeName (_this select 1)) == "ARRAY"}) then { //DO NOT TOUCH THE CODE BRACKETS!
 		_selfTransValues = _this select 1;
-		r_player_blood = r_player_blood + (_selfTransValues select 0);
-		if (r_player_blood > 12000) then {r_player_blood = 12000;};
+		r_player_blood = (r_player_blood + (_selfTransValues select 0)) max 12000;
 		if ((_selfTransValues select 1) < 0) then {
 			_TransfusionInfection = false;
 		} else {
