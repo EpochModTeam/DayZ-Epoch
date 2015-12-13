@@ -19,6 +19,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"RedRyder"};
 		requiredVersion = 1.00000;
+		requiredAddons[] = {};
 	};
 };
 class CfgModels
@@ -32,7 +33,7 @@ class CfgAmmo
 {
     class BulletBase;
 	class 177_BB : BulletBase {
-		model = "\z\addons\redryder\models\BB_Round.p3d";
+		model = "z\addons\redryder\models\BB_Round.p3d";
 		simulation = shotShell;
 		soundHit[] = {0, 1};
 		hit = 4.5;
@@ -56,13 +57,13 @@ class CfgMagazines
 	class 350Rnd_BB_Magazine : CA_Magazine 
 	{   
 		scope = 2;
-		model = "\z\addons\redryder\models\bb_magazine.p3d";	
-		picture = "\z\addons\redryder\textures\bb_magazine_picture.paa"; 
+		model = "z\addons\redryder\models\bb_magazine.p3d";	
+		picture = "z\addons\redryder\textures\bb_magazine_picture.paa"; 
 		displayName = "350 Count .177 BBs";
 		count = 350;
 		ammo = 177_BB;
 		initSpeed = 175;
-		sound[] = {"\z\addons\redryder\M9SD_S1", db + 8, 1,60}; 
+		sound[] = {"z\addons\redryder\M9SD_S1", db + 8, 1,60}; 
 		reloadMagazineSound[] = {"Ca\sounds\Weapons\rifles\M1014-reload", db - 40, 1, 20};
 		descriptionShort = "350 Zinc Coated .177, 4.5mm BBs";
 		weight = 0.2;
@@ -91,7 +92,7 @@ class CfgWeapons
 		midRangeProbab = 0.7;
 		maxRange = 75;
 		maxRangeProbab = 0.05;
-		picture = "\z\addons\redryder\textures\redryder_picture.paa"; 
-		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\M24.rtm"};
+		picture = "z\addons\redryder\textures\redryder_picture.paa"; 
+		handAnim[] = {"OFP2_ManSkeleton", "Ca\weapons\data\Anim\M24.rtm"};
 	};
 };
