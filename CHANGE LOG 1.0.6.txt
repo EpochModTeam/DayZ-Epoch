@@ -37,8 +37,9 @@
 [UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 [UPDATED] mission.sqm to compact format from DayZ Mod 1.8.3 @ebaydayz
 
+
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
-[INFO] (EXTREMELY IMPORTANT) Server owners MUST update their required build and beta to 125548
+[INFO] (EXTREMELY IMPORTANT) Server owners MUST update their required build and beta to 131129
 [INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
