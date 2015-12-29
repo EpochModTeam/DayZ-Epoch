@@ -6,6 +6,7 @@
 [NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
 [NEW] Modular/Function based player_build for addon makers and modders. @raymix (more info and concepts - http://epochmod.com/forum/index.php?/topic/14628-modular-function-based-player-buildsqf/ )
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
+[NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
@@ -36,6 +37,7 @@
 [UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 [UPDATED] mission.sqm to compact format from DayZ Mod 1.8.3 @ebaydayz
 
+[INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
 [INFO] (EXTREMELY IMPORTANT) Server owners MUST update their required build and beta to 125548
 [INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
 [INFO] Models/textures by Paul Tomany. @Sequisha.

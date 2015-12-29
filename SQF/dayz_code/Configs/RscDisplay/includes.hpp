@@ -1,3 +1,4 @@
+#include "RscLobby.hpp"
 #include "RscDisplayCraftingMenu.hpp"
 //#include "RscDisplayGear.hpp"
 #include "RscDisplayGenderSelect.hpp"

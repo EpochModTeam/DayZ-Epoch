@@ -8,6 +8,11 @@ disabledAI = 1;
 disableChannels[]={0,2,6};
 enableItemsDropping = 0;
 
+titleParam1 = "AutoLogin:";
+valuesParam1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 31};
+defValueParam1 = 10; //auto login time limit in seconds, set value to 31 to disable auto login
+textsParam1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, "Disabled"};
+
 briefing = 0;
 debriefing = 0;
 

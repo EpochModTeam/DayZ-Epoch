@@ -7125,5 +7125,13 @@
 			<French>Délai de connexion dépassé\nVeuillez vous déconnecter et essayer à nouveau.</French>
 			<Czech>Dovolený čas pro přihlášení vypršel.\nOdpojte se a zkuste to znovu!</Czech>
 		</Key>
+		<Key ID="str_autojoin_warning">
+			<English>You will auto-join the game in %1 seconds. Press ESC to cancel and leave the lobby</English>
+			<German>Sie werden automatisch in das Spiel in %1 Sekunden. Drücken Sie ESC, um den Vorgang abzubrechen und lassen Sie die Lobby</German>
+			<Russian>Вы автоматически присоединиться к игре в %1 секунд. Нажмите клавишу ESC, чтобы отменить и оставить в лобби</Russian>
+			<Spanish>Va a auto-unirse al juego en %1 segundos. Presione ESC para cancelar y dejar el vestíbulo</Spanish>
+			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall</French>
+			<Czech>Budete auto-zapojit do hry za %1 sekund. Stisknutím klávesy ESC zrušit a nechat lobby</Czech>
+		</Key>
 	</Package>
 </Project>
