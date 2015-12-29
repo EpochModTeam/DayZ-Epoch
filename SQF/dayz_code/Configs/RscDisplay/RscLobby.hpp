@@ -1,18 +1,3 @@
-class DZE_AutoJoinInfo: RscStandardDisplay
-{
-	idd = 6666;
-	movingEnable = 1;
-	class infoText: RscStructuredText
-	{
-		idc = 3;
-		x = 0.3625 * safezoneW + safezoneX;
-		y = 0.94 * safezoneH + safezoneY;
-		w = 0.228646 * safezoneW;
-		h = 0.0466666 * safezoneH;
-		colorText[] = {0.75,0.1,0.1,1};
-		colorBackground[] = {0,0,0,0.5};
-	};
-};
 class RscDisplayMultiplayerSetup: RscStandardDisplay
 {
 	idd = 70;
