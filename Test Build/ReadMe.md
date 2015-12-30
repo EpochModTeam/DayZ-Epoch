@@ -4,7 +4,7 @@
 To install You need to overwrite an installation of 1.0.5.1 with the included files
 These builds are NOT signed so you will need to check back frequently in order to ensure you are runnign the same version as the server
 
-Current Version: **1.0.6-Dec_13_2015**
+Current Version: **1.0.6-Dec_29_2015**
 
 --------------------------
 Test Server Information
