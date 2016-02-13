@@ -196,6 +196,7 @@ if (isNil "Dayz_Dark_UI") then {
 
 //Player self-action handles
 dayz_resetSelfActions = {
+	s_player_equip_carry =  -1;
 	s_player_fire =			-1;
 	s_player_cook =			-1;
 	s_player_boil =			-1;
@@ -288,6 +289,8 @@ r_action = 				false;
 r_action_unload = 		false;
 r_player_handler = 		false;
 r_player_handler1 = 	false;
+r_player_unconsciousInProgress = false;
+r_player_unconsciousInputDisabled = false;
 r_player_dead = 		false;
 r_player_unconscious = 	false;
 r_player_infected =		false;
@@ -452,6 +455,9 @@ dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any 
 dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 
+if(isNil "dayz_quickSwitch") then {
+	dayz_quickSwitch = false; //Enable quick weapon switch,
+};
 if(isNil "DZE_SelfTransfuse") then {
 	DZE_SelfTransfuse = false;
 };
@@ -749,7 +755,8 @@ if(!isDedicated) then {
 	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {
 	//	dayzDebug = true;
 	//};
-
+	dayz_onBack = "";
+	dayz_onBackActive = false;
 	DZE_ActionInProgress =		false;
 
 	// DayZ Epoch Client only variables
@@ -819,4 +826,5 @@ if(!isDedicated) then {
 	DZE_InRadiationZone = false;
 
 	DZE_SaveTime = 30;
+	Dayz_constructionContext = [];
 };

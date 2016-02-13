@@ -1086,7 +1086,6 @@ class FSM
       name = "Preload_Display";
       init = /*%FSM<STATEINIT""">*/"dayz_lastCheckBit = 0;" \n
        "" \n
-       "(findDisplay 46) displayAddEventHandler [""KeyDown"",""_this call dayz_spaceInterrupt""];" \n
        "player disableConversation true;" \n
        "" \n
        "eh_player_killed = player addeventhandler [""FiredNear"",{_this call player_weaponFiredNear;} ];" \n
@@ -1292,6 +1291,9 @@ class FSM
        "" \n
        "// TODO: questionably" \n
        "{ _x call fnc_veh_ResetEH; } count vehicles;" \n
+	   "diag_log [ 'resetting keyboard events',(MISSION_ROOT+'keyboard.sqf')];" \n
+       "keyboard_keys = nil;" \n
+       "[controlNull, 1, false,false,false] call compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');" \n
        "" \n
        "private[""_fadeFire""];" \n
        "{" \n

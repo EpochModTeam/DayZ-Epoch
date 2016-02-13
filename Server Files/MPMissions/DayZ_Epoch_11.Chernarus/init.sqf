@@ -26,6 +26,7 @@ enableSentences false;
 //--------------------------------------------------------------------//
 
 //Map & Player Spawn Variables
+dayz_enableRules = true;            // Default: true
 spawnShoremode = 1; 				// Default: 1 (on shore)
 spawnArea= 1500; 				// Default: 1500
 dayz_paraSpawn = false;				// Default: false
@@ -60,6 +61,7 @@ dayz_sellDistance_boat = 30;			// Default: 30
 dayz_sellDistance_air = 40;			// Default: 40
 
 //Player Variables
+dayz_quickSwitch = false;           // Default: false
 DZE_R3F_WEIGHT = true;				// Default: true
 DZE_FriendlySaving = true;			// Default: true
 DZE_PlayerZed = true;				// Default: true
@@ -105,6 +107,7 @@ EpochEvents = [
 ["any","any","any","any",15,"supply_drop"]
 ];
 
+MISSION_ROOT=toArray __FILE__;MISSION_ROOT resize(count MISSION_ROOT-8);MISSION_ROOT=toString MISSION_ROOT;
 //Load In Compiled Functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";		//Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.1;
@@ -143,6 +146,7 @@ if (!isDedicated) then {
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	if (dayz_enableRules) then { execVM "rules.sqf"; };
 };
 
 //Start Dynamic Weather

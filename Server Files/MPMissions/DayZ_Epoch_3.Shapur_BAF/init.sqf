@@ -20,6 +20,7 @@ enableRadio false;
 enableSentences false;
 
 // DayZ Epoch config
+dayz_enableRules = true; // Default: true
 spawnShoremode = 0; // Default = 1 (on shore)
 spawnArea= 250; // Default = 1500
 MaxHeliCrashes= 1; // Default = 5
@@ -38,12 +39,13 @@ dayz_maxAnimals = 5; // Default: 8
 dayz_tameDogs = true;
 DynamicVehicleDamageLow = 0; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
-
+dayz_quickSwitch = false; // Default: false
 DZE_BuildOnRoads = false; // Default: False
 
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 
+MISSION_ROOT=toArray __FILE__;MISSION_ROOT resize(count MISSION_ROOT-8);MISSION_ROOT=toString MISSION_ROOT;
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.1;
@@ -84,6 +86,7 @@ if (!isDedicated) then {
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	if (dayz_enableRules) then { execVM "rules.sqf"; };
 };
 #include "\z\addons\dayz_code\system\REsec.sqf"
 //Start Dynamic Weather
