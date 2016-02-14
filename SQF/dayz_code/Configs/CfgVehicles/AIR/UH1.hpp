@@ -30,10 +30,12 @@ class UH1Y_DZ: UH1_Base {
 	fuelCapacity = 1333;
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
-			magazines[] = {"2000Rnd_762x51_M134"};
+			weapons[] = {"M134"};
+    			magazines[] = {"2000Rnd_762x51_M134"};
 		};
 		class RightDoorGun : RightDoorGun {
-			magazines[] = {"2000Rnd_762x51_M134"};
+			weapons[] = {"M134"};
+    			magazines[] = {"2000Rnd_762x51_M134"};
 		};
 	};
 };
@@ -75,9 +77,11 @@ class UH1H_DZ: UH1H_base {
 	fuelCapacity = 1333;
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
+			weapons[] = {"M240"};
 			magazines[] = {"100Rnd_762x51_M240"};
 		};
 		class LeftDoorGun : LeftDoorGun {
+			weapons[] = {"M240"};
 			magazines[] = {"100Rnd_762x51_M240"};
 		};
 	};
