@@ -37,7 +37,7 @@ while {(diag_tickTime - _time) <= _timerStart} do {
 	_infoText ctrlSetTextColor [0.75,0.1,0.1,1];
 	uiSleep 1;
 };
-
+_infoText ctrlShow false;
 _infoText ctrlSetBackgroundColor [0,0,0,0];
-_infoText ctrlSetTextColor [0.75,0.1,0.1,0];
+_infoText ctrlSetTextColor [0,0,0,0];
 ctrlActivate (_dialog displayCtrl 1);
