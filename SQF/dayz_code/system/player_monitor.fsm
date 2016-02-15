@@ -654,6 +654,9 @@ class FSM
        "" \n
        "dayz_playerName = name player;" \n
        "_model call player_switchModel;" \n
+	   "diag_log [ 'resetting keyboard events',(MISSION_ROOT+'keyboard.sqf')];" \n
+       "keyboard_keys = nil;" \n
+       "[controlNull, 1, false,false,false] call compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');" \n
        "" \n
        "gear_done= true;" \n
        "player allowDamage false;" \n
@@ -1291,9 +1294,6 @@ class FSM
        "" \n
        "// TODO: questionably" \n
        "{ _x call fnc_veh_ResetEH; } count vehicles;" \n
-	   "diag_log [ 'resetting keyboard events',(MISSION_ROOT+'keyboard.sqf')];" \n
-       "keyboard_keys = nil;" \n
-       "[controlNull, 1, false,false,false] call compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');" \n
        "" \n
        "private[""_fadeFire""];" \n
        "{" \n

@@ -171,10 +171,12 @@ if (isNil "keyboard_keys") then {
         };
     };
     _journal = {
+		/*
         if (!dayz_isSwimming and !dialog) then {
             [player,4,true,(getPosATL player)] call player_alertZombies;
             createDialog "horde_journal_front_cover";
         };
+		*/
         _handled = true;
     };
 
