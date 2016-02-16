@@ -221,34 +221,38 @@ if (_canDo) then {
 								_craft_doLoop = false;
 							};
 							{
-								player addWeapon _x;
+								if ((_x == "ItemSledge") && {_x in items player}) then {
+									_bag = unitBackpack player;
+									if (!isNull _bag) then {
+										cutText [format[(localize "str_epoch_player_313"),_x], "PLAIN DOWN"];
+										_bag addWeaponCargoGlobal [_x,1];
+									} else {
+										cutText [format[(localize "str_epoch_player_314"),_x], "PLAIN DOWN"];
+										_object = createVehicle ["WeaponHolder",position player,[],0,"CAN_COLLIDE"];
+										_object setVariable ["permaLoot",true];
+										_object addWeaponCargoGlobal [_x,1];
+									};
+								} else {
+									player addWeapon _x;
+								};
 							} forEach _outputWeapons;
 							{
-
 								_itemOut = _x select 0;
 								_countOut = _x select 1;
-
 								if (_itemOut == "ItemWaterbottleUnfilled") then {
-
 									if (_waterLevel > 0) then {
 										_itemOut = format["ItemWaterbottle%1oz",_waterLevel];
 									};
-
 								};
-
 								// diag_log format["Checking for water level: %1", _waterLevel];
-
 								for "_x" from 1 to _countOut do {
 									player addMagazine _itemOut;
 								};
-
 								_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
-
 								// Add crafted item
 								cutText [format[(localize "str_epoch_player_150"),_textCreate,_countOut], "PLAIN DOWN"];
 								// sleep here
 								sleep 1;
-
 							} forEach _selectedRecipeOutput;
 
 							_tradeComplete = _tradeComplete+1;
@@ -257,7 +261,6 @@ if (_canDo) then {
 					} else {
 						// Refund parts since we failed
 						{player addMagazine _x; } forEach _temp_removed_array;
-
 						cutText [format[(localize "str_epoch_player_151"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 					};
 
