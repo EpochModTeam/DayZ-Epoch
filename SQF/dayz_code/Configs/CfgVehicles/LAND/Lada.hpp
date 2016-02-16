@@ -791,17 +791,17 @@ class Lada2_TK_CIV_EP1_DZE3: Lada2_TK_CIV_EP1_DZE2 {
 
 // Fuel 4
 class Lada1_DZE4: Lada1_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class Lada2_DZE4: Lada2_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class LadaLM_DZE4: LadaLM_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class Lada1_TK_CIV_EP1_DZE4: Lada1_TK_CIV_EP1_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
 class Lada2_TK_CIV_EP1_DZE4: Lada2_TK_CIV_EP1_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 50
 };
