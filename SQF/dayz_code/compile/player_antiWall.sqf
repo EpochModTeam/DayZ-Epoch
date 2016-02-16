@@ -44,22 +44,22 @@ if(_activated) then {
 		};
 		if ((_vehicle emptyPositions "driver") > 0) exitWith {
 			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
-			player action ["getInDriver", _vehicle];
+			player moveInDriver _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "gunner") > 0) exitWith {
 			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
-			player action ["GetInGunner", _vehicle];
+			player moveInGunner _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "commander") > 0) exitWith {
 			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
-			player action ["getInCommander", _vehicle];
+			player moveInCommander _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "cargo") > 0) exitWith {
 			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
-			player action ["getInCargo", _vehicle];
+			player moveInCargo _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		// kill player if none of the above are matched
