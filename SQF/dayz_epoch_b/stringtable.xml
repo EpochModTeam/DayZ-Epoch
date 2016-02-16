@@ -6070,7 +6070,7 @@
 			<Original>%1 is already in your inventory. Adding to backpack!</Original>
 			<English>%1 is already in your inventory. Adding to backpack!</English>
 			<German>%1 ist bereits in Ihrem Inventar. Hinzufügen zu Rucksack!</German>
-			<Russian>%1 уже в вашем инвентаре. Добавление к рюкзаку!</Russian>
+			<Russian>%1 уже в вашем инвентаре. Перемещено в рюкзак!</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>%1 is al in je inventaris. Toevoegen aan rugzak!</Dutch>
 			<French>%1 est déjà dans votre inventaire. Ajout d'un sac à dos!</French>
@@ -6080,7 +6080,7 @@
 			<Original>%1 is already in your inventory. Dropping on the ground!</Original>
 			<English>%1 is already in your inventory. Dropping on the ground!</English>
 			<German>%1 ist bereits in Ihrem Inventar. Fallenlassen auf den Boden!</German>
-			<Russian>%1 уже в вашем инвентаре. Падение на землю!</Russian>
+			<Russian>%1 уже в вашем инвентаре. Сброшено на землю!</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>%1 is al in je inventaris. Het laten vallen op de grond!</Dutch>
 			<French>%1 est déjà dans votre inventaire. Déposer sur le terrain!</French>
