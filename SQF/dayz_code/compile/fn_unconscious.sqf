@@ -1,4 +1,4 @@
-private ["_totalTimeout","_timeout","_bloodLow","_display","_ctrl1","_ctrl1Pos"];
+private ["_totalTimeout","_timeout","_bloodLow","_display","_ctrl1","_ctrl1Pos","_disableHdlr"];
 disableSerialization;
 if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 	if (r_player_cardiac) then {r_player_timeout = r_player_timeout max 300;};
@@ -18,6 +18,7 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 	"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
 	0 fadeSound 0.05;
 	disableUserInput true;
+	_disableHdlr = [] spawn { sleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
 	while {r_player_unconscious} do {
 		_ctrl1 ctrlSetPosition [(_ctrl1Pos select 0),(_ctrl1Pos select 1),(_ctrl1Pos select 2),((0.136829 * safezoneH) * (1 -(r_player_timeout / _totalTimeout)))];
 		_ctrl1 ctrlCommit 1;
@@ -48,7 +49,9 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 		};
 	};
 	4 cutRsc ["default", "PLAIN",1];
-	disableUserInput false;
+	terminate _disableHdlr;
+	waituntil {scriptDone _disableHdlr};
+	disableUserInput false; r_player_unconsciousInputDisabled = false;
 	if (!r_player_injured && ((r_player_blood/r_player_bloodTotal) >= 0.5)) then {
 		10 fadeSound 1;
 		"dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
