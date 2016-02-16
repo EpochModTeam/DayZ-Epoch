@@ -494,7 +494,7 @@ class VWGolf : Car {
 
 // Performance 1
 class VWGolf_DZE1: VWGolf {
-	maxspeed = 150; // max engine limit 125-130
+	maxSpeed = 260; // VW maxspeed from above =241
 	terrainCoef = 2.5;
 
 	class Upgrades {
@@ -565,5 +565,5 @@ class VWGolf_DZE3: VWGolf_DZE2 {
 
 // Fuel 4
 class VWGolf_DZE4: VWGolf_DZE3 {
-	fuelCapacity = 210; // car 100
+	fuelCapacity = 150; // car 100
 };
