@@ -7,6 +7,7 @@
 [NEW] Modular/Function based player_build for addon makers and modders. @raymix (more info and concepts - http://epochmod.com/forum/index.php?/topic/14628-modular-function-based-player-buildsqf/ )
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
+[NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
 
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
