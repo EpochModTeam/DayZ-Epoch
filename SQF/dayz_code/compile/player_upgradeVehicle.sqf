@@ -129,6 +129,7 @@ if (_IsNearVehicle >= 1) then {
 						publicVariableServer  "PVDZE_veh_Upgrade";
 
 						cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
+						{player reveal _x;} count (nearestObjects [player,["AllVehicles"],30]);
 					};
 				}
 				else {
