@@ -18,12 +18,12 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 	"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
 	0 fadeSound 0.05;
 	disableUserInput true;
-	_disableHdlr = [] spawn { sleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
+	_disableHdlr = [] spawn { uiSleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
 	while {r_player_unconscious} do {
 		_ctrl1 ctrlSetPosition [(_ctrl1Pos select 0),(_ctrl1Pos select 1),(_ctrl1Pos select 2),((0.136829 * safezoneH) * (1 -(r_player_timeout / _totalTimeout)))];
 		_ctrl1 ctrlCommit 1;
 		playSound "heartbeat_1";
-		sleep 1;
+		uiSleep 1;
 		_bloodLow = ((r_player_blood/r_player_bloodTotal) < 0.5);
 		
 		if(_timeout == 0) then {

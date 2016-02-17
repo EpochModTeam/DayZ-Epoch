@@ -1,7 +1,7 @@
 private ["_flare","_text"];
 _flare = _this select 3;
 player playActionNow "PutDown";
-sleep 2;
+uiSleep 2;
 _flare attachTo [player,[0,0,0],"granat2"];
 [_flare, -90, -10] call object_setpitchbank;
 [_flare] call FNC_GetSetPos;
@@ -15,7 +15,7 @@ _text = getText (configFile >> "CfgAmmo" >> (typeOf _flare) >> "displayName");
 s_player_dropflare = player addAction [format[localize "str_actions_medical_16",_text], "\z\addons\dayz_code\actions\flare_drop.sqf",_flare, 1, false, true, "", ""];
 
 while {(alive _flare) && dayz_hasLight} do {
-	sleep 0.1;
+	uiSleep 0.1;
 };
 if (dayz_hasLight) then {
 	dayz_hasLight = false;

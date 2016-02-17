@@ -21,7 +21,7 @@ while {_int>1} do
 	};
 
 {
-	sleep _x;
+	uiSleep _x;
 	if((_lifecheck&&(alive _v))||(isnull _v)||(((getposASL _v)select 2)<0))exitwith{};
 	createVehicle ["SmallSecondary", (_v modelToWorld _effect2pos), [], 0, "CAN_COLLIDE"];
 }forEach(_list);

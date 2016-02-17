@@ -100,7 +100,7 @@ _nrTLs= _twrPos nearObjects ["#lightpoint",20];
 			}else{
 			deleteVehicle _x;
 			};
-		sleep .2;
+		uiSleep 0.2;
 		}count _nrTLs;
 		
 	}else{
@@ -112,7 +112,7 @@ _nrTLs= _twrPos nearObjects ["#lightpoint",20];
 			_a = (_twrPos select 0)+(_rad * cos(_ang));
 			_b = (_twrPos select 1)+(_rad * sin(_ang));
 			[_lCol,_lbrt,_lamb,[_a,_b,(_twrPos select 2) + 26],_ang,[0,0,-1]] call axe_newLightPoint;
-			sleep .4;
+			uiSleep 0.4;
 			};
 		};
 	};

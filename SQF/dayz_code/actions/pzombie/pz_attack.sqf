@@ -21,6 +21,6 @@ if (!isNull cursorTarget) then {
 		[player,"hit",0,false] call dayz_zombieSpeak;
 
 	};
-	sleep 1;
+	uiSleep 1;
 	player switchmove "";
 };

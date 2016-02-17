@@ -71,7 +71,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 					if (vehicle player != player) then {
 						r_doLoop = false;
 					};
-					sleep 0.1;
+					uiSleep 0.1;
 				};
 				r_doLoop = false;
 
@@ -86,7 +86,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 			} else {
 				// Alternate method in water make sure player stays in one spot for 6 seconds
 				_location1 = getPosATL player;
-				sleep 6;
+				uiSleep 6;
 				_location2 = getPosATL player;
 				if(_location1 distance _location2 < 3) then {
 					_finished = true;
@@ -122,7 +122,7 @@ _availableCans = ["ItemJerrycan","ItemFuelBarrel"];
 						call fnc_usec_medic_removeActions;
 						r_action = false;
 			
-						sleep 1;
+						uiSleep 1;
 					} else {
 						_abort = true;
 					};	

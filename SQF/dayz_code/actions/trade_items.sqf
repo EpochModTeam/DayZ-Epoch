@@ -88,7 +88,7 @@ while {r_autoTrade} do {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 
@@ -144,7 +144,7 @@ while {r_autoTrade} do {
 	};
 	if(_abort) exitWith {r_autoTrade = false};
 	
-	sleep 1;
+	uiSleep 1;
 };
 
 DZE_ActionInProgress = false;

@@ -76,7 +76,7 @@ if ((dayz_spawnZombies < _maxControlledZombies) && (dayz_CurrentNearByZombies < 
 		if (surfaceIsWater _position) exitwith {  };
 
 		_agent = createAgent [_type, _position, [], _radius, _method];
-		sleep 0.001;
+		uiSleep 0.001;
 
 		//add to global counter
 		dayz_spawnZombies = dayz_spawnZombies + 1;
@@ -122,15 +122,15 @@ if ((dayz_spawnZombies < _maxControlledZombies) && (dayz_CurrentNearByZombies < 
 			_agtPos = getPosASL _agent;
 			_agtPos set [2, -3];
 			_agent setPosASL _agtPos;
-			sleep 0.001;
+			uiSleep 0.001;
 			_agtPos = +(_position);
 			_agtPos set [2, -3];
 			_agent setPosASL _agtPos;
-			sleep 0.001;
+			uiSleep 0.001;
 			*/
 			_agent setDir random 360;
 			//_agent setPosATL _position;
-			sleep 0.001;
+			uiSleep 0.001;
 
 			_position = getPosATL _agent;
 

@@ -53,16 +53,16 @@ while {_isOk} do {
 	
 	if(_counter == 0) then {
 		cutText [(localize "str_epoch_player_109"), "PLAIN DOWN"];
-		sleep 5; 
+		uiSleep 5; 
 		_location1 = getPosATL player;
-		sleep 5;
+		uiSleep 5;
 		_location2 = getPosATL player;
 	
 		if(_location1 distance _location2 < 0.1) exitWith {
 			
 			cutText [(localize "str_epoch_player_109"), "PLAIN DOWN"];
 			_location3 = getPosATL player;
-			sleep 5;
+			uiSleep 5;
 			_location4 = getPosATL player;
 
 			if(_location3 distance _location4 > 0.1) exitWith {
@@ -123,7 +123,7 @@ if(!_cancel) then {
 			[1,1] call dayz_HungerThirst;
 			//wait a bit
 			player playActionNow "Medic";
-			sleep 1;
+			uiSleep 1;
 			[player,"tentunpack",0,false] call dayz_zombieSpeak;
 	
 			[player,50,true,(getPosATL player)] spawn player_alertZombies;
@@ -140,7 +140,7 @@ if(!_cancel) then {
 				_location = player modelToWorld [_offset_x,_offset_y,_offset_z];
 			};
 
-			sleep 5;
+			uiSleep 5;
 			//place tent (local)
 			_tent = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
 			_tent setdir _dir;

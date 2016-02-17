@@ -16,7 +16,7 @@ switch _action do {
 	case "MoveToPilot": {
 		if (((_vehicle emptyPositions "Driver") == 0) && (!alive _driver)) then {
 			_driver action ["EJECT", _vehicle];
-			sleep 0.5; //wait for ejection
+			uiSleep 0.5; //wait for ejection
 		};
 		if ((_vehicle emptyPositions "Driver") > 0) then {
 			player action [_action, _vehicle];

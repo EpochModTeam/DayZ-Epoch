@@ -15,7 +15,7 @@ s_player_callzombies = 1;
 [player,100,true,(getPosATL player)] spawn player_alertZombies;
 
 // wait a bit
-sleep 3;
+uiSleep 3;
 
 // allow menu again
 s_player_callzombies = -1;

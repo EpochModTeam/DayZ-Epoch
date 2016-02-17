@@ -22,7 +22,7 @@ _warn = {
 				[_dog,"dog_growl",2,false] call dayz_zombieSpeak;
 			};
 		};
-		sleep 2;
+		uiSleep 2;
 	};
 };
 

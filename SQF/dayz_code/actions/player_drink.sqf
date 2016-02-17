@@ -32,7 +32,7 @@ if (vehicle player != player) then {
 	_invehicle = true;
 };
 
-sleep 1;
+uiSleep 1;
 
 if (["ItemWaterbottle",_itemorignal] call fnc_inString) then {
     //low alert && sound radius
@@ -53,7 +53,7 @@ if (_hasoutput) then {
 	_itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
 	if (!_invehicle) then {
-		sleep 3;
+		uiSleep 3;
 		_nearByPile = nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
 		if (count _nearByPile == 0) then {
 			_iPos = getPosATL player;
@@ -65,7 +65,7 @@ if (_hasoutput) then {
 		};
 		_item addMagazineCargoGlobal [_itemtodrop,1];
 	} else {
-		sleep 2;
+		uiSleep 2;
 		(vehicle player) addMagazineCargoGlobal [_itemtodrop,1];
 	};
 };

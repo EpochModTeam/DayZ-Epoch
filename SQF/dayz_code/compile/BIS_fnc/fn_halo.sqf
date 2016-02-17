@@ -1,5 +1,5 @@
 scriptName "modules_e\Functions\objects\fn_HALO.sqf";
-sleep 0.01;
+uiSleep 0.01;
 
 //--- HALO -------------------------------------------------------------------------------------------------------------------------------------
 if (typename _this == typename objnull) then {
@@ -165,7 +165,7 @@ if (typename _this == typename objnull) then {
 				bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.02,0.02,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef];
 				bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
 				*/
-				sleep 0.01;
+				uiSleep 0.01;
 			};
 			//--- End
 			player removeaction bis_fnc_halo_action;
@@ -207,7 +207,7 @@ if (typename _this == typename objnull) then {
 					(_vel select 2)
 				];
 			};
-			sleep 0.01;
+			uiSleep 0.01;
 		};
 
 		//--- Open
@@ -334,7 +334,7 @@ if (typename _this == typename []) then {
 		bis_fnc_halo_para_mousemoving_eh = (finddisplay 46) displayaddeventhandler ["mousemoving","_this call bis_fnc_halo_para_loop;"];
 		bis_fnc_halo_para_mouseholding_eh = (finddisplay 46) displayaddeventhandler ["mouseholding","_this call bis_fnc_halo_para_loop;"];
 
-		sleep 4;
+		uiSleep 4;
 
 		// ppeffectdestroy bis_fnc_halo_DynamicBlur;
 		bis_fnc_halo_para_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_para_keydown;"];

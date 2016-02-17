@@ -21,7 +21,7 @@ _unit removeAction Norrn_carryAction;
 if (isNull _dragee) exitWith {}; 
 _dragee setVariable ["NORRN_unit_dragged", true, true]; 
 detach _dragee;
-sleep 1.5;
+uiSleep 1.5;
 // public EH
 norrnRACarUp = _dragee;
 publicVariable "norrnRACarUp";
@@ -29,7 +29,7 @@ _dragee switchMove "ainjpfalmstpsnonwrfldnon_carried_up";
 norrnRAPicUp = _unit;
 publicVariable "norrnRAPicUp";
 _unit switchMove "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon";
-sleep 10;
+uiSleep 10;
 _dragee switchmove "ainjpfalmstpsnonwrfldnon_carried_still";
 _dragee attachto [_unit,[-0.2, 0.2, 0]];
 
@@ -53,7 +53,7 @@ while {r_carry_sqf} do
 		_unit switchMove "";
 		r_carry_sqf = false;
 	};	 	
-	sleep 0.1;
+	uiSleep 0.1;
 };
 _dragee playActionNow "Die";
 

@@ -40,9 +40,7 @@ while {1 == 1} do {
 	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' in %5 seconds", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
 
 	// Apprehensive about using one giant long sleep here given server time variances over the life of the server daemon
-	while {time < _timeToSpawn} do {
-		sleep 5;
-	};
+	waituntil {time > _timeToSpawn};
 
 	_spawnRoll = random 1;
 

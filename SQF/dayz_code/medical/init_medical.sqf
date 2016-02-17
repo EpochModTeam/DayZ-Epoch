@@ -48,7 +48,7 @@ while {true} do {
 	//Handle player bleeding
 	if ((r_player_injured) && (!r_player_handler)) then {
 		r_player_handler = true;
-		sleep 1;
+		uiSleep 1;
 		//localize "CLIENT: Start Player Bleeding";
 		[] spawn fnc_usec_playerBleed;	//publicizes the blood value at regular intervals
 		[] spawn fnc_med_publicBlood;
@@ -57,7 +57,7 @@ while {true} do {
 	//Handle player infection
 	if ((r_player_infected) && (!r_player_handler)) then {
 		r_player_handler = true;
-		sleep 1;
+		uiSleep 1;
 		[] spawn fnc_med_publicBlood;
 	};
 	
@@ -71,17 +71,17 @@ while {true} do {
 				0 fadeSound ((r_player_blood/r_player_bloodTotal) + 0.5);
 				"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [4]; "dynamicBlur" ppEffectCommit 0.2;
 			};
-			sleep 0.5;
+			uiSleep 0.5;
 			if (r_player_lowblood) then {
 				"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 0.5;
 			};
-			sleep 0.5;
+			uiSleep 0.5;
 			_lowBlood =	player getVariable ["USEC_lowBlood", false];
 			if ((r_player_blood < r_player_bloodTotal) && !_lowBlood) then {
 				player setVariable["USEC_lowBlood",true,true];
 			};
 		};
 	};
-	sleep 1;
+	uiSleep 1;
 };
 endLoadingScreen;

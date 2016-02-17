@@ -15,7 +15,7 @@ if (local _animalbody) then {
 		_body = _this select 1;
 		_pos = getPosATL _body;
 		while {(count magazines _body >0) && (time - _timer < 300) } do { 
-			sleep 5;
+			uiSleep 5;
 		}; 
 		
 		hideBody _body;
@@ -30,7 +30,7 @@ if (local _animalbody) then {
 			};
 		} count _inRange;
 
-		sleep 5;
+		uiSleep 5;
 		deleteVehicle _body;
 		true;
 	};

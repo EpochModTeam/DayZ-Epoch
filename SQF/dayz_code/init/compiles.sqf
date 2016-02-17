@@ -312,28 +312,28 @@ if (!isDedicated) then {
 		};
 		openMap false;
 		closeDialog 0;
-		if (gear_done) then {sleep 0.001;};
+		if (gear_done) then {uiSleep 0.001;};
 		player action ["Gear", player];
-		if (gear_done) then {sleep 0.001;};
+		if (gear_done) then {uiSleep 0.001;};
 		_dialog = findDisplay 106;
 		_i = 0;
 		while {isNull _dialog} do {//DO NOT CHANGE TO A FOR LOOP!
 			_i = _i + 1;
 			_dialog = findDisplay 106;
-			if (gear_done) then {sleep 0.001;};
+			if (gear_done) then {uiSleep 0.001;};
 			if (_i in [100,200,299]) then {
 				closeDialog 0;
 				player action ["Gear", player];
 			};
 			if (_i > 300) exitWith {};
 		};
-		if (gear_done) then {sleep 0.001;};
+		if (gear_done) then {uiSleep 0.001;};
 		_dialog = findDisplay 106;
 		if ((parseNumber(_this select 0)) != 0) then {
 			ctrlActivate (_dialog displayCtrl 157);
 			if (gear_done) then {
 				waitUntil {ctrlShown (_dialog displayCtrl 159)};
-				sleep 0.001;
+				uiSleep 0.001;
 			};
 		};
 		_dialog
@@ -475,12 +475,12 @@ if (!isDedicated) then {
 
             if (_timeOut >= 12000) then {
                 1 cutText [localize "str_player_login_timeout", "PLAIN DOWN"];
-                sleep 10;
+                uiSleep 10;
                 endLoadingScreen;
                 endMission "END1";
             };
 
-            sleep 0.01;
+            uiSleep 0.01;
         };
 	};
 

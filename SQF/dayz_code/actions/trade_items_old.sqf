@@ -78,7 +78,7 @@ for "_x" from 1 to _total_trades do {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 
@@ -144,7 +144,7 @@ for "_x" from 1 to _total_trades do {
 		};
 	};
 	
-	sleep 1;
+	uiSleep 1;
 
 	if(_abort) exitWith {};
 };

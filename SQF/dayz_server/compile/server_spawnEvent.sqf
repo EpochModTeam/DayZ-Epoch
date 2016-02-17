@@ -57,5 +57,5 @@ while {1 == 1} do {
 			} count EpochEvents;
 		};
 	};
-	sleep 10;
+	uiSleep 10;
 };

@@ -278,7 +278,7 @@ if (isServer) then {
     
     setWind [drn_DynamicWeather_WindX, drn_DynamicWeather_WindZ, true];
     
-    sleep 0.05;
+    uiSleep 0.05;
     
     publicVariable "drn_var_DynamicWeather_Rain";
     drn_var_DynamicWeather_ServerInitialized = true;
@@ -308,7 +308,7 @@ if (isServer) then {
         
         while {true} do {
             // Sleep a while until next weather change
-            sleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
+            uiSleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
             
             if (_minimumFog == _maximumFog && _minimumOvercast != _maximumOvercast) then {
                 _weatherType = "OVERCAST";
@@ -435,7 +435,7 @@ if (isServer) then {
             
             call drn_fnc_DynamicWeather_SetWeatherAllClients;
             
-            sleep _weatherChangeTimeSek;
+            uiSleep _weatherChangeTimeSek;
         };
     };
     
@@ -506,10 +506,10 @@ if (isServer) then {
                 };
                 
                 if (_debug) then {
-                    sleep 1;
+                    uiSleep 1;
                 }
                 else {
-                    sleep 10;
+                    uiSleep 10;
                 };
             };
         };
@@ -538,7 +538,7 @@ if (isServer) then {
     };
     
     0 setRain _rain;
-    sleep 0.1;
+    uiSleep 0.1;
     
     while {true} do {
         if (_rainIntervalRainProbability > 0) then {
@@ -557,7 +557,7 @@ if (isServer) then {
         
         3 setRain _rain;
         
-        sleep 3;
+        uiSleep 3;
     };
 };
 

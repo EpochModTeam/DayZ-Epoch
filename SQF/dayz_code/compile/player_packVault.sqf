@@ -38,9 +38,9 @@ if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_packv
 _obj setVariable["packing",1];
 
 cutText [format[(localize "str_epoch_player_121"),_text], "PLAIN DOWN"];
-sleep 1; 
+uiSleep 1; 
 _location1 = getPosATL player;
-sleep 5;
+uiSleep 5;
 _location2 = getPosATL player;
 	
 if(_location1 distance _location2 > 0.1) exitWith {
@@ -59,7 +59,7 @@ if(!isNull _obj && alive _obj) then {
 	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
-	sleep 3;
+	uiSleep 3;
 
 	_weapons = 		getWeaponCargo _obj;
 	_magazines = 	getMagazineCargo _obj;

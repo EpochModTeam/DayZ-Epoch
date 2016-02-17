@@ -25,7 +25,7 @@ _s call FNC_PrintToRPT;
 
 R3F_TIRED_Accumulator = 0;
 R3F_TIRED_vitesse_de_mon_joueur = 0;
-sleep 1;
+uiSleep 1;
 _level = 1;
 
 while {true} do {
@@ -123,7 +123,7 @@ while {true} do {
 		R3F_TIRED_Counter_Time = 0;
 	};
 
-	sleep 1;
+	uiSleep 1;
 	_n = _n + 1;
 };
 

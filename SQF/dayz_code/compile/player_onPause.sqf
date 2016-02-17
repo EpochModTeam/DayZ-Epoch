@@ -55,7 +55,7 @@ while {!isNull _display} do {
 			_sleep = 1;
 		};
 	};
-	sleep _sleep;
+	uiSleep _sleep;
 	_timeOut = diag_tickTime;
 };
 cutText ["", "PLAIN DOWN"];

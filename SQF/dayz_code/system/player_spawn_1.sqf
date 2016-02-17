@@ -71,5 +71,5 @@ while {true} do {
 	};
 
 	//wait
-	sleep 0.001;
+	uiSleep 0.001;
 };

@@ -67,9 +67,9 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 			_magazines = 	_obj getVariable["MagazineCargo",[]];
 			_backpacks = 	_obj getVariable["BackpackCargo",[]];
 			player playActionNow "Medic";
-			sleep 1;
+			uiSleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
-			sleep 5;
+			uiSleep 5;
 
 			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
 			// Remove locked vault
@@ -128,10 +128,10 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 } else {
 	[10,10] call dayz_HungerThirst;
 	player playActionNow "Medic";
-	sleep 1;
+	uiSleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,25,true,(getPosATL player)] spawn player_alertZombies;
-	sleep 5;
+	uiSleep 5;
 	cutText [format[(localize "str_epoch_player_126"),_text], "PLAIN DOWN"];
 };
 s_player_unlockvault = -1;

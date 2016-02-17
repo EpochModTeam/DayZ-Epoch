@@ -8,7 +8,7 @@ if(_whistle) then {
 	[nil,player,rSAY,["dog_callBack", 120]] call RE;
 };
 
-sleep 1;
+uiSleep 1;
 
 if (_dog distance player <= 900) then {
 _handle setFSMVariable ["_command","return"];

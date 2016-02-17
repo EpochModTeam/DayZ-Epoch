@@ -22,7 +22,7 @@ _initial_text = "";
 _n = 0;
 while {true} do
 {
-	sleep R3F_WEIGHT_SHORT_DELAY;
+	uiSleep R3F_WEIGHT_SHORT_DELAY;
 	
 	#ifdef R3F_WEIGHT_SHOW_WEIGHT
 	_display = findDisplay ARMA2_RSCDISPLAYGEARBOX;

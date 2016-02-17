@@ -61,7 +61,7 @@ if(_IsNearVehicle >= 1) then {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 

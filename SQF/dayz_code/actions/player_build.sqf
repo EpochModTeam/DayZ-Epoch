@@ -313,7 +313,7 @@ if (_hasrequireditem) then {
 
 		};
 
-		sleep 0.5;
+		uiSleep 0.5;
 
 		_location2 = getPosATL player;
 
@@ -434,7 +434,7 @@ if (_hasrequireditem) then {
 				if (DZE_cancelBuilding) exitWith {
 					r_doLoop = false;
 				};
-				sleep 0.1;
+				uiSleep 0.1;
 			};
 			r_doLoop = false;
 

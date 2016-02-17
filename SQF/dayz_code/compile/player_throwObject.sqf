@@ -14,7 +14,7 @@ while {_doWait} do {
 	if (!(alive _projectile)) then {_doWait = false};	
 	if (_vel < 0.1) then {_doWait = false};
 	_endPos = getPosATL _projectile;
-	sleep 0.01;
+	uiSleep 0.01;
 };
 
 _distance = parseNumber format["%1",(getArray (configFile >> "CfgAmmo" >> _ammo >> "soundHit") select 3)];

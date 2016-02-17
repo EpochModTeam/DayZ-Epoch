@@ -38,7 +38,7 @@ player addMagazine "bulk_empty";
 [1,1] call dayz_HungerThirst;
 // Change to optional wait to complete
 player playActionNow "Medic";
-sleep 6;
+uiSleep 6;
 		
 _b0x1337 = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _b0x1337 setDir _dir;

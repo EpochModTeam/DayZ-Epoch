@@ -31,7 +31,7 @@ if(_num_removed == 1) then {
 		[player,20] call player_humanityChange;
 	};
 
-	sleep 1;
+	uiSleep 1;
 	//clear the healed player's vision
 	/* PVS/PVC - Skaronator */
 	PVDZE_send = [_unit,"Painkiller",[_unit,player]];

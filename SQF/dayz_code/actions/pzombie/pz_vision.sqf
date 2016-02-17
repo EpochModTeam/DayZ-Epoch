@@ -50,7 +50,7 @@ while { aperture < _oldAperture } do
 {
 	aperture = aperture + 0.0005;
 	setAperture aperture;
-	sleep 0.001;
+	uiSleep 0.001;
 };
 
 player setVariable ["NV", ["ON", _oldAperture]];

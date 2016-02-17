@@ -802,7 +802,7 @@ class FSM
        "			_cantSee = [player, _dog] call dayz_losCheck;" \n
        "			while {alive _dog && !(_cantSee)} do {" \n
        "				_dog moveTo [0, ((random (10000)) + 1000), 0];" \n
-       "				sleep 2;" \n
+       "				uiSleep 2;" \n
        "				_cantSee = [player, _dog] call dayz_losCheck;" \n
        "			};" \n
        "			deleteVehicle _dog;" \n
@@ -810,7 +810,7 @@ class FSM
        "		" \n
        "		_handle setFSMVariable [""_thirst"",_thirst];" \n
        "		_handle setFSMVariable [""_hunger"",_hunger];" \n
-       "		sleep 0.5;" \n
+       "		uiSleep 0.5;" \n
        "	};" \n
        "};" \n
        "" \n

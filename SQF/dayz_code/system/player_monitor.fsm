@@ -1171,7 +1171,7 @@ class FSM
        "dayz_monitor1 = [] spawn {" \n
        "	while {true} do {" \n
        "		call player_zombieCheck;" \n
-       "		sleep 1;" \n
+       "		uiSleep 1;" \n
        "	};" \n
        "};" \n
        "" \n
@@ -1250,7 +1250,7 @@ class FSM
        "				_thisVehicle call player_antiWall;" \n
        "			};" \n
        "		};" \n
-       "		sleep 0.2;" \n
+       "		uiSleep 0.2;" \n
        "	};" \n
        "};" \n
        "" \n
@@ -1274,21 +1274,21 @@ class FSM
        "dayz_spawnCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		[""both""] call player_spawnCheck;" \n
-       "		sleep 8;" \n
+       "		uiSleep 8;" \n
        "	};" \n
        "};" \n
        "" \n
        "dayz_Totalzedscheck = [] spawn {" \n
        "	while {true} do {" \n
        "		dayz_maxCurrentZeds = {alive _x} count entities ""zZombie_Base"";" \n
-       "		sleep 60;" \n
+       "		uiSleep 60;" \n
        "	};" \n
        "};" \n
        "" \n
        "dayz_backpackcheck = [] spawn {" \n
        "	while {true} do {" \n
        "		call player_dumpBackpack;" \n
-       "		sleep 1;" \n
+       "		uiSleep 1;" \n
        "	};" \n
        "};" \n
        "" \n
@@ -1311,7 +1311,7 @@ class FSM
        "		if ((player getVariable[""combattimeout"", 0] >= time) || (_counter >= 60) || (player distance DZE_PROTOBOX > 2)) exitWith {" \n
        "			deleteVehicle DZE_PROTOBOX;" \n
        "		};" \n
-       "		sleep 1;" \n
+       "		uiSleep 1;" \n
        "		_counter = _counter + 1;" \n
        "	};" \n
        "};"/*%FSM</STATEINIT""">*/;

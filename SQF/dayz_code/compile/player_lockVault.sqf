@@ -21,9 +21,9 @@ _text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 if(isNull _obj) exitWith { DZE_ActionInProgress = false; };
 [1,1] call dayz_HungerThirst;
 player playActionNow "Medic";
-sleep 1;
+uiSleep 1;
 [player,"tentpack",0,false] call dayz_zombieSpeak;
-sleep 5;
+uiSleep 5;
 
 _playerNear = _obj call dze_isnearest_player;
 if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_11") , "PLAIN DOWN"];  };

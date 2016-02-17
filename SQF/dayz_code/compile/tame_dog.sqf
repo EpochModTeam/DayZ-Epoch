@@ -22,7 +22,7 @@ _dog =		_this select 3;
 player removeMagazine "FoodSteakRaw";
 _animalID = _dog getVariable "fsm_handle";
 _animalID setFSMVariable ["_isTamed", true];
-sleep 1;
+uiSleep 1;
 // diag_log format["DEBUG: %1, id: %2 [%3]",_dog,_animalID,completedFSM _animalID];
 if (!moveToCompleted _dog) then {
 	_dog moveTo ([_dog] call FNC_GetPos);

@@ -29,7 +29,7 @@ publicVariableServer "PVDZE_plr_Died";
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;
 
-sleep 0.5;
+uiSleep 0.5;
 
 player setDamage 1;
 0.1 fadeSound 0;
@@ -85,7 +85,7 @@ r_player_dead = true;
 
 //Player is Dead!
 3 fadeSound 0;
-sleep 1;
+uiSleep 1;
 
 dayz_originalPlayer enableSimulation true;
 
@@ -103,7 +103,7 @@ selectPlayer dayz_originalPlayer;
 _body setVariable["combattimeout", 0, true];
 
 //["dayzFlies",player] call broadcastRpcCallAll;
-sleep 2;
+uiSleep 2;
 
 1 cutRsc ["DeathScreen","BLACK OUT",3];
 
@@ -112,11 +112,11 @@ playMusic "dayz_track_death_1";
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 "colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
 
-sleep 2;
+uiSleep 2;
 
 for  "_x" from 5 to 1 step -1 do {
 	titleText [format[localize "str_return_lobby", _x], "PLAIN DOWN", 1];
-	sleep 1;
+	uiSleep 1;
 };
 
 PVDZE_Server_Simulation = [_body, false];

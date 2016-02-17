@@ -83,7 +83,7 @@ if ((_isVehicle || _isStorage || _isnewstorage) && (!_isMan) && (!(isNull (findD
 			_freeSlots = [] call _countFreeSlots;
 
 			[] call _setControlText;
-			sleep 0.01;
+			uiSleep 0.01;
 		};
 	};
 };

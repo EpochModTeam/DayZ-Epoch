@@ -55,7 +55,7 @@ private["_ofn","_nfn","_REMOVED_LIB","_TRACED_LIB"];
 		"remExFP" addPublicVariableEventHandler{_this call BIS_MPF_remoteExecutionServer};
 		BIS_PathMPscriptCommandsCustom="";
 		diag_log(__FILE__+":Monitoring Remote Exe...");
-		sleep 1;
+		uiSleep 1;
 	};
 };
 #endif

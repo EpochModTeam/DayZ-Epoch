@@ -16,7 +16,7 @@ waitUntil {vehicle player == player};
 			publicVariableServer "PVDZE_atp";
 			//forceEnd;
 			endMission "LOSER";
-			sleep 10; //Bypass spam
+			uiSleep 10; //Bypass spam
 		};
 	};
 	endMission "LOSER";
@@ -26,12 +26,12 @@ waitUntil {vehicle player == player};
 	_playerName = name player;
 	_playerUID = [player] call FNC_GetPlayerUID;
 	while {true} do {
-		sleep 5;
+		uiSleep 5;
 	};
 	PVDZE_atp = format["WARNING PLAYER WITH NAME (%1) && UID# (%2) HAS CHANGED THE TRUE VALUE TO FALSE", _playerName, _playerUID];
 	publicVariableServer "PVDZE_atp";
 	endMission "LOSER";
-	sleep 10;
+	uiSleep 10;
 };
 
 [] spawn {
@@ -44,7 +44,7 @@ waitUntil {vehicle player == player};
 		// run only once per character life
 		{
 			_plant = _x createVehicleLocal _debug;
-			sleep 0.1;
+			uiSleep 0.1;
 			if (sizeOf _x == 0) exitWith { 
 				PVDZE_atp = "Plants texture hack for type " + _x;
 				publicVariableServer "PVDZE_atp";
@@ -107,8 +107,8 @@ while {1 == 1} do {
 			};
 
 		};
-		sleep 0.25;
+		uiSleep 0.25;
 	};
-	sleep 0.1;
+	uiSleep 0.1;
 };
 endMission "LOSER";

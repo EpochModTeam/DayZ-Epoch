@@ -27,7 +27,7 @@ while {alive _firePlace} do {
 				if (_countr > 600) then {_ok = false};
 				if (!inflamed _firePlace) then {_ok = false};
 				if (!alive _firePlace) then {_ok = false};
-				sleep 1;
+				uiSleep 1;
 			};
 		} else {
 			_firePlace inflame false;
@@ -35,7 +35,7 @@ while {alive _firePlace} do {
 	};
 	while {!inflamed _firePlace && alive _fireplace} do {
 		//Wait
-		sleep 1;
+		uiSleep 1;
 	};
-	sleep 1;
+	uiSleep 1;
 };

@@ -6,7 +6,7 @@ _dir = getDir player;
 _classname = _array select 0;
 removeBackpack player;
 player playActionNow "Medic";
-sleep 8;
+uiSleep 8;
 player removeAction r_player_action_bag;
 r_action_bag = false;
 _weapon = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];

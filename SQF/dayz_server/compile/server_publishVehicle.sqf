@@ -75,7 +75,7 @@ PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 	// TODO: Needs major overhaul
 	while {_retry < 10} do {
 		
-		sleep 1;
+		uiSleep 1;
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
 		diag_log ("HIVE: WRITE: "+ str(_key));

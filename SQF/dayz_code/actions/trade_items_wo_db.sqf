@@ -63,7 +63,7 @@ for "_x" from 1 to _total_trades do {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 
@@ -113,7 +113,7 @@ for "_x" from 1 to _total_trades do {
 		cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
 	};
 
-	sleep 1;
+	uiSleep 1;
 
 	if(_abort) exitWith {};
 };

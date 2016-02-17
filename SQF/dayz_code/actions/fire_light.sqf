@@ -8,7 +8,7 @@ if (_isOk) then {
 	_classname = "Land_Fire";
 	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
-	sleep 6;
+	uiSleep 6;
 	dayz_hasFire = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	dayz_hasFire setDir _dir;
 	player reveal dayz_hasFire;

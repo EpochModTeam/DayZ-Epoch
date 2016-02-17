@@ -183,7 +183,7 @@ TraderDialogShowPrices = {
 	private ["_index", "_item"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {};
-	while {count TraderItemList < 1} do { sleep 1; };
+	while {count TraderItemList < 1} do { uiSleep 1; };
 	_item = TraderItemList select _index;
 
 	_qty = {_x == (_item select 3)} count magazines player;

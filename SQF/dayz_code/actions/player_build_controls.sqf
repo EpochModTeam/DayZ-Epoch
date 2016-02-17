@@ -146,7 +146,7 @@ while {_isOk} do {
 		};
 	};
 
-	sleep 0.5;
+	uiSleep 0.5;
 
 	_location2 = [player] call FNC_GetPos;
 	_objectHelperPos = [_objectHelper] call FNC_GetPos;

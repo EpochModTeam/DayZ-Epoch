@@ -119,7 +119,7 @@ while {_isOk} do {
 			r_doLoop = false;
 		};
 
-		sleep 0.1;
+		uiSleep 0.1;
 
 	};
 

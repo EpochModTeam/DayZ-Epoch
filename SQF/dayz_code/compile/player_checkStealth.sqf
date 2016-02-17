@@ -45,7 +45,7 @@ if (_anim4 == "aswm") then {
 			player playActionNow "stop";
 		};
 		// This sleep was much needed
-		sleep 5;
+		uiSleep 5;
 
 		dayz_isSwimming = false;
 	};

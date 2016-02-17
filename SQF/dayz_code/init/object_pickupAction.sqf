@@ -50,7 +50,7 @@ actionMonitor = {
 			_timeout = 0;
 			_run = false;
 		};
-		sleep _timeout;
+		uiSleep _timeout;
 	};
 };
 

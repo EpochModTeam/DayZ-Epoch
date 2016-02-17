@@ -17,14 +17,14 @@ for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 	if (_unit getVariable "NORRN_unconscious") then
 	{
 		unassignVehicle _unit;
-		sleep 0.05;
+		uiSleep 0.05;
 		_unit action ["EJECT", _vcl];
-		sleep 1;
+		uiSleep 1;
 		_unit switchMove "";
 		_unit switchMove "ainjppnemstpsnonwrfldnon";
-		sleep 0.2;
+		uiSleep 0.2;
 		norrnRalie = _unit;
 		publicVariable "norrnRalie";
 	};
-	sleep 0.1;
+	uiSleep 0.1;
 };

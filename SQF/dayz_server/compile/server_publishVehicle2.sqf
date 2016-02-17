@@ -53,7 +53,7 @@ _key call server_hiveWrite;
 	// TODO: Needs major overhaul for 1.1
 	while {_retry < 10} do {
 		
-		sleep 1;
+		uiSleep 1;
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
 		diag_log ("HIVE: WRITE: "+ str(_key));
@@ -103,7 +103,7 @@ _key call server_hiveWrite;
 
 	if(DZE_TRADER_SPAWNMODE) then {
 		_object attachTo [_object_para, [0,0,-1.6]];
-		sleep 1.0;
+		uiSleep 1;
 		WaitUntil{(([_object] call FNC_GetPos) select 2) < 0.1};
 		detach _object;
 		deleteVehicle _object_para;

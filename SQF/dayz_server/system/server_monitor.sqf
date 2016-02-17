@@ -347,7 +347,7 @@ if (isServer && isNil "sm_done") then {
 		// server cleanup
 		[] spawn {
 			private ["_id"];
-			sleep 200; //Sleep Lootcleanup, don't need directly cleanup on startup + fix some performance issues on serverstart
+			uiSleep 200; //Sleep Lootcleanup, don't need directly cleanup on startup + fix some performance issues on serverstart
 			waitUntil {!isNil "server_spawnCleanAnimals"};
 			_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
 		};

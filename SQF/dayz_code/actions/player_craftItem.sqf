@@ -145,7 +145,7 @@ if (_canDo) then {
 					if (r_interrupt) then {
 						r_doLoop = false;
 					};
-					sleep 0.1;
+					uiSleep 0.1;
 				};
 				r_doLoop = false;
 
@@ -252,7 +252,7 @@ if (_canDo) then {
 								// Add crafted item
 								cutText [format[(localize "str_epoch_player_150"),_textCreate,_countOut], "PLAIN DOWN"];
 								// sleep here
-								sleep 1;
+								uiSleep 1;
 							} forEach _selectedRecipeOutput;
 
 							_tradeComplete = _tradeComplete+1;

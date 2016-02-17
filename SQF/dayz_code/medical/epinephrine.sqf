@@ -8,12 +8,12 @@ call fnc_usec_medic_removeActions;
 player playActionNow "Medic";
 player removeMagazine "ItemEpinephrine";
 
-sleep 3;
+uiSleep 3;
 
 if (!_isDead) then {
 	_unit setVariable ["NORRN_unconscious", false, true];
 	_unit setVariable ["USEC_isCardiac",false,true];
-	sleep 5;
+	uiSleep 5;
 	/* PVS/PVC - Skaronator */
 	PVDZE_send = [_unit,"Epinephrine",[_unit,player,"ItemEpinephrine"]];
 	publicVariableServer "PVDZE_send";

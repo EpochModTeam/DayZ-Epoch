@@ -99,7 +99,7 @@ player addWeapon "Flare";
         		call dayz_meleeMagazineCheck;
 		};
 
-sleep 0.1;
+uiSleep 0.1;
 
 if (!isNull _old) then {
 	// this should not be needed as player is deleted in player_switchModel?

@@ -31,14 +31,14 @@ if (_hasbottleitem && _hastinitem) then {
 		_removed = _removed + ([player,"ItemWaterbottle",_qty] call BIS_fnc_invRemove);
 		[1,1] call dayz_HungerThirst;
 		player playActionNow "Medic";
-        sleep 1;
+        uiSleep 1;
 
         _dis=10;
         _sfx = "cook";
         [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
         [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-        sleep 5;
+        uiSleep 5;
 
 		// Add back only number of removed
 		for "_x" from 1 to _removed do {

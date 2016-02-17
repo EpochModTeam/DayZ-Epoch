@@ -36,7 +36,7 @@ while {_isOk} do {
 		cutText [(localize "str_epoch_player_68"), "PLAIN DOWN"];
 	} else {
 		
-		sleep 2;
+		uiSleep 2;
 
 		_rnd = 50;
 
@@ -75,7 +75,7 @@ while {_isOk} do {
 			_counter = _counter + 1;
 			if(_counter == 10) then {
 				_isOk = false;
-				sleep 2;
+				uiSleep 2;
 				cutText [(localize "str_epoch_player_71"), "PLAIN DOWN"];
 			};
 		};

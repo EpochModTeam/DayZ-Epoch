@@ -11,7 +11,7 @@ while {_run} do {
 		if (_x distance _building < 500) then {_nearby = true};
 	} count (call BIS_fnc_listPlayers);
 	if (!_nearby) then {_run = false};
-	sleep 5;
+	uiSleep 5;
 };
 {deleteVehicle _x;} count _items;
 

@@ -23,7 +23,7 @@ if (!isNull _flare) then {
 			while {alive _flare} do {
 				_lightArea setLightAmbient [((random 0.2) + 0.2),0.01,0.01];
 				//_lightArea setLightColor [((random 0.1) + 0.1),0.005,0.005];
-				sleep (random 0.1);
+				uiSleep (random 0.1);
 			};
 			deleteVehicle _lightArea;
 			deleteVehicle _lightSpark;

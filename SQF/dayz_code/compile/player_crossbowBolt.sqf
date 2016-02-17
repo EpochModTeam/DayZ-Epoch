@@ -21,7 +21,7 @@ if (_magazine == "Quiver") then {
 while {alive _projectile} do {
 	_endPos = getPosATL _projectile;
 	_vUp = vectorUp _projectile;
-	sleep 0.01;
+	uiSleep 0.01;
 };
 
 _distance = _unit distance _endPos;
@@ -41,7 +41,7 @@ if (_height < 100) then {
 		if (count _hitArray > 0) then {_doLoop = false};
 		if (_countr > 50) then {_doLoop = false};
 		_countr = _countr + 1;
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 		
 	if (count _hitArray > 0) then {

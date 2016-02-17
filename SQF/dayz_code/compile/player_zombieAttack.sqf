@@ -41,7 +41,7 @@ if (local _unit) then {
 };
 
 //Wait
-sleep 0.3;
+uiSleep 0.3;
 
 if (_vehicle != player) then {
 	_hpList = 	_vehicle call vehicle_getHitpoints;

@@ -41,7 +41,7 @@ if (!_isOk) then {
 	[1,1] call dayz_HungerThirst;
 	//wait a bit
 	player playActionNow "Medic";
-	sleep 1;
+	uiSleep 1;
 	
 	_dis=20;
 	_sfx = "tentunpack";
@@ -50,7 +50,7 @@ if (!_isOk) then {
 	
 	_classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Pitch" >> "create");
 
-	sleep 5;
+	uiSleep 5;
 	//place tent (local)
 	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	_object setdir _dir;

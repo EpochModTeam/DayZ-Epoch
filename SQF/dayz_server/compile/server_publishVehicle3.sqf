@@ -44,7 +44,7 @@ _key call server_hiveWrite;
 	// TODO: Needs major overhaul for 1.1
 	while {_retry < 10} do {
 		
-		sleep 1;
+		uiSleep 1;
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
 		diag_log ("HIVE: WRITE: "+ str(_key));

@@ -14,7 +14,7 @@ if (_hasWood) then {
 		_classname = "Land_Fire_DZ";
 		[1,1] call dayz_HungerThirst;
 		player playActionNow "Medic";
-		sleep 6;
+		uiSleep 6;
 		_fire = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 		_fire setDir _dir;
 		player reveal _fire;

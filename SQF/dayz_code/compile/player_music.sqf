@@ -7,5 +7,5 @@ while {!r_player_dead} do {
 	if (!r_player_unconscious && !r_pitchWhine) then {
 		playMusic _sound;
 	};
-	sleep _pause;
+	uiSleep _pause;
 };

@@ -13,7 +13,7 @@ if(!(alive _item)) then {
 	_move = "ZombieFeed" + str(_rnd);
 	player playMoveNow _move;
 
-	sleep 1;
+	uiSleep 1;
 
 	// player playActionNow "PutDown";
 	[player,50,true,(getPosATL player)] spawn player_alertZombies;
@@ -22,7 +22,7 @@ if(!(alive _item)) then {
 
 	_item setVariable["meatHarvested",true,true];
 
-	sleep 1;
+	uiSleep 1;
 
 	_regen = 200;
 

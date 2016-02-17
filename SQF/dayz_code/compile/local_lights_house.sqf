@@ -95,7 +95,7 @@ if(!isNil "_objHouse")then{
 				};
 
 				_brtns = [_plyr,_x] call axe_lightBrightness;
-				while{true}do{sleep .1;if (_x animationPhase "Lights_1"==1) exitWith {};};
+				while{true}do{uiSleep 0.1;if (_x animationPhase "Lights_1"==1) exitWith {};};
 				
 				//axeDiagLog = format["HL:NEW HOUSE LIT:%1",_x];
 				//publicVariable "axeDiagLog";

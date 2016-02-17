@@ -37,7 +37,7 @@ _sfx = "tentpack";
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 	
-sleep 3;
+uiSleep 3;
 
 _classname = 	getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "create");
 

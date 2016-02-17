@@ -55,7 +55,7 @@ _qty = count _fuelCans;
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 
@@ -82,7 +82,7 @@ _qty = count _fuelCans;
 		};
 	}; 
 
-	sleep 1;
+	uiSleep 1;
 	if(_abort) exitWith {};
 
 } count _fuelCans;

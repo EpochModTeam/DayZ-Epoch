@@ -129,9 +129,9 @@ if (!isNil "_newBackpackType") then {
 			_backpackWpnQtys = _backpackWpn select 1;
 		};
 		[] call _switchUnit;
-		if (gear_done) then {sleep 0.001;};
+		if (gear_done) then {uiSleep 0.001;};
 		["1"] call gearDialog_create;
-		if (gear_done) then {sleep 0.001;};
+		if (gear_done) then {uiSleep 0.001;};
 		//magazines
 		_countr = 0;
 		{
@@ -152,7 +152,7 @@ if (!isNil "_newBackpackType") then {
 			};
 		} count _backpackMag;
 		(findDisplay 106) closeDisplay 0;
-		if (gear_done) then {sleep 0.001; disableUserInput false;};
+		if (gear_done) then {uiSleep 0.001; disableUserInput false;};
 		_countr = 0;
 		{
 			(unitBackpack player) addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];
