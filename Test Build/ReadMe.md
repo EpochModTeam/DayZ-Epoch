@@ -4,7 +4,7 @@
 To install You need to overwrite an installation of 1.0.5.1 with the included files
 These builds are NOT signed so you will need to check back frequently in order to ensure you are runnign the same version as the server
 
-Current Version: **EpochTest-106-FEB_12_2016**
+Current Version: **EpochTest-106-FEB_16_2016**
 
 --------------------------
 Test Server Information
