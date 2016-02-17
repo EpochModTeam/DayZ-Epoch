@@ -7,7 +7,8 @@ cutText ["","BLACK OUT"];
 enableSaving [false, false];
 
 //REALLY IMPORTANT VALUES
-dayZ_instance =	8;				//The instance
+dayZ_instance =	8; //The instance
+dayZ_serverName = ""; //Shown to all players in the bottom left of the screen
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
@@ -83,6 +84,7 @@ if (!isDedicated) then {
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	if (!isNil "dayZ_serverName") then { execVM "\z\addons\dayz_code\system\watermark.sqf"; };
 };
 #include "\z\addons\dayz_code\system\REsec.sqf"
 //Start Dynamic Weather
