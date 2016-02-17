@@ -15,6 +15,7 @@
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
 [CHANGED] Tweaked fuel capacity variables for vehicles. @RimBlock
 [CHANGED] Tweaked rotate_logs.bat to incorporate the day of the week for better organization @Raziel23x 
+[CHANGED] All instances of sleep replaced with the more reliable uiSleep @icomrade
 
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
@@ -26,7 +27,7 @@
 [FIXED] Fire cleanup diag_log error in server_functions.sqf #1421 @ebaydayz
 [FIXED] NearestObjects position error in server_playerSync.sqf #1425 @ebaydayz
 [FIXED] Corrected ClassName type for CH53_DZE and BAF_Merlin_DZE. @Cinjun
-[FIXED] Some counts reverted to forEach - count loops can not be nested inside other count loops #1491-#1495 @ebaydayz
+[FIXED] Some counts reverted to forEach. Count loops can not be nested inside other count loops #1491-#1495 @ebaydayz
 [FIXED] Safes empty when opening after restart #1467 @ebaydayz
 [FIXED] Dynamic_vehicle spawning non-upgradable classes of hilux1 & datsun1.  @Uro1
 [FIXED] Eating while inside a vehicle did not drop empty can  @deadeye2
