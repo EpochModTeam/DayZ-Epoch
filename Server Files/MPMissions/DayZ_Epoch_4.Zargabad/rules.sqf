@@ -1,7 +1,7 @@
 private ["_messages", "_timeout"];
 
 if (isServer) exitWith {};
-waitUntil { sleep 1; !isNil ("PVDZE_plr_LoginRecord") };
+waitUntil { uiSleep 1; !isNil ("PVDZE_plr_LoginRecord") };
 
 _messages = [
 	["DayZ Epoch", "Welcome "+(name player)],
@@ -17,7 +17,7 @@ _messages = [
 _timeout = 5;
 {
 	private ["_title", "_content", "_titleText"];
-	sleep 2;
+	uiSleep 2;
 	_title = _x select 0;
 	_content = _x select 1;
 	_titleText = format[("<t font='TahomaB' size='0.40' color='#a81e13' align='right' shadow='1' shadowColor='#000000'>%1</t><br /><t shadow='1'shadowColor='#000000' font='TahomaB' size='0.60' color='#FFFFFF' align='right'>%2</t>"), _title, _content];
@@ -28,5 +28,5 @@ _timeout = 5;
 		_timeout,
 		0.5
 	] spawn BIS_fnc_dynamicText;
-	sleep (_timeout * 1.1);
+	uiSleep (_timeout * 1.1);
 } forEach _messages;
