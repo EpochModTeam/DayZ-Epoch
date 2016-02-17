@@ -65,7 +65,7 @@ if (_finished) then {
 			[player,20] call player_humanityChange;
 		};
 
-		{_unit setVariable[_x,false,true];} count USEC_woundHit;
+		{_unit setVariable[_x,false,true];} count USEC_typeOfWounds;
 		_unit setVariable ["USEC_injured",false,true];
 
 	};
