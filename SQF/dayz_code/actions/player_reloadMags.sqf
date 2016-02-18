@@ -53,7 +53,7 @@ for "_i" from _slotstart to _slotend do {
         _qty_total_ammo = _qty_total_ammo + gearSlotAmmoCount _control;
         _consumeMagAmmo = gearSlotAmmoCount _control;
 		_qty_consume_ammo = _qty_consume_ammo + _consumeMagAmmo;
-		if (_consume_magsize < (floor (0.85 * _consumeMagAmmo))) then {
+		if (_consumeMagAmmo >= (floor (0.85 * _consume_magsize))) then {
 			_qty_consume_mags = _qty_consume_mags + 1;
 		};
     };
