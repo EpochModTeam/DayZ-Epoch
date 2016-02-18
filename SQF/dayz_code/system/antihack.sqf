@@ -1,3 +1,8 @@
+/* Block local script execution bug. Still not fixed in A20A as of 1.63.131129 */
+inGameUISetEventHandler ["PrevAction","false"];
+inGameUISetEventHandler ["NextAction","false"];
+inGameUISetEventHandler ["Action","false"];
+
 /*
 	Anti-Teleport - Created By Razor / Refactored By Alby & CopyPasted to Epoch by Skaronator
 */
