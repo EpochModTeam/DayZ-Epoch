@@ -1,6 +1,6 @@
 #include "RscLobby.hpp"
 #include "RscDisplayCraftingMenu.hpp"
-//#include "RscDisplayGear.hpp"
+#include "RscDisplayGear.hpp"
 #include "RscDisplayGenderSelect.hpp"
 #include "RscDisplaySpawnSelecter.hpp"
 #include "RscPlayerUI.hpp"

@@ -265,6 +265,15 @@ class RscTitles
 				w = 0.075;
 				h = 0.10;
 			};
+			class RscPicture_1307: RscPictureGUI
+			{
+				idc = 1307;
+				// blood type
+				x = 0.955313 * safezoneW + safezoneX;
+				y = 0.79 * safezoneH + safezoneY;
+				w = 0.075;
+				h = 0.10;
+			};
 			class RscPicture_1302: RscPictureGUI
 			{
 				idc = 1302;
