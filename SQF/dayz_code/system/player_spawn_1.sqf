@@ -25,7 +25,7 @@ while {true} do {
 	};
 	
 	if ((diag_tickTime - _timer1) > 60) then {
-		_position = getPosATL player;
+		_position = [player] call FNC_GetPos;
 		//Current amounts
 		dayz_spawnZombies = {alive _x AND local _x} count (_position nearEntities ["zZombie_Base",200]);
 		dayz_CurrentNearByZombies = {alive _x} count (_position nearEntities ["zZombie_Base",200]);

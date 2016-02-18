@@ -8,7 +8,7 @@ _dateNow = (DateToNumber date);
 _maxWildZombies = 3;
 _age = -1;
 _radius = 200;
-_position = getPosATL player;
+_position = [player] call FNC_GetPos;
 
 dayz_spawnZombies = 0;
 dayz_CurrentZombies = 0;

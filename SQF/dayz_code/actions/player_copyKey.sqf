@@ -1,4 +1,4 @@
-private ["_item","_config","_onLadder","_create","_started","_finished","_animState","_isMedic","_qty","_b0x1337","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
+private ["_item","_config","_pos","_onLadder","_create","_started","_finished","_animState","_isMedic","_qty","_b0x1337","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_56") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -16,7 +16,8 @@ if (!_haskey) exitWith {DZE_ActionInProgress = false; cutText [format[(localize 
 _hastoolweapon = "ItemKeyKit" in weapons player;
 if (!_hastoolweapon) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_57") , "PLAIN DOWN"]};
 
-_isNear = {inflamed _x} count (getPosATL player nearObjects 3);
+_pos = [player] call FNC_GetPos;
+_isNear = {inflamed _x} count (_pos nearObjects 3);
 if(_isNear == 0) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_58") , "PLAIN DOWN"]};
 
 call gear_ui_init;
@@ -28,7 +29,7 @@ if(!_hasTinBar) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_
 player playActionNow "Medic";
 
 [player,"repair",0,false] call dayz_zombieSpeak;
-[player,50,true,(getPosATL player)] spawn player_alertZombies;
+[player,50,true,_pos] spawn player_alertZombies;
 			
 r_interrupt = false;
 _animState = animationState player;
