@@ -139,10 +139,7 @@ class CfgAddons
 
 //Duplicates that need to be checked against first block
 //#include "Configs\CfgVehicles.hpp"
-//#include "Configs\CfgFaces.hpp"
-//#include "Configs\CfgGlasses.hpp"
 //#include "Configs\CfgMagazines.hpp"
-//#include "Configs\CfgMarkers.hpp"
 //#include "Configs\CfgAmmo.hpp"
 //#include "Configs\CfgLoot\CfgBuildingLoot.hpp"
 //#include "Configs\CfgArma.hpp"
