@@ -3117,14 +3117,14 @@
 			<Czech>\n\nStavba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
-			<Original>\n\nCannot build, too many objects within 30m.</Original>
-			<English>\n\nCannot build, too many objects within 30m.</English>
-			<German>\n\nBau nicht möglich, zu viele Objekte innerhalb von 30m.</German>
-			<Russian>\n\nНельзя построить, слишком много объектов в пределах 30 м.</Russian>
+			<Original>\n\nCannot build, too many objects within %1m.</Original>
+			<English>\n\nCannot build, too many objects within %1m.</English>
+			<German>\n\nBau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
+			<Russian>\n\nНельзя построить, слишком много объектов в пределах %1m.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nKan niet bouwen, teveel objecten binnen 30m.</Dutch>
-			<French>\n\nImpossible de construire, il y a trop d'objets à moins de 30m.</French>
-			<Czech>\n\nNelze postavit, v okruhu 30 metrů je přiliš mnoho předmětů.</Czech>
+			<Dutch>\n\nKan niet bouwen, teveel objecten binnen %1.</Dutch>
+			<French>\n\nImpossible de construire, il y a trop d'objets à moins de %1m.</French>
+			<Czech>\n\nNelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_42">
 			<Original>Cannot build while in a vehicle.</Original>
