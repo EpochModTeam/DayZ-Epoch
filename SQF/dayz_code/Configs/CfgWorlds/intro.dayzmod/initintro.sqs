@@ -1,0 +1,115 @@
+;
+;        Created exclusively for ArmA2:OA - DayZMod.
+;        Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (DayZDev@Skaronator.com)
+;
+
+titleCut ["", "BLACK FADED", 0];
+showCinemaBorder false
+
+0 fadeMusic 0;
+playMusic ["dayz_track_death_1",16];
+5 fadeMusic 0.5;
+
+skipTime random 9;
+0 setOvercast random 0.85;
+
+~0.01
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [0.0, 0.0, 0.0, 0.0], [0.81, 0.81, 0.883, 0.6],[0.099, 0.487, 0.014, 0.0]];  "colorCorrections" ppEffectCommit 0;  "colorCorrections" ppEffectEnable true;  
+	"filmGrain" ppEffectEnable true; 
+	"filmGrain" ppEffectAdjust [0.04, 1, 1, 0.1, 1, false];
+	"filmGrain" ppEffectCommit 0; 
+	
+"radialBlur" ppEffectEnable false;
+"wetDistortion" ppEffectEnable false;
+"chromAberration" ppEffectEnable false;
+"dynamicBlur" ppEffectEnable false;
+
+
+
+_camera = "camera" camCreate  [12222.323, 3415.7791, -0.059190542]
+
+;##################1 - 1. Point
+_camera camPrepareTarget [6433.5786, 2648.6802, 37.057621]
+_camera camPrepareFOV 0.700
+_camera camCommand "intertia on"
+_camera cameraEffect ["internal","back"]
+
+_camera camPrepareTarget [6433.5786, 2548.6802, 37.057621]
+_camera camPreparePos [6703.0737, 2325.9983, 0.4]
+_camera camPreload 15
+#loop
+
+camPreloaded _camera
+_camera camCommitPrepared 0
+titleCut ["", "BLACK IN", 5];
+
+
+;##################1 - 2. Point
+_camera camPrepareTarget [6786.1255, 2481.9768, 28.410231]
+_camera camPreparePos [6681.1963, 2348.0803, 7]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 30
+
+~15
+
+;##################2 - 1. Point
+_camera camPrepareTarget [5210.0571, 7646.0366, 9.1552734e-005]
+_camera camPreparePos [5219.0688, 7613.1143, 1]
+_camera camPrepareFOV 0.700
+_camera camPreload 15
+~10
+titleCut ["", "BLACK OUT", 5];
+~5
+_camera camCommitPrepared 0
+titleCut ["", "BLACK IN", 5];
+
+
+;##################2 - 2. Point
+_camera camPrepareTarget [5210.0571, 7646.0366, 9.1552734e-005]
+_camera camPreparePos [5236.7905, 7636.2803, 8.8136444]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 30
+
+~15
+
+;##################3 - 1. Point
+_camera camPrepareTarget [4653.6475, 9595.6875, 6.1035156e-005]
+_camera camPreparePos [4572.0542, 9593.2588, 4]
+_camera camPrepareFOV 0.700
+_camera camPreload 15
+~10
+titleCut ["", "BLACK OUT", 5];
+~5
+_camera camCommitPrepared 0
+titleCut ["", "BLACK IN", 5];
+
+;##################3 - 2. Point
+_camera camPrepareTarget [4617.71, 9586.6768, 6.1035156e-005]
+_camera camPreparePos [4606.9297, 9621.3691, 9.5633936]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 30
+
+~15
+;##################1 - 1. Point
+_camera camPrepareTarget [6433.5786, 2548.6802, 37.057621]
+_camera camPreparePos [6703.0737, 2325.9983, 0.4]
+_camera camPreload 15
+~10
+5 fadeMusic 0
+titleCut ["", "BLACK OUT", 5];
+~5
+
+
+skipTime random -2;
+0 setOvercast random 0.5;
+
+
+titleCut ["", "BLACK FADED", 0];
+goto "loop"
+
+;exit
+player cameraEffect ["terminate","back"]
+_this switchMove ""
+camDestroy _camera
+exit
+

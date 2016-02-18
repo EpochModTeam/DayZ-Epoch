@@ -1,0 +1,14 @@
+ZombieMilitary[] =
+{
+	{Loot_MAGAZINE,		1,		FoodMRE},
+	{Loot_GROUP,		3,		MedicalLow},
+	{Loot_GROUP,		10,		AmmoMilitaryLow},
+	{Loot_GROUP,		2,		AmmoMilitaryHigh},
+	{Loot_GROUP,		2,		Consumable}
+};
+
+ZombieMilitaryViral[] =
+{
+	{Loot_GROUP,		10,		ZombieMilitary},
+	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
+};
