@@ -61,7 +61,8 @@ Missing:
 	
 	//fire
 	private ["_fireplaces"];
-	_fireplaces = nearestObjects [player, ["Land_Fire","Land_Campfire"], 8];
+	_pPos = [player] call FNC_GetPos;
+	_fireplaces = nearestObjects [_pPos, ["Land_Fire","Land_Campfire"], 8];
 	if(({inflamed _x} count _fireplaces) > 0 && !_isinvehicle ) then {
 		//Math: factor * 1 / (0.5*(distance max 1)^2) 		0.5 = 12.5% of the factor effect in a distance o 4 meters
 		_difference 	= _difference + (_fire_factor /(0.5*((player distance (_fireplaces select 0)) max 1)^2));
