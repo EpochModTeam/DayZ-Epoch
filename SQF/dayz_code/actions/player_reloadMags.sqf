@@ -1,4 +1,4 @@
-private ["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest"];
+private ["_item","_config","_consumeArr","_consumeMagAmmo","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest"];
 
 disableSerialization;
 call gear_ui_init;
@@ -10,7 +10,8 @@ _item =     _this;
 
 _config =   configFile >> "CfgMagazines" >> _item;
 
-_consume =  getArray (_config >> "ItemActions" >> "ReloadMag" >> "use") select 0;
+_consumeArr =  getArray (_config >> "ItemActions" >> "ReloadMag" >> "use");
+_consume =  _consumeArr select 0;
 _create =   getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") select 0;
 
 _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
@@ -44,18 +45,22 @@ _qty_create_ammo = 0;
 _qty_consume_mags = 0;
 _qty_create_mags = 0;
 _qty_free_slots = 0;
+_consumeMagAmmo = 0;
 for "_i" from _slotstart to _slotend do {
     _control =_dialog displayCtrl _i;
     _mag = gearSlotData _control;
     if (_mag == _consume) then {
         _qty_total_ammo = _qty_total_ammo + gearSlotAmmoCount _control;
-        _qty_consume_ammo = _qty_consume_ammo + gearSlotAmmoCount _control;
-        _qty_consume_mags = _qty_consume_mags+1;
+        _consumeMagAmmo = gearSlotAmmoCount _control;
+		_qty_consume_ammo = _qty_consume_ammo + _consumeMagAmmo;
+		if (_consume_magsize < (floor (0.85 * _consumeMagAmmo))) then {
+			_qty_consume_mags = _qty_consume_mags + 1;
+		};
     };
     if  (_mag == _create) then {
         _qty_total_ammo = _qty_total_ammo + gearSlotAmmoCount _control;
         _qty_create_ammo = _qty_create_ammo + gearSlotAmmoCount _control;
-        _qty_create_mags = _qty_create_mags+1;
+        _qty_create_mags = _qty_create_mags + 1;
     };
     if (_mag == "") then {
         _qty_free_slots = _qty_free_slots + 1;
@@ -92,10 +97,14 @@ _qtynew_consume_ammo_rest = _qtynew_consume_ammo - (_qtynew_consume_mags_full*_c
 _qtynew_create_ammo_rest = _qtynew_create_ammo - (_qtynew_create_mags_full*_create_magsize);
 
 // abort if no complete mags || partial mag is less than 15% full
-if(_qtynew_create_ammo_rest > 0 && _qtynew_create_ammo_rest < (_create_magsize*0.85)) exitWith { cutText [(localize "str_epoch_player_81"), "PLAIN DOWN"]; };
+if(_qtynew_create_ammo_rest > 0 && _qty_consume_mags >= (count _consumeArr)) exitWith { cutText [(localize "str_epoch_player_81"), "PLAIN DOWN"]; };
 
 //remove all _consume && _create mags (we already have total ammo count) 
-player removeMagazines _consume;
+
+{
+	player removeMagazines _x;
+} count _consumeArr;
+
 player removeMagazines _create; 
 
 for "_i" from 1 to _qtynew_consume_mags_full do {
