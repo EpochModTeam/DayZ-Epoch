@@ -53,8 +53,11 @@ if(_type == "weapon") then {
 if(_type == "backpack") then {
 	_b0x1337 addBackpackCargoGlobal  [_create,_qty];
 };
-
-_b0x1337 setPosATL _location;
+if (surfaceIsWater _location) then {
+	_b0x1337 setPosASL _location;
+} else {
+	_b0x1337 setPosATL _location;
+};
 
 player reveal _b0x1337;
 
