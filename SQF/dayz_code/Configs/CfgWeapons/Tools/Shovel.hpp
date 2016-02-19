@@ -1,6 +1,6 @@
 class ItemShovel : ItemCore
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\z\addons\dayz_communityassets\models\shovel.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_shovel_ca.paa";
@@ -23,7 +23,7 @@ class ItemShovel : ItemCore
 
 class ItemShovelBroken : ItemCore
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\z\addons\dayz_communityassets\models\shovel.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_shovel_ca.paa";

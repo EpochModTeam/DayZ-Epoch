@@ -3,7 +3,7 @@
 
 class ItemAntibacterialWipe : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotHandGunItem;
 	
@@ -24,7 +24,7 @@ class ItemAntibacterialWipe : CA_Magazine
 
 class ItemBandage : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotHandGunItem;
 	
@@ -45,7 +45,7 @@ class ItemBandage : CA_Magazine
 
 class ItemSepsisBandage : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotHandGunItem;
 	
@@ -66,7 +66,7 @@ class ItemSepsisBandage : CA_Magazine
 
 class ItemPainkiller : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -87,7 +87,7 @@ class ItemPainkiller : CA_Magazine
 
 class ItemEpinephrine : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -99,7 +99,7 @@ class ItemEpinephrine : CA_Magazine
 
 class ItemMorphine : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -120,7 +120,7 @@ class ItemMorphine : CA_Magazine
 
 class ItemHeatPack : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	

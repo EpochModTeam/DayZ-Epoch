@@ -1320,7 +1320,7 @@ class CfgMagazines {
 		};
 	};
 	class ItemTentDomed : ItemTent {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "Camping Tent Desert";
@@ -1356,7 +1356,7 @@ class CfgMagazines {
 		};
 	};
 	class ItemTentDomed2 : ItemTent {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "Camping Tent Green";
@@ -1392,7 +1392,7 @@ class CfgMagazines {
 	};
 
 	class ItemSandbag : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_21;
@@ -1451,7 +1451,7 @@ class CfgMagazines {
 	};
 
 	class BagFenceRound_DZ_kit : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "Round Sandbag Fence";
@@ -1479,7 +1479,7 @@ class CfgMagazines {
 	};
 
 	class ItemSledgeHead : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "Sledgehammer Head";
@@ -1501,7 +1501,7 @@ class CfgMagazines {
 		};
 	};
 	class ItemSledgeHandle : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "Sledgehammer Handle";
@@ -1524,7 +1524,7 @@ class CfgMagazines {
 	};
 
 	class ItemSandbagLarge : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "H-barrier cube";
@@ -1553,7 +1553,7 @@ class CfgMagazines {
 
 
 	class ItemSandbagExLarge : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "3 x H-barrier cube";
@@ -1581,7 +1581,7 @@ class CfgMagazines {
 	};
 
 	class ItemSandbagExLarge5x : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "5 x H-barrier cube";
@@ -1600,7 +1600,7 @@ class CfgMagazines {
 	};
 
 	class ItemTankTrap : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_22;
@@ -1619,7 +1619,7 @@ class CfgMagazines {
 	};
 
 	class TrapBear : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = "Bear Trap";
@@ -1638,7 +1638,7 @@ class CfgMagazines {
 	};
 
 	class ItemWire : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_23;
@@ -1670,7 +1670,7 @@ class CfgMagazines {
 
 	class HandGrenade_Stone;
 	class ItemTrashToiletpaper : HandGrenade_Stone {
-		scope = public;
+		scope = 2;
 		count = 1;
 		displayName = $STR_JUNK_NAME_TOILETPAPER;
 		descriptionShort = $STR_JUNK_DESC_TOILETPAPER;
@@ -1680,7 +1680,7 @@ class CfgMagazines {
 		ammo = "GrenadeHand_Stone";
 	};
 	class ItemTrashRazor : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		displayName = $STR_JUNK_NAME_RAZOR;
 		descriptionShort = $STR_JUNK_DESC_RAZOR;
@@ -1690,7 +1690,7 @@ class CfgMagazines {
 	};
 
 	class ItemKiloHemp : CA_Magazine {
-		scope = public;
+		scope = 2;
 		count = 1;
 		displayName = "Kilo of Hemp";
 		descriptionShort = "Kilo of Hemp";

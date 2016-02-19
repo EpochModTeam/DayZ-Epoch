@@ -1,7 +1,7 @@
 // Armed
 class M113_UN_EP1;
 class M113_UN_EP1_DZ: M113_UN_EP1 {
-	scope = public;
+	scope = 2;
 	side = TGuerrila;
 	displayName = "M113 DZ";
 
@@ -22,7 +22,7 @@ class M113_UN_EP1_DZ: M113_UN_EP1 {
 };
 class M113_TK_EP1;
 class M113_TK_EP1_DZ: M113_TK_EP1 {
-	scope = public;
+	scope = 2;
 	side = TGuerrila;
 	displayName = "M113 DZ";
 
@@ -63,7 +63,7 @@ class M113_TK_EP1_DZE: M113_TK_EP1_DZ {
 // Unarmed
 class M113Ambul_UN_EP1;
 class M113Ambul_UN_EP1_DZ: M113Ambul_UN_EP1 {
-	scope = public;
+	scope = 2;
 	side = TGuerrila;
 	crew = "";
 	typicalCargo[] = {};
@@ -79,7 +79,7 @@ class M113Ambul_UN_EP1_DZ: M113Ambul_UN_EP1 {
 };
 class M113Ambul_TK_EP1;
 class M113Ambul_TK_EP1_DZ: M113Ambul_TK_EP1 {
-	scope = public;
+	scope = 2;
 	side = TGuerrila;
 	crew = "";
 	typicalCargo[] = {};

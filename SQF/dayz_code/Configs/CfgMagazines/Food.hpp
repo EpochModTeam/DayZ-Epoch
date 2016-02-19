@@ -10,7 +10,7 @@ class FoodCanFrankBeans: FoodEdible {
 };
 
 class FoodmeatRaw : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_FOOD_EQIP_CODE_NAME_0;
@@ -48,7 +48,7 @@ class FoodbeefRaw : FoodmeatRaw {
 };
 
 class FoodmeatCooked : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_0;
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
@@ -85,7 +85,7 @@ class FoodbeefCooked : FoodmeatCooked {
 };
 
 class AngelCookies : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_5;
 	model = "z\addons\dayz_communityassets\models\buiscits_box.p3d";
@@ -94,7 +94,7 @@ class AngelCookies : FoodEdible {
 	bloodRegen = 100;
 };
 class FoodMRE : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 800;
 	displayName = $STR_FOOD_NAME_MRE;
@@ -103,7 +103,7 @@ class FoodMRE : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
 };
 class FoodPistachio : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 100;
 	displayName = $STR_FOOD_NAME_PISTACHIO;
@@ -112,7 +112,7 @@ class FoodPistachio : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
 };
 class FoodNutmix : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 100;
 	displayName = $STR_FOOD_NAME_NUTMIX;
@@ -122,7 +122,7 @@ class FoodNutmix : FoodEdible {
 };
 
 class FoodCanGriff : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_GRIFF;
@@ -131,7 +131,7 @@ class FoodCanGriff : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_full_ca.paa";
 };
 class FoodCanBadguy : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_BADGUY;
@@ -140,7 +140,7 @@ class FoodCanBadguy : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_full_ca.paa";
 };
 class FoodCanBoneboy : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_BONEBOY;
@@ -149,7 +149,7 @@ class FoodCanBoneboy : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_full_ca.paa";
 };
 class FoodCanCorn : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_CORN;
@@ -158,7 +158,7 @@ class FoodCanCorn : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_full_ca.paa";
 };
 class FoodCanCurgon : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_CURGON;
@@ -167,7 +167,7 @@ class FoodCanCurgon : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_full_ca.paa";
 };
 class FoodCanDemon : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_DEMON;
@@ -176,7 +176,7 @@ class FoodCanDemon : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_full_ca.paa";
 };
 class FoodCanFraggleos : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_FRAGGLEOS;
@@ -185,7 +185,7 @@ class FoodCanFraggleos : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_full_ca.paa";
 };
 class FoodCanHerpy : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_HERPY;
@@ -194,7 +194,7 @@ class FoodCanHerpy : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_full_ca.paa";
 };
 class FoodCanOrlok : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_ORLOK;
@@ -203,7 +203,7 @@ class FoodCanOrlok : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_full_ca.paa";
 };
 class FoodCanPowell : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_POWELL;
@@ -212,7 +212,7 @@ class FoodCanPowell : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_full_ca.paa";
 };
 class FoodCanTylers : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_TYLERS;
@@ -221,7 +221,7 @@ class FoodCanTylers : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_full_ca.paa";
 };
 class FoodCanUnlabeled : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 200;
 	displayName = $STR_FOOD_NAME_CAN_UNLABELED;
@@ -250,7 +250,7 @@ class TrashTinCan: HandGrenade {
 };
 
 class FoodCanGriffEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	model = "z\addons\dayz_communityassets\models\can_griff_clean_empty.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
@@ -259,7 +259,7 @@ class FoodCanGriffEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanBadguyEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_BADGUY_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_BADGUY_EMPTY;
@@ -268,7 +268,7 @@ class FoodCanBadguyEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanBoneboyEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_BONEBOY_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_BONEBOY_EMPTY;
@@ -277,7 +277,7 @@ class FoodCanBoneboyEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanCornEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_CORN_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_CORN_EMPTY;
@@ -286,7 +286,7 @@ class FoodCanCornEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanCurgonEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_CURGON_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_CURGON_EMPTY;
@@ -295,7 +295,7 @@ class FoodCanCurgonEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanDemonEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_DEMON_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_DEMON_EMPTY;
@@ -304,7 +304,7 @@ class FoodCanDemonEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanFraggleosEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_FRAGGLEOS_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY;
@@ -313,7 +313,7 @@ class FoodCanFraggleosEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanHerpyEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_HERPY_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_HERPY_EMPTY;
@@ -322,7 +322,7 @@ class FoodCanHerpyEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanOrlokEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_ORLOK_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_ORLOK_EMPTY;
@@ -331,7 +331,7 @@ class FoodCanOrlokEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanPowellEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_POWELL_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_POWELL_EMPTY;
@@ -340,7 +340,7 @@ class FoodCanPowellEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanTylersEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_TYLERS_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_TYLERS_EMPTY;
@@ -349,7 +349,7 @@ class FoodCanTylersEmpty : TrashTinCan {
 	ammo = "TinCan";
 };
 class FoodCanUnlabeledEmpty : TrashTinCan {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_FOOD_NAME_CAN_UNLABELED_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED_EMPTY;

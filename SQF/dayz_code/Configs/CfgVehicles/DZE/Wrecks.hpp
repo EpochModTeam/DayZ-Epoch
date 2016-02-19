@@ -1,5 +1,5 @@
 class UH60_NAVY_Wreck_DZ: SpawnableWreck {
-	scope = public;
+	scope = 2;
 	class Armory {
 		disabled = 1;
 	};

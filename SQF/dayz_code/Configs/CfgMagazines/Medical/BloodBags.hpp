@@ -1,6 +1,6 @@
 class bloodBagBase : CA_Magazine
 {
-	scope = private;
+	scope = 0;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -9,7 +9,7 @@ class bloodBagBase : CA_Magazine
 
 class bloodBagANEG : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagANEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_A.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagANEG;
@@ -17,7 +17,7 @@ class bloodBagANEG : bloodBagBase
 
 class bloodBagAPOS : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagAPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_A.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagAPOS;
@@ -25,7 +25,7 @@ class bloodBagAPOS : bloodBagBase
 
 class bloodBagBNEG : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagBNEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_B.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagBNEG;
@@ -33,7 +33,7 @@ class bloodBagBNEG : bloodBagBase
 
 class bloodBagBPOS : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagBPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_B.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagBPOS;
@@ -41,7 +41,7 @@ class bloodBagBPOS : bloodBagBase
 
 class bloodBagABNEG : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagABNEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_AB.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagABNEG;
@@ -49,7 +49,7 @@ class bloodBagABNEG : bloodBagBase
 
 class bloodBagABPOS : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagABPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_AB.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagABPOS;
@@ -57,7 +57,7 @@ class bloodBagABPOS : bloodBagBase
 
 class bloodBagONEG : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagONEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_O.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagONEG;
@@ -65,7 +65,7 @@ class bloodBagONEG : bloodBagBase
 
 class bloodBagOPOS : bloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_bloodBagOPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_O.p3d";
 	descriptionShort = $STR_BLD_desc_bloodBagOPOS;
@@ -88,56 +88,56 @@ class wholeBloodBagBase : bloodBagBase
 
 class wholeBloodBagANEG : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagANEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_A.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagANEG;
 };
 class wholeBloodBagAPOS : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagAPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_A.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagAPOS;
 };
 class wholeBloodBagBNEG : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagBNEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_B.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagBNEG;
 };
 class wholeBloodBagBPOS : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagBPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_B.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagBPOS;
 };
 class wholeBloodBagABNEG : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagABNEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_AB.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagABNEG;
 };
 class wholeBloodBagABPOS : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagABPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_AB.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagABPOS;
 };
 class wholeBloodBagONEG : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagONEG;
 	model = "z\addons\dayz_communityassets\models\bbag_full_m_O.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagONEG;
 };
 class wholeBloodBagOPOS : wholeBloodBagBase
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_BLD_name_wholeBloodBagOPOS;
 	model = "z\addons\dayz_communityassets\models\bbag_full_p_O.p3d";
 	descriptionShort = $STR_BLD_desc_wholeBloodBagOPOS;
@@ -146,7 +146,7 @@ class wholeBloodBagOPOS : wholeBloodBagBase
 //MISC tools needed
 class bloodTester : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -167,7 +167,7 @@ class bloodTester : CA_Magazine
 
 class transfusionKit : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -188,7 +188,7 @@ class transfusionKit : CA_Magazine
 
 class emptyBloodBag : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	

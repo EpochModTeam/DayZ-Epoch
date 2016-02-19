@@ -1,6 +1,6 @@
 class ItemSodaEmpty : HandGrenade
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\dayz_equip\models\soda_coke_e.p3d";
 	picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
@@ -21,7 +21,7 @@ class ItemSodaEmpty : HandGrenade
 	
 class TrashTinCan : HandGrenade
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\dayz_equip\models\trash_tincan.p3d";
 	picture = "\dayz_equip\textures\equip_tincan_ca.paa";

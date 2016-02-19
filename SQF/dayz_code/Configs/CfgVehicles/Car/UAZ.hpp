@@ -78,7 +78,7 @@ class UAZ_Unarmed_Base : UAZ_Base {
     hiddenSelectionsTextures[] = {
       "\ca\wheeled\data\Uaz_main_002_CO.paa"
     };
-  };
+ };
 
 class UAZ_CDF: UAZ_Unarmed_Base {
 	scope = 2;

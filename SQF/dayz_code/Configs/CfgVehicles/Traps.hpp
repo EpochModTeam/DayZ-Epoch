@@ -1,7 +1,7 @@
 class TrapItems : NonStrategic {};
 
 class BearTrap_DZ : TrapItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	displayName = $STR_EQUIP_NAME_BEARTRAP;
 	descriptionShort = $STR_EQUIP_DESC_BEARTRAP;
@@ -111,7 +111,7 @@ class Bomb
 };
 
 class TrapBearTrapFlare : TrapItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "z\addons\dayz_communityassets\models\trap_beartrap_flare.p3d";
@@ -160,7 +160,7 @@ class TrapBearTrapFlare : TrapItems {
 };
 
 class TrapBearTrapSmoke : TrapItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "z\addons\dayz_communityassets\models\trap_beartrap_smoke.p3d";
@@ -209,7 +209,7 @@ class TrapBearTrapSmoke : TrapItems {
 };
 
 class Trap_Cans : TrapItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "z\addons\dayz_communityassets\models\tripwire_cans.p3d";
@@ -258,7 +258,7 @@ class Trap_Cans : TrapItems {
 };
 
 class TrapTripwireFlare : TrapItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "z\addons\dayz_communityassets\models\trap_tripwire_flare.p3d";
@@ -307,7 +307,7 @@ class TrapTripwireFlare : TrapItems {
 };
 
 class TrapTripwireGrenade : TrapItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "z\addons\dayz_communityassets\models\trap_tripwire_grenade.p3d";
@@ -356,7 +356,7 @@ class TrapTripwireGrenade : TrapItems {
 };
 
 class TrapTripwireSmoke : TrapItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "z\addons\dayz_communityassets\models\trap_tripwire_smoke.p3d";

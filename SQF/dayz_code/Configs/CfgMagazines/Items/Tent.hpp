@@ -1,6 +1,6 @@
 class ItemTent : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 3;
 	
@@ -24,7 +24,7 @@ class ItemTent : CA_Magazine
 
 class ItemDomeTent : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 3;
 	

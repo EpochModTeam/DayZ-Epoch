@@ -1,5 +1,5 @@
 class equip_tin_powder : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = "Tin of Powder";
 	descriptionShort = "Tin of Powder has medicinal qualities";

@@ -48,7 +48,7 @@ class ItemPlank : CA_Magazine
 
 class PartWoodPile : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	

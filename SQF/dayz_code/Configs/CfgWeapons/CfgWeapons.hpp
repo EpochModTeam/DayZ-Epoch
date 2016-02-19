@@ -261,7 +261,7 @@ class CfgWeapons
 	
 	/*class ItemFlashlightEmpty : ItemCore
 	{
-		scope = public;
+		scope = 2;
 		displayName = $STR_EQUIP_NAME_5;
 		model = "\dayz_equip\models\flashlight.p3d";
 		picture = "\dayz_equip\textures\equip_flashlight_ca.paa";
@@ -270,7 +270,7 @@ class CfgWeapons
 	
 	class ItemSodaEmpty : HandGrenade
 	{
-		scope = public;
+		scope = 2;
 		displayName = $STR_EQUIP_NAME_35;
 		model = "\dayz_equip\models\soda_coke_e.p3d";
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
@@ -288,7 +288,7 @@ class CfgWeapons
 	
 	class TrashTinCan : HandGrenade
 	{
-		scope = public;
+		scope = 2;
 		displayName = $STR_EQUIP_NAME_33;
 		model = "\dayz_equip\models\trash_tincan.p3d";
 		picture = "\dayz_equip\textures\equip_tincan_ca.paa";

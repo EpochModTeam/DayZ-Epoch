@@ -1,6 +1,6 @@
 class ItemPickaxe : ItemCore
 {
-	scope = public;
+	scope = 2;
 	
 	model = "z\addons\dayz_communityweapons\models\pickaxe\pickaxe.p3d";
 	picture = "\z\addons\dayz_communityweapons\models\pickaxe\pickaxe.paa";
@@ -19,7 +19,7 @@ class ItemPickaxe : ItemCore
 
 class ItemPickaxeBroken : ItemCore
 {
-	scope = public;
+	scope = 2;
 	
 	model = "z\addons\dayz_communityweapons\models\pickaxe\pickaxe.p3d";
 	picture = "\z\addons\dayz_communityweapons\models\pickaxe\pickaxe.paa";

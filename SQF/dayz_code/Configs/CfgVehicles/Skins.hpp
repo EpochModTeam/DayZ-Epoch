@@ -1,4 +1,3 @@
-
 class Man;
 class CAManBase: Man
 {
@@ -104,73 +103,7 @@ class Survivor3_DZ : Survivor2_DZ {
 	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa", "ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa", "ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
 };
 
-class SurvivorW2_DZ : Survivor_DZ {
-	scope = 2;
-	displayName = $STR_CHAR_1;
-	model = "\dayz\characters\annie_original";
-	identityTypes[] = {"Language_W_EN_EP1", "Woman"};
-	languages[] = {"EN"};
-	
-	class TalkTopics {
-		core = "Core_E";
-		core_en = "Core_Full_E";
-	};
-	genericNames = "EnglishWomen";
-	
-	class SpeechVariants {
-		class Default {
-			speechSingular[] = {"veh_woman"};
-			speechPlural[] = {"veh_women"};
-		};
-		
-		class EN : Default {};
-		
-		class CZ {
-			speechSingular[] = {"veh_woman_CZ"};
-			speechPlural[] = {"veh_women_CZ"};
-		};
-		
-		class CZ_Akuzativ {
-			speechSingular[] = {"veh_woman_CZ4P"};
-			speechPlural[] = {"veh_women_CZ4P"};
-		};
-		
-		class RU {
-			speechSingular[] = {"veh_woman_RU"};
-			speechPlural[] = {"veh_women_RU"};
-		};
-	};
-	TextPlural = "Women";
-	TextSingular = "Woman";
-	nameSound = "veh_woman";
-	
-	class HitDamage {
-		class Group0 {
-			hitSounds[] = {{{"ca\sounds\Characters\Noises\Damage\banz-hit-01", 0.177828, 1, 120}, 0.2}, {{"ca\sounds\Characters\Noises\Damage\banz-hit-02", 0.177828, 1, 120}, 0.2}, {{"ca\sounds\Characters\Noises\Damage\banz-hit-03", 0.177828, 1, 120}, 0.2}, {{"ca\sounds\Characters\Noises\Damage\banz-hit-04", 0.177828, 1, 120}, 0.1}, {{"ca\sounds\Characters\Noises\Damage\banz-hit-05", 0.177828, 1, 120}, 0.1}, {{"ca\sounds\Characters\Noises\Damage\banz-hit-06", 0.177828, 1, 120}, 0.1}, {{"ca\sounds\Characters\Noises\Damage\banz-hit-07", 0.177828, 1, 120}, 0.1}};
-			damageSounds[] = {{"body", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-01", 0.0562341, 1, 120, 0.25, 5, 6, 10}}, {"body", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-02", 0.0562341, 1, 120, 0.25, 5, 7.5, 10}}, {"body", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-03", 0.0562341, 1, 120, 0.25, 5, 6, 10}}, {"body", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-04", 0.0562341, 1, 120, 0.25, 5, 7.5, 10}}, {"hands", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-07-arm", 0.0562341, 1, 120, 0.5, 0, 2.5, 5}}, {"hands", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-08-arm", 0.0562341, 1, 120, 0.5, 0, 2.5, 5}}, {"legs", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-05-leg", 0.0562341, 1, 120, 0.5, 0, 1, 2}}, {"legs", {"ca\sounds\Characters\Noises\Damage\banz-damage-g1-06-leg", 0.0562341, 1, 120, 0.5, 0, 1, 2}}};
-		};
-	};
-	
-	class SoundBreath {
-		breath0[] = {{{{"\ca\sounds\Characters\Noises\Breath\hanz-run-breath-01", 0.0562341, 1, 8}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-run-breath-02", 0.0562341, 1, 8}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-run-breath-03", 0.0562341, 1, 8}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-run-breath-04", 0.125893, 1, 8}, 0.25}}, {{{"\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-01", 0.0562341, 1, 15}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-02", 0.0562341, 1, 15}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-03", 0.0562341, 1, 15}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-run2-breath-04", 0.125893, 1, 15}, 0.25}}, {{{"\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-01", 0.1, 1, 20}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-02", 0.1, 1, 20}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-03", 0.1, 1, 20}, 0.25}, {{"\ca\sounds\Characters\Noises\Breath\hanz-sprint-breath-04", 0.1, 1, 20}, 0.25}}};
-	};
-	
-	class SoundGear {
-		primary[] = {{"walk", {"", 0.00177828, 1, 10}}, {"run", {"", 0.00316228, 1, 15}}, {"sprint", {"", 0.00562341, 1, 20}}};
-		secondary[] = {{"walk", {"", 0.00177828, 1, 10}}, {"run", {"", 0.00316228, 1, 10}}, {"sprint", {"", 0.00562341, 1, 10}}};
-	};
-	
-	class SoundEquipment {
-		soldier[] = {{"walk", {"", 0.00177828, 1, 13}}, {"run", {"", 0.00316228, 1, 20}}, {"sprint", {"", 0.00398107, 1, 25}}};
-		civilian[] = {{"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-01", 0.177828, 1, 8}}, {"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-02", 0.177828, 1, 8}}, {"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-03", 0.177828, 1, 8}}, {"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-04", 0.177828, 1, 8}}, {"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-05", 0.177828, 1, 8}}, {"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-06", 0.177828, 1, 8}}, {"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-07", 0.177828, 1, 8}}, {"walk", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-walk-08", 0.177828, 1, 8}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-01", 0.1, 1, 15}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-02", 0.1, 1, 15}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-03", 0.1, 1, 15}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-04", 0.1, 1, 15}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-05", 0.1, 1, 15}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-06", 0.1, 1, 15}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-07", 0.1, 1, 15}}, {"run", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-run-08", 0.1, 1, 15}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-01", 0.0562341, 1, 20}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-02", 0.0562341, 1, 20}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-03", 0.0562341, 1, 20}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-04", 0.0562341, 1, 20}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-05", 0.0562341, 1, 20}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-06", 0.0562341, 1, 20}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-07", 0.0562341, 1, 20}}, {"sprint", {"\ca\sounds\Characters\Noises\Equipment\civil-equipment-sprint-08", 0.0562341, 1, 20}}};
-	};
-	hiddenSelections[] = {};
-};
-
-class BanditW1_DZ : SurvivorW2_DZ {
-	displayName = $STR_CHAR_2;
-	model = "\dayz\characters\woman_bandit";
-};
+//See DZE\Females.hpp for female characters
 
 class Bandit1_DZ : Survivor_DZ { //GER_Soldier_EP1
 	scope = 2;
@@ -281,10 +214,149 @@ class Camo1_DZ: Survivor_DZ { //BAF_Soldier_L_W
 	hiddenSelectionsTextures[] = {"\ca\characters_W_baf\data\camo_dpm_co.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
 
-/*	
-class RU_Soldier_SL;
-class RusSoldierHeadset_DZ: RU_Soldier_SL {
-	displayName = $STR_CHAR_1;
+class INS_Lopotev;
+class INS_Lopotev_DZ: INS_Lopotev {
+		displayName = "Boss";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+class RU_Soldier_Crew;
+class RU_Soldier_Crew_DZ: RU_Soldier_Crew {
+		displayName = "Crewman";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+class TK_Commander_EP1;
+class TK_Commander_EP1_DZ: TK_Commander_EP1 {
+		displayName = "General";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+class TK_Soldier_Sniper_EP1;
+class TK_Soldier_Sniper_EP1_DZ: TK_Soldier_Sniper_EP1 {
+		displayName = "Desert Sniper";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+class TK_Special_Forces_MG_EP1;
+class TK_Special_Forces_MG_EP1_DZ: TK_Special_Forces_MG_EP1 {
+		displayName = "Smuggler";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+
+// good
+class INS_Soldier_AR;
+class INS_Soldier_AR_DZ: INS_Soldier_AR {
+		displayName = "Cooper";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+class INS_Soldier_CO;
+class INS_Soldier_CO_DZ: INS_Soldier_CO {
+		displayName = "Travis";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+class INS_Bardak;
+class INS_Bardak_DZ: INS_Bardak {
+		displayName = "Paulo";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+class INS_Worker2;
+class INS_Worker2_DZ: INS_Worker2 {
+		displayName = "Steve";
+		side = 1;
+		weapons[] = {"Throw","Put"};
+		backpack = "";
+		magazines[] = {};
+		respawnWeapons[] = {"Throw","Put"};
+		respawnMagazines[] = {};
+		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+		canHideBodies = 1;
+		canCarryBackPack = 1;
+};
+
+// bandits
+class Soldier_Crew_PMC;
+class Bandit2_DZ: Soldier_Crew_PMC {
+	scope = 2;
+	side = 1;
+	displayName = $STR_CHAR_2;
+	weapons[] = {"Throw","Put"};
+	model = "\ca\characters_E\GER\GER_rifleman";
+	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
+	magazines[] = {};
+	backpack = "";
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\dayz\textures\clothes\bandit_tex1_co.paa"};
+	weaponSlots = "1 + 4 + 12* 256 + 2* 4096 + 2 + 8* 16 + 12*131072";
+	canHideBodies = 1;
+};
+
+// new bandits
+class GUE_Soldier_MG;
+class GUE_Soldier_MG_DZ: GUE_Soldier_MG {
+	displayName = "Bandit Gunner";
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -294,49 +366,10 @@ class RusSoldierHeadset_DZ: RU_Soldier_SL {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
-};	
-class RUS_Soldier3;
-class RusSoldierWoodwarrior_DZ: RUS_Soldier3 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RUS_Commander;
-class RusCommander_DZ: RUS_Commander {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Soldier_Light;
-class RusSoldierLight_DZ: RU_Soldier_Light {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
+};
 class GUE_Soldier_Sniper;
-class HalfGhillie_DZ: GUE_Soldier_Sniper {
-	displayName = $STR_CHAR_1;
+class GUE_Soldier_Sniper_DZ: GUE_Soldier_Sniper {
+	displayName = "Bandit Sniper";
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -346,10 +379,10 @@ class HalfGhillie_DZ: GUE_Soldier_Sniper {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
-};	
-class Ins_Soldier_Sniper;
-class RusSpecOps_DZ: Ins_Soldier_Sniper {
-	displayName = $STR_CHAR_1;
+};
+class GUE_Soldier_Crew;
+class GUE_Soldier_Crew_DZ: GUE_Soldier_Crew {
+	displayName = "Bandit ";
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -359,439 +392,10 @@ class RusSpecOps_DZ: Ins_Soldier_Sniper {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
-};	
-class TK_Soldier_Officer_EP1;
-class RusOfficer_DZ: TK_Soldier_Officer_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Ins_Soldier_Medic;
-class RusSoldierWinter_DZ: Ins_Soldier_Medic {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Ins_Bardak;
-class RusSoldierCasual_DZ: Ins_Bardak {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Ins_Lopotev;
-class JoggingSuit_DZ: Ins_Lopotev {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Assistant;
-class CivWorker_DZ: Assistant {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-//class Citizen1; (Not Needed)
-class CivLeatherLeisure_DZ: Citizen1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Citizen4;
-class CivLeatherLeisure2_DZ: Citizen4 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Doctor;
-class CivDoctor_DZ: RU_Doctor {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Dr_Hladik_EP1;
-class CivCasualDoctor_DZ: Dr_Hladik_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class CIV_EuroMan01_EP1;
-class CivPress_DZ: CIV_EuroMan01_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class CIV_EuroMan02_EP1;
-class CivCasualCheck_DZ: CIV_EuroMan02_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Functionary1;
-class CivSuit_DZ: Functionary1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Haris_Press_EP1;
-class CivPressLeather_DZ: Haris_Press_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Pilot_EP1;
-class CivPilotSuit_DZ: Pilot_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Policeman;
-class CivPoliceUniform_DZ: RU_Policeman {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Priest;
-class CivPriest_DZ: Priest {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Profiteer2_EP1;
-class CivLeisureBlue_DZ: Profiteer2_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Profiteer1;
-class CivLeisureGrey_DZ: Profiteer1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Profiteer4;
-class CivLeisureBrown_DZ: RU_Profiteer4 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Rocker1;
-class CivRocker1_DZ: RU_Rocker1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Rocker2;
-class CivRocker2_DZ: RU_Rocker2 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class SchoolTeacher;
-class CivTeacher_DZ: SchoolTeacher {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Woodlander1;
-class CivRusWoodland_DZ: RU_Woodlander1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class Woodlander4;
-class CivRusWoodland2_DZ: Woodlander4 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Worker4;
-class CivCasualCheck2_DZ: RU_Worker4 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class TK_CIV_Worker02_EP1;
-class CivWorkerOverall_DZ: TK_CIV_Worker02_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class RU_Worker2;
-class CivLeisureVest_DZ: RU_Worker2 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class TK_CIV_Worker01_EP1;
-class CivRedWorkerOverall_DZ: TK_CIV_Worker01_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class FR_Cooper;
-class SoldierWoodwarriorCap_DZ: FR_Cooper {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class FR_Corpsman;
-class SoldierWoodwarrior_DZ: FR_Corpsman {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class FR_GL;
-class SoldierWoodwarriorHat_DZ: FR_GL {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class GUE_Commander;
-class WoodWarriorIndi_DZ: GUE_Commander {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
-class UN_CDF_Soldier_Officer_EP1;
-class UNOfficer_DZ: UN_CDF_Soldier_Officer_EP1 {
-	displayName = $STR_CHAR_1;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};	
+};
 class GUE_Soldier_CO;
-class CamoFaceCover_DZ: GUE_Soldier_CO {
-	displayName = $STR_CHAR_1;
+class GUE_Soldier_CO_DZ: GUE_Soldier_CO {
+	displayName = "Bandit Gunner";
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -801,10 +405,262 @@ class CamoFaceCover_DZ: GUE_Soldier_CO {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
-};	
+};
+class GUE_Soldier_2;
+class GUE_Soldier_2_DZ: GUE_Soldier_2 {
+	displayName = "Bandit Gunner";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class RU_Policeman;
+class RU_Policeman_DZ: RU_Policeman {
+	displayName = "Policeman";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Pilot_EP1;
+class Pilot_EP1_DZ: Pilot_EP1 {
+	displayName = "Pilot";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Haris_Press_EP1;
+class Haris_Press_EP1_DZ: Haris_Press_EP1 {
+	displayName = "Press";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Ins_Soldier_GL;
+class Ins_Soldier_GL_DZ: Ins_Soldier_GL {
+	displayName = "Terrorist";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class GUE_Commander;
+class GUE_Commander_DZ: GUE_Commander {
+	displayName = "Rebel";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Functionary1_EP1;
+class Functionary1_EP1_DZ: Functionary1_EP1 {
+	displayName = "Business Suit";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Priest;
+class Priest_DZ: Priest {
+	displayName = "Priest";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Rocker1;
+class Rocker1_DZ: Rocker1 {
+	displayName = "Rocker (black)";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Rocker2;
+class Rocker2_DZ: Rocker2 {
+	displayName = "Rocker (brown)";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Rocker3;
+class Rocker3_DZ: Rocker3 {
+	displayName = "Rocker (blue)";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Rocker4;
+class Rocker4_DZ: Rocker4 {
+	displayName = "Rocker (green)";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+
+class TK_INS_Warlord_EP1;
+class TK_INS_Warlord_EP1_DZ: TK_INS_Warlord_EP1 {
+	displayName = "Takistani Warlord";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+};
+
+class TK_INS_Soldier_EP1;
+class TK_INS_Soldier_EP1_DZ: TK_INS_Soldier_EP1 {
+	displayName = "Takistani Soldier";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+};
+	
+class CZ_Special_Forces_GL_DES_EP1;
+class CZ_Special_Forces_GL_DES_EP1_DZ: CZ_Special_Forces_GL_DES_EP1 {
+	displayName = "Special Forces";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+};
+	
+class Drake_Light;
+class Drake_Light_DZ: Drake_Light {
+	displayName = "Desert Camo";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+};
 class Soldier_Bodyguard_AA12_PMC;
-class LeasureKevlar_DZ: Soldier_Bodyguard_AA12_PMC {
-	displayName = $STR_CHAR_1;
+class Soldier_Bodyguard_AA12_PMC_DZ: Soldier_Bodyguard_AA12_PMC {
+	displayName = "Bodyguard";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+};
+
+class Soldier_Sniper_PMC_DZ: Soldier_Crew_PMC {
+	displayName = "Marksman";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+
+	model = "\dayz\characters\man_hero";
+	HiddenSelections[] = {"camo1","camo2","camo3"};
+	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa","ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa","ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
+	class EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\PMC_soldier\Data\bauer_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_3_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_4_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_5_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [1,[""ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_1_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_3_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [2,[""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_CO.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa""] select floor random 2]";
+	};
+};
+class Soldier_TL_PMC;
+class Soldier_TL_PMC_DZ: Soldier_TL_PMC {
+	displayName = "Team Leader";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+};
+class FR_OHara;
+class FR_OHara_DZ: FR_OHara {
+	displayName = "Jungle Camo";
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -814,5 +670,44 @@ class LeasureKevlar_DZ: Soldier_Bodyguard_AA12_PMC {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
-};	
-*/	
+	attendant = 0; 
+};
+class FR_Rodriguez;
+class FR_Rodriguez_DZ: FR_Rodriguez {
+	displayName = "Gunner Outfit";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class CZ_Soldier_Sniper_EP1;
+class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
+	displayName = "Desert Ghillie";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};
+class Graves_Light;
+class Graves_Light_DZ: Graves_Light {
+	displayName = "Urban Camo";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};

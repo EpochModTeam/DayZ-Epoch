@@ -1,6 +1,6 @@
 class MeleeHatchet : MeleeWeapon
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\dayz_weapons\models\Hatchet_weaponized";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";

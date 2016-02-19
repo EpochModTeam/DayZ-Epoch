@@ -1,21 +1,16 @@
-class UH1H_base: Helicopter 
-{
-	class Turrets: Turrets
-	{
-		class MainTurret: MainTurret
-		{
+class UH1H_base: Helicopter {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
 			class ViewOptics: ViewOptics {};
 			class Turrets: Turrets {};
 		};
-		class LeftDoorGun: MainTurret
-		{
+		class LeftDoorGun: MainTurret {
 			class Turrets: Turrets {};
 		};
 	};
 };
 
-class UH1H_DZ: UH1H_base
-{
+class UH1H_DZ: UH1H_base {
 	scope = 2;
 	side = 2;
 	crew = "";
@@ -29,20 +24,26 @@ class UH1H_DZ: UH1H_base
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 4;
-	
-	class Turrets : Turrets 
-	{
-		class MainTurret : MainTurret 
-		{
+	fuelCapacity = 1333;
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
 			magazines[] = {"100Rnd_762x51_M240"};
 		};
-		class LeftDoorGun : LeftDoorGun
-		{
+		class LeftDoorGun : LeftDoorGun {
 			magazines[] = {"100Rnd_762x51_M240"};
 		};
 	};
 };
-
+class UH1H_DZE: UH1H_DZ {
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			magazines[] = {};
+		};
+		class LeftDoorGun : LeftDoorGun {
+			magazines[] = {};
+		};
+	};
+};
 class UH1H_2_DZ : UH1H_DZ
 {
 	hiddenSelections[] = {"Camo1","Camo2","Camo_mlod"};

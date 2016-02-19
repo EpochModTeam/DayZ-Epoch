@@ -1,6 +1,6 @@
 class equip_lever : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem;
 	

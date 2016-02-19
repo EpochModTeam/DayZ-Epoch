@@ -56,7 +56,7 @@ class FoodBioMeat: FoodEdible {
 };
 // new DZE harvested food
 class FoodPumpkin : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 100;
 	displayName = "Pumpkin";
@@ -78,7 +78,7 @@ class FoodPumpkin : FoodEdible {
 	};
 };
 class FoodSunFlowerSeed : FoodEdible {
-	scope = public;
+	scope = 2;
 	count = 1;
 	bloodRegen = 100;
 	displayName = "Bag of Sunflower Seeds";

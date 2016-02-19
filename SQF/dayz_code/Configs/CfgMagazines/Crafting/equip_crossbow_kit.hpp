@@ -1,5 +1,5 @@
 class equip_Crossbow_Kit : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_CROSSBOW_KIT;
 	descriptionShort = $STR_ITEM_DESC_CROSSBOW_KIT;

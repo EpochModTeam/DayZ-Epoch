@@ -1,5 +1,5 @@
 class equip_slugsinacan : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = "Slugs in a can";
 	descriptionShort = "Slugs in a can";

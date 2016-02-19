@@ -1,6 +1,6 @@
 class ItemFlashlight : ItemCore
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\dayz_equip\models\flashlight.p3d";
 	picture = "\dayz_equip\textures\equip_flashlight_ca.paa";
@@ -21,7 +21,7 @@ class ItemFlashlight : ItemCore
 
 class MeleeFlashlight : Pistol
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\dayz_equip\models\flashlight.p3d";
 	picture = "\dayz_equip\textures\equip_flashlight_ca.paa";

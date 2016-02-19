@@ -14,7 +14,7 @@
 		placement = "slope";
 	};
 	class Blood_Trail_DZ : Blood_Trail {
-		scope = public;
+		scope = 2;
 		animated = 0;
 		destrType = "DestructNo";
 		mapSize = 2;

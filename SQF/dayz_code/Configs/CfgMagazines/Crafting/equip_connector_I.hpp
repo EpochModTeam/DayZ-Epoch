@@ -1,5 +1,5 @@
 class Item_Connector_I : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_DESC_equip_con_i;
 	descriptionShort = $STR_ITEM_NAME_equip_con_i;

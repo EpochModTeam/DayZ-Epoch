@@ -1,6 +1,6 @@
 class MR43_DZ : Rifle
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\dayz_weapons\models\mr43.p3d";
 	picture = "\dayz_weapons\textures\equip_mr43_CA.paa";

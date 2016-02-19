@@ -1,6 +1,6 @@
 class ItemGenerator : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 6;
 	
