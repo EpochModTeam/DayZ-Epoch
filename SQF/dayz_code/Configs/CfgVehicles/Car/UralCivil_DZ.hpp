@@ -1,5 +1,5 @@
 class UralCivil_DZ: UralCivil {
-	scope=public;
+	scope=2;
 	side=TCivilian;
 	faction=CIV;
 	displayName= $STR_DN_URAL_CIV;
