@@ -144,13 +144,77 @@ class CfgInGameUI
 	};
 };
 
+class CfgVoice {
+	class NoVoice {
+		protocol = "RadioProtocolBase";
+		variants[] = {1};
+		directories[] = {"", ""};
+		identityTypes[] = {"Default", "Zombie1", "Zombie2", "Zombie3"};
+	};
+};
+
+class CfgIdentities
+{
+	class PZombie1
+	{
+		name = "PZombie";
+		face = "PZombie1";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+	class PZombie2
+	{
+		name = "PZombie";
+		face = "PZombie2";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+	class Zombie1 {
+		name = "Zombie";
+		face = "Zombie1";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+	
+	class Zombie2 {
+		name = "Zombie";
+		face = "Zombie2";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+	
+	class Zombie3 {
+		name = "Zombie";
+		face = "Zombie3";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+};
+class CfgMissions
+{
+	 class Cutscenes
+	 {
+	  class DayZModIntro1
+		  {
+			directory = "z\addons\dayz_code\Configs\CfgWorlds\intro.dayzmod";
+		  };
+	 };
+};
 
 class CfgSurvival {
 	class Inventory {
 		class Default {
+			RandomMagazines = 3;
 			//weapons[] = {"Makarov"};
-			magazines[] = {"ItemBandage","ItemPainkiller"};
+			//magazines[] = {"ItemBandage","ItemPainkiller"};
 			weapons[] = {"ItemFlashlight"};
+			GuaranteedMagazines[] = {"ItemBandage","ItemPainkiller"};
+			RandomPossibilitieMagazines[] = {"ItemBandage","ItemAntibiotic","ItemPainkiller","itemMorphine"};
 			backpackWeapon = "";
 			backpack = "DZ_Patrol_Pack_EP1";
 		};

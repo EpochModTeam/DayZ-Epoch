@@ -20,10 +20,6 @@ class CfgWeapons
 	class Pecheneg_DZ: Pecheneg {
 		type = "1";
 	};
-	class PK;
-	class PK_DZ: PK {
-		type = "1";
-	};
 
 	
 	/* Dummy weapons */
@@ -93,6 +89,7 @@ class CfgWeapons
 	#include "Rifles\L110A1.hpp"
 
 	class M240;
+	class m240_scoped_EP1;
 	#include "Rifles\M240.hpp"
 	
 	#include "Weapon\LMG\M60A4.hpp"
@@ -109,6 +106,9 @@ class CfgWeapons
 	class PK : Rifle
 	{
 		class manual;
+	};
+	class PK_DZ: PK {
+		type = "1";
 	};
 	#include "Rifles\PKM.hpp"
 	
@@ -173,11 +173,7 @@ class CfgWeapons
 	
 	class revolver_EP1;
 	#include "Pistols\Revolver.hpp"
-	
-	
-	
-	
-	
+
 	/* MELEE */
 	
 	class MeleeWeapon : Rifle
