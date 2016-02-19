@@ -222,20 +222,8 @@ if (_canDo) then {
 								_craft_doLoop = false;
 							};
 							{
-								if ((_x == "ItemSledge") && {_x in items player}) then {
-									_bag = unitBackpack player;
-									if (!isNull _bag) then {
-										systemChat format[(localize "str_epoch_player_313"),_x];
-										_bag addWeaponCargoGlobal [_x,1];
-									} else {
-										systemChat format[(localize "str_epoch_player_314"),_x];
-										_location = player modeltoworld [0,0.3,0];
-										if ((_location select 2) < 0) then {_location set [2,0];};
-										_object = createVehicle ["WeaponHolder",_location,[],0,"CAN_COLLIDE"];
-										if (surfaceIsWater _location) then {_object setPosASL (getPosASL player);} else {_object setPosATL _location;};
-										_object setVariable ["permaLoot",true];
-										_object addWeaponCargoGlobal [_x,1];
-									};
+								if (_x == "ItemSledge") then {
+									_x call player_addDuplicateTool;
 								} else {
 									player addWeapon _x;
 								};
