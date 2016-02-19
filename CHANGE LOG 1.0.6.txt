@@ -41,6 +41,7 @@
 [FIXED] Fire barrels not being detected over water @pj999 @icomrade #1559 #1564
 [FIXED] Opening supply crates over water no longer drops the items on the sea floor @pj999 @icomrade #1558
 [FIXED] Plot pole required message not updating to reflect DZE_PlotPole radius @mathewjknott @icomrade #1274
+[FIXED] Slow login timer and incorrect loading screen message when login times out @icomrade
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
