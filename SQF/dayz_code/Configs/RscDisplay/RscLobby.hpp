@@ -277,6 +277,7 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 			x = "(83/100)	* SafeZoneW + SafeZoneX";
 			y = "(93/100)	* SafeZoneH + SafeZoneY";
 			text = "OK";
+			onButtonClick = "((findDisplay 70) displayCtrl 300) ctrlShow false;";
 		};
 		class CA_ButtonCancel: RscShortcutButton
 		{
