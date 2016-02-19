@@ -4,7 +4,7 @@ class CfgVehicles
 	
 	class Body1 : Wreck_Base
 	{
-		scope = public;
+		scope = 2;
 		mapSize = 2;
 		displayName = "Dead Body 1";
 		model = "\dayz\objects\dead_soldier_0";
@@ -12,7 +12,7 @@ class CfgVehicles
 	
 	class Body2 : Wreck_Base
 	{
-		scope = public;
+		scope = 2;
 		mapSize = 2;
 		displayName = "Dead Body 2";
 		model = "\dayz\objects\dead_soldier_1";
@@ -22,7 +22,7 @@ class CfgVehicles
 	
 	class Rubbish1 : Strategic
 	{
-		scope = public;
+		scope = 2;
 		model = "\CA\misc\garbage_paleta";
 		mapSize = 2;
 		displayName = "Garbage1";
@@ -31,7 +31,7 @@ class CfgVehicles
 	
 	class Rubbish2 : Strategic
 	{
-		scope = public;
+		scope = 2;
 		model = "\CA\misc\garbage_misc";
 		mapSize = 2;
 		displayName = "Garbage2";
@@ -40,7 +40,7 @@ class CfgVehicles
 	
 	class Rubbish3 : Strategic
 	{
-		scope = public;
+		scope = 2;
 		model = "\CA\misc\ground_garbage_square5";
 		mapSize = 2;
 		displayName = "Garbage3";
@@ -49,7 +49,7 @@ class CfgVehicles
 	
 	class Rubbish4 : Strategic
 	{
-		scope = public;
+		scope = 2;
 		model = "\CA\misc\ground_garbage_square3";
 		mapSize = 2;
 		displayName = "Garbage4";
@@ -58,7 +58,7 @@ class CfgVehicles
 	
 	class Rubbish5 : Strategic
 	{
-		scope = public;
+		scope = 2;
 		model = "\CA\misc\junkpile";
 		mapSize = 2;
 		displayName = "Garbage5";
