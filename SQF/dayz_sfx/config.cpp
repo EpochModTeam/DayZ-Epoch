@@ -29,7 +29,7 @@ class CfgVehicles {
 	class Sound;
 	class Sound_Generator1: Sound
 	{
-		scope = public;
+		scope = 2;
 		sound = "Generator1";
 		displayName = "Generator";
 	};
