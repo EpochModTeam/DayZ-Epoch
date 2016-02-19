@@ -229,7 +229,10 @@ if (_canDo) then {
 										_bag addWeaponCargoGlobal [_x,1];
 									} else {
 										systemChat format[(localize "str_epoch_player_314"),_x];
-										_object = createVehicle ["WeaponHolder",position player,[],0,"CAN_COLLIDE"];
+										_location = player modeltoworld [0,0.3,0];
+										if ((_location select 2) < 0) then {_location set [2,0];};
+										_object = createVehicle ["WeaponHolder",_location,[],0,"CAN_COLLIDE"];
+										if (surfaceIsWater _location) then {_object setPosASL (getPosASL player);} else {_object setPosATL _location;};
 										_object setVariable ["permaLoot",true];
 										_object addWeaponCargoGlobal [_x,1];
 									};

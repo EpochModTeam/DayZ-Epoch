@@ -54,7 +54,7 @@ if(_type == "backpack") then {
 	_b0x1337 addBackpackCargoGlobal  [_create,_qty];
 };
 if (surfaceIsWater _location) then {
-	_b0x1337 setPosASL _location;
+	_b0x1337 setPosASL (getPosASL player);
 } else {
 	_b0x1337 setPosATL _location;
 };
