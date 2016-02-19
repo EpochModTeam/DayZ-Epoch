@@ -710,6 +710,14 @@
 			<French>Son nom était %1, il semble qu'il soit mort d' %2</French>
 			<Czech>Jeho jméno bylo %1, vypadá to, že je mrtvý kvůli %2</Czech>
 		</Key>
+		<Key ID="str_player_actionslimit">
+			<English>Wait for the previous action to complete to perform another!</English>
+			<German>Du musst erst das eine beenden, bevor du etwas neues startest!</German>
+			<Russian>Дождитесь завершения предыдущего действия, перед тем, как начинать новое!</Russian>
+			<Spanish>¡Espera a terminar la acción previa para realizar otra!</Spanish>
+			<French>Attendez la fin de l&apos;action en cours avant d&apos;en commencer une autre !</French>
+			<Czech>Než začnete dělat něco jiného, musíte dokončit aktuální akci.</Czech>
+		</Key>
 		<Key ID="str_death_shothead">
 			<Original>a gunshot to the head</Original>
 			<English>a gunshot to the head</English>

@@ -42,6 +42,7 @@
 [FIXED] Opening supply crates over water no longer drops the items on the sea floor @pj999 @icomrade #1558
 [FIXED] Plot pole required message not updating to reflect DZE_PlotPole radius @mathewjknott @icomrade #1274
 [FIXED] Slow login timer and incorrect loading screen message when login times out @icomrade
+[FIXED] Combine mags not working for Revolver and M1911 ammo @Terrien @ebaydayz #1313
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

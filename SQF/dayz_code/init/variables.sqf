@@ -317,6 +317,9 @@ isInTraderCity =		false;
 NORRN_dropAction =		-1;
 DZE_PROTOBOX = objNull;
 
+//count actions
+r_action_count = 0;
+
 //ammo routine
 r_player_actions2 = [];
 r_action2 = false;

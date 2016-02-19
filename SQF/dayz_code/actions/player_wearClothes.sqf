@@ -9,7 +9,7 @@ DZE_ActionInProgress = true;
 
 _item = _this;
 call gear_ui_init;
-
+r_action_count = 0; //reset for strange glitch
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
