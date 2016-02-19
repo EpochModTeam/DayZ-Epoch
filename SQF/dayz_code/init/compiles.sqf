@@ -437,7 +437,7 @@ if (!isDedicated) then {
 	[] spawn {
         private["_timeOut","_display","_control1","_control2"];
         disableSerialization;
-        _timeOut = 0;
+        _timeOut = diag_tickTime;
         dayz_loadScreenMsg = "";
         diag_log "DEBUG: loadscreen guard started.";
         _display = uiNameSpace getVariable "BIS_loadingScreen";
@@ -450,7 +450,7 @@ if (!isDedicated) then {
 		};
 
         // 120 sec timeout (12000 * 0.01)
-        while { _timeOut < 12000 } do {
+        while { (_timeOut + 120) > diag_tickTime } do {
            if (dayz_clientPreload && dayz_authed) exitWith { 
 					diag_log "PLOGIN: Login loop completed!"; 
 					endLoadingScreen;
@@ -469,19 +469,17 @@ if (!isDedicated) then {
                         dayz_loadScreenMsg = "";
                 };
 
-                _control2 ctrlSetText format["%1",round(_timeOut*0.01)];
+                _control2 ctrlSetText format["%1",round(diag_tickTime - _timeOut)];
             };
 
-            _timeOut = _timeOut + 1;
-
-            if (_timeOut >= 12000) then {
-                1 cutText [localize "str_player_login_timeout", "PLAIN DOWN"];
-                uiSleep 10;
-                endLoadingScreen;
-                endMission "END1";
-            };
-
-            uiSleep 0.01;
+            //_timeOut = _timeOut + 1;
+            uiSleep 0.001;
+        };
+		if (diag_tickTime >= (_timeOut + 120)) then {
+            1 cutText [localize "str_player_login_timeout", "PLAIN DOWN"];
+            uiSleep 10;
+            endLoadingScreen;
+            endMission "END1";
         };
 	};
 
