@@ -80,7 +80,7 @@ class MeleeHatchet_DZE: MeleeWeapon
 			script = "spawn player_dropWeapon; r_action_count = r_action_count + 1;";
 			use[] = {"Hatchet_Swing"};	
 		};
-
+	};
 	class Library
 	{
 		libTextDesc=$STR_EQUIP_DESC_41;

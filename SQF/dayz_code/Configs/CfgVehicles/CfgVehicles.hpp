@@ -306,6 +306,3 @@ class CfgVehicles {
 		};
 	};
 };
-class CfgNonAIVehicles {
-	#include "StreetLamps.hpp"
-};

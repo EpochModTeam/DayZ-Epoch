@@ -1,0 +1,73 @@
+ambient[]={0.54000002,0.57999998,0.51999998,3.5};
+diffuse[]={0.5,0.55000001,0.5,1};
+forcedDiffuse[]={0.12,0.30000001,0.31999999,0.69999999};
+emmisive[]={0.5,0.80000001,0.69999999,0.12};
+specular[]={0.026000001,0.025,0.025,0.30000001};
+specularPower=120;
+PixelShaderID="Skin";
+VertexShaderID="Skin";
+class Stage1
+{
+	texture="z\addons\dayz_communityassets\faces\zombie_03_nohq.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage2
+{
+	texture="z\addons\dayz_communityassets\faces\zombie_03_co.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class Stage3
+{
+	texture="ca\characters\heads\male\defaulthead\data\hhl_white_sdm.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class Stage4
+{
+	texture="ca\characters\heads\male\defaulthead\data\hhl_as.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class Stage5
+{
+	texture="z\addons\dayz_communityassets\faces\zombie_03_smdi.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class Stage6
+{
+	texture="#(ai,64,1,1)fresnel(1.422,1.973)";
+	uvSource="none";
+};

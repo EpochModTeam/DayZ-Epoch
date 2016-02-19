@@ -21,7 +21,6 @@ class CfgPatches {
 				"dayz_vehicles",
 				"dayz_weapons",
 				"community_crossbow",
-				"dayz_epoch_b",
 				
 				//shacktac addons
 				"st_bunnyhop",
@@ -56,18 +55,6 @@ class CfgMods
 		version = "1.0.6";
 		hiveVersion = 0.96; //0.93
 	};
-};
-
-
-class CfgMissions
-{
-	 class Cutscenes
-	 {
-	  class ChernarusIntro1
-		  {
-			directory = "z\addons\dayz_code\Configs\CfgWorlds\intro.Chernarus";
-		  };
-	 };
 };
 
 class CfgWorlds
@@ -178,20 +165,15 @@ class CfgAddons
 #include "Configs\CfgRecoils.hpp"
 #include "gui\padlock\padlock_ui.hpp"
 
-//Epoch Additions
-#include "Configs\RscDisplay\safegui.hpp"
-#include "Configs\RscDisplay\dialog.hpp"
-#include "Configs\RscDisplay\deathboards.hpp"
-#include "Configs\CfgVoice.hpp"			
-#include "Configs\CfgIdentities.hpp"
-#include "Configs\CfgExtra\snappoints.hpp"
-#include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
-
-
 //Duplicates that need to be checked against first block
 //#include "Configs\CfgVehicles.hpp"
 //#include "Configs\CfgMagazines.hpp"
 //#include "Configs\CfgAmmo.hpp"
 //#include "Configs\CfgLoot\CfgBuildingLoot.hpp"
-//#include "Configs\CfgArma.hpp"
 
+//Epoch Additions
+#include "Configs\RscDisplay\safegui.hpp"
+#include "Configs\RscDisplay\dialog.hpp"
+#include "Configs\RscDisplay\deathboards.hpp"
+#include "Configs\CfgExtra\snappoints.hpp"
+#include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
