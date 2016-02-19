@@ -3514,16 +3514,6 @@
 			<French>\n\nExtraction du minerai annulée.</French>
 			<Czech>\n\nZrušena těžba rudy.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_81">
-			<Original>\n\nCombine ammo failed you need at least 85% capacity to fill a mag</Original>
-			<English>\n\nCombine ammo failed you need at least 85% capacity to fill a mag</English>
-			<German>\n\nKombinieren der Munition fehgeschlagen, Sie benötigen mindestens 85% der Kapazität des Magazines um aufmunitionieren zu können.</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nHet omzetten van kogels is mislukt je dient minstens 85% capaciteit in het magazijn te hebben</Dutch>
-			<French>\n\nLa combinaison des munitions a échoué, vous devez remplir au moins 85% du chargeur</French>
-			<Czech>\n\nKombinace zásobníků selhala, potřebujete alespoň 85% kapacity, abyste naplnili zásobník</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_82">
 			<Original>\n\nNo upgrades available</Original>
 			<English>\n\nNo upgrades available</English>
