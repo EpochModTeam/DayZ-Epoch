@@ -446,7 +446,7 @@ PVDZE_plr_DeathB = [];
 dayz_dawn = 6;
 dayz_dusk = 18;
 DAYZ_agentnumber = 0;
-dayz_animalDistance = 800;
+dayz_animalDistance = 600;
 dayz_zSpawnDistance = 1000;
 
 dayz_maxMaxModels = 80; // max quantity of Man models (player || Z, dead || alive) around players. Below this limit we can spawn Z // max quantity of loot piles around players. Below this limit we can spawn some loot
