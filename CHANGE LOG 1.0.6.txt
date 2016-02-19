@@ -16,6 +16,7 @@
 [CHANGED] Tweaked fuel capacity variables for vehicles. @RimBlock
 [CHANGED] Tweaked rotate_logs.bat to incorporate the day of the week for better organization @Raziel23x 
 [CHANGED] All instances of sleep replaced with the more reliable uiSleep @icomrade
+[CHANGED] Several getPosATL changed to call FNC_GetPos for water compatibility @icomrade
 
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
@@ -36,7 +37,7 @@
 [FIXED] Loading screen issue where you can walk around and see a black screen #1610 @deanreid
 [FIXED] Crafting a sledgehammer with one already in your toolbelt no longer eats your parts. #1567 #1667 @Namindu
 [FIXED] DarkUI hunger and thirst inconsistency with vanilla UI and health system @SplenectomY @icomrade #1622
-[FIXED] Fire barrels not being detected over water @pj999 @icomrade #1559
+[FIXED] Fire barrels not being detected over water @pj999 @icomrade #1559 #1564
 [FIXED] Opening supply crates over water no longer drops the items on the sea floor @pj999 @icomrade #1558
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
