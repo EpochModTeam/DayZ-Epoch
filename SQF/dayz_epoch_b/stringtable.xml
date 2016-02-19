@@ -3306,16 +3306,6 @@
 			<French>\n\nConstruire une clé requiert une barre de fer</French>
 			<Czech>\n\nNa vytvoření klíče potřebujete 1 cihličku cínu</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_60">
-			<Original>\n\nCopied key has been added to your backpack.</Original>
-			<English>\n\nCopied key has been added to your backpack.</English>
-			<German>\n\nDer kopierte Schlüssel wurde Ihrem Rücksack hinzugefügt.</German>
-			<Russian>\n\nСкопированный ключ был добавлен в ваш рюкзак.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nDe gekopieerde sleutel is in je rugzak gestopt.</Dutch>
-			<French>\n\nLe double de la clé a été ajouté dans votre sac à dos.</French>
-			<Czech>Zkopírovaný klíč byl přidán do batohu</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_61">
 			<Original>\n\nCanceled Key Crafting.</Original>
 			<English>\n\nCanceled Key Crafting.</English>

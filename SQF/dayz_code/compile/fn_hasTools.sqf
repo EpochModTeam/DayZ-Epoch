@@ -1,7 +1,7 @@
 /*
 Description:
-Checks whether the player has the required tools equipped || not
-&& displays a message if a tool is missing from the tool belt.
+Checks whether the player has the required tools equipped or not
+and displays a message if a tool is missing from the tool belt.
 
 Parameter(s):
 _this: <array> list of tool names the player is required to have
