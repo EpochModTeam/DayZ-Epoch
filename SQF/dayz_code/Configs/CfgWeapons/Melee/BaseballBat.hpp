@@ -1,6 +1,6 @@
 class MeleeBaseBallBat : MeleeWeapon
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\z\addons\dayz_communityassets\models\baseball_bat_weaponized.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_baseball_bat_ca.paa";
@@ -19,7 +19,7 @@ class MeleeBaseBallBat : MeleeWeapon
 
 class MeleeBaseBallBatBarbed : MeleeWeapon
 {
-	scope = public;
+	scope = 2;
 	
 	model="\z\addons\dayz_communityassets\models\baseball_bat_barbed_weaponized.p3d";
 	picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_barbed_ca.paa";
@@ -38,7 +38,7 @@ class MeleeBaseBallBatBarbed : MeleeWeapon
 
 class MeleeBaseBallBatNails : MeleeWeapon
 {
-	scope = public;
+	scope = 2;
 	
 	model="\z\addons\dayz_communityassets\models\baseball_bat_nails_weaponized.p3d";
 	picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_nails_ca.paa";

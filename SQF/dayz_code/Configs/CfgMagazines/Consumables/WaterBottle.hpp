@@ -1,6 +1,6 @@
 class ItemWaterBottle : FoodDrink
 {
-	scope = public;
+	scope = 2;
 	
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\z\addons\dayz_communityassets\textures\waterbottle.paa";

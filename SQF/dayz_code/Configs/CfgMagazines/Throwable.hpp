@@ -1,6 +1,6 @@
 class HandRoadFlare : HandGrenade
 {
-	scope = public;
+	scope = 2;
 	
 	picture = "\dayz_weapons\textures\equip_roadflare_ca.paa";
 	model = "\dayz_weapons\models\roadflare";
@@ -22,7 +22,7 @@ class HandRoadFlare : HandGrenade
 
 class HandChemBlue : HandGrenade
 {
-	scope = public;
+	scope = 2;
 	
 	picture = "\dayz_weapons\textures\equip_chem_blue_ca.paa";
 	model = "\dayz_weapons\models\chem_gear_blue";
@@ -44,7 +44,7 @@ class HandChemBlue : HandGrenade
 
 class HandChemGreen : HandGrenade
 {
-	scope = public;
+	scope = 2;
 	
 	picture = "\dayz_weapons\textures\equip_chem_green_ca.paa";
 	model = "\dayz_weapons\models\chem_gear_green";
@@ -66,7 +66,7 @@ class HandChemGreen : HandGrenade
 
 class HandChemRed : HandGrenade
 {
-	scope = public;
+	scope = 2;
 	
 	picture = "\dayz_weapons\textures\equip_chem_red_ca.paa";
 	model = "\dayz_weapons\models\chem_gear_red";

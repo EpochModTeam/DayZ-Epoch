@@ -1,5 +1,5 @@
 class equip_crossbow_stock : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = "Crossbow (Stock)";
 	descriptionShort="You require a Crossbow String kit to craft this weapon";

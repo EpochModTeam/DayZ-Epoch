@@ -25,7 +25,7 @@ class 10Rnd_303British : 10x_303
 //Winchester 1866
 class 15Rnd_W1866_Slug : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\z\addons\dayz_communityassets\models\winammo.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_winammo_ca.paa";

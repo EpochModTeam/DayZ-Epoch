@@ -1,6 +1,6 @@
 class ReammoBox_EP1;	// External class reference
 class Bag_Base_EP1 : ReammoBox_EP1 {
-	scope = private;
+	scope = 0;
 
 	class TransportMagazines {};
 

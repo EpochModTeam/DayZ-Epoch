@@ -8,6 +8,37 @@ class animal_DZ: CAAnimalBase
 	};
 };
 
+class DZ_Pastor : Pastor {
+	scope = 2;
+	side = 1;
+	model = "\ca\animals2\Dogs\Pastor\Pastor";
+	displayName = "Alsatian";
+	moves = "CfgMovesDogDZ";
+	gestures = "CfgGesturesDogDZ";
+	fsmDanger = "";
+	fsmFormation = "";
+	agentTasks[] = {};
+	woman = 0;
+	class EventHandlers{};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {};
+	};
+	class VariablesScalar {};
+	class VariablesString {};
+};
+
+class DZ_Fin : Fin {
+	scope = 2;
+	model = "\ca\animals2\Dogs\Fin\Fin";
+	displayName = "Fin";
+	moves = "CfgMovesDogDZ";
+	gestures = "CfgGesturesDogDZ";
+	fsmDanger = "";
+	fsmFormation = "";
+};
+
 class Cow: animal_DZ
 {
 	scope = 0;

@@ -1,5 +1,5 @@
 class equip_empty_barrel : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_empty_barrel;
 	descriptionShort = $STR_ITEM_DESC_equip_empty_barrel;

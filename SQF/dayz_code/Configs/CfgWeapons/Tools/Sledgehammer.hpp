@@ -32,7 +32,7 @@ class ItemSledge: ItemCore
 
 class ItemSledgeHammerBroken : ItemCore
 {
-	scope = public;
+	scope = 2;
 	
 	model = "z\addons\dayz_communityweapons\models\sledge_hammer\sledgehammer.p3d";
 	picture = "\z\addons\dayz_communityweapons\models\sledge_hammer\sledgehammer.paa";

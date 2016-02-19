@@ -1,8 +1,8 @@
-class LAV25;
-class LAV25_DZ: LAV25 {
-	scope = public;
+class BTR90;
+class BTR90_DZ: BTR90 {
+	scope = 2;
 	side = TGuerrila;
-	displayName = "LAV-25 DZ";
+	displayName = "BTR-90 DZ";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -19,11 +19,11 @@ class LAV25_DZ: LAV25 {
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
 };
-class LAV25_HQ;
-class LAV25_HQ_DZ: LAV25_HQ {
-	scope = public;
+class BTR90_HQ;
+class BTR90_HQ_DZ: BTR90_HQ {
+	scope = 2;
 	side = TGuerrila;
-	displayName = "LAV-25 (HQ) DZ";
+	displayName = "BTR-90 (HQ) DZ";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -44,18 +44,18 @@ class LAV25_HQ_DZ: LAV25_HQ {
 };
 
 // Ammo Less
-class LAV25_DZE: LAV25_DZ {
-	displayName = "LAV-25 AL";
+class BTR90_DZE: BTR90_DZ {
+	displayName = "BTR-90 AL";
 	class Turrets: Turrets {
-		class MainTurret : MainTurret {
+		class MainTurret: MainTurret {
 			magazines[] = {};
 		};
 	};
 };
-class LAV25_HQ_DZE: LAV25_HQ_DZ {
-	displayName = "LAV-25 (HQ) AL";
+class BTR90_HQ_DZE: BTR90_HQ_DZ {
+	displayName = "BTR-90 (HQ) AL";
 	class Turrets: Turrets {
-		class MainTurret : MainTurret {
+		class MainTurret: MainTurret {
 			magazines[] = {};
 		};
 	};

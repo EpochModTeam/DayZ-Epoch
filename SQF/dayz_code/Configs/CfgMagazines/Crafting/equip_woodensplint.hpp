@@ -1,5 +1,5 @@
 class equip_woodensplint : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_WOODENSPLINT;
 	descriptionShort = $STR_ITEM_DESC_WOODENSPLINT;

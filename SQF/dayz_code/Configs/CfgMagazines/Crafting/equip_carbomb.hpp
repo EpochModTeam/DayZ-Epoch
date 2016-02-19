@@ -1,6 +1,6 @@
 
 class ItemCarBomb : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = (2*256);
 	displayName = "Car Bomb";

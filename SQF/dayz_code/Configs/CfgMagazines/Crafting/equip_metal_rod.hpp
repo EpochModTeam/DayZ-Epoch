@@ -1,5 +1,5 @@
 class equip_metal_rod : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_metal_rod;
 	descriptionShort = $STR_ITEM_DESC_equip_metal_rod;

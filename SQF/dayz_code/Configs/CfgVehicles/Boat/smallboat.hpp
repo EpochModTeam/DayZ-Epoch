@@ -19,7 +19,9 @@ class Smallboat_1: Ship
 	cargoIsCoDriver[] = {0};
 	ejectDeadCargo = 1;
 	ejectDeadDriver = 0;
-	maxSpeed = 29;
+	transportMaxMagazines = 200;
+	transportMaxWeapons = 20;
+	transportMaxBackpacks = 4;
 	transportSoldier = 5;
 	cost = 10000;
 	armor = 10;

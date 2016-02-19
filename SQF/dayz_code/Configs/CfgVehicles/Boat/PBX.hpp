@@ -22,4 +22,8 @@ class PBX: RubberBoat {
 		mat[] = {"ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine.rvmat", "ca\water\data\pbx_engine_destruct.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01.rvmat", "ca\water\data\pbx_01_destruct.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02.rvmat", "ca\water\data\pbx_02_destruct.rvmat"};
 		tex[] = {};
 	};
+	transportMaxMagazines = 50;
+	transportMaxWeapons = 5;
+	transportMaxBackpacks = 1;
+	fuelCapacity = 23;
 };

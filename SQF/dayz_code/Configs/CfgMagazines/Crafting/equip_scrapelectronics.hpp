@@ -1,5 +1,5 @@
 class equip_scrapelectronics : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_scrapelectronics;
 	descriptionShort = $STR_ITEM_DESC_equip_scrapelectronics;

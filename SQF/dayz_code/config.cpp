@@ -1,4 +1,4 @@
-#include "Configs\basicdefines.hpp"
+#include "Configs\basicDefines.hpp"
 #include "Configs\CfgNonAIVehicles.hpp"
 
 class CfgPatches {

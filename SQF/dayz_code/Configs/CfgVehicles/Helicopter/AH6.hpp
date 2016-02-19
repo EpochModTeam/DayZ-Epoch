@@ -45,8 +45,8 @@ class AH6J_EP1_DZE: AH6J_EP1_DZ
 	magazines[] = {"60Rnd_CMFlareMagazine"};
 };
 class AH6X_DZ: AH6_Base_EP1 {
-	displayname = "AH6X Little Bird";
-	displaynameshort = "AH6X_DZ";
+	displayname = $STR_VEH_NAME_AH6X;
+	displaynameshort = $STR_EP1_DN_AH6X;
 	audible = 6;
 	enablemanualfire = 0;
 	scope = 2;
@@ -71,32 +71,5 @@ class AH6X_DZ: AH6_Base_EP1 {
 	transportMaxMagazines = 10;
 	transportmaxbackpacks = 2;
 	fuelCapacity = 242;
-	class Turrets {};
-};
-class MH6J_DZ: AH6_Base_EP1 {
-	scope = 2;
-	side = 2;
-	crew = "";
-	enablemanualfire = 0;
-	typicalCargo[] = {};
-	displayname = "MH-6J Little Bird";
-	displaynameshort = "MH6J_DZ";
-	hiddenselections[] = {"camo1", "camo2"};
-	transportsoldier = 5;
-	hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
-	icon = "\ca\air_e\data\UI\Icon_mh6j_CA.paa";
-	model = "\ca\air_e\ah6j\mh6j";
-	picture = "\ca\air_e\data\UI\Picture_mh6j_CA.paa";
-	radartype = 0;
-	class TransportMagazines{};
-	class TransportWeapons{};
-	weapons[] = {};
-	magazines[] = {};
-	commanderCanSee = 2+16+32;
-	gunnerCanSee = 2+16+32;
-	driverCanSee = 2+16+32;
-	transportMaxWeapons = 3;
-	transportMaxMagazines = 20;
-	transportmaxbackpacks = 5;
 	class Turrets {};
 };

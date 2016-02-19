@@ -1,6 +1,6 @@
 class PartFueltank : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 2;
 	
@@ -12,7 +12,7 @@ class PartFueltank : CA_Magazine
 	
 class PartWheel : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 6;
 	
@@ -24,7 +24,7 @@ class PartWheel : CA_Magazine
 
 class PartEngine : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 10;
 	
@@ -36,7 +36,7 @@ class PartEngine : CA_Magazine
 
 class PartVRotor : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 8;
 	
@@ -48,7 +48,7 @@ class PartVRotor : CA_Magazine
 
 class PartGlass : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 2;
 	
@@ -60,7 +60,7 @@ class PartGlass : CA_Magazine
 	
 class PartGeneric : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = WeaponSlotItem * 3;
 	

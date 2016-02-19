@@ -5,7 +5,7 @@ class ItemMap : ItemCore
 
 class ItemMap_Debug: ItemCore
 {
-	scope = public;
+	scope = 2;
 	
 	displayname = "Debug Map";
 	descriptionshort = "Debug Map - Admin use only";

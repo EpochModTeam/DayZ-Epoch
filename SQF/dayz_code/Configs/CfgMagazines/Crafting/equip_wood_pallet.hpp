@@ -1,5 +1,5 @@
 class equip_wood_pallet : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_wood_pallet;
 	descriptionShort = $STR_ITEM_DESC_equip_wood_pallet;

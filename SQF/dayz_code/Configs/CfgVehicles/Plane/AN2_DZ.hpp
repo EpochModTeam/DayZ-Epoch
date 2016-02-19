@@ -18,6 +18,7 @@ class AN2_DZ: An2_Base_EP1
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 80;
 	transportmaxbackpacks = 15;
+	fuelCapacity = 757;
 };
 
 class AN2_2_DZ : AN2_DZ

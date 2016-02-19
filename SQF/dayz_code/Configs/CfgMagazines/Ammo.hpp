@@ -129,7 +129,7 @@ class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets {
 };
 
 class Quiver : CA_Magazine {
-	scope = public;
+	scope = 2;
 	ammo = "WoodenArrow";
 	count = 6;
 	descriptionshort = "Small Quiver used with the Crossbow, Max arrows 6.";
@@ -139,7 +139,7 @@ class Quiver : CA_Magazine {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
 };
 class WoodenArrow : CA_Magazine {
-	scope = public;
+	scope = 2;
 	displayName = "Arrow"; //$STR_MAG_NAME_3;
 	model = "\dayz_weapons\models\bolt_gear";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_warrow_ca.paa";

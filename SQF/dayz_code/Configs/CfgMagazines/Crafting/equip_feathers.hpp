@@ -1,5 +1,5 @@
 class equip_feathers : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_feathers;
 	descriptionShort = $STR_ITEM_DESC_equip_feathers;

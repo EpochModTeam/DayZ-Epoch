@@ -246,7 +246,18 @@ class Ship : AllVehicles
     {
     };
   };
-  
+class SmallShip: Ship
+{
+	displayName = "Small Ship";
+	transportMaxMagazines = 100;
+	transportMaxWeapons = 20;
+};
+class BigShip: Ship
+{
+	displayName = "Big Ship";
+	transportMaxMagazines = 500;
+	transportMaxWeapons = 200;
+};
 class Boat : Ship
 {
 	precision = 6;
@@ -255,6 +266,15 @@ class Boat : Ship
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 2;
 };
+class RHIB: Boat
+{
+	displayName = "RHIB";
+};
+class RHIB2Turret: RHIB
+{
+	displayName = "RHIB (Mk19)";
+};
+
 class RHIB_DZ : Boat
 {
 	scope = 2;

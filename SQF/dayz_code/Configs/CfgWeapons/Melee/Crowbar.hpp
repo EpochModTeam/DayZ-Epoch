@@ -1,6 +1,6 @@
 class MeleeCrowbar : MeleeWeapon
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\dayz_weapons\models\crowbar_weaponized";
 	picture = "\dayz_weapons\textures\equip_crowbar_CA.paa";

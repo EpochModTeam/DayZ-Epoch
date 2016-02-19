@@ -1,7 +1,7 @@
 
 	// check that plants libs are properly loaded
 	// thanks to Tansien
-	class faplants : HouseBase {};
+	class faplants : House {};
 	class grass: faplants 
 	{
 			model = "\ca\data\cl_grass1.p3d";
