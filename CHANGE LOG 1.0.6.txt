@@ -45,6 +45,7 @@
 [FIXED] Combine mags not working for Revolver and M1911 ammo @Terrien @ebaydayz #1313
 [FIXED] M113_DZ,_DZE variants config errors and gunner seat not working @McKeighan @ebaydayz #1514
 [FIXED] Smoke countermeasures are now visible @Markokil321 @icomrade #1440
+[FIXED] Keyboard input is now disabled properly while unconscious @skynetdev @ebaydayz #1613
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
