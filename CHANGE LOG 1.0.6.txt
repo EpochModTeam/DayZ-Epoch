@@ -55,8 +55,8 @@
 [UPDATED] Keyboard eventhandler to @facoptere's faster code from DayZ Mod #1673 @ebaydayz
 
 
+[INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
 [INFO] (EXTREMELY IMPORTANT) Server owners MUST update their required build and beta to 131129
-[INFO] Server admins should add requiredSecureId = 2; to their server.cfg to prevent uid spoofing.
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.

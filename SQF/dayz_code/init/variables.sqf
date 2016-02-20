@@ -446,8 +446,6 @@ PVDZE_plr_TradeMenu = [];  		// For all traders
 PVDZE_plr_DeathB = [];
 
 //DayZ settings
-dayz_dawn = 6;
-dayz_dusk = 18;
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 600;
 dayz_zSpawnDistance = 1000;
