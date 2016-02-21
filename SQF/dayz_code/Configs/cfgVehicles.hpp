@@ -1172,14 +1172,7 @@ class CfgVehicles {
 		transportMaxWeapons = 4;
 		transportMaxBackpacks = 4;
 		constructioncount = 2;
-		class transportmagazines
-		{
-			class _xx_ItemTrashToiletpaper
-			{
-				magazine = "ItemTrashToiletpaper";
-				count = 1;
-			};
-		};
+		class transportmagazines {};
 	};
 	class Land_Shed_M01;
 	class StorageShed_DZ: Land_Shed_M01
