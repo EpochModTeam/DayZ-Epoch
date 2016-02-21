@@ -3,15 +3,29 @@ class DefaultClutter;	// External class reference
 class Grid;	// External class reference
 class DefaultLighting;	// External class reference
 class DayLightingRainy;	// External class reference
-class Weather;	// External class reference
+//class Weather;	// External class reference
 
 class CfgWorlds {
+	class DefaultWorld
+	{
+		class Weather
+		{
+			class Overcast
+			{
+				class Weather1;
+				class Weather2;
+				class Weather3;
+				class Weather4;
+				class Weather5;
+			};
+		};
+	};
 	class Chernarus;	// External class reference
 	class DayZMod : Chernarus {
 		access = 3;
 		worldId = 4;
 		cutscenes[] = {"DayZModIntro1"};
-		description = "DayZMod v1.8.7.dev1";
+		description = "DayZ Epoch 1.0.6";
 		icon = "";
 		worldName = "\ca\chernarus\chernarus.wrp";
 		pictureMap = "";
@@ -147,9 +161,39 @@ class CfgWorlds {
 					overcast = 1.0;
 				};
 			};
+			class Overcast: Overcast
+			{
+				class Weather1: Weather1
+				{
+					waves = 0.2;
+				};
+				class Weather7: Weather1
+				{
+					waves = 0.2;
+				};
+				class Weather2: Weather2
+				{
+					waves = 0.22;
+				};
+				class Weather3: Weather3
+				{
+					waves = 0.32;
+				};
+				class Weather4: Weather4
+				{
+					waves = 0.52;
+				};
+				class Weather5: Weather5
+				{
+					waves = 0.72;
+				};
+				class Weather6: Weather5
+				{
+					waves = 2.00;
+				};
+			};
 		};
 	};
-
 	initWorld = "DayZMod";
 	demoWorld = "DayZMod";
 };
