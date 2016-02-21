@@ -10,6 +10,7 @@
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
 [NEW] Optional news/rules feed on player login from DayZ Mod, set dayz_enableRules in init.sqf #1673 @ebaydayz
 [NEW] Weapon switch hotkeys (1 = primary, 2 = pistol, 3 = melee) from DayZ Mod #1673 @ebaydayz
+[NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
 
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
