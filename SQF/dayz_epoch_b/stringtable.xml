@@ -6074,6 +6074,16 @@
 			<French>%1 est déjà dans votre inventaire. Déposer sur le terrain!</French>
 			<Czech>%1 je již ve vašem inventáři. Pád na zem!</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_315">
+			<Original>\n\n%1 is restricted.</Original>
+			<English>\n\n%1 is restricted.</English>
+			<German>\n\n%1 eingeschränkt.</German>
+			<Russian>\n\n%1 ограничивается.</Russian>
+			<!-- <Spanish></Spanish> -->
+			<Dutch>\n\n%1 beperkt.</Dutch>
+			<French>\n\n%1 est restreint.</French>
+			<Czech>\n\n%1 je omezeno.</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 			<Original>Repair Vehicle</Original>
 			<English>Repair Vehicle</English>

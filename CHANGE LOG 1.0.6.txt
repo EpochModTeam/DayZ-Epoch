@@ -11,6 +11,7 @@
 [NEW] Optional news/rules feed on player login from DayZ Mod, set dayz_enableRules in init.sqf #1673 @ebaydayz
 [NEW] Weapon switch hotkeys (1 = primary, 2 = pistol, 3 = melee) from DayZ Mod #1673 @ebaydayz
 [NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
+[NEW] Optional variable to restrict wearable clothes. Add DZE_RestrictSkins to init.sqf #1560 @BetterDeadThanZed @ebaydayz
 
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev

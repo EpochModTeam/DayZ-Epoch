@@ -3,8 +3,6 @@ _playerUID 	= _this select 0;
 _charID 	= _this select 1;
 _model 		= _this select 2;
 
-if (typeOF player == _model) exitWith {cutText ['You already wear this Skin!', 'PLAIN'];};
-
 _old = player;
 player allowDamage false;
 

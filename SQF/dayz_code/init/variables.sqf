@@ -561,7 +561,9 @@ if (isNil "DZE_snapExtraRange") then {
 if (isNil "DZE_checkNearbyRadius") then {
 	DZE_checkNearbyRadius = 30;
 };
-
+if (isNil "DZE_RestrictSkins") then {
+	DZE_RestrictSkins = [];
+};
 // needed on server
 if(isNil "DZE_PlotPole") then {
 	DZE_PlotPole = [30,45];
