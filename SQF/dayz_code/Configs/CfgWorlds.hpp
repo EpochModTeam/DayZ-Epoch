@@ -3,7 +3,16 @@ class DefaultClutter;	// External class reference
 class Grid;	// External class reference
 class DefaultLighting;	// External class reference
 class DayLightingRainy;	// External class reference
-//class Weather;	// External class reference
+class Weather;	// External class reference
+class Overcast {
+				class Weather1;
+				class Weather2;
+				class Weather3;
+				class Weather4;
+				class Weather5;
+				class Weather6;
+				class Weather7;
+};
 
 class CfgWorlds {
 	class DefaultWorld
