@@ -282,7 +282,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		//diag_log format["CREW: %1 ALLOW: %2",(count (crew _cursorTarget)),_allowTow];
 
 		if (_allowTow) then {
-			_liftHelis = nearestObjects [player, DZE_HeliAllowTowFrom, 15];
+			_liftHelis = player nearEntities [DZE_HeliAllowTowFrom,15];
 			{
 				if(!_found) then {
 					_posL = [_x] call FNC_getPos;

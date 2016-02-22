@@ -13,7 +13,7 @@ _towTruckSize = (sizeOf typeOf _towTruck);
 _allowedSize = _towTruckSize-(_towTruckSize/3);
 
 // Get all nearby vehicles within 10m
-_findNearestVehicles = nearestObjects [_towTruck, ["Car","Motorcycle"], 10];
+_findNearestVehicles = _towTruck nearEntities [["Car","Motorcycle"],10];
 _findNearestVehicle = [];
 {
 	if (alive _x && _towTruck != _x) then {
