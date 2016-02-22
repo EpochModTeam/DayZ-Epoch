@@ -3771,7 +3771,7 @@
         <French>Box of medicinal herbs</French>
         <German>Eine Schachtel mit medizinischen Kräutern.</German>
       </Key>
-      <Key ID="str_usract_watch_toggle">
+      <!--<Key ID="str_usract_watch_toggle">
         <English>Watch (Toggle)</English>
         <German>Uhr (umsch.)</German>
         <Italian>Orologio (cambia)</Italian>
@@ -3803,7 +3803,7 @@
         <Russian>Часы</Russian>
         <Polish>Zegarek</Polish>
         <Hungarian>Óra</Hungarian>
-      </Key>
+      </Key>-->
       <Key ID="STR_EQUIP_NAME_19">
         <English>Jerry Can</English>
         <German>Kanister</German>
