@@ -30,8 +30,7 @@ class CfgPatches {
 				//Extra Epoch Addons
 				"asc_eu_lights",
 				"gnt_c185",
-				"usec_ch53",
-				"RedRyder"
+				"usec_ch53"
 			};
 	};
 	class DZ_DebriefingRemoved
