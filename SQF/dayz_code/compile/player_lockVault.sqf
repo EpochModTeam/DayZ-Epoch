@@ -42,9 +42,11 @@ _dir = direction _obj;
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
 if(!isNull _obj) then {
-
+	dze_waiting = nil;
 	PVDZE_log_lockUnlock = [player, _obj,true];
-	publicVariableServer "PVDZE_log_lockUnlock";
+	publicVariableServer "PVDZE_log_lockUnlock";	
+	//wait for response from server to verify safe was logged and saved before proceeding
+	waitUntil {!isNil "dze_waiting"};
 
 	//place vault
 	_holder = createVehicle [_lockedClass,_pos,[], 0, "CAN_COLLIDE"];

@@ -31,7 +31,6 @@
 [FIXED] NearestObjects position error in server_playerSync.sqf #1425 @ebaydayz
 [FIXED] Corrected ClassName type for CH53_DZE and BAF_Merlin_DZE. @Cinjun
 [FIXED] Some counts reverted to forEach. Count loops can not be nested inside other count loops #1491-#1495 @ebaydayz
-[FIXED] Safes empty when opening after restart #1467 @ebaydayz
 [FIXED] Dynamic_vehicle spawning non-upgradable classes of hilux1 & datsun1.  @Uro1
 [FIXED] Eating while inside a vehicle did not drop empty can  @deadeye2
 [FIXED] Zombie loot error when using loot tables in mission file  @deadeye2
@@ -49,6 +48,7 @@
 [FIXED] Smoke countermeasures are now visible @Markokil321 @icomrade #1440
 [FIXED] Keyboard input is now disabled properly while unconscious @skynetdev @ebaydayz #1613
 [FIXED] Toilet paper dupe exploit when building outhouse @Markokil321 @ebaydayz #1599
+[FIXED] Safes and lockboxes wiped when opening after restart and locking not being logged to RPT @ebaydayz #1413 #1503
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
