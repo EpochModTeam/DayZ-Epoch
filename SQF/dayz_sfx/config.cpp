@@ -20,7 +20,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"dayz_anim"};
+		requiredAddons[] = {"dayz"};
 		dayzVersion = 1.8;
 	};
 };
