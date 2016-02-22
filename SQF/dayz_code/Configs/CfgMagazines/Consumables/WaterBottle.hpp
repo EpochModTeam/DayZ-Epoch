@@ -9,7 +9,7 @@ class ItemWaterBottle : FoodDrink
 	
 	Nutrition[] = {0,0,1000,0};
 	
-	infectionChance = 0.3;
+	infectionChance = 0;
 	
 	consumeOutput = "ItemWaterBottleUnfilled";
 	

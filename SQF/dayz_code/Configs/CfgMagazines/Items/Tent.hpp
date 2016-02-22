@@ -1,3 +1,4 @@
+//TENT CONFIGS ARE FOND IN DZE/MISC.HPP
 class ItemTent : CA_Magazine
 {
 	scope = 2;

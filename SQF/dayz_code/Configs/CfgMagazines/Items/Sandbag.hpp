@@ -1,3 +1,4 @@
+// IN DZE/MISC.HPP
 class ItemSandbag : CA_Magazine
 {
 	scope = 2;

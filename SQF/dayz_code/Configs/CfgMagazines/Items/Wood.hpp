@@ -45,7 +45,7 @@ class ItemPlank : CA_Magazine
 		};
 	};
 };
-
+/* Redifined in DZE/Misc
 class PartWoodPile : CA_Magazine
 {
 	scope = 2;
@@ -56,4 +56,4 @@ class PartWoodPile : CA_Magazine
 	picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
 	displayName = $STR_EQUIP_NAME_40;
 	descriptionShort = $STR_EQUIP_DESC_40;
-};
+}; */

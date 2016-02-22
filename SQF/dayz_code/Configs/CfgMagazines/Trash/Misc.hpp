@@ -93,7 +93,7 @@ class ItemTrashRazor : CA_Magazine
 	displayName = $STR_JUNK_NAME_RAZOR;
 	descriptionShort = $STR_JUNK_DESC_RAZOR;
 };
-
+/* //IN DZE/MISC
 class ItemTrashToiletpaper : CA_Magazine
 {
 	scope = 2;
@@ -105,3 +105,4 @@ class ItemTrashToiletpaper : CA_Magazine
 	displayName = $STR_JUNK_NAME_TOILETPAPER;
 	descriptionShort = $STR_JUNK_DESC_TOILETPAPER;
 };
+*/

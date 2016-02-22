@@ -59,7 +59,24 @@ class 2Rnd_12Gauge_Slug : 8Rnd_12Gauge_Slug
 		};
 	};
 };
-
+class 2Rnd_shotgun_74Slug: 2Rnd_12Gauge_Slug {
+	count=2;
+	class ItemActions {
+		class ReloadMag {
+			text="Combine to 8 rounds";
+			script="spawn player_reloadMag;";
+			use[]= {
+				"2Rnd_shotgun_74Slug",
+				"2Rnd_shotgun_74Slug",
+				"2Rnd_shotgun_74Slug",
+				"2Rnd_shotgun_74Slug"
+			};
+			output[]= {
+				"8Rnd_12Gauge_Slug" //USE THIS AMMO TYPE INSTEAD OF 8Rnd_B_Beneli_74Slug
+			};
+		};
+	};
+};
 
 
 /* Buckshot */
@@ -117,6 +134,25 @@ class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 			output[] =
 			{
 				"8Rnd_12Gauge_Buck"
+			};
+		};
+	};
+};
+class 2Rnd_shotgun_74Pellets: 2Rnd_12Gauge_Buck {
+	displayName="2Rnd. Pellets";
+	count=2;
+	class ItemActions {
+		class ReloadMag {
+			text="Combine to 8 rounds";
+			script="spawn player_reloadMag;";
+			use[]= {
+				"2Rnd_shotgun_74Pellets",
+				"2Rnd_shotgun_74Pellets",
+				"2Rnd_shotgun_74Pellets",
+				"2Rnd_shotgun_74Pellets"
+			};
+			output[]= {
+				"8Rnd_12Gauge_Buck" //USE THIS TYPE INSTEAD OF 8Rnd_B_Beneli_Pellets
 			};
 		};
 	};

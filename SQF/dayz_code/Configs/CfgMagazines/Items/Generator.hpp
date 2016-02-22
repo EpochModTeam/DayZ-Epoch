@@ -15,7 +15,7 @@ class ItemGenerator : CA_Magazine
 		{
 			text = $STR_ACTION_BUILD;
 			script = "; [_id,'Build'] spawn player_build; r_action_count = r_action_count + 1;";
-			require[] = {"ItemEtool"};
+			require[] = {"ItemToolbox"};
 			consume[] = {"ItemGenerator"};
 			create = "Generator_DZ";
 		};

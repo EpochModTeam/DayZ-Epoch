@@ -57,3 +57,9 @@ class 100Rnd_762x51_M240: CA_Magazine
 		COMBINE_MAG
 	};
 };
+
+class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 {
+	displayName = "200Rnd. M240";
+	count = 200;
+	descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 200 <br/>Used in: M240, Mk 48 Mod 0";
+};

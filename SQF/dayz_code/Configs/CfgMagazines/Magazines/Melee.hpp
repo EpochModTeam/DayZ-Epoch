@@ -46,6 +46,13 @@ class Fishing_Swing : Melee_Swing
 	ammo = "Fishing_Swing_Ammo";
 };
 
+class sledge_swing : Melee_Swing {
+	displayName = "Sledge";
+	displayNameMagazine = "Sledge";
+	shortNameMagazine = "Sledge";
+	ammo = "Sledge_Swing_Ammo";
+};
+
 class Bat_Swing : Melee_Swing
 {
 	scope = 2;
