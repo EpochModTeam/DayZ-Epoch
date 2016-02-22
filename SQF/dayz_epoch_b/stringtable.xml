@@ -285,14 +285,6 @@
 			<French>Vous utilisez une version incorrecte de DAYZ_CODE, veuillez télécharger ce fichier depuis dayzepoch.com (Vous utilisez la version %1 et le serveur utilise la version %2)</French>
 			<Czech>Máte nesprávnou verzi DAYZ_CODE, stáhněte si prosím aktuální soubor z dayzepoch.com (Vaše verze je %1 a na serveru běží verze %2)</Czech>
 		</Key>
-		<Key ID="str_player_actionslimit">
-			<English>Wait for the previous action to complete to perform another!</English>
-			<German>Du musst erst das eine beenden, bevor du etwas neues startest!</German>
-			<Russian>Дождитесь завершения предыдущего действия, перед тем, как начинать новое!</Russian>
-			<Spanish>¡Espera a terminar la acción previa para realizar otra!</Spanish>
-			<French>Attendez la fin de l&apos;action en cours avant d&apos;en commencer une autre !</French>
-			<Czech>Než začnete dělat něco jiného, musíte dokončit aktuální akci.</Czech>
-		</Key>
 	</Package>
 	<Package name="actions">
 		<Key ID="str_actions_self_antibio">
