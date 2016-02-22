@@ -8,6 +8,10 @@ class CfgVehicles {
 	class AllVehicles : ALL
 	{
 		class NewTurret;
+		class ViewPilot;
+		class ViewOptics;
+		class Sounds { class Engine; class Movement;};
+		class DefaultEventhandlers;
 	};
 	class Land;	// External class reference
 	class LandVehicle : Land {

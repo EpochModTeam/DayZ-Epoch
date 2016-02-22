@@ -1,8 +1,8 @@
-class NewTurret;
-class ViewPilot;
-class ViewOptics;
-class Sounds { class Engine; class Movement;};
-class DefaultEventhandlers;
+//class NewTurret;
+//class ViewPilot;
+//class ViewOptics;
+//class Sounds { class Engine; class Movement;};
+//class DefaultEventhandlers;
 class Ship : AllVehicles
   {
 	transportMaxMagazines = 2000;
