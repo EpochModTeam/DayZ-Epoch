@@ -3188,7 +3188,7 @@
 			<Original>Canceled construction of %1 %2.</Original>
 			<English>Canceled construction of %1 %2.</English>
 			<German>Bau von %1 %2 abgebrochen.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Отменено строительство %1 %2.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Gestopt met het bouwen van %1 %2.</Dutch>
 			<French>La construction de %1 %2 est annulée.</French>
@@ -3218,7 +3218,7 @@
 			<Original>Not setup yet.</Original>
 			<English>Not setup yet.</English>
 			<German>Ausbau noch nicht möglich.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Ещё не установлено.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Nog niet ingesteld.</Dutch>
 			<French>Pas encore installé.</French>
@@ -3478,7 +3478,7 @@
 			<Original>\n\nMissing supply crate.</Original>
 			<English>\n\nMissing supply crate.</English>
 			<German>\n\nKeine Holzkiste gefunden.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>\n\nОтсутствует ящик с припасами.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>\n\nSupply kist ontbreekt</Dutch>
 			<French>\n\nCaisse de fournitures manquante.</French>
@@ -3488,7 +3488,7 @@
 			<Original>\n\nOpened supply crate.</Original>
 			<English>\n\nOpened supply crate.</English>
 			<German>\n\nHolzkiste geöffnet.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>\n\nЯщик с припасами открыт.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>\n\nSupply kist geopend.</Dutch>
 			<French>\n\nCaisse de fournitures ouverte.</French>
@@ -3578,7 +3578,7 @@
 			<Original>Remove already in progress.</Original>
 			<English>Remove already in progress.</English>
 			<German>Entfernen bereits im Gange.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Уже убирается/снимается.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Al bezig met verwijderen.</Dutch>
 			<French>Le démontage est déjà en cours.</French>
@@ -3608,7 +3608,7 @@
 			<Original>Failed object not longer exists.</Original>
 			<English>Failed object not longer exists.</English>
 			<German>Fehlgeschlagen. Objekt existiert nicht mehr.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Объект не существует.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
 			<French>Échec, l'objet n'existe plus.</French>
@@ -3658,7 +3658,7 @@
 			<Original>already in progress.</Original>
 			<English>already in progress.</English>
 			<German>bereits im Gange.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>действие уже выполняется.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>reeds bezig.</Dutch>
 			<French>déjà en cours.</French>
@@ -4198,7 +4198,7 @@
 			<Original>\n\nCrafted Item: %1 x %2</Original>
 			<English>\n\nCrafted Item: %1 x %2</English>
 			<German>Gegenstand hergestellt: %1 x %2</German>
-			<!-- <Russian></Russian> -->
+			<Russian>\n\nСоздан предмет: %1 x %2</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>\n\nItem gecreëerd: %1 x %2</Dutch>
 			<!-- <French></French> -->
@@ -4788,7 +4788,7 @@
       <Original>Add 1 10oz Silver</Original>
       <English>Add 1 10oz Silver</English>
       <!-- <German>1 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 1 10oz золота</Russian> -->
+      <Russian>Добавить 1 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 1 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4798,7 +4798,7 @@
       <Original>Add 10 10oz Silver</Original>
       <English>Add 10 10oz Silver</English>
       <!-- <German>10 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 10 10oz золота</Russian> -->
+      <Russian>Добавить 10 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 10 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4808,7 +4808,7 @@
       <Original>Add 9 10oz Silver</Original>
       <English>Add 9 10oz Silver</English>
       <!-- <German>9 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 9 10oz золота</Russian> -->
+      <Russian>Добавить 9 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 9 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4818,7 +4818,7 @@
       <Original>Remove 1 10oz Silver</Original>
       <English>Remove 1 10oz Silver</English>
       <!-- <German>1 10oz Silver entfernen</German> -->
-      <!-- <Russian>Забрать 1 10oz золота</Russian> -->
+      <Russian>Забрать 1 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Verwijder 1 10oz Goud</Dutch> -->
       <!-- <French></French> -->
@@ -4828,7 +4828,7 @@
       <Original>Add 8 10oz Silver</Original>
       <English>Add 8 10oz Silver</English>
       <!-- <German>8 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 8 10oz золота</Russian> -->
+      <Russian>Добавить 8 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 8 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4838,7 +4838,7 @@
       <Original>Add 7 10oz Silver</Original>
       <English>Add 7 10oz Silver</English>
       <!-- <German>7 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 7 10oz золота</Russian> -->
+      <Russian>Добавить 7 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 7 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4848,7 +4848,7 @@
       <Original>Add 6 10oz Silver</Original>
       <English>Add 6 10oz Silver</English>
       <!-- <German>6 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 6 10oz золота</Russian> -->
+      <Russian>Добавить 6 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 6 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4858,7 +4858,7 @@
       <Original>Add 5 10oz Silver</Original>
       <English>Add 5 10oz Silver</English>
       <!-- <German>5 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 5 10oz золота</Russian> -->
+      <Russian>Добавить 5 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 5 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4868,7 +4868,7 @@
       <Original>Add 4 10oz Silver</Original>
       <English>Add 4 10oz Silver</English>
       <!-- <German>4 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 4 10oz золота</Russian> -->
+      <Russian>Добавить 4 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 4 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4878,7 +4878,7 @@
       <Original>Add 3 10oz Silver</Original>
       <English>Add 3 10oz Silver</English>
       <!-- <German>3 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 3 10oz золота</Russian> -->
+      <Russian>Добавить 3 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 3 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -4888,7 +4888,7 @@
       <Original>Add 2 10oz Silver</Original>
       <English>Add 2 10oz Silver</English>
       <!-- <German>2 10oz Silver hinzufügen</German> -->
-      <!-- <Russian>Добавить 2 10oz золота</Russian> -->
+      <Russian>Добавить 2 10oz серебра</Russian>
       <!-- <Spanish></Spanish> -->
       <!-- <Dutch>Voeg 2 10oz Goud toe</Dutch> -->
       <!-- <French></French> -->
@@ -5078,7 +5078,7 @@
 			<Original>Craft Corrugated Fence</Original>
 			<English>Craft Corrugated Fence</English>
 			<German>Wellblech Zaun herstellen</German>
-			<Russian>Создать: Гофрированный забор</Russian>
+			<Russian>Создать: Гофрир. забор</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Bouw ribbelplaten hek</Dutch>
 			<!-- <French></French> -->
@@ -5098,7 +5098,7 @@
 			<Original>Craft Metal Panel</Original>
 			<English>Craft Metal Panel</English>
 			<German>Metallplatte herstellen</German>
-			<Russian>Создать: Металлическая панель</Russian>
+			<Russian>Создать: Металлич. панель</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Ceëer metalen paneel</Dutch>
 			<!-- <French></French> -->
@@ -5178,7 +5178,7 @@
 			<Original>Craft Metal Floor</Original>
 			<English>Craft Metal Floor</English>
 			<German>Metallboden herstellen</German>
-			<Russian>Создать: Металлический пол</Russian>
+			<Russian>Создать: Металлич. пол</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Creëer metalen vloer</Dutch>
 			<!-- <French></French> -->
@@ -5318,7 +5318,7 @@
 			<Original>Build Fire</Original>
 			<English>Build Fire</English>
 			<German>Lagerfeuer erstellen</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Приготовить костёр</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Bouw kampvuur</Dutch>
 			<!-- <French></French> -->
@@ -5438,7 +5438,7 @@
 			<Original>Craft Garage Doorway</Original>
 			<English>Craft Garage Doorway</English>
 			<German>Garagentor-Rahmen herstellen</German>
-			<Russian>Создать: Гаражный дверной проём</Russian>
+			<Russian>Создать: Проём гаража</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -5958,7 +5958,7 @@
 			<Original>Craft Wood Crate</Original>
 			<English>Craft Wood Crate</English>
 			<German>Holzkiste herstellen</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Создать: Деревянный ящик</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -5968,7 +5968,7 @@
 			<Original>Craft Scaffolding</Original>
 			<English>Craft Scaffolding</English>
 			<!-- <German></German> -->
-			<!-- <Russian></Russian> -->
+			<Russian>Создать: Строй. леса</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -5978,7 +5978,7 @@
 			<Original>Combine Bars</Original>
 			<English>Combine Bars</English>
 			<German>Barren kombinieren</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Объединить слитки</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -5998,7 +5998,7 @@
 			<Original>To driver's seat</Original>
 			<English>To driver's seat</English>
 			<Spanish>Para el asiento del conductor</Spanish>
-			<Russian>Для сиденья водителя</Russian>
+			<Russian>На сиденье водителя</Russian>
 			<French>Pour le siège du conducteur</French>
 			<Czech>Chcete-li sedadla řidiče</Czech>
 			<!-- <Dutch></Dutch> -->
@@ -6008,7 +6008,7 @@
 			<Original>To pilot's seat</Original>
 			<English>To pilot's seat</English>
 			<Spanish>Al asiento de piloto</Spanish>
-			<Russian>Пересесть на место пилота</Russian>
+			<Russian>На место пилота</Russian>
 			<French>Vers la place conducteur</French>
 			<Czech>Na místo pilota</Czech>
 			<!-- <Dutch></Dutch> -->
@@ -6018,7 +6018,7 @@
 			<Original>To back seat</Original>
 			<English>To back seat</English>
 			<Spanish>Al asiento trasero</Spanish>
-			<Russian>Пересесть на место пассажира</Russian>
+			<Russian>На сиденье пассажира</Russian>
 			<French>Vers une place passager</French>
 			<Czech>Na zadní sedadlo</Czech>
 			<!-- <Dutch></Dutch> -->
@@ -6028,7 +6028,7 @@
 			<Original>To gunner's seat</Original>
 			<English>To gunner's seat</English>
 			<Spanish>Al asiento del artillero</Spanish>
-			<Russian>Пересесть на место стрелка</Russian>
+			<Russian>На место стрелка</Russian>
 			<French>Vers la place du tireur</French>
 			<Czech>Na sedadlo střelce</Czech>
 			<!-- <Dutch></Dutch> -->
@@ -6038,7 +6038,7 @@
 			<Original>To commander's seat</Original>
 			<English>To commander's seat</English>
 			<Spanish>Para el asiento del comandante</Spanish>
-			<Russian>Чтобы сиденье командира</Russian>
+			<Russian>На место командира</Russian>
 			<French>Pour le siège du commandant</French>
 			<Czech>Chcete-li sídlo velitele</Czech>
 			<!-- <Dutch></Dutch> -->
@@ -6048,7 +6048,7 @@
 			<Original>\n\nCannot fish while in combat.</Original>
 			<English>\n\nCannot fish while in combat.</English>
 			<German>\n\nSie können nicht im Kampf zu fischen.</German>
-			<Russian>\n\nВы не можете ловить рыбу в то время как в бою.</Russian>
+			<Russian>\n\nВы не можете ловить рыбу, находясь в бою.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>\n\nVissen is niet mogelijk tijdens een conflictsituatie.</Dutch>
 			<French>\n\nVous ne pouvez pas pêcher pendant les combats.</French>
@@ -6078,7 +6078,7 @@
 			<Original>\n\n%1 is restricted.</Original>
 			<English>\n\n%1 is restricted.</English>
 			<German>\n\n%1 eingeschränkt.</German>
-			<Russian>\n\n%1 ограничивается.</Russian>
+			<Russian>\n\n%1 ограничено.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>\n\n%1 beperkt.</Dutch>
 			<French>\n\n%1 est restreint.</French>
@@ -6238,7 +6238,7 @@
 			<Original>Weapon upgrade</Original>
 			<English>Weapon upgrade</English>
 			<German>Bewaffnung</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Установка оружия</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -6248,7 +6248,7 @@
 			<Original>Weapon install guide.</Original>
 			<English>Installation instructions for the vehicle armament.</English>
 			<German>Installationsanleitung für die Fahrzeug-bewaffnung.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Руководство по установке оружия.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -6884,21 +6884,21 @@
 			<French>Le démontage de la construction ne rendra pas de composants.</French>
 			<Czech>Demontáž budovy nevrátí žádné její komponenty.</Czech>
 		</Key>
-    <Key ID="STR_EPOCH_ACTIONS_22">
-      <Original>%1 building parts in range.</Original>
-      <English>%1 building parts in range.</English>
-      <!-- <German></German> -->
-      <Russian>В радиусе %1 частей зданий.</Russian>
-      <!-- <Spanish></Spanish> -->
-      <Dutch></Dutch>
-      <French>%1 constructions à portée.</French>
-      <Czech>%1 částí staveb v okruhu.</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_BULK_NAME">
+		<Key ID="STR_EPOCH_ACTIONS_22">
+			<Original>%1 building parts in range.</Original>
+			<English>%1 building parts in range.</English>
+			<!-- <German></German> -->
+			<Russian>%1 стройматериалов в радиусе.</Russian>
+			<!-- <Spanish></Spanish> -->
+			<Dutch></Dutch>
+			<French>%1 constructions à portée.</French>
+			<Czech>%1 částí staveb v okruhu.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_NAME">
 			<Original>Supply Crate</Original>
 			<English>Supply Crate</English>
 			<German>Versorgungskiste</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Ящик с припасами</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -6918,7 +6918,7 @@
 			<Original>Empty Supply Crate</Original>
 			<English>Empty Supply Crate</English>
 			<German>Leere Versorgungskiste</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Пустой ящик</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -7084,6 +7084,36 @@
 			<!-- <French></French> -->
 			<Czech>12x Železný šrot</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_SAFE">
+			<Original>Safe</Original>
+			<English>Safe</English>
+			<!-- <German></German> -->
+			<Russian>Сейф</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_SAFE_DESC">
+			<Original>Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!</Original>
+			<English>Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!</English>
+			<!-- <German></German> -->
+			<Russian>Личный сейф: Перемещаемый объект, который используется в качестве безопасного хранилища. ВНИМАНИЕ!!! Поставив сейф, вы получите 4-х значный код, который необходимо ввести, чтобы открыть сейф, запишите этот код!</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
+		<Key ID="STR_EPOCH_SAFE_LOCKED">
+			<Original>Locked Safe</Original>
+			<English>Locked Safe</English>
+			<!-- <German></German> -->
+			<Russian>Закрытый сейф</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<!-- <Czech></Czech> -->
+		</Key>
 		<Key ID="STR_EPOCH_TRADER_ENTER">
 			<Original>Now entering %1</Original>
 			<English>Now entering %1</English>
@@ -7144,12 +7174,12 @@
 			<Czech>Dovolený čas pro přihlášení vypršel.\nOdpojte se a zkuste to znovu!</Czech>
 		</Key>
 		<Key ID="str_autojoin_warning">
-			<English>You will auto-join the game in %1 seconds. Press ESC to cancel and leave the lobby</English>
-			<German>Sie werden automatisch in das Spiel in %1 Sekunden. Drücken Sie ESC, um den Vorgang abzubrechen und lassen Sie die Lobby</German>
-			<Russian>Вы автоматически присоединиться к игре в %1 секунд. Нажмите клавишу ESC, чтобы отменить и оставить в лобби</Russian>
-			<Spanish>Va a auto-unirse al juego en %1 segundos. Presione ESC para cancelar y dejar el vestíbulo</Spanish>
-			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall</French>
-			<Czech>Budete auto-zapojit do hry za %1 sekund. Stisknutím klávesy ESC zrušit a nechat lobby</Czech>
+			<English>You will auto-join the game in %1 seconds. Press ESC to cancel and leave the lobby.</English>
+			<German>Sie werden automatisch in das Spiel in %1 Sekunden. Drücken Sie ESC, um den Vorgang abzubrechen und lassen Sie die Lobby.</German>
+			<Russian>Вы автоматически присоединитесь к игре через %1 секунд. Нажмите клавишу ESC, чтобы покинуть лобби.</Russian>
+			<Spanish>Va a auto-unirse al juego en %1 segundos. Presione ESC para cancelar y dejar el vestíbulo.</Spanish>
+			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall.</French>
+			<Czech>Budete auto-zapojit do hry za %1 sekund. Stisknutím klávesy ESC zrušit a nechat lobby.</Czech>
 		</Key>
 	</Package>
 </Project>
