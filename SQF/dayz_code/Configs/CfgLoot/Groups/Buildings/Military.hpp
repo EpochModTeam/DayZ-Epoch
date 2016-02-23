@@ -2,10 +2,14 @@ Military[] =
 {
 	//Pistols
 	{Loot_WEAPON,		3,		Makarov_DZ},
+	{Loot_WEAPON,		1,		MakarovSD},
 	{Loot_WEAPON,		2,		M1911_DZ},
-	{Loot_WEAPON,		1,		M9_DZ},
-	{Loot_WEAPON,		1,		G17_DZ},
-	
+	{Loot_WEAPON,		2,		M9_DZ},
+	{Loot_WEAPON,		1,		M9SD},
+	{Loot_WEAPON,		2,		G17_DZ},
+	{Loot_WEAPON,		2,		Revolver_DZ},
+	{Loot_WEAPON,		0.5,	revolver_gold_EP1},
+
 	//Submachineguns
 	{Loot_WEAPON,		1,		PDW_DZ},
 	{Loot_WEAPON,		3,		Bizon_DZ},
@@ -63,10 +67,14 @@ Military[] =
 MilitarySpecial[] =
 {
 	//Pistols
-	{Loot_WEAPON,		1,		Makarov_DZ},
-	{Loot_WEAPON,		1,		M1911_DZ},
+	{Loot_WEAPON,		3,		Makarov_DZ},
+	{Loot_WEAPON,		1,		MakarovSD},
+	{Loot_WEAPON,		2,		M1911_DZ},
 	{Loot_WEAPON,		2,		M9_DZ},
+	{Loot_WEAPON,		1,		M9SD},
 	{Loot_WEAPON,		2,		G17_DZ},
+	{Loot_WEAPON,		2,		Revolver_DZ},
+	{Loot_WEAPON,		0.5,	revolver_gold_EP1},
 	
 	//Submachineguns
 	{Loot_WEAPON,		2,		PDW_DZ},
@@ -126,6 +134,7 @@ MilitarySpecial[] =
 	{Loot_MAGAZINE,		3,		FoodMRE},
 	{Loot_MAGAZINE,		2,		ItemSandbag},
 	{Loot_MAGAZINE,		0.5,	PipeBomb},
+	{Loot_MAGAZINE,		0.5,	MAAWS_HEAT},
 	{Loot_PILE,			15,		AmmoMilitaryLow, 1, 4},
 	{Loot_PILE,			10,		AmmoMilitaryHigh, 1, 3},
 	{Loot_GROUP,		2,		AttachmentsGeneric},

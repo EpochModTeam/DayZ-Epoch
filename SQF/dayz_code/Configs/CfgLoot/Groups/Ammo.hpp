@@ -4,6 +4,7 @@ AmmoCivilian[] =
 	{Loot_MAGAZINE,		5,		8Rnd_9x18_Makarov},
 	{Loot_MAGAZINE,		3,		7Rnd_45ACP_1911},
 	{Loot_MAGAZINE,		4,		6Rnd_45ACP},
+	{Loot_MAGAZINE,		1,		8Rnd_9x18_MakarovSD},
 	
 	//Rifles
 	{Loot_MAGAZINE,		3,		15Rnd_W1866_Slug},
@@ -12,10 +13,10 @@ AmmoCivilian[] =
 	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
 	
 	//Shotgun
-	{Loot_MAGAZINE,		1,		8Rnd_12Gauge_Buck},
-	{Loot_MAGAZINE,		3,		8Rnd_12Gauge_Slug},
-	{Loot_MAGAZINE,		3,		2Rnd_12Gauge_Buck},
-	{Loot_MAGAZINE,		5,		2Rnd_12Gauge_Slug}
+	{Loot_MAGAZINE,		1,		8Rnd_B_Beneli_Pellets},
+	{Loot_MAGAZINE,		3,		8Rnd_B_Beneli_74Slug},
+	{Loot_MAGAZINE,		3,		2Rnd_shotgun_74Pellets},
+	{Loot_MAGAZINE,		5,		2Rnd_shotgun_74Slug}
 };
 
 AmmoMilitaryLow[] =
@@ -45,15 +46,24 @@ AmmoMilitaryLow[] =
 	{Loot_MAGAZINE,		8,		30Rnd_556x45_Stanag},
 	{Loot_MAGAZINE,		4,		30Rnd_556x45_StanagSD},
 	{Loot_MAGAZINE,		4,		30Rnd_556x45_G36},
+	{Loot_MAGAZINE,		3,		100Rnd_556x45_BetaCMag},
 	{Loot_MAGAZINE,		2,		30Rnd_556x45_G36SD},
 	
 	//Machine guns
 	{Loot_MAGAZINE,		4,		75Rnd_545x39_RPK},
 	{Loot_MAGAZINE,		1,		50Rnd_762x54_UK59},
-	
+	{Loot_MAGAZINE,		1,		200Rnd_556x45_M249},
+	{Loot_MAGAZINE,		2,		100Rnd_556x45_M249},
+	{Loot_MAGAZINE,		2,		100Rnd_762x51_M240},
+	{Loot_MAGAZINE,		2,		100Rnd_762x54_PK},
+	{Loot_MAGAZINE,		3,		75Rnd_545x39_RPK},
+	{Loot_MAGAZINE,		3,		75Rnd_762x39_RPK},
+	{Loot_MAGAZINE,		3,		50Rnd_762x54_UK59},
+
 	//Sniper rifles
 	{Loot_MAGAZINE,		3,		5Rnd_762x51_M24},
-	
+	{Loot_MAGAZINE,		3,		10Rnd_762x54_SVD},
+
 	//Grenade launchers
 	{Loot_MAGAZINE,		4,		1Rnd_HE_M203},
 	{Loot_MAGAZINE,		6,		1Rnd_HE_GP25},
@@ -63,6 +73,12 @@ AmmoMilitaryLow[] =
 	{Loot_MAGAZINE,		5,		FlareGreen_GP25},
 	{Loot_MAGAZINE,		3,		1Rnd_Smoke_M203},
 	{Loot_MAGAZINE,		5,		1Rnd_Smoke_GP25},
+
+	//DZE
+	{Loot_MAGAZINE,		3,		5Rnd_86x70_L115A1},
+	{Loot_MAGAZINE,		3,		20Rnd_B_765x17_Ball},
+	{Loot_MAGAZINE,		4,		20Rnd_762x51_DMR},
+	{Loot_MAGAZINE,		4,		20Rnd_762x51_FNFAL},
 	
 	//Handgrenades
 	{Loot_MAGAZINE,		5,		SmokeShell},
@@ -77,6 +93,7 @@ AmmoMilitaryHigh[] =
 	{Loot_MAGAZINE,		10,		30Rnd_762x39_SA58},
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_Stanag},
 	{Loot_MAGAZINE,		5,		30Rnd_556x45_G36},
+	{Loot_MAGAZINE,		5,		100Rnd_556x45_BetaCMag},
 	
 	//Battle rifles
 	{Loot_MAGAZINE,		5,		20Rnd_762x51_DMR},
@@ -94,7 +111,11 @@ AmmoMilitaryHigh[] =
 	//Sniper rifles
 	{Loot_MAGAZINE,		8,		5Rnd_762x51_M24},
 	{Loot_MAGAZINE,		6,		10Rnd_762x54_SVD},
-	
+
+	//DZE
+	{Loot_MAGAZINE,		6,		5Rnd_86x70_L115A1},
+	{Loot_MAGAZINE,		7,		20Rnd_B_765x17_Ball},
+
 	//Handgrenades
 	{Loot_MAGAZINE,		2,		HandGrenade_East},
 	{Loot_MAGAZINE,		1,		HandGrenade_West}

@@ -1,4 +1,5 @@
-class CfgLootSmall {
+// This file is kept as a reference prior to release, delete if I forget
+/*class CfgLootSmall {
 	trash[] = {		
 		{"TrashTinCan",0.5},
 		{"TrashJackDaniels",0.05},
@@ -273,4 +274,4 @@ class CfgLootSmall {
 		{"M9SD",0.04},
 		{"revolver_gold_EP1",0.01}
 	};
-};
+}; */

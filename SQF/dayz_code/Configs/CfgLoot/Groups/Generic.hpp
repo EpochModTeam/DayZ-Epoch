@@ -6,10 +6,15 @@ Generic[] =
 	{Loot_MAGAZINE,		1,		HandChemGreen},
 	{Loot_MAGAZINE,		1,		HandChemBlue},
 	{Loot_MAGAZINE,		1,		HandChemRed},
+
+	//DZE
+	{Loot_MAGAZINE,		1,		5x_22_LR_17_HMR},
+	{Loot_MAGAZINE,		2,		10x_303},
 	
 //	{Loot_MAGAZINE,		1,		ItemBookBible},
 	
 	{Loot_MAGAZINE,		1,		equip_string},
+	{Loot_MAGAZINE,		1,		ItemDocument},
 	{Loot_MAGAZINE,		1,		equip_duct_tape},
 	{Loot_MAGAZINE,		1,		equip_rope},
 	{Loot_MAGAZINE,		1,		equip_herb_box},

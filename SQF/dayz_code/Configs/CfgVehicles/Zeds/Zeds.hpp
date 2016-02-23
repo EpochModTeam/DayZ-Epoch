@@ -316,7 +316,7 @@ class z_suit2 : z_suit1 {
 };
 class z_worker1 : zZombie_Base { 
 	displayName = $STR_ZNAME_WORKER;
-	zombieLoot = ZombieCivilian;
+	zombieLoot = ZombieWorker;
 	model = "\Ca\characters_E\Overall\Overall";
 	hiddenSelections[] = {"Camo"};
 	

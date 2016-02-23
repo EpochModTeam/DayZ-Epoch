@@ -8,6 +8,7 @@ Consumable[] =
 	{Loot_MAGAZINE,		3,		ItemWaterBottleUnfilled},
 	{Loot_MAGAZINE,		1,		ItemWaterBottleSafe},
 	{Loot_MAGAZINE,		1,		ItemWaterBottle},
+	{Loot_MAGAZINE,		1,		ItemHeatPack},
 	
 	{Loot_MAGAZINE,		3,		ItemSodaCoke},
 	{Loot_MAGAZINE,		3,		ItemSodaPepsi},
@@ -61,6 +62,7 @@ Consumable[] =
 	{Loot_MAGAZINE,		2,		FoodCanSardines},
 	{Loot_MAGAZINE,		2,		FoodCanFrankBeans},
 	{Loot_MAGAZINE,		2,		FoodCanPasta},
+	{Loot_MAGAZINE,		2,		FoodBioMeat},
 	
 	{Loot_MAGAZINE,		5,		FoodCanRusUnlabeled},
 	{Loot_MAGAZINE,		5,		FoodCanRusStew},

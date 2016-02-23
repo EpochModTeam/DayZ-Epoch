@@ -11,9 +11,11 @@ Supermarket[] =
 	{Loot_WEAPON,		1,		ItemDIY_Gate},
 	
 	//Pistols
-	{Loot_WEAPON,		2,		Makarov_DZ},
-	{Loot_WEAPON,		1,		Revolver_DZ},
-	
+	{Loot_WEAPON,		3,		Makarov_DZ},
+	{Loot_WEAPON,		2,		M1911_DZ},
+	{Loot_WEAPON,		1,		M9_DZ},
+	{Loot_WEAPON,		2,		G17_DZ},
+	{Loot_WEAPON,		1,		Revolver_DZ},	
 	//Rifles
 /*	{Loot_WEAPON,		1,		LeeEnfield_DZ},
 	{Loot_WEAPON,		1,		Mosin_DZ},
