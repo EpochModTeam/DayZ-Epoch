@@ -37,10 +37,8 @@ InfectedCamp[] =
 	{Loot_WEAPON,		8,		ItemCrowbar},
 	
 	//Pistols
-	{Loot_WEAPON,		4,		Makarov_DZ},
-	{Loot_WEAPON,		4,		Revolver_DZ},
-	{Loot_WEAPON,		2,		M1911_DZ},
-	
+	{Loot_GROUP,		10,		pistols},
+
 	//Rifles
 	{Loot_WEAPON,		3,		LeeEnfield_DZ},
 	{Loot_WEAPON,		2,		Mosin_DZ},
@@ -56,7 +54,7 @@ InfectedCamp[] =
 	{Loot_MAGAZINE,		1,		ItemWire},
 	{Loot_MAGAZINE,		4,		ItemTankTrap},
 	{Loot_MAGAZINE,		6,		PartWoodPile},
-	{Loot_MAGAZINE,		1,		Skin_Camo1_DZ},
+	{Loot_GROUP,		6,		militaryclothes},
 	{Loot_MAGAZINE,		2,		ItemBookBible},
 	
 	//Groups

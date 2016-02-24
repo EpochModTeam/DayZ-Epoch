@@ -1,14 +1,7 @@
 Military[] =
 {
 	//Pistols
-	{Loot_WEAPON,		3,		Makarov_DZ},
-	{Loot_WEAPON,		1,		MakarovSD},
-	{Loot_WEAPON,		2,		M1911_DZ},
-	{Loot_WEAPON,		2,		M9_DZ},
-	{Loot_WEAPON,		1,		M9SD},
-	{Loot_WEAPON,		2,		G17_DZ},
-	{Loot_WEAPON,		2,		Revolver_DZ},
-	{Loot_WEAPON,		0.5,	revolver_gold_EP1},
+	{Loot_GROUP,		10,		pistols},
 
 	//Submachineguns
 	{Loot_WEAPON,		1,		PDW_DZ},
@@ -39,13 +32,13 @@ Military[] =
 	{Loot_TOOL,			3,		ItemEtool},
 	
 	//Backpacks
-	{Loot_BACKPACK,		4,		DZ_BP_Survival},
-	{Loot_BACKPACK,		2,		DZ_BP_Alice},
-	{Loot_BACKPACK,		1,		DZ_BP_British},
+	{Loot_GROUP,		6,		backpacks},
+	{Loot_GROUP,		6,		militarybackpacks},
+
 	
 	//Clothing
-	{Loot_MAGAZINE,		1,		Skin_Camo1_DZ},
-	{Loot_MAGAZINE,		0.75,	Skin_Soldier1_DZ},
+	{Loot_GROUP,		2,		militaryclothes},
+	{Loot_GROUP,		1,		specialclothes},
 	
 	//Containers
 	{Loot_CONTAINER,	2,		DZ_AmmoBoxRU, AmmoBoxRU1, 6, 12},
@@ -111,15 +104,11 @@ MilitarySpecial[] =
 	{Loot_TOOL,			2,		ItemEtool},
 	
 	//Backpacks
-	{Loot_BACKPACK,		3,		DZ_BP_Alice},
-	{Loot_BACKPACK,		2,		DZ_BP_British},
-	{Loot_BACKPACK,		1,		DZ_BP_Czech},
-	{Loot_BACKPACK,		0.5,	DZ_BP_Coyote},
+	{Loot_GROUP,		6,		militarybackpacks},
 	
 	//Clothing
-	{Loot_MAGAZINE,		2,		Skin_Camo1_DZ},
-	{Loot_MAGAZINE,		1.5,	Skin_Soldier1_DZ},
-	{Loot_MAGAZINE,		1,		Skin_Sniper1_DZ},
+	{Loot_GROUP,		3,		militaryclothes},
+	{Loot_GROUP,		2,		specialclothes},
 	
 	//Containers
 	{Loot_CONTAINER,	3,		DZ_AmmoBoxRU, AmmoBoxRU1, 10, 20},	//5.45x39

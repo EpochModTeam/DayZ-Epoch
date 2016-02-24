@@ -11,11 +11,7 @@ Supermarket[] =
 	{Loot_WEAPON,		1,		ItemDIY_Gate},
 	
 	//Pistols
-	{Loot_WEAPON,		3,		Makarov_DZ},
-	{Loot_WEAPON,		2,		M1911_DZ},
-	{Loot_WEAPON,		1,		M9_DZ},
-	{Loot_WEAPON,		2,		G17_DZ},
-	{Loot_WEAPON,		1,		Revolver_DZ},	
+	{Loot_GROUP,		10,		pistols},
 	//Rifles
 /*	{Loot_WEAPON,		1,		LeeEnfield_DZ},
 	{Loot_WEAPON,		1,		Mosin_DZ},
@@ -24,11 +20,7 @@ Supermarket[] =
 	{Loot_WEAPON,		2,		Crossbow_DZ},*/
 	
 	//Backpacks
-	{Loot_BACKPACK,		4,		DZ_BP_VestPouch},
-	{Loot_BACKPACK,		3,		DZ_BP_Patrol},
-	{Loot_BACKPACK,		2,		DZ_BP_Assault},
-	{Loot_BACKPACK,		1,		DZ_BP_Survival},
-	{Loot_BACKPACK,		0.5,	DZ_BP_Alice},
+	{Loot_GROUP,		5,		backpacks},
 	
 	//Items
 	{Loot_MAGAZINE,		1,		ItemTent},

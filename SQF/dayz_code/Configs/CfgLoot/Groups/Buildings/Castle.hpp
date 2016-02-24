@@ -15,9 +15,7 @@ Castle[] =
 	{Loot_WEAPON,		2,		Mosin_DZ},
 	
 	//Backpacks
-	{Loot_BACKPACK,		2,		DZ_BP_VestPouch},
-	{Loot_BACKPACK,		2,		DZ_BP_Patrol},
-	{Loot_BACKPACK,		2,		DZ_BP_Assault},
+	{Loot_GROUP,		4,		backpacks},
 	
 	//Items
 	{Loot_MAGAZINE,		4,		ItemSandbag},

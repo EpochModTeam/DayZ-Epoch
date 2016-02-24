@@ -1255,7 +1255,7 @@
 			};
 		};
 	};
-	class ItemTentDomed : ItemTent {
+	class ItemTentDomed : ItemTent { //Legacy Epoch
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -1292,7 +1292,7 @@
 			};
 		};
 	};
-	class ItemTentDomed2 : ItemTent {
+	class ItemTentDomed2 : ItemTent { //Legacy Epoch
 		scope = 2;
 		count = 1;
 		type = 256;

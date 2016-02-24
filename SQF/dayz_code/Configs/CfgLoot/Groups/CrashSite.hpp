@@ -34,10 +34,11 @@ CrashSiteRU[] =
 	{Loot_WEAPON,		0.5,	NVGoggles},
 	
 	//Backpacks
-	
+	{Loot_GROUP,		4,		militarybackpacks},
+
 	//Clothing
-	{Loot_MAGAZINE,		2.5,	Skin_Camo1_DZ},
-	{Loot_MAGAZINE,		1.5,	Skin_Sniper1_DZ},
+	{Loot_GROUP,		3,		militaryclothes},
+	{Loot_GROUP,		2,		specialclothes},
 	
 	//Containers
 	{Loot_CONTAINER,	3,		DZ_MedBox, MedicalBox, 10, 20},
@@ -95,11 +96,12 @@ CrashSiteUS[] =
 	{Loot_WEAPON,		0.5,	NVGoggles},
 	
 	//Backpacks
-	
+	{Loot_GROUP,		4,		militarybackpacks},
+
 	//Clothing
-	{Loot_MAGAZINE,		2.5,	Skin_Camo1_DZ},
-	{Loot_MAGAZINE,		1.5,	Skin_Sniper1_DZ},
-	
+	{Loot_GROUP,		3,		militaryclothes},
+	{Loot_GROUP,		2,		specialclothes},
+
 	//Containers
 	{Loot_CONTAINER,	3,		DZ_MedBox, MedicalBox, 10, 20},
 	{Loot_CONTAINER,	3,		DZ_AmmoBoxUS, AmmoBoxUS1, 10, 20},		//556x45	STANAG, M249
@@ -156,10 +158,11 @@ CrashSiteEU[] =
 	{Loot_WEAPON,		0.5,	NVGoggles},
 	
 	//Backpacks
-	
+	{Loot_GROUP,		4,		militarybackpacks},
+
 	//Clothing
-	{Loot_MAGAZINE,		2.5,	Skin_Camo1_DZ},
-	{Loot_MAGAZINE,		1.5,	Skin_Sniper1_DZ},
+	{Loot_GROUP,		3,		militaryclothes},
+	{Loot_GROUP,		2,		specialclothes},
 	
 	//Containers
 	{Loot_CONTAINER,	3,		DZ_MedBox, MedicalBox, 10, 20},
@@ -211,12 +214,16 @@ CrashSiteUN[] =
 	{Loot_WEAPON,		3,		G36C_DZ},
 	{Loot_WEAPON,		2,		L85_Holo_DZ},
 	{Loot_WEAPON,		1,		RPK74_DZ},
-	
+
+	//Backpacks
+	{Loot_GROUP,		4,		militarybackpacks},
+
 	//Tools
 	{Loot_WEAPON,		2,		ItemGPS},
 	
 	//Clothing
-	{Loot_MAGAZINE,		2,		Skin_Camo1_DZ},
+	{Loot_GROUP,		3,		militaryclothes},
+	{Loot_GROUP,		2,		specialclothes},
 	
 	//Containers
 	{Loot_CONTAINER,	10,		DZ_MedBox, MedicalBox, 10, 20},

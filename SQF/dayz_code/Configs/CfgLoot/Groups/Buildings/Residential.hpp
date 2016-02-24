@@ -20,11 +20,7 @@ Residential[] =
 	{Loot_WEAPON,		1,		ItemDIY_Gate},
 	
 	//Backpacks
-	{Loot_BACKPACK,		3,		DZ_BP_VestPouch},
-	{Loot_BACKPACK,		2.5,	DZ_BP_Patrol},
-	{Loot_BACKPACK,		2,		DZ_BP_Assault},
-	{Loot_BACKPACK,		1.5,	DZ_BP_Survival},
-	{Loot_BACKPACK,		1,		DZ_BP_Alice},
+	{Loot_GROUP,		4,		backpacks},
 	
 	//Other
 	{Loot_MAGAZINE,		0.5,	ItemPadlock},

@@ -16,11 +16,8 @@ CarePackage[] =
 	{Loot_WEAPON,		5,		ItemKnife},
 	
 	//Backpacks
-	{Loot_BACKPACK,		3,		DZ_BP_VestPouch},
-	{Loot_BACKPACK,		2.5,	DZ_BP_Patrol},
-	{Loot_BACKPACK,		2,		DZ_BP_Assault},
-	{Loot_BACKPACK,		1.5,	DZ_BP_Survival},
-	{Loot_BACKPACK,		1,		DZ_BP_Alice},
+	{Loot_GROUP,		4,		backpacks},
+	{Loot_GROUP,		3,		militarybackpacks},
 	
 	//Containers
 	{Loot_CONTAINER,	5,		DZ_CardboardBox, Consumable, 6, 12},

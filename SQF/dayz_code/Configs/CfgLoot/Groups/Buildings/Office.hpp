@@ -6,21 +6,13 @@ Office[] =
 	{Loot_WEAPON,		5,		ItemFlashlight},
 	
 	//Pistols
-	{Loot_WEAPON,		3,		Makarov_DZ},
-	{Loot_WEAPON,		1,		MakarovSD},
-	{Loot_WEAPON,		2,		M1911_DZ},
-	{Loot_WEAPON,		2,		M9_DZ},
-	{Loot_WEAPON,		1,		M9SD},
-	{Loot_WEAPON,		2,		G17_DZ},
-	{Loot_WEAPON,		2,		Revolver_DZ},
+	{Loot_GROUP,		10,		pistols},
 	
 	//Rifles
 	{Loot_WEAPON,		3,		MeleeBaseBallBat},
 	
 	//Backpacks
-	{Loot_BACKPACK,		3,		DZ_BP_VestPouch},
-	{Loot_BACKPACK,		2,		DZ_BP_Patrol},
-	{Loot_BACKPACK,		1,		DZ_BP_Assault},
+	{Loot_GROUP,		4,		backpacks},
 	
 	//Items
 	{Loot_MAGAZINE,		5,		ItemAntibacterialWipe},

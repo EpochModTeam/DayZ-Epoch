@@ -8,9 +8,7 @@ Church[] =
 	{Loot_WEAPON,		3,		MeleeBaseBallBat},
 	
 	//Backpacks
-	{Loot_BACKPACK,		2,		DZ_BP_VestPouch},
-	{Loot_BACKPACK,		1,		DZ_BP_Patrol},
-	{Loot_BACKPACK,		0.5,	DZ_BP_Assault},
+	{Loot_GROUP,		4,		backpacks},
 	
 	//Items
 	{Loot_MAGAZINE,		1,		equip_Crossbow_Kit},

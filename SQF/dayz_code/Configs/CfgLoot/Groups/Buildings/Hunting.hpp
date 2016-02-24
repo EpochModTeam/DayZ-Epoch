@@ -16,9 +16,8 @@ Hunting[] =
 	{Loot_WEAPON,		2,		ItemCompass},
 	
 	//Backpacks
-	{Loot_BACKPACK,		3,		DZ_BP_Assault},
-	{Loot_BACKPACK,		2,		DZ_BP_Survival},
-	{Loot_BACKPACK,		1,		DZ_BP_Alice},
+	{Loot_GROUP,		5,		backpacks},
+	{Loot_GROUP,		1,		militarybackpacks},
 	
 	//Other
 	{Loot_MAGAZINE,		2,		ItemTent},
