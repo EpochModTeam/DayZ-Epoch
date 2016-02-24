@@ -49,6 +49,7 @@
 [FIXED] Keyboard input is now disabled properly while unconscious @skynetdev @ebaydayz #1613
 [FIXED] Toilet paper dupe exploit when building outhouse @Markokil321 @ebaydayz #1599
 [FIXED] Safes and lockboxes wiped when opening after restart and locking not being logged to RPT @ebaydayz #1413 #1503
+[FIXED] Duplicate objectUIDs occasionally causing vehicles to swap classes or be deleted across restarts @ebaydayz #1504
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

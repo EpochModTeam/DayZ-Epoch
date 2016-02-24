@@ -96,6 +96,9 @@ if (isServer && isNil "sm_done") then {
 		_fuel =			_x select 7;
 		_damage = 		_x select 8;
 		
+		// Set objectUIDs in currentObjectUIDs list to prevent duplicates
+		if (_type in dayz_allowedObjects) then {_worldspace call dayz_objectUID2;} else {_worldspace call dayz_objectUID3;};
+		
 		_dir = 0;
 		_pos = [0,0,0];
 		_wsDone = false;
