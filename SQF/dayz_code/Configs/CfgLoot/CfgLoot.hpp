@@ -141,7 +141,7 @@ class CfgLoot
 };
 /* //OLD SYSTEM MAKE INTO LEGACY SYSTEM?
 #include "CfgLootSmall.hpp"
-class CfgLoot {
+class CfgLootLegacy {
 	trash[] = {
 		{"TrashTinCan",0.5}
 		,{"TrashJackDaniels",0.05}

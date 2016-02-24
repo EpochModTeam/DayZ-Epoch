@@ -12,7 +12,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_190;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentOld",1}};
@@ -21,7 +21,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_191;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentDomed",1}};
@@ -30,7 +30,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_192;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemTentDomed2",1}};
@@ -39,7 +39,7 @@
 			class Crafting3
 			{
 				text = $STR_EPOCH_PLAYER_193;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"sun_shade_kit",1}};
@@ -48,7 +48,7 @@
 			class Crafting4
 			{
 				text = $STR_EPOCH_PLAYER_194;
-				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemBurlap",1}};
@@ -70,7 +70,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_195;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"sand"}; // todo add sand requirement
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbag",1}};
@@ -91,7 +91,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_196;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"light_pole_kit",1}};
@@ -145,7 +145,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_215;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"wooden_shed_kit",1}};
@@ -154,7 +154,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_217;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"outhouse_kit",1}};
@@ -163,7 +163,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_216;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"storage_shed_kit",1}};
@@ -184,7 +184,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_218;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemCorrugated",1}};
@@ -193,7 +193,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_219;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"rusty_gate_kit",1}};
@@ -202,7 +202,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_220;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"metal_panel_kit",1}};
@@ -211,7 +211,7 @@
 			class Crafting3
 			{
 				text = $STR_EPOCH_PLAYER_305;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemScaffoldingKit",1}};
@@ -296,7 +296,7 @@
 			class Crafting
 			{
 					text = $STR_EPOCH_PLAYER_276;
-					script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+					script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 					neednearby[] = {};
 					requiretools[] = {"ItemToolbox","ItemMatchbox_DZE"};
 					output[] = {{"ItemFireBarrel_kit",1}};
@@ -411,7 +411,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_228;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop","fire"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
 				output[] = {{"metal_floor_kit",1}};
@@ -504,7 +504,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_229;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_large_net_kit",1}};
@@ -534,7 +534,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_229;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_large_net_kit",1}};
@@ -876,7 +876,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_242;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodLumber",1}};
@@ -885,7 +885,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_243;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemKnife"};
 				output[] = {{"WoodenArrow",3}};
@@ -895,7 +895,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_244;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"stick_fence_kit",1}};
@@ -919,7 +919,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_251;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodLumber",3}};
@@ -941,7 +941,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_252;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"cinder_wall_kit",1}};
@@ -950,7 +950,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_253;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"cinder_garage_kit",1}};
@@ -959,7 +959,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_234;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"cinder_door_kit",1}};
@@ -994,7 +994,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_251;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"PartWoodPlywood",3}};
@@ -1016,7 +1016,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_254;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"sawmill"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"PartWoodPlywood",1}};
@@ -1026,7 +1026,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_255;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"bulk_empty",1}};
@@ -1036,7 +1036,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_256;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"deer_stand_kit",1}};
@@ -1047,7 +1047,7 @@
 			class Crafting3
 			{
 				text = $STR_EPOCH_PLAYER_257;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodStairs",1}};
@@ -1057,7 +1057,7 @@
 			class Crafting4
 			{
 				text = $STR_EPOCH_PLAYER_258;
-				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodLadder",1}};
@@ -1067,7 +1067,7 @@
 			class Crafting5
         		{
 			        text = $STR_EPOCH_PLAYER_259;
-			        Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			        Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			        neednearby[] = {"sawmill"};
 			        requiretools[] = {"ItemToolbox"};
 			        output[] = {{"PartPlankPack",1}};
@@ -1076,7 +1076,7 @@
         		class Crafting6
         		{
 	        		text = $STR_EPOCH_PLAYER_277;
-			        Script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
+			        Script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			        neednearby[] = {"workshop"};
 			        requiretools[] = {"ItemToolbox"};
 			        output[] = {{"ItemGunRackKit",1}};
@@ -1085,7 +1085,7 @@
         	class Crafting7
 			{
 				text = $STR_EPOCH_PLAYER_304;
-				Script = ";['Crafting7','CfgMagazines', _id] spawn player_craftItem;";
+				Script = ";['Crafting7','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"ItemWoodCrateKit",1}};
@@ -1106,7 +1106,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_260;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"workbench_kit",1}};
@@ -1116,7 +1116,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_261;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {{"wood_shack_kit",1}};
@@ -1125,7 +1125,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_262;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodFloorQuarter",1}};
@@ -1134,7 +1134,7 @@
 			class Crafting3
 			{
 				text = $STR_EPOCH_PLAYER_263;
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemCrowbar"};
 				output[] = {{"ItemWoodWallThird",1}};
@@ -1143,7 +1143,7 @@
 			class Crafting4
 		        {
 		            text = $STR_EPOCH_PLAYER_264;
-		            Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+		            Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 		            neednearby[] = {"sawmill"};
 		            requiretools[] = {"ItemToolbox"};
 		            output[] = {{"PartPlywoodPack",1}};
@@ -1152,7 +1152,29 @@
 
 		};
 	};
-	class ItemTent;
+	class ItemTent : CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = WeaponSlotItem * 3;
+		
+		model = "\dayz_equip\models\tentbag_gear.p3d";
+		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
+		displayName = $STR_EQUIP_NAME_20;
+		descriptionShort = $STR_EQUIP_DESC_20;
+
+		class ItemActions
+		{
+			class Build
+			{
+				text = $STR_PITCH_TENT;
+				script = "; [_id,'Build'] spawn player_build; r_action_count = r_action_count + 1;";
+				require[] = {};
+				consume[] = {"ItemTent"};
+				create = "TentStorage";
+			};
+		};
+	};
 	class ItemTentOld: ItemTent
 	{
 		scope = 2;
@@ -1175,7 +1197,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_270;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
@@ -1184,7 +1206,48 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_271;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"forest_net_kit",1}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
+			};
+		};
+	};
+	class ItemDomeTent : CA_Magazine
+	{
+		scope = 2;
+		count = 1;
+		type = WeaponSlotItem * 3;
+		
+		model = "\dayz_equip\models\tentbag_gear.p3d";
+		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
+		displayName = $STR_VEH_NAME_DOME_TENT;
+		descriptionShort = $STR_EQUIP_DESC_20;
+
+		class ItemActions
+		{
+			class Build
+			{
+				text = $STR_PITCH_DOME_TENT;
+				script = "; [_id,'Build'] spawn player_build; r_action_count = r_action_count + 1;";
+				require[] = {};
+				consume[] = {"ItemDomeTent"};
+				create = "DomeTentStorage";
+			};
+			class Crafting
+			{
+				text = $STR_EPOCH_PLAYER_270;
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+				neednearby[] = {"workshop"};
+				requiretools[] = {"ItemToolbox","ItemKnife"};
+				output[] = {{"desert_net_kit",1}};
+				input[] = {{"ItemTent",2},{"ItemPole",2}};
+			};
+			class Crafting1
+			{
+				text = $STR_EPOCH_PLAYER_271;
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
@@ -1212,7 +1275,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_270;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
@@ -1221,7 +1284,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_271;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
@@ -1247,7 +1310,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_270;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"desert_net_kit",1}};
@@ -1256,7 +1319,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_271;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"forest_net_kit",1}};
@@ -1296,7 +1359,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_273;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbagLarge",1}};
@@ -1305,7 +1368,7 @@
 			class Crafting1
 			{
 				text = $STR_EPOCH_PLAYER_274;
-				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"sandbag_nest_kit",1}};
@@ -1314,7 +1377,7 @@
 			class Crafting2
 			{
 				text = $STR_EPOCH_PLAYER_298;
-				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"BagFenceRound_DZ_kit",1}};
@@ -1324,7 +1387,7 @@
 			class Crafting3
 			{
 				text = "Craft M240 Nest";
-				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 				output[] = {{"m240_nest_kit",1}};
@@ -1355,7 +1418,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_300;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbag",1}};
@@ -1377,7 +1440,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_275;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {};
@@ -1399,7 +1462,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_275;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox"};
 				output[] = {};
@@ -1428,7 +1491,7 @@
 			class Crafting
 			{
 				text = "Craft Triple H-barrier";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
 				requiretools[] = {"ItemEtool","ItemToolbox"};
 				output[] = {{"ItemSandbagExLarge",1}};
@@ -1457,7 +1520,7 @@
 			class Crafting
                         {
                                 text = "Craft 5x H-barrier";
-                                script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+                                script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
                                 neednearby[] = {};
                                 requiretools[] = {"ItemEtool","ItemToolbox"};
                                 output[] = {{"ItemSandbagExLarge5x",1}};
@@ -1551,7 +1614,7 @@
 			class Crafting
 			{
 				text = $STR_EPOCH_PLAYER_269b;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {"workshop"};
 				requiretools[] = {"ItemToolbox","ItemKnife"};
 				output[] = {{"ItemCanvas",1}};
@@ -1560,7 +1623,7 @@
 			class Crafting1
 			{
 				text = "Craft Hemp Seeds";
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {""};
 				requiretools[] = {"ItemKnife"};
 				output[] = {{"ItemHempSeed",5}};
