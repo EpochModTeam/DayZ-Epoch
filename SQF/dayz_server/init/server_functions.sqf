@@ -579,6 +579,8 @@ server_getDiff2 =	{
 	_result
 };
 
+currentObjectUIDs = [];
+
 dayz_objectUID = {
 	private["_position","_dir","_key","_object"];
 	_object = _this;
@@ -599,6 +601,11 @@ dayz_objectUID2 = {
 		_key = _key + str(round(_x));
 	} count _position;
 	_key = _key + str(round(_dir));
+	// Make sure the generated key is not a duplicate
+	while {true} do {
+		if !(_key in currentObjectUIDs) exitWith {currentObjectUIDs set [count currentObjectUIDs,_key];};
+		_key = _key + 1;
+	};
 	_key
 };
 
@@ -613,6 +620,11 @@ dayz_objectUID3 = {
 		_key = _key + str(round(_x));
 	} count _position;
 	_key = _key + str(round(_dir + time));
+	// Make sure the generated key is not a duplicate
+	while {true} do {
+		if !(_key in currentObjectUIDs) exitWith {currentObjectUIDs set [count currentObjectUIDs,_key];};
+		_key = _key + 1;
+	};
 	_key
 };
 
