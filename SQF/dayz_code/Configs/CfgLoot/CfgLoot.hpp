@@ -48,7 +48,7 @@ class CfgLoot
 		#include "Groups\InfectedCamp.hpp"
 		
 		// Buildings
-		#include "Groups\Buildings\Boat.hpp"
+		/*#include "Groups\Buildings\Boat.hpp"
 		#include "Groups\Buildings\Castle.hpp"
 		#include "Groups\Buildings\Church.hpp"
 		#include "Groups\Buildings\Construction.hpp"
@@ -63,8 +63,9 @@ class CfgLoot
 		#include "Groups\Buildings\ResidentialRuins.hpp"
 		#include "Groups\Buildings\Supermarket.hpp"
 		#include "Groups\Buildings\Toilet.hpp"
-		#include "Groups\Buildings\Hangar.hpp"
-	
+		#include "Groups\Buildings\Hangar.hpp"*/
+		#include "CfgBuildingPos.hpp"
+
 		// Zombies
 		#include "Groups\Zombies\Civilian.hpp"
 		#include "Groups\Zombies\Hunter.hpp"
