@@ -134,3 +134,30 @@ MilitarySpecial[] =
 	{Loot_PILE,			10,		Consumable, 1, 2},
 	{Loot_GROUP,		8,		Generic}
 };
+/*
+MilitaryIndustrial[] = {//DZE ADDED
+			{ "pistols", "cfglootweapon", 0.02 },
+			{ "assaultrifles", "cfglootweapon", 0.05 },
+			{ "PartGeneric", "magazine", 0.03 },
+			{ "sniperrifles", "cfglootweapon", 0.01 },
+			{ "shotgunsingleshot", "cfglootweapon", 0.05 },
+			{ "ItemGenerator", "magazine", 0.01 },
+			{ "submachinegun", "cfglootweapon", 0.05 },
+			{"PartGeneric","magazine",0.03},
+			{"ItemGenerator","magazine",0.01},
+			{"PartWheel","magazine",0.02},
+			{"Binocular","weapon",0.01},
+			{"ItemFlashlightRed","military",0.03},
+			{"ItemKnife","military",0.04},
+			{"ItemGPS","weapon",0.01},
+			{"PartVRotor","magazine",0.01},
+			{"militarybackpacks","militarybackpacks",0.03},
+			{"","medical",0.05},
+			{"","generic",0.35},
+			{"","military",0.07},
+			{"ItemEtool","weapon",0.03},
+			{"ItemSandbag","magazine",0.02},
+			{"ItemFuelBarrelEmpty","magazine",0.03},
+			{"fuel_pump_kit","magazine",0.01},
+			{"machineguns", "cfglootweapon", 0.01 }
+} */

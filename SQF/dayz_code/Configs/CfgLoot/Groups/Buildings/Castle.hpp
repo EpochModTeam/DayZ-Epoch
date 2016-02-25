@@ -31,6 +31,6 @@ Castle[] =
 	{Loot_GROUP,		10,		Trash},
 	{Loot_GROUP,		2,		AttachmentsGeneric},
 	{Loot_GROUP,		5,		Generic},
-	{Loot_GROUP,		1,		Matchbox},
+	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
 	{Loot_GROUP,		5,		Consumable}
 };

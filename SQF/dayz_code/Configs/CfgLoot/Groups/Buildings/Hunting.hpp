@@ -29,6 +29,6 @@ Hunting[] =
 	
 	{Loot_PILE,			10,		AmmoCivilian, 1, 3},
 	{Loot_PILE,			10,		Consumable, 1, 3},
-	{Loot_GROUP,		7,		Matchbox},
+	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
 	{Loot_GROUP,		10,		Generic}
 };
