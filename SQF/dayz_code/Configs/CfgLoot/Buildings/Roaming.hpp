@@ -30,12 +30,6 @@ class Land_HouseBlock_B4: HouseRoaming{
 	zedPos[] = {{0.0595703,-5.58252,-6.69312},{-1.1543,5.55225,-6.74633}};
 	lootPosSmall[] = {{-0.0693359,4.82227,-7.28133}};
 };
-class Land_HouseBlock_B5: HouseRoaming{
-	zedPos[] = {{6.5918,0.56543,-6.60703},{-0.304932,-6.36328,-6.60701}};
-};
-class Land_HouseBlock_B6: HouseRoaming{
-	zedPos[] = {{-4.28174,1.32861,-6.7437},{-3.84131,-0.0163574,-6.74365}};
-};
 class Land_HouseBlock_C2 : HouseRoaming {};
 class Land_HouseBlock_C3 : HouseRoaming {};
 class Land_HouseBlock_C4 : HouseRoaming {};
