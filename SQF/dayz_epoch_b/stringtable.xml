@@ -6084,6 +6084,16 @@
 			<French>\n\n%1 est restreint.</French>
 			<Czech>\n\n%1 je omezeno.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_316">
+			<Original>\n\nYou may only access friends' gear in this area.</Original>
+			<English>\n\nYou may only access friends' gear in this area.</English>
+			<German>\n\nSie können Zahn 'Freunde Zugriff nur in diesem Bereich.</German>
+			<Russian>\n\nВы можете получить доступ только к шестерню знакомого в этой области.</Russian>
+			<Spanish>\n\nSólo se puede acceder engranaje amigos en esta área.</Spanish>
+			<Dutch>\n\nU mag alleen toegang tot versnelling vrienden 'op dit gebied.</Dutch>
+			<French>\n\nVous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
+			<Czech>\n\nMůžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
 			<Original>Repair Vehicle</Original>
 			<English>Repair Vehicle</English>

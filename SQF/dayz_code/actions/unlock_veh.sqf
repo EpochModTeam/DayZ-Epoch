@@ -7,6 +7,8 @@ DZE_ActionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
+{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
+s_player_lockUnlockInside_ctrl = -1;
 
 PVDZE_veh_Lock = [_vehicle,false];
 if(player distance _vehicle < 10) then {
@@ -20,4 +22,5 @@ if(player distance _vehicle < 10) then {
 };
 
 s_player_lockUnlock_crtl = -1;
+s_player_lockUnlockInside_ctrl = -1;
 DZE_ActionInProgress = false;
