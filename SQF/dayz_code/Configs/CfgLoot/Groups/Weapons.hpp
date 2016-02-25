@@ -43,19 +43,6 @@ sniperrifles[] = {
 	,{Loot_WEAPON,		1,		M14_EP1}
 	,{Loot_WEAPON,		1,		DMR}
 };
-/*
-sniperriflesammo[] = {
-	{Loot_WEAPON,		10,		30Rnd_545x39_AKSD}
-	,{Loot_WEAPON,		10,		5Rnd_127x108_KSVK}
-	,{Loot_WEAPON,		10,		5Rnd_86x70_L115A1}
-	,{Loot_WEAPON,		10,		10Rnd_127x99_m107}
-	,{Loot_WEAPON,		10,		10Rnd_762x54_SVD}
-	,{Loot_WEAPON,		10,		20Rnd_762x51_DMR}
-	,{Loot_WEAPON,		10,		5Rnd_762x51_M24}
-	,{Loot_WEAPON,		10,		5x_22_LR_17_HMR}
-	,{Loot_WEAPON,		10,		20Rnd_762x51_SB_SCAR}
-	,{Loot_WEAPON,		10,		20Rnd_9x39_SP5_VSS}
-}; */
 submachinegun[] = {
 	{Loot_WEAPON,		2,		UZI_EP1}
 	,{Loot_WEAPON,		1.5,		bizon}
@@ -98,16 +85,6 @@ assaultrifles[] = {
 	,{Loot_WEAPON,		0.1,		BAF_L85A2_RIS_Holo}
 	,{Loot_WEAPON,		0.1,		M4A1_HWS_GL_SD_Camo}
 };
-/*
-assaultrifleammo[] = {
-	{Loot_WEAPON,		10,		30Rnd_762x39_SA58}
-	,{Loot_WEAPON,		10,		30Rnd_762x39_AK47}
-	,{Loot_WEAPON,		10,		30Rnd_556x45_Stanag}
-	,{Loot_WEAPON,		10,		30Rnd_545x39_AK}
-	,{Loot_WEAPON,		10,		30Rnd_556x45_StanagSD}
-	,{Loot_WEAPON,		10,		20Rnd_762x51_FNFAL}
-};
-*/
 machineguns[] = {
 	{Loot_WEAPON,		1.1,		RPK_74}
 	,{Loot_WEAPON,		1.1,		M8_SAW}
@@ -122,28 +99,8 @@ machineguns[] = {
 	,{Loot_WEAPON,		0.8,		M249_EP1_DZ}
 	,{Loot_WEAPON,		0.5,		Mk_48_DZ}
 };
-/*
-machinegunammo[] = {
-	{Loot_WEAPON,		10,		100Rnd_556x45_BetaCMag}
-	,{Loot_WEAPON,		10,		75Rnd_545x39_RPK}
-	,{Loot_WEAPON,		10,		100Rnd_556x45_M249}
-	,{Loot_WEAPON,		10,		100Rnd_762x51_M240}
-	,{Loot_WEAPON,		10,		100Rnd_762x54_PK}
-	,{Loot_WEAPON,		10,		200Rnd_556x45_M249}
-};
-machinegunammoexpl[] = {
-	{Loot_WEAPON,		10,		100Rnd_556x45_BetaCMag}
-	,{Loot_WEAPON,		10,		75Rnd_545x39_RPK}
-	,{Loot_WEAPON,		10,		100Rnd_556x45_M249}
-	,{Loot_WEAPON,		10,		100Rnd_762x51_M240}
-	,{Loot_WEAPON,		10,		100Rnd_762x54_PK}
-	,{Loot_WEAPON,		10,		200Rnd_556x45_M249}
-	,{Loot_WEAPON,		10,		MAAWS_HEAT}
-	,{Loot_WEAPON,		10,		PipeBomb}
-};
 militaryshotguns[] = {
-	{Loot_WEAPON,		10,		Saiga12K}
-	,{Loot_WEAPON,		10,		Remington870_lamp}
-	,{Loot_WEAPON,		10,		M1014}
+	{Loot_WEAPON,		2,		Saiga12K}
+	,{Loot_WEAPON,		2,		Remington870_lamp}
+	,{Loot_WEAPON,		2,		M1014}
 };
-*/

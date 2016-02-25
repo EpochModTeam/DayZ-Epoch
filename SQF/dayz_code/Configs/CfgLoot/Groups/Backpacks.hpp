@@ -12,5 +12,5 @@ militarybackpacks[] = {
 	{Loot_BACKPACK,		2,		DZ_GunBag_EP1},
 	{Loot_BACKPACK,		2,		DZ_CivilBackpack_EP1},
 	{Loot_BACKPACK,		2,		DZ_Backpack_EP1},
-	{Loot_BACKPACK,		1,		DZ_LargeGunBag_EP1},
+	{Loot_BACKPACK,		1,		DZ_LargeGunBag_EP1}
 };

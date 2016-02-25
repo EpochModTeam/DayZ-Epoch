@@ -15,3 +15,9 @@ CHANGED WEAPON CLASSES
 	{Loot_WEAPON,		2,		G17_DZ},
 	{Loot_WEAPON,		2,		Revolver_DZ},
 	{Loot_WEAPON,		0.5,	revolver_gold_EP1},
+	
+Create switchable blood system with variable.
+Convert (if old system) to ItemBloodbag
+
+bloodBagANEG bloodBagAPOS bloodBagBNEG bloodBagBPOS bloodBagONEG bloodBagOPOS
+wholeBloodBagANEG wholeBloodBagAPOS wholeBloodBagBNEG wholeBloodBagBPOS wholeBloodBagONEG wholeBloodBagOPOS

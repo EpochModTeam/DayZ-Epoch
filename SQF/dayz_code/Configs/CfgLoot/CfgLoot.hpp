@@ -37,6 +37,10 @@ class CfgLoot
 		#include "Groups\Consumable.hpp"
 		#include "Groups\ConsumableItems.hpp"
 		#include "Groups\Parts.hpp"
+		//DZE
+		#include "Groups\Weapons.hpp"
+		#include "Groups\Clothes.hpp"
+		#include "Groups\Backpacks.hpp"
 		
 		// Points of interest
 		#include "Groups\CrashSite.hpp"
@@ -66,6 +70,7 @@ class CfgLoot
 		#include "Groups\Zombies\Hunter.hpp"
 		#include "Groups\Zombies\Police.hpp"
 		#include "Groups\Zombies\Military.hpp"
+		#include "Groups\Zombies\Worker.hpp" //DZE
 		
 		#undef DZ_BP_VestPouch
 		#undef DZ_BP_Patrol
@@ -139,7 +144,7 @@ class CfgLoot
 		#include "Buildings\Misc.hpp"
 	};
 };
-/* //OLD SYSTEM MAKE INTO LEGACY SYSTEM?
+
 #include "CfgLootSmall.hpp"
 class CfgLootLegacy {
 	trash[] = {
@@ -652,4 +657,3 @@ class CfgLootLegacy {
 		,{"M1014",0.4}
 	};
 };
-*/

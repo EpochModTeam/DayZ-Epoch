@@ -75,6 +75,11 @@ AmmoMilitaryLow[] =
 	{Loot_MAGAZINE,		5,		1Rnd_Smoke_GP25},
 
 	//DZE
+	{Loot_MAGAZINE,		3,		5Rnd_127x108_KSVK},
+	{Loot_MAGAZINE,		2,		10Rnd_127x99_m107},
+	{Loot_MAGAZINE,		4,		5x_22_LR_17_HMR},
+	{Loot_MAGAZINE,		3,		20Rnd_762x51_SB_SCAR},
+	{Loot_MAGAZINE,		3,		20Rnd_9x39_SP5_VSS},
 	{Loot_MAGAZINE,		3,		5Rnd_86x70_L115A1},
 	{Loot_MAGAZINE,		3,		20Rnd_B_765x17_Ball},
 	{Loot_MAGAZINE,		4,		20Rnd_762x51_DMR},
@@ -286,4 +291,44 @@ AmmoUN[] =
 	{Loot_MAGAZINE,		3,		SmokeShell},
 	{Loot_MAGAZINE,		3,		SmokeShellRed},
 	{Loot_MAGAZINE,		3,		SmokeShellGreen}
+};
+
+//DZE
+sniperriflesammo[] = {
+	{Loot_MAGAZINE,		3,		5Rnd_127x108_KSVK}
+	,{Loot_MAGAZINE,		3,		5Rnd_86x70_L115A1}
+	,{Loot_MAGAZINE,		2,		10Rnd_127x99_m107}
+	,{Loot_MAGAZINE,		3,		10Rnd_762x54_SVD}
+	,{Loot_MAGAZINE,		4,		20Rnd_762x51_DMR}
+	,{Loot_MAGAZINE,		4,		5Rnd_762x51_M24}
+	,{Loot_MAGAZINE,		4,		5x_22_LR_17_HMR}
+	,{Loot_MAGAZINE,		3,		20Rnd_762x51_SB_SCAR}
+	,{Loot_MAGAZINE,		3,		20Rnd_9x39_SP5_VSS}
+};
+assaultrifleammo[] = {
+	{Loot_MAGAZINE,		5,		30Rnd_545x39_AKSD}
+	,{Loot_MAGAZINE,		5,		30Rnd_762x39_SA58}
+	,{Loot_MAGAZINE,		5,		30Rnd_762x39_AK47}
+	,{Loot_MAGAZINE,		8,		30Rnd_556x45_Stanag}
+	,{Loot_MAGAZINE,		10,		30Rnd_545x39_AK}
+	,{Loot_MAGAZINE,		5,		30Rnd_556x45_StanagSD}
+	,{Loot_MAGAZINE,		8,		20Rnd_762x51_FNFAL}
+};
+machinegunammo[] = {
+	{Loot_MAGAZINE,		4,		100Rnd_556x45_BetaCMag}
+	,{Loot_MAGAZINE,		3,		75Rnd_545x39_RPK}
+	,{Loot_MAGAZINE,		4,		100Rnd_556x45_M249}
+	,{Loot_MAGAZINE,		3,		100Rnd_762x51_M240}
+	,{Loot_MAGAZINE,		3,		100Rnd_762x54_PK}
+	,{Loot_MAGAZINE,		4,		200Rnd_556x45_M249}
+};
+machinegunammoexpl[] = {
+	{Loot_MAGAZINE,		4,		100Rnd_556x45_BetaCMag}
+	,{Loot_MAGAZINE,		3,		75Rnd_545x39_RPK}
+	,{Loot_MAGAZINE,		4,		100Rnd_556x45_M249}
+	,{Loot_MAGAZINE,		3,		100Rnd_762x51_M240}
+	,{Loot_MAGAZINE,		3,		100Rnd_762x54_PK}
+	,{Loot_MAGAZINE,		4,		200Rnd_556x45_M249}
+	,{Loot_MAGAZINE,		1,		MAAWS_HEAT}
+	,{Loot_MAGAZINE,		2,		PipeBomb}
 };
