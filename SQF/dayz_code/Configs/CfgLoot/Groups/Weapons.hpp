@@ -1,4 +1,10 @@
 //{Loot_GROUP,		2,		pistols},
+//{Loot_GROUP,		2,		shotgunsingleshot},
+//{Loot_GROUP,		2,		farmweapons},
+//{Loot_GROUP,		2,		sniperrifles},
+//{Loot_GROUP,		2,		submachinegun},
+//{Loot_GROUP,		2,		assaultrifles},
+//{Loot_GROUP,		2,		militaryshotguns},
 pistols[] = {
 	{Loot_WEAPON,		2,		Makarov}
 	,{Loot_WEAPON,		2,		Colt1911}
