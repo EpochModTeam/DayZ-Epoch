@@ -5,13 +5,14 @@ Industrial[] =
 	{Loot_WEAPON,		6,		ItemToolbox},
 	{Loot_WEAPON,		2,		ItemFlashlight},
 //	{Loot_WEAPON,		8,		ItemCrowbar},
-	{Loot_VEHICLE,		8,		WeaponHolder_ItemCrowbar},
+	{Loot_WEAPON,		8,		ItemCrowbar},
 //	{Loot_WEAPON,		5,		ItemHatchet},
-	{Loot_VEHICLE,		5,		WeaponHolder_ItemHatchet},
+	{Loot_WEAPON,		5,		ItemHatchet_DZE},
 	{Loot_WEAPON,		1,		ItemPickaxe},
 	{Loot_WEAPON,		2,		ItemPickaxeBroken},
 	{Loot_WEAPON,		1,		ItemSledgeHammer},
 	{Loot_WEAPON,		2,		ItemSledgeHammerBroken},
+	{Loot_WEAPON,		1,		ItemKeyKit},
 	
 	//Items
 	{Loot_MAGAZINE,		6,		ItemSandbag},
@@ -28,9 +29,15 @@ Industrial[] =
 	{Loot_MAGAZINE,		2,		equip_1inch_metal_pipe},
 	{Loot_MAGAZINE,		2,		equip_2inch_metal_pipe},
 	{Loot_MAGAZINE,		12,		ItemPlank},
+	{Loot_MAGAZINE,		1,		MortarBucket},
+	{Loot_MAGAZINE,		2,		CinderBlocks},
+	{Loot_MAGAZINE,		3,		ItemFuelBarrelEmpty},
+	{Loot_MAGAZINE,		3,		ItemGenerator},
+	{Loot_MAGAZINE,		1,		fuel_pump_kit},
 	
 	//Other
 	{Loot_GROUP,		15,		Parts},
+	{Loot_GROUP,		7,		military},
 	{Loot_PILE,			10,		Trash, 1, 3},
 	{Loot_PILE,			4,		Consumable, 1, 2},
 	{Loot_GROUP,		8,		Generic}

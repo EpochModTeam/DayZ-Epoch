@@ -46,7 +46,7 @@ class CfgLoot
 		#include "Groups\CrashSite.hpp"
 		#include "Groups\CarePackage.hpp"
 		#include "Groups\InfectedCamp.hpp"
-		
+				
 		// Buildings
 		/*#include "Groups\Buildings\Boat.hpp"
 		#include "Groups\Buildings\Castle.hpp"
@@ -64,7 +64,7 @@ class CfgLoot
 		#include "Groups\Buildings\Supermarket.hpp"
 		#include "Groups\Buildings\Toilet.hpp"
 		#include "Groups\Buildings\Hangar.hpp"*/
-		#include "CfgBuildingPos.hpp"
+		#include "CfgBuildingLoot.hpp"
 
 		// Zombies
 		#include "Groups\Zombies\Civilian.hpp"
@@ -124,29 +124,30 @@ class CfgLoot
 		};
 	
 		// Buildings
-		#include "Buildings\Residential.hpp"
-		#include "Buildings\Boat.hpp"
-		#include "Buildings\Castle.hpp"
-		#include "Buildings\Church.hpp"
-		#include "Buildings\Construction.hpp"
-		#include "Buildings\CrashSite.hpp"
-		#include "Buildings\Farm.hpp"
-		#include "Buildings\Hospital.hpp"
-		#include "Buildings\Hunting.hpp"
-		#include "Buildings\Industrial.hpp"
-		#include "Buildings\InfectedCamp.hpp"
-		#include "Buildings\Military.hpp"
-		#include "Buildings\Office.hpp"
-		#include "Buildings\Powerlines.hpp"
-		#include "Buildings\ResidentialRuins.hpp"
-		#include "Buildings\Supermarket.hpp"
-		#include "Buildings\Toilet.hpp"
-		#include "Buildings\Roaming.hpp"
-		#include "Buildings\Misc.hpp"
+		//#include "Buildings\Residential.hpp"
+		//#include "Buildings\Boat.hpp"
+		//#include "Buildings\Castle.hpp"
+		//#include "Buildings\Church.hpp"
+		//#include "Buildings\Construction.hpp"
+		//#include "Buildings\CrashSite.hpp"
+		//#include "Buildings\Farm.hpp"
+		//#include "Buildings\Hospital.hpp"
+		//#include "Buildings\Hunting.hpp"
+		//#include "Buildings\Industrial.hpp"
+		//#include "Buildings\InfectedCamp.hpp"
+		//#include "Buildings\Military.hpp"
+		//#include "Buildings\Office.hpp"
+		//#include "Buildings\Powerlines.hpp"
+		//#include "Buildings\ResidentialRuins.hpp"
+		//#include "Buildings\Supermarket.hpp"
+		//#include "Buildings\Toilet.hpp"
+		//#include "Buildings\Roaming.hpp"
+		//#include "Buildings\Misc.hpp"
+		#include "CfgBuildingPos.hpp"
 	};
 };
 
-#include "CfgLootSmall.hpp"
+#include "CfgLootSmall.hpp" //Legacy
 class CfgLootLegacy {
 	trash[] = {
 		{"TrashTinCan",0.5}

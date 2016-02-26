@@ -6,13 +6,15 @@ Consumable[] =
 	{Loot_MAGAZINE,		3,		ItemAntibacterialWipe},*/
 	
 	{Loot_MAGAZINE,		3,		ItemWaterBottleUnfilled},
-	{Loot_MAGAZINE,		1,		ItemWaterBottleSafe},
-	{Loot_MAGAZINE,		1,		ItemWaterBottle},
-	{Loot_MAGAZINE,		1,		ItemHeatPack},
+	{Loot_MAGAZINE,		3,		ItemWaterBottleSafe},
+	{Loot_MAGAZINE,		3,		ItemWaterBottle},
+	{Loot_MAGAZINE,		3,		ItemHeatPack},
 	
 	{Loot_MAGAZINE,		3,		ItemSodaCoke},
 	{Loot_MAGAZINE,		3,		ItemSodaPepsi},
-	{Loot_MAGAZINE,		0.2,	ItemSodaMdew},
+	{Loot_MAGAZINE,		1,		ItemSodaMdew},
+	{Loot_MAGAZINE,		1,		ItemSodaRbull},
+	{Loot_MAGAZINE,		1,		ItemSodaOrangeSherbet},
 
 	{Loot_MAGAZINE,		2,		ItemSodaMtngreen},
 	{Loot_MAGAZINE,		5,		ItemSodaR4z0r},

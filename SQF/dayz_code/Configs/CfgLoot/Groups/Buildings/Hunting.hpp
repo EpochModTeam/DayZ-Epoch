@@ -1,11 +1,8 @@
 Hunting[] =
 {
 	//Weapons
-	{Loot_WEAPON,		3,		Crossbow_DZ},
-	{Loot_WEAPON,		4,		CZ550_DZ},
-	{Loot_WEAPON,		8,		MR43_DZ},
-	{Loot_WEAPON,		6,		Winchester1866_DZ},
-	{Loot_WEAPON,		2,		LeeEnfield_DZ},
+	{Loot_GROUP,		5,		farmweapons},
+	{Loot_GROUP,		3,		military},
 	{Loot_WEAPON,		2,		Mosin_DZ},
 	
 	//Tools
@@ -14,6 +11,17 @@ Hunting[] =
 	{Loot_WEAPON,		6,		ItemFlashlight},
 	{Loot_WEAPON,		7,		ItemKnife},
 	{Loot_WEAPON,		2,		ItemCompass},
+	{Loot_WEAPON,		4,		ItemHatchet_DZE},
+	{Loot_MAGAZINE,		1,		5x_22_LR_17_HMR},
+	{Loot_MAGAZINE,		1,		10x_303},
+	{Loot_MAGAZINE,		2,		ItemWaterbottleUnfilled},
+	{Loot_MAGAZINE,		2,		ItemHeatPack},
+	{Loot_MAGAZINE,		2,		FoodMRE},
+	{Loot_MAGAZINE,		2,		FoodNutmix},
+	{Loot_MAGAZINE,		1,		ItemDocument},
+	{Loot_MAGAZINE,		1,		ItemMixOil},
+	//{Loot_WEAPON,		1,		RedRyder},
+	//{Loot_MAGAZINE,		1,		350Rnd_BB_Magazine},
 	
 	//Backpacks
 	{Loot_GROUP,		5,		backpacks},
@@ -21,6 +29,7 @@ Hunting[] =
 	
 	//Other
 	{Loot_MAGAZINE,		2,		ItemTent},
+	{Loot_MAGAZINE,		2,		ItemBandage},
 	{Loot_MAGAZINE,		1,		ItemDomeTent},
 	{Loot_MAGAZINE,		3,		TrapBear},
 	{Loot_MAGAZINE,		1,		12Rnd_Quiver_Wood},

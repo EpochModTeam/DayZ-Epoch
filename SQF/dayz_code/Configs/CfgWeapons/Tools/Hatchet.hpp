@@ -34,12 +34,17 @@ class ItemHatchet : ItemCore
 };
 class ItemHatchet_DZE : ItemCore {
 		scope = 2;
-		displayName = $STR_EQUIP_NAME_41;
+		displayName = $STR_EQUIP_NAME_HATCHET;
 		model = "\dayz_equip\models\hatchet.p3d";
 		picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
-		descriptionShort = $STR_EQUIP_DESC_41;
+		descriptionShort = $STR_EQUIP_DESC_HATCHET;
 		class ItemActions
 		{
+			class Use
+			{
+				text = $STR_ACTIONS_CHOPWOOD;
+				script = "spawn player_chopWood;";
+			};
 			class ToBack
 			{
 				text = $STR_ACTIONS_2BACK;

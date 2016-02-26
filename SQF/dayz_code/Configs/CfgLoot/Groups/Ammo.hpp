@@ -18,7 +18,13 @@ AmmoCivilian[] =
 	{Loot_MAGAZINE,		3,		2Rnd_shotgun_74Pellets},
 	{Loot_MAGAZINE,		5,		2Rnd_shotgun_74Slug}
 };
-
+militaryVehicleAmmo[] = { //DZE
+	{Loot_MAGAZINE,			2,		2000Rnd_762x51_M134}
+	,{Loot_MAGAZINE,		2,		29Rnd_30mm_AGS30}
+	,{Loot_MAGAZINE,		2,		50Rnd_127x107_DSHKM}
+	,{Loot_MAGAZINE,		2,		48Rnd_40mm_MK19}
+	,{Loot_MAGAZINE,		3,		100Rnd_127x99_M2}
+};
 AmmoMilitaryLow[] =
 {
 	//Pistols

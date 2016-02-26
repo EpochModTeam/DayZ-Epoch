@@ -1,17 +1,13 @@
 Farm[] =
 {
 	//Weapons
-	{Loot_WEAPON,		5,		MR43_DZ},
-	{Loot_WEAPON,		4,		Winchester1866_DZ},
-	{Loot_WEAPON,		3,		LeeEnfield_DZ},
-	{Loot_WEAPON,		3,		Mosin_DZ},
-	{Loot_WEAPON,		2,		CZ550_DZ},
-	{Loot_WEAPON,		4,		Crossbow_DZ},
-	
+	{Loot_GROUP,		10,		farmweapons},
+	{Loot_WEAPON,		2,		ItemFishingPole},
+
 	//Tools
 	{Loot_WEAPON,		5,		ItemMachete},
 //	{Loot_WEAPON,		6,		ItemHatchet},
-	{Loot_VEHICLE,		6,		WeaponHolder_ItemHatchet},
+	{Loot_WEAPON,		6,		ItemHatchet_DZE},
 	{Loot_WEAPON,		5,		ItemKnife},
 	
 	//Items
@@ -25,11 +21,16 @@ Farm[] =
 	{Loot_MAGAZINE,		6,		equip_nails},
 	{Loot_MAGAZINE,		4,		equip_string},
 	{Loot_MAGAZINE,		2,		equip_lever},
+	{Loot_MAGAZINE,		2,		PartPlankPack},
+	{Loot_MAGAZINE,		2,		ItemFuelBarrelEmpty},
+	{Loot_MAGAZINE,		1,		ItemLightBulb},
+	{Loot_MAGAZINE,		1,		ItemSledgeHead},
+	{Loot_MAGAZINE,		1.5,	ItemSledgeHandle},
 	
 	//Groups
 	{Loot_GROUP,		10,		Trash},
 	{Loot_GROUP,		15,		AmmoCivilian},
-	{Loot_GROUP,		3,		AttachmentsGeneric},
+	//{Loot_GROUP,		3,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		Consumable},
 	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
 	{Loot_GROUP,		8,		Generic}

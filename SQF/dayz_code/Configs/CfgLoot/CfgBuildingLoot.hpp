@@ -1,6 +1,25 @@
-#include "CfgLoot.hpp"
+//#include "CfgLoot.hpp"
 
-class CfgBuildingLoot {
+// Buildings - redifined here so it does not break mission loot table includes
+#include "Groups\Buildings\Boat.hpp"
+#include "Groups\Buildings\Castle.hpp"
+#include "Groups\Buildings\Church.hpp"
+#include "Groups\Buildings\Construction.hpp"
+#include "Groups\Buildings\Farm.hpp"
+#include "Groups\Buildings\Hospital.hpp"
+#include "Groups\Buildings\Hunting.hpp"
+#include "Groups\Buildings\Industrial.hpp"
+#include "Groups\Buildings\Military.hpp"
+#include "Groups\Buildings\Office.hpp"
+#include "Groups\Buildings\Powerlines.hpp"
+#include "Groups\Buildings\Residential.hpp"
+#include "Groups\Buildings\ResidentialRuins.hpp"
+#include "Groups\Buildings\Supermarket.hpp"
+#include "Groups\Buildings\Toilet.hpp"
+#include "Groups\Buildings\Hangar.hpp"
+#include "Groups\Buildings\DZE_Other.hpp"
+
+class CfgBuildingLootLegacy {
 	class Default {
 		zombieChance = 0.2;
 		minRoaming = 0;
@@ -688,7 +707,7 @@ class CfgBuildingLoot {
 		};
 	};
 
-	#include "CfgBuildingPos.hpp"
+	//#include "CfgBuildingPos.hpp"
 	//If you want to copypast your loottable to your mission w/o
 	//changing something on the lootPos then use the a include instead of copypasting the CfgBuildingPos.hpp
 

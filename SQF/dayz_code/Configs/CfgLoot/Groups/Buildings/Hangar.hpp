@@ -1,5 +1,6 @@
 Hangar[] =
 {
+	{Loot_GROUP,		10,		MilitarySpecial},
 	//Tools
 	{Loot_WEAPON,		2,		ItemEtool},
 	
@@ -10,8 +11,8 @@ Hangar[] =
 	{Loot_MAGAZINE,		2,		ItemTankTrap},
 	
 	//Groups
-	{Loot_GROUP,		50,		Trash},
+	{Loot_GROUP,		20,		Trash},
 	{Loot_GROUP,		20,		Consumable},
-	{Loot_GROUP,		10,		Generic},
-	{Loot_GROUP,		5,		AttachmentsGeneric}
+	{Loot_GROUP,		10,		Generic}
+	//{Loot_GROUP,		5,		AttachmentsGeneric}
 };

@@ -21,3 +21,11 @@ Convert (if old system) to ItemBloodbag
 
 bloodBagANEG bloodBagAPOS bloodBagBNEG bloodBagBPOS bloodBagONEG bloodBagOPOS
 wholeBloodBagANEG wholeBloodBagAPOS wholeBloodBagBNEG wholeBloodBagBPOS wholeBloodBagONEG wholeBloodBagOPOS
+
+
+WEAPONHOLDE_TOOL IS NO LONGER USED! FIX BY REPLACING OCCURENCES
+I.E. ItemCrowbar replaces WeaponHolder_MeleeCrowbar
+WeaponHolder_ItemHatchet_DZE
+WeaponHolder_MeleeCrowbar
+
+REMOVE TOOL BREAKING, IT'S STUPID

@@ -9,7 +9,7 @@ Castle[] =
 	{Loot_WEAPON,		2,		ItemPickaxeBroken},
 	{Loot_WEAPON,		2,		ItemShovel},
 //	{Loot_WEAPON,		1,		ItemHatchet},
-	{Loot_VEHICLE,		1,		WeaponHolder_ItemHatchet},
+	{Loot_WEAPON,		1,		ItemHatchet_DZE},
 	
 	//Weapons
 	{Loot_WEAPON,		2,		Mosin_DZ},
@@ -25,11 +25,11 @@ Castle[] =
 	{Loot_MAGAZINE,		1,		ItemPadlock},
 	{Loot_MAGAZINE,		1,		ItemTent},
 	{Loot_MAGAZINE,		1,		ItemCamoNet},
-	
+
 	//Groups
 	{Loot_GROUP,		5,		AmmoCivilian},
 	{Loot_GROUP,		10,		Trash},
-	{Loot_GROUP,		2,		AttachmentsGeneric},
+	//{Loot_GROUP,		2,		AttachmentsGeneric},
 	{Loot_GROUP,		5,		Generic},
 	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
 	{Loot_GROUP,		5,		Consumable}

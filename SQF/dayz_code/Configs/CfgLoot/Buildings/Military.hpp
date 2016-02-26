@@ -34,6 +34,7 @@ class MilitaryIndustrial: Military {
 	maxRoaming = 6;
 	zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman","z_soldier","z_soldier_heavy","z_policeman","z_worker1","z_worker2","z_worker3"};
 	lootChance = 0.4;
+	lootGroup = MilitaryIndustrial;
 };
 class Land_a_stationhouse : Military
 {

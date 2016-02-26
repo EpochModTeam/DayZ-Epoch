@@ -12,6 +12,7 @@ Supermarket[] =
 	
 	//Pistols
 	{Loot_GROUP,		10,		pistols},
+	{Loot_GROUP,		5,		shotgunsingleshot},
 	//Rifles
 /*	{Loot_WEAPON,		1,		LeeEnfield_DZ},
 	{Loot_WEAPON,		1,		Mosin_DZ},
@@ -23,7 +24,9 @@ Supermarket[] =
 	{Loot_GROUP,		5,		backpacks},
 	
 	//Items
-	{Loot_MAGAZINE,		1,		ItemTent},
+	//{Loot_MAGAZINE,		1,		ItemTent}, //USE TENTS GROUP
+	{Loot_MAGAZINE,		1,		ItemMixOil},
+	{Loot_MAGAZINE,		1,		PartPlywoodPack},
 	{Loot_MAGAZINE,		0.5,	ItemDomeTent},
 	{Loot_MAGAZINE,		1,		ItemCamoNet},
 	{Loot_MAGAZINE,		0.5,	ItemPadlock},
@@ -33,10 +36,11 @@ Supermarket[] =
 	{Loot_MAGAZINE,		5,		equip_nails},
 	
 	//Groups
-	{Loot_GROUP,		70,		Consumable},
+	{Loot_GROUP,		40,		Consumable},
 	{Loot_GROUP,		20,		Generic},
 	{Loot_GROUP,		10,		AmmoCivilian},
-	{Loot_GROUP,		3,		AttachmentsGeneric},
+	//{Loot_GROUP,		3,		AttachmentsGeneric},
+	{Loot_GROUP,		3,		tents},
 	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
 	{Loot_GROUP,		10,		Trash}
 //	{Loot_GROUP,		3,		MedicalLow}

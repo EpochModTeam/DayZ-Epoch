@@ -18,7 +18,7 @@ Church[] =
 	//Groups
 	{Loot_GROUP,		10,		Trash},
 	{Loot_GROUP,		5,		AmmoCivilian},
-	{Loot_GROUP,		2,		AttachmentsGeneric},
+	//{Loot_GROUP,		2,		AttachmentsGeneric},
 	{Loot_GROUP,		4,		Generic},
 	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
 	{Loot_GROUP,		8,		Consumable}

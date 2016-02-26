@@ -27,8 +27,10 @@ shotgunsingleshot[] = {
 };
 farmweapons[] = {
 	{Loot_GROUP,		5,		shotgunsingleshot},
-	,{Loot_WEAPON,		2,		huntingrifle}
-	,{Loot_WEAPON,		1,		Chainsaw}
+	{Loot_WEAPON,		2,		huntingrifle},
+	{Loot_WEAPON,		0.3,	Chainsaw},
+	{Loot_WEAPON,		3,		Mosin_DZ}
+	//{Loot_WEAPON,		2,		CZ550_DZ}, //Huntingrifle
 	//,{Loot_WEAPON,		2,		RedRyder}
 };
 sniperrifles[] = {
