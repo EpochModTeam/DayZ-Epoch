@@ -125,7 +125,7 @@ progressLoadingScreen 1.0;
 
 if (isServer) then {
 	//Compile Vehicle Configs
-	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\dynamic_vehicle.sqf";
 
 	//Add Trader Citys
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";

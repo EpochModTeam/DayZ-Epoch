@@ -28,8 +28,6 @@ _location = _worldspace select 1;
 //Generate UID test using time
 _uid = _worldspace call dayz_objectUID3;
 
-// TODO: check if uid already exists && if so increment by 1 && check again as soon as we find nothing continue.
-
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
 diag_log ("HIVE: WRITE: "+ str(_key)); 

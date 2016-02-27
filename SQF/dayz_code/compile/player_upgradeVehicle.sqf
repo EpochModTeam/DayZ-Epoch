@@ -13,7 +13,7 @@ _upgrade = _this;
 if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_18"), "PLAIN DOWN"]};
 
 // look for nearest empty vehicle
-_findNearestVehicles = nearestObjects [player, ["LandVehicle"], 10];
+_findNearestVehicles = player nearEntities [["LandVehicle"],10];
 _findNearestVehicle = [];
 {
 	if (alive _x && (count (crew _x)) == 0) exitWith {
@@ -129,7 +129,7 @@ if (_IsNearVehicle >= 1) then {
 						publicVariableServer  "PVDZE_veh_Upgrade";
 
 						cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
-						{player reveal _x;} count (nearestObjects [player,["AllVehicles"],30]);
+						{player reveal _x;} count (player nearEntities [["LandVehicle"],10]);
 					};
 				}
 				else {

@@ -4,11 +4,12 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private ["_isWreckBuilding","_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_ownerKeyId","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_key_colors","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil","_hasFuelBarrelE","_hasHotwireKit","_player_SurrenderedGear","_isSurrendered","_isModular","_isModularDoor","_ownerKeyName","_temp_keys_names","_hasAttached","_allowTow","_liftHeli","_found","_posL","_posC","_height","_liftHelis","_attached"];
+private ["_isWreckBuilding","_temp_keys","_magazinesPlayer","_isPZombie","_vehicle","_inVehicle","_hasFuelE","_hasRawMeat","_hasKnife","_hasToolbox","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_traderType","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_Unlock","_lock","_buy","_dogHandle","_lieDown","_warn","_hastinitem","_allowedDistance","_menu","_menu1","_humanity_logic","_low_high","_cancel","_metals_trader","_traderMenu","_isWreck","_isRemovable","_isDisallowRepair","_rawmeat","_humanity","_speed","_dog","_hasbottleitem","_isAir","_isShip","_playersNear","_findNearestGens","_findNearestGen","_IsNearRunningGen","_cursorTarget","_isnewstorage","_itemsPlayer","_typeOfCursorTarget","_hasKey","_oldOwner","_combi","_player_deleteBuild","_player_flipveh","_player_lockUnlock_crtl","_player_butcher","_player_studybody","_player_cook","_player_boil","_hasFuelBarrelE","_hasHotwireKit","_player_SurrenderedGear","_isSurrendered","_isModular","_isModularDoor","_temp_keys_names","_hasAttached","_allowTow","_liftHeli","_found","_posL","_posC","_height","_liftHelis","_attached","_vehicleOwnerID","_totalKeys"];
 
 if (DZE_ActionInProgress) exitWith {}; // Do not allow if any script is running.
 
 _vehicle = vehicle player;
+_vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
 _isPZombie = player isKindOf "PZombie_VB";
 _inVehicle = (_vehicle != player);
 
@@ -35,6 +36,44 @@ if (_canPickLight && !dayz_hasLight && !_isPZombie) then {
 	player removeAction s_player_removeflare;
 	s_player_grabflare = -1;
 	s_player_removeflare = -1;
+};
+
+if (_inVehicle && {_vehicleOwnerID != "0"} && {!(_vehicle isKindOf "Bicycle")}) then {
+	if (s_player_lockUnlockInside_ctrl < 0) then {
+		DZE_myVehicle = _vehicle;
+		_totalKeys = call epoch_tempKeys;
+		_temp_keys = _totalKeys select 0;
+		_temp_keys_names = _totalKeys select 1;		
+		_hasKey = _vehicleOwnerID in _temp_keys;
+		_oldOwner = (_vehicleOwnerID == dayz_playerUID);
+		_text = getText (configFile >> "CfgVehicles" >> (typeOf DZE_myVehicle) >> "displayName");
+		if (locked DZE_myVehicle) then {
+			if (_hasKey || _oldOwner) then {
+				_Unlock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[DZE_myVehicle,(_temp_keys_names select (parseNumber _vehicleOwnerID))], 2, true, true, "", ""];
+				s_player_lockUnlockInside set [count s_player_lockUnlockInside,_Unlock];
+				s_player_lockUnlockInside_ctrl = 1;
+			} else {
+				if (_hasHotwireKit) then {
+					_Unlock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_HOTWIRE",_text], "\z\addons\dayz_code\actions\hotwire_veh.sqf",DZE_myVehicle, 2, true, true, "", ""];
+				} else {
+					_Unlock = DZE_myVehicle addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_VEHLOCKED"], "",DZE_myVehicle, 2, true, true, "", ""];
+				};
+				s_player_lockUnlockInside set [count s_player_lockUnlockInside,_Unlock];
+				s_player_lockUnlockInside_ctrl = 1;
+			};
+		} else {
+			if (_hasKey || _oldOwner) then {
+				_lock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\lock_veh.sqf",DZE_myVehicle, 1, true, true, "", ""];
+				s_player_lockUnlockInside set [count s_player_lockUnlockInside,_lock];
+				s_player_lockUnlockInside_ctrl = 1;
+			};
+		};
+	};
+} else {
+	if (!isNil "DZE_myVehicle") then {
+		{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
+		s_player_lockUnlockInside_ctrl = -1;
+	};
 };
 
 if (DZE_HeliLift) then {
@@ -143,22 +182,8 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	_hasHotwireKit = 	"ItemHotwireKit" in _magazinesPlayer;
 
 	_itemsPlayer = items player;
-	
-	_temp_keys = [];
-	_temp_keys_names = [];
-	// find available keys
-	_key_colors = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
-	{
-		if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _key_colors) then {
-			_ownerKeyId = getNumber(configFile >> "CfgWeapons" >> _x >> "keyid");
-			_ownerKeyName = getText(configFile >> "CfgWeapons" >> _x >> "displayName");
-			_temp_keys_names set [_ownerKeyId,_ownerKeyName];
-			_temp_keys set [count _temp_keys,str(_ownerKeyId)];
-		};
-	} count _itemsPlayer;
-
-	_hasKnife = 	"ItemKnife" in _itemsPlayer;
-	_hasToolbox = 	"ItemToolbox" in _itemsPlayer;
+	_hasKnife = "ItemKnife" in _itemsPlayer;
+	_hasToolbox = "ItemToolbox" in _itemsPlayer;
 
 	_isMan = _cursorTarget isKindOf "Man";
 	_traderType = _typeOfCursorTarget;
@@ -282,7 +307,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		//diag_log format["CREW: %1 ALLOW: %2",(count (crew _cursorTarget)),_allowTow];
 
 		if (_allowTow) then {
-			_liftHelis = nearestObjects [player, DZE_HeliAllowTowFrom, 15];
+			_liftHelis = player nearEntities [DZE_HeliAllowTowFrom,15];
 			{
 				if(!_found) then {
 					_posL = [_x] call FNC_getPos;
@@ -315,6 +340,9 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	// Allow Owner to lock && unlock vehicle  
 	if(_player_lockUnlock_crtl) then {
 		if (s_player_lockUnlock_crtl < 0) then {
+			_totalKeys = call epoch_tempKeys;
+			_temp_keys = _totalKeys select 0;
+			_temp_keys_names = _totalKeys select 1;
 			_hasKey = _ownerID in _temp_keys;
 			_oldOwner = (_ownerID == dayz_playerUID);
 			if(locked _cursorTarget) then {

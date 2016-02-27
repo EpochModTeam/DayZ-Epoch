@@ -6,6 +6,8 @@ DZE_ActionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
+{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
+s_player_lockUnlockInside_ctrl = -1;
 
 _removed = ([player,"ItemHotwireKit",1] call BIS_fnc_invRemove);
 
@@ -28,4 +30,5 @@ if (_removed == 1) then {
 };
 
 s_player_lockUnlock_crtl = -1;
+s_player_lockUnlockInside_ctrl = -1;
 DZE_ActionInProgress = false;

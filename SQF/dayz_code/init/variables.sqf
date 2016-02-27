@@ -258,6 +258,7 @@ dayz_resetSelfActions = {
 	s_player_heli_lift = -1;
 	s_player_heli_detach = -1;
 	s_player_lockUnlock_crtl = -1;
+	s_player_lockUnlockInside_ctrl = -1;
 	s_player_toggleSnap = -1;
     s_player_toggleSnapSelect = -1;
     s_player_toggleSnapSelectPoint=[];
@@ -269,6 +270,7 @@ call dayz_resetSelfActions;
 s_player_lastTarget =	[objNull,objNull,objNull,objNull,objNull];
 s_player_repairActions = [];
 s_player_lockunlock = [];
+s_player_lockUnlockInside = [];
 
 // Custom
 s_player_madsci 		= 	[];
@@ -563,6 +565,9 @@ if (isNil "DZE_checkNearbyRadius") then {
 };
 if (isNil "DZE_RestrictSkins") then {
 	DZE_RestrictSkins = [];
+};
+if (isNil "DZE_BackpackAntiTheft") then {
+	DZE_BackpackAntiTheft = false;
 };
 // needed on server
 if(isNil "DZE_PlotPole") then {

@@ -57,9 +57,12 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 	if (_claimedBy == _playerID) then {
 
 		if(!isNull _obj && alive _obj) then {
-
+			
+			dze_waiting = nil;
 			PVDZE_log_lockUnlock = [player, _obj, false];
 			publicVariableServer "PVDZE_log_lockUnlock";
+			//wait for response from server to verify safe was logged before proceeding
+			waitUntil {!isNil "dze_waiting"};
 
 			_obj setVariable["packing",1];
 			[1,1] call dayz_HungerThirst;
