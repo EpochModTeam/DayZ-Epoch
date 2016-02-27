@@ -235,7 +235,7 @@ class CfgSurvival {
 		class Cow01_EP1: Cow{};
 		class Goat: Default {
 			yield = 4;
-			rawfoodtype = "FoodmuttonRaw";
+			rawfoodtype = "FoodgoatRaw";
 		};
 		class Goat01_EP1: Goat{};
 		class Goat02_EP1: Goat{};
