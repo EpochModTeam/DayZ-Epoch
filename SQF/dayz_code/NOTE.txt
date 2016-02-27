@@ -32,3 +32,16 @@ REMOVE TOOL BREAKING, IT'S STUPID
 
 building_spawnLoot_Legacy
 building_spawnZombies_Legacy
+
+	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
+COMPILES NOT DONE - LEFT OFF AT LOS_CHECK
+
+dayz_lowHumanity //HEARBEAT SOUND
+
+vehicle_handleDamage    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleDamage.sqf";
+vehicle_handleKilled    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
+
+ARE NO MORE, USE BELOW!! ACTUALLY IT MAY BE EASIER TO JUST RENAME THE BELOW TO ABOVE?
+
+fnc_veh_handleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleDam.sqf";
+fnc_veh_handleKilled = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleKilled.sqf";
