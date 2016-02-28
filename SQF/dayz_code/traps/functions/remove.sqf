@@ -1,0 +1,1 @@
+[nil,nil,nil,_this select 0] call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf"
