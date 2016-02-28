@@ -6,12 +6,14 @@ item1[] = {"wait",2,250,-25.000000,300.000000,75.000000,350.000000,0.000000,"wai
 item2[] = {"End",1,250,100.000000,225.000000,200.000000,275.000000,0.000000,"End"};
 item3[] = {"Not_Alive",4,218,-150.000000,300.000000,-50.000000,350.000000,4.000000,"Not" \n "Alive"};
 item4[] = {"Loiter",2,250,-150.000000,225.000000,-50.000000,275.000000,0.000000,"Loiter"};
-item5[] = {"In_Position",4,4314,-250.000000,275.000000,-150.000000,325.000000,2.000000,"In Position"};
+item5[] = {"In_Position",4,218,-350.000000,225.000000,-250.000000,275.000000,2.000000,"In Position"};
 item6[] = {"preloaded",4,218,-150.000000,150.000000,-50.000000,200.000000,0.000000,"preloaded"};
 item7[] = {"time_up",4,218,-25.000000,225.000000,75.000000,275.000000,0.000000,"time" \n "up"};
 item8[] = {"player_check",4,218,-250.000000,175.000000,-150.000000,225.000000,1.000000,"player" \n "check"};
 item9[] = {"player_check",4,218,100.000000,300.000000,200.000000,350.000000,1.000000,"player" \n "check"};
 item10[] = {"tamed",4,218,-25.000000,150.000000,75.000000,200.000000,3.000000,"tamed"};
+item11[] = {"moveToCompleted",4,218,-250.000000,275.000000,-150.000000,325.000000,0.000000,"moveToCompleted "};
+item12[] = {"Failed_to_move",4,4314,-300.000000,250.000000,-200.000000,300.000000,0.000000,"Failed to move"};
 link0[] = {0,6};
 link1[] = {1,7};
 link2[] = {1,9};
@@ -21,14 +23,18 @@ link5[] = {4,5};
 link6[] = {4,7};
 link7[] = {4,8};
 link8[] = {4,10};
-link9[] = {5,4};
-link10[] = {6,4};
-link11[] = {7,2};
-link12[] = {8,4};
-link13[] = {9,1};
-link14[] = {10,2};
-globals[] = {25.000000,1,0,0,0,640,480,1,89,6316128,1,-299.424194,296.746490,405.380127,-436.653168,303,855,1};
-window[] = {0,-1,-1,-1,-1,1157,156,1364,156,1,321};
+link9[] = {4,11};
+link10[] = {4,12};
+link11[] = {5,4};
+link12[] = {6,4};
+link13[] = {7,2};
+link14[] = {8,4};
+link15[] = {9,1};
+link16[] = {10,2};
+link17[] = {11,4};
+link18[] = {12,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,91,6316128,1,-478.843109,117.327553,583.704590,115.127663,813,1030,1};
+window[] = {2,-1,-1,-1,-1,806,26,1234,26,3,831};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -43,7 +49,7 @@ class FSM
        "_agent = _this select 1;" \n
        "" \n
        "_isSomeone = true;" \n
-       "_timeA = time;" \n
+       "_timeA = diag_tickTime;" \n
        "_isTamed = false;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -65,7 +71,7 @@ class FSM
     class wait
     {
       name = "wait";
-      init = /*%FSM<STATEINIT""">*/"_entityTime = time;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_entityTime = diag_tickTime;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -75,14 +81,14 @@ class FSM
           priority = 1.000000;
           to="wait";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _entityTime) > 30"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_entityTime = time;" \n
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
            "" \n
            "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
            "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
            "" \n
            "if (_isSomeone) then {" \n
-           "	_timeA = time;" \n
+           "	_timeA = diag_tickTime;" \n
            "};"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -92,7 +98,7 @@ class FSM
           priority = 0.000000;
           to="End";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _timeA) > 120 && !_isSomeone"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeA) > 120 and !_isSomeone"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -123,7 +129,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
        "" \n
        "//_agent forceSpeed 2;" \n
-       "_entityTime = time;"/*%FSM</STATEINIT""">*/;
+       "_entityTime = diag_tickTime;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -134,7 +140,7 @@ class FSM
           to="wait";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_timeA = time;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_timeA = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "tamed">*/
@@ -154,7 +160,8 @@ class FSM
           to="Loiter";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_agent distance _pos < 3"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_pos = [_pos,10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
+          action=/*%FSM<ACTION""">*/"//_pos = [_pos,10,90,4,0,5,0] call BIS_fnc_findSafePos;" \n
+           "_pos = [_pos,10,90,1] call fn_selectRandomLocation;" \n
            "_agent moveTo _pos;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -164,15 +171,39 @@ class FSM
           priority = 1.000000;
           to="Loiter";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _entityTime) > 30"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_entityTime = time;" \n
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
            "" \n
            "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
            "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
            "" \n
            "if (_isSomeone) then {" \n
-           "	_timeA = time;" \n
+           "	_timeA = diag_tickTime;" \n
            "};"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "moveToCompleted">*/
+        class moveToCompleted
+        {
+          priority = 0.000000;
+          to="Loiter";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToCompleted _agent;" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_pos = [_pos,10,90,1] call fn_selectRandomLocation;" \n
+           "_agent moveTo _pos;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Failed_to_move">*/
+        class Failed_to_move
+        {
+          priority = 0.000000;
+          to="Loiter";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToFailed _agent;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_pos = [_pos,10,90,1] call fn_selectRandomLocation;" \n
+           "_agent moveTo _pos;" \n
+           ""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "time_up">*/
@@ -181,7 +212,7 @@ class FSM
           priority = 0.000000;
           to="End";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _timeA) > 120 && !_isSomeone"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeA) > 120 and !_isSomeone"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

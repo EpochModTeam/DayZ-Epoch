@@ -51,6 +51,12 @@ PVDZ_obj_Publish IS PVDZE_obj_Publish
 PVCDZ_obj_HideBody IS PVDZE_obj_HideBody
 ******REPLACE ALL PVCDZ_ AND PVDZ_ with PVCDZE/PVDZE_
 
+trap_monitor.fsm is no more!
+dayzPlayerLogin VARIABLE IS NO MORE!
+dayzPlayerLogin2 = []; VARIABLE IS NO MORE! USE PVCDZ_plr_Login2
+dayz_authed VARIABLE IS NO MORE???
+dayz_gui = [] spawn { IS NO MORE????
+
 PVDZ_drg_RaLW IS norrnRaLW
 PVDZ_drg_RLact IS norrnRLact
 NEW FNC PVDZE_hlt_Bleed -- THATS AN L change it to an I
@@ -62,3 +68,5 @@ PVDZ_plr_Death	BECOMES	PVDZE_plr_Died
 PVDZ_plr_Login1 BECOMES PVDZE_plr_Login
 PVDZ_obj_Destroy BECOMES PVDZE_obj_Delete //WHO RENAMED THESE VARIABLES IN DAYZ VANILLA, THE COMPILE IT CALLS IS STILL NAMED server_deleteObj WHY CHANGE IT TO DESTROY!!!!???
 dayzSetDate BECOMES PVDZE_plr_SetDate
+
+PVDZ_serverStoreVar BECOMES PVDZE_serverStoreVar

@@ -1,3 +1,10 @@
+// moved to dayz_code/system/scheduler/sched_playerActions.sqf
+// moved to dayz_code/system/scheduler/sched_spawncheck.sqf
+// moved to dayz_code/system/scheduler/sched_newDay.sqf
+
+
+
+/*
 private ["_handle","_cursor","_delMe","_first","_town","_day","_world","_nearestCity"];
 _timer = diag_tickTime;
 _timer1 = diag_tickTime;
@@ -73,3 +80,4 @@ while {true} do {
 	//wait
 	uiSleep 0.001;
 };
+*/
