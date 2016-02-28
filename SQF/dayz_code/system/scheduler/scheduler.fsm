@@ -1,0 +1,77 @@
+// (c) facoptere@gmail.com, licensed to DayZMod for the community
+
+class FSM {
+   fsmName = "server_cleanup";
+   initState = "init";
+   finalStates[] = {"end"};
+   class States {
+      class init {
+         name="init";
+         init= "" \n
+               //"diag_log[""Scheduler init""];" \n
+               "__sc_taskArray = [];" \n
+               "__sc_time = diag_tickTime;" \n
+               "{" \n
+               "  private [ ""__sc_period"", ""__sc_offset"", ""__sc_code"", ""__sc_init"", ""__sc_ctx"" ];" \n
+               "  __sc_period = _x select 0;" \n
+               "  __sc_offset = _x select 1;" \n
+               "  __sc_code = _x select 2;" \n
+               "  __sc_init = _x select 3;" \n
+               "  __sc_ctx = if (!isNil ""__sc_init"") then { call __sc_init } else { objNull };" \n
+               "  __sc_taskArray set [ count __sc_taskArray, [ __sc_code, __sc_ctx, __sc_period, __sc_time + __sc_offset - __sc_period ]];" \n
+            //   "  diag_log [ __sc_period, __sc_time - __sc_offset + __sc_period, __sc_ctx, __sc_code ];" \n
+               "} count _this;" \n
+               "_this=nil;";
+         class Links {
+            class L0 {
+               priority=0;
+               to="loop";
+               condition="1==1";
+               action="";
+            };
+         };
+      };
+      class end {
+         name="end";
+         init= "diag_log[""Scheduler terminated""]";
+         class Links {};
+      };
+      class loop {
+         name="loop";
+         init= "" \n
+         //                        "diag_log[""Scheduler loop action""];" \n
+               "__sc_lootT0 = diag_tickTime;" \n
+               "{" \n
+               "  private [ ""__sc_task"", ""__sc_period"", ""__sc_offset"", ""__sc_code"", ""__sc_next"", ""__sc_ctx"" ];" \n
+               "  __sc_task = _x;" \n
+               "  __sc_code = __sc_task select 0;" \n
+               "  __sc_ctx = __sc_task select 1;" \n
+               "  __sc_period = __sc_task select 2;" \n
+               "  __sc_next = __sc_task select 3;" \n
+               "  if (diag_tickTime >= __sc_next) then {" \n
+             //  "     if (__sc_period>=0.2) then {diag_log['scheduler idx/period/previous/time/next', _forEachIndex, __sc_period, __sc_task select 3, diag_tickTime, __sc_next ];};" \n
+               "     __sc_ctx = __sc_ctx call __sc_code;" \n
+               "     if (__sc_period > 0) then { __sc_next = __sc_next + __sc_period * (1 + floor((diag_tickTime - __sc_next) / __sc_period)); };" \n
+               "     __sc_task set [1, __sc_ctx];" \n
+               "     __sc_task set [3, __sc_next];" \n
+               "  };" \n
+               "  if ((__sc_period == 0) AND {(__sc_ctx)}) exitWith {};" \n
+               "  if (diag_tickTime - __sc_lootT0 > 0.02) exitWith {};" \n // hopefully should not happen frequently
+               "} count __sc_taskArray;";
+         class Links {
+            class L0 {
+               priority=1;
+               to="end";
+               condition="(!isServer) and {(deathHandled)}";
+               action="";
+            };
+            class L1 {
+               priority=0;
+               to="loop";
+               condition="1==1";
+               action= "";
+            };
+         };
+      };
+   };
+}; 
