@@ -45,3 +45,20 @@ ARE NO MORE, USE BELOW!! ACTUALLY IT MAY BE EASIER TO JUST RENAME THE BELOW TO A
 
 fnc_veh_handleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleDam.sqf";
 fnc_veh_handleKilled = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleKilled.sqf";
+
+dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
+PVDZ_obj_Publish IS PVDZE_obj_Publish
+PVCDZ_obj_HideBody IS PVDZE_obj_HideBody
+******REPLACE ALL PVCDZ_ AND PVDZ_ with PVCDZE/PVDZE_
+
+PVDZ_drg_RaLW IS norrnRaLW
+PVDZ_drg_RLact IS norrnRLact
+NEW FNC PVDZE_hlt_Bleed -- THATS AN L change it to an I
+PVCDZE_vehSH needs to be changed to PVCDZE_veh_SH
+PVDZE_plr_HideBody BECOMES PVCDZE_plr_HideBody
+PVDZE_obj_GutBody BECOMES PVCDZE_obj_GutBody
+PVDZE_veh_SFuel BECOMES PVCDZE_veh_SetFuel
+PVDZ_plr_Death	BECOMES	PVDZE_plr_Died
+PVDZ_plr_Login1 BECOMES PVDZE_plr_Login
+PVDZ_obj_Destroy BECOMES PVDZE_obj_Delete //WHO RENAMED THESE VARIABLES IN DAYZ VANILLA, THE COMPILE IT CALLS IS STILL NAMED server_deleteObj WHY CHANGE IT TO DESTROY!!!!???
+dayzSetDate BECOMES PVDZE_plr_SetDate
