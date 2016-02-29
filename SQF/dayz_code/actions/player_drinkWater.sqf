@@ -53,10 +53,10 @@ if (!_canFill) then {
 };
 
 if (_canFill) then {
-	_chance = 0.1;
+	_chance = 0.05;
 	
 	if (_itemorignal in boil_tin_cans) then {
-		_chance = 0.06;
+		_chance = 0.03;
 		["FoodDrink",0,[0,0,300,0]] call dayz_NutritionSystem; //[Energy,food,water,temp]
 	} else {
 		_chance = 0.03;

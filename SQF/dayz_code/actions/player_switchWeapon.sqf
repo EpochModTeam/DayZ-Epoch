@@ -1,214 +1,281 @@
-private ["_event", "_onLadder", "_inVehicle", "_isOk", "_primary", "_current", "_rifle", "_pistol", "_melee"];
-_event = if (count _this > 1) then { _this select 3 } else { _this select 0 };
+#include "\z\addons\dayz_code\util\mutex.hpp"
+#include "\z\addons\dayz_code\util\player.hpp"
 
-_findRifle = {
-	private ["_return", "_primary"];
-	_return = "";
-	_primary = primaryWeapon player;
+#define BANDAID
 
-	if (_primary != "") then {
-		if !(_primary in MeleeWeapons) then {
-			_return = _primary;
-		};
-	};
+#define TIMEOUT 2
 
-	if (dayz_onBack != "" && _return == "") then {
-		if !(dayz_onBack in MeleeWeapons) then {
-			_return = dayz_onBack;
-		};
-	};
+#define IS_PRIMARY(wpn) (getNumber (configFile >> "CfgWeapons" >> wpn >> "type") == 1)
+#define MELEE(wpn) getNumber (configFile >> "CfgWeapons" >> wpn >> "melee")
+#define IS_MELEE(wpn) (MELEE(wpn) == 1)
 
-	_return;
-};
+//0 if not found, 1 if in primary slot, 2 if on back
+#define FIND_RIFLE() (0 call dz_fn_switchWeapon_find)
+#define FIND_MELEE() (1 call dz_fn_switchWeapon_find)
 
-_findMelee = {
-	private ["_return", "_primary"];
-	_return = "";
+dz_switchWeapon_mutex = Mutex_New();
 
-	_primary = primaryWeapon player;
-
-	if (_primary != "") then {
-		if (_primary in MeleeWeapons) then {
-			_return = _primary;
-		};
-	};
-
-	if (dayz_onBack != "" && _return == "") then {
-		if (dayz_onBack in MeleeWeapons) then {
-			_return = dayz_onBack;
-		};
-	};
-
-	_return;
-};
-
-_findPistol = {
-	private ["_return"];
-	_return = "";
-
-	{
-		if (getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 2) then {
-			_return = _x;
-		};
-	} foreach (weapons player);
-
-	_return;
-};
-
-_selectMuzzle = {
-	private ["_return", "_wpn", "_muzzles"];
-	_wpn = _this select 0;
-	_muzzles = getArray(configFile >> "cfgWeapons" >> _wpn >> "muzzles");
-
-	if (_muzzles select 0 != "this") then {
-		_return = (_muzzles select 0);
-	} else {
-		_return = _wpn;
-	};
-
-	_return;
-};
-
-_clearActions = {
-	if (s_player_equip_carry > -1) then {
-		player removeAction s_player_equip_carry;
-		s_player_equip_carry = -1;
-	};
-};
-
-_switchPrimary = {
-	private ["_primary", "_current"];
-	_primary = primaryWeapon player;
+//0: switch rifle/melee instantly and update gear
+//1: switch rifle/melee with animation
+//2: switch to rifle
+//3: switch to pistol
+//4: switch to melee
+dz_fn_switchWeapon =
+{
+	if (vehicle player != player) exitWith {};
+	if Player_IsOnLadder() exitWith {};
+	
+	private ["_current", "_primary", "_secondary"];
+	
 	_current = currentWeapon player;
-	_timer = 0;
-
-	[] call _clearActions;
-	if (_primary != "") then {
-		// check if player is still in the 'open gear' animation state and force him out of it (caused major issues)
-		_animState = animationState player;
-
-		switch (true) do {
-			// current weapon is a rifle
-			case (_animState == "amovpknlmstpsraswrfldnon_gear" || _animState == "amovpercmstpsraswrfldnon_gear"): {
-				player playMove "amovpknlmstpslowwrfldnon_amovpknlmstpsraswrfldnon";
-				waitUntil { animationState player == "amovpknlmstpslowwrfldnon_amovpknlmstpsraswrfldnon" };
+	
+	switch _this do
+	{
+		//Instantly switch primary and carry, also update gear
+		case 0:
+		{
+			if (IS_PRIMARY(_current)) then
+				{ true call dz_fn_switchWeapon_swap; }
+			else
+				{ false call dz_fn_switchWeapon_swap; };
+			
+			/*call _swapWeapons;
+			if (IS_PRIMARY(_current)) then
+				{ player selectWeapon primaryWeapon player; };*/
+			
+			[[(findDisplay 106)],"onLBSelChanged"] execVM "\z\addons\dayz_code\system\handleGear.sqf";
+		};
+		
+		//Switch primary and carry
+		case 1:
+		{
+			if (dayz_quickSwitch) then
+			{
+				true call dz_fn_switchWeapon_swap;
+				#ifdef BANDAID
+				call dayz_meleeMagazineCheck;
+				#endif
+			}
+			else
+				{ call dz_fn_switchWeapon_swapSecure; };
+		};
+		
+		//Switch to rifle
+		case 2:
+		{
+			//No current weapon
+			if (_current == "") exitWith
+			{
+				switch FIND_RIFLE() do
+				{
+					//In primary
+					case 1:
+					{
+						player selectWeapon primaryWeapon player;
+					};
+					
+					//On back
+					case 2:
+					{
+						true call dz_fn_switchWeapon_swap;
+					};
+				};
 			};
-			// current weapon is a pistol
-			case (_animState == "amovpknlmstpsraswpstdnon_gear" || _animState == "amovpercmstpsraswpstdnon_gear"): {
-				player playMove "amovpknlmstpslowwpstdnon_gear_amovpknlmstpsraswpstdnon";
-				waitUntil { animationState player == "amovpknlmstpslowwpstdnon_gear_amovpknlmstpsraswpstdnon" };
+			
+			//Current weapon is primary
+			if (IS_PRIMARY(_current)) exitWith
+			{
+				//if current is melee and on back is rifle
+				if (IS_MELEE(_current) && { !IS_MELEE(dayz_onBack) }) then
+				{
+					if (dayz_quickSwitch) then
+						{ true call dz_fn_switchWeapon_swap; }
+					else
+						{ call dz_fn_switchWeapon_swapSecure; };
+				};
 			};
-			// is standing with weapon lowered
-			case (["aidlpercmstpslowwrfldnon", _animState] call fnc_inString): {
-				player playMove "amovpercmstpslowwrfldnon_amovpercmstpsraswrfldnon";
-				waitUntil { animationState player == "amovpercmstpslowwrfldnon_amovpercmstpsraswrfldnon" };
+			
+			//Current is pistol
+			switch FIND_RIFLE() do
+			{
+				//In primary
+				case 1:
+				{
+					player selectWeapon primaryWeapon player;
+				};
+				
+				//On back
+				case 2:
+				{
+					if (diag_tickTime - dz_switchWeapon_pistolTime < 1) exitWith {};
+					true call dz_fn_switchWeapon_swap;
+				};
 			};
 		};
-
-		player removeWeapon _primary;
-
-		// make sure animation is playing to prevent instant switch (if current weapon is not pisol)
-		if (!dayz_quickSwitch) then {
-			if (_current != [] call _findPistol) then {
-				_timeout = diag_tickTime + 2;
-				_animArray = [
-					"amovpercmstpsraswrfldnon_amovpercmstpsnonwnondnon", // is standing, has no pistol / is crouched, has no pistol
-					"amovpercmstpsraswrfldnon_amovpercmstpsraswpstdnon", // is standing, has pistol
-					"amovpknlmstpsraswrfldnon_amovpknlmstpsraswpstdnon", // is crouched, has pistol
-					"amovppnemstpsraswrfldnon_amovppnemstpsnonwnondnon", // is prone, has no pistol
-					"amovppnemstpsraswrfldnon_amovppnemstpsraswpstdnon" // is prone, has pistol
-				];
-
-				waitUntil { (animationState player) in _animArray || diag_tickTime >= _timeout };
-				waitUntil { !((animationState player) in _animArray) || diag_tickTime >= _timeout };
+		
+		//Switch to pistol
+		case 3:
+		{
+			//If current weapon is primary
+			if (IS_PRIMARY(_current)) then
+			{
+				_secondary = Player_GetSidearm();
+				if (!isNil "_secondary") then
+				{
+					player selectWeapon _secondary;
+					dz_switchWeapon_pistolTime = diag_tickTime;
+				};
 			};
 		};
+		
+		//Switch to melee
+		case 4:
+		{
+			//No current weapon
+			if (_current == "") exitWith
+			{
+				switch FIND_MELEE() do
+				{
+					//In primary
+					case 1:
+					{
+						player selectWeapon primaryWeapon player;
+					};
+					
+					//On back
+					case 2:
+					{
+						true call dz_fn_switchWeapon_swap;
+						#ifdef BANDAID
+						call dayz_meleeMagazineCheck;
+						#endif
+					};
+				};
+			};
+			
+			//Current weapon is primary
+			if (IS_PRIMARY(_current)) exitWith
+			{
+				//if current is rifle and on back is melee
+				if (!IS_MELEE(_current) && { IS_MELEE(dayz_onBack) }) then
+				{
+					if (dayz_quickSwitch) then
+					{
+						true call dz_fn_switchWeapon_swap;
+						#ifdef BANDAID
+						call dayz_meleeMagazineCheck;
+						#endif
+					}
+					else
+						{ call dz_fn_switchWeapon_swapSecure; };
+				};
+			};
+			
+			//Current is pistol
+			//Find melee weapon
+			switch FIND_MELEE() do
+			{
+				//In primary
+				case 1:
+				{
+					player selectWeapon primaryWeapon player;
+				};
+				
+				//On back
+				case 2:
+				{
+					if (diag_tickTime - dz_switchWeapon_pistolTime < 1) exitWith {};
+					true call dz_fn_switchWeapon_swap;
+				};
+			};
+		};
+	};
+};
+
+//See FIND_RIFLE() and FIND_MELEE()
+dz_fn_switchWeapon_find =
+{
+	_primary = primaryWeapon player;
+	
+	if (_primary != "" && { _this == MELEE(_primary) })
+		exitWith { 1 };
+	
+	if (dayz_onBack != "" && { _this == MELEE(dayz_onBack) })
+		exitWith { 2 };
+	
+	0
+};
+
+//Swaps rifle / melee instantly without animation
+dz_fn_switchWeapon_swap =
+{
+	if (dayz_onBack == "") then
+	{
+		//Must be in a single statement to ensure atomicity in the scheduled environment.
+		dayz_onBack =
+		[
+			primaryWeapon player,
+			player removeWeapon primaryWeapon player
+		] select 0;
+	}
+	else
+	{
+		dayz_onBack =
+		[
+			primaryWeapon player,
+			player removeWeapon primaryWeapon player,
+			player addWeapon dayz_onBack
+		] select 0;
 	};
 	
-	if (dayz_onBack != "") then {
-		player addWeapon dayz_onBack;
-		player selectWeapon ([dayz_onBack] call _selectMuzzle);
-	};
-
-	dayz_onBack = _primary;
-
-	call dayz_meleeMagazineCheck;
+	if (_this) then
+		{ player selectWeapon primaryWeapon player; };
 };
 
-_switchPrimaryUI = {
-	private ["_primary", "_current"];
-	_primary = primaryWeapon player;
-	_current = currentWeapon player;
-
-	[] call _clearActions;
-
-	if (_primary != "") then {
-		player removeWeapon _primary;
-	};
-
-	if (dayz_onBack != "") then {
-		player addWeapon dayz_onBack;
-
-		if (_primary == _current) then {
-			player selectWeapon ([dayz_onBack] call _selectMuzzle);
-		};
-	};
-
-	dayz_onBack = _primary;
-
-	[[(findDisplay 106)],"onLBSelChanged"] execVM "\z\addons\dayz_code\system\handleGear.sqf"; // update gear dialog
+//Swaps rifle / melee forcing an animation
+dz_fn_switchWeapon_swapSecure =
+{
+	if (!Mutex_TryLock_Fast(dz_switchWeapon_mutex)) exitWith {};
+	
+	//animation states are in the form "AmovPerc...", "AmovPknl...", "AmovPpne..."
+	dz_switchWeapon_anim = format
+	[
+		"AmovP%1MstpSrasWrflDnon_AmovP%1MstpSrasWpstDnon",
+		//Switch on the 6th letter of the animation class
+		switch ((toArray animationState player) select 5) do
+		{
+			case 101: { "erc" }; //e for erc for erected
+			case 107: { "knl" }; //k for knl for kneeling
+			case 112: { "pne" }; //p for pne for prone
+		}
+	];
+	
+	//Add AnimDone event handler to wait until current weapon is put away
+	dz_switchWeapon_handler = player addEventHandler ["AnimDone", dz_fn_switchWeapon_animDone];
+	player playMoveNow dz_switchWeapon_anim;
+	dz_switchWeapon_time = diag_tickTime;
 };
 
-_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-_inVehicle = (vehicle player != player);
-_isOK = (!_onLadder && !_inVehicle && !r_player_unconscious && !dayz_onBackActive);
-
-if (_isOK) then { dayz_onBackActive = true };
-
-switch (_event) do {
-	case "action": {
-		if (_isOK) then {
-			[] call _switchPrimary;
-		};
+dz_fn_switchWeapon_animDone =
+{
+	//Wait at most TIMEOUT seconds
+	if (dz_switchWeapon_time - diag_tickTime > TIMEOUT) exitWith
+	{
+		player removeEventHandler ["AnimDone", dz_switchWeapon_handler];
+		Mutex_Unlock(dz_switchWeapon_mutex);
 	};
-	case "gear": {
-		[] call _switchPrimaryUI;
-	};
-	case "rifle": {
-		if (_isOK) then {
-			_rifle = [] call _findRifle;
-
-			if (_rifle != "") then {
-				if (_rifle == dayz_onBack) then {
-					[] call _switchPrimary;
-				} else {
-					player selectWeapon ([_rifle] call _selectMuzzle);
-				};
-			};
-		};
-	};
-	case "pistol": {
-		if (_isOK) then {
-			_pistol = [] call _findPistol;
-
-			if (_pistol != "") then {
-				player selectWeapon ([_pistol] call _selectMuzzle);
-			};
-		};
-	};
-	case "melee": {
-		if (_isOK) then {
-			_melee = [] call _findMelee;
-
-			if (_melee != "") then {
-				if (_melee == dayz_onBack) then {
-					[] call _switchPrimary;
-				} else {
-					player selectWeapon ([_melee] call _selectMuzzle);
-				};
-			};
-		};
-	};
+	
+	//Check if finished animation is the correct one
+	if ((_this select 1) != dz_switchWeapon_anim) exitWith {};
+	
+	true call dz_fn_switchWeapon_swap;
+	
+	//Remove eventhandler
+	player removeEventHandler ["AnimDone", dz_switchWeapon_handler];
+	Mutex_Unlock(dz_switchWeapon_mutex);
+	
+	#ifdef BANDAID
+	if (IS_MELEE(primaryWeapon player)) then
+		{ call dayz_meleeMagazineCheck; };
+	#endif
 };
-
-if (_isOK) then { dayz_onBackActive = false };

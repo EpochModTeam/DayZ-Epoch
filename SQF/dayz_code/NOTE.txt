@@ -80,6 +80,15 @@ player getVariable ["OpenTarget",false]; CHANGE TO
 player getVariable ["freeTarget",false];
 
 
+////////////////////////////////////////
+SELF ACTIONS VARIABLES
+////////////////////////////////////////
+s_player_boil = -1; is now a_player_boil = true;
+a_player_cooking = true; -- NEW, old -1 var is still used???
+PVCDZ_obj_GutBody IS NOW PVDZE_plr_GutBody
+MAKE SURE "ItemFuelBarrel" is in refuel can list
+PVDZE_obj_Delete is PVDZ_obj_Destroy with 3 array elements
+
 ////////SERVER STUFF///////
 REMOVE PVDZE_SEND PROJECTILE FOR FLARE AND CHEMLIGHT 0 1
 PVDZE_send = [_x,"RoadFlare",[_projectile,1]];

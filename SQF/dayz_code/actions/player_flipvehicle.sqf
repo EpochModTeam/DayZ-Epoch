@@ -14,8 +14,9 @@ waitUntil { animationState player != "amovpknlmstpslowwrfldnon_amovpercmstpsrasw
 uiSleep 2;
 //_object setpos _position;
 _object setvectorup [0,0,1];
-[player,"scream",0,true] call dayz_zombieSpeak;
+//[player,"scream",0,true] call dayz_zombieSpeak;
 [player,20,true,(getPosATL player)] spawn player_alertZombies;
+["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 uiSleep 3;
 
 
