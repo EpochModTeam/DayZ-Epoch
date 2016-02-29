@@ -2,7 +2,7 @@ private ["_unit","_variable","_arraytosend","_owner","_vehicle","_qty"];
 //Inbound [_unit,"PVCDZ_hlt_Transfuse",[_unit,player,1000]]
 _unit = _this select 0;
 
-if(isNull _unit) exitWith {diag_log format ["ERROR: sendToClient is Null: %1", _unit]};
+//if(isNull _unit) exitWith {diag_log format ["ERROR: sendToClient is Null: %1", _unit]};
 
 _variable = _this select 1;
 _arraytosend = _this select 2;
@@ -32,7 +32,26 @@ switch (_variable) do {
 			_owner publicVariableClient  "PVDZE_veh_SFuel";
 		};
 	};
+
+	case "SetEngineState": {
+		_vehicle = _arraytosend select 0;
+		_state = _arraytosend select 1;
+		
+		if (local _vehicle) then {
+			//_vehicle engineOn _state;
+			_vehicle setOwner _owner;
+		} else {
+			PVCDZ_veh_engineSwitch = _arraytosend;
+			_owner publicVariableClient  "PVCDZ_veh_engineSwitch";
+		};
+	};
 	
+
+	case "GutBody": {
+		PVCDZ_obj_GutBody = _arraytosend;
+		_owner publicVariableClient "PVCDZ_obj_GutBody";
+	};
+
 	case "HideBody": {
 		PVDZE_plr_HideBody = _arraytosend select 0;
 		_owner publicVariableClient "PVDZE_plr_HideBody";
@@ -52,7 +71,14 @@ switch (_variable) do {
 		usecBleed = _arraytosend;
 		_owner publicVariableClient "usecBleed";
 	};
-	
+
+	case "dayzSetDate": {
+		dayzSetDate = dayz_storeTimeDate;
+		_owner publicVariableClient "dayzSetDate";
+		
+		//diag_log ("Time and date: " +str (dayz_storeTimeDate));
+	};
+
 	case "HideObj": {
 		PVDZE_obj_Hide = _arraytosend select 0;
 		_owner publicVariableClient "PVDZE_obj_Hide";
@@ -66,6 +92,12 @@ switch (_variable) do {
 	case "Transfuse": {
 		usecTransfuse = _arraytosend;
 		_owner publicVariableClient "usecTransfuse";
+		_unit setVariable["medForceUpdate",true];
+	};
+
+	case "Transfuse_completed": {
+		PVCDZ_hlt_Transfuse_completed = true;
+		_owner publicVariableClient "PVCDZ_hlt_Transfuse_completed";
 		_unit setVariable["medForceUpdate",true];
 	};
 
@@ -94,8 +126,27 @@ switch (_variable) do {
 		_owner publicVariableClient "usecBandage";
 		_unit setVariable["medForceUpdate",true];
 	};
+
+	case "Antibiotics": {
+		PVCDZ_hlt_AntiB = _arraytosend;
+		_owner publicVariableClient "PVCDZ_hlt_AntiB";
+		_unit setVariable["medForceUpdate",true];
+	};
+
 	case "tagFriendly": {
 		PVDZE_plr_FriendRQ = _arraytosend;
 		_owner publicVariableClient "PVDZE_plr_FriendRQ";
+	};
+	case "Legs": {
+		PVCDZ_plr_Legs = _arraytosend;
+		_owner publicVariableClient "PVCDZ_plr_Legs";
+	};
+	
+	case "OpenTarget":
+	{
+		_unit setVariable["OpenTarget",true,true];
+		
+		PVCDZ_OpenTarget_Reset = true;
+		_owner publicVariableClient "PVCDZ_OpenTarget_Reset";
 	};
 };

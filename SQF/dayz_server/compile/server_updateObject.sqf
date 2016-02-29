@@ -2,6 +2,8 @@
 	USAGE:
 	[_object, _type] spawn server_updateObject;
 */
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+if (isNil "sm_done") exitwith {};
 
 private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk","_parachuteWest","_firstTime","_object_killed","_object_repair","_isbuildable"];
 
@@ -11,25 +13,51 @@ if (isNull _object) exitWith {
 	diag_log format ["Skipping Null Object: %1", _object];
 };
 
-_type = _this select 1;
+_type = 	_this select 1;
+_forced = false;
+_recorddmg = false;
 _parachuteWest = (typeOf _object) in ["ParachuteWest","ParachuteC"];
 _isbuildable = (typeOf _object) in dayz_allowedObjects;
 _isNotOk = false;
 _firstTime = false;
 
-_objectID =	_object getVariable ["ObjectID","0"];
-_uid = 		_object getVariable ["ObjectUID","0"];
+_objectID = "0";
+_objectUID = "0";
 
-if (typeName _objectID != "STRING" || typeName _uid != "STRING") then {
-    diag_log format ["Non-string Object: ID %1 UID %2", _objectID, _uid];
-    _objectID = "0";
-    _uid = "0";
+if (!((isNil "_object") OR {(isNull _object)})) then {
+	_objectID = _object getVariable ["ObjectID","0"];
+	_objectUID = _object getVariable ["ObjectUID","0"];
+};
+
+if ((typeName _objectID == "SCALAR") || (typeName _objectUID == "SCALAR")) then { 
+	
+	#ifdef OBJECT_DEBUG
+		diag_log(format["Non-string Object: ID %1 UID %2", _objectID, _objectUID]);
+	#endif
+	
+	//force fail
+	_objectID = nil;
+	_objectUID = nil;
 };
 
 if (!_parachuteWest && !locked _object) then {
-	if (_objectID == "0" && _uid == "0") then {
+	if (!(_objectID in dayz_serverIDMonitor) AND isNil {_objectUID}) then { 
+		//force fail
+		_objectID = nil;
+		_objectUID = nil;		
+	};
+
+	if ((isNil {_objectID}) AND (isNil {_objectUID})) then
+	{
 		_object_position = getPosATL _object;
-    		_isNotOk = true;
+		#ifdef OBJECT_DEBUG
+			diag_log(format["Object %1 with invalid ID at pos [%2,%3,%4]",
+			typeOf _object,
+			_object_position select 0,
+			_object_position select 1, 
+			_object_position select 2]);
+		#endif
+			_isNotOk = true;
 	};
 };
 
@@ -39,75 +67,143 @@ if (_isNotOk) exitWith {
 	diag_log format ["Deleting object %1 with invalid ID at pos [%2,%3,%4]", typeOf _object, _object_position select 0, _object_position select 1, _object_position select 2];
 };
 
-_lastUpdate = _object getVariable ["lastUpdate", time];
+_lastUpdate = _object getVariable ["lastUpdate",diag_tickTime];
 _needUpdate = _object in needUpdate_objects;
-
 _object_position = {
-	private ["_position","_worldspace","_fuel","_key"];
+	private["_position","_worldspace","_fuel","_key"];
 	_position = getPosATL _object;
 	_worldspace = [
-		round (getDir _object),
+		round(direction _object),
 		_position
 	];
-	_fuel = if (_object isKindOf "AllVehicles") then { fuel _object } else { 0 };
-	_key = format ["CHILD:305:%1:%2:%3:", _objectID, _worldspace, _fuel];
-	_key call server_hiveWrite;
+	_fuel = 0;
+	if (_object isKindOf "AllVehicles") then {
+		_fuel = fuel _object;
+	};
+	
+	_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
+	_key call server_hiveWrite;	
+
+	#ifdef OBJECT_DEBUG
+	diag_log ("HIVE: WRITE: "+ str(_key));
+	#endif
 };
 
 _object_inventory = {
 	private["_inventory","_previous","_key"];
-	_inventory = [
-		getWeaponCargo _object,
-		getMagazineCargo _object,
-		getBackpackCargo _object
-	];
-	_previous = str (_object getVariable ["lastInventory", []]);
-	if (str _inventory != _previous) then {
-		_object setVariable ["lastInventory", _inventory];
-		_key = if (_objectID == "0") then { format ["CHILD:309:%1:", _uid] + str _inventory + ":" } else { format ["CHILD:303:%1:", _objectID] + str _inventory + ":" };
+	if (_object isKindOf "TrapItems") then {
+		_inventory = [["armed",_object getVariable ["armed", false]]];
+	} else {
+		_inventory = [
+			getWeaponCargo _object,
+			getMagazineCargo _object,
+			getBackpackCargo _object
+		];
+	};
+	
+	_previous = str(_object getVariable["lastInventory",[]]);
+	if (str(_inventory) != _previous) then {
+		_object setVariable["lastInventory",_inventory];
+		if (_objectID == "0") then {
+			_key = format["CHILD:309:%1:%2:",_objectUID,_inventory];
+		} else {
+			_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
+		};
+		
+		#ifdef OBJECT_DEBUG
+			diag_log ("HIVE: WRITE: "+ str(_key));
+		#endif
+		
 		_key call server_hiveWrite;
 	};
 };
 
 _object_damage = {
-	private ["_hitpoints","_array","_hit","_selection","_key","_damage"];
+	//Allow dmg process
+	private["_hitpoints","_array","_hit","_selection","_key","_damage", "_allFixed"];
 	_hitpoints = _object call vehicle_getHitpoints;
 	_damage = damage _object;
 
 	_array = [];
+	_allFixed = true;
 	{
-		_hit = [_object, _x] call object_getHit;
-		_selection = getText (configFile >> "CfgVehicles" >> typeOf _object >> "HitPoints" >> _x >> "name");
-		if (_hit > 0) then {
-			_array set [count _array, [_selection,_hit]];
-		};
-		_object setHit [_selection, _hit];
-	} count _hitpoints;
+			_hit = [_object,_x] call object_getHit;
+			_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
+			if (_hit > 0) then {
+					_allFixed = false;
+					_array set [count _array,[_selection,_hit]];
+					//diag_log format ["Section Part: %1, Dmg: %2",_selection,_hit]; 
+			} else {
+					_array set [count _array,[_selection,0]]; 
+			};
+	
+	} forEach _hitpoints;
+	
+	if (_allFixed) then {
+			_object setDamage 0;
+	};
 
-	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage + ":";
-	_key call server_hiveWrite;
-	_object setVariable ["needUpdate", false, true];
+	if (_forced) then {        
+		if (_object in needUpdate_objects) then {
+				needUpdate_objects = needUpdate_objects - [_object];
+		};
+		_recorddmg = true;	       
+	} else {
+		//Prevent damage events for the first 10 seconds of the servers live.
+		if (diag_ticktime - _lastUpdate > 10) then {
+			if (!(_object in needUpdate_objects)) then {
+				//diag_log format["DEBUG: Monitoring: %1",_object];
+				needUpdate_objects set [count needUpdate_objects, _object];
+				_recorddmg = true;
+			};
+		};
+	};
+	
+	if (_recorddmg) then {
+			if (_objectID == "0") then {
+					_key = format["CHILD:306:%1:%2:%3:",_objectUID,_array,_damage];
+			} else {
+					_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
+			};
+			diag_log ("HIVE: WRITE: "+ str(_key));
+			_key call server_hiveWrite;   
+	};
+};
+
+//Walls
+_objWallDamage = {
+	private["_key"];
+	_damage = _this select 2;
+	
+	_object setDamage _damage;
+
+	if (_objectID == "0") then {
+		_key = format["CHILD:306:%1:%2:%3:",_objectUID,[],_damage];
+	} else {
+		_key = format["CHILD:306:%1:%2:%3:",_objectID,[],_damage];
+	};
+	
+	_key call server_hiveWrite;   
 };
 
 _object_killed = {
-	private ["_hitpoints","_array","_hit","_PUID","_selection","_key","_damage"];
-	_hitpoints = _object call vehicle_getHitpoints;
-	_damage = 1;
-
-	_array = [];
-	{
-		_hit = [_object, _x] call object_getHit;
-		_selection = getText (configFile >> "CfgVehicles" >> typeOf _object >> "HitPoints" >> _x >> "name");
-		if (_hit > 0) then {
-			_array set [count _array, [_selection, _hit]];
-		};
-		_object setHit [_selection, 1];
-	} count _hitpoints;
-
-	_key = "CHILD:306:" + _objectID + ":" + str _array + ":" + str _damage + ":";
-	_key call server_hiveWrite;
-
-	_object setVariable ["needUpdate", false, true];
+	private["_key"];
+	_object setDamage 1;
+	
+	if (_objectID == "0") then {
+		//Need to update hive to make a new call too allow UID to be updated for a killed event
+		//_key = format["CHILD:306:%1:%2:%3:",_objectUID,[],1];
+		_key = format["CHILD:310:%1:",_objectUID];
+	} else {
+		_key = format["CHILD:306:%1:%2:%3:",_objectID,[],1];
+	};
+	
+	diag_log ("HIVE: WRITE: "+ str(_key));
+	_key call server_hiveWrite;   
+	
+	if ((typeOf _object) in DayZ_removableObjects) then {	
+		[_objectID,_objectUID] call server_deleteObj;
+	};
 
 	if (count _this > 2) then {
 		_killer = _this select 2;
@@ -145,38 +241,80 @@ _object_repair = {
 	_object setVariable ["needUpdate", false, true];
 };
 
-_object setVariable ["lastUpdate", time, true];
+_object_maintenance = {
+	private["_ownerArray","_key"];
 
-if (_type == "all") exitWith {
-	call _object_position;
-	call _object_inventory;
-	call _object_damage;
-};
+	_ownerArray = _object getVariable ["ownerArray",[]];
+	_accessArray = _object getVariable ["dayz_padlockCombination",[]];
+	
+	_variables set [ count _variables, ["ownerArray", _ownerArray]];
+	_variables set [ count _variables, ["padlockCombination", _accessArray]];
 
-if (_type == "position") exitWith {
-	if !(_object in needUpdate_objects) then {
-		needUpdate_objects set [count needUpdate_objects, _object];
-	};
-};
-
-if (_type == "gear") exitWith {
-	call _object_inventory;
-};
-
-if (_type == "damage") exitWith {
-	if (time - _lastUpdate > 5) then {
-		call _object_damage;
+	if (_objectID == "0") then {
+		_key = format["CHILD:309:%1:%2:",_objectUID,_ownerArray];
+		//Wont work just now.
+		_key = format["CHILD:306:%1:%2:%3:",_objectUID,[],0];
 	} else {
-		if !(_object in needUpdate_objects) then {
-			needUpdate_objects set [count needUpdate_objects, _object];
-		};
+		_key = format["CHILD:303:%1:%2:",_objectID,_ownerArray];
+		_key = format["CHILD:306:%1:%2:%3:",_objectID,[],0];
 	};
+	
+//	#ifdef OBJECT_DEBUG
+		diag_log ("HIVE: WRITE: Maintenance, "+ str(_key));
+//	#endif
+	
+	_key call server_hiveWrite;
 };
 
-if (_type == "killed") exitWith {
-	call _object_killed;
+_object_variables = {
+	private["_ownerArray","_key","_accessArray","_variables"];
+
+	_ownerArray = _object getVariable ["ownerArray",[]];
+	_accessArray = _object getVariable ["dayz_padlockCombination",[]];
+	_lockedArray = _object getVariable ["BuildLock",false];
+	
+	//diag_log format ["[%1,%2]",_ownerArray,_accessArray];
+	_variables = [];
+	
+	_variables set [ count _variables, ["ownerArray", _ownerArray]];
+	_variables set [ count _variables, ["padlockCombination", _accessArray]];
+	_variables set [ count _variables, ["BuildLock", _lockedArray]];
+
+	if (_objectID == "0") then {
+		_key = format["CHILD:309:%1:%2:",_objectUID,_variables];
+	} else {
+		_key = format["CHILD:303:%1:%2:",_objectID,_variables];
+	};
+	
+	_key call server_hiveWrite;
 };
 
-if (_type == "repair") exitWith {
-	call _object_damage;
+_object setVariable ["lastUpdate",diag_ticktime,true];
+switch (_type) do {
+	case "all": {
+		call _object_position;
+		call _object_inventory;
+		call _object_damage;
+	};
+	case "position": {
+		call _object_position;
+	};
+	case "gear": {
+		call _object_inventory;
+	};
+	case "maintenance": {
+		call _object_maintenance;
+	};
+	case "damage"; case "repair" : {
+		call _object_damage;
+	};
+	case "killed": {
+		call _object_killed;
+	};
+	case "accessCode"; case "buildLock" : {
+		call _object_variables;
+	};
+	case "objWallDamage": {
+		call _objWallDamage;
+	};
 };

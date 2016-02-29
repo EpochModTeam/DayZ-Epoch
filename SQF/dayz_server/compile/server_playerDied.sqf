@@ -1,3 +1,4 @@
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 private ["_characterID","_minutes","_newObject","_playerID","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _characterID = 	_this select 0;
@@ -75,9 +76,14 @@ if (isnil "dayz_disco") then {
 	dayz_disco = [];
 };
 */
+dayz_died set [count dayz_died, _playerID];
 
 // dayz_disco = dayz_disco - [_playerID];
 _newObject setVariable["processedDeath",diag_tickTime];
+_newObject setVariable ["bodyName", _victimName, true];
+_pos = getPosATL _newObject;
+if (_pos select 2 < 0.1) then { _pos set [2,0]; };
+_newObject setVariable [ "deathPos", _pos];
 
 if (typeName _minutes == "STRING") then
 {
@@ -98,3 +104,13 @@ else
 {
 	deleteVehicle _newObject;
 };
+#ifdef PLAYER_DEBUG
+diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2", 
+	_newObject call fa_plr2str, (getPosATL _newObject) call fa_coor2str,
+	getPlayerUID _newObject,_characterID,
+	typeOf _newObject
+];
+#endif
+_newObject setDamage 1;
+_newObject setOwner 0;
+//dead_bodyCleanup set [count dead_bodyCleanup,_newObject];

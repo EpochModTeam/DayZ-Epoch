@@ -1,15 +1,43 @@
-private ["_nul","_result","_pos","_wsDone","_dir","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_inventory","_hitPoints","_fuel","_damage","_key","_vehLimit","_hiveResponse","_objectCount","_codeCount","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0","_bQty","_vQty","_BuildingQueue","_objectQueue","_superkey","_shutdown","_res","_hiveLoaded"];
+private ["_date","_year","_month","_day","_hour","_minute","_date1","_hiveResponse","_key","_objectCount","_dir","_point","_i","_action","_dam","_selection","_wantExplosiveParts","_entity","_worldspace","_damage","_booleans","_rawData","_ObjectID","_class","_CharacterID","_inventory","_hitpoints","_fuel","_id","_objectArray","_script","_result","_outcome"];
+[]execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
+waitUntil{!isNil "BIS_MPF_InitDone"};
+waitUntil{initialized}; //means all the functions are now defined
+if (!isNil "sm_done") exitWith {}; // prevent server_monitor be called twice (bug during login of the first player)
+sm_done = false;
+
+dayz_serverIDMonitor = [];
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 
 _hiveLoaded = false;
 
-waitUntil{initialized}; //means all the functions are now defined
-
 diag_log "HIVE: Starting";
 
-waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug during login of the first player)
+//Set the Time
+_key = "CHILD:307:";
+_result = _key call server_hiveReadWrite;
+_outcome = _result select 0;
+if(_outcome == "PASS") then {
+	_date = _result select 1;
+
+	//date setup
+	_year = _date select 0;
+	_month = _date select 1;
+	_day = _date select 2;
+	_hour = _date select 3;
+	_minute = _date select 4;
+
+	if(dayz_ForcefullmoonNights) then {
+		_date = [2012,8,2,_hour,_minute];
+	};
+	diag_log [ "TIME SYNC: Local Time set to:", _date, "Fullmoon:",dayz_ForcefullmoonNights, "Date given by HiveExt.dll:", _result select 1];
+	setDate _date;
+	dayzSetDate = _date;
+	publicVariable "dayzSetDate";
+};
 	
 // Custom Configs
 if(isnil "MaxVehicleLimit") then {
@@ -262,6 +290,100 @@ if (isServer && isNil "sm_done") then {
 	} forEach (_BuildingQueue + _objectQueue);
 	// # END SPAWN OBJECTS #
 
+	// Draw the pseudo random seeds
+	call server_plantSpawner;	
+
+	// launch the legacy task scheduler 
+	[] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
+
+	// launch the new task scheduler
+	[] execVM "\z\addons\dayz_server\system\scheduler\sched_init.sqf";
+
+	createCenter civilian;
+	if (isDedicated) then {
+		endLoadingScreen;
+	};
+	allowConnection = true;
+	sm_done = true;
+	publicVariable "sm_done";
+
+	// Trap loop
+	[] spawn {
+		private ["_array","_array2","_array3","_script","_armed"];
+		_array = str dayz_traps;
+		_array2 = str dayz_traps_active;
+		_array3 = str dayz_traps_trigger;
+
+		while {1 == 1} do {
+			if ((str dayz_traps != _array) || (str dayz_traps_active != _array2) || (str dayz_traps_trigger != _array3)) then {
+				_array = str dayz_traps;
+				_array2 = str dayz_traps_active;
+				_array3 = str dayz_traps_trigger;
+
+				//diag_log "DEBUG: traps";
+				//diag_log format["dayz_traps (%2) -> %1", dayz_traps, count dayz_traps];
+				//diag_log format["dayz_traps_active (%2) -> %1", dayz_traps_active, count dayz_traps_active];
+				//diag_log format["dayz_traps_trigger (%2) -> %1", dayz_traps_trigger, count dayz_traps_trigger];
+				//diag_log "DEBUG: end traps";
+			};
+
+			{
+				if (isNull _x) then {
+					dayz_traps = dayz_traps - [_x];
+				};
+
+				_script = call compile getText (configFile >> "CfgVehicles" >> typeOf _x >> "script");
+				_armed = _x getVariable ["armed", false];
+
+				if (_armed) then {
+					if !(_x in dayz_traps_active) then {
+						["arm", _x] call _script;
+					};
+				} else {
+					if (_x in dayz_traps_active) then {
+						["disarm", _x] call _script;
+					};
+				};
+
+				sleep 0.01;
+			} forEach dayz_traps;
+		sleep 1;
+		};
+	};
+
+	//Points of interest
+	[] execVM "\z\addons\dayz_server\compile\server_spawnInfectedCamps.sqf";
+	[] execVM "\z\addons\dayz_server\compile\server_spawnCarePackages.sqf";
+	[] execVM "\z\addons\dayz_server\compile\server_spawnCrashSites.sqf";
+
+
+	[] execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
+
+
+	"PVDZ_sec_atp" addPublicVariableEventHandler {
+		_x = _this select 1;
+		switch (1==1) do {
+			case (typeName _x == "STRING") : { // just some logs from the client 
+				diag_log _x;
+			};
+			case (count _x == 2) : { // wrong side
+				diag_log Format [ "P1ayer %1 reports possible 'side' hack... Server may be comprised!", (_x select 1) call fa_plr2Str ];
+			};
+			default { // player hit
+				_unit = _x select 0;
+				_source = _x select 1;
+				if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {((_source isKindOf "CAManBase") AND {(owner _unit != owner _source)})}) then {
+					diag_log format ["P1ayer %1 hit by %2 %3 from %4 meters",
+						_unit call fa_plr2Str,  _source call fa_plr2Str, _x select 2, _x select 3];
+					if (_unit getVariable["processedDeath", 0] == 0) then {
+						_unit setVariable [ "attacker", name _source ];
+						_unit setVariable [ "noatlf4", diag_ticktime ]; // server-side "not in combat" test, if player is not already dead
+					};
+				};
+			};
+		};
+	};
+
 	// preload server traders menu data into cache
 	if !(DZE_ConfigTrader) then {
 		{
@@ -347,13 +469,6 @@ if (isServer && isNil "sm_done") then {
 	if (isDedicated) then {
 		// Epoch Events
 		_id = [] spawn server_spawnEvents;
-		// server cleanup
-		[] spawn {
-			private ["_id"];
-			uiSleep 200; //Sleep Lootcleanup, don't need directly cleanup on startup + fix some performance issues on serverstart
-			waitUntil {!isNil "server_spawnCleanAnimals"};
-			_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
-		};
 
 		// spawn debug box
 		_debugMarkerPosition = getMarkerPos "respawn_west";

@@ -1,7 +1,10 @@
 private ["_empty","_name","_playerwasNearby","_character","_magazines","_force","_characterID","_charPos","_isInVehicle","_timeSince","_humanity","_debug","_distance","_isNewMed","_isNewPos","_isNewGear","_playerPos","_playerGear","_playerBackp","_medical","_distanceFoot","_lastPos","_backpack","_kills","_killsB","_killsH","_headShots","_lastTime","_timeGross","_timeLeft","_currentWpn","_currentAnim","_config","_onLadder","_isTerminal","_currentModel","_modelChk","_muzzles","_temp","_currentState","_array","_key","_pos","_forceGear","_friendlies"];
 
+
 _character = 	_this select 0;
 _magazines = _this select 1;
+_Achievements = _character getVariable "Achievements"; 
+
 
 //_force = 		_this select 2;
 _forceGear =	_this select 3;
@@ -36,17 +39,33 @@ if (_characterID == "0") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + (_name) + " as no characterID");
 };
 
+if (isNil {_Achievements}) exitWith {
+	diag_log ("ERROR: Cannot Sync Achievements " + (name _character) + " has no default Achievements");
+	_Achievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+};
+
+/*
 private["_debug","_distance"];
 _debug = getMarkerpos "respawn_west";
 _distance = _debug distance _charPos;
 if (_distance < 2000) exitWith { 
 	diag_log format["ERROR: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3",_name,_characterID,_charPos];
-};
+}; */
+
+
+
+
+
+
+
+
+
+
 
 //Check for server initiated updates
 _isNewMed =		_character getVariable["medForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
 _isNewPos =		_character getVariable["posForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
-_isNewGear =	(count _magazines) > 0;
+_isNewGear =	if (!isNil "_magazines") then { true } else { false };
 
 //Check for player initiated updates
 if (_characterID != "0") then {
@@ -80,7 +99,10 @@ if (_characterID != "0") then {
 		};
 		_character setVariable ["posForceUpdate",false,true];
 	};
+
 	if (_isNewGear || _forceGear) then {
+
+
 		//diag_log ("gear..."); uiSleep 0.05;
 		_playerGear = [weapons _character,_magazines];
 		//diag_log ("playerGear: " +str(_playerGear));
@@ -92,6 +114,7 @@ if (_characterID != "0") then {
 			_playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
 		};
 	};
+
 	if (_isNewMed || _force) then {
 		//diag_log ("medical..."); uiSleep 0.05;
 		if (!(_character getVariable["USEC_isDead",false])) then {
@@ -121,8 +144,8 @@ if (_characterID != "0") then {
 		/*
 			Assess how much time has passed, for recording total time on server
 		*/
-		_lastTime = 	_character getVariable["lastTime",time];
-		_timeGross = 	(time - _lastTime);
+		_lastTime = 	_character getVariable["lastTime",diag_ticktime];
+		_timeGross = 	(diag_ticktime - _lastTime);
 		_timeSince = 	floor(_timeGross / 60);
 		_timeLeft =		(_timeGross - (_timeSince * 60));
 		/*
@@ -139,7 +162,7 @@ if (_characterID != "0") then {
 		if (_currentModel == _modelChk) then {
 			_currentModel = "";
 		} else {
-			_currentModel = _currentModel;
+			_currentModel = str(_currentModel);
 			_character setVariable ["model_CHK",typeOf _character];
 		};
 		
@@ -165,7 +188,9 @@ if (_characterID != "0") then {
 			};
 		};
 		_temp = round(_character getVariable ["temperature",100]);
-		_currentState = [_currentWpn,_currentAnim,_temp];
+
+		_currentState = [[_currentWpn,_currentAnim,_temp],_Achievements];
+
 		if(DZE_FriendlySaving) then {
 			// save only last/most recent 5 entrys as we only have 200 chars in db field && weapon + animation names are sometimes really long 60-70 chars.
 			_friendlies = [(_character getVariable ["friendlies",[]]),5] call array_reduceSizeReverse;
@@ -183,15 +208,20 @@ if (_characterID != "0") then {
 			} count (_playerPos select 1);
 			_playerPos set [1,_array];
 		};
+
 		if (!isNull _character) then {
 			if (alive _character) then {
 				//Wait for HIVE to be free
 				//Send request
 				_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
 				//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
+
+
+
 				_key call server_hiveWrite;
 			};
 		};
+
 
 		// If player is in a vehicle, keep its position updated
 		if (vehicle _character != _character) then {
@@ -203,14 +233,15 @@ if (_characterID != "0") then {
 		};
 		
 		// Force gear updates for nearby vehicles/tents
+
 		{
 			[_x, "gear"] call server_updateObject;
-		} count (nearestObjects [_charPos, dayz_updateObjects, 10]);
+		} count (nearestObjects [_charPos, DayZ_GearedObjects, 10]);
 		//[_charPos] call server_updateNearbyObjects;
 
 		//Reset timer
 		if (_timeSince > 0) then {
-			_character setVariable ["lastTime",(time - _timeLeft)];
+			_character setVariable ["lastTime",(diag_ticktime - _timeLeft)];
 		};
 	};
 };
