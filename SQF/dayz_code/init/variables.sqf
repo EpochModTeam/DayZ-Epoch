@@ -60,7 +60,7 @@ meatraw = [
     "FoodGoatRaw",
 	"FishRawTrout",
 	"FishRawSeaBass",
-	"FishRawTuna"
+	"FishRawTuna",
 	"ItemTrout",
 	"ItemSeaBass",
 	"ItemTuna"
@@ -73,7 +73,7 @@ meatcooked = [
 	"FoodGoatCooked",
 	"FishCookedTrout",
 	"FishCookedSeaBass",
-	"FishCookedTuna"
+	"FishCookedTuna",
 	"FoodmuttonCooked",
 	"FoodchickenCooked",
 	"FoodrabbitCooked",

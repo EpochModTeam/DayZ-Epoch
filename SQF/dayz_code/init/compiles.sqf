@@ -664,8 +664,7 @@ if (!isDedicated) then {
 	};
 	// recent murders menu code
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_murderMenu.sqf";
-
-	//This is still needed but the fsm should terminate if any errors pop up.
+/*
 	[] spawn {
         private["_timeOut","_display","_control1","_control2"];
         disableSerialization;
@@ -714,7 +713,7 @@ if (!isDedicated) then {
             endMission "END1";
         };
 	};
-
+*/
 	dayz_meleeMagazineCheck = {
         //private["_meleeNum","_magType","_wpnType","_ismelee"];
         _wpnType = primaryWeapon player;
