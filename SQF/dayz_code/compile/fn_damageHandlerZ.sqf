@@ -1,17 +1,22 @@
 //[unit, selectionName, damage, source, projectile]
 //will only run when local to the created object
 //record any key hits to the required selection
-private["_zed","_selection","_damage","_hitter","_projectile","_headShots","_damageOrg"];
+private ["_damage","_headShots"];
 
-_zed = 			_this select 0;
-_selection = 	_this select 1;
-_damage = 		_this select 2;
-_hitter = 		_this select 3;
-_projectile = 	_this select 4;
+_zed = _this select 0;
+_selection = _this select 1;
+_damage = _this select 2;
+_hitter = _this select 3;
+_projectile = _this select 4;
+
+_meleeAmmo = ["Hatchet_Swing_Ammo","Sledge_Swing_Ammo","Machete_Swing_Ammo","Crowbar_Swing_Ammo","Bat_Swing_Ammo","BatBarbed_Swing_Ammo","Fishing_Swing_Ammo","BatNailed_Swing_Ammo"];
+
+if (_projectile in _meleeAmmo) then {
+	_damage = _damage * 10;
+};
 
 if (local _zed) then {
-
-	if (_damage > 1 && _projectile != "") then {
+	if (_damage > 1 and _projectile != "") then {
 		//Record deliberate critical damages
 		switch (_selection) do {
 			case "head_hit": {
@@ -22,6 +27,9 @@ if (local _zed) then {
 				};
 			};
 		};
+		
+		//diag_log format["0: %1, 1: %2, 2: %3, 3: %4, 4: %5",_zed,_selection,_damage,_hitter,_projectile];	
+		
 		if (_projectile isKindOf "Bolt") then {
 			_damageOrg = _hitter getVariable["firedDamage",0]; //_unit getVariable["firedSelection",_selection];
 			if (_damageOrg < _damage) then {
@@ -31,4 +39,6 @@ if (local _zed) then {
 		};
 	};
 };
+
+// all "HandleDamage event" functions should return the effective damage that the engine will record
 _damage

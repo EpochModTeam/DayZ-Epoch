@@ -1,3 +1,5 @@
+DZE_BloodBags NEEDED ARRAY OF ALL BLOOD BAGS
+
 replace all of
 8Rnd_12Gauge_Buck
 8Rnd_12Gauge_Slug
@@ -19,6 +21,9 @@ CHANGED WEAPON CLASSES
 Create switchable blood system with variable.
 Convert (if old system) to ItemBloodbag
 DZE_UseBloodTypes
+fn_selfActions.sqf
+player_updateGui.sqf
+
 bloodBagANEG bloodBagAPOS bloodBagBNEG bloodBagBPOS bloodBagONEG bloodBagOPOS
 wholeBloodBagANEG wholeBloodBagAPOS wholeBloodBagBNEG wholeBloodBagBPOS wholeBloodBagONEG wholeBloodBagOPOS
 
@@ -70,3 +75,11 @@ PVDZ_obj_Destroy BECOMES PVDZE_obj_Delete //WHO RENAMED THESE VARIABLES IN DAYZ 
 dayzSetDate BECOMES PVDZE_plr_SetDate
 
 PVDZ_serverStoreVar BECOMES PVDZE_serverStoreVar
+
+player getVariable ["OpenTarget",false]; CHANGE TO 
+player getVariable ["freeTarget",false];
+
+
+////////SERVER STUFF///////
+REMOVE PVDZE_SEND PROJECTILE FOR FLARE AND CHEMLIGHT 0 1
+PVDZE_send = [_x,"RoadFlare",[_projectile,1]];

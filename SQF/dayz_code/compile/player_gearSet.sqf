@@ -1,8 +1,11 @@
-private ["_inventory","_wpns","_mags","_idc","_isOK"];
+private ["_inventory","_wpns","_mags","_idc","_isOK","_typedBags"];
 _inventory = _this;
+_typedBags = ["bloodBagANEG", "bloodBagAPOS", "bloodBagBNEG", "bloodBagBPOS", "bloodBagONEG", "bloodBagOPOS","wholeBloodBagANEG", "wholeBloodBagAPOS", "wholeBloodBagBNEG", "wholeBloodBagBPOS", "wholeBloodBagONEG", "wholeBloodBagOPOS"];
 if (count _inventory > 0) then {
 	_wpns = _inventory select 0;
 	_mags = _inventory select 1;
+
+	dayz_onBack = if (count _inventory > 2) then { _inventory select 2 } else { "" };
 
 	//Add inventory
 	{
@@ -11,17 +14,22 @@ if (count _inventory > 0) then {
 		_idc = 109;
 		if (typeName _x == "ARRAY") then {
 			_item = _x select 0;
-			_val = 	_x select 1;
+			_val = _x select 1;
 		} else {
 			_item = _x;
 			_val = -1;
 		};
 
 		if (_item == "BoltSteel") then { _item = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
+		if (DZE_UseBloodTypes) then {
+			if (_item == "ItemBloodbag") then { _item = "bloodBagONEG" }; // Convert ItemBloodbag into universal blood type/rh bag
+		} else {
+			if (_item in _typedBags) then {_item = "ItemBloodbag"};
+		};
 		if (_item == "ItemTent") then { _item = "ItemTentOld" };
 
 		//Is item legal?
-		_isOK = 	isClass(configFile >> "CfgMagazines" >> _item);
+		_isOK = isClass(configFile >> "CfgMagazines" >> _item);
 		if (_isOK) then {
 			if (_val != -1) then {
 				player addMagazine [_item,_val];
@@ -31,7 +39,6 @@ if (count _inventory > 0) then {
 		};
 		_idc = _idc + 1;
 	} count _mags;
-	
 	//Add weapons
 	{
 		if(_x in (DZE_REPLACE_WEAPONS select 0)) then {
@@ -39,7 +46,7 @@ if (count _inventory > 0) then {
 		};
 
 		//Is item legal?
-		_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
+		_isOK = isClass(configFile >> "CfgWeapons" >> _x);
 		if (_isOK) then {
 			player addWeapon _x;
 		};

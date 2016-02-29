@@ -3,6 +3,18 @@ _unit = _this select 0;
 _type = _this select 1;
 _chance = _this select 2;
 
+_dis = switch true do {
+	case (count _this > 4): {_this select 4};
+	case (_type in ["shout","hit","attack","scream","breath"]): {100};
+	default {40};
+};
+
+_local = false;
+if (count _this > 3) then { _local = _this select 3; };
+if (!_local) then { 
+		// we override _local according to number of players inside _dis radius
+	_local = { _unit distance _x < _dis; } count playableUnits <= 1;
+};
 _num = switch (_type) do {
 	default 			{0};
 	case "cough": 		{2};
@@ -39,7 +51,7 @@ if (count _this > 4) then {
 };
 
 _isWoman = getText(configFile >> "cfgVehicles" >> (typeOf _unit) >> "TextPlural") == "Women";
-if (_isWoman && (_type in ["scream","panic","cough"])) then {
+if (_isWoman and (_type in ["scream","panic"])) then {
 	_type = _type + "_w";
 };
 

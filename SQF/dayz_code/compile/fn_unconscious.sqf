@@ -1,61 +1,124 @@
-private ["_totalTimeout","_timeout","_bloodLow","_display","_ctrl1","_ctrl1Pos","_disableHdlr"];
-disableSerialization;
-if ((!r_player_handler1) && (r_handlerCount == 0)) then {
-	if (r_player_cardiac) then {r_player_timeout = r_player_timeout max 300;};
-	_totalTimeout = r_player_timeout;
-	if (_totalTimeout == 0) then { _totalTimeout = 1; };
-	4 cutRsc ["playerStatusWaiting", "PLAIN",0];
-	_display = uiNamespace getVariable 'DAYZ_GUI_waiting';
-	_ctrl1 = 	_display displayCtrl 1400;
-	_ctrl1Pos = ctrlPosition _ctrl1;
-	_timeout = 0;
-	r_handlerCount = r_handlerCount + 1;
-	r_player_handler1 = true;
-	if (vehicle player == player) then {
-		player playAction "CanNotMove";
+// (c) facoptere@gmail.com, licensed to DayZMod for the community
+
+private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_timeout","_short","_sandLevel","_veh","_disableHdlr", "_speed"];
+
+if (r_player_unconsciousInProgress) exitWith {};
+r_player_unconsciousInProgress = true;
+
+/*
+	_anim = toArray animationState player;
+	_weapon = if (count _anim <= 17) then { 0 } else {
+		switch (_anim select 17) do {
+			case 114 : { 2 }; // rifle
+			case 112 : { 1 }; // pistol
+			default { 0 }; // bare hands / flare
+		}
 	};
-	"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
-	"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
-	0 fadeSound 0.05;
-	disableUserInput true;
-	_disableHdlr = [] spawn { uiSleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
-	while {r_player_unconscious} do {
-		_ctrl1 ctrlSetPosition [(_ctrl1Pos select 0),(_ctrl1Pos select 1),(_ctrl1Pos select 2),((0.136829 * safezoneH) * (1 -(r_player_timeout / _totalTimeout)))];
-		_ctrl1 ctrlCommit 1;
-		playSound "heartbeat_1";
-		uiSleep 1;
-		_bloodLow = ((r_player_blood/r_player_bloodTotal) < 0.5);
-		
-		if(_timeout == 0) then {
-			if (!r_player_dead && !_bloodLow && r_player_injured) then {
-				_timeout = 10;
-			};
-		} else {
-			_timeout = _timeout - 1;
-		};
-		
-		if (r_player_timeout > 0) then {
-			r_player_timeout = r_player_timeout - 1;
-		} else {
-			if (!r_player_dead) then {
-				_nul = [] spawn fnc_usec_recoverUncons;
-			};
-		};
-		if (!(player getVariable ["NORRN_unconscious", true])) then {
-			_nul = [] spawn fnc_usec_recoverUncons;
-		};
-		if(animationState player == "AmovPpneMstpSnonWnonDnon_healed") then {
-			_nul = [] spawn fnc_usec_recoverUncons;
-		};
+	_sprint = if (count _anim <= 10) then { false } else { _anim select 10 in [112, 118] };
+	_stance = if (count _anim <= 5) then { 2 } else {
+		switch (_anim select 5) do {
+			case 107 : { 1 }; // kneel
+			case 112 : { 0 }; // prone
+			default { 2 }; // erected
+		}
 	};
-	4 cutRsc ["default", "PLAIN",1];
-	terminate _disableHdlr;
-	waituntil {scriptDone _disableHdlr};
-	disableUserInput false; r_player_unconsciousInputDisabled = false;
-	if (!r_player_injured && ((r_player_blood/r_player_bloodTotal) >= 0.5)) then {
-		10 fadeSound 1;
-		"dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
-		"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
-	};
-	r_handlerCount = r_handlerCount - 1;
+
+	_transmove = (switch true do {
+		case (player != vehicle player) : {""};
+		case (_stance == 1) : { [ // kneeled
+			"amovpknlmstpsnonwnondnon_amovppnemstpsnonwnondnon", // kneeled stopped bare hands
+			"amovpknlmstpsraswpstdnon_amovppnemstpsraswpstdnon", // kneeled stopped pistol
+			"amovpknlmstpsraswrfldnon_amovppnemstpsraswrfldnon" // kneeled stopped rifle
+			] select _weapon };
+		case (_sprint) : { [ // erected and sprinting
+			"amovpercmsprsnonwnondf_amovppnemstpsnonwnondnon", // erected sprinting with bare hands
+			"amovpercmsprslowwpstdf_amovppnemstpsraswpstdnon", // erected sprinting pistol
+			"amovpercmsprslowwrfldf_amovppnemstpsraswrfldnon" // erected sprinting with rifle
+			] select _weapon };
+		case (_stance == 2) : {([ // erected and not sprinting
+			"amovpercmstpsnonwnondnon_amovppnemstpsnonwnondnon", // erected stoped/walking with bare hands
+			"amovpercmstpsraswpstdnon_amovppnemstpsraswpstdnon", // erected stoped/walking with pistol
+			"amovpercmstpsraswrfldnon_amovppnemstpsraswrfldnon" // erected stoped/walking with rifle
+			] select _weapon)};
+		default {""}; // already prone, or swimming, or onladder
+	});
+
+	//diag_log [ __FILE__, diag_tickTime, "current player move:",toString _anim, "collapse move:",_transmove, "duration:",r_player_timeout ];
+	if (_transmove != "") then { player playmove _transmove; };
+*/
+
+_start = diag_tickTime;
+_timeout = abs r_player_timeout;
+_short = _timeout < 4;
+if (!_short) then {
+    4 cutRsc ["playerStatusWaiting", "PLAIN",1];
+    playSound "heartbeat_1";
 };
+
+_count = 0;
+// can be set to false by medEPI.sqf, during the 'while' loop
+r_player_unconscious = true;
+player setVariable ["NORRN_unconscious", r_player_unconscious, true];
+_sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400);
+//diag_log [(diag_tickTime - _start) < _timeout , !r_player_unconscious , alive player  ];
+
+// delay so that the character does not stop before falling:
+_disableHdlr = [] spawn { sleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; }; 
+
+player playAction "CanNotMove";
+"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
+"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
+0 fadeSound 0.05;
+
+while { (diag_tickTime - _start) < _timeout and r_player_unconscious and alive player } do {
+    player setVariable ["unconsciousTime", _timeout - diag_tickTime + _start, (_count % 10) == 0];
+    player setVariable["medForceUpdate",true, (_count % 300) == 0];
+    if (!_short) then {
+        _sandLevel set [ 3, 0.136829 * safezoneH * (diag_tickTime - _start) / _timeout ];
+        ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400) ctrlSetPosition _sandLevel;
+        ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400) ctrlCommit 0.05;
+    };
+	
+    _veh = vehicle player;
+    if ((player != _veh) and {(_veh iskindOf "LandVehicle")}) then {
+        _speed = [0,0,0] distance velocity _veh;
+        if (_speed > 10) then { 
+			_veh engineOn false; 
+		} else {
+            player action ["eject", _veh];
+            player leaveVehicle _veh;
+            [] spawn { sleep 0.1; player switchmove "amovppnemstpsnonwnondnon"; }; // instant prone
+        };
+    };
+	
+    if (player == _veh) then { player setVelocity [0,0,0]; };
+    sleep 0.1;
+    _count = _count + 1;
+	
+};
+
+if (!_short) then{
+    4 cutRsc ["default", "PLAIN",0];
+};
+
+r_player_unconscious = false; 
+player setVariable ["NORRN_unconscious", r_player_unconscious, true]; 
+r_player_timeout = 0; 
+player setVariable ["unconsciousTime", r_player_timeout, true]; 
+r_player_cardiac = false;
+player setVariable ["USEC_isCardiac",r_player_cardiac, true]; 
+player setVariable["medForceUpdate",true, true];
+
+r_player_unconsciousInProgress = false;
+terminate _disableHdlr;
+waituntil {scriptDone _disableHdlr};
+disableUserInput false;
+r_player_unconsciousInputDisabled = false;
+4 cutRsc ["default", "PLAIN",1];
+player switchMove "AmovPpneMstpSnonWnonDnon_healed";
+
+10 fadeSound 1;
+"dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
+"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
+
+//diag_log [ __FILE__, diag_tickTime, "done" ];

@@ -18,7 +18,7 @@ item13[] = {"Parse_Login",2,250,-66.532227,557.409241,33.467773,607.409241,0.000
 item14[] = {"Hive_Bad",4,218,125.000000,550.000000,225.000000,600.000000,10.000000,"Hive" \n "Bad"};
 item15[] = {"ERROR__Wrong_HIVE",2,250,325.000000,550.000000,425.000000,600.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item16[] = {"Character_Setup",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Character" \n "Setup"};
-item17[] = {"Phase_One",2,250,-75.000000,650.000000,25.000000,700.000000,0.000000,"Phase One"};
+item17[] = {"Phase_One",2,4346,-75.000000,650.000000,25.000000,700.000000,0.000000,"Phase One"};
 item18[] = {"Response",4,218,-175.000000,700.000000,-75.000000,750.000000,0.000000,"Response"};
 item19[] = {"Phase_Two",2,250,-75.000000,750.000000,25.000000,800.000000,0.000000,"Phase Two"};
 item20[] = {"Dead_Player",4,218,125.000000,750.000000,225.000000,800.000000,0.000000,"Dead" \n "Player"};
@@ -33,7 +33,7 @@ item28[] = {"Display_Ready",4,218,-175.000000,1200.000000,-75.000000,1250.000000
 item29[] = {"Preload_Display",2,250,-75.000000,1250.000000,25.000000,1300.000000,0.000000,"Preload" \n "Display"};
 item30[] = {"Preload_Done",4,218,-175.000000,1300.000000,-75.000000,1350.000000,0.000000,"Preload" \n "Done"};
 item31[] = {"Initialize",2,250,-75.000000,1350.000000,25.000000,1400.000000,0.000000,"Initialize"};
-item32[] = {"Finish",1,4346,-75.000000,1625.000000,25.000000,1675.000000,0.000000,"Finish"};
+item32[] = {"Finish",1,250,-75.000000,1625.000000,25.000000,1675.000000,0.000000,"Finish"};
 item33[] = {"no_Time_Date",4,218,125.000000,950.000000,225.000000,1000.000000,0.000000,"no Time/Date"};
 item34[] = {"sleep",4,218,525.000000,150.000000,625.000000,200.000000,0.000000,"sleep"};
 item35[] = {"sleep",4,218,525.000000,550.000000,625.000000,600.000000,0.000000,"sleep"};
@@ -243,8 +243,8 @@ link127[] = {107,32};
 link128[] = {108,109};
 link129[] = {109,110};
 link130[] = {110,64};
-globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-321.543945,357.690063,2264.614258,769.397766,452,995,1};
-window[] = {0,-1,-1,-1,-1,734,208,1228,208,1,470};
+globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-416.145355,452.291077,1642.353271,662.678894,890,1004,1};
+window[] = {2,-1,-1,-1,-1,682,156,1176,156,3,908};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -627,6 +627,7 @@ class FSM
                          "player allowDamage false;" \n
                          "_lastAte = _survival select 1;" \n
                          "_lastDrank = _survival select 2;" \n
+                         "_typedBags = [""bloodBagANEG"", ""bloodBagAPOS"", ""bloodBagBNEG"", ""bloodBagBPOS"", ""bloodBagONEG"", ""bloodBagOPOS"",""wholeBloodBagANEG"", ""wholeBloodBagAPOS"", ""wholeBloodBagBNEG"", ""wholeBloodBagBPOS"", ""wholeBloodBagONEG"", ""wholeBloodBagOPOS""];" \n
                          "" \n
                          "_usedFood = 0;" \n
                          "_usedWater = 0;" \n
@@ -676,7 +677,11 @@ class FSM
                          "			_countr = 0;" \n
                          "			{" \n
                          "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
-                         "				if (_x == ""ItemBloodbag"") then { _x = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
+                         "				if (DZE_UseBloodTypes) then {" \n
+                         "					if (_item == ""ItemBloodbag"") then { _item = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
+                         "				} else {" \n
+                         "					if (_item in _typedBags) then {_item = ""ItemBloodbag""};" \n
+                         "				};" \n
                          "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
                          "				_countr = _countr + 1;" \n
                          "			} forEach _backpackMagTypes;" \n

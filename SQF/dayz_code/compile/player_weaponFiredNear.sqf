@@ -52,7 +52,7 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 			if (_distance < ((_dmgDistance / 2) + 1)) then {
 					//serious ballistic damage
 					if (_isPlayer) then {
-						_id = [] spawn player_death;
+						[_unit, "head_hit", 1.51, _firer, _ammo] call fnc_usec_damageHandler;
 					};
 
 					[_unit,4] call fnc_usec_damageUnconscious;
@@ -74,7 +74,7 @@ private ["_unit","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_
 				[20,45] call fnc_usec_pitchWhine; //Visual , Sound
 				// Dead
 				if (_isPlayer) then {
-					_id = [] spawn player_death;
+					[_unit, "head_hit", 1.51, _firer, _ammo] call fnc_usec_damageHandler;
 				};
 				[_unit,2] call fnc_usec_damageUnconscious;
 			};

@@ -1,18 +1,18 @@
 /************************************************************
-Set Pitch && Bank
-By General Barron ([EMAIL=aw_barron@hotmail.com]aw_barron@hotmail.com[/EMAIL]) && vektorboson
+Set Pitch and Bank
+By General Barron ([EMAIL=aw_barron@hotmail.com]aw_barron@hotmail.com[/EMAIL]) and vektorboson
 
 Parameters: [object, pitch, bank]
 Returns: nothing
 
-Rotates an object, giving it the specified pitch && bank,
+Rotates an object, giving it the specified pitch and bank,
 in degrees.
 
 Pitch is 0 when the object is level; 90 when pointing straight
-up; && -90 when pointing straight down.
+up; and -90 when pointing straight down.
 
 Bank is 0 when level; 90 when the object is rolled to the right,
--90 when rolled to the left, && 180 when rolled upside down.
+-90 when rolled to the left, and 180 when rolled upside down.
 
 Note that the object's yaw can be set with the setdir command,
 which should be issued before using this function, if required.
@@ -20,9 +20,7 @@ which should be issued before using this function, if required.
 The pitch/bank can be leveled out (set to 0) by using the
 setdir command.
 ************************************************************/
-
-//extract parameters
-private ["_obj","_pitch","_bank","_yaw","_vdir","_vup","_sign","_rotate"];
+private["_obj","_pitch","_bank","_yaw","_sign","_vdir","_vup"];
 
 _obj = _this select 0;
 _pitch = _this select 1;
@@ -38,24 +36,23 @@ _yaw = 360-(getdir _obj);
 //function to rotate a 2d vector around the origin
 //----------------------------
 
-_rotate =
-{
-private ["_v","_d","_x","_y"];
+_rotate = {
+	private ["_vec","_dir","_xpos","_ypos"];
 
-//extract parameters
-_v = +(_this select 0); //we don't want to modify the originally passed vector
-_d = _this select 1;
+	//extract parameters
+	_vec = +(_this select 0); //we don't want to modify the originally passed vector
+	_dir = _this select 1;
 
-//extract old x/y values
-_x = _v select 0;
-_y = _v select 1;
+	//extract old x/y values
+	_xpos = _vec select 0;
+	_ypos = _vec select 1;
 
-//if vector is 3d, we don't want to mess up the last element
-_v set [0, (cos _d)*_x - (sin _d)*_y];
-_v set [1, (sin _d)*_x + (cos _d)*_y];
+	//if vector is 3d, we don't want to mess up the last element
+	_vec set [0, (cos _dir)*_xpos - (sin _dir)*_ypos];
+	_vec set [1, (sin _dir)*_xpos + (cos _dir)*_ypos];
 
-//return new vector
-_v
+	//return new vector
+	_vec
 };
 
 
@@ -67,7 +64,7 @@ _v
 _sign = [1,-1] select (_pitch < 0);
 
 //cut off numbers above 180
-while {abs _pitch > 180} do {_pitch = _sign*((abs _pitch) - 180)};
+while {abs _pitch > 180} do {_pitch = _sign*(abs (_pitch - 180))};
 
 //we can't use pitch that is exactly equal to 90, because then the engine doesn't know what 2d compass direction the object is facing
 if(abs _pitch == 90) then {_pitch = _sign*(89.9)};
@@ -83,7 +80,7 @@ _yaw = 360-(getdir _obj);
 //use bank to flip upside down
 _bank = _bank + 180;
 
-//&& adjust our original pitch
+//and adjust our original pitch
 _pitch = (180 - abs _pitch)*_sign;
 };
 
@@ -102,19 +99,19 @@ _vdir = [_vdir, _yaw] call _rotate;
 _sign = [1,-1] select (_bank < 0);
 
 //cut off numbers above 360
-while {abs _bank > 360} do {_bank = _sign*((abs _bank) - 360)};
+while {abs _bank > 360} do {_bank = _sign*(abs (_bank - 360))};
 
 //reflect numbers above 180
 if(abs _bank > 180) then {_sign = -1*_sign; _bank = (360-_bank)*_sign};
 
 //find appropriate vup according to our bank, as if we were facing north
-_vup  = [sin _bank, 0, cos _bank];
+_vup = [sin _bank, 0, cos _bank];
 
 //rotate Y & Z elements according to pitch
 _vup = [_vup select 0] + ([[_vup select 1, _vup select 2], _pitch] call _rotate);
 
 //rotate X & Y around origin according to yaw
-_vup =  [_vup,  _yaw] call _rotate;
+_vup = [_vup,  _yaw] call _rotate;
 
 
 //----------------------------

@@ -1,81 +1,63 @@
-private ["_agent","_target","_targets","_targetDis","_man","_manDis","_range","_objects","_refobj"];
+private ["_target","_targets","_man","_manDis","_localtargets","_remotetargets"];
 _agent = _this;
 _target = objNull;
-/*
-_local = [];
-_remote = [];
-*/
 _targets = [];
-_targetDis = [];
-_range = 120;
+//_targetDis = [];
+_range = 100;
 _manDis = 0;
-_refobj = vehicle player;
 
-/*
-_local =	_agent getVariable ["target",[]];
-//diag_log ("Local is: " + str(_local));
-_remote =	_agent getVariable ["targets",[]];
-//diag_log ("Remote is: " + str(_remote));
+_localtargets = _agent getVariable ["localtargets",[]];
+_remotetargets = _agent getVariable ["remotetargets",[]];
 
-if (count _remote == 0) then 
-{
-	_targets = _local;
-	//diag_log ("Targets is: " + str(_targets));
-}
-else
-{
-	_targets = _local + _remote;
-	//diag_log ("Local + Remote targets is: " + str(_targets));
+if (isNil "_localtargets") then{
+	_localtargets = [];
 };
-*/
+if (isNil "_remotetargets") then{
+	_remotetargets = [];
+};
+_targets = _localtargets + _remotetargets;
 
-_targets = _agent getVariable ["targets",[]];
+//diag_log ("Targets: " +str(_targets));
 
-if (isNil "_targets") exitWith {};
+//if (isNil "_targets") exitWith {};
+	
 //Search for objects
-if (count _targets == 0) then
-{
-	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],50];
+if (count _targets == 0) then {
+//"ThrownObjects","GrenadeHandTimedWest","SmokeShell"]
+	_objects = _agent nearObjects ["GrenadeHand", 300];
 	{
-		private["_dis"];
-		if (!(_x in _targets)) then
-		{
-			_targets set [count _targets,_x];
-			_targetDis set [count _targetDis,_dis];
+		if (!(_x in _targets)) then {
+			if (local _x) then {
+				_localtargets set [count _localtargets,_x];
+			} else {
+				_remotetargets set [count _remotetargets,_x];
+			};
 		};
-	} count _objects;
+	} foreach _objects;
 };
 
 //Find best target
-if (count _targets > 0) then
-{
+if (count _targets > 0) then {
 	_man = _targets select 0;
 	_manDis = _man distance _agent;
+	//diag_log (str(_man) + str(_manDis));
 	{
 		private["_dis"];
-		_dis =  _x distance _agent;
-		if (_dis < _manDis) then
-		{
+		_dis = _x distance _agent;
+		if (_dis < _manDis) then {
 			_man = _x;
 			_manDis = _dis;
 		};
-		if (_dis > _range) then
-		{
-			_targets = _targets - [_x];
-		};
-		if (_x isKindOf "SmokeShell") then
-		{
+		if (_x isKindOf "SmokeShell") then {
 			_man = _x;
 			_manDis = _dis;
 		};
-	} count _targets;
-
+	} forEach _targets;
 	_target = _man;
 };
 
 //Check if too far
-if (_manDis > _range) then
-{
+if (_manDis > _range) then {
 	_targets = _targets - [_target];
 	_target = objNull;
 };
