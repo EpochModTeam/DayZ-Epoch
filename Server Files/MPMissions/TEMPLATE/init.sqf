@@ -55,16 +55,17 @@ progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";				//Compile regular functions
 progressLoadingScreen 0.5;
 call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
+progressLoadingScreen 0.6;
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus11.sqf"; //Add trader city objects locally on each machine early
 progressLoadingScreen 1.0;
 
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
 if (isServer) then {
-	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\dynamic_vehicle.sqf";
 	//Compile vehicle configs
-	
-	// Add trader citys
-	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
+	//Add trader agents
+	execVM "\z\addons\dayz_server\traders\chernarus11.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 
