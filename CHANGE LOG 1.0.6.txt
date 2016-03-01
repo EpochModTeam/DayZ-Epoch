@@ -21,6 +21,7 @@
 [CHANGED] Tweaked rotate_logs.bat to incorporate the day of the week for better organization @Raziel23x 
 [CHANGED] All instances of sleep replaced with the more reliable uiSleep @icomrade
 [CHANGED] Several getPosATL changed to call FNC_GetPos for water compatibility @icomrade
+[CHANGED] Trader city objects are now spawned locally on each machine with simulation disabled for better performance. Admins can still override with custom cities in init.sqf. @ebaydayz
 
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
