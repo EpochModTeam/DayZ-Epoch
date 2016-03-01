@@ -329,8 +329,8 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 		_messTimer = 0;
 		player setVariable ["messing",[dayz_hunger,dayz_thirst,dayz_nutrition],false];
 		
-		PVDZ_serverStoreVar = [player,"messing",[dayz_hunger,dayz_thirst,dayz_nutrition]];
-		publicVariableServer "PVDZ_serverStoreVar";
+		PVDZE_serverStoreVar = [player,"messing",[dayz_hunger,dayz_thirst,dayz_nutrition]];
+		publicVariableServer "PVDZE_serverStoreVar";
 	};
 
 	//Save Checker
@@ -340,8 +340,8 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 			PVDZ_plr_Save = [player,nil,false,dayz_playerAchievements];
 			publicVariableServer "PVDZ_plr_Save";
 			
-			PVDZ_serverStoreVar = [player,"Achievements",dayz_playerAchievements];
-			publicVariableServer "PVDZ_serverStoreVar";
+			PVDZE_serverStoreVar = [player,"Achievements",dayz_playerAchievements];
+			publicVariableServer "PVDZE_serverStoreVar";
 			player setVariable ["Achievements",dayz_playerAchievements,false];
 
 			if (isServer) then {

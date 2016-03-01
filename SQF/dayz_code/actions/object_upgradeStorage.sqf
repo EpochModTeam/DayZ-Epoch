@@ -168,11 +168,12 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	player playActionNow "Medic";
 	
 	//remove old tent
-	PVDZ_obj_Destroy = [_objectID,_objectUID];
-	publicVariableServer "PVDZ_obj_Destroy";
+	_activatingPlayer = player;
+	PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
+	publicVariableServer "PVDZE_obj_Delete";
 	
 	if (isServer) then {
-		PVDZ_obj_Destroy call server_deleteObj;
+		PVDZE_obj_Delete call server_deleteObj;
 	};
 	deleteVehicle _cursorTarget;
 	
@@ -227,9 +228,9 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	sleep 3;
 	
 	//publish new tent
-	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[_weapons,_magazines,_backpacks]];
-	publicVariableServer "PVDZ_obj_Publish";
-    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
+	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[_weapons,_magazines,_backpacks]];
+	publicVariableServer "PVDZE_obj_Publish";
+    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZE_obj_Publish:", PVDZE_obj_Publish];
 
 	//cutText [localize "str_upgradeDone", "PLAIN DOWN"];
 	_msg = localize "str_upgradeDone";

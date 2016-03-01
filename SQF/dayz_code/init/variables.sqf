@@ -586,7 +586,7 @@ dayz_zombieTargetList = [
 ];
 PVDZE_plr_Hit = [];
 PVDZE_obj_Publish = [];		//used for eventhandler to spawn a mirror of players tent
-PVDZE_plr_HideBody = objNull;
+PVCDZE_plr_HideBody = objNull;
 dayz_selectedVault = objNull;
 dayz_selectedDoor = objNull;
 
@@ -756,6 +756,12 @@ if(isNil "DZE_PlotPole") then {
 };
 if(isNil "DZE_maintainRange") then {
 	DZE_maintainRange = ((DZE_PlotPole select 0)+20);
+};
+if(isNil "DZE_HeartBeat") then {
+	DZE_HeartBeat = false;
+};
+if(isNil "DZE_UseBloodTypes") then {
+	DZE_UseBloodTypes = false;
 };
 
 if(isNil "dayz_presets") then { dayz_presets = "Vanilla"; };

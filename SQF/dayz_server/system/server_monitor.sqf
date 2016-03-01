@@ -35,8 +35,8 @@ if(_outcome == "PASS") then {
 	};
 	diag_log [ "TIME SYNC: Local Time set to:", _date, "Fullmoon:",dayz_ForcefullmoonNights, "Date given by HiveExt.dll:", _result select 1];
 	setDate _date;
-	dayzSetDate = _date;
-	publicVariable "dayzSetDate";
+	PVDZE_plr_SetDate = _date;
+	publicVariable "PVDZE_plr_SetDate";
 };
 	
 // Custom Configs

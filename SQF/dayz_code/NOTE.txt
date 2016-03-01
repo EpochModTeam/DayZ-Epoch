@@ -1,38 +1,21 @@
+NEW VAR DZE_HeartBeat
+USE TO ENABLE HEARTBEAT SOUND WHEN LOOKING AT BANDIT PLAYER (less than -5000 humanity), DISABLED BY DEFAULT
+
+NEW VAR DZE_UseBloodTypes
+DZE_UseBloodTypes, OFF by default - Enables blood type system, and disables universal bloodbags. you can readily turn this system off and on
+
+
+
+fn_selfActions.sqf
+player_updateGui.sqf
+
 DZE_BloodBags NEEDED ARRAY OF ALL BLOOD BAGS
 Create switchable blood system with variable.
 Convert (if old system) to ItemBloodbag
 DZE_UseBloodTypes
 
-replace all of
-8Rnd_12Gauge_Buck
-8Rnd_12Gauge_Slug
-2Rnd_12Gauge_Buck
-2Rnd_12Gauge_Slug
-with original epoch ammo
-
-CHANGED WEAPON CLASSES
-
-	{Loot_WEAPON,		3,		Makarov_DZ},
-	{Loot_WEAPON,		1,		MakarovSD},
-	{Loot_WEAPON,		2,		M1911_DZ},
-	{Loot_WEAPON,		2,		M9_DZ},
-	{Loot_WEAPON,		1,		M9SD},
-	{Loot_WEAPON,		2,		G17_DZ},
-	{Loot_WEAPON,		2,		Revolver_DZ},
-	{Loot_WEAPON,		0.5,	revolver_gold_EP1},
-	
-
-fn_selfActions.sqf
-player_updateGui.sqf
-
 bloodBagANEG bloodBagAPOS bloodBagBNEG bloodBagBPOS bloodBagONEG bloodBagOPOS
 wholeBloodBagANEG wholeBloodBagAPOS wholeBloodBagBNEG wholeBloodBagBPOS wholeBloodBagONEG wholeBloodBagOPOS
-
-
-WEAPONHOLDER_TOOL IS NO LONGER USED! FIX BY REPLACING OCCURENCES
-I.E. ItemCrowbar replaces WeaponHolder_MeleeCrowbar
-WeaponHolder_ItemHatchet_DZE
-WeaponHolder_MeleeCrowbar
 
 REMOVE TOOL BREAKING, IT'S STUPID
 
@@ -40,9 +23,6 @@ building_spawnLoot_Legacy
 building_spawnZombies_Legacy
 
 	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
-COMPILES NOT DONE - LEFT OFF AT LOS_CHECK
-
-dayz_lowHumanity //HEARBEAT SOUND
 
 vehicle_handleDamage    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleDamage.sqf";
 vehicle_handleKilled    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
@@ -54,7 +34,6 @@ fnc_veh_handleKilled = compile preprocessFileLineNumbers "\z\addons\dayz_code\co
 
 dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
 PVDZ_obj_Publish IS PVDZE_obj_Publish
-PVCDZ_obj_HideBody IS PVDZE_obj_HideBody
 ******REPLACE ALL PVCDZ_ AND PVDZ_ with PVCDZE/PVDZE_
 
 trap_monitor.fsm is no more!
@@ -88,7 +67,6 @@ s_player_boil = -1; is now a_player_boil = true;
 a_player_cooking = true; -- NEW, old -1 var is still used???
 PVCDZ_obj_GutBody IS NOW PVDZE_plr_GutBody
 MAKE SURE "ItemFuelBarrel" is in refuel can list
-PVDZE_obj_Delete is PVDZ_obj_Destroy with 3 array elements
 
 ////////SERVER STUFF///////
 REMOVE PVDZE_SEND PROJECTILE FOR FLARE AND CHEMLIGHT 0 1

@@ -175,7 +175,8 @@ if (_proceed) then {
 		deleteVehicle _obj;
 
 		if(!_isWreck) then {
-			PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
+			_activatingPlayer = player;
+			PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
 			publicVariableServer "PVDZE_obj_Delete";
 		};
 

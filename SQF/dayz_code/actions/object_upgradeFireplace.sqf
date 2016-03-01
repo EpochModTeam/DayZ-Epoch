@@ -209,9 +209,9 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	
 	//publish new tent
 	//[[[],[]],[[],[]],[[],[]]]
-	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[[[],[]],_magazines,[[],[]]]];
-	publicVariableServer "PVDZ_obj_Publish";
-    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
+	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[[[],[]],_magazines,[[],[]]]];
+	publicVariableServer "PVDZE_obj_Publish";
+    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZE_obj_Publish:", PVDZE_obj_Publish];
 
 	//cutText [localize "str_upgradeDone", "PLAIN DOWN"];
 	_msg = localize "str_upgradeDone";

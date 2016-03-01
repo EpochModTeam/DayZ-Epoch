@@ -29,9 +29,9 @@ _object setDir (getDir player);
 
 _object setVariable ["armed", false, true];
 
-PVDZ_obj_Publish = [dayz_characterID,_object,[getDir _object, getPosATL _object],[["armed", _object getVariable "armed"]]];
-publicVariableServer "PVDZ_obj_Publish";
-diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
+PVDZE_obj_Publish = [dayz_characterID,_object,[getDir _object, getPosATL _object],[["armed", _object getVariable "armed"]]];
+publicVariableServer "PVDZE_obj_Publish";
+diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZE_obj_Publish:", PVDZE_obj_Publish];
 
 player reveal _object;
 

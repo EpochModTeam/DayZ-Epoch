@@ -17,8 +17,8 @@ switch (_variable) do {
 		if (local _vehicle) then {
 			_arraytosend call fnc_veh_handleDam;
 		} else {
-			PVCDZE_vehSH = _arraytosend;
-			_owner publicVariableClient "PVCDZE_vehSH";
+			PVCDZE_veh_SH = _arraytosend;
+			_owner publicVariableClient "PVCDZE_veh_SH";
 		};
 	};
 	
@@ -28,8 +28,8 @@ switch (_variable) do {
 		if (local _vehicle) then {
 			_vehicle setFuel _qty;
 		} else {
-			PVDZE_veh_SFuel = _arraytosend;
-			_owner publicVariableClient  "PVDZE_veh_SFuel";
+			PVCDZE_veh_SetFuel = _arraytosend;
+			_owner publicVariableClient  "PVCDZE_veh_SetFuel";
 		};
 	};
 
@@ -46,15 +46,14 @@ switch (_variable) do {
 		};
 	};
 	
-
 	case "GutBody": {
 		PVCDZ_obj_GutBody = _arraytosend;
 		_owner publicVariableClient "PVCDZ_obj_GutBody";
 	};
 
 	case "HideBody": {
-		PVDZE_plr_HideBody = _arraytosend select 0;
-		_owner publicVariableClient "PVDZE_plr_HideBody";
+		PVCDZE_plr_HideBody = _arraytosend select 0;
+		_owner publicVariableClient "PVCDZE_plr_HideBody";
 	};
 	
 	case "Humanity": {
@@ -72,9 +71,9 @@ switch (_variable) do {
 		_owner publicVariableClient "usecBleed";
 	};
 
-	case "dayzSetDate": {
-		dayzSetDate = dayz_storeTimeDate;
-		_owner publicVariableClient "dayzSetDate";
+	case "PVDZE_plr_SetDate": {
+		PVDZE_plr_SetDate = dayz_storeTimeDate;
+		_owner publicVariableClient "PVDZE_plr_SetDate";
 		
 		//diag_log ("Time and date: " +str (dayz_storeTimeDate));
 	};

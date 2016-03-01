@@ -155,11 +155,12 @@ if (_proceed) then {
 
 	titleText [format["Dismantled, (%1).", (typeOf _object)], "PLAIN DOWN"];
 	
-	PVDZ_obj_Destroy = [_objectID,_objectUID];
-	publicVariableServer "PVDZ_obj_Destroy";
+	_activatingPlayer = player;
+	PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
+	publicVariableServer "PVDZE_obj_Delete";
 	
 	if (isServer) then {
-		PVDZ_obj_Destroy call server_deleteObj;
+		PVDZE_obj_Delete call server_deleteObj;
 	};
 	
 	//Need to update for sanity no client should ever create or delete anything

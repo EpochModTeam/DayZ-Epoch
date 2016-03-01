@@ -56,11 +56,12 @@ if(_pickup) then {
 	_backpacks = getBackpackCargo _obj;
 
 	//["PVDZ_obj_Delete",[_objectID,_objectUID]] call callRpcProcedure;
-	PVDZ_obj_Destroy = [_objectID,_objectUID];
-	publicVariableServer "PVDZ_obj_Destroy";
+	_activatingPlayer = player;
+	PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
+	publicVariableServer "PVDZE_obj_Delete";
 	
 	if (isServer) then {
-		PVDZ_obj_Destroy call server_deleteObj;
+		PVDZE_obj_Delete call server_deleteObj;
 	};
 	deleteVehicle _obj;
 

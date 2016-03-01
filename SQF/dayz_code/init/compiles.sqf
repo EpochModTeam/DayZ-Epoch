@@ -589,7 +589,7 @@ if (!isDedicated) then {
 			private "_humanity";
 			_humanity = _unit getVariable["humanity",0];
 			dayz_heartBeat = true;
-			if (_humanity < -3000) then {
+			if (_humanity < -5000) then {
 				private "_delay";
 				_delay = ((10000 + _humanity) / 5500) + 0.3;
 				playSound "heartbeat_1";

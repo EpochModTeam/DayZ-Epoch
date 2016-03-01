@@ -82,14 +82,15 @@ _sfx = "tentpack";
 // Added Nutrition-Factor for work
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-sleep 3;
+uisleep 3;
 
-PVDZ_obj_Destroy = [_objectID,_objectUID];
-publicVariableServer "PVDZ_obj_Destroy";
+_activatingPlayer = player;
+PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
+publicVariableServer "PVDZE_obj_Delete";
 
 //Send killed for object
 if (isServer) then {
-	PVDZ_obj_Destroy call server_deleteObj;
+	PVDZE_obj_Delete call server_deleteObj;
 } else {
 	PVDZ_veh_Save = [_obj, "killed"];
 	publicVariableServer "PVDZ_veh_Save";

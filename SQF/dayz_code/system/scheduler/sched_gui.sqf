@@ -24,7 +24,7 @@ sched_gui = {
 	};
 
 	// move this elsewhere, it deals with the menu
-	if (!isNull cursorTarget and !dayz_heartBeat) then {
+	if (!isNull cursorTarget and {!dayz_heartBeat} and {DZE_HeartBeat}) then {
 		if (alive cursorTarget) then {
 			cursorTarget spawn dayz_lowHumanity;
 		};

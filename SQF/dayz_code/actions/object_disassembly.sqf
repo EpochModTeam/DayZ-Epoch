@@ -85,9 +85,11 @@ for "_i" from 1 to 20 do {
     _cursorTarget = objNull;
     if (_realObjectStillThere) then { // send to server the destroy request
         _realObjectStillThere = false;
-        PVDZ_obj_Destroy = [_objectID,_objectUID];
-        publicVariableServer "PVDZ_obj_Destroy";
-        diag_log [diag_ticktime, __FILE__, "Networked object, request to destroy", PVDZ_obj_Destroy];
+
+		_activatingPlayer = player;
+        PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
+        publicVariableServer "PVDZE_obj_Delete";
+        diag_log [diag_ticktime, __FILE__, "Networked object, request to destroy", PVDZE_obj_Delete];
     };
 
     ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
@@ -153,9 +155,9 @@ if (!_realObjectStillThere) then {
 			_object setVariable ["ownerArray",_ownerArray,true];
 			_variables = [[ "ownerArray", _ownerArray]];
 			_object setVariable ["characterID",_characterID,true];
-			PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],_variables];
-			publicVariableServer "PVDZ_obj_Publish";
-			diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
+			PVDZE_obj_Publish = [dayz_characterID,_object,[_dir, _pos],_variables];
+			publicVariableServer "PVDZE_obj_Publish";
+			diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZE_obj_Publish:", PVDZE_obj_Publish];
 			/*
 			//Send maintenance info
 			PVDZ_veh_Save = [_object,"maintenance"];

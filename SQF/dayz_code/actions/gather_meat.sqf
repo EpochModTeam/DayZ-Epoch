@@ -58,8 +58,8 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	if (local _item) then {
 		[_item,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
 	} else {		
-		PVDZE_plr_GutBody =[_item,_qty];
-		publicVariable "PVDZE_plr_GutBody";
+		PVCDZE_obj_GutBody =[_item,_qty];
+		publicVariable "PVCDZE_obj_GutBody";
 		
 		//achievement system
 		if (!achievement_Gut) then {

@@ -17,8 +17,8 @@ _wounded assignAsCargo _vcl;
 _wounded moveInCargo _vcl;
 sleep 1;
 //["PVDZ_drg_RaLW",_wounded] call broadcastRpcCallAll;
-	PVDZ_drg_RaLW = _wounded;
-	publicVariable "PVDZ_drg_RaLW";
+	norrnRaLW = _wounded;
+	publicVariable "norrnRaLW";
 
 if (local _wounded) then
 {

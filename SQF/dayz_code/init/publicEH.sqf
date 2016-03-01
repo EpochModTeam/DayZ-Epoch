@@ -14,12 +14,12 @@
 //"usecBreakLegs"				addPublicVariableEventHandler {(_this select 1) call player_breaklegs};
 
 //Both
-"PVCDZ_veh_SetFuel"			addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
+"PVCDZE_veh_SetFuel"			addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
 "PVDZE_veh_SFix"			addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
-"PVDZE_plr_HideBody"		addPublicVariableEventHandler {hideBody (_this select 1)};
+"PVCDZE_plr_HideBody"		addPublicVariableEventHandler {hideBody (_this select 1)};
 "PVDZE_obj_Hide"			addPublicVariableEventHandler {hideObject  (_this select 1)};
 "PVDZE_veh_Lock"			addPublicVariableEventHandler {(_this select 1) spawn local_lockUnlock};
-"PVCDZE_plr_GutBody"			addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
+"PVCDZE_obj_GutBody"			addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 "PVDZE_plr_GutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
 "PVDZE_plr_DelLocal"		addPublicVariableEventHandler {(_this select 1) call object_delLocal};
 "PVDZE_veh_Init"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
@@ -210,7 +210,7 @@ if (isServer) then {
 		};			
 	};
 
-	"PVDZ_serverStoreVar" addPublicVariableEventHandler {
+	"PVDZE_serverStoreVar" addPublicVariableEventHandler {
 		_obj = ((_this select 1) select 0);
 		_name = ((_this select 1) select 1);
 		_value = ((_this select 1) select 2);
