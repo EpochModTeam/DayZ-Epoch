@@ -835,4 +835,5 @@ if(!isDedicated) then {
 
 	DZE_SaveTime = 30;
 	Dayz_constructionContext = [];
+	autoRunActive = 0;
 };

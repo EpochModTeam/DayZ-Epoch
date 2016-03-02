@@ -41,6 +41,7 @@ player setVariable ["medForceUpdate",true,true];
 player setVariable ["startcombattimer", 0];
 r_player_unconscious = false;
 r_player_cardiac = false;
+autoRunActive = 0;
 
 _array = _this;
 if (count _array > 0) then {

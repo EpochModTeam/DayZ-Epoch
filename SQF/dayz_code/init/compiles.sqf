@@ -379,6 +379,12 @@ if (!isDedicated) then {
 		player setVariable ["DZE_Surrendered", false, true];
 		DZE_Surrender = false;
 	};
+	
+	autoRunOff = {
+		autoRunActive = 0;
+		terminate autoRunThread;
+		player playActionNow "Stop";
+	};
 
 	gear_ui_init = {
 		private["_control","_parent","_menu","_dspl","_grpPos"];

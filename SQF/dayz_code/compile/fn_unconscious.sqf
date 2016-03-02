@@ -19,6 +19,7 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 	0 fadeSound 0.05;
 	disableUserInput true;
 	_disableHdlr = [] spawn { uiSleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
+	autoRunActive = 0;
 	while {r_player_unconscious} do {
 		_ctrl1 ctrlSetPosition [(_ctrl1Pos select 0),(_ctrl1Pos select 1),(_ctrl1Pos select 2),((0.136829 * safezoneH) * (1 -(r_player_timeout / _totalTimeout)))];
 		_ctrl1 ctrlCommit 1;

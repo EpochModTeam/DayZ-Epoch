@@ -32,6 +32,21 @@ if (isNil "keyboard_keys") then {
 		 if (!_ctrlState && _altState) then {DZE_Z_alt = true;};
 		 if (_ctrlState && !_altState) then {DZE_Z_ctrl = true;};
 	};
+	_autoRun = {
+		if (autoRunActive == 0) then {
+			autoRunActive = 1;
+			autoRunThread = [] spawn {
+				while {autoRunActive == 1} do {
+					if ((player != vehicle player) or (surfaceIsWater (getPosASL player)) or r_fracture_legs) exitWith {call autoRunOff;};
+					player playAction "FastF";
+					uiSleep 0.5;
+				};
+			};
+		} else {
+			call autoRunOff;
+		};
+		_handled = true;
+	};
     _rifle = {
         ["rifle"] spawn player_switchWeapon;
         _handled = true;
@@ -162,6 +177,7 @@ if (isNil "keyboard_keys") then {
     _interrupt = {
         r_interrupt = true;
 		if (DZE_Surrender) then {call dze_surrender_off};
+		if (autoRunActive == 1) then {call autoRunOff;};
     };
     // TODO: left/right, when gear open: onKeyDown = "[_this,'onKeyDown',0,107,0,107] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
     _noise = {
@@ -272,6 +288,7 @@ if (isNil "keyboard_keys") then {
 	[[DIK_NEXT], _dze_z] call _addArray;
 	[[DIK_Q], {DZE_4 = true;}] call _addArray;
 	[[DIK_E], {DZE_6 = true;}] call _addArray;
+	[[DIK_0], _autoRun] call _addArray;
 	[[DIK_SPACE], {DZE_5 = true;}] call _addArray;
 	[actionKeys "User6", {DZE_F = true;}] call _addArray;
 	[actionKeys "User7", {DZE_Q_ctrl = true;}] call _addArray;
@@ -314,7 +331,7 @@ if (isNil "keyboard_keys") then {
     [actionKeys "ForceCommandingMode", {DZE_5 = true;_handled = true;}] call _addArray;
     [[  DIK_F9,DIK_F10,DIK_F11,DIK_F12,
         DIK_F8,DIK_F7,DIK_F6,DIK_F5,DIK_F4,
-        DIK_F3,DIK_F2,DIK_F1,DIK_0,DIK_9,
+        DIK_F3,DIK_F2,DIK_F1,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
 
     (findDisplay 46) displayRemoveAllEventHandlers "KeyUp";
