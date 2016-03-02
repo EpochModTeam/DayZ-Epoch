@@ -54,6 +54,7 @@
 [FIXED] Toilet paper dupe exploit when building outhouse @Markokil321 @ebaydayz #1599
 [FIXED] Safes and lockboxes wiped when opening after restart and locking not being logged to RPT @ebaydayz #1413 #1503
 [FIXED] Duplicate objectUIDs occasionally causing vehicles to swap classes or be deleted across restarts @ebaydayz #1504
+[FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
