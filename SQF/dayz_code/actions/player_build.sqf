@@ -117,6 +117,10 @@ _isLandFireDZ = (_classname == "Land_Fire_DZ");
 
 _distance = DZE_PlotPole select 0;
 _needText = localize "str_epoch_player_246";
+_canBuildOnPlot = false;
+_nearestPole = objNull;
+_ownerID = 0;
+_friendlies = [];
 
 if(_isPole) then {
 	_distance = DZE_PlotPole select 1;
@@ -134,7 +138,7 @@ _findNearestPole = [];
 
 _IsNearPlot = count (_findNearestPole);
 
-// If item is plot pole && another one exists within 45m
+// If item is plot pole and another one exists within 45m
 if(_isPole && _IsNearPlot > 0) exitWith {  DZE_ActionInProgress = false; cutText [(format [localize "str_epoch_player_44",_distance]), "PLAIN DOWN"]; };
 
 if(_IsNearPlot == 0) then {
@@ -179,7 +183,7 @@ if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; cutText [format[(
 
 _buildables = DZE_maintainClasses + DZE_LockableStorage;
 _buildables set [count _buildables,"TentStorage"];
-_center = if (isNil "_nearestPole") then {_pos} else {_nearestPole};
+_center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
 if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false;cutText [(format [localize "str_epoch_player_41",_distance]),"PLAIN DOWN"];};
 
 _missing = "";
@@ -197,9 +201,7 @@ if (_hasrequireditem) then {
 
 	_location = [0,0,0];
 	_isOk = true;
-
-	// get inital players position
-	_location1 = getPosATL player;
+	_location1 = [player] call FNC_GetPos; // get inital players position
 	_dir = getDir player;
 
 	// if ghost preview available use that instead
@@ -524,7 +526,7 @@ if (_hasrequireditem) then {
 					publicVariableServer "PVDZE_obj_Publish";
 
 					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5];
-                                        systemChat format [(localize "str_epoch_player_140"),_combinationDisplay,_text];
+                    systemChat format [(localize "str_epoch_player_140"),_combinationDisplay,_text];
 
 				} else {
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];

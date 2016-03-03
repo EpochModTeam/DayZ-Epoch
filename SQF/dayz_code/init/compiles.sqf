@@ -101,15 +101,6 @@ if (!isDedicated) then {
 	
 	if (DZE_modularBuild) then {
 		player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\modular_build.sqf";
-		player_build_countNearby =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_countNearby.sqf";
-		player_build_states =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_states.sqf";
-		player_build_needNearby =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_needNearby.sqf";
-		player_build_getConfig =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_getConfig.sqf";
-		player_build_plotCheck =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_plotCheck.sqf";
-		player_build_buildReq =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_buildReq.sqf";
-		player_build_create =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_create.sqf";
-		player_build_controls =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_controls.sqf";
-		player_build_publish =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_publish.sqf";
 		snap_build = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
 	} else {
 		player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";

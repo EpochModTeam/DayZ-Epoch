@@ -4,7 +4,6 @@
 [NEW] UI Update - Graphical and code changes, enable using Dayz_Dark_UI = true; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
 [NOTE] It's recommend to convert to the new SteamID system if possible, new servers should not use DayZ_UseSteamID = false;
 [NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
-[NEW] Modular/Function based player_build for addon makers and modders. @raymix (more info and concepts - http://epochmod.com/forum/index.php?/topic/14628-modular-function-based-player-buildsqf/ )
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
