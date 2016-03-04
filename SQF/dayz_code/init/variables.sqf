@@ -767,7 +767,6 @@ if(!isDedicated) then {
 	//	dayzDebug = true;
 	//};
 	dayz_onBack = "";
-	dayz_onBackActive = false;
 	DZE_ActionInProgress =		false;
 
 	// DayZ Epoch Client only variables

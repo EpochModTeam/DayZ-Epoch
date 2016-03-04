@@ -1796,6 +1796,14 @@
 			<French>Vous ne pouvez pas effectuer une autre transfusion sanguine si vite, attendez %1 secondes.</French>
 			<Czech>Nemůžete provádět další krevní transfuzi tak rychle, počkejte %1 sekund.</Czech>
 		</Key>
+		<Key ID="STR_ACTIONS_WEAPON">
+			<English>Weapon %1</English>
+			<Spanish>Arma: %1</Spanish>
+			<Russian>Оружие %1</Russian>
+			<Czech>Zbraň: %1</Czech>
+			<French>Arme: %1</French>
+			<German>Zu %1 wechseln</German>
+		</Key>
 		<Key ID="str_action_studybody">
 			<Original>Study Body</Original>
 			<English>Study Body</English>

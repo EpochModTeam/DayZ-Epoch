@@ -44,15 +44,15 @@ if (isNil "keyboard_keys") then {
 		_handled = true;
 	};
     _rifle = {
-        ["rifle"] spawn player_switchWeapon;
+		2 call dz_fn_switchWeapon;
         _handled = true;
     };
     _pistol = {
-        ["pistol"] spawn player_switchWeapon;
+		3 call dz_fn_switchWeapon;
         _handled = true;
     };
     _melee = {
-        ["melee"] spawn player_switchWeapon;
+		4 call dz_fn_switchWeapon;
         _handled = true;
     };
     _throwable = { // select next non empty throwable weapon
@@ -74,7 +74,7 @@ if (isNil "keyboard_keys") then {
                         };                      
                     } forEach getArray(configFile >> "cfgWeapons" >> _weapon >> _muzz >> "magazines");
                 } forEach _muzzles;
-            } forEach [ "Flare", "Throw" ];
+            } forEach [ "Throw"];
 
             _magCount = count _ammo_throwable;
             if (_magCount > 0) then {
