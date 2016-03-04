@@ -611,18 +611,6 @@ dayz_canDelete = 350; // Z, further than this distance from its "owner", will be
 dayz_traps = [];
 dayz_traps_active = [];
 dayz_traps_trigger = [];
-//Remove
-if(isNil "dayz_ForcefullmoonNights") then {
-    dayz_ForcefullmoonNights = false; //force full moon nights.
-};
-if(isNil "dayz_bleedingeffect") then { 
-	dayz_bleedingeffect = 3;
-};//dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-
-<<<<<<< HEAD
-if(isNil "dayz_temperature_override") then { 
-	dayz_temperature_override = false;
-};
 
 //Settings Not under dayz_settings
 if(isNil "dayz_attackRange") then { 
@@ -631,17 +619,6 @@ if(isNil "dayz_attackRange") then {
 };
 if(isNil "dayz_DamageMultiplier") then { 
 	dayz_DamageMultiplier = 1;
-
-=======
-if(isNil "dayz_ForcefullmoonNights") then {
-    dayz_ForcefullmoonNights = false; //force full moon nights.
-};
-if(isNil "dayz_temperature_override") then { 
-	dayz_temperature_override = false;
-};
-if(isNil "dayz_spawnselection") then { 
-	dayz_spawnselection = 0; 
->>>>>>> upstream/master
 };
 if(isNil "dayz_quickSwitch") then {
 	dayz_quickSwitch = false; //Enable quick weapon switch,
@@ -1085,11 +1062,8 @@ if(!isDedicated) then {
 	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {
 	//	dayzDebug = true;
 	//};
-<<<<<<< HEAD
 	dayz_dodge = false;
-=======
-	dayz_onBack = "";
->>>>>>> upstream/master
+	
 	DZE_ActionInProgress =		false;
 
 	// DayZ Epoch Client only variables
@@ -1160,9 +1134,6 @@ if(!isDedicated) then {
 
 	DZE_SaveTime = 30;
 	Dayz_constructionContext = [];
-<<<<<<< HEAD
 	Dayz_freefall = [ time, 0, 0.1 ];
-=======
 	autoRunActive = 0;
->>>>>>> upstream/master
 };

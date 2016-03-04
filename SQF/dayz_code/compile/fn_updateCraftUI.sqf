@@ -3,6 +3,8 @@
 	Please request permission to use/alter from ziellos2k.
 
 	Edited by Alby with permission from ziellos2k.
+	
+	Included in Epoch with permission by @ebaydayz
 */
 disableSerialization;
 

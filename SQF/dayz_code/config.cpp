@@ -116,8 +116,6 @@ class CfgAddons
 #include "Configs\RscDisplay\safegui.hpp"
 #include "Configs\RscDisplay\dialog.hpp"
 #include "Configs\RscDisplay\deathboards.hpp"
-<<<<<<< HEAD
-=======
 
 #include "Configs\CfgVehicles.hpp"
 #include "Configs\CfgWeapons.hpp"
@@ -131,6 +129,6 @@ class CfgAddons
 #include "Configs\CfgAmmo.hpp"
 #include "Configs\CfgLoot\CfgBuildingLoot.hpp"
 #include "Configs\CfgArma.hpp"
->>>>>>> upstream/master
+
 #include "Configs\CfgExtra\snappoints.hpp"
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
