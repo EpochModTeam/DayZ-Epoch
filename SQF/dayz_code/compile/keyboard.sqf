@@ -15,10 +15,6 @@ if (isNil "keyboard_keys") then {
 		_handled = false;
 		if (r_player_dead) then {_handled = true;}; // Disable ESC after death
     };
-	_playerStats = {
-		DZE_Q_alt = true;
-		execVM "\z\addons\dayz_code\actions\playerstats.sqf";
-    };
 	_dze_f = {
 		 if (!_ctrlState && !_altState) then {DZE_F = true;};
 	};
@@ -187,12 +183,10 @@ if (isNil "keyboard_keys") then {
         };
     };
     _journal = {
-		/*
         if (!dayz_isSwimming and !dialog) then {
             [player,4,true,(getPosATL player)] call player_alertZombies;
             createDialog "horde_journal_front_cover";
         };
-		*/
         _handled = true;
     };
 
@@ -282,7 +276,7 @@ if (isNil "keyboard_keys") then {
     keyboard_keys = [];
     keyboard_keys resize 256;
     [[DIK_ESCAPE], _cancelBuild] call _addArray;
-	[[DIK_INSERT], _playerStats] call _addArray;
+	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
 	[[DIK_F], _dze_f] call _addArray;
 	[[DIK_PRIOR], _dze_q] call _addArray;
 	[[DIK_NEXT], _dze_z] call _addArray;
@@ -293,7 +287,7 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "User6", {DZE_F = true;}] call _addArray;
 	[actionKeys "User7", {DZE_Q_ctrl = true;}] call _addArray;
 	[actionKeys "User8", {DZE_Z_ctrl = true;}] call _addArray;
-	[actionKeys "User13", _playerStats] call _addArray;
+	[actionKeys "User13", {DZE_Q_alt = true;}] call _addArray;
 	[actionKeys "User14", {DZE_Z_alt = true;}] call _addArray;
 	[actionKeys "User15", {DZE_Q = true;}] call _addArray;
 	[actionKeys "User16", {DZE_Z = true;}] call _addArray;

@@ -458,6 +458,15 @@ dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any 
 dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 
+if(isNil "dayz_ForcefullmoonNights") then {
+    dayz_ForcefullmoonNights = false; //force full moon nights.
+};
+if(isNil "dayz_temperature_override") then { 
+	dayz_temperature_override = false;
+};
+if(isNil "dayz_spawnselection") then { 
+	dayz_spawnselection = 0; 
+};
 if(isNil "dayz_quickSwitch") then {
 	dayz_quickSwitch = false; //Enable quick weapon switch,
 };
@@ -629,9 +638,6 @@ if(isServer) then {
 	DZE_DYN_AntiStuck2nd = 0;
 	DZE_DYN_AntiStuck3rd = 0;
 
-	if(isNil "dayz_fullMoonNights") then {
-		dayz_fullMoonNights = false;
-	};
 	if(isNil "EpochEvents") then {
 		EpochEvents = [];
 	};

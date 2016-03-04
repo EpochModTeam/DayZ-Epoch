@@ -47,7 +47,7 @@ class horde_journal_pages_humanity_art
 	class left_page_middle: horde_RscPicture
 	{
 		idc = 1201;
-		text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_middle_1.paa";
+		//text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_middle_1.paa";
 		x = 0.209053 * safezoneW + safezoneX;
 		y = 0.27261 * safezoneH + safezoneY;
 		w = 0.282496 * safezoneW;
@@ -56,7 +56,7 @@ class horde_journal_pages_humanity_art
 	class left_page_bottom: horde_RscPicture
 	{
 		idc = 1202;
-		text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_bottom_1.paa";
+		//text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_bottom_1.paa";
 		x = 0.203156 * safezoneW + safezoneX;
 		y = 0.468726 * safezoneH + safezoneY;
 		w = 0.291609 * safezoneW;
@@ -65,7 +65,7 @@ class horde_journal_pages_humanity_art
 	class left_page_top: horde_RscPicture
 	{
 		idc = 1203;
-		text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_top_1.paa";
+		//text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_top_1.paa";
 		x = 0.209111 * safezoneW + safezoneX;
 		y = 0.0901794 * safezoneH + safezoneY;
 		w = 0.291609 * safezoneW;
@@ -77,7 +77,7 @@ class horde_journal_pages_humanity_art
 	class right_page_picture: horde_RscPicture
 	{
 		idc = 1204;
-		text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_3.paa";
+		//text = "\z\addons\dayz_communityassets\pictures\playerstats\humanity\humanity_bandit_3.paa";
 		x = 0.43621 * safezoneW + safezoneX;
 		y = 0.167545 * safezoneH + safezoneY;
 		w = 0.419188 * safezoneW;

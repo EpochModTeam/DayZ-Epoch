@@ -139,6 +139,7 @@ class CfgAddons
 
 #include "Configs\CfgVehicles.hpp"
 #include "Configs\CfgWeapons.hpp"
+#include "Configs\CfgCrafting\CfgCrafting.hpp"
 #include "Configs\CfgVoice.hpp"
 #include "Configs\CfgIdentities.hpp"
 #include "Configs\CfgFaces.hpp"
