@@ -7,9 +7,14 @@ if (isServer) then {
 if (!isDedicated) then {
 
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
+<<<<<<< HEAD
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_padlock.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
+=======
+	
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
+>>>>>>> upstream/master
 
 	fn_dropItem = 					compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf"; //fnc to drop items. _item call fn_dropItem;
 	BIS_Effects_Burn = 				compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf";
@@ -133,15 +138,6 @@ if (!isDedicated) then {
 
 	if (DZE_modularBuild) then {
 		player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\modular_build.sqf";
-		player_build_countNearby =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_countNearby.sqf";
-		player_build_states =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_states.sqf";
-		player_build_needNearby =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_needNearby.sqf";
-		player_build_getConfig =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_getConfig.sqf";
-		player_build_plotCheck =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_plotCheck.sqf";
-		player_build_buildReq =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_buildReq.sqf";
-		player_build_create =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_create.sqf";
-		player_build_controls =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_controls.sqf";
-		player_build_publish =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build_publish.sqf";
 		snap_build = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
 	} else {
 		player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
@@ -153,7 +149,10 @@ if (!isDedicated) then {
 
 	player_wearClothes =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
+<<<<<<< HEAD
 	//player_switchWeapon =       compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_switchWeapon.sqf";
+=======
+>>>>>>> upstream/master
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_switchWeapon.sqf";
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
@@ -182,7 +181,11 @@ if (!isDedicated) then {
 	horde_epeen_setText_humanity_fnc = compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_humanity.sqf";
 	horde_epeen_setText_stats_fnc = compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_stats.sqf";
 	horde_epeen_show_humanity_fnc = compile preProcessFile "\z\addons\dayz_code\actions\playerstats\show_humanity_fnc.sqf";
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> upstream/master
 	//System
 	player_monitor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_monitor.sqf";
 	player_spawn_1 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_1.sqf";
@@ -202,6 +205,11 @@ if (!isDedicated) then {
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"if (!isNil 'init_keyboard') then { [] spawn init_keyboard; }; dayz_preloadFinished = true;";
 
+	//Crafting
+	fn_updateCraftUI = {}; //need permission - compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_updateCraftUI.sqf";
+	player_craftItemGUI = {}; //need permission - compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItemGUI.sqf";
+	player_checkRecipe = {}; //need permission - compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_checkRecipe.sqf";
+	
 	// helper functions
 	player_addDuplicateTool =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_addDuplicateTool.sqf";
 	player_hasTools =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_hasTools.sqf";
@@ -518,6 +526,12 @@ if (!isDedicated) then {
 	dze_surrender_off = {
 		player setVariable ["DZE_Surrendered", false, true];
 		DZE_Surrender = false;
+	};
+	
+	autoRunOff = {
+		autoRunActive = 0;
+		terminate autoRunThread;
+		player playActionNow "Stop";
 	};
 
 	gear_ui_init = {

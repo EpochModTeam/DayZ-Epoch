@@ -38,6 +38,27 @@ if (_canPickLight && !dayz_hasLight && !_isPZombie) then {
 	s_player_removeflare = -1;
 };
 
+if (s_player_equip_carry < 0) then
+{
+	if (dayz_onBack != "" && { !_inVehicle && { !_onLadder && { !r_player_unconscious } } }) then
+	{
+		dz_plr_carryActionItem = dayz_onBack;
+		_text = getText (configFile >> "CfgWeapons" >> dz_plr_carryActionItem >> "displayName");
+		s_player_equip_carry = player addAction [
+			format [localize "STR_ACTIONS_WEAPON", _text],
+			"\z\addons\dayz_code\actions\player_switchWeapon_action.sqf",
+			nil, 0.5, false, true];
+	};
+}
+else
+{
+	if (dayz_onBack != dz_plr_carryActionItem || { _inVehicle || { _onLadder || { r_player_unconscious } } } ) then
+	{
+		player removeAction s_player_equip_carry;
+		s_player_equip_carry = -1;
+	};
+};
+
 if (_inVehicle && {_vehicleOwnerID != "0"} && {!(_vehicle isKindOf "Bicycle")}) then {
 	if (s_player_lockUnlockInside_ctrl < 0) then {
 		DZE_myVehicle = _vehicle;

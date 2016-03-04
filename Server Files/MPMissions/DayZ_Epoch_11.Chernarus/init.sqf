@@ -162,13 +162,16 @@ initialized = false;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";		//Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.05;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\publicEH.sqf";			//Initilize the publicVariable event handlers
-progressLoadingScreen 0.1;
+progressLoadingScreen 0.08;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functions_med.sqf";	//Functions used by CLIENT for medical
-progressLoadingScreen 0.15;
+progressLoadingScreen 0.11;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";			//Compile regular functions
-progressLoadingScreen 0.2;
+progressLoadingScreen 0.14;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\init.sqf";
+progressLoadingScreen 0.17;
 call compile preprocessFileLineNumbers "server_traders.sqf";					//Compile trader configs
+progressLoadingScreen 0.21;
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus11.sqf"; //Add trader city objects locally on each machine early
 progressLoadingScreen 0.25;
 initialized = true;
 
@@ -177,10 +180,9 @@ if (dayz_REsec == 1) then { call compile preprocessFileLineNumbers "\z\addons\da
 
 if (isServer) then {
 	//Compile Vehicle Configs
-	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\dynamic_vehicle.sqf";
-
-	//Add Trader Citys
-	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
+	//Add trader agents
+	execVM "\z\addons\dayz_server\traders\chernarus11.sqf";
 	execVM "\z\addons\dayz_server\system\server_monitor.sqf";
 };
 

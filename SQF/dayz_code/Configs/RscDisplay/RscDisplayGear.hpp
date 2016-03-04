@@ -825,7 +825,7 @@ class RscDisplayGear {
 					h = 0.174;
 					color[] = {1,1,1,0.5};
 					colorActive[] = {1,1,1,0.8};
-					action = "[""gear""] call player_switchWeapon";
+					action = "0 call dz_fn_switchWeapon";
 				};
 
 				class Button2: RscActiveText {
@@ -840,7 +840,7 @@ class RscDisplayGear {
 					h = 0.174;
 					color[] = {1,1,1,0.5};
 					colorActive[] = {1,1,1,0.8};
-					action = "[""gear""] call player_switchWeapon";
+					action = "0 call dz_fn_switchWeapon";
 				};
 			};
 		};

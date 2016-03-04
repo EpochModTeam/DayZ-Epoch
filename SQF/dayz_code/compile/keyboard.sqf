@@ -27,10 +27,6 @@ if (isNil "keyboard_keys") then {
 		_handled = false;
 		if (r_player_dead) then {_handled = true;}; // Disable ESC after death
     };
-	_playerStats = {
-		DZE_Q_alt = true;
-		execVM "\z\addons\dayz_code\actions\playerstats.sqf";
-    };
 	_dze_f = {
 		 if (!_ctrlState && !_altState) then {DZE_F = true;};
 	};
@@ -43,6 +39,21 @@ if (isNil "keyboard_keys") then {
 		 if (!_ctrlState && !_altState) then {DZE_Z = true;};
 		 if (!_ctrlState && _altState) then {DZE_Z_alt = true;};
 		 if (_ctrlState && !_altState) then {DZE_Z_ctrl = true;};
+	};
+	_autoRun = {
+		if (autoRunActive == 0) then {
+			autoRunActive = 1;
+			autoRunThread = [] spawn {
+				while {autoRunActive == 1} do {
+					if ((player != vehicle player) or (surfaceIsWater (getPosASL player)) or r_fracture_legs) exitWith {call autoRunOff;};
+					player playAction "FastF";
+					uiSleep 0.5;
+				};
+			};
+		} else {
+			call autoRunOff;
+		};
+		_handled = true;
 	};
     _rifle = {
 		2 call dz_fn_switchWeapon;
@@ -75,7 +86,7 @@ if (isNil "keyboard_keys") then {
                         };                      
                     } forEach getArray(configFile >> "cfgWeapons" >> _weapon >> _muzz >> "magazines");
                 } forEach _muzzles;
-            } forEach [ "Flare", "Throw" ];
+            } forEach [ "Throw"];
 
             _magCount = count _ammo_throwable;
             if (_magCount > 0) then {
@@ -174,6 +185,7 @@ if (isNil "keyboard_keys") then {
     _interrupt = {
         r_interrupt = true;
 		if (DZE_Surrender) then {call dze_surrender_off};
+		if (autoRunActive == 1) then {call autoRunOff;};
     };
     // TODO: left/right, when gear open: onKeyDown = "[_this,'onKeyDown',0,107,0,107] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
     _noise = {
@@ -275,17 +287,18 @@ if (isNil "keyboard_keys") then {
     keyboard_keys = [];
     keyboard_keys resize 256;
     [[DIK_ESCAPE], _cancelBuild] call _addArray;
-	[[DIK_INSERT], _playerStats] call _addArray;
+	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
 	[[DIK_F], _dze_f] call _addArray;
 	[[DIK_PRIOR], _dze_q] call _addArray;
 	[[DIK_NEXT], _dze_z] call _addArray;
 	[[DIK_Q], {DZE_4 = true;}] call _addArray;
 	[[DIK_E], {DZE_6 = true;}] call _addArray;
+	[[DIK_0], _autoRun] call _addArray;
 	[[DIK_SPACE], {DZE_5 = true;}] call _addArray;
 	[actionKeys "User6", {DZE_F = true;}] call _addArray;
 	[actionKeys "User7", {DZE_Q_ctrl = true;}] call _addArray;
 	[actionKeys "User8", {DZE_Z_ctrl = true;}] call _addArray;
-	[actionKeys "User13", _playerStats] call _addArray;
+	[actionKeys "User13", {DZE_Q_alt = true;}] call _addArray;
 	[actionKeys "User14", {DZE_Z_alt = true;}] call _addArray;
 	[actionKeys "User15", {DZE_Q = true;}] call _addArray;
 	[actionKeys "User16", {DZE_Z = true;}] call _addArray;
@@ -324,7 +337,7 @@ if (isNil "keyboard_keys") then {
     [actionKeys "ForceCommandingMode", {DZE_5 = true;_handled = true;}] call _addArray;
     [[  DIK_F9, DIK_F10, DIK_F11, 
         DIK_F8,DIK_F7,DIK_F6,DIK_F5,DIK_F4,
-        DIK_F3,DIK_F2,DIK_F1,DIK_0,DIK_9,
+        DIK_F3,DIK_F2,DIK_F1,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
     if (serverCommandAvailable "#kick") then {
         [[DIK_F12], gcam_onoff] call _addArray; // GCAM: F12 to start (for admins only)

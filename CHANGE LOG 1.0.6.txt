@@ -4,16 +4,17 @@
 [NEW] UI Update - Graphical and code changes, enable using Dayz_Dark_UI = true; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
 [NOTE] It's recommend to convert to the new SteamID system if possible, new servers should not use DayZ_UseSteamID = false;
 [NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
-[NEW] Modular/Function based player_build for addon makers and modders. @raymix (more info and concepts - http://epochmod.com/forum/index.php?/topic/14628-modular-function-based-player-buildsqf/ )
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
 [NEW] Optional news/rules feed on player login from DayZ Mod, set dayz_enableRules in init.sqf #1673 @ebaydayz
+[NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
 [NEW] Weapon switch hotkeys (1 = primary, 2 = pistol, 3 = melee) from DayZ Mod #1673 @ebaydayz
 [NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
 [NEW] Optional variable to restrict wearable clothes. Add DZE_RestrictSkins to init.sqf #1560 @BetterDeadThanZed @ebaydayz
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Add DZE_BackpackAntiTheft to init.sqf @ebaydayz
-[NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz 
+[NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
+[NEW] Journal from official DayZ Mod is now functional for displaying stats @ebaydayz
 
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
@@ -21,6 +22,7 @@
 [CHANGED] Tweaked rotate_logs.bat to incorporate the day of the week for better organization @Raziel23x 
 [CHANGED] All instances of sleep replaced with the more reliable uiSleep @icomrade
 [CHANGED] Several getPosATL changed to call FNC_GetPos for water compatibility @icomrade
+[CHANGED] Trader city objects are now spawned locally on each machine with simulation disabled for better performance. Admins can still override with custom cities in init.sqf. @ebaydayz
 
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
@@ -52,6 +54,7 @@
 [FIXED] Toilet paper dupe exploit when building outhouse @Markokil321 @ebaydayz #1599
 [FIXED] Safes and lockboxes wiped when opening after restart and locking not being logged to RPT @ebaydayz #1413 #1503
 [FIXED] Duplicate objectUIDs occasionally causing vehicles to swap classes or be deleted across restarts @ebaydayz #1504
+[FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

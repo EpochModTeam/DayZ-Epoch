@@ -50,7 +50,11 @@ player setVariable ["bloodTaken", false, true];
 player setVariable ["startcombattimer", 0];
 r_player_unconscious = false;
 r_player_cardiac = false;
+<<<<<<< HEAD
 _model = typeOf player;
+=======
+autoRunActive = 0;
+>>>>>>> upstream/master
 
 _array = _this;
 if (count _array > 0) then {
