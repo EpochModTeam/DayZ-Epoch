@@ -3998,56 +3998,6 @@
 			<French>Cette canne à pêche en fibre de carbone a beau être vieille, elle fonctionne encore à merveille!</French>
 			<Czech>Tento rybářský prut je již celkem starý, ale funguje tak, jak za mlada.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_CROWBAR">
-			<Original>Crowbar</Original>
-			<English>Crowbar</English>
-			<German>Brechstange</German>
-			<Russian>Ломик</Russian>
-			<Spanish>Palanca</Spanish>
-			<Dutch>Breekijzer</Dutch>
-			<French>Pied-de-biche</French>
-			<Czech>Páčidlo</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_CROWBAR_DESC">
-			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
-			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
-			<German>Ein einfaches Werkzeug zum Aufbrechen, Heben und Bewegen.</German>
-			<Russian>Инструмент, состоящий из металлического стержня с одним изогнутым концом, часто с небольшой трещиной на одном или обоих концах для удаления гвоздей.</Russian>
-			<Spanish>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Spanish>
-			<Dutch>Een stevig breekijzer voor breek en sloopwerkzaamheden.</Dutch>
-			<French>Un outil constitué d'une barre de métal dont l'une des extrémité est recourbée servant de point d'appui, légèrement aplatie et fendue, permettant ainsi d'arracher des clous.</French>
-			<Czech>Nástroj, který se skládá z kovové tyče s jedním zahnutým koncem a se zploštelými body, často tvořené malými štěrbinami na jednom nebo obou koncích, používané k odstranění hřebíků.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_ETOOL">
-			<Original>Etool</Original>
-			<English>Etool</English>
-			<German>Feldspaten</German>
-			<Russian>Сапёрная лопатка</Russian>
-			<Spanish>Pala Afianzar</Spanish>
-			<Dutch>Opklapbare schep/spade.</Dutch>
-			<French>Pelle Pliable</French>
-			<Czech>Polní lopatka</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_MACHETE">
-			<Original>Machete</Original>
-			<English>Machete</English>
-			<German>Machete</German>
-			<Russian>Мачете</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Kapmes</Dutch>
-			<French>Machette</French>
-			<Czech>Mačeta</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_MACHETE_DESC">
-			<Original>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</Original>
-			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
-			<!-- <German></German> -->
-			<Russian>Сельскохозяйственный инструмент превратился в оружие, мачете менее универсален, чем обычный топор, но обладает мощностью удара.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Zemědělské náčiní, které bylo přetvořeno na zbraň. Mačeta není tak univerzální, jako běžná sekera, ale bořád dost bolí.</Czech>
-		</Key>
 		<Key ID="STR_EQUIP_NAME_BASEBALLBAT">
 			<English>Baseball Bat</English>
 			<Russian>Бейсбольная бита</Russian>
@@ -7222,56 +7172,6 @@
 			<!-- <French></French> -->
 			<Czech>Vytvořit Stojan na zbraně</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_278">
-			<Original>Gear</Original>
-			<English>Gear</English>
-			<!-- <German></German> -->
-			<Russian>Инвентарь</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Výbava</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_279">
-			<Original>Filter</Original>
-			<English>Filter</English>
-			<German>Filter</German>
-			<Russian>Фильтр</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Filtr</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_280">
-			<Original>Rearm</Original>
-			<English>Rearm</English>
-			<German>Aufrüsten</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Přezbrojit</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_281">
-			<Original>Open bag</Original>
-			<English>Open bag</English>
-			<German>Rucksack öffnen</German>
-			<Russian>Открыть рюкзак</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Otevřít batoh</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_282">
-			<Original>Close bag</Original>
-			<English>Close bag</English>
-			<German>Rucksack schließen</German>
-			<Russian>Закрыть рюкзак</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Zavřít batoh</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_283">
 			<Original>Close</Original>
 			<English>Close</English>
@@ -7281,46 +7181,6 @@
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
 			<Czech>Zavřít</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_284">
-			<Original>All</Original>
-			<English>All</English>
-			<German>Alle</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Vše</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_285">
-			<Original>Primary</Original>
-			<English>Primary</English>
-			<German>Primär</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Primární</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_286">
-			<Original>Secondary</Original>
-			<English>Secondary</English>
-			<German>Sekundär</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Sekundární</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_287">
-			<Original>HandGun</Original>
-			<English>HandGun</English>
-			<German>Handfeuerwaffe</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Příruční zbraň</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_288">
 			<Original>Items</Original>
