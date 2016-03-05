@@ -20,7 +20,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"dayz"};
+		requiredAddons[] = {"dayz_anim"};
 		dayzVersion = 1.8;
 	};
 };
@@ -29,7 +29,7 @@ class CfgVehicles {
 	class Sound;
 	class Sound_Generator1: Sound
 	{
-		scope = 2;
+		scope = public;
 		sound = "Generator1";
 		displayName = "Generator";
 	};

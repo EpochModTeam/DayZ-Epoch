@@ -76,10 +76,6 @@
 
 #define TRACER_N_ALWAYS tracerColor[]=TracerNColorF;tracerColorR[]=TracerNColorF
 
-#define LockNo		0
-#define LockCadet	1
-#define LockYes		2
-
 enum
 {
   DestructNo,
