@@ -107,28 +107,9 @@ class CfgAddons
 #include "Configs\CfgRecoils.hpp"
 #include "gui\padlock\padlock_ui.hpp"
 
-//Duplicates that need to be checked against first block
-//#include "Configs\CfgMagazines.hpp"
-//#include "Configs\CfgAmmo.hpp"
-//#include "Configs\CfgLoot\CfgBuildingLoot.hpp"
-
 //Epoch Additions
 #include "Configs\RscDisplay\safegui.hpp"
 #include "Configs\RscDisplay\dialog.hpp"
 #include "Configs\RscDisplay\deathboards.hpp"
-
-#include "Configs\CfgVehicles.hpp"
-#include "Configs\CfgWeapons.hpp"
-#include "Configs\CfgCrafting\CfgCrafting.hpp"
-#include "Configs\CfgVoice.hpp"
-#include "Configs\CfgIdentities.hpp"
-#include "Configs\CfgFaces.hpp"
-#include "Configs\CfgGlasses.hpp"
-#include "Configs\CfgMagazines.hpp"
-#include "Configs\CfgMarkers.hpp"
-#include "Configs\CfgAmmo.hpp"
-#include "Configs\CfgLoot\CfgBuildingLoot.hpp"
-#include "Configs\CfgArma.hpp"
-
 #include "Configs\CfgExtra\snappoints.hpp"
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
