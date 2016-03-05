@@ -4096,16 +4096,6 @@
 			<French>Objet destiné à un fameux sport US, ce club de bois est bardé de barbelés</French>
 			<German>Dieser Baseballschläger wurde mit Stacheldraht umwickelt. Baseball lässt sich damit nicht mehr spielen.</German>
 		</Key>
-		<Key ID="STR_EQUIP_CROSSBOW">
-			<Original>Crossbow</Original>
-			<English>Crossbow</English>
-			<German>Armbrust</German>
-			<Russian>Арбалет</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Kruisboog</Dutch>
-			<French>Arbalète</French>
-			<Czech>Kuše</Czech>
-		</Key>
 		<Key ID="STR_ITEM_NAME_CAMONET">
 			<English>CamoNet</English>
 			<Russian>Камуфляжная сеть</Russian>
