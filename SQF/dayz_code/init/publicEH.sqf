@@ -14,9 +14,6 @@
 //"usecBreakLegs"				addPublicVariableEventHandler {(_this select 1) call player_breaklegs};
 "PVDZ_hlt_Bleed"		addPublicVariableEventHandler {(_this select 1) spawn fnc_usec_damageBleed};
 "PVDZ_veh_SF"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleRepair}; // repair a part from a vehicle
-"PVCDZ_obj_HideBody"	addPublicVariableEventHandler {hideBody (_this select 1)};
-"PVCDZ_obj_GutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
-"PVCDZ_veh_SetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
 
 //Both
 "PVCDZE_veh_SetFuel"			addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
