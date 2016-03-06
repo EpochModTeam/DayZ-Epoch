@@ -458,9 +458,9 @@ class CfgVehicles {
 	#include "Car\UAZ_MG.hpp"
 	#include "Car\Volha.hpp"
 	#include "Car\VWGolf.hpp"
-	//#include "Car\CAR_HATCHBACK.hpp" //contained in CAR_SEDAN
 	#include "Car\UAZ.hpp"
-	#include "Car\CAR_SEDAN.hpp"
+	#include "Car\CAR_SEDAN.hpp" //SEDAN/Skoda must be first, hatchback is based on it
+	#include "Car\CAR_HATCHBACK.hpp"
 	#include "Car\V3S_Civ.hpp"
 	#include "Car\SUV.hpp"
 	#include "Car\Pickup_PK_INS.hpp"
