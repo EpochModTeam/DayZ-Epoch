@@ -22,7 +22,7 @@
 	model = "\ca\Wheeled\car_hatchback";
 	picture = "\Ca\wheeled\data\ico\car_hatchback_CA.paa";
 	rarityurban = 0.6;
-	scope = 2;
+	scope = public;
 	soundarmorcrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
 	soundbuildingcrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
 	soundengineoffext[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-stop-1", 0.398107, 1, 250};

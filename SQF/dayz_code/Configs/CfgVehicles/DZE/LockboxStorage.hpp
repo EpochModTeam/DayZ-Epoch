@@ -27,7 +27,7 @@ class LockboxStorage: Land_A_tent {
 };
 
 class WeaponHolder_ItemLockbox: WeaponHolder {
-	scope = 2;
+	scope = public;
 	displayName = "Lockbox";
 	seedItem = "ItemLockbox";
 };

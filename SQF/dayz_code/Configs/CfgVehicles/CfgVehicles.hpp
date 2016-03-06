@@ -573,7 +573,7 @@ class CfgVehicles {
 
 	//class WeaponHolder;
 	class Plant_Base: WeaponHolder {
-		scope = 2;
+		scope = public;
 		icon = "";
 		mapSize = 0;
 		transportMaxWeapons = 0;
@@ -595,7 +595,7 @@ class CfgVehicles {
 	};
 	class Generator_DZ: Generator_Base
 	{
-		scope = 2;
+		scope = public;
 		destrType = "DestructNo";
 		cost = 100;
 		offset[] = {0,1.5,0};

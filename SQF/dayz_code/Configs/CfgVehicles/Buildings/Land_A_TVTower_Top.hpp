@@ -1,6 +1,6 @@
 class Land_A_TVTower_Top: House
 	{
-		scope = 1;
+		scope = protected;
 		destrType = "DestructNo";
 		model = "\ca\Structures\A_TVTower\A_TVTower_Top";
 		featureSize = 150;

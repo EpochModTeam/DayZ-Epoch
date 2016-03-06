@@ -81,7 +81,7 @@ class UAZ_Unarmed_Base : UAZ_Base {
  };
 
 class UAZ_CDF: UAZ_Unarmed_Base {
-	scope = 2;
+	scope = public;
 	side = 1;
 	faction = "CDF";
 	accuracy = 0.3;
@@ -94,7 +94,7 @@ class UAZ_CDF: UAZ_Unarmed_Base {
 	};
 };
 class UAZ_INS: UAZ_Unarmed_Base {
-	scope = 2;
+	scope = public;
 	side = 0;
 	faction = "INS";
 	accuracy = 0.3;
@@ -107,7 +107,7 @@ class UAZ_INS: UAZ_Unarmed_Base {
 	};
 };
 class UAZ_RU: UAZ_Unarmed_Base {
-	scope = 2;
+	scope = public;
 	side = 0;
 	faction = "RU";
 	crew = "";
@@ -120,7 +120,7 @@ class UAZ_RU: UAZ_Unarmed_Base {
 };
 class UAZ_Unarmed_TK_EP1: UAZ_Unarmed_Base {
 	expansion = 1;
-	scope = 2;
+	scope = public;
 	side = 0;
 	faction = "BIS_TK";
 	accuracy = 0.3;
@@ -136,7 +136,7 @@ class UAZ_Unarmed_TK_EP1: UAZ_Unarmed_Base {
 };
 class UAZ_Unarmed_UN_EP1: UAZ_Unarmed_Base {
 	expansion = 1;
-	scope = 2;
+	scope = public;
 	side = 2;
 	accuracy = 0.3;
 	faction = "BIS_UN";
@@ -152,7 +152,7 @@ class UAZ_Unarmed_UN_EP1: UAZ_Unarmed_Base {
 };
 class UAZ_Unarmed_TK_CIV_EP1: UAZ_Unarmed_Base {
 	expansion = 1;
-	scope = 2;
+	scope = public;
 	side = 3;
 	accuracy = 0.3;
 	faction = "BIS_TK_CIV";

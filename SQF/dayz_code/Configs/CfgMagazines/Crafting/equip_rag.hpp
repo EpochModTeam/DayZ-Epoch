@@ -1,5 +1,5 @@
 class equip_rag : CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_rag;
 	descriptionShort = $STR_ITEM_DESC_equip_rag;

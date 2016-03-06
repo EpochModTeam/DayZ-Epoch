@@ -1,7 +1,7 @@
 // IN DZE/MISC.HPP
 class ItemSandbag : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	

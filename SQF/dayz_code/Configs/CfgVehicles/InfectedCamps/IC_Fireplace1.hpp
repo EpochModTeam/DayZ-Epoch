@@ -1,5 +1,5 @@
 class IC_Fireplace1: House {
-	scope = 2;
+	scope = public;
 	displayname = "Campfire";
 	model = "\Ca\misc3\Campfire";
 };
@@ -11,7 +11,7 @@ class IC_Tent: House {
 	icon = "\Ca\misc3\data\Icons\icon_Atent_ca.paa";
 	mapsize = 3;
 	model = "\CA\Misc3\A_tent";
-	scope = 2;
+	scope = public;
 	
 	vehicleClass = "Survival";
 	pack = "WeaponHolder_ItemTent";

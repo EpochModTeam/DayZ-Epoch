@@ -6,7 +6,7 @@ class Volha_TK_CIV_Base_EP1: Car {
 	mfMax = 100;
 	mFact = 0;
 	tBody = 0;
-	scope = 0;
+	scope = private;
 	expansion = 1;
 	model = "\ca\wheeled_E\Volha\Volha";
 	side = 3;
@@ -221,7 +221,7 @@ class Volha_TK_CIV_Base_EP1: Car {
 	};
 };
 class Volha_1_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
-	scope = 2;
+	scope = public;
 	accuracy = 1000;
 	displayname = "GAZ (blue)";
 
@@ -230,7 +230,7 @@ class Volha_1_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 	};
 };
 class Volha_2_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
-	scope = 2;
+	scope = public;
 	accuracy = 1000;
 	displayname = "GAZ (grey)";
 	hiddenSelections[] = {"Camo1"};
@@ -241,7 +241,7 @@ class Volha_2_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 	};
 };
 class VolhaLimo_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
-	scope = 2;
+	scope = public;
 	accuracy = 1000;
 	displayname = "GAZ Limo";
 	hiddenSelections[] = {"Camo1"};

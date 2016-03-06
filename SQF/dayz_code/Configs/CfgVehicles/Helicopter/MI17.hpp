@@ -14,7 +14,7 @@ class Mi17_base: Helicopter  {
 class Mi17_DZ: Mi17_base	 {
 	displayname = $STR_VEH_NAME_MI17;
 	displaynameshort = "Mi17_DZ";
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
@@ -53,7 +53,7 @@ class Mi17_Civilian;
 class Mi17_Civilian_DZ: Mi17_Civilian	 {
 	displayname = "Mi-17 (Civilian)";
 	displaynameshort = "Mi-17 (Civ)";
-	scope = 2;
+	scope = public;
 	side = 3;
 	crew = "";
 	typicalCargo[] = {};

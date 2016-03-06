@@ -1,6 +1,6 @@
 class ItemSledge: ItemCore
 {
-	scope=2;
+	scope = public;
 	displayName=$STR_EQUIP_SLEDGE;
 	model="\z\addons\dayz_epoch\models\sledge_mag.p3d";
 	picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa";
@@ -32,7 +32,7 @@ class ItemSledge: ItemCore
 
 class ItemSledgeHammerBroken : ItemCore
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityweapons\models\sledge_hammer\sledgehammer.p3d";
 	picture = "\z\addons\dayz_communityweapons\models\sledge_hammer\sledgehammer.paa";

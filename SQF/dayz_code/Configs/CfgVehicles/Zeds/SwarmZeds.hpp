@@ -1,5 +1,5 @@
 class Swarm_Base : Citizen1 {
-	scope = 2;
+	scope = public;
 	class HitDamage {};
 	glassesEnabled = 0;
 	vehicleClass = "Zombie";

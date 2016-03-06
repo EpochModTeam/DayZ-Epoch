@@ -1,5 +1,5 @@
 class equip_floppywire : CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_floppywire;
 	descriptionShort = $STR_ITEM_DESC_equip_floppywire;

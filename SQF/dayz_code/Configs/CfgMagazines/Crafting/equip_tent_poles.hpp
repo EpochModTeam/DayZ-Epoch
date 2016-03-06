@@ -1,5 +1,5 @@
 class equip_tent_poles : CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_tent_poles;
 	descriptionShort = $STR_ITEM_DESC_tent_poles;

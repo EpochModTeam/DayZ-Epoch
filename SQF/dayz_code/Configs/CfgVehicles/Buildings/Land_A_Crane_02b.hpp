@@ -1,6 +1,6 @@
 class Land_A_Crane_02b: House
 	{
-		scope = 1;
+		scope = protected;
 		armor = 110;
 		featureSize = 30;
 		model = "\ca\buildings2\A_Crane_02\A_Crane_02b";

@@ -9,7 +9,7 @@ class LandRover_Base: Car
 	mfMax = 80;
 	mFact = 1;
 	tBody = 250;
-	scope = 0;
+	scope = private;
 	displayname = "Military Offroad";
 	maxSpeed = 150;
 	terrainCoef = 3;
@@ -235,7 +235,7 @@ class LandRover_Base: Car
 
 class LandRover_Special_CZ_EP1_DZ: LandRover_Base
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "BIS_CZ";
 	crew = "";
@@ -368,7 +368,7 @@ class LandRover_Special_CZ_EP1_DZ: LandRover_Base
 
 class LandRover_Special_CZ_EP1_DZE: LandRover_Base
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "BIS_CZ";
 	crew = "";
@@ -502,7 +502,7 @@ class LandRover_Special_CZ_EP1_DZE: LandRover_Base
 
 class LandRover_MG_TK_EP1_DZ: LandRover_Base
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "BIS_TK";
 	crew = "";
@@ -573,7 +573,7 @@ class LandRover_MG_TK_EP1_DZ: LandRover_Base
 
 class LandRover_MG_TK_EP1_DZE: LandRover_Base
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "BIS_TK";
 	crew = "";

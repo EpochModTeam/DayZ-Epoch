@@ -1,5 +1,5 @@
 class WeaponHolderBase: ReammoBox {
-	scope = 0;
+	scope = private;
 	accuracy = 1000;
 	vehicleClass = "Survival";
 	displayName = "Weapon";
@@ -13,7 +13,7 @@ class WeaponHolderBase: ReammoBox {
 	transportFuel = 0;
 };
 class WoodenArrowF : WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = $STR_ITEMWOODENARROW_CODE_NAME;
 	model = "\dayz_weapons\models\bolt";
 
@@ -24,7 +24,7 @@ class WoodenArrowF : WeaponHolderBase {
 };
 class WeaponHolder_ItemCrowbar: WeaponHolderBase
 {
-	scope=2;
+	scope = public;
 	displayName=$STR_EQUIP_NAME_CROWBAR;
 	model="\dayz_equip\models\crowbar.p3d";
 	class eventHandlers
@@ -35,7 +35,7 @@ class WeaponHolder_ItemCrowbar: WeaponHolderBase
 /*
 class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
 {
-	scope=2;
+	scope = public;
 	displayName=$STR_EQUIP_NAME_BASEBALLBAT;
 	model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
 	class eventHandlers
@@ -45,7 +45,7 @@ class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
 };
 class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
 {
-	scope=2;
+	scope = public;
 	displayName=$STR_CRAFT_NAME_BaseBallBatBarbed;
 	model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
 	class eventHandlers
@@ -55,7 +55,7 @@ class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
 };
 class WeaponHolder_MeleeBaseBallBatNails: WeaponHolderBase
 {
-	scope=2;
+	scope = public;
 	displayName=$STR_CRAFT_NAME_NailedBaseballBat;
 	model="\z\addons\dayz_communityassets\models\baseball_bat_nails.p3d";
 	class eventHandlers
@@ -66,7 +66,7 @@ class WeaponHolder_MeleeBaseBallBatNails: WeaponHolderBase
 */
 class WeaponHolder_MeleeMachete: WeaponHolderBase
 {
-	scope=2;
+	scope = public;
 	displayName=$STR_EQUIP_NAME_MACHETE;
 	model="\z\addons\dayz_communityassets\models\machete.p3d";
 	class eventHandlers
@@ -75,7 +75,7 @@ class WeaponHolder_MeleeMachete: WeaponHolderBase
 	};
 };
 class WeaponHolder_ItemJerrycanEmpty : WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = "$STR_EQUIP_NAME_39";
 	model = "\dayz_equip\proxy\jerrycan_side.p3d";
 	class eventHandlers {
@@ -83,7 +83,7 @@ class WeaponHolder_ItemJerrycanEmpty : WeaponHolderBase {
 	};
 };
 class WeaponHolder_ItemFuelcanEmpty : WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = $STR_ITEM_NAME_FUELCAN_EMPTY;
 	model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
 
@@ -92,7 +92,7 @@ class WeaponHolder_ItemFuelcanEmpty : WeaponHolderBase {
 	};
 };
 class WeaponHolder_ItemFuelcan : WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = $STR_ITEM_NAME_FUELCAN;
 	model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
 
@@ -101,7 +101,7 @@ class WeaponHolder_ItemFuelcan : WeaponHolderBase {
 	};
 };
 class WeaponHolder_ItemCamoNet : WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = $STR_ITEM_NAME_CAMONET;
 //	model = "dayz_equip\proxy\tentbag.p3d"; // was models\tentbag_gear.prd ...
 	model = "z\addons\dayz_communityassets\models\packed_net_green.p3d"; // was models\tentbag_gear.prd ...
@@ -112,7 +112,7 @@ class WeaponHolder_ItemCamoNet : WeaponHolderBase {
 };
 
 class WeaponHolder_ItemDomeTent : WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = $STR_VEH_NAME_DOME_TENT;
 	model = "\dayz_equip\proxy\tentbag.p3d";
 	
@@ -122,7 +122,7 @@ class WeaponHolder_ItemDomeTent : WeaponHolderBase {
 };
 
 class WeaponHolder_ItemCrate : WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = $STR_ITEM_NAME_equip_crate;
 	model = "\z\addons\dayz_communityassets\models\crate.p3d";
 		

@@ -7,7 +7,7 @@ class Melee_Swing : CA_Magazine
 
 class Hatchet_Swing : Melee_Swing
 {
-	scope = 2;
+	scope = public;
 	
 	//TODO: test which one is shown and delete the rest
 	displayName = "Hatchet";
@@ -18,7 +18,7 @@ class Hatchet_Swing : Melee_Swing
 
 class Crowbar_Swing : Melee_Swing
 {
-	scope = 2;
+	scope = public;
 	
 	displayName = "Crowbar";
 	displayNameMagazine = "Crowbar";
@@ -28,7 +28,7 @@ class Crowbar_Swing : Melee_Swing
 
 class Machete_Swing : Melee_Swing
 {
-	scope = 2;
+	scope = public;
 	
 	displayName = "Machete";
 	displayNameMagazine = "Machete";
@@ -38,7 +38,7 @@ class Machete_Swing : Melee_Swing
 
 class Fishing_Swing : Melee_Swing
 {
-	scope = 2;
+	scope = public;
 	
 	displayName = "Fishing";
 	displayNameMagazine = "Fishing";
@@ -55,7 +55,7 @@ class sledge_swing : Melee_Swing {
 
 class Bat_Swing : Melee_Swing
 {
-	scope = 2;
+	scope = public;
 	
 	displayName = "BaseBallBat";
 	displayNameMagazine = "BaseBallBat";
@@ -65,7 +65,7 @@ class Bat_Swing : Melee_Swing
 
 class BatBarbed_Swing : Melee_Swing
 {
-	scope = 2;
+	scope = public;
 	
 	displayName = "BaseBallBatBarbed";
 	displayNameMagazine = "BaseBallBatBarbed";
@@ -75,7 +75,7 @@ class BatBarbed_Swing : Melee_Swing
 
 class BatNails_Swing : Melee_Swing
 {
-	scope = 2;
+	scope = public;
 	
 	displayName = "BaseBallBatNails";
 	displayNameMagazine = "BaseBallBatNails";

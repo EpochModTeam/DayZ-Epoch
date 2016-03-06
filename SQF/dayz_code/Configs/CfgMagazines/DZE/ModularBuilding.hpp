@@ -1,5 +1,5 @@
 class metal_floor_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Metal Floor";
@@ -18,7 +18,7 @@ class metal_floor_kit: CA_Magazine {
 };
 
 class cinder_wall_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Cinder Block Wall";
@@ -36,7 +36,7 @@ class cinder_wall_kit: CA_Magazine {
 	};
 };
 class cinder_door_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Block Doorway";
@@ -54,7 +54,7 @@ class cinder_door_kit: CA_Magazine {
 	};
 };
 class cinder_garage_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Block Garage Doorway";
@@ -73,7 +73,7 @@ class cinder_garage_kit: CA_Magazine {
 };
 
 class ItemWoodFloor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Floor/Ceiling";
@@ -91,7 +91,7 @@ class ItemWoodFloor: CA_Magazine {
 	};
 };
 class ItemWoodFloorHalf: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Floor/Ceiling 1/2";
@@ -118,7 +118,7 @@ class ItemWoodFloorHalf: CA_Magazine {
 	};
 };
 class ItemWoodFloorQuarter: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Floor/Ceiling 1/4";
@@ -146,7 +146,7 @@ class ItemWoodFloorQuarter: CA_Magazine {
 };
 
 class ItemWoodStairs: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Stairs";
@@ -173,7 +173,7 @@ class ItemWoodStairs: CA_Magazine {
 	};
 };
 class ItemWoodStairsSupport: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Stairs w/ supports";
@@ -192,7 +192,7 @@ class ItemWoodStairsSupport: CA_Magazine {
 };
 
 class ItemWoodLadder: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Ladder";
@@ -211,7 +211,7 @@ class ItemWoodLadder: CA_Magazine {
 };
 
 class ItemWoodWall: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Wall";
@@ -253,7 +253,7 @@ class ItemWoodWall: CA_Magazine {
 	};
 };
 class ItemWoodWallThird: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Wall 1/3";
@@ -279,7 +279,7 @@ class ItemWoodWallThird: CA_Magazine {
 	};
 };
 class ItemWoodWallWindow: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Window";
@@ -298,7 +298,7 @@ class ItemWoodWallWindow: CA_Magazine {
 };
 
 class ItemWoodWallDoor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Doorway";
@@ -324,7 +324,7 @@ class ItemWoodWallDoor: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Door";
@@ -350,7 +350,7 @@ class ItemWoodWallWithDoor: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoorLocked: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Door Locked";
@@ -369,7 +369,7 @@ class ItemWoodWallWithDoorLocked: CA_Magazine {
 };
 
 class ItemWoodWallGarageDoor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Garage Door";
@@ -395,7 +395,7 @@ class ItemWoodWallGarageDoor: CA_Magazine {
 	};
 };
 class ItemWoodWallGarageDoorLocked: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Garage Door Locked";
@@ -414,7 +414,7 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine {
 };
 
 class ItemWoodWallLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wood Wall";
@@ -456,7 +456,7 @@ class ItemWoodWallLg: CA_Magazine {
 	};
 };
 class ItemWoodWallWindowLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Window";
@@ -475,7 +475,7 @@ class ItemWoodWallWindowLg: CA_Magazine {
 };
 
 class ItemWoodWallDoorLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Doorway";
@@ -501,7 +501,7 @@ class ItemWoodWallDoorLg: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoorLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Door";
@@ -527,7 +527,7 @@ class ItemWoodWallWithDoorLg: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoorLgLocked: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Door Locked";

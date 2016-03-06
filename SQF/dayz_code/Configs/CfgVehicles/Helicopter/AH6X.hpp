@@ -21,7 +21,7 @@ class AH6X_DZ: AH6_Base_EP1
 	displaynameshort = $STR_EP1_DN_AH6X;
 	audible = 6;
 	enablemanualfire = 0;
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

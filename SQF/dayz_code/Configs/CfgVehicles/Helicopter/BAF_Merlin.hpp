@@ -1,6 +1,6 @@
 class BAF_Merlin_HC3_D;
 class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
-	scope = 2; 
+	scope = public; 
 	crew = ""; 
 	typicalCargo[] = {}; 
 	commanderCanSee = 2+16+32;

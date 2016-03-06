@@ -1,6 +1,6 @@
 class TrashJackDaniels : HandGrenade
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\bottle_jd.p3d";
 	picture = "\dayz_equip\textures\equip_bottle_jd_ca.paa";
@@ -12,7 +12,7 @@ class TrashJackDaniels : HandGrenade
 
 class ItemBookBible : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -24,7 +24,7 @@ class ItemBookBible : CA_Magazine
 
 class ItemCards : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -36,7 +36,7 @@ class ItemCards : CA_Magazine
 
 class ItemKosmosSmokes : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -48,7 +48,7 @@ class ItemKosmosSmokes : CA_Magazine
 
 class ItemKosmosSmokesOpen : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -60,7 +60,7 @@ class ItemKosmosSmokesOpen : CA_Magazine
 
 class ItemTrashPaper : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -72,7 +72,7 @@ class ItemTrashPaper : CA_Magazine
 
 class ItemTrashPaperMusic : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -84,7 +84,7 @@ class ItemTrashPaperMusic : CA_Magazine
 
 class ItemTrashRazor : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -96,7 +96,7 @@ class ItemTrashRazor : CA_Magazine
 /* //IN DZE/MISC
 class ItemTrashToiletpaper : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	

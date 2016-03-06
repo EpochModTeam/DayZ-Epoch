@@ -1,6 +1,6 @@
 class ItemMetalSheet: CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_BLD_name_ItemMetalSheet;//"Corrugated Sheet"
@@ -10,7 +10,7 @@ class ItemMetalSheet: CA_Magazine
 };		
 class ItemConcreteBlock: CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_BLD_name_ItemConcreteBlock;//"Concrete Block"
@@ -20,7 +20,7 @@ class ItemConcreteBlock: CA_Magazine
 };	
 class ItemRSJ: CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_BLD_name_ItemRSJ;//"Steel Beam"
@@ -30,7 +30,7 @@ class ItemRSJ: CA_Magazine
 };	
 class ItemScrews: CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_BLD_name_ItemScrews;//"Box of screws for metal"

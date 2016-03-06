@@ -2,7 +2,7 @@ class TT650_Civ: TT650_Base {
 	crew = "";
 	faction = "CIV";
 	rarityurban = 0.8;
-	scope = 2;
+	scope = public;
 	side = 3;
 	typicalcargo[] = {};
 	maxspeed = 180;

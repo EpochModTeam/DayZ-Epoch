@@ -1,6 +1,6 @@
 class BTR90;
 class BTR90_DZ: BTR90 {
-	scope = 2;
+	scope = public;
 	side = TGuerrila;
 	displayName = "BTR-90 DZ";
 
@@ -21,7 +21,7 @@ class BTR90_DZ: BTR90 {
 };
 class BTR90_HQ;
 class BTR90_HQ_DZ: BTR90_HQ {
-	scope = 2;
+	scope = public;
 	side = TGuerrila;
 	displayName = "BTR-90 (HQ) DZ";
 

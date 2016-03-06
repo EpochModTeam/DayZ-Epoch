@@ -1,5 +1,5 @@
 	class zZombie_new_Base : zZombie_Base {
-		scope = 2;
+		scope = public;
 		glassesEnabled = 0;
 		identityTypes[] = {"Zombie3"};
 		class TalkTopics {};

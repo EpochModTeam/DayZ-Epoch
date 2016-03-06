@@ -1,6 +1,6 @@
 class Land_Mil_ControlTower: House
 	{
-		scope = 1;
+		scope = protected;
 		armor = 400;
 		class DestructionEffects: DestructionEffects
 		{

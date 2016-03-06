@@ -1,5 +1,5 @@
 class equip_part_camo : CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_part_camo;
 	descriptionShort = $STR_ITEM_DESC_equip_part_camo;

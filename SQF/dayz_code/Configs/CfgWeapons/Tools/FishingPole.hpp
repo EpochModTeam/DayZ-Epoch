@@ -1,6 +1,6 @@
 class ItemFishingPole: ItemCore
 {
-	scope=2;
+	scope = public;
 	displayName=$STR_EQUIP_FISHPOLE;
 	model="\z\addons\dayz_epoch\models\fishing_rod_loot_item.p3d";
 	picture="\z\addons\dayz_epoch\pictures\equip_fishingpole_CA.paa";

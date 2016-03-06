@@ -1,6 +1,6 @@
 class FoodGoatRaw : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_ca.paa";
@@ -15,7 +15,7 @@ class FoodGoatRaw : FoodRaw
 
 class FoodGoatCooked : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
@@ -28,7 +28,7 @@ class FoodGoatCooked : FoodCooked
 
 class FoodMuttonRaw : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\mutton_raw.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_mutton_raw_CA.paa";
@@ -43,7 +43,7 @@ class FoodMuttonRaw : FoodRaw
 
 class FoodMuttonCooked : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\mutton_cooked.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_mutton_cooked_CA.paa";
@@ -58,7 +58,7 @@ class FoodMuttonCooked : FoodCooked
 
 class FoodChickenRaw : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_ca.paa";
@@ -73,7 +73,7 @@ class FoodChickenRaw : FoodRaw
 
 class FoodChickenCooked : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
@@ -88,7 +88,7 @@ class FoodChickenCooked : FoodCooked
 
 class FoodBaconRaw : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\bacon_raw.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_raw_CA.paa";
@@ -103,7 +103,7 @@ class FoodBaconRaw : FoodRaw
 
 class FoodBaconCooked : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\bacon_fried.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_fried_CA.paa";
@@ -118,7 +118,7 @@ class FoodBaconCooked : FoodCooked
 
 class FoodRabbitRaw : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_ca.paa";
@@ -133,7 +133,7 @@ class FoodRabbitRaw : FoodRaw
 
 class FoodRabbitCooked : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
@@ -148,7 +148,7 @@ class FoodRabbitCooked : FoodCooked
 
 class FoodBeefRaw : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_ca.paa";
@@ -163,7 +163,7 @@ class FoodBeefRaw : FoodRaw
 
 class FoodBeefCooked : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";

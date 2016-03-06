@@ -1,6 +1,6 @@
 class ItemAntibiotic_base : CA_Magazine
 {
-	scope = 0;
+	scope = private;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -11,7 +11,7 @@ class ItemAntibiotic_base : CA_Magazine
 
 class ItemAntibiotic : ItemAntibiotic_base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_DESC_17;
 	
 	class medical
@@ -101,6 +101,6 @@ class ItemAntibiotic1 : ItemAntibiotic
 
 class ItemAntibioticEmpty : ItemAntibiotic_base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = "EmptyBox of Azithromycin.";
 };

@@ -28,7 +28,7 @@ class Smallboat_1: Ship
 	damageResistance = 0.00882;
 	class Turrets{};
 	vehicleClass = "Ship";
-	scope = 2;
+	scope = public;
 	accuracy = 0.5;
 	soundEnviron[] = {"",0.0056234132,1.0};
 	class SoundEvents{};

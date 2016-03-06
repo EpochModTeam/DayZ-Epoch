@@ -1,6 +1,6 @@
 class MH6J_DZ: AH6_Base_EP1
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	enablemanualfire = 0;

@@ -1,6 +1,6 @@
 class USEC_ch53_E;
 class CH53_DZE : USEC_ch53_E {
-	scope = 2;
+	scope = public;
 	side = 2;
 	displayname = "USEC CH53E DZE";
 	displaynameshort = "CH53_DZE";

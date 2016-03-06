@@ -61,7 +61,7 @@ brakeDistance = 3;
 class GAZ_Vodnik_HMG : Wheeled_APC
 {
 wheelCircumference = 3.541;
-scope = 2;
+scope = public;
 model = "\ca\wheeled2\GAZ39371\GAZ39371_Vodnik_HMG.p3d";
 displayname = "Vodnik (BPPU)";
 picture = "\Ca\wheeled2\data\UI\Picture_GAZ39371_HMG_CA.paa";

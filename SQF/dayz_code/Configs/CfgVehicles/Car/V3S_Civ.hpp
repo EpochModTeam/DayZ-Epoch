@@ -2,7 +2,7 @@ class V3S_Civ: V3S_Base {
 		crew = "";
 		faction = "CIV";
 		rarityurban = 0.3;
-		scope = 2;
+		scope = public;
 		side = 3;
 		typicalcargo[] = {};
 		class Library {
@@ -12,7 +12,7 @@ class V3S_Civ: V3S_Base {
 
 class V3S_Base_EP1;
 class V3S_TK_EP1_DZE: V3S_Base_EP1 {
-	scope = 2;
+	scope = public;
 	side = 0;
 	faction = "BIS_TK";
 	crew = "";
@@ -24,7 +24,7 @@ class V3S_TK_EP1_DZE: V3S_Base_EP1 {
 	class TransportWeapons {};
 };
 class V3S_RA_TK_GUE_EP1_DZE: V3S_Base_EP1 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "BIS_TK_GUE";
 	crew = "";
@@ -51,7 +51,7 @@ class V3S_RA_TK_GUE_EP1_DZE: V3S_Base_EP1 {
 };
 class V3S_Refuel_TK_GUE_EP1;
 class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

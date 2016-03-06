@@ -1,6 +1,6 @@
 class Land_NAV_Lighthouse: House
 	{
-		scope = 1;
+		scope = protected;
 		armor = 500;
 		featureSize = 15;
 		model = "\Ca\Structures\NAV\NAV_Lighthouse";

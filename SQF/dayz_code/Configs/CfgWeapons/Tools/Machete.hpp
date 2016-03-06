@@ -1,6 +1,6 @@
 class ItemMachete : ItemCore
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\machete.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";

@@ -16,7 +16,7 @@ class Land_Ind_FuelStation_Feed_EP1: Strategic
 };
 class FuelStation : Strategic {
   icon = "\Ca\buildings\Icons\i_fuel_CA.paa";
-  scope = 0;
+  scope = private;
   animated = 0;
   armor = 2000;
   displayName = "Fuel station";
@@ -51,7 +51,7 @@ class Land_fuelstation : Strategic {
 // Lingor hangars
 class land_ibr_hangar : House {
 	model = "\ibr\ibr_hangars\ibr_hangar";
-	scope = 2;
+	scope = public;
 	vehicleClass = "ibr_hangars";
 	transportFuel = 0;
 	transportRepair = 0;
@@ -104,7 +104,7 @@ class MiningItems: NonStrategic{
 class DebugBox_DZ: NonStrategic
 {
 	placement = "vertical";
-	scope = 2;
+	scope = public;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\z\addons\dayz_epoch\models\debug_box.p3d";
@@ -117,7 +117,7 @@ class DebugBox_DZ: NonStrategic
 class DebugBoxPlayer_DZ: NonStrategic
 {
 	placement = "vertical";
-	scope = 2;
+	scope = public;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\z\addons\dayz_epoch\models\player_box.p3d";
@@ -136,7 +136,7 @@ class DebugBoxPlayer_DZ: NonStrategic
 // buildables
 class Hedgehog_DZ: BuiltItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0.55};
@@ -153,7 +153,7 @@ class Hedgehog_DZ: BuiltItems
 // WorkBench_DZ
 class WorkBench_DZ: BuiltItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructTree";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -173,7 +173,7 @@ class WorkBench_DZ: BuiltItems
 // belt buckle
 class Helper_Base_EP1;
 class BeltBuckle_DZE : Helper_Base_EP1 {
-	scope = 2;
+	scope = public;
 	model = "\z\addons\dayz_epoch\models\skull.p3d";
 	displayName = "Belt Buckle";
 	accuracy = 1000;
@@ -184,7 +184,7 @@ class BeltBuckle_DZE : Helper_Base_EP1 {
 // Metal Panel
 class MetalPanel_DZ: BuiltItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructTree";
 	cost = 100;
 	offset[] = {0,2.5,0.5};
@@ -200,7 +200,7 @@ class MetalPanel_DZ: BuiltItems
 
 class FuelPump_DZ: BuiltItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,2,0};
@@ -217,7 +217,7 @@ class FuelPump_DZ: BuiltItems
 };
 
 class Fort_RazorWire : BuiltItems {
-  scope = 2;
+  scope = public;
   animated = 0;
   vehicleClass = "Fortifications";
   model = "\ca\misc\Fort_Razorwire";
@@ -234,7 +234,7 @@ class Fort_RazorWire : BuiltItems {
 
 class Sandbag1_DZ: BuiltItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\ca\misc2\BagFenceLong.p3d";
@@ -251,7 +251,7 @@ class Sandbag1_DZ: BuiltItems
 //review some of these settings
 class BagFenceRound_DZ: BuiltItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\ca\misc2\BagFenceRound.p3d";
@@ -267,7 +267,7 @@ class BagFenceRound_DZ: BuiltItems
 };
 
 class Land_HBarrier1_DZ : BuiltItems {
-	scope = 2;
+	scope = public;
 	animated = 0;
 	vehicleClass = "Fortifications";
 	typicalCargo[] = {};
@@ -298,7 +298,7 @@ class Land_HBarrier3_DZ : BuiltItems {
 	mapSize = 3.5;
 	displayName = "H-barrier (short)";
 	GhostPreview = "Land_HBarrier3ePreview";
-	scope = 2;
+	scope = public;
 	animated = 0;
 	vehicleClass = "Fortifications";
 	typicalCargo[] = {};
@@ -325,7 +325,7 @@ class Land_HBarrier5_DZ:BuiltItems {
 	mapSize = 7;
 	displayName = "H-barrier (long)";
 	GhostPreview = "Land_HBarrier5Preview";
-	scope = 2;
+	scope = public;
 	animated = 0;
 	vehicleClass = "Fortifications";
 	typicalCargo[] = {};
@@ -347,7 +347,7 @@ class Land_HBarrier5_DZ:BuiltItems {
 	};
 
 class SandNest_DZ : BuiltItems {
-	scope = 2;
+	scope = public;
 	model = "\ca\Misc_E\fortified_nest_small_ep1";
 	displayName = "Sandbag Nest";
 	expansion = 1;
@@ -372,7 +372,7 @@ class SandNest_DZ : BuiltItems {
 
 class Supply_Crate_DZE: MiningItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructBuilding";
 	cost = 100;
 
@@ -402,7 +402,7 @@ class Gunrack1;
 class GunRack_DZ: Gunrack1
 {
 	armor = 200;
-	scope = 2;
+	scope = public;
 	displayName = "Gun Rack";
 	vehicleClass = "Fortifications";
 	transportMaxWeapons = 20;
@@ -415,7 +415,7 @@ class GunRack_DZ: Gunrack1
 class Fort_Crate_wood;
 class WoodCrate_DZ: Fort_Crate_wood
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructBuilding";
 	offset[] = {0,2.5,0.5};
 	armor = 200;
@@ -447,7 +447,7 @@ class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
 	coefInside = 4;
 	coefInsideHeur = 4;
 
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,0.3};
 	displayName = "30m Plot Pole";
 	vehicleClass = "Fortifications";
@@ -460,7 +460,7 @@ class M240Nest_DZ: USMC_WarfareBMGNest_M240
 {
 	destrType = "DestructBuilding";
 	armor = 450;
-	scope = 2;
+	scope = public;
 	offset[] = {0,3.5,0};
 	displayName = "M240 Nest";
 	vehicleClass = "Fortifications";
@@ -475,7 +475,7 @@ class Land_covering_hut_EP1;
 class CanvasHut_DZ: Land_covering_hut_EP1
 {
 	armor = 200;
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,1};
 	displayName = "Canvas Hut";
 	vehicleClass = "Fortifications";
@@ -483,7 +483,7 @@ class CanvasHut_DZ: Land_covering_hut_EP1
 class Park_bench1;
 class ParkBench_DZ: Park_bench1
 {
-	scope = 2;
+	scope = public;
 	offset[] = {0,1.5,0.5};
 	displayName = "Wood Bench";
 	vehicleClass = "Fortifications";
@@ -494,7 +494,7 @@ class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = 2;
+	scope = public;
 	offset[] = {0,5,0};
 	displayName = "Desert Camo Net";
 	vehicleClass = "Fortifications";
@@ -505,7 +505,7 @@ class ForestCamoNet_DZ: Land_CamoNet_EAST
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = 2;
+	scope = public;
 	offset[] = {0,5,0};
 	displayName = "Forest Camo Net";
 	vehicleClass = "Fortifications";
@@ -516,7 +516,7 @@ class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = 2;
+	scope = public;
 	offset[] = {0,9,0};
 	displayName = "Large Desert Camo Net";
 	vehicleClass = "Fortifications";
@@ -527,7 +527,7 @@ class DeerStand_DZ: Land_Misc_deerstand
 {
 	armor = 300;
 	// destrType = "DestructNo";
-	scope = 2;
+	scope = public;
 	offset[] = {0,5,0};
 	displayName = "Deer Stand";
 	vehicleClass = "Fortifications";
@@ -538,7 +538,7 @@ class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = 2;
+	scope = public;
 	offset[] = {0,9,0};
 	displayName = "Large Forest Camo Net";
 	vehicleClass = "Fortifications";
@@ -549,7 +549,7 @@ class Land_Wall_Gate_Ind1_L;
 class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 {
 	armor = 400;
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,1};
 	displayName = "Rusty Gate";
 	vehicleClass = "Fortifications";
@@ -559,7 +559,7 @@ class Land_KBud;
 class OutHouse_DZ: Land_KBud
 {
 	armor = 200;
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,1};
 	displayName = "Outhouse";
 	vehicleClass = "Fortifications";
@@ -580,7 +580,7 @@ class Land_Shed_M01;
 class StorageShed_DZ: Land_Shed_M01
 {
 	armor = 1600;
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,1};
 	displayName = "Storage Shed";
 	vehicleClass = "Fortifications";
@@ -593,7 +593,7 @@ class Fence_corrugated_plate;
 class Fence_corrugated_DZ: Fence_corrugated_plate
 {
 	armor = 600;
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,1};
 	removeoutput[] = {{"ItemCorrugated",1}};
 	displayName = "Corrugated Fence";
@@ -604,7 +604,7 @@ class Fence_corrugated_DZ: Fence_corrugated_plate
 class Land_kulna;
 class WoodShack_DZ: Land_kulna
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructBuilding";
 	offset[] = {0,2.5,1.3};
 	armor = 800;
@@ -619,7 +619,7 @@ class WoodShack_DZ: Land_kulna
 class Land_Shed_wooden;
 class Wooden_shed_DZ: Land_Shed_wooden
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructBuilding";
 	//cost = 100;
 	offset[] = {0,2.5,1};
@@ -637,7 +637,7 @@ class StickFence_DZ: Wall_FenW2_6_EP1
 {
 	destrType = "DestructTree";
 	armor = 200;
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,0};
 	displayName = "Stick Fence";
 	vehicleClass = "Fortifications";
@@ -646,7 +646,7 @@ class ASC_EU_LHVOld;
 class LightPole_DZ: ASC_EU_LHVOld
 {
 	armor = 200;
-	scope = 2;
+	scope = public;
 	offset[] = {0,2.5,0};
 	displayName = "Light Pole";
 	vehicleClass = "Fortifications";
@@ -657,7 +657,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 {
 	armor = 100;
 	destrType = "DestructBuilding";
-	scope = 2;
+	scope = public;
 	displayName = "Scaffolding";
 	vehicleClass = "Fortifications";
 	constructioncount = 6;
@@ -673,7 +673,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 };
 class WoodGate_DZ: BuiltItems
 {
-	scope = 2;
+	scope = public;
 	destrType = "DestructTree";
 	//cost = 100;
 	offset[] = {0,1.5,0.5};

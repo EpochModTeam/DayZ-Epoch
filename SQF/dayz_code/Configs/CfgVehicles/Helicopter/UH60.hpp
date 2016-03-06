@@ -1,5 +1,5 @@
 class UH60_Base: Helicopter {
-	scope = 0;
+	scope = private;
 	side = 1;
 	faction = "USMC";
 	accuracy = 0.5;
@@ -24,7 +24,7 @@ class MH60S_DZ : UH60_Base {
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 100;
 	transportMaxBackpacks = 5;
-	scope = 2;
+	scope = public;
 	accuracy = 1.5;	// accuracy needed to recognize type of this target
 	displayName = "MH-60S DZ";
 	class Turrets : Turrets {
@@ -240,7 +240,7 @@ class MH60S_DZ : UH60_Base {
 };
 class UH60M_base_EP1: UH60_Base {
 	expansion = 1;
-	scope = 0;
+	scope = private;
 	model = "\Ca\Air_E\UH60M\UH60M.p3d";
 	displayName = "UH-60";
 	destrType = "DestructWreck";
@@ -373,7 +373,7 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1 {
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 100;
 	transportmaxbackpacks = 5;
-	scope = 2;
+	scope = public;
 	accuracy = 1.5;
 	displayName = "UH-60M DZ";
 	class Turrets: Turrets {
@@ -473,7 +473,7 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1 {
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 100;
 	transportmaxbackpacks = 5;
-	scope = 2;
+	scope = public;
 	accuracy = 1.5;
 	displayName = "UH-60M AL";
 	class Turrets: Turrets {

@@ -1,7 +1,7 @@
 class AH6_Base_EP1;
 class AH6J_EP1_DZ: AH6_Base_EP1
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	displayName = "AH6J_DZ";
 	crew = "";
@@ -39,7 +39,7 @@ class AH6J_EP1_DZ: AH6_Base_EP1
 };
 class AH6J_EP1_DZE: AH6J_EP1_DZ
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	displayName = "AH6J_DZE";
 	magazines[] = {"60Rnd_CMFlareMagazine"};
@@ -49,7 +49,7 @@ class AH6X_DZ: AH6_Base_EP1 {
 	displaynameshort = $STR_EP1_DN_AH6X;
 	audible = 6;
 	enablemanualfire = 0;
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

@@ -1,6 +1,6 @@
 class Remington870_DZ : Rifle
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_weapons\models\Remington870.p3d";
 	picture = "\dayz_weapons\textures\equip_remington870_CA.paa";

@@ -1,6 +1,6 @@
 class Land_runway_edgelight: House
 	{
-		scope = 1;
+		scope = protected;
 		displayName = "";
 		model = "\ca\buildings\Misc\runway_edgelight";
 		armor = 20;

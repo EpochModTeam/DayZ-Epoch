@@ -1,6 +1,6 @@
 class MeleeSledge: MeleeWeapon
 	{
-		scope=2;
+		scope = public;
 		melee= "true";
 		autoreload=1;
 		magazineReloadTime=0;

@@ -1,6 +1,6 @@
 class Land_majak: House
 	{
-		scope = 1;
+		scope = protected;
 		model = "\ca\buildings\majak";
 		displayName = "Lighthouse";
 		animated = 1;

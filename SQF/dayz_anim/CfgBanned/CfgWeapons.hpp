@@ -9,7 +9,7 @@ class CfgWeapons {
 	class RifleCore;
 	class FakeWeapon: RifleCore
 	{
-		scope = 1;
+		scope = protected;
 		stopThis = true;
 		type = 0;
 		cursor = "";

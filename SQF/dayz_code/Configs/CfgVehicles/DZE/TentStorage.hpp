@@ -31,7 +31,7 @@ class TentStorageDomed2: TentStorage {
 };
 
 class WeaponHolder_ItemTentOld: WeaponHolder {
-	scope = 2;
+	scope = public;
 	displayName = $STR_EQUIP_NAME_20;
 	class transportmagazines {
 		class _xx_ItemTentOld {
@@ -41,7 +41,7 @@ class WeaponHolder_ItemTentOld: WeaponHolder {
 	};
 };
 class WeaponHolder_ItemTentDomed: WeaponHolder {
-	scope = 2;
+	scope = public;
 	displayName = "Domed Desert Tent";
 	class transportmagazines {
 		class _xx_ItemTentDomed {
@@ -51,7 +51,7 @@ class WeaponHolder_ItemTentDomed: WeaponHolder {
 	};
 };
 class WeaponHolder_ItemTentDomed2: WeaponHolder {
-	scope = 2;
+	scope = public;
 	displayName = "Domed Green Tent";
 	class transportmagazines {
 		class _xx_ItemTentDomed2 {

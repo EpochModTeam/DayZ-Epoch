@@ -1,5 +1,5 @@
 class ItemBriefcase_Base: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Briefcase";

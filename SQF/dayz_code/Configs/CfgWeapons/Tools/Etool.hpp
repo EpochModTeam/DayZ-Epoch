@@ -1,6 +1,6 @@
 class ItemEtool : ItemCore
 {
-	scope = 2;
+	scope = public;
 	model = "\dayz_equip\models\etool.p3d";
 	picture = "\dayz_equip\textures\equip_etool_ca.paa";
 	displayName = $STR_EQUIP_NAME_1;

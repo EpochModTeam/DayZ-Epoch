@@ -1,6 +1,6 @@
 class ItemWaterBottleUnfilled : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
@@ -25,7 +25,7 @@ class ItemWaterBottleUnfilled : CA_Magazine
 
 class ItemWaterBottleDmg : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	

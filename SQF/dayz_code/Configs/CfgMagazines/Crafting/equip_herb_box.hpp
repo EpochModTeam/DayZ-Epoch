@@ -1,6 +1,6 @@
 
 class equip_herb_box : CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = $STR_EQUIP_NAME_HERBBOX;
 	descriptionShort = $STR_EQUIP_DESC_HERBBOX;

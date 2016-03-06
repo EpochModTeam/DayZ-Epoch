@@ -1,6 +1,6 @@
 class ItemSodaCoke : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\soda_coke.p3d";
 	picture = "\dayz_equip\textures\equip_soda_coke_ca.paa";
@@ -12,7 +12,7 @@ class ItemSodaCoke : ItemSoda
 
 class ItemSodaPepsi : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\soda_pepsi.p3d";
 	picture = "\dayz_equip\textures\equip_soda_pepsi_ca.paa";
@@ -24,7 +24,7 @@ class ItemSodaPepsi : ItemSoda
 
 class ItemSodaMdew : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\soda_mdew.p3d";
 	picture = "\dayz_equip\textures\equip_soda_mdew_ca.paa";
@@ -36,7 +36,7 @@ class ItemSodaMdew : ItemSoda
 
 class ItemSodaMtngreen : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_mtngreen_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mtngreen_clean_full_ca.paa";
@@ -50,7 +50,7 @@ class ItemSodaMtngreen : ItemSoda
 
 class ItemSodaR4z0r : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_r4z0r_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_r4z0r_clean_full_ca.paa";
@@ -64,7 +64,7 @@ class ItemSodaR4z0r : ItemSoda
 
 class ItemSodaClays : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_clays_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_clays_clean_full_ca.paa";
@@ -78,7 +78,7 @@ class ItemSodaClays : ItemSoda
 
 class ItemSodaSmasht : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_smasht_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_smasht_clean_full_ca.paa";
@@ -92,7 +92,7 @@ class ItemSodaSmasht : ItemSoda
 
 class ItemSodaDrwaste : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_drwaste_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_drwaste_clean_full_ca.paa";
@@ -106,7 +106,7 @@ class ItemSodaDrwaste : ItemSoda
 
 class ItemSodaFranka : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_franka_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_franka_clean_full_ca.paa";
@@ -120,7 +120,7 @@ class ItemSodaFranka : ItemSoda
 
 class ItemSodaLemonade : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_lemonade_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lemonade_clean_full_ca.paa";
@@ -134,7 +134,7 @@ class ItemSodaLemonade : ItemSoda
 
 class ItemSodaLirik : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_lirik_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lirik_clean_full_ca.paa";
@@ -148,7 +148,7 @@ class ItemSodaLirik : ItemSoda
 
 class ItemSodaLvg : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_lvg_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lvg_clean_full_ca.paa";
@@ -162,7 +162,7 @@ class ItemSodaLvg : ItemSoda
 
 class ItemSodaMzly : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_mzly_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mzly_clean_full_ca.paa";
@@ -176,7 +176,7 @@ class ItemSodaMzly : ItemSoda
 
 class ItemSodaPeppsy : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_peppsy_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_peppsy_clean_full_ca.paa";
@@ -190,7 +190,7 @@ class ItemSodaPeppsy : ItemSoda
 
 class ItemSodaRabbit : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_rabbit_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rabbit_clean_full_ca.paa";
@@ -204,7 +204,7 @@ class ItemSodaRabbit : ItemSoda
 
 class ItemSodaSacrite : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_sacrite_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sacrite_clean_full_ca.paa";
@@ -218,7 +218,7 @@ class ItemSodaSacrite : ItemSoda
 
 class ItemSodaRocketFuel : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_rocket_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rocket_clean_full_ca.paa";
@@ -232,7 +232,7 @@ class ItemSodaRocketFuel : ItemSoda
 
 class ItemSodaGrapeDrink : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_grape_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_grape_clean_full_ca.paa";
@@ -246,7 +246,7 @@ class ItemSodaGrapeDrink : ItemSoda
 
 class ItemSherbet : ItemSoda
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\soda_sherbet_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sherbet_clean_full_ca.paa";

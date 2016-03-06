@@ -1,5 +1,5 @@
 class PartOre: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Iron Ore";
@@ -19,7 +19,7 @@ class PartOre: CA_Magazine {
 	};
 };
 class PartOreSilver: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Silver Ore";
@@ -39,7 +39,7 @@ class PartOreSilver: CA_Magazine {
 	};
 };
 class PartOreGold: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Gold Ore";

@@ -16,7 +16,7 @@ class VWGolf : Car {
 		};
 	};
 	wheelCircumference = 2.02;
-	scope = 2;
+	scope = public;
 	model = "\ca\wheeled2\VWGOLF\vwgolf.p3d";
 	icon = "\ca\wheeled2\data\UI\Icon_VWGolf_CA.paa";
 	picture = "\ca\wheeled2\data\UI\Picture_VWGolf_CA.paa";

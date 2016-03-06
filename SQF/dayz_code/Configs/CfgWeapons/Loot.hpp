@@ -1,6 +1,6 @@
 class Loot: Default
 {
-	scope = 2;
+	scope = public;
 	value = 0;
 	type = 0;
 	displayName = "Use";

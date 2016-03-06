@@ -1,6 +1,6 @@
 class Land_Ind_MalyKomin: House
 	{
-		scope = 1;
+		scope = protected;
 		armor = 100;
 		featureSize = 40;
 		model = "\Ca\buildings2\Ind_CementWorks\Ind_MalyKomin\Ind_MalyKomin";

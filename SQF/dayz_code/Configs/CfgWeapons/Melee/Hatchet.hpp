@@ -1,6 +1,6 @@
 class MeleeHatchet : MeleeWeapon
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_weapons\models\Hatchet_weaponized";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
@@ -43,7 +43,7 @@ class MeleeHatchet : MeleeWeapon
 
 class MeleeHatchet_DZE: MeleeWeapon
 {
-	scope=2;
+	scope = public;
 
 	model="\dayz_weapons\models\Hatchet_weaponized";
 	picture="\dayz_equip\textures\equip_hatchet_CA.paa";

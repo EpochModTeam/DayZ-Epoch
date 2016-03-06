@@ -448,7 +448,7 @@ class UAZ_MG_TK_EP1_DZ: UAZ_MG_Base
 	mFact = 1;
 	tBody = 250;
 	expansion = 1;
-	scope = 2;
+	scope = public;
 	side = 0;
 	faction = "BIS_TK";
 	displayName = "UAZ (DShKM) DZ";
@@ -498,7 +498,7 @@ class UAZ_MG_TK_EP1_DZE: UAZ_MG_Base
 	mFact = 1;
 	tBody = 250;
 	expansion = 1;
-	scope = 2;
+	scope = public;
 	side = 0;
 	faction = "BIS_TK";
 	accuracy = 0.3;

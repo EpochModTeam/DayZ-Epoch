@@ -1,6 +1,6 @@
 class ItemCrowbar : ItemCore
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\crowbar.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
@@ -41,7 +41,7 @@ class ItemCrowbar : ItemCore
 
 class ItemCrowbarBent : ItemCore
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\crowbar.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";

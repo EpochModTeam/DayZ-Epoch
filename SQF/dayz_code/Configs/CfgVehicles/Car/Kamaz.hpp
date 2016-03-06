@@ -1,6 +1,6 @@
 class Kamaz_Base;
 class KamazOpen_DZE : Kamaz_Base {
-	scope = 2;
+	scope = public;
 	displayName = "Utility Truck (Open)";
 	model = "\ca\wheeled2\Kamaz\Kamaz_Open";
 	picture = "\Ca\wheeled2\data\ui\Picture_kamaz_open_CA.paa";
@@ -18,7 +18,7 @@ class KamazOpen_DZE : Kamaz_Base {
 	};
 };
 class Kamaz_DZE: Kamaz_Base {
-	scope = 2;
+	scope = public;
 	cargoAction[] = {"Truck_Cargo01","Truck_Cargo01","Truck_Cargo02","Truck_Cargo03","Truck_Cargo02","Truck_Cargo02","Truck_Cargo03","Truck_Cargo02","Truck_Cargo03","Truck_Cargo02","Truck_Cargo02","Truck_Cargo03"};
 	class Upgrades {
 	ItemORP[] = {"Kamaz_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -78,7 +78,7 @@ class KamazOpen_DZE4: KamazOpen_DZE3 {
 };
 class KamazRefuel;
 class KamazRefuel_DZ: KamazRefuel {
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

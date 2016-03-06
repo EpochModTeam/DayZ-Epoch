@@ -1,6 +1,6 @@
 /*class AngelCookies : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\buiscits_box.p3d";
 	picture = "z\addons\dayz_communityassets\CraftingPlaceholders\equip_angel_cookies.paa";
@@ -12,7 +12,7 @@
 
 class FoodMRE : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\mre.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
@@ -25,7 +25,7 @@ class FoodMRE : FoodPackaged
 
 class FoodPistachio : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
@@ -38,7 +38,7 @@ class FoodPistachio : FoodPackaged
 	
 class FoodNutmix : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\nutmix.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_nutmix_CA.paa";
@@ -51,7 +51,7 @@ class FoodNutmix : FoodPackaged
 
 class FoodCanBeef : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_beef_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_beef_clean_full_ca.paa";
@@ -66,7 +66,7 @@ class FoodCanBeef : FoodPackaged
 
 class FoodCanPotatoes : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_pots_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_pots_clean_full_ca.paa";
@@ -81,7 +81,7 @@ class FoodCanPotatoes : FoodPackaged
 
 class FoodCanGriff : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_griff_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_full_ca.paa";
@@ -96,7 +96,7 @@ class FoodCanGriff : FoodPackaged
 
 class FoodCanBadguy : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_badguy_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_full_ca.paa";
@@ -111,7 +111,7 @@ class FoodCanBadguy : FoodPackaged
 
 class FoodCanBoneboy : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_boneboy_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_full_ca.paa";
@@ -126,7 +126,7 @@ class FoodCanBoneboy : FoodPackaged
 
 class FoodCanCorn : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_corn_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_full_ca.paa";
@@ -141,7 +141,7 @@ class FoodCanCorn : FoodPackaged
 
 class FoodCanCurgon : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_curgon_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_full_ca.paa";
@@ -156,7 +156,7 @@ class FoodCanCurgon : FoodPackaged
 
 class FoodCanDemon : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_demon_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_full_ca.paa";
@@ -171,7 +171,7 @@ class FoodCanDemon : FoodPackaged
 
 class FoodCanFraggleos : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_fraggleos_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_full_ca.paa";
@@ -186,7 +186,7 @@ class FoodCanFraggleos : FoodPackaged
 
 class FoodCanHerpy : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_herpy_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_full_ca.paa";
@@ -201,7 +201,7 @@ class FoodCanHerpy : FoodPackaged
 
 class FoodCanDerpy : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_derpy_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_derpy_clean_full_ca.paa";
@@ -216,7 +216,7 @@ class FoodCanDerpy : FoodPackaged
 
 class FoodCanOrlok : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_orlok_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_full_ca.paa";
@@ -231,7 +231,7 @@ class FoodCanOrlok : FoodPackaged
 
 class FoodCanPowell : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_powell_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_full_ca.paa";
@@ -246,7 +246,7 @@ class FoodCanPowell : FoodPackaged
 
 class FoodCanTylers : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_tylers_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_full_ca.paa";
@@ -261,7 +261,7 @@ class FoodCanTylers : FoodPackaged
 
 class FoodCanUnlabeled : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
@@ -276,7 +276,7 @@ class FoodCanUnlabeled : FoodPackaged
 
 class FoodCanRusUnlabeled : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
@@ -291,7 +291,7 @@ class FoodCanRusUnlabeled : FoodPackaged
 
 class FoodCanRusStew : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_small_rus_stew_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_stew_clean_full_ca.paa";
@@ -306,7 +306,7 @@ class FoodCanRusStew : FoodPackaged
 
 class FoodCanRusPork : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_small_rus_pork_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_pork_clean_full_ca.paa";
@@ -321,7 +321,7 @@ class FoodCanRusPork : FoodPackaged
 
 class FoodCanRusPeas : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_small_rus_peas_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_peas_clean_full_ca.paa";
@@ -336,7 +336,7 @@ class FoodCanRusPeas : FoodPackaged
 
 class FoodCanRusMilk : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_small_rus_milk_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_milk_clean_full_ca.paa";
@@ -351,7 +351,7 @@ class FoodCanRusMilk : FoodPackaged
 
 class FoodCanRusCorn : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_small_rus_corn_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_corn_clean_full_ca.paa";
@@ -366,7 +366,7 @@ class FoodCanRusCorn : FoodPackaged
 
 class FoodChipsSulahoops : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\bag_chips_small_sulahoops_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_sulahoops_full_ca.paa";
@@ -382,7 +382,7 @@ class FoodChipsSulahoops : FoodPackaged
 
 class FoodChipsMysticales : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\bag_chips_small_mysticales_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_mysticales_full_ca.paa";
@@ -398,7 +398,7 @@ class FoodChipsMysticales : FoodPackaged
 
 class FoodChipsChocolate : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\bag_chips_small_chocolate_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_chocolate_full_ca.paa";
@@ -413,7 +413,7 @@ class FoodChipsChocolate : FoodPackaged
 
 class FoodCandyChubby : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\candybar_chubby_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_chubby_full_ca.paa";
@@ -428,7 +428,7 @@ class FoodCandyChubby : FoodPackaged
 
 class FoodCandyAnders : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\candybar_anders_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_anders_ca.paa";
@@ -443,7 +443,7 @@ class FoodCandyAnders : FoodPackaged
 
 class FoodCandyLegacys : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\candybar_legacys_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_legacys_ca.paa";
@@ -458,7 +458,7 @@ class FoodCandyLegacys : FoodPackaged
 
 class FoodCakeCremeCakeClean : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\twinkie.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_twinkie_clean.paa";
@@ -473,7 +473,7 @@ class FoodCakeCremeCakeClean : FoodPackaged
 
 class FoodCandyMintception : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\candybar_mintception_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_mintception_ca.paa";
@@ -488,7 +488,7 @@ class FoodCandyMintception : FoodPackaged
 
 /*class FoodCanLongSprats : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\dayz_communityassets\models\can_long_sprat_clean_full_co.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_long_sprat_clean_full_ca.paa";
@@ -501,7 +501,7 @@ class FoodCandyMintception : FoodPackaged
 
 class FoodCanBakedBeans : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_bbtin.p3d";
 	picture = "\dayz_equip\textures\equip_bbtin_ca.paa";
@@ -516,7 +516,7 @@ class FoodCanBakedBeans : FoodPackaged
 
 class FoodCanSardines : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_sardinestin.p3d";
 	picture = "\dayz_equip\textures\equip_Sardinestin_ca.paa";
@@ -531,7 +531,7 @@ class FoodCanSardines : FoodPackaged
 
 class FoodCanFrankBeans : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_fbtin.p3d";
 	picture = "\dayz_equip\textures\equip_fbtin_ca.paa";
@@ -546,7 +546,7 @@ class FoodCanFrankBeans : FoodPackaged
 
 class FoodCanPasta : FoodPackaged
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\food_pastatin.p3d";
 	picture = "\dayz_equip\textures\equip_pastatin_ca.paa";

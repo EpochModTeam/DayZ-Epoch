@@ -256,7 +256,7 @@ class ArmoredSUV_Base_PMC: Car
 
 class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "PMC_BAF";
 	displayName = "SUV (Armored) DZ";
@@ -324,7 +324,7 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 };
 class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "PMC_BAF";
 	armor = 80;

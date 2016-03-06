@@ -29,7 +29,7 @@ class VaultStorageLocked: Land_A_tent {
 };
 
 class WeaponHolder_ItemVault: WeaponHolder {
-	scope = 2;
+	scope = public;
 	displayName = $STR_EPOCH_SAFE;
 	seedItem = "ItemVault";
 };

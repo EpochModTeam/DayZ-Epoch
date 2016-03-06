@@ -1,6 +1,6 @@
 class MeleeFishingPole: MeleeWeapon
 {
-	scope=2;
+	scope = public;
 	autoreload=1;
 	magazineReloadTime=0;
 	model="\z\addons\dayz_epoch\models\fishing_rod_weaponized.p3d";

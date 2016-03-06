@@ -1,6 +1,6 @@
 class SkodaBase: Car {
 	brakeDistance = 9;
-	scope = 0;
+	scope = private;
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
 	mapSize = 6;
@@ -180,7 +180,7 @@ class SkodaBase: Car {
 };
 
 class Skoda: SkodaBase {
-	scope = 2;
+	scope = public;
 	accuracy = 1000;
 	crew = "Citizen1";
 	faction = "CIV";
@@ -204,7 +204,7 @@ class Skoda: SkodaBase {
 	};
 };
 class SkodaBlue: SkodaBase {
-	scope = 2;
+	scope = public;
 	accuracy = 1000;
 	crew = "Villager2";
 	faction = "CIV";
@@ -226,7 +226,7 @@ class SkodaBlue: SkodaBase {
 	};
 };
 class SkodaRed: SkodaBase {
-	scope = 2;
+	scope = public;
 	faction = "CIV";
 	accuracy = 1000;
 	model = "\ca\wheeled\skodovka_red";
@@ -247,7 +247,7 @@ class SkodaRed: SkodaBase {
 	};
 };
 class SkodaGreen: SkodaBase {
-	scope = 2;
+	scope = public;
 	faction = "CIV";
 	accuracy = 1000;
 	model = "\ca\wheeled\skodovka_green";
@@ -572,7 +572,7 @@ class car_hatchback: SkodaBase {
 	model = "\ca\Wheeled\car_hatchback";
 	picture = "\Ca\wheeled\data\ico\car_hatchback_CA.paa";
 	rarityurban = 0.6;
-	scope = 2;
+	scope = public;
 	soundarmorcrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
 	soundbuildingcrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
 	soundengineoffext[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-stop-1", 0.398107, 1, 250};
@@ -799,7 +799,7 @@ class car_hatchback_DZE4: car_hatchback_DZE3 {
 };
 
 class car_sedan : SkodaBase {
-    scope = 2;
+    scope = public;
     faction = "CIV";
     maxSpeed = 125;
     model = "\ca\Wheeled\car_sedan";

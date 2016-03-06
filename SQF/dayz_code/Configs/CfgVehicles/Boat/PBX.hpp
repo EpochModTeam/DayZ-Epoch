@@ -10,7 +10,7 @@ class PBX: RubberBoat {
 	maxspeed = 68;
 	model = "\ca\water\PBX";
 	picture = "\ca\water\data\ico\pbx_CA.paa";
-	scope = 2;
+	scope = public;
 	side = 0;
 	transportsoldier = 3;
 	typicalcargo[] = {};

@@ -26,7 +26,7 @@ class Fishing_Boat: Ship {
 	mapsize = 8;
 	model = "\CA\water2\Fishing_boat\fishing_boat";
 	picture = "\ca\water2\data\ui\picture_fishboat_CA.paa";
-	scope = 2;
+	scope = public;
 	side = 3;
 	soundengineoffext[] = {"ca\sounds\vehicles\Water\FISHING_BOAT\ext-slowboat-engine-stop-02", 0.177828, 1, 100};
 	soundengineoffint[] = {"ca\sounds\vehicles\Water\FISHING_BOAT\ext-slowboat-engine-stop-02", 0.177828, 1, 100};

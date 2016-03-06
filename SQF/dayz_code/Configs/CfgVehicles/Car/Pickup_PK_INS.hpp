@@ -1,6 +1,6 @@
 class Pickup_PK_GUE;
 class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
-	scope = 2;
+	scope = public;
 	side = TGuerrila;
 	displayName = "Pickup (PK) DZ";
 
@@ -16,7 +16,7 @@ class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
 };
 class Pickup_PK_TK_GUE_EP1;
 class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
-	scope = 2;
+	scope = public;
 	side = TGuerrila;
 	displayName = "Pickup (PK) DZ";
 
@@ -32,7 +32,7 @@ class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
 };
 class Pickup_PK_INS;
 class Pickup_PK_INS_DZ: Pickup_PK_INS {
-	scope = 2;
+	scope = public;
 	side = TGuerrila;
 	displayName = "Pickup (PK) DZ";
 

@@ -1,6 +1,6 @@
 class m107: Rifle
 {
-	scope = 2;
+	scope = public;
 	type = 1;
 	canlock = 0;
 	picture = "\CA\weapons\data\Equip\W_m107_CA.paa";

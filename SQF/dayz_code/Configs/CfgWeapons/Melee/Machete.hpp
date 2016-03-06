@@ -1,6 +1,6 @@
 class MeleeMachete: MeleeWeapon
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";

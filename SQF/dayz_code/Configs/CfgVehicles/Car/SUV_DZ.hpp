@@ -2,7 +2,7 @@ class SUV_DZ: SUV_Base_EP1 {
 	crew = "";
 	faction = "BIS_TK_CIV";
 	rarityurban = 0.8;
-	scope = 2;
+	scope = public;
 	side = 3;
 	typicalcargo[] = {};
 	class HitPoints : HitPoints {

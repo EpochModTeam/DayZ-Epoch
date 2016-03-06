@@ -15,7 +15,7 @@ class 100Rnd_556x45_M249 : 200Rnd_556x45_M249
 };
 
 class 100Rnd_556x45_BetaCMag: CA_Magazine {
-	scope = 2;
+	scope = public;
 	displayName = "MG36 Mag.";
 	ammo = "B_556x45_Ball";
 	count = 100;

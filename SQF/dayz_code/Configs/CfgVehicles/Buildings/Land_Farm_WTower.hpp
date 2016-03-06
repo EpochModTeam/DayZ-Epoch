@@ -1,6 +1,6 @@
 class Land_Farm_WTower: House
 	{
-		scope = 1;
+		scope = protected;
 		armor = 100;
 		model = "\CA\buildings2\Farm_WTower\Farm_WTower";
 		class MarkerLights

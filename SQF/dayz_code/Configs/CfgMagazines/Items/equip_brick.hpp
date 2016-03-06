@@ -1,6 +1,6 @@
 class equip_brick : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	

@@ -1,6 +1,6 @@
 class 1Rnd_Arrow_Wood : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_weapons\models\bolt_gear";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_warrow_ca.paa";
@@ -46,7 +46,7 @@ class 12Rnd_Quiver_Wood : 1Rnd_Arrow_Wood
 
 class 1Rnd_Bolt_Tranquilizer : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	type = WeaponSlotItem;
 	count = 1;
 	
@@ -60,7 +60,7 @@ class 1Rnd_Bolt_Tranquilizer : CA_Magazine
 
 class 1Rnd_Bolt_Explosive : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	type = WeaponSlotItem;
 	count = 1;
 	

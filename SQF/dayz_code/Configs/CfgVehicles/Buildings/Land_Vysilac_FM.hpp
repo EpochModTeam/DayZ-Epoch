@@ -1,6 +1,6 @@
 class Land_Vysilac_FM: House
 	{
-		scope = 1;
+		scope = protected;
 		armor = 150;
 		destrType = "DestructBuilding";
 		ladders[] = {{"start","end"}};

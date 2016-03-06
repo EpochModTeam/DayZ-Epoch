@@ -1,6 +1,6 @@
 class Land_telek1: House
 	{
-		scope = 1;
+		scope = protected;
 		armor = 600;
 		destrType = "DestructBuilding";
 		model = "\ca\buildings\telek1";

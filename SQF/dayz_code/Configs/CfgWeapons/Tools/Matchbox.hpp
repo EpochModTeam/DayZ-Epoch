@@ -1,6 +1,6 @@
 class ItemMatchbox_base : ItemCore
 {
-	scope = 0;
+	scope = private;
 	model = "\dayz_equip\models\matchbox_gear.p3d";
 	picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
 	displayName = $STR_EQUIP_NAME_3;
@@ -9,7 +9,7 @@ class ItemMatchbox_base : ItemCore
 
 class ItemMatchboxEmpty : ItemMatchbox_base
 {
-	scope = 2;
+	scope = public;
 	displayName = $STR_EQUIP_NAME_3_EMPTY;
 	descriptionShort = $STR_EQUIP_DESC_3_EMPTY;
 };
@@ -17,7 +17,7 @@ class ItemMatchboxEmpty : ItemMatchbox_base
 //Loot Spawn Table.
 class ItemMatchbox : ItemMatchbox_base
 {
-	scope = 2;
+	scope = public;
 	
 	class Ignators
 	{
@@ -90,7 +90,7 @@ class Item1Matchbox : ItemMatchbox
 };
 class ItemMatchbox_DZE: ItemMatchbox
 {
-	scope = 2;
+	scope = public;
 	//displayName = $STR_EQUIP_NAME_3;
 	//model = "\dayz_equip\models\matchbox_gear.p3d";
 	//picture = "\dayz_equip\textures\equip_matchbox_ca.paa";

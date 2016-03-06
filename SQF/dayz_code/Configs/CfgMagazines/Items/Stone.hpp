@@ -1,6 +1,6 @@
 class ItemStone: CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_BLD_name_ItemStone;//"Rough Stone"

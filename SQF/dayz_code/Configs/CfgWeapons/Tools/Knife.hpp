@@ -1,6 +1,6 @@
 class ItemKnife_Base : ItemCore
 {
-	scope = 0;
+	scope = private;
 	
 	model = "\dayz_equip\models\knife_gear.p3d";
 	picture = "\dayz_equip\textures\equip_knife_ca.paa";
@@ -17,48 +17,48 @@ class ItemKnife_Base : ItemCore
 
 class ItemKnife : ItemKnife_Base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_DESC_4;
 	sharpnessRemaining = "ItemKnife5";
 };
 
 class ItemKnife5 : ItemKnife_Base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_DESC_4_A;
 	sharpnessRemaining = "ItemKnife4";
 };
 
 class ItemKnife4 : ItemKnife_Base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_DESC_4_B;
 	sharpnessRemaining = "ItemKnife3";
 };
 
 class ItemKnife3 : ItemKnife_Base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_DESC_4_C;
 	sharpnessRemaining = "ItemKnife2";
 };
 
 class ItemKnife2 : ItemKnife_Base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_DESC_4_D;
 	sharpnessRemaining = "ItemKnife1";
 };
 
 class ItemKnife1 : ItemKnife_Base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_DESC_4_E;
 	sharpnessRemaining = "ItemKnifeBlunt";
 };
 
 class ItemKnifeBlunt : ItemKnife_Base
 {
-	scope = 2;
+	scope = public;
 	descriptionShort = $STR_EQUIP_CODE_DESC_4;
 };

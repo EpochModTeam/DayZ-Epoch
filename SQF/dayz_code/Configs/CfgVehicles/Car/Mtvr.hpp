@@ -1,7 +1,7 @@
 class MtvrRefuel;
 class MtvrRefuel_base : MtvrRefuel
 {
-	scope = 0;
+	scope = private;
 	side = 4;
 	expansion = 1;
 	crew = "Civilian";
@@ -9,7 +9,7 @@ class MtvrRefuel_base : MtvrRefuel
 };
 
 class MtvrRefuel_DES_EP1_DZ : MtvrRefuel_base {
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	displayName = "MTVR (Fuel)";
@@ -22,7 +22,7 @@ class MtvrRefuel_DES_EP1_DZ : MtvrRefuel_base {
 };
 
 class MtvrRefuel_DZ: MtvrRefuel {
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

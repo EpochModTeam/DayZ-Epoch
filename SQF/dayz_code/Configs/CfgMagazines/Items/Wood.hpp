@@ -1,6 +1,6 @@
 class ItemLog : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	displayName = $STR_BLD_name_ItemLog;//"Wooden Log"
@@ -24,7 +24,7 @@ class ItemLog : CA_Magazine
 
 class ItemPlank : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	displayName = $STR_BLD_name_ItemPlank;//"Sawn Planks"
@@ -48,7 +48,7 @@ class ItemPlank : CA_Magazine
 /* Redifined in DZE/Misc
 class PartWoodPile : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	

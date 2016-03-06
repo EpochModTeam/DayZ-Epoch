@@ -1,6 +1,6 @@
 class ItemCanteen : FoodDrink
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_equip\models\waterbottle_gear.p3d";
 	picture = "\dayz_equip\textures\equip_waterbottle_ca.paa";

@@ -1,7 +1,7 @@
 class MV22;
 class MV22_DZ : MV22 { 
 	accuracy = 1000; 
-	scope = 2; 
+	scope = public; 
 	displayName = "MV-22"; 
 	crew = ""; 
 	typicalCargo[] = {}; 

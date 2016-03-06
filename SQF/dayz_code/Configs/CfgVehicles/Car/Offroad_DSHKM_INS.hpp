@@ -1,6 +1,6 @@
 class Offroad_DSHKM_base: Car
 {
-	scope = 0;
+	scope = private;
 	displayName = "Off-road";
 	picture = "\ca\wheeled\data\ico\hilux_DSHK_CA.paa";
 	icon = "\ca\wheeled\data\map_ico\icomap_hilux_DSHK_CA.paa";
@@ -251,7 +251,7 @@ class Offroad_DSHKM_base: Car
 };
 class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_base
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "GUE";
 	crew = "";
@@ -294,7 +294,7 @@ class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_base
 
 class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_base
 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	faction = "GUE";
 	crew = "";

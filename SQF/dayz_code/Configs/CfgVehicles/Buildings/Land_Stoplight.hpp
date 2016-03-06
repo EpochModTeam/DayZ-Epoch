@@ -1,6 +1,6 @@
 class Land_Stoplight01: House
 	{
-		scope = 1;
+		scope = protected;
 		model = "\ca\buildings\Misc\stoplight01";
 		armor = 50;
 		class MarkerLights

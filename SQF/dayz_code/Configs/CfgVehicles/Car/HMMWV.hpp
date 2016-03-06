@@ -1,6 +1,6 @@
 class HMMWV_Base: Car
 {
-	scope = 0;
+	scope = private;
 	accuracy = 0.3;
 	side = 1;
 	faction = "USMC";
@@ -315,7 +315,7 @@ class HMMWV_DZ: HMMWV_Base {
 	mapsize = 5;
 	model = "ca\wheeled_E\HMMWV\HMMWV";
 	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
@@ -333,7 +333,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_Base
 {
 	expansion = 1;
 	side = 1;
-	scope = 2;
+	scope = public;
 	transportSoldier = 4;
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 120;
@@ -597,7 +597,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_Base
 {
 	expansion = 1;
 	side = 1;
-	scope = 2;
+	scope = public;
 	transportSoldier = 4;
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 120;
@@ -861,7 +861,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
 {
 	expansion = 1;
 	side = 1;
-	scope = 0;
+	scope = private;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
 	displayname = "HMMWV GPK (M2) DZ";
 	transportMaxWeapons = 4;
@@ -965,7 +965,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
 };
 class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_M1151_M2_DES_Base_EP1_DZ
 {
-	scope = 2;
+	scope = public;
 	side = 1;
 	faction = "BIS_CZ";
 	crew = "";
@@ -984,7 +984,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
 {
 	expansion = 1;
 	side = 1;
-	scope = 0;
+	scope = private;
 	armor = 80;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
 	displayname = "HMMWV GPK (M2) AL";
@@ -1065,7 +1065,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
 
 class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_DES_Base_EP1_DZE
 {
-	scope = 2;
+	scope = public;
 	side = 1;
 	faction = "BIS_CZ";
 	crew = "";

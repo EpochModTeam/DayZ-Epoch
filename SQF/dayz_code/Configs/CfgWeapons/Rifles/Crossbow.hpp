@@ -42,7 +42,7 @@ class Crossbow_Base : Rifle
 
 class Crossbow_DZ : Crossbow_Base
 {
-	scope = 2;
+	scope = public;
 	
 	model = "z\addons\community_crossbow\models\crossbow.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_icon.paa";

@@ -1,5 +1,5 @@
 class WeaponHolder_ItemHatchet_DZE: WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = $STR_EQUIP_NAME_41;
 	model = "\dayz_equip\models\hatchet.p3d";
 	class eventHandlers {
@@ -7,7 +7,7 @@ class WeaponHolder_ItemHatchet_DZE: WeaponHolderBase {
 	};
 };
 class WeaponHolder_ItemMachete: WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = "Machete";
 	model="\z\addons\dayz_communityassets\models\machete.p3d";
 	class eventHandlers {
@@ -15,7 +15,7 @@ class WeaponHolder_ItemMachete: WeaponHolderBase {
 	};
 };
 class WeaponHolder_MeleeCrowbar: WeaponHolderBase {
-	scope = 2;
+	scope = public;
 	displayName = "Crowbar";
 	model = "\dayz_equip\models\crowbar.p3d";
 	class eventHandlers {

@@ -1,5 +1,5 @@
 class ItemFertilizer: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = "Fertilizer";
 	descriptionShort = "Fertilizer";
@@ -10,7 +10,7 @@ class ItemFertilizer: CA_Magazine {
 };
 
 class ItemPumpkinSeed: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = "A Pumpkin Seed";
 	descriptionShort = "A Pumpkin Seed";
@@ -32,7 +32,7 @@ class ItemPumpkinSeed: CA_Magazine {
 };
 
 class ItemPumpkinPlant: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = "A Pumpkin Plant";
 	descriptionShort = "A Pumpkin Plant";
@@ -51,7 +51,7 @@ class ItemPumpkinPlant: CA_Magazine {
 };
 
 class ItemHempSeed: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = "A Hemp Seed";
 	descriptionShort = "A Hemp Seed";
@@ -73,7 +73,7 @@ class ItemHempSeed: CA_Magazine {
 };
 
 class ItemHempPlant: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = "A Hemp Plant";
 	descriptionShort = "A Hemp Plant";

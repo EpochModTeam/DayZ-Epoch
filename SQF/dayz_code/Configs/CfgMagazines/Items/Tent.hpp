@@ -1,7 +1,7 @@
 //TENT CONFIGS ARE FOND IN DZE/MISC.HPP
 class ItemTent : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem * 3;
 	
@@ -25,7 +25,7 @@ class ItemTent : CA_Magazine
 
 class ItemDomeTent : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem * 3;
 	

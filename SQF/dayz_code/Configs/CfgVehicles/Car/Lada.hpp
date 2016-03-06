@@ -1,6 +1,6 @@
 class Lada_base: Car {
 	wheelCircumference = 1.866;
-	scope = 1;
+	scope = protected;
 	model = "\CA\wheeled2\Lada\Lada.p3d";
 	picture = "\Ca\wheeled2\data\UI\Picture_lada_ca.paa";
 	displayname = "UAZ";
@@ -182,7 +182,7 @@ class Lada_base: Car {
 
 class Lada_base_alt: Car {
 	wheelCircumference = 1.866;
-	scope = 1;
+	scope = protected;
 	picture = "\Ca\wheeled2\data\UI\Picture_lada_ca.paa";
 	displayname = "UAZ";
 	class Library {
@@ -366,7 +366,7 @@ class Lada_base_alt: Car {
 };
 
 class Lada1: Lada_base {
-	scope = 2;
+	scope = public;
 	displayname = "UAZ (White)";
 	accuracy = 1000;
 	hiddenSelections[] = {};
@@ -377,7 +377,7 @@ class Lada1: Lada_base {
 	};
 };
 class Lada2: Lada_base {
-	scope = 2;
+	scope = public;
 	hiddenSelections[] = {"Camo1"};
 	displayname = "UAZ (Red)";
 	accuracy = 1000;
@@ -389,7 +389,7 @@ class Lada2: Lada_base {
 	};
 };
 class LadaLM: Lada_base {
-	scope = 2;
+	scope = public;
 	model = "\CA\wheeled2\Lada\Lada_LM.p3d";
 	displayname = "UAZ (Militia)";
 	class Reflectors: Reflectors {
@@ -425,7 +425,7 @@ class LadaLM: Lada_base {
 };
 class Lada1_TK_CIV_EP1: Lada_base {
 	expansion = 1;
-	scope = 2;
+	scope = public;
 	side = 3;
 	faction = "BIS_TK_CIV";
 	hiddenSelections[] = {"Camo1","Camo2"};
@@ -442,7 +442,7 @@ class Lada1_TK_CIV_EP1: Lada_base {
 };
 class Lada2_TK_CIV_EP1: Lada_base {
 	expansion = 1;
-	scope = 2;
+	scope = public;
 	side = 3;
 	faction = "BIS_TK_CIV";
 	hiddenSelections[] = {"Camo1","Camo2"};

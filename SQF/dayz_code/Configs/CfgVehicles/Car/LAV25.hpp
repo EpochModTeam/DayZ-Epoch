@@ -1,6 +1,6 @@
 class LAV25;
 class LAV25_DZ: LAV25 {
-	scope = 2;
+	scope = public;
 	side = TGuerrila;
 	displayName = "LAV-25 DZ";
 
@@ -21,7 +21,7 @@ class LAV25_DZ: LAV25 {
 };
 class LAV25_HQ;
 class LAV25_HQ_DZ: LAV25_HQ {
-	scope = 2;
+	scope = public;
 	side = TGuerrila;
 	displayName = "LAV-25 (HQ) DZ";
 

@@ -1,6 +1,6 @@
 	class ItemCanvas: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Canvas";
@@ -58,7 +58,7 @@
 	};
 	class ItemBurlap: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Burlap";
@@ -80,7 +80,7 @@
 	};
 	class ItemLightBulb: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Light Bulb";
@@ -104,7 +104,7 @@
 
 	class ItemZombieParts: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Zombie Parts";
@@ -115,7 +115,7 @@
 
 	class ItemComboLock: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Combination Lock";
@@ -128,7 +128,7 @@
 
 	class ItemCorrugated : CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Corrugated Fence";
@@ -173,7 +173,7 @@
 	};
 	class ItemPole: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Metal Pole";
@@ -221,7 +221,7 @@
 	};
 	class ItemGunRackKit: CA_Magazine
     {
-        scope = 2;
+        scope = public;
         count = 1;
         type = 256;
         displayName = "Gun Rack Kit";
@@ -242,7 +242,7 @@
     };
 	class ItemWoodCrateKit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Wood Crate";
@@ -263,7 +263,7 @@
 	};
 	class ItemOilBarrel: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		// fuelQuantity = 210;
 		type = 256;
@@ -274,7 +274,7 @@
 	};
 	class ItemFuelBarrel: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		fuelQuantity = 210;
 		type = 256;
@@ -285,7 +285,7 @@
 	};
 	class ItemFuelBarrelEmpty: ItemFuelBarrel
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		fuelQuantity = 0;
 		type = 256;
@@ -306,7 +306,7 @@
 	};
 	class ItemFireBarrel_kit: CA_Magazine
     {
-            scope = 2;
+            scope = public;
             count = 1;
             type = 256;
             displayName = "Fire Barrel Kit";
@@ -327,7 +327,7 @@
     };
 	class workbench_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Workbench";
@@ -350,7 +350,7 @@
 	// BUILDING KITS
 	class wood_ramp_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Wood Ramp";
@@ -370,7 +370,7 @@
 	};
 	class 30m_plot_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "30 Meter Plot";
@@ -391,7 +391,7 @@
 
 	class metal_panel_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Metal Panel";
@@ -421,7 +421,7 @@
 	};
 	class deer_stand_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Deer Stand";
@@ -442,7 +442,7 @@
 	};
 	class desert_large_net_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Large Desert Camo Net";
@@ -463,7 +463,7 @@
 	};
 	class forest_large_net_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Large Forest Camo Net";
@@ -484,7 +484,7 @@
 	};
 	class desert_net_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Desert Camo Net";
@@ -514,7 +514,7 @@
 	};
 	class forest_net_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Forest Camo Net";
@@ -544,7 +544,7 @@
 	};
 	class fuel_pump_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Fuel Pump";
@@ -565,7 +565,7 @@
 	};
 	class light_pole_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Light Pole";
@@ -586,7 +586,7 @@
 	};
 	class stick_fence_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Stick Fence";
@@ -607,7 +607,7 @@
 	};
 	class wooden_shed_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Nice Wooden Shed";
@@ -628,7 +628,7 @@
 	};
 	class wood_shack_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Wood Shack";
@@ -649,7 +649,7 @@
 	};
 	class m240_nest_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "M240 Nest";
@@ -670,7 +670,7 @@
 	};
 	class sun_shade_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Canvas Sun Shade";
@@ -691,7 +691,7 @@
 	};
 	class park_bench_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Wood Bench";
@@ -712,7 +712,7 @@
 	};
 	class rusty_gate_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Rusty Gate";
@@ -733,7 +733,7 @@
 	};
 	class sandbag_nest_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Sandbag Nest";
@@ -754,7 +754,7 @@
 	};
 	class outhouse_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Outhouse";
@@ -775,7 +775,7 @@
 	};
 	class storage_shed_kit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Storage Shed";
@@ -797,7 +797,7 @@
 	
 	class ItemScaffoldingKit: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Scaffolding";
@@ -819,7 +819,7 @@
 	// Custom player vault
 	class ItemVault: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Safe";
@@ -838,7 +838,7 @@
 	};
 	class ItemLockbox: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Lockbox";
@@ -859,7 +859,7 @@
 
 	class PartWoodPile: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_40;
@@ -907,7 +907,7 @@
 	};
 	class PartPlankPack: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Lumber Pack";
@@ -929,7 +929,7 @@
 	};
 	class CinderBlocks: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Cinder Blocks";
@@ -971,7 +971,7 @@
 	};
 	class MortarBucket: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Bucket of Mortar";
@@ -982,7 +982,7 @@
 	};
 	class PartPlywoodPack: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Plywood Pack";
@@ -1005,7 +1005,7 @@
 	};
 	class PartWoodLumber: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Lumber";
@@ -1095,7 +1095,7 @@
 	};
 	class PartWoodPlywood: CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Plywood";
@@ -1154,7 +1154,7 @@
 	};
 	class ItemTent : CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = WeaponSlotItem * 3;
 		
@@ -1177,7 +1177,7 @@
 	};
 	class ItemTentOld: ItemTent
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_20;
@@ -1216,7 +1216,7 @@
 	};
 	class ItemDomeTent : CA_Magazine
 	{
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = WeaponSlotItem * 3;
 		
@@ -1256,7 +1256,7 @@
 		};
 	};
 	class ItemTentDomed : ItemTent { //Legacy Epoch
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Camping Tent Desert";
@@ -1293,7 +1293,7 @@
 		};
 	};
 	class ItemTentDomed2 : ItemTent { //Legacy Epoch
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Camping Tent Green";
@@ -1329,7 +1329,7 @@
 	};
 
 	class ItemSandbag : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_21;
@@ -1400,7 +1400,7 @@
 	};
 
 	class BagFenceRound_DZ_kit : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Round Sandbag Fence";
@@ -1428,7 +1428,7 @@
 	};
 
 	class ItemSledgeHead : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Sledgehammer Head";
@@ -1450,7 +1450,7 @@
 		};
 	};
 	class ItemSledgeHandle : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "Sledgehammer Handle";
@@ -1473,7 +1473,7 @@
 	};
 
 	class ItemSandbagLarge : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "H-barrier cube";
@@ -1502,7 +1502,7 @@
 
 
 	class ItemSandbagExLarge : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "3 x H-barrier cube";
@@ -1530,7 +1530,7 @@
 	};
 
 	class ItemSandbagExLarge5x : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = "5 x H-barrier cube";
@@ -1549,7 +1549,7 @@
 	};
 
 	class ItemTankTrap : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_22;
@@ -1568,7 +1568,7 @@
 	};
 
 	class ItemWire : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		type = 256;
 		displayName = $STR_EQUIP_NAME_23;
@@ -1590,7 +1590,7 @@
 
 	class HandGrenade_Stone;
 	class ItemTrashToiletpaper : HandGrenade_Stone {
-		scope = 2;
+		scope = public;
 		count = 1;
 		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
@@ -1601,7 +1601,7 @@
 	};
 
 	class ItemKiloHemp : CA_Magazine {
-		scope = 2;
+		scope = public;
 		count = 1;
 		displayName = "Kilo of Hemp";
 		descriptionShort = "Kilo of Hemp";

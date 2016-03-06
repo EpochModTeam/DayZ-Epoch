@@ -1,6 +1,6 @@
 class FishRawTrout : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\trout.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_trout_CA.paa";
@@ -15,7 +15,7 @@ class FishRawTrout : FoodRaw
 
 class FishCookedTrout : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\trout_cooked.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_trout_cooked_CA.paa";
@@ -30,7 +30,7 @@ class FishCookedTrout : FoodCooked
 
 class FishRawSeaBass : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\seabass.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_seabass_CA.paa";
@@ -45,7 +45,7 @@ class FishRawSeaBass : FoodRaw
 
 class FishCookedSeaBass : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\seabass_cooked.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_seabass_cooked_CA.paa";
@@ -60,7 +60,7 @@ class FishCookedSeaBass : FoodCooked
 
 class FishRawTuna : FoodRaw
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\tuna.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_tuna_CA.paa";
@@ -75,7 +75,7 @@ class FishRawTuna : FoodRaw
 
 class FishCookedTuna : FoodCooked
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\z\addons\dayz_communityassets\models\tuna_cooked.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_tuna_cooked_CA.paa";

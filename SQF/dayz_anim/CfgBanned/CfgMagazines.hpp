@@ -2,7 +2,7 @@ class CfgMagazines {
 	class Default;
 	class FakeMagazine: Default
 	{
-		scope = 1;
+		scope = protected;
 		ammo = "FakeAmmo";
 		stopThis = true;
 		value = 1;

@@ -1,5 +1,5 @@
 class ItemTrout : FoodEdible {
-	scope = 2;
+	scope = public;
 	displayName = "Rainbow Trout";
 	descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
 	model = "\z\addons\dayz_epoch\models\trout.p3d";
@@ -7,7 +7,7 @@ class ItemTrout : FoodEdible {
 	bloodRegen = 400;
 };
 class ItemSeaBass : FoodEdible {
-	scope = 2;
+	scope = public;
 	displayName = "Sea Bass";
 	descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
 	model = "\z\addons\dayz_epoch\models\seabass.p3d";
@@ -15,7 +15,7 @@ class ItemSeaBass : FoodEdible {
 	bloodRegen = 800;
 };
 class ItemTuna : FoodEdible {
-	scope = 2;
+	scope = public;
 	displayName = "Blue Fin Tuna";
 	descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
 	model = "\z\addons\dayz_epoch\models\tuna.p3d";
@@ -23,7 +23,7 @@ class ItemTuna : FoodEdible {
 	bloodRegen = 2500;
 };
 class ItemTroutCooked : FoodEdible {
-	scope = 2;
+	scope = public;
 	displayName = "Rainbow Trout (Cooked)";
 	descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
 	model = "\z\addons\dayz_epoch\models\trout_cooked.p3d";
@@ -31,7 +31,7 @@ class ItemTroutCooked : FoodEdible {
 	bloodRegen = 800;
 };
 class ItemSeaBassCooked : FoodEdible {
-	scope = 2;
+	scope = public;
 	displayName = "Sea Bass (Cooked)";
 	descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
 	model = "\z\addons\dayz_epoch\models\seabass_cooked.p3d";
@@ -39,7 +39,7 @@ class ItemSeaBassCooked : FoodEdible {
 	bloodRegen = 1600;
 };
 class ItemTunaCooked : FoodEdible {
-	scope = 2;
+	scope = public;
 	displayName = "Blue Fin Tuna (Cooked)";
 	descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
 	model = "\z\addons\dayz_epoch\models\tuna_cooked.p3d";
@@ -47,7 +47,7 @@ class ItemTunaCooked : FoodEdible {
 	bloodRegen = 5000;
 };
 class FoodBioMeat: FoodEdible {
-	scope = 2;
+	scope = public;
 	displayName = "Bio Meat";
 	model = "\z\addons\dayz_epoch\models\biomeat_can.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_biomeat_CA.paa";
@@ -56,7 +56,7 @@ class FoodBioMeat: FoodEdible {
 };
 // new DZE harvested food
 class FoodPumpkin : FoodEdible {
-	scope = 2;
+	scope = public;
 	count = 1;
 	bloodRegen = 100;
 	displayName = "Pumpkin";
@@ -78,7 +78,7 @@ class FoodPumpkin : FoodEdible {
 	};
 };
 class FoodSunFlowerSeed : FoodEdible {
-	scope = 2;
+	scope = public;
 	count = 1;
 	bloodRegen = 100;
 	displayName = "Bag of Sunflower Seeds";

@@ -1,6 +1,6 @@
 class Attachment_Sup556 : CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	

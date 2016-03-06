@@ -6,7 +6,7 @@ class CfgMarkers
     color[] = {1, 0, 0, 1};
     size = 32;
     shadow = true;
-    scope = 0;
+    scope = private;
 	};
  class Cricle02 {
     name = "Marker description";
@@ -14,7 +14,7 @@ class CfgMarkers
     color[] = {1, 0, 0, 1};
     size = 32;
     shadow = true;
-    scope = 0;
+    scope = private;
 	};
  class Cross01 {
     name = "Marker description";
@@ -22,7 +22,7 @@ class CfgMarkers
     color[] = {1, 0, 0, 1};
     size = 32;
     shadow = true;
-    scope = 0;
+    scope = private;
 	};
  class Cross02 {
     name = "Marker description";
@@ -30,7 +30,7 @@ class CfgMarkers
     color[] = {1, 0, 0, 1};
     size = 32;
     shadow = true;
-    scope = 0;
+    scope = private;
 	};
 class Questionmark {
     name = "Marker description";
@@ -38,6 +38,6 @@ class Questionmark {
     color[] = {1, 0, 0, 1};
     size = 32;
     shadow = true;
-    scope = 0;
+    scope = private;
 	};	
 };

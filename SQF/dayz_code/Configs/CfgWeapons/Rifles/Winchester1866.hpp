@@ -1,6 +1,6 @@
 class Winchester1866_DZ : Rifle
 {
-	scope = 2;
+	scope = public;
 	
 	model = "\dayz_weapons\models\Winchester1866.p3d";
 	picture = "\dayz_weapons\textures\equip_winchester1866_CA.paa";

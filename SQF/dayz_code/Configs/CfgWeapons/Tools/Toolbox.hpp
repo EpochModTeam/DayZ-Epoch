@@ -1,6 +1,6 @@
 class ItemToolbox : ItemCore
 {
-	scope = 2;
+	scope = public;
 	model = "\dayz_equip\models\toolbox.p3d";
 	picture = "\dayz_equip\textures\equip_toolbox_ca.paa";
 	displayName = $STR_EQUIP_NAME_2;

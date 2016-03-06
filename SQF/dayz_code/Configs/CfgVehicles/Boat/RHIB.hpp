@@ -277,7 +277,7 @@ class RHIB2Turret: RHIB
 
 class RHIB_DZ : Boat
 {
-	scope = 2;
+	scope = public;
 	displayName = "RHIB";
 	vehicleClass = "Ship";
 	accuracy = 0.5;

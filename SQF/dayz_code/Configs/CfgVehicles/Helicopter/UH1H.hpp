@@ -11,7 +11,7 @@ class UH1H_base: Helicopter {
 };
 
 class UH1H_DZ: UH1H_base {
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

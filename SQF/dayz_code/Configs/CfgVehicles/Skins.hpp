@@ -11,7 +11,7 @@ class CAManBase: Man
 class Civilian: CAManBase
 {
 	rarityUrban = -1;
-	scope = 0;
+	scope = private;
 	faction = "CIV";
 	genericNames = "CzechMen";
 	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca.paa";
@@ -67,7 +67,7 @@ class Civilian: CAManBase
 };
 
 class Survivor_DZ : Civilian {
-	scope = 1;
+	scope = protected;
 	side = TWest;
 	weapons[] = {"Throw", "Put"};
 	magazines[] = {};
@@ -86,13 +86,13 @@ class Survivor_DZ : Civilian {
 };
 
 class Survivor1_DZ : Survivor_DZ {
-	scope = 2;
+	scope = public;
 	displayName = $STR_CHAR_1;
 	model = "\dayz\objects\proxy_man";
 };
 
 class Survivor2_DZ : Survivor_DZ {
-	scope = 2;
+	scope = public;
 	displayName = $STR_CHAR_1;
 	model = "\dayz\characters\man_survivor";
 };
@@ -106,7 +106,7 @@ class Survivor3_DZ : Survivor2_DZ {
 //See DZE\Females.hpp for female characters
 
 class Bandit1_DZ : Survivor_DZ { //GER_Soldier_EP1
-	scope = 2;
+	scope = public;
 	displayName = $STR_CHAR_2;
 	model = "\ca\characters_E\GER\GER_rifleman";
 	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
@@ -120,7 +120,7 @@ class Bandit1_DZ : Survivor_DZ { //GER_Soldier_EP1
 };
 
 class Rocket_DZ: Survivor_DZ { //BAF_Soldier_Officer_W
-	scope = 2;
+	scope = public;
 	displayName = "Rocket";
 	model = "\ca\characters_d_BAF\BAF_Soldier_Officer_BAF";
 	portrait = "\ca\characters_d_baf\Data\portraits\baf_officer_CA";
@@ -147,7 +147,7 @@ class Rocket_DZ: Survivor_DZ { //BAF_Soldier_Officer_W
 };
 
 class Soldier1_DZ: Survivor_DZ { //BAF_Soldier_W
-	scope = 2;
+	scope = public;
 	displayName = "Soldier";
 	model = "\ca\characters_d_BAF\BAF_Soldier_1_BAF";
 	portrait = "ca\characters_d_baf\Data\portraits\baf_soldier_CA";
@@ -173,7 +173,7 @@ class Soldier1_DZ: Survivor_DZ { //BAF_Soldier_W
 };
 
 class Sniper1_DZ: Survivor_DZ { //BAF_Soldier_SniperH_W
-	scope = 2;
+	scope = public;
 	displayName = "Sniper";
 	model = "\ca\characters_e\Ghillie\Ghillie_Overall";
 	portrait = "\Ca\characters\data\portraits\comBarHead_common_sniper_ca";
@@ -188,7 +188,7 @@ class Sniper1_DZ: Survivor_DZ { //BAF_Soldier_SniperH_W
 };
 
 class Camo1_DZ: Survivor_DZ { //BAF_Soldier_L_W
-	scope = 2;
+	scope = public;
 	displayName = $STR_CHAR_1;
 	model = "\ca\characters_d_BAF\BAF_Soldier_light_BAF";
 	portrait = "ca\characters_d_baf\Data\portraits\baf_soldier_CA";
@@ -337,7 +337,7 @@ class INS_Worker2_DZ: INS_Worker2 {
 // bandits
 class Soldier_Crew_PMC;
 class Bandit2_DZ: Soldier_Crew_PMC {
-	scope = 2;
+	scope = public;
 	side = 1;
 	displayName = $STR_CHAR_2;
 	weapons[] = {"Throw","Put"};

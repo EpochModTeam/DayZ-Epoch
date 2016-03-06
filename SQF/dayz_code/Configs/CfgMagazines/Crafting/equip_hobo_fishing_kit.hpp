@@ -1,5 +1,5 @@
 class equip_hobo_fishing_kit : CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	displayName = "Hobo Fishing Kit";
 	descriptionShort = "Hobo Fishing Kit, catches dem fishes";

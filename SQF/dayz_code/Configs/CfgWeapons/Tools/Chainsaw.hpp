@@ -1,6 +1,6 @@
 	class ChainSaw: Rifle
 	{
-		scope = 2;
+		scope = public;
 		//melee= "true";
 
 		/*

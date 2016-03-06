@@ -1,5 +1,5 @@
 class UralCivil_DZ: UralCivil {
-	scope=2;
+	scope = public;
 	side=TCivilian;
 	faction=CIV;
 	displayName= $STR_DN_URAL_CIV;
@@ -21,7 +21,7 @@ class UralCivil_DZ: UralCivil {
 };
 class Ural_Base;
 class UralCivil_DZE : Ural_Base {
-	scope = 2;
+	scope = public;
 	side = 3;
 	faction = "CIV";
 	displayName = "Ural (Civil)";
@@ -44,7 +44,7 @@ class UralCivil2_DZE : UralOpen_Base {
 	displayName = "Ural (Civil 2)";
 	model = "\ca\wheeled\Ural_Open";
 	accuracy = 0.22;
-	scope = 2;
+	scope = public;
 	side = 3;
 	faction = "CIV";
 	vehicleClass = "Car";
@@ -61,7 +61,7 @@ class UralCivil2_DZE : UralOpen_Base {
 };
 class UralRefuel_TK_EP1;
 class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
-	scope = 2;
+	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

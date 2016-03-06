@@ -6,6 +6,6 @@ class CamoNet_DZ: BuiltItems {
 	icon = "\Ca\misc3\data\Icons\icon_camoNet_ca.paa";
 	mapsize = 13.5;
 	model = "\Ca\misc3\CamoNet_EAST";
-	scope = 2;
+	scope = public;
 	vehicleclass = "Military";
 };
