@@ -11,7 +11,7 @@ if (_tape in magazines player) then {
 	//Fix the bottle
 	player playActionNow "Medic";
 	[player,"bandage",0,false] call dayz_zombieSpeak;
-	sleep 6;
+	uiSleep 6;
 	player removeMagazine _bottle;
 	player removeMagazine _tape;
 	player addMagazine _fixedBottle;

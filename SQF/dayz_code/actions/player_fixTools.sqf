@@ -20,7 +20,7 @@ if ((_tape in magazines player) && (_handle in magazines player)) then {
 	//Fix the tool
 	player playActionNow "Medic";
 	[player,"bandage",0,false] call dayz_zombieSpeak;
-	sleep 6;
+	uiSleep 6;
 	player removeWeapon _tool;
 	player removeMagazine _tape;
 	player removeMagazine _handle;

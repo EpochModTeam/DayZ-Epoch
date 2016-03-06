@@ -389,7 +389,7 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 	//setGroupIconsVisible [false,false];
 	//clearGroupIcons group player;
 
-	sleep 2;
+	uiSleep 2;
 
 	_myPos = player getVariable["lastPos",[]];
 	if (count _myPos > 0) then {

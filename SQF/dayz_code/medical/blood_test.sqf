@@ -39,7 +39,7 @@ if (!_hasTester) exitWith {};
 
 _dialog = createDialog "bloodTest";
 
-sleep 0.02;
+uiSleep 0.02;
 
 _display = uiNamespace getVariable 'DayZ_Blood_Test';
 _resultsCard_hidden = _display displayCtrl 1288;
@@ -210,7 +210,7 @@ if (_allClicked == 4) then {
 	switch (_type) do {
 		case "A" : {
 		if (!_allDisplayed) then {
-			sleep 2;
+			uiSleep 2;
 			if (r_antiA_done and !_antiA_displayed) then {
 				_antiA ctrlSetText (_aglutArray select _rnd1);
 				_antiA_displayed = true;
@@ -232,7 +232,7 @@ if (_allClicked == 4) then {
 		};
 		case "B" : {
 		if (!_allDisplayed) then {
-			sleep 2;
+			uiSleep 2;
 			if (r_antiA_done and !_antiA_displayed) then {
 				_antiA ctrlSetText (_wholeArray select _rnd1);
 				_antiA_displayed = true;
@@ -254,7 +254,7 @@ if (_allClicked == 4) then {
 		};
 		case "AB" : {
 		if (!_allDisplayed) then {
-			sleep 2;
+			uiSleep 2;
 			if (r_antiA_done and !_antiA_displayed) then {
 				_antiA ctrlSetText (_aglutArray select _rnd1);
 				_antiA_displayed = true;
@@ -276,7 +276,7 @@ if (_allClicked == 4) then {
 		};
 		case "O" : {
 		if (!_allDisplayed) then {
-			sleep 2;
+			uiSleep 2;
 			if (r_antiA_done and !_antiA_displayed) then {
 				_antiA ctrlSetText (_wholeArray select _rnd1);
 				_antiA_displayed = true;
@@ -310,10 +310,10 @@ if (_allClicked == 4) then {
 		r_doLoop = false;
 		_isDone = true;
 		[] spawn {
-			sleep 7;
+			uiSleep 7;
 			player setVariable["blood_testDone",true,true];
 			player setVariable["medForceUpdate",true];
 		};
 	};
-	sleep 0.01;
+	uiSleep 0.01;
 };

@@ -160,7 +160,7 @@ if (isPlayer cursorTarget) then {
 					_y = _y + 1;
 					_vehicle = (_vehClose select _y);
 					_vehType = getText (configFile >> "CfgVehicles" >> typeOf _unit >> "displayName");
-					sleep 0.001;
+					uiSleep 0.001;
 				};
 				_action = _unit addAction [format[localize "str_actions_medical_03",_vehType], "\z\addons\dayz_code\medical\load\load_act.sqf",[player,_vehicle,_unit], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];

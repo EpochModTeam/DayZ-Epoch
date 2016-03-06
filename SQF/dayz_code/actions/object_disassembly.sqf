@@ -120,7 +120,7 @@ for "_i" from 1 to 20 do {
 		_cursorTarget setPosATL _pos;
 	};
 
-    sleep 1.5;
+    uiSleep 1.5;
 
     if (r_interrupt) exitwith { 
         diag_log [diag_ticktime, __FILE__, "Operation interrupted, last building deleted is:", _upgrade];           

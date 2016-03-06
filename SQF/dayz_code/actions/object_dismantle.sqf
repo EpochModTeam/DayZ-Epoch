@@ -104,7 +104,7 @@ while {_isOk} do {
 			r_doLoop = false;
 			_finished = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 	
@@ -144,7 +144,7 @@ while {_isOk} do {
 	};
 	
 	titleText [format["Dismantle attempt (%1 of %2).", _counter,_limit], "PLAIN DOWN"];
-	sleep 0.10;
+	uiSleep 0.10;
 };
 
 //Completed and successful

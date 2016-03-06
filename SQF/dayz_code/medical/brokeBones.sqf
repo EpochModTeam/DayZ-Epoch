@@ -32,11 +32,11 @@ while {r_doLoop} do {
 		r_doLoop = false;
 	};
 	if (vehicle player != player) then {
-		sleep 3;
+		uiSleep 3;
 		r_doLoop = false;
 		_finished = true;
 	};
-	sleep 0.1;
+	uiSleep 0.1;
 };
 r_doLoop = false;
 

@@ -90,36 +90,40 @@ r_interrupt = false;
 };
 
 if (_complete) then {
-	switch (_bloodType) do {
-		case "A" : {
-			if (_rh) then {
-				player addMagazine "wholeBloodBagAPOS";
-			} else {
-				player addMagazine "wholeBloodBagANEG";
+	if (!DZE_UseBloodTypes) then {
+		player addMagazine "ItemBloodbag";
+	} else {
+		switch (_bloodType) do {
+			case "A" : {
+				if (_rh) then {
+					player addMagazine "wholeBloodBagAPOS";
+				} else {
+					player addMagazine "wholeBloodBagANEG";
+				};
 			};
-		};
 
-		case "B" : {
-			if (_rh) then {
-				player addMagazine "wholeBloodBagBPOS";
-			} else {
-				player addMagazine "wholeBloodBagBNEG";
+			case "B" : {
+				if (_rh) then {
+					player addMagazine "wholeBloodBagBPOS";
+				} else {
+					player addMagazine "wholeBloodBagBNEG";
+				};
 			};
-		};
 
-		case "AB" : {
-			if (_rh) then {
-				player addMagazine "wholeBloodBagABPOS";
-			} else {
-				player addMagazine "wholeBloodBagABNEG";
+			case "AB" : {
+				if (_rh) then {
+					player addMagazine "wholeBloodBagABPOS";
+				} else {
+					player addMagazine "wholeBloodBagABNEG";
+				};
 			};
-		};
 
-		case "O" : {
-			if (_rh) then {
-				player addMagazine "wholeBloodBagOPOS";
-			} else {
-				player addMagazine "wholeBloodBagONEG";
+			case "O" : {
+				if (_rh) then {
+					player addMagazine "wholeBloodBagOPOS";
+				} else {
+					player addMagazine "wholeBloodBagONEG";
+				};
 			};
 		};
 	};

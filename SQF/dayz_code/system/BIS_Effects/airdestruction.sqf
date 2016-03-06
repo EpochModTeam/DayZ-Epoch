@@ -127,7 +127,7 @@ else
 				deleteVehicle _v;
 				_v =(_wreck) createvehicle _pos;
 				{_x moveincargo _v} count _crw;
-				//sleep 0.05;
+				//uiSleep 0.05;
 				_v setvelocity _vel;
 				//_v setPos _pos;
 				_v setvectordir (_dir);

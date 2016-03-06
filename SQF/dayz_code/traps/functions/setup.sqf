@@ -13,6 +13,6 @@ if (!isNull _trap) then {
 			dayz_traps set [count dayz_traps, _trap];
 		};
 
-		sleep 0.5;
+		uiSleep 0.5;
 	};
 };

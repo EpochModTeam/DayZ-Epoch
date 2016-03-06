@@ -34,7 +34,7 @@ _ShuffleArray = {
 		_rand_array set [count _rand_array, _ar select _rand];
 		_ar set [_rand, "randarray_del"];
 		_ar = _ar - ["randarray_del"];
-		sleep 0.001;
+		uiSleep 0.001;
 	};
 	_rand_array;
 };
@@ -52,7 +52,7 @@ _activeArray = [];
 		_i = _i + 1;
 	};
 	_t = _t + 1;
-	sleep 0.01;
+	uiSleep 0.01;
 }count _infectedWaterHoles;
 //diag_log [ diag_tickTime, __FILE__, "Infectious waterholes Max,Spawned,Active:",_t,_i,_activeArray];
 

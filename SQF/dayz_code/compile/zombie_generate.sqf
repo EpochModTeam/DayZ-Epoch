@@ -52,7 +52,7 @@ _cantSee = {
 			};
 		};
 		if (!_isok) exitWith {false};
-	sleep 0.001;
+	uiSleep 0.001;
 	} forEach playableUnits;
 
 	_isok
@@ -91,7 +91,7 @@ if ((_maxlocalspawned < _maxControlledZombies) and (dayz_CurrentNearByZombies < 
 		};
 		
 		_agent = createAgent [_type, _position, [], _radius, _method]; 
-		sleep 0.03;
+		uiSleep 0.03;
 		
 		//add to global counter 
 		dayz_spawnZombies = dayz_spawnZombies + 1;
@@ -119,7 +119,7 @@ if ((_maxlocalspawned < _maxControlledZombies) and (dayz_CurrentNearByZombies < 
 
 		if (!isNull _agent) then {
 			_agent setDir random 360;
-			sleep 0.03;
+			uiSleep 0.03;
 
 			_position = getPosATL _agent;
 

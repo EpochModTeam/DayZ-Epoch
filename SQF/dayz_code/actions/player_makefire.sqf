@@ -35,7 +35,7 @@ if ((count _worldspace) == 2) then {
 	_location = _worldspace select 1;
 
 	player playActionNow "Medic";
-	sleep 1;
+	uiSleep 1;
 	// fireplace location may not be in front of player (but in 99% time it should)
 	player setDir _dir;
 	player setPosATL (getPosATL player);
@@ -46,7 +46,7 @@ if ((count _worldspace) == 2) then {
 	// Added Nutrition-Factor for work
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-	sleep 5;
+	uiSleep 5;
 
 	_fire = createVehicle ["Land_Fire_DZ", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
 	_fire setDir _dir;

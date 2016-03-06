@@ -22,7 +22,7 @@ player removeMagazine _item;
 _location = getPosATL player;
 
 player playActionNow "PutDown";
-sleep 1;
+uiSleep 1;
 
 _object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _object setDir (getDir player);

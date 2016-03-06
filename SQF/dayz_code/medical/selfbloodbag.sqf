@@ -7,7 +7,10 @@ _blood = _unit getVariable ["USEC_BloodQty", 0];
 _lowBlood = _unit getVariable ["USEC_lowBlood", false];
 _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
-_lastused = _unit getVariable ["LastTransfusion", time];
+//_lastused = _unit getVariable ["LastTransfusion", time];
+_lastused = selfTransfusionTime;
+_timeout = (DZE_selfTransfuse_Values select 2);
+if ((round(time - _lastused)) <= _timeout) exitWith {cutText [format[(localize "str_actions_medical_18"),(_timeout - (round(time - _lastused)))] , "PLAIN DOWN"]};
 
 call gear_ui_init;
 closeDialog 0;
@@ -66,7 +69,7 @@ while {r_doLoop and (_i < 12)} do {
 
 	if (_isMedic and !_started) then {
 		closeDialog 0;
-		diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
+		//diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
 		if (_badBag) then {
 			for "_r" from 0 to 15 do {
 				_bagToRemove = _bagUsed;
@@ -119,7 +122,9 @@ while {r_doLoop and (_i < 12)} do {
 	_blood = _unit getVariable ["USEC_BloodQty", 0];
 
 	if (((_blood >= r_player_bloodTotal) and !_badBag and _bagFound) or (_i == 12)) then {
-		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
+		//diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
+		selfTransfusionTime = time;
+		[_unit, DZE_selfTransfuse_Values] call player_medTransfuse;
 		cutText [localize "str_actions_medical_transfusion_successful", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_successful","PLAIN DOWN"] call RE;
 		[player,25] call player_humanityChange;
@@ -129,13 +134,12 @@ while {r_doLoop and (_i < 12)} do {
 	_isClose = ((player distance _unit) < ((sizeOf typeOf _unit) / 2));
 
 	if (r_interrupt or !_isClose or _forceClose) then {
-		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
-		cutText [localize "str_actions_medical_transfusion_interrupted", "PLAIN DOWN"];
+		//diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];		cutText [localize "str_actions_medical_transfusion_interrupted", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_interrupted","PLAIN DOWN"] call RE;
 		r_doLoop = false;
 	};
 
-	sleep 0.1;
+	uiSleep 0.1;
 };
 
 r_doLoop = false;

@@ -48,7 +48,7 @@ if(_classname == "WoodenArrow") then {
 
 if (_broken) exitWith {DZE_CanPickup = true; deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"]; };
 
-sleep 0.25; //Why are we waiting? Animation
+uiSleep 0.25; //Why are we waiting? Animation
 
 _claimedBy = _holder getVariable["claimed","0"];
 

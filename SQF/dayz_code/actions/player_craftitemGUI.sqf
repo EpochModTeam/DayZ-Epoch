@@ -109,7 +109,7 @@ if (count _nearByPile > 0) then {
 				};
 			};
 		} forEach _output;
-		//sleep 1;
+		//uiSleep 1;
 
 		if (_availabeSpace) then {
 			player playActionNow "PutDown";
@@ -128,7 +128,7 @@ if (count _nearByPile > 0) then {
 							player removeMagazine _item;
 						};
 					};
-					//sleep 0.1;
+					//uiSleep 0.1;
 				};
 			} forEach _input;
 
@@ -154,10 +154,10 @@ if (count _nearByPile > 0) then {
 							};
 						};
 						cutText [format [localize "str_crafting_success",_itemName], "PLAIN DOWN"];
-						//sleep 2;
+						//uiSleep 2;
 					} else {
 						cutText [format [localize "str_crafting_failed",_itemName], "PLAIN DOWN"];
-						//sleep 2;
+						//uiSleep 2;
 					};
 				};
 			} forEach _output;

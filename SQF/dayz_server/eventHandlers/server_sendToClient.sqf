@@ -47,8 +47,8 @@ switch (_variable) do {
 	};
 	
 	case "GutBody": {
-		PVCDZ_obj_GutBody = _arraytosend;
-		_owner publicVariableClient "PVCDZ_obj_GutBody";
+		PVCDZE_obj_GutBody = _arraytosend;
+		_owner publicVariableClient "PVCDZE_obj_GutBody";
 	};
 
 	case "HideBody": {
@@ -67,8 +67,8 @@ switch (_variable) do {
 	};
 	
 	case "Bleed": {
-		usecBleed = _arraytosend;
-		_owner publicVariableClient "usecBleed";
+		PVDZ_hlt_Bleed = _arraytosend;
+		_owner publicVariableClient "PVDZ_hlt_Bleed";
 	};
 
 	case "PVDZE_plr_SetDate": {

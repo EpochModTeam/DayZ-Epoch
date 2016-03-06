@@ -9,8 +9,8 @@ for "_i" from ((count _list) - 1) to 0 step -1 do
 		_position = getArray (_config >> "position");
 		_object = nearestObject [_position,_type];
 		deleteVehicle _object;
-		if ((_i % 25) == 0) then { sleep 0.01; };
+		if ((_i % 25) == 0) then { uiSleep 0.01; };
 	};
-	sleep 0.001;
+	uiSleep 0.001;
 };
 //diag_log ("CLEAR: " + str(_this));

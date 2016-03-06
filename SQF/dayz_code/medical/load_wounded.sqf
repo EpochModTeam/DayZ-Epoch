@@ -9,13 +9,13 @@ if (!local _wounded) exitWith {};
 
 r_action = false;
 
-sleep 1;
+uiSleep 1;
 _vcl = _wounded getVariable "NORRN_loadVcl";
 _wounded setVariable ["NORRN_unit_dragged", true, true];
 
 _wounded assignAsCargo _vcl;
 _wounded moveInCargo _vcl;
-sleep 1;
+uiSleep 1;
 //["PVDZ_drg_RaLW",_wounded] call broadcastRpcCallAll;
 	norrnRaLW = _wounded;
 	publicVariable "norrnRaLW";
@@ -31,15 +31,15 @@ if (local _wounded) then
 			if (vehicle _wounded != _wounded) then
 			{
 				unassignVehicle _wounded;
-				sleep 0.05;
+				uiSleep 0.05;
 				_wounded action ["EJECT", _vcl];
-				sleep 1;
+				uiSleep 1;
 			};
 //			PVDZ_drg_RAlie = _wounded; // not used
 //			publicVariable "PVDZ_drg_RAlie"; // not used
 			_wounded switchMove "ainjppnemstpsnonwrfldnon";
 			_wounded setVariable ["NORRN_unit_dragged", false, true];
-			sleep 1;
+			uiSleep 1;
 		};
 	};
 
@@ -48,5 +48,5 @@ if (local _wounded) then
 		_wounded playMove "BasicDriver";
 	};
 };
-sleep 0.01;
+uiSleep 0.01;
 if (true) exitWith {};

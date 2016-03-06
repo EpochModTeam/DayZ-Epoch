@@ -11,7 +11,7 @@ r_action = false;
 if (vehicle player == player) then {
 	player playActionNow "Medic";
 };
-[1,1] call dayz_HungerThirst;
+
 r_interrupt = false;
 _animState = animationState player;
 r_doLoop = true;

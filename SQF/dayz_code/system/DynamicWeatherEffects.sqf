@@ -278,7 +278,7 @@ if (isServer) then {
 
     setWind [drn_DynamicWeather_WindX, drn_DynamicWeather_WindZ, true];
 
-    sleep 0.05;
+    uiSleep 0.05;
 
     publicVariable "drn_var_DynamicWeather_Rain";
     drn_var_DynamicWeather_ServerInitialized = true;
@@ -307,8 +307,8 @@ if (isServer) then {
         _overcastLevel = 2;
 
         while {1 == 1} do {
-            // Sleep a while until next weather change
-            sleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
+            // uiSleep a while until next weather change
+            uiSleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
 
             if (_minimumFog == _maximumFog && _minimumOvercast != _maximumOvercast) then {
                 _weatherType = "OVERCAST";
@@ -435,7 +435,7 @@ if (isServer) then {
 
             call drn_fnc_DynamicWeather_SetWeatherAllClients;
 
-            sleep _weatherChangeTimeSek;
+            uiSleep _weatherChangeTimeSek;
         };
     };
 
@@ -506,10 +506,10 @@ if (isServer) then {
                 };
 
                 if (_debug) then {
-                    sleep 1;
+                    uisleep 1;
                 }
                 else {
-                    sleep 10;
+                    uisleep 10;
                 };
             };
         };
@@ -538,7 +538,7 @@ drn_var_rainRoutine = [_rainIntervalRainProbability, _debug] spawn {
     };
 
     0 setRain _rain;
-    sleep 0.1;
+    uiSleep 0.1;
 
     while {1 == 1} do {
         if (_rainIntervalRainProbability > 0) then {
@@ -557,7 +557,7 @@ drn_var_rainRoutine = [_rainIntervalRainProbability, _debug] spawn {
 
         3 setRain _rain;
 
-        sleep 3;
+        uiSleep 3;
     };
 };
 

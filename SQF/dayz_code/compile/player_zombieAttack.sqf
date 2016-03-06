@@ -253,7 +253,7 @@ if (_isVehicle) then {
 									while { _i < 5 } do {
 										player setDir ((getDir player) + _step);
 										_i = _i + 1;
-										sleep 0.01;
+										uiSleep 0.01;
 									};
 								};
 
@@ -273,7 +273,7 @@ if (_isVehicle) then {
 									while { _i < 5 } do {
 										player setDir ((getDir player) - _step);
 										_i = _i + 1;
-										sleep 0.01;
+										uiSleep 0.01;
 									};
 								};
 

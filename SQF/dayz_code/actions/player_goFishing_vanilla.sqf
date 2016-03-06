@@ -89,7 +89,7 @@ while {_isOk} do {
         //make sure the player isnt swimming
 
         // wait for animation
-        sleep 2;
+        uiSleep 2;
 
         // check if player is in boat
         _vehicle = vehicle player;
@@ -151,7 +151,7 @@ while {_isOk} do {
 
             if(_counter == 12) then {
                 _isOk = false;
-                sleep 1;
+                uisleep 1;
                 cutText [localize "str_fishing_failed", "PLAIN DOWN"];
             };
         };

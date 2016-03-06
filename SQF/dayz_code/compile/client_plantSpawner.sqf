@@ -15,7 +15,7 @@ _c = PVCDZ_plr_plantSpawner select 2;  // random generator for plant type 0..2 a
 _blacklist = PVCDZ_plr_plantSpawner select 3; 
 _plantcount = 0;
 _maxperspot = ceil (dayz_maxGlobalPlants / 2048 * 5);
-[] spawn { sleep 90; dayz_plantSpawner_done = 2; }; // force dayz_plantSpawner_done to unlock player on login page
+[] spawn { uiSleep 90; dayz_plantSpawner_done = 2; }; // force dayz_plantSpawner_done to unlock player on login page
 //diag_log [ diag_tickTime, __FILE__, "Starting plantmax/a/b/c/blacklist/_maxperspot: ", dayz_maxGlobalPlants, _a, _b, _c, _blacklist , _maxperspot];
 
 _insideloop = {

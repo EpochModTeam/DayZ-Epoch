@@ -46,14 +46,14 @@ if ((count _worldspace) == 2) then {
 
 	//wait a bit
 	player playActionNow "Medic";
-	sleep 1;
+	uiSleep 1;
 
 	_dis=20;
 	_sfx = "tentunpack";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
 
-	sleep 5;
+	uiSleep 5;
 	//place tent (local)
 	_stash = createVehicle [_stashtype, _location, [], 0, "CAN_COLLIDE"];
 	_stash setdir _dir;

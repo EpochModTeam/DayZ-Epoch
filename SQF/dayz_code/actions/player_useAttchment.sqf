@@ -32,6 +32,6 @@ if (_removeWeapon in (weapons player)) then {
 	};
 } else {
 	closedialog 0;
-	sleep 0.2;
+	uiSleep 0.2;
 	cutText [format[ localize "str_missingweapon", _text, _removeWeapon] , "PLAIN DOWN"]
 };	

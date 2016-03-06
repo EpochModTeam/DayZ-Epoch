@@ -2,7 +2,7 @@
 "norrnRaLW"					addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\load_wounded.sqf"};
 "norrnRLact"				addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
 "norrnRDead"				addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\deadState.sqf"};
-"usecBleed"					addPublicVariableEventHandler {_id = (_this select 1) spawn fnc_usec_damageBleed};
+//"usecBleed"					addPublicVariableEventHandler {_id = (_this select 1) spawn fnc_usec_damageBleed};
 //"usecBandage"				addPublicVariableEventHandler {(_this select 1) call player_medBandage};
 "usecInject"				addPublicVariableEventHandler {(_this select 1) call player_medInject};
 //"usecEpi"					addPublicVariableEventHandler {(_this select 1) call player_medEpi};
@@ -12,6 +12,11 @@
 "PVDZE_plr_Hit" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageHandler};
 "PVDZE_plr_HitV" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageVehicle};
 //"usecBreakLegs"				addPublicVariableEventHandler {(_this select 1) call player_breaklegs};
+"PVDZ_hlt_Bleed"		addPublicVariableEventHandler {(_this select 1) spawn fnc_usec_damageBleed};
+"PVDZ_veh_SF"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleRepair}; // repair a part from a vehicle
+"PVCDZ_obj_HideBody"	addPublicVariableEventHandler {hideBody (_this select 1)};
+"PVCDZ_obj_GutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
+"PVCDZ_veh_SetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
 
 //Both
 "PVCDZE_veh_SetFuel"			addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};

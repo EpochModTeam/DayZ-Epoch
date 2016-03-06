@@ -38,7 +38,7 @@ if (_hasbottleitem and _hastinitem) then {
 	_qty = _qty + ({_x == "ItemWaterBottleSafe"} count magazines player);
 	
 	player playActionNow "Medic";
-	sleep 1;
+	uiSleep 1;
 	_dis=10;
 	_sfx = "cook";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;

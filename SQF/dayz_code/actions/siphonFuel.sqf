@@ -77,7 +77,7 @@ if (_isMan or _isAnimal or _isZombie) exitWith { cutText [localize "str_siphon_n
 						if (r_interrupt) then {
 							r_doLoop = false;
 						};
-						sleep 0.1;
+						uiSleep 0.1;
 					};
 					r_doLoop = false;
 
@@ -91,7 +91,7 @@ if (_isMan or _isAnimal or _isZombie) exitWith { cutText [localize "str_siphon_n
 				} else {
 					// Alternate method in water make sure player stays in one spot for 6 seconds
 					_location1 = getPosATL player;
-					sleep 6;
+					uiSleep 6;
 					_location2 = getPosATL player;
 					if(_location1 distance _location2 < 3) then {
 						_finished = true;
@@ -133,7 +133,7 @@ if (_isMan or _isAnimal or _isZombie) exitWith { cutText [localize "str_siphon_n
 							call fnc_usec_medic_removeActions;
 							r_action = false;
 				
-							sleep 1;
+							uiSleep 1;
 						} else {
 							_abort = true;
 						};					

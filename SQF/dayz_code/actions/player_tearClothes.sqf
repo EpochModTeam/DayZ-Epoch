@@ -13,7 +13,7 @@ _infoText = "";
 //Tear the clothes
 player playActionNow "Medic";
 [player,"bandage",0,false] call dayz_zombieSpeak;
-sleep 6;
+uiSleep 6;
 player removeMagazine _skin;
 
 switch (_rounded) do {
@@ -39,7 +39,7 @@ while {_i < _rounded} do {
 	if (_rnd < 0.5) then {
 		 [player,"equip_string"] call BIS_fnc_invAdd;
 	};
-	sleep 0.03;
+	uiSleep 0.03;
 	
 	if (!_result) then {
 		systemchat (localize ("str_tear_clothes_noroom"));

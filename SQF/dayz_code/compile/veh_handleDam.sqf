@@ -6,7 +6,7 @@
 /***********************************************************
 ASSIGN DAMAGE TO A UNIT.
 Called by "HandleDamage" vehicle Event Handler
-or by "PVCDZ_veh_SH" PV
+or by "PVCDZE_veh_SH" PV
 or by zombie_attack
 
 - Function fnc_veh_handleDam

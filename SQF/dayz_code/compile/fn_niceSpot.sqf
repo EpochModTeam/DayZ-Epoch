@@ -98,7 +98,7 @@ switch _class do {
 
 _dir = if (_isPlayer) then {getDir(_pos)} else {0};
 _obj = _class createVehicleLocal (getMarkerpos "respawn_west");
-sleep 0.01;
+uiSleep 0.01;
 _size = _obj call _realSize;
 if (_isPlayer) then { _size = _size + (_pos call _realSize); };
 
@@ -110,7 +110,7 @@ _new set [2, 0];
 // place a temporary object (not colliding or can colliding)
 if (_noCollision) then {
 	deleteVehicle _obj;
-	sleep 0.01;
+	uiSleep 0.01;
 	_obj = _class createVehicleLocal _new;
 	// get non colliding position
 	_new = getPosATL _obj;
@@ -131,7 +131,7 @@ if (_testBuilding) then { // let's proceed to the "something or its operator in 
 };
 
 deleteVehicle _obj;
-sleep 0.01;
+uiSleep 0.01;
 
 if (_testPond) then { // let's proceed to the "object in the pond" test (not dirty)
 	_testPond = false;

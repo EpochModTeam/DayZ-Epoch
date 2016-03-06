@@ -43,7 +43,7 @@ if (_hasToolbox) then {
 		if (_isMedic) then { _started = true; };
 		if (_started and !_isMedic) then { r_doLoop = false; _finished = true; };
 		if (r_interrupt) then { r_doLoop = false; };
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 

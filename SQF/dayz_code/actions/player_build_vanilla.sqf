@@ -387,7 +387,7 @@ while {r_action_count != 0 and Dayz_constructionContext select 4} do {
 			};
 		};
 	};
-    sleep 0.03;
+    uiSleep 0.03;
 };
 
 if (!_actionBuildHidden) then { // player can't build until all is fine

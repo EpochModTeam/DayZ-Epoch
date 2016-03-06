@@ -5,11 +5,11 @@
 sched_plantHint = {
 	{	
 		(getPosATL _x) spawn {
-			sleep random 10;
+			uiSleep random 10;
 			_sound=format["Sound_Crickets%1",1+floor random 3];
 			//diag_log [ _sound ];
 			_x = createSoundSource [_sound, _this, [], 0];
-			sleep 2;
+			uiSleep 2;
 			deleteVehicle _x;
 		};
 		false

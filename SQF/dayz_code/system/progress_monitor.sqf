@@ -6,7 +6,7 @@ _timeoutStart=diag_ticktime;
 while {true} do {
 	if (diag_ticktime - _timeoutStart >= 120) exitWith {
 		1 cutText [localize "str_player_login_timeout", "PLAIN DOWN"];
-		sleep 5;
+		uiSleep 5;
 		endMission "END1";
 	};
 	if ((!isNil "Dayz_loginCompleted") and {(Dayz_loginCompleted)}) exitWith { 
@@ -20,7 +20,7 @@ while {true} do {
 	_control2 = _display displayctrl 102;
 	_control2 ctrlSetText format["%1",floor(diag_ticktime - _timeoutStart)];
 
-	sleep 0.2;
+	uiSleep 0.2;
 	//diag_log [ __FILE__, __LINE__, "Looping..."];
 };
 

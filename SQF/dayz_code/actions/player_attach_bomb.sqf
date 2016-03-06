@@ -21,7 +21,7 @@ player removeMagazine "ItemCarBomb";
 
 //wait a bit
 player playActionNow "Medic";
-sleep 1;
+uiSleep 1;
 
 //DO Animation
 _dis=20;

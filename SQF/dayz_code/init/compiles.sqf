@@ -590,7 +590,7 @@ if (!isDedicated) then {
 				private "_delay";
 				_delay = ((10000 + _humanity) / 5500) + 0.3;
 				playSound "heartbeat_1";
-				sleep _delay;
+				uiSleep _delay;
 			};
 			dayz_heartBeat = false;
 		};

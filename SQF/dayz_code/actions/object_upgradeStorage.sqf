@@ -145,7 +145,7 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	
 	_cursorTarget setVariable["alreadyupgrading",1];
 
-	sleep 0.03;
+	uiSleep 0.03;
 
 	//Get location and direction of old item
 	_dir = round getDir _cursorTarget;
@@ -225,7 +225,7 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 		_countr = _countr + 1;
 	} count _objWpnTypes;
 	
-	sleep 3;
+	uiSleep 3;
 	
 	//publish new tent
 	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[_weapons,_magazines,_backpacks]];

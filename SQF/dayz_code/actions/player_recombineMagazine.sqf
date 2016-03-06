@@ -116,5 +116,5 @@ for "_i" from 1 to _qtynew_create_mags_full do {
 if (_qtynew_create_ammo_rest != 0) then {
     player addMagazine [_create,_qtynew_create_ammo_rest];
 };
-sleep 1;
+uiSleep 1;
 r_action_count = 0;

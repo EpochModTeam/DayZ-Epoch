@@ -42,7 +42,7 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 		if (_ammo isKindOf "SmokeShell") then {
 			while { ((getPosATL _projectile) select 2) >= 1 } do {
 				_pos = getPosATL _projectile;
-				sleep 0.01;
+				uiSleep 0.01;
 			};
 
 			_listTalk = _pos nearEntities ["zZombie_Base",50];
@@ -74,7 +74,7 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 		} else {
 			while { alive _projectile } do {
 				_pos = getPosATL _projectile;
-				sleep 0.01;
+				uiSleep 0.01;
 			};
 
 			_listTalk = _pos nearEntities ["zZombie_Base",50];

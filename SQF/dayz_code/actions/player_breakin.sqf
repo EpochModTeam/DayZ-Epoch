@@ -10,12 +10,12 @@ _hasCrowbar = "ItemCrowbar" in items player;
 
 if (!_hasSledgeHammer) exitWith {
 	titleText ["You need a SledgeHammer to break into this compound" , "PLAIN DOWN"];
-	sleep 1;
+	uiSleep 1;
 };
 
 if (!_hasCrowbar) exitWith {
 	titleText ["You need a crowbar to break into this compound." , "PLAIN DOWN"];
-	sleep 1;
+	uiSleep 1;
 };
 
 _isOk = true;
@@ -31,13 +31,13 @@ while {_isOk} do {
 	if (!_hasSledgeHammer) exitWith {
 		_proceed = nil;
 		titleText ["You need a sledge hammer to break into a gate." , "PLAIN DOWN"];
-		sleep 1;
+		uiSleep 1;
 	};
 
 	if (!_hasCrowbar) exitWith {
 		_proceed = nil;
 		titleText ["You need a crowbar to break into a gate." , "PLAIN DOWN"];
-		sleep 1;
+		uiSleep 1;
 	};
 	
 //Run animation
@@ -71,7 +71,7 @@ while {_isOk} do {
 			r_doLoop = false;
 			_finished = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 	
@@ -121,7 +121,7 @@ while {_isOk} do {
 	};
 	
 	titleText [format["Breaking into compound, attempt (%1 of %2).", _counter,_limit], "PLAIN DOWN"];
-	sleep 0.03;
+	uiSleep 0.03;
 };
 //Tool issues
 if (isnil "_proceed") exitwith {};

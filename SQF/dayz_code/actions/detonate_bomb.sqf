@@ -8,7 +8,7 @@ _vehicle setVariable ["hasBomb",true,true];
 
 _vehicle addEventHandler ["GetIn",{
 	//diag_log str(_this);
-	sleep 2;
+	uiSleep 2;
 	_bombCar = _this select 0;
 	_bomb = createVehicle ["Bo_GBU12_lgb",getPosATL _bombCar, [], 0, "NONE"];
 }];

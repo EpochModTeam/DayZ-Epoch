@@ -82,5 +82,5 @@ switch true do {
 	};
 };
 
-sleep 1;
+uiSleep 1;
 r_action_count = 0;

@@ -92,7 +92,7 @@ if (_woodCutting) then {
                 r_doLoop = false;
             };
 
-            sleep 0.1;
+            uiSleep 0.1;
         };
 
         if(!_finished) exitWith {
@@ -134,7 +134,7 @@ if (_woodCutting) then {
             };
             _isOk = false;
             _proceed = true;
-            sleep 1;
+            uisleep 1;
         };
         cutText [format [localize "str_player_24_progress", _counter,_countOut], "PLAIN DOWN"];
     };

@@ -66,7 +66,7 @@ if (_hasInput) then {
 	} forEach _input;
 
 	_availabeSpace = true;
-	//sleep 1;
+	//uiSleep 1;
 
 	if (_availabeSpace) then {
 		player playActionNow "PutDown";

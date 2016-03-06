@@ -16,7 +16,7 @@ if (_object == player) then {
 				private ["_endtime","_wait"];
 				_wait = _this select 0;
 				_endTime = diag_tickTime + _wait;
-				waitUntil { sleep 1; diag_tickTime > _endTime };
+				waitUntil { uisleep 1; diag_tickTime > _endTime };
 				player setVariable ["FTcounter",((player getVariable ["FTcounter",0]) - _wait)];
 				if ((player getVariable ["FTcounter",0]) <= 0) then {
 					player setVariable ["FTcounter",0];

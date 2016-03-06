@@ -91,7 +91,7 @@ if (_startMaintenance) then {
 			r_doLoop = false;
 			_finished = true;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 
 	r_doLoop = false;

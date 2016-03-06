@@ -19,7 +19,7 @@ _unit setDir _dir;
 [objNull,  _unit,  rPlayMove,  _move] call RE;
 
 //Wait
-sleep 0.3;
+uiSleep 0.3;
 
 if (_vehicle != player) then {
 	_hpList = 	_vehicle call vehicle_getHitpoints;

@@ -85,9 +85,9 @@ if (_unit == player) then
 				_unit = _this select 0;
 				cutText [localize "str_player_tranquilized", "PLAIN DOWN"]; 
 				//systemChat format ["YOU HAVE BEEN TRANQUILISED"];
-				//sleep 2; 
+				//uiSleep 2; 
 				// 0 fadeSound 0.05;
-				//sleep 5; 
+				//uiSleep 5; 
 				[_unit,0.01] call fnc_usec_damageUnconscious;
 				_unit setVariable ["NORRN_unconscious", true, true];
 				r_player_timeout = round(random 60);

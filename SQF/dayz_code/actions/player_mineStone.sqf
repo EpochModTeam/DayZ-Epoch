@@ -78,7 +78,7 @@ if (!isNull _findNearestRock) then {
                 r_doLoop = false;
             };
 
-            sleep 0.1;
+            uiSleep 0.1;
         };
 
         if(!_finished) exitWith {
@@ -121,7 +121,7 @@ if (!isNull _findNearestRock) then {
             };
             _isOk = false;
             _proceed = true;
-            sleep 1;
+            uisleep 1;
         };
 		cutText [format[localize "str_mining_progress", _counter,(_countOut - _counter)], "PLAIN DOWN"];
     };

@@ -118,14 +118,14 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 				};
 			};
 		} forEach _output;
-		//sleep 1;
+		//uiSleep 1;
 
 		if (_availabeSpace) then {
 			//player playActionNow "PutDown";
 			call gear_ui_init;
 			closeDialog 1;
 			player playActionNow "Medic";
-			sleep 2;
+			uiSleep 2;
 			//setup alert and speak
 			_dis=20;
 			_sfx = "chopwood";
@@ -147,10 +147,10 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 							player removeMagazine _item;
 						};
 					};
-					//sleep 0.1;
+					//uiSleep 0.1;
 				};
 			} forEach _input;
-			sleep 3;
+			uiSleep 3;
 			{
 				_item = _x select 0;
 				_selection = _x select 1;
@@ -173,10 +173,10 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 							};
 						};
 						cutText [format [localize "str_crafting_success",_itemName], "PLAIN DOWN"];
-						//sleep 2;
+						//uiSleep 2;
 					} else {
 						cutText [format [localize "str_crafting_failed",_itemName], "PLAIN DOWN"];
-						//sleep 2;
+						//uiSleep 2;
 					};
 				};
 			} forEach _output;

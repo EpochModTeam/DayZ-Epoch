@@ -35,7 +35,7 @@ if (_build) then {
     [player,_dis,true,(getPosATL player)] call player_alertZombies;
     ["Working",0,[20,40,15,0]] call dayz_NutritionSystem; // Added Nutrition-Factor for work
     player playActionNow "Medic";
-    sleep 5;
+    uiSleep 5;
 
     _object setPosATL _location;
     player reveal _object;

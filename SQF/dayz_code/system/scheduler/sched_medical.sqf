@@ -139,7 +139,7 @@ sched_medical_effectsSlow = {
             playSound "breath_1";
 			
 			//Lets make sure the spawn ends 1 sec after the _duration timer this should provide a smooth transtion rather then a snap to focus.
-            sleep _duration + 1;
+            uiSleep _duration + 1;
         };
     };
 

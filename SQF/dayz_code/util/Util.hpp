@@ -3,7 +3,7 @@
 
 //Returns true if the current script is running in the unscheduled environment and otherwise false.
 //If true a script error is also produced however this can be ignored.
-//#define Util_IsUncheduled() ([diag_frameNo, sleep 0.005, diag_frameNo] call { _this select 0 == _this select 2 })
+//#define Util_IsUncheduled() ([diag_frameNo, uiSleep 0.005, diag_frameNo] call { _this select 0 == _this select 2 })
 
 /* Send public variables atomically without fear of race conditions. The previous value of the
 variable is restored automatically after transmission. For example:

@@ -63,7 +63,7 @@ _sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayC
 //diag_log [(diag_tickTime - _start) < _timeout , !r_player_unconscious , alive player  ];
 
 // delay so that the character does not stop before falling:
-_disableHdlr = [] spawn { sleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; }; 
+_disableHdlr = [] spawn { uiSleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; }; 
 
 player playAction "CanNotMove";
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
@@ -87,12 +87,12 @@ while { (diag_tickTime - _start) < _timeout and r_player_unconscious and alive p
 		} else {
             player action ["eject", _veh];
             player leaveVehicle _veh;
-            [] spawn { sleep 0.1; player switchmove "amovppnemstpsnonwnondnon"; }; // instant prone
+            [] spawn { uiSleep 0.1; player switchmove "amovppnemstpsnonwnondnon"; }; // instant prone
         };
     };
 	
     if (player == _veh) then { player setVelocity [0,0,0]; };
-    sleep 0.1;
+    uiSleep 0.1;
     _count = _count + 1;
 	
 };
