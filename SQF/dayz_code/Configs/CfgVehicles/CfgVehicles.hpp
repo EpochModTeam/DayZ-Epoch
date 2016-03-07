@@ -454,7 +454,6 @@ class CfgVehicles {
 	#include "Car\LAV25.hpp"
 	#include "Car\M113.hpp"
 	#include "Car\Mtvr.hpp"
-	//#include "Car\TT650.hpp" //BIKES FOLDER
 	#include "Car\UAZ_MG.hpp"
 	#include "Car\Volha.hpp"
 	#include "Car\VWGolf.hpp"
@@ -462,7 +461,7 @@ class CfgVehicles {
 	#include "Car\CAR_SEDAN.hpp" //SEDAN/Skoda must be first, hatchback is based on it
 	#include "Car\CAR_HATCHBACK.hpp"
 	#include "Car\V3S_Civ.hpp"
-	#include "Car\SUV.hpp"
+	#include "Car\SUV_DZ.hpp"
 	#include "Car\Pickup_PK_INS.hpp"
 	#include "Car\Offroad_DSHKM_INS.hpp"
 	#include "Car\UralCivil_DZ.hpp"

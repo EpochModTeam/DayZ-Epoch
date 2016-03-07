@@ -4,9 +4,11 @@ class UralCivil_DZ: UralCivil {
 	faction=CIV;
 	displayName= $STR_DN_URAL_CIV;
 	vehicleClass = "Car";
+	
 	transportMaxWeapons = 40;
 	transportMaxMagazines = 200;
 	transportmaxbackpacks = 10;
+	
 	crew = "";
 	typicalCargo[]={};
 	model=\ca\wheeled\ural;

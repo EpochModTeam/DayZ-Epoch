@@ -78,16 +78,17 @@ class UAZ_Unarmed_Base : UAZ_Base {
     hiddenSelectionsTextures[] = {
       "\ca\wheeled\data\Uaz_main_002_CO.paa"
     };
- };
+};
 
 class UAZ_CDF: UAZ_Unarmed_Base {
+	accuracy = 0.3;
+	maxspeed = 190;
+	crew = "";
+	faction = "CDF";
+	hiddenselectionstextures[] = {"\ca\wheeled\data\Uaz_main_002_CO.paa"};
 	scope = public;
 	side = 1;
-	faction = "CDF";
-	accuracy = 0.3;
-	crew = "";
-	typicalCargo[] = {};
-	hiddenSelectionsTextures[] = {"\ca\wheeled\data\Uaz_main_002_CO.paa"};
+	typicalcargo[] = {};
 
 	class Upgrades {
 		ItemORP[] = {"UAZ_CDF_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -95,6 +96,7 @@ class UAZ_CDF: UAZ_Unarmed_Base {
 };
 class UAZ_INS: UAZ_Unarmed_Base {
 	scope = public;
+	maxspeed = 190;
 	side = 0;
 	faction = "INS";
 	accuracy = 0.3;
@@ -108,6 +110,7 @@ class UAZ_INS: UAZ_Unarmed_Base {
 };
 class UAZ_RU: UAZ_Unarmed_Base {
 	scope = public;
+	maxspeed = 190;
 	side = 0;
 	faction = "RU";
 	crew = "";
@@ -120,6 +123,7 @@ class UAZ_RU: UAZ_Unarmed_Base {
 };
 class UAZ_Unarmed_TK_EP1: UAZ_Unarmed_Base {
 	expansion = 1;
+	maxspeed = 190;
 	scope = public;
 	side = 0;
 	faction = "BIS_TK";
@@ -136,6 +140,7 @@ class UAZ_Unarmed_TK_EP1: UAZ_Unarmed_Base {
 };
 class UAZ_Unarmed_UN_EP1: UAZ_Unarmed_Base {
 	expansion = 1;
+	maxspeed = 190;
 	scope = public;
 	side = 2;
 	accuracy = 0.3;
@@ -152,6 +157,7 @@ class UAZ_Unarmed_UN_EP1: UAZ_Unarmed_Base {
 };
 class UAZ_Unarmed_TK_CIV_EP1: UAZ_Unarmed_Base {
 	expansion = 1;
+	maxspeed = 190;
 	scope = public;
 	side = 3;
 	accuracy = 0.3;
@@ -169,7 +175,7 @@ class UAZ_Unarmed_TK_CIV_EP1: UAZ_Unarmed_Base {
 
 // Performance 1
 class UAZ_CDF_DZE1: UAZ_CDF {
-	maxspeed = 150; // max engine limit 125-130
+	maxspeed = 240; // max engine limit 125-130
 	terrainCoef = 2.5;
 
 	class Upgrades {
@@ -177,7 +183,7 @@ class UAZ_CDF_DZE1: UAZ_CDF {
 	};
 };
 class UAZ_INS_DZE1: UAZ_INS {
-	maxspeed = 150; // car 100
+	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 
 	class Upgrades {
@@ -185,7 +191,7 @@ class UAZ_INS_DZE1: UAZ_INS {
 	};
 };
 class UAZ_RU_DZE1: UAZ_RU {
-	maxspeed = 150; // car 100
+	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 
 	class Upgrades {
@@ -193,7 +199,7 @@ class UAZ_RU_DZE1: UAZ_RU {
 	};
 };
 class UAZ_Unarmed_TK_EP1_DZE1: UAZ_Unarmed_TK_EP1 {
-	maxspeed = 150; // max engine limit 125-130
+	maxspeed = 240; // max engine limit 125-130
 	terrainCoef = 2.5;
 
 	class Upgrades {
@@ -201,7 +207,7 @@ class UAZ_Unarmed_TK_EP1_DZE1: UAZ_Unarmed_TK_EP1 {
 	};
 };
 class UAZ_Unarmed_UN_EP1_DZE1: UAZ_Unarmed_UN_EP1 {
-	maxspeed = 150; // car 100
+	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 
 	class Upgrades {
@@ -209,7 +215,7 @@ class UAZ_Unarmed_UN_EP1_DZE1: UAZ_Unarmed_UN_EP1 {
 	};
 };
 class UAZ_Unarmed_TK_CIV_EP1_DZE1: UAZ_Unarmed_TK_CIV_EP1 {
-	maxspeed = 150; // car 100
+	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 
 	class Upgrades {
