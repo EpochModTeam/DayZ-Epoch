@@ -67,7 +67,7 @@ class AH6X_DZ: AH6_Base_EP1 {
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
 	transportMaxWeapons = 3;
-	transportMaxMagazines = 10;
+	transportMaxMagazines = 30;
 	transportmaxbackpacks = 2;
 	fuelCapacity = 242;
 	class Turrets {};

@@ -3,14 +3,14 @@ class Soldier_Bodyguard_M4_PMC;
 class SurvivorW2_DZ: Soldier_Bodyguard_M4_PMC
 {
 	displayName = $STR_CHAR_1;
-	side = 1;
+	side = TWest;
 	weapons[] = {"Throw","Put"};
 	model = "\dayz\characters\annie_original";
 	magazines[] = {};
 	respawnWeapons[] = {"Throw","Put"};
 	respawnMagazines[] = {};
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
+	canHideBodies = true;
 	identityTypes[] = {"Language_W_EN_EP1","Woman"};
 	languages[] = {"EN"};
 	class TalkTopics
@@ -193,6 +193,11 @@ class SurvivorW2_DZ: Soldier_Bodyguard_M4_PMC
 	};
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\baker_co.paa"};
+	
+	class Eventhandlers
+	{
+		local = "_z = _this select 0; if (!isServer && {!isNull _z} && {!(side _z in [west,east,civilian])}) exitWith { PVDZ_sec_atp = ['wrong side', player]; publicVariableServer 'PVDZ_sec_atp'; deleteVehicle _z; };";
+	};
 };
 class BanditW1_DZ: SurvivorW2_DZ
 {
