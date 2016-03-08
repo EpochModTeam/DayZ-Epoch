@@ -13,69 +13,6 @@ class CfgVehicles {
 		class Sounds { class Engine; class Movement;};
 		class DefaultEventhandlers;
 	};
-	class Land;	// External class reference
-	class LandVehicle : Land {
-		class NewTurret;
-		class Sounds;
-		class ViewOptics;
-		class ViewPilot;
-		class AnimationSources;
-		class EventHandlers;
-		class Reflectors {
-			class Left {
-				color[] = {0.9,0.8,0.8,1};
-				ambient[] = {0.1,0.1,0.1,1};
-				position = "L svetlo";
-				direction = "konec L svetla";
-				hitpoint = "L svetlo";
-				selection = "L svetlo";
-				size = 0.5;
-				brightness = 0.5;
-			};
-			class Right {
-				color[] = {0.9,0.8,0.8,1};
-				ambient[] = {0.1,0.1,0.1,1};
-				position = "P svetlo";
-				direction = "konec P svetla";
-				hitpoint = "P svetlo";
-				selection = "P svetlo";
-				size = 0.5;
-				brightness = 0.5;
-			};
-		};
-	};
-	class car: landvehicle {
-		class Turrets {
-			class MainTurret: NewTurret {
-				class Turrets;
-				class ViewOptics;
-			};
-		};
-		class HitPoints {
-			class HitEngine;
-			class HitRGlass;
-			class HitLGlass;
-			class HitBody;
-			class HitFuel;
-			class HitLFWheel;
-			class HitRFWheel;
-			class HitLF2Wheel;
-			class HitRF2Wheel;
-			class HitLMWheel;
-			class HitRMWheel;
-			class HitLBWheel;
-			class HitRBWheel;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-		};
-		class Sounds : Sounds {
-			class Engine;
-			class Movement;
-		};
-	};
-
 	class Air : AllVehicles {
 		class NewTurret;
 		class ViewPilot;
@@ -191,6 +128,69 @@ class CfgVehicles {
 			};
 		};
 	};
+	class Land;	// External class reference
+	class LandVehicle : Land {
+		class NewTurret;
+		class Sounds;
+		class ViewOptics;
+		class ViewPilot;
+		class AnimationSources;
+		class EventHandlers;
+		class Reflectors {
+			class Left {
+				color[] = {0.9,0.8,0.8,1};
+				ambient[] = {0.1,0.1,0.1,1};
+				position = "L svetlo";
+				direction = "konec L svetla";
+				hitpoint = "L svetlo";
+				selection = "L svetlo";
+				size = 0.5;
+				brightness = 0.5;
+			};
+			class Right {
+				color[] = {0.9,0.8,0.8,1};
+				ambient[] = {0.1,0.1,0.1,1};
+				position = "P svetlo";
+				direction = "konec P svetla";
+				hitpoint = "P svetlo";
+				selection = "P svetlo";
+				size = 0.5;
+				brightness = 0.5;
+			};
+		};
+	};
+	class car: landvehicle {
+		class Turrets {
+			class MainTurret: NewTurret {
+				class Turrets;
+				class ViewOptics;
+			};
+		};
+		class HitPoints {
+			class HitEngine;
+			class HitRGlass;
+			class HitLGlass;
+			class HitBody;
+			class HitFuel;
+			class HitLFWheel;
+			class HitRFWheel;
+			class HitLF2Wheel;
+			class HitRF2Wheel;
+			class HitLMWheel;
+			class HitRMWheel;
+			class HitLBWheel;
+			class HitRBWheel;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+		};
+		class Sounds : Sounds {
+			class Engine;
+			class Movement;
+		};
+	};
+
 	class Tank: landvehicle	{
   		class Sounds: Sounds  {
    			class Engine;
@@ -380,7 +380,7 @@ class CfgVehicles {
 	class RubberBoat;
 	//class UAZ_Unarmed_Base;
 	//class HMMWV_Base;
-	//class AH6_Base_EP1;
+	class AH6_Base_EP1;
 	class An2_Base_EP1;
 	class TT650_Base;
 	class V3S_Base;
@@ -431,7 +431,6 @@ class CfgVehicles {
 	#include "Zeds\WildZeds.hpp" //Viral type zeds
 	#include "Zeds\SwarmZeds.hpp" //Swarm
 	#include "Zeds\PlayerZeds.hpp"
-	//#include "Zeds\NewZeds.hpp"
 	#include "Females\females.hpp"
 	//Survivor Skins
 	#include "Skins.hpp"

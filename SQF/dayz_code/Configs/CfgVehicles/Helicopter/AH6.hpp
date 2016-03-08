@@ -1,4 +1,3 @@
-class AH6_Base_EP1;
 class AH6J_EP1_DZ: AH6_Base_EP1
 {
 	scope = public;

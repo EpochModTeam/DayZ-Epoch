@@ -4,10 +4,6 @@ class Mass_grave_DZ: Mass_grave
 	displayName = "Mass Grave W/ Zombies";
 };
 
-//class Strategic;
-//class NonStrategic;
-
-
 class Land_Ind_FuelStation_Feed_EP1: Strategic
 {
 	model = "\ca\Structures_E\Ind\Ind_FuelStation\Ind_FuelStation_Feed_ep1.p3d";
@@ -69,8 +65,6 @@ class Land_benzina_schnell: Strategic
 	nameSound = "fuelstation";
 };
 
-//class NonStrategic;
-//class BuiltItems: NonStrategic{};
 class MiningItems: NonStrategic{
 	class DestructionEffects {
 		class Sound {
@@ -132,7 +126,6 @@ class DebugBoxPlayer_DZ: NonStrategic
 	};
 };
 
-//class TrapItems: NonStrategic{};
 // buildables
 class Hedgehog_DZ: BuiltItems
 {
@@ -398,6 +391,26 @@ class Supply_Crate_DZE: MiningItems
 		};
 	};
 };
+
+class FireBarrel_DZ:Land_Fire_barrel
+{
+	// destrType = "DestructNo";
+	cost = 100;
+	offset[] = {0,2,0.5};
+	//model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "Fortifications";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemFuelBarrelEmpty",1}};
+	nounderground = 0;
+	/*class EventHandlers
+		{
+			init = "(_this select 0) inflame 1";
+		};*/
+};
+	
 class Gunrack1;
 class GunRack_DZ: Gunrack1
 {
@@ -567,14 +580,7 @@ class OutHouse_DZ: Land_KBud
 	transportMaxWeapons = 4;
 	transportMaxBackpacks = 4;
 	constructioncount = 2;
-	class transportmagazines
-	{
-		class _xx_ItemTrashToiletpaper
-		{
-			magazine = "ItemTrashToiletpaper";
-			count = 1;
-		};
-	};
+	class transportmagazines {};
 };
 class Land_Shed_M01;
 class StorageShed_DZ: Land_Shed_M01
