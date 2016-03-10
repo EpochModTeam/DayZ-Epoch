@@ -1,8 +1,11 @@
-class CfgAmmo {
+class CfgAmmo 
+{
 	class Default;
 	class BulletBase;
 	class GrenadeHand;
 	class GrenadeCore;
+	
+	/* MELEE */
 
 	class Melee : Default
 	{
@@ -299,6 +302,10 @@ class CfgAmmo {
 		tracerStartTime=0.075000003;
 		tracerEndTime=5;
 	};
+	
+	
+	
+	/* BULLET */
 
 	//.44 Henry			Winchester 1866
 	class B_1866_Slug : BulletBase
@@ -314,8 +321,10 @@ class CfgAmmo {
 		airFriction = -0.005;
 		caliber = 0.5;
 	};
-//mak
-	class B_9x18_Ball : BulletBase {
+
+	//makarov
+	class B_9x18_Ball : BulletBase 
+	{
 		airfriction = -0.002751;
 		audiblefire = 15;
 		caliber = 0.33;
@@ -325,8 +334,10 @@ class CfgAmmo {
 		typicalspeed = 350;
 		visiblefire = 15;
 	};
-//macSD
-	class B_9x18_SD : B_9x18_Ball {
+
+	//makarov sd
+	class B_9x18_SD : B_9x18_Ball 
+	{
 		airfriction = -0.001893;
 		audiblefire = 0.035;
 		cost = 5;
@@ -335,8 +346,10 @@ class CfgAmmo {
 		visiblefire = 0.035;
 		visiblefiretime = 2;
 	};
-//1911
-	class B_45ACP_Ball : BulletBase {
+
+	//M1911
+	class B_45ACP_Ball : BulletBase 
+	{
 		airfriction = -0.0013522;
 		audiblefire = 16;
 		caliber = 0.33; //33
@@ -348,20 +361,26 @@ class CfgAmmo {
 		typicalspeed = 260;
 		visiblefire = 16;
 	};
-//VSS_Vintorez
-	class B_9x39_SP5 : BulletBase {
-		hit = 13;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		cartridge = "FxCartridge_9mm";
-		cost = 5;
-		typicalSpeed = 300;
-		visibleFire = 0.07;
-		audibleFire = 0.07;
-		visibleFireTime = 2;
-		airFriction = -0.001;
-		caliber = 0.33;
-	};
+	
+	//mosin nagant
+	/*class Mosin_762 : BulletBase
+	{
+		hit = 9;
+		typicalSpeed = 850;
+		airFriction = -0.00055;
+		supersonicCrackNear[] = {"",1,1};
+		supersonicCrackFar[] = {"",1,1};
+		visibleFire=40;
+		audibleFire=40;
+		visibleFireTime = 0.5;
+		tracerColor[] = {255,255,0,0};
+		tracerColorR[] = {255,255,0,0};
+		cartridge = "FxCartridge_762";
+	};*/
+	
+	
+	
+	
 	/* THROWN */
 	
 	class ThrownObjects : GrenadeHand
@@ -462,6 +481,10 @@ class CfgAmmo {
 		model = "\dayz_weapons\models\chem_blue";
 		lightColor[] = {0, 0, 0.5};
 	};
+	
+	
+	
+	
 	// used for grenade traps
 	class GrenadeHandTimedWest;
 	class GrenadeHandTimedWest_DZ : GrenadeHandTimedWest
@@ -469,6 +492,21 @@ class CfgAmmo {
 		//explosiontime = 1;
 		fusedistance = 0;
 	};
+	
+	//VSS_Vintorez
+	class B_9x39_SP5 : BulletBase {
+		hit = 13;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		typicalSpeed = 300;
+		visibleFire = 0.07;
+		audibleFire = 0.07;
+		visibleFireTime = 2;
+		airFriction = -0.001;
+		caliber = 0.33;
+	};	
 	//Epoch Melee
 	class Chainsaw_Swing_Ammo : Melee {
 		hit = 9;
