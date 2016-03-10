@@ -9,7 +9,7 @@ class metal_floor_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "MetalFloor_DZ";
@@ -28,7 +28,7 @@ class cinder_wall_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallHalf_DZ";
@@ -46,7 +46,7 @@ class cinder_door_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallSmallDoorway_DZ";
@@ -64,7 +64,7 @@ class cinder_garage_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorway_DZ";
@@ -83,7 +83,7 @@ class ItemWoodFloor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloor_DZ";
@@ -101,7 +101,7 @@ class ItemWoodFloorHalf: CA_Magazine {
 	weight = 15;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloorHalf_DZ";
@@ -128,7 +128,7 @@ class ItemWoodFloorQuarter: CA_Magazine {
 	weight = 10;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloorQuarter_DZ";
@@ -156,7 +156,7 @@ class ItemWoodStairs: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodStairsSans_DZ";
@@ -183,7 +183,7 @@ class ItemWoodStairsSupport: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodStairs_DZ";
@@ -202,7 +202,7 @@ class ItemWoodLadder: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLadder_DZ";
@@ -221,7 +221,7 @@ class ItemWoodWall: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWall_DZ";
@@ -263,7 +263,7 @@ class ItemWoodWallThird: CA_Magazine {
 	weight = 7;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallThird_DZ";
@@ -289,7 +289,7 @@ class ItemWoodWallWindow: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallWin_DZ";
@@ -308,7 +308,7 @@ class ItemWoodWallDoor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallDoor_DZ";
@@ -334,7 +334,7 @@ class ItemWoodWallWithDoor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodDoor";
@@ -360,7 +360,7 @@ class ItemWoodWallWithDoorLocked: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodDoorLocked";
@@ -379,7 +379,7 @@ class ItemWoodWallGarageDoor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_GarageWoodDoor";
@@ -405,7 +405,7 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_GarageWoodDoorLocked";
@@ -424,7 +424,7 @@ class ItemWoodWallLg: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLargeWall_DZ";
@@ -466,7 +466,7 @@ class ItemWoodWallWindowLg: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLargeWallWin_DZ";
@@ -485,7 +485,7 @@ class ItemWoodWallDoorLg: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLargeWallDoor_DZ";
@@ -511,7 +511,7 @@ class ItemWoodWallWithDoorLg: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_LargeWoodDoor";
@@ -537,7 +537,7 @@ class ItemWoodWallWithDoorLgLocked: CA_Magazine {
 	weight = 35;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_LargeWoodDoorLocked";
