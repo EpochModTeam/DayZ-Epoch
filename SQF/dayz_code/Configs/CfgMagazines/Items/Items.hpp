@@ -7,7 +7,7 @@
 #include "MetalFenceItems.hpp"
 
 //Simple buildables
-//#include "Tent.hpp" //in DZE/Misc
+#include "Tent.hpp"
 #include "CamoNet.hpp"
 //#include "TankTrap.hpp" //in DZE/Misc
 //#include "WireFence.hpp" //in DZE/Misc
