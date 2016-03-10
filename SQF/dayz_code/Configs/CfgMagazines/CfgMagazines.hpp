@@ -4,6 +4,8 @@ class CfgMagazines
 	class CA_Magazine;
 	class HandGrenade;
 	
+	
+	
 	//Weapon magazines
 	#include "Magazines\Magazines.hpp"
 	
@@ -33,11 +35,10 @@ class CfgMagazines
 	
 	//Consumables: food, drinks etc.
 	#include "Consumables\Consumables.hpp"
-	// Ammmo
+
 	
 	
 	//EPOCH ADDITIONS
-	//#include "Ammo.hpp"
 	#include "VehicleAmmo.hpp"
 
 	// Gems

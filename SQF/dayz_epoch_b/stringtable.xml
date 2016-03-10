@@ -3459,16 +3459,6 @@
 			<!-- <French></French> -->
 			<Czech>Vytvořit Lesní maskovací síť</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_272">
-			<Original>Build Sandbag</Original>
-			<English>Build Sandbag</English>
-			<German>Sandsack aufstellen</German>
-			<Russian>Установить: Мешки с песком</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Postavit Pytle s pískem</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273">
 			<Original>Craft Large Sandbag</Original>
 			<English>Craft Large Sandbag</English>
