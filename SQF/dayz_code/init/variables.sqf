@@ -60,12 +60,9 @@ meatraw = [
     "FoodGoatRaw",
 	"FishRawTrout",
 	"FishRawSeaBass",
-	"FishRawTuna",
-	"ItemTrout",
-	"ItemSeaBass",
-	"ItemTuna"
+	"FishRawTuna"
 ];
-exceptionsraw = ["ItemTuna","ItemSeaBass","ItemTrout","FishRawTuna","FishRawSeaBass","FishRawTrout"];
+exceptionsraw = ["FishRawTuna","FishRawSeaBass","FishRawTrout"];
 meatcooked = [
 	"FoodSteakCooked",
 	"FoodmeatCooked",
@@ -77,10 +74,7 @@ meatcooked = [
 	"FoodmuttonCooked",
 	"FoodchickenCooked",
 	"FoodrabbitCooked",
-	"FoodbaconCooked",
-	"ItemTroutCooked",
-	"ItemSeaBassCooked",
-	"ItemTunaCooked"
+	"FoodbaconCooked"
 ];
 //Eating
 no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix","FoodBioMeat"]+meatcooked+meatraw;

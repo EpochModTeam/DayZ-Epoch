@@ -14,6 +14,48 @@ class Category_541 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
+	/*
+	class bloodBagONEG {
+		type = "trade_items";
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class bloodBagANEG {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class bloodBagAPOS {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class bloodBagBNEG {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class bloodBagBPOS {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class bloodBagABNEG {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class bloodBagABPOS {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class bloodBagOPOS {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	*/
 	class ItemEpinephrine {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

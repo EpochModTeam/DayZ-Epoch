@@ -1,10 +1,12 @@
-class ItemFishingPole: ItemCore
+class ItemFishingPole : ItemCore
 {
 	scope = public;
-	displayName=$STR_EQUIP_FISHPOLE;
-	model="\z\addons\dayz_epoch\models\fishing_rod_loot_item.p3d";
-	picture="\z\addons\dayz_epoch\pictures\equip_fishingpole_CA.paa";
-	descriptionShort=$STR_EQUIP_FISHPOLE_DESC;
+	
+	model = "\z\addons\dayz_communityassets\models\fishing_rod_loot_item.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_fishingpole_CA.paa";
+	displayName = $STR_ITEM_NAME_FISHINGPOLE;
+	descriptionShort = $STR_ITEM_DESC_FISHINGPOLE;
+	
 	class ItemActions
 	{
 		class Toolbelt

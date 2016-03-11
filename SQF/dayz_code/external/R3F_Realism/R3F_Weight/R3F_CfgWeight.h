@@ -1165,10 +1165,6 @@ class CfgWeight
 		{
 			weight = 0.25;
 		};
-		class FoodmeatCooked
-		{
-			weight = 0.25;
-		};
 		class FoodbeefCooked
 		{
 			weight = 0.25;
@@ -1206,10 +1202,6 @@ class CfgWeight
 			weight = 0.25;
 		};
 		class FoodbeefRaw
-		{
-			weight = 0.25;
-		};
-		class FoodmeatRaw
 		{
 			weight = 0.25;
 		};
@@ -1731,27 +1723,27 @@ class CfgWeight
 			weight = 2;
 		};
 		
-		class ItemTrout
+		class FishRawTrout
 		{
 			weight = 1;
 		};
-		class ItemTroutCooked
+		class FishCookedTrout
 		{
 			weight = 1;
 		};
-		class ItemSeaBass
+		class FishRawSeaBass
 		{
 			weight = 6;
 		};
-		class ItemSeaBassCooked
+		class FishCookedSeaBass
 		{
 			weight = 5;
 		};
-		class ItemTuna
+		class FishRawTuna
 		{
 			weight = 27;
 		};
-		class ItemTunaCooked
+		class FishCookedTuna
 		{
 			weight = 25;
 		};

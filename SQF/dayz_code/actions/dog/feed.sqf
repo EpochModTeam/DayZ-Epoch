@@ -12,7 +12,7 @@ switch (_type) do {
 	case 0: {
 		// expanded to allow all meats as input
 		_removed = 0;
-		_itemIn = "FoodmeatRaw";
+		_itemIn = "FoodRaw";
 		_countIn = 1;
 		{					
 			if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {

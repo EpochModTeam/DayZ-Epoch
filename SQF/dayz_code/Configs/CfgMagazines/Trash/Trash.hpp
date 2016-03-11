@@ -16,6 +16,14 @@ class ItemSodaEmpty : HandGrenade
 			text = "Drink";//TODO: move to stringtable
 			script = "spawn player_drinkWater;";
 		};
+		class Crafting {
+			text = "Melt into Bars";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"fire"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemAluminumBar",1}};
+			input[] = {{"ItemSodaEmpty",6}};
+		};
 	};
 };
 	
@@ -36,6 +44,14 @@ class TrashTinCan : HandGrenade
 		{
 			text = "Drink";//TODO: move to stringtable
 			script = "spawn player_drinkWater;";
+		};
+		class Crafting {
+			text = "Melt into Bars";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"fire"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemTinBar",1}};
+			input[] = {{"TrashTinCan",6}};
 		};
 	};
 };

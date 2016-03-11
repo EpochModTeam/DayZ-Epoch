@@ -21,13 +21,6 @@ class SkinBase : CA_Magazine
 			text = "Tear Clothes";
 			script = "spawn player_tearClothes;";
 		};
-	};
-	/*
-	class ItemActions {
-		class Use {
-			text = $STR_EPOCH_PLAYER_268;
-			script = "spawn player_wearClothes;";
-		};
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_269b;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -45,7 +38,7 @@ class SkinBase : CA_Magazine
 			input[] = {{"SkinBase",1},{"ItemTrashToiletpaper",1}};
 		};
 	};
-	*/
+	weight = 1;
 };
 
 #include "Ghillie.hpp"

@@ -21,7 +21,7 @@ class MeleeSledge: MeleeWeapon
 		{
 			class Toolbelt
 			{
-				text=$STR_EPOCH_PLAYER_296;
+				text=$STR_ACTIONS_2TB;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{

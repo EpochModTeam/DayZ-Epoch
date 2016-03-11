@@ -19,7 +19,7 @@ _id =		_this select 2;
 _dog =		_this select 3;
 
 _removed = 0;
-_itemIn = "FoodmeatRaw";
+_itemIn = "FoodRaw";
 _countIn = 1;
 _selected = "";
 

@@ -24,17 +24,17 @@ class Category_630 {
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class ItemTroutCooked {
+	class FishCookedTrout {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class ItemSeaBassCooked {
+	class FishCookedSeaBass {
 		type = "trade_items";
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
 	};
-	class ItemTunaCooked {
+	class FishCookedTuna {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
@@ -66,17 +66,17 @@ class Category_690 {
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class ItemTroutCooked {
+	class FishCookedTrout {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class ItemSeaBassCooked {
+	class FishCookedSeaBass {
 		type = "trade_items";
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
 	};
-	class ItemTunaCooked {
+	class FishCookedTuna {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};

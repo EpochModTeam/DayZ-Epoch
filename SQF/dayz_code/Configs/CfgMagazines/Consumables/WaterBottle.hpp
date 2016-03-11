@@ -9,7 +9,7 @@ class ItemWaterBottle : FoodDrink
 	
 	Nutrition[] = {0,0,1000,0};
 	
-	infectionChance = 0;
+	infectionChance = 0.3;
 	
 	consumeOutput = "ItemWaterBottleUnfilled";
 	
@@ -27,6 +27,7 @@ class ItemWaterBottle : FoodDrink
 			script = "spawn player_emptyContainer";
 		};
 	};
+	wateroz = 10; //Custom Epoch value
 };
 
 class ItemWaterBottleInfected : ItemWaterBottle

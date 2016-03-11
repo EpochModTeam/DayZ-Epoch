@@ -39,8 +39,8 @@ class CfgMagazines
 	
 	
 	//EPOCH ADDITIONS
+	
 	#include "VehicleAmmo.hpp"
-
 	// Gems
 	#include "DZE\Gems.hpp"
 	#include "DZE\Ores.hpp"
@@ -56,26 +56,14 @@ class CfgMagazines
 	#include "DZE\Currency\AluminumBar.hpp"
 	#include "DZE\Currency\TinBar.hpp"
 
-	// Waterbottle
-	//#include "ItemWaterbottle.hpp" //Moved to WaterBottle.hpp in consumables and items folders
 	#include "DZE\ItemWaterbottle.hpp"
-
-	//#include "MeleeSwing.hpp" //MOVED TO \MAGAZINES
-
 	#include "Planting.hpp"
 
 	// Building Stuff
 	#include "DZE\ModularBuilding.hpp"
 	#include "DZE\Misc.hpp"
-
-	//#include "Parts.hpp" //MOVED TO VehicleParts.hpp
-	//#include "Skins.hpp"//MOVED TO CLOTHING
 	
-	// Food
-	//#include "Food.hpp"
+	// Consumables
 	#include "DZE\Food.hpp"
-	
-	// EPOCH SODA
-	//#include "ItemSoda.hpp" //Moved to Consumables
 	#include "DZE\ItemSoda.hpp"
 };
