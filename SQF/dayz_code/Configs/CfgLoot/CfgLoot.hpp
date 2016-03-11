@@ -228,14 +228,14 @@ class CfgLootLegacy {
 		,{"ItemWaterbottle",0.01}
 		,{"ItemBandage",0.07}
 		,{"7Rnd_45ACP_1911",0.03}
-		,{"5x_22_LR_17_HMR",0.01}
-		,{"10x_303",0.04}
+		,{"5Rnd_17HMR",0.01}
+		,{"10Rnd_303British",0.04}
 		,{"6Rnd_45ACP",0.04}
 		,{"2Rnd_12Gauge_Slug",0.05}
 		,{"2Rnd_12Gauge_Buck",0.05}
 		,{"8Rnd_9x18_Makarov",0.08}
 		,{"15Rnd_W1866_Slug",0.02}
-		,{"WoodenArrow",0.04}
+		,{"1Rnd_Arrow_Wood",0.04}
 		,{"350Rnd_BB_Magazine",0.05}
 		,{"HandRoadFlare",0.07}
 		,{"ItemPainkiller",0.02}
@@ -260,14 +260,14 @@ class CfgLootLegacy {
 		,{"ItemWaterbottle",0.01}
 		,{"ItemBandage",0.11}
 		,{"7Rnd_45ACP_1911",0.03}
-		,{"5x_22_LR_17_HMR",0.01}
-		,{"10x_303",0.04}
+		,{"5Rnd_17HMR",0.01}
+		,{"10Rnd_303British",0.04}
 		,{"6Rnd_45ACP",0.04}
 		,{"2Rnd_12Gauge_Slug",0.05}
 		,{"2Rnd_12Gauge_Buck",0.05}
 		,{"8Rnd_9x18_Makarov",0.09}
 		,{"15Rnd_W1866_Slug",0.02}
-		,{"WoodenArrow",0.04}
+		,{"1Rnd_Arrow_Wood",0.04}
 		,{"350Rnd_BB_Magazine",0.05}
 		,{"HandRoadFlare",0.07}
 		,{"ItemPainkiller",0.02}
@@ -397,11 +397,11 @@ class CfgLootLegacy {
 	};
 	hunter[] = {
 		{"ItemBandage",0.4}
-		,{"5x_22_LR_17_HMR",0.15}
+		,{"5Rnd_17HMR",0.15}
 		,{"7Rnd_45ACP_1911",0.03}
-		,{"10x_303",0.1}
+		,{"10Rnd_303British",0.1}
 		,{"ItemWaterbottleUnfilled",0.05}
-		,{"WoodenArrow",0.2}
+		,{"1Rnd_Arrow_Wood",0.2}
 		,{"350Rnd_BB_Magazine",0.05}
 		,{"ItemHeatPack",0.02}
 		,{"FoodMRE",0.01}
@@ -567,7 +567,7 @@ class CfgLootLegacy {
 		,{"10Rnd_762x54_SVD",0.2}
 		,{"20Rnd_762x51_DMR",0.1}
 		,{"5Rnd_762x51_M24",0.15}
-		,{"5x_22_LR_17_HMR",0.1}
+		,{"5Rnd_17HMR",0.1}
 		,{"20Rnd_762x51_SB_SCAR",0.07}
 		,{"20Rnd_9x39_SP5_VSS",0.05}
 	};

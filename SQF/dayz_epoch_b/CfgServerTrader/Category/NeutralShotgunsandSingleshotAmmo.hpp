@@ -24,7 +24,7 @@ class Category_649 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class WoodenArrow {
+	class 1Rnd_Arrow_Wood {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
@@ -34,7 +34,7 @@ class Category_649 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 10x_303 {
+	class 10Rnd_303British {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
@@ -66,7 +66,7 @@ class Category_613 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class WoodenArrow {
+	class 1Rnd_Arrow_Wood {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
@@ -76,7 +76,7 @@ class Category_613 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 10x_303 {
+	class 10Rnd_303British {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};

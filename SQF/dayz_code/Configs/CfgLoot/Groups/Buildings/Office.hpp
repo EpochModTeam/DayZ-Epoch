@@ -31,8 +31,8 @@ Office[] =
 	{Loot_MAGAZINE,		1,		ItemLockbox},
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
 	{Loot_MAGAZINE,		1,		ItemDocument},
-	//{Loot_MAGAZINE,		3,		10x_303}, //IN GENERIC
-	//{Loot_MAGAZINE,		1,		5x_22_LR_17_HMR}, //IN GENERIC
+	//{Loot_MAGAZINE,		3,		10Rnd_303British}, //IN GENERIC
+	//{Loot_MAGAZINE,		1,		5Rnd_17HMR}, //IN GENERIC
 	
 	//Groups
 	{Loot_GROUP,		8,		Consumable},

@@ -62,3 +62,29 @@ UPDATE `Traders_DATA` SET `item` = '["8Rnd_12Gauge_Buck",1]' WHERE `item` = '["8
 UPDATE character_data SET Backpack = REPLACE(Backpack, '8Rnd_B_Beneli_Pellets', '8Rnd_12Gauge_Buck') WHERE INSTR(Backpack, '8Rnd_B_Beneli_Pellets') > 0;
 UPDATE character_data SET Inventory = REPLACE(Inventory, '8Rnd_B_Beneli_Pellets', '8Rnd_12Gauge_Buck') WHERE INSTR(Inventory, '8Rnd_B_Beneli_Pellets') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, '8Rnd_B_Beneli_Pellets', '8Rnd_12Gauge_Buck') WHERE INSTR(Inventory, '8Rnd_B_Beneli_Pellets') > 0;
+
+-- ----------------------------
+-- Updated arrow and quiver names from 1.8.7
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item` = '["1Rnd_Arrow_Wood",1]' WHERE `item` = '["WoodenArrow",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'WoodenArrow', '1Rnd_Arrow_Wood') WHERE INSTR(Backpack, 'WoodenArrow') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'WoodenArrow', '1Rnd_Arrow_Wood') WHERE INSTR(Inventory, 'WoodenArrow') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'WoodenArrow', '1Rnd_Arrow_Wood') WHERE INSTR(Inventory, 'WoodenArrow') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["12Rnd_Quiver_Wood",1]' WHERE `item` = '["Quiver",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'Quiver', '12Rnd_Quiver_Wood') WHERE INSTR(Backpack, 'Quiver') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'Quiver', '12Rnd_Quiver_Wood') WHERE INSTR(Inventory, 'Quiver') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'Quiver', '12Rnd_Quiver_Wood') WHERE INSTR(Inventory, 'Quiver') > 0;
+
+-- ----------------------------
+-- Updated CZ550 and Lee-Enfield ammo names from 1.8.7
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item` = '["5Rnd_17HMR",1]' WHERE `item` = '["5x_22_LR_17_HMR",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '5x_22_LR_17_HMR', '5Rnd_17HMR') WHERE INSTR(Backpack, '5x_22_LR_17_HMR') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '5x_22_LR_17_HMR', '5Rnd_17HMR') WHERE INSTR(Inventory, '5x_22_LR_17_HMR') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '5x_22_LR_17_HMR', '5Rnd_17HMR') WHERE INSTR(Inventory, '5x_22_LR_17_HMR') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["10Rnd_303British",1]' WHERE `item` = '["10x_303",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '10x_303', '10Rnd_303British') WHERE INSTR(Backpack, '10x_303') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '10x_303', '10Rnd_303British') WHERE INSTR(Inventory, '10x_303') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '10x_303', '10Rnd_303British') WHERE INSTR(Inventory, '10x_303') > 0;

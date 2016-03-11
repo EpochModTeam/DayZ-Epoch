@@ -14,7 +14,7 @@ class Category_624 {
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {5,"ItemSilverBar"};
 	};
-	class 5x_22_LR_17_HMR {
+	class 5Rnd_17HMR {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
@@ -36,7 +36,7 @@ class Category_482 {
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {5,"ItemSilverBar"};
 	};
-	class 5x_22_LR_17_HMR {
+	class 5Rnd_17HMR {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};

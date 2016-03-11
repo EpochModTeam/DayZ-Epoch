@@ -83,7 +83,7 @@ AmmoMilitaryLow[] =
 	//DZE
 	{Loot_MAGAZINE,		3,		5Rnd_127x108_KSVK},
 	{Loot_MAGAZINE,		2,		10Rnd_127x99_m107},
-	{Loot_MAGAZINE,		4,		5x_22_LR_17_HMR},
+	{Loot_MAGAZINE,		4,		5Rnd_17HMR},
 	{Loot_MAGAZINE,		3,		20Rnd_762x51_SB_SCAR},
 	{Loot_MAGAZINE,		3,		20Rnd_9x39_SP5_VSS},
 	{Loot_MAGAZINE,		3,		5Rnd_86x70_L115A1},
@@ -307,7 +307,7 @@ sniperriflesammo[] = {
 	,{Loot_MAGAZINE,		3,		10Rnd_762x54_SVD}
 	,{Loot_MAGAZINE,		4,		20Rnd_762x51_DMR}
 	,{Loot_MAGAZINE,		4,		5Rnd_762x51_M24}
-	,{Loot_MAGAZINE,		4,		5x_22_LR_17_HMR}
+	,{Loot_MAGAZINE,		4,		5Rnd_17HMR}
 	,{Loot_MAGAZINE,		3,		20Rnd_762x51_SB_SCAR}
 	,{Loot_MAGAZINE,		3,		20Rnd_9x39_SP5_VSS}
 };

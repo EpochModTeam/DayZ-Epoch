@@ -8,8 +8,8 @@ Generic[] =
 	{Loot_MAGAZINE,		1,		HandChemRed},
 
 	//DZE
-	{Loot_MAGAZINE,		1,		5x_22_LR_17_HMR},
-	{Loot_MAGAZINE,		2,		10x_303},
+	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
+	{Loot_MAGAZINE,		2,		10Rnd_303British},
 	
 //	{Loot_MAGAZINE,		1,		ItemBookBible},
 	

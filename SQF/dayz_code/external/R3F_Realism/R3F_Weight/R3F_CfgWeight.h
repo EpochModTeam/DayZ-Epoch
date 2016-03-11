@@ -922,7 +922,7 @@ class CfgWeight
 			weight = 0.4;
 		};
 		
-		class 10x_303
+		class 10Rnd_303British
 		{
 			weight = 0.15;
 		};
@@ -946,7 +946,7 @@ class CfgWeight
 		{
 			weight = 8;
 		};
-		class 5x_22_LR_17_HMR
+		class 5Rnd_17HMR
 		{
 			weight = 0.15;
 		};
@@ -1627,11 +1627,11 @@ class CfgWeight
 		{
 			weight = 0.08;
 		};
-		class WoodenArrow 
+		class 1Rnd_Arrow_Wood 
 		{
 			weight = 0.02;
 		};
-		class Quiver 
+		class 12Rnd_Quiver_Wood 
 		{
 			weight = 0.08;
 		};
