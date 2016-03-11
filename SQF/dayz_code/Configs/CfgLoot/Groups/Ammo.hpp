@@ -13,10 +13,10 @@ AmmoCivilian[] =
 	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
 	
 	//Shotgun
-	{Loot_MAGAZINE,		1,		8Rnd_B_Beneli_Pellets},
-	{Loot_MAGAZINE,		3,		8Rnd_B_Beneli_74Slug},
-	{Loot_MAGAZINE,		3,		2Rnd_shotgun_74Pellets},
-	{Loot_MAGAZINE,		5,		2Rnd_shotgun_74Slug}
+	{Loot_MAGAZINE,		1,		8Rnd_12Gauge_Buck},
+	{Loot_MAGAZINE,		3,		8Rnd_12Gauge_Slug},
+	{Loot_MAGAZINE,		3,		2Rnd_12Gauge_Buck},
+	{Loot_MAGAZINE,		5,		2Rnd_12Gauge_Slug}
 };
 militaryVehicleAmmo[] = { //DZE
 	{Loot_MAGAZINE,			2,		2000Rnd_762x51_M134}

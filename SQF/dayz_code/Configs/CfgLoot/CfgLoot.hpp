@@ -168,8 +168,8 @@ class CfgLootLegacy {
 		,{"FoodCanPasta",0.05}
 		,{"8Rnd_9x18_Makarov",0.07}
 		,{"7Rnd_45ACP_1911",0.05}
-		,{"2Rnd_shotgun_74Slug",0.05}
-		,{"2Rnd_shotgun_74Pellets",0.05}
+		,{"2Rnd_12Gauge_Slug",0.05}
+		,{"2Rnd_12Gauge_Buck",0.05}
 		,{"ItemBandage",0.06}
 		,{"ItemPainkiller",0.06}
 		,{"FoodBioMeat",0.01}
@@ -190,8 +190,8 @@ class CfgLootLegacy {
 		,{"FoodCanPasta",0.05}
 		,{"8Rnd_9x18_Makarov",0.07}
 		,{"7Rnd_45ACP_1911",0.05}
-		,{"2Rnd_shotgun_74Slug",0.05}
-		,{"2Rnd_shotgun_74Pellets",0.05}
+		,{"2Rnd_12Gauge_Slug",0.05}
+		,{"2Rnd_12Gauge_Buck",0.05}
 		,{"ItemBandage",0.06}
 		,{"ItemPainkiller",0.06}
 		,{"FoodBioMeat",0.01}
@@ -231,8 +231,8 @@ class CfgLootLegacy {
 		,{"5x_22_LR_17_HMR",0.01}
 		,{"10x_303",0.04}
 		,{"6Rnd_45ACP",0.04}
-		,{"2Rnd_shotgun_74Slug",0.05}
-		,{"2Rnd_shotgun_74Pellets",0.05}
+		,{"2Rnd_12Gauge_Slug",0.05}
+		,{"2Rnd_12Gauge_Buck",0.05}
 		,{"8Rnd_9x18_Makarov",0.08}
 		,{"15Rnd_W1866_Slug",0.02}
 		,{"WoodenArrow",0.04}
@@ -263,8 +263,8 @@ class CfgLootLegacy {
 		,{"5x_22_LR_17_HMR",0.01}
 		,{"10x_303",0.04}
 		,{"6Rnd_45ACP",0.04}
-		,{"2Rnd_shotgun_74Slug",0.05}
-		,{"2Rnd_shotgun_74Pellets",0.05}
+		,{"2Rnd_12Gauge_Slug",0.05}
+		,{"2Rnd_12Gauge_Buck",0.05}
 		,{"8Rnd_9x18_Makarov",0.09}
 		,{"15Rnd_W1866_Slug",0.02}
 		,{"WoodenArrow",0.04}
@@ -311,7 +311,7 @@ class CfgLootLegacy {
 		,{"30Rnd_545x39_AK",0.04}
 		,{"5Rnd_762x51_M24",0.01}
 		,{"5Rnd_86x70_L115A1",0.01}
-		,{"8Rnd_B_Beneli_74Slug",0.04}
+		,{"8Rnd_12Gauge_Slug",0.04}
 		,{"1Rnd_HE_M203",0.01}
 		,{"FlareWhite_M203",0.01}
 		,{"FlareGreen_M203",0.01}
@@ -322,7 +322,7 @@ class CfgLootLegacy {
 		,{"SmokeShell",0.04}
 		,{"SmokeShellRed",0.02}
 		,{"SmokeShellGreen",0.02}
-		,{"8Rnd_B_Beneli_Pellets",0.04}
+		,{"8Rnd_12Gauge_Buck",0.04}
 		,{"30Rnd_556x45_StanagSD",0.01}
 		,{"30Rnd_9x19_MP5",0.02}
 		,{"30Rnd_9x19_MP5SD",0.01}
@@ -355,7 +355,7 @@ class CfgLootLegacy {
 		,{"30Rnd_545x39_AK",0.04}
 		,{"5Rnd_762x51_M24",0.01}
 		,{"5Rnd_86x70_L115A1",0.01}
-		,{"8Rnd_B_Beneli_74Slug",0.04}
+		,{"8Rnd_12Gauge_Slug",0.04}
 		,{"1Rnd_HE_M203",0.01}
 		,{"FlareWhite_M203",0.01}
 		,{"FlareGreen_M203",0.01}
@@ -366,7 +366,7 @@ class CfgLootLegacy {
 		,{"SmokeShell",0.04}
 		,{"SmokeShellRed",0.02}
 		,{"SmokeShellGreen",0.02}
-		,{"8Rnd_B_Beneli_Pellets",0.04}
+		,{"8Rnd_12Gauge_Buck",0.04}
 		,{"30Rnd_556x45_StanagSD",0.01}
 		,{"30Rnd_9x19_MP5",0.02}
 		,{"30Rnd_9x19_MP5SD",0.01}
@@ -386,7 +386,7 @@ class CfgLootLegacy {
 		,{"7Rnd_45ACP_1911",0.08}
 		,{"6Rnd_45ACP",0.08}
 		,{"15Rnd_W1866_Slug",0.14}
-		,{"8Rnd_B_Beneli_Pellets",0.16}
+		,{"8Rnd_12Gauge_Buck",0.16}
 		,{"HandRoadFlare",0.07}
 		,{"8Rnd_9x18_MakarovSD",0.01}
 		,{"ItemComboLock",0.05}

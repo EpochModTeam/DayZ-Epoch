@@ -432,7 +432,7 @@ class CfgWeight
 		{
 			weight = 1.2;
 		};
-		class 8Rnd_B_Beneli_74Slug
+		class 8Rnd_12Gauge_Slug
 		{
 			weight = 0.3;
 		};
@@ -841,7 +841,7 @@ class CfgWeight
 		{
 			weight = 0.5;
 		};		
-		class 8Rnd_B_Beneli_Pellets
+		class 8Rnd_12Gauge_Buck
 		{
 			weight = 0.3;
 		};

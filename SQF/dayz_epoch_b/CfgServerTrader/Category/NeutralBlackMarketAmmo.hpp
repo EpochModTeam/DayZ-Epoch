@@ -4,7 +4,7 @@ class Category_527 {
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class 8Rnd_B_Beneli_74Slug {
+	class 8Rnd_12Gauge_Slug {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
@@ -14,7 +14,7 @@ class Category_527 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
-	class 8Rnd_B_Beneli_Pellets {
+	class 8Rnd_12Gauge_Buck {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};

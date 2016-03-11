@@ -4,22 +4,22 @@ class Category_649 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 2Rnd_shotgun_74Pellets {
+	class 2Rnd_12Gauge_Buck {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 2Rnd_shotgun_74Slug {
+	class 2Rnd_12Gauge_Slug {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 8Rnd_B_Beneli_74Slug {
+	class 8Rnd_12Gauge_Slug {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 8Rnd_B_Beneli_Pellets {
+	class 8Rnd_12Gauge_Buck {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
@@ -46,22 +46,22 @@ class Category_613 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 2Rnd_shotgun_74Pellets {
+	class 2Rnd_12Gauge_Buck {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 2Rnd_shotgun_74Slug {
+	class 2Rnd_12Gauge_Slug {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 8Rnd_B_Beneli_74Slug {
+	class 8Rnd_12Gauge_Slug {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class 8Rnd_B_Beneli_Pellets {
+	class 8Rnd_12Gauge_Buck {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
