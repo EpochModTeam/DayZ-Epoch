@@ -60,6 +60,8 @@ class 2Rnd_12Gauge_Slug : 8Rnd_12Gauge_Slug
 	};
 };
 
+
+
 /* Buckshot */
 
 class 8Rnd_B_Beneli_Pellets;
