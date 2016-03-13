@@ -88,27 +88,16 @@ class Item1Matchbox : ItemMatchbox
 		matches = 1;
 	};
 };
+
+
+// EPOCH ADDITION
+
 class ItemMatchbox_DZE: ItemMatchbox
 {
-	scope = public;
-	//displayName = $STR_EQUIP_NAME_3;
-	//model = "\dayz_equip\models\matchbox_gear.p3d";
-	//picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
-	//descriptionShort = $STR_EQUIP_DESC_3;
 	class Ignators
 	{
 		chance = 1;
 		matches = -1;
 		qtyRemaining = "ItemMatchbox_DZE"; //Use new matchbox system but don't reduce quantity
-	};
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_ACTIONS_LIGHTFIRE;
-			script = "spawn player_makeFire;";
-			use[] = {"PartWoodPile"};
-		};
 	};
 };

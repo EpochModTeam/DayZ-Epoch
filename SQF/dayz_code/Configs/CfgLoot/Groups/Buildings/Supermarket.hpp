@@ -24,7 +24,7 @@ Supermarket[] =
 	{Loot_GROUP,		5,		backpacks},
 	
 	//Items
-	//{Loot_MAGAZINE,		1,		ItemTent}, //USE TENTS GROUP
+	//{Loot_MAGAZINE,	1,		ItemTent}, //USE TENTS GROUP
 	{Loot_MAGAZINE,		1,		ItemMixOil},
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
 	{Loot_MAGAZINE,		0.5,	ItemDomeTent},

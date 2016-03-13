@@ -4374,22 +4374,6 @@
 			<Czech>Ráže: 12&lt;br/&gt;Munice: 2 patrony&lt;br/&gt;Pro: M1014</Czech>
 			<German>Kaliber 12 Schrotmunition&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014</German>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_41">
-			<English>Hatchet</English>
-			<German>Beil</German>
-			<Russian>Топорик</Russian>
-			<Spanish>Hacha</Spanish>
-			<French>Hâche</French>
-			<Czech>Sekera</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_41">
-			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
-			<German>Ein einhaendig gefuehrtes Schlagwerkzeug mit scharfer Klinge, das zum Hacken und Spalten von Holz verwendet wird.</German>
-			<Russian>Топор отлично подойдет для рубки дров.</Russian>
-			<Spanish>Una herramienta con una hoja afilada usada para cortar madera.</Spanish>
-			<French>Un outil à une main doté d&apos;une lame tranchante, utilisé pour couper et fendre du bois.</French>
-			<Czech>Jednoruční nástroj, který se používá pro sekání dřeva.</Czech>
-		</Key>
 		<Key ID="STR_CHAR_1">
 			<English>Survivor</English>
 			<German>Überlebender</German>

@@ -47,7 +47,7 @@ class MeleeHatchet_DZE: MeleeWeapon
 
 	model="\dayz_weapons\models\Hatchet_weaponized";
 	picture="\dayz_equip\textures\equip_hatchet_CA.paa";
-	displayName=$STR_EQUIP_NAME_41;
+	displayName=$STR_EQUIP_NAME_HATCHET;
 	droppeditem= "ItemHatchet_DZE";
 	magazines[]=
 	{
@@ -83,7 +83,7 @@ class MeleeHatchet_DZE: MeleeWeapon
 	};
 	class Library
 	{
-		libTextDesc=$STR_EQUIP_DESC_41;
+		libTextDesc=$STR_EQUIP_DESC_HATCHET;
 	};
-	descriptionShort=$STR_EQUIP_DESC_41;
+	descriptionShort=$STR_EQUIP_DESC_HATCHET;
 };

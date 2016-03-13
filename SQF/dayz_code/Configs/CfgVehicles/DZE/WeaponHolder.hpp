@@ -1,6 +1,6 @@
 class WeaponHolder_ItemHatchet_DZE: WeaponHolderBase {
 	scope = public;
-	displayName = $STR_EQUIP_NAME_41;
+	displayName = $STR_EQUIP_NAME_HATCHET;
 	model = "\dayz_equip\models\hatchet.p3d";
 	class eventHandlers {
 		init = "[(_this select 0),'cfgWeapons','ItemHatchet_DZE'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";

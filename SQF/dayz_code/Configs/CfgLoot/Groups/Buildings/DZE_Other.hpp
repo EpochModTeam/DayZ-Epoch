@@ -10,7 +10,6 @@ DynamicDebris[] =
 	{Loot_WEAPON,		5,		ItemToolbox},
 	{Loot_WEAPON,		5,		ItemHatchet_DZE},
 	{Loot_WEAPON,		5,		ItemCompass},
-	{Loot_WEAPON,		5,		ItemHatchet_DZE},
 	{Loot_PILE,			12,		Consumable, 1, 2},
 	{Loot_MAGAZINE,		7,		ItemJerryCan},
 	{Loot_GROUP,		15,		Parts}
@@ -30,7 +29,6 @@ DynamicDebrisMilitary[] =
 	{Loot_WEAPON,		5,		ItemToolbox},
 	{Loot_WEAPON,		5,		ItemHatchet_DZE},
 	{Loot_WEAPON,		5,		ItemCompass},
-	{Loot_WEAPON,		5,		ItemHatchet_DZE},
 	{Loot_PILE,			12,		Consumable, 1, 2},
 	{Loot_MAGAZINE,		7,		ItemJerryCan},
 	{Loot_MAGAZINE,		7,		ItemSandbag},

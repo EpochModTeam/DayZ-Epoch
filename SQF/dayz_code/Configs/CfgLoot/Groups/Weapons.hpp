@@ -8,17 +8,17 @@
 pistols[] = {
 	{Loot_WEAPON,		2,		Makarov},
 	{Loot_WEAPON,		2,		Colt1911},
-	{Loot_WEAPON,		1.5,		revolver_EP1},
+	{Loot_WEAPON,		1.5,	revolver_EP1},
 	{Loot_WEAPON,		1,		glock17_EP1},
 	{Loot_WEAPON,		1,		MakarovSD},
-	{Loot_WEAPON,		0.7,		M9},
-	{Loot_WEAPON,		0.5,		M9SD},
-	{Loot_WEAPON,		0.1,		revolver_gold_EP1}
+	{Loot_WEAPON,		0.7,	M9},
+	{Loot_WEAPON,		0.5,	M9SD},
+	{Loot_WEAPON,		0.1,	revolver_gold_EP1}
 };
 shotgunsingleshot[] = {
 	{Loot_WEAPON,		2,		Winchester1866},
-	{Loot_WEAPON,		1.7,		LeeEnfield},
-	{Loot_WEAPON,		1.7,		MR43},
+	{Loot_WEAPON,		1.7,	LeeEnfield},
+	{Loot_WEAPON,		1.7,	MR43},
 	{Loot_WEAPON,		1,		Saiga12K},
 	{Loot_WEAPON,		1,		Remington870_lamp},
 	{Loot_WEAPON,		1,		Crossbow_DZ},
@@ -35,30 +35,30 @@ farmweapons[] = {
 };
 sniperrifles[] = {
 	{Loot_WEAPON,		1,		AK_107_PSO},
-	{Loot_WEAPON,		0.9,		M4SPR},
-	{Loot_WEAPON,		0.9,		M40A3},
-	{Loot_WEAPON,		0.7,		SVD_CAMO},
-	{Loot_WEAPON,		0.7,		SVD_des_EP1},
-	{Loot_WEAPON,		0.7,		SVD},
+	{Loot_WEAPON,		0.9,	M4SPR},
+	{Loot_WEAPON,		0.9,	M40A3},
+	{Loot_WEAPON,		0.7,	SVD_CAMO},
+	{Loot_WEAPON,		0.7,	SVD_des_EP1},
+	{Loot_WEAPON,		0.7,	SVD},
 	{Loot_WEAPON,		1,		huntingrifle},
-	{Loot_WEAPON,		0.8,		M24_des_EP1},
-	{Loot_WEAPON,		0.8,		M24},
-	{Loot_WEAPON,		0.7,		BAF_LRR_scoped},
-	{Loot_WEAPON,		0.5,		M107_DZ},
-	{Loot_WEAPON,		0.5,		KSVK_DZE},
-	{Loot_WEAPON,		0.5,		VSS_vintorez},
-	{Loot_WEAPON,		0.6,		SCAR_H_LNG_Sniper_SD},
+	{Loot_WEAPON,		0.8,	M24_des_EP1},
+	{Loot_WEAPON,		0.8,	M24},
+	{Loot_WEAPON,		0.7,	BAF_LRR_scoped},
+	{Loot_WEAPON,		0.5,	M107_DZ},
+	{Loot_WEAPON,		0.5,	KSVK_DZE},
+	{Loot_WEAPON,		0.5,	VSS_vintorez},
+	{Loot_WEAPON,		0.6,	SCAR_H_LNG_Sniper_SD},
 	{Loot_WEAPON,		1,		M14_EP1},
 	{Loot_WEAPON,		1,		DMR}
 };
 submachinegun[] = {
 	{Loot_WEAPON,		2,		UZI_EP1},
-	{Loot_WEAPON,		1.5,		bizon},
-	{Loot_WEAPON,		1.5,		Sa61_EP1},
+	{Loot_WEAPON,		1.5,	bizon},
+	{Loot_WEAPON,		1.5,	Sa61_EP1},
 	{Loot_WEAPON,		1,		MP5A5},
 	{Loot_WEAPON,		1,		bizon_silenced},
-	{Loot_WEAPON,		0.8,		UZI_SD_EP1},
-	{Loot_WEAPON,		0.7,		MP5SD}
+	{Loot_WEAPON,		0.8,	UZI_SD_EP1},
+	{Loot_WEAPON,		0.7,	MP5SD}
 };
 assaultrifles[] = {
 	{Loot_WEAPON,		0.5,		AKS_74_kobra},
@@ -94,8 +94,8 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.1,		M4A1_HWS_GL_SD_Camo}
 };
 machineguns[] = {
-	{Loot_WEAPON,		1.1,		RPK_74},
-	{Loot_WEAPON,		1.1,		M8_SAW},
+	{Loot_WEAPON,		1.1,	RPK_74},
+	{Loot_WEAPON,		1.1,	M8_SAW},
 	{Loot_WEAPON,		1,		Pecheneg_DZ},
 	{Loot_WEAPON,		1,		PK_DZ},
 	{Loot_WEAPON,		1,		MG36_camo},
@@ -103,9 +103,9 @@ machineguns[] = {
 	{Loot_WEAPON,		1,		MG36},
 	{Loot_WEAPON,		1,		M249_m145_EP1_DZE},
 	{Loot_WEAPON,		1,		m240_scoped_EP1_DZE},
-	{Loot_WEAPON,		0.8,		M240_DZ},
-	{Loot_WEAPON,		0.8,		M249_EP1_DZ},
-	{Loot_WEAPON,		0.5,		Mk_48_DZ}
+	{Loot_WEAPON,		0.8,	M240_DZ},
+	{Loot_WEAPON,		0.8,	M249_EP1_DZ},
+	{Loot_WEAPON,		0.5,	Mk_48_DZ}
 };
 militaryshotguns[] = {
 	{Loot_WEAPON,		2,		Saiga12K},
