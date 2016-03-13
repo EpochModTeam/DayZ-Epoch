@@ -2957,33 +2957,6 @@
 			<!-- <Dutch></Dutch> -->
 			<!-- <German></German> -->
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_308A">
-			<English>To pilot's seat</English>
-			<Spanish>Al asiento de piloto</Spanish>
-			<Russian>На место пилота</Russian>
-			<French>Vers la place conducteur</French>
-			<Czech>Na místo pilota</Czech>
-			<!-- <Dutch></Dutch> -->
-			<!-- <German></German> -->
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_309">
-			<English>To back seat</English>
-			<Spanish>Al asiento trasero</Spanish>
-			<Russian>На сиденье пассажира</Russian>
-			<French>Vers une place passager</French>
-			<Czech>Na zadní sedadlo</Czech>
-			<!-- <Dutch></Dutch> -->
-			<!-- <German></German> -->
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_310">
-			<English>To gunner's seat</English>
-			<Spanish>Al asiento del artillero</Spanish>
-			<Russian>На место стрелка</Russian>
-			<French>Vers la place du tireur</French>
-			<Czech>Na sedadlo střelce</Czech>
-			<!-- <Dutch></Dutch> -->
-			<!-- <German></German> -->
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_311">
 			<English>To commander's seat</English>
 			<Spanish>Para el asiento del comandante</Spanish>
