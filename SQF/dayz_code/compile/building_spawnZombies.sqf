@@ -10,7 +10,7 @@ if (count _this > 1) then {
 };
 
 _type = 		typeOf _obj;
-_config = 		configFile >> "CfgLoot" >> "Buildings" >> _type;
+_config = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Buildings" >> _type} else {configFile >> "CfgLoot" >> "Buildings" >> _type};
 _canLoot = 		isClass (_config);
 _originalPos = 	getPosATL _obj;
 

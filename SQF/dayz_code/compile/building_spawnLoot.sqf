@@ -28,7 +28,7 @@ _vectorUp = vectorUp _this;
 if (Vector_Angle(Vector_UP,_vectorUp) > 20) exitWith { 0 };
 
 _type = typeOf _this;
-_config = (configFile >> "CfgLoot" >> "Buildings" >> _type);
+_config = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Buildings" >> _type} else {configFile >> "CfgLoot" >> "Buildings" >> _type};
 
 if (!isClass _config) exitWith {};
 
