@@ -1,9 +1,10 @@
-/*
-	Moved here for easier unmodified mission include:
+/* 
+	If using DZE_MissionLootTable = true; without changing anything in BuildingLoot then
+	use an include instead of copying the files to your mission:
+
 	#include "\z\addons\dayz_code\Configs\CfgLoot\CfgBuildingLoot.hpp"
-	
-	If legacy is removed these should be put back in CfgLoot.hpp
 */
+
 #include "Groups\Buildings\Boat.hpp"
 #include "Groups\Buildings\Castle.hpp"
 #include "Groups\Buildings\Church.hpp"
@@ -21,6 +22,3 @@
 #include "Groups\Buildings\Toilet.hpp"
 #include "Groups\Buildings\Hangar.hpp"
 #include "Groups\Buildings\DZE_Other.hpp"
-
-// Can be removed if not using legacy loot tables
-#include "CfgBuildingLootLegacy.hpp"

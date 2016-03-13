@@ -19,9 +19,6 @@ wholeBloodBagANEG wholeBloodBagAPOS wholeBloodBagBNEG wholeBloodBagBPOS wholeBlo
 
 REMOVE TOOL BREAKING, IT'S STUPID
 
-building_spawnLoot_Legacy
-building_spawnZombies_Legacy
-
 	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
 vehicle_handleDamage    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleDamage.sqf";

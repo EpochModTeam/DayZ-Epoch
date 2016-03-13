@@ -1,7 +1,7 @@
 /*
-	If using DZE_MissionLootTable = true; without changing anything in lootPos then use 
-	an include instead of copying the files to your mission.
-
+	If using DZE_MissionLootTable = true; without changing anything in BuildingPos then 
+	use an include instead of copying the files to your mission:
+	
 	#include "\z\addons\dayz_code\Configs\CfgLoot\CfgBuildingPos.hpp"
 */
 
