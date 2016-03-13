@@ -2,7 +2,6 @@
 <Project name="DayZ">
 	<Package name="actions">
 		<Key ID="str_actions_tamedog">
-			<Original>Tame Dog</Original>
 			<English>Tame Dog</English>
 			<German>Hund zähmen</German>
 			<Russian>Приручить собаку</Russian>
@@ -12,7 +11,6 @@
 			<Czech>Ochočit psa</Czech>
 		</Key>
 		<Key ID="str_actions_movedog">
-			<Original>Move To</Original>
 			<English>Move To</English>
 			<German>Bewegen nach</German>
 			<Russian>Иди туда</Russian>
@@ -22,7 +20,6 @@
 			<Czech>Přesunout do</Czech>
 		</Key>
 		<Key ID="str_actions_speeddog">
-			<Original>Dog: %1</Original>
 			<English>Dog: %1</English>
 			<German>Hund: %1</German>
 			<Russian>Собака: %1</Russian>
@@ -32,7 +29,6 @@
 			<Czech>Pes: %1</Czech>
 		</Key>
 		<Key ID="str_actions_calldog">
-			<Original>Call Dog</Original>
 			<English>Call Dog</English>
 			<German>Bei Fuß!</German>
 			<Russian>Позвать собаку</Russian>
@@ -42,7 +38,6 @@
 			<Czech>Zavolat psa</Czech>
 		</Key>
 		<Key ID="str_actions_feeddog">
-			<Original>Feed Dog</Original>
 			<English>Feed Dog</English>
 			<German>Hund füttern</German>
 			<Russian>Накормить собаку</Russian>
@@ -52,7 +47,6 @@
 			<Czech>Nakrmit psa</Czech>
 		</Key>
 		<Key ID="str_actions_waterdog">
-			<Original>Water Dog</Original>
 			<English>Water Dog</English>
 			<German>Wasser anbieten</German>
 			<Russian>Напоить собаку</Russian>
@@ -62,7 +56,6 @@
 			<Czech>Dát psovi napít</Czech>
 		</Key>
 		<Key ID="str_actions_sitdog">
-			<Original>Dog: Sit</Original>
 			<English>Dog: Sit</English>
 			<German>Hund: Sitz</German>
 			<Russian>Собака: Сидеть!</Russian>
@@ -72,7 +65,6 @@
 			<Czech>Psí příkaz: Sednout</Czech>
 		</Key>
 		<Key ID="str_actions_liedog">
-			<Original>Dog: Lie Down</Original>
 			<English>Dog: Lie Down</English>
 			<German>Hund: Platz</German>
 			<Russian>Собака: Лежать!</Russian>
@@ -82,7 +74,6 @@
 			<Czech>Psí příkaz: Lehnout</Czech>
 		</Key>
 		<Key ID="str_actions_trackdog">
-			<Original>Dog: Track</Original>
 			<English>Dog: Track</English>
 			<German>Hund: Verfolgen</German>
 			<Russian>Собака: Искать!</Russian>
@@ -92,7 +83,6 @@
 			<Czech>Psí příkaz: Stopuj</Czech>
 		</Key>
 		<Key ID="str_actions_barkdog">
-			<Original>Dog: Bark</Original>
 			<English>Dog: Bark</English>
 			<German>Hund: Bellen</German>
 			<Russian>Собака: Голос!</Russian>
@@ -102,7 +92,6 @@
 			<Czech>Psí příkaz: Stěkej</Czech>
 		</Key>
 		<Key ID="str_actions_warndog">
-			<Original>Dog: %1</Original>
 			<English>Dog: %1</English>
 			<German>Hund: %1</German>
 			<Russian>Собака: %1</Russian>
@@ -112,7 +101,6 @@
 			<Czech>Psí příkaz: %1</Czech>
 		</Key>
 		<Key ID="str_actions_followdog">
-			<Original>Dog: Follow</Original>
 			<English>Dog: Follow</English>
 			<German>Hund: Komm</German>
 			<Russian>Собака: Ко мне!</Russian>
@@ -124,7 +112,6 @@
 	</Package>
 	<Package name="equipment_code">
 		<Key ID="STR_FOOD_NAME_RBULL">
-			<Original>Red Bull</Original>
 			<English>Red Bull</English>
 			<German>Red Bull</German>
 			<Russian>Ред Булл</Russian>
@@ -134,7 +121,6 @@
 			<Czech>Red Bull</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_RBULL">
-			<Original>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</Original>
 			<English>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</English>
 			<German>Red Bull ist ein Energy-Drink des österreichischen Getränkeherstellers Red Bull GmbH.</German>
 			<Russian>Ред Булл. Энергетический напиток, продаваемый австрийской компанией Red Bull GmbH.</Russian>
@@ -144,7 +130,6 @@
 			<Czech>Red Bull je energy drink, který prodává rakouská firma Red Bull GmbH.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_OSHERBET">
-			<Original>Orange Sherbet</Original>
 			<English>Orange Sherbet</English>
 			<German>Orangensorbet</German>
 			<Russian>Апельсиновый шербет</Russian>
@@ -154,7 +139,6 @@
 			<Czech>Pomerančová šťáva</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_OSHERBET">
-			<Original>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</Original>
 			<English>Orange Sherbet is a tangy orange carbonated soft drink with plenty of fizz.</English>
 			<German>Orangensorbet ist ein kohlensäurehaltiges Erfrischungsgetränk.</German>
 			<Russian>Апельсиновый шербет. Острый, апельсиновый, газированный, безалкогольный напиток с большим количеством шипения.</Russian>
@@ -164,7 +148,6 @@
 			<Czech>Tato Pomerančová šťáva je kyselá soda s pomerančovou příchutí se spoustou bublinek.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT">
-			<Original>Keymakers kit</Original>
 			<English>Keymakers kit</English>
 			<German>Schlüsselmacher kit</German>
 			<Russian>Набор для создания ключей</Russian>
@@ -174,7 +157,6 @@
 			<Czech>Sada klíčů</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT_DESC">
-			<Original>Kit including the tools required to smelt, mold and shape keys.</Original>
 			<English>Kit including the tools required to smelt, mold and shape keys.</English>
 			<German>Ein Kit zum Schmelzen und Formen von Schlüsseln.</German>
 			<Russian>Набор, включающий инструменты, необходимые для выплавки и придания формы ключам.</Russian>
@@ -184,7 +166,6 @@
 			<Czech>Sada obsahující nástroje potřebné k vytvoření klíčů.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_SLEDGE">
-			<Original>Sledgehammer</Original>
 			<English>Sledgehammer</English>
 			<German>Vorschlaghammer</German>
 			<Russian>Кувалда</Russian>
@@ -194,7 +175,6 @@
 			<Czech>Palice</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
-			<Original>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</Original>
 			<English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
 			<German>Ein Vorschlaghammer ist ein aus einem Hammerkopf (typischerweise aus geschmiedetem Stahl) und einem Stiel bestehendes Handwerkzeug. Der Vorschlaghammer kann mit höheren Schlagkräften als andere Hämmer genutzt werden.</German>
 			<Russian>Инструмент, с большой плоской головкой, прикреплённой к ручке. Головка, как правило, сделана из металла. Кувалдой можно приложить больше силы, чем другими молотками.</Russian>
@@ -206,7 +186,6 @@
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_PLAYER_1">
-			<Original>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</Original>
 			<English>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</English>
 			<German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
 			<Russian>Припасы %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
@@ -216,7 +195,6 @@
 			<Czech>Zásoby %1 / %2 - Zbraně %3/%4 - Batohy %4 / %6</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_2">
-			<Original>Another player wants to tag you as friendly. To accept, tag player as friendly.</Original>
 			<English>Another player wants to tag you as friendly. To accept, tag player as friendly.</English>
 			<German>Ein anderer Spieler möchte Sie als Freund markieren. Um dies zu akzeptieren markiere den Spieler ebenfalls als Freund.</German>
 			<Russian>Игрок хочет отметить вас как друга. Чтобы принять, отметьте его как друга.</Russian>
@@ -226,7 +204,6 @@
 			<Czech>Jiný hráč si vás chce označit jako přítele. K příjmutí, označte hráče jako přítele.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_3">
-			<Original>Pulse is extremely weak</Original>
 			<English>Pulse is extremely weak</English>
 			<German>Puls ist extrem schwach</German>
 			<Russian>Пульс крайне слаб</Russian>
@@ -236,7 +213,6 @@
 			<Czech>Puls je velmi slabý</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_4">
-			<Original>Pulse is weak</Original>
 			<English>Pulse is weak</English>
 			<German>Puls ist schwach</German>
 			<Russian>Пульс слаб</Russian>
@@ -246,7 +222,6 @@
 			<Czech>Puls je slabý</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_5">
-			<Original>Pulse is strong</Original>
 			<English>Pulse is strong</English>
 			<German>Puls ist stark</German>
 			<Russian>Пульс сильный</Russian>
@@ -256,7 +231,6 @@
 			<Czech>Puls je silný</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_6">
-			<Original>Trading canceled.</Original>
 			<English>Trading canceled.</English>
 			<German>Handel abgebrochen.</German>
 			<Russian>Торговля отменена.</Russian>
@@ -266,7 +240,6 @@
 			<Czech>Obchodování přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_7">
-			<Original>Cannot access gear in a locked vehicle.</Original>
 			<English>Cannot access gear in a locked vehicle.</English>
 			<German>Es kann nicht auf das Inventar bei verschlossenen Fahrzeugen zugegriffen werden.</German>
 			<Russian>Нельзя открывать инвентарь запертого транспорта.</Russian>
@@ -276,7 +249,6 @@
 			<Czech>Nelze přistupovat k předmětům v zamčeném voze.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_8">
-			<Original>No camo nets found nearby.</Original>
 			<English>No camo nets found nearby.</English>
 			<German>Keine Tarn-Netze in der Nähe gefunden.</German>
 			<Russian>Камуфляжные сети не найдены.</Russian>
@@ -286,7 +258,6 @@
 			<Czech>Poblíž nejsou žádné maskovací sítě.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_9">
-			<Original>You have been crushed between two objects.</Original>
 			<English>You have been crushed between two objects.</English>
 			<German>Sie wurden zwischen zwei Objekten zerquetscht.</German>
 			<Russian>Вы были сдавлены между двумя объектами.</Russian>
@@ -296,7 +267,6 @@
 			<Czech>Byl jste naražen mezi dva objekty.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_10">
-			<Original>Lock already in progress.</Original>
 			<English>Lock already in progress.</English>
 			<German>Abschließen bereits im Gange.</German>
 			<Russian>Уже закрывается.</Russian>
@@ -306,7 +276,6 @@
 			<Czech>Zamykání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_11">
-			<Original>Cannot lock while another player is nearby.</Original>
 			<English>Cannot lock while another player is nearby.</English>
 			<German>Abschließen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
 			<Russian>Нельзя закрывать, когда другой игрок находится поблизости.</Russian>
@@ -316,7 +285,6 @@
 			<Czech>Nelze zamknout, když je poblíž jiný hráč.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_12">
-			<Original>Cannot Abort while in a trader city!</Original>
 			<English>Cannot Abort while in a trader city!</English>
 			<German>Die Verbindung kann nicht getrennt werden, während man sich in einer Händler-Stadt aufhällt!</German>
 			<Russian>Нельзя выходить, находясь в торговом городе!</Russian>
@@ -326,7 +294,6 @@
 			<Czech>Nelze se odpojit, když jste v trader city!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_13">
-			<Original>Pack tent already in progress.</Original>
 			<English>Pack tent already in progress.</English>
 			<German>Packen des Zeltes bereits im Gange.</German>
 			<Russian>Палатка уже упаковывается.</Russian>
@@ -336,7 +303,6 @@
 			<Czech>Balení stanu již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_14">
-			<Original>Tent not setup yet.</Original>
 			<English>Tent not setup yet.</English>
 			<German>Zeltaufbau noch nicht möglich.</German>
 			<Russian>Палатка ещё не установлена.</Russian>
@@ -346,7 +312,6 @@
 			<Czech>Stan není ještě postaven.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_15">
-			<Original>That is already being packed.</Original>
 			<English>That is already being packed.</English>
 			<German>Das ist schon gepackt.</German>
 			<Russian>Это уже упаковано.</Russian>
@@ -356,7 +321,6 @@
 			<Czech>Toto již bylo zabaleno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_16">
-			<Original>Cannot pack while another player is nearby.</Original>
 			<English>Cannot pack while another player is nearby.</English>
 			<German>Packen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
 			<Russian>Нельзя упаковывать, когда другой игрок рядом.</Russian>
@@ -366,7 +330,6 @@
 			<Czech>Nelze zabalit, jestliže je jiný hráč poblíž.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_17">
-			<Original>can't count magazines!</Original>
 			<English>can't count magazines!</English>
 			<German>Magazine können nicht gezählt werden!</German>
 			<!-- <Russian></Russian> -->
@@ -376,7 +339,6 @@
 			<Czech>nelze spočítat zásoby</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_18">
-			<Original>You must have RawMeat</Original>
 			<English>You must have RawMeat</English>
 			<German>Sie müssen rohes Fleisch besitzen</German>
 			<Russian>У вас должно быть сырое мясо</Russian>
@@ -386,7 +348,6 @@
 			<Czech>Musíte mít syrové maso</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_19">
-			<Original>Wrong code entered to many times wait 10 seconds</Original>
 			<English>Wrong code entered to many times wait 10 seconds</English>
 			<German>Es wurde zu oft der falsche eingetippt, Sie müssen nun 10 Sekunden warten</German>
 			<Russian>Неправильный код введён слишком много раз, подождите 10 секунд</Russian>
@@ -396,7 +357,6 @@
 			<Czech>Mnohokrát jsi zadal špatný kód, musíš počkat 10 vteřin</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_20">
-			<Original>Cannot unlock while another player is nearby.</Original>
 			<English>Cannot unlock while another player is nearby.</English>
 			<German>Aufschließen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
 			<Russian>Нельзя открывать, когда другой игрок рядом.</Russian>
@@ -406,7 +366,6 @@
 			<Czech>Nelze odemknout, pokud jsou poblíž jiní hráči.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_21">
-			<Original>Unlock already in progress.</Original>
 			<English>Unlock already in progress.</English>
 			<German>Entsperren bereits im Gange.</German>
 			<Russian>Уже открывается.</Russian>
@@ -416,7 +375,6 @@
 			<Czech>Odemykání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_22">
-			<Original>Boil already in progress.</Original>
 			<English>Boil already in progress.</English>
 			<German>Aufkochen bereits im Gange.</German>
 			<Russian>Уже кипятится.</Russian>
@@ -426,7 +384,6 @@
 			<Czech>Převařování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_23">
-			<Original>Cooking already in progress.</Original>
 			<English>Cooking already in progress.</English>
 			<German>Kochen bereits im Gange.</German>
 			<Russian>Уже готовится.</Russian>
@@ -436,7 +393,6 @@
 			<Czech>Vaření již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_24">
-			<Original>Refuel already in progress.</Original>
 			<English>Refuel already in progress.</English>
 			<German>Betanken bereits im Gange.</German>
 			<Russian>Уже заправляется.</Russian>
@@ -446,7 +402,6 @@
 			<Czech>Doplňování paliva již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_25">
-			<Original>Preparing to fuel and start generator, move to cancel.</Original>
 			<English>Preparing to fuel and start generator, move to cancel.</English>
 			<German>Betanken und Starten des Generators, bewegen Sie sich um den Vorgang abzubrechen.</German>
 			<Russian>Подготовка к заправке и запуску генератора, двигайтесь для отмены.</Russian>
@@ -456,7 +411,6 @@
 			<Czech>Doplňování paliva a startování generátoru, pro zrušení se pohněte.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_26">
-			<Original>Canceled.</Original>
 			<English>Canceled.</English>
 			<German>Abgebrochen.</German>
 			<Russian>Отмена.</Russian>
@@ -466,7 +420,6 @@
 			<Czech>Zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_27">
-			<Original>No Vehicles Nearby.</Original>
 			<English>No Vehicles Nearby.</English>
 			<German>Keine Fahrzeuge in der Nähe.</German>
 			<Russian>Нет транспорта поблизости.</Russian>
@@ -476,7 +429,6 @@
 			<Czech>Poblíž nejsou žádná vozidla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_28">
-			<Original>Generator has been started.</Original>
 			<English>Generator has been started.</English>
 			<German>Generator wurde gestartet.</German>
 			<Russian>Генератор был запущен.</Russian>
@@ -486,7 +438,6 @@
 			<Czech>Generátor byl nastartován.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_29">
-			<Original>Gutting animal already in progress.</Original>
 			<English>Gutting animal already in progress.</English>
 			<German>Ausweiden des Tieres bereits im Gange.</German>
 			<Russian>Животное уже разделывается.</Russian>
@@ -496,7 +447,6 @@
 			<Czech>Kuchání zvířete již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_30">
-			<Original>Canceled gutting.</Original>
 			<English>Canceled gutting.</English>
 			<German>Ausweiden abgerochen.</German>
 			<Russian>Разделывание отменено.</Russian>
@@ -506,7 +456,6 @@
 			<Czech>Akce zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_31">
-			<Original>Gutting zombie already in progress.</Original>
 			<English>Gutting zombie already in progress.</English>
 			<German>Ausweiden des Zombies bereits im Gange.</German>
 			<Russian>Зомби уже разделывается.</Russian>
@@ -516,7 +465,6 @@
 			<Czech>Kuchání zombie již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_32">
-			<Original>Hotwire vehicle already in progress.</Original>
 			<English>Hotwire vehicle already in progress.</English>
 			<German>Aufbrechen des Fahrzeuges bereits im Gange.</German>
 			<Russian>Вы уже угоняете транспорт.</Russian>
@@ -526,7 +474,6 @@
 			<Czech>Startování vozidla již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33">
-			<Original>Failed to unlock car hotwire kit broken.</Original>
 			<English>Failed to unlock car hotwire kit broken.</English>
 			<German>Aufbrechen des Fahrzeuges fehlgeschlagen, Aufbrech-Werkzeug wurde dabei zerstört.</German>
 			<Russian>Не удалось открыть транспорт, угонный комплект сломан.</Russian>
@@ -536,7 +483,6 @@
 			<Czech>Otevření auta pomocí paklíče se nezdařilo.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
-			<Original>Fill Jerry already in progress.</Original>
 			<English>Fill Jerry already in progress.</English>
 			<German>Befüllen des Kanisters bereits im Gange.</German>
 			<Russian>Канистра уже наполняется.</Russian>
@@ -546,7 +492,6 @@
 			<Czech>Plnění kanystru již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_35">
-			<Original>Canceled siphon.</Original>
 			<English>Canceled siphon.</English>
 			<German>Umfüllen abgebrochen.</German>
 			<Russian>Слив отменён.</Russian>
@@ -556,7 +501,6 @@
 			<Czech>Přečerpávání přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_36">
-			<Original>\n\nNo recent Deaths.</Original>
 			<English>\n\nNo recent Deaths.</English>
 			<German>\n\nKeine aktuellen Todesfälle.</German>
 			<Russian>\n\nНет последних смертей.</Russian>
@@ -566,7 +510,6 @@
 			<Czech>\n\nŽádné nedávné úmrtí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_37">
-			<Original>Lock vehicle already in progress.</Original>
 			<English>Lock vehicle already in progress.</English>
 			<German>Abschließen des Fahrzeuges bereits im Gange.</German>
 			<Russian>Транспорт уже закрывается.</Russian>
@@ -576,7 +519,6 @@
 			<Czech>Zamykání vozidla již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_38">
-			<Original>Take item already in progress.</Original>
 			<English>Take item already in progress.</English>
 			<German>Aufnehmen des Gegenstandes bereits im Gange.</German>
 			<Russian>Предмет уже поднимается.</Russian>
@@ -586,7 +528,6 @@
 			<Czech>Sbírání předmětu již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_39">
-			<Original>Add to toolbelt already in progress.</Original>
 			<English>Add to toolbelt already in progress.</English>
 			<German>Hinzufügen zum Werkzeuggürtel bereits im Gange.</German>
 			<Russian>Уже добавляется на пояс.</Russian>
@@ -596,7 +537,6 @@
 			<Czech>Přidávání do opasku na nářadí již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_40">
-			<Original>\n\nBuilding already in progress.</Original>
 			<English>\n\nBuilding already in progress.</English>
 			<German>\n\nBau bereits im Gange.</German>
 			<Russian>\n\nУже строится.</Russian>
@@ -606,7 +546,6 @@
 			<Czech>\n\nStavba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
-			<Original>\n\nCannot build, too many objects within %1m.</Original>
 			<English>\n\nCannot build, too many objects within %1m.</English>
 			<German>\n\nBau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
 			<Russian>\n\nНельзя построить, слишком много объектов в пределах %1m.</Russian>
@@ -616,7 +555,6 @@
 			<Czech>\n\nNelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_42">
-			<Original>Cannot build while in a vehicle.</Original>
 			<English>Cannot build while in a vehicle.</English>
 			<German>Bau innerhalb eine Fahrzeuges nicht möglich.</German>
 			<Russian>Нельзя строить, находясь в транспорте.</Russian>
@@ -626,7 +564,6 @@
 			<Czech>Nelze stavět, pokud jste ve vozidle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_43">
-			<Original>Cannot build while in combat.</Original>
 			<English>Cannot build while in combat.</English>
 			<German>Bau während eines Kampfes nicht möglich.</German>
 			<Russian>Нельзя строить во время боя.</Russian>
@@ -636,7 +573,6 @@
 			<Czech>Nelze stavět v boji.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_44">
-			<Original>Cannot build plot pole within %1m of an existing plot.</Original>
 			<English>Cannot build plot pole within %1m of an existing plot.</English>
 			<German>Grundstück-Markierung kann nicht innerhalb %1m von einem bestehenden Grundstück erbaut werden.</German>
 			<Russian>Нельзя построить столб в пределах %1м. от существующего столба.</Russian>
@@ -646,7 +582,6 @@
 			<Czech>Nelze postavit hraniční značku ve vzdálenosti %1 metrů od jiné značky.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_45">
-			<Original>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</Original>
 			<English>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</English>
 			<German>PgUp zum Erhöhen oder PgDn zum Absenken (halte ALT zum schnelleren Eröhen oder STRG zum Absenken), Q oder E zum Drehen. Drücke Leertaste um das Objekt zu plazieren.</German>
 			<Russian>PgUp, чтобы поднять или PgDn, чтобы опустить (Удерживайте ALT, чтобы поднимать быстрее или CTRL, чтобы медленнее), Q или E для поворота на 180. Пробел, чтобы построить.</Russian>
@@ -656,7 +591,6 @@
 			<Czech>PgUp pro zvednutí nebo PgDn pro klesání (Přidrž ALT pro rychlejší zvedání, nebo CTRL pro rychlejší klesání), Q nebo E pro otočení o 180. Mezerník pro stavbu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_46">
-			<Original>Canceled building.</Original>
 			<English>Canceled building.</English>
 			<German>Bau abgebrochen.</German>
 			<Russian>Строительство отменено.</Russian>
@@ -666,7 +600,6 @@
 			<Czech>Stavba zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_47">
-			<Original>Canceled construction of %1 %2.</Original>
 			<English>Canceled construction of %1 %2.</English>
 			<German>Bau von %1 %2 abgebrochen.</German>
 			<Russian>Отменено строительство %1 %2.</Russian>
@@ -676,7 +609,6 @@
 			<Czech>Stavba %1 %2 byla zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_48">
-			<Original>Downgrade already in progress.</Original>
 			<English>Downgrade already in progress.</English>
 			<German>Downgrade bereits im Gange.</German>
 			<Russian>Уже понижается.</Russian>
@@ -686,7 +618,6 @@
 			<Czech>Downgrade již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_49">
-			<Original>Unable to downgrade you do not know the combination.</Original>
 			<English>Unable to downgrade you do not know the combination.</English>
 			<German>Downgraden nicht möglich, da Sie nicht die Kombination kennen.</German>
 			<Russian>Не удаётся понизить, вы не знаете комбинации.</Russian>
@@ -696,7 +627,6 @@
 			<Czech>Downgrade je nemožný, neznáte kombinanci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_50">
-			<Original>Not setup yet.</Original>
 			<English>Not setup yet.</English>
 			<German>Ausbau noch nicht möglich.</German>
 			<Russian>Ещё не установлено.</Russian>
@@ -706,7 +636,6 @@
 			<Czech>Dosud nebylo nastaveno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_51">
-			<Original>No downgrades available</Original>
 			<English>No downgrades available</English>
 			<German>Kein Downgrade vorhanden</German>
 			<Russian>Нет доступных понижений.</Russian>
@@ -716,7 +645,6 @@
 			<Czech>Downgrade není k dispozici</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_52">
-			<Original>Upgrade already in progress.</Original>
 			<English>Upgrade already in progress.</English>
 			<German>Upgrade bereits im Gange.</German>
 			<Russian>Уже улучшается.</Russian>
@@ -726,7 +654,6 @@
 			<Czech>Upgrade již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_53">
-			<Original>\n\nHarvest wood already in progress.</Original>
 			<English>\n\nHarvest wood already in progress.</English>
 			<German>\n\nHolzhacken bereits im Gange.</German>
 			<Russian>\n\nДерево уже рубится.</Russian>
@@ -736,7 +663,6 @@
 			<Czech>\n\nKácení již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_54">
-			<Original>\n\nHatchet needs to be in your hand to harvest wood.</Original>
 			<English>\n\nHatchet needs to be in your hand to harvest wood.</English>
 			<German>\n\nSie müssen die Axt in Ihren Händen halten um Holz zu hacken.</German>
 			<Russian>\n\nТопор должен быть в ваших руках, чтобы срубить дерево.</Russian>
@@ -746,7 +672,6 @@
 			<Czech>\n\nPro kácení stromů musíte mít v ruce sekeru.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_55">
-			<Original>\n\nCanceled Harvesting Wood.</Original>
 			<English>\n\nCanceled Harvesting Wood.</English>
 			<German>\n\nHolzhacken abgerochen.</German>
 			<Russian>\n\nРубка дерева отменена.</Russian>
@@ -756,7 +681,6 @@
 			<Czech>\n\nKácení přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_56">
-			<Original>\n\nCopy key already in progress.</Original>
 			<English>\n\nCopy key already in progress.</English>
 			<German>\n\nKopieren des Schlüssels bereits im Gange.</German>
 			<Russian>\n\nКлюч уже копируется.</Russian>
@@ -766,7 +690,6 @@
 			<Czech>Kopírování klíče již probíhá</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_57">
-			<Original>\n\nNeed Keymakers kit to make a copy of a key.</Original>
 			<English>\n\nNeed Keymakers kit to make a copy of a key.</English>
 			<German>\n\nSie benötigen ein Schlüsselmacher Kit um Kopien eines Schlüssels anfertigen zu können.</German>
 			<Russian>\n\nНужен комплект для создания ключей, чтобы сделать копию ключа.</Russian>
@@ -776,7 +699,6 @@
 			<Czech>\n\nPotřebujete Sadu klíčů, abyste mohli vytvořit kopii klíče</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_58">
-			<Original>\n\nKey crafting needs a fire within 3 meters.</Original>
 			<English>\n\nKey crafting needs a fire within 3 meters.</English>
 			<German>\n\nKopieren eines Schlüssels ist nur innerhalb 3 Meter eines Feuers möglich.</German>
 			<Russian>\n\nДля создания ключа нужен огонь в пределах 3-х метров.</Russian>
@@ -786,7 +708,6 @@
 			<Czech>\n\nNa vytvoření klíče potřebujete oheň v dosahu 3 metrů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_59">
-			<Original>\n\nKey crafting requires a 1 Tin Bar.</Original>
 			<English>\n\nKey crafting requires a 1 Tin Bar.</English>
 			<German>\n\nSie benötigen eine Konservendose um einen Schlüssel zu kopieren.</German>
 			<Russian>\n\nДля создания ключа требуется 1 оловянный слиток.</Russian>
@@ -796,7 +717,6 @@
 			<Czech>\n\nNa vytvoření klíče potřebujete 1 cihličku cínu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_61">
-			<Original>\n\nCanceled Key Crafting.</Original>
 			<English>\n\nCanceled Key Crafting.</English>
 			<German>\n\nKopieren des Schlüssels abgerochen.</German>
 			<Russian>\n\nСоздание ключа отменено.</Russian>
@@ -806,7 +726,6 @@
 			<Czech>\n\nZrušeno vytváření klíče.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_62">
-			<Original>\n\nCrafting started</Original>
 			<English>\n\nCrafting started</English>
 			<German>\n\nHerstellung gestartet</German>
 			<Russian>\n\nСоздание начато</Russian>
@@ -816,7 +735,6 @@
 			<Czech>\n\nTvorba začala</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_63">
-			<Original>\n\nCrafting already in progress.</Original>
 			<English>\n\nCrafting already in progress.</English>
 			<German>\n\nHerstellung bereits im Gange.</German>
 			<Russian>\n\nУже создаётся.</Russian>
@@ -826,7 +744,6 @@
 			<Czech>\n\nVytváření již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_64">
-			<Original>\n\nCanceled crafting.</Original>
 			<English>\n\nCanceled crafting.</English>
 			<German>\n\nHerstellung abgebrochen.</German>
 			<Russian>\n\nСоздание отменено.</Russian>
@@ -836,7 +753,6 @@
 			<Czech>\n\nVytváření zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_72">
-			<Original>\n\nHarvest already in progress.</Original>
 			<English>\n\nHarvest already in progress.</English>
 			<German>\n\nHolzhacken bereits im Gange.</German>
 			<Russian>\n\nУже собирается.</Russian>
@@ -846,7 +762,6 @@
 			<Czech>\n\nSběr již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_73">
-			<Original>\n\nCanceled Harvesting.</Original>
 			<English>\n\nCanceled Harvesting.</English>
 			<German>\n\nHolzhacken abgebrochen.</German>
 			<Russian>\n\nСбор отменён.</Russian>
@@ -856,7 +771,6 @@
 			<Czech>\n\nSběr zrušen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_74">
-			<Original>\n\nYou must be close to a plant to harvest.</Original>
 			<English>\n\nYou must be close to a plant to harvest.</English>
 			<German>\n\nSie müssen in der Nähe eines Baumes sein um Holz hacken zu können.</German>
 			<Russian>\n\nВы должны быть близко к растению, чтобы взять его.</Russian>
@@ -866,7 +780,6 @@
 			<Czech>\n\nMusíte být blízko plodiny, abyste ji mohli sklidit.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_75">
-			<Original>\n\nOpen Crate already in progress.</Original>
 			<English>\n\nOpen Crate already in progress.</English>
 			<German>\n\nÖffnen der Holzkiste bereits im Gange.</German>
 			<Russian>\n\nЯщик уже открывается.</Russian>
@@ -876,7 +789,6 @@
 			<Czech>\n\nOtevírání bedny již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_76">
-			<Original>\n\nYou need a crowbar to open this.</Original>
 			<English>\n\nYou need a crowbar to open this.</English>
 			<German>\n\nSie benötigen eine Brechstange um dies öffnen zu können.</German>
 			<Russian>\n\nВам нужен лом, чтобы открыть это.</Russian>
@@ -886,7 +798,6 @@
 			<Czech>\n\nPotřebujete Páčidlo, abyste toto mohli otevřít.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_77">
-			<Original>\n\nMissing supply crate.</Original>
 			<English>\n\nMissing supply crate.</English>
 			<German>\n\nKeine Holzkiste gefunden.</German>
 			<Russian>\n\nОтсутствует ящик с припасами.</Russian>
@@ -896,7 +807,6 @@
 			<Czech>\n\nChybí zásobovací bedna.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_78">
-			<Original>\n\nOpened supply crate.</Original>
 			<English>\n\nOpened supply crate.</English>
 			<German>\n\nHolzkiste geöffnet.</German>
 			<Russian>\n\nЯщик с припасами открыт.</Russian>
@@ -906,7 +816,6 @@
 			<Czech>\n\nOtevřená zásobovací bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_79">
-			<Original>\n\nOre Mining already in progress.</Original>
 			<English>\n\nOre Mining already in progress.</English>
 			<German>\n\nErzgewinnung bereits im Gange.</German>
 			<Russian>\n\nРуда уже добывается.</Russian>
@@ -916,7 +825,6 @@
 			<Czech>\n\nJiž probíhá těžba rudy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_80">
-			<Original>\n\nCancelled Mining Ore.</Original>
 			<English>\n\nCancelled Mining Ore.</English>
 			<German>\n\nErgewinnung abgerochen.</German>
 			<Russian>\n\nДобыча руды отменена.</Russian>
@@ -926,7 +834,6 @@
 			<Czech>\n\nZrušena těžba rudy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_82">
-			<Original>\n\nNo upgrades available</Original>
 			<English>\n\nNo upgrades available</English>
 			<German>\n\nKeine Upgrades vorhanden</German>
 			<Russian>\n\nНет доступных улучшений.</Russian>
@@ -936,7 +843,6 @@
 			<Czech>\n\nNejsou dostupné žádné upgrady</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_83">
-			<Original>\n\nChanging clothes already in progress.</Original>
 			<English>\n\nChanging clothes already in progress.</English>
 			<German>\n\nWechseln der Kleidung bereits im Gange.</German>
 			<Russian>\n\nВы уже переодеваетесь.</Russian>
@@ -946,7 +852,6 @@
 			<Czech>\n\nZměna oblečení již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_84">
-			<Original>\n\nCannot change clothes when another player is nearby.</Original>
 			<English>\n\nCannot change clothes when another player is nearby.</English>
 			<German>\n\nSie können Ihre Kleidung nicht wechseln wenn ein anderer Spieler in der Nähe ist.</German>
 			<Russian>\n\nНельзя переодеваться, когда другой игрок рядом.</Russian>
@@ -956,7 +861,6 @@
 			<Czech>\n\nNemůžete si změnit oblečení, když je poblíž další hráč.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_85">
-			<Original>\n\nYou may not change clothes while in a vehicle</Original>
 			<English>\n\nYou may not change clothes while in a vehicle</English>
 			<German>\n\nSie können Ihre Kleidung nicht innerhalb eines Fahrzeuges wechseln</German>
 			<Russian>\n\nВы не можете переодеваться, находясь в транспорте</Russian>
@@ -966,7 +870,6 @@
 			<Czech>\n\nNemůžete si změnit oblečení, pokud jste v autě.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_86">
-			<Original>\n\nYou cannot wear a skin of the opposite sex.</Original>
 			<English>\n\nYou cannot wear a skin of the opposite sex.</English>
 			<German>\n\nSie können nicht die Kleidung vom anderen Geschlecht tragen.</German>
 			<Russian>\n\nВы не можете одеть одежду противоположного пола.</Russian>
@@ -976,7 +879,6 @@
 			<Czech>\n\nNemůžete nosit oblečení opačného pohlaví.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_87">
-			<Original>Canceled refuel.</Original>
 			<English>Canceled refuel.</English>
 			<German>Befüllen abgebrochen.</German>
 			<Russian>Заправка отменена.</Russian>
@@ -986,7 +888,6 @@
 			<Czech>Tankování zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_88">
-			<Original>Remove already in progress.</Original>
 			<English>Remove already in progress.</English>
 			<German>Entfernen bereits im Gange.</German>
 			<Russian>Уже убирается/снимается.</Russian>
@@ -996,7 +897,6 @@
 			<Czech>Odstranění již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_89">
-			<Original>Cannot remove running generator.</Original>
 			<English>Cannot remove running generator.</English>
 			<German>Ein laufender Generator kann nicht entfernt werden.</German>
 			<Russian>Нельзя убрать работающий генератор.</Russian>
@@ -1006,7 +906,6 @@
 			<Czech>Nemůžete odstranit běžící generátor.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_90">
-			<Original>No parts found.</Original>
 			<English>No parts found.</English>
 			<German>Keine Teile gefunde.</German>
 			<Russian>Запчасти не найдены.</Russian>
@@ -1016,7 +915,6 @@
 			<Czech>Nebyly nalezeny žádné části.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_91">
-			<Original>Failed object not longer exists.</Original>
 			<English>Failed object not longer exists.</English>
 			<German>Fehlgeschlagen. Objekt existiert nicht mehr.</German>
 			<Russian>Объект не существует.</Russian>
@@ -1026,7 +924,6 @@
 			<Czech>Chyba. Objekt již neexistuje.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_92">
-			<Original>Repair already in progress.</Original>
 			<English>Repair already in progress.</English>
 			<German>Reperatur bereits im Gange.</German>
 			<Russian>Уже чинится.</Russian>
@@ -1036,7 +933,6 @@
 			<Czech>Opravování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_93">
-			<Original>Canceled Repair.</Original>
 			<English>Canceled Repair.</English>
 			<German>Reperatur abgebrochen.</German>
 			<Russian>Починка отменена.</Russian>
@@ -1046,7 +942,6 @@
 			<Czech>Zrušena oprava.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_94">
-			<Original>Salvage already in progress.</Original>
 			<English>Salvage already in progress.</English>
 			<German>Bergen bereits im Gange.</German>
 			<Russian>Уже снимается.</Russian>
@@ -1056,7 +951,6 @@
 			<Czech>Demontáž i probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_95">
-			<Original>Canceled Salvage.</Original>
 			<English>Canceled Salvage.</English>
 			<German>Bergen abgebrochen.</German>
 			<Russian>Снятие отменено.</Russian>
@@ -1066,7 +960,6 @@
 			<Czech>Demontáž zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_96">
-			<Original>already in progress.</Original>
 			<English>already in progress.</English>
 			<German>bereits im Gange.</German>
 			<Russian>действие уже выполняется.</Russian>
@@ -1076,7 +969,6 @@
 			<Czech>již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_97">
-			<Original>Trading already in progress.</Original>
 			<English>Trading already in progress.</English>
 			<German>Handel bereits im Gange.</German>
 			<Russian>Вы уже торгуете.</Russian>
@@ -1086,7 +978,6 @@
 			<Czech>Obchodování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_98">
-			<Original>Siphon already in progress.</Original>
 			<English>Siphon already in progress.</English>
 			<German>Umfüllen bereits im Gange.</German>
 			<Russian>Уже сливается.</Russian>
@@ -1096,7 +987,6 @@
 			<Czech>Přečerpávání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_99">
-			<Original>Stop already in progress.</Original>
 			<English>Stop already in progress.</English>
 			<German>Stoppen des Generators bereits im Gange.</German>
 			<!-- <Russian></Russian> -->
@@ -1106,7 +996,6 @@
 			<Czech>Zastavování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_100">
-			<Original>Preparing stop generator, move to cancel.</Original>
 			<English>Preparing stop generator, move to cancel.</English>
 			<German>Generator wird abgeschaltet, bewegen Sie sich um den Vorgang abzubrechen.</German>
 			<Russian>Подготовка к остановке генератора, двигайтесь для отмены.</Russian>
@@ -1116,7 +1005,6 @@
 			<Czech>Příprava na vypnutí generátoru, pohněte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_101">
-			<Original>Generator has been stopped.</Original>
 			<English>Generator has been stopped.</English>
 			<German>Generator wurde abgeschaltet.</German>
 			<Russian>Генератор остановлен.</Russian>
@@ -1126,7 +1014,6 @@
 			<Czech>Generátor byl zastaven.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_102">
-			<Original>No Vehicles In Tow.</Original>
 			<English>No Vehicles In Tow.</English>
 			<German>Kein Fahrzeug am Abschleppseil.</German>
 			<Russian>Нет транспорта на буксире.</Russian>
@@ -1136,7 +1023,6 @@
 			<Czech>Žádná vozidla nejsou zaháknutá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_103">
-			<Original>Trade already in progress.</Original>
 			<English>Trade already in progress.</English>
 			<German>Handel bereits im Gange.</German>
 			<Russian>Вы уже заключаете сделку.</Russian>
@@ -1146,7 +1032,6 @@
 			<Czech>Obchodování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_104">
-			<Original>Cannot trade while another player is nearby.</Original>
 			<English>Cannot trade while another player is nearby.</English>
 			<German>Kein Handeln möglich, während ein anderer Spieler in der Nähe ist.</German>
 			<Russian>Нельзя заключать сделку, когда другой игрок находится поблизости.</Russian>
@@ -1156,7 +1041,6 @@
 			<Czech>Nelze obchodovat, dokud je jiný hráč poblíž.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_105">
-			<Original>Starting trade, stand still to complete trade.</Original>
 			<English>Starting trade, stand still to complete trade.</English>
 			<German>Handel gestartet, bewegen Sie sich nicht um den Handel abzuschließen.</German>
 			<Russian>Торговля началась, стойте на месте, чтобы завершить сделку.</Russian>
@@ -1166,7 +1050,6 @@
 			<Czech>Transakce probíhá, stůjte na místě pro dokončení obchodu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_106">
-			<Original>Canceled Trade.</Original>
 			<English>Canceled Trade.</English>
 			<German>Handel abgebrochen.</German>
 			<Russian>Сделка отменена.</Russian>
@@ -1176,7 +1059,6 @@
 			<Czech>Transakce zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_107">
-			<Original>You do not have enough room on your toolbelt.</Original>
 			<English>You do not have enough room on your toolbelt.</English>
 			<German>Sie haben nicht genug Platz in Ihrem Werkzeuggürtel.</German>
 			<Russian>У вас не достаточно места на вашем поясе.</Russian>
@@ -1186,7 +1068,6 @@
 			<Czech>Nemáte dostatek místa na Vašem opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_108">
-			<Original>Vault pitching already in progress.</Original>
 			<English>Vault pitching already in progress.</English>
 			<German>Platzieren des Tresors bereits im Gange.</German>
 			<!-- <Russian></Russian> -->
@@ -1196,7 +1077,6 @@
 			<Czech>Pokládání sejfu již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_109">
-			<Original>Planning construction stand still 5 seconds to build.</Original>
 			<English>Planning construction stand still 5 seconds to build.</English>
 			<German>Platzieren des Tresors gestartet, warte 5 Sekunden um den Aufbau zu starten.</German>
 			<Russian>Планирование строительства стойте на месте 5 секунд, чтобы построить.</Russian>
@@ -1206,7 +1086,6 @@
 			<Czech>Pokládání sejfu začalo, vyčkejte 5 sekund pro postavení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_110">
-			<Original>You cannot place a Safe here. The area must be flat, and free of other objects</Original>
 			<English>You cannot place a Safe here. The area must be flat, and free of other objects</English>
 			<German>Sie können hier kein Tresor aufbauen. Der Untergrund muss flach und frei von Hindernissen sein</German>
 			<Russian>Вы не можете разместить сейф здесь. Область должна быть плоской, и свободной от других объектов</Russian>
@@ -1216,7 +1095,6 @@
 			<Czech>Zde nemůžete postavit sejf. Místo musí být rovné a bez objektů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_111">
-			<Original>Canceled construction of Safe.</Original>
 			<English>Canceled construction of Safe.</English>
 			<German>Platzieren des Tresors abgebrochen.</German>
 			<Russian>Строительство сейфа отменено.</Russian>
@@ -1226,7 +1104,6 @@
 			<Czech>Stavění sejfu zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_112">
-			<Original>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</Original>
 			<English>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</English>
 			<German>Dieser Server läuft mit einer falschen Version der serverseitigen Anwenung. Sie können auf diesem Server nicht spielen. Wenn Sie der Admin des Server sind, dann kontaktieren Sie bitte den DayZ Epoch Staff.</German>
 			<Russian>Этот сервер работает на неправильной версии серверного приложения. Вы не можете играть на этом сервере. Если вы являетесь администратором сервера, пожалуйста, свяжитесь с персоналом DayZ Epoch.</Russian>
@@ -1236,7 +1113,6 @@
 			<Czech>Tento server běží na nesprávné verzi serveru. Nemůžete hrát na tomto serveru. Pokud jste administrátor serveru, prosím kontaktujte podporu DayZ Epoch.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_113">
-			<Original>You have an outdated version of Epoch please download the correct version</Original>
 			<English>You have an outdated version of Epoch please download the correct version</English>
 			<German>Sie haben eine falsche Version von Epoch. Downloaden Sie bitte die aktuelle Version.</German>
 			<Russian>У вас устаревшая версия DayZ Epoch, загрузите правильную версию</Russian>
@@ -1246,7 +1122,6 @@
 			<Czech>Máte zastaralou verzi Epochu. Prosím, stáhněte si novou verzi.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_114">
-			<Original>Could not retrieve date and time from server disconnect and retry.</Original>
 			<English>Could not retrieve date and time from server disconnect and retry.</English>
 			<German>Es konnte nicht Datum und Uhrzeit vom Server abgerufen werden. Trennen Sie die Verbindung vom Server und versuchen Sie es erneut.</German>
 			<Russian>Не удалось получить дату и время с сервера отключитесь и повторите попытку.</Russian>
@@ -1256,7 +1131,6 @@
 			<Czech>Nelze získat datum a čas ze serveru. Odpojte se a připojte znovu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
-			<Original>You cannot lock this %1, you do not know the combination.</Original>
 			<English>You cannot lock this %1, you do not know the combination.</English>
 			<German>Sie können nicht diese(n) %1 abschließen, da Sie nicht die Kombination kennen.</German>
 			<Russian>Вы не можете закрыть 1%, вы не знаете комбинации.</Russian>
@@ -1266,7 +1140,6 @@
 			<Czech>Nemůžete zamknout %1, neznáte správnou kombinaci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_116">
-			<Original>That %1 is already being locked.</Original>
 			<English>That %1 is already being locked.</English>
 			<German>Diese(r) %1 wird bereits abgeschlossen.</German>
 			<Russian>%1 уже закрыт.</Russian>
@@ -1276,7 +1149,6 @@
 			<Czech>%1 již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_117">
-			<Original>Your %1 has been locked</Original>
 			<English>Your %1 has been locked</English>
 			<German>Ihr %1 wurde abgeschlossen.</German>
 			<Russian>Ваш %1 закрыт</Russian>
@@ -1286,7 +1158,6 @@
 			<Czech>Vaše %1 bylo zamčeno</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_118">
-			<Original>%1 not setup yet.</Original>
 			<English>%1 not setup yet.</English>
 			<German>%1 noch nicht bereit.</German>
 			<Russian>%1 ещё не установлен.</Russian>
@@ -1296,7 +1167,6 @@
 			<Czech>%1 není ještě připravený.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_119">
-			<Original>You cannot pack this %1, you do not know the combination.</Original>
 			<English>You cannot pack this %1, you do not know the combination.</English>
 			<German>Sie können nicht diese(n) %1 packen, da Sie nicht die Kombination kennen.</German>
 			<Russian>Вы не можете упаковать 1%, вы не знаете комбинации.</Russian>
@@ -1306,7 +1176,6 @@
 			<Czech>Nemůžete sbalit %1, neznáte správnou kombinaci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_120">
-			<Original>That %1 is already being packed.</Original>
 			<English>That %1 is already being packed.</English>
 			<German>Diese(r) %1 wird bereits gepackt.</German>
 			<Russian>%1 уже запакован.</Russian>
@@ -1316,7 +1185,6 @@
 			<Czech>Balení %1 již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_121">
-			<Original>Packing %1 move from this position to cancel within 5 seconds.</Original>
 			<English>Packing %1 move from this position to cancel within 5 seconds.</English>
 			<German>%1 wird gepackt. Bewege dich in den nächsten 5 Sekunden um den Vorgang abzubrechen.</German>
 			<Russian>Упаковывание 1% сдвиньтесь с этой позиции в течение 5 секунд, для отмены.</Russian>
@@ -1326,7 +1194,6 @@
 			<Czech>Balení %1. Pro zrušení se do 5 sekund pohněte.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_122">
-			<Original>Packing %1 canceled.</Original>
 			<English>Packing %1 canceled.</English>
 			<German>Packen des %1 wurde abgebrochen.</German>
 			<Russian>Упаковывание %1 отменено.</Russian>
@@ -1336,7 +1203,6 @@
 			<Czech>Balení %1 zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_123">
-			<Original>Your %1 has been packed</Original>
 			<English>Your %1 has been packed</English>
 			<German>Ihr %1 wurde gepackt.</German>
 			<Russian>Ваш %1 упакован</Russian>
@@ -1346,7 +1212,6 @@
 			<Czech>Vaše %1 bylo/y zabalen/y/o.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_124">
-			<Original>That %1 is already being unlocked.</Original>
 			<English>That %1 is already being unlocked.</English>
 			<German>%1 wird bereits aufgeschlossen.</German>
 			<Russian>%1 уже открыт.</Russian>
@@ -1356,7 +1221,6 @@
 			<Czech>%1 se již odemyká.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_125">
-			<Original>%1 has been unlocked.</Original>
 			<English>%1 has been unlocked.</English>
 			<German>%1 wurde aufgeschlossen.</German>
 			<Russian>%1 открыт.</Russian>
@@ -1366,7 +1230,6 @@
 			<Czech>%1 bylo odemčeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_126">
-			<Original>Combination incorrect, %1 is still locked.</Original>
 			<English>Combination incorrect, %1 is still locked.</English>
 			<German>Kombination inkorrekt, %1 ist immer noch verschlossen.</German>
 			<Russian>Комбинация неправильна, %1 по-прежнему закрыт.</Russian>
@@ -1376,7 +1239,6 @@
 			<Czech>Nesprávná kombinace, %1 je stále zamknut.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_127">
-			<Original>You have successfully loaded %1 ammunition.</Original>
 			<English>You have successfully loaded %1 ammunition.</English>
 			<German>Sie haben erfolgreich %1 Munition geladen.</German>
 			<Russian>Вы успешно загрузили %1 боеприпасы.</Russian>
@@ -1386,7 +1248,6 @@
 			<Czech>Úspěšně jste naložili %1 munici.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_128">
-			<Original>You need %1 type of ammo to do this.</Original>
 			<English>You need %1 type of ammo to do this.</English>
 			<German>Sie benötigen folgene Muntion um dies zu tun: %1</German>
 			<Russian>Вам нужен %1 тип патронов, чтобы сделать это.</Russian>
@@ -1396,7 +1257,6 @@
 			<Czech>Potřebujete munici typu %1 pro dokončení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_129">
-			<Original>Started cooking %1</Original>
 			<English>Started cooking %1</English>
 			<German>Beginne das Kochen von %1</German>
 			<Russian>Начали готовить %1</Russian>
@@ -1406,7 +1266,6 @@
 			<Czech>Začalo vaření %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_130">
-			<Original>Canceled cooking %1</Original>
 			<English>Canceled cooking %1</English>
 			<German>Kochen von %1 abgebrochen</German>
 			<Russian>Приготовление %1 отменено</Russian>
@@ -1416,7 +1275,6 @@
 			<Czech>Zrušeno vaření %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_131">
-			<Original>Filling up %1, move to cancel.</Original>
 			<English>Filling up %1, move to cancel.</English>
 			<German>Betanken von %1, bewegen Sie sich um den Vorgang abzubrechen.</German>
 			<Russian>%1 заполняется, двигайтесь для отмены.</Russian>
@@ -1426,7 +1284,6 @@
 			<Czech>Plnění %1, pohněte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_132">
-			<Original>%1 filled to %2 percent capacity.</Original>
 			<English>%1 filled to %2 percent capacity.</English>
 			<German>%1 wurde zu %2 Prozent betankt.</German>
 			<!-- <Russian></Russian> -->
@@ -1436,7 +1293,6 @@
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_133">
-			<Original>Preparing to siphon, stand still to fill %1.</Original>
 			<English>Preparing to siphon, stand still to fill %1.</English>
 			<German>Starte das Umfüllen, bewegen Sie sich nicht um %1 zu befüllen.</German>
 			<Russian>Подготовка к сливу, стойте на месте, чтобы заполнить %1.</Russian>
@@ -1446,7 +1302,6 @@
 			<Czech>Příprava pro přečerpání, stůjte na místě pro naplnění %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
-			<Original>You have filled %1 with fuel.</Original>
 			<English>You have filled %1 with fuel.</English>
 			<German>Sie haben %1 mit Kraftstoff befüllt.</German>
 			<Russian>Вы заполнили %1 топливом.</Russian>
@@ -1456,7 +1311,6 @@
 			<Czech>Naplnili jste %1 palivem.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
-			<Original>\n\nThis building needs a %1 within %2 meters</Original>
 			<English>\n\nThis building needs a %1 within %2 meters</English>
 			<German>\n\nDieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
 			<Russian>\n\nЭтому строению требуется %1 в пределах %2 метров</Russian>
@@ -1466,7 +1320,6 @@
 			<Czech>\n\nTato budova potřebuje %1 v rámci %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
-			<Original>Unable to build %1 nearby.</Original>
 			<English>Unable to build %1 nearby.</English>
 			<German>Es ist nicht möglich %1 hier aufzubauen.</German>
 			<!-- <Russian></Russian> -->
@@ -1476,7 +1329,6 @@
 			<Czech>Nemůžete postavit %1 poblíž.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_137">
-			<Original>\n\nMissing tool %1</Original>
 			<English>\n\nMissing tool %1</English>
 			<German>\n\nFehlendes Werkzeug: %1</German>
 			<Russian>\n\nОтсутствует инструмент %1</Russian>
@@ -1486,7 +1338,6 @@
 			<Czech>\n\nChybějící nástroj %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_138">
-			<Original>Placing %1, move to cancel.</Original>
 			<English>Placing %1, move to cancel.</English>
 			<German>Platzieren von %1, bewegen Sie sich um den Vorgang abzubrechen.</German>
 			<Russian>Размещение %1, двигайтесь для отмены.</Russian>
@@ -1496,7 +1347,6 @@
 			<Czech>Umístění %1, přesuňte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_139">
-			<Original>Constructing %1 stage %2 of %3, move to cancel.</Original>
 			<English>Constructing %1 stage %2 of %3, move to cancel.</English>
 			<German>Konstruieren von %1, Stufe %2 von %3. Bewegen Sie sich um den Vorgang abzubrechen.</German>
 			<Russian>Строительство %1 стадия %2 из %3, двигайтесь для отмены.</Russian>
@@ -1506,7 +1356,6 @@
 			<Czech>Stavím %1 fáze %2 z %3, pohněte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_140">
-			<Original>You have setup your %2. Combination is %1</Original>
 			<English>You have setup your %2. Combination is %1</English>
 			<German>Sie haben erfolgreich ein(e) %2 aufgebaut. Ihre Kombination lautet: %1</German>
 			<Russian>Вы установили свой %2. Комбинация %1</Russian>
@@ -1516,7 +1365,6 @@
 			<Czech>Nastavil jste Vaši %2. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_141">
-			<Original>Unable to downgrade %1 nearby.</Original>
 			<English>Unable to downgrade %1 nearby.</English>
 			<German>Downgraden von %1 ist nicht möglich.</German>
 			<!-- <Russian></Russian> -->
@@ -1526,7 +1374,6 @@
 			<Czech>Downgrade %1 nelze poblíž udělat.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_142">
-			<Original>You have downgraded %1.</Original>
 			<English>You have downgraded %1.</English>
 			<German>Sie haben %1 gedowngradet.</German>
 			<Russian>Вы понизили %1.</Russian>
@@ -1536,7 +1383,6 @@
 			<Czech>Downgradnuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_143">
-			<Original>\n\n%1 of %2 could not be added to your inventory. (not enough room?)</Original>
 			<English>\n\n%1 of %2 could not be added to your inventory. (not enough room?)</English>
 			<German>\n\n%1 von %2 konnte dem Inventar nicht hinzugefügt werden. (Inventar voll?)</German>
 			<!-- <Russian></Russian> -->
@@ -1546,7 +1392,6 @@
 			<Czech>\n\n%1 z %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_144">
-			<Original>You have repaired %1.</Original>
 			<English>You have repaired %1.</English>
 			<German>Sie haben %1 repariert.</German>
 			<Russian>Вы починили %1.</Russian>
@@ -1556,7 +1401,6 @@
 			<Czech>Opravili jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_145">
-			<Original>\n\nMissing Parts after first check Item: %1 / %2</Original>
 			<English>\n\nMissing Parts after first check Item: %1 / %2</English>
 			<German>\n\nFehlende Teile nach der ersten Überprüfung: %1 / %2</German>
 			<!-- <Russian></Russian> -->
@@ -1566,7 +1410,6 @@
 			<Czech>\n\nChybějící části po první kontrole itemu: %1 / %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_146">
-			<Original>\n\nMissing %1 more of %2</Original>
 			<English>\n\nMissing %1 more of %2</English>
 			<German>\n\nIhnen fehlt/fehlen %1 %2</German>
 			<!-- <Russian></Russian> -->
@@ -1576,7 +1419,6 @@
 			<Czech>\n\nChybí %1x %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_147">
-			<Original>\n\nChopping down tree, walk away at any time to cancel. (%1/%2)</Original>
 			<English>\n\nChopping down tree, walk away at any time to cancel. (%1/%2)</English>
 			<German>\n\nBaum wird gefällt, bewegen Sie sich um den Vorgang abzubrechen. (%1/%2)</German>
 			<Russian>\n\nРубите дерево, уходите в любое время для отмены. (%1/%2)</Russian>
@@ -1586,7 +1428,6 @@
 			<Czech>Probíhá kácení stromu, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_148">
-			<Original>\n\n%1 piles of wood has been successfully added in front of you.</Original>
 			<English>\n\n%1 piles of wood has been successfully added in front of you.</English>
 			<German>\n\n%1 Holzstöße wurde erfolgreich vor Ihnen hinzugefügt.</German>
 			<Russian>\n\n%1 дрова были успешно размещены перед вами.</Russian>
@@ -1596,7 +1437,6 @@
 			<Czech>\n\n%1 hromad dřeva bylo úspěšně položeno před Vás.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_149">
-			<Original>\n\nCrafting needs a %1 within %2 meters</Original>
 			<English>\n\nCrafting needs a %1 within %2 meters</English>
 			<German>\n\nZur Herstellung wird ein(e) %1 innerhalb von %2 benötigt.</German>
 			<Russian>\n\nДля создания требуется %1 вблизи %2 метров</Russian>
@@ -1606,7 +1446,6 @@
 			<Czech>\n\nVýroba potřebuje %1 v rámci %2 metrů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_150">
-			<Original>\n\nCrafted Item: %1 x %2</Original>
 			<English>\n\nCrafted Item: %1 x %2</English>
 			<German>Gegenstand hergestellt: %1 x %2</German>
 			<Russian>\n\nСоздан предмет: %1 x %2</Russian>
@@ -1616,7 +1455,6 @@
 			<Czech>\n\nVyrobena věc: %1 x %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_151">
-			<Original>\n\nMissing Parts after first check Item: %1 / %2</Original>
 			<English>\n\nMissing Parts after first check Item: %1 / %2</English>
 			<German>\n\nFehlende Teile nach der ersten Überprüfung: %1 / %2</German>
 			<!-- <Russian></Russian> -->
@@ -1626,7 +1464,6 @@
 			<Czech>\n\nChybějící části po první kontrole věci: %1 / %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_152">
-			<Original>\n\n%3 complete, missing %1 more of %2</Original>
 			<English>\n\n%3 complete, missing %1 more of %2</English>
 			<German>\n\n%3 abgeschlossen, Ihnen fehlt/fehlen noch %1 %2</German>
 			<!-- <Russian></Russian> -->
@@ -1636,7 +1473,6 @@
 			<Czech>\n\n%3 hotovo, chybí ještě %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_153">
-			<Original>\n\n%3 complete, missing %1 more of %2</Original>
 			<English>\n\n%3 complete, missing %1 more of %2</English>
 			<German>\n\n%3 abgeschlossen, Ihnen fehlt/fehlen noch %1 %2</German>
 			<!-- <Russian></Russian> -->
@@ -1646,7 +1482,6 @@
 			<Czech>\n\n%3 hotovo, chybí ještě %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_154">
-			<Original>\n\n%1 of %2 has been successfully added to your inventory.</Original>
 			<English>\n\n%1 of %2 has been successfully added to your inventory.</English>
 			<German>\n\n%1 %2 wurden erflogreich zu Ihrem Inventar hinzugefügt.</German>
 			<!-- <Russian></Russian> -->
@@ -1656,7 +1491,6 @@
 			<Czech>\n\n%1 %2 bylo úspěšně přidáno do Vašeho inventáře.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_155">
-			<Original>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</Original>
 			<English>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</English>
 			<German>\n\nGewinnung von Erz, bewegen Sie sich um den Vorgang abzubrechen. (%1/%2)</German>
 			<Russian>\n\nРуда добывается, уходите в любое время для отмены. (%1/%2)</Russian>
@@ -1666,7 +1500,6 @@
 			<Czech>\n\nTěžení rudy, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_156">
-			<Original>\n\n%1 piles of ore has been successfully added in front of you.</Original>
 			<English>\n\n%1 piles of ore has been successfully added in front of you.</English>
 			<German>\n\n%1 Stappel Erz wurden erfolgreich vor Ihnen hinzugefügt.</German>
 			<Russian>\n\n%1 руда была успешно размещена перед вами.</Russian>
@@ -1676,7 +1509,6 @@
 			<Czech>n\n\%1 rudy bylo úspěšně položeno před Vás.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_157">
-			<Original>Unable to upgrade %1 nearby.</Original>
 			<English>Unable to upgrade %1 nearby.</English>
 			<German>Upgrade von %1 ist nicht möglich.</German>
 			<!-- <Russian></Russian> -->
@@ -1686,7 +1518,6 @@
 			<Czech>Upgrade %1 nelze poblíž udělat.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_158">
-			<Original>You have upgraded %2. Combination is %1</Original>
 			<English>You have upgraded %2. Combination is %1</English>
 			<German>Sie haben %2 geupgradet. Ihre Kombination lautet: %1</German>
 			<Russian>Вы улучшили %2. Комбинация %1</Russian>
@@ -1696,7 +1527,6 @@
 			<Czech>Upgradnuli jste %2. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_159">
-			<Original>You have upgraded %1.</Original>
 			<English>You have upgraded %1.</English>
 			<German>Sie haben %1 geupgradet.</German>
 			<Russian>Вы улучшили %1.</Russian>
@@ -1706,7 +1536,6 @@
 			<Czech>Upgranuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_160">
-			<Original>Preparing to refuel, stand still to drain %1.</Original>
 			<English>Preparing to refuel, stand still to drain %1.</English>
 			<German>Betanken von %1 wird vorbereitet, bewegen Sie sich um den Vorgang abzubrechen.</German>
 			<Russian>Подготовка к заправке, стойте на месте, чтобы опустошить 1%.</Russian>
@@ -1716,7 +1545,6 @@
 			<Czech>Příprava přečerpání, stůjte na místě pro čerpání z %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_161">
-			<Original>%1 cannot hold that much fuel.</Original>
 			<English>%1 cannot hold that much fuel.</English>
 			<German>%1 kann nicht so viel Kraftstoff halten.</German>
 			<Russian>%1 не может хранить столько топлива.</Russian>
@@ -1726,7 +1554,6 @@
 			<Czech>%1 nemůže mít tolik paliva.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_162">
-			<Original>Starting de-construction of %1.</Original>
 			<English>Starting de-construction of %1.</English>
 			<German>Starte Dekonstruktion von %1.</German>
 			<Russian>Начат разбор %1.</Russian>
@@ -1736,7 +1563,6 @@
 			<Czech>Začínám rozebírání %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_163">
-			<Original>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</Original>
 			<English>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</English>
 			<German>Dekonstruktion von %1, Stufe %2 von %3. Bewegen Sie sich um den Vorgang abzubrechen.</German>
 			<Russian>Разбор %1 стадия %2 из %3 уходите в любое время для отмены.</Russian>
@@ -1746,7 +1572,6 @@
 			<Czech>Rozebírání %1, fáze %2 z %3. Kdykoliv se pohněte pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_164">
-			<Original>%1 broke cannot remove %2.</Original>
 			<English>%1 broke cannot remove %2.</English>
 			<German>%1 wurde zerstört. %2 kann nicht mehr entfernt werden.</German>
 			<Russian>%1 сломан, нельзя убрать %2.</Russian>
@@ -1756,7 +1581,6 @@
 			<Czech>%1 se rozbil. Nelze odstranit %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_165">
-			<Original>De-constructing %1.</Original>
 			<English>De-constructing %1.</English>
 			<German>Dekonstruktion von %1.</German>
 			<Russian>Разбор %1.</Russian>
@@ -1766,7 +1590,6 @@
 			<Czech>Rozebírání %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_166">
-			<Original>You have successfully attached %1 to the %2</Original>
 			<English>You have successfully attached %1 to the %2</English>
 			<German>Sie haben erfolgreich %1 zum/zur %2 hinzugefügt.</German>
 			<Russian>Вы успешно установили %1 на %2</Russian>
@@ -1776,7 +1599,6 @@
 			<Czech>Úspěšně jste připevnili %1 ke %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_167">
-			<Original>You need %1 to repair this</Original>
 			<English>You need %1 to repair this</English>
 			<German>Sie benötigen %1 um dies zu reparieren.</German>
 			<Russian>Вам нужно %1, чтобы отремонтировать это</Russian>
@@ -1786,7 +1608,6 @@
 			<Czech>K opravě tohoto potřebujete %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_168">
-			<Original>You have destroyed %1 while attempting to remove from %2</Original>
 			<English>You have destroyed %1 while attempting to remove from %2</English>
 			<German>Beim Abmontieren von dem/der %2 wurde %1 zerstört.</German>
 			<Russian>Вы сломали %1, при попытке снятия с %2</Russian>
@@ -1796,7 +1617,6 @@
 			<Czech>Zničili jste %1 při pokusu o odstranění z %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_169">
-			<Original>You have successfully removed %1 from the %2</Original>
 			<English>You have successfully removed %1 from the %2</English>
 			<German>Sie haben erfolgreich ein(e) %1 von dem/der %2 demontiert.</German>
 			<Russian>Вы успешно сняли %1 с %2</Russian>
@@ -1806,7 +1626,6 @@
 			<Czech>Úspěšně jste odstranili %1 z %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_170">
-			<Original>You need %1 to remove this part.</Original>
 			<English>You need %1 to remove this part.</English>
 			<German>Sie benötigen eine %1 um dieses Teil zu demontieren.</German>
 			<Russian>Вам нужно %1, чтобы снять эту запчасть.</Russian>
@@ -1816,7 +1635,6 @@
 			<Czech>Potřebujete %1 k odstranění této části.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_171">
-			<Original>%1 has been drained for %2 litres of Fuel</Original>
 			<English>%1 has been drained for %2 litres of Fuel</English>
 			<German>Sie haben %2 Gallonen Kraftstoff von dem/der %1 entfernt.</German>
 			<!-- <Russian></Russian> -->
@@ -1826,7 +1644,6 @@
 			<Czech>Z %1 bylo odčerpáno %2 litrů paliva</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_172">
-			<Original>%1 does not have enough fuel to siphon.</Original>
 			<English>%1 does not have enough fuel to siphon.</English>
 			<German>Diese(r) %1 hat nicht genug Kraftstoff.</German>
 			<Russian>%1 не имеет достаточно топлива для слития.</Russian>
@@ -1836,7 +1653,6 @@
 			<Czech>%1 nemá dostatek paliva na odčerpání.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_173">
-			<Original>Dog consumed %1, and is now tamed.</Original>
 			<English>Dog consumed %1, and is now tamed.</English>
 			<German>Der Hund hat %1 konsumiert und ist nun gezähmt.</German>
 			<Russian>Собака употребила %1, и теперь приручена.</Russian>
@@ -1846,7 +1662,6 @@
 			<Czech>Pes snědl %1 a nyní je ochočen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_174">
-			<Original>Dog consumed %1, yet remains untamed.</Original>
 			<English>Dog consumed %1, yet remains untamed.</English>
 			<German>Der Hund hat %1 konsumiert und scheint ungezähmt.</German>
 			<Russian>Собака употребила %1, но всё ещё остаётся дикой.</Russian>
@@ -1856,7 +1671,6 @@
 			<Czech>Pes snědl %1, ovšem stále není ochočen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_175">
-			<Original>%1 has been attached to Tow Truck.</Original>
 			<English>%1 has been attached to Tow Truck.</English>
 			<German>%1 ist mit dem Abschleppwagen befestigt.</German>
 			<Russian>%1 был взят на буксир.</Russian>
@@ -1866,7 +1680,6 @@
 			<Czech>%1 byla připevněna k odtahovému vozidlu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_176">
-			<Original>Failed to attach %1 to Tow Truck.</Original>
 			<English>Failed to attach %1 to Tow Truck.</English>
 			<German>Es war nicht möglich den/die %1 am Abschleppwagen zu befestigen.</German>
 			<Russian>Не удалось взять на буксир %1.</Russian>
@@ -1876,7 +1689,6 @@
 			<Czech>Nepodařilo se zaháknout %1 k odtahovému vozidlu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_177">
-			<Original>%1 too large and cannot be towed.</Original>
 			<English>%1 too large and cannot be towed.</English>
 			<German>%1 ist zu groß und kann nicht abgeschleppt werden.</German>
 			<Russian>%1 слишком большой и не может буксироваться.</Russian>
@@ -1886,7 +1698,6 @@
 			<Czech>%1 je příliž velký a nedá se odtáhnout.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_178">
-			<Original>%1 has been detached from Tow Truck.</Original>
 			<English>%1 has been detached from Tow Truck.</English>
 			<German>%1 wird vom Abschleppwagen getrennt.</German>
 			<Russian>%1 был снят с буксира.</Russian>
@@ -1896,7 +1707,6 @@
 			<Czech>%1 byl odháknut z odtahového vozidla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_179">
-			<Original>You have setup your Safe. Combination is %1</Original>
 			<English>You have setup your Safe. Combination is %1</English>
 			<German>Ihr Tresor wurde aufgestellt. Ihre Kombination lautut: %1</German>
 			<Russian>Вы установили свой сейф. Комбинация %1</Russian>
@@ -1906,7 +1716,6 @@
 			<Czech>Nastavil jste svůj sejf. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_180">
-			<Original>Bought %3 for %1 %2.</Original>
 			<English>Bought %3 for %1 %2.</English>
 			<German>Sie haben für %1 %2 ein %3 gekauft.</German>
 			<Russian>Куплено %3 за %1 %2.</Russian>
@@ -1916,7 +1725,6 @@
 			<Czech>Nakoupeno %3 za %1 %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_181">
-			<Original>Sold %1 %2 for %3 %4</Original>
 			<English>Sold %1 %2 for %3 %4</English>
 			<German>Sie haben für %3 %4 %1 %2 verkauft</German>
 			<Russian>Продано %1 %2 за %3 %4</Russian>
@@ -1926,7 +1734,6 @@
 			<Czech>Prodáno %1 %2 za %3 %4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_182">
-			<Original>Cannot sell %1, tires are too damaged.</Original>
 			<English>Cannot sell %1, tires are too damaged.</English>
 			<German>Kann nicht %1 verkaufen, da die Reifen zu sehr beschädigt sind.</German>
 			<Russian>Нельзя продать %1, колёса слишком повреждены.</Russian>
@@ -1936,7 +1743,6 @@
 			<Czech>Nelze prodat %1, pneumatiky jsou příliš poškozeny.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_183">
-			<Original>Insufficient Stock %1</Original>
 			<English>Insufficient Stock %1</English>
 			<German>1% nicht ausreichend auf Lager.</German>
 			<!-- <Russian></Russian> -->
@@ -1946,7 +1752,6 @@
 			<Czech>%1 není na skladě.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_184">
-			<Original>Need %1 More %2</Original>
 			<English>Need %1 More %2</English>
 			<German>Sie benötigen noch %1 %2</German>
 			<Russian>Нужно ещё %1 %2</Russian>
@@ -1956,7 +1761,6 @@
 			<Czech>Bude ještě potřeba %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_185">
-			<Original>No %1 found within 20 meters.</Original>
 			<English>No %1 found within 20 meters.</English>
 			<German>Kein %1 innerhalb von 20 Metern gefunden.</German>
 			<Russian>Не найдено %1 вблизи 20 метров.</Russian>
@@ -1966,7 +1770,6 @@
 			<Czech>Nenalezen žádný %1 v blízkosti 20 metrů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_186">
-			<Original>Traded %1 %2 for %3 %4</Original>
 			<English>Traded %1 %2 for %3 %4</English>
 			<German>Sie haben für %3 %4 %1 %2 gehandelt</German>
 			<Russian>Продано %1 %2 за %3 %4</Russian>
@@ -1976,7 +1779,6 @@
 			<Czech>Vyobchodováno %1 %2 za %3 %4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_187">
-			<Original>Starting trade, stand still to complete trade %1 of %2.</Original>
 			<English>Starting trade, stand still to complete trade %1 of %2.</English>
 			<German>Handel gestartet, bewegen Sie sich um den Vorgang abzubrechen. (%1 von %2)</German>
 			<Russian>Торговля началась, стойте на месте, чтобы завершить сделку %1 из %2.</Russian>
@@ -1986,7 +1788,6 @@
 			<Czech>Začínám obchod, stůjte na místě pro dokončení obchodu %1 z %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_188">
-			<Original>Examine</Original>
 			<English>Examine</English>
 			<German>Prüfe</German>
 			<Russian>Исследовать</Russian>
@@ -1996,7 +1797,6 @@
 			<Czech>Prozkoumat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_189">
-			<Original>Craft Ramp</Original>
 			<English>Craft Ramp</English>
 			<German>Rampe herstelln</German>
 			<Russian>Создать: Наклонная плоскость</Russian>
@@ -2006,7 +1806,6 @@
 			<Czech>Vytvořit Rampu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_190">
-			<Original>Craft Tent</Original>
 			<English>Craft Tent</English>
 			<German>Zelt herstellen</German>
 			<Russian>Создать: Палатка</Russian>
@@ -2016,7 +1815,6 @@
 			<Czech>Vyrobit Stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_191">
-			<Original>Craft Desert Tent</Original>
 			<English>Craft Desert Tent</English>
 			<German>Wüstenzelt herstellen</German>
 			<Russian>Создать: Пустынная палатка</Russian>
@@ -2026,7 +1824,6 @@
 			<Czech>Vyrobit Pouštní stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_192">
-			<Original>Craft Green Tent</Original>
 			<English>Craft Green Tent</English>
 			<German>Grünes Zelt herstellen</German>
 			<Russian>Создать: Зелёная палатка</Russian>
@@ -2036,7 +1833,6 @@
 			<Czech>Vyrobit Zelený stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_193">
-			<Original>Craft Sun Shade</Original>
 			<English>Craft Sun Shade</English>
 			<German>Sonnenschutz herstellen</German>
 			<Russian>Создать: Солнцезащитный козырёк</Russian>
@@ -2046,7 +1842,6 @@
 			<Czech>Vyrobit Sluneční clonu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_194">
-			<Original>Craft Burlap</Original>
 			<English>Craft Burlap</English>
 			<German>Sackleinen herstellen</German>
 			<Russian>Создать: Брезент</Russian>
@@ -2056,7 +1851,6 @@
 			<Czech>Vyrobit Pytlovinu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_195">
-			<Original>Craft Sandbag</Original>
 			<English>Craft Sandbag</English>
 			<German>Sandsack herstellen</German>
 			<Russian>Создать: Мешки с песком</Russian>
@@ -2066,7 +1860,6 @@
 			<Czech>Vyrobit Pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_196">
-			<Original>Craft Light Pole</Original>
 			<English>Craft Light Pole</English>
 			<German>Lichtmast herstellen</German>
 			<Russian>Создать: Фонарный столб</Russian>
@@ -2076,7 +1869,6 @@
 			<Czech>Vyrobit Lampu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_197">
-			<Original>Add 1 10oz Gold</Original>
 			<English>Add 1 10oz Gold</English>
 			<German>1 10oz Gold hinzufügen</German>
 			<Russian>Добавить 1 10oz золота</Russian>
@@ -2086,7 +1878,6 @@
 			<Czech>Přidáno 1 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_198">
-			<Original>Add 10 10oz Gold</Original>
 			<English>Add 10 10oz Gold</English>
 			<German>10 10oz Gold hinzufügen</German>
 			<Russian>Добавить 10 10oz золота</Russian>
@@ -2096,7 +1887,6 @@
 			<Czech>Přidáno 10 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_199">
-			<Original>Add 9 10oz Gold</Original>
 			<English>Add 9 10oz Gold</English>
 			<German>9 10oz Gold hinzufügen</German>
 			<Russian>Добавить 9 10oz золота</Russian>
@@ -2106,7 +1896,6 @@
 			<Czech>Přidáno 9 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_200">
-			<Original>Remove 1 10oz Gold</Original>
 			<English>Remove 1 10oz Gold</English>
 			<German>1 10oz Gold entfernen</German>
 			<Russian>Забрать 1 10oz золота</Russian>
@@ -2116,7 +1905,6 @@
 			<Czech>Odebráno 1 10oz zlato</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_201">
-			<Original>Empty Case</Original>
 			<English>Empty Case</English>
 			<German>Leerer Koffer</German>
 			<Russian>Пустой чемоданчик</Russian>
@@ -2126,7 +1914,6 @@
 			<Czech>Prázdný kufřík</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_202">
-			<Original>Add 8 10oz Gold</Original>
 			<English>Add 8 10oz Gold</English>
 			<German>8 10oz Gold hinzufügen</German>
 			<Russian>Добавить 8 10oz золота</Russian>
@@ -2136,7 +1923,6 @@
 			<Czech>Přidáno 8 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_203">
-			<Original>Add 7 10oz Gold</Original>
 			<English>Add 7 10oz Gold</English>
 			<German>7 10oz Gold hinzufügen</German>
 			<Russian>Добавить 7 10oz золота</Russian>
@@ -2146,7 +1932,6 @@
 			<Czech>Přidáno 7 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_204">
-			<Original>Add 6 10oz Gold</Original>
 			<English>Add 6 10oz Gold</English>
 			<German>6 10oz Gold hinzufügen</German>
 			<Russian>Добавить 6 10oz золота</Russian>
@@ -2156,7 +1941,6 @@
 			<Czech>Přidáno 6 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_205">
-			<Original>Add 5 10oz Gold</Original>
 			<English>Add 5 10oz Gold</English>
 			<German>5 10oz Gold hinzufügen</German>
 			<Russian>Добавить 5 10oz золота</Russian>
@@ -2166,7 +1950,6 @@
 			<Czech>Přidáno 5 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_206">
-			<Original>Add 4 10oz Gold</Original>
 			<English>Add 4 10oz Gold</English>
 			<German>4 10oz Gold hinzufügen</German>
 			<Russian>Добавить 4 10oz золота</Russian>
@@ -2176,7 +1959,6 @@
 			<Czech>Přidat 4 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_207">
-			<Original>Add 3 10oz Gold</Original>
 			<English>Add 3 10oz Gold</English>
 			<German>3 10oz Gold hinzufügen</German>
 			<Russian>Добавить 3 10oz золота</Russian>
@@ -2186,7 +1968,6 @@
 			<Czech>Prodat 3 10oz zlata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_208">
-			<Original>Add 2 10oz Gold</Original>
 			<English>Add 2 10oz Gold</English>
 			<German>2 10oz Gold hinzufügen</German>
 			<Russian>Добавить 2 10oz золота</Russian>
@@ -2196,7 +1977,6 @@
 			<Czech>Přidat 2 10oz zlata</Czech>
 		</Key>
     <Key ID="STR_EPOCH_PLAYER_S_197">
-      <Original>Add 1 10oz Silver</Original>
       <English>Add 1 10oz Silver</English>
       <!-- <German>1 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 1 10oz серебра</Russian>
@@ -2206,7 +1986,6 @@
       <Czech>Přidat 1 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_198">
-      <Original>Add 10 10oz Silver</Original>
       <English>Add 10 10oz Silver</English>
       <!-- <German>10 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 10 10oz серебра</Russian>
@@ -2216,7 +1995,6 @@
       <Czech>Přidat 10 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_199">
-      <Original>Add 9 10oz Silver</Original>
       <English>Add 9 10oz Silver</English>
       <!-- <German>9 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 9 10oz серебра</Russian>
@@ -2226,7 +2004,6 @@
       <Czech>Přidat 9 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_200">
-      <Original>Remove 1 10oz Silver</Original>
       <English>Remove 1 10oz Silver</English>
       <!-- <German>1 10oz Silver entfernen</German> -->
       <Russian>Забрать 1 10oz серебра</Russian>
@@ -2236,7 +2013,6 @@
       <Czech>Odebráno 1 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_202">
-      <Original>Add 8 10oz Silver</Original>
       <English>Add 8 10oz Silver</English>
       <!-- <German>8 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 8 10oz серебра</Russian>
@@ -2246,7 +2022,6 @@
       <Czech>Přidat 8 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_203">
-      <Original>Add 7 10oz Silver</Original>
       <English>Add 7 10oz Silver</English>
       <!-- <German>7 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 7 10oz серебра</Russian>
@@ -2256,7 +2031,6 @@
       <Czech>Přidat 7 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_204">
-      <Original>Add 6 10oz Silver</Original>
       <English>Add 6 10oz Silver</English>
       <!-- <German>6 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 6 10oz серебра</Russian>
@@ -2266,7 +2040,6 @@
       <Czech>Přidat 6 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_205">
-      <Original>Add 5 10oz Silver</Original>
       <English>Add 5 10oz Silver</English>
       <!-- <German>5 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 5 10oz серебра</Russian>
@@ -2276,7 +2049,6 @@
       <Czech>Přidat 5 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_206">
-      <Original>Add 4 10oz Silver</Original>
       <English>Add 4 10oz Silver</English>
       <!-- <German>4 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 4 10oz серебра</Russian>
@@ -2286,7 +2058,6 @@
       <Czech>Přidat 4 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_207">
-      <Original>Add 3 10oz Silver</Original>
       <English>Add 3 10oz Silver</English>
       <!-- <German>3 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 3 10oz серебра</Russian>
@@ -2296,7 +2067,6 @@
       <Czech>Přidat 3 10oz stříbra</Czech>
     </Key>
     <Key ID="STR_EPOCH_PLAYER_S_208">
-      <Original>Add 2 10oz Silver</Original>
       <English>Add 2 10oz Silver</English>
       <!-- <German>2 10oz Silver hinzufügen</German> -->
       <Russian>Добавить 2 10oz серебра</Russian>
@@ -2306,7 +2076,6 @@
       <Czech>Přidat 2 10oz stříbra</Czech>
     </Key>
 		<Key ID="STR_EPOCH_PLAYER_209">
-			<Original>Open %1</Original>
 			<English>Open %1</English>
 			<German>1% öffnen</German>
 			<Russian>Открыть %1</Russian>
@@ -2316,7 +2085,6 @@
 			<Czech>Otevřít %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_1">
-			<Original>Add 1 bar</Original>
 			<English>Add 1 bar</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2326,7 +2094,6 @@
 			<Czech>Přidat 1 cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_2">
-			<Original>Add 2 bars</Original>
 			<English>Add 2 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2336,7 +2103,6 @@
 			<Czech>Přidat 2 cihly</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_3">
-			<Original>Add 3 bars</Original>
 			<English>Add 3 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2346,7 +2112,6 @@
 			<Czech>Přidat 3 cihly</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_4">
-			<Original>Add 4 bars</Original>
 			<English>Add 4 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2356,7 +2121,6 @@
 			<Czech>Přidat 4 cihly</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_5">
-			<Original>Add 5 bars</Original>
 			<English>Add 5 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2366,7 +2130,6 @@
 			<Czech>Přidat 5 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_6">
-			<Original>Add 6 bars</Original>
 			<English>Add 6 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2376,7 +2139,6 @@
 			<Czech>Přidat 6 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_7">
-			<Original>Add 7 bars</Original>
 			<English>Add 7 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2386,7 +2148,6 @@
 			<Czech>Přidat 7 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_8">
-			<Original>Add 8 bars</Original>
 			<English>Add 8 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2396,7 +2157,6 @@
 			<Czech>Přidat 8 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_9">
-			<Original>Add 9 bars</Original>
 			<English>Add 9 bars</English>
 			<!-- <German>10oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 10oz слиток</Russian> -->
@@ -2406,7 +2166,6 @@
 			<Czech>Přidat 9 cihel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211_1">
-			<Original>Remove 1 bar</Original>
 			<English>Remove 1 bar</English>
 			<!-- <German>1oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 1oz слиток</Russian> -->
@@ -2416,7 +2175,6 @@
 			<Czech>Odebrat 1 cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211">
-			<Original>Unstack</Original>
 			<English>Unstack</English>
 			<!-- <German>1oz bar Stapel</German> -->
 			<!-- <Russian>Уложить в 1oz слиток</Russian> -->
@@ -2426,7 +2184,6 @@
 			<Czech>Odstackovat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_212">
-			<Original>Salvage Scrap</Original>
 			<English>Salvage Scrap</English>
 			<German>Material sammeln</German>
 			<!-- <Russian></Russian> -->
@@ -2436,7 +2193,6 @@
 			<Czech>Rozebrat na šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_213">
-			<Original>Craft Pole</Original>
 			<English>Craft Pole</English>
 			<German>Stange herstellen</German>
 			<Russian>Создать: Столб</Russian>
@@ -2446,7 +2202,6 @@
 			<Czech>Vytvořit tyč</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_214">
-			<Original>Build Corrugated Fence</Original>
 			<English>Build Corrugated Fence</English>
 			<German>Wellblech Zaun aufbauen</German>
 			<Russian>Установить: Гофрированный забор</Russian>
@@ -2456,7 +2211,6 @@
 			<Czech>Postavit Zvlněný plot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_215">
-			<Original>Craft Wooden Shed</Original>
 			<English>Craft Wooden Shed</English>
 			<German>Holschuppen herstellen</German>
 			<Russian>Создать: Деревянный сарай</Russian>
@@ -2466,7 +2220,6 @@
 			<Czech>Vytvořit Dřevěnou kůlnu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_216">
-			<Original>Craft Storage Shed</Original>
 			<English>Craft Storage Shed</English>
 			<German>Lagerschuppen herstellen</German>
 			<Russian>Создать: Лабаз</Russian>
@@ -2476,7 +2229,6 @@
 			<Czech>Vytvořit Skladovací kůlnu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_217">
-			<Original>Craft Outhouse</Original>
 			<English>Craft Outhouse</English>
 			<German>Toilettenhäuschen herstellen</German>
 			<Russian>Создать: Сортир</Russian>
@@ -2486,7 +2238,6 @@
 			<Czech>Vytvořit Kadibudku</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_218">
-			<Original>Craft Corrugated Fence</Original>
 			<English>Craft Corrugated Fence</English>
 			<German>Wellblech Zaun herstellen</German>
 			<Russian>Создать: Гофрир. забор</Russian>
@@ -2496,7 +2247,6 @@
 			<Czech>Vytvořit Zvlněný plot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_219">
-			<Original>Craft Rusty Gate</Original>
 			<English>Craft Rusty Gate</English>
 			<German>Rostiges Tor herstellen</German>
 			<Russian>Создать: Ржавые ворота</Russian>
@@ -2506,7 +2256,6 @@
 			<Czech>Vytvořit Rezavou bránu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_220">
-			<Original>Craft Metal Panel</Original>
 			<English>Craft Metal Panel</English>
 			<German>Metallplatte herstellen</German>
 			<Russian>Создать: Металлич. панель</Russian>
@@ -2516,7 +2265,6 @@
 			<Czech>Vyrobit Železný panel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_221">
-			<Original>Pack 6 Coke</Original>
 			<English>Pack 6 Coke</English>
 			<German>6 Coke packen</German>
 			<Russian>Запаковать: Кока-кола(6)</Russian>
@@ -2526,7 +2274,6 @@
 			<Czech>Zabalit 6 Coca-Col</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_222">
-			<Original>Pack 6 Pepsi</Original>
 			<English>Pack 6 Pepsi</English>
 			<German>6 Pepsi packen</German>
 			<Russian>Запаковать: Пепси(6)</Russian>
@@ -2536,7 +2283,6 @@
 			<Czech>Zabalit 6 Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_223">
-			<Original>Pack Scrap Metal</Original>
 			<English>Pack Scrap Metal</English>
 			<German>Schrott packen</German>
 			<Russian>Запаковать: Металлолом</Russian>
@@ -2546,7 +2292,6 @@
 			<Czech>Zabalit Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_224">
-			<Original>Pack Tank Traps</Original>
 			<English>Pack Tank Traps</English>
 			<German>Panzerfallen packen</German>
 			<Russian>Запаковать: Танковые ловушки</Russian>
@@ -2556,7 +2301,6 @@
 			<Czech>Zabalit Tankové zátarasy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_225">
-			<Original>Pack Wire Kits</Original>
 			<English>Pack Wire Kits</English>
 			<German>S-Draht-Rollen packen</German>
 			<!-- <Russian></Russian> -->
@@ -2566,7 +2310,6 @@
 			<Czech>Zabalit Kotouče drátu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_226">
-			<Original>Pack Bacon</Original>
 			<English>Pack Bacon</English>
 			<German>Speck packen</German>
 			<Russian>Запаковать: Бекон</Russian>
@@ -2576,7 +2319,6 @@
 			<Czech>Zabalit Slaninu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_227">
-			<Original>Pack 6 Bacon</Original>
 			<English>Pack 6 Bacon</English>
 			<German>6 Speck packen</German>
 			<Russian>Запаковать: Бекон(6)</Russian>
@@ -2586,7 +2328,6 @@
 			<Czech>Zabalit 6 Slanin</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_228">
-			<Original>Craft Metal Floor</Original>
 			<English>Craft Metal Floor</English>
 			<German>Metallboden herstellen</German>
 			<Russian>Создать: Металлич. пол</Russian>
@@ -2596,7 +2337,6 @@
 			<Czech>Vytvořit Železnou podlahu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_229">
-			<Original>Craft Lg Camo Net</Original>
 			<English>Craft Lg Camo Net</English>
 			<German>Großes Tarnnetz herstellen</German>
 			<Russian>Создать: Lg Camo Net</Russian>
@@ -2606,7 +2346,6 @@
 			<Czech>Vytvořit Velkou kamuflážní síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_230">
-			<Original>Place Safe</Original>
 			<English>Place Safe</English>
 			<German>Tresor platzieren</German>
 			<Russian>Поставить сейф</Russian>
@@ -2616,7 +2355,6 @@
 			<Czech>Položit Sejf</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_231">
-			<Original>Place Lockbox</Original>
 			<English>Place Lockbox</English>
 			<German>Schließkassette platzieren</German>
 			<Russian>Поставить запираемый ящик</Russian>
@@ -2626,7 +2364,6 @@
 			<Czech>Položit skřínku</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_232">
-			<Original>Craft Wood Floor</Original>
 			<English>Craft Wood Floor</English>
 			<German>Holboden herstellen</German>
 			<Russian>Создать: Деревянный пол</Russian>
@@ -2636,7 +2373,6 @@
 			<Czech>Vytvořit Dřevěnou podlahu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_232a">
-			<Original>Craft Wood Floor 1/2</Original>
 			<English>Craft Wood Floor 1/2</English>
 			<German>1/2 Holzboden herstellen</German>
 			<Russian>Создать: Деревянный пол 1/2</Russian>
@@ -2646,7 +2382,6 @@
 			<Czech>Vytvořit 1/2 dřevěné podlahy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_233">
-			<Original>Craft Stair Supports</Original>
 			<English>Craft Stair Supports</English>
 			<German>Treppenstützen herstellen</German>
 			<Russian>Создать: Stair Supports</Russian>
@@ -2656,7 +2391,6 @@
 			<Czech>Vytvořit Podpěry schodů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_234">
-			<Original>Craft Doorway</Original>
 			<English>Craft Doorway</English>
 			<German>Türrahmen herstellen</German>
 			<Russian>Создать: Дверной проём</Russian>
@@ -2666,7 +2400,6 @@
 			<Czech>Vytvořit Vchod</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_235">
-			<Original>Craft Window</Original>
 			<English>Craft Window</English>
 			<German>Fenster herstellen</German>
 			<Russian>Создать: Окно</Russian>
@@ -2676,7 +2409,6 @@
 			<Czech>Vytvořit Okno</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_236">
-			<Original>Craft Large Wall</Original>
 			<English>Craft Large Wall</English>
 			<German>Große Mauer herstellen</German>
 			<Russian>Создать: Большая стена</Russian>
@@ -2686,7 +2418,6 @@
 			<Czech>Vytvořit Velkou zeď</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_237">
-			<Original>Craft Wood Wall</Original>
 			<English>Craft Wood Wall</English>
 			<German>Holzmauer herstellen</German>
 			<Russian>Создать: Деревянная стена</Russian>
@@ -2696,7 +2427,6 @@
 			<Czech>Vytvořit Dřevěnou zeď</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_238">
-			<Original>Craft Door</Original>
 			<English>Craft Door</English>
 			<German>Tür herstellen</German>
 			<Russian>Создать: Дверь</Russian>
@@ -2706,7 +2436,6 @@
 			<Czech>Vytvořit Dveře</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239">
-			<Original>Craft Locked Door</Original>
 			<English>Craft Locked Door</English>
 			<German>Geschlossene Tür herstellen</German>
 			<Russian>Создать: Закрытая дверь</Russian>
@@ -2716,7 +2445,6 @@
 			<Czech>Vytvořit Zamčené dveře</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_240">
-			<Original>Craft Garage Door</Original>
 			<English>Craft Garage Door</English>
 			<German>Garagentor herstellen</German>
 			<Russian>Создать: Дверь гаража</Russian>
@@ -2726,7 +2454,6 @@
 			<Czech>Vytvořit Garážová vrata</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_241">
-			<Original>Build Fire</Original>
 			<English>Build Fire</English>
 			<German>Lagerfeuer erstellen</German>
 			<Russian>Приготовить костёр</Russian>
@@ -2736,7 +2463,6 @@
 			<Czech>Vytvořit ohniště</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_242">
-			<Original>Craft Lumber</Original>
 			<English>Craft Lumber</English>
 			<German>Bauholz herstellen</German>
 			<Russian>Создать: Пиломатериалы</Russian>
@@ -2746,7 +2472,6 @@
 			<Czech>Vytvořit Dřevo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_243">
-			<Original>Craft Arrows</Original>
 			<English>Craft Arrows</English>
 			<German>Pfeile herstellen</German>
 			<Russian>Создать: Стрелы</Russian>
@@ -2756,7 +2481,6 @@
 			<Czech>Vytvořit Šípy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_244">
-			<Original>Craft Stick Fence</Original>
 			<English>Craft Stick Fence</English>
 			<German>Stick-Zaun herstellen</German>
 			<Russian>Создать: Колючая ограда</Russian>
@@ -2766,7 +2490,6 @@
 			<Czech>Vytvořit Dřevěnou ohradu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_245">
-			<Original>\n\nFailed, you must get into drivers seat first.</Original>
 			<English>\n\nFailed, you must get into drivers seat first.</English>
 			<German>\n\nFehlgeschlagen, Sie müssen zuerst auf den Fahrersitz.</German>
 			<Russian>\n\nНе удалось, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
@@ -2776,7 +2499,6 @@
 			<Czech>\n\nNepodařilo se, musíte nejdříve na místo řidiče.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_246">
-			<Original>Plot Pole</Original>
 			<English>Plot Pole</English>
 			<German>Grundstücksmarkierung</German>
 			<Russian>Столб</Russian>
@@ -2786,7 +2508,6 @@
 			<Czech>Pozemková značka</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_247">
-			<Original>Quiet</Original>
 			<English>Quiet</English>
 			<German>Ruhe</German>
 			<Russian>Quiet</Russian>
@@ -2796,7 +2517,6 @@
 			<Czech>Tichý</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_248">
-			<Original>Alert</Original>
 			<English>Alert</English>
 			<German>Alamieren</German>
 			<Russian>Alert</Russian>
@@ -2806,7 +2526,6 @@
 			<Czech>Poplach</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_249">
-			<Original>Walk</Original>
 			<English>Walk</English>
 			<German>Laufen</German>
 			<Russian>Walk</Russian>
@@ -2816,7 +2535,6 @@
 			<Czech>Jít</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_250">
-			<Original>Run</Original>
 			<English>Run</English>
 			<German>Rennen</German>
 			<Russian>Run</Russian>
@@ -2826,7 +2544,6 @@
 			<Czech>Běžet</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_251">
-			<Original>Unpack</Original>
 			<English>Unpack</English>
 			<German>Auspacken</German>
 			<Russian>Распаковывать</Russian>
@@ -2836,7 +2553,6 @@
 			<Czech>Rozbalit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_252">
-			<Original>Craft Half Wall</Original>
 			<English>Craft Half Wall</English>
 			<German>Halbe Wand herstellen</German>
 			<Russian>Создать: Половина стены</Russian>
@@ -2846,7 +2562,6 @@
 			<Czech>Vytvořit 1/2 zdi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
-			<Original>Craft Garage Doorway</Original>
 			<English>Craft Garage Doorway</English>
 			<German>Garagentor-Rahmen herstellen</German>
 			<Russian>Создать: Проём гаража</Russian>
@@ -2856,7 +2571,6 @@
 			<Czech>Vytvořit Garážový vjezd</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_254">
-			<Original>Craft Plywood</Original>
 			<English>Craft Plywood</English>
 			<German>Sperrholz herstellen</German>
 			<Russian>Создать: Фанера</Russian>
@@ -2866,7 +2580,6 @@
 			<Czech>Vytvořit Překližku</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_255">
-			<Original>Craft Supply Crate</Original>
 			<English>Craft Supply Crate</English>
 			<German>Versorgungskiste herstellen</German>
 			<Russian>Создать: Ящик с припасами</Russian>
@@ -2876,7 +2589,6 @@
 			<Czech>Vytvořit Krabici se zásobami</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_256">
-			<Original>Craft Deer Stand</Original>
 			<English>Craft Deer Stand</English>
 			<German>Jagdstand herstellen</German>
 			<Russian>Создать: Вышка</Russian>
@@ -2886,7 +2598,6 @@
 			<Czech>Vytvořit Posed</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_257">
-			<Original>Craft Wood Stairs</Original>
 			<English>Craft Wood Stairs</English>
 			<German>Holztreppen herstellen</German>
 			<Russian>Создать: Деревянные ступеньки</Russian>
@@ -2896,7 +2607,6 @@
 			<Czech>Vytvořit Dřevěné schody</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_258">
-			<Original>Craft Wood Ladder</Original>
 			<English>Craft Wood Ladder</English>
 			<German>Holzleiter herstellen</German>
 			<Russian>Создать: Деревянная лестница</Russian>
@@ -2906,7 +2616,6 @@
 			<Czech>Vytvořit Dřevěné schody</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_259">
-			<Original>Craft Lumber Pack</Original>
 			<English>Craft Lumber Pack</English>
 			<German>Bauholz-Paket herstellen</German>
 			<Russian>Создать: Упаковка пиломатериалов</Russian>
@@ -2916,7 +2625,6 @@
 			<Czech>Vytvořit Balík dřeva</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_260">
-			<Original>Craft Workbench</Original>
 			<English>Craft Workbench</English>
 			<German>Werkbank herstellen</German>
 			<Russian>Создать: Верстак</Russian>
@@ -2926,7 +2634,6 @@
 			<Czech>Vyrobit Pracovní stůl</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_261">
-			<Original>Craft Shack</Original>
 			<English>Craft Shack</English>
 			<German>Schuppen herstellen</German>
 			<Russian>Создать: Будка</Russian>
@@ -2936,7 +2643,6 @@
 			<Czech>Vytvořit Chatrč</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_262">
-			<Original>Craft Floor 1/4</Original>
 			<English>Craft Floor 1/4</English>
 			<German>1/4 Fußboden herstellen</German>
 			<Russian>Создать: Пол 1/4</Russian>
@@ -2946,7 +2652,6 @@
 			<Czech>Vytvořit Podlahu (1/4)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_263">
-			<Original>Craft Wall 1/3</Original>
 			<English>Craft Wall 1/3</English>
 			<German>1/3 Mauer herstellen</German>
 			<Russian>Создать: Стена 1/3</Russian>
@@ -2956,7 +2661,6 @@
 			<Czech>Vytvořit Zeď (1/3)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_264">
-			<Original>Craft Plywood Pack</Original>
 			<English>Craft Plywood Pack</English>
 			<German>Sperrholz-Paket herstellen</German>
 			<Russian>Создать: Plywood Pack</Russian>
@@ -2966,7 +2670,6 @@
 			<Czech>Vytvořit Balík překližky</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_265">
-			<Original>Craft Scrap Metal</Original>
 			<English>Craft Scrap Metal</English>
 			<German>Schrott herstellen</German>
 			<Russian>Создать: Металлолом</Russian>
@@ -2976,7 +2679,6 @@
 			<Czech>Vyrobit Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_266">
-			<Original>Craft Silver Bar</Original>
 			<English>Craft Silver Bar</English>
 			<!-- <German>Silberbarren Stapel</German> -->
 			<!-- <Russian>Уложить в серебряный слиток</Russian> -->
@@ -2986,7 +2688,6 @@
 			<Czech>Vytvořit Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
-			<Original>Craft Gold Bar</Original>
 			<English>Craft Gold Bar</English>
 			<!-- <German>Goldbarren Stapel</German> -->
 			<!-- <Russian>Уложить в золотой слиток</Russian> -->
@@ -2996,7 +2697,6 @@
 			<Czech>Vytvořit Zlatou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_269">
-			<Original>Craft Bandages</Original>
 			<English>Craft Bandages</English>
 			<German>Bandagen herstellen</German>
 			<Russian>Создать: Бинты</Russian>
@@ -3006,7 +2706,6 @@
 			<Czech>Vytvořit Obvazy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_269b">
-			<Original>Craft Canvas</Original>
 			<English>Craft Canvas</English>
 			<German>Craft Canvas</German>
 			<Russian>Создать: Полотно</Russian>
@@ -3016,7 +2715,6 @@
 			<Czech>Vytvořit Plátno</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_270">
-			<Original>Craft Desert Net</Original>
 			<English>Craft Desert Net</English>
 			<German>Wüstennetz herstellen</German>
 			<Russian>Создать: Пустынная сеть</Russian>
@@ -3026,7 +2724,6 @@
 			<Czech>Vytvořit Pouštní maskovací síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_271">
-			<Original>Craft Forest Net</Original>
 			<English>Craft Forest Net</English>
 			<German>Waldnetz herstellen</German>
 			<Russian>Создать: Лесная сеть</Russian>
@@ -3036,7 +2733,6 @@
 			<Czech>Vytvořit Lesní maskovací síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273">
-			<Original>Craft Large Sandbag</Original>
 			<English>Craft Large Sandbag</English>
 			<German>Großen Sandsack herstellen</German>
 			<Russian>Создать: Большие мешки с песком</Russian>
@@ -3046,7 +2742,6 @@
 			<Czech>Vytvořit Velké pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_274">
-			<Original>Craft Sandbag Nest</Original>
 			<English>Craft Sandbag Nest</English>
 			<German>Sandsack-Nest herstellen</German>
 			<Russian>Создать: Sandbag Nest</Russian>
@@ -3056,7 +2751,6 @@
 			<Czech>Vytvořit Pískovou bariéru</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_275">
-			<Original>Craft Sledge</Original>
 			<English>Craft Sledge</English>
 			<German>Hammerstiel herstellen</German>
 			<Russian>Создать: Кувалда</Russian>
@@ -3066,7 +2760,6 @@
 			<Czech>Vytvořit Palici</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_276">
-			<Original>Craft Fire Barrel</Original>
 			<English>Craft Fire Barrel</English>
 			<German>Feuerfass herstellen</German>
 			<Russian>Создать: Огненная бочка</Russian>
@@ -3076,7 +2769,6 @@
 			<Czech>Vytvořit Hořící sud</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_277">
-			<Original>Craft Gun Rack</Original>
 			<English>Craft Gun Rack</English>
 			<German>Schusswaffen-Gestell herstellen</German>
 			<Russian>Создать: Полка для оружия</Russian>
@@ -3086,7 +2778,6 @@
 			<Czech>Vytvořit Stojan na zbraně</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_283">
-			<Original>Close</Original>
 			<English>Close</English>
 			<German>Schließen</German>
 			<Russian>Закрыть</Russian>
@@ -3096,7 +2787,6 @@
 			<Czech>Zavřít</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_288">
-			<Original>Items</Original>
 			<English>Items</English>
 			<German>Objekte</German>
 			<Russian>Предметы</Russian>
@@ -3106,7 +2796,6 @@
 			<Czech>Předměty</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_289">
-			<Original>Trader Menu</Original>
 			<English>Trader Menu</English>
 			<German>Händler Menü</German>
 			<Russian>Меню торговца</Russian>
@@ -3116,7 +2805,6 @@
 			<Czech>Nabídka obchodníka</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_290">
-			<Original>Categories</Original>
 			<English>Categories</English>
 			<German>Kategorieren</German>
 			<Russian>Категории</Russian>
@@ -3126,7 +2814,6 @@
 			<Czech>Kategorie</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_291">
-			<Original>Buy</Original>
 			<English>Buy</English>
 			<German>Kaufen</German>
 			<Russian>Купить</Russian>
@@ -3136,7 +2823,6 @@
 			<Czech>Koupit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_292">
-			<Original>Sell</Original>
 			<English>Sell</English>
 			<German>Verkaufen</German>
 			<Russian>Продать</Russian>
@@ -3146,7 +2832,6 @@
 			<Czech>Prodat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_293">
-			<Original>Buy For</Original>
 			<English>Buy For</English>
 			<German>Kaufen für</German>
 			<Russian>Куплю за</Russian>
@@ -3156,7 +2841,6 @@
 			<Czech>Koupit za</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_294">
-			<Original>Sell For</Original>
 			<English>Sell For</English>
 			<German>Verkaufen für</German>
 			<Russian>Продам за</Russian>
@@ -3166,7 +2850,6 @@
 			<Czech>Prodat za</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_295">
-			<Original>Remove from Toolbelt.</Original>
 			<English>Remove from Toolbelt.</English>
 			<German>Vom Werkzeuggürtel entfernen.</German>
 			<Russian>Убрать с пояса.</Russian>
@@ -3176,7 +2859,6 @@
 			<Czech>Odstranit z opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_298">
-			<Original>Craft Round Fence</Original>
 			<English>Craft Round Fence</English>
 			<German>Abgerundeten Zaun herstellen</German>
 			<Russian>Создать: Круглая ограда из мешков с песком</Russian>
@@ -3186,7 +2868,6 @@
 			<Czech>Vytvořit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_299">
-			<Original>Build Round Fence</Original>
 			<English>Build Round Fence</English>
 			<German>Abgerundeten Zaun aufstellen</German>
 			<Russian>Установить: Круглая ограда из мешков с песком</Russian>
@@ -3196,7 +2877,6 @@
 			<Czech>Postavit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_300">
-			<Original>Craft Sandbag</Original>
 			<English>Craft Sandbag</English>
 			<German>Sandsack herstellen</German>
 			<Russian>Создать: Мешки с песком</Russian>
@@ -3206,7 +2886,6 @@
 			<Czech>Vytvořit Pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_301">
-			<Original>Trade Metals</Original>
 			<English>Trade Metals</English>
 			<German>Metalle handeln</German>
 			<Russian>Обменять металлы</Russian>
@@ -3216,7 +2895,6 @@
 			<Czech>Obchod s kovy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_302">
-			<Original>Kill Board</Original>
 			<English>Kill Board</English>
 			<!-- <German></German> -->
 			<Russian>Таблица убийств</Russian>
@@ -3226,7 +2904,6 @@
 			<Czech>Nástěnka zabitých</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_303">
-			<Original>Murder</Original>
 			<English>Murder</English>
 			<German>Mord</German>
 			<Russian>Убийства</Russian>
@@ -3236,7 +2913,6 @@
 			<Czech>Vražda</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_304">
-			<Original>Craft Wood Crate</Original>
 			<English>Craft Wood Crate</English>
 			<German>Holzkiste herstellen</German>
 			<Russian>Создать: Деревянный ящик</Russian>
@@ -3246,7 +2922,6 @@
 			<Czech>Vytvořit Dřevěnou bednu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_305">
-			<Original>Craft Scaffolding</Original>
 			<English>Craft Scaffolding</English>
 			<!-- <German></German> -->
 			<Russian>Создать: Строй. леса</Russian>
@@ -3256,7 +2931,6 @@
 			<Czech>Vytvořit Lešení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_306">
-			<Original>Combine Bars</Original>
 			<English>Combine Bars</English>
 			<German>Barren kombinieren</German>
 			<Russian>Объединить слитки</Russian>
@@ -3266,7 +2940,6 @@
 			<Czech>Skombinovat cihly</Czech>
 		</Key>
     <Key ID="STR_EPOCH_PLAYER_307">
-			<Original>Combined all bars in your inventory to highest denomination.</Original>
 			<English>Combined all bars in your inventory to highest denomination.</English>
 			<!-- <German>Barren kombinieren</German> -->
 			<!-- <Russian></Russian> -->
@@ -3276,7 +2949,6 @@
 			<Czech>Skombinovány cihly ve vašem inventáři na maximum.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_308">
-			<Original>To driver's seat</Original>
 			<English>To driver's seat</English>
 			<Spanish>Para el asiento del conductor</Spanish>
 			<Russian>На сиденье водителя</Russian>
@@ -3286,7 +2958,6 @@
 			<!-- <German></German> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_308A">
-			<Original>To pilot's seat</Original>
 			<English>To pilot's seat</English>
 			<Spanish>Al asiento de piloto</Spanish>
 			<Russian>На место пилота</Russian>
@@ -3296,7 +2967,6 @@
 			<!-- <German></German> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_309">
-			<Original>To back seat</Original>
 			<English>To back seat</English>
 			<Spanish>Al asiento trasero</Spanish>
 			<Russian>На сиденье пассажира</Russian>
@@ -3306,7 +2976,6 @@
 			<!-- <German></German> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_310">
-			<Original>To gunner's seat</Original>
 			<English>To gunner's seat</English>
 			<Spanish>Al asiento del artillero</Spanish>
 			<Russian>На место стрелка</Russian>
@@ -3316,7 +2985,6 @@
 			<!-- <German></German> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_311">
-			<Original>To commander's seat</Original>
 			<English>To commander's seat</English>
 			<Spanish>Para el asiento del comandante</Spanish>
 			<Russian>На место командира</Russian>
@@ -3326,7 +2994,6 @@
 			<!-- <German></German> -->
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_313">
-			<Original>%1 is already in your inventory. Adding to backpack!</Original>
 			<English>%1 is already in your inventory. Adding to backpack!</English>
 			<German>%1 ist bereits in Ihrem Inventar. Hinzufügen zu Rucksack!</German>
 			<Russian>%1 уже в вашем инвентаре. Перемещено в рюкзак!</Russian>
@@ -3336,7 +3003,6 @@
 			<Czech>%1 je již ve vašem inventáři. Přidání do batoh!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_314">
-			<Original>%1 is already in your inventory. Dropping on the ground!</Original>
 			<English>%1 is already in your inventory. Dropping on the ground!</English>
 			<German>%1 ist bereits in Ihrem Inventar. Fallenlassen auf den Boden!</German>
 			<Russian>%1 уже в вашем инвентаре. Сброшено на землю!</Russian>
@@ -3346,7 +3012,6 @@
 			<Czech>%1 je již ve vašem inventáři. Pád na zem!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_315">
-			<Original>\n\n%1 is restricted.</Original>
 			<English>\n\n%1 is restricted.</English>
 			<German>\n\n%1 eingeschränkt.</German>
 			<Russian>\n\n%1 ограничено.</Russian>
@@ -3356,7 +3021,6 @@
 			<Czech>\n\n%1 je omezeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_316">
-			<Original>\n\nYou may only access friends' gear in this area.</Original>
 			<English>\n\nYou may only access friends' gear in this area.</English>
 			<German>\n\nSie können Zahn 'Freunde Zugriff nur in diesem Bereich.</German>
 			<Russian>\n\nВы можете получить доступ только к шестерню знакомого в этой области.</Russian>
@@ -3366,7 +3030,6 @@
 			<Czech>\n\nMůžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
-			<Original>Repair Vehicle</Original>
 			<English>Repair Vehicle</English>
 			<German>Fahrzeug reparieren</German>
 			<Russian>Починить транспорт</Russian>
@@ -3376,7 +3039,6 @@
 			<Czech>Opravit vozidlo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIR">
-			<Original>Repair</Original>
 			<English>Repair</English>
 			<German>Reparieren</German>
 			<Russian>Починить</Russian>
@@ -3386,7 +3048,6 @@
 			<Czech>Opravit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REMOVE">
-			<Original>Remove</Original>
 			<English>Remove</English>
 			<German>Entfernen</German>
 			<Russian>Демонтировать</Russian>
@@ -3396,7 +3057,6 @@
 			<Czech>Demontovat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_SALVAGEV">
-			<Original>Salvage Vehicle</Original>
 			<English>Salvage Vehicle</English>
 			<German>Fahrzeug demontieren</German>
 			<Russian>Демонтировать запчасти</Russian>
@@ -3406,7 +3066,6 @@
 			<Czech>Demontovat vozidlo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_CARGO">
-			<Original>Cargo Check</Original>
 			<English>Cargo Check</English>
 			<German>Gepäck prüfen</German>
 			<Russian>Проверить груз</Russian>
@@ -3416,7 +3075,6 @@
 			<Czech>Kontrola nákladu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_CANCEL">
-			<Original>Cancel</Original>
 			<English>Cancel</English>
 			<German>Abbrechen</German>
 			<Russian>Отмена</Russian>
@@ -3426,7 +3084,6 @@
 			<Czech>Zrušit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
-			<Original>Upgrade Vehicle</Original>
 			<English>Upgrade Vehicle</English>
 			<German>Fahrzeug upgraden</German>
 			<Russian>Улучшить транспорт</Russian>
@@ -3436,7 +3093,6 @@
 			<Czech>Upgrade vozidla</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP">
-			<Original>Offroad Performance</Original>
 			<English>Offroad Performance</English>
 			<German>Offroad Performance</German>
 			<Russian>Внедорожная эффективность</Russian>
@@ -3446,7 +3102,6 @@
 			<Czech>Terénní výkonnost</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_DESC">
-			<Original>Offroad performace manual.</Original>
 			<English>Offroad performace manual.</English>
 			<German>Offroad Performance Handbuch</German>
 			<Russian>Руководство по улучшению внедорожной эффективности.</Russian>
@@ -3456,7 +3111,6 @@
 			<Czech>Manuál terénní výkonnosti.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE">
-			<Original>Vehicle Maintenance</Original>
 			<English>Vehicle Maintenance</English>
 			<German>Fahrzeug-Wartung</German>
 			<Russian>Обслуживание транспорта</Russian>
@@ -3466,7 +3120,6 @@
 			<Czech>Údržba vozidla</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_DESC">
-			<Original>Vehicle maintenance and engineering manual.</Original>
 			<English>Vehicle maintenance and engineering manual.</English>
 			<German>Fahrzeug-Wartungshandbuch</German>
 			<Russian>Руководство по тех. обслуживанию транспортных средств и техники.</Russian>
@@ -3476,7 +3129,6 @@
 			<Czech>Manuál údržby vozidel</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK">
-			<Original>Luggage Rack</Original>
 			<English>Luggage Rack</English>
 			<German>Gepäckablage</German>
 			<Russian>Багажник на крыше</Russian>
@@ -3486,7 +3138,6 @@
 			<Czech>Přihrádka na zavazadla</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_DESC">
-			<Original>Luggage Rack install guide.</Original>
 			<English>Luggage Rack install guide.</English>
 			<German>Installationsanleitung der Gepäckablage</German>
 			<Russian>Руководство по установке багажника на крышу.</Russian>
@@ -3496,7 +3147,6 @@
 			<Czech>Návod na instalaci Přihrádky na zavazadla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK">
-			<Original>Fuel Tank</Original>
 			<English>Fuel Tank</English>
 			<German>Benzintank</German>
 			<Russian>Топливный бак</Russian>
@@ -3506,7 +3156,6 @@
 			<Czech>Palivová nádrž</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_DESC">
-			<Original>Fuel Tank install guide.</Original>
 			<English>Fuel Tank install guide.</English>
 			<German>Installationsanleitung für den Benzintank</German>
 			<Russian>Руководство по установке топливного бака.</Russian>
@@ -3516,7 +3165,6 @@
 			<Czech>Návod na instalaci Palivové nádrže.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM">
-			<Original>Weapon upgrade</Original>
 			<English>Weapon upgrade</English>
 			<German>Bewaffnung</German>
 			<Russian>Установка оружия</Russian>
@@ -3526,7 +3174,6 @@
 			<Czech>Vylepšení zbraně na vozidle</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_DESC">
-			<Original>Weapon install guide.</Original>
 			<English>Installation instructions for the vehicle armament.</English>
 			<German>Installationsanleitung für die Fahrzeug-bewaffnung.</German>
 			<Russian>Руководство по установке оружия.</Russian>
@@ -3536,7 +3183,6 @@
 			<Czech>Návod na instalaci zbraně na vozidlo.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
-			<Original>Vehicle Upgrade Successful.</Original>
 			<English>Vehicle Upgrade Successful.</English>
 			<German>Fahrzeug-Upgrade abgeschlossen.</German>
 			<Russian>Транспорт успешно улучшен.</Russian>
@@ -3546,7 +3192,6 @@
 			<Czech>Upgrade vozidla byl úspěšný.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_PATROL">
-			<Original>Patrol Pack (coyote)</Original>
 			<English>Patrol Pack (coyote)</English>
 			<German>Patrouille Rucksack (coyote)</German>
 			<Russian>Патрульный рюкзак (Койот)</Russian>
@@ -3556,7 +3201,6 @@
 			<Czech>Baťůžek (coyote)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_ASSAULT">
-			<Original>Assault Pack (ACU)</Original>
 			<English>Assault Pack (ACU)</English>
 			<German>Sturmtrupp Rucksack (ACU)</German>
 			<Russian>Рюкзак штурмовика (ACU)</Russian>
@@ -3566,7 +3210,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PACK_POUCH">
-			<Original>Czech Vest Pouch</Original>
 			<English>Czech Vest Pouch</English>
 			<German>Tschechischer Beutel</German>
 			<Russian>Чешский жилет-мешок</Russian>
@@ -3576,7 +3219,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PACK_ALICE">
-			<Original>ALICE Pack</Original>
 			<English>ALICE Pack</English>
 			<German>ALICE Rucksack</German>
 			<!-- <Russian></Russian> -->
@@ -3586,7 +3228,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PACK_ACU">
-			<Original>Survival ACU</Original>
 			<English>Survival ACU</English>
 			<German>Survival Rucksack (ACU)</German>
 			<Russian>Рюкзак выжившего (ACU)</Russian>
@@ -3596,7 +3237,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PACK_BAP">
-			<Original>British Assault Pack</Original>
 			<English>British Assault Pack</English>
 			<German>Britischer Sturmtrupp Rucksack</German>
 			<Russian>Рюкзак британского штурмовика</Russian>
@@ -3606,7 +3246,6 @@
 			<Czech>Britský Batoh</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_CZECH">
-			<Original>Czech Backpack</Original>
 			<English>Czech Backpack</English>
 			<German>Tschechische Rucksack</German>
 			<Russian>Чешский рюкзак</Russian>
@@ -3616,7 +3255,6 @@
 			<Czech>Český Batoh</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_COYOTE">
-			<Original>Backpack (Coyote)</Original>
 			<English>Backpack (Coyote)</English>
 			<German>Rucksack (Coyote)</German>
 			<Russian>Рюкзак (Койот)</Russian>
@@ -3626,7 +3264,6 @@
 			<Czech>Batoh (Coyote)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_LGB">
-			<Original>Large Gunbag</Original>
 			<English>Large Gunbag</English>
 			<German>Große Waffentasche</German>
 			<Russian>Большая оружейная сумка</Russian>
@@ -3636,7 +3273,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PACK_GB">
-			<Original>Gunbag</Original>
 			<English>Gunbag</English>
 			<German>Waffentasche</German>
 			<Russian>Оружейная сумка</Russian>
@@ -3646,7 +3282,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PACK_COMPACT">
-			<Original>Compact Pack</Original>
 			<English>Compact Pack</English>
 			<German>Compact Rucksack</German>
 			<Russian>Компактный рюкзак</Russian>
@@ -3656,7 +3291,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_PACK_TERMINAL">
-			<Original>Terminal Pack</Original>
 			<English>Terminal Pack</English>
 			<German>Terminal Rucksack</German>
 			<Russian>Вокзальный рюкзак</Russian>
@@ -3666,7 +3300,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
-			<Original>HALO Jump</Original>
 			<English>HALO Jump</English>
 			<!-- <German></German> -->
 			<Russian>HALO прыжок</Russian>
@@ -3676,7 +3309,6 @@
 			<Czech>Katapultovat se</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_NAMEYES">
-			<Original>Display Name (Yes)</Original>
 			<English>Display Name (Yes)</English>
 			<German>Namen anzeigen (Ja)</German>
 			<Russian>Отображать имя (Да)</Russian>
@@ -3686,7 +3318,6 @@
 			<Czech>Zobrazovat jména</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_NAMENO">
-			<Original>Display Name (No)</Original>
 			<English>Display Name (No)</English>
 			<German>Namen anzeigen (Nein)</German>
 			<Russian>Отображать имя (Нет)</Russian>
@@ -3696,7 +3327,6 @@
 			<Czech>Nezobrazovat jména</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_RAISEHORDE">
-			<Original>Raise Horde</Original>
 			<English>Raise Horde</English>
 			<!-- <German></German> -->
 			<Russian>Призвать орду</Russian>
@@ -3706,7 +3336,6 @@
 			<Czech>Přivolat Zombií</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_NIGHTVIS">
-			<Original>Night Vision</Original>
 			<English>Night Vision</English>
 			<German>Nachtsicht</German>
 			<Russian>Ночное зрение</Russian>
@@ -3716,7 +3345,6 @@
 			<Czech>Noktovizor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_FEED">
-			<Original>Feed</Original>
 			<English>Feed</English>
 			<German>Füttern</German>
 			<Russian>Кормиться</Russian>
@@ -3726,7 +3354,6 @@
 			<Czech>Nakrmit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAREA">
-			<Original>Maintain Area</Original>
 			<English>Maintain Area</English>
 			<German>Gebiet instand halten</German>
 			<Russian>Занять территорию</Russian>
@@ -3736,7 +3363,6 @@
 			<Czech>Údržba oblasti</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTPREV">
-			<Original>Maintain Area Preview</Original>
 			<English>Maintain Area Preview</English>
 			<German>Kostenvoranschlag für Instandhaltung</German>
 			<Russian>Занять территорию (пред. просмотр)</Russian>
@@ -3746,7 +3372,6 @@
 			<Czech>Náhled údržby oblasti</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
-			<Original>Unlock %1</Original>
 			<English>Unlock %1</English>
 			<German>%1 aufschließen</German>
 			<Russian>Открыть %1</Russian>
@@ -3756,7 +3381,6 @@
 			<Czech>Odemknout %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HOTWIRE">
-			<Original>Hotwire %1</Original>
 			<English>Hotwire %1</English>
 			<!-- <German></German> -->
 			<Russian>Угнать %1</Russian>
@@ -3766,7 +3390,6 @@
 			<Czech>Pokusit se Dostat do Vozidla %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_VEHLOCKED">
-			<Original>Vehicle Locked</Original>
 			<English>Vehicle Locked</English>
 			<German>Fahrzeug abgeschlossen</German> -->
 			<Russian>Транспорт закрыт</Russian>
@@ -3776,7 +3399,6 @@
 			<Czech>Vozidlo Uzamčeno</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_LOCK">
-			<Original>Lock %1</Original>
 			<English>Lock %1</English>
 			<German>%1 abschließen</German>
 			<Russian>Закрыть %1</Russian>
@@ -3786,7 +3408,6 @@
 			<Czech>Zamknout %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GUTZOM">
-			<Original>Gut Zombie</Original>
 			<English>Gut Zombie</English>
 			<!-- <German></German> -->
 			<Russian>Разделать зомби</Russian>
@@ -3796,7 +3417,6 @@
 			<Czech>Vykuchat Zombie</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GEAR">
-			<Original>Gear</Original>
 			<English>Gear</English>
 			<!-- <German></German> -->
 			<Russian>Инвентарь</Russian>
@@ -3806,7 +3426,6 @@
 			<Czech>Vybavení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_DESTROYTENT">
-			<Original>Destroy Tent</Original>
 			<English>Destroy Tent</English>
 			<German>Zelt zerstören</German>
 			<Russian>Сломать палатку</Russian>
@@ -3816,7 +3435,6 @@
 			<Czech>Zničit Stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
-			<Original>Open %1</Original>
 			<English>Open %1</English>
 			<German>%1 öffnen</German>
 			<Russian>Открыть %1</Russian>
@@ -3826,7 +3444,6 @@
 			<Czech>Otevřít %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_RECOMBO">
-			<Original>Re-Enter Combination</Original>
 			<English>Re-Enter Combination</English>
 			<German>Kombination erneut eingeben</German>
 			<Russian>Ввести комбинацию заново</Russian>
@@ -3836,7 +3453,6 @@
 			<Czech>Znovu Zadat Kombinaci</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_PACK">
-			<Original>Pack %1</Original>
 			<English>Pack %1</English>
 			<!-- <German></German> -->
 			<Russian>Запаковать %1</Russian>
@@ -3846,7 +3462,6 @@
 			<Czech>Zabalit %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MURDERS">
-			<Original>Recent Murders</Original>
 			<English>Recent Murders</English>
 			<!-- <German></German> -->
 			<Russian>Последние убийства</Russian>
@@ -3856,7 +3471,6 @@
 			<Czech>Nedávné Vraždy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_FILLVEH">
-			<Original>Fill Vehicle</Original>
 			<English>Fill Vehicle</English>
 			<!-- <German></German> -->
 			<Russian>Заправить транспорт</Russian>
@@ -3866,7 +3480,6 @@
 			<Czech>Naplnit Vozidlo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_NEEDPOWER">
-			<Original>Needs Power</Original>
 			<English>Needs Power</English>
 			<German>Benötigt Energie</German>
 			<Russian>Нужна энергия</Russian>
@@ -3876,7 +3489,6 @@
 			<Czech>Potřebuje Energii</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_UPGRADE">
-			<Original>Upgrade %1</Original>
 			<English>Upgrade %1</English>
 			<German>%1 aufrüsten</German>
 			<Russian>Улучшить %1</Russian>
@@ -3886,7 +3498,6 @@
 			<Czech>Upgradovat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_REMLOCK">
-			<Original>Remove Lock from %1</Original>
 			<English>Remove Lock from %1</English>
 			<!-- <German></German> -->
 			<Russian>Снять замок с %1</Russian>
@@ -3896,7 +3507,6 @@
 			<Czech>Odebrat Zámek z %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN">
-			<Original>Maintain %1</Original>
 			<English>Maintain %1</English>
 			<German>%1 instand halten</German>
 			<Russian>Занять %1</Russian>
@@ -3906,7 +3516,6 @@
 			<Czech>Opravit %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
-			<Original>Stop Generator</Original>
 			<English>Stop Generator</English>
 			<!-- <German></German> -->
 			<Russian>Остановить генератор</Russian>
@@ -3916,7 +3525,6 @@
 			<Czech>Zastavit Generátor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR2">
-			<Original>Start Generator</Original>
 			<English>Start Generator</English>
 			<!-- <German></German> -->
 			<Russian>Запустить генератор</Russian>
@@ -3926,7 +3534,6 @@
 			<Czech>Nastartovat Generátor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR3">
-			<Original>Fill and Start Generator</Original>
 			<English>Fill and Start Generator</English>
 			<!-- <German></German> -->
 			<Russian>Заправить и запустить генератор</Russian>
@@ -3936,7 +3543,6 @@
 			<Czech>Naplnit a nastartovat Generátor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_ATTACH">
-			<Original>Attach Straps</Original>
 			<English>Attach Straps</English>
 			<!-- <German></German> -->
 			<Russian>Прицепить стропы</Russian>
@@ -3946,7 +3552,6 @@
 			<Czech>Připevnit Popruhy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_DETACH">
-			<Original>Detach Straps</Original>
 			<English>Detach Straps</English>
 			<!-- <German></German> -->
 			<Russian>Отцепить стропы</Russian>
@@ -3956,7 +3561,6 @@
 			<Czech>Odstranit Popruhy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HUMANITY">
-			<Original>Your humanity is too %1, this trader refuses to talk to you</Original>
 			<English>Your humanity is too %1, this trader refuses to talk to you</English>
 			<!-- <German></German> -->
 			<Russian>Ваша человечность слишком %1, этот торговец отказывается говорить с вами</Russian>
@@ -3966,7 +3570,6 @@
 			<Czech>Tvá lidskost je příliš %1, tento obchodník s tebou odmítá mluvit.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_1">
-			<Original>Calling Zombies...</Original>
 			<English>Calling Zombies...</English>
 			<!-- <German></German> -->
 			<Russian>Призываем зомби...</Russian>
@@ -3976,7 +3579,6 @@
 			<Czech>Volám zombíky...</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_2">
-			<Original>Maintenance already in progress.</Original>
 			<English>Maintenance already in progress.</English>
 			<German>Instandhaltung bereits in bearbeitung.</German>
 			<Russian>Уже удерживается.</Russian>
@@ -3986,7 +3588,6 @@
 			<Czech>Údržba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_3">
-			<Original>At least one building part is not setup yet.</Original>
 			<English>At least one building part is not setup yet.</English>
 			<!-- <German></German> -->
 			<Russian>По крайней мере, одна часть здания ещё не построена.</Russian>
@@ -3996,7 +3597,6 @@
 			<Czech>Alespoň jedna část na stavbu není připravena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_4">
-			<Original>You have maintained %1 building parts.</Original>
 			<English>You have maintained %1 building parts.</English>
 			<!-- <German></German> -->
 			<Russian>Вы удержали %1 частей здания.</Russian>
@@ -4006,7 +3606,6 @@
 			<Czech>Opravil jsi %1 částí budov.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_5">
-			<Original>Missing Parts after first check Item: %1 / %2</Original>
 			<English>Missing Parts after first check Item: %1 / %2</English>
 			<!-- <German></German> -->
 			<Russian></Russian>
@@ -4016,7 +3615,6 @@
 			<Czech>Chybí část: %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_6">
-			<Original>Missing %1 more of %2</Original>
 			<English>Missing %1 more of %2</English>
 			<!-- <German></German> -->
 			<Russian></Russian>
@@ -4026,7 +3624,6 @@
 			<Czech>Chybí %1x %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_7">
-			<Original>%1 building parts in range, maintenance would cost %2.</Original>
 			<English>%1 building parts in range, maintenance would cost %2.</English>
 			<!-- <German></German> -->
 			<Russian>В радиусе %1 частей зданий, удержание будет стоить %2.</Russian>
@@ -4036,7 +3633,6 @@
 			<Czech>%1 částí staveb v okruhu, údržba by stála %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_8">
-			<Original>You have tagged a player as friendly. Waiting for other player to accept.</Original>
 			<English>You have tagged a player as friendly. Waiting for other player to accept.</English>
 			<!-- <German></German> -->
 			<Russian>Вы отметили игрока как друга. Ожидание принятия.</Russian>
@@ -4046,7 +3642,6 @@
 			<Czech>Označil si cíl za přítele. Čeká se na přijetí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_9">
-			<Original>\n\nUnable to change clothes while wearing backpack.</Original>
 			<English>\n\nUnable to change clothes while wearing backpack.</English>
 			<!-- <German></German> -->
 			<Russian>\n\nНельзя переодеваться, одевая рюкзак.</Russian>
@@ -4056,7 +3651,6 @@
 			<Czech>\n\nNemůžete si změnit oblečení, pokud nosíte batoh.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_10">
-			<Original>\n\nUnable to change clothes while carrying a filled chainsaw.</Original>
 			<English>\n\nUnable to change clothes while carrying a filled chainsaw.</English>
 			<!-- <German></German> -->
 			<Russian>\n\nНельзя переодеваться, неся заправленную бензопилу.</Russian>
@@ -4066,7 +3660,6 @@
 			<Czech>\n\nNemůžete si změnit oblečení, pokud nesete naplněnou motorovou pilu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_11">
-			<Original>Bought %3 for %1 %2, key added to toolbelt.</Original>
 			<English>Bought %3 for %1 %2, key added to toolbelt.</English>
 			<!-- <German></German> -->
 			<Russian>Куплено: %3 за %1 %2, ключ добавлен на пояс.</Russian>
@@ -4076,7 +3669,6 @@
 			<Czech>Koupeno %3 za %1 %2, klíč byl přidán do opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_12">
-			<Original>Missing %1 more of %2</Original>
 			<English>Missing %1 more of %2</English>
 			<!-- <German></German> -->
 			<Russian></Russian>
@@ -4086,7 +3678,6 @@
 			<Czech>Chybí %1x %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_13">
-			<Original>Missing tool %1</Original>
 			<English>Missing tool %1</English>
 			<!-- <German></German> -->
 			<Russian>Отсутствует инструмент %1</Russian>
@@ -4096,7 +3687,6 @@
 			<Czech>Chybějící nářadí: %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_14">
-			<Original>No Tank Traps found nearby.</Original>
 			<English>No Tank Traps found nearby.</English>
 			<German>Keine Tank Traps in der Nähe gefunden.</German>
 			<Russian>Вблизи не найдено танковых ловушек.</Russian>
@@ -4106,7 +3696,6 @@
 			<Czech>Nebyly poblíž nalezeny žádné tankové zátarasy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_15">
-			<Original>Another object is blocking the vehicle exit.</Original>
 			<English>Another object is blocking the vehicle exit.</English>
 			<!-- <German></German> -->
 			<Russian>Другой объект блокирует выход из транспорта.</Russian>
@@ -4116,7 +3705,6 @@
 			<Czech>Jiný objekt překáží ve výstupu z vozidla.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_16">
-			<Original>Failed, another player is closer than you are.</Original>
 			<English>Failed, another player is closer than you are.</English>
 			<!-- <German></German> -->
 			<Russian>Не удалось, другой игрок ближе, чем вы.</Russian>
@@ -4126,7 +3714,6 @@
 			<Czech>Chyba, další hráč je blíž, než vy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_17">
-			<Original>You and %1 are now tagged as friendlies.</Original>
 			<English>You and %1 are now tagged as friendlies.</English>
 			<!-- <German></German> -->
 			<Russian>Вы и %1 теперь друзья.</Russian>
@@ -4136,7 +3723,6 @@
 			<Czech>Ty a %1 jste nyní označení jako přátelé.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_18">
-			<Original>\n\nYou cannot perform an upgrade while still inside a vehicle.</Original>
 			<English>\n\nYou cannot perform an upgrade while still inside a vehicle.</English>
 			<!-- <German></German> -->
 			<Russian>\n\nВы не можете улучшить транспорт, находясь в нём.</Russian>
@@ -4146,7 +3732,6 @@
 			<Czech>\n\nNemůžete upgradovat, pokud jste ve vozidle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_20">
-			<Original>You must remove the lock to delete this item!</Original>
 			<English>You must remove the lock to delete this item!</English>
 			<!-- <German></German> -->
 			<Russian>Вы должны снять замок, чтобы убрать этот предмет!</Russian>
@@ -4156,7 +3741,6 @@
 			<Czech>Musíte odstranit zámek, abyste mohli smazat tento předmět!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_21">
-			<Original>Deconstructing modular buildables will not refund any components.</Original>
 			<English>Deconstructing modular buildables will not refund any components.</English>
 			<!-- <German></German> -->
 			<Russian>Разборка модульных построек не возвратит составные части.</Russian>
@@ -4166,7 +3750,6 @@
 			<Czech>Demontáž budovy nevrátí žádné její komponenty.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_22">
-			<Original>%1 building parts in range.</Original>
 			<English>%1 building parts in range.</English>
 			<!-- <German></German> -->
 			<Russian>%1 стройматериалов в радиусе.</Russian>
@@ -4176,7 +3759,6 @@
 			<Czech>%1 částí staveb v okruhu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_NAME">
-			<Original>Supply Crate</Original>
 			<English>Supply Crate</English>
 			<German>Versorgungskiste</German>
 			<Russian>Ящик с припасами</Russian>
@@ -4186,7 +3768,6 @@
 			<Czech>Bedna zásob</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC">
-			<Original>12 x Random Item</Original>
 			<English>12 x Random Item</English>
 			<German>12 x Zufällige Gegenstände</German>
 			<!-- <Russian></Russian> -->
@@ -4196,7 +3777,6 @@
 			<Czech>12x Náhodných předmětů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_EMPTY">
-			<Original>Empty Supply Crate</Original>
 			<English>Empty Supply Crate</English>
 			<German>Leere Versorgungskiste</German>
 			<Russian>Пустой ящик</Russian>
@@ -4206,7 +3786,6 @@
 			<Czech>Prázdná bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
-			<Original>6 x ItemSodaCoke</Original>
 			<English>6 x ItemSodaCoke</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4216,7 +3795,6 @@
 			<Czech>6x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
-			<Original>12 x ItemSodaCoke</Original>
 			<English>12 x ItemSodaCoke</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4226,7 +3804,6 @@
 			<Czech>12x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
-			<Original>6 x ItemSodaPepsi</Original>
 			<English>6 x ItemSodaPepsi</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4236,7 +3813,6 @@
 			<Czech>6x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
-			<Original>12 x ItemSodaPepsi</Original>
 			<English>12 x ItemSodaPepsi</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4246,7 +3822,6 @@
 			<Czech>12x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
-			<Original>6 x FoodbaconCooked</Original>
 			<English>6 x FoodbaconCooked</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4256,7 +3831,6 @@
 			<Czech>6x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
-			<Original>12 x FoodbaconCooked</Original>
 			<English>12 x FoodbaconCooked</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4266,7 +3840,6 @@
 			<Czech>12x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_G17">
-			<Original>12 x 17Rnd_9x19_glock17</Original>
 			<English>12 x 17Rnd_9x19_glock17</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4276,7 +3849,6 @@
 			<Czech>12x 17Rnd_9x19_glock17</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_M9SD">
-			<Original>12 x 15Rnd_9x19_M9SD</Original>
 			<English>12 x 15Rnd_9x19_M9SD</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4286,7 +3858,6 @@
 			<Czech>12x 15Rnd_9x19_M9SD</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
-			<Original>12 x 30Rnd_9x19_MP5SD</Original>
 			<English>12 x 30Rnd_9x19_MP5SD</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4296,7 +3867,6 @@
 			<Czech>12x 30Rnd_9x19_MP5SD</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
-			<Original>12 x SandBag</Original>
 			<English>12 x SandBag</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4306,7 +3876,6 @@
 			<Czech>12 Pytlů s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
-			<Original>6 x Tank Trap</Original>
 			<English>6 x Tank Trap</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4316,7 +3885,6 @@
 			<Czech>6 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
-			<Original>12 x Tank Trap</Original>
 			<English>12 x Tank Trap</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4326,7 +3894,6 @@
 			<Czech>12 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
-			<Original>6 x Wire Kit</Original>
 			<English>6 x Wire Kit</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4336,7 +3903,6 @@
 			<Czech>6 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
-			<Original>12 x Wire Kit</Original>
 			<English>12 x Wire Kit</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4346,7 +3912,6 @@
 			<Czech>12 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
-			<Original>6 x Scrap Metal</Original>
 			<English>6 x Scrap Metal</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4356,7 +3921,6 @@
 			<Czech>6x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
-			<Original>12 x Scrap Metal</Original>
 			<English>12 x Scrap Metal</English>
 			<!-- <German></German> -->
 			<!-- <Russian></Russian> -->
@@ -4366,7 +3930,6 @@
 			<Czech>12x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE">
-			<Original>Safe</Original>
 			<English>Safe</English>
 			<!-- <German></German> -->
 			<Russian>Сейф</Russian>
@@ -4376,7 +3939,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_DESC">
-			<Original>Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!</Original>
 			<English>Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!</English>
 			<!-- <German></German> -->
 			<Russian>Личный сейф: Перемещаемый объект, который используется в качестве безопасного хранилища. ВНИМАНИЕ!!! Поставив сейф, вы получите 4-х значный код, который необходимо ввести, чтобы открыть сейф, запишите этот код!</Russian>
@@ -4386,7 +3948,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_LOCKED">
-			<Original>Locked Safe</Original>
 			<English>Locked Safe</English>
 			<!-- <German></German> -->
 			<Russian>Закрытый сейф</Russian>
@@ -4396,7 +3957,6 @@
 			<!-- <Czech></Czech> -->
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_ENTER">
-			<Original>Now entering %1</Original>
 			<English>Now entering %1</English>
 			<German>Du betrittst %1</German>
 			<!-- <Russian></Russian> -->
@@ -4406,7 +3966,6 @@
 			<Czech>Vstoupili jste do %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_LEAVE">
-			<Original>Now leaving %1</Original>
 			<English>Now leaving %1</English>
 			<German>Du verlässt %1</German>
 			<!-- <Russian></Russian> -->
@@ -4416,7 +3975,6 @@
 			<Czech>Opustili jste %1</Czech>
 		</Key>
 		<Key ID="R3F_VERSION_WEIGHTED">
-			<Original>1.04</Original>
 			<English>1.04</English>
 			<German>1.04</German>
 			<Russian>1.04</Russian>
@@ -4426,7 +3984,6 @@
 			<Czech>1.04</Czech>
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_InGearBox">
-			<Original>%1 | Weight carried : %2 lb</Original>
 			<English>%1 | Weight carried : %2 lb</English>
 			<German>%1 | Getragenes Gewicht : %2 Kg</German>
 			<Russian>%1 | Переносимый вес : %2 Кг</Russian>
@@ -4436,7 +3993,6 @@
 			<Czech>%1 | Nesená váha : %2 Kg</Czech>
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_English">
-			<Original>lb</Original>
 			<English>lb</English>
 			<German>Kg</German>
 			<Russian>Кг</Russian>
