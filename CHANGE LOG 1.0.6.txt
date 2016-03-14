@@ -1,20 +1,27 @@
+[NEW] Rebased everything on DayZ Mod 1.8.7 code @icomrade @ebaydayz
+	- Blood types system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
+	- New loot table format is incompatible with old loot tables. See CfgLoot\README
+	- ItemFish, Shotgun ammo and several other item classnames changed. See SQL\1.0.6_Updates
+	- Mission.sqm and description.ext now use compact format
+	- Keyboard eventhandler updated, dayz_spaceInterupt is no longer used
+	- Optional news/rules feed on player login, set dayz_enableRules in init.sqf
+	- Weapon switch hotkeys added (1 = primary, 2 = pistol, 3 = melee)
+	- Journal is now functional for displaying stats
+	
 [NEW] RedRyder BB Gun by @arma2WillRobinson
+[NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] DB Backup script. @RimBlock
 [NEW] Use DayZ_UseSteamID = false; in your init.sqf to use the old PlayerUID, instead of SteamID @icomrade
 [NEW] UI Update - Graphical and code changes, enable using Dayz_Dark_UI = true; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
 [NOTE] It's recommend to convert to the new SteamID system if possible, new servers should not use DayZ_UseSteamID = false;
 [NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
-[NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
-[NEW] Optional news/rules feed on player login from DayZ Mod, set dayz_enableRules in init.sqf #1673 @ebaydayz
 [NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
-[NEW] Weapon switch hotkeys (1 = primary, 2 = pistol, 3 = melee) from DayZ Mod #1673 @ebaydayz
 [NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
 [NEW] Optional variable to restrict wearable clothes. Add DZE_RestrictSkins to init.sqf #1560 @BetterDeadThanZed @ebaydayz
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Add DZE_BackpackAntiTheft to init.sqf @ebaydayz
 [NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
-[NEW] Journal from official DayZ Mod is now functional for displaying stats @ebaydayz
 
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
@@ -60,8 +67,6 @@
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
 [UPDATED] Updated all config.cfg in Config-Examples, Added Default Steam Ports and Updated Layout. @Namindu
 [UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
-[UPDATED] Mission.sqm and description.ext to compact format from DayZ Mod #1614 #1672 @ebaydayz
-[UPDATED] Keyboard eventhandler to @facoptere's faster code from DayZ Mod #1673 @ebaydayz
 
 
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321

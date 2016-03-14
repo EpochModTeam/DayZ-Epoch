@@ -1,10 +1,3 @@
-/* 
-	If using DZE_MissionLootTable = true; without changing anything in BuildingLoot then
-	use an include instead of copying the files to your mission:
-
-	#include "\z\addons\dayz_code\Configs\CfgLoot\CfgBuildingLoot.hpp"
-*/
-
 #include "Groups\Buildings\Boat.hpp"
 #include "Groups\Buildings\Castle.hpp"
 #include "Groups\Buildings\Church.hpp"

@@ -49,12 +49,6 @@ class CfgLoot
 				
 		// Buildings
 		#include "CfgBuildingLoot.hpp"
-		/* 
-			If using DZE_MissionLootTable = true; without changing anything in BuildingLoot then
-			use an include instead of copying the files to your mission:
-		
-			#include "\z\addons\dayz_code\Configs\CfgLoot\CfgBuildingLoot.hpp"
-		*/
 
 		// Zombies
 		#include "Groups\Zombies\Civilian.hpp"
@@ -115,11 +109,5 @@ class CfgLoot
 	
 		// Buildings
 		#include "CfgBuildingPos.hpp"
-		/*
-			If using DZE_MissionLootTable = true; without changing anything in BuildingPos then 
-			use an include instead of copying the files to your mission:
-			
-			#include "\z\addons\dayz_code\Configs\CfgLoot\CfgBuildingPos.hpp"
-		*/
 	};
 };
