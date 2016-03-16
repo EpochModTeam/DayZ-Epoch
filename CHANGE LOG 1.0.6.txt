@@ -1,4 +1,4 @@
-[NEW] Rebased everything on DayZ Mod 1.8.7 code @icomrade @ebaydayz
+[NEW] Fully updated to DayZ 1.8.7 code base @icomrade @ebaydayz
 	- Blood types system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
 	- New loot table format is incompatible with old loot tables. See CfgLoot\README
 	- ItemFish, Shotgun ammo and several other item classnames changed. See SQL\1.0.6_Updates

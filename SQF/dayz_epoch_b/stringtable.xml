@@ -3002,15 +3002,6 @@
 			<French>\n\nVous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
 			<Czech>\n\nMůžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_REPAIRV">
-			<English>Repair Vehicle</English>
-			<German>Fahrzeug reparieren</German>
-			<Russian>Починить транспорт</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Repareer voertuig</Dutch>
-			<French>Réparer le véhicule</French>
-			<Czech>Opravit vozidlo</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_REPAIR">
 			<English>Repair</English>
 			<German>Reparieren</German>
@@ -3028,15 +3019,6 @@
 			<Dutch>Demonteer</Dutch>
 			<French>Retirer</French>
 			<Czech>Demontovat</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_SALVAGEV">
-			<English>Salvage Vehicle</English>
-			<German>Fahrzeug demontieren</German>
-			<Russian>Демонтировать запчасти</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Demonteer voertuig</Dutch>
-			<French>Récupérer des pièces</French>
-			<Czech>Demontovat vozidlo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_CARGO">
 			<English>Cargo Check</English>
@@ -3398,15 +3380,6 @@
 			<French>Équipement</French>
 			<Czech>Vybavení</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_DESTROYTENT">
-			<English>Destroy Tent</English>
-			<German>Zelt zerstören</German>
-			<Russian>Сломать палатку</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Vernietig Tent</Dutch>
-			<French>Détruire la tente</French>
-			<Czech>Zničit Stan</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 			<English>Open %1</English>
 			<German>%1 öffnen</German>
@@ -3460,15 +3433,6 @@
 			<Dutch>Heeft Stroom Nodig</Dutch>
 			<French>Énergie Nécessaire</French>
 			<Czech>Potřebuje Energii</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_UPGRADE">
-			<English>Upgrade %1</English>
-			<German>%1 aufrüsten</German>
-			<Russian>Улучшить %1</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<French>Améliorer %1</French>
-			<Czech>Upgradovat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_REMLOCK">
 			<English>Remove Lock from %1</English>

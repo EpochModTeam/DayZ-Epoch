@@ -15,7 +15,7 @@ if ((vehicle player) == player) then {
 	if (DZE_BackpackAntiTheft) then {
 		_friendlies	= player getVariable ["friendlies",[]];
 		_rcharID = _cTarget getVariable ["CharacterID","0"];
-		if ((!canbuild) && {_cTarget isKindOf "Man"} && {alive _cTarget} && {!((typeOf _cTarget) in serverTraders)} && {!(_rcharID in _friendlies)} && {(player distance _cTarget) < 12}) then {
+		if (!canbuild && {_cTarget isKindOf "Man"} && {alive _cTarget} && {!((typeOf _cTarget) in serverTraders)} && {!(_rcharID in _friendlies)} && {(player distance _cTarget) < 12}) then {
 			cutText [(localize "STR_EPOCH_PLAYER_316"),"PLAIN DOWN"];
 			_display closeDisplay 1;
 		};
