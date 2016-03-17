@@ -37,8 +37,8 @@ if (local _unit) then {
 		_unit setHit [_selection, _total];
 
 		if (!isServer) then {
-			PVDZ_veh_Save = [_unit,"damage"];
-			publicVariableServer "PVDZ_veh_Save";
+			PVDZE_veh_Update = [_unit,"damage"];
+			publicVariableServer "PVDZE_veh_Update";
 		} else {
 			[_unit, "damage"] call server_updateObject;
 		};
@@ -47,8 +47,8 @@ if (local _unit) then {
 	//if ( (count _this > 5) AND {(_this select 5)}) then {
 		// vehicle is not local to this client, ask the client which vehicle is local to set damage
 		//_this resize 5; // delete "broadcast" boolean
-		PVDZ_send = [_unit,"VehHandleDam",_this];
-		publicVariableServer "PVDZ_send";
+		PVDZE_send = [_unit,"VehHandleDam",_this];
+		publicVariableServer "PVDZE_send";
 	//};
 };
 

@@ -10,7 +10,6 @@
 //"usecMorphine"				addPublicVariableEventHandler {(_this select 1) call player_medMorphine};
 //"usecPainK"					addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
 "PVDZE_plr_Hit" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageHandler};
-"PVDZE_plr_HitV" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageVehicle};
 //"usecBreakLegs"				addPublicVariableEventHandler {(_this select 1) call player_breaklegs};
 "PVDZ_hlt_Bleed"		addPublicVariableEventHandler {(_this select 1) spawn fnc_usec_damageBleed};
 "PVDZ_veh_SF"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleRepair}; // repair a part from a vehicle
@@ -23,13 +22,11 @@
 "PVDZE_veh_Lock"			addPublicVariableEventHandler {(_this select 1) spawn local_lockUnlock};
 "PVCDZE_obj_GutBody"			addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 "PVDZE_plr_GutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
-"PVDZE_plr_DelLocal"		addPublicVariableEventHandler {(_this select 1) call object_delLocal};
 "PVDZE_veh_Init"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
 //"PVDZE_plr_HumanityChange"	addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 "PVDZE_serverObjectMonitor" addPublicVariableEventHandler {PVDZE_serverObjectMonitor = dayz_safety};
 /* PVS/PVC - Skaronator */
-"PVCDZE_veh_SH" 			addPublicVariableEventHandler {(_this select 1) call vehicle_handleDamage}; // set damage to vehicle part
-"PVCDZE_veh_SF" 			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
+"PVCDZE_veh_SH" 			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
 
 //reset OpenTarget timer
 "PVCDZE_OpenTarget_Reset" addPublicVariableEventHandler { OpenTarget_Time = diag_tickTime; };
@@ -335,10 +332,9 @@ if (!isDedicated) then {
 	};
 	"PVDZE_plr_SetSaveTime"	addPublicVariableEventHandler {DZE_SaveTime = (_this select 1)};
 	"PVDZE_obj_RoadFlare"	addPublicVariableEventHandler {(_this select 1) spawn object_roadFlare};
-	"PVDZE_plr_Morph2"		addPublicVariableEventHandler {(_this select 1) call player_serverModelChange};
 	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
 	"PVDZE_obj_Fire"		addPublicVariableEventHandler {nulexp=(_this select 1) spawn BIS_Effects_Burn};
-	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {(_this select 1) call player_tagFriendlyMsg};
+	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {cutText[localize "str_epoch_player_2","PLAIN DOWN"];};};
 	"PVDZ_drg_RaDrag"   		addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
 	"PVDZ_dayzFlies"			addPublicVariableEventHandler {(_this select 1) call spawn_flies};
 	//Medical
@@ -349,8 +345,6 @@ if (!isDedicated) then {
 	"PVCDZ_hlt_Transfuse_completed" addPublicVariableEventHandler {player setVariable["TransfusionCompleted",true]; };
 	"PVCDZ_hlt_PainK"			addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
 	"PVCDZ_hlt_AntiB"			addPublicVariableEventHandler {(_this select 1) call player_medAntiBiotics};
-
-	// "PVDZE_obj_Debris"		addPublicVariableEventHandler {(_this select 1) call local_roadDebris};
 
 	"norrnRaDrag"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
 	"norrnRnoAnim"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\noAnim.sqf"};

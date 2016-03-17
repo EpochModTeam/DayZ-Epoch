@@ -1,3 +1,4 @@
+//Trader ["Trader City Name",false,"enter"] - Trader City Name | Show Message | "enter" || "leave"
 private ["_traderName","_showText","_enterORleave"];
 _traderName = _this select 0;
 _showText = _this select 1;

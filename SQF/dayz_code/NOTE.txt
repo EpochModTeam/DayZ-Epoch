@@ -21,14 +21,6 @@ REMOVE TOOL BREAKING, IT'S STUPID
 
 	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
-vehicle_handleDamage    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleDamage.sqf";
-vehicle_handleKilled    = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
-
-ARE NO MORE, USE BELOW!! ACTUALLY IT MAY BE EASIER TO JUST RENAME THE BELOW TO ABOVE?
-
-fnc_veh_handleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleDam.sqf";
-fnc_veh_handleKilled = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleKilled.sqf";
-
 dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
 PVDZ_obj_Publish IS PVDZE_obj_Publish
 ******REPLACE ALL PVCDZ_ AND PVDZ_ with PVCDZE/PVDZE_

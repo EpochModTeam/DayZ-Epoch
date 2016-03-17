@@ -1,58 +1,70 @@
 /*
 count player magazines with ammo count
-value = call player_countMagazines;
+value = call player_countMagazines; //must be called from a spawned thread (|| use spawn)
 return all player magazines with ammo count
+Modified to save backpack magazine count by icomrade - Base for fix by Ziellos2k
 */
-private ["_dialog","_created","_magazineArray"];
+private ["_control","_item","_val","_max","_count","_magazineArray","_dialog"];
 disableSerialization;
-disableUserInput true;
 
-_dialog = findDisplay 106;
-_created = false;
+_magazineArray = [[],[]];
+_dialog = ["0"] call gearDialog_create;
+if ((isNull _dialog) || (isNil "_dialog")) exitWith {disableUserInput false; (findDisplay 106) closeDisplay 0; closeDialog 0; _magazineArray};
 
-if ( isNull _dialog ) then {
-	//startLoadingScreen [""];
-	createGearDialog [player, "RscDisplayGear"];
-	_dialog = findDisplay 106;
-	_created = true;
-};
-
-_magazineArray = [];
-
-for "_i" from 109 to 120 do
-{
+//Main inventory
+for "_i" from 109 to 120 do {
 	_control = _dialog displayCtrl _i;
 	_item = gearSlotData _control;
 	_val = gearSlotAmmoCount _control;
 	_max = getNumber (configFile >> "CfgMagazines" >> _item >> "count");
 	if (_item != "") then {
 		if (_val != _max) then {
-			_magazineArray set [count _magazineArray,[_item,_val]];
+			(_magazineArray select 0) set [count (_magazineArray select 0),[_item,_val]];
 		} else {
-			_magazineArray set [count _magazineArray,_item];
+			(_magazineArray select 0) set [count (_magazineArray select 0),_item];
 		};
 	};
 };
 
-for "_i" from 122 to 129 do
-{
+//Pistol/secondary ammo
+for "_i" from 122 to 129 do {
 	_control = _dialog displayCtrl _i;
 	_item = gearSlotData _control;
 	_val = gearSlotAmmoCount _control;
 	_max = getNumber (configFile >> "CfgMagazines" >> _item >> "count");
 	if (_item != "") then {
 		if (_val != _max) then {
-			_magazineArray set [count _magazineArray,[_item,_val]];
+			(_magazineArray select 0) set [count (_magazineArray select 0),[_item,_val]];
 		} else {
-			_magazineArray set [count _magazineArray,_item];
+			(_magazineArray select 0) set [count (_magazineArray select 0),_item];
 		};
 	};
 };
 
-if ( _created ) then {
-	closeDialog 0;
-	//endLoadingScreen;
+//backpack items
+if ((typeOf (unitBackPack player)) != "") then {
+	_count = getNumber (configFile >> "CfgVehicles" >> (typeOf (unitBackpack Player)) >> "transportMaxMagazines");
+	ctrlActivate (_dialog displayCtrl 157);
+	if (gear_done) then {
+		waitUntil {ctrlShown (_dialog displayCtrl 159)};
+		uiSleep 0.001;
+	};
+
+	for "_i" from 5000 to (5000 + _count) do {
+		_control = _dialog displayCtrl _i;
+		_item = gearSlotData _control;
+		_val = gearSlotAmmoCount _control;
+		_max = getNumber (configFile >> "CfgMagazines" >> _item >> "count");
+		if (_item != "") then {
+			if (_val != _max) then {
+				(_magazineArray select 1) set [count (_magazineArray select 1),[_item,_val]];
+			} else {
+				(_magazineArray select 1) set [count (_magazineArray select 1),_item];
+			};
+		};
+	};
 };
 
-disableUserInput false;
+(findDisplay 106) closeDisplay 0;
+if (gear_done) then {uiSleep 0.001;};
 _magazineArray

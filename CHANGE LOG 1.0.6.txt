@@ -7,6 +7,7 @@
 	- Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 	- Weapon switch hotkeys added (1 = primary, 2 = pistol, 3 = melee)
 	- Journal is now functional for displaying stats
+	- vehicle_handleDamage and vehicle_handleKilled have been renamed to fnc_veh_handleDam and fnc_veh_handleKilled respectively
 	
 [NEW] RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu

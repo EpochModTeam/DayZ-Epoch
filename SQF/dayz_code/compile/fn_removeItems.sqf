@@ -1,10 +1,10 @@
 /*
 Description:
 Removes the items (magazines) from the player's inventory
-&& performs a double check for the required items.
+and performs a double check for the required items.
 
 Parameter(s):
-_this: <array> list of item names to be removed (can also be an sub-array with item name && quantity)
+_this: <array> list of item names to be removed (can also be an sub-array with item name and quantity)
 
 Returns:
 Boolean (true if all items have been removed from the player's inventory)

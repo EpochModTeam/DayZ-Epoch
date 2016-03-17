@@ -1,5 +1,5 @@
 private ["_nearByObjects","_targetObject","_error","_range","_objects"];
-
+//Object Array, Range, Error Message (@Skaronator)
 _objects = _this select 0;
 _range = _this select 1;
 _error = _this select 2;
