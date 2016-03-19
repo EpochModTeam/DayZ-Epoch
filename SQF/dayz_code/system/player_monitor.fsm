@@ -1053,6 +1053,9 @@ class FSM
                          "	_currentWpn		=	_state select 0;" \n
                          "	_currentAnim	=	_state select 1;" \n
                          "	//Reload players state" \n
+						 "	if ((count _state > 3) && DZE_FriendlySaving) then {" \n
+                         "		DZE_Friends = _state select 3;" \n
+                         "	}; " \n
                          "	if (count _state > 2) then {" \n
                          "		dayz_temperatur = _state select 2;" \n
                          "	};rentWpn	=	""Makarov"";" \n
@@ -1225,12 +1228,6 @@ class FSM
                          "		_nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
                          "	};" \n
                          "} count entities ""SpawnableWreck"";" \n
-                         "dayz_Totalzedscheck = [] spawn {" \n
-                         "	while {true} do {" \n
-                         "		dayz_maxCurrentZeds = {alive _x} count entities ""zZombie_Base"";" \n
-                         "		uiSleep 60;" \n
-                         "	};" \n
-                         "};" \n
                          "" \n
                          "dayz_backpackcheck = [] spawn {" \n
                          "	while {true} do {" \n

@@ -57,7 +57,6 @@ _muzzles = getArray(configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
 if (count _muzzles > 1) then {
 	_currentWpn = currentMuzzle player;
 };
-player setPosATL dayz_spawnPos;
 
 //Debug Message
 //	diag_log "Attempting to switch model";
@@ -227,5 +226,5 @@ if (!isNil "_newBackpackType") then {
 	call dayz_meleeMagazineCheck;
 
 	//reveal all near objects.
-	{player reveal _x} count (nearestObjects [getPosATL player, dayz_reveal, 50]);
+	{player reveal _x} count (nearestObjects [getPosATL player,["AllVehicles","WeaponHolder","Land_A_tent","BuiltItems","ModularItems","DZE_Base_Object"],75]);
 	//All is arbitrary and will need to be changed to ["AllVehicles","WeaponHolder","Land_A_tent"] ++ others (stashes etc.)

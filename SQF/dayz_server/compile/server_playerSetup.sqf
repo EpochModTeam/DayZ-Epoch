@@ -127,9 +127,6 @@ if (count _medical > 0) then {
 	//Add Wounds
 	{
 		_playerObj setVariable["hit_"+_x,true, true];
-		//["usecBleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
-		//usecBleed = [_playerObj,_x,_hit];
-		//publicVariable "usecBleed";
 	} count (_medical select 8);
 	
 	//Add fractures

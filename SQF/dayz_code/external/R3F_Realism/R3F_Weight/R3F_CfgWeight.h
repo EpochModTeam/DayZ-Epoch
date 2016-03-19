@@ -1159,12 +1159,6 @@ class CfgWeight
 
 
 
-
-
-		class FoodSteakCooked
-		{
-			weight = 0.25;
-		};
 		class FoodbeefCooked
 		{
 			weight = 0.25;

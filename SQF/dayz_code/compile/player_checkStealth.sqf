@@ -16,17 +16,13 @@ _anim4 = toArray _anim;
 _anim4 resize 4;
 _anim4 = toString _anim4;
 
-dayz_isKneeling = false;
-dayz_isCrawling = false;
 if (["pknl",_anim] call fnc_inString) then {
 	_scaleMvmt = 0.2;	//0.1;
 	_scalePose = 0.6;	//0.4
-	dayz_isKneeling = true;
 } else {
 	if (["ppne",_anim] call fnc_inString) then {
 		_scaleMvmt = 0.3;
 		_scalePose = 0.14;
-		dayz_isCrawling = true;
 	};
 };
 

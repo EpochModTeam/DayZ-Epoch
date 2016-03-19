@@ -11,6 +11,8 @@
 		- object_setFixServer --> fnc_veh_handleRepair 
 		- vehicle_handleDamage --> fnc_veh_handleDam
 		- vehicle_handleKilled -->  fnc_veh_handleKilled
+	- Duplicate global variables have been renamed:
+		- dayz_updateObjects --> DayZ_GearedObjects
 	- Duplicate public variables have been renamed:
 		- dayzPlayerLogin --> PVCDZ_plr_Login/PVCDZ_plr_PlayerAccepted
 		- dayzPlayerLogin2 --> PVCDZ_plr_Login2

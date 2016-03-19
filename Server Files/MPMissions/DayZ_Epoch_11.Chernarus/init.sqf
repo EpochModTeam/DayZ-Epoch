@@ -76,11 +76,7 @@ MaxMineVeins = 50;				// Default: 50
 MaxAmmoBoxes = 3;				// Default: 3
 
 //Zombie Variables
-dayz_maxZeds = 500;				// Default: 500
 dayz_maxLocalZombies = 30; 			// Default: 15 
-dayz_maxGlobalZombiesInit = 15;			// Default: 15
-dayz_maxGlobalZombiesIncrease = 5;		// Default: 5	
-dayz_zedsAttackVehicles = true;			// Default: true
 
 //Animal Variables
 dayz_maxAnimals = 8; 				// Default: 8

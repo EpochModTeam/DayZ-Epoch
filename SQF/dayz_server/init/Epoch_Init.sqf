@@ -1,13 +1,3 @@
-
-/*
-server_updateNearbyObjects = {
-	private["_pos"];
-	_pos = _this select 0;
-	{
-		[_x, "gear"] call server_updateObject;
-	} count nearestObjects [_pos, dayz_updateObjects, 10];
-}; */
-
 /*
 zombie_findOwner = {
 	private["_unit"];

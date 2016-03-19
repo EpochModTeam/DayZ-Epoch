@@ -274,7 +274,7 @@ if (isServer && isNil "sm_done") then {
 					_object call fnc_veh_ResetEH;		
 					
 					if(_ownerID != "0" && !(_object isKindOf "Bicycle")) then {
-						_object setvehiclelock "locked";
+						_object setVehicleLock "locked";
 					};
 					
 					_totalvehicles = _totalvehicles + 1;

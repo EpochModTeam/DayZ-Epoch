@@ -41,7 +41,7 @@ class Loot: Default
 		"ItemSodaPepsi",
 		"ItemSodaMdew",
 		"FoodEdible",
-		"FoodSteakCooked",
+		"FoodBeefCooked",
 		"FoodCanBakedBeans",
 		"FoodCanSardines",
 		"FoodCanFrankBeans",
