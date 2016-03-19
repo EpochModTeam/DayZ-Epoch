@@ -88,9 +88,9 @@ while {1 == 1} do {
 		};
 
 		if (_spawnFire) then {
-			//["PVDZE_obj_Fire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
-			PVDZE_obj_Fire = [_crash,2,time,false,_fadeFire];
-			publicVariable "PVDZE_obj_Fire";
+			//["PVDZ_obj_Fire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
+			PVDZ_obj_Fire = [_crash,2,time,false,_fadeFire];
+			publicVariable "PVDZ_obj_Fire";
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
 

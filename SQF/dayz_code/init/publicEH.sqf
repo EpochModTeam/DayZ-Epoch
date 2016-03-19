@@ -1,81 +1,56 @@
-//Medical Event Handlers
-"norrnRaLW"					addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\load_wounded.sqf"};
-"norrnRLact"				addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
-"norrnRDead"				addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\deadState.sqf"};
-//"usecBleed"					addPublicVariableEventHandler {_id = (_this select 1) spawn fnc_usec_damageBleed};
-//"usecBandage"				addPublicVariableEventHandler {(_this select 1) call player_medBandage};
-"usecInject"				addPublicVariableEventHandler {(_this select 1) call player_medInject};
-//"usecEpi"					addPublicVariableEventHandler {(_this select 1) call player_medEpi};
-//"usecTransfuse"				addPublicVariableEventHandler {(_this select 1) call player_medTransfuse};
-//"usecMorphine"				addPublicVariableEventHandler {(_this select 1) call player_medMorphine};
-//"usecPainK"					addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
-"PVDZE_plr_Hit" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageHandler};
-//"usecBreakLegs"				addPublicVariableEventHandler {(_this select 1) call player_breaklegs};
+// Both client and server
+"PVDZ_drg_RaLW"   		addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\load_wounded.sqf"};
+"PVDZ_drg_RLact"		addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
 "PVDZ_hlt_Bleed"		addPublicVariableEventHandler {(_this select 1) spawn fnc_usec_damageBleed};
+"PVCDZ_veh_SH" 			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
 "PVDZ_veh_SF"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleRepair}; // repair a part from a vehicle
+"PVCDZ_obj_HideBody"	addPublicVariableEventHandler {hideBody (_this select 1)};
+"PVCDZ_obj_GutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
+"PVCDZ_veh_SetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
+"PVCDZ_veh_engineSwitch"		addPublicVariableEventHandler {(_this select 1) spawn dayz_engineSwitch};
+"PVCDZ_OpenTarget_Reset" addPublicVariableEventHandler { OpenTarget_Time = diag_tickTime; }; //reset OpenTarget timer
+//"dayzInfectedCamps"		addPublicVariableEventHandler {(_this select 1) call infectedcamps};
 
-//Both
-"PVCDZE_veh_SetFuel"			addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
-"PVDZE_veh_SFix"			addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
-"PVCDZE_plr_HideBody"		addPublicVariableEventHandler {hideBody (_this select 1)};
-"PVDZE_obj_Hide"			addPublicVariableEventHandler {hideObject  (_this select 1)};
+// EPOCH ADDITIONS
 "PVDZE_veh_Lock"			addPublicVariableEventHandler {(_this select 1) spawn local_lockUnlock};
-"PVCDZE_obj_GutBody"			addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 "PVDZE_plr_GutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
 "PVDZE_veh_Init"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
-//"PVDZE_plr_HumanityChange"	addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 "PVDZE_serverObjectMonitor" addPublicVariableEventHandler {PVDZE_serverObjectMonitor = dayz_safety};
-/* PVS/PVC - Skaronator */
-"PVCDZE_veh_SH" 			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
-
-//reset OpenTarget timer
-"PVCDZE_OpenTarget_Reset" addPublicVariableEventHandler { OpenTarget_Time = diag_tickTime; };
-
-"PVCDZE_veh_engineSwitch"		addPublicVariableEventHandler {(_this select 1) spawn dayz_engineSwitch};
-	
-"PVDZE_Server_Simulation" addPublicVariableEventHandler {
-	_agent = ((_this select 1) select 0);
-	_control = ((_this select 1) select 1);
-
-	_agent enableSimulation _control;
-};
 
 {
-	private ["_building", "_fckingcode"];
+	private ["_building","_fckingcode"];
 
     _fckingcode = {
-        private [ "_building", "_part", "_dmgLvl", "_who", "_ammo", "_dist" ];
+        private ["_building","_part","_dmgLvl","_who","_ammo","_dist"];
 
         _building = _this select 0;
         _part = _this select 1;
         _dmgLvl = 1 min (_this select 2);
         _who = _this select 3;
         _ammo = _this select 4;
-        if (_part != 'glass' AND _dmgLvl > 0.01) then {
+        if (_part != 'glass' && _dmgLvl > 0.01) then {
             if (isServer) then {
                 diag_log ['Log building damage', _this];
-            }
-            else {
+            } else {
                 if (isNull _who) then {
-                    if (_ammo != "" and _ammo isKindOf "HelicopterExploSmall") then {
+                    if (_ammo != "" && _ammo isKindOf "HelicopterExploSmall") then {
                         _who = player;
                         _dist = round (_who distance _building);
-                        PVDZ_sec_atp = format [ "UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.", 
-                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist ];                        
+                        PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
                         publicVariableServer "PVDZ_sec_atp";
                     };
-                }
-                else {
+                } else {
                     if (_who == player) then {
                         _dist = round (_who distance _building);
-                        PVDZ_sec_atp = format [ "UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.", 
-                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist ];                        
+                        PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
                         publicVariableServer "PVDZ_sec_atp";
                     };
                 };
             };
         };
-        if ((!isNull _who) and {(_who distance _building < 150)}) then {_dmgLvl} else {0}
+        if ((!isNull _who) && {(_who distance _building < 150)}) then {_dmgLvl} else {0}
     };
     _building = [_x select 0,_x select 1,0] nearestObject (_x select 2);
     _building removeAllEventHandlers "handleDamage";
@@ -95,48 +70,47 @@
 	[10174,1810,366820], [3589,2175,328944]
 ];
 
-//Server only
+// Server only
 if (isServer) then {
-	/* PVS/PVC - Skaronator */
-	"PVDZE_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
-	"PVDZE_maintainArea" addPublicVariableEventHandler {(_this select 1) spawn server_maintainArea};
-
-	"PVDZE_atp" addPublicVariableEventHandler {
-		_x = _this select 1;
-		if (typeName _x == "STRING") then {
-			diag_log _x;
-		};
-	};
-	"PVDZE_plr_Died"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
-	"PVDZE_plr_Save"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
-	"PVDZE_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj};
-	"PVDZE_veh_Update"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_updateObject};
-	"PVDZE_plr_Login"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerLogin};
-	"PVDZE_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
-	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
-	"PVDZE_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
-	//Checking
-	"PVDZE_obj_Delete"		addPublicVariableEventHandler {(_this select 1) spawn server_deleteObj};
+	"PVDZ_plr_Death"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
+	"PVDZ_plr_Save"			addPublicVariableEventHandler {_id = (_this select 1) call server_playerSync;};
+	"PVDZ_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj};
+	"PVDZ_plr_Login1"		addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
+	"PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
+	"PVDZ_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
+	"PVDZ_obj_Destroy"		addPublicVariableEventHandler {(_this select 1) call server_deleteObj};
 	"PVDZ_obj_Save"		addPublicVariableEventHandler {(_this select 1) call server_updateObject; diag_log ("PublicEH");};
-	// upgrade && maintain
-	"PVDZE_obj_Swap"		addPublicVariableEventHandler {(_this select 1) spawn server_swapObject};
-	// disable zombies server side
-	"PVDZE_zed_Spawn"		addPublicVariableEventHandler {(_this select 1) spawn server_handleZedSpawn};
+	"PVDZ_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
 	"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
+	//[player,[medical Array]];
 	"PVDZ_playerMedicalSync" addPublicVariableEventHandler { (_this select 1) call server_medicalSync; ((_this select 1) select 0) setVariable["Medical",((_this select 1) select 1),false]; }; //diag_log format["%1 - %2",((_this select 1) select 0),((_this select 1) select 1)]; };
-	"PVDZ_object_replace" 		addPublicVariableEventHandler {
+	
+	// EPOCH ADDITIONS
+	"PVDZE_maintainArea" 	addPublicVariableEventHandler {(_this select 1) spawn server_maintainArea};
+	"PVDZE_obj_Swap" 		addPublicVariableEventHandler {(_this select 1) spawn server_swapObject};
+	"PVDZE_veh_Publish"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh};
+	"PVDZE_veh_Publish2"	addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh2};
+	"PVDZE_veh_Upgrade"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh3};
+	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
+	"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};
+	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
+	"PVDZE_log_lockUnlock" 	addPublicVariableEventHandler {(_this select 1) spawn server_logUnlockLockEvent};
+
+	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.
+	"PVDZ_object_replace" addPublicVariableEventHandler {
 		_cursorTarget = _this select 1;
-		_vars = ((_this select 1)select 0) getVariable "MaintenanceVars"; 
+		_vars = ((_this select 1) select 0) getVariable "MaintenanceVars";
 		
-		if (!isnil "_vars" and _cursorTarget isKindOf "DZ_buildables") then {
-			deleteVehicle ((_this select 1)select 0);
+		if (!isNil "_vars" && _cursorTarget isKindOf "DZ_buildables") then {
+			deleteVehicle ((_this select 1) select 0);
 			_object = createVehicle [(_vars select 0), (_vars select 1), [], 0, if (_type in DayZ_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
 			_object setVariable["Maintenance",false,true];
 		};
 	};
+	
 	"PVDZ_sendUnconscious" addPublicVariableEventHandler {	
-		_owner = ((_this select 1) select 0);
-		_duration = ((_this select 1) select 1);
+		_owner = (_this select 1) select 0;
+		_duration = (_this select 1) select 1;
 		
 		diag_log format["%1,%2",_owner,_duration];
 		
@@ -145,10 +119,10 @@ if (isServer) then {
 	};
 
 	"PVDZ_gridsActive" addPublicVariableEventHandler {
-		_gridref = ((_this select 1) select 0);
-		_gridloc = ((_this select 1) select 1);
+		_gridref = (_this select 1) select 0;
+		_gridloc = (_this select 1) select 1;
 
-		if (!(_gridref in dayz_gridsActive)) then {
+		if !(_gridref in dayz_gridsActive) then {
 			dayz_gridsActive set [count dayz_gridsActive,_gridref];
 			dayz_seedloot set [count dayz_seedloot,[_gridloc,_gridref]];
 		};
@@ -156,8 +130,8 @@ if (isServer) then {
 	};
 	
 	"PVDZ_gridsRemove" addPublicVariableEventHandler {
-		_gridref = ((_this select 1) select 0);
-		_gridloc = ((_this select 1) select 1);
+		_gridref = (_this select 1) select 0;
+		_gridloc = (_this select 1) select 1;
 
 		if (_gridref in dayz_gridsActive) then {
 			dayz_gridsActive = dayz_gridsActive - [_gridref];
@@ -168,15 +142,15 @@ if (isServer) then {
 
 
 	"PVDZ_Server_Simulation" addPublicVariableEventHandler {
-		_agent = ((_this select 1) select 0);
-		_control = ((_this select 1) select 1);
+		_agent = (_this select 1) select 0;
+		_control = (_this select 1) select 1;
 		
 		_agent enableSimulation _control;
 	};
 	
 	"PVDZ_obj_Delete" addPublicVariableEventHandler {
-		_obj = ((_this select 1) select 0);
-		_player = ((_this select 1) select 1);
+		_obj = (_this select 1) select 0;
+		_player = (_this select 1) select 1;
 		_type = typeOf _obj;
 		_dis = _player distance _obj;
 
@@ -199,8 +173,8 @@ if (isServer) then {
 	};
 	
 	"PVDZ_objgather_Knockdown" addPublicVariableEventHandler {
-		_tree = ((_this select 1) select 0);
-		_player = ((_this select 1) select 1);
+		_tree = (_this select 1) select 0;
+		_player = (_this select 1) select 1;
 		_dis = _player distance _tree;
 
 		if (_dis < 30) then {
@@ -209,20 +183,46 @@ if (isServer) then {
 		};			
 	};
 
-	"PVDZE_serverStoreVar" addPublicVariableEventHandler {
-		_obj = ((_this select 1) select 0);
-		_name = ((_this select 1) select 1);
-		_value = ((_this select 1) select 2);
-		
-		
+	"PVDZ_serverStoreVar" addPublicVariableEventHandler {
+		_obj = (_this select 1) select 0;
+		_name = (_this select 1) select 1;
+		_value = (_this select 1) select 2;
+			
 		_obj setVariable [_name, _value];
+		/*
+		switch (_name) do {
+			case "looted": {
+				_obj =  ((_this select 1) select 0);
+				_name = "looted";
+				_value = ((_this select 1) select 2);
+				
+				_obj setVariable [_name, _value];
+			};
+			case "zombieSpawn": {
+				_obj = ((_this select 1) select 0);
+				_name = "zombieSpawn";
+				_value = ((_this select 1) select 2);
+				
+				_obj setVariable [_name, _value];
+			};
+			case "USEC_BloodQty": {
+				_obj = ((_this select 1) select 0);
+				_name = ((_this select 1) select 1);
+				_value = ((_this select 1) select 2);
+				//diag_log format ["%1, %2, %3", _obj, _name, _value]; 
+				if (isPlayer _obj) then {
+					_obj setVariable [_name, _value];
+				};
+			};
+		};
+		*/
 	};
 
 	"PVDZ_receiveVar" addPublicVariableEventHandler {
-		_owner = ((_this select 1) select 0);
-		_object = ((_this select 1) select 1);
-		_name = ((_this select 1) select 2);
-		_value = ((_this select 1) select 3);
+		_owner = (_this select 1) select 0;
+		_object = (_this select 1) select 1;
+		_name = (_this select 1) select 2;
+		_value = (_this select 1) select 3;
 
 		switch (_name) do {
 			case "looted": {
@@ -243,15 +243,15 @@ if (isServer) then {
 	};
 
 	"PVDZ_Server_changeOwner" addPublicVariableEventHandler {		
-		_agent = ((_this select 1) select 0);
-		_reciever = ((_this select 1) select 1);
+		_agent = (_this select 1) select 0;
+		_reciever = (_this select 1) select 1;
 		_ownerID = owner _agent;
 		_newownerID = 1; //1 = server
 
 		if (typeName _reciever == "OBJECT") then {
 			_newownerID = owner _reciever;
 		};
-		if (isnil ("Owner")) then {
+		if (isNil ("Owner")) then {
 			_agent setVariable ["Owner",_ownerID];
 		};
 
@@ -260,8 +260,8 @@ if (isServer) then {
 	};
 	
 	"PVDZ_Server_LogIt" addPublicVariableEventHandler {
-		_unitSending = (_this select 0);
-		_info = (_this select 1);
+		_unitSending = _this select 0;
+		_info = _this select 1;
 		
 		diag_log format["WARNING: %1",_info];
 	};
@@ -270,9 +270,9 @@ if (isServer) then {
 	
 	"PVDZ_Server_processSetAccessCode" addPublicVariableEventHandler {
 		private ["_unitSending","_object","_object","_code"];
-		_unitSending = ((_this select 1) select 0);
-		_object = ((_this select 1) select 1);
-		_code = ((_this select 1) select 2);
+		_unitSending = (_this select 1) select 0;
+		_object = (_this select 1) select 1;
+		_code = (_this select 1) select 2;
 		
 		//diag_log format["%1, %2-%3",_unitSending,_object,_code];
 		
@@ -301,25 +301,14 @@ if (isServer) then {
 	};
 	
 	"PVDZ_Server_buildLock" addPublicVariableEventHandler {
-		_object = ((_this select 1) select 0);
-		
+		_object = (_this select 1) select 0;
 		[_object,"buildLock"] call server_updateObject;
 	};
-
-	// Dayz epoch custom
-	"PVDZE_veh_Publish"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh};
-	"PVDZE_veh_Publish2"	addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh2};
-	"PVDZE_veh_Upgrade"	addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh3};
-	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
-	"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};
-	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
-
-	"PVDZE_log_lockUnlock" addPublicVariableEventHandler {(_this select 1) spawn server_logUnlockLockEvent};
 };
 
 //Client only
 if (!isDedicated) then {
-	"PVDZE_plr_SetDate"				addPublicVariableEventHandler {
+	"dayzSetDate" addPublicVariableEventHandler {
 		_newdate = _this select 1;
 		_date = +(date); // [year, month, day, hour, minute].
 		//diag_log ['Date & time received:', _newdate, 'Local date on this client:', _date];
@@ -330,13 +319,13 @@ if (!isDedicated) then {
 			};
 		} forEach _date;
 	};
-	"PVDZE_plr_SetSaveTime"	addPublicVariableEventHandler {DZE_SaveTime = (_this select 1)};
-	"PVDZE_obj_RoadFlare"	addPublicVariableEventHandler {(_this select 1) spawn object_roadFlare};
-	"PVDZE_plr_Morph"		addPublicVariableEventHandler {(_this select 1) call server_switchPlayer};
-	"PVDZE_obj_Fire"		addPublicVariableEventHandler {nulexp=(_this select 1) spawn BIS_Effects_Burn};
-	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {cutText[localize "str_epoch_player_2","PLAIN DOWN"];};};
+	"PVDZ_obj_RoadFlare"		addPublicVariableEventHandler {(_this select 1) spawn object_roadFlare};
 	"PVDZ_drg_RaDrag"   		addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
+	"PVDZ_obj_Fire"				addPublicVariableEventHandler {(_this select 1) spawn BIS_Effects_Burn};
 	"PVDZ_dayzFlies"			addPublicVariableEventHandler {(_this select 1) call spawn_flies};
+	"PVCDZ_plr_Humanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
+	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {cutText[localize "str_epoch_player_2","PLAIN DOWN"];};};
+	
 	//Medical
 	"PVCDZ_hlt_Morphine"		addPublicVariableEventHandler {(_this select 1) call player_medMorphine};
 	"PVCDZ_hlt_Bandage"			addPublicVariableEventHandler {(_this select 1) call player_medBandage};
@@ -345,11 +334,8 @@ if (!isDedicated) then {
 	"PVCDZ_hlt_Transfuse_completed" addPublicVariableEventHandler {player setVariable["TransfusionCompleted",true]; };
 	"PVCDZ_hlt_PainK"			addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
 	"PVCDZ_hlt_AntiB"			addPublicVariableEventHandler {(_this select 1) call player_medAntiBiotics};
-
-	"norrnRaDrag"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
-	"norrnRnoAnim"			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\noAnim.sqf"};
-	"PVCDZ_plr_Humanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
-	"PVCDZ_plr_Legs"			addPublicVariableEventHandler {
+	
+	"PVCDZ_plr_Legs" addPublicVariableEventHandler {
 		_entity = (_this select 1) select 0;
 		_entity setHit ["legs", 1];
 
@@ -359,46 +345,41 @@ if (!isDedicated) then {
 	};
 	
 	"PVCDZ_SetVar" addPublicVariableEventHandler {
-		_object = ((_this select 1) select 0);
-		_name = ((_this select 1) select 1);
-		_value = ((_this select 1) select 2);
+		_object = (_this select 1) select 0;
+		_name = (_this select 1) select 1;
+		_value = (_this select 1) select 2;
 		
 		_object setVariable [_name,_value];
 	};
 
 	"PVDZ_receiveUnconscious" addPublicVariableEventHandler {	
-		_unit = ((_this select 1) select 0);
-		_duration = ((_this select 1) select 1);
+		_unit = (_this select 1) select 0;
+		_duration = (_this select 1) select 1;
 		
-		diag_log format["%1,%2",_unit,_duration];
-		
+		diag_log format["%1,%2",_unit,_duration];	
 		[_unit,_duration] call fnc_usec_damageUnconscious;
 		_unit setVariable ["NORRN_unconscious", true, true];
 	};
 	
 	"PVCDZ_Client_processCode" addPublicVariableEventHandler {
-	// [_object,_result]
-		_object = ((_this select 1) select 0);
-		_result = ((_this select 1) select 1);
-		_codeGuess = ((_this select 1) select 2);
+		_object = (_this select 1) select 0;
+		_result = (_this select 1) select 1;
+		_codeGuess = (_this select 1) select 2;
 	
 		
 		if (_result) then {
 			_object setVariable ["dayz_padlockLockStatus", false,true];
 			_object setVariable ["isOpen", "1", true];
 			_object setVariable ["dayz_padlockHistory", [], true];
-			titleText [format["%1 unlocked", (typeof _object)],"PLAIN DOWN"];
-		}
-		else
-		{
+			titleText [format["%1 unlocked", typeOf _object],"PLAIN DOWN"];
+		} else {
 			titleText ["Incorrect combination", "PLAIN DOWN"];
 			_object setVariable ["dayz_padlockHistory", _codeGuess, true];
 		};
 	};
 	
 	"PVCDZ_Client_processAccessCode" addPublicVariableEventHandler {
-		_codeGuess = ((_this select 1) select 0);
-		
+		_codeGuess = (_this select 1) select 0;
 		titleText [format["You have set the combination to %1", _codeGuess],"PLAIN DOWN"];
 	};
 

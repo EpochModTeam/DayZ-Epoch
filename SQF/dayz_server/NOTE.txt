@@ -5,9 +5,6 @@ NEW VARS IN SENDTOCLIENT:
 OpenTarget
 PVCDZ_OpenTarget_Reset
 
-GutBody
-PVCDZ_obj_GutBody
-
 SetEngineState
 PVCDZ_veh_engineSwitch
 
@@ -17,23 +14,5 @@ PVCDZ_plr_Legs
 Antibiotics
 PVCDZ_hlt_AntiB
 
-dayzSetDate
-dayzSetDate
-
 Transfuse_completed
 PVCDZ_hlt_Transfuse_completed
-
-CHANGE NEW VAR/PV NAMES --> OLD
-
-PVCDZ_veh_SH --> PVCDZE_vehSH
-SetFuel --> SFuel
-PVCDZ_veh_SetFuel --> PVDZE_veh_SFuel
-PVCDZ_obj_HideBody --> PVDZE_plr_HideBody
-PVCDZ_plr_Humanity --> PVDZE_plr_HumanityChange
-PVCDZ_hlt_Transfuse --> usecTransfuse
-PVCDZ_hlt_PainK--> usecPainK
-PVCDZ_hlt_Morphine --> usecMorphine
-PVCDZ_hlt_Epi --> usecEpi
-PVCDZ_hlt_Bandage --> usecBandage
-dayzPlayerLogin --> PVCDZ_plr_PlayerAccepted
-PVCDZ_plr_PlayerAccepted --> PVCDZE_plr_PlayerAccepted

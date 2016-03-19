@@ -20,8 +20,8 @@ if (local _zombiebody) then {
 		_inRange = _pos nearEntities ["CAManBase",100];
 		{
 			if(isPlayer _x && _x != player) then {
-				PVDZE_send = [_x,"HideBody",[_body]];
-				publicVariableServer "PVDZE_send";
+				PVDZ_send = [_x,"HideBody",[_body]];
+				publicVariableServer "PVDZ_send";
 			};
 		} count _inRange;
 

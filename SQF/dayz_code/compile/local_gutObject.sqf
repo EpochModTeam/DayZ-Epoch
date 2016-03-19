@@ -31,8 +31,8 @@ if (local _animalbody) then {
 		{
 			// only send to other players
 			if(isPlayer _x && _x != player) then {
-				PVDZE_send = [_x,"HideBody",[_body]];
-				publicVariableServer "PVDZE_send";
+				PVDZ_send = [_x,"HideBody",[_body]];
+				publicVariableServer "PVDZ_send";
 			};
 		} count _inRange;
 

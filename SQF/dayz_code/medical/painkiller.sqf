@@ -23,5 +23,5 @@ player removeMagazine "ItemPainkiller";
 
 uiSleep 1;
 
-PVDZE_send = [_unit,"Painkiller",[_unit,player]];
-publicVariableServer "PVDZE_send";
+PVDZ_send = [_unit,"Painkiller",[_unit,player]];
+publicVariableServer "PVDZ_send";

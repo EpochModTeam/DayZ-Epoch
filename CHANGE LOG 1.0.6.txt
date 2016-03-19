@@ -1,14 +1,48 @@
 [NEW] Fully updated to DayZ 1.8.7 code base @icomrade @ebaydayz
 	- Blood types system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
 	- New loot table format is incompatible with old loot tables. See CfgLoot\README
-	- ItemFish, Shotgun ammo and several other item classnames changed. See SQL\1.0.6_Updates
 	- Mission.sqm and description.ext now use compact format
 	- Keyboard eventhandler updated, dayz_spaceInterupt is no longer used
 	- Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 	- Weapon switch hotkeys added (1 = primary, 2 = pistol, 3 = melee)
 	- Journal is now functional for displaying stats
-	- vehicle_handleDamage and vehicle_handleKilled have been renamed to fnc_veh_handleDam and fnc_veh_handleKilled respectively
-	
+	- ItemFish, Shotgun ammo and several other item classnames changed. See SQL\1.0.6_Updates
+	- Dupicate functions have been renamed:
+		- object_setFixServer --> fnc_veh_handleRepair 
+		- vehicle_handleDamage --> fnc_veh_handleDam
+		- vehicle_handleKilled -->  fnc_veh_handleKilled
+	- Duplicate public variables have been renamed:
+		- dayzPlayerLogin --> PVCDZ_plr_Login/PVCDZ_plr_PlayerAccepted
+		- dayzPlayerLogin2 --> PVCDZ_plr_Login2
+		- norrnRaDrag --> PVDZ_drg_RaDrag
+		- norrnRaLW --> PVDZ_drg_RaLW
+		- norrnRLact --> PVDZ_drg_RLact
+		- PVCDZE_vehSH --> PVCDZ_veh_SH
+		- PVDZE_obj_Delete --> PVDZ_obj_Destroy (PVDZ_obj_Delete is used for plants and blood trails)
+		- PVDZE_obj_Fire --> PVDZ_obj_Fire
+		- PVDZE_obj_Publish --> PVDZ_obj_Publish
+		- PVDZE_plr_Died --> PVDZ_plr_Death
+		- PVDZE_plr_GutBody --> PVCDZ_obj_GutBody
+		- PVDZE_plr_HideBody --> PVCDZ_obj_HideBody
+		- PVDZE_plr_HumanityChange --> PVCDZ_plr_Humanity
+		- PVDZE_plr_Login --> PVDZ_plr_Login1
+		- PVDZE_plr_Login2 --> PVDZ_plr_Login2
+		- PVDZE_plr_LoginRecord --> PVDZ_plr_LoginRecord
+		- PVDZE_plr_Save --> PVDZ_plr_Save
+		- PVDZE_plr_SetDate --> dayzSetDate
+		- PVDZE_send --> PVDZ_send
+		- PVDZE_Server_Simulation --> PVDZ_Server_Simulation
+		- PVDZE_serverStoreVar --> PVDZ_serverStoreVar
+		- PVDZE_veh_SFix --> PVDZ_veh_SF
+		- PVDZE_veh_SFuel --> PVCDZ_veh_SetFuel
+		- PVDZE_veh_Update --> PVDZ_obj_Save
+		- usecBandage --> PVCDZ_hlt_Bandage
+		- usecBreakLegs --> PVCDZ_plr_Legs
+		- usecEpi --> PVCDZ_hlt_Epi
+		- usecMorphine --> PVCDZ_hlt_Morphine
+		- usecPainK --> PVCDZ_hlt_PainK
+		- usecTransfuse --> PVCDZ_hlt_Transfuse
+		
 [NEW] RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] DB Backup script. @RimBlock

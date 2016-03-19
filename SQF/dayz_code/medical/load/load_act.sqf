@@ -20,10 +20,10 @@ if ((_vcl emptyPositions "cargo") > 0) then
 	_dragger switchMove "";
 	_wounded setVariable ["NORRN_LoadVcl", _vcl, true];
 	uiSleep 1;
-	//["norrnRLact",_wounded] call broadcastRpcCallAll;
+	//["PVDZ_drg_RLact",_wounded] call broadcastRpcCallAll;
 	[_wounded] execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf";
-	norrnRLact = _wounded;
-	publicVariable "norrnRLact";
+	PVDZ_drg_RLact = _wounded;
+	publicVariable "PVDZ_drg_RLact";
 	player removeAction NORRN_dropAction;
 } else {
 	cutText [localize "str_dragnospace", "PLAIN DOWN"];//hint "No space left in vehicle";

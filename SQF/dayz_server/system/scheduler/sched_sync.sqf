@@ -16,8 +16,8 @@ sched_sync = {
 	        };
 
 	        setDate _date;
-	        PVDZE_plr_SetDate = _date;
-	        publicVariable "PVDZE_plr_SetDate";
+	        dayzSetDate = _date;
+	        publicVariable "dayzSetDate";
 	        diag_log [ __FILE__, "TIME SYNC: Local Time set to:", _date, "Fullmoon:",dayz_ForcefullmoonNights, "Date given by HiveExt.dll:", _result select 1];
 	};
 

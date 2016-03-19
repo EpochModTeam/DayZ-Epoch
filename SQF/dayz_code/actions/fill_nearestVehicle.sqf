@@ -107,8 +107,8 @@ if(_IsNearVehicle >= 1) then {
 						[_vehicleSrc,_newFuelSrc] call local_setFuel;
 					} else {
 						/* PVS/PVC - Skaronator */
-						PVDZE_send = [_vehicle,"SFuel",[_vehicleSrc,_newFuelSrc]];
-						publicVariableServer "PVDZE_send";
+						PVDZ_send = [_vehicle,"SetFuel",[_vehicleSrc,_newFuelSrc]];
+						publicVariableServer "PVDZ_send";
 					};
 				} else {
 					_isFillok = false;
@@ -131,8 +131,8 @@ if(_IsNearVehicle >= 1) then {
 					[_vehicle,_newFuel] call local_setFuel;
 				} else {
 					/* PVS/PVC - Skaronator */
-					PVDZE_send = [_vehicle,"SFuel",[_vehicle,_newFuel]];
-					publicVariableServer "PVDZE_send";
+					PVDZ_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
+					publicVariableServer "PVDZ_send";
 				};
 
 				// Play sound

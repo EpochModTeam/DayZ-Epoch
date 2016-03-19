@@ -7,6 +7,9 @@ inGameUISetEventHandler ["Action","false"];
 	Anti-Teleport - Created By Razor / Refactored By Alby & CopyPasted to Epoch by Skaronator
 */
 
+   
+/* Moved to scheduled security
+
 private ["_log","_playerName","_playerUID","_PUID","_al1veOnce","_debug","_lastpos","_lastheight","_lasttime","_lastVehicle","_v","_h","_topv","_toph","_curpos","_distance","_acceptableDistance","_curtime","_difftime","_plant","_curheight","_speed","_topSpeed","_terrainHeight","_differenceCheck","_lastPosVar","_safetyVehicle","_curPos"];
 
 waitUntil {vehicle player == player};
@@ -117,3 +120,4 @@ while {1 == 1} do {
 	uiSleep 0.1;
 };
 endMission "LOSER";
+*/

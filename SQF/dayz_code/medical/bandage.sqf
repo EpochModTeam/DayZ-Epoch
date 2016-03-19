@@ -53,8 +53,8 @@ if (_finished) then {
 			player setVariable ["sepsisStarted", nil];
 		};
 	} else {
-		PVDZE_send = [_unit,"Bandage",[_unit,player]];
-		publicVariableServer "PVDZE_send";
+		PVDZ_send = [_unit,"Bandage",[_unit,player]];
+		publicVariableServer "PVDZ_send";
 		[player,20] call player_humanityChange;
 	};
 } else {

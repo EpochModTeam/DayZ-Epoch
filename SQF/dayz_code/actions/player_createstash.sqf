@@ -62,9 +62,9 @@ if ((count _worldspace) == 2) then {
 	
 	_stash setVariable ["characterID",dayz_characterID,true];
 	
-	PVDZE_obj_Publish = [dayz_characterID,_stash,[_dir,_location],[]];
-	publicVariableServer "PVDZE_obj_Publish";
-    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZE_obj_Publish:", PVDZE_obj_Publish];
+	PVDZ_obj_Publish = [dayz_characterID,_stash,[_dir,_location],[]];
+	publicVariableServer "PVDZ_obj_Publish";
+    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
 	r_action_count = 0;
 	cutText [format [localize "str_success_stash_pitch",_stashname], "PLAIN DOWN"];

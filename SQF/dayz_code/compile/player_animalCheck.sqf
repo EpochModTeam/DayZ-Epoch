@@ -35,11 +35,13 @@ if ((count _list) < dayz_maxAnimals) then {
 	
 	if (((player distance _Pos) < dayz_animalDistance) && {!(surfaceIsWater _Pos)} && {(count _list) <= 1}) then {
 		if (_type == "DZ_Pastor") then { _agent = createAgent [_type, _Pos, [], 0, "NONE"]; } else { _agent = createAgent [_type, _Pos, [], 0, "FORM"]; };
-		uiSleep 0.001;
+		
+		//Disable simulation 
+		PVDZ_Server_Simulation = [_agent, false];
+		publicVariableServer "PVDZ_Server_Simulation";
+		
 		_agent setPos _Pos;
 		_id = [_pos,_agent] execFSM "\z\addons\dayz_code\system\animal_agent.fsm";
-		PVDZE_zed_Spawn = [_agent];
-		publicVariableServer "PVDZE_zed_Spawn";
 	};
 	uiSleep 1;
 };

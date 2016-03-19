@@ -186,7 +186,6 @@ if (worldName == "chernarus") then {
 	([4654,9595,0] nearestObject 145260) setDamage 1;
 };
 
-//dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];
 PVCDZ_plr_Login = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];
 #ifdef DZE_SERVER_DEBUG
 diag_log format["%1, %2, %3, %4, %5, %6, %7, %8, %9, %10",_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];

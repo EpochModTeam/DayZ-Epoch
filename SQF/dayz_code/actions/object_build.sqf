@@ -74,9 +74,9 @@ if (_build) then {
 */
 
     _object setVariable ["characterID",dayz_characterID,true];
-    PVDZE_obj_Publish = [dayz_characterID,_object,[round _direction, _location], _variables];
-    publicVariableServer "PVDZE_obj_Publish";
-    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZE_obj_Publish:", PVDZE_obj_Publish];
+    PVDZ_obj_Publish = [dayz_characterID,_object,[round _direction, _location], _variables];
+    publicVariableServer "PVDZ_obj_Publish";
+    diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
     cutText [format [localize "str_build_01",_text], "PLAIN DOWN"];
     r_action_count = 0;

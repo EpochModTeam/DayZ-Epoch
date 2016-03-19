@@ -8,8 +8,8 @@ sched_medical_slow = {  // 10 seconds
 		player setVariable["USEC_BloodQty", r_player_blood, false];
 		player setVariable["medForceUpdate", true, false];
 	//Send only to server	
-		PVDZE_serverStoreVar = [player, "USEC_BloodQty", r_player_blood];
-		publicVariableServer "PVDZE_serverStoreVar";
+		PVDZ_serverStoreVar = [player, "USEC_BloodQty", r_player_blood];
+		publicVariableServer "PVDZ_serverStoreVar";
 	};
 
 	objNull

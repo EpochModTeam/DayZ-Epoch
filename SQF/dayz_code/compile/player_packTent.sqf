@@ -57,11 +57,11 @@ if(_pickup) then {
 
 	//["PVDZ_obj_Delete",[_objectID,_objectUID]] call callRpcProcedure;
 	_activatingPlayer = player;
-	PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
-	publicVariableServer "PVDZE_obj_Delete";
+	PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+	publicVariableServer "PVDZ_obj_Destroy";
 	
 	if (isServer) then {
-		PVDZE_obj_Delete call server_deleteObj;
+		PVDZ_obj_Destroy call server_deleteObj;
 	};
 	deleteVehicle _obj;
 

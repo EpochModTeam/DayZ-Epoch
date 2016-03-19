@@ -1,16 +1,19 @@
-private["_holder","_type","_classname","_name"];
+if (player isKindOf "PZombie_VB") exitWith {};
+/*
+	Created exclusively for ArmA2:OA - DayZMod.
+	Please request permission to use/alter from R4Z0R49.
+*/
+//private["_holder","_type","_classname","_name"];
 _holder = _this select 0;
 _type = _this select 1;
 _classname = _this select 2;
 
 _name = getText (configFile >> _type >> _classname >> "displayName");
 
-// Exit if player zombie
-if(player isKindOf "PZombie_VB") exitWith {};
 pickupInit = true;
 
 actionMonitor = {
-	private ["_holder","_type","_classname","_name","_action","_distance","_run","_timeout","_null"];
+	private["_action","_run","_timeout"];
 	_holder = _this select 0;
 	_type = _this select 1;
 	_classname = _this select 2;
@@ -20,6 +23,8 @@ actionMonitor = {
 	_distance = player distance _holder;
 	_run = true;
 	_timeout = 2;
+
+	//diag_log format["Holder: %1, Type: %2 Classname: %3, Name: %4",_holder, _type, _classname, _name];
 
 	while { _run } do {
 		if (alive _holder) then {
@@ -37,7 +42,7 @@ actionMonitor = {
 				_action = -1;
 				_timeout = 2;
 			};
-			// Stop the loop && fall back to old code
+			// Stop the loop and fall back to old code
 			if (_distance > 100) then {
 				null = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
 				player reveal _holder;

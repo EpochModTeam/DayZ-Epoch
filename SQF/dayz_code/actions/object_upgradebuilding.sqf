@@ -145,8 +145,8 @@ _object setVariable ["characterID",_characterID,true];
 //remove old object
 deleteVehicle _cursorTarget;
 _activatingPlayer = player;
-PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
-publicVariableServer "PVDZE_obj_Delete";
+PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+publicVariableServer "PVDZ_obj_Destroy";
 
 // create a weaponholder with dismissed parts
 _wh = "WeaponHolder" createVehicle (getPosATL player);
@@ -158,9 +158,9 @@ _wh = "WeaponHolder" createVehicle (getPosATL player);
 
 //publish new object
 _variables = [["ownerArray", _ownerArray],["padlockCombination", _ownerPasscode]];
-PVDZE_obj_Publish = [dayz_characterID,_object,[_dir, _pos],_variables];
-publicVariableServer "PVDZE_obj_Publish";
-diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZE_obj_Publish:", PVDZE_obj_Publish];
+PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],_variables];
+publicVariableServer "PVDZ_obj_Publish";
+diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 /*
 //Send maintenance info
 PVDZ_veh_Save = [_object,"maintenance"];

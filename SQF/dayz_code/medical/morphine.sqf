@@ -52,8 +52,8 @@ if ((_unit == player) or (vehicle player != player)) then {
 	//["PVCDZ_hlt_Morphine",[_unit,player]] call broadcastRpcCallAll;
 	//PVCDZ_hlt_Morphine = [_unit,player];
 	//publicVariable "PVCDZ_hlt_Morphine";
-	PVDZE_send = [_unit,"Morphine",[_unit,player]];
-	publicVariableServer "PVDZE_send";
+	PVDZ_send = [_unit,"Morphine",[_unit,player]];
+	publicVariableServer "PVDZ_send";
 } else {
 	player addMagazine "ItemMorphine";
 	r_interrupt = false;

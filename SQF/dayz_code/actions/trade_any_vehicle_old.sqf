@@ -190,8 +190,8 @@ if (_qty >= _qty_in) then {
 							_objectID 	= _obj getVariable ["ObjectID","0"];
 							_objectUID	= _obj getVariable ["ObjectUID","0"];
 
-							PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
-							publicVariableServer "PVDZE_obj_Delete";
+							PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer];
+							publicVariableServer "PVDZ_obj_Destroy";
 
 							deleteVehicle _obj; 
 

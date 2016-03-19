@@ -15,8 +15,8 @@ if (!_isDead) then {
 	_unit setVariable ["USEC_isCardiac",false,true];
 	uiSleep 5;
 	/* PVS/PVC - Skaronator */
-	PVDZE_send = [_unit,"Epinephrine",[_unit,player,"ItemEpinephrine"]];
-	publicVariableServer "PVDZE_send";
+	PVDZ_send = [_unit,"Epinephrine",[_unit,player,"ItemEpinephrine"]];
+	publicVariableServer "PVDZ_send";
 };
 
 r_action = false;

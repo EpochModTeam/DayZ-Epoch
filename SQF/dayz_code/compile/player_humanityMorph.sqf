@@ -86,8 +86,8 @@ player setVariable["CharacterID",_charID,true];
 player setVariable["worldspace",_worldspace,true];
 player setVariable["friendlies",_friendlies,true];
 player setVariable["tagList",_tagList,true];
-PVDZE_serverStoreVar = [player,"Achievements",_achievements];
-publicVariableServer "PVDZE_serverStoreVar";
+PVDZ_serverStoreVar = [player,"Achievements",_achievements];
+publicVariableServer "PVDZ_serverStoreVar";
 
 call dayz_resetSelfActions;
 

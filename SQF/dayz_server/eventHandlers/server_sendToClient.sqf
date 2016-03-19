@@ -22,14 +22,14 @@ switch (_variable) do {
 		};
 	};
 	
-	case "SFuel": {
+	case "SetFuel": {
 		_vehicle = _arraytosend select 0;
 		_qty = _arraytosend select 1;
 		if (local _vehicle) then {
 			_vehicle setFuel _qty;
 		} else {
-			PVCDZE_veh_SetFuel = _arraytosend;
-			_owner publicVariableClient  "PVCDZE_veh_SetFuel";
+			PVCDZ_veh_SetFuel = _arraytosend;
+			_owner publicVariableClient  "PVCDZ_veh_SetFuel";
 		};
 	};
 
@@ -47,23 +47,23 @@ switch (_variable) do {
 	};
 	
 	case "GutBody": {
-		PVCDZE_obj_GutBody = _arraytosend;
-		_owner publicVariableClient "PVCDZE_obj_GutBody";
+		PVCDZ_obj_GutBody = _arraytosend;
+		_owner publicVariableClient "PVCDZ_obj_GutBody";
 	};
 
 	case "HideBody": {
-		PVCDZE_plr_HideBody = _arraytosend select 0;
-		_owner publicVariableClient "PVCDZE_plr_HideBody";
+		PVCDZ_obj_HideBody = _arraytosend select 0;
+		_owner publicVariableClient "PVCDZ_obj_HideBody";
 	};
 	
 	case "Humanity": {
-		PVDZE_plr_HumanityChange = _arraytosend;
-		_owner publicVariableClient "PVDZE_plr_HumanityChange";
+		PVCDZ_plr_Humanity = _arraytosend;
+		_owner publicVariableClient "PVCDZ_plr_Humanity";
 	};
 	
 	case "PZ_BreakLegs": {
-		usecBreakLegs = _arraytosend;
-		_owner publicVariableClient "usecBreakLegs";
+		PVCDZ_plr_Legs = _arraytosend;
+		_owner publicVariableClient "PVCDZ_plr_Legs";
 	};
 	
 	case "Bleed": {
@@ -71,26 +71,21 @@ switch (_variable) do {
 		_owner publicVariableClient "PVDZ_hlt_Bleed";
 	};
 
-	case "PVDZE_plr_SetDate": {
-		PVDZE_plr_SetDate = dayz_storeTimeDate;
-		_owner publicVariableClient "PVDZE_plr_SetDate";
+	case "dayzSetDate": {
+		dayzSetDate = dayz_storeTimeDate;
+		_owner publicVariableClient "dayzSetDate";
 		
 		//diag_log ("Time and date: " +str (dayz_storeTimeDate));
 	};
-
-	case "HideObj": {
-		PVDZE_obj_Hide = _arraytosend select 0;
-		_owner publicVariableClient "PVDZE_obj_Hide";
-	};
 	
 	case "RoadFlare": {
-		PVDZE_obj_RoadFlare = _arraytosend;
-		_owner publicVariableClient "PVDZE_obj_RoadFlare";
+		PVDZ_obj_RoadFlare = _arraytosend;
+		_owner publicVariableClient "PVDZ_obj_RoadFlare";
 	};
 	
 	case "Transfuse": {
-		usecTransfuse = _arraytosend;
-		_owner publicVariableClient "usecTransfuse";
+		PVCDZ_hlt_Transfuse = _arraytosend;
+		_owner publicVariableClient "PVCDZ_hlt_Transfuse";
 		_unit setVariable["medForceUpdate",true];
 	};
 
@@ -101,29 +96,32 @@ switch (_variable) do {
 	};
 
 	case "Painkiller": {
-		usecPainK = _arraytosend;
-		_owner publicVariableClient "usecPainK";
+		PVCDZ_hlt_PainK = _arraytosend;
+		_owner publicVariableClient "PVCDZ_hlt_PainK";
 		_unit setVariable["medForceUpdate",true];
 	};
-
+	
 	case "Morphine": {
-		usecMorphine = _arraytosend;
-		_owner publicVariableClient "usecMorphine";
+		PVCDZ_hlt_Morphine = _arraytosend;
+		_owner publicVariableClient "PVCDZ_hlt_Morphine";
 		_unit setVariable ["hit_legs",0,false];
 		_unit setVariable ["hit_hands",0,false];
 		_unit setVariable["medForceUpdate",true];
 	};
 
 	case "Epinephrine": {
-		usecEpi = _arraytosend;
-		_owner publicVariableClient "usecEpi";
+		PVCDZ_hlt_Epi = _arraytosend;
+		_owner publicVariableClient "PVCDZ_hlt_Epi";
 		_unit setVariable["medForceUpdate",true];
 	};
 
 	case "Bandage": {
-		usecBandage = _arraytosend;
-		_owner publicVariableClient "usecBandage";
+		PVCDZ_hlt_Bandage = _arraytosend;
+		_owner publicVariableClient "PVCDZ_hlt_Bandage";
+		
 		_unit setVariable["medForceUpdate",true];
+		
+		//diag_log ("Bandage: " +str(PVCDZ_hlt_Bandage));
 	};
 
 	case "Antibiotics": {

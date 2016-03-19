@@ -47,8 +47,8 @@ while {r_doLoop} do {
 						r_player_infected = false;
 						player setVariable["USEC_infected",false,false];
 						
-						PVDZE_serverStoreVar = [player,"USEC_infected",false];
-						publicVariableServer "PVDZE_serverStoreVar";
+						PVDZ_serverStoreVar = [player,"USEC_infected",false];
+						publicVariableServer "PVDZ_serverStoreVar";
 					} else {
 						_infectedStatus = if (r_player_infected) then { "Infected" } else { "Cured" };
 						_cureAttempt = _cureAttempt + 0.01;

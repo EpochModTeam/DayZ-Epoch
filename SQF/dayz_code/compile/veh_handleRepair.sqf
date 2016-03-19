@@ -13,17 +13,19 @@ or by action/repair.sqf
 - return : 0 :)
 broadcast: boolean. if true, then the request will be sent to all players if the vehicle is not local.
 ************************************************************/
-private ["_hitpointnames","_log"];
+private ["_hitpointnames","_log","_damage","_action"];
 
 _unit = _this select 0;
 _selection = _this select 1;
+_damage = _this select 2;
+_action = if (_damage == 0) then {"repair"} else {"damage"};
 
 _hitpointnames = [];
 {
 	_hitpointnames set [count _hitpointnames, getText (configFile >> "CfgVehicles" >> (typeOf _unit) >> "HitPoints" >> _x >> "name")];
 } forEach (_unit call vehicle_getHitpoints);
 
-if ((isNil "_selection") OR {(!(_selection IN _hitpointnames))}) exitWith {_this select 2};
+if ((isNil "_selection") OR {(!(_selection in _hitpointnames))}) exitWith {_this select 2};
 
 _SVname = "hit_" + _selection;
 
@@ -33,21 +35,20 @@ _selection, _unit getVariable [_SVname, 0] ];
 
 if (local _unit) then {
 	// only local unit can set the damage of a vehicle part
-	_unit setVariable [_SVname, 0, true];
-	_unit setHit [_selection, 0];
+	_unit setVariable [_SVname, _damage, true];
+	_unit setHit [_selection, _damage];
 	_log = format["%1. setH!t[%2,0]", _log, _selection];
+
 	if (!isServer) then {
-		PVDZ_veh_Save = [_unit, "repair"];
-		publicVariableServer "PVDZ_veh_Save";
+		PVDZ_obj_Save = [_unit, _action];
+		publicVariableServer "PVDZ_obj_Save";
 		_log = _log + ". Requesting server hive write";
-	}
-	else {
-		[_unit, "repair"] call server_updateObject;
+	} else {
+		[_unit, _action] call server_updateObject;
 		_log = _log + ". Writing to hive";
 	};
-}
-else {
-	if ( (count _this > 3) AND {(_this select 3)}) then {
+} else {
+	if ((count _this > 3) && {(_this select 3)}) then {
 		// vehicle is not local to this client, ask the client which vehicle is local to set damage
 		_this resize 3; // delete "broadcast" boolean
 		_log = _log + ". Broadcasting to all";

@@ -430,10 +430,10 @@ class FSM
                          "" \n
                          "_msg = [];" \n
                          "progressLoadingScreen 0.65;" \n
-                         "PVDZE_plr_Login = [_playerUID,player];" \n
-                         "publicVariableServer ""PVDZE_plr_Login"";" \n
-                         "diag_log ['Sent to server: PVDZE_plr_Login', PVDZE_plr_Login]; " \n
-                         "PVDZ_send = [player,""PVDZE_plr_SetDate"",[player]];" \n
+                         "PVDZ_plr_Login1 = [_playerUID,player];" \n
+                         "publicVariableServer ""PVDZ_plr_Login1"";" \n
+                         "diag_log ['Sent to server: PVDZ_plr_Login1', PVDZ_plr_Login1]; " \n
+                         "PVDZ_send = [player,""dayzSetDate"",[player]];" \n
                          "publicVariableServer ""PVDZ_send"";" \n
                          "diag_log ['Sent to server: PVDZ_send', PVDZ_send]; " \n
                          "_myTime = diag_tickTime;" \n
@@ -703,7 +703,6 @@ class FSM
                          "	dayz_myBackpackMags =	[];" \n
                          "	dayz_myBackpackWpns =	[];" \n
                          "};" \n
-                         "//dayzPlayerLogin2 = [];" \n
                          "PVCDZ_plr_Login2 = [];" \n
                          "PVDZ_plr_Login2 = [_charID,player,_playerUID,_spawnSelection];" \n
                          "publicVariableServer ""PVDZ_plr_Login2"";" \n
@@ -740,9 +739,9 @@ class FSM
                          "" \n
                          "dayz_playerAchievements = _playerAchievements;" \n
                          "	" \n
-                         "PVDZE_serverStoreVar = [player,""Achievements"",_playerAchievements];" \n
-                         "publicVariableServer ""PVDZE_serverStoreVar"";" \n
-                         "diag_log ['Sent to server: PVDZE_serverStoreVar', PVDZE_serverStoreVar]; " \n
+                         "PVDZ_serverStoreVar = [player,""Achievements"",_playerAchievements];" \n
+                         "publicVariableServer ""PVDZ_serverStoreVar"";" \n
+                         "diag_log ['Sent to server: PVDZ_serverStoreVar', PVDZ_serverStoreVar]; " \n
                          "player setVariable [""Achievements"",_playerAchievements,false];" \n
                          "" \n
                          "" \n
@@ -1503,9 +1502,9 @@ class FSM
                                         priority = 0.000000;
                                         to="Stream";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"!isNil ""PVDZE_plr_SetDate"""/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"diag_log ['Date & time received:', PVDZE_plr_SetDate];" \n
-                                         "setDate PVDZE_plr_SetDate;" \n
+                                        condition=/*%FSM<CONDITION""">*/"!isNil ""dayzSetDate"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"diag_log ['Date & time received:', dayzSetDate];" \n
+                                         "setDate dayzSetDate;" \n
                                          "diag_log ['Local date on this client:', date];"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/

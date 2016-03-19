@@ -206,8 +206,8 @@ if (_finished) then {
 
 						//if(_objectID != "0" && _objectUID != "0") then {
 					
-						PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
-						publicVariableServer "PVDZE_obj_Delete";
+						PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer];
+						publicVariableServer "PVDZ_obj_Destroy";
 
 						deleteVehicle _obj; 
 

@@ -1,7 +1,7 @@
 private ["_messages", "_timeout"];
 
 if (isServer) exitWith {};
-waitUntil { uiSleep 1; !isNil ("PVDZE_plr_LoginRecord") };
+waitUntil { uiSleep 1; !isNil ("PVDZ_plr_LoginRecord") };
 
 _messages = [
 	["DayZ Epoch", "Welcome "+(name player)],

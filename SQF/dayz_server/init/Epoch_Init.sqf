@@ -8,11 +8,6 @@ server_updateNearbyObjects = {
 	} count nearestObjects [_pos, dayz_updateObjects, 10];
 }; */
 
-server_handleZedSpawn = {
-	private["_zed"];
-	_zed = _this select 0;
-	_zed enableSimulation false;
-};
 /*
 zombie_findOwner = {
 	private["_unit"];
@@ -671,8 +666,8 @@ server_timeSync = {
 			_date = [2012,8,2,_hour,_minute];
 		};
 		setDate _date;
-		PVDZE_plr_SetDate = _date;
-		publicVariable "PVDZE_plr_SetDate";
+		dayzSetDate = _date;
+		publicVariable "dayzSetDate";
 		diag_log ("TIME SYNC: Local Time set to " + str(_date));	
 	};
 };

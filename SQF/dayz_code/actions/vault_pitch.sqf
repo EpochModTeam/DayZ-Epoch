@@ -159,9 +159,9 @@ if(!_cancel) then {
 			_tent setVariable ["CharacterID",_combination,true];
 			_tent setVariable ["OEMPos",_location,true];
 
-			//["PVDZE_obj_Publish",[_combination,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
-			PVDZE_obj_Publish = [_combination,_tent,[_dir,_location],"VaultStorageLocked"];
-			publicVariableServer  "PVDZE_obj_Publish";
+			//["PVDZ_obj_Publish",[_combination,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
+			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location],"VaultStorageLocked"];
+			publicVariableServer  "PVDZ_obj_Publish";
 	
 			cutText [format[(localize "str_epoch_player_179"),_combination], "PLAIN DOWN", 5];
 		};

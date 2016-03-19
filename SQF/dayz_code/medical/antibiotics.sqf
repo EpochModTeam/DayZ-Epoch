@@ -32,8 +32,8 @@ if (_hasAntibiotics) then {
 		_msg = "You have taken antibiotics.";
 	} else {
 	//Send request to other player
-		PVDZE_send = [_unit,"Antibiotics",[_unit,player]];
-		publicVariableServer "PVDZE_send";
+		PVDZ_send = [_unit,"Antibiotics",[_unit,player]];
+		publicVariableServer "PVDZ_send";
 		
 		//Give humnaity for good deeds
 		[player,20] call player_humanityChange;

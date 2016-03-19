@@ -32,8 +32,10 @@ _infected = 0;
 if (r_player_infected && DZE_PlayerZed) then {
 	_infected = 1;
 };
-PVDZE_plr_Died = [dayz_characterID,0,_body,_playerID,_infected, dayz_playerName];
-publicVariableServer "PVDZE_plr_Died";
+//Send Death Notice
+//["PVDZ_plr_Death",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
+PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,_infected,dayz_playerName];
+publicVariableServer "PVDZ_plr_Death";
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;
 
@@ -68,8 +70,8 @@ if (count _array > 0) then {
 			_humanityHit = -(2000 - _myKills);
 			_kills = _source getVariable ["humanKills",0];
 			_source setVariable ["humanKills",(_kills + 1),true];
-			PVDZE_send = [_source,"Humanity",[_source,_humanityHit,300]];
-			publicVariableServer "PVDZE_send";
+			PVDZ_send = [_source,"Humanity",[_source,_humanityHit,300]];
+			publicVariableServer "PVDZ_send";
 		} else {
 			//i'm "guilty" - kill me as bandit
 			_killsV = _source getVariable ["banditKills",0];
@@ -154,7 +156,7 @@ for  "_x" from 5 to 1 step -1 do {
 	uiSleep 1;
 };
 
-PVDZE_Server_Simulation = [_body, false];
-publicVariableServer "PVDZE_Server_Simulation";
+PVDZ_Server_Simulation = [_body, false];
+publicVariableServer "PVDZ_Server_Simulation";
 
 endMission "END1";

@@ -22,28 +22,13 @@ REMOVE TOOL BREAKING, IT'S STUPID
 	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
 dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
-PVDZ_obj_Publish IS PVDZE_obj_Publish
 ******REPLACE ALL PVCDZ_ AND PVDZ_ with PVCDZE/PVDZE_
 
 trap_monitor.fsm is no more!
-dayzPlayerLogin VARIABLE IS NO MORE!
-dayzPlayerLogin2 = []; VARIABLE IS NO MORE! USE PVCDZ_plr_Login2
 dayz_authed VARIABLE IS NO MORE???
 dayz_gui = [] spawn { IS NO MORE????
 
-PVDZ_drg_RaLW IS norrnRaLW
-PVDZ_drg_RLact IS norrnRLact
 NEW FNC PVDZE_hlt_Bleed -- THATS AN L change it to an I
-PVCDZE_vehSH needs to be changed to PVCDZE_veh_SH
-PVDZE_plr_HideBody BECOMES PVCDZE_plr_HideBody
-PVDZE_obj_GutBody BECOMES PVCDZE_obj_GutBody
-PVDZE_veh_SFuel BECOMES PVCDZE_veh_SetFuel
-PVDZ_plr_Death	BECOMES	PVDZE_plr_Died
-PVDZ_plr_Login1 BECOMES PVDZE_plr_Login
-PVDZ_obj_Destroy BECOMES PVDZE_obj_Delete //WHO RENAMED THESE VARIABLES IN DAYZ VANILLA, THE COMPILE IT CALLS IS STILL NAMED server_deleteObj WHY CHANGE IT TO DESTROY!!!!???
-dayzSetDate BECOMES PVDZE_plr_SetDate
-
-PVDZ_serverStoreVar BECOMES PVDZE_serverStoreVar
 
 player getVariable ["OpenTarget",false]; CHANGE TO 
 player getVariable ["freeTarget",false];
@@ -54,7 +39,6 @@ SELF ACTIONS VARIABLES
 ////////////////////////////////////////
 s_player_boil = -1; is now a_player_boil = true;
 a_player_cooking = true; -- NEW, old -1 var is still used???
-PVCDZ_obj_GutBody IS NOW PVDZE_plr_GutBody
 MAKE SURE "ItemFuelBarrel" is in refuel can list
 
 ////////SERVER STUFF///////

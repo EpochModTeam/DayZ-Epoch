@@ -85,12 +85,12 @@ _sfx = "tentpack";
 uisleep 3;
 
 _activatingPlayer = player;
-PVDZE_obj_Delete = [_objectID,_objectUID, _activatingPlayer];
-publicVariableServer "PVDZE_obj_Delete";
+PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+publicVariableServer "PVDZ_obj_Destroy";
 
 //Send killed for object
 if (isServer) then {
-	PVDZE_obj_Delete call server_deleteObj;
+	PVDZ_obj_Destroy call server_deleteObj;
 } else {
 	PVDZ_veh_Save = [_obj, "killed"];
 	publicVariableServer "PVDZ_veh_Save";

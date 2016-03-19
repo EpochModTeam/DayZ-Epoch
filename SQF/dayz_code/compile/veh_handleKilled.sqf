@@ -14,11 +14,11 @@ if (isServer) then {
 	[_unit, "killed"] call server_updateObject;
 } else {
 	if (DZE_Debug_Damage && ((!isPlayer _unit) || ((isPlayer _unit) && (vehicle _unit != _unit) && (_unit != _killer)))) then {
-		PVDZE_veh_Update = [_unit, "killed",_killer];
+		PVDZ_obj_Save = [_unit, "killed",_killer];
 	} else {
-		PVDZE_veh_Update = [_unit, "killed"];
+		PVDZ_obj_Save = [_unit, "killed"];
 	};
-	publicVariableServer "PVDZE_veh_Update";
+	publicVariableServer "PVDZ_obj_Save";
 };
 
 // everyone removes their EH for this vehicle

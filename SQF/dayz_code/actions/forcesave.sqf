@@ -1,2 +1,2 @@
-PVDZE_veh_Update = [_this select 3,"all"];
-publicVariableServer "PVDZE_veh_Update";
+PVDZ_obj_Save = [_this select 3,"all"];
+publicVariableServer "PVDZ_obj_Save";

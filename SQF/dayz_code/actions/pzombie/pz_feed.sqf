@@ -63,9 +63,8 @@ if(!(alive _item)) then {
 	dayz_lastMeal =	time;
 	dayz_hunger = 0;
 
-	//["PVDZE_plr_Save",[player,[],true]] call callRpcProcedure;
-	PVDZE_plr_Save = [player,[],true,false];
-	publicVariableServer "PVDZE_plr_Save";
+	PVDZ_plr_Save = [player,[],true,false];
+	publicVariableServer "PVDZ_plr_Save";
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 

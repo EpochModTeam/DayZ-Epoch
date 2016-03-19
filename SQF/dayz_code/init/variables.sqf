@@ -578,9 +578,9 @@ dayz_zombieTargetList = [
 	["Air",500],
 	["LandVehicle",200]
 ];
-PVDZE_plr_Hit = [];
-PVDZE_obj_Publish = [];		//used for eventhandler to spawn a mirror of players tent
-PVCDZE_plr_HideBody = objNull;
+
+PVDZ_obj_Publish = [];		//used for eventhandler to spawn a mirror of players tent
+PVCDZ_obj_HideBody = objNull;
 dayz_selectedVault = objNull;
 dayz_selectedDoor = objNull;
 
@@ -1126,7 +1126,6 @@ if(!isDedicated) then {
 	DZE_Quarantine = false;
 	DZE_InRadiationZone = false;
 
-	DZE_SaveTime = 30;
 	Dayz_constructionContext = [];
 	Dayz_freefall = [ time, 0, 0.1 ];
 	autoRunActive = 0;

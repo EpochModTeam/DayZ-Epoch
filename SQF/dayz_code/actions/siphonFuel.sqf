@@ -115,8 +115,8 @@ if (_isMan or _isAnimal or _isZombie) exitWith { cutText [localize "str_siphon_n
 							if (local _vehicle) then {
 								[_vehicle,_newFuel] call local_setFuel;
 							} else {
-								PVDZE_send = [_vehicle,"SFuel",[_vehicle,_newFuel]];
-								publicVariableServer "PVDZE_send";
+								PVDZ_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
+								publicVariableServer "PVDZ_send";
 							};
 
 							// Play sound

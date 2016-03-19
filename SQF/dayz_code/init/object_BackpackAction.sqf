@@ -1,11 +1,9 @@
-private ["_holder","_type","_classname","_name","_actionSet"];
+if (player isKindOf "PZombie_VB") exitWith {};
 _holder = _this select 0;
 _type = _this select 1;
 _classname = _this select 2;
-_name = getText (configFile >> _type >> _classname >> "displayName");
 
-// Exit if player zombie
-if(player isKindOf "PZombie_VB") exitWith {};
+_name = getText (configFile >> _type >> _classname >> "displayName");
 
 if ((!isNil "_holder") and {(!isNull _holder)}) then {
 	_actionSet = _holder getVariable["actionSet", false];

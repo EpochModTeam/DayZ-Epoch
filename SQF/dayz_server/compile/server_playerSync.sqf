@@ -192,7 +192,7 @@ if (_characterID != "0") then {
 		_currentState = [[_currentWpn,_currentAnim,_temp],_Achievements];
 
 		if(DZE_FriendlySaving) then {
-			// save only last/most recent 5 entrys as we only have 200 chars in db field && weapon + animation names are sometimes really long 60-70 chars.
+			// save only last/most recent 5 entrys as we only have 200 chars in db field and weapon + animation names are sometimes really long 60-70 chars.
 			_friendlies = [(_character getVariable ["friendlies",[]]),5] call array_reduceSizeReverse;
 			_currentState set [(count _currentState),_friendlies];
 		};
