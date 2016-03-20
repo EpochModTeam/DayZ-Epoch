@@ -110,7 +110,6 @@ terminate dayz_slowCheck;
 //terminate dayz_animalCheck;
 terminate dayz_monitor1;
 //terminate dayz_medicalH;
-//terminate dayz_gui;
 
 r_player_dead = true;
 

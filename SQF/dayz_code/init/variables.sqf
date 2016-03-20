@@ -579,6 +579,7 @@ if (isServer) then {
 	DZE_DYN_AntiStuck3rd = 0;
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 	if(isNil "EpochEvents") then {EpochEvents = [];};
+	if(isNil "DZEdebug") then {DZEdebug = false;};
 	if(isNil "DZE_vehicleAmmo") then {DZE_vehicleAmmo = 0;};
 	if(isNil "DZE_BackpackGuard") then {DZE_BackpackGuard = true;};
 	if(isNil "DZE_DeathMsgGlobal") then {DZE_DeathMsgGlobal = false;};
@@ -686,7 +687,6 @@ if (!isDedicated) then {
 	dayz_currentWeaponHolders = 0;
 	dayz_maxMaxWeaponHolders = 80;
 	dayz_inVehicle = false;
-	dayzGearSave = false;
 	dayz_unsaved = false;
 	dayz_scaleLight = 0;
 	dayzDebug = false;

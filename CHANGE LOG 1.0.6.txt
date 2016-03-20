@@ -14,7 +14,7 @@
 	- Duplicate global variables have been renamed:
 		- dayz_updateObjects --> DayZ_GearedObjects
 	- Duplicate public variables have been renamed:
-		- dayzPlayerLogin --> PVCDZ_plr_Login/PVCDZ_plr_PlayerAccepted
+		- dayzPlayerLogin --> PVCDZ_plr_Login
 		- dayzPlayerLogin2 --> PVCDZ_plr_Login2
 		- norrnRaDrag --> PVDZ_drg_RaDrag
 		- norrnRaLW --> PVDZ_drg_RaLW

@@ -1103,33 +1103,6 @@
 			<French>Mise en place du coffre fort annulée.</French>
 			<Czech>Stavění sejfu zrušeno.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_112">
-			<English>This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ Epoch staff.</English>
-			<German>Dieser Server läuft mit einer falschen Version der serverseitigen Anwenung. Sie können auf diesem Server nicht spielen. Wenn Sie der Admin des Server sind, dann kontaktieren Sie bitte den DayZ Epoch Staff.</German>
-			<Russian>Этот сервер работает на неправильной версии серверного приложения. Вы не можете играть на этом сервере. Если вы являетесь администратором сервера, пожалуйста, свяжитесь с персоналом DayZ Epoch.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Deze server draait een verkeerde versie van de serversided software. Je kunt niet op deze server spelen. Als het jouw server is, neem dan contact op met de DayZ Epoch Staff.</Dutch>
-			<French>Ce serveur exécute une version différente du jeu. Vous ne pouvez pas jouer sur ce serveur. Si vous êtes l'administrateur de ce serveur, contactez l'équipe de DayZ Epoch s'il vous plaît</French>
-			<Czech>Tento server běží na nesprávné verzi serveru. Nemůžete hrát na tomto serveru. Pokud jste administrátor serveru, prosím kontaktujte podporu DayZ Epoch.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_113">
-			<English>You have an outdated version of Epoch please download the correct version</English>
-			<German>Sie haben eine falsche Version von Epoch. Downloaden Sie bitte die aktuelle Version.</German>
-			<Russian>У вас устаревшая версия DayZ Epoch, загрузите правильную версию</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt een verouderde versie van epoch.</Dutch>
-			<French>Vous avez une version de DayZ Epoch périmée, une mise à jour est nécessaire.</French>
-			<Czech>Máte zastaralou verzi Epochu. Prosím, stáhněte si novou verzi.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_114">
-			<English>Could not retrieve date and time from server disconnect and retry.</English>
-			<German>Es konnte nicht Datum und Uhrzeit vom Server abgerufen werden. Trennen Sie die Verbindung vom Server und versuchen Sie es erneut.</German>
-			<Russian>Не удалось получить дату и время с сервера отключитесь и повторите попытку.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Het is niet gelukt om de datum en tijd van de server op te halen \nVerbreek de verbinding en probeer het opnieuw.</Dutch>
-			<French>Récupération de la date et de l'heure impossible à partir du serveur. Déconnectez et réessayez.</French>
-			<Czech>Nelze získat datum a čas ze serveru. Odpojte se a připojte znovu.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
 			<English>You cannot lock this %1, you do not know the combination.</English>
 			<German>Sie können nicht diese(n) %1 abschließen, da Sie nicht die Kombination kennen.</German>

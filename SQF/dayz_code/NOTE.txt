@@ -25,7 +25,6 @@ dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
 ******REPLACE ALL PVCDZ_ AND PVDZ_ with PVCDZE/PVDZE_
 
 trap_monitor.fsm is no more!
-dayz_gui = [] spawn { IS NO MORE????
 
 NEW FNC PVDZE_hlt_Bleed -- THATS AN L change it to an I
 

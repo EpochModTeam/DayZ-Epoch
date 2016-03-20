@@ -632,7 +632,6 @@ class FSM
                          "_usedFood = 0;" \n
                          "_usedWater = 0;" \n
                          "" \n
-                         "dayzGearSave = false;" \n
                          "_inventory call player_gearSet;" \n
                          "" \n
                          "//Assess in backpack" \n
@@ -748,6 +747,10 @@ class FSM
                          "_setDir = 			_worldspace select 0;" \n
                          "_setPos = 			_worldspace select 1;" \n
                          "" \n
+						 "if (isNil ""freshSpawn"") then {" \n
+                         "	freshSpawn = 0;" \n
+                         "};" \n
+                         "" \n
                          "if(dayz_paraSpawn && (freshSpawn == 2)) then {" \n
                          "	player setDir _setDir;" \n
                          "	player setPosATL [(_setPos select 0),(_setPos select 1),2000];" \n
@@ -801,6 +804,18 @@ class FSM
                          "		_wpns = getArray (_config >> ""weapons"");" \n
                          "		_bcpk = getText (_config >> ""backpack"");" \n
                          "		_bcpkWpn = getText (_config >> ""backpackWeapon"");" \n
+						 "		if(!isNil ""DefaultMagazines"") then {" \n
+                         "			_gmags = DefaultMagazines;" \n
+                         "		};" \n
+                         "		if(!isNil ""DefaultWeapons"") then {" \n
+                         "			_wpns = DefaultWeapons;" \n
+                         "		};" \n
+                         "		if(!isNil ""DefaultBackpack"") then {" \n
+                         "			_bcpk = DefaultBackpack;" \n
+                         "		};" \n
+                         "		if(!isNil ""DefaultBackpackItems"") then {" \n
+                         "			_bcpkWpn = DefaultBackpackItems;" \n
+                         "		};" \n
                          "	" \n
                          "		//Add inventory" \n
                          "		{" \n
@@ -809,7 +824,7 @@ class FSM
                          "				player addMagazine _x;" \n
                          "				_countmags = _countmags  +1;" \n
                          "			};" \n
-                         "		} forEach _gmags;" \n
+                         "		} count _gmags;" \n
                          "" \n
                          "		while {_countmags < _totalrndmags} do {" \n
                          "			_rndmag = _rndmags call BIS_fnc_selectRandom;" \n
@@ -825,14 +840,24 @@ class FSM
                          "			if (_isOK) then {" \n
                          "				player addWeapon _x;" \n
                          "			};" \n
-                         "		} forEach _wpns;" \n
+                         "		} count _wpns;" \n
                          "	" \n
                          "		if (_bcpk != """") then {" \n
                          "		player addBackpack _bcpk; " \n
                          "		dayz_myBackpack =	unitBackpack player;" \n
                          "" \n
-                         "			if (_bcpkWpn != """") then {" \n
-                         "				dayz_myBackpack addWeaponCargoGlobal [_bcpkWpn,1];" \n
+                         "			if ((typeName _bcpkWpn) == ""ARRAY"") then {" \n
+                         "				{" \n
+                         "					if (isClass(configFile >> ""CfgWeapons"" >> _x)) then {" \n
+                         "						dayz_myBackpack addWeaponCargoGlobal [_x,1];" \n
+                         "					} else {" \n
+                         "						dayz_myBackpack addMagazineCargoGlobal [_x, 1];" \n
+                         "					};" \n
+                         "				} count _bcpkWpn;" \n
+                         "			} else {" \n
+                         "				if (_bcpkWpn != """") then {" \n
+                         "					dayz_myBackpack addWeaponCargoGlobal [_bcpkWpn, 1];" \n
+                         "				};" \n
                          "			};" \n
                          "		};" \n
                          "	};" \n
@@ -972,19 +997,19 @@ class FSM
                          "progressLoadingScreen 0.95;" \n
                          "dayz_loadScreenMsg = localize 'str_player_setup_completed';" \n
                          "_torev4l=nearestObjects [_setPos, Dayz_plants + DayZ_GearedObjects + [""AllVehicles"",""WeaponHolder""], 50];" \n
-                         "{ [_x,0] spawn object_roadFlare } forEach (allMissionObjects ""RoadFlare"");" \n
-                         "{ [_x,1] spawn object_roadFlare } forEach (allMissionObjects ""ChemLight"");" \n
+                         "{ [_x,0] spawn object_roadFlare } count (allMissionObjects ""RoadFlare"");" \n
+                         "{ [_x,1] spawn object_roadFlare } count (allMissionObjects ""ChemLight"");" \n
                          "{" \n
                          "  _fadeFire = _x getVariable['fadeFire', true];" \n
                          "  if (!_fadeFire) then {" \n
                          "    nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
                          "  };" \n
-                         "} forEach allMissionObjects ""SpawnableWreck"";" \n
-                         "{deleteVehicle _x} forEach (_setPos nearEntities [""zZombie_Base"",30]);" \n
+                         "} count allMissionObjects ""SpawnableWreck"";" \n
+                         "{deleteVehicle _x} count (_setPos nearEntities [""zZombie_Base"",30]);" \n
                          "player setDir _setDir;" \n
                          "player setPosATL _setPos;" \n
                          "player setVelocity [0,0,0.5];" \n
-                         "{player reveal _x} forEach _torev4l;" \n
+                         "{player reveal _x} count _torev4l;" \n
                          "dayz_myPosition = _setPos;" \n
                          "player setVariable ['BIS_noCoreConversations', true];" \n
                          "dayz_clientPreload = true;"/*%FSM</STATEINIT""">*/;
@@ -1053,37 +1078,18 @@ class FSM
                          "	_currentWpn		=	_state select 0;" \n
                          "	_currentAnim	=	_state select 1;" \n
                          "	//Reload players state" \n
-						 "	if ((count _state > 3) && DZE_FriendlySaving) then {" \n
-                         "		DZE_Friends = _state select 3;" \n
-                         "	}; " \n
                          "	if (count _state > 2) then {" \n
                          "		dayz_temperatur = _state select 2;" \n
-                         "	};rentWpn	=	""Makarov"";" \n
+						 "		if ((count _state > 3) && DZE_FriendlySaving) then {" \n
+                         "			DZE_Friends = _state select 3;" \n
+                         "		};" \n
+						 "} else {" \n
+						 "	_currentWpn	=	""Makarov"";" \n
                          "	_currentAnim	=	""aidlpercmstpsraswpstdnon_player_idlesteady02"";" \n
                          "};" \n
                          "" \n
-                         "if (player hasWeapon ""MeleeCrowbar"") then {" \n
-                         "	player removeMagazine 'crowbar_swing';	" \n
-                         "	player addMagazine 'crowbar_swing';" \n
-                         "};" \n
-                         "if (player hasWeapon ""MeleeSledge"") then {" \n
-                         "	player removeMagazine 'sledge_swing';	" \n
-                         "	player addMagazine 'sledge_swing';" \n
-                         "};" \n
-                         "if (player hasWeapon ""MeleeHatchet_DZE"") then {" \n
-                         "	player removeMagazine 'Hatchet_Swing';		" \n
-                         "	player addMagazine 'Hatchet_Swing';" \n
-                         "};" \n
-                         "if (player hasWeapon ""MeleeMachete"") then {" \n
-                         "	player removeMagazine 'Machete_Swing';		" \n
-                         "	player addMagazine 'Machete_Swing';" \n
-                         "};" \n
-                         "if (player hasWeapon ""MeleeFishingPole"") then {" \n
-                         "	player removeMagazine 'Fishing_Swing';		" \n
-                         "	player addMagazine 'Fishing_Swing';" \n
-                         "};" \n
-                         "" \n
                          "reload player;" \n
+						 "" \n
                          "if (_currentAnim != """" && !dayz_paraSpawn) then {" \n
                          "	[objNull, player, rSwitchMove,_currentAnim] call RE;" \n
                          "};" \n
@@ -1172,12 +1178,7 @@ class FSM
                          "r_player_rh = player getVariable [""rh_factor"", false];" \n
                          "selfTransfusionTime = time; //time to keep for last  self transfusion." \n
                          "" \n
-                         """colorCorrections"" ppEffectEnable true;" \n
-                         """colorCorrections"" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1 min (4*r_player_blood/3/r_player_bloodTotal)],  [1, 1, 1, 0.0]];" \n
-                         """colorCorrections"" ppEffectCommit 0;" \n
-                         "" \n
                          "dayz_musicH = [] spawn player_music;" \n
-                         "dayzGearSave = true;" \n
                          "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
                          "Dayz_logonTime = daytime;" \n
                          "Dayz_logonDate = dayz_Survived;" \n
@@ -1186,55 +1187,10 @@ class FSM
                          "//Current amounts" \n
                          "dayz_spawnZombies = {alive _x AND local _x} count (_position nearEntities [""zZombie_Base"",_radius]);" \n
                          "dayz_CurrentNearByZombies = {alive _x} count (_position nearEntities [""zZombie_Base"",_radius]);" \n
-                         "dayzGearSave = true;" \n
-                         "dayz_gui = [] spawn {" \n
-                         "	private[""_distance""];" \n
-                         "	dayz_musicH = [] spawn player_music;" \n
-                         "	_wasInVehicle = false;" \n
-                         "	_thisVehicle = objNull;" \n
-                         "	while {true} do {" \n
-                         "		_array = player call world_surfaceNoise;" \n
-                         "		dayz_surfaceNoise = _array select 1;" \n
-                         "		dayz_surfaceType = 	_array select 0;" \n
                          "" \n
-                         "		call player_checkStealth;" \n
-                         "		dayz_statusArray = [] call player_updateGui;" \n
-                         "" \n
-                         "		_vehicle = vehicle player;" \n
-                         "		if (_vehicle != player) then {" \n
-                         "			_wasInVehicle = true;" \n
-                         "			_thisVehicle = _vehicle;" \n
-                         "        	} else {" \n
-                         "			if (_wasInVehicle) then {" \n
-                         "				_wasInVehicle = false;" \n
-                         "				_thisVehicle call player_antiWall;" \n
-                         "			};" \n
-                         "		};" \n
-                         "		uiSleep 0.2;" \n
-                         "	};" \n
-                         "};" \n
-                         "" \n
-                         "//dayz_slowCheck = 	[] spawn player_spawn_2;" \n
-                         "" \n
-                         "Dayz_logonTime = daytime;" \n
-                         "Dayz_logonDate = dayz_Survived;" \n
                          "{ _x call fnc_veh_ResetEH; } forEach vehicles;" \n
                          "player allowDamage true;" \n
                          "player enableSimulation true;" \n
-                         "private[""_fadeFire""];" \n
-                         "{" \n
-                         "	_fadeFire = _x getVariable['fadeFire', true];" \n
-                         "	if (!_fadeFire) then {" \n
-                         "		_nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
-                         "	};" \n
-                         "} count entities ""SpawnableWreck"";" \n
-                         "" \n
-                         "dayz_backpackcheck = [] spawn {" \n
-                         "	while {true} do {" \n
-                         "		call player_dumpBackpack;" \n
-                         "		uiSleep 1;" \n
-                         "	};" \n
-                         "};" \n
                          "// remove box " \n
                          "[] spawn {" \n
                          "	private [""_counter""];" \n
@@ -1274,8 +1230,7 @@ class FSM
                         name = "Finish";
                         itemno = 32;
                         init = /*%FSM<STATEINIT""">*/"diag_log 'player_forceSave called from fsm';" \n
-                         "call player_forceSave;" \n
-                         "endLoadingScreen;"/*%FSM</STATEINIT""">*/;
+                         "call player_forceSave;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -1566,6 +1521,7 @@ class FSM
                         itemno = 58;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Gender_Selection'];};" \n
                          "endLoadingScreen;" \n
+						 "freshSpawn = 2;" \n
                          "" \n
                          "_gender = createDialog 'RscDisplayGenderSelect';" \n
                          "" \n
@@ -2018,7 +1974,6 @@ class FSM
                          "Dayz_logonTown = ""Wilderness"";" \n
                          "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
                          "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn { uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
-                         "dayzGearSave = true;" \n
                          "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n
                          "" \n
