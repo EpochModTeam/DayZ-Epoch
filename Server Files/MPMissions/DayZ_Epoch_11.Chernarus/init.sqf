@@ -194,7 +194,7 @@ if (!isDedicated) then {
 	
 	//Run The Player Monitor
 	//_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
-	_playerMonitor = [] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	 //STILL NEEDED FOR R3F
+	if (DZE_R3F_WEIGHT) then {execVM "\z\addons\dayz_code\external\R3F_Realism\R3F_Realism_Init.sqf";};
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";

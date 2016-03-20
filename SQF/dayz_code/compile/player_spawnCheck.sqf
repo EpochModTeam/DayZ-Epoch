@@ -107,7 +107,7 @@ diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(dayz_maxLocalZombi
 //Spawn Zeds & loot in buildings
 {
     _type = typeOf _x;
-    _config = configFile >> "CfgLoot" >> "Buildings" >> _type;
+    _config = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Buildings" >> _type} else {configFile >> "CfgLoot" >> "Buildings" >> _type};
     _canSpawn = isClass (_config);
 
     if (_canSpawn) then {

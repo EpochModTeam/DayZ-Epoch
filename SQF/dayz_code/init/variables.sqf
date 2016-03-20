@@ -717,7 +717,6 @@ if (!isDedicated) then {
 	if(isNil "DZE_R3F_WEIGHT") then {DZE_R3F_WEIGHT = true;};
 	autoRunActive = 0;
 	dayz_combat = 0;
-	dayz_PreviousTown = "Wilderness";
 	DZE_ActionInProgress = false;
 	DZE_AntiWallCounter = 0;
 	DZE_myHaloVehicle = objNull;

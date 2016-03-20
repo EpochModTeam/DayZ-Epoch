@@ -5,6 +5,7 @@ _messTimer = 0;
 _lastTemp = dayz_temperatur;
 _debug = getMarkerpos "respawn_west";
 _isPZombie = player isKindOf "PZombie_VB";
+_radTimer = 0;
 
 _timer = diag_tickTime;
 _timer1 = diag_tickTime;
@@ -16,15 +17,11 @@ _timer30 = diag_Ticktime;
 _timer150 = diag_ticktime;
 
 _forceHumanity = false;
-
 _runonce = false;
-
 _timerMonitor = diag_ticktime;
 
 player setVariable ["temperature",dayz_temperatur,true];
 player setVariable["friendlies",DZE_Friends,true];
-
-dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) +  (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
 
 [player,0] call player_humanityChange;
 
@@ -36,8 +33,6 @@ while {1 == 1} do {
 
 	//Initialize
 	_refObj = vehicle player;
-	_factor = 0.6;
-	_inVehicle = (_refObj != player);
 	_size = (sizeOf typeOf _refObj) * 0.6;
 	_vel = velocity player;
 	_speed = round((_vel distance [0,0,0]) * 3.5);
@@ -48,7 +43,7 @@ while {1 == 1} do {
 		player setUnitRank "PRIVATE";
 	};
 
-dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) + (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
+	dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) + (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
 	
 	//reset position
 	_randomSpot = true;
@@ -168,7 +163,7 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 	if (diag_ticktime - dayz_panicCooldown < 120) then {
 		_hunger = _hunger * 2;
 	};
-	dayz_hunger = dayz_hunger + (_hunger / 60); //60 Updated to 80
+	dayz_hunger = dayz_hunger + (_hunger / 70); //60 Updated to 80
 	dayz_hunger = (dayz_hunger min SleepFood) max 0;
 
 	if (dayz_hunger >= SleepFood) then {
@@ -182,10 +177,7 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 	if (_refObj == player) then {
 		_thirst = (_speed + 4) * 3;
 	};
-	if (!_inVehicle) then {
-		_thirst = (_speed + 4) * 3;
-	};
-	dayz_thirst = dayz_thirst + (_thirst / 85) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% and + 16.6% waterloss
+	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% and + 16.6% waterloss
 	dayz_thirst = (dayz_thirst min SleepWater) max 0;
 
 	if (dayz_thirst >= SleepWater) then {
@@ -225,7 +217,7 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 		//	Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then { //TeeChange
 			private "_listTalk";
-			_listTalk = _mylastPos nearEntities ["CAManBase",8]; //
+			_listTalk = _mylastPos nearEntities ["CAManBase",12];
 			{
 				if (_x getVariable["USEC_infected",false]) then {
 					_rnd = (random 1) * (((dayz_temperaturnormal - dayz_temperatur) * (100 /(dayz_temperaturnormal - dayz_temperaturmin)))/ 50);	//TeeChange
@@ -267,15 +259,15 @@ dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)
 
 		_radsound = "radzone1";
 		_bloodloss = 10;
-		if(_radTimer > 5 && _radTimer < 10) then {
+		if (_radTimer > 5 && _radTimer < 10) then {
 			_radsound = "radzone2";
 			_bloodloss = 20;
 		};
-		if(_radTimer > 10) then {
+		if (_radTimer > 10) then {
 			_radsound = "radzone3";
 			_bloodloss = 30;
 		};
-		if(_radTimer > 15) then {
+		if (_radTimer > 15) then {
 			_radsound = "radzone4";
 			_bloodloss = 50;
 		};
