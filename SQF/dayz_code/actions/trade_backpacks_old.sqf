@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_bos","_bag","_class","_started","_finished","_animState","_isMedic","_num_removed","_needed","_activatingPlayer","_buy_o_sell","_textPartIn","_textPartOut","_traderID"];
 //		   [part_out,part_in, qty_out, qty_in,];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -30,7 +30,7 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_105","PLAIN DOWN"];
 	 
 	[1,1] call dayz_HungerThirst;
 	// force animation 
@@ -65,7 +65,7 @@ if (_qty >= _qty_in) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_106","PLAIN DOWN"];
 	};
 
 	if (_finished) then {

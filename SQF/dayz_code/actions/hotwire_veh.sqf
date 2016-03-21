@@ -1,7 +1,7 @@
 private ["_vehicle","_removed"];
 _vehicle = _this select 3;
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_32") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_32","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
@@ -25,7 +25,7 @@ if (_removed == 1) then {
 			};
 		};
 	} else {
-		cutText [(localize "str_epoch_player_33") , "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_33","PLAIN DOWN"];
 	};
 };
 

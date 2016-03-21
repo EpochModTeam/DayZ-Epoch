@@ -1,11 +1,11 @@
 private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 // Test cannot lock while another player is nearby
 //_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-//if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
+//if(_playerNear) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_104","PLAIN DOWN"];};
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -25,7 +25,7 @@ if(_buy_o_sell == "sell") then {
 	_bos = 1;
 };
 
-cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
+cutText [localize "str_epoch_player_105","PLAIN DOWN"];
 
 [1,1] call dayz_HungerThirst;
 // force animation
@@ -60,7 +60,7 @@ if (!_finished) exitWith {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_106","PLAIN DOWN"];
 	DZE_ActionInProgress = false;
 };
 
@@ -219,7 +219,7 @@ if (_finished) then {
 						cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
 					};
 				} else {
-					cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
+					cutText [localize "str_epoch_player_245","PLAIN DOWN"];
 				};
 			};
 		};

@@ -10,7 +10,7 @@ _pondPos = 		[];
 _objectsWell = 	[];
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
+if (_onLadder) exitWith {cutText [localize "str_player_21","PLAIN DOWN"]};
 
 _hasbottleitem = _this in magazines player;
 
@@ -63,8 +63,8 @@ if (_canFill) then {
 		
 		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
 	} else {
-		cutText [(localize "str_player_02") , "PLAIN DOWN"];
+		cutText [localize "str_player_02","PLAIN DOWN"];
 	};
 } else {
-	cutText [(localize "str_player_20") , "PLAIN DOWN"];
+	cutText [localize "str_player_20","PLAIN DOWN"];
 };

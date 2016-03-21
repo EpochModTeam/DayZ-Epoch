@@ -4,7 +4,7 @@
 */
 private ["_location","_pos","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_needNear","_vehicle","_inVehicle","_requireplot","_objHDiff","_isLandFireDZ","_isTankTrap","_center","_buildables"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_40") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_40","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 _pos = [player] call FNC_GetPos;
 
@@ -36,9 +36,9 @@ call gear_ui_init;
 closeDialog 1;
 
 if (_isWater) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
-if (_inVehicle) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_42"), "PLAIN DOWN"];};
+if (_inVehicle) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_42","PLAIN DOWN"];};
 if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
-if (player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_43"), "PLAIN DOWN"];};
+if (player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_43","PLAIN DOWN"];};
 
 _item =	_this;
 
@@ -215,7 +215,7 @@ if (_hasrequireditem) then {
 
 	_position = getPosATL _object;
 
-	cutText [(localize "str_epoch_player_45"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_45","PLAIN DOWN"];
 
 	_objHDiff = 0;
 
@@ -541,7 +541,7 @@ if (_hasrequireditem) then {
 				};
 			} else {
 				deleteVehicle _tmpbuilt;
-				cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
+				cutText [localize "str_epoch_player_46","PLAIN DOWN"];
 			};
 
 		} else {
@@ -553,7 +553,7 @@ if (_hasrequireditem) then {
 
 			deleteVehicle _tmpbuilt;
 
-			cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
+			cutText [localize "str_epoch_player_46","PLAIN DOWN"];
 		};
 
 	} else {

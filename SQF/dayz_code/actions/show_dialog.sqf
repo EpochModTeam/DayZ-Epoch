@@ -1,8 +1,6 @@
 private ["_trader_data", "_dialog"];
 
-if (DZE_ActionInProgress) exitWith {
-	cutText [(localize "str_epoch_player_97") , "PLAIN DOWN"];
-};
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_97","PLAIN DOWN"];};
 
 _trader_data = (_this select 3);
 

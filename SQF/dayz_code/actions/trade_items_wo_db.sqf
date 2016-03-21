@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades","_humanityGain","_humanity"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 //_activatingPlayer = [player] call FNC_GetPlayerUID;
@@ -73,7 +73,7 @@ for "_x" from 1 to _total_trades do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_106","PLAIN DOWN"];
 	};
 
 	_qty = {_x == _part_in} count magazines player;

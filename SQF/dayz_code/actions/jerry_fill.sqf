@@ -1,6 +1,6 @@
 private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx","_displayName","_fuelCans"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_34"), "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_34","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_fillfuel;
@@ -65,7 +65,7 @@ _qty = count _fuelCans;
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_35") , "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_35","PLAIN DOWN"];
 		_abort = true;
 	};
 

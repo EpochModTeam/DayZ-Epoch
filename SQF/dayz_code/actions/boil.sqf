@@ -1,6 +1,6 @@
 private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_22") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_22","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterBottle" >> "displayName");

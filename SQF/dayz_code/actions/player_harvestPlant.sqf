@@ -5,7 +5,7 @@
 */
 private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_72") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_72","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 // allowed trees list move this later
@@ -122,12 +122,12 @@ if (count(_findNearestTree) >= 1) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_73"), "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_73","PLAIN DOWN"];
 	};
 
 	
 
 } else {
-	cutText [(localize "str_epoch_player_74"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_74","PLAIN DOWN"];
 };
 DZE_ActionInProgress = false;

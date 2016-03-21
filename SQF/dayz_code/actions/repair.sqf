@@ -1,5 +1,5 @@
 private["_id","_array","_vehicle","_part","_hitpoint","_type","_hasToolbox","_section","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed"];
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_92") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_92","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _id = _this select 2;

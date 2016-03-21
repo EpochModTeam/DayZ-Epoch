@@ -1,7 +1,7 @@
 private["_vehicle"];
 _vehicle = _this select 3;
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_37") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_37","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];

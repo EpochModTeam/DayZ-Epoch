@@ -9,10 +9,9 @@ _btnAbort = _display displayCtrl 104;
 _btnRespawn ctrlEnable false;
 _btnAbort ctrlEnable false;
 _btnAbortText = ctrlText _btnAbort;
-_timeOut = 0;
-_timeMax = diag_tickTime+10;
+_isPZombie = player isKindOf "PZombie_VB";
 
-if(r_fracture_legs && !r_player_dead) then {_btnRespawn ctrlEnable true;};
+if (r_fracture_legs) then {_btnRespawn ctrlEnable true;};
 
 dayz_lastCheckSave = time;
 //force gear save
@@ -20,38 +19,31 @@ if (time - dayz_lastCheckSave > 10) then {
 	call player_forceSave;
 };
 
-while {(!isNull _display) and !r_player_dead} do {
+while {(!isNull _display) && !r_player_dead} do {
 	_timeout = 30;
 	_timeout = player getVariable["combattimeout", 0];
-	_inCombat = if (_timeout >= diag_tickTime) then { true } else { false };
-	_playerCheck = if ({isPlayer _x} count (player nearEntities ["AllVehicles", 5]) > 1) then { true } else { false };
-	//_zedCheck = if (count (player nearEntities ["zZombie_Base", 10]) > 0) then { true } else { false };
+	_inCombat = if (_timeout >= diag_tickTime) then {true} else {false};
+	_playerCheck = if ({isPlayer _x} count (player nearEntities ["AllVehicles",5]) > 1) then {true} else {false};
+	_zedCheck = if ((count (player nearEntities ["zZombie_Base",10]) > 0) && !_isPZombie) then {true} else {false};
 
-	Switch true do {
+	switch true do {
 		case (_playerCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 30)", _btnAbortText];
 			cutText [localize "str_abort_playerclose", "PLAIN DOWN"];
 		};
-		case (isInTraderCity) : {
-			_btnAbort ctrlEnable false;
-			cutText [(localize "str_epoch_player_12"), "PLAIN DOWN"];
-			_sleep = 1;
-		};
-		/*case (_zedCheck) : {
+		case (_zedCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
 			cutText [localize "str_abort_zedsclose", "PLAIN DOWN"];
-		};*/
-		case (_inCombat and !_playerCheck) : {
+		};
+		case (_inCombat && !_zedCheck && !_playerCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, ceil (_timeout - diag_tickTime)];
 		};
-		case (_timeOut < _timeMax) : {
+		case (isInTraderCity) : {
 			_btnAbort ctrlEnable false;
-			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, (ceil ((_timeMax - diag_tickTime)*10)/10)];
-			cutText ["", "PLAIN DOWN"];	
-			_sleep = 0.1;
+			cutText [localize "str_epoch_player_12","PLAIN DOWN"];
 		};
 		default {
 			_btnAbort ctrlEnable true;
@@ -62,4 +54,3 @@ while {(!isNull _display) and !r_player_dead} do {
 };
 
 if (r_player_dead) exitWith {_btnAbort ctrlEnable true;};
-

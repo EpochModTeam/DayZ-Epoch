@@ -3,9 +3,10 @@ disableSerialization;
 _control = _this select 0;
 _button = _this select 1;
 _parent = findDisplay 106;
+_itemData = gearSlotData _control;
 
 if (carryClick) then {carryClick = false;};
-if (!DZE_SelfTransfuse && ((gearSlotData _control) in DZE_BloodBags)) exitWith {};
+if (!DZE_SelfTransfuse && {(_itemData == "ItemBloodbag") or (_itemData in DZE_typedBags)}) exitWith {};
 if (_button == 1) then {
 	private ["_conf","_name","_compile","_height","_item"];
 	_group = _parent displayCtrl 6902;

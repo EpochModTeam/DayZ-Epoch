@@ -1,6 +1,6 @@
 private ["_buy","_metals_conversion","_cancel"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 {player removeAction _x} count s_player_parts;s_player_parts = [];

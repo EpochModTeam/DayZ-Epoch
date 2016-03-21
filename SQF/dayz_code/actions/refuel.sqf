@@ -1,6 +1,6 @@
 private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_24","PLAIN DOWN"]};
 DZE_ActionInProgress = true;
 
 _vehicle = cursorTarget;

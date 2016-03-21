@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_configVeh","_nameText","_towTruck","_inTow"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_96","PLAIN DOWN"]};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_towing;
@@ -77,7 +77,7 @@ if(_inTow) then {
 		_towTruck setVariable ["DZEvehicleInTow", objNull, true];	
 	};
 } else {
-	cutText [(localize "str_epoch_player_102"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_102","PLAIN DOWN"];
 };
 DZE_ActionInProgress = false;
 s_player_towing = -1;

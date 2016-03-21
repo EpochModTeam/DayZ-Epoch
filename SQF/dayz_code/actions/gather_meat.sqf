@@ -1,6 +1,6 @@
 private ["_item", "_type", "_hasHarvested", "_config", "_knifeArray", "_PlayerNear", "_isListed", "_activeKnife", "_text", "_dis", "_sfx", "_sharpnessRemaining"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_29") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_29","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _item = _this select 3;

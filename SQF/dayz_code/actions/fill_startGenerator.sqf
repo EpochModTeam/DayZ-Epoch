@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_soundSource"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_24") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_24","PLAIN DOWN"]};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_fillgen;
@@ -19,7 +19,7 @@ r_doLoop = true;
 _started = false;
 _finished = false;
 
-cutText [(localize "str_epoch_player_25"), "PLAIN DOWN"];
+cutText [localize "str_epoch_player_25","PLAIN DOWN"];
 
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -46,7 +46,7 @@ if(!_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText [(localize "str_epoch_player_26") , "PLAIN DOWN"]
+	cutText [localize "str_epoch_player_26","PLAIN DOWN"];
 };
 
 if (_finished) then {
@@ -69,7 +69,7 @@ if (_finished) then {
 
 			_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-			cutText [(localize "str_epoch_player_28"), "PLAIN DOWN"];
+			cutText [localize "str_epoch_player_28","PLAIN DOWN"];
 		};
 	} else {
 	
@@ -82,7 +82,7 @@ if (_finished) then {
 
 		_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
-		cutText [(localize "str_epoch_player_28"), "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_28","PLAIN DOWN"];
 
 	};
 };

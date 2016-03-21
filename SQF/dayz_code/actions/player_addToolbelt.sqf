@@ -3,7 +3,7 @@ disableSerialization;
 _item = _this;
 _config = configFile >> "cfgWeapons" >> _item;
 _onBack = dayz_onBack in MeleeWeapons;
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_39") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_39","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;

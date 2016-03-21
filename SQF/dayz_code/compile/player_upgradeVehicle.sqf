@@ -4,13 +4,13 @@
 */
 private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_temp_removed_array","_countr","_objectID","_objectUID","_location","_dir","_objectCharacterID","_weapons","_magazines","_backpacks","_classname","_object","_holder","_objWpnTypes","_objWpnQty","_newclassname","_requirements","_upgrade","_vehicle","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_52") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "STR_EPOCH_PLAYER_52","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 // This is used to find correct upgrade based what upgrades was called allows multiple upgrades per vehicle.
 _upgrade = _this;
 
-if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_18"), "PLAIN DOWN"]};
+if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [localize "STR_EPOCH_ACTIONS_18","PLAIN DOWN"]};
 
 // look for nearest empty vehicle
 _findNearestVehicles = player nearEntities [["LandVehicle"],10];
@@ -113,7 +113,7 @@ if (_IsNearVehicle >= 1) then {
 					_objectUID	= _vehicle getVariable ["ObjectUID","0"];
 
 					if(_objectID == "0" && _objectUID == "0") then {
-						cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];
+						cutText [localize "str_epoch_player_50","PLAIN DOWN"];
 					}
 					else {
 						// Get position
@@ -128,7 +128,7 @@ if (_IsNearVehicle >= 1) then {
 						PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player];
 						publicVariableServer  "PVDZE_veh_Upgrade";
 
-						cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
+						cutText [localize "STR_EPOCH_VEHUP_SUCCESS","PLAIN DOWN"];
 						{player reveal _x;} count (player nearEntities [["LandVehicle"],10]);
 					};
 				}
@@ -144,15 +144,15 @@ if (_IsNearVehicle >= 1) then {
 			};
 		}
 		else {
-			cutText [(localize "str_epoch_player_82"), "PLAIN DOWN"];
+			cutText [localize "str_epoch_player_82","PLAIN DOWN"];
 		};
 	}
 	else {
-		cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_245","PLAIN DOWN"];
 	};
 }
 else {
-	cutText [(localize "STR_EPOCH_PLAYER_27"), "PLAIN DOWN"];
+	cutText [localize "STR_EPOCH_PLAYER_27","PLAIN DOWN"];
 };
 
 DZE_ActionInProgress = false;

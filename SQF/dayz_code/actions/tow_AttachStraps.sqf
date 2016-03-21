@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck","_towTruckSize","_allowedSize"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_96","PLAIN DOWN"]};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_towing;
@@ -98,7 +98,7 @@ if(_IsNearVehicle >= 1) then {
 
 
 } else {
-	cutText [(localize "str_epoch_player_27"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_27","PLAIN DOWN"];
 };
 DZE_ActionInProgress = false;
 s_player_towing = -1;

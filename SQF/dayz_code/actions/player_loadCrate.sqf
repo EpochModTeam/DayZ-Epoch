@@ -1,18 +1,18 @@
 private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_75") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_75","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _hasTool = 	"ItemCrowbar" in items player;
 if(!_hasTool) exitWith { 
-	cutText [(localize "str_epoch_player_76"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_76","PLAIN DOWN"];
 	DZE_ActionInProgress = false;
 };
 
 _item =     _this;
 _hasCrate = 	_item in magazines player;
 if (!_hasCrate) exitWith {
-	cutText [(localize "str_epoch_player_77"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_77","PLAIN DOWN"];
 	DZE_ActionInProgress = false;
 };
 
@@ -63,6 +63,6 @@ player reveal _b0x1337;
 
 player action ["Gear", _b0x1337];
 		
-cutText [(localize "str_epoch_player_78"), "PLAIN DOWN"];
+cutText [localize "str_epoch_player_78","PLAIN DOWN"];
 	
 DZE_ActionInProgress = false;

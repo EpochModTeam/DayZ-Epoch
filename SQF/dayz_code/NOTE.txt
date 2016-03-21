@@ -1,19 +1,9 @@
 NEW VAR DZE_HeartBeat
 USE TO ENABLE HEARTBEAT SOUND WHEN LOOKING AT BANDIT PLAYER (less than -5000 humanity), DISABLED BY DEFAULT
 
-NEW VAR DZE_UseBloodTypes
-DZE_UseBloodTypes, OFF by default - Enables blood type system, and disables universal bloodbags. you can readily turn this system off and on
-
-
 player_updateGui.sqf
 
-DZE_BloodBags NEEDED ARRAY OF ALL BLOOD BAGS
-Create switchable blood system with variable.
-Convert (if old system) to ItemBloodbag
-DZE_UseBloodTypes
-
-bloodBagANEG bloodBagAPOS bloodBagBNEG bloodBagBPOS bloodBagONEG bloodBagOPOS
-wholeBloodBagANEG wholeBloodBagAPOS wholeBloodBagBNEG wholeBloodBagBPOS wholeBloodBagONEG wholeBloodBagOPOS
+Convert traders + loot (if old system) to ItemBloodbag
 
 REMOVE TOOL BREAKING, IT'S STUPID
 

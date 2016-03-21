@@ -2,10 +2,9 @@ private ["_charID","_newmodel","_old","_updates","_humanity","_medical","_worlds
 //_playerUID = _this select 0;
 _charID = _this select 1;
 _model = _this select 2;
-
 _old = player;
-player allowDamage false;
 
+player allowDamage false;
 player removeEventHandler ["FiredNear",eh_player_killed];
 player removeEventHandler ["HandleDamage",mydamage_eh1];
 player removeEventHandler ["Killed",mydamage_eh3];
@@ -23,8 +22,8 @@ _zombieKills = player getVariable ["zombieKills",0];
 _headShots = player getVariable ["headShots",0];
 _humanKills = player getVariable ["humanKills",0];
 _banditKills = player getVariable ["banditKills",0];
-
 _achievements = player getVariable ["Achievements",[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
+_friendlies = player getVariable ["friendlies",[]];
 
 //Switch
 _switch = _model spawn player_switchModel;
@@ -35,7 +34,7 @@ waitUntil { scriptDone _switch };
 //set medical values
 if (count _medical > 0) then {
 	player setVariable["USEC_isDead",(_medical select 0),true];
-	player setVariable["NORRN_unconscious", (_medical select 1), true];
+	player setVariable["NORRN_unconscious",(_medical select 1), true];
 	player setVariable["USEC_infected",(_medical select 2),true];
 	player setVariable["USEC_injured",(_medical select 3),true];
 	player setVariable["USEC_inPain",(_medical select 4),true];
@@ -43,7 +42,6 @@ if (count _medical > 0) then {
 	player setVariable["USEC_lowBlood",(_medical select 6),true];
 	player setVariable["USEC_BloodQty",(_medical select 7),true];
 	player setVariable["unconsciousTime",(_medical select 10),true];
-
 	player setVariable["blood_type",(_medical select 11),true];
 	player setVariable["rh_factor",(_medical select 12),true];
 	player setVariable["messing",(_medical select 13),true];
@@ -57,13 +55,12 @@ if (count _medical > 0) then {
 		publicVariable "PVDZ_hlt_Bleed";
 	} forEach (_medical select 8);
 
-
 	//Add fractures
-	_fractures = (_medical select 9);
+	_fractures = _medical select 9;
 //	player setVariable ["hit_legs",(_fractures select 0),true];
 //	player setVariable ["hit_hands",(_fractures select 1),true];
-	[player,"legs", (_fractures select 0)] call object_setHit;
-	[player,"hands", (_fractures select 1)] call object_setHit;
+	[player,"legs",(_fractures select 0)] call object_setHit;
+	[player,"hands",(_fractures select 1)] call object_setHit;
 } else {
 	//Reset Fractures
 	player setVariable ["hit_legs",0,true];
@@ -71,7 +68,6 @@ if (count _medical > 0) then {
 	player setVariable ["USEC_injured",false,true];
 	player setVariable ["USEC_inPain",false,true];
 };
-
 
 //General Stats
 player setVariable["humanity",_humanity,true];
@@ -82,25 +78,19 @@ player setVariable["banditKills",_banditKills,true];
 player setVariable["characterID",_charID,true];
 player setVariable["worldspace",_worldspace];
 player setVariable["Achievements",_achievements];
-player setVariable["CharacterID",_charID,true];
-player setVariable["worldspace",_worldspace,true];
 player setVariable["friendlies",_friendlies,true];
-player setVariable["tagList",_tagList,true];
+
 PVDZ_serverStoreVar = [player,"Achievements",_achievements];
 publicVariableServer "PVDZ_serverStoreVar";
 
 call dayz_resetSelfActions;
-
-eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;} ];
-
+eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;}];
 [player] call fnc_usec_damageHandle;
 player allowDamage true;
 
 player addWeapon "Loot";
-
 uiSleep 0.1;
-//melee check
 call dayz_meleeMagazineCheck;
 
 uiSleep 0.1;
-if !(isNull _old) then {deleteVehicle _old;}; 
+if !(isNull _old) then {deleteVehicle _old;};

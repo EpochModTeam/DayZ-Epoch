@@ -4,7 +4,7 @@
 */
 private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_48") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_48","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_downgrade_build;
@@ -60,7 +60,7 @@ _obj = _this select 3;
 // Current charID
 _objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
-if(DZE_Lock_Door != _objectCharacterID) exitWith {  DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_49") , "PLAIN DOWN"]; };
+if (DZE_Lock_Door != _objectCharacterID) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_49","PLAIN DOWN"];};
 
 // Find objectID
 _objectID 	= _obj getVariable ["ObjectID","0"];
@@ -68,7 +68,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];};
+if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; cutText [localize "str_epoch_player_50","PLAIN DOWN"];};
 
 // Get classname
 _classname = typeOf _obj;
@@ -155,7 +155,7 @@ if ((count _upgrade) > 0) then {
 	};
 
 } else {
-	cutText [(localize "str_epoch_player_51"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_51","PLAIN DOWN"];
 };
 
 DZE_ActionInProgress = false;

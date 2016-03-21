@@ -45,12 +45,12 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 				if (isNull group _x) then {
 					_group = _x;
 				};
-				_isLocal = (local _x);
+				_isLocal = local _x;
 				_x reveal [_projectile,4];
 				_localtargets = _group getVariable ["localtargets",[]];
 				_remotetargets = _group getVariable ["remotetargets",[]];
 				_targets = _localtargets + _remotetargets;
-				if (!(_projectile in _targets)) then {
+				if !(_projectile in _targets) then {
 					switch (_isLocal) do {
 						case false: {
 							_remotetargets set [count _remotetargets,_projectile];
@@ -64,31 +64,28 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 				};
 			} forEach (_pos nearEntities ["zZombie_Base",50]);
 		} else {
-			while { alive _projectile } do {
+			while {alive _projectile} do {
 				_pos = getPosATL _projectile;
 				uiSleep 0.01;
 			};
 
 			{
 				_x setVariable ["myDest",_pos]; // removed networked var.  targets should be enough
-			} forEach (_pos nearEntities ["zZombie_Base",50]);
+			} count (_pos nearEntities ["zZombie_Base",50]);
 		};
 	};
 } else {
-
-	[_unit,_distance,true,(getPosATL player)] call player_alertZombies;
+	[_unit,_distance,true,getPosATL player] call player_alertZombies;
 
 	//Check if need to place arrow
 	if (_ammo isKindOf "Bolt") then {
 		[_this] spawn player_crossbowBolt;
 	};
 	if (_ammo isKindOf "GrenadeHand") then {
-
 		if (_ammo isKindOf "ThrownObjects") then {
 			[_this] spawn player_throwObject;
 		};
 		if (_ammo isKindOf "RoadFlare") then {
-			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
 			[_projectile,0] spawn object_roadFlare;
 			PVDZ_obj_RoadFlare = [_projectile,0];

@@ -5,7 +5,7 @@
 private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_removed"];
 //check if can pitch here
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_108") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_108","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 //disableSerialization;
@@ -52,7 +52,7 @@ _counter = 0;
 while {_isOk} do {
 	
 	if(_counter == 0) then {
-		cutText [(localize "str_epoch_player_109"), "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_109","PLAIN DOWN"];
 		uiSleep 5; 
 		_location1 = getPosATL player;
 		uiSleep 5;
@@ -60,7 +60,7 @@ while {_isOk} do {
 	
 		if(_location1 distance _location2 < 0.1) exitWith {
 			
-			cutText [(localize "str_epoch_player_109"), "PLAIN DOWN"];
+			cutText [localize "str_epoch_player_109","PLAIN DOWN"];
 			_location3 = getPosATL player;
 			uiSleep 5;
 			_location4 = getPosATL player;
@@ -167,11 +167,11 @@ if(!_cancel) then {
 		};
 	
 	} else {
-		cutText [(localize "str_epoch_player_110"), "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_110","PLAIN DOWN"];
 	};
 
 } else {
-	cutText [(localize "str_epoch_player_111"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_111","PLAIN DOWN"];
 };
 
 DZE_ActionInProgress = false;

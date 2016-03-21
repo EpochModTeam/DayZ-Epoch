@@ -1,7 +1,7 @@
 /*
 [_obj] call player_packTent;
 */
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_13") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_13","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _obj = _this;
@@ -20,9 +20,9 @@ s_player_packtent = -1;
 player removeAction s_player_packtentinfected;
 s_player_packtentinfected = -1;
 
-if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packtent = -1; cutText [(localize "str_epoch_player_14"), "PLAIN DOWN"];};
+if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packtent = -1; cutText [localize "str_epoch_player_14","PLAIN DOWN"];};
 
-if(_ownerID != dayz_characterID) exitWith {DZE_ActionInProgress = false; s_player_packtent = -1; cutText [localize "str_fail_tent_pack", "PLAIN DOWN"];};
+if (_ownerID != dayz_characterID) exitWith {DZE_ActionInProgress = false; s_player_packtent = -1; cutText [localize "str_fail_tent_pack", "PLAIN DOWN"];};
 
 _alreadyPacking = _obj getVariable["packing",0];
 
@@ -31,7 +31,7 @@ if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_packt
 _campitems = ["IC_DomeTent","IC_Tent"];
 if (_ownerID == dayz_characterID or (typeOf _obj in _campitems)) then { _pickup = true; };
 
-if(_pickup) then {
+if (_pickup) then {
 	_obj setVariable["packing",1];
 
 	_dir = direction _obj;

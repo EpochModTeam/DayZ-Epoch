@@ -39,31 +39,31 @@ if(_activated) then {
 	// this method is said to be faster than switch, lets try it.
 	call {
 		if (DZE_AntiWallCounter == DZE_AntiWallLimit) exitWith {
-			cutText [(localize "str_epoch_player_9"), "PLAIN DOWN"];
+			cutText [localize "str_epoch_player_9","PLAIN DOWN"];
 			_id = [player,"crushed"] spawn player_death;
 		};
 		if ((_vehicle emptyPositions "driver") > 0) exitWith {
-			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
+			cutText [localize "STR_EPOCH_ACTIONS_15","PLAIN DOWN"];
 			player moveInDriver _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "gunner") > 0) exitWith {
-			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
+			cutText [localize "STR_EPOCH_ACTIONS_15","PLAIN DOWN"];
 			player moveInGunner _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "commander") > 0) exitWith {
-			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
+			cutText [localize "STR_EPOCH_ACTIONS_15","PLAIN DOWN"];
 			player moveInCommander _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		if ((_vehicle emptyPositions "cargo") > 0) exitWith {
-			cutText [(localize "STR_EPOCH_ACTIONS_15"), "PLAIN DOWN"];
+			cutText [localize "STR_EPOCH_ACTIONS_15","PLAIN DOWN"];
 			player moveInCargo _vehicle;
 			DZE_AntiWallCounter = DZE_AntiWallCounter + 1;
 		};
 		// kill player if none of the above are matched
-		cutText [(localize "str_epoch_player_9"), "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_9","PLAIN DOWN"];
 		_id = [player,"crushed"] spawn player_death;
 	};
 	

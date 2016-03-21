@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_needed","_activatingPlayer","_textPartIn","_textPartOut","_started","_finished","_animState","_isMedic","_removed"];
 // [part_out,part_in, qty_out, qty_in,"buy"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -73,7 +73,7 @@ if (_abort) exitWith {
 	DZE_ActionInProgress = false;
 };
 
-cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
+cutText [localize "str_epoch_player_105","PLAIN DOWN"];
 
 // force animation
 player playActionNow "Medic";
@@ -109,7 +109,7 @@ if (!_finished) exitWith {
 		player playActionNow "stop";
 	};
 	DZE_ActionInProgress = false;
-	cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_106","PLAIN DOWN"];
 };
 
 if (_finished) then {

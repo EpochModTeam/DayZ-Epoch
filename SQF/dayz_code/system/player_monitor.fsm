@@ -627,7 +627,6 @@ class FSM
                          "player allowDamage false;" \n
                          "_lastAte = _survival select 1;" \n
                          "_lastDrank = _survival select 2;" \n
-                         "_typedBags = [""bloodBagANEG"", ""bloodBagAPOS"", ""bloodBagBNEG"", ""bloodBagBPOS"", ""bloodBagONEG"", ""bloodBagOPOS"",""wholeBloodBagANEG"", ""wholeBloodBagAPOS"", ""wholeBloodBagBNEG"", ""wholeBloodBagBPOS"", ""wholeBloodBagONEG"", ""wholeBloodBagOPOS""];" \n
                          "" \n
                          "_usedFood = 0;" \n
                          "_usedWater = 0;" \n
@@ -679,7 +678,7 @@ class FSM
                          "				if (DZE_UseBloodTypes) then {" \n
                          "					if (_item == ""ItemBloodbag"") then { _item = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
                          "				} else {" \n
-                         "					if (_item in _typedBags) then {_item = ""ItemBloodbag""};" \n
+                         "					if (_item in DZE_typedBags) then {_item = ""ItemBloodbag""};" \n
                          "				};" \n
                          "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
                          "				_countr = _countr + 1;" \n

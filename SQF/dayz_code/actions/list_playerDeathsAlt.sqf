@@ -11,6 +11,6 @@ if((count PVDZE_plr_DeathBResult) > 0) then {
 	// load death message board ui
 	call EpochDeathBoardLoad;
 } else {
-	cutText [(localize "str_epoch_player_36"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_36","PLAIN DOWN"];
 	PVDZE_plr_DeathBResult = nil;
 };

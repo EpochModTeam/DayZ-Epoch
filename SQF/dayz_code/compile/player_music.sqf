@@ -1,6 +1,5 @@
-private ["_sound","_num","_length","_pause"];
 while {!r_player_dead} do {
-	_num = floor(random 37);
+	_num = round(random 37);
 	_sound = "z_suspense_" + str(_num);
 	_length = getNumber(configFile >> "cfgMusic" >> _sound >> "Duration");
 	_pause = ((random 5) + 2) + _length;

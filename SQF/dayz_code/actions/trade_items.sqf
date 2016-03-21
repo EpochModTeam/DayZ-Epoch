@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_activatingPlayer","_traderID","_done"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"]};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -30,7 +30,7 @@ while {r_autoTrade} do {
 
 	// check if current magazine count is greater than 20
 
-	if ((count (magazines player)) > 20) exitWith { cutText [(localize "str_player_24"), "PLAIN DOWN"]; r_autoTrade = false};
+	if ((count (magazines player)) > 20) exitWith {cutText [localize "str_player_24","PLAIN DOWN"]; r_autoTrade = false};
 	
 	_canAfford = false;
 	if(_bos == 1) then {
@@ -59,7 +59,7 @@ while {r_autoTrade} do {
 		r_autoTrade = false
 	};
 	
-	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
+	cutText [localize "str_epoch_player_105","PLAIN DOWN"];
 
 	[1,1] call dayz_HungerThirst;
 	player playActionNow "Medic";
@@ -98,7 +98,7 @@ while {r_autoTrade} do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+		cutText [localize "str_epoch_player_106","PLAIN DOWN"];
 	};
 
 	if (_finished) then {
