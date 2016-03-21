@@ -14,7 +14,7 @@ _body = player;
 _playerID = [player] call FNC_GetPlayerUID;
 disableUserInput true;
 
-//add weapon on back to player...
+//add weapon on back to player
 if (dayz_onBack != "") then {
 	//Add weapon on back to body.
 	_body addWeapon dayz_onBack;
@@ -63,7 +63,7 @@ if (count _array > 0) then {
 		_humanityHit = 0;
 
 		if (!_punishment) then {
-			//i'm "not guilty" - kill me and be punished
+			//I'm "not guilty" - kill me and be punished
 			_myKills = ((player getVariable ["humanKills",0]) / 3) * 1500;
 			// how many non bandit players have I (the dead player) killed?
 			// punish my killer 2000 for shooting a surivor
@@ -78,30 +78,6 @@ if (count _array > 0) then {
 			_killsV = _source getVariable ["banditKills",0];
 			_source setVariable ["banditKills",(_killsV + 1),true];
 		};
-		// START Musty Achievement
-		_killer = _source;			// who did the killing
-		_killedachievementID = -1;
-		if (_killer distance _body > 200) then {
-			_killedachievementID = 15;	// steady aim
-			achievement_SteadyAim = true;
-		};
-		if (_killer distance _body > 500) then {
-			_killedachievementID = 16;	// marksman
-			achievement_Marksman = true;
-		};
-		if (_killer distance _body > 1000) then {
-			_killedachievementID = 17;	// sniper
-			achievement_Sniper = true;
-		};	
-		if (_killedachievementID > -1) then {
-			if (dayz_playerAchievements select _killedachievementID < 1) then {
-				_killerID = _killer getVariable["characterID",0];	// get his characterID
-				dayz_playerAchievements set [_killedachievementID,1];
-				achievement = [_killedachievementID, _killer, _killerID];		// publish event to server
-				publicVariableServer "achievement";
-			};
-		};
-	// END Musty Achievement
 	};
 	_body setVariable ["deathType",_method,true];
 };
@@ -115,7 +91,7 @@ terminate dayz_monitor1;
 //disableUserInput false;
 r_player_dead = true;
 
-//Player is Dead!
+//Player is dead!
 3 fadeSound 0;
 uiSleep 1;
 
