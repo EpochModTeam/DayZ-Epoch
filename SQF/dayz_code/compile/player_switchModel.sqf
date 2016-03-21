@@ -118,10 +118,10 @@ if(_primweapon !=  (primaryWeapon _newUnit)) then {
 	_newUnit addWeapon _primweapon;		
 };
 if (_primweapon == "MeleeCrowbar") then {
-	_newUnit addMagazine 'crowbar_swing';
+	_newUnit addMagazine 'Crowbar_Swing';
 };
 if (_primweapon == "MeleeSledge") then {
-	_newUnit addMagazine 'sledge_swing';
+	_newUnit addMagazine 'Sledge_Swing';
 };
 if (_primweapon == "MeleeHatchet_DZE") then {
 	_newUnit addMagazine 'Hatchet_Swing';

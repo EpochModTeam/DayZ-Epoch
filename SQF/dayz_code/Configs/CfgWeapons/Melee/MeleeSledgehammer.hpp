@@ -10,7 +10,7 @@ class MeleeSledge: MeleeWeapon
 		droppeditem= "ItemSledge";
 		magazines[]=
 		{
-			"sledge_swing"
+			"Sledge_Swing"
 		};
 		handAnim[]=
 		{

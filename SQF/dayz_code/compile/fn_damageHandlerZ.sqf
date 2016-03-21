@@ -9,7 +9,7 @@ _damage = _this select 2;
 _hitter = _this select 3;
 _projectile = _this select 4;
 
-_meleeAmmo = ["Hatchet_Swing_Ammo","Sledge_Swing_Ammo","Machete_Swing_Ammo","Crowbar_Swing_Ammo","Bat_Swing_Ammo","BatBarbed_Swing_Ammo","Fishing_Swing_Ammo","BatNailed_Swing_Ammo"];
+_meleeAmmo = ["Hatchet_Swing_Ammo","Machete_Swing_Ammo","Crowbar_Swing_Ammo","Bat_Swing_Ammo","BatBarbed_Swing_Ammo","Fishing_Swing_Ammo","BatNailed_Swing_Ammo","Sledge_Swing_Ammo"];
 
 if (_projectile in _meleeAmmo) then {
 	_damage = _damage * 10;

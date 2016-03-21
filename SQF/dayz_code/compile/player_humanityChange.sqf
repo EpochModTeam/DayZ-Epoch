@@ -10,7 +10,7 @@ if (_object == player) then {
 	player setVariable["humanity",_humanity,true];
 	if (_change < 0) then { //non-bandit player can be "punished" in next "_wait" seconds w/o loosing humanity
 		if ((_humanity > -2000) and (_wait > 0)) then {
-			player setVariable ["freeTarget",true,true];
+//			player setVariable ["freeTarget",true,true];
 			player setVariable ["FTcounter",((player getVariable ["FTcounter",0]) + _wait)];
 			[_wait] spawn {
 				private ["_endtime","_wait"];
@@ -20,7 +20,7 @@ if (_object == player) then {
 				player setVariable ["FTcounter",((player getVariable ["FTcounter",0]) - _wait)];
 				if ((player getVariable ["FTcounter",0]) <= 0) then {
 					player setVariable ["FTcounter",0];
-					player setVariable ["freeTarget",false,true];
+//					player setVariable ["freeTarget",false,true];
 				};
 			};
 		};

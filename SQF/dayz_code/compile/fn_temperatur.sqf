@@ -24,11 +24,11 @@ _looptime = _this;
 //All Values can be seen as x of 100: 100 / x = minutes from min temperetaure to max temperature (without other effects)
 
 //Positive effects
-	_vehicle_factor		=	4;
+	_vehicle_factor		=	2;
 	_fire_factor		=	15;	
-	_moving_factor 		=  	7;
-	_building_factor 	=  	7;
-	_sun_factor			= 	4;
+	_moving_factor 		=  	2.1;
+	_building_factor 	=  	1.5;
+	_sun_factor			= 	3;
 	
 //Negative effects
 	_water_factor		= 	8;
@@ -60,7 +60,6 @@ if((vehicle player) != player) then {
 	//diag_log format["Moving - %1",_difference];
 
 //fire
-private ["_fireplaces"];
 _pPos = [player] call FNC_GetPos;
 _fireplaces = nearestObjects [_pPos, ["flamable_DZ","Land_Fire","Land_Campfire"], 8];
 if(({inflamed _x} count _fireplaces) > 0 && !_isinvehicle ) then {

@@ -47,7 +47,7 @@ if ((_item in ["MeleeHatchet_DZE","MeleeCrowbar","MeleeMachete","MeleeFishingPol
 };
 
 //Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
-{player removeMagazines _x} forEach ["Hatchet_Swing","sledge_swing","Crowbar_Swing","Machete_Swing","Fishing_Swing"];
+{player removeMagazines _x} forEach ["Hatchet_Swing","Sledge_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing"];
 
 _isOk = [player,_config2] call BIS_fnc_invAdd;
 if (_isOk) then {

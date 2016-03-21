@@ -1485,7 +1485,7 @@ class CfgWeight
 		{
 			weight = 0;
 		};
-		class sledge_swing
+		class Sledge_Swing
 		{
 			weight = 0;
 		};

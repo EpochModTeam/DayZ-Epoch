@@ -13,6 +13,7 @@
 		- vehicle_handleKilled -->  fnc_veh_handleKilled
 	- Duplicate global variables have been renamed:
 		- dayz_updateObjects --> DayZ_GearedObjects
+		- freeTarget --> OpenTarget
 	- Duplicate public variables have been renamed:
 		- dayzPlayerLogin --> PVCDZ_plr_Login
 		- dayzPlayerLogin2 --> PVCDZ_plr_Login2

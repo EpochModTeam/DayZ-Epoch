@@ -5,8 +5,6 @@ NEW VAR DZE_UseBloodTypes
 DZE_UseBloodTypes, OFF by default - Enables blood type system, and disables universal bloodbags. you can readily turn this system off and on
 
 
-
-fn_selfActions.sqf
 player_updateGui.sqf
 
 DZE_BloodBags NEEDED ARRAY OF ALL BLOOD BAGS
@@ -22,15 +20,9 @@ REMOVE TOOL BREAKING, IT'S STUPID
 	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
 dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
-******REPLACE ALL PVCDZ_ AND PVDZ_ with PVCDZE/PVDZE_
-
 trap_monitor.fsm is no more!
 
 NEW FNC PVDZE_hlt_Bleed -- THATS AN L change it to an I
-
-player getVariable ["OpenTarget",false]; CHANGE TO 
-player getVariable ["freeTarget",false];
-
 
 ////////////////////////////////////////
 SELF ACTIONS VARIABLES

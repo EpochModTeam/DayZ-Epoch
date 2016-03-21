@@ -1,4 +1,3 @@
-
 private ["_scalePose","_scaleMvmt","_scaleLight","_initial"];
 _vel = velocity (vehicle player);
 _speed = (_vel distance [0,0,0]);
@@ -29,23 +28,6 @@ if (["pknl",_anim] call fnc_inString) then {
 if (_anim4 == "aswm") then {
 	_scaleMvmt = 0.3;
 	dayz_isSwimming = true;
-
-	// if surface is not water abort 
-	_isWater = surfaceIsWater _pos;
-	if(!_isWater) then {
-
-		// Stops swimming in ground
-		if (vehicle player == player) then {
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
-		};
-		// This sleep was much needed
-		uiSleep 5;
-
-		dayz_isSwimming = false;
-	};
-	
-
 } else {
 	dayz_isSwimming = false;
 };
@@ -60,7 +42,6 @@ _scaleLight = (
 	- (fog * 0.5));		//remove for fog state
 
 dayz_scaleLight = _scaleLight;
-
 
 _scaleSound = (1
 	- (rain * 0.3) //remove for rain state
@@ -144,6 +125,4 @@ _audial = round(_speed * dayz_surfaceNoise * _scaleMvmt * _scaleSound);
 if ((_audial > DAYZ_disAudial) or ((time - dayz_firedCooldown) > 0.3)) then {
 	DAYZ_disAudial = _audial;
 };
-
-
 DAYZ_disVisual = (round((_initial + (_speed * 3)) * _scalePose * _scaleLight)) * 1.5;

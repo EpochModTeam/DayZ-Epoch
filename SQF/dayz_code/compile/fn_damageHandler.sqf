@@ -33,7 +33,6 @@ if (_unit == player) then
         if ((_source != player) and _isPlayer) then
 		{
 			_isBandit = (player getVariable["humanity",0]) <= -5000;
-			_isPZombie = player isKindOf "PZombie_VB";
 			//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
 			
 			//if player is not free to shoot at inform server that _source shot at player
@@ -50,22 +49,22 @@ if (_unit == player) then
 			// - Accidental Murder - \\  When wearing the garb of a non-civilian you are taking your life in your own hands
 			// Attackers humanity should not be punished for killing a survivor who has shrouded his identity in military garb.
 
-            _punishment = _isBandit || {player getVariable ["OpenTarget",false]} && {!_isPZombie};
+            _punishment = 
+				((_isBandit || 
+				{player getVariable ["OpenTarget",false]}) &&
+				{!_isPZombie});
             _humanityHit = 0;
 
             if (!_punishment) then {
-                //_myKills =  200 - (((player getVariable ["humanKills",0]) / 3) * 150);
+                _myKills =  200 - (((player getVariable ["humanKills",0]) / 3) * 150);
                 // how many non bandit players have I (the shot/damaged player) killed?
                 // punish my killer 200 for shooting a surivor
                 // but subtract 50 for each survivor I've murdered
-                //_humanityHit = -(_myKills * _damage);
-                    //if (_humanityHit < -2000) then {
-                    //    _humanityHit = -2000;
-                    //};
+                _humanityHit = -(_myKills * _damage);
+                    if (_humanityHit < -800) then {
+                        _humanityHit = -800;
+                    };
                     // In the case of outrageous damage (crashes, explosions, desync repeated headshots); cap the limit on humanity lost. 
-				//Process Morality Hit
-				_myKills = 0 max (1 - (player getVariable ["humanKills",0]) / 5);
-				_humanityHit = -100 * _myKills * _damage;
 
                 [_source,_humanityHit] spawn {  
                     private ["_source","_humanityHit"];
@@ -85,9 +84,9 @@ if (_unit == player) then
 				_unit = _this select 0;
 				cutText [localize "str_player_tranquilized", "PLAIN DOWN"]; 
 				//systemChat format ["YOU HAVE BEEN TRANQUILISED"];
-				//uiSleep 2; 
+				//uiSleep 2;
 				// 0 fadeSound 0.05;
-				//uiSleep 5; 
+				//uiSleep 5;
 				[_unit,0.01] call fnc_usec_damageUnconscious;
 				_unit setVariable ["NORRN_unconscious", true, true];
 				r_player_timeout = round(random 60);
@@ -99,7 +98,7 @@ if (_unit == player) then
 		
 		if (_damage > 0.4) then {
 			//Melee knockout system
-			if ((_isHeadHit) and (_ammo in ["Sledge_Swing_Ammo","Crowbar_Swing_Ammo","Bat_Swing_Ammo"])) then {
+			if ((_isHeadHit) and (_ammo in ["Crowbar_Swing_Ammo","Bat_Swing_Ammo","Sledge_Swing_Ammo"])) then {
 				[_unit] spawn {
 					 _unit = _this select 0;
 					cutText ["you have been knocked out", "PLAIN DOWN"]; 
@@ -182,7 +181,7 @@ if (_damage > 0.4) then {
     };
     if (_unit == player) then {
         //diag_log ("DAMAGE: player hit by " + (typeOf _source) + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale) + " Conscious " + str (!_unconscious));
-		//diag_log format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled to %5, Conscious %6",(typeOf _source),_hit,if (_ammo == "") then { "" } else { _ammo },(str(_damage)),(str(_damage * _scale)),(str (!_unconscious))];
+		diag_log format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled to %5, Conscious %6",(typeOf _source),_hit,if (_ammo == "") then { "" } else { _ammo },(str(_damage)),(str(_damage * _scale)),(str (!_unconscious))];
         r_player_blood = r_player_blood - (_damage * _scale);
     };
 };
@@ -277,7 +276,7 @@ if (_damage > 0.4) then {
 
     if (_ammo == "zombie") then {
     
-        if(!_isHit and _isbleeding && !_isPZombie) then {
+        if (!_isHit && _isbleeding && !_isPZombie) then {
             //Create Wound
             _unit setVariable["hit_"+_wound,true,true];
             

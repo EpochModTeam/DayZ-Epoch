@@ -16,16 +16,11 @@ dayz_firedCooldown = time;
 dayz_combat = 1;
 
 if (_ammo isKindOf "Melee") exitWith {
-	if(!(_ammo isKindOf "Chainsaw_Swing_Ammo")) then {
-		_unit playActionNow "GestureSwing";
-		["Working",0,[0,1,1,0]] call dayz_NutritionSystem;
-	};
-	// harvest wood check
-	_this call player_harvest;
 	// Added Nutrition-Factor for work
 	//[Type,Blood[Calories,Hunger,Thrist,Temp]
-	//["Working",0,[0,1,1,0]] call dayz_NutritionSystem;
-	//_unit playActionNow "GestureSwing";
+	["Working",0,[0,3,5,0]] call dayz_NutritionSystem;
+	if !(_ammo isKindOf "Chainsaw_Swing_Ammo") then {_unit playActionNow "GestureSwing";};
+	_this call player_harvest; // harvest wood check
 };
 
 if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or (_ammo isKindOf "G_40mm_HE")) then {
@@ -44,8 +39,6 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 				_pos = getPosATL _projectile;
 				uiSleep 0.01;
 			};
-
-			_listTalk = _pos nearEntities ["zZombie_Base",50];
 
 			{
 				_group = group _x;
@@ -69,19 +62,16 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 						};
 					};
 				};
-			} forEach _listTalk;
-			
+			} forEach (_pos nearEntities ["zZombie_Base",50]);
 		} else {
 			while { alive _projectile } do {
 				_pos = getPosATL _projectile;
 				uiSleep 0.01;
 			};
 
-			_listTalk = _pos nearEntities ["zZombie_Base",50];
-
 			{
 				_x setVariable ["myDest",_pos]; // removed networked var.  targets should be enough
-			} forEach _listTalk;
+			} forEach (_pos nearEntities ["zZombie_Base",50]);
 		};
 	};
 } else {

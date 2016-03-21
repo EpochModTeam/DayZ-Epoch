@@ -46,7 +46,7 @@ class Fishing_Swing : Melee_Swing
 	ammo = "Fishing_Swing_Ammo";
 };
 
-class sledge_swing : Melee_Swing {
+class Sledge_Swing : Melee_Swing {
 	displayName = "Sledge";
 	displayNameMagazine = "Sledge";
 	shortNameMagazine = "Sledge";
