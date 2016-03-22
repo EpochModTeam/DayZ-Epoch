@@ -302,15 +302,6 @@
 			<French>Le pliage de la tente est déjà en cours.</French>
 			<Czech>Balení stanu již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_14">
-			<English>Tent not setup yet.</English>
-			<German>Zeltaufbau noch nicht möglich.</German>
-			<Russian>Палатка ещё не установлена.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Tent is nog niet opgezet.</Dutch>
-			<French>La tente n'est pas encore installée.</French>
-			<Czech>Stan není ještě postaven.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_15">
 			<English>That is already being packed.</English>
 			<German>Das ist schon gepackt.</German>
@@ -328,15 +319,6 @@
 			<Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
 			<French>Impossible d'empaqueter lorsque d'autres joueurs sont proches.</French>
 			<Czech>Nelze zabalit, jestliže je jiný hráč poblíž.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_17">
-			<English>can't count magazines!</English>
-			<German>Magazine können nicht gezählt werden!</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<Dutch>kan de magazijnen niet tellen</Dutch>
-			<French>Ne peut pas compter les munitions!</French>
-			<Czech>nelze spočítat zásoby</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_18">
 			<English>You must have RawMeat</English>

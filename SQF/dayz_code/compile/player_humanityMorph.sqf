@@ -10,12 +10,12 @@ player removeEventHandler ["HandleDamage",mydamage_eh1];
 player removeEventHandler ["Killed",mydamage_eh3];
 player removeEventHandler ["Fired",mydamage_eh2];
 
-_updates = player getVariable["updatePlayer",[false,false,false,false,false]];
+_updates = player getVariable ["updatePlayer",[false,false,false,false,false]];
 _updates set [0,true];
-player setVariable["updatePlayer",_updates,true];
+player setVariable ["updatePlayer",_updates,true];
 dayz_unsaved = true;
 //Logout
-_humanity = player getVariable["humanity",0];
+_humanity = player getVariable ["humanity",0];
 _medical = player call player_sumMedical;
 _worldspace = [round(direction player),getPosATL player];
 _zombieKills = player getVariable ["zombieKills",0];
@@ -24,6 +24,7 @@ _humanKills = player getVariable ["humanKills",0];
 _banditKills = player getVariable ["banditKills",0];
 _achievements = player getVariable ["Achievements",[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
 _friendlies = player getVariable ["friendlies",[]];
+_tagSetting = player getVariable ["DZE_display_name",false];
 
 //Switch
 _switch = _model spawn player_switchModel;
@@ -33,24 +34,24 @@ waitUntil { scriptDone _switch };
 
 //set medical values
 if (count _medical > 0) then {
-	player setVariable["USEC_isDead",(_medical select 0),true];
-	player setVariable["NORRN_unconscious",(_medical select 1), true];
-	player setVariable["USEC_infected",(_medical select 2),true];
-	player setVariable["USEC_injured",(_medical select 3),true];
-	player setVariable["USEC_inPain",(_medical select 4),true];
-	player setVariable["USEC_isCardiac",(_medical select 5),true];
-	player setVariable["USEC_lowBlood",(_medical select 6),true];
-	player setVariable["USEC_BloodQty",(_medical select 7),true];
-	player setVariable["unconsciousTime",(_medical select 10),true];
-	player setVariable["blood_type",(_medical select 11),true];
-	player setVariable["rh_factor",(_medical select 12),true];
-	player setVariable["messing",(_medical select 13),true];
-	player setVariable["blood_testdone",(_medical select 14),true];
+	player setVariable ["USEC_isDead",(_medical select 0),true];
+	player setVariable ["NORRN_unconscious",(_medical select 1), true];
+	player setVariable ["USEC_infected",(_medical select 2),true];
+	player setVariable ["USEC_injured",(_medical select 3),true];
+	player setVariable ["USEC_inPain",(_medical select 4),true];
+	player setVariable ["USEC_isCardiac",(_medical select 5),true];
+	player setVariable ["USEC_lowBlood",(_medical select 6),true];
+	player setVariable ["USEC_BloodQty",(_medical select 7),true];
+	player setVariable ["unconsciousTime",(_medical select 10),true];
+	player setVariable ["blood_type",(_medical select 11),true];
+	player setVariable ["rh_factor",(_medical select 12),true];
+	player setVariable ["messing",(_medical select 13),true];
+	player setVariable ["blood_testdone",(_medical select 14),true];
 
 	//Add Wounds
 	{
 		//diag_log format ["loop _x:1  wound:%2",_x, (USEC_typeOfWounds select _forEachIndex)];
-		player setVariable["hit_"+_x,true,true];
+		player setVariable ["hit_"+_x,true,true];
 		PVDZ_hlt_Bleed = [player, _x, 1];
 		publicVariable "PVDZ_hlt_Bleed";
 	} forEach (_medical select 8);
@@ -70,15 +71,16 @@ if (count _medical > 0) then {
 };
 
 //General Stats
-player setVariable["humanity",_humanity,true];
-player setVariable["zombieKills",_zombieKills,true];
-player setVariable["headShots",_headShots,true];
-player setVariable["humanKills",_humanKills,true];
-player setVariable["banditKills",_banditKills,true];
-player setVariable["characterID",_charID,true];
-player setVariable["worldspace",_worldspace];
-player setVariable["Achievements",_achievements];
-player setVariable["friendlies",_friendlies,true];
+player setVariable ["humanity",_humanity,true];
+player setVariable ["zombieKills",_zombieKills,true];
+player setVariable ["headShots",_headShots,true];
+player setVariable ["humanKills",_humanKills,true];
+player setVariable ["banditKills",_banditKills,true];
+player setVariable ["characterID",_charID,true];
+player setVariable ["worldspace",_worldspace];
+player setVariable ["Achievements",_achievements];
+player setVariable ["friendlies",_friendlies,true];
+player setVariable ["DZE_display_name",_tagSetting,true];
 
 PVDZ_serverStoreVar = [player,"Achievements",_achievements];
 publicVariableServer "PVDZ_serverStoreVar";
