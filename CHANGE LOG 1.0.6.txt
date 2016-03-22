@@ -8,7 +8,7 @@
 	- Journal is now functional for displaying stats
 	- ItemFish, Shotgun ammo and several other item classnames changed. See SQL\1.0.6_Updates
 	- Dupicate functions have been renamed:
-		- object_setFixServer --> fnc_veh_handleRepair 
+		- object_setFixServer --> fnc_veh_setFixServer 
 		- vehicle_handleDamage --> fnc_veh_handleDam
 		- vehicle_handleKilled -->  fnc_veh_handleKilled
 	- Duplicate global variables have been renamed:

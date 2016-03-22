@@ -263,7 +263,7 @@ if (isServer && isNil "sm_done") then {
 					_selection = _x select 0;
 					_dam = _x select 1;
 					if (_selection in dayZ_explosiveParts && _dam > 0.8) then {_dam = 0.8};
-					[_object,_selection,_dam] call fnc_veh_handleRepair;
+					[_object,_selection,_dam] call fnc_veh_setFixServer;
 				} count _hitpoints;
 
 				_object setFuel _fuel;
