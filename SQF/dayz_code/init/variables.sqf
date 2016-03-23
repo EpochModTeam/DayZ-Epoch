@@ -660,7 +660,6 @@ if (!isDedicated) then {
 	deathHandled = false;
 	dayz_firstGroup = group player;
 	dayz_originalPlayer = player;
-	dayz_playerName = "Unknown";
 	dayz_sourceBleeding = objNull;
 	dayz_clientPreload = false;
 	dayz_authed = false;

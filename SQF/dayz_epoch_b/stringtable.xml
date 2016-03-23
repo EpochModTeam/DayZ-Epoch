@@ -3901,5 +3901,53 @@
 			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall.</French>
 			<Czech>Budete auto-zapojit do hry za %1 sekund. Stisknutím klávesy ESC zrušit a nechat lobby.</Czech>
 		</Key>
+		<Key ID="str_death_rad">
+			<English>radiation</English>
+			<German>strahlung</German>
+			<Russian>излучение</Russian>
+			<Spanish>radiación</Spanish>
+			<French>radiation</French>
+			<Czech>záření</Czech>
+		</Key>
+		<Key ID="str_death_crushed">
+			<English>being crushed</English>
+			<German>quetsch</German>
+			<Russian>раздавливания</Russian>
+			<Spanish>ser aplastado</Spanish>
+			<French>être écrasé</French>
+			<Czech>rozdrcení</Czech>
+		</Key>
+		<Key ID="str_player_death_zombie">
+			<English>%1 was killed by a zombie</English>
+			<German>%1 wurde von einem zombie getötet</German>
+			<Russian>%1 был убит зомби</Russian>
+			<Spanish>%1 murió a manos de un zombi</Spanish>
+			<French>%1 a été tué par un zombie</French>
+			<Czech>%1 byl zabit zombie</Czech>
+		</Key>
+		<Key ID="str_player_death_suicide">
+			<English>%1 committed suicide</English>
+			<German>%1 selbstmord</German>
+			<Russian>%1 покончил с собой</Russian>
+			<Spanish>%1 se suicidó</Spanish>
+			<French>%1 suicidé</French>
+			<Czech>%1 spáchal sebevraždu</Czech>
+		</Key>
+		<Key ID="str_player_death_message">
+			<English>%1 died from %2</English>
+			<German>%1 starb %2</German>
+			<Russian>%1 умерли от %2</Russian>
+			<Spanish>%1 murió de %2</Spanish>
+			<French>%1 %2 de mort</French>
+			<Czech>%1 zemřelo %2</Czech>
+		</Key>
+		<Key ID="str_player_death_killed">
+			<English>%1 was killed by %2 with a %3 from %4m</English>
+			<German>%1 wurde von %2 mit einer %3 von %4m getötet</German>
+			<Russian>%1 был убит %2 с %3 от %4м</Russian>
+			<Spanish>%1 murió a manos de %2 con un %3 de %4m</Spanish>
+			<French>%1 a été tué par %2 avec un %3 de %4m</French>
+			<Czech>%1 byl zabit %2 na %3 z %4m</Czech>
+		</Key>
 	</Package>
 </Project>

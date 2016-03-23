@@ -620,7 +620,6 @@ class FSM
                          "	};" \n
                          "};" \n
                          "" \n
-                         "dayz_playerName = name player;" \n
                          "_model call player_switchModel;" \n
                          "" \n
                          "gear_done= true;" \n
@@ -1972,7 +1971,7 @@ class FSM
                          "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
                          "Dayz_logonTown = ""Wilderness"";" \n
                          "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
-                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn { uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
+                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
                          "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n
                          "" \n

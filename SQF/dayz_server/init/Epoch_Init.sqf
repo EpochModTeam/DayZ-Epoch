@@ -627,16 +627,6 @@ dayz_perform_purge_player = {
 	//  _this = nil;
 };
 
-
-dayz_removePlayerOnDisconnect = {
-	if(!isNull(_this)) then {
-		_group = group _this;
-		_this removeAllMPEventHandlers "mphit";
-		deleteVehicle _this;
-		deleteGroup (group _this);
-	};
-};
-
 server_timeSync = {
 	//Send request
 	private ["_hour","_minute","_date","_key","_result","_outcome"];

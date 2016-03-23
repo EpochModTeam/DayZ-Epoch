@@ -1,8 +1,8 @@
-private ["_display","_body","_playerID","_array","_source","_method","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup"];
+private ["_pos","_display","_body","_playerID","_array","_source","_method","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup","_model"];
 disableSerialization;
 if (deathHandled) exitWith {};
 deathHandled = true;
-if (alive player) then {dayz_playerName = name player;};
+_bodyName = if (alive player) then {name player} else {"unknown"};
 
 //Prevent client freezes
 _display = findDisplay 49;
@@ -28,8 +28,26 @@ if (dayz_onBack != "") then {
 	*/
 };
 _infected = if (r_player_infected && DZE_PlayerZed) then {1} else {0};
+_killerMethod = "unknown";
+_killerName = "unknown";
+_killerDist = 0;
+if (count _this > 0) then {
+	_killerObj = _this select 0;
+	_killerMethod = _this select 1;
+	
+	if (!isNull _killerObj) then {
+		if (!isNull _body) then {_killerDist = _body distance _killerObj;};
+		_killerVehicle = vehicle _killerObj;
+		_killerWeapon = if (_killerVehicle != _killerObj) then {typeOf _killerVehicle} else {currentWeapon _killerObj};
+		if (alive _killerObj) then {
+			_killerName = if (isPlayer _killerObj) then {name _killerObj} else {"AI"};
+		};
+	};
+	if (count _this > 2) then {_killerMethod = "zombie";};
+};
+if (isNil "_killerWeapon") then {_killerWeapon = "unknown weapon";};
 //Send Death Notice
-PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,_infected,toArray dayz_playerName]; // Send as array to avoid publicVariable value restrictions
+PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray _bodyName,_infected,toArray _killerName,toArray _killerWeapon,_killerDist,toArray _killerMethod]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;

@@ -7,7 +7,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
     - Function
     - [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private ["_unit","_hit","_damage","_unconscious","_source","_ammo","_Viralzed","_isMinor","_isHeadHit","_isPlayer","_isBandit","_punishment","_humanityHit","_myKills","_wpst","_sourceDist","_sourceWeap","_scale","_type","_nrj","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_rndInfection","_hitInfection","_isCardiac","_chance","_breakaleg","_model"];
+private ["_unit","_hit","_damage","_unconscious","_source","_ammo","_Viralzed","_isMinor","_isHeadHit","_isPlayer","_isBandit","_punishment","_humanityHit","_myKills","_wpst","_sourceDist","_sourceWeap","_scale","_type","_nrj","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_rndInfection","_hitInfection","_isCardiac","_chance","_breakaleg","_model","_isZombieHit"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -15,6 +15,7 @@ _unconscious = _unit getVariable ["NORRN_unconscious", false];
 _source = _this select 3;
 _isPZombie = player isKindOf "PZombie_VB";
 _ammo = _this select 4;
+_isZombieHit = (_ammo == "zombie");
 _model = typeOf player;
 _Viralzed = typeOf _source in DayZ_ViralZeds;
 _isMinor = (_hit in USEC_MinorWounds);
@@ -124,7 +125,7 @@ if (_unit == player) then
             _sourceDist = round(_unit distance _source);
             _sourceWeap = switch (true) do {
                 case ((vehicle _source) != _source) : { format ["in %1",getText(configFile >> "CfgVehicles" >> (typeOf (vehicle _source)) >> "displayName")] };
-                case (_ammo == "zombie") : { _ammo };
+                case (_isZombieHit) : { _ammo };
                 case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
                 case (["Horn", currentWeapon _source] call fnc_inString) : {"with suspicious vehicle "+str((getposATL _source) nearEntities [["Air", "LandVehicle", "Ship"],5])};
                 case (["Melee", _wpst select 0] call fnc_inString) : { format ["with %2%1",_wpst select 0, if (_sourceDist>6) then {"suspicious weapon "} else {""}] }; 
@@ -132,7 +133,7 @@ if (_unit == player) then
                 case (_wpst select 0 != "") : { format ["with %1/%2 <ammo left:%3>", _wpst select 0, _ammo, _wpst select 4] };
                 default { "with suspicious weapon" };
             };
-            if (_ammo != "zombie") then { // don't log any zombie wounds, even from remote zombies
+            if (!_isZombieHit) then { // don't log any zombie wounds, even from remote zombies
                 PVDZ_sec_atp = [_unit, _source, _sourceWeap, _sourceDist];
                 publicVariableServer "PVDZ_sec_atp";
             };
@@ -151,11 +152,11 @@ if ((_ammo isKindof "B_127x107_Ball") or (_ammo isKindof "B_127x99_Ball")) then 
 };
 
 if (_damage > 0.4) then {
-    if (_ammo != "zombie") then {
+    if (!_isZombieHit) then {
         _scale = _scale + 50; //250
     };
     //Start body part scale
-    if (_ammo == "zombie") then {
+    if (_isZombieHit) then {
         //_scale = _scale * 3; //600 = Normal, 900 = Viral
         _scale = getNumber (configFile >> "CfgVehicles" >> (typeOf _source) >> "damageScale");
 		if (dayz_DamageMultiplier > 1) then {
@@ -190,7 +191,7 @@ if (_damage > 0.4) then {
 //Record Damage to Minor parts (legs, arms)
 if (_hit in USEC_MinorWounds) then {
     private ["_type"];
-    if (_ammo == "zombie") then {
+    if (_isZombieHit) then {
         if (_hit == "legs") then {
             [_unit,_hit,(_damage / 6)] call object_processHit;
         } else {
@@ -252,7 +253,7 @@ if (_damage > 0.4) then {
         };
         
         if ((_damage > 1.5) and _isHeadHit) then {
-            _id = [_source,"shothead"] spawn player_death;
+            if (_isZombieHit) then {_id = [_source,"shothead",1] spawn player_death;} else {_id = [_source,"shothead"] spawn player_death;};
         };
     };
 
@@ -274,7 +275,7 @@ if (_damage > 0.4) then {
         };
     };
 
-    if (_ammo == "zombie") then {
+    if (_isZombieHit) then {
     
         if (!_isHit && _isbleeding && !_isPZombie) then {
             //Create Wound
@@ -290,7 +291,7 @@ if (_damage > 0.4) then {
             
             if (!_isInjured) then {
                 _unit setVariable["USEC_injured",true,true];
-                if ((_unit == player) and (_ammo != "zombie")) then {
+                if ((_unit == player) and (!_isZombieHit)) then {
                     dayz_sourceBleeding = _source;
                 };
             };
@@ -305,7 +306,7 @@ if (_damage > 0.4) then {
             
             //HitInfection from zombies
             if ((!r_player_infected) and !(r_player_Sepsis select 0)) then {
-                if (_ammo == "zombie") then {
+                if (_isZombieHit) then {
                     _rndSepsis = floor(random 100);
                     _sepsisChance = getNumber (configFile >> "CfgVehicles" >> (typeOf _source) >> "sepsisChance");
                     //_hitInfection = (_rndInfection < _infectionChance);
@@ -328,7 +329,7 @@ if (_damage > 0.4) then {
             _isInjured = _unit getVariable["USEC_injured",false];
             if (!_isInjured) then {
                 _unit setVariable["USEC_injured",true,true];
-                if ((_unit == player) and (_ammo != "zombie")) then {
+                if ((_unit == player) and (!_isZombieHit)) then {
                     dayz_sourceBleeding = _source;
                 };
             };
@@ -387,7 +388,7 @@ if (_type == 2) then {
     };
 };
 
-if (_ammo == "zombie") then {
+if (_isZombieHit) then {
     if (!_unconscious and !_isMinor and _isHeadHit) then {
         _chance = random 1;
         if ((_damage > 0.8) and (_chance < 0.5)) then {
