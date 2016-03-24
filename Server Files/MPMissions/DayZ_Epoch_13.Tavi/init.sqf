@@ -32,9 +32,6 @@ dayz_MapArea = 20000; // Default = 10000
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 
-dayz_minpos = -26000; 
-dayz_maxpos = 26000;
-
 dayz_sellDistance_vehicle = 10;
 dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;

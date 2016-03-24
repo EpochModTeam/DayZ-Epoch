@@ -59,14 +59,10 @@ enableSentences false;
 
 //Map & Player Spawn Variables
 spawnShoremode = 1; 				// Default: 1 (on shore)
-spawnArea= 1500; 				// Default: 1500
+spawnArea = 1400; 				// Default: 1400
 dayz_paraSpawn = false;				// Default: false
 dayz_fullMoonNights = true;			// Default: false
 dayz_MapArea = 14000;				// Default: 10000
-
-//Do Not Edit - Chernarus Specific
-dayz_minpos = -1; 				// Do Not Edit - Chernarus Specific
-dayz_maxpos = 16000;				// Do Not Edit - Chernarus Specific
 
 //Item Spawn Variables
 MaxHeliCrashes= 5; 				// Default: 5
@@ -89,7 +85,6 @@ dayz_sellDistance_air = 40;			// Default: 40
 
 //Player Variables
 DZE_R3F_WEIGHT = true;				// Default: true
-DZE_FriendlySaving = true;			// Default: true
 DZE_PlayerZed = true;				// Default: true
 DZE_BackpackGuard = true;			// Default: true
 DZE_SelfTransfuse = false;			// Default: false
@@ -107,7 +102,6 @@ DZE_DeathMsgSide = false;			// Default: false
 DZE_DeathMsgTitleText = false;			// Default: false
 
 //Vehicles Variables
-DZE_AllowForceSave = false;			// Default: false
 DZE_AllowCargoCheck = false;			// Default: false
 DZE_HeliLift = true;				// Default: true
 DZE_HaloJump = true;				// Default: true

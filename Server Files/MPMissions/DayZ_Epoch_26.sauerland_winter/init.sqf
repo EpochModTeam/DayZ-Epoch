@@ -29,9 +29,6 @@ MaxVehicleLimit = 300; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 22000; // Default = 10000
 
-dayz_minpos = -1000; 
-dayz_maxpos = 26000;
-
 dayz_paraSpawn = true;
 
 dayz_sellDistance_vehicle = 10;

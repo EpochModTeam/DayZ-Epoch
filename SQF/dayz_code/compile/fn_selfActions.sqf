@@ -707,18 +707,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_lockUnlock_crtl = -1;
 	};
 
-	if (DZE_AllowForceSave) then {
-		//Allow player to force save
-		if ((_isVehicle || _istypeTent) && !_isMan) then {
-			if (s_player_forceSave < 0) then {
-				s_player_forceSave = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",_cursorTarget, 1, true, true];
-			};
-		} else {
-			player removeAction s_player_forceSave;
-			s_player_forceSave = -1;
-		};
-	};
-
 	if (DZE_AllowCargoCheck) then {
 		if ((_isVehicle || _istypeTent || (_typeOfCursorTarget in DZE_isNewStorage)) && _isAlive && !_isMan && !locked _cursorTarget) then {
 			if (s_player_checkGear < 0) then {
@@ -1015,8 +1003,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	player removeAction s_player_repair_crtl;
 	s_player_repair_crtl = -1;
 	dayz_myCursorTarget = objNull;
-	//player removeAction s_player_forceSave;
-	//s_player_forceSave = -1;
 	player removeAction s_player_flipveh;
 	s_player_flipveh = -1;
 	player removeAction s_player_sleep;
@@ -1090,9 +1076,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
     player removeAction s_player_maintain_area;
     s_player_maintain_area = -1;
     player removeAction s_player_maintain_area_preview;
-    s_player_maintain_area_preview = -1;
-	player removeAction s_player_forceSave;
-	s_player_forceSave = -1;	
+    s_player_maintain_area_preview = -1;	
 	player removeAction s_player_tamedog;
 	s_player_tamedog = -1;
 	player removeAction s_player_feeddog;

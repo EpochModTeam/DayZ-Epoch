@@ -23,7 +23,7 @@ enableSentences false;
 // DayZ Epoch config
 dayz_enableRules = true; // Default: true
 spawnShoremode = 1; // Default = 1 (on shore)
-spawnArea= 1500; // Default = 1500
+spawnArea = 1400; // Default = 1400
 
 MaxVehicleLimit = 300; // Default = 50
 MaxDynamicDebris = 400; // Default = 100

@@ -210,7 +210,6 @@ dayz_resetSelfActions = {
 	s_player_pzombiesfeed = -1;
 	s_player_tamedog = -1;
 	s_player_parts_crtl = -1;
-	s_player_forceSave = -1;	
 	s_player_checkGear = -1;
 	s_player_movedog = -1;
 	s_player_speeddog = -1;
@@ -534,11 +533,8 @@ if(isNil "dayz_sellDistance_vehicle") then {dayz_sellDistance_vehicle = 10;};
 if(isNil "dayz_sellDistance_boat") then {dayz_sellDistance_boat = 30;};
 if(isNil "dayz_sellDistance_air") then {dayz_sellDistance_air = 40;};
 if(isNil "dayz_paraSpawn") then {dayz_paraSpawn = false;};
-if(isNil "dayz_minpos") then {dayz_minpos = -20000;};
-if(isNil "dayz_maxpos") then {dayz_maxpos = 20000;};
 if(isNil "DZE_BuildingLimit") then {DZE_BuildingLimit = 150;};
 if(isNil "DZE_HumanityTargetDistance") then {DZE_HumanityTargetDistance = 25;};
-if(isNil "DZE_FriendlySaving") then {DZE_FriendlySaving = true;};
 if(isNil "DZE_BuildOnRoads") then {DZE_BuildOnRoads = false;};
 if(isNil "DZE_MissionLootTable") then {DZE_MissionLootTable = false;};
 if(isNil "DZE_ConfigTrader") then {DZE_ConfigTrader = false;};
@@ -555,9 +551,15 @@ if(isNil "DZE_maintainRange") then {DZE_maintainRange = ((DZE_PlotPole select 0)
 if(isNil "DZE_HeartBeat") then {DZE_HeartBeat = false;};
 if(isNil "DZE_UseBloodTypes") then {DZE_UseBloodTypes = false;};
 if(isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
+if ((toLower worldName) in ["napf","sauerland","tavi"]) then {
+	dayz_minpos = if ((toLower worldName) == "tavi") then {-26000} else {-1000};
+	dayz_maxpos = 26000;
+} else {
+	dayz_minpos = -20000;
+	dayz_maxpos = 20000;
+};
 
 if (isServer) then {
-	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
 	Server_InfectedCamps = [];
@@ -706,7 +708,6 @@ if (!isDedicated) then {
 	Dayz_freefall = [ time, 0, 0.1 ];
 	
 	// EPOCH ADDITIONS
-	if(isNil "DZE_AllowForceSave") then {DZE_AllowForceSave = false;};
 	if(isNil "DZE_AllowCargoCheck") then {DZE_AllowCargoCheck = true;};
 	if(isNil "DZE_ForceNameTags") then {DZE_ForceNameTags = false;};
 	if(isNil "DZE_ForceNameTagsOff") then {DZE_ForceNameTagsOff = false;};
