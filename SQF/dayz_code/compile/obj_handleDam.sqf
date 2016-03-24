@@ -16,8 +16,8 @@ if (_damage > 0) then {
 	_total = (damage _obj) + _damage;
 
 	if (!isServer) then {
-		PVDZ_obj_Save = [_obj,"objWallDamage",_total];
-		publicVariableServer "PVDZ_obj_Save";
+		PVDZ_veh_Save = [_obj,"objWallDamage",_total];
+		publicVariableServer "PVDZ_veh_Save";
 	} else {
 		[_obj,"objWallDamage",_total] call server_updateObject;
 	};

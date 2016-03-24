@@ -37,8 +37,8 @@ if (local _unit) then {
 		_unit setHit [_selection, _total];
 
 		if (!isServer) then {
-			PVDZ_obj_Save = [_unit,"damage"];
-			publicVariableServer "PVDZ_obj_Save";
+			PVDZ_veh_Save = [_unit,"damage"];
+			publicVariableServer "PVDZ_veh_Save";
 		} else {
 			[_unit, "damage"] call server_updateObject;
 		};

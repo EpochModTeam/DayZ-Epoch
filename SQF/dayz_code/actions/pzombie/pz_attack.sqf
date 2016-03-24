@@ -14,7 +14,7 @@ if (!isNull cursorTarget) then {
 			_ent setDamage 1;
 		} else {
 			/* PVS/PVC - Skaronator */
-			PVDZ_send = [_ent,"PZ_BreakLegs",[_ent,player]];
+			PVDZ_send = [_ent,"Legs",[_ent,player]];
 			publicVariableServer "PVDZ_send";
 		};
 

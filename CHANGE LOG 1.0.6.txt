@@ -38,7 +38,7 @@
 		- PVDZE_serverStoreVar --> PVDZ_serverStoreVar
 		- PVDZE_veh_SFix --> PVDZ_veh_SF
 		- PVDZE_veh_SFuel --> PVCDZ_veh_SetFuel
-		- PVDZE_veh_Update --> PVDZ_obj_Save
+		- PVDZE_veh_Update --> PVDZ_veh_Save
 		- usecBandage --> PVCDZ_hlt_Bandage
 		- usecBleed --> PVDZ_hlt_Bleed
 		- usecBreakLegs --> PVCDZ_plr_Legs

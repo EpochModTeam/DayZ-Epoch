@@ -12,8 +12,6 @@ REMOVE TOOL BREAKING, IT'S STUPID
 dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
 trap_monitor.fsm is no more!
 
-NEW FNC PVDZE_hlt_Bleed -- THATS AN L change it to an I
-
 ////////////////////////////////////////
 SELF ACTIONS VARIABLES
 ////////////////////////////////////////
