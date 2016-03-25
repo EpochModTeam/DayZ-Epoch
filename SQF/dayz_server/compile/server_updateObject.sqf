@@ -75,9 +75,9 @@ _object_inventory = {
 	if (str _inventory != _previous) then {
 		_object setVariable["lastInventory",_inventory];
 		if (_objectID == "0") then {
-			_key = format["CHILD:309:%1:%2:",_objectUID,_inventory];
+			_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":";
 		} else {
-			_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
+			_key = format["CHILD:303:%1:",_objectID] + str _inventory + ":";
 		};
 		
 		#ifdef OBJECT_DEBUG
@@ -124,9 +124,9 @@ _object_damage = {
 	
 	if (_recorddmg) then {
 		if (_objectID == "0") then {
-			_key = format["CHILD:306:%1:%2:%3:",_objectUID,_array,_damage];
+			_key = format["CHILD:306:%1:",_objectUID] + str _array + ":" + str _damage + ":";
 		} else {
-			_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
+			_key = format["CHILD:306:%1:",_objectID] + str _array + ":" + str _damage + ":";
 		};
 		diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;   
