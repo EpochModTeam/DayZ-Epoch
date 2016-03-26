@@ -117,15 +117,12 @@ if (isServer && isNil "sm_done") then {
 		_idKey = 		_x select 1;
 		_type =			_x select 2;
 		_ownerID = 		_x select 3;
-
 		_worldspace = 	_x select 4;
 		_inventory =	_x select 5;
 		_hitPoints =	_x select 6;
 		_fuel =			_x select 7;
 		_damage = 		_x select 8;
-		
-		// Set objectUIDs in currentObjectUIDs list to prevent duplicates
-		if (_type in dayz_allowedObjects) then {_worldspace call dayz_objectUID2;} else {_worldspace call dayz_objectUID3;};
+		_worldspace call dayz_objectUID2; // Set objectUIDs in currentObjectUIDs list to prevent duplicates
 		
 		_dir = 0;
 		_pos = [0,0,0];
@@ -141,7 +138,7 @@ if (isServer && isNil "sm_done") then {
 		
 		if (!_wsDone) then {
 			if (count _worldspace >= 1) then { _dir = _worldspace select 0; };
-			_pos = [getMarkerPos "center",0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
+			_pos = [dayz_centerMarker,0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
 			if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
 			diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 		};
@@ -198,7 +195,7 @@ if (isServer && isNil "sm_done") then {
 				if (DZE_GodModeBase) then {
 					_object addEventHandler ["HandleDamage", {false}];
 				} else {
-					_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
+					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
 				// Test disabling simulation server side on buildables only.
 				_object enableSimulation false;
@@ -451,16 +448,10 @@ if (isServer && isNil "sm_done") then {
 	for "_x" from 1 to MaxMineVeins do {
 		[] spawn spawn_mineveins;
 	};
-
-	if(isnil "dayz_MapArea") then {
-		dayz_MapArea = 10000;
-	};
-	if(isnil "HeliCrashArea") then {
-		HeliCrashArea = dayz_MapArea / 2;
-	};
-	if(isnil "OldHeliCrash") then {
-		OldHeliCrash = false;
-	};
+	
+	// All done spawning stuff, can clear these now
+	buildingList = []; 
+	roadList = [];
 
 	// [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
 	if(OldHeliCrash) then {

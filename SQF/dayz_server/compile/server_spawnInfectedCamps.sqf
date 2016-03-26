@@ -29,7 +29,7 @@ Author:
 #define OBJECT_RADIUS_MIN 8
 #define OBJECT_RADIUS_MAX 13
 
-#define SEARCH_CENTER getMarkerPos "center"
+#define SEARCH_CENTER dayz_centerMarker
 #define SEARCH_RADIUS 7500
 #define SEARCH_EXPRESSION "(5 * forest) + (4 * trees) + (3 * meadow) - (20 * houses) - (30 * sea)" //+ (3 * meadow) - (20 * houses) - (30 * sea)
 #define SEARCH_PRECISION 30

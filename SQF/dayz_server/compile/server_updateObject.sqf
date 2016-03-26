@@ -25,7 +25,7 @@ if ((typeName _objectID == "SCALAR") || (typeName _objectUID == "SCALAR")) then 
 	_objectUID = nil;
 };
 
-if (!((typeOf _object) in ["ParachuteWest","ParachuteC"]) && !locked _object) then {
+if (!((typeOf _object) in DZE_safeVehicle) && !locked _object) then {
 	//diag_log format["Object: %1, ObjectID: %2, ObjectUID: %3",_object,_objectID,_objectUID];
 	if (!(_objectID in dayz_serverIDMonitor) && isNil {_objectUID}) then { 
 		//force fail
@@ -161,7 +161,7 @@ _object_killed = {
 	_key call server_hiveWrite;
 	diag_log ("HIVE: WRITE: "+ str(_key));
 	
-	if ((typeOf _object) in DayZ_removableObjects) then {[_objectID,_objectUID] call server_deleteObj;};
+	if (((typeOf _object) in DayZ_removableObjects) or ((typeOf _object) in DZE_isRemovable)) then {[_objectID,_objectUID] call server_deleteObj;};
 };
 
 _object_maintenance = {

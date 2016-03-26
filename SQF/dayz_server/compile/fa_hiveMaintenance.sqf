@@ -314,7 +314,7 @@ fa_checkVehicles = {
 // move object to map boundary if it's out of map
 fa_staywithus = {
 
-	private["_a","_dir","_px","_py","_b","_cx","_cy","_k", "_SWcorner", "_NEcorner"];
+	private["_a","_dir","_px","_py","_cx","_cy","_k", "_SWcorner", "_NEcorner"];
 	
 	_dir = +(_this select 0);  // current position of player / vehicle
 	_a = +(_this select 1);  // current position of player / vehicle
@@ -328,10 +328,9 @@ fa_staywithus = {
 		// first : put object close to the map boundary, following an axis to the center of the map.
 		_px = _a select 0;
 		_py = _a select 1; 
-		_b = getMarkerpos "center";
 
-		_cx = (_b select 0) - _px; if (_cx == 0) then { _cx = 0.00001; };
-		_cy = (_b select 1) - _py; if (_cy == 0) then { _cy = 0.00001; };
+		_cx = (dayz_centerMarker select 0) - _px; if (_cx == 0) then { _cx = 0.00001; };
+		_cy = (dayz_centerMarker select 1) - _py; if (_cy == 0) then { _cy = 0.00001; };
 		if (_px <= (_SWcorner select 0)) then { _py = _py + (1 + (_SWcorner select 0) - _px) / _cx * _cy; _px = 1 + (_SWcorner select 0); };
 		if (_py <= (_SWcorner select 1)) then { _px = _px + (1 + (_SWcorner select 1) - _py) / _cy * _cx; _py = 1 + (_SWcorner select 1); };
 		if (_px >= (_NEcorner select 0)) then { _py = _py + ((_NEcorner select 0) - 1 - _px) / _cx * _cy; _px = (_NEcorner select 0) - 1; };

@@ -62,7 +62,7 @@ _nbpatchs = 0;
 	_houseType = _x select 0;
 	_houseList = _x select 1;
 	if (count _houseList == 0) then { 
-		_houseList = (getMarkerpos "center") nearObjects [_houseType, 20000];
+		_houseList = dayz_centerMarker nearObjects [_houseType, 20000];
 	}
 	else {
 		_tmp = [];

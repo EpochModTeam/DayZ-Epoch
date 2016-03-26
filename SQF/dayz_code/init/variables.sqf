@@ -48,7 +48,7 @@ DayZ_fuelCans = ["ItemJerrycan","ItemFuelcan","ItemFuelBarrel"];
 DayZ_fuelCansEmpty = ["ItemJerrycanEmpty","ItemFuelcanEmpty","ItemFuelBarrelEmpty"];
 DayZ_traps = ["Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare"];
 DayZ_ViralZeds = ["z_new_villager2","z_new_villager3","z_new_villager4","z_new_worker2","z_new_worker3","z_new_worker4"];
-DayZ_SafeObjects = ["Base_Fire_DZ","WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4","Land_Fire_DZ","TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","StashMedium4","Wire_cat1","Sandbag1_DZ","Fence_DZ","Generator_DZ","Hedgehog_DZ","BearTrap_DZ","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","CamoNet_DZ","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare"];
+DayZ_SafeObjects = ["Base_Fire_DZ","WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4","Land_Fire_DZ","TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","StashMedium4","Wire_cat1","Sandbag1_DZ","Fence_DZ","Generator_DZ","Hedgehog_DZ","BearTrap_DZ","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","CamoNet_DZ","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare","TentStorageDomed","TentStorageDomed2","VaultStorageLocked","BagFenceRound_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ","Land_HBarrier3_DZ","Land_HBarrier5_DZ","Fence_corrugated_DZ","M240Nest_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","Plastic_Pole_EP1_DZ","StickFence_DZ","LightPole_DZ","FuelPump_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","SandNest_DZ","DeerStand_DZ","MetalPanel_DZ","WorkBench_DZ","WoodFloor_DZ","WoodLargeWall_DZ","WoodLargeWallDoor_DZ","WoodLargeWallWin_DZ","WoodSmallWall_DZ","WoodSmallWallWin_DZ","WoodSmallWallDoor_DZ","LockboxStorageLocked","WoodFloorHalf_DZ","WoodFloorQuarter_DZ","WoodStairs_DZ","WoodStairsSans_DZ","WoodStairsRails_DZ","WoodSmallWallThird_DZ","WoodLadder_DZ","Land_DZE_GarageWoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_WoodDoor","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_WoodDoorLocked","CinderWallHalf_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallDoor_DZ","CinderWallDoorLocked_DZ","CinderWallSmallDoorway_DZ","CinderWallDoorSmall_DZ","CinderWallDoorSmallLocked_DZ","MetalFloor_DZ","WoodRamp_DZ","GunRack_DZ","FireBarrel_DZ","WoodCrate_DZ","Scaffolding_DZ"];
 DayZ_GearedObjects = ["Car","Helicopter","Motorcycle","Ship","TentStorage_base","StashSmall_base","StashMedium_base","Plane","Tank","VaultStorage","LockboxStorage","TentStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ","Scaffolding_DZ"];
 DayZ_RestingAnims = ["amovpsitmstpsnonwpstdnon_ground","amovpsitmstpsnonwpstdnon_smoking","amovpsitmstpsraswrfldnon_weaponcheck1","amovpsitmstpsraswrfldnon"];
 dayz_playerAchievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -127,6 +127,7 @@ pickupInit = false;
 mouseOverCarry = false; //for carry slot since determining mouse pos doesn't work right
 dayZ_partClasses = ["PartFueltank","PartWheel","PartEngine"]; //No need to add PartGeneric, it is default for everything
 dayZ_explosiveParts = ["palivo","motor"];
+dayz_centerMarker = getMarkerPos "center";
 
 //Survival Variables
 SleepFood = 2160; //minutes (48 hours)
@@ -477,7 +478,6 @@ switch (dayz_presets) do {
 
 // EPOCH ADDITIONS
 canbuild = true;
-dayz_allowedObjects = ["TentStorage","TentStorageDomed","TentStorageDomed2","VaultStorageLocked","Hedgehog_DZ","Sandbag1_DZ","BagFenceRound_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ","Land_HBarrier3_DZ","Land_HBarrier5_DZ","Fence_corrugated_DZ","M240Nest_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","Plastic_Pole_EP1_DZ","Generator_DZ","StickFence_DZ","LightPole_DZ","FuelPump_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","SandNest_DZ","DeerStand_DZ","MetalPanel_DZ","WorkBench_DZ","WoodFloor_DZ","WoodLargeWall_DZ","WoodLargeWallDoor_DZ","WoodLargeWallWin_DZ","WoodSmallWall_DZ","WoodSmallWallWin_DZ","WoodSmallWallDoor_DZ","LockboxStorageLocked","WoodFloorHalf_DZ","WoodFloorQuarter_DZ","WoodStairs_DZ","WoodStairsSans_DZ","WoodStairsRails_DZ","WoodSmallWallThird_DZ","WoodLadder_DZ","Land_DZE_GarageWoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_WoodDoor","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_WoodDoorLocked","CinderWallHalf_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallDoor_DZ","CinderWallDoorLocked_DZ","CinderWallSmallDoorway_DZ","CinderWallDoorSmall_DZ","CinderWallDoorSmallLocked_DZ","MetalFloor_DZ","WoodRamp_DZ","GunRack_DZ","FireBarrel_DZ","WoodCrate_DZ","Scaffolding_DZ"];
 dayz_combination = "";
 dayz_disallowedVault = ["TentStorage","BuiltItems","ModularItems","DZE_Base_Object","Generator_DZ"];
 // These work with just a running generator
@@ -492,7 +492,6 @@ DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP
 DZE_Lock_Door = "";
 DZE_HeliAllowTowFrom = ["CH_47F_EP1_DZE","CH_47F_EP1_DZ","CH_47F_BAF","CH_47F_EP1","BAF_Merlin_DZE","CH53_DZE"];
 DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
-DZE_PROTOBOX = objNull;
 DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
 DZE_LockableStorage = ["VaultStorage","VaultStorageLocked","LockboxStorageLocked","LockboxStorage"];
 DZE_LockedStorage = ["VaultStorageLocked","LockboxStorageLocked"];
@@ -525,7 +524,6 @@ if(isNil "timezoneswitch") then {timezoneswitch = 0;};
 if(isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
 if(isNil "DZE_PlayerZed") then {DZE_PlayerZed = true;};
 if(isNil "DZE_GodModeBase") then {DZE_GodModeBase = false;};
-if(isNil "DZEdebug") then {DZEdebug = false;};
 if(isNil "DZE_Debug_Damage") then {DZE_Debug_Damage = true;};
 if(isNil "DZE_TRADER_SPAWNMODE") then {DZE_TRADER_SPAWNMODE = false;};
 if(isNil "dayz_tameDogs") then {dayz_tameDogs = false;};
@@ -577,17 +575,26 @@ if (isServer) then {
 	dayz_died = [];
 
 	// EPOCH ADDITIONS
-	DZE_DYN_AntiStuck = 0;
-	DZE_DYN_AntiStuck2nd = 0;
-	DZE_DYN_AntiStuck3rd = 0;
+	currentObjectUIDs = [];
+	keyStartNumber = 100000000000;
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 	if(isNil "EpochEvents") then {EpochEvents = [];};
-	if(isNil "DZEdebug") then {DZEdebug = false;};
 	if(isNil "DZE_vehicleAmmo") then {DZE_vehicleAmmo = 0;};
 	if(isNil "DZE_BackpackGuard") then {DZE_BackpackGuard = true;};
 	if(isNil "DZE_DeathMsgGlobal") then {DZE_DeathMsgGlobal = false;};
 	if(isNil "DZE_DeathMsgSide") then {DZE_DeathMsgSide = false;};
 	if(isNil "DZE_DeathMsgTitleText") then {DZE_DeathMsgTitleText = false;};
+	if(isNil "dayz_MapArea") then {dayz_MapArea = 10000;};
+	if(isNil "DynamicVehicleArea") then {DynamicVehicleArea = dayz_MapArea / 2;};
+	if(isNil "DynamicVehicleDamageLow") then {DynamicVehicleDamageLow = 0;};
+	if(isNil "DynamicVehicleDamageHigh") then {DynamicVehicleDamageHigh = 100;};
+	if(isNil "DynamicVehicleFuelLow") then {DynamicVehicleFuelLow = 0;};
+	if(isNil "DynamicVehicleFuelHigh") then {DynamicVehicleFuelHigh = 100;};
+	if(isNil "HeliCrashArea") then {HeliCrashArea = dayz_MapArea / 2;};
+	if(isNil "OldHeliCrash") then {OldHeliCrash = false;};
+	if(isNil "DZE_DiagFpsSlow") then {DZE_DiagFpsSlow = false;};
+	if(isNil "DZE_DiagFpsFast") then {DZE_DiagFpsFast = false;};
+	if(isNil "DZE_DiagVerbose") then {DZE_DiagVerbose = false;};
 };
 
 if (!isDedicated) then {

@@ -16,8 +16,7 @@ while {_counter < _amount} do {
 	//_radius = 0;
 	_method = "CAN_COLLIDE";
 		
-	//_createSafePos = getMarkerPos "center";
-	_position = [getMarkerPos "center",1,6500,1] call fn_selectRandomLocation;
+	_position = [dayz_centerMarker,1,6500,1] call fn_selectRandomLocation;
 	
 	//Create Zed
 	_agent = createAgent [_type, _position, [], 1, _method];

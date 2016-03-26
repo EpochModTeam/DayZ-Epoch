@@ -120,7 +120,7 @@ if(isServer)then{
 		_delQtyLights = 0;
 		{
 			if (local _x) then {
-				_x call dayz_perform_purge;
+				deleteVehicle _x; //should use sched_co_deleteVehicle instead
 				uiSleep 0.025;
 				_delQtyLights = _delQtyLights + 1;
 			} else {
@@ -129,7 +129,7 @@ if(isServer)then{
 					if (count _pos > 0) then {
 						_nearby = {(isPlayer _x) && (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 420]);//Use calculated range here.
 						if (_nearby==0) then {
-							_x call dayz_perform_purge;
+							deleteVehicle _x; //should use sched_co_deleteVehicle instead
 							uiSleep 0.025;
 							_delQtyLights = _delQtyLights + 1;
 						};

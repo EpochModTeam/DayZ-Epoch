@@ -46,7 +46,6 @@ DynamicVehicleDamageHigh = 100; // Default: 100
 dayz_quickSwitch = false; // Default: false
 DZE_BuildOnRoads = false; // Default: False
 
-// DZEdebug = true;
 MISSION_ROOT=toArray __FILE__;MISSION_ROOT resize(count MISSION_ROOT-8);MISSION_ROOT=toString MISSION_ROOT;
 //Load in compiled functions
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)

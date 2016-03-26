@@ -120,10 +120,6 @@ class DebugBoxPlayer_DZ: NonStrategic
 	armor = 2000;
 	displayName = "Player Debug Box";
 	vehicleClass = "Fortifications";
-	class Eventhandlers
-	{
-		init = "_this call eh_localCleanup;";
-	};
 };
 
 // buildables

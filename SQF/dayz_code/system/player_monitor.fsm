@@ -754,12 +754,6 @@ class FSM
                          "	player setPosATL [(_setPos select 0),(_setPos select 1),2000];" \n
                          "	[player,2000] spawn BIS_fnc_halo;" \n
                          "} else {" \n
-                         "" \n
-                         "	// make protective box" \n
-                         "	DZE_PROTOBOX = createVehicle [""DebugBoxPlayer_DZ"", _setPos, [], 0, ""CAN_COLLIDE""];" \n
-                         "	DZE_PROTOBOX setDir _setDir;" \n
-                         "	DZE_PROTOBOX setPosATL _setPos;" \n
-                         "" \n
                          "	player setDir _setDir;" \n
                          "	player setPosATL _setPos;" \n
                          "};" \n
@@ -1187,18 +1181,6 @@ class FSM
                          "{ _x call fnc_veh_ResetEH; } forEach vehicles;" \n
                          "player allowDamage true;" \n
                          "player enableSimulation true;" \n
-                         "// remove box " \n
-                         "[] spawn {" \n
-                         "	private [""_counter""];" \n
-                         "	_counter = 0;" \n
-                         "	while {true} do {" \n
-                         "		if ((player getVariable[""combattimeout"", 0] >= time) || (_counter >= 60) || (player distance DZE_PROTOBOX > 2)) exitWith {" \n
-                         "			deleteVehicle DZE_PROTOBOX;" \n
-                         "		};" \n
-                         "		uiSleep 1;" \n
-                         "		_counter = _counter + 1;" \n
-                         "	};" \n
-                         "};" \n
                          "diag_log [ 'resetting keyboard events',(MISSION_ROOT+'keyboard.sqf')];" \n
                          "keyboard_keys = nil;" \n
                          "[controlNull, 1, false,false,false] call compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');" \n
