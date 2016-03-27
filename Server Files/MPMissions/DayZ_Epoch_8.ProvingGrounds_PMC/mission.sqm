@@ -4,21 +4,20 @@ class Mission
 	addOns[]=
 	{
 		"provinggrounds_pmc",
+		"map_eu",
 		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
-		"dayz_epoch",
-		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"dayz_epoch",
 		"warfarebuildings",
 		"glt_m300t",
 		"pook_h13",
 		"csj_gyroac",
-		"map_eu",
 		"redryder"
 	};
 	addOnsAuto[]=
@@ -171,7 +170,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-144,0.5,2320};
+					position[]={-144,0,2320};
 					id=50;
 					side="LOGIC";
 					vehicle="FunctionsManager";
@@ -187,79 +186,79 @@ class Mission
 		items=13;
 		class Item0
 		{
-			position[]={1056.1965,51.670532,1016.5417};
+			position[]={1056,51,1016};
 			name="center";
 			type="Empty";
 		};
 		class Item1
 		{
-			position[]={3796.6313,42.429188,3281.6545};
+			position[]={3796,42,3281};
 			name="respawn_west";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={436.67371,70.601822,420.24353};
+			position[]={436,70,420};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={1294.0793,19.188629,1259.0656};
+			position[]={1294,19,1259};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={1087.5112,50.086475,1678.8763};
+			position[]={1087,50,1678};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={405.57788,51.27367,1684.6263};
+			position[]={405,51,1684};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={411.64197,68.443993,977.93005};
+			position[]={411,68,977};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={751.83734,51.168613,770.30115};
+			position[]={751,51,770};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={1412.2501,49.346016,432.15765};
+			position[]={1412,49,432};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={1685.077,52.313633,1061.4493};
+			position[]={1685,52,1061};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={1536.2695,50.695183,1530.3745};
+			position[]={1536,50,1530};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={985.57458,51.041744,426.71338};
+			position[]={985,51,426};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={1717.3979,55.471294,681.28967};
+			position[]={1717,55,681};
 			name="spawn10";
 			type="Empty";
 		};

@@ -173,7 +173,7 @@ class RscDisplayMain : RscStandardDisplay {
 			text = "\ca\ui\data\ui_mainmenu_background_ca.paa";
 		};
 		class CA_ARMA2 : RscPicture {
-			text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+			text = "z\addons\dayz_code\gui\loadingscreen.paa";
 		};
 	};
 

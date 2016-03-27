@@ -16,7 +16,7 @@ valuesParam1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 31};
 defValueParam1 = 10; //auto login time limit in seconds, set value to 31 to disable auto login
 textsParam1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, "Disabled"};
 
-loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
+loadScreen = "\z\addons\dayz_code\gui\loadingscreen.paa";
 
 class Header
 {

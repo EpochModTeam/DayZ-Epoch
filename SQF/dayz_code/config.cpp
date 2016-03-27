@@ -47,7 +47,7 @@ class CfgMods
 	{
 		dir = "@DayZ_Epoch";
 		name = "DayZ Epoch";
-		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+		picture = "z\addons\dayz_code\gui\loadingscreen.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";

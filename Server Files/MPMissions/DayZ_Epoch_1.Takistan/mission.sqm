@@ -4,20 +4,19 @@ class Mission
 	addOns[]=
 	{
 		"takistan",
+		"map_eu",
 		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
-		"dayz_epoch",
-		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"dayz_epoch",
 		"pook_h13",
 		"glt_m300t",
 		"csj_gyroac",
-		"map_eu",
 		"jetskiyanahuiaddon",
 		"warfarebuildings",
 		"redryder"
@@ -172,7 +171,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-144,0.5,2320};
+					position[]={-144,0,2320};
 					id=50;
 					side="LOGIC";
 					vehicle="FunctionsManager";
@@ -188,85 +187,85 @@ class Mission
 		items=21;
 		class Item0
 		{
-			position[]={6622.5166,301.31479,6751.1309};
+			position[]={6622,301,6751};
 			name="center";
 			type="Empty";
 		};
 		class Item1
 		{
-			position[]={6464.1104,414.77631,-1989.0348};
+			position[]={6464,414,-1989};
 			name="respawn_west";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={8603.9141,292.76035,7735.3867};
+			position[]={8603,292,7735};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={3899.7437,372.565,7278.7085};
+			position[]={3899,372,7278};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={8615.4102,325.48184,5291.0664};
+			position[]={8615,325,5291};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={5649.7935,426.08795,4253.7886};
+			position[]={5649,426,4253};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={6211.9707,129.37137,8806.0615};
+			position[]={6211,129,8806};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={4486.1792,310.78815,4621.6045};
+			position[]={4486,310,4621};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={4802.3354,230.25961,8407.5059};
+			position[]={4802,230,8407};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={7621.5938,223.7644,8554.4775};
+			position[]={7621,223,8554};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={7423.8193,385.30939,4388.8999};
+			position[]={7423,385,4388};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={8740.1338,330.44122,6432.0054};
+			position[]={8740,330,6432};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={3730.855,229.78453,5860.3472};
+			position[]={3730,229,5860};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={431.62454,303.29282,5554.8208};
+			position[]={431,303,5554};
 			name="tradercitykush";
 			text="Trader City Khush";
 			type="mil_circle";
@@ -274,7 +273,7 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={1958.948,51.60416,12555.685};
+			position[]={1958,51,12555};
 			name="Trader_City_Nur";
 			text="Trader City Nur";
 			type="mil_circle";
@@ -282,7 +281,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={10870.342,283.72119,6306.75};
+			position[]={10870,283,6306};
 			name="Trader_City_Garm";
 			text="Trader City Garm";
 			type="mil_circle";
@@ -290,7 +289,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={7416.8306,271.48111,155.77698};
+			position[]={7416,271,155};
 			name="Wholesaler";
 			text="Wholesaler";
 			type="mil_dot";
@@ -298,7 +297,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={11270.841,115.92039,12660.39};
+			position[]={11270,115,12660};
 			name="Wholesaler_1";
 			text="Wholesaler";
 			type="mil_dot";
@@ -306,7 +305,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={5261.8662,83.96122,11163.853};
+			position[]={5261,83,11163};
 			name="Airplane Dealer";
 			text="Airplane Dealer";
 			type="mil_dot";
@@ -314,7 +313,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={751.90857,557.38123,10491.069};
+			position[]={751,557,10491};
 			name="BanditTrader";
 			text="Bandit Trader";
 			type="mil_dot";
@@ -322,7 +321,7 @@ class Mission
 		};
 		class Item20
 		{
-			position[]={8039.3813,300.80963,2009.7328};
+			position[]={8039,300,2009};
 			name="BlackMarketVendor";
 			text="Black Market Trader";
 			type="mil_dot";
@@ -332,59 +331,33 @@ class Mission
 	class Sensors
 	{
 		items=3;
+#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{soundDet="arabian_market_1";};
 		class Item0
 		{
-			position[]={436.03763,303.48236,5550.8608};
-			a=100;
-			b=100;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
+			position[]={436,303,5550};
+			TRGDEF
 			name="zone1";
 			expCond="(player distance zone1) < 100;";
-			expActiv="[""trader city Khush"",true,""enter""] spawn player_traderCity;";
-			expDesactiv="[""trader city Khush"",true,""leave""] spawn player_traderCity;";
-			class Effects
-			{
-				soundDet="arabian_market_1";
-			};
+			expActiv="[""trader city Khush"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""trader city Khush"",true,""leave""] call player_traderCity;";
 		};
 		class Item1
 		{
-			position[]={1958.594,51.581875,12554.858};
-			a=100;
-			b=100;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
+			position[]={1958,51,12554};
+			TRGDEF
 			name="zone2";
 			expCond="(player distance zone2) < 100;";
-			expActiv="[""trader city Nur"",true,""enter""] spawn player_traderCity;";
-			expDesactiv="[""trader city Nur"",true,""leave""] spawn player_traderCity;";
-			class Effects
-			{
-				soundDet="arabian_market_1";
-			};
+			expActiv="[""trader city Nur"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""trader city Nur"",true,""leave""] call player_traderCity;";
 		};
 		class Item2
 		{
-			position[]={10870.369,283.7251,6306.5469};
-			a=100;
-			b=100;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
+			position[]={10870,283,6306};
+			TRGDEF
 			name="zone3";
 			expCond="(player distance zone3) < 100;";
-			expActiv="[""trader city Garm"",true,""enter""] spawn player_traderCity;";
-			expDesactiv="[""trader city Garm"",true,""leave""] spawn player_traderCity;";
-			class Effects
-			{
-				soundDet="arabian_market_1";
-			};
+			expActiv="[""trader city Garm"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""trader city Garm"",true,""leave""] call player_traderCity;";
 		};
 	};
 };
