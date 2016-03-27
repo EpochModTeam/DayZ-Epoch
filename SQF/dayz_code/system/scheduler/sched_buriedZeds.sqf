@@ -57,7 +57,7 @@ sched_buriedZeds = {
 				//_a = _a + 1;
 				_b = nearestBuilding _z;
 				if (!isNull _b) then {
-					_config = configFile >> "CfgLoot" >> "Buildings" >> (typeOf _b) >> "zedPos";
+					_config = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Buildings" >> (typeOf _b) >> "zedPos"} else {configFile >> "CfgLoot" >> "Buildings" >> (typeOf _b) >> "zedPos"};
 					_zedPos = [] + getArray _config;
 					if ((count _zedPos > 0) and {([_b, _pos] call _checkInsideBuilding)}) then {
 						_elevation = (_b modelToWorld (_zedPos select 0)) select 2; // ATL

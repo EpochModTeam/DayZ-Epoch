@@ -361,11 +361,6 @@ for "_x" from 1 to MaxMineVeins do {[] spawn spawn_mineveins;};
 // All done spawning stuff, can clear these now
 buildingList = []; roadList = [];
 
-// [_guaranteedLoot,_randomizedLoot,_frequency,_variance,_spawnChance,_spawnMarker,_spawnRadius,_spawnFire,_fadeFire]
-if (OldHeliCrash) then {
-	_nul = [3,4,(50 * 60),(15 * 60),0.75,'center',HeliCrashArea,true,false] spawn server_spawnCrashSite;
-};
-
 [] spawn server_spawnEvents;
 _debugMarkerPosition = getMarkerPos "respawn_west";
 _debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition select 1),1];

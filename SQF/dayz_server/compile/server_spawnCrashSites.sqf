@@ -21,8 +21,8 @@ Author:
 #define SPAWN_CHANCE 0.75
 
 //Parameters for finding a suitable position to spawn the crash site
-#define SEARCH_CENTER [7049,9241]
-#define SEARCH_RADIUS 4880
+#define SEARCH_CENTER dayz_centerMarker
+#define SEARCH_RADIUS HeliCrashArea
 #define SEARCH_DIST_MIN 20
 #define SEARCH_SLOPE_MAX 2
 #define SEARCH_BLACKLIST [[[2092,14167],[10558,12505]]]
@@ -34,31 +34,11 @@ Author:
 #define LOOT_MIN 5
 #define LOOT_MAX 8
 
-private
-[
-	"_debugZone",
-	"_spawnCrashSite",
-	"_type",
-	"_class",
-	"_lootGroup",
-	"_position",
-	"_vehicle",
-//	"_size",
-//	"_loot",
-	"_lootParams",
-	"_dir",
-	"_mag",
-	"_lootNum",
-	"_lootPos",
-	"_lootVeh",
-	"_lootpos",
-	"_time"
-];
+private ["_debugZone","_spawnCrashSite","_type","_class","_lootGroup","_position","_vehicle","_lootParams","_dir","_mag","_lootNum","_lootPos","_lootVeh","_lootpos","_time"];
 
 diag_log format ["CRASHSPAWNER: Starting crash site spawner. Frequency: %1±%2 min. Spawn chance: %3", SPAWN_FREQUENCY, SPAWN_VARIANCE, SPAWN_CHANCE];
 
-_spawnCrashSite =
-{
+_spawnCrashSite = {
 	_type = Loot_SelectSingle(Loot_GetGroup("CrashSiteType"));
 	_class = _type select 1;
 	_lootGroup = Loot_GetGroup(_type select 2);
@@ -91,49 +71,36 @@ _spawnCrashSite =
 		_lootVeh = Loot_Spawn(_x, _lootPos);
 		_lootVeh setVariable ["permaLoot", true];
 		
-		switch (dayz_spawnCrashSite_clutterCutter) do
-		{
-			case 1: //Lift loot up by 5cm
-			{
+		switch (dayz_spawnCrashSite_clutterCutter) do {
+			case 1: { //Lift loot up by 5cm
 				_lootPos set [2, 0.05];
 				_lootVeh setPosATL _lootpos;
 			};
-			
-			case 2: //Clutter cutter
-			{
+			case 2: { //Clutter cutter
 				createVehicle ["ClutterCutter_small_2_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
 			};
-			
-			case 3: //Debug sphere
-			{
+			case 3: { //Debug sphere
 				createVehicle ["Sign_sphere100cm_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
 			};
 		};
-	}
-	foreach Loot_Select(_lootGroup, _lootNum);
+	} forEach Loot_Select(_lootGroup, _lootNum);
 };
 
 //Spawn initial crash sites
-for "_i" from 1 to (INITIAL_NUM) do
-{
+for "_i" from 1 to (INITIAL_NUM) do {
 	call _spawnCrashSite;
 };
 
-while {true} do
-{
+while {true} do {
 	//Pick a time to attempt spawning
 	//currentTime + frequency + ±1 * variance
 	_time = time + 60 * ((SPAWN_FREQUENCY) + ((round random 1) * 2 - 1) * random (SPAWN_VARIANCE));
 	
 	//Wait until the previously decided time
-	while {time < _time} do
-	{
-		sleep (60 * (SPAWN_FREQUENCY) / (TIMER_RESOLUTION));
+	while {time < _time} do {
+		uiSleep (60 * (SPAWN_FREQUENCY) / (TIMER_RESOLUTION));
 	};
 	
 	//try to spawn
-	if ((SPAWN_CHANCE) > random 1) then
-	{
-		call _spawnCrashSite;
-	};
+	if ((SPAWN_CHANCE) > random 1) then {call _spawnCrashSite;};
 };

@@ -594,7 +594,6 @@ if (isServer) then {
 	if(isNil "DynamicVehicleFuelLow") then {DynamicVehicleFuelLow = 0;};
 	if(isNil "DynamicVehicleFuelHigh") then {DynamicVehicleFuelHigh = 100;};
 	if(isNil "HeliCrashArea") then {HeliCrashArea = dayz_MapArea / 2;};
-	if(isNil "OldHeliCrash") then {OldHeliCrash = false;};
 	if(isNil "DZE_DiagFpsSlow") then {DZE_DiagFpsSlow = false;}; // Log server FPS + player count every 5 minutes
 	if(isNil "DZE_DiagFpsFast") then {DZE_DiagFpsFast = false;}; // Log server FPS + player count every 2 minutes
 	if(isNil "DZE_DiagVerbose") then {DZE_DiagVerbose = false;}; // Also log allMissionObjects count (very intensive)

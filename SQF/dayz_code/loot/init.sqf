@@ -54,7 +54,7 @@ dz_loot_groups = [];
 dz_loot_weighted = [];
 dz_loot_definitions = [];
 
-_cfgGroups = (configFile >> "CfgLoot" >> "Groups");
+_cfgGroups = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Groups"} else {configFile >> "CfgLoot" >> "Groups"};
 
 for "_i" from 0 to (count _cfgGroups) - 1 do
 {
