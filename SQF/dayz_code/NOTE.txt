@@ -9,7 +9,6 @@ REMOVE TOOL BREAKING, IT'S STUPID
 
 	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
-dayz_serverObjectMonitor = []; IS REPLACED WITH PVDZE_serverObjectMonitor = [];
 trap_monitor.fsm is no more!
 
 ////////////////////////////////////////

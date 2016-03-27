@@ -120,7 +120,7 @@ _key call server_hiveWrite;
 	
 	_object setVariable ["CharacterID", _characterID, true];
 
-	PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 	_object call fnc_veh_ResetEH;
 	

@@ -105,7 +105,7 @@ _key call server_hiveWrite;
 		deleteVehicle _object_para;
 	};
 
-	PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 	_object call fnc_veh_ResetEH;
 	

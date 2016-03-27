@@ -17,6 +17,7 @@
 		- dayz_allowedObjects --> DayZ_SafeObjects
 		- dayz_updateObjects --> DayZ_GearedObjects
 		- freeTarget --> OpenTarget
+		- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
 	- Duplicate public variables have been renamed:
 		- dayzPlayerLogin --> PVCDZ_plr_Login
 		- dayzPlayerLogin2 --> PVCDZ_plr_Login2

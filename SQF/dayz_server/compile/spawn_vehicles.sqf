@@ -18,14 +18,11 @@ while {count AllowedVehiclesList > 0} do {
 	// BIS_fnc_selectRandom replaced because the index may be needed to remove the element
 	_index = floor random count AllowedVehiclesList;
 	_random = AllowedVehiclesList select _index;
-
 	_vehicle = _random select 0;
 	_velimit = _random select 1;
 
 	_qty = {_x == _vehicle} count serverVehicleCounter;
-
-	// If under limit allow to proceed
-	if (_qty <= _velimit) exitWith {};
+	if (_qty <= _velimit) exitWith {}; // If under limit allow to proceed
 
 	// vehicle limit reached, remove vehicle from list
 	// since elements cannot be removed from an array, overwrite it with the last element and cut the last element of (as long as order is not important)

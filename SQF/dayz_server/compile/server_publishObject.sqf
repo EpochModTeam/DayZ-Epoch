@@ -30,6 +30,6 @@ if (DZE_GodModeBase) then {
 // Test disabling simulation server side on buildables only.
 _object enableSimulation false;
 
-PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
+dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 //diag_log ("PUBLISH: Created " + (_class) + " with ID " + _uid);

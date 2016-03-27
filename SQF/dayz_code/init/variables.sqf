@@ -137,7 +137,6 @@ SleepTemperatur = 90 / 100;	//First value = Minutes until player reaches the col
 //Server Variables
 allowConnection = false;
 dayz_serverObjectMonitor = [];
-PVDZE_serverObjectMonitor = [];
 
 //Streaming Variables (player only)
 dayz_Locations = [];
@@ -564,6 +563,9 @@ if (isServer) then {
 	//dayz_spawnCrashSite_clutterCutter=0; // helicrash spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 	//dayz_spawnInfectedSite_clutterCutter=0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 	//Objects to remove when killed.
+	DayZ_nonCollide = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3", "StashMedium4", "DomeTentStorage", "DomeTentStorage0", "DomeTentStorage1", "DomeTentStorage2", "DomeTentStorag3", "DomeTentStorage4", "CamoNet_DZ"];
+	DayZ_WoodenFence = ["WoodenFence_1","WoodenFence_2","WoodenFence_3","WoodenFence_4","WoodenFence_5","WoodenFence_6","WoodenFence_7"];
+	DayZ_WoodenGates = ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4"];
 	DayZ_removableObjects = ["Wire_cat1","Sandbag1_DZ","Hedgehog_DZ","CamoNet_DZ","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare"];
 	//[10416.695, 4198.4634],[7982.2563, 1419.8256],[10795.93, 1419.8263],[7966.083, 4088.7463],[9259.7266, 2746.1985],[5200.5234, 3915.3274],[6494.1665, 2572.7798],[5216.6968, 1246.407],[2564.7244, 3915.3296],[3858.3674, 2572.782],[2580.8977, 1246.4092],[13398.995, 4400.5874],[12242.025, 2948.3196],[13551.842, 1832.2257],[14870.512, 3009.5117],[-178.19415, 1062.4478],[1099.2754, 2388.8206],[-194.36755, 3731.3679],[10394.215, 8322.1719],[7959.7759, 5543.5342],[10773.449, 5543.5342],
 	dayz_grid =[[7943.6025, 8212.4551],[9237.2461, 6869.9063],[5178.043, 8039.0361],[6471.686, 6696.4883],[5194.2163, 5370.1152],[2542.2439, 8039.0381],[3835.887, 6696.4902],[2558.4172, 5370.1172],[13376.514, 8524.2969],[12219.544, 7072.0273],[13529.361, 5955.9336],[14848.032, 7133.2197],[-200.67474, 5186.1563],[1076.7949, 6512.5283],[-216.84814, 7855.0771],[10293.751, 12197.736],[7859.312, 9419.0996],[10672.988, 9419.0996],[7843.1387, 12088.021],[9136.7822, 10745.474],[5077.5791, 11914.601],[6371.2222, 10572.052],[5093.7524, 9245.6816],[2441.78, 11914.604],[3735.4231, 10572.055],[2457.9534, 9245.6816],[13276.053, 12399.861],[12119.08, 10947.596],[13428.897, 9831.501],[14747.566, 11008.786],[-301.13867, 9061.7207],[976.33112, 10388.096],[-317.31201, 11730.642],[10271.271, 16321.429],[7836.8315, 13542.813],[10650.506, 13542.813],[7820.6582, 16211.718],[9114.3018, 14869.175],[5055.0986, 16038.3],[6348.7417, 14695.758],[5071.272, 13369.392],[2419.2996, 16038.305],[3712.9426, 14695.76],[2435.4729, 13369.392],[13253.568, 16523.553],[12096.6, 15071.295],[13406.416, 13955.209],[14725.089, 15132.486],[-323.61914, 13185.43],[953.85059, 14511.8],[-339.79248, 15854.346]];
@@ -578,6 +580,7 @@ if (isServer) then {
 	currentObjectUIDs = [];
 	keyStartNumber = 100000000000;
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
+	serverVehicleCounter = [];
 	if(isNil "EpochEvents") then {EpochEvents = [];};
 	if(isNil "DZE_vehicleAmmo") then {DZE_vehicleAmmo = 0;};
 	if(isNil "DZE_BackpackGuard") then {DZE_BackpackGuard = true;};
@@ -592,9 +595,13 @@ if (isServer) then {
 	if(isNil "DynamicVehicleFuelHigh") then {DynamicVehicleFuelHigh = 100;};
 	if(isNil "HeliCrashArea") then {HeliCrashArea = dayz_MapArea / 2;};
 	if(isNil "OldHeliCrash") then {OldHeliCrash = false;};
-	if(isNil "DZE_DiagFpsSlow") then {DZE_DiagFpsSlow = false;};
-	if(isNil "DZE_DiagFpsFast") then {DZE_DiagFpsFast = false;};
-	if(isNil "DZE_DiagVerbose") then {DZE_DiagVerbose = false;};
+	if(isNil "DZE_DiagFpsSlow") then {DZE_DiagFpsSlow = false;}; // Log server FPS + player count every 5 minutes
+	if(isNil "DZE_DiagFpsFast") then {DZE_DiagFpsFast = false;}; // Log server FPS + player count every 2 minutes
+	if(isNil "DZE_DiagVerbose") then {DZE_DiagVerbose = false;}; // Also log allMissionObjects count (very intensive)
+	if(isNil "MaxAmmoBoxes") then {MaxAmmoBoxes = 3;};
+	if(isNil "MaxDynamicDebris") then {MaxDynamicDebris = 100;};
+	if(isNil "MaxMineVeins") then {MaxMineVeins = 50;};
+	if(isNil "MaxVehicleLimit") then {MaxVehicleLimit = 50;};
 };
 
 if (!isDedicated) then {

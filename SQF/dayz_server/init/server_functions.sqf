@@ -132,7 +132,7 @@ server_hiveReadWrite = {
 	//diag_log ("ATTEMPT READ/WRITE: " + _key);
 	_data = "HiveExt" callExtension _key;
 	//diag_log ("READ/WRITE: " +str(_data));
-	_resultArray = call compile format ["%1",_data];
+	_resultArray = call compile (str _data);
 	_resultArray
 };
 
@@ -208,9 +208,9 @@ dayz_reseed = {
 
 dze_diag_fps = {
 	if (DZE_DiagVerbose) then {
-		diag_log format["SERVER FPS : %1 OBJECTS: %2 : PLAYERS: %3",diag_fps,count (allMissionObjects ""),playersNumber west];
+		diag_log format["SERVER FPS: %1  PLAYERS: %2  OBJECTS: %3",diag_fps,playersNumber west,count (allMissionObjects "")];
 	} else {
-		diag_log format["SERVER FPS : %1",diag_fps];
+		diag_log format["SERVER FPS: %1  PLAYERS: %2",diag_fps,playersNumber west];
 	};
 };
 
@@ -218,14 +218,6 @@ generate_new_damage = {
 	private "_damage";
     _damage = ((random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow))+DynamicVehicleDamageLow) / 100;
 	_damage
-};
-
-server_hiveReadWriteLarge = {
-	private ["_key","_resultArray","_data"];
-	_key = _this;
-	_data = "HiveExt" callExtension _key;
-	_resultArray = call compile _data;
-	_resultArray
 };
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fa_hiveMaintenance.sqf";

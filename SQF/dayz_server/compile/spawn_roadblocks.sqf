@@ -1,7 +1,7 @@
 private ["_position","_veh","_istoomany","_spawnveh"];
 
 waitUntil {!isNil "BIS_fnc_selectRandom"};
-_position = RoadList call BIS_fnc_selectRandom;
+_position = roadList call BIS_fnc_selectRandom;
 _position = _position modelToWorld [0,0,0];
 
 waitUntil {!isNil "BIS_fnc_findSafePos"};

@@ -27,6 +27,7 @@ sched_co_deleteVehicle = {
 sched_corpses = {
 	private ["_delQtyZ","_delQtyP","_addFlies","_x","_deathTime","_onoff","_delQtyAnimal", "_sound", "_deathPos", "_cpos"];
 	// EVERY 2 MINUTE
+	if (DZE_DiagFpsFast) then {call dze_diag_fps;};
 	// DELETE UNCONTROLLED ZOMBIES --- PUT FLIES ON FRESH PLAYER CORPSES --- REMOVE OLD FLIES & CORPSES
 	_delQtyZ = 0;
 	_delQtyP = 0;

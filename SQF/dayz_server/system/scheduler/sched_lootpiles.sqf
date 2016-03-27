@@ -45,6 +45,7 @@ sched_lootpiles_5m = {
 sched_lootpiles = {
 	private ["_plrBatch","_chunkSize","_imax","_plr","_i","_x", "_changed"];
 	// EVERY 5 MINUTES, ONE OF THESE TASKS SPACED BY 5 SECONDS:
+	if (DZE_DiagFpsSlow) then {call dze_diag_fps;};
 	// LOOK FOR OLD LOOTPILES -OR- IGNORE LOOTPILES NEAR _plrBatch PLAYERS -OR- REMOVE REMAINING _chunkSize LOOTPILES 		
 	_chunkSize = 50;
 	_plrBatch = 10;
