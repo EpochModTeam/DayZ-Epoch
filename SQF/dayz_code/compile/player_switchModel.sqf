@@ -157,6 +157,7 @@ if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 [objNull, player, rSwitchMove, _currentAnim] call RE;
 //dayz_originalPlayer attachTo [_newUnit];
 player disableConversation true;
+player setVariable ["BIS_noCoreConversations",true];
 
 //	_playerUID=getPlayerUID player;
 //	_playerObjName = format["player%1",_playerUID];

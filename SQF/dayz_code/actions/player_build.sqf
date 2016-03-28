@@ -181,7 +181,7 @@ if(_IsNearPlot == 0) then {
 // _message
 if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; cutText [format[(localize "STR_EPOCH_PLAYER_135"),_needText,_distance] , "PLAIN DOWN"]; };
 
-_buildables = DZE_maintainClasses + DZE_LockableStorage;
+_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables"];
 _buildables set [count _buildables,"TentStorage"];
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
 if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false;cutText [(format [localize "str_epoch_player_41",_distance]),"PLAIN DOWN"];};

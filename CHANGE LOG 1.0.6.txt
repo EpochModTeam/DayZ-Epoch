@@ -15,6 +15,7 @@
 		- vehicle_handleKilled -->  fnc_veh_handleKilled
 	- Duplicate global variables have been renamed:
 		- dayz_allowedObjects --> DayZ_SafeObjects
+		- dayz_fullMoonNights --> dayz_ForcefullmoonNights
 		- dayz_updateObjects --> DayZ_GearedObjects
 		- freeTarget --> OpenTarget
 		- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor

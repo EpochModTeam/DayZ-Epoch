@@ -519,23 +519,15 @@ s_player_lockUnlockInside = [];
 s_player_parts = [];
 if(isNil "Dayz_Dark_UI") then {Dayz_Dark_UI = false;};
 if(isNil "DayZ_UseSteamID") then {DayZ_UseSteamID = true;};
-if(isNil "timezoneswitch") then {timezoneswitch = 0;};
 if(isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
-if(isNil "DZE_PlayerZed") then {DZE_PlayerZed = true;};
 if(isNil "DZE_GodModeBase") then {DZE_GodModeBase = false;};
 if(isNil "DZE_Debug_Damage") then {DZE_Debug_Damage = true;};
 if(isNil "DZE_TRADER_SPAWNMODE") then {DZE_TRADER_SPAWNMODE = false;};
-if(isNil "dayz_tameDogs") then {dayz_tameDogs = false;};
-if(isNil "dayz_sellDistance_vehicle") then {dayz_sellDistance_vehicle = 10;};
-if(isNil "dayz_sellDistance_boat") then {dayz_sellDistance_boat = 30;};
-if(isNil "dayz_sellDistance_air") then {dayz_sellDistance_air = 40;};
 if(isNil "dayz_paraSpawn") then {dayz_paraSpawn = false;};
 if(isNil "DZE_BuildingLimit") then {DZE_BuildingLimit = 150;};
-if(isNil "DZE_HumanityTargetDistance") then {DZE_HumanityTargetDistance = 25;};
 if(isNil "DZE_BuildOnRoads") then {DZE_BuildOnRoads = false;};
 if(isNil "DZE_MissionLootTable") then {DZE_MissionLootTable = false;};
 if(isNil "DZE_ConfigTrader") then {DZE_ConfigTrader = false;};
-if(isNil "DZE_HeliLift") then {DZE_HeliLift = true;};
 if(isNil "DZE_DamageBeforeMaint") then {DZE_DamageBeforeMaint = 0.09;};
 if(isNil "DZE_StaticConstructionCount") then {DZE_StaticConstructionCount = 0;};
 if(isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000, 15, 300];};
@@ -583,23 +575,13 @@ if (isServer) then {
 	serverVehicleCounter = [];
 	if(isNil "EpochEvents") then {EpochEvents = [];};
 	if(isNil "DZE_vehicleAmmo") then {DZE_vehicleAmmo = 0;};
-	if(isNil "DZE_BackpackGuard") then {DZE_BackpackGuard = true;};
-	if(isNil "DZE_DeathMsgGlobal") then {DZE_DeathMsgGlobal = false;};
-	if(isNil "DZE_DeathMsgSide") then {DZE_DeathMsgSide = false;};
-	if(isNil "DZE_DeathMsgTitleText") then {DZE_DeathMsgTitleText = false;};
 	if(isNil "dayz_MapArea") then {dayz_MapArea = 10000;};
 	if(isNil "DynamicVehicleArea") then {DynamicVehicleArea = dayz_MapArea / 2;};
-	if(isNil "DynamicVehicleDamageLow") then {DynamicVehicleDamageLow = 0;};
-	if(isNil "DynamicVehicleDamageHigh") then {DynamicVehicleDamageHigh = 100;};
-	if(isNil "DynamicVehicleFuelLow") then {DynamicVehicleFuelLow = 0;};
-	if(isNil "DynamicVehicleFuelHigh") then {DynamicVehicleFuelHigh = 100;};
 	if(isNil "HeliCrashArea") then {HeliCrashArea = dayz_MapArea / 2;};
 	if(isNil "DZE_DiagFpsSlow") then {DZE_DiagFpsSlow = false;}; // Log server FPS + player count every 5 minutes
 	if(isNil "DZE_DiagFpsFast") then {DZE_DiagFpsFast = false;}; // Log server FPS + player count every 2 minutes
 	if(isNil "DZE_DiagVerbose") then {DZE_DiagVerbose = false;}; // Also log allMissionObjects count (very intensive)
-	if(isNil "MaxAmmoBoxes") then {MaxAmmoBoxes = 3;};
 	if(isNil "MaxDynamicDebris") then {MaxDynamicDebris = 100;};
-	if(isNil "MaxMineVeins") then {MaxMineVeins = 50;};
 	if(isNil "MaxVehicleLimit") then {MaxVehicleLimit = 50;};
 };
 
@@ -721,14 +703,7 @@ if (!isDedicated) then {
 	Dayz_freefall = [ time, 0, 0.1 ];
 	
 	// EPOCH ADDITIONS
-	if(isNil "DZE_AllowCargoCheck") then {DZE_AllowCargoCheck = true;};
-	if(isNil "DZE_ForceNameTags") then {DZE_ForceNameTags = false;};
-	if(isNil "DZE_ForceNameTagsOff") then {DZE_ForceNameTagsOff = false;};
-	if(isNil "DZE_ForceNameTagsInTrader") then {DZE_ForceNameTagsInTrader = false;};
-	if(isNil "DZE_HaloJump") then {DZE_HaloJump = true;};
-	if(isNil "DZE_AntiWallLimit") then {DZE_AntiWallLimit = 3;};
 	if(isNil "DZE_requireplot") then {DZE_requireplot = 1;};
-	if(isNil "DZE_R3F_WEIGHT") then {DZE_R3F_WEIGHT = true;};
 	autoRunActive = 0;
 	dayz_combat = 0;
 	DZE_ActionInProgress = false;

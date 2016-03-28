@@ -176,9 +176,9 @@ if (DZE_HaloJump) then {
 	};
 };
 
-if (!DZE_ForceNameTagsOff) then {
+if (DZE_NameTags > 0) then {
 	if (s_player_showname < 0 && !_isPZombie) then {
-		if (DZE_ForceNameTags) then {
+		if (DZE_NameTags < 2) then {
 			s_player_showname = 1;
 			player setVariable["DZE_display_name",true,true];
 		} else {
