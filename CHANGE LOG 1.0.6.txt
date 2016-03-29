@@ -17,6 +17,7 @@
 		- dayz_allowedObjects --> DayZ_SafeObjects
 		- dayz_fullMoonNights --> dayz_ForcefullmoonNights
 		- dayz_updateObjects --> DayZ_GearedObjects
+		- DZE_CanPickup --> canPickup
 		- freeTarget --> OpenTarget
 		- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
 	- Duplicate public variables have been renamed:

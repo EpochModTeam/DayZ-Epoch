@@ -1,4 +1,4 @@
-private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx"];
+private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx","_bottleInfected","_msg"];
 
 if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_22","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
@@ -7,29 +7,20 @@ _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterBottle" >> "dis
 _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
 _tin2text = getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
 _tintext = format["%1 / %2",_tin1text,_tin2text];
-_bottleInfected = false;
-
-_hasbottleitem = (("ItemWaterBottle" in magazines player) || ("ItemWaterBottleInfected" in magazines player) || ("ItemWaterBottleSafe" in magazines player));
+_hasbottleitem = (("ItemWaterBottle" in magazines player) || {"ItemWaterBottleInfected" in magazines player} || {"ItemWaterBottleSafe" in magazines player});
 _hastinitem = false;
 a_player_boil = true;
-
 player removeAction s_player_boil;
 //s_player_boil = -1;
 
-if ("ItemWaterBottleInfected" in magazines player) then {
-	_bottleInfected = true;
-};
+_bottleInfected = if ("ItemWaterBottleInfected" in magazines player) then {true} else {false};
 
 {
-    if (_x in magazines player) then {
-        _hastinitem = true;
-    };
+    if (_x in magazines player) exitWith {_hastinitem = true;};
+} count boil_tin_cans;
 
-} forEach boil_tin_cans;
-
-
-if (!_hasbottleitem) exitWith {cutText [DZE_ActionInProgress = false; format [localize "str_player_31",_bottletext,localize "str_player_31_fill"] , "PLAIN DOWN"]; a_player_boil = false;};
-if (!_hastinitem) exitWith {DZE_ActionInProgress = false; cutText [format [localize "str_player_31",_tintext,localize "str_player_31_fill"] , "PLAIN DOWN"]; a_player_boil = false;};
+if (!_hasbottleitem) exitWith {cutText [format [localize "str_player_31",_bottletext,localize "str_player_31_fill"] , "PLAIN DOWN"]; a_player_boil = false;};
+if (!_hastinitem) exitWith {cutText [format [localize "str_player_31",_tintext,localize "str_player_31_fill"] , "PLAIN DOWN"]; a_player_boil = false;};
 
 if (_hasbottleitem and _hastinitem) then {
 	_qty = 0;
@@ -56,15 +47,14 @@ if (_hasbottleitem and _hastinitem) then {
 			};
 		};
 		
-		//if ([0.1] call fn_chance) then {
-			//player addMagazine "ItemWaterBottleDmg";
+		if (dayz_waterBottleBreaking && {[0.1] call fn_chance}) then {
+			player addMagazine "ItemWaterBottleDmg";
 			//systemChat (localize ("str_waterbottle_broke"));
-			//_msg = localize "str_waterbottle_broke";
-			//_msg call dayz_rollingMessages;
-		//} else {
+			_msg = localize "str_waterbottle_broke";
+			_msg call dayz_rollingMessages;
+		} else {
 			player addMagazine "ItemWaterBottleBoiled";
-		//};	
-
+		};
 	};
     //cutText [format [localize "str_player_boiledwater",_qty], "PLAIN DOWN"];
 	_msg = format [localize "str_player_boiledwater",_qty];

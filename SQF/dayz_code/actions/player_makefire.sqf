@@ -1,4 +1,4 @@
-private ["_item","_config","_text","_booleans","_worldspace","_dir","_location","_dis","_fire"];
+private ["_item","_config","_text","_booleans","_worldspace","_dir","_location","_dis","_fire","_tool","_itemPile"];
 
 _tool = _this;
 call gear_ui_init;
@@ -6,12 +6,11 @@ closeDialog 0;
 
 _item = "ItemLog";
 _itemPile = "PartWoodPile";
-
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
 // item is missing or tools are missing
-if ((!(_item IN magazines player)) && (!(_itemPile in magazines player))) exitWith {
+if (!(_item in magazines player) && !(_itemPile in magazines player)) exitWith {
 	//cutText [localize "str_player_22", "PLAIN DOWN"];
 	(localize "str_player_22") call dayz_rollingMessages;
 };
@@ -45,17 +44,15 @@ if ((count _worldspace) == 2) then {
 
 	// Added Nutrition-Factor for work
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-
+	
 	uiSleep 5;
 
 	_fire = createVehicle ["Land_Fire_DZ", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
 	_fire setDir _dir;
 	_fire setPos _location; // follow terrain slope
 	player reveal _fire;
-
 	[_fire,true] call dayz_inflame;
 	_fire spawn player_fireMonitor;
-
 	
 	if (dayz_playerAchievements select 14 < 1) then {
 	// Firestarter

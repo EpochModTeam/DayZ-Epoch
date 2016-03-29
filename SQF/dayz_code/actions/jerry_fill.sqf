@@ -24,7 +24,7 @@ _qty = count _fuelCans;
 	
 	_fillCounter = _fillCounter + 1;
 
-	cutText [format[(localize "str_epoch_player_133"),_displayName], "PLAIN DOWN"];	
+	cutText [format[(localize "str_siphon_preparing"),_displayName], "PLAIN DOWN"];	
 	
 	[1,1] call dayz_HungerThirst;
 	// force animation 
@@ -65,7 +65,7 @@ _qty = count _fuelCans;
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [localize "str_epoch_player_35","PLAIN DOWN"];
+		cutText [localize "str_siphon_canceled","PLAIN DOWN"];
 		_abort = true;
 	};
 

@@ -1,8 +1,6 @@
 private ["_rawmeat","_cookedmeat","_meat","_meatcooked","_text","_qty","_dis","_sfx"];
-
 if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_23","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
-
 //diag_log ("Cook Enabled");
 player removeAction s_player_cook;
 s_player_cook = -1;

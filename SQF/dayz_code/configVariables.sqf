@@ -3,6 +3,8 @@
 // To change a variable copy it to your mission init.sqf in the Epoch Config Variables section
 // Standard DayZ variables are found in dayz_code\init\variables.sqf
 
+dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
+dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
 dayz_sellDistance_vehicle = 10; // Max distance players can sell land vehicles from at traders
 dayz_sellDistance_boat = 30; // Max distance players can sell boats from at traders
 dayz_sellDistance_air = 40; // Max distance players can sell air vehicles from at traders

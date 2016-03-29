@@ -1,4 +1,4 @@
-private["_playerPos","_canFill","_isPond","_isWell","_pondPos","_objectsWell","_onLadder","_hasbottleitem","_config","_item","_text","_objectsPond","_qty","_dis","_sfx","_isInfected","_bodiesNear","_chance"];
+private ["_playerPos","_canFill","_isPond","_isWell","_pondPos","_objectsWell","_onLadder","_hasbottleitem","_config","_item","_text","_objectsPond","_qty","_dis","_sfx","_isInfected","_bodiesNear","_chance","_itemorignal","_well"];
 
 call gear_ui_init;
 closeDialog 0;
@@ -53,10 +53,10 @@ if (!_canFill) then {
 };
 
 if (_canFill) then {
-	_chance = 0.05;
+	_chance = 0.1;
 	
 	if (_itemorignal in boil_tin_cans) then {
-		_chance = 0.03;
+		_chance = 0.06;
 		["FoodDrink",0,[0,0,300,0]] call dayz_NutritionSystem; //[Energy,food,water,temp]
 	} else {
 		_chance = 0.03;

@@ -21,12 +21,26 @@ Author:
 #define SEARCH_SLOPE_MAX 1000
 #define SEARCH_BLACKLIST [[[12923,3643],[14275,2601]]]
 
-private ["_typeGroup","_position","_type","_class","_vehicle","_loot","_lootGroup","_lootNum","_lootPos","_lootVeh","_size"];
+private
+[
+	"_typeGroup",
+	"_position",
+	"_type",
+	"_class",
+	"_vehicle",
+	"_loot",
+	"_lootGroup",
+	"_lootNum",
+	"_lootPos",
+	"_lootVeh",
+	"_size"
+];
 
 _lootGroup = Loot_GetGroup("CarePackage");
 _typeGroup = Loot_GetGroup("CarePackageType");
 
-for "_i" from 1 to (SPAWN_NUM) do {
+for "_i" from 1 to (SPAWN_NUM) do
+{
 	_type = Loot_SelectSingle(_typeGroup);
 	_class = _type select 1;
 	_lootNum = round Math_RandomRange(_type select 2, _type select 3);
@@ -49,15 +63,21 @@ for "_i" from 1 to (SPAWN_NUM) do {
 		_lootVeh = Loot_Spawn(_x, _lootPos);
 		_lootVeh setVariable ["permaLoot", true];
 				
-		switch (dayz_spawncarepkgs_clutterCutter) do {
-			case 1: { //Lift loot up by 5cm
+		switch (dayz_spawncarepkgs_clutterCutter) do
+		{
+			case 1: //Lift loot up by 5cm
+			{
 				_lootPos set [2, 0.05];
 				_lootVeh setPosATL _lootpos;
-			};		
-			case 2: { //Clutter cutter
+			};
+			
+			case 2: //Clutter cutter
+			{
 				createVehicle ["ClutterCutter_small_2_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
-			};		
-			case 3: { //Debug sphere
+			};
+			
+			case 3: //Debug sphere
+			{
 				createVehicle ["Sign_sphere100cm_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
 			};
 		};

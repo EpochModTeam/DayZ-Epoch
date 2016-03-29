@@ -1,8 +1,9 @@
-private ["_item","_config","_onLadder","_consume","_bag","_droppedtype"];
+private ["_item","_config","_onLadder","_consume","_bag","_droppedType"];
+
 disableSerialization;
 _item = _this;
 _config = configFile >> "CfgWeapons" >> _item;
-_droppedtype = (gettext (_config >> "droppeditem"));
+_droppedType = getText (_config >> "droppeditem");
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith { cutText [localize "str_player_21", "PLAIN DOWN"]; r_action_count = 0; };
@@ -17,19 +18,19 @@ if ((dayz_onBack != "") && (dayz_onBack in MeleeWeapons) && carryClick) then {
 		case "MeleeHatchet": {_item = "ItemHatchet"; dayz_onBack = "";};
 		case "MeleeCrowbar": {_item = "ItemCrowbar"; dayz_onBack = "";};
 		case "MeleeMachete": {_item = "ItemMachete"; dayz_onBack = "";};
+		case "MeleeHatchet_DZE": {_item = "ItemHatchet_DZE"; dayz_onBack = "";};
 		case "MeleeSledge": {_item = "ItemSledge"; dayz_onBack = "";};
-		case "MeleeFishingPole": {_item = "ItemFishingPole"; dayz_onBack = "";};
 	};
 	carryClick = false;
 	((findDisplay 106) displayCtrl 1209) ctrlSetText "";
 } else {
 	player removeMagazines _consume;
 	player removeWeapon _item;
-	if (_droppedtype == "") then { _item = _this; } else { _item = _droppedtype; };
+	_item = if (_droppedType == "") then {_this} else {_droppedType};
 };
 
 _bag = createVehicle [format["WeaponHolder_%1",_item],getPosATL player,[], 1, "CAN_COLLIDE"];
 _bag modelToWorld getPosATL player;
-_bag setdir (getDir player);
+_bag setDir (getDir player);
 player reveal _bag;
 r_action_count = 0;

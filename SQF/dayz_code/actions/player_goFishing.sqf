@@ -4,8 +4,8 @@
 	Made for DayZ Mod please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	fixed by facoptere@gmail.com for dayzmod
 */
-private ["_linecastmax","_linecastmin","_num","_position","_ispond","_objectsPond","_isPondNearBy","_isOk","_counter",
-"_vehicle","_inVehicle","_rnd","_itemOut","_text","_item","_itemtodrop","_result", "_elevation"];
+private ["_linecastmax","_linecastmin","_num","_position","_ispond","_objectsPond","_isPondNearBy","_isOk","_counter","_vehicle","_inVehicle",
+"_rnd","_itemOut","_text","_item","_itemtodrop","_result","_elevation","_inBoat","_i","_ret","_bb","_w2m","_dir"];
 
 //if (!isNil "faco_goFishing") exitWith { _this call faco_goFishing };
 
@@ -21,7 +21,7 @@ dayz_fishingInprogress = true;
 _linecastmax = 67;
 
 _isOk = false;
-_inBoat = (player != vehicle player) and {((vehicle player) isKindOf "Ship")};
+_inBoat = (player != vehicle player) && {(vehicle player) isKindOf "Ship"};
 for "_i" from 1 to 10 do {
     _num = floor(random (2 * _linecastmax / 3) + _linecastmax / 3);
     _position = if (_inBoat) then { (vehicle player) modeltoworld [-_num, 0 ,0] } else { player modeltoworld [0,_num,0] };
@@ -52,11 +52,11 @@ for "_i" from 1 to 10 do {
                 };
             } count (nearestObjects [_x, [], 2]); // find ponds
             if (_ret) exitWith {};
-        } foreach nearestObjects [_position, ["waterHoleProxy"], 45]; // find waterholeproxy close to pond centers
+        } forEach nearestObjects [_position, ["waterHoleProxy"], 45]; // find waterholeproxy close to pond centers
         _ret
     };
 //    diag_log [ _position, _elevation, surfaceIsWater _position, _linecastmax, _ispond, "=>",  ((surfaceIsWater _position or _ispond) and ((player == vehicle player) or {((vehicle player) isKindOf "Ship")})) ];
-    if ((surfaceIsWater _position or _ispond) and ((player == vehicle player) or {((vehicle player) isKindOf "Ship")})) exitWith {
+    if ((surfaceIsWater _position or _ispond) && ((player == vehicle player) or {(vehicle player) isKindOf "Ship"})) exitWith {
         _isOk = true;
     };
 };
@@ -73,7 +73,6 @@ player playActionNow "GestureSwing";
 
 // Alert zeds
 [player,3,true,(getPosATL player)] call player_alertZombies;
-
 r_interrupt = false;
 
 while {_isOk} do {
@@ -87,9 +86,7 @@ while {_isOk} do {
         cutText [localize "str_fishing_canceled", "PLAIN DOWN"];
     } else {
         //make sure the player isnt swimming
-
-        // wait for animation
-        uiSleep 2;
+        uiSleep 2; // wait for animation
 
         // check if player is in boat
         _vehicle = vehicle player;
@@ -104,7 +101,7 @@ while {_isOk} do {
         if (rain > 0) then {_rnd = _rnd / 2;};
 
         // 1% chance to catch anything
-        if((random _rnd) <= 5) then {
+        if ((random _rnd) <= 5) then {
             // Just the one fish for now
             _itemOut = [];
             _itemOut = switch (true) do {
@@ -115,7 +112,7 @@ while {_isOk} do {
             };
             _itemOut = _itemOut call BIS_fnc_selectRandom;
             _text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");
-            if(_inVehicle) then { 
+            if (_inVehicle) then { 
                 _item = _vehicle;
                 _itemtodrop = _itemOut;
                 _item addMagazineCargoGlobal [_itemtodrop,1];
@@ -140,7 +137,6 @@ while {_isOk} do {
             ["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
             _isOk = false;
         } else {
-
             switch (true) do {
                 case (_counter == 0) : { cutText [format [localize "str_fishing_cast",_num], "PLAIN DOWN"]; }; 
                 case (_counter == 4) : { cutText [localize "str_fishing_pull", "PLAIN DOWN"]; player playActionNow "GesturePoint"; }; 
@@ -149,9 +145,9 @@ while {_isOk} do {
             }; 
             _counter = _counter + 1;
 
-            if(_counter == 12) then {
+            if (_counter == 12) then {
                 _isOk = false;
-                uisleep 1;
+                uiSleep 1;
                 cutText [localize "str_fishing_failed", "PLAIN DOWN"];
             };
         };

@@ -1089,6 +1089,7 @@
 			<Czech>Demontáž již probíhá.</Czech>
 			<French>Récupération déjà en cours.</French>
 			<German>Die Demontage läuft bereits.</German>
+			<Dutch>Reeds bezig met bergen.</Dutch>
 		</Key>
 		<Key ID="str_salvage_destroyed">
 			<!-- %1 part name %2 veh name -->
@@ -1098,6 +1099,7 @@
 			<Czech>%1 se vám při pokusu o demontáž z %2 podařilo úplně zničit.</Czech>
 			<French>Vous avez détruit %1 lors tentative de retrait de %2</French>
 			<German>%1 wurde zerstoert, als du versucht hast, %2 auszuschlachten.</German>
+			<Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2</Dutch>
 		</Key>
 		<Key ID="str_salvage_removed">
 			<!-- %1 part name %2 veh name -->
@@ -1107,6 +1109,7 @@
 			<Czech>Úspěšně jste odmontovali %1 z %2</Czech>
 			<French>Vous avez retiré %1 de %2</French>
 			<German>%1 wurde erfolgreich aus %2 ausgebaut.</German>
+			<Dutch>Je hebt met succes de %1 van de %2 verwijderd.</Dutch>
 		</Key>
 		<Key ID="str_salvage_canceled">
 			<English>Salvage canceled.</English>
@@ -1224,6 +1227,7 @@
 			<Czech>Přečerpávání již probíhá.</Czech>
 			<French>Siphonnage en cours.</French>
 			<German>Der Treibstoff fliesst bereits ab.</German>
+			<Dutch>Reeds bezig met brandstofverplaatsing.</Dutch>
 		</Key>
 		<Key ID="str_siphon_preparing">
 			<!-- %1 empty jerrycan name -->
@@ -1233,6 +1237,7 @@
 			<Czech>Začíná přečerpávání. Stůjte klidně, abyste naplnili %1.</Czech>
 			<French>Prêt pour le siphonnage, ne bougez plus pour remplir le %1</French>
 			<German>Der Treibstoff kann abgezapft werden. Stillhalten, um %1 zu fuellen.</German>
+			<Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
 		</Key>
 		<Key ID="str_siphon_drained">
 			<!-- %1 vehicle name -->
@@ -1242,6 +1247,7 @@
 			<Czech>Z %1 bylo přečerpáno %2 litrů paliva.</Czech>
 			<French>Le %1 a été siphonné de %2 litres de carburant</French>
 			<German>%1 wurden %2 Liter Treibstoff abgezapft.</German>
+			<Dutch>Je hebt %2 liter brandstof uit de %1 gehaald.</Dutch>
 		</Key>
 		<Key ID="str_siphon_notenough">
 			<!-- %1 vehicle name -->
@@ -1251,6 +1257,7 @@
 			<Czech>%1 nemá dostatek paliva k přečerpání.</Czech>
 			<French>Le %1 n&apos;a pas assez de carburant à siphonner.</French>
 			<German>Es ist nicht mehr genuegend Treibstoff im %1, um etwas abzuzapfen.</German>
+			<Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
@@ -1259,6 +1266,7 @@
 			<Czech>Přečerpávání přerušeno.</Czech>
 			<French>Annuler le siphonnage</French>
 			<German>Abzapfen abgebrochen</German>
+			<Dutch>Brandstofverplaatsing stopgezet</Dutch>
 		</Key>
 		<Key ID="str_waterbottle_broke">
 			<English>As you boil the water you notice a leak. Looks like you need to fix that.</English>
@@ -7433,6 +7441,7 @@
 			<Spanish>Cargaste exitosamente munición de %1</Spanish>
 			<French>Vous avez chargé %1 munitions.</French>
 			<Czech>Úspěšně jste nabili munici %1.</Czech>
+			<Dutch>Je hebt met succes %1 munitie bijgeladen.</Dutch>
 		</Key>
 		<Key ID="str_player_ammo_fail">
 			<English>You need %1 type of ammo to do this.</English>
@@ -7441,9 +7450,8 @@
 			<Spanish>Necesitas munición del tipo %1 para hacer esto.</Spanish>
 			<French>Vous avez besoin de %1 type de munition pour ce faire.</French>
 			<Czech>Pro toto potřebujete tento typ munice: %1.</Czech>
+			<Dutch>Je hebt minstens %1 munitie nodig om dit te doen.</Dutch>
 		</Key>
-
-		
 		<Key ID="str_player_ammo_2primary">
 			<English>You can&apos;t carry two primary weapons at the same time!</English>
 			<Russian>Нельзя одновременно носить наготове два основных типа оружия!</Russian>
@@ -9648,8 +9656,7 @@
 			<Czech>Kovový plot</Czech>
 			<German>Metallzaun</German>
 		</Key>
-	</Package>
-	
+	</Package>	
 	<Package name="weapons">
 		<!-- **** WEAPONS **** -->
 		

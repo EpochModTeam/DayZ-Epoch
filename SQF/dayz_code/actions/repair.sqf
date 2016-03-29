@@ -1,6 +1,6 @@
-private["_id","_array","_vehicle","_part","_hitpoint","_type","_hasToolbox","_section","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed"];
 if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_92","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
+private ["_array","_vehicle","_part","_hitpoint","_type","_hasToolbox","_section","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed","__FILE__"];
 
 _id = _this select 2;
 _array = _this select 3;
@@ -25,7 +25,7 @@ _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 if (_section and _hasToolbox) then {
 	player removeMagazine _part;
 	player playActionNow "Medic";
-	uisleep 1;
+	sleep 1;
 
 	_dis=20;
 	_sfx = "repair";
@@ -35,7 +35,7 @@ if (_section and _hasToolbox) then {
 	// Added Nutrition-Factor for work
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-	uisleep 5;
+	sleep 5;
 
 	_damage = [_vehicle,_hitpoint] call object_getHit;
 	_vehicle removeAction _id;

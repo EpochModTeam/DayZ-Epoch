@@ -1,5 +1,4 @@
-private ["_item", "_type", "_hasHarvested", "_config", "_knifeArray", "_PlayerNear", "_isListed", "_activeKnife", "_text", "_dis", "_sfx", "_sharpnessRemaining"];
-
+private ["_item","_type","_hasHarvested","_config","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_sharpnessRemaining","_qty","_chance","_msg","_string"];
 if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_29","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 
@@ -14,7 +13,7 @@ player removeAction s_player_butcher;
 s_player_butcher = -1;
 
 _PlayerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 10]) > 1;
-if (_PlayerNear) exitWith {cutText [localize "str_pickup_limit_5", "PLAIN DOWN"]};
+if (_PlayerNear) exitWith {cutText [localize "str_pickup_limit_5", "PLAIN DOWN"] DZE_ActionInProgress = false;};
 
 //Count how many active tools the player has
 {
@@ -23,21 +22,20 @@ if (_PlayerNear) exitWith {cutText [localize "str_pickup_limit_5", "PLAIN DOWN"]
 	};
 } count Dayz_Gutting;
 
-if ((count _knifeArray) < 1) exitwith { cutText [localize "str_cannotgut", "PLAIN DOWN"] };
+if ((count _knifeArray) < 1) exitwith { cutText [localize "str_cannotgut", "PLAIN DOWN"]; DZE_ActionInProgress = false; };
 
 
 if ((count _knifeArray > 0) and !_hasHarvested) then {
-	private ["_qty"];
+	private "_qty";
 	
 	//Select random can from array
 	_activeKnife = _knifeArray call BIS_fnc_selectRandom; 
 	
 	//Get Animal Type
-	_isListed = isClass (_config);
+	_isListed = isClass _config;
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 
 	player playActionNow "Medic";
-
 	_dis=10;
 	_sfx = "gut";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
@@ -48,18 +46,14 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 
 	_item setVariable ["meatHarvested",true,true];
 
-	_qty = 2;
-	if (_isListed) then {
-		_qty = getNumber (_config >> "yield");
-	};
-
+	_qty = if (_isListed) then {getNumber (_config >> "yield")} else {2};
 	if (_activeKnife == "ItemKnifeBlunt") then { _qty = round(_qty / 2); };
 
 	if (local _item) then {
 		[_item,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
 	} else {		
-		PVCDZE_obj_GutBody =[_item,_qty];
-		publicVariable "PVCDZE_obj_GutBody";
+		PVCDZ_obj_GutBody =[_item,_qty];
+		publicVariable "PVCDZ_obj_GutBody";
 		
 		//achievement system
 		if (!achievement_Gut) then {
@@ -67,34 +61,35 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 		};
 	};
 	
-	//_sharpnessRemaining = getText (configFile >> "cfgWeapons" >> _activeKnife >> "sharpnessRemaining");
-	
-	/* switch _activeKnife do {
-		case "ItemKnife" : { 
-			//_chance = getNumber (configFile >> "cfgWeapons" >> _activeKnife >> "chance");
-			if ([0.2] call fn_chance) then {
+	if (dayz_knifeDulling) then {
+		_sharpnessRemaining = getText (configFile >> "cfgWeapons" >> _activeKnife >> "sharpnessRemaining");
+		
+		switch _activeKnife do {
+			case "ItemKnife" : { 
+				//_chance = getNumber (configFile >> "cfgWeapons" >> _activeKnife >> "chance");
+				if ([0.2] call fn_chance) then {
+					player removeWeapon _activeKnife;
+					player addWeapon _sharpnessRemaining;
+					
+					//systemChat (localize "str_info_bluntknife");	
+					_msg = localize "str_info_bluntknife";
+					_msg call dayz_rollingMessages;
+				};	
+			};
+			case "ItemKnifeBlunt" : { 
+				//do nothing
+			};
+			default { 
 				player removeWeapon _activeKnife;
 				player addWeapon _sharpnessRemaining;
-				
-				//systemChat (localize "str_info_bluntknife");	
-				_msg = localize "str_info_bluntknife";
-				_msg call dayz_rollingMessages;
-			};	
+			};
 		};
-		case "ItemKnifeBlunt" : { 
-			//do nothing
-		};
-		default { 
-			player removeWeapon _activeKnife;
-			player addWeapon _sharpnessRemaining;
-		};
-	};	*/
+	};
 	
-	uisleep 6;
+	uiSleep 6;
 	_string = format[localize "str_success_gutted_animal",_text,_qty];
-	
-	closedialog 0;
-	uisleep 0.02;
+	closeDialog 0;
+	uiSleep 0.02;
 	//cutText [_string, "PLAIN DOWN"];
 	_string call dayz_rollingMessages;
 };

@@ -1,4 +1,4 @@
-private["_item","_config","_onLadder","_classname","_text","_consume","_hastrapitem","_location","_object"];
+private ["_item","_config","_onLadder","_classname","_text","_consume","_hastrapitem","_location","_object"];
 
 _item = _this;
 _config = configFile >> "CfgWeapons" >> _item;
@@ -22,7 +22,7 @@ player removeMagazine _item;
 _location = getPosATL player;
 
 player playActionNow "PutDown";
-uiSleep 1;
+sleep 1;
 
 _object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _object setDir (getDir player);

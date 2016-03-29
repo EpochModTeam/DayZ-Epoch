@@ -1,7 +1,7 @@
-private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling"];
-
 if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_24","PLAIN DOWN"]};
 DZE_ActionInProgress = true;
+private ["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling","_array","_cantype",
+"_emptycan","_isMan","_isAnimal","_isZombie","_started","_finished","_animState","_isRefuel"];
 
 _vehicle = cursorTarget;
 _array = _this select 3;
@@ -18,11 +18,10 @@ _isMan = _vehicle isKindOf "Man";
 _isAnimal = _vehicle isKindOf "Animal";
 _isZombie = _vehicle isKindOf "zZombie_base";
 
-if (_isMan or _isAnimal or _isZombie) exitWith {DZE_ActionInProgress = false; cutText [localize "str_refuel_notvehicle", "PLAIN DOWN"] };
-if (fuel _vehicle == 1) exitwith {DZE_ActionInProgress = false;};
+if (_isMan or _isAnimal or _isZombie) exitWith { cutText [localize "str_refuel_notvehicle", "PLAIN DOWN"]; DZE_ActionInProgress = false;};
+if (fuel _vehicle == 1) exitWith {DZE_ActionInProgress = false;};
 
 player removeAction s_player_fillfuel + _capacity;
-
 a_player_jerryfilling = true;
 player setVariable ["fueling", true];
 
@@ -57,7 +56,7 @@ if (!_fueling) then {
 			r_doLoop = false;
 			_finished = true;
 		};
-		uisleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 
@@ -70,8 +69,7 @@ if (!_fueling) then {
 		};
 
 		cutText [format [localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
-		uisleep 1;
-
+		uiSleep 1;
 		call fnc_usec_medic_removeActions;
 	};
 	[player] allowGetIn true;

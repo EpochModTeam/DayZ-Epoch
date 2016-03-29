@@ -34,7 +34,7 @@ DayZ_Female = ["SurvivorW2_DZ","BanditW1_DZ","BanditW2_DZ","SurvivorWcombat_DZ",
 
 //Classnames for specific items
 MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball","MeleeBaseBallBat","MeleeBaseBallBatBarbed","MeleeBaseBallBatNails","MeleeFishingPole","MeleeSledge","MeleeHatchet_DZE"];
-MeleeMagazines = ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing"];
+MeleeMagazines = ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
 Dayz_fishingItems = ["MeleeFishingPole"];
 Dayz_plants = ["Dayz_Plant1","Dayz_Plant2","Dayz_Plant3"];
 Dayz_attachment_array = ["Attachment_ACG","Attachment_AIM"];
@@ -711,7 +711,6 @@ if (!isDedicated) then {
 	DZE_myHaloVehicle = objNull;
 	dayz_myLiftVehicle = objNull;
 	DZE_Friends = [];
-	DZE_CanPickup = true;
 	DZE_Q = false;
 	DZE_Z = false;
 	DZE_Q_alt = false;

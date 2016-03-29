@@ -1,4 +1,6 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort","_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText","_availableCansEmpty","_hasHose"];
+private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort",
+"_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText",
+"_availableCansEmpty","_hasHose","_PlayerNear","_isMan","_isAnimal","_isZombie"];
 
 player removeAction s_player_siphonfuel;
 _hasHose = "equip_hose" in magazines player;
@@ -13,7 +15,7 @@ _vehicle = _this select 3;
 _abort = false;
 
 // Static vehicle fuel information
-_configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
+_configVeh = 	configFile >> "cfgVehicles" >> typeOf _vehicle;
 _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameText = 	getText(_configVeh >> "displayName");
 _isMan = _vehicle isKindOf "Man";

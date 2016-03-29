@@ -428,15 +428,6 @@
 			<French>Le dépeçage de l'animal est déjà en cours.</French>
 			<Czech>Kuchání zvířete již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_30">
-			<English>Canceled gutting.</English>
-			<German>Ausweiden abgerochen.</German>
-			<Russian>Разделывание отменено.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Gestopt met opensnijden.</Dutch>
-			<French>Dépeçage interrompu.</French>
-			<Czech>Akce zrušena.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_31">
 			<English>Gutting zombie already in progress.</English>
 			<German>Ausweiden des Zombies bereits im Gange.</German>
@@ -472,15 +463,6 @@
 			<Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
 			<French>Le remplissage du jerrycan est déjà en cours.</French>
 			<Czech>Plnění kanystru již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_35">
-			<English>Canceled siphon.</English>
-			<German>Umfüllen abgebrochen.</German>
-			<Russian>Слив отменён.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Brandstofverplaatsing stopgezet</Dutch>
-			<French>Siphonage annulé.</French>
-			<Czech>Přečerpávání přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_36">
 			<English>\n\nNo recent Deaths.</English>
@@ -860,15 +842,6 @@
 			<French>\n\nVous ne pouvez pas porter les vêtements du sexe opposé.</French>
 			<Czech>\n\nNemůžete nosit oblečení opačného pohlaví.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_87">
-			<English>Canceled refuel.</English>
-			<German>Befüllen abgebrochen.</German>
-			<Russian>Заправка отменена.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Bijtanken gestopt.</Dutch>
-			<French>Remplissage du réservoir annulé.</French>
-			<Czech>Tankování zrušeno.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_88">
 			<English>Remove already in progress.</English>
 			<German>Entfernen bereits im Gange.</German>
@@ -914,33 +887,6 @@
 			<French>La réparation est déjà en cours.</French>
 			<Czech>Opravování již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_93">
-			<English>Canceled Repair.</English>
-			<German>Reperatur abgebrochen.</German>
-			<Russian>Починка отменена.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Reparatie afgebroken.</Dutch>
-			<French>Réparation annulée.</French>
-			<Czech>Zrušena oprava.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_94">
-			<English>Salvage already in progress.</English>
-			<German>Bergen bereits im Gange.</German>
-			<Russian>Уже снимается.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Reeds bezig met bergen.</Dutch>
-			<French>La récupération est déjà en cours.</French>
-			<Czech>Demontáž i probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_95">
-			<English>Canceled Salvage.</English>
-			<German>Bergen abgebrochen.</German>
-			<Russian>Снятие отменено.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Berging afgebroken.</Dutch>
-			<French>Récupération annulée.</French>
-			<Czech>Demontáž zrušena.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_96">
 			<English>already in progress.</English>
 			<German>bereits im Gange.</German>
@@ -958,15 +904,6 @@
 			<Dutch>Reeds bezig met handellen.</Dutch>
 			<French>La transaction est déjà en cours.</French>
 			<Czech>Obchodování již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_98">
-			<English>Siphon already in progress.</English>
-			<German>Umfüllen bereits im Gange.</German>
-			<Russian>Уже сливается.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Reeds bezig met brandstofverplaatsing.</Dutch>
-			<French>Le siphonage est déjà en cours.</French>
-			<Czech>Přečerpávání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_99">
 			<English>Stop already in progress.</English>
@@ -1193,42 +1130,6 @@
 			<French>Combinaison incorrecte, %1 reste verrouillé.</French>
 			<Czech>Nesprávná kombinace, %1 je stále zamknut.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_127">
-			<English>You have successfully loaded %1 ammunition.</English>
-			<German>Sie haben erfolgreich %1 Munition geladen.</German>
-			<Russian>Вы успешно загрузили %1 боеприпасы.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt met succes %1 munitie bijgeladen.</Dutch>
-			<French>Vous avez rechargé les munitions de %1 avec succés.</French>
-			<Czech>Úspěšně jste naložili %1 munici.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_128">
-			<English>You need %1 type of ammo to do this.</English>
-			<German>Sie benötigen folgene Muntion um dies zu tun: %1</German>
-			<Russian>Вам нужен %1 тип патронов, чтобы сделать это.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt minstens %1 munitie nodig om dit te doen.</Dutch>
-			<French>Vous avez besoin de munitions %1 pour faire ça.</French>
-			<Czech>Potřebujete munici typu %1 pro dokončení.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_129">
-			<English>Started cooking %1</English>
-			<German>Beginne das Kochen von %1</German>
-			<Russian>Начали готовить %1</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Begonnen met het koken van %1</Dutch>
-			<French>Début de la cuisson de %1</French>
-			<Czech>Začalo vaření %1</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_130">
-			<English>Canceled cooking %1</English>
-			<German>Kochen von %1 abgebrochen</German>
-			<Russian>Приготовление %1 отменено</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Gestopt met het koken van %1</Dutch>
-			<French>Cuisson de %1 annulée</French>
-			<Czech>Zrušeno vaření %1</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_131">
 			<English>Filling up %1, move to cancel.</English>
 			<German>Betanken von %1, bewegen Sie sich um den Vorgang abzubrechen.</German>
@@ -1246,15 +1147,6 @@
 			<Dutch>%1 is voor %2 procent gevuld.</Dutch>
 			<French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_133">
-			<English>Preparing to siphon, stand still to fill %1.</English>
-			<German>Starte das Umfüllen, bewegen Sie sich nicht um %1 zu befüllen.</German>
-			<Russian>Подготовка к сливу, стойте на месте, чтобы заполнить %1.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
-			<French>Préparation du siphonage, restez immobile pour remplir %1.</French>
-			<Czech>Příprava pro přečerpání, stůjte na místě pro naplnění %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
 			<English>You have filled %1 with fuel.</English>
@@ -1490,24 +1382,6 @@
 			<!-- <French></French> -->
 			<Czech>Upgranuli jste %1.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_160">
-			<English>Preparing to refuel, stand still to drain %1.</English>
-			<German>Betanken von %1 wird vorbereitet, bewegen Sie sich um den Vorgang abzubrechen.</German>
-			<Russian>Подготовка к заправке, стойте на месте, чтобы опустошить 1%.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Bijtanken aan het voorbereiden. Sta stil om de %1 leeg te gieten.</Dutch>
-			<!-- <French></French> -->
-			<Czech>Příprava přečerpání, stůjte na místě pro čerpání z %1.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_161">
-			<English>%1 cannot hold that much fuel.</English>
-			<German>%1 kann nicht so viel Kraftstoff halten.</German>
-			<Russian>%1 не может хранить столько топлива.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Geen ruimte meer voor brandstof in deze %1.</Dutch>
-			<!-- <French></French> -->
-			<Czech>%1 nemůže mít tolik paliva.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_162">
 			<English>Starting de-construction of %1.</English>
 			<German>Starte Dekonstruktion von %1.</German>
@@ -1543,69 +1417,6 @@
 			<Dutch>%1 aan het slopen.</Dutch>
 			<!-- <French></French> -->
 			<Czech>Rozebírání %1.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_166">
-			<English>You have successfully attached %1 to the %2</English>
-			<German>Sie haben erfolgreich %1 zum/zur %2 hinzugefügt.</German>
-			<Russian>Вы успешно установили %1 на %2</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt succesvol %1 aan de %2 gemonteerd.</Dutch>
-			<!-- <French></French> -->
-			<Czech>Úspěšně jste připevnili %1 ke %2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_167">
-			<English>You need %1 to repair this</English>
-			<German>Sie benötigen %1 um dies zu reparieren.</German>
-			<Russian>Вам нужно %1, чтобы отремонтировать это</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Om dit te repareren heb je %1 nodig.</Dutch>
-			<!-- <French></French> -->
-			<Czech>K opravě tohoto potřebujete %1</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_168">
-			<English>You have destroyed %1 while attempting to remove from %2</English>
-			<German>Beim Abmontieren von dem/der %2 wurde %1 zerstört.</German>
-			<Russian>Вы сломали %1, при попытке снятия с %2</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2</Dutch>
-			<!-- <French></French> -->
-			<Czech>Zničili jste %1 při pokusu o odstranění z %2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_169">
-			<English>You have successfully removed %1 from the %2</English>
-			<German>Sie haben erfolgreich ein(e) %1 von dem/der %2 demontiert.</German>
-			<Russian>Вы успешно сняли %1 с %2</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt met succes de %1 van de %2 verwijderd.</Dutch>
-			<!-- <French></French> -->
-			<Czech>Úspěšně jste odstranili %1 z %2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_170">
-			<English>You need %1 to remove this part.</English>
-			<German>Sie benötigen eine %1 um dieses Teil zu demontieren.</German>
-			<Russian>Вам нужно %1, чтобы снять эту запчасть.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt %1 nodig om dit deel te verwijderen.</Dutch>
-			<!-- <French></French> -->
-			<Czech>Potřebujete %1 k odstranění této části.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_171">
-			<English>%1 has been drained for %2 litres of Fuel</English>
-			<German>Sie haben %2 Gallonen Kraftstoff von dem/der %1 entfernt.</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt %2 liter brandstof uit de %1 gehaald.</Dutch>
-			<!-- <French></French> -->
-			<Czech>Z %1 bylo odčerpáno %2 litrů paliva</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_172">
-			<English>%1 does not have enough fuel to siphon.</English>
-			<German>Diese(r) %1 hat nicht genug Kraftstoff.</German>
-			<Russian>%1 не имеет достаточно топлива для слития.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
-			<!-- <French></French> -->
-			<Czech>%1 nemá dostatek paliva na odčerpání.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>
@@ -2983,15 +2794,6 @@
 			<Dutch>Controleer Bagage</Dutch>
 			<French>Vérifier la cargaison</French>
 			<Czech>Kontrola nákladu</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_CANCEL">
-			<English>Cancel</English>
-			<German>Abbrechen</German>
-			<Russian>Отмена</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Annuleren</Dutch>
-			<French>Annuler</French>
-			<Czech>Zrušit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>

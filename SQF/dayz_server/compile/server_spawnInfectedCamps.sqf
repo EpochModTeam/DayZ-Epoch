@@ -35,19 +35,32 @@ Author:
 #define SEARCH_PRECISION 30
 #define SEARCH_ATTEMPTS 10
 
-private ["_typeGroup","_lootGroup","_objectGroup","_type","_position","_composition","_compositionObjects","_objectPos"];
+private
+[
+	"_typeGroup",
+	"_lootGroup",
+	"_objectGroup",
+	"_type",
+	"_position",
+	"_composition",
+	"_compositionObjects",
+	"_objectPos"
+];
 
 _typeGroup = Loot_GetGroup("InfectedCampType");
 _lootGroup = Loot_GetGroup("InfectedCamp");
 _objectGroup = Loot_GetGroup("InfectedCampObject");
 
-for "_i" from 1 to (CAMP_NUM) do {
+for "_i" from 1 to (CAMP_NUM) do
+{
 	//Select type of camp
 	_type = Loot_SelectSingle(_typeGroup);
 	_composition = _type select 1;
 	
 	//Find a position
-	for "_j" from 1 to (SEARCH_ATTEMPTS) do {
+
+	for "_j" from 1 to (SEARCH_ATTEMPTS) do
+	{
 		_position = ((selectBestPlaces [SEARCH_CENTER, SEARCH_RADIUS, SEARCH_EXPRESSION, SEARCH_PRECISION, 1]) select 0) select 0;
 		_position set [2, 0];
 		
@@ -62,7 +75,8 @@ for "_i" from 1 to (CAMP_NUM) do {
 	
 	//Add loot to containers
 	{
-		if (_x isKindOf (CAMP_CONTAINER_BASE)) then {
+		if (_x isKindOf (CAMP_CONTAINER_BASE)) then
+		{
 			Loot_InsertCargo(_x, _lootGroup, round Math_RandomRange(LOOT_MIN, LOOT_MAX));
 		};
 	} forEach _compositionObjects;

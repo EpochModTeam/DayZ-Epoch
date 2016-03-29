@@ -1,4 +1,4 @@
-private["_item","_onLadder","_hasmeditem","_config","_text","_id"];
+private ["_item","_onLadder","_hasmeditem","_config","_text","_display"];
 
 _item = _this;
 call gear_ui_init;
