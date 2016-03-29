@@ -6,7 +6,7 @@ _isOk = count (_location isFlatEmpty [0.5,0,0,4,0,false,player]) > 0;
 if (_isOk) then {	
 	_dir = getDir player;
 	_classname = "Land_Fire";
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	uiSleep 6;
 	dayz_hasFire = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];

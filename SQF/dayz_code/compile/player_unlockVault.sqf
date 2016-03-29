@@ -66,7 +66,7 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 			waitUntil {!isNil "dze_waiting"};
 
 			_obj setVariable["packing",1];
-			[1,1] call dayz_HungerThirst;
+			["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 			_weapons = _obj getVariable["WeaponCargo",[]];
 			_magazines = _obj getVariable["MagazineCargo",[]];
 			_backpacks = _obj getVariable["BackpackCargo",[]];
@@ -130,7 +130,7 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 		cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"];
 	};
 } else {
-	[10,10] call dayz_HungerThirst;
+	["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	uiSleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;

@@ -3,7 +3,11 @@ disableSerialization;
 
 // Hard code the GUI on and the Debug Monitor off
 if (dayzState != 0) then {
-	3 cutRsc ["playerStatusGUI", "PLAIN",0];
+	if (toLower DZE_UI == "vanilla") then {
+		3 cutRsc ["playerStatusGUI", "PLAIN",0];
+	} else {
+		3 cutRsc ["playerStatusGUI_epoch", "PLAIN",0];
+	};
 	//Update GUI
 	call player_updateGui;
 	call ui_initDisplay;

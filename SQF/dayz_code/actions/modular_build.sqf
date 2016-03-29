@@ -463,7 +463,7 @@ if (_hasrequireditem) then {
 
 		while {_isOk} do { //publish phase
 
-			[10,10] call dayz_HungerThirst;
+			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			player playActionNow "Medic"; //animation
 			
 			//alert zombies

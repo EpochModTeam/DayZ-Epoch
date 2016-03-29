@@ -35,7 +35,7 @@ _classname = "WeaponHolder";
 //return empty crate to inventory
 player addMagazine "bulk_empty";
 
-[1,1] call dayz_HungerThirst;
+["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 // Change to optional wait to complete
 player playActionNow "Medic";
 uiSleep 6;

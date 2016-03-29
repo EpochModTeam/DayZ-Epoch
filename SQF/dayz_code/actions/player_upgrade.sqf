@@ -98,7 +98,7 @@ if ((count _upgrade) > 0) then {
 	} forEach _requirements;
 	
 	if (_proceed) then {
-		[1,1] call dayz_HungerThirst;
+		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		player playActionNow "Medic";
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 	

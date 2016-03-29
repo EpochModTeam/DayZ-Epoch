@@ -56,7 +56,7 @@ _pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
 if(!isNull _obj && alive _obj) then {
 
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
 	uiSleep 3;

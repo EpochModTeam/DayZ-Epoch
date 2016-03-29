@@ -768,15 +768,15 @@ class FSM
        "	_handle setFSMVariable [""_thirst"",0];" \n
        "	_handle setFSMVariable [""_hunger"",0];" \n
        "	" \n
-       "	_display = uiNamespace getVariable 'DAYZ_GUI_display';" \n
-       "	_ctrlDogFood = _display displayCtrl 1701;" \n
-       "	_ctrlDogFood ctrlShow true;" \n
-       "	_ctrlDogFoodBorder = _display displayCtrl 1501;" \n
-       "	_ctrlDogFoodBorder ctrlShow true;" \n
-       "	_ctrlDogWater = _display displayCtrl 1702;" \n
-       "	_ctrlDogWater ctrlShow true;" \n
-       "	_ctrlDogWaterBorder = _display displayCtrl 1502;" \n
-       "	_ctrlDogWaterBorder ctrlShow true;" \n
+       "	//_display = uiNamespace getVariable 'DAYZ_GUI_display';" \n
+       "	//_ctrlDogFood = _display displayCtrl 1701;" \n
+       "	//_ctrlDogFood ctrlShow true;" \n
+       "	//_ctrlDogFoodBorder = _display displayCtrl 1501;" \n
+       "	//_ctrlDogFoodBorder ctrlShow true;" \n
+       "	//_ctrlDogWater = _display displayCtrl 1702;" \n
+       "	//_ctrlDogWater ctrlShow true;" \n
+       "	//_ctrlDogWaterBorder = _display displayCtrl 1502;" \n
+       "	//_ctrlDogWaterBorder ctrlShow true;" \n
        "	" \n
        "	while {alive _dog} do {" \n
        "		_vel = velocity _dog;" \n
@@ -788,15 +788,16 @@ class FSM
        "		_foodVal = 		1 - (_hunger / SleepFood);" \n
        "		_thirstVal = 		1 - (_thirst / SleepWater);" \n
        "		" \n
-       "		_ctrlDogFood ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_foodVal))),(Dayz_GUI_G * _foodVal),(Dayz_GUI_B * _foodVal), 0.5];" \n
-       "		_ctrlDogWater ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_thirstVal))),(Dayz_GUI_G * _thirstVal),(Dayz_GUI_B * _thirstVal), 0.5];" \n
+       "		//_ctrlDogFood ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_foodVal))),(Dayz_GUI_G * _foodVal),(Dayz_GUI_B * _foodVal), 0.5];" \n
+       "		//_ctrlDogWater ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_thirstVal))),(Dayz_GUI_G * _thirstVal),(Dayz_GUI_B * _thirstVal), 0.5];" \n
        "		" \n
-       "		if (_foodVal < 0.2) then {" \n
-       "			_ctrlDogFood call player_guiControlFlash;" \n
-       "		};" \n
-       "		if (_thirstVal < 0.2) then {" \n
-       "			_ctrlDogWater call player_guiControlFlash;" \n
-       "		};" \n
+       "		//_flash = {if (ctrlShown _this) then {_this ctrlShow false;} else {_this ctrlShow true;};};" \n	   
+       "		//if (_foodVal < 0.2) then {" \n
+       "			//_ctrlDogFood call _flash;" \n
+       "		//};" \n
+       "		//if (_thirstVal < 0.2) then {" \n
+       "			//_ctrlDogWater call _flash;" \n
+       "		//};" \n
        "" \n
        "		if (_foodVal <= 0 || _thirstVal <= 0) then {" \n
        "			_cantSee = [player, _dog] call dayz_losCheck;" \n

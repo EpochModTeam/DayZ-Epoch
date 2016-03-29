@@ -36,7 +36,11 @@ if (!isDedicated) then {
 	player_fired = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
 	player_packTent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packTent.sqf";
 	//control_zombieAgent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\control_zombieAgent.sqf";
-	player_updateGui = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";
+	player_updateGui = switch (toLower DZE_UI) do {
+		case "dark": {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiDark.sqf";};
+		case "epoch": {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiEpoch.sqf";};
+		case "vanilla": {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";};
+	};
 	player_crossbowBolt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	stream_locationFill = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\stream_locationFill.sqf";
 	stream_locationDel = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\stream_locationDel.sqf";
@@ -203,6 +207,7 @@ if (!isDedicated) then {
 			_ctrlFracture = _display displayCtrl 1203;
 			_ctrlFracture ctrlShow false;
 		};
+		/* // These controls don't exist yet
 		_ctrlDogFoodBorder = _display displayCtrl 1501;
 		_ctrlDogFoodBorder ctrlShow false;
 		_ctrlDogFood = _display displayCtrl 1701;
@@ -212,6 +217,7 @@ if (!isDedicated) then {
 		_ctrlDogWaterBorder ctrlShow false;
 		_ctrlDogWater = _display displayCtrl 1702;
 		_ctrlDogWater ctrlShow false
+		*/
 	};
 
 	dayz_angleCheck = {
@@ -267,56 +273,6 @@ if (!isDedicated) then {
 		_item setvelocity [0,0,1];
 	};
 	*/
-
-    player_guiControlFlash = {
-        private "_control";
-        _control = _this;
-        if (ctrlShown (_control select 0)) then {
-            {_x ctrlShow false} forEach _control;
-        } else {
-            {_x ctrlShow true} forEach _control;
-        };
-    };
-	
-	gearDialog_create = {
-		private ["_i","_dialog"];
-		if (!isNull (findDisplay 106)) then {
-			(findDisplay 106) closeDisplay 0;
-		};
-		openMap false;
-		closeDialog 0;
-		if (gear_done) then {uiSleep 0.001;};
-		player action ["Gear", player];
-		if (gear_done) then {uiSleep 0.001;};
-		_dialog = findDisplay 106;
-		_i = 0;
-		while {isNull _dialog} do {//DO NOT CHANGE TO A FOR LOOP!
-			_i = _i + 1;
-			_dialog = findDisplay 106;
-			if (gear_done) then {uiSleep 0.001;};
-			if (_i in [100,200,299]) then {
-				closeDialog 0;
-				player action ["Gear", player];
-			};
-			if (_i > 300) exitWith {};
-		};
-		if (gear_done) then {uiSleep 0.001;};
-		_dialog = findDisplay 106;
-		if ((parseNumber(_this select 0)) != 0) then {
-			ctrlActivate (_dialog displayCtrl 157);
-			if (gear_done) then {
-				waitUntil {ctrlShown (_dialog displayCtrl 159)};
-				uiSleep 0.001;
-			};
-		};
-		_dialog
-	};
-	
-	dayz_HungerThirst = {
-		dayz_hunger = dayz_hunger + (_this select 0);
-		dayz_thirst = dayz_thirst + (_this select 1);
-	};
-
 	dayz_NutritionSystem = {
 		private ["_type","_baseRegen","_nutrition","_calorieCount","_hungerCount","_thirstCount","_tempCount","_Thirst","_Hunger","_bloodregen","_golbalNutrition"];
 		//["type",regen,[NutritionTable,thirst(Working Class),hunger(Working Class)]]

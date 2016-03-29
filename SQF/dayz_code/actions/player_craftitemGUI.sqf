@@ -1,8 +1,6 @@
 /*
 	Created by Alby exclusively for DayZMod.
 	Please request permission to use/alter from Alby.
-	
-	Included in Epoch with permission by @ebaydayz
 */
 
 private["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace"];

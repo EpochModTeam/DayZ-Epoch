@@ -1,13 +1,6 @@
-NEW VAR DZE_HeartBeat
-USE TO ENABLE HEARTBEAT SOUND WHEN LOOKING AT BANDIT PLAYER (less than -5000 humanity), DISABLED BY DEFAULT
-
-player_updateGui.sqf
-
 Convert traders + loot (if old system) to ItemBloodbag
 
 REMOVE TOOL BREAKING, IT'S STUPID
-
-	player_craftItem_DZV = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
 trap_monitor.fsm is no more!
 

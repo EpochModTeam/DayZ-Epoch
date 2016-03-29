@@ -92,7 +92,7 @@ while {_isOk} do {
 		_isOk = false;
 		_proceed = false;
 	};
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	_dis=20;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;

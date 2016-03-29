@@ -24,9 +24,11 @@ DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 DZE_NameTags = 1; // Name displays when looking at player up close  0 = Off, 1= On, 2 = Player choice
 DZE_ForceNameTagsInTrader = false; // Force name display when looking at player up close in traders. Overrides player choice.
 DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, blue for hero, green for friend)
+DZE_HeartBeat = false; // Enable heartbeat sound when looking at bandit (<= -3000 humanity) up close
 DZE_HeliLift = true; // Enable Epoch heli lift system
 DZE_PlayerZed = false; // Enable spawning as a player zombie when players die with infected status
 DZE_R3F_WEIGHT = false; // Enable R3F weight. Players carrying too much will be overburdened and knocked out.
+DZE_UI = "vanilla"; //"vanilla","epoch","dark"  UI status icons style. Dark accommodates color blind people.
 MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE to spawn around the map
 MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.

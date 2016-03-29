@@ -26,7 +26,7 @@ _qty = count _fuelCans;
 
 	cutText [format[(localize "str_siphon_preparing"),_displayName], "PLAIN DOWN"];	
 	
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	// force animation 
 	player playActionNow "Medic";
 	// Play sound && alert zombies

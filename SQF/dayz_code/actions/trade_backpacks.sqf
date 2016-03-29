@@ -26,7 +26,7 @@ cutText [localize "str_epoch_player_105","PLAIN DOWN"];
 	 
 // force animation 
 player playActionNow "Medic";
-[1,1] call dayz_HungerThirst;
+["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 
 r_interrupt = false;
 _animState = animationState player;

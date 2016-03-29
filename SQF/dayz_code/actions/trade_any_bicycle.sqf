@@ -23,7 +23,7 @@ if(_buy_o_sell == "sell") then {
 
 cutText [localize "str_epoch_player_105","PLAIN DOWN"];
 	 
-[1,1] call dayz_HungerThirst;
+["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 // force animation 
 player playActionNow "Medic";
 

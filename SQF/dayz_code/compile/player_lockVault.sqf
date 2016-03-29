@@ -19,7 +19,7 @@ _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 
 // Silently exit if object no longer exists
 if(isNull _obj) exitWith { DZE_ActionInProgress = false; };
-[1,1] call dayz_HungerThirst;
+["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 player playActionNow "Medic";
 uiSleep 1;
 [player,"tentpack",0,false] call dayz_zombieSpeak;

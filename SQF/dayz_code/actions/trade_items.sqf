@@ -61,7 +61,7 @@ while {r_autoTrade} do {
 	
 	cutText [localize "str_epoch_player_105","PLAIN DOWN"];
 
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	
 	//_dis=20;

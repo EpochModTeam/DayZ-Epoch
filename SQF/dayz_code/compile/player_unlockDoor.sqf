@@ -46,7 +46,7 @@ if (!isNull dayz_selectedDoor) then {
 			};
 			KeyCodeTry = nil;
 		} else {
-			[10,10] call dayz_HungerThirst;
+			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			DZE_Lock_Door = "";
 			[player,"combo_locked",0,false] call dayz_zombieSpeak;
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;

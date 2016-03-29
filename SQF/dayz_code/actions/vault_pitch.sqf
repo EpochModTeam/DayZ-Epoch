@@ -120,7 +120,7 @@ if(!_cancel) then {
 			//call dayz_forceSave;
 
 			_dir = round(direction player);	
-			[1,1] call dayz_HungerThirst;
+			["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 			//wait a bit
 			player playActionNow "Medic";
 			uiSleep 1;

@@ -9,7 +9,7 @@ sched_gui = {
 	_initDone = _this select 0;
 
 	if ((!_initDone and !isNil 'Dayz_loginCompleted') and {(Dayz_loginCompleted)}) then {
-       3 cutRsc ['playerStatusGUI', 'PLAIN',3]; // show the whole HUD
+       if (toLower DZE_UI == "vanilla") then {3 cutRsc ['playerStatusGUI','PLAIN',3];} else {3 cutRsc ['playerStatusGUI_epoch','PLAIN',3];};
        _initDone = true;
 	};
 	//else {

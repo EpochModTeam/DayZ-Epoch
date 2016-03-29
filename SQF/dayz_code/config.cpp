@@ -1,58 +1,57 @@
 #include "Configs\basicDefines.hpp"
-#include "Configs\CfgNonAIVehicles.hpp"
+#include "Configs\CfgNonAIVehicles.hpp" //Axeman lights
 
-class CfgPatches {
-	class dayz_code {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {
-				"map_eu",
-				//dayz_anim references all CA addons
-				"dayz_anim",
-				
-				//dayz addons
-				"dayz",
-				"dayz_buildings",
-				"dayz_communityassets",
-				"dayz_communityweapons",
-				"dayz_equip",
-				"dayz_sfx",
-				"dayz_vehicles",
-				"dayz_weapons",
-				"community_crossbow",
-				
-				//shacktac addons
-				"st_bunnyhop",
-				"st_collision",
-				"st_evasive",
-				
-				//Extra Epoch Addons
-				"asc_eu_lights",
-				"gnt_c185",
-				"usec_ch53"
-			};
-	};
-	class DZ_DebriefingRemoved
+class CfgPatches
+{
+	class dayz_code
 	{
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"CAUI"};
+		requiredAddons[] =
+		{
+			"map_eu",
+			
+			//dayz_anim references all CA addons
+			"dayz_anim",
+			
+			//dayz addons
+			"dayz",
+			"dayz_buildings",
+			"dayz_communityassets",
+			"dayz_communityweapons",
+			"dayz_equip",
+			"dayz_sfx",
+			"dayz_vehicles",
+			"dayz_weapons",
+			"community_crossbow",
+			
+			//shacktac addons
+			"st_bunnyhop",
+			"st_collision",
+			"st_evasive",
+			
+			//Extra Epoch Addons
+			"asc_eu_lights",
+			"gnt_c185",
+			"usec_ch53"
+		};
 	};
 };
+
 class CfgMods
 {
 	class DayZ
 	{
-		dir = "@DayZ_Epoch";
+		dir = "DayZ_Epoch";
 		name = "DayZ Epoch";
 		picture = "z\addons\dayz_code\gui\loadingscreen.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
 		version = "1.0.6";
-		hiveVersion = 0.96; //0.93
+		hiveVersion = 0.96;
+		//requiredAddons[] = {"Chernarus"}; // No need to load for other maps
 	};
 };
 

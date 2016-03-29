@@ -1,5 +1,10 @@
 [NEW] Fully updated to DayZ 1.8.7 code base @icomrade @ebaydayz
+
+	Some notable changes include (not a full list):
 	- Blood types system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
+	- Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
+	- Knife dulling is disabled by default. Set dayz_knifeDulling = true; in init.sqf to enable
+	- Water bottle breaking is disabled by default. Set dayz_waterBottleBreaking = true; in init.sqf to enable
 	- New loot table format is incompatible with old loot tables. See CfgLoot\README
 	- Mission.sqm and description.ext now use compact format
 	- Keyboard eventhandler updated, dayz_spaceInterupt is no longer used
@@ -7,7 +12,9 @@
 	- Weapon switch hotkeys added (1 = primary, 2 = pistol, 3 = melee)
 	- Journal is now functional for displaying stats
 	- ItemFish, Shotgun ammo and several other item classnames changed. See SQL\1.0.6_Updates
+	- Status UI icons are toggleable between "vanilla","epoch","dark" set i.e. DZE_UI = "epoch"; in init.sqf
 	- Dupicate functions have been renamed:
+		- dayz_HungerThirst --> dayz_NutritionSystem
 		- dayz_objectUID3 --> dayz_objectUID2
 		- object_handleServerKilled --> vehicle_handleServerKilled
 		- object_setFixServer --> fnc_veh_setFixServer 
@@ -52,12 +59,11 @@
 		- usecMorphine --> PVCDZ_hlt_Morphine
 		- usecPainK --> PVCDZ_hlt_PainK
 		- usecTransfuse --> PVCDZ_hlt_Transfuse
-		
 [NEW] RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] DB Backup script. @RimBlock
 [NEW] Use DayZ_UseSteamID = false; in your init.sqf to use the old PlayerUID, instead of SteamID @icomrade
-[NEW] UI Update - Graphical and code changes, enable using Dayz_Dark_UI = true; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
+[NEW] UI Update - Graphical and code changes, enable using DZE_UI = "dark"; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
 [NOTE] It's recommend to convert to the new SteamID system if possible, new servers should not use DayZ_UseSteamID = false;
 [NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade

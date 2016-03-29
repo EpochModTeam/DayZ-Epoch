@@ -124,7 +124,7 @@ if (_canDo) then {
 
 				cutText [localize "str_epoch_player_62","PLAIN DOWN"];
 
-				[1,1] call dayz_HungerThirst;
+				["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 				player playActionNow "Medic";
 
 				[player,_sfx,0,false] call dayz_zombieSpeak;

@@ -28,7 +28,7 @@ if(_inTow) then {
 
 		_finished = false;
 
-		[1,1] call dayz_HungerThirst;
+		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		// force animation 
 		player playActionNow "Medic";
 

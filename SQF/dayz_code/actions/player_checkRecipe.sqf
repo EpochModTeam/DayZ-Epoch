@@ -1,8 +1,6 @@
 /*
 	Created by Alby exclusively for DayZMod.
 	Please request permission to use/alter from Alby.
-	
-	Included in Epoch with permission by @ebaydayz
 */
 
 private ["_items","_counts","_config","_isRecipe","_item","_index","_amount","_count","_entry","_input","_array"];
