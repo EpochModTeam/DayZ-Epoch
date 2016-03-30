@@ -1,6 +1,6 @@
 class Man;	// External class reference
 class Custom;	// External class reference
-//class Default;
+class Default;	// External class reference
 class CfgFaces {
 	class Default;	// External class reference
 	

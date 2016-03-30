@@ -1,17 +1,4 @@
-class WeaponHolderBase: ReammoBox {
-	scope = private;
-	accuracy = 1000;
-	vehicleClass = "Survival";
-	displayName = "Weapon";
-	memoryPointSupply = "collect";
-	supplyRadius = 3;
-	transportMaxWeapons = 0;
-	transportMaxMagazines = 0;
-	transportMaxBackpacks = 0;
-	transportAmmo = 0;
-	transportRepair = 0;
-	transportFuel = 0;
-};
+class WeaponHolderBase;
 class WoodenArrowF : WeaponHolderBase {
 	scope = public;
 	displayName = $STR_ITEMWOODENARROW_CODE_NAME;
@@ -24,7 +11,7 @@ class WoodenArrowF : WeaponHolderBase {
 };
 class WeaponHolder_ItemCrowbar: WeaponHolderBase
 {
-	scope = public;
+	scope=2;
 	displayName=$STR_EQUIP_NAME_CROWBAR;
 	model="\dayz_equip\models\crowbar.p3d";
 	class eventHandlers
@@ -35,7 +22,7 @@ class WeaponHolder_ItemCrowbar: WeaponHolderBase
 /*
 class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
 {
-	scope = public;
+	scope=2;
 	displayName=$STR_EQUIP_NAME_BASEBALLBAT;
 	model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
 	class eventHandlers
@@ -45,7 +32,7 @@ class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
 };
 class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
 {
-	scope = public;
+	scope=2;
 	displayName=$STR_CRAFT_NAME_BaseBallBatBarbed;
 	model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
 	class eventHandlers
@@ -55,7 +42,7 @@ class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
 };
 class WeaponHolder_MeleeBaseBallBatNails: WeaponHolderBase
 {
-	scope = public;
+	scope=2;
 	displayName=$STR_CRAFT_NAME_NailedBaseballBat;
 	model="\z\addons\dayz_communityassets\models\baseball_bat_nails.p3d";
 	class eventHandlers
@@ -66,7 +53,7 @@ class WeaponHolder_MeleeBaseBallBatNails: WeaponHolderBase
 */
 class WeaponHolder_MeleeMachete: WeaponHolderBase
 {
-	scope = public;
+	scope=2;
 	displayName=$STR_EQUIP_NAME_MACHETE;
 	model="\z\addons\dayz_communityassets\models\machete.p3d";
 	class eventHandlers

@@ -31,7 +31,8 @@ class RscHTML;
 #include "CfgPlayerStats\p_murders.hpp"
 #include "CfgPlayerStats\sound.hpp"
 
-class RscPictureGUI {
+class RscPictureGUI
+{
 	access = 0;
 	type = 0;
 	idc = -1;
@@ -48,23 +49,31 @@ class RscPictureGUI {
 	h = 0.15;
 };
 
+
 class RscStructuredText {
 	class Attributes;
 };
-class RscStructuredTextGUI: RscStructuredText {
+class RscStructuredTextGUI: RscStructuredText
+{
 	colorBackground[] = {0,0,0,0};
 	colorText[] = {1,1,1,1};
-	class Attributes: Attributes {
+	class Attributes: Attributes
+	{
 		align = "center";
 		valign = "middle";
 	};
 };
 
-class RscDisplayLoading {
-	class Variants {
-		class LoadingOne {
-			class controls {
-				class LoadingPic : RscPictureKeepAspect {
+class RscDisplayLoading
+{
+	class Variants
+	{
+		class LoadingOne
+		{
+			class controls
+			{
+				class LoadingPic : RscPictureKeepAspect
+				{
 					text = "z\addons\dayz_code\gui\loadingscreen.paa";
 				};
 			};
@@ -76,21 +85,28 @@ class RscCompass : RscObject {
 	scale = 0.64;
 };
 
-class RscDisplayStart {
-	class controls {
-		class LoadingPic: RscPictureKeepAspect {
+class RscDisplayStart
+{
+	class controls
+	{
+		class LoadingPic: RscPictureKeepAspect
+		{
 			text = "z\addons\dayz_code\gui\loadingscreen.paa";
 		};
 	};
 };
 class RscDisplayGetReady;
-class RscDisplayClientGetReady: RscDisplayGetReady {
+class RscDisplayClientGetReady : RscDisplayGetReady
+{
 	// could probably add a check in the spawn but couldn't test with multiple players
-	onload = "private ['_dummy']; _dummy = [_this,'onload'] call compile preprocessfile '\ca\ui\scripts\server_interface.sqf'; _this spawn { while { !isNull (findDisplay 53) } do { ctrlActivate ((_this select 0) displayCtrl 1); uiSleep 0.1; }; };";
+	onload = "[_this,'onload'] call compile preprocessfile '\ca\ui\scripts\server_interface.sqf'; _this spawn { while { !isNull (findDisplay 53) } do { ctrlActivate ((_this select 0) displayCtrl 1); uiSleep 0.1; }; };"; /*diag_log[diag_tickTime,'RscDisplayClientGetReady'];*/
 };
-class RscDisplayDebriefing: RscStandardDisplay {
+
+class RscDisplayDebriefing: RscStandardDisplay
+{
 	onLoad = "ctrlActivate ((_this select 0) displayCtrl 2);";
-	class controls {
+	class controls
+	{
 		delete Debriefing_MissionTitle;
 		delete CA_MissionTitle;
 		delete CA_TextVotingTimeLeft;
@@ -101,7 +117,8 @@ class RscDisplayDebriefing: RscStandardDisplay {
 		delete CA_DebriefingStatsGroup;
 		delete ButtonStatistics;
 		delete ButtonRetry;
-		class ButtonContinue: RscIGUIShortcutButton {
+		class ButtonContinue: RscIGUIShortcutButton
+		{
 			idc = 2;
 			shortcuts[] = {"0x00050000 + 0",28,57,156};
 			x = 0.4080875;
@@ -109,13 +126,34 @@ class RscDisplayDebriefing: RscStandardDisplay {
 			text = $STR_UI_CONTINUE;
 		};
 	};
-	class ControlsBackground {
+	class ControlsBackground
+	{
 		delete Mainback;
 	};
 };
-class RscDisplayMissionFail: RscStandardDisplay {
-	onLoad = "ctrlActivate ((_this select 0) displayCtrl 2);";
-	class controls {
+class RscShortcutButton;
+class RscShortcutButtonMain;
+
+// RscDisplayMultiplayerSetup moved here:
+#include "RscDisplay\RscLobby.hpp"
+
+class RscPendingInvitation
+{
+	x = 0.955313 * safezoneW + safezoneX;
+	y = 0.45 * safezoneH + safezoneY;
+};
+
+class RscPendingInvitationInGame
+{
+	x = 0.955313 * safezoneW + safezoneX;
+	y = 0.46 * safezoneH + safezoneY;
+};
+
+class RscDisplayMissionFail: RscStandardDisplay
+{
+	onLoad = "ctrlActivate ((_this select 0) displayCtrl 2);"; /*diag_log[diag_tickTime,'RscDisplayMissionFail'];*/
+	class controls
+	{
 		delete Debriefing_MissionTitle;
 		delete CA_MissionTitle;
 		delete CA_TextVotingTimeLeft;
@@ -125,7 +163,8 @@ class RscDisplayMissionFail: RscStandardDisplay {
 		delete CA_DebriefingObjectivesGroup;
 		delete CA_DebriefingStatsGroup;
 		delete BRetry;
-		class BAbort: RscIGUIShortcutButton {
+		class BAbort: RscIGUIShortcutButton
+		{
 			idc = 2;
 			shortcuts[] = {"0x00050000 + 0",28,57,156};
 			x = 0.4080875;
@@ -133,37 +172,43 @@ class RscDisplayMissionFail: RscStandardDisplay {
 			text = $STR_UI_END;
 		};
 	};
-	class ControlsBackground {
+	class ControlsBackground
+	{
 		delete Mainback;
 	};
 };
 
+
 class CA_TextLanguage;
 class RscXListBox;
 
-class RscDisplayGameOptions {
+class RscDisplayGameOptions
+{
 	//onLoad = "((_this select 0) displayCtrl 140) lbAdd 'Default';((_this select 0) displayCtrl 140) lbAdd 'Debug';((_this select 0) displayCtrl 140) lbAdd 'None';((_this select 0) displayCtrl 140) lbSetCurSel (uiNamespace getVariable ['DZ_displayUI', 0]);";
-	onUnload = "call ui_changeDisplay;";
-	class controls {
-		class CA_TextUIDisplay: CA_TextLanguage {
+	onUnload = "call ui_changeDisplay;"; /*diag_log[diag_tickTime,'RscDisplayGameOptions'];*/
+	/*class controls
+	{
+		class CA_TextUIDisplay: CA_TextLanguage
+		{
 			x = 0.159803;
 			y = "(0.420549 + 4*0.069854)";
 			text = "DayZ UI:";
 		};
-		class CA_ValueUIDisplay: RscXListBox {
+		class CA_ValueUIDisplay: RscXListBox
+		{
 			idc = 140;
 			x = 0.400534;
 			y = "(0.420549 + 4*0.069854)";
 			w = 0.3;
 			onLBSelChanged = "(uiNamespace setVariable ['DZ_displayUI', (_this select 1)]);";
 		};
-	};
+	};*/
 };
-class RscShortcutButton;
-class RscShortcutButtonMain;
 
-class RscDisplayMain : RscStandardDisplay {
-	class controlsBackground {
+class RscDisplayMain : RscStandardDisplay
+{
+	class controlsBackground
+	{
 		class Mainback : RscPicture {
 			idc = 1104;
 			x = "SafeZoneX + 0.04";
@@ -172,16 +217,19 @@ class RscDisplayMain : RscStandardDisplay {
 			h = 1.000000;
 			text = "\ca\ui\data\ui_mainmenu_background_ca.paa";
 		};
-		class CA_ARMA2 : RscPicture {
+		class CA_ARMA2 : RscPicture
+		{
 			text = "z\addons\dayz_code\gui\loadingscreen.paa";
 		};
 	};
 
-	class controls {
+	class controls
+	{
 		class CA_Version;
-		class DAYZ_Version : CA_Version {
+		class DAYZ_Version : CA_Version
+		{
 			idc = -1;
-			text = "1.0.6";
+			text = "DayZ Epoch 1.0.6";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
@@ -244,7 +292,8 @@ class RscDisplayDiary {
 	};
 };
 
-class RscButtonActionMenu: RscButton {
+class RscButtonActionMenu: RscButton
+{
 	SizeEx = 0.02674;
 	colorText[] = {1,1,1,1};
 	colorBackground[] = {0,0,0,0.8};
@@ -261,8 +310,8 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 	movingEnable = 0;
 	enableSimulation = 1;
 	//onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [(_this select 0)] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';"; _respawn = (_this select 0) displayCtrl 1010); _respawn ctrlEnable false; _abort = (_this select 0) displayCtrl 104); _abort ctrlEnable false;
-	onLoad = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';";
-	onUnload = "private ['_dummy']; _dummy = ['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
+	onLoad = "uiNamespace setVariable ['RscDisplayMPInterrupt', _this select 0];[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';"; /*diag_log[diag_tickTime,'RscDisplayMPInterrupt'];*/
+	onUnload = "uiNamespace setVariable ['RscDisplayMPInterrupt', nil];['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
 
 	class controlsBackground {
 		class Mainback : RscPicture {
@@ -348,7 +397,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_Abort : CA_B_SAVE {
 			idc = 104;
 			y = 0.2537 + 0.101903 * 4;
-			onButtonClick = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; call player_forceSave;";
+			onButtonClick = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; call player_forceSave; with uiNameSpace do {RscDMSLoad=-2;};"; // request disconnection from server
 			text = $STR_DISP_INT_ABORT;
 			default = 0;
 		};
@@ -363,6 +412,8 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		};
 	};
 };
+
+
 
 /*
 class DZ_ItemInteraction {

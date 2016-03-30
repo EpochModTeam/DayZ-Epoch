@@ -1,82 +1,149 @@
 class RscDisplayMultiplayerSetup: RscStandardDisplay
 {
-	idd = 70;
-	colorNotAssigned[] = {0.4,0.4,0.4,1};
-	colorAssigned[] = {0.78,0.39,0,1};
-	colorConfirmed[] = {0,1,0,1};
-	onLoad = "[_this] execVM 'z\addons\dayz_code\init\lobbyAutoJoin.sqf'";
-	class controls
+	onload = "with uiNameSpace do{RscDisplayMultiplayerSetup=_this select 0}; [_this] execVM 'z\addons\dayz_code\init\lobbyAutoJoin.sqf'"; //#70
+	onMouseHolding = "with uiNameSpace do { switch (1 == 1) do { case(isNil 'RscDMSLoad'): { RscDMSLoad = diag_tickTime; }; case(RscDMSLoad == -1): {}; case(RscDMSLoad == -2): {}; case(diag_tickTime - RscDMSLoad > 7): { RscDMSLoad = diag_tickTime; }; case(diag_tickTime - RscDMSLoad > 5): { }; }; };";
+	/*
+		with uiNameSpace do
+		{
+			switch (1 == 1) do
+			{
+				case(isNil 'RscDMSLoad'): { RscDMSLoad = diag_tickTime; };
+				case(RscDMSLoad == -1): {};
+				case(RscDMSLoad == -2): {};
+				case(diag_tickTime - RscDMSLoad > 7): { RscDMSLoad = diag_tickTime; };
+				case(diag_tickTime - RscDMSLoad > 5): { ctrlActivate ((_this select 0) displayCtrl 1); RscDMSLoad = -1; };
+			};
+		};
+	*/
+	onButtonClick = "with uiNameSpace do{RscDMSLoad=-1};false";
+	onButtonDblClick = "with uiNameSpace do{RscDMSLoad=-1};false";
+	onKeyDown = "with uiNameSpace do{RscDMSLoad=-1};false";
+  
+	class controlsbackground
 	{
-		class TextMission: RscText
+		class dayz_black: RscText
 		{
-			idc = 1002;
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(18/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03;
-			text = "Mission:";
+			idc=1017;
+			colorBackground[] = {0,0,0,1};
+			x = "SafeZoneX";
+			y = "SafeZoneY";
+			w = "SafeZoneW";
+			h = "SafeZoneH";
 		};
-		class ValueMission: RscText
+		class MP_roles_TitleBorder: RscText
 		{
-			idc = 101;
-			x = "(20/100)	* SafeZoneW + SafeZoneX";
-			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(40/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03;
+			idc=1008;
 		};
+		class TextBack: RscText
+		{
+			idc=1009;
+		};
+		class TextBorder: RscText
+		{
+			idc=1010;
+		};
+		class SidesBack: RscText
+		{
+			idc=1011;
+			y = "(120/100) * SafeZoneH + SafeZoneY";
+		};
+		class SidesBorder: RscText
+		{
+			idc=1012;
+			y = "(120/100) * SafeZoneH + SafeZoneY";
+		};		
+		class ValueRolesBack: RscText
+		{
+			idc=1013;
+			y = "(120/100) * SafeZoneH + SafeZoneY";
+		};
+		class ValueRolesBorder: RscText
+		{
+			idc=1014;
+			y = "(120/100) * SafeZoneH + SafeZoneY";
+		};
+		class ValuePoolBack: RscText
+		{
+			idc=1015;
+			y = "(120/100) * SafeZoneH + SafeZoneY";
+		};
+		class ValuePoolBorder: RscText
+		{
+			idc=1016;
+			y = "(120/100) * SafeZoneH + SafeZoneY";
+		};
+	};
+	class controls
+	{ 
 		class TextIsland: RscText
 		{
 			idc = 1003;
-			x = "(60/100)	* SafeZoneW + SafeZoneX";
-			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(5/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03;
-			text = "Map:";
+			y = "(109.5/100) * SafeZoneH + SafeZoneY"; //hide
 		};
 		class ValueIsland: RscText
 		{
 			idc = 102;
-			x = "(65/100)	* SafeZoneW + SafeZoneX";
-			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(33/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03;
+			y = "(109.5/100) * SafeZoneH + SafeZoneY"; //hide
 		};
 		class TextSide: RscText
 		{
 			idc = 1005;
-			style = 2;
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(16.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(16/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03921;
-			text = "Side:";
+			y = "(116.5/100) * SafeZoneH + SafeZoneY"; //hide
 		};
 		class TextRoles: RscText
 		{
-			idc = 108;
-			style = 2;
-			x = "(20/100)	* SafeZoneW + SafeZoneX";
-			y = "(16.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03921;
-			text = "Side:";
+			idc = 1007; // new, idc was missed by BI
+			y = "(116.5/100) * SafeZoneH + SafeZoneY"; // hide
+		};
+		class CA_B_West: RscActiveText
+		{
+			idc = 104;
+			y = "(121/100) * SafeZoneH + SafeZoneY"; //hide
+		};
+		class CA_B_East: CA_B_West
+		{
+			idc = 105;
+			y = "(131/100) * SafeZoneH + SafeZoneY"; //hide
+		};
+		class CA_B_Guerrila: CA_B_West
+		{
+			idc = 106;
+			y = "(141/100) * SafeZoneH + SafeZoneY"; //hide
+		};
+		class CA_B_Civilian: CA_B_West
+		{
+			idc = 107;
+			y = "(151/100) * SafeZoneH + SafeZoneY"; //hide
+		};
+		class CA_ValueRoles: RscIGUIListBox
+		{
+			idc = 109;
+			style = 16;
+			y = "(120.5/100) * SafeZoneH + SafeZoneY"; //hide
 		};
 		class TextPool: RscText
 		{
 			idc = 1006;
-			style = 2;
-			x = "(60/100)	* SafeZoneW + SafeZoneX";
-			y = "(16.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03921;
-			text = "Pool:";
+			x = "(2/100) * SafeZoneW + SafeZoneX"; // to left
+			w = "(96/100) * SafeZoneW"; //wide (was: 38/100)
+		};
+		class CA_ValuePool: RscIGUIListBox
+		{
+			idc = 114;
+			text = "Players";
+			x = "(2/100) * SafeZoneW + SafeZoneX"; // to left
+			w = "(96/100) * SafeZoneW"; // wide
+		};
+		class CA_ButtonCancel: RscShortcutButton
+		{
+			idc = 2;
+			default = 0;
+			shortcuts[] = {"0x00050000 + 1"};
+			x = "(68/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = 0.203825;
+			text = "$STR_DISP_BACK";
+			onButtonClick = "with uiNameSpace do {RscDMSLoad=nil;};"; // autologon at logon on next server
 		};
 		class Y_GamerCard: RscActiveText
 		{
@@ -102,173 +169,6 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 			y = 0.9;
 			w = 0.15;
 		};
-		class CA_MP_roles_Title: CA_Title
-		{
-			idc = 1001;
-			style = 2;
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(02/100)	* SafeZoneH + SafeZoneY";
-			w = "(96/100)	* SafeZoneW";
-			h = "(06/100)	* SafeZoneH";
-			colorBackground[] = {"49/255","36/255","25/255","173/255"};
-			text = "Multiplayer Setup";
-		};
-		class CA_TextVotingTimeLeft: CA_MP_roles_Title
-		{
-			idc = 121;
-			style = 1;
-			x = "(50/100)	* SafeZoneW + SafeZoneX";
-			y = "(02/100)	* SafeZoneH + SafeZoneY";
-			w = "(45/100)	* SafeZoneW";
-			colorBackground[] = {0,0,0,0};
-		};
-		class CA_TextDescription: RscText
-		{
-			idc = 1004;
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(12.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(18/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03;
-			text = "Description:";
-		};
-		class CA_ValueDescription: RscText
-		{
-			idc = 103;
-			x = "(20/100)	* SafeZoneW + SafeZoneX";
-			y = "(12.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(78/100)	* SafeZoneW";
-			h = "(3/100)	* SafeZoneH";
-			SizeEx = 0.03;
-		};
-		class CA_B_West: RscActiveText
-		{
-			x = "(4.15/100)	* SafeZoneW + SafeZoneX";
-			y = "(21/100)	* SafeZoneH + SafeZoneY";
-			w = "(11.7/100)	* SafeZoneW";
-			h = "(7/100)	* SafeZoneH";
-			style = "0x02 + 0x100 + 0x40";
-			type = 11;
-			colorActive[] = {1,1,1,1};
-			colorDisabled[] = {1,1,1,0.15};
-			colorShade[] = {1,1,1,1};
-			colorText[] = {1,1,1,1};
-			pictureWidth = 1;
-			pictureHeight = 1;
-			textHeight = 0.38;
-			sideDisabled = "ca\ui\data\flag_none_ca.paa";
-			sideToggle = "ca\ui\data\flag_side_toggle_ca.paa";
-			idc = 104;
-			color[] = {1,1,1,0.55};
-			text = "BLUFOR";
-			picture = "\ca\ui\data\flag_bluefor_ca.paa";
-		};
-		class CA_B_East: CA_B_West
-		{
-			idc = 105;
-			y = "(31/100)	* SafeZoneH + SafeZoneY";
-			text = "OPFOR";
-			picture = "\ca\ui\data\flag_opfor_ca.paa";
-		};
-		class CA_B_Guerrila: CA_B_West
-		{
-			idc = 106;
-			y = "(41/100)	* SafeZoneH + SafeZoneY";
-			text = "Independent";
-			picture = "\ca\ui\data\flag_indep_ca.paa";
-		};
-		class CA_B_Civilian: CA_B_West
-		{
-			idc = 107;
-			y = "(51/100)	* SafeZoneH + SafeZoneY";
-			text = "Civilian";
-			picture = "\ca\ui\data\flag_civil_ca.paa";
-		};
-		class CA_ValueRoles: RscIGUIListBox
-		{
-			idc = 109;
-			style = 16;
-			x = "(20/100)	* SafeZoneW + SafeZoneX";
-			y = "(20.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(72/100)	* SafeZoneH";
-			color[] = {1,1,1,1};
-			colorSelect[] = {1,1,0,1};
-			colorSelectBackground[] = {0.2,0.2,0.2,1};
-			colorSelectBackground2[] = {0.1,0.1,0.1,1};
-			rowHeight = 0.05;
-			colorText[] = {0.95,0.95,0.95,1};
-			colorPlayer[] = {1,1,0,1};
-			colorAI[] = {1,0,0,1};
-			colorNobody[] = {0.4,0.4,0.4,1};
-			enabledAI = "ca\ui\textures\ai2_on.paa";
-			disabledAI = "ca\ui\textures\ai2_off.paa";
-		};
-		class CA_ValuePool: RscIGUIListBox
-		{
-			idc = 114;
-			style = 16;
-			x = "(60/100)	* SafeZoneW + SafeZoneX";
-			y = "(20/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(72/100)	* SafeZoneH";
-			color[] = {1,1,1,1};
-			colorSelect[] = {1,1,0,1};
-			colorSelectBackground[] = {0.2,0.2,0.2,1};
-			colorSelectBackground2[] = {0.1,0.1,0.1,1};
-			rows = 25;
-			canDrag = 1;
-		};
-		class CA_B_EnableAll: RscShortcutButton
-		{
-			idc = 117;
-			x = "(22/100)	* SafeZoneW + SafeZoneX";
-			y = "(93/100)	* SafeZoneH + SafeZoneY";
-			w = 0.223825;
-			class TextPos
-			{
-				left = 0.035;
-				top = 0.034;
-				right = 0.005;
-				bottom = 0.005;
-			};
-			default = 0;
-		};
-		class CA_B_Lock: RscShortcutButton
-		{
-			idc = 118;
-			x = "(39/100)	* SafeZoneW + SafeZoneX";
-			y = "(93/100)	* SafeZoneH + SafeZoneY";
-			w = 0.183825;
-		};
-		class CA_B_Params: RscShortcutButton
-		{
-			idc = 128;
-			x = "(53/100)	* SafeZoneW + SafeZoneX";
-			y = "(93/100)	* SafeZoneH + SafeZoneY";
-			w = 0.203825;
-			text = "Parameters";
-		};
-		class CA_B_DSinterface: RscShortcutButton
-		{
-			idc = 1012;
-			default = 0;
-			onButtonClick = "openDSInterface;";
-			shortcuts[] = {};
-			x = "(2.75/100)	* SafeZoneW + SafeZoneX";
-			y = "(93/100)	* SafeZoneH + SafeZoneY";
-			w = 0.26;
-			text = "Server Control";
-		};
-		class CA_B_Kick: RscShortcutButton
-		{
-			idc = 116;
-			default = 0;
-			shortcuts[] = {"0x00050000 + 2"};
-			x = "(83/100)	* SafeZoneW + SafeZoneX";
-			y = "(14/100)	* SafeZoneH + SafeZoneY";
-			text = "Kick Off";
-		};
 		class CA_ButtonContinue: RscShortcutButton
 		{
 			idc = 1;
@@ -278,16 +178,6 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 			y = "(93/100)	* SafeZoneH + SafeZoneY";
 			text = "OK";
 			onButtonClick = "((findDisplay 70) displayCtrl 300) ctrlShow false;";
-		};
-		class CA_ButtonCancel: RscShortcutButton
-		{
-			idc = 2;
-			default = 0;
-			shortcuts[] = {"0x00050000 + 1"};
-			x = "(68/100)	* SafeZoneW + SafeZoneX";
-			y = "(93/100)	* SafeZoneH + SafeZoneY";
-			w = 0.203825;
-			text = "Back";
 		};
 		class infoText: RscText
 		{
@@ -299,103 +189,6 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 			sizeEx = 0.03;
 			colorText[] = {0,0,0,0};
 			colorBackground[] = {0,0,0,0};
-		};
-	};
-	west = "ca\ui\data\flag_bluefor_ca.paa";
-	east = "ca\ui\data\flag_opfor_ca.paa";
-	guer = "ca\ui\data\flag_indep_ca.paa";
-	civl = "ca\ui\data\flag_civil_ca.paa";
-	none = "ca\ui\data\flag_civil_ca.paa";
-	westUnlocked = "ca\ui\data\flag_bluefor_ca.paa";
-	westLocked = "ca\ui\data\flag_bluefor_ca.paa";
-	eastUnlocked = "ca\ui\data\flag_opfor_ca.paa";
-	eastLocked = "ca\ui\data\flag_opfor_ca.paa";
-	guerUnlocked = "ca\ui\data\flag_indep_ca.paa";
-	guerLocked = "ca\ui\data\flag_indep_ca.paa";
-	civlUnlocked = "ca\ui\data\flag_civil_ca.paa";
-	civlLocked = "ca\ui\data\flag_civil_ca.paa";
-	disabledAllAI = "Enable AI";
-	enabledAllAI = "Disable AI";
-	hostLocked = "Unlock";
-	hostUnlocked = "Lock";
-	class controlsbackground
-	{
-		class MP_roles_TitleBorder: RscText
-		{
-			style = 64;
-			colorText[] = {0,0,0,1};
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(02/100)	* SafeZoneH + SafeZoneY";
-			w = "(96/100)	* SafeZoneW";
-			h = "(06/100)	* SafeZoneH";
-		};
-		class TextBack: RscText
-		{
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(96/100)	* SafeZoneW";
-			h = "(6/100)	* SafeZoneH";
-			colorBackground[] = {0.1961,0.1451,0.0941,0.42};
-		};
-		class TextBorder: RscText
-		{
-			style = 64;
-			colorText[] = {0,0,0,1};
-			x = "(02/100)	* SafeZoneW + SafeZoneX";
-			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
-			w = "(96/100)	* SafeZoneW";
-			h = "(6/100)	* SafeZoneH";
-		};
-		class SidesBack: RscText
-		{
-			x = "(2/100)	* SafeZoneW + SafeZoneX";
-			y = "(20/100)	* SafeZoneH + SafeZoneY";
-			w = "(16/100)	* SafeZoneW";
-			h = "(73/100)	* SafeZoneH";
-			colorBackground[] = {0.1961,0.1451,0.0941,0.42};
-		};
-		class SidesBorder: RscText
-		{
-			style = 64;
-			colorText[] = {0,0,0,1};
-			x = "(2/100)	* SafeZoneW + SafeZoneX";
-			y = "(20/100)	* SafeZoneH + SafeZoneY";
-			w = "(16/100)	* SafeZoneW";
-			h = "(73/100)	* SafeZoneH";
-		};
-		class ValueRolesBack: RscText
-		{
-			x = "(20/100)	* SafeZoneW + SafeZoneX";
-			y = "(20/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(73/100)	* SafeZoneH";
-			colorBackground[] = {0.1961,0.1451,0.0941,0.42};
-		};
-		class ValueRolesBorder: RscText
-		{
-			style = 64;
-			colorText[] = {0,0,0,1};
-			x = "(20/100)	* SafeZoneW + SafeZoneX";
-			y = "(20/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(73/100)	* SafeZoneH";
-		};
-		class ValuePoolBack: RscText
-		{
-			x = "(60/100)	* SafeZoneW + SafeZoneX";
-			y = "(20/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(73/100)	* SafeZoneH";
-			colorBackground[] = {0.1961,0.1451,0.0941,0.42};
-		};
-		class ValuePoolBorder: RscText
-		{
-			style = 64;
-			colorText[] = {0,0,0,1};
-			x = "(60/100)	* SafeZoneW + SafeZoneX";
-			y = "(20/100)	* SafeZoneH + SafeZoneY";
-			w = "(38/100)	* SafeZoneW";
-			h = "(73/100)	* SafeZoneH";
 		};
 	};
 };

@@ -252,7 +252,6 @@ class CfgWeapons
 	#include "Tools\Flashlight.hpp"
 	#include "Tools\FlashlightRed.hpp"
 	
-	#include "Item\Flare.hpp"
 	#include "Item\ItemKeyKit.hpp"
 	#include "Item\ItemKeys.hpp"
 	

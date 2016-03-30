@@ -1,3 +1,4 @@
+
 class Man;
 class CAManBase: Man
 {

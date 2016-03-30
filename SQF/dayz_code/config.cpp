@@ -108,7 +108,7 @@ class CfgAddons
 
 //Epoch Additions
 #include "Configs\RscDisplay\safegui.hpp"
-#include "Configs\RscDisplay\dialog.hpp"
+#include "Configs\RscDisplay\tradermenu.hpp"
 #include "Configs\RscDisplay\deathboards.hpp"
 #include "Configs\CfgExtra\snappoints.hpp"
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.h"

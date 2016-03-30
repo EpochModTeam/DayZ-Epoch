@@ -6357,6 +6357,7 @@
 			<Spanish>Mochila de Patrullaje (Coyote)</Spanish>
 			<Czech>Batůžek (coyote)</Czech>
 			<German>Trekkingrucksack (Coyote)</German>
+			<Dutch>Patrouillerugzak (coyote)</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_PATROL">
 			<English>Patrol Pack (coyote)</English>
@@ -6373,6 +6374,7 @@
 			<Spanish>Mochila de Asalto (ACU)</Spanish>
 			<Czech>Batoh Assault Pack (ACU)</Czech>
 			<German>Kampfrucksack (ACU)</German>
+			<Dutch>Aanvalsrugzak (ACU)</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_ACU">
 			<English>Assault Pack (ACU)</English>
@@ -6389,6 +6391,7 @@
 			<Spanish>Bolsa Chaleco</Spanish>
 			<Czech>Česká vesta</Czech>
 			<German>Tschechischer Westenrucksack</German>
+			<Dutch>Tsjechische Borstzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_VEST">
 			<English>Czech Vest Pouch</English>
@@ -6405,6 +6408,7 @@
 			<Spanish>Mochila Alice</Spanish>
 			<Czech>Batoh Alice</Czech>
 			<German>Alice Pack</German>
+			<Dutch>ALICE Rugzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_ALICE">
 			<English>Alice pack</English>
@@ -6421,6 +6425,7 @@
 			<Spanish>Mochila de Supervivencia ACU</Spanish>
 			<Czech>Batoh Survival ACU</Czech>
 			<German>Kampfrucksack (Woodland)</German>
+			<Dutch>Overlevings ACU</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_SURVACU">
 			<English>Survival ACU</English>
@@ -6437,6 +6442,7 @@
 			<Spanish>Mochila de Asalto Británica</Spanish>
 			<Czech>Britský batoh</Czech>
 			<German>Britischer Kampfrucksack</German>
+			<Dutch>Britse Aanvalsrugzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_BRITISH">
 			<English>British Assault Pack</English>
@@ -6453,6 +6459,7 @@
 			<Spanish>Mochila Checa</Spanish>
 			<Czech>Český batoh</Czech>
 			<German>Tschechischer Rucksack</German>
+			<Dutch>Tsjechische Rugzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_CZECH">
 			<English>Czech Backpack</English>
@@ -6469,6 +6476,7 @@
 			<Spanish>Mochila (Coyote)</Spanish>
 			<Czech>Batoh (coyote)</Czech>
 			<German>Kampfrucksack (Coyote)</German>
+			<Dutch>Rugzak (Coyote)</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_COYOTE">
 			<English>Backpack (coyote)</English>
