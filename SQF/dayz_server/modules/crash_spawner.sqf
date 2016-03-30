@@ -13,7 +13,7 @@ _maxLootRadius = 4;
 _spawnRoll = random 1;
 if (_spawnRoll <= _spawnChance) then {
 
-_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ","UH60_NAVY_Wreck_DZ","UH60_ARMY_Wreck_DZ","UH60_NAVY_Wreck_burned_DZ","UH60_ARMY_Wreck_burned_DZ","Mass_grave_DZ"] call BIS_fnc_selectRandom;
+_crashModel = ["UH60Wreck_DZ","CrashSite_US","UH60_NAVY_Wreck_DZ","UH60_ARMY_Wreck_DZ","UH60_NAVY_Wreck_burned_DZ","UH60_ARMY_Wreck_burned_DZ","Mass_grave_DZ"] call BIS_fnc_selectRandom;
 
 if(_crashModel == "Mass_grave_DZ") then {
 _lootTable = "MassGrave";

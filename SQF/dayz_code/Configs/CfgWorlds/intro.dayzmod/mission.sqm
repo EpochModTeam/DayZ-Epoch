@@ -727,7 +727,7 @@ class Intro
 					position[]={5210.0571,0,7646.0366};
 					id=16;
 					side="WEST";
-					vehicle="UH1Wreck_DZ";
+					vehicle="CrashSite_US";
 					leader=1;
 					skill=0.60000002;
 				};
