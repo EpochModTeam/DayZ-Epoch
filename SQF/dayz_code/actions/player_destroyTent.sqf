@@ -1,4 +1,4 @@
-private ["_cantype","_emptycan","_intensity","_objectID", "_objectUID"];
+private ["_cantype","_emptycan","_intensity","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_alreadyDestorying","_randomJerryCan","_fireIntensity","_randomBoxMatches","_qtyRemaining","_dis","_sfx"];
 
 //Tent Object
 _obj = _this select 3;

@@ -1,4 +1,4 @@
-private["_qty_arrows","_qty_quivers","_qty_quiverarrows"];
+private ["_qty_arrows","_qty_quivers","_qty_quiverarrows"];
 call gear_ui_init;
 
 _qty_arrows = {_x == "WoodenArrow"} count magazines player;

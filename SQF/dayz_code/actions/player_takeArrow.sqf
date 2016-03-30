@@ -1,4 +1,4 @@
-private["_qty_quivers","_control","_qty_quiverarrows","_empty","_emptymagslotcount"];
+private ["_qty_quivers","_control","_qty_quiverarrows","_empty","_emptymagslotcount"];
 
 disableSerialization;
 call gear_ui_init;

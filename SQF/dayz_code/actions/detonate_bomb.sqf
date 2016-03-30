@@ -1,4 +1,5 @@
-private["_bombData","_vehicle","_owner","_bombar"];
+private ["_bombData","_vehicle","_owner","_bombar","_bombCar","_bomb"];
+
 _bombData = _this select 0;
 
 _vehicle = _bombData select 0;

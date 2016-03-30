@@ -11,15 +11,7 @@
 #define PILE_SEARCH_RADIUS 2
 #define PILE_PLAYER_OFFSET [0,1,0]
 
-private
-[
-	"_cfg",
-	"_nutrition",
-	"_bloodRegen",
-	"_infectionChance",
-	"_sound",
-	"_output"
-];
+private ["_cfg","_nutrition","_bloodRegen","_infectionChance","_sound","_output","_hungerCount","_thirstCount","_soundDistance"];
 
 _cfg = (ConfigFile >> "CfgMagazines" >> _this);
 

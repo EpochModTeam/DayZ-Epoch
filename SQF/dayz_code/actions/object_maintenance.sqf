@@ -5,7 +5,7 @@
 #define MAINTENANCE_NUTRITION_VALUES [20,40,15,0]
 
 
-private ["_isMedic","_cursorTarget"];
+private ["_isMedic","_cursorTarget","_item","_classname","_displayname","_requiredTools","_requiredParts","_onLadder","_isWater","_upgradeParts","_startMaintenance","_dis","_sfx","_started","_finished","_animState","_isRefuel"];
 
 _cursorTarget = _this select 3;
 

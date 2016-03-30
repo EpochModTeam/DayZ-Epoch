@@ -3,7 +3,7 @@
 	Please request permission to use/alter from Alby.
 */
 
-private ["_items","_counts","_config","_isRecipe","_item","_index","_amount","_count","_entry","_input","_array"];
+private ["_items","_counts","_config","_isRecipe","_item","_index","_amount","_count","_entry","_input","_array","_overwrite","_i","_inputIndex","_inputItems"];
 disableSerialization;
 
 _array = _this select 0;

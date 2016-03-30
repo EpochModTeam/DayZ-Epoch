@@ -176,7 +176,6 @@ if (!isDedicated) then {
 	player_unlockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
 	player_upgradeVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
 	player_vaultPitch = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\vault_pitch.sqf";
-	player_checkAndRemoveItems = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_checkAndRemoveItems.sqf";
 	pz_attack = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pzombie\pz_attack.sqf";
 	
 	dayz_losChance = {

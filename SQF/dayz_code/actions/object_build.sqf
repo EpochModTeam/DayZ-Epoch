@@ -1,4 +1,5 @@
-private ["_status","_array","_object","_items","_classname","_text","_build","_inside","_location","_nearObjects","_dis","_sfx", "_variables"];
+private ["_status","_array","_object","_items","_classname","_text","_build","_inside","_location","_nearObjects","_dis","_sfx","_variables","_ghost","_keepOnSlope","_direction","_passcode"];
+
 _array = _this select 3;
 
 _ghost = _array select 0;

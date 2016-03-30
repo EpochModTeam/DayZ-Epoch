@@ -10,7 +10,7 @@
 	failChance = 1;
 */
 //diag_log("crafting system");
-private["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace"];
+private ["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace","_classname","_isClass","_onLadder","_hasTools","_avail","_selection","_item","_amount","_itemName","_freeSlots","_slotType","_i","_j","_dis","_sfx"];
 
 //diag_log(str(isnil "r_player_crafting"));
 

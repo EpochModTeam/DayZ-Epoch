@@ -1,4 +1,4 @@
-private ["_item","_use","_repair","_waterUsed"];
+private ["_item","_use","_repair","_waterUsed","_displayName","_msg"];
 
 //['ItemKnifeBlunt','ItemKnife']
 _item = _this select 0; //Item to be sharpened

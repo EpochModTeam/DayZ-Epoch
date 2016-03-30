@@ -190,7 +190,7 @@ if (DZE_NameTags > 0) then {
 
 if (_isPZombie) then {
 	if (s_player_callzombies < 0) then {
-		s_player_callzombies = player addAction [localize "STR_EPOCH_ACTIONS_RAISEHORDE", "\z\addons\dayz_code\actions\call_zombies.sqf",player, 5, true, false];
+		s_player_callzombies = player addAction [localize "STR_EPOCH_ACTIONS_RAISEHORDE", "\z\addons\dayz_code\actions\pzombie\call_zombies.sqf",player, 5, true, false];
 	};
 	if (DZE_PZATTACK) then {
 		call pz_attack;
@@ -949,7 +949,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		//Dog
 		if (_isDog && {_hasRawMeat} && {_isAlive} && {_ownerID == "0"} && {player getVariable ["dogID",0] == 0}) then {
 			if (s_player_tamedog < 0) then {
-				s_player_tamedog = player addAction [localize "str_actions_tamedog", "\z\addons\dayz_code\actions\tame_dog.sqf", _cursorTarget, 1, false, true];
+				s_player_tamedog = player addAction [localize "str_actions_tamedog", "\z\addons\dayz_code\actions\dog\tame_dog.sqf", _cursorTarget, 1, false, true];
 			};
 		} else {
 			player removeAction s_player_tamedog;

@@ -1,6 +1,11 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
-private ["_classType","_item","_action","_missingTools","_missingItem","_emergingLevel","_isClass","_classname","_requiredTools","_requiredParts ","_ghost","_placement","_text","_onLadder","_isWater","_object","_string","_actionBuildHidden","_getBeams","_o","_offset","_rot","_r","_p","_bn","_bb","_h","_bx","_by","_minElevation","_maxElevation","_insideCheck","_building","_unit","_bbb","_ubb","_check","_min","_max","_myX","_myY","_checkBuildingCollision","_objColliding","_inside","_checkOnRoad","_roadCollide","_checkBeam2Magnet","_a","_beams","_best","_b","_d","_checkNotBuried","_elevation","_position","_delta","_overElevation","_maxplanting","_safeDistance","_dir","_angleRef","_tmp","_actionCancel","_sfx","_actionBuild"];
-
+private ["_classType","_item","_action","_missingTools","_missingItem","_emergingLevel","_isClass","_classname","_requiredTools",
+"_requiredParts","_ghost","_placement","_text","_onLadder","_isWater","_object","_string","_actionBuildHidden","_getBeams",
+"_o","_offset","_rot","_r","_p","_bn","_bb","_h","_bx","_by","_minElevation","_maxElevation","_insideCheck","_building",
+"_unit","_bbb","_ubb","_check","_min","_max","_myX","_myY","_checkBuildingCollision","_objColliding","_inside","_checkOnRoad",
+"_roadCollide","_checkBeam2Magnet","_a","_beams","_best","_b","_d","_checkNotBuried","_elevation","_position","_delta","_overElevation",
+"_maxplanting","_safeDistance","_dir","_angleRef","_tmp","_actionCancel","_sfx","_actionBuild","_byPassChecks","_keepOnSlope","_msg",
+"_ok","_missing","_upgradeParts","_ownerID","_posReference"];
 /*
 Needs a full rewrite to keep up with the demand of everything we plan to add.
 */

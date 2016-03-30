@@ -1,5 +1,5 @@
 scriptName "Functions\misc\fn_damageActions.sqf";
-
+if (DZE_ActionInProgress) exitWith {};
 #include "\z\addons\dayz_code\util\array.hpp";
 
 /***********************************************************
@@ -7,8 +7,8 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- Function
 	- [] call fnc_usec_damageActions;
 ************************************************************/
-if (DZE_ActionInProgress) exitWith {};
-private ["_action","_weaponName","_turret","_weapons","_assignedRole","_driver","_action1","_action2","_vehicle","_unit","_vehType","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_charID","_friendlies","_playerMagazines","_hasBandage","_hasEpi","_hasMorphine","_hasPainkillers","_unconscious_crew","_patients","_crew","_menClose","_hasPatient","_inVehicle","_isClose","_transfuse"];
+
+private ["_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasEmptyBag","_hasTester","_hasAntibiotics","_hasBloodBag","_vehClose","_hasVehicle","_action1","_action2","_action3","_y","_playerMagazines"];
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -135,7 +135,7 @@ if (isPlayer cursorTarget) then {
 
 		if (_hasPatient) then {
 			//Allow player to drag
-			if (_unconscious) then {
+			if(_unconscious) then {
 				r_action = true;
 				_action1 = _unit addAction [localize "STR_UI_GEAR", "\z\addons\dayz_code\actions\openGear.sqf",_unit, 0, true, true];
 				_action2 = _unit addAction [localize "str_actions_medical_01", "\z\addons\dayz_code\medical\drag.sqf",_unit, 0, true, true];
@@ -161,43 +161,43 @@ if (isPlayer cursorTarget) then {
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to bandage
-			if (_injured && _hasBandage) then {
+			if(_injured && _hasBandage) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemBandage"], 0, true, true, "", "'ItemBandage' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Sepsis
-			if (_hasSepsis && _hasSepsisBandage) then {
+			if(_hasSepsis && _hasSepsisBandage) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemSepsisBandage"], 0, true, true, "", "'ItemBandage' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Epinephrine
-			if (_unconscious && _hasEpi) then {
+			if(_unconscious && _hasEpi) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_05", "\z\addons\dayz_code\medical\epinephrine.sqf",[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Morphine
-			if ((_legsBroke or _armsBroke) && _hasMorphine) then {
+			if((_legsBroke or _armsBroke) && _hasMorphine) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_06", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"ItemMorphine"], 0, true, true, "", "'ItemMorphine' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give equip_woodensplint
-			if ((_legsBroke or _armsBroke) && _hasSplint) then {
+			if((_legsBroke or _armsBroke) && _hasSplint) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_06_splint", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"equip_woodensplint"], 0, true, true, "", "'equip_woodensplint' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Painkillers
-			if (_inPain && _hasPainkillers) then {
+			if(_inPain && _hasPainkillers) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_07", "\z\addons\dayz_code\medical\painkiller.sqf",[_unit], 0, true, true, "", "'ItemPainkiller' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to transfuse blood
-			if (_lowBlood && _hasBloodBag) then {
+			if(_lowBlood && _hasBloodBag) then {
 				_transfuse = if (DZE_UseBloodTypes) then {"\z\addons\dayz_code\medical\transfusion.sqf"} else {"\z\addons\dayz_code\medical\transfusion_NoBloodTypes.sqf"};
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_08",_transfuse,[_unit], 0, true, true];

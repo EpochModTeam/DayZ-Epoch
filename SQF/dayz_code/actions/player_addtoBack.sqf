@@ -14,7 +14,7 @@ if (dayZ_OnBack != "") exitWith {closeDialog 0; cutText [format [localize "str_p
 
 call gear_ui_init;
 
-if (_item in ["ItemHatchet","ItemHatchet_DZE","ItemCrowbar","ItemMachete","ItemFishingPole","ItemSledge"]) then {
+if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","ItemHatchet_DZE","ItemSledge"]) then {
 	//free primary slot for new melee (remember item to add after)
 	switch (_item) do {
 		case "ItemHatchet": {player removeWeapon "ItemHatchet"; dayz_onBack = "MeleeHatchet";};

@@ -8,15 +8,7 @@
 		Foxy
 */
 
-private
-[
-	"_cfg",
-	"_nutrition",
-	"_bloodRegen",
-	"_infectionChance",
-	"_sound",
-	"_output"
-];
+private ["_cfg","_nutrition","_bloodRegen","_infectionChance","_sound","_output"];
 
 _cfg = (ConfigFile >> "CfgMagazines" >> _this);
 

@@ -1,4 +1,4 @@
-private ["_target","_type","_fn_Lock","_fn_UnLock","_fn_Open","_fn_Closed"];
+private ["_type","_fn_Lock","_fn_UnLock","_fn_Open","_fn_Closed","_fn_Set","_fn_Lockold","_fn_UnLockold","_fn_BuildLock","_fn_BuildUnLock"];
 
 _target = ((_this select 3) select 0);
 _type = ((_this select 3) select 1);

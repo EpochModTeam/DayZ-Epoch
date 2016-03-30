@@ -1,5 +1,5 @@
 //fixHatchet old file
-private ["_tool","_tape","_fixedItem"];
+private ["_tool","_tape","_fixedItem","_config","_dName","_handle"];
 
 _tool = _this;
 _config = configFile >> "CfgWeapons" >> _tool;

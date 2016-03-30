@@ -1,4 +1,5 @@
-private["_theBomb","_vehicle","_curFuel","_newFuel","_timeLeft","_hasToolbox","_hasCarBomb","_dis","_sfx","_alreadyBombed","_hasCrowbar"];
+private ["_theBomb","_vehicle","_curFuel","_newFuel","_timeLeft","_hasToolbox","_hasCarBomb","_dis","_sfx","_alreadyBombed","_hasCrowbar"];
+
 _vehicle = 		_this select 3;
 _hasToolbox = 	"ItemToolbox" in items player;
 _hasCrowbar = 	"ItemCrowbar" in items player;

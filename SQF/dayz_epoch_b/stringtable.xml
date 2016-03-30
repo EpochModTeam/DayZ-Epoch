@@ -824,15 +824,6 @@
 			<French>\n\nImpossible de changer de vêtements près d'un autre joueur.</French>
 			<Czech>\n\nNemůžete si změnit oblečení, když je poblíž další hráč.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_85">
-			<English>\n\nYou may not change clothes while in a vehicle</English>
-			<German>\n\nSie können Ihre Kleidung nicht innerhalb eines Fahrzeuges wechseln</German>
-			<Russian>\n\nВы не можете переодеваться, находясь в транспорте</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe kunt je niet omkleden in een voertuig</Dutch>
-			<French>\n\nVous ne devriez pas changer de vêtements à bord d'un véhicule</French>
-			<Czech>\n\nNemůžete si změnit oblečení, pokud jste v autě.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_86">
 			<English>\n\nYou cannot wear a skin of the opposite sex.</English>
 			<German>\n\nSie können nicht die Kleidung vom anderen Geschlecht tragen.</German>
@@ -1147,15 +1138,6 @@
 			<Dutch>%1 is voor %2 procent gevuld.</Dutch>
 			<French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_134">
-			<English>You have filled %1 with fuel.</English>
-			<German>Sie haben %1 mit Kraftstoff befüllt.</German>
-			<Russian>Вы заполнили %1 топливом.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt %1 met brandsfof gevuld.</Dutch>
-			<French>Vous avez rempli %1 avec du carburant.</French>
-			<Czech>Naplnili jste %1 palivem.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
 			<English>\n\nThis building needs a %1 within %2 meters</English>

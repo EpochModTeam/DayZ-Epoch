@@ -7,7 +7,7 @@ disableSerialization;
 player removeAction s_player_butcher;
 s_player_butcher = 1;
 
-if(!(alive _item)) then {
+if !(alive _item) then {
 
     _rnd = (round(random 4)) + 1;
 	_move = "ZombieFeed" + str(_rnd);
@@ -68,7 +68,7 @@ if(!(alive _item)) then {
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 
-	// todo: dump loot on ground && then remove
+	// todo: dump loot on ground and then remove
 
 	//Ensure Control is visible
 	_display = uiNamespace getVariable 'DAYZ_GUI_display';

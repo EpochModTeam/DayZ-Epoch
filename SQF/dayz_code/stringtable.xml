@@ -7417,6 +7417,7 @@
 			<Spanish>No puedes cambiar de ropa mientras estás en un vehículo</Spanish>
 			<French>Vous ne pouvez pas vous changer dans un véhicule</French>
 			<Czech>Nelze se převléci, když jste ve vozidle.</Czech>
+			<Dutch>Je kunt je niet omkleden in een voertuig</Dutch>
 		</Key>
 		<Key ID="str_player_fail_wear2">
 			<English>Currently Female Characters cannot change to this skin. This will change in a future update.</English>

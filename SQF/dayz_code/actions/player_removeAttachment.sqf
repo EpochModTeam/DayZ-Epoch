@@ -12,15 +12,7 @@
 
 #include "\z\addons\dayz_code\util\Player.hpp"
 
-private
-[
-	"_attachment",
-	"_weapon",
-	"_newWeapon",
-	"_weaponInUse",
-	"_newWeaponConfig",
-	"_muzzle"
-];
+private ["_attachment","_weapon","_newWeapon","_weaponInUse","_newWeaponConfig","_muzzle"];
 
 //check if player is on a ladder and if so, exit
 if (Player_IsOnLadder()) exitWith

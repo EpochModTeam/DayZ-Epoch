@@ -1,4 +1,4 @@
-private["_qty_arrows","_qty_quivers","_control","_qty_quiverarrows","_qty_quiverfreeslots","_qty_arrows2add"];
+private ["_qty_arrows","_qty_quivers","_control","_qty_quiverarrows","_qty_quiverfreeslots","_qty_arrows2add"];
 
 disableSerialization;
 call gear_ui_init;

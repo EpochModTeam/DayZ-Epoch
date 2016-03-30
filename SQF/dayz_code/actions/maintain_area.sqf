@@ -1,4 +1,4 @@
-//Code developed by Axe Cop - Massiv improvments && performance tunes by Skaronator
+//Code developed by Axe Cop - Massiv improvments and performance tunes by Skaronator
 private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_uniqueID","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
 
 if (DZE_ActionInProgress) exitWith {cutText [localize "STR_EPOCH_ACTIONS_2","PLAIN DOWN"];};

@@ -3,7 +3,7 @@
 	Please request permission to use/alter from Alby.
 */
 
-private["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace"];
+private ["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace","_overwrite","_orignalClass","_index","_entry","_avail","_selection","_item","_amount","_itemName","_freeSlots","_slotType","_i","_j"];
 disableSerialization;
 ["close"] call fn_updateCraftUI;
 

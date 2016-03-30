@@ -1,6 +1,6 @@
 private ["_cursorTarget","_onLadder","_isWater","_alreadyRemoving","_characterID","_objectID","_objectUID","_ownerArray","_dir",
-    "_realObjectStillThere","_upgrade","_entry","_parent","_requiredParts","_requiredTools","_model","_toolsOK","_displayname",
-    "_whpos","_i","_wh","_object"];
+	"_realObjectStillThere","_upgrade","_entry","_parent","_requiredParts","_requiredTools","_model","_toolsOK","_displayname",
+	"_whpos","_i","_wh","_object","_msg","_vector","_dis","__FILE__","_puid","_variables"];
 
 
 _cursorTarget = _this select 3;

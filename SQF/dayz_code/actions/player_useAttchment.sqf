@@ -1,4 +1,4 @@
-private["_item","_onLadder","_hasmeditem","_config","_text","_id"];
+private ["_item","_onLadder","_hasmeditem","_config","_text","_removeWeapon","_addWeapon","_hasitem","_display"];
 
 //Old System
 

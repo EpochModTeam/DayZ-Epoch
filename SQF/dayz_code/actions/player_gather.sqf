@@ -1,4 +1,5 @@
-private ["_plant", "_originalCount"];
+private ["_plant","_originalCount","_xx_leaf","_mags","_weps","_item","_magcounts","_forEachIndex","_wepcounts","_dis","_sfx"];
+
 _plant = _this;
 
 if (_plant getVariable["Gathering",false]) exitWith {};

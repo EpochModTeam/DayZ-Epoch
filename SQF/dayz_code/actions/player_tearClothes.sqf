@@ -1,4 +1,4 @@
-private ["_skin","_rnd","_rounded","_itemtocreate","_i"];
+private ["_skin","_rnd","_rounded","_itemtocreate","_i","_config","_infoText","_result","_nearByPile","_pile","__FILE__"];
 
 _skin = _this;
 _config = configFile >> "CfgMagazines" >> _skin;

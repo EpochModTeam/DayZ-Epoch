@@ -9,39 +9,10 @@
 	};
 	
 */
-private
-[
-	"_objclass",
-	"_cursorTarget",
-	"_item",
-	"_classname",
-	"_requiredTools",
-	"_requiredParts",
-	"_upgrade",
-	"_upgradeConfig",
-	"_upgradeDisplayname",
-	"_onLadder",
-	"_isWater",
-	"_upgradeParts",
-	"_startUpgrade",
-	"_missingPartsConfig",
-	"_textMissingParts",
-	"_dis",
-	"_sfx",
-	"_ownerID",
-	"_objectID",
-	"_objectUID",
-	"_alreadyupgrading",
-	"_pos",
-	"_dir",
-	"_weapons",
-	"_magazines",
-	"_backpacks",
-	"_object",
-	"_objWpnTypes",
-	"_objWpnQty",
-	"_countr"
-];
+private ["_objclass","_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
+"_upgradeDisplayname","_onLadder","_isWater","_upgradeParts","_startUpgrade","_missingPartsConfig","_textMissingParts","_dis",
+"_sfx","_ownerID","_objectID","_objectUID","_alreadyupgrading","_dir","_weapons","_magazines","_backpacks","_object",
+"_objWpnTypes","_objWpnQty","_countr","_itemName","_msg","_vector"];
 
 _objclass = _this;
 _cursorTarget = _this select 3;

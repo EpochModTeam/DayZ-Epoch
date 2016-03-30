@@ -1,5 +1,5 @@
 achievementServer = {
-	private ["_playerOwnerID","_player","_achievementID","_achievements"];
+private ["_playerOwnerID","_player","_achievementID","_achievements"];
 	
 	_achievementID = (_this select 0) select 0;
 	_player = (_this select 0) select 1;

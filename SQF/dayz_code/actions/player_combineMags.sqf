@@ -1,5 +1,4 @@
-private ["_create","_config","_create_magsize","_type","_name","_magCount","_slotstart","_slotend","_dialog","_qty_total_ammo","_control","_mag","_qtynew_create_mags_full","_qtynew_create_ammo_rest","_magFull","_magFullSingular","_magAmmunition"];
-
+private ["_create","_config","_create_magsize","_type","_magCount","_slotstart","_slotend","_dialog","_qty_total_ammo","_control","_mag","_qtynew_create_mags_full","_qtynew_create_ammo_rest","_magFull","_magFullSingular","_magAmmunition","_i"];
 disableSerialization;
 call gear_ui_init;
 closeDialog 0;

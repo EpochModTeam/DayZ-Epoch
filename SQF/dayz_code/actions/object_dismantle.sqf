@@ -1,4 +1,4 @@
-private ["_object","_proceed","_pos","_rndattemps","_limit","_dismantleToo","_pos","_ownerID","_objectID","_objectUID","_playerID","_claimedBy","_tools"];
+private ["_object","_proceed","_rndattemps","_limit","_dismantleToo","_ownerID","_objectID","_objectUID","_playerID","_claimedBy","_tools","_exit","_end","_onLadder","_isWater","_isOk","_counter","_text","_dis","_sfx","_animState","_started","_finished","_isMedic","_holder"];
 
 _object = _this;
 _proceed = false;

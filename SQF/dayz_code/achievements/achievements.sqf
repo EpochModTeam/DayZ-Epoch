@@ -1,5 +1,5 @@
 achievementClientMsg = {
-	private ["_achievement","_player","_AchievementText","_text","_display"];
+	private ["_achievement","_player","_AchievementText","_text","_display","_achievementID","_serverEvent"];
 
 	/* Only call this from the server
 	achievementClientPV = [_achievementID];

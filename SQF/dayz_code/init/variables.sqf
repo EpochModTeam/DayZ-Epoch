@@ -519,7 +519,6 @@ s_player_parts = [];
 if(isNil "DayZ_UseSteamID") then {DayZ_UseSteamID = true;};
 if(isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
 if(isNil "DZE_GodModeBase") then {DZE_GodModeBase = false;};
-if(isNil "DZE_Debug_Damage") then {DZE_Debug_Damage = true;};
 if(isNil "DZE_TRADER_SPAWNMODE") then {DZE_TRADER_SPAWNMODE = false;};
 if(isNil "dayz_paraSpawn") then {dayz_paraSpawn = false;};
 if(isNil "DZE_BuildingLimit") then {DZE_BuildingLimit = 150;};

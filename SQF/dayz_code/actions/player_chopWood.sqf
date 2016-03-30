@@ -1,5 +1,5 @@
 
-private["_item","_result","_dis","_sfx","_num", "_breaking"];
+private ["_item","_result","_dis","_sfx","_num","_breaking","_countOut","_woodCutting","_trees","_findNearestTree","_objInfo","_lenInfo","_objName","_i","_k","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut"];
 
 //if (!isnil "faco_player_chopWood") exitWith { _this call faco_player_chopWood };
 

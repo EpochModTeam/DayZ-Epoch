@@ -1,5 +1,5 @@
-private ["_item","_result","_dis","_sfx","_num","_breaking","_counter","_rocks","_findNearestRock","_objInfo","_lenInfo","_objName","_i","_k","_countOut","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_wpPos","_nearByPile"];
-
+private ["_item","_result","_dis","_sfx","_num","_breaking","_counter","_rocks","_findNearestRock","_objInfo","_lenInfo",
+"_objName","_i","_k","_countOut","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_wpPos","_nearByPile"];
 
 _item = _this;
 call gear_ui_init;
@@ -38,7 +38,7 @@ if (!isNull _findNearestRock) then {
     _countOut = 2 + floor(random 3);
 
     //Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
-    {player removeMagazines _x} forEach ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing"];
+    {player removeMagazines _x} forEach ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing","Sledge_Swing"];
 
     // Start stone mining loop
     _counter = 0;
@@ -121,7 +121,7 @@ if (!isNull _findNearestRock) then {
             };
             _isOk = false;
             _proceed = true;
-            uisleep 1;
+            uiSleep 1;
         };
 		cutText [format[localize "str_mining_progress", _counter,(_countOut - _counter)], "PLAIN DOWN"];
     };
@@ -143,6 +143,8 @@ if (!isNull _findNearestRock) then {
         case "MeleeCrowbar": {player addMagazine 'Crowbar_Swing';};
         case "MeleeMachete": {player addMagazine 'Machete_Swing';};
         case "MeleeFishingPole": {player addMagazine 'Fishing_Swing';};
+		case "MeleeHatchet_DZE": {player addMagazine 'Hatchet_Swing';};
+		case "MeleeSledge": {player addMagazine 'Sledge_Swing';};
     };
 } else {
 	cutText [localize "str_mining_no_rocks", "PLAIN DOWN"];
