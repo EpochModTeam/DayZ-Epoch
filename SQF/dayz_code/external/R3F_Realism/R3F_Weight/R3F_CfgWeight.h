@@ -1226,7 +1226,7 @@ class CfgWeight
 		{
 			weight = 1;
 		};
-		class MeleeHatchet_DZE  
+		class MeleeHatchet  
 		{
 			weight = 1;
 		};
@@ -1243,11 +1243,6 @@ class CfgWeight
 			weight = 1;
 		};
 		class ItemHatchet  
-		{
-			weight = 1;
-		};
-		
-		class ItemHatchet_DZE  
 		{
 			weight = 1;
 		};

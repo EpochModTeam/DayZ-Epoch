@@ -22,7 +22,7 @@ _config2 = configFile >> "cfgWeapons" >> _create;
 
 //removing current melee weapon if new melee selected
 _melee2tb = "";
-if ((_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","ItemHatchet_DZE","ItemSledge"]) || _item == DayZ_onBack) then {
+if ((_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","ItemSledge"]) || _item == DayZ_onBack) then {
 	if (!carryClick) then {
 		//free primary slot for new melee (remember item to add after)
 		switch (primaryWeapon player) do {
@@ -30,7 +30,6 @@ if ((_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","Item
 			case "MeleeCrowbar": {if !("ItemCrowbar" in weapons player) then {player removeWeapon "MeleeCrowbar"; _melee2tb = "ItemCrowbar";};};
 			case "MeleeMachete": {if !("ItemMachete" in weapons player) then {player removeWeapon "MeleeMachete"; _melee2tb = "ItemMachete";};};
 			case "MeleeFishingPole": {player removeWeapon "MeleeFishingPole"; _melee2tb = "ItemFishingPole";};
-			case "MeleeHatchet_DZE": {if !("ItemHatchet_DZE" in weapons player) then {player removeWeapon "MeleeHatchet_DZE"; _melee2tb = "ItemHatchet_DZE";};};
 			case "MeleeSledge": {if !("ItemSledge" in weapons player) then {player removeWeapon "MeleeSledge"; _melee2tb = "ItemSledge";};};
 		};
 	 } else {
@@ -40,7 +39,6 @@ if ((_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","Item
 				case "MeleeCrowbar": {if !("ItemCrowbar" in weapons player) then {dayz_onBack = ""; _melee2tb = "ItemCrowbar";};};
 				case "MeleeMachete": {if !("ItemMachete" in weapons player) then {dayz_onBack = ""; _melee2tb = "ItemMachete";};};
 				case "MeleeFishingPole": {dayz_onBack = ""; _melee2tb = "ItemFishingPole";};
-				case "MeleeHatchet_DZE": {if !("ItemHatchet_DZE" in weapons player) then {dayz_onBack = ""; _melee2tb = "ItemHatchet_DZE";};};
 				case "MeleeSledge": {if !("ItemSledge" in weapons player) then {dayz_onBack = ""; _melee2tb = "ItemSledge";};};
 			};
 			carryClick = false;

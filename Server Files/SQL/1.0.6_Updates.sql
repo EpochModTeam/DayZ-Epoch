@@ -6,6 +6,13 @@
 -- UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
 -- UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
 
+-- ----------------------------
+-- ItemHatchet_DZE was removed because it was identical to ItemHatchet
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item` = '["ItemHatchet",1]' WHERE `item` = '["ItemHatchet_DZE",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemHatchet_DZE', 'ItemHatchet') WHERE INSTR(Backpack, 'ItemHatchet_DZE') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemHatchet_DZE', 'ItemHatchet') WHERE INSTR(Inventory, 'ItemHatchet_DZE') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemHatchet_DZE', 'ItemHatchet') WHERE INSTR(Inventory, 'ItemHatchet_DZE') > 0;
 
 -- ----------------------------
 -- Updated fish names from 1.8.7

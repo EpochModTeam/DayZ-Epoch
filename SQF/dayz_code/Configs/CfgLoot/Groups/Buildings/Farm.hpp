@@ -7,7 +7,7 @@ Farm[] =
 	//Tools
 	{Loot_WEAPON,		5,		ItemMachete},
 //	{Loot_WEAPON,		6,		ItemHatchet},
-	{Loot_WEAPON,		6,		ItemHatchet_DZE},
+	{Loot_WEAPON,		6,		ItemHatchet},
 	{Loot_WEAPON,		5,		ItemKnife},
 	
 	//Items

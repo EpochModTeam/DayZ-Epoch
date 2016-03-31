@@ -11,7 +11,7 @@ Hunting[] =
 	{Loot_WEAPON,		6,		ItemFlashlight},
 	{Loot_WEAPON,		7,		ItemKnife},
 	{Loot_WEAPON,		2,		ItemCompass},
-	{Loot_WEAPON,		4,		ItemHatchet_DZE},
+	{Loot_WEAPON,		4,		ItemHatchet},
 	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
 	{Loot_MAGAZINE,		1,		10Rnd_303British},
 	{Loot_MAGAZINE,		2,		ItemWaterbottleUnfilled},

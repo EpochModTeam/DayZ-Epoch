@@ -143,7 +143,6 @@ if (!isNull _findNearestRock) then {
         case "MeleeCrowbar": {player addMagazine 'Crowbar_Swing';};
         case "MeleeMachete": {player addMagazine 'Machete_Swing';};
         case "MeleeFishingPole": {player addMagazine 'Fishing_Swing';};
-		case "MeleeHatchet_DZE": {player addMagazine 'Hatchet_Swing';};
 		case "MeleeSledge": {player addMagazine 'Sledge_Swing';};
     };
 } else {

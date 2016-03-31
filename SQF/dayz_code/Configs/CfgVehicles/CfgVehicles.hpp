@@ -550,7 +550,6 @@ class CfgVehicles {
 	#include "DZE\Prop_Defs.hpp"
 	#include "DZE\Veins.hpp"
 	#include "DZE\ModularBuilding.hpp"
-	#include "DZE\WeaponHolder.hpp"
 	class Land_A_tent;	// External class reference
 	#include "DZE\Grave.hpp"
 	class WeaponHolder;	// External class reference

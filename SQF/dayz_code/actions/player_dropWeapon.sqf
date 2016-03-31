@@ -18,7 +18,6 @@ if ((dayz_onBack != "") && (dayz_onBack in MeleeWeapons) && carryClick) then {
 		case "MeleeHatchet": {_item = "ItemHatchet"; dayz_onBack = "";};
 		case "MeleeCrowbar": {_item = "ItemCrowbar"; dayz_onBack = "";};
 		case "MeleeMachete": {_item = "ItemMachete"; dayz_onBack = "";};
-		case "MeleeHatchet_DZE": {_item = "ItemHatchet_DZE"; dayz_onBack = "";};
 		case "MeleeSledge": {_item = "ItemSledge"; dayz_onBack = "";};
 	};
 	carryClick = false;

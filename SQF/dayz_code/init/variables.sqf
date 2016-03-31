@@ -33,7 +33,7 @@ DayZ_Male = ["Survivor_DZ","Survivor1_DZ","Survivor2_DZ","Survivor3_DZ","Sniper1
 DayZ_Female = ["SurvivorW2_DZ","BanditW1_DZ","BanditW2_DZ","SurvivorWcombat_DZ","SurvivorWurban_DZ","SurvivorWdesert_DZ","SurvivorWsequishaD_DZ","SurvivorWsequisha_DZ","SurvivorWpink_DZ","SurvivorW3_DZ"];
 
 //Classnames for specific items
-MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball","MeleeBaseBallBat","MeleeBaseBallBatBarbed","MeleeBaseBallBatNails","MeleeFishingPole","MeleeSledge","MeleeHatchet_DZE"];
+MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball","MeleeBaseBallBat","MeleeBaseBallBatBarbed","MeleeBaseBallBatNails","MeleeFishingPole","MeleeSledge"];
 MeleeMagazines = ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
 Dayz_fishingItems = ["MeleeFishingPole"];
 Dayz_plants = ["Dayz_Plant1","Dayz_Plant2","Dayz_Plant3"];
@@ -490,7 +490,7 @@ DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP
 DZE_Lock_Door = "";
 DZE_HeliAllowTowFrom = ["CH_47F_EP1_DZE","CH_47F_EP1_DZ","CH_47F_BAF","CH_47F_EP1","BAF_Merlin_DZE","CH53_DZE"];
 DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
-DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox","ItemHatchet"],["Crossbow_DZ","ItemMatchbox_DZE","ItemHatchet_DZE"]];
+DZE_REPLACE_WEAPONS = [["Crossbow","ItemMatchbox"],["Crossbow_DZ","ItemMatchbox_DZE"]];
 DZE_LockableStorage = ["VaultStorage","VaultStorageLocked","LockboxStorageLocked","LockboxStorage"];
 DZE_LockedStorage = ["VaultStorageLocked","LockboxStorageLocked"];
 DZE_UnLockedStorage = ["VaultStorage","LockboxStorage"];

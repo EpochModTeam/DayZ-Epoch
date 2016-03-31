@@ -7,7 +7,7 @@ Industrial[] =
 //	{Loot_WEAPON,		8,		ItemCrowbar},
 	{Loot_WEAPON,		8,		ItemCrowbar},
 //	{Loot_WEAPON,		5,		ItemHatchet},
-	{Loot_WEAPON,		5,		ItemHatchet_DZE},
+	{Loot_WEAPON,		5,		ItemHatchet},
 	{Loot_WEAPON,		1,		ItemPickaxe},
 	{Loot_WEAPON,		2,		ItemPickaxeBroken},
 	{Loot_WEAPON,		1,		ItemSledgeHammer},
