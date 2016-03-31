@@ -39,7 +39,7 @@ while {r_doLoop} do {
 		r_doLoop = false;
 		_finished = true;
 	};
-	uisleep 0.1;
+	uiSleep 0.1;
 };
 r_doLoop = false;
 

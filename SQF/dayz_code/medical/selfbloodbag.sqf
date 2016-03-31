@@ -1,3 +1,4 @@
+if (!DZE_SelfTransfuse) exitWith {};
 private ["_unit","_blood","_lowBlood","_injured","_inPain","_lastused","_animState","_started","_finished","_timer","_i","_isMedic","_isClose","_duration","_rhVal","_bloodBagArrayNeeded","_BBneeded","_bbselect","_bloodBagNeeded","_badBag","_wholeBag","_bagFound","_bagToRemove","_forceClose","_bloodType","_rh","_bloodBagArray","_bbarray_length","_bloodBagWholeNeeded","_haswholebag","_r"];
 // bleed.sqf
 _unit = _this select 0;
@@ -9,7 +10,7 @@ _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
 //_lastused = _unit getVariable ["LastTransfusion", time];
 _lastused = selfTransfusionTime;
-_timeout = (DZE_selfTransfuse_Values select 2);
+_timeout = DZE_selfTransfuse_Values select 2;
 if ((round(time - _lastused)) <= _timeout) exitWith {cutText [format[(localize "str_actions_medical_18"),(_timeout - (round(time - _lastused)))] , "PLAIN DOWN"]};
 
 call gear_ui_init;
@@ -23,6 +24,7 @@ _wholeBag = false;
 _bagFound = false;
 _BBneeded = false;
 _forceClose = false;
+_TransfusionInfection = false;
 
 
 if (_blood <= 4000) then {
@@ -39,8 +41,9 @@ if (_rh) then {_rhVal = "POS";} else {_rhVal = "NEG";};
 //No subs for whole blood :(
 _bloodBagWholeNeeded = "wholeBloodBag" + _bloodType + _rhVal;
 _haswholebag = _bloodBagWholeNeeded in magazines player;
+_hasUniversal = "ItemBloodbag" in magazines player;
 
-if (_haswholebag) then {
+if (_haswholebag or (!DZE_UseBloodTypes && _hasUniversal)) then {
 	_wholeBag = true;
 } else {
 	_badBag = true;
@@ -69,7 +72,7 @@ while {r_doLoop and (_i < 12)} do {
 
 	if (_isMedic and !_started) then {
 		closeDialog 0;
-		//diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
+		diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
 		if (_badBag) then {
 			for "_r" from 0 to 15 do {
 				_bagToRemove = _bagUsed;
@@ -81,7 +84,7 @@ while {r_doLoop and (_i < 12)} do {
 				};
 			};
 		} else {
-			if (_wholeBag) then {_bagToRemove = _bloodBagWholeNeeded; };
+			if (_wholeBag) then { _bagToRemove = if (!DZE_UseBloodTypes) then {"ItemBloodbag"} else {_bloodBagWholeNeeded}; };
 			if (_bagToRemove in magazines player) then { _bagFound = true; };
 		};
 		if (!_bagFound) then {_forceClose = true;} else { player removeMagazine _bagToRemove;};
@@ -101,7 +104,12 @@ while {r_doLoop and (_i < 12)} do {
 						r_player_blood = r_player_blood + 100 + _randomamount;
 					} else {
 						_randomamount = round(random 200);
-						r_player_blood = r_player_blood + 800 + _randomamount;
+						if (DZE_SelfTransfuse) then {
+							r_player_blood = (r_player_blood + (DZE_selfTransfuse_Values select 0)) min r_player_bloodTotal;
+							_TransfusionInfection = if ((DZE_selfTransfuse_Values select 1) < 0) then {false} else {((random (DZE_selfTransfuse_Values select 1)) < 1)};
+						} else {
+							r_player_blood = r_player_blood + 800 + _randomamount;
+						};
 					};
 					
 					//PVDZ_send = [_unit,"Transfuse",[_unit,player,1000]];
@@ -122,19 +130,19 @@ while {r_doLoop and (_i < 12)} do {
 	_blood = _unit getVariable ["USEC_BloodQty", 0];
 
 	if (((_blood >= r_player_bloodTotal) and !_badBag and _bagFound) or (_i == 12)) then {
-		//diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
+		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
 		selfTransfusionTime = time;
-		[_unit, DZE_selfTransfuse_Values] call player_medTransfuse;
+		if (_TransfusionInfection) then {r_player_infected = true; player setVariable["USEC_infected",true,true];};
 		cutText [localize "str_actions_medical_transfusion_successful", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_successful","PLAIN DOWN"] call RE;
-		[player,25] call player_humanityChange;
 		r_doLoop = false;
 	};
 
 	_isClose = ((player distance _unit) < ((sizeOf typeOf _unit) / 2));
 
 	if (r_interrupt or !_isClose or _forceClose) then {
-		//diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];		cutText [localize "str_actions_medical_transfusion_interrupted", "PLAIN DOWN"];
+		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
+		cutText [localize "str_actions_medical_transfusion_interrupted", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_interrupted","PLAIN DOWN"] call RE;
 		r_doLoop = false;
 	};

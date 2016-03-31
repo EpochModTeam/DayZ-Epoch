@@ -108,7 +108,7 @@ while {r_doLoop} do {
 
 	if (_isMedic and !_started) then {
 		closeDialog 0;
-		//diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
+		diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
 		if (_badBag) then {
 			for "_r" from 0 to 15 do {
 				//select random bloodbag if the player has more then one of the required types
@@ -188,7 +188,7 @@ while {r_doLoop} do {
 	_blood = _unit getVariable ["USEC_BloodQty", 0];
 
 	if (_blood >= r_player_bloodTotal or _bloodAmount == 0) then {
-		//diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
+		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
 		cutText [localize "str_actions_medical_transfusion_successful", "PLAIN DOWN"];
 		//see Note 1
 		//[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_successful","PLAIN DOWN"] call RE;
@@ -199,7 +199,7 @@ while {r_doLoop} do {
 	_isClose = ((player distance _unit) < ((sizeOf typeOf _unit) / 2));
 
 	if (r_interrupt or !_isClose or _forceClose) then {
-		//diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
+		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
 		cutText [localize "str_actions_medical_transfusion_interrupted", "PLAIN DOWN"];
 		//see Note 1
 		//[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_interrupted","PLAIN DOWN"] call RE;

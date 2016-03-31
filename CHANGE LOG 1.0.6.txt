@@ -16,6 +16,7 @@
 	- Dupicate functions have been renamed:
 		- dayz_HungerThirst --> dayz_NutritionSystem
 		- dayz_objectUID3 --> dayz_objectUID2
+		- fnc_usec_playerBleed --> fnc_usec_playerHandleBlood
 		- object_handleServerKilled --> vehicle_handleServerKilled
 		- object_setFixServer --> fnc_veh_setFixServer 
 		- vehicle_handleDamage --> fnc_veh_handleDam

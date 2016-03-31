@@ -16,7 +16,7 @@ dayz_POIs = true;
 dayz_infectiousWaterholes = true;
 
 //DayZMod presets
-dayz_presets = "Vanilla"; //"Custom","Classic","Vanilla","Elite"
+dayz_presets = "Custom"; //"Custom","Classic","Vanilla","Elite"
 
 //Only need to edit if you are running a custom server.
 if (dayz_presets == "Custom") then {

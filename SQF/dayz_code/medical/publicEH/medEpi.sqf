@@ -1,5 +1,6 @@
 // called by PublicVariableEventHandler "PVCDZ_hlt_Epi", received from the server, 
 // because another player sent a PVDZ_send = [_unit,"Epinephrine",[_unit,player,"ItemEpinephrine"]];
+
 _array = _this; //_this select 0;
 _unit = _array select 0; // healed
 _medic = _array select 1; // healer

@@ -405,6 +405,9 @@ if(isNil "dayz_infectiouswaterholes") then {
 if(isNil "dayz_POIs") then {
     dayz_POIs = true; //Enable POI's
 };
+if(isNil "dayz_ForcefullmoonNights") then {
+	dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
+};
 
 //Replace server individual settings with ranked settings
 if(isNil "dayz_presets") then { dayz_presets = "Vanilla"; };
@@ -418,7 +421,6 @@ switch (dayz_presets) do {
 		if(isNil "dayz_spawnCrashSite_clutterCutter") then { dayz_spawnCrashSite_clutterCutter = 0; };
 		if(isNil "dayz_spawnInfectedSite_clutterCutter") then { dayz_spawnInfectedSite_clutterCutter = 0; };
 		if(isNil "dayz_bleedingeffect") then { dayz_bleedingeffect = 2; };
-		if(isNil "dayz_ForcefullmoonNights") then { dayz_ForcefullmoonNights = false; };
 		if(isNil "dayz_OpenTarget_TimerTicks") then { dayz_OpenTarget_TimerTicks = 60 * 10; };
 		if(isNil "dayz_temperature_override") then { dayz_temperature_override = true; };
 		if(isNil "dayz_nutritionValuesSystem") then { dayz_nutritionValuesSystem = false; };
@@ -433,7 +435,6 @@ switch (dayz_presets) do {
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 		dayz_bleedingeffect = 2; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
 		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = true; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = false; //Enables nutrition system
@@ -448,7 +449,6 @@ switch (dayz_presets) do {
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
 		dayz_OpenTarget_TimerTicks = 60 * 25; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = true; //Enables nutrition system
@@ -463,7 +463,6 @@ switch (dayz_presets) do {
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = true; //Enables nutrition system

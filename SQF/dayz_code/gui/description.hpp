@@ -66,7 +66,6 @@ class RscProgressNotFreeze
 //
 // the loading screen itself
 //
-
 class DayZ_loadingScreen
 { 
 	idd = -1;

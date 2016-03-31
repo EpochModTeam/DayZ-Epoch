@@ -93,7 +93,7 @@ switch (_item) do {
 		_id = [player,"wholeBloodBagOPOS"] execVM "\z\addons\dayz_code\medical\selfbloodbag.sqf";
 	};
 	case "ItemBloodbag": {
-		_id = [0,0,0,[player]] execVM "\z\addons\dayz_code\medical\self_transfusion.sqf";
+		_id = [player,"ItemBloodbag"] execVM "\z\addons\dayz_code\medical\selfbloodbag.sqf";
 	};
 };
 if (vehicle player != player) then {

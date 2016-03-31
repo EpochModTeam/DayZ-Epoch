@@ -370,12 +370,38 @@ while {1 == 1} do {
 	if (_startcombattimer == 1 || _PlayerNearby) then {
 		player setVariable["combattimeout", diag_tickTime + 30, false];
 		player setVariable["startcombattimer", 0, false];
+		dayz_combat = 1;
 	} else {
 		if (_ZedsNearby) then {
 			player setVariable["combattimeout", diag_tickTime + 10, false];
 			player setVariable["startcombattimer", 0, false];
+			dayz_combat = 1;
 		};
 	};
+	
+	if (toLower DZE_UI != "vanilla") then {
+		_combattimeout = player getVariable["combattimeout",0];
+		if (_combattimeout > 0) then {
+			_timeleft = _combattimeout - time;
+			if (_timeleft > 0) then {
+				//hintSilent format["In Combat: %1",round(_timeleft)];
+			} else {
+				//hintSilent "Not in Combat";
+				player setVariable["combattimeout", 0, true];
+				dayz_combat = 0;
+				_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
+				_combatcontrol = _combatdisplay displayCtrl 1307;
+				_combatcontrol ctrlShow true;
+			};
+		} else {
+			//hintSilent "Not in Combat";
+			dayz_combat = 0;
+			_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
+			_combatcontrol = _combatdisplay displayCtrl 1307;
+			_combatcontrol ctrlShow true;
+		};
+	};
+	
 	//setGroupIconsVisible [false,false];
 	//clearGroupIcons group player;
 

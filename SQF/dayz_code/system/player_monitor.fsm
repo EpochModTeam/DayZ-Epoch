@@ -1224,6 +1224,7 @@ class FSM
                          "_myAssets = getText(configFile >> ""CfgPatches"" >> ""dayz_communityassets"" >> ""dayzVersion"");" \n
                          "_mySfx = getNumber(configFile >> ""CfgPatches"" >> ""dayz_sfx"" >> ""dayzVersion"");" \n
                          "_myAnim = getNumber(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""dayzVersion"");" \n
+						 "_myEpoch = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
                          "_myEpochB = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch_b"" >> ""dayzVersion"");" \n
                          "" \n
                          "/*" \n
@@ -1250,7 +1251,7 @@ class FSM
                                         priority = 2.000000;
                                         to="ERROR__Client_Files";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(_myAnim != 1.8) || (_mySfx != 1.8) || (_myAssets != ""1.8.0.1"") || (_myEpochB != ""1.0.6"")"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(_myAnim != 1.8) || (_mySfx != 1.8) || (_myAssets != ""1.8.0.1"") || (_myEpoch != ""1.0.4.2"") || (_myEpochB != ""1.0.6"")"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
