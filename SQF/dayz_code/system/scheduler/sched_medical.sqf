@@ -124,8 +124,6 @@ sched_medical_effects = {
 sched_medical_effectsSlow = {
 	// every 10 seconds: diziness using slow shakecam, to handle pain and lack of water
 	HIDE_FSM_VARS
-	
-	r_player_inpain = true;
 
     if ((r_player_inpain or dayz_thirst >= SleepWater) and !r_player_unconscious and (1 > random 9) and (0 == player getVariable["startcombattimer",0])) then {
         _blurTask = [] spawn {

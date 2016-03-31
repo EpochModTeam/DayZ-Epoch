@@ -16,6 +16,9 @@ Author: Foxy
 #define Array_GetSet(array, index, value) ([array, index, value] call dz_fn_array_getSet)
 #define Array_GetSet_Fast(array, index, value) ([(array) select (index), (array) set [index, value]] select 0)
 
+#define Array_PushBack(array, element) ([array, element] call dz_fn_array_pushBack)
+#define Array_PushBack_Fast(array, element) Array_Set(array, count (array), element)
+
 //Returns true if any of the array elements matches the specified predicate
 #define Array_Any(arr, predicate) ([arr, predicate] call dz_fn_array_any)
 

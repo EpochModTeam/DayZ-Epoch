@@ -1,14 +1,5 @@
-class TentStorage: Land_A_tent {
-	vehicleClass = "Survival";
-	transportMaxMagazines = 50;
-	transportMaxWeapons = 10;
-	transportMaxBackpacks = 5;
-	create = "WeaponHolder_ItemTentOld";
-	constructioncount = 1;
-	offset[] = {0,2.5,0};
-	requireplot = 0;
-	nounderground = 0;
-};
+// DayZ tents are defined in \dayz_equip\configs\Storage.hpp
+
 class TentStorageDomed: TentStorage {
 	displayName = "Digital Camo Tent";
 	vehicleClass = "Survival";
@@ -30,33 +21,27 @@ class TentStorageDomed2: TentStorage {
 	offset[] = {0,2.5,0};
 };
 
-class WeaponHolder_ItemTentOld: WeaponHolder {
+class WeaponHolder_ItemTentOld: WeaponHolderBase {
 	scope = public;
 	displayName = $STR_EQUIP_NAME_20;
-	class transportmagazines {
-		class _xx_ItemTentOld {
-			magazine = "ItemTentOld";
-			count = 1;
-		};
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemTentOld'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };
-class WeaponHolder_ItemTentDomed: WeaponHolder {
+class WeaponHolder_ItemTentDomed: WeaponHolderBase {
 	scope = public;
 	displayName = "Domed Desert Tent";
-	class transportmagazines {
-		class _xx_ItemTentDomed {
-			magazine = "ItemTentDomed";
-			count = 1;
-		};
+
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemTentDomed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };
-class WeaponHolder_ItemTentDomed2: WeaponHolder {
+class WeaponHolder_ItemTentDomed2: WeaponHolderBase {
 	scope = public;
 	displayName = "Domed Green Tent";
-	class transportmagazines {
-		class _xx_ItemTentDomed2 {
-			magazine = "ItemTentDomed2";
-			count = 1;
-		};
+
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemTentDomed2'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };

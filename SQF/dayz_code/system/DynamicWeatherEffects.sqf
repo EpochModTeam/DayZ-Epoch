@@ -506,10 +506,10 @@ if (isServer) then {
                 };
 
                 if (_debug) then {
-                    uisleep 1;
+                    uiSleep 1;
                 }
                 else {
-                    uisleep 10;
+                    uiSleep 10;
                 };
             };
         };

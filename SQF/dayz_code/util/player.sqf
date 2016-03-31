@@ -131,10 +131,10 @@ dz_fn_player_dropItem =
 	
 	_wh = nil;
 	
-	if (count _near == 0) then
-		{ _wh = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"]; }
-	else
+	if (count _near > 0) then
 		{ _wh = _near select 0; };
+	else
+		{ _wh = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"]; }
 	
 	if (_this select 0 == 0) then
 		{ _wh addWeaponCargoGlobal [_this select 1, 1]; }
@@ -148,4 +148,14 @@ dz_fn_player_dropItem =
 	
 	#undef DROP_ITEM_WEAPON_HOLDER_SEARCH_RADIUS
 	#undef DROP_ITEM_WEAPON_HOLDER_PLAYER_OFFSET
+};
+
+dz_fn_player_removeWeapon =
+{
+	Player_RemoveWeapon_Fast(_this)
+};
+
+dz_fn_player_removeMagazine =
+{
+	Player_RemoveMagazine_Fast(_this)
 };

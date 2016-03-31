@@ -165,15 +165,6 @@
 			<French>Ce kit inclut tous les outils nécessaires à fondre, modeler et découper des clés.</French>
 			<Czech>Sada obsahující nástroje potřebné k vytvoření klíčů.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_SLEDGE">
-			<English>Sledgehammer</English>
-			<German>Vorschlaghammer</German>
-			<Russian>Кувалда</Russian>
-			<Spanish>Almádena</Spanish>
-			<Dutch>Voorhamer</Dutch>
-			<French>Masse</French>
-			<Czech>Palice</Czech>
-		</Key>
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
 			<English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
 			<German>Ein Vorschlaghammer ist ein aus einem Hammerkopf (typischerweise aus geschmiedetem Stahl) und einem Stiel bestehendes Handwerkzeug. Der Vorschlaghammer kann mit höheren Schlagkräften als andere Hämmer genutzt werden.</German>

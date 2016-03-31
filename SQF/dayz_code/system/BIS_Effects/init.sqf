@@ -1,7 +1,7 @@
 BIS_Effects_Init = true; //A2 won't overwrite this if var is not nil
 /* BIS_Effects_* fixes from Dwarden */
 diag_log "Res3tting B!S effects...";
-BIS_Effects_EH_Fired=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\fired.sqf";
+BIS_Effects_EH_Fired=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\fired.sqf"; // Allows tanks to use smoke counter measures
 BIS_Effects_EH_Killed = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\killed.sqf";
 BIS_Effects_Rifle = {false};
 BIS_Effects_Cannon=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\cannon.sqf";

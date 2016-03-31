@@ -1,9 +1,10 @@
 class ItemSledge: ItemCore
 {
 	scope = public;
-	displayName=$STR_EQUIP_SLEDGE;
+	
 	model="\z\addons\dayz_epoch\models\sledge_mag.p3d";
 	picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa";
+	displayName=$STR_EQUIP_NAME_SledgeHammer;
 	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
 	class ItemActions
 	{

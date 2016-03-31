@@ -49,7 +49,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "1.0.6";
+		version = "DayZ Epoch 1.0.6";
 		hiveVersion = 0.96;
 		//requiredAddons[] = {"Chernarus"}; // No need to load for other maps
 	};

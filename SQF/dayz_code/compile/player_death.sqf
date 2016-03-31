@@ -30,6 +30,7 @@ if (dayz_onBack != "") then {
 _infected = if (r_player_infected && DZE_PlayerZed) then {1} else {0};
 _killerMethod = "unknown";
 _killerName = "unknown";
+_killerWeapon = "unknown weapon";
 _killerDist = 0;
 if (count _this > 0) then {
 	_killerObj = _this select 0;
@@ -45,10 +46,11 @@ if (count _this > 0) then {
 	};
 	if (count _this > 2) then {_killerMethod = "zombie";};
 };
-if (isNil "_killerWeapon") then {_killerWeapon = "unknown weapon";};
+
 //Send Death Notice
 PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray _bodyName,_infected,toArray _killerName,toArray _killerWeapon,_killerDist,toArray _killerMethod]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
+diag_log format["Debug death message vars: %1",PVDZ_plr_Death];
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;
 uiSleep 0.5;
