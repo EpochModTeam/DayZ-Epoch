@@ -1,3 +1,4 @@
+/* Needs updating
 private ["_guaranteedLoot","_randomizedLoot","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_fadeFire","_crashModel","_lootTable","_crashName","_spawnRoll","_position","_crash","_config","_hasAdjustment","_newHeight","_adjustedPos","_num","_itemTypes","_index","_weights","_cntWeights","_nearby","_itemType","_needsrelocated","_istoomany","_pos","_lootPos"];
 
 _guaranteedLoot = 3;
@@ -99,3 +100,5 @@ _nearby = _pos nearObjects ["ReammoBox", sizeOf(_crashModel)];
 _x setVariable ["permaLoot",true];
 } count _nearBy;
 };
+
+*/

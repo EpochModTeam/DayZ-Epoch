@@ -1,4 +1,4 @@
-class ItemSledge: ItemCore
+class ItemSledge: ItemCore // Epoch class
 {
 	scope = public;
 	
@@ -29,6 +29,16 @@ class ItemSledge: ItemCore
 		};
 		*/
 	};
+};
+
+class ItemSledgeHammer : ItemCore
+{
+	scope = public;
+	
+	model = "z\addons\dayz_communityweapons\models\sledge_hammer\sledgehammer.p3d";
+	picture = "\z\addons\dayz_communityweapons\models\sledge_hammer\sledgehammer.paa";
+	displayName = $STR_EQUIP_NAME_SledgeHammer;
+	descriptionShort = $STR_EQUIP_DESC_SledgeHammer;
 };
 
 class ItemSledgeHammerBroken : ItemCore

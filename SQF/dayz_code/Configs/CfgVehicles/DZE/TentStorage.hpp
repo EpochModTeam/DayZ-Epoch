@@ -1,5 +1,5 @@
 // DayZ tents are defined in \dayz_equip\configs\Storage.hpp
-
+class TentStorage;
 class TentStorageDomed: TentStorage {
 	displayName = "Digital Camo Tent";
 	vehicleClass = "Survival";

@@ -8,7 +8,7 @@ dayZ_instance = 8; //Instance ID of this server
 dayZ_serverName = ""; //Shown to all players in the bottom left of the screen (country code + server number)
 
 //Game settings
-dayz_antihack = 0; // DayZ Antihack / 1 = enabled // 0 = disabled
+dayz_antihack = 1; // DayZ Antihack / 1 = enabled // 0 = disabled
 dayz_REsec = 1; // DayZ RE Security / 1 = enabled // 0 = disabled
 dayz_enableRules = true; //Enables a nice little news/rules feed on player login (make sure to keep the lists quick).
 dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
@@ -20,14 +20,14 @@ dayz_presets = "Custom"; //"Custom","Classic","Vanilla","Elite"
 
 //Only need to edit if you are running a custom server.
 if (dayz_presets == "Custom") then {
-	dayz_enableGhosting = true; //Enable disable the ghosting system.
+	dayz_enableGhosting = false; //Enable disable the ghosting system.
 	dayz_ghostTimer = 30; //Sets how long in seconds a player must be disconnected before being able to login again.
-	dayz_spawnselection = 1; //Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
+	dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
 	dayz_spawncarepkgs_clutterCutter = 2; //0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
 	dayz_spawnCrashSite_clutterCutter = 2;	// heli crash options 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
 	dayz_spawnInfectedSite_clutterCutter = 2; // infected base spawn 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass 
 	dayz_bleedingeffect = 3; //1 = blood on the ground, 2 = partical effect, 3 = both
-	dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
+	dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 	dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked
 	dayz_nutritionValuesSystem = false; //Enables nutrition system
 	dayz_classicBloodBagSystem = false; // removes all blood type bloodbags (not implmented yet)
@@ -105,11 +105,11 @@ if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
 	execVM "\z\addons\dayz_server\traders\provinggrounds_pmc.sqf"; //Add trader agents
 	execVM "\z\addons\dayz_server\system\server_monitor.sqf";
-	if (dayz_infectiousWaterholes) then {execVM "\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\init.sqf";};
+	if (dayz_infectiousWaterholes && (toLower worldName == "chernarus")) then {execVM "\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\init.sqf";};
 	//Must be global spawned, so players don't fall through buildings (might be best to spilt these to important, not important)
 };
 
-if (dayz_POIs) then { execVM "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf"; };
+if (dayz_POIs && (toLower worldName == "chernarus")) then { execVM "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf"; };
 
 if (!isDedicated) then {
 	if (dayz_antihack != 0) then {

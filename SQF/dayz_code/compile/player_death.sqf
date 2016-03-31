@@ -48,9 +48,9 @@ if (count _this > 0) then {
 };
 
 //Send Death Notice
+diag_log format["Debug death message vars: %1 %2 %3 %4 %5 %6 %7 %8 %9 %10",dayz_characterID,0,_body,_playerID,_bodyName,_infected,_killerName,_killerWeapon,_killerDist,_killerMethod];
 PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray _bodyName,_infected,toArray _killerName,toArray _killerWeapon,_killerDist,toArray _killerMethod]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
-diag_log format["Debug death message vars: %1",PVDZ_plr_Death];
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;
 uiSleep 0.5;

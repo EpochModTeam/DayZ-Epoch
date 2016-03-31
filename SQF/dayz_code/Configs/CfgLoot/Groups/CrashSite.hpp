@@ -8,6 +8,8 @@ CrashSiteType[] =
 	{Loot_NONE,			1,		CrashSite_UN, CrashSiteUN}		//United Nations Mi-8
 };
 
+
+
 /* Russian */
 
 CrashSiteRU[] =

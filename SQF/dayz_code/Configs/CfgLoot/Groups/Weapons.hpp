@@ -16,11 +16,11 @@ pistols[] = {
 	{Loot_WEAPON,		0.1,	revolver_gold_EP1}
 };
 shotgunsingleshot[] = {
-	{Loot_WEAPON,		2,		Winchester1866},
+	{Loot_WEAPON,		2,		Winchester1866_DZ},
 	{Loot_WEAPON,		1.7,	LeeEnfield},
 	{Loot_WEAPON,		1.7,	MR43},
 	{Loot_WEAPON,		1,		Saiga12K},
-	{Loot_WEAPON,		1,		Remington870_lamp},
+	{Loot_WEAPON,		1,		Remington870_DZ},
 	{Loot_WEAPON,		1,		Crossbow_DZ},
 	//{Loot_WEAPON,		1,		RedRyder},
 	{Loot_WEAPON,		1,		M1014}
@@ -105,10 +105,10 @@ machineguns[] = {
 	{Loot_WEAPON,		1,		m240_scoped_EP1_DZE},
 	{Loot_WEAPON,		0.8,	M240_DZ},
 	{Loot_WEAPON,		0.8,	M249_EP1_DZ},
-	{Loot_WEAPON,		0.5,	Mk_48_DZ}
+	{Loot_WEAPON,		0.5,	Mk_48}
 };
 militaryshotguns[] = {
 	{Loot_WEAPON,		2,		Saiga12K},
-	{Loot_WEAPON,		2,		Remington870_lamp},
+	{Loot_WEAPON,		2,		Remington870_FL_DZ},
 	{Loot_WEAPON,		2,		M1014}
 };

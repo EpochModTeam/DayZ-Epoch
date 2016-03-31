@@ -1,19 +1,5 @@
 private ["_random","_lastIndex","_weights","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
 
-if (isNil "spawn_vehicles_init") then {
-	spawn_vehicles_init = "done";
-	// Get all buildings and roads only once. Very taxing, but only on first startup
-	buildingList = [];
-	{
-		if (DZE_MissionLootTable) then {
-			if (isClass (missionConfigFile >> "CfgLoot" >> "Buildings" >> (typeOf _x))) then {buildingList set [count buildingList,_x];};
-		} else {
-			if (isClass (configFile >> "CfgLoot" >> "Buildings" >> (typeOf _x))) then {buildingList set [count buildingList,_x];};
-		};
-	} count (dayz_centerMarker nearObjects ["building",DynamicVehicleArea]);
-	roadList = dayz_centerMarker nearRoads DynamicVehicleArea;
-};
-
 while {count AllowedVehiclesList > 0} do {
 	// BIS_fnc_selectRandom replaced because the index may be needed to remove the element
 	_index = floor random count AllowedVehiclesList;
