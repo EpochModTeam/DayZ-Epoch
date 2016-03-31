@@ -6,7 +6,7 @@ Office[] =
 	{Loot_WEAPON,		6,		ItemCompass},
 	{Loot_WEAPON,		6,		ItemKnife},
 	{Loot_WEAPON,		4,		ItemFlashlight},
-	{Loot_WEAPON,		4,		ItemMatchbox_DZE},
+	{Loot_WEAPON,		4,		ItemMatchbox},
 	{Loot_WEAPON,		4,		Binocular},
 	{Loot_WEAPON,		3,		ItemCrowbar},
 

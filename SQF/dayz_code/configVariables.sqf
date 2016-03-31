@@ -4,6 +4,7 @@
 // Standard DayZ variables are found in dayz_code\init\variables.sqf
 
 dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
+dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
 dayz_sellDistance_vehicle = 10; // Max distance players can sell land vehicles from at traders
 dayz_sellDistance_boat = 30; // Max distance players can sell boats from at traders

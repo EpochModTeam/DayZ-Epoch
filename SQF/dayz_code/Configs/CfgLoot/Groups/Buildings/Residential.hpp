@@ -40,6 +40,6 @@ Residential[] =
 	{Loot_GROUP,		5,		clothes},
 	{Loot_GROUP,		3,		specialclothes},
 	{Loot_GROUP,		3,		tents},
-	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
+	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		8,		Generic}
 };

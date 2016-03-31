@@ -32,6 +32,6 @@ Farm[] =
 	{Loot_GROUP,		15,		AmmoCivilian},
 	//{Loot_GROUP,		3,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		Consumable},
-	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
+	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		8,		Generic}
 };

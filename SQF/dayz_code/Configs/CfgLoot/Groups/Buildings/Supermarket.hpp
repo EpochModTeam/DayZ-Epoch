@@ -41,7 +41,7 @@ Supermarket[] =
 	{Loot_GROUP,		10,		AmmoCivilian},
 	//{Loot_GROUP,		3,		AttachmentsGeneric},
 	{Loot_GROUP,		3,		tents},
-	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
+	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		10,		Trash}
 //	{Loot_GROUP,		3,		MedicalLow}
 };

@@ -7,6 +7,14 @@
 -- UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
 
 -- ----------------------------
+-- ItemMatchbox_DZE was removed, use dayz_matchboxCount config variable for match stick count
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item` = '["ItemMatchbox",1]' WHERE `item` = '["ItemMatchbox_DZE",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemMatchbox_DZE', 'ItemMatchbox') WHERE INSTR(Backpack, 'ItemMatchbox_DZE') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemMatchbox_DZE', 'ItemMatchbox') WHERE INSTR(Inventory, 'ItemMatchbox_DZE') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemMatchbox_DZE', 'ItemMatchbox') WHERE INSTR(Inventory, 'ItemMatchbox_DZE') > 0;
+
+-- ----------------------------
 -- ItemHatchet_DZE was removed because it was identical to ItemHatchet
 -- ----------------------------
 UPDATE `Traders_DATA` SET `item` = '["ItemHatchet",1]' WHERE `item` = '["ItemHatchet_DZE",1]';

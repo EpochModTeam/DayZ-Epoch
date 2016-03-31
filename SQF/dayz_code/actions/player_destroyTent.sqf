@@ -57,19 +57,21 @@ player addMagazine _emptycan;
 _randomBoxMatches = _matchArray call BIS_fnc_selectRandom; 
 _qtyRemaining = getText (configFile >> "cfgWeapons" >> _randomBoxMatches >> "Ignators" >> "qtyRemaining");
 
-switch _randomBoxMatches do {
-	case "ItemMatchbox" : { 
-		if ([0.3] call fn_chance) then {
+if (dayz_matchboxCount) then {
+	switch _randomBoxMatches do {
+		case "ItemMatchbox" : { 
+			if ([0.3] call fn_chance) then {
+				player removeWeapon _randomBoxMatches;
+				player addWeapon _qtyRemaining;
+				
+				//info box.
+				systemChat (localize "str_info_limitedbox");	
+			};	
+		};
+		default { 
 			player removeWeapon _randomBoxMatches;
 			player addWeapon _qtyRemaining;
-			
-			//info box.
-			systemChat (localize "str_info_limitedbox");	
-		};	
-	};
-	default { 
-		player removeWeapon _randomBoxMatches;
-		player addWeapon _qtyRemaining;
+		};
 	};
 };
 
@@ -82,7 +84,7 @@ _sfx = "tentpack";
 // Added Nutrition-Factor for work
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-uisleep 3;
+uiSleep 3;
 
 _activatingPlayer = player;
 PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];

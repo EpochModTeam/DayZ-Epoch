@@ -49,7 +49,7 @@ class Category_679 {
 		buy[] = {6,"ItemSilverBar"};
 		sell[] = {3,"ItemSilverBar"};
 	};
-	class ItemMatchbox_DZE {
+	class ItemMatchbox {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
@@ -136,7 +136,7 @@ class Category_681 {
 		buy[] = {6,"ItemSilverBar"};
 		sell[] = {3,"ItemSilverBar"};
 	};
-	class ItemMatchbox_DZE {
+	class ItemMatchbox {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
@@ -223,7 +223,7 @@ class Category_532 {
 		buy[] = {6,"ItemSilverBar"};
 		sell[] = {3,"ItemSilverBar"};
 	};
-	class ItemMatchbox_DZE {
+	class ItemMatchbox {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};

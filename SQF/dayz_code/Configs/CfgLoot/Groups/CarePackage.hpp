@@ -28,6 +28,6 @@ CarePackage[] =
 	{Loot_MAGAZINE,		4,		ItemDomeTent},
 	{Loot_PILE,			10,		MedicalLow, 1, 3},
 	{Loot_PILE,			15,		Consumable, 1, 3},
-	{Loot_WEAPON,		3,		ItemMatchbox_DZE},
+	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		12,		Generic}
 };

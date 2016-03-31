@@ -298,7 +298,7 @@ class ItemFuelBarrelEmpty: ItemFuelBarrel
 				text = $STR_EPOCH_PLAYER_276;
 				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 				neednearby[] = {};
-				requiretools[] = {"ItemToolbox","ItemMatchbox_DZE"};
+				requiretools[] = {"ItemToolbox","ItemMatchbox"};
 				output[] = {{"ItemFireBarrel_kit",1}};
 				input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
 		};

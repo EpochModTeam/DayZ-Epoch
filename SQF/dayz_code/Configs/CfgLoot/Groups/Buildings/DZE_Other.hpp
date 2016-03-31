@@ -1,7 +1,7 @@
 DynamicDebris[] =
 {
 	{Loot_WEAPON,		2,		ItemWatch},
-	{Loot_WEAPON,		4,		ItemMatchbox_DZE},
+	{Loot_WEAPON,		4,		ItemMatchbox},
 	{Loot_WEAPON,		4,		ItemFlashlight},
 	{Loot_WEAPON,		3,		Colt1911},
 	{Loot_WEAPON,		4,		Makarov},
@@ -18,7 +18,7 @@ DynamicDebris[] =
 DynamicDebrisMilitary[] =
 {
 	{Loot_WEAPON,		2,		ItemWatch},
-	{Loot_WEAPON,		4,		ItemMatchbox_DZE},
+	{Loot_WEAPON,		4,		ItemMatchbox},
 	{Loot_WEAPON,		4,		ItemFlashlight},
 	{Loot_WEAPON,		4,		ItemEtool},
 	{Loot_WEAPON,		3,		Colt1911},

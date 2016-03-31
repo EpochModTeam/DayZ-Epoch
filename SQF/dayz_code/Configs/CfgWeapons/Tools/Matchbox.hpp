@@ -88,16 +88,3 @@ class Item1Matchbox : ItemMatchbox
 		matches = 1;
 	};
 };
-
-
-// EPOCH ADDITION
-
-class ItemMatchbox_DZE: ItemMatchbox
-{
-	class Ignators
-	{
-		chance = 1;
-		matches = -1;
-		qtyRemaining = "ItemMatchbox_DZE"; //Use new matchbox system but don't reduce quantity
-	};
-};

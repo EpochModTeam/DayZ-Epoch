@@ -60,7 +60,7 @@ class PartWoodPile : CA_Magazine
 		class Build {
 			text = $STR_EPOCH_PLAYER_241;
 			script = "spawn player_build;";
-			require[] = {"ItemMatchbox_DZE"};
+			require[] = {"ItemMatchbox"};
 			create = "Land_Fire_DZ";
 		};
 		class Crafting
