@@ -38,6 +38,6 @@ Office[] =
 	{Loot_GROUP,		8,		Consumable},
 	{Loot_GROUP,		6,		Trash},
 	{Loot_GROUP,		8,		Generic},
-	{Loot_GROUP,		10,		AmmoCivilian}
-	//{Loot_GROUP,		5,		AttachmentsGeneric}
+	{Loot_GROUP,		10,		AmmoCivilian},
+	{Loot_GROUP,		5,		AttachmentsGeneric}
 };

@@ -7,27 +7,7 @@ Military[] =
 	{Loot_GROUP,		8,		submachinegun},
 	{Loot_GROUP,		13,		assaultrifles},
 	{Loot_GROUP,		4,		machineguns},
-	/*
-	//Submachineguns
-	{Loot_WEAPON,		1,		PDW_DZ},
-	{Loot_WEAPON,		3,		Bizon_DZ},
-	{Loot_WEAPON,		2,		MP5_DZ},
-	//USE OLD CLASSES
-	//Assault rifles
-	{Loot_WEAPON,		2,		M16A2_DZ},
-	{Loot_WEAPON,		1,		M16A2_GL_DZ},
-	{Loot_WEAPON,		1.5,	M16A4_DZ},
-	{Loot_WEAPON,		0.5,	M4A1_DZ},
-	{Loot_WEAPON,		3,		G36C_DZ},
-	{Loot_WEAPON,		3,		AK74_DZ},
-	{Loot_WEAPON,		3,		AKS74U_DZ},
-	{Loot_WEAPON,		1,		AKM_DZ},
-	{Loot_WEAPON,		1,		SA58_DZ},
 	
-	//Shotguns
-	{Loot_WEAPON,		2,		Remington870_DZ},
-	{Loot_WEAPON,		1,		M1014_DZ},
-	*/
 	//Tools
 	{Loot_TOOL,			3,		Binocular},
 	{Loot_TOOL,			4,		ItemFlashlightRed},
@@ -54,8 +34,8 @@ Military[] =
 	{Loot_MAGAZINE,		5,		ItemSandbag},
 	{Loot_PILE,			15,		AmmoMilitaryLow, 1, 3},
 	{Loot_GROUP,		4,		AmmoMilitaryHigh},
-	//{Loot_GROUP,		4,		AttachmentsGeneric},
-	//{Loot_GROUP,		8,		AttachmentsEast},
+	{Loot_GROUP,		4,		AttachmentsGeneric},
+	{Loot_GROUP,		8,		AttachmentsEast},
 	{Loot_PILE,			10,		MedicalLow, 1, 2},
 	{Loot_PILE,			15,		Trash, 1, 2},
 	{Loot_PILE,			10,		Consumable, 1, 2},
@@ -64,44 +44,7 @@ Military[] =
 
 MilitarySpecial[] =
 {
-	/*
-	//Pistols
-	{Loot_WEAPON,		3,		Makarov_DZ},
-	{Loot_WEAPON,		1,		MakarovSD},
-	{Loot_WEAPON,		2,		M1911_DZ},
-	{Loot_WEAPON,		2,		M9_DZ},
-	{Loot_WEAPON,		1,		M9SD},
-	{Loot_WEAPON,		2,		G17_DZ},
-	{Loot_WEAPON,		2,		Revolver_DZ},
-	{Loot_WEAPON,		0.5,	revolver_gold_EP1},
-	
-	//Submachineguns
-	{Loot_WEAPON,		2,		PDW_DZ},
-	{Loot_WEAPON,		3,		Bizon_DZ},
-	{Loot_WEAPON,		2,		MP5_DZ},
-	
-	//Assault rifles
-	{Loot_WEAPON,		3,		M16A2_DZ},
-	{Loot_WEAPON,		2,		M16A2_GL_DZ},
-	{Loot_WEAPON,		2,		M16A4_DZ},
-	{Loot_WEAPON,		1,		M4A1_DZ},
-//	{Loot_WEAPON,		3,		G36C_DZ},
-	{Loot_WEAPON,		2,		AK74_DZ},
-	{Loot_WEAPON,		2,		AKS74U_DZ},
-	{Loot_WEAPON,		2,		AKM_DZ},
-	{Loot_WEAPON,		2,		SA58_DZ},
-	{Loot_WEAPON,		1,		SA58_RIS_DZ},
-	
-	//Shotguns
-	{Loot_WEAPON,		1,		Remington870_DZ},
-	{Loot_WEAPON,		2,		M1014_DZ},
-	
-	//Machine guns
-	{Loot_WEAPON,		1,		RPK74_DZ},
-	{Loot_WEAPON,		0.5,	UK59_DZ},
-//	{Loot_WEAPON,		0.5,	PKM_DZ},
-	*/
-	{Loot_WEAPON,		2,	NVGoggles},
+	{Loot_WEAPON,		2,		NVGoggles},
 	{Loot_GROUP,		10,		pistols},
 	{Loot_GROUP,		5,		shotgunsingleshot},
 	{Loot_GROUP,		9,		sniperrifles},
@@ -144,9 +87,9 @@ MilitarySpecial[] =
 	{Loot_MAGAZINE,		2,		100Rnd_762x54_PK},
 	{Loot_PILE,			15,		AmmoMilitaryLow, 1, 4},
 	{Loot_PILE,			10,		AmmoMilitaryHigh, 1, 3},
-	//{Loot_GROUP,		2,		AttachmentsGeneric},
-	//{Loot_GROUP,		8,		AttachmentsEast},
-	//{Loot_GROUP,		6,		AttachmentsWest},
+	{Loot_GROUP,		2,		AttachmentsGeneric},
+	{Loot_GROUP,		8,		AttachmentsEast},
+	{Loot_GROUP,		6,		AttachmentsWest},
 	{Loot_PILE,			10,		MedicalLow, 1, 2},
 	{Loot_PILE,			10,		Trash, 1, 2},
 	{Loot_PILE,			10,		Consumable, 1, 2},
@@ -155,8 +98,9 @@ MilitarySpecial[] =
 
 MilitaryIndustrial[] = {//DZE ADDED
 	{Loot_GROUP,				15,		Parts},
-	{ItemFuelBarrelEmpty,		3,		FoodMRE},
-	{ItemGenerator,				3,		FoodMRE},
-	{fuel_pump_kit,				1,		FoodMRE},
+	{Loot_MAGAZINE,				5,		FoodMRE},
+	{Loot_MAGAZINE,				3,		ItemFuelBarrelEmpty},
+	{Loot_MAGAZINE,				2,		ItemGenerator},
+	{Loot_MAGAZINE,				2,		fuel_pump_kit},
 	{Loot_GROUP, 				15, 	Military}
 };

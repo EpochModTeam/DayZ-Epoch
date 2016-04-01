@@ -1,19 +1,19 @@
 [NEW] Fully updated to DayZ 1.8.7 code base @icomrade @ebaydayz
 
 	Some notable changes include (not a full list):
-	- Blood types system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
+	- New loot table format is incompatible with old loot tables. See CfgLoot\README
+	- Several weapon, item and tool classnames changed. See SQL\1.0.6_Updates for a full list
+	- Status UI icons are toggleable between "vanilla","epoch","dark" set i.e. DZE_UI = "epoch"; in init.sqf
+	- Blood type system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
 	- Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
 	- Knife dulling is disabled by default. Set dayz_knifeDulling = true; in init.sqf to enable
 	- Match stick counting is disabled by default. Set dayz_matchboxCount = true; in init.sqf to enable
 	- Water bottle breaking is disabled by default. Set dayz_waterBottleBreaking = true; in init.sqf to enable
-	- New loot table format is incompatible with old loot tables. See CfgLoot\README
 	- Mission.sqm and description.ext now use compact format
 	- Keyboard eventhandler updated, dayz_spaceInterupt is no longer used
 	- Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 	- Weapon switch hotkeys added (1 = primary, 2 = pistol, 3 = melee)
 	- Journal is now functional for displaying stats
-	- ItemFish, Shotgun ammo and several other item classnames changed. See SQL\1.0.6_Updates
-	- Status UI icons are toggleable between "vanilla","epoch","dark" set i.e. DZE_UI = "epoch"; in init.sqf
 	- Dupicate functions have been renamed:
 		- dayz_HungerThirst --> dayz_NutritionSystem
 		- dayz_objectUID3 --> dayz_objectUID2

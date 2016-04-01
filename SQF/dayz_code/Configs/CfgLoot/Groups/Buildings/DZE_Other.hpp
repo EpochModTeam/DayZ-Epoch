@@ -4,7 +4,7 @@ DynamicDebris[] =
 	{Loot_WEAPON,		4,		ItemMatchbox},
 	{Loot_WEAPON,		4,		ItemFlashlight},
 	{Loot_WEAPON,		3,		Colt1911},
-	{Loot_WEAPON,		4,		Makarov},
+	{Loot_WEAPON,		4,		Makarov_DZ}, //Makarov
 	{Loot_WEAPON,		2,		ItemMap},
 	{Loot_WEAPON,		5,		ItemKnife},
 	{Loot_WEAPON,		5,		ItemToolbox},
@@ -21,9 +21,9 @@ DynamicDebrisMilitary[] =
 	{Loot_WEAPON,		4,		ItemMatchbox},
 	{Loot_WEAPON,		4,		ItemFlashlight},
 	{Loot_WEAPON,		4,		ItemEtool},
-	{Loot_WEAPON,		3,		Colt1911},
-	{Loot_WEAPON,		4,		Makarov},
-	{Loot_WEAPON,		2,		MakarovSD},
+	{Loot_WEAPON,		3,		M1911_DZ}, //Colt1911
+	{Loot_WEAPON,		4,		Makarov_DZ}, //Makarov
+	{Loot_WEAPON,		2,		Makarov_SD_DZ}, //MakarovSD
 	{Loot_WEAPON,		2,		ItemMap},
 	{Loot_WEAPON,		5,		ItemKnife},
 	{Loot_WEAPON,		5,		ItemToolbox},

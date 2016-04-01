@@ -27,7 +27,11 @@ Generic[] =
 };
 //DZE
 tents[] = {
-	{Loot_MAGAZINE,		1.1,	WeaponHolder_ItemTentOld},
-	{Loot_MAGAZINE,		1,		WeaponHolder_ItemTentDomed},
-	{Loot_MAGAZINE,		1,		WeaponHolder_ItemTentDomed2}
+	//VANILLA
+	{Loot_MAGAZINE,		0.5,	ItemDomeTent},
+	{Loot_MAGAZINE,		1,		ItemTent},
+	//EPOCH
+	{Loot_MAGAZINE,		1.1,	ItemTentOld},
+	{Loot_MAGAZINE,		1,		ItemTentDomed},
+	{Loot_MAGAZINE,		1,		ItemTentDomed2}
 };

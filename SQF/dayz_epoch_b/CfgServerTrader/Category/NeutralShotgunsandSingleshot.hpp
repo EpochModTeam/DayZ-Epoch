@@ -1,10 +1,10 @@
 class Category_607 {
-	class Winchester1866 {
+	class Winchester1866_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class MR43 {
+	class MR43_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {8,"ItemSilverBar"};
@@ -14,29 +14,29 @@ class Category_607 {
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {5,"ItemSilverBar"};
 	};
-	class M1014 {
+	class M1014_DZ {
 		type = "trade_weapons";
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Remington870_lamp {
+	class Remington870_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class LeeEnfield {
+	class LeeEnfield_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
 };
 class Category_641 {
-	class Winchester1866 {
+	class Winchester1866_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class MR43 {
+	class MR43_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {8,"ItemSilverBar"};
@@ -46,17 +46,17 @@ class Category_641 {
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {5,"ItemSilverBar"};
 	};
-	class M1014 {
+	class M1014_DZ {
 		type = "trade_weapons";
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Remington870_lamp {
+	class Remington870_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class LeeEnfield {
+	class LeeEnfield_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};

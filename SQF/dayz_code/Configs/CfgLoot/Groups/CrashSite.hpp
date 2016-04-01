@@ -14,19 +14,6 @@ CrashSiteType[] =
 
 CrashSiteRU[] =
 {
-	//Weapons Don't use new classes
-	/*{Loot_WEAPON,		2,		Makarov_DZ},
-	{Loot_WEAPON,		4,		PDW_DZ},
-	{Loot_WEAPON,		4,		Bizon_DZ},
-	{Loot_WEAPON,		3,		AKS74U_DZ},
-	{Loot_WEAPON,		3,		AK74_DZ},
-	{Loot_WEAPON,		4,		AKM_DZ},
-	{Loot_WEAPON,		4,		RPK74_DZ},
-	{Loot_WEAPON,		2,		RPK_DZ},
-	{Loot_WEAPON,		0.7,	PKM_DZ},
-	{Loot_WEAPON,		0.7,	SVD_DZ},
-	{Loot_WEAPON,		1,		M40A3_DZ},
-	{Loot_WEAPON,		0.7,	FNFAL_DZ}, */
 	{Loot_GROUP,		10,		assaultrifles},
 	{Loot_GROUP,		4,		submachinegun},
 	{Loot_GROUP,		7,		sniperrifles},
@@ -57,8 +44,8 @@ CrashSiteRU[] =
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
 	{Loot_MAGAZINE,		2,		ItemCamonet},
-	//{Loot_GROUP,		7,		AttachmentsEast},
-	//{Loot_GROUP,		3,		AttachmentsWest},
+	{Loot_GROUP,		7,		AttachmentsEast},
+	{Loot_GROUP,		3,		AttachmentsWest},
 	
 	//Piles
 	{Loot_PILE,			15,		CrashSiteRUPile, 2, 4}
@@ -88,15 +75,6 @@ CrashSiteRUPile[] =
 CrashSiteUS[] =
 {
 	//Weapons
-	/*{Loot_WEAPON,		4,		M9_DZ},
-	{Loot_WEAPON,		6,		MP5_DZ},
-	{Loot_WEAPON,		6,		M4A1_DZ},
-	{Loot_WEAPON,		8,		M16A4_DZ},
-	{Loot_WEAPON,		0.9,	M249_DZ},
-	{Loot_WEAPON,		0.7,	Mk48_DZ},
-	{Loot_WEAPON,		1,		M14_DZ},
-	{Loot_WEAPON,		0.5,	DMR_DZ},
-	{Loot_WEAPON,		1,		M24_DZ},*/
 	{Loot_GROUP,		10,		assaultrifles},
 	{Loot_GROUP,		4,		submachinegun},
 	{Loot_GROUP,		7,		sniperrifles},
@@ -127,7 +105,7 @@ CrashSiteUS[] =
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
 	{Loot_MAGAZINE,		2,		ItemCamonet},
-	//{Loot_GROUP,		10,		AttachmentsWest},
+	{Loot_GROUP,		10,		AttachmentsWest},
 	
 	//Piles
 	{Loot_PILE,			15,		CrashSiteUSPile, 2, 4}
@@ -157,19 +135,6 @@ CrashSiteUSPile[] =
 CrashSiteEU[] =
 {
 	//Weapons
-	/*
-	{Loot_WEAPON,		4,		G17_DZ},
-	{Loot_WEAPON,		6,		MP5_DZ},
-	{Loot_WEAPON,		5,		G36C_DZ},
-	{Loot_WEAPON,		5,		L85_Holo_DZ},
-	{Loot_WEAPON,		1.5,	G36K_Camo_DZ},
-	{Loot_WEAPON,		2.5,	G36A_Camo_DZ},
-	{Loot_WEAPON,		1,		FNFAL_DZ},
-	{Loot_WEAPON,		0.5,	FNFAL_ANPVS4_DZ},
-	{Loot_WEAPON,		0.7,	M240_DZ},
-	{Loot_WEAPON,		0.9,	L110A1_DZ},
-	{Loot_WEAPON,		1,		M24_DZ},
-	*/
 	{Loot_GROUP,		10,		assaultrifles},
 	{Loot_GROUP,		4,		submachinegun},
 	{Loot_GROUP,		7,		sniperrifles},
@@ -200,7 +165,7 @@ CrashSiteEU[] =
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
 	{Loot_MAGAZINE,		2,		ItemCamonet},
-	//{Loot_GROUP,		10,		AttachmentsWest},
+	{Loot_GROUP,		10,		AttachmentsWest},
 	
 	//Piles
 	{Loot_PILE,			15,		CrashSiteEUPile, 2, 4}
@@ -230,20 +195,6 @@ CrashSiteEUPile[] =
 CrashSiteUN[] =
 {
 	//Weapons
-	/*
-	{Loot_WEAPON,		2,		Makarov_DZ},
-	{Loot_WEAPON,		2,		M9_DZ},
-	{Loot_WEAPON,		2,		G17_DZ},
-	{Loot_WEAPON,		2,		Bizon_DZ},
-	{Loot_WEAPON,		2,		MP5_DZ},
-	{Loot_WEAPON,		3,		AK74_DZ},
-	{Loot_WEAPON,		3,		AKS74U_DZ},
-	{Loot_WEAPON,		2,		M4A1_DZ},
-	{Loot_WEAPON,		3,		M16A4_DZ},
-	{Loot_WEAPON,		3,		G36C_DZ},
-	{Loot_WEAPON,		2,		L85_Holo_DZ},
-	{Loot_WEAPON,		1,		RPK74_DZ},
-	*/
 	{Loot_GROUP,		10,		assaultrifles},
 	{Loot_GROUP,		4,		submachinegun},
 	{Loot_GROUP,		7,		sniperrifles},
@@ -275,8 +226,8 @@ CrashSiteUN[] =
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
 	{Loot_MAGAZINE,		2,		ItemCamonet},
-	//{Loot_GROUP,		3,		AttachmentsEast},
-	//{Loot_GROUP,		3,		AttachmentsWest},
+	{Loot_GROUP,		3,		AttachmentsEast},
+	{Loot_GROUP,		3,		AttachmentsWest},
 	
 	//Piles
 	{Loot_PILE,			20,		CrashSiteUNPile, 2, 4}

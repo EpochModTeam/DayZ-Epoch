@@ -13,6 +13,6 @@ Hangar[] =
 	//Groups
 	{Loot_GROUP,		20,		Trash},
 	{Loot_GROUP,		20,		Consumable},
-	{Loot_GROUP,		10,		Generic}
-	//{Loot_GROUP,		5,		AttachmentsGeneric}
+	{Loot_GROUP,		10,		Generic},
+	{Loot_GROUP,		5,		AttachmentsGeneric}
 };

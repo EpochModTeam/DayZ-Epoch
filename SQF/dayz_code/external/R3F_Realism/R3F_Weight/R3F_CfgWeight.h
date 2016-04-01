@@ -84,6 +84,10 @@ class CfgWeight
 		{
 			weight = 5.5;
 		};
+		class M14_DZ
+		{
+			weight = 5.5;
+		};
 		class FN_FAL
 		{
 			weight = 4.5;
@@ -92,11 +96,27 @@ class CfgWeight
 		{
 			weight=5.5;
 		};
+		class FNFAL_DZ
+		{
+			weight = 4.5;
+		};
+		class FNFAL_ANPVS4_DZ
+		{
+			weight=5.5;
+		};
 		class glock17_EP1
 		{
 			weight = 0.7;
 		};
+		class G17_DZ
+		{
+			weight = 0.7;
+		};
 		class G36A_camo
+		{
+			weight = 3.6;
+		};
+		class G36A_Camo_DZ
 		{
 			weight = 3.6;
 		};
@@ -108,11 +128,19 @@ class CfgWeight
 		{
 			weight = 3;
 		};
+		class G36K_Camo_DZ
+		{
+			weight = 3;
+		};
 		class G36_C_SD_camo
 		{
 			weight = 3.6;
 		};
 		class revolver_EP1
+		{
+			weight = 1;
+		};
+		class Revolver_DZ
 		{
 			weight = 1;
 		};
@@ -125,6 +153,10 @@ class CfgWeight
 			weight = 1.9;
 		};
 		class UZI_EP1
+		{
+			weight = 1.7;
+		};
+		class PDW_DZ
 		{
 			weight = 1.7;
 		};
@@ -204,6 +236,10 @@ class CfgWeight
 		{
 			weight = 3.3;
 		};
+		class SA58_ACOG_DZ
+		{
+			weight = 3.3;
+		};
 		class Sa58V_EP1
 		{
 			weight = 3.1;
@@ -212,7 +248,19 @@ class CfgWeight
 		{
 			weight = 3.2;
 		};
+		class SA58_CCO_DZ
+		{
+			weight = 3.2;
+		};
 		class Sa58P_EP1
+		{
+			weight = 3.1;
+		};
+		class SA58_DZ
+		{
+			weight = 3.1;
+		};
+		class SA58_RIS_DZ
 		{
 			weight = 3.1;
 		};
@@ -232,7 +280,15 @@ class CfgWeight
 		{
 			weight = 3.8;
 		};
+		class M16A4_DZ
+		{
+			weight = 3.8;
+		};
 		class M16A2
+		{
+			weight = 3.8;
+		};
+		class M16A2_DZ
 		{
 			weight = 3.8;
 		};
@@ -244,18 +300,23 @@ class CfgWeight
 		{
 			weight = 5.2;
 		};
+		class L85_Holo_DZ
+		{
+			weight = 5.2;
+		};
 		class FN_FAL_ANPVS4
 		{
 			weight = 5.7;
-		};
-		 
-		 
-		
+		};	
 		class M16A4_GL
 		{
 			weight = 5.2;
 		};
 		class M16A2GL
+		{
+			weight = 5.2;
+		};
+		class M16A2_GL_DZ
 		{
 			weight = 5.2;
 		};
@@ -271,7 +332,15 @@ class CfgWeight
 		{
 			weight = 3;
 		};
+		class M4A1_CCO_DZ
+		{
+			weight = 3;
+		};
 		class M4A1
+		{
+			weight = 3;
+		};
+		class M4A1_DZ
 		{
 			weight = 3;
 		};
@@ -311,6 +380,14 @@ class CfgWeight
 		{
 			weight = 2.6;
 		};
+		class MP5_SD_DZ
+		{
+			weight = 2.6;
+		};
+		class MP5_DZ
+		{
+			weight = 2.6;
+		};
 		class G36_C_SD_eotech
 		{
 			weight = 3.6;
@@ -327,17 +404,19 @@ class CfgWeight
 		{
 			weight = 14;
 		};
-		
 		class G36a
 		{
 			weight = 3.6;
 		};
-		
+		class G36
+		{
+			weight = 3;
+		};
 		class G36C
 		{
 			weight = 2.8;
 		};
-		class G36
+		class G36C_DZ
 		{
 			weight = 3;
 		};
@@ -345,7 +424,19 @@ class CfgWeight
 		{
 			weight = 3.8;
 		}; 
+		class M1014_DZ
+		{
+			weight = 3.8;
+		}; 
 		class Remington870_lamp
+		{
+			weight = 4.0;
+		}; 
+		class Remington870_DZ
+		{
+			weight = 4.0;
+		}; 
+		class Remington870_FL_DZ
 		{
 			weight = 4.0;
 		}; 
@@ -353,11 +444,18 @@ class CfgWeight
 		{
 			weight = 3.5;
 		}; 
+		class MR43_DZ
+		{
+			weight = 3.5;
+		}; 
 		class Winchester1866
 		{
 			weight = 2.8;
 		};
-		
+		class Winchester1866_DZ
+		{
+			weight = 2.8;
+		};
 		class M240
 		{
 			weight = 13;
@@ -388,6 +486,10 @@ class CfgWeight
 		{
 			weight = 8.2;
 		};
+		class Mk48_DZ
+		{
+			weight = 8.2;
+		};
 		class M8_SAW
 		{
 			weight = 4.5;
@@ -408,11 +510,23 @@ class CfgWeight
 		{
 			weight = 5.5;
 		};
+		class DMR_DZ
+		{
+			weight = 5.5;
+		};
 		class M24
 		{
 			weight = 6;
 		};
+		class M24_DZ
+		{
+			weight = 6;
+		};
 		class M40A3
+		{
+			weight = 7.5;
+		};
+		class M40A3_DZ
 		{
 			weight = 7.5;
 		};
@@ -424,11 +538,23 @@ class CfgWeight
 		{
 			weight = 1.1;
 		};
+		class M1911_DZ
+		{
+			weight = 1.1;
+		};
 		class M9
 		{
 			weight = 1;
 		};
+		class M9_DZ
+		{
+			weight = 1;
+		};
 		class M9SD
+		{
+			weight = 1.2;
+		};
+		class M9_SD_DZ
 		{
 			weight = 1.2;
 		};
@@ -504,6 +630,22 @@ class CfgWeight
 		{
 			weight = 2.7;
 		};
+		class AK74_DZ
+		{
+			weight = 2.7;
+		};
+		class AKM_DZ
+		{
+			weight = 2.7;
+		};
+		class AKS74U_DZ
+		{
+			weight = 2.7;
+		};
+		class AKS74U_Kobra_DZ
+		{
+			weight = 2.7;
+		};
 		class AKS_74_GOSHAWK
 		{
 			weight = 3.5;
@@ -525,6 +667,10 @@ class CfgWeight
 			weight =  6.3;
 		};
 		class LeeEnfield
+		{
+			weight = 4;
+		};
+		class LeeEnfield_DZ
 		{
 			weight = 4;
 		};
@@ -580,7 +726,15 @@ class CfgWeight
 		{
 			weight = 9;
 		};
+		class UK59_DZ
+		{
+			weight = 9;
+		};
 		class RPK_74
+		{
+			weight = 4.7;
+		};
+		class RPK74_DZ
 		{
 			weight = 4.7;
 		};
@@ -592,7 +746,15 @@ class CfgWeight
 		{
 			weight = 9;
 		};
+		class PKM_DZ
+		{
+			weight = 9;
+		};
 		class Huntingrifle
+		{
+			weight = 4;
+		};
+		class CZ550_DZ
 		{
 			weight = 4;
 		};
@@ -608,7 +770,15 @@ class CfgWeight
 		{
 			weight =  6.2;
 		};
+		class SVD_DZ
+		{
+			weight =  6.2;
+		};
 		class SVD_Camo
+		{
+			weight =  6.3;
+		};
+		class SVD_Gh_DZ
 		{
 			weight =  6.3;
 		};
@@ -617,6 +787,14 @@ class CfgWeight
 			weight = 0.75;
 		};
 		class MakarovSD
+		{
+			weight = 0.9;
+		};
+		class Makarov_DZ
+		{
+			weight = 0.75;
+		};
+		class Makarov_SD_DZ
 		{
 			weight = 0.9;
 		};
@@ -629,6 +807,14 @@ class CfgWeight
 			weight = 2.1;
 		};
 		class Bizon_Silenced
+		{
+			weight = 2.3;
+		};
+		class Bizon_DZ
+		{
+			weight = 2.1;
+		};
+		class Bizon_SD_DZ
 		{
 			weight = 2.3;
 		};

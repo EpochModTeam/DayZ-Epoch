@@ -24,10 +24,10 @@ Supermarket[] =
 	{Loot_GROUP,		5,		backpacks},
 	
 	//Items
-	//{Loot_MAGAZINE,	1,		ItemTent}, //USE TENTS GROUP
+	//{Loot_MAGAZINE,	1,		ItemTent}, //IN TENTS GROUP
 	{Loot_MAGAZINE,		1,		ItemMixOil},
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
-	{Loot_MAGAZINE,		0.5,	ItemDomeTent},
+	//{Loot_MAGAZINE,	0.5,	ItemDomeTent}, //IN TENTS GROUP
 	{Loot_MAGAZINE,		1,		ItemCamoNet},
 	{Loot_MAGAZINE,		0.5,	ItemPadlock},
 	{Loot_MAGAZINE,		3,		ItemBandage},
@@ -39,9 +39,9 @@ Supermarket[] =
 	{Loot_GROUP,		40,		Consumable},
 	{Loot_GROUP,		20,		Generic},
 	{Loot_GROUP,		10,		AmmoCivilian},
-	//{Loot_GROUP,		3,		AttachmentsGeneric},
+	{Loot_GROUP,		3,		AttachmentsGeneric},
 	{Loot_GROUP,		3,		tents},
 	{Loot_WEAPON,		3,		ItemMatchbox},
+//	{Loot_GROUP,		3,		MedicalLow},
 	{Loot_GROUP,		10,		Trash}
-//	{Loot_GROUP,		3,		MedicalLow}
 };

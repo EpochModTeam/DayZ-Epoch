@@ -1,25 +1,25 @@
 class Category_489 {
-	class M9SD {
+	class M9_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class glock17_EP1 {
+	class G17_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
-	class Colt1911 {
+	class M1911_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class M9 {
+	class M9_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
 	};
-	class MakarovSD {
+	class Makarov_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
@@ -29,39 +29,39 @@ class Category_489 {
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Makarov {
+	class Makarov_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class revolver_EP1 {
+	class Revolver_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
 };
 class Category_617 {
-	class M9SD {
+	class M9_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class glock17_EP1 {
+	class G17_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
-	class Colt1911 {
+	class M1911_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class M9 {
+	class M9_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
 	};
-	class MakarovSD {
+	class Makarov_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
@@ -71,12 +71,12 @@ class Category_617 {
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Makarov {
+	class Makarov_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class revolver_EP1 {
+	class Revolver_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};

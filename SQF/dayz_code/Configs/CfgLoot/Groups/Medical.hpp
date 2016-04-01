@@ -43,15 +43,15 @@ Antibiotics[] =
 
 Bloodbags[] =
 {
-	{Loot_MAGAZINE,		8,		ItemBloodbagAPos},
-	{Loot_MAGAZINE,		7,		ItemBloodbagANeg},
+	{Loot_MAGAZINE,		5,		ItemBloodbagAPos},
+	{Loot_MAGAZINE,		4,		ItemBloodbagANeg},
 	
-	{Loot_MAGAZINE,		8,		ItemBloodbagBPos},
-	{Loot_MAGAZINE,		7,		ItemBloodbagBNeg},
+	{Loot_MAGAZINE,		5,		ItemBloodbagBPos},
+	{Loot_MAGAZINE,		4,		ItemBloodbagBNeg},
 	
-	{Loot_MAGAZINE,		5,		ItemBloodbagABPos},
-	{Loot_MAGAZINE,		5,		ItemBloodbagABNeg},
+	{Loot_MAGAZINE,		2,		ItemBloodbagABPos},
+	{Loot_MAGAZINE,		2,		ItemBloodbagABNeg},
 	
-	{Loot_MAGAZINE,		15,		ItemBloodbagOPos},
-	{Loot_MAGAZINE,		25,		ItemBloodbagONeg}
+	{Loot_MAGAZINE,		3,		ItemBloodbagOPos},
+	{Loot_MAGAZINE,		2,		ItemBloodbagONeg}
 };

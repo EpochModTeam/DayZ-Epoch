@@ -1,10 +1,10 @@
 class Category_488 {
-	class bizon_silenced {
+	class Bizon_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
-	class UZI_EP1 {
+	class PDW_DZ {
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
@@ -14,7 +14,7 @@ class Category_488 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
-	class MP5A5 {
+	class MP5_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
@@ -24,19 +24,19 @@ class Category_488 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
-	class MP5SD {
+	class MP5_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};
 		sell[] = {3,"ItemGoldBar"};
 	};
 };
 class Category_618 {
-	class bizon_silenced {
+	class Bizon_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
-	class UZI_EP1 {
+	class PDW_DZ {
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
@@ -46,7 +46,7 @@ class Category_618 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
-	class MP5A5 {
+	class MP5_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
@@ -56,7 +56,7 @@ class Category_618 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
-	class MP5SD {
+	class MP5_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};
 		sell[] = {3,"ItemGoldBar"};

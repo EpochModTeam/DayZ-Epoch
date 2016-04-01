@@ -7,7 +7,7 @@ Farm[] =
 	//Tools
 	{Loot_WEAPON,		5,		ItemMachete},
 //	{Loot_WEAPON,		6,		ItemHatchet},
-	{Loot_WEAPON,		6,		ItemHatchet},
+	{Loot_VEHICLE,		6,		WeaponHolder_ItemHatchet},
 	{Loot_WEAPON,		5,		ItemKnife},
 	
 	//Items
@@ -30,7 +30,7 @@ Farm[] =
 	//Groups
 	{Loot_GROUP,		10,		Trash},
 	{Loot_GROUP,		15,		AmmoCivilian},
-	//{Loot_GROUP,		3,		AttachmentsGeneric},
+	{Loot_GROUP,		3,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		Consumable},
 	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		8,		Generic}
