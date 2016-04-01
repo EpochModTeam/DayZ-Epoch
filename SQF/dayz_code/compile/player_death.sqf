@@ -133,7 +133,7 @@ _body setVariable["combattimeout", 0, true];
 //dayzFlies = player;
 //publicVariable "dayzFlies";
 uiSleep 2;
-1 cutRsc ["DeathScreen","BLACK OUT",3];
+1 cutRsc ["DeathScreen_DZE","BLACK OUT",3];
 playMusic "dayz_track_death_1";
 uiSleep 2;
 

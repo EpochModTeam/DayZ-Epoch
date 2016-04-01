@@ -6,7 +6,7 @@ class RscTitles
 		movingEnable = 0;
 		duration = 4;
 	};
-	titles[] = {"DeathScreen_DZ","RscTitleStructuredText"};
+	titles[] = {"DeathScreen_DZ","DeathScreen_DZE","RscTitleStructuredText"};
 	class DeathScreen_DZ {
 		idd = -1;
 		movingEnable = "false";
@@ -20,6 +20,21 @@ class RscTitles
 			w = 1 * safezoneW;
 			h = 1 * safezoneH;
 			text = "\z\addons\dayz_code\gui\deathscreen.paa";
+		};
+	};
+	class DeathScreen_DZE {
+		idd = -1;
+		movingEnable = "false";
+		duration = 120;
+		fadein = 0;
+		name = "DeathScreen";
+		controls[] = {"DeathScreen"};
+		class DeathScreen: RscPicture {
+			x = 0 * safezoneW + safezoneX;
+			y = 0 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 1 * safezoneH;
+			text = "\z\addons\dayz_epoch\ui\screen_death_ca.paa";
 		};
 	};
 	class playerKillScore {
