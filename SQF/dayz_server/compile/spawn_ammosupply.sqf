@@ -1,10 +1,8 @@
 private ["_position","_veh","_istoomany"];
+// do not make _roadList or _buildingList private in this function
 
-waitUntil {!isNil "BIS_fnc_selectRandom"};
-_position = roadList call BIS_fnc_selectRandom;
+_position = _roadList call BIS_fnc_selectRandom;
 _position = _position modelToWorld [0,0,0];
-
-waitUntil {!isNil "BIS_fnc_findSafePos"};
 _position = [_position,5,20,5,0,2000,0] call BIS_fnc_findSafePos;
 
 if ((count _position) == 2) then {

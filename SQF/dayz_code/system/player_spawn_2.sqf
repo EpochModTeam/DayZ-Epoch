@@ -446,17 +446,13 @@ while {1 == 1} do {
 		{
 			//get contents
 			_weapons = getWeaponCargo _x;
-			diag_log (str(_weapons));
 			_magazines = getMagazineCargo _x;
-			diag_log (str(_magazines));
 			_backpacks = getBackpackCargo _x;
-			diag_log (str(_backpacks));
 			
-			if ((count (_weapons select 0) < 1) and (count (_magazines select 0) < 1) and (count (_backpacks select 0) < 1)) then {
-				
+			if ((count (_weapons select 0) < 1) and (count (_magazines select 0) < 1) and (count (_backpacks select 0) < 1)) then {		
 				//remove vehicle, Need to ask server to remove.
+				diag_log format["Deleting empty nearby box: %1",_x];
 				PVDZ_obj_Delete = [_x,player];
-				diag_log (str(PVDZ_obj_Delete));
 				publicVariableServer "PVDZ_obj_Delete";
 			};
 		

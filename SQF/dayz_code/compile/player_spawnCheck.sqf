@@ -55,15 +55,6 @@ if (_inVehicle) then {
 
 if (_doNothing) exitwith {};
 
-//Logging
-diag_log (format["%1 Local.Agents: %2/%3, NearBy.Agents: %8/%9, Global.Agents: %6/%7, W.holders: %10/%11, (radius:%4m %5fps).","SpawnCheck",
-    _maxlocalspawned, _maxControlledZombies, _radius, round diag_fpsmin,dayz_currentGlobalZombies, 
-    dayz_maxGlobalZeds, dayz_CurrentNearByZombies, dayz_maxNearByZombies, _currentWeaponHolders,_maxWeaponHolders]);
-	
-_nearby = nearestObjects [_position, _spawnableObjects,_radius];
-_maxlocalspawned = _maxlocalspawned max floor(_maxControlledZombies*.8);
-if (_maxlocalspawned > 0) then { _spawnZedRadius = _spawnZedRadius * 3; };
-
 if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
 	deleteMarkerLocal "Counter";
@@ -101,9 +92,18 @@ if ("ItemMap_Debug" in items player) then {
 	_markerstr3 setMarkerBrushLocal "Border";
 	_markerstr3 setMarkerSizeLocal [120, 120];
 
-diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(dayz_maxLocalZombies));
+	diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(dayz_maxLocalZombies));
 
+	//Logging
+	diag_log (format["%1 Local.Agents: %2/%3, NearBy.Agents: %8/%9, Global.Agents: %6/%7, W.holders: %10/%11, (radius:%4m %5fps).","SpawnCheck",
+		_maxlocalspawned, _maxControlledZombies, _radius, round diag_fpsmin,dayz_currentGlobalZombies, 
+		dayz_maxGlobalZeds, dayz_CurrentNearByZombies, dayz_maxNearByZombies, _currentWeaponHolders,_maxWeaponHolders]);
 };
+	
+_nearby = nearestObjects [_position, _spawnableObjects,_radius];
+_maxlocalspawned = _maxlocalspawned max floor(_maxControlledZombies*.8);
+if (_maxlocalspawned > 0) then { _spawnZedRadius = _spawnZedRadius * 3; };
+
 //Spawn Zeds & loot in buildings
 {
     _type = typeOf _x;

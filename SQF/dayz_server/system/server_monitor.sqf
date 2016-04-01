@@ -339,35 +339,40 @@ if !(DZE_ConfigTrader) then {
 };
 
 if (_hiveLoaded) then {
-	//  spawn_vehicles
-	// Get all buildings and roads only once. Very taxing, but only on first startup
-	buildingList = [];
-	{
-		if (DZE_MissionLootTable) then {
-			if (isClass (missionConfigFile >> "CfgLoot" >> "Buildings" >> (typeOf _x))) then {buildingList set [count buildingList,_x];};
+	[] spawn {
+		//  spawn_vehicles
+		// Get all buildings and roads only once. Very taxing, but only on first startup
+		_startTime = diag_tickTime;
+		_buildingList = [];
+		_cfgLootFile = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Buildings"} else {configFile >> "CfgLoot" >> "Buildings"};
+		{
+			if (isClass (_cfgLootFile >> typeOf _x)) then {
+				_buildingList set [count _buildingList,_x];
+			};
+		} count (dayz_centerMarker nearObjects ["building",DynamicVehicleArea]);
+		_roadList = dayz_centerMarker nearRoads DynamicVehicleArea;
+		
+		_vehLimit = MaxVehicleLimit - (count serverVehicleCounter);
+		if (_vehLimit > 0) then {
+			diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
+			for "_x" from 1 to _vehLimit do {call spawn_vehicles;};
 		} else {
-			if (isClass (configFile >> "CfgLoot" >> "Buildings" >> (typeOf _x))) then {buildingList set [count buildingList,_x];};
+			diag_log "HIVE: Vehicle Spawn limit reached!";
 		};
-	} count (dayz_centerMarker nearObjects ["building",DynamicVehicleArea]);
-	roadList = dayz_centerMarker nearRoads DynamicVehicleArea;
-	
-	_vehLimit = MaxVehicleLimit - (count serverVehicleCounter);
-	if (_vehLimit > 0) then {
-		diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
-		for "_x" from 1 to _vehLimit do {spawn_vehicles_thread = [] spawn spawn_vehicles;};
-	} else {
-		diag_log "HIVE: Vehicle Spawn limit reached!";
+		
+		diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
+		for "_x" from 1 to MaxDynamicDebris do {call spawn_roadblocks;};
+
+		diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));
+		for "_x" from 1 to MaxAmmoBoxes do {call spawn_ammosupply;};
+
+		diag_log ("HIVE: Spawning # of Veins: " + str(MaxMineVeins));
+		for "_x" from 1 to MaxMineVeins do {call spawn_mineveins;};
+		
+		_totalTime = diag_tickTime - _startTime;
+		diag_log format["HIVE: Server finished spawning all random vehicles in %1 seconds",_totalTime];
 	};
 };
-
-diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
-for "_x" from 1 to MaxDynamicDebris do {[] spawn spawn_roadblocks;};
-
-diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));
-for "_x" from 1 to MaxAmmoBoxes do {[] spawn spawn_ammosupply;};
-
-diag_log ("HIVE: Spawning # of Veins: " + str(MaxMineVeins));
-for "_x" from 1 to MaxMineVeins do {[] spawn spawn_mineveins;};
 
 [] spawn server_spawnEvents;
 _debugMarkerPosition = getMarkerPos "respawn_west";
@@ -375,10 +380,3 @@ _debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition se
 _vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
 _vehicle_0 setPos _debugMarkerPosition;
 _vehicle_0 setVariable ["ObjectID","1",true];
-
-[] spawn {
-	waitUntil {uiSleep 5;(scriptDone spawn_vehicles_thread)};
-	// All done spawning stuff, can clear these now 
-	buildingList = nil; roadList = nil;
-	diag_log "All vehicle spawning threads completed";
-};

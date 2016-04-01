@@ -1,4 +1,8 @@
 private ["_random","_lastIndex","_weights","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
+// do not make _roadList or _buildingList private in this function
+#include "\z\addons\dayz_code\util\Math.hpp"
+#include "\z\addons\dayz_code\util\Vector.hpp"
+#include "\z\addons\dayz_code\loot\Loot.hpp"
 
 while {count AllowedVehiclesList > 0} do {
 	// BIS_fnc_selectRandom replaced because the index may be needed to remove the element
@@ -30,31 +34,25 @@ if (count AllowedVehiclesList == 0) then {
 	if (_isShip or _isAir) then {
 		if (_isShip) then {
 			// Spawn anywhere on coast on water
-			waitUntil {!isNil "BIS_fnc_findSafePos"};
 			_position = [dayz_centerMarker,0,DynamicVehicleArea,10,1,2000,1] call BIS_fnc_findSafePos;
 			//diag_log("DEBUG: spawning boat near coast " + str(_position));
 		} else {
 			// Spawn air anywhere that is flat
-			waitUntil {!isNil "BIS_fnc_findSafePos"};
 			_position = [dayz_centerMarker,0,DynamicVehicleArea,10,0,2000,0] call BIS_fnc_findSafePos;
 			//diag_log("DEBUG: spawning air anywhere flat " + str(_position));
 		};
 	} else {
 		// Spawn around buildings and 50% near roads
 		if ((random 1) > 0.5) then {	
-			waitUntil {!isNil "BIS_fnc_selectRandom"};
-			_position = roadList call BIS_fnc_selectRandom;	
+			_position = _roadList call BIS_fnc_selectRandom;	
 			_position = _position modelToWorld [0,0,0];
 		
-			waitUntil {!isNil "BIS_fnc_findSafePos"};
 			_position = [_position,0,10,10,0,2000,0] call BIS_fnc_findSafePos;	
 			//diag_log("DEBUG: spawning near road " + str(_position));
 		} else {
-			waitUntil {!isNil "BIS_fnc_selectRandom"};
-			_position = buildingList call BIS_fnc_selectRandom;	
+			_position = _buildingList call BIS_fnc_selectRandom;	
 			_position = _position modelToWorld [0,0,0];
 		
-			waitUntil {!isNil "BIS_fnc_findSafePos"};
 			_position = [_position,0,40,5,0,2000,0] call BIS_fnc_findSafePos;	
 			//diag_log("DEBUG: spawning around buildings " + str(_position));
 		};
@@ -74,36 +72,14 @@ if (count AllowedVehiclesList == 0) then {
 		clearMagazineCargoGlobal  _veh;
 		// _veh setVehicleAmmo DZE_vehicleAmmo;
 
-		// Add 0-3 loots to vehicle using random cfgloots 
+		// Add 0-3 loots to vehicle using random loot groups
 		_num = floor(random 4);
-		_allCfgLoots = ["Trash","ZombieCivilian","Consumable","Generic","MedicalLow","Military","ZombiePolice","ZombieHunter","ZombieWorker","clothes","militaryclothes","specialclothes","Trash"];
+		_allCfgLoots = ["Trash","Trash","Consumable","Consumable","Generic","Generic","MedicalLow","MedicalLow","clothes","clothes","militaryclothes","specialclothes","tents","backpacks","Parts","pistols","AmmoCivilian"];
 		
 		for "_x" from 1 to _num do {
 			_iClass = _allCfgLoots call BIS_fnc_selectRandom;
-
-			_itemTypes = [];
-			if (DZE_MissionLootTable) then{
-				{
-					_itemTypes set [count _itemTypes, _x select 2]
-				} count getArray(missionConfigFile >> "CfgLoot" >> "Groups" >> _iClass);
-			}
-			else {
-				{
-					_itemTypes set [count _itemTypes, _x select 2]
-				} count getArray(configFile >> "CfgLoot" >> "Groups" >> _iClass);
-			};
-			// Need to use new loot chances format
-			/*
-			_index = dayz_CLBase find _iClass;
-			_weights = dayz_CLChances select _index;
-			_cntWeights = count _weights;
-			
-			_index = floor(random _cntWeights);
-			_index = _weights select _index;
-			_itemType = _itemTypes select _index;
-			_veh addMagazineCargoGlobal [_itemType,1];
-			//diag_log("DEBUG: spawed loot inside vehicle " + str(_itemType));
-			*/
+			_lootGroupIndex = dz_loot_groups find _iClass;
+			Loot_InsertCargo(_veh, _lootGroupIndex, 1);
 		};
 
 		[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;

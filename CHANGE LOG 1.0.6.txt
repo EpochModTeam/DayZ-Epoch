@@ -24,6 +24,8 @@
 		- vehicle_handleKilled -->  fnc_veh_handleKilled
 	- Duplicate global variables have been renamed:
 		- dayz_allowedObjects --> DayZ_SafeObjects
+		- dayz_CLBase --> dz_loot_groups (similar not identical)
+		- dayz_CLChances --> dz_loot_weighted (similar not identical)
 		- dayz_fullMoonNights --> dayz_ForcefullmoonNights
 		- dayz_updateObjects --> DayZ_GearedObjects
 		- DZE_CanPickup --> canPickup
