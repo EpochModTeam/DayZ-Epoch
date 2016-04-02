@@ -58,9 +58,9 @@ MaxDynamicDebris = 400; // Max number of random road blocks to spawn around the 
 MaxVehicleLimit = 300; // Max number of random vehicles to spawn around the map
 spawnArea = 1400; // Distance around markers to find a safe spawn position
 spawnShoremode = 1; // Random spawn locations  1 = on shores, 0 = inland
-// EPOCH CONFIG VARIABLES END //
-
+EpochUseEvents = false; //Enable event scheduler. Define custom scripts in dayz_server\modules to run on a schedule.
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
+// EPOCH CONFIG VARIABLES END //
 
 
 // DO NOT EDIT BELOW HERE //

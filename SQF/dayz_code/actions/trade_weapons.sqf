@@ -140,7 +140,6 @@ if (_finished) then {
 
 	if (_canAfford) then {
 
-		//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 		if (isNil "_part_out") then { _part_out = "Unknown Weapon/Magazine" };
 		if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
 		if(_bos == 1) then {

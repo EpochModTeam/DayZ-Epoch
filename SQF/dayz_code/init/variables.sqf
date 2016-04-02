@@ -508,7 +508,6 @@ PlayerDeaths = [];
 PVDZE_obj_Trade = []; // For all traders increment qty
 PVDZE_plr_DeathB = [];
 PVDZE_plr_TradeMenu = []; // For all traders
-PVDZE_veh_Publish = []; // For vehicle traders
 snapGizmos = [];
 snapGizmosNearby = [];
 s_player_combi = [];
@@ -567,7 +566,7 @@ if (isServer) then {
 	currentObjectUIDs = [];
 	keyStartNumber = 100000000000;
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
-	serverVehicleCounter = [];
+	if(isNil "EpochUseEvents") then {EpochUseEvents = false;};
 	if(isNil "EpochEvents") then {EpochEvents = [];};
 	if(isNil "DZE_vehicleAmmo") then {DZE_vehicleAmmo = 0;};
 	if(isNil "dayz_MapArea") then {dayz_MapArea = 10000;};

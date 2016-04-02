@@ -576,7 +576,7 @@ if (_hasrequireditem) then {
 					_tmpbuilt setVariable ["CharacterID",_combination,true]; //set combination as a character ID
 
 					//call publish precompiled function with given args and send public variable to server to save item to database
-					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],_classname];
+					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
 					publicVariableServer "PVDZ_obj_Publish";
 
 					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5]; //display new combination
@@ -589,7 +589,7 @@ if (_hasrequireditem) then {
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then { //if campfire, then spawn, but do not publish to database
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
+						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];
 						publicVariableServer "PVDZ_obj_Publish";
 					};
 				};

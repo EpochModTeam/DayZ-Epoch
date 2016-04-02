@@ -93,7 +93,6 @@ if (_finished) then {
 
 	if (_canAfford) then {
 
-		//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 		if (isNil "_bag") then { _bag = "Unknown Backpack" };
 		if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
 		if(_bos == 1) then {

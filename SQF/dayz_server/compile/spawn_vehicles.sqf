@@ -1,5 +1,5 @@
-private ["_random","_lastIndex","_weights","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_iClass","_itemTypes","_cntWeights","_itemType","_num","_allCfgLoots"];
-// do not make _roadList or _buildingList private in this function
+private ["_random","_lastIndex","_index","_vehicle","_velimit","_qty","_isAir","_isShip","_position","_dir","_istoomany","_veh","_objPosition","_iClass","_num","_allCfgLoots"];
+// do not make _roadList, _buildingList or _serverVehicleCounter private in this function
 #include "\z\addons\dayz_code\util\Math.hpp"
 #include "\z\addons\dayz_code\util\Vector.hpp"
 #include "\z\addons\dayz_code\loot\Loot.hpp"
@@ -11,7 +11,7 @@ while {count AllowedVehiclesList > 0} do {
 	_vehicle = _random select 0;
 	_velimit = _random select 1;
 
-	_qty = {_x == _vehicle} count serverVehicleCounter;
+	_qty = {_x == _vehicle} count _serverVehicleCounter;
 	if (_qty <= _velimit) exitWith {}; // If under limit allow to proceed
 
 	// vehicle limit reached, remove vehicle from list
@@ -22,10 +22,10 @@ while {count AllowedVehiclesList > 0} do {
 };
 
 if (count AllowedVehiclesList == 0) then {
-	diag_log "DEBUG: unable to find suitable vehicle to spawn";
+	diag_log "DEBUG: unable to find suitable random vehicle to spawn";
 } else {
 	// add vehicle to counter for next pass
-	serverVehicleCounter set [count serverVehicleCounter,_vehicle];
+	_serverVehicleCounter set [count _serverVehicleCounter,_vehicle];
 
 	// Find Vehicle Type to better control spawns
 	_isAir = _vehicle isKindOf "Air";
@@ -45,14 +45,12 @@ if (count AllowedVehiclesList == 0) then {
 		// Spawn around buildings and 50% near roads
 		if ((random 1) > 0.5) then {	
 			_position = _roadList call BIS_fnc_selectRandom;	
-			_position = _position modelToWorld [0,0,0];
-		
+			_position = _position modelToWorld [0,0,0];	
 			_position = [_position,0,10,10,0,2000,0] call BIS_fnc_findSafePos;	
 			//diag_log("DEBUG: spawning near road " + str(_position));
 		} else {
 			_position = _buildingList call BIS_fnc_selectRandom;	
 			_position = _position modelToWorld [0,0,0];
-		
 			_position = [_position,0,40,5,0,2000,0] call BIS_fnc_findSafePos;	
 			//diag_log("DEBUG: spawning around buildings " + str(_position));
 		};

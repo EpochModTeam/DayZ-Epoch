@@ -109,7 +109,6 @@ if (_qty >= _qty_in) then {
 
 						_location = (getPosATL _veh);
 
-						//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
 						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,dayz_characterID,_activatingPlayer];
 						publicVariableServer  "PVDZE_veh_Publish2";
 

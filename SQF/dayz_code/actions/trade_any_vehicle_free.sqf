@@ -96,7 +96,6 @@ if (_finished) then {
 
 	if (_canAfford) then {
 
-		//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 		// if (isNil "_obj") then { _obj = "Unknown Vehicle" };
 		if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
 		if(_bos == 1) then {
@@ -136,7 +135,6 @@ if (_finished) then {
 
 					_location = (getPosATL _veh);
 
-					//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,true,0]] call callRpcProcedure;
 					PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,0,_activatingPlayer];
 					publicVariableServer  "PVDZE_veh_Publish2";
 				};

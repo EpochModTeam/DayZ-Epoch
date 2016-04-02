@@ -11,6 +11,7 @@ dayz_serverIDMonitor = [];
 dayz_versionNo = getText (configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _hiveLoaded = false;
+_serverVehicleCounter = [];
 diag_log "HIVE: Starting";
 
 //Set the Time
@@ -187,7 +188,7 @@ if (_status == "ObjectStreamStart") then {
 				_object setVelocity [0,0,1];
 				_object call fnc_veh_ResetEH;			
 				if (_ownerID != "0" && !(_object isKindOf "Bicycle")) then {_object setVehicleLock "locked";};
-				serverVehicleCounter set [count serverVehicleCounter,_type]; // total each vehicle
+				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
 			};
 		} else {
 			if (_type in DayZ_nonCollide) then {
@@ -339,9 +340,10 @@ if !(DZE_ConfigTrader) then {
 };
 
 if (_hiveLoaded) then {
-	[] spawn {
+	_serverVehicleCounter spawn {
 		//  spawn_vehicles
 		// Get all buildings and roads only once. Very taxing, but only on first startup
+		_serverVehicleCounter = _this;
 		_startTime = diag_tickTime;
 		_buildingList = [];
 		_cfgLootFile = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Buildings"} else {configFile >> "CfgLoot" >> "Buildings"};
@@ -352,7 +354,7 @@ if (_hiveLoaded) then {
 		} count (dayz_centerMarker nearObjects ["building",DynamicVehicleArea]);
 		_roadList = dayz_centerMarker nearRoads DynamicVehicleArea;
 		
-		_vehLimit = MaxVehicleLimit - (count serverVehicleCounter);
+		_vehLimit = MaxVehicleLimit - (count _serverVehicleCounter);
 		if (_vehLimit > 0) then {
 			diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 			for "_x" from 1 to _vehLimit do {call spawn_vehicles;};
@@ -374,7 +376,7 @@ if (_hiveLoaded) then {
 	};
 };
 
-[] spawn server_spawnEvents;
+if (EpochUseEvents) then {[] spawn server_spawnEvents;};
 _debugMarkerPosition = getMarkerPos "respawn_west";
 _debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition select 1),1];
 _vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
