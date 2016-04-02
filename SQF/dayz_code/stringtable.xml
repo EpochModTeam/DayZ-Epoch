@@ -3795,40 +3795,6 @@
 			<French>Box of medicinal herbs</French>
 			<German>Eine Schachtel mit medizinischen Kräutern.</German>
 		</Key>
-		<Key ID="str_usract_watch_toggle">
-			<!-- was in languagecore.xml -->
-			<English>Watch (Toggle)</English>
-			<German>Uhr (umsch.)</German>
-			<Italian>Orologio (cambia)</Italian>
-			<Spanish>Reloj (Conmutar)</Spanish>
-			<French>Montre (bascule)</French>
-			<Czech>Hodinky (trvale)</Czech>
-			<Russian>Часы</Russian>
-			<Polish>Zegarek (Wł./Wył.)</Polish>
-			<Hungarian>Óra (roegzít)</Hungarian>
-		</Key>
-		<Key ID="str_usract_watch">
-			<English>Watch</English>
-			<German>Uhr</German>
-			<Italian>Orologio</Italian>
-			<Spanish>Reloj</Spanish>
-			<French>Montre</French>
-			<Czech>Hodinky</Czech>
-			<Russian>Часы</Russian>
-			<Polish>Zegarek</Polish>
-			<Hungarian>Óra</Hungarian>
-		</Key>
-		<Key ID="str_itemwatch">
-			<English>Watch</English>
-			<German>Uhr</German>
-			<Italian>Orologio</Italian>
-			<Spanish>Reloj</Spanish>
-			<French>Montre</French>
-			<Czech>Hodinky</Czech>
-			<Russian>Часы</Russian>
-			<Polish>Zegarek</Polish>
-			<Hungarian>Óra</Hungarian>
-		</Key>
 		<Key ID="STR_EQUIP_NAME_19">
 			<English>Jerry Can</English>
 			<German>Kanister</German>
