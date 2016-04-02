@@ -36,7 +36,7 @@ Construction[] =
 	
 	//Other
 	{Loot_GROUP,		15,		Parts},
-	{Loot_GROUP,		7,		military},
+	{Loot_GROUP,		7,		Military},
 	{Loot_PILE,			4,		Consumable, 1, 2},
 	{Loot_GROUP,		10,		Trash},
 	//{Loot_GROUP,		6,		Parts},

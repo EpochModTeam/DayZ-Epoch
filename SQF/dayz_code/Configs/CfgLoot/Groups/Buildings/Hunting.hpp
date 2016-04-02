@@ -2,7 +2,7 @@ Hunting[] =
 {
 	//Weapons
 	{Loot_GROUP,		5,		farmweapons},
-	{Loot_GROUP,		3,		military},
+	{Loot_GROUP,		3,		Military},
 	{Loot_WEAPON,		2,		Mosin_DZ},
 	
 	//Tools

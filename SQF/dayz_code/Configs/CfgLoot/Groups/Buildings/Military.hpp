@@ -1,5 +1,7 @@
 Military[] =
-{
+{ 
+//Probably shouldn't use one big group for this. It breaks the RU/US/EU/CZ crashsite themes. 
+//Also it spawns mismatched ammo box and weapon types.
 	//Pistols
 	{Loot_GROUP,		10,		pistols},
 	{Loot_GROUP,		5,		shotgunsingleshot},
@@ -26,8 +28,14 @@ Military[] =
 	{Loot_GROUP,		1,		specialclothes},
 	
 	//Containers
-	{Loot_CONTAINER,	2,		DZ_AmmoBoxRU, AmmoBoxRU1, 6, 12},
-	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxUS1, 4, 10},
+	{Loot_CONTAINER,	2.3,	DZ_AmmoBoxRU, AmmoBoxRU1, 10, 20},		//545x39	AK74, RPK74
+	{Loot_CONTAINER,	1.7,	DZ_AmmoBoxRU, AmmoBoxRU2, 10, 20},		//762x39	AK47
+	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxRU3, 5, 10},		//762x54r	SVD, PKM
+	{Loot_CONTAINER,	3,		DZ_AmmoBoxUS, AmmoBoxEU1, 10, 20},		//556x45	G36, M249
+	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxEU2, 5, 10},		//762x51	FAL, M240
+	{Loot_CONTAINER,	3,		DZ_AmmoBoxUS, AmmoBoxUS1, 10, 20},		//556x45	STANAG, M249
+	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxUS2, 5, 10},		//762x51	DMR, M240
+	{Loot_CONTAINER,	3,		DZ_MedBox, MedicalBox, 10, 20},
 	
 	//Other
 	{Loot_MAGAZINE,		5,		FoodMRE},
@@ -73,8 +81,6 @@ MilitarySpecial[] =
 	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxUS1, 7, 14},	//5.56x45
 	{Loot_CONTAINER,	2,		DZ_AmmoBoxRU, AmmoBoxCZ1, 7, 14},	//7.62x39
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxCZ2, 2, 5},	//7.62x54R
-	{Loot_CONTAINER,	1,		AmmoBoxSmall_556, 5},
-	{Loot_CONTAINER,	1,		AmmoBoxSmall_762, 5},
 //	{Loot_CONTAINER,	0.5,	DZ_AmmoBoxRU, AmmoBoxRU3, 3, 7},	//7.62x54R
 	{Loot_CONTAINER,	0.5,	DZ_ExplosivesBoxRU, AmmoBoxRU4, 5, 15},	//GP-25
 	{Loot_CONTAINER,	0.5,	DZ_ExplosivesBoxRU, AmmoBoxRU5, 3, 7},	//Grenades

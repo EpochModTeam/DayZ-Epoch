@@ -3,7 +3,7 @@ DynamicDebris[] =
 	{Loot_WEAPON,		2,		ItemWatch},
 	{Loot_WEAPON,		4,		ItemMatchbox},
 	{Loot_WEAPON,		4,		ItemFlashlight},
-	{Loot_WEAPON,		3,		Colt1911},
+	{Loot_WEAPON,		3,		M1911_DZ}, //Colt1911
 	{Loot_WEAPON,		4,		Makarov_DZ}, //Makarov
 	{Loot_WEAPON,		2,		ItemMap},
 	{Loot_WEAPON,		5,		ItemKnife},
@@ -32,7 +32,7 @@ DynamicDebrisMilitary[] =
 	{Loot_PILE,			12,		Consumable, 1, 2},
 	{Loot_MAGAZINE,		7,		ItemJerryCan},
 	{Loot_MAGAZINE,		7,		ItemSandbag},
-	{Loot_GROUP,		8,		military},
+	{Loot_GROUP,		8,		Military},
 	{Loot_GROUP,		15,		Parts}
 };
 SupplyDrop[] = {

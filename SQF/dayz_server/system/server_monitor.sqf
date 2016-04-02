@@ -109,7 +109,7 @@ if (_status == "ObjectStreamStart") then {
 			if (_maintenanceMode) then {
 				_maintenanceModeVars = [_type,_pos];
 				_type = _type + "_Damaged";
-			};		
+			};	
 			//TODO add remove object and readd old fence (hideobject would be nice to use here :-( )
 			//Pending change to new fence models\Layout
 		};
@@ -122,7 +122,7 @@ if (_status == "ObjectStreamStart") then {
 		_object setVariable ["ObjectID", _idKey, true];
 		dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];
 		// Fix for leading zero issues on safe codes after restart
-		_lockable = if (isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {getNumber (configFile >> "CfgVehicles" >> _type >> "lockable");} else {0};
+		_lockable = if (isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {getNumber (configFile >> "CfgVehicles" >> _type >> "lockable")} else {0};
 		if (_lockable == 4) then {
 			_codeCount = count (toArray _ownerID);
 			if (_codeCount == 3) then {_ownerID = format["0%1",_ownerID];};

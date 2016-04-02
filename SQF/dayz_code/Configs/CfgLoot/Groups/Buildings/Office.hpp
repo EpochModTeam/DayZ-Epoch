@@ -12,7 +12,7 @@ Office[] =
 
 	//Pistols
 	{Loot_GROUP,		10,		pistols},
-	{Loot_GROUP,		4,		military},
+	{Loot_GROUP,		4,		Military},
 	{Loot_GROUP,		6,		shotgunsingleshot},
 	
 	//Rifles

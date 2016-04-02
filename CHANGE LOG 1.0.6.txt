@@ -3,6 +3,7 @@
 	Some notable changes include (not a full list):
 	- New loot table format is incompatible with old loot tables. See CfgLoot\README
 	- Several weapon, item and tool classnames changed. See SQL\1.0.6_Updates for a full list
+	- AmmoBoxSmall_556/762 have been replaced with DZ_AmmoBoxUS/RU/EU/CZ
 	- Status UI icons are toggleable between "vanilla","epoch","dark" set i.e. DZE_UI = "epoch"; in init.sqf
 	- Blood type system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
 	- Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
