@@ -11,8 +11,9 @@ Construction[] =
 	
 	{Loot_WEAPON,		1,		ItemPickaxe},
 	{Loot_WEAPON,		2,		ItemPickaxeBroken},
-	{Loot_WEAPON,		1,		ItemSledgeHammer},
-	{Loot_WEAPON,		2,		ItemSledgeHammerBroken},
+	{Loot_WEAPON,		1,		ItemSledge},
+	{Loot_MAGAZINE,		2,		ItemSledgeHandle},
+	{Loot_MAGAZINE,		2,		ItemSledgeHead},
 //	{Loot_WEAPON,		2,		ItemShovel},
 	{Loot_WEAPON,		1,		ItemKeyKit},
 	

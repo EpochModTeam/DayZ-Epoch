@@ -1,7 +1,5 @@
 Convert traders + loot (if old system) to ItemBloodbag
 
-REMOVE TOOL BREAKING, IT'S STUPID
-
 trap_monitor.fsm is no more!
 
 ////////////////////////////////////////

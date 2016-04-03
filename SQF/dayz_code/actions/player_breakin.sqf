@@ -5,7 +5,7 @@ _pos = getPos _target;
 _isGate = (typeOf cursorTarget) in ["WoodenGate_2","WoodenGate_3","WoodenGate_4"];
 _limit = 2 + round(random 3);
 
-_hasSledgeHammer = "ItemSledgeHammer" in items player;
+_hasSledgeHammer = "ItemSledge" in items player;
 _hasCrowbar = "ItemCrowbar" in items player;
 
 if (!_hasSledgeHammer) exitWith {
@@ -25,7 +25,7 @@ _brokein = false;
 
 while {_isOk} do {
 //Check if we have the tools to start
-	_hasSledgeHammer = "ItemSledgeHammer" in items player;
+	_hasSledgeHammer = "ItemSledge" in items player;
 	_hasCrowbar = "ItemCrowbar" in items player;
 
 	if (!_hasSledgeHammer) exitWith {
@@ -100,17 +100,20 @@ while {_isOk} do {
 		};
 	};
 	
-	//Chances to damage tools
-	if ([0.02] call fn_chance) then {
-		player removeWeapon "ItemSledgeHammer";
-		player addWeapon "ItemSledgeHammerBroken";
-		titleText ["Your SledgeHammer handle has snapped." , "PLAIN DOWN"];
-	};
+	if (dayz_toolBreaking) then {
+		//Chances to damage tools
+		if ([0.02] call fn_chance) then {
+			player removeWeapon "ItemSledge";
+			player addMagazine "ItemSledgeHandle";
+			player addMagazine "ItemSledgeHead";
+			titleText ["Your SledgeHammer handle has snapped." , "PLAIN DOWN"];
+		};
 
-	if ([0.04] call fn_chance) then {
-		player removeWeapon "ItemCrowbar";
-		player addWeapon "ItemCrowbarBent";
-		titleText ["Your crowbar has bent." , "PLAIN DOWN"];
+		if ([0.04] call fn_chance) then {
+			player removeWeapon "ItemCrowbar";
+			player addWeapon "ItemCrowbarBent";
+			titleText ["Your crowbar has bent." , "PLAIN DOWN"];
+		};
 	};
 	
 	if(_counter == _limit) exitWith {

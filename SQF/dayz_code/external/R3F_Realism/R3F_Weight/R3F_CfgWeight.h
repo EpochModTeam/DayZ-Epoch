@@ -104,11 +104,19 @@ class CfgWeight
 		{
 			weight=5.5;
 		};
+		class FN_FAL_ANPVS4_DZE
+		{
+			weight=5.5;
+		};
 		class glock17_EP1
 		{
 			weight = 0.7;
 		};
 		class G17_DZ
+		{
+			weight = 0.7;
+		};
+		class G17_FL_DZ
 		{
 			weight = 0.7;
 		};
@@ -273,6 +281,10 @@ class CfgWeight
 			weight = 7;
 		};
 		class M16A4_ACG
+		{
+			weight = 3.8;
+		};
+		class M16A4_ACOG_DZ
 		{
 			weight = 3.8;
 		};
@@ -631,6 +643,10 @@ class CfgWeight
 			weight = 2.7;
 		};
 		class AK74_DZ
+		{
+			weight = 2.7;
+		};
+		class AK74_Kobra_DZ
 		{
 			weight = 2.7;
 		};

@@ -9,7 +9,7 @@ class Category_477 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
-	class FNFAL_ANPVS4_DZ {
+	class FN_FAL_ANPVS4_DZE {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};
@@ -29,7 +29,7 @@ class Category_477 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
-	class Mk48_DZ {
+	class Mk48_CCO_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};

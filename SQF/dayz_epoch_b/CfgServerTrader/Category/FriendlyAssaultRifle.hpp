@@ -59,22 +59,32 @@ class Category_485 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
+	class SA58_RIS_DZ {
+		type = "trade_weapons";
+		buy[] = {3,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
 	class SA58_CCO_DZ {
 		type = "trade_weapons";
-		buy[] = {8,"ItemGoldBar"};
-		sell[] = {4,"ItemGoldBar"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
-	class SA58_DZ {
+	class Sa58V_CCO_EP1 {
 		type = "trade_weapons";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class SA58_ACOG_DZ {
 		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
+	};
+	class Sa58V_RCO_EP1 {
+		type = "trade_weapons";
 		buy[] = {8,"ItemGoldBar"};
 		sell[] = {4,"ItemGoldBar"};
 	};
-	class AKS74U_Kobra_DZ {
+	class AK74_Kobra_DZ {
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
@@ -171,22 +181,32 @@ class Category_615 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
+	class SA58_RIS_DZ {
+		type = "trade_weapons";
+		buy[] = {3,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
 	class SA58_CCO_DZ {
 		type = "trade_weapons";
-		buy[] = {8,"ItemGoldBar"};
-		sell[] = {4,"ItemGoldBar"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
-	class SA58_DZ {
+	class Sa58V_CCO_EP1 {
 		type = "trade_weapons";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class SA58_ACOG_DZ {
 		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
+	};
+	class Sa58V_RCO_EP1 {
+		type = "trade_weapons";
 		buy[] = {8,"ItemGoldBar"};
 		sell[] = {4,"ItemGoldBar"};
 	};
-	class AKS74U_Kobra_DZ {
+	class AK74_Kobra_DZ {
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};

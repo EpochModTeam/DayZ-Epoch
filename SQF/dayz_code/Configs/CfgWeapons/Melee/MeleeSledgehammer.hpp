@@ -1,22 +1,16 @@
 class MeleeSledge: MeleeWeapon
 {
 	scope = public;
-	melee= "true";
-	autoreload=1;
-	magazineReloadTime=0;
+
 	model="\z\addons\dayz_epoch\models\sledge_weaponized";
 	picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa"; // todo icon
 	displayName=$STR_EQUIP_NAME_SledgeHammer;
+	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
+	
+	magazines[]= {"Sledge_Swing"};
+	
 	droppeditem= "ItemSledge";
-	magazines[]=
-	{
-		"Sledge_Swing"
-	};
-	handAnim[]=
-	{
-		"OFP2_ManSkeleton",
-		"\dayz_weapons\anim\melee_hatchet_holding.rtm"
-	};
+	
 	class ItemActions
 	{
 		class Toolbelt
@@ -37,5 +31,4 @@ class MeleeSledge: MeleeWeapon
 	{
 		libTextDesc=$STR_EQUIP_SLEDGE_DESC;
 	};
-	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
 };

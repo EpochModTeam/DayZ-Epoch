@@ -60,11 +60,21 @@ class M249_Holo_DZ : M249_CCO_DZ
 		};
 	};
 };
+
 class M249_EP1;
-class M249_EP1_DZ:M249_EP1 {
+class M249_EP1_DZ:M249_EP1 { //Iron sight with shorter stock (different from M249_DZ)
 	type = "1";
+	
+	class Attachments
+	{
+		Attachment_CCO = "M249_CCO_DZ";
+		Attachment_Holo = "M249_Holo_DZ";
+	};
+	
+	class ItemActions {};
 };
+
 class M249_m145_EP1;
 class M249_m145_EP1_DZE:M249_m145_EP1 {
-  type = "1";
+	type = "1";
 };

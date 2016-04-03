@@ -4,7 +4,7 @@ class Category_606 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class G17_DZ {
+	class G17_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
@@ -46,7 +46,7 @@ class Category_674 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class G17_DZ {
+	class G17_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};

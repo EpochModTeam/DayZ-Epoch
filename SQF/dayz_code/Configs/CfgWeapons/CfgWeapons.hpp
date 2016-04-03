@@ -13,14 +13,9 @@ class CfgWeapons
 	class ItemCore;
 	class Rifle;
 	class Pistol;
-	class PistolCore;
 	class GrenadeLauncher;
 	
-	class Pecheneg;
-	class Pecheneg_DZ: Pecheneg {
-		type = "1";
-	};
-
+	
 	
 	/* Dummy weapons */
 	#include "Throw.hpp"
@@ -30,7 +25,9 @@ class CfgWeapons
 	#include "Weapon\Sniper\AS50.hpp"
 	#include "Weapon\Sniper\M107.hpp"
 	#include "Weapon\Sniper\KSVK.hpp"
-
+	
+	
+	
 	//each include is preceded by its required external references.
 	
 	/* RIFLES */
@@ -47,13 +44,16 @@ class CfgWeapons
 	
 	#include "Rifles\RPK.hpp"
 	
-	class DMR;
+	class DMR : Rifle
+	{
+		class Single;
+	};
 	#include "Rifles\DMR.hpp"
-
+	
 	class FN_FAL;
 	class FN_FAL_ANPVS4;
 	#include "Rifles\FNFAL.hpp"
-
+	
 	class G36C : Rifle
 	{
 		class Single;
@@ -84,10 +84,10 @@ class CfgWeapons
 	
 	class M249;
 	#include "Rifles\M249.hpp"
-
+	
 	class BAF_L110A1_Aim;
 	#include "Rifles\L110A1.hpp"
-
+	
 	class M240;
 	class m240_scoped_EP1;
 	#include "Rifles\M240.hpp"
@@ -107,9 +107,7 @@ class CfgWeapons
 	{
 		class manual;
 	};
-	class PK_DZ: PK {
-		type = "1";
-	};
+	class Pecheneg;
 	#include "Rifles\PKM.hpp"
 	
 	#include "Rifles\UK59.hpp"
@@ -152,6 +150,8 @@ class CfgWeapons
 	#include "Rifles\Remington870.hpp"
 	#include "Rifles\Crossbow.hpp"
 	
+	
+	
 	/* PISTOLS */
 	
 	class M9;
@@ -173,14 +173,17 @@ class CfgWeapons
 	
 	class revolver_EP1;
 	#include "Pistols\Revolver.hpp"
-
+	
+	
+	
+	
+	
 	/* MELEE */
 	
 	class MeleeWeapon : Rifle
 	{
 		melee = true;
-		canDrop = true;
-
+		
 		distanceZoomMin = 50;
 		distanceZoomMax = 50;
 		fireLightDuration = 0;
@@ -224,6 +227,9 @@ class CfgWeapons
 	#include "Melee\MeleeSledgehammer.hpp"
 	
 	
+	
+	
+	
 	/* TOOLS */
 	
 	#include "Tools\Binocular.hpp"
@@ -254,6 +260,9 @@ class CfgWeapons
 	
 	#include "Item\ItemKeyKit.hpp"
 	#include "Item\ItemKeys.hpp"
+	
+	
+	
 	
 	
 	/* OTHER */

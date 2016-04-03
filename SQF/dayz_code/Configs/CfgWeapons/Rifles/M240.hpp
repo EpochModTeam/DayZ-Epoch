@@ -49,6 +49,7 @@ class M240_Holo_DZ : M240_CCO_DZ
 		};
 	};
 };
-class m240_scoped_EP1_DZE:m240_scoped_EP1 {
-  type = "1";
+
+class m240_scoped_EP1_DZE:m240_scoped_EP1 { //has m145 scope
+	type = "1";
 };

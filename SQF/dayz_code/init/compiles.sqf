@@ -643,20 +643,21 @@ dayz_inflame = {
         _hasTool = false;
         {
             if (_x in items player) exitWith {
-				_matches = getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
-				_qtyRemaining = getText(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "qtyRemaining");
-				
-				//diag_log format["%1[%2,%3]",_x,_matches,_qtyRemaining];
-
-				if (_matches == -1) then { 
-					if ([getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "chance")] call fn_chance) then {
+				if (dayz_matchboxCount) then {
+					_matches = getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
+					_qtyRemaining = getText(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "qtyRemaining");
+					
+					//diag_log format["%1[%2,%3]",_x,_matches,_qtyRemaining];
+					if (_matches == -1) then { 
+						if ([getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "chance")] call fn_chance) then {
+							player removeWeapon _x;
+							player addWeapon _qtyRemaining;
+						};
+					} else {
+						// remove a match
 						player removeWeapon _x;
 						player addWeapon _qtyRemaining;
 					};
-				} else {
-					// remove a match
-					player removeWeapon _x;
-					player addWeapon _qtyRemaining;
 				};
                 _hasTool = true;
             };
@@ -705,20 +706,22 @@ dayz_inflame_other = {
         _hasTool = false;
         {
             if (_x in items player) exitWith {
-				_matches = getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
-				_qtyRemaining = getText(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "qtyRemaining");
-				
-				//diag_log format["%1[%2,%3]",_x,_matches,_qtyRemaining];
+				if (dayz_matchboxCount) then {
+					_matches = getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
+					_qtyRemaining = getText(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "qtyRemaining");
+					
+					//diag_log format["%1[%2,%3]",_x,_matches,_qtyRemaining];
 
-				if (_matches == -1) then { 
-					if ([getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "chance")] call fn_chance) then {
+					if (_matches == -1) then { 
+						if ([getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "chance")] call fn_chance) then {
+							player removeWeapon _x;
+							player addWeapon _qtyRemaining;
+						};
+					} else {
+						// remove a match
 						player removeWeapon _x;
 						player addWeapon _qtyRemaining;
 					};
-				} else {
-					// remove a match
-					player removeWeapon _x;
-					player addWeapon _qtyRemaining;
 				};
                 _hasTool = true;
             };

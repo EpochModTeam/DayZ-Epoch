@@ -4,7 +4,7 @@ class Category_605 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
-	class M40A3_DZ {
+	class M40A3_Gh_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
@@ -51,7 +51,7 @@ class Category_640 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
-	class M40A3_DZ {
+	class M40A3_Gh_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};

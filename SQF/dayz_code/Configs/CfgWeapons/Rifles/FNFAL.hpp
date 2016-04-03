@@ -56,6 +56,7 @@ class FNFAL_ANPVS4_DZ : FN_FAL_ANPVS4
 {
 	modes[] = {Single};
 };
+
 class FN_FAL_ANPVS4_DZE:FN_FAL_ANPVS4 {
-  visionMode[] = {"Normal", "NVG"};
+	visionMode[] = {"Normal", "NVG"};
 };

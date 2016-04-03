@@ -1,4 +1,4 @@
-class PKM_DZ : PK
+class PKM_DZ : PK //Iron sight PKM
 {
 	type = WeaponSlotPrimary;
 	
@@ -17,4 +17,8 @@ class PKM_DZ : PK
 	{
 		reloadTime = 0.08;
 	};
+};
+
+class Pecheneg_DZ: Pecheneg { //PKP with long range scope
+	type = "1";
 };

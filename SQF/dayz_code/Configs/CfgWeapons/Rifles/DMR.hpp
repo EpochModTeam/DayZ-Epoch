@@ -7,7 +7,12 @@ class DMR_DZ : DMR
 	
 	magazines[] = {20Rnd_762x51_DMR};
 	
-	class Single;
+	class Single : Single
+	{
+		reloadTime = 0.6;
+		recoil = "recoil_single_primary_4outof10";
+		recoilProne = "recoil_single_primary_prone_4outof10";
+	};
 	
 	visionMode[] = {"Normal"};
 	
@@ -16,7 +21,9 @@ class DMR_DZ : DMR
 		Attachment_Ghillie = "DMR_Gh_DZ";
 	};
 };
+
 class DMR_SKN : DMR_DZ {};
+
 class DMR_Gh_DZ : DMR_DZ
 {
 	model = "z\addons\dayz_communityweapons\dmr\dmr_ghillie.p3d";

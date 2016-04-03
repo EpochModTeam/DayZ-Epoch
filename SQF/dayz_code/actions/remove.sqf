@@ -129,9 +129,7 @@ while {_isOk} do {
 		_counter = _counter + 1;
 		// 10% chance to break a required tool each pass
 		if((_isDestructable || _isRemovable) && !_isOwnerOfObj) then {
-			if((random 10) <= 1) then {
-				_brokenTool = true;
-			};
+			if (dayz_toolBreaking && {[0.04] call fn_chance}) then {_brokenTool = true;};
 		};
 	};
 	if(_brokenTool) exitWith {

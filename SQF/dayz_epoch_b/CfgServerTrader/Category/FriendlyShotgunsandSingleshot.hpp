@@ -19,7 +19,7 @@ class Category_574 {
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Remington870_DZ {
+	class Remington870_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
@@ -51,7 +51,7 @@ class Category_620 {
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Remington870_DZ {
+	class Remington870_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};

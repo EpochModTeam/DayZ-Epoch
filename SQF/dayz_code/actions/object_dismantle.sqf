@@ -127,14 +127,16 @@ while {_isOk} do {
 		};
 	};
 	
-	//Chances to damage tools
-	{
-		if ([(_x select 1)] call fn_chance) then {
-			player removeWeapon (_x select 0);
-			player addWeapon (_x select 2);
-			titleText ["Your tool has been damaged." , "PLAIN DOWN"];
-		};
-	}foreach _tools;
+	if (dayz_toolBreaking) then {
+		//Chances to damage tools
+		{
+			if ([(_x select 1)] call fn_chance) then {
+				player removeWeapon (_x select 0);
+				player addWeapon (_x select 2);
+				titleText ["Your tool has been damaged." , "PLAIN DOWN"];
+			};
+		}foreach _tools;
+	};
 		
 	if(_counter == _limit) exitWith {
 		//stop loop

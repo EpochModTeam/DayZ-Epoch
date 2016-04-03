@@ -1,6 +1,3 @@
-class BAF_L110A1_Aim_DZE:BAF_L110A1_Aim {
-  type = "1";
-};
 class L110A1_CCO_DZ : BAF_L110A1_Aim
 {
 	model = "z\addons\dayz_communityweapons\l110a1\l110a1_cco.p3d";
@@ -62,4 +59,17 @@ class L110A1_DZ : L110A1_CCO_DZ
 	};
 	
 	class ItemActions {};
+};
+
+class BAF_L110A1_Aim_DZE:BAF_L110A1_Aim { //Slightly different scope from L110A1_CCO_DZ, otherwise identical
+	type = "1";
+	
+	class ItemActions
+	{
+		class RemoveCCO
+		{
+			text = $STR_DZ_ATT_CCO_REM;
+			script = "; ['Attachment_CCO',_id,'L110A1_DZ'] call player_removeAttachment";
+		};
+	};
 };
