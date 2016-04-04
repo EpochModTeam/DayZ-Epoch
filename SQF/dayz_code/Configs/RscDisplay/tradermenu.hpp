@@ -255,7 +255,7 @@ class TraderDialog
 		class RscShortcutButtonTraderDialog_1702: RscShortcutButtonTraderDialog
 		{
 			idc = -1;
-			text = $STR_EPOCH_PLAYER_283;
+			text = $STR_UI_CLOSE;
 			x = 0.290407 * safezoneW + safezoneX;
 			y = 0.720064 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;
@@ -265,7 +265,7 @@ class TraderDialog
 		class RscText_1007: RscTextTraderDialog
 		{
 			idc = -1;
-			text = $STR_EPOCH_PLAYER_288;
+			text = $STR_UI_ITEMS;
 			x = 0.432389 * safezoneW + safezoneX;
 			y = 0.29369 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;

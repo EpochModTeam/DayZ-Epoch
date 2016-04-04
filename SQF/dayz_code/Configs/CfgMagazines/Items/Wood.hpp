@@ -58,7 +58,7 @@ class PartWoodPile : CA_Magazine
 	descriptionShort = $STR_EQUIP_DESC_40;
 	class ItemActions {
 		class Build {
-			text = $STR_EPOCH_PLAYER_241;
+			text = $STR_ACTIONS_LIGHTFIRE;
 			script = "spawn player_build;";
 			require[] = {"ItemMatchbox"};
 			create = "Land_Fire_DZ";

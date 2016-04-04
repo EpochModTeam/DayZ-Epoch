@@ -41,6 +41,7 @@
 			<Czech>Odstranit z nástrojů</Czech>
 			<French>Retirer de la ceinture</French>
 			<German>Vom Werkzeuggürtel abnehmen</German>
+			<Dutch>Verwijder van gereedschapsgordel</Dutch>
 		</Key>
 		<Key ID="STR_ACTION_CAST">
 			<English>Cast Fishing Pole</English>
@@ -7742,6 +7743,7 @@
 			<Czech>Vybavení</Czech>
 			<German>Ausrüstung</German>
 			<French>Equipement</French>
+			<Dutch>Inventaris</Dutch>
 		</Key>
 		<Key ID="STR_UI_FILTER">
 			<English>Filter</English>
@@ -10638,15 +10640,6 @@
 			<French>Un outil composé d'une large tête aux faces latérales plates attachée à un manche. Sa tête est habituellement faite en acier. La masse se manipule à deux mains et permet d'exercer plus de force qu'un marteau.</French>
 			<Czech>Nástroj s velkou plochou hlavou připevněnou k rukojeti. Hlava je tvořena především z kovu. Palice je silnější než ostatní kladiva.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_1">
-			<English>Magazine %1 / %2 - Weapons %3 / %4 - Backpacks %5 / %6</English>
-			<German>Magazine %1 / %2 - Waffen %3 / %4 - Rucksäcke %5 / %6</German>
-			<Russian>Припасы %1 / %2 - Оружие %3 / %4 - Рюкзаки %5 / %6</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Magazijnen %1 / %2 - Wapens %3 / %4 - Rugzakken %5 / %6</Dutch>
-			<French>Munitions et objets %1 / %2 - Armes et outils %3 / %4 - Sac à dos %5 / %6</French>
-			<Czech>Zásoby %1 / %2 - Zbraně %3/%4 - Batohy %4 / %6</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_2">
 			<English>Another player wants to tag you as friendly. To accept, tag player as friendly.</English>
 			<German>Ein anderer Spieler möchte Sie als Freund markieren. Um dies zu akzeptieren markiere den Spieler ebenfalls als Freund.</German>
@@ -10655,33 +10648,6 @@
 			<Dutch>Een speler wil je als bevriend te markeren. Om te accepteren, markeer de speler als bevriend.</Dutch>
 			<French>Un joueur veut vous marquer comme amical(e). Pour accepter, marquez ce joueur comme amical(e).</French>
 			<Czech>Jiný hráč si vás chce označit jako přítele. K příjmutí, označte hráče jako přítele.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_3">
-			<English>Pulse is extremely weak</English>
-			<German>Puls ist extrem schwach</German>
-			<Russian>Пульс крайне слаб</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Polsslag is erg zwak</Dutch>
-			<French>Le pouls est extrêmement faible</French>
-			<Czech>Puls je velmi slabý</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_4">
-			<English>Pulse is weak</English>
-			<German>Puls ist schwach</German>
-			<Russian>Пульс слаб</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Polsslag is zwak</Dutch>
-			<French>Le pouls est faible</French>
-			<Czech>Puls je slabý</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_5">
-			<English>Pulse is strong</English>
-			<German>Puls ist stark</German>
-			<Russian>Пульс сильный</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Polsslag is sterk</Dutch>
-			<French>Le pouls est fort</French>
-			<Czech>Puls je silný</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_6">
 			<English>Trading canceled.</English>
@@ -10746,15 +10712,6 @@
 			<French>Impossible d'interrompre dans un marché!</French>
 			<Czech>Nelze se odpojit, když jste v trader city!</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_13">
-			<English>Pack tent already in progress.</English>
-			<German>Packen des Zeltes bereits im Gange.</German>
-			<Russian>Палатка уже упаковывается.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Tent wordt al reeds ingepakt</Dutch>
-			<French>Le pliage de la tente est déjà en cours.</French>
-			<Czech>Balení stanu již probíhá.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_15">
 			<English>That is already being packed.</English>
 			<German>Das ist schon gepackt.</German>
@@ -10783,7 +10740,7 @@
 			<Czech>Musíte mít syrové maso</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_19">
-			<English>Wrong code entered to many times wait 10 seconds</English>
+			<English>Wrong code entered too many times, wait 10 seconds</English>
 			<German>Es wurde zu oft der falsche eingetippt, Sie müssen nun 10 Sekunden warten</German>
 			<Russian>Неправильный код введён слишком много раз, подождите 10 секунд</Russian>
 			<!-- <Spanish></Spanish> -->
@@ -10935,15 +10892,6 @@
 			<French>Le verrouillage du véhicule est déjà en cours.</French>
 			<Czech>Zamykání vozidla již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_38">
-			<English>Take item already in progress.</English>
-			<German>Aufnehmen des Gegenstandes bereits im Gange.</German>
-			<Russian>Предмет уже поднимается.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Bezig met het oppakken</Dutch>
-			<French>L'objet est déjà pris.</French>
-			<Czech>Sbírání předmětu již probíhá.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_39">
 			<English>Add to toolbelt already in progress.</English>
 			<German>Hinzufügen zum Werkzeuggürtel bereits im Gange.</German>
@@ -11069,33 +11017,6 @@
 			<Dutch>Je bent al aan het upgraden.</Dutch>
 			<French>L'amélioration est déjà en cours.</French>
 			<Czech>Upgrade již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_53">
-			<English>\n\nHarvest wood already in progress.</English>
-			<German>\n\nHolzhacken bereits im Gange.</German>
-			<Russian>\n\nДерево уже рубится.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent al hout aan het hakken</Dutch>
-			<French>\n\nLa coupe du bois est déjà en cours.</French>
-			<Czech>\n\nKácení již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_54">
-			<English>\n\nHatchet needs to be in your hand to harvest wood.</English>
-			<German>\n\nSie müssen die Axt in Ihren Händen halten um Holz zu hacken.</German>
-			<Russian>\n\nТопор должен быть в ваших руках, чтобы срубить дерево.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe moet een bijl in je handen hebben om hout te hakken.</Dutch>
-			<French>\n\nVous devez avoir la hache en main pour couper du bois.</French>
-			<Czech>\n\nPro kácení stromů musíte mít v ruce sekeru.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_55">
-			<English>\n\nCanceled Harvesting Wood.</English>
-			<German>\n\nHolzhacken abgerochen.</German>
-			<Russian>\n\nРубка дерева отменена.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nGestopt met houthakken</Dutch>
-			<French>\n\nCoupe du bois annulée.</French>
-			<Czech>\n\nKácení přerušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_56">
 			<English>\n\nCopy key already in progress.</English>
@@ -11314,7 +11235,7 @@
 			<Czech>Nebyly nalezeny žádné části.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_91">
-			<English>Failed object not longer exists.</English>
+			<English>Failed object no longer exists.</English>
 			<German>Fehlgeschlagen. Objekt existiert nicht mehr.</German>
 			<Russian>Объект не существует.</Russian>
 			<!-- <Spanish></Spanish> -->
@@ -11339,15 +11260,6 @@
 			<Dutch>reeds bezig.</Dutch>
 			<French>déjà en cours.</French>
 			<Czech>již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_97">
-			<English>Trading already in progress.</English>
-			<German>Handel bereits im Gange.</German>
-			<Russian>Вы уже торгуете.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Reeds bezig met handellen.</Dutch>
-			<French>La transaction est déjà en cours.</French>
-			<Czech>Obchodování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_99">
 			<English>Stop already in progress.</English>
@@ -11673,51 +11585,15 @@
 			<French>\n\n%1 sur %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
 			<Czech>\n\n%1 z %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_144">
-			<English>You have repaired %1.</English>
-			<German>Sie haben %1 repariert.</German>
-			<Russian>Вы починили %1.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Je hebt %1 gerepareerd.</Dutch>
-			<French>Vous avez réparé %1.</French>
-			<Czech>Opravili jste %1.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_145">
 			<English>\n\nMissing Parts after first check Item: %1 / %2</English>
 			<German>\n\nFehlende Teile nach der ersten Überprüfung: %1 / %2</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
 			<Dutch>\n\nMissende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
-			<!-- <French></French> -->
+			<French>Éléments manquants après la première vérification: %1 / %2</French>
 			<Czech>\n\nChybějící části po první kontrole itemu: %1 / %2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_146">
-			<English>\n\nMissing %1 more of %2</English>
-			<German>\n\nIhnen fehlt/fehlen %1 %2</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe hebt nog %1 extra %2 nodig.</Dutch>
-			<!-- <French></French> -->
-			<Czech>\n\nChybí %1x %2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_147">
-			<English>\n\nChopping down tree, walk away at any time to cancel. (%1/%2)</English>
-			<German>\n\nBaum wird gefällt, bewegen Sie sich um den Vorgang abzubrechen. (%1/%2)</German>
-			<Russian>\n\nРубите дерево, уходите в любое время для отмены. (%1/%2)</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nBoom wordt neergehakt, loop weg om te annuleren. (%1/%2)</Dutch>
-			<!-- <French></French> -->
-			<Czech>Probíhá kácení stromu, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_148">
-			<English>\n\n%1 piles of wood has been successfully added in front of you.</English>
-			<German>\n\n%1 Holzstöße wurde erfolgreich vor Ihnen hinzugefügt.</German>
-			<Russian>\n\n%1 дрова были успешно размещены перед вами.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\n%1 stapels hout liggen nu recht voor je.</Dutch>
-			<!-- <French></French> -->
-			<Czech>\n\n%1 hromad dřeva bylo úspěšně položeno před Vás.</Czech>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_149">
 			<English>\n\nCrafting needs a %1 within %2 meters</English>
 			<German>\n\nZur Herstellung wird ein(e) %1 innerhalb von %2 benötigt.</German>
@@ -11736,25 +11612,7 @@
 			<!-- <French></French> -->
 			<Czech>\n\nVyrobena věc: %1 x %2</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_151">
-			<English>\n\nMissing Parts after first check Item: %1 / %2</English>
-			<German>\n\nFehlende Teile nach der ersten Überprüfung: %1 / %2</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nMissende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
-			<!-- <French></French> -->
-			<Czech>\n\nChybějící části po první kontrole věci: %1 / %2</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_152">
-			<English>\n\n%3 complete, missing %1 more of %2</English>
-			<German>\n\n%3 abgeschlossen, Ihnen fehlt/fehlen noch %1 %2</German>
-			<!-- <Russian></Russian> -->
-			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\n%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
-			<!-- <French></French> -->
-			<Czech>\n\n%3 hotovo, chybí ještě %1 %2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_153">
 			<English>\n\n%3 complete, missing %1 more of %2</English>
 			<German>\n\n%3 abgeschlossen, Ihnen fehlt/fehlen noch %1 %2</German>
 			<!-- <Russian></Russian> -->
@@ -12177,113 +12035,104 @@
 			<!-- <French></French> -->
 			<Czech>Přidat 2 10oz zlata</Czech>
 		</Key>
-    <Key ID="STR_EPOCH_PLAYER_S_197">
-      <English>Add 1 10oz Silver</English>
-      <!-- <German>1 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 1 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 1 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 1 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_198">
-      <English>Add 10 10oz Silver</English>
-      <!-- <German>10 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 10 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 10 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 10 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_199">
-      <English>Add 9 10oz Silver</English>
-      <!-- <German>9 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 9 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 9 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 9 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_200">
-      <English>Remove 1 10oz Silver</English>
-      <!-- <German>1 10oz Silver entfernen</German> -->
-      <Russian>Забрать 1 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Verwijder 1 10oz Goud</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Odebráno 1 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_202">
-      <English>Add 8 10oz Silver</English>
-      <!-- <German>8 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 8 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 8 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 8 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_203">
-      <English>Add 7 10oz Silver</English>
-      <!-- <German>7 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 7 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 7 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 7 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_204">
-      <English>Add 6 10oz Silver</English>
-      <!-- <German>6 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 6 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 6 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 6 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_205">
-      <English>Add 5 10oz Silver</English>
-      <!-- <German>5 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 5 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 5 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 5 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_206">
-      <English>Add 4 10oz Silver</English>
-      <!-- <German>4 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 4 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 4 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 4 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_207">
-      <English>Add 3 10oz Silver</English>
-      <!-- <German>3 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 3 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 3 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 3 10oz stříbra</Czech>
-    </Key>
-    <Key ID="STR_EPOCH_PLAYER_S_208">
-      <English>Add 2 10oz Silver</English>
-      <!-- <German>2 10oz Silver hinzufügen</German> -->
-      <Russian>Добавить 2 10oz серебра</Russian>
-      <!-- <Spanish></Spanish> -->
-      <!-- <Dutch>Voeg 2 10oz Goud toe</Dutch> -->
-      <!-- <French></French> -->
-      <Czech>Přidat 2 10oz stříbra</Czech>
-    </Key>
-		<Key ID="STR_EPOCH_PLAYER_209">
-			<English>Open %1</English>
-			<German>1% öffnen</German>
-			<Russian>Открыть %1</Russian>
+		<Key ID="STR_EPOCH_PLAYER_S_197">
+			<English>Add 1 10oz Silver</English>
+			<!-- <German>1 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 1 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>Open %1</Dutch>
+			<!-- <Dutch>Voeg 1 10oz Goud toe</Dutch> -->
 			<!-- <French></French> -->
-			<Czech>Otevřít %1</Czech>
+			<Czech>Přidat 1 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_198">
+			<English>Add 10 10oz Silver</English>
+			<!-- <German>10 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 10 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 10 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 10 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_199">
+			<English>Add 9 10oz Silver</English>
+			<!-- <German>9 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 9 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 9 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 9 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_200">
+			<English>Remove 1 10oz Silver</English>
+			<!-- <German>1 10oz Silver entfernen</German> -->
+			<Russian>Забрать 1 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Verwijder 1 10oz Goud</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Odebráno 1 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_202">
+			<English>Add 8 10oz Silver</English>
+			<!-- <German>8 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 8 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 8 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 8 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_203">
+			<English>Add 7 10oz Silver</English>
+			<!-- <German>7 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 7 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 7 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 7 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_204">
+			<English>Add 6 10oz Silver</English>
+			<!-- <German>6 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 6 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 6 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 6 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_205">
+			<English>Add 5 10oz Silver</English>
+			<!-- <German>5 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 5 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 5 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 5 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_206">
+			<English>Add 4 10oz Silver</English>
+			<!-- <German>4 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 4 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 4 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 4 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_207">
+			<English>Add 3 10oz Silver</English>
+			<!-- <German>3 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 3 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 3 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 3 10oz stříbra</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_S_208">
+			<English>Add 2 10oz Silver</English>
+			<!-- <German>2 10oz Silver hinzufügen</German> -->
+			<Russian>Добавить 2 10oz серебра</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch>Voeg 2 10oz Goud toe</Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Přidat 2 10oz stříbra</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_1">
 			<English>Add 1 bar</English>
@@ -12654,15 +12503,6 @@
 			<!-- <French></French> -->
 			<Czech>Vytvořit Garážová vrata</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_241">
-			<English>Build Fire</English>
-			<German>Lagerfeuer erstellen</German>
-			<Russian>Приготовить костёр</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Bouw kampvuur</Dutch>
-			<!-- <French></French> -->
-			<Czech>Vytvořit ohniště</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_242">
 			<English>Craft Lumber</English>
 			<German>Bauholz herstellen</German>
@@ -12978,24 +12818,6 @@
 			<!-- <French></French> -->
 			<Czech>Vytvořit Stojan na zbraně</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_283">
-			<English>Close</English>
-			<German>Schließen</German>
-			<Russian>Закрыть</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Zavřít</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_288">
-			<English>Items</English>
-			<German>Objekte</German>
-			<Russian>Предметы</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Předměty</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_289">
 			<English>Trader Menu</English>
 			<German>Händler Menü</German>
@@ -13050,15 +12872,6 @@
 			<!-- <French></French> -->
 			<Czech>Prodat za</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_295">
-			<English>Remove from Toolbelt.</English>
-			<German>Vom Werkzeuggürtel entfernen.</German>
-			<Russian>Убрать с пояса.</Russian>
-			<Spanish>Remove from Toolbelt.</Spanish>
-			<Dutch>Verwijder van gereedschapsgordel</Dutch>
-			<French>Retirer de la Ceinture.</French>
-			<Czech>Odstranit z opasku na nářadí.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_298">
 			<English>Craft Round Fence</English>
 			<German>Abgerundeten Zaun herstellen</German>
@@ -13076,15 +12889,6 @@
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
 			<Czech>Postavit Kulaté oplocení</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_300">
-			<English>Craft Sandbag</English>
-			<German>Sandsack herstellen</German>
-			<Russian>Создать: Мешки с песком</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Vytvořit Pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_301">
 			<English>Trade Metals</English>
@@ -13202,33 +13006,6 @@
 			<Dutch>\n\nU mag alleen toegang tot versnelling vrienden 'op dit gebied.</Dutch>
 			<French>\n\nVous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
 			<Czech>\n\nMůžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_REPAIR">
-			<English>Repair</English>
-			<German>Reparieren</German>
-			<Russian>Починить</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Repareer</Dutch>
-			<French>Réparer</French>
-			<Czech>Opravit</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_REMOVE">
-			<English>Remove</English>
-			<German>Entfernen</German>
-			<Russian>Демонтировать</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Demonteer</Dutch>
-			<French>Retirer</French>
-			<Czech>Demontovat</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_CARGO">
-			<English>Cargo Check</English>
-			<German>Gepäck prüfen</German>
-			<Russian>Проверить груз</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Controleer Bagage</Dutch>
-			<French>Vérifier la cargaison</French>
-			<Czech>Kontrola nákladu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
@@ -13491,15 +13268,6 @@
 			<French>Dépecer le zombie</French>
 			<Czech>Vykuchat Zombie</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_GEAR">
-			<English>Gear</English>
-			<!-- <German></German> -->
-			<Russian>Инвентарь</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Inventaris</Dutch>
-			<French>Équipement</French>
-			<Czech>Vybavení</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 			<English>Open %1</English>
 			<German>%1 öffnen</German>
@@ -13662,21 +13430,12 @@
 			<French>Vous avez maintenu %1 construction(s).</French>
 			<Czech>Opravil jsi %1 částí budov.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_5">
-			<English>Missing Parts after first check Item: %1 / %2</English>
-			<!-- <German></German> -->
-			<Russian></Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
-			<French>Éléments manquants après la première vérification: %1 / %2</French>
-			<Czech>Chybí část: %1</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_6">
 			<English>Missing %1 more of %2</English>
-			<!-- <German></German> -->
-			<Russian></Russian>
+			<German>Ihnen fehlt/fehlen %1 %2</German>
+			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
+			<Dutch>Je hebt nog %1 extra %2 nodig.</Dutch>
 			<French>Il manque %1 %2</French>
 			<Czech>Chybí %1x %2</Czech>
 		</Key>
@@ -13724,24 +13483,6 @@
 			<Dutch></Dutch>
 			<French>Vous avez acheté %3 pour %1 %2, la clé a été ajoutée à votre ceinture.</French>
 			<Czech>Koupeno %3 za %1 %2, klíč byl přidán do opasku na nářadí.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_12">
-			<English>Missing %1 more of %2</English>
-			<!-- <German></German> -->
-			<Russian></Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
-			<French>Il manque %1 %2</French>
-			<Czech>Chybí %1x %2</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_13">
-			<English>Missing tool %1</English>
-			<!-- <German></German> -->
-			<Russian>Отсутствует инструмент %1</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
-			<French>Outil manquant : %1</French>
-			<Czech>Chybějící nářadí: %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_14">
 			<English>No Tank Traps found nearby.</English>
@@ -14030,15 +13771,6 @@
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
 			<Czech>Opustili jste %1</Czech>
-		</Key>
-		<Key ID="R3F_VERSION_WEIGHTED">
-			<English>1.04</English>
-			<German>1.04</German>
-			<Russian>1.04</Russian>
-			<Spanish>1.04</Spanish>
-			<Dutch>1.04</Dutch>
-			<French>1.04</French>
-			<Czech>1.04</Czech>
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_InGearBox">
 			<English>%1 | Weight carried : %2 lb</English>

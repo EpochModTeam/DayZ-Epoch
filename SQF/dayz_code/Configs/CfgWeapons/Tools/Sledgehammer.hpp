@@ -10,7 +10,7 @@ class ItemSledge: ItemCore // Epoch class
 	{
 		class Toolbelt
 		{
-			text=$STR_EPOCH_PLAYER_295;
+			text=$STR_ACTIONS_RFROMTB;
 			script="spawn player_addToolbelt;";
 			use[]=
 			{

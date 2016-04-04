@@ -256,7 +256,7 @@ if (_canDo) then {
 					} else {
 						// Refund parts since we failed
 						{player addMagazine _x; } forEach _temp_removed_array;
-						cutText [format[(localize "str_epoch_player_151"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+						cutText [format[(localize "STR_EPOCH_PLAYER_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 					};
 
 				} else {

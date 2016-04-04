@@ -177,7 +177,7 @@ if ((count _upgrade) > 0) then {
 		};
 	} else {
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-		cutText [format[(localize "str_epoch_player_146"),_missingQty, _textMissing], "PLAIN DOWN"];
+		cutText [format[(localize "STR_EPOCH_ACTIONS_6"),_missingQty, _textMissing], "PLAIN DOWN"];
 	};
 
 } else {

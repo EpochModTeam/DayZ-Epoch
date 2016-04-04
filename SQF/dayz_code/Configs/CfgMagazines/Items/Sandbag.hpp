@@ -94,7 +94,7 @@ class BagFenceRound_DZ_kit : CA_Magazine {
 		};
 		class Crafting
 		{
-			text = $STR_EPOCH_PLAYER_300;
+			text = $STR_EPOCH_PLAYER_195;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			neednearby[] = {};
 			requiretools[] = {"ItemEtool","ItemToolbox"};

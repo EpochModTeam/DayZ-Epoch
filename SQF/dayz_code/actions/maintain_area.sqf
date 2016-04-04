@@ -101,7 +101,7 @@ switch _option do {
 				publicVariableServer "PVDZE_maintainArea";	
 			} else {
 				{player addMagazine _x;} count _temp_removed_array;
-				cutText [format[(localize "STR_EPOCH_ACTIONS_5"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+				cutText [format[(localize "STR_EPOCH_PLAYER_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
 			};
 		} else {
 			_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");

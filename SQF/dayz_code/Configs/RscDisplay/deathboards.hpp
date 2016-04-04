@@ -44,7 +44,7 @@ class EpochDeathBoardDialog
 		class RscShortcutButton_1700: RscShortcutButton
 		{
 			idc = -1;
-			text = $STR_EPOCH_PLAYER_283;
+			text = $STR_UI_CLOSE;
 			x = 0.628452 * safezoneW + safezoneX;
 			y = 0.706267 * safezoneH + safezoneY;
 			w = 0.0743671 * safezoneW;

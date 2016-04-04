@@ -211,7 +211,6 @@ dayz_resetSelfActions = {
 	s_player_pzombiesfeed = -1;
 	s_player_tamedog = -1;
 	s_player_parts_crtl = -1;
-	s_player_checkGear = -1;
 	s_player_movedog = -1;
 	s_player_speeddog = -1;
 	s_player_calldog = -1;

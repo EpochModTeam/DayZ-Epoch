@@ -706,22 +706,11 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		{player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 		s_player_lockUnlock_crtl = -1;
 	};
-
-	if (DZE_AllowCargoCheck) then {
-		if ((_isVehicle || _istypeTent || (_typeOfCursorTarget in DZE_isNewStorage)) && _isAlive && !_isMan && !locked _cursorTarget) then {
-			if (s_player_checkGear < 0) then {
-				s_player_checkGear = player addAction [localize "STR_EPOCH_PLAYER_CARGO", "\z\addons\dayz_code\actions\cargocheck.sqf",_cursorTarget, 1, true, true];
-			};
-		} else {
-			player removeAction s_player_checkGear;
-			s_player_checkGear = -1;
-		};
-	};
 	
 	// gear access on surrendered player
 	if (_isMan && {_isAlive} && {!_isZombie} && {!_isAnimal} && {_cursorTarget getVariable ["DZE_Surrendered",false]}) then {
 		if (s_player_SurrenderedGear < 0) then {
-			s_player_SurrenderedGear = player addAction [localize "STR_EPOCH_ACTIONS_GEAR", "\z\addons\dayz_code\actions\surrender_gear.sqf",_cursorTarget, 1, true, true];
+			s_player_SurrenderedGear = player addAction [localize "STR_UI_GEAR", "\z\addons\dayz_code\actions\surrender_gear.sqf",_cursorTarget, 1, true, true];
 		};
 	} else {
 		player removeAction s_player_SurrenderedGear;
@@ -1069,8 +1058,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_parts_crtl = -1;
 	{player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 	s_player_lockUnlock_crtl = -1;
-	player removeAction s_player_checkGear;
-	s_player_checkGear = -1;
 	player removeAction s_player_SurrenderedGear;
 	s_player_SurrenderedGear = -1;
     player removeAction s_player_maintain_area;

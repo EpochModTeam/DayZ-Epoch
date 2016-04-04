@@ -17,7 +17,6 @@ DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
 DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
 DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
 
-DZE_AllowCargoCheck = false; // Allow viewing how much space remains in vehicles, safes, tents, etc.
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 DZE_DeathMsgGlobal = false; // Display death messages in global chat
 DZE_DeathMsgSide = false; // Display death messages in side chat

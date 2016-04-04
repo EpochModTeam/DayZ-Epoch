@@ -1,7 +1,7 @@
 /*
 [_obj] call player_packTent;
 */
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_13","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {cutText [localize "str_player_beingpacked","PLAIN DOWN"];};
 DZE_ActionInProgress = true;
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
