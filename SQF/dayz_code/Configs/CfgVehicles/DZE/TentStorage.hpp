@@ -3,7 +3,7 @@ class DomeTentStorage_base;
 
 class DesertTentStorage: DomeTentStorage_base {
 	armor = 50;
-	displayName = "Desert Dome Tent";
+	displayname = $STR_VEH_NAME_DESERT_TENT;
 	model = "\dayz_epoch_b\models\astan.p3d";
 	transportMaxMagazines = 75;
 	transportMaxWeapons = 15;
@@ -17,7 +17,7 @@ class DesertTentStorage: DomeTentStorage_base {
 
 class DesertTentStorage0: DomeTentStorage_base {
 	armor = 60;
-	displayName = "Desert Dome Tent +";
+	displayname = $STR_VEH_NAME_DESERT_TENT1;
 	model = "\dayz_epoch_b\models\astan.p3d";
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
@@ -31,7 +31,7 @@ class DesertTentStorage0: DomeTentStorage_base {
 
 class DesertTentStorage1: DomeTentStorage_base {
 	armor = 70;
-	displayName = "Desert Dome Tent ++";
+	displayname = $STR_VEH_NAME_DESERT_TENT2;
 	model = "\dayz_epoch_b\models\astan.p3d";
 	transportMaxMagazines = 125;
 	transportMaxWeapons = 25;
@@ -45,7 +45,7 @@ class DesertTentStorage1: DomeTentStorage_base {
 
 class DesertTentStorage2: DomeTentStorage_base {
 	armor = 80;
-	displayName = "Desert Dome Tent +++";
+	displayname = $STR_VEH_NAME_DESERT_TENT3;
 	model = "\dayz_epoch_b\models\astan.p3d";
 	transportMaxMagazines = 150;
 	transportMaxWeapons = 30;
@@ -59,7 +59,7 @@ class DesertTentStorage2: DomeTentStorage_base {
 
 class DesertTentStorage3: DomeTentStorage_base {
 	armor = 90;
-	displayName = "Desert Dome Tent ++++";
+	displayname = $STR_VEH_NAME_DESERT_TENT4;
 	model = "\dayz_epoch_b\models\astan.p3d";
 	transportMaxMagazines = 175;
 	transportMaxWeapons = 35;
@@ -73,7 +73,7 @@ class DesertTentStorage3: DomeTentStorage_base {
 
 class DesertTentStorage4 : DomeTentStorage_base {
 	armor = 100;
-	displayName = "Desert Dome Tent +++++";
+	displayname = $STR_VEH_NAME_DESERT_TENT5;
 	model = "\dayz_epoch_b\models\astan.p3d";
 	transportMaxMagazines = 200; //same as ural
 	transportMaxWeapons = 40;

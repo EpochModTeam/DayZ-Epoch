@@ -85,14 +85,14 @@ class ItemDesertTent : CA_Magazine
 	
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-	displayName = "Desert Dome Tent";
+	displayName = $STR_VEH_NAME_DESERT_TENT;
 	descriptionShort = $STR_EQUIP_DESC_20;
 
 	class ItemActions
 	{
 		class Build
 		{
-			text = "Pitch Desert Dome Tent";
+			text = $STR_PITCH_DESERT_TENT;
 			script = "; [_id,'Build'] spawn player_build; r_action_count = r_action_count + 1;";
 			require[] = {};
 			consume[] = {"ItemDesertTent"};

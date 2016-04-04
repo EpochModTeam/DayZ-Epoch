@@ -14114,5 +14114,61 @@
 			<French>%1 a été tué par %2 avec un %3 de %4m</French>
 			<Czech>%1 byl zabit %2 na %3 z %4m</Czech>
 		</Key>
+		<Key ID="STR_PITCH_DESERT_TENT">
+			<English>Pitch Desert Dome Tent</English>
+			<Russian>Поставить палатку пустыня</Russian>
+			<Spanish>Asentar Tienda de Campaña Desierto</Spanish>
+			<French>Monter la Tente Dôme Désert</French>
+			<Czech>Postavit stan (iglú) Poušť</Czech>
+			<German>Igluzelt aufschlagen Wüste</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DESERT_TENT">
+			<English>Desert Dome Tent</English>
+			<French>Tente Dôme Désert</French>
+			<Russian>Палатка-полусфера пустыня</Russian>
+			<Spanish>Tienda de Campaña Desierto</Spanish>
+			<Czech>Stan (iglú) Poušť</Czech>
+			<German>Igluzelt Wüste</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DESERT_TENT1">
+			<English>Desert Dome Tent +</English>
+			<French>Tente Dôme Désert +</French>
+			<Russian>Палатка-полусфера пустыня +</Russian>
+			<Spanish>Tienda de Campaña Desierto +</Spanish>
+			<Czech>Stan (iglú) Poušť +</Czech>
+			<German>Igluzelt Wüste +</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DESERT_TENT2">
+			<English>Desert Dome Tent ++</English>
+			<French>Tente Dôme Désert ++</French>
+			<Russian>Палатка-полусфера пустыня ++</Russian>
+			<Spanish>Tienda de Campaña Desierto ++</Spanish>
+			<Czech>Stan (iglú) Poušť ++</Czech>
+			<German>Igluzelt Wüste ++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DESERT_TENT3">
+			<English>Desert Dome Tent +++</English>
+			<French>Tente Dôme Désert +++</French>
+			<Russian>Палатка-полусфера пустыня +++</Russian>
+			<Spanish>Tienda de Campaña Desierto +++</Spanish>
+			<Czech>Stan (iglú) Poušť +++</Czech>
+			<German>Igluzelt Wüste +++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DESERT_TENT4">
+			<English>Desert Dome Tent ++++</English>
+			<French>Tente Dôme Désert ++++</French>
+			<Russian>Палатка-полусфера пустыня ++++</Russian>
+			<Spanish>Tienda de Campaña Desierto ++++</Spanish>
+			<Czech>Stan (iglú) Poušť ++++</Czech>
+			<German>Igluzelt Wüste ++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DESERT_TENT5">
+			<English>Desert Dome Tent +++++</English>
+			<French>Tente Dôme Désert +++++</French>
+			<Russian>Палатка-полусфера пустыня +++++</Russian>
+			<Spanish>Tienda de Campaña Desierto +++++</Spanish>
+			<Czech>Stan (iglú) Poušť +++++</Czech>
+			<German>Igluzelt Wüste +++++</German>
+		</Key>
 	</Package>
 </Project>

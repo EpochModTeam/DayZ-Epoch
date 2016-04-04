@@ -110,7 +110,7 @@ class WeaponHolder_ItemDomeTent : WeaponHolderBase {
 
 class WeaponHolder_ItemDesertTent : WeaponHolderBase {
 	scope = public;
-	displayName = $STR_VEH_NAME_DOME_TENT;
+	displayName = $STR_VEH_NAME_DESERT_TENT;
 	model = "\dayz_equip\proxy\tentbag.p3d";
 	
 	class eventHandlers {
