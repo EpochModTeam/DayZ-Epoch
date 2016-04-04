@@ -1,5 +1,5 @@
 class Category_603 {
-	class M249_EP1_DZ {
+	class M249_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
@@ -21,7 +21,7 @@ class Category_603 {
 	};
 };
 class Category_638 {
-	class M249_EP1_DZ {
+	class M249_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};

@@ -30,7 +30,9 @@ class ItemSledge: ItemCore // Epoch class
 		*/
 	};
 };
-/* //Vanilla sledge is using a different model
+
+//Vanilla sledge is using a different model.
+//All scripts have been changed to use Epoch ItemSledge, but leave this defined in case admins want to use it for something.
 class ItemSledgeHammer : ItemCore
 {
 	scope = public;
@@ -61,4 +63,3 @@ class ItemSledgeHammerBroken : ItemCore
 		};
 	};
 };
-*/

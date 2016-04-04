@@ -106,7 +106,6 @@ machineguns[] = {
 	{Loot_WEAPON,		1,		M249_m145_EP1_DZE},
 	{Loot_WEAPON,		1,		m240_scoped_EP1_DZE},
 	{Loot_WEAPON,		0.8,	M240_DZ},
-	{Loot_WEAPON,		0.8,	M249_EP1_DZ},
 	{Loot_WEAPON,		0.9,	M249_DZ},
 	{Loot_WEAPON,		0.5,	Mk48_DZ} //Mk_48_DZ (removed, was a duplicate of Mk48_CCO_DZ)
 };

@@ -18,7 +18,7 @@ class L110A1_CCO_DZ : BAF_L110A1_Aim
 	{
 		class RemoveCCO
 		{
-			text = $STR_DZ_ATT_CCO_REM;
+			text = $STR_DZ_ATT_CCO_RMVE;
 			script = "; ['Attachment_CCO',_id,'L110A1_DZ'] call player_removeAttachment";
 		};
 	};
@@ -34,7 +34,7 @@ class L110A1_Holo_DZ : L110A1_CCO_DZ
 	{
 		class RemoveHolo
 		{
-			text = $STR_DZ_ATT_HOLO_REM;
+			text = $STR_DZ_ATT_HOLO_RMVE;
 			script = "; ['Attachment_Holo',_id,'L110A1_DZ'] call player_removeAttachment";
 		};
 	};
@@ -63,13 +63,4 @@ class L110A1_DZ : L110A1_CCO_DZ
 
 class BAF_L110A1_Aim_DZE:BAF_L110A1_Aim { //Slightly different scope from L110A1_CCO_DZ, otherwise identical
 	type = "1";
-	
-	class ItemActions
-	{
-		class RemoveCCO
-		{
-			text = $STR_DZ_ATT_CCO_REM;
-			script = "; ['Attachment_CCO',_id,'L110A1_DZ'] call player_removeAttachment";
-		};
-	};
 };

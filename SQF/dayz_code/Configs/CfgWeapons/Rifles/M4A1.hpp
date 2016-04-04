@@ -824,7 +824,7 @@ class M4A1_ACOG_FL_DZ : M4A1_FL_DZ
 		};
 		class RemoveFlashlight
 		{
-			text = $STR_DZ_ATT_FL_RFL_REM;
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
 			script = "; ['Attachment_FL_Rfl',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
@@ -853,7 +853,7 @@ class M4A1_ACOG_SD_DZ : M4A1_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_REM;
+			text = $STR_DZ_ATT_SUP556_RMVE;
 			script = "; ['Attachment_Sup556',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
@@ -881,12 +881,12 @@ class M4A1_ACOG_SD_FL_DZ : M4A1_SD_FL_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_REM;
+			text = $STR_DZ_ATT_SUP556_RMVE;
 			script = "; ['Attachment_Sup556',_id,'M4A1_ACOG_FL_DZ'] call player_removeAttachment";
 		};
 		class RemoveFlashlight
 		{
-			text = $STR_DZ_ATT_FL_RFL_REM;
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
 			script = "; ['Attachment_FL_Rfl',_id,'M4A1_ACOG_SD_DZ'] call player_removeAttachment";
 		};
 	};
@@ -917,7 +917,7 @@ class M4A1_GL_ACOG_DZ : M4A1_GL_DZ
 		};
 		class RemoveGL
 		{
-			text = $STR_DZ_ATT_M203_REM;
+			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
@@ -945,12 +945,12 @@ class M4A1_GL_ACOG_FL_DZ : M4A1_GL_FL_DZ
 		};
 		class RemoveGL
 		{
-			text = $STR_DZ_ATT_M203_REM;
+			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'M4A1_ACOG_FL_DZ'] call player_removeAttachment";
 		};
 		class RemoveFlashlight
 		{
-			text = $STR_DZ_ATT_FL_RFL_REM;
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
 			script = "; ['Attachment_FL_Rfl',_id,'M4A1_GL_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
@@ -978,12 +978,12 @@ class M4A1_GL_ACOG_SD_DZ : M4A1_GL_SD_DZ
 		};
 		class RemoveGL
 		{
-			text = $STR_DZ_ATT_M203_REM;
+			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'M4A1_ACOG_SD_DZ'] call player_removeAttachment";
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_REM;
+			text = $STR_DZ_ATT_SUP556_RMVE;
 			script = "; ['Attachment_Sup556',_id,'M4A1_GL_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
@@ -1008,17 +1008,17 @@ class M4A1_GL_ACOG_SD_FL_DZ : M4A1_GL_SD_FL_DZ
 		};
 		class RemoveGL
 		{
-			text = $STR_DZ_ATT_M203_REM;
+			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'M4A1_ACOG_SD_FL_DZ'] call player_removeAttachment";
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_REM;
+			text = $STR_DZ_ATT_SUP556_RMVE;
 			script = "; ['Attachment_Sup556',_id,'M4A1_GL_ACOG_FL_DZ'] call player_removeAttachment";
 		};
 		class RemoveFlashlight
 		{
-			text = $STR_DZ_ATT_FL_RFL_REM;
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
 			script = "; ['Attachment_FL_Rfl',_id,'M4A1_GL_ACOG_SD_DZ'] call player_removeAttachment";
 		};
 	};

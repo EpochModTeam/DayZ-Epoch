@@ -226,6 +226,11 @@ UPDATE character_data SET Backpack = REPLACE(Backpack, 'M24', 'M24_DZ') WHERE IN
 UPDATE character_data SET Inventory = REPLACE(Inventory, 'M24', 'M24_DZ') WHERE INSTR(Inventory, 'M24') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, 'M24', 'M24_DZ') WHERE INSTR(Inventory, 'M24') > 0;
 
+UPDATE `Traders_DATA` SET `item` = '["M249_DZ",1]' WHERE `item` = '["M249_EP1_DZ",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'M249_EP1_DZ', 'M249_DZ') WHERE INSTR(Backpack, 'M249_EP1_DZ') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'M249_EP1_DZ', 'M249_DZ') WHERE INSTR(Inventory, 'M249_EP1_DZ') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'M249_EP1_DZ', 'M249_DZ') WHERE INSTR(Inventory, 'M249_EP1_DZ') > 0;
+
 UPDATE `Traders_DATA` SET `item` = '["M40A3_Gh_DZ",1]' WHERE `item` = '["M40A3",1]';
 UPDATE character_data SET Backpack = REPLACE(Backpack, 'M40A3', 'M40A3_Gh_DZ') WHERE INSTR(Backpack, 'M40A3') > 0;
 UPDATE character_data SET Inventory = REPLACE(Inventory, 'M40A3', 'M40A3_Gh_DZ') WHERE INSTR(Inventory, 'M40A3') > 0;

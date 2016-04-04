@@ -26,7 +26,7 @@ class M240_CCO_DZ : M240_DZ
 	{
 		class RemoveCCO
 		{
-			text = $STR_DZ_ATT_CCO_REM;
+			text = $STR_DZ_ATT_CCO_RMVE;
 			script = "; ['Attachment_CCO',_id,'M240_DZ'] call player_removeAttachment";
 		};
 	};
@@ -44,7 +44,7 @@ class M240_Holo_DZ : M240_CCO_DZ
 	{
 		class RemoveHolo
 		{
-			text = $STR_DZ_ATT_HOLO_REM;
+			text = $STR_DZ_ATT_HOLO_RMVE;
 			script = "; ['Attachment_Holo',_id,'M240_DZ'] call player_removeAttachment";
 		};
 	};

@@ -23,7 +23,7 @@ if (count _inventory > 0) then {
 		if (DZE_UseBloodTypes) then {
 			if (_item == "ItemBloodbag") then { _item = "bloodBagONEG" }; // Convert ItemBloodbag into universal blood type/rh bag
 		} else {
-			if (_item in DZE_typedBags) then { _item = "ItemBloodbag" };
+			if (_item in dayz_typedBags) then { _item = "ItemBloodbag" };
 		};
 
 		//Is item legal?

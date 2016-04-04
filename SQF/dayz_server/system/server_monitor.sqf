@@ -49,7 +49,7 @@ if (_status == "ObjectStreamStart") then {
 	//Stream Objects
 	diag_log ("HIVE: Commence Object Streaming...");
 	for "_i" from 1 to _val do {
-		_result = _key call server_hiveReadWrite;
+		_result = _key call server_hiveReadWriteLarge;
 		_status = _result select 0;
 		_myArray set [count _myArray,_result];
 	};

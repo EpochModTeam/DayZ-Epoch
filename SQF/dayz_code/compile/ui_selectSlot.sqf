@@ -8,7 +8,7 @@ _itemData = gearSlotData _control;
 if (carryClick) then {carryClick = false;};
 
 // No right click option on bloodbags if DZE_SelfTransfuse = false;
-if (!DZE_SelfTransfuse && {(_itemData == "ItemBloodbag") or (_itemData in DZE_typedBags)}) exitWith {};
+if (!DZE_SelfTransfuse && {(_itemData == "ItemBloodbag") or (_itemData in dayz_typedBags)}) exitWith {};
 
 if (_button == 1) then {
 	private ["_conf","_name","_compile","_height","_item"];

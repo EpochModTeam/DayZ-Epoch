@@ -72,7 +72,7 @@ if (count AllowedVehiclesList == 0) then {
 
 		// Add 0-3 loots to vehicle using random loot groups
 		_num = floor(random 4);
-		_allCfgLoots = ["Trash","Trash","Consumable","Consumable","Generic","Generic","MedicalLow","MedicalLow","clothes","clothes","militaryclothes","specialclothes","tents","backpacks","Parts","pistols","AmmoCivilian"];
+		_allCfgLoots = ["Trash","Trash","Consumable","Consumable","Generic","Generic","MedicalLow","MedicalLow","clothes","tents","backpacks","Parts","pistols","AmmoCivilian"];
 		
 		for "_x" from 1 to _num do {
 			_iClass = _allCfgLoots call BIS_fnc_selectRandom;
