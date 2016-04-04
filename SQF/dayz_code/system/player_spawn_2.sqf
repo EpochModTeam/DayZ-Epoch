@@ -370,12 +370,10 @@ while {1 == 1} do {
 	if (_startcombattimer == 1 || _PlayerNearby) then {
 		player setVariable["combattimeout", diag_tickTime + 30, false];
 		player setVariable["startcombattimer", 0, false];
-		dayz_combat = 1;
 	} else {
 		if (_ZedsNearby) then {
 			player setVariable["combattimeout", diag_tickTime + 10, false];
 			player setVariable["startcombattimer", 0, false];
-			dayz_combat = 1;
 		};
 	};
 	

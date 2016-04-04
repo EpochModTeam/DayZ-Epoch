@@ -13,7 +13,7 @@ _distance = round(_audible * 10 * _caliber);
 
 dayz_disAudial = _distance;
 dayz_firedCooldown = time;
-dayz_combat = 1;
+if (toLower DZE_UI != "vanilla") then {dayz_combat = 1;};
 
 if (_ammo isKindOf "Melee") exitWith {
 	// Added Nutrition-Factor for work

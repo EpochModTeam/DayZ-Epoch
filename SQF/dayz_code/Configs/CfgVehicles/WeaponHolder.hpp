@@ -108,6 +108,16 @@ class WeaponHolder_ItemDomeTent : WeaponHolderBase {
 	};
 };
 
+class WeaponHolder_ItemDesertTent : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_VEH_NAME_DOME_TENT;
+	model = "\dayz_equip\proxy\tentbag.p3d";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemDesertTent'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
+};
+
 class WeaponHolder_ItemCrate : WeaponHolderBase {
 	scope = public;
 	displayName = $STR_ITEM_NAME_equip_crate;

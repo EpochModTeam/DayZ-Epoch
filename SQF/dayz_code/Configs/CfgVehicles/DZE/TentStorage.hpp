@@ -1,47 +1,81 @@
 // DayZ tents are defined in \dayz_equip\configs\Storage.hpp
-class TentStorage;
-class TentStorageDomed: TentStorage {
-	displayName = "Digital Camo Tent";
-	vehicleClass = "Survival";
+class DomeTentStorage_base;
+
+class DesertTentStorage: DomeTentStorage_base {
+	armor = 50;
+	displayName = "Desert Dome Tent";
 	model = "\dayz_epoch_b\models\astan.p3d";
 	transportMaxMagazines = 75;
-	transportMaxWeapons = 12;
+	transportMaxWeapons = 15;
+	transportMaxBackpacks = 5;
+	class Upgrade {
+		requiredTools[] = {"ItemToolbox"};
+		requiredParts[] = {"equip_crate","PartWoodPile"};
+		create = "DesertTentStorage0";
+	};
+};
+
+class DesertTentStorage0: DomeTentStorage_base {
+	armor = 60;
+	displayName = "Desert Dome Tent +";
+	model = "\dayz_epoch_b\models\astan.p3d";
+	transportMaxMagazines = 100;
+	transportMaxWeapons = 20;
+	transportMaxBackpacks = 6;
+	class Upgrade {
+		requiredTools[] = {"ItemToolbox"};
+		requiredParts[] = {"equip_crate","PartWoodPile"};
+		create = "DesertTentStorage1";
+	};
+};
+
+class DesertTentStorage1: DomeTentStorage_base {
+	armor = 70;
+	displayName = "Desert Dome Tent ++";
+	model = "\dayz_epoch_b\models\astan.p3d";
+	transportMaxMagazines = 125;
+	transportMaxWeapons = 25;
 	transportMaxBackpacks = 7;
-	create = "WeaponHolder_ItemTentDomed";
-	offset[] = {0,2.5,0};
-};
-class TentStorageDomed2: TentStorage {
-	displayName = "Green Domed Tent";
-	vehicleClass = "Survival";
-	model = "\ca\Misc_E\Astan_ep1.p3d"; 
-	transportMaxMagazines = 75;
-	transportMaxWeapons = 12;
-	transportMaxBackpacks = 7;
-	create = "WeaponHolder_ItemTentDomed2";
-	offset[] = {0,2.5,0};
-};
-
-class WeaponHolder_ItemTentOld: WeaponHolderBase {
-	scope = public;
-	displayName = $STR_EQUIP_NAME_20;
-	
-	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemTentOld'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	class Upgrade {
+		requiredTools[] = {"ItemToolbox"};
+		requiredParts[] = {"equip_crate","PartWoodPile"};
+		create = "DesertTentStorage2";
 	};
 };
-class WeaponHolder_ItemTentDomed: WeaponHolderBase {
-	scope = public;
-	displayName = "Domed Desert Tent";
 
-	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemTentDomed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+class DesertTentStorage2: DomeTentStorage_base {
+	armor = 80;
+	displayName = "Desert Dome Tent +++";
+	model = "\dayz_epoch_b\models\astan.p3d";
+	transportMaxMagazines = 150;
+	transportMaxWeapons = 30;
+	transportMaxBackpacks = 8;
+	class Upgrade {
+		requiredTools[] = {"ItemToolbox"};
+		requiredParts[] = {"equip_crate","PartWoodPile"};
+		create = "DesertTentStorage3";
 	};
 };
-class WeaponHolder_ItemTentDomed2: WeaponHolderBase {
-	scope = public;
-	displayName = "Domed Green Tent";
 
-	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemTentDomed2'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+class DesertTentStorage3: DomeTentStorage_base {
+	armor = 90;
+	displayName = "Desert Dome Tent ++++";
+	model = "\dayz_epoch_b\models\astan.p3d";
+	transportMaxMagazines = 175;
+	transportMaxWeapons = 35;
+	transportMaxBackpacks = 9;
+	class Upgrade {
+		requiredTools[] = {"ItemToolbox"};
+		requiredParts[] = {"equip_crate","PartWoodPile"};
+		create = "DesertTentStorage4";
 	};
+};
+
+class DesertTentStorage4 : DomeTentStorage_base {
+	armor = 100;
+	displayName = "Desert Dome Tent +++++";
+	model = "\dayz_epoch_b\models\astan.p3d";
+	transportMaxMagazines = 200; //same as ural
+	transportMaxWeapons = 40;
+	transportMaxBackpacks = 10;
 };

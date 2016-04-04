@@ -15,6 +15,27 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemHatchet_DZE', 'Ite
 UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemHatchet_DZE', 'ItemHatchet') WHERE INSTR(Inventory, 'ItemHatchet_DZE') > 0;
 
 -- ----------------------------
+-- ItemTentOld and ItemTentDomed2 were removed because they were identical to ItemTent and ItemDomeTent
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item` = '["ItemTent",1]' WHERE `item` = '["ItemTentOld",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemTentOld', 'ItemTent') WHERE INSTR(Backpack, 'ItemTentOld') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemTentOld', 'ItemTent') WHERE INSTR(Inventory, 'ItemTentOld') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemTentOld', 'ItemTent') WHERE INSTR(Inventory, 'ItemTentOld') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["ItemDomeTent",1]' WHERE `item` = '["ItemTentDomed2",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemTentDomed2', 'ItemDomeTent') WHERE INSTR(Backpack, 'ItemTentDomed2') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemTentDomed2', 'ItemDomeTent') WHERE INSTR(Inventory, 'ItemTentDomed2') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemTentDomed2', 'ItemDomeTent') WHERE INSTR(Inventory, 'ItemTentDomed2') > 0;
+
+-- ----------------------------
+-- ItemTentDomed was renamed to ItemDesertTent and made upgradeable
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item` = '["ItemDesertTent",1]' WHERE `item` = '["ItemTentDomed",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemTentDomed', 'ItemDesertTent') WHERE INSTR(Backpack, 'ItemTentDomed') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemTentDomed', 'ItemDesertTent') WHERE INSTR(Inventory, 'ItemTentDomed') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemTentDomed', 'ItemDesertTent') WHERE INSTR(Inventory, 'ItemTentDomed') > 0;
+
+-- ----------------------------
 -- Updated fish names from 1.8.7
 -- ----------------------------
 UPDATE `Traders_DATA` SET `item` = '["FishRawTrout",1]' WHERE `item` = '["ItemTrout",1]';

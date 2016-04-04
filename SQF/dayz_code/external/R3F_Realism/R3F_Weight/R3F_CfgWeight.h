@@ -1754,11 +1754,11 @@ class CfgWeight
 		{
 			weight = 5;
 		};
-		class ItemTentDomed
+		class ItemDesertTent
 		{
 			weight = 5;
 		};
-		class ItemTentDomed2
+		class ItemDomeTent
 		{
 			weight = 5;
 		};

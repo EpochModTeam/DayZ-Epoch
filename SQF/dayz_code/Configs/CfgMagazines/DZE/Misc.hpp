@@ -15,7 +15,7 @@ class ItemCanvas: CA_Magazine
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"ItemTentOld",1}};
+			output[] = {{"ItemTent",1}};
 			input[] = {{"ItemCanvas",2},{"ItemPole",2}};
 		};
 		class Crafting1
@@ -24,7 +24,7 @@ class ItemCanvas: CA_Magazine
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"ItemTentDomed",1}};
+			output[] = {{"ItemDesertTent",1}};
 			input[] = {{"ItemCanvas",3},{"ItemPole",3}};
 		};
 		class Crafting2
@@ -33,7 +33,7 @@ class ItemCanvas: CA_Magazine
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"ItemTentDomed2",1}};
+			output[] = {{"ItemDomeTent",1}};
 			input[] = {{"ItemCanvas",3},{"ItemPole",3}};
 		};
 		class Crafting3

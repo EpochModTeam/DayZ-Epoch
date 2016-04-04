@@ -25,13 +25,9 @@ Generic[] =
 	{Loot_MAGAZINE,		1,		ItemFuelCan},
 	{Loot_MAGAZINE,		1,		PartWoodPile}
 };
-//DZE
+
 tents[] = {
-	//VANILLA
 	{Loot_MAGAZINE,		0.5,	ItemDomeTent},
 	{Loot_MAGAZINE,		1,		ItemTent},
-	//EPOCH
-	{Loot_MAGAZINE,		1.1,	ItemTentOld},
-	{Loot_MAGAZINE,		1,		ItemTentDomed},
-	{Loot_MAGAZINE,		1,		ItemTentDomed2}
+	{Loot_MAGAZINE,		0.5,	ItemDesertTent} //EPOCH ADDITION
 };

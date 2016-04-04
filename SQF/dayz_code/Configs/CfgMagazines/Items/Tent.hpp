@@ -19,6 +19,24 @@ class ItemTent : CA_Magazine
 			consume[] = {"ItemTent"};
 			create = "TentStorage";
 		};
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_270;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"desert_net_kit",1}};
+			input[] = {{"ItemTent",2},{"ItemPole",2}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_PLAYER_271;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"forest_net_kit",1}};
+			input[] = {{"ItemTent",2},{"ItemPole",2}};
+		};
 	};
 };
 
@@ -43,15 +61,6 @@ class ItemDomeTent : CA_Magazine
 			consume[] = {"ItemDomeTent"};
 			create = "DomeTentStorage";
 		};
-		class Crafting
-		{
-			text = $STR_EPOCH_PLAYER_270;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"desert_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
-		};
 		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_271;
@@ -59,33 +68,35 @@ class ItemDomeTent : CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"forest_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
+			input[] = {{"ItemDomeTent",2},{"ItemPole",2}};
 		};
 	};
 };
 
 
 
-// LEGACY EPOCH ADDITIONS
+// EPOCH ADDITION
 
-class ItemTentOld: ItemTent
+class ItemDesertTent : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = 256;
-	displayName = $STR_EQUIP_NAME_20;
+	type = WeaponSlotItem * 3;
+	
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
+	displayName = "Desert Dome Tent";
 	descriptionShort = $STR_EQUIP_DESC_20;
-	weight = 5;
+
 	class ItemActions
 	{
-		class Build {
-			text = $STR_PITCH_TENT;
+		class Build
+		{
+			text = "Pitch Desert Dome Tent";
 			script = "; [_id,'Build'] spawn player_build; r_action_count = r_action_count + 1;";
 			require[] = {};
-			consume[] = {"ItemTent"};
-			create = "TentStorage";
+			consume[] = {"ItemDesertTent"};
+			create = "DesertTentStorage";
 		};
 		class Crafting
 		{
@@ -94,90 +105,7 @@ class ItemTentOld: ItemTent
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"desert_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
-		};
-		class Crafting1
-		{
-			text = $STR_EPOCH_PLAYER_271;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"forest_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
-		};
-	};
-};
-
-class ItemTentDomed : ItemTent {
-	scope = public;
-	count = 1;
-	type = 256;
-	displayName = "Camping Tent Desert";
-	model = "\dayz_equip\models\tentbag_gear.p3d";
-	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-	descriptionShort = "A domed camping tent desert that can be pitched, allowing you extended storage.";
-
-	class ItemActions {
-		class Build {
-			text = $STR_PITCH_DOME_TENT;
-			script = "; [_id,'Build'] spawn player_build; r_action_count = r_action_count + 1;";
-			require[] = {};
-			consume[] = {"ItemDomeTent"};
-			create = "DomeTentStorage";
-		};
-		class Crafting
-		{
-			text = $STR_EPOCH_PLAYER_270;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"desert_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
-		};
-		class Crafting1
-		{
-			text = $STR_EPOCH_PLAYER_271;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"forest_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
-		};
-	};
-};
-
-class ItemTentDomed2 : ItemTent {
-	scope = public;
-	count = 1;
-	type = 256;
-	displayName = "Camping Tent Green";
-	model = "\dayz_equip\models\tentbag_gear.p3d";
-	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-	descriptionShort = "A domed camping tent desert that can be pitched, allowing you extended storage.";
-	class ItemActions {
-		class Build {
-			text = $STR_PITCH_TENT;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "TentStorageDomed2";
-		};
-		class Crafting
-		{
-			text = $STR_EPOCH_PLAYER_270;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"desert_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
-		};
-		class Crafting1
-		{
-			text = $STR_EPOCH_PLAYER_271;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"forest_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
+			input[] = {{"ItemDesertTent",2},{"ItemPole",2}};
 		};
 	};
 };
