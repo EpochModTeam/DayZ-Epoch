@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
     ["Land_Panelak",[10814.4,6847.01,7.62939e-006],9.06501],
 	["Land_Panelak2",[10773.3,6853.5,0.00943375],9.27016],
 	["Land_Panelak",[8601.17,7745.84,-0.00204086],5.46415e-005],
@@ -164,4 +156,4 @@ private ["_object","_type"];
 	["Info_Board_EP1",[9761.01,4032.71,-3.52859e-005],57.3271],
 	["Info_Board_EP1",[13575.6,7499.29,0.000282288],90.123],
 	["HeliHCivil",[7990.66,10591.1,2.47955e-005],0]
-];
+] call local_spawnTraderCities;

@@ -11,6 +11,8 @@ dayz_sellDistance_vehicle = 10; // Max distance players can sell land vehicles f
 dayz_sellDistance_boat = 30; // Max distance players can sell boats from at traders
 dayz_sellDistance_air = 40; // Max distance players can sell air vehicles from at traders
 dayz_tameDogs = true; // Allow taming dogs with raw meat
+dayz_townGenerator = false; // Spawn vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus.
+dayz_townGeneratorBlackList = [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]; // Town generator will not spawn junk within 150m of these positions.
 
 DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
 DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with

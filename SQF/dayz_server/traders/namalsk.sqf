@@ -1,24 +1,4 @@
-private "_trader";
-{
-	_trader = createAgent [_x select 0,_x select 1,[],0,"CAN_COLLIDE"]; 
-	{_trader removeMagazine _x;} count magazines _trader;
-	removeAllItems _trader;
-	removeAllWeapons _trader;
-	removeBackpack _trader;
-	_trader switchMove "";
-	_trader setDir (_x select 2);
-	_trader setVehicleInit "this disableAI 'ANIM'; this disableAI 'AUTOTARGET'; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0; this allowDamage false;";
-	_trader setUnitAbility 0.6;
-	_trader disableAI "ANIM";
-	_trader disableAI "AUTOTARGET";
-	_trader disableAI "FSM";
-	_trader disableAI "MOVE";
-	_trader disableAI "TARGET";
-	_trader setBehaviour "CARELESS";
-	_trader forceSpeed 0;
-	_trader allowDamage false;
-	_trader enableSimulation false;
-} count [
+[
 	["GUE_Villager4",[5764.49,10776.7,0],357.216],
 	["RU_Farmwife4",[5776.19,10776,0],0],
 	["Soldier_Sniper_PMC",[4700.25,8918.91,3.90547],78.7732],
@@ -37,6 +17,4 @@ private "_trader";
 	["UN_CDF_Soldier_MG_EP1",[8885.9,10755.4,0],84.4804],
 	["RU_Farmwife3",[4297.91,4782.7,0.180385],302.864],
 	["UN_CDF_Soldier_Pilot_EP1",[6280.84,9403.42,0.170948],124.436]
-];
-
-processInitCommands;
+] call server_spawnTraders;

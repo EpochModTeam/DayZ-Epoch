@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
 	["CDF_WarfareBVehicleServicePoint",[4025.69,2908.12,0.00863075],258.143],
 	["LADAWreck",[4012.5,2916.29,0.0180664],197.347],
 	["Land_Misc_Well_C_EP1",[4021.45,2896.22,0.00671959],218.011],
@@ -66,4 +58,4 @@ private ["_object","_type"];
 	["Fort_StoneWall_EP1",[4022.83,2882.98,0.0588207],342.867],
 	["T72Wreck",[4022.61,2917.04,0.0561008],339.954],
 	["Info_Board_EP1",[4012.73,2897.31,0.00329018],262.568]
-];
+] call local_spawnTraderCities;

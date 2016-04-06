@@ -376,7 +376,7 @@ if (_hiveLoaded) then {
 	};
 };
 
-if (EpochUseEvents) then {[] spawn server_spawnEvents;};
+[] spawn server_spawnEvents;
 _debugMarkerPosition = getMarkerPos "respawn_west";
 _debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition select 1),1];
 _vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];

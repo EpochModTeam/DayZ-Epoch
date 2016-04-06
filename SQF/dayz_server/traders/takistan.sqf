@@ -1,24 +1,4 @@
-private "_trader";
-{
-	_trader = createAgent [_x select 0,_x select 1,[],0,"CAN_COLLIDE"]; 
-	{_trader removeMagazine _x;} count magazines _trader;
-	removeAllItems _trader;
-	removeAllWeapons _trader;
-	removeBackpack _trader;
-	_trader switchMove "";
-	_trader setDir (_x select 2);
-	_trader setVehicleInit "this disableAI 'ANIM'; this disableAI 'AUTOTARGET'; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0; this allowDamage false;";
-	_trader setUnitAbility 0.6;
-	_trader disableAI "ANIM";
-	_trader disableAI "AUTOTARGET";
-	_trader disableAI "FSM";
-	_trader disableAI "MOVE";
-	_trader disableAI "TARGET";
-	_trader setBehaviour "CARELESS";
-	_trader forceSpeed 0;
-	_trader allowDamage false;
-	_trader enableSimulation false;
-} count [
+[
 	["TK_CIV_Takistani03_EP1",[1963.87,12560.5,0],44.3217],
 	["TK_CIV_Woman03_EP1",[1957.42,12568.2,0],39.6604],
 	["TK_CIV_Woman02_EP1",[1953.5,12571.8,0],40.8509],
@@ -39,6 +19,4 @@ private "_trader";
 	["RU_Citizen4",[11127.3,12662.9,0],198.318],
 	["TK_GUE_Soldier_Sniper_EP1",[748.843,10485.5,0],138.185],
 	["Soldier_MG_PKM_PMC",[8030.74,2005.81,0],175.928]
-];
-
-processInitCommands;
+] call server_spawnTraders;
