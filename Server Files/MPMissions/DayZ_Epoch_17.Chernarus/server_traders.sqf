@@ -2,7 +2,7 @@
 serverTraders = ["Tanny_PMC","Drake","BAF_Soldier_AAR_DDPM","US_Delta_Force_AR_EP1","US_Delta_Force_Medic_EP1","Soldier_MG_PKM_PMC","Soldier_MG_PMC","UN_CDF_Soldier_Crew_EP1","GUE_Soldier_1","Soldier_Sniper_PMC","UN_CDF_Soldier_Pilot_EP1","GUE_Soldier_3","BAF_Soldier_EN_MTP","UN_CDF_Soldier_Pilot_EP1","GUE_Worker2","Herrera_Light","Soldier_MG_PKM_PMC","Soldier_MG_PMC","GUE_Soldier_CO","RU_Damsel4","FR_Sykes","GUE_Villager4","TK_GUE_Warlord_EP1","GUE_Commander","GUE_Soldier_2","TK_GUE_Soldier_5_EP1","CIV_EuroWoman02_EP1","Dr_Annie_Baker_EP1","GUE_Soldier_Crew","Citizen3_EP1","ibr_lingorman6","ibr_lingorman6s","TK_CIV_Woman02_EP1","Damsel3"];
 // Hero Vendor
 menu_Tanny_PMC = [
-	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];
@@ -14,7 +14,7 @@ menu_Drake = [
 ];
 // Weapons Friendly
 menu_BAF_Soldier_AAR_DDPM = [
-	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
+	[["Attachments",693],["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
 	"friendly"
 ];
@@ -32,7 +32,7 @@ menu_US_Delta_Force_Medic_EP1 = [
 ];
 // Weapons neutral
 menu_Soldier_MG_PKM_PMC = [
-	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
@@ -44,13 +44,13 @@ menu_Soldier_MG_PMC = [
 ];
 // Neutral Building/Parts
 menu_UN_CDF_Soldier_Crew_EP1 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
 // Bandit Trader
 menu_GUE_Soldier_1 = [
-	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
@@ -68,13 +68,13 @@ menu_UN_CDF_Soldier_Pilot_EP1 = [
 ];
 // Black Market Vendor
 menu_GUE_Soldier_3 = [
-	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
+	[["Attachments",693],["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];
 // Friendly Building/Parts
 menu_BAF_Soldier_EN_MTP = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
@@ -98,7 +98,7 @@ menu_Herrera_Light = [
 ];
 // Weapons friendly 2
 menu_Soldier_MG_PKM_PMC = [
-	[["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
+	[["Attachments",693],["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
 	[],
 	"friendly"
 ];
@@ -134,7 +134,7 @@ menu_GUE_Villager4 = [
 ];
 // Weapons neutral 2
 menu_TK_GUE_Warlord_EP1 = [
-	[["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
+	[["Attachments",693],["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
 	[],
 	"neutral"
 ];
@@ -152,7 +152,7 @@ menu_GUE_Soldier_2 = [
 ];
 // Neutral Building/Parts
 menu_TK_GUE_Soldier_5_EP1 = [
-	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
+	[["Building Supplies",662],["Tools",663],["Vehicle Parts",664]],
 	[],
 	"neutral"
 ];
@@ -182,13 +182,13 @@ menu_Citizen3_EP1 = [
 ];
 // Friendly Building/parts 2
 menu_ibr_lingorman6 = [
-	[["Building Supplies",678],["Toolbelt Items",679],["Vehicle Parts",677]],
+	[["Building Supplies",678],["Tools",679],["Vehicle Parts",677]],
 	[],
 	"friendly"
 ];
 // Friendly Building/Parts 3
 menu_ibr_lingorman6s = [
-	[["Building Supplies",680],["Toolbelt Items",681],["Vehicle Parts",682]],
+	[["Building Supplies",680],["Tools",681],["Vehicle Parts",682]],
 	[],
 	"friendly"
 ];

@@ -27,7 +27,9 @@ TraderDialogLoadItemList = {
 	ctrlSetText [TraderDialogSellPrice, ""];
 
 	_cfgTraderCategory = missionConfigFile >> "CfgTraderCategory" >> (format["Category_%1",_trader_id]);	
-
+	if (isNumber (_cfgTraderCategory >> "duplicate")) then {
+		_cfgTraderCategory = missionConfigFile >> "CfgTraderCategory" >> (format["Category_%1",getNumber (_cfgTraderCategory >> "duplicate")]);
+	};
 	PVDZE_plr_TradeMenuResult = [];
 	
 	for "_i" from 0 to ((count _cfgTraderCategory) - 1) do {

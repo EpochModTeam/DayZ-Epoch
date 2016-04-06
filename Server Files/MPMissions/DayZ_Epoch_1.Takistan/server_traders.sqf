@@ -2,13 +2,13 @@
 serverTraders = ["Functionary1","RU_Profiteer3","Profiteer1","RU_Sportswoman5","TK_CIV_Takistani05_EP1","Dr_Annie_Baker_EP1","Woodlander2","TK_CIV_Takistani03_EP1","TK_CIV_Takistani06_EP1","TK_CIV_Takistani04_EP1","TK_CIV_Woman03_EP1","TK_CIV_Woman02_EP1","RU_Profiteer2","TK_CIV_Takistani02_EP1","RU_Damsel4","RU_Woodlander3","RU_Citizen4","RU_Pilot","TK_GUE_Soldier_Sniper_EP1","Soldier_MG_PKM_PMC"];
 // Hero Traders
 menu_Functionary1 = [
-	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];
 // Weapons - Khush
 menu_RU_Profiteer3 = [
-	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
+	[["Attachments",693],["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
 	"friendly"
 ];
@@ -26,7 +26,7 @@ menu_RU_Sportswoman5 = [
 ];
 // Parts Trader - Khush
 menu_TK_CIV_Takistani05_EP1 = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
@@ -44,13 +44,13 @@ menu_Woodlander2 = [
 ];
 // Car Parts - Nur
 menu_TK_CIV_Takistani03_EP1 = [
-	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
+	[["Building Supplies",662],["Tools",663],["Vehicle Parts",664]],
 	[],
 	"neutral"
 ];
 // Weapons Trader - Nur
 menu_TK_CIV_Takistani06_EP1 = [
-	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
@@ -81,13 +81,13 @@ menu_RU_Profiteer2 = [
 ];
 // Black Market Vendor - South Airport
 menu_Soldier_MG_PKM_PMC = [
-	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
+	[["Attachments",693],["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];
 // Car Parts - Garm
 menu_TK_CIV_Takistani02_EP1 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
@@ -117,7 +117,7 @@ menu_RU_Pilot = [
 ];
 // Apu Nahasapeemapetilon Bandit Trader
 menu_TK_GUE_Soldier_Sniper_EP1 = [
-	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];

@@ -1,4 +1,5 @@
 class CfgTraderCategory {
+	#include "Category\Attachments.hpp"
 	#include "Category\BanditAmmunition.hpp"
 	#include "Category\BanditClothing.hpp"
 	#include "Category\BanditHelicopterArmed.hpp"

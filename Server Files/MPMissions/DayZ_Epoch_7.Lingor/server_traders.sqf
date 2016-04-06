@@ -3,7 +3,7 @@ serverTraders = ["RU_Worker1","Dr_Annie_Baker_EP1","CIV_EuroWoman01_EP1","ibr_li
 		// START PER TRADER CONFIG
 // Whiskey's Parts Shop
 menu_RU_Worker1 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
@@ -27,7 +27,7 @@ menu_ibr_lingorman2s = [
 ];
 // Axle's Repair Shop
 menu_Worker2 = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
@@ -69,7 +69,7 @@ menu_Citizen2_EP1 = [
 ];
 // Lyle's Parts
 menu_Worker1 = [
-	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
+	[["Building Supplies",662],["Tools",663],["Vehicle Parts",664]],
 	[],
 	"neutral"
 ];
@@ -93,7 +93,7 @@ menu_CIV_EuroMan02_EP1 = [
 ];
 // Joe's Weapons
 menu_CIV_EuroMan01_EP1 = [
-	[["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
+	[["Attachments",693],["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
 	[],
 	"friendly"
 ];
@@ -123,7 +123,7 @@ menu_Worker4 = [
 ];
 // Chucks Weapons
 menu_ibr_lingorman7 = [
-	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
@@ -177,12 +177,12 @@ menu_RU_Doctor = [
 ];
 // Bandit Trader
 menu_TK_CIV_Takistani04_EP1 = [
-	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
 menu_Functionary1 = [
-	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];

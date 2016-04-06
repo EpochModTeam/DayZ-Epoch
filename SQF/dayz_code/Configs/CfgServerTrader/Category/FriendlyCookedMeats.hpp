@@ -14,6 +14,11 @@ class Category_630 {
 		buy[] = {4,"ItemSilverBar"};
 		sell[] = {2,"ItemSilverBar"};
 	};
+	class FoodGoatCooked {
+		type = "trade_items";
+		buy[] = {4,"ItemSilverBar"};
+		sell[] = {2,"ItemSilverBar"};
+	};
 	class FoodmuttonCooked {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar"};
@@ -40,45 +45,7 @@ class Category_630 {
 		sell[] = {1,"ItemGoldBar"};
 	};
 };
+
 class Category_690 {
-	class FoodbaconCooked {
-		type = "trade_items";
-		buy[] = {4,"ItemSilverBar"};
-		sell[] = {2,"ItemSilverBar"};
-	};
-	class FoodbeefCooked {
-		type = "trade_items";
-		buy[] = {4,"ItemSilverBar"};
-		sell[] = {2,"ItemSilverBar"};
-	};
-	class FoodchickenCooked {
-		type = "trade_items";
-		buy[] = {4,"ItemSilverBar"};
-		sell[] = {2,"ItemSilverBar"};
-	};
-	class FoodmuttonCooked {
-		type = "trade_items";
-		buy[] = {4,"ItemSilverBar"};
-		sell[] = {2,"ItemSilverBar"};
-	};
-	class FoodrabbitCooked {
-		type = "trade_items";
-		buy[] = {2,"ItemSilverBar10oz"};
-		sell[] = {1,"ItemSilverBar10oz"};
-	};
-	class FishCookedTrout {
-		type = "trade_items";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemSilverBar10oz"};
-	};
-	class FishCookedSeaBass {
-		type = "trade_items";
-		buy[] = {3,"ItemGoldBar"};
-		sell[] = {2,"ItemSilverBar10oz"};
-	};
-	class FishCookedTuna {
-		type = "trade_items";
-		buy[] = {4,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
-	};
+	duplicate = 630;
 };

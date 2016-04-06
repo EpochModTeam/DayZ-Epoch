@@ -24,4 +24,9 @@ class Category_577 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
+	class 20Rnd_762x51_DMR {
+		type = "trade_items";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
 };

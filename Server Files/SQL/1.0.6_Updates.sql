@@ -1,4 +1,27 @@
 -- ----------------------------
+-- Add new attachments category to DB traders
+-- ----------------------------
+INSERT INTO `trader_tids` VALUES(693, 'Attachments', 176);
+INSERT INTO `Traders_DATA` VALUES(7575, '["Attachment_ACOG",1]', 250, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7576, '["Attachment_BELT",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7577, '["Attachment_CCO",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7578, '["Attachment_FL",1]', 250, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7579, '["Attachment_FL_Pist",1]', 250, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7580, '["Attachment_Ghillie",1]', 250, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7581, '["Attachment_GP25",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7582, '["Attachment_Holo",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7583, '["Attachment_Kobra",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7584, '["Attachment_M203",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7585, '["Attachment_PSO1",1]', 250, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7586, '["Attachment_SA58RIS",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7587, '["Attachment_SCOPED",1]', 250, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7588, '["Attachment_Sup9",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7589, '["Attachment_Sup545",1]', 250, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7589, '["Attachment_Sup556",1]', 250, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7589, '["Attachment_SupBizon",1]', 250, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 692, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7589, '["Attachment_SupMakarov",1]', 250, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 692, 'trade_items');
+
+-- ----------------------------
 -- ItemMatchbox_DZE was removed because it was identical to ItemMatchbox, use dayz_matchboxCount config variable for match stick count
 -- ----------------------------
 UPDATE `Traders_DATA` SET `item` = '["ItemMatchbox",1]' WHERE `item` = '["ItemMatchbox_DZE",1]';

@@ -2,7 +2,7 @@
 serverTraders = ["Tanny_PMC","Ins_Lopotev","RUS_Soldier_TL","CIV_Contractor1_BAF","RU_Farmwife4","Ins_Soldier_Sapper","Ins_Soldier_Medic","Ins_Woodlander3","TK_Soldier_Spotter_EP1","MVD_Soldier_TL","Ins_Worker2","GUE_Soldier_GL","Ins_Woodlander2","RU_Damsel4","Dr_Hladik_EP1","Soldier_TL_PMC","Soldier_GL_M16A2_PMC","Ins_Villager3","Dr_Annie_Baker_EP1","Ins_Woodlander1"];
 // Hero Vendor C
 menu_Tanny_PMC = [
-	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];
@@ -14,7 +14,7 @@ menu_Ins_Lopotev = [
 ];
 // Weapons Friendly C
 menu_RUS_Soldier_TL = [
-	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
+	[["Attachments",693],["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
 	"neutral"
 ];
@@ -32,7 +32,7 @@ menu_RU_Farmwife4 = [
 ];
 // Weapons neutral C
 menu_Ins_Soldier_Sapper = [
-	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
@@ -44,13 +44,13 @@ menu_Ins_Soldier_Medic = [
 ];
 // Neutral Building/Parts C
 menu_Ins_Woodlander3 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
 // Bandit Trader C
 menu_TK_Soldier_Spotter_EP1 = [
-	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
@@ -68,13 +68,13 @@ menu_Ins_Worker2 = [
 ];
 // Black Market Vendor C
 menu_GUE_Soldier_GL = [
-	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
+	[["Attachments",693],["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];
 // Friendly Building/Parts C
 menu_Ins_Woodlander2 = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"neutral"
 ];
