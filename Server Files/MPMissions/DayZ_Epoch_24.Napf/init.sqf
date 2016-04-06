@@ -47,6 +47,7 @@ enableSentences false;
 dayz_MapArea = 18000; // Distance from center of map to out of bounds line
 dayz_paraSpawn = false; // Halo spawn
 DZE_BuildOnRoads = false; // Allow building on roads
+DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic
 DZE_GodModeBase = false; // Make player built base objects indestructible
 DZE_requireplot = 1; // Require a plot pole to build  0 = Off, 1 = On
 DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.

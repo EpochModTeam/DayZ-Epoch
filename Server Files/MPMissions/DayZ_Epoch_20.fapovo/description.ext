@@ -30,3 +30,4 @@ diagRadio = 1;
 diagHit = 1;
 
 #include "\z\addons\dayz_code\gui\description.hpp"
+#include "\z\addons\dayz_code\Configs\CfgServerTrader\cfgServerTrader.hpp"
