@@ -66,6 +66,7 @@ class bulk_empty: bulk {
 
 class bulk_ItemSodaCoke: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_SODACOKE_HALF;
+	weight = 6;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -84,6 +85,7 @@ class bulk_ItemSodaCoke: bulk {
 };
 class bulk_ItemSodaCokeFull: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_SODACOKE_FULL;
+	weight = 7;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -95,6 +97,7 @@ class bulk_ItemSodaCokeFull: bulk {
 
 class bulk_ItemSodaPepsi: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_SODAPEPSI_HALF;
+	weight = 6;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -113,6 +116,7 @@ class bulk_ItemSodaPepsi: bulk {
 };
 class bulk_ItemSodaPepsiFull: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_SODAPEPSI_FULL;
+	weight = 7;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -124,6 +128,7 @@ class bulk_ItemSodaPepsiFull: bulk {
 
 class bulk_FoodbaconCooked: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_BACON_HALF;
+	weight = 5;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -142,6 +147,7 @@ class bulk_FoodbaconCooked: bulk {
 };
 class bulk_FoodbaconCookedFull: bulk {
 	descriptionshort = $STR_EPOCH_BULK_DESC_BACON_FULL;
+	weight = 5;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -154,6 +160,7 @@ class bulk_FoodbaconCookedFull: bulk {
 // Ammo
 class bulk_17Rnd_9x19_glock17: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_G17;
+	weight = 17;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -164,6 +171,7 @@ class bulk_17Rnd_9x19_glock17: bulk {
 };
 class bulk_15Rnd_9x19_M9SD: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_M9SD;
+	weight = 17;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -174,6 +182,7 @@ class bulk_15Rnd_9x19_M9SD: bulk {
 };
 class bulk_30Rnd_9x19_MP5SD: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_MP5SD;
+	weight = 18;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -184,6 +193,7 @@ class bulk_30Rnd_9x19_MP5SD: bulk {
 };
 class bulk_30Rnd_556x45_StanagSD: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_STANAGSD;
+	weight = 20;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;
@@ -195,6 +205,7 @@ class bulk_30Rnd_556x45_StanagSD: bulk {
 
 class bulk_ItemSandbag: bulk {
 	descriptionShort = $STR_EPOCH_BULK_DESC_SANDBAG;
+	weight = 60;
 	class ItemActions {
 		class CreateMags {
 			text = $STR_EPOCH_ACTIONS_OPEN;

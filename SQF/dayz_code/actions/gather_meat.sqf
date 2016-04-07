@@ -13,7 +13,7 @@ player removeAction s_player_butcher;
 s_player_butcher = -1;
 
 _PlayerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 10]) > 1;
-if (_PlayerNear) exitWith {cutText [localize "str_pickup_limit_5", "PLAIN DOWN"] DZE_ActionInProgress = false;};
+if (_PlayerNear) exitWith {cutText [localize "str_pickup_limit_5", "PLAIN DOWN"]; DZE_ActionInProgress = false;};
 
 //Count how many active tools the player has
 {

@@ -43,7 +43,7 @@ class SA58_RIS_DZ : SA58_DZ
 	};
 };
 
-class SA58_RIS_FL_FZ : SA58_RIS_DZ
+class SA58_RIS_FL_DZ : SA58_RIS_DZ
 {
 	model = "z\addons\dayz_communityweapons\sa58\sa58_ris_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\sa58\data\w_sa58_ris_fl_ca.paa";
