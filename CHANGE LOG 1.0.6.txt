@@ -65,6 +65,7 @@
 		- usecMorphine --> PVCDZ_hlt_Morphine
 		- usecPainK --> PVCDZ_hlt_PainK
 		- usecTransfuse --> PVCDZ_hlt_Transfuse
+[NEW] Config variable dayz_townGenerator can enable vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus.
 [NEW] RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] DB Backup script. @RimBlock
