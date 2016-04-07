@@ -25,10 +25,17 @@ shotgunsingleshot[] = {
 	//{Loot_WEAPON,		1,		RedRyder},
 	{Loot_WEAPON,		1,		M1014_DZ} //M1014
 };
+Chainsaws[] = {
+	{Loot_WEAPON,		1,		ChainSaw},
+	{Loot_WEAPON,		1,		ChainSawB},
+	{Loot_WEAPON,		1,		ChainSawG},
+	{Loot_WEAPON,		1,		ChainSawP},
+	{Loot_WEAPON,		1,		ChainSawR}
+};
 farmweapons[] = {
 	{Loot_GROUP,		5,		shotgunsingleshot},
 	{Loot_WEAPON,		2,		CZ550_DZ}, //huntingrifle
-	{Loot_WEAPON,		0.3,	Chainsaw},
+	{Loot_GROUP,		0.3,	Chainsaws},
 	//{Loot_WEAPON,		2,		RedRyder},
 	{Loot_WEAPON,		3,		Mosin_DZ}
 };
