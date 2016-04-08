@@ -103,5 +103,13 @@ if (!(isNull (findDisplay 106))) then {
 			(_display displayCtrl (_imageIDCs select _i)) ctrlShow false;
 			(_display displayCtrl (_valueIDCs select _i)) ctrlShow false;
 		};
+		if (isNull _object) then {
+			while {!(isNull (findDisplay 106))} do {
+				R3F_Weight = call R3F_WEIGHT_FNCT_GetWeight;
+				_control = _display displayCtrl 156;
+				_control ctrlSetText format[localize "STR_R3F_WEIGHT_InGearBox",R3F_Weight];
+				uiSleep 1;
+			};
+		};
 	};
 };

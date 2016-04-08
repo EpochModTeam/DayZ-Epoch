@@ -13773,13 +13773,13 @@
 			<Czech>Opustili jste %1</Czech>
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_InGearBox">
-			<English>%1 | Weight carried : %2 lb</English>
-			<German>%1 | Getragenes Gewicht : %2 Kg</German>
-			<Russian>%1 | Переносимый вес : %2 Кг</Russian>
-			<Spanish>%1 | Weight carried : %2 Kg</Spanish>
-			<Dutch>%1 | Dragend gewicht : %2 Kg</Dutch>
-			<French>%1 | Poids transporté : %2 Kg</French>
-			<Czech>%1 | Nesená váha : %2 Kg</Czech>
+			<English>Weight carried : %1 lb</English>
+			<German>Getragenes Gewicht : %1 Kg</German>
+			<Russian>Переносимый вес : %1 Кг</Russian>
+			<Spanish>Weight carried : %1 Kg</Spanish>
+			<Dutch>Dragend gewicht : %1 Kg</Dutch>
+			<French>Poids transporté : %1 Kg</French>
+			<Czech>Nesená váha : %1 Kg</Czech>
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_English">
 			<English>lb</English>
