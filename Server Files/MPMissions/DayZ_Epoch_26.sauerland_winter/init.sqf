@@ -55,7 +55,7 @@ DZE_StaticConstructionCount = 0; // Steps required to build. If greater than 0 t
 DZE_GodModeBase = false; // Make player built base objects indestructible
 DZE_requireplot = 1; // Require a plot pole to build  0 = Off, 1 = On
 DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.
-DZE_BuildingLimit = 200; // Max number of built objects allowed in DZE_PlotPole radius
+DZE_BuildingLimit = 150; // Max number of built objects allowed in DZE_PlotPole radius
 DZE_SelfTransfuse = false; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,15,300]; // [blood amount given, infection chance %, cooldown in seconds]
 DZE_UseBloodTypes = false; //Enable blood type system and disable classic bloodbags
