@@ -208,7 +208,7 @@ dayz_reseed = {
 };
 
 dze_diag_fps = {
-	if (DZE_DiagVerbose) then {
+	if (DZE_DiagObjects) then {
 		diag_log format["SERVER FPS: %1  PLAYERS: %2  OBJECTS: %3",diag_fps,playersNumber west,count (allMissionObjects "")];
 	} else {
 		diag_log format["SERVER FPS: %1  PLAYERS: %2",diag_fps,playersNumber west];

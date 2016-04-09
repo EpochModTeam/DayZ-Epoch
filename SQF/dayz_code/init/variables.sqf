@@ -376,18 +376,6 @@ dayz_traps = [];
 dayz_traps_active = [];
 dayz_traps_trigger = [];
 
-//Remove
-if(isNil "dayz_ForcefullmoonNights") then {
-    dayz_ForcefullmoonNights = false; //force full moon nights.
-};
-if(isNil "dayz_bleedingeffect") then { 
-	dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-};
-
-if(isNil "dayz_temperature_override") then { 
-	dayz_temperature_override = false;
-};
-
 //Settings Not under dayz_settings
 if(isNil "dayz_attackRange") then { 
 	dayz_attackRange = 3;
@@ -490,7 +478,7 @@ DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP
 DZE_Lock_Door = "";
 DZE_HeliAllowTowFrom = ["CH_47F_EP1_DZE","CH_47F_EP1_DZ","CH_47F_BAF","CH_47F_EP1","BAF_Merlin_DZE","CH53_DZE"];
 DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
-DZE_REPLACE_WEAPONS = [["Crossbow","DMR","M14_EP1","SVD","SVD_CAMO"],["Crossbow_DZ","DMR_DZ","M14_DZ","SVD_DZ","SVD_CAMO_DZ"]];
+DZE_REPLACE_WEAPONS = [["Crossbow","DMR","M14_EP1","SVD","SVD_CAMO"],["Crossbow_DZ","DMR_DZ","M14_CCO_DZ","SVD_DZ","SVD_Gh_DZ"]];
 DZE_LockableStorage = ["VaultStorage","VaultStorageLocked","LockboxStorageLocked","LockboxStorage"];
 DZE_LockedStorage = ["VaultStorageLocked","LockboxStorageLocked"];
 DZE_UnLockedStorage = ["VaultStorage","LockboxStorage"];
@@ -513,26 +501,18 @@ s_player_combi = [];
 s_player_lockunlock = [];
 s_player_lockUnlockInside = [];
 s_player_parts = [];
-if(isNil "DayZ_UseSteamID") then {DayZ_UseSteamID = true;};
-if(isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
 if(isNil "DZE_GodModeBase") then {DZE_GodModeBase = false;};
-if(isNil "DZE_TRADER_SPAWNMODE") then {DZE_TRADER_SPAWNMODE = false;};
 if(isNil "dayz_paraSpawn") then {dayz_paraSpawn = false;};
-if(isNil "DZE_BuildingLimit") then {DZE_BuildingLimit = 150;};
+if(isNil "DZE_BuildingLimit") then {DZE_BuildingLimit = 200;};
 if(isNil "DZE_BuildOnRoads") then {DZE_BuildOnRoads = false;};
+if(isNil "DZE_ConfigTrader") then {DZE_ConfigTrader = true;};
 if(isNil "DZE_MissionLootTable") then {DZE_MissionLootTable = false;};
-if(isNil "DZE_ConfigTrader") then {DZE_ConfigTrader = false;};
-if(isNil "DZE_DamageBeforeMaint") then {DZE_DamageBeforeMaint = 0.09;};
-if(isNil "DZE_StaticConstructionCount") then {DZE_StaticConstructionCount = 0;};
-if(isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000, 15, 300];};
-if(isNil "DZE_modularBuild") then {DZE_modularBuild = false;};
-if(isNil "DZE_snapExtraRange") then {DZE_snapExtraRange = 0;};
-if(isNil "DZE_RestrictSkins") then {DZE_RestrictSkins = [];};
-if(isNil "DZE_BackpackAntiTheft") then {DZE_BackpackAntiTheft = false;};
+if(isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
+if(isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15,300];};
 if(isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
-if(isNil "DZE_maintainRange") then {DZE_maintainRange = ((DZE_PlotPole select 0)+20);};
-if(isNil "DZE_UseBloodTypes") then {DZE_UseBloodTypes = false;};
+DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if(isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
+if(isNil "DZE_UseBloodTypes") then {DZE_UseBloodTypes = false;};
 if ((toLower worldName) in ["napf","sauerland","tavi"]) then {
 	dayz_minpos = if ((toLower worldName) == "tavi") then {-26000} else {-1000};
 	dayz_maxpos = 26000;
@@ -567,15 +547,13 @@ if (isServer) then {
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 	if(isNil "EpochUseEvents") then {EpochUseEvents = false;};
 	if(isNil "EpochEvents") then {EpochEvents = [];};
-	if(isNil "DZE_vehicleAmmo") then {DZE_vehicleAmmo = 0;};
 	if(isNil "dayz_MapArea") then {dayz_MapArea = 10000;};
 	if(isNil "DynamicVehicleArea") then {DynamicVehicleArea = dayz_MapArea / 2;};
 	if(isNil "HeliCrashArea") then {HeliCrashArea = dayz_MapArea / 2;};
-	if(isNil "DZE_DiagFpsSlow") then {DZE_DiagFpsSlow = false;}; // Log server FPS + player count every 5 minutes
-	if(isNil "DZE_DiagFpsFast") then {DZE_DiagFpsFast = false;}; // Log server FPS + player count every 2 minutes
-	if(isNil "DZE_DiagVerbose") then {DZE_DiagVerbose = false;}; // Also log allMissionObjects count (very intensive)
 	if(isNil "MaxDynamicDebris") then {MaxDynamicDebris = 100;};
 	if(isNil "MaxVehicleLimit") then {MaxVehicleLimit = 50;};
+	if (isNil "spawnArea") then {spawnArea = 1400;};
+	if (isNil "spawnShoremode") then {spawnShoremode = 1;};
 };
 
 if (!isDedicated) then {
@@ -696,7 +674,9 @@ if (!isDedicated) then {
 	Dayz_freefall = [ time, 0, 0.1 ];
 	
 	// EPOCH ADDITIONS
-	if(isNil "DZE_requireplot") then {DZE_requireplot = 1;};
+	if (isNil "DZE_BackpackAntiTheft") then {DZE_BackpackAntiTheft = false;};
+	if (isNil "DZE_requireplot") then {DZE_requireplot = 1;};
+	if (isNil "DZE_StaticConstructionCount") then {DZE_StaticConstructionCount = 0;};
 	autoRunActive = 0;
 	dayz_combat = 0;
 	DZE_ActionInProgress = false;

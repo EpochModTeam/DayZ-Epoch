@@ -68,7 +68,6 @@ if (count AllowedVehiclesList == 0) then {
 	
 		clearWeaponCargoGlobal  _veh;
 		clearMagazineCargoGlobal  _veh;
-		// _veh setVehicleAmmo DZE_vehicleAmmo;
 
 		// Add 0-3 loots to vehicle using random loot groups
 		_num = floor(random 4);

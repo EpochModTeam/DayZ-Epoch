@@ -172,10 +172,6 @@ if (_randomSpot) then {
 	private ["_counter","_position","_isNear","_isZero","_mkr"];
 	if (!isDedicated) then {endLoadingScreen;};
 	_IslandMap = if (worldName in ["dzhg","panthera2","Sara","Utes","Dingor","namalsk","isladuala","Tavi","dayznogova","tasmania2010"]) then {true} else {false};
-	
-	//Spawn modify via mission init.sqf
-	if (isNil "spawnArea") then {spawnArea = 1400;};
-	if (isNil "spawnShoremode") then {spawnShoremode = 1;};
 
 	//spawn into random
 	_findSpot = true;

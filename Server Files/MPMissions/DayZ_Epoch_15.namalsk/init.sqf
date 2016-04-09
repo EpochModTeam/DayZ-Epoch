@@ -14,6 +14,7 @@ dayz_enableRules = true; //Enables a nice little news/rules feed on player login
 dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
 dayz_POIs = true;
 dayz_infectiousWaterholes = true;
+dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 
 //DayZMod presets
 dayz_presets = "Custom"; //"Custom","Classic","Vanilla","Elite"
@@ -21,16 +22,15 @@ dayz_presets = "Custom"; //"Custom","Classic","Vanilla","Elite"
 //Only need to edit if you are running a custom server.
 if (dayz_presets == "Custom") then {
 	dayz_enableGhosting = false; //Enable disable the ghosting system.
-	dayz_ghostTimer = 30; //Sets how long in seconds a player must be disconnected before being able to login again.
+	dayz_ghostTimer = 60; //Sets how long in seconds a player must be disconnected before being able to login again.
 	dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
-	dayz_spawncarepkgs_clutterCutter = 2; //0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
-	dayz_spawnCrashSite_clutterCutter = 2;	// heli crash options 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
-	dayz_spawnInfectedSite_clutterCutter = 2; // infected base spawn 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass 
+	dayz_spawncarepkgs_clutterCutter = 0; //0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
+	dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
+	dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass 
 	dayz_bleedingeffect = 3; //1 = blood on the ground, 2 = partical effect, 3 = both
-	dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 	dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked
-	dayz_nutritionValuesSystem = false; //Enables nutrition system
-	dayz_classicBloodBagSystem = false; // removes all blood type bloodbags (not implmented yet)
+	dayz_nutritionValuesSystem = true; //Enables nutrition system
+	dayz_classicBloodBagSystem = true; // removes all blood type bloodbags (not implmented yet)
 };
 
 //Temp settings
@@ -46,8 +46,12 @@ enableSentences false;
 // See the above file for a full list including descriptions and default values
 dayz_MapArea = 8000; // Distance from center of map to out of bounds line
 dayz_paraSpawn = false; // Halo spawn
+DZE_BackpackAntiTheft = false; // Prevent stealing from backpacks in trader zones
 DZE_BuildOnRoads = false; // Allow building on roads
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic
+DZE_MissionLootTable = false; // Use custom CfgLoot defined in mission file
+DZE_slowZombies = false; // Force zombies to always walk
+DZE_StaticConstructionCount = 0; // Steps required to build. If greater than 0 this applies to all objects.
 DZE_GodModeBase = false; // Make player built base objects indestructible
 DZE_requireplot = 1; // Require a plot pole to build  0 = Off, 1 = On
 DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.
