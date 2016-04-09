@@ -140,22 +140,21 @@ class CfgActions {
 "Take"
 */
 };
-
-class CfgLoadingTexts {
-	titlesDefault[] = {""};
-};
-
 class CfgAISkill {
 	aimingaccuracy[] = {0, 0, 1, 1};
 	aimingshake[] = {0, 0, 1, 1};
 	aimingspeed[] = {0, 0, 1, 1};
 	commanding[] = {0, 0, 1, 1};
-	courage[] = {0, 1, 1, 1};
-	endurance[] = {0, 0, 1, 1};
-	general[] = {0, 0, 1, 1};
+	courage[] = {0, 5, 10, 10};
+	endurance[] = {0, 0, 1, 0.1};
+	general[] = {0, 0, 1, 0.1};
 	reloadspeed[] = {0, 0, 1, 1};
 	spotdistance[] = {0, 0, 1, 0.6};
-	spottime[] = {0, 0, 1, 1};
+	spottime[] = {0, 0, 1, 0.1};
+};
+
+class CfgLoadingTexts {
+	titlesDefault[] = {""};
 };
 
 class CfgInGameUI
@@ -166,8 +165,8 @@ class CfgInGameUI
         cueFriendlyColor[] = {0,0,0,0};
         cueEnemyColor[] = {0,0,0,0};
     };
-
-	class IslandMap
+	
+    class IslandMap
     {
         colorFriendly[] = {0,0.5,0,0}; //{0,0.5,0,1}; 
         colorEnemy[] = {0.5,0,0,0};    //{0.5,0,0,1};	  
@@ -194,6 +193,7 @@ class CfgInGameUI
         colorGrid[] = {0.05,0.1,0,0.6};
         colorGridMap[] = {0.05,0.1,0,0.4};
     };
+    	
 	
 	class MPTable
 	{
@@ -276,8 +276,7 @@ class CfgVoice {
 	};
 };
 
-class CfgIdentities
-{
+class CfgIdentities {
 	class PZombie1
 	{
 		name = "PZombie";
@@ -318,6 +317,7 @@ class CfgIdentities
 		pitch = 1;
 	};
 };
+
 class CfgMissions
 {
 	 class Cutscenes
@@ -334,12 +334,11 @@ class CfgSurvival {
 		class Default {
 			RandomMagazines = 3;
 			//weapons[] = {"Makarov"};
-			//magazines[] = {"ItemBandage","ItemPainkiller"};
-			weapons[] = {"ItemFlashlight"};
-			GuaranteedMagazines[] = {"ItemBandage","ItemPainkiller"};
-			RandomPossibilitieMagazines[] = {"ItemBandage","ItemAntibiotic","ItemPainkiller","itemMorphine"};
+			//GuaranteedMagazines[] = {"ItemBandage","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","HandRoadFlare"};
+			GuaranteedMagazines[] = {"ItemBandage","HandRoadFlare"};
+			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller"};
 			backpackWeapon = "";
-			backpack = "DZ_Patrol_Pack_EP1";
+			//backpack = "DZ_Patrol_Pack_EP1";
 		};
 	};
 	class Meat {
@@ -351,23 +350,23 @@ class CfgSurvival {
 			yield = 6;
 			rawfoodtype = "FoodbeefRaw";
 		};
-		class Cow01: Cow{};
-		class Cow02: Cow{};
-		class Cow03: Cow{};
-		class Cow04: Cow{};
-		class Cow01_EP1: Cow{};
+		class Cow01: Cow {};
+		class Cow02: Cow {};
+		class Cow03: Cow {};
+		class Cow04: Cow {};
+		class Cow01_EP1: Cow {};
 		class Goat: Default {
 			yield = 4;
 			rawfoodtype = "FoodgoatRaw";
 		};
-		class Goat01_EP1: Goat{};
-		class Goat02_EP1: Goat{};
+		class Goat01_EP1: Goat {};
+		class Goat02_EP1: Goat {};
 		class Sheep: Default {
 			yield = 4;
 			rawfoodtype = "FoodmuttonRaw";
 		};
-		class Sheep01_EP1: Sheep{};
-		class Sheep02_EP1: Sheep{};
+		class Sheep01_EP1: Sheep {};
+		class Sheep02_EP1: Sheep {};
 		class WildBoar: Default {
 			yield = 4;
 			rawfoodtype = "FoodbaconRaw";
@@ -376,14 +375,14 @@ class CfgSurvival {
 			yield = 2;
 			rawfoodtype = "FoodchickenRaw";
 		};
-		class Cock: Hen{};
+		class Cock: Hen {};
 		class DZ_Fin: Default {
 			yield = 0;
 			rawfoodtype = "FoodSteakRaw";
 		};
-		class DZ_Pastor: DZ_Fin{};
+		class DZ_Pastor: DZ_Fin {};
 		class Rabbit: Default {
-			yield = 1;
+			yield = 2;
 			rawfoodtype = "FoodrabbitRaw";
 		};
 
@@ -541,7 +540,6 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Soldier_Bodyguard_AA12_PMC_DZ";
 		};
-
 		class Skin_FR_OHara_DZ: Default
 		{
 			sex = "male";
@@ -581,10 +579,7 @@ class CfgSurvival {
 		class Skin_TK_INS_Warlord_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "TK_INS_Warlord_EP1_DZ";
-		};
-
-
-		
+		};	
 		class Skin_TK_Special_Forces_MG_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "TK_Special_Forces_MG_EP1_DZ";

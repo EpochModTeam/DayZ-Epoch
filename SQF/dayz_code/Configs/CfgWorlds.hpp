@@ -4,7 +4,7 @@ class Grid;	// External class reference
 class DefaultLighting;	// External class reference
 class DayLightingRainy;	// External class reference
 class Weather;	// External class reference
-class Overcast {
+class Overcast { // increased wave size during storms
 	class Weather1;
 	class Weather2;
 	class Weather3;
