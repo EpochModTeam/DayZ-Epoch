@@ -44,6 +44,11 @@ enableSentences false;
 // EPOCH CONFIG VARIABLES START //
 #include "\z\addons\dayz_code\configVariables.sqf" // Don't remove this line
 // See the above file for a full list including descriptions and default values
+// Uncomment the lines below to change the default loadout
+//DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
+//DefaultWeapons = ["Makarov_DZ","ItemFlashlight"];
+//DefaultBackpack = "DZ_Patrol_Pack_EP1";
+//DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["PDW_DZ","30Rnd_9x19_UZI"];
 dayz_MapArea = 7000; // Distance from center of map to out of bounds line
 dayz_paraSpawn = false; // Halo spawn
 DZE_BackpackAntiTheft = false; // Prevent stealing from backpacks in trader zones
