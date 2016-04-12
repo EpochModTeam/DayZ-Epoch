@@ -1,5 +1,5 @@
 private ["_part","_color","_vehicle","_PlayerNear","_hitpoints","_cursorTarget","_isATV","_is6WheelType","_HasNoGlassKind",
-"_6WheelTypeArray","_NoGlassArray","_NoExtraWheelsArray","_RemovedPartsArray","_damage","_cmpt","_configVeh","_damagePercent","_string","_handle","_cancel"];
+"_6WheelTypeArray","_NoGlassArray","_NoExtraWheelsArray","_RemovedPartsArray","_damage","_cmpt","_configVeh","_damagePercent","_string","_handle","_cancel","_type"];
 
 _vehicle = _this select 3;
 {dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
@@ -11,8 +11,10 @@ dayz_myCursorTarget = _vehicle;
 _hitpoints = _vehicle call vehicle_getHitpoints;
 
 _cursorTarget = cursorTarget;
-_isATV = typeof _cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
-_is6WheelType = typeOf _cursorTarget in ["V3S_Civ","Ural_TK_CIV_EP1"];
+_type = typeOf _cursorTarget;
+_isATV = _type in ["ATV_US_EP1","ATV_CZ_EP1"];
+_is6WheelType = false;
+{if (_type isKindOf _x) exitWith {_is6WheelType = true;};} count ["Kamaz_Base","MTVR","Ural_Base","Ural_Base_withTurret","V3S_Base"];
 _HasNoGlassKind = (_cursorTarget isKindOf "Motorcycle") or (_cursorTarget isKindOf "Bicycle");
 
 _6WheelTypeArray = ["HitLMWheel","HitRMWheel"];
