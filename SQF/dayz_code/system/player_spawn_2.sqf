@@ -113,12 +113,7 @@ while {1 == 1} do {
 		_timer150 = diag_ticktime;
 	};
 	
-	if ((diag_tickTime - _timer) > 300) then {
-
-	//Other Counters
-		dayz_currentGlobalAnimals = count entities "CAAnimalBase";
-		dayz_currentGlobalZombies = count entities "zZombie_Base";
-		
+	if ((diag_tickTime - _timer) > 300) then {	
 	//Animals
 		//[] call player_animalCheck;
 		
@@ -423,6 +418,9 @@ while {1 == 1} do {
 	
 	if ((diag_tickTime - _timer1) > 10) then {
 		_position = getPosATL player;
+			//Other Counters
+		dayz_currentGlobalAnimals = count entities "CAAnimalBase";
+		dayz_currentGlobalZombies = count entities "zZombie_Base";
 		_zeds = _position nearEntities ["zZombie_Base",200];
 		dayz_spawnZombies = 0;
 		dayz_CurrentNearByZombies = 0;

@@ -18,6 +18,8 @@ _str_left_text = "
 
 _1 = name player;
 
+dayz_currentGlobalZombies = count entities "zZombie_Base";
+
 /*
 if (player hasWeapon "ItemWatch") then
 {
@@ -280,7 +282,7 @@ _disabledTemperature = switch (dayz_temperature_override) do {
 					(_spawnselection),
 					(round(dayz_temperatur)),
 					(player getVariable['humanity', 0]),
-					({alive _x} count entities "zZombie_Base"),
+					(dayz_currentGlobalZombies),
 					(dayz_Survived),
 					(_survivors),
 					(round diag_fps),

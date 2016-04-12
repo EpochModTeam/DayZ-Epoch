@@ -77,6 +77,8 @@ r_player_unconsciousInputDisabled = false;
 
 [nil, player, rSWITCHMOVE, "AinjPpneMstpSnonWnonDnon"] call RE;
 player SWITCHMOVE "AinjPpneMstpSnonWnonDnon";
+PVDZ_plr_SwitchMove = [player,"AinjPpneMstpSnonWnonDnon"];
+publicVariableServer "PVDZ_plr_SwitchMove"; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
 
 player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
 

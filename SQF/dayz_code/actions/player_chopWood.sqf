@@ -134,7 +134,7 @@ if (_woodCutting) then {
             };
             _isOk = false;
             _proceed = true;
-            uisleep 1;
+            uiSleep 1;
         };
         cutText [format [localize "str_player_24_progress", _counter,_countOut], "PLAIN DOWN"];
     };

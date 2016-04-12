@@ -16,7 +16,7 @@ class ItemAntibiotic : ItemAntibiotic_base
 	
 	class medical
 	{
-		chance = 0.50;
+		chance = 1.10; //100%
 		amount = -1;
 		qtyRemaining = "ItemAntibiotic6";
 	};

@@ -8,6 +8,10 @@ _sleepArray = ["aidlppnemstpsnonwnondnon_sleepc_laydown","aidlppnemstpsnonwnondn
 //not in a vehicle
 //_playArray = _sleepArray call BIS_fnc_selectRandom;
 player playmove "AidlPpneMstpSnonWnonDnon_SleepC_sleep";
+
+if (r_action) exitwith {};
+
+r_action = true;
 	
 r_interrupt = false;
 _animState = animationState player;
@@ -95,6 +99,8 @@ if (r_interrupt) then {
 	player playmoveNow "";
 	player playActionNow "stop";
 };
+
+r_action = false;
 
 //Removed due to player sync returning []
 //PVDZ_plr_Save = [player,nil,true,dayz_playerAchievements];

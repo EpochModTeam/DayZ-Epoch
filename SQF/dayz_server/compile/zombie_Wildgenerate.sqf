@@ -15,7 +15,7 @@ while {_counter < _amount} do {
 	//diag_log ("Spawned: " + _type);
 	//_radius = 0;
 	_method = "CAN_COLLIDE";
-		
+	
 	_position = [dayz_centerMarker,1,6500,1] call fn_selectRandomLocation;
 	
 	//Create Zed
