@@ -7,7 +7,7 @@ if (local _animalbody) then {
 		_animalbody addMagazine _rawfoodtype;
 	};
 		
-	if (typeOf _animalbody == "Hen") then {
+	if (typeOf _animalbody in ["Cock","Hen"]) then {
 		_amount = (floor (random 4)) + 2;
 		for "_x" from 1 to _amount do {
 			_animalbody addMagazine "equip_feathers";

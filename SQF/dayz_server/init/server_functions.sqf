@@ -167,16 +167,18 @@ server_getDiff2 = {
 	_result
 };
 
+// 1.8.7 dayz_objectUID2 seems to generate keys that are too long for Epoch hive. Keep old method for now.
 dayz_objectUID2 = {
-	private ["_p","_d","_key"];
-	_d = _this select 0;
-	_p = _this select 1;
-	_key = format ["%1%2%3%4", 
-		abs round(10 * (_p select 0)), 
-		abs round(10 * (_p select 1)), 
-		abs round(100 * (_p select 2)), 
-		abs round((_d * diag_tickTime) % 1000)
-	];
+	private["_position","_dir","_key"];
+	_dir = _this select 0;
+	_key = "";
+	_position = _this select 1;
+	{
+		_x = _x * 10;
+		if (_x < 0) then { _x = _x * -10 };
+		_key = _key + str(round(_x));
+	} count _position;
+	_key = _key + str(round(_dir));
 	// Make sure the generated key is not a duplicate
 	while {true} do {
 		if !(_key in currentObjectUIDs) exitWith {currentObjectUIDs set [count currentObjectUIDs,_key];};

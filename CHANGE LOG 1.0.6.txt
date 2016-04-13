@@ -1,4 +1,4 @@
-[NEW] Fully updated to DayZ 1.8.7 code base @icomrade @ebaydayz
+[NEW] Fully updated to DayZ 1.8.7 base @icomrade @ebaydayz
 [NEW] 1.8.7 attachments system, community weapons and buildable base objects
 [NEW] 1.8.7 journal and crafting menu are now functional (default 'J' key)
 [NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
@@ -30,7 +30,7 @@
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
 [CHANGED] New loot table format is incompatible with old loot tables. Admins see CfgLoot\README.txt
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
-[CHANGED] AmmoBoxSmall_556/762 have been replaced with DZ_AmmoBoxUS/RU/EU/CZ
+[CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
 [CHANGED] Tweaked fuel capacity variables for vehicles. @RimBlock

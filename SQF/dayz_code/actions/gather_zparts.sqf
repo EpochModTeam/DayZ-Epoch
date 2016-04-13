@@ -5,7 +5,7 @@ DZE_ActionInProgress = true;
 _item = _this select 3;
 _type = typeOf _item;
 _hasHarvested = _item getVariable ["meatHarvested",false];
-_config = configFile >> "CfgSurvival" >> "Meat" >> _type;
+//_config = configFile >> "CfgSurvival" >> "Meat" >> _type;
 _knifeArray = [];
 player removeAction s_player_butcher;
 s_player_butcher = -1;
@@ -27,7 +27,7 @@ if ((count _knifeArray > 0) && !_hasHarvested) then {
 	_activeKnife = _knifeArray call BIS_fnc_selectRandom; 
 	
 	//Get Zombie Type
-	_isListed = isClass _config;
+	//_isListed = isClass _config;
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 
 	player playActionNow "Medic";
@@ -37,11 +37,11 @@ if ((count _knifeArray > 0) && !_hasHarvested) then {
 
 	_item setVariable ["meatHarvested",true,true];
 
-	_qty = if (_isListed) then {getNumber (_config >> "yield")} else {2};
+	_qty = 2;
 	if (_activeKnife == "ItemKnifeBlunt") then { _qty = round(_qty / 2); };
 
 	if (local _item) then {
-		[_item,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
+		[_item,_qty] spawn local_gutObjectZ; //leave as spawn (sleeping in loops will work but can freeze the script)
 	} else {		
 		PVDZE_plr_GutBodyZ = [_item,_qty];	
 		publicVariable "PVDZE_plr_GutBodyZ";
