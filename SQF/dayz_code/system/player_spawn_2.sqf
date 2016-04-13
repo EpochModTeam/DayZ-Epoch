@@ -363,11 +363,11 @@ while {1 == 1} do {
 
 	_startcombattimer = player getVariable["startcombattimer", 0];
 	if (_startcombattimer == 1 || _PlayerNearby) then {
-		player setVariable["combattimeout", diag_tickTime + 30, false];
+		player setVariable["combattimeout", diag_tickTime + 30, true]; // Global used to punish combat log in server_onPlayerDisconnect
 		player setVariable["startcombattimer", 0, false];
 	} else {
 		if (_ZedsNearby) then {
-			player setVariable["combattimeout", diag_tickTime + 10, false];
+			player setVariable["combattimeout", diag_tickTime + 10, true]; // Global used to punish combat log in server_onPlayerDisconnect
 			player setVariable["startcombattimer", 0, false];
 		};
 	};
@@ -375,23 +375,24 @@ while {1 == 1} do {
 	if (toLower DZE_UI != "vanilla") then {
 		_combattimeout = player getVariable["combattimeout",0];
 		if (_combattimeout > 0) then {
-			_timeleft = _combattimeout - time;
+			_timeleft = _combattimeout - diag_tickTime;
 			if (_timeleft > 0) then {
 				//hintSilent format["In Combat: %1",round(_timeleft)];
 			} else {
 				//hintSilent "Not in Combat";
-				player setVariable["combattimeout", 0, true];
-				dayz_combat = 0;
 				_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
-				_combatcontrol = _combatdisplay displayCtrl 1307;
-				_combatcontrol ctrlShow true;
+				if (!isNil "_combatdisplay") then {
+					_combatcontrol = _combatdisplay displayCtrl 1307;
+					_combatcontrol ctrlShow true;
+				};
 			};
 		} else {
 			//hintSilent "Not in Combat";
-			dayz_combat = 0;
 			_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
-			_combatcontrol = _combatdisplay displayCtrl 1307;
-			_combatcontrol ctrlShow true;
+			if (!isNil "_combatdisplay") then {
+				_combatcontrol = _combatdisplay displayCtrl 1307;
+				_combatcontrol ctrlShow true;
+			};
 		};
 	};
 	

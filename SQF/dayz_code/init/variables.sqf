@@ -678,7 +678,6 @@ if (!isDedicated) then {
 	if (isNil "DZE_requireplot") then {DZE_requireplot = 1;};
 	if (isNil "DZE_StaticConstructionCount") then {DZE_StaticConstructionCount = 0;};
 	autoRunActive = 0;
-	dayz_combat = 0;
 	DZE_ActionInProgress = false;
 	DZE_AntiWallCounter = 0;
 	DZE_myHaloVehicle = objNull;

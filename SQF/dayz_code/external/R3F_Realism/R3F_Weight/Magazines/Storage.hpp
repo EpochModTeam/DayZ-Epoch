@@ -24,13 +24,5 @@ class ItemDesertTent
 {
 	weight = 5;
 };
-class StashSmall 
-{
-	weight = 4;
-};
-class StashMedium 
-{
-	weight = 5;
-};
 
 //lockbox weight is in cfgMagazines

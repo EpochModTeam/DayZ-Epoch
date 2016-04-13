@@ -1,0 +1,53 @@
+1.0.5.1 --> 1.0.6 Variable Name Changes:
+
+- Duplicate functions have been renamed:
+	- dayz_HungerThirst --> dayz_NutritionSystem
+	- dayz_objectUID3 --> dayz_objectUID2
+	- fnc_usec_playerBleed --> fnc_usec_playerHandleBlood
+	- object_handleServerKilled --> vehicle_handleServerKilled
+	- object_setFixServer --> fnc_veh_setFixServer 
+	- vehicle_handleDamage --> fnc_veh_handleDam
+	- vehicle_handleKilled -->  fnc_veh_handleKilled
+	
+- Duplicate global variables have been renamed:
+	- dayz_allowedObjects --> DayZ_SafeObjects
+	- dayz_CLBase --> dz_loot_groups (similar not identical)
+	- dayz_CLChances --> dz_loot_weighted (similar not identical)
+	- dayz_fullMoonNights --> dayz_ForcefullmoonNights
+	- dayz_updateObjects --> DayZ_GearedObjects
+	- DZE_CanPickup --> canPickup
+	- freeTarget --> OpenTarget
+	- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
+	
+- Duplicate public variables have been renamed:
+	- dayzPlayerLogin --> PVCDZ_plr_Login
+	- dayzPlayerLogin2 --> PVCDZ_plr_Login2
+	- norrnRaDrag --> PVDZ_drg_RaDrag
+	- norrnRaLW --> PVDZ_drg_RaLW
+	- norrnRLact --> PVDZ_drg_RLact
+	- PVDZE_obj_Delete --> PVDZ_obj_Destroy (PVDZ_obj_Delete is used for plants and blood trails)
+	- PVDZE_obj_Fire --> PVDZ_obj_Fire
+	- PVDZE_obj_Publish --> PVDZ_obj_Publish
+	- PVDZE_plr_Died --> PVDZ_plr_Death
+	- PVDZE_plr_GutBody --> PVCDZ_obj_GutBody
+	- PVDZE_plr_HideBody --> PVCDZ_obj_HideBody
+	- PVDZE_plr_HumanityChange --> PVCDZ_plr_Humanity
+	- PVDZE_plr_Login --> PVDZ_plr_Login1
+	- PVDZE_plr_Login2 --> PVDZ_plr_Login2
+	- PVDZE_plr_LoginRecord --> PVDZ_plr_LoginRecord
+	- PVDZE_plr_Save --> PVDZ_plr_Save
+	- PVDZE_plr_SetDate --> dayzSetDate
+	- PVDZE_send --> PVDZ_send
+	- PVDZE_Server_Simulation --> PVDZ_Server_Simulation
+	- PVDZE_serverStoreVar --> PVDZ_serverStoreVar
+	- PVCDZE_vehSH --> PVCDZ_veh_SH
+	- PVDZE_veh_SFix --> PVDZ_veh_SF
+	- PVDZE_veh_SFuel --> PVCDZ_veh_SetFuel
+	- PVDZE_veh_Update --> PVDZ_veh_Save
+	- usecBandage --> PVCDZ_hlt_Bandage
+	- usecBleed --> PVDZ_hlt_Bleed
+	- usecBreakLegs --> PVCDZ_plr_Legs
+	- usecEpi --> PVCDZ_hlt_Epi
+	- usecMorphine --> PVCDZ_hlt_Morphine
+	- usecPainK --> PVCDZ_hlt_PainK
+	- usecTransfuse --> PVCDZ_hlt_Transfuse

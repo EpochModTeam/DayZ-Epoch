@@ -15,7 +15,12 @@ disableSerialization;
 _foodVal = 		1 - (dayz_hunger / SleepFood);
 _thirstVal = 	1 - (dayz_thirst / SleepWater);
 _tempVal 	= 	1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));	// Normalise to [0,1]
-_combatVal =	1 - dayz_combat; // May change later to be a range of red/green to loosely indicate 'time left in combat'
+_combatVal = 1;
+_combattimeout = player getVariable["combattimeout",0];
+if (_combattimeout > 0) then {
+	_timeleft = _combattimeout - diag_tickTime;
+	_combatVal = (30 - _timeleft) / 100;
+};
 
 if (uiNamespace getVariable ["DZ_displayUI", 0] == 1) exitWith {
 	_array = [_foodVal,_thirstVal];

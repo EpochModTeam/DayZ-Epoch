@@ -100,7 +100,7 @@ while {_isOk} do {
 			r_doLoop = false;
 			_finished = true;
 		};
-		if (r_interrupt or (player getVariable["combattimeout", 0] >= time)) then {
+		if (r_interrupt or (player getVariable["combattimeout",0] >= diag_tickTime)) then {
 			r_doLoop = false;
 			_finished = false;
 		};

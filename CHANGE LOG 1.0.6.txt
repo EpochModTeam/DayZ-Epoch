@@ -1,86 +1,36 @@
 [NEW] Fully updated to DayZ 1.8.7 code base @icomrade @ebaydayz
-
-	Some notable changes include (not a full list):
-	- New loot table format is incompatible with old loot tables. See CfgLoot\README
-	- Several weapon, item and tool classnames changed. See SQL\1.0.6_Updates for a full list
-	- AmmoBoxSmall_556/762 have been replaced with DZ_AmmoBoxUS/RU/EU/CZ
-	- Status UI icons are toggleable between "vanilla","epoch","dark" set i.e. DZE_UI = "epoch"; in init.sqf
-	- Blood type system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
-	- Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
-	- Knife dulling is disabled by default. Set dayz_knifeDulling = true; in init.sqf to enable
-	- Match stick counting is disabled by default. Set dayz_matchboxCount = true; in init.sqf to enable
-	- Tool breaking is disabled by default. Set dayz_toolBreaking = true; in init.sqf to enable
-	- Water bottle breaking is disabled by default. Set dayz_waterBottleBreaking = true; in init.sqf to enable
-	- Mission.sqm and description.ext now use compact format
-	- Keyboard eventhandler updated, dayz_spaceInterupt is no longer used
-	- Optional news/rules feed on player login, set dayz_enableRules in init.sqf
-	- Weapon switch hotkeys added (1 = primary, 2 = pistol, 3 = melee)
-	- Journal is now functional for displaying stats
-	- Dupicate functions have been renamed:
-		- dayz_HungerThirst --> dayz_NutritionSystem
-		- dayz_objectUID3 --> dayz_objectUID2
-		- fnc_usec_playerBleed --> fnc_usec_playerHandleBlood
-		- object_handleServerKilled --> vehicle_handleServerKilled
-		- object_setFixServer --> fnc_veh_setFixServer 
-		- vehicle_handleDamage --> fnc_veh_handleDam
-		- vehicle_handleKilled -->  fnc_veh_handleKilled
-	- Duplicate global variables have been renamed:
-		- dayz_allowedObjects --> DayZ_SafeObjects
-		- dayz_CLBase --> dz_loot_groups (similar not identical)
-		- dayz_CLChances --> dz_loot_weighted (similar not identical)
-		- dayz_fullMoonNights --> dayz_ForcefullmoonNights
-		- dayz_updateObjects --> DayZ_GearedObjects
-		- DZE_CanPickup --> canPickup
-		- freeTarget --> OpenTarget
-		- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
-	- Duplicate public variables have been renamed:
-		- dayzPlayerLogin --> PVCDZ_plr_Login
-		- dayzPlayerLogin2 --> PVCDZ_plr_Login2
-		- norrnRaDrag --> PVDZ_drg_RaDrag
-		- norrnRaLW --> PVDZ_drg_RaLW
-		- norrnRLact --> PVDZ_drg_RLact
-		- PVDZE_obj_Delete --> PVDZ_obj_Destroy (PVDZ_obj_Delete is used for plants and blood trails)
-		- PVDZE_obj_Fire --> PVDZ_obj_Fire
-		- PVDZE_obj_Publish --> PVDZ_obj_Publish
-		- PVDZE_plr_Died --> PVDZ_plr_Death
-		- PVDZE_plr_GutBody --> PVCDZ_obj_GutBody
-		- PVDZE_plr_HideBody --> PVCDZ_obj_HideBody
-		- PVDZE_plr_HumanityChange --> PVCDZ_plr_Humanity
-		- PVDZE_plr_Login --> PVDZ_plr_Login1
-		- PVDZE_plr_Login2 --> PVDZ_plr_Login2
-		- PVDZE_plr_LoginRecord --> PVDZ_plr_LoginRecord
-		- PVDZE_plr_Save --> PVDZ_plr_Save
-		- PVDZE_plr_SetDate --> dayzSetDate
-		- PVDZE_send --> PVDZ_send
-		- PVDZE_Server_Simulation --> PVDZ_Server_Simulation
-		- PVDZE_serverStoreVar --> PVDZ_serverStoreVar
-		- PVCDZE_vehSH --> PVCDZ_veh_SH
-		- PVDZE_veh_SFix --> PVDZ_veh_SF
-		- PVDZE_veh_SFuel --> PVCDZ_veh_SetFuel
-		- PVDZE_veh_Update --> PVDZ_veh_Save
-		- usecBandage --> PVCDZ_hlt_Bandage
-		- usecBleed --> PVDZ_hlt_Bleed
-		- usecBreakLegs --> PVCDZ_plr_Legs
-		- usecEpi --> PVCDZ_hlt_Epi
-		- usecMorphine --> PVCDZ_hlt_Morphine
-		- usecPainK --> PVCDZ_hlt_PainK
-		- usecTransfuse --> PVCDZ_hlt_Transfuse
-[NEW] Config variable dayz_townGenerator can enable vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus.
+[NEW] 1.8.7 attachments system, community weapons and buildable base objects
+[NEW] 1.8.7 journal and crafting menu are now functional (default 'J' key)
+[NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
+[NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee)
+[NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
+[NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
 [NEW] RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
-[NEW] DB Backup script. @RimBlock
-[NEW] Use DayZ_UseSteamID = false; in your init.sqf to use the old PlayerUID, instead of SteamID @icomrade
-[NEW] UI Update - Graphical and code changes, enable using DZE_UI = "dark"; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
-[NOTE] It's recommend to convert to the new SteamID system if possible, new servers should not use DayZ_UseSteamID = false;
+[NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
+[NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
 [NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
+[NEW] Blood types system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
+[NEW] Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
+[NEW] Knife dulling is disabled by default. Set dayz_knifeDulling = true; in init.sqf to enable @ebaydayz
+[NEW] Match stick counting is disabled by default. Set dayz_matchboxCount = true; in init.sqf to enable @ebaydayz
+[NEW] Tool breaking is disabled by default. Set dayz_toolBreaking = true; in init.sqf to enable @ebaydayz
+[NEW] Water bottle breaking is disabled by default. Set dayz_waterBottleBreaking = true; in init.sqf to enable @ebaydayz
+[NEW] Dayz_townGenerator = true; in init.sqf can enable vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus. @ebaydayz
+[NEW] DB Backup script. @RimBlock
+[NEW] Use DayZ_UseSteamID = false; in your init.sqf to use the old PlayerUID, instead of SteamID @icomrade
+[NOTE] It's recommend to convert to the new SteamID system if possible, new servers should not use DayZ_UseSteamID = false;
+[NEW] UI Update - Graphical and code changes, enable using DZE_UI = "dark"; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
-[NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
 [NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
-[NEW] Optional variable to restrict wearable clothes. Add DZE_RestrictSkins to init.sqf #1560 @BetterDeadThanZed @ebaydayz
-[NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Add DZE_BackpackAntiTheft to init.sqf @ebaydayz
-[NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
+[NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
 
+[CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
+[CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
+[CHANGED] New loot table format is incompatible with old loot tables. Admins see CfgLoot\README.txt
+[CHANGED] Combattimeout now uses diag_tickTime instead of time.
+[CHANGED] AmmoBoxSmall_556/762 have been replaced with DZ_AmmoBoxUS/RU/EU/CZ
 [CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
 [CHANGED] Tweaked fuel capacity variables for vehicles. @RimBlock
@@ -89,6 +39,8 @@
 [CHANGED] Several getPosATL changed to call FNC_GetPos for water compatibility @icomrade
 [CHANGED] Trader city objects are now spawned locally on each machine with simulation disabled for better performance. Admins can still override with custom cities in init.sqf. @ebaydayz
 
+[FIXED] Zombies now target and attack players correctly with 1.8.7 code
+[FIXED] Server position sync bug after falling unconscious #1522 @ebaydayz
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
 [FIXED] Infinite loop when crafting ore into bars #1351 @icomrade
@@ -121,11 +73,11 @@
 [FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
 [FIXED] Reworked death messages. Fixed messages not always showing, undefined errors and wrong distance bug. Added bled out, killed by zombie, etc. MPHit event handler (fnc_plyrHit) is no longer needed. @ebaydayz
 
+[UPDATED] Keyboard eventhandler updated, dayz_spaceInterupt is no longer used
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
 [UPDATED] Updated all config.cfg in Config-Examples, Added Default Steam Ports and Updated Layout. @Namindu
 [UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
-
 
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login

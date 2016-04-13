@@ -1,3 +1,5 @@
+// If parameters were passed redirect to vanilla player_build (Epoch items don't pass anything)
+if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
 private ["_classname","_classnametmp","_require","_text","_ghost","_lockable","_requireplot","_isAllowedUnderGround","_offset","_isPole","_isLandFireDZ","_hasRequired","_hasrequireditem","_reason","_buildObject","_location1","_object","_objectHelper","_position","_controls","_cancel","_dir","_cnt","_pos","_distance","_buildables","_onLadder","_vehicle","_inVehicle","_abort","_needNear","_isNear","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_canBuildOnPlot","_nearestPole","_ownerID","_friendlies","_missing","_checkMag","_enableGhost","_helperColor","_canDo","_objHDiff","_isOk","_zheightchanged","_zheightdirection","_rotate","_location2","_lastDir","_objectHelperDir","_objectHelperPos","_tmpbuilt","_limit","_proceed","_counter","_dis","_sfx","_started","_finished","_animState","_isMedic","_num_removed","_combinationDisplay","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display"];
 
 //Check if building already in progress, exit if so.
@@ -33,7 +35,7 @@ closeDialog 1;
 if (dayz_isSwimming) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_26","PLAIN DOWN"];};
 if (_inVehicle) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_42","PLAIN DOWN"];};
 if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_21","PLAIN DOWN"];};
-if (player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_43","PLAIN DOWN"];};
+if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_43","PLAIN DOWN"];};
 
 DZE_buildItem = _this; //This is a magazine! It's global to allow access to it from outside functions
 
@@ -391,7 +393,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _objectHelper;
 		};
 
-		if (player getVariable["combattimeout", 0] >= time) exitWith {
+		if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = (localize "str_epoch_player_43");
@@ -487,7 +489,7 @@ if (_hasrequireditem) then {
 					r_doLoop = false;
 					_finished = true;
 				};
-				if (r_interrupt || (player getVariable["combattimeout", 0] >= time)) then {
+				if (r_interrupt || (player getVariable["combattimeout",0] >= diag_tickTime)) then {
 					r_doLoop = false;
 				};
 				if (DZE_cancelBuilding) exitWith {

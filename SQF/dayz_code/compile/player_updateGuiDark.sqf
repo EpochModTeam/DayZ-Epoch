@@ -21,14 +21,12 @@ if (uiNamespace getVariable ["DZ_displayUI", 0] == 1) exitWith {
 	_array
 };
 
-if(dayz_combat == 1) then {
-	_combattimeout = player getVariable["combattimeout",0];
-	_timeleft = _combattimeout - time;
+_combatVal = 0;
+_combattimeout = player getVariable["combattimeout",0];
+if (_combattimeout > 0) then {
+	_timeleft = _combattimeout - diag_tickTime;
 	_combatVal = (_timeleft/30);
-} else {
-	_combatVal = 0;
 };
-
 
 _audible   =  (dayz_disAudial / 50);
 _visual    =  (dayz_disVisual / 100);

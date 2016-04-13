@@ -1,5 +1,5 @@
 // If parameters were passed redirect to vanilla player_build (Epoch items don't pass anything)
-if ((!isNil "_this") && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
+if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
 /*
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
@@ -40,7 +40,7 @@ closeDialog 1;
 if (_isWater) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
 if (_inVehicle) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_42","PLAIN DOWN"];};
 if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
-if (player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_43","PLAIN DOWN"];};
+if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_43","PLAIN DOWN"];};
 
 _item =	_this;
 
@@ -349,7 +349,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _object;
 		};
 
-		if (player getVariable["combattimeout", 0] >= time) exitWith {
+		if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = (localize "str_epoch_player_43");
@@ -435,7 +435,7 @@ if (_hasrequireditem) then {
 					r_doLoop = false;
 					_finished = true;
 				};
-				if (r_interrupt || (player getVariable["combattimeout", 0] >= time)) then {
+				if (r_interrupt || (player getVariable["combattimeout",0] >= diag_tickTime)) then {
 					r_doLoop = false;
 				};
 				if (DZE_cancelBuilding) exitWith {

@@ -45,7 +45,7 @@ if (_characterID != "?") exitWith {
 	
 	//Punish combat log
 	_timeout = _playerObj getVariable["combattimeout",0];
-	if ((_timeout - time) > 0) then {
+	if ((_timeout - diag_tickTime) > 0) then {
 		_playerObj setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
 		_playerObj setVariable ["unconsciousTime",150,true]; // Set knock out timer to 150 seconds
 		//_playerObj setVariable ["USEC_injured",true]; // Set status to bleeding
