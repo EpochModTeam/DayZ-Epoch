@@ -1,6 +1,6 @@
 
 
-private ["_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_combattimeout","_timeleft"];
+private ["_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl"];
 
 _flash = {
     if (ctrlShown _this) then {
@@ -15,12 +15,7 @@ disableSerialization;
 _foodVal = 		1 - (dayz_hunger / SleepFood);
 _thirstVal = 	1 - (dayz_thirst / SleepWater);
 _tempVal 	= 	1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));	// Normalise to [0,1]
-_combatVal = 1;
-_combattimeout = player getVariable["combattimeout",0];
-if (_combattimeout > 0) then {
-	_timeleft = _combattimeout - diag_tickTime;
-	_combatVal = (30 - _timeleft) / 100;
-};
+_combatVal = if (player getVariable["combattimeout",0] >= diag_tickTime) then {0} else {1};
 
 if (uiNamespace getVariable ["DZ_displayUI", 0] == 1) exitWith {
 	_array = [_foodVal,_thirstVal];
@@ -41,6 +36,9 @@ _ctrlEye = 		_display displayCtrl 1305;
 //_ctrlHumanity = _display displayCtrl 1207;
 _ctrlCombat = _display displayCtrl 1307;
 _ctrlFracture = 	_display displayCtrl 1203;
+
+_control = _display displayCtrl 1204; //status_connection_ca.paa ???
+_control ctrlShow false;
 
 //Food/Water/Blood
 _ctrlBlood ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_bloodVal))),(Dayz_GUI_G * _bloodVal),(Dayz_GUI_B * _bloodVal), 0.5];

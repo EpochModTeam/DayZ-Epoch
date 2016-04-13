@@ -372,30 +372,6 @@ while {1 == 1} do {
 		};
 	};
 	
-	if (toLower DZE_UI != "vanilla") then {
-		_combattimeout = player getVariable["combattimeout",0];
-		if (_combattimeout > 0) then {
-			_timeleft = _combattimeout - diag_tickTime;
-			if (_timeleft > 0) then {
-				//hintSilent format["In Combat: %1",round(_timeleft)];
-			} else {
-				//hintSilent "Not in Combat";
-				_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
-				if (!isNil "_combatdisplay") then {
-					_combatcontrol = _combatdisplay displayCtrl 1307;
-					_combatcontrol ctrlShow true;
-				};
-			};
-		} else {
-			//hintSilent "Not in Combat";
-			_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
-			if (!isNil "_combatdisplay") then {
-				_combatcontrol = _combatdisplay displayCtrl 1307;
-				_combatcontrol ctrlShow true;
-			};
-		};
-	};
-	
 	//setGroupIconsVisible [false,false];
 	//clearGroupIcons group player;
 

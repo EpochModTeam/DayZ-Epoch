@@ -46,6 +46,9 @@ _ctrlEye = 		_display displayCtrl 1305;
 _ctrlCombat = _display displayCtrl 1307;
 _ctrlFracture = 	_display displayCtrl 1203;
 
+_control = _display displayCtrl 1204; //status_connection_ca.paa ???
+_control ctrlShow false;
+
 //Food/Water/Blood
 _ctrlBlood ctrlSetTextColor 	[(1 - _bloodVal),(1 - _bloodVal),(1 - _bloodVal), 0.5];
 _ctrlFood ctrlSetTextColor 		[ _foodVal,_foodVal,_foodVal, 0.5];
