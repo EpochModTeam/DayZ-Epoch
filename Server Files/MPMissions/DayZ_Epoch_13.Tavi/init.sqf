@@ -30,7 +30,7 @@ if (dayz_presets == "Custom") then {
 	dayz_bleedingeffect = 3; //1 = blood on the ground, 2 = partical effect, 3 = both
 	dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked
 	dayz_nutritionValuesSystem = true; //Enables nutrition system
-	dayz_classicBloodBagSystem = true; // removes all blood type bloodbags (not implmented yet)
+	dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
 };
 
 //Temp settings
@@ -63,7 +63,6 @@ DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plot
 DZE_BuildingLimit = 150; // Max number of built objects allowed in DZE_PlotPole radius
 DZE_SelfTransfuse = false; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,15,300]; // [blood amount given, infection chance %, cooldown in seconds]
-DZE_UseBloodTypes = false; //Enable blood type system and disable classic bloodbags
 MaxDynamicDebris = 700; // Max number of random road blocks to spawn around the map
 MaxVehicleLimit = 400; // Max number of random vehicles to spawn around the map
 spawnArea = 2500; // Distance around markers to find a safe spawn position

@@ -45,7 +45,7 @@ TraderDialogLoadItemList = {
 	lbClear TraderDialogItemList;
 	_item_list = [];
 	{
-		private ["_header", "_item", "_name", "_type", "_textPart", "_qty", "_buy", "_bqty", "_bname", "_btype", "_btextCurrency", "_sell", "_sqty", "_sname", "_stype", "_stextCurrency", "_order", "_order", "_afile", "_File", "_count", "_bag", "_bagclass", "_index", "_image"];
+		private ["_header", "_item", "_name", "_type", "_textPart", "_qty", "_buy", "_bqty", "_bname", "_btype", "_btextCurrency", "_sell", "_sqty", "_sname", "_stype", "_stextCurrency", "_order", "_order", "_afile", "_File", "_count", "_bag", "_bagclass", "_index", "_image", "_ignore"];
 		_header = _x select 0; // "TRD"
 		_item = _x select 1;
 		_name = _item select 0;
@@ -61,6 +61,12 @@ TraderDialogLoadItemList = {
 				_type = "CfgWeapons";
 			};
 		};
+		
+		_ignore = false;
+		if (dayz_classicBloodBagSystem && _name in dayz_typedBags) then {
+			if (_name == "bloodBagONEG") then {_name = "ItemBloodbag";} else {_ignore = true;};
+		};
+		
 		// Display Name of item
 		_textPart =	getText(configFile >> _type >> _name >> "displayName");
 
@@ -142,27 +148,29 @@ TraderDialogLoadItemList = {
 			_count = {_x == _name} count weapons player;
 		};
 
-		_index = lbAdd [TraderDialogItemList, format["%1 (%2)", _textPart, _name]];
+		if (!_ignore) then {
+			_index = lbAdd [TraderDialogItemList, format["%1 (%2)", _textPart, _name]];
 
-		if (_count > 0) then {
-			lbSetColor [TraderDialogItemList, _index, [0, 1, 0, 1]];
+			if (_count > 0) then {
+				lbSetColor [TraderDialogItemList, _index, [0, 1, 0, 1]];
+			};
+
+			_image = getText(configFile >> _type >> _name >> "picture");
+			lbSetPicture [TraderDialogItemList, _index, _image];
+
+			_item_list set [count _item_list, [
+				_name,
+				_textPart,
+				_bqty,
+				_bname,
+				_btextCurrency,
+				_sqty,
+				_sname,
+				_stextCurrency,
+				_header,
+				_File
+			]];
 		};
-
-		_image = getText(configFile >> _type >> _name >> "picture");
-		lbSetPicture [TraderDialogItemList, _index, _image];
-
-		_item_list set [count _item_list, [
-			_name,
-			_textPart,
-			_bqty,
-			_bname,
-			_btextCurrency,
-			_sqty,
-			_sname,
-			_stextCurrency,
-			_header,
-			_File
-		]];
 	} forEach PVDZE_plr_TradeMenuResult;
 	TraderItemList = _item_list;
 };

@@ -51,7 +51,7 @@ DayZ_ViralZeds = ["z_new_villager2","z_new_villager3","z_new_villager4","z_new_w
 DayZ_SafeObjects = ["Base_Fire_DZ","WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4","Land_Fire_DZ","TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","StashMedium4","Wire_cat1","Sandbag1_DZ","Fence_DZ","Generator_DZ","Hedgehog_DZ","BearTrap_DZ","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","CamoNet_DZ","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare","TentStorageDomed","VaultStorageLocked","BagFenceRound_DZ","TrapBear","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ","Land_HBarrier3_DZ","Land_HBarrier5_DZ","Fence_corrugated_DZ","M240Nest_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","Plastic_Pole_EP1_DZ","StickFence_DZ","LightPole_DZ","FuelPump_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","SandNest_DZ","DeerStand_DZ","MetalPanel_DZ","WorkBench_DZ","WoodFloor_DZ","WoodLargeWall_DZ","WoodLargeWallDoor_DZ","WoodLargeWallWin_DZ","WoodSmallWall_DZ","WoodSmallWallWin_DZ","WoodSmallWallDoor_DZ","LockboxStorageLocked","WoodFloorHalf_DZ","WoodFloorQuarter_DZ","WoodStairs_DZ","WoodStairsSans_DZ","WoodStairsRails_DZ","WoodSmallWallThird_DZ","WoodLadder_DZ","Land_DZE_GarageWoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_WoodDoor","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_WoodDoorLocked","CinderWallHalf_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallDoor_DZ","CinderWallDoorLocked_DZ","CinderWallSmallDoorway_DZ","CinderWallDoorSmall_DZ","CinderWallDoorSmallLocked_DZ","MetalFloor_DZ","WoodRamp_DZ","GunRack_DZ","FireBarrel_DZ","WoodCrate_DZ","Scaffolding_DZ","DesertTentStorage","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3","DesertTentStorage4"];
 DayZ_GearedObjects = ["Car","Helicopter","Motorcycle","Ship","TentStorage_base","StashSmall_base","StashMedium_base","Plane","Tank","VaultStorage","LockboxStorage","TentStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ","Scaffolding_DZ"];
 DayZ_RestingAnims = ["amovpsitmstpsnonwpstdnon_ground","amovpsitmstpsnonwpstdnon_smoking","amovpsitmstpsraswrfldnon_weaponcheck1","amovpsitmstpsraswrfldnon"];
-dayz_typedBags = ["bloodBagANEG","bloodBagAPOS","bloodBagBNEG","bloodBagBPOS","bloodBagABNEG","bloodBagABPOS","bloodBagONEG","bloodBagOPOS","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"];
+dayz_typedBags = ["bloodTester","bloodBagANEG","bloodBagAPOS","bloodBagBNEG","bloodBagBPOS","bloodBagABNEG","bloodBagABPOS","bloodBagONEG","bloodBagOPOS","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"];
 dayz_playerAchievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 Dayz_meatraw =
@@ -412,7 +412,6 @@ switch (dayz_presets) do {
 		if(isNil "dayz_OpenTarget_TimerTicks") then { dayz_OpenTarget_TimerTicks = 60 * 10; };
 		if(isNil "dayz_temperature_override") then { dayz_temperature_override = true; };
 		if(isNil "dayz_nutritionValuesSystem") then { dayz_nutritionValuesSystem = false; };
-		//Not implmented yet
 		if(isNil "dayz_classicBloodBagSystem") then { dayz_classicBloodBagSystem = false; };
 	};
     case "Classic": { //Classic
@@ -426,7 +425,6 @@ switch (dayz_presets) do {
 		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = true; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = false; //Enables nutrition system
-		//Not implmented yet
 		dayz_classicBloodBagSystem = true; //Enables one type of bloodbag
 	};
 	case "Elite": { //Elite
@@ -440,7 +438,6 @@ switch (dayz_presets) do {
 		dayz_OpenTarget_TimerTicks = 60 * 25; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = true; //Enables nutrition system
-		//Not implmented yet
 		dayz_classicBloodBagSystem = false; //Enables one type of bloodbag
 	};
     default { //Vanilla
@@ -454,7 +451,6 @@ switch (dayz_presets) do {
 		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = true; //Enables nutrition system
-		//Not implmented yet
 		dayz_classicBloodBagSystem = false; //Enables one type of bloodbag
 	};
 };
@@ -512,7 +508,6 @@ if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
-if (isNil "DZE_UseBloodTypes") then {DZE_UseBloodTypes = false;};
 if ((toLower worldName) in ["napf","sauerland","tavi"]) then {
 	dayz_minpos = if ((toLower worldName) == "tavi") then {-26000} else {-1000};
 	dayz_maxpos = 26000;

@@ -11,7 +11,7 @@
 [NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
 [NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
-[NEW] Blood types system is disabled by default. Set DZE_UseBloodTypes = true; in init.sqf to enable
+[NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable
 [NEW] Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
 [NEW] Knife dulling is disabled by default. Set dayz_knifeDulling = true; in init.sqf to enable @ebaydayz
 [NEW] Match stick counting is disabled by default. Set dayz_matchboxCount = true; in init.sqf to enable @ebaydayz

@@ -4,7 +4,7 @@ _unit = (_this select 3) select 0;
 //_lowBlood = 	_unit getVariable ["USEC_lowBlood", false];
 //_injured = 		_unit getVariable ["USEC_injured", false];
 //_inPain = 		_unit getVariable ["USEC_inPain", false];
-//_lastused = 	_unit getVariable ["LastTransfusion", time];
+//_lastused = 	_unit getVariable ["LastTransfusion", -(DZE_selfTransfuse_Values select 2)];
 
 // if (_lastused - time < 60) exitwith {cutText [format[(localize "str_actions_medical_18"),_text] , "PLAIN DOWN"]};
 
@@ -39,7 +39,7 @@ while {r_doLoop} do {
 r_doLoop = false;
 
 if (_finished) then {
-	//_unit setVariable["LastTransfusion",time,true]; //reserve for self transfusion
+	//_unit setVariable["LastTransfusion",time]; //reserve for self transfusion
 	_unit setVariable["USEC_lowBlood",false,true];
 	_num_removed = ([player,"ItemBloodbag"] call BIS_fnc_invRemove);
 	if(_num_removed == 1) then {

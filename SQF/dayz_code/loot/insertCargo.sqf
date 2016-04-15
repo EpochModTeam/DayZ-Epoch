@@ -27,7 +27,10 @@ Author:
 		
 		case Loot_MAGAZINE:
 		{
-			(_this select 0) addMagazineCargoGlobal [_x select 1, 1];
+			private "_item";
+			_item = _x select 1;
+			if (dayz_classicBloodBagSystem && _item in dayz_typedBags) then {_item = "ItemBloodbag";};
+			(_this select 0) addMagazineCargoGlobal [_item, 1];
 		};
 		
 		case Loot_BACKPACK:

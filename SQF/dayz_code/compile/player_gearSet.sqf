@@ -20,10 +20,10 @@ if (count _inventory > 0) then {
 		};
 
 		if (_item == "BoltSteel") then { _item = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
-		if (DZE_UseBloodTypes) then {
-			if (_item == "ItemBloodbag") then { _item = "bloodBagONEG" }; // Convert ItemBloodbag into universal blood type/rh bag
-		} else {
+		if (dayz_classicBloodBagSystem) then {
 			if (_item in dayz_typedBags) then { _item = "ItemBloodbag" };
+		} else {
+			if (_item == "ItemBloodbag") then { _item = "bloodBagONEG" }; // Convert ItemBloodbag into universal blood type/rh bag
 		};
 
 		//Is item legal?

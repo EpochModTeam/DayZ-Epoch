@@ -673,10 +673,10 @@ class FSM
                          "			_countr = 0;" \n
                          "			{" \n
                          "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
-                         "				if (DZE_UseBloodTypes) then {" \n
-                         "					if (_item == ""ItemBloodbag"") then { _item = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
+                         "				if (dayz_classicBloodBagSystem) then {" \n
+                         "					if (_x in dayz_typedBags) then {_x = ""ItemBloodbag""};" \n						 
                          "				} else {" \n
-                         "					if (_item in dayz_typedBags) then {_item = ""ItemBloodbag""};" \n
+                         "					if (_x == ""ItemBloodbag"") then { _x = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
                          "				};" \n
                          "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
                          "				_countr = _countr + 1;" \n
@@ -1167,7 +1167,6 @@ class FSM
                          "r_player_blood = 		player getVariable[""USEC_BloodQty"",r_player_bloodTotal];" \n
                          "r_player_bloodtype = player getVariable [""blood_type"", false];" \n
                          "r_player_rh = player getVariable [""rh_factor"", false];" \n
-                         "selfTransfusionTime = time; //time to keep for last  self transfusion." \n
                          "" \n
                          "dayz_musicH = [] spawn player_music;" \n
                          "dayz_slowCheck = 	[] spawn player_spawn_2;" \n

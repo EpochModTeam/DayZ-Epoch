@@ -90,7 +90,7 @@ r_interrupt = false;
 };
 
 if (_complete) then {
-	if (!DZE_UseBloodTypes) then {
+	if (dayz_classicBloodBagSystem) then {
 		player addMagazine "ItemBloodbag";
 	} else {
 		switch (_bloodType) do {

@@ -75,8 +75,11 @@ switch (_lootInfo select 0) do
 	//Spawn a single magazine
 	case Loot_MAGAZINE:
 	{
+		private "_item";
+		_item = _lootInfo select 1;
+		if (dayz_classicBloodBagSystem && _item in dayz_typedBags) then {_item = "ItemBloodbag";};
 		_vehicle = createVehicle ["WeaponHolder", _this select 1, [], 0, "CAN_COLLIDE"];
-		_vehicle addMagazineCargoGlobal [_lootInfo select 1, 1];
+		_vehicle addMagazineCargoGlobal [_item, 1];
 		_vehicle setPosATL (_this select 1);
 		INCREMENT_WEAPON_HOLDERS();
 	};

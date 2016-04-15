@@ -8,10 +8,9 @@ _blood = _unit getVariable ["USEC_BloodQty", 0];
 _lowBlood = _unit getVariable ["USEC_lowBlood", false];
 _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
-//_lastused = _unit getVariable ["LastTransfusion", time];
-_lastused = selfTransfusionTime;
-_timeout = DZE_selfTransfuse_Values select 2;
-if ((round(time - _lastused)) <= _timeout) exitWith {cutText [format[(localize "str_actions_medical_18"),(_timeout - (round(time - _lastused)))] , "PLAIN DOWN"]};
+_lastused = _unit getVariable ["LastTransfusion", -(DZE_selfTransfuse_Values select 2)];
+
+if (round(time - _lastused) <= DZE_selfTransfuse_Values select 2) exitWith {cutText [localize "str_actions_medical_18","PLAIN DOWN"]};
 
 call gear_ui_init;
 closeDialog 0;
@@ -41,9 +40,8 @@ if (_rh) then {_rhVal = "POS";} else {_rhVal = "NEG";};
 //No subs for whole blood :(
 _bloodBagWholeNeeded = "wholeBloodBag" + _bloodType + _rhVal;
 _haswholebag = _bloodBagWholeNeeded in magazines player;
-_hasUniversal = "ItemBloodbag" in magazines player;
 
-if (_haswholebag or (!DZE_UseBloodTypes && _hasUniversal)) then {
+if (_haswholebag or (dayz_classicBloodBagSystem && "ItemBloodbag" in magazines player)) then {
 	_wholeBag = true;
 } else {
 	_badBag = true;
@@ -84,7 +82,7 @@ while {r_doLoop and (_i < 12)} do {
 				};
 			};
 		} else {
-			if (_wholeBag) then { _bagToRemove = if (!DZE_UseBloodTypes) then {"ItemBloodbag"} else {_bloodBagWholeNeeded}; };
+			if (_wholeBag) then { _bagToRemove = if (dayz_classicBloodBagSystem) then {"ItemBloodbag"} else {_bloodBagWholeNeeded}; };
 			if (_bagToRemove in magazines player) then { _bagFound = true; };
 		};
 		if (!_bagFound) then {_forceClose = true;} else { player removeMagazine _bagToRemove;};
@@ -131,7 +129,7 @@ while {r_doLoop and (_i < 12)} do {
 
 	if (((_blood >= r_player_bloodTotal) and !_badBag and _bagFound) or (_i == 12)) then {
 		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
-		selfTransfusionTime = time;
+		_unit setVariable ["LastTransfusion",time];
 		if (_TransfusionInfection) then {r_player_infected = true; player setVariable["USEC_infected",true,true];};
 		cutText [localize "str_actions_medical_transfusion_successful", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_successful","PLAIN DOWN"] call RE;

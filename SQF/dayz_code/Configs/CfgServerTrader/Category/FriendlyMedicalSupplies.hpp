@@ -14,12 +14,7 @@ class Category_541 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class ItemBloodbag {
-		type = "trade_items";
-		buy[] = {4,"ItemSilverBar"};
-		sell[] = {2,"ItemSilverBar"};
-	};
-	/*
+	// bloodBagONEG is automatically swapped with ItemBloodbag if dayz_classicBloodBagSystem = true; Other typed bags and bloodTester are ignored.
 	class bloodBagONEG {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar"};
@@ -70,7 +65,6 @@ class Category_541 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	*/
 	class ItemEpinephrine {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

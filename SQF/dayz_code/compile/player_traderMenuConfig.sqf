@@ -12,7 +12,7 @@ TraderCatList = [];
 TraderItemList = [];
 
 TraderDialogLoadItemList = {
-	private ["_index","_trader_id","_activatingPlayer","_distance","_objclass","_item_list"];
+	private ["_index","_trader_id","_activatingPlayer","_distance","_objclass","_item_list","_ignore"];
 	TraderItemList = [];
 	_index = _this select 0;
 
@@ -51,9 +51,14 @@ TraderDialogLoadItemList = {
 			};
 		};
 		
+		_ignore = false;
+		if (dayz_classicBloodBagSystem && _class in dayz_typedBags) then {
+			if (_class == "bloodBagONEG") then {_class = "ItemBloodbag";} else {_ignore = true;};
+		};
+		
 		_data = [9999,[_class,_typeNum],99999,_buy,_sell,0,_trader_id,_type];
 		
-		PVDZE_plr_TradeMenuResult set [count PVDZE_plr_TradeMenuResult, _data];
+		if (!_ignore) then {PVDZE_plr_TradeMenuResult set [count PVDZE_plr_TradeMenuResult, _data];};
 	};
 
 	lbClear TraderDialogItemList;

@@ -198,7 +198,7 @@ if (isPlayer cursorTarget) then {
 			};
 			//Allow player to transfuse blood
 			if(_lowBlood && _hasBloodBag) then {
-				_transfuse = if (DZE_UseBloodTypes) then {"\z\addons\dayz_code\medical\transfusion.sqf"} else {"\z\addons\dayz_code\medical\transfusion_NoBloodTypes.sqf"};
+				_transfuse = if (dayz_classicBloodBagSystem) then {"\z\addons\dayz_code\medical\transfusion_NoBloodTypes.sqf"} else {"\z\addons\dayz_code\medical\transfusion.sqf"};
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_08",_transfuse,[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];

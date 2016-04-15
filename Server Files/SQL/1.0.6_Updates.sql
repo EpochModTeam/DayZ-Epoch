@@ -382,7 +382,7 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, 'Winchester1866', 'Winches
 
 
 -- ----------------------------
--- Run to replace legacy bloodbag with universal type if using DZE_UseBloodTypes = true;
+-- Run to replace legacy bloodbag with universal type if using dayz_classicBloodBagSystem = false;
 -- ----------------------------
 -- UPDATE `Traders_DATA` SET `item` = '["bloodBagONEG",1]' WHERE `item` = '["ItemBloodbag",1]';
 -- UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Backpack, 'ItemBloodbag') > 0;
