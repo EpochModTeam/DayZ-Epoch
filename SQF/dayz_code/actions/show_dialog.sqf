@@ -1,6 +1,6 @@
 private ["_trader_data", "_dialog"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "STR_EPOCH_PLAYER_103","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_PLAYER_103" call dayz_rollingMessages;};
 
 _trader_data = (_this select 3);
 

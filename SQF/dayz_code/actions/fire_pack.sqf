@@ -9,6 +9,6 @@ if (_obj isKindOf "Land_fire") then {
 	deleteVehicle _obj;
 };
 
-cutText [localize "str_fireplace_removed", "PLAIN DOWN"];
+localize "str_fireplace_removed" call dayz_rollingMessages;
 player removeAction s_player_fireout;
 s_player_fireout = -1;

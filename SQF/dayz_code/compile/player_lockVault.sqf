@@ -5,7 +5,7 @@
 */
 private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_10","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_10" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_lockvault;
@@ -26,16 +26,16 @@ uiSleep 1;
 uiSleep 5;
 
 _playerNear = _obj call dze_isnearest_player;
-if (_playerNear) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_11","PLAIN DOWN"];};
+if (_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_11" call dayz_rollingMessages;};
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID = _obj getVariable["ObjectID","0"];
 _objectUID = _obj getVariable["ObjectUID","0"];
 
-if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_115"),_text], "PLAIN DOWN"]; };
+if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages; };
 
 _alreadyPacking = _obj getVariable["packing",0];
-if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; cutText [format[(localize "str_epoch_player_116"),_text], "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_116",_text] call dayz_rollingMessages;};
 _obj setVariable["packing",1];
 
 _dir = direction _obj;
@@ -71,7 +71,7 @@ if (!isNull _obj) then {
 	_holder setVariable ["MagazineCargo", _magazines, true];
 	_holder setVariable ["BackpackCargo", _backpacks, true];
 
-	cutText [format[(localize "str_epoch_player_117"),_text], "PLAIN DOWN"];
+	format[localize "str_epoch_player_117",_text] call dayz_rollingMessages;
 };
 s_player_lockvault = -1;
 DZE_ActionInProgress = false;

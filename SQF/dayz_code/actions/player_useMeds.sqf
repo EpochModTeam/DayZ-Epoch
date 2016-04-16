@@ -4,14 +4,14 @@ _item = _this;
 call gear_ui_init;
 closeDialog 0;
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText [localize "str_player_21", "PLAIN DOWN"]};
+if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
 
 _hasmeditem = _item in magazines player;
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
-if (!_hasmeditem) exitWith {cutText [format [localize "str_player_31",_text,localize "str_player_31_use"] , "PLAIN DOWN"]};
+if (!_hasmeditem) exitWith {format[localize "str_player_31",_text,localize "str_player_31_use"] call dayz_rollingMessages;};
 
 switch (_item) do {
 	case "ItemBandage": {
@@ -54,7 +54,7 @@ switch (_item) do {
 	case "ItemHeatPack": {
 		player removeMagazine "ItemHeatPack";
 		dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
-		cutText [localize "str_player_27", "PLAIN DOWN"];
+		localize "str_player_27" call dayz_rollingMessages;
 	};
 	case "bloodTester": {
 		_id = [0,0,0,[player]] execVM "\z\addons\dayz_code\medical\blood_test.sqf";

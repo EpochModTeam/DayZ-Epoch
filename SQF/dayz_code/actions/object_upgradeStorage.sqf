@@ -54,7 +54,7 @@ _upgradeParts = [];
 _startUpgrade = true;
 
 if(_isWater or _onLadder) exitWith {
-	//cutText ["unable to upgrade at this time", "PLAIN DOWN"];
+	//"unable to upgrade at this time" call dayz_rollingMessages;
 	_msg = localize "str_CannotUpgrade";
 	_msg call dayz_rollingMessages;
 };
@@ -109,7 +109,7 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	_alreadyupgrading = _cursorTarget getVariable["alreadyupgrading",0];
 
 	if (_alreadyupgrading == 1) exitWith {
-		//cutText [localize "str_upgradeInProgress", "PLAIN DOWN"]
+		//localize "str_upgradeInProgress" call dayz_rollingMessages;
 		_msg = localize "str_upgradeInProgress";
 		_msg call dayz_rollingMessages;
 	};
@@ -203,11 +203,11 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	publicVariableServer "PVDZ_obj_Publish";
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
-	//cutText [localize "str_upgradeDone", "PLAIN DOWN"];
+	//localize "str_upgradeDone" call dayz_rollingMessages;
 	_msg = localize "str_upgradeDone";
 	_msg call dayz_rollingMessages;
 /*
 } else {
-	cutText ["Object has no upgrade option.", "PLAIN DOWN"];
+	"Object has no upgrade option." call dayz_rollingMessages;
 */
 };

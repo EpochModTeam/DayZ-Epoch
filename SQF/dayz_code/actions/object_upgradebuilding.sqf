@@ -44,7 +44,7 @@ if (isArray(configFile >> "CfgVehicles" >> _type >> "Upgrade" >> "randomcreate")
 
 _upgradeClass = configFile >> "CfgVehicles" >> _upgradeType;
 if (!isClass _upgradeClass) exitWith {
-    //cutText [localize "str_upgradeNoOption", "PLAIN DOWN"];
+    //localize "str_upgradeNoOption" call dayz_rollingMessages;
 	_msg = localize "str_upgradeNoOption";
 	_msg call dayz_rollingMessages;
 };
@@ -96,7 +96,7 @@ if (!_ok) exitWith {
 //Upgrade Started
 if ((player getVariable["alreadyBuilding",0]) == 1) exitWith {
     {  player addMagazine _x; } foreach _upgradeParts;
-    //cutText [localize "str_upgradeInProgress" , "PLAIN DOWN"]
+    //localize "str_upgradeInProgress" call dayz_rollingMessages;
 	_msg = localize "str_upgradeInProgress";
 	_msg call dayz_rollingMessages;
 };
@@ -178,7 +178,7 @@ player reveal _object;
 
 //Make sure  its unlocked 
 player setVariable["alreadyBuilding",0];
-//cutText [localize "str_upgradeDone", "PLAIN DOWN"];
+//localize "str_upgradeDone" call dayz_rollingMessages;
 
 _msg = localize "str_upgradeDone";
 _msg call dayz_rollingMessages;

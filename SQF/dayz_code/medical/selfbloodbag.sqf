@@ -10,7 +10,7 @@ _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
 _lastused = _unit getVariable ["LastTransfusion", -(DZE_selfTransfuse_Values select 2)];
 
-if (round(time - _lastused) <= DZE_selfTransfuse_Values select 2) exitWith {cutText [localize "str_actions_medical_18","PLAIN DOWN"]};
+if (round(time - _lastused) <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
 
 call gear_ui_init;
 closeDialog 0;
@@ -86,7 +86,7 @@ while {r_doLoop and (_i < 12)} do {
 			if (_bagToRemove in magazines player) then { _bagFound = true; };
 		};
 		if (!_bagFound) then {_forceClose = true;} else { player removeMagazine _bagToRemove;};
-		cutText [localize "str_actions_medical_transfusion_start", "PLAIN DOWN"];
+		localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 		_started = true;
 	};
 
@@ -130,7 +130,7 @@ while {r_doLoop and (_i < 12)} do {
 		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
 		_unit setVariable ["LastTransfusion",time];
 		if (_TransfusionInfection) then {r_player_infected = true; player setVariable["USEC_infected",true,true];};
-		cutText [localize "str_actions_medical_transfusion_successful", "PLAIN DOWN"];
+		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
 		r_doLoop = false;
 	};
 
@@ -138,7 +138,7 @@ while {r_doLoop and (_i < 12)} do {
 
 	if (r_interrupt or !_isClose or _forceClose) then {
 		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
-		cutText [localize "str_actions_medical_transfusion_interrupted", "PLAIN DOWN"];
+		localize "str_actions_medical_transfusion_interrupted" call dayz_rollingMessages;
 		r_doLoop = false;
 	};
 

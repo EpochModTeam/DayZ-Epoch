@@ -6,15 +6,15 @@ _hasCrowbar = 	"ItemCrowbar" in items player;
 _hasCarBomb = "ItemCarBomb" in magazines player;
 _alreadyBombed = _vehicle getVariable["hasBomb",false];
 if(!_hasToolbox or !_hasCrowbar) exitWith {
-	cutText [localize "str_bombToolMissing", "PLAIN DOWN"];
+	localize "str_bombToolMissing" call dayz_rollingMessages;
 };
 if(!_hasCarBomb) exitWith {
-	cutText [localize "str_bombMissing", "PLAIN DOWN"];
+	localize "str_bombMissing" call dayz_rollingMessages;
 };
 
 /*
 if(_vehicle getVariable["hasBomb",false]) exitWith {
-	cutText [localize "str_bombAlready", "PLAIN DOWN"];
+	localize "str_bombAlready" call dayz_rollingMessages;
 };
 */
 
@@ -35,4 +35,4 @@ if(!_alreadyBombed) then {
 	PVDZ_dayzCarBomb = [_vehicle,getPlayerUID player];
 	publicVariableServer "PVDZ_dayzCarBomb";
 };
-cutText [localize "str_bombAttached", "PLAIN DOWN"];
+localize "str_bombAttached" call dayz_rollingMessages;

@@ -82,7 +82,7 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 		if (_avail < _amount) exitWith {
 			_hasInput = false;
 			_itemName = getText(configFile >> _selection >> _item >> "displayName");
-			cutText [format [localize "str_crafting_missing",(_amount - _avail),_itemName], "PLAIN DOWN"];
+			format[localize "str_crafting_missing",(_amount - _avail),_itemName] call dayz_rollingMessages;
 		};
 	} forEach (_input);
 	
@@ -112,7 +112,7 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 						_freeSlots set[_j, ((_freeSlots select _j) - (_slotType select _j))];
 						if (_freeSlots select _j < 0) exitWith {
 							_availabeSpace = false;
-							cutText [localize "str_crafting_space", "PLAIN DOWN"];
+							localize "str_crafting_space" call dayz_rollingMessages;
 						};
 					};
 				};
@@ -172,10 +172,10 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 								player addBackpack _item;
 							};
 						};
-						cutText [format [localize "str_crafting_success",_itemName], "PLAIN DOWN"];
+						format[localize "str_crafting_success",_itemName] call dayz_rollingMessages;
 						//uiSleep 2;
 					} else {
-						cutText [format [localize "str_crafting_failed",_itemName], "PLAIN DOWN"];
+						format[localize "str_crafting_failed",_itemName] call dayz_rollingMessages;
 						//uiSleep 2;
 					};
 				};

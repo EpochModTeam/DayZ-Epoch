@@ -13,12 +13,12 @@ _classname = getText (_config >> "tentmodel");
 //diag_log ("Classname: "+str(_classname));
 //diag_log ("Item: "+str(_item));
 
-if (r_action_count != 1) exitWith { cutText [localize "str_player_actionslimit", "PLAIN DOWN"]; };
+if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
 // item is missing or tools are missing
 if ((!(_item IN magazines player))) exitWith {
 	r_action_count = 0;
-	cutText [format [localize "str_player_31",_text,localize "str_player_31_pitch"] , "PLAIN DOWN"];
+	format[localize "str_player_31",_text,localize "str_player_31_pitch"] call dayz_rollingMessages;
 };
 
 _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, testDistance
@@ -40,7 +40,7 @@ _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, test
 
 	//sleep 5;
 	
-	cutText [localize "str_player_build_rotate", "PLAIN DOWN"];
+	localize "str_player_build_rotate" call dayz_rollingMessages;
 	_location = getMarkerpos "respawn_west";
 	_object = createVehicle [_classname, _location, [], 0, "NONE"];
 	
@@ -66,7 +66,7 @@ _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, test
 		};
 		
 		if (speed player > 10 or speed player <= -8) then {
-			cutText [localize "str_player_build_movingfast", "PLAIN DOWN"];
+			localize "str_player_build_movingfast" call dayz_rollingMessages;
 			player playMove "amovpercmstpssurwnondnon";
 		};
 
@@ -93,12 +93,12 @@ _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, test
 	PVDZ_obj_Publish = [dayz_characterID,_tent,[_dir,_location],_classname];
 	publicVariableServer "PVDZ_obj_Publish";
 
-	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
+	localize "str_success_tent_pitch" call dayz_rollingMessages;
 	sleep 1;
 	r_action_count = 0;
 
 } else {
 	r_action_count = 0;
-	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
+	localize "str_fail_tent_pitch" call dayz_rollingMessages;
 };
 */

@@ -1,4 +1,4 @@
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_34","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_34" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 private ["_qty","_dis","_sfx","_started","_finished","_animState","_isRefuel","_fuelcans","_qty20","_qty5","_qty40"];
 
@@ -58,8 +58,8 @@ if (("ItemJerrycanEmpty" in magazines player) or ("ItemFuelcanEmpty" in magazine
 		};
 	};
 
-	cutText [format [localize "str_player_09",_qty], "PLAIN DOWN"];
+	format[localize "str_player_09",_qty] call dayz_rollingMessages;
 } else {
-	cutText [localize "str_player_10", "PLAIN DOWN"];
+	localize "str_player_10" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;

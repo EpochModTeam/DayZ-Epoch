@@ -57,7 +57,7 @@ while {r_drag_sqf} do {
 
 	if (vehicle player != player) then {
 		player action ["eject", vehicle player];
-		cutText [localize "str_actions_medical_dragbody_veh","PLAIN DOWN"];
+		localize "str_actions_medical_dragbody_veh" call dayz_rollingMessages;
 		[cursorTarget, _unit, _unconscious, _dragee] execVM "\z\addons\dayz_code\medical\drop_body.sqf";
 	};
 	if (!r_drag_sqf) exitWith {};

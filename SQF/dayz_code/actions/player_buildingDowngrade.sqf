@@ -4,7 +4,7 @@
 */
 private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_48","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_48" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_downgrade_build;
@@ -52,7 +52,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // exit if not allowed due to plot pole
-if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_141"),_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; format[localize "str_epoch_player_141",_needText,_distance] call dayz_rollingMessages; };
 
 // get cursortarget from addaction
 _obj = _this select 3;
@@ -60,7 +60,7 @@ _obj = _this select 3;
 // Current charID
 _objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
-if (DZE_Lock_Door != _objectCharacterID) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_49","PLAIN DOWN"];};
+if (DZE_Lock_Door != _objectCharacterID) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_49" call dayz_rollingMessages;};
 
 // Find objectID
 _objectID 	= _obj getVariable ["ObjectID","0"];
@@ -68,7 +68,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; cutText [localize "str_epoch_player_50","PLAIN DOWN"];};
+if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
 
 // Get classname
 _classname = typeOf _obj;
@@ -114,7 +114,6 @@ if ((count _upgrade) > 0) then {
 
 	// all parts added proceed
 	if(_i != 0) then {
-
 		// Get position
 		_location	= _obj getVariable["OEMPos",(getposATL _obj)];
 
@@ -139,23 +138,20 @@ if ((count _upgrade) > 0) then {
 		_object setPosATL _location;
 
 
-		cutText [format[(localize "str_epoch_player_142"),_text], "PLAIN DOWN", 5];
+		format[localize "str_epoch_player_142",_text] call dayz_rollingMessages;
 
 		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
 		publicVariableServer "PVDZE_obj_Swap";
 
 		player reveal _object;
-
 	} else {
-		cutText [format[(localize "str_epoch_player_143"), _i,(getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName"))], "PLAIN DOWN"];
+		format[localize "str_epoch_player_143",_i,getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName")] call dayz_rollingMessages;
 		{
 			[player,(_x select 0),(_x select 1)] call BIS_fnc_invRemove;
 		} count _addedItems;
-
 	};
-
 } else {
-	cutText [localize "str_epoch_player_51","PLAIN DOWN"];
+	localize "str_epoch_player_51" call dayz_rollingMessages;
 };
 
 DZE_ActionInProgress = false;

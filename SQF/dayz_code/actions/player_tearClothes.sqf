@@ -18,16 +18,16 @@ player removeMagazine _skin;
 
 switch (_rounded) do {
 	case 0: {
-		cutText [localize "str_tear_clothes_0", "PLAIN DOWN"];
+		localize "str_tear_clothes_0" call dayz_rollingMessages;
 	};
 	case 1: {
-		cutText [localize "str_tear_clothes_1", "PLAIN DOWN"];
+		localize "str_tear_clothes_1" call dayz_rollingMessages;
 	};
 	case 2: {
-		cutText [localize "str_tear_clothes_2", "PLAIN DOWN"];
+		localize "str_tear_clothes_2" call dayz_rollingMessages;
 	};
 	case 3: {
-		cutText [localize "str_tear_clothes_3", "PLAIN DOWN"];
+		localize "str_tear_clothes_3" call dayz_rollingMessages;
 	};
 };
 

@@ -50,7 +50,7 @@ while {r_doLoop} do {
 					} else {
 						_infectedStatus = if (r_player_infected) then { "Infected" } else { "Cured" };
 						_cureAttempt = _cureAttempt + 0.01;
-						cutText [format [localize "str_sleepInfection",r_player_blood,_infectedStatus], "PLAIN DOWN"];
+						format[localize "str_sleepInfection",r_player_blood,_infectedStatus] call dayz_rollingMessages;
 					};
 				};
 			};
@@ -74,7 +74,7 @@ while {r_doLoop} do {
 					
 					_timer = diag_tickTime;
 					_infectedStatus = if (r_player_infected) then { "Yes" } else { "Cured" };
-					cutText [format [localize "str_sleepStats",_blood,r_player_blood], "PLAIN DOWN"];
+					format[localize "str_sleepStats",_blood,r_player_blood] call dayz_rollingMessages;
 				};	
 			};
 			

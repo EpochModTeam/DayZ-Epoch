@@ -14,7 +14,7 @@ _vehicle removeAction (_this select 2);
 s_player_fishing = -1;
 s_player_fishing_veh = -1;
 
-if(dayz_fishingInprogress) exitWith { cutText [localize "str_fishing_inprogress", "PLAIN DOWN"];};
+if(dayz_fishingInprogress) exitWith { localize "str_fishing_inprogress" call dayz_rollingMessages;};
 dayz_fishingInprogress = true;
 
 //line distance
@@ -63,7 +63,7 @@ for "_i" from 1 to 10 do {
 
 if (!_isOk) exitWith {
     dayz_fishingInprogress = false;
-    cutText [localize "str_fishing_watercheck" , "PLAIN DOWN"];
+    localize "str_fishing_watercheck" call dayz_rollingMessages;
 };
 
 _counter = 0;
@@ -76,14 +76,14 @@ player playActionNow "GestureSwing";
 r_interrupt = false;
 
 while {_isOk} do {
-    if(dayz_isSwimming) exitWith {cutText [localize "str_player_26", "PLAIN DOWN"];_isOk = false;};
+    if(dayz_isSwimming) exitWith {localize "str_player_26" call dayz_rollingMessages;_isOk = false;};
     if !((currentWeapon player) in Dayz_fishingItems or (player != vehicle player and !((vehicle player) isKindOf "Ship"))) exitwith {
-        cutText [localize "str_fishing_canceled", "PLAIN DOWN"];
+        localize "str_fishing_canceled" call dayz_rollingMessages;
         _isOk = false;
     };
     if (r_interrupt) then {
         _isOk = false;
-        cutText [localize "str_fishing_canceled", "PLAIN DOWN"];
+        localize "str_fishing_canceled" call dayz_rollingMessages;
     } else {
         //make sure the player isnt swimming
         uiSleep 2; // wait for animation
@@ -117,7 +117,7 @@ while {_isOk} do {
                 _itemtodrop = _itemOut;
                 _item addMagazineCargoGlobal [_itemtodrop,1];
                 //Let the player know what he caught
-                cutText [format [localize "str_fishing_success",_text], "PLAIN DOWN"];
+                format[localize "str_fishing_success",_text] call dayz_rollingMessages;
             } else {
                 call gear_ui_init;
                 //Remove melee magazines (BIS_fnc_invAdd fix) 
@@ -125,9 +125,9 @@ while {_isOk} do {
                 _result = [player,_itemOut] call BIS_fnc_invAdd;
                 if (_result) then {
                     //Let the player know what he caught
-                    cutText [format [localize "str_fishing_success",_text], "PLAIN DOWN"];
+                    format[localize "str_fishing_success",_text] call dayz_rollingMessages;
                 } else {
-                    cutText [format [localize "str_fishing_noroom",_text], "PLAIN DOWN"];
+                    format[localize "str_fishing_noroom",_text] call dayz_rollingMessages;
                 };
                 //adding melee mags back if needed
                 call dayz_meleeMagazineCheck;
@@ -138,17 +138,17 @@ while {_isOk} do {
             _isOk = false;
         } else {
             switch (true) do {
-                case (_counter == 0) : { cutText [format [localize "str_fishing_cast",_num], "PLAIN DOWN"]; }; 
-                case (_counter == 4) : { cutText [localize "str_fishing_pull", "PLAIN DOWN"]; player playActionNow "GesturePoint"; }; 
-                case (_counter == 8) : { cutText [localize "str_fishing_pull", "PLAIN DOWN"]; player playActionNow "GesturePoint"; };
-                default { cutText [localize "str_fishing_nibble", "PLAIN DOWN"]; };
+                case (_counter == 0) : { format[localize "str_fishing_cast",_num] call dayz_rollingMessages; }; 
+                case (_counter == 4) : { localize "str_fishing_pull" call dayz_rollingMessages; player playActionNow "GesturePoint"; }; 
+                case (_counter == 8) : { localize "str_fishing_pull" call dayz_rollingMessages; player playActionNow "GesturePoint"; };
+                default { localize "str_fishing_nibble" call dayz_rollingMessages; };
             }; 
             _counter = _counter + 1;
 
             if (_counter == 12) then {
                 _isOk = false;
                 uiSleep 1;
-                cutText [localize "str_fishing_failed", "PLAIN DOWN"];
+                localize "str_fishing_failed" call dayz_rollingMessages;
             };
         };
     };

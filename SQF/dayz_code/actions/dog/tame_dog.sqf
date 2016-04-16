@@ -56,8 +56,8 @@ if(_removed == _countIn) then {
 		_dog setVariable ["fsm_handle", _fsmid];
 		_dog setVariable ["CharacterID", dayz_characterID, true];
 
-		cutText [format[(localize "str_epoch_player_173"),_textRemoved], "PLAIN DOWN"];
+		format[localize "str_epoch_player_173",_textRemoved] call dayz_rollingMessages;
 	} else {
-		cutText [format[(localize "str_epoch_player_174"),_textRemoved], "PLAIN DOWN"];
+		format[localize "str_epoch_player_174",_textRemoved] call dayz_rollingMessages;
 	};
 };

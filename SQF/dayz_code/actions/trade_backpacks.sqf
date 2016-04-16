@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_bos","_bag","_class","_started","_finished","_animState","_isMedic","_num_removed","_needed","_activatingPlayer","_buy_o_sell","_textPartIn","_textPartOut","_traderID"];
 //		   [part_out,part_in, qty_out, qty_in,];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -22,7 +22,7 @@ if(_buy_o_sell == "sell") then {
 	_bos = 1;
 };
 
-cutText [localize "str_epoch_player_105","PLAIN DOWN"];
+localize "str_epoch_player_105" call dayz_rollingMessages;
 	 
 // force animation 
 player playActionNow "Medic";
@@ -58,7 +58,7 @@ if (!_finished) exitWith {
 		player playActionNow "stop";
 	};
 	DZE_ActionInProgress = false;
-	cutText [localize "str_epoch_player_106","PLAIN DOWN"];
+	localize "str_epoch_player_106" call dayz_rollingMessages;
 };
 
 if (_finished) then {
@@ -116,20 +116,20 @@ if (_finished) then {
 				if (_done) then {
 					removeBackpack player;
 					player addBackpack _part_out;
-					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 				};
 
 			} else {
-				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
+				format[localize "str_epoch_player_183",_textPartOut] call dayz_rollingMessages;
 			};
 
 		} else {
-			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+			format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 		};
 		dayzTradeResult = nil;
 	} else {
 		_needed =  _qty_in - _qty;
-		cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 	};
 };
 

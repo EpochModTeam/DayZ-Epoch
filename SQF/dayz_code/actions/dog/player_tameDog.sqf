@@ -18,7 +18,7 @@ if ((_hasRawMeat) && (_hasdog == "false")) then {
 	_target removeAction _id;
     	player setvariable ["dogid", _fsmid];
 } else {
-	cutText [localize "str_epoch_player_18","PLAIN DOWN"];
+	localize "str_epoch_player_18" call dayz_rollingMessages;
 };
 
 //handle publicVariables here later.

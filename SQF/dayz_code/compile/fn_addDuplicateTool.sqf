@@ -16,7 +16,7 @@ private ["_bag","_dropOnFloor"];
 
 _dropOnFloor = {
 	private ["_location","_object"];
-	systemChat format[(localize "str_epoch_player_314"),_this];
+	systemChat format[localize "str_epoch_player_314",_this];
 	_location = player modeltoworld [0,0.3,0];
 	if ((_location select 2) < 0) then {_location set [2,0];};
 	_object = createVehicle ["WeaponHolder",_location,[],0,"CAN_COLLIDE"];
@@ -28,14 +28,14 @@ _dropOnFloor = {
 if (_this in items player) then {
 	_bag = unitBackpack player;
 	if (!isNull _bag) then {
-		systemChat format[(localize "str_epoch_player_313"),_this];
+		systemChat format[localize "str_epoch_player_313",_this];
 		_bag addWeaponCargoGlobal [_this,1];
 	} else {
 		_this call _dropOnFloor;
 	};
 } else {
 	if !([player,_this] call BIS_fnc_invAdd) then {
-		systemChat (localize "str_epoch_player_107");
+		systemChat localize "str_epoch_player_107";
 		_this call _dropOnFloor;
 	};
 };

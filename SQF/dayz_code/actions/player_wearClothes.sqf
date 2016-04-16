@@ -1,5 +1,5 @@
-if (_this in DZE_RestrictSkins) exitWith { cutText [format[localize "str_epoch_player_315",_this], "PLAIN DOWN"] };
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_83","PLAIN DOWN"]};
+if (_this in DZE_RestrictSkins) exitWith { format[localize "str_epoch_player_315",_this] call dayz_rollingMessages; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_83" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 /*
 _item call player_wearClothes;
@@ -12,17 +12,17 @@ _item = _this;
 call gear_ui_init;
 r_action_count = 0; //reset for strange glitch
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText [localize "str_player_21", "PLAIN DOWN"]; DZE_ActionInProgress = false;};
+if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages; DZE_ActionInProgress = false;};
 
 _hasclothesitem = _this in magazines player;
 _config = configFile >> "CfgMagazines";
 _text = getText (_config >> _item >> "displayName");
 
-if (!_hasclothesitem) exitWith {cutText [format [localize "str_player_31",_text,localize "str_player_31_wear"] , "PLAIN DOWN"]; DZE_ActionInProgress = false;};
+if (!_hasclothesitem) exitWith {format[localize "str_player_31",_text,localize "str_player_31_wear"] call dayz_rollingMessages; DZE_ActionInProgress = false;};
 
-if (vehicle player != player) exitWith {cutText [localize "str_player_fail_wear1", "PLAIN DOWN"]; DZE_ActionInProgress = false;};
-//if (!isNull (unitBackpack player)) exitWith {DZE_ActionInProgress = false; cutText [localize "STR_EPOCH_ACTIONS_9","PLAIN DOWN"]};
-if ("CSGAS" in (magazines player)) exitWith {DZE_ActionInProgress = false; cutText [localize "STR_EPOCH_ACTIONS_10","PLAIN DOWN"]};
+if (vehicle player != player) exitWith {localize "str_player_fail_wear1" call dayz_rollingMessages; DZE_ActionInProgress = false;};
+//if (!isNull (unitBackpack player)) exitWith {DZE_ActionInProgress = false; localize "STR_EPOCH_ACTIONS_9" call dayz_rollingMessages;};
+if ("CSGAS" in (magazines player)) exitWith {DZE_ActionInProgress = false; localize "STR_EPOCH_ACTIONS_10" call dayz_rollingMessages;};
 
 _myModel = (typeOf player);
 _humanity = player getVariable ["humanity",0];
@@ -50,7 +50,7 @@ if ( (isClass(_config >> _itemNew)) ) then {
 			};
 
 		} else {
-			cutText [localize "str_epoch_player_86","PLAIN DOWN"];
+			localize "str_epoch_player_86" call dayz_rollingMessages;
 		};
 	};
 };

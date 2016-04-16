@@ -30,12 +30,12 @@ while {(!isNull _display) && !r_player_dead} do {
 		case (_playerCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 30)", _btnAbortText];
-			cutText [localize "str_abort_playerclose", "PLAIN DOWN"];
+			localize "str_abort_playerclose" call dayz_rollingMessages;
 		};
 		case (_zedCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
-			cutText [localize "str_abort_zedsclose", "PLAIN DOWN"];
+			localize "str_abort_zedsclose" call dayz_rollingMessages;
 		};
 		case (_inCombat && !_zedCheck && !_playerCheck) : {
 			_btnAbort ctrlEnable false;
@@ -43,7 +43,7 @@ while {(!isNull _display) && !r_player_dead} do {
 		};
 		case (isInTraderCity) : {
 			_btnAbort ctrlEnable false;
-			cutText [localize "str_epoch_player_12","PLAIN DOWN"];
+			localize "str_epoch_player_12" call dayz_rollingMessages;
 		};
 		default {
 			_btnAbort ctrlEnable true;

@@ -27,7 +27,7 @@ while {r_doLoop} do {
 		if (_amount > 0) then {
 			_amount = _amount - 500;
 		};
-		cutText [localize "str_actions_medical_transfusion_start", "PLAIN DOWN"];
+		localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 		
 		//Make sure the unit is a player and update stats based on whats being sent (should mimic 500 units of blood being sent)
 		if (_unit == player) then {
@@ -62,12 +62,12 @@ while {r_doLoop} do {
 	//diag_log format["Player Blood %1 - %2, - %3, - %4",_blood,_unit,_medic,(_unit getVariable "USEC_BloodQty")];
 	
 	if (_blood >= r_player_bloodTotal or _amount == 0) then {
-		cutText [localize "str_actions_medical_transfusion_successful", "PLAIN DOWN"];
+		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
 		r_doLoop = false;
 	};
 	
 	if (r_interrupt) then {
-		cutText [localize "str_actions_medical_transfusion_interrupted", "PLAIN DOWN"];
+		localize "str_actions_medical_transfusion_interrupted" call dayz_rollingMessages;
 		r_doLoop = false;
 	};
 	

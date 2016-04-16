@@ -15,7 +15,7 @@ if ((_callerID != "0") && (_targetID != "0")) then {
 	_rfriendlies = _target getVariable ["friendlies", []];
 
 	if !(_callerID in _rfriendlies) then {
-		titleText [(localize "STR_EPOCH_ACTIONS_8"), "PLAIN DOWN"]; //To Caller
+		localize "STR_EPOCH_ACTIONS_8" call dayz_rollingMessages; //To Caller
 		/* PVS/PVC - Skaronator */
 		PVDZ_send = [_target,"tagFriendly",[_target]]; //To Target
 		publicVariableServer "PVDZ_send";

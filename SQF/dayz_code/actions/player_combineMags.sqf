@@ -3,7 +3,7 @@ disableSerialization;
 call gear_ui_init;
 closeDialog 0;
 
-if (r_action_count != 1) exitWith { cutText [localize "str_player_actionslimit", "PLAIN DOWN"]; };
+if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
 _create = _this;
 
@@ -19,7 +19,7 @@ _name = getText(configFile >> "CfgMagazines" >> _create >> "displayName");
 _magCount = {_x == _create} count magazines player;
 
 if (_magCount == 1) exitWith {
-	cutText [format [localize "str_cannotCombine", _name], "PLAIN DOWN"];
+	format[localize "str_cannotCombine", _name] call dayz_rollingMessages;
 	r_action_count = 0;
 };
 
@@ -71,13 +71,13 @@ if(_create == "Quiver") then {
 
 switch true do {
 	case (_qtynew_create_ammo_rest == 0) : {
-		cutText [format [localize "str_combineDoneFull",_magCount, _name, _qtynew_create_mags_full,_magFull], "PLAIN DOWN"];
+		format[localize "str_combineDoneFull",_magCount, _name, _qtynew_create_mags_full,_magFull] call dayz_rollingMessages;
 		};
 	case (_qtynew_create_mags_full == 0) : {
-		cutText [format [localize "str_combineDonePartialOne",_magCount, _name, _qtynew_create_ammo_rest,_magAmmunition], "PLAIN DOWN"];
+		format[localize "str_combineDonePartialOne",_magCount, _name, _qtynew_create_ammo_rest,_magAmmunition] call dayz_rollingMessages;
 		};
 	default {
-		cutText [format [localize "str_combineDonePartial",_magCount, _name, _qtynew_create_mags_full, _qtynew_create_ammo_rest,_magAmmunition,_magFullSingular,_magFull], "PLAIN DOWN"];
+		format[localize "str_combineDonePartial",_magCount, _name, _qtynew_create_mags_full, _qtynew_create_ammo_rest,_magAmmunition,_magFullSingular,_magFull] call dayz_rollingMessages;
 	};
 };
 

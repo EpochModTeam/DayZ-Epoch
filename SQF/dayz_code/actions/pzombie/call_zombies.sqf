@@ -20,4 +20,4 @@ uiSleep 3;
 // allow menu again
 s_player_callzombies = -1;
 
-// cutText [localize "STR_EPOCH_ACTIONS_1","PLAIN DOWN"];
+// localize "STR_EPOCH_ACTIONS_1" call dayz_rollingMessages;

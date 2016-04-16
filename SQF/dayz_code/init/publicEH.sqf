@@ -323,7 +323,7 @@ if (!isDedicated) then {
 	"PVDZ_obj_Fire"				addPublicVariableEventHandler {(_this select 1) spawn BIS_Effects_Burn};
 	"PVDZ_dayzFlies"			addPublicVariableEventHandler {(_this select 1) call spawn_flies};
 	"PVCDZ_plr_Humanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
-	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {cutText[localize "str_epoch_player_2","PLAIN DOWN"];};};
+	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {localize "str_epoch_player_2" call dayz_rollingMessages;};};
 	
 	//Medical
 	"PVCDZ_hlt_Morphine"		addPublicVariableEventHandler {(_this select 1) call player_medMorphine};
@@ -370,16 +370,16 @@ if (!isDedicated) then {
 			_object setVariable ["dayz_padlockLockStatus", false,true];
 			_object setVariable ["isOpen", "1", true];
 			_object setVariable ["dayz_padlockHistory", [], true];
-			titleText [format["%1 unlocked", typeOf _object],"PLAIN DOWN"];
+			format["%1 unlocked",typeOf _object] call dayz_rollingMessages;
 		} else {
-			titleText ["Incorrect combination", "PLAIN DOWN"];
+			"Incorrect combination" call dayz_rollingMessages;
 			_object setVariable ["dayz_padlockHistory", _codeGuess, true];
 		};
 	};
 	
 	"PVCDZ_Client_processAccessCode" addPublicVariableEventHandler {
 		_codeGuess = (_this select 1) select 0;
-		titleText [format["You have set the combination to %1", _codeGuess],"PLAIN DOWN"];
+		format["You have set the combination to %1",_codeGuess] call dayz_rollingMessages;
 	};
 
 	// flies and swarm sound sync

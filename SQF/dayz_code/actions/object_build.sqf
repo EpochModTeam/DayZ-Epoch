@@ -79,7 +79,7 @@ if (_build) then {
     publicVariableServer "PVDZ_obj_Publish";
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
-    cutText [format [localize "str_build_01",_text], "PLAIN DOWN"];
+    format[localize "str_build_01",_text] call dayz_rollingMessages;
     r_action_count = 0;
 } else {
     r_action_count = 0;
@@ -91,7 +91,7 @@ if (_build) then {
             player addMagazine _x;
         };
     } foreach _items;
-    cutText [format [localize "str_build_failed_02",_text], "PLAIN DOWN"];
+    format[localize "str_build_failed_02",_text] call dayz_rollingMessages;
 };
 
 

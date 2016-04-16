@@ -4,7 +4,7 @@ _handle = 	_array select 0;
 _type = 	_array select 1;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText [localize "str_player_21","PLAIN DOWN"]};
+if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
 
 player playActionNow "PutDown";
 

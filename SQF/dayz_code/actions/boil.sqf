@@ -1,6 +1,6 @@
 private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx","_bottleInfected","_msg"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_22","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_22" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterBottle" >> "displayName");
@@ -19,8 +19,8 @@ _bottleInfected = if ("ItemWaterBottleInfected" in magazines player) then {true}
     if (_x in magazines player) exitWith {_hastinitem = true;};
 } count boil_tin_cans;
 
-if (!_hasbottleitem) exitWith {cutText [format [localize "str_player_31",_bottletext,localize "str_player_31_fill"] , "PLAIN DOWN"]; a_player_boil = false;};
-if (!_hastinitem) exitWith {cutText [format [localize "str_player_31",_tintext,localize "str_player_31_fill"] , "PLAIN DOWN"]; a_player_boil = false;};
+if (!_hasbottleitem) exitWith {format[localize "str_player_31",_bottletext,localize "str_player_31_fill"] call dayz_rollingMessages; a_player_boil = false;};
+if (!_hastinitem) exitWith {format[localize "str_player_31",_tintext,localize "str_player_31_fill"] call dayz_rollingMessages; a_player_boil = false;};
 
 if (_hasbottleitem and _hastinitem) then {
 	_qty = 0;
@@ -56,11 +56,11 @@ if (_hasbottleitem and _hastinitem) then {
 			player addMagazine "ItemWaterBottleBoiled";
 		};
 	};
-    //cutText [format [localize "str_player_boiledwater",_qty], "PLAIN DOWN"];
+    //format[localize "str_player_boiledwater",_qty] call dayz_rollingMessages;
 	_msg = format [localize "str_player_boiledwater",_qty];
 	_msg call dayz_rollingMessages;
 } else {
-    //cutText [localize "str_player_02", "PLAIN DOWN"];
+    //localize "str_player_02" call dayz_rollingMessages;
 	_msg = format [localize "str_player_boiledwater",_qty];
 	_msg = localize "str_player_02";
 	_msg call dayz_rollingMessages;

@@ -15,7 +15,7 @@ _playerUID = [player] call FNC_GetPlayerUID;
 //BackUp Weapons and Mags
 _weapons = weapons player;
 _magazines = call player_countMagazines; //magazines player;
-if ((_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0)) exitWith {cutText [localize "str_actions_switchmodel_fail", "PLAIN DOWN"]};
+if ((_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0)) exitWith {localize "str_actions_switchmodel_fail" call dayz_rollingMessages;};
 
 _primweapon = primaryWeapon player;
 _secweapon = secondaryWeapon player;

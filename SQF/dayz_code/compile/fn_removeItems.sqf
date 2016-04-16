@@ -50,5 +50,5 @@ _tobe_removed_total = 0;
 if (_tobe_removed_total == _removed_total) exitWith { true };
 // missing parts
 { player addMagazine _x; } count _temp_removed_array;
-cutText [format[(localize "STR_EPOCH_PLAYER_145"), _removed_total, _tobe_removed_total], "PLAIN DOWN"];
+format[localize "STR_EPOCH_PLAYER_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 false

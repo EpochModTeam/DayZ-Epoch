@@ -5,7 +5,7 @@
 */
 private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_72","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 // allowed trees list move this later
@@ -112,9 +112,9 @@ if (count(_findNearestTree) >= 1) then {
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 		
-			cutText [format[(localize "str_epoch_player_154"), _i,_text], "PLAIN DOWN"];
+			format[localize "str_epoch_player_154",_i,_text] call dayz_rollingMessages;
 		} else {
-			cutText [format[(localize "str_epoch_player_143"), _i,_text], "PLAIN DOWN"];
+			format[localize "str_epoch_player_143",_i,_text] call dayz_rollingMessages;
 		};
 	} else {
 		r_interrupt = false;
@@ -122,12 +122,12 @@ if (count(_findNearestTree) >= 1) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [localize "str_epoch_player_73","PLAIN DOWN"];
+		localize "str_epoch_player_73" call dayz_rollingMessages;
 	};
 
 	
 
 } else {
-	cutText [localize "str_epoch_player_74","PLAIN DOWN"];
+	localize "str_epoch_player_74" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;

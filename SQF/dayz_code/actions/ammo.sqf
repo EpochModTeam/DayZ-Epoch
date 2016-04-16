@@ -20,7 +20,7 @@ if (_ammo != "") then {
 	_vehicle removeMagazineTurret [_ammo,_turret];
 	_vehicle addMagazineTurret [_ammo,_turret];
 	player removeMagazine _ammo;
-	cutText [format [localize "str_player_ammo_successful",_ammoType], "PLAIN DOWN"];
+	format[localize "str_player_ammo_successful",_ammoType] call dayz_rollingMessages;
 } else {
-	cutText [format [localize "str_player_ammo_fail",_text], "PLAIN DOWN"];
+	format[localize "str_player_ammo_fail",_text] call dayz_rollingMessages;
 };

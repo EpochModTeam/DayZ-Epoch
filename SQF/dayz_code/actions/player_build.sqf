@@ -6,7 +6,7 @@ if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith
 */
 private ["_location","_pos","_dir","_classname","_item","_hasrequireditem","_missing","_hastoolweapon","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_hasbuilditem","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_classnametmp","_ghost","_isPole","_needText","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_need","_needNear","_vehicle","_inVehicle","_requireplot","_objHDiff","_isLandFireDZ","_isTankTrap","_center","_buildables"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_40","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 _pos = [player] call FNC_GetPos;
 
@@ -37,10 +37,10 @@ DZE_cancelBuilding = false;
 call gear_ui_init;
 closeDialog 1;
 
-if (_isWater) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_26", "PLAIN DOWN"];};
-if (_inVehicle) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_42","PLAIN DOWN"];};
-if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
-if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_43","PLAIN DOWN"];};
+if (_isWater) exitWith {DZE_ActionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
+if (_inVehicle) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_42" call dayz_rollingMessages;};
+if (_onLadder) exitWith {DZE_ActionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
+if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
 
 _item =	_this;
 
@@ -84,7 +84,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 
 
 if(_abort) exitWith {
-	cutText [format[(localize "str_epoch_player_135"),_reason,_distance], "PLAIN DOWN"];
+	format[localize "str_epoch_player_135",_reason,_distance] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
@@ -141,7 +141,7 @@ _findNearestPole = [];
 _IsNearPlot = count (_findNearestPole);
 
 // If item is plot pole and another one exists within 45m
-if(_isPole && _IsNearPlot > 0) exitWith {  DZE_ActionInProgress = false; cutText [(format [localize "str_epoch_player_44",_distance]), "PLAIN DOWN"]; };
+if(_isPole && _IsNearPlot > 0) exitWith {  DZE_ActionInProgress = false; format[localize "str_epoch_player_44",_distance] call dayz_rollingMessages; };
 
 if(_IsNearPlot == 0) then {
 
@@ -181,12 +181,12 @@ if(_IsNearPlot == 0) then {
 };
 
 // _message
-if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; cutText [format[(localize "STR_EPOCH_PLAYER_135"),_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; format[localize "STR_EPOCH_PLAYER_135",_needText,_distance] call dayz_rollingMessages; };
 
 _buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables"];
 _buildables set [count _buildables,"TentStorage"];
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
-if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false;cutText [(format [localize "str_epoch_player_41",_distance]),"PLAIN DOWN"];};
+if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages;};
 
 _missing = "";
 _hasrequireditem = true;
@@ -196,9 +196,9 @@ _hasrequireditem = true;
 } count _require;
 
 _hasbuilditem = _this in magazines player;
-if (!_hasbuilditem) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]; };
+if (!_hasbuilditem) exitWith {DZE_ActionInProgress = false; format[localize "str_player_31",_text,"build"] call dayz_rollingMessages; };
 
-if (!_hasrequireditem) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_137"),_missing] , "PLAIN DOWN"]; };
+if (!_hasrequireditem) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_137",_missing] call dayz_rollingMessages; };
 if (_hasrequireditem) then {
 
 	_location = [0,0,0];
@@ -217,7 +217,7 @@ if (_hasrequireditem) then {
 
 	_position = getPosATL _object;
 
-	cutText [localize "str_epoch_player_45","PLAIN DOWN"];
+	localize "str_epoch_player_45" call dayz_rollingMessages;
 
 	_objHDiff = 0;
 
@@ -393,7 +393,7 @@ if (_hasrequireditem) then {
 		_tmpbuilt setPosATL _location;
 
 
-		cutText [format[(localize "str_epoch_player_138"),_text], "PLAIN DOWN"];
+		format[localize "str_epoch_player_138",_text] call dayz_rollingMessages;
 
 		_limit = 3;
 
@@ -455,7 +455,7 @@ if (_hasrequireditem) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format[(localize "str_epoch_player_139"),_text, _counter,_limit], "PLAIN DOWN"];
+			format[localize "str_epoch_player_139",_text, _counter,_limit] call dayz_rollingMessages;
 
 			if(_counter == _limit) exitWith {
 				_isOk = false;
@@ -469,7 +469,7 @@ if (_hasrequireditem) then {
 			_num_removed = ([player,_item] call BIS_fnc_invRemove);
 			if(_num_removed == 1) then {
 
-				cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
+				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
 				if (_isPole) then {
 					[] spawn player_plotPreview;
@@ -527,8 +527,8 @@ if (_hasrequireditem) then {
 					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
 					publicVariableServer "PVDZ_obj_Publish";
 
-					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5];
-                    systemChat format [(localize "str_epoch_player_140"),_combinationDisplay,_text];
+					format[localize "str_epoch_player_140",_combinationDisplay,_text] call dayz_rollingMessages;
+                    systemChat format[localize "str_epoch_player_140",_combinationDisplay,_text];
 
 				} else {
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
@@ -543,7 +543,7 @@ if (_hasrequireditem) then {
 				};
 			} else {
 				deleteVehicle _tmpbuilt;
-				cutText [localize "str_epoch_player_46","PLAIN DOWN"];
+				localize "str_epoch_player_46" call dayz_rollingMessages;
 			};
 
 		} else {
@@ -555,11 +555,11 @@ if (_hasrequireditem) then {
 
 			deleteVehicle _tmpbuilt;
 
-			cutText [localize "str_epoch_player_46","PLAIN DOWN"];
+			localize "str_epoch_player_46" call dayz_rollingMessages;
 		};
 
 	} else {
-		cutText [format[(localize "str_epoch_player_47"),_text,_reason], "PLAIN DOWN"];
+		format[localize "str_epoch_player_47",_text,_reason] call dayz_rollingMessages;
 	};
 };
 

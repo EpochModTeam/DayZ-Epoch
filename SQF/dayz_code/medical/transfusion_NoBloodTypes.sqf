@@ -6,7 +6,7 @@ _unit = (_this select 3) select 0;
 //_inPain = 		_unit getVariable ["USEC_inPain", false];
 //_lastused = 	_unit getVariable ["LastTransfusion", -(DZE_selfTransfuse_Values select 2)];
 
-// if (_lastused - time < 60) exitwith {cutText [format[(localize "str_actions_medical_18"),_text] , "PLAIN DOWN"]};
+// if (_lastused - time < 60) exitwith {format[localize "str_actions_medical_18",_text] call dayz_rollingMessages;};
 
 call fnc_usec_medic_removeActions;
 r_action = false;

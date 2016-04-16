@@ -5,7 +5,7 @@ _vehicle = _this select 3;
 {dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 
 _PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 10]) > 1;
-if (_PlayerNear) exitWith {dayz_myCursorTarget = objNull; cutText [localize "str_pickup_limit_5", "PLAIN DOWN"];};
+if (_PlayerNear) exitWith {dayz_myCursorTarget = objNull; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 dayz_myCursorTarget = _vehicle;
 _hitpoints = _vehicle call vehicle_getHitpoints;

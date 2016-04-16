@@ -1,4 +1,4 @@
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_24","PLAIN DOWN"]};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 private ["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling","_array","_cantype",
 "_emptycan","_isMan","_isAnimal","_isZombie","_started","_finished","_animState","_isRefuel"];
@@ -18,7 +18,7 @@ _isMan = _vehicle isKindOf "Man";
 _isAnimal = _vehicle isKindOf "Animal";
 _isZombie = _vehicle isKindOf "zZombie_base";
 
-if (_isMan or _isAnimal or _isZombie) exitWith { cutText [localize "str_refuel_notvehicle", "PLAIN DOWN"]; DZE_ActionInProgress = false;};
+if (_isMan or _isAnimal or _isZombie) exitWith { localize "str_refuel_notvehicle" call dayz_rollingMessages; DZE_ActionInProgress = false;};
 if (fuel _vehicle == 1) exitWith {DZE_ActionInProgress = false;};
 
 player removeAction s_player_fillfuel + _capacity;
@@ -68,13 +68,13 @@ if (!_fueling) then {
 			publicVariableServer "PVDZ_send";
 		};
 
-		cutText [format [localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
+		format[localize "str_player_05",_nameType,_canSize] call dayz_rollingMessages;
 		uiSleep 1;
 		call fnc_usec_medic_removeActions;
 	};
 	[player] allowGetIn true;
 } else {
-	cutText [localize "str_refuel_fail","PLAIN DOWN"];
+	localize "str_refuel_fail" call dayz_rollingMessages;
 };
 a_player_jerryfilling = false;
 r_action = false;

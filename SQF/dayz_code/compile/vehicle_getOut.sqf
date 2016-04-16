@@ -23,7 +23,7 @@ if (_unit == player) then {
 		PVDZ_Server_LogIt = format["Player %1 exited a vehicle(%2) close to buildable object as %3",_unit, (typeof _vehicle), _position];
 		publicVariableServer "PVDZ_Server_LogIt";
 
-		cutText ["Unable to exit vehicle too close to buildables objects", "PLAIN DOWN"];
+		"Unable to exit vehicle too close to buildables objects" call dayz_rollingMessages;
 
 	};
 };

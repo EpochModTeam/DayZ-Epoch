@@ -9,12 +9,12 @@ _hasSledgeHammer = "ItemSledge" in items player;
 _hasCrowbar = "ItemCrowbar" in items player;
 
 if (!_hasSledgeHammer) exitWith {
-	titleText ["You need a SledgeHammer to break into this compound" , "PLAIN DOWN"];
+	"You need a SledgeHammer to break into this compound" call dayz_rollingMessages;
 	uiSleep 1;
 };
 
 if (!_hasCrowbar) exitWith {
-	titleText ["You need a crowbar to break into this compound." , "PLAIN DOWN"];
+	"You need a crowbar to break into this compound." call dayz_rollingMessages;
 	uiSleep 1;
 };
 
@@ -30,13 +30,13 @@ while {_isOk} do {
 
 	if (!_hasSledgeHammer) exitWith {
 		_proceed = nil;
-		titleText ["You need a sledge hammer to break into a gate." , "PLAIN DOWN"];
+		"You need a sledge hammer to break into a gate." call dayz_rollingMessages;
 		uiSleep 1;
 	};
 
 	if (!_hasCrowbar) exitWith {
 		_proceed = nil;
-		titleText ["You need a crowbar to break into a gate." , "PLAIN DOWN"];
+		"You need a crowbar to break into a gate." call dayz_rollingMessages;
 		uiSleep 1;
 	};
 	
@@ -106,13 +106,13 @@ while {_isOk} do {
 			player removeWeapon "ItemSledge";
 			player addMagazine "ItemSledgeHandle";
 			player addMagazine "ItemSledgeHead";
-			titleText ["Your SledgeHammer handle has snapped." , "PLAIN DOWN"];
+			"Your SledgeHammer handle has snapped." call dayz_rollingMessages;
 		};
 
 		if ([0.04] call fn_chance) then {
 			player removeWeapon "ItemCrowbar";
 			player addWeapon "ItemCrowbarBent";
-			titleText ["Your crowbar has bent." , "PLAIN DOWN"];
+			"Your crowbar has bent." call dayz_rollingMessages;
 		};
 	};
 	
@@ -123,7 +123,7 @@ while {_isOk} do {
 		_proceed = true;
 	};
 	
-	titleText [format["Breaking into compound, attempt (%1 of %2).", _counter,_limit], "PLAIN DOWN"];
+	format["Breaking into compound, attempt (%1 of %2).", _counter,_limit] call dayz_rollingMessages;
 	uiSleep 0.03;
 };
 //Tool issues
@@ -136,7 +136,7 @@ if (!_proceed) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	titleText ["Break in cancelled." , "PLAIN DOWN"];
+	"Break in cancelled." call dayz_rollingMessages;
 };
 
 // Working-Factor for chopping wood.
@@ -144,11 +144,11 @@ if (!_proceed) then {
 
 //Completed but no success.
 if (_proceed and !_brokein) then {
-	titleText [format["Break in attempt completed with little success", _counter,_limit], "PLAIN DOWN"];
+	format["Break in attempt completed with little success", _counter,_limit] call dayz_rollingMessages;
 };
 //Completed and successful
 if (_proceed and _brokein) then {
-	titleText ["Break in attempt successful.", "PLAIN DOWN", 0.3];
+	"Break in attempt successful." call dayz_rollingMessages;
 	
 	//Open Gate.
 	_target animate ["DoorR", 1];

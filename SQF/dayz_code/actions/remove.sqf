@@ -1,4 +1,4 @@
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_88","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_88" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 /*
 delete object from db with extra waiting by [VB]AWOL
@@ -14,8 +14,8 @@ _activatingPlayer = player;
 _objOwnerID = _obj getVariable["CharacterID","0"];
 _isOwnerOfObj = (_objOwnerID == dayz_characterID);
 
-if (_obj in DZE_DoorsLocked) exitWith {DZE_ActionInProgress = false; cutText [localize "STR_EPOCH_ACTIONS_20","PLAIN DOWN"];};
-if (_obj getVariable ["GeneratorRunning", false]) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_89","PLAIN DOWN"];};
+if (_obj in DZE_DoorsLocked) exitWith {DZE_ActionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
+if (_obj getVariable ["GeneratorRunning", false]) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
 
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
@@ -68,11 +68,11 @@ if(_IsNearPlot >= 1) then {
 
 _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName");
 
-cutText [format[(localize "str_epoch_player_162"),_nameVehicle], "PLAIN DOWN"];
+format[localize "str_epoch_player_162",_nameVehicle] call dayz_rollingMessages;
 
 if (_isModular) then {
      //allow previous cutText to show, then show this if modular.
-     cutText [localize "STR_EPOCH_ACTIONS_21","PLAIN DOWN"];
+     localize "STR_EPOCH_ACTIONS_21" call dayz_rollingMessages;
 };
 
 // Alert zombies once.
@@ -137,7 +137,7 @@ while {_isOk} do {
 		_proceed = false;
 	};
 
-	cutText [format[(localize "str_epoch_player_163"), _nameVehicle, _counter,_limit], "PLAIN DOWN"];
+	format[localize "str_epoch_player_163",_nameVehicle,_counter,_limit] call dayz_rollingMessages;
 
 	if(_counter == _limit) exitWith {
 		_isOk = false;
@@ -155,7 +155,7 @@ if(_brokenTool) then {
 		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
 	};
 	if(([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {
-		cutText [format[(localize "str_epoch_player_164"),getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle], "PLAIN DOWN"];
+		format[localize "str_epoch_player_164",getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle] call dayz_rollingMessages;
 	};
 };
 
@@ -175,7 +175,7 @@ if (_proceed) then {
 			publicVariableServer "PVDZ_obj_Destroy";
 		};
 
-		cutText [format[(localize "str_epoch_player_165"),_nameVehicle], "PLAIN DOWN"];
+		format[localize "str_epoch_player_165",_nameVehicle] call dayz_rollingMessages;
 
 		_preventRefund = false;
 
@@ -195,7 +195,7 @@ if (_proceed) then {
 		};
 
 		if ((count _selectedRemoveOutput) <= 0) then {
-			cutText [localize "str_epoch_player_90","PLAIN DOWN"];
+			localize "str_epoch_player_90" call dayz_rollingMessages;
 		};
 
 		if (_ipos select 2 < 0) then {
@@ -231,7 +231,7 @@ if (_proceed) then {
 			player action ["Gear", _item];
 		};
 	} else {
-		cutText [localize "str_epoch_player_91","PLAIN DOWN"];
+		localize "str_epoch_player_91" call dayz_rollingMessages;
 	};
 
 } else {

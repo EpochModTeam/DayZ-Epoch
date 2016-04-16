@@ -45,7 +45,7 @@ if (["forest",dayz_surfaceType] call fnc_inString) then {
 	if (!isNull _findNearestTree) then {
 		_woodCutting = true;
 	} else {
-		cutText [localize "str_player_23", "PLAIN DOWN"];
+		localize "str_player_23" call dayz_rollingMessages;
 	};
 };
 
@@ -128,15 +128,15 @@ if (_woodCutting) then {
             
         if ((_counter == _countOut) || _breaking) exitWith {
             if (_breaking) then {
-                cutText [localize "str_HatchetHandleBreaks", "PLAIN DOWN"];
+                localize "str_HatchetHandleBreaks" call dayz_rollingMessages;
             } else {
-                cutText [localize "str_player_24_Stoped", "PLAIN DOWN"];
+                localize "str_player_24_Stoped" call dayz_rollingMessages;
             };
             _isOk = false;
             _proceed = true;
             uiSleep 1;
         };
-        cutText [format [localize "str_player_24_progress", _counter,_countOut], "PLAIN DOWN"];
+        format[localize "str_player_24_progress", _counter,_countOut] call dayz_rollingMessages;
     };
 
     if (_proceed) then {            
@@ -145,10 +145,10 @@ if (_woodCutting) then {
           PVDZ_objgather_Knockdown = [_findNearestTree,player];
           publicVariableServer "PVDZ_objgather_Knockdown";
         };            
-        //cutText [format["\n\nChopping down tree.], "PLAIN DOWN"];
-        //cutText [localize "str_player_25", "PLAIN DOWN"];
+        //"Chopping down tree." call dayz_rollingMessages;
+        //localize "str_player_25" call dayz_rollingMessages;
     } else {
-        cutText [localize "str_player_24_Stoped", "PLAIN DOWN"];
+        localize "str_player_24_Stoped" call dayz_rollingMessages;
 
         r_interrupt = false;
 

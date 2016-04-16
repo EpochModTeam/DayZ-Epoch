@@ -12,7 +12,7 @@ if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
 };
 
 if(isNull _cursorTarget) exitWith {
-    //cutText [localize "str_disassembleNoOption", "PLAIN DOWN"];
+    //localize "str_disassembleNoOption" call dayz_rollingMessages;
 	_msg = localize "str_disassembleNoOption";
 	_msg call dayz_rollingMessages;
 };
@@ -65,7 +65,7 @@ for "_i" from 1 to 20 do {
     } count _requiredTools;
 	
     if (!_toolsOK) exitWith {
-        //cutText [format [localize "str_disassembleMissingTool",getText (configFile >> "CfgWeapons" >> _x >> "displayName"),_displayname], "PLAIN DOWN"];//["Missing %1 to disassemble %2."
+        //format[localize "str_disassembleMissingTool",getText (configFile >> "CfgWeapons" >> _x >> "displayName"),_displayname] call dayz_rollingMessages;//["Missing %1 to disassemble %2."
     	_msg = format [localize "str_disassembleMissingTool",getText (configFile >> "CfgWeapons" >> _x >> "displayName"),_displayname];
 		_msg call dayz_rollingMessages;
 	};
@@ -169,7 +169,7 @@ if (!_realObjectStillThere) then {
 
 _msg = localize "str_disassembleDone";
 _msg call dayz_rollingMessages;
-//cutText [localize "str_disassembleDone", "PLAIN DOWN"];
+//localize "str_disassembleDone" call dayz_rollingMessages;
 
 _cursorTarget setVariable["ObjectLocked",0,true];
 

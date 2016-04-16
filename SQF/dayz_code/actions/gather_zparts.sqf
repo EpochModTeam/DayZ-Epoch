@@ -1,5 +1,5 @@
 private ["_item","_type","_hasHarvested","_config","_knifeArray","_playerNear","_isListed","_activeKnife","_text","_sharpnessRemaining","_qty","_chance","_msg","_string"];
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_31","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_31" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _item = _this select 3;
@@ -11,14 +11,14 @@ player removeAction s_player_butcher;
 s_player_butcher = -1;
 
 _playerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 10]) > 1;
-if (_playerNear) exitWith {cutText [localize "str_pickup_limit_5","PLAIN DOWN"]; DZE_ActionInProgress = false;};
+if (_playerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages; DZE_ActionInProgress = false;};
 
 //Count how many active tools the player has
 {
 	if (_x in items player) then {_knifeArray set [count _knifeArray, _x];};
 } count Dayz_Gutting;
 
-if ((count _knifeArray) < 1) exitWith {cutText [localize "str_cannotgut","PLAIN DOWN"]; DZE_ActionInProgress = false; };
+if ((count _knifeArray) < 1) exitWith {localize "str_cannotgut" call dayz_rollingMessages; DZE_ActionInProgress = false; };
 
 if ((count _knifeArray > 0) && !_hasHarvested) then {
 	private "_qty";
@@ -79,7 +79,6 @@ if ((count _knifeArray > 0) && !_hasHarvested) then {
 	_string = format[localize "str_success_gutted_animal",_text,_qty]; //%1 has been gutted, %2 meat steaks now on the carcass
 	closeDialog 0;
 	uiSleep 0.02;
-	//cutText [_string, "PLAIN DOWN"];
 	_string call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;

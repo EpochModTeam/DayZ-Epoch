@@ -13,7 +13,7 @@ if (0 != count Dayz_constructionContext) then {
             Dayz_BuildCamera camsetrelpos [-1,0,60];
             Dayz_BuildCamera camcommit 0;
             Dayz_constructionContext set [3, true];
-            cutText [localize "str_buildCameraOn", "PLAIN DOWN"];
+            localize "str_buildCameraOn" call dayz_rollingMessages;
         };
     }
     else {
@@ -22,7 +22,7 @@ if (0 != count Dayz_constructionContext) then {
         player switchCamera (Dayz_constructionContext select 2);
         camdestroy Dayz_BuildCamera;
         Dayz_constructionContext set [3, false];
-        cutText [localize "str_buildCameraOff", "PLAIN DOWN"];
+        localize "str_buildCameraOff" call dayz_rollingMessages;
     };
     _handled = true; // used by keyboard.sqf
 };    

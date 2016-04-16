@@ -3,7 +3,7 @@
 */
 private ["_activatingPlayer","_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_packedClass","_text","_playerNear"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_15","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_15" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -19,7 +19,7 @@ if(isNull _obj || !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
 
 _playerNear = _obj call dze_isnearest_player;
 
-if(_playerNear) exitWith {DZE_ActionInProgress = false; cutText [localize "str_epoch_player_16","PLAIN DOWN"];};
+if(_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_16" call dayz_rollingMessages;};
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
@@ -28,23 +28,23 @@ _objectUID	= _obj getVariable["ObjectUID","0"];
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
-if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_118"),_text], "PLAIN DOWN"];};
+if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_118",_text] call dayz_rollingMessages;};
 
-if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_119"),_text], "PLAIN DOWN"];};
+if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
 
 _alreadyPacking = _obj getVariable["packing",0];
 
-if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; cutText [format[(localize "str_epoch_player_120"),_text] , "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_120",_text] call dayz_rollingMessages;};
 _obj setVariable["packing",1];
 
-cutText [format[(localize "str_epoch_player_121"),_text], "PLAIN DOWN"];
+format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
 uiSleep 1; 
 _location1 = getPosATL player;
 uiSleep 5;
 _location2 = getPosATL player;
 	
 if(_location1 distance _location2 > 0.1) exitWith {
-	cutText [format[(localize "str_epoch_player_122"),_text] , "PLAIN DOWN"];
+	format[localize "str_epoch_player_122",_text] call dayz_rollingMessages;
 	_obj setVariable["packing",0];
 	s_player_packvault = -1;
 	DZE_ActionInProgress = false;
@@ -114,7 +114,7 @@ if(!isNull _obj && alive _obj) then {
 		_countr = _countr + 1;
 	} count _objWpnTypes;
 	
-	cutText [format[(localize "str_epoch_player_123"),_text], "PLAIN DOWN"];
+	format[localize "str_epoch_player_123",_text] call dayz_rollingMessages;
 
 	player action ["Gear", _holder];
 };

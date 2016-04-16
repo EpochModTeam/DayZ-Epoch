@@ -46,7 +46,7 @@ _hasInput = true;
 	if (_avail < _amount) exitWith {
 		_hasInput = false;
 		_itemName = getText(configFile >> _selection >> _item >> "displayName");
-		cutText [format [localize "str_crafting_missing",(_amount - _avail),_itemName], "PLAIN DOWN"];
+		format[localize "str_crafting_missing",(_amount - _avail),_itemName] call dayz_rollingMessages;
 	};
 } forEach (_input + _required);
 

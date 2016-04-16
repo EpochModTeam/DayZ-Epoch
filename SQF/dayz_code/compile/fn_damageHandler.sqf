@@ -83,7 +83,7 @@ if (_unit == player) then
 			[_unit] spawn {
 				private ["_unit"];
 				_unit = _this select 0;
-				cutText [localize "str_player_tranquilized", "PLAIN DOWN"]; 
+				localize "str_player_tranquilized" call dayz_rollingMessages; 
 				//systemChat format ["YOU HAVE BEEN TRANQUILISED"];
 				//uiSleep 2;
 				// 0 fadeSound 0.05;
@@ -102,7 +102,7 @@ if (_unit == player) then
 			if ((_isHeadHit) and (_ammo in ["Crowbar_Swing_Ammo","Bat_Swing_Ammo","Sledge_Swing_Ammo"])) then {
 				[_unit] spawn {
 					 _unit = _this select 0;
-					cutText ["you have been knocked out", "PLAIN DOWN"]; 
+					"you have been knocked out" call dayz_rollingMessages; 
 					[_unit,0.01] call fnc_usec_damageUnconscious;
 					_unit setVariable ["NORRN_unconscious", true, true];
 					r_player_timeout = 20 + round(random 60);

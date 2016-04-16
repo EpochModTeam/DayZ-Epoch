@@ -32,14 +32,14 @@ _fn_Lockold = {
 		_target animate ["DoorR", 0];
 		_target animate ["DoorL", 0];
 		_target setVariable ["isOpen", "0", true];
-		cutText ["Gates locked.", "PLAIN DOWN"];
+		"Gates locked." call dayz_rollingMessages;
 	};
 };
 
 _fn_UnLockold = {
 	if (typeOf _target in ["WoodenGate_2","WoodenGate_3","WoodenGate_4"]) then {
 		_target setVariable ["isOpen", "1", true];
-		cutText ["Gates Unlocked.", "PLAIN DOWN"];
+		"Gates Unlocked." call dayz_rollingMessages;
 	};
 };
 
@@ -47,7 +47,7 @@ _fn_Open = {
 	if (typeOf _target in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4"]) then {
 		_target animate ["DoorR", 1];
 		_target animate ["DoorL", 1];
-		cutText ["Gates Opened.", "PLAIN DOWN"];
+		"Gates Opened." call dayz_rollingMessages;
 	};
 };
 
@@ -55,7 +55,7 @@ _fn_Closed = {
 	if (typeOf _target in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4"]) then {
 		_target animate ["DoorR", 0];
 		_target animate ["DoorL", 0];
-		cutText ["Gates Closed.", "PLAIN DOWN"];
+		"Gates Closed." call dayz_rollingMessages;
 	};
 };
 

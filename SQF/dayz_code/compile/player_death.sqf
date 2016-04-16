@@ -138,7 +138,7 @@ playMusic "dayz_track_death_1";
 uiSleep 2;
 
 for  "_x" from 5 to 1 step -1 do {
-	titleText [format[localize "str_return_lobby", _x], "PLAIN DOWN", 1];
+	format[localize "str_return_lobby",_x] call dayz_rollingMessages;
 	uiSleep 1;
 };
 

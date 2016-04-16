@@ -11,7 +11,7 @@ _text = getText (_config >> "displayName");
 
 // item is missing or tools are missing
 if (!(_item in magazines player) && !(_itemPile in magazines player)) exitWith {
-	//cutText [localize "str_player_22", "PLAIN DOWN"];
+	//localize "str_player_22" call dayz_rollingMessages;
 	(localize "str_player_22") call dayz_rollingMessages;
 };
 
@@ -19,10 +19,10 @@ _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, test
 _worldspace = ["Land_Fire_DZ", player, _booleans] call fn_niceSpot;
 
 // player on ladder or in a vehicle
-if (_booleans select 0) exitWith { cutText [localize "str_player_21", "PLAIN DOWN"]; };
+if (_booleans select 0) exitWith { localize "str_player_21" call dayz_rollingMessages; };
 
 // object would be in the water (pool or sea)
-if ((_booleans select 1) OR (_booleans select 2)) exitWith { cutText [localize "str_player_26", "PLAIN DOWN"]; };
+if ((_booleans select 1) OR (_booleans select 2)) exitWith { localize "str_player_26" call dayz_rollingMessages; };
 
 if ((count _worldspace) == 2) then {
 	if (_item in magazines player) then {
@@ -60,9 +60,9 @@ if ((count _worldspace) == 2) then {
 		achievement = [14, player, dayz_characterID];
 		publicVariableServer "achievement";
 	};
-	//cutText [localize "str_fireplace_01", "PLAIN DOWN"];
+	//localize "str_fireplace_01" call dayz_rollingMessages;
 	(localize "str_fireplace_01") call dayz_rollingMessages;
 } else {
-	//cutText [localize "str_fireplace_02", "PLAIN DOWN"];
+	//localize "str_fireplace_02" call dayz_rollingMessages;
 	(localize "str_fireplace_0") call dayz_rollingMessages;
 };

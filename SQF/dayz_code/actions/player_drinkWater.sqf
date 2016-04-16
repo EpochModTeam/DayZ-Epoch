@@ -12,7 +12,7 @@ _pondPos = [];
 _objectsWell = [];
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText [localize "str_player_21", "PLAIN DOWN"]};
+if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
 
 _itemorignal = _this;
 //diag_log(str(_itemorignal));
@@ -77,7 +77,7 @@ if (_canFill) then {
 			};
 		};
 	};
-	cutText [localize "str_drinkwithhands", "PLAIN DOWN"];
+	localize "str_drinkwithhands" call dayz_rollingMessages;
 } else {
-	cutText [localize "str_player_32", "PLAIN DOWN"];
+	localize "str_player_32" call dayz_rollingMessages;
 };

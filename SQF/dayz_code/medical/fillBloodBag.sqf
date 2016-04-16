@@ -22,9 +22,9 @@ _bloodDrained = false;
 _forceExit = false;
 _UID = getPlayerUID player;
 if ((isNil "_UID") or (_UID == "0")) exitWith {};
-if (!_hasEmptyBag) exitWith { cutText [localize "str_actions_medical_bagEmpty", "PLAIN DOWN"]; };
+if (!_hasEmptyBag) exitWith { localize "str_actions_medical_bagEmpty" call dayz_rollingMessages; };
 
-if (_bloodLevel <= 4200) exitWith {cutText [localize "str_actions_medical_bagMissingBlood", "PLAIN DOWN"];};
+if (_bloodLevel <= 4200) exitWith {localize "str_actions_medical_bagMissingBlood" call dayz_rollingMessages;};
 
 if (!(alive _victim)) then {
 	_bloodDrained = _victim getVariable ["bloodTaken", false];
@@ -32,7 +32,7 @@ if (!(alive _victim)) then {
 	_victim setVariable ["bloodTaken", true, true];
 };
 
-if (_forceExit) exitWith {cutText [localize "str_actions_medical_bagMissingBlood", "PLAIN DOWN"];};
+if (_forceExit) exitWith {localize "str_actions_medical_bagMissingBlood" call dayz_rollingMessages;};
 
 if (vehicle player == player) then {
 	//not in a vehicle
@@ -45,7 +45,7 @@ while {r_doLoop and (_i < 25)} do {
 
 	if (_isMedic and !_started) then {
 		player removeMagazine "emptyBloodBag";
-		cutText [localize "str_actions_medical_transfusion_start", "PLAIN DOWN"];
+		localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 		[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_start","PLAIN DOWN"] call RE;
 		_started = true;
 	};
@@ -68,7 +68,7 @@ while {r_doLoop and (_i < 25)} do {
 	_bloodAfter = (_blood - 4000);
 
 	if ((_blood <= _bloodAfter) or (_i == 25)) then {
-		cutText [localize "str_actions_medical_bagDone", "PLAIN DOWN"];
+		localize "str_actions_medical_bagDone" call dayz_rollingMessages;
 		[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagDone","PLAIN DOWN"] call RE;
 		//_victim setVariable ["USEC_BloodQty", _bloodAfter, true];
 		r_doLoop = false;
@@ -80,7 +80,7 @@ while {r_doLoop and (_i < 25)} do {
 	if (!_isClose) then {
 		r_doLoop = false;
 		r_interrupt = true;
-		cutText [localize "str_actions_medical_bagInterrupted", "PLAIN DOWN"];
+		localize "str_actions_medical_bagInterrupted" call dayz_rollingMessages;
 		[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagInterrupted","PLAIN DOWN"] call RE;
 	};
 };

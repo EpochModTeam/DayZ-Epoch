@@ -6,8 +6,8 @@ _config = configFile >> "CfgWeapons" >> _item;
 _droppedType = getText (_config >> "droppeditem");
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith { cutText [localize "str_player_21", "PLAIN DOWN"]; r_action_count = 0; };
-if (r_action_count != 1) exitWith { cutText [localize "str_player_actionslimit", "PLAIN DOWN"]; };
+if (_onLadder) exitWith { localize "str_player_21" call dayz_rollingMessages; r_action_count = 0; };
+if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
 call gear_ui_init;
 

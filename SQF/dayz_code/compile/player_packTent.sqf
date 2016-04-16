@@ -1,7 +1,7 @@
 /*
 [_obj] call player_packTent;
 */
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_player_beingpacked","PLAIN DOWN"];};
+if (DZE_ActionInProgress) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
@@ -22,7 +22,7 @@ if (_ownerID == dayz_characterID or (typeOf _obj in _campItems)) then { _pickup 
 
 if (_pickup) then {
 	_alreadyPacking = _obj getVariable["packing",0];
-	if (_alreadyPacking == 1) exitWith {cutText [format [localize "str_player_beingpacked"],"PLAIN DOWN"]; DZE_ActionInProgress = false;};
+	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages; DZE_ActionInProgress = false;};
 
 	_obj setVariable["packing",1];
 	_dir = direction _obj;
@@ -76,8 +76,8 @@ if (_pickup) then {
 		_countr = _countr + 1;
 	} count _objWpnTypes;
 
-	cutText [localize "str_success_tent_pack", "PLAIN DOWN"];
+	localize "str_success_tent_pack" call dayz_rollingMessages;
 } else {
-	cutText [localize "str_fail_tent_pack", "PLAIN DOWN"];
+	localize "str_fail_tent_pack" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;

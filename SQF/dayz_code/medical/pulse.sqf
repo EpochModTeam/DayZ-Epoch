@@ -5,11 +5,11 @@ _isCardiac = _unit getVariable["USEC_isCardiac",false];
 
 uiSleep 1;
 if (_isDead) then {
-	cutText [localize "str_pulse_extremely_weak","PLAIN DOWN"];
+	localize "str_pulse_extremely_weak" call dayz_rollingMessages;
 } else {
 	if (_isCardiac) then {
-		cutText [localize "str_pulse_weak","PLAIN DOWN"];
+		localize "str_pulse_weak" call dayz_rollingMessages;
 	} else {
-		cutText [localize "str_pulse_strong","PLAIN DOWN"];
+		localize "str_pulse_strong" call dayz_rollingMessages;
 	};
 };

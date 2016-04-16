@@ -37,7 +37,7 @@ s_player_destorytent = -1;
 //Make sure you can only destory once
 _alreadyDestorying = _obj getVariable["alreadyDestorying",0];
 
-if (_alreadyDestorying == 1) exitWith {cutText [localize "str_TentAlreadyLit" , "PLAIN DOWN"]};
+if (_alreadyDestorying == 1) exitWith {localize "str_TentAlreadyLit" call dayz_rollingMessages;};
 
 _obj setVariable["alreadyDestorying",1];
 
@@ -107,4 +107,4 @@ publicVariable "PVDZ_obj_Fire";
 _obj inflame true;
 //_obj spawn player_fireMonitor;
 
-cutText [localize "str_success_tent_destoryed", "PLAIN DOWN"];
+localize "str_success_tent_destoryed" call dayz_rollingMessages;

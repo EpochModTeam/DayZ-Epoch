@@ -26,6 +26,6 @@ R3F_TIRED_FNCT_DoBlackVanish = {
 	[player,0.1] call fnc_usec_damageUnconscious;
 	_refObj = player;
 	[_refObj,"scream",3,false] call dayz_zombieSpeak;
-	cutText ["You are overburdened.", "PLAIN DOWN"];
+	"You are overburdened." call dayz_rollingMessages;
 };
 

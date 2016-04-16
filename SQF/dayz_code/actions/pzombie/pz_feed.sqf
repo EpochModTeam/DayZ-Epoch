@@ -87,7 +87,7 @@ if !(alive _item) then {
 	_control ctrlShow true;
 
 
-	cutText [format[(localize  "str_player_consumed"),(getText (configFile >> "CfgVehicles" >> _animalType >> "displayName"))], "PLAIN DOWN"];
+	format[localize "str_player_consumed",getText(configFile >> "CfgVehicles" >> _animalType >> "displayName")] call dayz_rollingMessages;
 	player switchmove "";
 };
 

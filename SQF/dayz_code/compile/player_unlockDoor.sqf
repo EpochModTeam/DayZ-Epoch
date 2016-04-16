@@ -5,7 +5,7 @@
 */
 private ["_display","_obj","_objectCharacterID"];
 
-if (!isNil "DZE_DYN_UnlockDoorInprogress") exitWith {cutText [localize "str_epoch_player_21","PLAIN DOWN"];};
+if (!isNil "DZE_DYN_UnlockDoorInprogress") exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 
 DZE_DYN_UnlockDoorInprogress = true;
 
@@ -24,7 +24,7 @@ if (!isNull dayz_selectedDoor) then {
 		// close display since another player is closer
 		_display = findDisplay 41144;
 		_display closeDisplay 3000;
-		cutText [localize "STR_EPOCH_ACTIONS_16","PLAIN DOWN"];
+		localize "STR_EPOCH_ACTIONS_16" call dayz_rollingMessages;
 	} else {
 		// get object combination
 		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
@@ -57,7 +57,7 @@ if (!isNull dayz_selectedDoor) then {
 			if (!isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
 			if (KeyCodeTry >= ((round(random 4)) + 4)) then {	
 				if (isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};	
-				cutText [localize "str_epoch_player_19","PLAIN DOWN"];
+				localize "str_epoch_player_19" call dayz_rollingMessages;
 				_display = findDisplay 41144;
 				_display closeDisplay 3000;
 			};

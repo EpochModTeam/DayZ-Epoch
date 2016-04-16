@@ -5,7 +5,7 @@ _item = _this;
 call gear_ui_init;
 closeDialog 1;
 
-if(dayz_workingInprogress) exitWith { cutText ["Mining already in progress!", "PLAIN DOWN"];};
+if(dayz_workingInprogress) exitWith { "Mining already in progress!" call dayz_rollingMessages;};
 dayz_workingInprogress = true;
 
 // allowed rocks list move this later
@@ -115,19 +115,19 @@ if (!isNull _findNearestRock) then {
             
         if ((_counter >= _countOut) || _breaking) exitWith {
             if (_breaking) then {
-                cutText [localize "str_PickAxeHandleBreaks", "PLAIN DOWN"];
+                localize "str_PickAxeHandleBreaks" call dayz_rollingMessages;
             } else {
-				cutText [localize "str_mining_finished", "PLAIN DOWN"];
+				localize "str_mining_finished" call dayz_rollingMessages;
             };
             _isOk = false;
             _proceed = true;
             uiSleep 1;
         };
-		cutText [format[localize "str_mining_progress", _counter,(_countOut - _counter)], "PLAIN DOWN"];
+		format[localize "str_mining_progress", _counter,(_countOut - _counter)] call dayz_rollingMessages;
     };
 
     if (!_proceed) then {            
-        cutText [localize "str_mining_canceled", "PLAIN DOWN"];
+        localize "str_mining_canceled" call dayz_rollingMessages;
 
         r_interrupt = false;
 
@@ -146,7 +146,7 @@ if (!isNull _findNearestRock) then {
 		case "MeleeSledge": {player addMagazine 'Sledge_Swing';};
     };
 } else {
-	cutText [localize "str_mining_no_rocks", "PLAIN DOWN"];
+	localize "str_mining_no_rocks" call dayz_rollingMessages;
 };
 
 dayz_workingInprogress = false;

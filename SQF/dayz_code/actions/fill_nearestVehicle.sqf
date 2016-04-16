@@ -1,6 +1,6 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_isVehicle","_configSrcVeh","_capacitySrc","_nameTextSrc","_isFillok","_curFuelSrc","_newFuelSrc","_vehicleSrc"];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_24","PLAIN DOWN"]};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _isVehicle = false;
@@ -47,7 +47,7 @@ if(_IsNearVehicle >= 1) then {
 		// qty to add per loop
 		_canSize = (_capacity / 10);
 	
-		cutText [format[(localize "str_epoch_player_131"),_nameText], "PLAIN DOWN"];
+		format[localize "str_epoch_player_131",_nameText] call dayz_rollingMessages;
 			
 		// alert zombies
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
@@ -138,7 +138,7 @@ if(_IsNearVehicle >= 1) then {
 				// Play sound
 				[player,"refuel",0,false] call dayz_zombieSpeak;
 
-				cutText [format[(localize "str_epoch_player_132"),_nameText,round(_newFuel*100)], "PLAIN DOWN"];
+				format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call dayz_rollingMessages;
 			};
 		};
 
@@ -147,6 +147,6 @@ if(_IsNearVehicle >= 1) then {
 	};
 
 } else {
-	cutText [localize "str_epoch_player_27","PLAIN DOWN"];
+	localize "str_epoch_player_27" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;

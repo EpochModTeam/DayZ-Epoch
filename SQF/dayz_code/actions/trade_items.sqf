@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_activatingPlayer","_traderID","_done"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if (DZE_ActionInProgress) exitWith {cutText [localize "str_epoch_player_103","PLAIN DOWN"]};
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -30,7 +30,7 @@ while {r_autoTrade} do {
 
 	// check if current magazine count is greater than 20
 
-	if ((count (magazines player)) > 20) exitWith {cutText [localize "str_player_24","PLAIN DOWN"]; r_autoTrade = false};
+	if ((count (magazines player)) > 20) exitWith {localize "str_player_24" call dayz_rollingMessages; r_autoTrade = false};
 	
 	_canAfford = false;
 	if(_bos == 1) then {
@@ -55,11 +55,11 @@ while {r_autoTrade} do {
 	if(!_canAfford) exitWith {
 		_qty = {_x == _part_in} count magazines player;
 		_needed =  _qty_in - _qty;
-		cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 		r_autoTrade = false
 	};
 	
-	cutText [localize "str_epoch_player_105","PLAIN DOWN"];
+	localize "str_epoch_player_105" call dayz_rollingMessages;
 
 	["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
@@ -98,7 +98,7 @@ while {r_autoTrade} do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [localize "str_epoch_player_106","PLAIN DOWN"];
+		localize "str_epoch_player_106" call dayz_rollingMessages;
 	};
 
 	if (_finished) then {
@@ -126,11 +126,11 @@ while {r_autoTrade} do {
 					for "_x" from 1 to _qty_out do {
 						player addMagazine _part_out;
 					};
-					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 				};
 			} else {
 				_abort = true;
-				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
+				format[localize "str_epoch_player_183",_textPartOut] call dayz_rollingMessages;
 			};
 		} else {
 			_part_inClass =  configFile >> "CfgMagazines" >> _part_in;
@@ -138,7 +138,7 @@ while {r_autoTrade} do {
 			if (_removed == _qty_in) then {
 				[[[_part_out,_qty_out]],1] call epoch_returnChange;
 			};
-			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+			format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 		};
 		dayzTradeResult = nil;
 	};

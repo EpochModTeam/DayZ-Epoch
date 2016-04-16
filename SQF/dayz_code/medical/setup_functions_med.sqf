@@ -166,7 +166,7 @@ fnc_usec_calculateBloodPerSec = {
 			
 			if ((_time < 1) and (isNil "sepsisStarted")) then {
 			//if (isNil "sepsisStarted") then {
-				//cutText [localize "str_medical_sepsis_warning","PLAIN DOWN",5];
+				//localize "str_medical_sepsis_warning" call dayz_rollingMessages;
 				systemChat (localize "str_medical_sepsis_warning");
 				player setVariable ["sepsisStarted", _time];
 			};
