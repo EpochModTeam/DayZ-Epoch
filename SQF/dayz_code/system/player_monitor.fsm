@@ -988,9 +988,6 @@ class FSM
                          "  };" \n
                          "} count allMissionObjects ""SpawnableWreck"";" \n
                          "{deleteVehicle _x} count (_setPos nearEntities [""zZombie_Base"",30]);" \n
-						 "diag_log [ 'resetting keyboard events',(MISSION_ROOT+'keyboard.sqf')];" \n
-                         "keyboard_keys = nil;" \n
-                         "[controlNull, 1, false,false,false] call compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');" \n
 						 "" \n
                          "if(dayz_paraSpawn && (freshSpawn == 2)) then {" \n
                          "	player setDir _setDir;" \n

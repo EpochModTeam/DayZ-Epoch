@@ -65,6 +65,11 @@ class Category_541 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
+	class emptyBloodBag {
+		type = "trade_items";
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
 	class ItemEpinephrine {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

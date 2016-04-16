@@ -3,12 +3,8 @@ disableSerialization;
 _control = _this select 0;
 _button = _this select 1;
 _parent = findDisplay 106;
-_itemData = gearSlotData _control;
 
 if (carryClick) then {carryClick = false;};
-
-// No right click option on bloodbags if DZE_SelfTransfuse = false;
-if (!DZE_SelfTransfuse && {(_itemData == "ItemBloodbag") or (_itemData in dayz_typedBags)}) exitWith {};
 
 if (_button == 1) then {
 	private ["_conf","_name","_compile","_height","_item"];
@@ -16,7 +12,8 @@ if (_button == 1) then {
 
 	_pos = ctrlPosition _group;
 
-	_item = gearSlotData _control;
+	_item = gearSlotData _control;	
+	if (!DZE_SelfTransfuse && {_item == "ItemBloodbag" or _item in ["wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]}) exitWith {}; // No right click option on bloodbags if DZE_SelfTransfuse = false;
 	if (mouseOverCarry) then {
 		_item = DayZ_onBack;
 		carryClick = true;
