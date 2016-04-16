@@ -19,7 +19,7 @@ _name = getText(configFile >> "CfgMagazines" >> _create >> "displayName");
 _magCount = {_x == _create} count magazines player;
 
 if (_magCount == 1) exitWith {
-	format[localize "str_cannotCombine", _name] call dayz_rollingMessages;
+	[format[localize "str_cannotCombine", _name],1] call dayz_rollingMessages;
 	r_action_count = 0;
 };
 
@@ -74,10 +74,10 @@ switch true do {
 		format[localize "str_combineDoneFull",_magCount, _name, _qtynew_create_mags_full,_magFull] call dayz_rollingMessages;
 		};
 	case (_qtynew_create_mags_full == 0) : {
-		format[localize "str_combineDonePartialOne",_magCount, _name, _qtynew_create_ammo_rest,_magAmmunition] call dayz_rollingMessages;
+		[format[localize "str_combineDonePartialOne",_magCount, _name, _qtynew_create_ammo_rest,_magAmmunition],1] call dayz_rollingMessages;
 		};
 	default {
-		format[localize "str_combineDonePartial",_magCount, _name, _qtynew_create_mags_full, _qtynew_create_ammo_rest,_magAmmunition,_magFullSingular,_magFull] call dayz_rollingMessages;
+		[format[localize "str_combineDonePartial",_magCount, _name, _qtynew_create_mags_full, _qtynew_create_ammo_rest,_magAmmunition,_magFullSingular,_magFull],1] call dayz_rollingMessages;
 	};
 };
 

@@ -30,12 +30,12 @@ while {(!isNull _display) && !r_player_dead} do {
 		case (_playerCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 30)", _btnAbortText];
-			localize "str_abort_playerclose" call dayz_rollingMessages;
+			[localize "str_abort_playerclose",1] call dayz_rollingMessages;
 		};
 		case (_zedCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
-			localize "str_abort_zedsclose" call dayz_rollingMessages;
+			[localize "str_abort_zedsclose",1] call dayz_rollingMessages;
 		};
 		case (_inCombat && !_zedCheck && !_playerCheck) : {
 			_btnAbort ctrlEnable false;

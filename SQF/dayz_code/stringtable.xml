@@ -1565,39 +1565,39 @@
 			<German>Dieses Objekt kann nicht erweitert werden.</German>
 		</Key>
 		<Key ID="str_bombAttached">
-			<English>\n\nAttached Carbomb! Next Survivor who starts the engine will blow up!</English>
-			<Russian>Бомба установлена! \nВыжившего, который решится завести двигатель разорвет на кусочки!</Russian>
-			<French>\nLa bombe est posée ! La prochaine personne qui démarre\nle véhicule sera éparpillée façon puzzle.</French>
-			<Czech>\n\nBomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
-			<German>\n\nSprengsatz angebracht! Der nächste Survivor, der den Motor startet, wird in die Luft fliegen!</German>
+			<English>Attached Carbomb! Next Survivor who starts the engine will blow up!</English>
+			<Russian>Бомба установлена! Выжившего, который решится завести двигатель разорвет на кусочки!</Russian>
+			<French>La bombe est posée ! La prochaine personne qui démarre le véhicule sera éparpillée façon puzzle.</French>
+			<Czech>Bomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
+			<German>Sprengsatz angebracht! Der nächste Survivor, der den Motor startet, wird in die Luft fliegen!</German>
 		</Key>
 		<Key ID="str_bombAlready">
-			<English>\n\nThis vehicle already has a bomb attached!</English>
+			<English>This vehicle already has a bomb attached!</English>
 			<Russian>На этот транспорт уже установлена бомба!</Russian>
-			<French>\n\nCe véhicule a déjà une bombe de posée</French>
-			<Czech>\n\nNa tomto vozidle je již bomba umístěna!</Czech>
-			<German>\n\nAn diesem Fahrzeug ist schon ein Sprengsatz angebracht!</German>
+			<French>Ce véhicule a déjà une bombe de posée</French>
+			<Czech>Na tomto vozidle je již bomba umístěna!</Czech>
+			<German>An diesem Fahrzeug ist schon ein Sprengsatz angebracht!</German>
 		</Key>
 		<Key ID="str_bombMissing">
-			<English>\n\nYou don&apos;t have a bomb in your inventory</English>
+			<English>You don&apos;t have a bomb in your inventory</English>
 			<Russian>Нужна бомба в инвентаре</Russian>
-			<French>\n\nVous n&apos;avez pas de bombe</French>
-			<Czech>\n\nNemáte u sebe bombu.</Czech>
-			<German>\n\nDu hast keinen Sprengsatz in deinem Inventar!</German>
+			<French>Vous n&apos;avez pas de bombe</French>
+			<Czech>Nemáte u sebe bombu.</Czech>
+			<German>Du hast keinen Sprengsatz in deinem Inventar!</German>
 		</Key>
 		<Key ID="str_bombToolMissing">
-			<English>\n\nYou need a toolbox and a crowbar to attach the bomb to this vehicle</English>
+			<English>You need a toolbox and a crowbar to attach the bomb to this vehicle</English>
 			<Russian>Нужен ломик и ящик с инструментами, чтобы установить бомбу</Russian>
-			<French>\n\nUne boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe</French>
-			<Czech>\n\nK umístění bomby na tomto vozidle bude třeba sada nářadí a páčidlo.</Czech>
-			<German>\n\nDu benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
+			<French>Une boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe</French>
+			<Czech>K umístění bomby na tomto vozidle bude třeba sada nářadí a páčidlo.</Czech>
+			<German>Du benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
 		</Key>
 		<Key ID="str_choppingTree">
-			<English>\n\nChopping down tree.</English>
+			<English>Chopping down tree.</English>
 			<Russian>Рубим дерево</Russian>
-			<French>\n\nAbattage de l&apos;arbre</French>
-			<Czech>\n\nPorážíte strom.</Czech>
-			<German>\n\nBaum wird gefällt</German>
+			<French>Abattage de l&apos;arbre</French>
+			<Czech>Porážíte strom.</Czech>
+			<German>Baum wird gefällt</German>
 		</Key>
 		<Key ID="str_cannotCombine">
 			<English>You have only one %1\nThere&apos;s nothing to combine.</English>
@@ -6725,7 +6725,7 @@
 			<German>Du hast das Zelt erfolgreich aufgeschlagen.</German>
 			<Russian>Вы установили палатку.</Russian>
 			<Spanish>Asentaste tu carpa.</Spanish>
-			<French>\n\nVous avez installé votre tente.</French>
+			<French>Vous avez installé votre tente.</French>
 			<Czech>Postavili jste stan.</Czech>
 		</Key>
 		<Key ID="str_fail_tent_pitch">
@@ -6733,7 +6733,7 @@
 			<German>Du kannst hier kein Zelt aufbauen, da der Untergrund nicht flach und frei von Hindernissen ist.</German>
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>\n\nVous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
+			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Stan zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_success_stash_pitch">
@@ -6749,7 +6749,7 @@
 			<German>%1 kann hier nicht angelegt werden. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Нельзя установить %1 тут. Поверхность должна быть ровной, без объектов поблизости.</Russian>
 			<Spanish>No puedes ubicar una %1 aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>\n\nVous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
+			<French>Vous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
 			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které by mohly bránit stavbě.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food">
@@ -6757,7 +6757,7 @@
 			<German>Du hast %1 gegessen.</German>
 			<Russian>Вы съели %1.</Russian>
 			<Spanish>Comiste %1.</Spanish>
-			<French>\n\nVous avez mangé un(e) %1.</French>
+			<French>Vous avez mangé un(e) %1.</French>
 			<Czech>Snědli jste %1.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_1">
@@ -6765,15 +6765,15 @@
 			<German>Du hast %1 aufgegessen und wirst langsam satt.</German>
 			<Russian>Вы съели %1 и чувствуете себя сытым...</Russian>
 			<Spanish>Comiste %1 y te empiezas a sentir lleno...</Spanish>
-			<French>\n\nVous avez mangé %1 et votre ventre est plein...</French>
+			<French>Vous avez mangé %1 et votre ventre est plein...</French>
 			<Czech>Snědli jste %1 a máte plné břicho...</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_2">
 			<English>You ate %1 but spit out most of it. You&apos;re too full to eat anything.</English>
 			<German>Du versuchst %1 zu essen, musst aber das meiste wieder ausspucken. Du bist einfach zu satt, um noch mehr zu essen.</German>
-			<Russian>Вы съели %1, но выплюнули большую часть.\nВы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
+			<Russian>Вы съели %1, но выплюнули большую часть. Вы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
 			<Spanish>Comiste %1 pero escupiste la mayor parte. Estás demasiado lleno para seguir comiendo.</Spanish>
-			<French>\n\nVous n&apos;avez pas pu terminer votre %1. Vous avez trop mangé.</French>
+			<French>Vous n&apos;avez pas pu terminer votre %1. Vous avez trop mangé.</French>
 			<Czech>Snědli jste %1, ale většinu jste vyplivnul. Jste plný a víc toho už nesníte.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
@@ -6781,7 +6781,7 @@
 			<German>%1 wurde verbraucht.</German>
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
-			<French>\n\nVous avez consommé un(e) %1</French>
+			<French>Vous avez consommé un(e) %1</French>
 			<Czech>Zkonzumovali jste %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
@@ -6789,7 +6789,7 @@
 			<German>Du hast erfolgreich eine Feuerstelle angelegt.</German>
 			<Russian>Вы подготовили костер.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
-			<French>\n\nVous avez créé un feu de camp.</French>
+			<French>Vous avez créé un feu de camp.</French>
 			<Czech>Vytvořili jste ohniště.</Czech>
 		</Key>
 		<Key ID="str_build_01">
@@ -6821,7 +6821,7 @@
 			<German>Du solltest hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>\n\nVous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
+			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_fireplace_removed">
@@ -6861,7 +6861,7 @@
 			<German>Du hast %1 Flasche(n) mit Wasser aufgefuellt.</German>
 			<Russian>Наполнено водой бутылок: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
-			<French>\n\nVous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
+			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste vodou %1 láhve.</Czech>
 		</Key>
 		<Key ID="str_player_boiledwater">
@@ -6869,7 +6869,7 @@
 			<German>Du hast %1 Flasche(n) mit Wasser abgekocht.</German>
 			<Russian>Вы наполнили %1 бутылок чистой кипяченой водой.</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
-			<French>\n\nVous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
+			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste převařenou vodou %1 láhve.</Czech>
 		</Key>
 		<Key ID="str_player_02">
@@ -6877,7 +6877,7 @@
 			<German>Du hast keine leeren Wasserflaschen.</German>
 			<Russian>У вас нет пустых бутылок.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
-			<French>\n\nVous n&apos;avez aucune Bouteille vide.</French>
+			<French>Vous n&apos;avez aucune Bouteille vide.</French>
 			<Czech>Nemáte žádné prázdné láhve na vodu.</Czech>
 		</Key>
 		<Key ID="str_player_03">
@@ -10875,13 +10875,13 @@
 			<Czech>Plnění kanystru již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_36">
-			<English>\n\nNo recent Deaths.</English>
-			<German>\n\nKeine aktuellen Todesfälle.</German>
-			<Russian>\n\nНет последних смертей.</Russian>
+			<English>No recent Deaths.</English>
+			<German>Keine aktuellen Todesfälle.</German>
+			<Russian>Нет последних смертей.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nNiet recent doodgegaan.</Dutch>
-			<French>\n\nPas de décès récents.</French>
-			<Czech>\n\nŽádné nedávné úmrtí.</Czech>
+			<Dutch>Niet recent doodgegaan.</Dutch>
+			<French>Pas de décès récents.</French>
+			<Czech>Žádné nedávné úmrtí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_37">
 			<English>Lock vehicle already in progress.</English>
@@ -10902,22 +10902,22 @@
 			<Czech>Přidávání do opasku na nářadí již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_40">
-			<English>\n\nBuilding already in progress.</English>
-			<German>\n\nBau bereits im Gange.</German>
-			<Russian>\n\nУже строится.</Russian>
+			<English>Building already in progress.</English>
+			<German>Bau bereits im Gange.</German>
+			<Russian>Уже строится.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent al aan het bouwen.</Dutch>
-			<French>\n\nLa construction est déjà en cours.</French>
-			<Czech>\n\nStavba již probíhá.</Czech>
+			<Dutch>Je bent al aan het bouwen.</Dutch>
+			<French>La construction est déjà en cours.</French>
+			<Czech>Stavba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
-			<English>\n\nCannot build, too many objects within %1m.</English>
-			<German>\n\nBau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
-			<Russian>\n\nНельзя построить, слишком много объектов в пределах %1m.</Russian>
+			<English>Cannot build, too many objects within %1m.</English>
+			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
+			<Russian>Нельзя построить, слишком много объектов в пределах %1m.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nKan niet bouwen, teveel objecten binnen %1.</Dutch>
-			<French>\n\nImpossible de construire, il y a trop d'objets à moins de %1m.</French>
-			<Czech>\n\nNelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
+			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
+			<French>Impossible de construire, il y a trop d'objets à moins de %1m.</French>
+			<Czech>Nelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_42">
 			<English>Cannot build while in a vehicle.</English>
@@ -10951,7 +10951,7 @@
 			<German>PgUp zum Erhöhen oder PgDn zum Absenken (halte ALT zum schnelleren Eröhen oder STRG zum Absenken), Q oder E zum Drehen. Drücke Leertaste um das Objekt zu plazieren.</German>
 			<Russian>PgUp, чтобы поднять или PgDn, чтобы опустить (Удерживайте ALT, чтобы поднимать быстрее или CTRL, чтобы медленнее), Q или E для поворота на 180. Пробел, чтобы построить.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>PgUp voor omhoog or PgDn voor omlaag (Houd ALT ingedrukt voor snel en CTRL voor langzaam), \nQ of E draait het object 180graden. Spatiebalk start het bouwen.</Dutch>
+			<Dutch>PgUp voor omhoog or PgDn voor omlaag (Houd ALT ingedrukt voor snel en CTRL voor langzaam), Q of E draait het object 180graden. Spatiebalk start het bouwen.</Dutch>
 			<French>PgUp pour élever ou PgDn pour abaisser (Maintenez ALT pour élever plus rapidement ou CTRL plus lentement), A ou E pour une rotation à 180. Espace pour construire.</French>
 			<Czech>PgUp pro zvednutí nebo PgDn pro klesání (Přidrž ALT pro rychlejší zvedání, nebo CTRL pro rychlejší klesání), Q nebo E pro otočení o 180. Mezerník pro stavbu.</Czech>
 		</Key>
@@ -11019,193 +11019,193 @@
 			<Czech>Upgrade již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_56">
-			<English>\n\nCopy key already in progress.</English>
-			<German>\n\nKopieren des Schlüssels bereits im Gange.</German>
-			<Russian>\n\nКлюч уже копируется.</Russian>
+			<English>Copy key already in progress.</English>
+			<German>Kopieren des Schlüssels bereits im Gange.</German>
+			<Russian>Ключ уже копируется.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent al een sleutel aan het kopieren</Dutch>
-			<French>\n\nLa duplication de la clé est déjà en cours.</French>
+			<Dutch>Je bent al een sleutel aan het kopieren</Dutch>
+			<French>La duplication de la clé est déjà en cours.</French>
 			<Czech>Kopírování klíče již probíhá</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_57">
-			<English>\n\nNeed Keymakers kit to make a copy of a key.</English>
-			<German>\n\nSie benötigen ein Schlüsselmacher Kit um Kopien eines Schlüssels anfertigen zu können.</German>
-			<Russian>\n\nНужен комплект для создания ключей, чтобы сделать копию ключа.</Russian>
+			<English>Need Keymakers kit to make a copy of a key.</English>
+			<German>Sie benötigen ein Schlüsselmacher Kit um Kopien eines Schlüssels anfertigen zu können.</German>
+			<Russian>Нужен комплект для создания ключей, чтобы сделать копию ключа.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
-			<French>\n\nLe kit Keymakers est requis pour faire un double d'une clé.</French>
-			<Czech>\n\nPotřebujete Sadu klíčů, abyste mohli vytvořit kopii klíče</Czech>
+			<Dutch>Je hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
+			<French>Le kit Keymakers est requis pour faire un double d'une clé.</French>
+			<Czech>Potřebujete Sadu klíčů, abyste mohli vytvořit kopii klíče</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_58">
-			<English>\n\nKey crafting needs a fire within 3 meters.</English>
-			<German>\n\nKopieren eines Schlüssels ist nur innerhalb 3 Meter eines Feuers möglich.</German>
-			<Russian>\n\nДля создания ключа нужен огонь в пределах 3-х метров.</Russian>
+			<English>Key crafting needs a fire within 3 meters.</English>
+			<German>Kopieren eines Schlüssels ist nur innerhalb 3 Meter eines Feuers möglich.</German>
+			<Russian>Для создания ключа нужен огонь в пределах 3-х метров.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe moet binnen 3 meter van het vuur staan om de sleutel te maken.</Dutch>
+			<Dutch>Je moet binnen 3 meter van het vuur staan om de sleutel te maken.</Dutch>
 			<!-- <French></French> -->
-			<Czech>\n\nNa vytvoření klíče potřebujete oheň v dosahu 3 metrů</Czech>
+			<Czech>Na vytvoření klíče potřebujete oheň v dosahu 3 metrů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_59">
-			<English>\n\nKey crafting requires a 1 Tin Bar.</English>
-			<German>\n\nSie benötigen eine Konservendose um einen Schlüssel zu kopieren.</German>
-			<Russian>\n\nДля создания ключа требуется 1 оловянный слиток.</Russian>
+			<English>Key crafting requires a 1 Tin Bar.</English>
+			<German>Sie benötigen eine Konservendose um einen Schlüssel zu kopieren.</German>
+			<Russian>Для создания ключа требуется 1 оловянный слиток.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe hebt 1 Tin bar nodig om een sleutel te maken.</Dutch>
-			<French>\n\nConstruire une clé requiert une barre de fer</French>
-			<Czech>\n\nNa vytvoření klíče potřebujete 1 cihličku cínu</Czech>
+			<Dutch>Je hebt 1 Tin bar nodig om een sleutel te maken.</Dutch>
+			<French>Construire une clé requiert une barre de fer</French>
+			<Czech>Na vytvoření klíče potřebujete 1 cihličku cínu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_61">
-			<English>\n\nCanceled Key Crafting.</English>
-			<German>\n\nKopieren des Schlüssels abgerochen.</German>
-			<Russian>\n\nСоздание ключа отменено.</Russian>
+			<English>Canceled Key Crafting.</English>
+			<German>Kopieren des Schlüssels abgerochen.</German>
+			<Russian>Создание ключа отменено.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nGestopt met het maken van de sleutel.</Dutch>
-			<French>\n\nConstruction de la clé annulée.</French>
-			<Czech>\n\nZrušeno vytváření klíče.</Czech>
+			<Dutch>Gestopt met het maken van de sleutel.</Dutch>
+			<French>Construction de la clé annulée.</French>
+			<Czech>Zrušeno vytváření klíče.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_62">
-			<English>\n\nCrafting started</English>
-			<German>\n\nHerstellung gestartet</German>
-			<Russian>\n\nСоздание начато</Russian>
+			<English>Crafting started</English>
+			<German>Herstellung gestartet</German>
+			<Russian>Создание начато</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nBezig met creëren</Dutch>
-			<French>\n\nConstruction démarré</French>
-			<Czech>\n\nTvorba začala</Czech>
+			<Dutch>Bezig met creëren</Dutch>
+			<French>Construction démarré</French>
+			<Czech>Tvorba začala</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_63">
-			<English>\n\nCrafting already in progress.</English>
-			<German>\n\nHerstellung bereits im Gange.</German>
-			<Russian>\n\nУже создаётся.</Russian>
+			<English>Crafting already in progress.</English>
+			<German>Herstellung bereits im Gange.</German>
+			<Russian>Уже создаётся.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent al bezig met creëren</Dutch>
-			<French>\n\nLa construction est déjà en cours.</French>
-			<Czech>\n\nVytváření již probíhá.</Czech>
+			<Dutch>Je bent al bezig met creëren</Dutch>
+			<French>La construction est déjà en cours.</French>
+			<Czech>Vytváření již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_64">
-			<English>\n\nCanceled crafting.</English>
-			<German>\n\nHerstellung abgebrochen.</German>
-			<Russian>\n\nСоздание отменено.</Russian>
+			<English>Canceled crafting.</English>
+			<German>Herstellung abgebrochen.</German>
+			<Russian>Создание отменено.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nCreatie gestopt.</Dutch>
-			<French>\n\nConstruction annulée.</French>
-			<Czech>\n\nVytváření zrušeno.</Czech>
+			<Dutch>Creatie gestopt.</Dutch>
+			<French>Construction annulée.</French>
+			<Czech>Vytváření zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_72">
-			<English>\n\nHarvest already in progress.</English>
-			<German>\n\nHolzhacken bereits im Gange.</German>
-			<Russian>\n\nУже собирается.</Russian>
+			<English>Harvest already in progress.</English>
+			<German>Holzhacken bereits im Gange.</German>
+			<Russian>Уже собирается.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent al aan het oogsten.</Dutch>
-			<French>\n\nLa récolte est déjà en cours.</French>
-			<Czech>\n\nSběr již probíhá.</Czech>
+			<Dutch>Je bent al aan het oogsten.</Dutch>
+			<French>La récolte est déjà en cours.</French>
+			<Czech>Sběr již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_73">
-			<English>\n\nCanceled Harvesting.</English>
-			<German>\n\nHolzhacken abgebrochen.</German>
-			<Russian>\n\nСбор отменён.</Russian>
+			<English>Canceled Harvesting.</English>
+			<German>Holzhacken abgebrochen.</German>
+			<Russian>Сбор отменён.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nGestopt met oogsten.</Dutch>
-			<French>\n\nRécolte annulée.</French>
-			<Czech>\n\nSběr zrušen.</Czech>
+			<Dutch>Gestopt met oogsten.</Dutch>
+			<French>Récolte annulée.</French>
+			<Czech>Sběr zrušen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_74">
-			<English>\n\nYou must be close to a plant to harvest.</English>
-			<German>\n\nSie müssen in der Nähe eines Baumes sein um Holz hacken zu können.</German>
-			<Russian>\n\nВы должны быть близко к растению, чтобы взять его.</Russian>
+			<English>You must be close to a plant to harvest.</English>
+			<German>Sie müssen in der Nähe eines Baumes sein um Holz hacken zu können.</German>
+			<Russian>Вы должны быть близко к растению, чтобы взять его.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe moet in de buurt van een plant zijn om te oogsten.</Dutch>
-			<French>\n\nVous devez être près d'une plante pour la récolter.</French>
-			<Czech>\n\nMusíte být blízko plodiny, abyste ji mohli sklidit.</Czech>
+			<Dutch>Je moet in de buurt van een plant zijn om te oogsten.</Dutch>
+			<French>Vous devez être près d'une plante pour la récolter.</French>
+			<Czech>Musíte být blízko plodiny, abyste ji mohli sklidit.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_75">
-			<English>\n\nOpen Crate already in progress.</English>
-			<German>\n\nÖffnen der Holzkiste bereits im Gange.</German>
-			<Russian>\n\nЯщик уже открывается.</Russian>
+			<English>Open Crate already in progress.</English>
+			<German>Öffnen der Holzkiste bereits im Gange.</German>
+			<Russian>Ящик уже открывается.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent de kist al aan het openmaken.</Dutch>
-			<French>\n\nL'ouverture de la caisse est déjà en cours.</French>
-			<Czech>\n\nOtevírání bedny již probíhá.</Czech>
+			<Dutch>Je bent de kist al aan het openmaken.</Dutch>
+			<French>L'ouverture de la caisse est déjà en cours.</French>
+			<Czech>Otevírání bedny již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_76">
-			<English>\n\nYou need a crowbar to open this.</English>
-			<German>\n\nSie benötigen eine Brechstange um dies öffnen zu können.</German>
-			<Russian>\n\nВам нужен лом, чтобы открыть это.</Russian>
+			<English>You need a crowbar to open this.</English>
+			<German>Sie benötigen eine Brechstange um dies öffnen zu können.</German>
+			<Russian>Вам нужен лом, чтобы открыть это.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe hebt een breekijzer nodig om dit open te maken.</Dutch>
-			<French>\n\nVous avez besoin d'un pied-de-biche pour l'ouvrir.</French>
-			<Czech>\n\nPotřebujete Páčidlo, abyste toto mohli otevřít.</Czech>
+			<Dutch>Je hebt een breekijzer nodig om dit open te maken.</Dutch>
+			<French>Vous avez besoin d'un pied-de-biche pour l'ouvrir.</French>
+			<Czech>Potřebujete Páčidlo, abyste toto mohli otevřít.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_77">
-			<English>\n\nMissing supply crate.</English>
-			<German>\n\nKeine Holzkiste gefunden.</German>
-			<Russian>\n\nОтсутствует ящик с припасами.</Russian>
+			<English>Missing supply crate.</English>
+			<German>Keine Holzkiste gefunden.</German>
+			<Russian>Отсутствует ящик с припасами.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nSupply kist ontbreekt</Dutch>
-			<French>\n\nCaisse de fournitures manquante.</French>
-			<Czech>\n\nChybí zásobovací bedna.</Czech>
+			<Dutch>Supply kist ontbreekt</Dutch>
+			<French>Caisse de fournitures manquante.</French>
+			<Czech>Chybí zásobovací bedna.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_78">
-			<English>\n\nOpened supply crate.</English>
-			<German>\n\nHolzkiste geöffnet.</German>
-			<Russian>\n\nЯщик с припасами открыт.</Russian>
+			<English>Opened supply crate.</English>
+			<German>Holzkiste geöffnet.</German>
+			<Russian>Ящик с припасами открыт.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nSupply kist geopend.</Dutch>
-			<French>\n\nCaisse de fournitures ouverte.</French>
-			<Czech>\n\nOtevřená zásobovací bedna</Czech>
+			<Dutch>Supply kist geopend.</Dutch>
+			<French>Caisse de fournitures ouverte.</French>
+			<Czech>Otevřená zásobovací bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_79">
-			<English>\n\nOre Mining already in progress.</English>
-			<German>\n\nErzgewinnung bereits im Gange.</German>
-			<Russian>\n\nРуда уже добывается.</Russian>
+			<English>Ore Mining already in progress.</English>
+			<German>Erzgewinnung bereits im Gange.</German>
+			<Russian>Руда уже добывается.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent al erts aan het ontginnen.</Dutch>
-			<French>\n\nL'extraction du minerai est déjà en cours.</French>
-			<Czech>\n\nJiž probíhá těžba rudy.</Czech>
+			<Dutch>Je bent al erts aan het ontginnen.</Dutch>
+			<French>L'extraction du minerai est déjà en cours.</French>
+			<Czech>Již probíhá těžba rudy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_80">
-			<English>\n\nCancelled Mining Ore.</English>
-			<German>\n\nErgewinnung abgerochen.</German>
-			<Russian>\n\nДобыча руды отменена.</Russian>
+			<English>Cancelled Mining Ore.</English>
+			<German>Ergewinnung abgerochen.</German>
+			<Russian>Добыча руды отменена.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nGestopt met erts ontginnen.</Dutch>
-			<French>\n\nExtraction du minerai annulée.</French>
-			<Czech>\n\nZrušena těžba rudy.</Czech>
+			<Dutch>Gestopt met erts ontginnen.</Dutch>
+			<French>Extraction du minerai annulée.</French>
+			<Czech>Zrušena těžba rudy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_82">
-			<English>\n\nNo upgrades available</English>
-			<German>\n\nKeine Upgrades vorhanden</German>
-			<Russian>\n\nНет доступных улучшений.</Russian>
+			<English>No upgrades available</English>
+			<German>Keine Upgrades vorhanden</German>
+			<Russian>Нет доступных улучшений.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nGeen upgrades beschikbaar</Dutch>
-			<French>\n\nAucune amélioration disponible</French>
-			<Czech>\n\nNejsou dostupné žádné upgrady</Czech>
+			<Dutch>Geen upgrades beschikbaar</Dutch>
+			<French>Aucune amélioration disponible</French>
+			<Czech>Nejsou dostupné žádné upgrady</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_83">
-			<English>\n\nChanging clothes already in progress.</English>
-			<German>\n\nWechseln der Kleidung bereits im Gange.</German>
-			<Russian>\n\nВы уже переодеваетесь.</Russian>
+			<English>Changing clothes already in progress.</English>
+			<German>Wechseln der Kleidung bereits im Gange.</German>
+			<Russian>Вы уже переодеваетесь.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe bent je al aan het omkleden.</Dutch>
-			<French>\n\nLe changement de vêtements est déjà en cours.</French>
-			<Czech>\n\nZměna oblečení již probíhá.</Czech>
+			<Dutch>Je bent je al aan het omkleden.</Dutch>
+			<French>Le changement de vêtements est déjà en cours.</French>
+			<Czech>Změna oblečení již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_84">
-			<English>\n\nCannot change clothes when another player is nearby.</English>
-			<German>\n\nSie können Ihre Kleidung nicht wechseln wenn ein anderer Spieler in der Nähe ist.</German>
-			<Russian>\n\nНельзя переодеваться, когда другой игрок рядом.</Russian>
+			<English>Cannot change clothes when another player is nearby.</English>
+			<German>Sie können Ihre Kleidung nicht wechseln wenn ein anderer Spieler in der Nähe ist.</German>
+			<Russian>Нельзя переодеваться, когда другой игрок рядом.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
-			<French>\n\nImpossible de changer de vêtements près d'un autre joueur.</French>
-			<Czech>\n\nNemůžete si změnit oblečení, když je poblíž další hráč.</Czech>
+			<Dutch>Je kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
+			<French>Impossible de changer de vêtements près d'un autre joueur.</French>
+			<Czech>Nemůžete si změnit oblečení, když je poblíž další hráč.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_86">
-			<English>\n\nYou cannot wear a skin of the opposite sex.</English>
-			<German>\n\nSie können nicht die Kleidung vom anderen Geschlecht tragen.</German>
-			<Russian>\n\nВы не можете одеть одежду противоположного пола.</Russian>
+			<English>You cannot wear a skin of the opposite sex.</English>
+			<German>Sie können nicht die Kleidung vom anderen Geschlecht tragen.</German>
+			<Russian>Вы не можете одеть одежду противоположного пола.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nJe kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
-			<French>\n\nVous ne pouvez pas porter les vêtements du sexe opposé.</French>
-			<Czech>\n\nNemůžete nosit oblečení opačného pohlaví.</Czech>
+			<Dutch>Je kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
+			<French>Vous ne pouvez pas porter les vêtements du sexe opposé.</French>
+			<Czech>Nemůžete nosit oblečení opačného pohlaví.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_88">
 			<English>Remove already in progress.</English>
@@ -11505,13 +11505,13 @@
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
-			<English>\n\nThis building needs a %1 within %2 meters</English>
-			<German>\n\nDieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
-			<Russian>\n\nЭтому строению требуется %1 в пределах %2 метров</Russian>
+			<English>This building needs a %1 within %2 meters</English>
+			<German>Dieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
+			<Russian>Этому строению требуется %1 в пределах %2 метров</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nDit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
-			<French>\n\nCe bâtiment nécessite un %1 à moins de %2 mètres</French>
-			<Czech>\n\nTato budova potřebuje %1 v rámci %2.</Czech>
+			<Dutch>Dit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
+			<French>Ce bâtiment nécessite un %1 à moins de %2 mètres</French>
+			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
 			<English>Unable to build %1 nearby.</English>
@@ -11523,13 +11523,13 @@
 			<Czech>Nemůžete postavit %1 poblíž.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_137">
-			<English>\n\nMissing tool %1</English>
-			<German>\n\nFehlendes Werkzeug: %1</German>
-			<Russian>\n\nОтсутствует инструмент %1</Russian>
-			<Spanish>\n\nMissing tool %1</Spanish>
-			<Dutch>\n\nOntbrekend gereedschap: %1</Dutch>
-			<French>\n\nL'outil %1 est nécessaire</French>
-			<Czech>\n\nChybějící nástroj %1</Czech>
+			<English>Missing tool %1</English>
+			<German>Fehlendes Werkzeug: %1</German>
+			<Russian>Отсутствует инструмент %1</Russian>
+			<Spanish>Missing tool %1</Spanish>
+			<Dutch>Ontbrekend gereedschap: %1</Dutch>
+			<French>L'outil %1 est nécessaire</French>
+			<Czech>Chybějící nástroj %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_138">
 			<English>Placing %1, move to cancel.</English>
@@ -11577,76 +11577,76 @@
 			<Czech>Downgradnuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_143">
-			<English>\n\n%1 of %2 could not be added to your inventory. (not enough room?)</English>
-			<German>\n\n%1 von %2 konnte dem Inventar nicht hinzugefügt werden. (Inventar voll?)</German>
+			<English>%1 of %2 could not be added to your inventory. (not enough room?)</English>
+			<German>%1 von %2 konnte dem Inventar nicht hinzugefügt werden. (Inventar voll?)</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\n%1 van %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
-			<French>\n\n%1 sur %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
-			<Czech>\n\n%1 z %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
+			<Dutch>%1 van %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
+			<French>%1 sur %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
+			<Czech>%1 z %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_145">
-			<English>\n\nMissing Parts after first check Item: %1 / %2</English>
-			<German>\n\nFehlende Teile nach der ersten Überprüfung: %1 / %2</German>
+			<English>Missing Parts after first check Item: %1 / %2</English>
+			<German>Fehlende Teile nach der ersten Überprüfung: %1 / %2</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nMissende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
+			<Dutch>Missende onderdelen na eerste check Onderdeel: %1 / %2</Dutch>
 			<French>Éléments manquants après la première vérification: %1 / %2</French>
-			<Czech>\n\nChybějící části po první kontrole itemu: %1 / %2</Czech>
+			<Czech>Chybějící části po první kontrole itemu: %1 / %2</Czech>
 		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_149">
-			<English>\n\nCrafting needs a %1 within %2 meters</English>
-			<German>\n\nZur Herstellung wird ein(e) %1 innerhalb von %2 benötigt.</German>
-			<Russian>\n\nДля создания требуется %1 вблизи %2 метров</Russian>
+			<English>Crafting needs a %1 within %2 meters</English>
+			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 benötigt.</German>
+			<Russian>Для создания требуется %1 вблизи %2 метров</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nHiervoor heb je een %1 nodig binnen %2 meter</Dutch>
+			<Dutch>Hiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 			<!-- <French></French> -->
-			<Czech>\n\nVýroba potřebuje %1 v rámci %2 metrů</Czech>
+			<Czech>Výroba potřebuje %1 v rámci %2 metrů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_150">
-			<English>\n\nCrafted Item: %1 x %2</English>
+			<English>Crafted Item: %1 x %2</English>
 			<German>Gegenstand hergestellt: %1 x %2</German>
-			<Russian>\n\nСоздан предмет: %1 x %2</Russian>
+			<Russian>Создан предмет: %1 x %2</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nItem gecreëerd: %1 x %2</Dutch>
+			<Dutch>Item gecreëerd: %1 x %2</Dutch>
 			<!-- <French></French> -->
-			<Czech>\n\nVyrobena věc: %1 x %2</Czech>
+			<Czech>Vyrobena věc: %1 x %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_152">
-			<English>\n\n%3 complete, missing %1 more of %2</English>
-			<German>\n\n%3 abgeschlossen, Ihnen fehlt/fehlen noch %1 %2</German>
+			<English>%3 complete, missing %1 more of %2</English>
+			<German>%3 abgeschlossen, Ihnen fehlt/fehlen noch %1 %2</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\n%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
+			<Dutch>%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
 			<!-- <French></French> -->
-			<Czech>\n\n%3 hotovo, chybí ještě %1 %2</Czech>
+			<Czech>%3 hotovo, chybí ještě %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_154">
-			<English>\n\n%1 of %2 has been successfully added to your inventory.</English>
-			<German>\n\n%1 %2 wurden erflogreich zu Ihrem Inventar hinzugefügt.</German>
+			<English>%1 of %2 has been successfully added to your inventory.</English>
+			<German>%1 %2 wurden erflogreich zu Ihrem Inventar hinzugefügt.</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\n%1 %2 is aan je inventaris toegevoegd.</Dutch>
+			<Dutch>%1 %2 is aan je inventaris toegevoegd.</Dutch>
 			<!-- <French></French> -->
-			<Czech>\n\n%1 %2 bylo úspěšně přidáno do Vašeho inventáře.</Czech>
+			<Czech>%1 %2 bylo úspěšně přidáno do Vašeho inventáře.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_155">
-			<English>\n\nMining Ore, walk away at any time to cancel. (%1/%2)</English>
-			<German>\n\nGewinnung von Erz, bewegen Sie sich um den Vorgang abzubrechen. (%1/%2)</German>
-			<Russian>\n\nРуда добывается, уходите в любое время для отмены. (%1/%2)</Russian>
+			<English>Mining Ore, walk away at any time to cancel. (%1/%2)</English>
+			<German>Gewinnung von Erz, bewegen Sie sich um den Vorgang abzubrechen. (%1/%2)</German>
+			<Russian>Руда добывается, уходите в любое время для отмены. (%1/%2)</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nBezig met het delven van Erts, loop weg om te annuleren. (%1/%2)</Dutch>
+			<Dutch>Bezig met het delven van Erts, loop weg om te annuleren. (%1/%2)</Dutch>
 			<!-- <French></French> -->
-			<Czech>\n\nTěžení rudy, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
+			<Czech>Těžení rudy, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_156">
-			<English>\n\n%1 piles of ore has been successfully added in front of you.</English>
-			<German>\n\n%1 Stappel Erz wurden erfolgreich vor Ihnen hinzugefügt.</German>
-			<Russian>\n\n%1 руда была успешно размещена перед вами.</Russian>
+			<English>%1 piles of ore has been successfully added in front of you.</English>
+			<German>%1 Stappel Erz wurden erfolgreich vor Ihnen hinzugefügt.</German>
+			<Russian>%1 руда была успешно размещена перед вами.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\n%1 hoopjes erts liggen nu voor je neus.</Dutch>
+			<Dutch>%1 hoopjes erts liggen nu voor je neus.</Dutch>
 			<!-- <French></French> -->
-			<Czech>n\n\%1 rudy bylo úspěšně položeno před Vás.</Czech>
+			<Czech>%1 rudy bylo úspěšně položeno před Vás.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_157">
 			<English>Unable to upgrade %1 nearby.</English>
@@ -12531,13 +12531,13 @@
 			<Czech>Vytvořit Dřevěnou ohradu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_245">
-			<English>\n\nFailed, you must get into drivers seat first.</English>
-			<German>\n\nFehlgeschlagen, Sie müssen zuerst auf den Fahrersitz.</German>
-			<Russian>\n\nНе удалось, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
+			<English>Failed, you must get into drivers seat first.</English>
+			<German>Fehlgeschlagen, Sie müssen zuerst auf den Fahrersitz.</German>
+			<Russian>Не удалось, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\nMislukt, stap eerst in de bestuurders stoel.</Dutch>
+			<Dutch>Mislukt, stap eerst in de bestuurders stoel.</Dutch>
 			<!-- <French></French> -->
-			<Czech>\n\nNepodařilo se, musíte nejdříve na místo řidiče.</Czech>
+			<Czech>Nepodařilo se, musíte nejdříve na místo řidiče.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_246">
 			<English>Plot Pole</English>
@@ -12990,22 +12990,22 @@
 			<Czech>%1 je již ve vašem inventáři. Pád na zem!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_315">
-			<English>\n\n%1 is restricted.</English>
-			<German>\n\n%1 eingeschränkt.</German>
-			<Russian>\n\n%1 ограничено.</Russian>
+			<English>%1 is restricted.</English>
+			<German>%1 eingeschränkt.</German>
+			<Russian>%1 ограничено.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>\n\n%1 beperkt.</Dutch>
-			<French>\n\n%1 est restreint.</French>
-			<Czech>\n\n%1 je omezeno.</Czech>
+			<Dutch>%1 beperkt.</Dutch>
+			<French>%1 est restreint.</French>
+			<Czech>%1 je omezeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_316">
-			<English>\n\nYou may only access friends' gear in this area.</English>
-			<German>\n\nSie können Zahn 'Freunde Zugriff nur in diesem Bereich.</German>
-			<Russian>\n\nВы можете получить доступ только к шестерню знакомого в этой области.</Russian>
-			<Spanish>\n\nSólo se puede acceder engranaje amigos en esta área.</Spanish>
-			<Dutch>\n\nU mag alleen toegang tot versnelling vrienden 'op dit gebied.</Dutch>
-			<French>\n\nVous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
-			<Czech>\n\nMůžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
+			<English>You may only access friends' gear in this area.</English>
+			<German>Sie können Zahn 'Freunde Zugriff nur in diesem Bereich.</German>
+			<Russian>Вы можете получить доступ только к шестерню знакомого в этой области.</Russian>
+			<Spanish>Sólo se puede acceder engranaje amigos en esta área.</Spanish>
+			<Dutch>U mag alleen toegang tot versnelling vrienden 'op dit gebied.</Dutch>
+			<French>Vous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
+			<Czech>Můžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
@@ -13458,22 +13458,22 @@
 			<Czech>Označil si cíl za přítele. Čeká se na přijetí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_9">
-			<English>\n\nUnable to change clothes while wearing backpack.</English>
+			<English>Unable to change clothes while wearing backpack.</English>
 			<!-- <German></German> -->
-			<Russian>\n\nНельзя переодеваться, одевая рюкзак.</Russian>
+			<Russian>Нельзя переодеваться, одевая рюкзак.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
-			<French>\n\nImpossible de changer ses vêtements lorsque vous portez un sac à dos.</French>
-			<Czech>\n\nNemůžete si změnit oblečení, pokud nosíte batoh.</Czech>
+			<French>Impossible de changer ses vêtements lorsque vous portez un sac à dos.</French>
+			<Czech>Nemůžete si změnit oblečení, pokud nosíte batoh.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_10">
-			<English>\n\nUnable to change clothes while carrying a filled chainsaw.</English>
+			<English>Unable to change clothes while carrying a filled chainsaw.</English>
 			<!-- <German></German> -->
-			<Russian>\n\nНельзя переодеваться, неся заправленную бензопилу.</Russian>
+			<Russian>Нельзя переодеваться, неся заправленную бензопилу.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
-			<French>\n\nImpossible de changer ses vêtements lorsque vous avez une tronçonneuse en main.</French>
-			<Czech>\n\nNemůžete si změnit oblečení, pokud nesete naplněnou motorovou pilu.</Czech>
+			<French>Impossible de changer ses vêtements lorsque vous avez une tronçonneuse en main.</French>
+			<Czech>Nemůžete si změnit oblečení, pokud nesete naplněnou motorovou pilu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_11">
 			<English>Bought %3 for %1 %2, key added to toolbelt.</English>
@@ -13521,13 +13521,13 @@
 			<Czech>Ty a %1 jste nyní označení jako přátelé.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_18">
-			<English>\n\nYou cannot perform an upgrade while still inside a vehicle.</English>
+			<English>You cannot perform an upgrade while still inside a vehicle.</English>
 			<!-- <German></German> -->
-			<Russian>\n\nВы не можете улучшить транспорт, находясь в нём.</Russian>
+			<Russian>Вы не можете улучшить транспорт, находясь в нём.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
-			<French>\n\nVous ne pouvez pas effectuer d'améliorations lorsque vous êtes à l'intérieur d'un véhicule.</French>
-			<Czech>\n\nNemůžete upgradovat, pokud jste ve vozidle.</Czech>
+			<French>Vous ne pouvez pas effectuer d'améliorations lorsque vous êtes à l'intérieur d'un véhicule.</French>
+			<Czech>Nemůžete upgradovat, pokud jste ve vozidle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_20">
 			<English>You must remove the lock to delete this item!</English>
