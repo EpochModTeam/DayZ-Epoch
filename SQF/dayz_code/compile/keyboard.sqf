@@ -349,8 +349,8 @@ if (isNil "keyboard_keys") then {
     (findDisplay 46) displayRemoveAllEventHandlers "KeyUp";
     (findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
     (findDisplay 46) displayAddEventHandler ["KeyDown", preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf')];
-	if (!isNil "bis_fnc_halo_para_keydown_eh") then {bis_fnc_halo_para_keydown_eh = (finddisplay 46) displayAddEventHandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
-    //diag_log [diag_ticktime, __FILE__, "eh reset" ];
+	if (!isNil "bis_fnc_halo_para_keydown_eh") then {bis_fnc_halo_para_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_para_keydown;"];}; // halo in progress
+	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
 
 if (r_player_unconsciousInputDisabled) exitWith {true};
