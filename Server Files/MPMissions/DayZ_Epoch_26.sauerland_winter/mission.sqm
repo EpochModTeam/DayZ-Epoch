@@ -312,7 +312,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={16989,300,1778};
+			position[]={16894,0,1781};
 			name="BanditVendor";
 			text="Bandit Vendor";
 			type="mil_dot";
@@ -337,8 +337,8 @@ class Mission
 			TRGDEF
 			name="Seedorf";
 			expCond="(player distance Seedorf) < 100;";
-			expActiv="[""Boat Vendor"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Boat Vendor"",true,""leave""] call player_traderCity;";
+			expActiv="[""trader city Seedorf"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""trader city Seedorf"",true,""leave""] call player_traderCity;";
 		};
 		class Item1
 		{
@@ -364,8 +364,8 @@ class Mission
 			TRGDEF
 			name="Bandit";
 			expCond="(player distance Bandit) < 50;";
-			expActiv="[""Bandit Camp"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Bandit Camp"",true,""leave""] call player_traderCity;";
+			expActiv="[""Bandit Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Vendor"",true,""leave""] call player_traderCity;";
 		};
 		class Item4
 		{

@@ -10704,13 +10704,13 @@
 			<Czech>Nelze zamknout, když je poblíž jiný hráč.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_12">
-			<English>Cannot Abort while in a trader city!</English>
-			<German>Die Verbindung kann nicht getrennt werden, während man sich in einer Händler-Stadt aufhällt!</German>
-			<Russian>Нельзя выходить, находясь в торговом городе!</Russian>
+			<English>Cannot abort while in a trader area!</English>
+			<German>Die Verbindung kann nicht getrennt werden, während man sich in einer Händler-Bereich aufhällt!</German>
+			<Russian>Нельзя выходить, находясь в торговом площадка!</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>Kan niet uitloggen in een handel stad.</Dutch>
+			<Dutch>Kan niet uitloggen in een handel gebied.</Dutch>
 			<French>Impossible d'interrompre dans un marché!</French>
-			<Czech>Nelze se odpojit, když jste v trader city!</Czech>
+			<Czech>Nelze se odpojit, když jste v trader area!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_15">
 			<English>That is already being packed.</English>
