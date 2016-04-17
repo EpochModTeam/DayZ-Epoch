@@ -25,8 +25,6 @@ DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before the
 DZE_DeathMsgGlobal = false; // Display death messages in global chat
 DZE_DeathMsgSide = false; // Display death messages in side chat
 DZE_DeathMsgTitleText = false; // Display death messages as title text
-DZE_DiagFps = 1; // Log server FPS and player count  0 = Off, 1 = every 5 minutes, 2 = every 2 minutes
-DZE_DiagObjects = false; // Also log allMissionObjects count (very intensive)
 DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 DZE_modularBuild = true; // Enable Snap building by @raymix
 DZE_snapExtraRange = 0; // Increase the default range from which objects can snap by this many meters.

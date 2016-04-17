@@ -209,14 +209,6 @@ dayz_reseed = {
 	//} forEach dayz_grid;
 };
 
-dze_diag_fps = {
-	if (DZE_DiagObjects) then {
-		diag_log format["SERVER FPS: %1  PLAYERS: %2  OBJECTS: %3",diag_fps,playersNumber west,count (allMissionObjects "")];
-	} else {
-		diag_log format["SERVER FPS: %1  PLAYERS: %2",diag_fps,playersNumber west];
-	};
-};
-
 generate_new_damage = {
 	private "_damage";
     _damage = ((random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow))+DynamicVehicleDamageLow) / 100;

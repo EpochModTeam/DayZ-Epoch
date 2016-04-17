@@ -48,7 +48,7 @@ if (count _this > 0) then {
 };
 
 //Send Death Notice
-diag_log format["Debug death message vars: %1 %2 %3 %4 %5 %6 %7 %8 %9 %10",dayz_characterID,0,_body,_playerID,_bodyName,_infected,_killerName,_killerWeapon,_killerDist,_killerMethod];
+diag_log format["Debug death message vars: CharacterID:%1  BodyObject:%3  UID:%4  PlayerName:%5  Infected:%6  KillerName:%7  KillerWeapon:%8  KillerDistance:%9  KillerMethod:%10",dayz_characterID,0,_body,_playerID,_bodyName,_infected,_killerName,_killerWeapon,_killerDist,_killerMethod];
 PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray _bodyName,_infected,toArray _killerName,toArray _killerWeapon,_killerDist,toArray _killerMethod]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
 
@@ -138,7 +138,7 @@ playMusic "dayz_track_death_1";
 uiSleep 2;
 
 for  "_x" from 5 to 1 step -1 do {
-	[format[localize "str_return_lobby",_x],1] call dayz_rollingMessages;
+	titleText [format[localize "str_return_lobby",_x], "PLAIN DOWN", 1];
 	uiSleep 1;
 };
 

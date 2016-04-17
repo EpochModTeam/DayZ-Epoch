@@ -1,8 +1,5 @@
-// replaced with dze_diag_fps
-
-/*
-while {isServer} do {
-	diag_log ("DEBUG FPS  : " + str(diag_fps) );
-	sleep 360;
+while {true} do {
+	diag_log format["SERVER FPS: %1  PLAYERS: %2",diag_fps,playersNumber west];
+  //diag_log format["SERVER FPS: %1  PLAYERS: %2  OBJECTS: %3",diag_fps,playersNumber west,count (allMissionObjects "")]; // very intensive
+	uiSleep 360;
 };
-*/
