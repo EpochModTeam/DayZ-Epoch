@@ -20,7 +20,7 @@ _metals_conversion = [
 				
 } count _metals_conversion;
 
-_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false];
 s_player_parts set [count s_player_parts,_cancel];
 
 DZE_ActionInProgress = false;

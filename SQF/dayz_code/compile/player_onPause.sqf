@@ -43,7 +43,7 @@ while {(!isNull _display) && !r_player_dead} do {
 		};
 		case (isInTraderCity) : {
 			_btnAbort ctrlEnable false;
-			localize "str_epoch_player_12" call dayz_rollingMessages;
+			[localize "str_epoch_player_12",1] call dayz_rollingMessages;
 		};
 		default {
 			_btnAbort ctrlEnable true;

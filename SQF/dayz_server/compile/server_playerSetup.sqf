@@ -171,7 +171,7 @@ if (count _stats > 0) then {
 if (_randomSpot) then {
 	private ["_counter","_position","_isNear","_isZero","_mkr"];
 	if (!isDedicated) then {endLoadingScreen;};
-	_IslandMap = if (worldName in ["dzhg","panthera2","Sara","Utes","Dingor","namalsk","isladuala","Tavi","dayznogova","tasmania2010"]) then {true} else {false};
+	_IslandMap = if (toLower worldName in ["caribou","cmr_ovaron","dingor","fallujah","fapovo","fdf_isle1_a","isladuala","lingor","mbg_celle2","namalsk","napf","oring","panthera2","sara","sauerland","smd_sahrani_a2","tavi","trinity","utes"]) then {true} else {false};
 
 	//spawn into random
 	_findSpot = true;
@@ -180,7 +180,7 @@ if (_randomSpot) then {
 	for [{_j=0},{_j<=100 && _findSpot},{_j=_j+1}] do {
 		if (_spawnSelection == 9) then {
 			// random spawn location selected, lets get the marker and spawn in somewhere
-			if (dayz_spawnselection == 1) then {_mkr = getMarkerPos ("spawn" + str(floor(random 6)));} else {_mkr = getMarkerPos ("spawn" + str(floor(random 5)));};
+			if (dayz_spawnselection == 1) then {_mkr = getMarkerPos ("spawn" + str(floor(random 6)));} else {_mkr = getMarkerPos ("spawn" + str(floor(random actualSpawnMarkerCount)));};
 		} else {
 			// spawn is not random, lets spawn in our location that was selected
 			_mkr = getMarkerPos ("spawn" + str(_spawnSelection));

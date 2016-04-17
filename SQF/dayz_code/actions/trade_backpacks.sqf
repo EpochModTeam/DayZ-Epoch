@@ -64,10 +64,10 @@ if (!_finished) exitWith {
 if (_finished) then {
 
 	_canAfford = false;
+	_qty = 0;
 	if(_bos == 1) then {
 			
 		//sell
-		_qty = 0;
 		_bag = unitBackpack player;
 		_class = typeOf _bag;
 		if(_class == _part_in) then {

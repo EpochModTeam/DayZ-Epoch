@@ -17,6 +17,7 @@
 "PVDZE_veh_Init"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
 
 {
+	if (toLower worldName != "chernarus") exitWith {};
 	private ["_building","_fckingcode"];
 
     _fckingcode = {
