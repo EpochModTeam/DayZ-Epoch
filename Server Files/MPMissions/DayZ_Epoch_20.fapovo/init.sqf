@@ -115,9 +115,9 @@ if (isServer) then {
 	execVM "\z\addons\dayz_server\traders\fapovo.sqf"; //Add trader agents
 	execVM "\z\addons\dayz_server\system\server_monitor.sqf";
 	if (dayz_infectiousWaterholes && (toLower worldName == "chernarus")) then {execVM "\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\init.sqf";};
-	//Must be global spawned, so players don't fall through buildings (might be best to spilt these to important, not important)
 };
 
+//Must be global spawned, so players don't fall through buildings (might be best to spilt these to important, not important)
 if (dayz_POIs && (toLower worldName == "chernarus")) then { execVM "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf"; };
 
 if (!isDedicated) then {

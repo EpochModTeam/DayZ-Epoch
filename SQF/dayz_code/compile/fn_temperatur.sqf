@@ -26,16 +26,16 @@ _looptime = _this;
 //Positive effects
 	_vehicle_factor		=	2;
 	_fire_factor		=	15;	
-	_moving_factor 		=  	2.1;
 	_building_factor 	=  	1.5;
-	_sun_factor			= 	3;
+	_moving_factor 		=  	2.8;
+	_sun_factor			= 	1;
 	
 //Negative effects
 	_water_factor		= 	8;
-	_stand_factor 		= 	2;
+	_stand_factor 		= 	2.1;
 	_rain_factor		=	0.5;
-	_night_factor		= 	1.5;
-	_wind_factor		=	2;
+	_wind_factor		=	1.5;
+	_night_factor		= 	1;
 
 _difference = 0; 
 //_hasfireffect = false;
@@ -174,4 +174,4 @@ if (dayz_temperature_override) then { _difference = 0; if (dayz_temperatur < 37)
 dayz_temperatur = (((dayz_temperatur + _difference) max dayz_temperaturmin) min dayz_temperaturmax);
 
 
-//diag_log format["%1 - %2",dayz_temperatur,_difference];
+//systemChat format["%1 - %2",dayz_temperatur,_difference];
