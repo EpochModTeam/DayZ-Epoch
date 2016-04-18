@@ -979,8 +979,8 @@ class FSM
                          "progressLoadingScreen 0.95;" \n
                          "dayz_loadScreenMsg = localize 'str_player_setup_completed';" \n
                          "_torev4l=nearestObjects [_setPos, Dayz_plants + DayZ_GearedObjects + [""AllVehicles"",""WeaponHolder""], 50];" \n
-                         "{ [_x,0] spawn object_roadFlare } count (allMissionObjects ""RoadFlare"");" \n
-                         "{ [_x,1] spawn object_roadFlare } count (allMissionObjects ""ChemLight"");" \n
+                         "{ _null = [_x,0] spawn object_roadFlare; } count (allMissionObjects ""RoadFlare"");" \n
+                         "{ _null = [_x,1] spawn object_roadFlare; } count (allMissionObjects ""ChemLight"");" \n
                          "{" \n
                          "  _fadeFire = _x getVariable['fadeFire', true];" \n
                          "  if (!_fadeFire) then {" \n
