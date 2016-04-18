@@ -113,10 +113,7 @@ while {1 == 1} do {
 		_timer150 = diag_ticktime;
 	};
 	
-	if ((diag_tickTime - _timer) > 300) then {	
-	//Animals
-		//[] call player_animalCheck;
-		
+	if ((diag_tickTime - _timer) > 300) then {		
 		_timer = diag_tickTime;
 	};
 	

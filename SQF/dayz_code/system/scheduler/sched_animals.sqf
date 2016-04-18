@@ -45,10 +45,26 @@ sched_animals = {
 
 	//diag_log [ dayz_maxGlobalAnimals / (1 max count playableUnits), ceil(1.2*(dayz_maxGlobalAnimals - _global) / (1 max count playableUnits)) min (dayz_maxAnimals - _count), _global,dayz_maxAnimals, _count, dayz_maxGlobalAnimals, _global ];
 	for "_x" from 0 max (2 min (ceil(1.5*(dayz_maxGlobalAnimals - _global) / (1 max count playableUnits)) min (dayz_maxAnimals - _count))) to 1 step -1 do {
-		_animalssupported = ["hen","hen","hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit"];
+		_animalssupported = ["hen","hen","hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit","Dog"];
 		_type = _animalssupported select floor random count _animalssupported;
 		if (_type == "Cow") then {
-			_animalssupported = ["Cow01","Cow02","Cow03","Cow04"];
+			_animalssupported = ["Cow01","Cow02","Cow03","Cow04","Cow01_EP1"];
+			_type = _animalssupported select floor random count _animalssupported;
+		};
+		if (_type == "Goat") then {
+			_animalssupported = ["Goat","Goat01_EP1","Goat02_EP1"];
+			_type = _animalssupported select floor random count _animalssupported;
+		};
+		if (_type == "Sheep") then {
+			_animalssupported = ["Sheep","Sheep01_EP1","Sheep02_EP1"];
+			_type = _animalssupported select floor random count _animalssupported;
+		};
+		if (_type == "hen") then {
+			_animalssupported = ["hen","Cock"];
+			_type = _animalssupported select floor random count _animalssupported;
+		};
+		if (_type == "Dog") then {
+			_animalssupported = ["DZ_Fin","DZ_Pastor"];
 			_type = _animalssupported select floor random count _animalssupported;
 		};
 		_root = configFile >> "CfgVehicles" >> _type;
@@ -62,7 +78,7 @@ sched_animals = {
 			if (count _PosList > 0) then { 
 				_Pos = (_PosList select 0) select 0;
 				if ((!surfaceIsWater _Pos) AND {(0 == {alive _x} count (_Pos nearEntities [ AllPlayers, 200 ]))}) then {
-					_agent = createAgent [_type, _Pos, [], 0, "FORM"];
+					_agent = if (_type == "DZ_Pastor") then {createAgent [_type, _Pos, [], 0, "NONE"]} else {createAgent [_type, _Pos, [], 0, "FORM"]};
 					[_pos,_agent] execFSM "\z\addons\dayz_code\system\animal_agent.fsm";
 					_agent setVariable [ "", true ];
 					_count = _count + 1;
