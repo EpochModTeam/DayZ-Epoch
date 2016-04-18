@@ -113,7 +113,7 @@ if (_maxlocalspawned > 0) then { _spawnZedRadius = _spawnZedRadius * 3; };
     if (_canSpawn) then {
 	    _dis = _x distance player;
 		_checkLoot = (count (getArray (_config >> "lootPos"))) > 0;
-		_islocal = _x getVariable ["", false]; // object created locally via TownGenerator. See stream_locationFill.sqf
+		_islocal = _x getVariable ["", false]; // object created locally via TownGenerator.
 
 		//Make sure wrecks always spawn Zeds
 		_isWreck = _x isKindOf "CrashSite";

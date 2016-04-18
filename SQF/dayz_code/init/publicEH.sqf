@@ -118,29 +118,6 @@ if (isServer) then {
 		(owner _owner) publicVariableClient "PVDZ_receiveUnconscious";
 	};
 
-	"PVDZ_gridsActive" addPublicVariableEventHandler {
-		_gridref = (_this select 1) select 0;
-		_gridloc = (_this select 1) select 1;
-
-		if !(_gridref in dayz_gridsActive) then {
-			dayz_gridsActive set [count dayz_gridsActive,_gridref];
-			dayz_seedloot set [count dayz_seedloot,[_gridloc,_gridref]];
-		};
-		diag_log format ["%1, %2, %3", _gridref, dayz_gridsActive, dayz_seedloot];
-	};
-	
-	"PVDZ_gridsRemove" addPublicVariableEventHandler {
-		_gridref = (_this select 1) select 0;
-		_gridloc = (_this select 1) select 1;
-
-		if (_gridref in dayz_gridsActive) then {
-			dayz_gridsActive = dayz_gridsActive - [_gridref];
-			dayz_deseedloot set [count dayz_deseedloot,[_gridloc,_gridref]];
-		};
-		diag_log format ["%1, %2", _gridref, dayz_gridsActive];
-	};
-
-
 	"PVDZ_Server_Simulation" addPublicVariableEventHandler {
 		_agent = (_this select 1) select 0;
 		_control = (_this select 1) select 1;
