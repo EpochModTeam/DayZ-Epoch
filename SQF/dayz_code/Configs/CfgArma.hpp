@@ -344,7 +344,7 @@ class CfgSurvival {
 	class Meat {
 		class Default {
 			yield = 2;
-			rawfoodtype = "FoodmeatRaw";
+			//rawfoodtype = "FoodmeatRaw"; //This magazine does not exist
 		};
 		class Cow: Default {
 			yield = 6;
@@ -378,7 +378,7 @@ class CfgSurvival {
 		class Cock: Hen {};
 		class DZ_Fin: Default {
 			yield = 0;
-			rawfoodtype = "FoodSteakRaw";
+			rawfoodtype = "FoodDogRaw";
 		};
 		class DZ_Pastor: DZ_Fin {};
 		class Rabbit: Default {

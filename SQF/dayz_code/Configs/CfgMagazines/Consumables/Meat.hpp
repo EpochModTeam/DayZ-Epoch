@@ -173,3 +173,31 @@ class FoodBeefCooked : FoodCooked
 	bloodRegen = 800;
 	Nutrition[] = {332,700,0,0};
 };
+
+class FoodDogRaw : FoodRaw
+{
+	scope = public;
+	
+	model = "\dayz_equip\models\food_steak_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_ca.paa";
+	displayName = $STR_FOOD_NAME_DOG_RAW;
+	descriptionShort = $STR_EQUIP_DESC_47;
+	
+	bloodRegen = 300;
+	Nutrition[] = {143,300,0,0};
+	
+	cookOutput = "FoodDogCooked";
+};
+
+class FoodDogCooked : FoodCooked
+{
+	scope = public;
+	
+	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
+	displayName = $STR_FOOD_NAME_DOG_COOKED;
+	descriptionShort = $STR_EQUIP_DESC_25;
+	
+	bloodRegen = 600;
+	Nutrition[] = {143,600,0,0};
+};

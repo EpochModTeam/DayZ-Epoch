@@ -13902,5 +13902,21 @@
 			<Czech>Stan (iglú) Poušť +++++</Czech>
 			<German>Igluzelt Wüste +++++</German>
 		</Key>
+		<Key ID="STR_FOOD_NAME_DOG_RAW">
+			<English>Raw Dog Meat</English>
+			<German>Raw Hundefleisch</German>
+			<Russian>Сырое мясо собаки</Russian>
+			<Spanish>La carne de perro en bruto</Spanish>
+			<French>Nourriture pour chien</French>
+			<Czech>Raw Dog Meat</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_DOG_COOKED">
+			<English>Cooked Dog Meat</English>
+			<German>Gekochte Hundefleisch</German>
+			<Russian>Приготовленное мясо собаки</Russian>
+			<Spanish>Carne cocinada perro</Spanish>
+			<French>Cuit viande de chien</French>
+			<Czech>Vařené maso Dog</Czech>
+		</Key>
 	</Package>
 </Project>

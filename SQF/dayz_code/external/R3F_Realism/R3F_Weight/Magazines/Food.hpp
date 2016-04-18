@@ -80,10 +80,6 @@ class FoodbeefRaw
 {
 	weight = 0.25;
 };
-class FoodSteakRaw
-{
-	weight = 0.25;
-};
 class FoodBioMeat
 {
 	weight = 0.2;

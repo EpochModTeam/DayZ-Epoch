@@ -203,6 +203,7 @@ class CfgWorlds {
 			};
 		};
 	};
+	
 	initWorld = "DayZMod";
 	demoWorld = "DayZMod";
 };

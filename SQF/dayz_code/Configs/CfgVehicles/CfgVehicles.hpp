@@ -13,13 +13,16 @@ class CfgVehicles {
 		class Sounds { class Engine; class Movement;};
 		class DefaultEventhandlers;
 	};
-	class Air : AllVehicles {
+	class Air : AllVehicles
+	{
 		class NewTurret;
 		class ViewPilot;
 		class AnimationSources;
 	};
-	class Helicopter : Air {
-		class HitPoints {
+	class Helicopter : Air
+	{
+		class HitPoints
+		{
 			class HitHull {
 				armor = 1;
 				material = 51;
@@ -121,15 +124,18 @@ class CfgVehicles {
 				passThrough = 0;
 			};
 		};
-		class Turrets {
-			class MainTurret: NewTurret {
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
 				class Turrets;
 				class ViewOptics;
 			};
 		};
 	};
 	class Land;	// External class reference
-	class LandVehicle : Land {
+	class LandVehicle : Land
+	{
 		class NewTurret;
 		class Sounds;
 		class ViewOptics;
@@ -159,19 +165,14 @@ class CfgVehicles {
 			};
 		};
 	};
-	class car: landvehicle {
-		class Turrets {
-			class MainTurret: NewTurret {
-				class Turrets;
-				class ViewOptics;
-			};
-		};
-		class HitPoints {
+	class Car: LandVehicle {
+		class HitPoints
+		{
 			class HitEngine;
 			class HitRGlass;
 			class HitLGlass;
 			class HitBody;
-			class HitFuel;
+			class HitFuel;			
 			class HitLFWheel;
 			class HitRFWheel;
 			class HitLF2Wheel;
@@ -185,13 +186,22 @@ class CfgVehicles {
 			class HitGlass3;
 			class HitGlass4;
 		};
-		class Sounds : Sounds {
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class Turrets;
+				class ViewOptics;
+			};
+		};
+		class Sounds : Sounds
+		{
 			class Engine;
 			class Movement;
 		};
 	};
 
-	class Tank: landvehicle	{
+	class Tank: LandVehicle	{
   		class Sounds: Sounds  {
    			class Engine;
    			class Movement;

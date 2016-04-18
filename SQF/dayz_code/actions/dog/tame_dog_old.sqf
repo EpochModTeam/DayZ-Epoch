@@ -19,7 +19,7 @@ _caller = 	_this select 1;
 _id =		_this select 2;
 _dog =		_this select 3;
 
-player removeMagazine "FoodSteakRaw";
+player removeMagazine "FoodBeefRaw";
 _animalID = _dog getVariable "fsm_handle";
 _animalID setFSMVariable ["_isTamed", true];
 uiSleep 1;
