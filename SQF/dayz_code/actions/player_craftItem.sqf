@@ -1,5 +1,5 @@
-// If no parameters were passed redirect to vanilla player_craftItem (Epoch items always pass an array)
-if ((isNil "_this") or {(typeName _this == "ARRAY") && {count _this < 1}}) exitWith {[] spawn player_craftItemVanilla;};
+// If a string was passed redirect to vanilla player_craftItem (Epoch items always pass an array)
+if (typeName _this == "STRING") exitWith {_this spawn player_craftItemVanilla;};
 
 /*
 	DayZ Epoch Crafting 0.3

@@ -6,6 +6,9 @@ class SkinBase : CA_Magazine
 	model = "\dayz_equip\models\cloth_parcel.p3d";
 	picture = "\dayz_equip\textures\equip_cloth_parcel_ca.paa";
 	
+	displayName = $STR_EQUIP_NAME_CLOTHES; // Used in Epoch player_craftItem for canvas
+	descriptionShort = $STR_EQUIP_DESC_CLOTHES;
+	
 	Craftoutput = "equip_rag";
 	
 	class ItemActions
