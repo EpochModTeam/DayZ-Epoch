@@ -32,8 +32,8 @@ class Mission
 	randomSeed=11171215;
 	class Intel
 	{
-		briefingName="DayZ Epoch Overon";
-		briefingDescription="Overon DayZ Epoch Private Server";
+		briefingName="DayZ Epoch Ovaron";
+		briefingDescription="DayZ Epoch Ovaron";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

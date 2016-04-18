@@ -30,7 +30,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Caribou";
-		briefingDescription="DayZ Epoch Caribou Private Server";
+		briefingDescription="DayZ Epoch Caribou";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

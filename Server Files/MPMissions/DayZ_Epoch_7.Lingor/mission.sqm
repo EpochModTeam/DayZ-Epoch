@@ -45,7 +45,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Lingor";
-		briefingDescription="DayZ Epoch Lingor Private Server";
+		briefingDescription="DayZ Epoch Lingor";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

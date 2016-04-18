@@ -29,7 +29,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch SMD Sahrani";
-		briefingDescription="DayZ Epoch SMD Sahrani Private Server";
+		briefingDescription="DayZ Epoch SMD Sahrani";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

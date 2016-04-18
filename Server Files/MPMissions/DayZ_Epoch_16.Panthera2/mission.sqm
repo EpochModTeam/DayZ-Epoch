@@ -34,7 +34,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Panthera";
-		briefingDescription="Panthera DayZ Epoch Private Server";
+		briefingDescription="DayZ Epoch Panthera";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

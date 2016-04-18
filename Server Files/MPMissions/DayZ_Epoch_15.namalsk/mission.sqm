@@ -33,7 +33,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Namalsk";
-		briefingDescription="DayZ Epoch Namalsk Private Server";
+		briefingDescription="DayZ Epoch Namalsk";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

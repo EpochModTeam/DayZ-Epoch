@@ -33,7 +33,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Isla Duala";
-		briefingDescription="DayZ Epoch Isla Duala Private Server";
+		briefingDescription="DayZ Epoch Isla Duala";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

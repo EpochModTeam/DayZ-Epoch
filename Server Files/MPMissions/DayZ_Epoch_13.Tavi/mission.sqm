@@ -32,7 +32,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Taviana";
-		briefingDescription="DayZ Epoch Taviana Private Server";
+		briefingDescription="DayZ Epoch Taviana";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

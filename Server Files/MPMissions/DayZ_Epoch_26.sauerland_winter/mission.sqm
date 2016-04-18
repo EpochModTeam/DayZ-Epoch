@@ -31,7 +31,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Sauerland Winter Edition";
-		briefingDescription="DayZ Epoch Sauerland";
+		briefingDescription="DayZ Epoch Sauerland Winter Edition";
 		startWeather=0.067362607;
 		forecastWeather=0.52341133;
 		year=2008;

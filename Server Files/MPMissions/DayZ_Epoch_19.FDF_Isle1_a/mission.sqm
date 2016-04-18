@@ -30,7 +30,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Podagorsk";
-		briefingDescription="DayZ Epoch Podagorsk Private Server";
+		briefingDescription="DayZ Epoch Podagorsk";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

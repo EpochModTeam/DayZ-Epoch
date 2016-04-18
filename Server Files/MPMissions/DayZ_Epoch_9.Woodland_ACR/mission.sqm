@@ -30,7 +30,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Woodland ACR";
-		briefingDescription="DayZ Epoch Woodland ACR Private Server";
+		briefingDescription="DayZ Epoch Woodland ACR";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

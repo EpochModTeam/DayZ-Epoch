@@ -32,7 +32,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Mountains ACR";
-		briefingDescription="DayZ Epoch Mountains ACR Private Server";
+		briefingDescription="DayZ Epoch Mountains ACR";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

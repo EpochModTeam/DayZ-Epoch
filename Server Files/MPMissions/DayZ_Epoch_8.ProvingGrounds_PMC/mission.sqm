@@ -30,7 +30,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Proving Grounds PMC";
-		briefingDescription="DayZ Epoch Proving Grounds PMC Private Server";
+		briefingDescription="DayZ Epoch Proving Grounds PMC";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

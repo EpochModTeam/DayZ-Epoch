@@ -32,7 +32,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Shapur BAF";
-		briefingDescription="DayZ Epoch Shapur BAF Private Server";
+		briefingDescription="DayZ Epoch Shapur BAF";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

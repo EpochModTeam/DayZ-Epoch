@@ -30,7 +30,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Chernarus";
-		briefingDescription="DayZ Epoch Chernarus Private Server";
+		briefingDescription="DayZ Epoch Chernarus";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

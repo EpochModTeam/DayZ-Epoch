@@ -33,7 +33,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Utes";
-		briefingDescription="DayZ Epoch Utes Private Server";
+		briefingDescription="DayZ Epoch Utes";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

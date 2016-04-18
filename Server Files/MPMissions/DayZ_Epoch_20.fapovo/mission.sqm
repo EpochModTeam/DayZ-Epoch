@@ -46,7 +46,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Fapovo";
-		briefingDescription="DayZ Epoch Fapovo Private Server";
+		briefingDescription="DayZ Epoch Fapovo";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

@@ -32,7 +32,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Zargabad";
-		briefingDescription="DayZ Epoch Zargabad Private Server";
+		briefingDescription="DayZ Epoch Zargabad";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

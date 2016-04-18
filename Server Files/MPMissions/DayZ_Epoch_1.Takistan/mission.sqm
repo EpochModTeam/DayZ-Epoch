@@ -31,7 +31,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Takistan";
-		briefingDescription="DayZ Epoch Takistan Private Server";
+		briefingDescription="DayZ Epoch Takistan";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
