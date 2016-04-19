@@ -515,6 +515,7 @@ class FSM
       name = "Chase";
       init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
        "" \n
+	   "if (isNull _agent) exitWith {}; //Prevent errors if zombie is suddenly deleted" \n
 	   "_adjustSpeed = if (DZE_slowZombies) then {2} else {_agent getVariable [""speedLimit"", 3]};" \n
        "_agent forceSpeed _adjustSpeed;" \n
        "" \n

@@ -41,10 +41,10 @@ if (isNil "keyboard_keys") then {
 		 if (_ctrlState && !_altState) then {DZE_Z_ctrl = true;};
 	};
 	_autoRun = {
-		if (autoRunActive == 0) then {
-			autoRunActive = 1;
+		if (!autoRunActive) then {
+			autoRunActive = true;
 			autoRunThread = [] spawn {
-				while {autoRunActive == 1} do {
+				while {autoRunActive} do {
 					if ((player != vehicle player) or (surfaceIsWater (getPosASL player)) or r_fracture_legs) exitWith {call autoRunOff;};
 					player playAction "FastF";
 					uiSleep 0.5;
@@ -185,7 +185,7 @@ if (isNil "keyboard_keys") then {
     _interrupt = {
         r_interrupt = true;
 		if (DZE_Surrender) then {call dze_surrender_off};
-		if (autoRunActive == 1) then {call autoRunOff;};
+		if (autoRunActive) then {call autoRunOff;};
     };
     // TODO: left/right, when gear open: onKeyDown = "[_this,'onKeyDown',0,107,0,107] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
     _noise = {
@@ -288,6 +288,7 @@ if (isNil "keyboard_keys") then {
     keyboard_keys resize 256;
     [[DIK_ESCAPE], _cancelBuild] call _addArray;
 	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
+	[[DIK_A,DIK_D,DIK_LEFT,DIK_RIGHT], _interrupt] call _addArray;
 	[[DIK_F], _dze_f] call _addArray;
 	[[DIK_PRIOR], _dze_q] call _addArray;
 	[[DIK_NEXT], _dze_z] call _addArray;

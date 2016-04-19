@@ -628,7 +628,7 @@ if (!isDedicated) then {
 	if (isNil "DZE_BackpackAntiTheft") then {DZE_BackpackAntiTheft = false;};
 	if (isNil "DZE_requireplot") then {DZE_requireplot = 1;};
 	if (isNil "DZE_StaticConstructionCount") then {DZE_StaticConstructionCount = 0;};
-	autoRunActive = 0;
+	autoRunActive = false;
 	DZE_ActionInProgress = false;
 	DZE_AntiWallCounter = 0;
 	DZE_myHaloVehicle = objNull;

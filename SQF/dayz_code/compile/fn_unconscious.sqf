@@ -22,7 +22,7 @@ _sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayC
 
 // delay so that the character does not stop before falling:
 _disableHdlr = [] spawn { uiSleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
-autoRunActive = 0;
+autoRunActive = false;
 
 player playAction "CanNotMove";
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;

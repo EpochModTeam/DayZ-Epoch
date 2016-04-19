@@ -142,7 +142,7 @@ if (!isDedicated) then {
 	player_checkRecipe = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_checkRecipe.sqf";	
 		
 	// EPOCH ADDITIONS
-	autoRunOff = {autoRunActive = 0; terminate autoRunThread; player playActionNow "Stop";};
+	autoRunOff = {autoRunActive = false; terminate autoRunThread; player playActionNow "Stop";};
 	dog_findTargetAgent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
 	dze_getModelName = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_getModelName.sqf";
 	dze_isnearest_player = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_isNearestPlayer.sqf"; 

@@ -66,7 +66,7 @@ player setVariable ["startcombattimer", 0]; //remove combat timer on death
 r_player_unconscious = false;
 r_player_cardiac = false;
 _model = typeOf player;
-autoRunActive = 0;
+autoRunActive = false;
 
 _array = _this;
 if (count _array > 0) then {

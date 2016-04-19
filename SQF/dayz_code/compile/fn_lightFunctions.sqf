@@ -44,7 +44,7 @@ _lp setVectorUp _vect;
 //_lp enableSimulation false;//Using this stops lights from illuminating for local player (not tried moving it to before parameters set) - Makes no difference to network broadcast, other players DO NOT see the object anyway
 //axeDiagLog = format["FN:LP NEW CREATE:BRIGHT:%3 | %1 for %2",_lp,player,_brt];
 //publicVariable "axeDiagLog";
-_lp
+true //return value isn't used, so return bool so engine doesn't complain
 };
 
 axe_lightPoint={
