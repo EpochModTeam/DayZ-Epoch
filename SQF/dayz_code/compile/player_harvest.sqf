@@ -12,10 +12,10 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 			
 			if (alive _x) then {
 				
-				_objName = _x call DZE_getModelName;
+				_objName = _x call fn_getModelName;
 
 				// Exit since we found a tree
-				if (_objName in DZE_trees) exitWith { 
+				if (_objName in dayz_trees) exitWith { 
 					_findNearestTree set [(count _findNearestTree),_x];
 				};
 			};
@@ -39,34 +39,20 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 
 				if (_damage < 0.99) then {
 					if("" == typeOf _tree) then {
-						_tree setDamage 0.99;
+						PVDZ_objgather_Knockdown = [_tree,player]; // Ask server to setDamage on tree
+						publicVariableServer "PVDZ_objgather_Knockdown";
 					};
 				};
 
 				//diag_log ("DAMAGE: " + str(damage _tree)); 
 
-				if (round(random 1) > 0.5) then {
+				_itemOut = if (_ammo isKindOf "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"ItemLog"}; // Log can be crafted to > 2x plank > 4x woodpile			
+				_itemOut call fn_dropItem;
 
-					_countOut = 1;
-					_itemOut = "PartWoodPile";
-
-					if(_ammo isKindOf "Chainsaw_Swing_Ammo") then {
-						_itemOut = "PartWoodLumber";
-					};
-
-					_nearByPile= nearestObjects [getPosATL player, ["WeaponHolder"],2];
-					if (count _nearByPile == 0) then { 
-						_item = createVehicle ["WeaponHolder", getPosATL player, [], 1, "CAN_COLLIDE"];
-						_item addMagazineCargoGlobal [_itemOut,_countOut];
-						player reveal _item;
-					} else {
-						_item = _nearByPile select 0;
-						_item addMagazineCargoGlobal [_itemOut,_countOut];
-					};
-
-					_distance = 60;
-					[player,_distance,false,getPosATL player] spawn player_alertZombies;
-				};
+				_distance = 60;
+				[player,_distance,false,getPosATL player] spawn player_alertZombies;
+				// Working-Factor for chopping wood.
+				["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			};
 			DZE_TEMP_treedmg = _damage;
 		};

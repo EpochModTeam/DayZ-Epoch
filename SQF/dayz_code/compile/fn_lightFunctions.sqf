@@ -14,7 +14,7 @@ _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_
 				
 			if (alive _x) then {
 					
-				_objName = _x call DZE_getModelName;
+				_objName = _x call fn_getModelName;
 
 				if (_objName in _lights) then {
 

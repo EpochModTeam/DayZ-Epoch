@@ -13,11 +13,11 @@ class MeleeHatchet : MeleeWeapon
 	
 	class ItemActions
 	{
-		class Use
+		/*class Use // Must hit tree to chop wood on Epoch, see player_harvest
 		{
 			text = $STR_ACTIONS_CHOPWOOD;
 			script = "spawn player_chopWood";
-		};
+		};*/
 		
 		class Toolbelt
 		{

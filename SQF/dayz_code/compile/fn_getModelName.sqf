@@ -1,3 +1,5 @@
+private ["_i","_k","_lenInfo","_objInfo","_objName"];
+
 _objInfo = toArray(str(_this));
 _lenInfo = count _objInfo - 1;
 _objName = [];

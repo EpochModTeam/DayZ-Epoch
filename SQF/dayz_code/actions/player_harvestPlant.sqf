@@ -23,7 +23,7 @@ _findNearestTree = [];
 			
 		if (alive _x) then {
 				
-			_objName = _x call DZE_getModelName;
+			_objName = _x call fn_getModelName;
 
 			// Exit since we found a tree
 			if (_objName in _trees) exitWith { 

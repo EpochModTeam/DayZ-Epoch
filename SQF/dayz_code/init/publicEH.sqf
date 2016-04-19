@@ -153,10 +153,14 @@ if (isServer) then {
 		_tree = (_this select 1) select 0;
 		_player = (_this select 1) select 1;
 		_dis = _player distance _tree;
+		_name = if (alive _player) then {name _player} else {"unknown"};
+		_uid = getPlayerUID _player;
+		_treeModel = _tree call fn_getModelName;
 
-		if (_dis < 30) then {
+		if ((_dis < 30) && (_treeModel in dayz_trees) && (_uid != "")) then {
 			_tree setDamage 1;
 			deleteVehicle _tree;
+			diag_log format["Server setDamage on tree %1 chopped down by %2(%3)",_treeModel,_name,_uid];
 		};			
 	};
 
