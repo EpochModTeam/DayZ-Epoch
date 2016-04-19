@@ -128,10 +128,10 @@ if (!isNil "_newBackpackType") then {
 
 //Debug Message
 diag_log "Swichtable Unit Created. Equipment:";
-diag_log str(weapons _newUnit);
-diag_log str(magazines _newUnit);
-diag_log str(getWeaponCargo unitBackpack _newUnit);
-diag_log str(getMagazineCargo unitBackpack _newUnit);
+diag_log format["Weapons: %1",weapons _newUnit];
+diag_log format["Magazines: %1",magazines _newUnit];
+diag_log format["Backpack weapons: %1",getWeaponCargo unitBackpack _newUnit];
+diag_log format["Backpack magazines: %1",getMagazineCargo unitBackpack _newUnit];
 
 //Make New Unit Playable (1 of these 3 commands causes crashes with gear dialog open)
 //_oldUnit setPosATL [_position select 0 + cos(_dir) * 2, _position select 1 + sin(_dir) * 2, _position select 2];
