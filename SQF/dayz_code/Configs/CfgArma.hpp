@@ -559,13 +559,11 @@ class CfgSurvival {
 		{
 			sex = "male";
 			playerModel = "Graves_Light_DZ";
-		};
-		
+		};	
 		class Skin_Drake_Light_DZ: Default {
 			sex = "male";
 			playerModel = "Drake_Light_DZ";
-		};
-		
+		};		
 		class Skin_CZ_Special_Forces_GL_DES_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "CZ_Special_Forces_GL_DES_EP1_DZ";
@@ -574,8 +572,7 @@ class CfgSurvival {
 		class Skin_TK_INS_Soldier_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "TK_INS_Soldier_EP1_DZ";
-		};
-		
+		};	
 		class Skin_TK_INS_Warlord_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "TK_INS_Warlord_EP1_DZ";

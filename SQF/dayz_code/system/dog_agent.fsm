@@ -813,6 +813,7 @@ class FSM
        "		_handle setFSMVariable [""_hunger"",_hunger];" \n
        "		uiSleep 0.5;" \n
        "	};" \n
+	   "	player setVariable [""dogID"",0];" \n
        "};" \n
        "" \n
        "_script = [_dog,1,2,[_handle,true]] execVM (_actionDir + ""warn.sqf"");"/*%FSM</STATEINIT""">*/;

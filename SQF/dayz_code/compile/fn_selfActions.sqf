@@ -936,6 +936,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	
 	if (dayz_tameDogs) then {
 		//Dog
+		_hasRawMeat = {_x in Dayz_meatraw} count _magazinesPlayer > 0;
 		if (_isDog && {_hasRawMeat} && {_isAlive} && {_ownerID == "0"} && {player getVariable ["dogID",0] == 0}) then {
 			if (s_player_tamedog < 0) then {
 				s_player_tamedog = player addAction [localize "str_actions_tamedog", "\z\addons\dayz_code\actions\dog\tame_dog.sqf", _cursorTarget, 1, false, true];
@@ -1109,6 +1110,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 //Dog actions on player self
 if (_dogHandle > 0) then {
 	_dog = _dogHandle getFSMVariable "_dog";
+	if (isNil "_dog") exitWith {};
+	_ownerID = if (!isNull _cursorTarget) then {_cursorTarget getVariable ["CharacterID","0"]} else {"0"};
 	if (_canDo && !_inVehicle && alive _dog && _ownerID != dayz_characterID) then {
 		if (s_player_movedog < 0) then {
 			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID",0], 1, false, true];
