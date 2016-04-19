@@ -1,5 +1,5 @@
-private ["_item","_result","_dis","_sfx","_num","_breaking","_counter","_rocks","_findNearestRock","_objInfo","_lenInfo",
-"_objName","_i","_k","_countOut","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_wpPos","_nearByPile"];
+private ["_item","_result","_dis","_sfx","_num","_breaking","_counter","_rocks","_findNearestRock",
+"_objName","_countOut","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_wpPos","_nearByPile"];
 
 _item = _this;
 call gear_ui_init;
@@ -13,22 +13,7 @@ _rocks = ["r2_boulder1.p3d","r2_boulder2.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_
 _findNearestRock = objNull;
 
 {
-    _objInfo = toArray(str(_x));
-    _lenInfo = count _objInfo - 1;
-    _objName = [];
-    _i = 0;
-    // determine where the object name starts
-    {
-        if (58 == _objInfo select _i) exitWith {};
-        _i = _i + 1;
-    } forEach _objInfo;
-    _i = _i + 2; // skip the ": " part
-    
-    for "_k" from _i to _lenInfo do {
-        _objName = _objName + [_objInfo select _k];
-    };
-    _objName = toLower(toString(_objName));
-	
+    _objName = _x call fn_getModelName;
     // Exit since we found a rock
     if (_objName in _rocks) exitWith { _findNearestRock = _x; };
 } foreach nearestObjects [getPosATL player, [], 8];
