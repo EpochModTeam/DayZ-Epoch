@@ -308,4 +308,4 @@
 	["LADAWreck",[10867.4,6319.59,0.00982666],359.859],
 	["FoldTable",[422.854,5589.3,0.00149536],17.7976],
 	["Misc_cargo_cont_net1",[428.667,5574.01,0.000213623],323.529]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

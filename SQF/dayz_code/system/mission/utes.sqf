@@ -58,4 +58,4 @@
 	["Fort_StoneWall_EP1",[4022.83,2882.98,0.0588207],342.867],
 	["T72Wreck",[4022.61,2917.04,0.0561008],339.954],
 	["Info_Board_EP1",[4012.73,2897.31,0.00329018],262.568]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

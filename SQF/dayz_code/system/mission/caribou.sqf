@@ -263,4 +263,4 @@
 	["Land_Panelak",[3205.56,3115.54,4.57764e-005],22.4148],
 	["Land_Panelak",[2701.28,2857.08,-0.00298309],2.37132],
 	["Land_Panelak2",[2833.77,2849.69,-0.0144768],3.58606]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

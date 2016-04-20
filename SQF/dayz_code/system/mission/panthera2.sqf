@@ -115,4 +115,4 @@
 	["Land_Fire_barrel",[7223.86,733.89,0.000946999],0.0379978],
 	["Land_Fire_barrel",[4409.02,1627.98,0.000356674],122.863],
 	["Land_Fire_barrel",[3794.43,7652.93,3.1340871],0]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

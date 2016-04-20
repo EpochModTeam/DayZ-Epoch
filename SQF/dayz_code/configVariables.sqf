@@ -22,6 +22,7 @@ DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
 
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
+DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
 DZE_DeathMsgGlobal = false; // Display death messages in global chat
 DZE_DeathMsgSide = false; // Display death messages in side chat
 DZE_DeathMsgTitleText = false; // Display death messages as title text

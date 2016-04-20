@@ -145,4 +145,4 @@
 	["Misc_cargo_cont_small2",[13246.9,11188.1,7.62939e-006],88.3989],
 	["AmmoCrate_NoInteractive_",[13244.1,11192.5,7.62939e-006],0],
 	["AmmoCrates_NoInteractive_Large",[13247.3,11189.7,-1.90735e-006],0]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

@@ -427,4 +427,4 @@
 	["Misc_cargo_cont_net3",[2445.79,3894.76,0.0341797],264.582],
 	["FoldChair",[2446.56,3898.81,0.000793457],103.739],
 	["FoldTable",[2444.96,3899.14,0.000640869],267.556]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

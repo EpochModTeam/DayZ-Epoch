@@ -169,4 +169,4 @@
 	["Land_Fire_barrel",[4353.02,3655.65,0],48.8184],
 	["Land_Fire_barrel",[3390.93,4098.64,-1.52588e-005],153.856],
 	["Land_A_Hospital",[3307.93,1509.43,-1.14441e-005],0.916192]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

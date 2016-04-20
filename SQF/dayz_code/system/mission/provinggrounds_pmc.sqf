@@ -290,4 +290,4 @@
 	["FlagCarrierOPFOR_EP1",[931.994,1211.14,0.0169449],198.708],
 	["FlagCarrierOPFOR_EP1",[944.925,1178.76,5.71742],198.708],
 	["FlagCarrierOPFOR_EP1",[948.911,1174.81,5.66268],198.708]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

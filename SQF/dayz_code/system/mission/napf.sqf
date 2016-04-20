@@ -260,4 +260,4 @@
 	["Land_HBarrier3",[15473.1,13212.3,-0.00374699],106.213],
 	["Land_HBarrier3",[15455.8,13214.6,0.00995064],297.611],
 	["Land_HBarrier3",[15507,13213.2,0.228428],99.1406]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

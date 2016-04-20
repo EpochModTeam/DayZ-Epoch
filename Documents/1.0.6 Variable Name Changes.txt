@@ -3,6 +3,7 @@
 - Duplicate functions have been renamed:
 	- dayz_HungerThirst --> dayz_NutritionSystem
 	- dayz_objectUID3 --> dayz_objectUID2
+	- DZE_getModelName --> fn_getModelName
 	- fnc_usec_playerBleed --> fnc_usec_playerHandleBlood
 	- object_handleServerKilled --> vehicle_handleServerKilled
 	- object_setFixServer --> fnc_veh_setFixServer 
@@ -17,6 +18,7 @@
 	- dayz_fullMoonNights --> dayz_ForcefullmoonNights
 	- dayz_updateObjects --> DayZ_GearedObjects
 	- DZE_CanPickup --> canPickup
+	- DZE_trees --> dayz_trees
 	- freeTarget --> OpenTarget
 	- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
 	

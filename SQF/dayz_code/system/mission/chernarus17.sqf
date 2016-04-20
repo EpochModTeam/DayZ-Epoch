@@ -315,4 +315,4 @@
 	["MAP_R2_RockWall",[13881,11792.8,-14.3209],142.299],
 	["MAP_R2_RockTower",[13827.3,11770.9,-13.6761],0],
 	["MAP_R2_Rock1",[13817.8,11746.1,-27.2185],68.5491]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

@@ -156,4 +156,4 @@
 	["Info_Board_EP1",[9761.01,4032.71,-3.52859e-005],57.3271],
 	["Info_Board_EP1",[13575.6,7499.29,0.000282288],90.123],
 	["HeliHCivil",[7990.66,10591.1,2.47955e-005],0]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

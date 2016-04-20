@@ -300,4 +300,4 @@
 	["MAP_Barbedwire",[8410.45,3359.27,6.77109e-005],342.125],
 	["ASC_EU_LHSOld",[8410.74,3380.06,6.67572e-006],0],
 	["ASC_EU_LHSOld",[8418.09,3380.07,4.76837e-006],0]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

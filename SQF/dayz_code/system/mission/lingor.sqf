@@ -243,4 +243,4 @@
 	["HeliHEmpty",[9297.45,3854.4,1.33514e-005],0.000364386],
 	["HeliHCivil",[4210.44,1480.93,0],0],
 	["Land_HBarrier_large",[4148.3,1479.76,0.0176926],92.8137]
-] call local_spawnTraderCities;
+] call local_spawnObjects;

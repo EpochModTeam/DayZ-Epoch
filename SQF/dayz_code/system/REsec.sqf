@@ -17,7 +17,14 @@ private["_ofn","_nfn"];
 }foreach TRACED_LIB;
 {
 	_ofn=format["r%1code",_x];
-	call compile format["%1={diag_log(""WARNING illegal RE %1 with args:""+str(_this));};",_ofn];
+	_nfn=format["r%1code%2",_x,round(random(100000))];
+	//rSpawn is needed on clients only if one of these death message types is enabled
+	if (_x == "spawn" && {!isDedicated} && {DZE_DeathMsgDynamicText or DZE_DeathMsgGlobal or DZE_DeathMsgSide}) then {
+		// treat as traced on clients
+		call compile format["%1=%2;%2={diag_log(""Allowed RE on clients for death message %2 args:""+str(_this));_this call %1};",_nfn,_ofn];
+	} else {
+		call compile format["%1={diag_log(""WARNING illegal RE %1 with args:""+str(_this));};",_ofn];
+	};
 }foreach REMOVED_LIB;
 
 #ifndef SKIP_REMOTEEXECUTIONSERVER

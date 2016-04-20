@@ -114,4 +114,4 @@
 	["Land_Fire_barrel_burning",[6294.21,9927.04,0.573409],0],
 	["FlagCarrierTFKnight_EP1",[6276.49,9401.92,-0.090519],82.954],
 	["Land_Fire_barrel_burning",[6275.86,9406.17,0],358.888]
-] call local_spawnTraderCities;
+] call local_spawnObjects;
