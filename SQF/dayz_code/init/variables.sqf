@@ -200,6 +200,7 @@ dayz_resetSelfActions = {
 	s_player_packvault = -1;
 	s_player_lockvault = -1;
 	s_player_unlockvault = -1;
+	s_player_attack = -1;
 	s_player_callzombies = -1;
 	s_player_showname = -1;
 	s_player_pzombiesattack = -1;
@@ -646,7 +647,6 @@ if (!isDedicated) then {
 	DZE_6 = false;
 	DZE_F = false;
 	DZE_cancelBuilding = false;
-	DZE_PZATTACK = false;
 	DZE_TEMP_treedmg = 1;
 	DZE_Surrender = false;
 	DZE_Quarantine = false;

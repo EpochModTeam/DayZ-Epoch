@@ -13178,6 +13178,15 @@
 			<French>Ne pas afficher le nom</French>
 			<Czech>Nezobrazovat jména</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_ATTACK">
+			<English>Attack</English>
+			<German>Attacke</German>
+			<Russian>Атака</Russian>
+			<Spanish>Ataque</Spanish>
+			<Dutch>Aanval</Dutch>
+			<French>Attaque</French>
+			<Czech>Záchvat</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_RAISEHORDE">
 			<English>Raise Horde</English>
 			<!-- <German></German> -->

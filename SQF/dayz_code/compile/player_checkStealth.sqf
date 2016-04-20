@@ -7,7 +7,12 @@ _scaleMvmt = 0.2;	//0.4;
 _scaleLight = 0.5;
 //_scaleAlert = 1;
 _isPZombie = player isKindOf "PZombie_VB";
-if(_isPZombie) exitWith { DAYZ_disAudial = 0; DAYZ_disVisual = 0; };
+if (_isPZombie) exitWith {
+	DAYZ_disAudial = 0;
+	DAYZ_disVisual = 0;
+	player_zombieAttack = {}; // Other zombies don't attack player zombies
+	player_zombieCheck = {};
+};
 
 //Assess Players Position
 _anim = animationState player;

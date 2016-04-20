@@ -259,8 +259,7 @@ if (isNil "keyboard_keys") then {
             r_interrupt = true;
         };
 		if (player isKindOf  "PZombie_VB") then {
-			_handled = true;
-			DZE_PZATTACK = true;
+			_handled = true; // do not allow player zombies to vault or jump
 		} else {
 			_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
 			if (count _nearbyObjects > 0) then {

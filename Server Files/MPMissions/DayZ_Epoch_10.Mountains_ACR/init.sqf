@@ -55,6 +55,7 @@ DZE_BackpackAntiTheft = false; // Prevent stealing from backpacks in trader zone
 DZE_BuildOnRoads = false; // Allow building on roads
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic
 DZE_MissionLootTable = false; // Use custom CfgLoot defined in mission file
+DZE_PlayerZed = true; // Enable spawning as a player zombie when players die with infected status
 DZE_slowZombies = false; // Force zombies to always walk
 DZE_StaticConstructionCount = 0; // Steps required to build. If greater than 0 this applies to all objects.
 DZE_GodModeBase = false; // Make player built base objects indestructible

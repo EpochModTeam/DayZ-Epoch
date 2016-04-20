@@ -189,12 +189,11 @@ if (DZE_NameTags > 0) then {
 };
 
 if (_isPZombie) then {
+	if (s_player_attack < 0) then {
+		s_player_attack = player addAction [localize "STR_EPOCH_ACTIONS_ATTACK", "\z\addons\dayz_code\actions\pzombie\pz_attack.sqf", _cursorTarget, 6, false, true];
+	};
 	if (s_player_callzombies < 0) then {
 		s_player_callzombies = player addAction [localize "STR_EPOCH_ACTIONS_RAISEHORDE", "\z\addons\dayz_code\actions\pzombie\call_zombies.sqf",player, 5, true, false];
-	};
-	if (DZE_PZATTACK) then {
-		call pz_attack;
-		DZE_PZATTACK = false;
 	};
 	if (s_player_pzombiesvision < 0) then {
 		s_player_pzombiesvision = player addAction [localize "STR_EPOCH_ACTIONS_NIGHTVIS", "\z\addons\dayz_code\actions\pzombie\pz_vision.sqf", [], 4, false, true, "nightVision", "_this == _target"];
@@ -207,7 +206,7 @@ if (_isPZombie) then {
 		// Pzombie Gut human corpse or animal
 		if (!alive _cursorTarget && (_isAnimal || _isMan) && !_isZombie && !_isHarvested) then {
 			if (s_player_pzombiesfeed < 0) then {
-				s_player_pzombiesfeed = player addAction [localize "STR_EPOCH_ACTIONS_FEED", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",cursorTarget, 3, true, false];
+				s_player_pzombiesfeed = player addAction [localize "STR_EPOCH_ACTIONS_FEED", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",_cursorTarget, 3, true, false];
 			};
 		} else {
 			player removeAction s_player_pzombiesfeed;

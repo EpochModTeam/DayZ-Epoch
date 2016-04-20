@@ -75,7 +75,7 @@ if (_characterID != "0") then {
 	};
 	
 	if (_isNewGear) then {
-		if (typeName _magazines == "ARRAY") then {
+		if ((typeName _magazines == "ARRAY") && !(_character isKindOf "PZombie_VB")) then {
 			_playerGear = [weapons _character,_magazines select 0,_magazines select 1];
 		};
 	};
