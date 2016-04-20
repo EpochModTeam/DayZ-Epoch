@@ -363,7 +363,7 @@ while {1 == 1} do {
 		player setVariable["combattimeout", diag_tickTime + 30, true]; // Global used to punish combat log in server_onPlayerDisconnect
 		player setVariable["startcombattimer", 0, false];
 	} else {
-		if (_ZedsNearby) then {
+		if (_ZedsNearby && !_isPZombie) then {
 			player setVariable["combattimeout", diag_tickTime + 10, true]; // Global used to punish combat log in server_onPlayerDisconnect
 			player setVariable["startcombattimer", 0, false];
 		};

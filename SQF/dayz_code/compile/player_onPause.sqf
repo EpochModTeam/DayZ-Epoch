@@ -11,7 +11,7 @@ _btnAbort ctrlEnable false;
 _btnAbortText = ctrlText _btnAbort;
 _isPZombie = player isKindOf "PZombie_VB";
 
-if (r_fracture_legs) then {_btnRespawn ctrlEnable true;};
+if (r_fracture_legs or _isPZombie) then {_btnRespawn ctrlEnable true;};
 
 dayz_lastCheckSave = time;
 //force gear save

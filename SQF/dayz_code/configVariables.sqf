@@ -26,6 +26,7 @@ DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the
 DZE_DeathMsgGlobal = false; // Display death messages in global chat
 DZE_DeathMsgSide = false; // Display death messages in side chat
 DZE_DeathMsgTitleText = false; // Display death messages as title text
+DZE_DeathScreen = true; // True=Use Epoch death screen (Trade city obituaries have been amended) False=Use DayZ death screen (You are dead)
 DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 DZE_modularBuild = true; // Enable Snap building by @raymix
 DZE_snapExtraRange = 0; // Increase the default range from which objects can snap by this many meters.
