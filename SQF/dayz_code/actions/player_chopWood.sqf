@@ -1,38 +1,27 @@
 
-private ["_item","_result","_dis","_sfx","_num","_breaking","_countOut","_woodCutting","_findNearestTree","_objName","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut"];
+private ["_item","_result","_dis","_sfx","_num","_breaking","_countOut","_findNearestTree","_objName","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_tree","_distance2d"];
 
 //if (!isnil "faco_player_chopWood") exitWith { _this call faco_player_chopWood };
 
 _item = _this;
 call gear_ui_init;
 closeDialog 1;
-_countOut = 3;
-_woodCutting = false;
+_countOut = floor(random 3) + 2;
 
-
-if (["forest",dayz_surfaceType] call fnc_inString) then {
-	_countOut = floor(random 3) + 2;
-	_woodCutting = true;
-	
-} else {
-	_findNearestTree = objNull;
-	{
+_findNearestTree = [];
+{
+	if (("" == typeOf _x) && {alive _x}) then {
 		_objName = _x call fn_getModelName;
 		// Exit since we found a tree
-		if (_objName in dayz_trees) exitWith { _findNearestTree = _x; };
-	} foreach nearestObjects [getPosATL player, [], 8];
-	
-    _countOut = floor(random 3) + 2;
-	
-	if (!isNull _findNearestTree) then {
-		_woodCutting = true;
-	} else {
-		localize "str_player_23" call dayz_rollingMessages;
+		if (_objName in dayz_trees) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
 	};
-};
+} count nearestObjects [getPosATL player, [], 20];
 
-
-if (_woodCutting) then {
+//if (["forest",dayz_surfaceType] call fnc_inString) then {// Need tree object for PVDZ_objgather_Knockdown
+if (count _findNearestTree > 0) then {
+	_tree = _findNearestTree select 0;
+	_distance2d = [player, _tree] call BIS_fnc_distance2D;	
+	if (_distance2d > 5) exitWith {localize "str_player_23" call dayz_rollingMessages;};
     //Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
     {player removeMagazines _x} forEach ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing"];
 
@@ -122,11 +111,9 @@ if (_woodCutting) then {
     };
 
     if (_proceed) then {            
-        if ("" == typeOf _findNearestTree) then { 
-        //remove vehicle, Need to ask server to remove.
-          PVDZ_objgather_Knockdown = [_findNearestTree,player];
-          publicVariableServer "PVDZ_objgather_Knockdown";
-        };            
+		//remove vehicle, Need to ask server to remove.
+		PVDZ_objgather_Knockdown = [_tree,player];
+		publicVariableServer "PVDZ_objgather_Knockdown";         
         //"Chopping down tree." call dayz_rollingMessages;
         //localize "str_player_25" call dayz_rollingMessages;
     } else {
@@ -146,4 +133,6 @@ if (_woodCutting) then {
         case "MeleeMachete": {player addMagazine 'Machete_Swing';};
         case "MeleeFishingPole": {player addMagazine 'Fishing_Swing';};
     };
+} else {
+	localize "str_player_23" call dayz_rollingMessages;
 };

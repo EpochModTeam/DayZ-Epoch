@@ -9,11 +9,11 @@ class ItemHatchet : ItemCore
 	
 	class ItemActions
 	{
-		/*class Use // Must hit tree to chop wood on Epoch, see player_harvest
+		class Use
 		{
 			text = $STR_ACTIONS_CHOPWOOD;
 			script = "spawn player_chopWood;";
-		};*/
+		};
 		
 		class ToBack
 		{

@@ -8,23 +8,16 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 	
 	_findNearestTree = [];
 	{
-		if("" == typeOf _x) then {
-			
-			if (alive _x) then {
-				
-				_objName = _x call fn_getModelName;
-
-				// Exit since we found a tree
-				if (_objName in dayz_trees) exitWith { 
-					_findNearestTree set [(count _findNearestTree),_x];
-				};
-			};
+		if (("" == typeOf _x) && {alive _x}) then {			
+			_objName = _x call fn_getModelName;
+			// Exit since we found a tree
+			if (_objName in dayz_trees) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
 		};
 	} count nearestObjects [getPosATL player, [], 20];
 
 	//diag_log ("POSITION: " + str(_endPos));
 
-	if (count(_findNearestTree) >= 1) then {
+	if (count _findNearestTree > 0) then {
 
 		_tree = _findNearestTree select 0;
 
@@ -38,10 +31,8 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 			if (DZE_TEMP_treedmg < _damage) then {
 
 				if (_damage < 0.99) then {
-					if("" == typeOf _tree) then {
-						PVDZ_objgather_Knockdown = [_tree,player]; // Ask server to setDamage on tree
-						publicVariableServer "PVDZ_objgather_Knockdown";
-					};
+					PVDZ_objgather_Knockdown = [_tree,player]; // Ask server to setDamage on tree
+					publicVariableServer "PVDZ_objgather_Knockdown";
 				};
 
 				//diag_log ("DAMAGE: " + str(damage _tree)); 
