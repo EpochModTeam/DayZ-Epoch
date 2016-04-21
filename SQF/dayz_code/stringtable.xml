@@ -7565,6 +7565,14 @@
 			<French>une déshydratation</French>
 			<Czech>na dehydrataci.</Czech>
 		</Key>
+		<Key ID="str_death_sick">
+			<English>infection</English>
+			<German>infektion</German>
+			<Russian>инфекционное заболевание</Russian>
+			<Spanish>infección</Spanish>
+			<French>maladie</French>
+			<Czech>nemoc</Czech>
+		</Key>
 		<Key ID="str_death_starve">
 			<English>starvation</English>
 			<German>durch Verhungern.</German>
