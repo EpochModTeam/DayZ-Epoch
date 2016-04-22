@@ -175,6 +175,7 @@ dayz_resetSelfActions = {
 	s_player_flipveh = -1;
 	s_player_stats = -1;
 	s_player_sleep = -1;
+	s_player_fillfuel210 = -1;
 	s_player_fillfuel20 = -1;
 	s_player_fillfuel5 = -1;
 	s_player_siphonfuel = -1;

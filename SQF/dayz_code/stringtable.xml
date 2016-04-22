@@ -1349,22 +1349,6 @@
 			<French>Un tuyau serait nécessaire pour ce faire.</French>
 			<German>Dafür brauchst du einen Schlauch.</German>
 		</Key>
-		<Key ID="str_siphon_notvehicle">
-			<English>You can only siphon the fuel from a vehicle!</English>
-			<Russian>Сливать топливо можно только из транспорта!</Russian>
-			<Spanish>Sólo se puede desviar el combustible de un vehículo!</Spanish>
-			<Czech>Palivo lze přečerpávat pouze z vozidla!</Czech>
-			<French>Vous ne pouvez siphonner du carburant que d&apos;un véhicule!</French>
-			<German>Du kannst nur aus einem Fahrzeug Treibstoff abzapfen.</German>
-		</Key>
-		<Key ID="str_refuel_notvehicle">
-			<English>You can only refuel a vehicle!</English>
-			<Russian>Заправлять можно только транспорт!</Russian>
-			<Spanish>Sólo se puede repostar un vehículo!</Spanish>
-			<Czech>Můžete dotankovat pouze vozidla!</Czech>
-			<French>Vous ne pouvez faire le plein que d&apos;un véhicule!</French>
-			<German>Du kannst nur ein Fahrzeug auftanken.</German>
-		</Key>
 		<Key ID="str_setFireMatches">
 			<English>Unable to set on fire, missing matches.</English>
 			<Russian>Нечем разжечь огонь. Может найти спички?</Russian>

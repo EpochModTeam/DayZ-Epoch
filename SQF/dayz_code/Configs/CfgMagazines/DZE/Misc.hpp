@@ -282,6 +282,8 @@ class ItemFuelBarrel: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
 	descriptionShort = "210 litres of fuel per barrel";
+	fireIntensity = 6; //used for tent burning
+	emptycan = "ItemFuelBarrelEmpty";
 };
 class ItemFuelBarrelEmpty: ItemFuelBarrel
 {
@@ -292,15 +294,16 @@ class ItemFuelBarrelEmpty: ItemFuelBarrel
 	displayName = "Fuel Barrel (Empty)";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
 	descriptionShort = "210 litres of fuel per barrel (Empty)";
+	fullcan = "ItemFuelBarrel";
 	class ItemActions {
 		class Crafting
 		{
-				text = $STR_EPOCH_PLAYER_276;
-				script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
-				neednearby[] = {};
-				requiretools[] = {"ItemToolbox","ItemMatchbox"};
-				output[] = {{"ItemFireBarrel_kit",1}};
-				input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
+			text = $STR_EPOCH_PLAYER_276;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox","ItemMatchbox"};
+			output[] = {{"ItemFireBarrel_kit",1}};
+			input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
 		};
 	};
 };

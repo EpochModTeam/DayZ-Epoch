@@ -1,11 +1,11 @@
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 private ["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling","_array","_cantype",
-"_emptycan","_isMan","_isAnimal","_isZombie","_started","_finished","_animState","_isRefuel"];
+"_emptycan","_started","_finished","_animState","_isRefuel"];
 
-_vehicle = cursorTarget;
 _array = _this select 3;
 _cantype = _array select 0;
+_vehicle = _array select 1;
 _canSize = getNumber(configFile >> "cfgMagazines" >> _cantype >> "fuelQuantity");
 _emptycan = getText(configFile >> "cfgMagazines" >> _cantype >> "emptycan");
 _configVeh = configFile >> "cfgVehicles" >> TypeOf(_vehicle);
@@ -14,11 +14,7 @@ _nameType = getText(_configVeh >> "displayName");
 _curFuel = ((fuel _vehicle) * _capacity);
 _newFuel = (_curFuel + _canSize);
 _fueling = player getVariable ["fueling",false];
-_isMan = _vehicle isKindOf "Man";
-_isAnimal = _vehicle isKindOf "Animal";
-_isZombie = _vehicle isKindOf "zZombie_base";
 
-if (_isMan or _isAnimal or _isZombie) exitWith { localize "str_refuel_notvehicle" call dayz_rollingMessages; DZE_ActionInProgress = false;};
 if (fuel _vehicle == 1) exitWith {DZE_ActionInProgress = false;};
 
 player removeAction s_player_fillfuel + _capacity;

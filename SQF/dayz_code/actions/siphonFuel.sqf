@@ -1,7 +1,8 @@
 private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort",
 "_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText",
-"_availableCansEmpty","_hasHose","_PlayerNear","_isMan","_isAnimal","_isZombie"];
+"_availableCansEmpty","_hasHose","_PlayerNear"];
 
+_vehicle = _this select 3;
 player removeAction s_player_siphonfuel;
 _hasHose = "equip_hose" in magazines player;
 
@@ -11,18 +12,12 @@ _PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase
 if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 dayz_siphonFuelInProgress = true;
-_vehicle = _this select 3;
 _abort = false;
 
 // Static vehicle fuel information
 _configVeh = 	configFile >> "cfgVehicles" >> typeOf _vehicle;
 _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameText = 	getText(_configVeh >> "displayName");
-_isMan = _vehicle isKindOf "Man";
-_isAnimal = _vehicle isKindOf "Animal";
-_isZombie = _vehicle isKindOf "zZombie_base";
-
-if (_isMan or _isAnimal or _isZombie) exitWith { localize "str_siphon_notvehicle" call dayz_rollingMessages; };
 
 // Loop to find containers that can could hold fuel and fill them
 {
@@ -35,7 +30,7 @@ if (_isMan or _isAnimal or _isZombie) exitWith { localize "str_siphon_notvehicle
 		_canTypeEmpty = getText(_configCanEmpty >> "displayName");
 
 		// Get Full can size
-		_canName = configName(inheritsFrom(configFile >> "cfgMagazines" >> _canNameEmpty));
+		_canName = getText(_configCanEmpty >> "fullCan");
 		_canSize =	getNumber(configFile >> "cfgMagazines" >> _canName >> "fuelQuantity");
 		
 		// is empty
