@@ -371,7 +371,7 @@ class CfgVehicles {
 
 
 	//External Class
-	//class SkodaBase;
+	//class SkodaBase; //in Car\Skoda.hpp
 	class ATV_Base_EP1 : Car
 	{
 		class HitPoints : HitPoints
@@ -466,9 +466,10 @@ class CfgVehicles {
 	#include "Car\UAZ_MG.hpp"
 	#include "Car\Volha.hpp"
 	#include "Car\VWGolf.hpp"
-	#include "Car\UAZ.hpp"
-	#include "Car\CAR_SEDAN.hpp" //SEDAN/Skoda must be first, hatchback is based on it
+	#include "Car\Skoda.hpp"
 	#include "Car\CAR_HATCHBACK.hpp"
+	#include "Car\UAZ.hpp"
+	#include "Car\CAR_SEDAN.hpp"
 	#include "Car\V3S_Civ.hpp"
 	#include "Car\SUV_DZ.hpp"
 	#include "Car\Pickup_PK_INS.hpp"
