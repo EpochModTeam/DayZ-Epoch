@@ -94,11 +94,6 @@ class Category_601 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class ItemCanteenEmpty {
-		type = "trade_items";
-		buy[] = {3,"ItemSilverBar"};
-		sell[] = {1,"ItemSilverBar"};
-	};
 	class ItemWaterbottleUnfilled {
 		type = "trade_items";
 		buy[] = {3,"ItemSilverBar"};
