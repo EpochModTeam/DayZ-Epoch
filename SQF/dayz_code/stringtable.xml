@@ -13791,6 +13791,15 @@
 			<French>Kg</French>
 			<Czech>Kg</Czech>
 		</Key>
+		<Key ID="STR_R3F_WEIGHT_Overburdened">
+			<English>You are overburdened.</English>
+			<German>Sie sind überfordert.</German>
+			<Russian>Вы перегружена.</Russian>
+			<Spanish>Usted está sobrecargado.</Spanish>
+			<Dutch>Je bent overbelast.</Dutch>
+			<French>Vous êtes surchargé.</French>
+			<Czech>Jste přetížené.</Czech>
+		</Key>
 		<Key ID="str_autojoin_warning">
 			<English>You will auto-join the game in %1 seconds. Press ESC to cancel and leave the lobby.</English>
 			<German>Sie werden automatisch in das Spiel in %1 Sekunden. Drücken Sie ESC, um den Vorgang abzubrechen und lassen Sie die Lobby.</German>

@@ -220,11 +220,6 @@ UPDATE character_data SET Backpack = REPLACE(Backpack, 'G36K_camo', 'G36K_Camo_D
 UPDATE character_data SET Inventory = REPLACE(Inventory, 'G36K_camo', 'G36K_Camo_DZ') WHERE INSTR(Inventory, 'G36K_camo') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, 'G36K_camo', 'G36K_Camo_DZ') WHERE INSTR(Inventory, 'G36K_camo') > 0;
 
-UPDATE `Traders_DATA` SET `item` = '["L110A1_CCO_DZ",1]' WHERE `item` = '["BAF_L110A1_Aim_DZE",1]';
-UPDATE character_data SET Backpack = REPLACE(Backpack, 'BAF_L110A1_Aim_DZE', 'L110A1_CCO_DZ') WHERE INSTR(Backpack, 'BAF_L110A1_Aim_DZE') > 0;
-UPDATE character_data SET Inventory = REPLACE(Inventory, 'BAF_L110A1_Aim_DZE', 'L110A1_CCO_DZ') WHERE INSTR(Inventory, 'BAF_L110A1_Aim_DZE') > 0;
-UPDATE object_data SET Inventory = REPLACE(Inventory, 'BAF_L110A1_Aim_DZE', 'L110A1_CCO_DZ') WHERE INSTR(Inventory, 'BAF_L110A1_Aim_DZE') > 0;
-
 UPDATE `Traders_DATA` SET `item` = '["L85_Holo_DZ",1]' WHERE `item` = '["BAF_L85A2_RIS_Holo",1]';
 UPDATE character_data SET Backpack = REPLACE(Backpack, 'BAF_L85A2_RIS_Holo', 'L85_Holo_DZ') WHERE INSTR(Backpack, 'BAF_L85A2_RIS_Holo') > 0;
 UPDATE character_data SET Inventory = REPLACE(Inventory, 'BAF_L85A2_RIS_Holo', 'L85_Holo_DZ') WHERE INSTR(Inventory, 'BAF_L85A2_RIS_Holo') > 0;
