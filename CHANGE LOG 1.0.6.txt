@@ -1,6 +1,8 @@
 [NEW] Fully updated to DayZ 1.8.7 base @icomrade @ebaydayz
 [NEW] 1.8.7 attachments system, community weapons and buildable base objects
 [NEW] 1.8.7 journal and crafting menu are now functional (default 'J' key)
+[NEW] 1.8.7 traps, tripwires (cans, flare, grenade, smoke) and car bomb
+[NEW] 1.8.7 spawn selection, set dayz_spawnselection = 1; in init.sqf (Chernarus only)
 [NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
 [NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee)
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
@@ -9,7 +11,7 @@
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
 [NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
-[NEW] Snap building (disabled by default), use DZE_modularBuild = true; in your init.sqf to enable. @raymix
+[NEW] Snap building, use DZE_modularBuild = true; in init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 [NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable
 [NEW] Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
@@ -43,6 +45,7 @@
 
 [FIXED] Zombies now target and attack players correctly with 1.8.7 code
 [FIXED] Server position sync bug after falling unconscious #1522 @ebaydayz
+[FIXED] Character sometimes failing to sync after changing clothes #1545 @ebaydayz
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
 [FIXED] Infinite loop when crafting ore into bars #1351 @icomrade
