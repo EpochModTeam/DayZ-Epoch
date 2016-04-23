@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades","_humanityGain","_humanity"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 //_activatingPlayer = [player] call FNC_GetPlayerUID;
@@ -22,7 +22,7 @@ _total_trades = floor (_qty / _qty_in);
 
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
-	cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+	format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
@@ -37,11 +37,11 @@ for "_x" from 1 to _total_trades do {
 	_tradeCounter = _tradeCounter + 1;
 
 	if(_total_trades == 1) then {
-		cutText [format[(localize "str_epoch_player_105"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_105",_tradeCounter,_total_trades] call dayz_rollingMessages;
 	} else {
-		cutText [format[(localize "str_epoch_player_187"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_187",_tradeCounter,_total_trades] call dayz_rollingMessages;
 	};
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 
 	r_interrupt = false;
@@ -73,7 +73,7 @@ for "_x" from 1 to _total_trades do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+		localize "str_epoch_player_106" call dayz_rollingMessages;
 	};
 
 	_qty = {_x == _part_in} count magazines player;
@@ -97,7 +97,7 @@ for "_x" from 1 to _total_trades do {
 				player setVariable["humanity",_humanity,true];
 			};
 
-			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+			format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 			
 		} else {
 			
@@ -110,7 +110,7 @@ for "_x" from 1 to _total_trades do {
 
 	} else {
 		_needed =  _qty_in - _qty;
-		cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 	};
 
 	uiSleep 1;

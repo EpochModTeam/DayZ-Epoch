@@ -2,7 +2,7 @@
 serverTraders = ["Tanny_PMC","Graves","US_Delta_Force_AR_EP1","GUE_Commander","Damsel3","Soldier_MG_PKM_PMC","GUE_Worker2","GUE_Woodlander2","RUS_Soldier2","Drake_Light","GUE_Woodlander3","Soldier_GL_PMC","GUE_Villager3","CIV_EuroWoman01_EP1","Dr_Annie_Baker_EP1","RUS_Commander","Damsel5","TK_Special_Forces_MG_EP1","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Ins_Woodlander3","Dr_Hladik_EP1","pook_Doc_Bell47","Ins_Woodlander2"];
 // Hero Vendor
 menu_Tanny_PMC = [
-	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];
@@ -14,7 +14,7 @@ menu_Graves = [
 ];
 // Weapons Friendly
 menu_US_Delta_Force_AR_EP1 = [
-	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
+	[["Attachments",693],["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
 	"friendly"
 ];
@@ -32,7 +32,7 @@ menu_Damsel3 = [
 ];
 // Weapons neutral
 menu_Soldier_MG_PKM_PMC = [
-	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
@@ -44,13 +44,13 @@ menu_GUE_Worker2 = [
 ];
 // Neutral Building/Parts
 menu_GUE_Woodlander2 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
 // Bandit Trader
 menu_RUS_Soldier2 = [
-	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
@@ -68,13 +68,13 @@ menu_GUE_Woodlander3 = [
 ];
 // Black Market Vendor
 menu_Soldier_GL_PMC = [
-	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
+	[["Attachments",693],["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];
 // Friendly Building/Parts
 menu_GUE_Villager3 = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
@@ -116,7 +116,7 @@ menu_TK_Special_Forces_EP1 = [
 ];
 // Weapons neutral 2
 menu_Ins_Soldier_AR = [
-	[["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
+	[["Attachments",693],["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
 	[],
 	"neutral"
 ];
@@ -134,7 +134,7 @@ menu_Ins_Worker2 = [
 ];
 // Neutral Building/Parts
 menu_Ins_Woodlander3 = [
-	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
+	[["Building Supplies",662],["Tools",663],["Vehicle Parts",664]],
 	[],
 	"neutral"
 ];

@@ -44,8 +44,8 @@ link19[] = {15,16};
 link20[] = {17,19};
 link21[] = {18,17};
 link22[] = {19,11};
-globals[] = {25.000000,1,0,0,0,640,480,1,34,6316128,1,-451.823578,687.817871,513.030151,-228.021362,1401,1030,1};
-window[] = {2,-1,-1,-1,-1,804,52,1492,52,3,1419};
+globals[] = {25.000000,1,0,0,0,640,480,1,34,6316128,1,-451.823578,687.817871,513.030151,-228.021362,1401,901,1};
+window[] = {2,-1,-1,-1,-1,781,45,1485,29,3,1419};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -124,7 +124,7 @@ class FSM
           priority = 90.000000;
           to="wait";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"r_player_unconscious || r_player_dead"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"r_player_unconscious or r_player_dead"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_delay = 20;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

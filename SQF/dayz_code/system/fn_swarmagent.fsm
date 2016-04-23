@@ -1,0 +1,362 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Zombie Combat Agent">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-150.000000,-250.000000,-50.000000,-200.000000,0.000000,"init"};
+item1[] = {"End",1,250,175.000000,-250.000000,275.000000,-200.000000,0.000000,"End"};
+item2[] = {"Attack",4,218,-150.000000,425.000000,-50.000000,475.000000,0.000000,"Attack"};
+item3[] = {"Not_Alive",4,218,50.000000,300.000000,150.000000,350.000000,5.000000,"Not" \n "Alive"};
+item4[] = {"Nobody_Near",4,218,50.000000,350.000000,150.000000,400.000000,4.000000,"Nobody" \n "Near"};
+item5[] = {"",7,210,-29.000042,321.000000,-20.999958,329.000000,0.000000,""};
+item6[] = {"",7,210,-29.000042,370.999939,-20.999958,379.000061,0.000000,""};
+item7[] = {"true",8,218,-150.000000,-175.000000,-50.000000,-125.000000,0.000000,"true"};
+item8[] = {"Begin",2,250,-150.000000,-100.000000,-50.000000,-50.000000,0.000000,"Begin"};
+item9[] = {"Has_Target",4,218,-150.000000,125.000000,-50.000000,175.000000,1.000000,"Has" \n "Target"};
+item10[] = {"Chase",2,250,-150.000000,300.000000,-50.000000,350.000000,0.000000,"Chase"};
+item11[] = {"",7,210,221.000000,371.000000,229.000000,379.000000,0.000000,""};
+item12[] = {"moveToCompleted",4,218,-25.000000,200.000000,75.000000,250.000000,0.000000,"moveToCompleted"};
+item13[] = {"",7,210,221.000000,233.500000,229.000000,241.500000,0.000000,""};
+item14[] = {"",7,210,221.000000,321.000000,229.000000,329.000000,0.000000,""};
+item15[] = {"is_Dedicated",4,218,50.000000,-250.000000,150.000000,-200.000000,5.000000,"is" \n "Dedicated"};
+item16[] = {"Cleanup_",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"Cleanup?"};
+item17[] = {"nobody_around",4,218,175.000000,-75.000000,275.000000,-25.000000,0.000000,"nobody" \n "around"};
+item18[] = {"someone_here",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"someone" \n "here"};
+item19[] = {"wait",2,250,300.000000,75.000000,400.000000,125.000000,0.000000,"wait"};
+item20[] = {"time_up",4,218,300.000000,-75.000000,400.000000,-25.000000,0.000000,"time" \n "up"};
+item21[] = {"",7,210,346.000000,8.500000,354.000000,16.500000,0.000000,""};
+item22[] = {"",7,210,221.000000,8.500000,229.000000,16.500000,0.000000,""};
+item23[] = {"Time_Check",4,218,425.000000,75.000000,525.000000,125.000000,0.000000,"Time" \n "Check"};
+item24[] = {"",7,210,346.000000,-166.500000,354.000000,-158.500000,0.000000,""};
+item25[] = {"",7,210,221.000000,-166.500000,229.000000,-158.500000,0.000000,""};
+item26[] = {"deleted",4,218,425.000000,-75.000000,525.000000,-25.000000,0.000000,"deleted"};
+item27[] = {"",7,210,471.000000,-166.500000,479.000000,-158.500000,0.000000,""};
+item28[] = {"",7,210,471.000000,8.500000,479.000000,16.500000,0.000000,""};
+item29[] = {"Time_Check",4,4314,-275.000000,300.000000,-175.000000,350.000000,0.000000,"Time Check"};
+item30[] = {"____FAKE____",9,1200,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+link0[] = {0,7};
+link1[] = {0,15};
+link2[] = {2,10};
+link3[] = {3,14};
+link4[] = {4,11};
+link5[] = {5,3};
+link6[] = {5,6};
+link7[] = {6,4};
+link8[] = {7,8};
+link9[] = {8,9};
+link10[] = {9,10};
+link11[] = {10,2};
+link12[] = {10,5};
+link13[] = {10,29};
+link14[] = {11,14};
+link15[] = {13,16};
+link16[] = {14,13};
+link17[] = {15,1};
+link18[] = {16,18};
+link19[] = {16,22};
+link20[] = {17,25};
+link21[] = {18,19};
+link22[] = {19,21};
+link23[] = {19,23};
+link24[] = {20,24};
+link25[] = {21,20};
+link26[] = {21,22};
+link27[] = {21,28};
+link28[] = {22,17};
+link29[] = {23,19};
+link30[] = {24,25};
+link31[] = {25,1};
+link32[] = {26,27};
+link33[] = {27,24};
+link34[] = {28,26};
+link35[] = {29,10};
+link36[] = {12,30};
+link37[] = {30,12};
+globals[] = {25.000000,1,0,0,0,640,480,1,163,6316128,1,-438.144928,688.129517,520.129150,-284.928619,838,1030,1};
+window[] = {2,-1,-1,-1,-1,910,130,1338,130,3,856};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "DayZ Zombie Combat Agent";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"_position = 	_this select 0;" \n
+       "_agent = 		_this select 1;" \n
+       "_target =		 _this select 2;" \n
+       "" \n
+       "" \n
+       "diag_log (""Agent Initialized: "" + str(_this));"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "is_Dedicated">*/
+        class is_Dedicated
+        {
+          priority = 5.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isDedicated"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Begin";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"dayz_clientPreload and !(isNull _agent)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"if (!isDedicated) then {" \n
+       "	if (!isNull _agent) then {" \n
+       "		deleteVehicle _agent;" \n
+       "	};" \n
+       "} else {" \n
+       "	[_agent] call zombie_findOwner;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Begin">*/
+    class Begin
+    {
+      name = "Begin";
+      init = /*%FSM<STATEINIT""">*/"_array = 		[];" \n
+       "" \n
+       "_bodyStay = 	60;" \n
+       "" \n
+       "_timeN = time;" \n
+       "" \n
+       " _id = _agent addeventhandler [""HandleDamage"",{_this call local_zombieDamage}];" \n
+       "" \n
+       "//hint ""run local zombie"";" \n
+       "_isSomeone = true;" \n
+       "" \n
+       "_targetPos = [];" \n
+       "_countr = 0;" \n
+       "" \n
+       "//Spawn roaming script (individual to unit)" \n
+       "_entityTime = time;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Has_Target">*/
+        class Has_Target
+        {
+          priority = 1.000000;
+          to="Chase";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(isNull _target)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_countr = 0;" \n
+           "_losCheck = 0;" \n
+           "_cantSee = false;" \n
+           "_agent forceSpeed 6;" \n
+           "_targetPos = getPosATL _target;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Chase">*/
+    class Chase
+    {
+      name = "Chase";
+      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+       "_timeP = diag_tickTime;" \n
+       "" \n
+       "_isAlive = alive _agent;" \n
+       "_targetPos = getPosATL _target;" \n
+       "_agent moveTo _targetPos;" \n
+       "" \n
+       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
+       "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
+       "" \n
+       "if (_agent distance _target > 10) then {" \n
+       "	_agent setUnitPos ""middle"";" \n
+       "};" \n
+       "" \n
+       "	"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Not_Alive">*/
+        class Not_Alive
+        {
+          priority = 5.000000;
+          to="Cleanup_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log (""Not Alive"");" \n
+           "dayz_swarmSpawnZombies = dayz_swarmSpawnZombies - 1;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Nobody_Near">*/
+        class Nobody_Near
+        {
+          priority = 4.000000;
+          to="Cleanup_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"dayz_swarmSpawnZombies = dayz_swarmSpawnZombies - 1;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Time_Check">*/
+        class Time_Check
+        {
+          priority = 0.000000;
+          to="Chase";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeP) > 3"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Attack">*/
+        class Attack
+        {
+          priority = 0.000000;
+          to="Chase";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_agent distance _target < 3 AND (diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_vehicle = (vehicle player);" \n
+           "_hpList = _vehicle call vehicle_getHitpoints;" \n
+           "_hp = _hpList call BIS_fnc_selectRandom;" \n
+           "_wound = getText(configFile >> ""cfgVehicles"" >> (typeOf _vehicle) >> ""HitPoints"" >> _hp >> ""name"");" \n
+           "" \n
+           "[_agent, _wound] spawn player_zombieSwarmAttack;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Cleanup_">*/
+    class Cleanup_
+    {
+      name = "Cleanup_";
+      init = /*%FSM<STATEINIT""">*/"_waitStart = time;" \n
+       "" \n
+       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
+       "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "nobody_around">*/
+        class nobody_around
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"dayz_spawnZombies = dayz_spawnZombies - 1;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "someone_here">*/
+        class someone_here
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "wait">*/
+    class wait
+    {
+      name = "wait";
+      init = /*%FSM<STATEINIT""">*/"_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
+       "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
+       "" \n
+       "_timeN = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "time_up">*/
+        class time_up
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _waitStart) > 300"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "nobody_around">*/
+        class nobody_around
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"dayz_spawnZombies = dayz_spawnZombies - 1;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "deleted">*/
+        class deleted
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNull _agent;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Time_Check">*/
+        class Time_Check
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeN) > 30"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "____FAKE____">*/
+    class ____FAKE____
+    {
+      name = "____FAKE____";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "moveToCompleted">*/
+        class moveToCompleted
+        {
+          priority = 0.000000;
+          to="____FAKE____";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToCompleted _agent;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+    "End"
+  };
+};
+/*%FSM</COMPILE>*/

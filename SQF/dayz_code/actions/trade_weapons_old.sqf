@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_needed","_activatingPlayer","_textPartIn","_textPartOut","_started","_finished","_animState","_isMedic","_removed"];
 // [part_out,part_in, qty_out, qty_in,"buy"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -26,9 +26,9 @@ if(_buy_o_sell == "buy") then {
 
 if (_qty >= _qty_in) then {
 
-	cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
+	localize "str_epoch_player_105" call dayz_rollingMessages;
 	 
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 	// force animation 
 	player playActionNow "Medic";
 	
@@ -66,7 +66,7 @@ if (_qty >= _qty_in) then {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+		localize "str_epoch_player_106" call dayz_rollingMessages;
 	};
 
 	if (_finished) then {
@@ -80,7 +80,6 @@ if (_qty >= _qty_in) then {
 
 		if (_qty >= _qty_in) then {
 
-			//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 			if (isNil "_part_out") then { _part_out = "Unknown Weapon/Magazine" };
 			if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
 			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_out,inTraderCity];
@@ -102,7 +101,7 @@ if (_qty >= _qty_in) then {
 							player addMagazine _part_out;
 						};
 					};
-					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 				};
 	
 				
@@ -111,7 +110,7 @@ if (_qty >= _qty_in) then {
 				s_player_parts_crtl = -1;
 
 			} else {
-				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
+				format[localize "str_epoch_player_183",_textPartOut] call dayz_rollingMessages;
 			};
 			dayzTradeResult = nil;
 		};
@@ -119,7 +118,7 @@ if (_qty >= _qty_in) then {
 
 } else {
 	_needed =  _qty_in - _qty;
-	cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+	format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 };
 
 DZE_ActionInProgress = false;

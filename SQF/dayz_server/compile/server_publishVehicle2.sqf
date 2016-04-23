@@ -24,9 +24,7 @@ if(_donotusekey) then {
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
 _location = _worldspace select 1;
-
-//Generate UID test using time
-_uid = _worldspace call dayz_objectUID3;
+_uid = _worldspace call dayz_objectUID2;
 
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
@@ -91,7 +89,6 @@ _key call server_hiveWrite;
 
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
-	// _object setVehicleAmmo DZE_vehicleAmmo;
 
 	_object setVariable ["ObjectID", _oid, true];
 	
@@ -107,7 +104,7 @@ _key call server_hiveWrite;
 		deleteVehicle _object_para;
 	};
 
-	PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 	_object call fnc_veh_ResetEH;
 	

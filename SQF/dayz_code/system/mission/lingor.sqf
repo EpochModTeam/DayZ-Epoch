@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
 	["HeliHEmpty",[4259.78,4481.99,3.8147e-006],0],
 	["ClutterCutter_small_EP1",[4259.84,4482,7.62939e-006],0],
 	["ClutterCutter_small_EP1",[4260.19,4479.8,0],0],
@@ -251,4 +243,4 @@ private ["_object","_type"];
 	["HeliHEmpty",[9297.45,3854.4,1.33514e-005],0.000364386],
 	["HeliHCivil",[4210.44,1480.93,0],0],
 	["Land_HBarrier_large",[4148.3,1479.76,0.0176926],92.8137]
-];
+] call local_spawnObjects;

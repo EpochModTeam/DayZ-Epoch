@@ -1,71 +1,104 @@
-private ["_location","_isOk","_pondPos","_isPond","_dir","_dis","_sfx","_classname","_object","_playerPos","_item","_hastentitem","_building","_config","_text","_objectsPond"];
-//check if can pitch here
-call gear_ui_init;
-_playerPos = 	getPosATL player;
-_item = _this;
-_hastentitem = _this in magazines player;
-_location = player modeltoworld [0,2.5,0];
-_location set [2,0];
-_building = nearestObject [(vehicle player), "HouseBase"];
-_isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
-//_isOk = true;
+private ["_item","_config","_text","_booleans","_worldspace","_dir","_location","_dis","_sfx","_tent","_classname","_object","_boundingBox","_maxPoint","_actionBuild","_actionCancel"];
+/*
+private ["_item", "_config", "_text", "_booleans", "_worldspace", "_dir", "_location", "_dis", "_sfx", "_tent"];
 
-//diag_log ("Pitch Tent: " + str(_isok) );
+call gear_ui_init;
+
+_item = _this;
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
+_classname = getText (_config >> "tentmodel");
 
-if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"pitch"] , "PLAIN DOWN"]};
+//diag_log ("Classname: "+str(_classname));
+//diag_log ("Item: "+str(_item));
 
-//blocked
-if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
-//Block Tents in pounds
-_objectsPond = 		nearestObjects [_playerPos, [], 10];
-	{
-		_isPond = ["pond",str(_x),false] call fnc_inString;
-		if (_isPond) then {
-			_pondPos = (_x worldToModel _playerPos) select 2;
-			if (_pondPos < 0) then {
-				_isOk = true;
-			};
-		};
-	} count _objectsPond;
+if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
-//diag_log ("Pitch Tent: " + str(_isok) );
-
-if (!_isOk) then {
-	//remove tentbag
-	player removeMagazine _item;
-	_dir = round(direction player);	
-	
-	[1,1] call dayz_HungerThirst;
-	//wait a bit
-	player playActionNow "Medic";
-	uiSleep 1;
-	
-	_dis=20;
-	_sfx = "tentunpack";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
-	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
-	_classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Pitch" >> "create");
-
-	uiSleep 5;
-	//place tent (local)
-	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-	_object setdir _dir;
-	_object setpos _location;
-	player reveal _object;
-	_location = getPosATL _object;
-
-	_object setVariable ["CharacterID",dayz_characterID,true];
-
-	//["PVDZE_obj_Publish",[dayz_characterID,_tent,[_dir,_location],_classname]] call callRpcProcedure;
-	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir,_location],_classname];
-	publicVariableServer "PVDZE_obj_Publish";
-	
-	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
-} else {
-	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
+// item is missing or tools are missing
+if ((!(_item IN magazines player))) exitWith {
+	r_action_count = 0;
+	format[localize "str_player_31",_text,localize "str_player_31_pitch"] call dayz_rollingMessages;
 };
 
+_booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, testDistance
+
+	//remove tentbag
+	player removeMagazine _item;
+	//_dir = _worldspace select 0;
+	//_location = _worldspace select 1;
+
+	//wait a bit
+	//player playActionNow "Medic";
+	sleep 1;
+	// tent location may not be in front of player
+	//player setDir _dir;
+	//player setPosATL (getPosATL player);
+
+	_dis=20;
+	_sfx = "tentunpack";
+
+	//sleep 5;
+	
+	localize "str_player_build_rotate" call dayz_rollingMessages;
+	_location = getMarkerpos "respawn_west";
+	_object = createVehicle [_classname, _location, [], 0, "NONE"];
+	
+	// Attach item
+	_boundingBox = boundingBox _object;
+	_maxPoint = ((_boundingBox select 1) select 0) max ((_boundingBox select 1) select 1);
+	_object setPosATL [getPosATL _object select 0, getPosATL _object select 1, 0.01];
+	_object attachTo [player, [0, _maxPoint + 1, 0.3]];
+	
+	//Vars
+	player setVariable ["constructionObject", _object];
+	_object setVariable ["characterID",dayz_characterID,true];
+	
+	//Actions
+	_actionBuild = player addAction [localize "str_player_build_complete", "\z\addons\dayz_code\actions\object_build.sqf", [_object, _item, _classname, _text, true, _booleans, _dis, _sfx], 1, true];
+	_actionCancel = player addAction [localize "str_player_build_cancel", "\z\addons\dayz_code\actions\object_build.sqf", [_object, _item, _classname, _text, false, _booleans, _dis, _sfx], 1, true];
+	
+	sleep 0.01;
+	
+	while {!isNull (player getVariable "constructionObject")} do {
+		if (vehicle player != player) then {
+			player action ["eject", vehicle player];
+		};
+		
+		if (speed player > 10 or speed player <= -8) then {
+			localize "str_player_build_movingfast" call dayz_rollingMessages;
+			player playMove "amovpercmstpssurwnondnon";
+		};
+
+		sleep 0.2;
+			
+		if (!alive player) then {
+			[[],[],[],[_object, _item, _classname, _text, false, _booleans, _dis, _sfx]] call object_build; 
+		};
+	};
+
+	player removeAction _actionBuild;
+	player removeAction _actionCancel;
+*/
+/*
+	sleep 5;
+
+	_tent = createVehicle ["TentStorage", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
+	_tent setDir _dir;
+	_tent setPos _location; // follow terrain slope (works above sea level)
+	player reveal _tent;
+	_location = getPosATL _tent;
+
+	_tent setVariable ["characterID",dayz_characterID,true];
+	PVDZ_obj_Publish = [dayz_characterID,_tent,[_dir,_location],_classname];
+	publicVariableServer "PVDZ_obj_Publish";
+
+	localize "str_success_tent_pitch" call dayz_rollingMessages;
+	sleep 1;
+	r_action_count = 0;
+
+} else {
+	r_action_count = 0;
+	localize "str_fail_tent_pitch" call dayz_rollingMessages;
+};
+*/

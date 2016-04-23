@@ -5,34 +5,35 @@
 */
 private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_nul","_objType"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_21") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
-{player removeAction _x} count s_player_combi;s_player_combi = [];
+{player removeAction _x} count s_player_combi;
+s_player_combi = [];
 s_player_unlockvault = 1;
 
 _obj = _this;
 _objType = typeOf _obj;
 
-if (!(_objType in DZE_LockedStorage)) exitWith {
+if !(_objType in DZE_LockedStorage) exitWith {
 	s_player_unlockvault = -1;
 	DZE_ActionInProgress = false;
 };
 
 _playerNear = _obj call dze_isnearest_player;
-if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_20") , "PLAIN DOWN"];  };
+if (_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_20" call dayz_rollingMessages;};
 
 // Silently exit if object no longer exists || alive
-if(isNull _obj || !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
+if (isNull _obj || !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
 
 _unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
-_text = 		getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
+_text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 
 _alreadyPacking = _obj getVariable["packing",0];
 _claimedBy = _obj getVariable["claimed","0"];
 _ownerID = _obj getVariable["CharacterID","0"];
 
-if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_124"),_text], "PLAIN DOWN"]};
+if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_124",_text] call dayz_rollingMessages;};
 
 // Promt user for password if _ownerID != dayz_playerUID
 if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
@@ -48,9 +49,9 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 	};
 	
 	_dir = direction _obj;
-	_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
-	_objectID 	= _obj getVariable["ObjectID","0"];
-	_objectUID	= _obj getVariable["ObjectUID","0"];
+	_pos = _obj getVariable["OEMPos",getPosATL _obj];
+	_objectID = _obj getVariable["ObjectID","0"];
+	_objectUID = _obj getVariable["ObjectUID","0"];
 
 	_claimedBy = _obj getVariable["claimed","0"];
 	
@@ -65,10 +66,10 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 			waitUntil {!isNil "dze_waiting"};
 
 			_obj setVariable["packing",1];
-			[1,1] call dayz_HungerThirst;
-			_weapons = 		_obj getVariable["WeaponCargo",[]];
-			_magazines = 	_obj getVariable["MagazineCargo",[]];
-			_backpacks = 	_obj getVariable["BackpackCargo",[]];
+			["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
+			_weapons = _obj getVariable["WeaponCargo",[]];
+			_magazines = _obj getVariable["MagazineCargo",[]];
+			_backpacks = _obj getVariable["BackpackCargo",[]];
 			player playActionNow "Medic";
 			uiSleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
@@ -88,8 +89,8 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 
 			if (count _weapons > 0) then {
 				//Add weapons
-				_objWpnTypes = 	_weapons select 0;
-				_objWpnQty = 	_weapons select 1;
+				_objWpnTypes = _weapons select 0;
+				_objWpnQty = _weapons select 1;
 				_countr = 0;
 				{
 					_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
@@ -103,7 +104,7 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 				_objWpnQty = _magazines select 1;
 				_countr = 0;
 				{
-					if( _x != "CSGAS" ) then
+					if (_x != "CSGAS") then
 					{
 						_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
 						_countr = _countr + 1;
@@ -122,20 +123,20 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 				} count _objWpnTypes;
 			};
 	
-			cutText [format[(localize "str_epoch_player_125"),_text], "PLAIN DOWN"];
+			format[localize "str_epoch_player_125",_text] call dayz_rollingMessages;
 		};
 	} else {
 		DZE_ActionInProgress = false; 
-		cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"];
+		format[localize "str_player_beinglooted",_text] call dayz_rollingMessages;
 	};
 } else {
-	[10,10] call dayz_HungerThirst;
+	["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	uiSleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,25,true,(getPosATL player)] spawn player_alertZombies;
 	uiSleep 5;
-	cutText [format[(localize "str_epoch_player_126"),_text], "PLAIN DOWN"];
+	format[localize "str_epoch_player_126",_text] call dayz_rollingMessages;
 };
 s_player_unlockvault = -1;
 DZE_ActionInProgress = false;

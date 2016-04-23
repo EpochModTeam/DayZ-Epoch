@@ -1,4 +1,4 @@
-
+#define EAST 0
 #define TEast 0
 #define TWest 1
 #define TGuerrila 2
@@ -76,10 +76,6 @@
 #define TRACER_G_OPTIONAL tracerColor[]=TracerGColorF;tracerColorR[]=TracerNColorF
 
 #define TRACER_N_ALWAYS tracerColor[]=TracerNColorF;tracerColorR[]=TracerNColorF
-
-#define LockNo		0
-#define LockCadet	1
-#define LockYes		2
 
 enum
 {

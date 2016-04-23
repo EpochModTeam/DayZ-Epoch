@@ -1,5 +1,10 @@
 #include "Array.hpp"
 
+dz_fn_array_pushBack =
+{
+	Array_PushBack_Fast(_this select 0, _this select 1)
+};
+
 //Returns true if the given predicate evaluates to true for any element in the array
 dz_fn_array_any =
 {

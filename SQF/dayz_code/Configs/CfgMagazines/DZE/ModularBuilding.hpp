@@ -1,5 +1,5 @@
 class metal_floor_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Metal Floor";
@@ -9,7 +9,7 @@ class metal_floor_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "MetalFloor_DZ";
@@ -18,7 +18,7 @@ class metal_floor_kit: CA_Magazine {
 };
 
 class cinder_wall_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Cinder Block Wall";
@@ -28,7 +28,7 @@ class cinder_wall_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallHalf_DZ";
@@ -36,7 +36,7 @@ class cinder_wall_kit: CA_Magazine {
 	};
 };
 class cinder_door_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Block Doorway";
@@ -46,7 +46,7 @@ class cinder_door_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallSmallDoorway_DZ";
@@ -54,7 +54,7 @@ class cinder_door_kit: CA_Magazine {
 	};
 };
 class cinder_garage_kit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Block Garage Doorway";
@@ -64,7 +64,7 @@ class cinder_garage_kit: CA_Magazine {
 	weight = 325;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorway_DZ";
@@ -73,7 +73,7 @@ class cinder_garage_kit: CA_Magazine {
 };
 
 class ItemWoodFloor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Floor/Ceiling";
@@ -83,7 +83,7 @@ class ItemWoodFloor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloor_DZ";
@@ -91,7 +91,7 @@ class ItemWoodFloor: CA_Magazine {
 	};
 };
 class ItemWoodFloorHalf: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Floor/Ceiling 1/2";
@@ -101,7 +101,7 @@ class ItemWoodFloorHalf: CA_Magazine {
 	weight = 15;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloorHalf_DZ";
@@ -118,7 +118,7 @@ class ItemWoodFloorHalf: CA_Magazine {
 	};
 };
 class ItemWoodFloorQuarter: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Floor/Ceiling 1/4";
@@ -128,7 +128,7 @@ class ItemWoodFloorQuarter: CA_Magazine {
 	weight = 10;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloorQuarter_DZ";
@@ -146,7 +146,7 @@ class ItemWoodFloorQuarter: CA_Magazine {
 };
 
 class ItemWoodStairs: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Stairs";
@@ -156,7 +156,7 @@ class ItemWoodStairs: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodStairsSans_DZ";
@@ -173,7 +173,7 @@ class ItemWoodStairs: CA_Magazine {
 	};
 };
 class ItemWoodStairsSupport: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Stairs w/ supports";
@@ -183,7 +183,7 @@ class ItemWoodStairsSupport: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodStairs_DZ";
@@ -192,7 +192,7 @@ class ItemWoodStairsSupport: CA_Magazine {
 };
 
 class ItemWoodLadder: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Ladder";
@@ -202,7 +202,7 @@ class ItemWoodLadder: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLadder_DZ";
@@ -211,7 +211,7 @@ class ItemWoodLadder: CA_Magazine {
 };
 
 class ItemWoodWall: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Wall";
@@ -221,7 +221,7 @@ class ItemWoodWall: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWall_DZ";
@@ -253,7 +253,7 @@ class ItemWoodWall: CA_Magazine {
 	};
 };
 class ItemWoodWallThird: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Wall 1/3";
@@ -263,7 +263,7 @@ class ItemWoodWallThird: CA_Magazine {
 	weight = 7;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallThird_DZ";
@@ -279,7 +279,7 @@ class ItemWoodWallThird: CA_Magazine {
 	};
 };
 class ItemWoodWallWindow: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Window";
@@ -289,7 +289,7 @@ class ItemWoodWallWindow: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallWin_DZ";
@@ -298,7 +298,7 @@ class ItemWoodWallWindow: CA_Magazine {
 };
 
 class ItemWoodWallDoor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Doorway";
@@ -308,7 +308,7 @@ class ItemWoodWallDoor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallDoor_DZ";
@@ -324,7 +324,7 @@ class ItemWoodWallDoor: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Door";
@@ -334,7 +334,7 @@ class ItemWoodWallWithDoor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodDoor";
@@ -350,7 +350,7 @@ class ItemWoodWallWithDoor: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoorLocked: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wall w/ Door Locked";
@@ -360,7 +360,7 @@ class ItemWoodWallWithDoorLocked: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodDoorLocked";
@@ -369,7 +369,7 @@ class ItemWoodWallWithDoorLocked: CA_Magazine {
 };
 
 class ItemWoodWallGarageDoor: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Garage Door";
@@ -379,7 +379,7 @@ class ItemWoodWallGarageDoor: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_GarageWoodDoor";
@@ -395,7 +395,7 @@ class ItemWoodWallGarageDoor: CA_Magazine {
 	};
 };
 class ItemWoodWallGarageDoorLocked: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Garage Door Locked";
@@ -405,7 +405,7 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_GarageWoodDoorLocked";
@@ -414,7 +414,7 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine {
 };
 
 class ItemWoodWallLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wood Wall";
@@ -424,7 +424,7 @@ class ItemWoodWallLg: CA_Magazine {
 	weight = 25;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLargeWall_DZ";
@@ -456,7 +456,7 @@ class ItemWoodWallLg: CA_Magazine {
 	};
 };
 class ItemWoodWallWindowLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Window";
@@ -466,7 +466,7 @@ class ItemWoodWallWindowLg: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLargeWallWin_DZ";
@@ -475,7 +475,7 @@ class ItemWoodWallWindowLg: CA_Magazine {
 };
 
 class ItemWoodWallDoorLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Doorway";
@@ -485,7 +485,7 @@ class ItemWoodWallDoorLg: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLargeWallDoor_DZ";
@@ -501,7 +501,7 @@ class ItemWoodWallDoorLg: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoorLg: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Door";
@@ -511,7 +511,7 @@ class ItemWoodWallWithDoorLg: CA_Magazine {
 	weight = 30;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_LargeWoodDoor";
@@ -527,7 +527,7 @@ class ItemWoodWallWithDoorLg: CA_Magazine {
 	};
 };
 class ItemWoodWallWithDoorLgLocked: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Large Wall w/ Door Locked";
@@ -537,7 +537,7 @@ class ItemWoodWallWithDoorLgLocked: CA_Magazine {
 	weight = 35;
 	class ItemActions {
 		class Build {
-			text = $STR_ACTIONS_BUILD_EPOCH;
+			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_LargeWoodDoorLocked";

@@ -1,31 +1,31 @@
 private ["_item","_config","_pos","_onLadder","_create","_started","_finished","_animState","_isMedic","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_56") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_56" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_player_21") , "PLAIN DOWN"]};
+if (_onLadder) exitWith {DZE_ActionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
 
 _text = getText (_config >> "displayName");
 _haskey = _this in weapons player;
-if (!_haskey) exitWith {DZE_ActionInProgress = false; cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
+if (!_haskey) exitWith {DZE_ActionInProgress = false; format[localize "str_player_30",_text] call dayz_rollingMessages;};
 
 _hastoolweapon = "ItemKeyKit" in weapons player;
-if (!_hastoolweapon) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_57") , "PLAIN DOWN"]};
+if (!_hastoolweapon) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_57" call dayz_rollingMessages;};
 
 _pos = [player] call FNC_GetPos;
 _isNear = {inflamed _x} count (_pos nearObjects 3);
-if(_isNear == 0) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_58") , "PLAIN DOWN"]};
+if (_isNear == 0) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_58" call dayz_rollingMessages;};
 
 call gear_ui_init;
 
 // require one tin bar per key
 _hasTinBar = 	"ItemTinBar" in magazines player;
-if(!_hasTinBar) exitWith {DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_59") , "PLAIN DOWN"]};
-[1,1] call dayz_HungerThirst;
+if (!_hasTinBar) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_59" call dayz_rollingMessages;};
+["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 player playActionNow "Medic";
 
 [player,"repair",0,false] call dayz_zombieSpeak;
@@ -62,7 +62,7 @@ if(_finished) then {
 		_create = _item;
 		_create call player_addDuplicateTool;
 	} else {
-		cutText [(localize "str_epoch_player_61") , "PLAIN DOWN"];
+		localize "str_epoch_player_61" call dayz_rollingMessages;
 	};
 } else {
 	r_interrupt = false;
@@ -70,6 +70,6 @@ if(_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText [(localize "str_epoch_player_61") , "PLAIN DOWN"];
+	localize "str_epoch_player_61" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;

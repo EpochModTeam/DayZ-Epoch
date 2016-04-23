@@ -22,7 +22,7 @@ _index = 0;
 
 // set rgb + m 
 player setVariable [_NVx, _NV];
-cutText [format["%1 %2",_NVx,_NV], "PLAIN DOWN"];
+format["%1 %2",_NVx,_NV] call dayz_rollingMessages;
 
 _NV = player getvariable ["NV",["OFF", 0.1]];
 _NVOn = (_NV select 0);

@@ -1,5 +1,4 @@
-private ["_ys","_ms","_ds","_b","_2","_6","_7","_8","_9","_10","_str_left_text","_1","_3","_4","_5","_blood_in_pack","_blood_in_inv","_mag_arr","_backpack","_11","_mags_for_weap","_mssv_cnt","_weapon","_config"];
-
+private ["_ys","_ms","_ds","_b","_2","_6","_7","_8","_9","_10","_str_left_text","_1","_3","_4","_5","_blood_in_pack","_blood_in_inv","_mag_arr","_backpack","_11","_mags_for_weap","_mssv_cnt","_weapon","_config","_survivors","_moon","_spawnselection","_disabledTemperature"];
 _survivors = playersNumber west;
 
 _str_left_text = "
@@ -18,6 +17,8 @@ _str_left_text = "
 ";
 
 _1 = name player;
+
+dayz_currentGlobalZombies = count entities "zZombie_Base";
 
 /*
 if (player hasWeapon "ItemWatch") then
@@ -251,9 +252,9 @@ _disabledTemperature = switch (dayz_temperature_override) do {
 
 	// left page
 	((uiNamespace getVariable "horde_myDisplay") displayCtrl 1800) ctrlSetStructuredText parseText format ["
+					<t size='2' font='Zeppelin33' color = '#000000' align='center'>Survival Type: %14</t><br/>
 					<br/>
 					<t size='2' font='Zeppelin33' color = '#000000' align='left'>Health: 	 </t><t size='2' font='Zeppelin33' align='right' color='#FF0033'>%1</t><br/>
-					<br/>
 					<t size='2' font='Zeppelin33' color = '#000000' align='left'>Hunger: 			 </t><t size='2' font='Zeppelin33' align='right' color='#FF0033'>%2%</t><br/>
 					<t size='2' font='Zeppelin33' color = '#000000' align='left'>Thirst: 		 </t><t size='2' font='Zeppelin33' align='right' color='#FF0033'>%3%</t><br/>
 					<br/>
@@ -281,13 +282,14 @@ _disabledTemperature = switch (dayz_temperature_override) do {
 					(_spawnselection),
 					(round(dayz_temperatur)),
 					(player getVariable['humanity', 0]),
-					({alive _x} count entities "zZombie_Base"),
+					(dayz_currentGlobalZombies),
 					(dayz_Survived),
 					(_survivors),
 					(round diag_fps),
 					(round diag_fpsmin),
 					(_moon),
-					(_disabledTemperature)
+					(_disabledTemperature),
+					(dayz_presets)
 				];
 
 // right page - blank until humanity is checked

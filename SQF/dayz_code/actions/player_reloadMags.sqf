@@ -1,10 +1,14 @@
-private ["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest"];
+private ["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart",
+"_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots",
+"_control","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full",
+"_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest","_mags","_i"];
+
 disableSerialization;
 call gear_ui_init;
 
 //note - one slot ammo can be used!
 r_action_count = r_action_count + 1;
-if (r_action_count != 1) exitWith { cutText [localize "str_player_actionslimit", "PLAIN DOWN"]; };
+if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
 _item = _this;
 
@@ -22,7 +26,7 @@ _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
 if (currentWeapon player != "") then {
 	_mags = [] + getArray (configFile >> "cfgWeapons" >> (currentWeapon player) >> "magazines");
 };
-if !(_create in _mags) exitWith {cutText [localize "str_must_have_weapon", "PLAIN DOWN"];};
+if !(_create in _mags) exitWith {localize "str_must_have_weapon" call dayz_rollingMessages;};
 
 */
 player playActionNow "PutDown";
@@ -93,7 +97,7 @@ if (_consume_magsize > _create_magsize) then {
 
 if ((_qtynew_create_mags + _qtynew_consume_mags) > (_qty_create_mags + _qty_consume_mags + _qty_free_slots)) exitWith {
 	r_action_count = 0;
-    cutText [localize "str_player_24", "PLAIN DOWN"];
+    localize "str_player_24" call dayz_rollingMessages;
 };
 _qtynew_consume_mags_full = floor(_qtynew_consume_ammo/_consume_magsize);
 _qtynew_create_mags_full = floor(_qtynew_create_ammo/_create_magsize);

@@ -1,23 +1,16 @@
-// animHealed.sqf
+// called by PublicVariableEventHandler "PVCDZ_hlt_Epi", received from the server, 
+// because another player sent a PVDZ_send = [_unit,"Epinephrine",[_unit,player,"ItemEpinephrine"]];
 
-private ["_array","_unit","_medic","_isDead"];
 _array = _this; //_this select 0;
-_unit = _array select 0;
-_medic = _array select 1;
+_unit = _array select 0; // healed
+_medic = _array select 1; // healer
 
 _isDead = _unit getVariable["USEC_isDead",false];
 
-if (local _unit) then {_unit setCaptive false};
+//if (local _unit) then {_unit setCaptive false}; // captive ????
 
-if (!_isDead) then {
-	_unit switchMove "AmovPpneMstpSnonWnonDnon_healed";
-	//no need to public broadcast the variables since this runs on every peer
-	_unit setVariable ["NORRN_unconscious", false, false];
-	_unit setVariable ["USEC_isCardiac",false, false];
-	if (_unit == player) then {
-		r_player_unconscious = false;
-		disableUserInput false;
-		r_player_cardiac = false;
-		r_player_handler1 = false;
-	};
+if (_unit == player and !(_unit getVariable["USEC_isDead",false]) and _medic != _unit and _medic distance _unit < 5) then {
+	_unit setVariable ["NORRN_unconscious", false, false]; r_player_unconscious = false;
+	_unit setVariable ["USEC_isCardiac",false, false]; r_player_cardiac = false;
+	//AmovPpneMstpSnonWnonDnon_healed
 };

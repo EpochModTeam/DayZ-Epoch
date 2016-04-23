@@ -4,16 +4,16 @@ class Mission
 	addOns[]=
 	{
 		"zargabad",
+		"map_eu",
 		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
-		"dayz_epoch",
-		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"dayz_epoch",
 		"warfarebuildings",
 		"ind_tank",
 		"camisc_e",
@@ -32,7 +32,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Zargabad";
-		briefingDescription="DayZ Epoch Zargabad Private Server";
+		briefingDescription="DayZ Epoch Zargabad";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -172,7 +172,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-144,0.5,2320};
+					position[]={-144,0,2320};
 					id=50;
 					side="LOGIC";
 					vehicle="FunctionsManager";
@@ -188,85 +188,85 @@ class Mission
 		items=15;
 		class Item0
 		{
-			position[]={4008.2993,16.185383,3980.938};
+			position[]={4008,16,3980};
 			name="center";
 			type="Empty";
 		};
 		class Item1
 		{
-			position[]={5013.0796,70.806229,-4117.3838};
+			position[]={5013,70,-4117};
 			name="respawn_west";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={3202.9771,15.897918,4507.9878};
+			position[]={3202,15,4507};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={2929.7903,26.051424,4010.7637};
+			position[]={2929,26,4010};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={2798.1099,36.291965,3502.229};
+			position[]={2798,36,3502};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={3338.927,11.758877,3139.917};
+			position[]={3338,11,3139};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={3833.1604,12.861705,2940.02};
+			position[]={3833,12,2940};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={4457.5381,11.387321,3000.3779};
+			position[]={4457,11,3000};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={3698.5793,28.153532,5002.1167};
+			position[]={3698,28,5002};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={5042.6992,15.64042,3989.9597};
+			position[]={5042,15,3989};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={4270.0552,23.945889,5060.2764};
+			position[]={4270,23,5060};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={4757.124,9.2853222,3498.8633};
+			position[]={4757,9,3498};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={4700.2817,28.184851,5096.313};
+			position[]={4700,28,5096};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={3568.9497,27.889961,6816.1289};
+			position[]={3568,27,6816};
 			name="HeroCamp";
 			text="FOB Haroo";
 			type="mil_circle";
@@ -274,7 +274,7 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={4753.9204,64.943069,831.62354};
+			position[]={4753,64,831};
 			name="BanditCamp";
 			text="Old Firuz Baharv";
 			type="mil_circle";

@@ -1,6 +1,6 @@
 private ["_ok"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_21") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_PLAYER_21" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 dayz_selectedVault = _this select 3;

@@ -125,6 +125,7 @@ if(!isNil "_objHouse")then{
 		{
 			_objLightPoint = nearestObject [_x, "#lightpoint"];
 			_pos = [_x] call FNC_getPos;
+			_dir = getDir _x;
 			if((abs ([_pos, _objLightPoint] call BIS_fnc_distance2D))<_hsLPDist)then{//In House
 				
 				if(_plyr distance _x < _lpRange)then{//If within range && outside band

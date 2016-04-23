@@ -232,4 +232,16 @@ class CfgMusic
 		sound[] = {"\dayz_sfx\samples\suspense_35.ogg", db+0, 1.0};
 		duration = 20;
 	};
+	class z_suspense_36
+	{
+		name = "";
+		sound[] = {"\dayz_sfx\samples\suspense_36.ogg", db+0, 1.0};
+		duration = 48;
+	};
+	class z_suspense_37
+	{
+		name = "";
+		sound[] = {"\dayz_sfx\samples\suspense_37.ogg", db+0, 1.0};
+		duration = 36;
+	};
 };

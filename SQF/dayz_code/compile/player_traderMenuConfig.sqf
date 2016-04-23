@@ -12,7 +12,7 @@ TraderCatList = [];
 TraderItemList = [];
 
 TraderDialogLoadItemList = {
-	private ["_index","_trader_id","_activatingPlayer","_distance","_objclass","_item_list"];
+	private ["_index","_trader_id","_activatingPlayer","_distance","_objclass","_item_list","_ignore"];
 	TraderItemList = [];
 	_index = _this select 0;
 
@@ -27,7 +27,9 @@ TraderDialogLoadItemList = {
 	ctrlSetText [TraderDialogSellPrice, ""];
 
 	_cfgTraderCategory = missionConfigFile >> "CfgTraderCategory" >> (format["Category_%1",_trader_id]);	
-
+	if (isNumber (_cfgTraderCategory >> "duplicate")) then {
+		_cfgTraderCategory = missionConfigFile >> "CfgTraderCategory" >> (format["Category_%1",getNumber (_cfgTraderCategory >> "duplicate")]);
+	};
 	PVDZE_plr_TradeMenuResult = [];
 	
 	for "_i" from 0 to ((count _cfgTraderCategory) - 1) do {
@@ -49,9 +51,14 @@ TraderDialogLoadItemList = {
 			};
 		};
 		
+		_ignore = false;
+		if (dayz_classicBloodBagSystem && _class in dayz_typedBags) then {
+			if (_class == "bloodBagONEG") then {_class = "ItemBloodbag";} else {_ignore = true;};
+		};
+		
 		_data = [9999,[_class,_typeNum],99999,_buy,_sell,0,_trader_id,_type];
 		
-		PVDZE_plr_TradeMenuResult set [count PVDZE_plr_TradeMenuResult, _data];
+		if (!_ignore) then {PVDZE_plr_TradeMenuResult set [count PVDZE_plr_TradeMenuResult, _data];};
 	};
 
 	lbClear TraderDialogItemList;
@@ -205,7 +212,7 @@ TraderDialogBuy = {
 	private ["_index", "_item", "_data"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {
-		cutText [(localize "str_epoch_player_6"), "PLAIN DOWN"];
+		localize "str_epoch_player_6" call dayz_rollingMessages;
 	};
 	_item = TraderItemList select _index;
 	_data = [_item select 0, _item select 3, 1, _item select 2, "buy", _item select 4, _item select 1, _item select 8];
@@ -217,7 +224,7 @@ TraderDialogSell = {
 	private ["_index", "_item", "_data"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {
-		cutText [(localize "str_epoch_player_6"), "PLAIN DOWN"];
+		localize "str_epoch_player_6" call dayz_rollingMessages;
 	};
 	_item = TraderItemList select _index;
 	_data = [_item select 6, _item select 0, _item select 5, 1, "sell", _item select 1, _item select 7, _item select 8];

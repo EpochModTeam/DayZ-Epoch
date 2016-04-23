@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_configVeh","_nameText","_towTruck","_inTow"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_96" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_towing;
@@ -28,7 +28,7 @@ if(_inTow) then {
 
 		_finished = false;
 
-		[1,1] call dayz_HungerThirst;
+		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		// force animation 
 		player playActionNow "Medic";
 
@@ -68,7 +68,7 @@ if(_inTow) then {
 			detach _vehicle;
 			_towTruck setVariable ["DZEinTow", false, true];
 			_towTruck setVariable ["DZEvehicleInTow", objNull, true];
-			cutText [format[(localize "str_epoch_player_178"),_nameText], "PLAIN DOWN"];
+			format[localize "str_epoch_player_178",_nameText] call dayz_rollingMessages;
 
 			_vehicle setvelocity [0,0,1];
 		};
@@ -77,7 +77,7 @@ if(_inTow) then {
 		_towTruck setVariable ["DZEvehicleInTow", objNull, true];	
 	};
 } else {
-	cutText [(localize "str_epoch_player_102"), "PLAIN DOWN"];
+	localize "str_epoch_player_102" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;
 s_player_towing = -1;

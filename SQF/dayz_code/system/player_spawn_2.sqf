@@ -1,79 +1,213 @@
-private ["_refObj","_size","_vel","_speed","_hunger","_thirst","_result","_factor","_distance","_lastTemp","_rnd","_listTalk","_id","_messTimer","_combatdisplay","_combatcontrol","_timeleft","_inVehicle","_lastUpdate","_foodVal","_thirstVal","_lowBlood","_startcombattimer","_combattimeout","_isPZombie","_outsideMap","_radsound","_bloodloss","_radTimer","_currentBlood","_wpnType","_dayzMags"];
+private ["_hunger","_thirst","_timeOut","_result","_randomSpot","_distance","_mylastPos","_lastTemp","_rnd","_messTimer","_PlayerNearby","_ZedsNearby","_saveTime"];
 disableSerialization;
-
+_timeOut = 0;
 _messTimer = 0;
-_radTimer = 0;
 _lastTemp = dayz_temperatur;
-
+_debug = getMarkerpos "respawn_west";
 _isPZombie = player isKindOf "PZombie_VB";
+_radTimer = 0;
+
+_timer = diag_tickTime;
+_timer1 = diag_tickTime;
+_spawnCheck = diag_tickTime;
+_timer2 = diag_Ticktime;
+_timer5 = diag_Ticktime;
+_timer10 = diag_Ticktime;
+_timer30 = diag_Ticktime;
+_timer150 = diag_ticktime;
+
+_forceHumanity = false;
+_runonce = false;
+_timerMonitor = diag_ticktime;
 
 player setVariable ["temperature",dayz_temperatur,true];
 player setVariable["friendlies",DZE_Friends,true];
 
-dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) +  (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
+[player,0] call player_humanityChange;
 
-while {true} do {
+//player addMagazine "Hatchet_swing";
+//player addWeapon "MeleeHatchet";
+
+while {1 == 1} do {
+	_start = diag_tickTime;
 
 	//Initialize
-	_refObj = 	vehicle player;
-	_factor = 0.6;
-	_inVehicle = (_refObj != player);
-	// _size = 	(sizeOf typeOf _refObj) * _factor;
-	_vel = 		velocity player;
-	_speed = 	(round((_vel distance [0,0,0]) * 3.5)) min 18;
+	_refObj = vehicle player;
+	_size = (sizeOf typeOf _refObj) * 0.6;
+	_vel = velocity player;
+	_speed = round((_vel distance [0,0,0]) * 3.5);
+	_saveTime = (playersNumber west * 2) + 10;
+	
+	//reset rating always
+	if (((rating player) > 0) or ((rating player) < 0)) then {
+		player setUnitRank "PRIVATE";
+	};
 
-	// dayz_areaAffect = _size;
+	dayz_myLoad = (((count dayz_myBackpackMags) * 0.2) + (count dayz_myBackpackWpns)) + (((count dayz_myMagazines) * 0.1) + (count dayz_myWeapons * 0.5));
+	
+	//reset position
+	_randomSpot = true;
+	_tempPos = getPosATL player;
+	_distance = _debug distance _tempPos;
+	if (_distance < 2000) then {
+		_randomSpot = false;
+	};
+	_distance = [0,0,0] distance _tempPos;
+	if (_distance < 500) then {
+		_randomSpot = false;
+	};
+	if (!isNil "_mylastPos") then {
+		_distance = _mylastPos distance _tempPos;
+		if (_distance > 400) then {
+			_randomSpot = false;
+		};
+	};
+	if (_randomSpot) then {
+		_mylastPos = _tempPos;
+	};
 
+	if (!isNil "_mylastPos") then {
+		dayz_mylastPos = _mylastPos;
+	};
+	dayz_areaAffect = _size;
+
+	if (_speed > 0.1) then {
+		_timeOut = _timeOut + 1;
+	};
+
+	if (_timeOut > 150) then {
+		_humanity = player getVariable ["humanity",0];
+		if (_humanity < 1 or _forceHumanity) then {
+			if (vehicle player != player) then {
+				[player, round(_timeOut / 10)] call player_humanityChange;
+				_forceHumanity = false;
+			} else {
+				_humanity = _humanity + round(_timeOut / 10);
+				player setVariable["humanity",_humanity,true];
+				_forceHumanity = true;
+			};
+		};
+		_timeOut = 0;
+	};
+
+/*	
+	if ((Dayz_loginCompleted) && (diag_tickTime < 25)) then {
+
+		[player,0] call player_humanityChange;
+		
+		diag_log ("Running");
+		_timer10 = diag_Ticktime;
+	};
+*/
+	
+	//reset OpenTarget variable if the timer has run out.
+	if (OpenTarget_Time > 0 && {diag_tickTime - OpenTarget_Time >= dayz_OpenTarget_TimerTicks}) then
+	{
+		player setVariable ["OpenTarget",false,true];
+	};
+	
+	if ((diag_tickTime - _timer150) > 60) then {
+		//Digest Food.
+		if (r_player_foodstack > 0) then { r_player_foodstack = r_player_foodstack - 1; };
+		
+		_timer150 = diag_ticktime;
+	};
+	
+	if ((diag_tickTime - _timer) > 300) then {		
+		_timer = diag_tickTime;
+	};
+	
+	//Every 30 seconds force the client to update the server of all medical Values
+	if ((diag_tickTime - _timer30) > 30) then {
+		[] spawn {
+			_medical = player call player_sumMedical;
+			
+			PVDZ_playerMedicalSync = [player,_medical];
+			publicVariableServer "PVDZ_playerMedicalSync";
+		};
+		_timer30 = diag_tickTime;
+	};
+	
 	//Record Check
-	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
+	_lastUpdate = diag_ticktime - dayZ_lastPlayerUpdate;
 	if (_lastUpdate > 8) then {
 		//POSITION?
-		_distance = dayz_myPosition distance _refObj;
+		_distance = dayz_myPosition distance player;
 		if (_distance > 10) then {
 			//Player has moved
-			dayz_myPosition = getPosATL _refObj;
+			dayz_myPosition = getPosATL player;
 
 			// Check for radiation
 			DZE_InRadiationZone = false;
 
 			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos || (dayz_myPosition select 1) < dayz_minpos || (dayz_myPosition select 0) > dayz_maxpos || (dayz_myPosition select 1) > dayz_maxpos);
 
-			if((_outsideMap || DZE_Quarantine) && !r_player_dead && !isNull (findDisplay 46)) then {
+			if ((_outsideMap || DZE_Quarantine) && {!r_player_dead} && {!isNull (findDisplay 46)} && {player distance (getMarkerPos "respawn_west") > 200}) then {
 				DZE_InRadiationZone = true;
 			};
-
 			player setVariable["posForceUpdate",true,true];
 			dayz_unsaved = true;
-			dayZ_lastPlayerUpdate = time;
+			dayZ_lastPlayerUpdate = diag_ticktime;
 		};
 	};
-
-	//Hunger
-	_hunger = +((((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal) * 5) + _speed + dayz_myLoad) * 3;
-	if (time - dayz_panicCooldown < 120) then {
+	
+	_hunger = (abs((((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal) * 5) + _speed + dayz_myLoad) * 3);
+	if (diag_ticktime - dayz_panicCooldown < 120) then {
 		_hunger = _hunger * 2;
 	};
-	dayz_hunger = dayz_hunger + (_hunger / 60);
+	dayz_hunger = dayz_hunger + (_hunger / 70); //60 Updated to 80
+	dayz_hunger = (dayz_hunger min SleepFood) max 0;
 
-	//Thirst
+	if (dayz_hunger >= SleepFood) then {
+		if (r_player_blood < 10) then {
+			_id = [player,"starve"] spawn player_death;
+		};
+	};
+	
+//Thirst
 	_thirst = 2;
-	if (!_inVehicle) then {
+	if (_refObj == player) then {
 		_thirst = (_speed + 4) * 3;
 	};
-	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% && + 16.6% waterloss
+	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% and + 16.6% waterloss
+	dayz_thirst = (dayz_thirst min SleepWater) max 0;
 
+	if (dayz_thirst >= SleepWater) then {
+		if (r_player_blood < 10) then {
+			_id = [player,"dehyd"] spawn player_death;
+		};
+	};
+	
+	//diag_log format ["playerSpawn2 %1/%2",dayz_hunger,dayz_thirst];
+	
+	//Calories
+	if (dayz_nutrition > 0) then {
+		_Nutrition = dayz_nutrition;
+		_hunger = (abs((((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal) * 5) + _speed + dayz_myLoad) * 3);
+		_thirst = 2; if (_refObj == player) then {_thirst = (_speed + 4) * 3;};
+		_NutritionLoss = _Nutrition - (((_thirst / 1000) + (_hunger / 1000)) * (dayz_temperatur / dayz_temperaturnormal));		
+		r_player_Nutrition = [_NutritionLoss];
+	} else {
+		r_player_Nutrition = [0];
+	};
+	dayz_nutrition = r_player_Nutrition select 0;
+	
 	//Temperatur
-	2 call player_temp_calculation; //2 = sleep time of this loop		//TeeChange
-	if ((_lastTemp - dayz_temperatur) > 0.75 || (_lastTemp - dayz_temperatur) < -0.75 ) then {
-		player setVariable ["temperature",dayz_temperatur,true];
+	2 call player_temp_calculation; //2 = sleep time of this loop //TeeChange
+	if ((_lastTemp - dayz_temperatur) > 0.75 or (_lastTemp - dayz_temperatur) < -0.75 ) then {
+		player setVariable ["temperature",dayz_temperatur,false];
+		
+		PVDZ_serverStoreVar = [player,"temperature",dayz_temperatur];
+		publicVariableServer "PVDZ_serverStoreVar";
+		
 		_lastTemp = dayz_temperatur;
 	};
+	dayz_temperatur = (dayz_temperatur min dayz_temperaturmax) max dayz_temperaturmin;
 
 	//can get nearby infection
 	if (!r_player_infected && !_isPZombie) then {
-		//Infectionriskstart
-		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
-			_listTalk = (getPosATL _refObj) nearEntities ["CAManBase",8];
+		//	Infectionriskstart
+		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then { //TeeChange
 			{
 				if (_x getVariable["USEC_infected",false]) then {
 					_rnd = (random 1) * (((dayz_temperaturnormal - dayz_temperatur) * (100 /(dayz_temperaturnormal - dayz_temperaturmin)))/ 50);	//TeeChange
@@ -85,8 +219,8 @@ while {true} do {
 						};
 					};
 				};
-			} count _listTalk;
-			if (dayz_temperatur < ((50 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then {	//TeeChange
+			} count (_mylastPos nearEntities ["CAManBase",12]);
+			if (dayz_temperatur < ((50 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then { //TeeChange
 				_rnd = (random 1) * (((dayz_temperaturnormal - dayz_temperatur) * (100 /(dayz_temperaturnormal - dayz_temperaturmin)))/ 25);	//TeeChange
 				if (_rnd < 0.05) then {
 					_rnd = random 1;
@@ -97,48 +231,16 @@ while {true} do {
 				};
 			};
 		};
-	};
+	};	
 
-	//If has infection reduce blood cough && add shake
+	//If has infection reduce blood cough and add shake
 	if (r_player_infected) then {
 		if !(player getVariable["USEC_infected",false]) then {
 			player setVariable["USEC_infected",true,true];
 		};
 
-		_rnd = ceil (random 8);
-		[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
-
-		if (_rnd < 3) then {
-			addCamShake [2, 1, 25];
-		};
-		if (r_player_blood > 3000) then {
-			r_player_blood = r_player_blood - 3;
-		};
-	};
-
-	//Pain Shake Effects
-	if (r_player_inpain && !r_player_unconscious) then {
-		playSound "breath_1";
-		addCamShake [2, 1, 25];
-	};
-
-	//Hunger Effect
-	_foodVal = 		dayz_statusArray select 0;
-	_thirstVal = 	dayz_statusArray select 1;
-	if (_thirstVal <= 0) then {
-		_result = r_player_blood - 10;
-		if (_result < 0) then {
-			_id = [player,"dehyd"] spawn player_death;
-		} else {
-			r_player_blood = _result;
-		};
-	};
-	if (_foodVal <= 0) then {
-		_result = r_player_blood - 10;
-		if (_result < 0) then {
-			_id = [player,"starve"] spawn player_death;
-		} else {
-			r_player_blood = _result;
+		if (r_player_blood < 3) then {
+			_id = [player,"sick"] spawn player_death;
 		};
 	};
 
@@ -147,15 +249,15 @@ while {true} do {
 
 		_radsound = "radzone1";
 		_bloodloss = 10;
-		if(_radTimer > 5 && _radTimer < 10) then {
+		if (_radTimer > 5 && _radTimer < 10) then {
 			_radsound = "radzone2";
 			_bloodloss = 20;
 		};
-		if(_radTimer > 10) then {
+		if (_radTimer > 10) then {
 			_radsound = "radzone3";
 			_bloodloss = 30;
 		};
-		if(_radTimer > 15) then {
+		if (_radTimer > 15) then {
 			_radsound = "radzone4";
 			_bloodloss = 50;
 		};
@@ -172,91 +274,181 @@ while {true} do {
 		_radTimer = 0;
 	};
 
-	// Health uptick when healty not thirsty || hungry
-	if (_foodVal >= 0.9 && _thirstVal >= 0.9) then {
-		if (!r_player_infected && !r_player_inpain && !r_player_injured && !DZE_InRadiationZone) then {
-			_result = r_player_blood + 10;
-			if (_result >= r_player_bloodTotal) then {
-				r_player_blood = r_player_bloodTotal;
-			} else {
-				r_player_blood = _result;
+	// Regen some blood if player is well fed and resting
+	// Attention: regen _result must not trigger the "up" arrow of the blood icon
+	if (r_player_blood < 12000 and dayz_hunger < SleepFood 
+		and dayz_thirst < SleepWater and !r_player_injured
+		 and !r_player_infected and !(r_player_Sepsis select 0) 
+		 and !r_player_unconscious) then {
+		_result = (1-(dayz_hunger + dayz_thirst)/(SleepWater + SleepFood));
+		switch (1==1) do {
+			case (_result < 0.25) : {}; // not well fed
+			case ((toArray(animationState player) select 5) == 112) : { // prone
+				_result = _result * (1 + 10 * (12000 - r_player_blood) / 12000);
+			};
+			case (speed player < 1) : { // still
+				_result = _result * (1 + 4 * sqrt((12000 - r_player_blood) / 12000));
+			};
+			default { // moving
 			};
 		};
+		r_player_bloodregen = r_player_bloodregen + _result;
+	};
+	
+	if (r_player_blood > 12000) then {
+		r_player_blood = 12000;
 	};
 
-	//Record low blood
+	//Record low bloow
 	_lowBlood = player getVariable ["USEC_lowBlood", false];
-	if ((r_player_blood < r_player_bloodTotal) && !_lowBlood) then {
+	if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
 		player setVariable["USEC_lowBlood",true,true];
 	};
 
 	//Broadcast Hunger/Thirst
 	_messTimer = _messTimer + 1;
-	if (_messTimer > 15) then {
+	if (_messTimer > 60) then {
 		_messTimer = 0;
-		player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
-	};
-
-	// Update blood only if PVAR does not match GVAR.
-	_currentBlood = player getVariable ["USEC_BloodQty", 12000];
-	if (_currentBlood != r_player_blood) then {
-		player setVariable["USEC_BloodQty",r_player_blood,true];
+		player setVariable ["messing",[dayz_hunger,dayz_thirst,dayz_nutrition],false];
+		
+		PVDZ_serverStoreVar = [player,"messing",[dayz_hunger,dayz_thirst,dayz_nutrition]];
+		publicVariableServer "PVDZ_serverStoreVar";
 	};
 
 	//Save Checker
-	if (dayz_unsaved) then {
-		if ((time - dayz_lastSave) > DZE_SaveTime) then {
-			_dayzMags = if (!isNil "dayz_Magazines" && {typeName dayz_Magazines == "ARRAY"} && {count dayz_Magazines > 0}) then {dayz_Magazines} else {magazines player};
-			PVDZE_plr_Save = [player,_dayzMags,false,false];
-			publicVariableServer "PVDZE_plr_Save";
+	if (dayz_unsaved or ((diag_ticktime - dayz_lastSave) > 300)) then {
+		if ((diag_ticktime - dayz_lastSave) > _saveTime) then {
+		
+			PVDZ_plr_Save = [player,nil,false,dayz_playerAchievements];
+			publicVariableServer "PVDZ_plr_Save";
+			
+			PVDZ_serverStoreVar = [player,"Achievements",dayz_playerAchievements];
+			publicVariableServer "PVDZ_serverStoreVar";
+			player setVariable ["Achievements",dayz_playerAchievements,false];
+
+			if (isServer) then {
+				PVDZ_plr_Save call server_playerSync;
+			};
+
 			dayz_unsaved = false;
-			dayz_lastSave = time;
-			dayz_Magazines = [];
+			dayz_lastSave = diag_ticktime;
 		};
 	};
 
-	// If in combat, display counter && restrict logout
-	_startcombattimer      = player getVariable["startcombattimer",0];
-	if (_startcombattimer == 1) then {
-		player setVariable["combattimeout", time + 30, true];
-		player setVariable["startcombattimer", 0];
-		dayz_combat = 1;
-	};
+	// sort out pickup actions
+	_isOK = (pickupInit and !canPickup) or (!pickupInit and canPickup);
 
-	_combattimeout = player getVariable["combattimeout",0];
-	if (_combattimeout > 0) then {
-		_timeleft = _combattimeout - time;
-		if (_timeleft > 0) then {
-			//hintSilent format["In Combat: %1",round(_timeleft)];
-		} else {
-			//hintSilent "Not in Combat";
-			player setVariable["combattimeout", 0, true];
-			dayz_combat = 0;
-			_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
-			_combatcontrol = 	_combatdisplay displayCtrl 1307;
-			_combatcontrol ctrlShow true;
+	if (_isOK) then {
+		if (pickupInit and !canPickup) then {
+			canPickup = true;
+			pickupInit = false;
 		};
 	} else {
-		//hintSilent "Not in Combat";
-		dayz_combat = 0;
-		_combatdisplay = uiNamespace getVariable 'DAYZ_GUI_display';
-		_combatcontrol = 	_combatdisplay displayCtrl 1307;
-		_combatcontrol ctrlShow true;
+		// reset
+		canPickup = false;
+		pickupInit = true;
+	};
+
+	_PlayerNearby = false;
+	_ZedsNearby = false;
+	if ({isPlayer _x} count (player nearEntities ["AllVehicles", 5]) > 1) then {
+		_PlayerNearby = true;
+	};
+	if (count (player nearEntities ["zZombie_Base", 10]) > 0) then {
+		_ZedsNearby = true;
+	};
+
+	_startcombattimer = player getVariable["startcombattimer", 0];
+	if (_startcombattimer == 1 || _PlayerNearby) then {
+		player setVariable["combattimeout", diag_tickTime + 30, true]; // Global used to punish combat log in server_onPlayerDisconnect
+		player setVariable["startcombattimer", 0, false];
+	} else {
+		if (_ZedsNearby && !_isPZombie) then {
+			player setVariable["combattimeout", diag_tickTime + 10, true]; // Global used to punish combat log in server_onPlayerDisconnect
+			player setVariable["startcombattimer", 0, false];
+		};
+	};
+	
+	//setGroupIconsVisible [false,false];
+	//clearGroupIcons group player;
+
+	uiSleep 2;
+
+	_myPos = player getVariable["lastPos",[]];
+	if (count _myPos > 0) then {
+		player setVariable["lastPos",_mylastPos, true];
+		player setVariable["lastPos",[]];
 	};
 
 	//Melee Weapons ammo fix
-        if(isNil {login_ammochecked}) then {
-                login_ammochecked = true;
-                 _wpnType = primaryWeapon player;
-                _ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
-                if (_ismelee == "true") then {
-                        call dayz_meleeMagazineCheck;
-                };
-        };
+	if(isNil {login_ammochecked}) then {
+		login_ammochecked = true;
+		 _wpnType = primaryWeapon player;
+		_ismelee = (getNumber (configFile >> "CfgWeapons" >> _wpnType >> "melee") == 1);
+		if (_ismelee) then {
+			call dayz_meleeMagazineCheck;
+		};
+	};
+	
+	if ((diag_tickTime - _timer1) > 10) then {
+		_position = getPosATL player;
+			//Other Counters
+		dayz_currentGlobalAnimals = count entities "CAAnimalBase";
+		dayz_currentGlobalZombies = count entities "zZombie_Base";
+		_zeds = _position nearEntities ["zZombie_Base",200];
+		dayz_spawnZombies = 0;
+		dayz_CurrentNearByZombies = 0;
+		//Current amounts
+		{
+			if (alive _x) then {
+				if (local _x) then {
+					dayz_spawnZombies = dayz_spawnZombies + 1;
+				};
+				dayz_CurrentNearByZombies = dayz_CurrentNearByZombies + 1;
+			};
+		} count _zeds;
+		
+		//dayz_spawnZombies = {alive _x AND local _x} count (_position nearEntities ["zZombie_Base",400]);
+		//dayz_CurrentNearByZombies = {alive _x} count (_position nearEntities ["zZombie_Base",400]);
+		dayz_currentWeaponHolders = count (_position nearObjects ["ReammoBox",200]);
+		
+		//Remove empty cardborad box's << this needs to be changed moved (action menu or close button)
+		{
+			//get contents
+			_weapons = getWeaponCargo _x;
+			_magazines = getMagazineCargo _x;
+			_backpacks = getBackpackCargo _x;
+			
+			if ((count (_weapons select 0) < 1) and (count (_magazines select 0) < 1) and (count (_backpacks select 0) < 1)) then {		
+				//remove vehicle, Need to ask server to remove.
+				diag_log format["Deleting empty nearby box: %1",_x];
+				PVDZ_obj_Delete = [_x,player];
+				publicVariableServer "PVDZ_obj_Delete";
+			};
+		
+		} count (_position nearObjects ["CardboardBox",10]);
+		
+		_timer1 = diag_tickTime;
+	};
+	
+	//Two primary guns pickup exploit fix
+	if ((primaryWeapon player != "") && (!(primaryWeapon player in MeleeWeapons)) && (dayz_onBack != "") && (!(dayz_onBack in MeleeWeapons)) && (isNull (findDisplay 106)) &&
+	(animationState player != "amovpknlmstpslowwrfldnon_amovpknlmstpsraswrfldnon" OR animationState player != "amovpercmstpslowwrfldnon_amovpercmstpsraswrfldnon" OR animationState player != "amovpercmstpslowwrfldnon_amovpercmstpsraswrfldnon")) then {
+		localize "str_player_ammo_2primary" call dayz_rollingMessages;
+		player playActionNow "stop";
+		player action ["dropWeapon", player, primaryWeapon player];
+		//sleep 3;
+		//["gear"] call player_switchWeapon;
+		//sleep 1;
+	};
 
-	// Blood Effects
-	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, (r_player_blood/r_player_bloodTotal)],  [1, 1, 1, 0.0]];
-	"colorCorrections" ppEffectCommit 0;
-
-	uiSleep 2;
+	//Crowbar ammo fix
+	//"MeleeCrowbar" call dayz_meleeMagazineCheck;
+	_stop = diag_tickTime;
+	/*
+	if ((diag_tickTime - _timerMonitor) > 60) then {
+		diag_log format ["Loop Monitor - Spawn2: %1, DA: %2, UA: %3, SA: %4",(_stop - _start),(diag_tickTime - (player getVariable "damageActions")),(diag_tickTime - (player getVariable "upgradeActions")),(diag_tickTime - (player getVariable "selfActions"))];
+		_timerMonitor = diag_ticktime;
+	};
+	*/
 };

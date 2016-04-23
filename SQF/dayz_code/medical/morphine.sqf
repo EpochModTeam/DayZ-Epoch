@@ -1,17 +1,14 @@
-// bleed.sqf
-
-private ["_started","_finished","_animState","_isMedic","_id","_num_removed","_unit"];
-
-disableserialization;
-
+private ["_started","_finished","_animState","_isMedic","_id","_unit"];
 _unit = (_this select 3) select 0;
+
+player removeMagazine "ItemMorphine";
 
 _unit setVariable ["hit_legs",0];
 _unit setVariable ["hit_hands",0];
 
 call fnc_usec_medic_removeActions;
 r_action = false;
-[1,1] call dayz_HungerThirst;
+
 if (vehicle player == player) then {
 	//not in a vehicle
 	player playActionNow "Medic";
@@ -27,7 +24,7 @@ while {r_doLoop} do {
 	if (_isMedic) then {
 		_started = true;
 	};
-	if (_started && !_isMedic) then {
+	if (_started and !_isMedic) then {
 		r_doLoop = false;
 		_finished = true;
 	};
@@ -44,29 +41,22 @@ while {r_doLoop} do {
 r_doLoop = false;
 
 if (_finished) then {
-	_num_removed = ([player,"ItemMorphine"] call BIS_fnc_invRemove);
-	if(_num_removed == 1) then {
-
-		if (vehicle player != player) then {
-			_display = findDisplay 106;
-			_display closeDisplay 0;
-		};	
-
-		if ((_unit == player) || (vehicle player != player)) then {
-			//Self Healing
-			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
-		} else {
-			[player,50] call player_humanityChange;
-		};
-		
-		/* PVS/PVC - Skaronator */
-		PVDZE_send = [_unit,"Morphine",[_unit,player]];
-		publicVariableServer "PVDZE_send";
+if ((_unit == player) or (vehicle player != player)) then {
+		//Self Healing
+		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
+	} else {
+		//PVCDZ_plr_Humanity = [player,50];
+		[player,50] call player_humanityChange;
 	};
+
+	//["PVCDZ_hlt_Morphine",[_unit,player]] call broadcastRpcCallAll;
+	//PVCDZ_hlt_Morphine = [_unit,player];
+	//publicVariable "PVCDZ_hlt_Morphine";
+	PVDZ_send = [_unit,"Morphine",[_unit,player]];
+	publicVariableServer "PVDZ_send";
 } else {
+	player addMagazine "ItemMorphine";
 	r_interrupt = false;
-	if (vehicle player == player) then {
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
-	};
+	[objNull, player, rSwitchMove,""] call RE;
+	player playActionNow "stop";
 };

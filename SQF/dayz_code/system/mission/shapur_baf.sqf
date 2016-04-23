@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
 	["Hhedgehog_concreteBig",[511.733,1114.73,6.48499e-005],55.9089],
 	["Land_fort_rampart",[483.471,1123.38,0.0291862],119.365],
 	["Land_HBarrier5",[471.117,1086.12,0.0186958],37.8488],
@@ -69,4 +61,4 @@ private ["_object","_type"];
 	["BMP2Wreck",[472.932,1069.16,0.0105076],54.1738],
 	["Misc_palletsfoiled_heap",[496.077,1082.61,-0.00848007],62.6169],
 	["Info_Board_EP1",[505.839,1120,0.00104141],40.2667]
-];
+] call local_spawnObjects;

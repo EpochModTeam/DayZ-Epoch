@@ -4,8 +4,7 @@
 //********************************************************************************************************************/
 
 
-private ["_h_human_disp","_top_value","_bot_value","_card_details","_h","_blank","_bandit_pic","_bandit_pic","_b_human_disp","_b_spades_top_suit","_b_spades_bot_suit","_b_clubs_top_suit","_b_clubs_bot_suit","_survivor_pic","_survivor_pic","_s_human_disp","_s_top_joker_b","_s_bot_joker_b","_s_top_joker_r","_s_bot_joker_r","_hero_pic","_hero_pic","_h_hearts_top_suit","_h_hearts_bot_suit","_h_diamonds_top_suit","_h_diamonds_bot_suit"];
-_h = (_this select 0) / 37037.037037;
+private ["_h_human_disp","_top_value","_bot_value","_card_details","_h","_blank","_bandit_pic","_b_human_disp","_b_spades_top_suit","_b_spades_bot_suit","_b_clubs_top_suit","_b_clubs_bot_suit","_survivor_pic","_s_human_disp","_s_top_joker_b","_s_bot_joker_b","_s_top_joker_r","_s_bot_joker_r","_hero_pic","_h_hearts_top_suit","_h_hearts_bot_suit","_h_diamonds_top_suit","_h_diamonds_bot_suit","_pl_pic","_humanity_readout","_top_joker","_bot_joker","_top_suit","_bot_suit"];_h = (_this select 0) / 37037.037037;
 
 // we need to return these
 /*

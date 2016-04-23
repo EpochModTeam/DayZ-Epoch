@@ -1,5 +1,5 @@
 class ItemKeyKit: ItemCore {
-	scope = 2;
+	scope = public;
 	displayname = $STR_EQUIP_KEYKIT;
 	model="\z\addons\dayz_epoch\models\keykit.p3d";
 	descriptionShort=$STR_EQUIP_KEYKIT_DESC;

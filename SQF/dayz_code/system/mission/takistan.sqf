@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
     ["ZavoraAnim",[1962.88,12543.4,-0.0574036],135.301],
 	["Land_CncBlock",[1960.52,12541.7,-0.0318298],141.538],
 	["Land_CncBlock",[1957.36,12539.9,0.000232697],161.408],
@@ -316,4 +308,4 @@ private ["_object","_type"];
 	["LADAWreck",[10867.4,6319.59,0.00982666],359.859],
 	["FoldTable",[422.854,5589.3,0.00149536],17.7976],
 	["Misc_cargo_cont_net1",[428.667,5574.01,0.000213623],323.529]
-];
+] call local_spawnObjects;

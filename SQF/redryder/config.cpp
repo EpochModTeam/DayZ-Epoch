@@ -12,6 +12,11 @@
 #define true 1
 #define false 0
 
+// type scope
+#define private 0
+#define protected 1
+#define public 2
+
 class CfgPatches
 {
 	class RedRyder
@@ -56,7 +61,7 @@ class CfgMagazines
 	class CA_Magazine;
 	class 350Rnd_BB_Magazine : CA_Magazine 
 	{   
-		scope = 2;
+		scope = public;
 		model = "z\addons\redryder\models\bb_magazine.p3d";	
 		picture = "z\addons\redryder\textures\bb_magazine_picture.paa"; 
 		displayName = "350 Count .177 BBs";
@@ -74,7 +79,7 @@ class CfgWeapons
 	class Default {};
 	class Rifle : Default {};
 	class RedRyder : Rifle {
-		scope = 2;
+		scope = public;
 		model = "z\addons\redryder\models\RedRyder.p3d"; 
 		displayName = "RedRyder BB Gun";
 		displayNameMagazine = "BB";

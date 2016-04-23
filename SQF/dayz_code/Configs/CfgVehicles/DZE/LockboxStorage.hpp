@@ -26,8 +26,8 @@ class LockboxStorage: Land_A_tent {
 	packedClass = "WeaponHolder_ItemLockbox";
 };
 
-class WeaponHolder_ItemLockbox: WeaponHolder {
-	scope = 2;
+class WeaponHolder_ItemLockbox: WeaponHolderBase {
+	scope = public;
 	displayName = "Lockbox";
 	seedItem = "ItemLockbox";
 };

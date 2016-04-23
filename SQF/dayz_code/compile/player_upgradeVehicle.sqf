@@ -4,13 +4,13 @@
 */
 private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_temp_removed_array","_countr","_objectID","_objectUID","_location","_dir","_objectCharacterID","_weapons","_magazines","_backpacks","_classname","_object","_holder","_objWpnTypes","_objWpnQty","_newclassname","_requirements","_upgrade","_vehicle","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_PLAYER_52") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_PLAYER_52" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 // This is used to find correct upgrade based what upgrades was called allows multiple upgrades per vehicle.
 _upgrade = _this;
 
-if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_18"), "PLAIN DOWN"]};
+if (vehicle player != player) exitWith {DZE_ActionInProgress = false; localize "STR_EPOCH_ACTIONS_18" call dayz_rollingMessages;};
 
 // look for nearest empty vehicle
 _findNearestVehicles = player nearEntities [["LandVehicle"],10];
@@ -113,7 +113,7 @@ if (_IsNearVehicle >= 1) then {
 					_objectUID	= _vehicle getVariable ["ObjectUID","0"];
 
 					if(_objectID == "0" && _objectUID == "0") then {
-						cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];
+						localize "str_epoch_player_50" call dayz_rollingMessages;
 					}
 					else {
 						// Get position
@@ -128,31 +128,31 @@ if (_IsNearVehicle >= 1) then {
 						PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player];
 						publicVariableServer  "PVDZE_veh_Upgrade";
 
-						cutText [(localize "STR_EPOCH_VEHUP_SUCCESS"), "PLAIN DOWN"];
+						localize "STR_EPOCH_VEHUP_SUCCESS" call dayz_rollingMessages;
 						{player reveal _x;} count (player nearEntities [["LandVehicle"],10]);
 					};
 				}
 				else {
 					{player addMagazine _x;} count _temp_removed_array_mag;
 					{player addWeapon _x;} count _temp_removed_array_wep;
-					cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+					format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 				};
 			}
 			else {
 				_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-				cutText [format[(localize "str_epoch_player_146"),_missingQty, _textMissing], "PLAIN DOWN"];
+				format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call dayz_rollingMessages;
 			};
 		}
 		else {
-			cutText [(localize "str_epoch_player_82"), "PLAIN DOWN"];
+			localize "str_epoch_player_82" call dayz_rollingMessages;
 		};
 	}
 	else {
-		cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
+		localize "str_epoch_player_245" call dayz_rollingMessages;
 	};
 }
 else {
-	cutText [(localize "STR_EPOCH_PLAYER_27"), "PLAIN DOWN"];
+	localize "STR_EPOCH_PLAYER_27" call dayz_rollingMessages;
 };
 
 DZE_ActionInProgress = false;

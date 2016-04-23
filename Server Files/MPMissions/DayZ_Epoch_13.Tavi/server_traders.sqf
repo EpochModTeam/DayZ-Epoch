@@ -39,13 +39,13 @@ serverTraders = [
 
 //COMBINATION VENDOR
 menu_Soldier_Sniper_PMC = [
-	[["Ammunition",478],["Military Armed",562],["Helicopter Armed",512],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Military Armed",562],["Helicopter Armed",512],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];
 //SUPPLIES
 menu_GUE_Woodlander3 = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"hero"
 ];
@@ -68,13 +68,13 @@ menu_RU_Damsel5 = [
 
 //COMBINATION VENDOR
 menu_GUE_Woodlander1 = [
-	[["Ammunition",577],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
 //SUPPLIES
 menu_RU_Worker1 = [
-	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
+	[["Building Supplies",662],["Tools",663],["Vehicle Parts",664]],
 	[],
 	"hostile"
 ];
@@ -103,13 +103,13 @@ menu_Doctor = [
 ];
 //SUPPLIES
 menu_RU_Worker4 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
 //WEAPONS
 menu_Soldier_Sniper_KSVK_PMC = [
-	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
+	[["Attachments",693],["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
 	"neutral"
 ];
@@ -168,7 +168,7 @@ menu_UN_CDF_Soldier_Pilot_EP1 = [
 
 //WEAPONS
 menu_GUE_Commander = [
-	[["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
+	[["Attachments",693],["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
 	[],
 	"friendly"
 ];

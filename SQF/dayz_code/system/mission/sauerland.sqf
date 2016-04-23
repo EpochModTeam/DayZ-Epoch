@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
     ["Land_Misc_Cargo1E_EP1",[24774.1,21743.7,-6.10352e-005],0],
 	["Misc_Cargo1B_military",[24753.7,21727.4,6.10352e-005],89.2352],
 	["Misc_Cargo1Bo_military",[24743,21765.8,9.15527e-005],190.701],
@@ -435,4 +427,4 @@ private ["_object","_type"];
 	["Misc_cargo_cont_net3",[2445.79,3894.76,0.0341797],264.582],
 	["FoldChair",[2446.56,3898.81,0.000793457],103.739],
 	["FoldTable",[2444.96,3899.14,0.000640869],267.556]
-];
+] call local_spawnObjects;

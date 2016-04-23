@@ -1,90 +1,95 @@
-private ["_item","_hasKnife","_hasKnifeBlunt","_hasHarvested","_qty","_text","_string","_type","_started","_finished","_animState","_isMedic","_isListed","_config"];
-
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_29") , "PLAIN DOWN"]; };
+private ["_item","_type","_hasHarvested","_config","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_sharpnessRemaining","_qty","_chance","_msg","_string"];
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_29" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
-player removeAction s_player_butcher;
-s_player_butcher = 1;
-
 _item = _this select 3;
-_hasKnife = 	"ItemKnife" in items player;
-_hasKnifeBlunt = 	"ItemKnifeBlunt" in items player;
 _type = typeOf _item;
 _hasHarvested = _item getVariable["meatHarvested",false];
-_config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
+_config = configFile >> "CfgSurvival" >> "Meat" >> _type;
 
-if ((_hasKnife || _hasKnifeBlunt) && !_hasHarvested) then {
-	//Get Animal Type
-	_isListed =		isClass (_config);
-	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
-	
-	[1,1] call dayz_HungerThirst;
-	// force animation 
-	player playActionNow "Medic";
+_knifeArray = [];
 
-	// Alert zombies
-	[player,10,true,(getPosATL player)] spawn player_alertZombies;
-
-	r_interrupt = false;
-	_animState = animationState player;
-	r_doLoop = true;
-	_started = false;
-	_finished = false;
-	
-	while {r_doLoop} do {
-		_animState = animationState player;
-		_isMedic = ["medic",_animState] call fnc_inString;
-		if (_isMedic) then {
-			_started = true;
-		};
-		if (_started && !_isMedic) then {
-			r_doLoop = false;
-			_finished = true;
-		};
-		if (r_interrupt) then {
-			r_doLoop = false;
-		};
-		uiSleep 0.1;
-	};
-	r_doLoop = false;
-
-	if (!_finished) exitWith { 
-		r_interrupt = false;
-		if (vehicle player == player) then {
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
-		};
-		cutText [(localize "str_epoch_player_30") , "PLAIN DOWN"];
-		//_abort = true;
-	};
-
-	_hasHarvested = _item getVariable["meatHarvested",false];
-	
-	if(_finished && !_hasHarvested) then {
-
-		_item setVariable["meatHarvested",true,true];
-
-		// Play sound since we finished
-		[player,"gut",0,false,10] call dayz_zombieSpeak;  
-	
-		_qty = 2;	
-		if (_isListed) then {
-			_qty =	getNumber (_config >> "yield");
-		};
-	
-		if (_hasKnifeBlunt) then { _qty = round(_qty / 2); };
-	
-		if (local _item) then {
-			[_item,_qty] spawn local_gutObject;
-		} else {
-			//Leave this as PV instead of PVS/PVC - Skaronator
-			PVDZE_plr_GutBody =[_item,_qty];
-			publicVariable "PVDZE_plr_GutBody";
-		};
-		
-		_string = format[localize "str_success_gutted_animal",_text,_qty];
-		cutText [_string, "PLAIN DOWN"];
-	};
-};
+player removeAction s_player_butcher;
 s_player_butcher = -1;
+
+_PlayerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 10]) > 1;
+if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages; DZE_ActionInProgress = false;};
+
+//Count how many active tools the player has
+{
+	if (_x IN items player) then {
+		_knifeArray set [count _knifeArray, _x];
+	};
+} count Dayz_Gutting;
+
+if ((count _knifeArray) < 1) exitWith { localize "str_cannotgut" call dayz_rollingMessages; DZE_ActionInProgress = false; };
+
+
+if ((count _knifeArray > 0) and !_hasHarvested) then {
+	private "_qty";
+	
+	//Select random can from array
+	_activeKnife = _knifeArray call BIS_fnc_selectRandom; 
+	
+	//Get Animal Type
+	_isListed = isClass _config;
+	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
+
+	player playActionNow "Medic";
+	_dis=10;
+	_sfx = "gut";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
+	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+
+	// Added Nutrition-Factor for work
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
+
+	_item setVariable ["meatHarvested",true,true];
+
+	_qty = if (_isListed) then {getNumber (_config >> "yield")} else {2};
+	if (_activeKnife == "ItemKnifeBlunt") then { _qty = round(_qty / 2); };
+
+	if (local _item) then {
+		[_item,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
+	} else {		
+		PVCDZ_obj_GutBody =[_item,_qty];
+		publicVariable "PVCDZ_obj_GutBody";
+		
+		//achievement system
+		if (!achievement_Gut) then {
+			achievement_Gut = true;
+		};
+	};
+	
+	if (dayz_knifeDulling) then {
+		_sharpnessRemaining = getText (configFile >> "cfgWeapons" >> _activeKnife >> "sharpnessRemaining");
+		
+		switch _activeKnife do {
+			case "ItemKnife" : { 
+				//_chance = getNumber (configFile >> "cfgWeapons" >> _activeKnife >> "chance");
+				if ([0.2] call fn_chance) then {
+					player removeWeapon _activeKnife;
+					player addWeapon _sharpnessRemaining;
+					
+					//systemChat (localize "str_info_bluntknife");	
+					_msg = localize "str_info_bluntknife";
+					_msg call dayz_rollingMessages;
+				};	
+			};
+			case "ItemKnifeBlunt" : { 
+				//do nothing
+			};
+			default { 
+				player removeWeapon _activeKnife;
+				player addWeapon _sharpnessRemaining;
+			};
+		};
+	};
+	
+	uiSleep 6;
+	_string = format[localize "str_success_gutted_animal",_text,_qty];
+	closeDialog 0;
+	uiSleep 0.02;
+	_string call dayz_rollingMessages;
+};
 DZE_ActionInProgress = false;

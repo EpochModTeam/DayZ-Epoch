@@ -20,7 +20,7 @@ _hasTools = true;
 	if (!(_x in _items)) exitWith {
 		_hasTools = false;
 		_missing = getText (configFile >> "cfgWeapons" >> _x >> "displayName");
-		cutText [format[(localize "STR_EPOCH_ACTIONS_13"), _missing] , "PLAIN DOWN"];
+		format[localize "STR_EPOCH_PLAYER_137",_missing] call dayz_rollingMessages;
 	};
 } count _tools;
 _hasTools

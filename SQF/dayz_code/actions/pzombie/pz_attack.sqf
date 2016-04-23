@@ -1,26 +1,24 @@
-private ["_ent","_rnd","_move","_isZombie"];
+player removeAction s_player_attack;
+s_player_attack = 1;
 
-if (!isNull cursorTarget) then {
+private ["_ent","_rnd","_move"];
 
-	_ent = cursorTarget;
-	_rnd = (round(random 9)) + 1;
-	_move = "ZombieStandingAttack" + str(_rnd);
-	player playMoveNow _move;
-	_isZombie = _ent isKindOf "zZombie_base";
+_ent = _this select 3;
+_rnd = (round(random 9)) + 1;
+_move = "ZombieStandingAttack" + str(_rnd);
+player playMoveNow _move;
 
-	if(player distance _ent < 5) then {
-
-		if (_ent isKindOf "Animal" || _isZombie) then {
-			_ent setDamage 1;
-		} else {
-			/* PVS/PVC - Skaronator */
-			PVDZE_send = [_ent,"PZ_BreakLegs",[_ent,player]];
-			publicVariableServer "PVDZE_send";
-		};
-
-		[player,"hit",0,false] call dayz_zombieSpeak;
-
+if (!isNull _ent && {player distance _ent < 5}) then {
+	if (_ent isKindOf "Animal" || _ent isKindOf "zZombie_base") then {
+		_ent setDamage 1;
+	} else {
+		/* PVS/PVC - Skaronator */
+		PVDZ_send = [_ent,"Legs",[_ent,player]];
+		publicVariableServer "PVDZ_send";
 	};
-	uiSleep 1;
-	player switchmove "";
+	[player,"hit",0,false] call dayz_zombieSpeak;	
 };
+
+uiSleep 1;
+player switchMove "";
+s_player_attack = -1;

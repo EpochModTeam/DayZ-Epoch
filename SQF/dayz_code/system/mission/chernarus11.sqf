@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
 	["Land_Toilet",[11467.2,11341.8,-0.000213623],305.487],
 	["ClutterCutter_EP1",[11467,11364.1,-3.05176e-005],352.588],
 	["ClutterCutter_EP1",[11459.2,11355.8,6.10352e-005],352.588],
@@ -177,4 +169,4 @@ private ["_object","_type"];
 	["MAP_R2_RockWall",[13881,11792.8,-14.3209],142.299],
 	["MAP_R2_RockTower",[13827.3,11770.9,-13.6761],0],
 	["MAP_R2_Rock1",[13817.8,11746.1,-27.2185],68.5491]
-];
+] call local_spawnObjects;

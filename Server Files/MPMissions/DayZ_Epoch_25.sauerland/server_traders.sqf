@@ -2,7 +2,7 @@
 serverTraders = ["Tanny_PMC","US_Delta_Force_AR_EP1","FR_Cooper","RU_Profiteer1","Damsel4","TK_Commander_EP1","Ins_Soldier_AR","RU_Villager1","MVD_Soldier_Marksman","RU_Soldier_Pilot","CIV_EuroMan01_EP1","Ins_Soldier_GL","Rocker2","Profiteer1","RU_Damsel5","TK_Soldier_Crew_EP1","TK_Soldier_AMG_EP1","Soldier_MG_PMC","RU_Damsel2","GUE_Soldier_MG","TK_Special_Forces_EP1","Ins_Worker2","Citizen2_EP1","pook_Doc_Bell47","RU_Doctor","Dr_Hladik_EP1"];
 // Hero Vendor
 menu_Tanny_PMC = [
-	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];
@@ -14,7 +14,7 @@ menu_US_Delta_Force_AR_EP1 = [
 ];
 // Weapons Friendly
 menu_FR_Cooper = [
-	[["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
+	[["Attachments",693],["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
 	[],
 	"friendly"
 ];
@@ -32,7 +32,7 @@ menu_Damsel4 = [
 ];
 // Weapons neutral
 menu_TK_Commander_EP1 = [
-	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
@@ -44,13 +44,13 @@ menu_Ins_Soldier_AR = [
 ];
 // Neutral Building/Parts
 menu_RU_Villager1 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
 // Bandit Trader
 menu_MVD_Soldier_Marksman = [
-	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
@@ -68,13 +68,13 @@ menu_CIV_EuroMan01_EP1 = [
 ];
 // Black Market Vendor
 menu_Ins_Soldier_GL = [
-	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
+	[["Attachments",693],["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
 	[],
 	"neutral"
 ];
 // Friendly Building/Parts
 menu_Rocker2 = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
@@ -98,7 +98,7 @@ menu_Dr_Hladic_EP1 = [
 ];
 // Neutral Weapons 2
 menu_TK_Soldier_Crew_EP1 = [
-	[["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
+	[["Attachments",693],["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
 	[],
 	"neutral"
 ];
@@ -140,7 +140,7 @@ menu_Ins_Worker2 = [
 ];
 // Neutral Building/Parts 2
 menu_Citizen2_EP1 = [
-	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
+	[["Building Supplies",662],["Tools",663],["Vehicle Parts",664]],
 	[],
 	"neutral"
 ];

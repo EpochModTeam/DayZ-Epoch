@@ -9,6 +9,18 @@ _altState = _this select 4;
 _handled = false;
 
 if (isNil "keyboard_keys") then {
+    _deadcheck = { // ESCAPE
+//        call player_forceSave;
+//        _idd = uiNamespace getVariable "RscDisplayMPInterrupt";
+//        if (isNil '_idd') then  {
+//            createDialog 'RscDisplayMPInterrupt';
+//        }
+//        else { 
+//            closeDialog 0;
+//       };
+        //keyboard_keys = nil;*/
+        _handled = false;
+    };
     _cancelBuild = {
 		DZE_cancelBuilding = true;
 		call dayz_EjectPlayer;
@@ -29,10 +41,10 @@ if (isNil "keyboard_keys") then {
 		 if (_ctrlState && !_altState) then {DZE_Z_ctrl = true;};
 	};
 	_autoRun = {
-		if (autoRunActive == 0) then {
-			autoRunActive = 1;
+		if (!autoRunActive) then {
+			autoRunActive = true;
 			autoRunThread = [] spawn {
-				while {autoRunActive == 1} do {
+				while {autoRunActive} do {
 					if ((player != vehicle player) or (surfaceIsWater (getPosASL player)) or r_fracture_legs) exitWith {call autoRunOff;};
 					player playAction "FastF";
 					uiSleep 0.5;
@@ -166,14 +178,14 @@ if (isNil "keyboard_keys") then {
         };
     };
     _drop = {
-        force_dropBody = true; //Prevent exploit of drag body
 		_doors = nearestObjects [player, DZE_DoorsLocked, 3]; //Prevent exploit of glitching through doors
 		if (count _doors > 0) then {_handled = true;};
+        force_dropBody = true;
     };
     _interrupt = {
         r_interrupt = true;
 		if (DZE_Surrender) then {call dze_surrender_off};
-		if (autoRunActive == 1) then {call autoRunOff;};
+		if (autoRunActive) then {call autoRunOff;};
     };
     // TODO: left/right, when gear open: onKeyDown = "[_this,'onKeyDown',0,107,0,107] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
     _noise = {
@@ -246,14 +258,12 @@ if (isNil "keyboard_keys") then {
             _handled = true; // used by keyboard.sqf
             r_interrupt = true;
         };
-		
 		if (player isKindOf  "PZombie_VB") then {
-			_handled = true;
-			DZE_PZATTACK = true;
+			_handled = true; // do not allow player zombies to vault or jump
 		} else {
 			_nearbyObjects = nearestObjects[getPosATL player, dayz_disallowedVault, 8];
 			if (count _nearbyObjects > 0) then {
-				if((diag_tickTime - dayz_lastCheckBit > 4)) then {
+				if ((diag_tickTime - dayz_lastCheckBit > 4)) then {
 					[objNull, player, rSwitchMove,"GetOver"] call RE;
 					player playActionNow "GetOver";
 					dayz_lastCheckBit = diag_tickTime;
@@ -277,6 +287,7 @@ if (isNil "keyboard_keys") then {
     keyboard_keys resize 256;
     [[DIK_ESCAPE], _cancelBuild] call _addArray;
 	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
+	[[DIK_A,DIK_D,DIK_LEFT,DIK_RIGHT], _interrupt] call _addArray;
 	[[DIK_F], _dze_f] call _addArray;
 	[[DIK_PRIOR], _dze_q] call _addArray;
 	[[DIK_NEXT], _dze_z] call _addArray;
@@ -294,6 +305,7 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "User17", {DZE_4 = true;}] call _addArray;
 	[actionKeys "User18", {DZE_6 = true;}] call _addArray;
 	[actionKeys "User19", {DZE_5 = true;}] call _addArray;
+    //[[DIK_ESCAPE], _deadcheck] call _addArray;
     [[DIK_1], _rifle] call _addArray;
     [[DIK_2], _pistol] call _addArray;
     [[DIK_3], _melee] call _addArray;
@@ -323,21 +335,32 @@ if (isNil "keyboard_keys") then {
 //  [[DIK_NUMPAD7], _rotate_left] call _addArray;
 //  [[DIK_NUMPAD9], _rotate_right] call _addArray;
     [actionKeys "ForceCommandingMode", {DZE_5 = true;_handled = true;}] call _addArray;
-    [[  DIK_F9,DIK_F10,DIK_F11,DIK_F12,
+    [[  DIK_F9, DIK_F10, DIK_F11, 
         DIK_F8,DIK_F7,DIK_F6,DIK_F5,DIK_F4,
         DIK_F3,DIK_F2,DIK_F1,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
+    if (serverCommandAvailable "#kick") then {
+        [[DIK_F12], gcam_onoff] call _addArray; // GCAM: F12 to start (for admins only)
+    }
+    else {
+        [[DIK_F12], _block] call _addArray;
+    };
 
     (findDisplay 46) displayRemoveAllEventHandlers "KeyUp";
     (findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
     (findDisplay 46) displayAddEventHandler ["KeyDown", preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf')];
-    //diag_log [diag_ticktime, __FILE__, "eh reset" ];
+	if (!isNil "bis_fnc_halo_keydown_eh") then {bis_fnc_halo_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
+	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
 
 if (r_player_unconsciousInputDisabled) exitWith {true};
 _code = keyboard_keys select _dikCode;
 if (!isNil "_code") then {
     call _code;
+};
+
+if (serverCommandAvailable "#kick") then {
+    GCam_KD = _this; // GCAM: GCam_KD is the current pressed key
 };
 
 _handled

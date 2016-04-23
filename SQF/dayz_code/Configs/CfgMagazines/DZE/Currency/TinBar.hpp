@@ -1,5 +1,5 @@
 class ItemTinBar: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Tin";
@@ -9,7 +9,7 @@ class ItemTinBar: CA_Magazine {
 
 };
 class ItemTinBar10oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "10oz Tin";

@@ -4,21 +4,20 @@ class Mission
 	addOns[]=
 	{
 		"woodland_acr",
+		"map_eu",
 		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
-		"dayz_epoch",
-		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"dayz_epoch",
 		"warfarebuildings",
 		"glt_m300t",
 		"pook_h13",
 		"csj_gyroac",
-		"map_eu",
 		"redryder"
 	};
 	addOnsAuto[]=
@@ -31,7 +30,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Woodland ACR";
-		briefingDescription="DayZ Epoch Woodland ACR Private Server";
+		briefingDescription="DayZ Epoch Woodland ACR";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -171,7 +170,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-144,0.5,2320};
+					position[]={-144,0,2320};
 					id=50;
 					side="LOGIC";
 					vehicle="FunctionsManager";
@@ -187,79 +186,79 @@ class Mission
 		items=13;
 		class Item0
 		{
-			position[]={4103.1338,313.21164,5133.9639};
+			position[]={4103,313,5133};
 			name="center";
 			type="Empty";
 		};
 		class Item1
 		{
-			position[]={-8121.4678,344.60059,12263.9};
+			position[]={-8121,344,12263};
 			name="respawn_west";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={2607.7231,191.32516,4093.9414};
+			position[]={2607,191,4093};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={1038.5366,316.2226,6328.1382};
+			position[]={1038,316,6328};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={6740.0137,117.94658,4533.6152};
+			position[]={6740,117,4533};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={3804.7051,239.68512,3716.4133};
+			position[]={3804,239,3716};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={1268.0143,246.92937,4057.925};
+			position[]={1268,246,4057};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={5377.2612,184.86072,3578.0767};
+			position[]={5377,184,3578};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={4513.6646,174.26073,6245.9609};
+			position[]={4513,174,6245};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={1007.1273,304.23602,5306.6113};
+			position[]={1007,304,5306};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={2800.4121,356.50119,6326.6196};
+			position[]={2800,356,6326};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={2594.9475,260.64471,5201.458};
+			position[]={2594,260,5201};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={5498.0342,230.34669,5209.3574};
+			position[]={5498,230,5209};
 			name="spawn10";
 			type="Empty";
 		};

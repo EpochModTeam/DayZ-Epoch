@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
     ["CinderWallDoorway_DZ",[976.984,1215.27,-0.443199],39.1121],
 	["CinderWallDoorway_DZ",[945.555,1214.62,-0.101315],313.555],
 	["CinderWall_DZ",[972.241,1216.92,-3.8147e-006],359.214],
@@ -298,4 +290,4 @@ private ["_object","_type"];
 	["FlagCarrierOPFOR_EP1",[931.994,1211.14,0.0169449],198.708],
 	["FlagCarrierOPFOR_EP1",[944.925,1178.76,5.71742],198.708],
 	["FlagCarrierOPFOR_EP1",[948.911,1174.81,5.66268],198.708]
-];
+] call local_spawnObjects;

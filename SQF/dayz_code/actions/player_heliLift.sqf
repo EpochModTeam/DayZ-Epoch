@@ -8,9 +8,9 @@ player removeAction s_player_heli_lift;
 s_player_heli_lift = -1;
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith {cutText ["You can't perform this action while on a ladder!" , "PLAIN DOWN"]};
+if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
 
-if (vehicle player != player) exitWith {cutText ["You can't perform this action while in a vehicle", "PLAIN DOWN"]};
+if (vehicle player != player) exitWith {"You can't perform this action while in a vehicle" call dayz_rollingMessages;};
 
 _liftUseTime = 6;
 _dis=10;
@@ -88,17 +88,17 @@ if(_finished) then {
 	if(_moved) then {
 		player switchMove "";
 		player playActionNow "stop";
-		cutText [format["the lift heli moved to much from the vehicle that was being lifted!"], "PLAIN DOWN"]; //display text at bottom center of screen on interrupt
+		"The lift heli moved too much from the vehicle that was being lifted!" call dayz_rollingMessages; //display text at bottom center of screen on interrupt
 	} else {
 		if((typeName _attached == "OBJECT") || (typeName _hasAttached == "OBJECT")) then {
 			player switchMove "";
 			player playActionNow "stop";
-			cutText [format["Another vehicle was attached || the vehicle was attached to another heli!"], "PLAIN DOWN"]; //display text at bottom center of screen on interrupt
+			"Another vehicle was attached or the vehicle was attached to another heli!" call dayz_rollingMessages;
 		} else {
 			r_interrupt = false;
 			player switchMove "";
 			player playActionNow "stop";
-			cutText [format["You have interrupted lifting a vehicle!"], "PLAIN DOWN"]; //display text at bottom center of screen on interrupt
+			"You have interrupted lifting a vehicle!" call dayz_rollingMessages;
 		};
 	};
 };

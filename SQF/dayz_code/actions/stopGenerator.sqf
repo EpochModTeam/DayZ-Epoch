@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_soundObject"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_99") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_99" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_fillgen;
@@ -9,7 +9,7 @@ s_player_fillgen = 1;
 // Use target from addaction
 _vehicle = 	_this select 3;
 
-[1,1] call dayz_HungerThirst;
+["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 // force animation 
 player playActionNow "Medic";
 
@@ -19,7 +19,7 @@ r_doLoop = true;
 _started = false;
 _finished = false;
 
-cutText [(localize "str_epoch_player_100"), "PLAIN DOWN"];
+localize "str_epoch_player_100" call dayz_rollingMessages;
 
 [player,50,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -46,7 +46,7 @@ if(!_finished) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText [(localize "str_epoch_player_26") , "PLAIN DOWN"]
+	localize "str_epoch_player_26" call dayz_rollingMessages;
 };
 
 if (_finished) then {
@@ -59,7 +59,7 @@ if (_finished) then {
 		// Stop generator
 		_vehicle setVariable ["GeneratorRunning", false,true];
 
-		cutText [(localize "str_epoch_player_101"), "PLAIN DOWN"];
+		localize "str_epoch_player_101" call dayz_rollingMessages;
 	
 };
 

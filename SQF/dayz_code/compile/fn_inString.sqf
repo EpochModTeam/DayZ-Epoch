@@ -1,31 +1,29 @@
-/*
-Author: Killzone_Kid
-    
-Description:
-Find a string within a string (case insensitive)
-    
-Parameter(s):
-_this select 0: <string> string to be found
-_this select 1: <string> string to search in
-    
-Returns:
-Boolean (true when string is found)
-    
-How to use:
-_found = ["needle", "Needle in Haystack"] call KK_fnc_inString;
-*/
+//Kilzone_Kid's megafast inString function
+//caseinsensitive
+//params [needle,haystack];
+private ["_found","_hayArr"];
 
-private ["_needle","_haystack","_needleLen","_hay","_found"];
-_needle = [_this, 0, "", [""]] call BIS_fnc_param;
-_haystack = toArray ([_this, 1, "", [""]] call BIS_fnc_param);
-_needleLen = count toArray _needle;
-_hay = +_haystack;
-_hay resize _needleLen;
+scopeName "main";
+_needle = _this select 0;
+_haystack = _this select 1;
+_haystackArr = toArray _haystack;
+_haystackLen = count _haystackArr;
+_needleLen = count (toArray _needle);
 _found = false;
-for "_i" from _needleLen to count _haystack do {
-    if (toString _hay == _needle) exitWith {_found = true};
-    _hay set [_needleLen, _haystack select _i];
-    _hay set [0, "x"];
-    _hay = _hay - ["x"]
+if (_needleLen <= _haystackLen) then {
+	_hayArr = [];
+	for "_i" from 0 to (_needleLen - 1) do {
+		_hayArr set [count _hayArr, _haystackArr select _i];
+	};
+	for "_i" from _needleLen to _haystackLen do {
+		if (toString _hayArr != _needle) then {
+			_hayArr set [_needleLen, _haystackArr select _i];
+			_hayArr set [0, "x"];
+			_hayArr = _hayArr - ["x"];
+		} else {
+			_found = true;
+			breakTo "main";
+		};
+	};
 };
 _found

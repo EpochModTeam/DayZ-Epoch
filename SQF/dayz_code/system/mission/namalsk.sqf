@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
 	["Land_nam_container",[5814.85,10756.1,0.0605183],22.2716],
 	["sad_target",[5761.08,10776,1.90735e-006],3.09283],
 	["Land_bags_EP1",[5777.86,10773.9,1.90735e-006],287.546],
@@ -122,4 +114,4 @@ private ["_object","_type"];
 	["Land_Fire_barrel_burning",[6294.21,9927.04,0.573409],0],
 	["FlagCarrierTFKnight_EP1",[6276.49,9401.92,-0.090519],82.954],
 	["Land_Fire_barrel_burning",[6275.86,9406.17,0],358.888]
-];
+] call local_spawnObjects;

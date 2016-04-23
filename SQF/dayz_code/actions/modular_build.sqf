@@ -1,7 +1,9 @@
+// If parameters were passed redirect to vanilla player_build (Epoch items don't pass anything)
+if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
 private ["_classname","_classnametmp","_require","_text","_ghost","_lockable","_requireplot","_isAllowedUnderGround","_offset","_isPole","_isLandFireDZ","_hasRequired","_hasrequireditem","_reason","_buildObject","_location1","_object","_objectHelper","_position","_controls","_cancel","_dir","_cnt","_pos","_distance","_buildables","_onLadder","_vehicle","_inVehicle","_abort","_needNear","_isNear","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_canBuildOnPlot","_nearestPole","_ownerID","_friendlies","_missing","_checkMag","_enableGhost","_helperColor","_canDo","_objHDiff","_isOk","_zheightchanged","_zheightdirection","_rotate","_location2","_lastDir","_objectHelperDir","_objectHelperPos","_tmpbuilt","_limit","_proceed","_counter","_dis","_sfx","_started","_finished","_animState","_isMedic","_num_removed","_combinationDisplay","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display"];
 
 //Check if building already in progress, exit if so.
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_40") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 _pos = [player] call FNC_GetPos;
 
@@ -30,10 +32,10 @@ DZE_cancelBuilding = false;
 call gear_ui_init;
 closeDialog 1;
 
-if (dayz_isSwimming) exitWith {DZE_ActionInProgress = false;cutText [localize "str_player_26","PLAIN DOWN"];};
-if (_inVehicle) exitWith {DZE_ActionInProgress = false;cutText [(localize "str_epoch_player_42"),"PLAIN DOWN"];};
-if (_onLadder) exitWith {DZE_ActionInProgress = false;cutText [localize "str_player_21","PLAIN DOWN"];};
-if (player getVariable["combattimeout", 0] >= time) exitWith {DZE_ActionInProgress = false;cutText [(localize "str_epoch_player_43"),"PLAIN DOWN"];};
+if (dayz_isSwimming) exitWith {DZE_ActionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
+if (_inVehicle) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_42" call dayz_rollingMessages;};
+if (_onLadder) exitWith {DZE_ActionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
+if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
 
 DZE_buildItem = _this; //This is a magazine! It's global to allow access to it from outside functions
 
@@ -76,7 +78,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 } forEach _needNear;
 
 if (_abort) exitWith {
-	cutText [format[(localize "str_epoch_player_135"),_reason,_distance], "PLAIN DOWN"];
+	format[localize "str_epoch_player_135",_reason,_distance] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
@@ -133,7 +135,7 @@ _findNearestPole = []; //must define an empty array to avoid problems
 _IsNearPlot = count (_findNearestPole); //count our new array of non-destroyed plotpoles. Empty array will return 0
 
 // End script if item is plot pole and another one exists within defined radius
-if(_isPole && _IsNearPlot > 0) exitWith {DZE_ActionInProgress = false;cutText [(format [localize "str_epoch_player_44",_distance]),"PLAIN DOWN"];};
+if(_isPole && _IsNearPlot > 0) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_44",_distance] call dayz_rollingMessages;};
 
 if(_IsNearPlot == 0) then { //No live plotpoles were found nearby
 	// Allow building of plot
@@ -166,12 +168,12 @@ if(_IsNearPlot == 0) then { //No live plotpoles were found nearby
 	};
 };
 
-if(!_canBuildOnPlot) exitWith { DZE_ActionInProgress = false;cutText [format[(localize "STR_EPOCH_PLAYER_135"),_needText,_distance],"PLAIN DOWN"];};
+if(!_canBuildOnPlot) exitWith { DZE_ActionInProgress = false; format[localize "STR_EPOCH_PLAYER_135",_needText,_distance] call dayz_rollingMessages;};
 
-_buildables = DZE_maintainClasses + DZE_LockableStorage;
+_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables"];
 _buildables set [count _buildables,"TentStorage"];
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
-if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false;cutText [(format [localize "str_epoch_player_41",_distance]),"PLAIN DOWN"];};
+if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages;};
 
 _missing = "";
 _hasrequireditem = true;
@@ -181,9 +183,9 @@ _hasrequireditem = true;
 } count _require; //count each item in requirements array
 
 _hasbuilditem = DZE_buildItem in magazines player;
-if (!_hasbuilditem) exitWith {DZE_ActionInProgress = false;cutText [format[(localize "str_player_31"),_text,"build"],"PLAIN DOWN"];};
+if (!_hasbuilditem) exitWith {DZE_ActionInProgress = false; format[localize "str_player_31",_text,"build"] call dayz_rollingMessages;};
 
-if (!_hasrequireditem) exitWith {DZE_ActionInProgress = false;cutText [format[(localize "str_epoch_player_137"),_missing],"PLAIN DOWN"];};
+if (!_hasrequireditem) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_137",_missing] call dayz_rollingMessages;};
 if (_hasrequireditem) then {
 
 	_objectHelper = objNull;
@@ -391,7 +393,7 @@ if (_hasrequireditem) then {
 			deleteVehicle _objectHelper;
 		};
 
-		if (player getVariable["combattimeout", 0] >= time) exitWith {
+		if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = (localize "str_epoch_player_43");
@@ -448,7 +450,7 @@ if (_hasrequireditem) then {
 			_tmpbuilt setPosATL _location;
 		};
 
-		cutText [format[(localize "str_epoch_player_138"),_text], "PLAIN DOWN"];
+		format[localize "str_epoch_player_138",_text] call dayz_rollingMessages;
 
 		_limit = 3; //times it takes to build by default
 
@@ -463,7 +465,7 @@ if (_hasrequireditem) then {
 
 		while {_isOk} do { //publish phase
 
-			[10,10] call dayz_HungerThirst;
+			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			player playActionNow "Medic"; //animation
 			
 			//alert zombies
@@ -487,7 +489,7 @@ if (_hasrequireditem) then {
 					r_doLoop = false;
 					_finished = true;
 				};
-				if (r_interrupt || (player getVariable["combattimeout", 0] >= time)) then {
+				if (r_interrupt || (player getVariable["combattimeout",0] >= diag_tickTime)) then {
 					r_doLoop = false;
 				};
 				if (DZE_cancelBuilding) exitWith {
@@ -507,7 +509,7 @@ if (_hasrequireditem) then {
 				_counter = _counter + 1;
 			};
 
-			cutText [format[(localize "str_epoch_player_139"),_text, _counter,_limit], "PLAIN DOWN"]; //report how many steps are done out of total limit
+			format[localize "str_epoch_player_139",_text, _counter,_limit] call dayz_rollingMessages; //report how many steps are done out of total limit
 
 			if(_counter == _limit) exitWith { //if all steps done proceed with next step, otherwise cancel publish
 				_isOk = false;
@@ -521,7 +523,7 @@ if (_hasrequireditem) then {
 			_num_removed = ([player,DZE_buildItem] call BIS_fnc_invRemove); //remove item's magazine from inventory
 			if(_num_removed == 1) then {
 
-				cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
+				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
 				if (_isPole) then { //if item was a plotpole, build a visual radius around it
 					[] spawn player_plotPreview;
@@ -576,11 +578,11 @@ if (_hasrequireditem) then {
 					_tmpbuilt setVariable ["CharacterID",_combination,true]; //set combination as a character ID
 
 					//call publish precompiled function with given args and send public variable to server to save item to database
-					PVDZE_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],_classname];
-					publicVariableServer "PVDZE_obj_Publish";
+					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
+					publicVariableServer "PVDZ_obj_Publish";
 
-					cutText [format[(localize "str_epoch_player_140"),_combinationDisplay,_text], "PLAIN DOWN", 5]; //display new combination
-					systemChat format [(localize "str_epoch_player_140"),_combinationDisplay,_text];
+					format[localize "str_epoch_player_140",_combinationDisplay,_text] call dayz_rollingMessages; //display new combination
+					systemChat format[localize "str_epoch_player_140",_combinationDisplay,_text];
 
 				} else { //if not lockable item
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
@@ -589,13 +591,13 @@ if (_hasrequireditem) then {
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then { //if campfire, then spawn, but do not publish to database
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						PVDZE_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],_classname];
-						publicVariableServer "PVDZE_obj_Publish";
+						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];
+						publicVariableServer "PVDZ_obj_Publish";
 					};
 				};
 			} else { //if magazine was not removed, cancel publish
 				deleteVehicle _tmpbuilt;
-				cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
+				localize "str_epoch_player_46" call dayz_rollingMessages;
 			};
 
 		} else { //if player was interrupted, cancel publish and stop build animations
@@ -607,11 +609,11 @@ if (_hasrequireditem) then {
 
 			deleteVehicle _tmpbuilt;
 
-			cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
+			localize "str_epoch_player_46" call dayz_rollingMessages;
 		};
 
 	} else { //cancel build if passed _cancel arg was true or building on roads/trader city
-		cutText [format[(localize "str_epoch_player_47"),_text,_reason], "PLAIN DOWN"];
+		format[localize "str_epoch_player_47",_text,_reason] call dayz_rollingMessages;
 	};
 };
 

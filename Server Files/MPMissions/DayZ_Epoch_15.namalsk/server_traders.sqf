@@ -2,7 +2,7 @@
 serverTraders = ["GUE_Villager4","RU_Farmwife4","RU_Farmwife3","Dr_Hladik_EP1","CIV_Contractor2_BAF","Soldier_Sniper_PMC","GUE_Soldier_Pilot","GUE_Soldier_2","GUE_Soldier_1","GUE_Soldier_CO","GUE_Woodlander2","GUE_Soldier_Crew","Woodlander2","UN_CDF_Soldier_MG_EP1","UN_CDF_Soldier_EP1","Tanny_PMC","UN_CDF_Soldier_Pilot_EP1"];
 // Bastions Parts Supplies
 menu_GUE_Villager4 = [
-	[["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
 	[],
 	"friendly"
 ];
@@ -32,7 +32,7 @@ menu_CIV_Contractor2_BAF = [
 ];
 // High End Weapons
 menu_Soldier_Sniper_PMC = [
-	[["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
+	[["Attachments",693],["Assault Rifle",615],["Light Machine Gun",616],["Pistols",617],["Shotguns and Single-shot",620],["Sniper Rifle",619],["Submachine Guns",618]],
 	[],
 	"friendly"
 ];
@@ -44,7 +44,7 @@ menu_GUE_Soldier_Pilot = [
 ];
 // Rhven's Weapons
 menu_GUE_Soldier_2 = [
-	[["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
 	[],
 	"neutral"
 ];
@@ -56,7 +56,7 @@ menu_GUE_Soldier_1 = [
 ];
 // Bandit Trader
 menu_GUE_Soldier_CO = [
-	[["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
+	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
 	[],
 	"hostile"
 ];
@@ -74,7 +74,7 @@ menu_GUE_Soldier_Crew = [
 ];
 // Staven's Repair Shop
 menu_Woodlander2 = [
-	[["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]],
+	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
 	[],
 	"neutral"
 ];
@@ -92,7 +92,7 @@ menu_UN_CDF_Soldier_EP1 = [
 ];
 // Tanner's Hero Supplies
 menu_Tanny_PMC = [
-	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
 	[],
 	"hero"
 ];

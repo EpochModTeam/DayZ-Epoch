@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
 	["TK_GUE_WarfareBLightFactory_base_EP1",[6391.96,7790.32,-0.287811],127.766],
 	["USMC_WarfareBHeavyFactory",[6334.75,7787.43,-0.344269],301.11],
 	["Land_HBarrier_large",[6314.71,7784.7,-0.201874],303.427],
@@ -323,4 +315,4 @@ private ["_object","_type"];
 	["MAP_R2_RockWall",[13881,11792.8,-14.3209],142.299],
 	["MAP_R2_RockTower",[13827.3,11770.9,-13.6761],0],
 	["MAP_R2_Rock1",[13817.8,11746.1,-27.2185],68.5491]
-];
+] call local_spawnObjects;

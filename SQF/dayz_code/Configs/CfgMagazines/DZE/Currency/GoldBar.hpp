@@ -1,5 +1,5 @@
 class ItemGoldBar: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 100;
 	type = 256;
@@ -28,7 +28,7 @@ class ItemGoldBar: CA_Magazine {
 	};
 };
 class ItemGoldBar2oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 200;
 	type = 256;
@@ -66,7 +66,7 @@ class ItemGoldBar2oz: CA_Magazine {
 	};
 };
 class ItemGoldBar3oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 300;
 	type = 256;
@@ -112,7 +112,7 @@ class ItemGoldBar3oz: CA_Magazine {
 	};
 };
 class ItemGoldBar4oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 400;
 	type = 256;
@@ -158,7 +158,7 @@ class ItemGoldBar4oz: CA_Magazine {
 	};
 };
 class ItemGoldBar5oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 500;
 	type = 256;
@@ -204,7 +204,7 @@ class ItemGoldBar5oz: CA_Magazine {
 	};
 };
 class ItemGoldBar6oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 600;
 	type = 256;
@@ -250,7 +250,7 @@ class ItemGoldBar6oz: CA_Magazine {
 	};
 };
 class ItemGoldBar7oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 700;
 	type = 256;
@@ -296,7 +296,7 @@ class ItemGoldBar7oz: CA_Magazine {
 	};
 };
 class ItemGoldBar8oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 800;
 	type = 256;
@@ -342,7 +342,7 @@ class ItemGoldBar8oz: CA_Magazine {
 	};
 };
 class ItemGoldBar9oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 900;
 	type = 256;
@@ -380,7 +380,7 @@ class ItemGoldBar9oz: CA_Magazine {
 	};
 };
 class ItemGoldBar10oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 1000;
 	type = 256;

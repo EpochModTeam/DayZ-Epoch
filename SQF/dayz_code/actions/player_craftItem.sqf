@@ -1,3 +1,6 @@
+// If a string was passed redirect to vanilla player_craftItem (Epoch items always pass an array)
+if (typeName _this == "STRING") exitWith {_this spawn player_craftItemVanilla;};
+
 /*
 	DayZ Epoch Crafting 0.3
 	Made for DayZ Epoch && Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
@@ -22,7 +25,7 @@ class ItemActions
 */
 private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_63") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_63" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 // This is used to find correct recipe based what itemaction was click allows multiple recipes per item.
@@ -60,7 +63,7 @@ if("workshop" in _needNear) then {
 	};
 };
 if(_abort) exitWith {
-	cutText [format[(localize "str_epoch_player_149"),_reason,_distance], "PLAIN DOWN"];
+	format[localize "str_epoch_player_149",_reason,_distance] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
@@ -119,9 +122,9 @@ if (_canDo) then {
 			// If all parts proceed
 			if (_proceed) then {
 
-				cutText [(localize "str_epoch_player_62"), "PLAIN DOWN"];
+				localize "str_epoch_player_62" call dayz_rollingMessages;
 
-				[1,1] call dayz_HungerThirst;
+				["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 				player playActionNow "Medic";
 
 				[player,_sfx,0,false] call dayz_zombieSpeak;
@@ -242,7 +245,7 @@ if (_canDo) then {
 								};
 								_textCreate = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 								// Add crafted item
-								cutText [format[(localize "str_epoch_player_150"),_textCreate,_countOut], "PLAIN DOWN"];
+								format[localize "str_epoch_player_150",_textCreate,_countOut] call dayz_rollingMessages;
 								// sleep here
 								uiSleep 1;
 							} forEach _selectedRecipeOutput;
@@ -253,7 +256,7 @@ if (_canDo) then {
 					} else {
 						// Refund parts since we failed
 						{player addMagazine _x; } forEach _temp_removed_array;
-						cutText [format[(localize "str_epoch_player_151"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+						format[localize "STR_EPOCH_PLAYER_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 					};
 
 				} else {
@@ -262,22 +265,22 @@ if (_canDo) then {
 						[objNull, player, rSwitchMove,""] call RE;
 						player playActionNow "stop";
 					};
-					cutText [(localize "str_epoch_player_64"), "PLAIN DOWN"];
+					localize "str_epoch_player_64" call dayz_rollingMessages;
 					_craft_doLoop = false;
 				};
 
 			} else {
 				_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-				cutText [format[(localize "str_epoch_player_152"),_missingQty, _textMissing,_tradeComplete], "PLAIN DOWN"];
+				format[localize "str_epoch_player_152",_missingQty, _textMissing,_tradeComplete] call dayz_rollingMessages;
 				_craft_doLoop = false;
 			};
 		} else {
 			_textMissing = getText(configFile >> "CfgWeapons" >> _missing >> "displayName");
-			cutText [format[(localize "STR_EPOCH_PLAYER_137"),_textMissing], "PLAIN DOWN"];
+			format[localize "STR_EPOCH_PLAYER_137",_textMissing] call dayz_rollingMessages;
 			_craft_doLoop = false;
 		};
 	};
 } else {
-	cutText [(localize "str_epoch_player_64"), "PLAIN DOWN"];
+	localize "str_epoch_player_64" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;

@@ -3,27 +3,7 @@
                           Date: 12/11/13
         If modified and released give credits where due thank you
 ---------------------------------------------------------------------------*/
-private "_trader";
-{
-	_trader = createAgent [_x select 0,_x select 1,[],0,"CAN_COLLIDE"]; 
-	{_trader removeMagazine _x;} count magazines _trader;
-	removeAllItems _trader;
-	removeAllWeapons _trader;
-	removeBackpack _trader;
-	_trader switchMove "";
-	_trader setDir (_x select 2);
-	_trader setVehicleInit "this disableAI 'ANIM'; this disableAI 'AUTOTARGET'; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0; this allowDamage false;";
-	_trader setUnitAbility 0.6;
-	_trader disableAI "ANIM";
-	_trader disableAI "AUTOTARGET";
-	_trader disableAI "FSM";
-	_trader disableAI "MOVE";
-	_trader disableAI "TARGET";
-	_trader setBehaviour "CARELESS";
-	_trader forceSpeed 0;
-	_trader allowDamage false;
-	_trader enableSimulation false;
-} count [
+[
 	// Branibor
 	["GUE_Soldier_3",[7344.24,4301.96,0],70.4169],
 	// Hero
@@ -80,6 +60,4 @@ private "_trader";
 	["GUE_Commander",[4073.06,7257.97,0],323.041],
 	["GUE_Soldier_CO",[4074.76,7260.08,0],276.96],
 	["GUE_Soldier_2",[13340.8,8610.9,0.466263],38.7793]
-];
-
-processInitCommands;
+] call server_spawnTraders;

@@ -7,7 +7,7 @@ disableSerialization;
 player removeAction s_player_butcher;
 s_player_butcher = 1;
 
-if(!(alive _item)) then {
+if !(alive _item) then {
 
     _rnd = (round(random 4)) + 1;
 	_move = "ZombieFeed" + str(_rnd);
@@ -63,13 +63,12 @@ if(!(alive _item)) then {
 	dayz_lastMeal =	time;
 	dayz_hunger = 0;
 
-	//["PVDZE_plr_Save",[player,[],true]] call callRpcProcedure;
-	PVDZE_plr_Save = [player,[],true,false];
-	publicVariableServer "PVDZE_plr_Save";
+	PVDZ_plr_Save = [player,nil,true];
+	publicVariableServer "PVDZ_plr_Save";
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 
-	// todo: dump loot on ground && then remove
+	// todo: dump loot on ground and then remove
 
 	//Ensure Control is visible
 	_display = uiNamespace getVariable 'DAYZ_GUI_display';
@@ -88,7 +87,7 @@ if(!(alive _item)) then {
 	_control ctrlShow true;
 
 
-	cutText [format[(localize  "str_player_consumed"),(getText (configFile >> "CfgVehicles" >> _animalType >> "displayName"))], "PLAIN DOWN"];
+	format[localize "str_player_consumed",getText(configFile >> "CfgVehicles" >> _animalType >> "displayName")] call dayz_rollingMessages;
 	player switchmove "";
 };
 

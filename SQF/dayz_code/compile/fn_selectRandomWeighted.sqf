@@ -5,15 +5,15 @@ scriptName "Functions\arrays\fn_selectRandomWeighted.sqf";
 
 	Description:
 	Function to select a random item from an array, taking into account item weights.
-	The weights should be Numbers between 0 && 1, with a maximum precision of hundreds.
-	
+	The weights should be Numbers between 0 and 1, with a maximum precision of hundreds.
+
 	Parameter(s):
 	_this select 0: source Array (Array of Any Value)
 	_this select 1: weights (Array of Number)
-	
+
 	Returns:
 	Any Value selected item
-	
+
 	TODO:
 	[*] Algorithm is inefficient?
 */
@@ -28,9 +28,8 @@ if ((typeName _weights) != (typeName [])) exitWith {debugLog "Log: [selectRandom
 if ((count _array) > (count _weights)) exitWith {debugLog "Log: [selectRandomWeighted] There must be at least as many elements in Weights (1) as there are in Array (0)!"; nil};
 
 //Created weighted array of indices.
-private ["_weighted"];
 _weighted = [];
-for "_i" from 0 to ((count _weights) - 1) do 
+for "_i" from 0 to ((count _weights) - 1) do
 {
 	private ["_weight"];
 	_weight = _weights select _i;
@@ -38,22 +37,21 @@ for "_i" from 0 to ((count _weights) - 1) do
 	//Ensure the weight is a Number.
 	//If it's not, set weight to 0 to exclude it.
 	if ((typeName _weight) != (typeName 0)) then {debugLog "Log: [selectRandomWeighted] Weights should be Numbers; weight set to 0!"; _weight = 0};
-	
-	//The weight should be a Number between 0 && 1.
-	if (_weight < 0) then {debugLog "Log: [selectRandomWeighted] Weights should be more than || equal to 0; weight set to 0!"; _weight = 0};
-	//if (_weight > 1) then {debugLog "Log: [selectRandomWeighted] Weights should be less than || equal to 1; weight set to 1!"; _weight = 1};
-	
+
+	//The weight should be a Number between 0 and 1.
+	if (_weight < 0) then {debugLog "Log: [selectRandomWeighted] Weights should be more than or equal to 0; weight set to 0!"; _weight = 0};
+	//if (_weight > 1) then {debugLog "Log: [selectRandomWeighted] Weights should be less than or equal to 1; weight set to 1!"; _weight = 1};
+
 	//Normalize the weight for a precision of hundreds.
 	_weight = round(_weight * 100);
-	
-	for "_k" from 0 to (_weight - 1) do 
+
+	for "_k" from 0 to (_weight - 1) do
 	{
-		_weighted = _weighted + [_i];
+		_weighted set [(count _weighted), _i];
 	};
 };
 
-//Randomly select an index from the weighted array && therefore an element.
-private ["_index"];
+//Randomly select an index from the weighted array and therefore an element.
 _index = _weighted call BIS_fnc_selectRandom;
 
 _array select _index

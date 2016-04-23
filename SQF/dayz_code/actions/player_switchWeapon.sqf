@@ -25,7 +25,7 @@ dz_fn_switchWeapon =
 	if (vehicle player != player) exitWith {};
 	if Player_IsOnLadder() exitWith {};
 	
-	private ["_current", "_primary", "_secondary"];
+	private ["_current","_primary","_secondary","_swapWeapons"];
 	
 	_current = currentWeapon player;
 	
@@ -101,6 +101,8 @@ dz_fn_switchWeapon =
 				//In primary
 				case 1:
 				{
+					if (Player_GetStance() == Player_GetStance_PRONE) then
+						{ player playMoveNow "AmovPpneMstpSrasWrflDnon"; };
 					player selectWeapon primaryWeapon player;
 				};
 				
@@ -108,6 +110,8 @@ dz_fn_switchWeapon =
 				case 2:
 				{
 					if (diag_tickTime - dz_switchWeapon_pistolTime < 1) exitWith {};
+					if (Player_GetStance() == Player_GetStance_PRONE) then
+						{ player playMoveNow "AmovPpneMstpSrasWrflDnon"; };
 					true call dz_fn_switchWeapon_swap;
 				};
 			};
@@ -179,12 +183,16 @@ dz_fn_switchWeapon =
 				case 1:
 				{
 					player selectWeapon primaryWeapon player;
+					if (Player_GetStance() == Player_GetStance_PRONE) then
+						{ player playMoveNow "AmovPpneMstpSrasWrflDnon"; };
 				};
 				
 				//On back
 				case 2:
 				{
 					if (diag_tickTime - dz_switchWeapon_pistolTime < 1) exitWith {};
+					if (Player_GetStance() == Player_GetStance_PRONE) then
+						{ player playMoveNow "AmovPpneMstpSrasWrflDnon"; };
 					true call dz_fn_switchWeapon_swap;
 				};
 			};
@@ -241,12 +249,12 @@ dz_fn_switchWeapon_swapSecure =
 	dz_switchWeapon_anim = format
 	[
 		"AmovP%1MstpSrasWrflDnon_AmovP%1MstpSrasWpstDnon",
-		//Switch on the 6th letter of the animation class
-		switch ((toArray animationState player) select 5) do
+		//Switch on player stance
+		switch Player_GetStance() do
 		{
-			case 101: { "erc" }; //e for erc for erected
-			case 107: { "knl" }; //k for knl for kneeling
-			case 112: { "pne" }; //p for pne for prone
+			case Player_GetStance_STAND: { "erc" };
+			case Player_GetStance_KNEEL: { "knl" };
+			case Player_GetStance_PRONE: { "pne" };
 		}
 	];
 	
@@ -259,7 +267,7 @@ dz_fn_switchWeapon_swapSecure =
 dz_fn_switchWeapon_animDone =
 {
 	//Wait at most TIMEOUT seconds
-	if (dz_switchWeapon_time - diag_tickTime > TIMEOUT) exitWith
+	if (diag_tickTime - dz_switchWeapon_time > TIMEOUT) exitWith
 	{
 		player removeEventHandler ["AnimDone", dz_switchWeapon_handler];
 		Mutex_Unlock(dz_switchWeapon_mutex);

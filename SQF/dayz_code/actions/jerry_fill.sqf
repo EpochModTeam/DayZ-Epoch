@@ -1,91 +1,65 @@
-private ["_qty","_started","_finished","_animState","_isMedic","_abort","_fillCounter","_dis","_sfx","_displayName","_fuelCans"];
-
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_34"), "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_34" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
+private ["_qty","_dis","_sfx","_started","_finished","_animState","_isRefuel","_fuelcans","_qty20","_qty5","_qty40"];
 
 player removeAction s_player_fillfuel;
-s_player_fillfuel = 1;
+//s_player_fillfuel = -1;
 
-_fillCounter = 0;
-_abort = false;
+_fuelcans = ["ItemFuelcanEmpty","ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 
-_fuelCans = [];
+_qty = 0;
+_qty = {_x in _fuelcans} count magazines player;
 
-{
-	if(_x == "ItemJerrycanEmpty" || _x == "ItemFuelBarrelEmpty") then {
-		_fuelCans set [(count _fuelCans),_x];
-	};
-} count magazines player;
+_qty20 = {_x == "ItemJerrycanEmpty"} count magazines player;
+_qty5 = {_x == "ItemFuelcanEmpty"} count magazines player;
+_qty40 = {_x == "ItemFuelBarrelEmpty"} count magazines player;
 
-_qty = count _fuelCans;
-
-{
-	_displayName = getText (configFile >> "cfgMagazines" >> _x >> "displayName");
-	
-	_fillCounter = _fillCounter + 1;
-
-	cutText [format[(localize "str_epoch_player_133"),_displayName], "PLAIN DOWN"];	
-	
-	[1,1] call dayz_HungerThirst;
-	// force animation 
+if (("ItemJerrycanEmpty" in magazines player) or ("ItemFuelcanEmpty" in magazines player) or ("ItemFuelBarrelEmpty" in magazines player)) then {
 	player playActionNow "Medic";
-	// Play sound && alert zombies
-	
-	_dis=10;
-	_sfx = "refuel";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
-	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-	r_interrupt = false;
-	_animState = animationState player;
+	_dis=5;
+	_sfx = "refuel";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
+	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+
+	// Added Nutrition-Factor for work
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
+
 	r_doLoop = true;
 	_started = false;
 	_finished = false;
-	
 	while {r_doLoop} do {
 		_animState = animationState player;
-		_isMedic = ["medic",_animState] call fnc_inString;
-		if (_isMedic) then {
+		_isRefuel = ["medic",_animState] call fnc_inString;
+		if (_isRefuel) then {
 			_started = true;
 		};
-		if (_started && !_isMedic) then {
+		if (_started and !_isRefuel) then {
 			r_doLoop = false;
 			_finished = true;
 		};
-		if (r_interrupt) then {
-			r_doLoop = false;
-		};
 		uiSleep 0.1;
 	};
+
 	r_doLoop = false;
 
-	if (!_finished) exitWith { 
-		r_interrupt = false;
-		if (vehicle player == player) then {
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
+	if (_finished) then {
+		for "_x" from 1 to _qty20 do {
+			player removeMagazine "ItemJerrycanEmpty";
+			player addMagazine "ItemJerrycan";
 		};
-		cutText [(localize "str_epoch_player_35") , "PLAIN DOWN"];
-		_abort = true;
+		for "_x" from 1 to _qty5 do {
+			player removeMagazine "ItemFuelcanEmpty";
+			player addMagazine "ItemFuelcan";
+		};
+		for "_x" from 1 to _qty40 do {
+			player removeMagazine "ItemFuelBarrelEmpty";
+			player addMagazine "ItemFuelBarrel";
+		};
 	};
 
-	if (_finished) then {
-		if(([player,_x] call BIS_fnc_invRemove) == 1) then {
-			if (_x == "ItemFuelBarrelEmpty") then {
-				player addMagazine "ItemFuelBarrel";
-			} else {
-				player addMagazine "ItemJerrycan";
-			};
-			cutText [format[(localize "str_epoch_player_134"),_displayName], "PLAIN DOWN"];	
-		} else {
-			_abort = true;
-		};
-	}; 
-
-	uiSleep 1;
-	if(_abort) exitWith {};
-
-} count _fuelCans;
-
-s_player_fillfuel = -1;
+	format[localize "str_player_09",_qty] call dayz_rollingMessages;
+} else {
+	localize "str_player_10" call dayz_rollingMessages;
+};
 DZE_ActionInProgress = false;

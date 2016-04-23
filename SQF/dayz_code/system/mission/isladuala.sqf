@@ -1,12 +1,4 @@
-private ["_object","_type"];
-{
-	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-	_object allowDamage false;
-	if !(_type in ["Land_Campfire","Land_Campfire_burning","Land_Fire","Land_Fire_burning","Land_Fire_barrel","Land_Fire_barrel_burning"]) then {_object enableSimulation false;};
-} count [
+[
     ["Land_CamoNetVar_NATO_EP1",[4968.55,5115.17,-0.000116348],269.665],
 	["AmmoCrates_NoInteractive_Large",[4972.43,5108.36,1.90735e-005],0],
 	["AmmoCrates_NoInteractive_Large",[4970.84,5108.35,0],0],
@@ -308,4 +300,4 @@ private ["_object","_type"];
 	["MAP_Barbedwire",[8410.45,3359.27,6.77109e-005],342.125],
 	["ASC_EU_LHSOld",[8410.74,3380.06,6.67572e-006],0],
 	["ASC_EU_LHSOld",[8418.09,3380.07,4.76837e-006],0]
-];
+] call local_spawnObjects;

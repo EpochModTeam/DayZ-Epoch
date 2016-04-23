@@ -1,100 +1,79 @@
-private ["_characterID","_minutes","_newObject","_playerID","_infected","_victim","_victimName","_killer","_killerName","_weapon","_distance","_message","_loc_message","_key","_death_record"];
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
+private ["_characterID","_minutes","_newObject","_playerID","_key","_pos","_infected","_killerName","_killerWeapon","_distance","_message","_killerMethod"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
-_characterID = 	_this select 0;
-_minutes =		_this select 1;
-_newObject = 	_this select 2;
-_playerID = 	_this select 3;
-_infected =		_this select 4;
-if (((count _this) >= 6) && {(typeName (_this select 5)) == "STRING"} && {(_this select 5) != ""}) then {
-	_victimName =	_this select 5;
-} else {
-	_victimName =  if (alive _newObject) then {name _newObject;} else {"";};
-};
-_victim = _newObject;
-_newObject setVariable ["bodyName", _victimName, true];
 
-_killer = _victim getVariable["AttackedBy", "nil"];
-_killerName = _victim getVariable["AttackedByName", "nil"];
+_characterID = _this select 0;
+_minutes = _this select 1;
+_newObject = _this select 2;
+_playerID = _this select 3;
+_playerName = toString (_this select 4); //Sent as array to avoid publicVariable value restrictions
+_infected = _this select 5;
+_killerName = toString (_this select 6);
+_killerWeapon = toString (_this select 7);
+_distance = _this select 8;
+_killerMethod = toString (_this select 9);
 
-// when a zombie kills a player _killer, _killerName && _weapon will be "nil"
-// we can use this to determine a zombie kill && send a customized message for that. right now no killmsg means it was a zombie.
-if ((typeName _killer) != "STRING") then
-{
-	_weapon = _victim getVariable["AttackedByWeapon", "nil"];
-	_distance = _victim getVariable["AttackedFromDistance", "nil"];
+//Mark player as dead so we bypass the ghost system
+dayz_died set [count dayz_died, _playerID];
 
-	if ((owner _victim) == (owner _killer)) then 
-	{
-		_message = format["%1 killed himself",_victimName];
-		_loc_message = format["PKILL: %1 killed himself", _victimName];
-	}
-	else
-	{
-		_message = format["%1 was killed by %2 with weapon %3 from %4m",_victimName, _killerName, _weapon, _distance];
-		_loc_message = format["PKILL: %1 was killed by %2 with weapon %3 from %4m", _victimName, _killerName, _weapon, _distance];
-	};
+_newObject setVariable ["processedDeath",diag_tickTime];
+_newObject setVariable ["bodyName",_playerName,true];
+_pos = getPosATL _newObject;
 
-	diag_log _loc_message;
+// force to follow the terrain slope in sched_corpses.sqf
+if (_pos select 2 < 0.1) then {_pos set [2,0];};
+_newObject setVariable ["deathPos",_pos];
 
-	if(DZE_DeathMsgGlobal) then {
-		[nil, nil, rspawn, [_killer, _message], { (_this select 0) globalChat (_this select 1) }] call RE;
-	};
-	/* needs customRemoteMessage
-	if(DZE_DeathMsgGlobal) then {
-		customRemoteMessage = ['globalChat', _message, _killer];
-		publicVariable "customRemoteMessage";
-	};
-	*/
-	if(DZE_DeathMsgSide) then {
-		[nil, nil, rspawn, [_killer, _message], { (_this select 0) sideChat (_this select 1) }] call RE;
-	};
-	if(DZE_DeathMsgTitleText) then {
-		[nil,nil,"per",rTITLETEXT,_message,"PLAIN DOWN"] call RE;
-	};
+if (typeName _minutes == "STRING") then {_minutes = parseNumber _minutes;};
 
-	// build array to store death messages to allow viewing at message board in trader citys.
-	_death_record = [
-		_victimName,
-		_killerName,
-		_weapon,
-		_distance,
-		ServerCurrentTime
-	];
-	PlayerDeaths set [count PlayerDeaths,_death_record];
-
-	// Cleanup
-	_victim setVariable["AttackedBy", "nil", true];
-	_victim setVariable["AttackedByName", "nil", true];
-	_victim setVariable["AttackedByWeapon", "nil", true];
-	_victim setVariable["AttackedFromDistance", "nil", true];
-};
-
-// Might not be the best way...
-/*
-if (isnil "dayz_disco") then {
-	dayz_disco = [];
-};
-*/
-
-// dayz_disco = dayz_disco - [_playerID];
-_newObject setVariable["processedDeath",diag_tickTime];
-
-if (typeName _minutes == "STRING") then
-{
-	_minutes = parseNumber _minutes;
-};
-
-diag_log ("PDEATH: Player Died " + _playerID);
-
-if (_characterID != "0") then
-{
+if (_characterID != "0") then {
 	_key = format["CHILD:202:%1:%2:%3:",_characterID,_minutes,_infected];
-	#ifdef DZE_SERVER_DEBUG_HIVE
-	diag_log ("HIVE: WRITE: "+ str(_key));
-	#endif
+	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
-}
-else
-{
-	deleteVehicle _newObject;
 };
+
+#ifdef PLAYER_DEBUG
+diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2", 
+	_newObject call fa_plr2str, _pos call fa_coor2str,
+	getPlayerUID _newObject,_characterID,
+	typeOf _newObject
+];
+#endif
+
+
+// EPOCH DEATH MESSAGES
+if (_killerWeapon == "Throw") then {_killerWeapon = "Grenade";};
+if (_killerMethod in ["starve","dehyd","sick","bled","crushed","rad","zombie"]) then {
+	if (_killerMethod == "zombie") then {
+		_message = format[localize "str_player_death_zombie",_playerName];
+	} else {
+		_methodStr = localize format["str_death_%1",_killerMethod];
+		_message = format[localize "str_player_death_message",_playerName,_methodStr];
+	};
+} else {
+	if (_killerName == _playerName) then {
+		_message = format[localize "str_player_death_suicide",_playerName];
+	} else {
+		_message = format[localize "str_player_death_killed",_playerName,_killerName,_killerWeapon,_distance];
+	};
+};
+
+if ((_killerWeapon != "unknown weapon") or {_killerMethod != "unknown"} or {_killerName != "unknown"}) then {
+	diag_log _message;
+	// Use FunctionsManager logic unit (BIS_functions_mainscope) to send chat messages so no side or quotation marks are shown
+	switch (toLower DZE_DeathMsgChat) do {
+		case "global": {[nil,nil,rspawn,[BIS_functions_mainscope,_message],{(_this select 0) globalChat (_this select 1)}] call RE;;};
+		case "side": {[nil,nil,rspawn,[BIS_functions_mainscope,_message],{(_this select 0) sideChat (_this select 1)}] call RE;};
+		case "system": {[nil,nil,rspawn,_message,{systemChat _this}] call RE;};
+	};
+	if (DZE_DeathMsgTitleText) then {[nil,nil,"per",rTITLETEXT,("\n\n" + _message),"PLAIN DOWN"] call RE;};
+
+	// Store death messages to allow viewing at message board in trader citys.
+	PlayerDeaths set [count PlayerDeaths,[_playerName,_killerName,_killerWeapon,_distance,ServerCurrentTime]];
+};
+
+
+_newObject setDamage 1;
+_newObject setOwner 0;
+//dead_bodyCleanup set [count dead_bodyCleanup,_newObject];
