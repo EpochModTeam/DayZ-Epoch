@@ -7,17 +7,17 @@ Install instructions:
 
 2. Make a copy of your @DayZ_Epoch1051 folder on both the client and server and rename it to @DayZ_Epoch106.
 
-3. Copy the @Client-1.8.7-Full\@Dayz\Addons\ folder into your @DayZ_Epoch106\ folder and overwrite files when prompted. Make sure to do this on both the client and server.
+3. Copy the `@Client-1.8.7-Full\@Dayz\Addons\` folder into your `@DayZ_Epoch106\` folder and overwrite files when prompted. Make sure to do this on both the client and server.
 
-4. Copy the EpochTest-106-APRIL_23_2016\addons\ folder into your @DayZ_Epoch106\ folder and again overwrite files when prompted. Make sure to do this on both the client and server.
+4. Copy the `EpochTest-106-APRIL_23_2016\addons\` folder into your `@DayZ_Epoch106\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
 
-5. Use the new dayz_server.pbo from EpochTest-106-APRIL_23_2016\addons\.
+5. Use the new dayz_server.pbo from `EpochTest-106-APRIL_23_2016\addons\`
 
 6. Use the new MPMission from Server Files\MPMissions.
 
 7. Set verifySignatures = 0; in your test server config. Also move your filters out of the BattlEye folder for now or set BattlEye=0;
 
-8. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set -mod=@DayZ_Epoch106;  in Settings > Additional Parameters.
+8. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
 
 
