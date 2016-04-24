@@ -14105,12 +14105,12 @@
 			<Czech>Gas for Chainsaw</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN">
-			<English>Mixed Gas Full</English>
-			<German>Mixed Gas Full</German>
+			<English>Full Mixed Gas Can</English>
+			<German>Full Mixed Gas Can</German>
 			<Russian>Полная канистра бензина</Russian>
-			<Spanish>Mixed Gas Full</Spanish>
-			<French>Mixed Gas Full</French>
-			<Czech>Mixed Gas Full</Czech>
+			<Spanish>Full Mixed Gas Can</Spanish>
+			<French>Full Mixed Gas Can</French>
+			<Czech>Full Mixed Gas Can</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC">
 			<English>20 liters of Mixed Gas.</English>

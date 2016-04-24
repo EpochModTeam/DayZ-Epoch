@@ -128,7 +128,7 @@ class ItemJerryMixed2: CA_Magazine {
 	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN;
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-	descriptionShort = STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC;
+	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
@@ -148,7 +148,7 @@ class ItemJerryMixed1: CA_Magazine {
 	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN;
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-	descriptionShort = STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN;
+	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
