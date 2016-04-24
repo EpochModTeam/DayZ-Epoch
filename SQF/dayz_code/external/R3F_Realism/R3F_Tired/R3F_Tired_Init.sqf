@@ -16,7 +16,6 @@ R3F_Weight = 0;
 
 R3F_TIRED_Ratio_Position = 0;
 R3F_TIRED_Accumulator = 0;
-R3F_TIRED_Handle_Blur_Effect = [] spawn {};
 R3F_TIRED_Counter_Time = 0;
 R3F_TIRED_Ratio_Recovery = R3F_TIRED_RATIO_RECOVERING;
 R3F_TIRED_Ratio_Overweight = 1;

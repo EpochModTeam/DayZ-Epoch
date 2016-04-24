@@ -87,10 +87,8 @@ while {true} do {
 		#endif
 		
 		[_level] call R3F_TIRED_FNCT_Voile_Noir;
-		
-		if (R3F_TIRED_Accumulator > R3F_TIRED_BLACKOUT_LEVEL && scriptDone R3F_TIRED_Handle_Blur_Effect) then {
-			call R3F_TIRED_FNCT_DoBlackVanish;
-		};
+		if (R3F_Weight < 150) then {R3F_TIRED_Accumulator = 0;}; // Reset if player drops most of their gear, so overburden doesn't get stuck on for several minutes after carrying way too much weight.
+		if (R3F_TIRED_Accumulator > R3F_TIRED_BLACKOUT_LEVEL) then { call R3F_TIRED_FNCT_Overburdened; };
 	} else {	
 		R3F_TIRED_Accumulator = 0;
 	};

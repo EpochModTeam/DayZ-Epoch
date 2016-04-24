@@ -20,13 +20,29 @@ R3F_TIRED_FNCT_Voile_Noir = {
 		playSound "heartbeat_1";
 		addCamShake [2, 1, 25];
 	};
-	
-};
-R3F_TIRED_FNCT_DoBlackVanish = {
-	if (!r_fracture_legs) then {
-		player setHit["legs",1];
-		r_fracture_legs = true;
-	};
-	localize "STR_R3F_WEIGHT_Overburdened" call dayz_rollingMessages;
 };
 
+R3F_TIRED_ForceWalk = false;
+
+R3F_TIRED_FNCT_Overburdened = {
+	localize "STR_R3F_WEIGHT_Overburdened" call dayz_rollingMessages;
+	
+	if (!R3F_TIRED_ForceWalk) then {
+		R3F_TIRED_ForceWalk = true;
+		[] spawn {
+			private "_vel";
+			while {R3F_TIRED_Accumulator > R3F_TIRED_BLACKOUT_LEVEL} do {
+				if (vehicle player == player) then {
+					_vel = velocity player;
+					//walk 6.7, slow walk 3.98, run 19.8, backwards run -13.16, sprint 23.15, fast swim 3.78, fast crouch 13.14, slow crouch 4.69, fast crawl 3.25, slow crawl 1.8, side strafe 9.8
+					if (speed player > 6.8) then {
+						player setVelocity [-(_vel select 0),-(_vel select 1),_vel select 2];
+					};
+				};
+				uiSleep 0.001;
+			};
+			R3F_TIRED_ForceWalk = false;
+			cutText ["","PLAIN DOWN"]; // Clear overburdened message
+		};
+	};
+};
