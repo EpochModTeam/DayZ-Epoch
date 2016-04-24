@@ -1,6 +1,6 @@
 /* Again your very own basic definition*/
 class DZE_Base_Object : All {
-	scope = 0;
+	scope = private;
 	side = 3;
 	icon = "\ca\data\data\Unknown_object.paa";
 	nameSound = "object";
@@ -68,7 +68,7 @@ class DZE_Base_Object : All {
 
 /* Your very own base class for buildings*/
 class DZE_Housebase : DZE_Base_Object {
-	scope = 1;
+	scope = protected;
 	model = "";
 	icon = "";
 	displayName = "";
@@ -96,7 +96,7 @@ class Land_DZE_WoodDoor_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 2200;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	class DestructionEffects : DestructionEffects
 	{
@@ -126,7 +126,7 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 2500;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	class DestructionEffects : DestructionEffects
 	{
@@ -154,7 +154,7 @@ class CinderWallDoor_DZ_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 4000;					/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	maintainBuilding[] = {{"MortarBucket",1}};
 	class DestructionEffects : DestructionEffects
@@ -181,7 +181,7 @@ class CinderWallDoorLocked_DZ_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 4000;					/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	maintainBuilding[] = {{"MortarBucket",1}};
 	lockable = 3;
@@ -202,73 +202,73 @@ class CinderWallDoorLocked_DZ_Base: DZE_Housebase {
 
 /*  Same name as stated in the Class DestructionEffects, but an "Land_" added infront*/
 class Land_wood_wreck_frame : ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
 	displayName = "Wood Wall ruins";
 	removeoutput[] = {{"PartWoodPlywood",{0,3}},{"PartWoodLumber",{0,3}}};
 };
 class Land_wood_wreck_third : ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
 	displayName = "Wood Wall 1/3 ruins";
 	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wood_wreck_half : ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d";
 	displayName = "Wood Floor 1/2 ruins";
 	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wood_wreck_floor : ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
 	displayName = "Wood Floor ruins";
 	removeoutput[] = {{"PartWoodPlywood",{0,3}},{"PartWoodLumber",{0,3}}};
 };
 
 class Land_wood_wreck_quarter : ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d";
 	displayName = "Wood Floor 1/4 ruins";
 	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wreck_cinder: ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
 	displayName = "Cinder wall ruins";
 	removeoutput[] = {{"CinderBlocks",{0,1}}};
 };
 class Land_wreck_metal_floor: ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wreck_metal_floor.p3d";
 	displayName = "Metal Floor ruins";
 	removeoutput[] = {{"ItemPole",{0,2}},{"ItemTankTrap",{0,2}}};
 };
 
 class Land_iron_vein_wreck: ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
 	displayName = "iron vein ruins";
 	removeoutput[] = {{"PartOre",{10,10}},{"PartOreSilver",{0,10}},{"PartOreGold",{0,5}}};
 };
 class Land_silver_vein_wreck: ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = "silver vein ruins";
 	removeoutput[] = {{"PartOreSilver",{10,10}},{"PartOre",{0,1}},{"PartOreGold",{6,4}}};
 };
 class Land_gold_vein_wreck: ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = "gold vein ruins";
 	removeoutput[] = {{"PartOreGold",{10,10}},{"PartOre",{0,1}},{"PartOreSilver",{6,4}}};
 };
 
 class Land_ammo_supply_wreck: ruins	{
-	scope = 1;
+	scope = protected;
 	model = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
 	displayName = "Supply Crate";
 	removeoutput[] = {{"100Rnd_762x54_PK",{0,1}},{"29Rnd_30mm_AGS30",{0,1}},{"50Rnd_127x107_DSHKM",{0,1}},{"100Rnd_127x99_M2",{0,1}},{"2000Rnd_762x51_M134",{0,1}},{"48Rnd_40mm_MK19",{0,1}},{"100Rnd_762x51_M240",{0,1}}};

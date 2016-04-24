@@ -1,0 +1,92 @@
+[NEW] Fully updated to DayZ 1.8.7 base @icomrade @ebaydayz
+[NEW] 1.8.7 attachments system, community weapons and buildable base objects
+[NEW] 1.8.7 journal and crafting menu are now functional (default 'J' key)
+[NEW] 1.8.7 traps, tripwires (cans, flare, grenade, smoke) and car bomb
+[NEW] 1.8.7 spawn selection, set dayz_spawnselection = 1; in init.sqf (Chernarus only)
+[NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
+[NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee)
+[NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
+[NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
+[NEW] RedRyder BB Gun by @arma2WillRobinson
+[NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
+[NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
+[NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
+[NEW] Snap building, use DZE_modularBuild = true; in init.sqf to enable. @raymix
+[NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
+[NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable
+[NEW] Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
+[NEW] Knife dulling is disabled by default. Set dayz_knifeDulling = true; in init.sqf to enable @ebaydayz
+[NEW] Match stick counting is disabled by default. Set dayz_matchboxCount = true; in init.sqf to enable @ebaydayz
+[NEW] Tool breaking is disabled by default. Set dayz_toolBreaking = true; in init.sqf to enable @ebaydayz
+[NEW] Water bottle breaking is disabled by default. Set dayz_waterBottleBreaking = true; in init.sqf to enable @ebaydayz
+[NEW] Dayz_townGenerator = true; in init.sqf can enable vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus. @ebaydayz
+[NEW] DB Backup script. @RimBlock
+[NEW] Use DayZ_UseSteamID = false; in your init.sqf to use the old PlayerUID, instead of SteamID @icomrade
+[NOTE] It's recommend to convert to the new SteamID system if possible, new servers should not use DayZ_UseSteamID = false;
+[NEW] UI Update - Graphical and code changes, enable using DZE_UI = "dark"; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
+[NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
+[NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
+[NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
+
+[CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
+[CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
+[CHANGED] New loot table format is incompatible with old loot tables. Admins see CfgLoot\README.txt
+[CHANGED] Combattimeout now uses diag_tickTime instead of time.
+[CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)
+[CHANGED] UH60Wreck and UH1Wreck are replaced with CrashSite_EU/UN/US/RU (new models)
+[CHANGED] An infection chance of -1 disables self-transfusion infection. 0 is always infected. (DZE_selfTransfuse_Values) @icomrade
+[CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
+[CHANGED] Tweaked fuel capacity variables for vehicles. @RimBlock
+[CHANGED] Tweaked rotate_logs.bat to incorporate the day of the week for better organization @Raziel23x 
+[CHANGED] All instances of sleep replaced with the more reliable uiSleep @icomrade
+[CHANGED] Several getPosATL changed to call FNC_GetPos for water compatibility @icomrade
+[CHANGED] Trader city objects are now spawned locally on each machine with simulation disabled for better performance. Admins can still override with custom cities in init.sqf. @ebaydayz
+[CHANGED] Player zombies are no longer attacked by other zombies. The respawn button is now enabled for them if they wish to suicide. @ebaydayz
+[CHANGED] When R3Fweight is enabled overburdened players now get their legs broken instead of being knocked out. The scream was also removed. #1145 @ebaydayz
+
+[FIXED] Zombies now target and attack players correctly with 1.8.7 code
+[FIXED] Server position sync bug after falling unconscious #1522 @ebaydayz
+[FIXED] Character sometimes failing to sync after changing clothes #1545
+[FIXED] Backpack wipes when changing clothes. #1361 @icomrade
+[FIXED] CH53 gear when locked #1364 @icomrade
+[FIXED] Infinite loop when crafting ore into bars #1351 @icomrade
+[FIXED] Only first kill showing on death boards #1362 #1124 @vbawol @icomrade
+[FIXED] Crossbow quivers not working #1355 @icomrade
+[FIXED] Crash_spawner & Supply_drop modules spawning inaccessible loot piles #1408 #1390 @Uro1
+[FIXED] Fire cleanup diag_log error in server_functions.sqf #1421 @ebaydayz
+[FIXED] NearestObjects position error in server_playerSync.sqf #1425 @ebaydayz
+[FIXED] Corrected ClassName type for CH53_DZE and BAF_Merlin_DZE. @Cinjun
+[FIXED] Some counts reverted to forEach. Count loops can not be nested inside other count loops #1491-#1495 @ebaydayz
+[FIXED] Dynamic_vehicle spawning non-upgradable classes of hilux1 & datsun1.  @Uro1
+[FIXED] Eating while inside a vehicle did not drop empty can  @deadeye2
+[FIXED] Zombie loot error when using loot tables in mission file  @deadeye2
+[FIXED] Trader menu expected array error #1618-1620 @ebaydayz
+[FIXED] Loading screen issue where you can walk around and see a black screen #1610 @deanreid
+[FIXED] Crafting a sledgehammer with one already in your toolbelt no longer eats your parts. #1567 #1667 @Namindu
+[FIXED] Copy key failing when player doesn't have a backpack @ebaydayz
+[FIXED] DarkUI hunger and thirst inconsistency with vanilla UI and health system @SplenectomY @icomrade #1622
+[FIXED] Fire barrels not being detected over water @pj999 @icomrade #1559 #1564
+[FIXED] Opening supply crates over water no longer drops the items on the sea floor @pj999 @icomrade #1558
+[FIXED] Plot pole required message not updating to reflect DZE_PlotPole radius @mathewjknott @icomrade #1274
+[FIXED] Slow login timer and incorrect loading screen message when login times out @icomrade
+[FIXED] Combine mags not working for Revolver and M1911 ammo @Terrien @ebaydayz #1313
+[FIXED] M113_DZ,_DZE variants config errors and gunner seat not working @McKeighan @ebaydayz #1514
+[FIXED] Smoke countermeasures are now visible @Markokil321 @icomrade #1440
+[FIXED] Keyboard input is now disabled properly while unconscious @skynetdev @ebaydayz #1613
+[FIXED] Toilet paper dupe exploit when building outhouse @Markokil321 @ebaydayz #1599
+[FIXED] Safes and lockboxes wiped when opening after restart and locking not being logged to RPT @ebaydayz #1413 #1503
+[FIXED] Duplicate objectUIDs occasionally causing vehicles to swap classes or be deleted across restarts @ebaydayz #1504
+[FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
+[FIXED] Reworked death messages. Fixed messages not always showing, undefined errors and wrong distance bug. Added bled out, killed by zombie, etc. MPHit event handler (fnc_plyrHit) is no longer needed. @ebaydayz
+[FIXED] Player no longer hears radiation sound when changing clothes. @ebaydayz
+
+[UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
+[UPDATED] .bat files updated in Config-Examples @Raziel23x
+[UPDATED] Updated all config.cfg in Config-Examples, Added Default Steam Ports and Updated Layout. @Namindu
+[UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
+
+[INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
+[INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
+[INFO] (EXTREMELY IMPORTANT) Server owners MUST update their required build and beta to 131129
+[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Special thanks to http://verthosting.com for hosting our development server.

@@ -1,72 +1,83 @@
-private ["_invehicle","_isplayernearby","_playerObj","_myGroup","_PUID","_id","_playerUID","_playerName","_characterID","_timeout","_message","_magazines","_playerPos"];
+private ["_playerObj","_myGroup","_playerUID","_playerPos","_playerName","_puid","_timeout","_message"];
+
 _playerUID = _this select 0;
 _playerName = _this select 1;
 _playerObj = nil;
 _playerPos = [];
+
+//Search all players for the object that matches our playerUID
 {
-	_PUID = [_x] call FNC_GetPlayerUID;
-	if (_PUID == _playerUID) exitWith {_playerObj = _x;};
+	_puid = [_x] call FNC_GetPlayerUID;
+	if (_puid == _playerUID) exitWith {_playerObj = _x; _playerPos = getPosATL _playerObj;};
 } count playableUnits;
 
-if (isNil "_playerObj") then {
-	diag_log format["nil player object attempting PV, :%1", _this];
-	
-	// fall back to using PV for now so we have a better chance at finding the player
-	_playerObj = call compile format["PVDZE_player%1",_playerUID];
-};
-
+//If for some reason the playerObj does not exist, exit the disconnect system.
 if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
-_PUID = [_playerObj] call FNC_GetPlayerUID;
-diag_log format["get: %1 (%2), sent: %3 (%4)",typeName _PUID, _PUID, typeName _playerUID, _playerUID];
 
-if (!isNull _playerObj) then {
+_puid = [_playerObj] call FNC_GetPlayerUID;
+diag_log format["get: %1 (%2), sent: %3 (%4)",typeName _puid, _puid, typeName _playerUID, _playerUID];
 
-	_playerPos = getPosATL _playerObj;
-	_characterID =	_playerObj getVariable ["CharacterID","0"];
+//If the playerObj exists run all sync systems
+_characterID = _playerObj getVariable ["characterID", "?"];
+_lastDamage = _playerObj getVariable ["noatlf4",0];
+_sepsis = _playerObj getVariable ["USEC_Sepsis",false];
+_lastDamage = round(diag_ticktime - _lastDamage);
+
+//Readded Logout debug info.
+diag_log format["Player UID#%1 CID#%2 %3 as %4, logged off at %5%6", 
+	getPlayerUID _playerObj, _characterID, _playerObj call fa_plr2str, typeOf _playerObj, 
+	_playerPos call fa_coor2str,
+	if ((_lastDamage > 5 && (_lastDamage < 30)) && {(alive _playerObj) && (_playerObj distance (getMarkerpos "respawn_west") >= 2000)}) then {" while in combat ("+str(_lastDamage)+" seconds left)"} else {""}
+]; 
+
+//Make sure we know the ID of the object before we try and sync any info to the DB
+if (_characterID != "?") exitWith {
+	//If the player has sepsis before logging off give them infected status.
+	if (_sepsis) then {_playerObj setVariable ["USEC_infected",true,true];};
+	
+	//Record Player Login/LogOut
+	[_playerUID,_characterID,2] call dayz_recordLogin;
+
+	//If the player object is inside a vehicle eject the player.
+	if (vehicle _playerObj != _playerObj) then {_playerObj action ["eject",vehicle _playerObj];};
+	
+	//Punish combat log
 	_timeout = _playerObj getVariable["combattimeout",0];
-
-	_invehicle = false;
-
-	if (vehicle _playerObj != _playerObj) then {
-		_playerObj action ["eject", vehicle _playerObj];
-		_invehicle = true;
-		diag_log format["LOGOUT IN VEHICLE: %1 at location %2", _playerName,(getPosATL _playerObj)];
-	};
-
-	if ((_timeout - time) > 0) then {
-
-		_playerObj setVariable["NORRN_unconscious",true, true];
-		_playerObj setVariable["unconsciousTime",300,true];
-	
-		diag_log format["COMBAT LOGGED: %1 (%2) at location %3", _playerName,_timeout,(getPosATL _playerObj)];
-		//diag_log format["SET UNCONCIOUSNESS: %1", _playerName];
-	
-		// Message whole server when player combat logs
+	if (_timeout >= diag_tickTime) then {
+		_playerObj setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
+		_playerObj setVariable ["unconsciousTime",150,true]; // Set knock out timer to 150 seconds
+		//_playerObj setVariable ["USEC_injured",true]; // Set status to bleeding
+		//_playerObj setVariable ["USEC_BloodQty",3000]; // Set blood to 3000
+		diag_log format["PLAYER COMBAT LOGGED: %1(%4) (with %2s combat time remaining) at location %3",_playerName,(_timeout - diag_tickTime),_playerPos,_playerUID];
 		_message = format["PLAYER COMBAT LOGGED: %1",_playerName];
-		[nil, nil, rTitleText, _message, "PLAIN"] call RE;
+		[nil, nil, rTitleText, _message, "PLAIN"] call RE; // Message whole server
 	};
 
-	diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4 at loc %5", _playerName,_playerUID,_playerObj,_characterID, (getPosATL _playerObj)];
-
-	_id = [_playerUID,_characterID,2] spawn dayz_recordLogin;
-
+	//If player object is alive sync and remove the body. If ghosting is active add the player id to the array.
 	if (alive _playerObj) then {
-
-		_isplayernearby = (DZE_BackpackGuard && !_invehicle && ({(isPlayer _x) && (alive _x)} count (_playerPos nearEntities ["AllVehicles", 5]) > 1));
-
-		// prevent saving more than 20 magazine items
-		_magazines = [(magazines _playerObj),20] call array_reduceSize;
-
-		[_playerObj,_magazines,true,true,_isplayernearby] call server_playerSync;
+		[_playerObj,nil,true] call server_playerSync;
 		
-		// remove player
-		_playerObj call dayz_removePlayerOnDisconnect;
-	} else {
-		//Update Vehicle
-		{ 
-			[_x,"gear"] call server_updateObject;
-		} count (nearestObjects [_playerPos, dayz_updateObjects, 10]);
+		if (dayz_enableGhosting) then {
+			//diag_log format["GhostPlayers: %1, ActivePlayers: %2",dayz_ghostPlayers,dayz_activePlayers];
+			if !(_playerUID in dayz_ghostPlayers) then { 
+				dayz_ghostPlayers set [count dayz_ghostPlayers, _playerUID];
+				dayz_activePlayers set [count dayz_activePlayers, [_playerUID,diag_ticktime]];
+				//diag_log format["playerID %1 added to ghost list",_playerUID];
+			};
+		};
 	};
+	
+	//Scan the area near the player logout position and save all objects.
+	{[_x,"gear"] call server_updateObject} count (nearestObjects [_playerPos,DayZ_GearedObjects,10]);
+};
+
+if (isNull _playerObj) then {diag_log "server_onPlayerDisconnect called with Null player object";};
+
+//Remove the object.
+if (!isNull _playerObj) then {
+	_myGroup = group _playerObj;
+	deleteVehicle _playerObj;
+	deleteGroup _myGroup;
 };

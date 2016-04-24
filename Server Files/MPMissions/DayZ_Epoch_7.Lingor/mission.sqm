@@ -4,6 +4,8 @@ class Mission
 	addOns[]=
 	{
 		"brg_africa",
+		"map_eu",
+		"ca_modules_animals",
 		"CABuildings",
 		"CABuildings2",
 		"CAMisc",
@@ -15,16 +17,14 @@ class Mission
 		"ibr_plants",
 		"ibr_hangars",
 		"ibr_airports",
-		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
-		"dayz_epoch",
-		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"dayz_epoch",
 		"ibr_lingor",
 		"ibr_lcivilian_patch",
 		"chn_crocodile",
@@ -32,8 +32,8 @@ class Mission
 		"glt_m300t",
 		"pook_h13",
 		"csj_gyroac",
-		"map_eu",
-		"jetskiyanahuiaddon"
+		"jetskiyanahuiaddon",
+		"redryder"
 	};
 	addOnsAuto[]=
 	{
@@ -45,7 +45,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Lingor";
-		briefingDescription="DayZ Epoch Lingor Private Server";
+		briefingDescription="DayZ Epoch Lingor";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -185,7 +185,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-144,0.5,2320};
+					position[]={-144,0,2320};
 					id=50;
 					side="LOGIC";
 					vehicle="FunctionsManager";
@@ -201,85 +201,85 @@ class Mission
 		items=37;
 		class Item0
 		{
-			position[]={4078.8516,30.836605,4757.7241};
+			position[]={4078,30,4757};
 			name="center";
 			type="Empty";
 		};
 		class Item1
 		{
-			position[]={4989.1367,1.1281254,-4178.9229};
+			position[]={4989,1,-4178};
 			name="respawn_west";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={2085.0869,12.754358,5500.8735};
+			position[]={2085,12,5500};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={1355.4587,13.228598,315.10571};
+			position[]={1355,13,315};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={4549.9399,2.847357,912.68982};
+			position[]={4549,2,912};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={8880.2793,4.9778252,1703.156};
+			position[]={8880,4,1703};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={579.80536,15.394942,5547.1782};
+			position[]={579,15,5547};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={3249.5935,6.3452759,2555.6763};
+			position[]={3249,6,2555};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={6143.4604,6.6867952,2753.012};
+			position[]={6143,6,2753};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={1268.5149,14.039586,2857.6775};
+			position[]={1268,14,2857};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={8295.4883,8.9126549,8667.2041};
+			position[]={8295,8,8667};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={9071.9766,14.249757,7322.6162};
+			position[]={9071,14,7322};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={6898.7329,6.2468476,3970.9077};
+			position[]={6898,6,3970};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={6011.7676,13.080506,6626.9902};
+			position[]={6011,13,6626};
 			name="RaceTrack";
 			text="Rommelo's Raceway";
 			type="mil_dot";
@@ -289,7 +289,7 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={6539.8096,20.420567,6868.8203};
+			position[]={6539,20,6868};
 			name="RepairGuy";
 			text="Axles Repair Shop";
 			type="mil_box";
@@ -297,7 +297,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={7026.7695,11.873646,7105.6934};
+			position[]={7026,11,7105};
 			name="PlaneVendor";
 			text="AWOL's Planes";
 			type="mil_dot";
@@ -305,7 +305,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={3054.834,14.806208,8032.8389};
+			position[]={3054,14,8032};
 			name="Wholesale";
 			text="Wholesaler Blivion";
 			type="mil_dot";
@@ -313,7 +313,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={3608.7268,235.08131,3685.8149};
+			position[]={3608,235,3685};
 			name="HighWeapons/ammo";
 			text="Jim and Joe's Weapons/Ammo";
 			type="mil_dot";
@@ -321,7 +321,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={4245.8931,46.366299,4486.48};
+			position[]={4245,46,4486};
 			name="Parts";
 			text="Whiskey's Parts";
 			type="mil_box";
@@ -329,7 +329,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={4138.7852,23.635477,1492.9089};
+			position[]={4138,23,1492};
 			name="Choppers";
 			text="Chip's Choppers";
 			type="mil_dot";
@@ -337,7 +337,7 @@ class Mission
 		};
 		class Item20
 		{
-			position[]={7553.0757,11.996795,3028.4924};
+			position[]={7553,11,3028};
 			name="lowEndCars";
 			text="Used Cars";
 			type="mil_dot";
@@ -345,7 +345,7 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={7514.9941,10.998494,2953.7041};
+			position[]={7514,10,2953};
 			name="LowEndWeapons";
 			text="Chuck and Buck's Weapons/Ammo";
 			type="mil_dot";
@@ -353,7 +353,7 @@ class Mission
 		};
 		class Item22
 		{
-			position[]={3024.4265,45.493584,5956.77};
+			position[]={3024,45,5956};
 			name="HighEndCars";
 			text="Green's Quality Cars";
 			type="mil_dot";
@@ -361,7 +361,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={895.26929,29.506145,5271.8955};
+			position[]={895,29,5271};
 			name="MedicalandBags";
 			text="Alejandria and Melly's Medica/Survival Shop";
 			type="mil_dot";
@@ -369,7 +369,7 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={8357.583,23.403641,8740.0039};
+			position[]={8357,23,8740};
 			name="Wholesaler";
 			text="Wholesaler Clive";
 			type="mil_dot";
@@ -377,7 +377,7 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={4178.8506,12.651016,2342.1643};
+			position[]={4178,12,2342};
 			name="BagsNFood";
 			text="Bag lady Gina";
 			type="mil_dot";
@@ -385,7 +385,7 @@ class Mission
 		};
 		class Item26
 		{
-			position[]={728.23462,41.254562,1571.2231};
+			position[]={728,41,1571};
 			name="Wholesalers";
 			text="Wholesaler Santos";
 			type="mil_dot";
@@ -393,7 +393,7 @@ class Mission
 		};
 		class Item27
 		{
-			position[]={1724.5925,42.225693,4137.6128};
+			position[]={1724,42,4137};
 			name="DirtTrackVendor";
 			text="Adventure 4x4";
 			type="mil_dot";
@@ -401,7 +401,7 @@ class Mission
 		};
 		class Item28
 		{
-			position[]={2376.5916,56.980717,4120.5234};
+			position[]={2376,56,4120};
 			name="OffRoad4x4";
 			text="MotoDrom 4x4 Offroad";
 			type="mil_dot";
@@ -409,7 +409,7 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={4015.4907,4.2447982,5216.2656};
+			position[]={4015,4,5216};
 			name="BoatVendor";
 			text="Big Bob's Boats";
 			type="mil_triangle";
@@ -417,7 +417,7 @@ class Mission
 		};
 		class Item30
 		{
-			position[]={5523.2813,2.2458067,4412.8027};
+			position[]={5523,2,4412};
 			name="BoatVendor1";
 			text="Juan's Tour Boats";
 			type="mil_triangle";
@@ -425,7 +425,7 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={3939.04,2.6928787,2199.4922};
+			position[]={3939,2,2199};
 			name="BoatVendor2";
 			text="Jd's Armed boats";
 			type="mil_triangle";
@@ -433,7 +433,7 @@ class Mission
 		};
 		class Item32
 		{
-			position[]={6673.0313,52.049561,6355.9775};
+			position[]={6673,52,6355};
 			name="BagVendor1";
 			text="Stella's Stop";
 			type="mil_dot";
@@ -441,7 +441,7 @@ class Mission
 		};
 		class Item33
 		{
-			position[]={4238.8086,48.201847,4842.0874};
+			position[]={4238,48,4842};
 			name="BagVendor2";
 			text="Samish Shop";
 			type="mil_dot";
@@ -449,7 +449,7 @@ class Mission
 		};
 		class Item34
 		{
-			position[]={6679.3359,26.402266,4296.9727};
+			position[]={6679,26,4296};
 			name="Doctor2";
 			text="Mad Scientist";
 			type="mil_dot";
@@ -457,7 +457,7 @@ class Mission
 		};
 		class Item35
 		{
-			position[]={4099.8286,16.890327,9242.6455};
+			position[]={4099,16,9242};
 			name="BanditTrader";
 			text="Bandit Trader";
 			type="mil_dot";
@@ -465,7 +465,7 @@ class Mission
 		};
 		class Item36
 		{
-			position[]={4139.7085,23.635477,1465.8002};
+			position[]={4139,23,1465};
 			name="HeroTrader";
 			text="Hero Trader";
 			type="mil_dot";

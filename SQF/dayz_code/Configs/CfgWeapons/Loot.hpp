@@ -1,15 +1,36 @@
-class Loot: Default
+class Loot : Default
 {
-	scope = 2;
+	scope = public;
 	value = 0;
-	type = 0;
+	type = WeaponNoSlot;
 	displayName = "Use";
-	canDrop = 0;
-	muzzles[] = {"this"};
-	magazines[] = {"FoodBioMeat","ItemZombieParts","ItemBandage","ItemHeatPack","PartWoodPile","PartFueltank","PartWheel","PartGeneric","PartEngine","PartVRotor","PartGlass","ItemWaterbottle","ItemWaterbottleUnfilled","ItemEpinephrine","ItemGoldBar","ItemSilverBar","ItemMorphine","ItemBloodbag","ItemAntibiotic","ItemPainkiller","ItemJerrycan","ItemOilBarrel","ItemGenerator","ItemTent","ItemSandbag","ItemTankTrap","ItemWire","FoodSteakRaw","TrashTinCan","ItemSodaCoke","ItemSodaPepsi","ItemSodaMdew","FoodEdible","FoodSteakCooked","FoodCanBakedBeans","FoodCanSardines","FoodCanFrankBeans","FoodCanPasta"};
-	modes[] = {"this"};
-	useAction = 0;
+	canDrop = false;
+	muzzles[] = {this};
+	modes[] = {this};
+	useAction = false;
 	useActionTitle = "";
-	enableAttack = 0;
-	showToPlayer = 0;
+	enableAttack = false;
+	showToPlayer = false;
+	
+	//Insert here magazines to show up as "Take x" in action menu
+	magazines[] =
+	{
+		//medical
+		"ItemBandage",
+		"ItemSepsisBandage",
+		"ItemPainkiller",
+		"ItemMorphine",
+		"ItemAntibiotic",
+		"ItemHeatPack",
+		"ItemEpinephrine"
+		
+		//vehicle parts
+		/*"PartFueltank",
+		"PartWheel",
+		"PartGeneric",
+		"PartEngine",
+		"PartVRotor",
+		"PartGlass",
+		"ItemJerrycan",*/
+	};
 };

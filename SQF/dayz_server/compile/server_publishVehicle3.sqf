@@ -14,9 +14,7 @@ if(!_isOK || isNull _object) exitWith { diag_log ("HIVE-pv3: Vehicle does not ex
 diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
 _location = _worldspace select 1;
-
-//Generate UID test using time
-_uid = _worldspace call dayz_objectUID3;
+_uid = _worldspace call dayz_objectUID2;
 
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
@@ -44,7 +42,7 @@ _key call server_hiveWrite;
 	// TODO: Needs major overhaul for 1.1
 	while {_retry < 10} do {
 		
-		sleep 1;
+		uiSleep 1;
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
 		diag_log ("HIVE: WRITE: "+ str(_key));
@@ -122,7 +120,7 @@ _key call server_hiveWrite;
 	
 	_object setVariable ["CharacterID", _characterID, true];
 
-	PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 	_object call fnc_veh_ResetEH;
 	

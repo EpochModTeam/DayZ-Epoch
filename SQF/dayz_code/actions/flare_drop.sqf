@@ -1,4 +1,5 @@
-private["_flare"];
+private ["_flare"];
+
 _flare = _this select 3;
 player removeAction s_player_dropflare;
 detach _flare;

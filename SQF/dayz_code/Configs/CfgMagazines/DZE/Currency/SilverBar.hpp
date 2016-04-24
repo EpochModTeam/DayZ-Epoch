@@ -1,5 +1,5 @@
 class ItemSilverBar: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 1;
 	type = 256;
@@ -28,7 +28,7 @@ class ItemSilverBar: CA_Magazine {
 	};
 };
 class ItemSilverBar2oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 2;
 	type = 256;
@@ -66,7 +66,7 @@ class ItemSilverBar2oz: CA_Magazine {
 	};
 };
 class ItemSilverBar3oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 3;
 	type = 256;
@@ -112,7 +112,7 @@ class ItemSilverBar3oz: CA_Magazine {
 	};
 };
 class ItemSilverBar4oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 4;
 	type = 256;
@@ -158,7 +158,7 @@ class ItemSilverBar4oz: CA_Magazine {
 	};
 };
 class ItemSilverBar5oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 5;
 	type = 256;
@@ -204,7 +204,7 @@ class ItemSilverBar5oz: CA_Magazine {
 	};
 };
 class ItemSilverBar6oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 6;
 	type = 256;
@@ -250,7 +250,7 @@ class ItemSilverBar6oz: CA_Magazine {
 	};
 };
 class ItemSilverBar7oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 7;
 	type = 256;
@@ -296,7 +296,7 @@ class ItemSilverBar7oz: CA_Magazine {
 	};
 };
 class ItemSilverBar8oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 8;
 	type = 256;
@@ -342,7 +342,7 @@ class ItemSilverBar8oz: CA_Magazine {
 	};
 };
 class ItemSilverBar9oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 9;
 	type = 256;
@@ -380,7 +380,7 @@ class ItemSilverBar9oz: CA_Magazine {
 	};
 };
 class ItemSilverBar10oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	worth = 10;
 	type = 256;

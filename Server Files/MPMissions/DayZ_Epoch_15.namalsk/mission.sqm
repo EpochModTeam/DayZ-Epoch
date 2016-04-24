@@ -4,24 +4,24 @@ class Mission
 	addOns[]=
 	{
 		"namalsk",
+		"map_eu",
 		"ca_modules_animals",
 		"dayz_anim",
 		"dayz_code",
 		"dayz_communityassets",
 		"dayz_weapons",
 		"dayz_equip",
-		"dayz_epoch",
-		"dayz_vehicles",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"dayz_epoch",
 		"warfarebuildings",
 		"ind_tank",
 		"camisc_e",
 		"glt_m300t",
 		"pook_h13",
 		"csj_gyroac",
-		"map_eu",
-		"jetskiyanahuiaddon"
+		"jetskiyanahuiaddon",
+		"redryder"
 	};
 	addOnsAuto[]=
 	{
@@ -33,7 +33,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Namalsk";
-		briefingDescription="DayZ Epoch Namalsk Private Server";
+		briefingDescription="DayZ Epoch Namalsk";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -50,11 +50,11 @@ class Mission
 			class Vehicles
 			{
 				items=100;
-#define PLRDEF position[]={13167,0.6,-362};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
+#define PLRDEF position[]={13167,0,-362};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
 				class Item0{id=0;PLRDEF};
 				class Item1
 				{
-					position[]={13167,0.6,-362};
+					position[]={13167,0,-362};
 					azimut=0;
 					id=0;
 					side="WEST";
@@ -173,7 +173,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-144,0.5,2320};
+					position[]={-144,0,2320};
 					id=50;
 					side="LOGIC";
 					vehicle="FunctionsManager";
@@ -189,85 +189,85 @@ class Mission
 		items=25;
 		class Item0
 		{
-			position[]={5893.3696,50.26273,8665.4043};
+			position[]={5893,50,8665};
 			name="center";
 			type="Empty";
 		};
 		class Item1
 		{
-			position[]={13166.368,0.58801168,-362.13727};
+			position[]={13166,0,-362};
 			name="respawn_west";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={4619.5347,15.341805,10916.343};
+			position[]={4619,15,10916};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={7600.46,23.25774,6019.8213};
+			position[]={7600,23,6019};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={6497.6104,27.631859,11851.226};
+			position[]={6497,27,11851};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={7667.6416,15.21726,11706.745};
+			position[]={7667,15,11706};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={4340.0073,34.292839,4959.8364};
+			position[]={4340,34,4959};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={7885.1094,37.171074,7206.2168};
+			position[]={7885,37,7206};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={3012.8943,69.836632,7505.9487};
+			position[]={3012,69,7505};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={4673.2769,4.5134535,10003.67};
+			position[]={4673,4,10003};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={7858.5596,25.61207,9095.5615};
+			position[]={7858,25,9095};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={8755.5371,15,10119.075};
+			position[]={8755,15,10119};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={5822.5088,33.019142,5640.7861};
+			position[]={5822,33,5640};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={5769.0625,21.070023,10774.036};
+			position[]={5769,21,10774};
 			name="GerneralPartsSupplies";
 			text="Bastion and Alda's Supplies";
 			type="mil_circle";
@@ -275,7 +275,7 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={8885.2803,14.056273,10757.11};
+			position[]={8885,14,10757};
 			name="WholesalerNorth";
 			text="Wholesaler Larz";
 			type="mil_dot";
@@ -283,7 +283,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={5563.6011,39.678238,10343.263};
+			position[]={5563,39,10343};
 			name="Doctor";
 			text="Dr. Zoidberg";
 			type="mil_dot";
@@ -291,7 +291,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={4702.8198,28.760448,8925.3613};
+			position[]={4702,28,8925};
 			name="HighEndWeaponsAmmo";
 			text="Fry and Phil's Weapons/Ammo";
 			type="mil_circle";
@@ -299,7 +299,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={3604.1626,185.12129,8026.2251};
+			position[]={3604,185,8026};
 			name="HeroVendor";
 			text="Tanner's Hero Supplies";
 			type="hd_dot";
@@ -307,7 +307,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={7317.5527,87.173363,8023.3457};
+			position[]={7317,87,8023};
 			name="VehicleFriendly";
 			text="Rutahn's Vehicles";
 			type="mil_triangle";
@@ -315,7 +315,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={4305.3672,3.3111522,4779.2388};
+			position[]={4305,3,4779};
 			name="NeutralVendors";
 			text="Brensk Neutral Camp";
 			type="mil_circle";
@@ -323,7 +323,7 @@ class Mission
 		};
 		class Item20
 		{
-			position[]={2186.3921,4.6836023,5766.6338};
+			position[]={2186,4,5766};
 			name="WholesalerSouth";
 			text="Dateu's Wholesale";
 			type="mil_dot";
@@ -331,7 +331,7 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={5032.3784,49.872589,8234.9111};
+			position[]={5032,49,8234};
 			name="LowEndWeaponsAmmo";
 			text="Rhevn and Merkaba's Weapons/Ammo";
 			type="mil_circle";
@@ -339,7 +339,7 @@ class Mission
 		};
 		class Item22
 		{
-			position[]={7720.813,4.0248933,5847.5083};
+			position[]={7720,4,5847};
 			name="BoatVendor";
 			text="Popeye's Boats";
 			type="mil_triangle";
@@ -347,7 +347,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={7239.8848,240.7793,7046.2319};
+			position[]={7239,240,7046};
 			name="Bandit Trader";
 			text="Bandit Trader";
 			type="mil_dot";
@@ -355,7 +355,7 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={6283.353,41.989407,9380.7344};
+			position[]={6283,41,9380};
 			name="PlaneVendor";
 			text="AWOL's Air Vehicles";
 			type="mil_triangle";

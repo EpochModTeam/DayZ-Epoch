@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_needed","_activatingPlayer","_textPartIn","_textPartOut","_started","_finished","_animState","_isMedic","_removed"];
 // [part_out,part_in, qty_out, qty_in,"buy"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _activatingPlayer = player;
@@ -69,15 +69,15 @@ if(_buy_o_sell == "sell") then {
 };
 
 if (_abort) exitWith {
-	cutText [_msg, "PLAIN DOWN"];
+	_msg call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
-cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
+localize "str_epoch_player_105" call dayz_rollingMessages;
 
 // force animation
 player playActionNow "Medic";
-[1,1] call dayz_HungerThirst;
+["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 
 r_interrupt = false;
 _animState = animationState player;
@@ -98,7 +98,7 @@ while {r_doLoop} do {
 	if (r_interrupt) then {
 		r_doLoop = false;
 	};
-	sleep 0.1;
+	uiSleep 0.1;
 };
 r_doLoop = false;
 
@@ -109,7 +109,7 @@ if (!_finished) exitWith {
 		player playActionNow "stop";
 	};
 	DZE_ActionInProgress = false;
-	cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+	localize "str_epoch_player_106" call dayz_rollingMessages;
 };
 
 if (_finished) then {
@@ -140,7 +140,6 @@ if (_finished) then {
 
 	if (_canAfford) then {
 
-		//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 		if (isNil "_part_out") then { _part_out = "Unknown Weapon/Magazine" };
 		if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
 		if(_bos == 1) then {
@@ -163,15 +162,15 @@ if (_finished) then {
 				_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
 				if (_done) then {
 					player addWeapon _part_out;
-					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 				};
 
 			} else {
-				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
+				format[localize "str_epoch_player_183",_textPartOut] call dayz_rollingMessages;
 			};
 		} else {
 			// selling
-			cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+			format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 		};
 
 		dayzTradeResult = nil;
@@ -182,7 +181,7 @@ if (_finished) then {
 			_qty = {_x == _part_in} count weapons player;
 		};
 		_needed =  _qty_in - _qty;
-		cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 	};
 };
 

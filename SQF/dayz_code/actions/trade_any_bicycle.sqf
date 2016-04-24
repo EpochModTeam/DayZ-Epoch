@@ -1,11 +1,7 @@
 private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
-
-// Test cannot lock while another player is nearby
-//_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-//if(_playerNear) exitWith { DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_104") , "PLAIN DOWN"];  };
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -25,9 +21,9 @@ if(_buy_o_sell == "sell") then {
 	_bos = 1;
 };
 
-cutText [(localize "str_epoch_player_105"), "PLAIN DOWN"];
+localize "str_epoch_player_105" call dayz_rollingMessages;
 	 
-[1,1] call dayz_HungerThirst;
+["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 // force animation 
 player playActionNow "Medic";
 
@@ -50,7 +46,7 @@ while {r_doLoop} do {
 	if (r_interrupt) then {
 		r_doLoop = false;
 	};
-	sleep 0.1;
+	uiSleep 0.1;
 };
 r_doLoop = false;
 
@@ -60,7 +56,7 @@ if (!_finished) exitWith {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+	localize "str_epoch_player_106" call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
@@ -136,15 +132,14 @@ if (_finished) then {
 
 					_location = (getPosATL _veh);
 
-					//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
 					PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,dayz_characterID,_activatingPlayer];
 					publicVariableServer  "PVDZE_veh_Publish2";
 					
-					cutText [format[(localize "STR_EPOCH_PLAYER_180"),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
+					format[localize "STR_EPOCH_PLAYER_180",_qty_in,_textPartIn,_textPartOut] call dayz_rollingMessages;
 				};
 
 			} else {
-				cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
+				format[localize "str_epoch_player_183",_textPartOut] call dayz_rollingMessages;
 			};
 		} else {
 			
@@ -206,22 +201,22 @@ if (_finished) then {
 
 						//if(_objectID != "0" && _objectUID != "0") then {
 					
-						PVDZE_obj_Delete = [_objectID,_objectUID,_activatingPlayer];
-						publicVariableServer "PVDZE_obj_Delete";
+						PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer];
+						publicVariableServer "PVDZ_obj_Destroy";
 
 						deleteVehicle _obj; 
 
 						// payout 
 						_canAfford = [[[_part_out,_qty_out]],1] call epoch_returnChange;
 					
-						cutText [format[(localize "str_epoch_player_181"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+						format[localize "str_epoch_player_181",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 						
 							
 					} else {
-						cutText [format[(localize "str_epoch_player_182"),_textPartIn] , "PLAIN DOWN"];
+						format[localize "str_epoch_player_182",_textPartIn] call dayz_rollingMessages;
 					};
 				} else {
-					cutText [(localize "str_epoch_player_245"), "PLAIN DOWN"];
+					localize "str_epoch_player_245" call dayz_rollingMessages;
 				};
 			};
 		};
@@ -231,9 +226,9 @@ if (_finished) then {
 		if(_buy_o_sell == "buy") then {
 			_qty = {_x == _part_in} count magazines player;
 			_needed =  _qty_in - _qty;
-			cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+			format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 		} else {
-			cutText [format[(localize "str_epoch_player_185"),_textPartIn] , "PLAIN DOWN"];
+			format[localize "str_epoch_player_185",_textPartIn] call dayz_rollingMessages;
 		};	
 	};
 };

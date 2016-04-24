@@ -1,5 +1,5 @@
 dir = "@DayZ_Epoch";
-name = "DayZ Epoch 1.0.5.2";
+name = "DayZ Epoch 1.0.6";
+picture = "z\addons\dayz_code\gui\loadingscreen.paa";
 actionName = "Website";
-picture = "dayz_logo_ca.paa";
 action = "http://www.dayzepoch.com";

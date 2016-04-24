@@ -115,7 +115,7 @@ fnc_snapDistanceCheck = {
 						_objectHelper setPosATL _distClosestPointFoundPos;
 					}; 
 					_objectHelper setDir _distClosestPointFoundDir;
-					waitUntil {sleep 0.1; !helperDetach};
+					waitUntil {uiSleep 0.1; !helperDetach};
 				};
 			} else {
 				_distClosestAttached = objNull; _distCheckAttached = 0; _distClosest = 10; _distClosestAttachedFoundPos = [];
@@ -151,11 +151,11 @@ fnc_snapDistanceCheck = {
 						_objectHelper setPosATL _distClosestPointFoundPos;
 					};
 					_objectHelper setDir _distClosestPointFoundDir;
-					waitUntil {sleep 0.1; !helperDetach};
+					waitUntil {uiSleep 0.1; !helperDetach};
 				};
 			};
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 };
 
@@ -183,7 +183,7 @@ fnc_initSnapTutorial = {
 			
 			//Delete on init
 			800 cutRsc ["Default", "PLAIN"];
-			sleep 0.1;
+			uiSleep 0.1;
 			
 			//Init Tutorial text
 			if (_bldTxtEnable) then {
@@ -232,7 +232,7 @@ switch (snapActionState) do {
 		[] spawn {
 		while {true} do {
 			if(!DZE_ActionInProgress || DZE_cancelBuilding) exitWith {call fnc_initSnapPointsCleanup;[0,0,0] call fnc_snapActionCleanup; ["",false] call fnc_initSnapTutorial; snapActionState = "OFF";};
-			sleep 2;
+			uiSleep 2;
 			};
 		};
 	};
@@ -242,7 +242,7 @@ switch (snapActionState) do {
 		[1,1,0] call fnc_snapActionCleanup;
 		call fnc_initSnapPoints;
 		call fnc_initSnapPointsNearby;
-		sleep 0.25;
+		uiSleep 0.25;
 		call fnc_snapDistanceCheck;
 	};
 	

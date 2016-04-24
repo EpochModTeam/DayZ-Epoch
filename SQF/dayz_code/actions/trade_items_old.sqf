@@ -1,7 +1,7 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_tradeCounter","_next_highest_bar","_third_highest_bar","_next_highest_conv","_third_highest_conv","_third_parts_out_raw","_third_parts_out","_remainder","_next_parts_out_raw","_next_parts_out","_activatingPlayer","_traderID","_total_trades"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _total_parts_out = 0;
@@ -35,7 +35,7 @@ _abort = false;
 
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
-	cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+	format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
@@ -45,13 +45,13 @@ for "_x" from 1 to _total_trades do {
 	_removed = 0;
 	_tradeCounter = _tradeCounter + 1;
 
-	// cutText ["Starting trade, stand still to complete.", "PLAIN DOWN"];
+	// "Starting trade, stand still to complete." call dayz_rollingMessages;
 	if(_total_trades == 1) then { 
-		cutText [format[(localize "str_epoch_player_105"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_105",_tradeCounter,_total_trades] call dayz_rollingMessages;
 	} else {
-		cutText [format[(localize "str_epoch_player_187"),_tradeCounter,_total_trades] , "PLAIN DOWN"];
+		format[localize "str_epoch_player_187",_tradeCounter,_total_trades] call dayz_rollingMessages;
 	};
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	
 	//_dis=20;
@@ -78,7 +78,7 @@ for "_x" from 1 to _total_trades do {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 
@@ -88,7 +88,7 @@ for "_x" from 1 to _total_trades do {
 			[objNull, player, rSwitchMove,""] call RE;
 			player playActionNow "stop";
 		};
-		cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
+		localize "str_epoch_player_106" call dayz_rollingMessages;
 	};
 
 	if (_finished) then {
@@ -114,10 +114,10 @@ for "_x" from 1 to _total_trades do {
 					// total of all parts
 					_total_parts_out = _total_parts_out + _qty_out;
 
-					cutText [format[(localize "str_epoch_player_186"),_qty_in,_textPartIn,_qty_out,_textPartOut], "PLAIN DOWN"];
+					format[localize "str_epoch_player_186",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 
 				} else {
-					cutText [format[(localize "str_epoch_player_183"),_textPartOut] , "PLAIN DOWN"];
+					format[localize "str_epoch_player_183",_textPartOut] call dayz_rollingMessages;
 					_abort = true;
 
 					// Return items taken
@@ -140,11 +140,11 @@ for "_x" from 1 to _total_trades do {
 
 		} else {
 			_needed =  _qty_in - _qty;
-			cutText [format[(localize "str_epoch_player_184"),_needed,_textPartIn] , "PLAIN DOWN"];
+			format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 		};
 	};
 	
-	sleep 1;
+	uiSleep 1;
 
 	if(_abort) exitWith {};
 };

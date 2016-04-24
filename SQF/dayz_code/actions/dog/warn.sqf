@@ -11,7 +11,9 @@ _handle setFSMVariable ["_watchDog",_watchDog];
 
 _warn = {
 	private ["_watchDog","_dog","_nearby","_senseSkill","_handle"];
-    _handle = _this select 0;
+	_handle = _this select 0;
+	_watchDog = _this select 1;
+	_dog = _this select 2;
 	while {_watchDog && alive _dog} do {
 		_watchDog = _handle getFSMVariable "_watchDog";
 		_senseSkill = _handle getFSMVariable "_senseSkill";
@@ -22,13 +24,13 @@ _warn = {
 				[_dog,"dog_growl",2,false] call dayz_zombieSpeak;
 			};
 		};
-		sleep 2;
+		uiSleep 2;
 	};
 };
 
 if (_watchDog) then {
 	_handle setFSMVariable ["_idleTime",5];
-	[_handle] spawn _warn;
+	[_handle,_watchDog,_dog] spawn _warn;
 } else {
 	_handle setFSMVariable ["_idleTime",1];
 };

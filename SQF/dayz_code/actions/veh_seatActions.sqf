@@ -1,6 +1,6 @@
 /*
-        Created exclusively for ArmA2:OA - DayZMod && DayZ Epoch. Script by icomrade.
-        permission is required to use, alter &&/|| distribute from the author || project leader.
+        Created exclusively for ArmA2:OA - DayZMod and DayZ Epoch. Script by icomrade.
+        permission is required to use, alter and/or distribute from the author or project leader.
 */
 private ["_array","_count","_action","_driver","_vehicle","_vehicleType","_emptySeat","_emptyGun"];
 _array = _this select 3;
@@ -16,7 +16,7 @@ switch _action do {
 	case "MoveToPilot": {
 		if (((_vehicle emptyPositions "Driver") == 0) && (!alive _driver)) then {
 			_driver action ["EJECT", _vehicle];
-			sleep 0.5; //wait for ejection
+			uiSleep 0.5; //wait for ejection
 		};
 		if ((_vehicle emptyPositions "Driver") > 0) then {
 			player action [_action, _vehicle];

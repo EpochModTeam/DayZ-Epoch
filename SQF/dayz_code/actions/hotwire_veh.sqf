@@ -1,11 +1,13 @@
 private ["_vehicle","_removed"];
 _vehicle = _this select 3;
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_32") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_32" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
+{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
+s_player_lockUnlockInside_ctrl = -1;
 
 _removed = ([player,"ItemHotwireKit",1] call BIS_fnc_invRemove);
 
@@ -23,9 +25,10 @@ if (_removed == 1) then {
 			};
 		};
 	} else {
-		cutText [(localize "str_epoch_player_33") , "PLAIN DOWN"];
+		localize "str_epoch_player_33" call dayz_rollingMessages;
 	};
 };
 
 s_player_lockUnlock_crtl = -1;
+s_player_lockUnlockInside_ctrl = -1;
 DZE_ActionInProgress = false;

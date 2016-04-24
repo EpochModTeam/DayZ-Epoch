@@ -1,4 +1,5 @@
-// Made for DayZ Epoch by vbawol 
+// Made for DayZ Epoch by vbawol
+// usage [["partinclassname",4]] call epoch_returnChange; 
 
 private ["_trade_total","_part_inWorth","_part_in_configClass","_total_currency","_part","_worth","_return_change","_total","_briefcase_100oz","_gold_10oz_a","_gold_10oz_b","_gold_10oz","_gold_1oz_a","_gold_1oz_b","_gold_1oz","_silver_10oz_a","_silver_10oz_b","_silver_10oz","_silver_1oz_a","_silver_1oz_b","_silver_1oz","_successful","_buyOrSell","_total_items"];
 _successful = false;

@@ -1,5 +1,5 @@
 class 29Rnd_30mm_AGS30 : CA_Magazine { 
-	scope = 2; 
+	scope = public; 
 	displayName = "HE Rounds"; 
 	model = "\z\addons\dayz_epoch\models\30mm_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_30mm_mag_ca.paa";
@@ -12,7 +12,7 @@ class 29Rnd_30mm_AGS30 : CA_Magazine {
 	weight = 16;
 };
 class 48Rnd_40mm_MK19 : CA_Magazine { 
-	scope = 2; 
+	scope = public; 
 	displayName = "Mk. 19 40mm"; 
 	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
@@ -26,7 +26,7 @@ class 48Rnd_40mm_MK19 : CA_Magazine {
 };
 class 2000Rnd_762x51_M134 : CA_Magazine { 
 	count = 2000; 
-	scope = 2; 
+	scope = public; 
 	displayName = "M134 7.62 Nato"; 
 	picture = "\z\addons\dayz_epoch\pictures\equip_m134_mag_ca.paa";
 	model = "\z\addons\dayz_epoch\models\m134_mag.p3d";
@@ -38,7 +38,7 @@ class 2000Rnd_762x51_M134 : CA_Magazine {
 	weight = 50;
 };
 class 100Rnd_127x99_M2 : CA_Magazine { 
-	scope = 2; 
+	scope = public; 
 	displayName = "M2 Machine Gun"; 
 	model = "\z\addons\dayz_epoch\models\50cal_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_50cal_mag_ca.paa";
@@ -53,7 +53,7 @@ class 100Rnd_127x99_M2 : CA_Magazine {
 	weight = 8;
 };
 class 50Rnd_127x107_DSHKM : CA_Magazine { 
-	scope = 2; 
+	scope = public; 
 	displayName = "DShKM"; 
 	picture = "\z\addons\dayz_epoch\pictures\equip_Dshkm_mag_ca.paa";
 	model = "\z\addons\dayz_epoch\models\dshkm_mag.p3d";

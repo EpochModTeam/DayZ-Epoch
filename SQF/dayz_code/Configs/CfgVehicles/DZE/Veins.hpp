@@ -1,5 +1,5 @@
 class Gold_Vein_DZE: MiningItems {
-	scope = 2;
+	scope = public;
 	destrType = "DestructBuilding";
 	cost = 100;
 	model="\z\addons\dayz_epoch\models\gold_vein.p3d";
@@ -20,7 +20,7 @@ class Gold_Vein_DZE: MiningItems {
 	};
 };
 class Silver_Vein_DZE: MiningItems {
-	scope = 2;
+	scope = public;
 	destrType = "DestructBuilding";
 	cost = 100;
 	model="\z\addons\dayz_epoch\models\silver_vein.p3d";
@@ -41,7 +41,7 @@ class Silver_Vein_DZE: MiningItems {
 	};
 };
 class Iron_Vein_DZE: MiningItems {
-	scope = 2;
+	scope = public;
 	destrType = "DestructBuilding";
 	cost = 100;
 	model="\z\addons\dayz_epoch\models\iron_vein.p3d";

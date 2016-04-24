@@ -49,14 +49,12 @@ if (_spawnDMG) then {
 	};
 };
 
-// TODO: check if uid already exists && if so increment by 1 && check again as soon as we find nothing continue.
-
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _characterID, _worldspace, [], _array, _fuel,_uid];
 diag_log ("HIVE: WRITE: "+ str(_key)); 
 _key call server_hiveWrite;
 
-PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
+dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 // Switched to spawn so we can wait a bit for the ID
 [_object,_uid,_fuel,_damage,_array,_characterID,_class] spawn {
@@ -75,7 +73,7 @@ PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 	// TODO: Needs major overhaul
 	while {_retry < 10} do {
 		
-		sleep 1;
+		uiSleep 1;
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
 		diag_log ("HIVE: WRITE: "+ str(_key));
@@ -105,7 +103,7 @@ PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
 		_selection = _x select 0;
 		_dam = _x select 1;
 		if (_selection in dayZ_explosiveParts && _dam > 0.8) then {_dam = 0.8};
-		[_object,_selection,_dam] call object_setFixServer;
+		[_object,_selection,_dam] call fnc_veh_setFixServer;
 	} count _array;
 	
 	_object setFuel _fuel;

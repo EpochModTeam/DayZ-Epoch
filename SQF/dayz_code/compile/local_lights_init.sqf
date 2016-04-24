@@ -103,7 +103,7 @@ if(!isDedicated)then{
 			//};
 		_plyPos = [Player] call FNC_getPos;
 		};	
-	sleep _slpTime;
+	uiSleep _slpTime;
 	};
 };
 //Attempt a server cleanup - Not detectable..
@@ -120,8 +120,8 @@ if(isServer)then{
 		_delQtyLights = 0;
 		{
 			if (local _x) then {
-				_x call dayz_perform_purge;
-				sleep 0.025;
+				_x call sched_co_deleteVehicle;
+				uiSleep 0.025;
 				_delQtyLights = _delQtyLights + 1;
 			} else {
 				if (!alive _x) then {
@@ -129,14 +129,14 @@ if(isServer)then{
 					if (count _pos > 0) then {
 						_nearby = {(isPlayer _x) && (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 420]);//Use calculated range here.
 						if (_nearby==0) then {
-							_x call dayz_perform_purge;
-							sleep 0.025;
+							_x call sched_co_deleteVehicle;
+							uiSleep 0.025;
 							_delQtyLights = _delQtyLights + 1;
 						};
 					};
 				};
 			};
-			sleep 0.001;
+			uiSleep 0.001;
 		} forEach _missonLights;
 		if (_delQtyLights > 0) then {
 			_qty = count _missonLights;
@@ -147,7 +147,7 @@ if(isServer)then{
 	
 	while{true}do{
 	[] spawn server_spawnCleanLightpoints;
-	sleep 30;
+	uiSleep 30;
 	};
 };
 */

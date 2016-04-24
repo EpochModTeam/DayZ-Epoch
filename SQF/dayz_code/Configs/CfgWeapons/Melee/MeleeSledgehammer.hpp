@@ -1,41 +1,34 @@
 class MeleeSledge: MeleeWeapon
+{
+	scope = public;
+
+	model="\z\addons\dayz_epoch\models\sledge_weaponized";
+	picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa"; // todo icon
+	displayName=$STR_EQUIP_NAME_SledgeHammer;
+	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
+	
+	magazines[]= {"Sledge_Swing"};
+	
+	droppeditem= "ItemSledge";
+	
+	class ItemActions
 	{
-		scope=2;
-		melee= "true";
-		autoreload=1;
-		magazineReloadTime=0;
-		model="\z\addons\dayz_epoch\models\sledge_weaponized";
-		picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa"; // todo icon
-		displayName=$STR_EQUIP_SLEDGE;
-		droppeditem= "ItemSledge";
-		magazines[]=
+		class Toolbelt
 		{
-			"sledge_swing"
-		};
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton",
-			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
-		};
-		class ItemActions
-		{
-			class Toolbelt
+			text=$STR_ACTIONS_2TB;
+			script="spawn player_addToolbelt;";
+			use[]=
 			{
-				text=$STR_EPOCH_PLAYER_296;
-				script="spawn player_addToolbelt;";
-				use[]=
-				{
-					"MeleeSledge"
-				};
-				output[]=
-				{
-					"ItemSledge"
-				};
+				"MeleeSledge"
+			};
+			output[]=
+			{
+				"ItemSledge"
 			};
 		};
-		class Library
-		{
-			libTextDesc=$STR_EQUIP_SLEDGE_DESC;
-		};
-		descriptionShort=$STR_EQUIP_SLEDGE_DESC;
 	};
+	class Library
+	{
+		libTextDesc=$STR_EQUIP_SLEDGE_DESC;
+	};
+};

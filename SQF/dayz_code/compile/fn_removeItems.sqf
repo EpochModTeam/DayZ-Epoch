@@ -1,10 +1,10 @@
 /*
 Description:
 Removes the items (magazines) from the player's inventory
-&& performs a double check for the required items.
+and performs a double check for the required items.
 
 Parameter(s):
-_this: <array> list of item names to be removed (can also be an sub-array with item name && quantity)
+_this: <array> list of item names to be removed (can also be an sub-array with item name and quantity)
 
 Returns:
 Boolean (true if all items have been removed from the player's inventory)
@@ -50,5 +50,5 @@ _tobe_removed_total = 0;
 if (_tobe_removed_total == _removed_total) exitWith { true };
 // missing parts
 { player addMagazine _x; } count _temp_removed_array;
-cutText [format[(localize "STR_EPOCH_ACTIONS_5"), _removed_total, _tobe_removed_total], "PLAIN DOWN"];
+format[localize "STR_EPOCH_PLAYER_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 false

@@ -14,7 +14,7 @@ _lights = ["a_fuelstation_sign.p3d","lampa_ind_zebr.p3d","lampa_ind.p3d","lampa_
 				
 			if (alive _x) then {
 					
-				_objName = _x call DZE_getModelName;
+				_objName = _x call fn_getModelName;
 
 				if (_objName in _lights) then {
 
@@ -44,7 +44,7 @@ _lp setVectorUp _vect;
 //_lp enableSimulation false;//Using this stops lights from illuminating for local player (not tried moving it to before parameters set) - Makes no difference to network broadcast, other players DO NOT see the object anyway
 //axeDiagLog = format["FN:LP NEW CREATE:BRIGHT:%3 | %1 for %2",_lp,player,_brt];
 //publicVariable "axeDiagLog";
-_lp
+true //return value isn't used, so return bool so engine doesn't complain
 };
 
 axe_lightPoint={
@@ -66,12 +66,7 @@ private["_plyr","_brtns","_lightPcnt","_target"];
 _plyr = _this select 0;
 _target = _this select 1;
 
-if(isNil "dayz_fullMoonNights")then{dayz_fullMoonNights = false;};
-if(dayz_fullMoonNights)then{
-_brtns = 0.024;
-}else{
-_brtns = 0.018;
-};
+_brtns = if (dayz_ForcefullmoonNights) then {0.024} else {0.018};
 _brtns = _brtns + ((_brtns/100) * ((_plyr distance _target)/15)); //Add percentage of brightness based on distance from player
 //Min / Max Levels
 //if (_brtns > 0.025)then{_brtns = 0.025;};
@@ -100,7 +95,7 @@ _nrTLs= _twrPos nearObjects ["#lightpoint",20];
 			}else{
 			deleteVehicle _x;
 			};
-		sleep .2;
+		uiSleep 0.2;
 		}count _nrTLs;
 		
 	}else{
@@ -112,7 +107,7 @@ _nrTLs= _twrPos nearObjects ["#lightpoint",20];
 			_a = (_twrPos select 0)+(_rad * cos(_ang));
 			_b = (_twrPos select 1)+(_rad * sin(_ang));
 			[_lCol,_lbrt,_lamb,[_a,_b,(_twrPos select 2) + 26],_ang,[0,0,-1]] call axe_newLightPoint;
-			sleep .4;
+			uiSleep 0.4;
 			};
 		};
 	};

@@ -66,11 +66,11 @@ _object setVariable ["ObjectUID", _uid,true];
 if (DZE_GodModeBase) then {
 	_object addEventHandler ["HandleDamage", {false}];
 }else{
-	_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
+	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 };
 // Test disabling simulation server side on buildables only.
 _object enableSimulation false;
 
-PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_object];
+dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 diag_log ("PUBLISH: " + str(_activatingPlayer) + " upgraded " + (_class) + " with ID " + str(_uid));

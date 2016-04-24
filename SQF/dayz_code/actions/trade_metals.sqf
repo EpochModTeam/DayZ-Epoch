@@ -1,6 +1,6 @@
 private ["_buy","_metals_conversion","_cancel"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_103") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 {player removeAction _x} count s_player_parts;s_player_parts = [];
@@ -20,7 +20,7 @@ _metals_conversion = [
 				
 } count _metals_conversion;
 
-_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false, "",""];
+_cancel = player addAction ["Cancel", "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false];
 s_player_parts set [count s_player_parts,_cancel];
 
 DZE_ActionInProgress = false;

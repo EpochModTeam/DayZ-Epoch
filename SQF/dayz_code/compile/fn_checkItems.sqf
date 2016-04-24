@@ -1,10 +1,10 @@
 /*
 Description:
-Checks whether the player has the required items (magazines) || not
-&& displays a message if an item is missing.
+Checks whether the player has the required items (magazines) or not
+and displays a message if an item is missing.
 
 Parameter(s):
-_this: <array> list of item names the player is required to have (can also be an sub-array with item name && quantity)
+_this: <array> list of item names the player is required to have (can also be an sub-array with item name and quantity)
 
 Returns:
 Boolean (true if the player has all required items)
@@ -39,7 +39,7 @@ _hasItems = true;
 		_missingQty = (_countIn - _qty);
 		_hasItems = false;
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-		cutText [format[(localize "STR_EPOCH_ACTIONS_12"), _missingQty, _textMissing], "PLAIN DOWN"];
+		format[localize "STR_EPOCH_ACTIONS_6",_missingQty,_textMissing] call dayz_rollingMessages;
 	};
 } forEach _items;
 _hasItems

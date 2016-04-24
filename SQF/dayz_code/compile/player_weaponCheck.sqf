@@ -1,7 +1,7 @@
-private ["_currentObjects","_newObjects","_checkObjects","_type","_qtyNow","_qtyBefore","_change"];
+private ["_newObjects","_change"];
 //_newObjects = [_previous,weapons player] call player_weaponCheck;
-_currentObjects = 	_this select 0;
-_checkObjects = 	_this select 1;
+_currentObjects = _this select 0;
+_checkObjects = _this select 1;
 
 _change = false;
 
@@ -10,8 +10,8 @@ _newObjects = [];
 {
 	if (!(_x in _newObjects)) then {
 		_type = _x;
-		_qtyNow = 		{_x == _type} count _checkObjects;
-		_qtyBefore = 	{_x == _type} count _currentObjects;
+		_qtyNow = {_x == _type} count _checkObjects;
+		_qtyBefore = {_x == _type} count _currentObjects;
 		if (_qtyNow != _qtyBefore) then {
 			_change = true;
 		};
@@ -24,8 +24,8 @@ _newObjects = [];
 {
 	if (!(_x in _newObjects)) then {
 		_type = _x;
-		_qtyNow = 		{_x == _type} count _checkObjects;
-		_qtyBefore = 	{_x == _type} count _currentObjects;
+		_qtyNow = {_x == _type} count _checkObjects;
+		_qtyBefore = {_x == _type} count _currentObjects;
 		if (_qtyNow != _qtyBefore) then {
 			_change = true;
 		};
@@ -33,4 +33,4 @@ _newObjects = [];
 	};
 } forEach _checkObjects;
 
-_change;
+_change

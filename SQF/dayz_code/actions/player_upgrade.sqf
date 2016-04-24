@@ -4,7 +4,7 @@
 */
 private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_52") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_upgrade_build;
@@ -53,7 +53,7 @@ if(_IsNearPlot == 0) then {
 };
 
 // exit if not allowed due to plot pole
-if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; cutText [format[(localize "str_epoch_player_157"),_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; format[localize "str_epoch_player_157",_needText,_distance] call dayz_rollingMessages; };
 
 // get cursortarget from addaction
 _obj = _this select 3;
@@ -64,7 +64,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];};
+if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
 
 // Get classname
 _classname = typeOf _obj;
@@ -98,7 +98,7 @@ if ((count _upgrade) > 0) then {
 	} forEach _requirements;
 	
 	if (_proceed) then {
-		[1,1] call dayz_HungerThirst;
+		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		player playActionNow "Medic";
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 	
@@ -159,9 +159,9 @@ if ((count _upgrade) > 0) then {
 				
 				_objectCharacterID = _combination;
 				
-				cutText [format[(localize "str_epoch_player_158"),_combination,_text], "PLAIN DOWN", 5];
+				format[localize "str_epoch_player_158",_combination,_text] call dayz_rollingMessages;
 			} else {	
-				cutText [format[(localize "str_epoch_player_159"),_text], "PLAIN DOWN", 5];
+				format[localize "str_epoch_player_159",_text] call dayz_rollingMessages;
 			};
 
 			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
@@ -172,16 +172,16 @@ if ((count _upgrade) > 0) then {
 		} else {
 		
 			{player addMagazine _x;} count _temp_removed_array;
-			cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+			format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 		
 		};
 	} else {
 		_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-		cutText [format[(localize "str_epoch_player_146"),_missingQty, _textMissing], "PLAIN DOWN"];
+		format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call dayz_rollingMessages;
 	};
 
 } else {
-	cutText [(localize "str_epoch_player_82"), "PLAIN DOWN"];
+	localize "str_epoch_player_82" call dayz_rollingMessages;
 };
 
 DZE_ActionInProgress = false;

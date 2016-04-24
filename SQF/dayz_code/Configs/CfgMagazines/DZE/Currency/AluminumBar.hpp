@@ -1,5 +1,5 @@
 class ItemAluminumBar: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Aluminum";
@@ -9,7 +9,7 @@ class ItemAluminumBar: CA_Magazine {
 
 };
 class ItemAluminumBar10oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "10oz Aluminum";

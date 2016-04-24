@@ -4,7 +4,7 @@
 */
 private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_objectCharacterID"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_52") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_maint_build;
@@ -19,7 +19,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_maint_build = -1; cutText [(localize "str_epoch_player_50"), "PLAIN DOWN"];};
+if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_maint_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
 
 // Get classname
 _classname = typeOf _obj;
@@ -48,7 +48,7 @@ _proceed = true;
 } forEach _requirements;
 
 if (_proceed) then {
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -71,28 +71,22 @@ if (_proceed) then {
 				if(_num_removed >= 1) then {
 					_temp_removed_array set [count _temp_removed_array,_x];
 				};
-			};
-	
+			};	
 		} forEach magazines player;
-
 	} forEach _requirements;
 
 	// all parts removed proceed
 	if (_tobe_removed_total == _removed_total) then {
-
-		cutText [format[(localize "STR_EPOCH_ACTIONS_4"), 1], "PLAIN DOWN", 5];
+		format[localize "STR_EPOCH_ACTIONS_4",1] call dayz_rollingMessages;
 		PVDZE_maintainArea = [player,2,_obj];
 		publicVariableServer "PVDZE_maintainArea";
-
-	} else {
-	
+	} else {	
 		{player addMagazine _x;} count _temp_removed_array;
-		cutText [format[(localize "str_epoch_player_145"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
-	
+		format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;	
 	};
 } else {
 	_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-	cutText [format[(localize "str_epoch_player_146"),_missingQty, _textMissing], "PLAIN DOWN"];
+	format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call dayz_rollingMessages;
 };
 
 

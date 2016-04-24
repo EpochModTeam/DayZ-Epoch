@@ -5,7 +5,7 @@
 private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_removed"];
 //check if can pitch here
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_108") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_108" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 //disableSerialization;
@@ -29,7 +29,7 @@ _isOk = true;
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
-if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"pitch"] , "PLAIN DOWN"]};
+if (!_hastentitem) exitWith {format[localize "str_player_31",_text,"pitch"] call dayz_rollingMessages;};
 
 // blocked
 // Allow on concrete since we dont force to ground.
@@ -52,17 +52,17 @@ _counter = 0;
 while {_isOk} do {
 	
 	if(_counter == 0) then {
-		cutText [(localize "str_epoch_player_109"), "PLAIN DOWN"];
-		sleep 5; 
+		localize "str_epoch_player_109" call dayz_rollingMessages;
+		uiSleep 5; 
 		_location1 = getPosATL player;
-		sleep 5;
+		uiSleep 5;
 		_location2 = getPosATL player;
 	
 		if(_location1 distance _location2 < 0.1) exitWith {
 			
-			cutText [(localize "str_epoch_player_109"), "PLAIN DOWN"];
+			localize "str_epoch_player_109" call dayz_rollingMessages;
 			_location3 = getPosATL player;
-			sleep 5;
+			uiSleep 5;
 			_location4 = getPosATL player;
 
 			if(_location3 distance _location4 > 0.1) exitWith {
@@ -111,7 +111,7 @@ if(!_cancel) then {
 		//remove safe
 
 		_hastentitem = _this in magazines player;
-		if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"pitch"] , "PLAIN DOWN"]};
+		if (!_hastentitem) exitWith {format[localize "str_player_31",_text,"pitch"] call dayz_rollingMessages;};
 
 		_removed = ([player,_item] call BIS_fnc_invRemove);
 
@@ -120,10 +120,10 @@ if(!_cancel) then {
 			//call dayz_forceSave;
 
 			_dir = round(direction player);	
-			[1,1] call dayz_HungerThirst;
+			["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 			//wait a bit
 			player playActionNow "Medic";
-			sleep 1;
+			uiSleep 1;
 			[player,"tentunpack",0,false] call dayz_zombieSpeak;
 	
 			[player,50,true,(getPosATL player)] spawn player_alertZombies;
@@ -140,7 +140,7 @@ if(!_cancel) then {
 				_location = player modelToWorld [_offset_x,_offset_y,_offset_z];
 			};
 
-			sleep 5;
+			uiSleep 5;
 			//place tent (local)
 			_tent = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
 			_tent setdir _dir;
@@ -159,19 +159,18 @@ if(!_cancel) then {
 			_tent setVariable ["CharacterID",_combination,true];
 			_tent setVariable ["OEMPos",_location,true];
 
-			//["PVDZE_obj_Publish",[_combination,_tent,[_dir,_location],"VaultStorageLocked"]] call callRpcProcedure;
-			PVDZE_obj_Publish = [_combination,_tent,[_dir,_location],"VaultStorageLocked"];
-			publicVariableServer  "PVDZE_obj_Publish";
+			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location],[]];
+			publicVariableServer  "PVDZ_obj_Publish";
 	
-			cutText [format[(localize "str_epoch_player_179"),_combination], "PLAIN DOWN", 5];
+			format[localize "str_epoch_player_179",_combination] call dayz_rollingMessages;
 		};
 	
 	} else {
-		cutText [(localize "str_epoch_player_110"), "PLAIN DOWN"];
+		localize "str_epoch_player_110" call dayz_rollingMessages;
 	};
 
 } else {
-	cutText [(localize "str_epoch_player_111"), "PLAIN DOWN"];
+	localize "str_epoch_player_111" call dayz_rollingMessages;
 };
 
 DZE_ActionInProgress = false;

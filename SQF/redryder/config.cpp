@@ -12,6 +12,11 @@
 #define true 1
 #define false 0
 
+// type scope
+#define private 0
+#define protected 1
+#define public 2
+
 class CfgPatches
 {
 	class RedRyder
@@ -19,6 +24,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"RedRyder"};
 		requiredVersion = 1.00000;
+		requiredAddons[] = {};
 	};
 };
 class CfgModels
@@ -35,11 +41,11 @@ class CfgAmmo
 		model = "z\addons\redryder\models\BB_Round.p3d";
 		simulation = shotShell;
 		soundHit[] = {0, 1};
-		hit = 3.7;
+		hit = 4.5;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		visibleFire = 10;
-		audibleFire = 10;
+		audibleFire = 0.5;
 		visibleFireTime = 3;
 		deflecting = 5;
 		airFriction = -0.001064;
@@ -55,16 +61,17 @@ class CfgMagazines
 	class CA_Magazine;
 	class 350Rnd_BB_Magazine : CA_Magazine 
 	{   
-		scope = 2;
+		scope = public;
 		model = "z\addons\redryder\models\bb_magazine.p3d";	
 		picture = "z\addons\redryder\textures\bb_magazine_picture.paa"; 
-		displayName = "350 Count 177 Cal. BBs";
+		displayName = "350 Count .177 BBs";
 		count = 350;
 		ammo = 177_BB;
 		initSpeed = 175;
 		sound[] = {"z\addons\redryder\M9SD_S1", db + 8, 1,60}; 
 		reloadMagazineSound[] = {"Ca\sounds\Weapons\rifles\M1014-reload", db - 40, 1, 20};
 		descriptionShort = "350 Zinc Coated .177, 4.5mm BBs";
+		weight = 0.2;
 	};
 };
 class CfgWeapons
@@ -72,7 +79,7 @@ class CfgWeapons
 	class Default {};
 	class Rifle : Default {};
 	class RedRyder : Rifle {
-		scope = 2;
+		scope = public;
 		model = "z\addons\redryder\models\RedRyder.p3d"; 
 		displayName = "RedRyder BB Gun";
 		displayNameMagazine = "BB";
@@ -80,7 +87,9 @@ class CfgWeapons
 		recoil = "recoil_single_pistol_2outof3";
 		recoilProne = "recoil_single_pistol_prone_2outof3";
 		reloadTime = 0.45;
-		sound[] = {"z\addons\redryder\RedRyder\M9SD_S1", db + 8, 1, 60}; 
+		sound[] = {"\z\addons\redryder\M9SD_S1", db + 8, 1, 60}; 
+		autoFire = 0;
+		dexterity = 0.4;
 		dispersion = 0.00045;
 		minRange = 0;
 		minRangeProbab = 0.30;
@@ -89,6 +98,6 @@ class CfgWeapons
 		maxRange = 75;
 		maxRangeProbab = 0.05;
 		picture = "z\addons\redryder\textures\redryder_picture.paa"; 
-		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\M24.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton", "Ca\weapons\data\Anim\M24.rtm"};
 	};
 };

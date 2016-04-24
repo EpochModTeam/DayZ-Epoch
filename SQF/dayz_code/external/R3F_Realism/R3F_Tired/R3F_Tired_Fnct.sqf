@@ -23,9 +23,10 @@ R3F_TIRED_FNCT_Voile_Noir = {
 	
 };
 R3F_TIRED_FNCT_DoBlackVanish = {
-	[player,0.1] call fnc_usec_damageUnconscious;
-	_refObj = player;
-	[_refObj,"scream",3,false] call dayz_zombieSpeak;
-	cutText ["You are overburdened.", "PLAIN DOWN"];
+	if (!r_fracture_legs) then {
+		player setHit["legs",1];
+		r_fracture_legs = true;
+	};
+	localize "STR_R3F_WEIGHT_Overburdened" call dayz_rollingMessages;
 };
 

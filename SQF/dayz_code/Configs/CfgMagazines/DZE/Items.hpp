@@ -1,6 +1,6 @@
 // For Chainsaw
 class ItemMixOil : CA_Magazine {
-	scope = 2;
+	scope = public;
 	displayName = "2-Stroke Engine Oil";
 	model = "\z\addons\dayz_epoch\models\oilmix.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oilmix_CA.paa";
@@ -21,7 +21,7 @@ class ItemMixOil : CA_Magazine {
 	};
 };
 class CSGAS : CA_Magazine {
-	scope = 2;
+	scope = public;
 	type = VSoft;
 	displayName = "Gas";
 	descriptionShort = "Gas for Chainsaw";
@@ -62,7 +62,7 @@ class CSGAS : CA_Magazine {
 	};
 };
 class ItemJerryMixed: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Mixed Gas Full";
@@ -82,7 +82,7 @@ class ItemJerryMixed: CA_Magazine {
 	};
 };
 class ItemJerryMixed4: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Mixed Gas 16L";
@@ -102,7 +102,7 @@ class ItemJerryMixed4: CA_Magazine {
 	};
 };
 class ItemJerryMixed3: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Mixed Gas 12L";
@@ -122,7 +122,7 @@ class ItemJerryMixed3: CA_Magazine {
 	};
 };
 class ItemJerryMixed2: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Mixed Gas 8L";
@@ -142,7 +142,7 @@ class ItemJerryMixed2: CA_Magazine {
 	};
 };
 class ItemJerryMixed1: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Mixed Gas 4L";
@@ -164,7 +164,7 @@ class ItemJerryMixed1: CA_Magazine {
 
 // Vehicle upgrade parts
 class ItemORP: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_ORP;
@@ -181,7 +181,7 @@ class ItemORP: CA_Magazine {
 	};
 };
 class ItemAVE: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_AVE;
@@ -198,7 +198,7 @@ class ItemAVE: CA_Magazine {
 	};
 };
 class ItemLRK: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_LRK;
@@ -215,7 +215,7 @@ class ItemLRK: CA_Magazine {
 	};
 };
 class ItemTNK: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_TNK;
@@ -232,7 +232,7 @@ class ItemTNK: CA_Magazine {
 	};
 };
 class ItemARM: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_ARM;
@@ -251,7 +251,7 @@ class ItemARM: CA_Magazine {
 
 // Documents
 class ItemDocument: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Document";
@@ -273,7 +273,7 @@ class ItemDocument: CA_Magazine {
 	};
 };
 class ItemPlotDeed: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Plot Deed"; // TODO: localize
@@ -294,7 +294,7 @@ class ItemPlotDeed: CA_Magazine {
 	};
 };
 class ItemLetter: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Letter";
@@ -304,7 +304,7 @@ class ItemLetter: CA_Magazine {
 	weight = 0.1;
 };
 class ItemBook1: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Romance Novel";
@@ -314,7 +314,7 @@ class ItemBook1: CA_Magazine {
 	weight = 0.1;
 };
 class ItemBook2: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Romance Novel";
@@ -324,7 +324,7 @@ class ItemBook2: CA_Magazine {
 	weight = 0.1;
 };
 class ItemBook3: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Book";
@@ -334,7 +334,7 @@ class ItemBook3: CA_Magazine {
 	weight = 0.1;
 };
 class ItemBook4: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Book";
@@ -344,7 +344,7 @@ class ItemBook4: CA_Magazine {
 	weight = 0.1;
 };
 class ItemNewspaper: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Torn Newspaper";
@@ -361,7 +361,7 @@ class ItemNewspaper: CA_Magazine {
 	};
 };
 class ItemDocumentRamp: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Wood Ramp";
@@ -382,7 +382,7 @@ class ItemDocumentRamp: CA_Magazine {
 };
 
 class ItemHotwireKit: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Hotwire kit";
@@ -394,7 +394,7 @@ class ItemHotwireKit: CA_Magazine {
 
 class ItemBloodbag: CA_Magazine
 {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "$STR_EQUIP_NAME_16";

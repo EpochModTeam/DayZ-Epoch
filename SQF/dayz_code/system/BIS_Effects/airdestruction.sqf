@@ -31,8 +31,9 @@ _tv=11;
 
 //Remove weapons/ammo to prevent explosion. Script will create its own explosions (doesnt work?)
 removeallweapons _v;
-
-if (local _v) then {_expl=createVehicle ["HelicopterExploSmall", (getPosATL _v), [], 0, "CAN_COLLIDE"];};
+if((local _v) AND (_v isKindOf"Air") )then{
+	_expl=createVehicle["HelicopterExploSmall",(getPosATL _v),[],0,"CAN_COLLIDE"];
+};
 
 if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
 while {_i <1200 && ((velocity _v select 2)<-20 || (getPosATL _v select 2)>8) && !(alive _v) && !(isnull _v) && (getPosATL _v select 2)>1} do
@@ -42,7 +43,7 @@ if (_tv>2) then {_dr=1/_tv} else {_dr=1};
 _fl setDropInterval _dr;
 _sm setDropInterval _dr;
 _i=_i+1;
-sleep 0.2;
+uiSleep 0.2;
 };
 }; // end of dedicated check
 
@@ -73,7 +74,7 @@ if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
 	_splash setparticlecircle [2,[0,3,15]];
 	_splash setDropInterval 0.002;
 
-	sleep 0.2;
+	uiSleep 0.2;
 	deletevehicle _wave;deletevehicle _splash;
 }; // end of dedicated check
          /*
@@ -92,7 +93,7 @@ if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
 				clearvehicleinit _v;
 				deleteVehicle _v;
 				_v =(_wreck) createvehicle _pos;
-				{_x moveincargo _v} count _crw;
+				{_x moveincargo _v} foreach _crw;
 				_v setVectorDirAndUp [_dir,_vecUp];
 				_v setFuel 0;
 				_v setdamage 0;
@@ -112,7 +113,7 @@ else
 		_velz=velocity _v select 2;
 		if (_velz>1) then {_v setvelocity [velocity _v select 0,velocity _v select 1,0]};
 		_expl = createVehicle ["HelicopterExploBig", [_pos select 0,_pos select 1,(_pos select 2) + 1], [], 0, "CAN_COLLIDE"];
-		sleep 0.05;
+		uiSleep 0.05;
                 /*
 		_wreck=GetText (configFile >> "CfgVehicles" >> (typeof _v) >> "wreck");
 		if (_wreck!="") then
@@ -126,8 +127,8 @@ else
 				clearvehicleinit _v;
 				deleteVehicle _v;
 				_v =(_wreck) createvehicle _pos;
-				{_x moveincargo _v} count _crw;
-				//sleep 0.05;
+				{_x moveincargo _v} foreach _crw;
+				//uiSleep 0.05;
 				_v setvelocity _vel;
 				//_v setPos _pos;
 				_v setvectordir (_dir);

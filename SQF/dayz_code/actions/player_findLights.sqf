@@ -13,7 +13,7 @@ _findNearestlight = [];
 			
 		if (alive _x) then {
 				
-			_objName = _x call DZE_getModelName;
+			_objName = _x call fn_getModelName;
 
 			if (_objName in _lights) then { 
 				_findNearestlight set [(count _findNearestlight),_x];

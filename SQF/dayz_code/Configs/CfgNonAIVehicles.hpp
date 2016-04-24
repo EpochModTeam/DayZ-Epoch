@@ -35,27 +35,27 @@ class CfgNonAIVehicles {
 	
 	class StreetLamp_BaseWeakYellow : StreetLamp {
 		brightness = 0.3;
-		scope = 2;
+		scope = public;
 	};
 	
 	class StreetLamp_BaseMediumOrange : StreetLamp {
 		brightness = 0.3;
-		scope = 2;
+		scope = public;
 	};
 	
 	class StreetLamp_BaseMediumPale : StreetLamp {
 		brightness = 0.3;
-		scope = 2;
+		scope = public;
 	};
 	
 	class StreetLamp_BaseStrongPale : StreetLamp {
 		brightness = 0.3;
-		scope = 2;
+		scope = public;
 	};
 	
 	class Land_Lamp_Small_EP1 : StreetLamp {
 		brightness = 0;
-		scope = 2;
+		scope = public;
 		class HitPoints {
 			class HitBulb {
 				armor = 1;
@@ -80,7 +80,7 @@ class CfgNonAIVehicles {
 	
 	class Land_Lamp_Street1_EP1 : StreetLamp {
 		brightness = 0;
-		scope = 2;
+		scope = public;
 		class HitPoints {
 			class HitBulb {
 				armor = 1;
@@ -105,7 +105,7 @@ class CfgNonAIVehicles {
 	
 	class Land_Lamp_Street2_EP1 : StreetLamp {
 		brightness = 0;
-		scope = 2;
+		scope = public;
 		class HitPoints {
 			class HitBulb {
 				armor = 1;
@@ -130,7 +130,7 @@ class CfgNonAIVehicles {
 	
 	class Land_Lampa_Ind_EP1 : StreetLamp {
 		brightness = 0;
-		scope = 2;
+		scope = public;
 		class HitPoints {
 			class HitBulb {
 				armor = 1;
@@ -155,7 +155,7 @@ class CfgNonAIVehicles {
 	
 	class Land_PowLines_Conc2L_EP1 : StreetLamp {
 		brightness = 0;
-		scope = 2;
+		scope = public;
 		class HitPoints {
 			class HitBulb {
 				armor = 1;
@@ -179,7 +179,7 @@ class CfgNonAIVehicles {
 	};
 	
 	class Land_lampa_sidl : StreetLamp {
-		scope = 2;
+		scope = public;
 		model = "\ca\buildings\Misc\lampa_sidl";
 		class HitPoints {
 			class HitBulb {
@@ -204,7 +204,7 @@ class CfgNonAIVehicles {
 	};
 	
 	class Land_lampa_sidl_2 : StreetLamp {
-		scope = 2;
+		scope = public;
 		model = "\ca\buildings\Misc\lampa_sidl_2";
 		class HitPoints {
 			class HitBulb {
@@ -229,7 +229,7 @@ class CfgNonAIVehicles {
 	};
 	
 	class Land_lampa_sidl_3 : StreetLamp {
-		scope = 2;
+		scope = public;
 		model = "\ca\buildings\Misc\lampa_sidl_3";
 		class HitPoints {
 			class HitBulb {
@@ -254,7 +254,7 @@ class CfgNonAIVehicles {
 	};
 	
 	class Land_lampa_ind : StreetLamp {
-		scope = 2;
+		scope = public;
 		model = "\ca\buildings\Misc\lampa_ind";
 		class HitPoints {
 			class HitBulb {
@@ -279,7 +279,7 @@ class CfgNonAIVehicles {
 	};
 	
 	class Land_lampa_ind_zebr : StreetLamp {
-		scope = 2;
+		scope = public;
 		model = "\ca\buildings\Misc\lampa_ind_zebr";
 		class HitPoints {
 			class HitBulb {

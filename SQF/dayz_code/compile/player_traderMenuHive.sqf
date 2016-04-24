@@ -45,7 +45,7 @@ TraderDialogLoadItemList = {
 	lbClear TraderDialogItemList;
 	_item_list = [];
 	{
-		private ["_header", "_item", "_name", "_type", "_textPart", "_qty", "_buy", "_bqty", "_bname", "_btype", "_btextCurrency", "_sell", "_sqty", "_sname", "_stype", "_stextCurrency", "_order", "_order", "_afile", "_File", "_count", "_bag", "_bagclass", "_index", "_image"];
+		private ["_header", "_item", "_name", "_type", "_textPart", "_qty", "_buy", "_bqty", "_bname", "_btype", "_btextCurrency", "_sell", "_sqty", "_sname", "_stype", "_stextCurrency", "_order", "_order", "_afile", "_File", "_count", "_bag", "_bagclass", "_index", "_image", "_ignore"];
 		_header = _x select 0; // "TRD"
 		_item = _x select 1;
 		_name = _item select 0;
@@ -61,6 +61,12 @@ TraderDialogLoadItemList = {
 				_type = "CfgWeapons";
 			};
 		};
+		
+		_ignore = false;
+		if (dayz_classicBloodBagSystem && _name in dayz_typedBags) then {
+			if (_name == "bloodBagONEG") then {_name = "ItemBloodbag";} else {_ignore = true;};
+		};
+		
 		// Display Name of item
 		_textPart =	getText(configFile >> _type >> _name >> "displayName");
 
@@ -142,27 +148,29 @@ TraderDialogLoadItemList = {
 			_count = {_x == _name} count weapons player;
 		};
 
-		_index = lbAdd [TraderDialogItemList, format["%1 (%2)", _textPart, _name]];
+		if (!_ignore) then {
+			_index = lbAdd [TraderDialogItemList, format["%1 (%2)", _textPart, _name]];
 
-		if (_count > 0) then {
-			lbSetColor [TraderDialogItemList, _index, [0, 1, 0, 1]];
+			if (_count > 0) then {
+				lbSetColor [TraderDialogItemList, _index, [0, 1, 0, 1]];
+			};
+
+			_image = getText(configFile >> _type >> _name >> "picture");
+			lbSetPicture [TraderDialogItemList, _index, _image];
+
+			_item_list set [count _item_list, [
+				_name,
+				_textPart,
+				_bqty,
+				_bname,
+				_btextCurrency,
+				_sqty,
+				_sname,
+				_stextCurrency,
+				_header,
+				_File
+			]];
 		};
-
-		_image = getText(configFile >> _type >> _name >> "picture");
-		lbSetPicture [TraderDialogItemList, _index, _image];
-
-		_item_list set [count _item_list, [
-			_name,
-			_textPart,
-			_bqty,
-			_bname,
-			_btextCurrency,
-			_sqty,
-			_sname,
-			_stextCurrency,
-			_header,
-			_File
-		]];
 	} forEach PVDZE_plr_TradeMenuResult;
 	TraderItemList = _item_list;
 };
@@ -171,7 +179,7 @@ TraderDialogShowPrices = {
 	private ["_index", "_item"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {};
-	while {count TraderItemList < 1} do { sleep 1; };
+	while {count TraderItemList < 1} do { uiSleep 1; };
 	_item = TraderItemList select _index;
 
 	_qty = {_x == (_item select 3)} count magazines player;
@@ -193,7 +201,7 @@ TraderDialogBuy = {
 	private ["_index", "_item", "_data"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {
-		cutText [(localize "str_epoch_player_6"), "PLAIN DOWN"];
+		localize "str_epoch_player_6" call dayz_rollingMessages;
 	};
 	_item = TraderItemList select _index;
 	_data = [_item select 0, _item select 3, 1, _item select 2, "buy", _item select 4, _item select 1, _item select 8];
@@ -205,7 +213,7 @@ TraderDialogSell = {
 	private ["_index", "_item", "_data"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {
-		cutText [(localize "str_epoch_player_6"), "PLAIN DOWN"];
+		localize "str_epoch_player_6" call dayz_rollingMessages;
 	};
 	_item = TraderItemList select _index;
 	_data = [_item select 6, _item select 0, _item select 5, 1, "sell", _item select 1, _item select 7, _item select 8];

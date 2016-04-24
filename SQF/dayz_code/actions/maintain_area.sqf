@@ -1,7 +1,7 @@
-//Code developed by Axe Cop - Massiv improvments && performance tunes by Skaronator
+//Code developed by Axe Cop - Massiv improvments and performance tunes by Skaronator
 private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_uniqueID","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
 
-if (DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_ACTIONS_2") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_maintain_area;
@@ -28,7 +28,7 @@ _objects = _objects_filtered;
 _count = count _objects;
 
 if (_count == 0) exitWith {
-	cutText [format[(localize "STR_EPOCH_ACTIONS_22"), _count], "PLAIN DOWN"];
+	format[localize "STR_EPOCH_ACTIONS_22",_count] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 	s_player_maintain_area = -1;
 	s_player_maintain_area_preview = -1;
@@ -96,16 +96,16 @@ switch _option do {
 
 			// all required items removed from player gear
 			if (_tobe_removed_total == _removed_total) then {
-				cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];
+				format[localize "STR_EPOCH_ACTIONS_4",_count] call dayz_rollingMessages;
 				PVDZE_maintainArea = [player,1,_target];
 				publicVariableServer "PVDZE_maintainArea";	
 			} else {
 				{player addMagazine _x;} count _temp_removed_array;
-				cutText [format[(localize "STR_EPOCH_ACTIONS_5"),_removed_total,_tobe_removed_total], "PLAIN DOWN"];
+				format[localize "STR_EPOCH_PLAYER_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 			};
 		} else {
 			_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-			cutText [format[(localize "STR_EPOCH_ACTIONS_6"), _missingQty, _textMissing], "PLAIN DOWN"];
+			format[localize "STR_EPOCH_ACTIONS_6",_missingQty,_textMissing] call dayz_rollingMessages;
 		};
 	};
 	case "preview": {
@@ -119,7 +119,7 @@ switch _option do {
 			};
 			_cost = _cost + (str(_countIn) + " of " + _itemText);
 		} count _requirements;
-		cutText [format[(localize "STR_EPOCH_ACTIONS_7"), _count, _cost], "PLAIN DOWN"];
+		format[localize "STR_EPOCH_ACTIONS_7",_count,_cost] call dayz_rollingMessages;
 	};
 };
 

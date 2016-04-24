@@ -50,6 +50,7 @@ while {1 == 1} do {
 
 			//diag_log ("EVENTS: Local Time is: " + _datestr);
 			{
+				if (!EpochUseEvents) exitWith {};
 				if([[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4)],_date] call epoch_eventIsAny) then {
 					diag_log ("RUNNING EVENT: " + (_x select 5) + " on " + _datestr);
 					_handle = [] execVM "\z\addons\dayz_server\modules\" + (_x select 5) + ".sqf";
@@ -57,5 +58,5 @@ while {1 == 1} do {
 			} count EpochEvents;
 		};
 	};
-	sleep 10;
+	uiSleep 10;
 };

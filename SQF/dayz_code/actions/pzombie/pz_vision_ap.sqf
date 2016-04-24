@@ -25,4 +25,4 @@ if(_NVOn == "ON") then {
 } else {
 	player setVariable ["NV", ["ON", _newap]];
 };
-cutText [format["%1 %2","NV",_newap], "PLAIN DOWN"];
+format["%1 %2","NV",_newap] call dayz_rollingMessages;

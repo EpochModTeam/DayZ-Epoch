@@ -23,9 +23,10 @@ if(_NVOn == "ON") exitwith
 	player setvariable ["NV",["OFF",_oldAperture]];
 	s_pz_player1 = player addAction ["Vision", "\z\addons\dayz_code\actions\pzombie\pz_vision.sqf", [], 0, false, true, "nightVision", "_this == _target"];
 };
-
-ppEffectDestroy ppColor;
-ppEffectDestroy ppBlur;
+if (!isnil "ppColor") then {
+	ppEffectDestroy ppColor;
+	ppEffectDestroy ppBlur;
+};
 
 ppColor = ppEffectCreate ["ColorCorrections", 1999];  
 ppColor ppEffectEnable true;  
@@ -50,7 +51,7 @@ while { aperture < _oldAperture } do
 {
 	aperture = aperture + 0.0005;
 	setAperture aperture;
-	sleep 0.001;
+	uiSleep 0.001;
 };
 
 player setVariable ["NV", ["ON", _oldAperture]];

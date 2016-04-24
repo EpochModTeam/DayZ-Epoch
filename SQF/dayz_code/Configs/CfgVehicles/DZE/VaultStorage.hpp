@@ -1,7 +1,7 @@
 class VaultStorage: Land_A_tent {
 	placement = "vertical";
 	vehicleClass = "Survival";
-	displayName = "Safe";
+	displayName = $STR_EPOCH_SAFE;
 	model = "\z\addons\dayz_epoch\models\safe.p3d";
 	destrType = "DestructNo";
 	armor = 800;
@@ -14,7 +14,7 @@ class VaultStorage: Land_A_tent {
 class VaultStorageLocked: Land_A_tent {
 	placement = "vertical";
 	vehicleClass = "Survival";
-	displayName = "Locked Safe";
+	displayName = $STR_EPOCH_SAFE_LOCKED;
 	model = "\z\addons\dayz_epoch\models\safe.p3d";
 	destrType = "DestructNo";
 	armor = 800;
@@ -28,8 +28,8 @@ class VaultStorageLocked: Land_A_tent {
 	nounderground = 0;
 };
 
-class WeaponHolder_ItemVault: WeaponHolder {
-	scope = 2;
-	displayName = "Safe";
+class WeaponHolder_ItemVault: WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EPOCH_SAFE;
 	seedItem = "ItemVault";
 };

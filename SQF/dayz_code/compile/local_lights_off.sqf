@@ -31,7 +31,7 @@ _objHouses = nearestObjects [_nrstTrig, ["House"], _hsRange];
 				_objHouse animate ["Lights_1",1];
 				};
 			_sleeptime=(random 100)/100;
-			sleep _sleeptime;
+			uiSleep _sleeptime;
 			};
 		if(_hasLight)then{deleteVehicle _animlightpoint;};
 		_objHouse animate ["Lights_1",0];

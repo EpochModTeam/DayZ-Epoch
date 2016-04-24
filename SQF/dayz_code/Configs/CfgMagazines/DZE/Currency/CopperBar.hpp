@@ -1,5 +1,5 @@
 class ItemCopperBar: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "Copper";
@@ -18,7 +18,7 @@ class ItemCopperBar: CA_Magazine {
 	};
 };
 class ItemCopperBar10oz: CA_Magazine {
-	scope = 2;
+	scope = public;
 	count = 1;
 	type = 256;
 	displayName = "10oz Copper";

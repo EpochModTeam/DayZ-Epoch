@@ -1,18 +1,18 @@
 private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_75") , "PLAIN DOWN"]; };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_75" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 _hasTool = 	"ItemCrowbar" in items player;
 if(!_hasTool) exitWith { 
-	cutText [(localize "str_epoch_player_76"), "PLAIN DOWN"];
+	localize "str_epoch_player_76" call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
 _item =     _this;
 _hasCrate = 	_item in magazines player;
 if (!_hasCrate) exitWith {
-	cutText [(localize "str_epoch_player_77"), "PLAIN DOWN"];
+	localize "str_epoch_player_77" call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
 };
 
@@ -35,10 +35,10 @@ _classname = "WeaponHolder";
 //return empty crate to inventory
 player addMagazine "bulk_empty";
 
-[1,1] call dayz_HungerThirst;
+["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 // Change to optional wait to complete
 player playActionNow "Medic";
-sleep 6;
+uiSleep 6;
 		
 _b0x1337 = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _b0x1337 setDir _dir;
@@ -53,13 +53,16 @@ if(_type == "weapon") then {
 if(_type == "backpack") then {
 	_b0x1337 addBackpackCargoGlobal  [_create,_qty];
 };
-
-_b0x1337 setPosATL _location;
+if (surfaceIsWater _location) then {
+	_b0x1337 setPosASL (getPosASL player);
+} else {
+	_b0x1337 setPosATL _location;
+};
 
 player reveal _b0x1337;
 
 player action ["Gear", _b0x1337];
 		
-cutText [(localize "str_epoch_player_78"), "PLAIN DOWN"];
+localize "str_epoch_player_78" call dayz_rollingMessages;
 	
 DZE_ActionInProgress = false;

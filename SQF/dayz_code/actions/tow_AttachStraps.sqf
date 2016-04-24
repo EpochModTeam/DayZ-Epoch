@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck","_towTruckSize","_allowedSize"];
 
-if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_96") , "PLAIN DOWN"] };
+if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_96" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
 player removeAction s_player_towing;
@@ -13,7 +13,7 @@ _towTruckSize = (sizeOf typeOf _towTruck);
 _allowedSize = _towTruckSize-(_towTruckSize/3);
 
 // Get all nearby vehicles within 10m
-_findNearestVehicles = nearestObjects [_towTruck, ["Car","Motorcycle"], 10];
+_findNearestVehicles = _towTruck nearEntities [["Car","Motorcycle"],10];
 _findNearestVehicle = [];
 {
 	if (alive _x && _towTruck != _x) then {
@@ -39,7 +39,7 @@ if(_IsNearVehicle >= 1) then {
 
 	_finished = false;
 
-	[1,1] call dayz_HungerThirst;
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	// force animation 
 	player playActionNow "Medic";
 
@@ -61,7 +61,7 @@ if(_IsNearVehicle >= 1) then {
 		if (r_interrupt) then {
 			r_doLoop = false;
 		};
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 	r_doLoop = false;
 
@@ -83,14 +83,14 @@ if(_IsNearVehicle >= 1) then {
 					_vehicle attachTo [_towTruck,[1.3,-2,2.3]];
 					_towTruck setVariable ["DZEinTow", true, true];
 					_towTruck setVariable ["DZEvehicleInTow", _vehicle, true];
-					cutText [format[(localize "str_epoch_player_175"),_nameText], "PLAIN DOWN"];
+					format[localize "str_epoch_player_175",_nameText] call dayz_rollingMessages;
 				};	
 			} else {
-				cutText [format[(localize "str_epoch_player_176"),_nameText], "PLAIN DOWN"];
+				format[localize "str_epoch_player_176",_nameText] call dayz_rollingMessages;
 			};
 
 		} else {
-			cutText [format[(localize "str_epoch_player_177"),_nameText], "PLAIN DOWN"];
+			format[localize "str_epoch_player_177",_nameText] call dayz_rollingMessages;
 		};
 
 	};
@@ -98,7 +98,7 @@ if(_IsNearVehicle >= 1) then {
 
 
 } else {
-	cutText [(localize "str_epoch_player_27"), "PLAIN DOWN"];
+	localize "str_epoch_player_27" call dayz_rollingMessages;
 };
 DZE_ActionInProgress = false;
 s_player_towing = -1;

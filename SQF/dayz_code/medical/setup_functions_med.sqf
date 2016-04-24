@@ -4,20 +4,14 @@ fnc_usec_damageHandle = {
 	- Function
 	- [unit] call fnc_usec_damageHandle;
 	************************************************************/
-	private ["_unit"];
+	//private["_unit","_eh"];
 	_unit = _this select 0;
-	
-	// Remove handle damage override
-	// _unit removeEventHandler ["HandleDamage",temp_handler];
-
 	mydamage_eh1 = _unit addeventhandler ["HandleDamage",{_this call fnc_usec_damageHandler;} ];
 	mydamage_eh2 = _unit addEventHandler ["Fired", {_this call player_fired;}];
 	mydamage_eh3 = _unit addEventHandler ["Killed", {_id = [] spawn player_death;}];
 };
 
 fnc_usec_pitchWhine = {
-	
-	private ["_visual","_sound"];
 	_visual = _this select 0;
 	_sound = _this select 1;
 	//affect the player
@@ -29,38 +23,56 @@ fnc_usec_pitchWhine = {
 	};
 	r_pitchWhine = true;
 	[] spawn {
-		sleep 32;
+		uiSleep 32;
 		r_pitchWhine = false;
 	};
 };
 
-fnc_usec_damageUnconscious = {
-	private ["_unit","_damage","_inVehicle"];
+/*
+//Old system 1.8.6
+fnc_usec_damageUnconscious1 = {
+	private["_unit","_damage"];
 	_unit = _this select 0;
 	_damage = _this select 1;
-	_inVehicle = (vehicle _unit != _unit);
-	if ((_unit == player) || (vehicle player != player)) then {
-		r_player_timeout = round((((random 2) max 0.1) * _damage) * 20);
+	
+	diag_log format["fnc_usec_damageUnconscious: %1,%2,%3",_unit,_damage, player];
+	
+	if (_unit == player) then {
+		r_player_timeout = 120 min (round((((random 2) max 0.1) * _damage) * 20));
 		r_player_unconscious = true;
-		player setVariable["medForceUpdate",true,true];
+	};
+};
+*/
+fnc_usec_damageUnconscious = {
+	private["_unit","_damage"];
+	_unit = _this select 0;
+	_damage = _this select 1;
+	
+	diag_log format["fnc_usec_damageUnconscious: %1,%2,%3",_unit,_damage, player];
+	
+	_inVehicle = (vehicle _unit != _unit);
+	if (_unit == player) then {
+		r_player_timeout = 120 min (round((((random 2) max 0.1) * _damage) * 20));
+		r_player_unconscious = true;
+		
+		player setVariable["medForceUpdate",true];
 		player setVariable ["unconsciousTime", r_player_timeout, true];
 	};
+	
 	if (_inVehicle) then {
 		_unit spawn {
 			private["_veh","_unit"];
 			_veh = vehicle _this;
 			_unit = _this;
-			waitUntil{(((([_veh] call FNC_GetPos) select 2 < 1) && (speed _veh < 1)) || (!r_player_unconscious))};
+			waitUntil{(((getPosATL _veh select 2 < 1) and (speed _veh < 1)) or (!r_player_unconscious))};
 			if (r_player_unconscious) then {
 				_unit action ["eject", _veh];
 				waitUntil{((vehicle _this) != _this)};
-				sleep 1;
-				_unit setVariable ["NORRN_unconscious", true, true];
+				uiSleep 1;
 				_unit playActionNow "Die";
 			};
 		};
 	} else {
-		_unit setVariable ["NORRN_unconscious", true, true];
 		_unit playActionNow "Die";
 	};
 };
@@ -68,48 +80,28 @@ fnc_usec_damageUnconscious = {
 //Action Handlers added to init file
 
 fnc_usec_bulletHit = {
-	private["_commit"];
+	//private["_commit"];
 	_commit = _this;
 	if (!r_player_unconscious) then {
-		"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
-		"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
-		addCamShake [5, 0.5, 25];
-		"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit _commit;
-		"dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit _commit;
+        "colorCorrections" ppEffectEnable true; "colorCorrections" ppEffectAdjust [1, 1.1, -0.02, [0.4,-0.2,-0.2, .04], [1,1,1,0],  [1,1,1, 0]]; "colorCorrections" ppEffectCommit 0;
+        "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 0;
+        setCamShakeParams [0.05, 4, 1, 3, true]; addCamShake [5, 0.5, 25];
+        "colorCorrections" ppEffectAdjust [1, 1, 0, [0,0,0,0], [1, 1, 1, 1],  [1, 1, 1, 1]]; "colorCorrections" ppEffectCommit _commit;
+        "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit _commit;
 	};
-};
-
-fnc_usec_damageType = {
-	private["_damage","_ammo","_type"];
-	_damage = _this select 0;
-	_ammo = _this select 1;
-	_type = 0;
-	if ((_ammo isKindof "Grenade") || (_ammo isKindof "ShellBase") ||  (_ammo isKindof "TimeBombCore") || (_ammo isKindof "BombCore") || (_ammo isKindof "MissileCore") || (_ammo isKindof "RocketCore") || (_ammo isKindof "FuelExplosion") || (_ammo isKindof "GrenadeBase")) then {
-		_type = 1;
-	};
-	if ((_ammo isKindof "B_127x107_Ball") || (_ammo isKindof "B_127x99_Ball")) then {
-		_type = 2;
-	};
-	if (_ammo isKindof "Melee") then {
-		_type = 3;
-	};
-
-	_type;
 };
 
 fnc_usec_damageGetWound = {
-	private["_hit","_sPoint","_options","_rnd","_wound"];
+	//private["_wound"];
 	_hit = format["%1",_this];
 	_sPoint = USEC_woundHit find _hit;
 	_options = USEC_woundPoint select _sPoint;
 	_rnd = floor(random(count _options));
 	_wound = _options select _rnd;
-	_wound;
+	_wound
 };
 
 fnc_usec_medic_removeActions = {
-	
-	private ["_obj"];
 	_obj = player;
 	{
 		_obj = _x;
@@ -124,65 +116,190 @@ fnc_usec_medic_removeActions = {
 fnc_usec_self_removeActions = {
 	{
 		player removeAction _x;
-	} count r_self_actions;
+	} forEach r_self_actions;
 	r_self_actions = [];
 };
 
-fnc_med_publicBlood = {
-	while {(r_player_injured || r_player_infected) && r_player_blood > 0} do {
-		player setVariable["USEC_BloodQty",r_player_blood,true];
-		player setVariable["medForceUpdate",true];
-		sleep 5;
+fnc_usec_calculateBloodPerSec = {
+	private["_bloodLossPerSec","_bloodGainPerSec","_bloodPerSec"];
+	_bloodLossPerSec = 0;
+	_bloodGainPerSec = 0;
+
+
+	if (dayz_thirst >= SleepWater) then {
+		_bloodLossPerSec = _bloodLossPerSec + 10;
+	};
+
+	if (dayz_hunger >= SleepFood) then {
+		_bloodLossPerSec = _bloodLossPerSec + 10;
+	};
+
+
+	if (r_player_injured) then {
+		_bloodLossPerSec = 10;
+
+		{
+			_wounded = player getVariable["hit_"+_x,false];
+
+			if (_wounded) then {
+				_bloodLossPerSec = _bloodLossPerSec + 10;
+			};
+		} forEach USEC_typeOfWounds;
+	};
+	
+	//Sepsis
+	if (!r_player_infected) then { 
+		if (r_player_Sepsis select 0) then {
+			 _time = diag_tickTime - (r_player_Sepsis select 1);
+			if (_time > 900) then {
+				if (_time < 1800) then {
+					_time = ((_time - 900) max 1) min 900;
+					_bloodLossPerSec = _bloodLossPerSec + (_time / 450) + 1;
+					_bloodLossPerSec = _bloodLossPerSec - (_bloodLossPerSec % 1);
+					//hintSilent (format["SetupMedFNCS: Blood Level: %2/12000 bloodLossPerSec %1",_bloodLossPerSec,r_player_blood]);
+				} else {
+					r_player_Sepsis = [false, 0];
+					r_player_infected = true;
+					player setVariable["USEC_infected",true,true];
+				};
+			};
+			
+			if ((_time < 1) and (isNil "sepsisStarted")) then {
+			//if (isNil "sepsisStarted") then {
+				//localize "str_medical_sepsis_warning" call dayz_rollingMessages;
+				systemChat (localize "str_medical_sepsis_warning");
+				player setVariable ["sepsisStarted", _time];
+			};
+		};
+	};
+	
+	if (r_player_infected) then { 
+		_bloodLossPerSec = _bloodLossPerSec + 3;
+	};
+	
+	//_golbalNutrition = 1200 / (r_player_Nutrition select 0);
+
+	if (r_player_bloodregen > 0) then {
+		_bloodGainPerSec = r_player_bloodregen * 0.1;
+/*		
+		if ((r_player_bloodregen) < 30) then {
+			_bloodGainPerSec = r_player_bloodregen * _golbalNutrition;
+		};
+		
+		if ((r_player_bloodregen)< 60) then {
+			_bloodGainPerSec = r_player_bloodregen * _golbalNutrition;
+		};
+*/
+
+		r_player_bloodregen = (0 max r_player_bloodregen) - (0 max _bloodGainPerSec);
+	};
+
+	r_player_bloodlosspersec = _bloodLossPerSec;
+	r_player_bloodgainpersec = _bloodGainPerSec;
+
+	_bloodPerSec = _bloodGainPerSec - _bloodLossPerSec;
+/*
+private [ "_foodVal", "_thirstVal", "_tempVal"];
+_foodVal = round(100*(1 - (dayz_hunger / SleepFood)));
+_thirstVal = round(100*(1 - (dayz_thirst / SleepWater)));
+_tempVal = round(100*(1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin))));
+
+	hintSilent format [ "blood/s: %1\ngain/s: %2\nloss/s: %3\nbloodregen: %4\ninjured: %5\ninfected: %6\nsepsis: %7\ninpain:%15\nblood: %8\nthirst: %9 (%12%%)\nhunger: %10 (%13%%)\ntemp: %11 (%14%%)\nFoodstack: %16\n", 
+		_bloodPerSec,
+		r_player_bloodgainpersec,
+		r_player_bloodlosspersec,
+		r_player_bloodregen,
+		r_player_injured,
+		r_player_infected,
+		r_player_Sepsis,
+		r_player_blood,
+		dayz_thirst,
+		dayz_hunger,
+		dayz_temperatur,
+		_thirstVal,
+		_foodVal,
+		_tempVal,
+		r_player_inpain,
+		r_player_foodstack
+	];
+*/
+
+	r_player_bloodpersec = _bloodPerSec;
+	_bloodPerSec
+};
+
+fnc_usec_playerHandleBlood = {
+	private["_bloodPerSec","_elapsedTime"];
+	if (r_player_injured) then { // bleeding
+		_bleedTime = (random 500) + 100;
+		_elapsedTime = 0;
+
+		while {(r_player_injured) and (r_player_blood > 0)} do {
+			_bloodPerSec = [] call fnc_usec_calculateBloodPerSec;
+			r_player_blood = r_player_blood + _bloodPerSec;
+			_elapsedTime = _elapsedTime + 1;
+
+			if (_elapsedTime > _bleedTime) then {
+				r_player_injured = false;
+				_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
+				dayz_sourceBleeding = objNull;
+				call fnc_usec_resetWoundPoints;
+			};
+
+			_bloodDiff = r_player_blood - (player getVariable["USEC_BloodQty", 12000]);
+			
+			if ((_bloodDiff >= 500) or (_bloodDiff <= -500)) then {
+				player setVariable["USEC_BloodQty",r_player_blood,true];
+				player setVariable["medForceUpdate",true];
+			};
+			
+			
+			uiSleep 1;
+		};
+	} else { // not bleeding
+		_bloodPerSec = [] call fnc_usec_calculateBloodPerSec;
+
+		if (_bloodPerSec != 0) then {
+			r_player_blood = r_player_blood + _bloodPerSec;
+		};
+
+		_bloodDiff = r_player_blood - (player getVariable["USEC_BloodQty", 12000]);
+
+
+		if ((_bloodDiff >= 500) or (_bloodDiff <= -500)) then {
+			player setVariable["USEC_BloodQty",r_player_blood,true];
+			player setVariable["medForceUpdate",true];
+		};
 	};
 };
 
-fnc_usec_playerBleed = {
-	private ["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime","_id"];
-	_bleedTime = 400;		//seconds
-	_total = r_player_bloodTotal;
-	r_player_injured = true;
-	_myBleedTime = (random 300) + 30;
-	_bTime = 0;
-	while {r_player_injured} do {
-		
-		_bleedPerSec = 30;
-		// If kneeling || crawling reduce bleeding
-		if (dayz_isKneeling && !r_player_unconscious) then{
-			_bleedPerSec = 15;
-		};
-		if (dayz_isCrawling && !r_player_unconscious) then{
-			_bleedPerSec = 7.5;
-		};
-
-		//bleed out
-		if (r_player_blood > 0) then {
-			r_player_blood = r_player_blood - _bleedPerSec;
-		};
-		_bTime = _bTime + 1;
-		if (_bTime > _myBleedTime) then {
-			r_player_injured = false;
-			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
-			dayz_sourceBleeding =	objNull;
-			{player setVariable[_x,false,true];} count USEC_woundHit;
-			player setVariable ["USEC_injured",false,true];
-		};
-		sleep 1;
-	};
+fnc_usec_resetWoundPoints = {
+	{
+		player setVariable["hit_"+_x,false,true];
+	} forEach USEC_typeOfWounds;
+	player setVariable ["USEC_injured",false,true];
 };
 
 fnc_usec_damageBleed = {
 	/***********************************************************
 	PROCESS DAMAGE TO A UNIT
-	- Function
+	- Function fnc_usec_damageBleed: Draw a creepy blood stream from a player limb
 	- [_unit, _wound, _injury] call fnc_usec_damageBleed;
 	************************************************************/
-		private ["_unit","_wound","_injury","_modelPos","_point","_source","_rndX"];
-		_unit = _this select 0;
-		_wound = _this select 1;
-		_injury = _this select 2;
-		
+	private["_wound","_modelPos","_point","_source"];
+	_unit = _this select 0;
+	_wound = _this select 1;
+	//_injury = _this select 2; // not used. damage% ???
+
+	if (isServer) exitWith{}; // no graphical effects on server!
+		/*
+		if ((dayz_bleedingeffect == 1) or (dayz_bleedingeffect == 3)) then {
+			[] spawn fnc_blooddrops;
+		};*/
+		//diag_log format ["%1::fnc_usec_damageBleed %2", __FILE__, _this];
+
 		_modelPos = [0,0,0];
-		
+
 		switch (_wound) do {
 			case "Pelvis": {
 				_modelPos = [0,0,0.2];
@@ -197,72 +314,61 @@ fnc_usec_damageBleed = {
 			case "LeftShoulder": {
 				_modelPos = [0,0,0.2];
 			};
+			//added visual wounds to foots
+			case "RightFoot": {
+				_modelPos = [0,0,0.2];
+			};
+			case "LeftFoot": {
+				_modelPos = [0,0,0.2];
+			};
 		};
 
-		while {true} do {
+		while {1 == 1} do {
 			scopeName "main";
-			
 			waitUntil {(vehicle _unit == _unit)};
 			
-			_point = "Logic" createVehicleLocal getPosATL _unit;
-			_source = "#particlesource" createVehicleLocal getPosATL _unit;
-			_source setParticleParams
-			/*Sprite*/		[["\Ca\Data\ParticleEffects\Universal\Universal", 16, 13, 1],"",// File,Ntieth,Index,Count,Loop(Bool)
-			/*Type*/			"Billboard",
-			/*TimmerPer*/		1,
-			/*Lifetime*/		0.2,
-			/*Position*/		[0,0,0],
-			/*MoveVelocity*/	[0,0,0.5],
-			/*Simulation*/		1,0.32,0.1,0.05,//rotationVel,weight,volume,rubbing
-			/*Scale*/			[0.05,0.25],
-			/*Color*/			[[0.2,0.01,0.01,1],[0.2,0.01,0.01,0]],
-			/*AnimSpeed*/		[0.1],
-			/*randDirPeriod*/	0,
-			/*randDirIntesity*/	0,
-			/*onTimerScript*/	"",
-			/*DestroyScript*/	"",
-			/*Follow*/			_point];
-			_source setParticleRandom [2, [0, 0, 0], [0.0, 0.0, 0.0], 0, 0.5, [0, 0, 0, 0.1], 0, 0, 10];
-			_source setDropInterval 0.02;
-			_point attachTo [_unit,_modelPos,_wound];
-			
-			sleep 5;
-			
-			while {((_unit getVariable["USEC_injured",true]) && (alive _unit))} do {
+			if ((dayz_bleedingeffect == 2) or (dayz_bleedingeffect == 3)) then {
+				//Blood partical
+				_point = "Logic" createVehicleLocal getPosATL _unit;
+				_source = "#particlesource" createVehicleLocal getPosATL _unit;
+				_source setParticleParams
+				/* Sprite */			[["\Ca\Data\ParticleEffects\Universal\Universal", 16, 13, 1],"",	// File,Ntieth,Index,Count,Loop(Bool)
+				/* Type */				"Billboard",
+				/* TimmerPer */			1,
+				/* Lifetime */			0.2,
+				/* Position */			[0,0,0],
+				/* MoveVelocity */		[0,0,0.5],
+				/* Simulation */		1,0.32,0.1,0.05,	//rotationVel,weight,volume,rubbing
+				/* Scale */				[0.05,0.25],
+				/* Color */				[[0.2,0.01,0.01,1],[0.2,0.01,0.01,0]],
+				/* AnimSpeed */			[0.1],
+				/* randDirPeriod */		0,
+				/* randDirIntesity */	0,
+				/* onTimerScript */		"",
+				/* DestroyScript */		"",
+				/* Follow */			_point];
+				_source setParticleRandom [2, [0, 0, 0], [0.0, 0.0, 0.0], 0, 0.5, [0, 0, 0, 0.1], 0, 0, 10];
+				_source setDropInterval 0.02;
+				_point attachTo [_unit,_modelPos,_wound];
+			};
+
+			uiSleep 5;
+
+			while {((_unit getVariable["USEC_injured",true]) and (alive _unit))} do {
 				scopeName "loop";
 				if (vehicle _unit != _unit) then {
 					BreakOut "loop";
 				};
-				sleep 1;
+				uiSleep 1;
 			};
 			deleteVehicle _source;
 			deleteVehicle _point;
-			
+
 			if (!(_unit getVariable["USEC_injured",false])) then {
 				BreakOut "main";
 			};
 		};
-		
+
 		deleteVehicle _source;
 		deleteVehicle _point;
-};
-
-fnc_usec_recoverUncons = {
-	player setVariable ["NORRN_unconscious",false,true];
-	player setVariable ["unconsciousTime",0,true];
-	player setVariable ["USEC_isCardiac",false,true];
-	// player setVariable["medForceUpdate",true,true];
-
-	r_player_unconscious = false;
-	r_player_cardiac = false;
-	r_player_handler1 = false;
-
-	sleep 1;
-
-	disableUserInput false;
-	if (vehicle player == player) then {
-		[objNull,player,rSwitchMove,"AinjPpneMstpSnonWnonDnon"] call RE;
-		player switchMove "AinjPpneMstpSnonWnonDnon";
-		player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
-	};
 };

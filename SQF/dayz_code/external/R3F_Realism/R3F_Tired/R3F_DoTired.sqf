@@ -25,7 +25,7 @@ _s call FNC_PrintToRPT;
 
 R3F_TIRED_Accumulator = 0;
 R3F_TIRED_vitesse_de_mon_joueur = 0;
-sleep 1;
+uiSleep 1;
 _level = 1;
 
 while {true} do {
@@ -88,8 +88,8 @@ while {true} do {
 		
 		[_level] call R3F_TIRED_FNCT_Voile_Noir;
 		
-		if (R3F_TIRED_Accumulator  > R3F_TIRED_BLACKOUT_LEVEL && scriptDone R3F_TIRED_Handle_Blackout_Effect && scriptDone R3F_TIRED_Handle_Blur_Effect) then {
-			R3F_TIRED_Handle_Blackout_Effect = [] spawn R3F_TIRED_FNCT_DoBlackVanish;
+		if (R3F_TIRED_Accumulator > R3F_TIRED_BLACKOUT_LEVEL && scriptDone R3F_TIRED_Handle_Blur_Effect) then {
+			call R3F_TIRED_FNCT_DoBlackVanish;
 		};
 	} else {	
 		R3F_TIRED_Accumulator = 0;
@@ -123,7 +123,7 @@ while {true} do {
 		R3F_TIRED_Counter_Time = 0;
 	};
 
-	sleep 1;
+	uiSleep 1;
 	_n = _n + 1;
 };
 

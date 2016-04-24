@@ -1,7 +1,7 @@
 /*
 Description:
-Checks whether the player has the required tools equipped || not
-&& displays a message if a tool is missing from the tool belt.
+Checks whether the player has the required tools equipped or not
+and displays a message if a tool is missing from the tool belt.
 
 Parameter(s):
 _this: <array> list of tool names the player is required to have
@@ -20,7 +20,7 @@ _hasTools = true;
 	if (!(_x in _items)) exitWith {
 		_hasTools = false;
 		_missing = getText (configFile >> "cfgWeapons" >> _x >> "displayName");
-		cutText [format[(localize "STR_EPOCH_ACTIONS_13"), _missing] , "PLAIN DOWN"];
+		format[localize "STR_EPOCH_PLAYER_137",_missing] call dayz_rollingMessages;
 	};
 } count _tools;
 _hasTools

@@ -2,6 +2,9 @@ class RscDisplaySpawnSelecter {
 	idd = 6903;
 	enableDisplay = 1;
 	
+	onLoad = "dayz_DisplaySpawnSelecter = true;";
+	//onUnload = "dayz_DisplaySpawnSelecter = false;";
+	
 	class controlsBackground {
 		class Mainback : RscPicture {
 			idc = -1;
@@ -14,8 +17,10 @@ class RscDisplaySpawnSelecter {
 	};
 	class controls
 	{
+		//kamenka
 		class RscSelectedRegion1 : RscActiveText
 		{
+			onLoad = "if (dayz_selectRegion == 1) then {onMouseEnter = (_this select 0) ctrlShow false; (_this select 0) ctrlEnable false;};";
 			idc = -1;
 			style = 48;
 			text = "\z\addons\dayz_code\gui\spawn\spawn_kamenka.paa";
@@ -25,11 +30,13 @@ class RscDisplaySpawnSelecter {
 			h = 0.3044 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectRegion = 1;";
+			action = "closeDialog 0;dayz_DisplaySpawnSelecter = false;dayz_selectRegion = 1;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
+		//balota
 		class RscSelectedRegion2: RscActiveText
 		{
+			onLoad = "if (dayz_selectRegion == 0) then {onMouseEnter = (_this select 0) ctrlShow false; (_this select 0) ctrlEnable false;};";
 			idc = -1;
 			style = 48;
 			text = "\z\addons\dayz_code\gui\spawn\spawn_balota.paa";
@@ -39,11 +46,13 @@ class RscDisplaySpawnSelecter {
 			h = 0.270356 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectRegion = 0;";
+			action = "closeDialog 0;dayz_DisplaySpawnSelecter = false;dayz_selectRegion = 0;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
+		//cherno
 		class RscSelectedRegion3: RscActiveText
 		{
+			onLoad = "if (dayz_selectRegion == 2) then {onMouseEnter = (_this select 0) ctrlShow false; (_this select 0) ctrlEnable false;};";
 			idc = -1;
 			style = 48;
 			text = "\z\addons\dayz_code\gui\spawn\spawn_cherno.paa";
@@ -53,11 +62,13 @@ class RscDisplaySpawnSelecter {
 			h = 0.275 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectRegion = 2;";
+			action = "closeDialog 0;dayz_DisplaySpawnSelecter = false;dayz_selectRegion = 2;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
+		//elektro
 		class RscSelectedRegion4: RscActiveText
 		{
+			onLoad = "if (dayz_selectRegion == 3) then {onMouseEnter = (_this select 0) ctrlShow false; (_this select 0) ctrlEnable false;};";
 			idc = -1;
 			style = 48;
 			text = "\z\addons\dayz_code\gui\spawn\spawn_elektro.paa";
@@ -67,11 +78,12 @@ class RscDisplaySpawnSelecter {
 			h = 0.274546 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectRegion = 3;";
+			action = "closeDialog 0;dayz_DisplaySpawnSelecter = false;dayz_selectRegion = 3;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		class RscSelectedRegion5: RscActiveText
 		{
+			onLoad = "if (dayz_selectRegion == 4) then {onMouseEnter = (_this select 0) ctrlShow false; (_this select 0) ctrlEnable false;};";
 			idc = -1;
 			style = 48;
 			text = "\z\addons\dayz_code\gui\spawn\spawn_sol.paa";
@@ -81,11 +93,13 @@ class RscDisplaySpawnSelecter {
 			h = 0.275001 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectRegion = 4;";
+			action = "closeDialog 0;dayz_DisplaySpawnSelecter = false;dayz_selectRegion = 4;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
+		//berezino
 		class RscSelectedRegion6: RscActiveText
 		{
+			onLoad = "if (dayz_selectRegion == 5) then {onMouseEnter = (_this select 0) ctrlShow false; (_this select 0) ctrlEnable false;};";
 			idc = -1;
 			style = 48;
 			text = "\z\addons\dayz_code\gui\spawn\spawn_berezino.paa";
@@ -95,9 +109,10 @@ class RscDisplaySpawnSelecter {
 			h = 0.275 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectRegion = 5;";
+			action = "closeDialog 0;dayz_DisplaySpawnSelecter = false;dayz_selectRegion = 5;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
+		//Random
 		class RscSelectedRegionRandom: RscActiveText
 		{
 			idc = -1;
@@ -109,7 +124,7 @@ class RscDisplaySpawnSelecter {
 			h = 0.331135035 * safezoneH;
 			color[] = { 0.5, 0.5, 0.5, 1 };
 			colorActive[] = { 1, 1, 1, 1 };
-			action = "closeDialog 0;dayz_selectRegion = 9;";
+			action = "closeDialog 0;dayz_DisplaySpawnSelecter = false;dayz_selectRegion = 9;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
 		

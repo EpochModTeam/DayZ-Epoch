@@ -1,0 +1,464 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"sauerland_winter",
+		"map_eu",
+		"ca_modules_animals",
+		"dayz_anim",
+		"dayz_code",
+		"dayz_communityassets",
+		"dayz_weapons",
+		"dayz_equip",
+		"cacharacters_pmc",
+		"ca_modules_functions",
+		"dayz_epoch",
+		"warfarebuildings",
+		"glt_m300t",
+		"pook_h13",
+		"csj_gyroac",
+		"jetskiyanahuiaddon",
+		"redryder"
+	};
+	addOnsAuto[]=
+	{
+		"dayz_weapons",
+		"ca_modules_functions",
+		"sauerland"
+	};
+	randomSeed=11171215;
+	class Intel
+	{
+		briefingName="DayZ Epoch Sauerland Winter Edition";
+		briefingDescription="DayZ Epoch Sauerland Winter Edition";
+		startWeather=0.067362607;
+		forecastWeather=0.52341133;
+		year=2008;
+		month=12;
+		day=1;
+		hour=12;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=100;
+				#define PLRDEF position[]={12548,214,-5866};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
+				class Item0{id=0;PLRDEF};
+				class Item1
+				{
+					position[]={12548,214,-5866};
+					azimut=0;
+					id=0;
+					side="WEST";
+					vehicle="Survivor1_DZ";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.6;
+					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+				};
+				class Item2{id=2;PLRDEF};
+				class Item3{id=3;PLRDEF};
+				class Item4{id=4;PLRDEF};
+				class Item5{id=5;PLRDEF};
+				class Item6{id=6;PLRDEF};
+				class Item7{id=7;PLRDEF};
+				class Item8{id=8;PLRDEF};
+				class Item9{id=9;PLRDEF};
+				class Item10{id=10;PLRDEF};
+				class Item11{id=11;PLRDEF};
+				class Item12{id=12;PLRDEF};
+				class Item13{id=13;PLRDEF};
+				class Item14{id=14;PLRDEF};
+				class Item15{id=15;PLRDEF};
+				class Item16{id=16;PLRDEF};
+				class Item17{id=17;PLRDEF};
+				class Item18{id=18;PLRDEF};
+				class Item19{id=19;PLRDEF};
+				class Item20{id=20;PLRDEF};
+				class Item21{id=21;PLRDEF};
+				class Item22{id=22;PLRDEF};
+				class Item23{id=23;PLRDEF};
+				class Item24{id=24;PLRDEF};
+				class Item25{id=25;PLRDEF};
+				class Item26{id=26;PLRDEF};
+				class Item27{id=27;PLRDEF};
+				class Item28{id=28;PLRDEF};
+				class Item29{id=29;PLRDEF};
+				class Item30{id=30;PLRDEF};
+				class Item31{id=31;PLRDEF};
+				class Item32{id=32;PLRDEF};
+				class Item33{id=33;PLRDEF};
+				class Item34{id=34;PLRDEF};
+				class Item35{id=35;PLRDEF};
+				class Item36{id=36;PLRDEF};
+				class Item37{id=37;PLRDEF};
+				class Item38{id=38;PLRDEF};
+				class Item39{id=39;PLRDEF};
+				class Item40{id=40;PLRDEF};
+				class Item41{id=41;PLRDEF};
+				class Item42{id=42;PLRDEF};
+				class Item43{id=43;PLRDEF};
+				class Item44{id=44;PLRDEF};
+				class Item45{id=45;PLRDEF};
+				class Item46{id=46;PLRDEF};
+				class Item47{id=47;PLRDEF};
+				class Item48{id=48;PLRDEF};
+				class Item49{id=49;PLRDEF};
+				class Item50{id=50;PLRDEF};
+				class Item51{id=51;PLRDEF};
+				class Item52{id=52;PLRDEF};
+				class Item53{id=53;PLRDEF};
+				class Item54{id=54;PLRDEF};
+				class Item55{id=55;PLRDEF};
+				class Item56{id=56;PLRDEF};
+				class Item57{id=57;PLRDEF};
+				class Item58{id=58;PLRDEF};
+				class Item59{id=59;PLRDEF};
+				class Item60{id=60;PLRDEF};
+				class Item61{id=61;PLRDEF};
+				class Item62{id=62;PLRDEF};
+				class Item63{id=63;PLRDEF};
+				class Item64{id=64;PLRDEF};
+				class Item65{id=65;PLRDEF};
+				class Item66{id=66;PLRDEF};
+				class Item67{id=67;PLRDEF};
+				class Item68{id=68;PLRDEF};
+				class Item69{id=69;PLRDEF};
+				class Item70{id=70;PLRDEF};
+				class Item71{id=71;PLRDEF};
+				class Item72{id=72;PLRDEF};
+				class Item73{id=73;PLRDEF};
+				class Item74{id=74;PLRDEF};
+				class Item75{id=75;PLRDEF};
+				class Item76{id=76;PLRDEF};
+				class Item77{id=77;PLRDEF};
+				class Item78{id=78;PLRDEF};
+				class Item79{id=79;PLRDEF};
+				class Item80{id=80;PLRDEF};
+				class Item81{id=81;PLRDEF};
+				class Item82{id=82;PLRDEF};
+				class Item83{id=83;PLRDEF};
+				class Item84{id=84;PLRDEF};
+				class Item85{id=85;PLRDEF};
+				class Item86{id=86;PLRDEF};
+				class Item87{id=87;PLRDEF};
+				class Item88{id=88;PLRDEF};
+				class Item89{id=89;PLRDEF};
+				class Item90{id=90;PLRDEF};
+				class Item91{id=91;PLRDEF};
+				class Item92{id=92;PLRDEF};
+				class Item93{id=93;PLRDEF};
+				class Item94{id=94;PLRDEF};
+				class Item95{id=95;PLRDEF};
+				class Item96{id=96;PLRDEF};
+				class Item97{id=97;PLRDEF};
+				class Item98{id=98;PLRDEF};
+				class Item99{id=99;PLRDEF};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8810,138,11751};
+					id=50;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=21;
+		class Item0
+		{
+			position[]={15177,286,11335};
+			name="center";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={12547,213,-5865};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={15448,216,8465};
+			name="spawn0";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={19666,270,10377};
+			name="spawn1";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={19488,384,7461};
+			name="spawn2";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={16453,226,6895};
+			name="spawn3";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={10999,183,10157};
+			name="spawn4";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={10668,229,13320};
+			name="spawn5";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={11348,438,12225};
+			name="spawn6";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={12104,272,8935};
+			name="spawn7";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={20209,182,14501};
+			name="spawn8";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={19478,234,12439};
+			name="spawn9";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={12879,124,14982};
+			name="spawn10";
+			type="Empty";
+		};
+		class Item13
+		{
+			position[]={15487,87,17015};
+			name="NeutralTraderCity";
+			text="Trader City Seedorf";
+			type="mil_circle";
+		};
+		class Item14
+		{
+			position[]={24713,409,21741};
+			name="FriendlyTraderCity";
+			text="Trader City Oberberg";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};
+		class Item15
+		{
+			position[]={11046,179,15669};
+			name="HeroVendor";
+			text="Hero Vendor";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item16
+		{
+			position[]={15350,112,18522};
+			name="UnarmedAirVehicles";
+			text="Axles Airfield";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item17
+		{
+			position[]={2507,271,3870};
+			name="SouthWholesaler";
+			text="South Wholesaler";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item18
+		{
+			position[]={223,139,22703};
+			name="NorthWholesaler";
+			text="North Wholesaler";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item19
+		{
+			position[]={16894,0,1781};
+			name="BanditVendor";
+			text="Bandit Vendor";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item20
+		{
+			position[]={13176,176,6614};
+			name="NeutralTraderCIty2";
+			text="Trader city Oberdorf";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=7;
+#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
+		class Item0
+		{
+			position[]={15502,87,17015};
+			TRGDEF
+			name="Seedorf";
+			expCond="(player distance Seedorf) < 100;";
+			expActiv="[""trader city Seedorf"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""trader city Seedorf"",true,""leave""] call player_traderCity;";
+		};
+		class Item1
+		{
+			position[]={13166,176,6611};
+			TRGDEF
+			name="Oberdorf";
+			expCond="(player distance Oberdorf) < 100;";
+			expActiv="[""trader city Oberdorf"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""trader city Oberdorf"",true,""leave""] call player_traderCity;";
+		};
+		class Item2
+		{
+			position[]={24710,409,21741};
+			TRGDEF
+			name="Oberberg";
+			expCond="(player distance Oberberg) < 100;";
+			expActiv="[""trader city Oberberg"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""trader city Oberberg"",true,""leave""] call player_traderCity;";
+		};
+		class Item3
+		{
+			position[]={16983,300,1774};
+			TRGDEF
+			name="Bandit";
+			expCond="(player distance Bandit) < 50;";
+			expActiv="[""Bandit Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Vendor"",true,""leave""] call player_traderCity;";
+		};
+		class Item4
+		{
+			position[]={11045,179,15671};
+			TRGDEF
+			name="Hero";
+			expCond="(player distance Hero) < 50;";
+			expActiv="[""Hero Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Hero Vendor"",true,""leave""] call player_traderCity;";
+		};
+		class Item5
+		{
+			position[]={2504,271,3870};
+			TRGDEF
+			name="Wholesale1";
+			expCond="(player distance Wholesale1) < 50;";
+			expActiv="[""Wholesaler"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Wholesaler"",true,""leave""] call player_traderCity;";
+		};
+		class Item6
+		{
+			position[]={230,140,22703};
+			TRGDEF
+			name="Wholesaler";
+			expCond="(player distance Wholesaler) < 50;";
+			expActiv="[""Wholesaler"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Wholesaler"",true,""leave""] call player_traderCity;";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"sauerland"
+	};
+	addOnsAuto[]=
+	{
+		"sauerland"
+	};
+	randomSeed=6913869;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sauerland"
+	};
+	addOnsAuto[]=
+	{
+		"sauerland"
+	};
+	randomSeed=4081731;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sauerland"
+	};
+	addOnsAuto[]=
+	{
+		"sauerland"
+	};
+	randomSeed=4975929;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
