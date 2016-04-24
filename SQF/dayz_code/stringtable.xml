@@ -1550,7 +1550,7 @@
 		</Key>
 		<Key ID="str_bombAttached">
 			<English>Attached Carbomb! Next Survivor who starts the engine will blow up!</English>
-			<Russian>Бомба установлена! Выжившего, который решится завести двигатель разорвет на кусочки!</Russian>
+			<Russian>Бомба установлена! Выжившего, который решится завести двигатель разорвёт на кусочки!</Russian>
 			<French>La bombe est posée ! La prochaine personne qui démarre le véhicule sera éparpillée façon puzzle.</French>
 			<Czech>Bomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
 			<German>Sprengsatz angebracht! Der nächste Survivor, der den Motor startet, wird in die Luft fliegen!</German>
@@ -1564,7 +1564,7 @@
 		</Key>
 		<Key ID="str_bombMissing">
 			<English>You don&apos;t have a bomb in your inventory</English>
-			<Russian>Нужна бомба в инвентаре</Russian>
+			<Russian>Необходима бомба в инвентаре</Russian>
 			<French>Vous n&apos;avez pas de bombe</French>
 			<Czech>Nemáte u sebe bombu.</Czech>
 			<German>Du hast keinen Sprengsatz in deinem Inventar!</German>
@@ -1578,7 +1578,7 @@
 		</Key>
 		<Key ID="str_choppingTree">
 			<English>Chopping down tree.</English>
-			<Russian>Рубим дерево</Russian>
+			<Russian>Рубим дерево.</Russian>
 			<French>Abattage de l&apos;arbre</French>
 			<Czech>Porážíte strom.</Czech>
 			<German>Baum wird gefällt</German>
@@ -10698,7 +10698,7 @@
 		<Key ID="STR_EPOCH_PLAYER_12">
 			<English>Cannot abort while in a trader area!</English>
 			<German>Die Verbindung kann nicht getrennt werden, während man sich in einer Händler-Bereich aufhällt!</German>
-			<Russian>Нельзя выходить, находясь в торговом площадка!</Russian>
+			<Russian>В торговой зоне нельзя выходить из игры!</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Kan niet uitloggen in een handel gebied.</Dutch>
 			<French>Impossible d'interrompre dans un marché!</French>
@@ -10905,7 +10905,7 @@
 		<Key ID="STR_EPOCH_PLAYER_41">
 			<English>Cannot build, too many objects within %1m.</English>
 			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
-			<Russian>Нельзя построить, слишком много объектов в пределах %1m.</Russian>
+			<Russian>Нельзя построить, слишком много объектов в пределах %1м.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
 			<French>Impossible de construire, il y a trop d'objets à moins de %1m.</French>
@@ -11031,7 +11031,7 @@
 		<Key ID="STR_EPOCH_PLAYER_58">
 			<English>Key crafting needs a fire within 3 meters.</English>
 			<German>Kopieren eines Schlüssels ist nur innerhalb 3 Meter eines Feuers möglich.</German>
-			<Russian>Для создания ключа нужен огонь в пределах 3-х метров.</Russian>
+			<Russian>Для создания ключа нужен огонь вблизи 3-х метров.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Je moet binnen 3 meter van het vuur staan om de sleutel te maken.</Dutch>
 			<!-- <French></French> -->
@@ -11256,7 +11256,7 @@
 		<Key ID="STR_EPOCH_PLAYER_99">
 			<English>Stop already in progress.</English>
 			<German>Stoppen des Generators bereits im Gange.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Уже останавливается.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Bezig met stoppen.</Dutch>
 			<French>L'arrêt est déjà en cours.</French>
@@ -11337,7 +11337,7 @@
 		<Key ID="STR_EPOCH_PLAYER_108">
 			<English>Vault pitching already in progress.</English>
 			<German>Platzieren des Tresors bereits im Gange.</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Сейф уже устанавливается.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Kluis installatie is al bezig.</Dutch>
 			<French>L'installation du coffre fort est déjà en cours.</French>
@@ -12318,7 +12318,7 @@
 		<Key ID="STR_EPOCH_PLAYER_222">
 			<English>Pack 6 Pepsi</English>
 			<German>6 Pepsi packen</German>
-			<Russian>Запаковать: Пепси(6)</Russian>
+			<Russian>Запаковать: Пепси (6)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Verpak 6 pepsi</Dutch>
 			<!-- <French></French> -->
@@ -12336,7 +12336,7 @@
 		<Key ID="STR_EPOCH_PLAYER_224">
 			<English>Pack Tank Traps</English>
 			<German>Panzerfallen packen</German>
-			<Russian>Запаковать: Танковые ловушки</Russian>
+			<Russian>Запаковать: Противотанковый ёж</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Verpak tank traps</Dutch>
 			<!-- <French></French> -->
@@ -12363,7 +12363,7 @@
 		<Key ID="STR_EPOCH_PLAYER_227">
 			<English>Pack 6 Bacon</English>
 			<German>6 Speck packen</German>
-			<Russian>Запаковать: Бекон(6)</Russian>
+			<Russian>Запаковать: Бекон (6)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Verpack 6 speklappen</Dutch>
 			<!-- <French></French> -->
@@ -12480,7 +12480,7 @@
 		<Key ID="STR_EPOCH_PLAYER_239">
 			<English>Craft Locked Door</English>
 			<German>Geschlossene Tür herstellen</German>
-			<Russian>Создать: Закрытая дверь</Russian>
+			<Russian>Создать: Дверь с замком</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Creëer afsluitbare deur</Dutch>
 			<!-- <French></French> -->
@@ -12525,7 +12525,7 @@
 		<Key ID="STR_EPOCH_PLAYER_245">
 			<English>Failed, you must get into drivers seat first.</English>
 			<German>Fehlgeschlagen, Sie müssen zuerst auf den Fahrersitz.</German>
-			<Russian>Не удалось, вы должны попасть на сиденье водителя хотя бы раз.</Russian>
+			<Russian>Вы должны попасть на сиденье водителя хотя бы раз.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Mislukt, stap eerst in de bestuurders stoel.</Dutch>
 			<!-- <French></French> -->
@@ -12543,7 +12543,7 @@
 		<Key ID="STR_EPOCH_PLAYER_247">
 			<English>Quiet</English>
 			<German>Ruhe</German>
-			<Russian>Quiet</Russian>
+			<Russian>Тихо</Russian>
 			<Spanish>Quiet</Spanish>
 			<Dutch>Quiet</Dutch>
 			<French>Quiet</French>
@@ -12552,7 +12552,7 @@
 		<Key ID="STR_EPOCH_PLAYER_248">
 			<English>Alert</English>
 			<German>Alamieren</German>
-			<Russian>Alert</Russian>
+			<Russian>Бдительно</Russian>
 			<Spanish>Alert</Spanish>
 			<Dutch>Alert</Dutch>
 			<French>Alert</French>
@@ -12561,7 +12561,7 @@
 		<Key ID="STR_EPOCH_PLAYER_249">
 			<English>Walk</English>
 			<German>Laufen</German>
-			<Russian>Walk</Russian>
+			<Russian>Пешком</Russian>
 			<Spanish>Walk</Spanish>
 			<Dutch>Walk</Dutch>
 			<French>Walk</French>
@@ -12570,7 +12570,7 @@
 		<Key ID="STR_EPOCH_PLAYER_250">
 			<English>Run</English>
 			<German>Rennen</German>
-			<Russian>Run</Russian>
+			<Russian>Бегом</Russian>
 			<Spanish>Run</Spanish>
 			<Dutch>Run</Dutch>
 			<French>Run</French>
@@ -12696,7 +12696,7 @@
 		<Key ID="STR_EPOCH_PLAYER_264">
 			<English>Craft Plywood Pack</English>
 			<German>Sperrholz-Paket herstellen</German>
-			<Russian>Создать: Plywood Pack</Russian>
+			<Russian>Создать: Упаковка фанеры</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -12714,7 +12714,7 @@
 		<Key ID="STR_EPOCH_PLAYER_266">
 			<English>Craft Silver Bar</English>
 			<!-- <German>Silberbarren Stapel</German> -->
-			<!-- <Russian>Уложить в серебряный слиток</Russian> -->
+			<Russian>Уложить в серебряный слиток</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel bar van Zilver</Dutch> -->
 			<!-- <French></French> -->
@@ -12723,7 +12723,7 @@
 		<Key ID="STR_EPOCH_PLAYER_267">
 			<English>Craft Gold Bar</English>
 			<!-- <German>Goldbarren Stapel</German> -->
-			<!-- <Russian>Уложить в золотой слиток</Russian> -->
+			<Russian>Уложить в золотой слиток</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel bar van Goud</Dutch> -->
 			<!-- <French></French> -->
@@ -12777,7 +12777,7 @@
 		<Key ID="STR_EPOCH_PLAYER_274">
 			<English>Craft Sandbag Nest</English>
 			<German>Sandsack-Nest herstellen</German>
-			<Russian>Создать: Sandbag Nest</Russian>
+			<Russian>Создать: Гнездо из мешков</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -12867,7 +12867,7 @@
 		<Key ID="STR_EPOCH_PLAYER_298">
 			<English>Craft Round Fence</English>
 			<German>Abgerundeten Zaun herstellen</German>
-			<Russian>Создать: Круглая ограда из мешков с песком</Russian>
+			<Russian>Создать: Круглая ограда</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -12876,7 +12876,7 @@
 		<Key ID="STR_EPOCH_PLAYER_299">
 			<English>Build Round Fence</English>
 			<German>Abgerundeten Zaun aufstellen</German>
-			<Russian>Установить: Круглая ограда из мешков с песком</Russian>
+			<Russian>Установить: Круглая ограда</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -12993,7 +12993,7 @@
 		<Key ID="STR_EPOCH_PLAYER_316">
 			<English>You may only access friends' gear in this area.</English>
 			<German>Sie können Zahn 'Freunde Zugriff nur in diesem Bereich.</German>
-			<Russian>Вы можете получить доступ только к шестерню знакомого в этой области.</Russian>
+			<Russian>Вы можете открывать рюкзаки только друзей в этой области.</Russian>
 			<Spanish>Sólo se puede acceder engranaje amigos en esta área.</Spanish>
 			<Dutch>U mag alleen toegang tot versnelling vrienden 'op dit gebied.</Dutch>
 			<French>Vous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
@@ -13173,7 +13173,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_ATTACK">
 			<English>Attack</English>
 			<German>Attacke</German>
-			<Russian>Атака</Russian>
+			<Russian>Атаковать</Russian>
 			<Spanish>Ataque</Spanish>
 			<Dutch>Aanval</Dutch>
 			<French>Attaque</French>
@@ -13407,7 +13407,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_2">
 			<English>Maintenance already in progress.</English>
 			<German>Instandhaltung bereits in bearbeitung.</German>
-			<Russian>Уже удерживается.</Russian>
+			<Russian>Уже обслуживается.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>La maintenance est déjà en cours.</French>
@@ -13416,7 +13416,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_3">
 			<English>At least one building part is not setup yet.</English>
 			<!-- <German></German> -->
-			<Russian>По крайней мере, одна часть здания ещё не построена.</Russian>
+			<Russian>Как минимум одна часть постройки ещё не установлена.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Il reste encore des parties de la construction à maintenir.</French>
@@ -13425,7 +13425,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_4">
 			<English>You have maintained %1 building parts.</English>
 			<!-- <German></German> -->
-			<Russian>Вы удержали %1 частей здания.</Russian>
+			<Russian>Вы обслужили %1 построек.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Vous avez maintenu %1 construction(s).</French>
@@ -13434,7 +13434,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_6">
 			<English>Missing %1 more of %2</English>
 			<German>Ihnen fehlt/fehlen %1 %2</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Не хватает %2 (В количестве: %1)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Je hebt nog %1 extra %2 nodig.</Dutch>
 			<French>Il manque %1 %2</French>
@@ -13443,7 +13443,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_7">
 			<English>%1 building parts in range, maintenance would cost %2.</English>
 			<!-- <German></German> -->
-			<Russian>В радиусе %1 частей зданий, удержание будет стоить %2.</Russian>
+			<Russian>Построек найдено: %1, обслуживание будет стоить %2.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>%1 constructions à portée, la maintenance coûtera %2.</French>
@@ -13452,7 +13452,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_8">
 			<English>You have tagged a player as friendly. Waiting for other player to accept.</English>
 			<!-- <German></German> -->
-			<Russian>Вы отметили игрока как друга. Ожидание принятия.</Russian>
+			<Russian>Вы отметили игрока как друга. Ожидание принятия дружбы.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Vous avez marqué un joueur comme amical. En attente de la confirmation de ce joueur.</French>
@@ -13461,7 +13461,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_9">
 			<English>Unable to change clothes while wearing backpack.</English>
 			<!-- <German></German> -->
-			<Russian>Нельзя переодеваться, одевая рюкзак.</Russian>
+			<Russian>Нельзя переодеться с рюкзаком на спине.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Impossible de changer ses vêtements lorsque vous portez un sac à dos.</French>
@@ -13470,7 +13470,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_10">
 			<English>Unable to change clothes while carrying a filled chainsaw.</English>
 			<!-- <German></German> -->
-			<Russian>Нельзя переодеваться, неся заправленную бензопилу.</Russian>
+			<Russian>Нельзя переодеваться, держа заправленную бензопилу.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Impossible de changer ses vêtements lorsque vous avez une tronçonneuse en main.</French>
@@ -13488,7 +13488,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_14">
 			<English>No Tank Traps found nearby.</English>
 			<German>Keine Tank Traps in der Nähe gefunden.</German>
-			<Russian>Вблизи не найдено танковых ловушек.</Russian>
+			<Russian>Противотанковые ежи не найдены.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Aucun piège à tank trouvé aux alentours.</French>
@@ -13497,7 +13497,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_15">
 			<English>Another object is blocking the vehicle exit.</English>
 			<!-- <German></German> -->
-			<Russian>Другой объект блокирует выход из транспорта.</Russian>
+			<Russian>Что-то блокирует выход из транспорта.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Un objet empêche de sortir du véhicule.</French>
@@ -13542,7 +13542,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_21">
 			<English>Deconstructing modular buildables will not refund any components.</English>
 			<!-- <German></German> -->
-			<Russian>Разборка модульных построек не возвратит составные части.</Russian>
+			<Russian>Разборка модульных построек не возвратит потраченные ресурсы.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<French>Le démontage de la construction ne rendra pas de composants.</French>
@@ -13551,7 +13551,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_22">
 			<English>%1 building parts in range.</English>
 			<!-- <German></German> -->
-			<Russian>%1 стройматериалов в радиусе.</Russian>
+			<Russian>Построек найдено: %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>%1 constructions à portée.</French>
@@ -13569,7 +13569,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC">
 			<English>12 x Random Item</English>
 			<German>12 x Zufällige Gegenstände</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Случайный предмет (12x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -13677,7 +13677,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
 			<English>6 x Tank Trap</English>
 			<!-- <German></German> -->
-			<!-- <Russian></Russian> -->
+			<Russian>Противотанковый ёж (6x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -13686,7 +13686,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
 			<English>12 x Tank Trap</English>
 			<!-- <German></German> -->
-			<!-- <Russian></Russian> -->
+			<Russian>Противотанковый ёж (12x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -13713,7 +13713,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
 			<English>6 x Scrap Metal</English>
 			<!-- <German></German> -->
-			<!-- <Russian></Russian> -->
+			<Russian>Металлолом (6x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -13722,7 +13722,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<English>12 x Scrap Metal</English>
 			<!-- <German></German> -->
-			<!-- <Russian></Russian> -->
+			<Russian>Металлолом (12x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -13758,7 +13758,7 @@
 		<Key ID="STR_EPOCH_TRADER_ENTER">
 			<English>Now entering %1</English>
 			<German>Du betrittst %1</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Добро пожаловать в %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -13767,7 +13767,7 @@
 		<Key ID="STR_EPOCH_TRADER_LEAVE">
 			<English>Now leaving %1</English>
 			<German>Du verlässt %1</German>
-			<!-- <Russian></Russian> -->
+			<Russian>Покидаем %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
 			<!-- <French></French> -->
@@ -13794,7 +13794,7 @@
 		<Key ID="STR_R3F_WEIGHT_Overburdened">
 			<English>You are overburdened.</English>
 			<German>Sie sind überfordert.</German>
-			<Russian>Вы перегружена.</Russian>
+			<Russian>Вы перегружены.</Russian>
 			<Spanish>Usted está sobrecargado.</Spanish>
 			<Dutch>Je bent overbelast.</Dutch>
 			<French>Vous êtes surchargé.</French>
@@ -13819,7 +13819,7 @@
 		<Key ID="str_death_crushed">
 			<English>being crushed</English>
 			<German>quetsch</German>
-			<Russian>раздавливания</Russian>
+			<Russian>раздавлен</Russian>
 			<Spanish>ser aplastado</Spanish>
 			<French>être écrasé</French>
 			<Czech>rozdrcení</Czech>
@@ -13843,7 +13843,7 @@
 		<Key ID="str_player_death_message">
 			<English>%1 died from %2</English>
 			<German>%1 starb %2</German>
-			<Russian>%1 умерли от %2</Russian>
+			<Russian>%1 умер от %2</Russian>
 			<Spanish>%1 murió de %2</Spanish>
 			<French>%1 %2 de mort</French>
 			<Czech>%1 zemřelo %2</Czech>
@@ -13851,14 +13851,14 @@
 		<Key ID="str_player_death_killed">
 			<English>%1 was killed by %2 with a %3 from %4m</English>
 			<German>%1 wurde von %2 mit einer %3 von %4m getötet</German>
-			<Russian>%1 был убит %2 с %3 от %4м</Russian>
+			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
 			<Spanish>%1 murió a manos de %2 con un %3 de %4m</Spanish>
 			<French>%1 a été tué par %2 avec un %3 de %4m</French>
 			<Czech>%1 byl zabit %2 na %3 z %4m</Czech>
 		</Key>
 		<Key ID="STR_PITCH_DESERT_TENT">
 			<English>Pitch Desert Dome Tent</English>
-			<Russian>Поставить палатку пустыня</Russian>
+			<Russian>Поставить палатку-полусферу</Russian>
 			<Spanish>Asentar Tienda de Campaña Desierto</Spanish>
 			<French>Monter la Tente Dôme Désert</French>
 			<Czech>Postavit stan (iglú) Poušť</Czech>
@@ -13867,7 +13867,7 @@
 		<Key ID="STR_VEH_NAME_DESERT_TENT">
 			<English>Desert Dome Tent</English>
 			<French>Tente Dôme Désert</French>
-			<Russian>Палатка-полусфера пустыня</Russian>
+			<Russian>Пустынная палатка-полусфера</Russian>
 			<Spanish>Tienda de Campaña Desierto</Spanish>
 			<Czech>Stan (iglú) Poušť</Czech>
 			<German>Igluzelt Wüste</German>
@@ -13875,7 +13875,7 @@
 		<Key ID="STR_VEH_NAME_DESERT_TENT1">
 			<English>Desert Dome Tent +</English>
 			<French>Tente Dôme Désert +</French>
-			<Russian>Палатка-полусфера пустыня +</Russian>
+			<Russian>Пустынная палатка-полусфера +</Russian>
 			<Spanish>Tienda de Campaña Desierto +</Spanish>
 			<Czech>Stan (iglú) Poušť +</Czech>
 			<German>Igluzelt Wüste +</German>
@@ -13883,7 +13883,7 @@
 		<Key ID="STR_VEH_NAME_DESERT_TENT2">
 			<English>Desert Dome Tent ++</English>
 			<French>Tente Dôme Désert ++</French>
-			<Russian>Палатка-полусфера пустыня ++</Russian>
+			<Russian>Пустынная палатка-полусфера ++</Russian>
 			<Spanish>Tienda de Campaña Desierto ++</Spanish>
 			<Czech>Stan (iglú) Poušť ++</Czech>
 			<German>Igluzelt Wüste ++</German>
@@ -13891,7 +13891,7 @@
 		<Key ID="STR_VEH_NAME_DESERT_TENT3">
 			<English>Desert Dome Tent +++</English>
 			<French>Tente Dôme Désert +++</French>
-			<Russian>Палатка-полусфера пустыня +++</Russian>
+			<Russian>Пустынная палатка-полусфера +++</Russian>
 			<Spanish>Tienda de Campaña Desierto +++</Spanish>
 			<Czech>Stan (iglú) Poušť +++</Czech>
 			<German>Igluzelt Wüste +++</German>
@@ -13899,7 +13899,7 @@
 		<Key ID="STR_VEH_NAME_DESERT_TENT4">
 			<English>Desert Dome Tent ++++</English>
 			<French>Tente Dôme Désert ++++</French>
-			<Russian>Палатка-полусфера пустыня ++++</Russian>
+			<Russian>Пустынная палатка-полусфера ++++</Russian>
 			<Spanish>Tienda de Campaña Desierto ++++</Spanish>
 			<Czech>Stan (iglú) Poušť ++++</Czech>
 			<German>Igluzelt Wüste ++++</German>
@@ -13907,7 +13907,7 @@
 		<Key ID="STR_VEH_NAME_DESERT_TENT5">
 			<English>Desert Dome Tent +++++</English>
 			<French>Tente Dôme Désert +++++</French>
-			<Russian>Палатка-полусфера пустыня +++++</Russian>
+			<Russian>Пустынная палатка-полусфера +++++</Russian>
 			<Spanish>Tienda de Campaña Desierto +++++</Spanish>
 			<Czech>Stan (iglú) Poušť +++++</Czech>
 			<German>Igluzelt Wüste +++++</German>
@@ -13927,6 +13927,270 @@
 			<Spanish>Carne cocinada perro</Spanish>
 			<French>Cuit viande de chien</French>
 			<Czech>Vařené maso Dog</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_BIOMEAT">
+			<English>Bio Meat</English>
+			<German>Bio Meat</German>
+			<Russian>Органическое мясо</Russian>
+			<Spanish>Bio Meat</Spanish>
+			<French>Bio Meat</French>
+			<Czech>Bio Meat</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_BIOMEAT_DESC">
+			<English>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</English>
+			<German>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</German>
+			<Russian>Органическое мясо: Очень хороший источник пит. веществ, обладающий высокой вероятностью заражения. Ешьте на свой страх и риск.</Russian>
+			<Spanish>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</Spanish>
+			<French>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</French>
+			<Czech>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_PUMPKIN">
+			<English>Pumpkin</English>
+			<German>Pumpkin</German>
+			<Russian>Тыква</Russian>
+			<Spanish>Pumpkin</Spanish>
+			<French>Pumpkin</French>
+			<Czech>Pumpkin</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_PUMPKIN_CRAFT">
+			<English>Craft Pumpkin Seeds</English>
+			<German>Craft Pumpkin Seeds</German>
+			<Russian>Добыть семена</Russian>
+			<Spanish>Craft Pumpkin Seeds</Spanish>
+			<French>Craft Pumpkin Seeds</French>
+			<Czech>Craft Pumpkin Seeds</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_SUNFLOWER">
+			<English>Bag of Sunflower Seeds</English>
+			<German>Bag of Sunflower Seeds</German>
+			<Russian>Мешочек семечек</Russian>
+			<Spanish>Bag of Sunflower Seeds</Spanish>
+			<French>Bag of Sunflower Seeds</French>
+			<Czech>Bag of Sunflower Seeds</Czech>
+		</Key>
+		<Key ID="STR_GEM_NAME_TOPAZ">
+			<English>Topaz</English>
+			<German>Topaz</German>
+			<Russian>Топаз</Russian>
+			<Spanish>Topaz</Spanish>
+			<French>Topaz</French>
+			<Czech>Topaz</Czech>
+		</Key>
+		<Key ID="STR_GEM_NAME_OBSIDIAN">
+			<English>Obsidian</English>
+			<German>Obsidian</German>
+			<Russian>Обсидиан</Russian>
+			<Spanish>Obsidian</Spanish>
+			<French>Obsidian</French>
+			<Czech>Obsidian</Czech>
+		</Key>
+		<Key ID="STR_GEM_NAME_SAPPHIRE">
+			<English>Sapphire</English>
+			<German>Sapphire</German>
+			<Russian>Сапфир</Russian>
+			<Spanish>Sapphire</Spanish>
+			<French>Sapphire</French>
+			<Czech>Sapphire</Czech>
+		</Key>
+		<Key ID="STR_GEM_NAME_AMETHYST">
+			<English>Amethyst</English>
+			<German>Amethyst</German>
+			<Russian>Аметист</Russian>
+			<Spanish>Amethyst</Spanish>
+			<French>Amethyst</French>
+			<Czech>Amethyst</Czech>
+		</Key>
+		<Key ID="STR_GEM_NAME_EMERALD">
+			<English>Emerald</English>
+			<German>Emerald</German>
+			<Russian>Изумруд</Russian>
+			<Spanish>Emerald</Spanish>
+			<French>Emerald</French>
+			<Czech>Emerald</Czech>
+		</Key>
+		<Key ID="STR_GEM_NAME_CITRINE">
+			<English>Citrine</English>
+			<German>Citrine</German>
+			<Russian>Цитрин</Russian>
+			<Spanish>Citrine</Spanish>
+			<French>Citrine</French>
+			<Czech>Citrine</Czech>
+		</Key>
+		<Key ID="STR_GEM_NAME_RUBY">
+			<English>Ruby</English>
+			<German>Ruby</German>
+			<Russian>Рубин</Russian>
+			<Spanish>Ruby</Spanish>
+			<French>Ruby</French>
+			<Czech>Ruby</Czech>
+		</Key>
+		<Key ID="STR_ORE_NAME_IRON">
+			<English>Iron Ore</English>
+			<German>Iron Ore</German>
+			<Russian>Железная руда</Russian>
+			<Spanish>Iron Ore</Spanish>
+			<French>Iron Ore</French>
+			<Czech>Iron Ore</Czech>
+		</Key>
+		<Key ID="STR_ORE_NAME_IRON_DESC">
+			<English>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</English>
+			<German>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</German>
+			<Russian>Используется для получения металлолома. Добывается из камней с помощью кувалды.</Russian>
+			<Spanish>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</Spanish>
+			<French>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</French>
+			<Czech>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</Czech>
+		</Key>
+		<Key ID="STR_ORE_NAME_SILVER">
+			<English>Silver Ore</English>
+			<German>Silver Ore</German>
+			<Russian>Серебряная руда</Russian>
+			<Spanish>Silver Ore</Spanish>
+			<French>Silver Ore</French>
+			<Czech>Silver Ore</Czech>
+		</Key>
+		<Key ID="STR_ORE_NAME_SILVER_DESC">
+			<English>Can be mined from rocks using a sledgehammer.</English>
+			<German>Can be mined from rocks using a sledgehammer.</German>
+			<Russian>Добывается из камней с помощью кувалды.</Russian>
+			<Spanish>Can be mined from rocks using a sledgehammer.</Spanish>
+			<French>Can be mined from rocks using a sledgehammer.</French>
+			<Czech>Can be mined from rocks using a sledgehammer.</Czech>
+		</Key>
+		<Key ID="STR_ORE_NAME_GOLD">
+			<English>Gold Ore</English>
+			<German>Gold Ore</German>
+			<Russian>Золотая руда</Russian>
+			<Spanish>Gold Ore</Spanish>
+			<French>Gold Ore</French>
+			<Czech>Gold Ore</Czech>
+		</Key>
+		<Key ID="STR_ORE_NAME_GOLD_DESC">
+			<English>Can be mined from rocks using a sledgehammer.</English>
+			<German>Can be mined from rocks using a sledgehammer.</German>
+			<Russian>Добывается из камней с помощью кувалды.</Russian>
+			<Spanish>Can be mined from rocks using a sledgehammer.</Spanish>
+			<French>Can be mined from rocks using a sledgehammer.</French>
+			<Czech>Can be mined from rocks using a sledgehammer.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_OIL">
+			<English>2-Stroke Engine Oil</English>
+			<German>2-Stroke Engine Oil</German>
+			<Russian>Масло для двухтактных двигателей</Russian>
+			<Spanish>2-Stroke Engine Oil</Spanish>
+			<French>2-Stroke Engine Oil</French>
+			<Czech>2-Stroke Engine Oil</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXGAS_ACTION">
+			<English>Mix Chainsaw Gas</English>
+			<German>Mix Chainsaw Gas</German>
+			<Russian>Смешать бензин</Russian>
+			<Spanish>Mix Chainsaw Gas</Spanish>
+			<French>Mix Chainsaw Gas</French>
+			<Czech>Mix Chainsaw Gas</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_GAS">
+			<English>Gas</English>
+			<German>Gas</German>
+			<Russian>Бензин</Russian>
+			<Spanish>Gas</Spanish>
+			<French>Gas</French>
+			<Czech>Gas</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_GAS_DESC">
+			<English>Gas for Chainsaw</English>
+			<German>Gas for Chainsaw</German>
+			<Russian>Топливо для бензопилы</Russian>
+			<Spanish>Gas for Chainsaw</Spanish>
+			<French>Gas for Chainsaw</French>
+			<Czech>Gas for Chainsaw</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN">
+			<English>Mixed Gas Full</English>
+			<German>Mixed Gas Full</German>
+			<Russian>Полная канистра бензина</Russian>
+			<Spanish>Mixed Gas Full</Spanish>
+			<French>Mixed Gas Full</French>
+			<Czech>Mixed Gas Full</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC">
+			<English>20 liters of Mixed Gas.</English>
+			<German>20 liters of Mixed Gas.</German>
+			<Russian>20 литров бензина.</Russian>
+			<Spanish>20 liters of Mixed Gas.</Spanish>
+			<French>20 liters of Mixed Gas.</French>
+			<Czech>20 liters of Mixed Gas.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN">
+			<English>Mixed Gas 16L</English>
+			<German>Mixed Gas 16L</German>
+			<Russian>Канистра бензина (16л)</Russian>
+			<Spanish>Mixed Gas 16L</Spanish>
+			<French>Mixed Gas 16L</French>
+			<Czech>Mixed Gas 16L</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN_DESC">
+			<English>16 liters of Mixed Gas.</English>
+			<German>16 liters of Mixed Gas.</German>
+			<Russian>16 литров бензина.</Russian>
+			<Spanish>16 liters of Mixed Gas.</Spanish>
+			<French>16 liters of Mixed Gas.</French>
+			<Czech>16 liters of Mixed Gas.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN">
+			<English>Mixed Gas 12L</English>
+			<German>Mixed Gas 12L</German>
+			<Russian>Канистра бензина (12л)</Russian>
+			<Spanish>Mixed Gas 12L</Spanish>
+			<French>Mixed Gas 12L</French>
+			<Czech>Mixed Gas 12L</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN_DESC">
+			<English>12 liters of Mixed Gas.</English>
+			<German>12 liters of Mixed Gas.</German>
+			<Russian>12 литров бензина.</Russian>
+			<Spanish>12 liters of Mixed Gas.</Spanish>
+			<French>12 liters of Mixed Gas.</French>
+			<Czech>12 liters of Mixed Gas.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN">
+			<English>Mixed Gas 8L</English>
+			<German>Mixed Gas 8L</German>
+			<Russian>Канистра бензина (8л)</Russian>
+			<Spanish>Mixed Gas 8L</Spanish>
+			<French>Mixed Gas 8L</French>
+			<Czech>Mixed Gas 8L</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC">
+			<English>8 liters of Mixed Gas.</English>
+			<German>8 liters of Mixed Gas.</German>
+			<Russian>8 литров бензина.</Russian>
+			<Spanish>8 liters of Mixed Gas.</Spanish>
+			<French>8 liters of Mixed Gas.</French>
+			<Czech>8 liters of Mixed Gas.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN">
+			<English>Mixed Gas 4L</English>
+			<German>Mixed Gas 4L</German>
+			<Russian>Канистра бензина (4л)</Russian>
+			<Spanish>Mixed Gas 4L</Spanish>
+			<French>Mixed Gas 4L</French>
+			<Czech>Mixed Gas 4L</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN_DESC">
+			<English>4 liters of Mixed Gas.</English>
+			<German>4 liters of Mixed Gas.</German>
+			<Russian>4 литра бензина.</Russian>
+			<Spanish>4 liters of Mixed Gas.</Spanish>
+			<French>4 liters of Mixed Gas.</French>
+			<Czech>4 liters of Mixed Gas.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION">
+			<English>Fill Chainsaw</English>
+			<German>Fill Chainsaw</German>
+			<Russian>Заправить</Russian>
+			<Spanish>Fill Chainsaw</Spanish>
+			<French>Fill Chainsaw</French>
+			<Czech>Fill Chainsaw</Czech>
 		</Key>
 	</Package>
 </Project>
