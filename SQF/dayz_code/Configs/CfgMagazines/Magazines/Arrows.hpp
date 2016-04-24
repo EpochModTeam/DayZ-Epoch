@@ -23,7 +23,7 @@ class 1Rnd_Arrow_Wood : CA_Magazine
 
 class 12Rnd_Quiver_Wood : 1Rnd_Arrow_Wood
 {
-	type = WeaponSlotItem * 2;
+	type = WeaponSlotItem;
 	
 	model = "\z\addons\dayz_communityassets\models\quiver";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";

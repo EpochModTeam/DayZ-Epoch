@@ -2,7 +2,7 @@ class ItemJerrycanEmpty : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 2;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_e_ca.paa";

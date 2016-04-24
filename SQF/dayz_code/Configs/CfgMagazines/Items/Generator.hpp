@@ -2,7 +2,7 @@ class ItemGenerator : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 6;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\generator_gear.p3d";
 	picture = "\dayz_equip\textures\equip_generator_ca.paa";

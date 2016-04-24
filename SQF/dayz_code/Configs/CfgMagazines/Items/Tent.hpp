@@ -2,7 +2,7 @@ class ItemTent : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 3;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
@@ -44,7 +44,7 @@ class ItemDomeTent : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 3;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
@@ -81,8 +81,7 @@ class ItemDesertTent : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 3;
-	
+	type = WeaponSlotItem;	
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	displayName = $STR_VEH_NAME_DESERT_TENT;

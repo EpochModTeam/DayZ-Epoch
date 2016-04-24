@@ -2,7 +2,7 @@ class PartFueltank : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 2;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\fueltank.p3d";
 	picture = "\dayz_equip\textures\equip_fueltank_ca.paa";
@@ -24,7 +24,7 @@ class PartWheel : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 6;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\wheel.p3d";
 	picture = "\dayz_equip\textures\equip_wheel_ca.paa";
@@ -36,7 +36,7 @@ class PartEngine : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 10;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\engine.p3d";
 	picture = "\dayz_equip\textures\equip_engine_ca.paa";
@@ -59,7 +59,7 @@ class PartVRotor : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 8;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\vrotor.p3d";
 	picture = "\dayz_equip\textures\equip_vrotor_ca.paa";
@@ -82,7 +82,7 @@ class PartGlass : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 2;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\carglass.p3d";
 	picture = "\dayz_equip\textures\equip_carglass_ca.paa";
@@ -94,7 +94,7 @@ class PartGeneric : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 3;
+	type = WeaponSlotItem;
 	
 	model = "\dayz_equip\models\genericparts.p3d";
 	picture = "\dayz_equip\textures\equip_genericparts_ca.paa";

@@ -2,7 +2,7 @@ class ItemCamoNet : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem * 3;
+	type = WeaponSlotItem;
 	
 	model = "\z\addons\dayz_communityassets\models\packed_net_green.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_packed_net_green_ca.paa";
