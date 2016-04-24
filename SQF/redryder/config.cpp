@@ -36,60 +36,64 @@ class CfgModels
 
 class CfgAmmo
 {
-    class BulletBase;
-	class 177_BB : BulletBase {
+    class BulletCore;
+	class 177_BB : BulletCore
+	{
 		model = "z\addons\redryder\models\BB_Round.p3d";
-		simulation = shotShell;
-		soundHit[] = {0, 1};
-		hit = 4.5;
-		indirectHit = 0;
-		indirectHitRange = 0;
+		soundHit[] = {,0,1};
+		hit=3.7;indirectHit=0;indirectHitRange=0;
 		visibleFire = 10;
-		audibleFire = 0.5;
+		audibleFire = 10;
 		visibleFireTime = 3;
-		deflecting = 5;
-		airFriction = -0.001064;
+		airFriction = -0.020;
 		fuseDistance = 0;
-		CraterEffects = "";
-		explosionEffects = "";
-		muzzleEffect = "BIS_Effects_Rifle";
+		tracerStartTime=0.001;
+		tracerEndTime = 3.5;
+		deflecting = 10;
 	};
 };
 
 class CfgMagazines
 {
 	class CA_Magazine;
-	class 350Rnd_BB_Magazine : CA_Magazine 
+	class 350Rnd_BB_Magazine : CA_Magazine
 	{   
 		scope = public;
-		model = "z\addons\redryder\models\bb_magazine.p3d";	
-		picture = "z\addons\redryder\textures\bb_magazine_picture.paa"; 
-		displayName = "350 Count .177 BBs";
-		count = 350;
+		tracersEvery = 1;
+		model = "z\addons\redryder\models\bb_magazine";
+		picture ="z\addons\redryder\textures\bb_magazine_picture.paa";
+		displayName = 350 Count 177 Cal. BBs;
+		count =350;
 		ammo = 177_BB;
-		initSpeed = 175;
-		sound[] = {"z\addons\redryder\M9SD_S1", db + 8, 1,60}; 
-		reloadMagazineSound[] = {"Ca\sounds\Weapons\rifles\M1014-reload", db - 40, 1, 20};
-		descriptionShort = "350 Zinc Coated .177, 4.5mm BBs";
-		weight = 0.2;
+		initSpeed = 160;
+		sound[] = {"", db8, 1,60};
+		reloadMagazineSound[] = {"",db-40,1,20};
+		descriptionShort = "350 .177, 4.5mm BBs";
 	};
 };
+
+class cfgRecoils
+{
+ redryder_recoil[] = {0,0,0, 0.1,0.0001,0.0001, 0.1,-0.00003,-0.00003, 0.05,0,0};
+ redryder_pronerecoil[] = {0,0,0, 0.1,0.00005,0.00005, 0.05,-0.0003,-0.0003, 0.05,0,0};
+}; 
+
 class CfgWeapons
 {
 	class Default {};
 	class Rifle : Default {};
 	class RedRyder : Rifle {
 		scope = public;
-		model = "z\addons\redryder\models\RedRyder.p3d"; 
+		distanceZoomMin = 20;
+		distanceZoomMax = 20;
+		model = "z\addons\redRyder\models\RedRyder";
 		displayName = "RedRyder BB Gun";
 		displayNameMagazine = "BB";
-		magazines[] = {"350Rnd_BB_Magazine"};
-		recoil = "recoil_single_pistol_2outof3";
-		recoilProne = "recoil_single_pistol_prone_2outof3";
+		magazines[]={"350Rnd_BB_Magazine"};
+		recoil = "redryder_recoil";
+		recoilProne = "redryder_pronerecoil";
 		reloadTime = 0.45;
-		sound[] = {"\z\addons\redryder\M9SD_S1", db + 8, 1, 60}; 
-		autoFire = 0;
-		dexterity = 0.4;
+		sound[] = {"z\addons\redryder\red_fire", db8, 1,60};
 		dispersion = 0.00045;
 		minRange = 0;
 		minRangeProbab = 0.30;
@@ -97,7 +101,7 @@ class CfgWeapons
 		midRangeProbab = 0.7;
 		maxRange = 75;
 		maxRangeProbab = 0.05;
-		picture = "z\addons\redryder\textures\redryder_picture.paa"; 
-		handAnim[] = {"OFP2_ManSkeleton", "Ca\weapons\data\Anim\M24.rtm"};
+		picture = "z\addons\redryder\textures\redryder_picture.paa";
+		handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\M24.rtm"};
 	};
 };
