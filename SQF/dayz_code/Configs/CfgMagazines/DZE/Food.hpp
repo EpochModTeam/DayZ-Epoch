@@ -1,9 +1,9 @@
 class FoodBioMeat: FoodEdible {
 	scope = public;
-	displayName = "Bio Meat";
+	displayName = $STR_FOOD_NAME_BIOMEAT;
 	model = "\z\addons\dayz_epoch\models\biomeat_can.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_biomeat_CA.paa";
-	descriptionShort = "Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.";
+	descriptionShort = $STR_FOOD_NAME_BIOMEAT_DESC;
 	bloodRegen = 1600;
 };
 // new DZE harvested food
@@ -11,8 +11,8 @@ class FoodPumpkin : FoodEdible {
 	scope = public;
 	count = 1;
 	bloodRegen = 100;
-	displayName = "Pumpkin";
-	descriptionShort = "Pumpkin";
+	displayName = $STR_FOOD_NAME_PUMPKIN;
+	descriptionShort = $STR_FOOD_NAME_PUMPKIN;
 	weight = 1;
 	model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
 	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
@@ -20,7 +20,7 @@ class FoodPumpkin : FoodEdible {
 	{
 		class Crafting
 		{
-		text = "Craft Pumpkin Seeds";
+		text = $STR_FOOD_NAME_PUMPKIN_CRAFT;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
 			requiretools[] = {"ItemKnife"};
@@ -33,8 +33,8 @@ class FoodSunFlowerSeed : FoodEdible {
 	scope = public;
 	count = 1;
 	bloodRegen = 100;
-	displayName = "Bag of Sunflower Seeds";
-	descriptionShort = "Bag of Sunflower Seeds";
+	displayName = $STR_FOOD_NAME_SUNFLOWER;
+	descriptionShort = $STR_FOOD_NAME_SUNFLOWER;
 	weight = 0.1;
 	model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
 	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";

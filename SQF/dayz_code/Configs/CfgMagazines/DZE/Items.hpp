@@ -1,16 +1,16 @@
 // For Chainsaw
 class ItemMixOil : CA_Magazine {
 	scope = public;
-	displayName = "2-Stroke Engine Oil";
+	displayName = $STR_EPOCH_CHAINSAW_OIL;
 	model = "\z\addons\dayz_epoch\models\oilmix.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oilmix_CA.paa";
 	count = 1;
 	type = "256";
-	descriptionShort = "2-Stroke Engine Oil";
+	descriptionShort = $STR_EPOCH_CHAINSAW_OIL;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
-			text = "Mix Chainsaw Gas"; // TODO: localize
+			text = $STR_EPOCH_CHAINSAW_MIXGAS_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
@@ -23,8 +23,8 @@ class ItemMixOil : CA_Magazine {
 class CSGAS : CA_Magazine {
 	scope = public;
 	type = VSoft;
-	displayName = "Gas";
-	descriptionShort = "Gas for Chainsaw";
+	displayName = $STR_EPOCH_CHAINSAW_GAS;
+	descriptionShort = $STR_EPOCH_CHAINSAW_GAS_DESC;
 	count = 1000;
 	picture = "\CA\weapons\data\equip\m_m240_ca.paa";
 	ammo = "Chainsaw_Swing_Ammo";
@@ -65,14 +65,14 @@ class ItemJerryMixed: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Mixed Gas Full";
+	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN; //Full Mixed Gas Can?
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-	descriptionShort = "20 liters of Mixed Gas.";
+	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
-			text = "Fill Chainsaw";
+			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
@@ -85,14 +85,14 @@ class ItemJerryMixed4: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Mixed Gas 16L";
+	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN;
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-	descriptionShort = "16 liters of Mixed Gas.";
+	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN_DESC;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
-			text = "Fill Chainsaw";
+			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
@@ -105,14 +105,14 @@ class ItemJerryMixed3: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Mixed Gas 12L";
+	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN;
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-	descriptionShort = "12 liters of Mixed Gas.";
+	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN_DESC;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
-			text = "Fill Chainsaw";
+			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
@@ -125,14 +125,14 @@ class ItemJerryMixed2: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Mixed Gas 8L";
+	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN;
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-	descriptionShort = "8 liters of Mixed Gas.";
+	descriptionShort = STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
-			text = "Fill Chainsaw";
+			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
@@ -145,14 +145,14 @@ class ItemJerryMixed1: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Mixed Gas 4L";
+	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN;
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
-	descriptionShort = "4 liters of Mixed Gas.";
+	descriptionShort = STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN;
 	sfx = "refuel";
 	class ItemActions {
 		class Crafting {
-			text = "Fill Chainsaw";
+			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
