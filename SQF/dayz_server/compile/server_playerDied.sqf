@@ -60,15 +60,11 @@ if (_killerMethod in ["starve","dehyd","sick","bled","crushed","rad","zombie"]) 
 };
 
 if ((_killerWeapon != "unknown weapon") or {_killerMethod != "unknown"} or {_killerName != "unknown"}) then {
-	diag_log _message;
-	// Use FunctionsManager logic unit (BIS_functions_mainscope) to send chat messages so no side or quotation marks are shown
-	switch (toLower DZE_DeathMsgChat) do {
-		case "global": {[nil,nil,rspawn,[BIS_functions_mainscope,_message],{(_this select 0) globalChat (_this select 1)}] call RE;;};
-		case "side": {[nil,nil,rspawn,[BIS_functions_mainscope,_message],{(_this select 0) sideChat (_this select 1)}] call RE;};
-		case "system": {[nil,nil,rspawn,_message,{systemChat _this}] call RE;};
+	diag_log _message;	
+	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgCutText or DZE_DeathMsgDynamicText) then {
+		PVDZE_deathMessage = _message;
+		publicVariable "PVDZE_deathMessage";
 	};
-	if (DZE_DeathMsgTitleText) then {[nil,nil,"per",rTITLETEXT,("\n\n" + _message),"PLAIN DOWN"] call RE;};
-
 	// Store death messages to allow viewing at message board in trader citys.
 	PlayerDeaths set [count PlayerDeaths,[_playerName,_killerName,_killerWeapon,_distance,ServerCurrentTime]];
 };

@@ -24,7 +24,7 @@ DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills pla
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
 DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
-DZE_DeathMsgTitleText = false; // Display death messages as title text
+DZE_DeathMsgCutText = false; // Display death messages as cutText
 DZE_DeathScreen = true; // True=Use Epoch death screen (Trade city obituaries have been amended) False=Use DayZ death screen (You are dead)
 DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 DZE_modularBuild = true; // Enable Snap building by @raymix

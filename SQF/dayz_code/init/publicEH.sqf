@@ -363,6 +363,20 @@ if (!isDedicated) then {
 		_codeGuess = (_this select 1) select 0;
 		format["You have set the combination to %1",_codeGuess] call dayz_rollingMessages;
 	};
+	
+	// EPOCH ADDITION
+	"PVDZE_deathMessage" addPublicVariableEventHandler {
+		// do not allow PVDZE_deathMessage in publicvariable.txt, it is only sent from the server machine
+		_message = _this select 1;
+		switch (toLower DZE_DeathMsgChat) do {
+			// Use FunctionsManager logic unit (BIS_functions_mainscope) to send chat messages so no side or quotation marks are shown
+			case "global": {BIS_functions_mainscope globalChat _message;};
+			case "side": {BIS_functions_mainscope sideChat _message;};
+			case "system": {systemChat _message;};
+		};
+		if (DZE_DeathMsgCutText) then {_message call dayz_rollingMessages;};
+		if (DZE_DeathMsgDynamicText) then {/* add later */};
+	};
 
 	// flies and swarm sound sync
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";
