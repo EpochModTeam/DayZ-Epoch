@@ -22,7 +22,7 @@ shotgunsingleshot[] = {
 	{Loot_WEAPON,		1,		Saiga12K},
 	{Loot_WEAPON,		1,		Remington870_DZ}, //Remington870_lamp
 	{Loot_WEAPON,		1,		Crossbow_DZ},
-	//{Loot_WEAPON,		1,		RedRyder},
+	{Loot_WEAPON,		1,		RedRyder},
 	{Loot_WEAPON,		1,		M1014_DZ} //M1014
 };
 Chainsaws[] = {
@@ -36,7 +36,7 @@ farmweapons[] = {
 	{Loot_GROUP,		5,		shotgunsingleshot},
 	{Loot_WEAPON,		2,		CZ550_DZ}, //huntingrifle
 	{Loot_GROUP,		0.3,	Chainsaws},
-	//{Loot_WEAPON,		2,		RedRyder},
+	{Loot_WEAPON,		2,		RedRyder},
 	{Loot_WEAPON,		3,		Mosin_DZ}
 };
 sniperrifles[] = {

@@ -20,8 +20,8 @@ Hunting[] =
 	{Loot_MAGAZINE,		2,		FoodNutmix},
 	{Loot_MAGAZINE,		1,		ItemDocument},
 	{Loot_MAGAZINE,		1,		ItemMixOil},
-	//{Loot_WEAPON,		1,		RedRyder},
-	//{Loot_MAGAZINE,	1,		350Rnd_BB_Magazine},
+	{Loot_WEAPON,		1,		RedRyder},
+	{Loot_MAGAZINE,		1,		350Rnd_BB_Magazine},
 	
 	//Backpacks
 	{Loot_GROUP,		5,		backpacks},
