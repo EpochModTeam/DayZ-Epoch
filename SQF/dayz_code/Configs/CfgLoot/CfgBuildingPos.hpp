@@ -11,7 +11,7 @@
 #include "Buildings\InfectedCamp.hpp"
 #include "Buildings\Military.hpp"
 #include "Buildings\Office.hpp"
-#include "Buildings\Powerlines.hpp"
+//#include "Buildings\Powerlines.hpp"
 #include "Buildings\ResidentialRuins.hpp"
 #include "Buildings\Supermarket.hpp"
 #include "Buildings\Toilet.hpp"

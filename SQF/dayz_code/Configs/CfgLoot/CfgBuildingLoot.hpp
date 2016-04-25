@@ -8,7 +8,7 @@
 #include "Groups\Buildings\Industrial.hpp"
 #include "Groups\Buildings\Military.hpp"
 #include "Groups\Buildings\Office.hpp"
-#include "Groups\Buildings\Powerlines.hpp"
+//#include "Groups\Buildings\Powerlines.hpp"
 #include "Groups\Buildings\Residential.hpp"
 #include "Groups\Buildings\ResidentialRuins.hpp"
 #include "Groups\Buildings\Supermarket.hpp"
