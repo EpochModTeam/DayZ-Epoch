@@ -37,7 +37,7 @@ if ((count _knifeArray > 0) && !_hasHarvested) then {
 
 	_item setVariable ["meatHarvested",true,true];
 
-	_qty = 2;
+	_qty = 2; //not used for gutting zombies
 	if (_activeKnife == "ItemKnifeBlunt") then { _qty = round(_qty / 2); };
 
 	if (local _item) then {
@@ -76,7 +76,7 @@ if ((count _knifeArray > 0) && !_hasHarvested) then {
 	player setVariable ["humanity",_humanity,true];
 	
 	uiSleep 6;
-	_string = format[localize "str_success_gutted_animal",_text,_qty]; //%1 has been gutted, %2 meat steaks now on the carcass
+	_string = format[localize "str_success_gutted_zombie",_text]; //%1 has been gutted, zombie parts are now on the carcass
 	closeDialog 0;
 	uiSleep 0.02;
 	_string call dayz_rollingMessages;

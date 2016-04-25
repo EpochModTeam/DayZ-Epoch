@@ -6824,6 +6824,14 @@
 			<French>%1 a été dépecé, %2 morceaux de viande sont maintenant dans la carcasse.</French>
 			<Czech>%1 byla vykuchána, %2 kusy masa lze najít v mrtvole.</Czech>
 		</Key>
+		<Key ID="str_success_gutted_zombie">
+			<English>%1 has been gutted, zombie parts are now on the carcass</English>
+			<German>%1 hat entkernt worden, zombie Teile nun auf der Karkasse sind</German>
+			<Russian>%1 был урезан, зомби части теперь на туше</Russian>
+			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa</Spanish>
+			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
+			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
+		</Key>
 		<Key ID="str_medical_healing">
 			<English>You are being healed</English>
 			<German>Du wirst verbunden, stillhalten.</German>
