@@ -912,13 +912,13 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		if (s_player_parts_crtl < 0) then {
 			_humanity = player getVariable ["humanity",0];
 			_traderMenu = call compile format["menu_%1;",_typeOfCursorTarget];		
-			_low_high = "low";
+			_low_high = localize "STR_EPOCH_ACTIONS_HUMANITY_LOW";
 			_humanity_logic = false;
 			if ((_traderMenu select 2) == "friendly") then {
 				_humanity_logic = (_humanity < -5000);
 			};
 			if ((_traderMenu select 2) == "hostile") then {
-				_low_high = "high";
+				_low_high = localize "STR_EPOCH_ACTIONS_HUMANITY_HIGH";
 				_humanity_logic = (_humanity > -5000);
 			};
 			if ((_traderMenu select 2) == "hero") then {
@@ -1076,10 +1076,10 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_lockUnlock_crtl = -1;
 	player removeAction s_player_SurrenderedGear;
 	s_player_SurrenderedGear = -1;
-    player removeAction s_player_maintain_area;
-    s_player_maintain_area = -1;
-    player removeAction s_player_maintain_area_preview;
-    s_player_maintain_area_preview = -1;	
+	player removeAction s_player_maintain_area;
+	s_player_maintain_area = -1;
+	player removeAction s_player_maintain_area_preview;
+	s_player_maintain_area_preview = -1;	
 	player removeAction s_player_tamedog;
 	s_player_tamedog = -1;
 	player removeAction s_player_feeddog;

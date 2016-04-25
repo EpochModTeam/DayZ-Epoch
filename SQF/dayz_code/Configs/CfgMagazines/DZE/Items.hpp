@@ -65,7 +65,7 @@ class ItemJerryMixed: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN; //Full Mixed Gas Can?
+	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN;
 	model = "\dayz_equip\models\jerrycan.p3d";
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC;
@@ -254,10 +254,10 @@ class ItemDocument: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Document";
+	displayName = $STR_EPOCH_DOCUMENT;
 	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
-	descriptionShort = "Unknown document";
+	descriptionShort = $STR_EPOCH_DOCUMENT_DESC;
 	weight = 0.1;
 	sfx = "document";
 	class ItemActions {
@@ -276,15 +276,15 @@ class ItemPlotDeed: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Plot Deed"; // TODO: localize
+	displayName = $STR_EPOCH_PLOTDEED;
 	model = "\z\addons\dayz_epoch\models\doc_generic.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_doc_generic_ca.paa";
-	descriptionShort = "Deed to a plot of land, similar to a plot pole."; // TODO: localize
+	descriptionShort = $STR_EPOCH_PLOTDEED_DESC;
 	weight = 0.1;
 	sfx = "document";
 	class ItemActions {
 		class Crafting {
-			text = "Craft Plot Pole";
+			text = $STR_EPOCH_PLOTDEED_ACTION; //move to crafting in stringtable
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
@@ -297,64 +297,64 @@ class ItemLetter: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Letter";
+	displayName = $STR_EPOCH_LETTER;
 	model = "\z\addons\dayz_epoch\models\doc_letter.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_doc_letter_ca.paa";
-	descriptionShort = "Random letter";
+	descriptionShort = $STR_EPOCH_LETTER_DESC;
 	weight = 0.1;
 };
 class ItemBook1: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Romance Novel";
+	displayName = $STR_EPOCH_ROMANCENOVEL;
 	model = "\z\addons\dayz_epoch\models\doc_trashy1.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_trashy1_ca.paa";
-	descriptionShort = "Trashy Romance Novel - ""The seas are laden with lust and jealousy.""";
+	descriptionShort = $STR_EPOCH_ROMANCENOVEL_DESC;
 	weight = 0.1;
 };
 class ItemBook2: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Romance Novel";
+	displayName = $STR_EPOCH_ROMANCENOVEL;
 	model = "\z\addons\dayz_epoch\models\doc_trashy2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_trashy2_ca.paa";
-	descriptionShort = "Trashy Romance Novel - ""He had a chest of iron, and a heart of gold.""";
+	descriptionShort = $STR_EPOCH_ROMANCENOVEL_DESC2;
 	weight = 0.1;
 };
 class ItemBook3: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Book";
+	displayName = $STR_EPOCH_BOOK;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
-	descriptionShort = "Random Children's Book";
+	descriptionShort = $STR_EPOCH_BOOK_DESC;
 	weight = 0.1;
 };
 class ItemBook4: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Book";
+	displayName = $STR_EPOCH_BOOK;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
-	descriptionShort = "Random Children's Book";
+	descriptionShort = $STR_EPOCH_BOOK_DESC;
 	weight = 0.1;
 };
 class ItemNewspaper: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Torn Newspaper";
+	displayName = $STR_EPOCH_TORNNEWSPAPER;
 	model = "\z\addons\dayz_epoch\models\doc_deaths.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_deaths_ca.paa";
-	descriptionShort = "Torn Newspaper - ""The recent obituaries are stil legible...""";
+	descriptionShort = $STR_EPOCH_TORNNEWSPAPER_DESC;
 	weight = 0.1;
 	class ItemActions {
 		class Obituaries {
-			text = "Read Obituaries"; // TODO: localize
+			text = $STR_EPOCH_TORNNEWSPAPER_ACTION;
 			script = "spawn player_deathBoard;";
 
 		};
@@ -364,10 +364,10 @@ class ItemDocumentRamp: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Ramp";
+	displayName = $STR_EPOCH_WOODRAMP;
 	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
-	descriptionShort = "Document used in building a wooden ramp.";
+	descriptionShort = $STR_EPOCH_WOODRAMP_DESC;
 	weight = 0.1;
 	class ItemActions {
 		class Crafting {
@@ -385,10 +385,10 @@ class ItemHotwireKit: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Hotwire kit";
+	displayName = $STR_EPOCH_HOTWIREKIT;
 	model = "\z\addons\dayz_epoch\models\hotwire.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_hotwire_ca.paa";
-	descriptionShort = "Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.";
+	descriptionShort = $STR_EPOCH_HOTWIREKIT_DESC;
 	weight = 2;
 };
 
@@ -403,7 +403,7 @@ class ItemBloodbag: CA_Magazine
 	descriptionShort = "$STR_EQUIP_DESC_16";
 	class ItemActions {
 		class use {
-			text = "Self transfusion";
+			text = $STR_EPOCH_BLOODBAG_ACTION;
 			script = "spawn player_useMeds;";
 		};
 	};

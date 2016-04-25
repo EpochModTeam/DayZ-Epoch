@@ -3,10 +3,10 @@ class ItemCanvas: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Canvas";
+	displayName = $STR_EPOCH_CANVAS;
 	model = "\z\addons\dayz_epoch\models\canvas.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_canvas_ca.paa";
-	descriptionShort = "Canvas Parcel";
+	descriptionShort = $STR_EPOCH_CANVAS_DESC;
 	class ItemActions
 	{
 		class Crafting
@@ -61,10 +61,10 @@ class ItemBurlap: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Burlap";
+	displayName = $STR_EPOCH_BURLAP;
 	model = "\z\addons\dayz_epoch\models\burlap.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_burlap_ca.paa";
-	descriptionShort = "Burlap: A strong cloth like material used for building sandbags";
+	descriptionShort = $STR_EPOCH_BURLAP_DESC;
 	class ItemActions
 	{
 		class Crafting
@@ -83,10 +83,10 @@ class ItemLightBulb: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Light Bulb";
+	displayName = $STR_EPOCH_LIGHTBULB;
 	model = "\z\addons\dayz_epoch\models\bulb.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_bulb_CA.paa";
-	descriptionShort = "Lightbulb: Used in part to create a buildable lamp post. Don't tell me you didn't find this in a barn.";
+	descriptionShort = $STR_EPOCH_LIGHTBULB_DESC;
 	class ItemActions {
 		class Crafting
 		{
@@ -107,10 +107,10 @@ class ItemZombieParts: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Zombie Parts";
+	displayName = $STR_EPOCH_ZOMBIEPARTS;
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = "Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.";
+	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_DESC;
 };
 
 class ItemComboLock: CA_Magazine
@@ -118,11 +118,11 @@ class ItemComboLock: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Combination Lock";
+	displayName = $STR_EPOCH_COMBINATIONLOCK;
 	weight = 0.5;
 	model = "\z\addons\dayz_epoch\models\combo_lock_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_combolock_ca.paa";
-	descriptionShort = "Used to secure structures from unauthorized entry.";
+	descriptionShort = $STR_EPOCH_COMBINATIONLOCK_DESC;
 
 };
 
@@ -131,10 +131,10 @@ class ItemCorrugated : CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Corrugated Fence";
+	displayName = $STR_EPOCH_CORRUGATEDFENCE;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Corrugated Fence: A buildable object used for fortification purposes.";
+	descriptionShort = $STR_EPOCH_CORRUGATEDFENCE_DESC;
 	class ItemActions {
 		class Build {
 			text = $STR_EPOCH_PLAYER_214;
@@ -176,10 +176,10 @@ class ItemPole: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Metal Pole";
+	displayName = $STR_EPOCH_METALPOLE;
 	model = "\z\addons\dayz_epoch\models\pipe.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_pipe_CA.paa";
-	descriptionShort = "Pole: A few sturdy metal poles used to craft tents and other buildables";
+	descriptionShort = $STR_EPOCH_METALPOLE_DESC;
 	class ItemActions {
 		class Crafting
 		{
@@ -224,8 +224,8 @@ class ItemGunRackKit: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Gun Rack Kit";
-	descriptionShort = "A Gun Rack for 20 weapons";
+	displayName = $STR_EPOCH_GUNRACKKIT;
+	descriptionShort = $STR_EPOCH_GUNRACKKIT_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 20;
@@ -245,8 +245,8 @@ class ItemWoodCrateKit: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Crate";
-	descriptionShort = "A wood crate that holds a lot of items.";
+	displayName = $STR_EPOCH_WOODCRATE;
+	descriptionShort = $STR_EPOCH_WOODCRATE_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 20;
@@ -267,10 +267,10 @@ class ItemOilBarrel: CA_Magazine
 	count = 1;
 	// fuelQuantity = 210;
 	type = 256;
-	displayName = "Oil Barrel";
+	displayName = $STR_EPOCH_OILBARREL;
 	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
-	descriptionShort = "210 litres of Oil in a Barrel";
+	descriptionShort = $STR_EPOCH_OILBARREL_DESC;
 };
 class ItemFuelBarrel: CA_Magazine
 {
@@ -278,10 +278,10 @@ class ItemFuelBarrel: CA_Magazine
 	count = 1;
 	fuelQuantity = 210;
 	type = 256;
-	displayName = "Fuel Barrel";
+	displayName = $STR_EPOCH_FUELBARREL;
 	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
-	descriptionShort = "210 litres of fuel per barrel";
+	descriptionShort = $STR_EPOCH_FUELBARREL_DESC;
 	fireIntensity = 6; //used for tent burning
 	emptycan = "ItemFuelBarrelEmpty";
 };
@@ -291,9 +291,9 @@ class ItemFuelBarrelEmpty: ItemFuelBarrel
 	count = 1;
 	fuelQuantity = 0;
 	type = 256;
-	displayName = "Fuel Barrel (Empty)";
+	displayName = $STR_EPOCH_EMPTYFUELBARREL;
 	picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
-	descriptionShort = "210 litres of fuel per barrel (Empty)";
+	descriptionShort = $STR_EPOCH_EMPTYFUELBARREL_DESC;
 	fullcan = "ItemFuelBarrel";
 	class ItemActions {
 		class Crafting
@@ -312,8 +312,8 @@ class ItemFireBarrel_kit: CA_Magazine
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Fire Barrel Kit";
-		descriptionShort = "Fire Barrel";
+		displayName = $STR_EPOCH_FIREBARRELKIT;
+		descriptionShort = $STR_EPOCH_FIREBARRELKIT_DESC;
 		model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 		weight = 45;
@@ -333,8 +333,8 @@ class workbench_kit: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Workbench";
-	descriptionShort = "Workbench: Used to craft.";
+	displayName = $STR_EPOCH_WORKBENCH;
+	descriptionShort = $STR_EPOCH_WORKBENCH_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 10;
@@ -1135,8 +1135,8 @@ class ItemSledgeHandle : CA_Magazine {
 class ItemKiloHemp : CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "Kilo of Hemp";
-	descriptionShort = "Kilo of Hemp";
+	displayName = $STR_EPOCH_KILOOFHEMP;
+	descriptionShort = $STR_EPOCH_KILOOFHEMP;
 	weight = 1;
 	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
@@ -1154,7 +1154,7 @@ class ItemKiloHemp : CA_Magazine {
 		};
 		class Crafting1
 		{
-			text = "Craft Hemp Seeds";
+			text = $STR_EPOCH_PLAYER_269a;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			neednearby[] = {""};
 			requiretools[] = {"ItemKnife"};
