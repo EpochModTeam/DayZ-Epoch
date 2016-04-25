@@ -25,7 +25,7 @@ class ItemHatchet : ItemCore
 		
 		class Toolbelt
 		{
-			text = "Remove from Toolbelt";
+			text = $STR_ACTIONS_RFROMTB;
 			script = "spawn player_addToolbelt;";
 			use[] = {"ItemHatchet"};
 			output[] = {"MeleeHatchet"};
