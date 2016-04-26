@@ -387,17 +387,25 @@ if (!isDedicated) then {
 			(_display displayCtrl 157) ctrlShow false;
 			(_display displayCtrl 158) ctrlShow false;
 		};
-
-		// Prevent carrying 2 rifles 'exploit'
-		if (primaryWeapon player == "" && dayz_onBack != "" && !(dayz_onBack in MeleeWeapons)) then {
+							  
+		if ((DZE_TwoPrimaries == 0) && {(primaryWeapon player == "" && dayz_onBack != "" && !(dayz_onBack in MeleeWeapons))}) then {
 			//["gear"] call player_switchWeapon;
 			0 call dz_fn_switchWeapon;
+			closeDialog 0;
 		};
-
-		if (primaryWeapon player != "" && (primaryWeapon player in MeleeWeapons || dayz_onBack in MeleeWeapons)) then {
+		if ((DZE_TwoPrimaries == 1) && {(primaryWeapon player != "" && dayz_onBack != "" && (!(dayz_onBack in MeleeWeapons)) && !(primaryWeapon player in MeleeWeapons))}) then {
+			//["gear"] call player_switchWeapon;
+			0 call dz_fn_switchWeapon;
+			closeDialog 0;
+		};
+		if ((DZE_TwoPrimaries == 0) && primaryWeapon player != "" && (primaryWeapon player in MeleeWeapons || dayz_onBack in MeleeWeapons)) then {
 			(_display displayCtrl 1204) ctrlShow true;
 		} else {
-			(_display displayCtrl 1204) ctrlShow false;
+			if ((DZE_TwoPrimaries > 0) && (primaryWeapon player != "")) then {
+				(_display displayCtrl 1204) ctrlShow true;
+			} else {
+				(_display displayCtrl 1204) ctrlShow false;
+			};
 		};
 
 		if (DayZ_onBack != "") then {

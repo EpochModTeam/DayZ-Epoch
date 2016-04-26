@@ -20,6 +20,7 @@ DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
 DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
 DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
 
+DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 (default) allow player to hold two primary weapons, one on back and one in their hands
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
@@ -41,9 +42,6 @@ DZE_UI = "vanilla"; //"vanilla","epoch","dark"  UI status icons style. Dark acco
 MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE to spawn around the map
 MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
-
-
-
 
 /* 
 	Developers:
