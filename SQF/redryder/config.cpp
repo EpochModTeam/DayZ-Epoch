@@ -61,7 +61,7 @@ class CfgMagazines
 		scope = public;
 		tracersEvery = 1;
 		model = "z\addons\redryder\models\bb_magazine";
-		picture ="z\addons\redryder\textures\bb_magazine_picture.paa";
+		picture ="\z\addons\redryder\textures\bb_magazine_picture.paa";
 		displayName = 350 Count 177 Cal. BBs;
 		count =350;
 		ammo = 177_BB;
@@ -101,7 +101,7 @@ class CfgWeapons
 		midRangeProbab = 0.7;
 		maxRange = 75;
 		maxRangeProbab = 0.05;
-		picture = "z\addons\redryder\textures\redryder_picture.paa";
+		picture = "\z\addons\redryder\textures\redryder_picture.paa";
 		handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\M24.rtm"};
 	};
 };
