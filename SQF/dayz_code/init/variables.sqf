@@ -314,7 +314,7 @@ carryClick = false;
 dayz_workingInprogress = false;
 
 //INT Nutrition Info
-r_player_Nutrition = [0]; //[Calories]
+r_player_Nutrition = 0; // Calories
 r_player_nutritionMuilpty = 2;
 
 //count actions

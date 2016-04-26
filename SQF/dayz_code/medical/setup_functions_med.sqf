@@ -177,7 +177,7 @@ fnc_usec_calculateBloodPerSec = {
 		_bloodLossPerSec = _bloodLossPerSec + 3;
 	};
 	
-	//_golbalNutrition = 1200 / (r_player_Nutrition select 0);
+	//_golbalNutrition = 1200 / r_player_Nutrition;
 
 	if (r_player_bloodregen > 0) then {
 		_bloodGainPerSec = r_player_bloodregen * 0.1;

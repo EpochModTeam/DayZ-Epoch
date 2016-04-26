@@ -186,11 +186,11 @@ while {1 == 1} do {
 		_hunger = (abs((((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal) * 5) + _speed + dayz_myLoad) * 3);
 		_thirst = 2; if (_refObj == player) then {_thirst = (_speed + 4) * 3;};
 		_NutritionLoss = _Nutrition - (((_thirst / 1000) + (_hunger / 1000)) * (dayz_temperatur / dayz_temperaturnormal));		
-		r_player_Nutrition = [_NutritionLoss];
+		r_player_Nutrition = _NutritionLoss;
 	} else {
-		r_player_Nutrition = [0];
+		r_player_Nutrition = 0;
 	};
-	dayz_nutrition = r_player_Nutrition select 0;
+	dayz_nutrition = r_player_Nutrition;
 	
 	//Temperatur
 	2 call player_temp_calculation; //2 = sleep time of this loop //TeeChange
