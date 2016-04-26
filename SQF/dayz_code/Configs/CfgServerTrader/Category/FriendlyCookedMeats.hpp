@@ -29,17 +29,17 @@ class Category_630 {
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class FishCookedTrout {
+	class FishCookedTrout { // most common
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
-	class FishCookedSeaBass {
+	class FishCookedSeaBass { // less common
 		type = "trade_items";
 		buy[] = {3,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
 	};
-	class FishCookedTuna {
+	class FishCookedTuna { // rarest
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};

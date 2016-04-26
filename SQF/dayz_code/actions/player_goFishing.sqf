@@ -22,10 +22,18 @@ _linecastmax = 67;
 
 _isOk = false;
 _inBoat = (player != vehicle player) && {(vehicle player) isKindOf "Ship"};
+_ispond = false;
+{
+	if (["pond", str _x] call fnc_inString && {((getPosASL player) select 2 < ((getPosASL _x) select 2)) or _inBoat}) exitWith {
+		_ispond = true;
+		_num = ceil (random (player distance _x));
+	};
+} count nearestObjects [player, [], 50];
+
 for "_i" from 1 to 10 do {
-    _num = floor(random (2 * _linecastmax / 3) + _linecastmax / 3);
+    if (!_ispond) then {_num = floor(random (2 * _linecastmax / 3) + _linecastmax / 3);};
     _position = if (_inBoat) then { (vehicle player) modeltoworld [-_num, 0 ,0] } else { player modeltoworld [0,_num,0] };
-    _elevation = _position select 2;
+    //_elevation = _position select 2;
     /*  
         _position set [ 2, 1 ];
         _position = ASLToATL _position;
@@ -36,25 +44,8 @@ for "_i" from 1 to 10 do {
         else {
             tutu setPosATL _position;
         };
-    */
-    _ispond = if (_elevation < 0.5 or surfaceIsWater _position) then { false } else { // riverbed must be at 0.5 m depth at least
-        private [ "_ret","_bb","_w2m" ];
-        _position set [ 2, _elevation - 0.5 ];
-        _ret = false;
-        {
-            {
-                _w2m = _x worldToModel _position;
-                _bb = (boundingbox _x) select 1;
-                _linecastmax = _linecastmax min ((_bb select 0) min (_bb select 1));
-                //_dir = [player, _x] call BIS_fnc_relativeDirTo; if (_dir > 180) then {_dir = _dir - 360};
-                if ((("" == typeOf _x) and ((_w2m select 2) < 0.5)) and {((abs(_w2m select 0) < (_bb select 0)) and (abs(_w2m select 1) < (_bb select 1)))}) exitWith { // ponds
-                    _ret = true;
-                };
-            } count (nearestObjects [_x, [], 2]); // find ponds
-            if (_ret) exitWith {};
-        } forEach nearestObjects [_position, ["waterHoleProxy"], 45]; // find waterholeproxy close to pond centers
-        _ret
-    };
+    */	
+	
 //    diag_log [ _position, _elevation, surfaceIsWater _position, _linecastmax, _ispond, "=>",  ((surfaceIsWater _position or _ispond) and ((player == vehicle player) or {((vehicle player) isKindOf "Ship")})) ];
     if ((surfaceIsWater _position or _ispond) && ((player == vehicle player) or {(vehicle player) isKindOf "Ship"})) exitWith {
         _isOk = true;

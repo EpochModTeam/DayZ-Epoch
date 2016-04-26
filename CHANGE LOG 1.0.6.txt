@@ -79,6 +79,7 @@
 [FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
 [FIXED] Reworked death messages. Fixed messages not always showing, undefined errors and wrong distance bug. Added bled out, killed by zombie, etc. MPHit event handler (fnc_plyrHit) is no longer needed. @ebaydayz
 [FIXED] Player no longer hears radiation sound when changing clothes. @ebaydayz
+[FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
