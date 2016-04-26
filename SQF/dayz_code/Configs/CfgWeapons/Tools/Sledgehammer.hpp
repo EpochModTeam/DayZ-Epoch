@@ -8,19 +8,22 @@ class ItemSledge: ItemCore // Epoch class
 	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
 	class ItemActions
 	{
+		class ToBack
+		{
+			text = $STR_ACTIONS_2BACK;
+			script = "spawn player_addtoBack;";
+			use[] = {"ItemSledge"};
+			output[] = {"MeleeSledge"};
+		};
+		
 		class Toolbelt
 		{
-			text=$STR_ACTIONS_RFROMTB;
-			script="spawn player_addToolbelt;";
-			use[]=
-			{
-				"ItemSledge"
-			};
-			output[]=
-			{
-				"MeleeSledge"
-			};	
+			text = $STR_ACTIONS_RFROMTB;
+			script = "spawn player_addToolbelt;";
+			use[] = {"ItemSledge"};
+			output[] = {"MeleeSledge"};
 		};
+
 		/* Lets take this out for now and see how it goes.
 		class MineOre
 		{
