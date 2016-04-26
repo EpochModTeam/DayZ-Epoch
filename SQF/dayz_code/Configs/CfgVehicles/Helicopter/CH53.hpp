@@ -6,6 +6,7 @@ class CH53_DZE : USEC_ch53_E {
 	displaynameshort = "CH53_DZE";
 	destrType = "DestructWreck";
 	enablemanualfire = 0;
+	secondaryExplosion = -1;
 	crew = "";
 	soundGetIn[] = {"\ca\Sounds\Air\Noises\heli_door_01",0.316228,1};
 	soundGetOut[] = {"\ca\Sounds\Air\Noises\heli_door_01",0.316228,1,30};
@@ -28,4 +29,8 @@ class CH53_DZE : USEC_ch53_E {
 	transportMaxMagazines = 80;
 	transportmaxbackpacks = 15;
 	fuelCapacity = 3849;
+	class eventhandlers {
+		GetIn = "if ((_this select 2) == player) then {MonitorVM = [_this select 0] execvm '\usec_ch53\scripts\ch53_monitor.sqf';};";
+		init = "MonitorVM = [_this select 0] execvm '\usec_ch53\scripts\ch53_monitor.sqf';MonitorSFXVM = [_this select 0] execvm '\z\addons\dayz_code\system\CH53\ch53_monitorSFX.sqf';";
+	};
 };

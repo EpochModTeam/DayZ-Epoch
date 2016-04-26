@@ -82,6 +82,7 @@
 [FIXED] Player no longer hears radiation sound when changing clothes. @ebaydayz
 [FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
 [FIXED] Players are now ejected and killed when their vehicle is destroyed. @icomrade
+[FIXED] CH53_DZE now explodes and kills passengers upon destruction. @icomrade
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
