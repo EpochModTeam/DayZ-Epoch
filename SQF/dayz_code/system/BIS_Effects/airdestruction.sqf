@@ -5,7 +5,13 @@ _int = (fuel _v)*(8+random 2);
 _t=time;
 
 if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
-
+	if (player in (crew _v)) then {
+		[] spawn { //kill players when their vehicle explodes since this is too difficult for ArmA on its own
+			player action ["Eject",vehicle player]; //eject player so I can get their gear
+			sleep 0.01; //don't use uisleep here
+			[player, "explosion"] spawn player_death;
+		};
+	};
 _fl = "#particlesource" createVehicleLocal getPosATL _v;
 _fl attachto [_v,[0,0,0],"destructionEffect2"];
 _fl setParticleRandom [0.3, [1, 1, 0], [0, 0, 0], 0, 0.3, [0, 0, 0, 0], 0, 0];
@@ -31,9 +37,7 @@ _tv=11;
 
 //Remove weapons/ammo to prevent explosion. Script will create its own explosions (doesnt work?)
 removeallweapons _v;
-if((local _v) AND (_v isKindOf"Air") )then{
-	_expl=createVehicle["HelicopterExploSmall",(getPosATL _v),[],0,"CAN_COLLIDE"];
-};
+if (local _v) then {_expl=createVehicle ["HelicopterExploSmall", (getPosATL _v), [], 0, "CAN_COLLIDE"];};
 
 if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
 while {_i <1200 && ((velocity _v select 2)<-20 || (getPosATL _v select 2)>8) && !(alive _v) && !(isnull _v) && (getPosATL _v select 2)>1} do
@@ -43,7 +47,7 @@ if (_tv>2) then {_dr=1/_tv} else {_dr=1};
 _fl setDropInterval _dr;
 _sm setDropInterval _dr;
 _i=_i+1;
-uiSleep 0.2;
+sleep 0.2;
 };
 }; // end of dedicated check
 
@@ -74,7 +78,7 @@ if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
 	_splash setparticlecircle [2,[0,3,15]];
 	_splash setDropInterval 0.002;
 
-	uiSleep 0.2;
+	sleep 0.2;
 	deletevehicle _wave;deletevehicle _splash;
 }; // end of dedicated check
          /*
@@ -113,7 +117,7 @@ else
 		_velz=velocity _v select 2;
 		if (_velz>1) then {_v setvelocity [velocity _v select 0,velocity _v select 1,0]};
 		_expl = createVehicle ["HelicopterExploBig", [_pos select 0,_pos select 1,(_pos select 2) + 1], [], 0, "CAN_COLLIDE"];
-		uiSleep 0.05;
+		sleep 0.05;
                 /*
 		_wreck=GetText (configFile >> "CfgVehicles" >> (typeof _v) >> "wreck");
 		if (_wreck!="") then
@@ -128,7 +132,7 @@ else
 				deleteVehicle _v;
 				_v =(_wreck) createvehicle _pos;
 				{_x moveincargo _v} foreach _crw;
-				//uiSleep 0.05;
+				//sleep 0.05;
 				_v setvelocity _vel;
 				//_v setPos _pos;
 				_v setvectordir (_dir);

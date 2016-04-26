@@ -66,7 +66,7 @@ _dirt setDropInterval 0.05;
 		_dirt setDropInterval _dr;
 		//_shards setDropInterval _dr;
 
-		uiSleep (0.25 - (_speed / 1000));
+		sleep (0.25 - (_speed / 1000));
 		_i = _i + 1;
 	};
 deleteVehicle _smoke;
@@ -84,5 +84,5 @@ if (local _v) then
 	["Burn", _v, _int, _t] call BIS_Effects_globalEvent;
 	[_v,_int,false] spawn BIS_Effects_Secondaries;
 };
-uiSleep 0.5;
+sleep 0.5;
 _v setvelocity [0,0,-0.01];
