@@ -6,6 +6,7 @@ class ItemSledge: ItemCore // Epoch class
 	picture="\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa";
 	displayName=$STR_EQUIP_NAME_SledgeHammer;
 	descriptionShort=$STR_EQUIP_SLEDGE_DESC;
+	
 	class ItemActions
 	{
 		class ToBack
