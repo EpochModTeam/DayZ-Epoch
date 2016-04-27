@@ -43,7 +43,10 @@ EpochDeathBoardClick = {
 	if (_i < 0) exitWith {};
 	_output = _this select 1;
 	_record = PVDZE_plr_DeathBResult select _i;
-	_record_stxt = call compile format["epoch_death_board_record_%1;",_i];
+	_boardRecord_Var = compile format["epoch_death_board_record_%1;",_i];
+	if (!isNil {call _boardRecord_Var}) then {
+		_record_stxt = call _boardRecord_Var;
+	};
 	if(isNil "_record_stxt") then {
 		_record_stxt = format["<t size='1.6' align='left'>%1</t><br /><br />", (_record select 0)];
 
