@@ -160,8 +160,8 @@ dz_fn_switchWeapon =
 			//Current weapon is primary
 			if (IS_PRIMARY(_current)) exitWith
 			{
-				//if current is rifle and on back is melee
-				if (!IS_MELEE(_current) && { IS_MELEE(dayz_onBack) }) then
+				//if current is rifle and on back is melee OR two rifles are allowed
+				if ((!IS_MELEE(_current) && { IS_MELEE(dayz_onBack) }) or (DZE_TwoPrimaries > 1)) then
 				{
 					if (dayz_quickSwitch) then
 					{

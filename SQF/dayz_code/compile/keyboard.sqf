@@ -63,7 +63,7 @@ if (isNil "keyboard_keys") then {
 		3 call dz_fn_switchWeapon;
         _handled = true;
     };
-    _melee = {
+    _melee = { // Also works for rifle on back if DZE_TwoPrimaries = 2;
 		4 call dz_fn_switchWeapon;
         _handled = true;
     };
