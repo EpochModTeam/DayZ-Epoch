@@ -142,7 +142,7 @@ while {1 == 1} do {
 
 			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos || (dayz_myPosition select 1) < dayz_minpos || (dayz_myPosition select 0) > dayz_maxpos || (dayz_myPosition select 1) > dayz_maxpos);
 
-			if ((_outsideMap || DZE_Quarantine) && {!r_player_dead} && {!isNull (findDisplay 46)} && {player distance (getMarkerPos "respawn_west") > 200}) then {
+			if ((_outsideMap || DZE_Quarantine) && {!r_player_dead} && {!isNull (findDisplay 46)} && {player distance (getMarkerPos "respawn_west") > 15}) then {
 				DZE_InRadiationZone = true;
 			};
 			player setVariable["posForceUpdate",true,true];

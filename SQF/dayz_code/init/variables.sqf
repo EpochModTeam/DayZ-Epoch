@@ -505,12 +505,13 @@ if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
-if ((toLower worldName) in ["napf","sauerland","tavi"]) then {
-	dayz_minpos = if ((toLower worldName) == "tavi") then {-26000} else {-1000};
-	dayz_maxpos = 26000;
-} else {
-	dayz_minpos = -20000;
-	dayz_maxpos = 20000;
+
+switch (toLower worldName) do {
+	case "napf";
+	case "sauerland" : {dayz_minpos = -1000; dayz_maxpos = 26000;};
+	case "tavi" : {dayz_minpos = -26000; dayz_maxpos = 26000;};
+	case "chernarus" : {dayz_minpos = -1; dayz_maxpos = 16000;};
+	case default {dayz_minpos = -20000; dayz_maxpos = 20000;};
 };
 
 if (isServer) then {
