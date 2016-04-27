@@ -67,8 +67,16 @@ while {(alive _vehicle)} do {
 	if(player in (crew _vehicle)) then {sleep _wait;} else {sleep (_wait * 4);};
 };
 if (player in (crew _vehicle) && (!alive _vehicle)) then {
-			player action ["Eject",vehicle player]; //eject player so I can get their gear
-			sleep 0.01; //don't use uisleep here
-			[player, "explosion"] spawn player_death; //kill player
+	_cancel = false;
+	{
+		_SZPos = _x select 0;
+		_radius =  _x select 1;
+		if ((isInTraderCity || !canbuild) && {(player distance _SZPos) < _radius}) then {_cancel = true;};
+	} count DZE_SafeZonePosArray;
+	if (!_cancel) then {
+		player action ["Eject",vehicle player]; //eject player so I can get their gear
+		sleep 0.01; //don't use uisleep here
+		[player, "explosion"] spawn player_death;
+	};
 };
 _vehicle removeAllEventHandlers "Dammaged";

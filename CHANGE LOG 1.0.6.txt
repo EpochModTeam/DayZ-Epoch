@@ -83,6 +83,7 @@
 [FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
 [FIXED] Players are now ejected and killed when their vehicle is destroyed. @icomrade
 [FIXED] CH53_DZE now explodes and kills passengers upon destruction. @icomrade
+[NOTE]	Servers that use trader safezones must configure the variable DZE_SafeZonePosArray with their safezone posisitons and radii, otherwise passangers of vehicles in safezones will be killed upon destruction of their vehicle
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
@@ -91,6 +92,6 @@
 
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
-[INFO] (EXTREMELY IMPORTANT) Server owners MUST update their required build and beta to 131129
+[INFO] Server owners and players should use the stable branch of ArmA 2 OA
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.

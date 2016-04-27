@@ -42,7 +42,7 @@ DZE_UI = "vanilla"; //"vanilla","epoch","dark"  UI status icons style. Dark acco
 MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE to spawn around the map
 MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
-
+DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS] RADIUS],[[3D POS] RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
 /* 
 	Developers:
 	
