@@ -19,6 +19,15 @@ class WeaponHolder_ItemCrowbar: WeaponHolderBase
 		init="[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };
+class WeaponHolder_ItemSledge : WeaponHolderBase { // Epoch class. Needed for player_dropWeapon
+	scope = public;
+	displayName = $STR_EQUIP_NAME_SledgeHammer;
+	model="\z\addons\dayz_epoch\models\sledge_mag.p3d";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','ItemSledge'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
+};
 /*
 class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
 {

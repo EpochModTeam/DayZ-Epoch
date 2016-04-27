@@ -4,8 +4,9 @@
 [NEW] 1.8.7 traps, tripwires (cans, flare, grenade, smoke) and car bomb
 [NEW] 1.8.7 spawn selection, set dayz_spawnselection = 1; in init.sqf (Chernarus only)
 [NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
-[NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee)
 [NEW] 1.8.7 configurable blood trails, set dayz_bleedingeffect in init.sqf
+[NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee (or rifle onBack if DZE_TwoPrimaries=2;))
+[NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. see ConfigVariable.sqf for details @icomrade
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 [NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
 [NEW] Anzio 20mm sniper and RedRyder BB Gun by @arma2WillRobinson
@@ -28,7 +29,6 @@
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
 [NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
-[NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. see ConfigVariable.sqf for details @icomrade
 
 [CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
