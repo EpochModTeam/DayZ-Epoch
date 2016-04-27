@@ -28,6 +28,7 @@
 [NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
 [NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. see ConfigVariable.sqf for details @icomrade
+[NEW] Zupa's Advanced Trading is now included as part of the Epoch Code, enabled with DZE_advancedTrading = true; NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
 
 [CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz

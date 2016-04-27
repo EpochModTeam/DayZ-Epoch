@@ -43,6 +43,16 @@ MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE to spawn around the m
 MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS] RADIUS],[[3D POS] RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
+
+/****** Advanced Trading Variables ***********/
+DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
+Z_AT_FolderLocation = '\z\addons\dayz_code\actions\AdvancedTrading';
+Z_VehicleDistance = 30; // Distance that a vehicle needs to be to see it's content or to sell it.
+Z_SingleCurrency = false; // Does your server use a single currency system.
+Z_AllowTakingMoneyFromBackpack = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your backpack.
+Z_AllowTakingMoneyFromVehicle = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your vehicle.
+Z_MoneyVariable = "cashMoney"; // If using a Single currency system, change this to whatever currency you are using.
+/**********************************************/
 /* 
 	Developers:
 	

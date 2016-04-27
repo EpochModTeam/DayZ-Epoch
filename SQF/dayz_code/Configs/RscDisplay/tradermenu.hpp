@@ -281,3 +281,7 @@ class TraderDialog
 		};
 	};
 };
+
+//Include advanced trading dialogue
+#include "ZSCdefines.hpp"
+#include "advancedTrading.hpp"
