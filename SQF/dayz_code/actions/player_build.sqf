@@ -88,118 +88,28 @@ if(_abort) exitWith {
 	DZE_ActionInProgress = false;
 };
 
-_classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
-_classnametmp = _classname;
-_require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
-_text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
-_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
+_canBuild = [_pos, _item, true] call DZE_BuildChecks;
+if (_canBuild select 0) then {
+	_classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
+	_classnametmp = _classname;
+	_require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
+	_text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+	_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
 
-_lockable = 0;
-if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
-	_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable");
-};
-
-_requireplot = DZE_requireplot;
-if(isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
-	_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");
-};
-
-_isAllowedUnderGround = 1;
-if(isNumber (configFile >> "CfgVehicles" >> _classname >> "nounderground")) then {
-	_isAllowedUnderGround = getNumber(configFile >> "CfgVehicles" >> _classname >> "nounderground");
-};
-
-_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
-if((count _offset) <= 0) then {
-	_offset = [0,1.5,0];
-};
-
-_isPole = (_classname == "Plastic_Pole_EP1_DZ");
-_isLandFireDZ = (_classname == "Land_Fire_DZ");
-
-_distance = DZE_PlotPole select 0;
-_needText = localize "str_epoch_player_246";
-_canBuildOnPlot = false;
-_nearestPole = objNull;
-_ownerID = 0;
-_friendlies = [];
-
-if(_isPole) then {
-	_distance = DZE_PlotPole select 1;
-};
-
-// check for near plot
-_findNearestPoles = nearestObjects [_pos, ["Plastic_Pole_EP1_DZ"], _distance];
-_findNearestPole = [];
-
-{
-	if (alive _x) then {
-		_findNearestPole set [(count _findNearestPole),_x];
-	};
-} count _findNearestPoles;
-
-_IsNearPlot = count (_findNearestPole);
-
-// If item is plot pole and another one exists within 45m
-if(_isPole && _IsNearPlot > 0) exitWith {  DZE_ActionInProgress = false; format[localize "str_epoch_player_44",_distance] call dayz_rollingMessages; };
-
-if(_IsNearPlot == 0) then {
-
-	// Allow building of plot
-	if(_requireplot == 0 || _isLandFireDZ) then {
-		_canBuildOnPlot = true;
+	_lockable = 0;
+	if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
+		_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable");
 	};
 
-} else {
-	// Since there are plots nearby we check for ownership and then for friend status
-
-	// check nearby plots ownership and then for friend status
-	_nearestPole = _findNearestPole select 0;
-
-	// Find owner
-	_ownerID = _nearestPole getVariable ["CharacterID","0"];
-
-	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
-
-	// check if friendly to owner
-	if(dayz_characterID == _ownerID) then {  //Keep ownership
-		// owner can build anything within his plot except other plots
-		if(!_isPole) then {
-			_canBuildOnPlot = true;
-		};
-
-	} else {
-		// disallow building plot
-		if(!_isPole) then {
-			_friendlies		= player getVariable ["friendlyTo",[]];
-			// check if friendly to owner
-			if(_ownerID in _friendlies) then {
-				_canBuildOnPlot = true;
-			};
-		};
+	_isAllowedUnderGround = 1;
+	if(isNumber (configFile >> "CfgVehicles" >> _classname >> "nounderground")) then {
+		_isAllowedUnderGround = getNumber(configFile >> "CfgVehicles" >> _classname >> "nounderground");
 	};
-};
 
-// _message
-if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; format[localize "STR_EPOCH_PLAYER_135",_needText,_distance] call dayz_rollingMessages; };
-
-_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables"];
-_buildables set [count _buildables,"TentStorage"];
-_center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
-if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages;};
-
-_missing = "";
-_hasrequireditem = true;
-{
-	_hastoolweapon = _x in weapons player;
-	if(!_hastoolweapon) exitWith { _hasrequireditem = false; _missing = getText (configFile >> "cfgWeapons" >> _x >> "displayName"); };
-} count _require;
-
-_hasbuilditem = _this in magazines player;
-if (!_hasbuilditem) exitWith {DZE_ActionInProgress = false; format[localize "str_player_31",_text,"build"] call dayz_rollingMessages; };
-
-if (!_hasrequireditem) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_137",_missing] call dayz_rollingMessages; };
-if (_hasrequireditem) then {
+	_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
+	if((count _offset) <= 0) then {
+		_offset = [0,1.5,0];
+	};
 
 	_location = [0,0,0];
 	_isOk = true;
@@ -471,7 +381,7 @@ if (_hasrequireditem) then {
 
 				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
-				if (_isPole) then {
+				if (_canBuild select 1) then {
 					[] spawn player_plotPreview;
 				};
 

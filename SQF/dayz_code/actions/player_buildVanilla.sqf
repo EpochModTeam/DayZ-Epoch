@@ -107,6 +107,10 @@ if (!_ok) exitWith {
 	_msg call dayz_rollingMessages;
 };
 
+_posReference = [player] call FNC_GetPos;
+
+_canBuild = [_posReference, _item, false] call DZE_BuildChecks;
+if (!(_canBuild select 0)) exitWith {};
 
 //localize "str_player_build_rotate" call dayz_rollingMessages;
 _msg = localize "str_player_build_rotate";
@@ -288,7 +292,7 @@ _dir = getDir player;
 _object setDir _dir;
 Dayz_constructionContext = [_object, round (_dir/5)*5, cameraView, false, true, _keepOnSlope]; 
                             // ghost, angle, previous camera, build view on/off, continue on/off, slope on/off
-_posReference = getPosATL player;
+//_posReference = getPosATL player;
 _objColliding = objNull;
 _best = [50,[0,0,0],[0,0,0]];
 _maxplanting = 10;
