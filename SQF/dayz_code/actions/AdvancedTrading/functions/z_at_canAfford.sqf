@@ -21,7 +21,7 @@ if( Z_AllowTakingMoneyFromBackpack ) then {
   _backpackPlayer = unitBackpack player;
 
   if (!isNull _backpackPlayer) then {
-    _mags = getMagazineCargo Z_vehicle;
+    _mags = getMagazineCargo _backpackPlayer;
     _backpackMoney = [];
     _kinds = _mags select 0;
     _ammmounts = _mags select 1;
