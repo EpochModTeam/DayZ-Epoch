@@ -7,7 +7,7 @@
 [NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee)
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 [NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
-[NEW] RedRyder BB Gun by @arma2WillRobinson
+[NEW] Anzio 20mm sniper and RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
 [NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz

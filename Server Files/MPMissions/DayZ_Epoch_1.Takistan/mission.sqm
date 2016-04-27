@@ -19,7 +19,8 @@ class Mission
 		"csj_gyroac",
 		"jetskiyanahuiaddon",
 		"warfarebuildings",
-		"redryder"
+		"redryder",
+		"Anzio_20"
 	};
 	addOnsAuto[]=
 	{

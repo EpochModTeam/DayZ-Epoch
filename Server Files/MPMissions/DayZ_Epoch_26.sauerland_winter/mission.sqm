@@ -19,7 +19,8 @@ class Mission
 		"pook_h13",
 		"csj_gyroac",
 		"jetskiyanahuiaddon",
-		"redryder"
+		"redryder",
+		"Anzio_20"
 	};
 	addOnsAuto[]=
 	{

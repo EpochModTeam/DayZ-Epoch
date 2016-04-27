@@ -78,7 +78,8 @@ class CfgAddons
 				"asc_eu_lights",
 				"gnt_c185",
 				"usec_ch53",
-				"RedRyder",
+				"redryder",
+				"Anzio_20",
 				"dayz_epoch_b",
 				"CfgVehicles"
 			};
