@@ -13,6 +13,10 @@ _sidearmToBuy = _this select 4;
 _primaryToBuy = _this select 5;
 _vehiclesToBuy = _this select 6;
 
+if (_vehiclesToBuy > 1) exitWith {systemChat "You can only purchase one vehicle at a time."; false;};
+if (_vehiclesToBuy > 0) then {
+	_toolsToBuy = _toolsToBuy + _vehiclesToBuy;
+};
 
 if(_selection == 2) then{ //gear
 	_allowedMags = 20 - count(magazines player);
@@ -256,9 +260,4 @@ if(_selection == 0) then{ //backpack
 	};
 };
 
-if(_vehiclesToBuy != 0)then{
-	_return = false;
-	systemChat "You can NOT buy vehicles in this version";
-};
-
-_return
+_return;

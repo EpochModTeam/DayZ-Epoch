@@ -93,6 +93,31 @@ if (Z_SingleCurrency) then {
 
 if(_enoughMoney) then {
 	if(_canBuy) then {
+	_buyVehicle = {
+		private "_location";
+		_part_out = _this;
+		_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
+		_keyNumber = (floor(random 2500)) + 1;
+		_keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];
+		_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+		if (!_isKeyOK) exitWith {localize "str_epoch_player_107" call dayz_rollingMessages; "";};
+		_activatingPlayer = player;
+		_dir = round(random 360);
+		_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
+		
+		if(count _helipad > 0) then {
+			_location = (getPosATL (_helipad select 0));
+		} else {
+			_location = [([player] call FNC_GetPos),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
+		};
+
+		_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
+		_location = (getPosATL _veh);
+
+		PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+		publicVariableServer  "PVDZE_veh_Publish2";
+		_keySelected;
+	};
 	systemChat format["Starting trade."];
 
 	closeDialog 2;
@@ -108,6 +133,13 @@ if(_enoughMoney) then {
 				if( _x select 1 == "trade_items")then{
 					_backpack addMagazineCargoGlobal  [_x select 0, _x select 9];
 					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
+				};				
+				if( _x select 1 == "trade_any_vehicle")then{
+					_item2Add = (_x select 0) call _buyVehicle;
+					if (_item2Add != "") then {
+						_backpack addWeaponCargoGlobal  [_item2Add, 1];
+						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
+					};
 				};
 			} count Z_BuyingArray;
 		};
@@ -126,6 +158,13 @@ if(_enoughMoney) then {
 				if( _x select 1 == "trade_backpacks")then{
 					Z_vehicle addBackpackCargoGlobal [_x select 0, _x select 9];
 					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
+				};
+				if( _x select 1 == "trade_any_vehicle")then{
+					_item2Add = (_x select 0) call _buyVehicle;
+					if (_item2Add != "") then {
+						Z_vehicle addWeaponCargoGlobal [_item2Add, 1];
+						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
+					};
 				};
 			} count Z_BuyingArray;
 		};
@@ -151,6 +190,13 @@ if(_enoughMoney) then {
 				};
 				if( _x select 1 == "trade_backpacks")then{
 						player addBackpack (_x select 0);
+				};
+				if( _x select 1 == "trade_any_vehicle")then{
+					_item2Add = (_x select 0) call _buyVehicle;
+					if (_item2Add != "") then {
+						player addWeapon _item2Add;
+						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
+					};
 				};
 			} count Z_BuyingArray;
 		};
