@@ -934,13 +934,14 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 					_buy = player addAction [format["Trade %1 %2 for %3 %4",(_x select 3),(_x select 5),(_x select 2),(_x select 6)], "\z\addons\dayz_code\actions\trade_items_wo_db.sqf",[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4),(_x select 5),(_x select 6)], (_x select 7), true, true];
 					s_player_parts set [count s_player_parts,_buy];		
 				} count (_traderMenu select 1);
-				if (DZE_advancedTrading) then {
+				if (DZE_advancedTrading && DZE_ConfigTrader) then {
 					_buyV = player addAction ["<t color='#0059FF'>Advanced Trading</t>", "\z\addons\dayz_code\actions\AdvancedTrading\init.sqf",(_traderMenu select 0), 999, true, false, "",""];
 					s_player_parts set [count s_player_parts,_buyV];
+				} else {
+					// Database menu
+					_buy = player addAction [localize "STR_EPOCH_PLAYER_289", "\z\addons\dayz_code\actions\show_dialog.sqf",(_traderMenu select 0), 999, true, false];
+					s_player_parts set [count s_player_parts,_buy];
 				};
-				// Database menu
-				_buy = player addAction [localize "STR_EPOCH_PLAYER_289", "\z\addons\dayz_code\actions\show_dialog.sqf",(_traderMenu select 0), 999, true, false];
-				s_player_parts set [count s_player_parts,_buy];
 			};
 			s_player_parts_crtl = 1;	
 		};
