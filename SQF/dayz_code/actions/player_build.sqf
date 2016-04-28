@@ -1,4 +1,4 @@
-// If parameters were passed redirect to vanilla player_build (Epoch items don't pass anything)
+// If an array was passed redirect to vanilla player_build (Epoch items pass a string)
 if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
 /*
 	DayZ Base Building
