@@ -13,12 +13,12 @@ _vehicle = objNull;
 _list = nearestObjects [(getPosATL player), ["AllVehicles"], Z_VehicleDistance];
 {
 	if (!isNull _x && local _x && !isPlayer _x && alive _x && !(_x isKindOf "zZombie_base")) then {
-		systemChat format["Selected %1",typeOf _x];
 		_vehicle = _x;
 	};
 }count _list;
 
 if (!isNull _vehicle) then {
+	systemChat format["Selected %1",typeOf _vehicle];
 	_pic = getText (configFile >> 'CfgVehicles' >> (typeOf _vehicle) >> 'picture');
 
 	_formattedText = format [

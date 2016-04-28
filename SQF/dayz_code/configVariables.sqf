@@ -47,7 +47,7 @@ DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if t
 /****** Advanced Trading Variables ***********/
 DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
 Z_AT_FolderLocation = '\z\addons\dayz_code\actions\AdvancedTrading';
-Z_VehicleDistance = 30; // Distance that a vehicle needs to be to see it's content or to sell it.
+Z_VehicleDistance = 40; // Distance that a vehicle needs to be to see it's content or to sell it.
 Z_SingleCurrency = false; // Does your server use a single currency system.
 Z_AllowTakingMoneyFromBackpack = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your backpack.
 Z_AllowTakingMoneyFromVehicle = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your vehicle.

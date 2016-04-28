@@ -13,9 +13,30 @@ private ["_weaps","_mags","_extraText","_all","_total","_arrayOfTraderCat","_tot
 _weaps = _this select 0;
 _mags = _this select 1;
 _extraText = _this select 2;
-_all = _weaps + _mags ;
+_vehTrade = false;
+if (call Z_checkCloseVehicle) then {
+	_all = _weaps + _mags + [(typeOf Z_vehicle)];
+	_vehTrade = true;
+} else {
+	_all = _weaps + _mags;
+};
 _total = count(_all);
 _arrayOfTraderCat = Z_traderData;
+_HasKeyCheck = {
+	_obj = _this select 0;
+	_inventory = _this select 1;
+	_keyFound = false;
+	_objectCharacterId	= _obj getVariable ["CharacterID","0"];
+	_keyColor = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
+	{
+		if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _keyColor) then {
+			if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _objectCharacterId) then {
+				_keyFound = true;
+			};
+		};
+	} count _inventory;
+	_keyFound;
+};
 _totalPrice = 0;
 if(_total > 0)then{
 	{
@@ -24,7 +45,6 @@ if(_total > 0)then{
 			private ["_cat","_excists","_pic","_text","_type","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
 			_cat =  format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
 			_excists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y );
-
 			if(_excists)exitWith{
 				_pic = "";
 				_text = "";
@@ -44,7 +64,7 @@ if(_total > 0)then{
 					};
 					case (_type in ["trade_backpacks", "trade_any_vehicle"]) :
 					{
-						_pic = getText (configFile >> 'CfgVehicles' >> _y >> 'displayName');
+						_pic = getText (configFile >> 'CfgVehicles' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgVehicles' >> _y >> 'displayName');
 					};
 				};
@@ -52,7 +72,12 @@ if(_total > 0)then{
 				if( isNil '_text')then{
 					_text = _y;
 				};
-
+				_HasKey = true;
+				if (_vehTrade && {(typeOf Z_vehicle) == _y}) then {
+					_HasKey = [Z_vehicle, _all] call _HasKeyCheck;
+				};
+				if (!_HasKey) exitWith {};
+				
 				_worth = 0;
 
 				if(!Z_SingleCurrency) then {
