@@ -82,7 +82,7 @@ if (_abort) exitWith {
 	DZE_ActionInProgress = false;
 };
 
-_canBuild = [_pos, _this, true] call DZE_BuildChecks;
+_canBuild = [_pos, _this, true] call dze_buildChecks;
 if (_canBuild select 0) then {
 	_classname = getText (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActions" >> "Build" >> "create");
 	_classnametmp = _classname;

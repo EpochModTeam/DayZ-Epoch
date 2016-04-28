@@ -1,7 +1,7 @@
 private ["_missingText","_hasrequireditem","_hastoolweapon","_item","_require","_missing","_text","_classname","_hasbuilditem"];
 
 _item = _this select 0;
-_require =  _this select 1;
+_require = _this select 1;
 _classname = _this select 2;
 _missing = [];
 _missingText = "";
