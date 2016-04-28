@@ -9,9 +9,9 @@ Install instructions:
 
 3. Copy the `@Client-1.8.7-Full\@Dayz\Addons\` folder into your `@DayZ_Epoch106\` folder and overwrite files when prompted. Make sure to do this on both the client and server.
 
-4. Copy the `EpochTest-106-APRIL_23_2016\addons\` folder into your `@DayZ_Epoch106\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
+4. Copy the `EpochTest-106-APRIL_28_2016\addons\` folder into your `@DayZ_Epoch106\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
 
-5. Use the new dayz_server.pbo from `EpochTest-106-APRIL_23_2016\addons\`
+5. Use the new dayz_server.pbo from `EpochTest-106-APRIL_28_2016\addons\`
 
 6. Use the new MPMission from Server Files\MPMissions.
 
@@ -19,9 +19,9 @@ Install instructions:
 
 8. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
+NOTE: dayz_Server.pbo will be kept up to date and rebuilt when necessary.
 
-
-Current Version: **EpochTest-106-APRIL_23_2016**
+Current Version: **EpochTest-106-APRIL_28_2016**
 
 --------------------------
 Test Server Information
@@ -38,7 +38,6 @@ The Zip file contains the following files:
 * dayz_anim.pbo
 * dayz_code.pbo
 * dayz_epoch_b.pbo
-* dayz_server.pbo
 * dayz_sfx.pbo
 * redryder.pbo
 * mod.cpp
