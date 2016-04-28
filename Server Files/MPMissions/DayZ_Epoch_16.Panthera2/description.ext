@@ -31,3 +31,5 @@ diagHit = 1;
 
 #include "\z\addons\dayz_code\gui\description.hpp"
 #include "\z\addons\dayz_code\Configs\CfgServerTrader\cfgServerTrader.hpp"
+#include "\z\addons\dayz_code\Configs\RscDisplay\ZSCdefines.hpp"
+#include "\z\addons\dayz_code\Configs\RscDisplay\advancedTrading.hpp"
