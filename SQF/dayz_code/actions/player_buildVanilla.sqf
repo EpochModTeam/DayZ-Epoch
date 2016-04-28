@@ -86,6 +86,10 @@ if (!_ok) exitWith {
 	_msg call dayz_rollingMessages;
 };
 
+_posReference = [player] call FNC_GetPos;
+_canBuild = [_posReference, _item, false] call DZE_BuildChecks;
+if !(_canBuild select 0) exitWith {};
+
 // lets check player has requiredParts for upgrade
 _ok = true;
 _upgradeParts = [];
@@ -106,11 +110,6 @@ if (!_ok) exitWith {
 	_msg = format [localize "str_player_31", _missing, localize "str_player_31_build"];
 	_msg call dayz_rollingMessages;
 };
-
-_posReference = [player] call FNC_GetPos;
-
-_canBuild = [_posReference, _item, false] call DZE_BuildChecks;
-if (!(_canBuild select 0)) exitWith {};
 
 //localize "str_player_build_rotate" call dayz_rollingMessages;
 _msg = localize "str_player_build_rotate";

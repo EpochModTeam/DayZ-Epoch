@@ -1,4 +1,19 @@
 // DayZ tents are defined in \dayz_equip\configs\Storage.hpp
+class DZ_storage_base : Land_A_tent {
+	//Base class for all tents and stashes. Only included here to add Epoch values.
+	scope=public;
+	armor = 5;
+	displayname = $STR_VEH_NAME_STASH;
+	icon = "";
+	mapsize = 3;
+	transportMaxMagazines = 0;
+	transportMaxWeapons = 0;
+	transportMaxBackpacks = 0;
+	// Epoch values
+	constructioncount = 1;
+	requireplot = 0;
+	nounderground = 0;
+};
 class DomeTentStorage_base;
 
 class DesertTentStorage: DomeTentStorage_base {
