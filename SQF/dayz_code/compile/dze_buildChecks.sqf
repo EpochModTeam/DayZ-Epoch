@@ -52,7 +52,7 @@ if(_IsNearPlot == 0) then {
 				} forEach _friendlies;
 				_builder  = getPlayerUID player;
 				// check if friendly to owner
-				if(dayz_characterID in _fuid) then {
+				if(dayz_playerUID in _fuid) then {
 					_canBuild = true;
 				};
 			} else {

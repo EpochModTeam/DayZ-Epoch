@@ -454,7 +454,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};	
 		};
 		// plotManagement //
-		if(_isModularDoor) then {
+		if(_isModularDoor && DZE_plotManagement) then {
 			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 				_findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], DZE_PlotPole select 0];
 				_IsNearPlot = count (_findNearestPoles);
@@ -689,7 +689,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 
 		// plotManagement //
 		// add Scroll-Menu to Plotpole
-		if (DZE_plotManagement && (s_player_plotManagement < 0) ) then {
+		if( DZE_plotManagement && (s_player_plotManagement < 0) ) then {
 			_adminList = ["0152"]; //TODO: Add admins here if you admins to able to manage all plotpoles
 			_owner = if(DZE_plotforLife) 
 				then { _cursorTarget getVariable ["ownerPUID","0"] } 
