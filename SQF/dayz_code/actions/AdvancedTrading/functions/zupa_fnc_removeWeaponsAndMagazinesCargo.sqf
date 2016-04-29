@@ -108,14 +108,19 @@ _normalItems = _normalItems - ["soldItem"];
 
 
 if (count _vehInfo > 0) then {
-	{
-		if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"]) then {
-			if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _keyID) then {
-				_weaps set [count _weaps, _x];
-				_deleteVeh = True;
+	if (!((_vehInfo select 4) in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"])) then {
+		{
+			if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"]) then {
+				if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _keyID) then {
+					_weaps set [count _weaps, _x];
+					_deleteVeh = True;
+				};
 			};
-		};
-	} count _normalWeaps;
+		} count _normalWeaps;
+		if (_keyID == "0") then {_deleteVeh = True;};
+	} else {
+		_deleteVeh = True;
+	};
 };
 
 {

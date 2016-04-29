@@ -36,7 +36,7 @@ if (Z_SingleCurrency) then {
 			_backpacksToBuy = _backpacksToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2)); // _price * _amount
 		};
-		if( _x select 1 == "trade_any_vehicle")then{
+		if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2)); // _price * _amount
 		};
@@ -65,7 +65,7 @@ if (Z_SingleCurrency) then {
 			_backpacksToBuy = _backpacksToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
-		if( _x select 1 == "trade_any_vehicle")then{
+		if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
@@ -134,7 +134,7 @@ if(_enoughMoney) then {
 					_backpack addMagazineCargoGlobal  [_x select 0, _x select 9];
 					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
 				};				
-				if( _x select 1 == "trade_any_vehicle")then{
+				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 					_item2Add = (_x select 0) call _buyVehicle;
 					if (_item2Add != "") then {
 						_backpack addWeaponCargoGlobal  [_item2Add, 1];
@@ -159,7 +159,7 @@ if(_enoughMoney) then {
 					Z_vehicle addBackpackCargoGlobal [_x select 0, _x select 9];
 					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
 				};
-				if( _x select 1 == "trade_any_vehicle")then{
+				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 					_item2Add = (_x select 0) call _buyVehicle;
 					if (_item2Add != "") then {
 						Z_vehicle addWeaponCargoGlobal [_item2Add, 1];
@@ -191,7 +191,7 @@ if(_enoughMoney) then {
 				if( _x select 1 == "trade_backpacks")then{
 						player addBackpack (_x select 0);
 				};
-				if( _x select 1 == "trade_any_vehicle")then{
+				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 					_item2Add = (_x select 0) call _buyVehicle;
 					if (_item2Add != "") then {
 						player addWeapon _item2Add;

@@ -31,7 +31,7 @@ _counter = 0;
 						_pic = getText (configFile >> 'CfgWeapons' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgWeapons' >> _y >> 'displayName');
 					};
-					if(_type == "trade_any_vehicle" || _type == "trade_backpacks")then{
+					if(_type in ["trade_backpacks", "trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 						_pic = getText (configFile >> 'CfgVehicles' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgVehicles' >> _y >> 'displayName');
 					};

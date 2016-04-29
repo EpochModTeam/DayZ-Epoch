@@ -16,16 +16,20 @@ if(_index > -1)then{
 
 	_deleteTradedVehicle = {
 		private ["_localResult2","_VehKey2"];
-		_VehKey2 = _this select 0;
-		
+		_VehKey2 = (_this select 0) select 0;
+		_delType = _this select 1;
 		if ((count _VehKey2) > 0) then {
-			{
-				if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"]) then {
-					if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == (_VehKey2 select 0)) then {
-						_localResult2 = [player,_x,1] call BIS_fnc_invRemove;
+			if ((_VehKey2 select 0) == "0" || _delType in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"]) then {
+				_localResult2 = 1;
+			} else {
+				{
+					if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"]) then {
+						if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == (_VehKey2 select 0)) then {
+							_localResult2 = [player,_x,1] call BIS_fnc_invRemove;
+						};
 					};
-				};
-			} forEach (items player);
+				} forEach (items player);
+			};
 			if (isNil "_localResult2") then {
 				_localResult2 = 0;
 			} else {
@@ -40,7 +44,8 @@ if(_index > -1)then{
 	};
 	_sellVehicle = {
 		private ["_distance","_damage","_tireDmg","_tires","_okToSell","_returnInfo","_textPartIn","_obj","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_part_in","_qty_in","_activatingPlayer","_objects","_qty","_vehicle"];
-		_vehicle = _this;
+		_vehicle = _this select 0;
+		_sellType = _this select 1;
 		_part_in = typeOf _vehicle;
 		_qty_in = 1;
 		_activatingPlayer = player;
@@ -50,22 +55,23 @@ if(_index > -1)then{
 		_qty = ({(typeOf _x) == _part_in} count _objects);
 		if (_qty >= _qty_in) then {
 			_obj = (_objects select 0);
-			_hitpoints = _obj call vehicle_getHitpoints;
 			_okToSell = true;
 			_tires = 0;
 			_tireDmg = 0;
 			_damage = 0;
-
-			{
-				if(["Wheel",_x,false] call fnc_inString) then {
-					_damage = [_obj,_x] call object_getHit;
-					_tireDmg = _tireDmg + _damage;
-					_tires = _tires + 1;
-				};
-			} forEach _hitpoints;
-			if(_tireDmg > 0 && _tires > 0) then {
-				if((_tireDmg / _tires) > 0.75) then {
-					_okToSell = false;
+			if (!(_sellType in ["trade_any_boat", "trade_any_boat_old"])) then {
+				_hitpoints = _obj call vehicle_getHitpoints;
+				{
+					if(["Wheel",_x,false] call fnc_inString) then {
+						_damage = [_obj,_x] call object_getHit;
+						_tireDmg = _tireDmg + _damage;
+						_tires = _tires + 1;
+					};
+				} forEach _hitpoints;
+				if(_tireDmg > 0 && _tires > 0) then {
+					if((_tireDmg / _tires) > 0.75) then {
+						_okToSell = false;
+					};
 				};
 			};
 			_objectID			= _obj getVariable ["ObjectID","0"];
@@ -75,7 +81,7 @@ if(_index > -1)then{
 
 			if(local _obj && !isNull _obj && alive _obj && !_notSetup) then {
 				if(_okToSell) then {
-					_returnInfo = [_objectCharacterId, _obj, _objectID, _objectUID];
+					_returnInfo = [_objectCharacterId, _obj, _objectID, _objectUID, _sellType];
 				} else {
 					systemChat format[localize "str_epoch_player_182",_textPartIn]; _returnInfo = [];
 				};
@@ -106,10 +112,10 @@ if(_index > -1)then{
 				_bpArray set [count(_bpArray),_name];
 				_bpCheckArray set [count(_bpCheckArray),[_x select 2, _x select 11]];
 			};
-			case (_type == "trade_any_vehicle") :
+			case (_type in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) :
 			{
 				if (local Z_vehicle) then {
-					_VehKey = Z_vehicle call _sellVehicle;
+					_VehKey = [Z_vehicle, _type] call _sellVehicle;
 					if (count _VehKey > 0) then {
 						_vehArray set [count(_vehArray),_VehKey];
 						_vehCheckArray set [count(_vehCheckArray),[_x select 2, _x select 11]];
@@ -136,8 +142,8 @@ if(_index > -1)then{
 		_vehTraded = false;
 
 		{
-			if (_x select 1 == "trade_any_vehicle") then {
-				_localResult = _vehArray call _deleteTradedVehicle;
+			if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+				_localResult = [_vehArray, (_x select 1)] call _deleteTradedVehicle;
 				if (_localResult == 1) then {_vehTraded = true;};
 			} else {
 				_localResult = [player,(_x select 0),1] call BIS_fnc_invRemove;

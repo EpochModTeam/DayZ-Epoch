@@ -27,14 +27,18 @@ _HasKeyCheck = {
 	_inventory = _this select 1;
 	_keyFound = false;
 	_objectCharacterId	= _obj getVariable ["CharacterID","0"];
-	_keyColor = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
-	{
-		if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _keyColor) then {
-			if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _objectCharacterId) then {
-				_keyFound = true;
+	if (_objectCharacterId == "0") then {
+		_keyFound = true;
+	} else {
+		_keyColor = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
+		{
+			if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _keyColor) then {
+				if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _objectCharacterId) then {
+					_keyFound = true;
+				};
 			};
-		};
-	} count _inventory;
+		} count _inventory;
+	};
 	_keyFound;
 };
 _totalPrice = 0;
@@ -62,7 +66,7 @@ if(_total > 0)then{
 						_pic = getText (configFile >> 'CfgWeapons' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgWeapons' >> _y >> 'displayName');
 					};
-					case (_type in ["trade_backpacks", "trade_any_vehicle"]) :
+					case (_type in ["trade_backpacks", "trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) :
 					{
 						_pic = getText (configFile >> 'CfgVehicles' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgVehicles' >> _y >> 'displayName');
@@ -74,7 +78,9 @@ if(_total > 0)then{
 				};
 				_HasKey = true;
 				if (_vehTrade && {(typeOf Z_vehicle) == _y}) then {
-					_HasKey = [Z_vehicle, _all] call _HasKeyCheck;
+					if (!(_type in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"])) then {
+						_HasKey = [Z_vehicle, _all] call _HasKeyCheck;
+					};
 				};
 				if (!_HasKey) exitWith {};
 				

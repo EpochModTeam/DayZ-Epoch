@@ -17,7 +17,7 @@ switch (true) do {
 	{
 		[_item] call Z_displayBackpackInfo;
 	};
-	case (_type == "trade_any_vehicle") :
+	case (_type in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) :
 	{
 		[_item] call Z_displayVehicleInfo;
 	};
