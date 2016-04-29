@@ -56,7 +56,7 @@ if (_unit == player) then
 				{!_isPZombie});
             _humanityHit = 0;
 
-            if (!_punishment && {(DayZ_LastHumanityChange + 5) > diag_tickTime}) then {
+            if (!_punishment && {(DayZ_LastHumanityChange + 3) < diag_tickTime}) then {
 				DayZ_LastHumanityChange = diag_tickTime;
                 _myKills =  200 - (((player getVariable ["humanKills",0]) / 3) * 150);
                 // how many non bandit players have I (the shot/damaged player) killed?
