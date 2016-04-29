@@ -28,6 +28,8 @@ Included Custom Addons
 * Bell 47/H-13 Helicopter by hcpookie - http://www.armaholic.com/page.php?id=22143
 * USEC CH53 by Rocket - http://dayz.com
 * More enterable buildings - Dayzero - https://zombies.nu/
+* Anzio 20mm Rifle by WillRobinson - http://www.armaholic.com/page.php?id=30175
+* RedRyder BB Gun by WillRobinson - https://github.com/arma2WillRobinson/Red-Ryder
 
 --------------------------
 Included Custom Islands
@@ -59,8 +61,10 @@ GitHub Collaborators (In order of most commits)
 * dayz10k - https://github.com/dayz10k
 * Skaronator - https://github.com/Skaronator
 * icomrade - https://github.com/icomrade
+* ebaydayz - https://github.com/ebaydayz
 * Axles - https://github.com/Axles
 * Armifer - https://github.com/Armifer
+* Zupa - https://github.com/Windmolders
 
 --------------------------
 GitHub Contributors (In order of most commits)
@@ -74,12 +78,19 @@ GitHub Contributors (In order of most commits)
 * zabn - https://github.com/zabn
 * eltexonline - https://github.com/eltexonline
 * icomrade - https://github.com/icomrade
+* ebaydayz - https://github.com/ebaydayz
 * Namindu - https://github.com/Namindu
 * raginruffalo - https://github.com/raginruffalo
+* Markokil321 - https://github.com/Markokil321
+* Mikeeeyy - https://github.com/Mikeeeyy
 * Adaptivity - https://github.com/Adaptivity
+* RimBlock - https://github.com/RimBlock
+* raymix - https://github.com/raymix
+* arma2WillRobinson - https://github.com/arma2WillRobinson
 * facoptere - https://github.com/facoptere
 * ctcDNightmare - https://github.com/ctcDNightmare
 * SGanthony - https://github.com/SGanthony
+* githubmil - https://github.com/githubmil
 * Geodar - https://github.com/Geodar
 * Sandbird - https://github.com/Sandbird
 * krazey - https://github.com/krazey
