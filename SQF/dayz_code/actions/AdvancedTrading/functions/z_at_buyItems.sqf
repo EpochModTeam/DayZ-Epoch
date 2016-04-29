@@ -95,11 +95,18 @@ if(_enoughMoney) then {
 	if(_canBuy) then {
 	_buyVehicle = {
 		private "_location";
-		_part_out = _this;
-		_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
-		_keyNumber = (floor(random 2500)) + 1;
-		_keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];
-		_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+		_part_out = _this select 0;
+		_buyingType = _this select 1;
+		_keySelected = "0";
+		_isKeyOK= false;
+		if (_buyingType in ["trade_any_vehicle_free", "trade_any_bicycle", "trade_any_bicycle_old"]) then {
+			_isKeyOK = true;
+		} else {
+			_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
+			_keyNumber = (floor(random 2500)) + 1;
+			_keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];
+			_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+		};
 		if (!_isKeyOK) exitWith {localize "str_epoch_player_107" call dayz_rollingMessages; "";};
 		_activatingPlayer = player;
 		_dir = round(random 360);
@@ -112,9 +119,14 @@ if(_enoughMoney) then {
 		};
 
 		_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
-		_location = (getPosATL _veh);
-
-		PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+		_location = ([_veh] call FNC_GetPos);
+		
+		if (_buyingType in ["trade_any_vehicle_free", "trade_any_bicycle", "trade_any_bicycle_old"]) then {
+			PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,"0",_activatingPlayer];
+			diag_log format ["Purchased vehicle %1 without a key", _x select 0];
+		} else {
+			PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+		};
 		publicVariableServer  "PVDZE_veh_Publish2";
 		_keySelected;
 	};
@@ -135,8 +147,8 @@ if(_enoughMoney) then {
 					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
 				};				
 				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
-					_item2Add = (_x select 0) call _buyVehicle;
-					if (_item2Add != "") then {
+					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
+					if (_item2Add != "0") then {
 						_backpack addWeaponCargoGlobal  [_item2Add, 1];
 						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
 					};
@@ -160,8 +172,8 @@ if(_enoughMoney) then {
 					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
 				};
 				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
-					_item2Add = (_x select 0) call _buyVehicle;
-					if (_item2Add != "") then {
+					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
+					if (_item2Add != "0") then {
 						Z_vehicle addWeaponCargoGlobal [_item2Add, 1];
 						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
 					};
@@ -192,8 +204,8 @@ if(_enoughMoney) then {
 						player addBackpack (_x select 0);
 				};
 				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
-					_item2Add = (_x select 0) call _buyVehicle;
-					if (_item2Add != "") then {
+					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
+					if (_item2Add != "0") then {
 						player addWeapon _item2Add;
 						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
 					};
