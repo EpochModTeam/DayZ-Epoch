@@ -109,12 +109,14 @@ _getGear = {
 		} forEach (_weapons);
 
 		{
-			_index = [_return, _x] call _inArray;
+			if !(_x in MeleeMagazines) then {
+				_index = [_return, _x] call _inArray;
 
-			if (_index != -1) then {
-				_return set [_index, [_x, ((_return select _index) select 1) + 1, 0]];
-			} else {
-				_return set [count _return, [_x, 1, 0]];
+				if (_index != -1) then {
+					_return set [_index, [_x, ((_return select _index) select 1) + 1, 0]];
+				} else {
+					_return set [count _return, [_x, 1, 0]];
+				};
 			};
 		} forEach (_magazines);		
 	};
