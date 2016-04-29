@@ -3,7 +3,7 @@
 
 Install instructions:
 
-1. Download these two files: [[1.8.7 addons](http://se1.dayz.nu/latest/1.8.7/%40Client-1.8.7-Full.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochTest-106-APRIL_23_2016.zip)]
+1. Download these two files: [[1.8.7 addons](http://se1.dayz.nu/latest/1.8.7/%40Client-1.8.7-Full.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/blob/master/Test%20Build/EpochTest-106-APRIL_28_2016.zip?raw=true)]
 
 2. Make a copy of your @DayZ_Epoch1051 folder on both the client and server and rename it to @DayZ_Epoch106.
 
@@ -39,5 +39,6 @@ The Zip file contains the following files:
 * dayz_code.pbo
 * dayz_epoch_b.pbo
 * dayz_sfx.pbo
+* anzio.pbo
 * redryder.pbo
 * mod.cpp
