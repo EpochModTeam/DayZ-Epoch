@@ -23,7 +23,7 @@ class ItemWaterBottle : FoodDrink
 		
 		class Empty
 		{
-			text = "Empty";//TODO: move to stringtable
+			text = $STR_EQUIP_NAME_13_EMPTY;
 			script = "spawn player_emptyContainer";
 		};
 	};

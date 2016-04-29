@@ -23,7 +23,7 @@ class ItemCanteen : FoodDrink
 		
 		class Empty
 		{
-			text = "Empty";//TODO: move to stringtable
+			text = $STR_ITEM_CANTEEN_EMPTY;
 			script = "spawn player_emptyContainer";
 		};
 	};

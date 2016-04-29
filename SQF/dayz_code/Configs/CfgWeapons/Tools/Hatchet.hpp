@@ -47,7 +47,7 @@ class ItemHatchetBroken : ItemCore
 	{
 		class Repair
 		{
-			text = "Fix Hatchet"; //TODO: move to stringtable
+			text = $STR_ACTIONS_FIX_HATCHET;
 			script="spawn player_fixHatchet;";
 		};
 	};

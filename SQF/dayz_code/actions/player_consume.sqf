@@ -36,8 +36,7 @@ if ((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState p
 //player doesn't have the consumable item
 if (!(_this in magazines player)) exitWith
 {
-	//TODO move to stringtable
-	"You seem to have misplaced the foodstuff." call dayz_rollingMessages;
+	(localize "str_player_33") call dayz_rollingMessages;
 };
 
 //close gear

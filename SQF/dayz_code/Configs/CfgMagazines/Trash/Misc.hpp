@@ -42,8 +42,8 @@ class ItemKosmosSmokes : CA_Magazine
 	
 	model = "\z\addons\dayz_communityassets\models\smokes_kosmos.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_kosmos_ca.paa";
-	displayName = "Kosmos Smokes";
-	descriptionShort = "One Pack of Kosmos Brand cigarettes";
+	displayName = $STR_ITEM_NAME_KOSMOS_SMOKES;
+	descriptionShort = $STR_ITEM_DESC_KOSMOS_SMOKES;
 };
 
 class ItemKosmosSmokesOpen : CA_Magazine
@@ -54,8 +54,8 @@ class ItemKosmosSmokesOpen : CA_Magazine
 	
 	model = "\z\addons\dayz_communityassets\models\smokes_open_k.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_smokes_open_k_ca.paa";
-	displayName = "Kosmos Smokes";//TODO: move to stringtable
-	descriptionShort = "One Opened Pack of Kosmos Brand cigarettes";
+	displayName = $STR_ITEM_NAME_KOSMOS_SMOKES;
+	descriptionShort = $STR_ITEM_DESC_KOSMOS_SMOKES_OPENED;
 };
 
 class ItemTrashPaper : CA_Magazine

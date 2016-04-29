@@ -13,7 +13,7 @@ class ItemSodaEmpty : HandGrenade
 	{
 		class Drink
 		{
-			text = "Drink";//TODO: move to stringtable
+			text = $str_player_31_drink;
 			script = "spawn player_drinkWater;";
 		};
 		class Crafting {
@@ -42,7 +42,7 @@ class TrashTinCan : HandGrenade
 	{
 		class Drink
 		{
-			text = "Drink";//TODO: move to stringtable
+			text = $str_player_31_drink;
 			script = "spawn player_drinkWater;";
 		};
 		class Crafting {

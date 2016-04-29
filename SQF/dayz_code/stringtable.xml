@@ -1006,6 +1006,14 @@
 			<Czech>Nalámat kámen</Czech>
 			<German>Steine abbauen</German>
 		</Key>
+		<Key ID="STR_ACTIONS_FIX_HATCHET">
+			<English>Fix Hatchet</English>
+			<Russian>Починить топор</Russian>
+		</Key>
+		<Key ID="STR_ACTIONS_FIX_KNIFE">
+			<English>Sharpen Knife</English>
+			<Russian>Заточить нож</Russian>
+		</Key>
 		<Key ID="STR_ACTIONS_FIX_PICKAXE">
 			<English>Fix Pickaxe</English>
 			<Russian>Починить кирку</Russian>
@@ -2407,12 +2415,8 @@
 			<German>Ziegelstein</German>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_brick">
-			<English>A brick used in crafting.</English>
-			<Russian>Кирпич, может пригодиться в мастерской.</Russian>
-			<Spanish>Un ladrillo que podría ser usado para crear objetos.</Spanish>
-			<French>Brique (Artisanat)</French>
-			<Czech>Cihla se používá při výrobě.</Czech>
-			<German>Ein Ziegelstein. Kann beim Handwerken verwendet werden.</German>
+			<English>Maybe this could be used to sharpen a knife.</English>
+			<Russian>Может пригодиться для заточки ножа.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_gauze">
 			<English>Gauze</English>
@@ -3660,6 +3664,10 @@
 			<French>Bouteille (vide)</French>
 			<Czech>Láhev na vodu (prázdná)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_13_EMPTY">
+			<English>Empty</English>
+			<Russian>Пустая</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_DESC_13">
 			<English>A bottle of water that is Empty. It might be useful to fill it with water again.</English>
 			<German>Eine leere Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
@@ -3731,6 +3739,34 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales.</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes.</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_48">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 6 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 6 таблеток.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_49">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 5 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 5 таблеток.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_50">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 4 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 4 таблетки.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_51">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 3 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 3 таблетки.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_52">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 2 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 2 таблетки.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_53">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 1 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталась 1 таблетка.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_54">
+			<English>Empty box of Azithromycin.</English>
+			<Russian>Пустая коробка азитромицина.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_18">
 			<English>Painkillers</English>
@@ -4108,6 +4144,10 @@
 			<French>Boîte de munitions</French>
 			<Czech>Bedna s municí</Czech>
 		</Key>
+		<Key ID="STR_DAYZ_OBJ_4">
+			<English>Cardboard Box</English>
+			<Russian>Картонная коробка</Russian>
+		</Key>
 		<Key ID="STR_WPN_DESC_1">
 			<English>Shotgun 12 gauge</English>
 			<German>Reminton 870</German>
@@ -4171,6 +4211,14 @@
 			<Spanish>Una escopeta de doble barril permite disparar dos tiros en un corto periodo de tiempo.</Spanish>
 			<French>Fusil doté de 2 canons parallèles, permettant de tirer 2 coups rapprochés.</French>
 			<Czech>Dvouhlavňová brokovnice je brokovnice s dvěma hlavněmi vedle sebe, což umožnuje vystřelit dvakrát hned za sebou.</Czech>
+		</Key>
+		<Key ID="STR_MAG_CONV_45ACP_Revolver">
+			<English>Combine for Revolver</English>
+			<Russian>в патроны для револьвера</Russian>
+		</Key>
+		<Key ID="STR_MAG_CONV_45ACP_M1911">
+			<English>Combine for M1911</English>
+			<Russian>в M1911 маг.</Russian>
 		</Key>
 		<Key ID="STR_MAG_CONV_G17_M9">
 			<English>Combine for M9</English>
@@ -5317,6 +5365,10 @@
 			<Russian>Армейский котелок для хранения жидкостей и еды.</Russian>
 			<German>Eine stabile Feldflasche, um Wasser zu transportieren.</German>
 		</Key>
+		<Key ID="STR_ITEM_CANTEEN_EMPTY">
+			<English>Empty</English>
+			<Russian>Пустой</Russian>
+		</Key>
 		<Key ID="STR_ITEM_CANTEEN_EMPTY_NAME">
 			<English>Canteen (empty)</English>
 			<Russian>Котелок (Пустой)</Russian>
@@ -5631,6 +5683,10 @@
 			<Spanish>Una limpia y cerrada lata de gaseosa Papa&apos;s &apos;Olsha Sparkling Grape&apos;. Producto de Chernarus.</Spanish>
 			<French>Une canette de soda au raisin &apos;Olsha&apos; en bon état. Produit à Chernarus.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Olsha Sparkling Grape od Papa. Vyrobeno v Černarusi.</Czech>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_15">
+			<English>Sherbet</English>
+			<Russian>Шербет</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_MRE">
 			<English>MRE</English>
@@ -6239,6 +6295,18 @@
 			<Spanish>Paquete de cartas mojadas.</Spanish>
 			<French>Un paquet de cartes humide</French>
 			<Czech>Navlhlý balíček hracích karet.</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_KOSMOS_SMOKES">
+			<English>Kosmos Smokes</English>
+			<Russian>Сигареты "Космос"</Russian>
+		</Key>
+		<Key ID="STR_ITEM_DESC_KOSMOS_SMOKES">
+			<English>One Pack of Kosmos Brand cigarettes.</English>
+			<Russian>Пачка сигарет "Космос".</Russian>
+		</Key>
+		<Key ID="STR_ITEM_DESC_KOSMOS_SMOKES_OPENED">
+			<English>One Opened Pack of Kosmos Brand cigarettes.</English>
+			<Russian>Открытая пачка сигарет "Космос".</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan (5L)</English>
@@ -7201,6 +7269,10 @@
 			<Spanish>%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
 			<French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
 			<Czech>%1 musí být v invetáři, aby se mohl přesunout z/do panelu nástrojů.</Czech>
+		</Key>
+		<Key ID="str_player_33">
+			<English>You seem to have misplaced the foodstuff.</English>
+			<Russian>Кажется вы выронили еду.</Russian>
 		</Key>
 		<Key ID="str_mining_finished">
 			<English>You have finished collecting stone.</English>

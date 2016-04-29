@@ -11,7 +11,7 @@ class 7Rnd_45ACP_1911: CA_Magazine
 		
 		class ReloadMag
 		{
-			text = "Combine for Revolver"; //TODO: move to stringtable
+			text = $STR_MAG_CONV_45ACP_Revolver;
 			script = "spawn player_reloadMag;";
 			use[] = {"7Rnd_45ACP_1911"};
 			output[] = {"6Rnd_45ACP"};
@@ -32,7 +32,7 @@ class 6Rnd_45ACP: CA_Magazine
 		
 		class ReloadMag
 		{
-			text = "Combine for M1911"; //TODO: move to stringtable
+			text = $STR_MAG_CONV_45ACP_M1911;
 			script = "spawn player_reloadMag;";
 			use[] = {"6Rnd_45ACP"};
 			output[] = {"7Rnd_45ACP_1911"};

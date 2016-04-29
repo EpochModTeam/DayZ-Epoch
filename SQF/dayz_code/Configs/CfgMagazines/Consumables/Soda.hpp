@@ -250,8 +250,8 @@ class ItemSherbet : ItemSoda
 	
 	model = "z\addons\dayz_communityassets\models\soda_sherbet_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sherbet_clean_full_ca.paa";
-	displayName = "Sherbet";//TODO: move to stringtable
-	descriptionShort = "Sherbet";
+	displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_15;
+	descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_15;
 	
 	Nutrition[] = {90,0,500,0};
 	
