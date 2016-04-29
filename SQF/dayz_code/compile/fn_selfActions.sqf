@@ -412,18 +412,74 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				_player_deleteBuild = true;
 			};
 		};	
+
+
 		//Allow owners to delete modulars
 		if (_isModular && (dayz_characterID == _ownerID)) then {
 			if (_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 				_player_deleteBuild = true;
 			};
 		};
+		// plotManagement //
+		if(_isModular && DZE_plotManagement) then {
+			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
+				_findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], DZE_PlotPole select 0];
+				_IsNearPlot = count (_findNearestPoles);
+				_fuid  = [];
+				_allowed = [];
+				if(_IsNearPlot > 0) then {
+					_thePlot = _findNearestPoles select 0;
+					_owner = if(DZE_plotforLife) 
+						then { _thePlot getVariable ["ownerPUID","010"] } 
+						else { _thePlot getVariable ["characterID","0"] };
+					_friends = _thePlot getVariable ["plotfriends", []];
+					{
+						_friendUID = _x select 0;
+						_fuid  =  _fuid  + [_friendUID];
+					} forEach _friends;
+					_allowed = [_owner];
+					_allowed = [_owner] +  _fuid;
+					if( (dayz_playerUID in _allowed) || (dayz_characterID in _allowed) ) then {
+						_player_deleteBuild = true;
+					};
+				};
+			};
+		};
+		// plotManagement //
+
 		//Allow owners to delete modular doors without locks
 		if (_isModularDoor && (dayz_characterID == _ownerID)) then {
 			if (_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 				_player_deleteBuild = true;
 			};	
 		};
+		// plotManagement //
+		if(_isModularDoor) then {
+			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
+				_findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], DZE_PlotPole select 0];
+				_IsNearPlot = count (_findNearestPoles);
+				_fuid  = [];
+				_allowed = [];
+				if(_IsNearPlot > 0)then{
+					_thePlot = _findNearestPoles select 0;
+					_owner = if(DZE_plotforLife) 
+						then { _thePlot getVariable ["ownerPUID","010"] } 
+						else { _thePlot getVariable ["characterID","0"] };
+					_friends = _thePlot getVariable ["plotfriends", []];
+					{
+						_friendUID = _x select 0;
+						_fuid  =  _fuid  + [_friendUID];
+					} forEach _friends;
+					_allowed = [_owner];    
+					_allowed = [_owner] +  _fuid;   
+					if( (dayz_playerUID in _allowed) || (dayz_characterID in _allowed) ) then {
+						_player_deleteBuild = true;
+					};
+				};
+			};
+		};
+		// plotManagement //
+
 		if (_isVehicle) then {
 			if ((_ownerID != "0") && {!_isMan} && {!_isBicycle}) then {
 				_player_lockUnlock_crtl = true;
@@ -630,11 +686,40 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 	
 	if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {_canDo} && {speed player <= 1}) then {
-		if (s_player_maintain_area < 0) then {
-			s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
-			s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
+
+		// plotManagement //
+		// add Scroll-Menu to Plotpole
+		if (DZE_plotManagement && (s_player_plotManagement < 0) ) then {
+			_adminList = ["0152"]; //TODO: Add admins here if you admins to able to manage all plotpoles
+			_owner = if(DZE_plotforLife) 
+				then { _cursorTarget getVariable ["ownerPUID","0"] } 
+				else { _cursorTarget getVariable ["characterID","0"] };
+			_friends = _cursorTarget getVariable ["plotfriends", []];
+			_fuid = [];
+			{
+				_friendUID = _x select 0;
+				_fuid = _fuid + [_friendUID];
+			} forEach _friends;
+			_allowed = [_owner];
+			_allowed = [_owner] + _adminList + _fuid;
+			if( (dayz_playerUID in _allowed) || (dayz_characterID in _allowed) ) then {
+				s_player_plotManagement = player addAction ["<t color='#0059FF'>Manage Plot</t>", "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
+			};
+		};
+		// plotManagement //
+
+		if(!DZE_plotManagement) then {
+			if (s_player_maintain_area < 0) then {
+				s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
+				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
+			};
 		};
 	} else {
+		// plotManagement //
+		player removeAction s_player_plotManagement;
+		s_player_plotManagement = -1;
+		// plotManagement //
+
 		player removeAction s_player_maintain_area;
 		s_player_maintain_area = -1;
 		player removeAction s_player_maintain_area_preview;
@@ -1003,6 +1088,12 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 } else {
 	//Engineering
+
+	// plotManagement //
+	player removeAction s_player_plotManagement;
+	s_player_plotManagement = -1;
+	// plotManagement //
+
 	{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 	player removeAction s_player_repair_crtl;
 	s_player_repair_crtl = -1;

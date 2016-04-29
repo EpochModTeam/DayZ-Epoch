@@ -68,7 +68,15 @@ _object_inventory = {
 	if (_object isKindOf "TrapItems") then {
 		_inventory = [["armed",_object getVariable ["armed",false]]];
 	} else {
-		_inventory = [getWeaponCargo _object,getMagazineCargo _object,getBackpackCargo _object];
+		// plotManagement //
+		if( DZE_plotManagement && (typeOf (_object) == "Plastic_Pole_EP1_DZ") ) then {
+			_inventory = _object getVariable ["plotfriends", []]; //We're replacing the inventory with UIDs for this item
+		} else {
+		// plotManagement //
+			_inventory = [getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object];
+		// plotManagement //
+		};
+		// plotManagement //
 	};
 	
 	_previous = str(_object getVariable["lastInventory",[]]);

@@ -53,6 +53,14 @@ Z_AllowTakingMoneyFromBackpack = true; // When buying items with DEFAULT CURRENC
 Z_AllowTakingMoneyFromVehicle = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your vehicle.
 Z_MoneyVariable = "cashMoney"; // If using a Single currency system, change this to whatever currency you are using.
 /**********************************************/
+
+/////////// plotManagement Variables ///////////
+// see also: https://github.com/DevZupa/PlotManagement
+DZE_plotManagement = true;
+// see also: https://github.com/RimBlock/Epoch/tree/master/A%20Plot%20for%20Life
+DZE_plotforLife = false; // NOT IMPLEMENTED. Set always to false - value is used by plotManagement
+////////////////////////////////////////////////
+
 /* 
 	Developers:
 	
