@@ -31,7 +31,7 @@ if (_unit == player) then
 {
     if (_hit == "") then
 	{
-        if ((_source != player) and _isPlayer) then
+        if ((_source != player) and _isPlayer && alive player) then
 		{
 			_isBandit = (player getVariable["humanity",0]) <= -5000;
 			//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
