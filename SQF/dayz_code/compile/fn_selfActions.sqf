@@ -459,15 +459,9 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			if (s_player_packtent < 0) then {
 				s_player_packtent = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",_cursorTarget, 0, false, true];
 			};
-			//sleep
-			if (s_player_sleep < 0) then {
-				s_player_sleep = player addAction [localize "str_actions_self_sleep", "\z\addons\dayz_code\actions\player_sleep.sqf",_cursorTarget, 0, false, true];
-			};
 		} else {
 			player removeAction s_player_packtent;
 			s_player_packtent = -1;
-			player removeAction s_player_sleep;
-			s_player_sleep = -1;
 		};
 	} else {
 		player removeAction s_player_deleteBuild;
@@ -476,8 +470,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_upgradestroage = -1;
 		player removeAction s_player_packtent;
 		s_player_packtent = -1;
-		player removeAction s_player_sleep;
-		s_player_sleep = -1;
 	};
 	//other tents
 	if (_istypeTent) then {
@@ -491,8 +483,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		} else {
 			player removeAction s_player_destorytent;
 			s_player_destorytent = -1;
-		};
-		
+		};	
 		if (_typeOfCursorTarget in ["IC_DomeTent","IC_Tent"]) then {
 			if (s_player_packtentinfected < 0) then {
 				s_player_packtentinfected = player addAction [localize "str_actions_self_07", "\z\addons\dayz_code\actions\tent_pack.sqf",_cursorTarget, 0, false, true];
@@ -501,6 +492,13 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			player removeAction s_player_packtentinfected;
 			s_player_packtentinfected = -1;
 		};
+		//sleep
+		if (s_player_sleep < 0) then {
+			s_player_sleep = player addAction [localize "str_actions_self_sleep", "\z\addons\dayz_code\actions\player_sleep.sqf",_cursorTarget, 0, false, true];
+		};
+	} else {
+		player removeAction s_player_sleep;
+		s_player_sleep = -1;
 	};
 					
 	//Study Body

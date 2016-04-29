@@ -246,7 +246,7 @@ if (_canBuild select 0) then {
 		if(_location1 distance _location2 > 5) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "You've moved to far away from where you started building (within 5 meters)";
+			_reason = "You've moved too far away from where you started building (within 5 meters)";
 			detach _object;
 			deleteVehicle _object;
 		};

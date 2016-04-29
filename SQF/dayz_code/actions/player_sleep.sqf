@@ -1,4 +1,4 @@
-private ["_playArray","_lastRest","_blood","_timesincedrink","_bloodinc","_Moves","_sleepArray","_animState","_started","_finished","_timer","_i","_r","_cureAttempt","_isAsleep","_cureChance","_infectedStatus","_randomamount"];
+private ["_playArray","_lastRest","_blood","_timesincedrink","_bloodinc","_Moves","_sleepArray","_animState","_started","_finished","_timer","_i","_r","_cureAttempt","_isAsleep","_cureChance","_infectedStatus","_randomamount","_isOwner","_tent"];
 //_timesincedrink = time - dayz_lastDrink;
 //_bloodinc =100; Removed for now(untested) due to it not needed yet
 //http://community.bistudio.com/wiki/ArmA2:_Moves
@@ -24,6 +24,8 @@ _r = 0;
 _blood = 0;
 _cureAttempt = 0;
 _lastRest = player getVariable ["lastRest", 0];
+_tent = _this select 3;
+_isOwner = (_tent getVariable ["characterID","0"]) == dayz_characterID;
 
 while {r_doLoop} do {
 	_isAsleep = (animationState player) in _sleepArray;
@@ -39,8 +41,8 @@ while {r_doLoop} do {
 					//Update the local value.
 					_lastRest = diag_ticktime;
 					
-					//10% chance of cure to infection every 60 seconds of sleeping
-					_cureChance = 0.10 + _cureAttempt;
+					//10% chance of cure to infection every 60 seconds of sleeping if owner, 5% if not owner
+					_cureChance = if (_isOwner) then {0.10 + _cureAttempt} else {0.05 + _cureAttempt};
 					if ([_cureChance] call fn_chance) then {
 						r_player_infected = false;
 						player setVariable["USEC_infected",false,false];
