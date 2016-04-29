@@ -56,7 +56,8 @@ if (_unit == player) then
 				{!_isPZombie});
             _humanityHit = 0;
 
-            if (!_punishment) then {
+            if (!_punishment && {(DayZ_LastHumanityChange + 5) > diag_tickTime}) then {
+				DayZ_LastHumanityChange = diag_tickTime;
                 _myKills =  200 - (((player getVariable ["humanKills",0]) / 3) * 150);
                 // how many non bandit players have I (the shot/damaged player) killed?
                 // punish my killer 200 for shooting a surivor
@@ -67,7 +68,7 @@ if (_unit == player) then
                     };
                     // In the case of outrageous damage (crashes, explosions, desync repeated headshots); cap the limit on humanity lost. 
 
-                [_source,_humanityHit] spawn {  
+                [_source,_humanityHit] spawn { 
                     private ["_source","_humanityHit"];
                     _source = _this select 0;
                     _humanityHit = _this select 1;

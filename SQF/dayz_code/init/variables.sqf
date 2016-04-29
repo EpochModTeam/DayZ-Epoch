@@ -360,6 +360,7 @@ PVDZ_obj_Publish = []; // Used for eventhandler to spawn a mirror of players ten
 PVCDZ_obj_HideBody = objNull;
 
 //DayZ settings
+DayZ_LastHumanityChange = diag_tickTime;
 dayz_maxAnimals = 5;
 dayz_maxPlants = 3;
 dayz_animalDistance = 600;
