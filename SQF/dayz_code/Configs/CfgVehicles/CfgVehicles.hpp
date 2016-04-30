@@ -595,7 +595,7 @@ class CfgVehicles {
 		supplyRadius = 1;
 	};
 	#include "gathered_plants.hpp"
-	class Generator_Base: SkodaBase
+	class Generator_Base: BuiltItems //SkodaBase
 	{
 		model = "\dayz_equip\models\generator_gear.p3d";
 		picture = "\dayz_equip\textures\equip_generator_ca.paa";
@@ -634,7 +634,8 @@ class CfgVehicles {
 		soundengineonext[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-start-1", 0.398107, 1, 250};
 
 		class Turrets {};
-			
+		
+		/* //Let's remove this because it apparently doesn't do anything
 		class UserActions
 		{
 			class EngineOn
@@ -660,6 +661,7 @@ class CfgVehicles {
 				statement = "player action ['engineOff', this];";
 			};
 		};
+		*/
 	};
 };
 /*
