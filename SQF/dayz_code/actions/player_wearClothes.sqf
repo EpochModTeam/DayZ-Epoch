@@ -1,3 +1,6 @@
+if (dayz_lastClothesChange + 5 > diag_tickTime) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_lastClothesChange = diag_tickTime;
+
 if (_this in DZE_RestrictSkins) exitWith { format[localize "str_epoch_player_315",_this] call dayz_rollingMessages; };
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_83" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
