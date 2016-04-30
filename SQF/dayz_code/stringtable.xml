@@ -14348,12 +14348,12 @@
 			<Czech>Read Obituaries</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAMP">
-			<English>Wood Ramp</English>
-			<German>Wood Ramp</German>
-			<Russian>Wood Ramp</Russian>
-			<Spanish>Wood Ramp</Spanish>
-			<French>Wood Ramp</French>
-			<Czech>Wood Ramp</Czech>
+			<English>Wooden Ramp</English>
+			<German>Wooden Ramp</German>
+			<Russian>Wooden Ramp</Russian>
+			<Spanish>Wooden Ramp</Spanish>
+			<French>Wooden Ramp</French>
+			<Czech>Wooden Ramp</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAMP_DESC">
 			<English>Document used in building a wooden ramp.</English>
@@ -14414,18 +14414,18 @@
 		<Key ID="STR_EPOCH_BURLAP">
 			<English>Burlap</English>
 			<German>Burlap</German>
-			<Russian>Burlap</Russian>
+			<Russian>Джутовая ткань</Russian>
 			<Spanish>Burlap</Spanish>
 			<French>Burlap</French>
 			<Czech>Burlap</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BURLAP_DESC">
-			<English>Burlap: A strong cloth like material used for building sandbags</English>
-			<German>Burlap: A strong cloth like material used for building sandbags</German>
-			<Russian>Burlap: A strong cloth like material used for building sandbags</Russian>
-			<Spanish>Burlap: A strong cloth like material used for building sandbags</Spanish>
-			<French>Burlap: A strong cloth like material used for building sandbags</French>
-			<Czech>Burlap: A strong cloth like material used for building sandbags</Czech>
+			<English>Burlap: A strong cloth like material used for building sandbags.</English>
+			<German>Burlap: A strong cloth like material used for building sandbags.</German>
+			<Russian>Джутовая ткань: Крепкая ткань вроде той, что используется в изготовлении мешков для песка.</Russian>
+			<Spanish>Burlap: A strong cloth like material used for building sandbags.</Spanish>
+			<French>Burlap: A strong cloth like material used for building sandbags.</French>
+			<Czech>Burlap: A strong cloth like material used for building sandbags.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTBULB">
 			<English>Light Bulb</English>
@@ -14454,7 +14454,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_DESC">
 			<English>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</English>
 			<German>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</German>
-			<Russian>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</Russian>
+			<Russian>Куски плоти в мешке: Обменяйте их на органическое мясо у торговцев медициной.</Russian>
 			<Spanish>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</Spanish>
 			<French>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</French>
 			<Czech>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</Czech>
@@ -14462,7 +14462,7 @@
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
 			<German>Combination Lock</German>
-			<Russian>Combination Lock</Russian>
+			<Russian>Кодовый замок</Russian>
 			<Spanish>Combination Lock</Spanish>
 			<French>Combination Lock</French>
 			<Czech>Combination Lock</Czech>
@@ -14470,7 +14470,7 @@
 		<Key ID="STR_EPOCH_COMBINATIONLOCK_DESC">
 			<English>Used to secure structures from unauthorized entry.</English>
 			<German>Used to secure structures from unauthorized entry.</German>
-			<Russian>Used to secure structures from unauthorized entry.</Russian>
+			<Russian>Используется для защиты построек от посторонних.</Russian>
 			<Spanish>Used to secure structures from unauthorized entry.</Spanish>
 			<French>Used to secure structures from unauthorized entry.</French>
 			<Czech>Used to secure structures from unauthorized entry.</Czech>
@@ -14524,20 +14524,20 @@
 			<Czech>A Gun Rack for 20 weapons.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_WOODCRATE">
-			<English>Wood Crate</English>
-			<German>Wood Crate</German>
-			<Russian>Wood Crate</Russian>
-			<Spanish>Wood Crate</Spanish>
-			<French>Wood Crate</French>
-			<Czech>Wood Crate</Czech>
+			<English>Wooden Crate</English>
+			<German>Wooden Crate</German>
+			<Russian>Деревянный ящик</Russian>
+			<Spanish>Wooden Crate</Spanish>
+			<French>Wooden Crate</French>
+			<Czech>Wooden Crate</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_WOODCRATE_DESC">
-			<English>A wood crate that holds a lot of items.</English>
-			<German>A wood crate that holds a lot of items.</German>
-			<Russian>A wood crate that holds a lot of items.</Russian>
-			<Spanish>A wood crate that holds a lot of items.</Spanish>
-			<French>A wood crate that holds a lot of items.</French>
-			<Czech>A wood crate that holds a lot of items.</Czech>
+			<English>A wooden crate that holds a lot of items.</English>
+			<German>A wooden crate that holds a lot of items.</German>
+			<Russian>Деревянный ящик, которой может вмещать много вещей.</Russian>
+			<Spanish>A wooden crate that holds a lot of items.</Spanish>
+			<French>A wooden crate that holds a lot of items.</French>
+			<Czech>A wooden crate that holds a lot of items.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_OILBARREL">
 			<English>Oil Barrel</English>
@@ -14618,6 +14618,726 @@
 			<Spanish>Workbench: Used to craft.</Spanish>
 			<French>Workbench: Used to craft.</French>
 			<Czech>Workbench: Used to craft.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODENRAMP_DESC">
+			<English>Wooden ramp can be used to get air.</English>
+			<German>Wooden ramp can be used to get air.</German>
+			<Russian>Wooden ramp can be used to get air.</Russian>
+			<Spanish>Wooden ramp can be used to get air.</Spanish>
+			<French>Wooden ramp can be used to get air.</French>
+			<Czech>Wooden ramp can be used to get air.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_30METERPLOT">
+			<English>30 Meter Plot</English>
+			<German>30 Meter Plot</German>
+			<Russian>30 Meter Plot</Russian>
+			<Spanish>30 Meter Plot</Spanish>
+			<French>30 Meter Plot</French>
+			<Czech>30 Meter Plot</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_30METERPLOT_DESC">
+			<English>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</English>
+			<German>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</German>
+			<Russian>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Russian>
+			<Spanish>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Spanish>
+			<French>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</French>
+			<Czech>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_METALPANEL">
+			<English>Metal Panel</English>
+			<German>Metal Panel</German>
+			<Russian>Metal Panel</Russian>
+			<Spanish>Metal Panel</Spanish>
+			<French>Metal Panel</French>
+			<Czech>Metal Panel</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_METALPANEL_DESC">
+			<English>Metal Panel: Strong metal wall used for base defence.</English>
+			<German>Metal Panel: Strong metal wall used for base defence.</German>
+			<Russian>Metal Panel: Strong metal wall used for base defence.</Russian>
+			<Spanish>Metal Panel: Strong metal wall used for base defence.</Spanish>
+			<French>Metal Panel: Strong metal wall used for base defence.</French>
+			<Czech>Metal Panel: Strong metal wall used for base defence.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_DEERSTAND">
+			<English>Deer Stand</English>
+			<German>Deer Stand</German>
+			<Russian>Deer Stand</Russian>
+			<Spanish>Deer Stand</Spanish>
+			<French>Deer Stand</French>
+			<Czech>Deer Stand</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_DEERSTAND_DESC">
+			<English>Deer Stand: can be used as a lookout.</English>
+			<German>Deer Stand: can be used as a lookout.</German>
+			<Russian>Deer Stand: can be used as a lookout.</Russian>
+			<Spanish>Deer Stand: can be used as a lookout.</Spanish>
+			<French>Deer Stand: can be used as a lookout.</French>
+			<Czech>Deer Stand: can be used as a lookout.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEDESERTCAMONET">
+			<English>Large Desert Camo Net</English>
+			<German>Large Desert Camo Net</German>
+			<Russian>Large Desert Camo Net</Russian>
+			<Spanish>Large Desert Camo Net</Spanish>
+			<French>Large Desert Camo Net</French>
+			<Czech>Large Desert Camo Net</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEFORESTCAMONET">
+			<English>Large Forest Camo Net</English>
+			<German>Large Forest Camo Net</German>
+			<Russian>Large Forest Camo Net</Russian>
+			<Spanish>Large Forest Camo Net</Spanish>
+			<French>Large Forest Camo Net</French>
+			<Czech>Large Forest Camo Net</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGECAMONET_DESC">
+			<English>Large Camo Netting: A very large buildable object that can be used to cover objects.</English>
+			<German>Large Camo Netting: A very large buildable object that can be used to cover objects.</German>
+			<Russian>Large Camo Netting: A very large buildable object that can be used to cover objects.</Russian>
+			<Spanish>Large Camo Netting: A very large buildable object that can be used to cover objects.</Spanish>
+			<French>Large Camo Netting: A very large buildable object that can be used to cover objects.</French>
+			<Czech>Large Camo Netting: A very large buildable object that can be used to cover objects.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_DESERTCAMONET">
+			<English>Desert Camo Net</English>
+			<German>Desert Camo Net</German>
+			<Russian>Desert Camo Net</Russian>
+			<Spanish>Desert Camo Net</Spanish>
+			<French>Desert Camo Net</French>
+			<Czech>Desert Camo Net</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_FORESTCAMONET">
+			<English>Forest Camo Net</English>
+			<German>Forest Camo Net</German>
+			<Russian>Forest Camo Net</Russian>
+			<Spanish>Forest Camo Net</Spanish>
+			<French>Forest Camo Net</French>
+			<Czech>Forest Camo Net</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CAMONET_DESC">
+			<English>Camo Netting: A buildable object that can be used to cover objects.</English>
+			<German>Camo Netting: A buildable object that can be used to cover objects.</German>
+			<Russian>Camo Netting: A buildable object that can be used to cover objects.</Russian>
+			<Spanish>Camo Netting: A buildable object that can be used to cover objects.</Spanish>
+			<French>Camo Netting: A buildable object that can be used to cover objects.</French>
+			<Czech>Camo Netting: A buildable object that can be used to cover objects.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_FUELPUMP">
+			<English>Fuel Pump</English>
+			<German>Fuel Pump</German>
+			<Russian>Fuel Pump</Russian>
+			<Spanish>Fuel Pump</Spanish>
+			<French>Fuel Pump</French>
+			<Czech>Fuel Pump</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LIGHTPOLE">
+			<English>Light Pole</English>
+			<German>Light Pole</German>
+			<Russian>Light Pole</Russian>
+			<Spanish>Light Pole</Spanish>
+			<French>Light Pole</French>
+			<Czech>Light Pole</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LIGHTPOLE_DESC">
+			<English>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</English>
+			<German>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</German>
+			<Russian>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</Russian>
+			<Spanish>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</Spanish>
+			<French>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</French>
+			<Czech>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_STICKFENCE">
+			<English>Stick Fence</English>
+			<German>Stick Fence</German>
+			<Russian>Stick Fence</Russian>
+			<Spanish>Stick Fence</Spanish>
+			<French>Stick Fence</French>
+			<Czech>Stick Fence</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_STICKFENCE_DESC">
+			<English>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</English>
+			<German>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</German>
+			<Russian>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</Russian>
+			<Spanish>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</Spanish>
+			<French>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</French>
+			<Czech>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_NICEWOODSHED">
+			<English>Nice Wooden Shed</English>
+			<German>Nice Wooden Shed</German>
+			<Russian>Nice Wooden Shed</Russian>
+			<Spanish>Nice Wooden Shed</Spanish>
+			<French>Nice Wooden Shed</French>
+			<Czech>Nice Wooden Shed</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_NICEWOODSHED_DESC">
+			<English>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</English>
+			<German>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</German>
+			<Russian>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</Russian>
+			<Spanish>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</Spanish>
+			<French>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</French>
+			<Czech>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODSHACK">
+			<English>Wooden Shack</English>
+			<German>Wooden Shack</German>
+			<Russian>Wooden Shack</Russian>
+			<Spanish>Wooden Shack</Spanish>
+			<French>Wooden Shack</French>
+			<Czech>Wooden Shack</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_M240NEST">
+			<English>M240 Nest</English>
+			<German>M240 Nest</German>
+			<Russian>M240 Nest</Russian>
+			<Spanish>M240 Nest</Spanish>
+			<French>M240 Nest</French>
+			<Czech>M240 Nest</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CANVASSUNSHADE">
+			<English>Canvas Sun Shade</English>
+			<German>Canvas Sun Shade</German>
+			<Russian>Canvas Sun Shade</Russian>
+			<Spanish>Canvas Sun Shade</Spanish>
+			<French>Canvas Sun Shade</French>
+			<Czech>Canvas Sun Shade</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CANVASSUNSHADE_DESC">
+			<English>Sun Shade: A buildable object used to keep the sun off your back.</English>
+			<German>Sun Shade: A buildable object used to keep the sun off your back.</German>
+			<Russian>Sun Shade: A buildable object used to keep the sun off your back.</Russian>
+			<Spanish>Sun Shade: A buildable object used to keep the sun off your back.</Spanish>
+			<French>Sun Shade: A buildable object used to keep the sun off your back.</French>
+			<Czech>Sun Shade: A buildable object used to keep the sun off your back.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODBENCH">
+			<English>Wooden Bench</English>
+			<German>Wooden Bench</German>
+			<Russian>Wooden Bench</Russian>
+			<Spanish>Wooden Bench</Spanish>
+			<French>Wooden Bench</French>
+			<Czech>Wooden Bench</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_RUSTYGATE">
+			<English>Rusty Gate</English>
+			<German>Rusty Gate</German>
+			<Russian>Rusty Gate</Russian>
+			<Spanish>Rusty Gate</Spanish>
+			<French>Rusty Gate</French>
+			<Czech>Rusty Gate</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_RUSTYGATE_DESC">
+			<English>Rusty Gate: A buildable object that can be opened and closed.</English>
+			<German>Rusty Gate: A buildable object that can be opened and closed.</German>
+			<Russian>Rusty Gate: A buildable object that can be opened and closed.</Russian>
+			<Spanish>Rusty Gate: A buildable object that can be opened and closed.</Spanish>
+			<French>Rusty Gate: A buildable object that can be opened and closed.</French>
+			<Czech>Rusty Gate: A buildable object that can be opened and closed.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_OUTHOUSE">
+			<English>Outhouse</English>
+			<German>Outhouse</German>
+			<Russian>Outhouse</Russian>
+			<Spanish>Outhouse</Spanish>
+			<French>Outhouse</French>
+			<Czech>Outhouse</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_OUTHOUSE_DESC">
+			<English>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</English>
+			<German>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</German>
+			<Russian>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</Russian>
+			<Spanish>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</Spanish>
+			<French>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</French>
+			<Czech>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGESHED">
+			<English>Storage Shed</English>
+			<German>Storage Shed</German>
+			<Russian>Storage Shed</Russian>
+			<Spanish>Storage Shed</Spanish>
+			<French>Storage Shed</French>
+			<Czech>Storage Shed</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGESHED_DESC">
+			<English>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</English>
+			<German>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</German>
+			<Russian>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</Russian>
+			<Spanish>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</Spanish>
+			<French>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</French>
+			<Czech>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SCAFFOLDING">
+			<English>Scaffolding</English>
+			<German>Scaffolding</German>
+			<Russian>Строительные леса</Russian>
+			<Spanish>Scaffolding</Spanish>
+			<French>Scaffolding</French>
+			<Czech>Scaffolding</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LOCKBOX">
+			<English>Lockbox</English>
+			<German>Lockbox</German>
+			<Russian>Запираемый ящик</Russian>
+			<Spanish>Lockbox</Spanish>
+			<French>Lockbox</French>
+			<Czech>Lockbox</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LOCKBOX_DESC">
+			<English>Semi secure lockbox.</English>
+			<German>Semi secure lockbox.</German>
+			<Russian>Безопасное хранилище.</Russian>
+			<Spanish>Semi secure lockbox.</Spanish>
+			<French>Semi secure lockbox.</French>
+			<Czech>Semi secure lockbox.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LUMBERPACK">
+			<English>Lumber Pack</English>
+			<German>Lumber Pack</German>
+			<Russian>Упаковка пиломатериалов</Russian>
+			<Spanish>Lumber Pack</Spanish>
+			<French>Lumber Pack</French>
+			<Czech>Lumber Pack</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LUMBERPACK_DESC">
+			<English>Lumber in a stack.</English>
+			<German>Lumber in a stack.</German>
+			<Russian>Упакованные пиломатериалы.</Russian>
+			<Spanish>Lumber in a stack.</Spanish>
+			<French>Lumber in a stack.</French>
+			<Czech>Lumber in a stack.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERBLOCKS">
+			<English>Cinder Blocks</English>
+			<German>Cinder Blocks</German>
+			<Russian>Шлакоблоки</Russian>
+			<Spanish>Cinder Blocks</Spanish>
+			<French>Cinder Blocks</French>
+			<Czech>Cinder Blocks</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERBLOCKS_DESC">
+			<English>Stack of nine cinder blocks.</English>
+			<German>Stack of nine cinder blocks.</German>
+			<Russian>Упаковка из девяти шлакоблоков.</Russian>
+			<Spanish>Stack of nine cinder blocks.</Spanish>
+			<French>Stack of nine cinder blocks.</French>
+			<Czech>Stack of nine cinder blocks.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BUCKETOFMORTAR">
+			<English>Bucket of Mortar</English>
+			<German>Bucket of Mortar</German>
+			<Russian>Ведро строй. раствора</Russian>
+			<Spanish>Bucket of Mortar</Spanish>
+			<French>Bucket of Mortar</French>
+			<Czech>Bucket of Mortar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BUCKETOFMORTAR_DESC">
+			<English>Premixed mastic adhesive that will bond to concrete block.</English>
+			<German>Premixed mastic adhesive that will bond to concrete block.</German>
+			<Russian>Строительный раствор, которой скрепит кирпичи между собой.</Russian>
+			<Spanish>Premixed mastic adhesive that will bond to concrete block.</Spanish>
+			<French>Premixed mastic adhesive that will bond to concrete block.</French>
+			<Czech>Premixed mastic adhesive that will bond to concrete block.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLYWOODPACK">
+			<English>Plywood Pack</English>
+			<German>Plywood Pack</German>
+			<Russian>Упаковка фанеры</Russian>
+			<Spanish>Plywood Pack</Spanish>
+			<French>Plywood Pack</French>
+			<Czech>Plywood Pack</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLYWOODPACK_DESC">
+			<English>Plywood in a stack.</English>
+			<German>Plywood in a stack.</German>
+			<Russian>Упакованная фанера.</Russian>
+			<Spanish>Plywood in a stack.</Spanish>
+			<French>Plywood in a stack.</French>
+			<Czech>Plywood in a stack.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LUMBER">
+			<English>Lumber</English>
+			<German>Lumber</German>
+			<Russian>Пиломатериалы</Russian>
+			<Spanish>Lumber</Spanish>
+			<French>Lumber</French>
+			<Czech>Lumber</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LUMBER_DESC">
+			<English>Lumber: Used for building many structures and can also be used to make plywood.</English>
+			<German>Lumber: Used for building many structures and can also be used to make plywood.</German>
+			<Russian>Пиломатериалы: Используются для строительства и могут быть использованы для получения фанеры.</Russian>
+			<Spanish>Lumber: Used for building many structures and can also be used to make plywood.</Spanish>
+			<French>Lumber: Used for building many structures and can also be used to make plywood.</French>
+			<Czech>Lumber: Used for building many structures and can also be used to make plywood.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLYWOOD">
+			<English>Plywood</English>
+			<German>Plywood</German>
+			<Russian>Фанера</Russian>
+			<Spanish>Plywood</Spanish>
+			<French>Plywood</French>
+			<Czech>Plywood</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLYWOOD_DESC">
+			<English>Plywood: Used for building many structures.</English>
+			<German>Plywood: Used for building many structures.</German>
+			<Russian>Фанера: Используется в строительстве.</Russian>
+			<Spanish>Plywood: Used for building many structures.</Spanish>
+			<French>Plywood: Used for building many structures.</French>
+			<Czech>Plywood: Used for building many structures.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SLEDGEHAMMERHEAD">
+			<English>Sledgehammer Head</English>
+			<German>Sledgehammer Head</German>
+			<Russian>Боёк кувалды</Russian>
+			<Spanish>Sledgehammer Head</Spanish>
+			<French>Sledgehammer Head</French>
+			<Czech>Sledgehammer Head</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SLEDGEHAMMERHEAD_DESC">
+			<English>Combine with a handle to make a Sledgehammer.</English>
+			<German>Combine with a handle to make a Sledgehammer.</German>
+			<Russian>Объедините с ручкой, чтобы получить кувалду.</Russian>
+			<Spanish>Combine with a handle to make a Sledgehammer.</Spanish>
+			<French>Combine with a handle to make a Sledgehammer.</French>
+			<Czech>Combine with a handle to make a Sledgehammer.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE">
+			<English>Sledgehammer Handle</English>
+			<German>Sledgehammer Handle</German>
+			<Russian>Ручка кувалды</Russian>
+			<Spanish>Sledgehammer Handle</Spanish>
+			<French>Sledgehammer Handle</French>
+			<Czech>Sledgehammer Handle</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE_DESC">
+			<English>Combine with a head to make a Sledgehammer.</English>
+			<German>Combine with a head to make a Sledgehammer.</German>
+			<Russian>Объедините с бойком, чтобы получить кувалду.</Russian>
+			<Spanish>Combine with a head to make a Sledgehammer.</Spanish>
+			<French>Combine with a head to make a Sledgehammer.</French>
+			<Czech>Combine with a head to make a Sledgehammer.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE1OZ">
+			<English>Water Bottle (1oz)</English>
+			<German>Water Bottle (1oz)</German>
+			<Russian>Бутылка воды (1 унция)</Russian>
+			<Spanish>Water Bottle (1oz)</Spanish>
+			<French>Water Bottle (1oz)</French>
+			<Czech>Water Bottle (1oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE1OZ_DESC">
+			<English>Water Bottle with 1oz of water.</English>
+			<German>Water Bottle with 1oz of water.</German>
+			<Russian>Бутылка с 1 унцией воды.</Russian>
+			<Spanish>Water Bottle with 1oz of water.</Spanish>
+			<French>Water Bottle with 1oz of water.</French>
+			<Czech>Water Bottle with 1oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE2OZ">
+			<English>Water Bottle (2oz)</English>
+			<German>Water Bottle (2oz)</German>
+			<Russian>Бутылка воды (2 унции)</Russian>
+			<Spanish>Water Bottle (2oz)</Spanish>
+			<French>Water Bottle (2oz)</French>
+			<Czech>Water Bottle (2oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE2OZ_DESC">
+			<English>Water Bottle with 2oz of water.</English>
+			<German>Water Bottle with 2oz of water.</German>
+			<Russian>Бутылка с 2 унциями воды.</Russian>
+			<Spanish>Water Bottle with 2oz of water.</Spanish>
+			<French>Water Bottle with 2oz of water.</French>
+			<Czech>Water Bottle with 2oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE3OZ">
+			<English>Water Bottle (3oz)</English>
+			<German>Water Bottle (3oz)</German>
+			<Russian>Бутылка воды (3 унции)</Russian>
+			<Spanish>Water Bottle (3oz)</Spanish>
+			<French>Water Bottle (3oz)</French>
+			<Czech>Water Bottle (3oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE3OZ_DESC">
+			<English>Water Bottle with 3oz of water.</English>
+			<German>Water Bottle with 3oz of water.</German>
+			<Russian>Бутылка с 3 унциями воды.</Russian>
+			<Spanish>Water Bottle with 3oz of water.</Spanish>
+			<French>Water Bottle with 3oz of water.</French>
+			<Czech>Water Bottle with 3oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE4OZ">
+			<English>Water Bottle (4oz)</English>
+			<German>Water Bottle (4oz)</German>
+			<Russian>Бутылка воды (4 унции)</Russian>
+			<Spanish>Water Bottle (4oz)</Spanish>
+			<French>Water Bottle (4oz)</French>
+			<Czech>Water Bottle (4oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE4OZ_DESC">
+			<English>Water Bottle with 4oz of water.</English>
+			<German>Water Bottle with 4oz of water.</German>
+			<Russian>Бутылка с 4 унциями воды.</Russian>
+			<Spanish>Water Bottle with 4oz of water.</Spanish>
+			<French>Water Bottle with 4oz of water.</French>
+			<Czech>Water Bottle with 4oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE5OZ">
+			<English>Water Bottle (5oz)</English>
+			<German>Water Bottle (5oz)</German>
+			<Russian>Бутылка воды (5 унций)</Russian>
+			<Spanish>Water Bottle (5oz)</Spanish>
+			<French>Water Bottle (5oz)</French>
+			<Czech>Water Bottle (5oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE5OZ_DESC">
+			<English>Water Bottle with 5oz of water.</English>
+			<German>Water Bottle with 5oz of water.</German>
+			<Russian>Бутылка с 5 унциями воды.</Russian>
+			<Spanish>Water Bottle with 5oz of water.</Spanish>
+			<French>Water Bottle with 5oz of water.</French>
+			<Czech>Water Bottle with 5oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE6OZ">
+			<English>Water Bottle (6oz)</English>
+			<German>Water Bottle (6oz)</German>
+			<Russian>Бутылка воды (6 унций)</Russian>
+			<Spanish>Water Bottle (6oz)</Spanish>
+			<French>Water Bottle (6oz)</French>
+			<Czech>Water Bottle (6oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE6OZ_DESC">
+			<English>Water Bottle with 6oz of water.</English>
+			<German>Water Bottle with 6oz of water.</German>
+			<Russian>Бутылка с 6 унциями воды.</Russian>
+			<Spanish>Water Bottle with 6oz of water.</Spanish>
+			<French>Water Bottle with 6oz of water.</French>
+			<Czech>Water Bottle with 6oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE7OZ">
+			<English>Water Bottle (7oz)</English>
+			<German>Water Bottle (7oz)</German>
+			<Russian>Бутылка воды (7 унций)</Russian>
+			<Spanish>Water Bottle (7oz)</Spanish>
+			<French>Water Bottle (7oz)</French>
+			<Czech>Water Bottle (7oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE7OZ_DESC">
+			<English>Water Bottle with 7oz of water.</English>
+			<German>Water Bottle with 7oz of water.</German>
+			<Russian>Бутылка с 7 унциями воды.</Russian>
+			<Spanish>Water Bottle with 7oz of water.</Spanish>
+			<French>Water Bottle with 7oz of water.</French>
+			<Czech>Water Bottle with 7oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE8OZ">
+			<English>Water Bottle (8oz)</English>
+			<German>Water Bottle (8oz)</German>
+			<Russian>Бутылка воды (8 унций)</Russian>
+			<Spanish>Water Bottle (8oz)</Spanish>
+			<French>Water Bottle (8oz)</French>
+			<Czech>Water Bottle (8oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE8OZ_DESC">
+			<English>Water Bottle with 8oz of water.</English>
+			<German>Water Bottle with 8oz of water.</German>
+			<Russian>Бутылка с 8 унциями воды.</Russian>
+			<Spanish>Water Bottle with 8oz of water.</Spanish>
+			<French>Water Bottle with 8oz of water.</French>
+			<Czech>Water Bottle with 8oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE9OZ">
+			<English>Water Bottle (9oz)</English>
+			<German>Water Bottle (9oz)</German>
+			<Russian>Бутылка воды (9 унций)</Russian>
+			<Spanish>Water Bottle (9oz)</Spanish>
+			<French>Water Bottle (9oz)</French>
+			<Czech>Water Bottle (9oz)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE9OZ_DESC">
+			<English>Water Bottle with 9oz of water.</English>
+			<German>Water Bottle with 9oz of water.</German>
+			<Russian>Бутылка с 9 унциями воды.</Russian>
+			<Spanish>Water Bottle with 9oz of water.</Spanish>
+			<French>Water Bottle with 9oz of water.</French>
+			<Czech>Water Bottle with 9oz of water.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE">
+			<English>Briefcase</English>
+			<German>Briefcase</German>
+			<Russian>Чемоданчик</Russian>
+			<Spanish>Briefcase</Spanish>
+			<French>Briefcase</French>
+			<Czech>Briefcase</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_EMPTY">
+			<English>Empty Briefcase</English>
+			<German>Empty Briefcase</German>
+			<Russian>Пустой чемоданчик</Russian>
+			<Spanish>Empty Briefcase</Spanish>
+			<French>Empty Briefcase</French>
+			<Czech>Empty Briefcase</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZGOLD">
+			<English>Briefcase (Contains: 1 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 1 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 1 золотой слиток (10 унций))</Russian>
+			<Spanish>Briefcase (Contains: 1 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 1 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 1 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_2X10OZGOLD">
+			<English>Briefcase (Contains: 2 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 2 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 2 золотых слитка по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 2 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 2 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 2 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_3X10OZGOLD">
+			<English>Briefcase (Contains: 3 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 3 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 3 золотых слитка по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 3 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 3 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 3 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_4X10OZGOLD">
+			<English>Briefcase (Contains: 4 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 4 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 4 золотых слитка по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 4 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 4 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 4 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_5X10OZGOLD">
+			<English>Briefcase (Contains: 5 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 5 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 5 золотых слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 5 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 5 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 5 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_6X10OZGOLD">
+			<English>Briefcase (Contains: 6 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 6 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 6 золотых слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 6 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 6 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 6 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_7X10OZGOLD">
+			<English>Briefcase (Contains: 7 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 7 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 7 золотых слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 7 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 7 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 7 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_8X10OZGOLD">
+			<English>Briefcase (Contains: 8 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 8 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 8 золотых слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 8 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 8 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 8 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_9X10OZGOLD">
+			<English>Briefcase (Contains: 9 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 9 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 9 золотых слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 9 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 9 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 9 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_10X10OZGOLD">
+			<English>Briefcase (Contains: 10 x 10oz Gold Bar)</English>
+			<German>Briefcase (Contains: 10 x 10oz Gold Bar)</German>
+			<Russian>Чемоданчик (Содержит: 10 золотых слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 10 x 10oz Gold Bar)</Spanish>
+			<French>Briefcase (Contains: 10 x 10oz Gold Bar)</French>
+			<Czech>Briefcase (Contains: 10 x 10oz Gold Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZSILVER">
+			<English>Briefcase (Contains: 1 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 1 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 1 серебряный слиток (10 унций))</Russian>
+			<Spanish>Briefcase (Contains: 1 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 1 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 1 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_2X10OZSILVER">
+			<English>Briefcase (Contains: 2 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 2 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 2 серебряных слитка по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 2 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 2 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 2 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_3X10OZSILVER">
+			<English>Briefcase (Contains: 3 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 3 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 3 серебряных слитка по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 3 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 3 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 3 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_4X10OZSILVER">
+			<English>Briefcase (Contains: 4 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 4 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 4 серебряных слитка по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 4 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 4 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 4 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_5X10OZSILVER">
+			<English>Briefcase (Contains: 5 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 5 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 5 серебряных слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 5 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 5 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 5 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_6X10OZSILVER">
+			<English>Briefcase (Contains: 6 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 6 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 6 серебряных слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 6 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 6 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 6 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_7X10OZSILVER">
+			<English>Briefcase (Contains: 7 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 7 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 7 серебряных слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 7 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 7 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 7 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_8X10OZSILVER">
+			<English>Briefcase (Contains: 8 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 8 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 8 серебряных слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 8 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 8 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 8 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_9X10OZSILVER">
+			<English>Briefcase (Contains: 9 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 9 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 9 серебряных слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 9 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 9 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 9 x 10oz Silver Bar)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRIEFCASE_10X10OZSILVER">
+			<English>Briefcase (Contains: 10 x 10oz Silver Bar)</English>
+			<German>Briefcase (Contains: 10 x 10oz Silver Bar)</German>
+			<Russian>Чемоданчик (Содержит: 10 серебряных слитков по 10 унций)</Russian>
+			<Spanish>Briefcase (Contains: 10 x 10oz Silver Bar)</Spanish>
+			<French>Briefcase (Contains: 10 x 10oz Silver Bar)</French>
+			<Czech>Briefcase (Contains: 10 x 10oz Silver Bar)</Czech>
 		</Key>
 	</Package>
 </Project>
