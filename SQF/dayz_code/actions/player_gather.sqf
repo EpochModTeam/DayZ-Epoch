@@ -1,4 +1,4 @@
-private ["_plant","_originalCount","_xx_leaf","_mags","_weps","_item","_magcounts","_forEachIndex","_wepcounts","_dis","_sfx"];
+private ["_plant","_originalCount"];
 
 _plant = _this;
 
@@ -8,6 +8,7 @@ if !([ [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] , [getMagazineCargo _
 	//diag_log [ [getMagazineCargo _plant, getWeaponCargo _plant], "!=", [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] ];
 	_plant setVariable["Gathering",true]; // avoid multiple call because the fn_selfActions is called in an infinite loop
 	[_this] spawn { // in background to be called after fn_selfActions
+		private ["_mags","_weps","_item","_magcounts","_wepcounts","_dis","_sfx"];
 		_plant = _this select 0;
 		_mags = (getMagazineCargo _plant) select 0;
 		_weps = (getWeaponCargo _plant) select 0;
