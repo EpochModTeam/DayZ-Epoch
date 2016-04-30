@@ -14,6 +14,27 @@ if(isNil "Z_AdvancedTradingInit")then{
 	#include "\z\addons\dayz_code\actions\AdvancedTrading\functions\defines.sqf";
 
 	/* Configs that needs to be defined but not changed in config file */
+
+	_tempGemList = [];
+	_tempWorthList = [];
+	DZE_GemList = [];
+	DZE_GemWorthList = [];
+	{
+		_tempGemList set [(count _tempGemList), (_x select 0)];
+		_tempWorthList set [(count _tempWorthList), (_x select 1)];
+	} count DZE_GemWorthArray;
+
+	//sort the array
+	for "_i" from 0 to ((count _tempGemList) - 1) do {
+		_largest = _tempWorthList call BIS_fnc_greatestNum;
+		_LargestGem = _tempGemList select (_tempWorthList find _largest);
+		_tempWorthList = _tempWorthList - [_largest];
+		_tempGemList = _tempGemList - [_LargestGem];
+		DZE_GemList set [(count DZE_GemList), _LargestGem];
+		DZE_GemWorthList set [(count DZE_GemWorthList), _largest];
+	};
+
+	
 	Z_Selling = true;
 	Z_SellingFrom = 2;
 	Z_vehicle = objNull;

@@ -41,6 +41,9 @@ _counter = 0;
 						_sellCurrency = _sell select 1,
 						_part =  (configFile >> "CfgMagazines" >> _buyCurrency);
 						_worth =  getNumber(_part >> "worth");
+						if (_worth == 0) then {
+							_worth = DZE_GemWorthList select (DZE_GemList find _buyCurrency);
+						};
 					}else{
 						_buyCurrency = CurrencyName;
 						_sellCurrency = CurrencyName;

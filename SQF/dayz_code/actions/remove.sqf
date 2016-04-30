@@ -206,9 +206,16 @@ if (_proceed) then {
 
 		if (_isMine) then {
 			if((random 10) <= 4) then {
-				_gems = ["ItemTopaz","ItemObsidian","ItemSapphire","ItemAmethyst","ItemEmerald","ItemCitrine","ItemRuby"];
-				_gem = _gems select (floor(random (count _gems)));
-				_selectedRemoveOutput set [(count _selectedRemoveOutput),[_gem,1]];
+				_gems = [];
+				_weights = [];
+				{
+					_gems set [(count _gems), (_x select 0)];
+					_weights set [(count _weights), (_x select 1)];
+				} count DZE_GemOccurance;
+				diag_log [_gems, _weights];
+				_gemSelected = [_gems, _weights] call BIS_fnc_selectRandomWeighted;
+				diag_log _gemSelected;
+				_selectedRemoveOutput set [(count _selectedRemoveOutput),[_gemSelected,1]];
 			};
 		};
 
