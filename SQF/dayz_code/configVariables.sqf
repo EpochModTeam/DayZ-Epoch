@@ -46,7 +46,7 @@ DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if t
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]];; //Sets how rare each gem in the order shown when mining (whole numbers only)
 
 /****** Advanced Trading Variables ***********/
-DZE_GemWorthArray = [["ItemTopaz",10000], ["ItemObsidian",20000], ["ItemSapphire",30000], ["ItemAmethyst",40000], ["ItemEmerald",50000], ["ItemCitrine",60000], ["ItemRuby",70000]]; //array of gem prices, MULTIPLES OF 10000 ONLY!!! Works only in advanced trading
+DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; //array of gem prices, works only in advanced trading
 DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
 Z_AT_FolderLocation = '\z\addons\dayz_code\actions\AdvancedTrading';
 Z_VehicleDistance = 40; // Distance that a vehicle needs to be to see it's content or to sell it.
