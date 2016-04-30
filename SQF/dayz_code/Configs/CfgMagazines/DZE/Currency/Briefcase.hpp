@@ -2,14 +2,14 @@ class ItemBriefcase_Base: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Briefcase";
+	displayName = $STR_EPOCH_BRIEFCASE;
 	model = "\z\addons\dayz_epoch\models\briefcase.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_E_CA.paa";
 };
 // Gold
 class ItemBriefcaseEmpty: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_E_CA.paa";
-	descriptionShort = "Empty Briefcase";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_EMPTY;
 	weight = 1;
 	class ItemActions {
 		class Crafting {
@@ -48,7 +48,7 @@ class ItemBriefcaseEmpty: ItemBriefcase_Base {
 };
 class ItemBriefcase10oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_10oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 1 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_1X10OZGOLD;
 	weight = 1.2;
 	worth = 1000;
 	class ItemActions {
@@ -80,7 +80,7 @@ class ItemBriefcase10oz: ItemBriefcase_Base {
 };
 class ItemBriefcase20oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_20oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 2 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_2X10OZGOLD;
 	weight = 1.5;
 	worth = 2000;
 	class ItemActions {
@@ -120,7 +120,7 @@ class ItemBriefcase20oz: ItemBriefcase_Base {
 };
 class ItemBriefcase30oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_30oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 3 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_3X10OZGOLD;
 	weight = 1.8;
 	worth = 3000;
 	class ItemActions {
@@ -160,7 +160,7 @@ class ItemBriefcase30oz: ItemBriefcase_Base {
 };
 class ItemBriefcase40oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_40oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 4 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_4X10OZGOLD;
 	weight = 2.1;
 	worth = 4000;
 	class ItemActions {
@@ -200,7 +200,7 @@ class ItemBriefcase40oz: ItemBriefcase_Base {
 };
 class ItemBriefcase50oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_50oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 5 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_5X10OZGOLD;
 	weight = 2.4;
 	worth = 5000;
 	class ItemActions {
@@ -240,7 +240,7 @@ class ItemBriefcase50oz: ItemBriefcase_Base {
 };
 class ItemBriefcase60oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_60oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 6 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_6X10OZGOLD;
 	weight = 2.7;
 	worth = 6000;
 	class ItemActions {
@@ -280,7 +280,7 @@ class ItemBriefcase60oz: ItemBriefcase_Base {
 };
 class ItemBriefcase70oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_70oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 7 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_7X10OZGOLD;
 	weight = 2.9;
 	worth = 7000;
 	class ItemActions {
@@ -320,7 +320,7 @@ class ItemBriefcase70oz: ItemBriefcase_Base {
 };
 class ItemBriefcase80oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_80oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 8 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_8X10OZGOLD;
 	weight = 3.2;
 	worth = 8000;
 	class ItemActions {
@@ -360,7 +360,7 @@ class ItemBriefcase80oz: ItemBriefcase_Base {
 };
 class ItemBriefcase90oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_90oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 9 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_9X10OZGOLD;
 	weight = 3.5;
 	worth = 9000;
 	class ItemActions {
@@ -392,7 +392,7 @@ class ItemBriefcase90oz: ItemBriefcase_Base {
 };
 class ItemBriefcase100oz: ItemBriefcase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_briefcase_100oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 10 x 10oz Gold Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_10X10OZGOLD;
 	weight = 3.8;
 	worth = 10000;
 	class ItemActions {
@@ -421,7 +421,7 @@ class ItemSilvercase_Base: ItemBriefcase_Base {
 };
 class ItemBriefcaseS10oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_10oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 1 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_1X10OZSILVER;
 	weight = 1.2;
 	worth = 10;
 	class ItemActions {
@@ -453,7 +453,7 @@ class ItemBriefcaseS10oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS20oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_20oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 2 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_2X10OZSILVER;
 	weight = 1.5;
 	worth = 20;
 	class ItemActions {
@@ -493,7 +493,7 @@ class ItemBriefcaseS20oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS30oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_30oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 3 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_3X10OZSILVER;
 	weight = 1.8;
 	worth = 30;
 	class ItemActions {
@@ -533,7 +533,7 @@ class ItemBriefcaseS30oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS40oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_40oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 4 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_4X10OZSILVER;
 	weight = 2.1;
 	worth = 40;
 	class ItemActions {
@@ -573,7 +573,7 @@ class ItemBriefcaseS40oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS50oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_50oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 5 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_5X10OZSILVER;
 	weight = 2.4;
 	worth = 50;
 	class ItemActions {
@@ -613,7 +613,7 @@ class ItemBriefcaseS50oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS60oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_60oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 6 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_6X10OZSILVER;
 	weight = 2.7;
 	worth = 60;
 	class ItemActions {
@@ -653,7 +653,7 @@ class ItemBriefcaseS60oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS70oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_70oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 7 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_7X10OZSILVER;
 	weight = 2.9;
 	worth = 70;
 	class ItemActions {
@@ -693,7 +693,7 @@ class ItemBriefcaseS70oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS80oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_80oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 8 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_8X10OZSILVER;
 	weight = 3.2;
 	worth = 80;
 	class ItemActions {
@@ -733,7 +733,7 @@ class ItemBriefcaseS80oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS90oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_90oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 9 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_9X10OZSILVER;
 	weight = 3.5;
 	worth = 90;
 	class ItemActions {
@@ -765,7 +765,7 @@ class ItemBriefcaseS90oz: ItemSilvercase_Base {
 };
 class ItemBriefcaseS100oz: ItemSilvercase_Base {
 	picture = "\z\addons\dayz_epoch\pictures\equip_silvercase_100oz_CA.paa";
-	descriptionShort = "Briefcase (Contains: 10 x 10oz Silver Bar)";
+	descriptionShort = $STR_EPOCH_BRIEFCASE_10X10OZSILVER;
 	weight = 3.8;
 	worth = 100;
 	class ItemActions {
