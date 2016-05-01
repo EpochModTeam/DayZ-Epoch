@@ -33,6 +33,7 @@
 [NEW] Zupa's Advanced Trading is now included as part of the Epoch Code, enabled with DZE_advancedTrading = true; NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
 [NEW] Gems are now treated as variable value currency (Advanced Trading only). configure gem values using DZE_GemWorthArray =[]; see ConfigVariables.sqf for more info @icomrade
 [NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; see ConfigVariables.sqf for more info @icomrade
+[NEW] Plot Management by Zupa is now included and enabled by default with variable DZE_plotManagement, see ConfigVariables.sqf @DevZupa @Bruce-LXXVI
 
 [CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
@@ -95,6 +96,7 @@
 [UPDATED] Updated all config.cfg in Config-Examples, Added Default Steam Ports and Updated Layout. @Namindu
 [UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 
+[INFO] If you use any of the community mods now included in this release (Advanced Trading, Plot Management, Snap Build Pro) you must uninstall them from your mission, the mods have been improved and many bugs have been fixes, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
 [INFO] Server owners and players should use the stable branch of ArmA 2 OA
