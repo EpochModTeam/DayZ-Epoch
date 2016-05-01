@@ -6,7 +6,7 @@ if( isNil "Z_traderData" || count (Z_traderData) == 0)exitWith{
 	cutText [format["There went something wrong selecting the trader."], "PLAIN DOWN"];
 };
 
-if(DZE_ActionInProgress) exitWith { cutText ['There is already an action in progress.' , "PLAIN DOWN"] };
+if(DZE_ActionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
 if(isNil "Z_AdvancedTradingInit")then{
 
@@ -54,7 +54,6 @@ if(isNil "Z_AdvancedTradingInit")then{
 
 	/* end script config */
 
-	fnc_inString =							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\fnc_inString.sqf");
 	ZUPA_fnc_removeWeaponsAndMagazinesCargo = 	compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\zupa_fnc_removeWeaponsAndMagazinesCargo.sqf");
 
 	Z_filleTradeTitle = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_filleTradeTitle.sqf");

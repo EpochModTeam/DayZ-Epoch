@@ -11,8 +11,9 @@ _newwealth = _wealth - _amount;
 _player setVariable[Z_MoneyVariable,_newwealth, true];
 _player setVariable ["moneychanged",1,true];
 _result = true;
-PVDZE_plr_Save = [_player,(magazines _player),true,true] ;
-publicVariableServer "PVDZE_plr_Save";
+// can't use (magazines _player), server_playerSync expects nested array with ammo counts from player_countMagazines
+// also fourth parameter in PVDZ_plr_Save is now used for achievements
+if (_player == player) then {call player_forceSave;};
 };
 }else{
 _result = true;
