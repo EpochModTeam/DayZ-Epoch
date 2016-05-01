@@ -10779,7 +10779,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_12">
 			<English>Cannot abort while in a trader area!</English>
-			<German>Die Verbindung kann nicht getrennt werden, während man sich in einer Händler-Bereich aufhällt!</German>
+			<German>Du darfst dich nicht im Händler-Bereich ausloggen!</German>
 			<Russian>В торговой зоне нельзя выходить из игры!</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Kan niet uitloggen in een handel gebied.</Dutch>
@@ -13911,7 +13911,7 @@
 		</Key>
 		<Key ID="str_autojoin_warning">
 			<English>You will auto-join the game in %1 seconds. Press ESC to cancel and leave the lobby.</English>
-			<German>Sie werden automatisch am Spiel teilnehmen in %1 Sekunden. Drücken Sie ESC, um den Vorgang abzubrechen und die Lobby zu verlassen.</German>
+			<German>Du wirst in %1 Sekunden eingeloggt. Drücke ESC, um abzubrechen und die Lobby zu verlassen.</German>
 			<Russian>Вы автоматически присоединитесь к игре через %1 секунд. Нажмите клавишу ESC, чтобы покинуть лобби.</Russian>
 			<Spanish>Va a auto-unirse al juego en %1 segundos. Presione ESC para cancelar y dejar el vestíbulo.</Spanish>
 			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall.</French>
@@ -15455,7 +15455,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_GEAR">
 			<English>Selling from gear.</English>
-			<German>Verkauf aus meinem Inventar.</German>
+			<German>Verkauf aus meiner Ausrüstung.</German>
 			<Russian>Selling from gear.</Russian>
 			<Spanish>Selling from gear.</Spanish>
 			<French>Selling from gear.</French>
@@ -15551,7 +15551,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ACCEPT">
 			<English>I accept %1 items from %2.</English>
-			<German>Ich nehme %1 %2.</German>
+			<German>Ich nehme %1 aus %2.</German>
 			<Russian>I accept %1 items from %2.</Russian>
 			<Spanish>I accept %1 items from %2.</Spanish>
 			<French>I accept %1 items from %2.</French>
