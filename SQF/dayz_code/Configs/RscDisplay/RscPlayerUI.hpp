@@ -219,7 +219,7 @@ class RscTitles
 			class RscPicture_1204: RscPictureGUI
 			{
 				idc = 1204;
-				text = "\z\addons\dayz_code\gui\status\status_connection_ca.paa";
+				text = "\z\addons\dayz_code\gui\status\status_speaker_muted.paa"; // was previously status_connection_ca, not used
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.51 * safezoneH + safezoneY;
 				w = 0.075;
@@ -430,7 +430,7 @@ class RscTitles
 			class RscPicture_1204: RscPictureGUI
 			{
 				idc = 1204;
-				text = "\z\addons\dayz_code\gui\status_epoch\status_connection_ca.paa";
+				text = "\z\addons\dayz_code\gui\status\status_speaker_muted.paa"; // was previously status_connection_ca, not used
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.51 * safezoneH + safezoneY;
 				w = 0.075;

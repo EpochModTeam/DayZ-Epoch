@@ -7,6 +7,7 @@ _position = _this select 1;
 _unit = _this select 2;
 
 if (_unit == player) then {
+	if (dayz_soundMuted) then {call player_muteSound;}; // Automatically disable sound mute on vehicle exit
 	_buildables = count ((getposATL _vehicle) nearObjects ["DZ_buildables", 3]);
 	if (_buildables > 0) then {
 

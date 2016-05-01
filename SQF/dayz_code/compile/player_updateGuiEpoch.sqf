@@ -37,8 +37,10 @@ _ctrlEye = 		_display displayCtrl 1305;
 _ctrlCombat = _display displayCtrl 1307;
 _ctrlFracture = 	_display displayCtrl 1203;
 
-_control = _display displayCtrl 1204; //status_connection_ca.paa ???
-_control ctrlShow false;
+if (!dayz_soundMuted) then {
+	_control = _display displayCtrl 1204; //muted speaker icon
+	_control ctrlShow false;
+};
 
 //Food/Water/Blood
 _ctrlBlood ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_bloodVal))),(Dayz_GUI_G * _bloodVal),(Dayz_GUI_B * _bloodVal), 0.5];
