@@ -44,29 +44,17 @@ if(_IsNearPlot == 0) then {
 		};
 	} else {
 		if(!_isPole) then {
-			// plotManagement //
 			if( DZE_plotManagement ) then {
-				_friendlies = _nearestPole getVariable ["plotfriends",[]];
-				_fuid  = [];
-				{
-					_friendUID = _x select 0;
-					_fuid  =  _fuid  + [_friendUID];
-				} forEach _friendlies;
-				_builder  = getPlayerUID player;
-				// check if friendly to owner
-				if(dayz_playerUID in _fuid) then {
+				_allowedUIDs = [_nearestPole, false, true] call dze_getPlotFriends;
+				if((dayz_playerUID in _allowedUIDs) || (dayz_characterID in _allowedUIDs)) then {
 					_canBuild = true;
 				};
 			} else {
-			// plotManagement //
-				_friendlies		= player getVariable ["friendlyTo",[]];
-				// check if friendly to owner
+				_friendlies	= player getVariable ["friendlyTo",[]];
 				if(_ownerID in _friendlies) then {
 					_canBuild = true;
 				};
-			// plotManagement //
 			};
-			// plotManagement //
 		};
 	};
 };

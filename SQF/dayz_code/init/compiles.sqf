@@ -147,6 +147,7 @@ if (!isDedicated) then {
 	dog_findTargetAgent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
 	dze_isnearest_player = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_isNearestPlayer.sqf";
 	dze_buildChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_buildChecks.sqf";
+	dze_getPlotFriends = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_getPlotFriends.sqf";
 	dze_requiredItemsCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_requiredItemsCheck.sqf";
 	dze_surrender_off = {player setVariable ["DZE_Surrendered",false,true]; DZE_Surrender = false;};
 	epoch_tempKeys = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_tempKeys.sqf";

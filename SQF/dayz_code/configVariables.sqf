@@ -46,8 +46,8 @@ DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if t
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]];; //Sets how rare each gem in the order shown when mining (whole numbers only)
 
 /****** Advanced Trading Variables ***********/
-DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; //array of gem prices, works only in advanced trading
 DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
+DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; //array of gem prices, works only in advanced trading
 Z_AT_FolderLocation = '\z\addons\dayz_code\actions\AdvancedTrading';
 Z_VehicleDistance = 40; // Distance that a vehicle needs to be to see it's content or to sell it.
 Z_SingleCurrency = false; // Does your server use a single currency system.
@@ -59,6 +59,8 @@ Z_MoneyVariable = "cashMoney"; // If using a Single currency system, change this
 /////////// plotManagement Variables ///////////
 // see also: https://github.com/DevZupa/PlotManagement
 DZE_plotManagement = true;
+DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby
+DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole. (default 6)
 // see also: https://github.com/RimBlock/Epoch/tree/master/A%20Plot%20for%20Life
 DZE_plotforLife = false; // NOT IMPLEMENTED. Set always to false - value is used by plotManagement
 ////////////////////////////////////////////////
