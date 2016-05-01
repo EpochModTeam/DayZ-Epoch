@@ -48,6 +48,9 @@ if(_total > 0)then{
 		{
 			private ["_cat","_excists","_pic","_text","_type","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
 			_cat =  format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
+			if (isNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")) then {
+				_cat = format["Category_%1",getNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")];
+			};
 			_excists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y );
 			if(_excists)exitWith{
 				_pic = "";

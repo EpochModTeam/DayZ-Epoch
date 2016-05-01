@@ -8,6 +8,10 @@ _counter = 0;
 {
 			_cat =  format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
 			_cfgtraders = missionConfigFile >> "CfgTraderCategory"  >> _cat;
+			if (isNumber (_cfgtraders >> "duplicate")) then {
+				_cat =  format["Category_%1",getNumber (_cfgtraders >> "duplicate")];
+				_cfgtraders = missionConfigFile >> "CfgTraderCategory" >> _cat;
+			};
 			for "_i" from 0 to (count _cfgtraders) - 1 do
 			{
 				_y  = _cfgtraders select _i;
