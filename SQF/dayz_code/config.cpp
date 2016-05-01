@@ -113,3 +113,7 @@ class CfgAddons
 #include "Configs\RscDisplay\deathboards.hpp"
 #include "Configs\CfgExtra\snappoints.hpp"
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.hpp"
+// plotManagement //
+#include "Configs\RscDisplay\ZSCdefines.hpp"
+#include "Configs\RscDisplay\plotManagement.hpp"
+// plotManagement //

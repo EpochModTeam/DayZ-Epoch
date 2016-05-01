@@ -239,6 +239,9 @@ dayz_resetSelfActions = {
     s_player_toggleSnapSelect = -1;
     s_player_toggleSnapSelectPoint = [];
     snapActions = -1;
+	// plotManagement //
+	s_player_plotManagement = -1;
+	// plotManagement //
 };
 call dayz_resetSelfActions;
 
