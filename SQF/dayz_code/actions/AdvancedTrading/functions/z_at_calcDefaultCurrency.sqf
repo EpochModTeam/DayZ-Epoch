@@ -88,37 +88,16 @@ _silver_1oz_a = floor(_total);
 _silver_1oz_b = _silver_10oz_a * 10;
 _silver_1oz = (_silver_1oz_a - _silver_1oz_b);
 
-if (_ItemTopaz > 0) then {
-  _pic = getText (configFile >> 'CfgMagazines' >> 'ItemTopaz' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_ItemTopaz,_pic, _string];
-};
-if (_ItemObsidian > 0) then {
-  _pic = getText (configFile >> 'CfgMagazines' >> 'ItemObsidian' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_ItemObsidian,_pic, _string];
-};
-if (_ItemSapphire > 0) then {
-  _pic = getText (configFile >> 'CfgMagazines' >> 'ItemSapphire' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_ItemSapphire,_pic, _string];
-};
-if (_ItemAmethyst > 0) then {
-  _pic = getText (configFile >> 'CfgMagazines' >> 'ItemAmethyst' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_ItemAmethyst,_pic, _string];
-};
-if (_ItemEmerald > 0) then {
-  _pic = getText (configFile >> 'CfgMagazines' >> 'ItemEmerald' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_ItemEmerald,_pic, _string];
-};
-if (_ItemCitrine > 0) then {
-  _pic = getText (configFile >> 'CfgMagazines' >> 'ItemCitrine' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_ItemCitrine,_pic, _string];
-};
-if (_ItemRuby > 0) then {
-  _pic = getText (configFile >> 'CfgMagazines' >> 'ItemRuby' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_ItemRuby,_pic, _string];
-};
+{ //sort gems so they display on total price in order of descending worth
+	if (!isNil {call compile format["_%1",_x]} && {(call compile format["_%1",_x]) > 0}) then {
+		_pic = getText (configFile >> 'CfgMagazines' >> _x >> 'picture');
+		_string = format["%3<t size='1'>%1x</t><img image='%2'/>",(call compile format["_%1",_x]),_pic, _string];
+	};
+} count DZE_GemList;
+
 if (_briefcase_100oz > 0) then {
   _pic = getText (configFile >> 'CfgMagazines' >> 'ItemBriefcase100oz' >> 'picture');
-  _string = format["<t size='1'>%1x</t><img image='%2'/>",_briefcase_100oz,_pic, _string];
+  _string = format["%3<t size='1'>%1x</t><img image='%2'/>",_briefcase_100oz,_pic, _string];
 };
 if (_gold_10oz > 0) then {
     _pic = getText (configFile >> 'CfgMagazines' >> 'ItemGoldBar10oz' >> 'picture');
