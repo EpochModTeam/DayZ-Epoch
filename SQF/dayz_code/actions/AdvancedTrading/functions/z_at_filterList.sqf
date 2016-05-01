@@ -24,7 +24,7 @@ if(count _this > 0) then {
 		}else {
 			_newSellArray = [];
 			{
-			  if(( [_query,(_x select 0)] call KK_fnc_inString) || ([_query,(_x select 3)] call KK_fnc_inString) ) then {
+			  if(( [_query,(_x select 0)] call fnc_inString) || ([_query,(_x select 3)] call fnc_inString) ) then {
 			  	if( _x find Z_SellArray < 0 ) then {
 			  		_newSellArray set [count(_newSellArray), _x];	
 			  	};
@@ -42,7 +42,7 @@ if(count _this > 0) then {
 		}else {
 			_newBuyArray = [];
 			{
-			  if(( [_query,(_x select 0)] call KK_fnc_inString) || ([_query,(_x select 3)] call KK_fnc_inString) ) then {
+			  if(( [_query,(_x select 0)] call fnc_inString) || ([_query,(_x select 3)] call fnc_inString) ) then {
 			  	_newBuyArray set [count(_newBuyArray), _x];	
 			  };
 			} forEach Z_OriginalBuyableArray;	
