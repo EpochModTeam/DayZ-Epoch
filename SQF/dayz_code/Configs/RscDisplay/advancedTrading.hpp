@@ -33,7 +33,7 @@ class AdvancedTrading
     class RscText_AT2: ZSC_RscText
 		{
 			idc = -1;
-			text = "Advanced Trading";
+			text = $STR_EPOCH_PLAYER_289;
 			x = 0.20 * safezoneW + safezoneX;
 			y = 0.15 * safezoneH + safezoneY;
 			w = 0.60 * safezoneW;
@@ -45,7 +45,7 @@ class AdvancedTrading
     class RscText_Zupa_1: ZSC_RscText
 		{
 			idc = 7408;
-			text = "Selling from gear.";
+			text = $STR_EPOCH_TRADE_SELLING_GEAR;
 			x = 0.21 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.38 * safezoneW;
@@ -55,7 +55,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_Z1: AT_Zupa_BlueButton
 		{
 			idc = -1;
-			text =  "Gear";
+			text = $STR_UI_GEAR;
 			x = 0.21 * safezoneW + safezoneX;
 			y = 0.26 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -66,7 +66,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_Z2: AT_Zupa_BlueButton
 		{
 			idc = -1;
-			text =  "Backpack";
+			text = $STR_EPOCH_TRADE_BACKPACK;
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.26 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -77,7 +77,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_Z3: AT_Zupa_BlueButton
 		{
 			idc = -1;
-			text =  "Vehicle";
+			text = $STR_EPOCH_TRADE_VEHICLE;
 			x = 0.41 * safezoneW + safezoneX;
 			y = 0.26 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -88,7 +88,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_Z4: AT_Zupa_BlueButton
 		{
 			idc = 7416;
-			text =  "Sell";
+			text = $STR_EPOCH_PLAYER_292;
 			x = 0.51 * safezoneW + safezoneX;
 			y = 0.26 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -119,7 +119,7 @@ class AdvancedTrading
 		class RscText_AT8: ZSC_RscText
 		{
 			idc = -1;
-			text = "Inventory";
+			text = $STR_EPOCH_TRADE_INVENTORY;
 			x = 0.21 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -129,7 +129,7 @@ class AdvancedTrading
 		class RscText_AT9: ZSC_RscText
 		{
 			idc = 7409;
-			text = "Selling";
+			text = $STR_EPOCH_TRADE_SELLING;
 			x = 0.46 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -281,7 +281,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_ATTFilter: AT_Zupa_BlueButton
 		{
 			idc = -1;
-			text = "Filter";
+			text = $STR_UI_FILTER;
       x = 0.21 * safezoneW + safezoneX;
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -406,7 +406,7 @@ class AdvancedTrading
 		class RscText_AT18: ZSC_RscText
 		{
 			idc = 7410;
-			text = "Nothing";
+			text = $STR_EPOCH_TRADE_NOTHING;
 			x = 0.46 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -416,7 +416,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_AT16: AT_Zupa_BlueButton
 		{
 			idc = 7435;
-			text = "Sell";
+			text = $STR_EPOCH_PLAYER_292;
 			x = 0.46 * safezoneW + safezoneX;
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -427,7 +427,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_AT27: AT_Zupa_BlueButton
 		{
 			idc = 7436;
-			text = "Buy";
+			text = $STR_EPOCH_PLAYER_291;
 			x = 0.46 * safezoneW + safezoneX;
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -445,7 +445,7 @@ class AdvancedTrading
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 9000);";
 			colorBackground[] =  {1,1,1,1};
 			color[] = {0,0,0,1};
-      text = "Close";
+			text = $STR_UI_CLOSE;
 		};
 		class RscStrText_AT_PriceInfo: ZSC_RscStructuredText // todo
 		{
@@ -460,7 +460,7 @@ class AdvancedTrading
 		class RscText_AT_InfoLabel: ZSC_RscText
 		{
 		    idc = -1;
-		    text = "   Item info";
+		    text = $STR_EPOCH_TRADE_DETAILS;
 		    x = 0.60 * safezoneW + safezoneX;
 		    y = 0.38 * safezoneH + safezoneY;
 		    w = 0.20 * safezoneW;

@@ -50,14 +50,14 @@ if ( isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxBackpacks')
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 	"<img image='%1' size='3' /><br />" +
-	"<t color='#33BFFF'>Name: </t><t color='#ffffff'>%2</t><br />" +
-	"<t color='#33BFFF'>Class: </t><t color='#ffffff'>%3</t><br />" +
-	"<t color='#33BFFF'>Sell: </t><t color='#ffffff'>%5 %7</t><br />" +
-	"<t color='#33BFFF'>Buy: </t><t color='#ffffff'>%6 %7</t><br />" +
+	"<t color='#33BFFF'>%10: </t><t color='#ffffff'>%2</t><br />" +
+	"<t color='#33BFFF'>%11: </t><t color='#ffffff'>%3</t><br />" +
+	"<t color='#33BFFF'>%12: </t><t color='#ffffff'>%5 %7</t><br />" +
+	"<t color='#33BFFF'>%13: </t><t color='#ffffff'>%6 %7</t><br />" +
 	"<t color='#33BFFF'>Mags: </t><t color='#ffffff'>%9</t><br />" +
 	"<t color='#33BFFF'>Weaps: </t><t color='#ffffff'>%8</t><br />" +
 	"<t color='#33BFFF'>Backs: </t><t color='#ffffff'>%4</t><br />"
-	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines
+	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291"
 	];
 
 
@@ -69,14 +69,14 @@ if (Z_SingleCurrency) then {
 
 	_formattedText = format [
 	"<img image='%1' size='3' /><br />" +
-	"<t color='#33BFFF'>Name: </t><t color='#ffffff'>%2</t><br />" +
-	"<t color='#33BFFF'>Class: </t><t color='#ffffff'>%3</t><br />" +
-	"<t color='#33BFFF'>Sell: </t><t color='#ffffff'>%5 <img image='%11' /> %10</t><br />" +
-	"<t color='#33BFFF'>Buy: </t><t color='#ffffff'>%6 <img image='%12' /> %7</t><br />" +
+	"<t color='#33BFFF'>%13: </t><t color='#ffffff'>%2</t><br />" +
+	"<t color='#33BFFF'>%14: </t><t color='#ffffff'>%3</t><br />" +
+	"<t color='#33BFFF'>%15: </t><t color='#ffffff'>%5 <img image='%11' /> %10</t><br />" +
+	"<t color='#33BFFF'>%16: </t><t color='#ffffff'>%6 <img image='%12' /> %7</t><br />" +
 	"<t color='#33BFFF'>Mags: </t><t color='#ffffff'>%8</t><br />" +
 	"<t color='#33BFFF'>Weaps: </t><t color='#ffffff'>%9</t><br />" +
 	"<t color='#33BFFF'>Backs: </t><t color='#ffffff'>%4</t><br />"
-	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy
+	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291"
 	];
 
 

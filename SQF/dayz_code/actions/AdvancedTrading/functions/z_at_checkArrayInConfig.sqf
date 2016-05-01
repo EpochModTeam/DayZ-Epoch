@@ -117,13 +117,13 @@ if(_total > 0)then{
 	};
 
 	if (Z_SingleCurrency) then {
-		_ctrltext = format["I would offer %1 %2.", _totalPrice,CurrencyName];
+		_ctrltext = format[localize "STR_EPOCH_TRADE_OFFER", _totalPrice,CurrencyName];
 		ctrlSetText [Z_AT_TRADERLINE2, _ctrltext];
 	} else {
 		ctrlSetText [Z_AT_TRADERLINE2, ''];
 	};
 
-	_ctrltext = format["I accept %1 items from %2.", count(Z_SellableArray) , _extraText];
+	_ctrltext = format[localize "STR_EPOCH_TRADE_ACCEPT", count(Z_SellableArray) , _extraText];
 	ctrlSetText [Z_AT_TRADERLINE1, _ctrltext];
 
 	call Z_fillSellList;

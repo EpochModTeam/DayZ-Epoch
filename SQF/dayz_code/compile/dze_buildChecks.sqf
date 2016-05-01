@@ -6,7 +6,8 @@ _item =	_this select 1;
 _toolCheck = _this select 2;
 _classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _requireplot = DZE_requireplot;
-if(!canbuild) exitWith {DZE_ActionInProgress = false; "Cannot build in a trader city." call dayz_rollingMessages; [false, false];};
+// "Unable to build trader nearby."
+if (!canbuild) exitWith {DZE_ActionInProgress = false; format[localize "STR_EPOCH_PLAYER_136",localize "STR_EPOCH_TRADER"] call dayz_rollingMessages; [false, false];};
 
 if(isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
 	_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");

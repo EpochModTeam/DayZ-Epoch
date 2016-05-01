@@ -15411,5 +15411,173 @@
 			<French>Briefcase (Contains: 10 x 10oz Silver Bar)</French>
 			<Czech>Briefcase (Contains: 10 x 10oz Silver Bar)</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_VEHICLE">
+			<English>Vehicle</English>
+			<German>Fahrzeug</German>
+			<Russian>Средство передвижения</Russian>
+			<Spanish>Vehículo</Spanish>
+			<French>Véhicule</French>
+			<Czech>Vozidlo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BACKPACK">
+			<English>Backpack</English>
+			<German>Rucksack</German>
+			<Russian>Рюкзак</Russian>
+			<Spanish>Mochila</Spanish>
+			<French>Sac à dos</French>
+			<Czech>Batoh</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_INVENTORY">
+			<English>Inventory</English>
+			<German>Inventar</German>
+			<Russian>инвентарь</Russian>
+			<Spanish>Inventario</Spanish>
+			<French>Inventaire</French>
+			<Czech>Inventář</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUYING">
+			<English>Buying</English>
+			<German>Kauf</German>
+			<Russian>покупка</Russian>
+			<Spanish>Compra</Spanish>
+			<French>Achat</French>
+			<Czech>Nákupy</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELLING">
+			<English>Selling</English>
+			<German>Verkauf</German>
+			<Russian>продажа</Russian>
+			<Spanish>De venta</Spanish>
+			<French>Vente</French>
+			<Czech>Prodejní</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELLING_GEAR">
+			<English>Selling from gear.</English>
+			<German>Selling from gear.</German>
+			<Russian>Selling from gear.</Russian>
+			<Spanish>Selling from gear.</Spanish>
+			<French>Selling from gear.</French>
+			<Czech>Selling from gear.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELLING_VEHICLE">
+			<English>Selling from vehicle.</English>
+			<German>Selling from vehicle.</German>
+			<Russian>Selling from vehicle.</Russian>
+			<Spanish>Selling from vehicle.</Spanish>
+			<French>Selling from vehicle.</French>
+			<Czech>Selling from vehicle.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELLING_BACKPACK">
+			<English>Selling from backpack.</English>
+			<German>Selling from backpack.</German>
+			<Russian>Selling from backpack.</Russian>
+			<Spanish>Selling from backpack.</Spanish>
+			<French>Selling from backpack.</French>
+			<Czech>Selling from backpack.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELLING_ALL">
+			<English>These are all the items I'm selling.</English>
+			<German>These are all the items I'm selling.</German>
+			<Russian>These are all the items I'm selling.</Russian>
+			<Spanish>These are all the items I'm selling.</Spanish>
+			<French>These are all the items I'm selling.</French>
+			<Czech>These are all the items I'm selling.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUYING_VEHICLE">
+			<English>Buying in vehicle.</English>
+			<German>Buying in vehicle.</German>
+			<Russian>Buying in vehicle.</Russian>
+			<Spanish>Buying in vehicle.</Spanish>
+			<French>Buying in vehicle.</French>
+			<Czech>Buying in vehicle.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUYING_BACKPACK">
+			<English>Buying in backpack.</English>
+			<German>Buying in backpack.</German>
+			<Russian>Buying in backpack.</Russian>
+			<Spanish>Buying in backpack.</Spanish>
+			<French>Buying in backpack.</French>
+			<Czech>Buying in backpack.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUYING_GEAR">
+			<English>Buying in gear.</English>
+			<German>Buying in gear.</German>
+			<Russian>Buying in gear.</Russian>
+			<Spanish>Buying in gear.</Spanish>
+			<French>Buying in gear.</French>
+			<Czech>Buying in gear.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_NOTHING">
+			<English>Nothing</English>
+			<German>Nichts</German>
+			<Russian>Ничего</Russian>
+			<Spanish>Nada</Spanish>
+			<French>Rien</French>
+			<Czech>Nic</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_DETAILS">
+			<English>   Details</English>
+			<German>   Einzelheiten</German>
+			<Russian>   Детали</Russian>
+			<Spanish>   Detalles</Spanish>
+			<French>   Détails</French>
+			<Czech>   Podrobnosti</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_STUPID">
+			<English>I'm not stupid.</English>
+			<German>I'm not stupid.</German>
+			<Russian>I'm not stupid.</Russian>
+			<Spanish>I'm not stupid.</Spanish>
+			<French>I'm not stupid.</French>
+			<Czech>I'm not stupid.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_NO_BACKPACK">
+			<English>You are not wearing a backpack.</English>
+			<German>You are not wearing a backpack.</German>
+			<Russian>You are not wearing a backpack.</Russian>
+			<Spanish>You are not wearing a backpack.</Spanish>
+			<French>You are not wearing a backpack.</French>
+			<Czech>You are not wearing a backpack.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_OFFER">
+			<English>I would offer %1 %2.</English>
+			<German>I would offer %1 %2.</German>
+			<Russian>I would offer %1 %2.</Russian>
+			<Spanish>I would offer %1 %2.</Spanish>
+			<French>I would offer %1 %2.</French>
+			<Czech>I would offer %1 %2.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_ACCEPT">
+			<English>I accept %1 items from %2.</English>
+			<German>I accept %1 items from %2.</German>
+			<Russian>I accept %1 items from %2.</Russian>
+			<Spanish>I accept %1 items from %2.</Spanish>
+			<French>I accept %1 items from %2.</French>
+			<Czech>I accept %1 items from %2.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADER">
+			<English>Trader</English>
+			<German>Händler</German>
+			<Russian>трейдер</Russian>
+			<Spanish>Comerciante</Spanish>
+			<French>Commerçant</French>
+			<Czech>Obchodník</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_NAME">
+			<English>Name</English>
+			<German>Name</German>
+			<Russian>имя</Russian>
+			<Spanish>Nombre</Spanish>
+			<French>Prénom</French>
+			<Czech>Jméno</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CLASS">
+			<English>Class</English>
+			<German>Klasse</German>
+			<Russian>Класс</Russian>
+			<Spanish>Clase</Spanish>
+			<French>Classe</French>
+			<Czech>Třída</Czech>
+		</Key>
 	</Package>
 </Project>

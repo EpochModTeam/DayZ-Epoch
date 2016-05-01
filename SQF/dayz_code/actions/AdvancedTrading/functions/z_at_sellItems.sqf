@@ -121,7 +121,7 @@ if(_index > -1)then{
 						_vehCheckArray set [count(_vehCheckArray),[_x select 2, _x select 11]];
 					};
 				} else {
-					systemChat format["Get in the driver seat to be able to trade to your vehicle."];
+					systemChat localize "STR_EPOCH_PLAYER_245";
 				};
 			};
 		};

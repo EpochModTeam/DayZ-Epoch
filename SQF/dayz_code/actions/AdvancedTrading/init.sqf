@@ -10,7 +10,7 @@ if(DZE_ActionInProgress) exitWith { localize "str_player_actionslimit" call dayz
 
 if(isNil "Z_AdvancedTradingInit")then{
 
-	//#include "config.sqf";
+	//#include "config.sqf"; // Moved to dayz_code/configVariables.sqf
 	#include "\z\addons\dayz_code\actions\AdvancedTrading\functions\defines.sqf";
 
 	/* Configs that needs to be defined but not changed in config file */

@@ -45,9 +45,9 @@ if (!isNull _backpack) then {
 
 	[_normalMags,_normalWeaps, typeOf _backpack] call Z_checkArrayInConfig;
 }else{
-	_ctrltext = format["I'm not stupid."];
+	_ctrltext = localize "STR_EPOCH_TRADE_STUPID";
 	ctrlSetText [Z_AT_TRADERLINE2, _ctrltext];
 
-	_ctrltext = format["You are not wearing a backpack."];
+	_ctrltext = localize "STR_EPOCH_TRADE_NO_BACKPACK";
 	ctrlSetText [Z_AT_TRADERLINE1, _ctrltext];
 };
