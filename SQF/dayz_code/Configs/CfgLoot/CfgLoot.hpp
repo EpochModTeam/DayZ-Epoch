@@ -14,14 +14,14 @@ class CfgLoot
 		#define DZ_BP_Czech DZ_CivilBackpack_EP1
 		#define DZ_BP_Coyote DZ_Backpack_EP1
 
-		#define ItemBloodbagAPos bloodBagAPos
-		#define ItemBloodbagANeg bloodBagANeg
-		#define ItemBloodbagBPos bloodBagBPos
-		#define ItemBloodbagBNeg bloodBagBNeg
-		#define ItemBloodbagABPos bloodBagABPos
-		#define ItemBloodbagABNeg bloodBagABNeg
-		#define ItemBloodbagOPos bloodBagOPos
-		#define ItemBloodbagONeg bloodBagONeg
+		#define ItemBloodbagAPos bloodBagAPOS
+		#define ItemBloodbagANeg bloodBagANEG
+		#define ItemBloodbagBPos bloodBagBPOS
+		#define ItemBloodbagBNeg bloodBagBNEG
+		#define ItemBloodbagABPos bloodBagABPOS
+		#define ItemBloodbagABNeg bloodBagABNEG
+		#define ItemBloodbagOPos bloodBagOPOS
+		#define ItemBloodbagONeg bloodBagONEG
 		
 		#define ItemBloodTester bloodTester
 		#define ItemTransfusionKit transfusionKit

@@ -38,6 +38,5 @@ Author:
 			(_this select 0) addBackpackCargoGlobal [_x select 1, 1];
 		};
 	};
-}
-foreach Loot_Select(_this select 1, _this select 2);
+} count Loot_Select(_this select 1, _this select 2);
 //foreach ([_this select 1, _this select 2] call loot_select);
