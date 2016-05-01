@@ -15455,7 +15455,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_GEAR">
 			<English>Selling from gear.</English>
-			<German>Selling from gear.</German>
+			<German>Verkauf aus meinem Inventar.</German>
 			<Russian>Selling from gear.</Russian>
 			<Spanish>Selling from gear.</Spanish>
 			<French>Selling from gear.</French>
@@ -15463,7 +15463,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_VEHICLE">
 			<English>Selling from vehicle.</English>
-			<German>Selling from vehicle.</German>
+			<German>Verkauf aus dem Fahrzeug.</German>
 			<Russian>Selling from vehicle.</Russian>
 			<Spanish>Selling from vehicle.</Spanish>
 			<French>Selling from vehicle.</French>
@@ -15471,7 +15471,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_BACKPACK">
 			<English>Selling from backpack.</English>
-			<German>Selling from backpack.</German>
+			<German>Verkauf aus dem Rucksack.</German>
 			<Russian>Selling from backpack.</Russian>
 			<Spanish>Selling from backpack.</Spanish>
 			<French>Selling from backpack.</French>
@@ -15479,7 +15479,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_ALL">
 			<English>These are all the items I'm selling.</English>
-			<German>These are all the items I'm selling.</German>
+			<German>Dies sind alle Produkte, die ich verkaufe.</German>
 			<Russian>These are all the items I'm selling.</Russian>
 			<Spanish>These are all the items I'm selling.</Spanish>
 			<French>These are all the items I'm selling.</French>
@@ -15487,7 +15487,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_VEHICLE">
 			<English>Buying in vehicle.</English>
-			<German>Buying in vehicle.</German>
+			<German>Kauf ins Fahrzeug.</German>
 			<Russian>Buying in vehicle.</Russian>
 			<Spanish>Buying in vehicle.</Spanish>
 			<French>Buying in vehicle.</French>
@@ -15495,7 +15495,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_BACKPACK">
 			<English>Buying in backpack.</English>
-			<German>Buying in backpack.</German>
+			<German>Kauf in den Rucksack.</German>
 			<Russian>Buying in backpack.</Russian>
 			<Spanish>Buying in backpack.</Spanish>
 			<French>Buying in backpack.</French>
@@ -15503,7 +15503,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_GEAR">
 			<English>Buying in gear.</English>
-			<German>Buying in gear.</German>
+			<German>Kauf in meine Ausrüstung.</German>
 			<Russian>Buying in gear.</Russian>
 			<Spanish>Buying in gear.</Spanish>
 			<French>Buying in gear.</French>
@@ -15527,7 +15527,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_STUPID">
 			<English>I'm not stupid.</English>
-			<German>I'm not stupid.</German>
+			<German>Ich bin doch nicht blöd.</German>
 			<Russian>I'm not stupid.</Russian>
 			<Spanish>I'm not stupid.</Spanish>
 			<French>I'm not stupid.</French>
@@ -15535,7 +15535,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NO_BACKPACK">
 			<English>You are not wearing a backpack.</English>
-			<German>You are not wearing a backpack.</German>
+			<German>Du hast keinen Rucksack.</German>
 			<Russian>You are not wearing a backpack.</Russian>
 			<Spanish>You are not wearing a backpack.</Spanish>
 			<French>You are not wearing a backpack.</French>
@@ -15543,7 +15543,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
-			<German>I would offer %1 %2.</German>
+			<German>Ich biete %1 %2.</German>
 			<Russian>I would offer %1 %2.</Russian>
 			<Spanish>I would offer %1 %2.</Spanish>
 			<French>I would offer %1 %2.</French>
@@ -15551,7 +15551,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ACCEPT">
 			<English>I accept %1 items from %2.</English>
-			<German>I accept %1 items from %2.</German>
+			<German>Ich nehme %1 %2.</German>
 			<Russian>I accept %1 items from %2.</Russian>
 			<Spanish>I accept %1 items from %2.</Spanish>
 			<French>I accept %1 items from %2.</French>
