@@ -361,8 +361,6 @@ class CfgVehicles {
 		   	minFov = 0.466;
 		   	maxFov = 0.466;
   		};
-  		class DefaultEventhandlers;
-  		class Eventhandlers: DefaultEventhandlers{};
   		smokeLauncherGrenadeCount = 6;
   		smokeLauncherVelocity = 15;
   		smokeLauncherOnTurret = 1;

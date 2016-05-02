@@ -239,12 +239,6 @@ class Ship : AllVehicles
       "GetOutLow"
     };
     precision = 10;
-    class Eventhandlers : DefaultEventhandlers
-    {
-    };
-    class DestructionEffects
-    {
-    };
   };
 class SmallShip: Ship
 {
