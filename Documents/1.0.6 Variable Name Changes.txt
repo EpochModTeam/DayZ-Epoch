@@ -38,7 +38,7 @@
 	- PVDZE_plr_Login --> PVDZ_plr_Login1
 	- PVDZE_plr_Login2 --> PVDZ_plr_Login2
 	- PVDZE_plr_LoginRecord --> PVDZ_plr_LoginRecord
-	- PVDZE_plr_Save --> PVDZ_plr_Save
+	- PVDZE_plr_Save --> PVDZ_plr_Save  Note: 2nd param is now a nested array (was array) 4th param is now achievements array (was bool)
 	- PVDZE_plr_SetDate --> dayzSetDate
 	- PVDZE_send --> PVDZ_send
 	- PVDZE_Server_Simulation --> PVDZ_Server_Simulation
