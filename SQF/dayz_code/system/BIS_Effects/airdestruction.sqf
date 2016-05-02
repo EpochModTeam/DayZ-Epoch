@@ -5,21 +5,6 @@ _int = (fuel _v)*(8+random 2);
 _t=time;
 
 if (!isDedicated) then { //dw, particle stuff don't need run on dedicated
-	if (player in (crew _v)) then {
-		[] spawn { //kill players when their vehicle explodes since this is too difficult for ArmA on its own
-			_cancel = false;
-			{
-				_SZPos = _x select 0;
-				_radius =  _x select 1;
-				if ((isInTraderCity || !canbuild) && {(player distance _SZPos) < _radius}) then {_cancel = true;};
-			} count DZE_SafeZonePosArray;
-			if (!_cancel) then {
-				player action ["Eject",vehicle player]; //eject player so I can get their gear
-				sleep 0.01; //don't use uisleep here
-				[player, "explosion"] spawn player_death;
-			};
-		};
-	};
 _fl = "#particlesource" createVehicleLocal getPosATL _v;
 _fl attachto [_v,[0,0,0],"destructionEffect2"];
 _fl setParticleRandom [0.3, [1, 1, 0], [0, 0, 0], 0, 0.3, [0, 0, 0, 0], 0, 0];
