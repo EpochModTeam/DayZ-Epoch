@@ -12210,7 +12210,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_1">
 			<English>Add 1 bar</English>
-			<German>1 Barren hinzufügen</German> -->
+			<German>1 Barren hinzufügen</German>
 			<Russian>Добавить 1 слиток</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -14157,14 +14157,6 @@
 			<French>Silver Ore</French>
 			<Czech>Silver Ore</Czech>
 		</Key>
-		<Key ID="STR_ORE_NAME_SILVER_DESC">
-			<English>Can be mined from rocks using a sledgehammer.</English>
-			<German>Kann mit einem Vorschlaghammer von Steinen gewonnen werden.</German>
-			<Russian>Добывается из камней с помощью кувалды.</Russian>
-			<Spanish>Can be mined from rocks using a sledgehammer.</Spanish>
-			<French>Can be mined from rocks using a sledgehammer.</French>
-			<Czech>Can be mined from rocks using a sledgehammer.</Czech>
-		</Key>
 		<Key ID="STR_ORE_NAME_GOLD">
 			<English>Gold Ore</English>
 			<German>Golderz</German>
@@ -14173,7 +14165,7 @@
 			<French>Gold Ore</French>
 			<Czech>Gold Ore</Czech>
 		</Key>
-		<Key ID="STR_ORE_NAME_GOLD_DESC">
+		<Key ID="STR_ORE_DESC">
 			<English>Can be mined from rocks using a sledgehammer.</English>
 			<German>Kann mit einem Vorschlaghammer von Steinen gewonnen werden.</German>
 			<Russian>Добывается из камней с помощью кувалды.</Russian>

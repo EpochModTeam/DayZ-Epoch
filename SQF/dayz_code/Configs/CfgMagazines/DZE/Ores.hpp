@@ -25,7 +25,7 @@ class PartOreSilver: CA_Magazine {
 	displayName = $STR_ORE_NAME_SILVER;
 	model = "\z\addons\dayz_epoch\models\silver_ore.p3d";
 	picture="\z\addons\dayz_epoch\pictures\equip_silver_ore_CA.paa";
-	descriptionShort = $STR_ORE_NAME_SILVER_DESC;
+	descriptionShort = $STR_ORE_DESC;
 	weight = 1;
 	class ItemActions {
 		class Crafting {
@@ -45,7 +45,7 @@ class PartOreGold: CA_Magazine {
 	displayName = $STR_ORE_NAME_GOLD;
 	model = "\z\addons\dayz_epoch\models\gold_ore.p3d";
 	picture="\z\addons\dayz_epoch\pictures\equip_gold_ore_CA.paa";
-	descriptionShort = $STR_ORE_NAME_GOLD_DESC;
+	descriptionShort = $STR_ORE_DESC;
 	weight = 1;
 	class ItemActions {
 		class Crafting {
