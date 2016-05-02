@@ -21,10 +21,10 @@ if (!isNil '_pic' && _pic == "") then {
 };
 
 _formattedText = format [
-	"<t size='1' align='center' color='#ffffff'> Gear </t>"
-	, _pic
+	"<t size='1' align='center' color='#ffffff'> %2 </t>"
+	, _pic, localize "STR_UI_GEAR"
 ];
 
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText _formattedText;
 
-[_weaps,_mags,"your gear"] call	Z_checkArrayInConfig;
+[_weaps,_mags,localize "STR_EPOCH_YOUR_GEAR"] call	Z_checkArrayInConfig;

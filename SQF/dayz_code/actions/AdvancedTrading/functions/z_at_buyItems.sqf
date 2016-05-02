@@ -130,21 +130,21 @@ if(_enoughMoney) then {
 		publicVariableServer  "PVDZE_veh_Publish2";
 		_keySelected;
 	};
-	systemChat format["Starting trade."];
+	systemChat localize "STR_EPOCH_PLAYER_105";
 
 	closeDialog 2;
 
 		if(Z_SellingFrom == 0) then { //backpack
 		_backpack = unitBackpack player;
-		systemChat format["Adding %1 items in backpack",count (Z_BuyingArray)];
+		systemChat format[localize "STR_EPOCH_TRADE_IN_BACKPACK",count (Z_BuyingArray)];
 			{
 				if( _x select 1 == "trade_weapons")then{
 					_backpack addWeaponCargoGlobal [_x select 0, _x select 9];
-					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
+					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9];
 				};
 				if( _x select 1 == "trade_items")then{
 					_backpack addMagazineCargoGlobal  [_x select 0, _x select 9];
-					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
+					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9];
 				};				
 				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
@@ -161,15 +161,15 @@ if(_enoughMoney) then {
 				systemChat format["Adding %1 items in %2",count (Z_BuyingArray), typeOf Z_vehicle];
 				if( _x select 1 == "trade_weapons")then{
 					Z_vehicle addWeaponCargoGlobal [_x select 0, _x select 9];
-					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
+					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9];
 				};
 				if( _x select 1 == "trade_items")then{
 					Z_vehicle addMagazineCargoGlobal [_x select 0, _x select 9];
-					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
+					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9];
 				};
 				if( _x select 1 == "trade_backpacks")then{
 					Z_vehicle addBackpackCargoGlobal [_x select 0, _x select 9];
-					diag_log format ["%1 x %2 added", _x select 0, _x select 9];
+					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9];
 				};
 				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
@@ -188,7 +188,7 @@ if(_enoughMoney) then {
 					_count = 0;
 					while{ _count < (_x select 9)}do{
 						player addWeapon (_x select 0);
-						diag_log format ["%1 added", _x select 0];
+						diag_log format [localize "STR_EPOCH_TRADE_ADDED", _x select 0];
 						_count = _count + 1;
 					};
 				};
@@ -196,7 +196,7 @@ if(_enoughMoney) then {
 					_count = 0;
 					 while{ _count < (_x select 9)} do {
 						player addMagazine (_x select 0);
-						diag_log format ["%1 added", _x select 0];
+						diag_log format [localize "STR_EPOCH_TRADE_ADDED", _x select 0];
 						_count = _count + 1;
 					};
 				};
@@ -215,25 +215,25 @@ if(_enoughMoney) then {
 		if (!Z_SingleCurrency) then {
 				_success = [player,_priceToBuy, _moneyInfo] call Z_payDefault;
 				if (_success) then {
-					systemChat format["Trade successfull, payed %1 worth of items.", _priceToBuy];
+					systemChat format[localize "STR_EPOCH_TRADE_SUCCESS", _priceToBuy];
 				} else {
-					systemchat "DEBUG: Something went wrong in the pay process. Please report this issue.";
+					systemchat localize "STR_EPOCH_TRADE_DEBUG";
 				};
 		} else {
 				_success = [player,_priceToBuy] call SC_fnc_removeCoins;
 				if (_success) then {
-					systemChat format["Trade successfull, payed %1 %2.", _priceToBuy, CurrencyName];
+					systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS", _priceToBuy, CurrencyName];
 				} else {
-					systemchat "DEBUG: Something went wrong in the pay process. Please report this issue.";
+					systemchat localize "STR_EPOCH_TRADE_DEBUG";
 				};
 		};
 	} else {
-		systemChat "You could not buy these items because the container lacks space to hold them.";
+		systemChat localize "STR_EPOCH_TRADE_CONTAINER_FULL";
 	};
 }else{
 	if( Z_SingleCurrency) then {
-		systemChat format["You need %1 %2 to buy all these items.",_priceToBuy,CurrencyName];
+		systemChat format[localize "STR_EPOCH_TRADE_NEED_COINS",_priceToBuy,CurrencyName];
 	} else {
-		systemChat format["You need more money to buy all these items."];
+		systemChat localize "STR_EPOCH_TRADE_NEED_MONEY";
 	};
 };

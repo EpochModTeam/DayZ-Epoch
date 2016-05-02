@@ -86,7 +86,7 @@ if(_index > -1)then{
 					systemChat format[localize "str_epoch_player_182",_textPartIn]; _returnInfo = [];
 				};
 			} else {
-				systemChat format[localize "str_epoch_player_245"]; _returnInfo = [];
+				systemChat localize "str_epoch_player_245"; _returnInfo = [];
 			};
 		};
 		_returnInfo;
@@ -209,14 +209,15 @@ if(_index > -1)then{
 	if(typeName _money  == "SCALAR") then {
 		if (Z_SingleCurrency) then {
 				_success = [player,_money] call SC_fnc_addCoins;
-				systemChat format["Trade successfull, received %1 %2", _money , CurrencyName];
+				systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE", _money , CurrencyName];
 		} else {
 				_success = [_money, 0] call Z_returnChange;
-				systemChat format["Trade successfull."];
+				systemChat localize "STR_EPOCH_TRADE_SUCCESSFUL";
 		};
 	}else{
-		systemChat format["Money is not a number. Something went wrong."];
+		systemChat localize "STR_EPOCH_TRADE_DEBUG";
+		diag_log "Money is not a number. Something went wrong.";
 	};
 }else{
-	systemChat format["No Items to sell"];
+	systemChat localize "STR_EPOCH_TRADE_NO_ITEMS";
 };

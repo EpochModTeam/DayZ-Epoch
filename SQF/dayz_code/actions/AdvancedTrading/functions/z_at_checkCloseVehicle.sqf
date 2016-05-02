@@ -10,8 +10,8 @@ _list = nearestObjects [(getPosATL player), ["AllVehicles"], Z_VehicleDistance];
 _result = false;
 if(!isNull _vehicle)then{
 	Z_vehicle = _vehicle;
-	systemChat format["Selected %1",typeOf Z_vehicle];
+	systemChat format[localize "STR_EPOCH_TRADE_SELECTED",typeOf Z_vehicle];
 	_result = true;
-	[format["Buying in %1.", typeOf Z_vehicle]] call Z_filleTradeTitle;
+	[format[localize "STR_EPOCH_BUYING_IN", typeOf Z_vehicle]] call Z_filleTradeTitle;
 };
 _result

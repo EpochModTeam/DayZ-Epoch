@@ -3,7 +3,7 @@ disableSerialization;
 Z_traderData = (_this select 3); // gets the trader data ( e.g menu_Functionary1 )
 
 if( isNil "Z_traderData" || count (Z_traderData) == 0)exitWith{
-	"Something went wrong selecting the trader." call dayz_rollingMessages;
+	localize "STR_EPOCH_TRADE_ERROR" call dayz_rollingMessages;
 };
 
 if(DZE_ActionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };

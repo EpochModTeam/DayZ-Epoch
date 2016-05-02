@@ -18,7 +18,7 @@ _list = nearestObjects [(getPosATL player), ["AllVehicles"], Z_VehicleDistance];
 }count _list;
 
 if (!isNull _vehicle) then {
-	systemChat format["Selected %1",typeOf _vehicle];
+	systemChat format[localize "STR_EPOCH_TRADE_SELECTED",typeOf _vehicle];
 	_pic = getText (configFile >> 'CfgVehicles' >> (typeOf _vehicle) >> 'picture');
 
 	_formattedText = format [
@@ -56,9 +56,9 @@ if (!isNull _vehicle) then {
 
 	[_normalWeaps,_normalMags, typeOf _vehicle] call Z_checkArrayInConfig;
 }else{
-	_ctrltext = format["Get in driver seat first!"];
+	_ctrltext = localize "STR_EPOCH_PLAYER_245";
 	ctrlSetText [Z_AT_TRADERLINE2, _ctrltext];
 
-	_ctrltext = format["I do not see any vehicle."];
+	_ctrltext = localize "STR_EPOCH_TRADE_NO_VEHICLE";
 	ctrlSetText [Z_AT_TRADERLINE1, _ctrltext];
 };

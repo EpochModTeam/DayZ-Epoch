@@ -15642,6 +15642,14 @@
 			<French>Rien</French>
 			<Czech>Nic</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_NO_INFO">
+			<English>No info found</English>
+			<Russian>Нет информации</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_NO_ITEMS">
+			<English>No items to sell</English>
+			<Russian>Нет ничего на продажу</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
 			<English>   Details</English>
 			<German>   Einzelheiten</German>
@@ -15658,6 +15666,10 @@
 			<French>I'm not stupid.</French>
 			<Czech>I'm not stupid.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_NO_VEHICLE">
+			<English>I do not see any vehicle.</English>
+			<Russian>Я не вижу Вашего транспорта.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_NO_BACKPACK">
 			<English>You are not wearing a backpack.</English>
 			<German>Du hast keinen Rucksack.</German>
@@ -15669,7 +15681,7 @@
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
 			<German>Ich biete %1 %2.</German>
-			<Russian>I would offer %1 %2.</Russian>
+			<Russian>Я предлагаю: %1 %2.</Russian>
 			<Spanish>I would offer %1 %2.</Spanish>
 			<French>I would offer %1 %2.</French>
 			<Czech>I would offer %1 %2.</Czech>
@@ -15677,10 +15689,109 @@
 		<Key ID="STR_EPOCH_TRADE_ACCEPT">
 			<English>I accept %1 items from %2.</English>
 			<German>Ich nehme %1 aus %2.</German>
-			<Russian>I accept %1 items from %2.</Russian>
+			<Russian>Я беру: %1 шт. из %2.</Russian>
 			<Spanish>I accept %1 items from %2.</Spanish>
 			<French>I accept %1 items from %2.</French>
 			<Czech>I accept %1 items from %2.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_ERROR">
+			<English>Something went wrong selecting the trader.</English>
+			<Russian>Произошла ошибка при выборе торговца.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_ONE_VEHICLE">
+			<English>You can only purchase one vehicle at a time.</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_GEAR_FULL">
+			<English>You can only buy %1 primary, %2 sidearm and %3 tools in your gear.</English>
+			<Russian>Вы можете купить в снаряжение: оружия-%1, пистолетов-%2, инструмента-%3.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_MAGS_FULL">
+			<English>You can only buy %1 magazines in your gear.</English>
+			<Russian>Вы можете купить магазинов в снаряжение: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BAG_FULL">
+			<English>You can only buy %1 backpacks in your gear.</English>
+			<Russian>Вы можете купить рюкзаков в снаряжение: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_VEHICLE_WEPS">
+			<English>You can only buy %1 weapons in your vehicle.</English>
+			<Russian>Вы можете купить оружия в Ваш автомобиль: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_VEHICLE_MAGS">
+			<English>You can only buy %1 magazines in your vehicle.</English>
+			<Russian>Вы можете купить магазинов в Ваш автомобиль: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_VEHICLE_BAGS">
+			<English>You can only buy %1 backpacks in your vehicle.</English>
+			<Russian>Вы можете купить рюкзаков в Ваш автомобиль: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_NEED_BAG">
+			<English>You need a backpack.</English>
+			<Russian>Вам нужен рюкзак.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BAG_WEPS">
+			<English>Only %1 weapons fit in the backpack.</English>
+			<Russian>В рюкзак поместится оружия: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BAG_MAGS">
+			<English>Only %1 mags fit in the backpack.</English>
+			<Russian>В рюкзак поместится магазинов: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BAG_BAGS">
+			<English>Only %1 bags fit in the backpack.</English>
+			<Russian>В рюкзак поместится рюкзаков: %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_IN_BACKPACK">
+			<English>Adding %1 items in backpack</English>
+			<Russian>Добавлено: %1 в рюкзак</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_ADDED_QTY">
+			<English>%1 x %2 added</English>
+			<Russian>%1 x %2 добавлено</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_ADDED">
+			<English>%1 added</English>
+			<Russian>%1 добавлено</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SUCCESSFUL">
+			<English>Trade successfull.</English>
+			<Russian>Продажа звершена.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SUCCESS">
+			<English>Trade successfull, payed %1 worth of items.</English>
+			<Russian>Продано! с Вас %1.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SUCCESS_COINS">
+			<English>Trade successfull, payed %1 %2.</English>
+			<Russian>Продано! с Вас %1 %2.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SUCCESS_CHANGE">
+			<English>Trade successfull, received %1 %2</English>
+			<Russian>Продажа звершена. Получено %1 %2</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_DEBUG">
+			<English>DEBUG: Something went wrong in the pay process. Please report this issue.</English>
+			<Russian>DEBUG: Что-то пошло не так в процессе оплаты. Пожалуйста, сообщите об этой проблеме.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_CONTAINER_FULL">
+			<English>You could not buy these items because the container lacks space to hold them.</English>
+			<Russian>Вы могли бы всё это купить, но места нехватает, поэтому покупка отменена.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_NEED_COINS">
+			<English>You need %1 %2 to buy all these items.</English>
+			<Russian>Вам нужно %1 %2 для покупки.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_NEED_MONEY">
+			<English>You need more money to buy all these items.</English>
+			<Russian>Вам нужно больше денег, чтобы купить.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELECTED">
+			<English>Selected %1</English>
+			<Russian>Выбрано: %1</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_BUYING_IN">
+			<English>Buying in %1.</English>
+			<Russian>Покупка в %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>
@@ -15705,6 +15816,22 @@
 			<Spanish>Clase</Spanish>
 			<French>Classe</French>
 			<Czech>Třída</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_MAGS">
+			<English>Mags: </English>
+			<Russian>Магазинов: </Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WEPS">
+			<English>Weps: </English>
+			<Russian>Оружия: </Russian>
+		</Key>
+		<Key ID="STR_EPOCH_BAGS">
+			<English>Bags: </English>
+			<Russian>Рюкзаков: </Russian>
+		</Key>
+		<Key ID="STR_EPOCH_YOUR_GEAR">
+			<English>your gear</English>
+			<Russian>вашего снаряжения</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALFLOOR">
 			<English>Metal Floor</English>
