@@ -563,7 +563,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// open Gate
 	if (_isGate && _isClosed && _isUnlocked && _canDo) then {
 		if (s_player_openGate < 0) then {
-			s_player_openGate = player addAction [localize "STR_EPOCH_ACTIONS_OPENGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Open"], 1, true, true];
+			s_player_openGate = player addAction [localize "STR_BLD_ACTIONS_OPENGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Open"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_openGate;
@@ -572,7 +572,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// Close Gate
 	if (_isGate && _isOpen && _isUnlocked && _canDo) then {
 		if (s_player_CloseGate < 0) then {
-			s_player_CloseGate = player addAction [localize "STR_EPOCH_ACTIONS_CLOSEGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Close"], 1, true, true];
+			s_player_CloseGate = player addAction [localize "STR_BLD_ACTIONS_CLOSEGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Close"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_CloseGate;
@@ -581,7 +581,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// Set
 	if ((_isHouse or _isLockableGate) && (_ownerPID == (getPlayerUID player)) && !_isUnlocked && _isClosed && _canDo) then {
 		if (s_player_setCode < 0) then {
-			s_player_setCode = player addAction [localize "STR_EPOCH_ACTIONS_SETLOCKCODE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Set"], 1, true, true];
+			s_player_setCode = player addAction [localize "STR_BLD_ACTIONS_SETLOCKCODE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Set"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_setCode;
@@ -590,7 +590,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//Lock Build point
 	if ((_isFence or _isGate) && (_ownerPID == (getPlayerUID player)) && !_ownerBuildLock && _canDo) then {
 		if (s_player_BuildLock < 0) then {
-			s_player_BuildLock = player addAction [localize "STR_EPOCH_ACTIONS_LOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"BuildLock"], 1, true, true];
+			s_player_BuildLock = player addAction [localize "STR_BLD_ACTIONS_LOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"BuildLock"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_BuildLock;
@@ -599,7 +599,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//UnLock Build point
 	if ((_isFence or _isGate) && (_ownerPID == (getPlayerUID player)) && _ownerBuildLock && _canDo) then {
 		if (s_player_BuildUnLock < 0) then {
-			s_player_BuildUnLock = player addAction [localize "STR_EPOCH_ACTIONS_UNLOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"BuildUnLock"], 1, true, true];
+			s_player_BuildUnLock = player addAction [localize "STR_BLD_ACTIONS_UNLOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"BuildUnLock"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_BuildUnLock;
@@ -608,7 +608,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// Unlock Gate/House
 	if ((_isHouse or _isLockableGate) && !_isUnlocked && _isClosed && _canDo) then {
 		if (s_player_unlockhouse < 0) then {
-			s_player_unlockhouse = player addAction [localize "STR_EPOCH_ACTIONS_UNLOCKGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Unlock"], 1, true, true];
+			s_player_unlockhouse = player addAction [localize "STR_BLD_ACTIONS_UNLOCKGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Unlock"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_unlockhouse;
@@ -617,7 +617,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// Lock Gate/House
 	if ((_isHouse or _isLockableGate) && _isUnlocked && _isClosed && _canDo) then {
 		if (s_player_lockhouse < 0) then {
-			s_player_lockhouse = player addAction [localize "STR_EPOCH_ACTIONS_LOCKGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Lock"], 1, true, true];
+			s_player_lockhouse = player addAction [localize "STR_BLD_ACTIONS_LOCKGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[cursorTarget,"Lock"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_lockhouse;
@@ -626,7 +626,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//Break In
 	if ((_isHouse or _isLockableGate) && (_ownerPID != (getPlayerUID player)) && !_isUnlocked && _canDo) then {
 		if (s_player_breakinhouse < 0) then {
-			s_player_breakinhouse = player addAction [localize "STR_EPOCH_ACTIONS_BREAKIN", "\z\addons\dayz_code\actions\player_breakin.sqf",cursorTarget, 1, true, true];
+			s_player_breakinhouse = player addAction [localize "STR_BLD_ACTIONS_BREAKIN", "\z\addons\dayz_code\actions\player_breakin.sqf",cursorTarget, 1, true, true];
 		};
 	} else {
 		player removeAction s_player_breakinhouse;

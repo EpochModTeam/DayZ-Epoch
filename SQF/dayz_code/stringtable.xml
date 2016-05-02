@@ -9710,6 +9710,78 @@
 			<Czech>Kovový plot</Czech>
 			<German>Metallzaun</German>
 		</Key>
+		<Key ID="STR_BLD_ACTIONS_OPENGATE">
+			<English>Open Gate</English>
+			<German>Open Gate</German>
+			<Russian>Открыть</Russian>
+			<Spanish>Open Gate</Spanish>
+			<Dutch>Open Gate</Dutch>
+			<French>Open Gate</French>
+			<Czech>Open Gate</Czech>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_CLOSEGATE">
+			<English>Close Gate</English>
+			<German>Close Gate</German>
+			<Russian>Закрыть</Russian>
+			<Spanish>Close Gate</Spanish>
+			<Dutch>Close Gate</Dutch>
+			<French>Close Gate</French>
+			<Czech>Close Gate</Czech>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_SETLOCKCODE">
+			<English>Set Lock Code</English>
+			<German>Set Lock Code</German>
+			<Russian>Установить код</Russian>
+			<Spanish>Set Lock Code</Spanish>
+			<Dutch>Set Lock Code</Dutch>
+			<French>Set Lock Code</French>
+			<Czech>Set Lock Code</Czech>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_LOCKBUILD">
+			<English>Lock Build</English>
+			<German>Lock Build</German>
+			<Russian>Закрыть постройку</Russian>
+			<Spanish>Lock Build</Spanish>
+			<Dutch>Lock Build</Dutch>
+			<French>Lock Build</French>
+			<Czech>Lock Build</Czech>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_UNLOCKBUILD">
+			<English>Unlock Build</English>
+			<German>Unlock Build</German>
+			<Russian>Открыть постройку</Russian>
+			<Spanish>Unlock Build</Spanish>
+			<Dutch>Unlock Build</Dutch>
+			<French>Unlock Build</French>
+			<Czech>Unlock Build</Czech>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_UNLOCKGATE">
+			<English>Unlock Gate</English>
+			<German>Unlock Gate</German>
+			<Russian>Разблокировать</Russian>
+			<Spanish>Unlock Gate</Spanish>
+			<Dutch>Takel voertuig aan Heli</Dutch>
+			<French>Unlock Gate</French>
+			<Czech>Unlock Gate</Czech>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_LOCKGATE">
+			<English>Lock Gate</English>
+			<German>Lock Gate</German>
+			<Russian>Заблокировать</Russian>
+			<Spanish>Lock Gate</Spanish>
+			<Dutch>Takel voertuig aan Heli</Dutch>
+			<French>Lock Gate</French>
+			<Czech>Lock Gate</Czech>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_BREAKIN">
+			<English>Break In</English>
+			<German>Break In</German>
+			<Russian>Взломать</Russian>
+			<Spanish>Break In</Spanish>
+			<Dutch>Break In</Dutch>
+			<French>Break In</French>
+			<Czech>Break In</Czech>
+		</Key>
 	</Package>	
 	<Package name="weapons">
 		<!-- **** WEAPONS **** -->
@@ -13090,14 +13162,6 @@
 			<French>Vous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
 			<Czech>Můžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_317">
-			<English>Craft Plot Pole</English>
-			<German>Craft Plot Pole</German>
-			<Russian>Создать: Plot Pole</Russian>
-			<Spanish>Craft Plot Pole</Spanish>
-			<French>Craft Plot Pole</French>
-			<Czech>Craft Plot Pole</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_318">
 			<English>You can't perform this action while in a vehicle.</English>
 			<German>You can't perform this action while in a vehicle.</German>
@@ -13547,78 +13611,6 @@
 			<Dutch>Takel voertuig aan Heli</Dutch>
 			<French>Attach to Heli</French>
 			<Czech>Attach to Heli</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_OPENGATE">
-			<English>Open Gate</English>
-			<German>Open Gate</German>
-			<Russian>Открыть</Russian>
-			<Spanish>Open Gate</Spanish>
-			<Dutch>Open Gate</Dutch>
-			<French>Open Gate</French>
-			<Czech>Open Gate</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_CLOSEGATE">
-			<English>Close Gate</English>
-			<German>Close Gate</German>
-			<Russian>Закрыть</Russian>
-			<Spanish>Close Gate</Spanish>
-			<Dutch>Close Gate</Dutch>
-			<French>Close Gate</French>
-			<Czech>Close Gate</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_SETLOCKCODE">
-			<English>Set Lock Code</English>
-			<German>Set Lock Code</German>
-			<Russian>Установить код</Russian>
-			<Spanish>Set Lock Code</Spanish>
-			<Dutch>Set Lock Code</Dutch>
-			<French>Set Lock Code</French>
-			<Czech>Set Lock Code</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_LOCKBUILD">
-			<English>Lock Build</English>
-			<German>Lock Build</German>
-			<Russian>Закрыть постройку</Russian>
-			<Spanish>Lock Build</Spanish>
-			<Dutch>Lock Build</Dutch>
-			<French>Lock Build</French>
-			<Czech>Lock Build</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_UNLOCKBUILD">
-			<English>Unlock Build</English>
-			<German>Unlock Build</German>
-			<Russian>Открыть постройку</Russian>
-			<Spanish>Unlock Build</Spanish>
-			<Dutch>Unlock Build</Dutch>
-			<French>Unlock Build</French>
-			<Czech>Unlock Build</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_UNLOCKGATE">
-			<English>Unlock Gate</English>
-			<German>Unlock Gate</German>
-			<Russian>Разблокировать</Russian>
-			<Spanish>Unlock Gate</Spanish>
-			<Dutch>Takel voertuig aan Heli</Dutch>
-			<French>Unlock Gate</French>
-			<Czech>Unlock Gate</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_LOCKGATE">
-			<English>Lock Gate</English>
-			<German>Lock Gate</German>
-			<Russian>Заблокировать</Russian>
-			<Spanish>Lock Gate</Spanish>
-			<Dutch>Takel voertuig aan Heli</Dutch>
-			<French>Lock Gate</French>
-			<Czech>Lock Gate</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_BREAKIN">
-			<English>Break In</English>
-			<German>Break In</German>
-			<Russian>Взломать</Russian>
-			<Spanish>Break In</Spanish>
-			<Dutch>Break In</Dutch>
-			<French>Break In</French>
-			<Czech>Break In</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HUMANITY">
 			<English>Your humanity is too %1, this trader refuses to talk to you</English>
@@ -14459,6 +14451,14 @@
 			<Spanish>Plot Deed</Spanish>
 			<French>Plot Deed</French>
 			<Czech>Plot Deed</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLOTDEED_ACTION">
+			<English>Craft Plot Pole</English>
+			<German>Grundstücks-Markierung herstellen</German>
+			<Russian>Создать: Plot Pole</Russian>
+			<Spanish>Craft Plot Pole</Spanish>
+			<French>Craft Plot Pole</French>
+			<Czech>Craft Plot Pole</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED_DESC">
 			<English>Deed to a plot of land, similar to a plot pole.</English>
@@ -15907,6 +15907,14 @@
 			<Spanish>Wall w/ Door Locked</Spanish>
 			<French>Wall w/ Door Locked</French>
 			<Czech>Wall w/ Door Locked</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED_DESC">
+			<English>Wall with locked door constructed out of plywood and lumber.</English>
+			<German>Wall with locked door constructed out of plywood and lumber.</German>
+			<Russian>Wall with locked door constructed out of plywood and lumber.</Russian>
+			<Spanish>Wall with locked door constructed out of plywood and lumber.</Spanish>
+			<French>Wall with locked door constructed out of plywood and lumber.</French>
+			<Czech>Wall with locked door constructed out of plywood and lumber.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
