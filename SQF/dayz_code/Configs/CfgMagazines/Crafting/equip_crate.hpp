@@ -5,5 +5,5 @@ class equip_crate : CA_Magazine {
 	descriptionShort = $STR_ITEM_DESC_equip_crate;
 	model = "\z\addons\dayz_communityassets\models\crate.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_crate.paa";
-	type = (256 * 2);
+	type = 256;
 };
