@@ -172,6 +172,3 @@ if (dayz_temperature_override) then { _difference = 0; if (dayz_temperatur < 37)
 
 //Change Temperatur Should be moved in a own Function to allow adding of Items which increase the Temp like "hot tea"
 dayz_temperatur = (((dayz_temperatur + _difference) max dayz_temperaturmin) min dayz_temperaturmax);
-
-
-//systemChat format["%1 - %2",dayz_temperatur,_difference];
