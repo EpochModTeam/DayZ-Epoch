@@ -3,10 +3,10 @@ class ItemGoldBar: CA_Magazine {
 	count = 1;
 	worth = 100;
 	type = 256;
-	displayName = "Gold";
+	displayName = $STR_EPOCH_GOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar1oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "Gold Bar";
+	descriptionShort = $STR_EPOCH_GOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -32,10 +32,10 @@ class ItemGoldBar2oz: CA_Magazine {
 	count = 1;
 	worth = 200;
 	type = 256;
-	displayName = "2oz Gold";
+	displayName = $STR_EPOCH_2OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar2oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "2 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_2OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -70,10 +70,10 @@ class ItemGoldBar3oz: CA_Magazine {
 	count = 1;
 	worth = 300;
 	type = 256;
-	displayName = "3oz Gold";
+	displayName = $STR_EPOCH_3OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar3oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "3 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_3OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -116,10 +116,10 @@ class ItemGoldBar4oz: CA_Magazine {
 	count = 1;
 	worth = 400;
 	type = 256;
-	displayName = "4oz Gold";
+	displayName = $STR_EPOCH_4OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar4oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "4 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_4OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -162,10 +162,10 @@ class ItemGoldBar5oz: CA_Magazine {
 	count = 1;
 	worth = 500;
 	type = 256;
-	displayName = "5oz Gold";
+	displayName = $STR_EPOCH_5OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar5oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "5 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_5OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -208,10 +208,10 @@ class ItemGoldBar6oz: CA_Magazine {
 	count = 1;
 	worth = 600;
 	type = 256;
-	displayName = "6oz Gold";
+	displayName = $STR_EPOCH_6OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar6oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "6 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_6OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -254,10 +254,10 @@ class ItemGoldBar7oz: CA_Magazine {
 	count = 1;
 	worth = 700;
 	type = 256;
-	displayName = "7oz Gold";
+	displayName = $STR_EPOCH_7OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar7oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "7 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_7OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -300,10 +300,10 @@ class ItemGoldBar8oz: CA_Magazine {
 	count = 1;
 	worth = 800;
 	type = 256;
-	displayName = "8oz Gold";
+	displayName = $STR_EPOCH_8OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar8oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "8 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_8OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -346,10 +346,10 @@ class ItemGoldBar9oz: CA_Magazine {
 	count = 1;
 	worth = 900;
 	type = 256;
-	displayName = "9oz Gold";
+	displayName = $STR_EPOCH_9OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar9oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
-	descriptionShort = "9 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_9OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -384,10 +384,10 @@ class ItemGoldBar10oz: CA_Magazine {
 	count = 1;
 	worth = 1000;
 	type = 256;
-	displayName = "10oz Gold";
+	displayName = $STR_EPOCH_10OZGOLD;
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar10oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_10oz_CA.paa";
-	descriptionShort = "10 x 1oz Gold Bar";
+	descriptionShort = $STR_EPOCH_10OZGOLD_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_211_1;

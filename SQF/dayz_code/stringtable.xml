@@ -13090,6 +13090,50 @@
 			<French>Vous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
 			<Czech>Můžete mít přístup pouze zařízení uživatele do této oblasti.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_317">
+			<English>Craft Plot Pole</English>
+			<German>Craft Plot Pole</German>
+			<Russian>Создать: Plot Pole</Russian>
+			<Spanish>Craft Plot Pole</Spanish>
+			<French>Craft Plot Pole</French>
+			<Czech>Craft Plot Pole</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_318">
+			<English>You can't perform this action while in a vehicle.</English>
+			<German>You can't perform this action while in a vehicle.</German>
+			<Russian>Вы не можете выполнить это действие, находясь в транспорте.</Russian>
+			<Spanish>You can't perform this action while in a vehicle.</Spanish>
+			<Dutch>Je kunt deze actie niet uitvoeren vanuit een voertuig.</Dutch>
+			<French>You can't perform this action while in a vehicle.</French>
+			<Czech>You can't perform this action while in a vehicle.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_319">
+			<English>The lift heli moved too much from the vehicle that was being lifted!</English>
+			<German>The lift heli moved too much from the vehicle that was being lifted!</German>
+			<Russian>Вертолёт улетел слишком далеко от поднимаемого транспорта!</Russian>
+			<Spanish>The lift heli moved too much from the vehicle that was being lifted!</Spanish>
+			<Dutch>De heli is tever bij het voertuig vandaan gedreven om te kunnen takelen!</Dutch>
+			<French>The lift heli moved too much from the vehicle that was being lifted!</French>
+			<Czech>The lift heli moved too much from the vehicle that was being lifted!</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_320">
+			<English>Another vehicle was attached or the vehicle was attached to another heli!</English>
+			<German>Another vehicle was attached or the vehicle was attached to another heli!</German>
+			<Russian>Другой транспорт был прикреплён или транспорт был прикреплён к другому вертолёту!</Russian>
+			<Spanish>Another vehicle was attached or the vehicle was attached to another heli!</Spanish>
+			<Dutch>Een ander voertuig was gekoppeld of het voertuig hangt al aan een andere heli!</Dutch>
+			<French>Another vehicle was attached or the vehicle was attached to another heli!</French>
+			<Czech>Another vehicle was attached or the vehicle was attached to another heli!</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_321">
+			<English>You have interrupted lifting a vehicle!</English>
+			<German>You have interrupted lifting a vehicle!</German>
+			<Russian>Вы прервали подъём транспорта!</Russian>
+			<Spanish>You have interrupted lifting a vehicle!</Spanish>
+			<Dutch>Je hebt het takelen van het voertuig onderbroken!</Dutch>
+			<French>You have interrupted lifting a vehicle!</French>
+			<Czech>You have interrupted lifting a vehicle!</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
 			<German>Fahrzeug upgraden</German>
@@ -13315,6 +13359,15 @@
 			<French>Aperçu de la zone maintenue</French>
 			<Czech>Náhled údržby oblasti</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_MANAGEPLOT">
+			<English>Manage Plot</English>
+			<German>Manage Plot</German>
+			<Russian>Manage Plot</Russian>
+			<Spanish>Manage Plot</Spanish>
+			<Dutch>Manage Plot</Dutch>
+			<French>Manage Plot</French>
+			<Czech>Manage Plot</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
 			<English>Unlock %1</English>
 			<German>%1 aufschließen</German>
@@ -13477,6 +13530,96 @@
 			<French>Détacher les sangles</French>
 			<Czech>Odstranit Popruhy</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_DETACHVEHICLE">
+			<English>Detach Vehicle</English>
+			<German>Detach Vehicle</German>
+			<Russian>Отцепить транспорт</Russian>
+			<Spanish>Detach Vehicle</Spanish>
+			<Dutch>Ontkoppel getakeld voertuig</Dutch>
+			<French>Detach Vehicle</French>
+			<Czech>Detach Vehicle</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_ATTACHTOHELI">
+			<English>Attach to Heli</English>
+			<German>Attach to Heli</German>
+			<Russian>Прицепить к вертолёту</Russian>
+			<Spanish>Attach to Heli</Spanish>
+			<Dutch>Takel voertuig aan Heli</Dutch>
+			<French>Attach to Heli</French>
+			<Czech>Attach to Heli</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_OPENGATE">
+			<English>Open Gate</English>
+			<German>Open Gate</German>
+			<Russian>Открыть</Russian>
+			<Spanish>Open Gate</Spanish>
+			<Dutch>Open Gate</Dutch>
+			<French>Open Gate</French>
+			<Czech>Open Gate</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_CLOSEGATE">
+			<English>Close Gate</English>
+			<German>Close Gate</German>
+			<Russian>Закрыть</Russian>
+			<Spanish>Close Gate</Spanish>
+			<Dutch>Close Gate</Dutch>
+			<French>Close Gate</French>
+			<Czech>Close Gate</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_SETLOCKCODE">
+			<English>Set Lock Code</English>
+			<German>Set Lock Code</German>
+			<Russian>Установить код</Russian>
+			<Spanish>Set Lock Code</Spanish>
+			<Dutch>Set Lock Code</Dutch>
+			<French>Set Lock Code</French>
+			<Czech>Set Lock Code</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_LOCKBUILD">
+			<English>Lock Build</English>
+			<German>Lock Build</German>
+			<Russian>Закрыть постройку</Russian>
+			<Spanish>Lock Build</Spanish>
+			<Dutch>Lock Build</Dutch>
+			<French>Lock Build</French>
+			<Czech>Lock Build</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_UNLOCKBUILD">
+			<English>Unlock Build</English>
+			<German>Unlock Build</German>
+			<Russian>Открыть постройку</Russian>
+			<Spanish>Unlock Build</Spanish>
+			<Dutch>Unlock Build</Dutch>
+			<French>Unlock Build</French>
+			<Czech>Unlock Build</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_UNLOCKGATE">
+			<English>Unlock Gate</English>
+			<German>Unlock Gate</German>
+			<Russian>Разблокировать</Russian>
+			<Spanish>Unlock Gate</Spanish>
+			<Dutch>Takel voertuig aan Heli</Dutch>
+			<French>Unlock Gate</French>
+			<Czech>Unlock Gate</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_LOCKGATE">
+			<English>Lock Gate</English>
+			<German>Lock Gate</German>
+			<Russian>Заблокировать</Russian>
+			<Spanish>Lock Gate</Spanish>
+			<Dutch>Takel voertuig aan Heli</Dutch>
+			<French>Lock Gate</French>
+			<Czech>Lock Gate</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_BREAKIN">
+			<English>Break In</English>
+			<German>Break In</German>
+			<Russian>Взломать</Russian>
+			<Spanish>Break In</Spanish>
+			<Dutch>Break In</Dutch>
+			<French>Break In</French>
+			<Czech>Break In</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HUMANITY">
 			<English>Your humanity is too %1, this trader refuses to talk to you</English>
 			<German>Dein Menschlichkeitswert ist zu %1, dieser Händler will nicht mit dir reden</German>
@@ -13561,7 +13704,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_8">
 			<English>You have tagged a player as friendly. Waiting for other player to accept.</English>
 			<German>Du hast einen Spieler als Freund markiert. Warte auf Bestätigung vom anderen Spieler.</German>
-			<Russian>Вы отметили игрока как друга. Ожидание принятия дружбы.</Russian>
+			<Russian>Вы отметили игрока как друга. Ожидание подтверждения.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
 			<French>Vous avez marqué un joueur comme amical. En attente de la confirmation de ce joueur.</French>
@@ -14324,14 +14467,6 @@
 			<Spanish>Deed to a plot of land, similar to a plot pole.</Spanish>
 			<French>Deed to a plot of land, similar to a plot pole.</French>
 			<Czech>Deed to a plot of land, similar to a plot pole.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTDEED_ACTION">
-			<English>Craft Plot Pole</English>
-			<German>Grundstücks-Markierung herstellen</German>
-			<Russian>Создать: Plot Pole</Russian>
-			<Spanish>Craft Plot Pole</Spanish>
-			<French>Craft Plot Pole</French>
-			<Czech>Craft Plot Pole</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_LETTER">
 			<English>Letter</English>
@@ -15408,7 +15543,7 @@
 		<Key ID="STR_EPOCH_TRADE_VEHICLE">
 			<English>Vehicle</English>
 			<German>Fahrzeug</German>
-			<Russian>Средство передвижения</Russian>
+			<Russian>Транспорт</Russian>
 			<Spanish>Vehículo</Spanish>
 			<French>Véhicule</French>
 			<Czech>Vozidlo</Czech>
@@ -15424,7 +15559,7 @@
 		<Key ID="STR_EPOCH_TRADE_INVENTORY">
 			<English>Inventory</English>
 			<German>Inventar</German>
-			<Russian>инвентарь</Russian>
+			<Russian>Инвентарь</Russian>
 			<Spanish>Inventario</Spanish>
 			<French>Inventaire</French>
 			<Czech>Inventář</Czech>
@@ -15432,7 +15567,7 @@
 		<Key ID="STR_EPOCH_TRADE_BUYING">
 			<English>Buying</English>
 			<German>Kauf</German>
-			<Russian>покупка</Russian>
+			<Russian>Покупка</Russian>
 			<Spanish>Compra</Spanish>
 			<French>Achat</French>
 			<Czech>Nákupy</Czech>
@@ -15440,7 +15575,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELLING">
 			<English>Selling</English>
 			<German>Verkauf</German>
-			<Russian>продажа</Russian>
+			<Russian>Продажа</Russian>
 			<Spanish>De venta</Spanish>
 			<French>Vente</French>
 			<Czech>Prodejní</Czech>
@@ -15448,7 +15583,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELLING_GEAR">
 			<English>Selling from gear.</English>
 			<German>Verkauf aus meiner Ausrüstung.</German>
-			<Russian>Selling from gear.</Russian>
+			<Russian>Продажа из инвентаря.</Russian>
 			<Spanish>Selling from gear.</Spanish>
 			<French>Selling from gear.</French>
 			<Czech>Selling from gear.</Czech>
@@ -15456,7 +15591,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELLING_VEHICLE">
 			<English>Selling from vehicle.</English>
 			<German>Verkauf aus dem Fahrzeug.</German>
-			<Russian>Selling from vehicle.</Russian>
+			<Russian>Продажа из транспорта.</Russian>
 			<Spanish>Selling from vehicle.</Spanish>
 			<French>Selling from vehicle.</French>
 			<Czech>Selling from vehicle.</Czech>
@@ -15464,7 +15599,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELLING_BACKPACK">
 			<English>Selling from backpack.</English>
 			<German>Verkauf aus dem Rucksack.</German>
-			<Russian>Selling from backpack.</Russian>
+			<Russian>Продажа из рюкзака.</Russian>
 			<Spanish>Selling from backpack.</Spanish>
 			<French>Selling from backpack.</French>
 			<Czech>Selling from backpack.</Czech>
@@ -15472,7 +15607,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELLING_ALL">
 			<English>These are all the items I'm selling.</English>
 			<German>Dies sind alle Produkte, die ich verkaufe.</German>
-			<Russian>These are all the items I'm selling.</Russian>
+			<Russian>Вот какие вещи я продаю.</Russian>
 			<Spanish>These are all the items I'm selling.</Spanish>
 			<French>These are all the items I'm selling.</French>
 			<Czech>These are all the items I'm selling.</Czech>
@@ -15480,7 +15615,7 @@
 		<Key ID="STR_EPOCH_TRADE_BUYING_VEHICLE">
 			<English>Buying in vehicle.</English>
 			<German>Kauf ins Fahrzeug.</German>
-			<Russian>Buying in vehicle.</Russian>
+			<Russian>Покупка в транспорт.</Russian>
 			<Spanish>Buying in vehicle.</Spanish>
 			<French>Buying in vehicle.</French>
 			<Czech>Buying in vehicle.</Czech>
@@ -15488,7 +15623,7 @@
 		<Key ID="STR_EPOCH_TRADE_BUYING_BACKPACK">
 			<English>Buying in backpack.</English>
 			<German>Kauf in den Rucksack.</German>
-			<Russian>Buying in backpack.</Russian>
+			<Russian>Покупка в рюкзак.</Russian>
 			<Spanish>Buying in backpack.</Spanish>
 			<French>Buying in backpack.</French>
 			<Czech>Buying in backpack.</Czech>
@@ -15496,7 +15631,7 @@
 		<Key ID="STR_EPOCH_TRADE_BUYING_GEAR">
 			<English>Buying in gear.</English>
 			<German>Kauf in meine Ausrüstung.</German>
-			<Russian>Buying in gear.</Russian>
+			<Russian>Покупка в инвентарь.</Russian>
 			<Spanish>Buying in gear.</Spanish>
 			<French>Buying in gear.</French>
 			<Czech>Buying in gear.</Czech>
@@ -15520,7 +15655,7 @@
 		<Key ID="STR_EPOCH_TRADE_STUPID">
 			<English>I'm not stupid.</English>
 			<German>Ich bin doch nicht blöd.</German>
-			<Russian>I'm not stupid.</Russian>
+			<Russian>Я не глупый.</Russian>
 			<Spanish>I'm not stupid.</Spanish>
 			<French>I'm not stupid.</French>
 			<Czech>I'm not stupid.</Czech>
@@ -15528,7 +15663,7 @@
 		<Key ID="STR_EPOCH_TRADE_NO_BACKPACK">
 			<English>You are not wearing a backpack.</English>
 			<German>Du hast keinen Rucksack.</German>
-			<Russian>You are not wearing a backpack.</Russian>
+			<Russian>У вас нет рюкзака.</Russian>
 			<Spanish>You are not wearing a backpack.</Spanish>
 			<French>You are not wearing a backpack.</French>
 			<Czech>You are not wearing a backpack.</Czech>
@@ -15552,7 +15687,7 @@
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>
 			<German>Händler</German>
-			<Russian>трейдер</Russian>
+			<Russian>Торговец</Russian>
 			<Spanish>Comerciante</Spanish>
 			<French>Commerçant</French>
 			<Czech>Obchodník</Czech>
@@ -15560,7 +15695,7 @@
 		<Key ID="STR_EPOCH_NAME">
 			<English>Name</English>
 			<German>Name</German>
-			<Russian>имя</Russian>
+			<Russian>Имя</Russian>
 			<Spanish>Nombre</Spanish>
 			<French>Prénom</French>
 			<Czech>Jméno</Czech>
@@ -15572,6 +15707,1326 @@
 			<Spanish>Clase</Spanish>
 			<French>Classe</French>
 			<Czech>Třída</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_METALFLOOR">
+			<English>Metal Floor</English>
+			<German>Metal Floor</German>
+			<Russian>Metal Floor</Russian>
+			<Spanish>Metal Floor</Spanish>
+			<French>Metal Floor</French>
+			<Czech>Metal Floor</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
+			<English>Cinder Block Wall</English>
+			<German>Cinder Block Wall</German>
+			<Russian>Cinder Block Wall</Russian>
+			<Spanish>Cinder Block Wall</Spanish>
+			<French>Cinder Block Wall</French>
+			<Czech>Cinder Block Wall</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERBLOCKWALL_DESC">
+			<English>Half height cinder block wall.</English>
+			<German>Half height cinder block wall.</German>
+			<Russian>Half height cinder block wall.</Russian>
+			<Spanish>Half height cinder block wall.</Spanish>
+			<French>Half height cinder block wall.</French>
+			<Czech>Half height cinder block wall.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BLOCKDOORWAY">
+			<English>Block Doorway</English>
+			<German>Block Doorway</German>
+			<Russian>Block Doorway</Russian>
+			<Spanish>Block Doorway</Spanish>
+			<French>Block Doorway</French>
+			<Czech>Block Doorway</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BLOCKDOORWAY_DESC">
+			<English>Cinder block doorway.</English>
+			<German>Cinder block doorway.</German>
+			<Russian>Cinder block doorway.</Russian>
+			<Spanish>Cinder block doorway.</Spanish>
+			<French>Cinder block doorway.</French>
+			<Czech>Cinder block doorway.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
+			<English>Block Garage Doorway</English>
+			<German>Block Garage Doorway</German>
+			<Russian>Block Garage Doorway</Russian>
+			<Spanish>Block Garage Doorway</Spanish>
+			<French>Block Garage Doorway</French>
+			<Czech>Block Garage Doorway</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_DESC">
+			<English>Cinder block garage doorway</English>
+			<German>Cinder block garage doorway</German>
+			<Russian>Cinder block garage doorway</Russian>
+			<Spanish>Cinder block garage doorway</Spanish>
+			<French>Cinder block garage doorway</French>
+			<Czech>Cinder block garage doorway</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_FLOORCEILING">
+			<English>Floor/Ceiling</English>
+			<German>Floor/Ceiling</German>
+			<Russian>Floor/Ceiling</Russian>
+			<Spanish>Floor/Ceiling</Spanish>
+			<French>Floor/Ceiling</French>
+			<Czech>Floor/Ceiling</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_FLOORCEILINGHALF">
+			<English>Floor/Ceiling 1/2</English>
+			<German>Floor/Ceiling 1/2</German>
+			<Russian>Floor/Ceiling 1/2</Russian>
+			<Spanish>Floor/Ceiling 1/2</Spanish>
+			<French>Floor/Ceiling 1/2</French>
+			<Czech>Floor/Ceiling 1/2</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_FLOORCEILINGQUARTER">
+			<English>Floor/Ceiling 1/4</English>
+			<German>Floor/Ceiling 1/4</German>
+			<Russian>Floor/Ceiling 1/4</Russian>
+			<Spanish>Floor/Ceiling 1/4</Spanish>
+			<French>Floor/Ceiling 1/4</French>
+			<Czech>Floor/Ceiling 1/4</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_FLOORCEILING_DESC">
+			<English>Wood Floor can also be used as a ceiling.</English>
+			<German>Wood Floor can also be used as a ceiling.</German>
+			<Russian>Wood Floor can also be used as a ceiling.</Russian>
+			<Spanish>Wood Floor can also be used as a ceiling.</Spanish>
+			<French>Wood Floor can also be used as a ceiling.</French>
+			<Czech>Wood Floor can also be used as a ceiling.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODSTAIRS">
+			<English>Wood Stairs</English>
+			<German>Wood Stairs</German>
+			<Russian>Wood Stairs</Russian>
+			<Spanish>Wood Stairs</Spanish>
+			<French>Wood Stairs</French>
+			<Czech>Wood Stairs</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODSTAIRSWITHSUPPORTS">
+			<English>Wood Stairs w/ supports</English>
+			<German>Wood Stairs w/ supports</German>
+			<Russian>Wood Stairs w/ supports</Russian>
+			<Spanish>Wood Stairs w/ supports</Spanish>
+			<French>Wood Stairs w/ supports</French>
+			<Czech>Wood Stairs w/ supports</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODSTAIRSWITHSUPPORTS_DESC">
+			<English>Wood stairs with supports.</English>
+			<German>Wood stairs with supports.</German>
+			<Russian>Wood stairs with supports.</Russian>
+			<Spanish>Wood stairs with supports.</Spanish>
+			<French>Wood stairs with supports.</French>
+			<Czech>Wood stairs with supports.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODLADDER">
+			<English>Wood Ladder</English>
+			<German>Wood Ladder</German>
+			<Russian>Wood Ladder</Russian>
+			<Spanish>Wood Ladder</Spanish>
+			<French>Wood Ladder</French>
+			<Czech>Wood Ladder</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODWALL">
+			<English>Wood Wall</English>
+			<German>Wood Wall</German>
+			<Russian>Wood Wall</Russian>
+			<Spanish>Wood Wall</Spanish>
+			<French>Wood Wall</French>
+			<Czech>Wood Wall</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODWALL_DESC">
+			<English>Wall constructed out of plywood and lumber.</English>
+			<German>Wall constructed out of plywood and lumber.</German>
+			<Russian>Wall constructed out of plywood and lumber.</Russian>
+			<Spanish>Wall constructed out of plywood and lumber.</Spanish>
+			<French>Wall constructed out of plywood and lumber.</French>
+			<Czech>Wall constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODWALLTHIRDPART">
+			<English>Wood Wall 1/3</English>
+			<German>Wood Wall 1/3</German>
+			<Russian>Wood Wall 1/3</Russian>
+			<Spanish>Wood Wall 1/3</Spanish>
+			<French>Wood Wall 1/3</French>
+			<Czech>Wood Wall 1/3</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODWALLTHIRDPART_DESC">
+			<English>Third wall constructed out of plywood and lumber.</English>
+			<German>Third wall constructed out of plywood and lumber.</German>
+			<Russian>Third wall constructed out of plywood and lumber.</Russian>
+			<Spanish>Third wall constructed out of plywood and lumber.</Spanish>
+			<French>Third wall constructed out of plywood and lumber.</French>
+			<Czech>Third wall constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHWINDOW">
+			<English>Wall w/ Window</English>
+			<German>Wall w/ Window</German>
+			<Russian>Wall w/ Window</Russian>
+			<Spanish>Wall w/ Window</Spanish>
+			<French>Wall w/ Window</French>
+			<Czech>Wall w/ Window</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHWINDOW_DESC">
+			<English>Wall with window constructed out of plywood and lumber.</English>
+			<German>Wall with window constructed out of plywood and lumber.</German>
+			<Russian>Wall with window constructed out of plywood and lumber.</Russian>
+			<Spanish>Wall with window constructed out of plywood and lumber.</Spanish>
+			<French>Wall with window constructed out of plywood and lumber.</French>
+			<Czech>Wall with window constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHDOORWAY">
+			<English>Wall w/ Doorway</English>
+			<German>Wall w/ Doorway</German>
+			<Russian>Wall w/ Doorway</Russian>
+			<Spanish>Wall w/ Doorway</Spanish>
+			<French>Wall w/ Doorway</French>
+			<Czech>Wall w/ Doorway</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHDOORWAY_DESC">
+			<English>Wall with doorway constructed out of plywood and lumber.</English>
+			<German>Wall with doorway constructed out of plywood and lumber.</German>
+			<Russian>Wall with doorway constructed out of plywood and lumber.</Russian>
+			<Spanish>Wall with doorway constructed out of plywood and lumber.</Spanish>
+			<French>Wall with doorway constructed out of plywood and lumber.</French>
+			<Czech>Wall with doorway constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHDOOR">
+			<English>Wall w/ Door</English>
+			<German>Wall w/ Door</German>
+			<Russian>Wall w/ Door</Russian>
+			<Spanish>Wall w/ Door</Spanish>
+			<French>Wall w/ Door</French>
+			<Czech>Wall w/ Door</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED">
+			<English>Wall w/ Door Locked</English>
+			<German>Wall w/ Door Locked</German>
+			<Russian>Wall w/ Door Locked</Russian>
+			<Spanish>Wall w/ Door Locked</Spanish>
+			<French>Wall w/ Door Locked</French>
+			<Czech>Wall w/ Door Locked</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WALLWITHDOOR_DESC">
+			<English>Wall with door constructed out of plywood and lumber.</English>
+			<German>Wall with door constructed out of plywood and lumber.</German>
+			<Russian>Wall with door constructed out of plywood and lumber.</Russian>
+			<Spanish>Wall with door constructed out of plywood and lumber.</Spanish>
+			<French>Wall with door constructed out of plywood and lumber.</French>
+			<Czech>Wall with door constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODGARAGEDOOR">
+			<English>Wood Garage Door</English>
+			<German>Wood Garage Door</German>
+			<Russian>Wood Garage Door</Russian>
+			<Spanish>Wood Garage Door</Spanish>
+			<French>Wood Garage Door</French>
+			<Czech>Wood Garage Door</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODGARAGEDOOR_DESC">
+			<English>Garage door constructed out of plywood and lumber.</English>
+			<German>Garage door constructed out of plywood and lumber.</German>
+			<Russian>Garage door constructed out of plywood and lumber.</Russian>
+			<Spanish>Garage door constructed out of plywood and lumber.</Spanish>
+			<French>Garage door constructed out of plywood and lumber.</French>
+			<Czech>Garage door constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED">
+			<English>Wood Garage Door Locked</English>
+			<German>Wood Garage Door Locked</German>
+			<Russian>Wood Garage Door Locked</Russian>
+			<Spanish>Wood Garage Door Locked</Spanish>
+			<French>Wood Garage Door Locked</French>
+			<Czech>Wood Garage Door Locked</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED_DESC">
+			<English>Garage door with combination lock.</English>
+			<German>Garage door with combination lock.</German>
+			<Russian>Garage door with combination lock.</Russian>
+			<Spanish>Garage door with combination lock.</Spanish>
+			<French>Garage door with combination lock.</French>
+			<Czech>Garage door with combination lock.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWOODWALL">
+			<English>Large Wood Wall</English>
+			<German>Large Wood Wall</German>
+			<Russian>Large Wood Wall</Russian>
+			<Spanish>Large Wood Wall</Spanish>
+			<French>Large Wood Wall</French>
+			<Czech>Large Wood Wall</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWOODWALL_DESC">
+			<English>Large wall constructed out of plywood and lumber.</English>
+			<German>Large wall constructed out of plywood and lumber.</German>
+			<Russian>Large wall constructed out of plywood and lumber.</Russian>
+			<Spanish>Large wall constructed out of plywood and lumber.</Spanish>
+			<French>Large wall constructed out of plywood and lumber.</French>
+			<Czech>Large wall constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHWINDOW">
+			<English>Large Wall w/ Window</English>
+			<German>Large Wall w/ Window</German>
+			<Russian>Large Wall w/ Window</Russian>
+			<Spanish>Large Wall w/ Window</Spanish>
+			<French>Large Wall w/ Window</French>
+			<Czech>Large Wall w/ Window</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHWINDOW_DESC">
+			<English>Large wall with window constructed out of plywood and lumber.</English>
+			<German>Large wall with window constructed out of plywood and lumber.</German>
+			<Russian>Large wall with window constructed out of plywood and lumber.</Russian>
+			<Spanish>Large wall with window constructed out of plywood and lumber.</Spanish>
+			<French>Large wall with window constructed out of plywood and lumber.</French>
+			<Czech>Large wall with window constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY">
+			<English>Large Wall w/ Doorway</English>
+			<German>Large Wall w/ Doorway</German>
+			<Russian>Large Wall w/ Doorway</Russian>
+			<Spanish>Large Wall w/ Doorway</Spanish>
+			<French>Large Wall w/ Doorway</French>
+			<Czech>Large Wall w/ Doorway</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY_DESC">
+			<English>Large wall with doorway constructed out of plywood and lumber.</English>
+			<German>Large wall with doorway constructed out of plywood and lumber.</German>
+			<Russian>Large wall with doorway constructed out of plywood and lumber.</Russian>
+			<Spanish>Large wall with doorway constructed out of plywood and lumber.</Spanish>
+			<French>Large wall with doorway constructed out of plywood and lumber.</French>
+			<Czech>Large wall with doorway constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHDOOR">
+			<English>Large Wall w/ Door</English>
+			<German>Large Wall w/ Door</German>
+			<Russian>Large Wall w/ Door</Russian>
+			<Spanish>Large Wall w/ Door</Spanish>
+			<French>Large Wall w/ Door</French>
+			<Czech>Large Wall w/ Door</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHDOOR_DESC">
+			<English>Wall with door constructed out of plywood and lumber.</English>
+			<German>Wall with door constructed out of plywood and lumber.</German>
+			<Russian>Wall with door constructed out of plywood and lumber.</Russian>
+			<Spanish>Wall with door constructed out of plywood and lumber.</Spanish>
+			<French>Wall with door constructed out of plywood and lumber.</French>
+			<Czech>Wall with door constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED">
+			<English>Large Wall w/ Door Locked</English>
+			<German>Large Wall w/ Door Locked</German>
+			<Russian>Large Wall w/ Door Locked</Russian>
+			<Spanish>Large Wall w/ Door Locked</Spanish>
+			<French>Large Wall w/ Door Locked</French>
+			<Czech>Large Wall w/ Door Locked</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC">
+			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
+			<German>Wall with combination lock door constructed out of plywood and lumber.</German>
+			<Russian>Wall with combination lock door constructed out of plywood and lumber.</Russian>
+			<Spanish>Wall with combination lock door constructed out of plywood and lumber.</Spanish>
+			<French>Wall with combination lock door constructed out of plywood and lumber.</French>
+			<Czech>Wall with combination lock door constructed out of plywood and lumber.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ALUMINUM">
+			<English>Aluminum</English>
+			<German>Aluminum</German>
+			<Russian>Алюминий</Russian>
+			<Spanish>Aluminum</Spanish>
+			<French>Aluminum</French>
+			<Czech>Aluminum</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ALUMINUM_DESC">
+			<English>Aluminum Bar</English>
+			<German>Aluminum Bar</German>
+			<Russian>Алюминиевый слиток</Russian>
+			<Spanish>Aluminum Bar</Spanish>
+			<French>Aluminum Bar</French>
+			<Czech>Aluminum Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZALUMINUM">
+			<English>10oz Aluminum</English>
+			<German>10oz Aluminum</German>
+			<Russian>10 унций алюминия</Russian>
+			<Spanish>10oz Aluminum</Spanish>
+			<French>10oz Aluminum</French>
+			<Czech>10oz Aluminum</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZALUMINUM_DESC">
+			<English>10oz Aluminum Bar</English>
+			<German>10oz Aluminum Bar</German>
+			<Russian>Алюминиевый слиток (10 унций)</Russian>
+			<Spanish>10oz Aluminum Bar</Spanish>
+			<French>10oz Aluminum Bar</French>
+			<Czech>10oz Aluminum Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRONZE">
+			<English>Bronze</English>
+			<German>Bronze</German>
+			<Russian>Бронза</Russian>
+			<Spanish>Bronze</Spanish>
+			<French>Bronze</French>
+			<Czech>Bronze</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BRONZE_DESC">
+			<English>Bronze Bar</English>
+			<German>Bronze Bar</German>
+			<Russian>Бронзовый слиток</Russian>
+			<Spanish>Bronze Bar</Spanish>
+			<French>Bronze Bar</French>
+			<Czech>Bronze Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_COPPER">
+			<English>Copper</English>
+			<German>Copper</German>
+			<Russian>Медь</Russian>
+			<Spanish>Copper</Spanish>
+			<French>Copper</French>
+			<Czech>Copper</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_COPPER_DESC">
+			<English>Copper Bar</English>
+			<German>Copper Bar</German>
+			<Russian>Медный слиток</Russian>
+			<Spanish>Copper Bar</Spanish>
+			<French>Copper Bar</French>
+			<Czech>Copper Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZCOPPER">
+			<English>10oz Copper</English>
+			<German>10oz Copper</German>
+			<Russian>10 унций меди</Russian>
+			<Spanish>10oz Copper</Spanish>
+			<French>10oz Copper</French>
+			<Czech>10oz Copper</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZCOPPER_DESC">
+			<English>10oz Copper Bar</English>
+			<German>10oz Copper Bar</German>
+			<Russian>Медный слиток (10 унций)</Russian>
+			<Spanish>10oz Copper Bar</Spanish>
+			<French>10oz Copper Bar</French>
+			<Czech>10oz Copper Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_GOLD">
+			<English>Gold</English>
+			<German>Gold</German>
+			<Russian>Золото</Russian>
+			<Spanish>Gold</Spanish>
+			<French>Gold</French>
+			<Czech>Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_GOLD_DESC">
+			<English>Gold Bar</English>
+			<German>Gold Bar</German>
+			<Russian>Золотой слиток</Russian>
+			<Spanish>Gold Bar</Spanish>
+			<French>Gold Bar</French>
+			<Czech>Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_2OZGOLD">
+			<English>2oz Gold</English>
+			<German>2oz Gold</German>
+			<Russian>2 унции золота</Russian>
+			<Spanish>2oz Gold</Spanish>
+			<French>2oz Gold</French>
+			<Czech>2oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_2OZGOLD_DESC">
+			<English>2 x 1oz Gold Bar</English>
+			<German>2 x 1oz Gold Bar</German>
+			<Russian>2 золотых слитка по 1 унции</Russian>
+			<Spanish>2 x 1oz Gold Bar</Spanish>
+			<French>2 x 1oz Gold Bar</French>
+			<Czech>2 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_3OZGOLD">
+			<English>3oz Gold</English>
+			<German>3oz Gold</German>
+			<Russian>3 унции золота</Russian>
+			<Spanish>3oz Gold</Spanish>
+			<French>3oz Gold</French>
+			<Czech>3oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_3OZGOLD_DESC">
+			<English>3 x 1oz Gold Bar</English>
+			<German>3 x 1oz Gold Bar</German>
+			<Russian>3 золотых слитка по 1 унции</Russian>
+			<Spanish>3 x 1oz Gold Bar</Spanish>
+			<French>3 x 1oz Gold Bar</French>
+			<Czech>3 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_4OZGOLD">
+			<English>4oz Gold</English>
+			<German>4oz Gold</German>
+			<Russian>4 унции золота</Russian>
+			<Spanish>4oz Gold</Spanish>
+			<French>4oz Gold</French>
+			<Czech>4oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_4OZGOLD_DESC">
+			<English>4 x 1oz Gold Bar</English>
+			<German>4 x 1oz Gold Bar</German>
+			<Russian>4 золотых слитка по 1 унции</Russian>
+			<Spanish>4 x 1oz Gold Bar</Spanish>
+			<French>4 x 1oz Gold Bar</French>
+			<Czech>4 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_5OZGOLD">
+			<English>5oz Gold</English>
+			<German>5oz Gold</German>
+			<Russian>5 унций золота</Russian>
+			<Spanish>5oz Gold</Spanish>
+			<French>5oz Gold</French>
+			<Czech>5oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_5OZGOLD_DESC">
+			<English>5 x 1oz Gold Bar</English>
+			<German>5 x 1oz Gold Bar</German>
+			<Russian>5 золотых слитков по 1 унции</Russian>
+			<Spanish>5 x 1oz Gold Bar</Spanish>
+			<French>5 x 1oz Gold Bar</French>
+			<Czech>5 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_6OZGOLD">
+			<English>6oz Gold</English>
+			<German>6oz Gold</German>
+			<Russian>6 унций золота</Russian>
+			<Spanish>6oz Gold</Spanish>
+			<French>6oz Gold</French>
+			<Czech>6oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_6OZGOLD_DESC">
+			<English>6 x 1oz Gold Bar</English>
+			<German>6 x 1oz Gold Bar</German>
+			<Russian>6 золотых слитков по 1 унции</Russian>
+			<Spanish>6 x 1oz Gold Bar</Spanish>
+			<French>6 x 1oz Gold Bar</French>
+			<Czech>6 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_7OZGOLD">
+			<English>7oz Gold</English>
+			<German>7oz Gold</German>
+			<Russian>7 унций золота</Russian>
+			<Spanish>7oz Gold</Spanish>
+			<French>7oz Gold</French>
+			<Czech>7oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_7OZGOLD_DESC">
+			<English>7 x 1oz Gold Bar</English>
+			<German>7 x 1oz Gold Bar</German>
+			<Russian>7 золотых слитков по 1 унции</Russian>
+			<Spanish>7 x 1oz Gold Bar</Spanish>
+			<French>7 x 1oz Gold Bar</French>
+			<Czech>7 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_8OZGOLD">
+			<English>8oz Gold</English>
+			<German>8oz Gold</German>
+			<Russian>8 унций золота</Russian>
+			<Spanish>8oz Gold</Spanish>
+			<French>8oz Gold</French>
+			<Czech>8oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_8OZGOLD_DESC">
+			<English>8 x 1oz Gold Bar</English>
+			<German>8 x 1oz Gold Bar</German>
+			<Russian>8 золотых слитков по 1 унции</Russian>
+			<Spanish>8 x 1oz Gold Bar</Spanish>
+			<French>8 x 1oz Gold Bar</French>
+			<Czech>8 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_9OZGOLD">
+			<English>9oz Gold</English>
+			<German>9oz Gold</German>
+			<Russian>9 унций золота</Russian>
+			<Spanish>9oz Gold</Spanish>
+			<French>9oz Gold</French>
+			<Czech>9oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_9OZGOLD_DESC">
+			<English>9 x 1oz Gold Bar</English>
+			<German>9 x 1oz Gold Bar</German>
+			<Russian>9 золотых слитков по 1 унции</Russian>
+			<Spanish>9 x 1oz Gold Bar</Spanish>
+			<French>9 x 1oz Gold Bar</French>
+			<Czech>9 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZGOLD">
+			<English>10oz Gold</English>
+			<German>10oz Gold</German>
+			<Russian>10 унций золота</Russian>
+			<Spanish>10oz Gold</Spanish>
+			<French>10oz Gold</French>
+			<Czech>10oz Gold</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZGOLD_DESC">
+			<English>10 x 1oz Gold Bar</English>
+			<German>10 x 1oz Gold Bar</German>
+			<Russian>10 золотых слитков по 1 унции</Russian>
+			<Spanish>10 x 1oz Gold Bar</Spanish>
+			<French>10 x 1oz Gold Bar</French>
+			<Czech>10 x 1oz Gold Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SILVER">
+			<English>Silver</English>
+			<German>Silver</German>
+			<Russian>Серебро</Russian>
+			<Spanish>Silver</Spanish>
+			<French>Silver</French>
+			<Czech>Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SILVER_DESC">
+			<English>Silver Bar</English>
+			<German>Silver Bar</German>
+			<Russian>Серебряный слиток</Russian>
+			<Spanish>Silver Bar</Spanish>
+			<French>Silver Bar</French>
+			<Czech>Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_2OZSILVER">
+			<English>2oz Silver</English>
+			<German>2oz Silver</German>
+			<Russian>2 унции серебра</Russian>
+			<Spanish>2oz Silver</Spanish>
+			<French>2oz Silver</French>
+			<Czech>2oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_2OZSILVER_DESC">
+			<English>2 x 1oz Silver Bar</English>
+			<German>2 x 1oz Silver Bar</German>
+			<Russian>2 серебряных слитка по 1 унции</Russian>
+			<Spanish>2 x 1oz Silver Bar</Spanish>
+			<French>2 x 1oz Silver Bar</French>
+			<Czech>2 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_3OZSILVER">
+			<English>3oz Silver</English>
+			<German>3oz Silver</German>
+			<Russian>3 унции серебра</Russian>
+			<Spanish>3oz Silver</Spanish>
+			<French>3oz Silver</French>
+			<Czech>3oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_3OZSILVER_DESC">
+			<English>3 x 1oz Silver Bar</English>
+			<German>3 x 1oz Silver Bar</German>
+			<Russian>3 серебряных слитка по 1 унции</Russian>
+			<Spanish>3 x 1oz Silver Bar</Spanish>
+			<French>3 x 1oz Silver Bar</French>
+			<Czech>3 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_4OZSILVER">
+			<English>4oz Silver</English>
+			<German>4oz Silver</German>
+			<Russian>4 унции серебра</Russian>
+			<Spanish>4oz Silver</Spanish>
+			<French>4oz Silver</French>
+			<Czech>4oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_4OZSILVER_DESC">
+			<English>4 x 1oz Silver Bar</English>
+			<German>4 x 1oz Silver Bar</German>
+			<Russian>4 серебряных слитка по 1 унции</Russian>
+			<Spanish>4 x 1oz Silver Bar</Spanish>
+			<French>4 x 1oz Silver Bar</French>
+			<Czech>4 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_5OZSILVER">
+			<English>5oz Silver</English>
+			<German>5oz Silver</German>
+			<Russian>5 унций серебра</Russian>
+			<Spanish>5oz Silver</Spanish>
+			<French>5oz Silver</French>
+			<Czech>5oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_5OZSILVER_DESC">
+			<English>5 x 1oz Silver Bar</English>
+			<German>5 x 1oz Silver Bar</German>
+			<Russian>5 серебряных слитков по 1 унции</Russian>
+			<Spanish>5 x 1oz Silver Bar</Spanish>
+			<French>5 x 1oz Silver Bar</French>
+			<Czech>5 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_6OZSILVER">
+			<English>6oz Silver</English>
+			<German>6oz Silver</German>
+			<Russian>6 унций серебра</Russian>
+			<Spanish>6oz Silver</Spanish>
+			<French>6oz Silver</French>
+			<Czech>6oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_6OZSILVER_DESC">
+			<English>6 x 1oz Silver Bar</English>
+			<German>6 x 1oz Silver Bar</German>
+			<Russian>6 серебряных слитков по 1 унции</Russian>
+			<Spanish>6 x 1oz Silver Bar</Spanish>
+			<French>6 x 1oz Silver Bar</French>
+			<Czech>6 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_7OZSILVER">
+			<English>7oz Silver</English>
+			<German>7oz Silver</German>
+			<Russian>7 унций серебра</Russian>
+			<Spanish>7oz Silver</Spanish>
+			<French>7oz Silver</French>
+			<Czech>7oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_7OZSILVER_DESC">
+			<English>7 x 1oz Silver Bar</English>
+			<German>7 x 1oz Silver Bar</German>
+			<Russian>7 серебряных слитков по 1 унции</Russian>
+			<Spanish>7 x 1oz Silver Bar</Spanish>
+			<French>7 x 1oz Silver Bar</French>
+			<Czech>7 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_8OZSILVER">
+			<English>8oz Silver</English>
+			<German>8oz Silver</German>
+			<Russian>8 унций серебра</Russian>
+			<Spanish>8oz Silver</Spanish>
+			<French>8oz Silver</French>
+			<Czech>8oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_8OZSILVER_DESC">
+			<English>8 x 1oz Silver Bar</English>
+			<German>8 x 1oz Silver Bar</German>
+			<Russian>8 серебряных слитков по 1 унции</Russian>
+			<Spanish>8 x 1oz Silver Bar</Spanish>
+			<French>8 x 1oz Silver Bar</French>
+			<Czech>8 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_9OZSILVER">
+			<English>9oz Silver</English>
+			<German>9oz Silver</German>
+			<Russian>9 унций серебра</Russian>
+			<Spanish>9oz Silver</Spanish>
+			<French>9oz Silver</French>
+			<Czech>9oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_9OZSILVER_DESC">
+			<English>9 x 1oz Silver Bar</English>
+			<German>9 x 1oz Silver Bar</German>
+			<Russian>9 серебряных слитков по 1 унции</Russian>
+			<Spanish>9 x 1oz Silver Bar</Spanish>
+			<French>9 x 1oz Silver Bar</French>
+			<Czech>9 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZSILVER">
+			<English>10oz Silver</English>
+			<German>10oz Silver</German>
+			<Russian>10 унций серебра</Russian>
+			<Spanish>10oz Silver</Spanish>
+			<French>10oz Silver</French>
+			<Czech>10oz Silver</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZSILVER_DESC">
+			<English>10 x 1oz Silver Bar</English>
+			<German>10 x 1oz Silver Bar</German>
+			<Russian>10 серебряных слитков по 1 унции</Russian>
+			<Spanish>10 x 1oz Silver Bar</Spanish>
+			<French>10 x 1oz Silver Bar</French>
+			<Czech>10 x 1oz Silver Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TIN">
+			<English>Tin</English>
+			<German>Tin</German>
+			<Russian>Олово</Russian>
+			<Spanish>Tin</Spanish>
+			<French>Tin</French>
+			<Czech>Tin</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_TIN_DESC">
+			<English>Tin Bar</English>
+			<German>Tin Bar</German>
+			<Russian>Оловянный слиток</Russian>
+			<Spanish>Tin Bar</Spanish>
+			<French>Tin Bar</French>
+			<Czech>Tin Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZTIN">
+			<English>10oz Tin</English>
+			<German>10oz Tin</German>
+			<Russian>10 унций олова</Russian>
+			<Spanish>10oz Tin</Spanish>
+			<French>10oz Tin</French>
+			<Czech>10oz Tin</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_10OZTIN_DESC">
+			<English>10oz Tin Bar</English>
+			<German>10oz Tin Bar</German>
+			<Russian>Оловянный слиток (10 унций)</Russian>
+			<Spanish>10oz Tin Bar</Spanish>
+			<French>10oz Tin Bar</French>
+			<Czech>10oz Tin Bar</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_OFFICERSUIT">
+			<English>Officer Suit</English>
+			<German>Officer Suit</German>
+			<Russian>Officer Suit</Russian>
+			<Spanish>Officer Suit</Spanish>
+			<French>Officer Suit</French>
+			<Czech>Officer Suit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SERGEI">
+			<English>Sergei</English>
+			<German>Sergei</German>
+			<Russian>Sergei</Russian>
+			<Spanish>Sergei</Spanish>
+			<French>Sergei</French>
+			<Czech>Sergei</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SERGEI_DESC">
+			<English>Police Officer Uniform</English>
+			<German>Police Officer Uniform</German>
+			<Russian>Police Officer Uniform</Russian>
+			<Spanish>Police Officer Uniform</Spanish>
+			<French>Police Officer Uniform</French>
+			<Czech>Police Officer Uniform</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ETHAN">
+			<English>Ethan</English>
+			<German>Ethan</German>
+			<Russian>Ethan</Russian>
+			<Spanish>Ethan</Spanish>
+			<French>Ethan</French>
+			<Czech>Ethan</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ETHAN_DESC">
+			<English>Pilot Uniform</English>
+			<German>Pilot Uniform</German>
+			<Russian>Pilot Uniform</Russian>
+			<Spanish>Pilot Uniform</Spanish>
+			<French>Pilot Uniform</French>
+			<Czech>Pilot Uniform</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_HARRY">
+			<English>Harry</English>
+			<German>Harry</German>
+			<Russian>Harry</Russian>
+			<Spanish>Harry</Spanish>
+			<French>Harry</French>
+			<Czech>Harry</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_HARRY_DESC">
+			<English>Press Uniform</English>
+			<German>Press Uniform</German>
+			<Russian>Press Uniform</Russian>
+			<Spanish>Press Uniform</Spanish>
+			<French>Press Uniform</French>
+			<Czech>Press Uniform</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TERRORISTUNIFORM">
+			<English>Terrorist Uniform</English>
+			<German>Terrorist Uniform</German>
+			<Russian>Terrorist Uniform</Russian>
+			<Spanish>Terrorist Uniform</Spanish>
+			<French>Terrorist Uniform</French>
+			<Czech>Terrorist Uniform</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_REBELUNIFORM">
+			<English>Rebel Uniform</English>
+			<German>Rebel Uniform</German>
+			<Russian>Rebel Uniform</Russian>
+			<Spanish>Rebel Uniform</Spanish>
+			<French>Rebel Uniform</French>
+			<Czech>Rebel Uniform</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DONALD">
+			<English>Donald</English>
+			<German>Donald</German>
+			<Russian>Donald</Russian>
+			<Spanish>Donald</Spanish>
+			<French>Donald</French>
+			<Czech>Donald</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DONALD_DESC">
+			<English>Business Suit</English>
+			<German>Business Suit</German>
+			<Russian>Business Suit</Russian>
+			<Spanish>Business Suit</Spanish>
+			<French>Business Suit</French>
+			<Czech>Business Suit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_JAMES">
+			<English>James</English>
+			<German>James</German>
+			<Russian>James</Russian>
+			<Spanish>James</Spanish>
+			<French>James</French>
+			<Czech>James</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_JAMES_DESC">
+			<English>Priest Outfit</English>
+			<German>Priest Outfit</German>
+			<Russian>Priest Outfit</Russian>
+			<Spanish>Priest Outfit</Spanish>
+			<French>Priest Outfit</French>
+			<Czech>Priest Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DUANE">
+			<English>Duane</English>
+			<German>Duane</German>
+			<Russian>Duane</Russian>
+			<Spanish>Duane</Spanish>
+			<French>Duane</French>
+			<Czech>Duane</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DUANE_DESC">
+			<English>Rocker (black)</English>
+			<German>Rocker (black)</German>
+			<Russian>Rocker (black)</Russian>
+			<Spanish>Rocker (black)</Spanish>
+			<French>Rocker (black)</French>
+			<Czech>Rocker (black)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ROD">
+			<English>Rod</English>
+			<German>Rod</German>
+			<Russian>Rod</Russian>
+			<Spanish>Rod</Spanish>
+			<French>Rod</French>
+			<Czech>Rod</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ROD_DESC">
+			<English>Rocker (brown)</English>
+			<German>Rocker (brown)</German>
+			<Russian>Rocker (brown)</Russian>
+			<Spanish>Rocker (brown)</Spanish>
+			<French>Rocker (brown)</French>
+			<Czech>Rocker (brown)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_VAN">
+			<English>Van</English>
+			<German>Van</German>
+			<Russian>Van</Russian>
+			<Spanish>Van</Spanish>
+			<French>Van</French>
+			<Czech>Van</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_VAN_DESC">
+			<English>Rocker (blue)</English>
+			<German>Rocker (blue)</German>
+			<Russian>Rocker (blue)</Russian>
+			<Spanish>Rocker (blue)</Spanish>
+			<French>Rocker (blue)</French>
+			<Czech>Rocker (blue)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BRUCE">
+			<English>Bruce</English>
+			<German>Bruce</German>
+			<Russian>Bruce</Russian>
+			<Spanish>Bruce</Spanish>
+			<French>Bruce</French>
+			<Czech>Bruce</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BRUCE_DESC">
+			<English>Rocker (green)</English>
+			<German>Rocker (green)</German>
+			<Russian>Rocker (green)</Russian>
+			<Spanish>Rocker (green)</Spanish>
+			<French>Rocker (green)</French>
+			<Czech>Rocker (green)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITOUTFIT">
+			<English>Bandit Outfit</English>
+			<German>Bandit Outfit</German>
+			<Russian>Bandit Outfit</Russian>
+			<Spanish>Bandit Outfit</Spanish>
+			<French>Bandit Outfit</French>
+			<Czech>Bandit Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITCAMO">
+			<English>Bandit Camo</English>
+			<German>Bandit Camo</German>
+			<Russian>Bandit Camo</Russian>
+			<Spanish>Bandit Camo</Spanish>
+			<French>Bandit Camo</French>
+			<Czech>Bandit Camo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITCAMO_DESC">
+			<English>Bandit Camo Outfit</English>
+			<German>Bandit Camo Outfit</German>
+			<Russian>Bandit Camo Outfit</Russian>
+			<Spanish>Bandit Camo Outfit</Spanish>
+			<French>Bandit Camo Outfit</French>
+			<Czech>Bandit Camo Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER">
+			<English>Bandit Gunner</English>
+			<German>Bandit Gunner</German>
+			<Russian>Bandit Gunner</Russian>
+			<Spanish>Bandit Gunner</Spanish>
+			<French>Bandit Gunner</French>
+			<Czech>Bandit Gunner</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER_DESC">
+			<English>Bandit Gunner Outfit</English>
+			<German>Bandit Gunner Outfit</German>
+			<Russian>Bandit Gunner Outfit</Russian>
+			<Spanish>Bandit Gunner Outfit</Spanish>
+			<French>Bandit Gunner Outfit</French>
+			<Czech>Bandit Gunner Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER">
+			<English>Bandit Sniper</English>
+			<German>Bandit Sniper</German>
+			<Russian>Bandit Sniper</Russian>
+			<Spanish>Bandit Sniper</Spanish>
+			<French>Bandit Sniper</French>
+			<Czech>Bandit Sniper</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER_DESC">
+			<English>Bandit Sniper Outfit</English>
+			<German>Bandit Sniper Outfit</German>
+			<Russian>Bandit Sniper Outfit</Russian>
+			<Spanish>Bandit Sniper Outfit</Spanish>
+			<French>Bandit Sniper Outfit</French>
+			<Czech>Bandit Sniper Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA">
+			<English>Bandit Baklava</English>
+			<German>Bandit Baklava</German>
+			<Russian>Bandit Baklava</Russian>
+			<Spanish>Bandit Baklava</Spanish>
+			<French>Bandit Baklava</French>
+			<Czech>Bandit Baklava</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA_DESC">
+			<English>Bandit Baklava Outfit</English>
+			<German>Bandit Baklava Outfit</German>
+			<Russian>Bandit Baklava Outfit</Russian>
+			<Spanish>Bandit Baklava Outfit</Spanish>
+			<French>Bandit Baklava Outfit</French>
+			<Czech>Bandit Baklava Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITMASK">
+			<English>Bandit Mask</English>
+			<German>Bandit Mask</German>
+			<Russian>Bandit Mask</Russian>
+			<Spanish>Bandit Mask</Spanish>
+			<French>Bandit Mask</French>
+			<Czech>Bandit Mask</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITMASK_DESC">
+			<English>Bandit Mask Outfit</English>
+			<German>Bandit Mask Outfit</German>
+			<Russian>Bandit Mask Outfit</Russian>
+			<Spanish>Bandit Mask Outfit</Spanish>
+			<French>Bandit Mask Outfit</French>
+			<Czech>Bandit Mask Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITHAT">
+			<English>Bandit Hat</English>
+			<German>Bandit Hat</German>
+			<Russian>Bandit Hat</Russian>
+			<Spanish>Bandit Hat</Spanish>
+			<French>Bandit Hat</French>
+			<Czech>Bandit Hat</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITHAT_DESC">
+			<English>Bandit Hat with Baklava</English>
+			<German>Bandit Hat with Baklava</German>
+			<Russian>Bandit Hat with Baklava</Russian>
+			<Spanish>Bandit Hat with Baklava</Spanish>
+			<French>Bandit Hat with Baklava</French>
+			<Czech>Bandit Hat with Baklava</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITANNIE">
+			<English>Bandit Annie</English>
+			<German>Bandit Annie</German>
+			<Russian>Bandit Annie</Russian>
+			<Spanish>Bandit Annie</Spanish>
+			<French>Bandit Annie</French>
+			<Czech>Bandit Annie</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITANNIE_DESC">
+			<English>Bandit wrap blue top with brown pants.</English>
+			<German>Bandit wrap blue top with brown pants.</German>
+			<Russian>Bandit wrap blue top with brown pants.</Russian>
+			<Spanish>Bandit wrap blue top with brown pants.</Spanish>
+			<French>Bandit wrap blue top with brown pants.</French>
+			<Czech>Bandit wrap blue top with brown pants.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITJANE">
+			<English>Bandit Jane</English>
+			<German>Bandit Jane</German>
+			<Russian>Bandit Jane</Russian>
+			<Spanish>Bandit Jane</Spanish>
+			<French>Bandit Jane</French>
+			<Czech>Bandit Jane</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BANDITJANE_DESC">
+			<English>Bandit wrap grey top with brown camo pants.</English>
+			<German>Bandit wrap grey top with brown camo pants.</German>
+			<Russian>Bandit wrap grey top with brown camo pants.</Russian>
+			<Spanish>Bandit wrap grey top with brown camo pants.</Spanish>
+			<French>Bandit wrap grey top with brown camo pants.</French>
+			<Czech>Bandit wrap grey top with brown camo pants.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_JANE">
+			<English>Jane</English>
+			<German>Jane</German>
+			<Russian>Jane</Russian>
+			<Spanish>Jane</Spanish>
+			<French>Jane</French>
+			<Czech>Jane</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_JANE_DESC">
+			<English>Grey top with brown camo pants.</English>
+			<German>Grey top with brown camo pants.</German>
+			<Russian>Grey top with brown camo pants.</Russian>
+			<Spanish>Grey top with brown camo pants.</Spanish>
+			<French>Grey top with brown camo pants.</French>
+			<Czech>Grey top with brown camo pants.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ANNIE">
+			<English>Annie</English>
+			<German>Annie</German>
+			<Russian>Annie</Russian>
+			<Spanish>Annie</Spanish>
+			<French>Annie</French>
+			<Czech>Annie</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ANNIE_DESC">
+			<English>Civilian (female)</English>
+			<German>Civilian (female)</German>
+			<Russian>Civilian (female)</Russian>
+			<Spanish>Civilian (female)</Spanish>
+			<French>Civilian (female)</French>
+			<Czech>Civilian (female)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_MELLY">
+			<English>Melly</English>
+			<German>Melly</German>
+			<Russian>Melly</Russian>
+			<Spanish>Melly</Spanish>
+			<French>Melly</French>
+			<Czech>Melly</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_MELLY_DESC">
+			<English>Purple top with blue pants.</English>
+			<German>Purple top with blue pants.</German>
+			<Russian>Purple top with blue pants.</Russian>
+			<Spanish>Purple top with blue pants.</Spanish>
+			<French>Purple top with blue pants.</French>
+			<Czech>Purple top with blue pants.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ALEJANDRIA">
+			<English>Alejandria</English>
+			<German>Alejandria</German>
+			<Russian>Alejandria</Russian>
+			<Spanish>Alejandria</Spanish>
+			<French>Alejandria</French>
+			<Czech>Alejandria</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ALEJANDRIA_DESC">
+			<English>Blue camo top with brown camo pants.</English>
+			<German>Blue camo top with brown camo pants.</German>
+			<Russian>Blue camo top with brown camo pants.</Russian>
+			<Spanish>Blue camo top with brown camo pants.</Spanish>
+			<French>Blue camo top with brown camo pants.</French>
+			<Czech>Blue camo top with brown camo pants.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SAVANNAH">
+			<English>Savannah</English>
+			<German>Savannah</German>
+			<Russian>Savannah</Russian>
+			<Spanish>Savannah</Spanish>
+			<French>Savannah</French>
+			<Czech>Savannah</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SAVANNAH_DESC">
+			<English>White top with brown pants.</English>
+			<German>White top with brown pants.</German>
+			<Russian>White top with brown pants.</Russian>
+			<Spanish>White top with brown pants.</Spanish>
+			<French>White top with brown pants.</French>
+			<Czech>White top with brown pants.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SOPHIA">
+			<English>Sophia</English>
+			<German>Sophia</German>
+			<Russian>Sophia</Russian>
+			<Spanish>Sophia</Spanish>
+			<French>Sophia</French>
+			<Czech>Sophia</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SOPHIA_DESC">
+			<English>Maroon top with grey pants.</English>
+			<German>Maroon top with grey pants.</German>
+			<Russian>Maroon top with grey pants.</Russian>
+			<Spanish>Maroon top with grey pants.</Spanish>
+			<French>Maroon top with grey pants.</French>
+			<Czech>Maroon top with grey pants.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TAKISTANIWARLORD">
+			<English>Takistani Warlord</English>
+			<German>Takistani Warlord</German>
+			<Russian>Takistani Warlord</Russian>
+			<Spanish>Takistani Warlord</Spanish>
+			<French>Takistani Warlord</French>
+			<Czech>Takistani Warlord</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TAKISTANISOLDIER">
+			<English>Takistani Soldier</English>
+			<German>Takistani Soldier</German>
+			<Russian>Takistani Soldier</Russian>
+			<Spanish>Takistani Soldier</Spanish>
+			<French>Takistani Soldier</French>
+			<Czech>Takistani Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SPECIALFORCES">
+			<English>Special Forces</English>
+			<German>Special Forces</German>
+			<Russian>Special Forces</Russian>
+			<Spanish>Special Forces</Spanish>
+			<French>Special Forces</French>
+			<Czech>Special Forces</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DESERTCAMO">
+			<English>Desert Camo</English>
+			<German>Desert Camo</German>
+			<Russian>Desert Camo</Russian>
+			<Spanish>Desert Camo</Spanish>
+			<French>Desert Camo</French>
+			<Czech>Desert Camo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BODYGUARD">
+			<English>Bodyguard</English>
+			<German>Bodyguard</German>
+			<Russian>Bodyguard</Russian>
+			<Spanish>Bodyguard</Spanish>
+			<French>Bodyguard</French>
+			<Czech>Bodyguard</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_JUNGLECAMO">
+			<English>Jungle Camo</English>
+			<German>Jungle Camo</German>
+			<Russian>Jungle Camo</Russian>
+			<Spanish>Jungle Camo</Spanish>
+			<French>Jungle Camo</French>
+			<Czech>Jungle Camo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_GUNNEROUTFIT">
+			<English>Gunner Outfit</English>
+			<German>Gunner Outfit</German>
+			<Russian>Gunner Outfit</Russian>
+			<Spanish>Gunner Outfit</Spanish>
+			<French>Gunner Outfit</French>
+			<Czech>Gunner Outfit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DESERTGHILLIE">
+			<English>Desert Ghillie</English>
+			<German>Desert Ghillie</German>
+			<Russian>Desert Ghillie</Russian>
+			<Spanish>Desert Ghillie</Spanish>
+			<French>Desert Ghillie</French>
+			<Czech>Desert Ghillie</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_URBANCAMO">
+			<English>Urban Camo</English>
+			<German>Urban Camo</German>
+			<Russian>Urban Camo</Russian>
+			<Spanish>Urban Camo</Spanish>
+			<French>Urban Camo</French>
+			<Czech>Urban Camo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_MARKSMAN">
+			<English>Marksman</English>
+			<German>Marksman</German>
+			<Russian>Marksman</Russian>
+			<Spanish>Marksman</Spanish>
+			<French>Marksman</French>
+			<Czech>Marksman</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TEAMLEADER">
+			<English>Team Leader</English>
+			<German>Team Leader</German>
+			<Russian>Team Leader</Russian>
+			<Spanish>Team Leader</Spanish>
+			<French>Team Leader</French>
+			<Czech>Team Leader</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SMUGGLER">
+			<English>Smuggler</English>
+			<German>Smuggler</German>
+			<Russian>Smuggler</Russian>
+			<Spanish>Smuggler</Spanish>
+			<French>Smuggler</French>
+			<Czech>Smuggler</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DESERTSNIPER">
+			<English>Desert Sniper</English>
+			<German>Desert Sniper</German>
+			<Russian>Desert Sniper</Russian>
+			<Spanish>Desert Sniper</Spanish>
+			<French>Desert Sniper</French>
+			<Czech>Desert Sniper</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_GENERAL">
+			<English>General</English>
+			<German>General</German>
+			<Russian>General</Russian>
+			<Spanish>General</Spanish>
+			<French>General</French>
+			<Czech>General</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CREWMAN">
+			<English>Crewman</English>
+			<German>Crewman</German>
+			<Russian>Crewman</Russian>
+			<Spanish>Crewman</Spanish>
+			<French>Crewman</French>
+			<Czech>Crewman</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BOSS">
+			<English>Boss</English>
+			<German>Boss</German>
+			<Russian>Boss</Russian>
+			<Spanish>Boss</Spanish>
+			<French>Boss</French>
+			<Czech>Boss</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BOSS_DESC">
+			<English>Team Leader</English>
+			<German>Team Leader</German>
+			<Russian>Team Leader</Russian>
+			<Spanish>Team Leader</Spanish>
+			<French>Team Leader</French>
+			<Czech>Team Leader</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_COOPER">
+			<English>Cooper</English>
+			<German>Cooper</German>
+			<Russian>Cooper</Russian>
+			<Spanish>Cooper</Spanish>
+			<French>Cooper</French>
+			<Czech>Cooper</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TRAVIS">
+			<English>Travis</English>
+			<German>Travis</German>
+			<Russian>Travis</Russian>
+			<Spanish>Travis</Spanish>
+			<French>Travis</French>
+			<Czech>Travis</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_PAULO">
+			<English>Paulo</English>
+			<German>Paulo</German>
+			<Russian>Paulo</Russian>
+			<Spanish>Paulo</Spanish>
+			<French>Paulo</French>
+			<Czech>Paulo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_STEVE">
+			<English>Steve</English>
+			<German>Steve</German>
+			<Russian>Steve</Russian>
+			<Spanish>Steve</Spanish>
+			<French>Steve</French>
+			<Czech>Steve</Czech>
 		</Key>
 	</Package>
 </Project>

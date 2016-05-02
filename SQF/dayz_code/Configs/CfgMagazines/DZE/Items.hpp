@@ -284,7 +284,7 @@ class ItemPlotDeed: CA_Magazine {
 	sfx = "document";
 	class ItemActions {
 		class Crafting {
-			text = $STR_EPOCH_PLOTDEED_ACTION; //move to crafting in stringtable
+			text = $STR_EPOCH_PLAYER_317;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
