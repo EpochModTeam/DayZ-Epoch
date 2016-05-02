@@ -247,7 +247,7 @@
 		</Key>
 		<Key ID="str_actions_medical_06_splint">
 			<English>Apply Splint</English>
-			<German>Bewerben Splint</German>
+			<German>Schiene anlegen</German>
 			<Russian>Применить шину</Russian>
 			<Spanish>Aplicar Férula</Spanish>
 			<French>Appliquer Splint</French>
@@ -1307,7 +1307,7 @@
 			<Spanish>Usted cree que necesita cinta para conductos para fijar la botella.</Spanish>
 			<Czech>Ke spravení láhve bude zřejmě třeba lepící páska.</Czech>
 			<French>Vous pensez que vous avez besoin de ruban adhésif pour réparer la bouteille.</French>
-			<German>Du könntest Duct Tape gebrauchen, um die Flasche zu reparieren.</German>
+			<German>Du könntest Klebeband gebrauchen, um die Flasche zu reparieren.</German>
 		</Key>
 		<Key ID="str_tear_clothes_0">
 			<English>You didn&apos;t get anything out of tearing the clothes.</English>
@@ -1434,13 +1434,13 @@
 			<English>Maybe you can fix it with tape and a handle.</English>
 			<Russian>Попробуйте использовать скотч и рукоять для починки.</Russian>
 			<Czech>Možná to půjde spravit s pomocí pásky a násady.</Czech>
-			<German>Vielleicht kann das mit etwas Duct Tape und einem neuen Schaft repariert werden.</German>
+			<German>Vielleicht kann das mit etwas Klebeband und einem neuen Schaft repariert werden.</German>
 		</Key>
 		<Key ID="str_fixtoolMissingTape">
 			<English>You will need some tape for this.</English>
 			<Russian>Для этого нужен скотч.</Russian>
 			<Czech>K tomuto bude třeba nějaká páska.</Czech>
-			<German>Dafür brauchst du Duct Tape.</German>
+			<German>Dafür brauchst du Klebeband.</German>
 		</Key>
 		<Key ID="str_fixtoolMissingHandle">
 			<English>You will need a lever to fix this.</English>
@@ -1561,7 +1561,7 @@
 			<Russian>Бомба установлена! Выжившего, который решится завести двигатель разорвёт на кусочки!</Russian>
 			<French>La bombe est posée ! La prochaine personne qui démarre le véhicule sera éparpillée façon puzzle.</French>
 			<Czech>Bomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
-			<German>Sprengsatz angebracht! Der nächste Survivor, der den Motor startet, wird in die Luft fliegen!</German>
+			<German>Sprengsatz angebracht! Die nächste Person, der den Motor startet, wird in die Luft fliegen!</German>
 		</Key>
 		<Key ID="str_bombAlready">
 			<English>This vehicle already has a bomb attached!</English>
@@ -2468,7 +2468,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_duct_tape">
 			<English>Duct Tape</English>
-			<German>Duct Tape</German>
+			<German>Klebeband</German>
 			<Russian>Скотч</Russian>
 			<Spanish>Cinta Adhesiva</Spanish>
 			<French>Chatterton</French>
@@ -2567,7 +2567,7 @@
 			<Russian>Напиток из смеси трав, который может помочь при инфекции.</Russian>
 			<Czech>Nápoj smíchá s bylinkami , které mohou pomoci léčit infekci .</Czech>
 			<French>Une boisson mélangée avec des herbes qui peuvent aider à guérir l'infection .</French>
-			<German>Ein Getränk gemischt mit Kräutern , die helfen, zu heilen Infektion kann .</German>
+			<German>Ein Getränk aus Kräutern. Hilft bei Infektionen.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_HerbalDrink">
 			<English>Herbal Drink</English>
@@ -2575,7 +2575,7 @@
 			<Russian>Травяной напиток</Russian>
 			<Czech>Herbal Drink</Czech>
 			<French>boisson à base de plantes</French>
-			<German>Herbal Drink</German>
+			<German>Kräutertrunk</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_comfreyleafs">
 			<English>Comfrey Leaves</English>
@@ -3667,6 +3667,7 @@
 		<Key ID="STR_EQUIP_NAME_13_EMPTY">
 			<English>Empty</English>
 			<Russian>Пустая</Russian>
+			<German>Ausleeren</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_13">
 			<English>A bottle of water that is Empty. It might be useful to fill it with water again.</English>
@@ -4150,7 +4151,7 @@
 		</Key>
 		<Key ID="STR_WPN_DESC_1">
 			<English>Shotgun 12 gauge</English>
-			<German>Reminton 870</German>
+			<German>Remington 870</German>
 			<Russian>Дробовик 12 калибра</Russian>
 			<Spanish>Escopeta calibre 12</Spanish>
 			<French>Fusil cal. 12</French>
@@ -4190,7 +4191,7 @@
 		</Key>
 		<Key ID="STR_WPN_DESC_4">
 			<English>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</English>
-			<German>Die Kompositarbmbrust ist, wenn man das Zielen beherrscht, eine starke und lautlose Waffe - allerdings mit kurzer Reichweite und langer Nachladezeit.</German>
+			<German>Die Kompositarmbrust ist, wenn man das Zielen beherrscht, eine starke und lautlose Waffe - allerdings mit kurzer Reichweite und langer Nachladezeit.</German>
 			<Russian>Спортивный арбалет требует сноровки для точной стрельбы, превращаясь в мощное однозарядное оружие на коротких дистанциях.</Russian>
 			<Spanish>La ballesta compuesta es, una vez que se domina el apuntado, una poderasa arma de único tiro a corta distancia con largo tiempo de recarga.</Spanish>
 			<French>Une fois maîtrisée, l&apos;arbalète composite permet de tirer un coup puissant mais avec un long temps de chargement.</French>
@@ -4989,7 +4990,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_41">
 			<English>Dull Hatchet</English>
-			<German>Stumpfer Beil</German>
+			<German>Stumpfes Beil</German>
 			<Russian>Затупившийся топор</Russian>
 			<Spanish>Hacha Desafilada</Spanish>
 			<French>Hache émoussée</French>
@@ -5368,6 +5369,7 @@
 		<Key ID="STR_ITEM_CANTEEN_EMPTY">
 			<English>Empty</English>
 			<Russian>Пустой</Russian>
+			<German>Ausleeren</German>
 		</Key>
 		<Key ID="STR_ITEM_CANTEEN_EMPTY_NAME">
 			<English>Canteen (empty)</English>
@@ -6660,13 +6662,13 @@
 			<Russian>Шина из дерева</Russian>
 			<Czech>Dřevěná dlaha</Czech>
 			<French>Attelle</French>
-			<German>Holzspahn</German>
+			<German>Holzschiene</German>
 		</Key>
 		<Key ID="STR_ITEM_DESC_WOODENSPLINT">
 			<English>A Wooden splint that can be used to brace a broken leg.</English>
 			<Russian>Шина из дерева для фиксации сломанных конечностей.</Russian>						
 			<Czech>Dřevěná dlaha, která se bude hodit na zafixování zlomené nohy.</Czech>
-			<German>Ein Holzspahn, mit dem ein gebrochenes Bein geschient werden kann.</German>
+			<German>Eine Holzschiene, mit der ein gebrochenes Bein geschient werden kann.</German>
 		</Key>
 		<Key ID="STR_ITEM_MAKESHIFTBACKPACK">
 			<English>Makeshift Backpack</English>
@@ -6894,7 +6896,7 @@
 		</Key>
 		<Key ID="str_success_gutted_zombie">
 			<English>%1 has been gutted, zombie parts are now on the carcass</English>
-			<German>%1 hat entkernt worden, zombie Teile nun auf der Karkasse sind</German>
+			<German>Du hast den Zombie (%1) ausgenommen und kannst das Fleisch jetzt abschneiden.</German>
 			<Russian>Вы разделали: %1, куски плоти лежат на трупе</Russian>
 			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa</Spanish>
 			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
@@ -7115,7 +7117,7 @@
 			<Spanish>Usted está en el modo de fantasma, de volver a intentarlo en% 1 segundos!</Spanish>
 			<Czech>Nacházíte se v módu duchů, další pokus znovu za %1 sekund!</Czech>
 			<French>Vous êtes en quarantaine, nouvelle tentative dans %1 secondes !</French>
-			<German>Sie sind in Ghost-Modus, versucht wieder in% 1 Sekunden!.</German>
+			<German>Sie sind im Ghost-Modus, versuche nochmals in %1 Sekunden!</German>
 		</Key>
 		<Key ID="str_login_characterData">
 			<English>Character Data received from server</English>
@@ -7168,7 +7170,7 @@
 		</Key>
 		<Key ID="str_player_20">
 			<English>You must be near a water-source such as a pond, or well, or watering hole, to refill your water bottles</English>
-			<German>Du musst dich in der Nähe einer Wasserquelle sein, um Wasserflaschen zu füllen. Halte Ausschau nach einem Teich oder Brunnen!</German>
+			<German>Du musst dich in der Nähe einer Wasserquelle befinden, um Wasserflaschen zu füllen. Halte Ausschau nach einem Teich oder Brunnen!</German>
 			<Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
 			<Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
 			<French>Vous devez être à côté d&apos;une source comme un plan d&apos;eau ou un puits pour remplir vos Bouteilles.</French>
@@ -7631,7 +7633,7 @@
 		</Key>
 		<Key ID="str_death_sick">
 			<English>infection</English>
-			<German>infektion</German>
+			<German>an einer Infektion</German>
 			<Russian>инфекционное заболевание</Russian>
 			<Spanish>infección</Spanish>
 			<French>maladie</French>
@@ -7870,7 +7872,7 @@
 			<Russian>Основное</Russian>
 			<Spanish>Primaria</Spanish>
 			<Czech>Hlavní</Czech>
-			<German>Primäraffe</German>
+			<German>Primärwaffe</German>
 			<French>Primaire</French>
 		</Key>
 		<Key ID="STR_UI_SECONDARY">
@@ -10777,7 +10779,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_12">
 			<English>Cannot abort while in a trader area!</English>
-			<German>Die Verbindung kann nicht getrennt werden, während man sich in einer Händler-Bereich aufhällt!</German>
+			<German>Du darfst dich nicht im Händler-Bereich ausloggen!</German>
 			<Russian>В торговой зоне нельзя выходить из игры!</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Kan niet uitloggen in een handel gebied.</Dutch>
@@ -11839,7 +11841,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_179">
 			<English>You have setup your Safe. Combination is %1</English>
-			<German>Ihr Tresor wurde aufgestellt. Ihre Kombination lautut: %1</German>
+			<German>Ihr Tresor wurde aufgestellt. Ihre Kombination lautet: %1</German>
 			<Russian>Вы установили свой сейф. Комбинация %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Je hebt je kluis geinstalleerd. De code is %1</Dutch>
@@ -11929,7 +11931,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_189">
 			<English>Craft Ramp</English>
-			<German>Rampe herstelln</German>
+			<German>Rampe herstellen</German>
 			<Russian>Создать: Наклонная плоскость</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Maak schans</Dutch>
@@ -12109,7 +12111,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_197">
 			<English>Add 1 10oz Silver</English>
-			<!-- <German>1 10oz Silver hinzufügen</German> -->
+			<German>1 10oz Silber hinzufügen</German>
 			<Russian>Добавить 1 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 1 10oz Goud toe</Dutch> -->
@@ -12118,7 +12120,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_198">
 			<English>Add 10 10oz Silver</English>
-			<!-- <German>10 10oz Silver hinzufügen</German> -->
+			<German>10 10oz Silber hinzufügen</German>
 			<Russian>Добавить 10 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 10 10oz Goud toe</Dutch> -->
@@ -12127,7 +12129,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_199">
 			<English>Add 9 10oz Silver</English>
-			<!-- <German>9 10oz Silver hinzufügen</German> -->
+			<German>9 10oz Silber hinzufügen</German>
 			<Russian>Добавить 9 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 9 10oz Goud toe</Dutch> -->
@@ -12136,7 +12138,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_200">
 			<English>Remove 1 10oz Silver</English>
-			<!-- <German>1 10oz Silver entfernen</German> -->
+			<German>1 10oz Silber entfernen</German>
 			<Russian>Забрать 1 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Verwijder 1 10oz Goud</Dutch> -->
@@ -12145,7 +12147,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_202">
 			<English>Add 8 10oz Silver</English>
-			<!-- <German>8 10oz Silver hinzufügen</German> -->
+			<German>8 10oz Silber hinzufügen</German>
 			<Russian>Добавить 8 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 8 10oz Goud toe</Dutch> -->
@@ -12154,7 +12156,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_203">
 			<English>Add 7 10oz Silver</English>
-			<!-- <German>7 10oz Silver hinzufügen</German> -->
+			<German>7 10oz Silber hinzufügen</German>
 			<Russian>Добавить 7 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 7 10oz Goud toe</Dutch> -->
@@ -12163,7 +12165,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_204">
 			<English>Add 6 10oz Silver</English>
-			<!-- <German>6 10oz Silver hinzufügen</German> -->
+			<German>6 10oz Silber hinzufügen</German>
 			<Russian>Добавить 6 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 6 10oz Goud toe</Dutch> -->
@@ -12172,7 +12174,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_205">
 			<English>Add 5 10oz Silver</English>
-			<!-- <German>5 10oz Silver hinzufügen</German> -->
+			<German>5 10oz Silber hinzufügen</German>
 			<Russian>Добавить 5 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 5 10oz Goud toe</Dutch> -->
@@ -12181,7 +12183,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_206">
 			<English>Add 4 10oz Silver</English>
-			<!-- <German>4 10oz Silver hinzufügen</German> -->
+			<German>4 10oz Silber hinzufügen</German>
 			<Russian>Добавить 4 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 4 10oz Goud toe</Dutch> -->
@@ -12190,7 +12192,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_207">
 			<English>Add 3 10oz Silver</English>
-			<!-- <German>3 10oz Silver hinzufügen</German> -->
+			<German>3 10oz Silber hinzufügen</German>
 			<Russian>Добавить 3 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 3 10oz Goud toe</Dutch> -->
@@ -12199,7 +12201,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_S_208">
 			<English>Add 2 10oz Silver</English>
-			<!-- <German>2 10oz Silver hinzufügen</German> -->
+			<German>2 10oz Silber hinzufügen</German>
 			<Russian>Добавить 2 10oz серебра</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Voeg 2 10oz Goud toe</Dutch> -->
@@ -12208,7 +12210,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_1">
 			<English>Add 1 bar</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>1 Barren hinzufügen</German> -->
 			<Russian>Добавить 1 слиток</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12217,7 +12219,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_2">
 			<English>Add 2 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>2 Barren hinzufügen</German>
 			<Russian>Добавить 2 слитка</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12226,7 +12228,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_3">
 			<English>Add 3 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>3 Barren hinzufügen</German>
 			<Russian>Добавить 3 слитка</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12235,7 +12237,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_4">
 			<English>Add 4 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>4 Barren hinzufügen</German>
 			<Russian>Добавить 4 слитка</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12244,7 +12246,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_5">
 			<English>Add 5 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>5 Barren hinzufügen</German>
 			<Russian>Добавить 5 слитков</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12253,7 +12255,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_6">
 			<English>Add 6 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>6 Barren hinzufügen</German>
 			<Russian>Добавить 6 слитков</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12262,7 +12264,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_7">
 			<English>Add 7 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>7 Barren hinzufügen</German>
 			<Russian>Добавить 7 слитков</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12271,7 +12273,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_8">
 			<English>Add 8 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>8 Barren hinzufügen</German>
 			<Russian>Добавить 8 слитков</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12280,7 +12282,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_210_9">
 			<English>Add 9 bars</English>
-			<!-- <German>10oz bar Stapel</German> -->
+			<German>9 Barren hinzufügen</German>
 			<Russian>Добавить 9 слитков</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 10oz balk</Dutch> -->
@@ -12289,7 +12291,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211_1">
 			<English>Remove 1 bar</English>
-			<!-- <German>1oz bar Stapel</German> -->
+			<German>1 Barren entfernen</German>
 			<Russian>Забрать 1 слиток</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 1oz balk</Dutch> -->
@@ -12298,7 +12300,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_211">
 			<English>Unstack</English>
-			<!-- <German>1oz bar Stapel</German> -->
+			<German>Zerlegen</German>
 			<Russian>Разложить</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel 1oz balk</Dutch> -->
@@ -12307,7 +12309,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_212">
 			<English>Salvage Scrap</English>
-			<German>Material sammeln</German>
+			<German>Zerlegen</German>
 			<Russian>Разобрать на металлолом</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Verzamel materiaal</Dutch>
@@ -12325,7 +12327,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_214">
 			<English>Build Corrugated Fence</English>
-			<German>Wellblech Zaun aufbauen</German>
+			<German>Wellblech-Zaun aufbauen</German>
 			<Russian>Установить: Гофрированный забор</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Bouw Ribbelplaten hek</Dutch>
@@ -12361,7 +12363,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_218">
 			<English>Craft Corrugated Fence</English>
-			<German>Wellblech Zaun herstellen</German>
+			<German>Wellblech-Zaun herstellen</German>
 			<Russian>Создать: Гофрир. забор</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Bouw ribbelplaten hek</Dutch>
@@ -12793,7 +12795,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_266">
 			<English>Craft Silver Bar</English>
-			<!-- <German>Silberbarren Stapel</German> -->
+			<German>Silberbarren herstellen</German>
 			<Russian>Уложить в серебряный слиток</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel bar van Zilver</Dutch> -->
@@ -12802,7 +12804,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
 			<English>Craft Gold Bar</English>
-			<!-- <German>Goldbarren Stapel</German> -->
+			<German>Goldbarren herstellen</German>
 			<Russian>Уложить в золотой слиток</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch>Stapel bar van Goud</Dutch> -->
@@ -12820,7 +12822,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_269a">
 			<English>Craft Hemp Seeds</English>
-			<German>Craft Hemp Seeds</German>
+			<German>Hanfsamen ernten</German>
 			<Russian>Добыть семена конопли</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -12829,7 +12831,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_269b">
 			<English>Craft Canvas</English>
-			<German>Craft Canvas</German>
+			<German>Tuch herstellen</German>
 			<Russian>Создать: Полотно</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -12982,7 +12984,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_302">
 			<English>Kill Board</English>
-			<!-- <German></German> -->
+			<German>Gedenktafel</German>
 			<Russian>Таблица убийств</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Herdenkingsbord</Dutch>
@@ -13009,7 +13011,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_305">
 			<English>Craft Scaffolding</English>
-			<!-- <German></German> -->
+			<German>Gerüst herstellen</German>
 			<Russian>Создать: Строй. леса</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13027,7 +13029,7 @@
 		</Key>
     <Key ID="STR_EPOCH_PLAYER_307">
 			<English>Combined all bars in your inventory to highest denomination.</English>
-			<!-- <German>Barren kombinieren</German> -->
+			<German>Alle Barren in deinem Inventar wurden kombiniert.</German>
 			<Russian>Все слитки в вашем инвентаре объединены.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13041,7 +13043,7 @@
 			<French>Pour le siège du conducteur</French>
 			<Czech>Chcete-li sedadla řidiče</Czech>
 			<!-- <Dutch></Dutch> -->
-			<!-- <German></German> -->
+			<German>Auf den Fahrersitz</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_311">
 			<English>To commander's seat</English>
@@ -13050,7 +13052,7 @@
 			<French>Pour le siège du commandant</French>
 			<Czech>Chcete-li sídlo velitele</Czech>
 			<!-- <Dutch></Dutch> -->
-			<!-- <German></German> -->
+			<German>Auf den Kommandanten-Sitz</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_313">
 			<English>%1 is already in your inventory. Adding to backpack!</English>
@@ -13072,7 +13074,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_315">
 			<English>%1 is restricted.</English>
-			<German>%1 eingeschränkt.</German>
+			<German>%1 ist gesperrt.</German>
 			<Russian>%1 ограничено.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>%1 beperkt.</Dutch>
@@ -13081,7 +13083,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_316">
 			<English>You may only access friends' gear in this area.</English>
-			<German>Sie können Zahn 'Freunde Zugriff nur in diesem Bereich.</German>
+			<German>Du kannst hier nur auf das Inventar von Freunden zugreifen.</German>
 			<Russian>Вы можете открывать рюкзаки только друзей в этой области.</Russian>
 			<Spanish>Sólo se puede acceder engranaje amigos en esta área.</Spanish>
 			<Dutch>U mag alleen toegang tot versnelling vrienden 'op dit gebied.</Dutch>
@@ -13171,7 +13173,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM">
 			<English>Weapon upgrade</English>
-			<German>Bewaffnung</German>
+			<German>Bewaffnung aufrüsten</German>
 			<Russian>Установка оружия</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13180,7 +13182,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_DESC">
 			<English>Installation instructions for the vehicle armament.</English>
-			<German>Installationsanleitung für die Fahrzeug-bewaffnung.</German>
+			<German>Installationsanleitung für die Fahrzeug-Bewaffnung.</German>
 			<Russian>Руководство по установке оружия.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13234,7 +13236,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
-			<!-- <German></German> -->
+			<German>Fallschirm springen</German>
 			<Russian>HALO прыжок</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Parachutesprong</Dutch>
@@ -13270,7 +13272,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_RAISEHORDE">
 			<English>Raise Horde</English>
-			<!-- <German></German> -->
+			<German>Horde bilden</German>
 			<Russian>Призвать орду</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Roep een Horde aan</Dutch>
@@ -13324,7 +13326,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HOTWIRE">
 			<English>Hotwire %1</English>
-			<!-- <German></German> -->
+			<German>%1 kurzschliessen</German>
 			<Russian>Угнать %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Hotwire %1</Dutch>
@@ -13351,7 +13353,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GUTZOM">
 			<English>Gut Zombie</English>
-			<!-- <German></German> -->
+			<German>Zombie ausnehmen</German>
 			<Russian>Разделать зомби</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Slacht Zombie</Dutch>
@@ -13378,7 +13380,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_PACK">
 			<English>Pack %1</English>
-			<!-- <German></German> -->
+			<German>%1 verpacken</German>
 			<Russian>Запаковать %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Inpakken %1</Dutch>
@@ -13387,7 +13389,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MURDERS">
 			<English>Recent Murders</English>
-			<!-- <German></German> -->
+			<German>Kürzliche Morde</German>
 			<Russian>Последние убийства</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Recente Moorden</Dutch>
@@ -13396,7 +13398,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_FILLVEH">
 			<English>Fill Vehicle</English>
-			<!-- <German></German> -->
+			<German>Tanken</German>
 			<Russian>Заправить транспорт</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Vul Voertuig</Dutch>
@@ -13414,7 +13416,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_REMLOCK">
 			<English>Remove Lock from %1</English>
-			<!-- <German></German> -->
+			<German>Schloss entfernen von %1</German>
 			<Russian>Снять замок с %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Verwijder slot van %1</Dutch>
@@ -13432,7 +13434,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 			<English>Stop Generator</English>
-			<!-- <German></German> -->
+			<German>Generator abschalten</German>
 			<Russian>Остановить генератор</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13441,7 +13443,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR2">
 			<English>Start Generator</English>
-			<!-- <German></German> -->
+			<German>Generator starten</German>
 			<Russian>Запустить генератор</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13450,7 +13452,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR3">
 			<English>Fill and Start Generator</English>
-			<!-- <German></German> -->
+			<German>Generator betanken und starten</German>
 			<Russian>Заправить и запустить генератор</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Vul en Start Generator</Dutch>
@@ -13459,7 +13461,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_ATTACH">
 			<English>Attach Straps</English>
-			<!-- <German></German> -->
+			<German>Gurte befestigen</German>
 			<Russian>Прицепить стропы</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Monteer Spanbanden</Dutch>
@@ -13468,7 +13470,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_DETACH">
 			<English>Detach Straps</English>
-			<!-- <German></German> -->
+			<German>Gurte lösen</German>
 			<Russian>Отцепить стропы</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Demonteer Spanbanden</Dutch>
@@ -13477,7 +13479,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HUMANITY">
 			<English>Your humanity is too %1, this trader refuses to talk to you</English>
-			<!-- <German></German> -->
+			<German>Dein Menschlichkeitswert ist zu %1, dieser Händler will nicht mit dir reden</German>
 			<Russian>Ваша человечность слишком %1, этот торговец отказывается говорить с вами</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Je menselijkheid is te %1. Deze trader doet geen zaken met je.</Dutch>
@@ -13486,7 +13488,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HUMANITY_HIGH">
 			<English>high</English>
-			<German>high</German>
+			<German>hoch</German>
 			<Russian>высока</Russian>
 			<Spanish>high</Spanish>
 			<Dutch>high</Dutch>
@@ -13495,7 +13497,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HUMANITY_LOW">
 			<English>low</English>
-			<German>low</German>
+			<German>tief</German>
 			<Russian>низка</Russian>
 			<Spanish>low</Spanish>
 			<Dutch>low</Dutch>
@@ -13504,7 +13506,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_1">
 			<English>Calling Zombies...</English>
-			<!-- <German></German> -->
+			<German>Rufe Zombies...</German>
 			<Russian>Призываем зомби...</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13513,7 +13515,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_2">
 			<English>Maintenance already in progress.</English>
-			<German>Instandhaltung bereits in bearbeitung.</German>
+			<German>Instandhaltung bereits in Bearbeitung.</German>
 			<Russian>Уже обслуживается.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13522,7 +13524,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_3">
 			<English>At least one building part is not setup yet.</English>
-			<!-- <German></German> -->
+			<German>Mindestens ein Teil des Gebäudes ist noch nicht fertig.</German>
 			<Russian>Как минимум одна часть постройки ещё не установлена.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13531,7 +13533,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_4">
 			<English>You have maintained %1 building parts.</English>
-			<!-- <German></German> -->
+			<German>%1 Bauteile instand gesetzt.</German>
 			<Russian>Вы обслужили %1 построек.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13549,7 +13551,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_7">
 			<English>%1 building parts in range, maintenance would cost %2.</English>
-			<!-- <German></German> -->
+			<German>%1 Bauteile in Reichweite - Instandhaltungskosten: %2.</German>
 			<Russian>Построек найдено: %1, обслуживание будет стоить %2.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13558,7 +13560,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_8">
 			<English>You have tagged a player as friendly. Waiting for other player to accept.</English>
-			<!-- <German></German> -->
+			<German>Du hast einen Spieler als Freund markiert. Warte auf Bestätigung vom anderen Spieler.</German>
 			<Russian>Вы отметили игрока как друга. Ожидание принятия дружбы.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13567,7 +13569,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_9">
 			<English>Unable to change clothes while wearing backpack.</English>
-			<!-- <German></German> -->
+			<German>Kleider können nicht gewechselt werden, solange ein Rucksack getragen wird.</German>
 			<Russian>Нельзя переодеться с рюкзаком на спине.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13576,7 +13578,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_10">
 			<English>Unable to change clothes while carrying a filled chainsaw.</English>
-			<!-- <German></German> -->
+			<German>Kleider können nicht gewechselt werden, solange eine gefüllte Motorsäge in den Händen gehalten wird.</German>
 			<Russian>Нельзя переодеваться, держа заправленную бензопилу.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13585,7 +13587,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_11">
 			<English>Bought %3 for %1 %2, key added to toolbelt.</English>
-			<!-- <German></German> -->
+			<German>%3 gekauft für %1 %2, Schlüssel zum Werkzeuggürtel hinzugefügt</German>
 			<Russian>Куплено: %3 за %1 %2, ключ добавлен на пояс.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13594,7 +13596,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_14">
 			<English>No Tank Traps found nearby.</English>
-			<German>Keine Tank Traps in der Nähe gefunden.</German>
+			<German>Keine Panzersperren in der Nähe gefunden.</German>
 			<Russian>Противотанковые ежи не найдены.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13603,7 +13605,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_15">
 			<English>Another object is blocking the vehicle exit.</English>
-			<!-- <German></German> -->
+			<German>Ein anderes Objekt blockiert den Ausstieg.</German>
 			<Russian>Что-то блокирует выход из транспорта.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13612,7 +13614,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_16">
 			<English>Failed, another player is closer than you are.</English>
-			<!-- <German></German> -->
+			<German>Fehlgeschlagen, ein anderer Spieler ist näher.</German>
 			<Russian>Не удалось, другой игрок ближе, чем вы.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13621,7 +13623,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_17">
 			<English>You and %1 are now tagged as friendlies.</English>
-			<!-- <German></German> -->
+			<German>Du bist jetzt mit %1 befreundet.</German>
 			<Russian>Вы и %1 теперь друзья.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13630,7 +13632,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_18">
 			<English>You cannot perform an upgrade while still inside a vehicle.</English>
-			<!-- <German></German> -->
+			<German>Du kannst das Fahrzeug nicht aufrüsten, wenn du noch im Fahrzeug sitzt.</German>
 			<Russian>Вы не можете улучшить транспорт, находясь в нём.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13639,7 +13641,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_20">
 			<English>You must remove the lock to delete this item!</English>
-			<!-- <German></German> -->
+			<German>Du musst das Schloss entfernen, um das Objekt zu löschen!</German>
 			<Russian>Вы должны снять замок, чтобы убрать этот предмет!</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch>Je moet het slot verwijderen voor je dit item kunt weghalen!</Dutch>
@@ -13648,7 +13650,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_21">
 			<English>Deconstructing modular buildables will not refund any components.</English>
-			<!-- <German></German> -->
+			<German>Durch den Abbau werden keine Bauteile zurückerstattet.</German>
 			<Russian>Разборка модульных построек не возвратит потраченные ресурсы.</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13657,7 +13659,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_22">
 			<English>%1 building parts in range.</English>
-			<!-- <German></German> -->
+			<German>%1 Bauteile in Reichweite.</German>
 			<Russian>Построек найдено: %1</Russian>
 			<!-- <Spanish></Spanish> -->
 			<Dutch></Dutch>
@@ -13693,7 +13695,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
 			<English>6 x ItemSodaCoke</English>
-			<!-- <German></German> -->
+			<German>6 x Dose (Coke)</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13702,7 +13704,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
 			<English>12 x ItemSodaCoke</English>
-			<!-- <German></German> -->
+			<German> 12 x Dose (Coke)</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13711,7 +13713,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
 			<English>6 x ItemSodaPepsi</English>
-			<!-- <German></German> -->
+			<German>6 x Dose (Pepsi)</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13720,7 +13722,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
 			<English>12 x ItemSodaPepsi</English>
-			<!-- <German></German> -->
+			<German>12 x Dose (Pepsi)</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13729,7 +13731,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
 			<English>6 x FoodbaconCooked</English>
-			<!-- <German></German> -->
+			<German>6 x Gebratener Speck</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13738,7 +13740,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
 			<English>12 x FoodbaconCooked</English>
-			<!-- <German></German> -->
+			<German>12 x Gebratener Speck</German>
 			<!-- <Russian></Russian> -->
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13774,7 +13776,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<English>12 x SandBag</English>
-			<!-- <German></German> -->
+			<German>12 x Sandsack</German>
 			<Russian>Мешок с песком (12x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13783,7 +13785,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
 			<English>6 x Tank Trap</English>
-			<!-- <German></German> -->
+			<German>6 x Panzersperre</German>
 			<Russian>Противотанковый ёж (6x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13792,7 +13794,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
 			<English>12 x Tank Trap</English>
-			<!-- <German></German> -->
+			<German>12 x Panzersperre</German>
 			<Russian>Противотанковый ёж (12x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13801,7 +13803,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
 			<English>6 x Wire Kit</English>
-			<!-- <German></German> -->
+			<German>6 x Stacheldraht</German>
 			<Russian>Колючая проволока (6x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13810,7 +13812,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
 			<English>12 x Wire Kit</English>
-			<!-- <German></German> -->
+			<German>12 x Stacheldraht</German>
 			<Russian>Колючая проволока (12x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13819,7 +13821,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
 			<English>6 x Scrap Metal</English>
-			<!-- <German></German> -->
+			<German>6 x Metallteile</German>
 			<Russian>Металлолом (6x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13828,7 +13830,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<English>12 x Scrap Metal</English>
-			<!-- <German></German> -->
+			<German>12 x Metallteile</German>
 			<Russian>Металлолом (12x)</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13837,7 +13839,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SAFE">
 			<English>Safe</English>
-			<!-- <German></German> -->
+			<German>Safe</German>
 			<Russian>Сейф</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13846,7 +13848,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_DESC">
 			<English>Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!</English>
-			<!-- <German></German> -->
+			<German>Persönlicher Safe: Ein platzierbares Objekt für sehr sichere Aufbewahrung. ACHTUNG!!! Der vierstellige Code zum Öffnen wird nach dem Aufstellen angezeigt, bitte nicht vergessen!</German>
 			<Russian>Личный сейф: Перемещаемый объект, который используется в качестве безопасного хранилища. ВНИМАНИЕ!!! Поставив сейф, вы получите 4-х значный код, который необходимо ввести, чтобы открыть сейф, запишите этот код!</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13855,7 +13857,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_LOCKED">
 			<English>Locked Safe</English>
-			<!-- <German></German> -->
+			<German>Abgeschlossener Safe</German>
 			<Russian>Закрытый сейф</Russian>
 			<!-- <Spanish></Spanish> -->
 			<!-- <Dutch></Dutch> -->
@@ -13882,7 +13884,7 @@
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_InGearBox">
 			<English>Weight carried : %1 lb</English>
-			<German>Getragenes Gewicht : %1 Kg</German>
+			<German>Getragenes Gewicht : %1 kg</German>
 			<Russian>Переносимый вес : %1 Кг</Russian>
 			<Spanish>Weight carried : %1 Kg</Spanish>
 			<Dutch>Dragend gewicht : %1 Kg</Dutch>
@@ -13891,7 +13893,7 @@
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_English">
 			<English>lb</English>
-			<German>Kg</German>
+			<German>kg</German>
 			<Russian>Кг</Russian>
 			<Spanish>Kg</Spanish>
 			<Dutch>Kg</Dutch>
@@ -13900,7 +13902,7 @@
 		</Key>
 		<Key ID="STR_R3F_WEIGHT_Overburdened">
 			<English>You are overburdened.</English>
-			<German>Sie sind überfordert.</German>
+			<German>Sie sind überlastet.</German>
 			<Russian>Вы перегружены.</Russian>
 			<Spanish>Usted está sobrecargado.</Spanish>
 			<Dutch>Je bent overbelast.</Dutch>
@@ -13909,7 +13911,7 @@
 		</Key>
 		<Key ID="str_autojoin_warning">
 			<English>You will auto-join the game in %1 seconds. Press ESC to cancel and leave the lobby.</English>
-			<German>Sie werden automatisch in das Spiel in %1 Sekunden. Drücken Sie ESC, um den Vorgang abzubrechen und lassen Sie die Lobby.</German>
+			<German>Du wirst in %1 Sekunden eingeloggt. Drücke ESC, um abzubrechen und die Lobby zu verlassen.</German>
 			<Russian>Вы автоматически присоединитесь к игре через %1 секунд. Нажмите клавишу ESC, чтобы покинуть лобби.</Russian>
 			<Spanish>Va a auto-unirse al juego en %1 segundos. Presione ESC para cancelar y dejar el vestíbulo.</Spanish>
 			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall.</French>
@@ -13917,7 +13919,7 @@
 		</Key>
 		<Key ID="str_death_rad">
 			<English>radiation</English>
-			<German>strahlung</German>
+			<German>Strahlung</German>
 			<Russian>излучение</Russian>
 			<Spanish>radiación</Spanish>
 			<French>radiation</French>
@@ -13969,7 +13971,7 @@
 			<Spanish>Asentar Tienda de Campaña Desierto</Spanish>
 			<French>Monter la Tente Dôme Désert</French>
 			<Czech>Postavit stan (iglú) Poušť</Czech>
-			<German>Igluzelt aufschlagen Wüste</German>
+			<German>Wüsten-Igluzelt aufschlagen</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT">
 			<English>Desert Dome Tent</English>
@@ -14021,7 +14023,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_DOG_RAW">
 			<English>Raw Dog Meat</English>
-			<German>Raw Hundefleisch</German>
+			<German>Rohes Hundefleisch</German>
 			<Russian>Сырое мясо собаки</Russian>
 			<Spanish>La carne de perro en bruto</Spanish>
 			<French>Nourriture pour chien</French>
@@ -14029,7 +14031,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_DOG_COOKED">
 			<English>Cooked Dog Meat</English>
-			<German>Gekochte Hundefleisch</German>
+			<German>Gekochtes Hundefleisch</German>
 			<Russian>Приготовленное мясо собаки</Russian>
 			<Spanish>Carne cocinada perro</Spanish>
 			<French>Cuit viande de chien</French>
@@ -14037,7 +14039,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_BIOMEAT">
 			<English>Bio Meat</English>
-			<German>Bio Meat</German>
+			<German>Bio-Fleisch</German>
 			<Russian>Органическое мясо</Russian>
 			<Spanish>Bio Meat</Spanish>
 			<French>Bio Meat</French>
@@ -14045,7 +14047,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_BIOMEAT_DESC">
 			<English>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</English>
-			<German>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</German>
+			<German>Bio-Fleisch: Eine sehr gute Nahrungsquelle und ein sehr grosses Risiko, eine Infection aufzulesen. Essen auf eigene Gefahr.</German>
 			<Russian>Органическое мясо: Очень хороший источник пит. веществ, обладающий высокой вероятностью заражения. Ешьте на свой страх и риск.</Russian>
 			<Spanish>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</Spanish>
 			<French>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</French>
@@ -14053,7 +14055,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_PUMPKIN">
 			<English>Pumpkin</English>
-			<German>Pumpkin</German>
+			<German>Kürbis</German>
 			<Russian>Тыква</Russian>
 			<Spanish>Pumpkin</Spanish>
 			<French>Pumpkin</French>
@@ -14061,7 +14063,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_PUMPKIN_CRAFT">
 			<English>Craft Pumpkin Seeds</English>
-			<German>Craft Pumpkin Seeds</German>
+			<German>Kürbissamen ernten</German>
 			<Russian>Добыть семена</Russian>
 			<Spanish>Craft Pumpkin Seeds</Spanish>
 			<French>Craft Pumpkin Seeds</French>
@@ -14069,7 +14071,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_SUNFLOWER">
 			<English>Bag of Sunflower Seeds</English>
-			<German>Bag of Sunflower Seeds</German>
+			<German>Säckchen Sonnenblumen-Samen</German>
 			<Russian>Мешочек семечек</Russian>
 			<Spanish>Bag of Sunflower Seeds</Spanish>
 			<French>Bag of Sunflower Seeds</French>
@@ -14077,7 +14079,7 @@
 		</Key>
 		<Key ID="STR_GEM_NAME_TOPAZ">
 			<English>Topaz</English>
-			<German>Topaz</German>
+			<German>Topas</German>
 			<Russian>Топаз</Russian>
 			<Spanish>Topaz</Spanish>
 			<French>Topaz</French>
@@ -14093,7 +14095,7 @@
 		</Key>
 		<Key ID="STR_GEM_NAME_SAPPHIRE">
 			<English>Sapphire</English>
-			<German>Sapphire</German>
+			<German>Saphir</German>
 			<Russian>Сапфир</Russian>
 			<Spanish>Sapphire</Spanish>
 			<French>Sapphire</French>
@@ -14109,7 +14111,7 @@
 		</Key>
 		<Key ID="STR_GEM_NAME_EMERALD">
 			<English>Emerald</English>
-			<German>Emerald</German>
+			<German>Smaragd</German>
 			<Russian>Изумруд</Russian>
 			<Spanish>Emerald</Spanish>
 			<French>Emerald</French>
@@ -14125,7 +14127,7 @@
 		</Key>
 		<Key ID="STR_GEM_NAME_RUBY">
 			<English>Ruby</English>
-			<German>Ruby</German>
+			<German>Rubin</German>
 			<Russian>Рубин</Russian>
 			<Spanish>Ruby</Spanish>
 			<French>Ruby</French>
@@ -14133,7 +14135,7 @@
 		</Key>
 		<Key ID="STR_ORE_NAME_IRON">
 			<English>Iron Ore</English>
-			<German>Iron Ore</German>
+			<German>Eisenerz</German>
 			<Russian>Железная руда</Russian>
 			<Spanish>Iron Ore</Spanish>
 			<French>Iron Ore</French>
@@ -14141,7 +14143,7 @@
 		</Key>
 		<Key ID="STR_ORE_NAME_IRON_DESC">
 			<English>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</English>
-			<German>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</German>
+			<German>Wird für die Herstellung von Metallteilen benötigt. Kann mit einem Vorschlaghammer von Steinen gewonnen werden.</German>
 			<Russian>Используется для получения металлолома. Добывается из камней с помощью кувалды.</Russian>
 			<Spanish>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</Spanish>
 			<French>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</French>
@@ -14149,7 +14151,7 @@
 		</Key>
 		<Key ID="STR_ORE_NAME_SILVER">
 			<English>Silver Ore</English>
-			<German>Silver Ore</German>
+			<German>Silbererz</German>
 			<Russian>Серебряная руда</Russian>
 			<Spanish>Silver Ore</Spanish>
 			<French>Silver Ore</French>
@@ -14157,7 +14159,7 @@
 		</Key>
 		<Key ID="STR_ORE_NAME_SILVER_DESC">
 			<English>Can be mined from rocks using a sledgehammer.</English>
-			<German>Can be mined from rocks using a sledgehammer.</German>
+			<German>Kann mit einem Vorschlaghammer von Steinen gewonnen werden.</German>
 			<Russian>Добывается из камней с помощью кувалды.</Russian>
 			<Spanish>Can be mined from rocks using a sledgehammer.</Spanish>
 			<French>Can be mined from rocks using a sledgehammer.</French>
@@ -14165,7 +14167,7 @@
 		</Key>
 		<Key ID="STR_ORE_NAME_GOLD">
 			<English>Gold Ore</English>
-			<German>Gold Ore</German>
+			<German>Golderz</German>
 			<Russian>Золотая руда</Russian>
 			<Spanish>Gold Ore</Spanish>
 			<French>Gold Ore</French>
@@ -14173,7 +14175,7 @@
 		</Key>
 		<Key ID="STR_ORE_NAME_GOLD_DESC">
 			<English>Can be mined from rocks using a sledgehammer.</English>
-			<German>Can be mined from rocks using a sledgehammer.</German>
+			<German>Kann mit einem Vorschlaghammer von Steinen gewonnen werden.</German>
 			<Russian>Добывается из камней с помощью кувалды.</Russian>
 			<Spanish>Can be mined from rocks using a sledgehammer.</Spanish>
 			<French>Can be mined from rocks using a sledgehammer.</French>
@@ -14181,7 +14183,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_OIL">
 			<English>2-Stroke Engine Oil</English>
-			<German>2-Stroke Engine Oil</German>
+			<German>2-Takt-Motorenöl</German>
 			<Russian>Масло для двухтактных двигателей</Russian>
 			<Spanish>2-Stroke Engine Oil</Spanish>
 			<French>2-Stroke Engine Oil</French>
@@ -14189,7 +14191,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXGAS_ACTION">
 			<English>Mix Chainsaw Gas</English>
-			<German>Mix Chainsaw Gas</German>
+			<German>2-Takt-Benzin mischen</German>
 			<Russian>Смешать бензин</Russian>
 			<Spanish>Mix Chainsaw Gas</Spanish>
 			<French>Mix Chainsaw Gas</French>
@@ -14197,7 +14199,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_GAS">
 			<English>Gas</English>
-			<German>Gas</German>
+			<German>2-Takt-Benzin</German>
 			<Russian>Бензин</Russian>
 			<Spanish>Gas</Spanish>
 			<French>Gas</French>
@@ -14205,7 +14207,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_GAS_DESC">
 			<English>Gas for Chainsaw</English>
-			<German>Gas for Chainsaw</German>
+			<German>2-Takt-Benzin für die Kettensäge.</German>
 			<Russian>Топливо для бензопилы</Russian>
 			<Spanish>Gas for Chainsaw</Spanish>
 			<French>Gas for Chainsaw</French>
@@ -14221,7 +14223,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC">
 			<English>20 liters of Mixed Gas.</English>
-			<German>20 liters of Mixed Gas.</German>
+			<German>20 Liter 2-Takt-Benzin.</German>
 			<Russian>20 литров бензина.</Russian>
 			<Spanish>20 liters of Mixed Gas.</Spanish>
 			<French>20 liters of Mixed Gas.</French>
@@ -14229,7 +14231,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN">
 			<English>Mixed Gas 16L</English>
-			<German>Mixed Gas 16L</German>
+			<German>2-Takt-Benzin 16l</German>
 			<Russian>Канистра бензина (16л)</Russian>
 			<Spanish>Mixed Gas 16L</Spanish>
 			<French>Mixed Gas 16L</French>
@@ -14237,7 +14239,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN_DESC">
 			<English>16 liters of Mixed Gas.</English>
-			<German>16 liters of Mixed Gas.</German>
+			<German>16 Liter 2-Takt-Benzin.</German>
 			<Russian>16 литров бензина.</Russian>
 			<Spanish>16 liters of Mixed Gas.</Spanish>
 			<French>16 liters of Mixed Gas.</French>
@@ -14245,7 +14247,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN">
 			<English>Mixed Gas 12L</English>
-			<German>Mixed Gas 12L</German>
+			<German>2-Takt-Benzin 12l</German>
 			<Russian>Канистра бензина (12л)</Russian>
 			<Spanish>Mixed Gas 12L</Spanish>
 			<French>Mixed Gas 12L</French>
@@ -14253,7 +14255,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN_DESC">
 			<English>12 liters of Mixed Gas.</English>
-			<German>12 liters of Mixed Gas.</German>
+			<German>12 Liter 2-Takt-Benzin.</German>
 			<Russian>12 литров бензина.</Russian>
 			<Spanish>12 liters of Mixed Gas.</Spanish>
 			<French>12 liters of Mixed Gas.</French>
@@ -14261,7 +14263,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN">
 			<English>Mixed Gas 8L</English>
-			<German>Mixed Gas 8L</German>
+			<German>2-Takt-Benzin 8l</German>
 			<Russian>Канистра бензина (8л)</Russian>
 			<Spanish>Mixed Gas 8L</Spanish>
 			<French>Mixed Gas 8L</French>
@@ -14269,7 +14271,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC">
 			<English>8 liters of Mixed Gas.</English>
-			<German>8 liters of Mixed Gas.</German>
+			<German>8 Liter 2-Takt-Benzin.</German>
 			<Russian>8 литров бензина.</Russian>
 			<Spanish>8 liters of Mixed Gas.</Spanish>
 			<French>8 liters of Mixed Gas.</French>
@@ -14277,7 +14279,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN">
 			<English>Mixed Gas 4L</English>
-			<German>Mixed Gas 4L</German>
+			<German>2-Takt-Benzin 4l</German>
 			<Russian>Канистра бензина (4л)</Russian>
 			<Spanish>Mixed Gas 4L</Spanish>
 			<French>Mixed Gas 4L</French>
@@ -14285,7 +14287,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN_DESC">
 			<English>4 liters of Mixed Gas.</English>
-			<German>4 liters of Mixed Gas.</German>
+			<German>4 Liter 2-Takt-Benzin.</German>
 			<Russian>4 литра бензина.</Russian>
 			<Spanish>4 liters of Mixed Gas.</Spanish>
 			<French>4 liters of Mixed Gas.</French>
@@ -14293,7 +14295,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION">
 			<English>Fill Chainsaw</English>
-			<German>Fill Chainsaw</German>
+			<German>Kettensäge betanken</German>
 			<Russian>Заправить</Russian>
 			<Spanish>Fill Chainsaw</Spanish>
 			<French>Fill Chainsaw</French>
@@ -14301,7 +14303,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DOCUMENT">
 			<English>Document</English>
-			<German>Document</German>
+			<German>Dokument</German>
 			<Russian>Документ</Russian>
 			<Spanish>Document</Spanish>
 			<French>Document</French>
@@ -14309,7 +14311,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DOCUMENT_DESC">
 			<English>Unknown document</English>
-			<German>Unknown document</German>
+			<German>Unbekanntes Dokument</German>
 			<Russian>Неизвестный документ</Russian>
 			<Spanish>Unknown document</Spanish>
 			<French>Unknown document</French>
@@ -14317,7 +14319,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED">
 			<English>Plot Deed</English>
-			<German>Plot Deed</German>
+			<German>Grundstücksurkunde</German>
 			<Russian>Plot Deed</Russian>
 			<Spanish>Plot Deed</Spanish>
 			<French>Plot Deed</French>
@@ -14325,7 +14327,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED_DESC">
 			<English>Deed to a plot of land, similar to a plot pole.</English>
-			<German>Deed to a plot of land, similar to a plot pole.</German>
+			<German>Erlaubt dir, ein Grundstück zu beanspruchen und eine Grundstücks-Markierung zu setzen.</German>
 			<Russian>Deed to a plot of land, similar to a plot pole.</Russian>
 			<Spanish>Deed to a plot of land, similar to a plot pole.</Spanish>
 			<French>Deed to a plot of land, similar to a plot pole.</French>
@@ -14333,7 +14335,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED_ACTION">
 			<English>Craft Plot Pole</English>
-			<German>Craft Plot Pole</German>
+			<German>Grundstücks-Markierung herstellen</German>
 			<Russian>Создать: Plot Pole</Russian>
 			<Spanish>Craft Plot Pole</Spanish>
 			<French>Craft Plot Pole</French>
@@ -14341,7 +14343,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LETTER">
 			<English>Letter</English>
-			<German>Letter</German>
+			<German>Brief</German>
 			<Russian>Письмо</Russian>
 			<Spanish>Letter</Spanish>
 			<French>Letter</French>
@@ -14349,7 +14351,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LETTER_DESC">
 			<English>Random letter</English>
-			<German>Random letter</German>
+			<German>Irgend ein Brief</German>
 			<Russian>Какое-то письмо</Russian>
 			<Spanish>Random letter</Spanish>
 			<French>Random letter</French>
@@ -14357,7 +14359,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ROMANCENOVEL">
 			<English>Romance Novel</English>
-			<German>Romance Novel</German>
+			<German>Roman</German>
 			<Russian>Любовный роман</Russian>
 			<Spanish>Romance Novel</Spanish>
 			<French>Romance Novel</French>
@@ -14365,7 +14367,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ROMANCENOVEL_DESC">
 			<English>Trashy Romance Novel - "The seas are laden with lust and jealousy."</English>
-			<German>Trashy Romance Novel - "The seas are laden with lust and jealousy."</German>
+			<German>Schnulzen-Roman - "Ein Meer von Lust und Eifersucht."</German>
 			<Russian>Trashy Romance Novel - "The seas are laden with lust and jealousy."</Russian>
 			<Spanish>Trashy Romance Novel - "The seas are laden with lust and jealousy."</Spanish>
 			<French>Trashy Romance Novel - "The seas are laden with lust and jealousy."</French>
@@ -14373,7 +14375,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ROMANCENOVEL_DESC2">
 			<English>Trashy Romance Novel - "He had a chest of iron, and a heart of gold."</English>
-			<German>Trashy Romance Novel - "He had a chest of iron, and a heart of gold."</German>
+			<German>Schnulzen-Roman - "Er hatte eine starke Brust, und ein Herz aus Gold."</German>
 			<Russian>Trashy Romance Novel - "He had a chest of iron, and a heart of gold."</Russian>
 			<Spanish>Trashy Romance Novel - "He had a chest of iron, and a heart of gold."</Spanish>
 			<French>Trashy Romance Novel - "He had a chest of iron, and a heart of gold."</French>
@@ -14381,7 +14383,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BOOK">
 			<English>Book</English>
-			<German>Book</German>
+			<German>Buch</German>
 			<Russian>Книга</Russian>
 			<Spanish>Book</Spanish>
 			<French>Book</French>
@@ -14389,7 +14391,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BOOK_DESC">
 			<English>Random Children's Book</English>
-			<German>Random Children's Book</German>
+			<German>Kinderbuch</German>
 			<Russian>Какая-то детская книга</Russian>
 			<Spanish>Random Children's Book</Spanish>
 			<French>Random Children's Book</French>
@@ -14397,7 +14399,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TORNNEWSPAPER">
 			<English>Torn Newspaper</English>
-			<German>Torn Newspaper</German>
+			<German>Zerrissene Zeitung</German>
 			<Russian>Рваная газета</Russian>
 			<Spanish>Torn Newspaper</Spanish>
 			<French>Torn Newspaper</French>
@@ -14405,7 +14407,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TORNNEWSPAPER_DESC">
 			<English>Torn Newspaper - "The recent obituaries are still legible..."</English>
-			<German>Torn Newspaper - "The recent obituaries are still legible..."</German>
+			<German>Zerrissene Zeitung - "Die jüngsten Nachrufe sind noch lesbar..."</German>
 			<Russian>Рваная газета - "Последние некрологи всё ещё можно прочитать..."</Russian>
 			<Spanish>Torn Newspaper - "The recent obituaries are still legible..."</Spanish>
 			<French>Torn Newspaper - "The recent obituaries are still legible..."</French>
@@ -14413,7 +14415,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TORNNEWSPAPER_ACTION">
 			<English>Read Obituaries</English>
-			<German>Read Obituaries</German>
+			<German>Nachrufe lesen</German>
 			<Russian>Читать</Russian>
 			<Spanish>Read Obituaries</Spanish>
 			<French>Read Obituaries</French>
@@ -14421,7 +14423,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAMP">
 			<English>Wooden Ramp</English>
-			<German>Wooden Ramp</German>
+			<German>Holz-Rampe</German>
 			<Russian>Wooden Ramp</Russian>
 			<Spanish>Wooden Ramp</Spanish>
 			<French>Wooden Ramp</French>
@@ -14429,7 +14431,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAMP_DESC">
 			<English>Document used in building a wooden ramp.</English>
-			<German>Document used in building a wooden ramp.</German>
+			<German>Dokument wird benötigt, um eine Holz-Rampe zu bauen.</German>
 			<Russian>Document used in building a wooden ramp.</Russian>
 			<Spanish>Document used in building a wooden ramp.</Spanish>
 			<French>Document used in building a wooden ramp.</French>
@@ -14437,7 +14439,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_HOTWIREKIT">
 			<English>Hotwire Kit</English>
-			<German>Hotwire Kit</German>
+			<German>Aufbrech-Werkzeug</German>
 			<Russian>Набор для угона</Russian>
 			<Spanish>Hotwire Kit</Spanish>
 			<French>Hotwire Kit</French>
@@ -14445,7 +14447,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_HOTWIREKIT_DESC">
 			<English>Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.</English>
-			<German>Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.</German>
+			<German>Kann ein Fahrzeug temporär aufschliessen und starten. Klappt nicht immer und kann nur ein Mal verwendet werden.</German>
 			<Russian>Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.</Russian>
 			<Spanish>Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.</Spanish>
 			<French>Used to temporarily unlock and start a vehicle has a chance of failure and is consumed on use.</French>
@@ -14453,7 +14455,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_ACTION">
 			<English>Self transfusion</English>
-			<German>Self transfusion</German>
+			<German>Selbst-Transfusion</German>
 			<Russian>Перелить себе</Russian>
 			<Spanish>Self transfusion</Spanish>
 			<French>Self transfusion</French>
@@ -14461,7 +14463,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_KILOOFHEMP">
 			<English>Kilo of Hemp</English>
-			<German>Kilo of Hemp</German>
+			<German>Kilo Hanf</German>
 			<Russian>Килограмм конопли</Russian>
 			<Spanish>Kilo of Hemp</Spanish>
 			<French>Kilo of Hemp</French>
@@ -14469,7 +14471,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CANVAS">
 			<English>Canvas</English>
-			<German>Canvas</German>
+			<German>Tuch</German>
 			<Russian>Хост</Russian>
 			<Spanish>Canvas</Spanish>
 			<French>Canvas</French>
@@ -14477,7 +14479,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CANVAS_DESC">
 			<English>Canvas Parcel</English>
-			<German>Canvas Parcel</German>
+			<German>Tuch-Bündel</German>
 			<Russian>Холщовый свёрток</Russian>
 			<Spanish>Canvas Parcel</Spanish>
 			<French>Canvas Parcel</French>
@@ -14485,7 +14487,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BURLAP">
 			<English>Burlap</English>
-			<German>Burlap</German>
+			<German>Sackleinen</German>
 			<Russian>Джутовая ткань</Russian>
 			<Spanish>Burlap</Spanish>
 			<French>Burlap</French>
@@ -14493,7 +14495,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BURLAP_DESC">
 			<English>Burlap: A strong cloth like material used for building sandbags.</English>
-			<German>Burlap: A strong cloth like material used for building sandbags.</German>
+			<German>Sackleinen: Ein starkes, stoffartiges Material für die Herstellung von Sandsäcken.</German>
 			<Russian>Джутовая ткань: Крепкая ткань вроде той, что используется в изготовлении мешков для песка.</Russian>
 			<Spanish>Burlap: A strong cloth like material used for building sandbags.</Spanish>
 			<French>Burlap: A strong cloth like material used for building sandbags.</French>
@@ -14501,7 +14503,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTBULB">
 			<English>Light Bulb</English>
-			<German>Light Bulb</German>
+			<German>Glühbirne</German>
 			<Russian>Light Bulb</Russian>
 			<Spanish>Light Bulb</Spanish>
 			<French>Light Bulb</French>
@@ -14509,7 +14511,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTBULB_DESC">
 			<English>Lightbulb: Used in part to create a buildable lamp post. Don't tell me you didn't find this in a barn.</English>
-			<German>Lightbulb: Used in part to create a buildable lamp post. Don't tell me you didn't find this in a barn.</German>
+			<German>Glühbirne: Wird zur Herstellung von Lampen benötigt. Sag nicht, du hättest keine in einer Scheune gefunden.</German>
 			<Russian>Lightbulb: Used in part to create a buildable lamp post. Don't tell me you didn't find this in a barn.</Russian>
 			<Spanish>Lightbulb: Used in part to create a buildable lamp post. Don't tell me you didn't find this in a barn.</Spanish>
 			<French>Lightbulb: Used in part to create a buildable lamp post. Don't tell me you didn't find this in a barn.</French>
@@ -14517,7 +14519,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS">
 			<English>Zombie Parts</English>
-			<German>Zombie Parts</German>
+			<German>Zombie-Fleisch</German>
 			<Russian>Куски плоти зомби</Russian>
 			<Spanish>Zombie Parts</Spanish>
 			<French>Zombie Parts</French>
@@ -14525,7 +14527,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_DESC">
 			<English>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</English>
-			<German>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</German>
+			<German>Zombie-Fleisch im Sack: Kann beim Medizin-Händler gegen Bio-Fleisch eingetauscht werden.</German>
 			<Russian>Куски плоти в мешке: Обменяйте их на органическое мясо у торговцев медициной.</Russian>
 			<Spanish>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</Spanish>
 			<French>Zombie Parts in a Bag: Trade these for Bio Meat at medic traders.</French>
@@ -14533,7 +14535,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
-			<German>Combination Lock</German>
+			<German>Zahlenschloss</German>
 			<Russian>Кодовый замок</Russian>
 			<Spanish>Combination Lock</Spanish>
 			<French>Combination Lock</French>
@@ -14541,7 +14543,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_COMBINATIONLOCK_DESC">
 			<English>Used to secure structures from unauthorized entry.</English>
-			<German>Used to secure structures from unauthorized entry.</German>
+			<German>Bauwerke gegen unbefugten Zutritt absichern.</German>
 			<Russian>Используется для защиты построек от посторонних.</Russian>
 			<Spanish>Used to secure structures from unauthorized entry.</Spanish>
 			<French>Used to secure structures from unauthorized entry.</French>
@@ -14549,7 +14551,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CORRUGATEDFENCE">
 			<English>Corrugated Fence</English>
-			<German>Corrugated Fence</German>
+			<German>Wellblech-Zaun</German>
 			<Russian>Corrugated Fence</Russian>
 			<Spanish>Corrugated Fence</Spanish>
 			<French>Corrugated Fence</French>
@@ -14557,7 +14559,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CORRUGATEDFENCE_DESC">
 			<English>Corrugated Fence: A buildable object used for fortification purposes.</English>
-			<German>Corrugated Fence: A buildable object used for fortification purposes.</German>
+			<German>Wellblech-Zaun: Ein aufbaubares Objekt zur Erstellung einer Befestigung.</German>
 			<Russian>Corrugated Fence: A buildable object used for fortification purposes.</Russian>
 			<Spanish>Corrugated Fence: A buildable object used for fortification purposes.</Spanish>
 			<French>Corrugated Fence: A buildable object used for fortification purposes.</French>
@@ -14565,7 +14567,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_METALPOLE">
 			<English>Metal Pole</English>
-			<German>Metal Pole</German>
+			<German>Metallstange</German>
 			<Russian>Metal Pole</Russian>
 			<Spanish>Metal Pole</Spanish>
 			<French>Metal Pole</French>
@@ -14573,7 +14575,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_METALPOLE_DESC">
 			<English>Pole: A few sturdy metal poles used to craft tents and other buildables.</English>
-			<German>Pole: A few sturdy metal poles used to craft tents and other buildables.</German>
+			<German>Metallstange: Ein paar robuste Metallstangen zum Bau von Zelten und anderen Teilen.</German>
 			<Russian>Pole: A few sturdy metal poles used to craft tents and other buildables.</Russian>
 			<Spanish>Pole: A few sturdy metal poles used to craft tents and other buildables.</Spanish>
 			<French>Pole: A few sturdy metal poles used to craft tents and other buildables.</French>
@@ -14581,7 +14583,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_GUNRACKKIT">
 			<English>Gun Rack Kit</English>
-			<German>Gun Rack Kit</German>
+			<German>Waffenhalter-Bausatz</German>
 			<Russian>Gun Rack Kit</Russian>
 			<Spanish>Gun Rack Kit</Spanish>
 			<French>Gun Rack Kit</French>
@@ -14589,7 +14591,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_GUNRACKKIT_DESC">
 			<English>A Gun Rack for 20 weapons.</English>
-			<German>A Gun Rack for 20 weapons.</German>
+			<German>Ein Waffenhalter für 20 Waffen.</German>
 			<Russian>A Gun Rack for 20 weapons.</Russian>
 			<Spanish>A Gun Rack for 20 weapons.</Spanish>
 			<French>A Gun Rack for 20 weapons.</French>
@@ -14597,7 +14599,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODCRATE">
 			<English>Wooden Crate</English>
-			<German>Wooden Crate</German>
+			<German>Holzkiste</German>
 			<Russian>Деревянный ящик</Russian>
 			<Spanish>Wooden Crate</Spanish>
 			<French>Wooden Crate</French>
@@ -14605,7 +14607,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODCRATE_DESC">
 			<English>A wooden crate that holds a lot of items.</English>
-			<German>A wooden crate that holds a lot of items.</German>
+			<German>Eine Holzkiste, um eine Menge Material zu verstauen.</German>
 			<Russian>Деревянный ящик, которой может вмещать много вещей.</Russian>
 			<Spanish>A wooden crate that holds a lot of items.</Spanish>
 			<French>A wooden crate that holds a lot of items.</French>
@@ -14613,7 +14615,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_OILBARREL">
 			<English>Oil Barrel</English>
-			<German>Oil Barrel</German>
+			<German>Öl-Fass</German>
 			<Russian>Oil Barrel</Russian>
 			<Spanish>Oil Barrel</Spanish>
 			<French>Oil Barrel</French>
@@ -14621,7 +14623,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_OILBARREL_DESC">
 			<English>210 litres of Oil in a Barrel.</English>
-			<German>210 litres of Oil in a Barrel.</German>
+			<German>210 Liter Öl in einem Fass.</German>
 			<Russian>210 litres of Oil in a Barrel.</Russian>
 			<Spanish>210 litres of Oil in a Barrel.</Spanish>
 			<French>210 litres of Oil in a Barrel.</French>
@@ -14629,7 +14631,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL">
 			<English>Fuel Barrel</English>
-			<German>Fuel Barrel</German>
+			<German>Kraftstoff-Fass</German>
 			<Russian>Fuel Barrel</Russian>
 			<Spanish>Fuel Barrel</Spanish>
 			<French>Fuel Barrel</French>
@@ -14637,7 +14639,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_DESC">
 			<English>210 litres of fuel per barrel.</English>
-			<German>210 litres of fuel per barrel.</German>
+			<German>210 Liter Kraftstoff-Fass.</German>
 			<Russian>210 litres of fuel per barrel.</Russian>
 			<Spanish>210 litres of fuel per barrel.</Spanish>
 			<French>210 litres of fuel per barrel.</French>
@@ -14645,7 +14647,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL">
 			<English>Fuel Barrel (Empty)</English>
-			<German>Fuel Barrel (Empty)</German>
+			<German>Fass (leer)</German>
 			<Russian>Fuel Barrel (Empty)</Russian>
 			<Spanish>Fuel Barrel (Empty)</Spanish>
 			<French>Fuel Barrel (Empty)</French>
@@ -14653,7 +14655,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL_DESC">
 			<English>210 litres of fuel per barrel. (Empty)</English>
-			<German>210 litres of fuel per barrel. (Empty)</German>
+			<German>210 Liter Kraftstoff-Fass. (Empty)</German>
 			<Russian>210 litres of fuel per barrel. (Empty)</Russian>
 			<Spanish>210 litres of fuel per barrel. (Empty)</Spanish>
 			<French>210 litres of fuel per barrel. (Empty)</French>
@@ -14661,7 +14663,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FIREBARRELKIT">
 			<English>Fire Barrel Kit</English>
-			<German>Fire Barrel Kit</German>
+			<German>Feuer-Fass-Bausatz</German>
 			<Russian>Fire Barrel Kit</Russian>
 			<Spanish>Fire Barrel Kit</Spanish>
 			<French>Fire Barrel Kit</French>
@@ -14669,7 +14671,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FIREBARRELKIT_DESC">
 			<English>Fire Barrel</English>
-			<German>Fire Barrel</German>
+			<German>Feuer-Fass</German>
 			<Russian>Fire Barrel</Russian>
 			<Spanish>Fire Barrel</Spanish>
 			<French>Fire Barrel</French>
@@ -14677,7 +14679,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH">
 			<English>Workbench</English>
-			<German>Workbench</German>
+			<German>Werkbank</German>
 			<Russian>Верстак</Russian>
 			<Spanish>Workbench</Spanish>
 			<French>Workbench</French>
@@ -14685,7 +14687,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH_DESC">
 			<English>Workbench: Used to craft.</English>
-			<German>Workbench: Used to craft.</German>
+			<German>Werkbank: Wird für Handwerksarbeiten benötigt.</German>
 			<Russian>Верстак: Используется для создания предметов.</Russian>
 			<Spanish>Workbench: Used to craft.</Spanish>
 			<French>Workbench: Used to craft.</French>
@@ -14693,7 +14695,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODENRAMP_DESC">
 			<English>Wooden ramp can be used to get air.</English>
-			<German>Wooden ramp can be used to get air.</German>
+			<German>Eine Holz-Rampe kann als Sprungschanze verwendet werden.</German>
 			<Russian>Wooden ramp can be used to get air.</Russian>
 			<Spanish>Wooden ramp can be used to get air.</Spanish>
 			<French>Wooden ramp can be used to get air.</French>
@@ -14701,7 +14703,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_30METERPLOT">
 			<English>30 Meter Plot</English>
-			<German>30 Meter Plot</German>
+			<German>Grundstück-Markierung</German>
 			<Russian>30 Meter Plot</Russian>
 			<Spanish>30 Meter Plot</Spanish>
 			<French>30 Meter Plot</French>
@@ -14709,7 +14711,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_30METERPLOT_DESC">
 			<English>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</English>
-			<German>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</German>
+			<German>Grundstück-Markierung: Ein aufbaubares Objekt, dass dir und deinen Freunden erlaubt, in seiner Reichweite zu bauen.</German>
 			<Russian>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Russian>
 			<Spanish>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Spanish>
 			<French>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</French>
@@ -14717,7 +14719,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_METALPANEL">
 			<English>Metal Panel</English>
-			<German>Metal Panel</German>
+			<German>Metallplatte</German>
 			<Russian>Metal Panel</Russian>
 			<Spanish>Metal Panel</Spanish>
 			<French>Metal Panel</French>
@@ -14725,7 +14727,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_METALPANEL_DESC">
 			<English>Metal Panel: Strong metal wall used for base defence.</English>
-			<German>Metal Panel: Strong metal wall used for base defence.</German>
+			<German>Metallplatte: Starke Metallwand für den Schutz der Basis.</German>
 			<Russian>Metal Panel: Strong metal wall used for base defence.</Russian>
 			<Spanish>Metal Panel: Strong metal wall used for base defence.</Spanish>
 			<French>Metal Panel: Strong metal wall used for base defence.</French>
@@ -14733,7 +14735,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DEERSTAND">
 			<English>Deer Stand</English>
-			<German>Deer Stand</German>
+			<German>Jägerstand</German>
 			<Russian>Deer Stand</Russian>
 			<Spanish>Deer Stand</Spanish>
 			<French>Deer Stand</French>
@@ -14741,7 +14743,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DEERSTAND_DESC">
 			<English>Deer Stand: can be used as a lookout.</English>
-			<German>Deer Stand: can be used as a lookout.</German>
+			<German>Jägerstand: Wunderbare Aussicht da oben.</German>
 			<Russian>Deer Stand: can be used as a lookout.</Russian>
 			<Spanish>Deer Stand: can be used as a lookout.</Spanish>
 			<French>Deer Stand: can be used as a lookout.</French>
@@ -14749,7 +14751,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LARGEDESERTCAMONET">
 			<English>Large Desert Camo Net</English>
-			<German>Large Desert Camo Net</German>
+			<German>Grosses Wüsten-Tarnnetz</German>
 			<Russian>Large Desert Camo Net</Russian>
 			<Spanish>Large Desert Camo Net</Spanish>
 			<French>Large Desert Camo Net</French>
@@ -14757,7 +14759,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LARGEFORESTCAMONET">
 			<English>Large Forest Camo Net</English>
-			<German>Large Forest Camo Net</German>
+			<German>Grosses Wald-Tarnnetz</German>
 			<Russian>Large Forest Camo Net</Russian>
 			<Spanish>Large Forest Camo Net</Spanish>
 			<French>Large Forest Camo Net</French>
@@ -14765,7 +14767,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LARGECAMONET_DESC">
 			<English>Large Camo Netting: A very large buildable object that can be used to cover objects.</English>
-			<German>Large Camo Netting: A very large buildable object that can be used to cover objects.</German>
+			<German>Grosses Tarnnetz: Ein sehr grosses aufbaubares Objekt, um andere Objekte drunter zu verstecken.</German>
 			<Russian>Large Camo Netting: A very large buildable object that can be used to cover objects.</Russian>
 			<Spanish>Large Camo Netting: A very large buildable object that can be used to cover objects.</Spanish>
 			<French>Large Camo Netting: A very large buildable object that can be used to cover objects.</French>
@@ -14773,7 +14775,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DESERTCAMONET">
 			<English>Desert Camo Net</English>
-			<German>Desert Camo Net</German>
+			<German>Wüsten-Tarnnetz</German>
 			<Russian>Desert Camo Net</Russian>
 			<Spanish>Desert Camo Net</Spanish>
 			<French>Desert Camo Net</French>
@@ -14781,7 +14783,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FORESTCAMONET">
 			<English>Forest Camo Net</English>
-			<German>Forest Camo Net</German>
+			<German>Wald-Tarnnetz</German>
 			<Russian>Forest Camo Net</Russian>
 			<Spanish>Forest Camo Net</Spanish>
 			<French>Forest Camo Net</French>
@@ -14789,7 +14791,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CAMONET_DESC">
 			<English>Camo Netting: A buildable object that can be used to cover objects.</English>
-			<German>Camo Netting: A buildable object that can be used to cover objects.</German>
+			<German>Tarnnetz: Ein aufbaubares Objekt, um andere Objekte drunter zu verstecken.</German>
 			<Russian>Camo Netting: A buildable object that can be used to cover objects.</Russian>
 			<Spanish>Camo Netting: A buildable object that can be used to cover objects.</Spanish>
 			<French>Camo Netting: A buildable object that can be used to cover objects.</French>
@@ -14797,7 +14799,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FUELPUMP">
 			<English>Fuel Pump</English>
-			<German>Fuel Pump</German>
+			<German>Treibstoff-Pumpe</German>
 			<Russian>Fuel Pump</Russian>
 			<Spanish>Fuel Pump</Spanish>
 			<French>Fuel Pump</French>
@@ -14805,7 +14807,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTPOLE">
 			<English>Light Pole</English>
-			<German>Light Pole</German>
+			<German>Lichtmast</German>
 			<Russian>Light Pole</Russian>
 			<Spanish>Light Pole</Spanish>
 			<French>Light Pole</French>
@@ -14813,7 +14815,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTPOLE_DESC">
 			<English>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</English>
-			<German>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</German>
+			<German>Lichtmast: Ein aufbaubares Objekt, das bei Dunkelheit Licht spendet. Generator nicht inklusive.</German>
 			<Russian>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</Russian>
 			<Spanish>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</Spanish>
 			<French>Light Pole: A buildable object that can be used with a Generator to provide light in times of darkness.</French>
@@ -14821,7 +14823,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_STICKFENCE">
 			<English>Stick Fence</English>
-			<German>Stick Fence</German>
+			<German>Staketenzaun</German>
 			<Russian>Stick Fence</Russian>
 			<Spanish>Stick Fence</Spanish>
 			<French>Stick Fence</French>
@@ -14829,7 +14831,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_STICKFENCE_DESC">
 			<English>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</English>
-			<German>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</German>
+			<German>Staketenzaun: Eine aufbaubare Schranke, um Zombies fernzhalten. Nicht sonderlich stabil.</German>
 			<Russian>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</Russian>
 			<Spanish>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</Spanish>
 			<French>Stick Fence: A buildable barrier that can be used to keep zombies out of your camp. They are fairly weak and can be ran over easier.</French>
@@ -14837,7 +14839,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_NICEWOODSHED">
 			<English>Nice Wooden Shed</English>
-			<German>Nice Wooden Shed</German>
+			<German>Holzschuppen</German>
 			<Russian>Nice Wooden Shed</Russian>
 			<Spanish>Nice Wooden Shed</Spanish>
 			<French>Nice Wooden Shed</French>
@@ -14845,7 +14847,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_NICEWOODSHED_DESC">
 			<English>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</English>
-			<German>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</German>
+			<German>Holzschuppen: Ein selbstbau-Objekt mit viel Platz für Material, Waffen und Rucksäcke. Es hat sogar eine Tür.</German>
 			<Russian>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</Russian>
 			<Spanish>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</Spanish>
 			<French>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</French>
@@ -14853,7 +14855,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODSHACK">
 			<English>Wooden Shack</English>
-			<German>Wooden Shack</German>
+			<German>Holzhütte</German>
 			<Russian>Wooden Shack</Russian>
 			<Spanish>Wooden Shack</Spanish>
 			<French>Wooden Shack</French>
@@ -14869,7 +14871,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CANVASSUNSHADE">
 			<English>Canvas Sun Shade</English>
-			<German>Canvas Sun Shade</German>
+			<German>Stoff-Sonnenschutz</German>
 			<Russian>Canvas Sun Shade</Russian>
 			<Spanish>Canvas Sun Shade</Spanish>
 			<French>Canvas Sun Shade</French>
@@ -14877,7 +14879,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CANVASSUNSHADE_DESC">
 			<English>Sun Shade: A buildable object used to keep the sun off your back.</English>
-			<German>Sun Shade: A buildable object used to keep the sun off your back.</German>
+			<German>Sonnenschutz: Ein aufbaubares Objekt, das dich vor der Sonne schützt.</German>
 			<Russian>Sun Shade: A buildable object used to keep the sun off your back.</Russian>
 			<Spanish>Sun Shade: A buildable object used to keep the sun off your back.</Spanish>
 			<French>Sun Shade: A buildable object used to keep the sun off your back.</French>
@@ -14885,7 +14887,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODBENCH">
 			<English>Wooden Bench</English>
-			<German>Wooden Bench</German>
+			<German>Holzbank</German>
 			<Russian>Wooden Bench</Russian>
 			<Spanish>Wooden Bench</Spanish>
 			<French>Wooden Bench</French>
@@ -14893,7 +14895,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_RUSTYGATE">
 			<English>Rusty Gate</English>
-			<German>Rusty Gate</German>
+			<German>Rostiges Tor</German>
 			<Russian>Rusty Gate</Russian>
 			<Spanish>Rusty Gate</Spanish>
 			<French>Rusty Gate</French>
@@ -14901,7 +14903,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_RUSTYGATE_DESC">
 			<English>Rusty Gate: A buildable object that can be opened and closed.</English>
-			<German>Rusty Gate: A buildable object that can be opened and closed.</German>
+			<German>Rostiges Tor: Ein aufbaubares Objekt, dass man auf- und zumachen kann.</German>
 			<Russian>Rusty Gate: A buildable object that can be opened and closed.</Russian>
 			<Spanish>Rusty Gate: A buildable object that can be opened and closed.</Spanish>
 			<French>Rusty Gate: A buildable object that can be opened and closed.</French>
@@ -14909,7 +14911,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_OUTHOUSE">
 			<English>Outhouse</English>
-			<German>Outhouse</German>
+			<German>Toilettenhäuschen</German>
 			<Russian>Outhouse</Russian>
 			<Spanish>Outhouse</Spanish>
 			<French>Outhouse</French>
@@ -14917,7 +14919,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_OUTHOUSE_DESC">
 			<English>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</English>
-			<German>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</German>
+			<German>Toilettenhäuschen: Ein aufbaubares Objekt, in dem du dein Geschäft verrichten kannst. Eine Rolle Toilettenpapier inklusive.</German>
 			<Russian>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</Russian>
 			<Spanish>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</Spanish>
 			<French>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</French>
@@ -14925,7 +14927,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_STORAGESHED">
 			<English>Storage Shed</English>
-			<German>Storage Shed</German>
+			<German>Lagerschuppen</German>
 			<Russian>Storage Shed</Russian>
 			<Spanish>Storage Shed</Spanish>
 			<French>Storage Shed</French>
@@ -14933,7 +14935,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_STORAGESHED_DESC">
 			<English>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</English>
-			<German>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</German>
+			<German>Lagerschuppen: Ein grosses Objekt mit viel Platz für Material, Waffen und Rucksäcke. Nicht begehbar.</German>
 			<Russian>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</Russian>
 			<Spanish>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</Spanish>
 			<French>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</French>
@@ -14941,7 +14943,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SCAFFOLDING">
 			<English>Scaffolding</English>
-			<German>Scaffolding</German>
+			<German>Gerüst</German>
 			<Russian>Строительные леса</Russian>
 			<Spanish>Scaffolding</Spanish>
 			<French>Scaffolding</French>
@@ -14949,7 +14951,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX">
 			<English>Lockbox</English>
-			<German>Lockbox</German>
+			<German>Schließkassette</German>
 			<Russian>Запираемый ящик</Russian>
 			<Spanish>Lockbox</Spanish>
 			<French>Lockbox</French>
@@ -14957,7 +14959,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>
-			<German>Semi secure lockbox.</German>
+			<German>Schließkassette.</German>
 			<Russian>Безопасное хранилище.</Russian>
 			<Spanish>Semi secure lockbox.</Spanish>
 			<French>Semi secure lockbox.</French>
@@ -14965,7 +14967,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK">
 			<English>Lumber Pack</English>
-			<German>Lumber Pack</German>
+			<German>Bauholz-Stapel</German>
 			<Russian>Упаковка пиломатериалов</Russian>
 			<Spanish>Lumber Pack</Spanish>
 			<French>Lumber Pack</French>
@@ -14973,7 +14975,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK_DESC">
 			<English>Lumber in a stack.</English>
-			<German>Lumber in a stack.</German>
+			<German>Bauholz, gestapelt und zusammengebunden.</German>
 			<Russian>Упакованные пиломатериалы.</Russian>
 			<Spanish>Lumber in a stack.</Spanish>
 			<French>Lumber in a stack.</French>
@@ -14981,7 +14983,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKS">
 			<English>Cinder Blocks</English>
-			<German>Cinder Blocks</German>
+			<German>Betonschalsteine</German>
 			<Russian>Шлакоблоки</Russian>
 			<Spanish>Cinder Blocks</Spanish>
 			<French>Cinder Blocks</French>
@@ -14989,7 +14991,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKS_DESC">
 			<English>Stack of nine cinder blocks.</English>
-			<German>Stack of nine cinder blocks.</German>
+			<German>Stapel von neun Betonschalsteinen.</German>
 			<Russian>Упаковка из девяти шлакоблоков.</Russian>
 			<Spanish>Stack of nine cinder blocks.</Spanish>
 			<French>Stack of nine cinder blocks.</French>
@@ -14997,7 +14999,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BUCKETOFMORTAR">
 			<English>Bucket of Mortar</English>
-			<German>Bucket of Mortar</German>
+			<German>Eimer Mörtel</German>
 			<Russian>Ведро строй. раствора</Russian>
 			<Spanish>Bucket of Mortar</Spanish>
 			<French>Bucket of Mortar</French>
@@ -15005,7 +15007,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BUCKETOFMORTAR_DESC">
 			<English>Premixed mastic adhesive that will bond to concrete block.</English>
-			<German>Premixed mastic adhesive that will bond to concrete block.</German>
+			<German>Vorgemischter Mastixkleber, der sich gut mit Beton verbindet.</German>
 			<Russian>Строительный раствор, которой скрепит кирпичи между собой.</Russian>
 			<Spanish>Premixed mastic adhesive that will bond to concrete block.</Spanish>
 			<French>Premixed mastic adhesive that will bond to concrete block.</French>
@@ -15013,7 +15015,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOODPACK">
 			<English>Plywood Pack</English>
-			<German>Plywood Pack</German>
+			<German>Sperrholz-Pack</German>
 			<Russian>Упаковка фанеры</Russian>
 			<Spanish>Plywood Pack</Spanish>
 			<French>Plywood Pack</French>
@@ -15021,7 +15023,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOODPACK_DESC">
 			<English>Plywood in a stack.</English>
-			<German>Plywood in a stack.</German>
+			<German>Sperrholz-Stapel.</German>
 			<Russian>Упакованная фанера.</Russian>
 			<Spanish>Plywood in a stack.</Spanish>
 			<French>Plywood in a stack.</French>
@@ -15029,7 +15031,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LUMBER">
 			<English>Lumber</English>
-			<German>Lumber</German>
+			<German>Bauholz</German>
 			<Russian>Пиломатериалы</Russian>
 			<Spanish>Lumber</Spanish>
 			<French>Lumber</French>
@@ -15037,7 +15039,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LUMBER_DESC">
 			<English>Lumber: Used for building many structures and can also be used to make plywood.</English>
-			<German>Lumber: Used for building many structures and can also be used to make plywood.</German>
+			<German>Bauholz: Wird zum Bauen verwendet und kann zu Sperrholz verarbeitet werden.</German>
 			<Russian>Пиломатериалы: Используются для строительства и могут быть использованы для получения фанеры.</Russian>
 			<Spanish>Lumber: Used for building many structures and can also be used to make plywood.</Spanish>
 			<French>Lumber: Used for building many structures and can also be used to make plywood.</French>
@@ -15045,7 +15047,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOOD">
 			<English>Plywood</English>
-			<German>Plywood</German>
+			<German>Sperrholz</German>
 			<Russian>Фанера</Russian>
 			<Spanish>Plywood</Spanish>
 			<French>Plywood</French>
@@ -15053,7 +15055,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOOD_DESC">
 			<English>Plywood: Used for building many structures.</English>
-			<German>Plywood: Used for building many structures.</German>
+			<German>Sperrholz: Vielfältige Verwendung beim Bauen.</German>
 			<Russian>Фанера: Используется в строительстве.</Russian>
 			<Spanish>Plywood: Used for building many structures.</Spanish>
 			<French>Plywood: Used for building many structures.</French>
@@ -15061,7 +15063,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHEAD">
 			<English>Sledgehammer Head</English>
-			<German>Sledgehammer Head</German>
+			<German>Vorschlaghammer-Kopf</German>
 			<Russian>Боёк кувалды</Russian>
 			<Spanish>Sledgehammer Head</Spanish>
 			<French>Sledgehammer Head</French>
@@ -15069,7 +15071,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHEAD_DESC">
 			<English>Combine with a handle to make a Sledgehammer.</English>
-			<German>Combine with a handle to make a Sledgehammer.</German>
+			<German>Zusammen mit einem Griff ergibt es einen Vorschlaghammer.</German>
 			<Russian>Объедините с ручкой, чтобы получить кувалду.</Russian>
 			<Spanish>Combine with a handle to make a Sledgehammer.</Spanish>
 			<French>Combine with a handle to make a Sledgehammer.</French>
@@ -15077,7 +15079,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE">
 			<English>Sledgehammer Handle</English>
-			<German>Sledgehammer Handle</German>
+			<German>Vorschlaghammer-Griff</German>
 			<Russian>Ручка кувалды</Russian>
 			<Spanish>Sledgehammer Handle</Spanish>
 			<French>Sledgehammer Handle</French>
@@ -15085,7 +15087,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE_DESC">
 			<English>Combine with a head to make a Sledgehammer.</English>
-			<German>Combine with a head to make a Sledgehammer.</German>
+			<German>Zusammen mit einem Vorschlaghammer-Kopf ergibt es einen Vorschlaghammer.</German>
 			<Russian>Объедините с бойком, чтобы получить кувалду.</Russian>
 			<Spanish>Combine with a head to make a Sledgehammer.</Spanish>
 			<French>Combine with a head to make a Sledgehammer.</French>
@@ -15093,7 +15095,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ">
 			<English>Water Bottle (1oz)</English>
-			<German>Water Bottle (1oz)</German>
+			<German>Wasserflasche (1oz)</German>
 			<Russian>Бутылка воды (1 унция)</Russian>
 			<Spanish>Water Bottle (1oz)</Spanish>
 			<French>Water Bottle (1oz)</French>
@@ -15101,7 +15103,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ_DESC">
 			<English>Water Bottle with 1oz of water.</English>
-			<German>Water Bottle with 1oz of water.</German>
+			<German>Wasserflasche mit 1oz Wasser.</German>
 			<Russian>Бутылка с 1 унцией воды.</Russian>
 			<Spanish>Water Bottle with 1oz of water.</Spanish>
 			<French>Water Bottle with 1oz of water.</French>
@@ -15109,7 +15111,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ">
 			<English>Water Bottle (2oz)</English>
-			<German>Water Bottle (2oz)</German>
+			<German>Wasserflasche (2oz)</German>
 			<Russian>Бутылка воды (2 унции)</Russian>
 			<Spanish>Water Bottle (2oz)</Spanish>
 			<French>Water Bottle (2oz)</French>
@@ -15117,7 +15119,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ_DESC">
 			<English>Water Bottle with 2oz of water.</English>
-			<German>Water Bottle with 2oz of water.</German>
+			<German>Wasserflasche mit 2oz Wasser.</German>
 			<Russian>Бутылка с 2 унциями воды.</Russian>
 			<Spanish>Water Bottle with 2oz of water.</Spanish>
 			<French>Water Bottle with 2oz of water.</French>
@@ -15125,7 +15127,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ">
 			<English>Water Bottle (3oz)</English>
-			<German>Water Bottle (3oz)</German>
+			<German>Wasserflasche (3oz)</German>
 			<Russian>Бутылка воды (3 унции)</Russian>
 			<Spanish>Water Bottle (3oz)</Spanish>
 			<French>Water Bottle (3oz)</French>
@@ -15133,7 +15135,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ_DESC">
 			<English>Water Bottle with 3oz of water.</English>
-			<German>Water Bottle with 3oz of water.</German>
+			<German>Wasserflasche mit 3oz Wasser.</German>
 			<Russian>Бутылка с 3 унциями воды.</Russian>
 			<Spanish>Water Bottle with 3oz of water.</Spanish>
 			<French>Water Bottle with 3oz of water.</French>
@@ -15141,7 +15143,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ">
 			<English>Water Bottle (4oz)</English>
-			<German>Water Bottle (4oz)</German>
+			<German>Wasserflasche (4oz)</German>
 			<Russian>Бутылка воды (4 унции)</Russian>
 			<Spanish>Water Bottle (4oz)</Spanish>
 			<French>Water Bottle (4oz)</French>
@@ -15149,7 +15151,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ_DESC">
 			<English>Water Bottle with 4oz of water.</English>
-			<German>Water Bottle with 4oz of water.</German>
+			<German>Wasserflasche mit 4oz Wasser.</German>
 			<Russian>Бутылка с 4 унциями воды.</Russian>
 			<Spanish>Water Bottle with 4oz of water.</Spanish>
 			<French>Water Bottle with 4oz of water.</French>
@@ -15157,7 +15159,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ">
 			<English>Water Bottle (5oz)</English>
-			<German>Water Bottle (5oz)</German>
+			<German>Wasserflasche (5oz)</German>
 			<Russian>Бутылка воды (5 унций)</Russian>
 			<Spanish>Water Bottle (5oz)</Spanish>
 			<French>Water Bottle (5oz)</French>
@@ -15165,7 +15167,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ_DESC">
 			<English>Water Bottle with 5oz of water.</English>
-			<German>Water Bottle with 5oz of water.</German>
+			<German>Wasserflasche mit 5oz Wasser.</German>
 			<Russian>Бутылка с 5 унциями воды.</Russian>
 			<Spanish>Water Bottle with 5oz of water.</Spanish>
 			<French>Water Bottle with 5oz of water.</French>
@@ -15173,7 +15175,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ">
 			<English>Water Bottle (6oz)</English>
-			<German>Water Bottle (6oz)</German>
+			<German>Wasserflasche (6oz)</German>
 			<Russian>Бутылка воды (6 унций)</Russian>
 			<Spanish>Water Bottle (6oz)</Spanish>
 			<French>Water Bottle (6oz)</French>
@@ -15181,7 +15183,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ_DESC">
 			<English>Water Bottle with 6oz of water.</English>
-			<German>Water Bottle with 6oz of water.</German>
+			<German>Wasserflasche mit 6oz Wasser.</German>
 			<Russian>Бутылка с 6 унциями воды.</Russian>
 			<Spanish>Water Bottle with 6oz of water.</Spanish>
 			<French>Water Bottle with 6oz of water.</French>
@@ -15189,7 +15191,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ">
 			<English>Water Bottle (7oz)</English>
-			<German>Water Bottle (7oz)</German>
+			<German>Wasserflasche (7oz)</German>
 			<Russian>Бутылка воды (7 унций)</Russian>
 			<Spanish>Water Bottle (7oz)</Spanish>
 			<French>Water Bottle (7oz)</French>
@@ -15197,7 +15199,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ_DESC">
 			<English>Water Bottle with 7oz of water.</English>
-			<German>Water Bottle with 7oz of water.</German>
+			<German>Wasserflasche mit 7oz Wasser.</German>
 			<Russian>Бутылка с 7 унциями воды.</Russian>
 			<Spanish>Water Bottle with 7oz of water.</Spanish>
 			<French>Water Bottle with 7oz of water.</French>
@@ -15205,7 +15207,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ">
 			<English>Water Bottle (8oz)</English>
-			<German>Water Bottle (8oz)</German>
+			<German>Wasserflasche (8oz)</German>
 			<Russian>Бутылка воды (8 унций)</Russian>
 			<Spanish>Water Bottle (8oz)</Spanish>
 			<French>Water Bottle (8oz)</French>
@@ -15213,7 +15215,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ_DESC">
 			<English>Water Bottle with 8oz of water.</English>
-			<German>Water Bottle with 8oz of water.</German>
+			<German>Wasserflasche mit 8oz Wasser.</German>
 			<Russian>Бутылка с 8 унциями воды.</Russian>
 			<Spanish>Water Bottle with 8oz of water.</Spanish>
 			<French>Water Bottle with 8oz of water.</French>
@@ -15221,7 +15223,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ">
 			<English>Water Bottle (9oz)</English>
-			<German>Water Bottle (9oz)</German>
+			<German>Wasserflasche (9oz)</German>
 			<Russian>Бутылка воды (9 унций)</Russian>
 			<Spanish>Water Bottle (9oz)</Spanish>
 			<French>Water Bottle (9oz)</French>
@@ -15229,7 +15231,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ_DESC">
 			<English>Water Bottle with 9oz of water.</English>
-			<German>Water Bottle with 9oz of water.</German>
+			<German>Wasserflasche mit 9oz Wasser.</German>
 			<Russian>Бутылка с 9 унциями воды.</Russian>
 			<Spanish>Water Bottle with 9oz of water.</Spanish>
 			<French>Water Bottle with 9oz of water.</French>
@@ -15237,7 +15239,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE">
 			<English>Briefcase</English>
-			<German>Briefcase</German>
+			<German>Koffer</German>
 			<Russian>Чемоданчик</Russian>
 			<Spanish>Briefcase</Spanish>
 			<French>Briefcase</French>
@@ -15245,7 +15247,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_EMPTY">
 			<English>Empty Briefcase</English>
-			<German>Empty Briefcase</German>
+			<German>Leerer Koffer</German>
 			<Russian>Пустой чемоданчик</Russian>
 			<Spanish>Empty Briefcase</Spanish>
 			<French>Empty Briefcase</French>
@@ -15253,7 +15255,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZGOLD">
 			<English>Briefcase (Contains: 1 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 1 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 1 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 1 золотой слиток (10 унций))</Russian>
 			<Spanish>Briefcase (Contains: 1 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 1 x 10oz Gold Bar)</French>
@@ -15261,7 +15263,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_2X10OZGOLD">
 			<English>Briefcase (Contains: 2 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 2 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 2 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 2 золотых слитка по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 2 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 2 x 10oz Gold Bar)</French>
@@ -15269,7 +15271,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_3X10OZGOLD">
 			<English>Briefcase (Contains: 3 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 3 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 3 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 3 золотых слитка по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 3 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 3 x 10oz Gold Bar)</French>
@@ -15277,7 +15279,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_4X10OZGOLD">
 			<English>Briefcase (Contains: 4 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 4 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 4 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 4 золотых слитка по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 4 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 4 x 10oz Gold Bar)</French>
@@ -15285,7 +15287,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_5X10OZGOLD">
 			<English>Briefcase (Contains: 5 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 5 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 5 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 5 золотых слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 5 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 5 x 10oz Gold Bar)</French>
@@ -15293,7 +15295,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_6X10OZGOLD">
 			<English>Briefcase (Contains: 6 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 6 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 6 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 6 золотых слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 6 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 6 x 10oz Gold Bar)</French>
@@ -15301,7 +15303,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_7X10OZGOLD">
 			<English>Briefcase (Contains: 7 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 7 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 7 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 7 золотых слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 7 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 7 x 10oz Gold Bar)</French>
@@ -15309,7 +15311,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_8X10OZGOLD">
 			<English>Briefcase (Contains: 8 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 8 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 8 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 8 золотых слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 8 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 8 x 10oz Gold Bar)</French>
@@ -15317,7 +15319,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_9X10OZGOLD">
 			<English>Briefcase (Contains: 9 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 9 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 9 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 9 золотых слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 9 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 9 x 10oz Gold Bar)</French>
@@ -15325,7 +15327,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_10X10OZGOLD">
 			<English>Briefcase (Contains: 10 x 10oz Gold Bar)</English>
-			<German>Briefcase (Contains: 10 x 10oz Gold Bar)</German>
+			<German>Koffer (Inhalt: 10 x 10oz Goldbarren)</German>
 			<Russian>Чемоданчик (Содержит: 10 золотых слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 10 x 10oz Gold Bar)</Spanish>
 			<French>Briefcase (Contains: 10 x 10oz Gold Bar)</French>
@@ -15333,7 +15335,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_1X10OZSILVER">
 			<English>Briefcase (Contains: 1 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 1 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 1 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 1 серебряный слиток (10 унций))</Russian>
 			<Spanish>Briefcase (Contains: 1 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 1 x 10oz Silver Bar)</French>
@@ -15341,7 +15343,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_2X10OZSILVER">
 			<English>Briefcase (Contains: 2 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 2 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 2 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 2 серебряных слитка по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 2 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 2 x 10oz Silver Bar)</French>
@@ -15349,7 +15351,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_3X10OZSILVER">
 			<English>Briefcase (Contains: 3 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 3 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 3 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 3 серебряных слитка по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 3 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 3 x 10oz Silver Bar)</French>
@@ -15357,7 +15359,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_4X10OZSILVER">
 			<English>Briefcase (Contains: 4 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 4 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 4 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 4 серебряных слитка по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 4 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 4 x 10oz Silver Bar)</French>
@@ -15365,7 +15367,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_5X10OZSILVER">
 			<English>Briefcase (Contains: 5 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 5 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 5 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 5 серебряных слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 5 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 5 x 10oz Silver Bar)</French>
@@ -15373,7 +15375,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_6X10OZSILVER">
 			<English>Briefcase (Contains: 6 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 6 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 6 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 6 серебряных слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 6 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 6 x 10oz Silver Bar)</French>
@@ -15381,7 +15383,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_7X10OZSILVER">
 			<English>Briefcase (Contains: 7 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 7 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 7 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 7 серебряных слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 7 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 7 x 10oz Silver Bar)</French>
@@ -15389,7 +15391,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_8X10OZSILVER">
 			<English>Briefcase (Contains: 8 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 8 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 8 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 8 серебряных слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 8 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 8 x 10oz Silver Bar)</French>
@@ -15397,7 +15399,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_9X10OZSILVER">
 			<English>Briefcase (Contains: 9 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 9 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 9 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 9 серебряных слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 9 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 9 x 10oz Silver Bar)</French>
@@ -15405,7 +15407,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE_10X10OZSILVER">
 			<English>Briefcase (Contains: 10 x 10oz Silver Bar)</English>
-			<German>Briefcase (Contains: 10 x 10oz Silver Bar)</German>
+			<German>Koffer (Inhalt: 10 x 10oz Silberbarren)</German>
 			<Russian>Чемоданчик (Содержит: 10 серебряных слитков по 10 унций)</Russian>
 			<Spanish>Briefcase (Contains: 10 x 10oz Silver Bar)</Spanish>
 			<French>Briefcase (Contains: 10 x 10oz Silver Bar)</French>
@@ -15453,7 +15455,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_GEAR">
 			<English>Selling from gear.</English>
-			<German>Selling from gear.</German>
+			<German>Verkauf aus meiner Ausrüstung.</German>
 			<Russian>Selling from gear.</Russian>
 			<Spanish>Selling from gear.</Spanish>
 			<French>Selling from gear.</French>
@@ -15461,7 +15463,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_VEHICLE">
 			<English>Selling from vehicle.</English>
-			<German>Selling from vehicle.</German>
+			<German>Verkauf aus dem Fahrzeug.</German>
 			<Russian>Selling from vehicle.</Russian>
 			<Spanish>Selling from vehicle.</Spanish>
 			<French>Selling from vehicle.</French>
@@ -15469,7 +15471,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_BACKPACK">
 			<English>Selling from backpack.</English>
-			<German>Selling from backpack.</German>
+			<German>Verkauf aus dem Rucksack.</German>
 			<Russian>Selling from backpack.</Russian>
 			<Spanish>Selling from backpack.</Spanish>
 			<French>Selling from backpack.</French>
@@ -15477,7 +15479,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_ALL">
 			<English>These are all the items I'm selling.</English>
-			<German>These are all the items I'm selling.</German>
+			<German>Dies sind alle Produkte, die ich verkaufe.</German>
 			<Russian>These are all the items I'm selling.</Russian>
 			<Spanish>These are all the items I'm selling.</Spanish>
 			<French>These are all the items I'm selling.</French>
@@ -15485,7 +15487,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_VEHICLE">
 			<English>Buying in vehicle.</English>
-			<German>Buying in vehicle.</German>
+			<German>Kauf ins Fahrzeug.</German>
 			<Russian>Buying in vehicle.</Russian>
 			<Spanish>Buying in vehicle.</Spanish>
 			<French>Buying in vehicle.</French>
@@ -15493,7 +15495,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_BACKPACK">
 			<English>Buying in backpack.</English>
-			<German>Buying in backpack.</German>
+			<German>Kauf in den Rucksack.</German>
 			<Russian>Buying in backpack.</Russian>
 			<Spanish>Buying in backpack.</Spanish>
 			<French>Buying in backpack.</French>
@@ -15501,7 +15503,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_GEAR">
 			<English>Buying in gear.</English>
-			<German>Buying in gear.</German>
+			<German>Kauf in meine Ausrüstung.</German>
 			<Russian>Buying in gear.</Russian>
 			<Spanish>Buying in gear.</Spanish>
 			<French>Buying in gear.</French>
@@ -15525,7 +15527,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_STUPID">
 			<English>I'm not stupid.</English>
-			<German>I'm not stupid.</German>
+			<German>Ich bin doch nicht blöd.</German>
 			<Russian>I'm not stupid.</Russian>
 			<Spanish>I'm not stupid.</Spanish>
 			<French>I'm not stupid.</French>
@@ -15533,7 +15535,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NO_BACKPACK">
 			<English>You are not wearing a backpack.</English>
-			<German>You are not wearing a backpack.</German>
+			<German>Du hast keinen Rucksack.</German>
 			<Russian>You are not wearing a backpack.</Russian>
 			<Spanish>You are not wearing a backpack.</Spanish>
 			<French>You are not wearing a backpack.</French>
@@ -15541,7 +15543,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
-			<German>I would offer %1 %2.</German>
+			<German>Ich biete %1 %2.</German>
 			<Russian>I would offer %1 %2.</Russian>
 			<Spanish>I would offer %1 %2.</Spanish>
 			<French>I would offer %1 %2.</French>
@@ -15549,7 +15551,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ACCEPT">
 			<English>I accept %1 items from %2.</English>
-			<German>I accept %1 items from %2.</German>
+			<German>Ich nehme %1 aus %2.</German>
 			<Russian>I accept %1 items from %2.</Russian>
 			<Spanish>I accept %1 items from %2.</Spanish>
 			<French>I accept %1 items from %2.</French>
