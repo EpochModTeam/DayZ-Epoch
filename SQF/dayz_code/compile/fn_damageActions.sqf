@@ -211,7 +211,7 @@ if (isPlayer cursorTarget) then {
 			};
 			if (_unit isKindOf "Man") then {
 				// should only fire if cursor target is man and not vehicle
-				_charID = _unit getVariable ["CharacterID", 0];
+				_charID = _unit getVariable ["CharacterID","0"];
 				_friendlies = player getVariable ["friendlies", []];
 				if !(_charID in _friendlies) then {
 					r_action = true;

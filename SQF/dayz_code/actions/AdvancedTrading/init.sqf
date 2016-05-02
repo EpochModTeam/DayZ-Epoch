@@ -106,5 +106,6 @@ createDialog "AdvancedTrading";
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVEALLSELLITEMBUTTON) ctrlSetText " << ";
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVEBUYITEMBUTTON) ctrlSetText " < ";
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVEALLBUYITEMBUTTON) ctrlSetText " << ";
+(findDisplay Z_AT_DIALOGWINDOW displayCtrl 7488) ctrlSetText "   " + localize "STR_EPOCH_TRADE_DETAILS";
 
 call Z_ChangeBuySell;

@@ -236,12 +236,12 @@ if(_selection == 0) then{ //backpack
 	if( _allowedWeapons >= _toBuyWeaps)then{
 		_check1 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_BAG_WEPS", _allowedMags];
+		systemChat format[localize "STR_EPOCH_TRADE_BAG_WEPS", _allowedWeapons];
 	};
 	if( _allowedMags >= _toBuyMags)then{
 		_check2 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedWeapons];
+		systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedMags];
 	};
 	if( _allowedBackpacks >= _toBuyBags)then{
 		_check3 = true;

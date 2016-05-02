@@ -459,7 +459,7 @@ class AdvancedTrading
 		};
 		class RscText_AT_InfoLabel: ZSC_RscText
 		{
-		    idc = -1;
+		    idc = 7488;
 		    text = $STR_EPOCH_TRADE_DETAILS;
 		    x = 0.60 * safezoneW + safezoneX;
 		    y = 0.38 * safezoneH + safezoneY;

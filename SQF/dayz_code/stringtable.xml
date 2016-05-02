@@ -15651,12 +15651,12 @@
 			<Russian>Нет ничего на продажу</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
-			<English>   Details</English>
-			<German>   Einzelheiten</German>
-			<Russian>   Детали</Russian>
-			<Spanish>   Detalles</Spanish>
-			<French>   Détails</French>
-			<Czech>   Podrobnosti</Czech>
+			<English>Details</English>
+			<German>Einzelheiten</German>
+			<Russian>Детали</Russian>
+			<Spanish>Detalles</Spanish>
+			<French>Détails</French>
+			<Czech>Podrobnosti</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_STUPID">
 			<English>I'm not stupid.</English>
@@ -15818,16 +15818,16 @@
 			<Czech>Třída</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_MAGS">
-			<English>Mags: </English>
-			<Russian>Магазинов: </Russian>
+			<English>Mags</English>
+			<Russian>Магазинов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEPS">
-			<English>Weps: </English>
-			<Russian>Оружия: </Russian>
+			<English>Weps</English>
+			<Russian>Оружия</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BAGS">
-			<English>Bags: </English>
-			<Russian>Рюкзаков: </Russian>
+			<English>Bags</English>
+			<Russian>Рюкзаков</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_YOUR_GEAR">
 			<English>your gear</English>
