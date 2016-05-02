@@ -360,15 +360,14 @@ while {1 == 1} do {
 
 	_startcombattimer = player getVariable["startcombattimer", 0];
 	if (_startcombattimer == 1 || _PlayerNearby) then {
-		player setVariable["combattimeout", diag_tickTime + 30, true]; // Global used to punish combat log in server_onPlayerDisconnect
+		player setVariable["combattimeout", diag_tickTime + 30, false];
 		player setVariable["startcombattimer", 0, false];
 	} else {
 		if (_ZedsNearby && !_isPZombie) then {
-			player setVariable["combattimeout", diag_tickTime + 10, true]; // Global used to punish combat log in server_onPlayerDisconnect
+			player setVariable["combattimeout", diag_tickTime + 10, false];
 			player setVariable["startcombattimer", 0, false];
 		};
 	};
-	
 	//setGroupIconsVisible [false,false];
 	//clearGroupIcons group player;
 

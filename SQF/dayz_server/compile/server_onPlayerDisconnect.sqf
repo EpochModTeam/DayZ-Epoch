@@ -61,13 +61,12 @@ if (_characterID != "?") exitwith {
 	};
 	
 	//Punish combat log
-	_timeout = _playerObj getVariable["combattimeout",0];
-	if (_timeout >= diag_tickTime) then {
+	if ((_lastDamage > 5 && {_lastDamage < 30}) && {alive _playerObj && (_playerObj distance (getMarkerpos "respawn_west") >= 2000)}) then {
 		_playerObj setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
 		_playerObj setVariable ["unconsciousTime",150,true]; // Set knock out timer to 150 seconds
 		//_playerObj setVariable ["USEC_injured",true]; // Set status to bleeding
 		//_playerObj setVariable ["USEC_BloodQty",3000]; // Set blood to 3000
-		diag_log format["PLAYER COMBAT LOGGED: %1(%4) (with %2s combat time remaining) at location %3",_playerName,(_timeout - diag_tickTime),_playerPos,_playerUID];
+		diag_log format["PLAYER COMBAT LOGGED: %1(%4) (with %2s combat time remaining) at location %3",_playerName,_lastDamage,_playerPos,_playerUID];
 		_message = format["PLAYER COMBAT LOGGED: %1",_playerName];
 		[nil, nil, rTitleText, _message, "PLAIN"] call RE; // Message whole server
 	};
