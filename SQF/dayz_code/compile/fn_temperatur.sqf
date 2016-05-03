@@ -24,18 +24,18 @@ _looptime = _this;
 //All Values can be seen as x of 100: 100 / x = minutes from min temperetaure to max temperature (without other effects)
 
 //Positive effects
-	_vehicle_factor		=	2;
-	_fire_factor		=	15;	
-	_building_factor 	=  	1.5;
-	_moving_factor 		=  	2.8;
-	_sun_factor			= 	1;
+	_vehicle_factor		=	DZE_TempVars select 0;
+	_fire_factor		=	DZE_TempVars select 1;	
+	_building_factor 	=  	DZE_TempVars select 2;
+	_moving_factor 		=  	DZE_TempVars select 3;
+	_sun_factor			= 	DZE_TempVars select 4;
 	
 //Negative effects
-	_water_factor		= 	8;
-	_stand_factor 		= 	2.1;
-	_rain_factor		=	0.5;
-	_wind_factor		=	1.5;
-	_night_factor		= 	1;
+	_water_factor		= 	DZE_TempVars select 5;
+	_stand_factor 		= 	DZE_TempVars select 6;
+	_rain_factor		=	DZE_TempVars select 7;
+	_wind_factor		=	DZE_TempVars select 8;
+	_night_factor		= 	DZE_TempVars select 9;
 
 _difference = 0; 
 //_hasfireffect = false;

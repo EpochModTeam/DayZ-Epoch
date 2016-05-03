@@ -14,13 +14,14 @@ dayz_tameDogs = false; // Allow taming dogs with raw meat
 dayz_townGenerator = false; // Spawn vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus.
 dayz_townGeneratorBlackList = [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]; // Town generator will not spawn junk within 150m of these positions.
 DayZ_UseSteamID = true; // Use getPlayerUID instead of getPlayerUIDOld
-DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming - doesn't work with amphibious pook which you should not use due to other issues
 
 DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
 DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
 DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
 DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
 
+DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming - doesn't work with amphibious pook which you should not use due to other issues
+DZE_TempVars = [7, 15, 4, 4, 2, 3, 2, 0.25, 0.75, 0.5]; //[vehicle, fire, building, moving, sun, water, standing, rain, wind, night] water, standing, rain, wind and night factors have a negative impact on temperature, the greater they are the quicker the player gets cold
 DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 (default) allow player to hold two primary weapons, one on back and one in their hands
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
