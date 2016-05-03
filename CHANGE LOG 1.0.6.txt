@@ -34,7 +34,8 @@
 [NEW] With config based traders categories can be reused by setting the duplicate=#; value. # is the category number to copy. @ebaydayz
 [NEW] Gems are now treated as variable value currency (Advanced Trading only). configure gem values using DZE_GemWorthArray =[]; see ConfigVariables.sqf for more info @icomrade
 [NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; see ConfigVariables.sqf for more info @icomrade
-[NEW] Plot Management by Zupa is now included and enabled by default with variable DZE_plotManagement, see ConfigVariables.sqf @DevZupa @Bruce-LXXVI
+[NEW] Plot Management by Zupa is now included and enabled by default with variable DZE_plotManagement, see ConfigVariables.sqf @DevZupa @Bruce-LXXVI @icomrade
+[NEW] A Plot For Life by RimBlock is now included and enabled by default with variable DZE_plotforLife, see configVariables.sqf @RimBlock @icomrade
 
 [CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
@@ -88,8 +89,7 @@
 [FIXED] Reworked death messages. Fixed messages not always showing, undefined errors and wrong distance bug. Added bled out, killed by zombie, etc. MPHit event handler (fnc_plyrHit) is no longer needed. @ebaydayz
 [FIXED] Player no longer hears radiation sound when changing clothes. @ebaydayz
 [FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
-[FIXED] Players are now ejected and killed when their vehicle is destroyed. @icomrade
-[FIXED] CH53_DZE now explodes and kills passengers upon destruction. @icomrade
+[FIXED] Players are now ejected and killed when their vehicle is destroyed (Fix applies to all types of vehicles). @icomrade
 [NOTE]	Servers that use trader safezones must configure the variable DZE_SafeZonePosArray with their safezone posisitons and radii, otherwise passangers of vehicles in safezones will be killed upon destruction of their vehicle
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
@@ -97,7 +97,7 @@
 [UPDATED] Updated all config.cfg in Config-Examples, Added Default Steam Ports and Updated Layout. @Namindu
 [UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 
-[INFO] If you use any of the community mods now included in this release (Advanced Trading, Plot Management, Snap Build Pro) you must uninstall them from your mission, the mods have been improved and many bugs have been fixes, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
+[INFO] If you use any of the community mods now included in this release (Advanced Trading, Plot Management, Snap Build Pro, A Plot For Life) you MUST uninstall them from your mission, the mods have been improved and many bugs have been fixes, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
 [INFO] Server owners and players should use the stable branch of ArmA 2 OA
