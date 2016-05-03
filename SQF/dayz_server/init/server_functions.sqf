@@ -175,6 +175,10 @@ dayz_objectUID2 = {
 	_dir = _this select 0;
 	_key = "";
 	_position = _this select 1;
+	if ((typeName _dir) == "STRING") then {
+		_dir = call (compile _dir);
+		_position = call (compile _position);
+	};
 	{
 		_x = _x * 10;
 		if (_x < 0) then { _x = _x * -10 };
