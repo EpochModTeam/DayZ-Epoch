@@ -382,9 +382,9 @@ if (_canBuild select 0) then {
 
 				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
-				if (_canBuild select 1) then {
-					[] spawn player_plotPreview;
-				};
+				//if (_canBuild select 1) then {
+					//[] spawn player_plotPreview;
+				//};
 
 				_tmpbuilt setVariable ["OEMPos",_location,true];
 

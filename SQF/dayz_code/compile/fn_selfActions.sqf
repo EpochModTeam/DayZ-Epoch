@@ -655,19 +655,19 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
 			};
 		};
-		if (DZE_plotforLife) then {
-			_plotDistance = (DZE_PlotPole select 0);
-			_PlotsmarkersNear = count (_cursorTarget nearEntities ["Land_coneLight", _PlotDistance]);
-			if (s_player_plot_boundary_on < 0) then {
-				If (_PlotsmarkersNear == 0 ) then{
-					s_player_plot_boundary_on = player addAction ["Show plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_showPlotRadius.sqf", "", 1, false];
-				};
-			 };	
-			 if (s_player_plot_boundary_off < 0) then {
-				If (_PlotsmarkersNear > 0 ) then{
-					s_player_plot_boundary_off = player addAction ["Remove plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_removePlotRadius.sqf", "", 1, false];
-				};
+		_plotDistance = (DZE_PlotPole select 0);
+		_PlotsmarkersNear = count (_cursorTarget nearEntities ["Land_coneLight", _PlotDistance]);
+		if (s_player_plot_boundary_on < 0) then {
+			If (_PlotsmarkersNear == 0 ) then{
+				s_player_plot_boundary_on = player addAction ["Show plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_showPlotRadius.sqf", "", 1, false];
 			};
+		 };	
+		 if (s_player_plot_boundary_off < 0) then {
+			If (_PlotsmarkersNear > 0 ) then{
+				s_player_plot_boundary_off = player addAction ["Remove plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_removePlotRadius.sqf", "", 1, false];
+			};
+		};
+		if (DZE_plotforLife) then {
 			if (s_player_plot_take_ownership < 0) then {
 				if (DZE_PlotOwnership) then {
 					_isowner = [player, _cursorTarget, DZE_plotManagement] call FNC_check_owner; //compile also calls dze_getPlotFriends and lists s_player_plotManagement friendlies
@@ -1054,12 +1054,14 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 } else {
 	//Engineering
-
-	// plotManagement //
+	player removeAction s_player_plot_boundary_on;
+	s_player_plot_boundary_on = -1;
+	player removeAction s_player_plot_boundary_off;
+	s_player_plot_boundary_off = -1;
+	player removeAction s_player_plot_take_ownership;
+	s_player_plot_take_ownership = -1;
 	player removeAction s_player_plotManagement;
 	s_player_plotManagement = -1;
-	// plotManagement //
-
 	{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 	player removeAction s_player_repair_crtl;
 	s_player_repair_crtl = -1;

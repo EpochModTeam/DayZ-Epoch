@@ -441,9 +441,9 @@ if (_canBuild select 0) then {
 
 				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
-				if (_canBuild select 1) then { //if item was a plotpole, build a visual radius around it
-					[] spawn player_plotPreview;
-				};
+				//if (_canBuild select 1) then { //if item was a plotpole, build a visual radius around it
+					//[] spawn player_plotPreview; //handled in fn_SelfActions now
+				//};
 
 				_tmpbuilt setVariable ["OEMPos",_location,true]; //store original location as a variable
 
