@@ -7,8 +7,8 @@ _thePlot = _plots select 0;
 _friends = _thePlot getVariable ["plotfriends",[]];
 _inList = false;
 { if ((_x  select 0) == (_toAdd select 0)) exitWith { _inList = true; }; } count _friends;
-if (_inList) exitWith { cutText ["Already on the list", "PLAIN DOWN"]; };
-if ((count _friends) == DZE_MaxPlotFriends) exitWith { cutText [format["Only %1 friends allowed", DZE_MaxPlotFriends], "PLAIN DOWN"]; };
+if (_inList) exitWith {localize "STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST" call dayz_rollingMessages};
+if ((count _friends) == DZE_MaxPlotFriends) exitWith { format[localize "STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT", DZE_MaxPlotFriends] call dayz_rollingMessages;};
 _friends set [(count _friends), [_toAdd]];;
 _thePlot setVariable ["plotfriends", _friends, true];
 

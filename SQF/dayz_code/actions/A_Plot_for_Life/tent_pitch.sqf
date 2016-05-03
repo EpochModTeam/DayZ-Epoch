@@ -17,7 +17,7 @@ _playerUID = [player] call FNC_GetPlayerUID;
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
-if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"pitch"] , "PLAIN DOWN"]};
+if (!_hastentitem) exitWith format[localize "str_player_31",_text,"pitch"] call dayz_rollingMessages;
 
 //blocked
 if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
@@ -67,8 +67,8 @@ if (!_isOk) then {
 	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir,_location, _playerUID],_classname];
 	publicVariableServer "PVDZE_obj_Publish";
 	
-	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
+	localize "str_success_tent_pitch" call dayz_rollingMessages;
 } else {
-	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
+	localize "str_fail_tent_pitch" call dayz_rollingMessages;
 };
 
