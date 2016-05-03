@@ -119,7 +119,7 @@ switch _option do {
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
 			_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", (_requirements select 0) select 1, (_requirements select 0) select 0];
 			_ctrl ctrlSetText   _result;			
-			format[localize "STR_EPOCH_ACTIONS_6", _missingQty, _textMissing], call dayz_rollingMessages;
+			format[localize "STR_EPOCH_ACTIONS_6", _missingQty, _textMissing] call dayz_rollingMessages;
 		};
 	};
 	case "preview": {

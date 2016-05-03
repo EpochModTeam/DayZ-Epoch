@@ -15814,7 +15814,7 @@
 			<English>SUCCESS : Objects maintained: %1</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS">
-			<English>SUCCESS : Price maintained: %1</English>
+			<English>SUCCESS : Price maintained: %1 %2 !</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED">
 			<English>FAILED : Objects maintained: 0</English>
