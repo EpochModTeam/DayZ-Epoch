@@ -438,7 +438,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		};
 
 		if (_isVehicle) then {
-			if ((_ownerID != "0") && {!_isMan} && {!_isBicycle}) then {
+			if ((_characterID != "0") && {!_isMan} && {!_isBicycle}) then {
 				_player_lockUnlock_crtl = true;
 			};
 		};
