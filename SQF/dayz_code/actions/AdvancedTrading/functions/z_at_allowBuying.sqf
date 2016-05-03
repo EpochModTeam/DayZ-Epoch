@@ -252,7 +252,7 @@ if(_selection == 0) then{ //backpack
 	if( _totalSpace <= _allowedMags)then{
 		_check4 = true;
 	}else{
-		systemChat format[localize "STR_EPOCH_TRADE_TOTAL_SPACE_SUCCEEDED", _allowedMags, _totalNewSpace];
+		systemChat format["Total space succeeded: Mag=1, Tool=1, Side=5, Primary=10 slots and your bag capacity is %1 where you tried %2 slots.", _allowedMags, _totalNewSpace];
 	};
 
 	if(_check0 && _check1 && _check2 && _check3 && _check4)then{

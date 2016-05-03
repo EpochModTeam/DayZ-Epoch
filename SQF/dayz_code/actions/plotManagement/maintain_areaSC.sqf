@@ -1,7 +1,7 @@
 private ["_newWealth","_missing","_missingQty","_proceed","_itemIn","_countIn","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_option"];
 disableSerialization;
 
-if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
+if (DZE_ActionInProgress) exitWith { cutText [(localize "STR_EPOCH_ACTIONS_2") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
 
 player removeAction s_player_maintain_area;
@@ -27,16 +27,16 @@ _count = count _objects;
 
 if (_count == 0) exitWith {
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-			_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
+			_result =  format["Objects to maintain: %1" , _count];
 			_ctrl ctrlSetText   _result;
 		
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-			_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", 0, CurrencyName];
+			_result =  format["Price to maintain: %1 %2" , 0, CurrencyName];
 			
 			_ctrl ctrlSetText   _result;	
-			DZE_ActionInProgress = false;
-			s_player_maintain_area = -1;
-			s_player_maintain_area_preview = -1;
+	DZE_ActionInProgress = false;
+	s_player_maintain_area = -1;
+	s_player_maintain_area_preview = -1;
 };
 
 _theCost = _count * 1;
@@ -71,26 +71,26 @@ switch _option do {
 			publicVariableServer "PVDZE_maintainArea";
 			
 			
-			format[localize "STR_EPOCH_ACTIONS_4", _count] call dayz_rollingMessages;			
+			cutText [format[(localize "STR_EPOCH_ACTIONS_4"), _count], "PLAIN DOWN", 5];			
 			
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-			_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS", _count];
+			_result =  format["SUCCESS : Objects maintained: %1" , _count];
 			_ctrl ctrlSetText   _result;
 		
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-			_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS", _theCost, CurrencyName];
+			_result =  format["SUCCESS : Price maintained: %1 %2" , _theCost, CurrencyName];
 			_ctrl ctrlSetText   _result;	
 				
 		} else {
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-			_result =  format["FAILED: Objects to maintain: %1" , _count]; //TODO: recheck this
+			_result =  format["FAILED: Objects to maintain: %1" , _count];
 			_ctrl ctrlSetText   _result;
 		
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-			_result =  format["FAILED: Price to maintain: %1 %2" , _theCost, CurrencyName]; //TODO: recheck this
+			_result =  format["FAILED: Price to maintain: %1 %2" , _theCost, CurrencyName];
 			_ctrl ctrlSetText   _result;	
 			
-			format[localize "STR_EPOCH_ACTIONS_6", _missingQty, CurrencyName], call dayz_rollingMessages;
+			cutText [format[(localize "STR_EPOCH_ACTIONS_6"), _missingQty, CurrencyName], "PLAIN DOWN"];
 		};
 	};
 	case "preview": {
@@ -99,19 +99,19 @@ switch _option do {
 			_itemIn = _x select 0;
 			_countIn = _x select 1;
 			if (_cost != "") then {
-				_cost = _cost + " and "; //TODO: localize?
+				_cost = _cost + " and ";
 			};
 			_cost = _cost + (str(_countIn) + " " + CurrencyName);
 		} count _requirements;
 			
-		format[localize "STR_EPOCH_ACTIONS_7", _count, _cost], call dayz_rollingMessages;
+		cutText [format[(localize "STR_EPOCH_ACTIONS_7"), _count, _cost], "PLAIN DOWN"];
 			
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-		_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
+		_result =  format["Objects to maintain: %1" , _count];
 		_ctrl ctrlSetText   _result;
 		
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-		_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _theCost, CurrencyName];
+	    _result =  format["Price to maintain: %1 %2" , _theCost, CurrencyName];
 		_ctrl ctrlSetText   _result;								
 	};
 };
