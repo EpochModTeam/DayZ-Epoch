@@ -778,7 +778,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//Allow owner to unlock vault
-	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3}) then {
+	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3} && {!keypadCancel}) then {
 		if (s_player_unlockvault < 0) then {
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
 				if (_characterID == dayz_combination || _ownerID == dayz_playerUID) then {
@@ -803,7 +803,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//Allow owner to pack vault
-	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3}) then {
+	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3}  && {!keypadCancel}) then {
 		if (s_player_lockvault < 0) then {
 			if (_characterID == dayz_combination || _ownerID == dayz_playerUID) then {
 				s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];
@@ -885,7 +885,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 	
 	// downgrade system
-	if ((DZE_Lock_Door == _characterID) && {_isDestructable || _cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base"}) then {
+	if ((DZE_Lock_Door == _characterID)  && {!keypadCancel} && {_isDestructable || _cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base"}) then {
 		if ((s_player_lastTarget select 1) != _cursorTarget) then {
 			if (s_player_downgrade_build > 0) then {	
 				player removeAction s_player_downgrade_build;

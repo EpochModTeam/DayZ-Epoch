@@ -100,6 +100,8 @@ class SafeKeyPad
 {
 	idd = -1;
 	movingenable = 0;
+	onLoad = "keypadCancel = true;";
+	onUnload = "if (keypadCancel) then {dayz_combination = ''; [] spawn keyPadReset;};";
 
 	class Controls
 	{
@@ -287,7 +289,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			soundClick[] = {"\dayz_sfx\action\cell\dtmf_star.ogg",0.6,1};
-			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 3000);";
+			onButtonClick = "keypadCancel = true; ((ctrlParent (_this select 0)) closeDisplay 3000);";
 		};
 		class benter: RscButton
 		{
@@ -302,7 +304,7 @@ class SafeKeyPad
 			colorText[] = {0,1,0,1};
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
-			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault and (typeOf dayz_selectedVault) in DZE_LockedStorage) then {dayz_selectedVault spawn player_unlockVault;};";
+			onButtonClick = "keypadCancel = false; ((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault and (typeOf dayz_selectedVault) in DZE_LockedStorage) then {dayz_selectedVault spawn player_unlockVault;};";
 			soundClick[] = {"\dayz_sfx\action\cell\dtmf_hash.ogg",0.6,1};
 		};
 	};
@@ -313,6 +315,8 @@ class ComboLockUI
 {
 	idd = 41144;
 	movingenable = 0;
+	onLoad = "keypadCancel = true;";
+	onUnload = "if (keypadCancel) then {DZE_Lock_Door = ''; [] spawn keyPadReset;};";
 
 	class Controls
 	{
@@ -447,7 +451,7 @@ class ComboLockUI
 			y = 0.0153665;
 			w = 0.158511;
 			h = 0.153191;
-			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 3000);";
+			onButtonClick = "keypadCancel = true; ((ctrlParent (_this select 0)) closeDisplay 3000);";
 		};
 		class unlock_combo_btn: main_combo
 		{
@@ -456,7 +460,7 @@ class ComboLockUI
 			y = 0.762017;
 			w = 0.201064;
 			h = 0.233964;
-			onButtonClick = "call player_unlockDoor";
+			onButtonClick = "keypadCancel = false; call player_unlockDoor";
 		};
 	};
 };
@@ -466,7 +470,8 @@ class KeypadUI
 {
 	idd = -1;
 	movingenable = 0;
-
+	onLoad = "keypadCancel = true;";
+	onUnload = "if (keypadCancel) then {dayz_combination = ''; [] spawn keyPadReset;};";
 	class Controls
 	{
 		class KeypadUIPic: RscPicture
@@ -630,7 +635,7 @@ class KeypadUI
 			y = 0.312845;
 			w = 0.126596;
 			h = 0.153191;
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000);";
+			onButtonClick = "keypadCancel = true; [player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000);";
 		};
 		class kpbcancel2: main_button
 		{
@@ -639,7 +644,7 @@ class KeypadUI
 			y = 0.50985;
 			w = 0.126596;
 			h = 0.153191;
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000);";
+			onButtonClick = "keypadCancel = true; [player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000);";
 		};
 		class kpbenter: main_button
 		{
@@ -648,7 +653,7 @@ class KeypadUI
 			y = 0.121749;
 			w = 0.126596;
 			h = 0.153191;
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault) then {dayz_selectedVault spawn player_unlockVault;};";
+			onButtonClick = "keypadCancel = false; [player,""keypad_tick"",0,false] call dayz_zombieSpeak;((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault) then {dayz_selectedVault spawn player_unlockVault;};";
 		};
 	};
 };

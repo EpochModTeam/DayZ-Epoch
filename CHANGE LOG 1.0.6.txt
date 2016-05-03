@@ -91,6 +91,7 @@
 [FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
 [FIXED] Players are now ejected and killed when their vehicle is destroyed (Fix applies to all types of vehicles). @icomrade
 [NOTE]	Servers that use trader safezones must configure the variable DZE_SafeZonePosArray with their safezone posisitons and radii, otherwise passangers of vehicles in safezones will be killed upon destruction of their vehicle
+[FIXED] Players are no longer able to brute force doors or safes by the method described in #1187 @icomrade
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
