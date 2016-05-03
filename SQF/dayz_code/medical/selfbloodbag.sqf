@@ -41,11 +41,13 @@ if (_rh) then {_rhVal = "POS";} else {_rhVal = "NEG";};
 _bloodBagWholeNeeded = "wholeBloodBag" + _bloodType + _rhVal;
 _haswholebag = _bloodBagWholeNeeded in magazines player;
 
-if (_haswholebag or (dayz_classicBloodBagSystem && "ItemBloodbag" in magazines player)) then {
+if (_haswholebag) then {
 	_wholeBag = true;
 } else {
 	_badBag = true;
 };
+
+if (dayz_classicBloodBagSystem && ("ItemBloodbag" in (magazines player))) then {_wholeBag = true;};
 
 call fnc_usec_medic_removeActions;
 r_action = false;
