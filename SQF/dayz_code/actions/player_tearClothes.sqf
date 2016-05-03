@@ -14,6 +14,7 @@ _infoText = "";
 player playActionNow "Medic";
 [player,"bandage",0,false] call dayz_zombieSpeak;
 uiSleep 6;
+if !(_skin in magazines player) exitWith {localize "str_tear_clothes_0" call dayz_rollingMessages;};
 player removeMagazine _skin;
 
 switch (_rounded) do {
