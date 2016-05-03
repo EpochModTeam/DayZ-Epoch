@@ -13,38 +13,47 @@ _KillEject = { //leave as local compile for a tiny bit more security
 		[player, "explosion"] spawn player_death;
 	};
 };
-if (_v iskindof "helicopter" || _v iskindof "plane") then {
-	if (player in (crew _v)) then {
-		[] spawn _KillEject;
+if (!DZE_NoVehicleExplosions) then {
+	if (_v iskindof "helicopter" || _v iskindof "plane") then {
+		if (player in (crew _v)) then {
+			[] spawn _KillEject;
+		};
+		//_v setVehicleInit "[this] spawn BIS_Effects_AirDestruction";
+		//processInitCommands; //ClearvehicleInit done at end of burn script
+		["AirDestruction", _v] call BIS_Effects_globalEvent;
 	};
-	//_v setVehicleInit "[this] spawn BIS_Effects_AirDestruction";
-	//processInitCommands; //ClearvehicleInit done at end of burn script
-	["AirDestruction", _v] call BIS_Effects_globalEvent;
-};
-if (_v iskindof "tank") then {
-	if (player in (crew _v)) then {
-		[] spawn _KillEject;
+	if (_v iskindof "tank") then {
+		if (player in (crew _v)) then {
+			[] spawn _KillEject;
+		};
+		_int = (fuel _v)*(2+random 2);
+		_t = time;
+		//_v setVehicleInit format ["[this, %1, %2]spawn BIS_Effects_Burn",_int, _t];   - disabled to prepaire for move into engine
+		//processInitCommands; //ClearvehicleInit done at end of burn script
+		[_v,_int] spawn BIS_Effects_Secondaries;
 	};
-	_int = (fuel _v)*(2+random 2);
-	_t = time;
-	//_v setVehicleInit format ["[this, %1, %2]spawn BIS_Effects_Burn",_int, _t];   - disabled to prepaire for move into engine
-	//processInitCommands; //ClearvehicleInit done at end of burn script
-	[_v,_int] spawn BIS_Effects_Secondaries;
-};
-if (_v iskindof "car" || _v iskindof "ship")then {
-	if (player in (crew _v)) then {
-		[] spawn _KillEject;
-	};
-	_int = (fuel _v)*(2 + random 1);
-	_t = time;
+	if (_v iskindof "car" || _v iskindof "ship")then {
+		if (player in (crew _v)) then {
+			[] spawn _KillEject;
+		};
+		_int = (fuel _v)*(2 + random 1);
+		_t = time;
 
-	//_v setVehicleInit format ["[this, %1, %2]spawn BIS_Effects_Burn; ",_int, _t];  - disabled to prepaire for move into engine
-	//processInitCommands; //ClearvehicleInit done at end of burn script
-	[_v,_int] spawn BIS_Effects_Secondaries;
+		//_v setVehicleInit format ["[this, %1, %2]spawn BIS_Effects_Burn; ",_int, _t];  - disabled to prepaire for move into engine
+		//processInitCommands; //ClearvehicleInit done at end of burn script
+		[_v,_int] spawn BIS_Effects_Secondaries;
 
-	//Possible initial explosion
-	if ((random _int)>2.2) then
-	{
-			_b = createVehicle ["SmallSecondary", (getPosATL _v), [], 0, "CAN_COLLIDE"];
+		//Possible initial explosion
+		if ((random _int)>2.2) then
+		{
+				_b = createVehicle ["SmallSecondary", (getPosATL _v), [], 0, "CAN_COLLIDE"];
+		};
+	};
+} else {
+	_isVeh = (_v iskindof "helicopter" || _v iskindof "plane" || _v iskindof "tank" || _v iskindof "car" || _v iskindof "ship");
+	if (_isVeh) then {
+		if (player in (crew _v)) then {
+			[] spawn _KillEject;
+		};
 	};
 };
