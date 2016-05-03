@@ -414,14 +414,14 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 */
 	if (_isAlive) then {
 		//Allow player to delete objects
-		if (_isDestructable || ((_typeOfCursorTarget in DZE_isWreck) or (_typeOfCursorTarget in DZE_isWreckBuilding)) || (_typeOfCursorTarget in DZE_isRemovable)) then {
+		if (_isDestructable || {((_typeOfCursorTarget in DZE_isWreck) or (_typeOfCursorTarget in DZE_isWreckBuilding))} || {(_typeOfCursorTarget in DZE_isRemovable)}) then {
 			if (_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 				_player_deleteBuild = true;
 			};
 		};	
 
 		if (DZE_plotManagement || DZE_plotforLife) then {
-			if(_isModular || _isModularDoor) then {
+			if(_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 				if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 					_isowner = [player, _cursorTarget, DZE_plotManagement] call FNC_check_owner; //compile also calls dze_getPlotFriends and lists s_player_plotManagement friendlies
 					If ((_isowner select 0) || (_isowner select 1)) then {
@@ -430,7 +430,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				};
 			};
 		} else {
-			if ((_isModularDoor || _isModular) && {_playerUID == _ownerID}) then {
+			if ((_isModularDoor || _isModular || _typeOfCursorTarget in DZE_isDestroyableStorage) && {_playerUID == _ownerID}) then {
 				if (_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 					_player_deleteBuild = true;
 				};	
