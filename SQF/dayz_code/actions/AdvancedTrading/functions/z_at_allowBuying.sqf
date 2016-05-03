@@ -13,7 +13,7 @@ _sidearmToBuy = _this select 4;
 _primaryToBuy = _this select 5;
 _vehiclesToBuy = _this select 6;
 
-if (_vehiclesToBuy > 1) exitWith {systemChat "You can only purchase one vehicle at a time."; false;};
+if (_vehiclesToBuy > 1) exitWith {systemChat localize "STR_EPOCH_TRADE_ONE_VEHICLE"; false;};
 if (_vehiclesToBuy > 0) then {
 	_toolsToBuy = _toolsToBuy + _vehiclesToBuy;
 };
@@ -64,17 +64,17 @@ if(_selection == 2) then{ //gear
 	if( _allowedPrimary >= _primaryToBuy && _allowedSidearm >= _sidearmToBuy && _allowedTools >= _toolsToBuy)then{
 		_check1 = true;
 	}else{
-		systemChat format["You can only buy %1 primary, %2 sidearm and %3 tools in your gear.", _allowedPrimary, _allowedSidearm , _allowedTools];
+		systemChat format[localize "STR_EPOCH_TRADE_GEAR_FULL", _allowedPrimary, _allowedSidearm , _allowedTools];
 	};
 	if( _allowedMags >= _toBuyMags)then{
 		_check2 = true;
 	}else{
-		systemChat format["You can only buy %1 magazines in your gear.",_allowedMags];
+		systemChat format[localize "STR_EPOCH_TRADE_MAGS_FULL",_allowedMags];
 	};
 	if( _allowedBackpacks >= _toBuyBags)then{
 		_check3 = true;
 	}else{
-		systemChat format["You can only buy %1 backpacks in your gear.",_allowedBackpacks];
+		systemChat format[localize "STR_EPOCH_TRADE_BAG_FULL",_allowedBackpacks];
 	};
 
 	if(_check1 && _check2 && _check3)then{
@@ -139,17 +139,17 @@ if(_selection == 1) then{ //vehicle
 	if( _allowedWeapons >= ( _toBuyWeaps + _toolsToBuy ) )then{
 		_check1 = true;
 	}else{
-		systemChat format["You can only buy %1 weapons in your vehicle.", _allowedWeapons];
+		systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_WEPS", _allowedWeapons];
 	};
 	if( _allowedMags >= _toBuyMags)then{
 		_check2 = true;
 	}else{
-		systemChat format["You can only buy %1 magazines in your vehicle.", _allowedMags];
+		systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_MAGS", _allowedMags];
 	};
 	if( _allowedBackpacks >= _toBuyBags)then{
 		_check3 = true;
 	}else{
-		systemChat format["You can only buy %1 backpacks in your vehicle.", _allowedBackpacks];
+		systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_BAGS", _allowedBackpacks];
 	};
 
 	if(_check1 && _check2 && _check3)then{
@@ -225,7 +225,7 @@ if(_selection == 0) then{ //backpack
 		_totalSpace = _alreadyInBackpack + _totalNewSpace;
 
 	}else {
-		systemChat format["You need a backpack.", _allowedMags];
+		systemChat format[localize "STR_EPOCH_TRADE_NEED_BAG", _allowedMags];
 	};
 
 	_check1 = false;
@@ -236,17 +236,17 @@ if(_selection == 0) then{ //backpack
 	if( _allowedWeapons >= _toBuyWeaps)then{
 		_check1 = true;
 	} else {
-		systemChat format["Only %1 weapons fit in the backpack.", _allowedMags];
+		systemChat format[localize "STR_EPOCH_TRADE_BAG_WEPS", _allowedWeapons];
 	};
 	if( _allowedMags >= _toBuyMags)then{
 		_check2 = true;
 	} else {
-		systemChat format["Only %1 mags fit in the backpack." , _allowedWeapons];
+		systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedMags];
 	};
 	if( _allowedBackpacks >= _toBuyBags)then{
 		_check3 = true;
 	} else {
-		systemChat format["Only %1 bags fit in the backpack." , _allowedBackpacks ];
+		systemChat format[localize "STR_EPOCH_TRADE_BAG_BAGS", _allowedBackpacks ];
 	};
 
 	if( _totalSpace <= _allowedMags)then{

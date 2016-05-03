@@ -3,7 +3,6 @@ private ["_characterID","_temp","_currentWpn","_magazines","_force","_isNewPos",
 
 _character = _this select 0;
 _magazines = _this select 1;
-_Achievements = _character getVariable "Achievements";
 _characterID = _character getVariable ["characterID","0"];
 _force = true;
 _charPos = getPosATL _character;
@@ -24,10 +23,7 @@ if (_characterID == "0") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + _name + " as no characterID");
 };
 
-if (isNil {_Achievements}) exitWith {
-	diag_log ("ERROR: Cannot Sync Achievements " + _name + " has no default Achievements");
-	_Achievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-};
+_Achievements = [];
 
 /*
 	//No longer used

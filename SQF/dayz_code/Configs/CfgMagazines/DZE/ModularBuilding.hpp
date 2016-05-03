@@ -2,8 +2,8 @@ class metal_floor_kit: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Metal Floor";
-	descriptionShort = "Metal Floor";
+	displayName = $STR_EPOCH_METALFLOOR;
+	descriptionShort = $STR_EPOCH_METALFLOOR;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 325;
@@ -21,8 +21,8 @@ class cinder_wall_kit: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Cinder Block Wall";
-	descriptionShort = "Half height cinder block wall";
+	displayName = $STR_EPOCH_CINDERBLOCKWALL;
+	descriptionShort = $STR_EPOCH_CINDERBLOCKWALL_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 325;
@@ -39,8 +39,8 @@ class cinder_door_kit: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Block Doorway";
-	descriptionShort = "Cinder block doorway";
+	displayName = $STR_EPOCH_BLOCKDOORWAY;
+	descriptionShort = $STR_EPOCH_BLOCKDOORWAY_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 325;
@@ -57,8 +57,8 @@ class cinder_garage_kit: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Block Garage Doorway";
-	descriptionShort = "Cinder block garage doorway";
+	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
+	descriptionShort = $STR_EPOCH_BLOCKGARAGEDOORWAY_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 325;
@@ -76,10 +76,10 @@ class ItemWoodFloor: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Floor/Ceiling";
+	displayName = $STR_EPOCH_FLOORCEILING;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wood Floor can also be used as a ceiling.";
+	descriptionShort = $STR_EPOCH_FLOORCEILING_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -94,10 +94,10 @@ class ItemWoodFloorHalf: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Floor/Ceiling 1/2";
+	displayName = $STR_EPOCH_FLOORCEILINGHALF;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wood Floor can also be used as a ceiling.";
+	descriptionShort = $STR_EPOCH_FLOORCEILING_DESC;
 	weight = 15;
 	class ItemActions {
 		class Build {
@@ -121,10 +121,10 @@ class ItemWoodFloorQuarter: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Floor/Ceiling 1/4";
+	displayName = $STR_EPOCH_FLOORCEILINGQUARTER;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wood Floor can also be used as a ceiling.";
+	descriptionShort = $STR_EPOCH_FLOORCEILING_DESC;
 	weight = 10;
 	class ItemActions {
 		class Build {
@@ -149,10 +149,10 @@ class ItemWoodStairs: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Stairs";
+	displayName = $STR_EPOCH_WOODSTAIRS;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wood stairs";
+	descriptionShort = $STR_EPOCH_WOODSTAIRS;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -176,10 +176,10 @@ class ItemWoodStairsSupport: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Stairs w/ supports";
+	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wood stairs with supports";
+	descriptionShort = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS_DESC;
 	weight = 30;
 	class ItemActions {
 		class Build {
@@ -195,10 +195,10 @@ class ItemWoodLadder: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Ladder";
+	displayName = $STR_EPOCH_WOODLADDER;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wood Ladder";
+	descriptionShort = $STR_EPOCH_WOODLADDER;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -214,10 +214,10 @@ class ItemWoodWall: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Wall";
+	displayName = $STR_EPOCH_WOODWALL;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wall constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_WOODWALL_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -256,10 +256,10 @@ class ItemWoodWallThird: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Wall 1/3";
+	displayName = $STR_EPOCH_WOODWALLTHIRDPART;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Third wall constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_WOODWALLTHIRDPART_DESC;
 	weight = 7;
 	class ItemActions {
 		class Build {
@@ -282,10 +282,10 @@ class ItemWoodWallWindow: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wall w/ Window";
+	displayName = $STR_EPOCH_WALLWITHWINDOW;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wall with Window constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_WALLWITHWINDOW_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -301,10 +301,10 @@ class ItemWoodWallDoor: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wall w/ Doorway";
+	displayName = $STR_EPOCH_WALLWITHDOORWAY;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wall with doorway constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_WALLWITHDOORWAY_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -327,10 +327,10 @@ class ItemWoodWallWithDoor: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wall w/ Door";
+	displayName = $STR_EPOCH_WALLWITHDOOR;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wall with door constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_WALLWITHDOOR_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -353,10 +353,10 @@ class ItemWoodWallWithDoorLocked: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wall w/ Door Locked";
+	displayName = $STR_EPOCH_WALLWITHDOORLOCKED;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wall with door constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_WALLWITHDOORLOCKED_DESC;
 	weight = 30;
 	class ItemActions {
 		class Build {
@@ -372,10 +372,10 @@ class ItemWoodWallGarageDoor: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Garage Door";
+	displayName = $STR_EPOCH_WOODGARAGEDOOR;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Garage door constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_WOODGARAGEDOOR_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -398,10 +398,10 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Wood Garage Door Locked";
+	displayName = $STR_EPOCH_WOODGARAGEDOORLOCKED;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Garage door with combination lock.";
+	descriptionShort = $STR_EPOCH_WOODGARAGEDOORLOCKED_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -417,10 +417,10 @@ class ItemWoodWallLg: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Large Wood Wall";
+	displayName = $STR_EPOCH_LARGEWOODWALL;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Large wall constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_LARGEWOODWALL_DESC;
 	weight = 25;
 	class ItemActions {
 		class Build {
@@ -459,10 +459,10 @@ class ItemWoodWallWindowLg: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Large Wall w/ Window";
+	displayName = $STR_EPOCH_LARGEWALLWITHWINDOW;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Large wall with doorway constucted out of plywood and lumber..";
+	descriptionShort = $STR_EPOCH_LARGEWALLWITHWINDOW_DESC;
 	weight = 30;
 	class ItemActions {
 		class Build {
@@ -478,10 +478,10 @@ class ItemWoodWallDoorLg: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Large Wall w/ Doorway";
+	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Large wall with doorway constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_LARGEWALLWITHDOORWAY_DESC;
 	weight = 30;
 	class ItemActions {
 		class Build {
@@ -504,10 +504,10 @@ class ItemWoodWallWithDoorLg: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Large Wall w/ Door";
+	displayName = $STR_EPOCH_LARGEWALLWITHDOOR;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wall with door constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_LARGEWALLWITHDOOR_DESC;
 	weight = 30;
 	class ItemActions {
 		class Build {
@@ -530,10 +530,10 @@ class ItemWoodWallWithDoorLgLocked: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Large Wall w/ Door Locked";
+	displayName = $STR_EPOCH_LARGEWALLWITHDOORLOCKED;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	descriptionShort = "Wall with combination lock door constucted out of plywood and lumber.";
+	descriptionShort = $STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC;
 	weight = 35;
 	class ItemActions {
 		class Build {

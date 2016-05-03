@@ -22,6 +22,6 @@ switch (true) do {
 		[_item] call Z_displayVehicleInfo;
 	};
 	default {
-		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText parseText "<t color='#ffffff'>No info found</t>";
+		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText (parseText format["<t color='#ffffff'>%1</t>",localize "STR_EPOCH_TRADE_NO_INFO"]);
 	}
 };

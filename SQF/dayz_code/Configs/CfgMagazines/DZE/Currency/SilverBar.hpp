@@ -3,10 +3,10 @@ class ItemSilverBar: CA_Magazine {
 	count = 1;
 	worth = 1;
 	type = 256;
-	displayName = "Silver";
+	displayName = $STR_EPOCH_SILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar1oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "Silver Bar";
+	descriptionShort = $STR_EPOCH_SILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -32,10 +32,10 @@ class ItemSilverBar2oz: CA_Magazine {
 	count = 1;
 	worth = 2;
 	type = 256;
-	displayName = "2oz Silver";
+	displayName = $STR_EPOCH_2OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar2oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "2 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_2OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -70,10 +70,10 @@ class ItemSilverBar3oz: CA_Magazine {
 	count = 1;
 	worth = 3;
 	type = 256;
-	displayName = "3oz Silver";
+	displayName = $STR_EPOCH_3OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar3oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "3 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_3OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -116,10 +116,10 @@ class ItemSilverBar4oz: CA_Magazine {
 	count = 1;
 	worth = 4;
 	type = 256;
-	displayName = "4oz Silver";
+	displayName = $STR_EPOCH_4OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar4oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "4 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_4OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -162,10 +162,10 @@ class ItemSilverBar5oz: CA_Magazine {
 	count = 1;
 	worth = 5;
 	type = 256;
-	displayName = "5oz Silver";
+	displayName = $STR_EPOCH_5OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar5oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "5 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_5OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -208,10 +208,10 @@ class ItemSilverBar6oz: CA_Magazine {
 	count = 1;
 	worth = 6;
 	type = 256;
-	displayName = "6oz Silver";
+	displayName = $STR_EPOCH_6OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar6oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "6 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_6OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -254,10 +254,10 @@ class ItemSilverBar7oz: CA_Magazine {
 	count = 1;
 	worth = 7;
 	type = 256;
-	displayName = "7oz Silver";
+	displayName = $STR_EPOCH_7OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar7oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "7 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_7OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -300,10 +300,10 @@ class ItemSilverBar8oz: CA_Magazine {
 	count = 1;
 	worth = 8;
 	type = 256;
-	displayName = "8oz Silver";
+	displayName = $STR_EPOCH_8OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar8oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "8 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_8OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -346,10 +346,10 @@ class ItemSilverBar9oz: CA_Magazine {
 	count = 1;
 	worth = 9;
 	type = 256;
-	displayName = "9oz Silver";
+	displayName = $STR_EPOCH_9OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar9oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_silver_bar_CA.paa";
-	descriptionShort = "9 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_9OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_210_1;
@@ -384,10 +384,10 @@ class ItemSilverBar10oz: CA_Magazine {
 	count = 1;
 	worth = 10;
 	type = 256;
-	displayName = "10oz Silver";
+	displayName = $STR_EPOCH_10OZSILVER;
 	model = "\z\addons\dayz_epoch\models\ItemSilverBar10oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_Silver_bar_10oz_CA.paa";
-	descriptionShort = "10 x 1oz Silver Bar";
+	descriptionShort = $STR_EPOCH_10OZSILVER_DESC;
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_211_1;
