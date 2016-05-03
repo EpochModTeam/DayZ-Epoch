@@ -15895,6 +15895,14 @@
 			<French>Half height cinder block wall.</French>
 			<Czech>Half height cinder block wall.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_FULLCINDERBLOCKWALL_DESC">
+			<English>Full height cinder block wall.</English>
+			<German>Full height cinder block wall.</German>
+			<Russian>Full height cinder block wall.</Russian>
+			<Spanish>Full height cinder block wall.</Spanish>
+			<French>Full height cinder block wall.</French>
+			<Czech>Full height cinder block wall.</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Block Doorway</English>
 			<German>Block Doorway</German>

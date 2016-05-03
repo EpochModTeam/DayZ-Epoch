@@ -39,6 +39,7 @@
 [NEW] You may toggle vehicle destruction effects to prevent damage from vehicle explosions (useful to prevent griefing from ramming) use DZE_NoVehicleExplosions = true; to enable #1198 @icomrade
 [NEW] Temperature factors are now configurable with DZE_TempVars see ConfigVariables.sqf for more info @icomrade 
 [NEW] Weather effects are now configurable with DZE_WeatherVariables See DynamicWeatherEffects.sqf for info on these values @icomrade
+[NEW] Full height cinderblock wall kits are now in game, classname "full_cinder_wall_kit" #1172 @icomrade
 
 [CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
@@ -95,6 +96,7 @@
 [FIXED] Players are now ejected and killed when their vehicle is destroyed (Fix applies to all types of vehicles). @icomrade
 [NOTE]	Servers that use trader safezones must configure the variable DZE_SafeZonePosArray with their safezone posisitons and radii, otherwise passangers of vehicles in safezones will be killed upon destruction of their vehicle
 [FIXED] Players are no longer able to brute force doors or safes by the method described in #1187 @icomrade
+[FIXED] Fix some items not displaying removal option #1135 @icomrade
 
 [UPDATED] .hpp files updated in dayz_epoch_b CfgLootPos > CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

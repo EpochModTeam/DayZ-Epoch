@@ -35,6 +35,24 @@ class cinder_wall_kit: CA_Magazine {
 		};
 	};
 };
+class full_cinder_wall_kit: CA_Magazine {
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERBLOCKWALL;
+	descriptionShort = $STR_EPOCH_FULLCINDERBLOCKWALL_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	weight = 325;
+	class ItemActions {
+		class Build {
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWall_DZ";
+		};
+	};
+};
 class cinder_door_kit: CA_Magazine {
 	scope = public;
 	count = 1;
