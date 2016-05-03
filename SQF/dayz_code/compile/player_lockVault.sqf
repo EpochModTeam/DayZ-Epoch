@@ -28,15 +28,17 @@ uiSleep 5;
 _playerNear = _obj call dze_isnearest_player;
 if (_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_11" call dayz_rollingMessages;};
 
-_objectID = _obj getVariable["ObjectID","0"];
-_objectUID = _obj getVariable["ObjectUID","0"];
-
 _ownerID = _obj getVariable["CharacterID","0"];
+_charID = _ownerID;
+_objectID 	= _obj getVariable["ObjectID","0"];
+_objectUID	= _obj getVariable["ObjectUID","0"];
+_ComboMatch = (_ownerID == dayz_combination);
 if (DZE_plotforLife) then {
-	_ownerID = _obj getVariable["ownerPUID", "0"];
+	_combination = _obj getVariable["characterID","0"];
+	_ownerID = _obj getVariable["ownerPUID","0"];
+	_ComboMatch = (_combination == dayz_combination);
 };
-
-if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages; };
+if(!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages; };
 
 _alreadyPacking = _obj getVariable["packing",0];
 if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_116",_text] call dayz_rollingMessages;};
@@ -58,7 +60,7 @@ if (!isNull _obj) then {
 	_holder setPosATL _pos;
 	player reveal _holder;
 	
-	_holder setVariable["CharacterID",_ownerID,true];
+	_holder setVariable["CharacterID",_charID,true];
 	_holder setVariable["ObjectID",_objectID,true];
 	_holder setVariable["ObjectUID",_objectUID,true];
 	_holder setVariable ["OEMPos", _pos, true];
