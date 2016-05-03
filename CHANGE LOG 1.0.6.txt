@@ -38,6 +38,7 @@
 [NEW] A Plot For Life by RimBlock is now included and enabled by default with variable DZE_plotforLife, see configVariables.sqf @RimBlock @icomrade
 [NEW] You may toggle vehicle destruction effects to prevent damage from vehicle explosions (useful to prevent griefing from ramming) use DZE_NoVehicleExplosions = true; to enable #1198 @icomrade
 [NEW] Temperature factors are now configurable with DZE_TempVars see ConfigVariables.sqf for more info @icomrade 
+[NEW] Weather effects are now configurable with DZE_WeatherVariables See DynamicWeatherEffects.sqf for info on these values @icomrade
 
 [CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
