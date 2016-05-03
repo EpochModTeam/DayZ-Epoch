@@ -10,6 +10,7 @@ BIS_MPF_remoteExecutionServer = {
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\KK_Functions.sqf";
 
 BIS_Effects_Burn = {};
 dayz_disconnectPlayers = [];
@@ -19,6 +20,7 @@ server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_se
 server_updateObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateObject.sqf";
 server_playerDied = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
 server_publishObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";	//Creates the object in DB
+server_publishFullObject = 	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishFullObject.sqf";
 server_deleteObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_deleteObj.sqf"; 	//Removes the object from the DB
 server_playerSync = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 zombie_findOwner = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";

@@ -24,13 +24,19 @@ if(_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_play
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID 	= _obj getVariable["ObjectID","0"];
 _objectUID	= _obj getVariable["ObjectUID","0"];
+_ComboMatch = (_ownerID == dayz_combination);
+if (DZE_plotforLife) then {
+	_combination = _obj getVariable["characterID","0"];
+	_ownerID = _obj getVariable["ownerPUID","0"];
+	_ComboMatch = (_combination == dayz_combination);
+};
 
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
 if(_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_118",_text] call dayz_rollingMessages;};
 
-if((_ownerID != dayz_combination) && (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
+if(!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
 
 _alreadyPacking = _obj getVariable["packing",0];
 

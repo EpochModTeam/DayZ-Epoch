@@ -76,7 +76,13 @@ if (_status == "ObjectStreamStart") then {
 	_dir = floor(random(360));
 	_pos = getMarkerpos "respawn_west";
 	_wsDone = false;
-	
+
+	if (count _worldspace >= 2) then {
+		if ((typeName (_worldspace select 0)) == "STRING") then {
+			_worldspace set [0, call compile (_worldspace select 0)];
+			_worldspace set [1, call compile (_worldspace select 1)];
+		};
+	};
 	if (count _worldspace >= 1 && {(typeName (_worldspace select 0)) == "SCALAR"}) then { 
 		_dir = _worldspace select 0;
 	};
@@ -95,6 +101,13 @@ if (_status == "ObjectStreamStart") then {
 		if (count _pos < 3) then { _pos = [_worldspace select 0,_worldspace select 1,0]; };
 		diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 	};
+
+	// Realign characterID to OwnerPUID - need to force save though.
+	
+	if (count _worldspace < 3) then {
+		_worldspace set [count _worldspace, "0"];
+	};		
+	_ownerPUID = _worldspace select 2;
 
 	if (_damage < 1) then {
 		//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
@@ -120,6 +133,7 @@ if (_status == "ObjectStreamStart") then {
 		// prevent immediate hive write when vehicle parts are set up
 		_object setVariable ["lastUpdate",diag_ticktime];
 		_object setVariable ["ObjectID", _idKey, true];
+		_object setVariable ["OwnerPUID", _ownerPUID, true];
 
 		// plotManagement //
 		if( DZE_plotManagement && (typeOf (_object) == "Plastic_Pole_EP1_DZ") ) then {

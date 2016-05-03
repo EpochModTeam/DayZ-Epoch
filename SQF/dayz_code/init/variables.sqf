@@ -239,9 +239,10 @@ dayz_resetSelfActions = {
     s_player_toggleSnapSelect = -1;
     s_player_toggleSnapSelectPoint = [];
     snapActions = -1;
-	// plotManagement //
+	s_player_plot_boundary_on = -1;
+	s_player_plot_boundary_off = -1;
+	s_player_plot_take_ownership = -1;
 	s_player_plotManagement = -1;
-	// plotManagement //
 };
 call dayz_resetSelfActions;
 
@@ -487,6 +488,10 @@ DZE_isWreck = ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck
 DZE_isWreckBuilding = ["Land_wreck_cinder","Land_wood_wreck_quarter","Land_wood_wreck_floor","Land_wood_wreck_third","Land_wood_wreck_frame","Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck","Land_ammo_supply_wreck"];
 DZE_isNewStorage = ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ"];
 helperDetach = false;
+DZE_snapExtraRange = 0;
+if (isNil "DZE_plotOwnershipExclusions") then {
+	DZE_plotTakeOwnershipItems = DayZ_SafeObjects - (DZE_LockableStorage + ["Plastic_Pole_EP1_DZ","TentStorage","TentStorageDomed","TentStorageDomed2"]);
+};
 isInTraderCity = false;
 PlayerDeaths = [];
 PVDZE_obj_Trade = []; // For all traders increment qty
@@ -507,6 +512,7 @@ if (isNil "DZE_MissionLootTable") then {DZE_MissionLootTable = false;};
 if (isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
 if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15,300];};
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
+DZE_checkNearbyRadius = DZE_PlotPole select 0;
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
 

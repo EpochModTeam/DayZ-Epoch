@@ -15,6 +15,7 @@ _isWater = 		dayz_isSwimming;
 _cancel = false;
 _reason = "";
 _canBuildOnPlot = false;
+_playerUID = [player] call FNC_GetPlayerUID;
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -432,9 +433,11 @@ if (_canBuild select 0) then {
 					};
 
 					_tmpbuilt setVariable ["CharacterID",_combination,true];
-
-
 					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
+					if (DZE_plotforLife) then {
+						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
+						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID],_classname];
+					};
 					publicVariableServer "PVDZ_obj_Publish";
 
 					format[localize "str_epoch_player_140",_combinationDisplay,_text] call dayz_rollingMessages;
@@ -442,12 +445,17 @@ if (_canBuild select 0) then {
 
 				} else {
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
-
+					if (DZE_plotforLife) then {
+						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
+					};
 					// fire?
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
 						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];
+						if (DZE_plotforLife) then {
+							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID],_classname];
+						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};
 				};

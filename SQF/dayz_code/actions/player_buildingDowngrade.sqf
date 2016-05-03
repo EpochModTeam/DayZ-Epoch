@@ -10,61 +10,35 @@ DZE_ActionInProgress = true;
 player removeAction s_player_downgrade_build;
 s_player_downgrade_build = 1;
 
-_distance = 30;
+_distance = DZE_PlotPole select 0;
 _needText = localize "str_epoch_player_246";
-
-// check for near plot
-_findNearestPoles = nearestObjects [(vehicle player), ["Plastic_Pole_EP1_DZ"], _distance];
-_findNearestPole = [];
-
-{
-	if (alive _x) then {
-		_findNearestPole set [(count _findNearestPole),_x];
-	};
-} count _findNearestPoles;
-
-_IsNearPlot = count (_findNearestPole);
-
+_playerUID = [player] call FNC_GetPlayerUID;
 _canBuildOnPlot = false;
+_plotcheck = [player, false] call FNC_find_plots;
+_distance = _plotcheck select 0;
+_IsNearPlot = _plotcheck select 1;
+_nearestPole = _plotcheck select 2;
 
 if(_IsNearPlot == 0) then {
 	_canBuildOnPlot = true;
 } else {
-
-	// check nearby plots ownership && then for friend status
-	_nearestPole = _findNearestPole select 0;
-
-	// Find owner
 	_ownerID = _nearestPole getVariable["CharacterID","0"];
-
-	// diag_log format["DEBUG BUILDING: %1 = %2", dayz_characterID, _ownerID];
-
-	// check if friendly to owner
 	if(dayz_characterID == _ownerID) then {
 		_canBuildOnPlot = true;
 	} else {
-		// plotManagement //
-		if( DZE_plotManagement ) then {
-			_friendlies = _nearestPole getVariable ["plotfriends",[]];
-			_fuid  = [];
-			{
-				_friendUID = _x select 0;
-				_fuid  =  _fuid  + [_friendUID];
-			} forEach _friendlies;
-			// check if friendly to owner
-			if(dayz_playerUID in _fuid) then {
+		if (DZE_plotManagement || DZE_plotforLife) then {
+			_buildcheck = [player, _nearestPole, DZE_plotManagement] call FNC_check_owner;
+			_isowner = _buildcheck select 0;
+			_isfriendly = _buildcheck select 1;
+			if (_isowner || _isfriendly) then {
 				_canBuildOnPlot = true;
 			};
 		} else {
-		// plotManagement //
-			_friendlies		= player getVariable ["friendlyTo",[]];
-			// check if friendly to owner
+			_friendlies	= player getVariable ["friendlyTo",[]];
 			if(_ownerID in _friendlies) then {
 				_canBuildOnPlot = true;
 			};
-		// plotManagement //
 		};
-		// plotManagement //
 	};
 };
 
@@ -76,6 +50,7 @@ _obj = _this select 3;
 
 // Current charID
 _objectCharacterID 	= _obj getVariable ["CharacterID","0"];
+
 
 if (DZE_Lock_Door != _objectCharacterID) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_49" call dayz_rollingMessages;};
 
@@ -158,6 +133,9 @@ if ((count _upgrade) > 0) then {
 		format[localize "str_epoch_player_142",_text] call dayz_rollingMessages;
 
 		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location],_classname,_obj,player];
+		if (DZE_plotforLife) then {
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_playerUID],_classname,_obj,player];
+		};
 		publicVariableServer "PVDZE_obj_Swap";
 
 		player reveal _object;

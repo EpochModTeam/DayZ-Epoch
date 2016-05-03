@@ -7,6 +7,9 @@ _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID = _obj getVariable["ObjectID","0"];
 _objectUID = _obj getVariable["ObjectUID","0"];
+if (DZE_plotforLife) then {
+	_ownerID = _obj getVariable["ownerPUID","0"];
+};
 _pickup = false;
 _packobj = getText (configFile >> "CfgVehicles" >> typeOf _obj >> "pack");
 _activatingPlayer = player;

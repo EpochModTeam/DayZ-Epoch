@@ -212,7 +212,10 @@ if (isPlayer cursorTarget) then {
 			if (_unit isKindOf "Man") then {
 				// should only fire if cursor target is man and not vehicle
 				_charID = _unit getVariable ["CharacterID", 0];
-				_friendlies = player getVariable ["friendlies", []];
+				if (DZE_plotforLife) then {
+					_charID = [_unit] call FNC_GetPlayerUID;
+				};
+				_friendlies = [player, _unit, DZE_plotManagement] call FNC_check_owner;
 				if !(_charID in _friendlies) then {
 					r_action = true;
 					_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true];

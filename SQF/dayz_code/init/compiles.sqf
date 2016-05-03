@@ -92,6 +92,9 @@ if (!isDedicated) then {
 	} else {
 		player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
 	};
+	FNC_check_owner =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\A_Plot_for_Life\fn_check_owner.sqf";
+	FNC_find_plots =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\A_Plot_for_Life\fn_find_plots.sqf";
+	
 	player_buildVanilla = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_buildVanilla.sqf";
 	fn_buildCamera = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildCamera.sqf";
 	object_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_build.sqf";

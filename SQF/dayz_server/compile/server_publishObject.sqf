@@ -13,6 +13,11 @@ if ([_object, "Server"] call check_publishobject) then {
 
 	_objectUID = _worldspace call dayz_objectUID2;
 	_object setVariable [ "ObjectUID", _objectUID, true ];
+
+	//Precise base building
+	_worldspace set [0, (_worldspace select 0) call KK_fnc_floatToString];
+	_worldspace set [1, (_worldspace select 1) call KK_fnc_positionToString];
+
 	// we can't use getVariable because only the object creation is known from the server (position,direction,variables are not sync'ed yet)
 	//_characterID = _object getVariable [ "characterID", 0 ];
 	//_ownerArray = _object getVariable [ "ownerArray", [] ];

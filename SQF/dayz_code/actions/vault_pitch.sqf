@@ -20,6 +20,7 @@ _offset_z_attach = 0.5;
 
 _location = player modeltoworld [_offset_x,_offset_y,_offset_z];
 
+_playerUID = [player] call FNC_GetPlayerUID;
 // Allow placement anywhere.
 
 _isOk = true;
@@ -159,7 +160,7 @@ if(!_cancel) then {
 			_tent setVariable ["CharacterID",_combination,true];
 			_tent setVariable ["OEMPos",_location,true];
 
-			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location],[]];
+			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location, _playerUID],"VaultStorageLocked"];
 			publicVariableServer  "PVDZ_obj_Publish";
 	
 			format[localize "str_epoch_player_179",_combination] call dayz_rollingMessages;

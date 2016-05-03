@@ -62,7 +62,9 @@ DZE_plotManagement = true;
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby
 DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole. (default 6)
 // see also: https://github.com/RimBlock/Epoch/tree/master/A%20Plot%20for%20Life
-DZE_plotforLife = false; // NOT IMPLEMENTED. Set always to false - value is used by plotManagement
+DZE_plotforLife = true; //Enable or disable a plot for life mod
+DZE_PlotOwnership = true; //allows plot owner to take ownership of buildables (excluding lockable items) near a plot pole. Useful for servers that allow base capturing so the new owner can modify/delete/upgrade existing structures
+
 ////////////////////////////////////////////////
 
 /* 

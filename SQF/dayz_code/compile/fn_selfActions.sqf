@@ -232,7 +232,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
 	_isHarvested = _cursorTarget getVariable["meatHarvested",false];
 	_isGenerator = _cursorTarget isKindOf "Generator_DZ";
-	_ownerID = _cursorTarget getVariable ["characterID","0"];
 	_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
 	_isFuel = false;
 	_hasBarrel = "ItemFuelBarrel" in _magazinesPlayer;
@@ -248,7 +247,15 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_istypeTent = (_cursorTarget isKindOf "TentStorage_base") or (_cursorTarget isKindOf "IC_Tent");
 	_upgradeItems = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4"];
 	_isCampSite = _cursorTarget isKindOf "IC_Fireplace1";
-	
+	_ownerID = _cursorTarget getVariable ["characterID","0"];
+	_playerUID = dayz_characterID;
+
+	if (DZE_plotforLife) then {
+		_playerUID = [player] call FNC_GetPlayerUID;
+		_ownerID = _cursorTarget getVariable ["ownerPUID","0"];
+	};
+	_characterID = _cursorTarget getVariable ["CharacterID","0"];
+
 	_isDisallowRefuel = _typeOfCursorTarget in ["M240Nest_DZ","MMT_Civ","MMT_USMC","Old_bike_TK_CIV_EP1","Old_bike_TK_INS_EP1"];	
 	_isDog = (_cursorTarget isKindOf "DZ_Pastor" || _cursorTarget isKindOf "DZ_Fin");
 	_isModular = _cursorTarget isKindOf "ModularItems";
@@ -413,17 +420,17 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};	
 
-		if (DZE_plotManagement) then {
+		if (DZE_plotManagement || DZE_plotforLife) then {
 			if(_isModular || _isModularDoor) then {
 				if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
-					_allowedUIDs = [objNull, true, true] call dze_getPlotFriends;
-					if( (dayz_playerUID in _allowedUIDs) || (dayz_characterID in _allowedUIDs) ) then {
+					_isowner = [player, _cursorTarget, DZE_plotManagement] call FNC_check_owner; //compile also calls dze_getPlotFriends and lists s_player_plotManagement friendlies
+					If ((_isowner select 0) || (_isowner select 1)) then {
 						_player_deleteBuild = true;
 					};
 				};
 			};
 		} else {
-			if ((_isModularDoor || _isModular) && (dayz_characterID == _ownerID)) then {
+			if ((_isModularDoor || _isModular) && {_playerUID == _ownerID}) then {
 				if (_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 					_player_deleteBuild = true;
 				};	
@@ -447,7 +454,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//remove Own objects
-	if (_ownerID == dayz_characterID) then {
+	if (_ownerID == _playerUID) then {
 		//upgrade items
 		if (_typeOfCursorTarget in _upgradeItems) then {
 			if (s_player_upgradestroage < 0) then {
@@ -634,17 +641,40 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 	
 	if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {_canDo && speed player <= 1}) then {
-		if( DZE_plotManagement) then {
+		if( DZE_plotManagement || DZE_plotforLife) then {
 			if (s_player_plotManagement < 0) then {
-				_allowedUIDs = [_cursorTarget, false, true] call dze_getPlotFriends;
-				if( (dayz_playerUID in _allowedUIDs) || (dayz_characterID in _allowedUIDs) ) then {
+					_isowner = [player, _cursorTarget, DZE_plotManagement] call FNC_check_owner; //compile also calls dze_getPlotFriends and lists s_player_plotManagement friendlies
+					If ((_isowner select 0) || (_isowner select 1)) then {
+						s_player_plot_take_ownership = player addAction ["Take plot items ownership", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
+					};
 					s_player_plotManagement = player addAction ["<t color='#0059FF'>Manage Plot</t>", "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
 				};
-			};
 		} else {
 			if (s_player_maintain_area < 0) then {
 				s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
 				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
+			};
+		};
+		if (DZE_plotforLife) then {
+			_plotDistance = (DZE_PlotPole select 0);
+			_PlotsmarkersNear = count (_cursorTarget nearEntities ["Land_coneLight", _PlotDistance]);
+			if (s_player_plot_boundary_on < 0) then {
+				If (_PlotsmarkersNear == 0 ) then{
+					s_player_plot_boundary_on = player addAction ["Show plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_showPlotRadius.sqf", "", 1, false];
+				};
+			 };	
+			 if (s_player_plot_boundary_off < 0) then {
+				If (_PlotsmarkersNear > 0 ) then{
+					s_player_plot_boundary_off = player addAction ["Remove plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_removePlotRadius.sqf", "", 1, false];
+				};
+			};
+			if (s_player_plot_take_ownership < 0) then {
+				if (DZE_PlotOwnership) then {
+					_isowner = [player, _cursorTarget, DZE_plotManagement] call FNC_check_owner; //compile also calls dze_getPlotFriends and lists s_player_plotManagement friendlies
+					If (_isowner select 0) then {
+						s_player_plot_take_ownership = player addAction ["Take plot items ownership", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
+					};
+				};
 			};
 		};
 	} else {
@@ -654,6 +684,12 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_maintain_area = -1;
 		player removeAction s_player_maintain_area_preview;
 		s_player_maintain_area_preview = -1;
+		player removeAction s_player_plot_boundary_on;
+		s_player_plot_boundary_on = -1;
+		player removeAction s_player_plot_boundary_off;
+		s_player_plot_boundary_off = -1;
+		player removeAction s_player_plot_take_ownership;
+		s_player_plot_take_ownership = -1;
 	};
 	
 	if (DZE_HeliLift) then {
@@ -702,11 +738,11 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			_totalKeys = call epoch_tempKeys;
 			_temp_keys = _totalKeys select 0;
 			_temp_keys_names = _totalKeys select 1;
-			_hasKey = _ownerID in _temp_keys;
-			_oldOwner = (_ownerID == dayz_playerUID);
+			_hasKey = _characterID in _temp_keys;
+			_oldOwner = (_characterID == dayz_playerUID);
 			if (locked _cursorTarget) then {
 				if (_hasKey || _oldOwner) then {
-					_unlock = player addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[_cursorTarget,(_temp_keys_names select (parseNumber _ownerID))], 2, true, true];
+					_unlock = player addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[_cursorTarget,(_temp_keys_names select (parseNumber _characterID))], 2, true, true];
 					s_player_lockunlock set [count s_player_lockunlock,_unlock];
 					s_player_lockUnlock_crtl = 1;
 				} else {
@@ -742,10 +778,10 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//Allow owner to unlock vault
-	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_ownerID != "0"} && {player distance _cursorTarget < 3}) then {
+	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3}) then {
 		if (s_player_unlockvault < 0) then {
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
-				if (_ownerID == dayz_combination || _ownerID == dayz_playerUID) then {
+				if (_characterID == dayz_combination || _ownerID == dayz_playerUID) then {
 					_combi = player addAction [format[localize "STR_EPOCH_ACTIONS_OPEN",_text], "\z\addons\dayz_code\actions\vault_unlock.sqf",_cursorTarget, 0, false, true];
 					s_player_combi set [count s_player_combi,_combi];
 				} else {
@@ -754,7 +790,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				};
 				s_player_unlockvault = 1;
 			} else {
-				if (_ownerID != dayz_combination && _ownerID != dayz_playerUID) then {
+				if (_characterID != dayz_combination && _ownerID != dayz_playerUID) then {
 					_combi = player addAction [localize "STR_EPOCH_ACTIONS_RECOMBO", "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true];
 					s_player_combi set [count s_player_combi,_combi];
 					s_player_unlockvault = 1;
@@ -767,13 +803,13 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//Allow owner to pack vault
-	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_ownerID != "0"} && {player distance _cursorTarget < 3}) then {
+	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3}) then {
 		if (s_player_lockvault < 0) then {
-			if (_ownerID == dayz_combination || _ownerID == dayz_playerUID) then {
+			if (_characterID == dayz_combination || _ownerID == dayz_playerUID) then {
 				s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];
 			};
 		};
-		if (s_player_packvault < 0 && (_ownerID == dayz_combination || _ownerID == dayz_playerUID)) then {
+		if (s_player_packvault < 0 && (_characterID == dayz_combination || _ownerID == dayz_playerUID)) then {
 			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",(format[localize "STR_EPOCH_ACTIONS_PACK",_text])], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true];
 		};
 	} else {
@@ -802,7 +838,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				if (alive _x && (_x getVariable ["GeneratorRunning", false])) then {
 					_findNearestGen set [count _findNearestGen,_x];
 				};
-			} count (nearestObjects [player,["Generator_DZ"],30]);
+			} count ([player] call FNC_getPos) nearEntities ["Generator_DZ", 30];
 			
 			// show that pump needs power if no generator nearby.
 			if ((count _findNearestGen) > 0) then {
@@ -849,7 +885,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 	
 	// downgrade system
-	if ((DZE_Lock_Door == _ownerID) && {_isDestructable || _cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base"}) then {
+	if ((DZE_Lock_Door == _characterID) && {_isDestructable || _cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base"}) then {
 		if ((s_player_lastTarget select 1) != _cursorTarget) then {
 			if (s_player_downgrade_build > 0) then {	
 				player removeAction s_player_downgrade_build;
@@ -868,7 +904,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// inplace maintenance tool
 	if ((damage _cursorTarget >= DZE_DamageBeforeMaint) && {_cursorTarget isKindOf "ModularItems" || _cursorTarget isKindOf "DZE_Housebase" || _typeOfCursorTarget == "LightPole_DZ"}) then {
 		if ((s_player_lastTarget select 2) != _cursorTarget) then {
-			if (s_player_maint_build > 0) then {	
+			if (s_player_maint_build > 0) then {
 				player removeAction s_player_maint_build;
 				s_player_maint_build = -1;
 			};

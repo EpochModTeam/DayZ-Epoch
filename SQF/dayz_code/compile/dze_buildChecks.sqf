@@ -22,43 +22,39 @@ _nearestPole = objNull;
 _ownerID = 0;
 _friendlies = [];
 
-_findNearestPoles = nearestObjects [_pos, ["Plastic_Pole_EP1_DZ"], _distance];
-_findNearestPole = [];
-{
-	if (alive _x) then {
-		_findNearestPole set [count _findNearestPole,_x];
-	};
-} count _findNearestPoles;
+_distance = DZE_PlotPole select 0;
+_needText = localize "str_epoch_player_246";
 
-_IsNearPlot = count _findNearestPole;
+_plotcheck = [player, false] call FNC_find_plots;
+_distance = _plotcheck select 0;
+_IsNearPlot = _plotcheck select 1;
+_nearestPole = _plotcheck select 2;
+
 if(_isPole && {_IsNearPlot > 0}) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_44",_distance] call dayz_rollingMessages; [_canBuild, _isPole];};
+
 if(_IsNearPlot == 0) then {
-	if (_requireplot == 0 || _isLandFireDZ) then {
-		_canBuild = true;
-	};
+	_canBuild = true;
 } else {
-	_nearestPole = _findNearestPole select 0;
-	_ownerID = _nearestPole getVariable ["CharacterID","0"];
+	_ownerID = _nearestPole getVariable["CharacterID","0"];
 	if(dayz_characterID == _ownerID) then {
-		if (!_isPole) then {
-			_canBuild = true;
-		};
+		_canBuild = true;
 	} else {
-		if(!_isPole) then {
-			if( DZE_plotManagement ) then {
-				_allowedUIDs = [_nearestPole, false, true] call dze_getPlotFriends;
-				if((dayz_playerUID in _allowedUIDs) || (dayz_characterID in _allowedUIDs)) then {
-					_canBuild = true;
-				};
-			} else {
-				_friendlies	= player getVariable ["friendlyTo",[]];
-				if(_ownerID in _friendlies) then {
-					_canBuild = true;
-				};
+		if (DZE_plotManagement || DZE_plotforLife) then {
+			_buildcheck = [player, _nearestPole, DZE_plotManagement] call FNC_check_owner;
+			_isowner = _buildcheck select 0;
+			_isfriendly = _buildcheck select 1;
+			if (_isowner || _isfriendly) then {
+				_canBuild = true;
+			};
+		} else {
+			_friendlies	= player getVariable ["friendlyTo",[]];
+			if(_ownerID in _friendlies) then {
+				_canBuild = true;
 			};
 		};
 	};
 };
+
 if(!_canBuild) exitWith {  DZE_ActionInProgress = false; format[localize "STR_EPOCH_PLAYER_135",_needText,_distance] call dayz_rollingMessages; [_canBuild, _isPole];};
 
 _buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_storage_base"];
