@@ -30,6 +30,9 @@ class VaultStorageLocked: Land_A_tent {
 
 class WeaponHolder_ItemVault: WeaponHolderBase {
 	scope = public;
+	transportMaxMagazines = 200;
+	transportMaxWeapons = 25;
+	transportMaxBackpacks = 10;
 	displayName = $STR_EPOCH_SAFE;
 	seedItem = "ItemVault";
 };

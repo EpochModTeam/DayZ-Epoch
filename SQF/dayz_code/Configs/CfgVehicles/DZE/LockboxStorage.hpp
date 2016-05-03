@@ -28,6 +28,9 @@ class LockboxStorage: Land_A_tent {
 
 class WeaponHolder_ItemLockbox: WeaponHolderBase {
 	scope = public;
+	transportMaxMagazines = 50;
+	transportMaxWeapons = 20;
+	transportMaxBackpacks = 10;
 	displayName = "Lockbox";
 	seedItem = "ItemLockbox";
 };
