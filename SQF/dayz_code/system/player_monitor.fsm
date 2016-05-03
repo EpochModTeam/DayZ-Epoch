@@ -18,7 +18,7 @@ item13[] = {"Parse_Login",2,250,-66.532227,557.409241,33.467773,607.409241,0.000
 item14[] = {"Hive_Bad",4,218,125.000000,550.000000,225.000000,600.000000,10.000000,"Hive" \n "Bad"};
 item15[] = {"ERROR__Wrong_HIVE",2,250,325.000000,550.000000,425.000000,600.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item16[] = {"Character_Setup",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Character" \n "Setup"};
-item17[] = {"Phase_One",2,4346,-75.000000,650.000000,25.000000,700.000000,0.000000,"Phase One"};
+item17[] = {"Phase_One",2,250,-75.000000,650.000000,25.000000,700.000000,0.000000,"Phase One"};
 item18[] = {"Response",4,218,-175.000000,700.000000,-75.000000,750.000000,0.000000,"Response"};
 item19[] = {"Phase_Two",2,250,-75.000000,750.000000,25.000000,800.000000,0.000000,"Phase Two"};
 item20[] = {"Dead_Player",4,218,125.000000,750.000000,225.000000,800.000000,0.000000,"Dead" \n "Player"};
@@ -108,7 +108,7 @@ item103[] = {"",7,210,-279.000000,371.000000,-271.000000,379.000000,0.000000,""}
 item104[] = {"retry_Login",4,218,-250.000000,350.000000,-150.000000,400.000000,0.000000,"retry Login"};
 item105[] = {"",7,210,-379.000031,471.000000,-371.000000,479.000000,0.000000,""};
 item106[] = {"Finish_1",2,250,-75.000000,1500.000000,25.000000,1550.000000,0.000000,"Finish"};
-item107[] = {"dayz_preloadFini",4,218,50.000000,1550.000000,150.000000,1600.000000,0.000000,"dayz_preloadFinished"};
+item107[] = {"dayz_preloadFini",4,4314,50.000000,1550.000000,150.000000,1600.000000,0.000000,"dayz_preloadFinished"};
 item108[] = {"New_INFECTED_Character",4,218,-271.606934,571.673645,-171.606934,621.673645,5.000000,"New" \n "INFECTED Character" \n "258"};
 item109[] = {"Player_Zombie__S",2,250,-611.348511,641.870300,-521.348145,691.870300,0.000000,"Player Zombie" \n " Selection"};
 item110[] = {"",7,210,-955.744385,664.969482,-947.744385,672.969482,0.000000,""};
@@ -243,8 +243,8 @@ link127[] = {107,32};
 link128[] = {108,109};
 link129[] = {109,110};
 link130[] = {110,64};
-globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-416.145355,452.291077,1642.353271,662.678894,890,1004,1};
-window[] = {2,-1,-1,-1,-1,682,156,1176,156,3,908};
+globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-633.732300,669.877075,2180.669678,358.546051,890,1244,1};
+window[] = {2,-1,-1,-1,-1,786,260,1280,260,3,908};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -674,7 +674,7 @@ class FSM
                          "			{" \n
                          "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
                          "				if (dayz_classicBloodBagSystem) then {" \n
-                         "					if (_x in dayz_typedBags) then {_x = ""ItemBloodbag""};" \n						 
+                         "					if (_x in dayz_typedBags) then {_x = ""ItemBloodbag""};" \n
                          "				} else {" \n
                          "					if (_x == ""ItemBloodbag"") then { _x = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
                          "				};" \n
@@ -744,10 +744,10 @@ class FSM
                          "_setDir = 			_worldspace select 0;" \n
                          "_setPos = 			_worldspace select 1;" \n
                          "" \n
-						 "if (isNil ""freshSpawn"") then {" \n
+                         "if (isNil ""freshSpawn"") then {" \n
                          "	freshSpawn = 0;" \n
                          "};" \n
-						 "" \n
+                         "" \n
                          "{" \n
                          "	if (player getVariable[""hit_""+_x,false]) then { " \n
                          "		[player,_x,_x] spawn fnc_usec_damageBleed; " \n
@@ -786,7 +786,7 @@ class FSM
                          "		_wpns = getArray (_config >> ""weapons"");" \n
                          "		_bcpk = getText (_config >> ""backpack"");" \n
                          "		_bcpkWpn = getText (_config >> ""backpackWeapon"");" \n
-						 "		if(!isNil ""DefaultMagazines"") then {" \n
+                         "		if(!isNil ""DefaultMagazines"") then {" \n
                          "			_gmags = DefaultMagazines;" \n
                          "		};" \n
                          "		if(!isNil ""DefaultWeapons"") then {" \n
@@ -988,7 +988,7 @@ class FSM
                          "  };" \n
                          "} count allMissionObjects ""SpawnableWreck"";" \n
                          "{deleteVehicle _x} count (_setPos nearEntities [""zZombie_Base"",30]);" \n
-						 "" \n
+                         "" \n
                          "if(dayz_paraSpawn && (freshSpawn == 2)) then {" \n
                          "	player setDir _setDir;" \n
                          "	player setPosATL [_setPos select 0,_setPos select 1,2000];" \n
@@ -1071,13 +1071,13 @@ class FSM
                          "	if (count _state > 2) then {" \n
                          "		dayz_temperatur = _state select 2;" \n
                          "	};" \n
-						 "} else {" \n
-						 "	_currentWpn	=	""Makarov"";" \n
+                         "} else {" \n
+                         "	_currentWpn	=	""Makarov"";" \n
                          "	_currentAnim	=	""aidlpercmstpsraswpstdnon_player_idlesteady02"";" \n
                          "};" \n
                          "" \n
                          "reload player;" \n
-						 "" \n
+                         "" \n
                          "if (_currentAnim != """" && !dayz_paraSpawn) then {" \n
                          "	[objNull, player, rSwitchMove,_currentAnim] call RE;" \n
                          "};" \n
@@ -1219,7 +1219,7 @@ class FSM
                          "_myAssets = getText(configFile >> ""CfgPatches"" >> ""dayz_communityassets"" >> ""dayzVersion"");" \n
                          "_mySfx = getNumber(configFile >> ""CfgPatches"" >> ""dayz_sfx"" >> ""dayzVersion"");" \n
                          "_myAnim = getNumber(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""dayzVersion"");" \n
-						 "_myEpoch = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
+                         "_myEpoch = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch"" >> ""dayzVersion"");" \n
                          "_myEpochB = getText(configFile >> ""CfgPatches"" >> ""dayz_epoch_b"" >> ""dayzVersion"");" \n
                          "" \n
                          "/*" \n
@@ -1494,7 +1494,7 @@ class FSM
                         itemno = 58;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Gender_Selection'];};" \n
                          "endLoadingScreen;" \n
-						 "freshSpawn = 2;" \n
+                         "freshSpawn = 2;" \n
                          "" \n
                          "_gender = createDialog 'RscDisplayGenderSelect';" \n
                          "" \n
@@ -1963,7 +1963,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Finish";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"dayz_preloadFinished"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!isNil 'dayz_preloadFinished' && {dayz_preloadFinished}"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
