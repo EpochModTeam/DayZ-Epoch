@@ -90,6 +90,6 @@ if ((_isowner select 0 )) then {
 			};
 		};
 	} count _findNearestObjects;
-	 cutText [format["Take Ownership: %1 objects ownership changed.",_changecount], "PLAIN DOWN"];
+	  format[localize "STR_EPOCH_APLOTFORLIFE_TAKE_OWNERSHIP",_changecount] call dayz_rollingMessages;
 
 };

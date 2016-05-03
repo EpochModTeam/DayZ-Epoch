@@ -12,6 +12,6 @@ if(!isNull _vehicle)then{
 	Z_vehicle = _vehicle;
 	systemChat format[localize "STR_EPOCH_TRADE_SELECTED",typeOf Z_vehicle];
 	_result = true;
-	[format[localize "STR_EPOCH_BUYING_IN", typeOf Z_vehicle]] call Z_filleTradeTitle;
+	[format[localize "STR_EPOCH_TRADE_BUYING_IN", typeOf Z_vehicle]] call Z_filleTradeTitle;
 };
 _result

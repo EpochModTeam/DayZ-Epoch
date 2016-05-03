@@ -217,14 +217,14 @@ if(_enoughMoney) then {
 				if (_success) then {
 					systemChat format[localize "STR_EPOCH_TRADE_SUCCESS", _priceToBuy];
 				} else {
-					systemchat localize "STR_EPOCH_TRADE_DEBUG";
+					systemChat localize "STR_EPOCH_TRADE_DEBUG";
 				};
 		} else {
 				_success = [player,_priceToBuy] call SC_fnc_removeCoins;
 				if (_success) then {
 					systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS", _priceToBuy, CurrencyName];
 				} else {
-					systemchat localize "STR_EPOCH_TRADE_DEBUG";
+					systemChat localize "STR_EPOCH_TRADE_DEBUG";
 				};
 		};
 	} else {
