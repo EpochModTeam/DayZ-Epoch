@@ -1,4 +1,4 @@
-private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_activatingPlayer","_traderID","_done"];
+private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_activatingPlayer","_traderID","_done","_actualMags"];
 // [part_out,part_in, qty_out, qty_in,];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
@@ -29,8 +29,8 @@ while {r_autoTrade} do {
 	_removed = 0;
 
 	// check if current magazine count is greater than 20
-
-	if ((count (magazines player)) > 20) exitWith {localize "str_player_24" call dayz_rollingMessages; r_autoTrade = false};
+	_actualMags = {!(_x in MeleeMagazines)} count (magazines player);
+	if (_actualMags > 20) exitWith {localize "str_player_24" call dayz_rollingMessages; r_autoTrade = false};
 	
 	_canAfford = false;
 	if(_bos == 1) then {

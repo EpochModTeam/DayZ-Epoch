@@ -87,6 +87,8 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 	} forEach (_input);
 	
 	if (_hasInput) then {
+		//Remove melee magazines (BIS_fnc_invAdd and BIS_fnc_invSlotsEmpty fix)
+		{player removeMagazines _x} count MeleeMagazines;
 		_freeSlots = [player] call BIS_fnc_invSlotsEmpty;
 		{
 			_item = _x select 0;

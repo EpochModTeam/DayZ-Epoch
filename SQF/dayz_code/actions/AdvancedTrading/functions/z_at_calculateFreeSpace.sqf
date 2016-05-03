@@ -1,11 +1,12 @@
 private["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBackpacks","_allowedTools","_allowedPrimary","_allowedSidearm","_formattedText","_pic"
-,"_backpack","_backpackAmount","_vehicleWeapons","_vehicleMagazines","_vehicleBackpacks","_tempWeaponsArray","_tempBackpackArray","_tempMagazinesArray"];
+,"_backpack","_backpackAmount","_vehicleWeapons","_vehicleMagazines","_vehicleBackpacks","_tempWeaponsArray","_tempBackpackArray","_tempMagazinesArray","_actualMags"];
 #include "defines.sqf";
 
 _selection = _this select 0;
 _returnArray = [0,0,0];
 if(_selection == 2) then{ //gear
-	_allowedMags = 20 - count(magazines player);
+	_actualMags = {!(_x in MeleeMagazines)} count (magazines player);
+	_allowedMags = 20 - _actualMags;
 	_allowedWeapons = 14 - count(weapons player);
 
 	_pic = getText (configFile >> 'CfgVehicles' >> (typeOf player) >> 'picture');

@@ -93,7 +93,8 @@ if (count(_findNearestTree) >= 1) then {
 	};
 
 	if (_proceed) then {
-
+		//Remove melee magazines (BIS_fnc_invAdd fix)
+		{player removeMagazines _x} count MeleeMagazines;
 		_invResult = false;
 		_i = 0;
 		for "_x" from 1 to _countOut do {

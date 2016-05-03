@@ -31,6 +31,8 @@ switch (_rounded) do {
 	};
 };
 
+//Remove melee magazines (BIS_fnc_invAdd fix)
+{player removeMagazines _x} count MeleeMagazines;
 _i = 0;
 while {_i < _rounded} do {
 	_i = _i + 1; 

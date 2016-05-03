@@ -44,6 +44,8 @@ if (_hasToolbox) then {
 	r_doLoop = false;
 
 	if (_finished) then {
+		//Remove melee magazines (BIS_fnc_invAdd fix)
+		{player removeMagazines _x} count MeleeMagazines;
 		_damage = [_vehicle,_hitpoint] call object_getHit;
 		if (_damage < 0.10) then {
 			_BreakableParts = ["HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass","HitEngine","HitFuel","HitHRotor"];
@@ -55,10 +57,7 @@ if (_hasToolbox) then {
 					_isOK = [player,_part] call BIS_fnc_invAdd;
 					_brokenPart = false;
 				};
-			} else {
-				//Remove melee ammo due to the way ammo is working.
-				{player removeMagazines _x} count MeleeMagazines;
-				
+			} else {				
 				_isOK = [player,_part] call BIS_fnc_invAdd;
 				_brokenPart = false;
 			};

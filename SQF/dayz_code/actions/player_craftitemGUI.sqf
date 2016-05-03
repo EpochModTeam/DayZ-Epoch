@@ -76,6 +76,8 @@ if (count _nearByPile > 0) then {
 	} forEach (_input + _required);
 
 	if (_hasInput) then {
+		//Remove melee magazines (BIS_fnc_invAdd and BIS_fnc_invSlotsEmpty fix)
+		{player removeMagazines _x} count MeleeMagazines;
 		_freeSlots = [player] call BIS_fnc_invSlotsEmpty;
 		{
 			_item = _x select 0;

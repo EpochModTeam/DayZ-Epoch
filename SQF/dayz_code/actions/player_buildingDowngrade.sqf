@@ -84,6 +84,8 @@ if ((count _upgrade) > 0) then {
 	_abortInvAdd = false;
 	_i = 0;
 	_addedItems = [];
+	//Remove melee magazines (BIS_fnc_invAdd fix)
+	{player removeMagazines _x} count MeleeMagazines;
 
 	{
 		_itemOut = _x select 0;

@@ -63,9 +63,7 @@ switch _option do {
 			[player,_range,true,(getPosATL player)] spawn player_alertZombies;
 
 			player setVariable["cashMoney",_newWealth,true];
-
-			PVDZ_plr_Save = [player,(magazines player),true,true];
-			publicVariableServer "PVDZ_plr_Save";
+			call player_forceSave;
 			
 			PVDZE_maintainArea = [player,1,_target];
 			publicVariableServer "PVDZE_maintainArea";

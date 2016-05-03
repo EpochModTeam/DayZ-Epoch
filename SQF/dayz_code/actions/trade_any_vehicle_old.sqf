@@ -116,6 +116,8 @@ if (_qty >= _qty_in) then {
 
 					_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
 					
+					//Remove melee magazines (BIS_fnc_invAdd fix)
+					{player removeMagazines _x} count MeleeMagazines;
 					_config = _keySelected;
 					_isOk = [player,_config] call BIS_fnc_invAdd;
 					waitUntil {!isNil "_isOk"};

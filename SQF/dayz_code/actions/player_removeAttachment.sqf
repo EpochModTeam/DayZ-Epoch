@@ -26,6 +26,8 @@ _weapon = _this select 1;
 _newWeapon = _this select 2;
 
 //check that player has enough room in inventory
+//Remove melee magazines (BIS_fnc_invAdd and BIS_fnc_invSlotsEmpty fix)
+{player removeMagazines _x} count MeleeMagazines;
 if ((([player] call BIS_fnc_invSlotsEmpty) select 4) < 1) exitWith
 {
 	closeDialog 0;
