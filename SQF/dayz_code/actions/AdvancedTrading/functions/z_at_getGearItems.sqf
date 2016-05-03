@@ -21,7 +21,7 @@ if (!isNil '_pic' && _pic == "") then {
 };
 
 _formattedText = format [
-	"<t size='1' align='center' color='#ffffff'>%1 %2</t>"
+	"<t size='1' align='center' color='#ffffff'> %2 </t>"
 	, _pic, localize "STR_UI_GEAR"
 ];
 

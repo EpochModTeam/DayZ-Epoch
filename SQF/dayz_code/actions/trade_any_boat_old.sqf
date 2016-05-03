@@ -1,4 +1,4 @@
-private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_okToSell","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
+private ["_veh","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_okToSell","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -97,25 +97,8 @@ if (_qty >= _qty_in) then {
 			if(dayzTradeResult == "PASS") then {
 
 				if(_buy_o_sell == "buy") then {	
-
-					// First select key color
-					_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
-
-					// then select number from 1 - 2500
-					_keyNumber = (floor(random 2500)) + 1;
-
-					// Combine to key (eg.ItemKeyYellow2494) classname
-					_keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];
-
-					_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
-					
-					//Remove melee magazines (BIS_fnc_invAdd fix)
-					{player removeMagazines _x} count MeleeMagazines;
-					_config = _keySelected;
-					_isOk = [player,_config] call BIS_fnc_invAdd;
-					waitUntil {!isNil "_isOk"};
-					if (_isOk && _isKeyOK) then {
-					
+					_result = call epoch_generateKey;
+					if (_result select 0) then {				
 						_removed = ([player,_part_in,_qty_in] call BIS_fnc_invRemove);
 						if(_removed == _qty_in) then {
 							_dir = round(random 360);
@@ -132,14 +115,14 @@ if (_qty >= _qty_in) then {
 
 							_location = (getPosATL _veh);
 					
-							PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+							PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_result select 1,_activatingPlayer];
 							publicVariableServer  "PVDZE_veh_Publish2";
 
 							player reveal _veh;
 
 							format["Bought %3 for %1 %2, key added to toolbelt.",_qty_in,_textPartIn,_textPartOut] call dayz_rollingMessages;
 						} else {
-							player removeMagazine _keySelected;
+							player removeMagazine (_result select 1);
 						};
 					} else {
 						localize "str_epoch_player_107" call dayz_rollingMessages;

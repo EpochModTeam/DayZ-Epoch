@@ -153,6 +153,7 @@ if (!isDedicated) then {
 	dze_getPlotFriends = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_getPlotFriends.sqf";
 	dze_requiredItemsCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_requiredItemsCheck.sqf";
 	dze_surrender_off = {player setVariable ["DZE_Surrendered",false,true]; DZE_Surrender = false;};
+	epoch_generateKey = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_generateKey.sqf";
 	epoch_tempKeys = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_tempKeys.sqf";
 	epoch_totalCurrency = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_totalCurrency.sqf";
 	epoch_itemCost = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_itemCost.sqf";

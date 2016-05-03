@@ -1,4 +1,4 @@
-private ["_veh","_location","_isOk","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_keyColor","_keyNumber","_keySelected","_isKeyOK","_config","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
+private ["_veh","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -117,27 +117,8 @@ if (_finished) then {
 			//diag_log format["DEBUG Complete Trade: %1", dayzTradeResult];
 
 			if(dayzTradeResult == "PASS") then {
-
-				// First select key color
-				_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
-
-				// then select number from 1 - 2500
-				_keyNumber = (floor(random 2500)) + 1;
-
-				// Combine to key (eg.ItemKeyYellow2494) classname
-				_keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];	
-
-				_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
-				
-				//Remove melee magazines (BIS_fnc_invAdd fix)
-				{player removeMagazines _x} count MeleeMagazines;
-				_config = _keySelected;
-				_isOk = [player,_config] call BIS_fnc_invAdd;
-					
-				waitUntil {!isNil "_isOk"};
-
-				if (_isOk && _isKeyOK) then {
-
+				_result = call epoch_generateKey;
+				if (_result select 0) then {
 					_done = [[[_part_in,_qty_in]],0] call epoch_returnChange;
 					if (_done) then {	
 
@@ -156,7 +137,7 @@ if (_finished) then {
 
 						_location = (getPosATL _veh);
 
-						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_result select 1,_activatingPlayer];
 						publicVariableServer  "PVDZE_veh_Publish2";
 						
 						format[localize "STR_EPOCH_ACTIONS_11",_qty_in,_textPartIn,_textPartOut] call dayz_rollingMessages;
