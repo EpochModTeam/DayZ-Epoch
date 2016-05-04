@@ -910,7 +910,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};
 		if (s_player_maint_build < 0) then {
-			_text2 = _text + " (%" + str(round ((damage _cursorTarget) * 100)) + " damaged)";
+			_text2 = _text + " (" + str(round ((damage _cursorTarget) * 100)) + "% damaged)";
 			s_player_lastTarget set [2,_cursorTarget];
 			s_player_maint_build = player addAction [format[localize "STR_EPOCH_ACTIONS_MAINTAIN",_text2], "\z\addons\dayz_code\actions\player_buildingMaint.sqf",_cursorTarget, -2, false, true];
 		};
