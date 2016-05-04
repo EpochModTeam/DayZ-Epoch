@@ -3,7 +3,7 @@
 *
 *	Gets all your items stored in your gear and innitiates the selling list.
 **/
-private ["_mags","_weaps","_skin","_formattedText","_icon"];
+private ["_mags","_weaps","_skin","_formattedText"];
 #include "defines.sqf";
 call Z_clearLists;
 Z_SellArray = [];
@@ -12,16 +12,11 @@ Z_SellableArray = [];
  _weaps = weapons player;
 
 _skin = typeOf player;
-
-_pic = getText (configFile >> 'CfgVehicles' >> _skin >> 'picture');
-_icon = getText (configFile >> 'CfgVehicles' >> _skin >> 'icon');
-
-if (!isNil '_pic' && _pic == "") then {
-  _pic = _icon;
-};
+_pic = getText (configFile >> 'CfgVehicles' >> _skin >> 'portrait');
 
 _formattedText = format [
-	"<t size='1' align='center' color='#ffffff'> %2 </t>"
+	"<t size='1' align='center' color='#ffffff'>%2</t><br />" +
+	"<img image='%1' size='3' align='center'/><br />"
 	, _pic, localize "STR_UI_GEAR"
 ];
 
