@@ -12,6 +12,10 @@ class 10Rnd_127x99_m107
 {
 	weight = 0.5;
 };
+class 3rnd_Anzio_20x102mm
+{
+	weight = 0.4;
+};
 class 5Rnd_762x51_M24
 {
 	weight =  0.2;

@@ -71,7 +71,11 @@ class MR43
 class MR43_DZ
 {
 	weight = 3.5;
-}; 
+};
+class RedRyder
+{
+	weight = 1;
+};
 class Saiga12K
 {
 	weight = 3.5;

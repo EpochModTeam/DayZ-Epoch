@@ -55,6 +55,10 @@ class 2Rnd_12Gauge_Buck
 {
 	weight = 0.075;
 };
+class 350Rnd_BB_Magazine
+{
+	weight = 0.06;
+};
 class 8Rnd_12Gauge_Buck
 {
 	weight = 0.3;

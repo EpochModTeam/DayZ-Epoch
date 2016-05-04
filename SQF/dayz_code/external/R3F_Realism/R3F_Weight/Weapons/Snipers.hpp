@@ -32,6 +32,10 @@ class BAF_LRR_scoped
 {
 	weight = 5.6;
 };
+class Anzio_20
+{
+	weight = 14;
+};
 class m107_DZ
 {
 	weight = 14;
