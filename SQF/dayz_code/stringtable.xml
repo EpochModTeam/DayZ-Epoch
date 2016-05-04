@@ -15794,6 +15794,9 @@
 			<English>Buying in %1.</English>
 			<Russian>Покупка в %1.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELLING_FROM">
+			<English>Selling from %1.</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_TOTAL_SPACE_SUCCEEDED">
 			<English>Total space succeeded: Mag=1, Tool=1, Side=5, Primary=10 slots and your bag capacity is %1 where you tried %2 slots.</English>
 		</Key>

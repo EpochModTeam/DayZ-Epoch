@@ -14,7 +14,7 @@ _weaps = _this select 0;
 _mags = _this select 1;
 _extraText = _this select 2;
 _vehTrade = false;
-if (call Z_checkCloseVehicle) then {
+if (false call Z_checkCloseVehicle) then {
 	_all = _weaps + _mags + [(typeOf Z_vehicle)];
 	_vehTrade = true;
 } else {

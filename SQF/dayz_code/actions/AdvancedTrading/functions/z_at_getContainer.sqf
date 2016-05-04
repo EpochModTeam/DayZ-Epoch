@@ -54,7 +54,7 @@ if(Z_Selling)then{
 		case 1: {
 			Z_SellingFrom = 1;
 			[localize "STR_EPOCH_TRADE_BUYING_VEHICLE"] call Z_filleTradeTitle;
-			_canBuyInVehicle = call Z_checkCloseVehicle;
+			_canBuyInVehicle = true call Z_checkCloseVehicle;
 			if(_canBuyInVehicle)then{
 				[1] call Z_calculateFreeSpace;
 			}else{
