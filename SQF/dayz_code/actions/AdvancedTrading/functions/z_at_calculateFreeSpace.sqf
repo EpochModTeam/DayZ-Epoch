@@ -1,5 +1,5 @@
 private["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBackpacks","_allowedTools","_allowedPrimary","_allowedSidearm","_formattedText","_pic"
-,"_backpack","_backpackAmount","_vehicleWeapons","_vehicleMagazines","_vehicleBackpacks","_tempWeaponsArray","_tempBackpackArray","_tempMagazinesArray","_actualMags"];
+,"_backpack","_vehicleWeapons","_vehicleMagazines","_vehicleBackpacks","_tempWeaponsArray","_tempBackpackArray","_tempMagazinesArray","_actualMags"];
 #include "defines.sqf";
 
 _selection = _this select 0;
@@ -19,12 +19,8 @@ if(_selection == 2) then{ //gear
 	(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText _formattedText;
 
 	_backpack = unitBackpack player;
-	_backpackAmount = 0;
-	if (!isNil "_backpack") then {
-		_backpackAmount = 1;
-	};
+	_allowedBackpacks = if (isNull _backpack) then {1} else {0};
 
-	_allowedBackpacks = 1 - _backpackAmount;
 	_returnArray = [_allowedMags, _allowedWeapons, _allowedBackpacks];
 };
 if(_selection == 1) then{ //vehicle
