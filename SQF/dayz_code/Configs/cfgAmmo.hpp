@@ -438,7 +438,6 @@ class CfgAmmo
 		simulationStep = 1;
 		soundFly[] = {"dayz_weapons\sounds\roadflare", 0.316228, 1, 60};
 		cost = 100;
-		explosive = false;
 		deflecting = 60;
 		explosionTime = 0;
 		timeToLive = 300;
