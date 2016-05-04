@@ -10,9 +10,10 @@ Z_SellableArray = [];
 Z_SellArray = [];
 _vehicle = objNull;
 
-_list = nearestObjects [(getPosATL player), ["AllVehicles"], Z_VehicleDistance];
+_pos = [player] call FNC_GetPos;
+_list = nearestObjects [_pos, ["Air","LandVehicle","Ship"], Z_VehicleDistance];
 {
-	if (!isNull _x && local _x && !isPlayer _x && alive _x && !(_x isKindOf "zZombie_base")) then {
+	if (!isNull _x && local _x && alive _x) then {
 		_vehicle = _x;
 	};
 }count _list;
