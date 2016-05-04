@@ -67,7 +67,7 @@ if(_selection == 1) then{ //vehicle
 
 		_allowedWeapons = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportMaxWeapons');
 		_allowedMags = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportMaxMagazines');
-		_allowedBackpacks = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportmaxbackpacks ');
+		_allowedBackpacks = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportmaxbackpacks');
 	};
 	_returnArray = [_allowedMags - _vehicleMagazines, _allowedWeapons - _vehicleWeapons, _allowedBackpacks - _vehicleBackpacks];
 };
