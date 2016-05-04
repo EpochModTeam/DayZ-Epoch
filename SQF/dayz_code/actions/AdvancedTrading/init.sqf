@@ -100,6 +100,7 @@ if(isNil "Z_AdvancedTradingInit")then{
 	Z_AdvancedTradingInit = true;
 };
 
+Z_Selling = true; // Always start menu in buy mode (flipped in z_at_changeBuySell.sqf on startup)
 createDialog "AdvancedTrading";
 
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVESELLITEMBUTTON) ctrlSetText " < ";
