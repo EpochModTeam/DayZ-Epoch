@@ -1,6 +1,7 @@
 class 200Rnd_556x45_M249: CA_Magazine
 {
 	cartridgeName = "556x45";
+	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
 	
 	class ItemActions
 	{

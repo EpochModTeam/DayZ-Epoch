@@ -51,6 +51,7 @@ class 5Rnd_762x51_M24 : CA_Magazine
 class 100Rnd_762x51_M240: CA_Magazine
 {
 	cartridgeName = "762x51";
+	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
 	
 	class ItemActions
 	{
