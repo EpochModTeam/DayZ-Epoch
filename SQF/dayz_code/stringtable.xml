@@ -15747,12 +15747,12 @@
 			<Russian>Добавлено: %1 предметов в рюкзак</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ADDED_QTY">
-			<English>%1 x %2 added</English>
-			<Russian>%1 x %2 добавлено</Russian>
+			<English>%3: %1 x %2 added</English>
+			<Russian>%3: %1 x %2 добавлено</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ADDED">
-			<English>%1 added</English>
-			<Russian>%1 добавлено</Russian>
+			<English>%2: %1 added</English>
+			<Russian>%2: %1 добавлено</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESSFUL">
 			<English>Trade successfull.</English>
