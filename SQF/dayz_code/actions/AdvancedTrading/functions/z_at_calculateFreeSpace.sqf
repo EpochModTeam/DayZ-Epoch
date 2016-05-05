@@ -7,7 +7,8 @@ _returnArray = [0,0,0];
 if(_selection == 2) then{ //gear
 	_actualMags = {!(_x in MeleeMagazines)} count (magazines player);
 	_allowedMags = 20 - _actualMags;
-	_allowedWeapons = 14 - count(weapons player);
+	// 12 toolbelt + 1 Binoculars + 1 NVG + 1 Pistol + 1 Primary (onBack isn't counted in weapons player)
+	_allowedWeapons = 16 - count(weapons player);
 
 	_pic = getText (configFile >> 'CfgVehicles' >> (typeOf player) >> 'picture');
 

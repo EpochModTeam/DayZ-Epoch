@@ -50,7 +50,7 @@ if(_selection == 2) then{ //gear
 
 	_allowedBackpacks = 1 - _currentBackpacks;
 
-	_allowedTools = 12;
+	_allowedTools = 14; // 12 toolbelt + 1 Binocular + 1 NVG
 
 	{
 		_parentClasses =  [(configFile >> "CfgWeapons" >> _x ),true] call BIS_fnc_returnParents;
