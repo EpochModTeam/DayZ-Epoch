@@ -1,24 +1,26 @@
 /**
-*	[_weaps,_mags,_extraText] call Z_checkArrayInConfig
+*	[_weaps,_mags,_extraText,_bags] call Z_checkArrayInConfig
 *
 *   @param Array of Strings _this select 0 (_weaps) -> all weapons/items in the container
 *   @param Array of Strings _this select 1 (_mags) -> all magazines in the container
 *	@param String 			_this select 2 (_extraText) -> Indicator what container you are trading from
+*   @param Array of Strings _this select 3 (_bags) -> all backpacks in the container
 *
 *	Fills up the sell or buy list if the item has a valid config.
 **/
-private ["_weaps","_mags","_extraText","_all","_total","_arrayOfTraderCat","_totalPrice","_ctrltext","_backUpText"];
+private ["_weaps","_mags","_extraText","_all","_total","_arrayOfTraderCat","_totalPrice","_ctrltext","_backUpText","_bags"];
 #include "defines.sqf";
 
 _weaps = _this select 0;
 _mags = _this select 1;
 _extraText = _this select 2;
+_bags = _this select 3;
 _vehTrade = false;
 if (false call Z_checkCloseVehicle) then {
-	_all = _weaps + _mags + [(typeOf Z_vehicle)];
+	_all = _weaps + _mags + _bags + [(typeOf Z_vehicle)];
 	_vehTrade = true;
 } else {
-	_all = _weaps + _mags;
+	_all = _weaps + _mags + _bags;
 };
 _total = count(_all);
 _arrayOfTraderCat = Z_traderData;

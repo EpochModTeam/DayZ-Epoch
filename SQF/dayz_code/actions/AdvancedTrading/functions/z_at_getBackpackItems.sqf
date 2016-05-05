@@ -43,7 +43,7 @@ if (!isNull _backpack) then {
 		};
 	}forEach _kinds2;
 
-	[_normalMags,_normalWeaps, typeOf _backpack] call Z_checkArrayInConfig;
+	[_normalMags,_normalWeaps, typeOf _backpack,[]] call Z_checkArrayInConfig;
 }else{
 	_ctrltext = localize "STR_EPOCH_TRADE_STUPID";
 	ctrlSetText [Z_AT_TRADERLINE2, _ctrltext];

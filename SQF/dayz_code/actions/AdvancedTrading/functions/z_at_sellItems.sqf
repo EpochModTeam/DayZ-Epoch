@@ -1,4 +1,4 @@
-private ["_index","_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success"];
+private ["_index","_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success","_bag"];
 
 _index = count (Z_SellArray) - 1;
 _tempArray = Z_SellArray;
@@ -140,24 +140,33 @@ if(_index > -1)then{
 		_wA = [];
 		_mA = [];
 		_vehTraded = false;
+		_bagTraded = false;
 
 		{
 			if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
 				_localResult = [_vehArray, (_x select 1)] call _deleteTradedVehicle;
 				if (_localResult == 1) then {_vehTraded = true;};
 			} else {
-				_localResult = [player,(_x select 0),1] call BIS_fnc_invRemove;
-				if(_localResult != 1)then{
-					if(_x select 1 == "trade_items")then{
-						_mA set [count(_mA),0];
+				if (_x select 1 == "trade_backpacks") then {
+					//BIS_fnc_invRemove doesn't handle backpacks
+					_bag = unitBackpack player;
+					removeBackpack player;
+					_localResult = if (_bag != (unitBackpack player)) then {1} else {0};
+					if (_localResult == 1) then {_bagTraded = true;};
+				} else {
+					_localResult = [player,(_x select 0),1] call BIS_fnc_invRemove;
+					if(_localResult != 1)then{
+						if(_x select 1 == "trade_items")then{
+							_mA set [count(_mA),0];
+						}else{
+							_wA set [count(_wA),0];
+						};
 					}else{
-						_wA set [count(_wA),0];
-					};
-				}else{
-					if(_x select 1 == "trade_items")then{
-						_mA set [count(_mA),1];
-					}else{
-						_wA set [count(_wA),1];
+						if(_x select 1 == "trade_items")then{
+							_mA set [count(_mA),1];
+						}else{
+							_wA set [count(_wA),1];
+						};
 					};
 				};
 			};
@@ -169,6 +178,9 @@ if(_index > -1)then{
 		_outcome set [2,[]];
 		if (_vehTraded) then {
 			_outcome set [3,[1]];
+		};
+		if (_bagTraded) then {
+			_outcome set [2,[1]];
 		};
 	};
 

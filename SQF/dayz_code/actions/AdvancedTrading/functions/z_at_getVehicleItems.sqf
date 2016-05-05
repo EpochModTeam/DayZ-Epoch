@@ -31,9 +31,11 @@ if (!isNull _vehicle) then {
 	Z_vehicle = _vehicle;
 	_mags = getMagazineCargo _vehicle;
 	_weaps = getWeaponCargo _vehicle;
+	_bags = getBackpackCargo _vehicle;
 
 	_normalMags = [];
 	_normalWeaps = [];
+	_normalBags = [];
 
 	_kinds = _mags select 0;
 	_ammmounts = _mags select 1;
@@ -54,8 +56,21 @@ if (!isNull _vehicle) then {
 			_counter = _counter + 1;
 		};
 	}forEach _kinds2;
+	
+	// Can't sell backpacks from vehicle because there is currently no command to remove single backpacks from cargo (only clearBackpackCargo which removes all)
+	/*
+	_kinds3 = _bags select 0;
+	_ammmounts3 = _bags select 1;
+	{
+		_counter = 0 ;
+		while{	_counter < ( 	_ammmounts3 select _forEachIndex)}do{
+			_normalBags set [count(_normalBags),_x];
+			_counter = _counter + 1;
+		};
+	}forEach _kinds3;
+	*/
 
-	[_normalWeaps,_normalMags, typeOf _vehicle] call Z_checkArrayInConfig;
+	[_normalWeaps,_normalMags, typeOf _vehicle,_normalBags] call Z_checkArrayInConfig;
 }else{
 	_ctrltext = localize "STR_EPOCH_PLAYER_245";
 	ctrlSetText [Z_AT_TRADERLINE2, _ctrltext];
