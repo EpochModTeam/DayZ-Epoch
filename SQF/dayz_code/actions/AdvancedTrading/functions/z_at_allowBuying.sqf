@@ -1,5 +1,5 @@
 private ["_selection","_return","_toBuyWeaps","_toBuyMags","_toBuyBags","_toolsToBuy","_sidearmToBuy","_primaryToBuy","_currentPrimarys"
-,"_currentSecondarys","_currentSec","_currentPrim","_currentTool","_p","_s","_b","_check0","_check1","_check2","_check3","_check4","_mags","_weaps","_bags"
+,"_currentSec","_currentPrim","_currentTool","_p","_b","_check0","_check1","_check2","_check3","_check4","_mags","_weaps","_bags"
 ,"_normalBags","_normalMags","_normalWeaps","_allowedMags","_allowedPrimary","_allowedTools","_allowedSidearm","_allowedWeapons","_allowedBackpacks"
 ,"_totalSpace","_totalNewSpace","_counter","_parentClasses","_alreadyInBackpack","_kinds","_kinds2","_kinds3","_ammmounts","_ammmounts2","_ammmounts3",
 "_actualMags"
@@ -32,14 +32,13 @@ if(_selection == 2) then{ //gear
 
 	_allowedPrimary = 1 - _currentPrimarys;
 
-	_currentSecondarys = 0;
-
-	_s = secondaryWeapon player;
-	if ( !isNil '_s' && _s != "" ) then {
-		_currentSecondarys = 1;
-	};
-
-	_allowedSidearm = 1 - _currentSecondarys;
+	// (secondaryWeapon player) returns launcher, doesn't work for pistol
+	_allowedSidearm = 1;
+	{
+		if (getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 2) exitWith { // 2 = WeaponSlotHandGun (occupies pistol slot)
+			_allowedSidearm = 0;
+		};
+	} count (weapons player);
 
 	_currentBackpacks = 0;
 
