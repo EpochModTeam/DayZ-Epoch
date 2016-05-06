@@ -47,7 +47,7 @@ if (_haswholebag) then {
 	_badBag = true;
 };
 
-if (dayz_classicBloodBagSystem && ("ItemBloodbag" in (magazines player))) then {_wholeBag = true;};
+if (dayz_classicBloodBagSystem && ("ItemBloodbag" in (magazines player))) then {_wholeBag = true; _badBag = false;};
 
 call fnc_usec_medic_removeActions;
 r_action = false;
