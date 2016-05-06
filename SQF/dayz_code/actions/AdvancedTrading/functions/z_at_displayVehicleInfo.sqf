@@ -1,5 +1,6 @@
 private ['_item', '_type','_picture',"_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks"
-,"_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText"
+,"_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_fuelCapacity","_maxSpeed","_armor","_seats","_weapons",
+"_weapons2","_config","_wepText","_turret","_text"
 ];
 
 #include "defines.sqf";
@@ -10,11 +11,11 @@ _picture = _item select 4;
 _class = _item select 0;
 _display = _item select 3;
 
-_fuelCapacity = nil;
-_maxSpeed = nil;
-_armor = nil;
-_seats = nil;
-_weapons = nil;
+_fuelCapacity = 0;
+_maxSpeed = 0;
+_armor = 0;
+_seats = 0;
+_weapons = [];
 
 _transportMaxWeapons = 0;
 _transportMaxMagazines = 0;
@@ -35,17 +36,84 @@ if (Z_Selling) then {
 	_sellCurrency = _item select 8;
 };
 
-if ( isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxWeapons')) then {
-	_transportMaxWeapons = getNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxWeapons');
+_config = configFile >> 'CfgVehicles' >> _class;
+
+if (isNumber (_config >> 'transportMaxWeapons')) then {
+	_transportMaxWeapons = getNumber (_config >> 'transportMaxWeapons');
 };
 
-if ( isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines')) then {
-	_transportMaxMagazines  = getNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines');
+if (isNumber (_config >> 'transportMaxMagazines')) then {
+	_transportMaxMagazines = getNumber (_config >> 'transportMaxMagazines');
 };
 
-if ( isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxBackpacks')) then {
-	_transportmaxBackpacks  = getNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxBackpacks');
+if (isNumber (_config >> 'transportMaxBackpacks')) then {
+	_transportmaxBackpacks = getNumber (_config >> 'transportMaxBackpacks');
 };
+
+if (isNumber (_config >> 'fuelCapacity')) then {
+	_fuelCapacity = getNumber (_config >> 'fuelCapacity');
+};
+
+if (isNumber (_config >> 'maxSpeed')) then {
+	_maxSpeed = getNumber (_config >> 'maxSpeed');
+};
+
+if (isNumber (_config >> 'armor')) then {
+	_armor = getNumber (_config >> 'armor');
+};
+
+if (isNumber (_config >> 'transportSoldier')) then {
+	_seats = getNumber (_config >> 'transportSoldier');
+};
+
+{
+	if ((isNumber (_config >> _x)) && {getNumber (_config >> _x) > 0}) then {
+		_seats = _seats + 1;
+	};
+} forEach ["hasDriver","hasGunner","hasCommander"];
+
+if (isArray (_config >> 'weapons')) then {
+	_weapons = getArray (_config >> 'weapons');
+};
+
+{
+	_turret = _x;
+	if (isArray (_config >> 'Turrets' >> _turret >> 'weapons')) then {
+		{
+			_weapons set [count _weapons,_x];
+		} forEach (getArray (_config >> 'Turrets' >> _turret >> 'weapons'));
+	};
+	{
+		if ((isNumber (_config >> 'Turrets' >> _turret >> _x)) && {getNumber (_config >> 'Turrets' >> _turret >> _x) > 0}) then {
+			_seats = _seats + 1;
+		};
+	} forEach ["hasDriver","hasGunner","hasCommander"];
+} forEach ["MainTurret","BackTurret","SideTurret","RightDoorGun","BackDoorGun","LeftDoorGun","AGS30_Turret","PK_Turret"];
+	 
+// Get weapon display names
+_weapons2 = [];
+{
+	if !(["horn",_x] call fnc_inString) then {
+		_text = getText (configFile >> 'CfgWeapons' >> _x >> 'displayName');
+		if (_text in _weapons2) then {
+			_index = _weapons2 find _text;
+			_weapons2 set [_index,_text + "x2"];
+		} else {
+			_weapons2 set [count _weapons2,_text];
+		};
+	};
+} forEach _weapons;
+
+if (count _weapons2 < 1) then {_weapons2 = [localize "STR_EPOCH_NONE"];};
+
+_wepText = "";
+{
+	if (_forEachIndex > 0) then {
+		_wepText = _wepText + ', ' + _x;
+	} else {
+		_wepText = _wepText + _x;
+	};
+} forEach _weapons2;
 
 if (Z_SingleCurrency) then {
 	_formattedText = format [
@@ -56,8 +124,14 @@ if (Z_SingleCurrency) then {
 	"<t color='#33BFFF'>%13: </t><t color='#ffffff'>%6 %7</t><br />" +
 	"<t color='#33BFFF'>%14: </t><t color='#ffffff'>%9</t><br />" +
 	"<t color='#33BFFF'>%15: </t><t color='#ffffff'>%8</t><br />" +
-	"<t color='#33BFFF'>%16: </t><t color='#ffffff'>%4</t><br />"
-	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_BAGS"
+	"<t color='#33BFFF'>%16: </t><t color='#ffffff'>%4</t><br />" +
+	"<t color='#33BFFF'>%17: </t><t color='#ffffff'>%18</t><br />" + // Armor
+	//"<t color='#33BFFF'>%19: </t><t color='#ffffff'>%20</t><br />" + // Fuel
+	"<t color='#33BFFF'>%21%22: </t><t color='#ffffff'>%23</t><br />" + // MaxSpeed
+	"<t color='#33BFFF'>%24: </t><t color='#ffffff'>%25</t><br />" + // Seats
+	"<t color='#33BFFF'>%26: </t><t color='#ffffff'>%27</t>" // Weapons
+	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_BAGS",
+	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
 	];
 
 
@@ -75,8 +149,14 @@ if (Z_SingleCurrency) then {
 	"<t color='#33BFFF'>%16: </t><t color='#ffffff'>%6 <img image='%12' /> %7</t><br />" +
 	"<t color='#33BFFF'>%17: </t><t color='#ffffff'>%8</t><br />" +
 	"<t color='#33BFFF'>%18: </t><t color='#ffffff'>%9</t><br />" +
-	"<t color='#33BFFF'>%19: </t><t color='#ffffff'>%4</t><br />"
-	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_BAGS"
+	"<t color='#33BFFF'>%19: </t><t color='#ffffff'>%4</t><br />" +
+	"<t color='#33BFFF'>%20: </t><t color='#ffffff'>%21</t><br />" + // Armor
+	//"<t color='#33BFFF'>%22: </t><t color='#ffffff'>%23</t><br />" + // Fuel
+	"<t color='#33BFFF'>%24%25: </t><t color='#ffffff'>%26</t><br />" + // MaxSpeed
+	"<t color='#33BFFF'>%27: </t><t color='#ffffff'>%28</t><br />" + // Seats
+	"<t color='#33BFFF'>%29: </t><t color='#ffffff'>%30</t>" // Weapons
+	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_BAGS",
+	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
 	];
 
 

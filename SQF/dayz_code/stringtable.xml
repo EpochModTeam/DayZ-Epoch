@@ -10793,15 +10793,6 @@
 			<French>Un joueur veut vous marquer comme amical(e). Pour accepter, marquez ce joueur comme amical(e).</French>
 			<Czech>Jiný hráč si vás chce označit jako přítele. K příjmutí, označte hráče jako přítele.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_6">
-			<English>Trading canceled.</English>
-			<German>Handel abgebrochen.</German>
-			<Russian>Торговля отменена.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Handel is afgebroken</Dutch>
-			<French>Échange annulé.</French>
-			<Czech>Obchodování přerušeno.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_7">
 			<English>Cannot access gear in a locked vehicle.</English>
 			<German>Es kann nicht auf das Inventar bei verschlossenen Fahrzeugen zugegriffen werden.</German>
@@ -12712,12 +12703,14 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_249">
 			<English>Walk</English>
-			<German>Laufen</German>
-			<Russian>Пешком</Russian>
-			<Spanish>Walk</Spanish>
-			<Dutch>Walk</Dutch>
-			<French>Walk</French>
-			<Czech>Jít</Czech>
+			<French>Marcher</French>
+			<Spanish>Caminar</Spanish>
+			<Italian>Cammina</Italian>
+			<Hungarian>Gyaloglás</Hungarian>
+			<Polish>Marsz</Polish>
+			<Russian>Идти</Russian>
+			<German>Gehen</German>
+			<Czech>Chůze</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_250">
 			<English>Run</English>
@@ -12992,20 +12985,24 @@
 		<Key ID="STR_EPOCH_PLAYER_291">
 			<English>Buy</English>
 			<German>Kaufen</German>
+			<Italian>Compra</Italian>
+			<Spanish>Comprar</Spanish>
+			<French>Acheter</French>
+			<Czech>Kup</Czech>
 			<Russian>Купить</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
-			<Czech>Koupit</Czech>
+			<Polish>Kup</Polish>
+			<Hungarian>Megvesz</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_292">
 			<English>Sell</English>
 			<German>Verkaufen</German>
-			<Russian>Продать</Russian>
-			<!-- <Spanish></Spanish> -->
-			<!-- <Dutch></Dutch> -->
-			<!-- <French></French> -->
+			<Italian>Vendi</Italian>
+			<Spanish>Vender</Spanish>
+			<French>Vendre</French>
 			<Czech>Prodat</Czech>
+			<Russian>Продать</Russian>
+			<Polish>Sprzedaj</Polish>
+			<Hungarian>Elad</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_293">
 			<English>Buy For</English>
@@ -15544,7 +15541,10 @@
 			<Russian>Транспорт</Russian>
 			<Spanish>Vehículo</Spanish>
 			<French>Véhicule</French>
-			<Czech>Vozidlo</Czech>
+			<Czech>Vozidlo</Czech>			
+			<Italian>Veicolo</Italian>
+			<Polish>Pojazd</Polish>
+			<Hungarian>Jármű</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BACKPACK">
 			<English>Backpack</English>
@@ -15636,10 +15636,13 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NOTHING">
 			<English>Nothing</English>
-			<German>Nichts</German>
-			<Russian>Ничего</Russian>
-			<Spanish>Nada</Spanish>
+			<Russian>Ничего</Russian>			
 			<French>Rien</French>
+			<Spanish>Nada</Spanish>
+			<Italian>Niente</Italian>
+			<Hungarian>Semmi</Hungarian>
+			<Polish>Nic</Polish>
+			<German>Nichts</German>
 			<Czech>Nic</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NO_INFO">
@@ -15775,16 +15778,30 @@
 			<Russian>Отладка: Что-то пошло не так в процессе оплаты. Пожалуйста, сообщите об этой проблеме.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_CONTAINER_FULL">
-			<English>You could not buy these items because the container lacks space to hold them.</English>
-			<Russian>Вы могли бы всё это купить, но места не хватает, поэтому покупка отменена.</Russian>
+			<English>Cannot buy: No empty slots!</English>
+			<German>Kauf nicht möglich: Keine freien Slots</German>
+			<Italian>Impossibile comprare: nessuno slot vuoto!</Italian>
+			<Spanish>No puedes comprar: ¡no hay huecos libres!</Spanish>
+			<French>Achat impossible : aucun emplacement vide !</French>
+			<Czech>Nelze koupit: Není volné místo!</Czech>
+			<Russian>Нет пустых ячеек!</Russian>
+			<Polish>Nie można kupić: brak wolnych miejsc!</Polish>
+			<Hungarian>Nem vásárolhatsz! Nincs üres hely!</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NEED_COINS">
 			<English>You need %1 %2 to buy all these items.</English>
 			<Russian>Вам нужно %1 %2 для покупки.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_NEED_MONEY">
-			<English>You need more money to buy all these items.</English>
-			<Russian>Вам нужно больше денег, чтобы купить это.</Russian>
+		<Key ID="STR_EPOCH_TRADE_NEED_MONEY">		
+			<English>Cannot buy: Not enough money!</English>
+			<German>Kauf nicht möglich: Nicht genug Geld!</German>
+			<Italian>Impossibile comprare: servono più soldi!</Italian>
+			<Spanish>No puedes comprar: ¡no tienes suficiente dinero!</Spanish>
+			<French>Achat impossible : argent insuffisant !</French>
+			<Czech>Nelze koupit: Nemáte dost peněz!</Czech>
+			<Russian>Недостаточно средств!</Russian>
+			<Polish>Nie można kupić: za mało pieniędzy!</Polish>
+			<Hungarian>Nem tudod megvenni: Nincs elég pénzed!</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELECTED">
 			<English>Selected %1</English>
@@ -15846,9 +15863,12 @@
 			<English>Name</English>
 			<German>Name</German>
 			<Russian>Имя</Russian>
-			<Spanish>Nombre</Spanish>
-			<French>Prénom</French>
+			<Italian>Nome</Italian>
+			<Spanish>Nombrar</Spanish>
+			<French>Nom</French>
 			<Czech>Jméno</Czech>
+			<Polish>Nazwa</Polish>
+			<Hungarian>Név</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_CLASS">
 			<English>Class</English>
@@ -15869,6 +15889,14 @@
 		<Key ID="STR_EPOCH_BAGS">
 			<English>Bags</English>
 			<Russian>Рюкзаков</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_SEATS">
+			<English>Seats</English>
+			<German>Sitze</German>
+			<Russian>места</Russian>
+			<Spanish>Asientos</Spanish>
+			<French>Des places</French>
+			<Czech>Sedadla</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_YOUR_GEAR">
 			<English>your gear</English>
@@ -17060,11 +17088,14 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SPECIALFORCES">
 			<English>Special Forces</English>
-			<German>Special Forces</German>
-			<Russian>Силы особого назначения</Russian>
-			<Spanish>Special Forces</Spanish>
-			<French>Special Forces</French>
-			<Czech>Special Forces</Czech>
+			<Russian>Силы особого назначения</Russian>		
+			<French>Forces spéciales</French>
+			<Spanish>Fuerzas especiales</Spanish>
+			<Italian>Forze speciali</Italian>
+			<Hungarian>Különleges erők</Hungarian>
+			<Polish>Oddziały specjalne</Polish>
+			<German>Spezialeinheiten</German>
+			<Czech>Speciální jednotky</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DESERTCAMO">
 			<English>Desert Camo</English>
@@ -17116,19 +17147,25 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MARKSMAN">
 			<English>Marksman</English>
-			<German>Marksman</German>
-			<Russian>Меткий стрелок</Russian>
-			<Spanish>Marksman</Spanish>
-			<French>Marksman</French>
-			<Czech>Marksman</Czech>
+			<Russian>Меткий стрелок</Russian>		
+			<German>Scharfschütze</German>
+			<Italian>Tiratore scelto</Italian>
+			<Spanish>Tirador</Spanish>
+			<French>Tireur d'élite</French>
+			<Czech>Ostřelovač</Czech>
+			<Polish>Snajper</Polish>
+			<Hungarian>Lövész</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TEAMLEADER">
 			<English>Team Leader</English>
-			<German>Team Leader</German>
-			<Russian>Лидер группы</Russian>
-			<Spanish>Team Leader</Spanish>
-			<French>Team Leader</French>
-			<Czech>Team Leader</Czech>
+			<Russian>Лидер группы</Russian>		
+			<German>Team-Anführer</German>
+			<Italian>Capogruppo</Italian>
+			<Spanish>Líder de equipo</Spanish>
+			<French>Chef d'équipe</French>
+			<Czech>Velitel týmu</Czech>
+			<Polish>Dowódca drużyny</Polish>
+			<Hungarian>Csapatvezető</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SMUGGLER">
 			<English>Smuggler</English>
@@ -17149,18 +17186,24 @@
 		<Key ID="STR_EPOCH_SKINS_GENERAL">
 			<English>General</English>
 			<German>General</German>
-			<Russian>Генерал</Russian>
+			<Russian>Генерал</Russian>			
+			<French>Général</French>
 			<Spanish>General</Spanish>
-			<French>General</French>
-			<Czech>General</Czech>
+			<Italian>Generale</Italian>
+			<Hungarian>Tábornok</Hungarian>
+			<Polish>Generał</Polish>
+			<Czech>Generál</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CREWMAN">
 			<English>Crewman</English>
-			<German>Crewman</German>
-			<Russian>Член команды</Russian>
-			<Spanish>Crewman</Spanish>
-			<French>Crewman</French>
-			<Czech>Crewman</Czech>
+			<Russian>Член команды</Russian>		
+			<German>Besatzungsmitglied</German>
+			<Italian>Membro equipaggio</Italian>
+			<Spanish>Miembro de la tripulación</Spanish>
+			<French>Membre équipage</French>
+			<Czech>Posádka</Czech>
+			<Polish>Członek załogi</Polish>
+			<Hungarian>Legénység</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BOSS">
 			<English>Boss</English>
@@ -17182,9 +17225,12 @@
 			<English>Cooper</English>
 			<German>Cooper</German>
 			<Russian>Купер</Russian>
+			<Italian>Cooper</Italian>
 			<Spanish>Cooper</Spanish>
 			<French>Cooper</French>
 			<Czech>Cooper</Czech>
+			<Polish>Cooper</Polish>
+			<Hungarian>Cooper</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TRAVIS">
 			<English>Travis</English>
@@ -17209,6 +17255,72 @@
 			<Spanish>Steve</Spanish>
 			<French>Steve</French>
 			<Czech>Steve</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ARMOR">
+			<English>Armor</English>
+			<German>Panzer</German>
+			<Italian>Blindati</Italian>
+			<Spanish>Blindado</Spanish>
+			<French>Blindé</French>
+			<Czech>Obrněnci</Czech>
+			<Russian>Бронетехника</Russian>
+			<Polish>Pancerne </Polish>
+			<Hungarian>Páncélos</Hungarian>
+		</Key>
+		<Key ID="STR_EPOCH_FUEL">
+			<English>Fuel</English>
+			<German>Treibstoff</German>
+			<Italian>Carburante</Italian>
+			<Spanish>Combustible</Spanish>
+			<French>Carburant</French>
+			<Czech>Palivo</Czech>
+			<Russian>Топливо</Russian>
+			<Polish>Paliwo</Polish>
+			<Hungarian>Üzemanyag</Hungarian>
+		</Key>
+		<Key ID="STR_EPOCH_MAX">
+			<English>Max</English>
+			<German>Max</German>
+			<Italian>Max</Italian>
+			<Spanish>Máximo</Spanish>
+			<French>Max</French>
+			<Czech>Max</Czech>
+			<Russian>Максимум</Russian>
+			<Polish>Maks.</Polish>
+			<Hungarian>Max</Hungarian>
+		</Key>
+		<Key ID="STR_EPOCH_SPEED">
+			<English>Speed</English>
+			<German>Geschwindigkeit</German>
+			<Italian>Velocità</Italian>
+			<Spanish>Velocidad</Spanish>
+			<French>Vitesse</French>
+			<Czech>Rychlost</Czech>
+			<Russian>Скорость</Russian>
+			<Polish>Szybkość</Polish>
+			<Hungarian>Sebesség</Hungarian>
+		</Key>
+		<Key ID="STR_EPOCH_WEAPONS">
+			<English>Weapons</English>
+			<German>Waffen</German>
+			<Italian>Armi</Italian>
+			<Spanish>Armas</Spanish>
+			<French>Armement</French>
+			<Czech>Zbraně</Czech>
+			<Russian>Оружие</Russian>
+			<Polish>Uzbrojenie</Polish>
+			<Hungarian>Fegyverek</Hungarian>
+		</Key>
+		<Key ID="STR_EPOCH_NONE">
+			<English>None</English>
+			<German>Keine</German>
+			<Italian>Nessuna</Italian>
+			<Spanish>Ninguna</Spanish>
+			<French>Néant</French>
+			<Czech>Není</Czech>
+			<Russian>Нет</Russian>
+			<Polish>Brak</Polish>
+			<Hungarian>Nincs</Hungarian>
 		</Key>
 	</Package>
 </Project>

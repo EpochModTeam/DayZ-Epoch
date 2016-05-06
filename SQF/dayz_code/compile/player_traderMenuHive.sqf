@@ -201,7 +201,7 @@ TraderDialogBuy = {
 	private ["_index", "_item", "_data"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {
-		localize "str_epoch_player_6" call dayz_rollingMessages;
+		localize "STR_EPOCH_PLAYER_106" call dayz_rollingMessages;
 	};
 	_item = TraderItemList select _index;
 	_data = [_item select 0, _item select 3, 1, _item select 2, "buy", _item select 4, _item select 1, _item select 8];
@@ -213,7 +213,7 @@ TraderDialogSell = {
 	private ["_index", "_item", "_data"];
 	_index = _this select 0;
 	if (_index < 0) exitWith {
-		localize "str_epoch_player_6" call dayz_rollingMessages;
+		localize "STR_EPOCH_PLAYER_106" call dayz_rollingMessages;
 	};
 	_item = TraderItemList select _index;
 	_data = [_item select 6, _item select 0, _item select 5, 1, "sell", _item select 1, _item select 7, _item select 8];
