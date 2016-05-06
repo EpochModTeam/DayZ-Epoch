@@ -64,7 +64,7 @@ DZE_requireplot = 1; // Require a plot pole to build  0 = Off, 1 = On
 DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.
 DZE_BuildingLimit = 150; // Max number of built objects allowed in DZE_PlotPole radius
 DZE_SelfTransfuse = false; // Allow players to bloodbag themselves
-DZE_selfTransfuse_Values = [12000,15,300]; // [blood amount given, infection chance %, cooldown in seconds]
+DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount given, infection chance %, cooldown in seconds]
 MaxDynamicDebris = 50; // Max number of random road blocks to spawn around the map
 MaxVehicleLimit = 50; // Max number of random vehicles to spawn around the map
 spawnArea = 250; // Distance around markers to find a safe spawn position

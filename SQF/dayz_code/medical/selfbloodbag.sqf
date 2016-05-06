@@ -105,7 +105,7 @@ while {r_doLoop and (_i < 12)} do {
 						_randomamount = round(random 200);
 						if (DZE_SelfTransfuse) then {
 							r_player_blood = (r_player_blood + (DZE_selfTransfuse_Values select 0)) min r_player_bloodTotal;
-							_TransfusionInfection = if ((DZE_selfTransfuse_Values select 1) < 0) then {false} else {((random (DZE_selfTransfuse_Values select 1)) < 1)};
+							_TransfusionInfection = if ((DZE_selfTransfuse_Values select 1) < 0) then {false} else {((random 100) < (DZE_selfTransfuse_Values select 1))};
 						} else {
 							r_player_blood = r_player_blood + 800 + _randomamount;
 						};
