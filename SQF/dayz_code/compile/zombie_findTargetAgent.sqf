@@ -1,5 +1,6 @@
 private ["_target","_targets","_man","_manDis","_localtargets","_remotetargets"];
 _agent = _this;
+if (isNull _agent) exitWith {objNull}; // Prevent errors if zombie is suddenly deleted
 _target = objNull;
 _targets = [];
 //_targetDis = [];

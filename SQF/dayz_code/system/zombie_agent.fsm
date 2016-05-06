@@ -760,6 +760,7 @@ class FSM
        "_remotetargets = _agent getVariable [""remotetargets"",[]];" \n
        "" \n
        "//Clear remote on reset" \n
+	   "if (isNull _agent) then {_remotetargets = [];};" \n
        "if (count _remotetargets > 0) then {" \n
        "	_agent setVariable [""remotetargets"",[],true];" \n
        "};" \n

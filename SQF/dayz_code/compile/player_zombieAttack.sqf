@@ -20,6 +20,7 @@ _playerDodged = false;
 
 if (_type != "zombie") exitWith { diag_log ("not a zombie"); }; // we deal only with zombies in this function
 if (_unit distance _vehicle > 3) exitWith {}; // distance too far according to any logic dealt here //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
+if (isNull _unit) exitWith {}; // Prevent errors if zombie is deleted suddenly
 
 // compute the animation move
 _rnd = 0;
@@ -85,7 +86,7 @@ if (local _unit) then {
 */
 [objNull, _unit, rplaymove, _move] call RE;
 uiSleep 0.5;
-
+if (isNull _unit) exitWith {}; // Prevent errors if zombie is deleted suddenly
 //slow it down make sure the animation isnt running after the damage
 //_timeout = diag_tickTime + 0.3;
 //waitUntil { diag_tickTime >= _timeout; };
