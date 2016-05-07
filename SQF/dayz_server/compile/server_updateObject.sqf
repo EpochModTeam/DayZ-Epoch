@@ -52,7 +52,8 @@ _needUpdate = _object in needUpdate_objects;
 _object_position = {
 	private ["_position","_worldspace","_fuel","_key"];
 	_position = getPosATL _object;
-	_worldspace = [(getDir _object) call KK_fnc_floatToString,	_position call KK_fnc_positionToString];
+	//_worldspace = [round (direction _object),_position];
+	_worldspace = [getDir _object, _position] call AN_fnc_formatWorldspace; // Precise Base Building 1.0.5
 	_fuel = if (_object isKindOf "AllVehicles") then {fuel _object} else {0};
 	
 	_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];

@@ -46,20 +46,18 @@ if (!_allowed || !_proceed) exitWith {
 
 // Publish variables
 _object setVariable ["CharacterID",_charID,true];
+	
+//_object setVariable ["ObjectUID",_objectUID,true];
+_object setVariable ["OEMPos",(_worldspace select 1),true];
+
+//diag_log ("PUBLISH: Attempt " + str(_object));
 
 //get UID
 _uid = _worldspace call dayz_objectUID2;
 
-_worldspace set [0, (_worldspace select 0) call KK_fnc_floatToString];
-_worldspace set [1, (_worldspace select 1) call KK_fnc_positionToString];
-	
-//_object setVariable ["ObjectUID",_objectUID,true];
-_object setVariable ["OEMPos", call compile (_worldspace select 1), true];
-
-//diag_log ("PUBLISH: Attempt " + str(_object));
-
 //Send request
-_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _charID, _worldspace, [], [], 0,_uid];
+//_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _charID, _worldspace, [], [], 0,_uid];
+_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _charID, _worldspace call AN_fnc_formatWorldspace, [], [], 0,_uid]; // Precise Base Building 1.0.5
 //diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 

@@ -10,7 +10,6 @@ BIS_MPF_remoteExecutionServer = {
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
-call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\KK_Functions.sqf";
 
 BIS_Effects_Burn = {};
 dayz_disconnectPlayers = [];
@@ -175,10 +174,6 @@ dayz_objectUID2 = {
 	_dir = _this select 0;
 	_key = "";
 	_position = _this select 1;
-	if ((typeName _dir) == "STRING") then {
-		_dir = call (compile _dir);
-		_position = call (compile _position);
-	};
 	{
 		_x = _x * 10;
 		if (_x < 0) then { _x = _x * -10 };
@@ -229,4 +224,6 @@ server_hiveReadWriteLarge = {
 	_resultArray
 };
 
-call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fa_hiveMaintenance.sqf";
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fa_hiveMaintenance.sqf";\
+// Precise base building 1.0.5
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\kk_functions.sqf";

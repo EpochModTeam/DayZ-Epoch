@@ -77,12 +77,6 @@ if (_status == "ObjectStreamStart") then {
 	_pos = getMarkerpos "respawn_west";
 	_wsDone = false;
 
-	if (count _worldspace >= 2) then {
-		if ((typeName (_worldspace select 0)) == "STRING") then {
-			_worldspace set [0, call compile (_worldspace select 0)];
-			_worldspace set [1, call compile (_worldspace select 1)];
-		};
-	};
 	if (count _worldspace >= 1 && {(typeName (_worldspace select 0)) == "SCALAR"}) then { 
 		_dir = _worldspace select 0;
 	};
@@ -102,12 +96,14 @@ if (_status == "ObjectStreamStart") then {
 		diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 	};
 
-	// Realign characterID to OwnerPUID - need to force save though.
-	
+
+	/*  Plot For Life 2.5  */
+	// Realign characterID to OwnerPUID - need to force save though.	
 	if (count _worldspace < 3) then {
 		_worldspace set [count _worldspace, "0"];
 	};		
 	_ownerPUID = _worldspace select 2;
+
 
 	if (_damage < 1) then {
 		//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
