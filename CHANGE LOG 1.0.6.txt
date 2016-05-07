@@ -30,7 +30,7 @@
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
 [NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
-[NEW] Zupa's Advanced Trading v2.1 is now included as part of the Epoch Code, enabled with DZE_advancedTrading = true; NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
+[NEW] Zupa's Advanced Trading v2.1+ is now included as part of the Epoch Code, enabled with DZE_advancedTrading = true; NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
 [NEW] With config based traders categories can be reused by setting the duplicate=#; value. # is the category number to copy. @ebaydayz
 [NEW] Gems are now treated as variable value currency (Advanced Trading only). configure gem values using DZE_GemWorthArray =[]; see ConfigVariables.sqf for more info @icomrade
 [NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; see ConfigVariables.sqf for more info @icomrade
