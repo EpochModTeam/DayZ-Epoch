@@ -15890,6 +15890,14 @@
 			<English>Bags</English>
 			<Russian>Рюкзаков</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_ATTACHMENTS">
+			<English>Attachments</English>
+			<German>Zubehör</German>
+			<Russian>Вложения</Russian>
+			<Spanish>Accesorios</Spanish>
+			<French>Accessoires</French>
+			<Czech>Přílohy</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_SEATS">
 			<English>Seats</English>
 			<German>Sitze</German>
@@ -17321,6 +17329,14 @@
 			<Russian>Нет</Russian>
 			<Polish>Brak</Polish>
 			<Hungarian>Nincs</Hungarian>
+		</Key>
+		<Key ID="STR_EPOCH_COMPATIBLE">
+			<English>Compatible</English>
+			<German>Kompatibel</German>
+			<Russian>совместимый</Russian>
+			<Spanish>Compatible</Spanish>
+			<French>Compatible</French>
+			<Czech>Kompatibilní</Czech>
 		</Key>
 	</Package>
 </Project>
