@@ -383,3 +383,32 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, 'Winchester1866', 'Winches
 -- UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Backpack, 'ItemBloodbag') > 0;
 -- UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
 -- UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
+
+
+-- ----------------------------
+-- Run to update to v1.0.5 of Precise Base Building by @Mikeeeyy only if you had v1.0.4 installed
+-- ----------------------------
+-- DELIMITER ;;
+-- CREATE FUNCTION `RemoveQuotes`(`ws` VARCHAR(128))
+--        RETURNS VARCHAR(128)
+--        DETERMINISTIC
+-- BEGIN
+--        DECLARE dir VARCHAR(128);
+--        DECLARE pos VARCHAR(128);
+--       
+--        IF SUBSTRING_INDEX(ws, '"', 4) = ws THEN
+--                RETURN ws;
+--        END IF;
+--       
+--        SET dir = TRIM(LEADING '["' FROM SUBSTRING_INDEX(ws, '"', 2));
+--        SET pos = TRIM(LEADING CONCAT('["', dir, '","') FROM SUBSTRING_INDEX(ws, '"', 4));
+--       
+--        SET ws = REPLACE(ws, CONCAT('"', dir, '"'), dir);
+--        SET ws = REPLACE(ws, CONCAT('"', pos, '"'), pos);
+--       
+--        RETURN ws;
+--END;;
+--DELIMITER ;
+-- 
+--UPDATE object_data SET Worldspace = RemoveQuotes(Worldspace);
+--DROP FUNCTION `RemoveQuotes`;
