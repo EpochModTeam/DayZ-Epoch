@@ -19,6 +19,10 @@ if (!isNull Z_vehicle && count _moneyInVehicle > 0 ) then {
   _nil = [Z_vehicle, _moneyInVehicle, []] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 };
 
-_success = [_toPay, _totalWorth] call Z_returnChange;
+if (_totalWorth - _toPay == 0) then { // Money in inventory was exact amount
+	_success = true;
+} else {
+	_success = [_toPay,_totalWorth] call Z_returnChange;
+};
 
 _success

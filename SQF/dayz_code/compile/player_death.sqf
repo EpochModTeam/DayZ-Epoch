@@ -35,6 +35,7 @@ _killerDist = 0;
 if (count _this > 0) then {
 	_killerObj = _this select 0;
 	_killerMethod = _this select 1;
+	if (typeName _killerMethod == "OBJECT") exitWith {_killerMethod = "Respawned"};
 	
 	if (!isNull _killerObj) then {
 		if (!isNull _body) then {_killerDist = _body distance _killerObj;};
