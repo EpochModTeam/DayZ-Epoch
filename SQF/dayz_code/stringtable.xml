@@ -15733,6 +15733,9 @@
 			<English>You need a backpack.</English>
 			<Russian>Вам нужен рюкзак.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_BACKPACK_FULL">
+			<English>Total backpack space exceeded.</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_WEPS">
 			<English>Only %1 weapons fit in the backpack.</English>
 			<Russian>В рюкзак поместится оружия: %1.</Russian>

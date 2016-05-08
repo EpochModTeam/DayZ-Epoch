@@ -2,7 +2,7 @@ private ["_selection","_return","_toBuyWeaps","_toBuyMags","_toBuyBags","_toolsT
 ,"_currentSec","_currentPrim","_currentTool","_p","_b","_check0","_check1","_check2","_check3","_check4","_mags","_weaps","_bags"
 ,"_normalBags","_normalMags","_normalWeaps","_allowedMags","_allowedPrimary","_allowedTools","_allowedSidearm","_allowedWeapons","_allowedBackpacks"
 ,"_totalSpace","_totalNewSpace","_counter","_parentClasses","_alreadyInBackpack","_kinds","_kinds2","_kinds3","_ammmounts","_ammmounts2","_ammmounts3",
-"_actualMags","_toolClasses","_duplicate","_quantity","_tool"
+"_actualMags","_toolClasses","_duplicate","_quantity","_tool","_totalBagSlots"
 ];
 _selection = Z_SellingFrom;
 _return = false;
@@ -205,7 +205,8 @@ if(_selection == 0) then{ //backpack
 		}forEach _kinds2;
 
 		_allowedWeapons = getNumber (configFile >> 'CfgVehicles' >> (typeOf _backpack) >> 'transportMaxWeapons') - count(_normalWeaps);
-		_allowedMags = getNumber (configFile >> 'CfgVehicles' >> (typeOf _backpack) >> 'transportMaxMagazines') - count(_normalMags);
+		_totalBagSlots = getNumber (configFile >> 'CfgVehicles' >> (typeOf _backpack) >> 'transportMaxMagazines');
+		_allowedMags = _totalBagSlots - count(_normalMags);
 
 
 
@@ -234,7 +235,7 @@ if(_selection == 0) then{ //backpack
 		_totalSpace = _alreadyInBackpack + _totalNewSpace;
 
 	}else {
-		systemChat format[localize "STR_EPOCH_TRADE_NEED_BAG", _allowedMags];
+		systemChat localize "STR_EPOCH_TRADE_NEED_BAG";
 	};
 
 	_check1 = false;
@@ -258,10 +259,10 @@ if(_selection == 0) then{ //backpack
 		systemChat format[localize "STR_EPOCH_TRADE_BAG_BAGS", _allowedBackpacks ];
 	};
 
-	if( _totalSpace <= _allowedMags)then{
+	if( _totalSpace <= _totalBagSlots)then{
 		_check4 = true;
 	}else{
-		systemChat format["Total space succeeded: Mag=1, Tool=1, Side=5, Primary=10 slots and your bag capacity is %1 where you tried %2 slots.", _allowedMags, _totalNewSpace];
+		systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL";
 	};
 
 	if(_check0 && _check1 && _check2 && _check3 && _check4)then{
