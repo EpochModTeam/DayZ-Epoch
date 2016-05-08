@@ -2,7 +2,7 @@ private ["_selection","_return","_toBuyWeaps","_toBuyMags","_toBuyBags","_toolsT
 ,"_currentSec","_currentPrim","_currentTool","_p","_b","_check0","_check1","_check2","_check3","_check4","_mags","_weaps","_bags"
 ,"_normalBags","_normalMags","_normalWeaps","_allowedMags","_allowedPrimary","_allowedTools","_allowedSidearm","_allowedWeapons","_allowedBackpacks"
 ,"_totalSpace","_totalNewSpace","_counter","_parentClasses","_alreadyInBackpack","_kinds","_kinds2","_kinds3","_ammmounts","_ammmounts2","_ammmounts3",
-"_actualMags"
+"_actualMags","_toolClasses","_duplicate","_quantity","_tool"
 ];
 _selection = Z_SellingFrom;
 _return = false;
@@ -13,6 +13,7 @@ _toolsToBuy = _this select 3;
 _sidearmToBuy = _this select 4;
 _primaryToBuy = _this select 5;
 _vehiclesToBuy = _this select 6;
+_toolClasses = _this select 7;
 
 if (_vehiclesToBuy > 1) exitWith {systemChat localize "STR_EPOCH_TRADE_ONE_VEHICLE"; false;};
 if (_vehiclesToBuy > 0) then {
@@ -50,19 +51,26 @@ if(_selection == 2) then{ //gear
 	_allowedBackpacks = 1 - _currentBackpacks;
 
 	_allowedTools = 14; // 12 toolbelt + 1 Binocular + 1 NVG
-
+	_duplicate = false;
 	{
 		_parentClasses =  [(configFile >> "CfgWeapons" >> _x ),true] call BIS_fnc_returnParents;
 		if( 'ItemCore' in _parentClasses || 'Binocular' in _parentClasses) then {
 			_allowedTools = _allowedTools - 1;
+			if (_x in _toolClasses) then {_duplicate = true;}; // Forbid purchasing duplicate tools into gear
 		}
 	}count (weapons player);
+	
+	{
+		_tool = _x;
+		_quantity = {(_tool == _x)} count _toolClasses;
+		if (_quantity > 1) exitWith {_duplicate = true;}; // Forbid purchasing multiples of the same tool into gear
+	} forEach _toolClasses;
 
 	_check1 = false;
 	_check2 = false;
 	_check3 = false;
 
-	if( _allowedPrimary >= _primaryToBuy && _allowedSidearm >= _sidearmToBuy && _allowedTools >= _toolsToBuy)then{
+	if( _allowedPrimary >= _primaryToBuy && _allowedSidearm >= _sidearmToBuy && _allowedTools >= _toolsToBuy && !_duplicate)then{
 		_check1 = true;
 	}else{
 		systemChat format[localize "STR_EPOCH_TRADE_GEAR_FULL", _allowedPrimary, _allowedSidearm , _allowedTools];

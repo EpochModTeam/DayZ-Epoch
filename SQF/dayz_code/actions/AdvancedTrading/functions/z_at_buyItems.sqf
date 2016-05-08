@@ -1,5 +1,5 @@
 private ["_magazinesToBuy", "_weaponsToBuy", "_backpacksToBuy", "_toolsToBuy", "_sidearmToBuy", "_primaryToBuy", "_priceToBuy"
-,"_enoughMoney", "_myMoney", "_canBuy", "_moneyInfo","_count","_success","_backpack"
+,"_enoughMoney", "_myMoney", "_canBuy", "_moneyInfo","_count","_success","_backpack","_toolClasses"
 ];
 
 _magazinesToBuy = 0;
@@ -11,6 +11,7 @@ _primaryToBuy = 0;
 _vehiclesToBuy = 0;
 
 _priceToBuy = 0;
+_toolClasses = [];
 
 if (Z_SingleCurrency) then {
 	{
@@ -18,6 +19,7 @@ if (Z_SingleCurrency) then {
 			_parentClasses =  [(configFile >> "CfgWeapons" >> (_x select 0)),true] call BIS_fnc_returnParents;
 			if( 'ItemCore' in _parentClasses || 'Binocular' in _parentClasses) then {
 				_toolsToBuy = _toolsToBuy + (_x select 9);
+				_toolClasses set [count _toolClasses,(_x select 0)];
 			} else {
 				_weaponsToBuy = _weaponsToBuy + (_x select 9);
 				if('PistolCore' in _parentClasses)then {
@@ -47,6 +49,7 @@ if (Z_SingleCurrency) then {
 			_parentClasses =  [(configFile >> "CfgWeapons" >> (_x select 0)),true] call BIS_fnc_returnParents;
 			if( 'ItemCore' in _parentClasses || 'Binocular' in _parentClasses) then {
 				_toolsToBuy = _toolsToBuy + (_x select 9);
+				_toolClasses set [count _toolClasses,(_x select 0)];
 			} else {
 				_weaponsToBuy = _weaponsToBuy + (_x select 9);
 				if('PistolCore' in _parentClasses)then {
@@ -72,7 +75,7 @@ if (Z_SingleCurrency) then {
 	} count Z_BuyingArray;
 };
 
-_canBuy = [_weaponsToBuy,_magazinesToBuy,_backpacksToBuy,_toolsToBuy, _sidearmToBuy, _primaryToBuy,_vehiclesToBuy] call Z_allowBuying;
+_canBuy = [_weaponsToBuy,_magazinesToBuy,_backpacksToBuy,_toolsToBuy, _sidearmToBuy, _primaryToBuy,_vehiclesToBuy,_toolClasses] call Z_allowBuying;
 
 _myMoney = player getVariable[Z_MoneyVariable,0];
 
