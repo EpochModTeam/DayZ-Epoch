@@ -154,7 +154,11 @@ if(_index > -1)then{
 					_localResult = if (_bag != (unitBackpack player)) then {1} else {0};
 					if (_localResult == 1) then {_bagTraded = true;};
 				} else {
-					_localResult = [player,(_x select 0),1] call BIS_fnc_invRemove;
+					_name = _x select 0;
+					_type = _x select 1;
+					if (_type == "trade_items") then {_name = configFile >> "CfgMagazines" >> _name;};
+					if (_type == "trade_weapons") then {_name = configFile >> "CfgWeapons" >> _name;};
+					_localResult = [player,_name,1] call BIS_fnc_invRemove; // Use config for BIS_fnc_invRemove
 					if(_localResult != 1)then{
 						if(_x select 1 == "trade_items")then{
 							_mA set [count(_mA),0];
