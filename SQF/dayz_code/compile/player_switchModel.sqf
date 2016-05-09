@@ -54,6 +54,7 @@ if (count _muzzles > 1) then {_currentWpn = currentMuzzle player;};
 _display = findDisplay 106;
 _display closeDisplay 0;
 
+_oldGroup = group player;
 //BackUp Player Object
 _oldUnit = player;
 
@@ -151,6 +152,7 @@ _newUnit setPosATL _position;
 removeAllWeapons _oldUnit;
 {_oldUnit removeMagazine _x;} count magazines _oldUnit;
 if !(isNull _oldUnit) then {deleteVehicle _oldUnit;};
+deleteGroup _oldGroup;
 
 //	player switchCamera = _currentCamera;
 if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};

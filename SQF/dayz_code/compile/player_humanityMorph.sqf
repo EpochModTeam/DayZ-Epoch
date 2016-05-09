@@ -27,8 +27,7 @@ _friendlies = player getVariable ["friendlies",[]];
 _tagSetting = player getVariable ["DZE_display_name",false];
 
 //Switch
-_switch = _model spawn player_switchModel;
-waitUntil { scriptDone _switch };
+_model call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
 
 //Login
 

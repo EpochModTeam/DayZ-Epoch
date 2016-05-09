@@ -1058,7 +1058,7 @@ class FSM
                          "player disableConversation true;" \n
                          "" \n
                          "eh_player_killed = player addeventhandler [""FiredNear"",{_this call player_weaponFiredNear;} ];" \n
-                         "player addEventHandler ['Respawn', player_death];" \n
+                         "//player addEventHandler ['Respawn', player_death];" \n
                          "" \n
                          "//_state = player getVariable[""state"",[]];" \n
                          "_currentWpn = """";" \n
