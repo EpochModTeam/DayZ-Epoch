@@ -14,7 +14,7 @@ class ItemCamoNet : CA_Magazine
 		class Build
 		{
 			text = $STR_BUILD_CAMONET;
-			script = "; [_id,'Build'] spawn player_build; r_action_count = r_action_count + 1;";
+			script = "spawn player_build; r_action_count = r_action_count + 1;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemCamoNet"};
 			create = "CamoNet_DZ";

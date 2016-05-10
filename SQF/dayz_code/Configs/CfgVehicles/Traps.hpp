@@ -10,6 +10,7 @@ class BearTrap_DZ : TrapItems {
 	script = "beartrap"; // compiled script variable name (used by server side loop)
 	initState = 0; // initial armed state
 	singleUse = 0;
+	nounderground = 0;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn beartrap;";
@@ -120,6 +121,7 @@ class TrapBearTrapFlare : TrapItems {
 	armor = 400;
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_FLARE;
 	vehicleClass = "Fortifications";
+	nounderground = 0;
 
 	script = "beartrapflare"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -169,6 +171,7 @@ class TrapBearTrapSmoke : TrapItems {
 	armor = 400;
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_SMOKE;
 	vehicleClass = "Fortifications";
+	nounderground = 0;
 
 	script = "beartrapsmoke"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -218,6 +221,7 @@ class Trap_Cans : TrapItems {
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_CANS;
 	vehicleClass = "Fortifications";
+	nounderground = 0;
 
 	script = "tripcans"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -267,6 +271,7 @@ class TrapTripwireFlare : TrapItems {
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_FLARE;
 	vehicleClass = "Fortifications";
+	nounderground = 0;
 
 	script = "tripflare"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -316,6 +321,7 @@ class TrapTripwireGrenade : TrapItems {
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_GRENADE;
 	vehicleClass = "Fortifications";
+	nounderground = 0;
 
 	script = "tripgrenade"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -365,6 +371,7 @@ class TrapTripwireSmoke : TrapItems {
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_SMOKE;
 	vehicleClass = "Fortifications";
+	nounderground = 0;
 
 	script = "tripsmoke"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
