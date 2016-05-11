@@ -71,6 +71,7 @@ if(isNil "Z_AdvancedTradingInit")then{
 	Z_getBackpackItems = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_getBackpackItems.sqf");
 	Z_getVehicleItems = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_getVehicleItems.sqf");
 	Z_getGearItems = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_getGearItems.sqf");
+	Z_logTrade = 								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_logTrade.sqf");
 	Z_filterList =								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_filterList.sqf");
 	Z_checkArrayInConfig = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_checkArrayInConfig.sqf");
 	Z_calcPrice = 								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcPrice.sqf");

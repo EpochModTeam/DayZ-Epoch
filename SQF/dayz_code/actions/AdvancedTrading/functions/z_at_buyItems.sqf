@@ -1,5 +1,5 @@
 private ["_magazinesToBuy", "_weaponsToBuy", "_backpacksToBuy", "_toolsToBuy", "_sidearmToBuy", "_primaryToBuy", "_priceToBuy"
-,"_enoughMoney", "_myMoney", "_canBuy", "_moneyInfo","_count","_success","_backpack","_toolClasses"
+,"_enoughMoney", "_myMoney", "_canBuy", "_moneyInfo","_count","_success","_backpack","_toolClasses","_itemsToLog"
 ];
 
 _magazinesToBuy = 0;
@@ -12,6 +12,7 @@ _vehiclesToBuy = 0;
 
 _priceToBuy = 0;
 _toolClasses = [];
+_itemsToLog = [[],[],[],"buy"];
 
 if (Z_SingleCurrency) then {
 	{
@@ -42,6 +43,9 @@ if (Z_SingleCurrency) then {
 			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2)); // _price * _amount
 		};
+		_itemsToLog set [0, (_itemsToLog select 0) + [_x select 0]];
+		_itemsToLog set [1, (_itemsToLog select 1) + [_x select 9]];
+		_itemsToLog set [2, (_itemsToLog select 2) + [((_x select 9)*(_x select 2))]];
 	} count Z_BuyingArray;
 } else {
 	{
@@ -72,6 +76,9 @@ if (Z_SingleCurrency) then {
 			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
+		_itemsToLog set [0, (_itemsToLog select 0) + [_x select 0]];
+		_itemsToLog set [1, (_itemsToLog select 1) + [_x select 9]];
+		_itemsToLog set [2, (_itemsToLog select 2) + [((_x select 11)*(_x select 2)*(_x select 9))]];
 	} count Z_BuyingArray;
 };
 
@@ -126,7 +133,6 @@ if(_enoughMoney) then {
 		
 		if (_buyingType in ["trade_any_vehicle_free", "trade_any_bicycle", "trade_any_bicycle_old"]) then {
 			PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,"0",_activatingPlayer];
-			diag_log format ["Purchased vehicle %1 without a key", _x select 0];
 		} else {
 			PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 		};
@@ -143,17 +149,14 @@ if(_enoughMoney) then {
 			{
 				if( _x select 1 == "trade_weapons")then{
 					_backpack addWeaponCargoGlobal [_x select 0, _x select 9];
-					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9, localize "STR_EPOCH_PLAYER_289"];
 				};
 				if( _x select 1 == "trade_items")then{
 					_backpack addMagazineCargoGlobal  [_x select 0, _x select 9];
-					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9, localize "STR_EPOCH_PLAYER_289"];
 				};				
 				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 					if (_item2Add != "0") then {
 						_backpack addWeaponCargoGlobal  [_item2Add, 1];
-						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
 					};
 				};
 			} count Z_BuyingArray;
@@ -164,21 +167,17 @@ if(_enoughMoney) then {
 				systemChat format["Adding %1 items in %2",count (Z_BuyingArray), typeOf Z_vehicle];
 				if( _x select 1 == "trade_weapons")then{
 					Z_vehicle addWeaponCargoGlobal [_x select 0, _x select 9];
-					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9, localize "STR_EPOCH_PLAYER_289"];
 				};
 				if( _x select 1 == "trade_items")then{
 					Z_vehicle addMagazineCargoGlobal [_x select 0, _x select 9];
-					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9, localize "STR_EPOCH_PLAYER_289"];
 				};
 				if( _x select 1 == "trade_backpacks")then{
 					Z_vehicle addBackpackCargoGlobal [_x select 0, _x select 9];
-					diag_log format [localize "STR_EPOCH_TRADE_ADDED_QTY", _x select 0, _x select 9, localize "STR_EPOCH_PLAYER_289"];
 				};
 				if((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"])then{
 					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 					if (_item2Add != "0") then {
 						Z_vehicle addWeaponCargoGlobal [_item2Add, 1];
-						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
 					};
 				};
 			} count Z_BuyingArray;
@@ -190,8 +189,7 @@ if(_enoughMoney) then {
 				if( _x select 1 == "trade_weapons") then {
 					_count = 0;
 					while{ _count < (_x select 9)}do{
-						player addWeapon (_x select 0);
-						diag_log format [localize "STR_EPOCH_TRADE_ADDED", _x select 0, localize "STR_EPOCH_PLAYER_289"];
+						player addWeapon (_x select 0);				
 						_count = _count + 1;
 					};
 				};
@@ -199,7 +197,6 @@ if(_enoughMoney) then {
 					_count = 0;
 					 while{ _count < (_x select 9)} do {
 						player addMagazine (_x select 0);
-						diag_log format [localize "STR_EPOCH_TRADE_ADDED", _x select 0, localize "STR_EPOCH_PLAYER_289"];
 						_count = _count + 1;
 					};
 				};
@@ -210,7 +207,6 @@ if(_enoughMoney) then {
 					_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 					if (_item2Add != "0") then {
 						player addWeapon _item2Add;
-						diag_log format ["Key %1 added for vehicle %2", _item2Add, _x select 0];
 					};
 				};
 			} count Z_BuyingArray;
@@ -230,6 +226,7 @@ if(_enoughMoney) then {
 					systemChat localize "STR_EPOCH_TRADE_DEBUG";
 				};
 		};
+		_itemsToLog call Z_logTrade;
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_CONTAINER_FULL";
 	};

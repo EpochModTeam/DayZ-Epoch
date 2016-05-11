@@ -42,7 +42,7 @@ if (count _this > 0) then {
 		_killerVehicle = vehicle _killerObj;
 		_killerWeapon = if (_killerVehicle != _killerObj) then {typeOf _killerVehicle} else {currentWeapon _killerObj};
 		if (alive _killerObj) then {
-			_killerName = if (isPlayer _killerObj) then {name _killerObj} else {"AI"};
+			_killerName = if (isPlayer _killerObj) then {name _killerObj} else {localize "STR_EPOCH_AI"};
 		};
 	};
 	if (count _this > 2) then {_killerMethod = "zombie";};

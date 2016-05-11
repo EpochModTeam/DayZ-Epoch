@@ -1,4 +1,4 @@
-private ["_player","_PUID","_name","_traderid","_buyorsell","_data","_result","_key","_outcome","_clientID"];
+private ["_player","_PUID","_name","_traderid","_buyorsell","_data","_result","_key","_outcome","_clientID","_price","_quantity","_container","_return"];
 
 _player =		_this select 0;
 _traderID = 	_this select 1;
@@ -6,16 +6,27 @@ _buyorsell = 	_this select 2;	//0 > Buy // 1 > Sell
 _classname =	_this select 3;
 _traderCity = 	_this select 4;
 _currency =	_this select 5;
-_qty =		_this select 6;
+_price =		_this select 6;
+
+if (count _this > 7) then {
+	_quantity = _this select 7;
+	_container = _this select 8;
+	_return = false;
+} else {
+	_quantity = 1;
+	_container = "gear";
+	_return = true;
+};
+
 _clientID = 	owner _player;
-_price = format ["%2x %1",_currency,_qty];
+_price = format ["%1x%2",_price,_currency];
 _name = if (alive _player) then { name _player; } else { "Dead Player"; };
 _PUID = [_player] call FNC_GetPlayerUID;
 
 if (_buyorsell == 0) then { //Buy
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) bought a %3 in/at %4 for %5", _name, _PUID, _classname, _traderCity, _price];
+diag_log format["%8: %9: %1 (%2) bought %6 x %3 into %7 at %4 for %5", _name, _PUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289",localize "STR_EPOCH_PLAYER"];
 } else { //SELL
-diag_log format["EPOCH SERVERTRADE: Player: %1 (%2) sold a %3 in/at %4 for %5",_name, _PUID, _classname, _traderCity, _price];
+diag_log format["%8: %9: %1 (%2) sold %6 x %3 from %7 at %4 for %5",_name, _PUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289",localize "STR_EPOCH_PLAYER"];
 };
 
 if (DZE_ConfigTrader) then {
@@ -30,7 +41,9 @@ if (DZE_ConfigTrader) then {
 	_outcome = _result select 0;
 };
 
-dayzTradeResult = _outcome;
-if(!isNull _player) then {
-	_clientID publicVariableClient "dayzTradeResult";
+if (_return) then {
+	dayzTradeResult = _outcome;
+	if(!isNull _player) then {
+		_clientID publicVariableClient "dayzTradeResult";
+	};
 };

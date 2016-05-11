@@ -1,4 +1,4 @@
-private ["_index","_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success","_bag"];
+private ["_index","_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success","_bag","_itemsToLog"];
 
 _index = count (Z_SellArray) - 1;
 _tempArray = Z_SellArray;
@@ -13,6 +13,7 @@ if(_index > -1)then{
 	_vehCheckArray = [];
 	_weaponsCheckArray = [];
 	_itemsCheckArray = [];
+	_itemsToLog = [[],[],[],"sell"];
 
 	_deleteTradedVehicle = {
 		private ["_localResult2","_VehKey2"];
@@ -133,6 +134,8 @@ if(_index > -1)then{
 	if(Z_SellingFrom == 1)then{
 		_outcome = [Z_vehicle,_itemsArray,_weaponsArray,_bpArray, _vehArray] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 	};
+	
+	_itemsToLog set [0,(_itemsArray + _weaponsArray + _bpArray + [typeOf Z_vehicle])];
 
 	//gear
 	if(Z_SellingFrom == 2)then{
@@ -187,39 +190,48 @@ if(_index > -1)then{
 			_outcome set [2,[1]];
 		};
 	};
-
+	
+	{ _itemsToLog set [1, (_itemsToLog select 1) + _x] } forEach _outcome;
 	_money = 0;
 
 	if (Z_SingleCurrency) then {
 		{
 			_money = _money + ( (((_itemsCheckArray select _forEachIndex) select 0)) * _x) ;
+			_itemsToLog set [2, (_itemsToLog select 2) + [( (((_itemsCheckArray select _forEachIndex) select 0)) * _x)]];
 		}forEach (_outcome select 0);
 		{
 			_money = _money + ( (((_weaponsCheckArray select _forEachIndex) select 0)) * _x) ;
+			_itemsToLog set [2, (_itemsToLog select 2) + [( (((_weaponsCheckArray select _forEachIndex) select 0)) * _x)]];
 		}forEach (_outcome select 1);
 		{
 			_money = _money + ( ( ((_bpCheckArray select _forEachIndex) select 0) ) * _x) ;
+			_itemsToLog set [2, (_itemsToLog select 2) + [( (((_bpCheckArray select _forEachIndex) select 0)) * _x)]];
 		}forEach (_outcome select 2);
 		
 		if (count _outcome > 3) then {
 			_money = _money + ((_vehCheckArray select 0) select 0);
+			_itemsToLog set [2, (_itemsToLog select 2) + [((_vehCheckArray select 0) select 0)]];
 		};
 	} else {
 		{
 			_itemData = _itemsCheckArray select _forEachIndex;
 			_money = _money + ( (_itemData select 0) * (_itemData select 1) * _x);
+			_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
 		}forEach (_outcome select 0);
 		{
 			_itemData = _weaponsCheckArray select _forEachIndex;
 			_money = _money + ( (_itemData select 0) * (_itemData select 1) * _x);
+			_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
 		}forEach (_outcome select 1);
 		{
 			_itemData = _bpCheckArray select _forEachIndex;
 			_money = _money + ( (_itemData select 0) * (_itemData select 1) * _x);
+			_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
 		}forEach (_outcome select 2);
 		if ((count _outcome) > 3) then {
 			_itemData = _vehCheckArray select 0;
 			_money = _money + ((_itemData select 0) * (_itemData select 1));
+			_itemsToLog set [2, (_itemsToLog select 2) + [((_itemData select 0) * (_itemData select 1))]];
 		};
 	};
 	if(typeName _money  == "SCALAR") then {
@@ -230,6 +242,8 @@ if(_index > -1)then{
 				_success = [_money, 0] call Z_returnChange;
 				systemChat localize "STR_EPOCH_TRADE_SUCCESSFUL";
 		};
+		
+		_itemsToLog call Z_logTrade;
 	}else{
 		systemChat localize "STR_EPOCH_TRADE_DEBUG";
 		diag_log "Money is not a number. Something went wrong.";

@@ -15752,14 +15752,6 @@
 			<English>Adding %1 items in backpack</English>
 			<Russian>Добавлено: %1 предметов в рюкзак</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_ADDED_QTY">
-			<English>%3: %1 x %2 added</English>
-			<Russian>%3: %1 x %2 добавлено</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TRADE_ADDED">
-			<English>%2: %1 added</English>
-			<Russian>%2: %1 добавлено</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESSFUL">
 			<English>Trade successfull.</English>
 			<Russian>Продажа завершена.</Russian>
@@ -17340,6 +17332,29 @@
 			<Spanish>Compatible</Spanish>
 			<French>Compatible</French>
 			<Czech>Kompatibilní</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER">
+			<English>Player</English>
+			<French>Joueur</French>
+			<Spanish>Jugador</Spanish>
+			<Italian>Giocatore</Italian>
+			<Hungarian>Játékos</Hungarian>
+			<Polish>Gracz</Polish>
+			<Russian>Игрок</Russian>
+			<German>Spieler</German>
+			<Czech>Hráč</Czech>
+			<Japanese>プレイヤー</Japanese>
+		</Key>
+		<Key ID="STR_EPOCH_AI">
+			<English>AI</English>
+			<French>IA</French>
+			<Spanish>IA</Spanish>
+			<Italian>IA</Italian>
+			<Hungarian>MI</Hungarian>
+			<Polish>SI</Polish>
+			<Russian>ИИ</Russian>
+			<German>KI</German>
+			<Czech>AI</Czech>
 		</Key>
 	</Package>
 </Project>
