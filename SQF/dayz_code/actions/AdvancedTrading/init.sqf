@@ -61,6 +61,7 @@ if(isNil "Z_AdvancedTradingInit")then{
 	Z_clearSellableList =						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_clearSellableList.sqf");
 	Z_clearBuyList = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_clearBuyList.sqf");
 	Z_clearBuyingList = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_clearBuyingList.sqf");
+	Z_fillCategories = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_fillCategories.sqf");
 	Z_getItemInfo =								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_getItemInfo.sqf");
 	Z_getItemConfig =							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_getItemConfig.sqf");
 	Z_displayItemInfo = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_displayItemInfo.sqf");
@@ -75,6 +76,7 @@ if(isNil "Z_AdvancedTradingInit")then{
 	Z_filterList =								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_filterList.sqf");
 	Z_checkArrayInConfig = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_checkArrayInConfig.sqf");
 	Z_calcPrice = 								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcPrice.sqf");
+	Z_fillCategoryList =						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_fillCategoryList.sqf");
 	Z_fillSellList = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_fillSellList.sqf");
 	Z_fillSellingList = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_fillSellingList.sqf");
 	Z_pushItemToList = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_pushItemToList.sqf");
@@ -102,12 +104,13 @@ if(isNil "Z_AdvancedTradingInit")then{
 };
 
 Z_Selling = true; // Always start menu in buy mode (flipped in z_at_changeBuySell.sqf on startup)
+Z_CategoryView = true; // Always start in category view
 createDialog "AdvancedTrading";
 
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVESELLITEMBUTTON) ctrlSetText " < ";
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVEALLSELLITEMBUTTON) ctrlSetText " << ";
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVEBUYITEMBUTTON) ctrlSetText " < ";
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVEALLBUYITEMBUTTON) ctrlSetText " << ";
-(findDisplay Z_AT_DIALOGWINDOW displayCtrl 7488) ctrlSetText "   " + localize "STR_EPOCH_TRADE_DETAILS";
+(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_DETAILSTEXT) ctrlSetText "   " + localize "STR_EPOCH_TRADE_DETAILS";
 
 call Z_ChangeBuySell;

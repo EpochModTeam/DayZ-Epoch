@@ -1,4 +1,4 @@
-private ["_arrayOfTraderCat","_counter","_cat","_cfgtraders","_y","_type","_buy","_sell","_pic","_text","_worth","_buyCurrency","_sellCurrency","_ignore"];
+private ["_arrayOfTraderCat","_counter","_cat","_cfgtraders","_y","_type","_buy","_sell","_pic","_text","_worth","_buyCurrency","_sellCurrency","_ignore","_categoryNumber"];
 call Z_clearBuyList;
 call Z_clearBuyingList;
 Z_BuyableArray = [];
@@ -6,7 +6,8 @@ Z_BuyingArray = [];
 _arrayOfTraderCat = Z_traderData;
 _counter = 0;
 {
-	_cat =  format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
+	_categoryNumber = if (Z_CategoryView) then {_this} else {(_arrayOfTraderCat select _forEachIndex select 1)};
+	_cat = format["Category_%1",_categoryNumber];
 	_cfgtraders = missionConfigFile >> "CfgTraderCategory"  >> _cat;
 	if (isNumber (_cfgtraders >> "duplicate")) then {
 		_cat =  format["Category_%1",getNumber (_cfgtraders >> "duplicate")];
@@ -62,6 +63,11 @@ _counter = 0;
 				Z_BuyableArray set [count(Z_BuyableArray) , [_y,_type,_buy select 0,_text,_pic,_forEachIndex,_sell select 0, _buyCurrency, _sellCurrency, 0,_cat, _worth]];
 			};
 		};
+	};
+	if (Z_CategoryView) exitWith { // Only filling items for one category
+		Z_CategoryView = false;
+		Z_Selling = !Z_Selling;
+		call Z_ChangeBuySell;
 	};
 }forEach _arrayOfTraderCat;
 

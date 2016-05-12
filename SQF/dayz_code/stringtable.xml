@@ -17356,5 +17356,28 @@
 			<German>KI</German>
 			<Czech>AI</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_VIEW">
+			<English>View</English>
+			<French>Voir</French>
+			<Spanish>Vista</Spanish>
+			<Italian>Vista</Italian>
+			<Hungarian>Nézet</Hungarian>
+			<Polish>Widok</Polish>
+			<Russian>Вид</Russian>
+			<German>Ansicht</German>
+			<Czech>Pohled</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BACK">
+			<English>Back</English>
+			<French>Retour</French>
+			<Spanish>Atrás</Spanish>
+			<Italian>Indietro</Italian>
+			<Hungarian>Vissza</Hungarian>
+			<Polish>Powrót</Polish>
+			<Russian>Назад</Russian>
+			<German>Zurück</German>
+			<Czech>Zpět</Czech>
+			<Japanese>戻る</Japanese>
+		</Key>
 	</Package>
 </Project>

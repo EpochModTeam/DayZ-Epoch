@@ -92,7 +92,7 @@ class AdvancedTrading
 			x = 0.51 * safezoneW + safezoneX;
 			y = 0.26 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "call Z_ChangeBuySell;";
+			onButtonClick = "Z_CategoryView = true; call Z_ChangeBuySell;";
 			colorBackground[] =  {1,1,1,1};
 			color[] = {0,0,0,1};
 		};
@@ -115,6 +115,17 @@ class AdvancedTrading
 			w = 0.30 * safezoneW;
 			h = 0.03 * safezoneH;
 			colorText[] = {1,1,1,1};
+		};
+		class ZSC_RscButtonMenu_BACK: AT_Zupa_BlueButton
+		{
+			idc = 7449;
+			text = $STR_EPOCH_BACK;
+			x = 0.21 * safezoneW + safezoneX;
+			y = 0.33 * safezoneH + safezoneY;
+			w = 0.08 * safezoneW;
+			onButtonClick = "Z_Selling = !Z_Selling; Z_CategoryView = true; call Z_ChangeBuySell;";
+			colorBackground[] =  {1,1,1,1};
+			color[] = {0,0,0,1};
 		};
 		class RscText_AT8: ZSC_RscText
 		{
@@ -221,7 +232,7 @@ class AdvancedTrading
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
 			onload = "ctrlShow [_this,false]";
-			onLBSelChanged = "['buyable',(lbCurSel 7421)] call Z_getItemInfo";
+			onLBSelChanged = "if (Z_CategoryView) then {(lbCurSel 7421) call Z_fillCategoryList} else {['buyable',(lbCurSel 7421)] call Z_getItemInfo};";
 			class ListScrollBar: ZSC_RscScrollBar{};
 			class ScrollBar
 			{
@@ -280,12 +291,12 @@ class AdvancedTrading
 		};
 		class ZSC_RscButtonMenu_ATTFilter: AT_Zupa_BlueButton
 		{
-			idc = -1;
+			idc = 7498;
 			text = $STR_UI_FILTER;
       x = 0.21 * safezoneW + safezoneX;
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
-			onButtonClick = "[(ctrlText 7444)] call Z_filterList;";
+			onButtonClick = "if (Z_CategoryView) then {(lbCurSel 7421) call Z_fillCategoryList} else {[(ctrlText 7444)] call Z_filterList};";
 			colorBackground[] =  {1,1,1,1};
 			color[] = {0,0,0,1};
 		};
