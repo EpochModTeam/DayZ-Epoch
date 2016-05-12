@@ -380,8 +380,8 @@ class 30m_plot_kit: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = $STR_EPOCH_30METERPLOT;
-	descriptionShort = $STR_EPOCH_30METERPLOT_DESC;
+	displayName = $STR_EPOCH_PLAYER_246;
+	descriptionShort = $STR_EPOCH_PLOT_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	class ItemActions

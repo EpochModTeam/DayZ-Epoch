@@ -1,7 +1,6 @@
 [NEW] Fully updated to DayZ 1.8.7 base @icomrade @ebaydayz
-[NEW] 1.8.7 attachments system, community weapons and buildable base objects
+[NEW] 1.8.7 attachments system, community weapons, base objects, traps, tripwires and car bomb
 [NEW] 1.8.7 journal and crafting menu are now functional (default 'J' key)
-[NEW] 1.8.7 traps, tripwires (cans, flare, grenade, smoke) and car bomb
 [NEW] 1.8.7 spawn selection, set dayz_spawnselection = 1; in init.sqf (Chernarus only)
 [NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
 [NEW] 1.8.7 configurable blood trails, set dayz_bleedingeffect in init.sqf
@@ -16,12 +15,8 @@
 [NEW] Earplugs hotkey and status UI icon (F1 = Lower volume). Automatically disabled when exiting a vehicle. @ebaydayz
 [NEW] Snap building, use DZE_modularBuild = true; in init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
+[NEW] Many new configuration options are available for admins. See dayz_code\configVariables.sqf and mission\init.sqf for descriptions. @ebaydayz
 [NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable
-[NEW] Bandit heartbeat sound is disabled by default. Set DZE_HeartBeat = true; in init.sqf to enable
-[NEW] Knife dulling is disabled by default. Set dayz_knifeDulling = true; in init.sqf to enable @ebaydayz
-[NEW] Match stick counting is disabled by default. Set dayz_matchboxCount = true; in init.sqf to enable @ebaydayz
-[NEW] Tool breaking is disabled by default. Set dayz_toolBreaking = true; in init.sqf to enable @ebaydayz
-[NEW] Water bottle breaking is disabled by default. Set dayz_waterBottleBreaking = true; in init.sqf to enable @ebaydayz
 [NEW] Dayz_townGenerator = true; in init.sqf can enable vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus. @ebaydayz
 [NEW] DB Backup script. @RimBlock
 [NEW] Use DayZ_UseSteamID = false; in your init.sqf to use the old PlayerUID, instead of SteamID @icomrade
@@ -52,7 +47,7 @@
 [CHANGED] Removed weapons from Traders hands and made them stand with arms by their side. @SilvDev
 [CHANGED] Tweaked fuel capacity variables for vehicles. @RimBlock
 [CHANGED] Tweaked rotate_logs.bat to incorporate the day of the week for better organization @Raziel23x 
-[CHANGED] All instances of sleep replaced with the more reliable uiSleep @icomrade
+[CHANGED] All instances of sleep were replaced with the more reliable uiSleep where possible. @icomrade
 [CHANGED] Several getPosATL changed to call FNC_GetPos for water compatibility @icomrade
 [CHANGED] Trader city objects are now spawned locally on each machine with simulation disabled for better performance. Admins can still override with custom cities in init.sqf. @ebaydayz
 [CHANGED] Player zombies are no longer attacked by other zombies. The respawn button is now enabled for them if they wish to suicide. @ebaydayz

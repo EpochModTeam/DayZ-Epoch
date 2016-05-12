@@ -14823,21 +14823,13 @@
 			<French>Wooden ramp can be used to get air.</French>
 			<Czech>Wooden ramp can be used to get air.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_30METERPLOT">
-			<English>30 Meter Plot</English>
-			<German>Grundstück-Markierung</German>
-			<Russian>30 Meter Plot</Russian>
-			<Spanish>30 Meter Plot</Spanish>
-			<French>30 Meter Plot</French>
-			<Czech>30 Meter Plot</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_30METERPLOT_DESC">
-			<English>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</English>
+		<Key ID="STR_EPOCH_PLOT_DESC">
+			<English>Plot Pole: A placeable pole that will allow you and your friends to build within a certain radius.</English>
 			<German>Grundstück-Markierung: Ein aufbaubares Objekt, dass dir und deinen Freunden erlaubt, in seiner Reichweite zu bauen.</German>
-			<Russian>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Russian>
-			<Spanish>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Spanish>
-			<French>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</French>
-			<Czech>Plot Pole: A placeable pole that will allow you and your friends to build within a 30m radius. Ownership of plot pole is lost after owners death.</Czech>
+			<Russian>Plot Pole: A placeable pole that will allow you and your friends to build within a certain radius.</Russian>
+			<Spanish>Plot Pole: A placeable pole that will allow you and your friends to build within a certain radius.</Spanish>
+			<French>Plot Pole: A placeable pole that will allow you and your friends to build within a certain radius.</French>
+			<Czech>Plot Pole: A placeable pole that will allow you and your friends to build within a certain radius.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_METALPANEL">
 			<English>Metal Panel</English>
@@ -15040,12 +15032,12 @@
 			<Czech>Outhouse</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_OUTHOUSE_DESC">
-			<English>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</English>
-			<German>Toilettenhäuschen: Ein aufbaubares Objekt, in dem du dein Geschäft verrichten kannst. Eine Rolle Toilettenpapier inklusive.</German>
-			<Russian>Сортир: Место, где вы можете справить нужду. Внутри имеется один рулон туалетной бумаги.</Russian>
-			<Spanish>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</Spanish>
-			<French>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</French>
-			<Czech>Outhouse: A buildable object that you can poop in. Comes pre-stocked with one roll of Toilet Paper.</Czech>
+			<English>Outhouse: A buildable object that you can poop in.</English>
+			<German>Toilettenhäuschen: Ein aufbaubares Objekt, in dem du dein Geschäft verrichten kannst.</German>
+			<Russian>Сортир: Место, где вы можете справить нужду.</Russian>
+			<Spanish>Outhouse: A buildable object that you can poop in.</Spanish>
+			<French>Outhouse: A buildable object that you can poop in.</French>
+			<Czech>Outhouse: A buildable object that you can poop in.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGESHED">
 			<English>Storage Shed</English>
