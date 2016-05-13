@@ -835,10 +835,10 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			// check if Generator_DZ is running within 30 meters
 			_findNearestGen = [];
 			{
-				if (alive _x && (_x getVariable ["GeneratorRunning", false])) then {
+				if ((alive _x) && (_x getVariable ["GeneratorRunning", false])) then {
 					_findNearestGen set [count _findNearestGen,_x];
 				};
-			} count ([player] call FNC_getPos) nearEntities ["Generator_DZ", 30];
+			} count (nearestObjects [([player] call FNC_getPos), ["Generator_DZ"], 30]);
 			
 			// show that pump needs power if no generator nearby.
 			if ((count _findNearestGen) > 0) then {

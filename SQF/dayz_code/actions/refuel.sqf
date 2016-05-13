@@ -57,6 +57,9 @@ if (!_fueling) then {
 	r_doLoop = false;
 
 	if (_finished) then {
+		if((_vehicle isKindOf "Generator_DZ") && {!(_vehicle getVariable ["GeneratorFilled", false])}) then {
+				_vehicle setVariable ["GeneratorFilled", true, true];
+		};
 		if (local _vehicle) then {
 			[_vehicle,_newFuel] call local_setFuel;
 		} else {
