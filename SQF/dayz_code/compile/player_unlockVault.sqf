@@ -3,7 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_nul","_objType"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_objType","_combination","_ComboMatch","_vector","_characterID"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -56,6 +56,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	};
 	
 	_dir = direction _obj;
+	_vector = [(vectorDir _obj),(vectorUp _obj)];
 	_pos = _obj getVariable["OEMPos",getPosATL _obj];
 	_objectID = _obj getVariable["ObjectID","0"];
 	_objectUID = _obj getVariable["ObjectUID","0"];
@@ -86,6 +87,8 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 			// Remove locked vault
 			deleteVehicle _obj;
 			_holder setdir _dir;
+			_holder setVariable["memDir",_dir,true];
+			_holder setVectorDirAndUp _vector;
 			_holder setPosATL _pos;
 			player reveal _holder;
 	

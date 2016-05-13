@@ -92,6 +92,9 @@ if (!isDedicated) then {
 	} else {
 		player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
 	};
+    fnc_SetPitchBankYaw =       compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\fnc_SetPitchBankYaw.sqf"; //Vector building
+    DZE_build_vector_file =         "\z\addons\dayz_code\compile\BuildVectors\build_vectors.sqf"; //Vector building
+    build_vectors =                 compile preprocessFileLineNumbers DZE_build_vector_file; //Vector building
 	FNC_check_owner =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\A_Plot_for_Life\fn_check_owner.sqf";
 	FNC_find_plots =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\A_Plot_for_Life\fn_find_plots.sqf";
 	

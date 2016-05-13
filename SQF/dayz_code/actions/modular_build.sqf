@@ -29,6 +29,11 @@ DZE_F = false;
 
 DZE_cancelBuilding = false;
 
+DZE_updateVec = false;
+DZE_memDir = 0;
+DZE_memForBack = 0;
+DZE_memLeftRight = 0;
+
 call gear_ui_init;
 closeDialog 1;
 
@@ -126,6 +131,10 @@ if (_canBuild select 0) then {
 		["","","",["Init",_object,_classname,_objectHelper]] spawn snap_build;
 	};
 
+	if !(DZE_buildItem in DZE_noRotate) then{
+		["","","",["Init","Init",0]] spawn build_vectors;
+	};
+
 	_objHDiff = 0;	
 	_cancel = false;
 	_reason = "";
@@ -173,24 +182,39 @@ if (_canBuild select 0) then {
 		if (DZE_4) then {
 			_rotate = true;
 			DZE_4 = false;
-			_dir = -45;
+			if(DZE_dirWithDegrees) then{
+				DZE_memDir = DZE_memDir - DZE_curDegree;
+			}else{
+				DZE_memDir = DZE_memDir - 45;
+			};
 		};
 		if (DZE_6) then {
 			_rotate = true;
 			DZE_6 = false;
-			_dir = 45;
+			if(DZE_dirWithDegrees) then{
+				DZE_memDir = DZE_memDir + DZE_curDegree;
+			}else{
+				DZE_memDir = DZE_memDir + 45;
+			};
 		};
 		
-		if (DZE_F and _canDo) then {	
-			if (helperDetach) then { 
-				_objectHelperDir = getDir _objectHelper;
+		if(DZE_updateVec) then{
+			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
+			DZE_updateVec = false;
+		};
+		
+		if (DZE_F and _canDo) then {
+			if (helperDetach) then {
 				_objectHelper attachTo [player];
-				_objectHelper setDir _objectHelperDir-(getDir player);
+				DZE_memDir = DZE_memDir-(getDir player);
 				helperDetach = false;
-			} else {
-				_objectHelperDir = getDir _objectHelper;
-				detach _objectHelper;
-				[_objectHelper]	call FNC_GetSetPos;
+				[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
+			} else {		
+				_objectHelperPos = getPosATL _objectHelper;
+				detach _objectHelper;			
+				DZE_memDir = getDir _objectHelper;
+				[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
+				_objectHelper setPosATL _objectHelperPos;
 				_objectHelper setVelocity [0,0,0]; //fix sliding glitch
 				helperDetach = true;
 			};
@@ -198,19 +222,7 @@ if (_canBuild select 0) then {
 		};
 
 		if(_rotate) then {
-			if (helperDetach) then {
-				_objectHelperDir = getDir _objectHelper;
-				_objectHelper setDir _objectHelperDir+_dir;
-				[_objectHelper]	call FNC_GetSetPos;
-			} else {
-				detach _objectHelper;
-				_objectHelperDir = getDir _objectHelper;
-				_objectHelper setDir _objectHelperDir+_dir;
-				[_objectHelper]	call FNC_GetSetPos;
-				_objectHelperDir = getDir _objectHelper;
-				_objectHelper attachTo [player];
-				_objectHelper setDir _objectHelperDir-(getDir player);
-			};
+			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 		};
 
 		if(_zheightchanged) then {
@@ -260,8 +272,8 @@ if (_canBuild select 0) then {
 
 			if (!helperDetach) then {
 			_objectHelper attachTo [player];
-			_objectHelper setDir _objectHelperDir-(getDir player);
 			};
+			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 		};
 
 		uiSleep 0.5;
@@ -274,6 +286,7 @@ if (_canBuild select 0) then {
 			_position = [_object] call FNC_GetPos;
 			detach _object;
 			_dir = getDir _object;
+			_vector = [(vectorDir _object),(vectorUp _object)];	
 			deleteVehicle _object;
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
@@ -351,6 +364,7 @@ if (_canBuild select 0) then {
 		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"]; //create actual object that will be published to database
 
 		_tmpbuilt setdir _dir; //set direction inherited from passed args from control
+		_tmpbuilt setVariable["memDir",_dir,true];
 
 		// Get position based on object
 		_location = _position;
@@ -358,7 +372,21 @@ if (_canBuild select 0) then {
 		if((_isAllowedUnderGround == 0) && ((_location select 2) < 0)) then { //check Z axis if not allowed to build underground
 			_location set [2,0]; //reset Z axis to zero (above terrain)
 		};
-
+		
+		_tmpbuilt setVectorDirAndUp _vector;
+		
+		_buildOffset = [0,0,0];
+		_vUp = _vector select 1;
+		switch (_classname) do {
+			case "MetalFloor_DZ": { _buildOffset = [(_vUp select 0) * .148, (_vUp select 1) * .148,0]; };
+		};
+		
+		_location = [
+			(_location select 0) - (_buildOffset select 0),
+			(_location select 1) - (_buildOffset select 1),
+			(_location select 2) - (_buildOffset select 2)
+		];
+	
 		if (surfaceIsWater _location) then {
 			_tmpbuilt setPosASL _location;
 			_location = ASLtoATL _location; //Database uses ATL
@@ -494,7 +522,11 @@ if (_canBuild select 0) then {
 					_tmpbuilt setVariable ["CharacterID",_combination,true]; //set combination as a character ID
 
 					//call publish precompiled function with given args and send public variable to server to save item to database
-					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
+					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location, _vector],[]];
+					if (DZE_plotforLife) then {
+						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
+						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector],_classname];
+					};
 					publicVariableServer "PVDZ_obj_Publish";
 
 					format[localize "str_epoch_player_140",_combinationDisplay,_text] call dayz_rollingMessages; //display new combination
@@ -502,12 +534,18 @@ if (_canBuild select 0) then {
 
 				} else { //if not lockable item
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
+					if (DZE_plotforLife) then {
+						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
+					};
 
 					// fire?
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then { //if campfire, then spawn, but do not publish to database
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];
+						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[]];
+						if (DZE_plotforLife) then {
+							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector],_classname];
+						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};
 				};

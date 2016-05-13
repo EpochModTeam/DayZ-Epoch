@@ -31,15 +31,15 @@ fnc_snapActionCleanup = {
 	player removeAction s_player_toggleSnapSelect; s_player_toggleSnapSelect = -1;
 	if (count s_player_toggleSnapSelectPoint != 0) then {{player removeAction _x;} count s_player_toggleSnapSelectPoint; s_player_toggleSnapSelectPoint=[]; snapActions = -1;};
 	if (_s1 > 0) then {
-		s_player_toggleSnap = player addaction [format[("<t color=""#ffffff"">" + ("Snap: %1") +"</t>"),snapActionState],"\z\addons\dayz_code\actions\snap_build.sqf",[snapActionState,_object,_classname,_objectHelper],6,false,true];
+		s_player_toggleSnap = player addaction [format[("<t color=""#ffffff"">" + ("Snap: %1") +"</t>"),snapActionState],"\z\addons\dayz_code\actions\snap_build.sqf",[snapActionState,_object,_classname,_objectHelper],10,false,true];
 	};
 	if (_s2 > 0) then {
-		s_player_toggleSnapSelect = player addaction [format[("<t color=""#ffffff"">" + ("Snap Point: %1") +"</t>"),snapActionStateSelect],"\z\addons\dayz_code\actions\snap_build.sqf",[snapActionStateSelect,_object,_classname,_objectHelper],5,false,true];
+		s_player_toggleSnapSelect = player addaction [format[("<t color=""#ffffff"">" + ("Snap Point: %1") +"</t>"),snapActionStateSelect],"\z\addons\dayz_code\actions\snap_build.sqf",[snapActionStateSelect,_object,_classname,_objectHelper],9,false,true];
 	};
 	if (_s3 > 0) then {
 		s_player_toggleSnapSelectPoint=[];
 		_cnt = 0;
-		{snapActions = player addaction [format[("<t color=""#ffffff"">" + ("%1)Select: %2") +"</t>"),_cnt,_x select 3],"\z\addons\dayz_code\actions\snap_build.sqf",["Selected",_object,_classname,_objectHelper,_cnt],4,false,false];
+		{snapActions = player addaction [format[("<t color=""#ffffff"">" + ("%1)Select: %2") +"</t>"),_cnt,_x select 3],"\z\addons\dayz_code\actions\snap_build.sqf",["Selected",_object,_classname,_objectHelper,_cnt],8,false,false];
 		s_player_toggleSnapSelectPoint set [count s_player_toggleSnapSelectPoint,snapActions];
 		_cnt = _cnt+1;
 	}count _points;
@@ -67,7 +67,8 @@ fnc_initSnapPointsNearby = {
 		{
 			_objectSnapGizmo = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
 			_objectSnapGizmo setobjecttexture [0,_objColorInactive];
-			_objectSnapGizmo setDir (getDir _nearbyObject);
+			//_objectSnapGizmo setDir (getDir _nearbyObject);
+			_objectSnapGizmo setDir (_nearbyObject getVariable["memDir",0]);
 			_posNearby = _nearbyObject modelToWorld [_x select 0,_x select 1,_x select 2];
 			if (surfaceIsWater _posNearby) then {
 				_objectSnapGizmo setPosASL [(_posNearby) select 0,(_posNearby) select 1,(getPosASL _nearbyObject select 2) + (_x select 2)];
@@ -114,7 +115,9 @@ fnc_snapDistanceCheck = {
 						_distClosestPointFoundPos = getPosATL _distClosestPointFound;
 						_objectHelper setPosATL _distClosestPointFoundPos;
 					}; 
-					_objectHelper setDir _distClosestPointFoundDir;
+					//_objectHelper setDir _distClosestPointFoundDir;
+					DZE_memDir = _distClosestPointFoundDir;
+					[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 					waitUntil {uiSleep 0.1; !helperDetach};
 				};
 			} else {
@@ -150,7 +153,9 @@ fnc_snapDistanceCheck = {
 						_object attachTo [_objectHelper];
 						_objectHelper setPosATL _distClosestPointFoundPos;
 					};
-					_objectHelper setDir _distClosestPointFoundDir;
+					//_objectHelper setDir _distClosestPointFoundDir;
+					DZE_memDir = _distClosestPointFoundDir;
+					[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 					waitUntil {uiSleep 0.1; !helperDetach};
 				};
 			};
@@ -277,6 +282,7 @@ switch (snapActionState) do {
 		_object attachTo [_objectHelper];
 		_x setobjecttexture [0,_objColorActive];
 		if (!helperDetach) then {_objectHelper attachTo [player]; _objectHelper setDir ((getDir _objectHelper)-(getDir player));};	
+		[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 	};
 	_cnt = _cnt+1;
 }count snapGizmos;

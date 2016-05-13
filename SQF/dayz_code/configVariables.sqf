@@ -68,6 +68,13 @@ DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole. (def
 DZE_plotforLife = true; //Enable or disable a plot for life mod
 DZE_PlotOwnership = true; //allows plot owner to take ownership of buildables (excluding lockable items) near a plot pole. Useful for servers that allow base capturing so the new owner can modify/delete/upgrade existing structures
 
+/////////// Vector Building Variables ///////////
+// ENABLED ONLY WITH SNAP BUILDING ENABLED - DZE_modularBuild = true;
+// Currently no switch to enable or disable due to continginces that may arise from various aspects of gameplay while switching between off/on
+DZE_noRotate = []; //Objects that cannot be rotated. Ex: DZE_noRotate = ["ItemVault"] (NOTE: The objects magazine classname)
+DZE_vectorDegrees = [0.01, 0.1, 1, 5, 15, 45, 90];
+DZE_curDegree = 45; //Starting rotation angle. //Prefered any value in array above
+DZE_dirWithDegrees = true; //When rotating objects with Q&E, use the custom degrees
 ////////////////////////////////////////////////
 
 /* 

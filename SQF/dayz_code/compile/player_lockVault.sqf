@@ -3,8 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear"];
-
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear","_combination","_ComboMatch","_objType","_charID","_vector"];
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_10" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
@@ -45,6 +44,7 @@ if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_lockv
 _obj setVariable["packing",1];
 
 _dir = direction _obj;
+_vector = [(vectorDir _obj),(vectorUp _obj)];
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
 if (!isNull _obj) then {
@@ -57,6 +57,8 @@ if (!isNull _obj) then {
 	//place vault
 	_holder = createVehicle [_lockedClass,_pos,[], 0, "CAN_COLLIDE"];
 	_holder setdir _dir;
+	_holder setVariable["memDir",_dir,true];
+	_holder setVectorDirAndUp _vector;
 	_holder setPosATL _pos;
 	player reveal _holder;
 	

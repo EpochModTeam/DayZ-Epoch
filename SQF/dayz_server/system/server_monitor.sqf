@@ -96,7 +96,54 @@ if (_status == "ObjectStreamStart") then {
 		diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 	};
 
-
+	//Vector building
+	_vector = [[0,0,0],[0,0,0]];
+	_vecExists = false;
+	_ownerPUID = "0";   
+	if (count _worldspace >= 3) then{
+		if(count _worldspace == 3) then{
+				if(typename (_worldspace select 2) == "STRING")then{
+					_ownerPUID = _worldspace select 2;
+				}else{
+					 if(typename (_worldspace select 2) == "ARRAY")then{
+						_vector = _worldspace select 2;
+						if(count _vector == 2)then{
+							if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+								_vecExists = true;
+							};
+						};
+					};                  
+				};
+		}else{
+			//Was not 3 elements, so check if 4 or more
+			if(count _worldspace == 4) then{
+				if(typename (_worldspace select 3) == "STRING")then{
+					_ownerPUID = _worldspace select 3;
+				}else{
+					if(typename (_worldspace select 2) == "STRING")then{
+						_ownerPUID = _worldspace select 2;
+					};
+				};
+				if(typename (_worldspace select 2) == "ARRAY")then{
+					_vector = _worldspace select 2;
+					if(count _vector == 2)then{
+						if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+							_vecExists = true;
+						};
+					};
+				}else{
+					if(typename (_worldspace select 3) == "ARRAY")then{
+						_vector = _worldspace select 3;
+						if(count _vector == 2)then{
+							if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+								_vecExists = true;
+							};
+						};
+					};
+				};
+			};
+		};
+	}; 
 	/*  Plot For Life 2.5  */
 	// Realign characterID to OwnerPUID - need to force save though.	
 	if (count _worldspace < 3) then {
@@ -153,6 +200,9 @@ if (_status == "ObjectStreamStart") then {
 		};
 		_object setVariable ["CharacterID", _ownerID, true];
 		_object setDir _dir;
+		if(_vecExists)then{
+			_object setVectorDirAndUp _vector;
+		}; 
 		_object setDamage _damage;
 		
 		if (!_wsDone) then {[_object,"position",true] call server_updateObject;};
@@ -220,6 +270,7 @@ if (_status == "ObjectStreamStart") then {
 			};
 			_object setPosATL _pos;
 			if ((_object isKindOf "DZ_buildables") or ((_type in DayZ_SafeObjects) && !(_object isKindOf "TrapItems"))) then {
+				_object setVariable["memDir",_dir,true];
 				if (DZE_GodModeBase) then {_object addEventHandler ["HandleDamage",{false}];} else {_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];};
 				_object enableSimulation false; // Test disabling simulation server side on buildables only.
 				_object setVariable ["OEMPos",_pos,true]; // used for inplace upgrades and lock/unlock of safe

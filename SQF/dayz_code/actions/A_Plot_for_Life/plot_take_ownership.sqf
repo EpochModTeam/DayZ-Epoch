@@ -50,7 +50,8 @@ if ((_isowner select 0 )) then {
 				};
 				
 				_position = 	getPosATL _object;
-				_worldspace = 	[round(direction _object),_position,_playerUID];
+				_vector = [(vectorDir _object),(vectorUp _object)];
+				_worldspace = 	[round(direction _object),_position,_playerUID,_vector];
 
 				_invW = getWeaponCargo _object;
 				{
