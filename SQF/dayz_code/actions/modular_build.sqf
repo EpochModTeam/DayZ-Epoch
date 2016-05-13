@@ -11,6 +11,7 @@ _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animatio
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
+_playerUID = [player] call FNC_GetPlayerUID;
 
 DZE_Q = false;
 DZE_Z = false;
