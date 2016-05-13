@@ -53,7 +53,11 @@ if !(alive _item) then {
 		r_player_blood = r_player_bloodTotal;
 	};
 
-	player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
+	//Publish messing
+	player setVariable ["messing",[dayz_hunger,dayz_thirst,dayz_nutrition],false]; //No need to be sent to everyplayer
+	PVDZ_serverStoreVar = [player,"messing",[dayz_hunger,dayz_thirst,dayz_nutrition]]; //update server side only
+	publicVariableServer "PVDZ_serverStoreVar";
+	
 	player setVariable["USEC_BloodQty",r_player_blood,true];
 	player setVariable["medForceUpdate",true];
 
