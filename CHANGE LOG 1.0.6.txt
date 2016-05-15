@@ -37,6 +37,7 @@
 [NEW] Weather effects are now configurable with DZE_WeatherVariables See DynamicWeatherEffects.sqf for info on these values @icomrade
 [NEW] Full height cinderblock wall kits are now in game, classname "full_cinder_wall_kit" #1172 @icomrade
 [NEW] Vector Building is now part of Epoch, only enabled with Snap Building DZE_modularBuild = true; Note there is no option to turn off Vector Building with Snap Building enabled @strikerforce @icomrade
+[NEW] You can exclude built items from the god mode base function using DZE_GodModeBaseExclude = []; which is an array of item classnames
 
 [CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
 [CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
