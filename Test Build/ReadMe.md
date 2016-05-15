@@ -19,6 +19,8 @@ Install instructions:
 
 8. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
+NOTE: dayz_server.pbo should not be included in your client epoch addons folder. It is a separate download as to avoid this accidentally happening, you may download the latest [[Epoch server pbo here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/dayz_server.pbo)]
+
 Current Version: **EpochTest-106-MAY_15_2016**
 
 --------------------------
@@ -37,7 +39,6 @@ The Zip file contains the following files:
 * dayz_code.pbo
 * dayz_epoch_b.pbo
 * dayz_sfx.pbo
-* dayz_server.pbo
 * anzio.pbo
 * redryder.pbo
 * mod.cpp
