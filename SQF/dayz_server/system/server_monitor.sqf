@@ -77,10 +77,10 @@ if (_status == "ObjectStreamStart") then {
 	_pos = getMarkerpos "respawn_west";
 	_wsDone = false;
 
-	if (count _worldspace >= 1 && {(typeName (_worldspace select 0)) == "SCALAR"}) then { 
+	if (count _worldspace >= 1 && {(typeName (_worldspace select 0)) == "SCALAR"}) then {
 		_dir = _worldspace select 0;
 	};
-	if (count _worldspace == 2 && {(typeName (_worldspace select 1)) == "ARRAY"}) then { 
+	if (count _worldspace >= 2 && {(typeName (_worldspace select 1)) == "ARRAY"}) then { 
 		_i = _worldspace select 1;
 		if (count _i == 3 &&
 			{(typeName (_i select 0)) == "SCALAR"} && 
@@ -99,43 +99,46 @@ if (_status == "ObjectStreamStart") then {
 	//Vector building
 	_vector = [[0,0,0],[0,0,0]];
 	_vecExists = false;
-	_ownerPUID = "0";   
-	if (count _worldspace >= 3) then{
-		if(count _worldspace == 3) then{
-				if(typename (_worldspace select 2) == "STRING")then{
+	_ownerPUID = "0";
+	_worldSpaceSize = count _worldspace;
+	if (_worldSpaceSize >= 3) then{
+		_ws2TN = typename (_worldspace select 2);
+		_ws3TN = typename (_worldspace select 3);
+		if (_worldSpaceSize == 3) then{
+				if (_ws2TN == "STRING") then{
 					_ownerPUID = _worldspace select 2;
-				}else{
-					 if(typename (_worldspace select 2) == "ARRAY")then{
+				} else {
+					 if (_ws2TN == "ARRAY") then{
 						_vector = _worldspace select 2;
-						if(count _vector == 2)then{
-							if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+						if (count _vector == 2) then{
+							if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
 								_vecExists = true;
 							};
 						};
 					};                  
 				};
-		}else{
+		} else {
 			//Was not 3 elements, so check if 4 or more
-			if(count _worldspace == 4) then{
-				if(typename (_worldspace select 3) == "STRING")then{
+			if (_worldSpaceSize == 4) then{
+				if (_ws3TN == "STRING") then{
 					_ownerPUID = _worldspace select 3;
-				}else{
-					if(typename (_worldspace select 2) == "STRING")then{
+				} else {
+					if (_ws2TN == "STRING") then{
 						_ownerPUID = _worldspace select 2;
 					};
 				};
-				if(typename (_worldspace select 2) == "ARRAY")then{
+				if (_ws2TN == "ARRAY") then{
 					_vector = _worldspace select 2;
-					if(count _vector == 2)then{
-						if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+					if (count _vector == 2) then{
+						if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
 							_vecExists = true;
 						};
 					};
-				}else{
-					if(typename (_worldspace select 3) == "ARRAY")then{
+				} else {
+					if (_ws3TN == "ARRAY") then{
 						_vector = _worldspace select 3;
-						if(count _vector == 2)then{
-							if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+						if (count _vector == 2) then{
+							if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
 								_vecExists = true;
 							};
 						};
@@ -143,14 +146,9 @@ if (_status == "ObjectStreamStart") then {
 				};
 			};
 		};
-	}; 
-	/*  Plot For Life 2.5  */
-	// Realign characterID to OwnerPUID - need to force save though.	
-	if (count _worldspace < 3) then {
+	} else {
 		_worldspace set [count _worldspace, "0"];
-	};		
-	_ownerPUID = _worldspace select 2;
-
+	};
 
 	if (_damage < 1) then {
 		//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
@@ -263,12 +261,7 @@ if (_status == "ObjectStreamStart") then {
 			if (_type in DayZ_nonCollide) then {
 				_pos set [2,0];
 			};
-			if (_pos select 2 == 0 or 0 == getNumber (configFile >> "CfgVehicles" >> _type >> "canbevertical")) then {
-				_object setVectorUp surfaceNormal _pos;
-			} else {
-				_object setVectorUp [0,0,1];
-			};
-			_object setPosATL _pos;
+			[_object, _pos] call FNC_GetSetPos;
 			if ((_object isKindOf "DZ_buildables") or ((_type in DayZ_SafeObjects) && !(_object isKindOf "TrapItems"))) then {
 				_object setVariable["memDir",_dir,true];
 				if (DZE_GodModeBase && {!(_object in DZE_GodModeBaseExclude)}) then {_object addEventHandler ["HandleDamage",{false}];} else {_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];};
