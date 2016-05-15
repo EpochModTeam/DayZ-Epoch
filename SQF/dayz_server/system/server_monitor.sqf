@@ -260,7 +260,7 @@ if (_status == "ObjectStreamStart") then {
 			if (_type in DayZ_nonCollide) then {
 				_pos set [2,0];
 			};
-			[_object, _pos] call FNC_GetSetPos;
+			_object setPosATL _pos;
 			if ((_object isKindOf "DZ_buildables") or ((_type in DayZ_SafeObjects) && !(_object isKindOf "TrapItems"))) then {
 				_object setVariable["memDir",_dir,true];
 				if (DZE_GodModeBase && {!(_object in DZE_GodModeBaseExclude)}) then {_object addEventHandler ["HandleDamage",{false}];} else {_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];};
