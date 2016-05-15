@@ -271,7 +271,7 @@ if (_status == "ObjectStreamStart") then {
 			_object setPosATL _pos;
 			if ((_object isKindOf "DZ_buildables") or ((_type in DayZ_SafeObjects) && !(_object isKindOf "TrapItems"))) then {
 				_object setVariable["memDir",_dir,true];
-				if (DZE_GodModeBase) then {_object addEventHandler ["HandleDamage",{false}];} else {_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];};
+				if (DZE_GodModeBase && {!(_object in DZE_GodModeBaseExclude)}) then {_object addEventHandler ["HandleDamage",{false}];} else {_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];};
 				_object enableSimulation false; // Test disabling simulation server side on buildables only.
 				_object setVariable ["OEMPos",_pos,true]; // used for inplace upgrades and lock/unlock of safe
 			};

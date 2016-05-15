@@ -46,6 +46,7 @@ MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS] RADIUS],[[3D POS] RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]];; //Sets how rare each gem in the order shown when mining (whole numbers only)
+DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 
 /****** Advanced Trading Variables ***********/
 DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
