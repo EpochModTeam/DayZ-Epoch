@@ -1,4 +1,10 @@
 -- ----------------------------
+-- Update Object_DATA to support longer CharacterID and hitpoints
+-- ----------------------------
+ALTER TABLE Object_DATA MODIFY COLUMN CharacterID bigint(20);
+ALTER TABLE Object_DATA MODIFY COLUMN Hitpoints varchar(1024);
+
+-- ----------------------------
 -- Add new attachments category to DB traders
 -- ----------------------------
 INSERT INTO `trader_tids` VALUES(693, 'Attachments', 176);
