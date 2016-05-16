@@ -67,6 +67,7 @@ if (_status == "ObjectStreamStart") then {
 	_hitPoints =	if ((typeName (_x select 6)) == "ARRAY") then { _x select 6 } else { [] };
 	_fuel =			if ((typeName (_x select 7)) == "SCALAR") then { _x select 7 } else { 0 };
 	_damage = 		if ((typeName (_x select 8)) == "SCALAR") then { _x select 8 } else { 0.9 };
+	_worldspace call dayz_objectUID2; // Set objectUIDs in currentObjectUIDs list to prevent duplicates
 	
 	//set object to be in maintenance mode
 	_maintenanceMode = false;
