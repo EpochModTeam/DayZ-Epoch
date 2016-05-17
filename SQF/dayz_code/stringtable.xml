@@ -13536,13 +13536,13 @@
 			<Czech>Odebrat Zámek z %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN">
-			<English>Maintain %1</English>
-			<German>%1 instand halten</German>
-			<Russian>Занять %1</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Onderhoud %1</Dutch>
-			<French>Maintenir %1</French>
-			<Czech>Opravit %1</Czech>
+			<English>Maintain</English>
+			<German>Pflegen</German>
+			<Russian>Занять</Russian>
+			<Spanish>Mantener</Spanish>
+			<Dutch>Onderhoud</Dutch>
+			<French>Maintenir</French>
+			<Czech>Opravit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 			<English>Stop Generator</English>
@@ -17370,6 +17370,54 @@
 			<German>Zurück</German>
 			<Czech>Zpět</Czech>
 			<Japanese>戻る</Japanese>
+		</Key>
+		<Key ID="STR_EPOCH_REFRESH">
+			<English>Refresh</English>
+			<French>Actualiser</French>
+			<Spanish>Actualizar</Spanish>
+			<Italian>Aggiorna</Italian>
+			<Hungarian>Frissítés</Hungarian>
+			<Polish>Odśwież</Polish>
+			<Russian>Обновить</Russian>
+			<German>Aktualis.</German>
+			<Czech>Aktualizovat</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_DELETE">
+			<English>Delete</English>
+			<French>Supprimer</French>
+			<Spanish>Suprimir</Spanish>
+			<Italian>Cancella</Italian>
+			<Hungarian>Törlés</Hungarian>
+			<Polish>Usuń</Polish>
+			<Russian>Удалить</Russian>
+			<German>Löschen</German>
+			<Czech>Smazat</Czech>
+			<Japanese>削除</Japanese>
+		</Key>
+		<Key ID="STR_EPOCH_ADD">
+			<English>Add</English>
+			<French>Ajouter</French>
+			<Spanish>Añadir</Spanish>
+			<Italian>Aggiungi</Italian>
+			<Hungarian>Hozzáad</Hungarian>
+			<Polish>Dodaj</Polish>
+			<Russian>Добавить</Russian>
+			<German>Hinzufügen</German>
+			<Czech>Přidat</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_DOME">
+			<English>Dome</English>
+			<German>Kuppel</German>
+			<Russian>купол</Russian>
+			<Spanish>Cúpula</Spanish>
+			<French>Dôme</French>
+			<Czech>Kupole</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_HUMANS_NEARBY">
+			<English>Humans Nearby</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLOT_FRIENDS">
+			<English>Plot Friends</English>
 		</Key>
 	</Package>
 </Project>

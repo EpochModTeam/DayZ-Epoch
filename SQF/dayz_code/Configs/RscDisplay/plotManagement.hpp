@@ -1,30 +1,9 @@
-
-class RscTextT
-{
-	access = 0;
-	type = 0;
-	idc = -1;
-	colorBackground[] = {0,0,0,0};
-	colorText[] = {0.8784,0.8471,0.651,1};
-	text = "";
-	fixedWidth = 0;
-	x = 0;
-	y = 0;
-	h = 0.037;
-	w = 0.3;
-	style = 0;
-	shadow = 2;
-	font = "Zeppelin32";
-	SizeEx = 0.03921;
-};
-
-
 class PlotManagement
 {
 	idd = 711194;
 	onLoad = "uiNamespace setVariable ['PlotManagement', _this select 0]";
 	class Controls {
-		class RscText_7000: RscTextT
+		class RscText_7000: ZSC_RscTextT
 		{
 			idc = 7000;
 			x = 0.30 * safezoneW + safezoneX;
@@ -34,10 +13,10 @@ class PlotManagement
 			colorBackground[] = {0,0,0,0.8};
 		};	
 		
-	class RscText_7007: RscTextT
+	class RscText_7007: ZSC_RscTextT
 		{
 			idc = 7007;
-			text = "Plot Management";
+			text = $STR_EPOCH_ACTIONS_MANAGEPLOT;
 			x = 0.30 * safezoneW + safezoneX;
 			y = 0.15 * safezoneH + safezoneY;
 			w = 0.30 * safezoneW;
@@ -49,7 +28,7 @@ class PlotManagement
 		class RscShortcutButton_7009: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = "Dome";
+			text = $STR_EPOCH_DOME;
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -59,7 +38,7 @@ class PlotManagement
 				class RscShortcutButton_7010: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = "Refresh";
+			text = $STR_EPOCH_REFRESH;
 			x = 0.41 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -69,13 +48,13 @@ class PlotManagement
 				class RscShortcutButton_7011: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = "Maintain";
+			text = $STR_EPOCH_ACTIONS_MAINTAIN;
 			x = 0.51 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "[""maintain""] call MaintainPlot;";
 		};
-		class RscText_7012: RscTextT
+		class RscText_7012: ZSC_RscTextT
 		{
 			idc = 7012;
 			text = "";
@@ -100,7 +79,7 @@ class PlotManagement
 			};
 		};
 		
-		class RscText_7013: RscTextT
+		class RscText_7013: ZSC_RscTextT
 		{
 			idc = 7013;
 			text = "";
@@ -112,20 +91,20 @@ class PlotManagement
 		};
 		
 		
-		class RscText_7008: RscTextT
+		class RscText_7008: ZSC_RscTextT
 		{
 			idc = -1;
-			text = "Humans Nearby";
+			text = $STR_EPOCH_HUMANS_NEARBY;
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.03 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};		
-		class RscText_7003: RscTextT
+		class RscText_7003: ZSC_RscTextT
 		{
 			idc = -1;
-			text = "PlotFriends";
+			text = $STR_EPOCH_PLOT_FRIENDS;
 			x = 0.45 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
@@ -157,7 +136,7 @@ class PlotManagement
 		class RscShortcutButton_7004: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = "Add";
+			text = $STR_EPOCH_ADD;
 			x = 0.33 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -166,7 +145,7 @@ class PlotManagement
 		class RscShortcutButton_7005: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = "Delete";
+			text = $STR_EPOCH_DELETE;
 			x = 0.47 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -175,7 +154,7 @@ class PlotManagement
 		class RscShortcutButton_7006: ZSC_RscButtonMenu
 		{
 			idc = -1;
-			text = "Close";
+			text = $STR_UI_CLOSE;
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.74 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
