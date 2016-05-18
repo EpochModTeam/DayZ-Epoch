@@ -88,7 +88,7 @@ _ctrlEye ctrlSetText _visualtext;
 _ctrlEar ctrlSetText _audibletext;
 
 // Fracture/Broken Legs
-if (!(canStand player) and !(ctrlShown _ctrlFracture)) then {
+if !(canStand player) then {
 	_ctrlFracture ctrlShow true;
 }
 else {

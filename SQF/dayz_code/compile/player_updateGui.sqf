@@ -161,7 +161,7 @@ if (_audible < 0.2) then {_audible = 0.2;};
 _ctrlEar ctrlSetTextColor [1, 1, 1, _audible];
 
 // Fracture/Broken Legs
-if (!(canStand player) and !(ctrlShown _ctrlFracture)) then {
+if !(canStand player) then {
     _ctrlFracture ctrlShow true;
 }
 else {

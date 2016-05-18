@@ -113,7 +113,7 @@ if (_audible > 0) then {_audibletext = "\z\addons\dayz_code\gui\status_epoch\val
 _ctrlEar ctrlSetText _audibletext;
 
 // Fracture/Broken Legs
-if (!(canStand player) and !(ctrlShown _ctrlFracture)) then {
+if !(canStand player) then {
 	_ctrlFracture ctrlShow true;
 }
 else {
