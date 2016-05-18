@@ -106,9 +106,6 @@ if (_canBuild select 0) then {
 	};
 
 	_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset"); //check default distance offset, define if does not exist
-	if((count _offset) <= 0) then {
-		_offset = [0,1.5,0];
-	};
 
 	_objectHelper = objNull;
 	_isOk = true;
@@ -121,6 +118,10 @@ if (_canBuild select 0) then {
 	};
 
 	_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"]; //object preview, not an actual object that will be built
+
+	if((count _offset) <= 0) then {
+		_offset = [0,(abs(((boundingBox _object)select 0) select 1)),0];
+	};
 
 	_objectHelper = "Sign_sphere10cm_EP1" createVehicle [0,0,0];
 	_helperColor = "#(argb,8,8,3)color(0,0,0,0,ca)";

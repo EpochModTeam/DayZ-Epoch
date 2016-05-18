@@ -624,7 +624,7 @@ class Wooden_shed_DZ: Land_Shed_wooden
 	scope = public;
 	destrType = "DestructBuilding";
 	//cost = 100;
-	offset[] = {0,2.5,1};
+	offset[] = {0,3,1};
 	armor = 800;
 	displayName = "Wooden Shed";
 	vehicleClass = "Fortifications";

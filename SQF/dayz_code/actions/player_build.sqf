@@ -108,9 +108,6 @@ if (_canBuild select 0) then {
 	};
 
 	_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
-	if((count _offset) <= 0) then {
-		_offset = [0,1.5,0];
-	};
 
 	_location = [0,0,0];
 	_isOk = true;
@@ -123,6 +120,10 @@ if (_canBuild select 0) then {
 	};
 
 	_object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+
+	if((count _offset) <= 0) then {
+		_offset = [0,(abs(((boundingBox _object)select 0) select 1)),0];
+	};
 
 	_object attachTo [player,_offset];
 
