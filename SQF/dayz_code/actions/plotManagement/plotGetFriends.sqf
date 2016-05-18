@@ -5,7 +5,7 @@ _thePlot = _plots select 0;
 _friendlies =  _thePlot getVariable ["plotfriends", []];
 {
 	lbAdd [7002, (_x select 1)];
-} count _friendlies;
+} forEach _friendlies; // count causes Error Type Number, expected Bool here
 
 
 

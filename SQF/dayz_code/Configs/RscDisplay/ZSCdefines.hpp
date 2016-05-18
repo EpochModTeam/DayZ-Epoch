@@ -643,7 +643,7 @@ class ZSC_RscToolbox {
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 };
 
-class ZSC_RscTextT
+class ZSC_RscTextT // Used in plot management
 {
 	access = 0;
 	type = 0;
@@ -660,4 +660,16 @@ class ZSC_RscTextT
 	shadow = 2;
 	font = "Zeppelin32";
 	SizeEx = 0.03921;
+};
+
+class ZSC_RscButtonMenuBlue : ZSC_RscButtonMenu // Used in plot management
+{
+	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+	class Attributes
+	{
+		font = "Zeppelin32";
+		color = "#E5E5E5";
+		align = "center";
+		shadow = "false";
+	};
 };

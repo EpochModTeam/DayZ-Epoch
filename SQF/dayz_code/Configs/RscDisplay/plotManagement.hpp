@@ -25,7 +25,7 @@ class PlotManagement
 			colorText[] = {1,1,1,1};			
 		};
 		
-		class RscShortcutButton_7009: ZSC_RscButtonMenu
+		class RscShortcutButton_7009: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_DOME;
@@ -35,7 +35,7 @@ class PlotManagement
 			onButtonClick = "call PlotPreview;";
 		};
 		
-				class RscShortcutButton_7010: ZSC_RscButtonMenu
+				class RscShortcutButton_7010: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_REFRESH;
@@ -45,7 +45,7 @@ class PlotManagement
 			onButtonClick = "[""preview""] call MaintainPlot;";
 		};
 		
-				class RscShortcutButton_7011: ZSC_RscButtonMenu
+				class RscShortcutButton_7011: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_ACTIONS_MAINTAIN;
@@ -133,7 +133,7 @@ class PlotManagement
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
 		};
-		class RscShortcutButton_7004: ZSC_RscButtonMenu
+		class RscShortcutButton_7004: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_ADD;
@@ -142,7 +142,7 @@ class PlotManagement
 			w = 0.08 * safezoneW;
 			onButtonClick = "[(lbCurSel 7001)] call PlotAddFriend;";
 		};
-		class RscShortcutButton_7005: ZSC_RscButtonMenu
+		class RscShortcutButton_7005: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_DELETE;
@@ -151,7 +151,7 @@ class PlotManagement
 			w = 0.08 * safezoneW;
 			onButtonClick = "[(lbCurSel 7002)] call PlotRemoveFriend;";
 		};	
-		class RscShortcutButton_7006: ZSC_RscButtonMenu
+		class RscShortcutButton_7006: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_UI_CLOSE;
