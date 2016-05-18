@@ -63,6 +63,7 @@ Z_MoneyVariable = "cashMoney"; // If using a Single currency system, change this
 /////////// plotManagement Variables ///////////
 // see also: https://github.com/DevZupa/PlotManagement
 DZE_plotManagement = true;
+DZE_plotManagementMustBeClose = true; //Players must be within 10m of pole to be added as a plot friend.
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby
 DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole. (default 6)
 // see also: https://github.com/RimBlock/Epoch/tree/master/A%20Plot%20for%20Life
