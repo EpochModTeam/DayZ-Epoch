@@ -35,6 +35,11 @@ class AH6J_EP1_DZ: AH6_Base_EP1
 	transportMaxWeapons = 3;
 	transportMaxMagazines = 10;
 	transportmaxbackpacks = 2;
+	class DefaultEventhandlers;
+	class EventHandlers: DefaultEventhandlers
+	{
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};
 };
 class AH6J_EP1_DZE: AH6J_EP1_DZ
 {
@@ -71,4 +76,9 @@ class AH6X_DZ: AH6_Base_EP1 {
 	transportmaxbackpacks = 2;
 	fuelCapacity = 242;
 	class Turrets {};
+	class DefaultEventhandlers;
+	class EventHandlers: DefaultEventhandlers
+	{
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};
 };
