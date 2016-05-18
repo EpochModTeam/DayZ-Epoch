@@ -33,7 +33,9 @@ _nearestPole = _plotcheck select 2;
 if(_isPole && {_IsNearPlot > 0}) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_44",_distance] call dayz_rollingMessages; [_canBuild, _isPole];};
 
 if(_IsNearPlot == 0) then {
-	_canBuild = true;
+	if (_requireplot == 0 || {_isLandFireDZ}) then {
+		_canBuild = true;
+	};
 } else {
 	_ownerID = _nearestPole getVariable["CharacterID","0"];
 	if(dayz_characterID == _ownerID) then {
