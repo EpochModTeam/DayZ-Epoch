@@ -59,7 +59,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 			_isNear = {inflamed _x} count (_pos nearObjects _distance);
 			if(_isNear == 0) then {
 				_abort = true;
-				_reason = "fire";
+				_reason = localize "STR_EPOCH_FIRE";
 			};
 		};
 		case "workshop":
@@ -68,7 +68,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 			_isNear = count (nearestObjects [_pos, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
-				_reason = "workshop";
+				_reason = localize "STR_BLD_name_ItemWorkshop";
 			};
 		};
 		case "fueltank":
@@ -77,7 +77,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 			_isNear = count (nearestObjects [_pos, dayz_fuelsources, _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
-				_reason = "fuel tank";
+				_reason = localize "STR_EPOCH_VEHUP_TNK";
 			};
 		};
 	};
@@ -294,30 +294,30 @@ if (_canBuild select 0) then {
 			deleteVehicle _objectHelper;
 		};
 
-		if(_location1 distance _location2 > 10) exitWith {
+		if(_location1 distance _location2 > DZE_buildMaxMoveDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "You've moved too far away from where you started building (within 10 meters)";
+			_reason = format[localize "STR_EPOCH_BUILD_FAIL_MOVED",DZE_buildMaxMoveDistance];
 			detach _object;
 			deleteVehicle _object;
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
 		
-		if(_location1 distance _objectHelperPos > 10) exitWith {
+		if(_location1 distance _objectHelperPos > DZE_buildMaxMoveDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Object is placed too far away from where you started building (within 10 meters)";
+			_reason = format[localize "STR_EPOCH_BUILD_FAIL_TOO_FAR",DZE_buildMaxMoveDistance];
 			detach _object;
 			deleteVehicle _object;
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
 
-		if(abs(_objHDiff) > 10) exitWith {
+		if(abs(_objHDiff) > DZE_buildMaxHeightDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cannot move up or down more than 10 meters";
+			_reason = format[localize "STR_EPOCH_BUILD_FAIL_HEIGHT",DZE_buildMaxHeightDistance];
 			detach _object;
 			deleteVehicle _object;
 			detach _objectHelper;
@@ -327,7 +327,7 @@ if (_canBuild select 0) then {
 		if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = (localize "str_epoch_player_43");
+			_reason = localize "str_epoch_player_43";
 			detach _object;
 			deleteVehicle _object;
 			detach _objectHelper;
@@ -337,7 +337,7 @@ if (_canBuild select 0) then {
 		if (DZE_cancelBuilding) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cancelled building.";
+			_reason = localize "STR_EPOCH_PLAYER_46";
 			detach _object;
 			deleteVehicle _object;
 			detach _objectHelper;
@@ -352,11 +352,11 @@ if (_canBuild select 0) then {
 
 	//No building on roads unless toggled
 	if (!DZE_BuildOnRoads) then {
-		if (isOnRoad _position) then { _cancel = true; _reason = "Cannot build on a road."; };
+		if (isOnRoad _position) then { _cancel = true; _reason = localize "STR_EPOCH_BUILD_FAIL_ROAD"; };
 	};
 
 	// No building in trader zones
-	if(!canbuild) then { _cancel = true; _reason = "Cannot build in a city."; };
+	if(!canbuild) then { _cancel = true; _reason = format[localize "STR_EPOCH_PLAYER_136",localize "STR_EPOCH_TRADER"]; };
 
 	if(!_cancel) then {
 
@@ -490,13 +490,13 @@ if (_canBuild select 0) then {
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
 							dayz_combination = _combination;
 							if (_combination_1 == 100) then {
-								_combination_1_Display = "Red";
+								_combination_1_Display = localize "STR_EPOCH_RED";
 							};
 							if (_combination_1 == 101) then {
-								_combination_1_Display = "Green";
+								_combination_1_Display = localize "STR_EPOCH_GREEN";
 							};
 							if (_combination_1 == 102) then {
-								_combination_1_Display = "Blue";
+								_combination_1_Display = localize "STR_EPOCH_BLUE";
 							};
 							_combinationDisplay = format["%1%2%3",_combination_1_Display,_combination_2,_combination_3];
 						};

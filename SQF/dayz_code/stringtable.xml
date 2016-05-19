@@ -17413,11 +17413,70 @@
 			<French>Dôme</French>
 			<Czech>Kupole</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_FIRE">
+			<English>Fire (Lit)</English>
+			<French>Feu (allumé)</French>
+			<Spanish>Fuego (encendido)</Spanish>
+			<Italian>Fuoco (acceso)</Italian>
+			<Hungarian>Tűz (égő)</Hungarian>
+			<Polish>Ogień</Polish>
+			<Russian>Огонь (подожженный)</Russian>
+			<German>Feuer (angezündet)</German>
+			<Czech>Ohniště (hořící)</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_RED">
+			<English>Red</English>
+			<French>Rouge</French>
+			<Spanish>Rojo</Spanish>
+			<Italian>Rosso</Italian>
+			<Hungarian>Piros</Hungarian>
+			<Polish>Czerwony</Polish>
+			<Russian>Красный</Russian>
+			<German>Rot</German>
+			<Czech>Červená</Czech>
+			<Japanese>赤色</Japanese>
+		</Key>
+		<Key ID="STR_EPOCH_GREEN">
+			<English>Green</English>
+			<French>Vert</French>
+			<Spanish>Verde</Spanish>
+			<Italian>Verde</Italian>
+			<Hungarian>Zöld</Hungarian>
+			<Polish>Zielony</Polish>
+			<Russian>Зеленый</Russian>
+			<German>Grün</German>
+			<Czech>Zelená</Czech>
+			<Japanese>緑色</Japanese>
+		</Key>
+		<Key ID="STR_EPOCH_BLUE">
+			<English>Blue</English>
+			<French>Bleu</French>
+			<Spanish>Azul</Spanish>
+			<Italian>Blu</Italian>
+			<Hungarian>Kék</Hungarian>
+			<Polish>Niebieski</Polish>
+			<Russian>Синий</Russian>
+			<German>Blau</German>
+			<Czech>Modrá</Czech>
+			<Japanese>青色</Japanese>
+		</Key>
 		<Key ID="STR_EPOCH_HUMANS_NEARBY">
 			<English>Humans Nearby</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOT_FRIENDS">
 			<English>Plot Friends</English>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_FAIL_ROAD">
+			<English>Cannot build on a road.</English>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_FAIL_MOVED">
+			<English>You've moved too far away from where you started building (within %1 meters).</English>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_FAIL_HEIGHT">
+			<English>Cannot move up or down more than %1 meters</English>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_FAIL_TOO_FAR">
+			<English>Object is placed too far away from where you started building (within %1 meters)</English>
 		</Key>
 	</Package>
 </Project>

@@ -45,8 +45,10 @@ MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE to spawn around the m
 MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS] RADIUS],[[3D POS] RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
-DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]];; //Sets how rare each gem in the order shown when mining (whole numbers only)
+DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
+DZE_buildMaxMoveDistance = 10; // Max distance player can walk from start position when building. Anything >= the differnce between DZE_PlotPole values is not recommended (allows walking into other plots).
+DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower object from start position when building.
 
 /****** Advanced Trading Variables ***********/
 DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!

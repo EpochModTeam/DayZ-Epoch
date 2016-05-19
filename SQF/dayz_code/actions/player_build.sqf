@@ -4,16 +4,15 @@ if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_playerUID","_canBuild"];
+private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_tmpbuilt","_onLadder","_require","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_playerUID","_canBuild"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 _pos = [player] call FNC_GetPos;
 
-_onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-_isWater = 		dayz_isSwimming;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+
 _cancel = false;
-_reason = "";
 _canBuildOnPlot = false;
 _playerUID = [player] call FNC_GetPlayerUID;
 
@@ -38,7 +37,7 @@ DZE_cancelBuilding = false;
 call gear_ui_init;
 closeDialog 1;
 
-if (_isWater) exitWith {DZE_ActionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
+if (dayz_isSwimming) exitWith {DZE_ActionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
 if (_inVehicle) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_42" call dayz_rollingMessages;};
 if (_onLadder) exitWith {DZE_ActionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
 if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
@@ -49,7 +48,7 @@ _item =	_this;
 _abort = false;
 _reason = "";
 
-_needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "neednearby");
+_needNear = getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "neednearby");
 
 {
 	switch(_x) do{
@@ -59,7 +58,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 			_isNear = {inflamed _x} count (_pos nearObjects _distance);
 			if(_isNear == 0) then {
 				_abort = true;
-				_reason = "fire";
+				_reason = localize "STR_EPOCH_FIRE";
 			};
 		};
 		case "workshop":
@@ -68,7 +67,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 			_isNear = count (nearestObjects [_pos, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
-				_reason = "workshop";
+				_reason = localize "STR_BLD_name_ItemWorkshop";
 			};
 		};
 		case "fueltank":
@@ -77,7 +76,7 @@ _needNear = 	getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >>
 			_isNear = count (nearestObjects [_pos, dayz_fuelsources, _distance]);
 			if(_isNear == 0) then {
 				_abort = true;
-				_reason = "fuel tank";
+				_reason = localize "STR_EPOCH_VEHUP_TNK";
 			};
 		};
 	};
@@ -245,18 +244,18 @@ if (_canBuild select 0) then {
 			deleteVehicle _object;
 		};
 
-		if(_location1 distance _location2 > 5) exitWith {
+		if(_location1 distance _location2 > DZE_buildMaxMoveDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "You've moved too far away from where you started building (within 5 meters)";
+			_reason = format[localize "STR_EPOCH_BUILD_FAIL_MOVED",DZE_buildMaxMoveDistance];
 			detach _object;
 			deleteVehicle _object;
 		};
 
-		if(abs(_objHDiff) > 5) exitWith {
+		if(abs(_objHDiff) > DZE_buildMaxHeightDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cannot move up or down more than 5 meters";
+			_reason = format[localize "STR_EPOCH_BUILD_FAIL_HEIGHT",DZE_buildMaxHeightDistance];
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -264,7 +263,7 @@ if (_canBuild select 0) then {
 		if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = (localize "str_epoch_player_43");
+			_reason = localize "str_epoch_player_43";
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -272,7 +271,7 @@ if (_canBuild select 0) then {
 		if (DZE_cancelBuilding) exitWith {
 			_isOk = false;
 			_cancel = true;
-			_reason = "Cancelled building.";
+			_reason = localize "STR_EPOCH_PLAYER_46";
 			detach _object;
 			deleteVehicle _object;
 		};
@@ -280,11 +279,11 @@ if (_canBuild select 0) then {
 
 	//No building on roads unless toggled
 	if (!DZE_BuildOnRoads) then {
-		if (isOnRoad _position) then { _cancel = true; _reason = "Cannot build on a road."; };
+		if (isOnRoad _position) then { _cancel = true; _reason = localize "STR_EPOCH_BUILD_FAIL_ROAD"; };
 	};
 
 	// No building in trader zones
-	if(!canbuild) then { _cancel = true; _reason = "Cannot build in a city."; };
+	if(!canbuild) then { _cancel = true; _reason = format[localize "STR_EPOCH_PLAYER_136",localize "STR_EPOCH_TRADER"]; };
 
 	if(!_cancel) then {
 
@@ -402,13 +401,13 @@ if (_canBuild select 0) then {
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
 							dayz_combination = _combination;
 							if (_combination_1 == 100) then {
-								_combination_1_Display = "Red";
+								_combination_1_Display = localize "STR_EPOCH_RED";
 							};
 							if (_combination_1 == 101) then {
-								_combination_1_Display = "Green";
+								_combination_1_Display = localize "STR_EPOCH_GREEN";
 							};
 							if (_combination_1 == 102) then {
-								_combination_1_Display = "Blue";
+								_combination_1_Display = localize "STR_EPOCH_BLUE";
 							};
 							_combinationDisplay = format["%1%2%3",_combination_1_Display,_combination_2,_combination_3];
 						};
