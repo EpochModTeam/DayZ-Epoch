@@ -13,11 +13,10 @@ _newList = [];
 	};
 } count _friends;
 _thePlot setVariable ["plotfriends", _newList, true];
-
+PVDZ_veh_Save = [_thePlot,"gear"];
 if (isServer) then {
 	PVDZ_veh_Save call server_updateObject;
 } else {
-	PVDZ_veh_Save = [_thePlot,"gear"];
 	publicVariableServer "PVDZ_veh_Save";
 };
 

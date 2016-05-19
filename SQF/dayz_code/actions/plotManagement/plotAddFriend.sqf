@@ -11,11 +11,10 @@ if (_inList) exitWith {localize "STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHE
 if ((count _friends) == DZE_MaxPlotFriends) exitWith { format[localize "STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT", DZE_MaxPlotFriends] call dayz_rollingMessages;};
 _friends set [(count _friends), _toAdd];
 _thePlot setVariable ["plotfriends", _friends, true];
-
+PVDZ_veh_Save = [_thePlot,"gear"];
 if (isServer) then {
 	PVDZ_veh_Save call server_updateObject;
 } else {
-	PVDZ_veh_Save = [_thePlot,"gear"];
 	publicVariableServer "PVDZ_veh_Save";
 };
 

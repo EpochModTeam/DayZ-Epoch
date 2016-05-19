@@ -1,8 +1,9 @@
-private ["_newWealth","_missing","_missingQty","_proceed","_itemIn","_countIn","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_option"];
+private ["_newWealth","_missing","_missingQty","_proceed","_itemIn","_countIn","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_option","_buildables"];
 disableSerialization;
 
 _range = DZE_PlotPole select 0;
-_count = count ((getPosATL player) nearObjects ["All",_range]);
+_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_storage_base"];
+_count = count (nearestObjects [[player] call FNC_getPos,_buildables,_range]);
 
 _colour = "#ffffff";
 
