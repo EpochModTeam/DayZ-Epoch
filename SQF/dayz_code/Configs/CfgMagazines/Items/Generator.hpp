@@ -8,6 +8,7 @@ class ItemGenerator : CA_Magazine
 	picture = "\dayz_equip\textures\equip_generator_ca.paa";
 	displayName = $STR_EQUIP_NAME_31;
 	descriptionShort = $STR_EQUIP_DESC_31;
+	weight = 30; // used in R3F weight
 	
 	class ItemActions
 	{
