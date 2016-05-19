@@ -110,8 +110,9 @@ class CfgAddons
 //Epoch Additions
 #include "Configs\RscDisplay\safegui.hpp"
 #include "Configs\RscDisplay\tradermenu.hpp"
-//advancedTrading.hpp and ZSCdefines.hpp are included from description.ext so admins can customize
+#include "Configs\RscDisplay\ZSCdefines.hpp"
+#include "Configs\RscDisplay\advancedTrading.hpp"
+#include "Configs\RscDisplay\plotManagement.hpp"
 #include "Configs\RscDisplay\deathboards.hpp"
 #include "Configs\CfgExtra\snappoints.hpp"
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.hpp"
-#include "Configs\RscDisplay\plotManagement.hpp"
