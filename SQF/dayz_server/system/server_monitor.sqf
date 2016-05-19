@@ -176,11 +176,9 @@ if (_status == "ObjectStreamStart") then {
 		_object setVariable ["ObjectID", _idKey, true];
 		_object setVariable ["OwnerPUID", _ownerPUID, true];
 
-		// plotManagement //
 		if( DZE_plotManagement && (typeOf (_object) == "Plastic_Pole_EP1_DZ") ) then {
 			_object setVariable ["plotfriends", _inventory, true];
 		};
-		// plotManagement //
 
 		dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];
 		// Fix for leading zero issues on safe codes after restart
@@ -211,9 +209,7 @@ if (_status == "ObjectStreamStart") then {
 			clearWeaponCargoGlobal _object;
 			clearMagazineCargoGlobal _object;
 			clearBackpackCargoGlobal _object;
-			// plotManagement //
 			if( (count _inventory > 0) && !(typeOf( _object) == "Plastic_Pole_EP1_DZ") ) then {
-			// plotManagement //
 				if (_type in DZE_LockedStorage) then {
 					_object setVariable ["WeaponCargo",(_inventory select 0),true];
 					_object setVariable ["MagazineCargo",(_inventory select 1),true];

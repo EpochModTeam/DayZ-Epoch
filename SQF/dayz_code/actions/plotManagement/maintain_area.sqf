@@ -9,7 +9,7 @@ s_player_maintain_area = 1;
 player removeAction s_player_maintain_area_preview;
 s_player_maintain_area_preview = 1;
 
-_target = cursorTarget;
+_target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
 
 _objectClasses = DZE_maintainClasses;
 _range = DZE_PlotPole select 0;
