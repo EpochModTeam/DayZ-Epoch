@@ -7,7 +7,7 @@ class Blueprint_woodensplint : Recipe {
 	};
 	output[] = 
 	{
-		{"equip_woodensplint","CfgMagazines",1}
+		{"equip_woodensplint","CfgMagazines",1} // Only need one splint to fix legs
 	};
 	required[] = 
 	{

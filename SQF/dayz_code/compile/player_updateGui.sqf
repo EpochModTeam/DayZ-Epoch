@@ -161,7 +161,7 @@ if (_audible < 0.2) then {_audible = 0.2;};
 _ctrlEar ctrlSetTextColor [1, 1, 1, _audible];
 
 // Fracture/Broken Legs
-if !(canStand player) then {
+if !(canStand player) then { //&& !(ctrlShown _ctrlFracture) makes icon flash non-stop until leg is fixed
     _ctrlFracture ctrlShow true;
 }
 else {

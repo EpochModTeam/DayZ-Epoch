@@ -88,7 +88,7 @@ _ctrlEye ctrlSetText _visualtext;
 _ctrlEar ctrlSetText _audibletext;
 
 // Fracture/Broken Legs
-if !(canStand player) then {
+if !(canStand player) then { //&& !(ctrlShown _ctrlFracture) makes icon flash non-stop until leg is fixed
 	_ctrlFracture ctrlShow true;
 }
 else {
