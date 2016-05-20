@@ -1,14 +1,15 @@
-private ["_v","_int","_t","_b"];
+private ["_v","_int","_t","_b","_KillEject"];
 _v=_this select 0;
 _KillEject = { //leave as local compile for a tiny bit more security
+	private ["_cancel","_radius","_SZPos"];
 	_cancel = false;
 	{
 		_SZPos = _x select 0;
 		_radius =  _x select 1;
 		if ((isInTraderCity || !canbuild) && {(player distance _SZPos) < _radius}) then {_cancel = true;};
 	} count DZE_SafeZonePosArray;
+	player action ["Eject",vehicle player]; //eject player so their gear is accessible if dead and they aren't stuck in wreck if alive
 	if (!_cancel) then {
-		player action ["Eject",vehicle player]; //eject player so I can get their gear
 		sleep 0.01; //don't use uisleep here
 		[player, "explosion"] spawn player_death;
 	};
