@@ -4,15 +4,14 @@ private ["_player","_object","_playerUID","_ObjectOwner","_owner","_friendlies",
 
 _player = _this select 0;
 _Object = _this select 1;
-_PlotManagement = _this select 2;
 
 _Owner = false;
 _friendly = false;
 _friendlies = [];
 _ObjectOwner = "0";
 
-if (_PlotManagement) then {
-	_friendlies = [_Object, true, false] call dze_getPlotFriends;
+if (DZE_plotManagement) then {
+	_friendlies = [_Object, true] call dze_getPlotFriends;
 } else {
 	_friendlies	= _player getVariable ["friendlyTo",[]];
 };

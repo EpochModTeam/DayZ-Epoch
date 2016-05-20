@@ -1,13 +1,13 @@
 /************************************************************************************************************************************************
-This file is used to obtain plot pole owners and friends, which includes plot management admins depending on the third array element passed to the script
+This file is used to obtain plot pole owners and friends, which includes plot management admins.
 You should NOT call this file directly, you should call FNC_check_owner as below to obtain a list of the plot owner and friends.
-[player, _nearestPole, DZE_plotManagement] call FNC_check_owner;
+[player, _cursorTarget] call FNC_check_owner;
 ************************************************************************************************************************************************/
 
-private ["_findNearestPoles","_AdminAccess","_IsNearPlot","_pole","_friendUID","_owner","_allowed","_friends","_FindNearestPole"];
+private ["_findNearestPoles","_IsNearPlot","_pole","_friendUID","_owner","_allowed","_friends","_FindNearestPole"];
 _pole = _this select 0;
 _FindNearestPole = _this select 1;
-_AdminAccess = _this select 2;
+
 _IsNearPlot = 0;
 _allowed = [];
 if (_FindNearestPole) then {
@@ -23,7 +23,7 @@ if(!_FindNearestPole || {_IsNearPlot > 0}) then {
 		_friendUID = _x select 0;
 		_allowed set [(count _allowed), _friendUID];
 	} count _friends;
-	if (_AdminAccess) then {
+	if (count DZE_PlotManagementAdmins > 0) then {
 		_allowed = _allowed + DZE_PlotManagementAdmins;
 	};
 };

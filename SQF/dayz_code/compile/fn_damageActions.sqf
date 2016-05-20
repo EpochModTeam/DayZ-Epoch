@@ -215,7 +215,7 @@ if (isPlayer cursorTarget) then {
 				if (DZE_plotforLife) then {
 					_charID = [_unit] call FNC_GetPlayerUID;
 				};
-				_friendlies = [player, _unit, DZE_plotManagement] call FNC_check_owner;
+				_friendlies = [player, _unit] call FNC_check_owner;
 				if !(_charID in _friendlies) then {
 					r_action = true;
 					_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true];

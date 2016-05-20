@@ -15,7 +15,7 @@ _changecount = 0;
 
 // Check is owner of the plot pole.
 
-_isowner = [player, _plotpole, DZE_plotManagement] call FNC_check_owner;
+_isowner = [player, _plotpole] call FNC_check_owner;
 _itemsExist = false;
 
 if ((_isowner select 0 )) then {
@@ -25,7 +25,7 @@ if ((_isowner select 0 )) then {
 		_classname = typeOf _object;
 		if (_classname in DZE_plotTakeOwnershipItems)then {
 		
-			_isowner = [player, _object, DZE_plotManagement] call FNC_check_owner;
+			_isowner = [player, _object] call FNC_check_owner;
 			diag_log text "Plot Take Ownership: Object in DZE_plotTakeOwnershipItems";
 		
 			if !( _isowner select 0 ) then{

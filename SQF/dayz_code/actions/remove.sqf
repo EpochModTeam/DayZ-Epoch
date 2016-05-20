@@ -60,7 +60,7 @@ _nearestPole = _plotcheck select 2;
 
 if(_IsNearPlot >= 1) then {
 	// Since there are plot poles nearby we need to check ownership && friend status
-	_buildcheck = [player, _nearestPole, DZE_plotManagement] call FNC_check_owner;
+	_buildcheck = [player, _nearestPole] call FNC_check_owner;
 	_isowner = _buildcheck select 0;
 	_isfriendly = _buildcheck select 1;
 	if (!_isowner && !_isfriendly) then {
