@@ -485,7 +485,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		//destroy tents
 		//Located in variables Dayz_Ignators = ["ItemMatchbox","Item5Matchbox","Item4Matchbox","Item3Matchbox","Item2Matchbox","Item1Matchbox"];
 		_hasIgnators = {_x in Dayz_Ignators} count _itemsPlayer > 0;
-		if ((_hasFuel20 or _hasFuel5) && _hasIgnators) then {
+		if ((_hasFuel20 or _hasFuel5 or _hasBarrel) && _hasIgnators) then {
 			if (s_player_destorytent < 0) then {
 				s_player_destorytent = player addAction [localize "str_actions_self_destorytent", "\z\addons\dayz_code\actions\player_destroyTent.sqf",_cursorTarget, 0, false, true];
 			};
@@ -928,7 +928,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				if (_cursorTarget getVariable ["GeneratorFilled", false]) then {
 					s_player_fillgen = player addAction [localize "STR_EPOCH_ACTIONS_GENERATOR2", "\z\addons\dayz_code\actions\fill_startGenerator.sqf",_cursorTarget, 0, false, true];
 				} else {
-					if (_hasFuel20) then {
+					if (_hasFuel20 or _hasFuel5 or _hasBarrel) then {
 						s_player_fillgen = player addAction [localize "STR_EPOCH_ACTIONS_GENERATOR3", "\z\addons\dayz_code\actions\fill_startGenerator.sqf",_cursorTarget, 0, false, true];
 					};
 				};

@@ -1,4 +1,4 @@
-private ["_vehicle","_started","_finished","_animState","_isMedic","_soundSource"];
+private ["_vehicle","_started","_finished","_animState","_isMedic","_soundSource","_fuelCan","_emptyCan"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -49,13 +49,21 @@ if(!_finished) then {
 	localize "str_epoch_player_26" call dayz_rollingMessages;
 };
 
+_fuelCan = nil;
+{
+	if (_x in magazines player) exitWith {
+		_fuelCan = _x;
+	};
+} count DayZ_fuelCans;
+
 if (_finished) then {
-	// take jerry can && replace with empty
+	// take fuel can and replace with empty
 	
-	if(!(_vehicle getVariable ["GeneratorFilled", false]) && ("ItemJerrycan" in magazines player)) then {
+	if(!(_vehicle getVariable ["GeneratorFilled", false]) && !isNil "_fuelCan") then {
 	 
-		if(([player,"ItemJerrycan"] call BIS_fnc_invRemove) == 1) then {
-			player addMagazine "ItemJerrycanEmpty";
+		if(([player,_fuelCan] call BIS_fnc_invRemove) == 1) then {
+			_emptyCan = getText (configFile >> "CfgMagazines" >> _fuelCan >> "emptycan");
+			player addMagazine _emptyCan;
 
 			// mark as once filled
 			_vehicle setVariable ["GeneratorFilled", true,true];
