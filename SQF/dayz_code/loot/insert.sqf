@@ -34,7 +34,13 @@ if (!local (_this select 0)) exitWith
 		{
 			private "_item";
 			_item = _x select 1;
-			if (dayz_classicBloodBagSystem && _item in dayz_typedBags) then {_item = "ItemBloodbag";};
+			if (dayz_classicBloodBagSystem && _item in dayz_typedBags) then {
+				if (_item in ["bloodTester","bloodBagAPOS","bloodBagABPOS"]) then { // reduce ItemBloodBag output slightly since typed bags spawn in bulk
+					_item = ["ItemBandage","ItemPainkiller","ItemMorphine","ItemHeatPack","ItemAntibacterialWipe"] call BIS_fnc_selectRandom;
+				} else {
+					_item = "ItemBloodbag";
+				};
+			};
 			(_this select 0) addMagazine _item;
 		};
 		
