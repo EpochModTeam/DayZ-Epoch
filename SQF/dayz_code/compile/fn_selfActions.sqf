@@ -418,23 +418,15 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};	
 
-		if (DZE_plotManagement || DZE_plotforLife) then {
-			if(_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
-				if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
-					_isowner = [player, _cursorTarget, DZE_plotManagement] call FNC_check_owner; //compile also calls dze_getPlotFriends and lists s_player_plotManagement friendlies
-					If ((_isowner select 0) || (_isowner select 1)) then {
-						_player_deleteBuild = true;
-					};
+		if(_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
+			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
+				_isowner = [player, _cursorTarget, DZE_plotManagement] call FNC_check_owner; //compile also calls dze_getPlotFriends and lists s_player_plotManagement friendlies
+				If ((_isowner select 0) || (_isowner select 1)) then {
+					_player_deleteBuild = true;
 				};
 			};
-		} else {
-			if ((_isModularDoor || _isModular || _typeOfCursorTarget in DZE_isDestroyableStorage) && {_playerUID == _ownerID}) then {
-				if (_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
-					_player_deleteBuild = true;
-				};	
-			};
 		};
-
+		
 		if (_isVehicle) then {
 			if ((_characterID != "0") && {!_isMan} && {!_isBicycle}) then {
 				_player_lockUnlock_crtl = true;

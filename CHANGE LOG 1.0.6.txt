@@ -29,7 +29,7 @@
 [NEW] With config based traders categories can be reused by setting the duplicate=#; value. # is the category number to copy. @ebaydayz
 [NEW] Gems are now treated as variable value currency (Advanced Trading only). configure gem values using DZE_GemWorthArray =[]; see ConfigVariables.sqf for more info @icomrade
 [NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; see ConfigVariables.sqf for more info @icomrade
-[NEW] Plot Management by Zupa is now included and enabled by default with variable DZE_plotManagement, see ConfigVariables.sqf @DevZupa @Bruce-LXXVI @icomrade
+[NEW] Plot Management v2.1 by Zupa is now included and enabled by default with variable DZE_plotManagement, see ConfigVariables.sqf @DevZupa @Bruce-LXXVI @icomrade
 [NEW] A Plot For Life v2.5 by RimBlock is now included and enabled by default with variable DZE_plotforLife, see configVariables.sqf @RimBlock @icomrade
 [NEW] Precise Base Building v1.0.5 by Mikeeeyy is now included. @Mikeeeyy @icomrade @ebaydayz
 [NEW] You may toggle vehicle destruction effects to prevent damage from vehicle explosions (useful to prevent griefing from ramming) use DZE_NoVehicleExplosions = true; to enable #1198 @icomrade
