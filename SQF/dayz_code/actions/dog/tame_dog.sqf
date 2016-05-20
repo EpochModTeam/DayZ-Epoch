@@ -43,7 +43,12 @@ if (_hasMeat) then {
 		_fsmid setFSMVariable ["_handle", _fsmid];
 		_fsmid setFSMVariable ["_isTamed", true];
 		player setVariable ["dogID", _fsmid];
-		_dog setVariable ["CharacterID", dayz_characterID, true];
+		
+		if (DZE_plotforLife) then {
+			_dog setVariable ["ownerPUID", dayz_playerUID, true];
+		} else {
+			_dog setVariable ["CharacterID", dayz_characterID, true];
+		};
 
 		format[localize "str_epoch_player_173",_textRemoved] call dayz_rollingMessages;
 	} else {
