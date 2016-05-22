@@ -310,7 +310,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 	movingEnable = 0;
 	enableSimulation = 1;
 	//onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [(_this select 0)] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';"; _respawn = (_this select 0) displayCtrl 1010); _respawn ctrlEnable false; _abort = (_this select 0) displayCtrl 104); _abort ctrlEnable false;
-	onLoad = "uiNamespace setVariable ['RscDisplayMPInterrupt', _this select 0];[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';"; /*diag_log[diag_tickTime,'RscDisplayMPInterrupt'];*/
+	onLoad = "uiNamespace setVariable ['RscDisplayMPInterrupt', _this select 0]; _this call fn_pauseMenuChecks; [] spawn player_onPause; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';"; /*diag_log[diag_tickTime,'RscDisplayMPInterrupt'];*/
 	onUnload = "uiNamespace setVariable ['RscDisplayMPInterrupt', nil];['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
 
 	class controlsBackground {
@@ -397,7 +397,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_Abort : CA_B_SAVE {
 			idc = 104;
 			y = 0.2537 + 0.101903 * 4;
-			onButtonClick = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; call player_forceSave; with uiNameSpace do {RscDMSLoad=-2;};"; // request disconnection from server
+			onButtonClick = "[] spawn player_onPause; call player_forceSave; with uiNameSpace do {RscDMSLoad=-2;};"; // request disconnection from server
 			text = $STR_DISP_INT_ABORT;
 			default = 0;
 		};
