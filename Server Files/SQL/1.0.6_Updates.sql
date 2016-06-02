@@ -10,7 +10,7 @@ ALTER TABLE Object_DATA MODIFY COLUMN CharacterID bigint(20);
 ALTER TABLE Object_DATA MODIFY COLUMN Hitpoints varchar(1024);
 
 -- ----------------------------
--- Fix typo from 1.0.5.1 updates causing Merlin and Chinook to show as magazines instead of vehicles
+-- Fix typo from 1.0.5.1 updates causing Merlin and CH53 to show as magazines instead of vehicles
 -- ----------------------------
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["CH53_DZE",2]', 2, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 493, 'trade_any_vehicle');
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["CH53_DZE",2]', 2, '[3,"ItemBriefcase100oz",1]', '[2,"ItemBriefcase100oz",1]', 0, 512, 'trade_any_vehicle');
