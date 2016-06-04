@@ -175,7 +175,7 @@
 		</Key>
 		<Key ID="str_actions_self_10">
 			<English>Fill FuelCan</English>
-			<German>füllen Kraftstoffkanister</German>
+			<German>Kraftstoffkanister füllen</German>
 			<Russian>Заполните FuelCan</Russian>
 			<Spanish>Rellene FuelCan</Spanish>
 			<French>remplissez FuelCan</French>
@@ -186,7 +186,7 @@
 			<Spanish>¡No se pudo contar los cargadores!</Spanish>
 			<Russian>Не удалось посчитать магазины!</Russian>
 			<Czech>Nemohu spočítat zásobníky!</Czech>
-			<French>Comptage des chargeurs impossible !</French>
+			<French>Comptage des chargeurs impossible!</French>
 			<German>Du kannst die Magazine nicht aufteilen.</German>
 		</Key>
 		<Key ID="str_actions_medical_01">
@@ -300,11 +300,11 @@
 			<German>Blutkonserve: A-</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagANEG">
-			<English>A blood bag ready for transfusion kits, type A- that is compatible A-, A+, AB-, AB+ recipients</English>
+			<English>A blood bag of type A- that is ready for transfusion, compatible with A-, A+, AB- and AB+ recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови A(II)Rh- подходит пациентам с группами A(II)Rh-, A(II)Rh+, AB(IV)Rh- и AB(IV)Rh+.</Russian>
 			<French>Une poche de sang de type A- pour transfuser des receveurs de type A-, A+, AB- ou AB+</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina A- vhodná pro příjemce se skupinou A-, A+, AB- a AB+</Czech>
-			<German>Eine Blutkonserve des Typs A-, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit Empfängern der Typen A-, A+, AB- und AB+.</German>
+			<German>Eine Blutkonserve des Typs A-, bereit zum Verabreichen. Kompatibel mit Empfängern der Typen A-, A+, AB- und AB+.</German>
 		</Key>
 		<Key ID="STR_BLD_name_bloodBagAPOS">
 			<English>Blood Bag: A+</English>
@@ -314,11 +314,11 @@
 			<German>Blutkonserve: A+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagAPOS">
-			<English>A blood bag ready for transfusion kits, type A+ that is compatible A+ and AB+ recipients</English>
+			<English>A blood bag of type A+ that is ready for transfusion, compatible with A+ and AB+ recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови A(II)Rh+ подходит пациентам с группами A(II)Rh+ и AB(IV)Rh+.</Russian>
 			<French>Une poche de sang de type A+ pour transfuser des receveurs de type A+ ou AB+</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina A+ vhodná pro příjemce se skupinou A+ a AB+</Czech>
-			<German>Eine Blutkonserve des Typs A+, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit Empfängern der Typen A+ und AB+.</German>
+			<German>Eine Blutkonserve des Typs A+, bereit zum Verabreichen. Kompatibel mit Empfängern der Typen A+ und AB+.</German>
 		</Key>
 		<Key ID="STR_BLD_name_bloodBagBNEG">
 			<English>Blood Bag: B-</English>
@@ -328,11 +328,11 @@
 			<German>Blutkonserve: B-</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagBNEG">
-			<English>A blood bag ready for transfusion kits, type B- that is compatible B-, B+, AB+, AB- recipients</English>
+			<English>A blood bag of type B- that is ready for transfusion, compatible with B-, B+, AB+ and AB- recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови B(III)Rh- подходит пациентам с группами B(III)Rh-, B(III)Rh+, AB(IV)Rh- и AB(IV)Rh+.</Russian>
 			<French>Une poche de sang de type B- pour transfuser des receveurs de type B-, B+, AB+ ou AB-</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina B- vhodná pro příjemce se skupinou B-, B+, AB- a AB+</Czech>
-			<German>Eine Blutkonserve des Typs B-, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit Empfängern der Typen B-, B+, AB+ und AB-.</German>
+			<German>Eine Blutkonserve des Typs B-, bereit zum Verabreichen. Kompatibel mit Empfängern der Typen B-, B+, AB+ und AB-.</German>
 		</Key>
 		<Key ID="STR_BLD_name_bloodBagBPOS">
 			<English>Blood Bag: B+</English>
@@ -342,11 +342,11 @@
 			<German>Blutkonserve: B+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagBPOS">
-			<English>A blood bag ready for transfusion kits, type B+ that is compatible B+ and AB+ recipients</English>
+			<English>A blood bag of type B+ that is ready for transfusion, compatible with B+ and AB+ recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови B(III)Rh+ подходит пациентам с группами B(III)Rh+ и AB(IV)Rh+.</Russian>
 			<French>Une poche de sang de type B+ pour transfuser des receveurs de type B+ ou AB+</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina B+ vhodná pro příjemce se skupinou B+ a AB+</Czech>
-			<German>Eine Blutkonserve des Typs B+, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit Empfängern der Typen B+ und AB+.</German>
+			<German>Eine Blutkonserve des Typs B+, bereit zum Verabreichen. Kompatibel mit Empfängern der Typen B+ und AB+.</German>
 		</Key>
 		<Key ID="STR_BLD_name_bloodBagABNEG">
 			<English>Blood Bag: AB-</English>
@@ -356,11 +356,11 @@
 			<German>Blutkonserve: AB-</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagABNEG">
-			<English>A blood bag ready for transfusion kits, type AB- that is compatible AB+ and AB- recipients</English>
+			<English>A blood bag of type AB- that is ready for transfusion, compatible with AB+ and AB- recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови AB(IV)Rh- подходит пациентам с группами AB(IV)Rh- и AB(IV)Rh+.</Russian>
 			<French>Une poche de sang de type AB- pour transfuser des receveurs de type AB- ou AB+</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina AB- vhodná pro příjemce se skupinou AB- a AB+</Czech>
-			<German>Eine Blutkonserve des Typs AB-, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit Empfängern der Typen AB- und AB+.</German>
+			<German>Eine Blutkonserve des Typs AB-, bereit zum Verabreichen. Kompatibel mit Empfängern der Typen AB- und AB+.</German>
 		</Key>
 		<Key ID="STR_BLD_name_bloodBagABPOS">
 			<English>Blood Bag: AB+</English>
@@ -370,11 +370,11 @@
 			<German>Blutkonserve: AB+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagABPOS">
-			<English>A blood bag ready for transfusion kits, type AB+ that is compatible AB+ recipients</English>
+			<English>A blood bag of type AB+ that is ready for transfusion, compatible with AB+ recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови AB(IV)Rh+ подходит пациентам с группой AB(IV)Rh+.</Russian>
 			<French>Une poche de sang de type AB+ pour transfuser des receveurs de type AB+ exclusivement</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina AB+ vhodná pouze pro příjemce se skupinou AB+</Czech>
-			<German>Eine Blutkonserve des Typs AB+, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit Empfängern des Typs AB+.</German>
+			<German>Eine Blutkonserve des Typs AB+, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs AB+.</German>
 		</Key>
 		<Key ID="STR_BLD_name_bloodBagONEG">
 			<English>Blood Bag: O-</English>
@@ -384,11 +384,11 @@
 			<German>Blutkonserve: O-</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagONEG">
-			<English>A blood bag ready for transfusion kits, type O- that is compatible with all recipients</English>
+			<English>A blood bag of type O- that is ready for transfusion, compatible with all recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови 0(I)Rh- подходит всем пациентам.</Russian>
 			<French>Une poche de sang de type O- compatible pour tous</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina O- vhodná pro všechny příjemce</Czech>
-			<German>Eine Blutkonserve des Typs O-, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit allen Empfängern.</German>
+			<German>Eine Blutkonserve des Typs O-, bereit zum Verabreichen. Kompatibel mit allen Empfängern.</German>
 		</Key>
 		<Key ID="STR_BLD_name_bloodBagOPOS">
 			<English>Blood Bag: O+</English>
@@ -398,11 +398,11 @@
 			<German>Blutkonserve: O+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodBagOPOS">
-			<English>A blood bag ready for transfusion kits, type O+ that is compatible O+, AB+, A+, B+ recipients</English>
+			<English>A blood bag of type O+ that is ready for transfusion, compatible with O+, AB+, A+ and B+ recipients</English>
 			<Russian>Пакет крови, готовый к переливанию. Группа крови 0(I)Rh+ подходит пациентам с группами 0(I)Rh+, A(II)Rh+, B(III)Rh+ и AB(IV)Rh+.</Russian>
-			<French>Une poche de sang de type O+ pour transfuser des receveurs de type  O+, AB+, A+ ou B+</French>
+			<French>Une poche de sang de type O+ pour transfuser des receveurs de type O+, AB+, A+ ou B+</French>
 			<Czech>Krev připravená pro použití spolu s transfúzní soupravou; skupina O+ vhodná pro příjemce se skupinou O+, A+, B+ a AB+</Czech>
-			<German>Eine Blutkonserve des Typs O+, die noch mit einem Transfusionsbesteck kombiniert werden muss. Kompatibel mit Empfängern des Typs O+, AB+, A+ und B+.</German>
+			<German>Eine Blutkonserve des Typs O+, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs O+, AB+, A+ und B+.</German>
 		</Key>
 		<Key ID="STR_BLD_name_wholeBloodBagANEG">
 			<English>Whole Blood: A-</English>
@@ -412,8 +412,8 @@
 			<German>Vollblutkonserve: A-</German>
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagANEG">
-			<English>Personal blood bag, type A- that is compatible A- recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  A(II)Rh-.</Russian>
+			<English>Personal blood bag, type A- that is compatible with A- recipients</English>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только A(II)Rh-.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type A-</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina A-</Czech>
 			<German>Eine Vollblutkonserve des Typs A-, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs A-.</German>
@@ -432,8 +432,8 @@
 			<German>Vollblutkonserve: A+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagAPOS">
-			<English>Personal blood Bag, type A+ that is compatible A+ recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  A(II)Rh+.</Russian>
+			<English>Personal blood Bag, type A+ that is compatible with A+ recipients</English>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только A(II)Rh+.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type A+</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina A+</Czech>
 			<German>Eine Vollblutkonserve des Typs A-, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs A+.</German>
@@ -446,8 +446,8 @@
 			<German>Vollblutkonserve: B-</German>
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagBNEG">
-			<English>Personal blood Bag, type B- that is compatible B- recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  B(III)Rh-.</Russian>
+			<English>Personal blood Bag, type B- that is compatible with B- recipients</English>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только B(III)Rh-.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type B-</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina B-</Czech>
 			<German>Eine Vollblutkonserve des Typs B-, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs B-.</German>
@@ -460,8 +460,8 @@
 			<German>Vollblutkonserve: B+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagBPOS">
-			<English>Personal blood Bag, type B+ that is compatible B+ recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  B(III)Rh+.</Russian>
+			<English>Personal blood Bag, type B+ that is compatible with B+ recipients</English>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только B(III)Rh+.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type B+</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina B+</Czech>
 			<German>Eine Vollblutkonserve des Typs B+, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs B+.</German>
@@ -474,8 +474,8 @@
 			<German>Vollblutkonserve: AB-</German>
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagABNEG">
-			<English>Personal blood Bag, type AB- that is compatible AB- recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  AB(IV)Rh-.</Russian>
+			<English>Personal blood Bag, type AB- that is compatible with AB- recipients</English>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только AB(IV)Rh-.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type AB-</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina AB-</Czech>
 			<German>Eine Vollblutkonserve des Typs AB-, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs AB-.</German>
@@ -488,8 +488,8 @@
 			<German>Vollblutkonserve: AB+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagABPOS">
-			<English>Personal blood Bag, type AB+ that is compatible AB+ recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  AB(IV)Rh+.</Russian>
+			<English>Personal blood Bag, type AB+ that is compatible with AB+ recipients</English>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только AB(IV)Rh+.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type AB+</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina AB+</Czech>
 			<German>Eine Vollblutkonserve des Typs AB+, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs AB+.</German>
@@ -503,7 +503,7 @@
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagONEG">
 			<English>Personal blood Bag, type O- that is compatible with O- recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  0(I)Rh-.</Russian>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только 0(I)Rh-.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type O-</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina O-</Czech>
 			<German>Eine Vollblutkonserve des Typs O-, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs O-.</German>
@@ -516,8 +516,8 @@
 			<German>Vollblutkonserve: O+</German>
 		</Key>
 		<Key ID="STR_BLD_desc_wholeBloodBagOPOS">
-			<English>Personal blood Bag, type O+ that is compatible O+ recipients</English>
-			<Russian>Пакет цельной крови для самопереливания. Подходит только  0(I)Rh+.</Russian>
+			<English>Personal blood Bag, type O+ that is compatible with O+ recipients</English>
+			<Russian>Пакет цельной крови для самопереливания. Подходит только 0(I)Rh+.</Russian>
 			<French>Poche de sang personnelle pour transfusion exclusivement autologue, de type O+</French>
 			<Czech>Krevní vak s vlastní krví k autotransfuzi; skupina O+</Czech>
 			<German>Eine Vollblutkonserve des Typs O+, bereit zum Verabreichen. Kompatibel mit Empfängern des Typs O+.</German>
@@ -541,18 +541,18 @@
 			<Russian>Определить</Russian>
 			<French>Effectuer le test</French>
 			<Czech>Určit krevní skupinu</Czech>
-			<German>Blut testen</German>
+			<German>Blutgruppe bestimmen</German>
 		</Key>
 		<Key ID="STR_BLD_name_transfusionKit">
 			<English>Transfusion Kit</English>
 			<Russian>Набор для переливания</Russian>
 			<French>Kit de transfusion</French>
 			<Czech>Transfúzní souprava</Czech>
-			<German>Transfusions-Set</German>
+			<German>Transfusionsbesteck</German>
 		</Key>
 		<Key ID="STR_BLD_desc_transfusionKit">
 			<English>A blood transfusion kit that is required to perform blood transfusions and fill blood bags</English>
-			<Russian>Медицинский набор, необходимый для переливания крови .</Russian>
+			<Russian>Медицинский набор, необходимый для переливания крови.</Russian>
 			<French>Un kit de transfusion sanguine nécessaire pour transfuser un survivant ou remplir une poche de sang</French>
 			<Czech>Jednorázová transfúzní souprava, jež je nutná při provádění krevních transfúzí a plnění krevních vaků.</Czech>
 			<German>Ein Transfusionsbesteck, um Bluttransfusionen durchzuführen und Blutkonserven zu füllen.</German>
@@ -761,7 +761,7 @@
 			<German>Die Bluttransfusion wurde unterbrochen! Die Blutkonserve ist verloren.</German>
 			<Russian>Переливание было прервано! Пакет крови потерян.</Russian>
 			<Spanish>¡La transfusión fue interrumpida! La bolsa de sangre se perdió.</Spanish>
-			<French>La transfusion s&apos;est interrompue ! La poche de sang est perdue.</French>
+			<French>La transfusion s&apos;est interrompue! La poche de sang est perdue.</French>
 			<Czech>Transfúze byla přerušena a krevní vak byl ztracen!</Czech>
 		</Key>
 		<Key ID="str_actions_medical_dragbody_veh">
@@ -769,7 +769,7 @@
 			<German>Du kannst nicht einsteigen, während du einen Körper ziehst!</German>
 			<Russian>Нельзя сесть в транспорт, таская тело!</Russian>
 			<Spanish>¡No puedes entrar a un vehículo mientras arrastras un cuerpo!</Spanish>
-			<French>Vous ne pouvez pas entrer dans un véhicule lorsque vous traînez un corps !</French>
+			<French>Vous ne pouvez pas entrer dans un véhicule lorsque vous traînez un corps!</French>
 			<Czech>Do vozidla nelze nastoupit, pokud táhnete tělo!</Czech>
 		</Key>
 		<Key ID="str_actions_medical_dropbody">
@@ -1009,10 +1009,12 @@
 		<Key ID="STR_ACTIONS_FIX_HATCHET">
 			<English>Fix Hatchet</English>
 			<Russian>Починить топор</Russian>
+			<German>Beil reparieren</German>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_KNIFE">
 			<English>Sharpen Knife</English>
 			<Russian>Заточить нож</Russian>
+			<German>Messer schleifen</German>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_PICKAXE">
 			<English>Fix Pickaxe</English>
@@ -1107,7 +1109,7 @@
 			<Russian>Вы уничтожили %1 в процессе демонтажа с %2</Russian>
 			<Czech>%1 se vám při pokusu o demontáž z %2 podařilo úplně zničit.</Czech>
 			<French>Vous avez détruit %1 lors tentative de retrait de %2</French>
-			<German>%1 wurde zerstoert, als du versucht hast, %2 auszuschlachten.</German>
+			<German>%1 wurde zerstört, als du versucht hast, %2 auszuschlachten.</German>
 			<Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2</Dutch>
 		</Key>
 		<Key ID="str_salvage_removed">
@@ -1245,7 +1247,7 @@
 			<Spanish>Preparando el sifón, quedate quieto para llenar el %1.</Spanish>
 			<Czech>Začíná přečerpávání. Stůjte klidně, abyste naplnili %1.</Czech>
 			<French>Prêt pour le siphonnage, ne bougez plus pour remplir le %1</French>
-			<German>Der Treibstoff kann abgezapft werden. Stillhalten, um %1 zu fuellen.</German>
+			<German>Der Treibstoff kann abgezapft werden. Stillhalten, um %1 zu füllen.</German>
 			<Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
 		</Key>
 		<Key ID="str_siphon_drained">
@@ -1265,7 +1267,7 @@
 			<Spanish>El %1 no tiene suficiente combustible para usar el sifón.</Spanish>
 			<Czech>%1 nemá dostatek paliva k přečerpání.</Czech>
 			<French>Le %1 n&apos;a pas assez de carburant à siphonner.</French>
-			<German>Es ist nicht mehr genuegend Treibstoff im %1, um etwas abzuzapfen.</German>
+			<German>Es ist nicht mehr genügend Treibstoff im %1, um etwas abzuzapfen.</German>
 			<Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		</Key>
 		<Key ID="str_siphon_canceled">
@@ -1460,7 +1462,7 @@
 			<Spanish>Mientras que cortar los saltos de la manija.</Spanish>
 			<Czech>Během sekání se zlomilo topůrko.</Czech>
 			<French>La poignée s&apos;est cassée pendant que vous coupiez du bois</French>
-			<German>Du schlägst zu und der Schaft der Axt bricht.</German>
+			<German>Du schlägst zu und der Schaft des Beils bricht.</German>
 		</Key>
 		<Key ID="str_PickAxeHandleBreaks">
 			<English>Whilst mining the handle breaks.</English>
@@ -1557,45 +1559,45 @@
 			<German>Dieses Objekt kann nicht erweitert werden.</German>
 		</Key>
 		<Key ID="str_bombAttached">
-			<English>Attached Carbomb! Next Survivor who starts the engine will blow up!</English>
-			<Russian>Бомба установлена! Выжившего, который решится завести двигатель разорвёт на кусочки!</Russian>
-			<French>La bombe est posée ! La prochaine personne qui démarre le véhicule sera éparpillée façon puzzle.</French>
-			<Czech>Bomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
-			<German>Sprengsatz angebracht! Die nächste Person, der den Motor startet, wird in die Luft fliegen!</German>
+			<English>\n\nAttached Carbomb! Next Survivor who starts the engine will blow up!</English>
+			<Russian>Бомба установлена! \nВыжившего, который решится завести двигатель разорвет на кусочки!</Russian>
+			<French>\nLa bombe est posée! La prochaine personne qui démarre\nle véhicule sera éparpillée façon puzzle.</French>
+			<Czech>\n\nBomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
+			<German>Sprengsatz angebracht! Die nächste Person, die den Motor startet, wird in die Luft fliegen!</German>
 		</Key>
 		<Key ID="str_bombAlready">
-			<English>This vehicle already has a bomb attached!</English>
+			<English>\n\nThis vehicle already has a bomb attached!</English>
 			<Russian>На этот транспорт уже установлена бомба!</Russian>
-			<French>Ce véhicule a déjà une bombe de posée</French>
-			<Czech>Na tomto vozidle je již bomba umístěna!</Czech>
-			<German>An diesem Fahrzeug ist schon ein Sprengsatz angebracht!</German>
+			<French>\n\nCe véhicule a déjà une bombe de posée</French>
+			<Czech>\n\nNa tomto vozidle je již bomba umístěna!</Czech>
+			<German>\n\nAn diesem Fahrzeug ist schon ein Sprengsatz angebracht!</German>
 		</Key>
 		<Key ID="str_bombMissing">
-			<English>You don&apos;t have a bomb in your inventory</English>
-			<Russian>Необходима бомба в инвентаре</Russian>
-			<French>Vous n&apos;avez pas de bombe</French>
-			<Czech>Nemáte u sebe bombu.</Czech>
-			<German>Du hast keinen Sprengsatz in deinem Inventar!</German>
+			<English>\n\nYou don&apos;t have a bomb in your inventory</English>
+			<Russian>Нужна бомба в инвентаре</Russian>
+			<French>\n\nVous n&apos;avez pas de bombe</French>
+			<Czech>\n\nNemáte u sebe bombu.</Czech>
+			<German>\n\nDu hast keinen Sprengsatz in deinem Inventar!</German>
 		</Key>
 		<Key ID="str_bombToolMissing">
-			<English>You need a toolbox and a crowbar to attach the bomb to this vehicle</English>
+			<English>\n\nYou need a toolbox and a crowbar to attach the bomb to this vehicle</English>
 			<Russian>Нужен ломик и ящик с инструментами, чтобы установить бомбу</Russian>
-			<French>Une boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe</French>
-			<Czech>K umístění bomby na tomto vozidle bude třeba sada nářadí a páčidlo.</Czech>
-			<German>Du benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
+			<French>\n\nUne boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe</French>
+			<Czech>\n\nK umístění bomby na tomto vozidle bude třeba sada nářadí a páčidlo.</Czech>
+			<German>\n\nDu benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
 		</Key>
 		<Key ID="str_choppingTree">
-			<English>Chopping down tree.</English>
-			<Russian>Рубим дерево.</Russian>
-			<French>Abattage de l&apos;arbre</French>
-			<Czech>Porážíte strom.</Czech>
-			<German>Baum wird gefällt</German>
+			<English>\n\nChopping down tree.</English>
+			<Russian>Рубим дерево</Russian>
+			<French>\n\nAbattage de l&apos;arbre</French>
+			<Czech>\n\nPorážíte strom.</Czech>
+			<German>\n\nBaum wird gefällt</German>
 		</Key>
 		<Key ID="str_cannotCombine">
 			<English>You have only one %1\nThere&apos;s nothing to combine.</English>
 			<Russian>У вас только один (%1)\nНечего переснаряжать.</Russian>
 			<French>Vous avez seulement 1 %1\nIl n&apos;y a rien à arranger.</French>
-			<Czech>Ve vašem inventáři je  %1 pouze jednou. Není co zkombinovat.</Czech>
+			<Czech>Ve vašem inventáři je %1 pouze jednou. Není co zkombinovat.</Czech>
 			<German>Du hast nicht genügend %1. \nEs gibt nichts zu kombinieren.</German>
 		</Key>
 		<Key ID="str_combineDoneFull">
@@ -1984,7 +1986,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_con_t">
 			<English>Plastic Connector used in crafting to join 2 tent poles end to end atop a 3rd pole</English>
-			<German>Du nutzt die Steckverbindung, um drei Zeltstangen t-förmig zu verbinden.</German>
+			<German>Du nutzt die Steckverbindung, um drei Zeltstangen T-förmig zu verbinden.</German>
 			<Russian>"T"-образный пластиковый коннектор, используемый в мастерской для соединения палаточных распорок буквой Т.</Russian>
 			<Spanish>Plastic Connector used in crafting to join 2 tent poles end to end atop a 3rd pole</Spanish>
 			<French>Connecteur en plastique pouvant être fabriqué afin de joindre deux mâts de tente bout-à-bout sur un troisième mât</French>
@@ -2372,7 +2374,7 @@
 			<Spanish>Un pedazo de manguera en buen estado que podría ser usada para crear objetos.</Spanish>
 			<French>Un bout de tuyau d&apos;arrosage en bon état (Artisanat)</French>
 			<Czech>Kus hadice v dobrém stavu. Předmět lze použít při výrobě.</Czech>
-			<German>Ein Stück gut erhaltener Schlauch, kann beim Handwerken verwendet werden.</German>
+			<German>Ein Stück gut erhaltener Schlauch. Kann beim Handwerken verwendet werden.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_floppywire">
 			<English>Floppy Wire</English>
@@ -2417,6 +2419,7 @@
 		<Key ID="STR_ITEM_DESC_equip_brick">
 			<English>Maybe this could be used to sharpen a knife.</English>
 			<Russian>Может пригодиться для заточки ножа.</Russian>
+			<German>Ein Ziegelstein, der vielleicht zum Schleifen eines stumpfen Messers gebraucht werden kann.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_gauze">
 			<English>Gauze</English>
@@ -2565,8 +2568,8 @@
 		<Key ID="STR_ITEM_DESC_HerbalDrink">
 			<English>A drink mixed with herbs that may help heal infection.</English>
 			<Russian>Напиток из смеси трав, который может помочь при инфекции.</Russian>
-			<Czech>Nápoj smíchá s bylinkami , které mohou pomoci léčit infekci .</Czech>
-			<French>Une boisson mélangée avec des herbes qui peuvent aider à guérir l'infection .</French>
+			<Czech>Nápoj smíchá s bylinkami, které mohou pomoci léčit infekci.</Czech>
+			<French>Une boisson mélangée avec des herbes qui peuvent aider à guérir l'infection.</French>
 			<German>Ein Getränk aus Kräutern. Hilft bei Infektionen.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_HerbalDrink">
@@ -2583,7 +2586,7 @@
 			<Spanish>Hojas de consuelda</Spanish>
 			<Czech>Kostival lékařský</Czech>
 			<French>Feuilles de consoude</French>
-			<German>Beinwellblaetter</German>
+			<German>Beinwellblätter</German>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_comfreyleafs">
 			<English>Comfrey leaves used in crafting.</English>
@@ -2591,7 +2594,7 @@
 			<Spanish>Hojas de consuelda que pueden ser usadas para crear objetos.</Spanish>
 			<Czech>Kostival lékařský je léčivá bylina, jejíž listy jsou používány při výrobě.</Czech>
 			<French>Feuilles de consoude officinale (Artisanat)</French>
-			<German>Einige Blaetter vom Rauen Beinwell. Wirken schmerzlindernd und entzuendungshemmend.</German>
+			<German>Einige Blätter vom Rauen Beinwell. Wirken schmerzlindernd und entzündungshemmend.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Bandage">
 			<English>Bandage</English>
@@ -2639,7 +2642,7 @@
 			<Russian>Инструкция по созданию антисептических бинтов. Нужно: три тряпки, пара марль, шнур и пара листков живокоста</Russian>
 			<Czech>Návod pro vyrobení antiseptického obvazu. Potřeba: 3x hadr, 2x gáza, 1x provázek, 2x listy kostivalu.</Czech>
 			<French>Plan de fabrication d&apos;un pansement antiseptique. Requis: 3 tissus, 2 gazes, 1 ficelle, 2 consoudes.</French>
-			<German>Blaupause für eine antiseptische Bandage. Gebraucht werden: 3x Lumpen, 2x Verbandmull, 1x Schnur, 2x Beinwellblaetter.</German>
+			<German>Blaupause für eine antiseptische Bandage. Gebraucht werden: 3x Lumpen, 2x Verbandmull, 1x Schnur, 2x Beinwellblätter.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Compass">
 			<English>Compass</English>
@@ -2671,7 +2674,7 @@
 			<Spanish>Plano para crear M4A1 AIM. Requerido: 1 M4A1, 1 AIM y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une M4A1 à viseur laser. Requis : 1 M4A1, 1 Fixation viseur laser + Boîte à outils</French>
 			<Czech>Návod pro vyrobení M4A1 s CCO mířidlem. Potřeba: 1x M4A1, 1x CCO mířidlo a sada nástrojů.</Czech>
-			<German>Blaupause für ein M4A1 AIM. Gebraucht werden: 1x M4A1, 1x CCO Rotpunktvisier, Werkzeugkasten.</German>
+			<German>Blaupause für eine M4A1 AIM. Gebraucht werden: 1x M4A1, 1x CCO Rotpunktvisier, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_M4A1_HWS_GL_CAMO">
 			<English>M4A1 HWS GL Camo</English>
@@ -2687,7 +2690,7 @@
 			<Spanish>Plano para crear M4A1 HWS GL Camo. Requerido: 1 M4A1 HWS GL, 1 Attachment Camo y Caja de Herramientas</Spanish>
 			<Czech>Návod pro vyrobení M4A1 HWS GL Kamufláž. Potřeba: 1x M4A1 HWS GL, 1x maskovací potisk a sada nástrojů</Czech>
 			<French>Plan de fabrication d&apos;une M4A1 holographique, lanceur de grenades, camouflage. Requis : 1 M4A1 HWS GL, 1 fixation camouflage + Boîte à outils</French>
-			<German>Blaupause für ein M4A1 HWS GL Tarn. Gebraucht werden: 1x M4A1 HWS GL, 1x Tarnmaterial, Werkzeugkasten.</German>
+			<German>Blaupause für eine M4A1 HWS GL Tarn. Gebraucht werden: 1x M4A1 HWS GL, 1x Tarnmaterial, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_M9SD">
 			<English>M9SD</English>
@@ -2715,7 +2718,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_MAKAROVSD">
 			<English>Blueprint to create a MAKAROVSD. Required - 1 MAKAROV, 1 Attachment_Silencer. - ToolBox</English>
-			<Russian>Инструкция по сборке ПМ с глушителем. Нужно: ПМ , глушитель и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке ПМ с глушителем. Нужно: ПМ, глушитель и ящик с инструментами.</Russian>
 			<Spanish>Planos para crear una Makarov Silenciada. Requerido: 1 Makarov, 1 Silenciador y Caja de Herramientas.</Spanish>
 			<French>Plan de fabrication d&apos;un Makarov silencieux. Requis : 1 Makarov, 1 Fixation Silencieux + Boîte à outils</French>
 			<Czech>Návod pro vyrobení Makarov s tlumičem. Potřeba: 1x Makarov, 1x tlumič a sada nástrojů.</Czech>
@@ -2751,7 +2754,7 @@
 			<Spanish>Plano para crear un SVD Camuflado. Requerido: 1 SVD, 1 Camuflaje, 1 Skin_Camo1_DZ y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un SVD Camouflage. Requis : 1 SVD, 1 Fixation Camouflage, 1 tenue de camouflage + Boîte à outils</French>
 			<Czech>Návod pro vyrobení SVD s maskovacím potiskem. Potřeba: 1x SVD, 1x maskovací potisk, 1x hejkal a sada nástrojů</Czech>
-			<German>Blaupause für ein SVD Tarn. Gebraucht werden: 1x SVD, 1x Tarnmaterial, 1x Tarnmaterial, Werkzeugkasten.</German>
+			<German>Blaupause für eine SVD Tarn. Gebraucht werden: 1x SVD, 1x Tarnmaterial, 1x Tarnmaterial, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_M4A1_Aim_CAMO">
 			<English>M4A1_Aim_CAMO</English>
@@ -2767,7 +2770,7 @@
 			<Spanish>Plano para crear M4A1 AIM Camuflado. Requerido: 1 M4A1 AIM, 1 Camuflaje y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un M4A1 à viseur laser et Camouflage. Requis : 1 M4A1 à viseur laser, 1 Fixation Camouflage + Boîte à outils</French>
 			<Czech>Návod pro vyrobení M4A1 s mířidlem a maskovacím potiskem. Potřeba: 1x M4A1 s CCO, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für ein M4A1 AIM Tarn. Gebraucht werden: 1x M4A1 AIM, 1x Tarnmaterial, Werkzeugkasten.</German>
+			<German>Blaupause für eine M4A1 AIM Tarn. Gebraucht werden: 1x M4A1 AIM, 1x Tarnmaterial, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_G36C_CAMO">
 			<English>G36C CAMO</English>
@@ -2783,7 +2786,7 @@
 			<Spanish>Plano para crear G36C Camuflada. Requerido: 1 G36C, 1 Camuflaje y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un G36C Camouflage. Requis : 1 G36C, 1 Fixation Camouflage + Boîte à outils</French>
 			<Czech>Návod pro vyrobení G36C s maskovacím potiskem. Potřeba: 1x G36C, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für ein G36C CAMO. Gebraucht werden: 1x G36C, 1x Attachment_CAMO, Werkzeugkasten.</German>
+			<German>Blaupause für eine G36C CAMO. Gebraucht werden: 1x G36C, 1x Attachment_CAMO, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_G36A_CAMO">
 			<English>G36A CAMO</English>
@@ -2799,7 +2802,7 @@
 			<Spanish>Plano para crear G36A Camuflada. Requerido: 1 G36A, 1 Camuflaje y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un G36A Camouflage. Requis : 1 G36A, 1 Fixation Camouflage + Boîte à outils</French>
 			<Czech>Návod pro vyrobení G36A s maskovacím potiskem. Potřeba: 1x G36A, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für ein G36A Tarn. Gebraucht werden: 1x G36A, 1x Tarnmaterial, Werkzeugkasten.</German>
+			<German>Blaupause für eine G36A Tarn. Gebraucht werden: 1x G36A, 1x Tarnmaterial, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_G36K_CAMO">
 			<English>G36K_CAMO</English>
@@ -2815,7 +2818,7 @@
 			<Spanish>Plano para crear G36K Camuflada. Requerido: 1 G36K, 1 Camuflaje y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un G36K Camouflage. Requis : 1 G36K, 1 Fixation Camouflage + Boîte à outils</French>
 			<Czech>Návod pro vyrobení G36K s maskovacím potiskem. Potřeba: 1x G36K, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für ein G36K Tarn. Gebraucht werden: 1x G36K, 1x Tarnmaterial, Werkzeugkasten.</German>
+			<German>Blaupause für eine G36K Tarn. Gebraucht werden: 1x G36K, 1x Tarnmaterial, Werkzeugkasten.</German>
 		</Key>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_HerbalDrink">
@@ -2828,10 +2831,10 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HerbalDrink">
 			<English>Blueprint to create a Herbal Drink. Required - 1 Water bottle boiled and one herb box.</English>
-			<Russian>Инструкция по приготовлению травяного напитка . Требуется - 1 бутылка воды кипяченой и коробка трав.</Russian>
-			<Spanish>Blueprint para crear una bebida a base de plantas . Requerido - 1 Botella de agua hervida y una caja de hierbas.</Spanish>
-			<French>Blueprint pour créer une boisson à base de plantes . Required - 1 bouteille d'eau bouillie et une boîte d'herbe .</French>
-			<Czech>Blueprint vytvořit Herbal drink. Povinné - 1 láhev vody vařené a jedna bylina box .</Czech>
+			<Russian>Инструкция по приготовлению травяного напитка. Требуется - 1 бутылка воды кипяченой и коробка трав.</Russian>
+			<Spanish>Blueprint para crear una bebida a base de plantas. Requerido - 1 Botella de agua hervida y una caja de hierbas.</Spanish>
+			<French>Blueprint pour créer une boisson à base de plantes. Required - 1 bouteille d'eau bouillie et une boîte d'herbe.</French>
+			<Czech>Blueprint vytvořit Herbal drink. Povinné - 1 láhev vody vařené a jedna bylina box.</Czech>
 			<German>Rezept für einen Kräutertrunk. Gebraucht werden: 1x Flasche gekochtes Wasser, 1x Kräuter-Box.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_BaseBallBatBarbed">
@@ -3104,7 +3107,7 @@
 			<Spanish>Lanzador de Granadas (Accesorio)</Spanish>
 			<French>GL (Fixation)</French>
 			<Czech>Podvěsný granátomet, používá se pro vylepšení zbraní.</Czech>
-			<German>Russiches Gruenpunktvisier.</German>
+			<German>Russiches Grünpunktvisier.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_CAMO_M4">
 			<English>Camo Attachment for M4</English>
@@ -3164,7 +3167,7 @@
 			<English>Ammo Belt Attachment.</English>
 			<Russian>Патронташ на приклад.</Russian>
 			<Czech>Nábojový pás, používá se pro vylepšení zbraní.</Czech>
-			<German>Munitionsgürtel für automatisches Feuer.</German>
+			<German>Munitionsgürtel für schnelleres Nachladen.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_CCO_RED">
 			<English>CCO RedDot Attachment</English>
@@ -3316,7 +3319,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_1">
 			<English>Collapsible spade used together with the engineering backpack to create field defences</English>
-			<German>Ein Klappspaten, wird beim Verschanzen und für viele Bautätigkeiten benoetigt.</German>
+			<German>Ein Klappspaten. Wird beim Verschanzen und für viele Bautätigkeiten benötigt.</German>
 			<Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
 			<Spanish>Una pala plegable usada para crear defensas en el campo.</Spanish>
 			<French>Une pelle démontable permettant de construire des éléments de défense.</French>
@@ -3380,7 +3383,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_3">
 			<English>Box of Matches</English>
-			<German>Schachtel Streichhoelzer</German>
+			<German>Schachtel Streichhölzer</German>
 			<Russian>Коробок спичек</Russian>
 			<Spanish>Caja de Fósforos</Spanish>
 			<French>Boîte d&apos;allumettes</French>
@@ -3460,7 +3463,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_4">
 			<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>
-			<German>Das ist ein Messer! Kann zum Ausnehmen von erlegtem Wild verwendet werden.</German>
+			<German>Ein Jadgmesser. Kann zum Ausnehmen von erlegtem Wild verwendet werden.</German>
 			<Russian>Нож можно использовать для разделки туш животных.</Russian>
 			<Spanish>Un cuchillo usado para preparar la carne de caza para ser guardada.</Spanish>
 			<French>Un couteau servant à dépecer le gibier.</French>
@@ -3470,31 +3473,31 @@
 			<English>Your knife appears to be too blunt. (Maybe 5 uses left).</English>
 			<Russian>Похоже, нож тупится. Осталось 5 использований.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak pětkrát.</Czech>
-			<German>Dein Messer scheint stumpf zu werden. (vielleicht noch 5 Anwendungen möglich)</German>
+			<German>Dein Messer scheint stumpf zu werden. (Vielleicht noch 5 Anwendungen möglich)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_4_B">
 			<English>Your knife appears to be too blunt. (Maybe 4 uses Left).</English>
 			<Russian>Похоже, нож тупится. Осталось 4 использованийя.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak čtyřikrát.</Czech>
-			<German>Dein Messer scheint stumpf zu werden. (vielleicht noch 4 Anwendungen möglich)</German>
+			<German>Dein Messer scheint stumpf zu werden. (Vielleicht noch 4 Anwendungen möglich)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_4_C">
 			<English>Your knife appears to be too blunt. (Maybe 3 uses Left).</English>
 			<Russian>Похоже, нож тупится. Осталось 3 использования.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak třikrát.</Czech>
-			<German>Dein Messer scheint stumpf zu werden. (vielleicht noch 3 Anwendungen möglich)</German>
+			<German>Dein Messer scheint stumpf zu werden. (Vielleicht noch 3 Anwendungen möglich)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_4_D">
 			<English>Your knife appears to be too blunt. (Maybe 2 uses Left).</English>
 			<Russian>Похоже, нож тупится. Осталось пара использований.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak dvakrát.</Czech>
-			<German>Dein Messer ist fast stumpf. (vielleicht noch 2 Anwendungen möglich)</German>
+			<German>Dein Messer ist fast stumpf. (Vielleicht noch 2 Anwendungen möglich)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_4_E">
 			<English>Your Knife appears to be too blunt. (Maybe 1 uses Left).</English>
 			<Russian>Похоже, нож тупится. Можно воспользоваться еще разок.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak jednou.</Czech>
-			<German>Dein Messer ist so gut wie stumpf. (vielleicht noch 1 Anwendungen möglich)</German>
+			<German>Dein Messer ist so gut wie stumpf. (Vielleicht noch 1 Anwendung möglich)</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_5">
 			<English>Flashlight</English>
@@ -3633,8 +3636,8 @@
 			<Czech>Hlavní rotor</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_32">
-			<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</English>
-			<German>Hydrauliksysteme für einen Helikopter, die zum Reparieren kaputter Rotorwellen in anderen Helikoptern verwendet werden können.</German>
+			<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in helicopters.</English>
+			<German>Hydrauliksysteme für einen Helikopter, die zum Reparieren kaputter Rotorwellen in Helikoptern verwendet werden können.</German>
 			<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолета.</Russian>
 			<Spanish>Eje hidráulico del rotor de un helicoptero.</Spanish>
 			<French>Colonne de rotor d&apos;hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
@@ -3687,7 +3690,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_14">
 			<English>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</English>
-			<German>Epinephrin/Adrenalin-Autoinjektor zur intramuskulären Injektion bei Schockzuständen.</German>
+			<German>Epinephrin/Adrenalin-Autoinjektor zur intramuskulären Injektion bei Bewusstlosigkeit.</German>
 			<Russian>Инъекция адреналина для приведения в чувства людей без сознания.</Russian>
 			<Spanish>Epinefrina Autoinyectable. Inyección intramuscular para revivir a alguien inconciente.</Spanish>
 			<French>Adrénaline en auto-injection intra-musculaire "Epipen". Permet de se remettre d&apos;une perte de conscience.</French>
@@ -3744,30 +3747,37 @@
 		<Key ID="STR_EQUIP_DESC_48">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 6 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 6 таблеток.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 6 Stück übrig.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_49">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 5 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 5 таблеток.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 5 Stück übrig.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_50">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 4 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 4 таблетки.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 4 Stück übrig.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_51">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 3 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 3 таблетки.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 3 Stück übrig.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_52">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 2 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 2 таблетки.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 2 Stück übrig.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_53">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 1 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталась 1 таблетка.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 1 Stück übrig.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_54">
 			<English>Empty box of Azithromycin.</English>
 			<Russian>Пустая коробка азитромицина.</Russian>
+			<German>Leere Schachtel Azithromycin</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_18">
 			<English>Painkillers</English>
@@ -3939,7 +3949,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_33">
 			<English>An empty tin can that no longer contains any food, or anything usable.</English>
-			<German>Eine leere Blechdose. Leider ist nichts Essbares mehr darin aber vielleicht anderweitig nützlich.</German>
+			<German>Eine leere Blechdose. Leider ist nichts Essbares mehr drin, ist aber vielleicht anderweitig nützlich.</German>
 			<Russian>Пустая консервная банка. Совершенно пуста и бесполезна.</Russian>
 			<Spanish>Una lata vacía que ya no contiene ninguna comida o algo usable.</Spanish>
 			<French>Boîte de conserve vide, dont la seule utilité est de faire éventuellement diversion.</French>
@@ -4100,7 +4110,7 @@
 		<Key ID="STR_EQUIP_DESC_45">
 			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
 			<Spanish>Un conjunto normal de ropa civil liviana y gorra. Puede ser desempaquetada y usada.</Spanish>
-			<German>Normale zivile Kleidung mit einer leichten Mehrzweckweste und einer Muetze. Kann ausgepackt und getragen werden.</German>
+			<German>Normale zivile Kleidung mit einer leichten Mehrzweckweste und einer Mütze. Kann ausgepackt und getragen werden.</German>
 			<Russian>Повседневная гражданская одежда. Можно распаковать и надеть.</Russian>
 			<French>Une tenue de ville, avec veste légère et casquette. Peut être porté.</French>
 			<Czech>Normální civilní oblečení s lehkou vestou a čepicí. Lze rozbalit a obléknout.</Czech>
@@ -4148,6 +4158,7 @@
 		<Key ID="STR_DAYZ_OBJ_4">
 			<English>Cardboard Box</English>
 			<Russian>Картонная коробка</Russian>
+			<German>Kartonschachtel</German>
 		</Key>
 		<Key ID="STR_WPN_DESC_1">
 			<English>Shotgun 12 gauge</English>
@@ -4216,10 +4227,12 @@
 		<Key ID="STR_MAG_CONV_45ACP_Revolver">
 			<English>Combine for Revolver</English>
 			<Russian>в патроны для револьвера</Russian>
+			<German>In Revolver-Trommel umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_45ACP_M1911">
 			<English>Combine for M1911</English>
 			<Russian>в M1911 маг.</Russian>
+			<German>In M1911-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_G17_M9">
 			<English>Combine for M9</English>
@@ -4419,7 +4432,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21">
 			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
-			<German>Jutesaecke, die mit Sand oder Erde gefüllt für Befestigungen verwendet werden können.</German>
+			<German>Jutesäcke, die mit Sand oder Erde gefüllt für Befestigungen verwendet werden können.</German>
 			<Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
 			<Czech>Jutové pytle, lze naplnit pískem nebo zeminou a použít je pro postavení opevnění.</Czech>
@@ -4560,13 +4573,13 @@
 			<English>Lever (Handle)</English>
 			<Russian>Рукоять</Russian>
 			<Czech>Násada (topůrko)</Czech>
-			<German>Stiel</German>
+			<German>Schaft</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_LEVER">
 			<English>A brand new handle that can be used to fix broken tools.</English>
 			<Russian>Новенькая рукоять для починки сломанных инструментов.</Russian>
 			<Czech>Zbrusu nová násada, která se může hodit k opravení nějakého rozbitého nářadí.</Czech>
-			<German>Ein neuer Stiel, um beschädigte Werkzeuge zu reparieren.</German>
+			<German>Ein neuer Schaft, um beschädigte Werkzeuge zu reparieren.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CROWBAR">
 			<English>Crowbar</English>
@@ -4770,7 +4783,7 @@
 			<Spanish>Pistola semi-automática &lt;br/&gt;Calibre: 9x19mm</Spanish>
 			<French>Pistolet semi-automatique italien &lt;br/&gt;Calibre: 9x19mm</French>
 			<Czech>Poloautomatická pistole &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Beretta 92, Militaerversion&lt;br/&gt;Kaliber: 9 x 19 mm</German>
+			<German>Halbautomatische Pistole vom Typ Beretta 92, Militärversion&lt;br/&gt;Kaliber: 9 x 19 mm</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M9SD">
 			<English>M9 SD</English>
@@ -4786,7 +4799,7 @@
 			<Spanish>Pistola silenciada semi-automática&lt;br/&gt;Calibre: 9x19mm</Spanish>
 			<French>Pistolet semi-automatique italien avec silencieux &lt;br/&gt;Calibre: 9x19mm</French>
 			<Czech>Poloautomatická pistole s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Beretta 92, Militaerversion mit Schalldämpfer&lt;br/&gt;Kaliber: 9 x 19 mm</German>
+			<German>Halbautomatische Pistole vom Typ Beretta 92, Militärversion mit Schalldämpfer&lt;br/&gt;Kaliber: 9 x 19 mm</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M1911">
 			<English>M1911</English>
@@ -4882,7 +4895,7 @@
 			<Spanish>Pistola semi-automática &lt;br/&gt;Calibre: 9x19mm</Spanish>
 			<French>Pistolet semi-automatique autrichien &lt;br/&gt;Calibre: 9x19mm</French>
 			<Czech>Poloautomatická pistole Glock 17 &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Glock 17 mit angebauter Taschenlampe&lt;br/&gt;Kaliber: 9 x 19 mm</German>
+			<German>Halbautomatische Pistole vom Typ Glock 17&lt;br/&gt;Kaliber: 9 x 19 mm</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
@@ -5014,7 +5027,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_CODE_DESC_4">
 			<English>Your Knife appears to be too dull.</English>
-			<German>Das Messer ist durch häufigen Gebrauch stumpf geworden.</German>
+			<German>Dein Messer ist durch häufigen Gebrauch stumpf geworden.</German>
 			<Russian>Ваш нож слишком туп, чтобы его использовать.</Russian>
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
 			<French>Votre couteau semble trop émoussé</French>
@@ -5174,7 +5187,7 @@
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">
 			<English>Chicken Leg to be used for sustenance.</English>
-			<German>Eine Huehnchenkeule, die über Feuer gut durchgebraten wurde.</German>
+			<German>Eine Hühnchenkeule, die über Feuer gut durchgebraten wurde.</German>
 			<Russian>Жареный куриный окрочек, готовый к употреблению.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<French>La cuisse de poulet peut être consommée.</French>
@@ -5475,7 +5488,7 @@
 			<German>Eine saubere, ungeöffnete Dose "R4ZOR". Die werden schon seit Jahren nicht mehr verkauft!</German>
 			<Russian>Чистая, закрытая банка "R4Z0R". Уже давно перестали продаваться!</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa R4Z0R. Dejaron de venderlas hace años.</Spanish>
-			<French>Une canette intacte de soda "R4Z0R". Ils ont arrêté de les vendre il y a des années !.</French>
+			<French>Une canette intacte de soda "R4Z0R". Ils ont arrêté de les vendre il y a des années!.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky R4Z0R. Neprodává se už mnoho let!</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">
@@ -5552,7 +5565,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">
 			<English>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</English>
-			<German>Eine saubere, ungeöffnete Dose "Mikhail Made"-Limonade. Hergestellt bei Mikhail.</German>
+			<German>Eine saubere, ungeöffnete Dose "Mikhail Made"-Limonade. Hergestellt von Mikhail.</German>
 			<Russian>Чистая, закрытая банка лимонада. Производства "Mikhail".</Russian>
 			<Spanish>Una limpia y cerrada lata de limonada Mikhail.</Spanish>
 			<French>Une canette intacte de limonade à la Mikhail. Fabriqué par Mikhail.</French>
@@ -5664,8 +5677,8 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_13">
 			<English>A clean, unopened can of Papa&apos;s &apos;Gagarin Rocket Fuel&apos; soda. Product of Chernarus.</English>
-			<German>Eine saubere, ungeöffnete Dose "Gagarins Raketentreibstoff" von "Papas". Hergestellt und abgefuellt in Chernarus.</German>
-			<Russian>Чистая, закрытая банка газировки "Papa" "Gagarin Rocket Fuel".  Произведено в Чернаруси.</Russian>
+			<German>Eine saubere, ungeöffnete Dose "Gagarins Raketentreibstoff" von "Papas". Hergestellt und abgefüllt in Chernarus.</German>
+			<Russian>Чистая, закрытая банка газировки "Papa" "Gagarin Rocket Fuel". Произведено в Чернаруси.</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Papa&apos;s &apos;Gagarin Rocket Fuel&apos;. Producto de Chernarus.</Spanish>
 			<French>Une canette de &apos;Gagarin Rocket Fuel&apos; en bon état. Produit à Chernarus.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Gagarin Rocket Fuel od Papa. Vyrobeno v Černarusi.</Czech>
@@ -5680,8 +5693,8 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_14">
 			<English>A clean, unopened can of Papa&apos;s &apos;Olsha Sparkling Grape&apos; soda. Product of Chernarus.</English>
-			<German>Eine saubere, ungeöffnete Dose "Olshas spritzige Pampelmusenlimonade" von "Papas". Hergestellt und abgefuellt in Chernarus.</German>
-			<Russian>Чистая, закрытая банка газировки "Papa" "Olsha Sparkling Grape".  Произведено в Чернаруси.</Russian>
+			<German>Eine saubere, ungeöffnete Dose "Olshas spritzige Pampelmusenlimonade" von "Papas". Hergestellt und abgefüllt in Chernarus.</German>
+			<Russian>Чистая, закрытая банка газировки "Papa" "Olsha Sparkling Grape". Произведено в Чернаруси.</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Papa&apos;s &apos;Olsha Sparkling Grape&apos;. Producto de Chernarus.</Spanish>
 			<French>Une canette de soda au raisin &apos;Olsha&apos; en bon état. Produit à Chernarus.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Olsha Sparkling Grape od Papa. Vyrobeno v Černarusi.</Czech>
@@ -5700,7 +5713,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_MRE">
 			<English>Meal Ready-to-Eat</English>
-			<German>Fertiggericht aus Militärbeständen.</German>
+			<German>Einmannpackung. Fertiggericht aus Militärbeständen.</German>
 			<Russian>Упаковка сухого пайка.</Russian>
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<French>Repas prêt à manger. Redonne des forces.</French>
@@ -5752,7 +5765,7 @@
 			<Spanish>Una lata vacia.</Spanish>
 			<French>Une boîte de conserve vide.</French>
 			<Czech>Prázdná plechovka</Czech>
-			<German>Eine leere Blechdose. Leider ist nichts Essbares mehr darin.</German>
+			<German>Eine leere Blechdose. Leider ist nichts Essbares mehr drin.</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CHIPS_EMPTY">
 			<English>Empty Snack Bag</English>
@@ -5796,7 +5809,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_MYSTICALES">
 			<English>A clean, unopened bag of Miss Mysticales jalapeño chips.</English>
-			<German>Eine saubere, ungeöffnete Tuete "Miss Mysticales Jalapeño-Chips".</German>
+			<German>Eine saubere, ungeöffnete Tüte "Miss Mysticales Jalapeño-Chips".</German>
 			<Russian>Чистая, закрытая упаковка "Miss Mysticales jalapeño".</Russian>
 			<Spanish>Una limpia y cerrada bolsa de papitas picantes Miss Mysticales.</Spanish>
 			<French>Un paquet intact de chips "Miss Mysticales jalapeño".</French>
@@ -5868,7 +5881,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAKE_Creme_Cake_CLEAN">
 			<English>Golden Sponge Cake with Creamy Filling</English>
-			<German>Ein "Goldschwamm"-Minikuchen mit cremiger Fuellung.</German>
+			<German>Ein "Goldschwamm"-Minikuchen mit cremiger Füllung.</German>
 			<Russian>Золотистый бисквит с кремовой начинкой</Russian>
 			<Spanish>Postre dulce con relleno de crema.</Spanish>
 			<French>Gâteau doré fait de génoise fourrée à la crème</French>
@@ -6092,7 +6105,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">
 			<English>Can (Fruit)</English>
-			<German>Dose (Fruechte)</German>
+			<German>Dose (Früchte)</German>
 			<Russian>Банка (Компот)</Russian>
 			<Spanish>Lata (Ensalada de Frutas)</Spanish>
 			<French>Conserve (Fruits)</French>
@@ -6260,7 +6273,7 @@
 		</Key>
 		<Key ID="STR_JUNK_DESC_RAZOR">
 			<English>An old-fashioned cut-throat razor with a rounded French point.</English>
-			<German>Ein altmodisches Rasiermesser mit franzoesischem Rundkopf.</German>
+			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
 			<Russian>Старомодная опасная бритва.</Russian>
 			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
 			<French>Un coupe-chou démodé à pointe biseautée.</French>
@@ -6279,7 +6292,7 @@
 			<German>Eine Sammlung religiöser Texte.</German>
 			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
 			<Spanish>Una colección de textos considerados como sagrados.</Spanish>
-			<French>Un recueil  de textes condidérés comme sacrés.</French>
+			<French>Un recueil de textes condidérés comme sacrés.</French>
 			<Czech>Kniha plná posvátných textů.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_CARDS">
@@ -6474,7 +6487,7 @@
 			<Russian>Рюкзак на (18 слотов)</Russian>
 			<Spanish>Mochila de asalto británica de tamaño medio.</Spanish>
 			<Czech>Moderní a stylový batoh britské armády.</Czech>
-			<German>Grosser Kampfrucksack der britischen Streitkraefte. Volumen: 18 Liter.</German>
+			<German>Grosser Kampfrucksack der britischen Streitkräfte. Volumen: 18 Liter.</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_CZECH">
 			<English>Czech Backpack</English>
@@ -6541,7 +6554,7 @@
 			<Spanish>Esta caña de fibra de carbón puede estar vieja pero funciona perfectamente.</Spanish>
 			<French>Canne en fibre de carbone, sans doute assez ancienne mais fonctionnant parfaitement.</French>
 			<Czech>Sice vypadá starobyle, ale svůj účet splní dokonale.</Czech>
-			<German>Die Carbonrute mag alt aussehen, funktioniert aber noch tadellos.</German>
+			<German>Die Carbon-Angelrute mag alt aussehen, funktioniert aber noch tadellos.</German>
 			<Dutch>Dit carbonnen hengeltje is al oud, maar werkt nog prima!</Dutch>
 		</Key>
 		<Key ID="STR_ITEM_NAME_CAMONET">
@@ -6779,7 +6792,7 @@
 			<German>Du hast das Zelt erfolgreich aufgeschlagen.</German>
 			<Russian>Вы установили палатку.</Russian>
 			<Spanish>Asentaste tu carpa.</Spanish>
-			<French>Vous avez installé votre tente.</French>
+			<French>\n\nVous avez installé votre tente.</French>
 			<Czech>Postavili jste stan.</Czech>
 		</Key>
 		<Key ID="str_fail_tent_pitch">
@@ -6787,7 +6800,7 @@
 			<German>Du kannst hier kein Zelt aufbauen, da der Untergrund nicht flach und frei von Hindernissen ist.</German>
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
+			<French>\n\nVous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Stan zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_success_stash_pitch">
@@ -6803,7 +6816,7 @@
 			<German>%1 kann hier nicht angelegt werden. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Нельзя установить %1 тут. Поверхность должна быть ровной, без объектов поблизости.</Russian>
 			<Spanish>No puedes ubicar una %1 aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>Vous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
+			<French>\n\nVous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
 			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které by mohly bránit stavbě.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food">
@@ -6811,7 +6824,7 @@
 			<German>Du hast %1 gegessen.</German>
 			<Russian>Вы съели %1.</Russian>
 			<Spanish>Comiste %1.</Spanish>
-			<French>Vous avez mangé un(e) %1.</French>
+			<French>\n\nVous avez mangé un(e) %1.</French>
 			<Czech>Snědli jste %1.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_1">
@@ -6819,15 +6832,15 @@
 			<German>Du hast %1 aufgegessen und wirst langsam satt.</German>
 			<Russian>Вы съели %1 и чувствуете себя сытым...</Russian>
 			<Spanish>Comiste %1 y te empiezas a sentir lleno...</Spanish>
-			<French>Vous avez mangé %1 et votre ventre est plein...</French>
+			<French>\n\nVous avez mangé %1 et votre ventre est plein...</French>
 			<Czech>Snědli jste %1 a máte plné břicho...</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_2">
 			<English>You ate %1 but spit out most of it. You&apos;re too full to eat anything.</English>
 			<German>Du versuchst %1 zu essen, musst aber das meiste wieder ausspucken. Du bist einfach zu satt, um noch mehr zu essen.</German>
-			<Russian>Вы съели %1, но выплюнули большую часть. Вы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
+			<Russian>Вы съели %1, но выплюнули большую часть.\nВы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
 			<Spanish>Comiste %1 pero escupiste la mayor parte. Estás demasiado lleno para seguir comiendo.</Spanish>
-			<French>Vous n&apos;avez pas pu terminer votre %1. Vous avez trop mangé.</French>
+			<French>\n\nVous n&apos;avez pas pu terminer votre %1. Vous avez trop mangé.</French>
 			<Czech>Snědli jste %1, ale většinu jste vyplivnul. Jste plný a víc toho už nesníte.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
@@ -6835,7 +6848,7 @@
 			<German>%1 wurde verbraucht.</German>
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
-			<French>Vous avez consommé un(e) %1</French>
+			<French>\n\nVous avez consommé un(e) %1</French>
 			<Czech>Zkonzumovali jste %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
@@ -6843,7 +6856,7 @@
 			<German>Du hast erfolgreich eine Feuerstelle angelegt.</German>
 			<Russian>Вы подготовили костер.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
-			<French>Vous avez créé un feu de camp.</French>
+			<French>\n\nVous avez créé un feu de camp.</French>
 			<Czech>Vytvořili jste ohniště.</Czech>
 		</Key>
 		<Key ID="str_build_01">
@@ -6872,10 +6885,10 @@
 		</Key>
 		<Key ID="str_fireplace_02">
 			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
-			<German>Du solltest hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein.</German>
+			<German>Du kannst hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
+			<French>\n\nVous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_fireplace_removed">
@@ -6894,17 +6907,9 @@
 			<French>%1 a été dépecé, %2 morceaux de viande sont maintenant dans la carcasse.</French>
 			<Czech>%1 byla vykuchána, %2 kusy masa lze najít v mrtvole.</Czech>
 		</Key>
-		<Key ID="str_success_gutted_zombie">
-			<English>%1 has been gutted, zombie parts are now on the carcass</English>
-			<German>Du hast den Zombie (%1) ausgenommen und kannst das Fleisch jetzt abschneiden.</German>
-			<Russian>Вы разделали: %1, куски плоти лежат на трупе</Russian>
-			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa</Spanish>
-			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
-			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
-		</Key>
 		<Key ID="str_medical_healing">
 			<English>You are being healed</English>
-			<German>Du wirst verbunden, stillhalten.</German>
+			<German>Du wirst geheilt.</German>
 			<Russian>Вас лечат.</Russian>
 			<Spanish>Fuiste curado.</Spanish>
 			<French>Vous recevez des soins</French>
@@ -6915,15 +6920,15 @@
 			<Spanish>Infection: Tienes 15 minutos para curarte antes de que empieces a perder sangre.</Spanish>
 			<Russian>ВНИМАНИЕ: У вас 15 минут на дезинфекцию раны до начала потери крови.</Russian>
 			<Czech>INFEKCE: Máte 15 minut na vyčištění rány, pak začnete ztrácet krev.</Czech>
-			<French>Infection : vous avez 15 minutes pour vous soigner avant de commencer à saigner.</French>
-			<German>Infektion: Das sieht übel aus. Du solltest die Wunde innerhalb von 15 Minuten desinfizieren.</German>
+			<French>Infection: vous avez 15 minutes pour vous soigner avant de commencer à saigner.</French>
+			<German>Infektion: Du solltest die Wunde innerhalb von 15 Minuten desinfizieren, sonst droht Blutverlust.</German>
 		</Key>
 		<Key ID="str_player_01">
 			<English>You have filled %1 bottles with water</English>
-			<German>Du hast %1 Flasche(n) mit Wasser aufgefuellt.</German>
+			<German>Du hast %1 Flasche(n) mit Wasser aufgefüllt.</German>
 			<Russian>Наполнено водой бутылок: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
-			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
+			<French>\n\nVous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste vodou %1 láhve.</Czech>
 		</Key>
 		<Key ID="str_player_boiledwater">
@@ -6931,7 +6936,7 @@
 			<German>Du hast %1 Flasche(n) mit Wasser abgekocht.</German>
 			<Russian>Вы наполнили %1 бутылок чистой кипяченой водой.</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
-			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
+			<French>\n\nVous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste převařenou vodou %1 láhve.</Czech>
 		</Key>
 		<Key ID="str_player_02">
@@ -6939,7 +6944,7 @@
 			<German>Du hast keine leeren Wasserflaschen.</German>
 			<Russian>У вас нет пустых бутылок.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
-			<French>Vous n&apos;avez aucune Bouteille vide.</French>
+			<French>\n\nVous n&apos;avez aucune Bouteille vide.</French>
 			<Czech>Nemáte žádné prázdné láhve na vodu.</Czech>
 		</Key>
 		<Key ID="str_player_03">
@@ -6977,7 +6982,7 @@
 		</Key>
 		<Key ID="str_player_09">
 			<English>You have filled %1 jerrycans with fuel</English>
-			<German>Du hast %1 Kanister mit Treibstoff gefuellt.</German>
+			<German>Du hast %1 Kanister mit Treibstoff gefüllt.</German>
 			<Russian>Наполнено топливом канистр: %1</Russian>
 			<Spanish>Llenaste %2 bidones con combustible</Spanish>
 			<French>Vous avez rempli %1 jerrican(s) avec du carburant.</French>
@@ -6993,10 +6998,10 @@
 		</Key>
 		<Key ID="STR_AUTHENTICATING">
 			<English>Loading Character Data. Please wait...</English>
-			<German>Lade Charakterdaten. Bitte warten ...</German>
+			<German>Lade Charakterdaten. Bitte warten...</German>
 			<Russian>Загружаются данные персонажа. Ожидайте...</Russian>
-			<Spanish>Cargando datos del personaje. Por favor espere.</Spanish>
-			<French>Chargement du personnage. Veuillez patienter.</French>
+			<Spanish>Cargando datos del personaje. Por favor espere...</Spanish>
+			<French>Chargement du personnage. Veuillez patienter...</French>
 			<Czech>Načítám data postavy. Prosím čekejte...</Czech>
 		</Key>
 		<Key ID="str_player_loading">
@@ -7005,11 +7010,11 @@
 			<Spanish>Cargando e inicializando DayZMod</Spanish>
 			<French>Chargement et initialisation de DayZMod en cours</French>
 			<Czech>Probíhá nahrávání a inicializace DayZModu</Czech>
-			<German>Lade und initialisiere DayZ Mod ...</German>
+			<German>Lade und initialisiere DayZ Mod</German>
 		</Key>
 		<Key ID="str_player_retrying">
 			<English>Retrying Authentication</English>
-			<German>Erneuter Authentifizierungsversuch ...</German>
+			<German>Erneuter Authentifizierungsversuch</German>
 			<Russian>Повторная идентификация</Russian>
 			<Spanish>Volviendo a Autentificar</Spanish>
 			<French>Nouvelle tentative d&apos;Authentification</French>
@@ -7021,11 +7026,11 @@
 			<Spanish>Hubo un problema al autentificación.\nDesconecta y prueba de nuevo.</Spanish>
 			<Czech>Naše vystudované opice nebyly schopny vás ověřit.\nOdpojte se a zkuste to prosím znovu.</Czech>
 			<French>Problème d&apos;authentification\nVeuillez vous déconnecter et essayer à nouveau.</French>
-			<German>Es besteht ein Problem mit Ihrer Spieler-ID. Bitte trennen Sie die Verbindung und versuchen Sie es erneut.</German>
+			<German>Es besteht ein Problem mit deiner Spieler-ID. Bitte die Verbindung trennen und es erneut versuchen.</German>
 		</Key>
 		<Key ID="str_player_request">
 			<English>Requesting Authentication</English>
-			<German>Authentifizierung wird abgefragt ...</German>
+			<German>Authentifizierung wird abgefragt</German>
 			<Russian>Запрос идентификация</Russian>
 			<Spanish>Solicitando Autentificación</Spanish>
 			<French>Demande d&apos;Authentification</French>
@@ -7037,7 +7042,7 @@
 			<Spanish>Esperando al servidor para iniciar la autentificación</Spanish>
 			<Czech>Čekám na začátek ověřování</Czech>
 			<French>En attente du serveur avant authentification</French>
-			<German>Bitte warten, waehrend der Server die Authentifizierung durchführt ...</German>
+			<German>Bitte warten, während der Server die Authentifizierung durchführt</German>
 		</Key>
 		<Key ID="str_player_requesting_character">
 			<English>Requesting Character data from server</English>
@@ -7045,11 +7050,11 @@
 			<Spanish>Solicitando datos del personaje al servidor</Spanish>
 			<French>Demande au serveur des informations du personnage</French>
 			<Czech>Požadování dat postavy ze serveru</Czech>
-			<German>Charakterdaten werden vom Server abgerufen ...</German>
+			<German>Charakterdaten werden vom Server abgerufen</German>
 		</Key>
 		<Key ID="str_player_creating_character">
 			<English>Server responded, creating character</English>
-			<German>Server antwortet, Charakter wird erstellt ...</German>
+			<German>Server antwortet, Charakter wird erstellt</German>
 			<Russian>Получен ответ от сервера. Идет создание персонажа</Russian>
 			<Spanish>El servidor respondió, creando personaje</Spanish>
 			<French>Réponse du serveur, création du personnage</French>
@@ -7057,7 +7062,7 @@
 		</Key>
 		<Key ID="str_player_waiting_creation">
 			<English>Waiting for character to create</English>
-			<German>Warte auf Charaktererstellung ...</German>
+			<German>Warte auf Charaktererstellung</German>
 			<Russian>Ожидание создания персонажа</Russian>
 			<Spanish>Esperando a que el personaje sea creado</Spanish>
 			<French>En attente de la création du personnage</French>
@@ -7069,7 +7074,7 @@
 			<Spanish>Creación completa, por favor espera...</Spanish>
 			<Czech>Nastavení dokončeno, prosím čekejte...</Czech>
 			<French>Installation terminée, veuillez patienter...</French>
-			<German>Installation abgeschlossen, bitte warten ...</German>
+			<German>Installation abgeschlossen, bitte warten...</German>
 		</Key>
 		<Key ID="str_player_desync">
 			<English>Date and Time not Synced Disconnect.</English>
@@ -7085,11 +7090,11 @@
 			<Spanish>Tiempo de inicio de sesión excedido.\nDesconectate y prueba de nuevo.</Spanish>
 			<Czech>Maximální čas pro přihlášení vypršel.\nOdpojte se a zkuste to znovu!</Czech>
 			<French>Délai de connexion dépassé\nVeuillez vous déconnecter et essayer à nouveau.</French>
-			<German>Das Einloggen dauert zu lange. Bitte trennen Sie die Verbindung und versuchen Sie es erneut.</German>
+			<German>Das Einloggen dauert zu lange. Bitte die Verbindung trennen und es erneut versuchen.</German>
 		</Key>
 		<Key ID="str_player_authentication_failed">
 			<English>Authentication Failed, Disconnect and try again.</English>
-			<German>Die Authentifizierung ist fehlgeschlagen. Bitte trennen Sie die Verbindung und versuchen Sie es erneut.</German>
+			<German>Die Authentifizierung ist fehlgeschlagen. Bitte die Verbindung trennen und es erneut versuchen.</German>
 			<Russian>Неудачная идентификация. Отключитесь и попробуйте снова.</Russian>
 			<Spanish>Error de Autentificación. Desconectese y pruebe de nuevo.</Spanish>
 			<Czech>Ověřování selhalo. Odpojte se a zkuste to prosím znovu.</Czech>
@@ -7097,7 +7102,7 @@
 		</Key>
 		<Key ID="str_player_outdated">
 			<English>You are running an incorrect version of DayZ! Please reinstall DayZ!</English>
-			<German>Ihre Version von DayZ ist nicht kompatibel. Bitte installieren sie die korrekte Version von DayZ.</German>
+			<German>Deine Version von DayZ ist nicht kompatibel. Bitte installiere die korrekte Version von DayZ.</German>
 			<Russian>Вы используете неверную версию DayZ!</Russian>
 			<Spanish>¡Estás ejecutando una versión incorrecta de DayZ! Por favor reinstala DayZ.</Spanish>
 			<French>Vous utilisez une version incorrecte de DayZ Mod! Veuillez réinstaller DayZ Mod</French>
@@ -7109,15 +7114,15 @@
 			<Spanish>Este servidor está ejecutando una versión incorrecta de la aplicación del lado del servidor. No puedes jugar en este servidor.</Spanish>
 			<Czech>Tento server používá zastaralou verzi souborů pro hostování. Na tomto serveru nelze hrát.</Czech>
 			<French>Le serveur fonctionne avec une version incorrecte. Vous ne pouvez pas jouer sur ce serveur.</French>
-			<German>Dieser Server nutzt eine abweichende Serversoftware. Sie können auf diesem Server nicht spielen.</German>
+			<German>Dieser Server nutzt eine abweichende Serversoftware. Du kannst auf diesem Server nicht spielen.</German>
 		</Key>
 		<Key ID="str_player_ghost">
 			<English>You are in ghost mode, trying again in %1 seconds!</English>
 			<Russian>Вы заблокированы в режиме призрака, попробуем снова через %1 секунд!</Russian>
 			<Spanish>Usted está en el modo de fantasma, de volver a intentarlo en% 1 segundos!</Spanish>
 			<Czech>Nacházíte se v módu duchů, další pokus znovu za %1 sekund!</Czech>
-			<French>Vous êtes en quarantaine, nouvelle tentative dans %1 secondes !</French>
-			<German>Sie sind im Ghost-Modus, versuche nochmals in %1 Sekunden!</German>
+			<French>Vous êtes en quarantaine, nouvelle tentative dans %1 secondes!</French>
+			<German>Du bist im Ghost-Modus, versuche es nochmals in %1 Sekunden!</German>
 		</Key>
 		<Key ID="str_login_characterData">
 			<English>Character Data received from server</English>
@@ -7129,7 +7134,7 @@
 		<Key ID="str_login_alreadyDead">
 			<English>Player Already Dead, disconnect and try again!</English>
 			<Russian>Игрок уже мертв! Отключитесь и попробуйте снова!</Russian>
-			<French>Vous êtes déjà mort, essayez encore !</French>
+			<French>Vous êtes déjà mort, essayez encore!</French>
 			<Czech>Hráč je mrtev, odhlašte se a zkuste znovu!</Czech>
 			<German>Spieler tot. Bitte Verbidung trennen und noch einmal versuchen!</German>
 		</Key>
@@ -7150,9 +7155,9 @@
 		<Key ID="str_login_authentTimeout">
 			<English>Server authentication time out! Disconnect and try again!</English>
 			<Russian>Вышло время идентификации сервером. Отключитесь и попробуйте снова!</Russian>
-			<French>L'authentification a échoué, veuillez vous reconnecter !</French>
+			<French>L'authentification a échoué, veuillez vous reconnecter!</French>
 			<Czech>Vypršel čas pro serverové ověření! Odhlašte se a zkuste to znovu!</Czech>
-			<German>Server-Authentifizierung fehlgeschlagen. Trenne die Verbindung und versuche es erneut!</German>
+			<German>Server-Authentifizierung fehlgeschlagen. Bitte die Verbindung trennen und es erneut versuchen!</German>
 		</Key>
 		<Key ID="str_login_ghostedPlayer">
 			<English>Checking for Ghosted Player</English>
@@ -7194,7 +7199,7 @@
 		</Key>
 		<Key ID="str_player_23">
 			<English>You must be in a forest and close to a tree to harvest wood.</English>
-			<German>Um Holz zu sammeln, musst du in einem Wald oder nah an einem Baum sein.</German>
+			<German>Um Holz zu sammeln, musst du in einem Wald und nah an einem Baum sein.</German>
 			<Russian>Вы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
 			<Spanish>Debes estar en el bosque y cerca de un árbol para recoger leña.</Spanish>
 			<French>Vous devez être en forêt et proche d&apos;un arbre pour couper du bois.</French>
@@ -7219,7 +7224,7 @@
 		<Key ID="str_player_24_progress">
 			<English>Chopping down tree (%1/%2). Walk away at anytime to cancel.</English>
 			<Russian>Рубим дровишки... (%1/%2). Шагните в сторону, чтобы прекратить.</Russian>
-			<German>Der Baum wird gefällt ... (%1/%2). Gehe ein Stück zur Seite, um abzubrechen.</German>
+			<German>Der Baum wird gefällt... (%1/%2). Gehe ein Stück zur Seite, um abzubrechen.</German>
 			<Spanish>Tala de árboles (%1/%2). Walk away en cualquier momento para cancelar.</Spanish>
 			<French>Abattre l&apos;arbre (%1/%2). Éloignez-vous à tout moment pour annuler.</French>
 			<Czech>Sekání dřeva (%1/%2). Odstupte pro zrušení akce.</Czech>
@@ -7311,7 +7316,7 @@
 			<!-- %1=ITEM %2=build/consumed/cook/drink/fill/pitch/place/use/wear -->
 			<English>%1 must be in your main inventory to %2 it.</English>
 			<German>%1 muss sich in deinem Inventar befinden, um es zu %2.</German>
-			<Russian>Чтобы %2 , (%1) должен находиться в основном инвентаре.</Russian>
+			<Russian>Чтобы %2, (%1) должен находиться в основном инвентаре.</Russian>
 			<Spanish>Debes tener un %1 en tu inventario principal para %2.</Spanish>
 			<French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
 			<Czech>%1 musí být ve vašem hlavním inventáři pro %2.</Czech>
@@ -7439,7 +7444,7 @@
 <!--		
 		<Key ID="str_player_fail_drink">
 			<English>You may not drink while in a vehicle</English>
-			<German>Du solltest nicht trinken, waehrend du dich in einem Fahrzeug befindest.</German>
+			<German>Du kannst nicht trinken, während du dich in einem Fahrzeug befindest.</German>
 			<Russian>Вы не можете пить в транспорте</Russian>
 			<Spanish>No puedes beber mientras estás en un vehículo</Spanish>
 			<French>Vous ne pouvez rien boire dans un véhicule</French>
@@ -7447,7 +7452,7 @@
 		</Key>
 		<Key ID="str_player_fail_eat">
 			<English>You may not eat while in a vehicle</English>
-			<German>Du solltest nicht essen, waehrend du dich in einem Fahrzeug befindest.</German>
+			<German>Du kannst nicht essen, während du dich in einem Fahrzeug befindest.</German>
 			<Russian>Вы не можете есть в транспорте</Russian>
 			<Spanish>No puedes comer mientras estás en un vehículo</Spanish>
 			<French>Vous ne pouvez rien manger dans un véhicule</French>
@@ -7473,10 +7478,10 @@
 		</Key>
 		<Key ID="str_player_actionslimit">
 			<English>Wait for the previous action to complete to perform another!</English>
-			<German>Du musst erst das eine beenden, bevor du etwas neues startest!</German>
+			<German>Du musst erst das Eine beenden, bevor du etwas Neues startest!</German>
 			<Russian>Дождитесь завершения предыдущего действия, перед тем, как начинать новое!</Russian>
 			<Spanish>¡Espera a terminar la acción previa para realizar otra!</Spanish>
-			<French>Attendez la fin de l&apos;action en cours avant d&apos;en commencer une autre !</French>
+			<French>Attendez la fin de l&apos;action en cours avant d&apos;en commencer une autre!</French>
 			<Czech>Než začnete dělat něco jiného, musíte dokončit aktuální akci.</Czech>
 		</Key>
 		<Key ID="str_player_ammo_successful">
@@ -7500,23 +7505,23 @@
 		<Key ID="str_player_ammo_2primary">
 			<English>You can&apos;t carry two primary weapons at the same time!</English>
 			<Russian>Нельзя одновременно носить наготове два основных типа оружия!</Russian>
-			<French>Vous ne pouvez pas porter 2 armes principales !</French>
+			<French>Vous ne pouvez pas porter 2 armes principales!</French>
 			<Czech>Nelze mít najednou dvě hlavní zbraně!</Czech>
-			<German>Du kannst nicht zwei Primärwaffen gleichzeitig tragen.</German>
+			<German>Du kannst nicht zwei Primärwaffen gleichzeitig tragen!</German>
 		</Key>
 		<Key ID="str_player_ammo_CannotCount">
 			<English>Can&apos;t count magazines!</English>
 			<Russian>Не удалось пересчитать магазины!</Russian>
 			<French>Impossible de compter les chargeurs!</French>
 			<Czech>Nelze spočítat zásobníky!</Czech>
-			<German>Du kannst die Magazine nicht zählen.!</German>
+			<German>Du kannst die Magazine nicht zählen!</German>
 		</Key>
 		<Key ID="str_player_lowPFS">
-			<English>LOW FPS, PLEASE CHANGE YOUR GRAPHIC SETTINGS</English>
+			<English>LOW FPS! PLEASE CHANGE YOUR GRAPHIC SETTINGS</English>
 			<Russian>Низкий FPS! Измените настройки графики!</Russian>
-			<French>IMAGES SACCADEES, VEUILLEZ BAISSER VOS REGLAGES VIDEO.</French>
+			<French>IMAGES SACCADEES, VEUILLEZ BAISSER VOS REGLAGES VIDEO</French>
 			<Czech>NÍZKÉ FPS (SNÍMKOVÁ FREKVENCE), UPRAVTE NASTAVENÍ GRAFIKY</Czech>
-			<German>NIEDRIGE FPS. ÄNDERE DIE GRAFIK EINSTELLUNGEN</German>
+			<German>NIEDRIGE FPS! ÄNDERE DIE GRAFIK-EINSTELLUNGEN</German>
 		</Key>
 
 		<Key ID="str_player_build_rotate">
@@ -7532,7 +7537,7 @@
 			<German>Du bewegst dich zu schnell!</German>
 			<Russian>Вы слишком быстро движитесь!</Russian>
 			<Spanish>¡Te estás moviendo muy rápido!</Spanish>
-			<French>Vous vous déplacez trop vite !</French>
+			<French>Vous vous déplacez trop vite!</French>
 			<Czech>Pohybujete se příliš rychle!</Czech>
 		</Key>
 		<Key ID="str_player_build_complete">
@@ -7556,7 +7561,7 @@
 			<German>Du musst dich im Umkreis von drei Metern befinden, um das aufzunehmen.</German>
 			<Russian>Чтобы поднять предмет, вы должны быть ближе 3х метров!</Russian>
 			<Spanish>¡Necesitas estar a menos de 3 metros para tomarlo!</Spanish>
-			<French>Vous devez être à moins de 3 mètres pour ramasser !</French>
+			<French>Vous devez être à moins de 3 mètres pour ramasser!</French>
 			<Czech>Abyste předmět sebrali, musíte být do vzdálenosti 3 metrů.</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_2">
@@ -7564,7 +7569,7 @@
 			<German>Du musst noch etwas warten, um das aufzunehmen.</German>
 			<Russian>Чтобы поднять этот предмет, нужно подождать!</Russian>
 			<Spanish>¡Necesitas esperar para tomar este objeto!</Spanish>
-			<French>Vous devez attendre pour ramasser l&apos;objet !</French>
+			<French>Vous devez attendre pour ramasser l&apos;objet!</French>
 			<Czech>Abyste sebrali předmět, musíte počkat.</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_3">
@@ -7572,7 +7577,7 @@
 			<German>Du darfst immer nur einen Gegenstand davon aufheben.</German>
 			<Russian>Можно поднимать только один предмет за раз!</Russian>
 			<Spanish>¡Solo puedes tomar un objeto a la vez!</Spanish>
-			<French>Vous ne pouvez prendre qu&apos;un objet à la fois !</French>
+			<French>Vous ne pouvez prendre qu&apos;un objet à la fois!</French>
 			<Czech>Lze sebrat pouze jeden předmět zároveň.</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_4">
@@ -7596,79 +7601,79 @@
 			<German>Das wird bereits aufgefüllt!</German>
 			<Russian>Уже заправляется!</Russian>
 			<Spanish>¡Ya estás reabasteciendo!</Spanish>
-			<French>Remplissage déjà en cours !</French>
+			<French>Remplissage déjà en cours!</French>
 			<Czech>Doplňování paliva už probíhá!</Czech>
 		</Key>
 		<Key ID="str_death_shothead">
-			<English>a gunshot to the head</English>
+			<English>a gunshot to the head.</English>
 			<German>durch einen Schuss in den Kopf.</German>
-			<Russian>попадания пули в голову</Russian>
-			<Spanish>por un disparo en la cabeza</Spanish>
-			<French>une balle dans la tête</French>
+			<Russian>попадания пули в голову.</Russian>
+			<Spanish>por un disparo en la cabeza.</Spanish>
+			<French>une balle dans la tête.</French>
 			<Czech>střelou do hlavy.</Czech>
 		</Key>
 		<Key ID="str_death_shotheavy">
-			<English>a large calibre gunshot</English>
+			<English>a large calibre gunshot.</English>
 			<German>an einer grosskalibrigen Schusswunde.</German>
-			<Russian>попадания пули большого калибра</Russian>
-			<Spanish>por un disparo de alto calibre</Spanish>
-			<French>un tir de gros calibre</French>
+			<Russian>попадания пули большого калибра.</Russian>
+			<Spanish>por un disparo de alto calibre.</Spanish>
+			<French>un tir de gros calibre.</French>
 			<Czech>vysokorážní střelbou.</Czech>
 		</Key>
 		<Key ID="str_death_bled">
-			<English>blood loss</English>
+			<English>blood loss.</English>
 			<German>durch hohen Blutverlust.</German>
-			<Russian>потери крови</Russian>
-			<Spanish>desangrado</Spanish>
-			<French>une hémorragie</French>
+			<Russian>потери крови.</Russian>
+			<Spanish>desangrado.</Spanish>
+			<French>une hémorragie.</French>
 			<Czech>na vykrvácení.</Czech>
 		</Key>
 		<Key ID="str_death_dehyd">
-			<English>dehydration</English>
+			<English>dehydration.</English>
 			<German>an Dehydrierung.</German>
-			<Russian>обезвоживания</Russian>
-			<Spanish>deshidratado</Spanish>
-			<French>une déshydratation</French>
+			<Russian>обезвоживания.</Russian>
+			<Spanish>deshidratado.</Spanish>
+			<French>une déshydratation.</French>
 			<Czech>na dehydrataci.</Czech>
 		</Key>
 		<Key ID="str_death_sick">
-			<English>infection</English>
-			<German>an einer Infektion</German>
-			<Russian>инфекционное заболевание</Russian>
-			<Spanish>infección</Spanish>
-			<French>maladie</French>
-			<Czech>nemoc</Czech>
+			<English>infection.</English>
+			<German>an einer Infektion.</German>
+			<Russian>инфекционное заболевание.</Russian>
+			<Spanish>infección.</Spanish>
+			<French>maladie.</French>
+			<Czech>nemoc.</Czech>
 		</Key>
 		<Key ID="str_death_starve">
-			<English>starvation</English>
+			<English>starvation.</English>
 			<German>durch Verhungern.</German>
-			<Russian>голода</Russian>
-			<Spanish>de hambre</Spanish>
-			<French>inanition</French>
+			<Russian>голода.</Russian>
+			<Spanish>de hambre.</Spanish>
+			<French>inanition.</French>
 			<Czech>z nedostatku jídla.</Czech>
 		</Key>
 		<Key ID="str_death_combatlog">
-			<English>combat logging</English>
-			<German>weil der Feigling versucht hat, aus einem Kampf zu fliehen.</German>
-			<Russian>выхода из игры в режиме боя</Russian>
-			<Spanish>por huir en combate</Spanish>
-			<French>une déco en combat</French>
+			<English>combat logging.</English>
+			<German>weil er versucht hat, aus einem Kampf zu fliehen.</German>
+			<Russian>выхода из игры в режиме боя.</Russian>
+			<Spanish>por huir en combate.</Spanish>
+			<French>une déco en combat.</French>
 			<Czech>, protože se odhlásit z boje.</Czech>
 		</Key>
 		<Key ID="str_death_explosion">
-			<English>explosion</English>
+			<English>explosion.</English>
 			<German>durch eine Explosion.</German>
-			<Russian>взрыва</Russian>
-			<Spanish>explosión</Spanish>
-			<French>explosion</French>
+			<Russian>взрыва.</Russian>
+			<Spanish>explosión.</Spanish>
+			<French>explosion.</French>
 			<Czech>při výbuchu.</Czech>
 		</Key>
 		<Key ID="str_death_unknown">
-			<English>an unknown cause</English>
+			<English>an unknown cause.</English>
 			<German>ohne erkennbare Ursache.</German>
-			<Russian>неизвестной причины</Russian>
-			<Spanish>por causas desconocidas</Spanish>
-			<French>une cause inconnue</French>
+			<Russian>неизвестной причины.</Russian>
+			<Spanish>por causas desconocidas.</Spanish>
+			<French>une cause inconnue.</French>
 			<Czech>během neznámé činnosti.</Czech>
 		</Key>
 		<Key ID="str_abort_playerclose">
@@ -7676,7 +7681,7 @@
 			<Russian>Нельзя выходить находясь рядом с другим игроком!\nВы все еще в бою!</Russian>
 			<Spanish>¡No puedes abortar cerca de otros jugadores!\nTodavía estás en combate.</Spanish>
 			<Czech>Nemůžete ukončit hru, když jste poblíž jiného hráče.\nStále jste v boji.</Czech>
-			<French>Abandon impossible près d&apos;un autre joueur !\nVous êtes toujours en combat.</French>
+			<French>Abandon impossible près d&apos;un autre joueur!\nVous êtes toujours en combat.</French>
 			<German>Du kannst dich nicht in der Nähe eines anderen Spielers ausloggen, du befindest dich noch immer in Gefahr!</German>
 		</Key>
 		<Key ID="str_abort_zedsclose">
@@ -7684,7 +7689,7 @@
 			<Russian>Нельзя выходить находясь рядом с зомби!\nВы все еще в бою!</Russian>
 			<Spanish>¡No puedes abortar cerca de zombies!\nTodavía estás en combate.</Spanish>
 			<Czech>Nemůžete ukončit hru, když jsou zombie poblíž.\nStále jste v boji.</Czech>
-			<French>Abandon impossible, des zombies sont à proximité !\nVous êtes toujours en combat.</French>
+			<French>Abandon impossible, des zombies sont à proximité!\nVous êtes toujours en combat.</French>
 			<German>Du kannst dich nicht in der Nähe von Zombies ausloggen, du befindest dich noch immer in Gefahr!</German>
 		</Key>
 		<Key ID="str_abort_playerincombat">
@@ -7692,7 +7697,7 @@
 			<German>Du kannst dich nicht im Kampf ausloggen!</German>
 			<Russian>Нельзя выходить в бою!</Russian>
 			<Spanish>¡No puedes abortar en combate!</Spanish>
-			<French>Vous ne pouvez pas vous déconnecter en combat !</French>
+			<French>Vous ne pouvez pas vous déconnecter en combat!</French>
 			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
 		</Key>
 		<Key ID="str_return_lobby">
@@ -7716,7 +7721,7 @@
 			<German>Du musst die Waffe, für die du Munition umwandeln willst, in den Händen halten.</German>
 			<Spanish>¡El arma a la que se quiere convertir la munición debe estar en tus manos!</Spanish>
 			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
-			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains !</French>
+			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>
 			<Czech>Zbraň, pro kterou měníte munici, musíte mít v rukách.</Czech>
 		</Key>
 		<Key ID="str_quiver_reachlimit">
@@ -7729,7 +7734,7 @@
 		</Key>
 		<Key ID="str_quiver_notenougharrows">
 			<English>You do not have enough arrows.</English>
-			<German>Du hast nicht mehr genuegend Pfeile.</German>
+			<German>Du hast nicht mehr genügend Pfeile.</German>
 			<Spanish>No tienes flechas suficientes.</Spanish>
 			<Russian>Недостаточно стрел.</Russian>
 			<French>Vous ne pouvez pas avoir plus de flèches.</French>
@@ -7901,7 +7906,7 @@
 		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<English>SELECT YOUR GENDER</English>
-			<German>Wähle dein Geschlecht.</German>
+			<German>WÄHLE DEIN GESCHLECHT</German>
 			<Russian>Выберите свой пол</Russian>
 			<Spanish>SELECCIONE SU GÉNERO</Spanish>
 			<French>HOMME OU FEMME ?</French>
@@ -7966,12 +7971,12 @@
 			<Czech>Hrdinka</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_1">
-			<English>My name is %1.  I woke up %2 somewhere in %3; an area of the infected hell hole also known as %4.</English>
+			<English>My name is %1. I woke up %2 somewhere in %3; an area of the infected hell hole also known as %4.</English>
 			<German>Mein Name ist %1. Ich bin %2 irgendwo bei %3 aufgewacht; ein gottverlassener Ort in diesem verseuchten Höllenloch, genannt %4.</German>
-			<Russian>Меня зовут %1.  Я проснулся %2. Рядом %3 - местность зараженной чертовой дыры, известной как %4.</Russian>
-			<Spanish>Mi nombre es %1.  Me levanté %2 en algún lugar de %3; un área infectada hasta el carajo conocida como %4.</Spanish>
+			<Russian>Меня зовут %1. Я проснулся %2. Рядом %3 - местность зараженной чертовой дыры, известной как %4.</Russian>
+			<Spanish>Mi nombre es %1. Me levanté %2 en algún lugar de %3; un área infectada hasta el carajo conocida como %4.</Spanish>
 			<French>Je m&apos;appelle %1. Je me suis réveillé %2 quelque part vers %3, un trou paumé et infesté de la région de %4.</French>
-			<Czech>Jmenuju se %1.  Probudil jsem se %2 poblíž %3, což je kdesi v %4. Celá oblast byla a nejspíš stále i je infikována.</Czech>
+			<Czech>Jmenuju se %1. Probudil jsem se %2 poblíž %3, což je kdesi v %4. Celá oblast byla a nejspíš stále i je infikována.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_1_a">
 			<!-- str_playerstats_journal_1 %2 -->
@@ -8108,12 +8113,12 @@
 			<Czech>Aspoň, že jsem si nic nezlomil</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_3_2">
-			<English>The situation looks dire.  I&apos;ve got multiple broken bones</English>
+			<English>The situation looks dire. I&apos;ve got multiple broken bones</English>
 			<German>Die Lage ist ernst, mehrere meiner Knochen scheinen gebrochen</German>
 			<Russian>Ситуация хреновая. У меня несколько переломов</Russian>
-			<Spanish>La situación parece grave.  Tengo multiples huesos rotos</Spanish>
-			<French>La situation est terrible.  J&apos;ai plusieurs fractures</French>
-			<Czech>Situace vypadá bledě.  Mám několik zlomenin</Czech>
+			<Spanish>La situación parece grave. Tengo multiples huesos rotos</Spanish>
+			<French>La situation est terrible. J&apos;ai plusieurs fractures</French>
+			<Czech>Situace vypadá bledě. Mám několik zlomenin</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_3_3">
 			<English>Things could be better. My leg is broken</English>
@@ -8124,11 +8129,11 @@
 			<Czech>Mohlo by být lépe. Má noha je zlomená</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_3_4">
-			<English>Things aren&apos;t so good.  My arm is broken</English>
+			<English>Things aren&apos;t so good. My arm is broken</English>
 			<German>Das sieht nicht gut aus. Mein Arm ist gebrochen</German>
 			<Russian>Дела обстоят не так уж и хорошо. Моя рука сломана</Russian>
-			<Spanish>Las cosas no estan bien.  Mi brazo está roto</Spanish>
-			<French>Ça ne va pas bien.  Mon bras est cassé</French>
+			<Spanish>Las cosas no estan bien. Mi brazo está roto</Spanish>
+			<French>Ça ne va pas bien. Mon bras est cassé</French>
 			<Czech>Má ruka je zlomená a že by mi bylo do zpěvu, to se říct nedá</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_4_1">
@@ -8180,12 +8185,12 @@
 			<Czech> a mám pár drobných zranění.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_5_5">
-			<English> but somehow I don&apos;t appear have lost any blood.  Strange.</English>
+			<English> but somehow I don&apos;t appear have lost any blood. Strange.</English>
 			<German>, aber scheinbar habe ich bisher kein Blut verloren. Merkwürdig.</German>
 			<Russian>, но почему-то нет потерь крови. Странно.</Russian>
-			<Spanish> pero por alguna razón no perdí nada de sangre.  Extraño.</Spanish>
+			<Spanish> pero por alguna razón no perdí nada de sangre. Extraño.</Spanish>
 			<French> mais étrangement je n&apos;ai pas perdu de sang. Étrange.</French>
-			<Czech> ale z nějakého důvodu jsem neztratil žádnou krev.  Divné.</Czech>
+			<Czech> ale z nějakého důvodu jsem neztratil žádnou krev. Divné.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_5_6">
 			<English> but I&apos;m physically pale from loss of blood.</English>
@@ -8236,27 +8241,27 @@
 			<Czech>, a jsem plně zdráv.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_6_1">
-			<English>Good thing I&apos;ve got a blood bag on me.  Now if only there was someone who could hook me up...</English>
-			<German>Zum Glück habe ich eine Bluttransfusion bei mir. Wenn ich nur jemanden finden wuerde, der mir die Infusion legen könnte ...</German>
+			<English>Good thing I&apos;ve got a blood bag on me. Now if only there was someone who could hook me up...</English>
+			<German>Zum Glück habe ich eine Blutkoserve bei mir. Wenn ich nur jemanden finden würde, der mir die Infusion legen könnte...</German>
 			<Russian>Хорошо, что у меня есть пакет крови. Если б кто был рядом, чтобы сделать переливание...</Russian>
-			<Spanish>La buena noticia es que tengo una bolsa de sangre conmigo.  Tan solo si hubiera alguien que pudiera hacerme la transfusión...</Spanish>
-			<French>Heureusement j&apos;ai une poche de sang.  Maintenant si seulement quelqu&apos;un pouvait venir m&apos;assister...</French>
+			<Spanish>La buena noticia es que tengo una bolsa de sangre conmigo. Tan solo si hubiera alguien que pudiera hacerme la transfusión...</Spanish>
+			<French>Heureusement j&apos;ai une poche de sang. Maintenant si seulement quelqu&apos;un pouvait venir m&apos;assister...</French>
 			<Czech>Dobrá věc je, že jsem našel krevní vak. Kéž by tady teď byl někdo, kdo by mi pomohl při transfúzi.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_6_2">
-			<English>Good thing I&apos;ve got a blood bag in my backpack.  Now if only there was someone who could hook me up...</English>
-			<German>Zum Glück habe ich eine Bluttransfusion im Rucksack. Wenn ich nur jemanden finden würde, der mir die Infusion legen könnte ...</German>
+			<English>Good thing I&apos;ve got a blood bag in my backpack. Now if only there was someone who could hook me up...</English>
+			<German>Zum Glück habe ich eine Blutkoserve im Rucksack. Wenn ich nur jemanden finden würde, der mir die Infusion legen könnte...</German>
 			<Russian>Хорошо, что у меня есть пакет крови в рюкзаке. Если б кто был рядом, чтобы сделать переливание...</Russian>
-			<Spanish>La buena noticia es que tengo una bolsa de sangre en la mochila.  Tan solo si hubiera alguien que pudiera hacerme la transfusión...</Spanish>
-			<French>Heureusement j&apos;ai une poche de sang dans mon sac.  Maintenance si seulement quelqu&apos;un pouvait venir m&apos;assister...</French>
+			<Spanish>La buena noticia es que tengo una bolsa de sangre en la mochila. Tan solo si hubiera alguien que pudiera hacerme la transfusión...</Spanish>
+			<French>Heureusement j&apos;ai une poche de sang dans mon sac. Maintenance si seulement quelqu&apos;un pouvait venir m&apos;assister...</French>
 			<Czech>Dobrá věc je, že mám v batohu krevní sáček. Kéž by tady teď byl někdo, kdo by mi pomohl při transfúzi.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_6_3">
-			<English>I really need to get a transfusion from somewhere.  If only I had a blood bag.</English>
-			<German>Ich brauche wirklich eine Blutspende. Wenn ich nur eine Transfusion bei mir hätte ...</German>
+			<English>I really need to get a transfusion from somewhere. If only I had a blood bag.</English>
+			<German>Ich brauche wirklich eine Blutspende. Wenn ich nur eine Blutkonserve bei mir hätte...</German>
 			<Russian>Мне действительно необходимо переливание. Если бы у меня был пакет крови.</Russian>
-			<Spanish>Realmente necesito obtener una transfusión de algún lado.  Si solo tuviera una bolsa de sangre...</Spanish>
-			<French>J&apos;ai vraiment besoin d&apos;une transfusion.  Si seulement j&apos;avais une poche de sang.</French>
+			<Spanish>Realmente necesito obtener una transfusión de algún lado. Si solo tuviera una bolsa de sangre...</Spanish>
+			<French>J&apos;ai vraiment besoin d&apos;une transfusion. Si seulement j&apos;avais une poche de sang.</French>
 			<Czech>Opravdu bych potřeboval krevní transfúzi. Kéž bych měl krevní vak.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_7_1">
@@ -8279,11 +8284,11 @@
 		</Key>
 		<Key ID="str_playerstats_journal_7_3">
 			<!-- %1 flashlight name (Night) -->
-			<English>I&apos;ve got a %1 which is perfect for seeing in this dark.  I guess other survivors can see me flashing it about though.  Not sure if that&apos;s a good thing or not given the circumstances.</English>
-			<German>Meine %1 ist perfekt, um in dieser Dunkelheit zu sehen. Wahrscheinlich sehen mich andere überlebende, während ich so herumleuchte. Ich bin mir noch nicht sicher, ob das unter diesen Umständen gut oder schlecht ist.</German>
+			<English>I&apos;ve got a %1 which is perfect for seeing in this dark. I guess other survivors can see me flashing it about though. Not sure if that&apos;s a good thing or not given the circumstances.</English>
+			<German>Meine %1 ist perfekt, um in dieser Dunkelheit zu sehen. Wahrscheinlich sehen mich andere Überlebende, während ich so herumleuchte. Ich bin mir noch nicht sicher, ob das unter diesen Umständen gut oder schlecht ist.</German>
 			<Russian>У меня есть %1 - прекрасно помогает видеть в этой темноте. Однако другие выжившие смогут заметить без проблем. Не уверен, что это хорошо в текущих обстоятельствах.</Russian>
-			<Spanish>Tengo una %1 que es perfecta para ver en la oscuridad.  Sin embargo supongo que otros supervivientes puedan verme iluminar con ella.  No estoy seguro si es una buena idea o no dadas las circunstancias.</Spanish>
-			<French>J&apos;ai une %1 qui est super pour voir dans le noir.  Mais les autres survivants doivent me voir l&apos;utiliser.  Pas sûr que cela soit un bonne idée étant données les circonstances</French>
+			<Spanish>Tengo una %1 que es perfecta para ver en la oscuridad. Sin embargo supongo que otros supervivientes puedan verme iluminar con ella. No estoy seguro si es una buena idea o no dadas las circunstancias.</Spanish>
+			<French>J&apos;ai une %1 qui est super pour voir dans le noir. Mais les autres survivants doivent me voir l&apos;utiliser. Pas sûr que cela soit un bonne idée étant données les circonstances</French>
 			<Czech>Mám %1, což mi ulehčí život ve tmě. Hádám ale, že jakmile ji zapnu, uvidí mě i ostatní. Musím popřemýšlet, zda to za to riziko stojí.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_7_4">
@@ -8299,18 +8304,18 @@
 			<!-- %1 weapon name -->
 			<English>Good news is I&apos;m packing a %1 and I&apos;ve got some ammo for it.</English>
 			<German>Die gute Nachricht: Ich habe eine %1 und etwas Munition.</German>
-			<Russian>Хорошие новости - у меня есть  %1 и я добыл немного патронов.</Russian>
+			<Russian>Хорошие новости - у меня есть %1 и я добыл немного патронов.</Russian>
 			<Spanish>Por suerte llevo una %1 con algo de munición para ella.</Spanish>
 			<French>Bonne nouvelle, je transporte un(e) %1 avec des munitions.</French>
 			<Czech>Dobrá zpráva je, že mám %1 a dokonce i s nějakou municí.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_7_6">
 			<!-- %1 weapon name -->
-			<English>Good news is I&apos;m packing a %1 and I&apos;ve got some ammo for it.  I should probably reload it though seeing as it&apos;s empty.</English>
-			<German>Die gute Nachricht: Ich habe eine %1 und etwas Munition. Aber ich sollte wohl nachladen, das Magazin ist leer ...</German>
-			<Russian>Хорошие новости - у меня есть  %1 и я добыл немного патронов..  Стоит переснарялить магазины.</Russian>
-			<Spanish>Por suerte llevo una %1 con algo de munición para ella.  Aunque debería recargarla porque la estoy viendo sin munición.</Spanish>
-			<French>Bonne nouvelle je transporte un %1 avec des munitions.  Je devrais le recharger car il est vide</French>
+			<English>Good news is I&apos;m packing a %1 and I&apos;ve got some ammo for it. I should probably reload it though seeing as it&apos;s empty.</English>
+			<German>Die gute Nachricht: Ich habe eine %1 und etwas Munition. Aber ich sollte wohl nachladen, das Magazin ist leer.</German>
+			<Russian>Хорошие новости - у меня есть %1 и я добыл немного патронов.. Стоит переснарялить магазины.</Russian>
+			<Spanish>Por suerte llevo una %1 con algo de munición para ella. Aunque debería recargarla porque la estoy viendo sin munición.</Spanish>
+			<French>Bonne nouvelle je transporte un %1 avec des munitions. Je devrais le recharger car il est vide</French>
 			<Czech>Dobrá zpráva je, že mám %1 a i nějakou munici. Možná bych měl přebít, abych zjistit, kolik je v zásobníku nábojů.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_7_7">
@@ -8323,11 +8328,11 @@
 			<Czech>Dobrá zpráva je, že jsem našel %1, ale žádná munice k tomu.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_7_8">
-			<English>For some reason I think it&apos;s a good idea to wander about without arming myself.  Maybe I should try and find a weapon.</English>
-			<German>Aus unerfindlichen Gründen halte ich es für eine gute Idee, unbewaffnet herumzulaufen. Vielleicht sollte ich nach einer Waffe suchen.</German>
+			<English>For some reason I think it&apos;s a good idea to wander about without arming myself. Maybe I should try and find a weapon.</English>
+			<German>Irgendwie halte ich es für eine gute Idee, unbewaffnet herumzulaufen. Vielleicht sollte ich nach einer Waffe suchen.</German>
 			<Russian>Сдается, не очень разумно бродить беззащитным. Стоит поискать оружие.</Russian>
-			<Spanish>Por alguna razón, creo que es una buena idea vagar sin armarme.  Tal vez debería tratar de encontrar un arma.</Spanish>
-			<French>Je pense qu&apos;il est bon d&apos;errer sans être armé.  Peut-être que je devrais tout de même chercher une arme.</French>
+			<Spanish>Por alguna razón, creo que es una buena idea vagar sin armarme. Tal vez debería tratar de encontrar un arma.</Spanish>
+			<French>Je pense qu&apos;il est bon d&apos;errer sans être armé. Peut-être que je devrais tout de même chercher une arme.</French>
 			<Czech>Myslím si, že chodit tady beze zbraně je špatný nápad. Možná bych si měl nějakou najít, ať nejsem jenom kachna pro ostatní.</Czech>
 		</Key>
 		<Key ID="str_playerstats_journal_month_1">
@@ -8434,7 +8439,7 @@
 			<Spanish>Honda Accord Hatchback</Spanish>
 			<French>Honda Accord Hatchback</French>
 			<Czech>Stará Honda Accord v hatchback verzi</Czech>
-			<German>alter Kleinwagen</German>
+			<German>Alter Kleinwagen</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SEDAN">
 			<English>Sedan</English>
@@ -8522,7 +8527,7 @@
 			<Russian>Обломки UH-1Y</Russian>
 			<Spanish>UH-1Y Estrellado</Spanish>
 			<Czech>Havarovaný UH-1Y</Czech>
-			<German>zerstoerter UH-1Y</German>
+			<German>Zerstörter UH-1Y</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH60_WRECK">
 			<English>UH-60 Wreck</English>
@@ -8578,7 +8583,7 @@
 			<Russian>Схрон ++++</Russian>
 			<Spanish>Escondite ++++</Spanish>
 			<Czech>Skrýš ++++</Czech>
-			<German>Lagergrube++++</German>
+			<German>Lagergrube ++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED">
 			<English>Stash Medium</English>
@@ -9279,49 +9284,49 @@
 			<Russian>Содержит деревянный забор ур.1</Russian>
 			<French>Pièces palissade niv.1</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 1)</Czech>
-			<German>beinhaltet Holzzaun (Level 1)</German>
+			<German>beinhaltet Holzzaun (Stufe 1)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox2">
 			<English>Contains WoodenFence lvl.2</English>
 			<Russian>Содержит деревянный забор ур.2</Russian>
 			<French>Pièces palissade niv.2</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 2)</Czech>
-			<German>beinhaltet Holzzaun (Level 2)</German>
+			<German>beinhaltet Holzzaun (Stufe 2)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox3">
 			<English>Contains WoodenFence lvl.3</English>
 			<Russian>Содержит деревянный забор ур.3</Russian>
 			<French>Pièces palissade niv.3</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 3)</Czech>
-			<German>beinhaltet Holzzaun (Level 3)</German>
+			<German>beinhaltet Holzzaun (Stufe 3)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox4">
 			<English>Contains WoodenFence lvl.4</English>
 			<Russian>Содержит деревянный забор ур.4</Russian>
 			<French>Pièces palissade niv.4</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 4)</Czech>
-			<German>beinhaltet Holzzaun (Level 4)</German>
+			<German>beinhaltet Holzzaun (Stufe 4)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox5">
 			<English>Contains WoodenFence lvl.5</English>
 			<Russian>Содержит деревянный забор ур.5</Russian>
 			<French>Pièces palissade niv.5</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 5</Czech>
-			<German>beinhaltet Holzzaun (Level 5)</German>
+			<German>beinhaltet Holzzaun (Stufe 5)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox6">
 			<English>Contains WoodenFence lvl.6</English>
 			<Russian>Содержит деревянный забор ур.6</Russian>
 			<French>Pièces palissade niv.6</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 6)</Czech>
-			<German>beinhaltet Holzzaun (Level 6)</German>
+			<German>beinhaltet Holzzaun (Stufe 6)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox7">
 			<English>Contains WoodenFence lvl.7</English>
 			<Russian>Содержит деревянный забор ур.7</Russian>
 			<French>Pièces palissade niv.7</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 7)</Czech>
-			<German>beinhaltet Holzzaun (Level 7)</German>
+			<German>beinhaltet Holzzaun (Stufe 7)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFence_base">
 			<English>Wooden Fence</English>
@@ -9712,7 +9717,7 @@
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_OPENGATE">
 			<English>Open Gate</English>
-			<German>Open Gate</German>
+			<German>Tor öffnen</German>
 			<Russian>Открыть</Russian>
 			<Spanish>Open Gate</Spanish>
 			<Dutch>Open Gate</Dutch>
@@ -9721,7 +9726,7 @@
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_CLOSEGATE">
 			<English>Close Gate</English>
-			<German>Close Gate</German>
+			<German>Tor schließen</German>
 			<Russian>Закрыть</Russian>
 			<Spanish>Close Gate</Spanish>
 			<Dutch>Close Gate</Dutch>
@@ -9730,7 +9735,7 @@
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_SETLOCKCODE">
 			<English>Set Lock Code</English>
-			<German>Set Lock Code</German>
+			<German>Zugangscode setzen</German>
 			<Russian>Установить код</Russian>
 			<Spanish>Set Lock Code</Spanish>
 			<Dutch>Set Lock Code</Dutch>
@@ -9757,7 +9762,7 @@
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCKGATE">
 			<English>Unlock Gate</English>
-			<German>Unlock Gate</German>
+			<German>Tor aufschließen</German>
 			<Russian>Разблокировать</Russian>
 			<Spanish>Unlock Gate</Spanish>
 			<French>Unlock Gate</French>
@@ -9765,7 +9770,7 @@
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_LOCKGATE">
 			<English>Lock Gate</English>
-			<German>Lock Gate</German>
+			<German>Tor abschließen</German>
 			<Russian>Заблокировать</Russian>
 			<Spanish>Lock Gate</Spanish>
 			<French>Lock Gate</French>
@@ -9773,7 +9778,7 @@
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_BREAKIN">
 			<English>Break In</English>
-			<German>Break In</German>
+			<German>Einbrechen</German>
 			<Russian>Взломать</Russian>
 			<Spanish>Break In</Spanish>
 			<Dutch>Break In</Dutch>
@@ -10027,10 +10032,10 @@
 			<English>AK-74 Kobra SD</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_KOBRA_NAME">
-			<English>AK-74 GP-25  Kobra</English>
+			<English>AK-74 GP-25 Kobra</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_KOBRA_SD_NAME">
-			<English>AK-74 GP-25  Kobra SD</English>
+			<English>AK-74 GP-25 Kobra SD</English>
 		</Key>
 		
 		<Key ID="STR_DZ_WPN_AK74_PSO1_NAME">
@@ -10040,10 +10045,10 @@
 			<English>AK-74 PSO-1 SD</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_PSO1_NAME">
-			<English>AK-74 GP-25  PSO-1</English>
+			<English>AK-74 GP-25 PSO-1</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_PSO1_SD_NAME">
-			<English>AK-74 GP-25  PSO-1 SD</English>
+			<English>AK-74 GP-25 PSO-1 SD</English>
 		</Key>
 		
 		
@@ -10613,6 +10618,14 @@
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
+		<Key ID="str_success_gutted_zombie">
+			<English>%1 has been gutted, zombie parts are now on the carcass</English>
+			<German>Du hast den Zombie (%1) ausgenommen und kannst das Fleisch jetzt abschneiden.</German>
+			<Russian>Вы разделали: %1, куски плоти лежат на трупе</Russian>
+			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa</Spanish>
+			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
+			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
+		</Key>
 		<Key ID="str_actions_tamedog">
 			<English>Tame Dog</English>
 			<German>Hund zähmen</German>
