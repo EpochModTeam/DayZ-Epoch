@@ -18,7 +18,7 @@ if (_playerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessag
 	if (_x in items player) then {_knifeArray set [count _knifeArray, _x];};
 } count Dayz_Gutting;
 
-if ((count _knifeArray) < 1) exitWith {localize "str_cannotgut" call dayz_rollingMessages; DZE_ActionInProgress = false; };
+if ((count _knifeArray) < 1) exitWith {format[localize "str_cannotCraft",localize "STR_EQUIP_NAME_4"] call dayz_rollingMessages; DZE_ActionInProgress = false; };
 
 if ((count _knifeArray > 0) && !_hasHarvested) then {
 	private "_qty";
