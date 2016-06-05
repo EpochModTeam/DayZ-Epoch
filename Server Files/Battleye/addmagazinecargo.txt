@@ -1,11 +1,4 @@
 //new
-1 "" !="BoltSteel" !="WoodenArrow" !="5x_22_LR_17_HMR" !="10x_303" !="Binocular" !"item" !"trash" !"food" !"hand" !"part" !"rnd_" !"swing" !"skin" !"smoke"
-1 "Item" !="ItemSodaEmpty" !="ItemSodaPepsi" !="ItemBandage" !="ItemHeatPack" !="ItemMorphine" !="ItemWaterbottle" !="ItemWaterbottleUnfilled" !="ItemWaterbottleBoiled" !="ItemToolbox" !="ItemKnife" !="ItemWatch" !="ItemCompass" !="ItemJerrycan" !="ItemSodaCoke" !="ItemEpinephrine" !="ItemPainkiller" !="ItemBloodbag" !="ItemWire" !="ItemMatchbox" !="ItemMap" !="ItemAntibiotic" !="ItemFlashlightRed" !="ItemFlashlight" !="ItemJerrycanEmpty" !="ItemSodaMdew"
-1 "trash" !="TrashTinCan" !="TrashJackDaniels" !="ItemTrashToiletpaper" !="ItemTrashRazor"
-1 "food" !="FoodCanSardines" !="FoodSteakCooked" !="FoodCanFrankBeans" !="FoodSteakRaw" !="FoodCanPasta" !="FoodCanBakedBeans" !="FoodmeatRaw" !="FoodbeefRaw" !="FoodmuttonRaw" !="FoodchickenRaw" !="FoodrabbitRaw" !="FoodbaconRaw" !="FoodSteakCooked" !="FoodmeatCooked" !="FoodbeefCooked" !="FoodmuttonCooked" !="FoodchickenCooked" !="FoodrabbitCooked" !="FoodbaconCooked" !="FoodBioMeat" !="FoodCanUnlabeled" !="FoodPistachio" !="FoodNutmix" !="FoodMRE"
-1 "hand" !="HandChemBlue" !="HandChemRed" !="HandChemGreen" !="HandRoadFlare" 
-1 "part" !="PartFueltank" !="PartWoodPile" !="PartWheel" !="PartEngine" !="PartGeneric" !="PartGlass"
-1 "swing" !="Hatchet_Swing" !="Crowbar_Swing" !="Machete_Swing"
-1 "Skin"
-1 "smoke" !="SmokeShell" !="SmokeShellGreen" !="SmokeShellRed"
-1 "rnd" !="8Rnd_9x18_Makarov" !="30Rnd_545x39_AK" !="30Rnd_556x45_Stanag" !="30Rnd_762x39_AK47" !="7Rnd_45ACP_1911" !="6Rnd_45ACP" !="2Rnd_shotgun_74Slug" !="2Rnd_shotgun_74Pellets" !="8Rnd_B_Beneli_74Slug" !="8Rnd_B_Beneli_Pellets" !="15Rnd_9x19_M9" !="15Rnd_W1866_Slug" !="30Rnd_9x19_MP5" !="17Rnd_9x19_glock17"
+1 "" !^[0-9]+Rnd_|^Item|^Trash|^Food|^Fish|^Part|^Attachment_|^equip|swing$|^Hand|^(whole)?blood|^Skin !=Mosin_Nagant_Ammo|transfusionKit|TrapBear|emptyBloodBag|PipeBomb|5x_22_LR_17_HMR|10x_303|Crossbow_EX_Bolt !=Tranquiliser_Bolt !=Flare(White|Green)_(M203|GP25) !=SmokeShell(Red|Green)? !="" !=Quiver !=WoodenArrow !=CA_Magazine
+1 ^[0-9]+Rnd_ !=1Rnd_(((HE|Smoke)_(M203|GP25))|Arrow_Wood|Bolt_Explosive|Bolt_Tranquilizer) !=2Rnd_shotgun_74|2Rnd_12Gauge_(Slug|Pellets|Buck) !=5Rnd_762x51_M24|5Rnd_762x54_Mosin|5Rnd_17HMR|6Rnd_45ACP|7Rnd_45ACP_1911|10Rnd_762x54_SVD|75Rnd_545x39_RPK|75Rnd_762x39_RPK !=8Rnd_(9x18_Makarov(SD)?|((B_Beneli_|12Gauge_)(74Slug|Slug|Pellets|Buck))) !=10Rnd_303British !=12Rnd_Quiver_Wood !=15Rnd_(9x19_M9(SD)?|W1866_Slug) !=17Rnd_9x19_glock17(SD)? !=20Rnd_762x51_(DMR|FNFAL) !=30Rnd_(556x45_(STANAG|G36)(SD)?|545x39_AK(SD)?|9x19_(MP5(SD)?|UZI)|762x39_(AK47|SA58)) !=64Rnd_9x19(_SD)?_Bizon !=100Rnd_762x(51_M240|54_PK) !=[12]00Rnd_556x45_M249 !=50Rnd_762x54_UK59
+1=HandGrenade_Stone

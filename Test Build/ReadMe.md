@@ -15,9 +15,11 @@ Install instructions:
 
 6. Use the new MPMission from Server Files\MPMissions.
 
-7. Set verifySignatures = 0; in your test server config. Also move your filters out of the BattlEye folder for now or set BattlEye=0;
+7. Set verifySignatures = 0; in your test server config.
 
-8. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
+8. Use the new BattlEye filters from Server Files\Battleye.
+
+9. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
 Current Version: **EpochTest-106-JUNE_05_2016**
 
