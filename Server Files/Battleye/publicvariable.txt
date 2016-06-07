@@ -1,16 +1,3 @@
 //new
-5 !=(remExField|remExFP) !=(PVCDZ_obj_GutBody|drn_AskServerDynamicWeatherEventArgs|BIS_effects_gepv|dayzLoad|achievement|dayzFlies) !=PVDZ_(drg_(RaDrag|RaLW|RLact)|getTickTime|hlt_Bleed|obj_(Delete|Publish|RoadFlare|Destroy|Fire)|objgather_Delete|veh_Save|veh_SF) !=PVDZ_(plr_(Death|Discorem|Login[12]|LoginRecord|Save|SwitchMove)|Server(_changeOwner|_Simulation|StoreVar)|receiveVar|sec_atp) !=PVDZ_playerMedicalSync !=PVDZ_(send(|Unconscious)) !=PVDZ_Server_LogIt !=PVDZ_obj_Fire !=PVDZ_Server_process(Code|SetAccessCode) !=PVDZE_(obj_(Delete|Publish|Swap|Trade)|fullobj_Publish|maintainArea|veh_(Lock|Publish2|Upgrade)|log_lockUnlock|plr_(DeathB|FriendRQ|GutBodyZ|TradeMenu))
-1=PVDZ_drg_RaDrag
-1=PVDZ_hlt_Bleed
-1=BIS_effects_gepv
-1=PVDZ_obj_Destroy
-1=PVDZ_obj_Delete
-1=PVDZ_obj_Publish
-1=PVDZ_plr_Death
-1=PVDZ_plr_Discorem
-1=PVDZ_plr_LoginRecord
-1=PVDZ_sec_atp
-1=PVDZ_send
-1=PVDZ_Server_changeOwner
-1=PVDZ_receiveVar 
-1=PVDZ_veh_SF
+5 !=(remExField|remExFP) !=(PVCDZ_obj_GutBody|drn_AskServerDynamicWeatherEventArgs|BIS_effects_gepv|achievement|dayzFlies) !=PVDZ_(drg_(RaDrag|RaLW|RLact)|getTickTime|hlt_Bleed|obj_(Delete|Publish|RoadFlare|Destroy|Fire)|objgather_Delete|veh_Save|veh_SF) !=PVDZ_(plr_(Death|Login[12]|LoginRecord|Save|SwitchMove)|Server(_Simulation|StoreVar)|sec_atp) !=PVDZ_playerMedicalSync !=PVDZ_(send(|Unconscious)) !=PVDZ_Server_LogIt !=PVDZ_obj_Fire !=PVDZ_Server_process(Code|SetAccessCode) !=PVDZE_(obj_(Delete|Publish|Swap|Trade)|fullobj_Publish|maintainArea|veh_(Lock|Publish2|Upgrade)|log_lockUnlock|plr_(DeathB|FriendRQ|GutBodyZ|TradeMenu))
+1=BIS_effects_gepv|PVDZ_(drg_RaDrag|hlt_Bleed|obj_Delete|obj_Destroy|obj_Publish|plr_Death|plr_LoginRecord|sec_atp|send|veh_SF)
