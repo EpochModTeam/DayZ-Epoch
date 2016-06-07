@@ -176,7 +176,7 @@
 		<Key ID="str_actions_self_10">
 			<English>Fill FuelCan</English>
 			<German>Kraftstoffkanister füllen</German>
-			<Russian>Заполните FuelCan</Russian>
+			<Russian>Наполнить канистры</Russian>
 			<Spanish>Rellene FuelCan</Spanish>
 			<French>remplissez FuelCan</French>
 			<Czech>Vyplňte FuelCan</Czech>
@@ -248,7 +248,7 @@
 		<Key ID="str_actions_medical_06_splint">
 			<English>Apply Splint</English>
 			<German>Schiene anlegen</German>
-			<Russian>Применить шину</Russian>
+			<Russian>Зафиксировать</Russian>
 			<Spanish>Aplicar Férula</Spanish>
 			<French>Appliquer Splint</French>
 			<Czech>Použít dlahu</Czech>
@@ -735,7 +735,7 @@
 		<Key ID="str_actions_medical_transfusion_failed_transfusionkit">
 			<English>Transfusion failed. Missing Transfusion Kit!</English>
 			<German>Transfusion fehlgeschlagen! Transfusionsbesteck fehlt!</German>
-			<Russian>Переливание отменено, отсутствует набор для переливания!</Russian>
+			<Russian>Переливание отменено. Отсутствует набор для переливания!</Russian>
 			<Spanish>Transfusion failed. Missing Transfusion Kit!</Spanish>
 			<French>Transfusion failed. Missing Transfusion Kit!</French>
 			<Czech>Transfúze selhala, chybí transfúzní souprava!</Czech>
@@ -944,7 +944,7 @@
 		<Key ID="STR_TAKE_MORPHINE">
 			<English>Take Morphine</English>
 			<German>Morphin spritzen</German>
-			<Russian>Принять</Russian>
+			<Russian>Вколоть</Russian>
 			<Spanish>Inyectarse Morfina</Spanish>
 			<French>Prendre Morphine</French>
 			<Czech>Vzít si morfium</Czech>
@@ -2831,7 +2831,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HerbalDrink">
 			<English>Blueprint to create a Herbal Drink. Required - 1 Water bottle boiled and one herb box.</English>
-			<Russian>Инструкция по приготовлению травяного напитка. Требуется - 1 бутылка воды кипяченой и коробка трав.</Russian>
+			<Russian>Рецепт приготовления травяного напитка. Требуется: бутылка кипяченой воды и коробка трав.</Russian>
 			<Spanish>Blueprint para crear una bebida a base de plantas. Requerido - 1 Botella de agua hervida y una caja de hierbas.</Spanish>
 			<French>Blueprint pour créer une boisson à base de plantes. Required - 1 bouteille d'eau bouillie et une boîte d'herbe.</French>
 			<Czech>Blueprint vytvořit Herbal drink. Povinné - 1 láhev vody vařené a jedna bylina box.</Czech>
@@ -3376,7 +3376,7 @@
 		<Key ID="str_info_missingtransfusionkit">
 			<English>I seem to be missing a transfusion kit.</English>
 			<German>Dazu fehlt dir das nötige Transfusionsbesteck.</German>
-			<Russian>Похоже требуется набор для переливания.</Russian>
+			<Russian>Похоже отсутствует набор для переливания.</Russian>
 			<Spanish>Me parece que falta un kit de transfusión.</Spanish>
 			<French>Il me semble qu&apos;il manque un kit de transfusion.</French>
 			<Czech>Zdá se, že chybí transfúzní souprava.</Czech>
@@ -4226,7 +4226,7 @@
 		</Key>
 		<Key ID="STR_MAG_CONV_45ACP_Revolver">
 			<English>Combine for Revolver</English>
-			<Russian>в патроны для револьвера</Russian>
+			<Russian>в обойму рев.</Russian>
 			<German>In Revolver-Trommel umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_45ACP_M1911">
@@ -7301,6 +7301,7 @@
 		</Key>
 		<Key ID="str_mining_no_rocks">
 			<English>Cannot find any rocks around.</English>
+			<Russian>Рядом нет камней.</Russian>
 			<Czech>V blízkosti nejsou žádné skály.</Czech>
 			<German>Es befinden sich keine Felsen in der Nähe.</German>
 		</Key>
@@ -7907,7 +7908,7 @@
 		<Key ID="STR_UI_GENDER_TITLE">
 			<English>SELECT YOUR GENDER</English>
 			<German>WÄHLE DEIN GESCHLECHT</German>
-			<Russian>Выберите свой пол</Russian>
+			<Russian>Выберите пол</Russian>
 			<Spanish>SELECCIONE SU GÉNERO</Spanish>
 			<French>HOMME OU FEMME ?</French>
 			<Czech>VYBERTE SI POHLAVÍ</Czech>
@@ -8945,7 +8946,7 @@
 		</Key>
 		<Key ID="STR_BLD_name_ItemStone">
 			<English>Rough Stone</English>
-			<Russian>Обработанный камень</Russian>
+			<Russian>Необработанный камень</Russian>
 			<French>Pierres</French>
 			<Czech>Kameny</Czech>
 			<German>grober Stein</German>
@@ -9718,7 +9719,7 @@
 		<Key ID="STR_BLD_ACTIONS_OPENGATE">
 			<English>Open Gate</English>
 			<German>Tor öffnen</German>
-			<Russian>Открыть</Russian>
+			<Russian>Открыть ворота</Russian>
 			<Spanish>Open Gate</Spanish>
 			<Dutch>Open Gate</Dutch>
 			<French>Open Gate</French>
@@ -9727,7 +9728,7 @@
 		<Key ID="STR_BLD_ACTIONS_CLOSEGATE">
 			<English>Close Gate</English>
 			<German>Tor schließen</German>
-			<Russian>Закрыть</Russian>
+			<Russian>Закрыть ворота</Russian>
 			<Spanish>Close Gate</Spanish>
 			<Dutch>Close Gate</Dutch>
 			<French>Close Gate</French>
@@ -9745,7 +9746,7 @@
 		<Key ID="STR_BLD_ACTIONS_LOCKBUILD">
 			<English>Lock Build</English>
 			<German>Lock Build</German>
-			<Russian>Закрыть постройку</Russian>
+			<Russian>Заблокировать строительство</Russian>
 			<Spanish>Lock Build</Spanish>
 			<Dutch>Lock Build</Dutch>
 			<French>Lock Build</French>
@@ -9754,7 +9755,7 @@
 		<Key ID="STR_BLD_ACTIONS_UNLOCKBUILD">
 			<English>Unlock Build</English>
 			<German>Unlock Build</German>
-			<Russian>Открыть постройку</Russian>
+			<Russian>Разблокировать строительство</Russian>
 			<Spanish>Unlock Build</Spanish>
 			<Dutch>Unlock Build</Dutch>
 			<French>Unlock Build</French>
@@ -9763,7 +9764,7 @@
 		<Key ID="STR_BLD_ACTIONS_UNLOCKGATE">
 			<English>Unlock Gate</English>
 			<German>Tor aufschließen</German>
-			<Russian>Разблокировать</Russian>
+			<Russian>Отомкнуть ворота</Russian>
 			<Spanish>Unlock Gate</Spanish>
 			<French>Unlock Gate</French>
 			<Czech>Unlock Gate</Czech>
@@ -9771,7 +9772,7 @@
 		<Key ID="STR_BLD_ACTIONS_LOCKGATE">
 			<English>Lock Gate</English>
 			<German>Tor abschließen</German>
-			<Russian>Заблокировать</Russian>
+			<Russian>Замкнуть ворота</Russian>
 			<Spanish>Lock Gate</Spanish>
 			<French>Lock Gate</French>
 			<Czech>Lock Gate</Czech>
@@ -10014,41 +10015,53 @@
 		<!-- AK74 -->
 		<Key ID="STR_DZ_WPN_AK74_NAME">
 			<English>AK-74</English>
+			<Russian>АК-74</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_SD_NAME">
 			<English>AK-74 SD</English>
+			<Russian>АК-74 ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_NAME">
 			<English>AK-74 GP-25</English>
+			<Russian>АК-74 ГП-25</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_SD_NAME">
 			<English>AK-74 GP-25 SD</English>
+			<Russian>АК-74 ГП-25 ПБС</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_WPN_AK74_KOBRA_NAME">
 			<English>AK-74 Kobra</English>
+			<Russian>АК-74 Кобра</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_KOBRA_SD_NAME">
 			<English>AK-74 Kobra SD</English>
+			<Russian>АК-74 Кобра ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_KOBRA_NAME">
 			<English>AK-74 GP-25 Kobra</English>
+			<Russian>АК-74 ГП-25 Кобра</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_KOBRA_SD_NAME">
 			<English>AK-74 GP-25 Kobra SD</English>
+			<Russian>АК-74 ГП-25 Кобра ПБС</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_WPN_AK74_PSO1_NAME">
 			<English>AK-74 PSO-1</English>
+			<Russian>АК-74 ПСО-1</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_PSO1_SD_NAME">
 			<English>AK-74 PSO-1 SD</English>
+			<Russian>АК-74 ПСО-1 ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_PSO1_NAME">
 			<English>AK-74 GP-25 PSO-1</English>
+			<Russian>АК-74 ГП-25 ПСО-1</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AK74_GL_PSO1_SD_NAME">
 			<English>AK-74 GP-25 PSO-1 SD</English>
+			<Russian>АК-74 ГП-25 ПСО-1 ПБС</Russian>
 		</Key>
 		
 		
@@ -10056,15 +10069,19 @@
 		<!-- AKS74U -->
 		<Key ID="STR_DZ_WPN_AKS74U_NAME">
 			<English>AKS-74U</English>
+			<Russian>АКС-74У</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AKS74U_SD_NAME">
 			<English>AKS-74U SD</English>
+			<Russian>АКС-74У ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AKS74U_KOBRA_NAME">
 			<English>AKS-74U Kobra</English>
+			<Russian>АКС-74У Кобра</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AKS74U_KOBRA_SD_NAME">
 			<English>AKS-74U Kobra SD</English>
+			<Russian>АКС-74У Кобра ПБС</Russian>
 		</Key>
 		
 		
@@ -10072,12 +10089,15 @@
 		<!-- RPK74 -->
 		<Key ID="STR_DZ_WPN_RPK74_NAME">
 			<English>RPK-74</English>
+			<Russian>РПК-74</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK74_KOBRA_NAME">
 			<English>RPK-74 Kobra</English>
+			<Russian>РПК-74 Кобра</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK74_PSO1_NAME">
 			<English>RPK-74 PSO-1</English>
+			<Russian>РПК-74 ПСО-1</Russian>
 		</Key>
 		
 		
@@ -10085,12 +10105,15 @@
 		<!-- AKM -->
 		<Key ID="STR_DZ_WPN_AKM_NAME">
 			<English>AK-47M</English>
+			<Russian>АК-47М</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AKM_KOBRA_NAME">
 			<English>AK-47M Kobra</English>
+			<Russian>АК-47М Кобра</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AKM_PSO1_NAME">
 			<English>AK-47M PSO-1</English>
+			<Russian>АК-47М ПСО-1</Russian>
 		</Key>
 		
 		
@@ -10098,15 +10121,19 @@
 		<!-- RPK -->
 		<Key ID="STR_DZ_WPN_RPK_NAME">
 			<English>RPK</English>
+			<Russian>РПК</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK_DESC">
 			<English>Light machine gun&lt;br/&gt;Caliber: 7.62x39mm</English>
+			<Russian>Легкий пулемет&lt;br/&gt;Калибр: 7.62x39мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK_KOBRA_NAME">
 			<English>RPK Kobra</English>
+			<Russian>РПК Кобра</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK_PSO1_NAME">
 			<English>RPK PSO-1</English>
+			<Russian>РПК ПСО-1</Russian>
 		</Key>
 		
 		
@@ -10296,6 +10323,7 @@
 		<!-- PKM -->
 		<Key ID="STR_DZ_WPN_PKM_NAME">
 			<English>PKM</English>
+			<Russian>ПКМ</Russian>
 		</Key>
 		
 		
@@ -10303,9 +10331,11 @@
 		<!-- UK59 -->
 		<Key ID="STR_DZ_WPN_UK59_NAME">
 			<English>UK-59</English>
+			<Russian>UK-59</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_UK59_DESC">
-			<English>Chernarussian medium machine gun&lt;br/&gt;Caliber: 7.62x54mmR</English>
+			<English>Chernarussian medium machine gun&lt;br/&gt;Caliber: 7.62x54mm</English>
+			<Russian>Чернарусский средний пулемет&lt;br/&gt;Калибр: 7.62x54мм</Russian>
 		</Key>
 		
 		
@@ -10313,6 +10343,7 @@
 		<!-- SVD -->
 		<Key ID="STR_DZ_WPN_SVD_NAME">
 			<English>SVD</English>
+			<Russian>СВД</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SVD_GH_NAME">
 			<English>SVD Camo</English>
@@ -10323,30 +10354,39 @@
 		<!-- Mosin -->
 		<Key ID="STR_DZ_WPN_MOSIN_NAME">
 			<English>Mosin Nagant</English>
+			<Russian>Мосинка</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_FL_NAME">
 			<English>Mosin Nagant FL</English>
+			<Russian>Мосинка фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_NAME">
 			<English>Mosin Nagant Belt</English>
+			<Russian>Мосинка патр.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_FL_NAME">
 			<English>Mosin Nagant Belt FL</English>
+			<Russian>Мосинка патр. фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_NAME">
 			<English>Mosin Nagant PU</English>
+			<Russian>Мосинка ПУ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_FL_NAME">
 			<English>Mosin Nagant PU FL</English>
+			<Russian>Мосинка ПУ фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_NAME">
 			<English>Mosin Nagant PU Belt</English>
+			<Russian>Мосинка ПУ патр.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_FL_NAME">
 			<English>Mosin Nagant PU Belt FL</English>
+			<Russian>Мосинка ПУ патр. фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
+			<Russian>Магазинная винтовка, принятая на вооружение Русской Императорской армии ВС России в 1891 году.</Russian>
 		</Key>
 		
 		
@@ -10354,21 +10394,27 @@
 		<!-- Crossbow -->
 		<Key ID="STR_DZ_WPN_CROSSBOW_NAME">
 			<English>Crossbow</English>
+			<Russian>Арбалет</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_FL_NAME">
 			<English>Crossbow FL</English>
+			<Russian>Арбалет</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_NAME">
 			<English>Crossbow CCO</English>
+			<Russian>Арбалет CCO</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_FL_NAME">
 			<English>Crossbow CCO FL</English>
+			<Russian>Арбалет CCO фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_NAME">
 			<English>Crossbow Scoped</English>
+			<Russian>Арбалет приц.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_FL_NAME">
 			<English>Crossbow Scoped FL</English>
+			<Russian>Арбалет приц. фон.</Russian>
 		</Key>
 		
 		
@@ -10381,52 +10427,66 @@
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD">
 			<English>G17 SD Mag.</English>
+			<Russian>маг. G17 ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_762X39_AK47">
 			<English>30Rnd. AK-47</English>
+			<Russian>30п. АКМ</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_NAME">
 			<English>Tranquilizer bolt</English>
+			<Russian>Болт-транквилизатор</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_DESC">
 			<English>Crossbow bolt fitted with a sedative injector. Used to safely capture large animals.</English>
+			<Russian>Арбалетный болт с усыпляющей инъекцией. Используется для захвата крупных животных.</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_BOLT_EXP_NAME">
 			<English>Explosive bolt</English>
+			<Russian>Болт-взрывчатка</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_BOLT_EXP_DESC">
 			<English>Crossbow bolt fitted with an explosive head.</English>
+			<Russian>Арбалетный болт с зарядом взрывчатки. РЭМБО!</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_NAME">
 			<English>50Rnd. UK-59</English>
+			<Russian>50п. UK-59</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_DESC">
-			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: UK-59</English>
+			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: UK-59</English>
+			<Russian>Калибр: 7.62x54мм&lt;br/&gt;Патронов: 50&lt;br/&gt;Используется в: UK-59</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_NAME">
 			<English>75Rnd. RPK</English>
+			<Russian>75п. РПК</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 75&lt;br/&gt;Used in: RPK</English>
+			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Патронов: 75&lt;br/&gt;Используется в: РПК</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_545X39_RPK_NAME">
 			<English>75Rnd. RPK-74</English>
+			<Russian>75п. РПК-74</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_100RND_556X45_M249_NAME">
 			<English>100Rnd. M249</English>
+			<Russian>100п. M249</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_NAME">
 			<English>5Rnd. Mosin Nagant</English>
+			<Russian>5п. Мосинка</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_DESC">
 			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: Mosin Nagant</English>
+			<Russian>Калибр: 7.62x54mmR&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: Мосинка</Russian>
 		</Key>
 		
 		
@@ -10439,182 +10499,231 @@
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">
 			<English>Attach to primary</English>
+			<Russian>Уст. на осн.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACT_TO_SECONDARY">
 			<English>Attach to secondary</English>
+			<Russian>Уст. на доп.</Russian>
 		</Key>
 		
 		<!-- 9mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP9_NAME">
 			<English>9mm Suppressor</English>
+			<Russian>9мм глушитель</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP9_DESC">
 			<English>9mm Sound suppressor</English>
+			<Russian>ПБС для калибра 9мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP9_RMVE">
 			<English>Remove Suppressor</English>
+			<Russian>Снять глуш.</Russian>
 		</Key>
 		
 		<!-- 5.56mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP556_NAME">
 			<English>5.56mm Suppressor</English>
+			<Russian>5.56мм глушитель</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP556_DESC">
 			<English>5.56mm Sound suppressor</English>
+			<Russian>ПБС для калибра 5.56мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP556_RMVE">
 			<English>Remove Suppressor</English>
+			<Russian>Снять глуш.</Russian>
 		</Key>
 		
 		<!-- 5.45mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP545_NAME">
 			<English>5.45mm Suppressor</English>
+			<Russian>5.45мм глушитель</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP545_DESC">
 			<English>5.45mm Sound suppressor</English>
+			<Russian>ПБС для калибра 5.45мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP545_RMVE">
 			<English>Remove Suppressor</English>
+			<Russian>Снять глуш.</Russian>
 		</Key>
 		
 		<!-- CCO -->
 		<Key ID="STR_DZ_ATT_CCO_NAME">
 			<English>M68 CCO</English>
+			<Russian>M68 CCO</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_CCO_DESC">
 			<English>CompM2 Close Combat Optic&lt;br/&gt;Manufactured by Swedish Aimpoint AB.</English>
+			<Russian>Aimpoint CompM2 — компактный прицел для стрелкового оружия&lt;br/&gt;Произведен шведской компанией Aimpoint AB.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_CCO_RMVE">
 			<English>Remove CCO</English>
+			<Russian>Снять CCO</Russian>
 		</Key>
 		
 		<!-- Holo -->
 		<Key ID="STR_DZ_ATT_HOLO_NAME">
 			<English>EOTech 553 HWS</English>
+			<Russian>EOTech 553 HWS</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_HOLO_DESC">
 			<English>Holographic Weapon Sight&lt;br/&gt;Manufactured by American EOTech Inc.</English>
+			<Russian>Голографический прицел для стрелкового оружия&lt;br/&gt;Произведен американской компанией EOTech Inc.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_HOLO_RMVE">
 			<English>Remove Holo</English>
+			<Russian>Снять Holo</Russian>
 		</Key>
 		
 		<!-- ACOG -->
 		<Key ID="STR_DZ_ATT_ACOG_NAME">
 			<English>TA31A ACOG</English>
+			<Russian>TA31A ACOG</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_DESC">
 			<English>Advanced Combat Optical Gunsight&lt;br/&gt;Manufactured by American Trijicon Inc.</English>
+			<Russian>Армейский оптический прицел для ведения огня из стрелкового оружия на среднюю дальность&lt;br/&gt;Произведен американской компанией Trijicon Inc.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_RMVE">
 			<English>Remove ACOG</English>
+			<Russian>Снять ACOG</Russian>
 		</Key>
 		
 		<!-- Kobra -->
 		<Key ID="STR_DZ_ATT_KOBRA_NAME">
-			<English>Kobra Reflex Sight</English>
+			<English>Kobra EKP-1S-03</English>
+			<Russian>Кобра ЭКП-1С-03</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_DESC">
-			<English>Model EKP-1S-03</English>
+			<English>Red dot collimator sight&lt;br/&gt;Manufactured in Izhevsk Russia.</English>
+			<Russian>Электронный коллиматорный прицел&lt;br/&gt;Произведен росийской компанией ОАО «Ижевский мотозавод „Аксион-холдинг“».</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_RMVE">
 			<English>Remove Kobra</English>
+			<Russian>Снять Кобру</Russian>
 		</Key>
 		
 		<!-- PSO-1 -->
 		<Key ID="STR_DZ_ATT_PSO1_NAME">
 			<English>PSO-1 Scope</English>
+			<Russian>Прицел ПСО-1</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_PSO1_DESC">
-			<English>4x24 Sniper scope</English>
+			<English>Telescopic sight manufactured in Russia by the Novosibirsk instrument-making factory.</English>
+			<Russian>Прицел снайперский оптический — один из основных прицелов советского и российского снайперского вооружения.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_PSO1_RMVE">
 			<English>Remove PSO-1</English>
+			<Russian>Снять ПСО-1</Russian>
 		</Key>
 		
 		<!-- M203 -->
 		<Key ID="STR_DZ_ATT_M203_NAME">
 			<English>M203 grenade launcher</English>
+			<Russian>Подств.гранатомет M203</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_M203_DESC">
 			<English>Under-barrel grenade launcher</English>
+			<Russian>40-мм подствольный гранатомёт, разработанный в период 1967—1968 годов американской корпорацией AAI.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_M203_RMVE">
 			<English>Remove M203</English>
+			<Russian>Снять M203</Russian>
 		</Key>
 		
 		<!-- GP-25 -->
 		<Key ID="STR_DZ_ATT_GP25_NAME">
 			<English>GP-25 grenade launcher</English>
+			<Russian>Подств.гранатомет ГП-25</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_GP25_DESC">
 			<English>Under-barrel grenade launcher</English>
+			<Russian>40-мм подствольный гранатомёт, разработанный в период 1972—1978 годов в  Тульском оружейном заводе.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_GP25_RMVE">
 			<English>Remove GP-25</English>
+			<Russian>Снять ГП-25</Russian>
 		</Key>
 		
 		<!-- Rifle flashlight -->
 		<Key ID="STR_DZ_ATT_FL_RFL_NAME">
 			<English>Rifle flashlight</English>
+			<Russian>Оружейный фонарь</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_RFL_DESC">
 			<English>Rail-attachable rifle flashlight</English>
+			<Russian>Фонарь для установки на основное оружие</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_RFL_RMVE">
 			<English>Remove Flashlight</English>
+			<Russian>Снять фонарь</Russian>
 		</Key>
 		
 		<!-- Pistol flashlight -->
 		<Key ID="STR_DZ_ATT_FL_PST_NAME">
 			<English>Pistol flashlight</English>
+			<Russian>Пистолетный фонарь</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_PST_DESC">
 			<English>Rail-attachable pistol flashlight</English>
+			<Russian>Фонарь для установки на пистолеты</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_PST_RMVE">
 			<English>Remove Flashlight</English>
+			<Russian>Снять фонарь</Russian>
 		</Key>
 		
 		<!-- Ghillie -->
 		<Key ID="STR_DZ_ATT_GHIL_NAME">
 			<English>Small camo netting</English>
+			<Russian>Камуфляж (мал.)</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_GHIL_DESC">
 			<English>Assorted pieces of camo netting. Might be used to camouflage something small.</English>
+			<Russian>Разнообразные части камуфляжной сетки. Можно использовать для маскировки чего-нибудь небольшого.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_GHIL_RMVE">
 			<English>Remove Ghillie</English>
+			<Russian>Снять камуфл.</Russian>
 		</Key>
 		
 		<!-- PU Scope -->
 		<Key ID="STR_DZ_ATT_PU_NAME">
 			<English>PU-Scope</English>
+			<Russian>Прицел ПУ</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_PU_DESC">
 			<English>Standard issue Soviet sniper scope during World War II.&lt;br/&gt;Magnification: 3.5x</English>
+			<Russian>Советский оптический прицел, изначально созданный в 1940 году&lt;br/&gt;Кратность: 3.5х22</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_PU_RMVE">
 			<English>Remove Scope</English>
+			<Russian>Снять ПУ</Russian>
 		</Key>
 		
 		<!-- Cartridge belt -->
 		<Key ID="STR_DZ_ATT_BELT_NAME">
 			<English>Cartridge holder</English>
+			<Russian>Патронташ</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_DESC">
 			<English>Holds cartridges for easier access. Can be attached to the stock of a rifle.</English>
+			<Russian>Обеспечивает хранение и быстрый доступ к магазинам. Может быть прикреплен к прикладу.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_RMVE">
 			<English>Remove belt</English>
+			<Russian>Снять патр.</Russian>
 		</Key>
 		
 		<!-- SA58 RIS -->
 		<Key ID="STR_DZ_ATT_SA58RIS_NAME">
 			<English>SA-58 RIS upgrade kit</English>
+			<Russian>SA-58 комплект РСИ </Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SA58RIS_DESC">
 			<English>A Rail Integration System kit designed for the SA-58 assault rifle.</English>
+			<Russian>Комплект рельсовай системы интеграции разработанной для SA-58</Russian>
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
