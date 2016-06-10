@@ -12,7 +12,10 @@ poi_processObject = {
 	//if (!isNil "_tilt") then { _o setvectordirandup _tilt; /*diag_log [ _tilt, vectorDir _o, vectorUp _o];*/ };
 	_o setVariable ["", true]; // prevent network SV by loot/zeds spawner
 };
-_base = "\z\addons\dayz_code\system\mission\chernarus\security\";
-call compile preprocessFileLineNumbers (_base+"antiwallhack.sqf");
+
+if (toLower worldName == "chernarus") then {
+	_base = "\z\addons\dayz_code\system\mission\chernarus\security\";
+	call compile preprocessFileLineNumbers (_base+"antiwallhack.sqf");
+};
 //diag_log [ diag_tickTime, __FILE__, "Done security"];
 
