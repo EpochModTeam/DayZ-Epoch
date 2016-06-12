@@ -17600,5 +17600,94 @@
 		<Key ID="STR_EPOCH_BUILD_FAIL_TOO_FAR">
 			<English>Object is placed too far away from where you started building (within %1 meters)</English>
 		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_MANAGEDOOR">
+			<English>Manage Door</English>
+			<German>Tür verwalten</German>
+		</Key>
+		
+		<Key ID="STR_EPOCH_EYESCANNER_TITLE">
+			<English>Eye Scanner Terminal</English>
+			<German>Iris-Scanner</German>
+		</Key>
+		<Key ID="STR_EPOCH_EYESCANNER_SCAN">
+			<English>Eye Scan</English>
+			<German>Auge scannnen</German>
+		</Key>
+		<Key ID="STR_EPOCH_EYESCANNER_MANUAL">
+			<English>Manual Code</English>
+			<German>PIN manuell eingeben</German>
+		</Key>
+		<Key ID="STR_EPOCH_EYESCANNER_CANCEL">
+			<English>Cancel</English>
+			<German>Abbrechen</German>
+		</Key>
+		<Key ID="STR_EPOCH_EYESCANNER_SUCCESS">
+			<English>Eye Scan SUCCESS</English>
+			<German>Iris-Scan ERFOLGREICH</German>
+		</Key>
+		<Key ID="STR_EPOCH_EYESCANNER_FAILURE">
+			<English>Eye Scan FAILED</English>
+			<German>Iris-Scan FEHLGESCHLAGEN</German>
+		</Key>
+		<Key ID="STR_EPOCH_EYESCANNER_NOMANUAL">
+			<English>We do not allow manual codes.</English>
+			<German>Die manuelle Eingabe ist nicht erlaubt.</German>
+		</Key>
+		
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_TITLE">
+			<English>Door Management</English>
+			<German>Tür-Management</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_ADD">
+			<English>Add</English>
+			<German>Hinzufügen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_DELETE">
+			<English>Delete</English>
+			<German>Entfernen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_CLOSE">
+			<English>Close</English>
+			<German>Schliessen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_NEARBY">
+			<English>Humans Nearby</English>
+			<German>Spieler in der Nähe</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_FRIENDS">
+			<English>Door Friends</English>
+			<German>Tür-Freunde</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_NORIGHTS">
+			<English>You do not have the rights to manage.</English>
+			<German>Du darfst diese Tür nicht verwalten.</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_ADD_ALREADY">
+			<English>Already on the list.</English>
+			<German>Dieser Spieler ist schon auf der Liste.</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_ADD_MAXFRIENDS">
+			<English>Only %1 allowed.</English>
+			<German>Nur %1 erlaubt.</German>
+		</Key>
+		
+		<Key ID="STR_EPOCH_DOORS_OPEN">
+			<English>Open Door</English>
+			<German>Tür öffnen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORS_CLOSE">
+			<English>Close Door</English>
+			<German>Tür schliessen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORS_UNLOCK">
+			<English>Unlock Door</English>
+			<German>Tür aufschliessen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORS_LOCK">
+			<English>Lock Door</English>
+			<German>Tür abschliessen</German>
+		</Key>
+		
+		
 	</Package>
 </Project>

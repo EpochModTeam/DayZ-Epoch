@@ -180,6 +180,10 @@ if (_status == "ObjectStreamStart") then {
 			_object setVariable ["plotfriends", _inventory, true];
 		};
 
+		if( DZE_doorManagement && (typeOf (_object) in DZE_DoorsLocked) ) then {
+			_object setVariable ["doorfriends", _inventory, true];
+		};
+
 		dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];
 		// Fix for leading zero issues on safe codes after restart
 		_lockable = if (isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {getNumber (configFile >> "CfgVehicles" >> _type >> "lockable")} else {0};
@@ -209,7 +213,7 @@ if (_status == "ObjectStreamStart") then {
 			clearWeaponCargoGlobal _object;
 			clearMagazineCargoGlobal _object;
 			clearBackpackCargoGlobal _object;
-			if( (count _inventory > 0) && !(typeOf( _object) == "Plastic_Pole_EP1_DZ") ) then {
+			if( (count _inventory > 0) && !(typeOf( _object) == "Plastic_Pole_EP1_DZ") && !(typeOf( _object) in DZE_DoorsLocked) ) then {
 				if (_type in DZE_LockedStorage) then {
 					_object setVariable ["WeaponCargo",(_inventory select 0),true];
 					_object setVariable ["MagazineCargo",(_inventory select 1),true];

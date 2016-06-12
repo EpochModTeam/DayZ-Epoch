@@ -75,6 +75,14 @@ DZE_buildMaxMoveDistance = 10; // Max distance player can walk from start positi
 DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower object from start position when building.
 
 
+/////////// doorManagement Variables ///////////
+// Let owner and plot friends and door friends manage door access
+DZE_doorManagement = true;
+DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every door's management menu and open it
+DZE_doorManagementAllowManualCode = true; //Allows opening doors still using PIN
+//DZE_doorManagementHarderPenalty = true; // Cen's Penalty: Flashes screen white. And kicks player to lobby if failed more then (random number between 4 and 14) times.
+DZE_doorManagementMaxFriends = 10; //Maximum number of friends allowed on a door. (default 10)
+
 /* 
 	Developers:
 	

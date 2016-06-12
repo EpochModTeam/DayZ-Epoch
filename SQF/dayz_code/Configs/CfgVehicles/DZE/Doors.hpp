@@ -299,7 +299,7 @@ class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -308,7 +308,7 @@ class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0];";
 		};
@@ -340,7 +340,7 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -350,31 +350,31 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_door"", 0]";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName="Lock Door";
+			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			statement="this animate [""Open_hinge"", 1]";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition=" !keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""EyeScanner"";} else {createdialog ""ComboLockUI"";};";
 		};
 	};
 };
@@ -399,7 +399,7 @@ class Land_DZE_LargeWoodDoor: Land_DZE_WoodDoor_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -408,7 +408,7 @@ class Land_DZE_LargeWoodDoor: Land_DZE_WoodDoor_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};
@@ -440,7 +440,7 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -450,31 +450,31 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_door"", 0]";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName="Lock Door";
+			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			statement="this animate [""Open_hinge"", 1]";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition=" !keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""EyeScanner"";} else {createdialog ""ComboLockUI"";};";
 		};
 	};
 };
@@ -499,7 +499,7 @@ class Land_DZE_GarageWoodDoor: Land_DZE_WoodDoor_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -508,7 +508,7 @@ class Land_DZE_GarageWoodDoor: Land_DZE_WoodDoor_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};
@@ -540,7 +540,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -550,31 +550,31 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_door"", 0]";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName="Lock Door";
+			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			statement="this animate [""Open_hinge"", 1]";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition=" !keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""EyeScanner"";} else {createdialog ""ComboLockUI"";};";
 		};
 	};
 };
@@ -605,7 +605,7 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -615,31 +615,31 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement="this animate [""Open_door"", 0]";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName="Lock Door";
+			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement="this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
 			statement="this animate [""Open_latch"", 1]";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition=" !keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""EyeScanner"";} else {createdialog ""ComboLockUI"";};";
 		};
 	};
 };
@@ -665,7 +665,7 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -674,7 +674,7 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};
@@ -708,7 +708,7 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -718,31 +718,31 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement="this animate [""Open_door"", 0]";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName="Lock Door";
+			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement="this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition="( !keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
 			statement="this animate [""Open_latch"", 1]";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName="Unlock Door";
+			displayName=$STR_EPOCH_DOORS_UNLOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 0)";
 			condition=" !keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
-			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;createdialog ""ComboLockUI""";
+			statement="dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""EyeScanner"";} else {createdialog ""ComboLockUI"";};";
 		};
 	};
 };
@@ -765,10 +765,10 @@ class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 	
 	/* The entry to the actionmenu */
 	class UserActions
-	{			
+	{
 		class Open_Door
 		{
-			displayName="Open Door";
+			displayName=$STR_EPOCH_DOORS_OPEN;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -777,7 +777,7 @@ class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName="Close Door";
+			displayName=$STR_EPOCH_DOORS_CLOSE;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};

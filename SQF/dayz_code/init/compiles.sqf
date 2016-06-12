@@ -190,6 +190,12 @@ if (!isDedicated) then {
 	PlotObjects = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotObjects.sqf";
 	PlotPreview = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf";
 	MaintainPlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\maintain_area.sqf"; // use maintain_areaSC.sqf for single currency
+	DoorGetFriends = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorGetFriends.sqf";
+	DoorNearbyHumans = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorNearbyHumans.sqf";
+	DoorAddFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorAddFriend.sqf";
+	DoorRemoveFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorRemoveFriend.sqf";
+	player_manageDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf";
+	player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";
 	
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];

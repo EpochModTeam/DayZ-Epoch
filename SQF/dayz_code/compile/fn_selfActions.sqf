@@ -767,6 +767,24 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_SurrenderedGear = -1;
 	};
 
+	// Allow manage door
+	if( DZE_doorManagement && (_typeOfCursorTarget in DZE_DoorsLocked) ) then {
+		// Check if player is door friend
+		_isDoorFriend = false;
+		_doorFriends = _cursorTarget getVariable ["doorfriends",[]];
+		{
+			if((_x select 0) == dayz_playerUID) then { _isDoorFriend = true; };
+		} forEach _doorFriends;
+		// Check if player is owner or plot friend
+		_isowner = [player, _cursorTarget] call FNC_check_owner;
+		if((s_player_manageDoor < 0) && (_isDoorFriend || (_isowner select 0) || (_isowner select 1)) ) then {
+			s_player_manageDoor = player addAction [format["<t color='#0059FF'>%1</t>", localize "STR_EPOCH_ACTIONS_MANAGEDOOR"], "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf", _cursorTarget, 5, false];
+		};
+	} else {
+		player removeAction s_player_manageDoor;
+		s_player_manageDoor = -1;
+	};
+
 	//Allow owner to unlock vault
 	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3} && {!keypadCancel}) then {
 		if (s_player_unlockvault < 0) then {
@@ -809,7 +827,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_lockvault = -1;
 	};
 
-    //Player Deaths
+	//Player Deaths
 	if (_typeOfCursorTarget == "Info_Board_EP1") then {
 		if (s_player_information < 0) then {
 			s_player_information = player addAction [localize "STR_EPOCH_ACTIONS_MURDERS", "\z\addons\dayz_code\actions\list_playerDeaths.sqf",[], 7, false, true];
@@ -1170,6 +1188,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_fuelauto = -1;
 	player removeAction s_player_fuelauto2;
 	s_player_fuelauto2 = -1;
+	player removeAction s_player_manageDoor;
+	s_player_manageDoor = -1;
 };
 
 //Dog actions on player self
