@@ -212,7 +212,7 @@ if (isPlayer cursorTarget) then {
 			if (_unit isKindOf "Man") then {
 				// should only fire if cursor target is man and not vehicle
 				_charID = _unit getVariable ["CharacterID", "0"];
-				if (DZE_plotforLife) then {
+				if (DZE_permanentPlot) then {
 					_charID = [_unit] call FNC_GetPlayerUID;
 				};
 				_friendlies = [player, _unit] call FNC_check_owner;

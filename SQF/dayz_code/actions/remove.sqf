@@ -15,7 +15,7 @@ _objOwnerID = "0";
 _playerUID = "1";
 _isOwnerOfObj = false;
 
-if (DZE_plotforLife) then {
+if (DZE_permanentPlot) then {
 	_objOwnerID = _obj getVariable["ownerPUID","0"];
 	_playerUID = [player] call FNC_GetPlayerUID;
 	_isOwnerOfObj = (_objOwnerID == _playerUID);

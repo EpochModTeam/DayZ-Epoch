@@ -176,7 +176,7 @@ if (_status == "ObjectStreamStart") then {
 		_object setVariable ["ObjectID", _idKey, true];
 		_object setVariable ["OwnerPUID", _ownerPUID, true];
 
-		if( DZE_plotManagement && (typeOf (_object) == "Plastic_Pole_EP1_DZ") ) then {
+		if (DZE_permanentPlot && (typeOf _object == "Plastic_Pole_EP1_DZ")) then {
 			_object setVariable ["plotfriends", _inventory, true];
 		};
 

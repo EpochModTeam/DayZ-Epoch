@@ -185,7 +185,7 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 		_friendlies = player getVariable ["friendlies", []];
 		_charID = player getVariable ["CharacterID", "0"];
 		_rcharID = _humanityTarget getVariable ["CharacterID", "0"];
-		if (DZE_plotforLife) then {
+		if (DZE_permanentPlot) then {
 			_charID = [player] call FNC_GetPlayerUID;
 			_rcharID = [_humanityTarget] call FNC_GetPlayerUID;
 		};

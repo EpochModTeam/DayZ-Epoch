@@ -31,8 +31,6 @@ DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the
 DZE_DeathMsgCutText = false; // Display death messages as cutText
 DZE_DeathScreen = true; // True=Use Epoch death screen (Trade city obituaries have been amended) False=Use DayZ death screen (You are dead)
 DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
-DZE_modularBuild = true; // Enable Snap building by @raymix
-DZE_snapExtraRange = 0; // Increase the default range from which objects can snap by this many meters.
 DZE_NameTags = 1; // Name displays when looking at player up close  0 = Off, 1= On, 2 = Player choice
 DZE_ForceNameTagsInTrader = false; // Force name display when looking at player up close in traders. Overrides player choice.
 DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, blue for hero, green for friend)
@@ -47,10 +45,8 @@ timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS], RADIUS],[[3D POS], RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
-DZE_buildMaxMoveDistance = 10; // Max distance player can walk from start position when building. Anything >= the differnce between DZE_PlotPole values is not recommended (allows walking into other plots).
-DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower object from start position when building.
 
-/****** Advanced Trading Variables ***********/
+// Advanced Trading
 DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
 DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariableServer on every trade)
 DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; //array of gem prices, works only in advanced trading
@@ -60,26 +56,24 @@ Z_SingleCurrency = false; // Does your server use a single currency system.
 Z_AllowTakingMoneyFromBackpack = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your backpack.
 Z_AllowTakingMoneyFromVehicle = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your vehicle.
 Z_MoneyVariable = "cashMoney"; // If using a Single currency system, change this to whatever currency you are using.
-/**********************************************/
 
-/////////// plotManagement Variables ///////////
-// see also: https://github.com/DevZupa/PlotManagement
-DZE_plotManagement = true;
+// Plot Management and Plot for Life
+DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
 DZE_plotManagementMustBeClose = true; //Players must be within 10m of pole to be added as a plot friend.
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby
 DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole. (default 6)
-// see also: https://github.com/RimBlock/Epoch/tree/master/A%20Plot%20for%20Life
-DZE_plotforLife = true; //Enable or disable a plot for life mod
 DZE_PlotOwnership = true; //allows plot owner to take ownership of buildables (excluding lockable items) near a plot pole. Useful for servers that allow base capturing so the new owner can modify/delete/upgrade existing structures
 
-/////////// Vector Building Variables ///////////
-// ENABLED ONLY WITH SNAP BUILDING ENABLED - DZE_modularBuild = true;
-// Currently no switch to enable or disable due to continginces that may arise from various aspects of gameplay while switching between off/on
-DZE_noRotate = []; //Objects that cannot be rotated. Ex: DZE_noRotate = ["ItemVault"] (NOTE: The objects magazine classname)
+// Snap Build and Build Vectors
+DZE_modularBuild = true; // Enable Snap Building by @raymix and Build Vectors by @strikerforce.
+DZE_snapExtraRange = 0; // Increase the default range from which objects can snap by this many meters.
+DZE_noRotate = []; // Objects that cannot be rotated. Ex: DZE_noRotate = ["ItemVault"] (NOTE: The objects magazine classname)
 DZE_vectorDegrees = [0.01, 0.1, 1, 5, 15, 45, 90];
-DZE_curDegree = 45; //Starting rotation angle. //Prefered any value in array above
-DZE_dirWithDegrees = true; //When rotating objects with Q&E, use the custom degrees
-////////////////////////////////////////////////
+DZE_curDegree = 45; // Starting rotation angle. Prefered any value in array above
+DZE_dirWithDegrees = true; // When rotating objects with Q&E, use the custom degrees
+DZE_buildMaxMoveDistance = 10; // Max distance player can walk from start position when building. Anything >= the differnce between DZE_PlotPole values is not recommended (allows walking into other plots).
+DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower object from start position when building.
+
 
 /* 
 	Developers:

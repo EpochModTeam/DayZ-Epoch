@@ -25,7 +25,7 @@ if(_IsNearPlot == 0) then {
 	if(dayz_characterID == _ownerID) then {
 		_canBuildOnPlot = true;
 	} else {
-		if (DZE_plotManagement || DZE_plotforLife) then {
+		if (DZE_permanentPlot) then {
 			_buildcheck = [player, _nearestPole] call FNC_check_owner;
 			_isowner = _buildcheck select 0;
 			_isfriendly = _buildcheck select 1;
@@ -144,7 +144,7 @@ if ((count _upgrade) > 0) then {
 
 			// Set location
 			_object setPosATL _location;
-			if (DZE_plotforLife) then {
+			if (DZE_permanentPlot) then {
 				_ownerID = _obj getVariable["ownerPUID","0"];
 				_object setVariable ["ownerPUID",_ownerID,true];
 			};

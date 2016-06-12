@@ -41,7 +41,7 @@ if(_IsNearPlot == 0) then {
 	if(dayz_characterID == _ownerID) then {
 		_canBuild = true;
 	} else {
-		if (DZE_plotManagement || DZE_plotforLife) then {
+		if (DZE_permanentPlot) then {
 			_buildcheck = [player, _nearestPole] call FNC_check_owner;
 			_isowner = _buildcheck select 0;
 			_isfriendly = _buildcheck select 1;

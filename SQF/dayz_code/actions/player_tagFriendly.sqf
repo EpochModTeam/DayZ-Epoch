@@ -5,7 +5,7 @@ _caller = _this select 1;
 call fnc_usec_medic_removeActions;
 r_action = false;
 
-if (DZE_plotforLife) then {
+if (DZE_permanentPlot) then {
 	_callerID = [_caller] call FNC_GetPlayerUID;
 	_targetID = [_target] call FNC_GetPlayerUID;
 } else {

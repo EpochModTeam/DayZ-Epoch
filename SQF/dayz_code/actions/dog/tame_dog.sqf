@@ -44,7 +44,7 @@ if (_hasMeat) then {
 		_fsmid setFSMVariable ["_isTamed", true];
 		player setVariable ["dogID", _fsmid];
 		
-		if (DZE_plotforLife) then {
+		if (DZE_permanentPlot) then {
 			_dog setVariable ["ownerPUID", dayz_playerUID, true];
 		} else {
 			_dog setVariable ["CharacterID", dayz_characterID, true];

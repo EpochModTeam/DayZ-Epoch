@@ -501,7 +501,7 @@ DZE_isDestroyableStorage = ["OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","Stora
 helperDetach = false;
 DZE_snapExtraRange = 0;
 if (isNil "DZE_plotOwnershipExclusions") then {
-	DZE_plotTakeOwnershipItems = DayZ_SafeObjects - (DZE_LockableStorage + ["Plastic_Pole_EP1_DZ","TentStorage","TentStorageDomed","TentStorageDomed2"]);
+	DZE_plotTakeOwnershipItems = DayZ_SafeObjects - (DZE_LockableStorage + ["Plastic_Pole_EP1_DZ","DZ_storage_base"]);
 };
 isInTraderCity = false;
 PlayerDeaths = [];
@@ -523,7 +523,6 @@ if (isNil "DZE_MissionLootTable") then {DZE_MissionLootTable = false;};
 if (isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
 if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15,120];};
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
-DZE_checkNearbyRadius = DZE_PlotPole select 0;
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
 

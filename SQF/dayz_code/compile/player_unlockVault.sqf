@@ -34,7 +34,7 @@ _claimedBy = _obj getVariable["claimed","0"];
 _ownerID = _obj getVariable["CharacterID","0"];
 _characterID = _ownerID;
 _ComboMatch = (_ownerID == dayz_combination);
-if (DZE_plotforLife) then {
+if (DZE_permanentPlot) then {
 	_combination = _obj getVariable["characterID","0"];
 	_ownerID = _obj getVariable["ownerPUID","0"];
 	_ComboMatch = (_combination == dayz_combination);
@@ -96,7 +96,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 			_holder setVariable["ObjectID",_objectID,true];
 			_holder setVariable["ObjectUID",_objectUID,true];
 			_holder setVariable ["OEMPos", _pos, true];
-		if (DZE_plotforLife) then {
+		if (DZE_permanentPlot) then {
 			_holder setVariable ["ownerPUID", _ownerID , true];
 		};
 

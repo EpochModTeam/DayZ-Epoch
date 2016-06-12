@@ -525,7 +525,7 @@ if (_canBuild select 0) then {
 
 					//call publish precompiled function with given args and send public variable to server to save item to database
 					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location, _vector],[]];
-					if (DZE_plotforLife) then {
+					if (DZE_permanentPlot) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
 					};
@@ -536,7 +536,7 @@ if (_canBuild select 0) then {
 
 				} else { //if not lockable item
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
-					if (DZE_plotforLife) then {
+					if (DZE_permanentPlot) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 					};
 
@@ -545,7 +545,7 @@ if (_canBuild select 0) then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
 						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[]];
-						if (DZE_plotforLife) then {
+						if (DZE_permanentPlot) then {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
 						};
 						publicVariableServer "PVDZ_obj_Publish";

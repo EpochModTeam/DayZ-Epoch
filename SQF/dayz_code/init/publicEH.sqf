@@ -76,7 +76,6 @@ if (isServer) then {
 	"PVDZ_plr_Save"			addPublicVariableEventHandler {_id = (_this select 1) call server_playerSync;};
 	"PVDZ_plr_SwitchMove"	addPublicVariableEventHandler {((_this select 1) select 0) switchMove ((_this select 1) select 1);}; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
 	"PVDZ_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj}; //Used by built items (Epoch and Vanilla)
-	"PVDZE_fullobj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishFullObject};	
 	"PVDZ_veh_Save" 		addPublicVariableEventHandler {(_this select 1) call server_updateObject};
 	"PVDZ_plr_Login1"		addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 	"PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
@@ -96,6 +95,7 @@ if (isServer) then {
 	"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
 	"PVDZE_log_lockUnlock" 	addPublicVariableEventHandler {(_this select 1) spawn server_logUnlockLockEvent};
+	"PVDZE_fullobj_Publish"	addPublicVariableEventHandler {(_this select 1) call server_publishFullObject}; // PlotForLife take base ownership
 
 	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.
 	"PVDZ_object_replace" addPublicVariableEventHandler {

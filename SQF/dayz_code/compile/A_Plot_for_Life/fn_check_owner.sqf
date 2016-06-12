@@ -1,32 +1,56 @@
-// Check Ownership by RimBlock (http://epochmod.com/forum/index.php?/user/12612-rimblock/)
+/* 
+	Check object's ownership and friends
+	Original concept by RimBlock (github.com/RimBlock)
+	
+	Parameters: 
+	_this select 0: object - player calling this function
+	_this select 1: object - target to check ownership and friendlies of
+	
+	Returns:
+	_return select 0: bool - player is owner of target object
+	_return select 1: bool - player is friends with owner of target object
+*/
 
-private ["_player","_object","_playerUID","_ObjectOwner","_owner","_friendlies","_friendly"];
+private ["_player","_target","_playerUID","_targetOwner","_owner","_friendlies","_friendly","_findNearestPoles","_IsNearPlot","_pole","_friendUID","_ownerID","_friends"];
 
 _player = _this select 0;
-_Object = _this select 1;
-
-_Owner = false;
+_target = _this select 1;
+_owner = false;
 _friendly = false;
 _friendlies = [];
-_ObjectOwner = "0";
+_targetOwner = "0";
 
-if (DZE_plotManagement) then {
-	_friendlies = [_Object, true] call dze_getPlotFriends;
+if (DZE_permanentPlot) then {
+	_pole = _target;
+	_IsNearPlot = 0;
+	_findNearestPoles = nearestObjects [[player] call FNC_getPos, ["Plastic_Pole_EP1_DZ"], DZE_PlotPole select 0];
+	_IsNearPlot = count _findNearestPoles;
+	_pole = _findNearestPoles select 0;
+	
+	if (_IsNearPlot > 0) then {
+		_ownerID = _pole getVariable ["ownerPUID","0"];
+		_friendlies = [_ownerID];
+		_friends = _pole getVariable ["plotfriends", []];
+		{
+			_friendUID = _x select 0;
+			_friendlies set [count _friendlies, _friendUID];
+		} count _friends;
+		if (count DZE_PlotManagementAdmins > 0) then {
+			_friendlies = _friendlies + DZE_PlotManagementAdmins;
+		};
+	};
+	
+	_playerUID = [_player] call FNC_GetPlayerUID;
+	_targetOwner = _target getVariable ["ownerPUID","0"];
+	_owner = (_playerUID == _targetOwner);
 } else {
 	_friendlies	= _player getVariable ["friendlyTo",[]];
+	_targetOwner = _target getVariable ["CharacterID","0"];
+	_owner = (_targetOwner == dayz_characterID);
 };
 
-if (DZE_plotforLife) then {
-	_playerUID = [_player] call FNC_GetPlayerUID;
-	_ObjectOwner = _object getVariable ["ownerPUID","0"];
-	_owner = (_playerUID == _ObjectOwner);
-} else {
-	_ObjectOwner = _object getVariable["CharacterID","0"];
-	_owner = (_ObjectOwner == dayz_characterID);
-};
-
-if (_ObjectOwner in _friendlies) then {
+if (_targetOwner in _friendlies) then {
 	_friendly = true;
 };
 
-[_owner, _friendly];
+[_owner, _friendly]
