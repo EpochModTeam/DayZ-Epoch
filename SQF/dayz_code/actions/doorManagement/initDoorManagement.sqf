@@ -18,7 +18,7 @@ _doorFriends = TheDoor getVariable ["doorfriends",[]];
 } forEach _doorFriends;
 
 // Check if player is owner or plot friend
-_isowner = [player, TheDoor] call FNC_check_owner;
+_isowner = [player, TheDoor] call FNC_check_owner_friends;
 
 // Only Owner, plot friends and door friends may manage the door
 if( !_isDoorFriend && !(_isowner select 0) && !(_isowner select 1)) ) exitWith { localize "STR_EPOCH_DOORMANAGEMENT_NORIGHTS" call dayz_rollingMessages; };

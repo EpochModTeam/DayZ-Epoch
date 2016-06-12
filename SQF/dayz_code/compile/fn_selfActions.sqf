@@ -776,7 +776,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			if((_x select 0) == dayz_playerUID) then { _isDoorFriend = true; };
 		} forEach _doorFriends;
 		// Check if player is owner or plot friend
-		_isowner = [player, _cursorTarget] call FNC_check_owner;
+		_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
 		if((s_player_manageDoor < 0) && (_isDoorFriend || (_isowner select 0) || (_isowner select 1)) ) then {
 			s_player_manageDoor = player addAction [format["<t color='#0059FF'>%1</t>", localize "STR_EPOCH_ACTIONS_MANAGEDOOR"], "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf", _cursorTarget, 5, false];
 		};
