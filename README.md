@@ -108,6 +108,7 @@ GitHub Contributors (In order of most commits)
 * BlackLA - https://github.com/BlackLA
 * Hogscraper - https://github.com/hogscraper
 * Raziel23x - https://github.com/Raziel23x
+* strikerforce - https://github.com/strikerforce
 
 --------------------------
 Special thanks
