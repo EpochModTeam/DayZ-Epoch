@@ -420,7 +420,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 
 		if(_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
-				_isowner = [player, _cursorTarget] call FNC_check_owner;
+				_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
 				If ((_isowner select 0) || (_isowner select 1)) then {
 					_player_deleteBuild = true;
 				};
@@ -633,7 +633,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {_canDo && speed player <= 1}) then {
 		if (DZE_permanentPlot) then {
 			if (s_player_plotManagement < 0) then {
-					_isowner = [player, _cursorTarget] call FNC_check_owner;
+					_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
 					If ((_isowner select 0) || (_isowner select 1)) then {
 						s_player_plot_take_ownership = player addAction ["Take plot items ownership", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
 					};
@@ -660,7 +660,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		if (DZE_permanentPlot) then {
 			if (s_player_plot_take_ownership < 0) then {
 				if (DZE_PlotOwnership) then {
-					_isowner = [player, _cursorTarget] call FNC_check_owner;
+					_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
 					If (_isowner select 0) then {
 						s_player_plot_take_ownership = player addAction ["Take plot items ownership", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
 					};
