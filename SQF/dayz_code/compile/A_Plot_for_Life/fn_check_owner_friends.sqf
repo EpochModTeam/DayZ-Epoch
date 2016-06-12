@@ -49,7 +49,7 @@ if (DZE_permanentPlot) then {
 	_owner = (_targetOwner == dayz_characterID);
 };
 
-if (_targetOwner in _friendlies) then {
+if (_player in _friendlies) then {
 	_friendly = true;
 };
 
