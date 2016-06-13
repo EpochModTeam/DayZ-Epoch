@@ -78,6 +78,7 @@ DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower objec
 /////////// doorManagement Variables ///////////
 // Let owner and plot friends and door friends manage door access
 DZE_doorManagement = true;
+DZE_doorManagementMustBeClose = true; //Players must be within 10m of door to be added as a door friend.
 DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every door's management menu and open it
 DZE_doorManagementAllowManualCode = true; //Allows opening doors still using PIN
 DZE_doorManagementMaxFriends = 10; //Maximum number of friends allowed on a door. (default 10)

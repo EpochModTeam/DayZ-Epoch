@@ -1,6 +1,7 @@
 private ["_close"];
 lbClear 7101;
-_closePeople =  player nearEntities ["CAManBase", 20];
+_closePeople =  player nearEntities ["CAManBase", 10];
+if (!DZE_doorManagementMustBeClose) then {_closePeople = playableUnits};
 Humans = [];
 {
 	if (isPlayer _x) then {
