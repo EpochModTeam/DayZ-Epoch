@@ -15959,6 +15959,7 @@
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT">
 			<English>Only %1 friends allowed</English>
 			<Russian>Можно добавить друзей: %1</Russian>
+			<German>Nur %1 Freunde erlaubt</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>
@@ -17584,6 +17585,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_HUMANS_NEARBY">
 			<English>Humans Nearby</English>
+			<German>Spieler in der Nähe</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOT_FRIENDS">
 			<English>Plot Friends</English>
@@ -17617,10 +17619,6 @@
 			<English>Manual Code</English>
 			<German>PIN manuell eingeben</German>
 		</Key>
-		<Key ID="STR_EPOCH_EYESCANNER_CANCEL">
-			<English>Cancel</English>
-			<German>Abbrechen</German>
-		</Key>
 		<Key ID="STR_EPOCH_EYESCANNER_SUCCESS">
 			<English>Eye Scan SUCCESS</English>
 			<German>Iris-Scan ERFOLGREICH</German>
@@ -17638,22 +17636,6 @@
 			<English>Door Management</English>
 			<German>Tür-Management</German>
 		</Key>
-		<Key ID="STR_EPOCH_DOORMANAGEMENT_ADD">
-			<English>Add</English>
-			<German>Hinzufügen</German>
-		</Key>
-		<Key ID="STR_EPOCH_DOORMANAGEMENT_DELETE">
-			<English>Delete</English>
-			<German>Entfernen</German>
-		</Key>
-		<Key ID="STR_EPOCH_DOORMANAGEMENT_CLOSE">
-			<English>Close</English>
-			<German>Schliessen</German>
-		</Key>
-		<Key ID="STR_EPOCH_DOORMANAGEMENT_NEARBY">
-			<English>Humans Nearby</English>
-			<German>Spieler in der Nähe</German>
-		</Key>
 		<Key ID="STR_EPOCH_DOORMANAGEMENT_FRIENDS">
 			<English>Door Friends</English>
 			<German>Tür-Freunde</German>
@@ -17661,14 +17643,6 @@
 		<Key ID="STR_EPOCH_DOORMANAGEMENT_NORIGHTS">
 			<English>You do not have the rights to manage.</English>
 			<German>Du darfst diese Tür nicht verwalten.</German>
-		</Key>
-		<Key ID="STR_EPOCH_DOORMANAGEMENT_ADD_ALREADY">
-			<English>Already on the list.</English>
-			<German>Dieser Spieler ist schon auf der Liste.</German>
-		</Key>
-		<Key ID="STR_EPOCH_DOORMANAGEMENT_ADD_MAXFRIENDS">
-			<English>Only %1 allowed.</English>
-			<German>Nur %1 erlaubt.</German>
 		</Key>
 		
 		<Key ID="STR_EPOCH_DOORS_OPEN">

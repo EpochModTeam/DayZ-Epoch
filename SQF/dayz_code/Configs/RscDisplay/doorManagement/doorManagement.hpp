@@ -35,7 +35,7 @@ class DoorManagement
 		class RscShortcutButton_7104: ZSC_RscButtonMenuBlue
 		{
 			idc = 7104;
-			text = $STR_EPOCH_DOORMANAGEMENT_ADD;
+			text = $STR_EPOCH_ADD;
 			x = 0.33 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -45,7 +45,7 @@ class DoorManagement
 		class RscShortcutButton_7105: ZSC_RscButtonMenuBlue
 		{
 			idc = 7105;
-			text = $STR_EPOCH_DOORMANAGEMENT_DELETE;
+			text = $STR_EPOCH_DELETE;
 			x = 0.47 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -55,7 +55,7 @@ class DoorManagement
 		class RscShortcutButton_7106: ZSC_RscButtonMenuBlue
 		{
 			idc = 7106;
-			text = $STR_EPOCH_DOORMANAGEMENT_CLOSE;
+			text = $STR_UI_CLOSE;
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.74 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
@@ -76,7 +76,7 @@ class DoorManagement
 		class RscText_7108: ZSC_RscTextT
 		{
 			idc = 7108;
-			text = $STR_EPOCH_DOORMANAGEMENT_NEARBY;
+			text = $STR_EPOCH_HUMANS_NEARBY;
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;

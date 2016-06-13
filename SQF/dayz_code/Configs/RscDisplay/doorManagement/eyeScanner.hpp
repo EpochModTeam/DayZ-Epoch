@@ -40,7 +40,7 @@ class EyeScanner
 		};
 		
 		
-		class ZupaButton_1 : ZSC_RscButtonMenuBlue /*Zupa_RscButtonMenu*/
+		class ZupaButton_1 : ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_EYESCANNER_SCAN;
@@ -51,7 +51,7 @@ class EyeScanner
 			onButtonClick = "keypadCancel = false; call player_unlockDoor";
 		};
 		
-		class ZupaButton_4 : ZSC_RscButtonMenuBlue /*Zupa_RscButtonMenu*/
+		class ZupaButton_4 : ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_EYESCANNER_MANUAL;
@@ -62,17 +62,17 @@ class EyeScanner
 			onButtonClick = "call player_enterCode";
 		};
 		
-		class ZupaButton_2: ZSC_RscButtonMenuBlue /*Zupa_RscButtonMenu*/
+		class ZupaButton_2: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
-			text = $STR_EPOCH_EYESCANNER_CANCEL;
+			text = $STR_EPOCH_CANCEL;
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.20;
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 3000);";
 		};		
 
-		class ZupaButton_3: ZSC_RscButtonMenuBlue /*Zupa_RscButtonMenu*/
+		class ZupaButton_3: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_ACTIONS_MANAGEDOOR;
