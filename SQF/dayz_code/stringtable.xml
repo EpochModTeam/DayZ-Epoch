@@ -17607,27 +17607,27 @@
 			<German>Tür verwalten</German>
 		</Key>
 		
-		<Key ID="STR_EPOCH_EYESCANNER_TITLE">
-			<English>Eye Scanner Terminal</English>
-			<German>Iris-Scanner</German>
+		<Key ID="STR_EPOCH_DOORACCESS_TITLE">
+			<English>Door Access Terminal</English>
+			<German>Zutrittssystem</German>
 		</Key>
-		<Key ID="STR_EPOCH_EYESCANNER_SCAN">
+		<Key ID="STR_EPOCH_DOORACCESS_SCAN">
 			<English>Eye Scan</English>
 			<German>Auge scannnen</German>
 		</Key>
-		<Key ID="STR_EPOCH_EYESCANNER_MANUAL">
+		<Key ID="STR_EPOCH_DOORACCESS_MANUAL">
 			<English>Manual Code</English>
 			<German>PIN manuell eingeben</German>
 		</Key>
-		<Key ID="STR_EPOCH_EYESCANNER_SUCCESS">
+		<Key ID="STR_EPOCH_DOORACCESS_SUCCESS">
 			<English>Eye Scan SUCCESS</English>
 			<German>Iris-Scan ERFOLGREICH</German>
 		</Key>
-		<Key ID="STR_EPOCH_EYESCANNER_FAILURE">
+		<Key ID="STR_EPOCH_DOORACCESS_FAILURE">
 			<English>Eye Scan FAILED</English>
 			<German>Iris-Scan FEHLGESCHLAGEN</German>
 		</Key>
-		<Key ID="STR_EPOCH_EYESCANNER_NOMANUAL">
+		<Key ID="STR_EPOCH_DOORACCESS_NOMANUAL">
 			<English>We do not allow manual codes.</English>
 			<German>Die manuelle Eingabe ist nicht erlaubt.</German>
 		</Key>

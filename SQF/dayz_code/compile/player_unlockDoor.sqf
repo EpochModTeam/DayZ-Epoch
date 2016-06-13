@@ -68,7 +68,7 @@ if (!isNull dayz_selectedDoor) then {
 			};
 			
 			if(_doorMethod == "Eye") then {
-				localize "STR_EPOCH_EYESCANNER_SUCCESS" call dayz_rollingMessages;
+				localize "STR_EPOCH_DOORACCESS_SUCCESS" call dayz_rollingMessages;
 			};
 			
 			KeyCodeTry = nil;
@@ -89,7 +89,7 @@ if (!isNull dayz_selectedDoor) then {
 			};
 
 			if(_doorMethod == "Eye") then {
-				localize "STR_EPOCH_EYESCANNER_FAILURE" call dayz_rollingMessages;
+				localize "STR_EPOCH_DOORACCESS_FAILURE" call dayz_rollingMessages;
 				_display closeDisplay 3000;
 			};
 		};

@@ -1,5 +1,5 @@
 
-// Close EyeScanner
+// Close DoorAccess
 _display = findDisplay 61144;
 _display closeDisplay 3000;
 if(DZE_doorManagementAllowManualCode) then {
@@ -9,5 +9,5 @@ if(DZE_doorManagementAllowManualCode) then {
 	DZE_botCombo = 0;
 	createDialog "ComboLockUI";
 } else {
-	localize "STR_EPOCH_EYESCANNER_NOMANUAL" call dayz_rollingMessages;
+	localize "STR_EPOCH_DOORACCESS_NOMANUAL" call dayz_rollingMessages;
 };

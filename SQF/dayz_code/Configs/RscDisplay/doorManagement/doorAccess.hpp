@@ -1,4 +1,4 @@
-class EyeScanner
+class DoorAccess
 {
 	idd = 61144;
 	movingenable = 0;
@@ -34,7 +34,7 @@ class EyeScanner
 			y = 0.30 * safezoneH + safezoneY;
 			w = 0.20 * safezoneW;
 			h = 0.05 * safezoneH;
-			text = $STR_EPOCH_EYESCANNER_TITLE;
+			text = $STR_EPOCH_DOORACCESS_TITLE;
 			colorBackground[] = {0,0,0,0.8};
 			colorText[] = {1,1,1,1};
 		};
@@ -43,7 +43,7 @@ class EyeScanner
 		class ZupaButton_1 : ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
-			text = $STR_EPOCH_EYESCANNER_SCAN;
+			text = $STR_EPOCH_DOORACCESS_SCAN;
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.40 * safezoneH + safezoneY;
 			style = 2;
@@ -54,7 +54,7 @@ class EyeScanner
 		class ZupaButton_4 : ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
-			text = $STR_EPOCH_EYESCANNER_MANUAL;
+			text = $STR_EPOCH_DOORACCESS_MANUAL;
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.50 * safezoneH + safezoneY;
 			style = 2;

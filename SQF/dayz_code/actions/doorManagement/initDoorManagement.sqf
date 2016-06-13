@@ -6,7 +6,7 @@ if(count(_this) > 0) then
 	TheDoor = dayz_selectedDoor;
 };
 
-// close EyeScanner if open
+// close DoorAccess if open
 _display = findDisplay 61144;
 _display closeDisplay 3000;
 
