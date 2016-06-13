@@ -37,7 +37,7 @@ if (!isNull dayz_selectedDoor) then {
 		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 		
 		if(DZE_doorManagement) then {
-			_doorOwnerID = if(DZE_plotforLife) then { dayz_selectedDoor getVariable ["ownerPUID","0"]; } else { dayz_selectedDoor getVariable ["characterID","0"]; };
+			_doorOwnerID = if(DZE_permanentPlot) then { dayz_selectedDoor getVariable ["ownerPUID","0"]; } else { dayz_selectedDoor getVariable ["characterID","0"]; };
 			_doorFriendsComplex = dayz_selectedDoor getVariable ["doorfriends",[]];
 			_doorAllowed = [_doorOwnerID];
 			{
