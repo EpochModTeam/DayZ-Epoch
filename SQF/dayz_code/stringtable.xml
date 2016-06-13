@@ -17687,7 +17687,16 @@
 			<English>Lock Door</English>
 			<German>Tür abschliessen</German>
 		</Key>
-		
-		
+		<Key ID="STR_EPOCH_CANCEL">
+			<English>Cancel</English>
+			<French>Annuler</French>
+			<Spanish>Cancelar</Spanish>
+			<Italian>Annulla</Italian>
+			<Hungarian>Mégse</Hungarian>
+			<Polish>Anuluj</Polish>
+			<Russian>Отмена</Russian>
+			<German>Abbrechen</German>
+			<Czech>Zrušit</Czech>
+		</Key>
 	</Package>
 </Project>
