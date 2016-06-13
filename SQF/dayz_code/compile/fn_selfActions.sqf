@@ -769,15 +769,17 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 
 	// Allow manage door
 	if( DZE_doorManagement && (_typeOfCursorTarget in DZE_DoorsLocked) ) then {
-		// Check if player is door friend
-		_isDoorFriend = false;
-		_doorFriends = _cursorTarget getVariable ["doorfriends",[]];
-		{
-			if((_x select 0) == dayz_playerUID) then { _isDoorFriend = true; };
-		} forEach _doorFriends;
-		// Check if player is owner or plot friend
-		_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
-		if((s_player_manageDoor < 0) && (_isDoorFriend || (_isowner select 0) || (_isowner select 1)) ) then {
+		// Check player access
+		_isowner = [player, _cursorTarget] call FNC_check_access;
+		if( (s_player_manageDoor < 0) && (
+					((_isowner select 0) && DZE_doorManagementAllowManage_owner) // door owner
+				||	((_isowner select 1) && DZE_doorManagementAllowManage_ownerFriendlies) // door owner's friendly tagged
+				||	((_isowner select 2) && DZE_doorManagementAllowManage_plotOwner) // plot owner
+				||	((_isowner select 3) && DZE_doorManagementAllowManage_plotFriends) // plot friends
+				||	((_isowner select 4) && DZE_doorManagementAllowManage_plotAdmins) // plot management admins
+				||	((_isowner select 5) && DZE_doorManagementAllowManage_doorFriends) // door friends
+				||	((_isowner select 6) && DZE_doorManagementAllowManage_doorAdmins) // door management admins
+		)) then {
 			s_player_manageDoor = player addAction [format["<t color='#0059FF'>%1</t>", localize "STR_EPOCH_ACTIONS_MANAGEDOOR"], "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf", _cursorTarget, 5, false];
 		};
 	} else {

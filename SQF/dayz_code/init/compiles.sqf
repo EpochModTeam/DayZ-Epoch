@@ -96,7 +96,7 @@ if (!isDedicated) then {
 	fnc_SetPitchBankYaw = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\fnc_SetPitchBankYaw.sqf";
 	FNC_check_owner_friends = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\A_Plot_for_Life\fn_check_owner_friends.sqf";
 	FNC_find_plots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\A_Plot_for_Life\fn_find_plots.sqf";
-	
+
 	player_buildVanilla = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_buildVanilla.sqf";
 	fn_buildCamera = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildCamera.sqf";
 	object_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_build.sqf";
@@ -195,8 +195,9 @@ if (!isDedicated) then {
 	DoorAddFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorAddFriend.sqf";
 	DoorRemoveFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorRemoveFriend.sqf";
 	player_manageDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf";
-	player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";
-	
+	player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";	
+	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\doorManagement\fn_check_access.sqf";
+
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];
 		_agent = _this select 0;

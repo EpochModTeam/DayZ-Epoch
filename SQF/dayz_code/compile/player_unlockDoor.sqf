@@ -37,15 +37,16 @@ if (!isNull dayz_selectedDoor) then {
 		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 		
 		if(DZE_doorManagement) then {
-			_doorOwnerID = if(DZE_permanentPlot) then { dayz_selectedDoor getVariable ["ownerPUID","0"]; } else { dayz_selectedDoor getVariable ["characterID","0"]; };
-			_doorFriendsComplex = dayz_selectedDoor getVariable ["doorfriends",[]];
-			_doorAllowed = [_doorOwnerID];
-			{
-				_friendUID = _x select 0;
-				_doorAllowed  = _doorAllowed + [_friendUID];
-			} forEach _doorFriendsComplex;
-			
-			if( DZE_Lock_Door in _doorAllowed ) then {
+			// Check player access
+			_isowner = [player, _obj] call FNC_check_access;
+			if( 		((_isowner select 0) && DZE_doorManagementAllowAccess_owner) // door owner
+					||	((_isowner select 1) && DZE_doorManagementAllowAccess_ownerFriendlies) // door owner's friendly tagged
+					||	((_isowner select 2) && DZE_doorManagementAllowAccess_plotOwner) // plot owner
+					||	((_isowner select 3) && DZE_doorManagementAllowAccess_plotFriends) // plot friends
+					||	((_isowner select 4) && DZE_doorManagementAllowAccess_plotAdmins) // plot management admins
+					||	((_isowner select 5) && DZE_doorManagementAllowAccess_doorFriends) // door friends
+					||	((_isowner select 6) && DZE_doorManagementAllowAccess_doorAdmins) // door management admins
+			) then {
 				DZE_Lock_Door = dayz_selectedDoor getVariable['CharacterID','0'];
 			};
 		};
