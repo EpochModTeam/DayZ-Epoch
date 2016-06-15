@@ -35,8 +35,9 @@ private [
 	,"_isTargetFriend"				// return value
 	,"_isTargetAdmin"				// return value
 	,"_targetType"					// return value
-	,"_targetOwnerUID"				// UID of the owner of _target
+	,"_targetOwnerUID"				// UID or characterID of the owner of _target
 	,"_playerUID"					// UID of the _player
+	,"_characterID"					// characterID of the _player
 	,"_plotcheck"					// takes return value of FNC_find_plots
 	,"_isNearPlot"					// player is in plot's reach
 	,"_nearestPlot"					// plot object
@@ -67,14 +68,15 @@ _targetType = if(typeOf _target in DZE_DoorsLocked) then { "DOOR"; } else { "GEN
 
 // determine owner and player id
 // and check if player is owner of target object
+_playerUID = [_player] call FNC_GetPlayerUID;
+_characterID = dayz_characterID;
 if(DZE_permanentPlot) then {
 	_targetOwnerUID = _target getVariable ["ownerPUID","0"];
-	_playerUID = [_player] call FNC_GetPlayerUID;
+	_isOwner = (_playerUID == _targetOwnerUID);
 } else {
 	_targetOwnerUID = _target getVariable ["characterID","0"];
-	_playerUID = dayz_characterID;
+	_isOwner = (_characterID == _targetOwnerUID);
 };
-_isOwner = (_playerUID == _targetOwnerUID);
 
 
 // determine _players friends (tagged)
@@ -92,15 +94,16 @@ if(_isNearPlot) then {
 	// and check if player is owner of plot
 	if (DZE_permanentPlot) then {
 		_plotOwnerUID = _nearestPlot getVariable ["ownerPUID","0"];
+		_isPlotOwner = (_playerUID == _plotOwnerUID);
 	} else {
 		_plotOwnerUID = _nearestPlot getVariable ["characterID","0"];
+		_isPlotOwner = (_characterID == _plotOwnerUID);
 	};
-	_isPlotOwner = (_playerUID == _plotOwnerUID);
 	
 	
 	// determine plot friends
 	// and check if player is one of them
-	_isPlotFriend = (_playerUID == _plotOwnerUID);  // Plot owner is always a plot friend
+	_isPlotFriend = _isPlotOwner;  // Plot owner is always a plot friend
 	_plotFriends = _nearestPlot getVariable ["plotfriends", []];
 	{
 		if( (_x select 0) == _playerUID ) then { _isPlotFriend = true; };
@@ -109,7 +112,7 @@ if(_isNearPlot) then {
 	
 	// determine plot management admins
 	// and check if player is one of them
-	if (_playerUID in DZE_PlotManagementAdmins) then { _isPlotAdmin = true; };
+	if(_playerUID in DZE_PlotManagementAdmins) then { _isPlotAdmin = true; };
 };
 
 
@@ -126,7 +129,7 @@ if(_targetType == "DOOR") then {
 	
 	// determine door management admins
 	// and check if player is one of them
-	if (_playerUID in DZE_DoorManagementAdmins) then { _isTargetAdmin = true; };
+	if(_playerUID in DZE_DoorManagementAdmins) then { _isTargetAdmin = true; };
 };
 
 
