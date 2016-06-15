@@ -109,9 +109,7 @@ if(_isNearPlot) then {
 	
 	// determine plot management admins
 	// and check if player is one of them
-	{
-		if( _x == _playerUID ) then { _isPlotAdmin = true; };
-	} count DZE_PlotManagementAdmins;
+	if (_playerUID in DZE_PlotManagementAdmins) then { _isPlotAdmin = true; };
 };
 
 
