@@ -117,7 +117,7 @@ if(_isNearPlot) then {
 if(_targetType == "DOOR") then {
 	// determine door friends
 	// and check if player is one of them
-	_isTargetFriend = (_playerUID == _targetOwnerUID);  // Door owner is always a door friend
+	_isTargetFriend = _isOwner;  // Door owner is always a door friend
 	_targetFriends = _target getVariable ["doorfriends",[]];
 	{
 		if( (_x select 0) == _playerUID ) then { _isTargetFriend = true; };
