@@ -126,9 +126,7 @@ if(_targetType == "DOOR") then {
 	
 	// determine door management admins
 	// and check if player is one of them
-	{
-		if( _x == _playerUID ) then { _isTargetAdmin = true; };
-	} count DZE_DoorManagementAdmins;
+	if (_playerUID in DZE_DoorManagementAdmins) then { _isTargetAdmin = true; };
 };
 
 
