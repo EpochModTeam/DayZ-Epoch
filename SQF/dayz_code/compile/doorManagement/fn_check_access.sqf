@@ -93,7 +93,7 @@ if(_isNearPlot) then {
 	if (DZE_permanentPlot) then {
 		_plotOwnerUID = _nearestPlot getVariable ["ownerPUID","0"];
 	} else {
-		_plotOwnerUID = _target getVariable ["characterID","0"];
+		_plotOwnerUID = _nearestPlot getVariable ["characterID","0"];
 	};
 	_isPlotOwner = (_playerUID == _plotOwnerUID);
 	
