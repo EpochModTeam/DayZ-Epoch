@@ -69,9 +69,19 @@ _object_inventory = {
 	if (_object isKindOf "TrapItems") then {
 		_inventory = [["armed",_object getVariable ["armed",false]]];
 	} else {
-		if (DZE_permanentPlot && (typeOf _object == "Plastic_Pole_EP1_DZ")) then {
+		_isNormal = true;
+		
+		if( DZE_permanentPlot && (typeOf (_object) == "Plastic_Pole_EP1_DZ") ) then {
+			_isNormal = false;
 			_inventory = _object getVariable ["plotfriends", []]; //We're replacing the inventory with UIDs for this item
-		} else {
+		};
+		
+		if( DZE_doorManagement && (typeOf (_object) in DZE_DoorsLocked) ) then {
+			_isNormal = false;
+			_inventory = _object getVariable ["doorfriends", []]; //We're replacing the inventory with UIDs for this item
+		};
+		
+		if(_isNormal) then {
 			_inventory = [getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object];
 		};
 	};

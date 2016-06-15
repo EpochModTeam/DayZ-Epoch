@@ -240,9 +240,9 @@ dayz_resetSelfActions = {
 	s_player_lockUnlock_crtl = -1;
 	s_player_lockUnlockInside_ctrl = -1;
 	s_player_toggleSnap = -1;
-    s_player_toggleSnapSelect = -1;
-    s_player_toggleSnapSelectPoint = [];
-    snapActions = -1;
+	s_player_toggleSnapSelect = -1;
+	s_player_toggleSnapSelectPoint = [];
+	snapActions = -1;
 	s_player_plot_boundary_on = -1;
 	s_player_plot_boundary_off = -1;
 	s_player_plot_take_ownership = -1;
@@ -253,6 +253,7 @@ dayz_resetSelfActions = {
 	s_player_toggleVector = -1;
 	s_player_toggleVectors=[];
 	vectorActions = -1;
+	s_player_manageDoor = -1;
 };
 call dayz_resetSelfActions;
 

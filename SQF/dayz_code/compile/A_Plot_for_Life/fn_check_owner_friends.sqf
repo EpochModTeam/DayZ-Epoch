@@ -42,15 +42,23 @@ if (DZE_permanentPlot) then {
 	
 	_playerUID = [_player] call FNC_GetPlayerUID;
 	_targetOwner = _target getVariable ["ownerPUID","0"];
-	_owner = (_playerUID == _targetOwner);
+
+	// Check if player is a plot friend
+	if (_playerUID in _friendlies) then {
+		_friendly = true;
+	};
 } else {
+	_playerUID = dayz_characterID;
 	_friendlies	= _player getVariable ["friendlyTo",[]];
 	_targetOwner = _target getVariable ["CharacterID","0"];
-	_owner = (_targetOwner == dayz_characterID);
+
+	// Check if target object owner is a friend of player
+	if (_targetOwner in _friendlies) then {
+		_friendly = true;
+	};
 };
 
-if (_targetOwner in _friendlies) then {
-	_friendly = true;
-};
+// Check if player is owner of target object
+_owner = (_playerUID == _targetOwner);
 
 [_owner, _friendly]

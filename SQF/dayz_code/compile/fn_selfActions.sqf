@@ -767,6 +767,26 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_SurrenderedGear = -1;
 	};
 
+	// Allow manage door
+	if( DZE_doorManagement && (_typeOfCursorTarget in DZE_DoorsLocked) ) then {
+		// Check player access
+		_isowner = [player, _cursorTarget] call FNC_check_access;
+		if( (s_player_manageDoor < 0) && (
+					((_isowner select 0) && DZE_doorManagementAllowManage_owner) // door owner
+				||	((_isowner select 1) && DZE_doorManagementAllowManage_ownerFriendlies) // door owner's friendly tagged
+				||	((_isowner select 2) && DZE_doorManagementAllowManage_plotOwner) // plot owner
+				||	((_isowner select 3) && DZE_doorManagementAllowManage_plotFriends) // plot friends
+				||	((_isowner select 4) && DZE_doorManagementAllowManage_plotAdmins) // plot management admins
+				||	((_isowner select 5) && DZE_doorManagementAllowManage_doorFriends) // door friends
+				||	((_isowner select 6) && DZE_doorManagementAllowManage_doorAdmins) // door management admins
+		)) then {
+			s_player_manageDoor = player addAction [format["<t color='#0059FF'>%1</t>", localize "STR_EPOCH_ACTIONS_MANAGEDOOR"], "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf", _cursorTarget, 5, false];
+		};
+	} else {
+		player removeAction s_player_manageDoor;
+		s_player_manageDoor = -1;
+	};
+
 	//Allow owner to unlock vault
 	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3} && {!keypadCancel}) then {
 		if (s_player_unlockvault < 0) then {
@@ -809,7 +829,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_lockvault = -1;
 	};
 
-    //Player Deaths
+	//Player Deaths
 	if (_typeOfCursorTarget == "Info_Board_EP1") then {
 		if (s_player_information < 0) then {
 			s_player_information = player addAction [localize "STR_EPOCH_ACTIONS_MURDERS", "\z\addons\dayz_code\actions\list_playerDeaths.sqf",[], 7, false, true];
@@ -1170,6 +1190,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_fuelauto = -1;
 	player removeAction s_player_fuelauto2;
 	s_player_fuelauto2 = -1;
+	player removeAction s_player_manageDoor;
+	s_player_manageDoor = -1;
 };
 
 //Dog actions on player self

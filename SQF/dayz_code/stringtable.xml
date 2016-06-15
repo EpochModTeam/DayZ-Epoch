@@ -15955,10 +15955,12 @@
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
 			<English>Already on the list</English>
 			<Russian>Уже в списке друзей</Russian>
+			<German>Schon auf der Liste</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT">
 			<English>Only %1 friends allowed</English>
 			<Russian>Можно добавить друзей: %1</Russian>
+			<German>Nur %1 Freunde erlaubt</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>
@@ -17584,6 +17586,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_HUMANS_NEARBY">
 			<English>Humans Nearby</English>
+			<German>Spieler in der Nähe</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOT_FRIENDS">
 			<English>Plot Friends</English>
@@ -17599,6 +17602,76 @@
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_TOO_FAR">
 			<English>Object is placed too far away from where you started building (within %1 meters)</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_MANAGEDOOR">
+			<English>Manage Door</English>
+			<German>Tür verwalten</German>
+		</Key>
+		
+		<Key ID="STR_EPOCH_DOORACCESS_TITLE">
+			<English>Door Access Terminal</English>
+			<German>Zutrittssystem</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORACCESS_SCAN">
+			<English>Eye Scan</English>
+			<German>Auge scannnen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORACCESS_MANUAL">
+			<English>Manual Code</English>
+			<German>PIN manuell eingeben</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORACCESS_SUCCESS">
+			<English>Eye Scan SUCCESS</English>
+			<German>Iris-Scan ERFOLGREICH</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORACCESS_FAILURE">
+			<English>Eye Scan FAILED</English>
+			<German>Iris-Scan FEHLGESCHLAGEN</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORACCESS_NOMANUAL">
+			<English>We do not allow manual codes.</English>
+			<German>Die manuelle Eingabe ist nicht erlaubt.</German>
+		</Key>
+		
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_TITLE">
+			<English>Door Management</English>
+			<German>Tür-Management</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_FRIENDS">
+			<English>Door Friends</English>
+			<German>Tür-Freunde</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_NORIGHTS">
+			<English>You do not have the rights to manage.</English>
+			<German>Du darfst diese Tür nicht verwalten.</German>
+		</Key>
+		
+		<Key ID="STR_EPOCH_DOORS_OPEN">
+			<English>Open Door</English>
+			<German>Tür öffnen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORS_CLOSE">
+			<English>Close Door</English>
+			<German>Tür schliessen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORS_UNLOCK">
+			<English>Unlock Door</English>
+			<German>Tür aufschliessen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOORS_LOCK">
+			<English>Lock Door</English>
+			<German>Tür abschliessen</German>
+		</Key>
+		<Key ID="STR_EPOCH_CANCEL">
+			<English>Cancel</English>
+			<French>Annuler</French>
+			<Spanish>Cancelar</Spanish>
+			<Italian>Annulla</Italian>
+			<Hungarian>Mégse</Hungarian>
+			<Polish>Anuluj</Polish>
+			<Russian>Отмена</Russian>
+			<German>Abbrechen</German>
+			<Czech>Zrušit</Czech>
 		</Key>
 	</Package>
 </Project>
