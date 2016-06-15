@@ -15955,6 +15955,7 @@
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
 			<English>Already on the list</English>
 			<Russian>Уже в списке друзей</Russian>
+			<German>Schon auf der Liste</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT">
 			<English>Only %1 friends allowed</English>
