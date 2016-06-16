@@ -5,7 +5,7 @@
 [NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
 [NEW] 1.8.7 configurable blood trails, set dayz_bleedingeffect in init.sqf
 [NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee (or rifle onBack if DZE_TwoPrimaries=2;))
-[NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. see ConfigVariable.sqf for details @icomrade
+[NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. See configVariables.sqf for details @icomrade
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 [NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
 [NEW] Anzio 20mm sniper and RedRyder BB Gun by @arma2WillRobinson
@@ -27,15 +27,15 @@
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
 [NEW] Zupa's Advanced Trading v2.1+ is now included as part of the Epoch Code, enabled with DZE_advancedTrading = true; NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
 [NEW] With config based traders categories can be reused by setting the duplicate=#; value. # is the category number to copy. @ebaydayz
-[NEW] Gems are now treated as variable value currency (Advanced Trading only). configure gem values using DZE_GemWorthArray =[]; see ConfigVariables.sqf for more info @icomrade
-[NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; see ConfigVariables.sqf for more info @icomrade
+[NEW] Gems are now treated as variable value currency (Advanced Trading only). Configure gem values using DZE_GemWorthArray =[]; see configVariables.sqf for more info @icomrade
+[NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; See configVariables.sqf for more info @icomrade
 [NEW] A Plot For Life v2.5 by RimBlock is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @RimBlock @icomrade
 [NEW] Build Vectors v4 by Striker is now included, only enabled with Snap building. Note there is no option to turn off Vector Building with Snap Building enabled @strikerforce @icomrade
 [NEW] Door Management v3.0 by Zupa is now included and enabled by default with variable DZE_doorManagement, see configVariables.sqf @DevZupa @Bruce-LXXVI @ebaydayz 
 [NEW] Plot Management v2.1 by Zupa is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @DevZupa @Bruce-LXXVI @icomrade
 [NEW] Precise Base Building v1.0.5 by Mikeeeyy is now included. @Mikeeeyy @icomrade @ebaydayz
 [NEW] You may toggle vehicle destruction effects to prevent damage from vehicle explosions (useful to prevent griefing from ramming) use DZE_NoVehicleExplosions = true; to enable #1198 @icomrade
-[NEW] Temperature factors are now configurable with DZE_TempVars see ConfigVariables.sqf for more info @icomrade 
+[NEW] Temperature factors are now configurable with DZE_TempVars see configVariables.sqf for more info @icomrade 
 [NEW] Weather effects are now configurable with DZE_WeatherVariables See DynamicWeatherEffects.sqf for info on these values @icomrade
 [NEW] Full height cinderblock wall kits are now in game, classname "full_cinder_wall_kit" #1172 @icomrade
 [NEW] You can exclude built items from the god mode base function using DZE_GodModeBaseExclude = []; which is an array of item classnames
@@ -102,9 +102,9 @@
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
 [UPDATED] Updated all config.cfg in Config-Examples, Added Default Steam Ports and Updated Layout. @Namindu
-[UPDATED] Epoch.sql, 1.0.5_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
+[UPDATED] Epoch.sql, 1.0.6_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 
-[INFO] If you use any of the community mods now included in this release (Advanced Trading, Plot Management, Snap Build Pro, A Plot For Life) you MUST uninstall them from your mission, the mods have been improved and many bugs have been fixes, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
+[INFO] If you use any community mods included in this release (Advanced Trading, Build Vectors, Door or Plot Management, Snap Build Pro, A Plot For Life) you MUST uninstall them from your mission. The mods have been improved and many bugs have been fixed, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
 [INFO] Server owners and players should use the stable branch of ArmA 2 OA
