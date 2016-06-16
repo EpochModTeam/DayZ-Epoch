@@ -23,7 +23,7 @@ DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
 DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming - doesn't work with amphibious pook which you should not use due to other issues
 DZE_TempVars = [7, 15, 4, 4, 2, 3, 2, 0.25, 0.75, 0.5]; //[vehicle, fire, building, moving, sun, water, standing, rain, wind, night] water, standing, rain, wind and night factors have a negative impact on temperature, the greater they are the quicker the player gets cold
 DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0, 1, 0, 0.8, 0, 8, 25, 50, 0, false]; //See DynamicWeatherEffects.sqf for info on these values
-DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 (default) allow player to hold two primary weapons, one on back and one in their hands
+DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
@@ -61,7 +61,7 @@ Z_MoneyVariable = "cashMoney"; // If using a Single currency system, change this
 DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
 DZE_plotManagementMustBeClose = true; //Players must be within 10m of pole to be added as a plot friend.
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby
-DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole. (default 6)
+DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole.
 DZE_PlotOwnership = true; //allows plot owner to take ownership of buildables (excluding lockable items) near a plot pole. Useful for servers that allow base capturing so the new owner can modify/delete/upgrade existing structures
 
 // Snap Build and Build Vectors
@@ -74,24 +74,20 @@ DZE_dirWithDegrees = true; // When rotating objects with Q&E, use the custom deg
 DZE_buildMaxMoveDistance = 10; // Max distance player can walk from start position when building. Anything >= the differnce between DZE_PlotPole values is not recommended (allows walking into other plots).
 DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower object from start position when building.
 
-
-/////////// doorManagement Variables ///////////
-// Let owner and plot friends and door friends manage door access
-DZE_doorManagement = true;
+// Door Management
+DZE_doorManagement = true; // Enable Door Management by @DevZupa. 
 DZE_doorManagementMustBeClose = true; //Players must be within 10m of door to be added as a door friend.
 DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every door's management menu and open it
 DZE_doorManagementAllowManualCode = true; //Allows opening doors still using PIN
-DZE_doorManagementMaxFriends = 10; //Maximum number of friends allowed on a door. (default 10)
-// Set access rights (unlock) for doors
-DZE_doorManagementAllowAccess_owner = true;
+DZE_doorManagementMaxFriends = 10; //Maximum number of friends allowed on a door.
+DZE_doorManagementAllowAccess_owner = true; // Allow unlock.
 DZE_doorManagementAllowAccess_ownerFriendlies = false;
 DZE_doorManagementAllowAccess_plotOwner = false;
 DZE_doorManagementAllowAccess_plotFriends = false;
 DZE_doorManagementAllowAccess_plotAdmins = false;
 DZE_doorManagementAllowAccess_doorFriends = true;
 DZE_doorManagementAllowAccess_doorAdmins = true;
-// Set management rights for doors (beware that managers can add theirselves and others as door friends)
-DZE_doorManagementAllowManage_owner = true;
+DZE_doorManagementAllowManage_owner = true; // Beware managers can add themselves and others as door friends.
 DZE_doorManagementAllowManage_ownerFriendlies = false;
 DZE_doorManagementAllowManage_plotOwner = false;
 DZE_doorManagementAllowManage_plotFriends = false;

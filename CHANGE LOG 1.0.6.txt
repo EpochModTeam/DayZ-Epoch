@@ -31,6 +31,7 @@
 [NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; see ConfigVariables.sqf for more info @icomrade
 [NEW] A Plot For Life v2.5 by RimBlock is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @RimBlock @icomrade
 [NEW] Build Vectors v4 by Striker is now included, only enabled with Snap building. Note there is no option to turn off Vector Building with Snap Building enabled @strikerforce @icomrade
+[NEW] Door Management v3.0 by Zupa is now included and enabled by default with variable DZE_doorManagement, see configVariables.sqf @DevZupa @Bruce-LXXVI @ebaydayz 
 [NEW] Plot Management v2.1 by Zupa is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @DevZupa @Bruce-LXXVI @icomrade
 [NEW] Precise Base Building v1.0.5 by Mikeeeyy is now included. @Mikeeeyy @icomrade @ebaydayz
 [NEW] You may toggle vehicle destruction effects to prevent damage from vehicle explosions (useful to prevent griefing from ramming) use DZE_NoVehicleExplosions = true; to enable #1198 @icomrade
