@@ -420,8 +420,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 
 		if(_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
-				_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
-				If ((_isowner select 0) || (_isowner select 1)) then {
+				_isowner = [player, _cursorTarget] call FNC_check_access;
+				if ((_isowner select 0) or (_isowner select 1) or (_isowner select 2)) then {
 					_player_deleteBuild = true;
 				};
 			};
@@ -633,20 +633,18 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {_canDo && speed player <= 1}) then {
 		if (DZE_permanentPlot) then {
 			if (s_player_plotManagement < 0) then {
-					_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
-					If ((_isowner select 0) || (_isowner select 1)) then {
-						s_player_plot_take_ownership = player addAction ["Take plot items ownership", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
-					};
+				_isowner = [player, _cursorTarget] call FNC_check_access;
+				if ((_isowner select 0) or (_isowner select 3) or (_isowner select 4)) then {
 					s_player_plotManagement = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
 				};
+			};
 		} else {
 			if (s_player_maintain_area < 0) then {
 				s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", ["maintain",_cursorTarget], 5, false];
 				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", ["preview",_cursorTarget], 5, false];
 			};
 		};
-		_plotDistance = (DZE_PlotPole select 0);
-		_PlotsmarkersNear = count (_cursorTarget nearEntities ["Land_coneLight", _PlotDistance]);
+		_PlotsmarkersNear = count (_cursorTarget nearEntities ["Land_coneLight", DZE_PlotPole select 0]);
 		if (s_player_plot_boundary_on < 0) then {
 			If (_PlotsmarkersNear == 0 ) then{
 				s_player_plot_boundary_on = player addAction ["Show plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_showPlotRadius.sqf", "", 1, false];
@@ -660,8 +658,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		if (DZE_permanentPlot) then {
 			if (s_player_plot_take_ownership < 0) then {
 				if (DZE_PlotOwnership) then {
-					_isowner = [player, _cursorTarget] call FNC_check_owner_friends;
-					If (_isowner select 0) then {
+					_isowner = [player, _cursorTarget] call FNC_check_access;
+					if (_isowner select 0) then {
 						s_player_plot_take_ownership = player addAction ["Take plot items ownership", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
 					};
 				};

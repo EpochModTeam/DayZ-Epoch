@@ -15,17 +15,17 @@ _changecount = 0;
 
 // Check is owner of the plot pole.
 
-_isowner = [player, _plotpole] call FNC_check_owner_friends;
+_isowner = [player, _plotpole] call FNC_check_access;
 _itemsExist = false;
 
-if ((_isowner select 0 )) then {
+if (_isowner select 0) then {
 	_findNearestObjects = (position _plotpole) nearEntities _distance;
 	{
 		_object = _x;
 		_classname = typeOf _object;
 		if (_classname in DZE_plotTakeOwnershipItems)then {
 		
-			_isowner = [player, _object] call FNC_check_owner_friends;
+			_isowner = [player, _object] call FNC_check_access;
 			diag_log text "Plot Take Ownership: Object in DZE_plotTakeOwnershipItems";
 		
 			if !( _isowner select 0 ) then{

@@ -4,7 +4,7 @@ DZE_ActionInProgress = true;
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_activatingPlayer","_obj","_playerUID","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_friendlies","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular"];
+private ["_activatingPlayer","_obj","_playerUID","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_findNearestPoles","_findNearestPole","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular"];
 
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
@@ -60,9 +60,9 @@ _nearestPole = _plotcheck select 2;
 
 if(_IsNearPlot >= 1) then {
 	// Since there are plot poles nearby we need to check ownership && friend status
-	_buildcheck = [player, _nearestPole] call FNC_check_owner_friends;
+	_buildcheck = [player, _nearestPole] call FNC_check_access;
 	_isowner = _buildcheck select 0;
-	_isfriendly = _buildcheck select 1;
+	_isfriendly = ((_buildcheck select 1) or (_buildcheck select 3));
 	if (!_isowner && !_isfriendly) then {
 		_limit = round(_limit*2);
 	};

@@ -42,9 +42,9 @@ if(_IsNearPlot == 0) then {
 		_canBuild = true;
 	} else {
 		if (DZE_permanentPlot) then {
-			_buildcheck = [player, _nearestPole] call FNC_check_owner_friends;
+			_buildcheck = [player, _nearestPole] call FNC_check_access;
 			_isowner = _buildcheck select 0;
-			_isfriendly = _buildcheck select 1;
+			_isfriendly = ((_buildcheck select 1) or (_buildcheck select 3));
 			if (_isowner || _isfriendly) then {
 				_canBuild = true;
 			};

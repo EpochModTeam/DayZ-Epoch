@@ -1,6 +1,6 @@
 
 
-private ["_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_charID","_rcharID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_combattimeout","_timeleft"];
+private ["_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_id","_rID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_combattimeout","_timeleft"];
 
 _flash = {
     if (ctrlShown _this) then {
@@ -158,17 +158,22 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 
 		// Display name if player opt-in or if friend
 		_friendlies = player getVariable ["friendlies", []];
-		_charID = player getVariable ["CharacterID", "0"];
+		if (DZE_permanentPlot) then {
+			_id = [player] call FNC_GetPlayerUID;
+			_rID = [_humanityTarget] call FNC_GetPlayerUID;
+		} else {
+			_id = player getVariable ["CharacterID","0"];
+			_rID = _humanityTarget getVariable ["CharacterID","0"];
+		};
 
-		_rcharID = _humanityTarget getVariable ["CharacterID", "0"];
 		_rfriendlies = _humanityTarget getVariable ["friendlies", []];
 		_rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
 
-		if ((_rcharID in _friendlies) && (_charID in _rfriendlies)) then {
+		if ((_rID in _friendlies) && (_id in _rfriendlies)) then {
 
-			if !(_charID in _rfriendlyTo) then {
+			if !(_id in _rfriendlyTo) then {
 				// diag_log format["IS FRIENDLY: %1", _player];
-				_rfriendlyTo set [count _rfriendlyTo, _charID];
+				_rfriendlyTo set [count _rfriendlyTo, _id];
 				_humanityTarget setVariable ["friendlyTo", _rfriendlyTo, true];
 			};
 	

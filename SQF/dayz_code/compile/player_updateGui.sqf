@@ -1,6 +1,7 @@
 
 //private ["_display","_ctrlBloodOuter","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_ctrlFoodBorder","_ctrlThirstBorder","_ctrlTempBorder","_tempVal","_array","_ctrlEar","_ctrlEye","_ctrlFracture","_visual","_audible","_uiNumber","_bloodText","_blood","_thirstLvl","_foodLvl","_tempImg","_bloodLvl","_tempLvl","_thirst","_food","_temp"];
-private ["_flash","_array","_bloodText","_tempImg","_uiNumber","_blood","_foodLvl","_thirstLvl","_audible","_visual","_bloodType","_rhFactor","_ctrlBloodType", "_bloodTestdone"];
+private ["_flash","_array","_bloodText","_tempImg","_uiNumber","_blood","_foodLvl","_thirstLvl","_audible","_visual","_bloodType","_rhFactor","_ctrlBloodType", "_bloodTestdone",
+"_string","_humanityTarget","_distance","_size","_friendlies","_id","_rID","_rfriendlies","_rfriendlyTo","_color","_targetControl"];
 
 _flash = {
     if (ctrlShown _this) then {
@@ -206,6 +207,71 @@ if (r_player_injured) then {
 }
 else {
     _ctrlBleed ctrlShow false;
+};
+
+/*
+Opt-in tag system with friend tagging
+*/
+_string = "";
+_humanityTarget = cursorTarget;
+if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTarget}) then {
+
+	_distance = player distance _humanityTarget;
+
+	if (_distance < DZE_HumanityTargetDistance) then {
+		
+		_size = (1-(floor(_distance/5)*0.1)) max 0.1;
+
+		// Display name if player opt-in or if friend
+		_friendlies = player getVariable ["friendlies", []];
+		if (DZE_permanentPlot) then {
+			_id = [player] call FNC_GetPlayerUID;
+			_rID = [_humanityTarget] call FNC_GetPlayerUID;
+		} else {
+			_id = player getVariable ["CharacterID","0"];
+			_rID = _humanityTarget getVariable ["CharacterID","0"];
+		};
+		_rfriendlies = _humanityTarget getVariable ["friendlies", []];
+		_rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
+
+		if ((_rID in _friendlies) && (_id in _rfriendlies)) then {
+
+			if !(_id in _rfriendlyTo) then {
+				// diag_log format["IS FRIENDLY: %1", _player];
+				_rfriendlyTo set [count _rfriendlyTo, _id];
+				_humanityTarget setVariable ["friendlyTo", _rfriendlyTo, true];
+			};
+	
+			// <br /><t %2 align='center' size='0.7'>Humanity: %3</t>
+
+			_color = "color='#339933'";
+			_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+		
+		} else {
+
+			// Humanity checks
+			_humanity = _humanityTarget getVariable ["humanity",0];
+
+			_color = "color='#ffffff'";
+			if(_humanity < -5000) then {
+				_color = "color='#ff0000'";
+			} else {
+				if(_humanity > 5000) then {
+					_color = "color='#3333ff'";
+				};
+			};
+			if((_humanityTarget getVariable ["DZE_display_name", false]) || (DZE_ForceNameTagsInTrader && isInTraderCity)) then {
+				_string = format["<t %2 align='center' size='%3'>%1</t>",(name _humanityTarget),_color,_size];
+			};
+		};
+	};
+};
+
+// update gui if changed
+if (dayz_humanitytarget != _string) then {
+	_targetControl = _display displayCtrl 1199;
+	_targetControl ctrlSetStructuredText (parseText _string);
+	dayz_humanitytarget = _string;
 };
 
 _array = [_foodVal,_thirstVal];

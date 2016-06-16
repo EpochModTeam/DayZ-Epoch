@@ -8,7 +8,7 @@ if (DZE_ActionInProgress) exitWith {};
 	- [] call fnc_usec_damageActions;
 ************************************************************/
 
-private ["_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasEmptyBag","_hasTester","_hasAntibiotics","_hasBloodBag","_vehClose","_hasVehicle","_action1","_action2","_action3","_y","_playerMagazines"];
+private ["_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasEmptyBag","_hasTester","_hasAntibiotics","_hasBloodBag","_vehClose","_hasVehicle","_action1","_action2","_action3","_y","_playerMagazines","_isFriendly"];
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -211,12 +211,8 @@ if (isPlayer cursorTarget) then {
 			};
 			if (_unit isKindOf "Man") then {
 				// should only fire if cursor target is man and not vehicle
-				_charID = _unit getVariable ["CharacterID", "0"];
-				if (DZE_permanentPlot) then {
-					_charID = [_unit] call FNC_GetPlayerUID;
-				};
-				_friendlies = [player, _unit] call FNC_check_owner_friends;
-				if !(_charID in _friendlies) then {
+				_isFriendly = [player, _unit] call FNC_check_access;
+				if !(_isFriendly select 1) then {
 					r_action = true;
 					_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true];
 					r_player_actions set [count r_player_actions,_action];
