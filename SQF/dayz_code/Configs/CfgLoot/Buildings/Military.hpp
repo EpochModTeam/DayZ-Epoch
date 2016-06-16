@@ -22,9 +22,9 @@ class MilitarySpecial : Military
 	zombieClass[] =
 	{
 		"z_soldier_heavy",
-		"z_new_worker2",
-		"z_new_worker3",
-		"z_new_worker4"
+		"z_soldier_heavy",
+		"z_soldier",
+		"z_policeman"
 	};
 	lootChance = 0.4;
 	lootGroup = MilitarySpecial;
