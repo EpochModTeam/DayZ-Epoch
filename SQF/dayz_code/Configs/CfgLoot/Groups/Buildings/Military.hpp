@@ -13,7 +13,7 @@ Military[] =
 	//Tools
 	{Loot_TOOL,			3,		Binocular},
 	{Loot_TOOL,			4,		ItemFlashlightRed},
-	{Loot_TOOL,			4,		ItemKnife},
+	{Loot_TOOL,			3.5,		ItemKnife},
 	{Loot_TOOL,			0.5,	ItemGPS},
 	{Loot_TOOL,			3,		ItemMap},
 	{Loot_TOOL,			3,		ItemEtool},
