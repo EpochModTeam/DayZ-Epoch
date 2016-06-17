@@ -107,7 +107,7 @@ machineguns[] = {
 	{Loot_WEAPON,		1,		Pecheneg_DZ},
 	{Loot_WEAPON,		1,		PKM_DZ}, //PK_DZ
 	{Loot_WEAPON,		0.9,	L110A1_DZ}, //BAF_L110A1_Aim_DZE scope is slightly different from L110A1_CCO_DZ, otherwise identical
-	{Loot_WEAPON,		1,		MG36_camo},
+	{Loot_WEAPON,		0.9,		MG36_camo},
 	{Loot_WEAPON,		1,		M60A4_EP1_DZE},
 	{Loot_WEAPON,		1,		MG36},
 	{Loot_WEAPON,		1,		M249_m145_EP1_DZE},
