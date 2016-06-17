@@ -1,15 +1,15 @@
 class Category_485 {
-	class G36A_Camo_DZ {
-		type = "trade_weapons";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
-	};
 	class G36C_DZ {
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
 	class G36C_camo { //Iron sight desert camo
+		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
+	class G36A_Camo_DZ {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};
 		sell[] = {3,"ItemGoldBar"};
@@ -54,6 +54,16 @@ class Category_485 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
+	class L85_Holo_DZ {
+		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
+	class BAF_L85A2_RIS_SUSAT {
+		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
 	class SA58_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
@@ -93,16 +103,6 @@ class Category_485 {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};
-	};
-	class BAF_L85A2_RIS_SUSAT {
-		type = "trade_weapons";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
-	};
-	class L85_Holo_DZ {
-		type = "trade_weapons";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
 	};
 };
 
