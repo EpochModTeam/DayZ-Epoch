@@ -63,7 +63,7 @@ MilitarySpecial[] =
 	{Loot_TOOL,			4,		Binocular},
 	{Loot_TOOL,			2,		Binocular_Vector},
 	{Loot_TOOL,			3,		ItemFlashlightRed},
-	{Loot_TOOL,			5,		ItemKnife},
+	{Loot_TOOL,			4,		ItemKnife},
 	{Loot_TOOL,			1.3,	ItemGPS},
 	{Loot_TOOL,			4,		ItemMap},
 	{Loot_TOOL,			2,		ItemEtool},
@@ -77,7 +77,7 @@ MilitarySpecial[] =
 	{Loot_GROUP,		2,		specialclothes},
 	
 	//Containers
-	{Loot_CONTAINER,	3,		DZ_AmmoBoxRU, AmmoBoxRU1, 10, 20},	//5.45x39
+	{Loot_CONTAINER,	2.5,		DZ_AmmoBoxRU, AmmoBoxRU1, 10, 20},	//5.45x39
 	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxUS1, 7, 14},	//5.56x45
 	{Loot_CONTAINER,	2,		DZ_AmmoBoxRU, AmmoBoxCZ1, 7, 14},	//7.62x39
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxCZ2, 2, 5},	//7.62x54R
