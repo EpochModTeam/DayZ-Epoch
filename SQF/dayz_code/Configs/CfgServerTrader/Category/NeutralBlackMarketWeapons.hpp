@@ -39,6 +39,11 @@ class Category_526 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
+	class MG36_camo {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {6,"ItemGoldBar"};
+	};
 	class M60A4_EP1_DZE {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
@@ -49,19 +54,14 @@ class Category_526 {
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
-	class MG36_camo {
+	class VSS_vintorez {
 		type = "trade_weapons";
-		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {6,"ItemGoldBar"};
+		buy[] = {3,"ItemGoldBar10oz"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class KSVK_DZE {
 		type = "trade_weapons";
 		buy[] = {3,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};
-	};
-	class VSS_vintorez {
-		type = "trade_weapons";
-		buy[] = {3,"ItemGoldBar10oz"};
-		sell[] = {4,"ItemGoldBar"};
 	};
 };
