@@ -15,7 +15,6 @@ _needText = localize "str_epoch_player_246";
 _playerUID = [player] call FNC_GetPlayerUID;
 _canBuildOnPlot = false;
 _plotcheck = [player, false] call FNC_find_plots;
-_distance = _plotcheck select 0;
 _IsNearPlot = _plotcheck select 1;
 _nearestPole = _plotcheck select 2;
 

@@ -21,12 +21,9 @@ _canBuild = false;
 _nearestPole = objNull;
 _ownerID = 0;
 _friendlies = [];
-
-_distance = DZE_PlotPole select 0;
 _needText = localize "str_epoch_player_246";
 
 _plotcheck = [player, false] call FNC_find_plots;
-_distance = _plotcheck select 0;
 _IsNearPlot = _plotcheck select 1;
 _nearestPole = _plotcheck select 2;
 
