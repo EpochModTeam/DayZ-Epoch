@@ -24,16 +24,6 @@ class Category_486 {
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};
 	};
-	class Pecheneg_DZ {
-		type = "trade_weapons";
-		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar10oz"};
-	};
-	class PKM_DZ {
-		type = "trade_weapons";
-		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {5,"ItemGoldBar"};
-	};
 	class RPK_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
@@ -45,6 +35,16 @@ class Category_486 {
 		sell[] = {5,"ItemGoldBar"};
 	};
 	class UK59_DZ {
+		type = "trade_weapons";
+		buy[] = {2,"ItemGoldBar10oz"};
+		sell[] = {1,"ItemGoldBar10oz"};
+	};
+	class PKM_DZ {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
+	};
+	class Pecheneg_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};
