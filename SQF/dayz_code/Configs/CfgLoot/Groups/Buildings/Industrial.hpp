@@ -9,7 +9,8 @@ Industrial[] =
 //	{Loot_WEAPON,		5,		ItemHatchet},
 	{Loot_VEHICLE,		5,		WeaponHolder_ItemHatchet},
 	{Loot_WEAPON,		1,		ItemPickaxe},
-	{Loot_WEAPON,		2,		ItemPickaxeBroken},
+//	{Loot_WEAPON,		2,		ItemPickaxeBroken},
+	{Loot_WEAPON,		2,		WeaponHolder_ItemPickaxeBroken},
 	{Loot_WEAPON,		1,		ItemSledge},
 	{Loot_MAGAZINE,		2,		ItemSledgeHandle},
 	{Loot_MAGAZINE,		2,		ItemSledgeHead},
@@ -38,7 +39,7 @@ Industrial[] =
 	
 	//Other
 	{Loot_GROUP,		15,		Parts},
-	{Loot_GROUP,		7,		Military},
+//	{Loot_GROUP,		7,		Military},
 	{Loot_PILE,			10,		Trash, 1, 3},
 	{Loot_PILE,			4,		Consumable, 1, 2},
 	{Loot_GROUP,		8,		Generic}
