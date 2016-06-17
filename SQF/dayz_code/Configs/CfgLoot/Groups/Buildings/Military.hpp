@@ -31,15 +31,15 @@ Military[] =
 	{Loot_CONTAINER,	1.3,		DZ_AmmoBoxRU, AmmoBoxRU1, 10, 20},		//545x39	AK74, RPK74
 	{Loot_CONTAINER,	0.7,		DZ_AmmoBoxRU, AmmoBoxRU2, 10, 20},		//762x39	AK47
 	{Loot_CONTAINER,	0.5,		DZ_AmmoBoxRU, AmmoBoxRU3, 5, 10},		//762x54r	SVD, PKM
-	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxEU1, 10, 20},		//556x45	G36, M249
+	{Loot_CONTAINER,	1.5,		DZ_AmmoBoxUS, AmmoBoxEU1, 10, 20},		//556x45	G36, M249
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxEU2, 5, 10},		//762x51	FAL, M240
-	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxUS1, 10, 20},		//556x45	STANAG, M249
+	{Loot_CONTAINER,	1.5,		DZ_AmmoBoxUS, AmmoBoxUS1, 10, 20},		//556x45	STANAG, M249
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxUS2, 5, 10},		//762x51	DMR, M240
-	{Loot_CONTAINER,	2,		DZ_MedBox, MedicalBox, 10, 20},
+//	{Loot_CONTAINER,	2,		DZ_MedBox, MedicalBox, 10, 20},
 	
 	//Other
 	{Loot_MAGAZINE,		5,		FoodMRE},
-	{Loot_MAGAZINE,		5,		ItemSandbag},
+	{Loot_MAGAZINE,		4,		ItemSandbag},
 	{Loot_PILE,			15,		AmmoMilitaryLow, 1, 3},
 	{Loot_GROUP,		4,		AmmoMilitaryHigh},
 	{Loot_GROUP,		4,		AttachmentsGeneric},
