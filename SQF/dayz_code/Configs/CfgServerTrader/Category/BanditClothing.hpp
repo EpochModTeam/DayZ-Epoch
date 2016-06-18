@@ -9,6 +9,16 @@ class Category_575 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
+	class Skin_BanditW1_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_BanditW2_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
 	class Skin_GUE_Commander_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
@@ -45,16 +55,6 @@ class Category_575 {
 		sell[] = {1,"ItemGoldBar"};
 	};
 	class Skin_TK_INS_Warlord_EP1_DZ {
-		type = "trade_items";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
-	};
-	class Skin_BanditW1_DZ {
-		type = "trade_items";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
-	};
-	class Skin_BanditW2_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};

@@ -4,19 +4,24 @@ class Category_529 {
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class PipeBomb {
+	class HandGrenade_east {
 		type = "trade_items";
-		buy[] = {4,"ItemBriefcase100oz"};
-		sell[] = {2,"ItemGoldBar10oz"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class 1Rnd_HE_M203 {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class HandGrenade_east {
+	class 1Rnd_HE_GP25 {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
+	};
+	class PipeBomb {
+		type = "trade_items";
+		buy[] = {4,"ItemBriefcase100oz"};
+		sell[] = {2,"ItemGoldBar10oz"};
 	};
 };

@@ -1,4 +1,9 @@
 class Category_601 {
+	class ItemWaterbottleUnfilled {
+		type = "trade_items";
+		buy[] = {3,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
 	class ItemSodaCoke {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
@@ -93,11 +98,6 @@ class Category_601 {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
-	};
-	class ItemWaterbottleUnfilled {
-		type = "trade_items";
-		buy[] = {3,"ItemSilverBar"};
-		sell[] = {1,"ItemSilverBar"};
 	};
 	class ItemSodaRbull {
 		type = "trade_items";

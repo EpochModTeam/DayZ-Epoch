@@ -1,8 +1,23 @@
 class Category_679 {
+	class ItemWatch {
+		type = "trade_weapons";
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
 	class ItemCompass {
 		type = "trade_weapons";
 		buy[] = {6,"ItemSilverBar"};
 		sell[] = {3,"ItemSilverBar"};
+	};
+	class ItemMap {
+		type = "trade_weapons";
+		buy[] = {6,"ItemSilverBar"};
+		sell[] = {3,"ItemSilverBar"};
+	};
+	class ItemGPS {
+		type = "trade_weapons";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
 	};
 	class Binocular {
 		type = "trade_weapons";
@@ -14,10 +29,10 @@ class Category_679 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class ItemEtool {
+	class NVGoggles {
 		type = "trade_weapons";
-		buy[] = {9,"ItemSilverBar10oz"};
-		sell[] = {6,"ItemSilverBar10oz"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
 	};
 	class ItemFlashlight {
 		type = "trade_weapons";
@@ -29,10 +44,15 @@ class Category_679 {
 		buy[] = {1,"ItemSilverBar10oz"};
 		sell[] = {5,"ItemSilverBar"};
 	};
-	class ItemGPS {
+	class ItemMatchbox {
 		type = "trade_weapons";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class ItemEtool {
+		type = "trade_weapons";
+		buy[] = {9,"ItemSilverBar10oz"};
+		sell[] = {6,"ItemSilverBar10oz"};
 	};
 	class ItemHatchet {
 		type = "trade_weapons";
@@ -44,30 +64,10 @@ class Category_679 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class ItemMap {
-		type = "trade_weapons";
-		buy[] = {6,"ItemSilverBar"};
-		sell[] = {3,"ItemSilverBar"};
-	};
-	class ItemMatchbox {
-		type = "trade_weapons";
-		buy[] = {2,"ItemSilverBar"};
-		sell[] = {1,"ItemSilverBar"};
-	};
 	class ItemToolbox {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
-	};
-	class ItemWatch {
-		type = "trade_weapons";
-		buy[] = {2,"ItemSilverBar"};
-		sell[] = {1,"ItemSilverBar"};
-	};
-	class NVGoggles {
-		type = "trade_weapons";
-		buy[] = {4,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
 	};
 	class ItemCrowbar {
 		type = "trade_weapons";

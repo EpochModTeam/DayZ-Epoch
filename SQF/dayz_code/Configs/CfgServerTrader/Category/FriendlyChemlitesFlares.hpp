@@ -24,6 +24,16 @@ class Category_542 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
+	class FlareWhite_GP25 {
+		type = "trade_items";
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class FlareGreen_GP25 {
+		type = "trade_items";
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
 	class HandRoadFlare {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

@@ -1,5 +1,5 @@
 class Category_487 {
-	class M40A3_DZ {
+	class M4SPR {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
@@ -14,7 +14,17 @@ class Category_487 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class M4SPR {
+	class M24_DZ {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class M24_des_EP1 { // desert camo
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class M40A3_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
@@ -25,16 +35,6 @@ class Category_487 {
 		sell[] = {6,"ItemGoldBar"};
 	};
 	class SVD_des_EP1 { // desert camo
-		type = "trade_weapons";
-		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {6,"ItemGoldBar"};
-	};
-	class M24_DZ {
-		type = "trade_weapons";
-		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {6,"ItemGoldBar"};
-	};
-	class M24_des_EP1 { // desert camo
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
