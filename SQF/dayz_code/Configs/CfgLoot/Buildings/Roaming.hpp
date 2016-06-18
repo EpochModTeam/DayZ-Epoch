@@ -14,9 +14,12 @@ class Land_Shed_W03 : HouseRoaming {};
 class Land_HouseV_2T1 : HouseRoaming {};
 class Land_HouseV_3I2 : HouseRoaming {};
 class land_housev_3i3: HouseRoaming  {
-	lootPos[] = {{-4.2334,0.291992,-1.47064},{1.10059,-2.99854,-0.790649},{3.53027,-2.34033,-1.74265}};
+	lootPos[] = {
+		{-4.2334,0.291992,-1.47064},{1.10059,-2.99854,-0.790649},{3.53027,-2.34033,-1.74265},
+		//DZE EXTRA
+		{-4.85645,0.550293,-0.340637},{2.21289,0.783691,-0.160645},{-0.833008,0.554199,-0.620636},{1.79785,-2.99902,-1.09064},{5.06055,-2.68164,-1.56265}
+	};
 	zedPos[] = {{-4.18457,-1.68164,-0.525635},{0.419922,-1.00781,-0.525635},{4.35059,-1.37939,-0.98764}};
-	lootPosSmall[] = {{-4.85645,0.550293,-0.340637},{2.21289,0.783691,-0.160645},{-0.833008,0.554199,-0.620636},{1.79785,-2.99902,-1.09064},{5.06055,-2.68164,-1.56265}};
 };
 class Land_HouseBlock_A1_2 : HouseRoaming {};
 class Land_HouseBlock_A2 : HouseRoaming {};
@@ -24,11 +27,11 @@ class Land_HouseBlock_B1 : HouseRoaming {};
 class Land_HouseBlock_B2 : HouseRoaming {};
 class Land_HouseBlock_B3: HouseRoaming {
 	zedPos[] = {{0.878418,5.69189,-6.38459}};
-	lootPosSmall[] = {{2.4126,5.16846,-6.94959}};
+	lootPos[] = {{2.4126,5.16846,-6.94959}};
 };
 class Land_HouseBlock_B4: HouseRoaming{
 	zedPos[] = {{0.0595703,-5.58252,-6.69312},{-1.1543,5.55225,-6.74633}};
-	lootPosSmall[] = {{-0.0693359,4.82227,-7.28133}};
+	lootPos[] = {{-0.0693359,4.82227,-7.28133}};
 };
 class Land_HouseBlock_C2 : HouseRoaming {};
 class Land_HouseBlock_C3 : HouseRoaming {};
