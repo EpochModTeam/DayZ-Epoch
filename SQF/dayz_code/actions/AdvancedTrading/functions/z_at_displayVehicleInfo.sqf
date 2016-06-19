@@ -120,8 +120,8 @@ if (Z_SingleCurrency) then {
 	"<img image='%1' size='3' /><br />" +
 	"<t color='#33BFFF' size='0.8'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%12: </t><t color='#ffffff' size='0.8'>%5 %7</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%13: </t><t color='#ffffff' size='0.8'>%6 %7</t><br />" +
+	"<t color='#33BFFF' size='0.8'>%12: </t><t color='#ffffff' size='0.8'>%5 %7</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%14/%15/%16: </t><t color='#ffffff' size='0.8'>%9/%8/%4</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%17: </t><t color='#ffffff' size='0.8'>%18  </t><t color='#33BFFF' size='0.8'>%24: </t><t color='#ffffff' size='0.8'>%25</t><br />" + // Armor / Seats
 	"<t color='#33BFFF' size='0.8'>%21%22: </t><t color='#ffffff' size='0.8'>%23  </t><t color='#33BFFF' size='0.8'>%19: </t><t color='#ffffff' size='0.8'>%20</t><br />" + // MaxSpeed / Fuel
@@ -141,8 +141,8 @@ if (Z_SingleCurrency) then {
 	"<img image='%1' size='3' /><br />" +
 	"<t color='#33BFFF' size='0.8'>%13: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%14: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%15: </t><t color='#ffffff' size='0.8'>%5 <img image='%11' /> %10</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%16: </t><t color='#ffffff' size='0.8'>%6 <img image='%12' /> %7</t><br />" +
+	"<t color='#33BFFF' size='0.8'>%15: </t><t color='#ffffff' size='0.8'>%5 <img image='%11' /> %10</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%17/%18/%19: </t><t color='#ffffff' size='0.8'>%8/%9/%4</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%20: </t><t color='#ffffff' size='0.8'>%21  </t><t color='#33BFFF' size='0.8'>%27: </t><t color='#ffffff' size='0.8'>%28</t><br />" + // Armor / Seats
 	"<t color='#33BFFF' size='0.8'>%24%25: </t><t color='#ffffff' size='0.8'>%26  </t><t color='#33BFFF' size='0.8'>%22: </t><t color='#ffffff' size='0.8'>%23</t><br />" + // MaxSpeed  /  Fuel

@@ -8,29 +8,44 @@ _Z_logTrade = {
 	_buyOrSell = _this select 2;
 	_price = _this select 3;
 	_container = switch (Z_SellingFrom) do {
-		case 0 : {localize "STR_EPOCH_TRADE_BACKPACK"};
-		case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
-		case 2 : {localize "STR_UI_GEAR"};
+	case 0 : {localize "STR_EPOCH_TRADE_BACKPACK"};
+	case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
+	case 2 : {localize "STR_UI_GEAR"};
 	};
-	_currency = if (Z_SingleCurrency) then {"Coins"} else {"Currency"};
+	_tcost = _price call Z_calcDefaultCurrencyNoImg;
+	_currency = if (Z_SingleCurrency) then {"Coins"} else {""};
 	if (isNil "inTraderCity") then {inTraderCity = "Unknown Trader City"};
 
 	// Log to client RPT
-	if (_buyOrSell == "buy") then {
-		diag_log format["%5: Bought %4 x %1 into %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+	if (Z_SingleCurrency) then {
+		if (_buyOrSell == "buy") then {
+			diag_log format["%5: Bought %4 x %1 into %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+		} else {
+			diag_log format["%5: Sold %4 x %1 from %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+		};
 	} else {
-		diag_log format["%5: Sold %4 x %1 from %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
-	};
+		if (_buyOrSell == "buy") then {
+			diag_log format["%5: Bought %4 x %1 into %7 at %2 for %3",_className,inTraderCity,_tcost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+		} else {
+			diag_log format["%5: Sold %4 x %1 from %7 at %2 for %3",_className,inTraderCity,_tcost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+		};
+	};	
 
 	// Log to server RPT
 	if (DZE_serverLogTrades) then {
-		
-		if (_buyOrSell == "buy") then {
-			PVDZE_obj_Trade = [player,0,0,_className,inTraderCity,_currency,_price,_quantity,_container,false];
+		if (Z_SingleCurrency) then {
+			if (_buyOrSell == "buy") then {
+				PVDZE_obj_Trade = [player,0,0,_className,inTraderCity,_currency,_price,_quantity,_container,false];
+			} else {
+				PVDZE_obj_Trade = [player,0,1,_className,inTraderCity,_currency,_price,_quantity,_container,false];
+			};
 		} else {
-			PVDZE_obj_Trade = [player,0,1,_className,inTraderCity,_currency,_price,_quantity,_container,false];
+			if (_buyOrSell == "buy") then {
+				PVDZE_obj_Trade = [player,0,0,_className,inTraderCity,_currency,_tcost,_quantity,_container,false];
+			} else {
+				PVDZE_obj_Trade = [player,0,1,_className,inTraderCity,_currency,_tcost,_quantity,_container,false];
+			};
 		};
-
 		publicVariableServer "PVDZE_obj_Trade";
 	};
 };

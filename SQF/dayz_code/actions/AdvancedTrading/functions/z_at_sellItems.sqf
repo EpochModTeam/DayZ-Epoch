@@ -1,4 +1,4 @@
-private ["_index","_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success","_bag","_itemsToLog"];
+private ["_index","_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success","_bag","_itemsToLog","_tcost"];
 
 _index = count (Z_SellArray) - 1;
 _tempArray = Z_SellArray;
@@ -98,22 +98,22 @@ if(_index > -1)then{
 		_name = _x select 0;
 
 		switch (true) do {
-			case (_type == "trade_items") :
+		case (_type == "trade_items") :
 			{
 				_itemsArray set [count(_itemsArray),_name];
 				_itemsCheckArray set [count(_itemsCheckArray),[_x select 2, _x select 11]];
 			};
-			case (_type == "trade_weapons") :
+		case (_type == "trade_weapons") :
 			{
 				_weaponsArray set [count(_weaponsArray),_name];
 				_weaponsCheckArray set [count(_weaponsCheckArray),[_x select 2, _x select 11]];
 			};
-			case (_type == "trade_backpacks") :
+		case (_type == "trade_backpacks") :
 			{
 				_bpArray set [count(_bpArray),_name];
 				_bpCheckArray set [count(_bpCheckArray),[_x select 2, _x select 11]];
 			};
-			case (_type in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) :
+		case (_type in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) :
 			{
 				if (local Z_vehicle) then {
 					_VehKey = [Z_vehicle, _type] call _sellVehicle;
@@ -236,18 +236,19 @@ if(_index > -1)then{
 	};
 	if(typeName _money  == "SCALAR") then {
 		if (Z_SingleCurrency) then {
-				_success = [player,_money] call SC_fnc_addCoins;
-				systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE", _money , CurrencyName];
+			_success = [player,_money] call SC_fnc_addCoins;
+			systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE", _money , CurrencyName];
 		} else {
-				_success = [_money, 0] call Z_returnChange;
-				systemChat localize "STR_EPOCH_TRADE_SUCCESSFUL";
+			_success = [_money, 0] call Z_returnChange;
+			_tcost = "";
+			_tcost = _money call z_calcDefaultCurrencyNoImg;
+			systemChat format[localize "STR_EPOCH_TRADE_SELL_SUCCESS",_tcost];
 		};
-		
 		_itemsToLog call Z_logTrade;
 	}else{
 		systemChat localize "STR_EPOCH_TRADE_DEBUG";
 		diag_log "Money is not a number. Something went wrong.";
 	};
 }else{
-	systemChat localize "STR_EPOCH_TRADE_NO_ITEMS";
+	systemChat localize "STR_EPOCH_TRADE_SELL_NO_ITEMS";
 };
