@@ -15763,9 +15763,13 @@
 			<English>No info found</English>
 			<Russian>Нет информации</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_NO_ITEMS">
-			<English>No items to sell</English>
-			<Russian>Нет ничего на продажу</Russian>
+		<Key ID="STR_EPOCH_TRADE_BUY_NO_ITEMS">
+			<English>No items in buy list</English>
+			<Russian>???? ???? ???? ????</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELL_NO_ITEMS">
+			<English>No items sell list</English>
+			<Russian>???? ???? ???? ????</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
 			<English>Details</English>
@@ -15870,12 +15874,16 @@
 			<English>Trade successfull.</English>
 			<Russian>Продажа завершена.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_SUCCESS">
-			<English>Trade successfull, payed %1 worth of items.</English>
+		<Key ID="STR_EPOCH_TRADE_BUY_SUCCESS">
+			<English>Trade successfull, paid:%1.</English>
 			<Russian>Продано! С вас %1.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELL_SUCCESS">
+			<English>Trade successfull, received:%1.</English>
+			<Russian>???? ???? ???? ????</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_COINS">
-			<English>Trade successfull, payed %1 %2.</English>
+			<English>Trade successfull, paid %1 %2.</English>
 			<Russian>Продано! С вас %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_CHANGE">
