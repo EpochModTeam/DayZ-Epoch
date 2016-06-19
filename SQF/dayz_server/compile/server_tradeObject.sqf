@@ -19,7 +19,8 @@ if (count _this > 7) then {
 };
 
 _clientID = 	owner _player;
-_price = format ["%1x%2",_price,_currency];
+
+if (typeName _price  == "SCALAR") then { _price = format ["%1x%2",_price,_currency]; } else { _price = format ["%1",_price]; };
 _name = if (alive _player) then { name _player; } else { "Dead Player"; };
 _PUID = [_player] call FNC_GetPlayerUID;
 
