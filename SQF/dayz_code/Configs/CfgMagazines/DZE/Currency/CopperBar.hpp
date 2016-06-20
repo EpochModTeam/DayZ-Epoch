@@ -8,7 +8,7 @@ class ItemCopperBar: CA_Magazine {
 	descriptionShort = $STR_EPOCH_COPPER_DESC;
 	class ItemActions {
 		class Crafting {
-			text = $STR_EPOCH_PLAYER_210;
+			text = $STR_EPOCH_PLAYER_210_9;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
