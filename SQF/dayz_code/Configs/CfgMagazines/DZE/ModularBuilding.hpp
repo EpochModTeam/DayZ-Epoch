@@ -43,7 +43,7 @@ class full_cinder_wall_kit: CA_Magazine {
 	descriptionShort = $STR_EPOCH_FULLCINDERBLOCKWALL_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 325;
+	weight = 600;
 	class ItemActions {
 		class Build {
 			text = $STR_ACTIONS_BUILD;

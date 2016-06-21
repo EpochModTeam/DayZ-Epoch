@@ -35,3 +35,18 @@ Farm[] =
 	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		8,		Generic}
 };
+
+FarmSmall[] =
+{
+	{Loot_GROUP,		10,		pistols},
+	{Loot_WEAPON,		5,		ItemKnife},
+	{Loot_MAGAZINE,		3,		equip_duct_tape},
+	{Loot_MAGAZINE,		6,		equip_nails},
+	{Loot_MAGAZINE,		4,		equip_string},
+	{Loot_GROUP,		10,		Trash},
+	{Loot_GROUP,		15,		AmmoCivilian},
+	{Loot_GROUP,		3,		AttachmentsGeneric},
+	{Loot_GROUP,		8,		Consumable},
+	{Loot_WEAPON,		3,		ItemMatchbox},
+	{Loot_GROUP,		8,		GenericSmall}
+};

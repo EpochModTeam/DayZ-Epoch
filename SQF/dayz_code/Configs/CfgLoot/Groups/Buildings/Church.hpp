@@ -23,3 +23,16 @@ Church[] =
 	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		8,		Consumable}
 };
+
+ChurchSmall[] =
+{
+	//Tools
+	{Loot_WEAPON,		3,		ItemCompass},
+	{Loot_WEAPON,		3,		ItemMatchbox},
+	{Loot_GROUP,		3,		pistols},
+	{Loot_GROUP,		10,		Trash},
+	{Loot_GROUP,		5,		AmmoCivilian},
+	{Loot_GROUP,		2,		AttachmentsGeneric},
+	{Loot_GROUP,		4,		GenericSmall},
+	{Loot_GROUP,		8,		Consumable}
+};

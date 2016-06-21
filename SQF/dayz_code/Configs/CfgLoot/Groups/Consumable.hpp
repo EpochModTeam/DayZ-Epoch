@@ -5,7 +5,7 @@ Consumable[] =
 	{Loot_MAGAZINE,		3,		ItemPainkiller},
 	{Loot_MAGAZINE,		3,		ItemAntibacterialWipe},*/
 	
-	{Loot_MAGAZINE,		3,		ItemWaterBottleUnfilled},
+	{Loot_MAGAZINE,		3,		ItemWaterBottleUnfilled}, //TODO: replace with canteen to better fit Epoch lootPosSmall
 	{Loot_MAGAZINE,		3,		ItemWaterBottleSafe},
 	{Loot_MAGAZINE,		3,		ItemWaterBottle},
 	{Loot_MAGAZINE,		3,		ItemHeatPack},

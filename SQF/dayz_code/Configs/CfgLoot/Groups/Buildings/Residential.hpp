@@ -36,3 +36,22 @@ Residential[] =
 	{Loot_WEAPON,		3,		ItemMatchbox},
 	{Loot_GROUP,		8,		Generic}
 };
+
+ResidentialSmall[] =
+{
+	{Loot_GROUP,		8,		pistols},
+	{Loot_WEAPON,		3,		ItemMap},
+	{Loot_WEAPON,		5,		ItemWatch},
+	{Loot_WEAPON,		5,		ItemCompass},
+	{Loot_WEAPON,		5,		ItemKnife},
+	{Loot_WEAPON,		1,		Binocular},
+	{Loot_MAGAZINE,		0.5,	ItemPadlock},
+	{Loot_GROUP,		6,		AmmoCivilian},
+	{Loot_GROUP,		10,		Trash},
+	{Loot_GROUP,		10,		Consumable},
+	{Loot_GROUP,		4,		AttachmentsGeneric},
+	{Loot_GROUP,		5,		clothes},
+	{Loot_GROUP,		3,		specialclothes},
+	{Loot_WEAPON,		3,		ItemMatchbox},
+	{Loot_GROUP,		8,		GenericSmall}
+};
