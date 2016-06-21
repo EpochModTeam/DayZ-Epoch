@@ -15765,11 +15765,9 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_NO_ITEMS">
 			<English>No items in buy list</English>
-			<Russian>???? ???? ???? ????</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_NO_ITEMS">
-			<English>No items sell list</English>
-			<Russian>???? ???? ???? ????</Russian>
+			<English>No items in sell list</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
 			<English>Details</English>
@@ -15880,7 +15878,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_SUCCESS">
 			<English>Trade successfull, received:%1.</English>
-			<Russian>???? ???? ???? ????</Russian>
+			<Russian>Продажа завершена. Получено:%1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_COINS">
 			<English>Trade successfull, paid %1 %2.</English>
