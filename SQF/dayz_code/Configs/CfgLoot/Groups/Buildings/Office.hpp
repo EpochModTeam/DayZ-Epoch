@@ -41,3 +41,24 @@ Office[] =
 	{Loot_GROUP,		10,		AmmoCivilian},
 	{Loot_GROUP,		5,		AttachmentsGeneric}
 };
+
+OfficeSmall[] =
+{
+	{Loot_WEAPON,		3,		ItemWatch},
+	{Loot_WEAPON,		6,		ItemMap},
+	{Loot_WEAPON,		6,		ItemCompass},
+	{Loot_WEAPON,		6,		ItemKnife},
+	{Loot_WEAPON,		4,		ItemMatchbox},
+	{Loot_WEAPON,		4,		Binocular},
+	{Loot_GROUP,		10,		pistols},
+	{Loot_GROUP,		4,		MilitarySmall},
+	{Loot_GROUP,		3,		clothes},
+	{Loot_GROUP,		2,		specialclothes},
+	{Loot_MAGAZINE,		5,		ItemAntibacterialWipe},
+	{Loot_MAGAZINE,		5,		ItemPainkiller},
+	{Loot_GROUP,		8,		Consumable},
+	{Loot_GROUP,		6,		Trash},
+	{Loot_GROUP,		8,		GenericSmall},
+	{Loot_GROUP,		10,		AmmoCivilian},
+	{Loot_GROUP,		5,		AttachmentsGeneric}
+};
