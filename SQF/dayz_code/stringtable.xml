@@ -12861,6 +12861,15 @@
 			<!-- <French></French> -->
 			<Czech>Vytvořit 1/2 zdi</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_252_1">
+			<English>Craft Full Wall</English>
+			<German>Ganze Wand herstellen</German>
+			<Russian>Создать: все стены</Russian>
+			<!-- <Spanish></Spanish> -->
+			<!-- <Dutch></Dutch> -->
+			<!-- <French></French> -->
+			<Czech>Vytvářet plnou stěnou</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
 			<German>Garagentor-Rahmen herstellen</German>
@@ -16029,13 +16038,21 @@
 			<French>Metal Floor</French>
 			<Czech>Metal Floor</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
+			<English>Cinder Wall Half</English>
+			<German>Cinder Wall Half</German>
+			<Russian>Cinder Wall Half</Russian>
+			<Spanish>Cinder Wall Half</Spanish>
+			<French>Cinder Wall Half</French>
+			<Czech>Cinder Wall Half</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
-			<English>Cinder Block Wall</English>
-			<German>Cinder Block Wall</German>
-			<Russian>Cinder Block Wall</Russian>
-			<Spanish>Cinder Block Wall</Spanish>
-			<French>Cinder Block Wall</French>
-			<Czech>Cinder Block Wall</Czech>
+			<English>Cinder Wall Full</English>
+			<German>Cinder Wall Full</German>
+			<Russian>Cinder Wall Full</Russian>
+			<Spanish>Cinder Wall Full</Spanish>
+			<French>Cinder Wall Full</French>
+			<Czech>Cinder Wall Full</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_DESC">
 			<English>Half height cinder block wall.</English>
