@@ -31,3 +31,17 @@ tents[] = {
 	{Loot_MAGAZINE,		1,		ItemTent},
 	{Loot_MAGAZINE,		0.5,	ItemDesertTent} //EPOCH ADDITION
 };
+
+GenericSmall[] =
+{	
+	{Loot_MAGAZINE,		1,		HandRoadFlare},
+	{Loot_MAGAZINE,		1,		HandChemGreen},
+	{Loot_MAGAZINE,		1,		HandChemBlue},
+	{Loot_MAGAZINE,		1,		HandChemRed},
+	{Loot_MAGAZINE,		1,		5Rnd_17HMR},
+	{Loot_MAGAZINE,		2,		10Rnd_303British},
+	{Loot_MAGAZINE,		1,		equip_string},
+	{Loot_MAGAZINE,		1,		equip_duct_tape},
+	{Loot_MAGAZINE,		1,		equip_rope},
+	{Loot_MAGAZINE,		1,		equip_nails}
+};

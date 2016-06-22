@@ -43,3 +43,15 @@ Industrial[] =
 	{Loot_PILE,			4,		Consumable, 1, 2},
 	{Loot_GROUP,		8,		Generic}
 };
+
+IndustrialSmall[] =
+{
+	{Loot_WEAPON,		3,		ItemKnife},
+	{Loot_WEAPON,		1,		ItemKeyKit},
+	{Loot_MAGAZINE,		3,		equip_duct_tape},
+	{Loot_MAGAZINE,		6,		equip_nails},
+	{Loot_GROUP,		10,		Trash},
+	{Loot_GROUP,		4,		Consumable},
+	{Loot_GROUP,		8,		GenericSmall}
+};
+
