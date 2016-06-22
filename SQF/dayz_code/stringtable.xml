@@ -15777,6 +15777,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_NO_ITEMS">
 			<English>No items in sell list</English>
+			<Russian>Нет ничего на продажу</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
 			<English>Details</English>
