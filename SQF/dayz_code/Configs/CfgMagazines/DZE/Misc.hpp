@@ -906,8 +906,15 @@ class CinderBlocks: CA_Magazine
 			output[] = {{"cinder_door_kit",1}};
 			input[] = {{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",1}};
 		};
-
-
+		class Crafting3
+		{
+			text = $STR_EPOCH_PLAYER_252_1;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"full_cinder_wall_kit",1}};
+			input[] = {{"CinderBlocks",7},{"MortarBucket",2}};
+		};
 	};
 };
 class MortarBucket: CA_Magazine

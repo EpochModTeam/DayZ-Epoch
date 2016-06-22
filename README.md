@@ -108,6 +108,8 @@ GitHub Contributors (In order of most commits)
 * BlackLA - https://github.com/BlackLA
 * Hogscraper - https://github.com/hogscraper
 * Bruce-LXXVI - https://github.com/Bruce-LXXVI
+* oiad - https://github.com/oiad
+* AirwavesMan - https://github.com/AirwavesMan
 * Raziel23x - https://github.com/Raziel23x
 * strikerforce - https://github.com/strikerforce
 
