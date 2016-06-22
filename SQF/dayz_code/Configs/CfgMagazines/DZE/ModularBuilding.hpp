@@ -21,7 +21,7 @@ class cinder_wall_kit: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = $STR_EPOCH_CINDERBLOCKWALL;
+	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF;
 	descriptionShort = $STR_EPOCH_CINDERBLOCKWALL_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";

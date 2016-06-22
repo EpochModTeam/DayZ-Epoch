@@ -15,6 +15,38 @@ class equip_lever
 {
 	weight = 0.5;
 };
+class equip_duct_tape 
+{
+	weight = 0.03;
+};
+class equip_rope 
+{
+	weight = 0.1;
+};
+class equip_hose 
+{
+	weight = 0.15;
+};
+class equip_nails 
+{
+	weight = 0.005;
+};
+class equip_scrapelectronics 
+{
+	weight = 0.5;
+};
+class equip_metal_sheet 
+{
+	weight = 0.1;
+};
+class equip_1inch_metal_pipe 
+{
+	weight = 0.4;
+};
+class equip_2inch_metal_pipe 
+{
+	weight = 0.8;
+};
 class ItemMetalSheet 
 {
 	weight = 10;
