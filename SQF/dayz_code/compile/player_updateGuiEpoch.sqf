@@ -103,13 +103,13 @@ _ctrlTemp ctrlSetText _temp;
 // Visual:
 _visualtext = "";
 _visual = (round((dayz_disVisual / 100) * 4)) min 5;
-if (_visual > 0) then {_visualtext = "\z\addons\dayz_code\gui\status_epoch\val_" + str(_visual) + "_ca.paa"};
+if (_visual > 0) then {_visualtext = "\z\addons\dayz_code\gui\status\val_" + str(_visual) + "_ca.paa"};
 _ctrlEye ctrlSetText _visualtext;
 
 // Audible
 _audibletext = "";
 _audible = (round((dayz_disAudial / 50) * 4)) min 5;
-if (_audible > 0) then {_audibletext = "\z\addons\dayz_code\gui\status_epoch\val_" + str(_audible) + "_ca.paa"};
+if (_audible > 0) then {_audibletext = "\z\addons\dayz_code\gui\status\val_" + str(_audible) + "_ca.paa"};
 _ctrlEar ctrlSetText _audibletext;
 
 // Fracture/Broken Legs
