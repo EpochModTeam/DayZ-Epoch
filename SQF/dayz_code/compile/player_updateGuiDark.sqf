@@ -77,8 +77,8 @@ _blood = "\z\addons\dayz_code\gui\status_epoch\status_blood_inside_6_ca.paa";
 _thirst = "\z\addons\dayz_code\gui\status_epoch\status_thirst_inside_4_ca.paa";
 _food = "\z\addons\dayz_code\gui\status_epoch\status_food_inside_4_ca.paa";
 _temp = "\z\addons\dayz_code\gui\status_epoch\status_temp_4_ca.paa";
-_visualtext = "\z\addons\dayz_code\gui\status_epoch\status_eye_ca.paa";
-_audibletext = "\z\addons\dayz_code\gui\status_epoch\status_ear_ca.paa";
+_visualtext = "\z\addons\dayz_code\gui\status\status_eye_ca.paa";
+_audibletext = "\z\addons\dayz_code\gui\status\status_ear_ca.paa";
 
 _ctrlBlood ctrlSetText _blood;
 _ctrlThirst ctrlSetText _thirst;
