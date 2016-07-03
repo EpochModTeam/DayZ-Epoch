@@ -53,7 +53,8 @@ switch (_item) do {
 	};
 	case "ItemHeatPack": {
 		player removeMagazine "ItemHeatPack";
-		dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
+		//dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
+		r_player_warming_heatpack = [true, diag_tickTime];
 		localize "str_player_27" call dayz_rollingMessages;
 	};
 	case "bloodTester": {

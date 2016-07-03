@@ -26,6 +26,15 @@
 			<Czech>Posbírat %1</Czech>
 			<German>%1 aufsammeln</German>
 		</Key>
+		<Key ID="STR_ACTIONS_LIGHTFIRE">
+			<English>Light fire</English>
+			<Russian>Зажечь огонь</Russian>
+		</Key>		
+		<Key ID="STR_ACTIONS_PUTOUTFIRE">
+			<English>Put out fire</English>
+			<Russian>Погасить огонь</Russian>
+		</Key>		
+
 		<Key ID="STR_ACTIONS_DROP">
 			<English>Drop</English>
 			<Russian>Выбросить</Russian>
@@ -2831,7 +2840,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HerbalDrink">
 			<English>Blueprint to create a Herbal Drink. Required - 1 Water bottle boiled and one herb box.</English>
-			<Russian>Рецепт приготовления травяного напитка. Требуется: бутылка кипяченой воды и коробка трав.</Russian>
+			<Russian>Рецепт приготовления травяного напитка. Требуется: бутылка чистой воды и коробка трав.</Russian>
 			<Spanish>Blueprint para crear una bebida a base de plantas. Requerido - 1 Botella de agua hervida y una caja de hierbas.</Spanish>
 			<French>Blueprint pour créer une boisson à base de plantes. Required - 1 bouteille d'eau bouillie et une boîte d'herbe.</French>
 			<Czech>Blueprint vytvořit Herbal drink. Povinné - 1 láhev vody vařené a jedna bylina box.</Czech>
@@ -5706,7 +5715,7 @@
 		<Key ID="STR_FOOD_NAME_MRE">
 			<English>MRE</English>
 			<German>EPa</German>
-			<Russian>Cухпай</Russian>
+			<Russian>Сухой паёк MRE</Russian>
 			<Spanish>MRE</Spanish>
 			<French>Repas instantané</French>
 			<Czech>Vojenská dávka</Czech>
@@ -10347,6 +10356,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SVD_GH_NAME">
 			<English>SVD Camo</English>
+			<Russian>СВД(кам)</Russian>
 		</Key>
 		
 		
@@ -10723,7 +10733,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SA58RIS_DESC">
 			<English>A Rail Integration System kit designed for the SA-58 assault rifle.</English>
-			<Russian>Комплект рельсовай системы интеграции разработанной для SA-58</Russian>
+			<Russian>Комплект рельсовой системы интеграции разработанной для SA-58</Russian>
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
