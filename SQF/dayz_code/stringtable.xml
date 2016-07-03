@@ -29,12 +29,11 @@
 		<Key ID="STR_ACTIONS_LIGHTFIRE">
 			<English>Light fire</English>
 			<Russian>Зажечь огонь</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_ACTIONS_PUTOUTFIRE">
 			<English>Put out fire</English>
 			<Russian>Погасить огонь</Russian>
-		</Key>		
-
+		</Key>
 		<Key ID="STR_ACTIONS_DROP">
 			<English>Drop</English>
 			<Russian>Выбросить</Russian>
@@ -993,7 +992,7 @@
 			<Czech>Spravit láhev</Czech>
 			<German>Flasche reparieren</German>
 		</Key>
-		<Key ID="STR_ACTIONS_LIGHTFIRE">
+		<Key ID="STR_ACTIONS_MAKEFIRE">
 			<English>Make Fireplace</English>
 			<German>Feuerstelle errichten</German>
 			<Russian>Развести костер</Russian>
