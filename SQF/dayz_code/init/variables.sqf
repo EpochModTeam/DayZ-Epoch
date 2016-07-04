@@ -328,6 +328,16 @@ r_antiD_done = false;
 carryClick = false;
 dayz_workingInprogress = false;
 
+//player warming up vars
+//heatpack
+r_player_warming_heatpack = [false, 0];
+r_player_warming_heatpack_time = 600; 
+
+//displays temp progress
+r_player_temp_factor = 0; //to be used for temp(up/down) indicators
+r_player_temp_min_factor = -0.04; //(lvl3 down arrow)
+r_player_temp_max_factor = 0.04; //(lvl3 up arrow)
+ 
 //INT Nutrition Info
 r_player_Nutrition = 0; // Calories
 r_player_nutritionMuilpty = 2;

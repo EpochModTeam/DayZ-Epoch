@@ -1,6 +1,6 @@
 
 //private ["_display","_ctrlBloodOuter","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_ctrlFoodBorder","_ctrlThirstBorder","_ctrlTempBorder","_tempVal","_array","_ctrlEar","_ctrlEye","_ctrlFracture","_visual","_audible","_uiNumber","_bloodText","_blood","_thirstLvl","_foodLvl","_tempImg","_bloodLvl","_tempLvl","_thirst","_food","_temp"];
-private ["_flash","_array","_bloodText","_tempImg","_uiNumber","_blood","_foodLvl","_thirstLvl","_audible","_visual","_bloodType","_rhFactor","_ctrlBloodType", "_bloodTestdone",
+private ["_flash","_array","_bloodText","_tempText","_tempImg","_uiNumber","_blood","_foodLvl","_thirstLvl","_audible","_visual","_bloodType","_rhFactor","_ctrlBloodType", "_bloodTestdone",
 "_string","_humanityTarget","_distance","_size","_friendlies","_id","_rID","_rfriendlies","_rfriendlyTo","_color","_targetControl"];
 
 _flash = {
@@ -143,8 +143,19 @@ switch true do {
     case (_tempLvl > 28 and _tempLvl < 30): { _tempImg = 1 };
     default { _tempImg = 0 };
 };
-
 _temp = "\z\addons\dayz_code\gui\status\status_temp_" + str(_tempImg) + "_ca.paa";
+
+_tempText = "\z\addons\dayz_code\gui\status\status_temp_border";
+switch true do {
+    case (r_player_temp_factor <= r_player_temp_min_factor): { _tempText = _tempText + "_down3_ca.paa" };                               
+    case ((r_player_temp_factor <= r_player_temp_min_factor*0.50) and (r_player_temp_factor > r_player_temp_min_factor)): {  _tempText = _tempText + "_down2_ca.paa" }; 
+    case ((r_player_temp_factor < r_player_temp_min_factor*0.2) and (r_player_temp_factor > r_player_temp_min_factor*0.50)): {  _tempText = _tempText + "_down1_ca.paa" };    
+    case ((r_player_temp_factor > r_player_temp_max_factor*0.2) and (r_player_temp_factor < r_player_temp_max_factor*0.50)): {  _tempText = _tempText + "_up1_ca.paa" };      
+    case ((r_player_temp_factor >= r_player_temp_max_factor*0.50) and (r_player_temp_factor < r_player_temp_max_factor)): {  _tempText = _tempText + "_up2_ca.paa" };     
+    case (r_player_temp_factor >= r_player_temp_max_factor): {  _tempText = _tempText + "_up3_ca.paa" };
+    default { _tempText = "\z\addons\dayz_code\gui\status\status_temp_outside_ca.paa" };
+};
+_ctrlTempBorder ctrlSetText _tempText;
 
 _ctrlBlood ctrlSetText _blood;
 _ctrlThirst ctrlSetText _thirst;
