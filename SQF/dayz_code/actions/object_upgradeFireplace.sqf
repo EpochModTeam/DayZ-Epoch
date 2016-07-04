@@ -25,8 +25,8 @@ if (isNull _cursorTarget) exitWith {};
 _item = typeof _cursorTarget;
 
 //remove action menu
-player removeAction s_player_upgradestroage;
-s_player_upgradestroage = -1;
+player removeAction s_player_upgradestorage;
+s_player_upgradestorage = -1;
 
 //Not needed
 //_itemName = getText (configFile >> "CfgVehicles" >> _item >> "displayName");

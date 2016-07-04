@@ -21,8 +21,8 @@ _item = typeof _cursorTarget;
 //diag_log (str(_item));
 
 //remove action menu
-player removeAction s_player_upgradestroage;
-s_player_upgradestroage = -1;
+player removeAction s_player_upgradestorage;
+s_player_upgradestorage = -1;
 
 //Not needed
 //_itemName = getText (configFile >> "CfgVehicles" >> _item >> "displayName");
