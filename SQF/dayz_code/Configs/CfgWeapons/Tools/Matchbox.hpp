@@ -30,7 +30,7 @@ class ItemMatchbox : ItemMatchbox_base
 	{
 		class Use
 		{
-			text = $STR_ACTIONS_LIGHTFIRE;
+			text = $STR_ACTIONS_MAKEFIRE;
 			script = "spawn player_makeFire;";
 			use[] = {"PartWoodPile"};
 		};

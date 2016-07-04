@@ -29,13 +29,14 @@ _looptime = _this;
 	_building_factor 	=  	DZE_TempVars select 2;
 	_moving_factor 		=  	DZE_TempVars select 3;
 	_sun_factor			= 	DZE_TempVars select 4;
+	_heatpack_factor	= 	DZE_TempVars select 5;
 	
 //Negative effects
-	_water_factor		= 	DZE_TempVars select 5;
-	_stand_factor 		= 	DZE_TempVars select 6;
-	_rain_factor		=	DZE_TempVars select 7;
-	_wind_factor		=	DZE_TempVars select 8;
-	_night_factor		= 	DZE_TempVars select 9;
+	_water_factor		= 	DZE_TempVars select 6;
+	_stand_factor 		= 	DZE_TempVars select 7;
+	_rain_factor		=	DZE_TempVars select 8;
+	_wind_factor		=	DZE_TempVars select 9;
+	_night_factor		= 	DZE_TempVars select 10;
 
 _difference = 0; 
 //_hasfireffect = false;
@@ -114,6 +115,13 @@ if(daytime > _sunrise && daytime < (24 - _sunrise) && !_raining && overcast <= 0
 	//diag_log format["sun - %1",_difference];
 };
 
+//heatpack
+if(r_player_warming_heatpack select 0) then {
+	_difference = _difference + _heatpack_factor;
+	if ((diag_tickTime - (r_player_warming_heatpack select 1)) >= r_player_warming_heatpack_time) then {
+		r_player_warming_heatpack = [false,0];
+	};
+};
 //NEGATIVE EFFECTS
 
 //water
@@ -171,4 +179,5 @@ _difference = _difference * SleepTemperatur / (60 / _looptime) * ((dayz_temperat
 if (dayz_temperature_override) then { _difference = 0; if (dayz_temperatur < 37) then { dayz_temperatur = 37; } };
 
 //Change Temperatur Should be moved in a own Function to allow adding of Items which increase the Temp like "hot tea"
+r_player_temp_factor = _difference;
 dayz_temperatur = (((dayz_temperatur + _difference) max dayz_temperaturmin) min dayz_temperaturmax);

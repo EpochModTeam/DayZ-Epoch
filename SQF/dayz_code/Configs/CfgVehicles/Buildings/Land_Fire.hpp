@@ -51,8 +51,8 @@ class Land_Fire: House
 
 	class UserActions {
 		class lightup {
-			displayNameDefault = "Light fire";
-			displayName = "Light fire";
+			displayNameDefault = $STR_ACTIONS_LIGHTFIRE;
+			displayName = $STR_ACTIONS_LIGHTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
@@ -60,8 +60,8 @@ class Land_Fire: House
 			statement = "[this,true] call dayz_inflame";
 		};
 		class putout {
-			displayNameDefault = "Put out fire";
-			displayName = "Put out fire";
+			displayNameDefault = $STR_ACTIONS_PUTOUTFIRE;
+			displayName =  $STR_ACTIONS_PUTOUTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
@@ -80,8 +80,8 @@ class Land_Fire_barrel : Land_Fire
 	destrType=DestructEngine;
 	class UserActions {
 		class lightup {
-			displayNameDefault = "Light fire";
-			displayName = "Light fire";
+			displayNameDefault = $STR_ACTIONS_LIGHTFIRE;
+			displayName = $STR_ACTIONS_LIGHTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
@@ -89,8 +89,8 @@ class Land_Fire_barrel : Land_Fire
 			statement = "[this,true] call dayz_inflame_other";
 		};
 		class putout {
-			displayNameDefault = "Put out fire";
-			displayName = "Put out fire";
+			displayNameDefault =  $STR_ACTIONS_PUTOUTFIRE;
+			displayName =  $STR_ACTIONS_PUTOUTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
@@ -117,8 +117,8 @@ class Land_Fire_DZ : Land_Fire {
 		};
 		*/
 		class lightup {
-			displayNameDefault = "Light fire";
-			displayName = "Light fire";
+			displayNameDefault = $STR_ACTIONS_LIGHTFIRE;
+			displayName = $STR_ACTIONS_LIGHTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
@@ -126,8 +126,8 @@ class Land_Fire_DZ : Land_Fire {
 			statement = "[this,true] call dayz_inflame";
 		};
 		class putout {
-			displayNameDefault = "Put out fire";
-			displayName = "Put out fire";
+			displayNameDefault =  $STR_ACTIONS_PUTOUTFIRE;
+			displayName =  $STR_ACTIONS_PUTOUTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
@@ -169,8 +169,8 @@ class Misc_TyreHeap: Land_Fire
 	displayName=$STR_DN_TYREHEAP;
 	class UserActions {
 		class lightup {
-			displayNameDefault = "Light fire";
-			displayName = "Light fire";
+			displayNameDefault = $STR_ACTIONS_LIGHTFIRE;
+			displayName = $STR_ACTIONS_LIGHTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
@@ -178,8 +178,8 @@ class Misc_TyreHeap: Land_Fire
 			statement = "[this,true] call dayz_inflame_other";
 		};
 		class putout {
-			displayNameDefault = "Put out fire";
-			displayName = "Put out fire";
+			displayNameDefault =  $STR_ACTIONS_PUTOUTFIRE;
+			displayName =  $STR_ACTIONS_PUTOUTFIRE;
 			position = "ohniste";
 			radius = 3;
 			onlyForPlayer = 0;
