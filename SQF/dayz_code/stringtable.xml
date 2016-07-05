@@ -15786,10 +15786,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_NO_ITEMS">
 			<English>No items in sell list</English>
-<<<<<<< HEAD
-=======
 			<Russian>Нет ничего на продажу</Russian>
->>>>>>> refs/remotes/EpochModTeam/master
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
 			<English>Details</English>
