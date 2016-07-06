@@ -4,7 +4,7 @@ class DoorAccess
 	movingenable = 0;
 	
 	onLoad = "keypadCancel = true;";
-	onUnload = "if(keypadCancel) then {DZE_Lock_Door = ''; [] spawn keyPadReset;} else {DZE_Lock_Door = dayz_playerUID;};";
+	onUnload = "if(keypadCancel) then {DZE_Lock_Door = ''; [] spawn keyPadReset;};";
 	
 	class Controls
 	{
