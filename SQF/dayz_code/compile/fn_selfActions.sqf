@@ -5,7 +5,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- [] call fnc_usec_selfActions;
 ************************************************************/
 if (DZE_ActionInProgress) exitWith {};
-private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names","_hasKey","_oldOwner","_hasAttached","_isAnimal","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild","_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached","_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget","_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan","_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isCampSite","_isDisallowRefuel","_isDog","_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock","_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo","_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id"];
+private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names","_hasKey","_oldOwner","_hasAttached","_isAnimal","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild","_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached","_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget","_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan","_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isCampSite","_isDisallowRefuel","_isDog","_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock","_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo","_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -248,6 +248,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_upgradeItems = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4"];
 	_isCampSite = _cursorTarget isKindOf "IC_Fireplace1";	
 	_characterID = _cursorTarget getVariable ["CharacterID","0"];
+	_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
 	
 	if (DZE_permanentPlot) then {
 		_id = [player] call FNC_GetPlayerUID;
@@ -422,7 +423,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		if(_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
 				_isowner = [player, _cursorTarget] call FNC_check_access;
-				if ((_isowner select 0) or (_isowner select 1) or (_isowner select 2)) then {
+				if ((_isowner select 0) or (_isowner select 2) or (_isowner select 3)) then {
 					_player_deleteBuild = true;
 				};
 			};
@@ -635,7 +636,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		if (DZE_permanentPlot) then {
 			if (s_player_plotManagement < 0) then {
 				_isowner = [player, _cursorTarget] call FNC_check_access;
-				if ((_isowner select 0) or (_isowner select 3) or (_isowner select 4)) then {
+				if ((_isowner select 0) or (_isowner select 2) or (_isowner select 3) or (_isowner select 4)) then {
 					s_player_plotManagement = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
 				};
 			};
@@ -885,8 +886,11 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};
 		if (s_player_upgrade_build < 0) then {
-			s_player_lastTarget set [0,_cursorTarget];
-			s_player_upgrade_build = player addAction [format[localize "str_upgrade",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];
+			_isowner = [player, _cursorTarget] call FNC_check_access;
+			if (((_isowner select 0) or (_isowner select 2) or (_isowner select 3)) && (count _upgrade) > 0) then {
+				s_player_lastTarget set [0,_cursorTarget];
+				s_player_upgrade_build = player addAction [format[localize "str_upgrade",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];
+			};
 		};
 	} else {
 		player removeAction s_player_upgrade_build;
@@ -902,8 +906,11 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};
 		if (s_player_downgrade_build < 0) then {
-			s_player_lastTarget set [1,_cursorTarget];
-			s_player_downgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_REMLOCK",_text], "\z\addons\dayz_code\actions\player_buildingDowngrade.sqf",_cursorTarget, -2, false, true];
+			_isowner = [player, _cursorTarget] call FNC_check_access;
+			if ((_isowner select 0) or (_isowner select 2) or (_isowner select 3)) then {
+				s_player_lastTarget set [1,_cursorTarget];
+				s_player_downgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_REMLOCK",_text], "\z\addons\dayz_code\actions\player_buildingDowngrade.sqf",_cursorTarget, -2, false, true];
+			};
 		};
 	} else {
 		player removeAction s_player_downgrade_build;
@@ -919,9 +926,12 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};
 		if (s_player_maint_build < 0) then {
-			_text2 = _text + " (" + str(round ((damage _cursorTarget) * 100)) + "% damaged)";
-			s_player_lastTarget set [2,_cursorTarget];
-			s_player_maint_build = player addAction [format["%1 %2",localize "STR_EPOCH_ACTIONS_MAINTAIN",_text2], "\z\addons\dayz_code\actions\player_buildingMaint.sqf",_cursorTarget, -2, false, true];
+			_isowner = [player, _cursorTarget] call FNC_check_access;
+			if ((_isowner select 0) or (_isowner select 2) or (_isowner select 3)) then {
+				_text2 = _text + " (" + str(round ((damage _cursorTarget) * 100)) + "% damaged)";
+				s_player_lastTarget set [2,_cursorTarget];
+				s_player_maint_build = player addAction [format["%1 %2",localize "STR_EPOCH_ACTIONS_MAINTAIN",_text2], "\z\addons\dayz_code\actions\player_buildingMaint.sqf",_cursorTarget, -2, false, true];
+			};
 		};
 	} else {
 		player removeAction s_player_maint_build;
