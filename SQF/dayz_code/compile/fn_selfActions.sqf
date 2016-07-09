@@ -248,7 +248,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_upgradeItems = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4"];
 	_isCampSite = _cursorTarget isKindOf "IC_Fireplace1";	
 	_characterID = _cursorTarget getVariable ["CharacterID","0"];
-	_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
 	
 	if (DZE_permanentPlot) then {
 		_id = [player] call FNC_GetPlayerUID;
@@ -887,6 +886,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		};
 		if (s_player_upgrade_build < 0) then {
 			_isowner = [player, _cursorTarget] call FNC_check_access;
+			_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
 			if (((_isowner select 0) or (_isowner select 2) or (_isowner select 3)) && (count _upgrade) > 0) then {
 				s_player_lastTarget set [0,_cursorTarget];
 				s_player_upgrade_build = player addAction [format[localize "str_upgrade",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];

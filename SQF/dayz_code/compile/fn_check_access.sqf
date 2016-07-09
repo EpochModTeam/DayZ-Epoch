@@ -136,7 +136,7 @@ if(_targetType == "DOOR") then {
 // RESULT
 [ _isOwner
 , _isFriendly
-, _isPlotOwner // Same as _isOwner if _target is a PlotPole
+, _isPlotOwner
 , _isPlotFriend
 , _isPlotAdmin
 , _isTargetFriend

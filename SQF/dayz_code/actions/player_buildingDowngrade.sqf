@@ -2,7 +2,7 @@
 	DayZ Base Building Upgrades
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_distance","_needText","_findNearestPoles","_findNearestPole","_IsNearPlot","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
+private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_ownerID","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_48" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -10,39 +10,7 @@ DZE_ActionInProgress = true;
 player removeAction s_player_downgrade_build;
 s_player_downgrade_build = 1;
 
-_distance = DZE_PlotPole select 0;
-_needText = localize "str_epoch_player_246";
 _playerUID = [player] call FNC_GetPlayerUID;
-_canBuildOnPlot = false;
-_plotcheck = [player, false] call FNC_find_plots;
-_IsNearPlot = _plotcheck select 1;
-_nearestPole = _plotcheck select 2;
-
-if(_IsNearPlot == 0) then {
-	_canBuildOnPlot = true;
-} else {
-	_ownerID = _nearestPole getVariable["CharacterID","0"];
-	if(dayz_characterID == _ownerID) then {
-		_canBuildOnPlot = true;
-	} else {
-		if (DZE_permanentPlot) then {
-			_buildcheck = [player, _nearestPole] call FNC_check_access;
-			_isowner = _buildcheck select 0;
-			_isfriendly = ((_buildcheck select 1) or (_buildcheck select 3));
-			if (_isowner || _isfriendly) then {
-				_canBuildOnPlot = true;
-			};
-		} else {
-			_friendlies	= player getVariable ["friendlyTo",[]];
-			if(_ownerID in _friendlies) then {
-				_canBuildOnPlot = true;
-			};
-		};
-	};
-};
-
-// exit if not allowed due to plot pole
-if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; format[localize "str_epoch_player_141",_needText,_distance] call dayz_rollingMessages; };
 
 // get cursortarget from addaction
 _obj = _this select 3;
