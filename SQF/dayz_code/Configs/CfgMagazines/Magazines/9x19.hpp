@@ -14,7 +14,7 @@ class 30Rnd_9x19_UZI : CA_Magazine
 
 class 30Rnd_9x19_MP5 : CA_Magazine
 {
-	displayName = $STR_DZ_MAG_30RND_9X19_MP5SD_NAME;
+	displayName = $STR_DZ_MAG_30RND_9X19_MP5_NAME;
 
 	cartridgeName = "9x19";
 	
@@ -40,7 +40,7 @@ class 30Rnd_9x19_MP5SD : CA_Magazine
 {
 	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\30Rnd_9x19_MP5.p3d";
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_mp5sd_ca.paa";
-	displayName = $STR_DZ_MAG_30RND_9X19_MP5_NAME;
+	displayName = $STR_DZ_MAG_30RND_9X19_MP5SD_NAME;
 
 	cartridgeName = "9x19_SD";
 	
