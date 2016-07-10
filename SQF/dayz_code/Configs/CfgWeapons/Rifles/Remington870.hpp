@@ -1,11 +1,22 @@
+#define R870_FLASHLIGHT class FlashLight\
+{\
+	color[] = {0.9, 0.9, 0.7, 0.9};\
+	ambient[] = {0.1, 0.1, 0.1, 1.0};\
+	position = "flash dir";\
+	direction = "flash";\
+	angle = 30;\
+	scale[] = {1, 1, 0.5};\
+	brightness = 0.1;\
+}
+
 class Remington870_DZ : Rifle
 {
 	scope = public;
 	
 	model = "\dayz_weapons\models\Remington870.p3d";
 	picture = "\dayz_weapons\textures\equip_remington870_CA.paa";
-	displayname = $STR_WPN_NAME_2;
-	descriptionShort = $STR_WPN_DESC_2;
+	displayname = $STR_DZ_WPN_R870_NAME;
+	descriptionShort = $STR_DZ_WPN_R870_DESC;
 	
 	magazines[] =
 	{
@@ -13,6 +24,10 @@ class Remington870_DZ : Rifle
 		8Rnd_12Gauge_Buck,
 		2Rnd_12Gauge_Slug,
 		2Rnd_12Gauge_Buck
+	};
+	class Attachments
+	{
+		Attachment_FL = "Remington870_FL_DZ";
 	};
 	
 	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons_E\Data\Anim\LeeEnfield.rtm"};
@@ -40,17 +55,17 @@ class Remington870_DZ : Rifle
 class Remington870_FL_DZ : Remington870_DZ
 {
 	model = "\dayz_weapons\models\Remington870_lamp.p3d";
-	displayname = $STR_WPN_NAME_3;
-	descriptionShort = $STR_WPN_DESC_3;
+	displayname = $STR_DZ_WPN_R870_FL_NAME;
+	descriptionShort = $STR_DZ_WPN_R870_FL_DESC;
 	
-	class FlashLight
+	R870_FLASHLIGHT;
+	
+	class ItemActions
 	{
-		color[] = {0.9, 0.9, 0.7, 0.9};
-		ambient[] = {0.1, 0.1, 0.1, 1};
-		position = "flash dir";
-		direction = "flash";
-		angle = 30;
-		scale[] = {1, 1, 0.5};
-		brightness = 0.1;
+		class RemoveFlashlight
+		{
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
+			script = "; ['Attachment_FL',_id,'Remington870_DZ'] call player_removeAttachment";
+		};
 	};
 };

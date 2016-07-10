@@ -7,8 +7,8 @@ class Attachment_SupMakarov : CA_Magazine
 	model = "z\addons\dayz_communityassets\models\surpressor.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\attachment_silencer.paa";
 	
-	displayName = $STR_ATTACHMENT_NAME_SILENCER_MAKAROV;
-	descriptionShort = $STR_ATTACHMENT_DESC_SILENCER_MAKAROV;
+	displayName = $STR_DZ_ATT_SUP9PM_NAME;
+	descriptionShort = $STR_DZ_ATT_SUP9PM_DESC;
 	
 	class ItemActions
 	{

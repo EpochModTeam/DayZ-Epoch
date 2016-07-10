@@ -1,6 +1,7 @@
 class Bizon_DZ : bizon
 {
 	model = "z\addons\dayz_communityweapons\bizon\bizon.p3d";
+	displayName = $STR_DZ_WPN_BIZON_NAME;
 	
 	magazines[] =
 	{
@@ -21,6 +22,7 @@ class Bizon_DZ : bizon
 class Bizon_SD_DZ : bizon_silenced
 {
 	model = "z\addons\dayz_communityweapons\bizon\bizon_sd.p3d";
+	displayName = $STR_DZ_WPN_BIZON_SD_NAME;
 	
 	magazines[] =
 	{
@@ -36,7 +38,7 @@ class Bizon_SD_DZ : bizon_silenced
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_DZ_ATT_SUP9BIZON_RMVE;
 			script = "; ['Attachment_SupBizon',_id,'Bizon_DZ'] call player_removeAttachment";
 		};
 	};

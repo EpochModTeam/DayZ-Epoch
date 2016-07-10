@@ -4,8 +4,8 @@ class Winchester1866_DZ : Rifle
 	
 	model = "\dayz_weapons\models\Winchester1866.p3d";
 	picture = "\dayz_weapons\textures\equip_winchester1866_CA.paa";
-	displayname = $STR_WPN_NAME_1;
-	descriptionShort = $STR_WPN_DESC_1;
+	displayname = $STR_DZ_WPN_W1866_NAME;
+	descriptionShort = $STR_DZ_WPN_W1866_DESC;
 	
 	magazines[] = {15Rnd_W1866_Slug};
 	
@@ -28,10 +28,5 @@ class Winchester1866_DZ : Rifle
 		drySound[] = {"ca\sounds\weapons\rifles\dry", 0.01, 1, 10};
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";
-	};
-	
-	class Library
-	{
-		libTextDesc = $STR_WPN_DESC_1;
 	};
 };

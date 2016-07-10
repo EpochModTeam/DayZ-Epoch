@@ -1,7 +1,7 @@
 class 30Rnd_545x39_AK : CA_Magazine
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_ak74_ca.paa";
-	
+	displayName = $STR_DZ_MAG_30RND_545x39_AK_NAME;
 	cartridgeName = "545x39";
 	
 	class ItemActions
@@ -13,7 +13,7 @@ class 30Rnd_545x39_AK : CA_Magazine
 class 30Rnd_545x39_AKSD : 30Rnd_545x39_AK
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_ak74sd_ca.paa";
-	
+	displayName = $STR_DZ_MAG_30RND_545x39_AKSD_NAME;
 	cartridgeName = "545x39_SD";
 	
 	class ItemActions

@@ -4,7 +4,7 @@ class 30Rnd_762x39_AK47 : CA_Magazine
 {
 	model = "z\addons\dayz_communityweapons\magazines\ak47.p3d";
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_ak47_ca.paa";
-	displayName = $STR_DZ_MAG_30RND_762X39_AK47;
+	displayName = $STR_DZ_MAG_30RND_762X39_AK47_NAME;
 	
 	cartridgeName = "762x39";
 	
@@ -42,6 +42,7 @@ class 75Rnd_762x39_RPK : 30Rnd_762x39_AK47
 class 30Rnd_762x39_SA58 : CA_Magazine
 {
 	model = "z\addons\dayz_communityweapons\magazines\vz58.p3d";
+	displayName = $STR_DZ_MAG_30RND_762X39_SA58_NAME;
 	
 	cartridgeName = "762x39";
 	

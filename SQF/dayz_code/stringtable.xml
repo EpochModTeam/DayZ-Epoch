@@ -3022,8 +3022,8 @@
 			<Czech>Kratší provázek</Czech>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_ACG_M16">
-			<English>ACOG Attachment for M16</English>
-			<Russian>ACOG M16(МОД)</Russian>
+			<English>[A] ACOG (M16)</English>
+			<Russian>[М] ACOG (M16)</Russian>
 			<Spanish>ACG (Accesorio)</Spanish>
 			<French>ACG (Fixation)</French>
 			<Czech>Příslušenství - ACOG pro M16</Czech>
@@ -3038,8 +3038,8 @@
 			<German>Advanced Combat Optics Gunsight, ein Zielfernrohr amerikanischer Bauart.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_ACG_SA58">
-			<English>ACOG Attachment for Sa-58</English>
-			<Russian>ACOG Sa-58(МОД)</Russian>
+			<English>[A] ACOG (Sa-58)</English>
+			<Russian>[М] ACOG (Sa-58)</Russian>
 			<Spanish>ACG (Accesorio)</Spanish>
 			<French>ACG (Fixation)</French>
 			<Czech>Příslušenství - ACOG pro Sa-58</Czech>
@@ -3054,8 +3054,8 @@
 			<German>Advanced Combat Optics Gunsight, ein Zielfernrohr amerikanischer Bauart.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_Silencer">
-			<English>Suppressor Attachment</English>
-			<Russian>Глушитель (МОД)</Russian>
+			<English>[A] Suppressor</English>
+			<Russian>[М] глушитель</Russian>
 			<Spanish>Silenciador (Accesorio)</Spanish>
 			<French>Silencieux (Fixation)</French>
 			<Czech>Příslušenství - Tlumič</Czech>
@@ -3070,8 +3070,8 @@
 			<German>Ein Schalldämpfer für Schusswaffen.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_Pso">
-			<English>PSO Attachment</English>
-			<Russian>ПСО (МОД)</Russian>
+			<English>[A] PSO</English>
+			<Russian>[М] ПСО</Russian>
 			<Spanish>PSO (Accesorio)</Spanish>
 			<French>PSO (Fixation)</French>
 			<Czech>Příslušenství - PSO</Czech>
@@ -3086,8 +3086,8 @@
 			<German>Ein russisches Zielfernrohr vom Typ PSO-1.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_Kobra">
-			<English>KOBRA Attachment</English>
-			<Russian>Кобра (МОД)</Russian>
+			<English>[A] KOBRA</English>
+			<Russian>[М] Кобра</Russian>
 			<Spanish>KOBRA (Accesorio)</Spanish>
 			<French>KOBRA (Fixation)</French>
 			<Czech>Příslušenství - KOBRA</Czech>
@@ -3102,8 +3102,8 @@
 			<German>Russisches Rotpunktvisier vom Typ KOBRA.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_GL">
-			<English>GL Attachment</English>
-			<Russian>Подствольник (МОД)</Russian>
+			<English>[A] GL</English>
+			<Russian>[М] подствольник</Russian>
 			<Spanish>GL (Accesorio)</Spanish>
 			<French>GL (Fixation)</French>
 			<Czech>Příslušenství - granátomet</Czech>
@@ -3118,8 +3118,8 @@
 			<German>Russiches Grünpunktvisier.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_CAMO_M4">
-			<English>Camo Attachment for M4</English>
-			<Russian>Камуфляж (МОД)</Russian>
+			<English>[A] Camo (M4)</English>
+			<Russian>[М] камуфляж (M4)</Russian>
 			<Spanish>Camuflaje (Accesorio)</Spanish>
 			<French>Camouflage (Fixation)</French>
 			<Czech>Příslušenství - kamufláž pro M4</Czech>
@@ -3134,8 +3134,8 @@
 			<German>Material zur Tarnung einer M4A1 mit AIM.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_AIM_M4A1">
-			<English>AIM Attachment for M4</English>
-			<Russian>AIM M4(МОД)</Russian>
+			<English>[A] AIM (M4)</English>
+			<Russian>[М] AIM (M4)</Russian>
 			<Spanish>AIM (Accesorio)</Spanish>
 			<French>AIM (Fixation)</French>
 			<Czech>Příslušenství - CCO pro M4</Czech>
@@ -3150,8 +3150,8 @@
 			<German>Close Combat Optics (CCO), Rotpunktvisier amerikanischer Bauart für die M4.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_AIM_SA58">
-			<English>AIM Attachment for Sa-58</English>
-			<Russian>AIM Sa-58(МОД)</Russian>
+			<English>[A] AIM (Sa-58)</English>
+			<Russian>[М] AIM (Sa-58)</Russian>
 			<Spanish>AIM (Accesorio)</Spanish>
 			<French>AIM (Fixation)</French>
 			<Czech>Příslušenství - CCO pro Sa-58</Czech>
@@ -3166,20 +3166,20 @@
 			<German>Close Combat Optics, Rotpunktvisier amerikanischer Bauart für die Sa-58.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_BELT">
-			<English>Ammo Belt</English>
-			<Russian>Патронташ</Russian>
+			<English>[A] Ammo belt</English>
+			<Russian>[М] патронташ (Мосинка)</Russian>
 			<Czech>Příslušenství - nábojový pás</Czech>
 			<German>Munitionsgürtel</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_DESC_BELT">
-			<English>Ammo Belt Attachment.</English>
+			<English>Ammo belt Attachment.</English>
 			<Russian>Патронташ на приклад.</Russian>
 			<Czech>Nábojový pás, používá se pro vylepšení zbraní.</Czech>
 			<German>Munitionsgürtel für schnelleres Nachladen.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_CCO_RED">
-			<English>CCO RedDot Attachment</English>
-			<Russian>CCO(МОД)</Russian>
+			<English>[A] CCO RedDot</English>
+			<Russian>[М] CCO</Russian>
 			<Czech>Příslušenství - CCO</Czech>
 			<German>CCO Rotpunktvisier</German>
 		</Key>
@@ -3190,8 +3190,8 @@
 			<German>Close Combat Optics, Rotpunktvisier amerikanischer Bauart.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_CCO_RED_CROSSBOW">
-			<English>Crossbow CCO Attachment</English>
-			<Russian>CCO Арбалет(МОД)</Russian>
+			<English>[A] Crossbow CCO</English>
+			<Russian>[М] CCO (арбалет)</Russian>
 			<Czech>Příslušenství - CCO pro kuši</Czech>
 			<German>Armbrust CCO Rotpunktvisier</German>
 		</Key>
@@ -3202,8 +3202,8 @@
 			<German>CCO Rotpunktvisier für eine Armbrust.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_FL">
-			<English>Flashlight Attachment</English>
-			<Russian>Фонарик(МОД)</Russian>
+			<English>[A] Flashlight</English>
+			<Russian>[М] фонарик</Russian>
 			<Czech>Příslušenství - baterka</Czech>
 			<German>Taschenlampen-Erweiterung</German>
 		</Key>
@@ -3214,32 +3214,21 @@
 			<German>Taschenlampen-Erweiterung für Schusswaffen.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_SCOPE">
-			<English>Scoped Sight Attachment</English>
-			<Russian>Прицел (МОД)</Russian>
+			<English>[A] Scoped Sight</English>
+			<Russian>[М] прицел</Russian>
 			<Czech>Příslušenství - puškohled</Czech>
 			<German>Zielfernrohr-Erweiterung</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_DESC_SCOPE">
 			<English>Scoped Sight Attachment.</English>
-			<Russian>Прицел для винтовки.</Russian>
+			<Russian>Прицел для Мосинки/арбалета.</Russian>
 			<Czech>Puškohled, používá se pro vylepšení zbraní.</Czech>
 			<German>Zielfernrohr-Erweiterung für Schusswaffen.</German>
 		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_SILENCER_MAKAROV">
-			<English>Silencer Attachment for Makarov</English>
-			<Russian>Глушитель Макаров(МОД)</Russian>
-			<Czech>Příslušenství - tlumič pro Makarov</Czech>
-			<German>Makarov Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_SILENCER_MAKAROV">
-			<English>A silencer that can be attached to Makarov.</English>
-			<Russian>Прибор бесшумной стрельбы для пистолета Макарова.</Russian>
-			<Czech>Tlumič, používá se pro vylepšení pistole Makarov.</Czech>
-			<German>Ein Schalldämpfer, der an eine Makarov angebracht werden kann.</German>
-		</Key>
+		
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_M9">
-			<English>Silencer Attachment for M9</English>
-			<Russian>Глушитель М9(МОД)</Russian>
+			<English>[A] Silencer (M9)</English>
+			<Russian>[М] 9мм глуш. (М9)</Russian>
 			<Czech>Příslušenství - tlumič pro M9</Czech>
 			<German>M9 Schalldämpfer</German>
 		</Key>
@@ -3250,8 +3239,8 @@
 			<German>Ein Schalldämpfer, der an eine M9 angebracht werden kann.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_M4">
-			<English>Silencer Attachment for M4A1</English>
-			<Russian>Глушитель M4А1(МОД)</Russian>
+			<English>[A] Silencer (M4A1)</English>
+			<Russian>[М] ПБС (M4А1)</Russian>
 			<Czech>Příslušenství - tlumič pro M4A1</Czech>
 			<German>M4A1 Schalldämpfer</German>
 		</Key>
@@ -3261,21 +3250,10 @@
 			<Czech>Tlumič, používá se pro vylepšení M4A1, jež již má CCO a kamufláž.</Czech>
 			<German>Ein Schalldämpfer, der an eine M4A1 angebracht werden kann.</German>
 		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_SILENCER_BIZON">
-			<English>Silencer Attachment for Bizon</English>
-			<Russian>Глушитель Бизон(МОД)</Russian>
-			<Czech>Příslušenství - tlumič pro Bizon</Czech>
-			<German>Bizon Schalldämpfer</German>			
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_SILENCER_BIZON">
-			<English>A silencer that can be attached to Bizon.</English>
-			<Russian>Прибор бесшумной стрельбы для Бизона.</Russian>
-			<Czech>Tlumič, používá se pro vylepšení pušky Bizon.</Czech>
-			<German>Ein Schalldämpfer, der an eine Bizon angebracht werden kann.</German>
-		</Key>
+		
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_SCAR">
-			<English>Silencer Attachment for SCAR</English>
-			<Russian>Глушитель SCAR(МОД)</Russian>
+			<English>[A] Silencer (SCAR)</English>
+			<Russian>[М] ПБС (SCAR)</Russian>
 			<Czech>Příslušenství - tlumič pro SCAR</Czech>
 			<German>SCAR Schalldämpfer</German>	
 		</Key>
@@ -3286,8 +3264,8 @@
 			<German>Ein Schalldämpfer, der an eine SCAR CQC angebracht werden kann.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_MP5">
-			<English>Silencer Attachment for MP5</English>
-			<Russian>Глушитель MP5(МОД)</Russian>
+			<English>[A] Silencer (MP5)</English>
+			<Russian>[М] 9мм глуш. (MP5)</Russian>
 			<Czech>Příslušenství - tlumič pro MP5</Czech>
 			<German>MP5 Schalldämpfer</German>	
 		</Key>
@@ -3298,8 +3276,8 @@
 			<German>Ein Schalldämpfer, der an eine MP5A5 angebracht werden kann.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_SCOPE_M14">
-			<English>Scope Attachment for M14</English>
-			<Russian>Прицел M14(МОД)</Russian>
+			<English>[A] Scope (M14)</English>
+			<Russian>[М] прицел (M14)</Russian>
 			<Czech>Příslušenství - dalekohled pro M14</Czech>
 			<German>M14 Zielfernrohr</German>
 		</Key>
@@ -3974,7 +3952,7 @@
 		<Key ID="STR_EQUIP_DESC_34">
 			<English>A cracked empty whiskey bottle that no longer contains anything.</English>
 			<German>Eine leere Whiskeyflasche. Sie ist leider undicht.</German>
-			<Russian>Треснутая бутылка виски не содержит в себе абсолютно ничего.</Russian>
+			<Russian>Разбитая бутылка виски, в которой ничего не осталось.</Russian>
 			<Spanish>Una botella de whisky vacía.</Spanish>
 			<French>Une bouteille fêlée, sans son précieux brevage.</French>
 			<Czech>Popraskaná láhev od whisky, která už neobsahuje ani kapku.</Czech>
@@ -4046,7 +4024,7 @@
 		<Key ID="STR_EQUIP_NAME_40">
 			<English>Wood Pile</English>
 			<German>Holzstapel</German>
-			<Russian>Дрова</Russian>
+			<Russian>Поленья</Russian>
 			<Spanish>Pila de Leña</Spanish>
 			<French>Tas de bois</French>
 			<Czech>Hromádka dřeva</Czech>
@@ -4068,9 +4046,9 @@
 			<Czech>Zahřívací sáček</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_42">
-			<English>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</English>
+			<English>A heating pad that heats when you start the crystallisation process. Used to provide warmth to your body.</English>
 			<German>Ein Wärmekissen. Wird das Metallplättchen im Gel geknickt, kristallisiert der Inhalt und erzeugt Wärme. Nützlich in kalten Umgebungen.</German>
-			<Russian>Химическая грелка. Используется для быстрого согревания вашего тела.</Russian>
+			<Russian>Химическая грелка. Используется для согревания вашего тела.</Russian>
 			<Spanish>Una almohadilla térmica que proporciona un calentamiento rápido a tu cuerpo previniendo la hipotermia.</Spanish>
 			<French>Poche produisant de la chaleur via un processus de cristallisation. Permet de réchauffer rapidement votre corps.</French>
 			<Czech>Zahřívací sáček, který se na principu krystalizace ohřeje. Používá se pro rychlé ohřátí těla.</Czech>
@@ -4168,42 +4146,10 @@
 			<Russian>Картонная коробка</Russian>
 			<German>Kartonschachtel</German>
 		</Key>
-		<Key ID="STR_WPN_DESC_1">
-			<English>Shotgun 12 gauge</English>
-			<German>Remington 870</German>
-			<Russian>Дробовик 12 калибра</Russian>
-			<Spanish>Escopeta calibre 12</Spanish>
-			<French>Fusil cal. 12</French>
-			<Czech>Brokovnice cal. 12</Czech>
-		</Key>
-		<Key ID="STR_WPN_DESC_2">
-			<English>The Remington Model 870 is a pump-action shotgun with a military torch attachment.</English>
-			<German>Die Remington Model 870 ist eine Vorderschaftrepetierflinte mit Halterung für eine Taschenlampe.</German>
-			<Russian>Ремингтон Модель 870 это помповый дробовик с креплением для фонарика</Russian>
-			<Spanish>La Remington Modelo 870 es una escopeta de acción a bombeo con una linterna militar como accesorio.</Spanish>
-			<French>Le modèle Remington 870 est un fusil à pompe avec une torche militaire.</French>
-			<Czech>Remington 870 je opakovací brokovnice. Lze na ni připevnit vojenskou baterku.</Czech>
-		</Key>
-		<Key ID="STR_WPN_NAME_3">
-			<English>Remington 870 (Flashlight)</English>
-			<German>Remington 870 mit Taschenlampe</German>
-			<Russian>Ремингтон 870 (фонарь)</Russian>
-			<Spanish>Remington 870 (Linterna)</Spanish>
-			<French>Remington 870 (+Torche)</French>
-			<Czech>Remington 870 (baterka)</Czech>
-		</Key>
-		<Key ID="STR_WPN_DESC_3">
-			<English>The Remington Model 870 is a pump-action shotgun. This weapon has a torch attached.</English>
-			<German>Die Remington Model 870 ist eine Vorderschaftrepetierflinte mit einer fest installierten Taschenlampe.</German>
-			<Russian>Ремингтон Модель 870 это помповый дробовик с армейским фонариком</Russian>
-			<Spanish>La Remington Modelo 870 es una escopeta de acción a bombeo con una linterna como accesorio.</Spanish>
-			<French>Le modèle Remington 870 est un fusil à pompe avec une lampe torche.</French>
-			<Czech>Remington 870 je opakovací brokovnice. Tato má navíc připevněnou baterku.</Czech>
-		</Key>
 		<Key ID="STR_WPN_NAME_4">
 			<English>Compound Crossbow</English>
 			<German>Kompositarmbrust</German>
-			<Russian>Спортивный арбалет</Russian>
+			<Russian>Составной арбалет</Russian>
 			<Spanish>Ballesta Compuesta</Spanish>
 			<French>Arbalète composite</French>
 			<Czech>Kuše</Czech>
@@ -4211,26 +4157,10 @@
 		<Key ID="STR_WPN_DESC_4">
 			<English>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</English>
 			<German>Die Kompositarmbrust ist, wenn man das Zielen beherrscht, eine starke und lautlose Waffe - allerdings mit kurzer Reichweite und langer Nachladezeit.</German>
-			<Russian>Спортивный арбалет требует сноровки для точной стрельбы, превращаясь в мощное однозарядное оружие на коротких дистанциях.</Russian>
+			<Russian>Арбалет требует сноровки для точной стрельбы, превращаясь в мощное оружие на коротких дистанциях.</Russian>
 			<Spanish>La ballesta compuesta es, una vez que se domina el apuntado, una poderasa arma de único tiro a corta distancia con largo tiempo de recarga.</Spanish>
 			<French>Une fois maîtrisée, l&apos;arbalète composite permet de tirer un coup puissant mais avec un long temps de chargement.</French>
 			<Czech>Kuše je tichá a účinná střelná zbraň na krátkou vzdálenost. Její nevýhodou je dlouhá nabíjecí doba.</Czech>
-		</Key>
-		<Key ID="STR_WPN_NAME_5">
-			<English>Double-barreled Shotgun</English>
-			<German>Doppelläufige Schrotflinte</German>
-			<Russian>Двустволка</Russian>
-			<Spanish>Escopeta de doble cañon</Spanish>
-			<French>Fusil à 2 coups</French>
-			<Czech>Dvouhlavňová brokovnice</Czech>
-		</Key>
-		<Key ID="STR_WPN_DESC_5">
-			<English>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</English>
-			<German>Eine Schrotflinte mit zwei parallel montierten Läufen, die in schneller Folge abgefeuert werden können.</German>
-			<Russian>Двуствольные ружья употребляются почти исключительно в качестве охотничьих, в армии же они не нашли употребления.</Russian>
-			<Spanish>Una escopeta de doble barril permite disparar dos tiros en un corto periodo de tiempo.</Spanish>
-			<French>Fusil doté de 2 canons parallèles, permettant de tirer 2 coups rapprochés.</French>
-			<Czech>Dvouhlavňová brokovnice je brokovnice s dvěma hlavněmi vedle sebe, což umožnuje vystřelit dvakrát hned za sebou.</Czech>
 		</Key>
 		<Key ID="STR_MAG_CONV_45ACP_Revolver">
 			<English>Combine for Revolver</English>
@@ -4258,6 +4188,16 @@
 			<French>Assembler pour un G17</French>
 			<German>In G17-Magazin umladen</German>
 		</Key>
+		<Key ID="STR_MAG_CONV_M24_DMR">
+			<English>Combine to DMR</English>
+			<Russian>в DMR маг.</Russian>
+			<German>In DMR-Magazin umladen</German>
+		</Key>
+		<Key ID="STR_MAG_SPLIT_4X5M24">
+			<English>Split into 4x5 (M24)</English>
+			<Russian>Разд. на 4х5 (М24)</Russian>
+		</Key>
+
 		<Key ID="STR_MAG_CONV_G36_STANAG">
 			<English>Combine to STANAG</English>
 			<Russian>в STANAG маг.</Russian>
@@ -4278,45 +4218,17 @@
 			<Russian>в AK-47 маг.</Russian>
 			<German>In AK-47-Magazin umladen</German>
 		</Key>
-		<Key ID="STR_MAG_COMBINE_1">
-			<English>Combine to 8 rounds</English>
-			<Russian>Собрать в 8п.</Russian>
+		<Key ID="STR_MAG_COMBINE_2X4IN8">
+			<English>Combine to 8 rnd.</English>
+			<Russian>Собрать в 8 п.</Russian>
 			<Spanish>Combinar a 8 rondas</Spanish>
 			<French>Assembler en 8 balles</French>
 			<Czech>Zkombinovat do 8 nábojů</Czech>
 			<German>Auf 8 Schuss aufteilen</German>
 		</Key>
-		<Key ID="STR_MAG_NAME_1">
-			<English>15Rnd. 1866 Pellets</English>
-			<German>15 Schuss 1866er Schrot</German>
-			<Russian>15п. для 1866 (дробь)</Russian>
-			<Spanish>15 rondas. Perdigones para 1866</Spanish>
-			<French>15 plombs pour 1866</French>
-			<Czech>15 náb. 1866 broky</Czech>
-		</Key>
-		<Key ID="STR_MAG_DESC_1">
-			<English>Caliber: 12 gauge</English>
-			<German>Kaliber 12</German>
-			<Russian>12-й калибр</Russian>
-			<Spanish>Calibre 12</Spanish>
-			<French>Calibre 12</French>
-			<Czech>Ráže 12</Czech>
-		</Key>
-		<Key ID="STR_MAG_NAME_2">
-			<English>15Rnd. 1866 rounds</English>
-			<German>15 Schuss 1866er Flintenlaufgeschoss</German>
-			<Russian>15п. для 1866</Russian>
-			<Spanish>15 Rondas. Balas para 1866</Spanish>
-			<French>15 balles pour 1866</French>
-			<Czech>15 náb. 1866 kulky</Czech>
-		</Key>
-		<Key ID="STR_MAG_DESC_2">
-			<English>Caliber: .44 Rimfire (11x23mm)</English>
-			<German>Kaliber .44</German>
-			<Russian>.44-й калибр</Russian>
-			<Spanish>Calibre .44</Spanish>
-			<French>Calibre .44</French>
-			<Czech>Ráže .44</Czech>
+		<Key ID="STR_MAG_SPLIT_8TO2X4">
+			<English>Split into 4x2 rnd</English>
+			<Russian>Разд. на 4x2 п.</Russian>
 		</Key>
 		<Key ID="STR_MAG_NAME_4">
 			<English>Road Flare</English>
@@ -4373,38 +4285,6 @@
 			<Spanish>Chemlight (Azul)</Spanish>
 			<French>Bâton lumineux (bleu)</French>
 			<Czech>Chemické světlo (modré)</Czech>
-		</Key>
-		<Key ID="STR_MAG_NAME_8">
-			<English>2Rnd. Slug</English>
-			<Russian>2п.12к (пуля)</Russian>
-			<Spanish>2Rnd. Slug</Spanish>
-			<French>2 balles</French>
-			<Czech>2 patrony Slug</Czech>
-			<German>2 Schuss Flintenlaufgeschoss</German>
-		</Key>
-		<Key ID="STR_MAG_DESC_8">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2 &lt;br/&gt;Used in: M1014</English>
-			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Двустволках</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: M1014</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014</French>
-			<Czech>Ráže: 12 &lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: M1014</Czech>
-			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014</German>
-		</Key>
-		<Key ID="STR_MAG_NAME_9">
-			<English>2Rnd. Pellets</English>
-			<Russian>2п.12к (дробь)</Russian>
-			<Spanish>2Rnd. Perdigones</Spanish>
-			<French>2 cartouches</French>
-			<Czech>2 patrony broků</Czech>
-			<German>2 Schuss Schrot</German>
-		</Key>
-		<Key ID="STR_MAG_DESC_9">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2 Pellets&lt;br/&gt;Used in: M1014</English>
-			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Двустволках</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 Perdigones&lt;br/&gt;Usada en: M1014</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 2 cartouches&lt;br/&gt;Pour: M1014</French>
-			<Czech>Ráže: 12&lt;br/&gt;Munice: 2 patrony&lt;br/&gt;Pro: M1014</Czech>
-			<German>Kaliber 12 Schrotmunition&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014</German>
 		</Key>
 		<Key ID="STR_CHAR_1">
 			<English>Survivor</English>
@@ -6862,7 +6742,7 @@
 		<Key ID="str_fireplace_01">
 			<English>You have created a fireplace</English>
 			<German>Du hast erfolgreich eine Feuerstelle angelegt.</German>
-			<Russian>Вы подготовили костер.</Russian>
+			<Russian>Вы разожгли костер.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
 			<French>\n\nVous avez créé un feu de camp.</French>
 			<Czech>Vytvořili jste ohniště.</Czech>
@@ -6942,7 +6822,7 @@
 		<Key ID="str_player_boiledwater">
 			<English>You have boiled %1 bottles with water.</English>
 			<German>Du hast %1 Flasche(n) mit Wasser abgekocht.</German>
-			<Russian>Вы наполнили %1 бутылок чистой кипяченой водой.</Russian>
+			<Russian>Наполнено чистой кипяченой водой  бутылок: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<French>\n\nVous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste převařenou vodou %1 láhve.</Czech>
@@ -7039,7 +6919,7 @@
 		<Key ID="str_player_request">
 			<English>Requesting Authentication</English>
 			<German>Authentifizierung wird abgefragt</German>
-			<Russian>Запрос идентификация</Russian>
+			<Russian>Запрос идентификации</Russian>
 			<Spanish>Solicitando Autentificación</Spanish>
 			<French>Demande d&apos;Authentification</French>
 			<Czech>Odesílám požadavek na ověření</Czech>
@@ -9804,24 +9684,28 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_GH_NAME">
 			<English>M14 Camo</English>
+			<Russian>M14 (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_CCO_NAME">
 			<English>M14 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_CCO_GH_NAME">
 			<English>M14 CCO Camo</English>
+			<Russian>M14 CCO (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_HOLO_NAME">
 			<English>M14 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_HOLO_GH_NAME">
 			<English>M14 Holo Camo</English>
+			<Russian>M14 Holo (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_ACOG_NAME">
 			<English>M14 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_ACOG_GH_NAME">
 			<English>M14 ACOG Camo</English>
+			<Russian>M14 ACOG (камуфляж)</Russian>
 		</Key>
 		
 		
@@ -9832,18 +9716,21 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M24_GH_NAME">
 			<English>M24 Camo</English>
+			<Russian>M24 (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M40A3_NAME">
 			<English>M40A3</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M40A3_GH_NAME">
 			<English>M40A3 Camo</English>
+			<Russian>M40A3 (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_DMR_NAME">
 			<English>DMR</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_DMR_GH_NAME">
 			<English>DMR Camo</English>
+			<Russian>DMR (камуфляж)</Russian>
 		</Key>
 		
 		
@@ -9854,24 +9741,30 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_FL_NAME">
 			<English>M4A1 FL</English>
+			<Russian>M4A1 фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_SD_NAME">
 			<English>M4A1 SD</English>
+			<Russian>M4A1 ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_SD_FL_NAME">
 			<English>M4A1 SD FL</English>
+			<Russian>M4A1 ПБС фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_NAME">
 			<English>M4A1 M203</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_FL_NAME">
 			<English>M4A1 M203 FL</English>
+			<Russian>M4A1 M203 фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_NAME">
 			<English>M4A1 M203 SD</English>
+			<Russian>M4A1 M203 ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_FL_NAME">
 			<English>M4A1 M203 SD FL</English>
+			<Russian>M4A1 M203 ПБС фон.</Russian>
 		</Key>
 		<!-- M4A1 CCO-->
 		<Key ID="STR_DZ_WPN_M4A1_CCO_NAME">
@@ -9879,24 +9772,30 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_FL_NAME">
 			<English>M4A1 CCO FL</English>
+			<Russian>M4A1 CCO фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_NAME">
 			<English>M4A1 CCO SD</English>
+			<Russian>M4A1 CCO ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_FL_NAME">
 			<English>M4A1 CCO SD FL</English>
+			<Russian>M4A1 CCO ПБС фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_NAME">
 			<English>M4A1 M203 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_FL_NAME">
 			<English>M4A1 M203 CCO FL</English>
+			<Russian>M4A1 M203 CCO фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_NAME">
 			<English>M4A1 M203 CCO SD</English>
+			<Russian>M4A1 M203 CCO ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_FL_NAME">
 			<English>M4A1 M203 CCO SD FL</English>
+			<Russian>M4A1 M203 CCO ПБС фон.</Russian>
 		</Key>
 		<!-- M4A1 Holo -->
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_NAME">
@@ -9904,24 +9803,30 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_FL_NAME">
 			<English>M4A1 Holo FL</English>
+			<Russian>M4A1 Holo фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_NAME">
 			<English>M4A1 Holo SD</English>
+			<Russian>M4A1 Holo ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_FL_NAME">
 			<English>M4A1 Holo SD FL</English>
+			<Russian>M4A1 Holo ПБС фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_NAME">
 			<English>M4A1 M203 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_FL_NAME">
 			<English>M4A1 M203 Holo FL</English>
+			<Russian>M4A1 M203 Holo фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME">
 			<English>M4A1 M203 Holo SD</English>
+			<Russian>M4A1 M203 Holo ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_FL_NAME">
 			<English>M4A1 M203 Holo SD FL</English>
+			<Russian>M4A1 M203 Holo ПБС фон.</Russian>
 		</Key>
 		<!-- M4A1 ACOG -->
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_NAME">
@@ -9929,24 +9834,30 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_FL_NAME">
 			<English>M4A1 ACOG FL</English>
+			<Russian>M4A1 ACOG фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_NAME">
 			<English>M4A1 ACOG SD</English>
+			<Russian>M4A1 ACOG ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_FL_NAME">
 			<English>M4A1 ACOG SD FL</English>
+			<Russian>M4A1 ACOG ПБС фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_NAME">
 			<English>M4A1 M203 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_FL_NAME">
 			<English>M4A1 M203 ACOG FL</English>
+			<Russian>M4A1 M203 ACOG фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_NAME">
 			<English>M4A1 M203 ACOG SD</English>
+			<Russian>M4A1 M203 ACOG ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_FL_NAME">
 			<English>M4A1 M203 ACOG SD FL</English>
+			<Russian>M4A1 M203 ACOG ПБС фон.</Russian>
 		</Key>
 		
 		
@@ -9957,24 +9868,28 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_FL">
 			<English>M16A4 FL</English>
+			<Russian>M16A4 фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO">
 			<English>M16A4 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO_FL">
 			<English>M16A4 CCO FL</English>
+			<Russian>M16A4 CCO фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_HOLO">
 			<English>M16A4 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_HOLO_FL">
 			<English>M16A4 Holo FL</English>
+			<Russian>M16A4 Holo фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_NAME">
 			<English>M16A4 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_FL_NAME">
 			<English>M16A4 ACOG FL</English>
+			<Russian>M16A4 ACOG фон.</Russian>
 		</Key>
 		<!-- M203 -->
 		<Key ID="STR_DZ_WPN_M16A4_GL">
@@ -9982,24 +9897,28 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_FL">
 			<English>M16A4 M203 FL</English>
+			<Russian>M16A4 M203 фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO">
 			<English>M16A4 M203 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO_FL">
 			<English>M16A4 M203 CCO FL</English>
+			<Russian>M16A4 M203 CCO фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO">
 			<English>M16A4 M203 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO_FL">
 			<English>M16A4 M203 Holo FL</English>
+			<Russian>M16A4 M203 Holo фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_NAME">
 			<English>M16A4 M203 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_FL_NAME">
 			<English>M16A4 M203 ACOG FL</English>
+			<Russian>M16A4 M203 ACOG фон.</Russian>
 		</Key>
 		
 		
@@ -10152,27 +10071,32 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_RIS_NAME">
 			<English>SA-58 RIS</English>
+			<Russian>SA-58 РСИ </Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_RIS_FL_NAME">
 			<English>SA-58 RIS FL</English>
+			<Russian>SA-58 РСИ фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_NAME">
 			<English>SA-58 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_FL_NAME">
 			<English>SA-58 CCO FL</English>
+			<Russian>SA-58 CCO фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_HOLO_NAME">
 			<English>SA-58 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_HOLO_FL_NAME">
 			<English>SA-58 Holo FL</English>
+			<Russian>SA-58 Holo фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_NAME">
 			<English>SA-58 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_FL_NAME">
 			<English>SA-58 ACOG FL</English>
+			<Russian>SA-58 ACOG фон.</Russian>
 		</Key>
 		
 		
@@ -10183,24 +10107,28 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_SD_NAME">
 			<English>G36C SD</English>
+			<Russian>G36C ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_CCO_NAME">
 			<English>G36C CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_CCO_SD_NAME">
 			<English>G36C CCO SD</English>
+			<Russian>G36C CCO ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_HOLO_NAME">
 			<English>G36C Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_HOLO_SD_NAME">
 			<English>G36C Holo SD</English>
+			<Russian>G36C Holo ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_ACOG_NAME">
 			<English>G36C ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_ACOG_SD_NAME">
 			<English>G36C ACOG SD</English>
+			<Russian>G36C ACOG ПБС</Russian>
 		</Key>
 		
 		
@@ -10208,15 +10136,19 @@
 		<!-- G36 -->
 		<Key ID="STR_DZ_WPN_G36A_CAMO_NAME">
 			<English>G36A Camo</English>
+			<Russian>G36A (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36A_CAMO_SD_NAME">
 			<English>G36A Camo SD</English>
+			<Russian>G36A ПБС (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36K_CAMO_NAME">
 			<English>G36K Camo</English>
+			<Russian>G36K (камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36K_CAMO_SD_NAME">
 			<English>G36K Camo SD</English>
+			<Russian>G36K ПБС (камуфляж)</Russian>
 		</Key>
 		
 		
@@ -10227,6 +10159,17 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_MP5_SD_NAME">
 			<English>MP5A5 SD</English>
+			<Russian>MP5A5 ПБС</Russian>
+		</Key>
+
+		<!-- BIZON -->
+		<Key ID="STR_DZ_WPN_BIZON_NAME">
+			<English>Bizon</English>
+			<Russian>Бизон</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_BIZON_SD_NAME">
+			<English>Bizon SD</English>
+			<Russian>Бизон ПБС</Russian>
 		</Key>
 		
 		
@@ -10237,6 +10180,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M9_SD_NAME">
 			<English>M9 SD</English>
+			<Russian>M9 ПБС</Russian>
 		</Key>
 		
 		
@@ -10247,15 +10191,26 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_FL_NAME">
 			<English>G17 FL</English>
+			<Russian>G17 фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_SD_NAME">
 			<English>G17 SD</English>
+			<Russian>G17 ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_SD_FL_NAME">
 			<English>G17 SD FL</English>
+			<Russian>G17 ПБС фон.</Russian>
 		</Key>
 		
-		
+		<!-- PM -->
+		<Key ID="STR_DZ_WPN_PM_NAME">
+			<English>PM</English>
+			<Russian>ПМ</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_PM_SD_NAME">
+			<English>PM SD</English>
+			<Russian>ПМ ПБС</Russian>
+		</Key>		
 		
 		<!-- M249 -->
 		<Key ID="STR_DZ_WPN_M249_NAME">
@@ -10299,9 +10254,72 @@
 		<Key ID="STR_DZ_WPN_M1014_ACOG_NAME">
 			<English>M1014 ACOG</English>
 		</Key>
+
+
+		<!-- Remington870 -->
+		<Key ID="STR_DZ_WPN_R870_NAME">
+			<English>Remington 870</English>
+			<Russian>Ремингтон 870</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_R870_DESC">
+			<English>The Remington Model 870 is a pump-action shotgun.</English>
+			<German>Die Remington Model 870 ist eine Vorderschaftrepetierflinte mit Halterung für eine Taschenlampe.</German>
+			<Russian>Ремингтон Модель 870 - помповый дробовик.</Russian>
+			<Spanish>La Remington Modelo 870 es una escopeta de acción a bombeo con una linterna militar como accesorio.</Spanish>
+			<French>Le modèle Remington 870 est un fusil à pompe avec une torche militaire.</French>
+			<Czech>Remington 870 je opakovací brokovnice. Lze na ni připevnit vojenskou baterku.</Czech>
+		</Key>		
+		<Key ID="STR_DZ_WPN_R870_FL_NAME">
+			<English>Remington 870 FL</English>
+			<Russian>Ремингтон 870 фон.</Russian>
+			<German>Remington 870 mit Taschenlampe</German>
+			<Spanish>Remington 870 (Linterna)</Spanish>
+			<French>Remington 870 (+Torche)</French>
+			<Czech>Remington 870 (baterka)</Czech>
+		</Key>
+		<Key ID="STR_DZ_WPN_R870_FL_DESC">
+			<English>The Remington Model 870 is a pump-action shotgun. This weapon has a torch attached.</English>
+			<German>Die Remington Model 870 ist eine Vorderschaftrepetierflinte mit einer fest installierten Taschenlampe.</German>
+			<Russian>Ремингтон Модель 870 - помповый дробовик. На данный экземпляр установлен фонарик.</Russian>
+			<Spanish>La Remington Modelo 870 es una escopeta de acción a bombeo con una linterna como accesorio.</Spanish>
+			<French>Le modèle Remington 870 est un fusil à pompe avec une lampe torche.</French>
+			<Czech>Remington 870 je opakovací brokovnice. Tato má navíc připevněnou baterku.</Czech>
+		</Key>		
 		
-		
-		
+
+		<!-- MR43 -->
+		<Key ID="STR_DZ_WPN_MR43_NAME">
+			<English>Double-barreled Shotgun</English>
+			<German>Doppelläufige Schrotflinte</German>
+			<Russian>Двустволка</Russian>
+			<Spanish>Escopeta de doble cañon</Spanish>
+			<French>Fusil à 2 coups</French>
+			<Czech>Dvouhlavňová brokovnice</Czech>
+		</Key>
+		<Key ID="STR_DZ_WPN_MR43_DESC">
+			<English>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</English>
+			<German>Eine Schrotflinte mit zwei parallel montierten Läufen, die in schneller Folge abgefeuert werden können.</German>
+			<Russian>Двуствольные ружья употребляются почти исключительно в качестве охотничьих.</Russian>
+			<Spanish>Una escopeta de doble barril permite disparar dos tiros en un corto periodo de tiempo.</Spanish>
+			<French>Fusil doté de 2 canons parallèles, permettant de tirer 2 coups rapprochés.</French>
+			<Czech>Dvouhlavňová brokovnice je brokovnice s dvěma hlavněmi vedle sebe, což umožnuje vystřelit dvakrát hned za sebou.</Czech>
+		</Key>
+		<Key ID="STR_DZ_WPN_MR43_DSMODE_NAME">
+			<English>Double Shot</English>
+			<Russian>Дуплет</Russian>
+		</Key>
+
+		<!-- Winchester1866 -->
+		<Key ID="STR_DZ_WPN_W1866_NAME">
+			<English>Winchester 1866</English>
+			<German>Winchester 1866</German>
+			<Russian>Винчестер 1866</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_W1866_DESC">
+			<English>Winchester Model 1866 – was originally chambered for the rimfire .44 Henry. Nicknamed the "Yellow Boy" because of its receiver of a bronze/brass alloy.</English>
+			<Russian>Винчестер модели 1866 был приспособлен под патрон .44 Henry. Его называли "Yellow Boy" из-за цвета бронзово-медного сплава приемника.</Russian>
+		</Key>
+
 		<!-- Mk48 -->
 		<Key ID="STR_DZ_WPN_MK48_NAME">
 			<English>Mk48</English>
@@ -10355,7 +10373,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SVD_GH_NAME">
 			<English>SVD Camo</English>
-			<Russian>СВД(кам)</Russian>
+			<Russian>СВД (камуфляж)</Russian>
 		</Key>
 		
 		
@@ -10407,7 +10425,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_FL_NAME">
 			<English>Crossbow FL</English>
-			<Russian>Арбалет</Russian>
+			<Russian>Арбалет фон.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_NAME">
 			<English>Crossbow CCO</English>
@@ -10434,18 +10452,127 @@
 		
 		<!-- **** MAGAZINES **** -->
 		
-		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD">
-			<English>G17 SD Mag.</English>
-			<Russian>маг. G17 ПБС</Russian>
+		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
+			<English>17Rnd. G17 SD mag.</English>
+			<Russian>17п. G17 глуш. маг.</Russian>
 		</Key>
-		<Key ID="STR_DZ_MAG_30RND_762X39_AK47">
-			<English>30Rnd. AK-47</English>
-			<Russian>30п. АКМ</Russian>
+		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17_NAME">
+			<English>17Rnd. G17 mag.</English>
+			<Russian>17п. G17 маг.</Russian>
 		</Key>
-		
+		<Key ID="STR_DZ_MAG_15RND_9X19_M9SD_NAME">
+			<English>15Rnd. M9 SD mag.</English>
+			<Russian>15п. M9 глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_15RND_9X19_M9_NAME">
+			<English>15Rnd. M9 mag.</English>
+			<Russian>15п. M9 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_9X19_UZISD_NAME">
+			<English>30Rnd. PDW SD mag.</English>
+			<Russian>30п. PDW глуш. маг.</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_30RND_9X19_UZI_NAME">
+			<English>30Rnd. PDW mag.</English>
+			<Russian>30п. PDW маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_9X19_MP5SD_NAME">
+			<English>30Rnd. MP5 SD mag.</English>
+			<Russian>30п. MP5 глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_9X19_MP5_NAME">
+			<English>30Rnd. MP5 mag.</English>
+			<Russian>30п. MP5 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_64RND_9X19_BIZONSD_NAME">
+			<English>64Rnd. Bizon SD mag.</English>
+			<Russian>64п. Бизон глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_64RND_9X19_BIZON_NAME">
+			<English>64Rnd. Bizon mag.</English>
+			<Russian>64п. Бизон маг.</Russian>
+		</Key>
+
+		<Key ID="STR_DZ_MAG_8RND_9X18_PMSD_NAME">
+			<English>8Rnd. PM SD mag.</English>
+			<Russian>8п. ПМ глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_9X18_PM_NAME">
+			<English>8Rnd. PM mag.</English>
+			<Russian>8п. ПМ маг.</Russian>
+		</Key>
+
+		<Key ID="STR_DZ_MAG_7RND_45ACP_1911_NAME">
+			<English>7Rnd. 1911 mag.</English>
+			<Russian>7п. 1911 маг.</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_6RND_45ACP_NAME">
+			<English>6Rnd. revolver ammo</English>
+			<Russian>6п. для револьвера</Russian>
+		</Key>
+
+		<Key ID="STR_DZ_MAG_30RND_545x39_AKSD_NAME">
+			<English>30Rnd. AK-74 SD mag.</English>
+			<Russian>30п. AK-74 глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_545x39_AK_NAME">
+			<English>30Rnd. AK-74 mag.</English>
+			<Russian>30п. АК-74 маг.</Russian>
+		</Key>
+
+		<Key ID="STR_DZ_MAG_30RND_762X39_AK47_NAME">
+			<English>30Rnd. AK-47M mag.</English>
+			<Russian>30п. АК-47М маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_762X39_SA58_NAME">
+			<English>30Rnd. SA-58 mag.</English>
+			<Russian>30п. SA-58 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_556x45_G36SD_NAME">
+			<English>30Rnd. G36 SD mag.</English>
+			<Russian>30п. G36 глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_556x45_G36_NAME">
+			<English>30Rnd. G36 mag.</English>
+			<Russian>30п. G36 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_556x45_STANAGSD_NAME">
+			<English>30Rnd. STANAG SD mag.</English>
+			<Russian>30п. STANAG глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_556x45_STANAG_NAME">
+			<English>30Rnd. STANAG mag.</English>
+			<Russian>30п. STANAG маг.</Russian>
+		</Key>
+
+		<Key ID="STR_DZ_MAG_20RND_762X51_FNFAL_NAME">
+			<English>20Rnd. FN FAL mag.</English>
+			<Russian>20п. FN FAL маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_762X51_DMR_NAME">
+			<English>20Rnd. DMR mag.</English>
+			<Russian>20п. DMR маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_5RND_762X51_M24_NAME">
+			<English>5Rnd. M24/M40 mag.</English>
+			<Russian>5п. M24/M40 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_100RND_762X51_M240_NAME">
+			<English>100Rnd. M240 belt</English>
+			<Russian>100п. M240 лента</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_100RND_762x54_PK_NAME">
+			<English>100Rnd. PK belt</English>
+			<Russian>100п. ПК лента</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10RND_762x54_SVD_NAME">
+			<English>10Rnd. SVD mag.</English>
+			<Russian>10п. СВД маг.</Russian>
+		</Key>
+
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_NAME">
 			<English>Tranquilizer bolt</English>
-			<Russian>Болт-транквилизатор</Russian>
+			<Russian>Болт (транквилизатор)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_DESC">
 			<English>Crossbow bolt fitted with a sedative injector. Used to safely capture large animals.</English>
@@ -10454,7 +10581,7 @@
 		
 		<Key ID="STR_DZ_MAG_BOLT_EXP_NAME">
 			<English>Explosive bolt</English>
-			<Russian>Болт-взрывчатка</Russian>
+			<Russian>Болт (взрывчатка)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_BOLT_EXP_DESC">
 			<English>Crossbow bolt fitted with an explosive head.</English>
@@ -10462,8 +10589,8 @@
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_NAME">
-			<English>50Rnd. UK-59</English>
-			<Russian>50п. UK-59</Russian>
+			<English>50Rnd. UK-59 belt</English>
+			<Russian>50п. UK-59 лента</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: UK-59</English>
@@ -10471,8 +10598,8 @@
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_NAME">
-			<English>75Rnd. RPK</English>
-			<Russian>75п. РПК</Russian>
+			<English>75Rnd. RPK drum mag.</English>
+			<Russian>75п. РПК барабан</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 75&lt;br/&gt;Used in: RPK</English>
@@ -10480,45 +10607,133 @@
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_545X39_RPK_NAME">
-			<English>75Rnd. RPK-74</English>
-			<Russian>75п. РПК-74</Russian>
+			<English>75Rnd. RPK-74 drum mag.</English>
+			<Russian>75п. РПК-74 барабан</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_100RND_556X45_M249_NAME">
-			<English>100Rnd. M249</English>
-			<Russian>100п. M249</Russian>
+			<English>100Rnd. M249 belt</English>
+			<Russian>100п. M249 лента</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_200RND_556X45_M249_NAME">
+			<English>200Rnd. M249 belt</English>
+			<Russian>200п. M249 лента</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_NAME">
-			<English>5Rnd. Mosin Nagant</English>
-			<Russian>5п. Мосинка</Russian>
+			<English>5Rnd. Mosin Nagant mag.</English>
+			<Russian>5п. Мосинка маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_DESC">
 			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: Mosin Nagant</English>
 			<Russian>Калибр: 7.62x54mmR&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: Мосинка</Russian>
 		</Key>
-		
-		
-		
-		
-		
+		<Key ID="STR_DZ_MAG_5RND_17HMR_NAME">
+			<English>5Rnd. CZ 550 mag.</English>
+			<Russian>5п. CZ 550 маг.</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_5RND_17HMR_DESC">
+			<English>Caliber: 9,3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
+			<Russian>Калибр: 9,3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10RND_303BRITISH_NAME">
+			<English>10Rnd. Lee Enfield mag.</English>
+			<Russian>10п. SMLE Мк III маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_15RND_W1866_NAME">
+			<English>15Rnd. 1866 ammo</English>
+			<German>15 Schuss 1866er Flintenlaufgeschoss</German>
+			<Russian>15п. для 1866</Russian>
+			<Spanish>15 Rondas. Balas para 1866</Spanish>
+			<French>15 balles pour 1866</French>
+			<Czech>15 náb. 1866 kulky</Czech>
+		</Key>		
+		<Key ID="STR_DZ_MAG_15RND_W1866_DESC">
+			<English>Caliber: 11x23mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Winchester 1866</English>
+			<Russian>Калибр: 11x23мм&lt;br/&gt;Патронов: 15&lt;br/&gt;Используется в: Винчестер 1866</Russian>
+		</Key>		
+
+		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_NAME">
+			<English>2Rnd. 12 Cal. Slug</English>
+			<Russian>2п. 12к (пуля)</Russian>
+			<Spanish>2Rnd. Slug</Spanish>
+			<French>2 balles</French>
+			<Czech>2 patrony Slug</Czech>
+			<German>2 Schuss Flintenlaufgeschoss</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_DESC">
+			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2 &lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
+			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Ремингтон 870, Двустволках</Russian>
+			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
+			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
+			<Czech>Ráže: 12 &lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
+			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME">
+			<English>2Rnd. 12Cal. Pellets</English>
+			<Russian>2п. 12к (дробь)</Russian>
+			<Spanish>2Rnd. Perdigones</Spanish>
+			<French>2 cartouches</French>
+			<Czech>2 patrony broků</Czech>
+			<German>2 Schuss Schrot</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_DESC">
+			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2&lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
+			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Ремингтон 870, Двустволках</Russian>
+			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2&lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
+			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
+			<Czech>Ráže: 12&lt;br/&gt;Munice: 2&lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
+			<German>Kaliber 12 Schrotmunition&lt;br/&gt;2&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_8RND_12GAUGE_SLUG_NAME">
+			<English>8Rnd. 12 Cal. Slug</English>
+			<Russian>8п. 12к (пуля)</Russian>
+			<Spanish>8Rnd. Slug</Spanish>
+			<French>8 balles</French>
+			<Czech>8 patrony Slug</Czech>
+			<German>8 Schuss Flintenlaufgeschoss</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_12GAUGE_SLUG_DESC">
+			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 8 &lt;br/&gt;Used in: M1014, Remington 870</English>
+			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 8 &lt;br/&gt;Используется в: M1014, Ремингтон 870</Russian>
+			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8 &lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
+			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
+			<Czech>Ráže: 12 &lt;br/&gt;Munice: 8 &lt;br/&gt;Pro: M1014, Remington 870</Czech>
+			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;8 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_NAME">
+			<English>8Rnd. 12Cal. Pellets</English>
+			<Russian>8п. 12к (дробь)</Russian>
+			<Spanish>8Rnd. Perdigones</Spanish>
+			<French>8 cartouches</French>
+			<Czech>8 patrony broků</Czech>
+			<German>8 Schuss Schrot</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_DESC">
+			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M1014, Remington 870</English>
+			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 8 &lt;br/&gt;Используется в: M1014, Ремингтон 870</Russian>
+			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8&lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
+			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
+			<Czech>Ráže: 12&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
+			<German>Kaliber 12 Schrotmunition&lt;br/&gt;8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+		</Key>				
 		
 		
 		<!-- **** ATTACHMENTS **** -->
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">
 			<English>Attach to primary</English>
-			<Russian>Уст. на осн.</Russian>
+			<Russian>Установить на осн.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACT_TO_SECONDARY">
 			<English>Attach to secondary</English>
-			<Russian>Уст. на доп.</Russian>
+			<Russian>Установить на доп.</Russian>
 		</Key>
 		
 		<!-- 9mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP9_NAME">
-			<English>9mm Suppressor</English>
-			<Russian>9мм глушитель</Russian>
+			<English>[A] 9mm Suppressor</English>
+			<Russian>[М] 9мм глушитель</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP9_DESC">
 			<English>9mm Sound suppressor</English>
@@ -10526,13 +10741,47 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP9_RMVE">
 			<English>Remove Suppressor</English>
-			<Russian>Снять глуш.</Russian>
+			<Russian>Снять глушитель</Russian>
+		</Key>
+		<!-- 9mm Suppressor PM -->
+		<Key ID="STR_DZ_ATT_SUP9PM_NAME">
+			<English>[A] 9mm silencer (PM)</English>
+			<Russian>[М] 9мм глуш. (ПМ)</Russian>
+			<Czech>Příslušenství - tlumič pro Makarov</Czech>
+			<German>Makarov Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP9PM_DESC">
+			<English>A silencer that can be attached to Makarov.</English>
+			<Russian>ПБС для пистолета Макарова.</Russian>
+			<Czech>Tlumič, používá se pro vylepšení pistole Makarov.</Czech>
+			<German>Ein Schalldämpfer, der an eine Makarov angebracht werden kann.</German>
+		</Key>		
+		<Key ID="STR_DZ_ATT_SUP9PM_RMVE">
+			<English>Remove Suppressor</English>
+			<Russian>Снять глушитель</Russian>
+		</Key>
+		<!-- 9mm Suppressor Bizon -->
+		<Key ID="STR_DZ_ATT_SUP9BIZON_NAME">
+			<English>[A] 9mm silencer (Bizon)</English>
+			<Russian>[М] 9мм глуш. (Бизон)</Russian>
+			<Czech>Příslušenství - tlumič pro Bizon</Czech>
+			<German>Bizon Schalldämpfer</German>			
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP9BIZON_DESC">
+			<English>A silencer that can be attached to Bizon.</English>
+			<Russian>Прибор бесшумной стрельбы для Бизона.</Russian>
+			<Czech>Tlumič, používá se pro vylepšení pušky Bizon.</Czech>
+			<German>Ein Schalldämpfer, der an eine Bizon angebracht werden kann.</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP9BIZON_RMVE">
+			<English>Remove Suppressor</English>
+			<Russian>Снять глушитель</Russian>
 		</Key>
 		
 		<!-- 5.56mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP556_NAME">
-			<English>5.56mm Suppressor</English>
-			<Russian>5.56мм глушитель</Russian>
+			<English>[A] 5.56mm Suppressor</English>
+			<Russian>[М] 5.56мм глушитель</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP556_DESC">
 			<English>5.56mm Sound suppressor</English>
@@ -10540,13 +10789,13 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP556_RMVE">
 			<English>Remove Suppressor</English>
-			<Russian>Снять глуш.</Russian>
+			<Russian>Снять глушитель</Russian>
 		</Key>
 		
 		<!-- 5.45mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP545_NAME">
-			<English>5.45mm Suppressor</English>
-			<Russian>5.45мм глушитель</Russian>
+			<English>[A] 5.45mm Suppressor</English>
+			<Russian>[М] 5.45мм глушитель</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP545_DESC">
 			<English>5.45mm Sound suppressor</English>
@@ -10554,13 +10803,13 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP545_RMVE">
 			<English>Remove Suppressor</English>
-			<Russian>Снять глуш.</Russian>
+			<Russian>Снять глушитель</Russian>
 		</Key>
 		
 		<!-- CCO -->
 		<Key ID="STR_DZ_ATT_CCO_NAME">
-			<English>M68 CCO</English>
-			<Russian>M68 CCO</Russian>
+			<English>[A] M68 CCO</English>
+			<Russian>[М] M68 CCO</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_CCO_DESC">
 			<English>CompM2 Close Combat Optic&lt;br/&gt;Manufactured by Swedish Aimpoint AB.</English>
@@ -10573,8 +10822,8 @@
 		
 		<!-- Holo -->
 		<Key ID="STR_DZ_ATT_HOLO_NAME">
-			<English>EOTech 553 HWS</English>
-			<Russian>EOTech 553 HWS</Russian>
+			<English>[A] EOTech 553 HWS</English>
+			<Russian>[М] EOTech 553 HWS</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_HOLO_DESC">
 			<English>Holographic Weapon Sight&lt;br/&gt;Manufactured by American EOTech Inc.</English>
@@ -10587,8 +10836,8 @@
 		
 		<!-- ACOG -->
 		<Key ID="STR_DZ_ATT_ACOG_NAME">
-			<English>TA31A ACOG</English>
-			<Russian>TA31A ACOG</Russian>
+			<English>[A] TA31A ACOG</English>
+			<Russian>[М] TA31A ACOG</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_DESC">
 			<English>Advanced Combat Optical Gunsight&lt;br/&gt;Manufactured by American Trijicon Inc.</English>
@@ -10601,8 +10850,8 @@
 		
 		<!-- Kobra -->
 		<Key ID="STR_DZ_ATT_KOBRA_NAME">
-			<English>Kobra EKP-1S-03</English>
-			<Russian>Кобра ЭКП-1С-03</Russian>
+			<English>[A] Kobra EKP-1S-03</English>
+			<Russian>[М] Кобра ЭКП-1С-03</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_DESC">
 			<English>Red dot collimator sight&lt;br/&gt;Manufactured in Izhevsk Russia.</English>
@@ -10615,8 +10864,8 @@
 		
 		<!-- PSO-1 -->
 		<Key ID="STR_DZ_ATT_PSO1_NAME">
-			<English>PSO-1 Scope</English>
-			<Russian>Прицел ПСО-1</Russian>
+			<English>[A] PSO-1 Scope</English>
+			<Russian>[М] прицел ПСО-1</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_PSO1_DESC">
 			<English>Telescopic sight manufactured in Russia by the Novosibirsk instrument-making factory.</English>
@@ -10629,8 +10878,8 @@
 		
 		<!-- M203 -->
 		<Key ID="STR_DZ_ATT_M203_NAME">
-			<English>M203 grenade launcher</English>
-			<Russian>Подств.гранатомет M203</Russian>
+			<English>[A] M203 grenade launcher</English>
+			<Russian>[М] подствольник M203</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_M203_DESC">
 			<English>Under-barrel grenade launcher</English>
@@ -10643,8 +10892,8 @@
 		
 		<!-- GP-25 -->
 		<Key ID="STR_DZ_ATT_GP25_NAME">
-			<English>GP-25 grenade launcher</English>
-			<Russian>Подств.гранатомет ГП-25</Russian>
+			<English>[A] GP-25 grenade launcher</English>
+			<Russian>[М] подствольник ГП-25</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_GP25_DESC">
 			<English>Under-barrel grenade launcher</English>
@@ -10657,8 +10906,8 @@
 		
 		<!-- Rifle flashlight -->
 		<Key ID="STR_DZ_ATT_FL_RFL_NAME">
-			<English>Rifle flashlight</English>
-			<Russian>Оружейный фонарь</Russian>
+			<English>[A] Rifle flashlight</English>
+			<Russian>[М] оружейный фонарь</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_RFL_DESC">
 			<English>Rail-attachable rifle flashlight</English>
@@ -10671,8 +10920,8 @@
 		
 		<!-- Pistol flashlight -->
 		<Key ID="STR_DZ_ATT_FL_PST_NAME">
-			<English>Pistol flashlight</English>
-			<Russian>Пистолетный фонарь</Russian>
+			<English>[A] Pistol flashlight</English>
+			<Russian>[М] пистолетный фонарь</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_PST_DESC">
 			<English>Rail-attachable pistol flashlight</English>
@@ -10685,8 +10934,8 @@
 		
 		<!-- Ghillie -->
 		<Key ID="STR_DZ_ATT_GHIL_NAME">
-			<English>Small camo netting</English>
-			<Russian>Камуфляж (мал.)</Russian>
+			<English>[A] Small camo netting</English>
+			<Russian>[М] малый камуфляж</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_GHIL_DESC">
 			<English>Assorted pieces of camo netting. Might be used to camouflage something small.</English>
@@ -10694,13 +10943,13 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_GHIL_RMVE">
 			<English>Remove Ghillie</English>
-			<Russian>Снять камуфл.</Russian>
+			<Russian>Снять камуфляж</Russian>
 		</Key>
 		
 		<!-- PU Scope -->
 		<Key ID="STR_DZ_ATT_PU_NAME">
-			<English>PU-Scope</English>
-			<Russian>Прицел ПУ</Russian>
+			<English>[A] PU-Scope</English>
+			<Russian>[М] прицел ПУ</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_PU_DESC">
 			<English>Standard issue Soviet sniper scope during World War II.&lt;br/&gt;Magnification: 3.5x</English>
@@ -10708,13 +10957,13 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_PU_RMVE">
 			<English>Remove Scope</English>
-			<Russian>Снять ПУ</Russian>
+			<Russian>Снять прицел</Russian>
 		</Key>
 		
 		<!-- Cartridge belt -->
 		<Key ID="STR_DZ_ATT_BELT_NAME">
-			<English>Cartridge holder</English>
-			<Russian>Патронташ</Russian>
+			<English>[A] Cartridge holder</English>
+			<Russian>[М] патронташ</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_DESC">
 			<English>Holds cartridges for easier access. Can be attached to the stock of a rifle.</English>
@@ -10727,8 +10976,8 @@
 		
 		<!-- SA58 RIS -->
 		<Key ID="STR_DZ_ATT_SA58RIS_NAME">
-			<English>SA-58 RIS upgrade kit</English>
-			<Russian>SA-58 комплект РСИ </Russian>
+			<English>[A] SA-58 RIS upgrade kit</English>
+			<Russian>[М] SA-58 РСИ </Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SA58RIS_DESC">
 			<English>A Rail Integration System kit designed for the SA-58 assault rifle.</English>

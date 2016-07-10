@@ -5,6 +5,8 @@ class 8Rnd_12Gauge_Slug : 8Rnd_B_Beneli_74Slug
 {
 	model = "\z\addons\dayz_communityassets\models\greenshotgunslugs.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_greenshotgunslugs_ca.paa";
+	displayName = $STR_DZ_MAG_8RND_12GAUGE_SLUG_NAME;
+	descriptionShort = $STR_DZ_MAG_8RND_12GAUGE_SLUG_DESC;
 	
 	cartridgeName = "12Gauge_Slug";
 	
@@ -14,7 +16,7 @@ class 8Rnd_12Gauge_Slug : 8Rnd_B_Beneli_74Slug
 		
 		class ReloadMag
 		{
-			text = "Split into 4 x 2 rounds";
+			text = $STR_MAG_SPLIT_8TO2X4;
 			script = "spawn player_reloadMag;";
 			use[] = {"8Rnd_12Gauge_Slug"};
 			output[] =
@@ -32,8 +34,8 @@ class 2Rnd_12Gauge_Slug : 8Rnd_12Gauge_Slug
 {
 	model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";
-	displayName = $STR_MAG_NAME_8;
-	descriptionShort = $STR_MAG_DESC_8;
+	displayName = $STR_DZ_MAG_2RND_12GAUGE_SLUG_NAME;
+	descriptionShort = $STR_DZ_MAG_2RND_12GAUGE_SLUG_DESC;
 	
 	count = 2;
 	
@@ -43,7 +45,7 @@ class 2Rnd_12Gauge_Slug : 8Rnd_12Gauge_Slug
 		
 		class ReloadMag
 		{
-			text = $STR_MAG_COMBINE_1;
+			text = $STR_MAG_COMBINE_2X4IN8;
 			script = "spawn player_reloadMag;";
 			use[] =
 			{
@@ -69,6 +71,8 @@ class 8Rnd_12Gauge_Buck : 8Rnd_B_Beneli_Pellets
 {
 	model = "\z\addons\dayz_communityassets\models\redshotgunpellets.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_redshotgunpellets_ca.paa";
+	displayName = $STR_DZ_MAG_8RND_12GAUGE_BUCK_NAME;
+	descriptionShort = $STR_DZ_MAG_8RND_12GAUGE_BUCK_DESC;
 	
 	class ItemActions
 	{
@@ -76,7 +80,7 @@ class 8Rnd_12Gauge_Buck : 8Rnd_B_Beneli_Pellets
 		
 		class ReloadMag
 		{
-			text = "Split into 4 x 2 rounds";
+			text = $STR_MAG_SPLIT_8TO2X4;
 			script = "spawn player_reloadMag;";
 			use[] = {"8Rnd_12Gauge_Buck"};
 			output[] =
@@ -94,8 +98,8 @@ class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 {
 	model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_ca.paa";
-	displayName = $STR_MAG_NAME_9;
-	descriptionShort = $STR_MAG_DESC_9;
+	displayName = $STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME;
+	descriptionShort = $STR_DZ_MAG_2RND_12GAUGE_BUCK_DESC;
 	
 	count = 2;
 	
@@ -105,7 +109,7 @@ class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 		
 		class ReloadMag
 		{
-			text = $STR_MAG_COMBINE_1;
+			text = $STR_MAG_COMBINE_2X4IN8;
 			script = "spawn player_reloadMag;";
 			use[] =
 			{

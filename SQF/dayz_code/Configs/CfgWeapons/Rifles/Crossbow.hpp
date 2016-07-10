@@ -158,7 +158,7 @@ class Crossbow_Scope_DZ : Crossbow_DZ
 	{
 		class RemoveScope
 		{
-			text = "Remove Scope";
+			text = $STR_DZ_ATT_PU_RMVE;
 			script = "; ['Attachment_SCOPED',_id,'Crossbow_DZ'] call player_removeAttachment";
 		};
 	};
@@ -178,7 +178,7 @@ class Crossbow_Scope_FL_DZ : Crossbow_Scope_DZ
 	{
 		class RemoveScope
 		{
-			text = "Remove Scope";
+			text = $STR_DZ_ATT_PU_RMVE;
 			script = "; ['Attachment_SCOPED',_id,'Crossbow_FL_DZ'] call player_removeAttachment";
 		};
 		
