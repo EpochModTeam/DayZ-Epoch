@@ -25,10 +25,6 @@ class Remington870_DZ : Rifle
 		2Rnd_12Gauge_Slug,
 		2Rnd_12Gauge_Buck
 	};
-	class Attachments
-	{
-		Attachment_FL = "Remington870_FL_DZ";
-	};
 	
 	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons_E\Data\Anim\LeeEnfield.rtm"};
 	
@@ -50,6 +46,10 @@ class Remington870_DZ : Rifle
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";
 	};
+	class Attachments
+	{
+		Attachment_FL = "Remington870_FL_DZ";
+	};
 };
 
 class Remington870_FL_DZ : Remington870_DZ
@@ -59,7 +59,7 @@ class Remington870_FL_DZ : Remington870_DZ
 	descriptionShort = $STR_DZ_WPN_R870_FL_DESC;
 	
 	R870_FLASHLIGHT;
-	
+
 	class ItemActions
 	{
 		class RemoveFlashlight

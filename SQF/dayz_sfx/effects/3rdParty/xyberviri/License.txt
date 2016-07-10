@@ -1,0 +1,19 @@
+The following files are works of https://github.com/xyberviri
+The DayZMod and only the DayZMod is allowed to use the following sounds for their mod under the following license: Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+
+action_open_backpack_0.ogg
+action_open_backpack_1.ogg
+action_open_backpack_2.ogg
+action_open_backpack_3.ogg
+action_open_backpack_4.ogg
+action_open_inventory_0.ogg
+action_open_inventory_1.ogg
+action_open_inventory_2.ogg
+action_open_inventory_3.ogg
+action_open_inventory_4.ogg
+
+As the author of the files and not a member of the Arma community:
+I DO NOT acknowledge the Dayz Mod License Share Alike (DML-SA) license.
+No other mods/maps/missions/add-ons/etc are allowed to use the above sounds, If DayZMod has been used as a basis for another mod, then those mod authors will have to request permission to use the above files as this falls under "NoDerivatives".
+
+Information taken from issue - https://github.com/DayZMod/DayZ/issues/696

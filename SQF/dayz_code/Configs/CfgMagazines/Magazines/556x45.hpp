@@ -1,7 +1,7 @@
 class 200Rnd_556x45_M249: CA_Magazine
 {
 	displayName = $STR_DZ_MAG_200RND_556X45_M249_NAME;
-	
+
 	cartridgeName = "556x45";
 	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
 	
@@ -64,7 +64,7 @@ class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag
 class 30Rnd_556x45_G36 : 30Rnd_556x45_Stanag
 {
 	displayName = $STR_DZ_MAG_30RND_556x45_G36_NAME;
-	
+
 	cartridgeName = "556x45";
 	
 	class ItemActions
@@ -91,7 +91,7 @@ class 30Rnd_556x45_StanagSD : 30Rnd_556x45_Stanag
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_30stanagsd_ca.paa";
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAGSD_NAME;	
-	
+
 	cartridgeName = "556x45_SD";
 	
 	class ItemActions

@@ -575,6 +575,7 @@ class CfgSounds {
 	class z_hit_12 : z_hit_0 {
 		sound[] = {"\dayz_sfx\action\z_hit_6.ogg",0.1,1,30};
 	};
+
 	class z_fracture_0 : gore_1 {
 		sound[] = {"\dayz_sfx\gore\fracture_0",1,1,80};
 	};
@@ -634,35 +635,36 @@ class CfgSounds {
 		titles[] = {};
 	};
 	class z_open_backpack_1 : z_open_backpack_0 {
-		sound[] = {"\dayz_sfx\effects\action_open_backpack_1.ogg",1,1,50};
+		sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_backpack_1.ogg",1,1,50};
 	};
 	class z_open_backpack_2 : z_open_backpack_0 {
-		sound[] = {"\dayz_sfx\effects\action_open_backpack_2.ogg",1,1,50};
+		sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_backpack_2.ogg",1,1,50};
 	};
 	class z_open_backpack_3 : z_open_backpack_0 {
-		sound[] = {"\dayz_sfx\effects\action_open_backpack_3.ogg",1,1,50};
+		sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_backpack_3.ogg",1,1,50};
 	};
 	class z_open_backpack_4 : z_open_backpack_0 {
-		sound[] = {"\dayz_sfx\effects\action_open_backpack_4.ogg",1,1,50};
+		sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_backpack_4.ogg",1,1,50};
 	};
 
     class z_open_inventory_0 {
         name = "";
-        sound[] = {"\dayz_sfx\effects\action_open_inventory_0.ogg",0.1,1,30};
+        sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_inventory_0.ogg",0.1,1,30};
         titles[] = {};
     };
     class z_open_inventory_1 : z_open_inventory_0 {
-        sound[] = {"\dayz_sfx\effects\action_open_inventory_1.ogg",0.1,1,30};
+        sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_inventory_1.ogg",0.1,1,30};
     };
     class z_open_inventory_2 : z_open_inventory_0 {
-        sound[] = {"\dayz_sfx\effects\action_open_inventory_2.ogg",0.1,1,30};
+        sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_inventory_2.ogg",0.1,1,30};
     };
     class z_open_inventory_3 : z_open_inventory_0 {
-        sound[] = {"\dayz_sfx\effects\action_open_inventory_3.ogg",0.1,1,30};
+        sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_inventory_3.ogg",0.1,1,30};
     };
     class z_open_inventory_4 : z_open_inventory_0 {
-        sound[] = {"\dayz_sfx\effects\action_open_inventory_4.ogg",0.1,1,30};
+        sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_inventory_4.ogg",0.1,1,30};
     };
+
 	class z_trap_trigger_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\trap_trigger_0.ogg",0.1,1,30};
@@ -674,9 +676,11 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\trap_tripwire_cans_0.ogg",0.1,1,30};
 		titles[] = {};
 	};
+
 	class z_trap_cans_1 : z_trap_cans_0 {
 		sound[] = {"\dayz_sfx\effects\trap_tripwire_cans_1.ogg",0.1,1,30};
 	};
+
 	class z_trap_cans_2 : z_trap_cans_0 {
 		sound[] = {"\dayz_sfx\effects\trap_tripwire_cans_2.ogg",0.1,1,30};
 	};

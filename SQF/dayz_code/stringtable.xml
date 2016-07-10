@@ -3225,7 +3225,7 @@
 			<Czech>Puškohled, používá se pro vylepšení zbraní.</Czech>
 			<German>Zielfernrohr-Erweiterung für Schusswaffen.</German>
 		</Key>
-		
+
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_M9">
 			<English>[A] Silencer (M9)</English>
 			<Russian>[М] 9мм глуш. (М9)</Russian>
@@ -3250,7 +3250,7 @@
 			<Czech>Tlumič, používá se pro vylepšení M4A1, jež již má CCO a kamufláž.</Czech>
 			<German>Ein Schalldämpfer, der an eine M4A1 angebracht werden kann.</German>
 		</Key>
-		
+
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_SCAR">
 			<English>[A] Silencer (SCAR)</English>
 			<Russian>[М] ПБС (SCAR)</Russian>
