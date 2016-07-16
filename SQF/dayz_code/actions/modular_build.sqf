@@ -524,10 +524,11 @@ if (_canBuild select 0) then {
 					_tmpbuilt setVariable ["CharacterID",_combination,true]; //set combination as a character ID
 
 					//call publish precompiled function with given args and send public variable to server to save item to database
-					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location, _vector],[]];
 					if (DZE_permanentPlot) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
+					} else {
+						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location, _vector],[]];
 					};
 					publicVariableServer "PVDZ_obj_Publish";
 
@@ -539,14 +540,14 @@ if (_canBuild select 0) then {
 					if (DZE_permanentPlot) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 					};
-
 					// fire?
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then { //if campfire, then spawn, but do not publish to database
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[]];
 						if (DZE_permanentPlot) then {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
+						} else {
+							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[]];
 						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};
