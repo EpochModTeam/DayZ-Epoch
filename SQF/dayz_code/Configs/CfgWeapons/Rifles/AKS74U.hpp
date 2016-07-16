@@ -47,7 +47,7 @@ class AKS74U_Kobra_SD_DZ : AKS_74_UN_kobra
 		
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AKS74U_Kobra_DZ'] call player_removeAttachment";
 		};
 	};
@@ -91,7 +91,7 @@ class AKS74U_SD_DZ : AKS74U_Kobra_SD_DZ
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AKS74U_DZ'] call player_removeAttachment";
 		};
 	};

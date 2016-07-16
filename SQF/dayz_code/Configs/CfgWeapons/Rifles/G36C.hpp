@@ -78,7 +78,7 @@ class G36C_SD_DZ : G36_C_SD_eotech
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup556',_id,'G36C_DZ'] call player_removeAttachment";
 		};
 	};
@@ -122,7 +122,7 @@ class G36C_CCO_SD_DZ : G36C_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup556',_id,'G36C_CCO_DZ'] call player_removeAttachment";
 		};
 	};
@@ -166,7 +166,7 @@ class G36C_Holo_SD_DZ : G36C_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup556',_id,'G36C_Holo_DZ'] call player_removeAttachment";
 		};
 	};
@@ -214,7 +214,7 @@ class G36C_ACOG_SD_DZ : G36C_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup556',_id,'G36C_ACOG_DZ'] call player_removeAttachment";
 		};
 	};

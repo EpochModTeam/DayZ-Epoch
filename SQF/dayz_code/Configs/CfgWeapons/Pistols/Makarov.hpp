@@ -26,7 +26,7 @@ class Makarov_SD_DZ : MakarovSD
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP9PM_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_SupMakarov',_id,'Makarov_DZ'] call player_removeAttachment";
 		};
 	};

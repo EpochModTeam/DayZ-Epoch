@@ -158,7 +158,7 @@ class G36K_Camo_SD_DZ : G36_C_SD_eotech
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup556',_id,'G36K_Camo_DZ'] call player_removeAttachment";
 		};
 	};
@@ -200,7 +200,7 @@ class G36A_Camo_DZ : G36K_Camo_DZ
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP556_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup556',_id,'G36K_Camo_DZ'] call player_removeAttachment";
 		};
 	};

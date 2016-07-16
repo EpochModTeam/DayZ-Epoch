@@ -3069,6 +3069,10 @@
 			<Czech>Tlumič pro střelné zbraně, používá se pro jejich vylepšení.</Czech>
 			<German>Ein Schalldämpfer für Schusswaffen.</German>
 		</Key>
+		<Key ID="STR_ATTACHMENT_RMVE_Silencer">
+			<English>Remove Suppressor</English>
+			<Russian>Снять глушитель</Russian>
+		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_Pso">
 			<English>[A] PSO</English>
 			<Russian>[М] ПСО</Russian>
@@ -10739,10 +10743,6 @@
 			<English>9mm Sound suppressor</English>
 			<Russian>ПБС для калибра 9мм</Russian>
 		</Key>
-		<Key ID="STR_DZ_ATT_SUP9_RMVE">
-			<English>Remove Suppressor</English>
-			<Russian>Снять глушитель</Russian>
-		</Key>
 		<!-- 9mm Suppressor PM -->
 		<Key ID="STR_DZ_ATT_SUP9PM_NAME">
 			<English>[A] 9mm silencer (PM)</English>
@@ -10756,10 +10756,6 @@
 			<Czech>Tlumič, používá se pro vylepšení pistole Makarov.</Czech>
 			<German>Ein Schalldämpfer, der an eine Makarov angebracht werden kann.</German>
 		</Key>		
-		<Key ID="STR_DZ_ATT_SUP9PM_RMVE">
-			<English>Remove Suppressor</English>
-			<Russian>Снять глушитель</Russian>
-		</Key>
 		<!-- 9mm Suppressor Bizon -->
 		<Key ID="STR_DZ_ATT_SUP9BIZON_NAME">
 			<English>[A] 9mm silencer (Bizon)</English>
@@ -10773,10 +10769,6 @@
 			<Czech>Tlumič, používá se pro vylepšení pušky Bizon.</Czech>
 			<German>Ein Schalldämpfer, der an eine Bizon angebracht werden kann.</German>
 		</Key>
-		<Key ID="STR_DZ_ATT_SUP9BIZON_RMVE">
-			<English>Remove Suppressor</English>
-			<Russian>Снять глушитель</Russian>
-		</Key>
 		
 		<!-- 5.56mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP556_NAME">
@@ -10787,10 +10779,6 @@
 			<English>5.56mm Sound suppressor</English>
 			<Russian>ПБС для калибра 5.56мм</Russian>
 		</Key>
-		<Key ID="STR_DZ_ATT_SUP556_RMVE">
-			<English>Remove Suppressor</English>
-			<Russian>Снять глушитель</Russian>
-		</Key>
 		
 		<!-- 5.45mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP545_NAME">
@@ -10800,10 +10788,6 @@
 		<Key ID="STR_DZ_ATT_SUP545_DESC">
 			<English>5.45mm Sound suppressor</English>
 			<Russian>ПБС для калибра 5.45мм</Russian>
-		</Key>
-		<Key ID="STR_DZ_ATT_SUP545_RMVE">
-			<English>Remove Suppressor</English>
-			<Russian>Снять глушитель</Russian>
 		</Key>
 		
 		<!-- CCO -->

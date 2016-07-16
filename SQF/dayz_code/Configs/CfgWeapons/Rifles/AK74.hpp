@@ -54,7 +54,7 @@ class AK74_Kobra_SD_DZ : AKS_74_UN_kobra
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AK74_Kobra_DZ'] call player_removeAttachment";
 		};
 	};
@@ -116,7 +116,7 @@ class AK74_GL_Kobra_SD_DZ : AK74_Kobra_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AK74_GL_Kobra_DZ'] call player_removeAttachment";
 		};
 	};
@@ -170,7 +170,7 @@ class AK74_SD_DZ : AK74_Kobra_SD_DZ
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AK74_DZ'] call player_removeAttachment";
 		};
 	};
@@ -232,7 +232,7 @@ class AK74_GL_SD_DZ : AK74_GL_Kobra_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AK74_GL_DZ'] call player_removeAttachment";
 		};
 	};
@@ -374,7 +374,7 @@ class AK74_PSO1_SD_DZ : AK74_Kobra_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AK74_PSO1_DZ'] call player_removeAttachment";
 		};
 	};
@@ -520,7 +520,7 @@ class AK74_GL_PSO1_SD_DZ : AK74_GL_Kobra_SD_DZ
 		};
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP545_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup545',_id,'AK74_GL_PSO1_DZ'] call player_removeAttachment";
 		};
 	};

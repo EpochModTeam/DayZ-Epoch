@@ -80,7 +80,7 @@ class G17_SD_DZ : M9SD
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP9_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup9',_id,'G17_DZ'] call player_removeAttachment";
 		};
 	};
@@ -109,7 +109,7 @@ class G17_SD_FL_DZ : G17_SD_DZ
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP9_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup9',_id,'G17_FL_DZ'] call player_removeAttachment";
 		};
 		

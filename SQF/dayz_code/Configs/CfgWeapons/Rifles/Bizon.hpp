@@ -38,7 +38,7 @@ class Bizon_SD_DZ : bizon_silenced
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP9BIZON_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_SupBizon',_id,'Bizon_DZ'] call player_removeAttachment";
 		};
 	};

@@ -29,7 +29,7 @@ class M9_SD_DZ : M9SD
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP9_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup9',_id,'M9_DZ'] call player_removeAttachment";
 		};
 	};

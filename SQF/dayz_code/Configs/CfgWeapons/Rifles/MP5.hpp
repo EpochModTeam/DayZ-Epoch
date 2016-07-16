@@ -32,7 +32,7 @@ class MP5_SD_DZ : MP5SD
 	{
 		class RemoveSuppressor
 		{
-			text = $STR_DZ_ATT_SUP9_RMVE;
+			text = $STR_ATTACHMENT_RMVE_Silencer;
 			script = "; ['Attachment_Sup9',_id,'MP5_DZ'] call player_removeAttachment";
 		};
 	};
