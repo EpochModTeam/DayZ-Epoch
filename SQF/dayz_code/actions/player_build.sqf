@@ -433,10 +433,11 @@ if (_canBuild select 0) then {
 					};
 
 					_tmpbuilt setVariable ["CharacterID",_combination,true];
-					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
 					if (DZE_permanentPlot) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID],_classname];
+					} else {
+						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
 					};
 					publicVariableServer "PVDZ_obj_Publish";
 
@@ -452,9 +453,10 @@ if (_canBuild select 0) then {
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];
 						if (DZE_permanentPlot) then {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID],_classname];
+						} else {
+							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];
 						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};

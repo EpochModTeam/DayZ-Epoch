@@ -75,7 +75,7 @@ feature.
  * [Nick Chow] (https://github.com/Purplish)
  * bittedanke (https://github.com/bittedanke) - fixing a problem with chances.
  * ebaydayz (https://github.com/ebaydayz)
- * xyberviri (https://github.com/xyberviri) - ((action_open_backpack_0.ogg - action_open_backpack_4.ogg), (action_open_inventory_0.ogg - action_open_inventory_4.ogg)) Licesne Info - https://github.com/DayZMod/DayZ/issues/696
+ * xyberviri (https://github.com/xyberviri) - ((action_open_backpack_0.ogg - action_open_backpack_4.ogg), (action_open_inventory_0.ogg - action_open_inventory_4.ogg)) License Info - https://github.com/DayZMod/DayZ/issues/696
  
 ------------------------
 Art Work

@@ -110,10 +110,6 @@ if ((count _upgrade) > 0) then {
 
 			// Set location
 			_object setPosATL _location;
-			if (DZE_permanentPlot) then {
-				_ownerID = _obj getVariable["ownerPUID","0"];
-				_object setVariable ["ownerPUID",_ownerID,true];
-			};
 
 			if (_lockable == 3) then {
 
@@ -128,8 +124,14 @@ if ((count _upgrade) > 0) then {
 			} else {	
 				format[localize "str_epoch_player_159",_text] call dayz_rollingMessages;
 			};
-
-			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _vector],_classname,_obj,player];
+			if (DZE_permanentPlot) then {
+				_ownerID = _obj getVariable["ownerPUID","0"];
+				if (_ownerID == "0") then { _ownerID = [player] call FNC_GetPlayerUID; }; //APFL is on but UID is 0 so we will claim it to record the ownership.
+				_object setVariable ["ownerPUID",_ownerID,true];
+				PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_ownerID,_vector],_classname,_obj,player];
+			} else {
+				PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_vector],_classname,_obj,player];
+			};
 			publicVariableServer "PVDZE_obj_Swap";
 
 			player reveal _object;
