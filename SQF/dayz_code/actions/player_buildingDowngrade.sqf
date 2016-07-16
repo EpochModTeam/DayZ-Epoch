@@ -103,12 +103,14 @@ if ((count _upgrade) > 0) then {
 		// Set location
 		_object setPosATL _location;
 
-
 		format[localize "str_epoch_player_142",_text] call dayz_rollingMessages;
 
-		PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _vector],_classname,_obj,player];
 		if (DZE_permanentPlot) then {
+			_ownerID = _obj getVariable["ownerPUID","0"];
+			_object setVariable ["ownerPUID",_ownerID,true];
 			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_playerUID, _vector],_classname,_obj,player];
+		} else {
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _vector],_classname,_obj,player];
 		};
 		publicVariableServer "PVDZE_obj_Swap";
 

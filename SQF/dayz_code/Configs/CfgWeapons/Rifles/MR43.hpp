@@ -9,7 +9,7 @@ class MR43_DZ : Rifle
 	
 	magazines[] =
 	{
-		2Rnd_12Gauge_Buck;		
+		2Rnd_12Gauge_Buck,
 		2Rnd_12Gauge_Slug		
 	};
 	
