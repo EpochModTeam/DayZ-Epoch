@@ -13,15 +13,15 @@ Install instructions:
 
 5. Use the new dayz_server.pbo from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/dayz_server.pbo)]
 
-5a. Use the new HiveExt.dll from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/HiveExt.dll)] which requires [[Visual C++ Redistributable 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
+6. Use the new HiveExt.dll from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/HiveExt.dll)] which requires [[Visual C++ Redistributable 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
 
-6. Use the new MPMission from Server Files\MPMissions.
+7. Use the new MPMission from Server Files\MPMissions.
 
-7. Set verifySignatures = 0; in your test server config.
+8. Set verifySignatures = 0; in your test server config.
 
-8. Use the new BattlEye filters from Server Files\Battleye.
+9. Use the new BattlEye filters from Server Files\Battleye.
 
-9. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
+10. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
 Current Version: **EpochTest-106-JULY_17_2016**
 
