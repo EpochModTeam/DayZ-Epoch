@@ -564,8 +564,6 @@ if (isServer) then {
 	dayz_died = [];
 
 	// EPOCH ADDITIONS
-	currentObjectUIDs = [];
-	keyStartNumber = 10; // Can not exceed 6 digits. Numbers >= 1 million are truncated when converted to string. i.e. "1e+006"
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 	if (isNil "EpochUseEvents") then {EpochUseEvents = false;};
 	if (isNil "EpochEvents") then {EpochEvents = [];};
