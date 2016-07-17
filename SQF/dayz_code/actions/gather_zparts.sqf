@@ -1,4 +1,4 @@
-private ["_item","_type","_hasHarvested","_config","_knifeArray","_playerNear","_isListed","_activeKnife","_text","_sharpnessRemaining","_qty","_chance","_msg","_string"];
+private ["_item","_type","_hasHarvested","_config","_knifeArray","_playerNear","_isListed","_activeKnife","_text","_sharpnessRemaining","_qty","_chance","_string"];
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_31" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
@@ -56,9 +56,8 @@ if ((count _knifeArray > 0) && !_hasHarvested) then {
 					player removeWeapon _activeKnife;
 					player addWeapon _sharpnessRemaining;
 					
-					//systemChat (localize "str_info_bluntknife");	
-					_msg = localize "str_info_bluntknife";
-					_msg call dayz_rollingMessages;
+					//systemChat (localize "str_info_bluntknife");
+					localize "str_info_bluntknife" call dayz_rollingMessages;
 				};	
 			};
 			case "ItemKnifeBlunt" : { 

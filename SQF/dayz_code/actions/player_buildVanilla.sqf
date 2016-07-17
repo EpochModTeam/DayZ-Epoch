@@ -4,7 +4,7 @@ private ["_classType","_item","_action","_missingTools","_missingItem","_emergin
 "_o","_offset","_rot","_r","_p","_bn","_bb","_h","_bx","_by","_minElevation","_maxElevation","_insideCheck","_building",
 "_unit","_bbb","_ubb","_check","_min","_max","_myX","_myY","_checkBuildingCollision","_objColliding","_inside","_checkOnRoad",
 "_roadCollide","_checkBeam2Magnet","_a","_beams","_best","_b","_d","_checkNotBuried","_elevation","_position","_delta","_overElevation",
-"_maxplanting","_safeDistance","_dir","_angleRef","_tmp","_actionCancel","_sfx","_actionBuild","_byPassChecks","_keepOnSlope","_msg",
+"_maxplanting","_safeDistance","_dir","_angleRef","_tmp","_actionCancel","_sfx","_actionBuild","_byPassChecks","_keepOnSlope",
 "_ok","_missing","_upgradeParts","_ownerID","_posReference"];
 /*
 Needs a full rewrite to keep up with the demand of everything we plan to add.
@@ -48,9 +48,7 @@ _isWater = {(surfaceIsWater (getPosATL _object)) or dayz_isSwimming};
 
 if (0 != count Dayz_constructionContext) then {
     r_action_count = 0;
-    //localize "str_already_building" call dayz_rollingMessages;
-	_msg = localize "str_already_building";
-	_msg call dayz_rollingMessages;
+    localize "str_already_building" call dayz_rollingMessages;
     diag_log [ diag_ticktime, __FILE__, 'already building, exiting', Dayz_constructionContext, typeName Dayz_constructionContext];
 };
 
@@ -61,9 +59,7 @@ if (isClass (configFile >> _isClass >> _item)) then {
             case (_item isKindOf "Land_A_tent"): {"str_player_31_pitch"};
             default {"str_player_31_build"};
         };
-        //format[localize "str_player_31",_text,(localize _string)] call dayz_rollingMessages;
-		_msg = format [localize "str_player_31",_text,(localize _string)];
-		_msg call dayz_rollingMessages;
+        format[localize "str_player_31",_text,(localize _string)] call dayz_rollingMessages;
         //diag_log(format["player_build: item:%1 require:%2  Player items:%3  magazines:%4", _item, _requiredTools, (items player), (magazines player)]);
     };
 };
@@ -81,9 +77,7 @@ _missing = "";
 
 if (!_ok) exitWith {
     r_action_count = 0;
-    //format[localize "str_player_31_missingtools",_text,_missing] call dayz_rollingMessages; 
-	_msg = format [localize "str_player_31_missingtools",_text,_missing];
-	_msg call dayz_rollingMessages;
+    format[localize "str_player_31_missingtools",_text,_missing] call dayz_rollingMessages; 
 };
 
 _posReference = [player] call FNC_GetPos;
@@ -106,14 +100,10 @@ _upgradeParts = [];
 if (!_ok) exitWith {
     { player addMagazine _x; } foreach _upgradeParts;
     r_action_count = 0;
-   // format[localize "str_player_31", _missing, localize "str_player_31_build"] call dayz_rollingMessages;
-	_msg = format [localize "str_player_31", _missing, localize "str_player_31_build"];
-	_msg call dayz_rollingMessages;
+    format[localize "str_player_31", _missing, localize "str_player_31_build"] call dayz_rollingMessages;
 };
 
-//localize "str_player_build_rotate" call dayz_rollingMessages;
-_msg = localize "str_player_build_rotate";
-_msg call dayz_rollingMessages;
+localize "str_player_build_rotate" call dayz_rollingMessages;
 
 //Get fence beams based on model
 _getBeams = {

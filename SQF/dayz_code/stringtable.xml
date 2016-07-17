@@ -285,6 +285,15 @@
 			<French>Donner des antibiotiques</French>
 			<Czech>Dát antibiotika</Czech>
 		</Key>
+		<Key ID="str_actions_medical_misplaced_antibiotics">
+			<English>You seem to have misplaced your antibiotics.</English>
+		</Key>
+		<Key ID="str_actions_medical_taken_antibiotics">
+			<English>You have taken antibiotics.</English>
+		</Key>
+		<Key ID="str_actions_medical_gave_antibiotics">
+			<English>You gave antibiotics.</English>
+		</Key>
 
 		<Key ID="str_actions_medical_drag">
 			<English>Carry body</English>
@@ -1413,6 +1422,9 @@
 			<Czech>Nelze připevnit %1</Czech>
 			<German>%1 kann nicht angebaut werden.</German>
 		</Key>
+		<Key ID="str_Attachmentcantremove">
+			<English>Cannot remove attachment.</English>
+		</Key>
 		<Key ID="str_AttachmentmissingWeapon">
 			<English>You seem to be missing a primary weapon!</English>
 			<Russian>Отсутствует основное оружие!</Russian>
@@ -1514,6 +1526,9 @@
 			<French>Le démontage est déjà en cours</French>
 			<Czech>Objekt je právě demontován.</Czech>
 			<German>Die Demontage läuft schon.</German>
+		</Key>
+		<Key ID="str_disassemble_cant_do">
+			<English>You cannot do this while on a ladder or on water.</English>
 		</Key>
 
 		<Key ID="str_already_building">
@@ -1785,7 +1800,7 @@
 			<German>Du wurdest betäubt.</German>
 		</Key>
 		<Key ID="str_disassembleMissingTool">
-			<English>Missing %1 to dissassemble building.</English>
+			<English>Missing tool: %1 to dissassemble building.</English>
 			<Russian>Для разборки нужно иметь %1</Russian>
 			<French>Outil manquant pour le démontage: %1</French>
 			<Czech>Pro demontáž budovy schází %1.</Czech>
@@ -1799,7 +1814,7 @@
 			<German>%1 fehlt, um das Objekt abzubauen.</German>
 		</Key>
 		<Key ID="str_maintenanceMissingTool">
-			<English>Missing %1 tool for maintenance.</English>
+			<English>Missing tool: %1 for maintenance.</English>
 			<Russian>Для обслуживания нужно иметь %1</Russian>
 			<French>Outil manquant pour l&apos;entretien: %1</French>
 			<Czech>Pro údržbu budovy schází %1.</Czech>
@@ -7197,6 +7212,9 @@
 			<Czech>V blízkosti nejsou žádné skály.</Czech>
 			<German>Es befinden sich keine Felsen in der Nähe.</German>
 		</Key>
+		<Key ID="STR_MINING_IN_PROGRESS">
+			<English>Mining already in progress!</English>
+		</Key>
 		<Key ID="str_player_toback_fail">
 			<English>Cannot add %1 to back.</English>
 			<Spanish>No se pudo agregar %1 a la espalda.</Spanish>
@@ -9607,6 +9625,18 @@
 			<French>Palissade métallique</French>
 			<Czech>Kovový plot</Czech>
 			<German>Metallzaun</German>
+		</Key>
+		<Key ID="STR_BLD_GATES_LOCKED">
+			<English>Gates locked.</English>
+		</Key>
+		<Key ID="STR_BLD_GATES_UNLOCKED">
+			<English>Gates unlocked.</English>
+		</Key>
+		<Key ID="STR_BLD_GATES_OPENED">
+			<English>Gates opened.</English>
+		</Key>
+		<Key ID="STR_BLD_GATES_CLOSED">
+			<English>Gates closed.</English>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_OPENGATE">
 			<English>Open Gate</English>
@@ -13566,6 +13596,75 @@
 			<French>You have interrupted lifting a vehicle!</French>
 			<Czech>You have interrupted lifting a vehicle!</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_322">
+			<English>Unable to exit vehicle, too close to buildables objects</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_323">
+			<English>You have been knocked out</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_324">
+			<English>You have set the combination to %1</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_325">
+			<English>Missing %1 to upgrade storage.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_326">
+			<English>You cannot maintain objects while on a ladder or on water.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_327">
+			<English>You need a water bottle to sharpen objects.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_328">
+			<English>%1 has been Sharpened.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_329">
+			<English>You seem to have misplaced the container.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_330">
+			<English>You seem to have misplaced the attachment.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_331">
+			<English>%1 used to unlock vehicle.</English>
+		</Key>
+		
+		<Key ID="STR_EPOCH_BREAKIN_NEED_SLEDGE">
+			<English>You need a Sledgehammer to break into this compound.</English>
+		</Key>
+		<Key ID="STR_EPOCH_BREAKIN_NEED_CROWBAR">
+			<English>You need a Crowbar to break into this compound.</English>
+		</Key>
+		<Key ID="STR_EPOCH_BREAKIN_BROKEN_SLEDGE">
+			<English>Your Sledgehammer handle has snapped.</English>
+		</Key>
+		<Key ID="STR_EPOCH_BREAKIN_BENT_CROWBAR">
+			<English>Your crowbar has bent.</English>
+		</Key>
+		<Key ID="STR_EPOCH_BREAKIN">
+			<English>Breaking into compound, attempt (%1 of %2).</English>
+		</Key>
+		<Key ID="STR_EPOCH_BREAKIN_CANCELLED">
+			<English>Break in cancelled.</English>
+		</Key>
+		<Key ID="STR_EPOCH_BREAKIN_COMPLETE_FAIL">
+			<English>Break in attempt completed with limited success.</English>
+		</Key>
+		<Key ID="STR_EPOCH_BREAKIN_COMPLETE">
+			<English>Break in attempt successful.</English>
+		</Key>
+		
+		<Key ID="STR_EPOCH_DISMANTLE_MISSING">
+			<English>You are missing the tool %1 to dismantle</English>
+		</Key>
+		<Key ID="STR_EPOCH_DISMANTLE_DAMAGED">
+			<English>Your tool has been damaged.</English>
+		</Key>
+		<Key ID="STR_EPOCH_DISMANTLE_ATTEMPT">
+			<English>Dismantle attempt (%1 of %2).</English>
+		</Key>
+		<Key ID="STR_EPOCH_DISMANTLED">
+			<English>You have dismantled (%1).</English>
+		</Key>
+		
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
 			<German>Fahrzeug upgraden</German>

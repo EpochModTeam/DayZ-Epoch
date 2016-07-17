@@ -16,7 +16,7 @@ if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
 };
 
 if(isNull _cursorTarget) exitWith {
-    "No maintenance options" call dayz_rollingMessages;
+    localize "str_maintenanceNoOption" call dayz_rollingMessages;
 };
 
 //Remove action Menu
@@ -46,7 +46,7 @@ _upgradeParts = [];
 _startMaintenance = true;
 
 if(_isWater or _onLadder) exitWith {
-	"Unable to proceed" call dayz_rollingMessages;
+	localize "STR_EPOCH_PLAYER_326" call dayz_rollingMessages;
 };
 
 // lets check player has requiredTools for upgrade

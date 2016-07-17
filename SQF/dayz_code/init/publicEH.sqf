@@ -304,16 +304,16 @@ if (!isDedicated) then {
 			_object setVariable ["dayz_padlockLockStatus", false,true];
 			_object setVariable ["isOpen", "1", true];
 			_object setVariable ["dayz_padlockHistory", [], true];
-			format["%1 unlocked",typeOf _object] call dayz_rollingMessages;
+			format [localize "STR_EPOCH_PLAYER_125",typeOf _object] call dayz_rollingMessages;
 		} else {
-			"Incorrect combination" call dayz_rollingMessages;
+			format [localize "STR_EPOCH_PLAYER_126",typeOf _object] call dayz_rollingMessages;
 			_object setVariable ["dayz_padlockHistory", _codeGuess, true];
 		};
 	};
 	
 	"PVCDZ_Client_processAccessCode" addPublicVariableEventHandler {
 		_codeGuess = (_this select 1) select 0;
-		format["You have set the combination to %1",_codeGuess] call dayz_rollingMessages;
+		format [localize "STR_EPOCH_PLAYER_324",_codeGuess] call dayz_rollingMessages;
 	};
 	
 	// EPOCH ADDITION

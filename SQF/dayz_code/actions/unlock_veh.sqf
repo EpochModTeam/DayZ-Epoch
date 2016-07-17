@@ -18,7 +18,7 @@ if(player distance _vehicle < 10) then {
 		publicVariable "PVDZE_veh_Lock";
 	};
 
-	format["%1 used to unlock vehicle.",_key] call dayz_rollingMessages;
+	format [localize "STR_EPOCH_PLAYER_331",_key] call dayz_rollingMessages;
 };
 
 s_player_lockUnlock_crtl = -1;

@@ -103,7 +103,7 @@ if (_unit == player) then
 			if ((_isHeadHit) and (_ammo in ["Crowbar_Swing_Ammo","Bat_Swing_Ammo","Sledge_Swing_Ammo"])) then {
 				[_unit] spawn {
 					 _unit = _this select 0;
-					"you have been knocked out" call dayz_rollingMessages; 
+					localize "STR_EPOCH_PLAYER_323" call dayz_rollingMessages; 
 					[_unit,0.01] call fnc_usec_damageUnconscious;
 					_unit setVariable ["NORRN_unconscious", true, true];
 					r_player_timeout = 20 + round(random 60);
