@@ -194,6 +194,6 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	localize "str_upgradeDone" call dayz_rollingMessages;
 /*
 } else {
-	"Object has no upgrade option." call dayz_rollingMessages;
+	localize "str_upgradeNoOption" call dayz_rollingMessages;
 */
 };

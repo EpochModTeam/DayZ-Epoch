@@ -123,7 +123,7 @@ while {_isOk} do {
 		_proceed = true;
 	};
 	
-	format [localize "STR_EPOCH_BREAKIN", _counter,_limit] call dayz_rollingMessages;
+	format [localize "STR_BLD_BREAKIN", _counter,_limit] call dayz_rollingMessages;
 	uiSleep 0.03;
 };
 //Tool issues
