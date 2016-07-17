@@ -46,7 +46,7 @@ _newWeaponConfig = configFile >> "CfgWeapons" >> _newWeapon >> "Attachments";
 if (!isClass(_newWeaponConfig) || {getText(_newWeaponConfig >> _attachment) != _weapon}) exitWith
 {
 	closeDialog 0;
-	"Cannot remove attachment." call dayz_rollingMessages;
+	localize "str_Attachmentcantremove" call dayz_rollingMessages;
 };
 
 _weaponInUse = (currentWeapon player == _weapon);

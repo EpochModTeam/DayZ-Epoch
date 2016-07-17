@@ -1,6 +1,6 @@
 private ["_cursorTarget","_onLadder","_isWater","_alreadyRemoving","_characterID","_objectID","_objectUID","_ownerArray","_dir",
 	"_realObjectStillThere","_upgrade","_entry","_parent","_requiredParts","_requiredTools","_model","_toolsOK","_displayname",
-	"_whpos","_i","_wh","_object","_msg","_vector","_dis","__FILE__","_puid","_variables"];
+	"_whpos","_i","_wh","_object","_vector","_dis","__FILE__","_puid","_variables"];
 
 
 _cursorTarget = _this select 3;
@@ -11,11 +11,7 @@ if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
     _cursorTarget = if (count _cursorTarget == 0) then { objNull } else { _cursorTarget select 0 };
 };
 
-if(isNull _cursorTarget) exitWith {
-    //localize "str_disassembleNoOption" call dayz_rollingMessages;
-	_msg = localize "str_disassembleNoOption";
-	_msg call dayz_rollingMessages;
-};
+if(isNull _cursorTarget) exitWith { localize "str_disassembleNoOption" call dayz_rollingMessages; };
 
 //Remove action Menu
 player removeAction s_player_disassembly;
@@ -24,16 +20,10 @@ s_player_disassembly = -1;
 //Normal blocked stuff
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = (surfaceIsWater (getPosATL player)) or dayz_isSwimming;
-if(_isWater or _onLadder) exitWith {
-	_msg = localize "str_disassembleInProgress";
-	_msg call dayz_rollingMessages;
-};
+if(_isWater or _onLadder) exitWith { localize "str_disassemble_cant_do" call dayz_rollingMessages; };
 
 _alreadyRemoving = _cursorTarget getVariable["ObjectLocked",0];
-if (_alreadyRemoving == 1) exitWith {
-	_msg = localize "str_disassembleInProgress";
-	_msg call dayz_rollingMessages;
-};
+if (_alreadyRemoving == 1) exitWith { localize "str_disassembleInProgress" call dayz_rollingMessages; };
 
 _cursorTarget setVariable["ObjectLocked",1,true];
 _characterID = _cursorTarget getVariable ["characterID","0"];
@@ -64,11 +54,7 @@ for "_i" from 1 to 20 do {
         if (!(_x IN items player)) exitWith { _toolsOK = false; };
     } count _requiredTools;
 	
-    if (!_toolsOK) exitWith {
-        //format[localize "str_disassembleMissingTool",getText (configFile >> "CfgWeapons" >> _x >> "displayName"),_displayname] call dayz_rollingMessages;//["Missing %1 to disassemble %2."
-    	_msg = format [localize "str_disassembleMissingTool",getText (configFile >> "CfgWeapons" >> _x >> "displayName"),_displayname];
-		_msg call dayz_rollingMessages;
-	};
+    if (!_toolsOK) exitWith { format [localize "str_disassembleMissingTool",getText (configFile >> "CfgWeapons" >> _x >> "displayName"),_displayname] call dayz_rollingMessages; };
 
     if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 0) then {
         player playActionNow "Medic";
@@ -167,9 +153,7 @@ if (!_realObjectStillThere) then {
     };
 };
 
-_msg = localize "str_disassembleDone";
-_msg call dayz_rollingMessages;
-//localize "str_disassembleDone" call dayz_rollingMessages;
+localize "str_disassembleDone" call dayz_rollingMessages;
 
 _cursorTarget setVariable["ObjectLocked",0,true];
 

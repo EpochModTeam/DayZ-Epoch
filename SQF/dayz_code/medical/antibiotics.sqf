@@ -17,7 +17,7 @@ _hasAntibiotics = false;
 	};
 } count _antibiotics;
 
-_msg = "You seem to have misplaced your antibiotics.";
+_msg = "str_actions_medical_misplaced_antibiotics";
 
 if (_hasAntibiotics) then {
 	//Remove one table from the box.
@@ -38,7 +38,7 @@ if (_hasAntibiotics) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medAntibiotics.sqf";
 
-		_msg = "You have taken antibiotics.";
+		_msg = "str_actions_medical_taken_antibiotics";
 	} else {
 	//Send request to other player
 		PVDZ_send = [_unit,"Antibiotics",[_unit,player]];
@@ -47,9 +47,9 @@ if (_hasAntibiotics) then {
 		//Give humnaity for good deeds
 		[player,20] call player_humanityChange;
 
-		_msg = "You gave antibiotics.";
+		_msg = "str_actions_medical_gave_antibiotics";
 	};
 };
 
 
-_msg call dayz_rollingMessages;
+localize _msg call dayz_rollingMessages;

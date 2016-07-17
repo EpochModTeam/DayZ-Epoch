@@ -1,4 +1,4 @@
-private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx","_bottleInfected","_msg"];
+private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx","_bottleInfected"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_22" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -50,20 +50,14 @@ if (_hasbottleitem and _hastinitem) then {
 		if (dayz_waterBottleBreaking && {[0.1] call fn_chance}) then {
 			player addMagazine "ItemWaterBottleDmg";
 			//systemChat (localize ("str_waterbottle_broke"));
-			_msg = localize "str_waterbottle_broke";
-			_msg call dayz_rollingMessages;
+			localize "str_waterbottle_broke" call dayz_rollingMessages;
 		} else {
 			player addMagazine "ItemWaterBottleBoiled";
 		};
 	};
-    //format[localize "str_player_boiledwater",_qty] call dayz_rollingMessages;
-	_msg = format [localize "str_player_boiledwater",_qty];
-	_msg call dayz_rollingMessages;
+    format [localize "str_player_boiledwater",_qty] call dayz_rollingMessages;
 } else {
-    //localize "str_player_02" call dayz_rollingMessages;
-	_msg = format [localize "str_player_boiledwater",_qty];
-	_msg = localize "str_player_02";
-	_msg call dayz_rollingMessages;
+	localize "str_player_02" call dayz_rollingMessages;
 };
 
 a_player_boil = false;

@@ -12,7 +12,7 @@
 */
 
 private ["_cursorTarget","_type","_class","_requiredTools","_requiredParts","_upgradeType","_producedParts","_randomCreate",
-	"_upgradeClass","_msg","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID",
+	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID",
 	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables"];
 
 //systemchat str _this;
@@ -43,19 +43,11 @@ if (isArray(configFile >> "CfgVehicles" >> _type >> "Upgrade" >> "randomcreate")
 };
 
 _upgradeClass = configFile >> "CfgVehicles" >> _upgradeType;
-if (!isClass _upgradeClass) exitWith {
-    //localize "str_upgradeNoOption" call dayz_rollingMessages;
-	_msg = localize "str_upgradeNoOption";
-	_msg call dayz_rollingMessages;
-};
+if (!isClass _upgradeClass) exitWith { localize "str_upgradeNoOption" call dayz_rollingMessages; };
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = (surfaceIsWater (getPosATL player)) or dayz_isSwimming;
-if(_isWater or _onLadder) exitWith {
-    //systemchat[localize "str_CannotUpgrade"];
-	_msg = localize "str_CannotUpgrade";
-	_msg call dayz_rollingMessages;
-};
+if(_isWater or _onLadder) exitWith { localize "str_disassemble_cant_do" call dayz_rollingMessages; };
 
 // lets check player has requiredTools for upgrade
 _ok = true;
@@ -67,11 +59,7 @@ _missing = "";
         _ok = false;
     };
 } count _requiredTools;
-if (!_ok) exitWith {
-    //systemChat format[localize "str_upgradeMissingTool", _missing]; //"Missing %1 to upgrade building."
-	_msg = format [localize "str_upgradeMissingTool", _missing];
-	_msg call dayz_rollingMessages;
-};
+if (!_ok) exitWith { format [localize "str_upgradeMissingTool", _missing] call dayz_rollingMessages; };
 
 // lets check player has requiredParts for upgrade
 _ok = true;
@@ -88,17 +76,13 @@ _upgradeParts = [];
 } count _requiredParts;
 if (!_ok) exitWith {
     { player addMagazine _x; } foreach _upgradeParts;
-    //systemChat format[localize "str_upgradeMissingPart", _missing]; //"Missing %1 to upgrade building."
-	_msg = format [localize "str_upgradeMissingPart", _missing];
-	_msg call dayz_rollingMessages;
+	format [localize "str_upgradeMissingPart", _missing] call dayz_rollingMessages;
 };
     
 //Upgrade Started
 if ((player getVariable["alreadyBuilding",0]) == 1) exitWith {
     {  player addMagazine _x; } foreach _upgradeParts;
-    //localize "str_upgradeInProgress" call dayz_rollingMessages;
-	_msg = localize "str_upgradeInProgress";
-	_msg call dayz_rollingMessages;
+    localize "str_upgradeInProgress" call dayz_rollingMessages;
 };
 player setVariable["alreadyBuilding",1];
 
@@ -178,7 +162,4 @@ player reveal _object;
 
 //Make sure  its unlocked 
 player setVariable["alreadyBuilding",0];
-//localize "str_upgradeDone" call dayz_rollingMessages;
-
-_msg = localize "str_upgradeDone";
-_msg call dayz_rollingMessages;
+localize "str_upgradeDone" call dayz_rollingMessages;

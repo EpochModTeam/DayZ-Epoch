@@ -33,7 +33,7 @@ _tools = getArray (configFile >> "CfgVehicles" >> (typeOf _object) >> "dismantle
 
 {
 	private ["_end"];
-	if ((_x select 0) in items player) then {_end = false;} else { format["Missing tool %1 to dismantle",(_x select 0)] call dayz_rollingMessages; _end = true; _proceed = false; };
+	if ((_x select 0) in items player) then {_end = false;} else { format [localize "STR_EPOCH_DISMANTLE_MISSING",(_x select 0)] call dayz_rollingMessages; _end = true; _proceed = false; };
 	
 	if (_end) exitwith { _exit = true; };
 } foreach _tools;
@@ -46,10 +46,7 @@ if (_exit) exitwith {};
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		(surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 
-if(_isWater or _onLadder) exitWith {
-	//"unable to upgrade at this time" call dayz_rollingMessages;
-	localize "str_CannotUpgrade" call dayz_rollingMessages;
-};
+if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_rollingMessages; };
 
 //Start loop
 _isOk = true;
@@ -60,7 +57,7 @@ while {_isOk} do {
 //Check if we have the tools to start
 	{
 		private ["_end"];
-		if ((_x select 0) in items player) then {_end = false;} else { format["Missing tool %1 to dismantle",_x] call dayz_rollingMessages; _end = true; _proceed = false; };
+		if ((_x select 0) in items player) then {_end = false;} else { format [localize "STR_EPOCH_DISMANTLE_MISSING",_x] call dayz_rollingMessages; _end = true; _proceed = false; };
 		
 		if (_end) exitwith { _exit = true; };
 	}foreach _tools;
@@ -133,7 +130,7 @@ while {_isOk} do {
 			if ([(_x select 1)] call fn_chance) then {
 				player removeWeapon (_x select 0);
 				player addWeapon (_x select 2);
-				"Your tool has been damaged." call dayz_rollingMessages;
+				localize "STR_EPOCH_DISMANTLE_DAMAGED" call dayz_rollingMessages;
 			};
 		}foreach _tools;
 	};
@@ -145,7 +142,7 @@ while {_isOk} do {
 		_proceed = true;
 	};
 	
-	format["Dismantle attempt (%1 of %2).",_counter,_limit] call dayz_rollingMessages;
+	format [localize "STR_EPOCH_DISMANTLE_ATTEMPT",_counter,_limit] call dayz_rollingMessages;
 	uiSleep 0.10;
 };
 
@@ -155,7 +152,7 @@ if (_proceed) then {
 
 	if (_claimedBy != _playerID) exitWith { format[localize "str_player_beinglooted",_text] call dayz_rollingMessages; };
 
-	format["Dismantled, (%1).",typeOf _object] call dayz_rollingMessages;
+	format [localize "STR_EPOCH_DISMANTLED",typeOf _object] call dayz_rollingMessages;
 	
 	_activatingPlayer = player;
 	PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
