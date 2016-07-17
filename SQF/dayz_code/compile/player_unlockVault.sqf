@@ -136,7 +136,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 				} count _objWpnTypes;
 			};
 	
-			format[localize "str_epoch_player_125",_text] call dayz_rollingMessages;
+			format[localize "STR_BLD_UNLOCKED",_text] call dayz_rollingMessages;
 		};
 	} else {
 		DZE_ActionInProgress = false; 
@@ -149,7 +149,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,25,true,(getPosATL player)] spawn player_alertZombies;
 	uiSleep 5;
-	format[localize "str_epoch_player_126",_text] call dayz_rollingMessages;
+	format[localize "STR_BLD_WRONG_COMBO",_text] call dayz_rollingMessages;
 };
 s_player_unlockvault = -1;
 DZE_ActionInProgress = false;

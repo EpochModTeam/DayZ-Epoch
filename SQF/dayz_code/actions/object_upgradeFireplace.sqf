@@ -67,7 +67,7 @@ if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_roll
 		_missingPartsConfig = configFile >> "CfgVehicles" >> _x;
 		_textMissingParts = getText (_missingPartsConfig >> "displayName");
 		//systemChat format["Missing %1 to upgrade storage.", _textMissingParts];
-		format [localize "STR_EPOCH_PLAYER_325", _textMissingParts] call dayz_rollingMessages;
+		format [localize "str_missing_to_do_this", _textMissingParts] call dayz_rollingMessages;
 		_startUpgrade = false;
 	};
 } count _requiredTools;
@@ -78,7 +78,7 @@ if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_roll
 		_missingPartsConfig = configFile >> "CfgMagazines" >> _x;
 		_textMissingParts = getText (_missingPartsConfig >> "displayName");
 		//systemChat format["Missing %1 to upgrade storage.", _textMissingParts];
-		format [localize "STR_EPOCH_PLAYER_325", _textMissingParts] call dayz_rollingMessages;
+		format [localize "str_missing_to_do_this", _textMissingParts] call dayz_rollingMessages;
 		_startUpgrade = false;
 	};
 	if (_x IN magazines player) then {

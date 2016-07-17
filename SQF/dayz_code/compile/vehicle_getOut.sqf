@@ -24,7 +24,7 @@ if (_unit == player) then {
 		PVDZ_Server_LogIt = format["Player %1 exited a vehicle(%2) close to buildable object as %3",_unit, (typeof _vehicle), _position];
 		publicVariableServer "PVDZ_Server_LogIt";
 
-		localize "STR_EPOCH_PLAYER_322" call dayz_rollingMessages;
+		localize "str_actions_exitBlocked" call dayz_rollingMessages;
 
 	};
 };

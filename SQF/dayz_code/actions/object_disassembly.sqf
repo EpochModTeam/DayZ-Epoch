@@ -20,7 +20,7 @@ s_player_disassembly = -1;
 //Normal blocked stuff
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = (surfaceIsWater (getPosATL player)) or dayz_isSwimming;
-if(_isWater or _onLadder) exitWith { localize "str_disassemble_cant_do" call dayz_rollingMessages; };
+if(_isWater or _onLadder) exitWith { localize "str_water_ladder_cant_do" call dayz_rollingMessages; };
 
 _alreadyRemoving = _cursorTarget getVariable["ObjectLocked",0];
 if (_alreadyRemoving == 1) exitWith { localize "str_disassembleInProgress" call dayz_rollingMessages; };

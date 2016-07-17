@@ -17,13 +17,13 @@ closeDialog 1;
 // item is missing or tools are missing
 if (isNil "_waterUsed") exitWith {
 	//_displayName = getText (configFile >> "CfgMagazines" >> _use >> "displayName");
-	localize "STR_EPOCH_PLAYER_327" call dayz_rollingMessages;
+	localize "str_sharpen_missing_water" call dayz_rollingMessages;
 };
 
 // item is missing or tools are missing
 if (!(_item IN items player)) exitWith {
 	_displayName = getText (configFile >> "CfgWeapons" >> _item >> "displayName");
-	format [localize "str_cannotCraft",_displayName] call dayz_rollingMessages;
+	format [localize "str_missing_to_do_this",_displayName] call dayz_rollingMessages;
 };
 
 if (player hasWeapon _item) then {
@@ -44,5 +44,5 @@ if (player hasWeapon _item) then {
 	//Remove Later
 	player removeMagazine "equip_brick";
 
-	format [localize "STR_EPOCH_PLAYER_328",_displayName] call dayz_rollingMessages;
+	format [localize "str_sharpen_success",_displayName] call dayz_rollingMessages;
 };

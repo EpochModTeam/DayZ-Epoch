@@ -26,7 +26,7 @@ _attachment = _this select 0;
 if (!(_attachment in magazines player)) exitWith
 {
 	closeDialog 0;
-	localize "STR_EPOCH_PLAYER_330" call dayz_rollingMessages;
+	localize "str_missingAttachment" call dayz_rollingMessages;
 };
 
 //Get player's primary weapon or sidearm

@@ -47,7 +47,7 @@ if (!isClass _upgradeClass) exitWith { localize "str_upgradeNoOption" call dayz_
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = (surfaceIsWater (getPosATL player)) or dayz_isSwimming;
-if(_isWater or _onLadder) exitWith { localize "str_disassemble_cant_do" call dayz_rollingMessages; };
+if(_isWater or _onLadder) exitWith { localize "str_water_ladder_cant_do" call dayz_rollingMessages; };
 
 // lets check player has requiredTools for upgrade
 _ok = true;

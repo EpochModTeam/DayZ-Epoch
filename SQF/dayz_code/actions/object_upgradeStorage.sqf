@@ -61,7 +61,7 @@ if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_roll
 		_missingPartsConfig = configFile >> "CfgWeapons" >> _x;
 		_textMissingParts = getText (_missingPartsConfig >> "displayName");
 
-		format [localize "STR_EPOCH_PLAYER_325", _textMissingParts] call dayz_rollingMessages;
+		format [localize "str_missing_to_do_this", _textMissingParts] call dayz_rollingMessages;
 		
 		_startUpgrade = false;
 	};
@@ -73,7 +73,7 @@ if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_roll
 		_missingPartsConfig = configFile >> "CfgMagazines" >> _x;
 		_textMissingParts = getText (_missingPartsConfig >> "displayName");
 				
-		format [localize "STR_EPOCH_PLAYER_325", _textMissingParts] call dayz_rollingMessages;
+		format [localize "str_missing_to_do_this", _textMissingParts] call dayz_rollingMessages;
 		_startUpgrade = false;
 	};
 	if (_x IN magazines player) then {

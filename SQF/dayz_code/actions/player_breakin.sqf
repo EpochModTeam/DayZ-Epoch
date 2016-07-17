@@ -9,12 +9,12 @@ _hasSledgeHammer = "ItemSledge" in items player;
 _hasCrowbar = "ItemCrowbar" in items player;
 
 if (!_hasSledgeHammer) exitWith {
-	localize "STR_EPOCH_BREAKIN_NEED_SLEDGE" call dayz_rollingMessages;
+	localize "STR_BLD_BREAKIN_NEED_SLEDGE" call dayz_rollingMessages;
 	uiSleep 1;
 };
 
 if (!_hasCrowbar) exitWith { 
-	localize "STR_EPOCH_BREAKIN_NEED_CROWBAR" call dayz_rollingMessages;
+	localize "STR_BLD_BREAKIN_NEED_CROWBAR" call dayz_rollingMessages;
 	uiSleep 1;
 };
 
@@ -30,13 +30,13 @@ while {_isOk} do {
 
 	if (!_hasSledgeHammer) exitWith {
 		_proceed = nil;
-		localize "STR_EPOCH_BREAKIN_NEED_SLEDGE" call dayz_rollingMessages;
+		localize "STR_BLD_BREAKIN_NEED_SLEDGE" call dayz_rollingMessages;
 		uiSleep 1;
 	};
 
 	if (!_hasCrowbar) exitWith {
 		_proceed = nil;
-		localize "STR_EPOCH_BREAKIN_NEED_CROWBAR" call dayz_rollingMessages;
+		localize "STR_BLD_BREAKIN_NEED_CROWBAR" call dayz_rollingMessages;
 		uiSleep 1;
 	};
 	
@@ -106,13 +106,13 @@ while {_isOk} do {
 			player removeWeapon "ItemSledge";
 			player addMagazine "ItemSledgeHandle";
 			player addMagazine "ItemSledgeHead";
-			localize "STR_EPOCH_BREAKIN_BROKEN_SLEDGE" call dayz_rollingMessages;
+			localize "STR_BLD_BREAKIN_BROKEN_SLEDGE" call dayz_rollingMessages;
 		};
 
 		if ([0.04] call fn_chance) then {
 			player removeWeapon "ItemCrowbar";
 			player addWeapon "ItemCrowbarBent";
-			localize "STR_EPOCH_BREAKIN_BENT_CROWBAR" call dayz_rollingMessages;
+			localize "STR_BLD_BREAKIN_BENT_CROWBAR" call dayz_rollingMessages;
 		};
 	};
 	
@@ -136,7 +136,7 @@ if (!_proceed) then {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	localize "STR_EPOCH_BREAKIN_CANCELLED" call dayz_rollingMessages;
+	localize "STR_BLD_BREAKIN_CANCELLED" call dayz_rollingMessages;
 };
 
 // Working-Factor for chopping wood.
@@ -144,11 +144,11 @@ if (!_proceed) then {
 
 //Completed but no success.
 if (_proceed and !_brokein) then {
-	localize "STR_EPOCH_BREAKIN_COMPLETE_FAIL" call dayz_rollingMessages;
+	localize "STR_BLD_BREAKIN_COMPLETE_FAIL" call dayz_rollingMessages;
 };
 //Completed and successful
 if (_proceed and _brokein) then {
-	localize "STR_EPOCH_BREAKIN_COMPLETE" call dayz_rollingMessages;
+	localize "STR_BLD_BREAKIN_COMPLETE" call dayz_rollingMessages;
 	
 	//Open Gate.
 	_target animate ["DoorR", 1];

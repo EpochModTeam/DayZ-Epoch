@@ -294,6 +294,9 @@
 		<Key ID="str_actions_medical_gave_antibiotics">
 			<English>You gave antibiotics.</English>
 		</Key>
+		<Key ID="str_actions_medical_knocked_out">
+			<English>You have been knocked out.</English>
+		</Key>
 
 		<Key ID="str_actions_medical_drag">
 			<English>Carry body</English>
@@ -683,6 +686,9 @@
 			<French>Vers la place du tireur</French>
 			<Czech>Na sedadlo střelce</Czech>
 			<German>Zum Schützenplatz wechseln</German>
+		</Key>
+		<Key ID="str_actions_exitBlocked">
+			<English>Unable to exit vehicle, too close to buildables objects</English>
 		</Key>
 		<Key ID="str_actions_addammo">
 			<English>Add ammo to %1</English>
@@ -1490,7 +1496,7 @@
 			<Czech>Během kopání se zlomila násada.</Czech>
 			<German>Du schlägst zu und der Schaft der Spitzhacke bricht.</German>
 		</Key>
-		<Key ID="str_cannotCraft">
+		<Key ID="str_missing_to_do_this">
 			<English>Missing %1 to do this.</English>
 			<Russian>Не хватает %1.</Russian>
 			<Spanish>Missing %1 to do this.</Spanish>
@@ -1505,6 +1511,12 @@
 			<French>Il faut un couteau pour dépecer l&apos;animal</French>
 			<Czech>K vykuchání zvířete budete potřebovat nůž.</Czech>
 			<German>Dir fehlt ein Messer, um das Tier auszunehmen.</German>
+		</Key>
+		<Key ID="str_sharpen_missing_water">
+			<English>You need a water bottle to sharpen objects.</English>
+		</Key>
+		<Key ID="str_sharpen_success">
+			<English>%1 has been sharpened.</English>
 		</Key>
 		<Key ID="str_disassembleDone">
 			<English>Disassemble done.</English>
@@ -1527,7 +1539,7 @@
 			<Czech>Objekt je právě demontován.</Czech>
 			<German>Die Demontage läuft schon.</German>
 		</Key>
-		<Key ID="str_disassemble_cant_do">
+		<Key ID="str_water_ladder_cant_do">
 			<English>You cannot do this while on a ladder or on water.</English>
 		</Key>
 
@@ -7188,6 +7200,9 @@
 			<English>You seem to have misplaced the foodstuff.</English>
 			<Russian>Кажется вы выронили еду.</Russian>
 		</Key>
+		<Key ID="str_misplaced_container">
+			<English>You seem to have misplaced the container.</English>
+		</Key>
 		<Key ID="str_mining_finished">
 			<English>You have finished collecting stone.</English>
 			<Russian>Вы закончили добычу камня.</Russian>
@@ -9626,6 +9641,25 @@
 			<Czech>Kovový plot</Czech>
 			<German>Metallzaun</German>
 		</Key>
+		<Key ID="STR_BLD_UNLOCKED">
+			<English>%1 has been unlocked.</English>
+			<German>%1 wurde aufgeschlossen.</German>
+			<Russian>%1 открыт.</Russian>
+			<Dutch>%1 staat niet meer op slot</Dutch>
+			<French>%1 a été déverrouillé.</French>
+			<Czech>%1 bylo odemčeno.</Czech>
+		</Key>
+		<Key ID="STR_BLD_WRONG_COMBO">
+			<English>Combination incorrect, %1 is still locked.</English>
+			<German>Kombination inkorrekt, %1 ist immer noch verschlossen.</German>
+			<Russian>Комбинация неправильна, %1 по-прежнему закрыт.</Russian>
+			<Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
+			<French>Combinaison incorrecte, %1 reste verrouillé.</French>
+			<Czech>Nesprávná kombinace, %1 je stále zamknut.</Czech>
+		</Key>
+		<Key ID="STR_BLD_COMBO_SET">
+			<English>You have set the combination to %1</English>
+		</Key>
 		<Key ID="STR_BLD_GATES_LOCKED">
 			<English>Gates locked.</English>
 		</Key>
@@ -9707,6 +9741,42 @@
 			<Dutch>Break In</Dutch>
 			<French>Break In</French>
 			<Czech>Break In</Czech>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN_NEED_SLEDGE">
+			<English>You need a Sledgehammer to break into this compound.</English>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN_NEED_CROWBAR">
+			<English>You need a Crowbar to break into this compound.</English>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN_BROKEN_SLEDGE">
+			<English>Your Sledgehammer handle has snapped.</English>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN_BENT_CROWBAR">
+			<English>Your crowbar has bent.</English>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN">
+			<English>Breaking into compound, attempt (%1 of %2).</English>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN_CANCELLED">
+			<English>Break in cancelled.</English>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN_COMPLETE_FAIL">
+			<English>Break in attempt completed with limited success.</English>
+		</Key>
+		<Key ID="STR_BLD_BREAKIN_COMPLETE">
+			<English>Break in attempt successful.</English>
+		</Key>
+		<Key ID="STR_BLD_DISMANTLE_MISSING">
+			<English>You are missing the tool %1 to dismantle</English>
+		</Key>
+		<Key ID="STR_BLD_DISMANTLE_DAMAGED">
+			<English>Your tool has been damaged.</English>
+		</Key>
+		<Key ID="STR_BLD_DISMANTLE_ATTEMPT">
+			<English>Dismantle attempt (%1 of %2).</English>
+		</Key>
+		<Key ID="STR_BLD_DISMANTLED">
+			<English>You have dismantled (%1).</English>
 		</Key>
 	</Package>	
 	<Package name="weapons">
@@ -11997,24 +12067,6 @@
 			<French>%1 est déjà en cours de déverrouillage.</French>
 			<Czech>%1 se již odemyká.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_125">
-			<English>%1 has been unlocked.</English>
-			<German>%1 wurde aufgeschlossen.</German>
-			<Russian>%1 открыт.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>%1 staat niet meer op slot</Dutch>
-			<French>%1 a été déverrouillé.</French>
-			<Czech>%1 bylo odemčeno.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_126">
-			<English>Combination incorrect, %1 is still locked.</English>
-			<German>Kombination inkorrekt, %1 ist immer noch verschlossen.</German>
-			<Russian>Комбинация неправильна, %1 по-прежнему закрыт.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
-			<French>Combinaison incorrecte, %1 reste verrouillé.</French>
-			<Czech>Nesprávná kombinace, %1 je stále zamknut.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_131">
 			<English>Filling up %1, move to cancel.</English>
 			<German>Betanken von %1, bewegen Sie sich um den Vorgang abzubrechen.</German>
@@ -13596,75 +13648,9 @@
 			<French>You have interrupted lifting a vehicle!</French>
 			<Czech>You have interrupted lifting a vehicle!</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_322">
-			<English>Unable to exit vehicle, too close to buildables objects</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_323">
-			<English>You have been knocked out</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_324">
-			<English>You have set the combination to %1</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_325">
-			<English>Missing %1 to upgrade storage.</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_326">
-			<English>You cannot maintain objects while on a ladder or on water.</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_327">
-			<English>You need a water bottle to sharpen objects.</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_328">
-			<English>%1 has been Sharpened.</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_329">
-			<English>You seem to have misplaced the container.</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_330">
-			<English>You seem to have misplaced the attachment.</English>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_331">
 			<English>%1 used to unlock vehicle.</English>
 		</Key>
-		
-		<Key ID="STR_EPOCH_BREAKIN_NEED_SLEDGE">
-			<English>You need a Sledgehammer to break into this compound.</English>
-		</Key>
-		<Key ID="STR_EPOCH_BREAKIN_NEED_CROWBAR">
-			<English>You need a Crowbar to break into this compound.</English>
-		</Key>
-		<Key ID="STR_EPOCH_BREAKIN_BROKEN_SLEDGE">
-			<English>Your Sledgehammer handle has snapped.</English>
-		</Key>
-		<Key ID="STR_EPOCH_BREAKIN_BENT_CROWBAR">
-			<English>Your crowbar has bent.</English>
-		</Key>
-		<Key ID="STR_EPOCH_BREAKIN">
-			<English>Breaking into compound, attempt (%1 of %2).</English>
-		</Key>
-		<Key ID="STR_EPOCH_BREAKIN_CANCELLED">
-			<English>Break in cancelled.</English>
-		</Key>
-		<Key ID="STR_EPOCH_BREAKIN_COMPLETE_FAIL">
-			<English>Break in attempt completed with limited success.</English>
-		</Key>
-		<Key ID="STR_EPOCH_BREAKIN_COMPLETE">
-			<English>Break in attempt successful.</English>
-		</Key>
-		
-		<Key ID="STR_EPOCH_DISMANTLE_MISSING">
-			<English>You are missing the tool %1 to dismantle</English>
-		</Key>
-		<Key ID="STR_EPOCH_DISMANTLE_DAMAGED">
-			<English>Your tool has been damaged.</English>
-		</Key>
-		<Key ID="STR_EPOCH_DISMANTLE_ATTEMPT">
-			<English>Dismantle attempt (%1 of %2).</English>
-		</Key>
-		<Key ID="STR_EPOCH_DISMANTLED">
-			<English>You have dismantled (%1).</English>
-		</Key>
-		
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
 			<German>Fahrzeug upgraden</German>
@@ -13769,7 +13755,6 @@
 			<German>Fahrzeug-Upgrade abgeschlossen.</German>
 			<Russian>Транспорт успешно улучшен.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French></French>
 			<Czech>Upgrade vozidla byl úspěšný.</Czech>
 		</Key>
@@ -14111,7 +14096,6 @@
 			<German>Rufe Zombies...</German>
 			<Russian>Призываем зомби...</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Appeler les zombies...</French>
 			<Czech>Volám zombíky...</Czech>
 		</Key>
@@ -14120,7 +14104,6 @@
 			<German>Instandhaltung bereits in Bearbeitung.</German>
 			<Russian>Уже обслуживается.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>La maintenance est déjà en cours.</French>
 			<Czech>Údržba již probíhá.</Czech>
 		</Key>
@@ -14129,7 +14112,6 @@
 			<German>Mindestens ein Teil des Gebäudes ist noch nicht fertig.</German>
 			<Russian>Как минимум одна часть постройки ещё не установлена.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Il reste encore des parties de la construction à maintenir.</French>
 			<Czech>Alespoň jedna část na stavbu není připravena.</Czech>
 		</Key>
@@ -14138,7 +14120,6 @@
 			<German>%1 Bauteile instand gesetzt.</German>
 			<Russian>Вы обслужили %1 построек.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Vous avez maintenu %1 construction(s).</French>
 			<Czech>Opravil jsi %1 částí budov.</Czech>
 		</Key>
@@ -14156,7 +14137,6 @@
 			<German>%1 Bauteile in Reichweite - Instandhaltungskosten: %2.</German>
 			<Russian>Построек найдено: %1, обслуживание будет стоить %2.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>%1 constructions à portée, la maintenance coûtera %2.</French>
 			<Czech>%1 částí staveb v okruhu, údržba by stála %2.</Czech>
 		</Key>
@@ -14165,7 +14145,6 @@
 			<German>Du hast einen Spieler als Freund markiert. Warte auf Bestätigung vom anderen Spieler.</German>
 			<Russian>Вы отметили игрока как друга. Ожидание подтверждения.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Vous avez marqué un joueur comme amical. En attente de la confirmation de ce joueur.</French>
 			<Czech>Označil si cíl za přítele. Čeká se na přijetí.</Czech>
 		</Key>
@@ -14174,7 +14153,6 @@
 			<German>Kleider können nicht gewechselt werden, solange ein Rucksack getragen wird.</German>
 			<Russian>Нельзя переодеться с рюкзаком на спине.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Impossible de changer ses vêtements lorsque vous portez un sac à dos.</French>
 			<Czech>Nemůžete si změnit oblečení, pokud nosíte batoh.</Czech>
 		</Key>
@@ -14183,7 +14161,6 @@
 			<German>Kleider können nicht gewechselt werden, solange eine gefüllte Motorsäge in den Händen gehalten wird.</German>
 			<Russian>Нельзя переодеваться, держа заправленную бензопилу.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Impossible de changer ses vêtements lorsque vous avez une tronçonneuse en main.</French>
 			<Czech>Nemůžete si změnit oblečení, pokud nesete naplněnou motorovou pilu.</Czech>
 		</Key>
@@ -14192,7 +14169,6 @@
 			<German>%3 gekauft für %1 %2, Schlüssel zum Werkzeuggürtel hinzugefügt</German>
 			<Russian>Куплено: %3 за %1 %2, ключ добавлен на пояс.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Vous avez acheté %3 pour %1 %2, la clé a été ajoutée à votre ceinture.</French>
 			<Czech>Koupeno %3 za %1 %2, klíč byl přidán do opasku na nářadí.</Czech>
 		</Key>
@@ -14201,7 +14177,6 @@
 			<German>Keine Panzersperren in der Nähe gefunden.</German>
 			<Russian>Противотанковые ежи не найдены.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Aucun piège à tank trouvé aux alentours.</French>
 			<Czech>Nebyly poblíž nalezeny žádné tankové zátarasy.</Czech>
 		</Key>
@@ -14209,8 +14184,6 @@
 			<English>Another object is blocking the vehicle exit.</English>
 			<German>Ein anderes Objekt blockiert den Ausstieg.</German>
 			<Russian>Что-то блокирует выход из транспорта.</Russian>
-			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Un objet empêche de sortir du véhicule.</French>
 			<Czech>Jiný objekt překáží ve výstupu z vozidla.</Czech>
 		</Key>
@@ -14219,7 +14192,6 @@
 			<German>Fehlgeschlagen, ein anderer Spieler ist näher.</German>
 			<Russian>Не удалось, другой игрок ближе, чем вы.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Échec, un autre joueur est plus proche.</French>
 			<Czech>Chyba, další hráč je blíž, než vy.</Czech>
 		</Key>
@@ -14228,7 +14200,6 @@
 			<German>Du bist jetzt mit %1 befreundet.</German>
 			<Russian>Вы и %1 теперь друзья.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Vous et %1 êtes maintenant marqués comme amicaux.</French>
 			<Czech>Ty a %1 jste nyní označení jako přátelé.</Czech>
 		</Key>
@@ -14237,7 +14208,6 @@
 			<German>Du kannst das Fahrzeug nicht aufrüsten, wenn du noch im Fahrzeug sitzt.</German>
 			<Russian>Вы не можете улучшить транспорт, находясь в нём.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>Vous ne pouvez pas effectuer d'améliorations lorsque vous êtes à l'intérieur d'un véhicule.</French>
 			<Czech>Nemůžete upgradovat, pokud jste ve vozidle.</Czech>
 		</Key>
@@ -14264,7 +14234,6 @@
 			<German>%1 Bauteile in Reichweite.</German>
 			<Russian>Построек найдено: %1</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch></Dutch>
 			<French>%1 constructions à portée.</French>
 			<Czech>%1 částí staveb v okruhu.</Czech>
 		</Key>

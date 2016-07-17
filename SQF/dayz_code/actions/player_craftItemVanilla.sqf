@@ -51,7 +51,7 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 			if (!("MeleeHatchet" in weapons player)) then {
 				if (!(DayZ_onBack == "MeleeHatchet")) then {
 					if (!(_x IN items player)) then {
-						systemChat format[localize "str_cannotCraft", _x];
+						systemChat format[localize "str_missing_to_do_this", _x];
 						_hasTools = false;
 					};
 				};

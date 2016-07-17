@@ -31,7 +31,7 @@ if ((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState p
 };
 
 //player doesn't have the consumable item
-if (!(_this in magazines player)) exitWith { localize "STR_EPOCH_PLAYER_329" call dayz_rollingMessages; };
+if (!(_this in magazines player)) exitWith { localize "str_misplaced_container" call dayz_rollingMessages; };
 
 //Remove container
 player removeMagazine _this;
