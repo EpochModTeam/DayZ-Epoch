@@ -537,12 +537,14 @@ if (_canBuild select 0) then {
 
 				} else { //if not lockable item
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
+					if (DZE_permanentPlot) then {
+						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
+					};
 					// fire?
 					if(_tmpbuilt isKindOf "Land_Fire_DZ") then { //if campfire, then spawn, but do not publish to database
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
 						if (DZE_permanentPlot) then {
-							_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
 						} else {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[]];
