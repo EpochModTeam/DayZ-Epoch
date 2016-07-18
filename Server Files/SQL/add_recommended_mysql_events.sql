@@ -1,5 +1,5 @@
 --
--- http://dayzepoch.com/wiki/index.php?title=Server_Installation_Instructions_Extended
+-- http://epochmod.gamepedia.com/A2Epoch:Server_Installation_Instructions_Extended
 --
 
 -- ----------------------------
