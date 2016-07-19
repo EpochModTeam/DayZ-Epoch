@@ -48,8 +48,6 @@ _key call server_hiveWrite;
 	_retry = 0;
 	// TODO: Needs major overhaul for 1.1
 	while {_retry < 10} do {
-		
-		uiSleep 1;
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
 		diag_log ("HIVE: WRITE: "+ str(_key));
@@ -66,6 +64,7 @@ _key call server_hiveWrite;
 			diag_log("CUSTOM: trying again to get id for: " + str(_uid));
 			_done = false;
 			_retry = _retry + 1;
+			uiSleep 1;
 		};
 	};
 

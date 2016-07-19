@@ -72,8 +72,6 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	_retry = 0;
 	// TODO: Needs major overhaul
 	while {_retry < 10} do {
-		
-		uiSleep 1;
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
 		diag_log ("HIVE: WRITE: "+ str(_key));
@@ -85,11 +83,11 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 			diag_log("CUSTOM: Selected " + str(_oid));
 			_done = true;
 			_retry = 100;
-
 		} else {
 			diag_log("CUSTOM: trying again to get id for: " + str(_uid));
 			_done = false;
 			_retry = _retry + 1;
+			uiSleep 1;
 		};
 	};
 	if(!_done) exitWith { deleteVehicle _object; diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
