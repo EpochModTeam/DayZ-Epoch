@@ -1,4 +1,4 @@
-class CfgAmmo 
+class CfgAmmo
 {
 	class Default;
 	class BulletBase;
@@ -6,7 +6,7 @@ class CfgAmmo
 	class GrenadeCore;
 	
 	/* MELEE */
-
+	
 	class Melee : Default
 	{
 		//Simulation
@@ -306,7 +306,7 @@ class CfgAmmo
 	
 	
 	/* BULLET */
-
+	
 	//.44 Henry			Winchester 1866
 	class B_1866_Slug : BulletBase
 	{
@@ -321,9 +321,9 @@ class CfgAmmo
 		airFriction = -0.005;
 		caliber = 0.5;
 	};
-
+	
 	//makarov
-	class B_9x18_Ball : BulletBase 
+	class B_9x18_Ball : BulletBase
 	{
 		airfriction = -0.002751;
 		audiblefire = 15;
@@ -334,9 +334,9 @@ class CfgAmmo
 		typicalspeed = 350;
 		visiblefire = 15;
 	};
-
+	
 	//makarov sd
-	class B_9x18_SD : B_9x18_Ball 
+	class B_9x18_SD : B_9x18_Ball
 	{
 		airfriction = -0.001893;
 		audiblefire = 0.035;
@@ -346,9 +346,9 @@ class CfgAmmo
 		visiblefire = 0.035;
 		visiblefiretime = 2;
 	};
-
+	
 	//M1911
-	class B_45ACP_Ball : BulletBase 
+	class B_45ACP_Ball : BulletBase
 	{
 		airfriction = -0.0013522;
 		audiblefire = 16;
@@ -438,6 +438,7 @@ class CfgAmmo
 		simulationStep = 1;
 		soundFly[] = {"dayz_weapons\sounds\roadflare", 0.316228, 1, 60};
 		cost = 100;
+		explosive = false;
 		deflecting = 60;
 		explosionTime = 0;
 		timeToLive = 300;
@@ -483,7 +484,7 @@ class CfgAmmo
 	
 	
 	
-	
+
 	// used for grenade traps
 	class GrenadeHandTimedWest;
 	class GrenadeHandTimedWest_DZ : GrenadeHandTimedWest

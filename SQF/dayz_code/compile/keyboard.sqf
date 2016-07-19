@@ -90,7 +90,7 @@ if (isNil "keyboard_keys") then {
                         };                      
                     } forEach getArray(configFile >> "cfgWeapons" >> _weapon >> _muzz >> "magazines");
                 } forEach _muzzles;
-            } forEach [ "Throw"];
+            } forEach ["Throw"];
 
             _magCount = count _ammo_throwable;
             if (_magCount > 0) then {
