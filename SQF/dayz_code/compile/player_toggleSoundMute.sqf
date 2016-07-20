@@ -3,7 +3,7 @@ private ["_background","_icon","_display"];
 disableSerialization;
 _display = uiNamespace getVariable "DAYZ_GUI_display";
 
-if (!isNil "_display") then {
+if (!isNil "_display" && !isNil "Dayz_loginCompleted") then {
 	_background = _display displayCtrl 1904;
 	_icon = _display displayCtrl 1204;
 	
