@@ -36,10 +36,12 @@ _ctrlEye = 		_display displayCtrl 1305;
 //_ctrlHumanity = _display displayCtrl 1207;
 _ctrlCombat = _display displayCtrl 1307;
 _ctrlFracture = 	_display displayCtrl 1203;
+_ctrlMuteBackground = _display displayCtrl 1904;
+_ctrlMuteIcon = _display displayCtrl 1204;
 
 if (!dayz_soundMuted) then {
-	_control = _display displayCtrl 1204; //muted speaker icon
-	_control ctrlShow false;
+	_ctrlMuteBackground ctrlShow false;
+	_ctrlMuteIcon ctrlShow false;
 };
 
 //Food/Water/Blood

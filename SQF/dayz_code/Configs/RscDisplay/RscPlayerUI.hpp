@@ -216,10 +216,19 @@ class RscTitles
 				h = 0.10;
 				colorText[] = {1,1,1,1};
 			};
+			class RscPicture_1904: RscPictureGUI
+			{
+				idc = 1904;
+				text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				x = 0.955313 * safezoneW + safezoneX;
+				y = 0.51 * safezoneH + safezoneY;
+				w = 0.075;
+				h = 0.10;
+			};
 			class RscPicture_1204: RscPictureGUI
 			{
 				idc = 1204;
-				text = "\z\addons\dayz_code\gui\status_epoch\status_audio_muted.paa"; // was previously status_connection_ca, not used
+				text = "\z\addons\dayz_code\gui\status\status_sound_muted.paa"; // previously status_connection_ca which is not used
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.51 * safezoneH + safezoneY;
 				w = 0.075;
@@ -427,10 +436,19 @@ class RscTitles
 				h = 0.10;
 				colorText[] = {1,1,1,1};
 			};
+			class RscPicture_1904: RscPictureGUI
+			{
+				idc = 1904;
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				x = 0.955313 * safezoneW + safezoneX;
+				y = 0.51 * safezoneH + safezoneY;
+				w = 0.075;
+				h = 0.10;
+			};
 			class RscPicture_1204: RscPictureGUI
 			{
 				idc = 1204;
-				text = "\z\addons\dayz_code\gui\status_epoch\status_audio_muted.paa"; // was previously status_connection_ca, not used
+				text = "\z\addons\dayz_code\gui\status\status_sound_muted.paa"; // previously status_connection_ca which is not used
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.51 * safezoneH + safezoneY;
 				w = 0.075;

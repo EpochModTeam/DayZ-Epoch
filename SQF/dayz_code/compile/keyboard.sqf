@@ -56,7 +56,7 @@ if (isNil "keyboard_keys") then {
 		_handled = true;
 	};
 	_muteSound = {
-		call player_muteSound;
+		call player_toggleSoundMute;
 		_handled = true;
 	};
     _rifle = {

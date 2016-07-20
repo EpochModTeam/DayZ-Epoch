@@ -12,7 +12,7 @@
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
 [NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
-[NEW] Earplugs hotkey and status UI icon (F1 = Lower volume). Automatically disabled when exiting a vehicle. @ebaydayz
+[NEW] Mute sound hotkey and status UI icon (F1 = Lower sound effects volume). Automatically disabled when exiting a vehicle. @ebaydayz
 [NEW] Snap building, use DZE_modularBuild = true; in init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 [NEW] Many new configuration options are available for admins. See dayz_code\configVariables.sqf and mission\init.sqf for descriptions. @ebaydayz
