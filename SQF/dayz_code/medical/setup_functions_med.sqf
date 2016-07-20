@@ -19,7 +19,11 @@ fnc_usec_pitchWhine = {
 	playMusic ["PitchWhine",0];
 	if (!r_player_unconscious) then {
 		_visual call fnc_usec_bulletHit;
-		_sound fadeSound 1;
+		if (dayz_soundMuted) then {
+			_sound fadeSound 0.25;
+		} else {
+			_sound fadeSound 1;
+		};
 	};
 	r_pitchWhine = true;
 	[] spawn {

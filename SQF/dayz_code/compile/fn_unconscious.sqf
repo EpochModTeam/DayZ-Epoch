@@ -27,6 +27,7 @@ autoRunActive = false;
 player playAction "CanNotMove";
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
 "colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
+if (dayz_soundMuted) then {call player_toggleSoundMute;}; // hide icon before fadeSound
 0 fadeSound 0.05;
 
 while { (diag_tickTime - _start) < _timeout and r_player_unconscious and alive player } do {

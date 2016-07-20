@@ -1,5 +1,7 @@
 
 if (0 != count Dayz_constructionContext) then {
+	if (dayz_soundMuted) then {call player_toggleSoundMute;}; // disable before fadeSound
+	
     if (!(Dayz_constructionContext select 3)) then {
         _ghost = Dayz_constructionContext select 0;
         if (abs(([_ghost, player] call BIS_fnc_distance2D) - (1 + (sizeOf (typeOf _ghost)) * 0.5)) < 1) then {

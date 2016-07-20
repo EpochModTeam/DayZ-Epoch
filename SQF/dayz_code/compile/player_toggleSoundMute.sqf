@@ -9,7 +9,7 @@ if (!isNil "_display") then {
 	
 	if (dayz_soundMuted) then {
 		dayz_soundMuted = false;
-		1 fadeSound 1;
+		if (!r_player_unconscious && !deathHandled && !r_pitchWhine) then {1 fadeSound 1;};
 		_background ctrlShow false;
 		_icon ctrlShow false;
 	} else {

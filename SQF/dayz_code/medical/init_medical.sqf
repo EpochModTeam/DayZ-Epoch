@@ -8,7 +8,10 @@ while {1==1} do {
 			playSound "heartbeat_1";
 			addCamShake [2, 0.5, 25];
 			if (r_player_lowblood) then {
-				0 fadeSound ((r_player_blood/r_player_bloodTotal) + 0.5);
+				if (!dayz_soundMuted) then {
+					// muted is 0.25, so this is always higher
+					0 fadeSound ((r_player_blood/r_player_bloodTotal) + 0.5);
+				};
 				"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [4]; "dynamicBlur" ppEffectCommit 0.2;
 			};
 			uiSleep 0.5;

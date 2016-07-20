@@ -56,6 +56,7 @@ publicVariableServer "PVDZ_plr_Death";
 _id = [player,20,true,getPosATL player] call player_alertZombies;
 uiSleep 0.5;
 player setDamage 1;
+if (dayz_soundMuted) then {call player_toggleSoundMute;}; // hide icon before fadeSound
 0.1 fadeSound 0;
 
 player setVariable ["NORRN_unconscious", false, true];
