@@ -544,10 +544,17 @@ if (_canBuild select 0) then {
 						if (DZE_permanentPlot) then {
 							_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
+							if (_canBuild select 1) then {
+								_tmpbuilt setVariable ["plotfriends", [[([player] call FNC_GetPlayerUID),(name player)]], true];
+								PVDZ_veh_Save = [_tmpbuilt,"gear"];
+							};
 						} else {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[]];
 						};
 						publicVariableServer "PVDZ_obj_Publish";
+						if (!isNil "PVDZ_veh_Save") then {
+							publicVariableServer "PVDZ_veh_Save";
+						};
 					};
 				};
 			} else { //if magazine was not removed, cancel publish

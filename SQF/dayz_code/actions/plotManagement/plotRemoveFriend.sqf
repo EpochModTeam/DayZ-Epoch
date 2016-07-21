@@ -1,5 +1,4 @@
-private ["_list","_plots","_thePlot","_friends"];
-
+private ["_pos","_plots","_thePlot","_friends","_toRemove","_newList"];
 _pos = _this select 0;
 if (_pos < 0) exitWith {};
 _plots = nearestObjects [[player] call FNC_getPos, ["Plastic_Pole_EP1_DZ"],15];	
