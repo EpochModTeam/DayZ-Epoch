@@ -527,10 +527,17 @@ if (_canBuild select 0) then {
 					if (DZE_permanentPlot) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
+						if (_lockable == 3) then {
+							_tmpbuilt setVariable ["doorfriends", [[([player] call FNC_GetPlayerUID),(name player)]], true];
+							PVDZ_veh_Save = [_tmpbuilt,"gear"];
+						};
 					} else {
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location, _vector],[]];
 					};
 					publicVariableServer "PVDZ_obj_Publish";
+					if (!isNil "PVDZ_veh_Save") then {
+						publicVariableServer "PVDZ_veh_Save";
+					};
 
 					format[localize "str_epoch_player_140",_combinationDisplay,_text] call dayz_rollingMessages; //display new combination
 					systemChat format[localize "str_epoch_player_140",_combinationDisplay,_text];
