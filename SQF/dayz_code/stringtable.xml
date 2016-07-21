@@ -287,15 +287,19 @@
 		</Key>
 		<Key ID="str_actions_medical_misplaced_antibiotics">
 			<English>You seem to have misplaced your antibiotics.</English>
+			<Russian>Похоже, вы потеряли антибиотики.</Russian>
 		</Key>
 		<Key ID="str_actions_medical_taken_antibiotics">
 			<English>You have taken antibiotics.</English>
+			<Russian>Вы приняли антибиотики.</Russian>
 		</Key>
 		<Key ID="str_actions_medical_gave_antibiotics">
 			<English>You gave antibiotics.</English>
+			<Russian>Вы поделились антибиотиками.</Russian>
 		</Key>
 		<Key ID="str_actions_medical_knocked_out">
 			<English>You have been knocked out.</English>
+			<Russian>Вы оглушены.</Russian>
 		</Key>
 
 		<Key ID="str_actions_medical_drag">
@@ -443,6 +447,10 @@
 			<Russian>Перелить себе</Russian>
 			<French>Utiliser la poche de sang</French>
 			<Czech>Použít krevní vak</Czech>
+		</Key>
+		<Key ID="STR_BLD_take">
+			<English>Take blood</English>
+			<Russian>Взять кровь</Russian>
 		</Key>
 		<Key ID="STR_BLD_name_wholeBloodBagAPOS">
 			<English>Whole Blood: A+</English>
@@ -689,6 +697,7 @@
 		</Key>
 		<Key ID="str_actions_exitBlocked">
 			<English>Unable to exit vehicle, too close to buildables objects</English>
+			<Russian>Невозможно выйти из транспорта, слишком близко от постройки</Russian>
 		</Key>
 		<Key ID="str_actions_addammo">
 			<English>Add ammo to %1</English>
@@ -1430,6 +1439,7 @@
 		</Key>
 		<Key ID="str_Attachmentcantremove">
 			<English>Cannot remove attachment.</English>
+			<Russian>Не удалось снять модификацию.</Russian>
 		</Key>
 		<Key ID="str_AttachmentmissingWeapon">
 			<English>You seem to be missing a primary weapon!</English>
@@ -1514,9 +1524,11 @@
 		</Key>
 		<Key ID="str_sharpen_missing_water">
 			<English>You need a water bottle to sharpen objects.</English>
+			<Russian>Нужна вода, чтобы заточить объект.</Russian>
 		</Key>
 		<Key ID="str_sharpen_success">
 			<English>%1 has been sharpened.</English>
+			<Russian>Заточено (%1)</Russian>
 		</Key>
 		<Key ID="str_disassembleDone">
 			<English>Disassemble done.</English>
@@ -1541,6 +1553,7 @@
 		</Key>
 		<Key ID="str_water_ladder_cant_do">
 			<English>You cannot do this while on a ladder or on water.</English>
+			<Russian>Невозможно делать это, находясь на лестнице или в воде.</Russian>
 		</Key>
 
 		<Key ID="str_already_building">
@@ -1813,7 +1826,7 @@
 		</Key>
 		<Key ID="str_disassembleMissingTool">
 			<English>Missing tool: %1 to dissassemble building.</English>
-			<Russian>Для разборки нужно иметь %1</Russian>
+			<Russian>Для разборки нужно иметь: %1</Russian>
 			<French>Outil manquant pour le démontage: %1</French>
 			<Czech>Pro demontáž budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt abzubauen.</German>
@@ -1827,7 +1840,7 @@
 		</Key>
 		<Key ID="str_maintenanceMissingTool">
 			<English>Missing tool: %1 for maintenance.</English>
-			<Russian>Для обслуживания нужно иметь %1</Russian>
+			<Russian>Для обслуживания нужно иметь: %1</Russian>
 			<French>Outil manquant pour l&apos;entretien: %1</French>
 			<Czech>Pro údržbu budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt zu warten.</German>
@@ -3686,7 +3699,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_13_EMPTY">
 			<English>Empty</English>
-			<Russian>Пустая</Russian>
+			<Russian>Опустошить</Russian>
 			<German>Ausleeren</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_13">
@@ -5619,13 +5632,17 @@
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Olsha Sparkling Grape od Papa. Vyrobeno v Černarusi.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_15">
-			<English>Sherbet</English>
-			<Russian>Шербет</Russian>
+			<English>Sherbet (Cold drink)</English>
+			<Russian>Шербет (Напиток)</Russian>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_15">
+			<English>Sharbet, a traditional Middle Eastern cold drink prepared with rose hips, cornelian cherries, rose or licorice and a variety of spices.</English>
+			<Russian>Традиционный напиток в странах Востока, приготавливаемый из шиповника, кизила, розы или лакрицы и различных специй.</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_MRE">
 			<English>MRE</English>
 			<German>EPa</German>
-			<Russian>Сухой паёк MRE</Russian>
+			<Russian>Паёк MRE</Russian>
 			<Spanish>MRE</Spanish>
 			<French>Repas instantané</French>
 			<Czech>Vojenská dávka</Czech>
@@ -7202,6 +7219,7 @@
 		</Key>
 		<Key ID="str_misplaced_container">
 			<English>You seem to have misplaced the container.</English>
+			<Russian>Кажется вы потеряли контейнер.</Russian>
 		</Key>
 		<Key ID="str_mining_finished">
 			<English>You have finished collecting stone.</English>
@@ -7229,6 +7247,7 @@
 		</Key>
 		<Key ID="STR_MINING_IN_PROGRESS">
 			<English>Mining already in progress!</English>
+			<Russian>Добыча в процессе!</Russian>
 		</Key>
 		<Key ID="str_player_toback_fail">
 			<English>Cannot add %1 to back.</English>
@@ -9659,18 +9678,23 @@
 		</Key>
 		<Key ID="STR_BLD_COMBO_SET">
 			<English>You have set the combination to %1</English>
+			<Russian>Вы установили комбинацию: %1</Russian>
 		</Key>
 		<Key ID="STR_BLD_GATES_LOCKED">
 			<English>Gates locked.</English>
+			<Russian>Ворота заперты.</Russian>
 		</Key>
 		<Key ID="STR_BLD_GATES_UNLOCKED">
 			<English>Gates unlocked.</English>
+			<Russian>Ворота отомкнуты.</Russian>
 		</Key>
 		<Key ID="STR_BLD_GATES_OPENED">
 			<English>Gates opened.</English>
+			<Russian>Ворота открыты.</Russian>
 		</Key>
 		<Key ID="STR_BLD_GATES_CLOSED">
 			<English>Gates closed.</English>
+			<Russian>Ворота закрыты.</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_OPENGATE">
 			<English>Open Gate</English>
@@ -9744,39 +9768,51 @@
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_NEED_SLEDGE">
 			<English>You need a Sledgehammer to break into this compound.</English>
+			<Russian>Вам нужна кувалда, чтобы проломить эту преграду.</Russian>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_NEED_CROWBAR">
 			<English>You need a Crowbar to break into this compound.</English>
+			<Russian>Вам нужен ломик, чтобы проломить эту преграду.</Russian>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_BROKEN_SLEDGE">
 			<English>Your Sledgehammer handle has snapped.</English>
+			<Russian>Ваша кувалда сломалась.</Russian>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_BENT_CROWBAR">
 			<English>Your crowbar has bent.</English>
+			<Russian>Ваш ломик согнулся.</Russian>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN">
 			<English>Breaking into compound, attempt (%1 of %2).</English>
+			<Russian>Проламываем преграду, попытка (%1 из %2).</Russian>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_CANCELLED">
 			<English>Break in cancelled.</English>
+			<Russian>Взлом прекращен.</Russian>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_COMPLETE_FAIL">
 			<English>Break in attempt completed with limited success.</English>
+			<Russian>Попытка взлома завершилась с сомнительным успехом.</Russian>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_COMPLETE">
 			<English>Break in attempt successful.</English>
+			<Russian>Удачная попытка вломиться за преграду.</Russian>
 		</Key>
 		<Key ID="STR_BLD_DISMANTLE_MISSING">
 			<English>You are missing the tool %1 to dismantle</English>
+			<Russian>Для демонтажа не хватает: %1</Russian>
 		</Key>
 		<Key ID="STR_BLD_DISMANTLE_DAMAGED">
 			<English>Your tool has been damaged.</English>
+			<Russian>Ваш инструмент поврежден.</Russian>
 		</Key>
 		<Key ID="STR_BLD_DISMANTLE_ATTEMPT">
 			<English>Dismantle attempt (%1 of %2).</English>
+			<Russian>Попытка демонтажа (%1 из %2).</Russian>
 		</Key>
 		<Key ID="STR_BLD_DISMANTLED">
 			<English>You have dismantled (%1).</English>
+			<Russian>Вы демонтировали (%1).</Russian>
 		</Key>
 	</Package>	
 	<Package name="weapons">
@@ -9845,7 +9881,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_FL_NAME">
 			<English>M4A1 FL</English>
-			<Russian>M4A1 фон.</Russian>
+			<Russian>M4A1 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_SD_NAME">
 			<English>M4A1 SD</English>
@@ -9853,14 +9889,14 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_SD_FL_NAME">
 			<English>M4A1 SD FL</English>
-			<Russian>M4A1 ПБС фон.</Russian>
+			<Russian>M4A1 ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_NAME">
 			<English>M4A1 M203</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_FL_NAME">
 			<English>M4A1 M203 FL</English>
-			<Russian>M4A1 M203 фон.</Russian>
+			<Russian>M4A1 M203 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_NAME">
 			<English>M4A1 M203 SD</English>
@@ -9868,7 +9904,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_FL_NAME">
 			<English>M4A1 M203 SD FL</English>
-			<Russian>M4A1 M203 ПБС фон.</Russian>
+			<Russian>M4A1 M203 ПБС Ф</Russian>
 		</Key>
 		<!-- M4A1 CCO-->
 		<Key ID="STR_DZ_WPN_M4A1_CCO_NAME">
@@ -9876,7 +9912,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_FL_NAME">
 			<English>M4A1 CCO FL</English>
-			<Russian>M4A1 CCO фон.</Russian>
+			<Russian>M4A1 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_NAME">
 			<English>M4A1 CCO SD</English>
@@ -9884,14 +9920,14 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_FL_NAME">
 			<English>M4A1 CCO SD FL</English>
-			<Russian>M4A1 CCO ПБС фон.</Russian>
+			<Russian>M4A1 CCO ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_NAME">
 			<English>M4A1 M203 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_FL_NAME">
 			<English>M4A1 M203 CCO FL</English>
-			<Russian>M4A1 M203 CCO фон.</Russian>
+			<Russian>M4A1 M203 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_NAME">
 			<English>M4A1 M203 CCO SD</English>
@@ -9899,7 +9935,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_FL_NAME">
 			<English>M4A1 M203 CCO SD FL</English>
-			<Russian>M4A1 M203 CCO ПБС фон.</Russian>
+			<Russian>M4A1 M203 CCO ПБС Ф</Russian>
 		</Key>
 		<!-- M4A1 Holo -->
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_NAME">
@@ -9907,7 +9943,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_FL_NAME">
 			<English>M4A1 Holo FL</English>
-			<Russian>M4A1 Holo фон.</Russian>
+			<Russian>M4A1 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_NAME">
 			<English>M4A1 Holo SD</English>
@@ -9915,14 +9951,14 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_FL_NAME">
 			<English>M4A1 Holo SD FL</English>
-			<Russian>M4A1 Holo ПБС фон.</Russian>
+			<Russian>M4A1 Holo ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_NAME">
 			<English>M4A1 M203 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_FL_NAME">
 			<English>M4A1 M203 Holo FL</English>
-			<Russian>M4A1 M203 Holo фон.</Russian>
+			<Russian>M4A1 M203 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME">
 			<English>M4A1 M203 Holo SD</English>
@@ -9930,7 +9966,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_FL_NAME">
 			<English>M4A1 M203 Holo SD FL</English>
-			<Russian>M4A1 M203 Holo ПБС фон.</Russian>
+			<Russian>M4A1 M203 Holo ПБС Ф</Russian>
 		</Key>
 		<!-- M4A1 ACOG -->
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_NAME">
@@ -9938,7 +9974,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_FL_NAME">
 			<English>M4A1 ACOG FL</English>
-			<Russian>M4A1 ACOG фон.</Russian>
+			<Russian>M4A1 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_NAME">
 			<English>M4A1 ACOG SD</English>
@@ -9946,14 +9982,14 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_FL_NAME">
 			<English>M4A1 ACOG SD FL</English>
-			<Russian>M4A1 ACOG ПБС фон.</Russian>
+			<Russian>M4A1 ACOG ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_NAME">
 			<English>M4A1 M203 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_FL_NAME">
 			<English>M4A1 M203 ACOG FL</English>
-			<Russian>M4A1 M203 ACOG фон.</Russian>
+			<Russian>M4A1 M203 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_NAME">
 			<English>M4A1 M203 ACOG SD</English>
@@ -9961,7 +9997,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_FL_NAME">
 			<English>M4A1 M203 ACOG SD FL</English>
-			<Russian>M4A1 M203 ACOG ПБС фон.</Russian>
+			<Russian>M4A1 M203 ACOG ПБС Ф</Russian>
 		</Key>
 		
 		
@@ -9972,28 +10008,28 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_FL">
 			<English>M16A4 FL</English>
-			<Russian>M16A4 фон.</Russian>
+			<Russian>M16A4 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO">
 			<English>M16A4 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO_FL">
 			<English>M16A4 CCO FL</English>
-			<Russian>M16A4 CCO фон.</Russian>
+			<Russian>M16A4 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_HOLO">
 			<English>M16A4 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_HOLO_FL">
 			<English>M16A4 Holo FL</English>
-			<Russian>M16A4 Holo фон.</Russian>
+			<Russian>M16A4 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_NAME">
 			<English>M16A4 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_FL_NAME">
 			<English>M16A4 ACOG FL</English>
-			<Russian>M16A4 ACOG фон.</Russian>
+			<Russian>M16A4 ACOG Ф</Russian>
 		</Key>
 		<!-- M203 -->
 		<Key ID="STR_DZ_WPN_M16A4_GL">
@@ -10001,28 +10037,28 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_FL">
 			<English>M16A4 M203 FL</English>
-			<Russian>M16A4 M203 фон.</Russian>
+			<Russian>M16A4 M203 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO">
 			<English>M16A4 M203 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO_FL">
 			<English>M16A4 M203 CCO FL</English>
-			<Russian>M16A4 M203 CCO фон.</Russian>
+			<Russian>M16A4 M203 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO">
 			<English>M16A4 M203 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO_FL">
 			<English>M16A4 M203 Holo FL</English>
-			<Russian>M16A4 M203 Holo фон.</Russian>
+			<Russian>M16A4 M203 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_NAME">
 			<English>M16A4 M203 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_FL_NAME">
 			<English>M16A4 M203 ACOG FL</English>
-			<Russian>M16A4 M203 ACOG фон.</Russian>
+			<Russian>M16A4 M203 ACOG Ф</Russian>
 		</Key>
 		
 		
@@ -10179,28 +10215,28 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_RIS_FL_NAME">
 			<English>SA-58 RIS FL</English>
-			<Russian>SA-58 РСИ фон.</Russian>
+			<Russian>SA-58 РСИ Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_NAME">
 			<English>SA-58 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_FL_NAME">
 			<English>SA-58 CCO FL</English>
-			<Russian>SA-58 CCO фон.</Russian>
+			<Russian>SA-58 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_HOLO_NAME">
 			<English>SA-58 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_HOLO_FL_NAME">
 			<English>SA-58 Holo FL</English>
-			<Russian>SA-58 Holo фон.</Russian>
+			<Russian>SA-58 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_NAME">
 			<English>SA-58 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_FL_NAME">
 			<English>SA-58 ACOG FL</English>
-			<Russian>SA-58 ACOG фон.</Russian>
+			<Russian>SA-58 ACOG Ф</Russian>
 		</Key>
 		
 		
@@ -10295,7 +10331,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_FL_NAME">
 			<English>G17 FL</English>
-			<Russian>G17 фон.</Russian>
+			<Russian>G17 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_SD_NAME">
 			<English>G17 SD</English>
@@ -10303,7 +10339,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_SD_FL_NAME">
 			<English>G17 SD FL</English>
-			<Russian>G17 ПБС фон.</Russian>
+			<Russian>G17 ПБС Ф</Russian>
 		</Key>
 		
 		<!-- PM -->
@@ -10375,7 +10411,7 @@
 		</Key>		
 		<Key ID="STR_DZ_WPN_R870_FL_NAME">
 			<English>Remington 870 FL</English>
-			<Russian>Ремингтон 870 фон.</Russian>
+			<Russian>Ремингтон 870 Ф</Russian>
 			<German>Remington 870 mit Taschenlampe</German>
 			<Spanish>Remington 870 (Linterna)</Spanish>
 			<French>Remington 870 (+Torche)</French>
@@ -10489,15 +10525,15 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_FL_NAME">
 			<English>Mosin Nagant FL</English>
-			<Russian>Мосинка фон.</Russian>
+			<Russian>Мосинка Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_NAME">
 			<English>Mosin Nagant Belt</English>
-			<Russian>Мосинка патр.</Russian>
+			<Russian>Мосинка П</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_FL_NAME">
 			<English>Mosin Nagant Belt FL</English>
-			<Russian>Мосинка патр. фон.</Russian>
+			<Russian>Мосинка П Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_NAME">
 			<English>Mosin Nagant PU</English>
@@ -10505,15 +10541,15 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_FL_NAME">
 			<English>Mosin Nagant PU FL</English>
-			<Russian>Мосинка ПУ фон.</Russian>
+			<Russian>Мосинка ПР Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_NAME">
 			<English>Mosin Nagant PU Belt</English>
-			<Russian>Мосинка ПУ патр.</Russian>
+			<Russian>Мосинка ПР П</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_FL_NAME">
 			<English>Mosin Nagant PU Belt FL</English>
-			<Russian>Мосинка ПУ патр. фон.</Russian>
+			<Russian>Мосинка ПР П Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
@@ -10529,7 +10565,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_FL_NAME">
 			<English>Crossbow FL</English>
-			<Russian>Арбалет фон.</Russian>
+			<Russian>Арбалет Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_NAME">
 			<English>Crossbow CCO</English>
@@ -10537,15 +10573,15 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_FL_NAME">
 			<English>Crossbow CCO FL</English>
-			<Russian>Арбалет CCO фон.</Russian>
+			<Russian>Арбалет CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_NAME">
 			<English>Crossbow Scoped</English>
-			<Russian>Арбалет приц.</Russian>
+			<Russian>Арбалет ПР</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_FL_NAME">
 			<English>Crossbow Scoped FL</English>
-			<Russian>Арбалет приц. фон.</Russian>
+			<Russian>Арбалет ПР Ф</Russian>
 		</Key>
 		
 		
@@ -11060,8 +11096,8 @@
 		
 		<!-- SA58 RIS -->
 		<Key ID="STR_DZ_ATT_SA58RIS_NAME">
-			<English>[A] SA-58 RIS upgrade kit</English>
-			<Russian>[М] SA-58 РСИ </Russian>
+			<English>[A] SA-58 RIS</English>
+			<Russian>[М] SA-58 РСИ</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_SA58RIS_DESC">
 			<English>A Rail Integration System kit designed for the SA-58 assault rifle.</English>

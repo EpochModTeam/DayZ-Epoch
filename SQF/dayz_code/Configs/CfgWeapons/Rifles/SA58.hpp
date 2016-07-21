@@ -39,7 +39,7 @@ class SA58_RIS_DZ : SA58_DZ
 		Attachment_CCO = SA58_CCO_DZ;
 		Attachment_Holo = SA58_Holo_DZ;
 		Attachment_ACOG = SA58_ACOG_DZ;
-		Attachment_FL_Rfl = SA58_RIS_FL_DZ;
+		Attachment_FL = SA58_RIS_FL_DZ;
 	};
 };
 
@@ -63,7 +63,7 @@ class SA58_RIS_FL_DZ : SA58_RIS_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'SA58_RIS_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'SA58_RIS_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -82,7 +82,7 @@ class SA58_CCO_DZ : SA58_RIS_DZ
 	
 	class Attachments
 	{
-		Attachment_FL_Rfl = SA58_CCO_FL_DZ;
+		Attachment_FL = SA58_CCO_FL_DZ;
 	};
 	
 	class ItemActions
@@ -115,7 +115,7 @@ class SA58_CCO_FL_DZ : SA58_CCO_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'SA58_CCO_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'SA58_CCO_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -128,7 +128,7 @@ class SA58_Holo_DZ : SA58_CCO_DZ
 	
 	class Attachments
 	{
-		Attachment_FL_Rfl = SA58_Holo_FL_DZ;
+		Attachment_FL = SA58_Holo_FL_DZ;
 	};
 	
 	class ItemActions
@@ -161,7 +161,7 @@ class SA58_Holo_FL_DZ : SA58_Holo_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'SA58_Holo_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'SA58_Holo_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -213,7 +213,7 @@ class SA58_ACOG_DZ : SA58_CCO_DZ
 	
 	class Attachments
 	{
-		Attachment_FL_Rfl = SA58_ACOG_FL_DZ;
+		Attachment_FL = SA58_ACOG_FL_DZ;
 	};
 	
 	class ItemActions
@@ -246,7 +246,7 @@ class SA58_ACOG_FL_DZ : SA58_ACOG_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'SA58_ACOG_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'SA58_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
 };

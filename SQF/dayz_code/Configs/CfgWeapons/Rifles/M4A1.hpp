@@ -788,7 +788,7 @@ class M4A1_ACOG_DZ : M4A1_DZ
 	{
 		Attachment_M203 = M4A1_GL_ACOG_DZ;
 		Attachment_Sup556 = M4A1_ACOG_SD_DZ;
-		Attachment_FL_Rfl = M4A1_ACOG_FL_DZ;
+		Attachment_FL = M4A1_ACOG_FL_DZ;
 	};
 	
 	class ItemActions
@@ -825,7 +825,7 @@ class M4A1_ACOG_FL_DZ : M4A1_FL_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'M4A1_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -841,7 +841,7 @@ class M4A1_ACOG_SD_DZ : M4A1_SD_DZ
 	class Attachments
 	{
 		Attachment_M203 = M4A1_GL_ACOG_SD_DZ;
-		Attachment_FL_Rfl = M4A1_ACOG_SD_FL_DZ;
+		Attachment_FL = M4A1_ACOG_SD_FL_DZ;
 	};
 	
 	class ItemActions
@@ -887,7 +887,7 @@ class M4A1_ACOG_SD_FL_DZ : M4A1_SD_FL_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'M4A1_ACOG_SD_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'M4A1_ACOG_SD_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -905,7 +905,7 @@ class M4A1_GL_ACOG_DZ : M4A1_GL_DZ
 	class Attachments
 	{
 		Attachment_Sup556 = M4A1_GL_ACOG_SD_DZ;
-		Attachment_FL_Rfl = M4A1_GL_ACOG_FL_DZ;
+		Attachment_FL = M4A1_GL_ACOG_FL_DZ;
 	};
 	
 	class ItemActions
@@ -951,7 +951,7 @@ class M4A1_GL_ACOG_FL_DZ : M4A1_GL_FL_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'M4A1_GL_ACOG_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'M4A1_GL_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -966,7 +966,7 @@ class M4A1_GL_ACOG_SD_DZ : M4A1_GL_SD_DZ
 	
 	class Attachments
 	{
-		Attachment_FL_Rfl = M4A1_GL_ACOG_SD_FL_DZ;
+		Attachment_FL = M4A1_GL_ACOG_SD_FL_DZ;
 	};
 	
 	class ItemActions
@@ -1019,7 +1019,7 @@ class M4A1_GL_ACOG_SD_FL_DZ : M4A1_GL_SD_FL_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'M4A1_GL_ACOG_SD_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'M4A1_GL_ACOG_SD_DZ'] call player_removeAttachment";
 		};
 	};
 };

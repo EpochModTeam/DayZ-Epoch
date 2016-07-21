@@ -201,7 +201,7 @@ class emptyBloodBag : CA_Magazine
 	{
 		class Use
 		{
-			text = "Take Blood";
+			text = $STR_BLD_take;
 			script = "spawn player_useMeds;";
 		};
 	};

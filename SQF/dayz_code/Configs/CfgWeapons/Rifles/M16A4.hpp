@@ -378,7 +378,7 @@ class M16A4_ACOG_DZ : M16A4_DZ
 	class Attachments
 	{
 		Attachment_M203 = M16A4_GL_ACOG_DZ;
-		Attachment_FL_Rfl = M16A4_ACOG_FL_DZ;
+		Attachment_FL = M16A4_ACOG_FL_DZ;
 	};
 	
 	class ItemActions
@@ -414,7 +414,7 @@ class M16A4_ACOG_FL_DZ : M16A4_FL_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'M16A4_ACOG_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'M16A4_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -429,7 +429,7 @@ class M16A4_GL_ACOG_DZ : M16A4_GL_DZ
 	
 	class Attachments
 	{
-		Attachment_FL_Rfl = M16A4_GL_ACOG_FL_DZ;
+		Attachment_FL = M16A4_GL_ACOG_FL_DZ;
 	};
 	
 	class ItemActions
@@ -472,7 +472,7 @@ class M16A4_GL_ACOG_FL_DZ : M16A4_GL_FL_DZ
 		class RemoveFlashlight
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
-			script = "; ['Attachment_FL_Rfl',_id,'M16A4_GL_ACOG_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_FL',_id,'M16A4_GL_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
 };
