@@ -141,6 +141,11 @@ if (count _stats > 0) then {
 	_playerObj setVariable ["headShots",(_stats select 1),true];
 	_playerObj setVariable ["humanKills",(_stats select 2),true];
 	_playerObj setVariable ["banditKills",(_stats select 3),true];
+	
+	//ConfirmedKills
+	_playerObj setVariable ["ConfirmedHumanKills",(_stats select 2),true];
+	_playerObj setVariable ["ConfirmedBanditKills",(_stats select 3),true];
+	
 	_playerObj addScore (_stats select 1);
 	
 	//Save Score
@@ -162,6 +167,10 @@ if (count _stats > 0) then {
 	_playerObj setVariable ["humanKills",0,true];
 	_playerObj setVariable ["banditKills",0,true];
 	_playerObj setVariable ["headShots",0,true];
+	
+	//ConfirmedKills
+	_playerObj setVariable ["ConfirmedHumanKills",0,true];
+	_playerObj setVariable ["ConfirmedBanditKills",0,true];
 
 	//record for Server JIP checks
 	_playerObj setVariable ["zombieKills_CHK",0];

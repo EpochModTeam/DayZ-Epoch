@@ -11,7 +11,7 @@ class horde_journal_pages_murders
 {
 	idd = -1;
 	movingEnable = false;
-	onLoad = "uiNamespace setVariable ['horde_myDisplay', (_this select 0)];  [player getVariable['humanKills', 0]] call horde_epeen_setText_stats_fnc;";
+	onLoad = "uiNamespace setVariable ['horde_myDisplay', (_this select 0)];  [player getVariable['ConfirmedHumanKills', 0]] call horde_epeen_setText_stats_fnc;";
 	enableSimulation = true;
 	controlsBackground[] = {};
 	objects[] = {};

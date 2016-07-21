@@ -102,6 +102,11 @@ if (count _array > 0) then {
 		};
 	};
 	_body setVariable ["deathType",_method,true];
+	
+	//Setup for study bodys.
+	if ((!isNull _source) && (_source != player)) then {
+		_body setVariable ["KillingBlow",_source,true];
+	};
 };
 
 terminate dayz_musicH;

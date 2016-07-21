@@ -11,7 +11,7 @@ class horde_journal_pages_bandits
 {
 	idd = -1;
 	movingEnable = false;
-	onLoad = "uiNamespace setVariable ['horde_myDisplay', (_this select 0)];  [player getVariable['banditKills', 0]] call horde_epeen_setText_stats_fnc;";
+	onLoad = "uiNamespace setVariable ['horde_myDisplay', (_this select 0)];  [player getVariable['ConfirmedBanditKills', 0]] call horde_epeen_setText_stats_fnc;";
 	enableSimulation = true;
 	controlsBackground[] = {};
 	objects[] = {};

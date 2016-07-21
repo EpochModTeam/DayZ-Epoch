@@ -23,6 +23,9 @@ _headShots = player getVariable ["headShots",0];
 _humanKills = player getVariable ["humanKills",0];
 _banditKills = player getVariable ["banditKills",0];
 _achievements = player getVariable ["Achievements",[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
+
+_ConfirmedHumanKills = player getVariable ["ConfirmedHumanKills",0];
+_ConfirmedBanditKills = player getVariable ["ConfirmedBanditKills",0];
 _friendlies = player getVariable ["friendlies",[]];
 _tagSetting = player getVariable ["DZE_display_name",false];
 
@@ -78,6 +81,9 @@ player setVariable ["banditKills",_banditKills,true];
 player setVariable ["characterID",_charID,true];
 player setVariable ["worldspace",_worldspace];
 player setVariable ["Achievements",_achievements];
+
+player getVariable ["ConfirmedHumanKills",_ConfirmedHumanKills,true];
+player getVariable ["ConfirmedBanditKills",_ConfirmedBanditKills,true];
 player setVariable ["friendlies",_friendlies,true];
 player setVariable ["DZE_display_name",_tagSetting,true];
 
