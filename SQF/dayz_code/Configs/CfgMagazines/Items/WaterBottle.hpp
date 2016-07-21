@@ -4,8 +4,8 @@ class ItemWaterBottleUnfilled : CA_Magazine
 	count = 1;
 	type = WeaponSlotItem;
 	
-	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
-	picture = "\z\addons\dayz_communityassets\textures\waterbottle.paa";
+	model = "\dayz_equip\models\waterbottle_gear.p3d";
+	picture = "\dayz_equip\textures\equip_waterbottle_empty_ca.paa";
 	displayName = $STR_EQUIP_NAME_13;
 	descriptionShort = $STR_EQUIP_DESC_13;
 	
@@ -23,14 +23,14 @@ class ItemWaterBottleUnfilled : CA_Magazine
 	};
 };
 
-class ItemWaterBottleDmg : CA_Magazine
+class ItemWaterBottleDmg : CA_Magazine //We don't have a damaged canteen image/model , so the regular bottle image is used for now
 {
 	scope = public;
 	count = 1;
 	type = WeaponSlotItem;
 	
-	model = "z\addons\dayz_communityassets\models\waterbottle_damaged.p3d";
-	picture = "\z\addons\dayz_communityassets\textures\waterbottle_damaged.paa";
+	model = "\dayz_equip\models\waterbottle_gear.p3d";
+	picture = "\dayz_equip\textures\equip_waterbottle_empty_ca.paa";
 	displayName = $STR_ITEMWATERBOTTLEDMG_CODE_NAME;
 	descriptionShort = $STR_ITEMWATERBOTTLEDMG_CODE_DESC;
 	

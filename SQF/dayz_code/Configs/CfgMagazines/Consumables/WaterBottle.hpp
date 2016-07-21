@@ -2,8 +2,8 @@ class ItemWaterBottle : FoodDrink
 {
 	scope = public;
 	
-	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
-	picture = "\z\addons\dayz_communityassets\textures\waterbottle.paa";
+	model = "\dayz_equip\models\waterbottle_gear.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle10oz_ca.paa";
 	displayName = $STR_EQUIP_NAME_12;
 	descriptionShort = $STR_EQUIP_DESC_12;
 	
