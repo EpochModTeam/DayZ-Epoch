@@ -6,7 +6,21 @@ class ItemWaterbottle1oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,100,0};
+	infectionChance = 0.03;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
@@ -21,12 +35,27 @@ class ItemWaterbottle2oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,200,0};
+	infectionChance = 0.06;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
 	};
+
 };
 class ItemWaterbottle3oz : ItemWaterbottle {
 	displayName = $STR_EPOCH_WATERBOTTLE3OZ;
@@ -36,12 +65,27 @@ class ItemWaterbottle3oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,300,0};
+	infectionChance = 0.09;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
 	};
+
 };
 class ItemWaterbottle4oz : ItemWaterbottle {
 	displayName = $STR_EPOCH_WATERBOTTLE4OZ;
@@ -51,12 +95,27 @@ class ItemWaterbottle4oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,400,0};
+	infectionChance = 0.12;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
 	};
+
 };
 class ItemWaterbottle5oz : ItemWaterbottle {
 	displayName = $STR_EPOCH_WATERBOTTLE5OZ;
@@ -66,12 +125,27 @@ class ItemWaterbottle5oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,500,0};
+	infectionChance = 0.15;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
 	};
+
 };
 class ItemWaterbottle6oz : ItemWaterbottle {
 	displayName = $STR_EPOCH_WATERBOTTLE6OZ;
@@ -81,12 +155,27 @@ class ItemWaterbottle6oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,600,0};
+	infectionChance = 0.18;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
 	};
+
 };
 class ItemWaterbottle7oz : ItemWaterbottle {
 	displayName = $STR_EPOCH_WATERBOTTLE7OZ;
@@ -96,7 +185,21 @@ class ItemWaterbottle7oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,700,0};
+	infectionChance = 0.21;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
@@ -111,12 +214,27 @@ class ItemWaterbottle8oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,800,0};
+	infectionChance = 0.24;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
 		};
 	};
+
 };
 class ItemWaterbottle9oz : ItemWaterbottle {
 	displayName = $STR_EPOCH_WATERBOTTLE9OZ;
@@ -126,7 +244,21 @@ class ItemWaterbottle9oz : ItemWaterbottle {
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";
+	Nutrition[] = {0,0,900,0};
+	infectionChance = 0.27;
+	consumeOutput = "ItemWaterBottleUnfilled";
+	containerEmpty = "ItemWaterBottleUnfilled";
 	class ItemActions {
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
 			script = "spawn player_fillWater;";
