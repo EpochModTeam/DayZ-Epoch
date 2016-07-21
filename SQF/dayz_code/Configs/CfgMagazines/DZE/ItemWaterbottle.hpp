@@ -3,6 +3,9 @@ class ItemWaterbottle1oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE1OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_1oz_ca.paa";
 	wateroz = 1;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -15,6 +18,9 @@ class ItemWaterbottle2oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE2OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_2oz_ca.paa";
 	wateroz = 2;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -27,6 +33,9 @@ class ItemWaterbottle3oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE3OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_3oz_ca.paa";
 	wateroz = 3;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -39,6 +48,9 @@ class ItemWaterbottle4oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE4OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_4oz_ca.paa";
 	wateroz = 4;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -51,6 +63,9 @@ class ItemWaterbottle5oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE5OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_5oz_ca.paa";
 	wateroz = 5;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -63,6 +78,9 @@ class ItemWaterbottle6oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE6OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_6oz_ca.paa";
 	wateroz = 6;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -75,6 +93,9 @@ class ItemWaterbottle7oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE7OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_7oz_ca.paa";
 	wateroz = 7;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -87,6 +108,9 @@ class ItemWaterbottle8oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE8OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_8oz_ca.paa";
 	wateroz = 8;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
@@ -99,6 +123,9 @@ class ItemWaterbottle9oz : ItemWaterbottle {
 	descriptionShort = $STR_EPOCH_WATERBOTTLE9OZ_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle_9oz_ca.paa";
 	wateroz = 9;
+	containerWater = "ItemWaterBottle";
+	containerWaterSafe = "ItemWaterBottleSafe";
+	containerWaterInfected = "ItemWaterBottleInfected";
 	class ItemActions {
 		class Fill {
 			text = "$STR_ACTIONS_FILL_W";
