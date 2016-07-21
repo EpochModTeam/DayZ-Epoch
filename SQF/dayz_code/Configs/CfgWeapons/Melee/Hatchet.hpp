@@ -13,11 +13,11 @@ class MeleeHatchet : MeleeWeapon
 	
 	class ItemActions
 	{
-		class Use
+		/* class Use
 		{
 			text = $STR_ACTIONS_CHOPWOOD;
-			script = "spawn player_chopWood";
-		};
+			script = "spawn player_chopWood;";
+		}; */ //removed in favor of actually needing to use the hatchet as a weapon
 		
 		class Toolbelt
 		{
