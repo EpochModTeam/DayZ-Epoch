@@ -670,7 +670,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 	transportRepair = 0;
 	transportFuel = 0;
 	typicalCargo[] = {};
-	offset[] = {0,10,3};
+	offset[] = {0,9,3};
 	cost = 0;
 };
 class WoodGate_DZ: BuiltItems
