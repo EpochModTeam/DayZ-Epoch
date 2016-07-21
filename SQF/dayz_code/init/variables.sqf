@@ -66,6 +66,7 @@ Dayz_meatraw =
     "FoodRabbitRaw",
     "FoodBaconRaw",
     "FoodGoatRaw",
+	"FoodDogRaw",
 	"FishRawTrout",
 	"FishRawSeaBass",
 	"FishRawTuna"
@@ -79,6 +80,7 @@ Dayz_meatcooked =
     "FoodRabbitCooked",
     "FoodBaconCooked",
 	"FoodGoatCooked",
+	"FoodDogCooked",
 	"FishCookedTrout",
 	"FishCookedSeaBass",
 	"FishCookedTuna"
