@@ -1,5 +1,19 @@
 class RscDisplayMultiplayerSetup: RscStandardDisplay
 {
+	west = "ca\ui\data\flag_none_ca.paa";
+	east = "ca\ui\data\flag_none_ca.paa";
+	guer = "ca\ui\data\flag_none_ca.paa";
+	civl = "ca\ui\data\flag_none_ca.paa";
+	none = "ca\ui\data\flag_none_ca.paa";
+	westUnlocked = "ca\ui\data\flag_none_ca.paa";
+	westLocked = "ca\ui\data\flag_none_ca.paa";
+	eastUnlocked = "ca\ui\data\flag_none_ca.paa";
+	eastLocked = "ca\ui\data\flag_none_ca.paa";
+	guerUnlocked = "ca\ui\data\flag_none_ca.paa";
+	guerLocked = "ca\ui\data\flag_none_ca.paa";
+	civlUnlocked = "ca\ui\data\flag_none_ca.paa";
+	civlLocked = "ca\ui\data\flag_none_ca.paa";
+	
 	onload = "with uiNameSpace do{RscDisplayMultiplayerSetup=_this select 0}; [_this] execVM 'z\addons\dayz_code\init\lobbyAutoJoin.sqf'"; //#70
 	onMouseHolding = "with uiNameSpace do { switch (1 == 1) do { case(isNil 'RscDMSLoad'): { RscDMSLoad = diag_tickTime; }; case(RscDMSLoad == -1): {}; case(RscDMSLoad == -2): {}; case(diag_tickTime - RscDMSLoad > 7): { RscDMSLoad = diag_tickTime; }; case(diag_tickTime - RscDMSLoad > 5): { }; }; };";
 	/*
@@ -126,6 +140,7 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 			idc = 1006;
 			x = "(2/100) * SafeZoneW + SafeZoneX"; // to left
 			w = "(96/100) * SafeZoneW"; //wide (was: 38/100)
+			text = "";
 		};
 		class CA_ValuePool: RscIGUIListBox
 		{

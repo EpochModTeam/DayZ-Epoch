@@ -289,6 +289,8 @@ class RscDisplayDiary {
 		delete DiaryPage;
 		delete DiaryTitle;
 		delete DiaryBackground;
+		delete CA_PlayerName;
+		delete CA_CurrentTaskLabel;
 	};
 };
 
@@ -413,7 +415,69 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 	};
 };
 
-
+class CfgDiary
+{
+	class FixedPages
+	{
+		class Diary
+		{
+			picture = "#(argb,8,8,3)color(0,0,0,0)";
+		};
+		class Tasks
+		{
+			picture = "#(argb,8,8,3)color(0,0,0,0)";
+		};
+		class Conversation
+		{
+			picture = "#(argb,8,8,3)color(0,0,0,0)";
+		};
+		class Units
+		{
+			picture = "#(argb,8,8,3)color(0,0,0,0)";
+		};
+		class Players
+		{
+			picture = "#(argb,8,8,3)color(0,0,0,0)";
+			squad = "%$STR_DISP_MP_SQ %SQUAD_TITLE<br/>%$STR_DISP_MP_SQ_NAME %SQUAD_NAME<br/>%$STR_DISP_MP_SQ_MAIL %SQUAD_EMAIL<br/>%$STR_DISP_MP_SQ_WEB %SQUAD_WEB<br/>                <img width=70 height=70 image='\\%SQUAD_PICTURE'/><br/>";
+		};
+		class Statistics
+		{
+			picture = "#(argb,8,8,3)color(0,0,0,0)";
+		};
+	};
+	class Icons
+	{
+		unitNone = "#(argb,8,8,3)color(0,0,0,0)";
+		unitGroup = "ca\ui\data\ui_diary_group_ca.paa";
+		unitPlayable = "ca\ui\data\ui_diary_playable_ca.paa";
+		unitGroupPlayable = "ca\ui\data\ui_diary_grpplay_ca.paa";
+		taskNone = "ca\ui\data\ui_task_none_ca.paa";
+		taskCreated = "ca\ui\data\ui_task_created_ca.paa";
+		taskAssigned = "ca\ui\data\ui_task_assigned_ca.paa";
+		taskSucceeded = "ca\ui\data\ui_task_done_ca.paa";
+		taskFailed = "ca\ui\data\ui_task_failed_ca.paa";
+		taskCanceled = "ca\ui\data\ui_task_cancelled_ca.paa";
+		playerWest = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerEast = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerCiv = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerGuer = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerUnknown = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerBriefWest = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerBriefEast = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerBriefGuer = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerBriefCiv = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerBriefUnknown = "ca\ui\data\igui_side_unknown_ca.paa";
+		playerConnecting = "ca\ui\data\igui_side_unknown_ca.paa";
+	};
+	class TaskIcons
+	{
+		shadow = 2;
+		taskNew = "ca\ui\data\ui_taskstate_new_CA.paa";
+		taskDone = "ca\ui\data\ui_taskstate_done_CA.paa";
+		taskFailed = "ca\ui\data\ui_taskstate_failed_CA.paa";
+		taskCurrent = "ca\ui\data\ui_taskstate_current_CA.paa";
+	};
+};
 
 /*
 class DZ_ItemInteraction {
