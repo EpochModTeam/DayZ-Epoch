@@ -31,6 +31,7 @@ _deleteTradedVehicle = {
 				};
 			} forEach (items player);
 		};
+		_localResult2 = 1; //comment out to require key to sell vehicles
 		if (isNil "_localResult2") then {
 			_localResult2 = 0;
 		} else {

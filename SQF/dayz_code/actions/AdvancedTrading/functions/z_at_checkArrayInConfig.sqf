@@ -41,7 +41,7 @@ _HasKeyCheck = {
 			};
 		} count _inventory;
 	};
-	_keyFound;
+	true; //change to _keyFound; to require key to sell vehicle
 };
 _totalPrice = 0;
 if(_total > 0)then{

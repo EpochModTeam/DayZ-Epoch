@@ -13,7 +13,7 @@ _weaps = _this select 2;
 _bags = [];
 _vehInfo = [];
 _keyID = 0;
-_deleteVeh = false;
+_deleteVeh = true; //set to false to require key to sell vehicles
 
 if(count _this > 3) then {
 	if (count (_this select 3) > 0) then {
