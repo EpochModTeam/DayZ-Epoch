@@ -43,6 +43,7 @@ class ItemPumpkinPlant: CA_Magazine {
 	class ItemActions {
 		class Build {
 			text = "Plant Pumpkin";
+			buildText = "pumpkin plant";
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			create = "Grave";			// TODO: model for Pumpkin Stage 1
@@ -84,6 +85,7 @@ class ItemHempPlant: CA_Magazine {
 	class ItemActions {
 		class Build {
 			text = "Plant Hemp";
+			buildText = "hemp plant";
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			create = "MAP_c_fern";			// TODO: model for Hemp Stage 1

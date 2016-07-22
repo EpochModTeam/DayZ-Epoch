@@ -93,7 +93,11 @@ if (_canBuild select 0) then {
 	_classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 	_classnametmp = _classname;
 	_require =  getArray (configFile >> "cfgMagazines" >> _this >> "ItemActions" >> "Build" >> "require");
-	_text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+	if (isText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "buildText")) then {
+		_text = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "buildText");
+	} else {
+		_text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+	};
 	_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
 
 	_lockable = 0;
@@ -302,7 +306,6 @@ if (_canBuild select 0) then {
 		};
 
 		_tmpbuilt setPosATL _location;
-
 
 		format[localize "str_epoch_player_138",_text] call dayz_rollingMessages;
 

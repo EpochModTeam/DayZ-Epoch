@@ -92,7 +92,11 @@ _canBuild = [_pos, _this, true] call dze_buildChecks;
 if (_canBuild select 0) then {
 	_classname = getText (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActions" >> "Build" >> "create");
 	_classnametmp = _classname;
-	_text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+	if (isText (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActions" >> "Build" >> "buildText")) then {
+		_text = getText (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActions" >> "Build" >> "buildText");
+	} else {
+		_text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+	};
 	_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
 
 	_lockable = 0; //default define if lockable not found in config file below
