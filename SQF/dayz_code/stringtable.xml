@@ -6835,6 +6835,14 @@
 			<French>Le feu de camp a été retiré.</French>
 			<Czech>Ohniště bylo odstraněno.</Czech>
 		</Key>
+		<Key ID="str_fireplace_noMatches">
+			<English>You need a matchbox to build a fireplace</English>
+			<German>You need a matchbox to build a fireplace</German>
+			<Russian>You need a matchbox to build a fireplace</Russian>
+			<Spanish>You need a matchbox to build a fireplace</Spanish>
+			<French>You need a matchbox to build a fireplace</French>
+			<Czech>You need a matchbox to build a fireplace</Czech>
+		</Key>
 		<Key ID="str_success_gutted_animal">
 			<English>%1 has been gutted, %2 meat steaks now on the carcass</English>
 			<German>Du hast das Tier (%1) ausgenommen. Vom verbleibenden Fleisch kannst du %2 Stücke abschneiden.</German>

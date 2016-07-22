@@ -1,4 +1,4 @@
-private ["_item","_config","_text","_booleans","_worldspace","_dir","_location","_dis","_fire","_tool","_itemPile"];
+private ["_item","_config","_exit","_text","_booleans","_worldspace","_dir","_location","_dis","_fire","_tool","_itemPile"];
 
 _tool = _this;
 call gear_ui_init;
@@ -8,6 +8,20 @@ _item = "ItemLog";
 _itemPile = "PartWoodPile";
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
+_exit = false;
+
+if (_tool == "PartWoodPile") then {
+	switch true do {
+		case ("Item1Matchbox" in (weapons player)): {_tool = "Item1Matchbox";};
+		case ("Item2Matchbox" in (weapons player)): {_tool = "Item2Matchbox";};
+		case ("Item3Matchbox" in (weapons player)): {_tool = "Item3Matchbox";};
+		case ("Item4Matchbox" in (weapons player)): {_tool = "Item4Matchbox";};
+		case ("Item5Matchbox" in (weapons player)): {_tool = "Item5Matchbox";};
+		case ("ItemMatchbox" in (weapons player)): {_tool = "ItemMatchbox";};
+		default {_exit = true;};
+	};
+};
+if (_exit) exitWith {(localize "str_fireplace_noMatches") call dayz_rollingMessages;};
 
 // item is missing or tools are missing
 if (!(_item in magazines player) && !(_itemPile in magazines player)) exitWith {

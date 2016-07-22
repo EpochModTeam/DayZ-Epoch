@@ -59,9 +59,8 @@ class PartWoodPile : CA_Magazine
 	class ItemActions {
 		class Build {
 			text = $STR_ACTIONS_MAKEFIRE;
-			script = "spawn player_build;";
-			require[] = {"ItemMatchbox"};
-			create = "Land_Fire_DZ";
+			script = "spawn player_makeFire;";
+			use[] = {"PartWoodPile"};
 		};
 		class Crafting
 		{
