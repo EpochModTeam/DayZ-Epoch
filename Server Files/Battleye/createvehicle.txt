@@ -1,5 +1,5 @@
 //new
-5 !(^DZ_|^z_|^pz_|^WeaponHolder|Box|dog|PZombie_VB|^Smoke|^Chem|^._40mm|_DZ$|^Trap) !=(SeaGull|SmallSecondary|HelicopterExplo(Small|Big)|Stash(Small|Medium)(|[1-4])|(|Dome)TentStorage(|[0-4])) !=(CZ_VestPouch_EP1|R_M136_AT|Wire_cat1) !=(JackDaniels|(Tin|Soda)Can|RoadFlare|WoodenArrowF|zZombie_Base|Parachute(West|C)|Grenade(_|HandTimed)(West|East)) !=(CMflareAmmo|Pipebomb) !=(WildBoar|Rabbit|Sheep|Sheep(01_EP1|02_EP1)|Goat|Goat(01_EP1|02_EP1)|Hen|Cow0[1234]|Cow01_EP1|Cock) !=Blood_Trail_DZ !^(Wooden|Metal)Fence !^WoodenGate_ !=(ShantyHouse(|Stage[2-7])|SurvivorWorkshop(|Stage2|[ABC]Stage[345])|WorkBench) !=explosive_bolt !"Land_" !=Sign_(arrow_down_large|sphere10cm)_EP1 !="MAP_c_fern" !="Grave"
+5 !(^DZ_|^z_|^pz_|^WeaponHolder|Box|dog|PZombie_VB|^Smoke|^Chem|^._40mm|_DZ$|^Trap) !=(SeaGull|SmallSecondary|HelicopterExplo(Small|Big)|DesertTentStorage|Stash(Small|Medium)(|[1-4])|(|Dome)TentStorage(|[0-4])) !=(CZ_VestPouch_EP1|R_M136_AT|Wire_cat1) !=(JackDaniels|(Tin|Soda)Can|RoadFlare|WoodenArrowF|zZombie_Base|Parachute(West|C)|Grenade(_|HandTimed)(West|East)) !=(CMflareAmmo|Pipebomb) !=(WildBoar|Rabbit|Sheep|Sheep(01_EP1|02_EP1)|Goat|Goat(01_EP1|02_EP1)|Hen|Cow0[1234]|Cow01_EP1|Cock) !=Blood_Trail_DZ !^(Wooden|Metal)Fence !^WoodenGate_ !=(ShantyHouse(|Stage[2-7])|SurvivorWorkshop(|Stage2|[ABC]Stage[345])|WorkBench) !=explosive_bolt !"Land_" !=Sign_(arrow_down_large|sphere10cm)_EP1 !="MAP_c_fern" !="Grave" !="VaultStorageLocked" !Fort_ !Nest
 5 SeaGull //set to its own line so we know which kick we have here with out looking in the logs
 1 ^DZ_ !=DZ_(British_ACU|Czech_Vest_Puch|(TK_Assault_Pack|Patrol_Pack|Assault_Pack|ALICE_Pack|CivilBackpack|Backpack)_EP1)
 1 ^z_ !=z_((|new_)villager[1234]|(|new_)worker[1234]|teacher|hunter|suit[12]|soldier(|_pilot|_heavy)|policeman|doctor|priest)
@@ -17,7 +17,7 @@
 5 (_ied|_CRV7|_MEEWS|_SMAW|_GRAD|_SABOT|KORD|DSHKM|MK19|AGS|R_PG|R_OG|B_|_YakB|BBarracks|_LHD_|_acr|MASH_)
 5 "Land_" !="Land_coneLight" !=Land_(HBarrier1|HBarrier3|HBarrier5|Fire)_DZ !=Land_(fortified_nest_small|HBarrier1|HBarrier3e|HBarrier5)Preview !=Land_DZE_(WoodDoor|LargeWoodDoor|GarageWoodDoor|WoodDoorLocked|LargeWoodDoorLocked|GarageWoodDoorLocked)
 5 "_SH" !="Wooden_shed_DZ"
-5 "Nest_" !="M240Nest_DZ" !="SandNest_DZ" !="Land_fortified_nest_smallPreview"
+5 "Nest_" !="M240Nest_DZ" !="SandNest_DZ" !="Land_fortified_nest_smallPreview" !="WarfareBMGNest_Preview"
 5 "Fort_" !="Fort_RazorWire" !="Fort_RazorWirePreview"
 5 (BasicWeapons|SpecialWeapons|_uav)
 5 _AT !=R_M136_AT
