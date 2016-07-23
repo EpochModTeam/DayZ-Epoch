@@ -80,7 +80,7 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.5,		G36K_Camo_DZ}, //G36K_camo
 	{Loot_WEAPON,		0.3,		G36_C_SD_camo},
 	{Loot_WEAPON,		0.5,		M16A2_DZ}, //M16A2
-	{Loot_WEAPON,		0.2,		M16A2_GL_DZ}, //M16A2GL
+	//{Loot_WEAPON,		0.2,		M16A2_GL_DZ}, //M16A2GL //added to attachments system
 	{Loot_WEAPON,		0.1,		M16A4_ACOG_DZ}, //M16A4_ACG (has slightly different scope)
 	{Loot_WEAPON,		0.5,		M4A1_DZ}, //M4A1
 	{Loot_WEAPON,		0.4,		M4A1_CCO_DZ}, //M4A1_Aim

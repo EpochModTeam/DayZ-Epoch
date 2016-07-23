@@ -72,11 +72,3 @@ class Attachment_Sup556
 {
 	weight = 0.1;
 };
-class Attachment_SupBizon 
-{
-	weight = 0.1;
-};
-class Attachment_SupMakarov 
-{
-	weight = 0.05;
-};

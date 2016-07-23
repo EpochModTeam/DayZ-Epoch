@@ -59,16 +59,6 @@ class Category_693 {
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Attachment_SupMakarov {
-		type = "trade_items";
-		buy[] = {4,"ItemGoldBar"};
-		sell[] = {2,"ItemGoldBar"};
-	};
-	class Attachment_SupBizon {
-		type = "trade_items";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
-	};
 	class Attachment_Sup545 {
 		type = "trade_items";
 		buy[] = {6,"ItemGoldBar"};

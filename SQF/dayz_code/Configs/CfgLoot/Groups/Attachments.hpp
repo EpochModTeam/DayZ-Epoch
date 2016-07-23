@@ -10,8 +10,7 @@ AttachmentsEast[] =
 {
 	{Loot_MAGAZINE,		2,		Attachment_Kobra},
 	{Loot_MAGAZINE,		1,		Attachment_PSO1},
-	{Loot_MAGAZINE,		3,		Attachment_SupMakarov},
-	{Loot_MAGAZINE,		2,		Attachment_SupBizon},
+	{Loot_MAGAZINE,		3,		Attachment_Sup9},
 	{Loot_MAGAZINE,		1,		Attachment_Sup545},
 	{Loot_MAGAZINE,		2,		Attachment_GP25},
 	{Loot_MAGAZINE,		2,		Attachment_Ghillie},

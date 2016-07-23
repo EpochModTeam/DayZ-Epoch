@@ -9,7 +9,8 @@ class Makarov_DZ : Makarov
 	
 	class Attachments
 	{
-		Attachment_SupMakarov = "Makarov_SD_DZ";
+		Attachment_SupMakarov = "Makarov_SD_DZ"; //left to maintain old suppressor attachment
+		Attachment_Sup9 = "Makarov_SD_DZ";
 	};
 };
 
@@ -27,7 +28,7 @@ class Makarov_SD_DZ : MakarovSD
 		class RemoveSuppressor
 		{
 			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_SupMakarov',_id,'Makarov_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Sup9',_id,'Makarov_DZ'] call player_removeAttachment";
 		};
 	};
 };
