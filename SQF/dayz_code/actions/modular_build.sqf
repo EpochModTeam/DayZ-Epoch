@@ -532,8 +532,9 @@ if (_canBuild select 0) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
 						if (_lockable == 3) then {
-							_tmpbuilt setVariable ["doorfriends", [[([player] call FNC_GetPlayerUID),(name player)]], true];
-							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], [[([player] call FNC_GetPlayerUID),(name player)]]];
+							_friendsArr = [[([player] call FNC_GetPlayerUID),(name player)]];
+							_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
+							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], _friendsArr];
 						};
 					} else {
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location, _vector],[]];
