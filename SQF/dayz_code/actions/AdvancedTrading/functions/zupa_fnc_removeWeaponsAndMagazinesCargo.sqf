@@ -13,7 +13,7 @@ _weaps = _this select 2;
 _bags = [];
 _vehInfo = [];
 _keyID = 0;
-_deleteVeh = true; //set to false to require key to sell vehicles
+_deleteVeh = false;
 
 if(count _this > 3) then {
 	if (count (_this select 3) > 0) then {
@@ -117,7 +117,7 @@ if (count _vehInfo > 0) then {
 				};
 			};
 		} count _normalWeaps;
-		if (_keyID == "0") then {_deleteVeh = True;};
+		if (_keyID == "0" || !DZE_SaleRequiresKey) then {_deleteVeh = True;};
 	} else {
 		_deleteVeh = True;
 	};

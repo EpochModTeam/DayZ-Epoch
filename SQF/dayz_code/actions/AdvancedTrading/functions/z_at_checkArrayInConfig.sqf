@@ -41,7 +41,7 @@ _HasKeyCheck = {
 			};
 		} count _inventory;
 	};
-	true; //change to _keyFound; to require key to sell vehicle
+	_keyFound;
 };
 _totalPrice = 0;
 if(_total > 0)then{
@@ -83,7 +83,7 @@ if(_total > 0)then{
 				};
 				_HasKey = true;
 				if (_vehTrade && {(typeOf Z_vehicle) == _y}) then {
-					if (!(_type in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"])) then {
+					if (!(_type in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"]) && DZE_SaleRequiresKey) then {
 						_HasKey = [Z_vehicle, _all] call _HasKeyCheck;
 					};
 				};

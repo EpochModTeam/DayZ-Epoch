@@ -20,7 +20,7 @@ _deleteTradedVehicle = {
 	_VehKey2 = (_this select 0) select 0;
 	_delType = _this select 1;
 	if ((count _VehKey2) > 0) then {
-		if ((_VehKey2 select 0) == "0" || _delType in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"]) then {
+		if ((_VehKey2 select 0) == "0" || _delType in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"] || !DZE_SaleRequiresKey) then {
 			_localResult2 = 1;
 		} else {
 			{
@@ -31,7 +31,6 @@ _deleteTradedVehicle = {
 				};
 			} forEach (items player);
 		};
-		_localResult2 = 1; //comment out to require key to sell vehicles
 		if (isNil "_localResult2") then {
 			_localResult2 = 0;
 		} else {
