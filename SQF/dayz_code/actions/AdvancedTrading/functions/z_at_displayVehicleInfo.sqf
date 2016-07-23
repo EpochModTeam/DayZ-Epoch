@@ -89,7 +89,7 @@ if (isArray (_config >> 'weapons')) then {
 		};
 	} forEach ["hasDriver","hasGunner","hasCommander"];
 } forEach ["MainTurret","BackTurret","SideTurret","RightDoorGun","BackDoorGun","LeftDoorGun","AGS30_Turret","PK_Turret"];
-	 
+
 // Get weapon display names
 _weapons2 = [];
 {
@@ -130,8 +130,7 @@ if (Z_SingleCurrency) then {
 	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
 	];
 
-
-}else {
+} else {
 	_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
 	_sellCurrency = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'displayName');
 	_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');
@@ -150,10 +149,6 @@ if (Z_SingleCurrency) then {
 	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_BAGS",
 	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
 	];
-
-
 };
-
-
 
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText parseText _formattedText;

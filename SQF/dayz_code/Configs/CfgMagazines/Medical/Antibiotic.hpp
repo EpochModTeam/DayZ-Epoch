@@ -28,6 +28,10 @@ class ItemAntibiotic : ItemAntibiotic_base
 			text = $STR_TAKE_ANTIBIOTIC;
 			script = "spawn player_useMeds;";
 		};
+		class Combine {
+			text = $STR_ANTIBIOTICS_COMBINE;
+			script = "spawn player_combineAntibiotics;";
+		};
 	};
 };
 

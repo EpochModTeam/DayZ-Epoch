@@ -15,7 +15,8 @@ class Bizon_DZ : bizon
 	
 	class Attachments
 	{
-		Attachment_SupBizon = "Bizon_SD_DZ";
+		Attachment_SupBizon = "Bizon_SD_DZ";//left to maintain old attachment suppressor
+		Attachment_Sup9 = "Bizon_SD_DZ";
 	};
 };
 
@@ -39,7 +40,7 @@ class Bizon_SD_DZ : bizon_silenced
 		class RemoveSuppressor
 		{
 			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_SupBizon',_id,'Bizon_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Sup9',_id,'Bizon_DZ'] call player_removeAttachment";
 		};
 	};
 };

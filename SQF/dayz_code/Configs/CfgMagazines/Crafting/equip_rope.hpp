@@ -14,7 +14,7 @@ class equip_rope : CA_Magazine {
 			script = "spawn player_craftItem;";
 			neednearby[] = {}; 
 			requiretools[] = {""};
-			output[] = {{"equip_string","CfgMagazines",3}};
+			output[] = {{"equip_string","CfgMagazines",2}};
 			input[] = {{"equip_rope","CfgMagazines",1}};
 		};
 	};
