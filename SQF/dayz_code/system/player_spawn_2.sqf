@@ -27,7 +27,7 @@ player setVariable["friendlies",DZE_Friends,true];
 
 //player addMagazine "Hatchet_swing";
 //player addWeapon "MeleeHatchet";
-waitUntil {!isNil "dayz_nutrition"};
+
 while {1 == 1} do {
 	_start = diag_tickTime;
 
