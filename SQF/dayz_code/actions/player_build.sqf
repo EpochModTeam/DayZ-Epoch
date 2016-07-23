@@ -441,15 +441,12 @@ if (_canBuild select 0) then {
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID],_classname];
 						if (_lockable == 3) then {
 							_tmpbuilt setVariable ["doorfriends", [[([player] call FNC_GetPlayerUID),(name player)]], true];
-							PVDZ_veh_Save = [_tmpbuilt,"gear"];
+							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], [[([player] call FNC_GetPlayerUID),(name player)]]];
 						};
 					} else {
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
 					};
 					publicVariableServer "PVDZ_obj_Publish";
-					if (!isNil "PVDZ_veh_Save") then {
-						publicVariableServer "PVDZ_veh_Save";
-					};
 
 					format[localize "str_epoch_player_140",_combinationDisplay,_text] call dayz_rollingMessages;
                     systemChat format[localize "str_epoch_player_140",_combinationDisplay,_text];
@@ -462,18 +459,17 @@ if (_canBuild select 0) then {
 					} else {
 						if (DZE_permanentPlot) then {
 							_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
-							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID],_classname];
 							if (_canBuild select 1) then {
-								_tmpbuilt setVariable ["plotfriends", [[([player] call FNC_GetPlayerUID),(name player)]], true];
-								PVDZ_veh_Save = [_tmpbuilt,"gear"];
+								_friendsArr = [[([player] call FNC_GetPlayerUID),(name player)]];
+								_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
+								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID],_friendsArr];
+							} else {
+								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID],_classname];
 							};
 						} else {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];
 						};
 						publicVariableServer "PVDZ_obj_Publish";
-						if (!isNil "PVDZ_veh_Save") then {
-							publicVariableServer "PVDZ_veh_Save";
-						};
 					};
 				};
 			} else {

@@ -1,12 +1,16 @@
-private ["_activatingplayerUID","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_objectID","_objectUID","_proceed","_activatingplayer"];
+private ["_activatingplayerUID","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer"];
 //[dayz_characterID,_tent,[_dir,_location],"TentStorage"]
 _charID =		_this select 0;
 _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _class = 		_this select 3;
-_obj = 		_this select 4;
+_obj = 			_this select 4;
 _activatingplayer = 		_this select 5;
 _activatingplayerUID = [_activatingplayer] call FNC_GetPlayerUID;
+_inv = [];
+if ((count _this) > 6) then {
+	_inv = 			_this select 6;
+};
 _proceed = false;
 
 _objectID = "0";
@@ -57,7 +61,8 @@ _uid = _worldspace call dayz_objectUID2;
 
 //Send request
 //_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _charID, _worldspace, [], [], 0,_uid];
-_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _charID, _worldspace call AN_fnc_formatWorldspace, [], [], 0,_uid]; // Precise Base Building 1.0.5
+_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _charID, _worldspace call AN_fnc_formatWorldspace, _inv, [], 0,_uid]; // Precise Base Building 1.0.5
+
 //diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 

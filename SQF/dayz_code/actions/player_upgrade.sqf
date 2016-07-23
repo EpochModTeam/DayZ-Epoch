@@ -128,18 +128,17 @@ if ((count _upgrade) > 0) then {
 				_ownerID = _obj getVariable["ownerPUID","0"];
 				if (_ownerID == "0") then { _ownerID = [player] call FNC_GetPlayerUID; }; //APFL is on but UID is 0 so we will claim it to record the ownership.
 				_object setVariable ["ownerPUID",_ownerID,true];
-				PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_ownerID,_vector],_classname,_obj,player];
 				if (_lockable == 3) then {
-					_object setVariable ["doorfriends", [[([player] call FNC_GetPlayerUID),(name player)]], true];
-					PVDZ_veh_Save = [_object,"gear"];
+					_friendsArr = [[([player] call FNC_GetPlayerUID),(name player)]];
+					_object setVariable ["doorfriends", _friendsArr, true];
+					PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_ownerID,_vector],_classname,_obj,player,_friendsArr];
+				} else {
+					PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_ownerID,_vector],_classname,_obj,player];
 				};
 			} else {
 				PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_vector],_classname,_obj,player];
 			};
 			publicVariableServer "PVDZE_obj_Swap";
-			if (!isNil "PVDZ_veh_Save") then {
-				publicVariableServer "PVDZ_veh_Save";
-			};
 
 			player reveal _object;
 			

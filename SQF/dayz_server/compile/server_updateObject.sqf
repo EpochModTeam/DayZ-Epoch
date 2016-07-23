@@ -86,8 +86,8 @@ _object_inventory = {
 		};
 	};
 	
-	_previous = str(_object getVariable["lastInventory",[]]);
-	if (str _inventory != _previous) then {
+	//_previous = str(_object getVariable["lastInventory",[]]); //causes issues with door/plot management
+	//if (str _inventory != _previous) then {
 		_object setVariable["lastInventory",_inventory];
 		if (_objectID == "0") then {
 			_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":";
@@ -100,7 +100,7 @@ _object_inventory = {
 		#endif
 		
 		_key call server_hiveWrite;
-	};
+	//};
 };
 
 _object_damage = {
