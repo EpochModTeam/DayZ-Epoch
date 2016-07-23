@@ -6647,6 +6647,12 @@
 			<Czech>Tato sada obsahuje tětivu a lučiště. Součást nutná pro výrobu kuše.</Czech>
 			<German>Ein Armbrust-Selbstbau-Kit zum Herstellen einer Armbrust.</German>
 		</Key>
+		<Key ID="STR_ANTIBIOTICS_COMBINE">
+			<English>Combine</English>
+			<Russian>Объединить</Russian>
+			<Czech>Kombinovat</Czech>
+			<German>Vereinigen</German>
+		</Key>
 	</Package>
 	<Package name="feedback">
 		<Key ID="str_pulse_extremely_weak">
