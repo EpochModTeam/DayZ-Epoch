@@ -13,6 +13,7 @@ class DZ_storage_base : Land_A_tent {
 	constructioncount = 1;
 	requireplot = 0;
 	nounderground = 0;
+	offset[] = {0,3,1};
 };
 class DomeTentStorage_base;
 
@@ -23,6 +24,7 @@ class DesertTentStorage: DomeTentStorage_base {
 	transportMaxMagazines = 75;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 5;
+	offset[] = {0,3,1};
 	class Upgrade {
 		requiredTools[] = {"ItemToolbox"};
 		requiredParts[] = {"equip_crate","PartWoodPile"};
@@ -37,6 +39,7 @@ class DesertTentStorage0: DomeTentStorage_base {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 6;
+	offset[] = {0,3,1};
 	class Upgrade {
 		requiredTools[] = {"ItemToolbox"};
 		requiredParts[] = {"equip_crate","PartWoodPile"};
@@ -51,6 +54,7 @@ class DesertTentStorage1: DomeTentStorage_base {
 	transportMaxMagazines = 125;
 	transportMaxWeapons = 25;
 	transportMaxBackpacks = 7;
+	offset[] = {0,3,1};
 	class Upgrade {
 		requiredTools[] = {"ItemToolbox"};
 		requiredParts[] = {"equip_crate","PartWoodPile"};
@@ -65,6 +69,7 @@ class DesertTentStorage2: DomeTentStorage_base {
 	transportMaxMagazines = 150;
 	transportMaxWeapons = 30;
 	transportMaxBackpacks = 8;
+	offset[] = {0,3,1};
 	class Upgrade {
 		requiredTools[] = {"ItemToolbox"};
 		requiredParts[] = {"equip_crate","PartWoodPile"};
@@ -79,6 +84,7 @@ class DesertTentStorage3: DomeTentStorage_base {
 	transportMaxMagazines = 175;
 	transportMaxWeapons = 35;
 	transportMaxBackpacks = 9;
+	offset[] = {0,3,1};
 	class Upgrade {
 		requiredTools[] = {"ItemToolbox"};
 		requiredParts[] = {"equip_crate","PartWoodPile"};
@@ -93,4 +99,5 @@ class DesertTentStorage4 : DomeTentStorage_base {
 	transportMaxMagazines = 200; //same as ural
 	transportMaxWeapons = 40;
 	transportMaxBackpacks = 10;
+	offset[] = {0,3,1};
 };

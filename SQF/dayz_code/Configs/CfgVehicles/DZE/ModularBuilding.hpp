@@ -93,7 +93,7 @@ class CinderWall_DZ: ModularItems {
 	scope = public;
 	destrType = "DestructBuilding";
 	cost = 100;
-	offset[] = {0,1.5,0};
+	offset[] = {0,1.5,1.65};
 	model="\z\addons\dayz_epoch\models\cinder_wall_full.p3d";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;

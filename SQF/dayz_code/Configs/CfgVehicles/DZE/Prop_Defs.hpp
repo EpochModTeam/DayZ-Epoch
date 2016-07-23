@@ -228,7 +228,7 @@ class Sandbag1_DZ: BuiltItems
 	cost = 100;
 	model = "\ca\misc2\BagFenceLong.p3d";
 	icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,3,0.5};
 	mapSize = 2;
 	armor = 400;
 	displayName = "Bag Fence";
@@ -504,7 +504,7 @@ class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
 	armor = 300;
 	destrType = "DestructNo";
 	scope = public;
-	offset[] = {0,5,0};
+	offset[] = {0,9,0};
 	displayName = "Desert Camo Net";
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"desert_net_kit",1}};
@@ -515,7 +515,7 @@ class ForestCamoNet_DZ: Land_CamoNet_EAST
 	armor = 300;
 	destrType = "DestructNo";
 	scope = public;
-	offset[] = {0,5,0};
+	offset[] = {0,9,0};
 	displayName = "Forest Camo Net";
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"forest_net_kit",1}};
@@ -559,7 +559,7 @@ class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 {
 	armor = 400;
 	scope = public;
-	offset[] = {0,2.5,1};
+	offset[] = {0,6,1};
 	displayName = "Rusty Gate";
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"rusty_gate_kit",1}};
@@ -583,7 +583,7 @@ class StorageShed_DZ: Land_Shed_M01
 {
 	armor = 1600;
 	scope = public;
-	offset[] = {0,2.5,1};
+	offset[] = {0,4,1};
 	displayName = "Storage Shed";
 	vehicleClass = "Fortifications";
 	transportMaxMagazines = 400;
@@ -596,7 +596,7 @@ class Fence_corrugated_DZ: Fence_corrugated_plate
 {
 	armor = 600;
 	scope = public;
-	offset[] = {0,2.5,1};
+	offset[] = {0,3,1};
 	removeoutput[] = {{"ItemCorrugated",1}};
 	displayName = "Corrugated Fence";
 	vehicleClass = "Fortifications";
@@ -608,7 +608,7 @@ class WoodShack_DZ: Land_kulna
 {
 	scope = public;
 	destrType = "DestructBuilding";
-	offset[] = {0,2.5,1.3};
+	offset[] = {0,4,1.3};
 	armor = 800;
 	displayName = "Wooden Shack";
 	vehicleClass = "Fortifications";
@@ -624,7 +624,7 @@ class Wooden_shed_DZ: Land_Shed_wooden
 	scope = public;
 	destrType = "DestructBuilding";
 	//cost = 100;
-	offset[] = {0,3,1};
+	offset[] = {0,5,1};
 	armor = 800;
 	displayName = "Wooden Shed";
 	vehicleClass = "Fortifications";
@@ -640,7 +640,7 @@ class StickFence_DZ: Wall_FenW2_6_EP1
 	destrType = "DestructTree";
 	armor = 200;
 	scope = public;
-	offset[] = {0,2.5,0};
+	offset[] = {0,4.5,0};
 	displayName = "Stick Fence";
 	vehicleClass = "Fortifications";
 };
