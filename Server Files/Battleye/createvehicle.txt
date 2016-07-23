@@ -15,7 +15,7 @@
 5 (AAV|T90|M1A2_TUSK_MG|AV8B2|Mine|ARTY_|SADARM_|LASER_|WP_|_MLRS|_81|_82|_105|_120|_122|_227|_AP|_80|_57|_85|_100|_125|_30)
 5 "_AA" !"Soldier_Bodyguard_AA12_PMC_DZ"
 5 (_ied|_CRV7|_MEEWS|_SMAW|_GRAD|_SABOT|KORD|DSHKM|MK19|AGS|R_PG|R_OG|B_|_YakB|BBarracks|_LHD_|_acr|MASH_)
-5 "Land_" !=Land_(HBarrier1|HBarrier3|HBarrier5|Fire)_DZ !=Land_(fortified_nest_small|HBarrier1|HBarrier3e|HBarrier5)Preview !=Land_DZE_(WoodDoor|LargeWoodDoor|GarageWoodDoor|WoodDoorLocked|LargeWoodDoorLocked|GarageWoodDoorLocked)
+5 "Land_" !="Land_coneLight" !=Land_(HBarrier1|HBarrier3|HBarrier5|Fire)_DZ !=Land_(fortified_nest_small|HBarrier1|HBarrier3e|HBarrier5)Preview !=Land_DZE_(WoodDoor|LargeWoodDoor|GarageWoodDoor|WoodDoorLocked|LargeWoodDoorLocked|GarageWoodDoorLocked)
 5 "_SH" !="Wooden_shed_DZ"
 5 "Nest_" !="M240Nest_DZ" !="SandNest_DZ" !="Land_fortified_nest_smallPreview"
 5 "Fort_" !="Fort_RazorWire" !="Fort_RazorWirePreview"
