@@ -19,7 +19,7 @@ if(Z_Selling)then{
 	if (Z_CategoryView) then {
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_FILTERBUTTON) ctrlSetText localize "STR_EPOCH_VIEW";
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_BUYABLELIST) ctrlSetFontHeight 0.026; // Slightly bigger in category view	
-		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_BUYABLELIST) ctrlSetPosition [(0.21* safezoneW + safezoneX),(0.43 * safezoneH + safezoneY),(0.13 * safezoneW),(0.30 * safezoneH)];	
+		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_BUYABLELIST) ctrlSetPosition [(0.21* safezoneW + safezoneX),(0.41 * safezoneH + safezoneY),(0.13 * safezoneW),(0.30 * safezoneH)];	
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_BUYABLELIST) ctrlCommit 0;
 		{ctrlShow [_x,false];} forEach [Z_AT_ADDBUYITEMBUTTON,Z_AT_BUYINGAMOUNT,Z_AT_REMOVEBUYITEMBUTTON,Z_AT_REMOVEALLBUYITEMBUTTON,Z_AT_FILTERBOX,Z_AT_BACKBUTTON]; // hide
 		call Z_fillCategories;
