@@ -16228,9 +16228,23 @@
 			<English>Only %1 bags fit in the backpack.</English>
 			<Russian>В рюкзак поместится рюкзаков: %1.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_IN_BACKPACK">
-			<English>Adding %1 items in backpack</English>
-			<Russian>Добавлено: %1 предметов в рюкзак</Russian>
+		<Key ID="STR_EPOCH_TRADE_BUY_IN_BACKPACK">
+			<English>Purchased %1 items into your backpack</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUY_IN_VEHICLE">
+			<English>Purchased %1 items into %2</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUY_IN_GEAR">
+			<English>Purchased %1 items into your gear</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELL_IN_BACKPACK">
+			<English>Sold %1 items from your backpack</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELL_IN_VEHICLE">
+			<English>Sold %1 items from %2</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_SELL_IN_GEAR">
+			<English>Sold %1 items from your gear</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESSFUL">
 			<English>Trade successfull.</English>
@@ -16310,17 +16324,17 @@
 			<Russian>Деньги не требуются.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS">
-			<English>SUCCESS : Objects maintained: %1</English>
+			<English>SUCCESS: Objects maintained: %1</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS">
-			<English>SUCCESS : Price maintained: %1 %2 !</English>
+			<English>SUCCESS: Price maintained: %1 %2 !</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED">
-			<English>FAILED : Objects maintained: 0</English>
+			<English>FAILED: Objects maintained: 0</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED">
-			<English>FAILED : Money needed: %1 %2 !</English>
-			<Russian>ОШИБКА : Требуется денег: %1 %2 !</Russian>
+			<English>FAILED: Money needed: %1 %2 !</English>
+			<Russian>ОШИБКА: Требуется денег: %1 %2 !</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
 			<English>Already on the list</English>
