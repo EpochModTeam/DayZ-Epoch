@@ -9,7 +9,7 @@ class DMR_DZ : DMR
 	
 	class Single : Single
 	{
-		reloadTime = 0.6;
+		//reloadTime = 0.6;
 		recoil = "recoil_single_primary_4outof10";
 		recoilProne = "recoil_single_primary_prone_4outof10";
 	};
