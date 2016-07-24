@@ -2,7 +2,7 @@
 	DayZ Base Building Upgrades
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_ownerID"];
+private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_ownerID","_playerUID"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -18,6 +18,8 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
+
+_playerUID = [player] call FNC_GetPlayerUID;
 
 if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
 
@@ -126,10 +128,10 @@ if ((count _upgrade) > 0) then {
 			};
 			if (DZE_permanentPlot) then {
 				_ownerID = _obj getVariable["ownerPUID","0"];
-				if (_ownerID == "0") then { _ownerID = [player] call FNC_GetPlayerUID; }; //APFL is on but UID is 0 so we will claim it to record the ownership.
+				if (_ownerID == "0") then { _ownerID = _playerUID; }; //APFL is on but UID is 0 so we will claim it to record the ownership.
 				_object setVariable ["ownerPUID",_ownerID,true];
 				if (_lockable == 3) then {
-					_friendsArr = [[([player] call FNC_GetPlayerUID),(name player)]];
+					_friendsArr = [[_playerUID,(name player)]];
 					_object setVariable ["doorfriends", _friendsArr, true];
 					PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_ownerID,_vector],_classname,_obj,player,_friendsArr];
 				} else {
