@@ -16196,23 +16196,23 @@
 			<Russian>Вы можете купить в снаряжение: оружия-%1, пистолетов-%2, инструментов-%3.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_MAGS_FULL">
-			<English>You can only buy %1 magazines in your gear.</English>
+			<English>You can only buy %1 magazines into your gear.</English>
 			<Russian>Вы можете купить предметов в снаряжение: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_FULL">
-			<English>You can only buy %1 backpacks in your gear.</English>
+			<English>You can only buy %1 backpacks into your gear.</English>
 			<Russian>Вы можете купить рюкзаков в снаряжение: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_VEHICLE_WEPS">
-			<English>You can only buy %1 weapons in your vehicle.</English>
+			<English>You can only buy %1 weapons into your vehicle.</English>
 			<Russian>Вы можете купить оружия в ваш автомобиль: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_VEHICLE_MAGS">
-			<English>You can only buy %1 magazines in your vehicle.</English>
+			<English>You can only buy %1 magazines into your vehicle.</English>
 			<Russian>Вы можете купить предметов в ваш автомобиль: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_VEHICLE_BAGS">
-			<English>You can only buy %1 backpacks in your vehicle.</English>
+			<English>You can only buy %1 backpacks into your vehicle.</English>
 			<Russian>Вы можете купить рюкзаков в ваш транспорт: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NEED_BAG">
@@ -16223,15 +16223,15 @@
 			<English>Total backpack space exceeded.</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_WEPS">
-			<English>Only %1 weapons fit in the backpack.</English>
+			<English>Only %1 weapons will fit into your backpack.</English>
 			<Russian>В рюкзак поместится оружия: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_MAGS">
-			<English>Only %1 mags fit in the backpack.</English>
+			<English>Only %1 mags will fit into your backpack.</English>
 			<Russian>В рюкзак поместится предметов: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_BAGS">
-			<English>Only %1 bags fit in the backpack.</English>
+			<English>Only %1 bags will fit into your backpack.</English>
 			<Russian>В рюкзак поместится рюкзаков: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_IN_BACKPACK">
@@ -16257,19 +16257,19 @@
 			<Russian>Продажа завершена.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_SUCCESS">
-			<English>Trade successfull, paid:%1.</English>
+			<English>Trade successfull, you paid:%1.</English>
 			<Russian>Продано! С вас %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_SUCCESS">
-			<English>Trade successfull, received:%1.</English>
+			<English>Trade successfull, you received:%1.</English>
 			<Russian>Продажа завершена. Получено:%1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_COINS">
-			<English>Trade successfull, paid %1 %2.</English>
+			<English>Trade successfull, you paid %1 %2.</English>
 			<Russian>Продано! С вас %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_CHANGE">
-			<English>Trade successfull, received %1 %2</English>
+			<English>Trade successfull, you received %1 %2</English>
 			<Russian>Продажа завершена. Получено %1 %2</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DEBUG">
@@ -16307,7 +16307,7 @@
 			<Russian>Выбрано: %1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_IN">
-			<English>Buying in %1.</English>
+			<English>Buying into %1.</English>
 			<Russian>Покупка в %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_FROM">
@@ -16343,12 +16343,12 @@
 			<Russian>ОШИБКА: Требуется денег: %1 %2 !</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
-			<English>Already on the list</English>
+			<English>That user is already on the list</English>
 			<Russian>Уже в списке друзей</Russian>
 			<German>Schon auf der Liste</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT">
-			<English>Only %1 friends allowed</English>
+			<English>Only %1 friends are allowed</English>
 			<Russian>Можно добавить друзей: %1</Russian>
 			<German>Nur %1 Freunde erlaubt</German>
 		</Key>

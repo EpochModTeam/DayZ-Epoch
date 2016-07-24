@@ -532,7 +532,7 @@ if (_canBuild select 0) then {
 						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
 						if (_lockable == 3) then {
-							_friendsArr = [[([player] call FNC_GetPlayerUID),(name player)]];
+							_friendsArr = [[_playerUID,(name player)]];
 							_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
 							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], _friendsArr];
 						};
@@ -553,7 +553,7 @@ if (_canBuild select 0) then {
 						if (DZE_permanentPlot) then {
 							_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 							if (_canBuild select 1) then {
-								_friendsArr = [[([player] call FNC_GetPlayerUID),(name player)]];
+								_friendsArr = [[_playerUID,(name player)]];
 								_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
 								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector], _friendsArr];
 							} else {
