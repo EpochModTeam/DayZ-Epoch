@@ -28,11 +28,8 @@ class VaultStorageLocked: Land_A_tent {
 	nounderground = 0;
 };
 
-class WeaponHolder_ItemVault: WeaponHolderBase {
+class WeaponHolder_ItemVault: WeaponHolder {
 	scope = public;
-	transportMaxMagazines = 200;
-	transportMaxWeapons = 25;
-	transportMaxBackpacks = 10;
 	displayName = $STR_EPOCH_SAFE;
 	seedItem = "ItemVault";
 };
