@@ -259,7 +259,14 @@ class SnapBuilding {
 		{0, 0, 1.5,"Top"}
 		};
 	};
-	class CinderWall_DZ: Cinder_DZE {};
+	class CinderWall_DZ: Cinder_DZE {
+		points[] = {
+		{0,0,0,"Pivot"},
+		{-2.84, 0, 3.2,"Left"},
+		{2.84, 0, 3.2,"Right"},
+		{0, 0, 3.2,"Top"}
+		};
+	};
 	class CinderWallDoorway_DZ: Cinder_DZE {};
 	class CinderWallDoorLocked_DZ: Cinder_DZE {};
 	class CinderWallDoor_DZ: Cinder_DZE {};
