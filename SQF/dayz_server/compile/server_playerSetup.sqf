@@ -228,7 +228,7 @@ if (!isNil "faco_hook_playerSetup") then {
 	_playerObj call faco_sendSecret;
 };
 
-PVCDZ_plr_Login2 = [_worldspace,_state,_Achievements];
+PVCDZ_plr_Login2 = [_worldspace,_state];
 _clientID = owner _playerObj;
 _clientID publicVariableClient "PVCDZ_plr_Login2";
 _clientID publicVariableClient "PVCDZ_plr_plantSpawner";

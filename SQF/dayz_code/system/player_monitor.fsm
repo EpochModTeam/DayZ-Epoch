@@ -731,15 +731,8 @@ class FSM
                          "" \n
                          "_worldspace = 	PVCDZ_plr_Login2 select 0;" \n
                          "_state =			PVCDZ_plr_Login2 select 1;" \n
-                         "_playerAchievements = PVCDZ_plr_Login2 select 2;" \n
                          "" \n
-                         "dayz_playerAchievements = _playerAchievements;" \n
-                         "	" \n
-                         "PVDZ_serverStoreVar = [player,""Achievements"",_playerAchievements];" \n
-                         "publicVariableServer ""PVDZ_serverStoreVar"";" \n
-                         "diag_log ['Sent to server: PVDZ_serverStoreVar', PVDZ_serverStoreVar]; " \n
-                         "player setVariable [""Achievements"",_playerAchievements,false];" \n
-                         "" \n
+						 "player setVariable [""Achievements"",[],false];" \n
                          "" \n
                          "_setDir = 			_worldspace select 0;" \n
                          "_setPos = 			_worldspace select 1;" \n
