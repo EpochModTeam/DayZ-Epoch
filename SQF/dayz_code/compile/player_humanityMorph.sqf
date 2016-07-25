@@ -82,8 +82,8 @@ player setVariable ["characterID",_charID,true];
 player setVariable ["worldspace",_worldspace];
 player setVariable ["Achievements",_achievements];
 
-player getVariable ["ConfirmedHumanKills",_ConfirmedHumanKills,true];
-player getVariable ["ConfirmedBanditKills",_ConfirmedBanditKills,true];
+player setVariable ["ConfirmedHumanKills",_ConfirmedHumanKills,true];
+player setVariable ["ConfirmedBanditKills",_ConfirmedBanditKills,true];
 player setVariable ["friendlies",_friendlies,true];
 player setVariable ["DZE_display_name",_tagSetting,true];
 
