@@ -199,6 +199,29 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, '10x_303', '10Rnd_303Br
 UPDATE object_data SET Inventory = REPLACE(Inventory, '10x_303', '10Rnd_303British') WHERE INSTR(Inventory, '10x_303') > 0;
 
 -- ----------------------------
+-- Updated raw and cooked meat names from 1.8.7
+-- ----------------------------
+UPDATE `Traders_DATA` SET `item` = '["FoodBeefRaw",1]' WHERE `item` = '["FoodSteakRaw",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'FoodSteakRaw', 'FoodBeefRaw') WHERE INSTR(Backpack, 'FoodSteakRaw') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'FoodSteakRaw', 'FoodBeefRaw') WHERE INSTR(Inventory, 'FoodSteakRaw') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'FoodSteakRaw', 'FoodBeefRaw') WHERE INSTR(Inventory, 'FoodSteakRaw') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["FoodBeefCooked",1]' WHERE `item` = '["FoodSteakCooked",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'FoodSteakCooked', 'FoodBeefCooked') WHERE INSTR(Backpack, 'FoodSteakCooked') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'FoodSteakCooked', 'FoodBeefCooked') WHERE INSTR(Inventory, 'FoodSteakCooked') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'FoodSteakCooked', 'FoodBeefCooked') WHERE INSTR(Inventory, 'FoodSteakCooked') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["FoodBeefRaw",1]' WHERE `item` = '["FoodMeatRaw",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'FoodMeatRaw', 'FoodBeefRaw') WHERE INSTR(Backpack, 'FoodMeatRaw') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'FoodMeatRaw', 'FoodBeefRaw') WHERE INSTR(Inventory, 'FoodMeatRaw') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'FoodMeatRaw', 'FoodBeefRaw') WHERE INSTR(Inventory, 'FoodMeatRaw') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["FoodBeefCooked",1]' WHERE `item` = '["FoodMeatCooked",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'FoodMeatCooked', 'FoodBeefCooked') WHERE INSTR(Backpack, 'FoodMeatCooked') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'FoodMeatCooked', 'FoodBeefCooked') WHERE INSTR(Inventory, 'FoodMeatCooked') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'FoodMeatCooked', 'FoodBeefCooked') WHERE INSTR(Inventory, 'FoodMeatCooked') > 0;
+
+-- ----------------------------
 -- ----------------------------
 -- ----------------------------
 -- ----------------------------
