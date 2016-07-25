@@ -1935,7 +1935,7 @@ class FSM
                         itemno = 106;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Finish'];};" \n
 						"" \n
-						"PVDZ_plr_LoginRecord = [_playerUID,_charID,0,(name vehicle player)];" \n
+						"PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray (name vehicle player)];" \n
 						"" \n
                          "progressLoadingScreen 1;" \n
 						 "" \n

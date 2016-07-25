@@ -228,7 +228,7 @@ dayz_objectUID2 = {
 };
 
 dayz_recordLogin = {
-	private ["_key","_status"];
+	private ["_key","_status","_name"];
 	_key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
 	_key call server_hiveWrite;
 		
@@ -238,7 +238,8 @@ dayz_recordLogin = {
 		case ((_this select 2) == 2): { "LOGGED OUT" };
 	};
 	
-	diag_log format["INFO - Player: %1(UID:%3/CID:%4) Status: %2",(_this select 3),_status,(_this select 0),(_this select 1)];
+	_name = if (typeName (_this select 3) == "ARRAY") then { toString (_this select 3) } else { _this select 3 };
+	diag_log format["INFO - Player: %1(UID:%3/CID:%4) Status: %2",_name,_status,(_this select 0),(_this select 1)];
 };
 
 dayz_reseed = {
