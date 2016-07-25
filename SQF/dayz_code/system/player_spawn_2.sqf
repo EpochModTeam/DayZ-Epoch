@@ -359,15 +359,15 @@ while {1 == 1} do {
 	};
 
 	_startcombattimer = player getVariable["startcombattimer", 0];
-	if (_startcombattimer == 1 || _PlayerNearby) then {
+	if (_startcombattimer == 1) then { //if (_startcombattimer == 1 || _PlayerNearby) then { // do not use _PlayerNearby it makes building impossible, tthis is handled in player_onPause.sqf just fine
 		player setVariable["combattimeout", diag_tickTime + 30, false];
 		player setVariable["startcombattimer", 0, false];
-	} else {
-		if (_ZedsNearby && !_isPZombie) then {
+	}; /* else {
+		if (_ZedsNearby && !_isPZombie) then { //this makes building a nightmare, this is handled in player_onPause.sqf just fine
 			player setVariable["combattimeout", diag_tickTime + 10, false];
 			player setVariable["startcombattimer", 0, false];
 		};
-	};
+	}; */
 	//setGroupIconsVisible [false,false];
 	//clearGroupIcons group player;
 
