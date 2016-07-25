@@ -524,7 +524,7 @@ class RscTitles
 			class RscPicture_1304: RscPictureGUI
 			{
 				idc = 1304;
-				text = "\z\addons\dayz_code\gui\status\status_noise.paa";
+				text = "\z\addons\dayz_code\gui\status\status_ear_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.30 * safezoneH + safezoneY;
 				w = 0.075;
@@ -533,8 +533,26 @@ class RscTitles
 			class RscPicture_1305: RscPictureGUI
 			{
 				idc = 1305;
-				text = "\z\addons\dayz_code\gui\status\status_visible.paa";
+				text = "\z\addons\dayz_code\gui\status\status_eye_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
+				y = 0.37 * safezoneH + safezoneY;
+				w = 0.075;
+				h = 0.10;
+			};
+			class RscPicture_1308: RscPictureGUI
+			{
+				idc = 1308;
+				//text = "\z\addons\dayz_code\gui\status\val_5_ca.paa";
+				x = 0.929813 * safezoneW + safezoneX;
+				y = 0.30 * safezoneH + safezoneY;
+				w = 0.075;
+				h = 0.10;
+			};
+			class RscPicture_1309: RscPictureGUI
+			{
+				idc = 1309;
+				//text = "\z\addons\dayz_code\gui\status\val_5_ca.paa";
+				x = 0.929813 * safezoneW + safezoneX;
 				y = 0.37 * safezoneH + safezoneY;
 				w = 0.075;
 				h = 0.10;
