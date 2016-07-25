@@ -17,7 +17,7 @@ if (isNil "_playerObj") exitWith {
 };
 
 _puid = [_playerObj] call FNC_GetPlayerUID;
-diag_log format["get: %1 (%2), sent: %3 (%4)",typeName _puid, _puid, typeName _playerUID, _playerUID];
+//diag_log format["get: %1 (%2), sent: %3 (%4)",typeName _puid, _puid, typeName _playerUID, _playerUID];
 
 //If the the playerObj exists lets run all sync systems
 
@@ -27,8 +27,11 @@ _Sepsis = _playerObj getVariable["USEC_Sepsis",false];
 _lastDamage = round(diag_ticktime - _lastDamage);
 
 //Readded Logout debug info.
-diag_log format["Player UID#%1 CID#%2 %3 as %4, logged off at %5%6", 
-	getPlayerUID _playerObj, _characterID, _playerObj call fa_plr2str, typeOf _playerObj, 
+diag_log format["INFO - Player: %3(UID:%1/CID:%2) as (%4), logged off at %5%6", 
+	getPlayerUID _playerObj,
+	_characterID,
+	_playerObj call fa_plr2str,
+	typeOf _playerObj,
 	(getPosATL _playerObj) call fa_coor2str,
 	if ((_lastDamage > 5 AND (_lastDamage < 30)) AND ((alive _playerObj) AND (_playerObj distance (getMarkerpos "respawn_west") >= 2000))) then {" while in combat ("+str(_lastDamage)+" seconds left)"} else {""}
 ]; 
@@ -53,7 +56,7 @@ if (_characterID != "?") exitwith {
 	};
 	
 	//Record Player Login/LogOut
-	[_playerUID,_characterID,2] call dayz_recordLogin;
+	[_playerUID,_characterID,2,_playerName] call dayz_recordLogin;
 
 	//if the player object is inside a vehicle lets eject the player
 	if (vehicle _playerObj != _playerObj) then {

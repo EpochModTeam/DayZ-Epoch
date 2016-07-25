@@ -1202,7 +1202,9 @@ class FSM
                         name = "Finish";
                         itemno = 32;
                         init = /*%FSM<STATEINIT""">*/"diag_log 'player_forceSave called from fsm';" \n
-                         "call player_forceSave;"/*%FSM</STATEINIT""">*/;
+						"//call player_forceSave;" \n
+						"" \n
+						"publicVariableServer ""PVDZ_plr_LoginRecord"";"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -1938,16 +1940,23 @@ class FSM
                 {
                         name = "Finish_1";
                         itemno = 106;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Finish'];};PVDZ_plr_LoginRecord = [_playerUID,_charID,0];" \n
+                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Finish'];};" \n
+						"" \n
+						"PVDZ_plr_LoginRecord = [_playerUID,_charID,0,(name vehicle player)];" \n
+						"" \n
                          "progressLoadingScreen 1;" \n
-                         "publicVariableServer ""PVDZ_plr_LoginRecord"";" \n
+						 "" \n
                          "diag_log ['Sent to server: PVDZ_plr_LoginRecord', PVDZ_plr_LoginRecord]; " \n
-                         "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
+                         "" \n
+						 "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
                          "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
-                         "Dayz_logonTown = ""Wilderness"";" \n
+                         "" \n
+						 "Dayz_logonTown = ""Wilderness"";" \n
                          "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
-                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
-                         "dayz_myPosition = getPosATL player;" \n
+                         "" \n
+						 "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
+                         "" \n
+						 "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n
                          "" \n
                          "//Other Counters" \n

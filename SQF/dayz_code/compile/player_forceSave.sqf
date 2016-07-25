@@ -11,6 +11,6 @@ if ((count _magazineArray) > 0) then {
 	publicVariableServer "PVDZ_plr_Save";
 };
 
-diag_log format["Player_forceSave with magazines: %1",_magazineArray];
+//diag_log format["Player_forceSave with magazines: %1",_magazineArray];
 					
 dayz_lastSave = diag_tickTime;

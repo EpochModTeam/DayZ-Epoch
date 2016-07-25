@@ -228,9 +228,17 @@ dayz_objectUID2 = {
 };
 
 dayz_recordLogin = {
-	private "_key";
+	private ["_key","_status"];
 	_key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
 	_key call server_hiveWrite;
+		
+	_status = switch (1==1) do {
+		case ((_this select 2) == 0): { "CLIENT LOADED & PLAYING" };
+		case ((_this select 2) == 1): { "LOGGED IN" };
+		case ((_this select 2) == 2): { "LOGGED OUT" };
+	};
+	
+	diag_log format["INFO - Player: %1(UID:%3/CID:%4) Status: %2",(_this select 3),_status,(_this select 0),(_this select 1)];
 };
 
 dayz_reseed = {

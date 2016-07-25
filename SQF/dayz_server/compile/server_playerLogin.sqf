@@ -2,10 +2,6 @@ private ["_doLoop","_hiveVer","_isHiveOk","_playerID","_playerObj","_primary","_
 
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-#ifdef LOGIN_DEBUG
-diag_log ("STARTING LOGIN: " + str(_this));
-#endif
-
 _playerID = _this select 0;
 _playerObj = _this select 1;
 _playerName = name _playerObj;
@@ -29,10 +25,6 @@ if (_playerID == "") then {
 if ((_playerID == "") or (isNil "_playerID")) exitWith {
 	diag_log ("LOGIN FAILED: Player [" + _playerName + "] has no login ID");
 };
-
-#ifdef LOGIN_DEBUG
-diag_log ("LOGIN ATTEMPT: " + str(_playerID) + " " + _playerName);
-#endif
 
 _endMission = false;
 _timeleft = 0;
@@ -130,19 +122,21 @@ if (!_isNew) then {
 _isHiveOk = if (_hiveVer >= dayz_hiveVersionNo) then {true} else {false}; //EDITED
 
 PVCDZ_plr_Login = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];
-diag_log str(PVCDZ_plr_Login);
 (owner _playerObj) publicVariableClient "PVCDZ_plr_Login";
 
 //Make player wait until ghost timer is up.
 if (_endMission) exitwith {
 	_remaining = dayz_ghostTimer - _timeleft;
-	diag_log format["LOGIN CANCELLED: player: %1 is in ghost mode. Time remianing: %2 before login!!",_playerObj,_remaining];
+	
+	//Log For GhostMode
+	diag_log format["INFO - Player:%1(UID:%2/CID%3) Status: LOGIN CANCELLED, GHOSTMODE. Time remianing: %4",_playerName,_playerID,_charID,_remaining];
+
 	PVCDZ_plr_Ghost = [_remaining];
 	(owner _playerObj) publicVariableClient "PVCDZ_plr_Ghost";
 };
 
 //Record Player Login/LogOut
-[_playerID,_charID,1] call dayz_recordLogin;
+[_playerID,_charID,1,_playerName] call dayz_recordLogin;
 
 PVCDZ_plr_PlayerAccepted = [_playerName,diag_ticktime];
 (owner _playerObj) publicVariableClient "PVCDZ_plr_PlayerAccepted";
