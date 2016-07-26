@@ -11614,13 +11614,13 @@
 			<Czech>Stavba zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_47">
-			<English>Canceled construction of %1 %2.</English>
-			<German>Bau von %1 %2 abgebrochen.</German>
-			<Russian>Отменено строительство %1 %2.</Russian>
+			<English>Canceled construction of %1, %2.</English>
+			<German>Bau von %1, %2 abgebrochen.</German>
+			<Russian>Отменено строительство %1, %2.</Russian>
 			<!-- <Spanish></Spanish> -->
-			<Dutch>Gestopt met het bouwen van %1 %2.</Dutch>
-			<French>La construction de %1 %2 est annulée.</French>
-			<Czech>Stavba %1 %2 byla zrušena.</Czech>
+			<Dutch>Gestopt met het bouwen van %1, %2.</Dutch>
+			<French>La construction de %1, %2 est annulée.</French>
+			<Czech>Stavba %1, %2 byla zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_48">
 			<English>Downgrade already in progress.</English>

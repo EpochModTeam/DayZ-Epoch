@@ -885,7 +885,7 @@ class CinderBlocks: CA_Magazine
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
-			output[] = {{"cinder_wall_kit",1}};
+			output[] = {{"half_cinder_wall_kit",1}};
 			input[] = {{"CinderBlocks",3},{"MortarBucket",1}};
 		};
 		class Crafting1
