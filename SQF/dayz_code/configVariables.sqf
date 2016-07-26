@@ -39,6 +39,7 @@ DZE_HeliLift = true; // Enable Epoch heli lift system
 DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
 DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
 DZE_UI = "vanilla"; //"vanilla","epoch","dark"  UI status icons style. Dark accommodates color blind people.
+DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE to spawn around the map
 MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
