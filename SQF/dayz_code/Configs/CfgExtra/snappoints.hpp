@@ -242,29 +242,38 @@ class SnapBuilding {
 	class Cinder_DZE: FloorsWallsStairs { //All cinder walls and doors
 		points[] = {
 		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.5,"Left"},
-		{2.64, 0, 1.5,"Right"},
+		{-2.64, 0, 1.685,"Left"},
+		{2.64, 0, 1.685,"Right"},
 		{0, 0, 3.37042,"Top"}
 		};
 		radius = 10;
 	};
-	class CinderWall_Preview_DZ: Cinder_DZE {};
+	class CinderWall_Preview_DZ: Cinder_DZE {
+		points[] = {
+		{0,0,0,"Pivot"},
+		{-2.64, 0, 0,"Left"},
+		{2.64, 0, 0,"Right"},
+		{0, 0, 1.685,"Top"},
+		{0,0,-1.685,"Bottom"}
+		};
+	};
 	class CinderWallDoorway_Preview_DZ: Cinder_DZE {};
 	class CinderWallSmallDoorway_Preview_DZ: Cinder_DZE {}; 
 	class CinderWallHalf_Preview_DZ: Cinder_DZE {
 		points[] = {
 		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.5,"Left"},
-		{2.64, 0, 1.5,"Right"},
+		{-2.64, 0, 1.685,"Left"},
+		{2.64, 0, 1.685,"Right"},
 		{0, 0, 1.5,"Top"}
 		};
 	};
 	class CinderWall_DZ: Cinder_DZE {
 		points[] = {
 		{0,0,0,"Pivot"},
-		{-2.84, 0, 3.2,"Left"},
-		{2.84, 0, 3.2,"Right"},
-		{0, 0, 3.2,"Top"}
+		{-2.64, 0, 1.685,"Left"},
+		{2.64, 0, 1.685,"Right"},
+		{0, 0, 3.37042,"Top"},
+		{0,0,-1.685,"Bottom"}
 		};
 	};
 	class CinderWallDoorway_DZ: Cinder_DZE {};
@@ -275,34 +284,33 @@ class SnapBuilding {
 	class CinderWallHalf_DZ: Cinder_DZE {
 		points[] = {
 		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.5,"Left"},
-		{2.64, 0, 1.5,"Right"},
-		{0, 0, 1.5,"Top"}
+		{-2.64, 0, 1.685,"Left"},
+		{2.64, 0, 1.685,"Right"},
+		{0, 0, 1.685,"Top"}
 		};
 	};
 	class CinderWallDoorSmall_DZ: Cinder_DZE {};
 	
-	class MetalFloor_Preview_DZ: FloorsWallsStairs { //fix for broken offsets in ghost
+	class MetalFloor_Preview_DZ: FloorsWallsStairs {
 		points[] = {
 		{0,0,0.011,"Pivot"},
-		{0, -2.64, 0.009,"Back"},
-		{0, 2.64, 0.009,"Front"},
-		{-2.64, 0, 0.009,"Left"},
-		{2.64, 0, 0.009,"Right"}
+		{0, -2.64, 0.025,"Back"},
+		{0, 2.64, 0.025,"Front"},
+		{-2.64, 0, 0.025,"Left"},
+		{2.64, 0, 0.025,"Right"}
 		};
 		radius = 12;
 	};
 	class MetalFloor_DZ: FloorsWallsStairs{
 		points[] = {
 		{0,0,0,"Pivot"},
-		{0, -2.64, 0.15,"Back"},
-		{0, 2.64, 0.15,"Front"},
-		{-2.64, 0, 0.15,"Left"},
-		{2.64, 0, 0.15,"Right"}
+		{0, -2.64, 0.025,"Back"},
+		{0, 2.64, 0.025,"Front"},
+		{-2.64, 0, 0.025,"Left"},
+		{2.64, 0, 0.025,"Right"}
 		};
 		radius = 12;
 	};
-	
 	
 	//Non essential Items that only snap to themselves, do whitelist inheritance if you want these to snap
 	class WoodCrate_DZ {
