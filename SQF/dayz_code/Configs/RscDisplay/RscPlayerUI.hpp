@@ -253,6 +253,25 @@ class RscTitles
 				w = 0.075;
 				h = 0.10;
 			};
+			class RscPicture_1209: RscPictureGUI
+			{
+				idc = 1209;
+				//text = "\z\addons\dayz_code\gui\status\status_combat_border_CA.paa";
+				x = "0.955313 * safezoneW + safezoneX";
+				y = "0.65 * safezoneH + safezoneY";
+				w = 0.06;
+				h = 0.08;
+			};
+			class RscPicture_1909: RscPictureGUI
+			{
+				idc = 1909;
+				//text = "\z\addons\dayz_code\gui\status\status_bg.paa";
+				x = "0.955313 * safezoneW + safezoneX";
+				y = "0.65 * safezoneH + safezoneY";
+				w = 0.06;
+				h = 0.08;
+			};
+
 		};
 		class Controls {
 			class RscPicture_1301: RscPictureGUI
@@ -327,6 +346,14 @@ class RscTitles
 				y = 0.37 * safezoneH + safezoneY;
 				w = 0.075;
 				h = 0.10;
+			};
+			class RscPicture_1308 : RscPictureGUI {
+				idc = 1308;
+				//text = "\z\addons\dayz_code\gui\status\status_combat_inside_ca.paa";
+				x = "0.955313 * safezoneW + safezoneX";
+				y = "0.65 * safezoneH + safezoneY";
+				w = 0.06;
+				h = 0.08;
 			};
 		};
 	};
