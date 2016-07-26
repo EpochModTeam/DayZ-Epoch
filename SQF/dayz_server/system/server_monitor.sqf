@@ -439,11 +439,13 @@ if (_hiveLoaded) then {
 };
 
 [] spawn server_spawnEvents;
+/* //Causes issues with changing clothes
 _debugMarkerPosition = getMarkerPos "respawn_west";
 _debugMarkerPosition = [(_debugMarkerPosition select 0),(_debugMarkerPosition select 1),1];
 _vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
 _vehicle_0 setPos _debugMarkerPosition;
 _vehicle_0 setVariable ["ObjectID","1",true];
+*/
 
 actualSpawnMarkerCount = 0;
 // count valid spawn markers, since different maps have different amounts
