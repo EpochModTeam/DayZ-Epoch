@@ -8,6 +8,7 @@
 [NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. See configVariables.sqf for details @icomrade
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 [NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
+[NEW] If using the vanilla UI you may enable or disable the combat icon with DZE_VanillaUICombatIcon = true/false; @icomrade
 [NEW] Anzio 20mm sniper and RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz

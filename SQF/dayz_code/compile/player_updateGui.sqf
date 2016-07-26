@@ -33,13 +33,13 @@ _ctrlTempBorder ctrlSetTextColor [1,1,1,1];
 
 if (DZE_VanillaUICombatIcon) then {
 	_combatVal = if (player getVariable["combattimeout",0] >= diag_tickTime) then {0} else {1};
-	_ctrlCombatBorder = _display displayCtrl 1209;
+	_ctrlCombatBorder = _display displayCtrl 1909;
 	_ctrlCombat = _display displayCtrl 1308;
-	_ctrlCombatBG = _display displayCtrl 1909;
+	_ctrlCombatBG = _display displayCtrl 1209;
 	_ctrlCombatBorder ctrlSetTextColor [1,1,1,1];
-	_ctrlCombat ctrlSetTextColor		[(Dayz_GUI_R + (0.3 * (1-_combatVal))),(Dayz_GUI_G * _combatVal),(Dayz_GUI_B * _combatVal), 0.5];
-    _ctrlCombatBorder ctrlSetText ("\z\addons\dayz_code\gui\status\status_combat_border_CA.paa");
-    _ctrlCombat ctrlSetText ("\z\addons\dayz_code\gui\status\status_combat_inside_ca.paa");
+	_ctrlCombat ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_combatVal))),(Dayz_GUI_G * _combatVal),(Dayz_GUI_B * _combatVal), 1];
+    _ctrlCombatBorder ctrlSetText ("\z\addons\dayz_code\gui\status\status_combat_border_new_CA.paa");
+    _ctrlCombat ctrlSetText ("\z\addons\dayz_code\gui\status\status_combat_inside_new_ca.paa");
     _ctrlCombatBG ctrlSetText ("\z\addons\dayz_code\gui\status\status_bg.paa");
 };
 _ctrlBlood = _display displayCtrl 1300;
