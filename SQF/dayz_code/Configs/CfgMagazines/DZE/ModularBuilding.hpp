@@ -17,7 +17,7 @@ class metal_floor_kit: CA_Magazine {
 	};
 };
 
-class cinder_wall_kit: CA_Magazine {
+class half_cinder_wall_kit: CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
