@@ -3,8 +3,9 @@ if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith
 private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_started","_finished","_animState","_isMedic","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_playerUID","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_objectHelper","_location1","_object","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
 
 //Check if building already in progress, exit if so.
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
+if (DZE_ActionInProgress || {r_action_count > 0}) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
+r_action_count = r_action_count + 1;
 _pos = [player] call FNC_GetPos;
 
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -38,10 +39,10 @@ DZE_memLeftRight = 0;
 call gear_ui_init;
 closeDialog 1;
 
-if (dayz_isSwimming) exitWith {DZE_ActionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
-if (_inVehicle) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_42" call dayz_rollingMessages;};
-if (_onLadder) exitWith {DZE_ActionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
-if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
+if (dayz_isSwimming) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
+if (_inVehicle) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_epoch_player_42" call dayz_rollingMessages;};
+if (_onLadder) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
+if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
 
 DZE_buildItem = _this; //This is a magazine! It's global to allow access to it from outside functions
 
@@ -86,6 +87,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 if (_abort) exitWith {
 	format[localize "str_epoch_player_135",_reason,_distance] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
+	r_action_count = 0;
 };
 
 _canBuild = [_pos, _this, true] call dze_buildChecks;
@@ -588,3 +590,4 @@ if (_canBuild select 0) then {
 };
 
 DZE_ActionInProgress = false;
+r_action_count = 0;
