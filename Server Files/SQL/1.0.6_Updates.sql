@@ -150,6 +150,15 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemTunaCooked', 'Fish
 UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemTunaCooked', 'FishCookedTuna') WHERE INSTR(Inventory, 'ItemTunaCooked') > 0;
 
 -- ----------------------------
+-- Update new half cinderblock wall class
+-- ----------------------------
+
+UPDATE `Traders_DATA` SET `item` = '["cinder_wall_kit",1]' WHERE `item` = '["half_cinder_wall_kit",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'cinder_wall_kit', 'half_cinder_wall_kit') WHERE INSTR(Backpack, 'cinder_wall_kit') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'cinder_wall_kit', 'half_cinder_wall_kit') WHERE INSTR(Inventory, 'cinder_wall_kit') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'cinder_wall_kit', 'half_cinder_wall_kit') WHERE INSTR(Inventory, 'cinder_wall_kit') > 0;
+
+-- ----------------------------
 -- Updated shotgun ammo names from 1.8.7
 -- ----------------------------
 UPDATE `Traders_DATA` SET `item` = '["2Rnd_12Gauge_Slug",1]' WHERE `item` = '["2Rnd_shotgun_74slug",1]';
