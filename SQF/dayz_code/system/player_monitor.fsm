@@ -32,7 +32,7 @@ item27[] = {"ERROR__Bad_Versi",2,250,325.000000,850.000000,425.000000,900.000000
 item28[] = {"Display_Ready",4,218,-175.000000,1200.000000,-75.000000,1250.000000,0.000000,"Display" \n "Ready"};
 item29[] = {"Preload_Display",2,250,-75.000000,1250.000000,25.000000,1300.000000,0.000000,"Preload" \n "Display"};
 item30[] = {"Preload_Done",4,218,-175.000000,1300.000000,-75.000000,1350.000000,0.000000,"Preload" \n "Done"};
-item31[] = {"Initialize",2,250,-75.000000,1350.000000,25.000000,1400.000000,0.000000,"Initialize"};
+item31[] = {"Initialize",2,4346,-75.000000,1350.000000,25.000000,1400.000000,0.000000,"Initialize"};
 item32[] = {"Finish",1,250,-75.000000,1625.000000,25.000000,1675.000000,0.000000,"Finish"};
 item33[] = {"no_Time_Date",4,218,125.000000,950.000000,225.000000,1000.000000,0.000000,"no Time/Date"};
 item34[] = {"sleep",4,218,525.000000,150.000000,625.000000,200.000000,0.000000,"sleep"};
@@ -108,7 +108,7 @@ item103[] = {"",7,210,-279.000000,371.000000,-271.000000,379.000000,0.000000,""}
 item104[] = {"retry_Login",4,218,-250.000000,350.000000,-150.000000,400.000000,0.000000,"retry Login"};
 item105[] = {"",7,210,-379.000031,471.000000,-371.000000,479.000000,0.000000,""};
 item106[] = {"Finish_1",2,250,-75.000000,1500.000000,25.000000,1550.000000,0.000000,"Finish"};
-item107[] = {"dayz_preloadFini",4,4314,50.000000,1550.000000,150.000000,1600.000000,0.000000,"dayz_preloadFinished"};
+item107[] = {"dayz_preloadFini",4,218,50.000000,1550.000000,150.000000,1600.000000,0.000000,"dayz_preloadFinished"};
 item108[] = {"New_INFECTED_Character",4,218,-271.606934,571.673645,-171.606934,621.673645,5.000000,"New" \n "INFECTED Character" \n "258"};
 item109[] = {"Player_Zombie__S",2,250,-611.348511,641.870300,-521.348145,691.870300,0.000000,"Player Zombie" \n " Selection"};
 item110[] = {"",7,210,-955.744385,664.969482,-947.744385,672.969482,0.000000,""};
@@ -243,8 +243,8 @@ link127[] = {107,32};
 link128[] = {108,109};
 link129[] = {109,110};
 link130[] = {110,64};
-globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-633.732300,669.877075,2180.669678,358.546051,890,1244,1};
-window[] = {2,-1,-1,-1,-1,786,260,1280,260,3,908};
+globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-420.384094,456.528290,1882.460693,656.753967,890,1244,1};
+window[] = {2,-1,-1,-32000,-32000,1270,1052,2072,744,3,908};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -732,7 +732,7 @@ class FSM
                          "_worldspace = 	PVCDZ_plr_Login2 select 0;" \n
                          "_state =			PVCDZ_plr_Login2 select 1;" \n
                          "" \n
-						 "player setVariable [""Achievements"",[],false];" \n
+                         "player setVariable [""Achievements"",[],false];" \n
                          "" \n
                          "_setDir = 			_worldspace select 0;" \n
                          "_setPos = 			_worldspace select 1;" \n
@@ -864,6 +864,7 @@ class FSM
                          "r_player_cardiac = 	player getVariable[""USEC_isCardiac"",false];" \n
                          "r_player_lowblood =	player getVariable[""USEC_lowBlood"",false];" \n
                          "r_player_blood = 		player getVariable[""USEC_BloodQty"",r_player_bloodTotal];" \n
+                         "r_player_timeout = player getVariable[""unconsciousTime"",0];" \n
                          "" \n
                          "//Hunger/Thirst" \n
                          "_messing =			player getVariable[""messing"",[0,0,0]];" \n
@@ -1136,12 +1137,11 @@ class FSM
                          "//Medical" \n
                          "dayz_medicalH = [] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
                          "[player] call fnc_usec_damageHandle;" \n
+                         "" \n
                          "if (r_player_unconscious) then {" \n
-                         "	r_player_timeout = player getVariable[""unconsciousTime"",0];" \n
                          "	player playActionNow ""Die"";" \n
+                         "	[player,r_player_timeout] call fnc_usec_damageUnconscious;" \n
                          "};" \n
-                         "" \n
-                         "" \n
                          "" \n
                          "//Add core tools" \n
                          "player addWeapon ""Loot"";" \n
@@ -1170,8 +1170,7 @@ class FSM
                          "" \n
                          "{ _x call fnc_veh_ResetEH; } forEach vehicles;" \n
                          "player allowDamage true;" \n
-                         "player enableSimulation true;" \n
-                         ""/*%FSM</STATEINIT""">*/;
+                         "player enableSimulation true;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -1195,9 +1194,9 @@ class FSM
                         name = "Finish";
                         itemno = 32;
                         init = /*%FSM<STATEINIT""">*/"diag_log 'player_forceSave called from fsm';" \n
-						"//call player_forceSave;" \n
-						"" \n
-						"publicVariableServer ""PVDZ_plr_LoginRecord"";"/*%FSM</STATEINIT""">*/;
+                         "//call player_forceSave;" \n
+                         "" \n
+                         "publicVariableServer ""PVDZ_plr_LoginRecord"";"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -1934,22 +1933,28 @@ class FSM
                         name = "Finish_1";
                         itemno = 106;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Finish'];};" \n
-						"" \n
-						"PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray (name vehicle player)];" \n
-						"" \n
+                         "" \n
+                         "PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray (name vehicle player)];" \n
+                         "" \n
+                         "if (r_player_unconscious) then {" \n
+                         "	r_player_timeout = player getVariable[""unconsciousTime"",0];" \n
+                         "	player playActionNow ""Die"";" \n
+                         "	[player,r_player_timeout] call fnc_usec_damageUnconscious;" \n
+                         "};" \n
+                         "" \n
                          "progressLoadingScreen 1;" \n
-						 "" \n
+                         "" \n
                          "diag_log ['Sent to server: PVDZ_plr_LoginRecord', PVDZ_plr_LoginRecord]; " \n
                          "" \n
-						 "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
+                         "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
                          "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
                          "" \n
-						 "Dayz_logonTown = ""Wilderness"";" \n
+                         "Dayz_logonTown = ""Wilderness"";" \n
                          "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
                          "" \n
-						 "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
+                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
                          "" \n
-						 "dayz_myPosition = getPosATL player;" \n
+                         "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n
                          "" \n
                          "//Other Counters" \n

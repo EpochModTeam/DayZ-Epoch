@@ -225,6 +225,7 @@ if (_hit in USEC_MinorWounds) then {
 if (_unit == player) then {
 //Set player in combat
     _unit setVariable["startcombattimer", 1];
+	_unit setVariable["inCombat", 1, true];
 };
 
 //Shake the cam, frighten them!

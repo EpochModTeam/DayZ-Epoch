@@ -25,6 +25,7 @@ _characterID = _playerObj getVariable["characterID", "?"];
 _lastDamage = _playerObj getVariable["noatlf4",0];
 _Sepsis = _playerObj getVariable["USEC_Sepsis",false];
 _lastDamage = round(diag_ticktime - _lastDamage);
+_inCombat = _playerObj getVariable ["inCombat", 0];
 
 //Readded Logout debug info.
 diag_log format["INFO - Player: %3(UID:%1/CID:%2) as (%4), logged off at %5%6", 
@@ -64,12 +65,12 @@ if (_characterID != "?") exitwith {
 	};
 	
 	//Punish combat log
-	if ((_lastDamage > 5 && {_lastDamage < 30}) && {alive _playerObj && (_playerObj distance (getMarkerpos "respawn_west") >= 2000)}) then {
+	if ((_inCombat > 0) && {alive _playerObj && (_playerObj distance (getMarkerpos "respawn_west") >= 2000)}) then {
 		_playerObj setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
 		_playerObj setVariable ["unconsciousTime",150,true]; // Set knock out timer to 150 seconds
 		//_playerObj setVariable ["USEC_injured",true]; // Set status to bleeding
 		//_playerObj setVariable ["USEC_BloodQty",3000]; // Set blood to 3000
-		diag_log format["PLAYER COMBAT LOGGED: %1(%4) (with %2s combat time remaining) at location %3",_playerName,_lastDamage,_playerPos,_playerUID];
+		diag_log format["PLAYER COMBAT LOGGED: %1(%3) at location %2",_playerName,_playerPos,_playerUID];
 		_message = format["PLAYER COMBAT LOGGED: %1",_playerName];
 		[nil, nil, rTitleText, _message, "PLAIN"] call RE; // Message whole server
 	};

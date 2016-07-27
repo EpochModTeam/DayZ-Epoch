@@ -65,6 +65,7 @@ player setVariable ["USEC_isCardiac",false,true];
 player setVariable ["medForceUpdate",true,true];
 player setVariable ["bloodTaken", false, true];
 player setVariable ["startcombattimer", 0]; //remove combat timer on death
+player setVariable ["inCombat", 0, true];
 r_player_unconscious = false;
 r_player_cardiac = false;
 _model = typeOf player;
