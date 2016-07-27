@@ -2,7 +2,7 @@ private ["_item","_picture","_class","_display","_transportMaxWeapons","_transpo
 ,"_buyCurrency","_sellCurrency","_formattedText","_picBuy","_picSell"
 ];
 
-#include "defines.sqf";
+#include "defines.hpp"
 
 _item = _this select 0;
 

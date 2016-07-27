@@ -9,7 +9,7 @@
 *	Fills up the sell or buy list if the item has a valid config.
 **/
 private ["_weaps","_mags","_extraText","_all","_total","_arrayOfTraderCat","_totalPrice","_ctrltext","_backUpText","_bags"];
-#include "defines.sqf";
+#include "defines.hpp"
 
 _weaps = _this select 0;
 _mags = _this select 1;

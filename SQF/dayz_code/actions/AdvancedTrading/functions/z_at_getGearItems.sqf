@@ -4,7 +4,7 @@
 *	Gets all your items stored in your gear and innitiates the selling list.
 **/
 private ["_mags","_weaps","_skin","_formattedText","_bag","_bags"];
-#include "defines.sqf";
+#include "defines.hpp"
 call Z_clearLists;
 Z_SellArray = [];
 Z_SellableArray = [];

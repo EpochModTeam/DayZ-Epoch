@@ -1,5 +1,5 @@
 private ['_item','_picture','_class','_display','_buyPrice','_sellPrice','_formattedText','_buyCurrency','_sellCurrency','_compatible','_weapon','_attach','_config','_compatibleText','_type','_text'];
-#include "defines.sqf";
+#include "defines.hpp"
 _item = _this select 0;
 _picture = _item select 4;
 _class = _item select 0;

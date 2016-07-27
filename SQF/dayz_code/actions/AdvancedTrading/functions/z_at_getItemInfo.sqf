@@ -19,7 +19,7 @@ if(_selectedIndex >= 0) then {
 			_item = Z_SellArray select _selectedIndex;
 		};
 		case 'buyable': {
-			_item = Z_BuyableArray select _selectedIndex;	
+			_item = Z_BuyableArray select _selectedIndex;
 		};
 		case 'buying': {
 			_item = Z_BuyingArray select _selectedIndex;

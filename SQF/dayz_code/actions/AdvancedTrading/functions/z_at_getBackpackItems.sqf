@@ -3,7 +3,7 @@
 *
 *	Gets all your items stored in your backpack and innitiates the selling list.
 **/
-#include "defines.sqf";
+#include "defines.hpp"
 private ["_backpack","_pic","_formattedText","_mags","_weaps","_normalMags","_normalWeaps","_kinds","_kinds2","_ammmounts","_ammmounts2","_ctrltext"];
 call Z_clearLists;
 Z_SellableArray = [];

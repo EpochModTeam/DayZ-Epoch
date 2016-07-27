@@ -1,5 +1,5 @@
 
-#include "defines.sqf";
+#include "defines.hpp"
 private ['_item', '_type'];
 _item = _this select 0;
 _type = _item select 1;

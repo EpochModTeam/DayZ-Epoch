@@ -1,5 +1,5 @@
 private ["_categoryName","_categoryNumber"];
-#include "defines.sqf";
+#include "defines.hpp"
 
 _categoryName = lbText [Z_AT_BUYABLELIST,_this];
 {

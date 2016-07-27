@@ -3,7 +3,7 @@ private ['_item', '_type','_picture',"_class","_display","_transportMaxWeapons",
 "_weapons2","_config","_wepText","_turret","_text"
 ];
 
-#include "defines.sqf";
+#include "defines.hpp"
 
 _item = _this select 0;
 

@@ -3,20 +3,20 @@
 *
 *	Switches between selling and buying and the item container (gear/vehicle/bakcpack) and initiates item loading.
 **/
-private ["_lbIndex","_formattedText","_canBuyInVehicle"];
-#include "defines.sqf";
+private ["_lbIndex","_canBuyInVehicle"];
+#include "defines.hpp"
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetText format["0 / 0 / 0"];
-call Z_clearBuyingList;
+if (Z_Selling) then {
+	call Z_clearBuyingList;
+	Z_BuyingArray = [];
+};
 call Z_clearLists;
 Z_SellableArray = [];
 Z_SellArray = [];
-Z_BuyingArray = [];
 
 _lbIndex = _this select 0;
 
-_formattedText = format [''];
-
-(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText parseText _formattedText;
+(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText parseText "";
 
 call Z_calcPrice;
 
@@ -39,13 +39,9 @@ if(Z_Selling)then{
 		};
 	};
 }else{
-	_ctrltext = format[" "];
-	ctrlSetText [Z_AT_TRADERLINE2, _ctrltext];
-
-	_ctrltext = localize "STR_EPOCH_TRADE_SELLING_ALL";
-	ctrlSetText [Z_AT_TRADERLINE1, _ctrltext];
+	ctrlSetText [Z_AT_TRADERLINE2, " "];
+	ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_TRADE_SELLING_ALL"];
 	switch (_lbIndex) do {
-
 		case 0: {
 			Z_SellingFrom = 0;
 			[localize "STR_EPOCH_TRADE_BUYING_BACKPACK"] call Z_filleTradeTitle;

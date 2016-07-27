@@ -1,7 +1,6 @@
 private "_index";
-#include "defines.sqf";
+#include "defines.hpp"
 call Z_clearBuyList;
-call Z_clearBuyingList;
 
 {
 	_index = lbAdd [Z_AT_BUYABLELIST,_x select 0];

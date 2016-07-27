@@ -4,7 +4,7 @@
 *	Calculate the total price for single currency.
 **/
 private ["_sellPrice","_ctrltext"];
-#include "defines.sqf";
+#include "defines.hpp"
 
 _sellPrice = 0;
 

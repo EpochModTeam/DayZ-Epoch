@@ -3,7 +3,7 @@
 *
 *	Gets all your items stored in your vehicle and innitiates the selling list.
 **/
-#include "defines.sqf";
+#include "defines.hpp"
 Z_vehicle = objNull;
 call Z_clearLists;
 Z_SellableArray = [];

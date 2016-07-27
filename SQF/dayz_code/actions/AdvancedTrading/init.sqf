@@ -11,7 +11,7 @@ if(DZE_ActionInProgress) exitWith { localize "str_player_actionslimit" call dayz
 if(isNil "Z_AdvancedTradingInit")then{
 
 	//#include "config.sqf"; // Moved to dayz_code/configVariables.sqf
-	#include "\z\addons\dayz_code\actions\AdvancedTrading\functions\defines.sqf";
+	#include "\z\addons\dayz_code\actions\AdvancedTrading\functions\defines.hpp"
 
 	/* Configs that needs to be defined but not changed in config file */
 
@@ -106,6 +106,8 @@ if(isNil "Z_AdvancedTradingInit")then{
 
 Z_Selling = true; // Always start menu in buy mode (flipped in z_at_changeBuySell.sqf on startup)
 Z_CategoryView = true; // Always start in category view
+Z_BuyingArray = [];
+Z_ResetContainer = true;
 createDialog "AdvancedTrading";
 
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_REMOVESELLITEMBUTTON) ctrlSetText " < ";

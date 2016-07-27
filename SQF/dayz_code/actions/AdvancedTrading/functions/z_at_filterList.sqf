@@ -9,6 +9,7 @@
 if(count _this > 0) then {
 	_query = _this select 0;  // the search string.
 	if(Z_Selling)then {
+		if (count Z_SellArray > 0) exitWith {}; //Do not filter if items already in selling list (dupes)
 		if(isNil '_query' || _query == "") then {
 			_newSellArray = [];
 			{

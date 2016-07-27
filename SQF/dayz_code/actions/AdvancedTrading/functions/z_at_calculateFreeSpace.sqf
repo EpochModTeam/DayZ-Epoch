@@ -1,7 +1,7 @@
 private["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBackpacks","_allowedTools","_allowedPrimary","_allowedSidearm","_formattedText","_pic"
 ,"_backpack","_vehicleWeapons","_vehicleMagazines","_vehicleBackpacks","_tempWeaponsArray","_tempBackpackArray","_tempMagazinesArray","_actualMags"
 ,"_normalMags","_normalWeaps","_kinds","_kinds2","_amounts","_amounts2","_counter"];
-#include "defines.sqf";
+#include "defines.hpp"
 
 _selection = _this select 0;
 _returnArray = [0,0,0];
@@ -11,11 +11,11 @@ if(_selection == 2) then{ //gear
 	// 12 toolbelt + 1 Binoculars + 1 NVG + 1 Pistol + 1 Primary (onBack isn't counted in weapons player)
 	_allowedWeapons = 16 - count(weapons player);
 
-	_pic = getText (configFile >> 'CfgVehicles' >> (typeOf player) >> 'picture');
-
+	_pic = getText (configFile >> 'CfgVehicles' >> (typeOf player) >> 'portrait');
 	_formattedText = format [
-		"<img image='%1'  size='3' align='center'/>"
-		, _pic
+		"<t size='1' align='center' color='#ffffff'>%2</t><br />" +
+		"<img image='%1' size='3' align='center'/><br />"
+		, _pic, localize "STR_UI_GEAR"
 	];
 
 	(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText _formattedText;
