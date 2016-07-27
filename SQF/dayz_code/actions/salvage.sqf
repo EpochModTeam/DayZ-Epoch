@@ -47,10 +47,10 @@ if (_hasToolbox) then {
 		//Remove melee magazines (BIS_fnc_invAdd fix)
 		{player removeMagazines _x} count MeleeMagazines;
 		_damage = [_vehicle,_hitpoint] call object_getHit;
-		if (_damage < 0.10) then {
+		if (_damage < 1) then {
 			_BreakableParts = ["HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass","HitEngine","HitFuel","HitHRotor"];
 			if (_hitpoint in _BreakableParts) then {
-				if ((random 1) < 0.3) then {
+				if ((random 1) < (_damage * 0.9)) then { //max 90% change to break
 					_isOK = true;
 					_brokenPart = true;
 				} else {
