@@ -57,7 +57,7 @@ if (_is6WheelType) then {
 
 		//get every damaged part no matter how tiny damage is!
 		_damagePercent = str(round(_damage * 100))+"% Damage";
-		if (_damage < 0.10) then {
+		if (_damage < 1) then {
 			if ((_damage >= 0) and (_damage <= 0.25)) then {_color = "color='#00ff00'";}; //green
 			if ((_damage >= 0.26) and (_damage <= 0.50)) then {_color = "color='#ffff00'";}; //yellow
 			if ((_damage >= 0.51) and (_damage <= 0.75)) then {_color = "color='#ff8800'";}; //orange
