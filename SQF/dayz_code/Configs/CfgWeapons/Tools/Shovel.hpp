@@ -16,7 +16,7 @@ class ItemShovel : ItemCore
 		class Build
 		{
 			text = "Build Sandbag Fence";
-			script = "spawn player_build; r_action_count = r_action_count + 1;";
+			script = "spawn player_build;"; //r_action_count = r_action_count + 1; set in sqf
 			require[] = {"ItemShovel"};
 			consume[] = {"ItemSandbag"};
 			create = "Sandbag1_DZ";

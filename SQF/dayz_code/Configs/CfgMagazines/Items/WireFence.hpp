@@ -14,7 +14,7 @@ class ItemWire : CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build; r_action_count = r_action_count + 1;";
+			script = "spawn player_build;"; //r_action_count = r_action_count + 1; set in sqf
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemWire"};
 			create = "Fort_RazorWire"; // 1.8.7 uses Wire_cat1

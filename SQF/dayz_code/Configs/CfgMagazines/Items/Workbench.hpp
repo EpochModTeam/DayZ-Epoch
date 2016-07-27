@@ -12,7 +12,7 @@ class ItemWorkBench : CA_Magazine
 	class ItemActions {
 		class Build {
 			text = $STR_BLD_build_ItemWorkBench;//"place WorkBench"
-			script = "spawn player_build; r_action_count = r_action_count + 1;";
+			script = "spawn player_build;"; //r_action_count = r_action_count + 1; set in sqf
 			require[] = {};
 			consume[] = {"ItemWorkBench"};
 			create = "WorkBench";

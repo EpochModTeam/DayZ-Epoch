@@ -14,7 +14,7 @@ class ItemSandbag : CA_Magazine
 		class Build
 		{
 			text = $STR_ACTION_BUILD;
-			script = "spawn player_build; r_action_count = r_action_count + 1;";
+			script = "spawn player_build;"; //r_action_count = r_action_count + 1; set in sqf
 			require[] = {"ItemEtool"};
 			consume[] = {"ItemSandbag"};
 			create = "Sandbag1_DZ";
@@ -24,7 +24,7 @@ class ItemSandbag : CA_Magazine
 		class Build2
 		{
 			text = $STR_CREATE_STASH;
-			script = "; [_id,'Build2'] spawn player_build; r_action_count = r_action_count + 1;";
+			script = "; [_id,'Build2'] spawn player_build;"; //r_action_count = r_action_count + 1; set in sqf
 			require[] = {"ItemEtool"};
 			consume[] = {"ItemSandbag"};
 			create = "StashSmall";
