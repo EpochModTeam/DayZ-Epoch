@@ -20,7 +20,7 @@ class ItemSandbag : CA_Magazine
 			create = "Sandbag1_DZ";
 			byPass = "byPassRoadCheck";
 		};
-		
+		/*
 		class Build2
 		{
 			text = $STR_CREATE_STASH;
@@ -28,7 +28,8 @@ class ItemSandbag : CA_Magazine
 			require[] = {"ItemEtool"};
 			consume[] = {"ItemSandbag"};
 			create = "StashSmall";
-		};
+		}; 
+		*/
 		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_273;
