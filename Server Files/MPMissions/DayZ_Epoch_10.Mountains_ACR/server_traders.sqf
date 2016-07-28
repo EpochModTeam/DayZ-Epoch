@@ -1,2 +1,1 @@
-// DayZ Epoch NO TRADERS
-serverTraders = [];
+#include "\z\addons\dayz_code\system\mission\server_traders\mountains_acr.sqf"
