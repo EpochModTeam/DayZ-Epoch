@@ -1944,7 +1944,7 @@ class FSM
                          "" \n
                          "progressLoadingScreen 1;" \n
                          "" \n
-                         "diag_log ['Sent to server: PVDZ_plr_LoginRecord', PVDZ_plr_LoginRecord]; " \n
+                         "diag_log format ['Sent to server PVDZ_plr_LoginRecord: [%1, %2, %3, %4]',_playerUID,_charID,0,(name vehicle player)]; " \n
                          "" \n
                          "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
                          "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
