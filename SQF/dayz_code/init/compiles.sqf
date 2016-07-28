@@ -55,6 +55,7 @@ if (!isDedicated) then {
 	player_alertZombies = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_alertZombies.sqf";
 	player_fireMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
 	player_countMagazines = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_countMagazines.sqf";
+	player_countMagazinesWBackpack = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_countMagazinesWBackpack.sqf";
 	player_forceSave = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_forceSave.sqf";
 	//player_destroyTent = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_destroyTent.sqf";
 	vehicle_getOut = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_getOut.sqf";
@@ -355,6 +356,42 @@ if (!isDedicated) then {
 		//systemChat str [ "nutrition, r_player_bloodregen+=",_baseRegen,"dayz_nutrition+=", _calorieCount, "dayz_thirst+=", _thirstCount, "dayz_hunger+=", _hungerCount ];
 		//systemChat format ["%6, Nutrition add: %1, Nutrition Total: %2, Thirst: %3, Hunger: %4, dayz_temperatur: %5",_this,dayz_nutrition,dayz_thirst,dayz_hunger,dayz_temperatur];
 		//diag_log format ["%6, Nutrition add: %1, Nutrition Total: %7/%2, Thurst: %3, Hunger: %4, BloodRegen: %5",_this,r_player_Nutrition,_Thirst,_Hunger,_bloodregen,_type,_golbalNutrition];
+	};
+
+	gearDialog_create = {
+		private ["_i","_dialog"];
+		if (!isNull (findDisplay 106)) then {
+			(findDisplay 106) closeDisplay 0;
+		};
+		if (isNil "gear_done") then { gear_done = false; };
+		openMap false;
+		closeDialog 0;
+		if (gear_done) then {uisleep 0.001;};
+		player action ["Gear", player];
+		if (gear_done) then {uisleep 0.001;};
+		_dialog = findDisplay 106;
+		_i = 0;
+		while {isNull _dialog} do {//DO NOT CHANGE TO A FOR LOOP!
+			_i = _i + 1;
+			_dialog = findDisplay 106;
+			if (gear_done) then {uisleep 0.001;};
+			if (_i in [100,200,299]) then {
+				closeDialog 0;
+				player action ["Gear", player];
+			};
+			if (_i > 300) exitWith {};
+		};
+		if (gear_done) then {uisleep 0.001;};
+		_dialog = findDisplay 106;
+		if ((parseNumber(_this select 0)) != 0) then {
+			ctrlActivate (_dialog displayCtrl 157);
+			if (gear_done) then {
+				waitUntil {ctrlShown (_dialog displayCtrl 159)};
+				uisleep 0.001;
+			};
+		};
+		gear_done = true;
+		_dialog
 	};
 
 	gear_ui_offMenu = {
