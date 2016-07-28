@@ -128,9 +128,9 @@ if (!isNil "_newBackpackType") then {
 			_backpackWpnQtys = _backpackWpn select 1;
 		};
 		[] call _switchUnit;
-		uiSleep 0.001;
+		if (gear_done) then {Sleep 0.001;};
 		["1"] call gearDialog_create;
-		uiSleep 0.001;
+		if (gear_done) then {Sleep 0.001;};
 		//magazines
 		_countr = 0;
 		{
@@ -151,7 +151,7 @@ if (!isNil "_newBackpackType") then {
 			};
 		} count _backpackMag;
 		(findDisplay 106) closeDisplay 0;
-		if (gear_done) then {uiSleep 0.001; disableUserInput false;};
+		if (gear_done) then {Sleep 0.001; disableUserInput false;};
 		_countr = 0;
 		{
 

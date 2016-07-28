@@ -366,28 +366,28 @@ if (!isDedicated) then {
 		if (isNil "gear_done") then { gear_done = false; };
 		openMap false;
 		closeDialog 0;
-		if (gear_done) then {uisleep 0.001;};
+		if (gear_done) then {sleep 0.001;};
 		player action ["Gear", player];
-		if (gear_done) then {uisleep 0.001;};
+		if (gear_done) then {sleep 0.001;};
 		_dialog = findDisplay 106;
 		_i = 0;
 		while {isNull _dialog} do {//DO NOT CHANGE TO A FOR LOOP!
 			_i = _i + 1;
 			_dialog = findDisplay 106;
-			if (gear_done) then {uisleep 0.001;};
+			if (gear_done) then {sleep 0.001;};
 			if (_i in [100,200,299]) then {
 				closeDialog 0;
 				player action ["Gear", player];
 			};
 			if (_i > 300) exitWith {};
 		};
-		if (gear_done) then {uisleep 0.001;};
+		if (gear_done) then {sleep 0.001;};
 		_dialog = findDisplay 106;
 		if ((parseNumber(_this select 0)) != 0) then {
 			ctrlActivate (_dialog displayCtrl 157);
 			if (gear_done) then {
 				waitUntil {ctrlShown (_dialog displayCtrl 159)};
-				uisleep 0.001;
+				sleep 0.001;
 			};
 		};
 		gear_done = true;
