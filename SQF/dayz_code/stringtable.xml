@@ -16253,23 +16253,23 @@
 			<English>Sold %1 items from your gear</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESSFUL">
-			<English>Trade successfull.</English>
+			<English>Trade successful.</English>
 			<Russian>Продажа завершена.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_SUCCESS">
-			<English>Trade successfull, you paid:%1.</English>
+			<English>Trade successful, you paid:%1.</English>
 			<Russian>Продано! С вас %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_SUCCESS">
-			<English>Trade successfull, you received:%1.</English>
+			<English>Trade successful, you received:%1.</English>
 			<Russian>Продажа завершена. Получено:%1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_COINS">
-			<English>Trade successfull, you paid %1 %2.</English>
+			<English>Trade successful, you paid %1 %2.</English>
 			<Russian>Продано! С вас %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_CHANGE">
-			<English>Trade successfull, you received %1 %2</English>
+			<English>Trade successful, you received %1 %2</English>
 			<Russian>Продажа завершена. Получено %1 %2</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DEBUG">
