@@ -16257,12 +16257,12 @@
 			<Russian>Продажа завершена.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_SUCCESS">
-			<English>Trade successful, you paid:%1.</English>
+			<English>Trade successful, you paid: %1.</English>
 			<Russian>Продано! С вас %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_SUCCESS">
-			<English>Trade successful, you received:%1.</English>
-			<Russian>Продажа завершена. Получено:%1</Russian>
+			<English>Trade successful, you received: %1.</English>
+			<Russian>Продажа завершена. Получено: %1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_COINS">
 			<English>Trade successful, you paid %1 %2.</English>

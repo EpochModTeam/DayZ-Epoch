@@ -92,27 +92,60 @@ _silver_1oz = (_silver_1oz_a - _silver_1oz_b);
 { //sort gems so they display on total price in order of descending worth
 	if (!isNil {call compile format["_%1",_x]} && {(call compile format["_%1",_x]) > 0}) then {
 	_dname = getText (configFile >> 'CfgMagazines' >> _x >> 'displayName');
-	_string = format["%2 %1 %3",(call compile format["_%1",_x]), _string,_dname];
+		if (_string == "") then {
+			_string = format["%1 %2",(call compile format["_%1",_x]),_dname];
+		} else {
+			_string = format["%2 %1 %3",(call compile format["_%1",_x]),_string,_dname];
+		};
 	};
 } count DZE_GemList;
 
-if (_briefcase_100oz >= 2) then { 
-	_string = format["%2 %1 %3s",_briefcase_100oz,_string,localize "STR_EPOCH_BRIEFCASE"]; 
+if (_briefcase_100oz >= 2) then {
+	if (_string == "") then {
+		_string = format["%1 %2s",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"];
+	} else {
+		_string = format["%2 %1 %3s",_briefcase_100oz,_string,localize "STR_EPOCH_BRIEFCASE"];
+	};
 };
+
 if (_briefcase_100oz == 1) then {
-	_string = format["%2 %1 %3",_briefcase_100oz,_string,localize "STR_EPOCH_BRIEFCASE"]; 
+	if (_string == "") then {
+		_string = format["%1 %2",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"];
+	} else {
+		_string = format["%2 %1 %3",_briefcase_100oz,_string,localize "STR_EPOCH_BRIEFCASE"];
+	};
 };
+
 if (_gold_10oz > 0) then {
-	_string = format["%2 %1 %3",_gold_10oz,_string,localize "STR_EPOCH_10OZGOLD"];
+	if (_string == "") then {
+		_string = format["%1 %2",_gold_10oz,localize "STR_EPOCH_10OZGOLD"];
+	} else {
+		_string = format["%2 %1 %3",_gold_10oz,_string,localize "STR_EPOCH_10OZGOLD"];
+	};
 };
+
 if (_gold_1oz > 0) then {
-	_string = format["%2 %1 %3",_gold_1oz,_string,localize "STR_EPOCH_GOLD"];
+	if (_string == "") then {
+		_string = format["%1 %2",_gold_1oz,localize "STR_EPOCH_GOLD"];
+	} else {
+		_string = format["%2 %1 %3",_gold_1oz,_string,localize "STR_EPOCH_GOLD"];
+	};
 };
+
 if (_silver_10oz > 0) then {
-	_string = format["%2 %1 %3",_silver_10oz,_string,localize "STR_EPOCH_10OZSILVER"];
+	if (_string == "") then {
+		_string = format["%1 %2",_silver_10oz,localize "STR_EPOCH_10OZSILVER"];
+	} else {
+		_string = format["%2 %1 %3",_silver_10oz,_string,localize "STR_EPOCH_10OZSILVER"];
+	};
 };
+
 if (_silver_1oz > 0) then {
-	_string = format["%2 %1 %3",_silver_1oz, _string,localize "STR_EPOCH_SILVER"];
+	if (_string == "") then {
+		_string = format["%1 %2",_silver_1oz,localize "STR_EPOCH_SILVER"];
+	} else {
+		_string = format["%2 %1 %3",_silver_1oz,_string,localize "STR_EPOCH_SILVER"];
+	};
 };
 
 _string
