@@ -17,9 +17,8 @@ _skin = typeOf player;
 _pic = getText (configFile >> 'CfgVehicles' >> _skin >> 'portrait');
 
 _formattedText = format [
-	"<t size='1' align='center' color='#ffffff'>%2</t><br />" +
-	"<img image='%1' size='3' align='center'/><br />"
-	, _pic, localize "STR_UI_GEAR"
+	"<img image='%1' size='3' align='center'/>"
+	, _pic
 ];
 
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText _formattedText;
