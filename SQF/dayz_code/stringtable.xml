@@ -3938,12 +3938,12 @@
 			<Czech>Konzervované sardinky. Při správném skladování vydrží i pět let.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_28">
-			<English>Can (Frank &amp; Beans)</English>
+			<English>Can (Frank and Beans)</English>
 			<German>Dose (Bohnen und Würste)</German>
 			<Russian>Банка (Фасоль с мясом)</Russian>
-			<Spanish>Lata (Frank &amp; Beans)</Spanish>
+			<Spanish>Lata (Frank and Beans)</Spanish>
 			<French>Conserve (William Saurien)</French>
-			<Czech>Plechovka (Frank &amp; Beans)</Czech>
+			<Czech>Plechovka (Frank and Beans)</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_28">
 			<English>Canned Beans and Sausages used for sustenance. Lasts well over five years if stored correctly.</English>
@@ -8966,7 +8966,7 @@
 			<German>Zahlenschloss</German>
 		</Key>
 		<Key ID="STR_BLD_desc_ItemPadlock">
-			<English>Padlock - Used for securing Workshop&apos;s &amp; Houses.</English>
+			<English>Padlock - Used for securing Workshop&apos;s and Houses.</English>
 			<Russian>Используется для запирания зданий.</Russian>
 			<French>Un cadenas pour protéger portes/portails</French>
 			<Czech>Tento visací zámek lze využít pro zabezpečení dílen a domů.</Czech>

@@ -16,7 +16,7 @@ _itemsCheckArray = [];
 _itemsToLog = [[],[],[],"sell"];
 
 _sellVehicle = {
-	private ["_distance","_damage","_tireDmg","_tires","_okToSell","_returnInfo","_textPartIn","_obj","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_part_in","_qty_in","_activatingPlayer","_objects","_qty","_vehicle"];
+	private ["_distance","_damage","_tireDmg","_tires","_okToSell","_returnInfo","_obj","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_part_in","_qty_in","_activatingPlayer","_objects","_qty","_vehicle"];
 	_vehicle = _this select 0;
 	_sellType = _this select 1;
 	_part_in = typeOf _vehicle;
