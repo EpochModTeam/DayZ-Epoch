@@ -6,5 +6,5 @@ class ItemPadlock: CA_Magazine
 	displayName = $STR_BLD_name_ItemPadlock;//"Padlock"
 	picture = "\z\addons\dayz_buildings\equip\padlock.paa";
 	model = "z\addons\dayz_buildings\models\padlock.p3d";
-	descriptionShort = $STR_BLD_desc_ItemPadlock;//"Padlock - Used for securing Workshop's & Houses."
+	descriptionShort = $STR_BLD_desc_ItemPadlock;//"Padlock - Used for securing Workshop's and Houses."
 };
