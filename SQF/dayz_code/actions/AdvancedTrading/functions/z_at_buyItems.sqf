@@ -222,7 +222,7 @@ if(_enoughMoney) then {
 			if (_success) then {
 				_tCost = "";
 				_tCost = _priceToBuy call z_calcDefaultCurrencyNoImg;
-				systemChat format[localize "STR_EPOCH_TRADE_BUY_SUCCESS", _tCost];
+				if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_BUY_SUCCESS",_tCost]; };
 			} else {
 				systemChat localize "STR_EPOCH_TRADE_DEBUG";
 			};

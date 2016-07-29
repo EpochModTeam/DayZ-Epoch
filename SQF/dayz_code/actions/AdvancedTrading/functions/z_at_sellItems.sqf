@@ -56,7 +56,7 @@ _sellVehicle = {
 			if(_okToSell) then {
 				_returnInfo = [_objectCharacterId, _obj, _objectID, _objectUID, _sellType];
 			} else {
-				systemChat format[localize "str_epoch_player_182",_textPartIn]; _returnInfo = [];
+				systemChat format[localize "str_epoch_player_182",typeOf _obj]; _returnInfo = [];
 			};
 		} else {
 			systemChat localize "str_epoch_player_245"; _returnInfo = [];
@@ -221,7 +221,7 @@ if (typeName _money  == "SCALAR") then {
 		_success = [_money, 0] call Z_returnChange;
 		_tCost = "";
 		_tCost = _money call z_calcDefaultCurrencyNoImg;
-		systemChat format[localize "STR_EPOCH_TRADE_SELL_SUCCESS",_tCost];
+		if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_SELL_SUCCESS",_tCost]; };
 	};
 	_itemsToLog call Z_logTrade;
 } else {
