@@ -10,6 +10,11 @@ ALTER TABLE Object_DATA MODIFY COLUMN CharacterID bigint(20);
 ALTER TABLE Object_DATA MODIFY COLUMN Hitpoints varchar(1024);
 
 -- ----------------------------
+-- Update player_data to support group system with ~100 players per group
+-- ----------------------------
+ALTER TABLE player_data ADD playerGroup varchar(2048) NOT NULL DEFAULT '[]';
+
+-- ----------------------------
 -- Fix typo from 1.0.5.1 updates causing Merlin and CH53 to show as magazines instead of vehicles
 -- ----------------------------
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["CH53_DZE",2]', 2, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 493, 'trade_any_vehicle');

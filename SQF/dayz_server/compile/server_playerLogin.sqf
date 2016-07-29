@@ -90,8 +90,9 @@ if (!_isNew) then {
 	_inventory = _primary select 4;
 	_backpack = _primary select 5;
 	_survival = _primary select 6;
-	_model = _primary select 7;
-	_hiveVer = _primary select 8;
+	_group = _primary select 7;
+	_model = _primary select 8;
+	_hiveVer = _primary select 9;
 	if !(_model in AllPlayers) then {_model = "Survivor2_DZ";};
 } else {
 	_isInfected = if (DZE_PlayerZed) then {_primary select 3} else {0};

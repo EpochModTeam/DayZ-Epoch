@@ -75,6 +75,7 @@ CREATE TABLE IF NOT EXISTS `Player_DATA` (
   `PlayerName` varchar(128) CHARACTER SET utf8 NOT NULL DEFAULT 'Null',
   `PlayerMorality` int(11) NOT NULL DEFAULT '0',
   `PlayerSex` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `playerGroup` varchar(2048) NOT NULL DEFAULT '[]';
   PRIMARY KEY (`PlayerUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
