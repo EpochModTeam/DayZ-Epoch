@@ -15,34 +15,6 @@ _weaponsCheckArray = [];
 _itemsCheckArray = [];
 _itemsToLog = [[],[],[],"sell"];
 
-_deleteTradedVehicle = {
-	private ["_localResult2","_VehKey2"];
-	_VehKey2 = (_this select 0) select 0;
-	_delType = _this select 1;
-	if ((count _VehKey2) > 0) then {
-		if ((_VehKey2 select 0) == "0" || _delType in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"] || !DZE_SaleRequiresKey) then {
-			_localResult2 = 1;
-		} else {
-			{
-				if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"]) then {
-					if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == (_VehKey2 select 0)) then {
-						_localResult2 = [player,_x,1] call BIS_fnc_invRemove;
-					};
-				};
-			} forEach (items player);
-		};
-		if (isNil "_localResult2") then {
-			_localResult2 = 0;
-		} else {
-			PVDZ_obj_Destroy = [(_VehKey2 select 2),(_VehKey2 select 3),player];
-			publicVariableServer "PVDZ_obj_Destroy";
-			deleteVehicle (_VehKey2 select 1);
-		};
-	} else {
-		_localResult2 = 0;
-	};
-	_localResult2;
-};
 _sellVehicle = {
 	private ["_distance","_damage","_tireDmg","_tires","_okToSell","_returnInfo","_textPartIn","_obj","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_part_in","_qty_in","_activatingPlayer","_objects","_qty","_vehicle"];
 	_vehicle = _this select 0;
@@ -92,6 +64,7 @@ _sellVehicle = {
 	};
 	_returnInfo;
 };
+
 {
 	private ["_type","_name"];
 	_type = _x select 1;
@@ -151,7 +124,7 @@ if (Z_SellingFrom == 2)then{
 
 	{
 		if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
-			_localResult = [_vehArray, (_x select 1)] call _deleteTradedVehicle;
+			_localResult = [_vehArray, (_x select 1)] call DZE_deleteTradedVehicle;
 			if (_localResult == 1) then {_vehTraded = true;};
 		} else {
 			if (_x select 1 == "trade_backpacks") then {

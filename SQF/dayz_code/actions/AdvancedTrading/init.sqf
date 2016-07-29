@@ -100,6 +100,7 @@ if(isNil "Z_AdvancedTradingInit")then{
 	Z_payDefault =  							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_payDefault.sqf");
 	Z_calcDefaultCurrency =						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcDefaultCurrency.sqf");
 	z_calcDefaultCurrencyNoImg  =				compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcDefaultCurrencyNoImg.sqf");
+	DZE_deleteTradedVehicle =					compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\DZE_deleteTradedVehicle.sqf");
 
 	Z_AdvancedTradingInit = true;
 };
