@@ -14,7 +14,6 @@ _Z_logTrade = {
 	};
 	_tcost = _price call Z_calcDefaultCurrencyNoImg;
 	_currency = if (Z_SingleCurrency) then {"Coins"} else {""};
-	if (isNil "inTraderCity") then {inTraderCity = "Unknown Trader City"};
 
 	// Log to client RPT
 	if (Z_SingleCurrency) then {

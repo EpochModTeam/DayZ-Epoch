@@ -25,7 +25,7 @@ switch _enterORleave do {
 		};
 
 		canbuild = true;
-		inTraderCity = "Any";
+		inTraderCity = "Unknown Trader";
 		isInTraderCity = false;
 	};
 };

@@ -94,7 +94,6 @@ if (_finished) then {
 
 		//["PVDZE_obj_Trade",[_activatingPlayer,_traderID,_bos]] call callRpcProcedure;
 		// if (isNil "_obj") then { _obj = "Unknown Vehicle" };
-		if (isNil "inTraderCity") then { inTraderCity = "Unknown Trader City" };
 		if(_bos == 1) then {
 			// Selling
 			PVDZE_obj_Trade = [_activatingPlayer,_traderID,_bos,_part_in,inTraderCity,_part_out,_qty_out];

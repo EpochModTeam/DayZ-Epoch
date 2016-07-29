@@ -517,6 +517,7 @@ if (isNil "DZE_plotOwnershipExclusions") then {
 	DZE_plotTakeOwnershipItems = DayZ_SafeObjects - (DZE_LockableStorage + ["Plastic_Pole_EP1_DZ","DZ_storage_base"]);
 };
 isInTraderCity = false;
+inTraderCity = "Unknown Trader";
 PlayerDeaths = [];
 PVDZE_obj_Trade = []; // For all traders increment qty
 PVDZE_plr_DeathB = [];
