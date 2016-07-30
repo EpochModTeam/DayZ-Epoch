@@ -16215,7 +16215,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_BAGS">
 			<English>You can't purchase a backpack into your backpack.</English>
-			<Russian>В рюкзак поместится рюкзаков: 1.</Russian>
+			<Russian>В рюкзак поместится рюкзаков: 0.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_IN_BACKPACK">
 			<English>Purchased %1 items into your backpack</English>
