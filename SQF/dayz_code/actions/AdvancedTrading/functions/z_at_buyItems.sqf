@@ -1,5 +1,5 @@
 private ["_magazinesToBuy", "_weaponsToBuy", "_backpacksToBuy", "_toolsToBuy", "_sidearmToBuy", "_primaryToBuy", "_priceToBuy"
-,"_enoughMoney", "_myMoney", "_canBuy", "_moneyInfo","_count","_success","_backpack","_toolClasses","_itemsToLog","_tCost","_bTotal"
+,"_enoughMoney", "_myMoney", "_canBuy", "_moneyInfo","_count","_success","_backpack","_toolClasses","_itemsToLog","_tCost","_bTotal","_backpack"
 ];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
@@ -11,8 +11,9 @@ _toolsToBuy = 0;
 _sidearmToBuy = 0;
 _primaryToBuy = 0;
 _vehiclesToBuy = 0;
-
 _priceToBuy = 0;
+
+_backpack = unitBackpack player;
 _toolClasses = [];
 _itemsToLog = [[],[],[],"buy"];
 
@@ -102,6 +103,9 @@ if (Z_SingleCurrency) then {
 	_moneyInfo = _priceToBuy call Z_canAfford;
 	_enoughMoney = _moneyInfo select 0;
 };
+
+if (Z_SellingFrom == 0 && _backpacksToBuy >= 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BAG_BAGS"; }; //backpack
+if (Z_SellingFrom == 2 && !isNull _backpack) exitWith { systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK"; }; //gear
 
 if (_enoughMoney) then {
 	if (_canBuy) then {

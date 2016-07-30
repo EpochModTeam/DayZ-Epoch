@@ -82,8 +82,6 @@ if (_selection == 2) then { //gear
 	};
 	if (_allowedBackpacks >= _toBuyBags) then {
 		_check3 = true;
-	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_BAG_FULL",_allowedBackpacks];
 	};
 
 	if (_check1 && _check2 && _check3) then { _return = true; };
@@ -132,7 +130,6 @@ if (_selection == 1) then { //vehicle
 				_counter = _counter + 1;
 			};
 		} forEach _kinds3;
-
 
 		_allowedWeapons = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportMaxWeapons') - count(_normalWeaps);
 		_allowedMags = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportMaxMagazines') - count(_normalMags);
@@ -249,8 +246,6 @@ if (_selection == 0) then { //backpack
 	};
 	if (_allowedBackpacks >= _toBuyBags) then {
 		_check3 = true;
-	} else {
-		systemChat localize "STR_EPOCH_TRADE_BAG_BAGS";
 	};
 
 	if (_totalSpace <= _totalBagSlots) then {
