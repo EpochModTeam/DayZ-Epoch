@@ -327,6 +327,8 @@ if (_canBuild select 0) then {
 		_counter = 0;
 
 		while {_isOk} do {
+		
+			format[localize "str_epoch_player_139",_text, (_counter + 1),_limit] call dayz_rollingMessages;
 
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			player playActionNow "Medic";
@@ -370,8 +372,6 @@ if (_canBuild select 0) then {
 			if(_finished) then {
 				_counter = _counter + 1;
 			};
-
-			format[localize "str_epoch_player_139",_text, _counter,_limit] call dayz_rollingMessages;
 
 			if(_counter == _limit) exitWith {
 				_isOk = false;

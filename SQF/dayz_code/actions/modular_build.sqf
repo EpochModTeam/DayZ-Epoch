@@ -417,6 +417,8 @@ if (_canBuild select 0) then {
 
 		while {_isOk} do { //publish phase
 
+			format[localize "str_epoch_player_139",_text, (_counter + 1),_limit] call dayz_rollingMessages; //report how many steps are done out of total limit
+
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			player playActionNow "Medic"; //animation
 			
@@ -460,8 +462,6 @@ if (_canBuild select 0) then {
 			if(_finished) then { //if animation finished, add to build count
 				_counter = _counter + 1;
 			};
-
-			format[localize "str_epoch_player_139",_text, _counter,_limit] call dayz_rollingMessages; //report how many steps are done out of total limit
 
 			if(_counter == _limit) exitWith { //if all steps done proceed with next step, otherwise cancel publish
 				_isOk = false;
