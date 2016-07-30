@@ -1,5 +1,6 @@
 private "_index";
 #include "defines.hpp"
+
 call Z_clearBuyList;
 
 {

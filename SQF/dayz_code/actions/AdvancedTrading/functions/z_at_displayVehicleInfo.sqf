@@ -1,7 +1,6 @@
 private ['_item', '_type','_picture',"_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks"
 ,"_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_fuelCapacity","_maxSpeed","_armor","_seats","_weapons",
-"_weapons2","_config","_wepText","_turret","_text"
-];
+"_weapons2","_config","_wepText","_turret","_text"];
 
 #include "defines.hpp"
 
@@ -129,7 +128,6 @@ if (Z_SingleCurrency) then {
 	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_BAGS",
 	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
 	];
-
 } else {
 	_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
 	_sellCurrency = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'displayName');

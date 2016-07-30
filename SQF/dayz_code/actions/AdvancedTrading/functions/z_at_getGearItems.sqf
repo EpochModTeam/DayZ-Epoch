@@ -1,10 +1,11 @@
 /**
-*	call Z_getBackpackItems
+*	call Z_getGearItems
 *
 *	Gets all your items stored in your gear and innitiates the selling list.
 **/
-private ["_mags","_weaps","_skin","_formattedText","_bag","_bags"];
+private ["_mags","_weaps","_skin","_formattedText","_bag","_bags","_pic"];
 #include "defines.hpp"
+
 call Z_clearLists;
 Z_SellArray = [];
 Z_SellableArray = [];
@@ -23,4 +24,4 @@ _formattedText = format [
 
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText _formattedText;
 
-[_weaps,_mags,localize "STR_EPOCH_YOUR_GEAR",_bags] call Z_checkArrayInConfig;
+[_weaps,_mags,toLower (localize "STR_UI_GEAR"),_bags] call Z_checkArrayInConfig;

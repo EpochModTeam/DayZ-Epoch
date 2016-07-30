@@ -1,4 +1,5 @@
-private ["_plots","_friendlies","_thePlot"];
+private ["_friends"];
+
 lbClear 7102;	
 _friends = TheDoor getVariable ["doorfriends",[]];
 {

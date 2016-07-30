@@ -40,7 +40,7 @@ feature.
  * [DDesmond] (https://github.com/ddesmond)
  * [Sharkiller](https://github.com/Sharkiller) (Spanish Tranlations)
  * [Defwen](https://github.com/Defwen) (Czech Translations)
-* [[VB]AWOL](https://github.com/vbawol)
+ * [[VB]AWOL](https://github.com/vbawol)
  * [Paul Tomany](https://github.com/Sequisha)
  * [M1lkM8n](https://github.com/M1lkm8n)
  * [JST](https://github.com/Cybersam248)

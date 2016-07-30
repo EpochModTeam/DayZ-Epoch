@@ -1,6 +1,8 @@
+private ["_index","_temp","_index2"];
 #include "defines.hpp"
+
 _index = _this select 0;
-if(!isNil"_index" && _index > -1)then {
+if (!isNil"_index" && _index > -1) then {
 	lbDelete [Z_AT_SELLABLELIST, _index];
 	_temp = Z_SellableArray select _index;
 	//_item = [_temp select 0,_temp select 1 ,_temp select 2,_temp select 3, _temp select 4  ];

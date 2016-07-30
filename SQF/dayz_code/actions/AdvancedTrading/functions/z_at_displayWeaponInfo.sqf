@@ -45,7 +45,7 @@ _attachText = "";
 } forEach _attachments;
 
 _magazines = [];
-if( isArray (configFile >> 'CfgWeapons' >> _class >> 'magazines')) then {
+if (isArray (configFile >> 'CfgWeapons' >> _class >> 'magazines')) then {
 	{
 		_magazines set [count _magazines, getText (configFile >> "CfgMagazines" >> _x >> "displayName")];
 	} forEach (getArray (configFile >> 'CfgWeapons' >> _class >> 'magazines'));
@@ -53,13 +53,13 @@ if( isArray (configFile >> 'CfgWeapons' >> _class >> 'magazines')) then {
 _magText = "";
 
 {
-	if( _forEachIndex > 0) then {
+	if (_forEachIndex > 0) then {
 		_magText = _magText + ', ' + _x;
 	} else {
 		_magText = _magText + _x;
 	};
 
-}foreach _magazines;
+} foreach _magazines;
 
 if (Z_SingleCurrency) then {
 	_formattedText = format [
@@ -70,7 +70,7 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.8'>%10: </t><t color='#ffffff' size='0.8'>%5 %7</t><br />"
 		, _picture, _display, _class, _magText, _sellPrice, _buyPrice, CurrencyName, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291"
 	];
-}else {
+} else {
 	_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
 	_sellCurrency = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'displayName');
 	_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');

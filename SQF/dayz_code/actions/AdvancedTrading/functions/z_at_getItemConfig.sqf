@@ -1,6 +1,6 @@
-
-#include "defines.hpp"
 private ['_item', '_type'];
+#include "defines.hpp"
+
 _item = _this select 0;
 _type = _item select 1;
 

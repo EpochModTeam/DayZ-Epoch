@@ -13162,7 +13162,7 @@
 			<Czech>Vytvořit Dřevěnou ohradu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_245">
-			<English>Failed, you must get into drivers seat first.</English>
+			<English>You must get into the drivers seat of a vehicle first.</English>
 			<German>Fehlgeschlagen, Sie müssen zuerst auf den Fahrersitz.</German>
 			<Russian>Вы должны попасть на сиденье водителя хотя бы раз.</Russian>
 			<!-- <Spanish></Spanish> -->
@@ -16062,28 +16062,28 @@
 			<Czech>Prodejní</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_GEAR">
-			<English>Selling from gear.</English>
+			<English>Selling from your gear.</English>
 			<German>Verkauf aus meiner Ausrüstung.</German>
 			<Russian>Продажа из снаряжения.</Russian>
-			<Spanish>Selling from gear.</Spanish>
-			<French>Selling from gear.</French>
-			<Czech>Selling from gear.</Czech>
+			<Spanish>Selling from your gear.</Spanish>
+			<French>Selling from your gear.</French>
+			<Czech>Selling from your gear.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_VEHICLE">
-			<English>Selling from vehicle.</English>
+			<English>Selling from your vehicle.</English>
 			<German>Verkauf aus dem Fahrzeug.</German>
 			<Russian>Продажа из транспорта.</Russian>
-			<Spanish>Selling from vehicle.</Spanish>
-			<French>Selling from vehicle.</French>
-			<Czech>Selling from vehicle.</Czech>
+			<Spanish>Selling from your vehicle.</Spanish>
+			<French>Selling from your vehicle.</French>
+			<Czech>Selling from your vehicle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_BACKPACK">
-			<English>Selling from backpack.</English>
+			<English>Selling from your backpack.</English>
 			<German>Verkauf aus dem Rucksack.</German>
 			<Russian>Продажа из рюкзака.</Russian>
-			<Spanish>Selling from backpack.</Spanish>
-			<French>Selling from backpack.</French>
-			<Czech>Selling from backpack.</Czech>
+			<Spanish>Selling from your backpack.</Spanish>
+			<French>Selling from your backpack.</French>
+			<Czech>Selling from your backpack.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_ALL">
 			<English>These are all the items I'm selling.</English>
@@ -16094,28 +16094,28 @@
 			<Czech>These are all the items I'm selling.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_VEHICLE">
-			<English>Buying in vehicle.</English>
+			<English>Buying into your vehicle.</English>
 			<German>Kauf ins Fahrzeug.</German>
 			<Russian>Покупка в транспорт.</Russian>
-			<Spanish>Buying in vehicle.</Spanish>
-			<French>Buying in vehicle.</French>
-			<Czech>Buying in vehicle.</Czech>
+			<Spanish>Buying into your vehicle.</Spanish>
+			<French>Buying into your vehicle.</French>
+			<Czech>Buying into your vehicle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_BACKPACK">
-			<English>Buying in backpack.</English>
+			<English>Buying into your backpack.</English>
 			<German>Kauf in den Rucksack.</German>
 			<Russian>Покупка в рюкзак.</Russian>
-			<Spanish>Buying in backpack.</Spanish>
-			<French>Buying in backpack.</French>
-			<Czech>Buying in backpack.</Czech>
+			<Spanish>Buying into your backpack.</Spanish>
+			<French>Buying into your backpack.</French>
+			<Czech>Buying into your backpack.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_GEAR">
-			<English>Buying in gear.</English>
+			<English>Buying into your gear.</English>
 			<German>Kauf in meine Ausrüstung.</German>
 			<Russian>Покупка в снаряжение.</Russian>
-			<Spanish>Buying in gear.</Spanish>
-			<French>Buying in gear.</French>
-			<Czech>Buying in gear.</Czech>
+			<Spanish>Buying into your gear.</Spanish>
+			<French>Buying into your gear.</French>
+			<Czech>Buying into your gear.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NOTHING">
 			<English>Nothing</English>
@@ -16147,18 +16147,6 @@
 			<French>Détails</French>
 			<Czech>Podrobnosti</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_STUPID">
-			<English>I'm not stupid.</English>
-			<German>Ich bin doch nicht blöd.</German>
-			<Russian>Я не глупый.</Russian>
-			<Spanish>I'm not stupid.</Spanish>
-			<French>I'm not stupid.</French>
-			<Czech>I'm not stupid.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_TRADE_NO_VEHICLE">
-			<English>I do not see any vehicle.</English>
-			<Russian>Я не вижу вашего транспорта.</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_TRADE_NO_BACKPACK">
 			<English>You are not wearing a backpack.</English>
 			<German>Du hast keinen Rucksack.</German>
@@ -16176,7 +16164,7 @@
 			<Czech>I would offer %1 %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ACCEPT">
-			<English>I accept %1 items from %2.</English>
+			<English>I accept %1 items from your %2.</English>
 			<German>Ich nehme %1 aus %2.</German>
 			<Russian>Я беру: %1 шт. из %2.</Russian>
 			<Spanish>I accept %1 items from %2.</Spanish>
@@ -16192,7 +16180,7 @@
 			<Russian>Вы можете купить только один транспорт за сделку.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_GEAR_FULL">
-			<English>You can only buy %1 primary, %2 sidearm and %3 tools in your gear.</English>
+			<English>You can only buy %1 primary, %2 sidearm and %3 tools into your gear.</English>
 			<Russian>Вы можете купить в снаряжение: оружия-%1, пистолетов-%2, инструментов-%3.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_MAGS_FULL">
@@ -16215,10 +16203,6 @@
 			<English>You can only buy %1 backpacks into your vehicle.</English>
 			<Russian>Вы можете купить рюкзаков в ваш транспорт: %1.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_NEED_BAG">
-			<English>You need a backpack.</English>
-			<Russian>Вам нужен рюкзак.</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_TRADE_BACKPACK_FULL">
 			<English>Total backpack space exceeded.</English>
 		</Key>
@@ -16231,7 +16215,7 @@
 			<Russian>В рюкзак поместится предметов: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_BAGS">
-			<English>Only %1 bags will fit into your backpack.</English>
+			<English>You can't purchase a backpack into your backpack.</English>
 			<Russian>В рюкзак поместится рюкзаков: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_IN_BACKPACK">
@@ -16406,10 +16390,6 @@
 			<Spanish>Asientos</Spanish>
 			<French>Des places</French>
 			<Czech>Sedadla</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_YOUR_GEAR">
-			<English>your gear</English>
-			<Russian>вашего снаряжения</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALFLOOR">
 			<English>Metal Floor</English>

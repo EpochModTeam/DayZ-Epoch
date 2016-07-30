@@ -1,11 +1,13 @@
 private ['_item','_picture','_class','_display','_buyPrice','_sellPrice','_formattedText','_buyCurrency','_sellCurrency','_compatible','_weapon','_attach','_config','_compatibleText','_type','_text'];
 #include "defines.hpp"
+
 _item = _this select 0;
 _picture = _item select 4;
 _class = _item select 0;
 _display = _item select 3;
 _buyPrice = 0;
 _sellPrice = 0;
+
 if (Z_Selling) then {
 	_buyPrice = _item select 6;
 	_buyCurrency = _item select 8;

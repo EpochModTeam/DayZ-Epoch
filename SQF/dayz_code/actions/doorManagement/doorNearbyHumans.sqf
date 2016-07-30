@@ -1,4 +1,5 @@
-private ["_close"];
+private ["_closePeople","_friendUID","_friendName"];
+
 lbClear 7101;
 _closePeople =  player nearEntities ["CAManBase", 10];
 if (!DZE_doorManagementMustBeClose) then {_closePeople = playableUnits};

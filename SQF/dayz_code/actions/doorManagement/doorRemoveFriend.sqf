@@ -1,4 +1,5 @@
-private ["_list","_plots","_thePlot","_friends"];
+private ["_pos","_friends","_toRemove","_newList"];
+
 _pos = _this select 0;
 if (_pos < 0) exitWith {};
 _friends = TheDoor getVariable ["doorfriends", []];

@@ -304,10 +304,10 @@ class SnapBuilding {
 	class MetalFloor_DZ: FloorsWallsStairs{
 		points[] = {
 		{0,0,0,"Pivot"},
-		{0, -2.64, 0.025,"Back"},
-		{0, 2.64, 0.025,"Front"},
-		{-2.64, 0, 0.025,"Left"},
-		{2.64, 0, 0.025,"Right"}
+		{0, -2.64, 0.166,"Back"},
+		{0, 2.64, 0.166,"Front"},
+		{-2.64, 0, 0.166,"Left"},
+		{2.64, 0, 0.166,"Right"}
 		};
 		radius = 12;
 	};

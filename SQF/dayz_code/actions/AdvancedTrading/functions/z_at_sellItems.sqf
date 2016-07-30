@@ -35,14 +35,14 @@ _sellVehicle = {
 		if (!(_sellType in ["trade_any_boat", "trade_any_boat_old"])) then {
 			_hitpoints = _obj call vehicle_getHitpoints;
 			{
-				if(["Wheel",_x,false] call fnc_inString) then {
+				if (["Wheel",_x,false] call fnc_inString) then {
 					_damage = [_obj,_x] call object_getHit;
 					_tireDmg = _tireDmg + _damage;
 					_tires = _tires + 1;
 				};
 			} forEach _hitpoints;
-			if(_tireDmg > 0 && _tires > 0) then {
-				if((_tireDmg / _tires) > 0.75) then {
+			if (_tireDmg > 0 && _tires > 0) then {
+				if ((_tireDmg / _tires) > 0.75) then {
 					_okToSell = false;
 				};
 			};
@@ -52,14 +52,16 @@ _sellVehicle = {
 		_objectCharacterId	= _obj getVariable ["CharacterID","0"];
 		_notSetup = (_objectID == "0" && _objectUID == "0");
 
-		if(local _obj && !isNull _obj && alive _obj && !_notSetup) then {
-			if(_okToSell) then {
+		if (local _obj && !isNull _obj && alive _obj && !_notSetup) then {
+			if (_okToSell) then {
 				_returnInfo = [_objectCharacterId, _obj, _objectID, _objectUID, _sellType];
 			} else {
-				systemChat format[localize "str_epoch_player_182",typeOf _obj]; _returnInfo = [];
+				systemChat format[localize "str_epoch_player_182",typeOf _obj]; 
+				_returnInfo = [];
 			};
 		} else {
-			systemChat localize "str_epoch_player_245"; _returnInfo = [];
+			systemChat localize "str_epoch_player_245"; 
+			_returnInfo = [];
 		};
 	};
 	_returnInfo;
@@ -99,7 +101,7 @@ _sellVehicle = {
 			};
 		};
 	};
-}forEach Z_SellArray;
+} forEach Z_SellArray;
 
 _tSold = _itemsArray + _weaponsArray + _bpArray + _vehArray;
 
@@ -115,7 +117,7 @@ if (Z_SellingFrom == 1) then {
 _itemsToLog set [0,(_itemsArray + _weaponsArray + _bpArray + [typeOf Z_vehicle])];
 
 //gear
-if (Z_SellingFrom == 2)then{
+if (Z_SellingFrom == 2) then {
 	private ["_localResult", "_vehTraded"];
 	_wA = [];
 	_mA = [];
@@ -139,23 +141,23 @@ if (Z_SellingFrom == 2)then{
 				if (_type == "trade_items") then {_name = configFile >> "CfgMagazines" >> _name;};
 				if (_type == "trade_weapons") then {_name = configFile >> "CfgWeapons" >> _name;};
 				_localResult = [player,_name,1] call BIS_fnc_invRemove; // Use config for BIS_fnc_invRemove
-				if(_localResult != 1)then{
-					if(_x select 1 == "trade_items")then{
+				if (_localResult != 1) then {
+					if (_x select 1 == "trade_items") then {
 						_mA set [count(_mA),0];
-					}else{
+					} else {
 						_wA set [count(_wA),0];
 					};
-				}else{
-					if(_x select 1 == "trade_items")then{
+				} else {
+					if (_x select 1 == "trade_items") then {
 						_mA set [count(_mA),1];
-					}else{
+					} else {
 						_wA set [count(_wA),1];
 					};
 				};
 			};
 		};
 
-	}forEach Z_SellArray;
+	} forEach Z_SellArray;
 
 	_outcome set [0,_mA];
 	_outcome set [1,_wA];
@@ -169,22 +171,22 @@ if (Z_SellingFrom == 2)then{
 	systemchat format[localize "STR_EPOCH_TRADE_SELL_IN_GEAR",count _tSold];
 };
 
-{ _itemsToLog set [1, (_itemsToLog select 1) + _x] } forEach _outcome;
+{_itemsToLog set [1, (_itemsToLog select 1) + _x]} forEach _outcome;
 _money = 0;
 
 if (Z_SingleCurrency) then {
 	{
-		_money = _money + ( (((_itemsCheckArray select _forEachIndex) select 0)) * _x) ;
+		_money = _money + ((((_itemsCheckArray select _forEachIndex) select 0)) * _x) ;
 		_itemsToLog set [2, (_itemsToLog select 2) + [( (((_itemsCheckArray select _forEachIndex) select 0)) * _x)]];
-	}forEach (_outcome select 0);
+	} forEach (_outcome select 0);
 	{
-		_money = _money + ( (((_weaponsCheckArray select _forEachIndex) select 0)) * _x) ;
+		_money = _money + ((((_weaponsCheckArray select _forEachIndex) select 0)) * _x) ;
 		_itemsToLog set [2, (_itemsToLog select 2) + [( (((_weaponsCheckArray select _forEachIndex) select 0)) * _x)]];
-	}forEach (_outcome select 1);
+	} forEach (_outcome select 1);
 	{
-		_money = _money + ( ( ((_bpCheckArray select _forEachIndex) select 0) ) * _x) ;
+		_money = _money + ((((_bpCheckArray select _forEachIndex) select 0) ) * _x) ;
 		_itemsToLog set [2, (_itemsToLog select 2) + [( (((_bpCheckArray select _forEachIndex) select 0)) * _x)]];
-	}forEach (_outcome select 2);
+	} forEach (_outcome select 2);
 	
 	if (count _outcome > 3) then {
 		_money = _money + ((_vehCheckArray select 0) select 0);
@@ -193,19 +195,19 @@ if (Z_SingleCurrency) then {
 } else {
 	{
 		_itemData = _itemsCheckArray select _forEachIndex;
-		_money = _money + ( (_itemData select 0) * (_itemData select 1) * _x);
+		_money = _money + ((_itemData select 0) * (_itemData select 1) * _x);
 		_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
-	}forEach (_outcome select 0);
+	} forEach (_outcome select 0);
 	{
 		_itemData = _weaponsCheckArray select _forEachIndex;
-		_money = _money + ( (_itemData select 0) * (_itemData select 1) * _x);
+		_money = _money + ((_itemData select 0) * (_itemData select 1) * _x);
 		_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
-	}forEach (_outcome select 1);
+	} forEach (_outcome select 1);
 	{
 		_itemData = _bpCheckArray select _forEachIndex;
-		_money = _money + ( (_itemData select 0) * (_itemData select 1) * _x);
+		_money = _money + ((_itemData select 0) * (_itemData select 1) * _x);
 		_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
-	}forEach (_outcome select 2);
+	} forEach (_outcome select 2);
 	if ((count _outcome) > 3) then {
 		_itemData = _vehCheckArray select 0;
 		_money = _money + ((_itemData select 0) * (_itemData select 1));

@@ -1,3 +1,4 @@
+private "_index";
 #include "defines.hpp"
 {
 	_index = lbAdd [Z_AT_BUYABLELIST,  _x select 3];

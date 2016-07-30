@@ -5,15 +5,16 @@
 *
 *	Filters the buyable or sellable list on your input.
 **/
+private ["_query","_newSellArray","_newBuyArray"];
 
-if(count _this > 0) then {
+if (count _this > 0) then {
 	_query = _this select 0;  // the search string.
-	if(Z_Selling)then {
+	if (Z_Selling) then {
 		if (count Z_SellArray > 0) exitWith {}; //Do not filter if items already in selling list (dupes)
-		if(isNil '_query' || _query == "") then {
+		if (isNil '_query' || _query == "") then {
 			_newSellArray = [];
 			{
-			  if( _x find Z_SellArray < 0) then {
+			  if (_x find Z_SellArray < 0) then {
 			  	_newSellArray set [count(_newSellArray), _x];	
 			  };
 			} forEach Z_OriginalSellableArray;
@@ -22,11 +23,11 @@ if(count _this > 0) then {
 
 			call Z_clearSellableList;
 			call Z_fillSellList;
-		}else {
+		} else {
 			_newSellArray = [];
 			{
-			  if(( [_query,(_x select 0)] call fnc_inString) || ([_query,(_x select 3)] call fnc_inString) ) then {
-			  	if( _x find Z_SellArray < 0 ) then {
+			  if (([_query,(_x select 0)] call fnc_inString) || ([_query,(_x select 3)] call fnc_inString)) then {
+			  	if (_x find Z_SellArray < 0) then {
 			  		_newSellArray set [count(_newSellArray), _x];	
 			  	};
 			  };
@@ -35,15 +36,15 @@ if(count _this > 0) then {
 			call Z_clearSellableList;
 			call Z_fillSellList;
 		};				
-	}else {
-		if(isNil '_query' || _query == "") then {
+	} else {
+		if (isNil '_query' || _query == "") then {
 			Z_BuyableArray = [] + Z_OriginalBuyableArray;
 			call Z_clearBuyList;
 			call Z_fillBuyableList;
-		}else {
+		} else {
 			_newBuyArray = [];
 			{
-			  if(( [_query,(_x select 0)] call fnc_inString) || ([_query,(_x select 3)] call fnc_inString) ) then {
+			  if (([_query,(_x select 0)] call fnc_inString) || ([_query,(_x select 3)] call fnc_inString)) then {
 			  	_newBuyArray set [count(_newBuyArray), _x];	
 			  };
 			} forEach Z_OriginalBuyableArray;	
