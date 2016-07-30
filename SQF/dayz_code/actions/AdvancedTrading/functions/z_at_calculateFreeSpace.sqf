@@ -5,7 +5,7 @@ private["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBa
 
 _selection = _this select 0;
 _returnArray = [0,0,0];
-if(_selection == 2) then{ //gear
+if (_selection == 2) then { //gear
 	_actualMags = {!(_x in MeleeMagazines)} count (magazines player);
 	_allowedMags = 20 - _actualMags;
 	// 12 toolbelt + 1 Binoculars + 1 NVG + 1 Pistol + 1 Primary (onBack isn't counted in weapons player)
@@ -24,7 +24,7 @@ if(_selection == 2) then{ //gear
 
 	_returnArray = [_allowedMags, _allowedWeapons, _allowedBackpacks];
 };
-if(_selection == 1) then{ //vehicle
+if (_selection == 1) then { //vehicle
 	_allowedMags = 0;
 	_allowedWeapons = 0;
 	_allowedBackpacks = 0;
@@ -46,21 +46,21 @@ if(_selection == 1) then{ //vehicle
 
 		{
 			_vehicleMagazines = _vehicleMagazines + _x;
-		}count ( _tempMagazinesArray select 1);
+		} count (_tempMagazinesArray select 1);
 
 
 		_tempWeaponsArray = getWeaponCargo Z_vehicle;
 
 		{
 			_vehicleWeapons = _vehicleWeapons + _x;
-		}count ( _tempWeaponsArray select 1);
+		} count (_tempWeaponsArray select 1);
 
 
 		_tempBackpackArray = getBackpackCargo Z_vehicle;
 
 		{
 			_vehicleBackpacks = _vehicleBackpacks + _x;
-		}count ( _tempBackpackArray select 1);
+		} count (_tempBackpackArray select 1);
 
 		_allowedWeapons = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportMaxWeapons');
 		_allowedMags = getNumber (configFile >> 'CfgVehicles' >> (typeOf Z_vehicle) >> 'transportMaxMagazines');
@@ -68,7 +68,7 @@ if(_selection == 1) then{ //vehicle
 	};
 	_returnArray = [_allowedMags - _vehicleMagazines, _allowedWeapons - _vehicleWeapons, _allowedBackpacks - _vehicleBackpacks];
 };
-if(_selection == 0) then{ //backpack
+if (_selection == 0) then { //backpack
 	_allowedBackpacks = 0;
 	_totalBagSlots = 0;
 	_alreadyInBackpack = 0;
@@ -113,7 +113,7 @@ if(_selection == 0) then{ //backpack
 		_currentSec = 0;
 		_currentTool = 0;
 		{
-			_parentClasses = [(configFile >> "CfgWeapons" >> _x ),true] call BIS_fnc_returnParents;
+			_parentClasses = [(configFile >> "CfgWeapons" >> _x),true] call BIS_fnc_returnParents;
 			if ('ItemCore' in _parentClasses or 'Binocular' in _parentClasses) then {
 				_currentTool = _currentTool + 1;
 			} else {

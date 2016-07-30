@@ -1,4 +1,4 @@
-private ['_worth', '_total_currency','_return','_part','_totalToPay','_inventoryMoney','_backpackMoney',"_kinds","_kinds2","_kinds3","_ammmounts","_ammmounts2","_ammmounts3"
+private ['_worth', '_total_currency','_return','_part','_totalToPay','_inventoryMoney','_backpackMoney',"_kinds","_kinds2","_kinds3","_amounts","_amounts2","_amounts3"
 ,"_vehicleMoney"];
 
 _totalToPay = _this;
@@ -24,20 +24,20 @@ _inventoryMoney = [];
 
 _return set [1, _inventoryMoney];
 
-if( Z_AllowTakingMoneyFromBackpack ) then {
+if (Z_AllowTakingMoneyFromBackpack) then {
 	_backpackPlayer = unitBackpack player;
 	if (!isNull _backpackPlayer) then {
 		_mags = getMagazineCargo _backpackPlayer;
 		_backpackMoney = [];
 		_kinds = _mags select 0;
-		_ammmounts = _mags select 1;
+		_amounts = _mags select 1;
 		{
 			_part =  (configFile >> "CfgMagazines" >> _x);
 			_worth =  (_part >> "worth");
 			if isNumber (_worth) then {
-				_total_currency = _total_currency + ( getNumber(_worth) * (_ammmounts select _forEachIndex));
+				_total_currency = _total_currency + (getNumber(_worth) * (_amounts select _forEachIndex));
 				_counter = 0 ;
-				while{_counter < (_ammmounts select _forEachIndex)} do {
+				while {_counter < (_amounts select _forEachIndex)} do {
 				  _backpackMoney set [count(_backpackMoney),_x];
 				  _counter = _counter + 1;
 				};
@@ -45,9 +45,9 @@ if( Z_AllowTakingMoneyFromBackpack ) then {
 				_findGem = DZE_GemList find _x;
 				if (_findGem >= 0) then {
 					_worth = DZE_GemWorthList select _findGem;
-					_total_currency = _total_currency + (_worth * (_ammmounts select _forEachIndex));
+					_total_currency = _total_currency + (_worth * (_amounts select _forEachIndex));
 					_counter = 0 ;
-					while{_counter < (_ammmounts select _forEachIndex)} do {
+					while {_counter < (_amounts select _forEachIndex)} do {
 					  _backpackMoney set [count(_backpackMoney),_x];
 					  _counter = _counter + 1;
 					};
@@ -58,19 +58,19 @@ if( Z_AllowTakingMoneyFromBackpack ) then {
 	};
 };
 
-if( Z_AllowTakingMoneyFromVehicle ) then {
+if (Z_AllowTakingMoneyFromVehicle) then {
 	if (!isNull Z_vehicle) then {
 		_mags = getMagazineCargo Z_vehicle;
 		_vehicleMoney = [];
 		_kinds = _mags select 0;
-		_ammmounts = _mags select 1;
+		_amounts = _mags select 1;
 		{
 			_part =  (configFile >> "CfgMagazines" >> _x);
 			_worth =  (_part >> "worth");
 			if isNumber (_worth) then {
-				_total_currency = _total_currency + ( getNumber(_worth) * (_ammmounts select _forEachIndex));
+				_total_currency = _total_currency + (getNumber(_worth) * (_amounts select _forEachIndex));
 				_counter = 0 ;
-				while{_counter < ( _ammmounts select _forEachIndex)}do{
+				while {_counter < (_amounts select _forEachIndex)} do {
 					_vehicleMoney set [count(_vehicleMoney),_x];
 					_counter = _counter + 1;
 				};
@@ -78,9 +78,9 @@ if( Z_AllowTakingMoneyFromVehicle ) then {
 				_findGem = DZE_GemList find _x;
 				if (_findGem >= 0) then {
 					_worth = DZE_GemWorthList select _findGem;
-					_total_currency = _total_currency + (_worth * (_ammmounts select _forEachIndex));
+					_total_currency = _total_currency + (_worth * (_amounts select _forEachIndex));
 					_counter = 0 ;
-					while{_counter < (_ammmounts select _forEachIndex)} do {
+					while {_counter < (_amounts select _forEachIndex)} do {
 					  _backpackMoney set [count(_backpackMoney),_x];
 					  _counter = _counter + 1;
 					};
@@ -91,7 +91,7 @@ if( Z_AllowTakingMoneyFromVehicle ) then {
 	};
 };
 
-if ( _totalToPay <= _total_currency) then {
+if (_totalToPay <= _total_currency) then {
   _return set [0, true];
   _return set [4, _total_currency];
 };

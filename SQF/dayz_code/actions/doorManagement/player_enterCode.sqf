@@ -1,8 +1,9 @@
+private "_display";
 
 // Close DoorAccess
 _display = findDisplay 61144;
 _display closeDisplay 3000;
-if(DZE_doorManagementAllowManualCode) then {
+if (DZE_doorManagementAllowManualCode) then {
 	//DZE_Lock_Door != (this getvariable['CharacterID','0']);
 	DZE_topCombo = 0;
 	DZE_midCombo = 0;

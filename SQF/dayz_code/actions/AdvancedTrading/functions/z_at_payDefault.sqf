@@ -10,12 +10,12 @@ _moneyInVehicle = _moneyInfo select 3;
 
 {
   _nil = [player, _x , 1] call BIS_fnc_invRemove;
-}count _moneyInGear;
+} count _moneyInGear;
 
-if (count _moneyInBackpack > 0 ) then {
+if (count _moneyInBackpack > 0) then {
   _nil = [unitBackpack _player, _moneyInBackpack, []] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 };
-if (!isNull Z_vehicle && count _moneyInVehicle > 0 ) then {
+if (!isNull Z_vehicle && count _moneyInVehicle > 0) then {
   _nil = [Z_vehicle, _moneyInVehicle, []] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 };
 

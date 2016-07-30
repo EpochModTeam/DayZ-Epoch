@@ -1,7 +1,7 @@
 private ["_Z_logTrade","_classNames","_className","_amounts","_amount","_prices","_price","_quantity","_queueAmounts","_queueNames","_queuePrices","_index","_buyOrSell"];
 
 _Z_logTrade = {
-	private ["_buyOrSell","_className","_container","_currency","_price","_quantity"];
+	private ["_buyOrSell","_className","_container","_currency","_price","_quantity","_tCost"];
 
 	_className = _this select 0;
 	_quantity = _this select 1;
@@ -12,7 +12,7 @@ _Z_logTrade = {
 	case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
 	case 2 : {localize "STR_UI_GEAR"};
 	};
-	_tcost = _price call Z_calcDefaultCurrencyNoImg;
+	_tCost = _price call Z_calcDefaultCurrencyNoImg;
 	_currency = if (Z_SingleCurrency) then {"Coins"} else {""};
 
 	// Log to client RPT
@@ -24,9 +24,9 @@ _Z_logTrade = {
 		};
 	} else {
 		if (_buyOrSell == "buy") then {
-			diag_log format["%5: Bought %4 x %1 into %7 at %2 for %3",_className,inTraderCity,_tcost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+			diag_log format["%5: Bought %4 x %1 into %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
 		} else {
-			diag_log format["%5: Sold %4 x %1 from %7 at %2 for %3",_className,inTraderCity,_tcost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+			diag_log format["%5: Sold %4 x %1 from %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
 		};
 	};	
 
@@ -40,9 +40,9 @@ _Z_logTrade = {
 			};
 		} else {
 			if (_buyOrSell == "buy") then {
-				PVDZE_obj_Trade = [player,0,0,_className,inTraderCity,_currency,_tcost,_quantity,_container,false];
+				PVDZE_obj_Trade = [player,0,0,_className,inTraderCity,_currency,_tCost,_quantity,_container,false];
 			} else {
-				PVDZE_obj_Trade = [player,0,1,_className,inTraderCity,_currency,_tcost,_quantity,_container,false];
+				PVDZE_obj_Trade = [player,0,1,_className,inTraderCity,_currency,_tCost,_quantity,_container,false];
 			};
 		};
 		publicVariableServer "PVDZE_obj_Trade";

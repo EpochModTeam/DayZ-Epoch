@@ -1,4 +1,5 @@
-private ["_pos","_plots","_inList"];
+private ["_pos","_plots","_inList","_friends","_toAdd"];
+
 _pos = _this select 0;
 if (_pos < 0) exitWith {};
 _toAdd = (Humans select _pos);

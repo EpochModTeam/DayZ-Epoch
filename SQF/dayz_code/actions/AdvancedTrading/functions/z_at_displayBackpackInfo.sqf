@@ -1,7 +1,4 @@
-private ["_item","_picture","_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks","_buyPrice","_sellPrice"
-,"_buyCurrency","_sellCurrency","_formattedText","_picBuy","_picSell"
-];
-
+private ["_item","_picture","_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks","_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_picBuy","_picSell"];
 #include "defines.hpp"
 
 _item = _this select 0;
@@ -15,27 +12,27 @@ _transportMaxMagazines = 0;
 
 _buyPrice = 0;
 _sellPrice = 0;
-if(Z_Selling)then{
+if (Z_Selling) then {
 	_buyPrice = _item select 6;
 	_buyCurrency = _item select 8;
 	_sellPrice = _item select 2;
 	_sellCurrency = _item select 7;
-}else{
+} else {
 	_buyPrice = _item select 2;
 	_buyCurrency = _item select 7;
 	_sellPrice = _item select 6;
 	_sellCurrency = _item select 8;
 };
 
-if ( isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxWeapons')) then {
+if (isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxWeapons')) then {
 	_transportMaxWeapons = getNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxWeapons');
 };
 
-if ( isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines')) then {
+if (isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines')) then {
 	_transportMaxMagazines  = getNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines');
 };
 
-if ( Z_SingleCurrency ) then {
+if (Z_SingleCurrency) then {
 	_buyCurrency = CurrencyName;
 	_sellCurrency = CurrencyName;
 	_formattedText = format [

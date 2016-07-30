@@ -1,4 +1,5 @@
-private ["_pos","_plots","_thePlot","_inList"];
+private ["_pos","_plots","_thePlot","_inList","_toAdd","_friends"];
+
 _pos = _this select 0;
 if (_pos < 0) exitWith {};
 _toAdd = (Humans select _pos);
@@ -17,7 +18,6 @@ if (isServer) then {
 } else {
 	publicVariableServer "PVDZ_veh_Save";
 };
-
 
 call PlotGetFriends;
 call PlotNearbyHumans;

@@ -1,4 +1,5 @@
 private ["_vehicle","_list","_result","_pos"];
+
 Z_vehicle = objNull;
 _vehicle = objNull;
 _pos = [player] call FNC_GetPos;
@@ -7,9 +8,10 @@ _list = nearestObjects [_pos, ["Air","LandVehicle","Ship"], Z_VehicleDistance];
 	if (!isNull _x && local _x && alive _x) then {
 		_vehicle = _x;
 	};
-}count _list;
+} count _list;
 _result = false;
-if(!isNull _vehicle)then{
+
+if (!isNull _vehicle) then {
 	Z_vehicle = _vehicle;
 	_result = true;
 	if (_this) then { // Set trade title, don't set on menu start up since gear is selected initially.
@@ -21,4 +23,5 @@ if(!isNull _vehicle)then{
 		};
 	};
 };
+
 _result

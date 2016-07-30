@@ -1,4 +1,5 @@
 private ["_closePeople","_friendUID","_friendName"];
+
 lbClear 7001;
 if (!DZE_plotManagementMustBeClose) then {_closePeople = playableUnits;} else {_closePeople = player nearEntities ["CAManBase", 10];};
 Humans = [];
