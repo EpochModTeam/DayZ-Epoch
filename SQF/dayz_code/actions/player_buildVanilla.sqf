@@ -163,19 +163,18 @@ _insideCheck = {
 
     _building = _this select 0;
     _unit = _this select 1;
-    if ((typeOf _building != "") and {(
-        (sizeOf (typeOf _building) < 8) or {(_unit distance _building > (sizeOf (typeOf _building) + sizeOf (typeOf _unit))/2)}
-        )}) exitwith {false};
-
+    
+	if ((typeOf _building != "") and {((sizeOf (typeOf _building) < 8) or {(_unit distance _building > (sizeOf (typeOf _building) + sizeOf (typeOf _unit))/2)})}) exitwith {false};
+	
     _bbb = boundingBox _building;
     _ubb = boundingBox _unit;
-
+	
     _check = {
         _min = _bbb select 0;
         _max = _bbb select 1;
         _myX = _p select 0;
         _myY = _p select 1;
-
+		
         (((_myX > (_min select 0)) and {(_myX < (_max select 0))}) and {((_myY > (_min select 1)) and {(_myY < (_max select 1))})})
     };
 
@@ -198,28 +197,29 @@ _checkBuildingCollision = {
     {
         _inside = false;
 		_ownerID = _x getVariable ["ownerArray",[]];
-
-		if (count _ownerID > 0) then { _ownerID = _ownerID select 0; } else { _ownerID = (getPlayerUID player); };
 		
-		//and (!(_x isKindOf "DZ_buildables")) Not used
-
+		if (count _ownerID > 0) then { _ownerID = _ownerID select 0; } else { _ownerID = (getPlayerUID player); }; 
+		
+		if (_object in ["WoodenFence_ghost","MetalFence_ghost","WoodenGate_ghost","MetalGate_ghost"]) then {};
+		
 		if(_ownerID != (getPlayerUID player)) then {
-			if ((!isNull _x) and (!(_x == player)) and (!(_x == _object)) and (!(_x IN DayZ_SafeObjects)) 
-				and (!((typeOf _x == "CamoNet_DZ") or {(_x isKindOf "Land_CamoNet_EAST")}))) then {
+			if ((!isNull _x) and (!(_x == player)) and (!(_x == _object)) ) then {
 				if ((_x isKindOf "Building") or (_x isKindOf "AllVehicles")) then { 
-					_inside = [_x, _object] call _insideCheck;
-					
-					/*
+					//_inside = [_object, _x] call _insideCheck;
+					_inside = [_object, _x] call fn_collisions;
+									
 					if (!_inside) then {
-						_inside = [_object, _x] call _insideCheck;
+						//_inside = [_x, _object] call _insideCheck;
+						_inside = [_x, _object] call fn_collisions;
 					};
-					*/
 				};
 			};
 		};
+				
         if (_inside) exitWith { _objColliding = _x; };
     } forEach (nearestObjects [_object, ["Building", "Air", "LandVehicle", "Ship", "DZ_buildables"], 35]);
-    (!isNull _objColliding)
+    
+	(!isNull _objColliding)
     // _objColliding contains the building that collides with the ghost object
 };
 
@@ -385,7 +385,7 @@ while {r_action_count != 0 and Dayz_constructionContext select 4} do {
 			};
 		};
 	};
-    uiSleep 0.03;
+    uiSleep 0.01;
 };
 
 if (!_actionBuildHidden) then { // player can't build until all is fine
