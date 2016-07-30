@@ -631,7 +631,7 @@ class CfgSounds {
 	};
 	class z_open_backpack_0 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\action_open_backpack_0.ogg",1,1,50};
+		sound[] = {"\dayz_sfx\effects\3rdParty\xyberviri\action_open_backpack_0.ogg",1,1,50};
 		titles[] = {};
 	};
 	class z_open_backpack_1 : z_open_backpack_0 {
