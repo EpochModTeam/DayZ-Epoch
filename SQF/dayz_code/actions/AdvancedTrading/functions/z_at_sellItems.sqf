@@ -177,15 +177,15 @@ _money = 0;
 if (Z_SingleCurrency) then {
 	{
 		_money = _money + ((((_itemsCheckArray select _forEachIndex) select 0)) * _x) ;
-		_itemsToLog set [2, (_itemsToLog select 2) + [( (((_itemsCheckArray select _forEachIndex) select 0)) * _x)]];
+		_itemsToLog set [2, (_itemsToLog select 2) + [((((_itemsCheckArray select _forEachIndex) select 0)) * _x)]];
 	} forEach (_outcome select 0);
 	{
 		_money = _money + ((((_weaponsCheckArray select _forEachIndex) select 0)) * _x) ;
-		_itemsToLog set [2, (_itemsToLog select 2) + [( (((_weaponsCheckArray select _forEachIndex) select 0)) * _x)]];
+		_itemsToLog set [2, (_itemsToLog select 2) + [((((_weaponsCheckArray select _forEachIndex) select 0)) * _x)]];
 	} forEach (_outcome select 1);
 	{
-		_money = _money + ((((_bpCheckArray select _forEachIndex) select 0) ) * _x) ;
-		_itemsToLog set [2, (_itemsToLog select 2) + [( (((_bpCheckArray select _forEachIndex) select 0)) * _x)]];
+		_money = _money + ((((_bpCheckArray select _forEachIndex) select 0)) * _x) ;
+		_itemsToLog set [2, (_itemsToLog select 2) + [((((_bpCheckArray select _forEachIndex) select 0)) * _x)]];
 	} forEach (_outcome select 2);
 	
 	if (count _outcome > 3) then {
@@ -196,17 +196,17 @@ if (Z_SingleCurrency) then {
 	{
 		_itemData = _itemsCheckArray select _forEachIndex;
 		_money = _money + ((_itemData select 0) * (_itemData select 1) * _x);
-		_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
+		_itemsToLog set [2, (_itemsToLog select 2) + [((_itemData select 0) * (_itemData select 1) * _x)]];
 	} forEach (_outcome select 0);
 	{
 		_itemData = _weaponsCheckArray select _forEachIndex;
 		_money = _money + ((_itemData select 0) * (_itemData select 1) * _x);
-		_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
+		_itemsToLog set [2, (_itemsToLog select 2) + [((_itemData select 0) * (_itemData select 1) * _x)]];
 	} forEach (_outcome select 1);
 	{
 		_itemData = _bpCheckArray select _forEachIndex;
 		_money = _money + ((_itemData select 0) * (_itemData select 1) * _x);
-		_itemsToLog set [2, (_itemsToLog select 2) + [( (_itemData select 0) * (_itemData select 1) * _x)]];
+		_itemsToLog set [2, (_itemsToLog select 2) + [((_itemData select 0) * (_itemData select 1) * _x)]];
 	} forEach (_outcome select 2);
 	if ((count _outcome) > 3) then {
 		_itemData = _vehCheckArray select 0;

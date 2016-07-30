@@ -3,7 +3,7 @@ private ["_amount","_index","_index2","_temp"];
 
 _index = _this select 0;
 _amount = parseNumber(_this select 1);
-if (!isNil"_index" && _index > -1 && (typeName _amount == "SCALAR") && _amount > 0 ) then {
+if (!isNil"_index" && _index > -1 && (typeName _amount == "SCALAR") && _amount > 0) then {
 	_temp = [] + (Z_BuyableArray select _index);
 	_temp set [9,(ceil _amount)];
 	Z_BuyingArray set [count(Z_BuyingArray),_temp];

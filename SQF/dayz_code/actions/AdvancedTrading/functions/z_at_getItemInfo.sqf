@@ -10,8 +10,8 @@ _selectedIndex = _this select 1;
 
 _item = [];	
 
-if(_selectedIndex >= 0) then {
-	switch(_selectedList) do {
+if (_selectedIndex >= 0) then {
+	switch (_selectedList) do {
 		case 'sellable': {
 			_item = Z_SellableArray select _selectedIndex;
 		};
@@ -27,6 +27,6 @@ if(_selectedIndex >= 0) then {
 	};
 };
 
-if( count _item > 0) then {
+if (count _item > 0) then {
 	[_item] call Z_getItemConfig;
 };

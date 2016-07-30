@@ -35,7 +35,7 @@ if (Z_AllowTakingMoneyFromBackpack) then {
 			_part =  (configFile >> "CfgMagazines" >> _x);
 			_worth =  (_part >> "worth");
 			if isNumber (_worth) then {
-				_total_currency = _total_currency + ( getNumber(_worth) * (_amounts select _forEachIndex));
+				_total_currency = _total_currency + (getNumber(_worth) * (_amounts select _forEachIndex));
 				_counter = 0 ;
 				while {_counter < (_amounts select _forEachIndex)} do {
 				  _backpackMoney set [count(_backpackMoney),_x];
@@ -68,7 +68,7 @@ if (Z_AllowTakingMoneyFromVehicle) then {
 			_part =  (configFile >> "CfgMagazines" >> _x);
 			_worth =  (_part >> "worth");
 			if isNumber (_worth) then {
-				_total_currency = _total_currency + ( getNumber(_worth) * (_amounts select _forEachIndex));
+				_total_currency = _total_currency + (getNumber(_worth) * (_amounts select _forEachIndex));
 				_counter = 0 ;
 				while {_counter < (_amounts select _forEachIndex)} do {
 					_vehicleMoney set [count(_vehicleMoney),_x];
@@ -91,7 +91,7 @@ if (Z_AllowTakingMoneyFromVehicle) then {
 	};
 };
 
-if ( _totalToPay <= _total_currency) then {
+if (_totalToPay <= _total_currency) then {
   _return set [0, true];
   _return set [4, _total_currency];
 };

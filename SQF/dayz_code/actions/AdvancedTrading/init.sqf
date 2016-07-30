@@ -2,13 +2,13 @@ disableSerialization;
 
 Z_traderData = (_this select 3); // gets the trader data ( e.g menu_Functionary1 )
 
-if( isNil "Z_traderData" || count (Z_traderData) == 0)exitWith{
+if (isNil "Z_traderData" || count (Z_traderData) == 0) exitWith {
 	localize "STR_EPOCH_TRADE_ERROR" call dayz_rollingMessages;
 };
 
-if(DZE_ActionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (DZE_ActionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
-if(isNil "Z_AdvancedTradingInit")then{
+if (isNil "Z_AdvancedTradingInit") then {
 
 	//#include "config.sqf"; // Moved to dayz_code/configVariables.sqf
 	#include "\z\addons\dayz_code\actions\AdvancedTrading\functions\defines.hpp"
@@ -34,7 +34,6 @@ if(isNil "Z_AdvancedTradingInit")then{
 		DZE_GemWorthList set [(count DZE_GemWorthList), _largest];
 	};
 
-	
 	Z_Selling = true;
 	Z_SellingFrom = 2;
 	Z_vehicle = objNull;
@@ -45,7 +44,7 @@ if(isNil "Z_AdvancedTradingInit")then{
 	Z_BuyableArray = [];
 	Z_BuyingArray = [];
 
-	if( isNil 'CurrencyName' && Z_SingleCurrency )then{
+	if (isNil 'CurrencyName' && Z_SingleCurrency) then {
 		CurrencyName = 'Coins'; // fallback
 	};
 	if (!Z_SingleCurrency) then {

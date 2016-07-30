@@ -5,6 +5,7 @@
 **/
 private "_index";
 #include "defines.hpp"
+
 {
 	_index = lbAdd [Z_AT_SELLABLELIST,  _x select 3];
 	lbSetPicture [Z_AT_SELLABLELIST, _index, _x select 4 ];

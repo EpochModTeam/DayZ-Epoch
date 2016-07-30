@@ -54,7 +54,7 @@ _totalPrice = 0;
 		if (isNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")) then {
 			_cat = format["Category_%1",getNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")];
 		};
-		_exists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y );
+		_exists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y);
 		if (_exists) exitWith {
 			_pic = "";
 			_text = "";
@@ -79,7 +79,7 @@ _totalPrice = 0;
 				};
 			};
 
-			if ( isNil '_text') then { _text = _y; };
+			if (isNil '_text') then { _text = _y; };
 			_HasKey = true;
 			if (_vehTrade && {(typeOf Z_vehicle) == _y}) then {
 				if (!(_type in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"]) && DZE_SaleRequiresKey) then {
