@@ -1,4 +1,4 @@
-private ["_display","isOwner"];
+private ["_display","_isOwner"];
 disableSerialization;
 
 if (count(_this) > 0) then

@@ -20,3 +20,4 @@ for "_i" from 0 to 360 step (450 / _BD_radius) do {
 	_object setVariable ["Inventory", ["PPMarker"],true];
 	_object enableSimulation false;
 	_object setpos _location;
+};
