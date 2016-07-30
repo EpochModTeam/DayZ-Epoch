@@ -16155,6 +16155,9 @@
 			<French>You are not wearing a backpack.</French>
 			<Czech>You are not wearing a backpack.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_HAVE_BACKPACK">
+			<English>You already have a backpack.</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
 			<German>Ich biete %1 %2.</German>
@@ -16186,10 +16189,6 @@
 		<Key ID="STR_EPOCH_TRADE_MAGS_FULL">
 			<English>You can only buy %1 magazines into your gear.</English>
 			<Russian>Вы можете купить предметов в снаряжение: %1.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TRADE_BAG_FULL">
-			<English>You can only buy %1 backpacks into your gear.</English>
-			<Russian>Вы можете купить рюкзаков в снаряжение: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_VEHICLE_WEPS">
 			<English>You can only buy %1 weapons into your vehicle.</English>
