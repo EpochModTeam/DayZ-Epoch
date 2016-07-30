@@ -104,8 +104,8 @@ if (Z_SingleCurrency) then {
 	_enoughMoney = _moneyInfo select 0;
 };
 
-if (Z_SellingFrom == 0 && _backpacksToBuy >= 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BAG_BAGS"; }; //backpack
-if (Z_SellingFrom == 2 && !isNull _backpack) exitWith { systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK"; }; //gear
+if (Z_SellingFrom == 0 && _backpacksToBuy > 0) exitWith { systemChat localize "STR_EPOCH_TRADE_BAG_BAGS"; }; //backpack
+if (Z_SellingFrom == 2 && !isNull _backpack && _backpacksToBuy > 0) exitWith { systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK"; }; //gear
 
 if (_enoughMoney) then {
 	if (_canBuy) then {
