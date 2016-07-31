@@ -1,10 +1,11 @@
-private ["_magazinesToBuy", "_weaponsToBuy", "_backpacksToBuy", "_toolsToBuy", "_sidearmToBuy", "_primaryToBuy", "_priceToBuy"
-,"_enoughMoney", "_myMoney", "_canBuy", "_moneyInfo","_count","_success","_backpack","_toolClasses","_itemsToLog","_tCost","_bTotal","_backpack"
-];
+private ["_weaponsToBuy","_backpacksToBuy","_toolsToBuy","_sidearmToBuy","_primaryToBuy","_priceToBuy"
+,"_enoughMoney","_myMoney","_canBuy","_moneyInfo","_count","_success","_backpack","_toolClasses","_itemsToLog"
+,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
-_magazinesToBuy = 0;
+_pistolMagsToBuy = 0;
+_regularMagsToBuy = 0;
 _weaponsToBuy = 0;
 _backpacksToBuy = 0;
 _toolsToBuy = 0;
@@ -35,7 +36,11 @@ if (Z_SingleCurrency) then {
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
 		};
 		if (_x select 1 == "trade_items") then {
-			_magazinesToBuy = _magazinesToBuy + (_x select 9) ;
+			if (getNumber (configFile >> "CfgMagazines" >> (_x select 0) >> "type") == 16) then { // 16 = WeaponSlotHandGunItem (pistol ammo slot)
+				_pistolMagsToBuy = _pistolMagsToBuy + (_x select 9);
+			} else {
+				_regularMagsToBuy = _regularMagsToBuy + (_x select 9);
+			};
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
 		};
 		if (_x select 1 == "trade_backpacks") then {
@@ -68,7 +73,11 @@ if (Z_SingleCurrency) then {
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9)); // _worth * _price * _amount
 		};
 		if (_x select 1 == "trade_items") then {
-			_magazinesToBuy = _magazinesToBuy + (_x select 9) ;
+			if (getNumber (configFile >> "CfgMagazines" >> (_x select 0) >> "type") == 16) then { // 16 = WeaponSlotHandGunItem (pistol ammo slot)
+				_pistolMagsToBuy = _pistolMagsToBuy + (_x select 9);
+			} else {
+				_regularMagsToBuy = _regularMagsToBuy + (_x select 9);
+			};
 			_priceToBuy	= _priceToBuy + ((_x select 11) *(_x select 2)*(_x select 9));
 		};
 		if (_x select 1 == "trade_backpacks") then {
@@ -85,7 +94,7 @@ if (Z_SingleCurrency) then {
 	} count Z_BuyingArray;
 };
 
-_canBuy = [_weaponsToBuy,_magazinesToBuy,_backpacksToBuy,_toolsToBuy, _sidearmToBuy, _primaryToBuy,_vehiclesToBuy,_toolClasses] call Z_allowBuying;
+_canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses] call Z_allowBuying;
 
 _myMoney = player getVariable[Z_MoneyVariable,0];
 
@@ -106,6 +115,9 @@ if (Z_SingleCurrency) then {
 
 if (Z_SellingFrom == 0 && _backpacksToBuy > 0) exitWith { systemChat localize "STR_EPOCH_TRADE_BAG_BAGS"; }; //backpack
 if (Z_SellingFrom == 2 && !isNull _backpack && _backpacksToBuy > 0) exitWith { systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK"; }; //gear
+
+_success = if (Z_SingleCurrency) then { true } else { [player,_priceToBuy,_moneyInfo,true,_regularMagsToBuy] call Z_payDefault };
+if (!_success) exitWith { systemChat localize "STR_EPOCH_TRADE_GEAR_AND_BAG_FULL"; }; // Not enough room in gear or bag to accept change
 
 if (_enoughMoney) then {
 	if (_canBuy) then {
@@ -222,7 +234,7 @@ if (_enoughMoney) then {
 			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_GEAR",_bTotal];
 		};
 		if (!Z_SingleCurrency) then {
-			_success = [player,_priceToBuy, _moneyInfo] call Z_payDefault;
+			_success = [player,_priceToBuy,_moneyInfo,false,0] call Z_payDefault;
 			if (_success) then {
 				_tCost = "";
 				_tCost = _priceToBuy call z_calcDefaultCurrencyNoImg;

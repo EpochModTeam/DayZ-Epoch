@@ -16187,7 +16187,7 @@
 			<Russian>Вы можете купить в снаряжение: оружия-%1, пистолетов-%2, инструментов-%3.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_MAGS_FULL">
-			<English>You can only buy %1 magazines into your gear.</English>
+			<English>You can only buy %1 regular magazines and %2 pistol magazines into your gear.</English>
 			<Russian>Вы можете купить предметов в снаряжение: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_VEHICLE_WEPS">
@@ -16270,6 +16270,9 @@
 			<Polish>Nie można kupić: brak wolnych miejsc!</Polish>
 			<Hungarian>Nem vásárolhatsz! Nincs üres hely!</Hungarian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_GEAR_AND_BAG_FULL">
+			<English>Cannot buy: Not enough empty slots in your gear or bag to accept change!</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_NEED_COINS">
 			<English>You need %1 %2 to buy all these items.</English>
 			<Russian>Вам нужно %1 %2 для покупки.</Russian>
@@ -16298,6 +16301,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_TOTAL_SPACE_SUCCEEDED">
 			<English>Total space succeeded: Mag=1, Tool=1, Side=5, Primary=10 slots and your bag capacity is %1 where you tried %2 slots.</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_CHANGE_IN_BACKPACK">
+			<English>Some change was added to your backpack.</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_CHANGE_OVERFLOW">
+			<English>Some change is hidden in the overflow slots of your gear.</English>
 		</Key>
 		<Key ID="STR_EPOCH_APLOTFORLIFE_TAKE_OWNERSHIP">
 			<English>Take Ownership: %1 objects ownership changed.</English>

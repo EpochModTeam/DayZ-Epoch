@@ -3,7 +3,7 @@
 *
 *	Gets all your items stored in your vehicle and innitiates the selling list.
 **/
-private ["_vehicle","_pos","_list","_formattedText","_pic","_mags","_weaps","_bags","_normalMags","_normalWeaps","_normalBags","_kinds","_amounts","_counter","_kinds2","_amounts2"];
+private ["_vehicle","_pos","_list","_formattedText","_pic","_normalMags","_normalWeaps","_freeSpace"];
 #include "defines.hpp"
 
 Z_vehicle = objNull;
@@ -31,46 +31,11 @@ if (!isNull _vehicle) then {
 
 	(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText _formattedText;
 	Z_vehicle = _vehicle;
-	_mags = getMagazineCargo _vehicle;
-	_weaps = getWeaponCargo _vehicle;
-	_bags = getBackpackCargo _vehicle;
-
-	_normalMags = [];
-	_normalWeaps = [];
-	_normalBags = [];
-
-	_kinds = _mags select 0;
-	_amounts = _mags select 1;
-	{
-		_counter = 0 ;
-		while {_counter < (_amounts select _forEachIndex)} do {
-		_normalMags set [count(_normalMags),_x];
-		_counter = _counter + 1;
-		};
-	} forEach _kinds;
-
-	_kinds2 = _weaps select 0;
-	_amounts2 = _weaps select 1;
-	{
-		_counter = 0 ;
-		while {_counter < (_amounts2 select _forEachIndex)} do {
-			_normalWeaps set [count(_normalWeaps),_x];
-			_counter = _counter + 1;
-		};
-	} forEach _kinds2;
-	
+	_freeSpace = [_vehicle,0,0,0,0] call Z_calcFreeSpace;
+	_normalMags = _freeSpace select 5;
+	_normalWeaps = _freeSpace select 6;	
+	//_normalBags = _freeSpace select 7;
 	// Can't sell backpacks from vehicle because there is currently no command to remove single backpacks from cargo (only clearBackpackCargo which removes all)
-	/*
-	_kinds3 = _bags select 0;
-	_amounts3 = _bags select 1;
-	{
-		_counter = 0 ;
-		while {_counter < (_amounts3 select _forEachIndex)} do {
-			_normalBags set [count(_normalBags),_x];
-			_counter = _counter + 1;
-		};
-	} forEach _kinds3;
-	*/
 
-	[_normalWeaps,_normalMags, typeOf _vehicle,_normalBags] call Z_checkArrayInConfig;
+	[_normalWeaps,_normalMags,typeOf _vehicle,[]] call Z_checkArrayInConfig;
 };

@@ -6,9 +6,9 @@
 	Author:
 	   Zupa 2014-09-30
 	---------------------------------------------------------------------------- */
-private ["_bags","_vehInfo","_forEachIndex","_counter","_normalBagss","_inCargo","_unit","_items","_weaps","_normalItems","_normalWeaps","_normalBags","_unit_allItems","_unit_allItems_types","_unit_allItems_count","_unit_allWeaps","_unit_allWeaps_types","_unit_allWeaps_count","_unit_allBags","_unit_allBags_types","_unit_allBags_count","_returnVar","_returnMag","_returnWeap","_returnBag"];
+private ["_bags","_vehInfo","_inCargo","_object","_items","_weaps","_normalMags","_normalWeaps","_normalBags","_returnVar","_returnMag","_returnWeap","_returnBag","_freeSpace"];
 
-_unit = _this select 0;
+_object = _this select 0;
 _items = _this select 1;
 _weaps = _this select 2;
 _bags = [];
@@ -27,68 +27,35 @@ if (count _this > 3) then {
 	};
 };
 
-_normalItems = [];
-_normalWeaps = [];
-_normalBags = [];
+_freeSpace = [_object,0,0,0,0] call Z_calcFreeSpace;
+_normalMags = _freeSpace select 5;
+_normalWeaps = _freeSpace select 6;
+_normalBags = _freeSpace select 7;
 
-_unit_allItems = getMagazineCargo _unit; //  [[type1, typeN, ...],[count1, countN, ...]]
-_unit_allItems_types = _unit_allItems select 0;
-_unit_allItems_count = _unit_allItems select 1;
-
-_unit_allWeaps = getWeaponCargo _unit;
-_unit_allWeaps_types = _unit_allWeaps select 0;
-_unit_allWeaps_count = _unit_allWeaps select 1;
-
-_unit_allBags = getBackpackCargo _unit;
-_unit_allBags_types = _unit_allBags select 0;
-_unit_allBags_count = _unit_allBags select 1;
-
-clearMagazineCargoGlobal _unit;
-clearWeaponCargoGlobal _unit;
+clearMagazineCargoGlobal _object;
+clearWeaponCargoGlobal _object;
 
 if (count _bags > 0) then { 
-	clearBackpackCargoGlobal  _unit;
+	clearBackpackCargoGlobal  _object;
 };
-
-{
-	_counter = 0 ;
-	while {_counter < (_unit_allItems_count select _forEachIndex)} do {
-		_normalItems set [count(_normalItems),_x];
-		_counter = _counter + 1;
-	};
-} forEach _unit_allItems_types;
-{
-	_counter = 0 ;
-	while {_counter < (_unit_allWeaps_count select _forEachIndex)} do {
-		_normalWeaps set [count(_normalWeaps),_x];
-		_counter = _counter + 1;
-	};
-} forEach _unit_allWeaps_types;
-{
-	_counter = 0 ;
-	while {_counter < (_unit_allBags_count select _forEachIndex)} do {
-		_normalBagss set [count(_normalBags),_x];
-		_counter = _counter + 1;
-	};
-} forEach _unit_allBags_types;
 
 _returnVar = [];
 _returnMag = [];
 _returnWeap = [];
 _returnBag = [];
 {
-	_inCargo = _normalItems find _x;
+	_inCargo = _normalMags find _x;
 	if (_inCargo > -1) then {
-		_normalItems set [_inCargo, "soldItem"];
+		_normalMags set [_inCargo, "soldItem"];
 		_returnMag set [count(_returnMag),1];
 	} else {
 		_returnMag set [count(_returnMag),0];
 	};
 } count _items;
-_normalItems = _normalItems - ["soldItem"];
+_normalMags = _normalMags - ["soldItem"];
 {
-	_unit addMagazineCargoGlobal [_x, 1];
-} count _normalItems;
+	_object addMagazineCargoGlobal [_x, 1];
+} count _normalMags;
 
 {
 	_inCargo = _normalBags find _x;
@@ -100,7 +67,7 @@ _normalItems = _normalItems - ["soldItem"];
 	};
 } count _bags;
 {
-	_unit addBackpackCargoGlobal [_x, 1];
+	_object addBackpackCargoGlobal [_x, 1];
 } count _normalBags;
 
 {
@@ -115,12 +82,12 @@ _normalItems = _normalItems - ["soldItem"];
 
 _normalWeaps = _normalWeaps - ["soldItem"];
 {
-	_unit addWeaponCargoGlobal [_x, 1];
+	_object addWeaponCargoGlobal [_x, 1];
 } count _normalWeaps;
 _normalWeaps = _normalWeaps - ["soldItem"];
 
 if (count _vehInfo > 0) then {
-	_sell = [_vehInfo, ((_vehInfo select 0) select 4), _unit] call DZE_deleteTradedVehicle;
+	_sell = [_vehInfo, ((_vehInfo select 0) select 4), _object] call DZE_deleteTradedVehicle;
 	if (_sell > 0) then {
 		_returnVar set [3,[1]];
 	};
@@ -130,4 +97,4 @@ _returnVar set [0,_returnMag];
 _returnVar set [1,_returnWeap];
 _returnVar set [2,_returnBag];
 
-_returnVar;
+_returnVar

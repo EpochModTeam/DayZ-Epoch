@@ -1,5 +1,4 @@
-private ['_worth', '_total_currency','_return','_part','_totalToPay','_inventoryMoney','_backpackMoney',"_kinds","_kinds2","_kinds3","_amounts","_amounts2","_amounts3"
-,"_vehicleMoney"];
+private ["_worth","_total_currency","_return","_part","_totalToPay","_inventoryMoney","_backpackMoney","_kinds","_amounts","_vehicleMoney"];
 
 _totalToPay = _this;
 _return = [false, [], [], [], 0];

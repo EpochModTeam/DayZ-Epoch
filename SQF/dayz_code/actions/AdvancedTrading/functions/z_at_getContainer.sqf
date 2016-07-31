@@ -30,7 +30,7 @@ if (Z_Selling) then {
 				call Z_getBackpackItems;
 			} else {
 				ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_TRADE_NO_BACKPACK"];
-				ctrlSetText [Z_AT_SLOTSDISPLAY, " "];
+				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
 		case 1: { //vehicle
@@ -41,7 +41,7 @@ if (Z_Selling) then {
 				call Z_getVehicleItems;
 			} else {
 				ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_PLAYER_245"];
-				ctrlSetText [Z_AT_SLOTSDISPLAY, " "];
+				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
 		case 2: { //gear
@@ -58,10 +58,10 @@ if (Z_Selling) then {
 			if (!isNull _backpack) then {
 				Z_SellingFrom = 0;
 				[localize "STR_EPOCH_TRADE_BUYING_BACKPACK"] call Z_filleTradeTitle;
-				[0] call Z_calculateFreeSpace;
+				[0] call Z_displayFreeSpace;
 			} else {
 				ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_TRADE_NO_BACKPACK"];
-				ctrlSetText [Z_AT_SLOTSDISPLAY, " "];
+				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
 		case 1: { //vehicle
@@ -69,16 +69,16 @@ if (Z_Selling) then {
 			if (_canBuyInVehicle) then {
 				Z_SellingFrom = 1;
 				[localize "STR_EPOCH_TRADE_BUYING_VEHICLE"] call Z_filleTradeTitle;
-				[1] call Z_calculateFreeSpace;
+				[1] call Z_displayFreeSpace;
 			} else {
 				ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_PLAYER_245"];
-				ctrlSetText [Z_AT_SLOTSDISPLAY, " "];
+				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
 		case 2: { //gear
 			Z_SellingFrom = 2;
 			[localize "STR_EPOCH_TRADE_BUYING_GEAR"] call Z_filleTradeTitle;
-			[2] call Z_calculateFreeSpace;
+			[2] call Z_displayFreeSpace;
 		};
 	};
 };

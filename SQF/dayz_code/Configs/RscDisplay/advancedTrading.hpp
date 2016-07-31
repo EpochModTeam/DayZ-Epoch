@@ -393,10 +393,10 @@ class AdvancedTrading
 			colorBackground[] =  {1,1,1,1};
 			color[] = {0,0,0,1};
 		};
-		class RscText_ATT8: ZSC_RscText
+		class RscText_ATT8: ZSC_RscStructuredText
 		{
 			idc = 7404;
-			text = "0/0/0";
+			text = "";
 			x = 0.45 * safezoneW + safezoneX;
 			y = 0.32 * safezoneH + safezoneY;
 			w = 0.15 * safezoneW;

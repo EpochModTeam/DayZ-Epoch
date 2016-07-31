@@ -91,7 +91,8 @@ if (isNil "Z_AdvancedTradingInit") then {
 	Z_calcBuyableList = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcBuyableList.sqf");
 	Z_fillBuyableList = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_fillBuyableList.sqf");
 	Z_fillBuyingList = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_fillBuyingList.sqf");
-	Z_calculateFreeSpace = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calculateFreeSpace.sqf");
+	Z_calcFreeSpace = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcFreeSpace.sqf");
+	Z_displayFreeSpace = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_displayFreeSpace.sqf");
 	Z_checkCloseVehicle =  						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_checkCloseVehicle.sqf");
 	Z_allowBuying =  							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_allowBuying.sqf");
 	Z_canAfford =  								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_canAfford.sqf");

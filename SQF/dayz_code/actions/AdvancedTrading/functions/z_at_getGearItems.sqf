@@ -9,8 +9,8 @@ private ["_mags","_weaps","_skin","_formattedText","_bag","_bags","_pic"];
 call Z_clearLists;
 Z_SellArray = [];
 Z_SellableArray = [];
- _mags = magazines player;
- _weaps = weapons player;
+_mags = magazines player;
+_weaps = weapons player;
 _bag = unitBackpack player;
 _bags = if (isNull _bag) then {[]} else {[typeOf _bag]};
 
