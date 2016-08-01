@@ -41,9 +41,6 @@
 [NEW] Full height cinderblock wall kits are now in game, classname "full_cinder_wall_kit" #1172 @icomrade
 [NEW] You can exclude built items from the god mode base function using DZE_GodModeBaseExclude = []; which is an array of item classnames
 
-[CHANGED] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
-[CHANGED] Several weapon, item and tool classnames changed. Admins see SQL\1.0.6_Updates @ebaydayz
-[CHANGED] New loot table format is incompatible with old loot tables. Admins see CfgLoot\README.txt
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)
 [CHANGED] UH60Wreck and UH1Wreck are replaced with CrashSite_EU/UN/US/RU (new models)
@@ -106,6 +103,9 @@
 [UPDATED] Epoch.sql, 1.0.6_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 
 [INFO] Server owners must update to the new Hive DLL included in the 1.0.6 release, changes in the soruce code can be found here: https://github.com/vbawol/DayZhiveEpoch/pull/13
+[INFO] Many weapon, item and tool classnames changed. Admins must run SQL\1.0.6_Updates and update their config traders (see dayz_code\Configs\CfgServerTrader) @ebaydayz
+[INFO] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
+[INFO] New loot table format is incompatible with old loot tables. Admins see CfgLoot\README.txt
 [INFO] If you use any community mods included in this release (Advanced Trading, Build Vectors, Door or Plot Management, Snap Build Pro, A Plot For Life) you MUST uninstall them from your mission. The mods have been improved and many bugs have been fixed, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
