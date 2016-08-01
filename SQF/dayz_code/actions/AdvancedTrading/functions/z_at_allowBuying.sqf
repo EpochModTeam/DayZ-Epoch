@@ -2,7 +2,7 @@ private ["_selection","_return","_toBuyWeaps","_toBuyTotalMags","_toBuyBags","_t
 ,"_primaryToBuy","_currentPrimarys","_p","_b","_check0","_check1","_check2","_check3","_check4","_allowedMags"
 ,"_allowedPrimary","_allowedTools","_allowedSidearm","_allowedBackpacks","_parentClasses","_toolClasses"
 ,"_duplicate","_quantity","_tool","_totalBagSlots","_pistolMags","_regularMags","_toBuyPistolMags"
-,"_toBuyRegularMags","_type","_freeSpace","_backpack","_totalSpace"
+,"_toBuyRegularMags","_type","_freeSpace","_backpack"
 ];
 _selection = Z_SellingFrom;
 _return = false;
@@ -27,7 +27,7 @@ if (_vehiclesToBuy > 0) then {
 
 if (_selection == 2) then { //gear
 	_pistolMags = 0;
-	_regularMags = 0;	
+	_regularMags = 0;
 	{
 		_type = getNumber (configFile >> "CfgMagazines" >> _x >> "type");
 		if (_type == 16) then {_pistolMags = _pistolMags + 1;}; // 16 = WeaponSlotHandGunItem (pistol ammo slot)
@@ -132,7 +132,6 @@ if (_selection == 1) then { //vehicle
 };
 
 if (_selection == 0) then { //backpack
-	_totalSpace = 0;
 	_totalBagSlots = 0;
 
 	_backpack = unitBackpack player;
@@ -140,7 +139,6 @@ if (_selection == 0) then { //backpack
 	if (!isNull _backpack) then {
 		_check0 = true;
 		_freeSpace = [_backpack,_primaryToBuy,_sidearmToBuy,_toolsToBuy,_toBuyTotalMags] call Z_calcFreeSpace;
-		_totalSpace = _freeSpace select 0;
 		_allowedMags = _freeSpace select 1;
 		_allowedWeapons = _freeSpace select 2;
 		_totalBagSlots = _freeSpace select 4;
@@ -162,18 +160,13 @@ if (_selection == 0) then { //backpack
 		_check2 = true;
 	} else {
 		systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedMags];
+		
 	};
 	if (_toBuyBags < 1) then { // A backpack can not hold any backpacks
 		_check3 = true;
 	};
 
-	if (_totalSpace <= _totalBagSlots) then {
-		_check4 = true;
-	} else {
-		systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL";
-	};
-
-	if (_check0 && _check1 && _check2 && _check3 && _check4) then { _return = true; };
+	if (_check0 && _check1 && _check2 && _check3) then { _return = true; };
 };
 
 _return
