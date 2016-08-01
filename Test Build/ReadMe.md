@@ -25,7 +25,7 @@ Install instructions:
 
 Current Version: **EpochTest-106-RC1**
 
-Build Date: **July 26th 2016**
+Build Date: **August 1st 2016**
 
 --------------------------
 Test Server Information
