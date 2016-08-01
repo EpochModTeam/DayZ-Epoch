@@ -110,7 +110,7 @@ if (Z_SellingFrom == 0) then {
 	systemchat format[localize "STR_EPOCH_TRADE_SELL_IN_BACKPACK",count _tSold];
 };
 if (Z_SellingFrom == 1) then {
-	_outcome = [Z_vehicle,_itemsArray,_weaponsArray,_bpArray, _vehArray] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
+	_outcome = [Z_vehicle,_itemsArray,_weaponsArray,_vehArray] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 	systemchat format[localize "STR_EPOCH_TRADE_SELL_IN_VEHICLE",count _tSold,typeOf Z_vehicle];
 };
 

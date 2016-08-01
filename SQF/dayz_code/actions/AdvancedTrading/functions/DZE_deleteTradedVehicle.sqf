@@ -29,7 +29,7 @@ if ((count _VehKey2) > 0) then {
 		} forEach (items player);
 		if ((typeOf (unitBackPack player)) != "") then {
 			_keyArr = [(_VehKey2 select 0), (getWeaponCargo (unitBackpack player))] call _containerFindKey;
-			_deleteRet = [unitBackpack player,[],_keyArr] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
+			_deleteRet = [unitBackpack player,[],_keyArr,[]] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 			if (isNil "_localResult2") then {
 				_localResult2 = ((_deleteRet select 1) select 0);
 			} else {
@@ -44,7 +44,7 @@ if ((count _VehKey2) > 0) then {
 		};
 		if (!isNull _vehicle) then {
 			_keyArr = [(_VehKey2 select 0), (getWeaponCargo _vehicle)] call _containerFindKey;
-			_deleteRet = [_vehicle,[],_keyArr] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
+			_deleteRet = [_vehicle,[],_keyArr,[]] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 			if (isNil "_localResult2") then {
 				_localResult2 = ((_deleteRet select 1) select 0);
 			} else {

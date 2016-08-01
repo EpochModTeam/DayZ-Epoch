@@ -6,7 +6,7 @@ private ["_selection","_return","_toBuyWeaps","_toBuyTotalMags","_toBuyBags","_t
 ];
 _selection = Z_SellingFrom;
 _return = false;
-_toBuyWeaps = _this select 0;
+_toBuyWeaps = _this select 0; // Does not include tools
 _toBuyPistolMags = (_this select 1) select 0;
 _toBuyRegularMags = (_this select 1) select 1;
 _toBuyTotalMags = _toBuyPistolMags + _toBuyRegularMags;
@@ -20,7 +20,7 @@ _allowedMags = 0;
 _allowedWeapons = 0;
 _allowedBackpacks = 0;
 
-if (_vehiclesToBuy > 1) exitWith {systemChat localize "STR_EPOCH_TRADE_ONE_VEHICLE"; false;};
+if (_vehiclesToBuy > 1) exitWith {systemChat localize "STR_EPOCH_TRADE_ONE_VEHICLE"; false};
 if (_vehiclesToBuy > 0) then {
 	_toolsToBuy = _toolsToBuy + _vehiclesToBuy;
 };
@@ -53,15 +53,9 @@ if (_selection == 2) then { //gear
 			_allowedSidearm = 0;
 		};
 	} count (weapons player);
-
-	_currentBackpacks = 0;
-
+	
 	_b = unitBackpack player;
-	if (!isNull _b) then {
-		_currentBackpacks = 1;
-	};
-
-	_allowedBackpacks = 1 - _currentBackpacks;
+	_allowedBackpacks = if (isNull _b) then {1} else {0};
 
 	_allowedTools = 14; // 12 toolbelt + 1 Binocular + 1 NVG
 	_duplicate = false;
@@ -87,6 +81,7 @@ if (_selection == 2) then { //gear
 		_check1 = true;
 	} else {
 		systemChat format[localize "STR_EPOCH_TRADE_GEAR_FULL", _allowedPrimary, _allowedSidearm , _allowedTools];
+		if (_duplicate) then { systemChat localize "STR_EPOCH_TRADE_DUPLICATE_TOOL"; };
 	};
 	if (_allowedPistolMags >= _toBuyPistolMags && _allowedRegularMags >= _toBuyRegularMags) then {
 		_check2 = true;
@@ -95,6 +90,8 @@ if (_selection == 2) then { //gear
 	};
 	if (_allowedBackpacks >= _toBuyBags) then {
 		_check3 = true;
+	} else {
+		systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK";
 	};
 
 	if (_check1 && _check2 && _check3) then { _return = true; };
@@ -141,8 +138,7 @@ if (_selection == 0) then { //backpack
 		_check0 = true;
 		_freeSpace = [_backpack,_primaryToBuy,_sidearmToBuy,_toolsToBuy,_toBuyTotalMags] call Z_calcFreeSpace;
 		_totalSpace = _freeSpace select 0;
-		_allowedMags = _freeSpace select 1;
-		_allowedWeapons = _freeSpace select 2;
+		_allowedWeapons = _freeSpace select 2; // needed since some bags have >= 5 slots but transportMaxWeapons = 0;
 		_totalBagSlots = _freeSpace select 4;
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_NO_BACKPACK";
@@ -151,29 +147,26 @@ if (_selection == 0) then { //backpack
 	_check1 = false;
 	_check2 = false;
 	_check3 = false;
-	_check4 = false;
 
-	if (_allowedWeapons >= _toBuyWeaps) then {
+	if (_allowedWeapons >= _toBuyWeaps) then { //_toBuyWeaps does not include tools (which can exceed transportMaxWeapons in backpacks but not vehicles)
 		_check1 = true;
 	} else {
 		systemChat format[localize "STR_EPOCH_TRADE_BAG_WEPS", _allowedWeapons];
 	};
-	if (_allowedMags >= _toBuyTotalMags) then {
+
+	if (_toBuyBags < 1) then { // A backpack can not hold any backpacks
 		_check2 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedMags];
-	};
-	if (_toBuyBags < 1) then { // A backpack can not hold any backpacks
-		_check3 = true;
+		systemChat localize "STR_EPOCH_TRADE_BAG_BAGS";
 	};
 
 	if (_totalSpace <= _totalBagSlots) then {
-		_check4 = true;
+		_check3 = true;
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL";
 	};
 
-	if (_check0 && _check1 && _check2 && _check3 && _check4) then { _return = true; };
+	if (_check0 && _check1 && _check2 && _check3) then { _return = true; };
 };
 
 _return

@@ -35,7 +35,8 @@ if (!isNull _vehicle) then {
 	_normalMags = _freeSpace select 5;
 	_normalWeaps = _freeSpace select 6;	
 	//_normalBags = _freeSpace select 7;
-	// Can't sell backpacks from vehicle because there is currently no command to remove single backpacks from cargo (only clearBackpackCargo which removes all)
+	// Don't allow selling backpacks from vehicles because we can not get backpack contents.
+	// We can only remove all backpacks with clearBackpackCargo and then add back new empty backpacks for ones that weren't sold.
 
 	[_normalWeaps,_normalMags,typeOf _vehicle,[]] call Z_checkArrayInConfig;
 };

@@ -16182,6 +16182,9 @@
 			<English>You can only purchase one vehicle at a time.</English>
 			<Russian>Вы можете купить только один транспорт за сделку.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_DUPLICATE_TOOL">
+			<English>You can not buy more than one of the same tool into your gear.</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_GEAR_FULL">
 			<English>You can only buy %1 primary, %2 sidearm and %3 tools into your gear.</English>
 			<Russian>Вы можете купить в снаряжение: оружия-%1, пистолетов-%2, инструментов-%3.</Russian>
@@ -16208,10 +16211,6 @@
 		<Key ID="STR_EPOCH_TRADE_BAG_WEPS">
 			<English>Only %1 weapons will fit into your backpack.</English>
 			<Russian>В рюкзак поместится оружия: %1.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TRADE_BAG_MAGS">
-			<English>Only %1 mags will fit into your backpack.</English>
-			<Russian>В рюкзак поместится предметов: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_BAGS">
 			<English>You can't purchase a backpack into your backpack.</English>
@@ -16258,17 +16257,6 @@
 		<Key ID="STR_EPOCH_TRADE_DEBUG">
 			<English>DEBUG: Something went wrong in the pay process. Please report this issue.</English>
 			<Russian>Отладка: Что-то пошло не так в процессе оплаты. Пожалуйста, сообщите об этой проблеме.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TRADE_CONTAINER_FULL">
-			<English>Cannot buy: No empty slots!</English>
-			<German>Kauf nicht möglich: Keine freien Slots</German>
-			<Italian>Impossibile comprare: nessuno slot vuoto!</Italian>
-			<Spanish>No puedes comprar: ¡no hay huecos libres!</Spanish>
-			<French>Achat impossible : aucun emplacement vide !</French>
-			<Czech>Nelze koupit: Není volné místo!</Czech>
-			<Russian>Нет пустых ячеек!</Russian>
-			<Polish>Nie można kupić: brak wolnych miejsc!</Polish>
-			<Hungarian>Nem vásárolhatsz! Nincs üres hely!</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_GEAR_AND_BAG_FULL">
 			<English>Cannot buy: Not enough empty slots in your gear or bag to accept change!</English>

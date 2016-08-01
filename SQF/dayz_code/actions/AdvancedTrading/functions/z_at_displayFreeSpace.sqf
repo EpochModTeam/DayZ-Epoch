@@ -51,8 +51,6 @@ if (_selection == 0) then { //backpack
 	if (!isNull _backpack) then {
 		_freeSpace = [_backpack,0,0,0,0] call Z_calcFreeSpace;
 		_totalSpace = _freeSpace select 0;
-		_allowedMags = _freeSpace select 1;
-		_allowedWeapons = _freeSpace select 2;
 		_totalBagSlots = _freeSpace select 4;
 		
 		_pic = getText (configFile >> "CfgVehicles" >> (typeOf _backpack) >> "picture");
