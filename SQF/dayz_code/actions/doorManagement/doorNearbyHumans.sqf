@@ -1,6 +1,8 @@
-private ["_closePeople","_friendUID","_friendName"];
+private ["_closePeople","_friendUID","_friendName","_lb"];
+disableSerialization;
 
-lbClear 7101;
+_lb = (findDisplay 711195) displayCtrl 7101;
+lbClear _lb;
 _closePeople =  player nearEntities ["CAManBase", 10];
 if (!DZE_doorManagementMustBeClose) then {_closePeople = playableUnits};
 Humans = [];
@@ -9,6 +11,8 @@ Humans = [];
 		_friendUID = [_x] call FNC_GetPlayerUID;
 		_friendName = name  _x;
 		Humans set [count Humans, [_friendUID,_friendName]];
-		lbAdd [7101, _friendName];
+		_lb lbAdd _friendName;
 	};
 } forEach _closePeople;
+
+lbSort _lb;

@@ -96,6 +96,8 @@ if (Z_SingleCurrency) then {
 
 _canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses] call Z_allowBuying;
 
+if (!_canBuy) exitWith {};
+
 _myMoney = player getVariable[Z_MoneyVariable,0];
 
 _enoughMoney = false;
