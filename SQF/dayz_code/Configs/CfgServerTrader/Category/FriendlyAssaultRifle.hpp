@@ -19,15 +19,10 @@ class Category_485 {
 		buy[] = {6,"ItemGoldBar"};
 		sell[] = {3,"ItemGoldBar"};
 	};
-	class M16A2_DZ { // no attachment support
+	class M16A2_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
-	};
-	class M16A2_GL_DZ { // no attachment support
-		type = "trade_weapons";
-		buy[] = {4,"ItemGoldBar"};
-		sell[] = {2,"ItemGoldBar"};
 	};
 	class M16A4_DZ {
 		type = "trade_weapons";
