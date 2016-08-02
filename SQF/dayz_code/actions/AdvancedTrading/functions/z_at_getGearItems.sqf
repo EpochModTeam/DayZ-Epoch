@@ -11,6 +11,7 @@ Z_SellArray = [];
 Z_SellableArray = [];
 _mags = magazines player;
 _weaps = weapons player;
+_weaps set [count _weaps,dayz_onBack];
 _bag = unitBackpack player;
 _bags = if (isNull _bag) then {[]} else {[typeOf _bag]};
 

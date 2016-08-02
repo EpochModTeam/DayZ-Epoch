@@ -107,11 +107,11 @@ _tSold = _itemsArray + _weaponsArray + _bpArray + _vehArray;
 
 if (Z_SellingFrom == 0) then {
 	_outcome = [unitBackpack player,_itemsArray,_weaponsArray, _vehArray] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
-	systemchat format[localize "STR_EPOCH_TRADE_SELL_IN_BACKPACK",count _tSold];
+	systemChat format[localize "STR_EPOCH_TRADE_SELL_IN_BACKPACK",count _tSold];
 };
 if (Z_SellingFrom == 1) then {
 	_outcome = [Z_vehicle,_itemsArray,_weaponsArray,_vehArray] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
-	systemchat format[localize "STR_EPOCH_TRADE_SELL_IN_VEHICLE",count _tSold,typeOf Z_vehicle];
+	systemChat format[localize "STR_EPOCH_TRADE_SELL_IN_VEHICLE",count _tSold,typeOf Z_vehicle];
 };
 
 _itemsToLog set [0,(_itemsArray + _weaponsArray + _bpArray + [typeOf Z_vehicle])];
@@ -140,7 +140,12 @@ if (Z_SellingFrom == 2) then {
 				_type = _x select 1;
 				if (_type == "trade_items") then {_name = configFile >> "CfgMagazines" >> _name;};
 				if (_type == "trade_weapons") then {_name = configFile >> "CfgWeapons" >> _name;};
-				_localResult = [player,_name,1] call BIS_fnc_invRemove; // Use config for BIS_fnc_invRemove
+				if (_x select 0 == dayz_onBack) then {
+					dayz_onBack = ""; // Remove from back
+					_localResult = 1;
+				} else {
+					_localResult = [player,_name,1] call BIS_fnc_invRemove; // Use config for BIS_fnc_invRemove
+				};
 				if (_localResult != 1) then {
 					if (_x select 1 == "trade_items") then {
 						_mA set [count(_mA),0];
@@ -168,7 +173,7 @@ if (Z_SellingFrom == 2) then {
 	if (_bagTraded) then {
 		_outcome set [2,[1]];
 	};
-	systemchat format[localize "STR_EPOCH_TRADE_SELL_IN_GEAR",count _tSold];
+	systemChat format[localize "STR_EPOCH_TRADE_SELL_IN_GEAR",count _tSold];
 };
 
 {_itemsToLog set [1, (_itemsToLog select 1) + _x]} forEach _outcome;

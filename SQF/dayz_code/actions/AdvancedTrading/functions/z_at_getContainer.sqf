@@ -25,7 +25,7 @@ if (Z_Selling) then {
 	switch (_lbIndex) do {
 		case 0: { //backpack
 			if (!isNull _backpack) then {
-				[localize "STR_EPOCH_TRADE_SELLING_BACKPACK"] call Z_filleTradeTitle;
+				[localize "STR_EPOCH_TRADE_SELLING_BACKPACK"] call Z_fillTradeTitle;
 				Z_SellingFrom = 0;
 				call Z_getBackpackItems;
 			} else {
@@ -36,7 +36,7 @@ if (Z_Selling) then {
 		case 1: { //vehicle
 			_canBuyInVehicle = true call Z_checkCloseVehicle;
 			if (_canBuyInVehicle) then {
-				[localize "STR_EPOCH_TRADE_SELLING_VEHICLE"] call Z_filleTradeTitle;
+				[localize "STR_EPOCH_TRADE_SELLING_VEHICLE"] call Z_fillTradeTitle;
 				Z_SellingFrom = 1;
 				call Z_getVehicleItems;
 			} else {
@@ -45,7 +45,7 @@ if (Z_Selling) then {
 			};
 		};
 		case 2: { //gear
-			[localize "STR_EPOCH_TRADE_SELLING_GEAR"] call Z_filleTradeTitle;
+			[localize "STR_EPOCH_TRADE_SELLING_GEAR"] call Z_fillTradeTitle;
 			Z_SellingFrom = 2;
 			call Z_getGearItems;
 		};
@@ -57,7 +57,7 @@ if (Z_Selling) then {
 		case 0: { //backpack
 			if (!isNull _backpack) then {
 				Z_SellingFrom = 0;
-				[localize "STR_EPOCH_TRADE_BUYING_BACKPACK"] call Z_filleTradeTitle;
+				[localize "STR_EPOCH_TRADE_BUYING_BACKPACK"] call Z_fillTradeTitle;
 				[0] call Z_displayFreeSpace;
 			} else {
 				ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_TRADE_NO_BACKPACK"];
@@ -68,7 +68,7 @@ if (Z_Selling) then {
 			_canBuyInVehicle = true call Z_checkCloseVehicle;
 			if (_canBuyInVehicle) then {
 				Z_SellingFrom = 1;
-				[localize "STR_EPOCH_TRADE_BUYING_VEHICLE"] call Z_filleTradeTitle;
+				[localize "STR_EPOCH_TRADE_BUYING_VEHICLE"] call Z_fillTradeTitle;
 				[1] call Z_displayFreeSpace;
 			} else {
 				ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_PLAYER_245"];
@@ -77,7 +77,7 @@ if (Z_Selling) then {
 		};
 		case 2: { //gear
 			Z_SellingFrom = 2;
-			[localize "STR_EPOCH_TRADE_BUYING_GEAR"] call Z_filleTradeTitle;
+			[localize "STR_EPOCH_TRADE_BUYING_GEAR"] call Z_fillTradeTitle;
 			[2] call Z_displayFreeSpace;
 		};
 	};

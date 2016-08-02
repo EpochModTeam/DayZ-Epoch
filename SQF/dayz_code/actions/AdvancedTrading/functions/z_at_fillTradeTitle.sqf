@@ -1,5 +1,5 @@
 /**
-*	[_text] call Z_filleTradeTitle
+*	[_text] call Z_fillTradeTitle
 *
 *	@param String _this select 0 (_text) -> The text you want in the label.
 *

@@ -39,6 +39,7 @@ if (_selection == 2) then { //gear
 
 	_p = primaryWeapon player;
 	_allowedPrimary = if (!isNil "_p" && _p != "") then {0} else {1};
+	if (DZE_TwoPrimaries == 2 && dayz_onBack == "") then { _allowedPrimary = _allowedPrimary + 1; };
 
 	// (secondaryWeapon player) returns launcher, doesn't work for pistol
 	_allowedSidearm = 1;

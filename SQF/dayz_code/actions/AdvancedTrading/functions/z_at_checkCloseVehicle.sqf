@@ -17,9 +17,9 @@ if (!isNull _vehicle) then {
 	if (_this) then { // Set trade title, don't set on menu start up since gear is selected initially.
 		systemChat format[localize "STR_EPOCH_TRADE_SELECTED",typeOf Z_vehicle];
 		if (Z_Selling) then {
-			[format[localize "STR_EPOCH_TRADE_SELLING_FROM", typeOf Z_vehicle]] call Z_filleTradeTitle;
+			[format[localize "STR_EPOCH_TRADE_SELLING_FROM", typeOf Z_vehicle]] call Z_fillTradeTitle;
 		} else {
-			[format[localize "STR_EPOCH_TRADE_BUYING_IN", typeOf Z_vehicle]] call Z_filleTradeTitle;
+			[format[localize "STR_EPOCH_TRADE_BUYING_IN", typeOf Z_vehicle]] call Z_fillTradeTitle;
 		};
 	};
 };

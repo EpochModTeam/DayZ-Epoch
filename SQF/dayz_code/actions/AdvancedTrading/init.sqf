@@ -55,7 +55,7 @@ if (isNil "Z_AdvancedTradingInit") then {
 
 	ZUPA_fnc_removeWeaponsAndMagazinesCargo = 	compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\zupa_fnc_removeWeaponsAndMagazinesCargo.sqf");
 
-	Z_filleTradeTitle = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_filleTradeTitle.sqf");
+	Z_fillTradeTitle = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_fillTradeTitle.sqf");
 	Z_clearLists =								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_clearLists.sqf");
 	Z_clearSellableList =						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_clearSellableList.sqf");
 	Z_clearBuyList = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_clearBuyList.sqf");

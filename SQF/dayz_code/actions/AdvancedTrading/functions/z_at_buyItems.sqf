@@ -1,6 +1,6 @@
 private ["_weaponsToBuy","_backpacksToBuy","_toolsToBuy","_sidearmToBuy","_primaryToBuy","_priceToBuy"
 ,"_enoughMoney","_myMoney","_canBuy","_moneyInfo","_count","_success","_toolClasses","_itemsToLog"
-,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy"];
+,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy","_hasPrimary","_p"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -29,7 +29,7 @@ if (Z_SingleCurrency) then {
 				if ('PistolCore' in _parentClasses) then {
 					_sidearmToBuy = _sidearmToBuy + (_x select 9);
 				} else {
-					_primaryToBuy = _primaryToBuy + (_x select 9); // _ammount
+					_primaryToBuy = _primaryToBuy + (_x select 9); // _amount
 				};
 			};
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
@@ -115,7 +115,7 @@ if (Z_SingleCurrency) then {
 
 // Pre-check if player has enough room to accept change
 _success = if (Z_SingleCurrency) then { true } else { [player,_priceToBuy,_moneyInfo,true,_regularMagsToBuy] call Z_payDefault };
-if (!_success) exitWith { systemChat localize "STR_EPOCH_TRADE_GEAR_AND_BAG_FULL"; }; // Not enough room in gear or bag to accept change
+if (!_success && _enoughMoney) exitWith { systemChat localize "STR_EPOCH_TRADE_GEAR_AND_BAG_FULL"; }; // Not enough room in gear or bag to accept change
 
 if (_enoughMoney) then {
 	_bTotal = 0;
@@ -205,8 +205,14 @@ if (_enoughMoney) then {
 		{
 			if (_x select 1 == "trade_weapons") then {
 				_count = 0;
-				while { _count < (_x select 9)} do {
-					player addWeapon (_x select 0);
+				while {_count < (_x select 9)} do {
+					_p = primaryWeapon player;
+					_hasPrimary = if (!isNil "_p" && _p != "") then {true} else {false};				
+					if (_hasPrimary && getNumber (configFile >> "CfgWeapons" >> (_x select 0) >> "type") == 1) then {
+						dayz_onBack = _x select 0; //Add to back
+					} else {
+						player addWeapon (_x select 0);
+					};
 					_count = _count + 1;
 				};
 			};
