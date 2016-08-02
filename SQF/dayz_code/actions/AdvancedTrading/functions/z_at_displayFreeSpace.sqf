@@ -1,14 +1,30 @@
-private ["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBackpacks","_pic","_backpack","_actualMags","_freeSpace"];
+private ["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBackpacks","_pic","_backpack","_actualMags","_freeSpace","_allowedPrimary","_allowedSidearm","_p"];
 #include "defines.hpp"
 
 _selection = _this select 0;
 _returnArray = [0,0,0];
 
 if (_selection == 2) then { //gear
-	_actualMags = {!(_x in MeleeMagazines)} count (magazines player);
-	_allowedMags = 20 - _actualMags;
-	// 12 toolbelt + 1 Binoculars + 1 NVG + 1 Pistol + 1 Primary (onBack isn't counted in weapons player)
-	_allowedWeapons = 16 - count(weapons player);
+	//_actualMags = {!(_x in MeleeMagazines)} count (magazines player);
+	//_allowedMags = 20 - _actualMags; //8 pistol + 12 regular = 20
+	// Don't show pistol mag slots as item slots in gear. Player is informed of pistol mag slots count in systemChat.
+	_actualMags = {(getNumber (configFile >> "CfgMagazines" >> _x >> "type") == 256)} count (magazines player); // 256 = WeaponSlotItem (normal magazine)
+	_allowedMags = 12 - _actualMags;
+	
+	_p = primaryWeapon player;
+	_allowedPrimary = if (!isNil "_p" && _p != "") then {0} else {1};
+
+	_allowedSidearm = 1;
+	{
+		if (getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 2) exitWith { // 2 = WeaponSlotHandGun (occupies pistol slot)
+			_allowedSidearm = 0;
+		};
+	} count (weapons player);
+	
+	// 12 toolbelt + 1 Binoculars + 1 NVG + 1 Pistol + 1 Primary = 16 (onBack isn't counted in weapons player)
+	//_allowedWeapons = 16 - count(weapons player);
+	// Don't show tool slots as weapon slots in gear. Player is informed of tool slots count in systemChat.
+	_allowedWeapons = _allowedPrimary + _allowedSidearm;
 
 	_pic = getText (configFile >> "CfgVehicles" >> (typeOf player) >> "portrait");
 

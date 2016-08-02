@@ -16208,6 +16208,10 @@
 		<Key ID="STR_EPOCH_TRADE_BACKPACK_FULL">
 			<English>Total backpack space exceeded.</English>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_BAG_MAGS">
+			<English>Only %1 mags will fit into your backpack.</English>
+			<Russian>В рюкзак поместится предметов: %1.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_WEPS">
 			<English>Only %1 weapons will fit into your backpack.</English>
 			<Russian>В рюкзак поместится оружия: %1.</Russian>

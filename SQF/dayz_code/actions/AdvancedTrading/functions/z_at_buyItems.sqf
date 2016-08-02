@@ -155,7 +155,7 @@ if (_enoughMoney) then {
 		publicVariableServer  "PVDZE_veh_Publish2";
 		_keySelected;
 	};
-	systemChat localize "STR_EPOCH_PLAYER_105";
+	//systemChat localize "STR_EPOCH_PLAYER_105"; // "Stand still to complete trade". Medic animation loop no longer used.
 
 	closeDialog 2;
 

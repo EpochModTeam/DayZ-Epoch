@@ -1,5 +1,5 @@
 private ["_selection","_return","_toBuyWeaps","_toBuyTotalMags","_toBuyBags","_toolsToBuy","_sidearmToBuy"
-,"_primaryToBuy","_currentPrimarys","_p","_b","_check0","_check1","_check2","_check3","_check4","_allowedMags"
+,"_primaryToBuy","_p","_b","_check0","_check1","_check2","_check3","_check4","_allowedMags"
 ,"_allowedPrimary","_allowedTools","_allowedSidearm","_allowedBackpacks","_parentClasses","_toolClasses"
 ,"_duplicate","_quantity","_tool","_totalBagSlots","_pistolMags","_regularMags","_toBuyPistolMags"
 ,"_toBuyRegularMags","_type","_freeSpace","_backpack","_totalSpace"
@@ -37,14 +37,8 @@ if (_selection == 2) then { //gear
 	_allowedPistolMags = 8 - _pistolMags;
 	_allowedRegularMags = 12 - _regularMags;
 
-	_currentPrimarys = 0;
-
 	_p = primaryWeapon player;
-	if (!isNil '_p' && _p != "") then {
-		_currentPrimarys = 1;
-	};
-
-	_allowedPrimary = 1 - _currentPrimarys;
+	_allowedPrimary = if (!isNil "_p" && _p != "") then {0} else {1};
 
 	// (secondaryWeapon player) returns launcher, doesn't work for pistol
 	_allowedSidearm = 1;
@@ -138,6 +132,7 @@ if (_selection == 0) then { //backpack
 		_check0 = true;
 		_freeSpace = [_backpack,_primaryToBuy,_sidearmToBuy,_toolsToBuy,_toBuyTotalMags] call Z_calcFreeSpace;
 		_totalSpace = _freeSpace select 0;
+		_allowedMags = _freeSpace select 1;
 		_allowedWeapons = _freeSpace select 2; // needed since some bags have >= 5 slots but transportMaxWeapons = 0;
 		_totalBagSlots = _freeSpace select 4;
 	} else {
@@ -147,26 +142,33 @@ if (_selection == 0) then { //backpack
 	_check1 = false;
 	_check2 = false;
 	_check3 = false;
+	_check4 = false;
 
 	if (_allowedWeapons >= _toBuyWeaps) then { //_toBuyWeaps does not include tools (which can exceed transportMaxWeapons in backpacks but not vehicles)
 		_check1 = true;
 	} else {
 		systemChat format[localize "STR_EPOCH_TRADE_BAG_WEPS", _allowedWeapons];
 	};
+	
+	if (_allowedMags >= _toBuyTotalMags) then {
+		_check2 = true;
+	} else {
+		systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedMags];
+	};
 
 	if (_toBuyBags < 1) then { // A backpack can not hold any backpacks
-		_check2 = true;
+		_check3 = true;
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_BAG_BAGS";
 	};
 
 	if (_totalSpace <= _totalBagSlots) then {
-		_check3 = true;
+		_check4 = true;
 	} else {
-		systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL";
+		if (_check1 && _check2 && _check3) then { systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL"; }; // Avoids redundant message
 	};
 
-	if (_check0 && _check1 && _check2 && _check3) then { _return = true; };
+	if (_check0 && _check1 && _check2 && _check3 && _check4) then { _return = true; };
 };
 
 _return
