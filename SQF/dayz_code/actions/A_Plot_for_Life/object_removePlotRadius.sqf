@@ -1,5 +1,5 @@
 // Remove preview build by RimBlock (http://epochmod.com/forum/index.php?/user/12612-rimblock/)
-private ["_distance","_plotPole","_findNearestPoles","_validMarkers","_isNearPlot","_poleInv"]
+private ["_distance","_plotPole","_findNearestPoles","_validMarkers","_isNearPlot","_poleInv"];
 
 _distance = (DZE_PlotPole select 0) + 5;
 
