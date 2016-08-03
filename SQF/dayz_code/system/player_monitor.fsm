@@ -14,7 +14,7 @@ item9[] = {"no_PlayerID",4,218,125.000000,150.000000,225.000000,200.000000,2.000
 item10[] = {"ERROR__No_Player",2,250,325.000000,150.000000,425.000000,200.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item11[] = {"Request",2,250,-75.000000,350.000000,25.000000,400.000000,0.000000,"Request"};
 item12[] = {"Response",4,218,-175.000000,400.000000,-75.000000,450.000000,0.000000,"Response"};
-item13[] = {"Parse_Login",2,250,-66.532227,557.409241,33.467773,607.409241,0.000000,"Parse Login"};
+item13[] = {"Parse_Login",2,4346,-66.532227,557.409241,33.467773,607.409241,0.000000,"Parse Login"};
 item14[] = {"Hive_Bad",4,218,125.000000,550.000000,225.000000,600.000000,10.000000,"Hive" \n "Bad"};
 item15[] = {"ERROR__Wrong_HIVE",2,250,325.000000,550.000000,425.000000,600.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item16[] = {"Character_Setup",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Character" \n "Setup"};
@@ -32,7 +32,7 @@ item27[] = {"ERROR__Bad_Versi",2,250,325.000000,850.000000,425.000000,900.000000
 item28[] = {"Display_Ready",4,218,-175.000000,1200.000000,-75.000000,1250.000000,0.000000,"Display" \n "Ready"};
 item29[] = {"Preload_Display",2,250,-75.000000,1250.000000,25.000000,1300.000000,0.000000,"Preload" \n "Display"};
 item30[] = {"Preload_Done",4,218,-175.000000,1300.000000,-75.000000,1350.000000,0.000000,"Preload" \n "Done"};
-item31[] = {"Initialize",2,4346,-75.000000,1350.000000,25.000000,1400.000000,0.000000,"Initialize"};
+item31[] = {"Initialize",2,250,-75.000000,1350.000000,25.000000,1400.000000,0.000000,"Initialize"};
 item32[] = {"Finish",1,250,-75.000000,1625.000000,25.000000,1675.000000,0.000000,"Finish"};
 item33[] = {"no_Time_Date",4,218,125.000000,950.000000,225.000000,1000.000000,0.000000,"no Time/Date"};
 item34[] = {"sleep",4,218,525.000000,150.000000,625.000000,200.000000,0.000000,"sleep"};
@@ -243,8 +243,8 @@ link127[] = {107,32};
 link128[] = {108,109};
 link129[] = {109,110};
 link130[] = {110,64};
-globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-420.384094,456.528290,1882.460693,656.753967,890,1244,1};
-window[] = {2,-1,-1,-32000,-32000,1270,1052,2072,744,3,908};
+globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-888.855957,924.990540,1855.234863,-680.074097,890,1244,1};
+window[] = {2,-1,-1,-1,-1,708,182,1202,182,3,908};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -486,11 +486,19 @@ class FSM
                          "_isHiveOk = false;" \n
                          "_newPlayer = false;" \n
                          "_isInfected = false;" \n
+                         "_mygroup = [];" \n
+                         "_characterCoins = 0;" \n
+                         "_globalCoins = 0;" \n
+                         "_CoinsSpecial = 0;" \n
                          "" \n
                          "if (count _msg > 7) then {" \n
                          "	_isHiveOk = _msg select 7;" \n
                          "	_newPlayer = _msg select 8;" \n
                          "	_isInfected = _msg select 9;" \n
+                         "	_mygroup		= _msg select 10;" \n
+                         "	_characterCoins		= _msg select 11;" \n
+                         "	_globalCoins		= _msg select 12;" \n
+                         "	_CoinsSpecial		= _msg select 13;" \n
                          "	diag_log (""PLAYER RESULT: "" + str(_isHiveOk));" \n
                          "};" \n
                          "" \n
@@ -1157,6 +1165,17 @@ class FSM
                          "r_player_blood = 		player getVariable[""USEC_BloodQty"",r_player_bloodTotal];" \n
                          "r_player_bloodtype = player getVariable [""blood_type"", false];" \n
                          "r_player_rh = player getVariable [""rh_factor"", false];" \n
+                         "" \n
+                         "if (Z_SingleCurrency) then {" \n
+                         "	player setVariable [Z_MoneyVariable, _characterCoins, true];" \n
+                         "	player setVariable [""GlobalMoney"", _globalCoins, true];" \n
+                         "	player setVariable [""MoneySpecial"", _CoinsSpecial, true];" \n
+                         "};" \n
+                         "" \n
+                         "if (DZE_groupManagement) then {" \n
+                         "	player setVariable [""savedGroup"", _mygroup, true];" \n
+                         "	player setVariable [""purgeGroup"", 0, true];" \n
+                         "};" \n
                          "" \n
                          "dayz_musicH = [] spawn player_music;" \n
                          "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
@@ -1936,11 +1955,6 @@ class FSM
                          "" \n
                          "PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray (name vehicle player)];" \n
                          "" \n
-                         "if (r_player_unconscious) then {" \n
-                         "	r_player_timeout = player getVariable[""unconsciousTime"",0];" \n
-                         "	player playActionNow ""Die"";" \n
-                         "	[player,r_player_timeout] call fnc_usec_damageUnconscious;" \n
-                         "};" \n
                          "" \n
                          "progressLoadingScreen 1;" \n
                          "" \n

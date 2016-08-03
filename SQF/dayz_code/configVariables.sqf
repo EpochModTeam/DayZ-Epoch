@@ -46,6 +46,7 @@ timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS], RADIUS],[[3D POS], RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
+DZE_groupManagement = false; //Enable or disable group management. Enabled by default
 
 // Advanced Trading
 DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
@@ -54,10 +55,11 @@ DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire
 DZE_SaleRequiresKey = false; //Require the player has the key for a vehicle in order to sell it. The key can be in the player's toolbelt or backpack, or the vehicle's inventory. False by default
 Z_AT_FolderLocation = '\z\addons\dayz_code\actions\AdvancedTrading';
 Z_VehicleDistance = 40; // Distance that a vehicle needs to be to see it's content or to sell it.
-Z_SingleCurrency = false; // Does your server use a single currency system.
 Z_AllowTakingMoneyFromBackpack = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your backpack.
 Z_AllowTakingMoneyFromVehicle = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your vehicle.
-Z_MoneyVariable = "cashMoney"; // If using a Single currency system, change this to whatever currency you are using.
+Z_SingleCurrency = false; // Does your server use a single currency system?
+Z_MoneyVariable = "cashMoney"; // If using a Single currency system (Z_SingleCurrency = true;), change this to whatever currency you are using.
+DZE_MoneyStorageClasses = []; // If using a Single currency system (Z_SingleCurrency = true;), this is an array of object classes players can store coins in
 
 // Plot Management and Plot for Life
 DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.

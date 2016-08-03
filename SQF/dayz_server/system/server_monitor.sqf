@@ -67,7 +67,8 @@ if (_status == "ObjectStreamStart") then {
 	_hitPoints =	if ((typeName (_x select 6)) == "ARRAY") then { _x select 6 } else { [] };
 	_fuel =			if ((typeName (_x select 7)) == "SCALAR") then { _x select 7 } else { 0 };
 	_damage = 		if ((typeName (_x select 8)) == "SCALAR") then { _x select 8 } else { 0.9 };
-	
+	_storageMoney = if ((typeName (_x select 9)) == "SCALAR") then { _x select 9 } else { 0 };
+
 	//set object to be in maintenance mode
 	_maintenanceMode = false;
 	_maintenanceModeVars = [];
@@ -168,13 +169,16 @@ if (_status == "ObjectStreamStart") then {
 		};
 		
 		//Create it
-		_object = createVehicle [_type, _pos, [], 0, if (_type in DayZ_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
-		
+		_object = createVehicle [_type, [0,0,0], [], 0, if (_type in DayZ_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
+		_object setPosATL _pos;
+
 		// prevent immediate hive write when vehicle parts are set up
 		_object setVariable ["lastUpdate",diag_ticktime];
 		_object setVariable ["ObjectID", _idKey, true];
 		_object setVariable ["OwnerPUID", _ownerPUID, true];
-
+		if ((typeOf (_object)) in DZE_MoneyStorageClasses) then {
+			_object setVariable [Z_MoneyVariable, _storageMoney, true];
+		};
 		if (DZE_permanentPlot && (typeOf _object == "Plastic_Pole_EP1_DZ")) then {
 			_object setVariable ["plotfriends", _inventory, true];
 		};

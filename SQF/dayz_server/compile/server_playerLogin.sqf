@@ -1,4 +1,4 @@
-private ["_doLoop","_hiveVer","_isHiveOk","_playerID","_playerObj","_primary","_key","_charID","_playerName","_backpack","_isNew","_inventory","_survival","_model","_config","_mags","_wpns","_bcpk","_newPlayer","_isInfected"];
+private ["_playerID","_forEachIndex","_endMission","_0","_1","_timeleft","_doLoop","_key","_primary","_model","_inventory","_backpack","_survival","_CharacterCoins","_group","_playerCoins","_BankCoins","_hiveVer","_mags","_wpns","_bcpk","_config","_isInfected","_remaining","_playerObj","_playerName","_newPlayer","_isNew","_charID","_isHiveOk"];
 
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
@@ -17,6 +17,10 @@ _backpack = [];
 _survival = [0,0,0];
 _model = "";
 _isInfected = 0;
+_CharacterCoins = 0;
+_group = [];
+_playerCoins = 0;
+_BankCoins = 0;
 
 if (_playerID == "") then {
 	_playerID = [_playerObj] call FNC_GetPlayerUID;
@@ -78,10 +82,9 @@ if ((_primary select 0) == "ERROR") exitWith {
 
 //Process request
 _newPlayer = _primary select 1;
-_isNew = count _primary < 7; //_result select 1;
+_isNew = count _primary < 10; //_result select 1;
 _charID = _primary select 2;
 //diag_log ("LOGIN RESULT: " + str(_primary));
-
 /* PROCESS */
 _hiveVer = 0;
 
@@ -90,14 +93,20 @@ if (!_isNew) then {
 	_inventory = _primary select 4;
 	_backpack = _primary select 5;
 	_survival = _primary select 6;
-	_group = _primary select 7;
+	_CharacterCoins = _primary select 7;
 	_model = _primary select 8;
-	_hiveVer = _primary select 9;
+	_group = _primary select 9;
+	_playerCoins = _primary select 10;
+	_BankCoins = _primary select 11;
+	_hiveVer = _primary select 12;
 	if !(_model in AllPlayers) then {_model = "Survivor2_DZ";};
 } else {
 	_isInfected = if (DZE_PlayerZed) then {_primary select 3} else {0};
 	_model = _primary select 4;
-	_hiveVer = _primary select 5;	
+	_group = _primary select 5;
+	_playerCoins = _primary select 6;
+	_BankCoins = _primary select 7;
+	_hiveVer = _primary select 8;	
 	if (isNil "_model") then {
 		_model = "Survivor2_DZ";
 	} else {
@@ -122,7 +131,7 @@ if (!_isNew) then {
 
 _isHiveOk = if (_hiveVer >= dayz_hiveVersionNo) then {true} else {false}; //EDITED
 
-PVCDZ_plr_Login = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected];
+PVCDZ_plr_Login = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected,_group,_CharacterCoins,_playerCoins,_BankCoins];
 (owner _playerObj) publicVariableClient "PVCDZ_plr_Login";
 
 //Make player wait until ghost timer is up.

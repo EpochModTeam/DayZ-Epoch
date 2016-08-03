@@ -1,4 +1,4 @@
-private ["_characterID","_temp","_currentWpn","_magazines","_force","_isNewPos","_humanity","_isNewGear","_currentModel","_modelChk","_playerPos","_playerGear","_playerBackp","_backpack","_killsB","_killsH","_medical","_isNewMed","_character","_timeSince","_charPos","_isInVehicle","_distanceFoot","_lastPos","_kills","_headShots","_timeGross","_timeLeft","_onLadder","_isTerminal","_currentAnim","_muzzles","_array","_key","_lastTime","_config","_currentState","_name"];
+private ["_debug","_distance","_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim","_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_group","_playerBackp","_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince","_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character","_magazines","_characterID","_force","_charPos","_isInVehicle","_name","_Achievements","_isNewMed","_isNewPos","_isNewGear"];
 //[player,array]
 
 _character = _this select 0;
@@ -88,7 +88,7 @@ if (_characterID != "0") then {
 	};
 	
 	//Process update
-	if (_characterID != "0") then {		
+	//if (_characterID != "0") then {		
 		//Record stats while we're here		
 		/*
 			Check previous stats against what client had when they logged in
@@ -164,13 +164,31 @@ if (_characterID != "0") then {
 		if (!isNull _character) then {
 			if (alive _character) then {
 				//Wait for HIVE to be free and send request
-				_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
+				if (Z_SingleCurrency) then {
+					_coins = _character getVariable [Z_MoneyVariable, -1]; //should getting coins fail set the variable to an invalid value to prevent overwritting the in the DB
+					_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins];
+				} else {
+					_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
+				};
 				//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
 				//diag_log format["HIVE: SYNC: [%1,%2,%3,%4]",_characterID,_playerPos,_playerGear,_playerBackp];
 				_key call server_hiveWrite;
 			};
 		};
-		
+
+		if (Z_SingleCurrency) then { //update global coins
+			_globalCoins = _character getVariable ["GlobalMoney", -1];
+			_bankCoins = _character getVariable ["MoneySpecial", -1];
+			_key = format["CHILD:205:%1:%2:%3:%4:",(getPlayerUID _character),dayZ_instance,_globalCoins,_bankCoins];
+			_key call server_hiveWrite;
+		};
+
+		if (DZE_groupManagement) then { //update player group
+			_group = _character getVariable ["savedGroup", []];
+			_key = format["CHILD:204:%1:%2:%3:",(getPlayerUID _character),dayZ_instance, _group];
+			_key call server_hiveWrite;
+		};
+
 		// If player is in a vehicle, keep its position updated
 		if (vehicle _character != _character) then {
 			[vehicle _character, "position"] call server_updateObject;
@@ -183,5 +201,5 @@ if (_characterID != "0") then {
 		if (_timeSince > 0) then {
 			_character setVariable ["lastTime",(diag_ticktime - _timeLeft)];
 		};
-	};
+	//};
 };

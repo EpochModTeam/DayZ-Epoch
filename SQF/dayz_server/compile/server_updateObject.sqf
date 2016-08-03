@@ -1,8 +1,8 @@
 // [_object,_type] spawn server_updateObject;
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 if (isNil "sm_done") exitWith {};
+private ["_objectID","_objectUID","_object_position","_isNotOk","_object","_type","_recorddmg","_forced","_lastUpdate","_needUpdate","_object_inventory","_object_damage","_objWallDamage","_object_killed","_object_maintenance","_object_variables"];
 
-private ["_object","_type","_objectID","_objectUID","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk"];
 _object = _this select 0;
 _type = _this select 1;
 _recorddmg = false;
@@ -11,10 +11,10 @@ _forced = if (count _this > 2) then {_this select 2} else {false};
 _objectID = "0";
 _objectUID = "0";
 
-if !((isNil "_object") or {isNull _object}) then {
-	_objectID = _object getVariable ["ObjectID","0"];
-	_objectUID = _object getVariable ["ObjectUID","0"];
-};
+if ((isNil "_object") || {isNull _object}) exitWith {diag_log "server_updateObject.sqf _object null or nil, could not update object"};
+_objectID = _object getVariable ["ObjectID","0"];
+_objectUID = _object getVariable ["ObjectUID","0"];
+
 
 if ((typeName _objectID == "SCALAR") || (typeName _objectUID == "SCALAR")) then { 
 	#ifdef OBJECT_DEBUG
@@ -65,7 +65,7 @@ _object_position = {
 };
 
 _object_inventory = {
-	private ["_inventory","_previous","_key"];
+	private ["_inventory","_key","_isNormal","_coins"];
 	if (_object isKindOf "TrapItems") then {
 		_inventory = [["armed",_object getVariable ["armed",false]]];
 	} else {
@@ -90,9 +90,19 @@ _object_inventory = {
 	//if (str _inventory != _previous) then {
 		_object setVariable["lastInventory",_inventory];
 		if (_objectID == "0") then {
-			_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":";
+			if (Z_SingleCurrency) then {
+				_coins = _object getVariable [Z_MoneyVariable, -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
+				_key = format["CHILD:309:%1:%2:%3:",_objectUID,_inventory,_coins];
+			} else {
+				_key = format["CHILD:309:%1:%2:",_objectUID,_inventory];
+			};
 		} else {
-			_key = format["CHILD:303:%1:",_objectID] + str _inventory + ":";
+			if (Z_SingleCurrency) then {
+				_coins = _object getVariable [Z_MoneyVariable, -1];
+				_key = format["CHILD:303:%1:%2:%3:",_objectID,_inventory,_coins];
+			} else {
+				_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
+			};
 		};
 		
 		#ifdef OBJECT_DEBUG
@@ -188,12 +198,23 @@ _object_maintenance = {
 	_variables set [count _variables, ["padlockCombination", _accessArray]];
 
 	if (_objectID == "0") then {
-		_key = format["CHILD:309:%1:%2:",_objectUID,_ownerArray];
+		if (Z_SingleCurrency) then {
+			_coins = _object getVariable [Z_MoneyVariable, -1];
+			_key = format["CHILD:309:%1:%2:%3:",_objectUID,_ownerArray,_coins];
+		} else {
+			_key = format["CHILD:309:%1:%2:",_objectUID,_ownerArray];
+		};
 		_key = format["CHILD:306:%1:%2:%3:",_objectUID,[],0]; //Wont work just now.
 	} else {
-		_key = format["CHILD:303:%1:%2:",_objectID,_ownerArray];
+		if (Z_SingleCurrency) then {
+			_coins = _object getVariable [Z_MoneyVariable, -1];
+			_key = format["CHILD:303:%1:%2:%3:",_objectID,_ownerArray,_coins];
+		} else {
+			_key = format["CHILD:303:%1:%2:",_objectID,_ownerArray];
+		};
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,[],0];
 	};
+
 //	#ifdef OBJECT_DEBUG
 		diag_log ("HIVE: WRITE: Maintenance, "+ str(_key));
 //	#endif
@@ -214,9 +235,19 @@ _object_variables = {
 	_variables set [count _variables, ["BuildLock", _lockedArray]];
 
 	if (_objectID == "0") then {
-		_key = format["CHILD:309:%1:%2:",_objectUID,_variables];
+		if (Z_SingleCurrency) then {
+			_coins = _object getVariable [Z_MoneyVariable, -1];
+			_key = format["CHILD:309:%1:%2:%3:",_objectUID,_variables,_coins];
+		} else {
+			_key = format["CHILD:309:%1:%2:",_objectUID,_variables];
+		};
 	} else {
-		_key = format["CHILD:303:%1:%2:",_objectID,_variables];
+		if (Z_SingleCurrency) then {
+			_coins = _object getVariable [Z_MoneyVariable, -1];
+			_key = format["CHILD:303:%1:%2:%3:",_objectID,_variables,_coins];
+		} else {
+			_key = format["CHILD:303:%1:%2:",_objectID,_variables];
+		};
 	};
 	_key call server_hiveWrite;
 };
