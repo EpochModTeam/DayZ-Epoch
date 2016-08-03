@@ -16265,6 +16265,9 @@
 		<Key ID="STR_EPOCH_TRADE_GEAR_AND_BAG_FULL">
 			<English>Cannot buy: Not enough empty slots in your gear or bag to accept change!</English>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_BINOCULARS_FULL">
+			<English>Cannot buy: Not enough empty binocular slots in your gear!</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_NEED_COINS">
 			<English>You need %1 %2 to buy all these items.</English>
 			<Russian>Вам нужно %1 %2 для покупки.</Russian>
