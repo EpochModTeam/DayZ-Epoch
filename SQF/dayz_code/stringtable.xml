@@ -16133,10 +16133,10 @@
 			<Russian>Нет информации</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_NO_ITEMS">
-			<English>No items in buy list</English>
+			<English>No items in buying list</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_NO_ITEMS">
-			<English>No items in sell list</English>
+			<English>No items in selling list</English>
 			<Russian>Нет ничего на продажу</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
@@ -16209,11 +16209,11 @@
 			<English>Total backpack space exceeded.</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_MAGS">
-			<English>Only %1 mags will fit into your backpack.</English>
+			<English>You can only buy %1 magazines into your backpack.</English>
 			<Russian>В рюкзак поместится предметов: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_WEPS">
-			<English>Only %1 weapons will fit into your backpack.</English>
+			<English>You can only buy %1 weapons into your backpack.</English>
 			<Russian>В рюкзак поместится оружия: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BAG_BAGS">
@@ -16290,9 +16290,6 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_FROM">
 			<English>Selling from %1.</English>
-		</Key>
-		<Key ID="STR_EPOCH_TRADE_TOTAL_SPACE_SUCCEEDED">
-			<English>Total space succeeded: Mag=1, Tool=1, Side=5, Primary=10 slots and your bag capacity is %1 where you tried %2 slots.</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_CHANGE_IN_BACKPACK">
 			<English>Some change was added to your backpack.</English>

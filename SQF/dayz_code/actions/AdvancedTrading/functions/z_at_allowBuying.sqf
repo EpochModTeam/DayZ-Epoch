@@ -154,7 +154,11 @@ if (_selection == 0) then { //backpack
 	if (_allowedMags >= _toBuyTotalMags) then {
 		_check2 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedMags];
+		if (_allowedMags > 0) then {
+			systemChat format[localize "STR_EPOCH_TRADE_BAG_MAGS", _allowedMags];
+		} else {
+			systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL";
+		};
 	};
 
 	if (_toBuyBags < 1) then { // A backpack can not hold any backpacks
