@@ -78,7 +78,7 @@ if (_proceed) then {
 	// all parts removed proceed
 	if (_tobe_removed_total == _removed_total) then {
 		format[localize "STR_EPOCH_ACTIONS_4",1] call dayz_rollingMessages;
-		PVDZE_maintainArea = [player,2,_obj];
+		PVDZE_maintainArea = [player,2,[_obj, _objectID, _objectUID]];
 		publicVariableServer "PVDZE_maintainArea";
 	} else {	
 		{player addMagazine _x;} count _temp_removed_array;

@@ -1,50 +1,46 @@
 /* Maintain Area - written by Skaronator */
-private ["_player","_name","_ObjArray","_uniqueID","_objects","_key"];
+/*
+1: PVDZE_maintainArea = [player,1,[[Object, _objectID, _objectUID],[Object, _objectID, _objectUID]...etc]];
+2: PVDZE_maintainArea = [player,2,[Object, _objectID, _objectUID]];
+*/
+
+private ["_player","_name","_ObjArray","_uniqueID","_key"];
 _player = _this select 0;
 _option = _this select 1;
-/*
-1: PVDZE_maintainArea = [player,1,_target];
-2: PVDZE_maintainArea = [player,2,_object];
-*/
-_targetObj = _this select 2;
+_objectsInfo = _this select 2;
 
 if (_option == 1) then {
-	_objects = nearestObjects [_targetObj, DZE_maintainClasses, DZE_maintainRange];
 	{
-		if (damage _x >= DZE_DamageBeforeMaint) then {
-			_objectID = _x getVariable ["ObjectID","0"];
-			if (_objectID == "0") then {
-				_objectUID = _x getVariable ["ObjectUID","0"];
-				if (_objectUID != "0") then {
-					_x setDamage 0;
-					_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" && ID is "0"
-					_data = "HiveExt" callExtension _key;
+		_obj = _x select 0;
+		_ID = _x select 1;
+		_UID = _x select 2;
+			if (_ID == "0") then {
+				if (_UID != "0") then {
+					_obj setDamage 0;
+					_key = format["CHILD:397:%1:", _UID];
+					_key call server_hiveWrite;
 				};
 			} else {
-				_x setDamage 0;
-				_key = format["CHILD:396:%1:", _objectID]; //Use ID instead of UID because ID is shorter
-				_data = "HiveExt" callExtension _key;
+				_obj setDamage 0;
+				_key = format["CHILD:396:%1:", _ID];
+				_key call server_hiveWrite;
 			};
-		};
-	} count _objects;
+	} count _objectsInfo;
 	_name = if (alive _player) then { name _player; } else { "Dead Player"; };
-	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", _name, count _objects, (getPosATL _player)];
-};
-if (_option == 2) then {
-	if (damage _targetObj >= DZE_DamageBeforeMaint) then {
-		_objectID = _targetObj getVariable ["ObjectID","0"];
-		if (_objectID == "0") then {
-			_objectUID = _targetObj getVariable ["ObjectUID","0"];
-			if (_objectUID != "0") then {
-				_targetObj setDamage 0;
-				_key = format["CHILD:397:%1:", _objectUID]; // use UID if not "0" && ID is "0"
-				_data = "HiveExt" callExtension _key;
+	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", _name, (count _objectsInfo), (getPosATL _player)];
+} else {
+	_obj = _objectsInfo select 0;
+	_ID = _objectsInfo select 1;
+	_UID = _objectsInfo select 2;
+		if (_ID == "0") then {
+			if (_UID != "0") then {
+				_obj setDamage 0;
+				_key = format["CHILD:397:%1:", _UID];
+				_key call server_hiveWrite;
 			};
 		} else {
-			_targetObj setDamage 0;
-			_key = format["CHILD:396:%1:", _objectID]; //Use ID instead of UID because ID is shorter
-			_data = "HiveExt" callExtension _key;
-			
+			_obj setDamage 0;
+			_key = format["CHILD:396:%1:", _ID];
+			_key call server_hiveWrite;
 		};
-	};
 };

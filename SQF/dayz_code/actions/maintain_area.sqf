@@ -17,16 +17,18 @@ _objects = nearestObjects [_target, _objectClasses, _range];
 
 //filter to only those that have 10% damage
 _objects_filtered = [];
+_count = 0;
 {
     if (damage _x >= DZE_DamageBeforeMaint) then {
-        _objects_filtered set [count _objects_filtered, _x];
+		_objectUID = _x getVariable ["ObjectUID","0"];
+		_objectID = _x getVariable ["ObjectID","0"];		
+		_objects_filtered set [count _objects_filtered, [_x, _objectID, _objectUID]];
+		_count = _count + 1;
    };
 } count _objects;
 _objects = _objects_filtered;
 
 // TODO dynamic requirements based on used building parts?
-_count = count _objects;
-
 if (_count == 0) exitWith {
 	format[localize "STR_EPOCH_ACTIONS_22",_count] call dayz_rollingMessages;
 	DZE_ActionInProgress = false;
@@ -97,7 +99,7 @@ switch _option do {
 			// all required items removed from player gear
 			if (_tobe_removed_total == _removed_total) then {
 				format[localize "STR_EPOCH_ACTIONS_4",_count] call dayz_rollingMessages;
-				PVDZE_maintainArea = [player,1,_target];
+				PVDZE_maintainArea = [player,1, _objects];
 				publicVariableServer "PVDZE_maintainArea";	
 			} else {
 				{player addMagazine _x;} count _temp_removed_array;

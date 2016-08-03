@@ -18,14 +18,17 @@ _objects = nearestObjects [_target, _objectClasses, _range];
 _objects_filtered = [];
 {
     if (damage _x >= DZE_DamageBeforeMaint) then {
-        _objects_filtered set [count _objects_filtered, _x];
+		_objectUID = _x getVariable ["ObjectUID","0"];
+		_objectID = _x getVariable ["ObjectID","0"];		
+		_objects_filtered set [count _objects_filtered, [_x, _objectID, _objectUID]];
+		_count = _count + 1;
    };
 } count _objects;
 _objects = _objects_filtered;
 
-_count = count _objects;
-
+// TODO dynamic requirements based on used building parts?
 if (_count == 0) exitWith {
+
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
 			_result =  format["Objects to maintain: %1" , _count];
 			_ctrl ctrlSetText   _result;
@@ -47,7 +50,7 @@ _option = _this select 0;
 switch _option do {
 	case "maintain": {
 		
-		_wealth = player getVariable["cashMoney",0];
+		_wealth = player getVariable[Z_MoneyVariable,0];
 		_missing = "";
 		_missingQty = 0;
 		_proceed = true;
@@ -62,10 +65,10 @@ switch _option do {
 			player playActionNow "Medic";
 			[player,_range,true,(getPosATL player)] spawn player_alertZombies;
 
-			player setVariable["cashMoney",_newWealth,true];
+			player setVariable[Z_MoneyVariable,_newWealth,true];
 			call player_forceSave;
 			
-			PVDZE_maintainArea = [player,1,_target];
+			PVDZE_maintainArea = [player,1,_objects];
 			publicVariableServer "PVDZE_maintainArea";
 			
 			
