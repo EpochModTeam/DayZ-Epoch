@@ -1,6 +1,6 @@
 private ["_weaponsToBuy","_backpacksToBuy","_toolsToBuy","_sidearmToBuy","_primaryToBuy","_priceToBuy"
 ,"_enoughMoney","_myMoney","_canBuy","_moneyInfo","_count","_success","_toolClasses","_itemsToLog"
-,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy","_hasPrimary","_p"];
+,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy","_hasPrimary","_p","_toolAmounts"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -13,7 +13,7 @@ _sidearmToBuy = 0;
 _primaryToBuy = 0;
 _vehiclesToBuy = 0;
 _priceToBuy = 0;
-
+_toolAmounts = [];
 _toolClasses = [];
 _itemsToLog = [[],[],[],"buy"];
 
@@ -24,6 +24,7 @@ if (Z_SingleCurrency) then {
 			if ('ItemCore' in _parentClasses || 'Binocular' in _parentClasses) then {
 				_toolsToBuy = _toolsToBuy + (_x select 9);
 				_toolClasses set [count _toolClasses,(_x select 0)];
+				_toolAmounts set [count _toolAmounts,(_x select 9)];
 			} else {
 				_weaponsToBuy = _weaponsToBuy + (_x select 9);
 				if ('PistolCore' in _parentClasses) then {
@@ -61,6 +62,7 @@ if (Z_SingleCurrency) then {
 			if ('ItemCore' in _parentClasses || 'Binocular' in _parentClasses) then {
 				_toolsToBuy = _toolsToBuy + (_x select 9);
 				_toolClasses set [count _toolClasses,(_x select 0)];
+				_toolAmounts set [count _toolAmounts,(_x select 9)];
 			} else {
 				_weaponsToBuy = _weaponsToBuy + (_x select 9);
 				if ('PistolCore' in _parentClasses) then {
@@ -93,7 +95,7 @@ if (Z_SingleCurrency) then {
 	} count Z_BuyingArray;
 };
 
-_canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses] call Z_allowBuying;
+_canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses,_toolAmounts] call Z_allowBuying;
 if (!_canBuy) exitWith {}; // Keep systemChat reasons for failure in Z_allowBuying for sanity
 
 _myMoney = player getVariable[Z_MoneyVariable,0];
