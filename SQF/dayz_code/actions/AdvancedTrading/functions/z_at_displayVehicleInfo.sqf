@@ -117,14 +117,14 @@ _wepText = "";
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 	"<img image='%1' size='3' /><br />" +
-	"<t color='#33BFFF' size='0.8'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+	"<t color='#33BFFF' size='0.8'>%10: </t><t color='#ffffff' size='0.8'>%2</t><br />" +
+	"<t color='#33BFFF' size='0.8'>%11: </t><t color='#ffffff' size='0.8'>%3</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%13: </t><t color='#ffffff' size='0.8'>%6 %7</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%12: </t><t color='#ffffff' size='0.8'>%5 %7</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%14/%15/%16: </t><t color='#ffffff' size='0.8'>%9/%8/%4</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%17: </t><t color='#ffffff' size='0.8'>%18  </t><t color='#33BFFF' size='0.8'>%24: </t><t color='#ffffff' size='0.8'>%25</t><br />" + // Armor / Seats
 	"<t color='#33BFFF' size='0.8'>%21%22: </t><t color='#ffffff' size='0.8'>%23  </t><t color='#33BFFF' size='0.8'>%19: </t><t color='#ffffff' size='0.8'>%20</t><br />" + // MaxSpeed / Fuel
-	"<t color='#33BFFF' size='0.8'>%26: </t><t color='#ffffff' size='0.7'>%27</t>" // Weapons
+	"<t color='#33BFFF' size='0.8'>%26: </t><t color='#ffffff' size='0.8'>%27</t>" // Weapons
 	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_BAGS",
 	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
 	];
@@ -136,14 +136,14 @@ if (Z_SingleCurrency) then {
 
 	_formattedText = format [
 	"<img image='%1' size='3' /><br />" +
-	"<t color='#33BFFF' size='0.8'>%13: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%14: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+	"<t color='#33BFFF' size='0.8'>%13: </t><t color='#ffffff' size='0.8'>%2</t><br />" +
+	"<t color='#33BFFF' size='0.8'>%14: </t><t color='#ffffff' size='0.8'>%3</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%16: </t><t color='#ffffff' size='0.8'>%6 <img image='%12' /> %7</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%15: </t><t color='#ffffff' size='0.8'>%5 <img image='%11' /> %10</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%17/%18/%19: </t><t color='#ffffff' size='0.8'>%8/%9/%4</t><br />" +
 	"<t color='#33BFFF' size='0.8'>%20: </t><t color='#ffffff' size='0.8'>%21  </t><t color='#33BFFF' size='0.8'>%27: </t><t color='#ffffff' size='0.8'>%28</t><br />" + // Armor / Seats
 	"<t color='#33BFFF' size='0.8'>%24%25: </t><t color='#ffffff' size='0.8'>%26  </t><t color='#33BFFF' size='0.8'>%22: </t><t color='#ffffff' size='0.8'>%23</t><br />" + // MaxSpeed  /  Fuel
-	"<t color='#33BFFF' size='0.8'>%29: </t><t color='#ffffff' size='0.7'>%30</t>" // Weapons
+	"<t color='#33BFFF' size='0.8'>%29: </t><t color='#ffffff' size='0.8'>%30</t>" // Weapons
 	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_BAGS",
 	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
 	];
