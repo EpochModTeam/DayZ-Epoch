@@ -1,12 +1,19 @@
 // Made for DayZ Epoch by vbawol edited for AdvancedTrading by Zupa
-private ["_return_change","_ItemTopaz","_GemTotal","_GemTotal2","_ItemObsidian","_ItemSapphire","_ItemAmethyst","_ItemEmerald","_ItemCitrine","_ItemRuby","_gem","_value","_total","_briefcase_100oz_a","_gold_10oz_a","_gold_10oz_b","_briefcase_100oz","_gold_10oz","_gold_1oz_a","_gold_1oz_b","_gold_1oz","_silver_10oz_a","_silver_10oz_b","_silver_10oz","_silver_1oz_a","_silver_1oz_b","_silver_1oz","_successful","_trade_total","_total_currency","_addRegularMag","_justChecking","_magsAdded","_regularMagsToBuy"];
+private ["_return_change","_ItemTopaz","_GemTotal","_GemTotal2","_ItemObsidian","_ItemSapphire",
+"_ItemAmethyst","_ItemEmerald","_ItemCitrine","_ItemRuby","_gem","_value","_total","_briefcase_100oz_a",
+"_gold_10oz_a","_gold_10oz_b","_briefcase_100oz","_gold_10oz","_gold_1oz_a","_gold_1oz_b","_gold_1oz",
+"_silver_10oz_a","_silver_10oz_b","_silver_10oz","_silver_1oz_a","_silver_1oz_b","_silver_1oz",
+"_successful","_trade_total","_total_currency","_addRegularMag","_justChecking","_moneyAdded",
+"_regularMagsToBuy","_moneyInGear","_moneyInBackpack"];
 
 _successful = false;
 _trade_total = _this select 0;
 _total_currency = _this select 1;
 _justChecking = _this select 2;
 _regularMagsToBuy = _this select 3;
-_magsAdded = 0;
+_moneyInGear = _this select 4;
+_moneyInBackpack = _this select 5;
+_moneyAdded = 0;
 Z_ChangeInBackpack = false;
 Z_ChangeOverflow = false;
 
@@ -18,37 +25,43 @@ if (!Z_Selling) then {
 };
 
 _addRegularMag = {
-	private ["_backpack","_freeBagSpace","_freeSpace","_regularMags","_justChecking","_magsAdded","_item","_gearSpace","_enoughRoom","_regularMagsToBuy"];
+	private ["_backpack","_freeBagSpace","_freeSpace","_regularMags","_justChecking","_moneyAdded","_item","_enoughRoom","_regularMagsToBuy","_moneyInGear","_moneyInBackpack","_freeGearSlots"];
 	
-	_magsAdded = _this select 0;
+	_moneyAdded = _this select 0; // Return change
 	_justChecking = _this select 1;
 	_item = _this select 2;
-	_regularMagsToBuy = _this select 3;
+	if (_justChecking) then {
+		_regularMagsToBuy = _this select 3;
+		_moneyInGear = count (_this select 4); // Will be removed
+		_moneyInBackpack = count (_this select 5); // Will be removed
+	} else {
+		_regularMagsToBuy = 0; // All bought items are already in gear
+		_moneyInGear = 0; // All money was removed in Z_payDefault
+		_moneyInBackpack = 0; // All money was removed in Z_payDefault
+	};
 	
-	_freeBagSpace = 0;
 	_regularMags = {(getNumber (configFile >> "CfgMagazines" >> _x >> "type") == 256)} count (magazines player); // 256 = WeaponSlotItem (normal magazine)
-	_gearSpace = ((12 - (_regularMags + _regularMagsToBuy)) > 0);
+	_freeGearSlots = 12 - ((_regularMags + _regularMagsToBuy + _moneyAdded) - _moneyInGear);
 	
-	if (_justChecking or !_gearSpace) then {
-		_backpack = unitBackpack player;	
+	if (_justChecking or _freeGearSlots < 0) then {
+		_freeBagSpace = 0;
+		_backpack = unitBackpack player;
 		if (!isNull _backpack) then {
 			_freeSpace = [_backpack,0,0,0,0] call Z_calcFreeSpace;
 			_freeBagSpace = (_freeSpace select 4) - (_freeSpace select 0);
 		};
-		
-		_enoughRoom = (((12 - (_regularMags + _regularMagsToBuy)) + _freeBagSpace) >= _magsAdded);
+		_enoughRoom = (_freeGearSlots + _freeBagSpace + _moneyInBackpack) >= 0;
 		// Return change into vehicle or on ground is not advised due to potential for theft
 	};
 	
 	if (_justChecking) exitWith {_enoughRoom};
 	
-	if (_gearSpace) then {
+	if (_freeGearSlots >= 0) then {
 		player addMagazine _item;
 	} else {
 		if (Z_Selling) then {
 			// Items are removed before change is calculated in sellItems, so exiting sale if _enoughRoom=false; is not an option for now.
-			// Bandaid: notify player of overflow
-			// Overflow in backpack falls on ground. Overflow in gear does not.
+			// Lazy solution: notify player of overflow. Overflow in backpack falls on ground. Overflow in gear does not.
 			player addMagazine _item;
 			Z_ChangeOverflow = true;
 		} else {
@@ -149,76 +162,76 @@ if (_return_change > 0) then {
 
 	if (_ItemTopaz > 0) then {
 		for "_x" from 1 to _ItemTopaz do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemTopaz",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemTopaz"] call _addRegularMag; };
 		};
 	};
 	if (_ItemObsidian > 0) then {
 		for "_x" from 1 to _ItemObsidian do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemObsidian",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemObsidian"] call _addRegularMag; };
 		};
 	};
 	if (_ItemSapphire > 0) then {
 		for "_x" from 1 to _ItemSapphire do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemSapphire",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemSapphire"] call _addRegularMag; };
 		};
 	};
 	if (_ItemAmethyst > 0) then {
 		for "_x" from 1 to _ItemAmethyst do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemAmethyst",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemAmethyst"] call _addRegularMag; };
 		};
 	};
 	if (_ItemEmerald > 0) then {
 		for "_x" from 1 to _ItemEmerald do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemEmerald",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemEmerald"] call _addRegularMag; };
 		};
 	};
 	if (_ItemCitrine > 0) then {
 		for "_x" from 1 to _ItemCitrine do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemCitrine",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemCitrine"] call _addRegularMag; };
 		};
 	};
 	if (_ItemRuby > 0) then {
 		for "_x" from 1 to _ItemRuby do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemRuby",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemRuby"] call _addRegularMag; };
 		};
 	};
 
 	if (_briefcase_100oz > 0) then {
 		for "_x" from 1 to _briefcase_100oz do {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemBriefcase100oz",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemBriefcase100oz"] call _addRegularMag; };
 		};
 	};
 	if (_gold_10oz > 0) then {
 		if (_gold_10oz == 1) then {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemGoldBar10oz",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemGoldBar10oz"] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,format["ItemBriefcase%1oz",floor(_gold_10oz*10)],0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemBriefcase%1oz",floor(_gold_10oz*10)]] call _addRegularMag; };
 		};
 	};
 	if (_gold_1oz > 0) then {
 		if (_gold_1oz == 1) then {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemGoldBar",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemGoldBar"] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,format["ItemGoldBar%1oz",_gold_1oz],0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemGoldBar%1oz",_gold_1oz]] call _addRegularMag; };
 		};
 	};
 	if (_silver_10oz > 0) then {
 		if (_silver_10oz == 1) then {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemSilverBar10oz",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemSilverBar10oz"] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,format["ItemBriefcaseS%1oz",floor(_silver_10oz*10)],0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemBriefcaseS%1oz",floor(_silver_10oz*10)]] call _addRegularMag; };
 		};
 	};
 	if (_silver_1oz > 0) then {
 		if (_silver_1oz == 1) then {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,"ItemSilverBar",0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,"ItemSilverBar"] call _addRegularMag; };
 		} else {
-			if (_justChecking) then { _magsAdded = _magsAdded + 1; } else { [0,false,format["ItemSilverBar%1oz",_silver_1oz],0] call _addRegularMag; };
+			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemSilverBar%1oz",_silver_1oz]] call _addRegularMag; };
 		};
 	};
 	
 	if (_justChecking) then {
-		_successful = [_magsAdded,true,0,_regularMagsToBuy] call _addRegularMag;
+		_successful = [_moneyAdded,true,"",_regularMagsToBuy,_moneyInGear,_moneyInBackpack] call _addRegularMag;
 	} else {
 		_successful = true;
 	};

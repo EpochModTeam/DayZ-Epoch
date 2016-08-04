@@ -225,7 +225,7 @@ if (typeName _money  == "SCALAR") then {
 		_success = [player,_money] call SC_fnc_addCoins;
 		systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE", _money , CurrencyName];
 	} else {
-		_success = [_money,0,false,0] call Z_returnChange;
+		_success = [_money,0,false,0,[],[]] call Z_returnChange;
 		_tCost = "";
 		_tCost = _money call z_calcDefaultCurrencyNoImg;
 		if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_SELL_SUCCESS",_tCost]; };

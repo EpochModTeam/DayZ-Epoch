@@ -14,6 +14,8 @@ if (!_justChecking) then {
 	{
 	  _nil = [player, _x , 1] call BIS_fnc_invRemove;
 	} count _moneyInGear;
+	
+	_moneyInGear = []; // Clear since money is removed now
 
 	if (count _moneyInBackpack > 0) then {
 	  _nil = [unitBackpack _player, _moneyInBackpack, [], []] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
@@ -26,7 +28,7 @@ if (!_justChecking) then {
 if (_totalWorth - _toPay == 0) then { // Money in inventory was exact amount
 	_success = true;
 } else {
-	_success = [_toPay,_totalWorth,_justChecking,_regularMagsToBuy] call Z_returnChange;
+	_success = [_toPay,_totalWorth,_justChecking,_regularMagsToBuy,_moneyInGear,_moneyInBackpack] call Z_returnChange;
 };
 
 _success
