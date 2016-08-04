@@ -176,7 +176,7 @@ if (_status == "ObjectStreamStart") then {
 		_object setVariable ["lastUpdate",diag_ticktime];
 		_object setVariable ["ObjectID", _idKey, true];
 		_object setVariable ["OwnerPUID", _ownerPUID, true];
-		if ((typeOf (_object)) in DZE_MoneyStorageClasses) then {
+		if (Z_SingleCurrency && {(typeOf (_object)) in DZE_MoneyStorageClasses}) then {
 			_object setVariable [Z_MoneyVariable, _storageMoney, true];
 		};
 		if (DZE_permanentPlot && (typeOf _object == "Plastic_Pole_EP1_DZ")) then {
