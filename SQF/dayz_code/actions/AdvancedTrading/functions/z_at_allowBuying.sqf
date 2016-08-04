@@ -95,7 +95,11 @@ if (_selection == 2) then { //gear
 	if (_allowedBackpacks >= _toBuyBags) then {
 		_check3 = true;
 	} else {
-		systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK";
+		if (_allowedBackpacks == 0) then { 
+			systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK";
+		} else {
+			systemChat localize "STR_EPOCH_TRADE_ONE_BACKPACK";
+		};
 	};
 	if (_allowedBinocular > -1) then {
 		_check4 = true;

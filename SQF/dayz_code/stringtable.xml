@@ -16158,6 +16158,9 @@
 		<Key ID="STR_EPOCH_TRADE_HAVE_BACKPACK">
 			<English>You already have a backpack.</English>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_ONE_BACKPACK">
+			<English>You can only buy one backpack into your gear.</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
 			<German>Ich biete %1 %2.</German>
